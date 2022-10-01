@@ -6,7 +6,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(DUSTWALLOW_MARSH, {
 			n(QUESTS, {
-				q(1258,  {	-- ... and Bugs
+				q(1258, {	-- ... and Bugs
 					["provider"] = { "n", 4794 },	-- Morgan Stern
 					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
@@ -77,7 +77,7 @@ _.Zones =
 						i(33264),	-- Glowing Tourmaline Ring NOTE: Item is still available from new version of quest
 					},
 				}),
-				q(1168,  {	-- Army of the Black Dragon
+				q(1168, {	-- Army of the Black Dragon
 					["provider"] = { "n", 4502 },	-- Tharg
 					["coord"] = { 37.3, 31.3, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
@@ -136,7 +136,7 @@ _.Zones =
 						i(131672),	-- Chain Linked Leggings
 					},
 				}),
-				q(1958,  {	-- Celestial Power
+				q(1958, {	-- Celestial Power
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6546 },	-- Tabetha
 					["classes"] = { MAGE },
@@ -145,7 +145,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(9517)),	-- Celestial Stave
 					},
 				}),
-				q(1173,  {	-- Challenge Overlord Mok'Morokk
+				q(1173, {	-- Challenge Overlord Mok'Morokk
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
 					["coord"] = { 36.2, 31.5, DUSTWALLOW_MARSH },
@@ -298,7 +298,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27211,	-- Propaganda War
 				}),
-				q(1177,  {	-- Hungry!
+				q(1177, {	-- Hungry!
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4503 },	-- Mudcrush Durtfeet
 				}),
@@ -318,7 +318,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 				}),
-				q(1135,  {	-- Highperch Venom
+				q(1135, {	-- Highperch Venom
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4456 },	-- Fiora Longears
 					["races"] = ALLIANCE_ONLY,
@@ -336,7 +336,7 @@ _.Zones =
 						i(131651),	-- Mud's Chain Boots
 					},
 				}),
-				q(1169,  {	-- Identifying the Brood
+				q(1169, {	-- Identifying the Brood
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4501 },	-- Draz'Zilb
 					["coord"] = { 37.1, 33.0, DUSTWALLOW_MARSH },
@@ -397,7 +397,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27237 },	-- Recover the Cargo
 				}),
-				q(1203,  {	-- Jarl Needs a Blade
+				q(1203, {	-- Jarl Needs a Blade
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
@@ -414,7 +414,7 @@ _.Zones =
 						i(131649),	-- "Swamp Eye" Chain Sash
 					},
 				}),
-				q(1206,  {	-- Jarl Needs Eyes
+				q(1206, {	-- Jarl Needs Eyes
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
@@ -425,7 +425,7 @@ _.Zones =
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
 					["sourceQuest"] = 27183,	-- Marsh Frog Legs
 				}),
-				q(1133,  {	-- Journey to Astranaar
+				q(1133, {	-- Journey to Astranaar
 					["provider"] = { "n", 4456 },	-- Fiora Longears
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -457,7 +457,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27429,	-- Raze Direhorn Post!
 				}),
-				q(1269,  {	-- Lieutenant Paval Reethe
+				q(1269, {	-- Lieutenant Paval Reethe
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
@@ -480,7 +480,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
 				}),
-				q(1952,  {	-- Mage's Wand
+				q(1952, {	-- Mage's Wand
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6546 },	-- Tabetha
 					["classes"] = { MAGE },
@@ -544,12 +544,12 @@ _.Zones =
 						i(57852),	-- Grimtotem Cloak
 					},
 				}),
-				q(1204,  {	-- Mudrock Soup and Bugs
+				q(1204, {	-- Mudrock Soup and Bugs
 					["provider"] = { "n", 4794 },	-- Morgan Stern
 					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(6607,  {	-- Nat Pagle, Angler Extreme
+				q(6607, {	-- Nat Pagle, Angler Extreme
 					["provider"] = { "n", 12919 },	-- Nat Pagle
 					["coord"] = { 58.6, 60.2, DUSTWALLOW_MARSH },
 					["requireSkill"] = FISHING,
@@ -578,7 +578,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27220,	-- Nat's Bargain
 				}),
-				q(1166,  {	-- Overlord Mok'Morokk's Concern
+				q(1166, {	-- Overlord Mok'Morokk's Concern
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
@@ -634,7 +634,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27210,	-- Traitors Among Us
 				}),
-				q(1273,  {	-- Questioning Reethe
+				q(1273, {	-- Questioning Reethe
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4983 },	-- Ogron
@@ -694,7 +694,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27234,	-- Defias in Dustwallow?
 				}),
-				q(1262,  {	-- Report to Zor
+				q(1262, {	-- Report to Zor
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
@@ -759,7 +759,7 @@ _.Zones =
 						27293,	-- The Grimtotem Plot
 					},
 				}),
-				q(7541,  {	-- Service to the Horde
+				q(7541, {	-- Service to the Horde
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4047 },	-- Zor Lonetree
 					["races"] = HORDE_ONLY,
@@ -773,7 +773,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 205332 },	-- Wanted Poster (Broodqueen)
 				}),
-				q(1218,  {	-- Soothing Spices
+				q(1218, {	-- Soothing Spices
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
 				}),
@@ -790,12 +790,12 @@ _.Zones =
 						27409,	-- The Essence of Enmity
 					},
 				}),
-				q(1222,  {	-- Stinky's Escape
+				q(1222, {	-- Stinky's Escape
 					["provider"] = { "n", 4880 },	-- "Stinky" Ignatz
 					["coord"] = { 46.9, 17.5, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(1270,  {	-- Stinky's Escape
+				q(1270, {	-- Stinky's Escape
 					["provider"] = { "n", 4880 },	-- "Stinky" Ignatz
 					["coord"] = { 46.8, 17.5, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
@@ -811,7 +811,7 @@ _.Zones =
 						i(131253),	-- Archer's Chain Bracer
 					},
 				}),
-				q(1268,  {	-- Suspicious Hoofprints
+				q(1268, {	-- Suspicious Hoofprints
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 21015 },	-- Hoofprints
@@ -869,30 +869,30 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27260,	-- Lieutenant Paval Reethe
 				}),
-				q(1251,  {	-- The Black Shield
+				q(1251, {	-- The Black Shield
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 20992 },	-- Black Shield
 				}),
-				q(1321,  {	-- The Black Shield
+				q(1321, {	-- The Black Shield
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4926 },	-- Krog
 					["sourceQuest"] = 1251,	-- Black Shield
 				}),
-				q(1322,  {	-- The Black Shield
+				q(1322, {	-- The Black Shield
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5087 },	-- Do'gol
 					["sourceQuest"] = 1321,	-- Black Shield
 				}),
-				q(1323,  {	-- The Black Shield
+				q(1323, {	-- The Black Shield
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5087 },	-- Do'gol
 					["sourceQuest"] = 1322,	-- Black Shield
 				}),
-				q(1276,  {	-- The Black Shield
+				q(1276, {	-- The Black Shield
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4926 },	-- Krog
@@ -945,19 +945,19 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27256,	-- The Black Shield (#3)
 				}),
-				q(1170,  {	-- The Brood of Onyxia
+				q(1170, {	-- The Brood of Onyxia
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4501 },	-- Draz'Zilb
 					["sourceQuest"] = 1169,	-- Identifying the Brood
 				}),
-				q(1171,  {	-- The Brood of Onyxia
+				q(1171, {	-- The Brood of Onyxia
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
 					["sourceQuest"] = 1170,	-- The Brood of Onyxia
 				}),
-				q(1172,  {	-- The Brood of Onyxia
+				q(1172, {	-- The Brood of Onyxia
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4501 },	-- Draz'Zilb
@@ -1084,7 +1084,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 				}),
-				q(1238,  {	-- The Lost Report
+				q(1238, {	-- The Lost Report
 					["coord"] = { 55.4, 25.9, DUSTWALLOW_MARSH },
 					["provider"] = { "o", 20985 },	-- Loose Dirt
 					["races"] = HORDE_ONLY,
@@ -1152,19 +1152,19 @@ _.Zones =
 						i(131663),	-- The Explorer's Coif
 					},
 				}),
-				q(1239,  {	-- The Severed Head
+				q(1239, {	-- The Severed Head
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 20985 },	-- Loose Dirt
 					["sourceQuest"] = 1238,	-- The Lost Report
 				}),
-				q(1202,  {	-- The Theramore Docks
+				q(1202, {	-- The Theramore Docks
 					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
 					["coord"] = { 35.2, 30.6, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 1201,	-- Theramore Spies
 				}),
-				q(1240,  {	-- The Troll Witchdoctor
+				q(1240, {	-- The Troll Witchdoctor
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
@@ -1201,7 +1201,7 @@ _.Zones =
 					["coord"] = { 68.3, 51.9, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(1201,  {	-- Theramore Spies
+				q(1201, {	-- Theramore Spies
 					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
 					["coord"] = { 35.2, 30.6, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
@@ -1267,7 +1267,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(9437,  {	-- Twilight of the Dawn Runner
+				q(9437, {	-- Twilight of the Dawn Runner
 					["provider"] = { "n", 17095 },	-- Balandar Brightstar
 					["coord"] = { 35.8, 31.7, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,

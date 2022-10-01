@@ -141,11 +141,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 						["g"] = {
 							i(185972, {	-- Tormentor's Cache
-							i(185973),	-- Chain of Bahmethra (MOUNT!)
-							i(186977),	-- Beastcaller's Skull Crescent
-							i(186978),	-- Borrowed Eye Crescent
-							i(186562),	-- Tormentor's Manacled Backplate
-							i(185756),	-- Warped Phantasma (TODO: add rep item if this makes it to live)
+								i(185973),	-- Chain of Bahmethra (MOUNT!)
+								i(186977),	-- Beastcaller's Skull Crescent
+								i(186978),	-- Borrowed Eye Crescent
+								i(186562),	-- Tormentor's Manacled Backplate
+								i(185756),	-- Warped Phantasma (TODO: add rep item if this makes it to live)
 							}),
 						},
 					}),
@@ -154,24 +154,24 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					-- currently have 64692 - 64694 saved, no Tormentors killed today, but 3 for the week
 					-- 177370, Grievous Soul Crusher
 					n(178897, {	-- Algel the Haunter
-						["questID"] = 64107,
-						["isDaily"] = true,
+						-- ["questID"] = 64107,
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186239),	-- Drape of the Phantasm
 							i(186227),	-- Jangling Chain Manacles
 						},
 					}),
 					n(178898, {	-- Golmak The Monstrosity
-						["questID"] = 64114,	-- carb got 64114 from golmak, but i got 64697 and 64114 returns false (first tormentor of the day for both of us)
-						["isDaily"] = true,
+						-- ["questID"] = 64114,	-- carb got 64114 from golmak, but i got 64697 and 64114 returns false (first tormentor of the day for both of us)
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186229),	-- Lavafused Breastplate
 							i(186221),	-- Seared-Link Sabatons
 						},
 					}),
 					n(177979, {	-- Gralebboih
-						["questID"] = 64113,
-						["isDaily"] = true,
+						-- ["questID"] = 64113,
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186237),	-- Gormhide Pauldrons
 							i(186449),	-- Amaranthine Stinger (PET!)
@@ -179,87 +179,87 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 					n(177370, {	-- Grievous Soul Crusher
 						["description"] = "This tormentor can sometimes spawn instead of another tormentor ( which are on the achievement ). Shares loot table with Malleus Grakizz",
-						["isDaily"] = true,
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186218),	-- Fire-Tempered Armor Cinch
 							i(186012),	-- Inferno Blast Shield
 						},
 					}),
 					n(177980, {	-- Gruukuuek the Elder
-						["questID"] = 64112,
-						["isDaily"] = true,
+						-- ["questID"] = 64112,
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186226),	-- Cinch of Petrified Vines
 							i(186009),	-- Corrupted Elder Branch
 						},
 					}),
 					n(178004, {	-- Intercessor Razzra
-						["questID"] = 64111,
-						["isDaily"] = true,
+						-- ["questID"] = 64111,
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186231),	-- Gloves of Fervent Intercession
 							i(186004),	-- Kris of Dark Temptation
 						},
 					}),
 					n(178882, {	-- Kazj The Sentinel
-						["questID"] = 64110,
-						["isDaily"] = true,
+						-- ["questID"] = 64110,
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186450),	-- Crude Stygian Fastener
 							i(186006),	-- Kazj's Stygian Splitter
 						},
 					}),
 					n(177972, {	-- Malleus Grakizz
-						["questID"] = 64119,
-						["isDaily"] = true,
+						-- ["questID"] = 64119,
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186218),	-- Fire-Tempered Armor Cinch
 							i(186012),	-- Inferno Blast Shield
 						},
 					}),
 					n(178899, {	-- Manifestation of Pain
-						["questID"] = 64118,
-						["isDaily"] = true,
+						-- ["questID"] = 64118,
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186213),	-- Bindings of Manifest Pain
 							i(186005),	-- Stygian Pain Borer
 						},
 					}),
 					n(178002, {	-- Mugrem the Soul Devourer
-						["questID"] = 64116,
-						["isDaily"] = true,
+						-- ["questID"] = 64116,
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186010),	-- Lost Attendant's Scepter
 							i(186560),	-- Semi-Permeable Gelatinous Storage Pouch
 						},
 					}),
 					n(177330, {	-- Promathiz
-						["questID"] = 64115,
-						["isDaily"] = true,
+						-- ["questID"] = 64115,
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186007),	-- Cudgel of the Tin Sentinel
 							i(186208),	-- Padded Insouls
 						},
 					}),
 					n(177331, {	-- Sentinel Pyrophus
-						["questID"] = 64127,
-						["isDaily"] = true,
+						-- ["questID"] = 64127,
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186241),	-- Insulated Thermal Leggings
 							i(186219),	-- Pyrophus' Wrist Ties
 						},
 					}),
 					n(178883, {	-- Sentinel Shakorzeth
-						["questID"] = 64121,
-						["isDaily"] = true,
+						-- ["questID"] = 64121,
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186244),	-- Shakorzeth's Gorget
 							i(186225),	-- Shoulder Joint Spindles
 						},
 					}),
 					n(177427, {	-- The Mass of Souls
-						["questID"] = 64117,
-						["isDaily"] = true,
+						-- ["questID"] = 64117,
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186210),	-- Diabolic Soul Veil
 							i(186215),	-- Soul Stranglers
@@ -267,15 +267,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 					n(177981, {	-- Versya the Damned
 						-- ["questID"] = ,
-						["isDaily"] = true,
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186233),	-- Spaulders of the Skyborn Damned
 							i(186003),	-- Versya's Stygian Longbow
 						},
 					}),
 					n(178886, {	-- Zul'gath the Flayer
-						["questID"] = 64122,
-						["isDaily"] = true,
+						-- ["questID"] = 64122,
+						-- ["isDaily"] = true,
 						["g"] = {
 							i(186235),	-- Shadow-Wreathed Vambraces
 							i(186242),	-- Zul'gath's Chain Coif

@@ -139,172 +139,106 @@ root("Zones", {
 				})),
 				-- #endif
 				n(FACTIONS, {
-					faction(1119, {	-- The Sons of Hodir
-						["crs"] = { 30105 },	-- King Jokkum
-						["groups"] = {
-							n(32540, {	-- Lillehoff <The Sons of Hodir Quartermaster>
-								["coord"] = { 66.1, 61.4, THE_STORM_PEAKS },
-								["groups"] = {
-									i(44193),	-- Broken Stalactite
-									i(41720),	-- Design: Smooth Autumn's Glow
-									i(41817, {	-- Design: Smooth Autumn's Glow
-										["spellID"] = 0,	-- This is now available via 41720, need to delink the old plans from the recipe
-										["u"] = REMOVED_FROM_GAME,
-									}),
-									i(44189),	-- Giant Ring Belt
-									i(44194),	-- Giant-Friend Kilt
-									i(44133, {	-- Greater Inscription of the Axe
-										["spellID"] = 0,	-- Ignore
-										["f"] = 55,		-- Consumable
-									}),
-									i(50335, {	-- Greater Inscription of the Axe
-										["spellID"] = 0,	-- Ignore
-										["f"] = 55,		-- Consumable
-									}),
-									i(44134, {	-- Greater Inscription of the Crag
-										["spellID"] = 0,	-- Ignore
-										["f"] = 55,		-- Consumable
-									}),
-									i(50336, {	-- Greater Inscription of the Crag
-										["spellID"] = 0,	-- Ignore
-										["f"] = 55,		-- Consumable
-									}),
-									i(44136, {	-- Greater Inscription of the Pinnacle
-										["spellID"] = 0,	-- Ignore
-										["f"] = 55,		-- Consumable
-									}),
-									i(50337, {	-- Greater Inscription of the Pinnacle
-										["spellID"] = 0,	-- Ignore
-										["f"] = 55,		-- Consumable
-									}),
-									i(44135, {	-- Greater Inscription of the Storm
-										["spellID"] = 0,	-- Ignore
-										["f"] = 55,		-- Consumable
-									}),
-									i(50338, {	-- Greater Inscription of the Storm
-										["spellID"] = 0,	-- Ignore
-										["f"] = 55,		-- Consumable
-									}),
-									i(44131, {	-- Lesser Inscription of the Axe
-										["spellID"] = 0,	-- Ignore
-										["f"] = 55,		-- Consumable
-									}),
-									i(44130, {	-- Lesser Inscription of the Crag
-										["spellID"] = 0,	-- Ignore
-										["f"] = 55,		-- Consumable
-									}),
-									i(44132, {	-- Lesser Inscription of the Pinnacle
-										["spellID"] = 0,	-- Ignore
-										["f"] = 55,		-- Consumable
-									}),
-									i(44129, {	-- Lesser Inscription of the Storm
-										["spellID"] = 0,	-- Ignore
-										["f"] = 55,		-- Consumable
-									}),
-									i(42184),	-- Pattern: Glacial Bag
-									i(44510),	-- Pattern: Mammoth Mining Bag
-									ach(2083, {	-- Grand Ice Mammoth
-										i(43961),	-- Grand Ice Mammoth (A) (MOUNT!)
-										i(44086),	-- Grand Ice Mammoth (H) (MOUNT!)
-									}),
-									ach(2082, {	-- Ice Mammoth
-										i(43958),	-- Ice Mammoth (A) (MOUNT!)
-										i(44080),	-- Ice Mammoth (H) (MOUNT!)
-									}),
-									i(44192),	-- Stalactite Chopper
-									i(44190),	-- Spaulders of Frozen Knives
-									i(44195),	-- Spaulders of the Giant Lords
-								},
-							}),
-							q(13559, {	-- Hodir's Tribute
-								["qg"] = 32540,	-- Lillehoff
-								["coord"] = { 66.1, 61.4, THE_STORM_PEAKS },
-								["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
-								["repeatable"] = true,
-							}),
-							q(13011, {	-- Culling Jorcuttar
-								["minReputation"] = { 1119, FRIENDLY },
-								["coord"] = { 65.3, 60.1, THE_STORM_PEAKS },
-								["qg"] = 30105,	-- King Jokkum
-							}),
-							q(13006, {	-- A Viscious Cleaning
-							--	["minReputation"] = -- Unknown reputation requirement
-								["sourceQuest"] = 12987,	-- Mounting Hodir's Helm
-								["isDaily"]	= true,
-								["coord"] = { 64.2, 59.6, THE_STORM_PEAKS },
-								["icon"] = "Interface\\Icons\\INV_Helmet_110",
-							}),
-							q(13420, {	-- Everfrost
-								["minReputation"] = { 1119, FRIENDLY },
-								["provider"] = { "i", 44725 },	-- Everfrost Chip
-								["description"] = "You can obtain these by looting Everfrost Chips in the environment.",
-							}),
-							q(13421, {	-- Remember Everfrost!
-								["coord"] = { 67.0, 60.8, THE_STORM_PEAKS },	-- needs verification, taken from wowhead.  there's some contention as to whether this quest is offered by an NPC or if the "qg" is just the turn-in NPC
-								["qg"] = 32594,	-- Calder <Blacksmithing Supplies>
-								["sourceQuest"] = 13420,	-- Source Quest: Everfrost
-								["repeatable"]	= true,
-							}),
-							q(12977, {	-- Hodir's Call
-							--	["minReputation"] = ,	-- unsure of reputation requirement
-								["sourceQuest"] = 12976,	-- A Monument to the Fallen
-								["isDaily"]	= true,
-								["coord"] = { 64.1, 64.7, THE_STORM_PEAKS },
-								["icon"] = "Interface\\Icons\\INV_Misc_Horn_03",
-							}),
-							q(13046, {	-- Feeding Arngrim
-								["minReputation"] = { 1119, REVERED },
-								["isDaily"]	= true,
-								["coord"] = { 67.5, 60.0, THE_STORM_PEAKS },
-								["icon"] = "Interface\\Icons\\Achievement_Dungeon_FrozenThrone",
-							}),
-							q(12981, {	-- Hot and Cold
-							--	["minReputation"] = ,	-- unknown reputation requirement.
-								["sourceQuest"] = 12967,	-- Battling the Elements
-								["isDaily"]	= true,
-								["coord"] = { 63.2, 63.0, THE_STORM_PEAKS },
-								["icon"] = "Interface\\Icons\\INV_BLACKSMITH_ANVIL",
-							}),
-							q(12994, {	-- Spy Hunter
-								["minReputation"] = { 1119, HONORED },
-								["isDaily"]	= true,
-								["coord"] = { 63.5, 59.7, THE_STORM_PEAKS },
-								["qg"] = 30294,	-- Quest Giver: Frostworg Denmother
-							}),
-							q(13003, {	-- How to Slay Your Dragon
-								["minReputation"] = { 1119, HONORED },
-								["sourceQuest"] = 13001,	-- Raising Hodir's Spear
-								["isDaily"]	= true,
-								["coord"] = { 65.0, 60.9, THE_STORM_PEAKS },
-								["icon"] = "Interface\\Icons\\INV_Spear_04",
-							}),
-						},
-					}),
+					faction(1119),	-- The Sons of Hodir
 				}),
 				n(FLIGHT_PATHS, {
 					fp(327, {	-- Bouldercrag's Refuge
+						["cr"] = 29950,	-- Breck Rockbrow <Flight Master>
 						["coord"] = { 30.6, 36.4, THE_STORM_PEAKS },
 					}),
 					fp(324, {	-- Camp Tunka'lo
+						["cr"] = 29762,	-- Hyeyoung Parka <Wind Rider Master>
 						["coord"] = { 65.4, 50.6, THE_STORM_PEAKS },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(322, {	-- Dun Niffelem
+						["cr"] = 32571,	-- Halvdan <Flight Master>
 						["coord"] = { 62.6, 60.8, THE_STORM_PEAKS },
 					}),
 					fp(321, {	-- Frosthold
+						["cr"] = 29750,	-- Faldorf Bitterchill <Flight Master>
 						["coord"] = { 29.4, 74.2, THE_STORM_PEAKS },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(323, {	-- Grom'arsh Crash-Site
+						["cr"] = 29757,	-- Kabarg Windtamer <Flight Master>
 						["coord"] = { 36.2, 49.2, THE_STORM_PEAKS },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(320, {	-- K3
+						["cr"] = 29721,	-- Skizzle Slickslide <Flight Master>
 						["coord"] = { 40.6, 84.6, THE_STORM_PEAKS },
 					}),
 					fp(326, {	-- Ulduar
+						["cr"] = 29951,	-- Shavalius the Fancy <Flight Master>
 						["coord"] = { 44.4, 28.2, THE_STORM_PEAKS },
 					}),
 				}),
 				n(QUESTS, {
+					-- The Sons of Hodir
+					q(13559, {	-- Hodir's Tribute
+						["qg"] = 32540,	-- Lillehoff
+						["coord"] = { 66.1, 61.4, THE_STORM_PEAKS },
+						["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+						["repeatable"] = true,
+					}),
+					q(13011, {	-- Culling Jorcuttar
+						["minReputation"] = { 1119, FRIENDLY },
+						["coord"] = { 65.3, 60.1, THE_STORM_PEAKS },
+						["qg"] = 30105,	-- King Jokkum
+					}),
+					q(13006, {	-- A Viscious Cleaning
+					--	["minReputation"] = -- Unknown reputation requirement
+						["sourceQuest"] = 12987,	-- Mounting Hodir's Helm
+						["isDaily"]	= true,
+						["coord"] = { 64.2, 59.6, THE_STORM_PEAKS },
+						["icon"] = "Interface\\Icons\\INV_Helmet_110",
+					}),
+					q(13420, {	-- Everfrost
+						["minReputation"] = { 1119, FRIENDLY },
+						["provider"] = { "i", 44725 },	-- Everfrost Chip
+						["description"] = "You can obtain these by looting Everfrost Chips in the environment.",
+					}),
+					q(13421, {	-- Remember Everfrost!
+						["coord"] = { 67.0, 60.8, THE_STORM_PEAKS },	-- needs verification, taken from wowhead.  there's some contention as to whether this quest is offered by an NPC or if the "qg" is just the turn-in NPC
+						["qg"] = 32594,	-- Calder <Blacksmithing Supplies>
+						["sourceQuest"] = 13420,	-- Source Quest: Everfrost
+						["repeatable"]	= true,
+					}),
+					q(12977, {	-- Hodir's Call
+					--	["minReputation"] = ,	-- unsure of reputation requirement
+						["sourceQuest"] = 12976,	-- A Monument to the Fallen
+						["isDaily"]	= true,
+						["coord"] = { 64.1, 64.7, THE_STORM_PEAKS },
+						["icon"] = "Interface\\Icons\\INV_Misc_Horn_03",
+					}),
+					q(13046, {	-- Feeding Arngrim
+						["minReputation"] = { 1119, REVERED },
+						["isDaily"]	= true,
+						["coord"] = { 67.5, 60.0, THE_STORM_PEAKS },
+						["icon"] = "Interface\\Icons\\Achievement_Dungeon_FrozenThrone",
+					}),
+					q(12981, {	-- Hot and Cold
+					--	["minReputation"] = ,	-- unknown reputation requirement.
+						["sourceQuest"] = 12967,	-- Battling the Elements
+						["isDaily"]	= true,
+						["coord"] = { 63.2, 63.0, THE_STORM_PEAKS },
+						["icon"] = "Interface\\Icons\\INV_BLACKSMITH_ANVIL",
+					}),
+					q(12994, {	-- Spy Hunter
+						["minReputation"] = { 1119, HONORED },
+						["isDaily"]	= true,
+						["coord"] = { 63.5, 59.7, THE_STORM_PEAKS },
+						["qg"] = 30294,	-- Quest Giver: Frostworg Denmother
+					}),
+					q(13003, {	-- How to Slay Your Dragon
+						["minReputation"] = { 1119, HONORED },
+						["sourceQuest"] = 13001,	-- Raising Hodir's Spear
+						["isDaily"]	= true,
+						["coord"] = { 65.0, 60.9, THE_STORM_PEAKS },
+						["icon"] = "Interface\\Icons\\INV_Spear_04",
+					}),
+				
 					i(44751, {	-- Hyldnir Spoils
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["description"] = "Reward from the following daily quests: Back to the Pit, Defending Your Title, Maintaining Discipline, and The Aberrations Must Die. \n\nOne of the quests is offered at random each day.",
@@ -477,6 +411,12 @@ root("Zones", {
 						["groups"] = {
 							i(43186),	-- Iceshrieker's Touch
 							i(43185),	-- Wand of Chilled Renewal
+							i(43188, {	-- Razor-sharp Ice Shards
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(43187, {	-- Weighted Throwing Axe
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(12818, {	-- Clean Up
@@ -932,6 +872,12 @@ root("Zones", {
 						["groups"] = {
 							i(43185),	-- Wand of Chilled Renewal
 							i(43186),	-- Iceshrieker's Touch
+							i(43188, {	-- Razor-sharp Ice Shards
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(43187, {	-- Weighted Throwing Axe
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(12957, {	-- Slaves of the Stormforged
@@ -1060,6 +1006,9 @@ root("Zones", {
 							i(42865),	-- Frost Hardened Bracers
 							i(42887),	-- Pauldrons of the Ascent
 							i(42876),	-- Light-Touched Mantle
+							i(42863, {	-- Sharpened Hyldnir Harpoon
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(13005, {	-- The Earthen Oath
@@ -1433,6 +1382,88 @@ root("Zones", {
 								["collectible"] = false,
 								["races"] = HORDE_ONLY,
 							}),
+						},
+					}),
+					n(32540, {	-- Lillehoff <The Sons of Hodir Quartermaster>
+						["coord"] = { 66.1, 61.4, THE_STORM_PEAKS },
+						["groups"] = {
+							ach(2083, {	-- Grand Ice Mammoth
+								["providers"] = {
+									{ "i", 43961 },	-- Grand Ice Mammoth (A) (MOUNT!)
+									{ "i", 44086 },	-- Grand Ice Mammoth (H) (MOUNT!)
+								},
+							}),
+							ach(2082, {	-- Ice Mammoth
+								["providers"] = {
+									{ "i", 43958 },	-- Ice Mammoth (A) (MOUNT!)
+									{ "i", 44080 },	-- Ice Mammoth (H) (MOUNT!)
+								},
+							}),
+							i(43961),	-- Grand Ice Mammoth (A) (MOUNT!)
+							i(44086),	-- Grand Ice Mammoth (H) (MOUNT!)
+							i(43958),	-- Ice Mammoth (A) (MOUNT!)
+							i(44080),	-- Ice Mammoth (H) (MOUNT!)
+							i(44193),	-- Broken Stalactite
+							i(41720),	-- Design: Smooth Autumn's Glow
+							i(41817, {	-- Design: Smooth Autumn's Glow
+								["spellID"] = 0,	-- This is now available via 41720, need to delink the old plans from the recipe
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							i(44189),	-- Giant Ring Belt
+							i(44194),	-- Giant-Friend Kilt
+							i(44133, {	-- Greater Inscription of the Axe
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							}),
+							i(50335, {	-- Greater Inscription of the Axe
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							}),
+							i(44134, {	-- Greater Inscription of the Crag
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							}),
+							i(50336, {	-- Greater Inscription of the Crag
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							}),
+							i(44136, {	-- Greater Inscription of the Pinnacle
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							}),
+							i(50337, {	-- Greater Inscription of the Pinnacle
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							}),
+							i(44135, {	-- Greater Inscription of the Storm
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							}),
+							i(50338, {	-- Greater Inscription of the Storm
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							}),
+							i(44131, {	-- Lesser Inscription of the Axe
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							}),
+							i(44130, {	-- Lesser Inscription of the Crag
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							}),
+							i(44132, {	-- Lesser Inscription of the Pinnacle
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							}),
+							i(44129, {	-- Lesser Inscription of the Storm
+								["spellID"] = 0,	-- Ignore
+								["f"] = 55,		-- Consumable
+							}),
+							i(42184),	-- Pattern: Glacial Bag
+							i(44510),	-- Pattern: Mammoth Mining Bag
+							i(44192),	-- Stalactite Chopper
+							i(44190),	-- Spaulders of Frozen Knives
+							i(44195),	-- Spaulders of the Giant Lords
 						},
 					}),
 					n(30472, {	-- Olut Alegut

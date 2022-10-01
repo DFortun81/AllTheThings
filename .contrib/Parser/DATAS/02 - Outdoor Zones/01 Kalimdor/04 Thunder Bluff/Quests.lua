@@ -6,27 +6,27 @@ _.Zones =
 	m(KALIMDOR, {
 		m(THUNDER_BLUFF, {
 			n(QUESTS, {
-				q(7822,  {	-- A Donation of Mageweave
+				q(7822, {	-- A Donation of Mageweave
 					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(7823,  {	-- A Donation of Runecloth
+				q(7823, {	-- A Donation of Runecloth
 					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(7821,  {	-- A Donation of Silk
+				q(7821, {	-- A Donation of Silk
 					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(7820,  {	-- A Donation of Wool
+				q(7820, {	-- A Donation of Wool
 					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(5088,  {	-- Arikara
+				q(5088, {	-- Arikara
 					["provider"] = { "n", 4046 },	-- Magatha Grimtotem
 					["coord"] = { 69.9, 30.9, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -42,7 +42,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(3762,  {	-- Assisting Arch Druid Runetotem [Thunder Bluff]
+				q(3762, {	-- Assisting Arch Druid Runetotem [Thunder Bluff]
 					["provider"] = { "n", 6746 },	-- Innkeeper Pala
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
@@ -51,7 +51,7 @@ _.Zones =
 					["qg"] = 6741,	-- Innkeeper Norman
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1845,  {	-- Brutal Helm
+				q(1845, {	-- Brutal Helm
 					["sourceQuests"] = { 1844 },	-- Chimaeric Horn
 					["provider"] = { "n", 6410 },	-- Orm Stonehoof
 					["classes"] = { WARRIOR },
@@ -61,19 +61,19 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(7130)),	-- Brutal Helm
 					},
 				}),
-				q(1844,  {	-- Chimaeric Horn
+				q(1844, {	-- Chimaeric Horn
 					["sourceQuests"] = { 1840 },	-- Orm Stonehoof and the Brutal Helm
 					["provider"] = { "n", 6410 },	-- Orm Stonehoof
 					["classes"] = { WARRIOR },
 					["coord"] = { 38.9, 56.0, THUNDER_BLUFF },
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1205,  {	-- Deadmire
+				q(1205, {	-- Deadmire
 					["provider"] = { "n", 3441 },	-- Melor Stonehoof
 					["coord"] = { 61.2, 80.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
-				q(1136,  {	-- Frostmaw
+				q(1136, {	-- Frostmaw
 					["provider"] = { "n", 3441 },	-- Melor Stonehoof
 					["coord"] = { 61.2, 80.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -82,7 +82,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6720)),	-- Spirit Hunter's Headdress
 					},
 				}),
-				q(1064,  {	-- Forsaken Aid
+				q(1064, {	-- Forsaken Aid
 					["sourceQuests"] = { 1063 },	-- The Elder Crone
 					["provider"] = { "n", 4046 },	-- Magatha Grimtotem
 					["races"] = HORDE_ONLY,
@@ -103,29 +103,56 @@ _.Zones =
 						i(5083),	-- Pattern: Kodo Hide Bag
 					},
 				}),
-				q(3562,  {	-- Magatha's Payment to Jediga
+				q(3562, {	-- Magatha's Payment to Jediga
 					["sourceQuests"] = { 3518 },	-- Delivery to Magatha
 					["provider"] = { "n", 4046 },	-- Magatha Grimtotem
 					["coord"] = { 69.9, 30.9, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(3782,  {	-- Morrowgrain Research
+				q(3782, {	-- Morrowgrain Research
 					["sourceQuests"] = { 3761 },	-- Un'Goro Soil
 					["provider"] = { "n", 5769 },	-- Arch Druid Hamuul Runetotem
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(3786,  {	-- Morrowgrain Research
+				q(3786, {	-- Morrowgrain Research
 					["sourceQuests"] = { 3782 },	-- Morrowgrain Research
 					["provider"] = { "n", 9087 },	-- Bashana Runetotem
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1123,  {	-- Rabine Saturna
+				q(1123, {	-- Rabine Saturna
 					["sourceQuests"] = { 1000, 1004, 1018 },	-- 3x versions of The New Frontier
 					["provider"] = { "n", 5769 },	-- Arch Druid Hamuul Runetotem
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(14100, {	-- Relic of the Earthen Ring
+					["qgs"] = {
+						35068,	-- Gotura Fourwinds <The Earthen Ring>
+						13417,	-- Sagorne Creststrider <Shaman Trainer>
+						3030,	-- Siln Skychaser <Shaman Trainer>
+					},
+					["coords"] = {
+						{ 32.6, 38.8, ORGRIMMAR },
+						{ 38.7, 35.9, ORGRIMMAR },
+						{ 23.0, 20.8, THUNDER_BLUFF },
+					},
+					["timeline"] = { "added 3.3.0.10772", "removed 4.0.3" },
+					["cost"] = {
+						{ "i", 5178, 1 },	-- Air Totem
+						{ "i", 5175, 1 },	-- Earth Totem
+						{ "i", 5176, 1 },	-- Fire Totem
+						{ "i", 5177, 1 },	-- Water Totem
+					},
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+					["groups"] = {
+						i(46978, {	-- Totem of the Earthen Ring
+							["timeline"] = { "added 3.3.0.10772", "removed 4.0.3" },
+						}),
+					},
 				}),
 				q(27292, {	-- Return to Krog
 					["sourceQuests"] = { 27258 },	-- The Black Shield
@@ -138,7 +165,7 @@ _.Zones =
 						i(156977),	-- Serrated Gladius
 					},
 				}),
-				q(6364,  {	-- Return to Varg
+				q(6364, {	-- Return to Varg
 					["sourceQuests"] = { 6363 },	-- Tal the Wind Rider Master
 					["provider"] = { "n", 2995 },	-- Tal
 					["coord"] = { 46.8, 50.0, THUNDER_BLUFF },
@@ -153,13 +180,13 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(4909)),	-- Kodo Hunter's Leggings
 					},
 				}),
-				q(1131,  {	-- Steelsnap
+				q(1131, {	-- Steelsnap
 					["sourceQuests"] = { 1130 },	-- Melor Sends Word
 					["provider"] = { "n", 3441 },	-- Melor Stonehoof
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(6363,  {	-- Tal the Wind Rider Master
+				q(6363, {	-- Tal the Wind Rider Master
 					["sourceQuests"] = { 6362 },	-- Ride to Thunder Bluff
 					["provider"] = { "n", 8359 },	-- Ahanu
 					["coord"] = { 45.5, 55.8, THUNDER_BLUFF },
@@ -170,28 +197,28 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1086,  {	-- The Flying Machine Airport
+				q(1086, {	-- The Flying Machine Airport
 					["sourceQuests"] = { 1067 },	-- Return to Thunder Bluff
 					["provider"] = { "n", 3419 },	-- Apothecary Zamah
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1000,  {	-- The New Frontier
+				q(1000, {	-- The New Frontier
 					["provider"] = { "n", 10881 },	-- Bluff Runner Windstrider
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1195,  {	-- The Sacred Flame
+				q(1195, {	-- The Sacred Flame
 					["provider"] = { "n", 4721 },	-- Zangen Stonehoof
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1196,  {	-- The Sacred Flame
+				q(1196, {	-- The Sacred Flame
 					["sourceQuests"] = { 1195 },	-- The Sacred Flame
 					["provider"] = { "n", 4721 },	-- Zangen Stonehoof
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(3761,  {	-- Un'Goro Soil
+				q(3761, {	-- Un'Goro Soil
 					["sourceQuests"] = {
 						936,	-- Assisting Arch Druid Runetotem [Orgrimmar]
 						3762,	-- Assisting Arch Druid Runetotem [Undercity]

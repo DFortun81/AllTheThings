@@ -777,7 +777,9 @@ for key,value in pairs({
 		[-577] = "魔兽电影",											-- Warcraft Movie
 		[-579] = "穿过黑暗之门",											-- Dark Portal Pass
 		[-580] = "暗影国度季节性促销",										-- Shadowlands Seasonal Promotions
-		[-581] = "极限冲层：第二季",										-- The Great Push: Season 2
+		[-581] = "燃烧的远征经典怀旧服典藏包",				-- TBC Classic Deluxe Edition
+		[-582] = "巫妖王之怒经典怀旧服诺森德英雄礼包",			-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
+		[-583] = "巫妖王之怒经典怀旧服诺森德史诗礼包",			-- WotLK Classic Northrend Epic Upgrade
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
@@ -1273,6 +1275,7 @@ for key, value in pairs({
 	[192060] = "弗约恩之砧",	-- Fjorn's Anvil	--TODO: This was manually translated
 	[192072] = "鱼叉箱",	-- Harpoon Crate
 	[192833] = "布雷登布莱德的物品",	-- Bridenbrad's Possessions
+	[193051] = "天灾蛛魔之卵",	-- Nerubian Scourge Egg
 	[193195] = "脉动的水晶",	-- Pulsing Crystal
 	[193400] = "萨隆邪铁炸弹堆",	-- Saronite Bomb Stack
 	[194032] = "联盟篝火",	-- Alliance Bonfire
@@ -1299,6 +1302,7 @@ for key, value in pairs({
 	[194389] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194390] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194391] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
+	[194555] = "档案馆控制台",	-- Archivum Console
 	[194714] = "恶心的工作台",	-- Disgusting Workbench
 	[195134] = "大炸弹",	-- The Bomb	--TODO: This was manually translated
 	[195431] = "总部无线电",	-- Headquarters Radio
@@ -2633,6 +2637,7 @@ for key, value in pairs({
 	[303016] = "|cFFFFFFFF第14步:|r 普通的卵石 XIII",	-- |cFFFFFFFFStep 14:|r Ordinary Pebble XIII
 	[303017] = "|cFFFFFFFF第13步:|r 普通的卵石 XII",	-- |cFFFFFFFFStep 13:|r Ordinary Pebble XII
 	[303018] = "|cFFFFFFFF第12步:|r 普通的卵石 XI",	-- |cFFFFFFFFStep 12:|r Ordinary Pebble XI
+	[303039] = "奇怪的谷物袋",	-- Curious Grain Sack
 	[307265] = "通缉布告",	-- Wanted Poster
 	[307277] = "旧酒壶",	-- Old Jug	--TODO: This was manually translated
 	[307307] = "破损的桶",	-- Broken Barrel

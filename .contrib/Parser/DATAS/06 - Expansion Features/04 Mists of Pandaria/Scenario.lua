@@ -350,6 +350,7 @@ _.ExpansionFeatures =
 							i(92864),	-- Cordwoven Sandals
 							i(92863),	-- Cordwoven Shoulderpads
 							i(92862),	-- Cordwoven Wristwraps
+							i(92839),	-- Danio-Scale Bracers
 							i(92840),	-- Danio-Scale Gauntlets			- 22 Oct 2021 Confirmed
 							i(92844),	-- Danio-Scale Spaulders			- 2021-11-13
 							i(92837),	-- Earthstriker Belt
@@ -700,7 +701,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(89464),	-- Scarshell Helm
 						i(89467),	-- Scarshell Vest
 						i(92838),	-- Danio-Scale Belt
-						i(92839),	-- Danio-Scale Bracers
 						i(92841),	-- Danio-Scale Greaves
 						i(92842),	-- Danio-Scale Helm
 						i(92843),	-- Danio-Scale Legguards

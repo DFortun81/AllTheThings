@@ -101,7 +101,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					cl(PALADIN, HOLY, {
 						q(42231, {	-- The Mysterious Paladin
-							["sourceQuests"] = { 44063 },	-- Bolstering Your Arsenal
+							["sourceQuests"] = { 
+								40408,	-- Weapons of Legend
+								44063,	-- Bolstering Your Arsenal
+								44370, 	-- Completing Your Arsenal
+							},	
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 							["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
 						}),
@@ -113,7 +118,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					cl(PALADIN, PROTECTION, {
 						q(42000, {	-- Seeker of Truth
-							["sourceQuests"] = { 40408 },	-- Weapons of Legend
+							["sourceQuests"] = { 
+								40408,	-- Weapons of Legend
+								44063,	-- Bolstering Your Arsenal
+								44370,	-- Completing Your Arsenal
+							},	
+							["sourceQuestNumRequired"] = 1,
 							["providers"] = {
 								{ "n", 90259 },	-- Lord Maxwell Tyrosus
 								{ "n", 90369 },	-- Lord Maxwell Tyrosus
@@ -138,7 +148,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					cl(PALADIN, RETRIBUTION, {
 						q(42770, {	-- Seeking Guidance
-							["sourceQuests"] = { 44370 },	-- Completing Your Arsenal
+							["sourceQuests"] = { 
+								40408,	-- Weapons of Legend
+								44063,	-- Bolstering Your Arsenal
+								44370,	-- Completing Your Arsenal
+							},	
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 							["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
 						}),
@@ -187,6 +202,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							38576,	-- We Meet at Light's Hope
 							42811,	-- We Meet at Light's Hope
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 63.0, 37.2, SANCTUM_OF_LIGHT },
 					}),

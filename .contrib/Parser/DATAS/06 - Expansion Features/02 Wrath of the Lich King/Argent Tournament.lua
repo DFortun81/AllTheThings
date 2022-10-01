@@ -401,6 +401,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 			}),
 			n(FLIGHT_PATHS, {
 				fp(340, {	-- Argent Tournament Grounds, Icecrown
+					["cr"] = 33849,	-- Helidan Lightwing <Flight Master>
 					["coord"] = { 72.6, 22.6, ICECROWN },
 				}),
 			}),
@@ -2207,6 +2208,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				-- For sake of numbers we use Symlink on the 2nd NPC. First NPC under Outdoor>Northrend>Dalaran>Factions
 					["sym"] = {
 						{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{"merge"},
+						{"exclude", "itemID", 146550 },	-- Exclude DK Ensemble
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", WEAPONS, BACK, WRIST, WAIST, FEET, NECK, FINGER, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
 					},

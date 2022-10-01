@@ -155,7 +155,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			q(64560, {	-- Anima Reclamation (intro version)
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
 				["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
-				["isDaily"] = true,
 				["coord"] = { 61.8, 25.6, KORTHIA },
 			}),
 			q(63861, {	-- Beginning the Collection
@@ -189,7 +188,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 58.9, 58.1, KORTHIA },
 			}),
 			q(63912, {	-- Celestial Shadowlands Chart
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["sourceQuests"] = { 63861 },	-- Beginning the Collection
 				["provider"] = { "i", 187201 },	-- Celestial Shadowlands Chart
 				["coord"] = { 45.5, 56.0, KORTHIA },
 			}),
@@ -214,12 +213,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
 				["coord"] = { 39.4, 51.3, KORTHIA },
 			}),
-			q(63788, {	-- Continued Efforts: Sanctuary of Guidance
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178800 },	-- Voitha
-				["isDaily"] = true,
-				["coord"] = { 61.7, 23.7, KORTHIA },
-			}),
 			q(64314, {	-- Covenants Renewed
 				["sourceQuests"] = { 64213, 64214 },	-- A Symbol of Hope (A/H)
 				["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
@@ -232,7 +225,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 49.5, 65.0, KORTHIA },
 			}),
 			q(63892, {	-- Diviner's Rune Chits
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["sourceQuests"] = { 63738 },	-- Establishing the Archive
 				["description"] = "The item that starts this quest and the Rune Chits themselves can drop from Korthian treasures.",
 				["provider"] = { "i", 187055 },	-- Pouch of Rune Chits
 				["cost"] = { { "i", 185962, 20 } },    -- 20x Rune Chit
@@ -295,6 +288,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["sourceQuests"] = { 63737 },	-- Finding One's True Purpose
 				["provider"] = { "n", 178992 },	-- Scholar Roh-Suir
 				["coord"] = { 36.0, 32.3, KORTHIA },
+			}),
+			q(63917, {	-- Everliving Statuette
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["provider"] = { "i", 187103 },	-- Everliving Statuette
 			}),
 			q(63623, {	-- Filling an Empty Throne
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord
@@ -392,10 +389,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 34.9, 35.3, KORTHIA },
 			}),
 			q(64519, {	-- Lost Vaults
-				["sourceQuests"] = {
-					64511,	-- Missing Relics
-				},
-				["minReputation"] = { 2472, 7500 },	-- Tier 3
+				["sourceQuests"] = { 64511 },	-- Missing Relics
+				["minReputation"] = { 2472, 3 },	-- Tier 3
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },
 			}),
@@ -406,14 +401,17 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 62.7, 22.5, KORTHIA },
 			}),
 			q(64526, {	-- Mysterious Rifts
-				["minReputation"] = { 2472, 14000 },	-- Tier 4
+				["minReputation"] = { 2472, 4 },	-- Tier 4
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },
+			}),
+			q(63918, {	-- Obelisk of Dark Tidings
+				["sourceQuests"] = { 64511 },	-- Missing Relics
+				["provider"] = { "i", 187104 },	-- Obelisk of Dark Tidings
 			}),
 			q(64561, {	-- Observational Records (intro version)
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
 				["provider"] = { "n", 178844 },	-- Ta'nasi
-				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(63665, {	-- Opening to Oribos
@@ -440,15 +438,24 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 177924 },	-- Caretaker Kah-Than
 			}),
 			q(65145, {	-- Relic Clues
+				["sourceQuest"] = 63861,	-- Beginning the Collection
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["minReputation"] = { 2472, 3 },	-- Tier 3
 				["coord"] = { 62.8, 22.6, KORTHIA },
 				["timeline"] = { "added 9.1.5" },
 			}),
 			q(64368, {	-- Relic Efficiency
-				-- no known source quests, would need to reach tier 4 without doing other quests I assume...
-				["minReputation"] = { 2472, 14000 },	-- Tier 4
+				["sourceQuest"] = 63861,	-- Beginning the Collection
+				["minReputation"] = { 2472, 4 },	-- Tier 4
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },
+			}),
+			q(65146, {	-- Relic Hunter
+				["sourceQuest"] = 63861,	-- Beginning the Collection
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["minReputation"] = { 2472, 5 },	-- Tier 5
+				["coord"] = { 62.8, 22.6, KORTHIA },
+				["timeline"] = { "added 9.1.5" },
 			}),
 			q(63756, {	-- Rescued from Torment
 				["sourceQuests"] = { 63755 },	-- A Matter of Urgency
@@ -468,7 +475,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 55.6, 22.2, KORTHIA },
 			}),
 			q(63916, {	-- Sack of Strange Soil
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["sourceQuests"] = { 63738 },	-- Establishing the Archive
 				["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.",
 				["provider"] = { "i", 187205 },	-- Sack of Strange Soil
 				["coord"] = { 45.0, 35.5, KORTHIA },
@@ -527,7 +534,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 62.8, 24.9, KORTHIA },
 			}),
 			q(63860, {	-- Talisman of the Eternal Scholar
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["sourceQuests"] = { 63861 },	-- Beginning the Collection
 				["provider"] = { "i", 185914 },	-- Damaged Talisman
 				["coord"] = { 40.6, 41.3, KORTHIA },
 			}),
@@ -543,14 +550,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 63.1, 25.3, KORTHIA },
 			}),
 			q(64532, {	-- The Final Relics
-			--	TODO: unsure if reqs are these 3 quests, Tier 5 research, or both
-				["sourceQuests"] = {
-					63914,	-- Cipher of Understanding
-					63920,	-- Enigmatic Decrypting Device
-					63913,	-- Unstable Sin'dorei Explosive
-				},
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["minReputation"] = { 2472, 25000 },	-- Tier 5
+				["minReputation"] = { 2472, 5 },	-- Tier 5
 				["coord"] = { 62.7, 22.5, KORTHIA },
 			}),
 			q(63705, {	-- The Knowledge Keepers
@@ -613,7 +615,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			q(64562, {	-- We Need a Healer - You! (intro version)
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
 				["provider"] = { "n", 179216 },	-- Mikanikos
-				["isDaily"] = true,
 				["coord"] = { 61.4, 23.2, KORTHIA },
 			}),
 			q(64506, {	-- What Must Be Found
@@ -626,120 +627,140 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 177227 },	-- Tal-Galan
 				["coord"] = { 63.8, 23.7, KORTHIA },
 			}),
+		}),
+		--	Weeklies
+		n(QUESTS, sharedData({
+			["isWeekly"] = true,
+		},{
+			q(64549, {	-- Legend of the Animaswell
+				["customCollect"] = "SL_COV_NFA",	-- Night Fae
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "i", 187423 },	-- Legend of the Animaswell
+			}),
+			q(64551, {	-- Legend of the Animaswell
+				["customCollect"] = "SL_COV_NEC",	-- Necrolord
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "i", 187424 },	-- Legend of the Animaswell
+			}),
+			q(64552, {	-- Legend of the Animaswell
+				["customCollect"] = "SL_COV_KYR",	-- Kyrian
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "i", 187426 },	-- Legend of the Animaswell
+			}),
+			q(64553, {	-- Legend of the Animaswell
+				["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "i", 187428 },	-- Legend of the Animaswell
+			}),
+		})),
 		--	Dailies
-		--	Confirmed
+		n(QUESTS, sharedData({
+			["isDaily"] = true,
+		},{
 			q(64271, {	-- A More Civilized Way
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
-				["isDaily"] = true,
 				["coord"] = { 61.8, 25.2, KORTHIA },
 			}),
 			q(63779, {	-- A Semblance of Normalcy
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179134 },	-- Pelagos
-				["isDaily"] = true,
 				["coord"] = { 61.7, 24.0, KORTHIA },
 			}),
 			q(63783, {	-- Anima Reclamation
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
-				["isDaily"] = true,
 				["coord"] = { 61.8, 25.6, KORTHIA },
 			}),
 			q(63934, {	-- Assail Mail
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178802 },	-- Messenger Mnemis
-				["isDaily"] = true,
 				["coord"] = { 61.4, 22.4, KORTHIA },
 			}),
 			q(63793, {	-- Broker's Bounty: Ensydius the Defiler
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "o", 368772 },	-- Sigilscored Scroll
-				["isDaily"] = true,
 				["coord"] = { 64.7, 25.6, KORTHIA },
 			}),
 			q(63964, {	-- Broker's Bounty: Grimtalon
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "o", 368772 },	-- Sigilscored Scroll
-				["isDaily"] = true,
 				["coord"] = { 64.7, 25.6, KORTHIA },
 			}),
 			q(63794, {	-- Broker's Bounty: Hungering Behemoth
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "o", 368772 },	-- Sigilscored Scroll
-				["isDaily"] = true,
 				["coord"] = { 64.7, 25.6, KORTHIA },
 			}),
 			q(63790, {	-- Broker's Bounty: Lord Azzorak
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "o", 368772 },	-- Sigilscored Scroll
-				["isDaily"] = true,
 				["coord"] = { 64.7, 25.6, KORTHIA },
 			}),
 			q(63792, {	-- Broker's Bounty: Nocturnus the Unraveler
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "o", 368772 },	-- Sigilscored Scroll
-				["isDaily"] = true,
 				["coord"] = { 64.7, 25.6, KORTHIA },
 			}),
 			q(63963, {	-- Broker's Bounty: Ripmaul
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "o", 368772 },	-- Sigilscored Scroll
-				["isDaily"] = true,
 				["coord"] = { 64.7, 25.6, KORTHIA },
 			}),
 			q(63791, {	-- Broker's Bounty: Valdinar the Curseborn
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "o", 368772 },	-- Sigilscored Scroll
-				["isDaily"] = true,
 				["coord"] = { 64.7, 25.6, KORTHIA },
 			}),
 			q(64129, {	-- Charge of the Wild Hunt
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178840 },	-- Niya
-				["isDaily"] = true,
 				["coord"] = { 61.1, 21.2, KORTHIA },
 			}),
 			q(63787, {	-- Continued Efforts: Mauler's Outlook
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179149 },	-- Baroness Vashj
-				["isDaily"] = true,
 				["coord"] = { 60.9, 28.0, KORTHIA },
+			}),
+			q(63788, {	-- Continued Efforts: Sanctuary of Guidance
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178800 },	-- Voitha
+				["isDaily"] = true,
+				["coord"] = { 61.7, 23.7, KORTHIA },
 			}),
 			q(63789, {	-- Continued Efforts: Scholar's Den
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178807 },	-- Alexandros Mograine
-				["isDaily"] = true,
 				["coord"] = { 60.4, 28.5, KORTHIA },
 			}),
 			q(63785, {	-- Continued Efforts: Seeker's Quorum
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
-				["isDaily"] = true,
 				["coord"] = { 60.9, 21.7, KORTHIA },
 			}),
 			q(63775, {	-- Cryptograms and Keys
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179082 },	-- Tal-Rahl
-				["isDaily"] = true,
 				["coord"] = { 64.1, 23.0, KORTHIA },
 			}),
 			q(63936, {	-- Devoured Anima
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178797 },	-- Sika
-				["isDaily"] = true,
 				["coord"] = { 61.7, 23.9, KORTHIA },
 			}),
 			q(64080, {	-- Down to Earth
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
-				["isDaily"] = true,
 				["coord"] = { 60.9, 21.7, KORTHIA },
+			}),
+			q(64240, {	-- Flight of the Kyrian
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 179194 },	-- Kleia
+				["coord"] = { 61.6, 23.9, KORTHIA },
 			}),
 			q(63784, {	-- Gold's No Object
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179221 },	-- Rendle
-				["isDaily"] = true,
 				["coord"] = { 61.6, 26.0, KORTHIA },
 				["g"] = {
 					--	different characters can have different rewards for this quest on the same day.  checked all 3 back to back on 5/18, priest had Paint Brush Cup, shaman had Wheelbarrow, and mage had Chalice
@@ -758,85 +779,71 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			q(64015, {	-- Into the Meat Grinder
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178805 },	-- Emeni
-				["isDaily"] = true,
 				["coord"] = { 60.1, 27.5, KORTHIA },
 			}),
 			q(64065, {	-- Local Reagents
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
-				["isDaily"] = true,
 				["coord"] = { 60.5, 27.7, KORTHIA },
 			}),
 			q(63781, {	-- Mawsworn Battle Plans
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
-				["isDaily"] = true,
 				["coord"] = { 61.8, 25.1, KORTHIA },
 			}),
 			q(63782, {	-- Mawsworn Rituals
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178799 },	-- Arios Riftbearer
-				["isDaily"] = true,
 				["coord"] = { 61.5, 23.5, KORTHIA },
 			}),
 			q(63937, {	-- Nasty, Big, Pointy Teeth
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178805 },	-- Emeni
-				["isDaily"] = true,
 				["coord"] = { 59.9, 27.0, KORTHIA },
 			}),
 			q(63776, {	-- Observational Records
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178844 },	-- Ta'nasi
-				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(63957, {	-- Observational Records
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178844 },	-- Ta'nasi
-				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(63958, {	-- Observational Records
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178844 },	-- Ta'nasi
-				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(63960, {	-- Observational Records
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178844 },	-- Ta'nasi
-				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(63962, {	-- Observational Records
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178844 },	-- Ta'nasi
-				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(63959, {	-- Observational Records
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178844 },	-- Ta'nasi
-				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(64103, {	-- Old Tricks Work Best
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178808 },	-- Baroness Draka
-				["isDaily"] = true,
 				["coord"] = { 60.7, 27.9, KORTHIA },
 			}),
 			q(64040, {	-- Once More, With Healing
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179194 },	-- Kleia
-				["isDaily"] = true,
 				["coord"] = { 61.6, 24.1, KORTHIA },
 			}),
 			q(64017, {	-- Oozing with Character (Bloop)
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
-				["isDaily"] = true,
 				["coord"] = { 60.5, 27.6, KORTHIA },
 				["g"] = {
 					ach(15056),		-- Friend of Bloop
@@ -845,7 +852,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			q(64016, {	-- Oozing with Character (Ooz)
 				["sourceQuests"] = { 63727 },	-- The Primus Returns
 				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
-				["isDaily"] = true,
 				["coord"] = { 60.5, 27.6, KORTHIA },
 				["g"] = {
 					ach(15055),	-- Friend of Ooz
@@ -854,7 +860,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			q(63989, {	-- Oozing with Character (Plaguey)
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
-				["isDaily"] = true,
 				["coord"] = { 60.5, 27.6, KORTHIA },
 				["g"] = {
 					ach(15057),		-- Friend of Plaguey
@@ -863,25 +868,17 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			q(63935, {	-- Precious Roots
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178842 },	-- Zayhad, The Builder
-				["isDaily"] = true,
 				["coord"] = { 60.9, 21.3, KORTHIA },
 			}),
 			q(64166, {	-- Random Memory Access
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179134 },	-- Pelagos
-				["isDaily"] = true,
 				["coord"] = { 61.7, 24.0, KORTHIA },
 			}),
 			q(63950, {	-- Razorwing Talons
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178837 },	-- Lord Herne
-				["isDaily"] = true,
 				["coord"] = { 61.3, 21.3, KORTHIA },
-			}),
-			q(65146, {	-- Relic Hunter
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.8, 22.6, KORTHIA },
-				["timeline"] = { "added 9.1.5" },
 			}),
 			q(65266, {	-- Lost Research
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
@@ -892,121 +889,94 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			q(63954, {	-- Sealed Secrets
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178845 },	-- Ve'lonu
-				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(63956, {	-- Sealed Secrets
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178845 },	-- Ve'lonu
-				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(63961, {	-- Sealed Secrets
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178845 },	-- Ve'lonu
-				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(63777, {	-- Sealed Secrets
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178845 },	-- Ve'lonu
-				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(63955, {	-- Sealed Secrets
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178845 },	-- Ve'lonu
-				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(63780, {	-- See How THEY Like It!
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178838 },	-- Lady Moonberry
-				["isDaily"] = true,
 				["coord"] = { 61.2, 21.2, KORTHIA },
+			}),
+			q(63965, {	-- Slitherwing Egg Rescue
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178839 },	-- Dreamweaver
+				["coord"] = { 61.4, 21.4, KORTHIA },
 			}),
 			q(64430, {	-- Spill the Tea
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179218 },	-- Theotar
-				["isDaily"] = true,
 				["coord"] = { 61.6, 25.7, KORTHIA },
 			}),
 			q(64070, {	-- Staying Scrappy
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179214 },	-- Bonesmith Heirmir
-				["isDaily"] = true,
 				["coord"] = { 63.3, 25.2, KORTHIA },
 			}),
 			q(64432, {	-- Strength to Weakness
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179214 },	-- Bonesmith Heirmir
-				["isDaily"] = true,
 				["coord"] = { 63.3, 25.2, KORTHIA },
 			}),
 			q(63786, {	-- Sweep the Windswept Aerie
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178794 },	-- General Draven
-				["isDaily"] = true,
 				["coord"] = { 61.5, 25.2, KORTHIA },
 			}),
 			q(64089, {	-- Teas and Tinctures
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179218 },	-- Theotar
-				["isDaily"] = true,
 				["coord"] = { 61.6, 25.7, KORTHIA },
 			}),
 			q(64101, {	-- The Proper Procedures
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178790 },	-- The Accuser
-				["isDaily"] = true,
 				["coord"] = { 61.8, 25.3, KORTHIA },
 			}),
 			q(64018, {	-- The Weight of Stone
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178794 },	-- General Draven
-				["isDaily"] = true,
 				["coord"] = { 61.5, 25.2, KORTHIA },
+			}),
+			q(64104, {	-- Think of the Critters
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178839 },	-- Dreamweaver
+				["coord"] = { 61.4, 21.4, KORTHIA },
 			}),
 			q(64194, {	-- War Prototype
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179216 },	-- Mikanikos
-				["isDaily"] = true,
 				["coord"] = { 61.4, 23.9, KORTHIA },
 			}),
 			q(63778, {	-- We Move Forward
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178840 },	-- Niya
-				["isDaily"] = true,
 				["coord"] = { 61.1, 21.2, KORTHIA },
 			}),
 			q(64043, {	-- We Need a Healer - You!
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179216 },	-- Mikanikos
-				["isDaily"] = true,
 				["coord"] = { 61.4, 23.2, KORTHIA },
 			}),
-			q(63965, {	-- Slitherwing Egg Rescue
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178839 },	-- Dreamweaver
-				["isDaily"] = true,
-				["coord"] = { 61.4, 21.4, KORTHIA },
-		}),
-			q(64104, {	-- Think of the Critters
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178839 },	-- Dreamweaver
-				["isDaily"] = true,
-				["coord"] = { 61.4, 21.4, KORTHIA },
-		}),
-			--[[ These are only commented out until they are found on live severs // Braghe
-		--	9.1.0 PTR Data
-			q(64240, {	-- Flight of the Kyrian
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 179194 },	-- Kleia
-				["isDaily"] = true,
-				["coord"] = { 61.6, 23.9, KORTHIA },
-			}),
-			--]]
-		}),
+		})),
 	}),
 })));
 

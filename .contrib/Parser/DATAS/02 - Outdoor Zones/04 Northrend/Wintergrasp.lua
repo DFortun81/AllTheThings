@@ -9,10 +9,14 @@ root("Zones", {
 			["groups"] = {
 				n(FLIGHT_PATHS, {
 					fp(303, {	-- Valiance Landing Camp
+						["cr"] = 30869,	-- Arzo Safeflight <Flight Master>
 						["coord"] = { 72.0, 31.0, WINTERGRASP },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(332, {	-- Warsong Camp
+						["cr"] = 30870,	-- Herzo Safeflight <Flight Master>
 						["coord"] = { 21.6, 34.8, WINTERGRASP },
+						["races"] = HORDE_ONLY,
 					}),
 				}),
 				n(QUESTS, {

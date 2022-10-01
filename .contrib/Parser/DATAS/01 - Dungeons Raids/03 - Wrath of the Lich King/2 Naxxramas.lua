@@ -361,6 +361,23 @@ root("Instances", tier(WOTLK_TIER, {
 						e(1612, {	-- Gluth
 							["creatureID"] = 15932, -- Gluth
 							["lore"] = "The foul plague-dog of Naxxramas, was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
+							-- #IF NOT ANYCLASSIC
+							["sym"] = {
+								{"select","instanceID",754},{"pop"},	-- Naxx
+								{"where","difficultyID",3},		-- 10 Difficulty
+								{"extract","encounterID"},		-- Extract Encounters
+								{"not","encounterID",
+									1612,	-- Not Gluth
+									1614,	-- Not Sapphiron
+									1615,	-- Not Kel'Thuzad
+								},{"pop"},
+								{"is","itemID"},				-- Items only
+								{"not","itemID",
+									93032,	-- Blighted Spore
+									93030,	-- Dusty Clutch of Eggs
+								},
+							},
+							-- #ENDIF
 							["groups"] = {
 								-- #if ANYCLASSIC
 								-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
@@ -378,6 +395,8 @@ root("Instances", tier(WOTLK_TIER, {
 								i(93029, {	-- Gluth's Bone (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
 								}),
+								-- #IF ANYCLASSIC
+								-- Leaving this duplication for Classic because it doesn't support the 'extract' symlink command
 								i(40610),	-- Chestguard of the Lost Conqueror
 								i(40611),	-- Chestguard of the Lost Protector
 								i(40612),	-- Chestguard of the Lost Vanquisher
@@ -497,6 +516,7 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39257),	-- Loatheb's Shadow
 								i(39292),	-- Repelling Charge
 								i(39388),	-- Spirit-World Glass
+								-- #ENDIF
 							},
 						}),
 						e(1613, {	-- Thaddius
@@ -696,6 +716,12 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40107),	-- Sand-Worn Band
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
+								i(39757, {	-- Idol of Worship
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(39728, {	-- Totem of Misery
+									["timeline"] = { "removed 5.0.4" },
+								}),
 							},
 						}),
 						e(1603, {	-- Maexxna
@@ -772,6 +798,12 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40107),	-- Sand-Worn Band
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
+								i(40190, {	-- Spinning Fate
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40191, {	-- Libram of Radiance
+									["timeline"] = { "removed 5.0.4" },
+								}),
 							},
 						}),
 						e(1605, {	-- Heigan the Unclean
@@ -808,6 +840,9 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40255),	-- Dying Curse
 								i(40258),	-- Forethought Talisman
 								i(40256),	-- Grim Toll
+								i(40207, {	-- Sigil of Awareness
+									["timeline"] = { "removed 5.0.4" },
+								}),
 							},
 						}),
 						e(1606, {	-- Loatheb
@@ -880,6 +915,12 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40107),	-- Sand-Worn Band
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
+								i(40321, {	-- Idol of the Shooting Star
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40322, {	-- Totem of Dueling
+									["timeline"] = { "removed 5.0.4" },
+								}),
 							},
 						}),
 						e(1608, {	-- Gothik the Harvester
@@ -914,6 +955,12 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40255),	-- Dying Curse
 								i(40258),	-- Forethought Talisman
 								i(40256),	-- Grim Toll
+								i(40342, {	-- Idol of Awakening
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40337, {	-- Libram of Resurgence
+									["timeline"] = { "removed 5.0.4" },
+								}),
 							},
 						}),
 						e(1609, {	-- The Four Horsemen
@@ -990,6 +1037,12 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40107),	-- Sand-Worn Band
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
+								i(40268, {	-- Libram of Tolerance
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40267, {	-- Totem of Hex
+									["timeline"] = { "removed 5.0.4" },
+								}),
 							},
 						}),
 						e(1611, {	-- Grobbulus
@@ -1031,6 +1084,23 @@ root("Instances", tier(WOTLK_TIER, {
 						e(1612, {	-- Gluth
 							["creatureID"] = 15932,	-- Gluth
 							["lore"] = "The foul plague-dog of Naxxramas was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
+							-- #IF NOT ANYCLASSIC
+							["sym"] = {
+								{"select","instanceID",754},{"pop"},	-- Naxx
+								{"where","difficultyID",4},		-- 25 Difficulty
+								{"extract","encounterID"},		-- Extract Encounters
+								{"not","encounterID",
+									1612,	-- Not Gluth
+									1614,	-- Not Sapphiron
+									1615,	-- Not Kel'Thuzad
+								},{"pop"},
+								{"is","itemID"},				-- Items only
+								{"not","itemID",
+									93032,	-- Blighted Spore
+									93030,	-- Dusty Clutch of Eggs
+								},
+							},
+							-- #ENDIF
 							["groups"] = {
 								ach(565, {	-- The Construct Quarter (25 player)
 									["criteriaID"] = 5124,	-- Gluth slain
@@ -1041,6 +1111,8 @@ root("Instances", tier(WOTLK_TIER, {
 								i(93029, {	-- Gluth's Bone (TOY!)
 									["timeline"] = { "added 5.1.0.16309" },
 								}),
+								-- #IF ANYCLASSIC
+								-- Leaving this duplication for Classic because it doesn't support the 'extract' symlink command
 								i(40625),	-- Breastplate of the Lost Conqueror
 								i(40626),	-- Breastplate of the Lost Protector
 								i(40627),	-- Breastplate of the Lost Vanquisher
@@ -1199,6 +1271,25 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39706),	-- Sabatons of Sudden Reprisal
 								i(40236),	-- Serene Echoes
 								i(40325),	-- Bindings of the Expansive Mind
+								i(40191, {	-- Libram of Radiance
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40337, {	-- Libram of Resurgence
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40268, {	-- Libram of Tolerance
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40321, {	-- Idol of the Shooting Star
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(39757, {	-- Idol of Worship
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40322, {	-- Totem of Dueling
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								-- #ENDIF
 							},
 						}),
 						e(1613, {	-- Thaddius

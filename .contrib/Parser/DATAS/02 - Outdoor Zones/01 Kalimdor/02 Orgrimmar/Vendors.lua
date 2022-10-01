@@ -215,7 +215,7 @@ root("Zones", m(KALIMDOR, {
 					}),
 				},
 			}),
-			n(52809,  {	-- Blax Bottlerocket <Toys and Novelties>
+			n(52809, {	-- Blax Bottlerocket <Toys and Novelties>
 				["coords"] = {
 					{ 58.2, 62.6, ORGRIMMAR },
 					{ 58.8, 61.2, ORGRIMMAR },
@@ -265,7 +265,7 @@ root("Zones", m(KALIMDOR, {
 					}),
 				},
 			}),
-			n(69977,  {	-- Blood Guard Zar'shi <Ruthless Gladiator>
+			n(69977, {	-- Blood Guard Zar'shi <Ruthless Gladiator>
 				["coord"] = { 38.6, 70.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["sym"] = {
@@ -275,7 +275,7 @@ root("Zones", m(KALIMDOR, {
 					{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 				},
 			}),
-			n(54659,  {	-- Blood Guard Zar'shi Original CATA S10 ELITE VENDOR
+			n(54659, {	-- Blood Guard Zar'shi Original CATA S10 ELITE VENDOR
 				["coord"] = { 38.2, 71.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
@@ -303,7 +303,7 @@ root("Zones", m(KALIMDOR, {
 					}),
 				}),
 			}),
-			n(12793,  {	-- Brave Stonehide <Accessories Quartermaster>
+			n(12793, {	-- Brave Stonehide <Accessories Quartermaster>
 				["coord"] = { 38.2, 72.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -338,7 +338,7 @@ root("Zones", m(KALIMDOR, {
 					i(187010),	-- Tasteful Eyeglasses
 				},
 			}),
-			n(50477,  {	-- Champion Uru'zin <Darkspear Quartermaster>
+			n(50477, {	-- Champion Uru'zin <Darkspear Quartermaster>
 				["coord"] = { 49.9, 58.1, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -349,7 +349,7 @@ root("Zones", m(KALIMDOR, {
 					i(67536),	-- Darkspear Satchel
 				},
 			}),
-			n(73151,  {	-- Deathguard Netharian <Combatant Mount Quartermaster>
+			n(73151, {	-- Deathguard Netharian <Combatant Mount Quartermaster>
 				["races"] = HORDE_ONLY,
 				["coord"] = { 41.8, 73.0, ORGRIMMAR },
 				["g"] = pvp({
@@ -397,7 +397,7 @@ root("Zones", m(KALIMDOR, {
 					}),
 				}),
 			}),
-			n(69333,  {	-- Disciple Jusi <Huojin Quartermaster>
+			n(69333, {	-- Disciple Jusi <Huojin Quartermaster>
 				["races"] = HORDE_ONLY,
 				["coord"] = { 68.6, 40.2, ORGRIMMAR },
 				["g"] = {
@@ -413,12 +413,12 @@ root("Zones", m(KALIMDOR, {
 				["g"] = {
 				},
 			}),
-			n(46593,  {	-- Doris Volanthius Original CATA S9 ELITE VENDOR Horde
+			n(46593, {	-- Doris Volanthius Original CATA S9 ELITE VENDOR Horde
 				["coord"] = { 38.8, 69.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			n(54657,  {	-- Doris Volanthius <Vicious Gladiator>
+			n(54657, {	-- Doris Volanthius <Vicious Gladiator>
 				["coord"] = { 38.8, 69.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["sym"] = {
@@ -429,7 +429,7 @@ root("Zones", m(KALIMDOR, {
 					{"finalize"},	-- Push the Set items to the finalized list.
 				},
 			}),
-			n(44918,  {	-- Drakma <Wind Rider Keeper>
+			n(44918, {	-- Drakma <Wind Rider Keeper>
 				["races"] = HORDE_ONLY,
 				["coord"] = { 48.0, 58.6, ORGRIMMAR },
 				["g"] = {
@@ -465,7 +465,7 @@ root("Zones", m(KALIMDOR, {
 					i(21099),	-- Recipe: Smoked Sagefish
 				},
 			}),
-			n(12795,  {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
+			n(12795, {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
 				["races"] = HORDE_ONLY,
 				["coord"] = { 38.2, 72.6, ORGRIMMAR },
 				["g"] = pvp({
@@ -595,7 +595,7 @@ root("Zones", m(KALIMDOR, {
 					i(18427),	-- Sergeant's Cloak
 				}),
 			}),
-			n(50323,  {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>
+			n(50323, {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>
 				["coord"] = { 50.0, 58.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -606,7 +606,7 @@ root("Zones", m(KALIMDOR, {
 					i(67525),	-- Bilgewater Satchel
 				},
 			}),
-			n(52036,  {	-- Galra <Honor Heirlooms>
+			n(52036, {	-- Galra <Honor Heirlooms>
 				["itemID"] = 137642,	-- Mark of Honor
 				["coord"] = { 38.0, 70.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
@@ -759,7 +759,7 @@ root("Zones", m(KALIMDOR, {
 					}),
 				},
 			}),
-			n(46555,  {	-- Gunra <Justice Quartermaster>
+			n(46555, {	-- Gunra <Justice Quartermaster>
 				["races"] = HORDE_ONLY,
 				["coord"] = { 48.4, 71.6, ORGRIMMAR },
 				["g"] = {
@@ -1370,7 +1370,7 @@ root("Zones", m(KALIMDOR, {
 					{"pop"},										-- Discard Header and aquire their children
 				},
 			}),
-			n(46556,  {	-- Jamus'Vaz <Valor Quartermaster>
+			n(46556, {	-- Jamus'Vaz <Valor Quartermaster>
 				["coord"] = { 48.6, 71.4, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -2329,7 +2329,7 @@ root("Zones", m(KALIMDOR, {
 					i(189720),	-- Barbed Collar of the Succubus
 				},
 			}),
-			n(48510,  {	-- Kall Worthaton <Trike Dealer>
+			n(48510, {	-- Kall Worthaton <Trike Dealer>
 				["coord"] = { 36.2, 86.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -2337,7 +2337,7 @@ root("Zones", m(KALIMDOR, {
 					i(62461),	-- Goblin Trike (MOUNT!)
 				},
 			}),
-			n(45551,  {	-- Karizi Porkpatty <Cooking Supplies>
+			n(45551, {	-- Karizi Porkpatty <Cooking Supplies>
 				["coord"] = { 39.0, 85.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -2378,22 +2378,10 @@ root("Zones", m(KALIMDOR, {
 					}),
 				},
 			}),
-			n(34043,  {	-- Lady Palanseer (removed in 4.0.3a)
+			n(12792, {	-- Lady Palanseer <Armor Quartermaster>
+				["timeline"] = { "removed 3.0.2.8970" },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-				["g"] = {
-					i(41563),	-- Design: Willful Huge Citrine
-					i(41564),	-- Design: Empowered Huge Citrine
-					i(41565),	-- Design: Lucent Huge Citrine
-					i(41575),	-- Design: Mysterious Shadow Crystal
-					i(41559),	-- Design: Mystic Sun Crystal
-					i(41573),	-- Design: Opaque Dark Jade
-					i(41566),	-- Design: Resplendent Huge Citrine
-					i(41569),	-- Design: Shattered Dark Jade
-					i(41572),	-- Design: Steady Dark Jade
-					i(41560),	-- Design: Stormy Chalcedony
-					i(41570),	-- Design: Radiant Dark Jade
-					i(41571),	-- Design: Turbid Dark Jade
+				["groups"] = {
 					un(REMOVED_FROM_GAME, i(28807)),	-- High Warlord's Chain Helm
 					un(REMOVED_FROM_GAME, i(31646)),	-- High Warlord Ringmail Chestguard
 					un(REMOVED_FROM_GAME, i(31647)),	-- High Warlord Ringmail Gloves
@@ -2472,6 +2460,37 @@ root("Zones", m(KALIMDOR, {
 					un(REMOVED_FROM_GAME, i(16531)),	-- Blood Guard's Chain Boots
 				},
 			}),
+			n(34043, {	-- Lady Palanseer <Jewelcrafting Quartermaster>
+				["timeline"] = { "added 3.0.2.8970", "removed 4.0.3" },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					-- #if BEFORE 4.0.3
+					-- Moves to Tiffany in Dalaran
+					i(41563),	-- Design: Durable Huge Citrine [WRATH] / Design: Willful Huge Citrine [CATA+]
+					-- #endif
+					i(41564, {	-- Design: Empowered Huge Citrine [WRATH] / Design: Lucent Huge Citrine [CATA+]
+						["timeline"] = { "removed 4.0.3" },
+					}),
+					-- #if BEFORE 4.0.3
+					-- These move to Tiffany in Dalaran
+					i(41565),	-- Design: Lucent Huge Citrine
+					i(41575),	-- Design: Mysterious Shadow Crystal
+					i(41559),	-- Design: Mystic Sun Crystal
+					-- #endif
+					i(41573, {	-- Design: Opaque Dark Jade [WRATH] / Design: Turbid Dark Jade [CATA+]
+						["timeline"] = { "removed 4.0.3" },
+					}),
+					-- #if BEFORE 4.0.3
+					-- These move to Tiffany in Dalaran
+					i(41566),	-- Design: Resplendent Huge Citrine
+					i(41569),	-- Design: Shattered Dark Jade
+					i(41572),	-- Design: Steady Dark Jade
+					i(41560),	-- Design: Stormy Chalcedony
+					i(41570),	-- Design: Radiant Dark Jade [CATA+] / Design: Tense Dark Jade [WRATH]
+					i(41571),	-- Design: Turbid Dark Jade
+					-- #endif
+				},
+			}),
 			n(133239, {	-- Leyweaver Aurielle
 				["coord"] = { 38.2, 86.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
@@ -2496,7 +2515,7 @@ root("Zones", m(KALIMDOR, {
 					}),
 				},
 			}),
-			n(45558,  {	-- Lizna Goldweaver <Tailoring Supplies> (removed 7.3.5? when embassy took over)
+			n(45558, {	-- Lizna Goldweaver <Tailoring Supplies> (removed 7.3.5? when embassy took over)
 				["coord"] = { 41.0, 79.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
@@ -2521,12 +2540,12 @@ root("Zones", m(KALIMDOR, {
 					}),
 				},
 			}),
-			n(50482,  {	-- Marith Lazuria <Jewelcrafting Supplies>
+			n(50482, {	-- Marith Lazuria <Jewelcrafting Supplies>
 				["coord"] = { 72.4, 34.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
 			}),
-			n(46716,  {	-- Nerog <Inscription Trainer>
+			n(46716, {	-- Nerog <Inscription Trainer>
 				["coord"] = { 55.2, 55.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -2581,7 +2600,7 @@ root("Zones", m(KALIMDOR, {
 					i(175164),	-- Expeditionary Staff
 				},
 			}),
-			n(46359,  {	-- Punra <Blacksmithing Supplies>
+			n(46359, {	-- Punra <Blacksmithing Supplies>
 				["coord"] = { 45.0, 77.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["sym"] = {
@@ -2593,7 +2612,7 @@ root("Zones", m(KALIMDOR, {
 					}),
 				},
 			}),
-			n(12796,  {	-- Raider Bork <War Mount Quartermaster>
+			n(12796, {	-- Raider Bork <War Mount Quartermaster>
 				["coord"] = { 41.8, 72.6, ORGRIMMAR },
 				["itemID"] = 137642,	-- Mark of Honor
 				["races"] = HORDE_ONLY,
@@ -2609,7 +2628,7 @@ root("Zones", m(KALIMDOR, {
 					i(34129),	-- Swift Warstrider (MOUNT!)
 				}),
 			}),
-			n(52033,  {	-- Rogoc <Bloodthirsty Gladiator>
+			n(52033, {	-- Rogoc <Bloodthirsty Gladiator>
 				["coord"] = { 37.8, 71.6, ORGRIMMAR },
 				["itemID"] = 137642,	-- Mark of Honor
 				["races"] = HORDE_ONLY,
@@ -2619,7 +2638,7 @@ root("Zones", m(KALIMDOR, {
 					{"pop"},	-- Discard the Set header and acquire the children.
 				},
 			}),
-			n(58155,  {	-- Rugok <Legacy Justice Quartermaster>
+			n(58155, {	-- Rugok <Legacy Justice Quartermaster>
 				["coord"] = { 48.2, 71.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -3311,7 +3330,7 @@ root("Zones", m(KALIMDOR, {
 					i(58124),	-- Wrap of the Valley Glades
 				},
 			}),
-			n(26396,  {	-- Sergeant Thunderhorn Warlord Vendor Edition
+			n(26396, {	-- Sergeant Thunderhorn Warlord Vendor Edition
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
@@ -3337,7 +3356,7 @@ root("Zones", m(KALIMDOR, {
 					un(REMOVED_FROM_GAME, i(28938)),	-- High Warlord's Battletome
 				},
 			}),
-			n(69978,  {	-- Sergeant Thunderhorn <Cataclysmic Gladiator>
+			n(69978, {	-- Sergeant Thunderhorn <Cataclysmic Gladiator>
 				["coord"] = { 38.8, 70.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["sym"] = {
@@ -3355,7 +3374,7 @@ root("Zones", m(KALIMDOR, {
 					i(6369),	-- Recipe: Rockscale Cod
 				},
 			}),
-			n(49737,  {	-- Shazdar <Sous Chef>
+			n(49737, {	-- Shazdar <Sous Chef>
 				["coord"] = { 56.8, 62.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -3460,7 +3479,7 @@ root("Zones", m(KALIMDOR, {
 					}),
 				},
 			}),
-			n(50488,  {	-- Stone Guard Nargol <Orgrimmar Quartermaster>
+			n(50488, {	-- Stone Guard Nargol <Orgrimmar Quartermaster>
 				["coord"] = { 50.4, 58.4, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -3471,7 +3490,7 @@ root("Zones", m(KALIMDOR, {
 					i(67533),	-- Orgrimmar Satchel
 				},
 			}),
-			n(12794,  {	-- Stone Guard Zarg <Legacy Weapon Quartermaster>
+			n(12794, {	-- Stone Guard Zarg <Legacy Weapon Quartermaster>
 				["coord"] = { 38.6, 72.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = pvp({
@@ -3541,7 +3560,7 @@ root("Zones", m(KALIMDOR, {
 					un(REMOVED_FROM_GAME, i(90819)),	-- High Warlord's Razor
 				}),
 			}),
-			n(46708,  {	-- Suja <Cooking Supplies>
+			n(46708, {	-- Suja <Cooking Supplies>
 				["coord"] = { 56.6, 61.2, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -3567,7 +3586,7 @@ root("Zones", m(KALIMDOR, {
 					}),
 				}),
 			}),
-			n(57922,  {	-- Taryssa Lazuria <Jewelcrafting Supplies>
+			n(57922, {	-- Taryssa Lazuria <Jewelcrafting Supplies>
 				["coord"] = { 72.4, 34.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -3800,7 +3819,7 @@ root("Zones", m(KALIMDOR, {
 					}),
 				},
 			}),
-			n(66022,  {	-- Turtlemaster Odai <Dragon Turtle Breeder>
+			n(66022, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
 				["coord"] = { 69.8, 41.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -3878,7 +3897,7 @@ root("Zones", m(KALIMDOR, {
 					}),
 				},
 			}),
-			n(45546,  {	-- Vizna Bangwrench <Engineering Supplies>
+			n(45546, {	-- Vizna Bangwrench <Engineering Supplies>
 				["coord"] = { 36.6, 86.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -3908,7 +3927,7 @@ root("Zones", m(KALIMDOR, {
 					i(21099),	-- Recipe: Smoked Sagefish
 				},
 			}),
-			n(45549,  {	-- Zido Helmbreaker <Blacksmithing Supplies>
+			n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>
 				["coord"] = { 36.2, 83.2, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["sym"] = {

@@ -66,7 +66,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(5317)),	-- Dry Moss Tunic
 					},
 				}),
-				q(1838,  {	-- Brutal Armor
+				q(1838, {	-- Brutal Armor
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
 					["coord"] = { 57.2, 30.2, NORTHERN_BARRENS },
 					["sourceQuest"] = 1824,	-- Trial at the Field of Giant
@@ -75,7 +75,7 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1848,  {	-- Brutal Hauberk
+				q(1848, {	-- Brutal Hauberk
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
 					["coord"] = { 57.2, 30.2, NORTHERN_BARRENS },
 					["sourceQuest"] = 1838,	-- Brutal Armor
@@ -129,7 +129,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6477)),	-- Grassland Sash NOTE: Old rewards, quest reused
 					},
 				}),
-				q(4021,  {	-- Counterattack!
+				q(4021, {	-- Counterattack!
 					["provider"] = { "n", 3389 },	-- Regthar Deathgate
 					["coord"] = { 37.9, 55.2, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
@@ -150,7 +150,10 @@ _.Zones =
 					["provider"] = { "n", 34258 },	-- Halga Bloodeye
 					["coord"] = { 67.3, 38.7, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 5041,	-- Supplies for the Crossroads
+					["sourceQuests"] = {
+						5041,	-- Supplies for the Crossroads
+						872,	-- The Far Watch Offensive
+					},
 					["g"] = {
 						i(59536),	-- Bloodeye Belt
 						i(59537),	-- Kranal's Vest
@@ -158,7 +161,7 @@ _.Zones =
 						i(131324),	-- Kranal's Chestplate
 					},
 				}),
-				q(6129,  {	-- Curing the Sick
+				q(6129, {	-- Curing the Sick
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3448 },	-- Tonga Runetotem
 					["races"] = HORDE_ONLY,
@@ -194,7 +197,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(5340)),	-- Cauldron Stirrer
 					},
 				}),
-				q(3281,  {	-- [DEPRECATED] Stolen Silver
+				q(3281, {	-- [DEPRECATED] Stolen Silver
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3464 },	-- Gazrog
 					["races"] = HORDE_ONLY,
@@ -267,7 +270,7 @@ _.Zones =
 					["coord"] = { 55.1, 78.3, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 				}),
-				q(1503,  {	-- Forged Steel
+				q(1503, {	-- Forged Steel
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
 					["races"] = HORDE_ONLY,
@@ -367,7 +370,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(5351)),	-- Bounty Hunter's Ring  NOTE: Old rewards, quest reused
 					},
 				}),
-				q(3514,  {	-- Horde Presence
+				q(3514, {	-- Horde Presence
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8582 },	-- Kadrak
 					["races"] = HORDE_ONLY,
@@ -477,13 +480,13 @@ _.Zones =
 					["sourceQuest"] = 14034,	-- Club Foote
 				}),
 				-- #if BEFORE CATA
-				q(6365,  {	-- Meats to Orgrimmar
+				q(6365, {	-- Meats to Orgrimmar
 					["provider"] = { "n", 3489 },	-- Zargh
 					["coord"] = { 50.6, 57.8, NORTHERN_BARRENS },
 					["races"] = { ORC, TROLL },
 				}),
 				-- #endif
-				q(9267,  {	-- Mending Old Wounds (repeatable quest to repair lost rep with Ratchet from getting Insane title)
+				q(9267, {	-- Mending Old Wounds (repeatable quest to repair lost rep with Ratchet from getting Insane title)
 					["provider"] = { "n", 16418 },	-- Mupsi Shacklefridd
 					["coord"] = { 65.8, 72.0, NORTHERN_BARRENS },
 					["minReputation"] = { 470, HATED },
@@ -536,7 +539,7 @@ _.Zones =
 						28493,	-- Warchief's Command: Ashenvale!
 					},
 				}),
-				q(3301,  {	-- Mura Runetotem [This quest was repurposed and made obsolete twice]
+				q(3301, {	-- Mura Runetotem [This quest was repurposed and made obsolete twice]
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3448 },	-- Tonga Runetotem
 					["races"] = HORDE_ONLY,
@@ -560,7 +563,7 @@ _.Zones =
 						i(131330),	-- Uninsured Armguards
 					},
 				}),
-				q(1946,  {	-- Nether-lace Garment
+				q(1946, {	-- Nether-lace Garment
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3484 },	-- Kil'hala
 					["races"] = HORDE_ONLY,
@@ -577,7 +580,7 @@ _.Zones =
 					["sourceQuest"] = 29026,	-- Wenikee Boltbucket
 					["altQuests"] = { 3922 },	-- Nugget Slugs [Pre-4.0]
 				}),
-				q(1840,  {	-- Orm Stonehoof and the Brutal Helm
+				q(1840, {	-- Orm Stonehoof and the Brutal Helm
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
 					["coord"] = { 57.2, 30.2, NORTHERN_BARRENS },
 					["sourceQuest"] = 1838,	-- Brutal Armor
@@ -585,7 +588,7 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1040,  {	-- Passage to Booty Bay
+				q(1040, {	-- Passage to Booty Bay
 					["provider"] = { "n", 3453 },	-- Wharfmaster Dizzywig
 					["coord"] = { 63.2, 38.4, NORTHERN_BARRENS },
 					["sourceQuest"] = 1039,	-- The Barrens Port
@@ -638,7 +641,7 @@ _.Zones =
 					["sourceQuest"] = 29027,	-- Nugget Slugs
 				}),
 				-- #if BEFORE CATA
-				q(6384,  {	-- Ride to Orgrimmar
+				q(6384, {	-- Ride to Orgrimmar
 					["provider"] = { "n", 3615 },	-- Devrak
 					["coord"] = { 48.6, 58.6, NORTHERN_BARRENS },
 					["sourceQuest"] = 6365,	-- Meats to Orgrimmar
@@ -733,7 +736,7 @@ _.Zones =
 					["coord"] = { 69.5, 72.9, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 				}),
-				q(1825,  {	-- Speak with Thun'grim
+				q(1825, {	-- Speak with Thun'grim
 					["provider"] = { "n", 6394 },	-- Ruga Ragetotem
 					["coord"] = { 44.6, 59.4, NORTHERN_BARRENS },
 					["sourceQuest"] = 1824,	-- Trial at the Field of Giants
@@ -751,7 +754,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(5337)),	-- Wayfaring Gloves
 					},
 				}),
-				q(5041,  {	-- Supplies for the Crossroads
+				q(5041, {	-- Supplies for the Crossroads
 					["provider"] = { "n", 34258 },	-- Halga Bloodeye
 					["coord"] = { 67.4, 38.7, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
@@ -791,7 +794,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(4964,  {	-- The Completed Orb of Dar'Orahil
+				q(4964, {	-- The Completed Orb of Dar'Orahil
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6266 },	-- Menara Voidrender
 					["classes"] = { WARLOCK },
@@ -800,7 +803,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(15106)),	-- Staff of Dar'Orahil
 					},
 				}),
-				q(4975,  {	-- The Completed Orb of Noh'Orahil
+				q(4975, {	-- The Completed Orb of Noh'Orahil
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6266 },	-- Menara Voidrender
 					["classes"] = { WARLOCK },
@@ -809,7 +812,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(15105)),	-- Staff of Noh'Orahil
 					},
 				}),
-				q(4786,  {	-- The Completed Robe
+				q(4786, {	-- The Completed Robe
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6266 },	-- Menara Voidrender
 					["classes"] = { WARLOCK },
@@ -958,7 +961,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14066,	-- Investigate the Wreckage
 				}),
-				q(1758,  {	-- Tome of the Cabal (1/3 Alliance)
+				q(1758, {	-- Tome of the Cabal (1/3 Alliance)
 					["provider"] = { "n", 6251 },	-- Strahad Farsan
 					["sourceQuest"] = 1798,	-- Seeking Strahad
 					["races"] = ALLIANCE_ONLY,
@@ -966,7 +969,7 @@ _.Zones =
 					["lvl"] = 30,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1824,  {	-- Trial at the Field of Giants
+				q(1824, {	-- Trial at the Field of Giants
 					["provider"] = { "n", 6394 },	-- Ruga Ragetotem
 					["coord"] = { 44.6, 59.4, NORTHERN_BARRENS },
 					["sourceQuest"] = 1823,	-- Speak with Ruga
@@ -978,7 +981,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(7120)),	-- Ruga's Bulwark
 					},
 				}),
-				q(1839,  {	-- Ula'elek and the Brutal Gauntlets
+				q(1839, {	-- Ula'elek and the Brutal Gauntlets
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
 					["coord"] = { 57.2, 30.2, NORTHERN_BARRENS },
 					["sourceQuest"] = 1838,	-- Brutal Armor

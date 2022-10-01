@@ -464,73 +464,73 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						mark(10, i(19505)),	-- Warsong Battle Tabard
-						mark(3, i(19566)),	-- Advisor's Gnarled Staff
-						mark(3, i(19567)),	-- Advisor's Gnarled Staff
-						mark(3, i(19568)),	-- Advisor's Gnarled Staff
-						mark(3, i(19569)),	-- Advisor's Gnarled Staff
-						mark(3, i(20425)),	-- Advisor's Gnarled Staff
-						mark(3, i(19550)),	-- Legionnaire's Sword
-						mark(3, i(19551)),	-- Legionnaire's Sword
-						mark(3, i(19552)),	-- Legionnaire's Sword
-						mark(3, i(19553)),	-- Legionnaire's Sword
-						mark(3, i(20430)),	-- Legionnaire's Sword
-						mark(3, i(19558)),	-- Outrider's Bow
-						mark(3, i(19559)),	-- Outrider's Bow
-						mark(3, i(19560)),	-- Outrider's Bow
-						mark(3, i(19561)),	-- Outrider's Bow
-						mark(3, i(20437)),	-- Outrider's Bow
-						mark(3, i(19542)),	-- Scout's Blade
-						mark(3, i(19543)),	-- Scout's Blade
-						mark(3, i(19544)),	-- Scout's Blade
-						mark(3, i(19545)),	-- Scout's Blade
-						mark(3, i(20441)),	-- Scout's Blade
-						mark(1, i(19534)),	-- Scout's Medallion
-						mark(1, i(19535)),	-- Scout's Medallion
-						mark(1, i(19536)),	-- Scout's Medallion
-						mark(1, i(19537)),	-- Scout's Medallion
-						mark(1, i(20442)),	-- Scout's Medallion
-						mark(1, i(19526)),	-- Battle Healer's Cloak
-						mark(1, i(19527)),	-- Battle Healer's Cloak
-						mark(1, i(19528)),	-- Battle Healer's Cloak
-						mark(1, i(19529)),	-- Battle Healer's Cloak
-						mark(1, i(20427)),	-- Battle Healer's Cloak
-						mark(1, i(19578)),	-- Berserker Bracers
-						mark(1, i(19580)),	-- Berserker Bracers
-						mark(1, i(19581)),	-- Berserker Bracers
-						mark(1, i(19595)),	-- Dryad's Wrist Bindings
-						mark(1, i(19596)),	-- Dryad's Wrist Bindings
-						mark(1, i(19597)),	-- Dryad's Wrist Bindings
-						mark(1, i(19587)),	-- Forest Stalker's Bracers
-						mark(1, i(19589)),	-- Forest Stalker's Bracers
-						mark(1, i(19590)),	-- Forest Stalker's Bracers
-						mark(1, i(19582)),	-- Windtalker's Wristguards
-						mark(1, i(19583)),	-- Windtalker's Wristguards
-						mark(1, i(19584)),	-- Windtalker's Wristguards
+						moh(10, i(19505)),	-- Warsong Battle Tabard
+						moh(3, i(19566)),	-- Advisor's Gnarled Staff
+						moh(3, i(19567)),	-- Advisor's Gnarled Staff
+						moh(3, i(19568)),	-- Advisor's Gnarled Staff
+						moh(3, i(19569)),	-- Advisor's Gnarled Staff
+						moh(3, i(20425)),	-- Advisor's Gnarled Staff
+						moh(3, i(19550)),	-- Legionnaire's Sword
+						moh(3, i(19551)),	-- Legionnaire's Sword
+						moh(3, i(19552)),	-- Legionnaire's Sword
+						moh(3, i(19553)),	-- Legionnaire's Sword
+						moh(3, i(20430)),	-- Legionnaire's Sword
+						moh(3, i(19558)),	-- Outrider's Bow
+						moh(3, i(19559)),	-- Outrider's Bow
+						moh(3, i(19560)),	-- Outrider's Bow
+						moh(3, i(19561)),	-- Outrider's Bow
+						moh(3, i(20437)),	-- Outrider's Bow
+						moh(3, i(19542)),	-- Scout's Blade
+						moh(3, i(19543)),	-- Scout's Blade
+						moh(3, i(19544)),	-- Scout's Blade
+						moh(3, i(19545)),	-- Scout's Blade
+						moh(3, i(20441)),	-- Scout's Blade
+						moh(1, i(19534)),	-- Scout's Medallion
+						moh(1, i(19535)),	-- Scout's Medallion
+						moh(1, i(19536)),	-- Scout's Medallion
+						moh(1, i(19537)),	-- Scout's Medallion
+						moh(1, i(20442)),	-- Scout's Medallion
+						moh(1, i(19526)),	-- Battle Healer's Cloak
+						moh(1, i(19527)),	-- Battle Healer's Cloak
+						moh(1, i(19528)),	-- Battle Healer's Cloak
+						moh(1, i(19529)),	-- Battle Healer's Cloak
+						moh(1, i(20427)),	-- Battle Healer's Cloak
+						moh(1, i(19578)),	-- Berserker Bracers
+						moh(1, i(19580)),	-- Berserker Bracers
+						moh(1, i(19581)),	-- Berserker Bracers
+						moh(1, i(19595)),	-- Dryad's Wrist Bindings
+						moh(1, i(19596)),	-- Dryad's Wrist Bindings
+						moh(1, i(19597)),	-- Dryad's Wrist Bindings
+						moh(1, i(19587)),	-- Forest Stalker's Bracers
+						moh(1, i(19589)),	-- Forest Stalker's Bracers
+						moh(1, i(19590)),	-- Forest Stalker's Bracers
+						moh(1, i(19582)),	-- Windtalker's Wristguards
+						moh(1, i(19583)),	-- Windtalker's Wristguards
+						moh(1, i(19584)),	-- Windtalker's Wristguards
 
-						applyclassicphase(PHASE_SIX, mark(2, i(22673))),	-- Outrider's Chain Leggings
+						applyclassicphase(PHASE_SIX, moh(2, i(22673))),	-- Outrider's Chain Leggings
 						applyclassicphase(TBC_PHASE_ONE, i(30498)),	-- Outrider's Lamellar Legguards [Currently Sold for Gold, may change in the future!]
-						applyclassicphase(PHASE_SIX, mark(2, i(22740))),	-- Outrider's Leather Pants
-						applyclassicphase(PHASE_SIX, mark(2, i(22741))),	-- Outrider's Lizardhide Pants
-						applyclassicphase(PHASE_SIX, mark(2, i(22676))),	-- Outrider's Mail Leggings
+						applyclassicphase(PHASE_SIX, moh(2, i(22740))),	-- Outrider's Leather Pants
+						applyclassicphase(PHASE_SIX, moh(2, i(22741))),	-- Outrider's Lizardhide Pants
+						applyclassicphase(PHASE_SIX, moh(2, i(22676))),	-- Outrider's Mail Leggings
 						applyclassicphase(PHASE_SIX, i(22651)),	-- Outrider's Plate Legguards [Currently Sold for Gold, may change in the future!]
-						applyclassicphase(PHASE_SIX, mark(2, i(22747))),	-- Outrider's Silk Leggings
+						applyclassicphase(PHASE_SIX, moh(2, i(22747))),	-- Outrider's Silk Leggings
 
-						mark(1, i(19518)),	-- Advisor's Ring
-						mark(1, i(19519)),	-- Advisor's Ring
-						mark(1, i(19520)),	-- Advisor's Ring
-						mark(1, i(19521)),	-- Advisor's Ring
-						mark(1, i(20426)),	-- Advisor's Ring
-						mark(1, i(19510)),	-- Legionnaire's Band
-						mark(1, i(19511)),	-- Legionnaire's Band
-						mark(1, i(19512)),	-- Legionnaire's Band
-						mark(1, i(19513)),	-- Legionnaire's Band
-						mark(1, i(20429)),	-- Legionnaire's Band
+						moh(1, i(19518)),	-- Advisor's Ring
+						moh(1, i(19519)),	-- Advisor's Ring
+						moh(1, i(19520)),	-- Advisor's Ring
+						moh(1, i(19521)),	-- Advisor's Ring
+						moh(1, i(20426)),	-- Advisor's Ring
+						moh(1, i(19510)),	-- Legionnaire's Band
+						moh(1, i(19511)),	-- Legionnaire's Band
+						moh(1, i(19512)),	-- Legionnaire's Band
+						moh(1, i(19513)),	-- Legionnaire's Band
+						moh(1, i(20429)),	-- Legionnaire's Band
 
-						applyclassicphase(PHASE_SIX, mark(1, i(21567))),	-- Rune of Duty
-						applyclassicphase(PHASE_SIX, mark(1, i(21568))),	-- Rune of Duty
-						applyclassicphase(PHASE_SIX, mark(1, i(21565))),	-- Rune of Perfection
-						applyclassicphase(PHASE_SIX, mark(1, i(21566))),	-- Rune of Perfection
+						applyclassicphase(PHASE_SIX, moh(1, i(21567))),	-- Rune of Duty
+						applyclassicphase(PHASE_SIX, moh(1, i(21568))),	-- Rune of Duty
+						applyclassicphase(PHASE_SIX, moh(1, i(21565))),	-- Rune of Perfection
+						applyclassicphase(PHASE_SIX, moh(1, i(21566))),	-- Rune of Perfection
 					},
 				}),
 				n(14753, {	-- Illiyana Moonblaze <Silverwing Supply Officer>
@@ -541,73 +541,73 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						mark(10, i(19506)),	-- Silverwing Battle Tabard
-						mark(3, i(19570)),	-- Lorekeeper's Staff
-						mark(3, i(19571)),	-- Lorekeeper's Staff
-						mark(3, i(19572)),	-- Lorekeeper's Staff
-						mark(3, i(19573)),	-- Lorekeeper's Staff
-						mark(3, i(20434)),	-- Lorekeeper's Staff
-						mark(3, i(19562)),	-- Outrunner's Bow
-						mark(3, i(19563)),	-- Outrunner's Bow
-						mark(3, i(19564)),	-- Outrunner's Bow
-						mark(3, i(19565)),	-- Outrunner's Bow
-						mark(3, i(20438)),	-- Outrunner's Bow
-						mark(3, i(19554)),	-- Protector's Sword
-						mark(3, i(19555)),	-- Protector's Sword
-						mark(3, i(19556)),	-- Protector's Sword
-						mark(3, i(19557)),	-- Protector's Sword
-						mark(3, i(20440)),	-- Protector's Sword
-						mark(3, i(20443)),	-- Sentinel's Blade
-						mark(3, i(19546)),	-- Sentinel's Blade
-						mark(3, i(19547)),	-- Sentinel's Blade
-						mark(3, i(19548)),	-- Sentinel's Blade
-						mark(3, i(19549)),	-- Sentinel's Blade
-						mark(1, i(19538)),	-- Sentinel's Medallion
-						mark(1, i(19539)),	-- Sentinel's Medallion
-						mark(1, i(19540)),	-- Sentinel's Medallion
-						mark(1, i(19541)),	-- Sentinel's Medallion
-						mark(1, i(20444)),	-- Sentinel's Medallion
-						mark(1, i(19530)),	-- Caretaker's Cape
-						mark(1, i(19531)),	-- Caretaker's Cape
-						mark(1, i(19532)),	-- Caretaker's Cape
-						mark(1, i(19533)),	-- Caretaker's Cape
-						mark(1, i(20428)),	-- Caretaker's Cape
-						mark(1, i(19578)),	-- Berserker Bracers
-						mark(1, i(19580)),	-- Berserker Bracers
-						mark(1, i(19581)),	-- Berserker Bracers
-						mark(1, i(19595)),	-- Dryad's Wrist Bindings
-						mark(1, i(19596)),	-- Dryad's Wrist Bindings
-						mark(1, i(19597)),	-- Dryad's Wrist Bindings
-						mark(1, i(19587)),	-- Forest Stalker's Bracers
-						mark(1, i(19589)),	-- Forest Stalker's Bracers
-						mark(1, i(19590)),	-- Forest Stalker's Bracers
-						mark(1, i(19582)),	-- Windtalker's Wristguards
-						mark(1, i(19583)),	-- Windtalker's Wristguards
-						mark(1, i(19584)),	-- Windtalker's Wristguards
+						moh(10, i(19506)),	-- Silverwing Battle Tabard
+						moh(3, i(19570)),	-- Lorekeeper's Staff
+						moh(3, i(19571)),	-- Lorekeeper's Staff
+						moh(3, i(19572)),	-- Lorekeeper's Staff
+						moh(3, i(19573)),	-- Lorekeeper's Staff
+						moh(3, i(20434)),	-- Lorekeeper's Staff
+						moh(3, i(19562)),	-- Outrunner's Bow
+						moh(3, i(19563)),	-- Outrunner's Bow
+						moh(3, i(19564)),	-- Outrunner's Bow
+						moh(3, i(19565)),	-- Outrunner's Bow
+						moh(3, i(20438)),	-- Outrunner's Bow
+						moh(3, i(19554)),	-- Protector's Sword
+						moh(3, i(19555)),	-- Protector's Sword
+						moh(3, i(19556)),	-- Protector's Sword
+						moh(3, i(19557)),	-- Protector's Sword
+						moh(3, i(20440)),	-- Protector's Sword
+						moh(3, i(20443)),	-- Sentinel's Blade
+						moh(3, i(19546)),	-- Sentinel's Blade
+						moh(3, i(19547)),	-- Sentinel's Blade
+						moh(3, i(19548)),	-- Sentinel's Blade
+						moh(3, i(19549)),	-- Sentinel's Blade
+						moh(1, i(19538)),	-- Sentinel's Medallion
+						moh(1, i(19539)),	-- Sentinel's Medallion
+						moh(1, i(19540)),	-- Sentinel's Medallion
+						moh(1, i(19541)),	-- Sentinel's Medallion
+						moh(1, i(20444)),	-- Sentinel's Medallion
+						moh(1, i(19530)),	-- Caretaker's Cape
+						moh(1, i(19531)),	-- Caretaker's Cape
+						moh(1, i(19532)),	-- Caretaker's Cape
+						moh(1, i(19533)),	-- Caretaker's Cape
+						moh(1, i(20428)),	-- Caretaker's Cape
+						moh(1, i(19578)),	-- Berserker Bracers
+						moh(1, i(19580)),	-- Berserker Bracers
+						moh(1, i(19581)),	-- Berserker Bracers
+						moh(1, i(19595)),	-- Dryad's Wrist Bindings
+						moh(1, i(19596)),	-- Dryad's Wrist Bindings
+						moh(1, i(19597)),	-- Dryad's Wrist Bindings
+						moh(1, i(19587)),	-- Forest Stalker's Bracers
+						moh(1, i(19589)),	-- Forest Stalker's Bracers
+						moh(1, i(19590)),	-- Forest Stalker's Bracers
+						moh(1, i(19582)),	-- Windtalker's Wristguards
+						moh(1, i(19583)),	-- Windtalker's Wristguards
+						moh(1, i(19584)),	-- Windtalker's Wristguards
 
-						applyclassicphase(PHASE_SIX, mark(2, i(22748))),	-- Sentinel's Chain Leggings
-						applyclassicphase(TBC_PHASE_ONE, mark(2, i(30497))),	-- Sentinel's Mail Leggings
+						applyclassicphase(PHASE_SIX, moh(2, i(22748))),	-- Sentinel's Chain Leggings
+						applyclassicphase(TBC_PHASE_ONE, moh(2, i(30497))),	-- Sentinel's Mail Leggings
 						applyclassicphase(PHASE_SIX, i(22753)),	-- Sentinel's Lamellar Legguards [Currently Sold for Gold, may change in the future!]
-						applyclassicphase(PHASE_SIX, mark(2, i(22749))),	-- Sentinel's Leather Pants
-						applyclassicphase(PHASE_SIX, mark(2, i(22750))),	-- Sentinel's Lizardhide Pants
+						applyclassicphase(PHASE_SIX, moh(2, i(22749))),	-- Sentinel's Leather Pants
+						applyclassicphase(PHASE_SIX, moh(2, i(22750))),	-- Sentinel's Lizardhide Pants
 						applyclassicphase(PHASE_SIX, i(22672)),	-- Sentinel's Plate Legguards [Currently Sold for Gold, may change in the future!]
-						applyclassicphase(PHASE_SIX, mark(2, i(22752))),	-- Sentinel's Silk Leggings
+						applyclassicphase(PHASE_SIX, moh(2, i(22752))),	-- Sentinel's Silk Leggings
 
-						mark(1, i(19522)),	-- Lorekeeper's Ring
-						mark(1, i(19523)),	-- Lorekeeper's Ring
-						mark(1, i(19524)),	-- Lorekeeper's Ring
-						mark(1, i(19525)),	-- Lorekeeper's Ring
-						mark(1, i(20431)),	-- Lorekeeper's Ring
-						mark(1, i(19514)),	-- Protector's Band
-						mark(1, i(19516)),	-- Protector's Band
-						mark(1, i(19515)),	-- Protector's Band
-						mark(1, i(19517)),	-- Protector's Band
-						mark(1, i(20439)),	-- Protector's Band
+						moh(1, i(19522)),	-- Lorekeeper's Ring
+						moh(1, i(19523)),	-- Lorekeeper's Ring
+						moh(1, i(19524)),	-- Lorekeeper's Ring
+						moh(1, i(19525)),	-- Lorekeeper's Ring
+						moh(1, i(20431)),	-- Lorekeeper's Ring
+						moh(1, i(19514)),	-- Protector's Band
+						moh(1, i(19516)),	-- Protector's Band
+						moh(1, i(19515)),	-- Protector's Band
+						moh(1, i(19517)),	-- Protector's Band
+						moh(1, i(20439)),	-- Protector's Band
 
-						applyclassicphase(PHASE_SIX, mark(1, i(21567))),	-- Rune of Duty
-						applyclassicphase(PHASE_SIX, mark(1, i(21568))),	-- Rune of Duty
-						applyclassicphase(PHASE_SIX, mark(1, i(21565))),	-- Rune of Perfection
-						applyclassicphase(PHASE_SIX, mark(1, i(21566))),	-- Rune of Perfection
+						applyclassicphase(PHASE_SIX, moh(1, i(21567))),	-- Rune of Duty
+						applyclassicphase(PHASE_SIX, moh(1, i(21568))),	-- Rune of Duty
+						applyclassicphase(PHASE_SIX, moh(1, i(21565))),	-- Rune of Perfection
+						applyclassicphase(PHASE_SIX, moh(1, i(21566))),	-- Rune of Perfection
 					},
 				}),
 			}),

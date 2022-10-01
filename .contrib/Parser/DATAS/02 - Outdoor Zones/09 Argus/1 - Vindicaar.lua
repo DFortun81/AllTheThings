@@ -664,6 +664,10 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(47888),	-- Triggers when turning in "Alone in the Abyss" (questID 46938)
 		q(47869),	-- Triggers when turning in "Light's Exodus" (questID 47223)
 		q(49161),	-- Triggers when turning in "Where They Least Expect It" (questID 48461)
+		q(49383),	-- Changing specialization: Arms/Balance/Elemental/...
+		q(49384),	-- Changing specialization: Fury/Feral/Enhance/...
+		q(49385),	-- Changing specialization: Prot(War)/Guardian/Resto(Sham)/...
+		q(49386),	-- Changing specialization: Restoration(Druid)
 		-- Vindicaar Matrix Abilities
 		q(48449),	-- Shroud of Arcane Echoes/Warframe
 		q(48450),	-- Shroud of Arcane Echoes/Fel Heart

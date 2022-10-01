@@ -7,7 +7,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(THOUSAND_NEEDLES, {
 			n(QUESTS, {
-				q(1175,  {	-- A Bump in the Road
+				q(1175, {	-- A Bump in the Road
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4629 },	-- Trackmaster Zherin
 				}),
@@ -44,7 +44,7 @@ _.Zones =
 						i(63580),	-- Outhouse Boots
 					},
 				}),
-				q(1153,  {	-- A New Ore Sample
+				q(1153, {	-- A New Ore Sample
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3433 },	-- Tatternack Steelforge
@@ -68,7 +68,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),
-				q(1118,  {	-- Back to Booty Bay
+				q(1118, {	-- Back to Booty Bay
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
 					["sourceQuest"] = 1117,	-- Rumors for Kravel
@@ -241,7 +241,7 @@ _.Zones =
 						i(63616),	-- Pozzik's Vest
 					},
 				}),
-				q(1114,  {	-- Delivery to the Gnomes
+				q(1114, {	-- Delivery to the Gnomes
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
 					["sourceQuest"] = 1112,	-- Parts for Kravel
@@ -296,7 +296,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25791,	-- Back to Riznek
 				}),
-				q(1107,  {	-- Encrusted Tail Fins
+				q(1107, {	-- Encrusted Tail Fins
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4453 },	-- Wizzle Brassbolts
 					["sourceQuest"] = 1105,	-- Hardened Shells
@@ -335,7 +335,7 @@ _.Zones =
 					["coord"] = { 50.1, 62.5, THOUSAND_NEEDLES },
 					["sourceQuest"] = 28142,	-- To the Withering
 				}),
-				q(4904,  {	-- Free at Last
+				q(4904, {	-- Free at Last
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10646 },	-- Lakota Windsong
 					["races"] = HORDE_ONLY,
@@ -381,7 +381,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25745,	-- Negotiations
 				}),
-				q(1120,  {	-- Get the Gnomes Drunk
+				q(1120, {	-- Get the Gnomes Drunk
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
 					["sourceQuest"] = 1119,	-- Zanzil's Mixture and a Fool's Stout
@@ -418,12 +418,12 @@ _.Zones =
 						25797,	-- Eminent Domain
 					},
 				}),
-				q(1178,  {	-- Goblin Sponsorship
+				q(1178, {	-- Goblin Sponsorship
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4630 },	-- Pozzik
 					["sourceQuest"] = 1176,	-- Load Lightening
 				}),
-				q(1180,  {	-- Goblin Sponsorship
+				q(1180, {	-- Goblin Sponsorship
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3391 },	-- Gazlowe
 					["sourceQuest"] = 1178,	-- Goblin Sponsorship
@@ -521,7 +521,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25836,	-- Free Freewind Post
 				}),
-				q(5064,  {	-- Grimtotem Spying
+				q(5064, {	-- Grimtotem Spying
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10537 },	-- Cliffwatcher Longhorn
 					["races"] = HORDE_ONLY,
@@ -531,7 +531,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(15458)),	-- Tundra Boots
 					},
 				}),
-				q(1105,  {	-- Hardened Shells
+				q(1105, {	-- Hardened Shells
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4453 },	-- Wizzle Brassbolts
 				}),
@@ -564,7 +564,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25836,	-- Free Freewind Post
 				}),
-				q(5151,  {	-- Hypercapacitor Gizmo
+				q(5151, {	-- Hypercapacitor Gizmo
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10941 },	-- Wizlo Bearingshiner
 					["races"] = HORDE_ONLY,
@@ -607,16 +607,16 @@ _.Zones =
 						i(63646),	-- Wind Serpent Bracers
 					},
 				}),
-				q(1190,  {	-- Keeping Pace
+				q(1190, {	-- Keeping Pace
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4630 },	-- Pozzik
 					["sourceQuest"] = 1137,	-- news for Fizzle
 				}),
-				q(1176,  {	-- Load Lightening
+				q(1176, {	-- Load Lightening
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4630 },	-- Pozzik
 				}),
-				q(1106,  {	-- Martek the Exiled
+				q(1106, {	-- Martek the Exiled
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4454 },	-- Fizzle Brassbolts
 				}),
@@ -662,17 +662,17 @@ _.Zones =
 					["provider"] = { "n", 10537 },	-- Cliffwatcher Longhorn
 					["sourceQuest"] = 4542,	-- Message to Freewind Post
 				}),
-				q(1112,  {	-- Parts for Kravel
+				q(1112, {	-- Parts for Kravel
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3453 },	-- Wharfmaster Dizzywig
 					["sourceQuest"] = 1111,	-- Wharfmaster Dizzywig
 				}),
-				q(1148,  {	-- Parts of the Swarm
+				q(1148, {	-- Parts of the Swarm
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 5877 },	-- Cracked Silithis Carapace
 				}),
-				q(1184,  {	-- Parts of the Swarm
+				q(1184, {	-- Parts of the Swarm
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3428 },	-- Korran
@@ -692,7 +692,7 @@ _.Zones =
 						25526,	-- In the Outhouse
 					},
 				}),
-				q(4966,  {	-- Protect Kanati Greycloud
+				q(4966, {	-- Protect Kanati Greycloud
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10638 },	-- Kanati Greycloud
 					["races"] = HORDE_ONLY,
@@ -724,7 +724,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25543,	-- Circle the Wagons... er, Boats
 				}),
-				q(1187,  {	-- Razzeric's Tweakin
+				q(1187, {	-- Razzeric's Tweakin
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4706 },	-- Razzeric
 					["sourceQuest"] = 1186,	-- The Eighteenth Pilot
@@ -737,7 +737,7 @@ _.Zones =
 						28086,	-- Free the Pridelings
 					},
 				}),
-				q(1122,  {	-- Report Back to Fizzlebub
+				q(1122, {	-- Report Back to Fizzlebub
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
 					["sourceQuests"] = {
@@ -745,12 +745,12 @@ _.Zones =
 						1121,	-- Get the Goblins Drunk
 					},
 				}),
-				q(1194,  {	-- Rizzle's Schematics
+				q(1194, {	-- Rizzle's Schematics
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 20805 },	-- Rizzle's Unguarded Plans
 					["sourceQuest"] = 1190,	-- Keeping Pace
 				}),
-				q(1110,  {	-- Rocket Car Parts
+				q(1110, {	-- Rocket Car Parts
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
 				}),
@@ -765,12 +765,12 @@ _.Zones =
 					["provider"] = { "n", 10428 },	-- Motega Firemane
 					["sourceQuest"] = 4865,	-- Serpent Wild
 				}),
-				q(1188,  {	-- Safety First
+				q(1188, {	-- Safety First
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4706 },	-- Razzeric
 					["sourceQuest"] = 1187,	-- Razzeric's Tweaking
 				}),
-				q(1104,  {	-- Salt Flat Venom
+				q(1104, {	-- Salt Flat Venom
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4454 },	-- Fizzle Brassbolts
 				}),
@@ -941,7 +941,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27317,	-- The Rattle of Bones
 				}),
-				q(1186,  {	-- The Eighteenth Pilot
+				q(1186, {	-- The Eighteenth Pilot
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4630 },	-- Pozzik
 					["sourceQuest"] = 1183,	-- Goblin Sponsorship
@@ -1022,12 +1022,12 @@ _.Zones =
 						28284,	-- What's that Rattle?
 					},
 				}),
-				q(1115,  {	-- The Rumormonger
+				q(1115, {	-- The Rumormonger
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
 					["sourceQuest"] = 1114,	-- Delivery to the Gnomes
 				}),
-				q(1197,  {	-- The Sacred Flame
+				q(1197, {	-- The Sacred Flame
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4722 },	-- Rau Cliffrunner
@@ -1037,26 +1037,26 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6740)),	-- Azure Sash
 					},
 				}),
-				q(1147,  {	-- The Swarm Grows
+				q(1147, {	-- The Swarm Grows
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4483 },	-- Moktar Krin
 					["sourceQuest"] = 1146,	-- The Swarm Grows
 				}),
-				q(1150,  {	-- Test of Endurance
+				q(1150, {	-- Test of Endurance
 					["provider"] = { "n", 2986 },	-- Dorn Plainstalker
 					["coord"] = { 53.8, 41.6, THOUSAND_NEEDLES },
 					["sourceQuest"] = 1149,	-- Test of Lore
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1149,  {	-- Test of Faith
+				q(1149, {	-- Test of Faith
 					["provider"] = { "n", 2986 },	-- Dorn Plainstalker
 					["coord"] = { 53.8, 41.6, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1152,  {	-- Test of Lore
+				q(1152, {	-- Test of Lore
 					["provider"] = { "n", 2986 },	-- Dorn Plainstalker
 					["coord"] = { 53.8, 41.6, THOUSAND_NEEDLES },
 					["sourceQuest"] = 1151,	-- Test of Lore
@@ -1071,7 +1071,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1151,  {	-- Test of Strength
+				q(1151, {	-- Test of Strength
 					["provider"] = { "n", 2986 },	-- Dorn Plainstalker
 					["coord"] = { 53.8, 41.6, THOUSAND_NEEDLES },
 					["sourceQuest"] = 1150,	-- Test of Lore
@@ -1170,7 +1170,7 @@ _.Zones =
 					["coord"] = { 50.1, 62.5, THOUSAND_NEEDLES },
 					["sourceQuest"] = 28142,	-- To the Withering
 				}),
-				q(5147,  {	-- Wanted - Arnak Grimtotem
+				q(5147, {	-- Wanted - Arnak Grimtotem
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 176115 },	-- Wanted Posted - Arnak Grimtotem
 					["races"] = HORDE_ONLY,
@@ -1195,7 +1195,7 @@ _.Zones =
 						i(157018),	-- Oversized Mixing Agitator
 					},
 				}),
-				q(1111,  {	-- Wharfmaster Dizzywig
+				q(1111, {	-- Wharfmaster Dizzywig
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
 				}),

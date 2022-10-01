@@ -130,6 +130,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								43984,	-- The Tome Opens Again
 								44089,	-- A Greater Arsenal
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 101097 },	-- Calydus
 							["coords"] = {
 								{ 56.4, 64.6, LEGION_THE_UNDERBELLY },
@@ -201,6 +202,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								43984,	-- The Tome Opens Again
 								44089,	-- A Greater Arsenal
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 101097 },	-- Calydus
 							["coords"] = {
 								{ 56.4, 64.6, LEGION_THE_UNDERBELLY },
@@ -233,6 +235,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								43984,	-- The Tome Opens Again
 								44089,	-- A Greater Arsenal
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 101097 },	-- Calydus
 							["coords"] = {
 								{ 56.4, 64.6, LEGION_THE_UNDERBELLY },
@@ -261,7 +264,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuests"] = {
 							42125,	-- Dark Whispers
 							43254,	-- Ritual Ruination
+							41155,	-- The Dark Riders (Bad)
+							40623,	-- The Dark Riders (Good)
+							40712,	-- The Power Possessed (Good)
+							41156,	-- The Power Possessed (Bad)
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 56.4, 65.0, LEGION_THE_UNDERBELLY },
 						["maps"] = { 718 },	-- Dreadscar Rift (Scenario Map)

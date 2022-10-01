@@ -4,42 +4,42 @@
 root("Zones", m(KALIMDOR, {
 	m(ORGRIMMAR, {
 		n(QUESTS, {
-			q(7831,  {	-- A Donation of Mageweave
+			q(7831, {	-- A Donation of Mageweave
 				["provider"] = { "n", 14726 },	-- Rashona Straglash
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(7835,  {	-- A Donation of Mageweave
+			q(7835, {	-- A Donation of Mageweave
 				["provider"] = { "n", 14727 },	-- Vehena
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(7824,  {	-- A Donation of Runecloth
+			q(7824, {	-- A Donation of Runecloth
 				["provider"] = { "n", 14726 },	-- Rashona Straglash
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(7836,  {	-- A Donation of Runecloth
+			q(7836, {	-- A Donation of Runecloth
 				["provider"] = { "n", 14727 },	-- Vehena
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(7827,  {	-- A Donation of Silk
+			q(7827, {	-- A Donation of Silk
 				["provider"] = { "n", 14726 },	-- Rashona Straglash
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(7834,  {	-- A Donation of Silk
+			q(7834, {	-- A Donation of Silk
 				["provider"] = { "n", 14727 },	-- Vehena
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(7826,  {	-- A Donation of Wool
+			q(7826, {	-- A Donation of Wool
 				["provider"] = { "n", 14726 },	-- Rashona Straglash
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(7833,  {	-- A Donation of Wool
+			q(7833, {	-- A Donation of Wool
 				["provider"] = { "n", 14727 },	-- Vehena
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
@@ -75,13 +75,13 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 48.6, 70.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(1431,  {	-- Alliance Relations
+			q(1431, {	-- Alliance Relations
 				["provider"] = { "n", 5639 },	-- Craven Drok
 				["coord"] = { 52.4, 44.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(1432,  {	-- Alliance Relations
+			q(1432, {	-- Alliance Relations
 				["sourceQuests"] = { 1431 },	-- Alliance Relations
 				["provider"] = { "n", 5640 },	-- Keldran
 				["coord"] = { 22.2, 53.8, ORGRIMMAR },
@@ -125,7 +125,7 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 48.3, 71.4, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(3504,  {	-- Betrayed
+			q(3504, {	-- Betrayed
 				["provider"] = { "n", 4485 },	-- Belgrom Rockmaul
 				["coord"] = { 75.0, 34.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
@@ -142,7 +142,7 @@ root("Zones", m(KALIMDOR, {
 					}),
 				},
 			}),
-			q(4300,  {	-- Bone-Bladed Weapons
+			q(4300, {	-- Bone-Bladed Weapons
 				["provider"] = { "n", 8659 },	-- Jes'rimon
 				["coord"] = { 55.6, 34.2, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
@@ -175,7 +175,7 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 32.6, 68.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(4511,  {	-- Calm Before the Storm
+			q(4511, {	-- Calm Before the Storm
 				["sourceQuests"] = { 4509 },	-- Calm Before the Storm
 				["provider"] = { "n", 7010 },	-- Zilzibin Drumlore
 				["coord"] = { 55.2, 55.8, ORGRIMMAR },
@@ -213,7 +213,7 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 50.4, 38.2, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(6385,  {	-- Doras the Wind Rider Master
+			q(6385, {	-- Doras the Wind Rider Master
 				["sourceQuests"] = { 6384 },	-- Ride to Orgrimmar
 				["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
 				["coord"] = { 53.5, 78.7, ORGRIMMAR },
@@ -245,7 +245,7 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 49.4, 59.2, ORGRIMMAR },
 				["races"] = { GOBLIN },
 			}),
-			q(8367,  {	-- For Great Honor
+			q(8367, {	-- For Great Honor
 				["provider"] = { "n", 15350 },	-- Horde Warbringer
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
@@ -349,19 +349,19 @@ root("Zones", m(KALIMDOR, {
 					i(191682),	-- Explosive Pie
 				},
 			})),
-			q(3563,  {	-- Jes'rimon's Payment to Jediga
+			q(3563, {	-- Jes'rimon's Payment to Jediga
 				["sourceQuests"] = { 3541 },	-- Delivery to Jes'rimon
 				["provider"] = { "n", 8659 },	-- Jes'rimon
 				["coord"] = { 55.5, 34.1, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(1947,  {	-- Journey to the Marsh
+			q(1947, {	-- Journey to the Marsh
 				["classes"] = { MAGE },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(1945,  {	-- Laughing Sisters
+			q(1945, {	-- Laughing Sisters
 				["classes"] = { MAGE },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
@@ -456,14 +456,14 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 48.6, 71.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(4494,  {	-- March of the Silithid
+			q(4494, {	-- March of the Silithid
 				["sourceQuests"] = { 32 },	-- Rise of the Silithid
 				["provider"] = { "n", 7010 },	-- Zilzibin Drumlore
 				["coord"] = { 55.2, 55.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(7667,  {	-- Material Assistance
+			q(7667, {	-- Material Assistance
 				["provider"] = { "n", 13417 },	-- Sagorne Creststrider
 				["classes"] = { SHAMAN },
 				["coord"] = { 39.2, 48.4, ORGRIMMAR },
@@ -618,7 +618,7 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 48.6, 71.0, ORGRIMMAR },
 				["races"] = { GOBLIN },
 			}),
-			q(6386,  {	-- Return to Razor Hill
+			q(6386, {	-- Return to Razor Hill
 				["sourceQuests"] = { 6385 },	-- Doras the Wind Rider Master
 				["provider"] = { "n", 3310 },	-- Doras
 				["coord"] = { 49.5, 59.2, ORGRIMMAR },
@@ -630,13 +630,13 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 48.6, 71.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(3122,  {	-- Return to Witch Doctor Uzer'i
+			q(3122, {	-- Return to Witch Doctor Uzer'i
 				["sourceQuests"] = { 3121 },	-- A Strange Request
 				["provider"] = { "n", 3216 },	-- Neeru Fireblade
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(3924,  {	-- Samophlange Manual
+			q(3924, {	-- Samophlange Manual
 				["provider"] = { "n", 9317 },	-- Rilli Greasygob
 				["coord"] = { 56.8, 56.4, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
@@ -664,7 +664,7 @@ root("Zones", m(KALIMDOR, {
 					i(65630),	-- Headcover of the Speaker
 				},
 			}),
-			q(1823,  {	-- Speak with Ruga
+			q(1823, {	-- Speak with Ruga
 				["provider"] = { "n", 3354 },	-- Sorek
 				["classes"] = { WARRIOR },
 				["coord"] = { 80.0, 32.2, ORGRIMMAR },
@@ -705,7 +705,7 @@ root("Zones", m(KALIMDOR, {
 				["timeline"] = { "added 7.3.5", "removed 8.0.1" },
 				["races"] = HORDE_ONLY,
 			}),
-			q(8276,  {	-- Taking Back Silithus
+			q(8276, {	-- Taking Back Silithus
 				["provider"] = { "n", 15188 },	-- Cenarion Emissary Blackhoof
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
@@ -841,7 +841,7 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 48.4, 71.4, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(1018,  {	-- The New Frontier
+			q(1018, {	-- The New Frontier
 				["provider"] = { "n", 10880 },	-- Warcaller Gorlach
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
@@ -859,7 +859,7 @@ root("Zones", m(KALIMDOR, {
 					i(65626),	-- Hood of the Arcane Path
 				},
 			}),
-			q(1858,  {	-- The Shattered Hand
+			q(1858, {	-- The Shattered Hand
 				["provider"] = { "n", 6446 },	-- Therzok
 				["classes"] = { ROGUE },
 				["coord"] = { 33.4, 65.2, ORGRIMMAR },
@@ -885,7 +885,7 @@ root("Zones", m(KALIMDOR, {
 				},
 				["races"] = HORDE_ONLY,
 			}),
-			q(1146,  {	-- The Swarm Grows
+			q(1146, {	-- The Swarm Grows
 				["sourceQuests"] = { 1145 },	-- The Swarm Grows
 				["provider"] = { "n", 4485 },	-- Belgrom Rockmaul
 				["races"] = HORDE_ONLY,
@@ -928,7 +928,7 @@ root("Zones", m(KALIMDOR, {
 					i(63923),	-- Hauberk of Shock
 				},
 			}),
-			q(1944,  {	-- Waters of Xavian
+			q(1944, {	-- Waters of Xavian
 				["classes"] = { MAGE },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,

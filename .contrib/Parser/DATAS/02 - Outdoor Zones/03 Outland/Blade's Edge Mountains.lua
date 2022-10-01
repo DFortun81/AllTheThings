@@ -1397,7 +1397,7 @@ root("Zones", {
 						},
 						["lvl"] = lvlsquish(70, 20, 70),
 					}),
-					q(9795,  {	-- The Ogre Threat
+					q(9795, {	-- The Ogre Threat
 						["qg"] = 18013,	-- Shadow Hunter Denjai
 						["coord"] = { 30.6, 50.8, ZANGARMARSH },
 						["races"] = HORDE_ONLY,

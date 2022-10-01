@@ -1138,7 +1138,7 @@ ADDED_SLS4 = "added 9.2.5.44908";
 REMOVED_SLS4 = "removed 9.2.5.44908";
 ADDED_DF = "added 9.2.5";
 REMOVED_DFPRE = "removed 10.0";
-REMOVED_DFREL = "removed 10.0.3";
+REMOVED_DFREL = "removed 10.0.2";
 
 -- Holiday Filters
 BREWFEST = 1000;
@@ -1702,6 +1702,71 @@ end
 -- #endif
 -- #endif
 
+-- Cost Helper Functions
+applycost = function(item, ...)
+	local cost = item.cost;
+	if not cost then
+		cost = {};
+		item.cost = cost;
+	end
+	for i,o in ipairs({ ... }) do
+		table.insert(cost, o);
+	end
+	return item;
+end
+emof = function(cost, item)								-- Assign a Emblem of Frost cost to an item with proper timeline & phase requirements.
+	-- #if BEFORE 4.0.1
+	applycost(item, { "c", 341, cost });	-- Emblem of Frost
+	-- #endif
+	return applyclassicphase(WRATH_PHASE_FOUR, item);
+end
+emoh = function(cost, item)								-- Assign a Emblem of Heroism cost to an item with proper timeline & phase requirements.
+	-- #if BEFORE 4.0.1
+	applycost(item, { "c", 101, cost });	-- Emblem of Heroism
+	-- #endif
+	return applyclassicphase(WRATH_PHASE_ONE, item);
+end
+emot = function(cost, item)								-- Assign a Emblem of Triumph cost to an item with proper timeline & phase requirements.
+	-- #if BEFORE 4.0.1
+	applycost(item, { "c", 301, cost });	-- Emblem of Triumph
+	-- #endif
+	return applyclassicphase(WRATH_PHASE_THREE, item);
+end
+emov = function(cost, item)								-- Assign a Emblem of Valor cost to an item with proper timeline & phase requirements.
+	-- #if BEFORE 4.0.1
+	applycost(item, { "c", 102, cost });	-- Emblem of Valor
+	-- #endif
+	return applyclassicphase(WRATH_PHASE_ONE, item);
+end
+honor = function(cost, item)							-- Assign a Honor cost to an item with proper timeline requirements.
+	-- #if BEFORE CATA
+	-- TODO: Add the before Cata Honor System
+	--applycost(item, { "c", , cost });	-- Honor
+	-- #endif
+	return item;
+end
+honorpoints = function(cost, item)						-- Assign a Honor Points cost to an item with proper timeline requirements.
+	-- #if BEFORE 7.0.3.22248
+	-- #if AFTER CATA
+	-- TODO: Add the CATA > Legion Honor Point System
+	--applycost(item, { "c", , cost });	-- Honor Points
+	-- #endif
+	-- #endif
+	return item;
+end
+moh = function(cost, item)								-- Assign a Mark of Honor cost to an item with proper timeline requirements.
+	-- #if AFTER 7.0.3.22248
+	applycost(item, { "i", 137642, cost });	-- Mark of Honor
+	-- #endif
+	return item;
+end
+venture = function(cost, item)							-- Assign a Venture Coin cost to an item with proper timeline requirements.
+	-- #if BEFORE 4.0.1
+	applycost(item, { "c", 201, cost });	-- Venture Coin
+	-- #endif
+	return item;
+end
+
 -- SHORTCUTS for Object Class Types
 artifact = function(id, t)								-- Create an ARTIFACT Object
 	return struct("artifactID", id, t);
@@ -1911,12 +1976,6 @@ map = function(id, t)									-- Create a MAP Object
 	return struct("mapID", id, t);
 end
 m = map;												-- Create a MAP Object (alternative shortcut)
-mark = function(cost, item)								-- Assign a Mark of Honor cost to an item with proper timeline requirements.
-	-- #if AFTER 7.0.3.22248
-	item["cost"] = { { "i", 137642, cost } };	-- Mark of Honor
-	-- #endif
-	return item;
-end
 mission = function(id, t)								-- Create an MISSION Object
 	return struct("missionID", id, t);
 end

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(BFA_TIER, {
+root(ROOTS.Instances, tier(BFA_TIER, {
 	inst(1178, {	-- Operation: Mechagon
 		["coord"] = { 73.1, 36.3, MECHAGON },
 		["maps"] = {
@@ -20,6 +20,8 @@ _.Instances = { tier(BFA_TIER, {
 				i(170210),	-- Recipe: Abyssal Healing Potion (Rank 3)
 				i(170208),	-- Recipe: Potion of Unbridled Fury (Rank 3)
 				i(170209),	-- Recipe: Potion of Wild Mending (Rank 3)
+				i(168756),	-- Hijack Synaptic Circuits
+				i(168798),	-- Trajectory Analysis
 			}),
 			n(AZERITE_ESSENCES, {
 				i(168844, {	-- Perfection-Enhancing Gearbox (Rank 3)
@@ -341,12 +343,12 @@ _.Instances = { tier(BFA_TIER, {
 								n(MYTHIC_PLUS, {
 									-- This one I thoguht was confirmed, but all screenshots were removed once it was fixed...
 									i(199921, {	-- Trashmaster's Mantle
-										["description"] = "Blizzard didn't want the M+ version of this cloak to be able to be used for the related Quest. So they created a brand new ItemID along with new SourceIDs...",
+										["description"] = "Blizzard didn't want the M+ version of this cloak to be able to be used for the related Quest. So they created a brand new ItemID along with new SourceIDs...\n\nConfirmed as a Great Vault +15 reward",
+										["bonusID"] = 7359,
 									}),
-									-- This one confirmed multiple times on Discord from both vault and direct drop, on both Alliance and Horde
 									i(199921, {	-- Trashmaster's Mantle
-										["description"] = "Blizzard didn't want the M+ version of this cloak to be able to be used for the related Quest. So they created a brand new ItemID along with new SourceIDs...\n\nConfirmed as both direct M+ drop and from Great Vault.",
-										["modID"] = 35,
+										["description"] = "Blizzard didn't want the M+ version of this cloak to be able to be used for the related Quest. So they created a brand new ItemID along with new SourceIDs...\n\nConfirmed as a direct M+ drop.",
+										["modID"] = 33,
 									}),
 								}),
 							},
@@ -412,4 +414,4 @@ _.Instances = { tier(BFA_TIER, {
 			}),
 		},
 	}),
-})};
+}));

@@ -123,9 +123,6 @@ _.Zones =
 					["provider"] = { "n", 36600 },	-- Geargrinder Gizmo
 					["sourceQuests"] = { 14239 },	-- Don't Go Into the Light!
 				}),
-				q(14474, {	-- Goblin Escape Pods (duplicate. NYI?)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(25207, {	-- Good-bye, Sweet Oil
 					["coord"] = { 51.4, 13.0, 174 },
 					["provider"] = { "o", 202613 },	-- Platform Control Panel

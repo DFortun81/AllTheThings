@@ -24,7 +24,7 @@ _.Zones =
 					["provider"] = { "n", 49436 },	-- Francis Morcott
 					["coord"] = { 55.8, 28.2, WINTERSPRING },
 				}),
-				q(8798,  {	-- A Yeti of Your Own
+				q(8798, {	-- A Yeti of Your Own
 					["sourceQuest"] = 5163,	-- [DEPRECATED]Are We There, Yeti?
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
@@ -38,7 +38,7 @@ _.Zones =
 					["coord"] = { 58.0, 63.7, WINTERSPRING },
 					["sourceQuest"] = 28847,	-- The Pursuit of Umbranse
 				}),
-				q(3783,  {	-- [DEPRECATED]Are We There, Yeti?
+				q(3783, {	-- [DEPRECATED]Are We There, Yeti?
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
 				}),
@@ -47,7 +47,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
 				}),
-				q(5163,  {	-- [DEPRECATED]Are We There, Yeti?
+				q(5163, {	-- [DEPRECATED]Are We There, Yeti?
 					["sourceQuest"] = 977,	-- [DEPRECATED]Are We There, Yeti?
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
@@ -87,7 +87,7 @@ _.Zones =
 					["coord"] = { 59.7, 49.6, WINTERSPRING },
 					["sourceQuest"] = 28610,	-- Rubble Trouble
 				}),
-				q(5055,  {	-- Brumeran of the Chillwind
+				q(5055, {	-- Brumeran of the Chillwind
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10303 },	-- Storm Shadowhoof
 					["races"] = HORDE_ONLY,
@@ -101,7 +101,7 @@ _.Zones =
 				q(28516, {	-- Centuries of Suffering
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(4809,  {	-- Chillwind Horns
+				q(4809, {	-- Chillwind Horns
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10468 },
 					["sourceQuest"] = 4808,	-- Felnok Steelspring
@@ -173,7 +173,7 @@ _.Zones =
 					["coord"] = { 48.6, 41.0, WINTERSPRING },
 					["sourceQuest"] = 28674,	-- Starfall Village
 				}),
-				q(5084,  {	-- Falling to Corruption
+				q(5084, {	-- Falling to Corruption
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donovan Snowden
 					["sourceQuest"] = 5083,	-- Winterfall Firewater
@@ -192,13 +192,13 @@ _.Zones =
 					["coord"] = { 55.9, 28.1, WINTERSPRING },
 					["sourceQuest"] = 28718,	-- Where There's Smoke, There's Delicious Meat
 				}),
-				q(4970,  {	-- Frostsaber Provisions
+				q(4970, {	-- Frostsaber Provisions
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10618 },	-- Rivern Frostwind
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
-				q(4901,  {	-- Guardians of the Altar
+				q(4901, {	-- Guardians of the Altar
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10300 },	-- Ranshalla
 					["races"] = ALLIANCE_ONLY,
@@ -207,7 +207,7 @@ _.Zones =
 					["provider"] = { "n", 11191 },	-- Lilith the Lithe
 					["coord"] = { 59.8, 49.1, WINTERSPRING },
 				}),
-				q(5121,  {	-- High Chief Winterfall
+				q(5121, {	-- High Chief Winterfall
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 5087,	-- Winterfall Runners
@@ -262,12 +262,12 @@ _.Zones =
 					["coord"] = { 57.1, 75.4, WINTERSPRING },
 					["sourceQuest"] = 28838,	-- The Owlbeast's Defense
 				}),
-				q(9266,  {	-- Making Amends
+				q(9266, {	-- Making Amends
 					["provider"] = { "n", 16416 },	-- Bronn Fitzwrench
 					["coord"] = { 58.0, 52.2, WINTERSPRING },
 					["repeatable"] = true,
 				}),
-				q(3912,  {	-- Meet at the Grave
+				q(3912, {	-- Meet at the Grave
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 3909,	-- The Videre Elixir
@@ -294,7 +294,7 @@ _.Zones =
 						i(67211),	-- Orb of Kel'theril
 					},
 				}),
-				q(5057,  {	-- Past Endeavors
+				q(5057, {	-- Past Endeavors
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10303 },	-- Storm Shadowhoof
 					["races"] = HORDE_ONLY,
@@ -316,7 +316,7 @@ _.Zones =
 						i(67194),	-- Zin-Malor Ring
 					},
 				}),
-				q(5981,  {	-- Rampaging Giants
+				q(5981, {	-- Rampaging Giants
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10618 },	-- Rivern Frostwind
 					["races"] = ALLIANCE_ONLY,
@@ -326,13 +326,13 @@ _.Zones =
 					["provider"] = { "n", 50263 },	-- Jadrag the Slicer
 					["coord"] = { 61.8, 74.6, WINTERSPRING },
 				}),
-				q(5252,  {	-- Remorseful Highborne
+				q(5252, {	-- Remorseful Highborne
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10684 },	-- Remorseful Highborne
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 5248,	-- Tormented By the Past
 				}),
-				q(4810,  {	-- Return to Tinkee
+				q(4810, {	-- Return to Tinkee
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10468 },	-- Felnok Steelspring
 					["sourceQuest"] = 4809,	-- Chillwind Horns
@@ -359,7 +359,7 @@ _.Zones =
 					["coord"] = { 59.7, 49.2, WINTERSPRING },
 					["sourceQuest"] = 28626,	-- Tree Delivery
 				}),
-				q(5056,  {	-- Shy-Rotam
+				q(5056, {	-- Shy-Rotam
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10303 },	-- Storm Shadowhoof
 					["races"] = HORDE_ONLY,
@@ -433,7 +433,7 @@ _.Zones =
 						{ 60.7, 76.3, WINTERSPRING },
 					},
 				}),
-				q(4842,  {	-- Strange Sources
+				q(4842, {	-- Strange Sources
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 980,	-- The New Springs
@@ -453,7 +453,7 @@ _.Zones =
 					["coord"] = { 58.0, 63.7, WINTERSPRING },
 					["sourceQuest"] = 28840,	-- Winterwater
 				}),
-				q(5253,  {	-- The Crystal of Zin-Malor
+				q(5253, {	-- The Crystal of Zin-Malor
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11079 },	-- Wynd Nightchaser
 					["races"] = ALLIANCE_ONLY,
@@ -521,7 +521,7 @@ _.Zones =
 					["coord"] = { 59.8, 51.1, WINTERSPRING },
 					["isBreadcrumb"] = true,
 				}),
-				q(3909,  {	-- The Videre Elixir
+				q(3909, {	-- The Videre Elixir
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 3908,	-- It's a Secret to Everybody
@@ -547,7 +547,7 @@ _.Zones =
 						i(67209),	-- Winterfall Belt
 					},
 				}),
-				q(5086,  {	-- Toxic Horrors
+				q(5086, {	-- Toxic Horrors
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donovan Snowden
 					["sourceQuest"] = 5085,	-- Mystery Goo
@@ -586,7 +586,7 @@ _.Zones =
 						i(67224),	-- Morcott's Bow
 					},
 				}),
-				q(5054,  {	-- Ursius of the Shardtooth
+				q(5054, {	-- Ursius of the Shardtooth
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10303 },	-- Storm Shadowhoof
 					["races"] = HORDE_ONLY,
@@ -597,7 +597,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 28710,	-- Spray it One More Time
 				}),
-				q(4902,  {	-- Wildkin of Elune
+				q(4902, {	-- Wildkin of Elune
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7916 },	-- Erelas Ambersky
 					["races"] = ALLIANCE_ONLY,
@@ -611,11 +611,11 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11556 },	-- Salfa
 				}),
-				q(5083,  {	-- Winterfall Firewater
+				q(5083, {	-- Winterfall Firewater
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 12771 },	-- Empty Firewater Flask
 				}),
-				q(5201,  {	-- Winterfall Intrusion
+				q(5201, {	-- Winterfall Intrusion
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10618 },	-- Rivern Frostwind
 					["races"] = ALLIANCE_ONLY,
@@ -630,7 +630,7 @@ _.Zones =
 					["coord"] = { 25.1, 58.5, WINTERSPRING },
 					["sourceQuest"] = 28467,	-- Mystery Goo
 				}),
-				q(5087,  {	-- [DEPRECATED] Winterfall Runners
+				q(5087, {	-- [DEPRECATED] Winterfall Runners
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 5086,	-- Toxic Horrors

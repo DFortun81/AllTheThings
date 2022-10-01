@@ -143,6 +143,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["crs"] = {
 					151331,	-- Cellblock Sentinel
 					153165,	-- Custodian Thonar
+					155250,	-- Decayspeaker
 					170418,	-- Goxul the Devourer
 					159190,	-- Synod
 					159755,	-- The Grand Malleare

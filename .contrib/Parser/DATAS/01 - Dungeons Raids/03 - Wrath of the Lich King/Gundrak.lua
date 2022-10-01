@@ -95,6 +95,8 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 				q(13096, {	-- Gal'darah Must Pay
 					["qg"] = 30671,	-- Tol'mar
+					["sourceQuest"] = 13097,	-- Unfinished Business
+					["coord"] = { 70.0, 22.8, ZULDRAK },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {

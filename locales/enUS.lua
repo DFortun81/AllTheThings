@@ -1734,8 +1734,8 @@ app.L = {
 		[-579] = "Dark Portal Pass",											-- Dark Portal Pass
 		[-580] = "Shadowlands Seasonal Promotions",								-- Shadowlands Seasonal Promotions
 		[-581] = "TBC Classic Deluxe Edition",									-- TBC Classic Deluxe Edition
-		[-582] = "WOTLK Northrend Heroic Upgrade",								-- WOTLK Northrend Heroic Upgrade ("Cheap")
-		[-583] = "WOTLK Northrend Epic Upgrade",								-- WOTLK Northrend Epic Upgrade
+		[-582] = "WotLK Classic Northrend Heroic Upgrade",						-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
+		[-583] = "WotLK Classic Northrend Epic Upgrade",						-- WotLK Classic Northrend Epic Upgrade
 	-- PvP Header
 		-- Special Season Tags
 		--[-650] = "Rated Battleground",										-- Listed under Cata PvP Seasons

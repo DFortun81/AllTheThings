@@ -16,7 +16,7 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
-				n(8158,  {	-- Bronk <Alchemy Supplies>
+				n(8158, {	-- Bronk <Alchemy Supplies>
 					["coord"] = { 76.0, 43.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -28,7 +28,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(9548,  {	-- Cawind Trueaim <Gunsmith & Bowyer>
+				n(9548, {	-- Cawind Trueaim <Gunsmith & Bowyer>
 					["coord"] = { 74.8, 45.6, FERALAS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -37,7 +37,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(7854,  {	-- Jangdor Swiftstrider <Leatherworking Supplies>
+				n(7854, {	-- Jangdor Swiftstrider <Leatherworking Supplies>
 					["coord"] = { 52.8, 47.0, FERALAS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -55,7 +55,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(8157,  {	-- Logannas <Alchemy Supplies>
+				n(8157, {	-- Logannas <Alchemy Supplies>
 					["coord"] = { 46.6, 43.0, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -90,7 +90,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(8145,  {	-- Sheendra Tallgrass <Trade Supplies>
+				n(8145, {	-- Sheendra Tallgrass <Trade Supplies>
 					["coord"] = { 74.6, 42.8, FERALAS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -100,7 +100,7 @@ _.Zones =
 						i(13948),	-- Recipe: Mightfish Steak
 					},
 				}),
-				n(7947,  {	-- Vivianna <Trade Supplies>
+				n(7947, {	-- Vivianna <Trade Supplies>
 					["coord"] = { 46.2, 41.6, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -110,7 +110,7 @@ _.Zones =
 						i(13948),	-- Recipe: Mightfish Steak
 					},
 				}),
-				n(8159,  {	-- Worb Strongstitch <Light Armor Merchant>
+				n(8159, {	-- Worb Strongstitch <Light Armor Merchant>
 					["coord"] = { 74.6, 42.6, FERALAS },
 					["races"] = HORDE_ONLY,
 					["g"] = {

@@ -18,7 +18,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 486,	-- Ursal the Mauler
 				}),
-				q(2561,  {	-- Druid of the Claw
+				q(2561, {	-- Druid of the Claw
 					["provider"] = { "n", 7317 },	-- Oben Rageclaw
 					["coord"] = { 41.1, 83.7, TELDRASSIL_BANETHIL_BARROW_DEN },
 					["races"] = ALLIANCE_ONLY,
@@ -29,7 +29,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(9602)),	-- Brushwood Blade
 					},
 				}),
-				q(1684,  {	-- Elanaria
+				q(1684, {	-- Elanaria
 					["provider"] = { "n", 3598 },	-- Kyra Windblade
 					["coord"] = { 56.2, 59.2, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
@@ -37,7 +37,7 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(2459,  {	-- Ferocitas the Dream Eater
+				q(2459, {	-- Ferocitas the Dream Eater
 					["provider"] = { "n", 3567 },	-- Tallonkai Swiftroot
 					["coord"] = { 55.5, 49.9, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
@@ -51,7 +51,7 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(5621,  {	-- Garments of the Moon
+				q(5621, {	-- Garments of the Moon
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { NIGHTELF },
 					["classes"] = { PRIEST },
@@ -95,7 +95,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 489,	-- Seek Redemption!
 				}),
-				q(2499,  {	-- Oakenscowl
+				q(2499, {	-- Oakenscowl
 					["provider"] = { "n", 2080 },	-- Denalan
 					["coord"] = { 43.9, 44.2, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
@@ -123,7 +123,7 @@ _.Zones =
 						{ 59.9, 59.7, TELDRASSIL },
 					},
 				}),
-				q(6344,  {	-- Reminders of Home
+				q(6344, {	-- Reminders of Home
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 4265 },	-- Nyoma
 					["coord"] = { 56.7, 53.5, TELDRASSIL },
@@ -141,12 +141,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 488,	-- Zenn's Bidding
 				}),
-				q(2518,  {	-- Tears of the Moon
+				q(2518, {	-- Tears of the Moon
 					["provider"] = { "n", 7313 },	-- Priestess A'moora
 					["coord"] = { 39.1, 29.9, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(7383,  {	-- Teldrassil: The Burden of the Kaldorei
+				q(7383, {	-- Teldrassil: The Burden of the Kaldorei
 					["provider"] = { "n", 3515 },	-- Corithras Moonrage
 					["coord"] = { 55.8, 53.9, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
@@ -173,7 +173,7 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(2438,  {	-- The Emerald Dreamcatcher
+				q(2438, {	-- The Emerald Dreamcatcher
 					["provider"] = { "n", 3567 },	-- Tallonkai Swiftroot
 					["coord"] = { 55.5, 49.9, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
@@ -227,13 +227,13 @@ _.Zones =
 					["provider"] = { "o", 6752 },	-- Strange Fronded Plant
 					["description"] = "Submit this to Denalan at Lake Al'Ameth (59.8, 59.6) to ensure you get the next quest.",
 				}),
-				q(2541,  {	-- The Sleeping Druid?
+				q(2541, {	-- The Sleeping Druid?
 					["provider"] = { "n", 7317 },	-- Oben Rageclaw
 					["coord"] = { 41.1, 83.7, TELDRASSIL_BANETHIL_BARROW_DEN },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 476,	-- Gnarlpine Corruption
 				}),
-				q(2399,  {	-- The Sprouted Fronds
+				q(2399, {	-- The Sprouted Fronds
 					["model"] = 189772,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 7510 },	-- Sprouted Frond
@@ -285,7 +285,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 997,	-- Denalan's Earth
 				}),
-				q(6341,  {	-- To Darnassus
+				q(6341, {	-- To Darnassus
 					["provider"] = { "n", 40553 },	-- Fidelio
 					["coord"] = { 55.4, 50.4, TELDRASSIL },
 					["races"] = { NIGHTELF },

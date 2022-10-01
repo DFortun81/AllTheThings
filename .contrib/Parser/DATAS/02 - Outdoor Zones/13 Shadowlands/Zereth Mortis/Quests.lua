@@ -1055,22 +1055,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
 			}),
-			q(64861, {	-- Kismetric Disc
-				["sourceQuests"] = {
-					64579,	-- Hallow Efforts
-				},
-				["provider"] = { "i", 187792 },	-- Kismetric Disc
-				["g"] = {
-					i(190062, {	-- Wicked Pocopoc
-						["questID"] = 65530,
-						["g"] = {
-							crit(7, {	-- Wicked Pocopoc
-								["achievementID"] = 15508,	-- Fashion of the First Ones
-							}),
-						},
-					}),
-				},
-			}),
 			q(64717, {	-- Materials of Creation
 				["description"] = "Has Forge-tap for the achievement",
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones

@@ -4644,24 +4644,40 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(45574),	-- Stormwind Tabard
 					},
 				}),
+				n(12782, {	-- Captain O'Neal <Weapons Quartermaster>
+					["timeline"] = { "removed 3.0.2.8970" },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				n(34079, {	-- Captain O'Neal
 					["coord"] = { 75.0, 66.7, STORMWIND_CITY },
+					["timeline"] = { "added 3.0.2.8970", "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
-						i(41563),	-- Design: Willful Huge Citrine
-						i(41564),	-- Design: Empowered Huge Citrine
+						-- #if BEFORE 4.0.3
+						-- Moves to Tiffany in Dalaran
+						i(41563),	-- Design: Durable Huge Citrine [WRATH] / Design: Willful Huge Citrine [CATA+]
+						-- #endif
+						i(41564, {	-- Design: Empowered Huge Citrine [WRATH] / Design: Lucent Huge Citrine [CATA+]
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						-- #if BEFORE 4.0.3
+						-- These move to Tiffany in Dalaran
 						i(41565),	-- Design: Lucent Huge Citrine
 						i(41575),	-- Design: Mysterious Shadow Crystal
 						i(41559),	-- Design: Mystic Sun Crystal
-						i(41573),	-- Design: Opaque Dark Jade
+						-- #endif
+						i(41573, {	-- Design: Opaque Dark Jade [WRATH] / Design: Turbid Dark Jade [CATA+]
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						-- #if BEFORE 4.0.3
+						-- These move to Tiffany in Dalaran
 						i(41566),	-- Design: Resplendent Huge Citrine
 						i(41569),	-- Design: Shattered Dark Jade
 						i(41572),	-- Design: Steady Dark Jade
 						i(41560),	-- Design: Stormy Chalcedony
-						i(41570),	-- Design: Radiant Dark Jade
+						i(41570),	-- Design: Radiant Dark Jade [CATA+] / Design: Tense Dark Jade [WRATH]
 						i(41571),	-- Design: Turbid Dark Jade
-						un(REMOVED_FROM_GAME, i(28960)),	    -- Grand Marshal's Heavy Crossbow
+						-- #endif
 					},
 				}),
 				n(1291, {	-- Carla Granger

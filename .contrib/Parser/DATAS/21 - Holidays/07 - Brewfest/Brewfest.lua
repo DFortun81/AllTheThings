@@ -89,6 +89,11 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	GameTooltip:AddLine("One-Time Quests:");
 	local coren = C_QuestLog.IsQuestFlaggedCompleted(12491);
 	GameTooltip:AddDoubleLine(" " .. icon .. " 40 for Direbrew's Dire Brew", _.L[coren and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
+	
+	-- #if AFTER WRATH
+	local pink = C_QuestLog.IsQuestFlaggedCompleted(_.FactionID == Enum.FlightPathFaction.Horde and 11120 or 11118);
+	GameTooltip:AddDoubleLine(" " .. icon .. " 40 for Pink Elekks On Parade", _.L[pink and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
+	-- #endif
 
 	local chucked = C_QuestLog.IsQuestFlaggedCompleted(12022);
 	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for Chug and Chuck", _.L[chucked and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
@@ -175,7 +180,9 @@ root("Holidays", applyholiday(BREWFEST, {
 				-- #endif
 			}),
 			-- #if AFTER MOP
-			ach(1260),	-- Almost Blind Luck [MOP+] / Drunken Stupor
+			ach(1260, {	-- Almost Blind Luck [MOP+] / Drunken Stupor
+				["maps"] = { SHATTRATH_CITY },
+			}),
 			-- #endif
 			classicAch(1293, {	-- Blue Brewfest Stein [Removed]
 				["provider"] = { "i", 33016 },	-- Blue Brewfest Stein
@@ -249,7 +256,9 @@ root("Holidays", applyholiday(BREWFEST, {
 				-- #endif
 			}),
 			-- #if BEFORE MOP
-			ach(1260),	-- Drunken Stupor / Almost Blind Luck [MOP+]
+			ach(1260, {	-- Drunken Stupor / Almost Blind Luck [MOP+]
+				["maps"] = { SHATTRATH_CITY },
+			}),
 			-- #endif
 			classicAch(4782, {	-- Green Brewfest Stein [Removed]
 				["provider"] = { "i", 37892 },	-- Green Brewfest Stein
@@ -463,6 +472,80 @@ root("Holidays", applyholiday(BREWFEST, {
 				}),
 				i(54535, {	-- Keg-Shaped Treasure Chest
 					["timeline"] = { "added 3.0.1", "removed 6.0.1" },
+					-- #if ANYCLASSIC
+					-- #if BEFORE CATA
+					-- #if AFTER TBC
+					-- This is some dumb shit, Blizzard decided to launch Wrath at the same time as Brewfest, but they're using level 70 version without a keg.
+					["OnUpdate"] = [[function(t)
+						if not t.kodo then
+							local f = _.SearchForField("itemID", 37828);
+							if f and #f > 0 then
+								t.kodo = f[1];
+							else
+								return true;
+							end
+						end
+						if not t.ram then
+							local f = _.SearchForField("itemID", 33977);
+							if f and #f > 0 then
+								t.ram = f[1];
+							else
+								return true;
+							end
+						end
+						if not t.remote then
+							local f = _.SearchForField("itemID", 37863);
+							if f and #f > 0 then
+								t.remote = f[1];
+							else
+								return true;
+							end
+						end
+						local u, r = ]] .. WRATH_PHASE_ONE .. [[, ]] .. REMOVED_FROM_GAME .. [[;
+						if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_ONE .. [[] then
+							if t.kodo.parent ~= t then
+								table.remove(t.kodo.parent.g, 3);
+								table.remove(t.kodo.parent.g, 3);
+								table.remove(t.kodo.parent.g, 3);
+								t.kodo.parent = t;
+								t.ram.parent = t;
+								t.remote.parent = t;
+								table.insert(t.g, t.remote);
+								table.insert(t.g, 1, t.ram);
+								table.insert(t.g, 1, t.kodo);
+							end
+						else
+							if t.kodo.parent == t then
+								table.remove(t.g, #t.g);
+								table.remove(t.g, 1);
+								table.remove(t.g, 1);
+								t.kodo.parent = t.parent;
+								t.ram.parent = t.parent;
+								t.remote.parent = t.parent;
+								table.insert(t.parent.g, 3, t.remote);
+								table.insert(t.parent.g, 3, t.ram);
+								table.insert(t.parent.g, 3, t.kodo);
+							end
+							u = ]] .. NEVER_IMPLEMENTED .. [[;
+							r = nil;
+						end
+						for i,o in ipairs(t.g) do o.u = u; end
+						t.kodo.u = nil;
+						t.ram.u = nil;
+						t.remote.u = nil;
+						for i,itemID in ipairs({ 37597, 37128, 37127, 38289, 38290, 38288, 38287 }) do
+							local f = _.SearchForField("itemID", itemID);
+							if f and #f > 0 then f[1].u = r; end
+						end
+						for i,itemID in ipairs({ 49078, 49116, 49080, 49118, 49074, 49076 }) do
+							local f = _.SearchForField("itemID", itemID);
+							if f and #f > 0 then f[1].u = u; end
+						end
+						t.u = u;
+					end]],
+					-- #endif
+					-- #endif
+					-- #endif
 					["groups"] = {
 						i(37828, {	-- Great Brewfest Kodo (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
@@ -493,6 +576,17 @@ root("Holidays", applyholiday(BREWFEST, {
 						}),
 					},
 				}),
+				-- #if BEFORE 3.0.1
+				i(37828, {	-- Great Brewfest Kodo (MOUNT!)
+					["timeline"] = { "added 2.0.1" },
+				}),
+				i(33977, {	-- Swift Brewfest Ram (MOUNT!)
+					["timeline"] = { "added 2.0.1" },
+				}),
+				i(37863, {	-- Direbrew's Remote
+					["timeline"] = { "added 2.0.1" },
+				}),
+				-- #endif
 				-- Warlords of Draenor+
 				i(117361, {	-- Bitterest Balebrew Charm [Level 100+]
 					["timeline"] = { "added 6.0.1.18594" },
@@ -570,14 +664,6 @@ root("Holidays", applyholiday(BREWFEST, {
 					["timeline"] = { "added 3.0.1", "removed 4.0.1" },
 				}),
 				-- Burning Crusade
-				-- #if BEFORE 3.0.1
-				i(37828, {	-- Great Brewfest Kodo (MOUNT!)
-					["timeline"] = { "added 2.0.1" },
-				}),
-				i(33977, {	-- Swift Brewfest Ram (MOUNT!)
-					["timeline"] = { "added 2.0.1" },
-				}),
-				-- #endif
 				i(37597, {	-- Direbrew's Shanker [Level 70]
 					["timeline"] = { "added 2.0.1", "removed 3.0.1" },
 				}),
@@ -599,11 +685,6 @@ root("Holidays", applyholiday(BREWFEST, {
 				i(38287, {	-- Empty Mug of Direbrew [Level 70]
 					["timeline"] = { "added 2.0.1", "removed 3.0.1" },
 				}),
-				-- #if BEFORE 3.0.1
-				i(37863, {	-- Direbrew's Remote
-					["timeline"] = { "added 2.0.1" },
-				}),
-				-- #endif
 				i(38280, {	-- Direbrew's Dire Brew (Alliance)
 					["timeline"] = { "added 2.0.1" },
 					["races"] = ALLIANCE_ONLY,
@@ -615,6 +696,7 @@ root("Holidays", applyholiday(BREWFEST, {
 			},
 		}),
 		n(QUESTS, {
+			-- #if NOT ANYCLASSIC
 			["OnUpdate"] = [[function(t)
 				if GetCVar("portal") == "EU" then
 					local quests = {[11117]=1,[11431]=1,[11118]=1,[11120]=1};
@@ -626,6 +708,7 @@ root("Holidays", applyholiday(BREWFEST, {
 				end
 				t.OnUpdate = nil;
 			end]],
+			-- #endif
 			["groups"] = {
 				q(29397, {	-- A New Supplier of Souvenirs (A)
 					["qg"] = 24468,	-- Pol Amberstill
@@ -729,6 +812,7 @@ root("Holidays", applyholiday(BREWFEST, {
 					["coord"] = { 49.0, 39.8, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
+					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
@@ -752,6 +836,7 @@ root("Holidays", applyholiday(BREWFEST, {
 					["coord"] = { 44.4, 17.9, DUROTAR },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
@@ -775,6 +860,7 @@ root("Holidays", applyholiday(BREWFEST, {
 					["coord"] = { 49.5, 38.7, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
+					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
@@ -798,6 +884,7 @@ root("Holidays", applyholiday(BREWFEST, {
 					["coord"] = { 44.4, 17.9, DUROTAR },
 					-- #endif
 					["timeline"] = { "added 2.2.2" },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["groups"] = BREWFEST_TOKEN,
@@ -1017,7 +1104,7 @@ root("Holidays", applyholiday(BREWFEST, {
 					["coord"] = { 48.0, 39.5, DUN_MOROGH },
 					-- #endif
 					-- #if ANYCLASSIC
-					["timeline"] = { "created 2.2.2" },	-- Not implemented in Classic, so it seems. :(
+					["timeline"] = { "created 2.2.2", "added 3.0.1" },
 					-- #else
 					["timeline"] = { "added 2.2.2" },
 					-- #endif
@@ -1047,7 +1134,7 @@ root("Holidays", applyholiday(BREWFEST, {
 					["coord"] = { 45.0, 17.4, DUROTAR },
 					-- #endif
 					-- #if ANYCLASSIC
-					["timeline"] = { "created 2.2.2" },	-- Not implemented in Classic, so it seems. :(
+					["timeline"] = { "created 2.2.2", "added 3.0.1" },
 					-- #else
 					["timeline"] = { "added 2.2.2" },
 					-- #endif
@@ -1307,17 +1394,17 @@ root("Holidays", applyholiday(BREWFEST, {
 					["coord"] = { 48.0, 39.5, DUN_MOROGH },
 					-- #endif
 					-- #if ANYCLASSIC
-					["timeline"] = { "created 2.2.2" },	-- Not implemented in Classic, so it seems. :(
+					["timeline"] = { "created 2.2.2", "added 3.0.1" },
 					-- #else
 					["timeline"] = { "added 2.2.2" },
 					-- #endif
-					["maps"] = { AZUREMYST_ISLE, THE_EXODAR, ELWYNN_FOREST, TELDRASSIL },
+					["maps"] = { AZUREMYST_ISLE, THE_EXODAR, ELWYNN_FOREST, TELDRASSIL, SHATTRATH_CITY },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 3.2.0.10314
 					["cost"] = { { "i", 46735, 1 } },	-- Synthebrew Goggles
 					-- #endif
 					["isYearly"] = true,
-					["groups"] = {
+					["groups"] = appendGroups(BREWFEST_TOKEN, {
 						objective(1, {	-- 0/3 Azuremyst Pink Elekk slain
 							["provider"] = { "i", 32960 },	-- Elekk Dispersion Ray
 							["cr"] = 23528,	-- Azuremyst Pink Elekk
@@ -1330,7 +1417,7 @@ root("Holidays", applyholiday(BREWFEST, {
 							["provider"] = { "i", 32960 },	-- Elekk Dispersion Ray
 							["cr"] = 23527,	-- Teldrassil Pink Elekk
 						}),
-					},
+					}),
 				}),
 				q(11120, {	-- Pink Elekks On Parade (H) [Non-EU Only!]
 					["qg"] = 24657,	-- Glodrak Huntsniper
@@ -1340,7 +1427,7 @@ root("Holidays", applyholiday(BREWFEST, {
 					["coord"] = { 45.0, 17.4, DUROTAR },
 					-- #endif
 					-- #if ANYCLASSIC
-					["timeline"] = { "created 2.2.2" },	-- Not implemented in Classic, so it seems. :(
+					["timeline"] = { "created 2.2.2", "added 3.0.1" },
 					-- #else
 					["timeline"] = { "added 2.2.2" },
 					-- #endif
@@ -1350,7 +1437,7 @@ root("Holidays", applyholiday(BREWFEST, {
 					["cost"] = { { "i", 46735, 1 } },	-- Synthebrew Goggles
 					-- #endif
 					["isYearly"] = true,
-					["groups"] = {
+					["groups"] = appendGroups(BREWFEST_TOKEN, {
 						objective(1, {	-- 0/3 Eversong Pink Elekk slain
 							["provider"] = { "i", 32960 },	-- Elekk Dispersion Ray
 							["cr"] = 23531,	-- Eversong Pink Elekk
@@ -1363,7 +1450,7 @@ root("Holidays", applyholiday(BREWFEST, {
 							["provider"] = { "i", 32960 },	-- Elekk Dispersion Ray
 							["cr"] = 23530,	-- Tirisfal Pink Elekk
 						}),
-					},
+					}),
 				}),
 				q(12318, {	-- Save Brewfest!
 					["qgs"] = {

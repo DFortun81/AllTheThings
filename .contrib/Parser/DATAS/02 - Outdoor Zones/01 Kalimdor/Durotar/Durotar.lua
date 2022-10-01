@@ -1853,7 +1853,7 @@ root("Zones", m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				-- #if AFTER CATA
-				q(6365,  {	-- Meats to Orgrimmar
+				q(6365, {	-- Meats to Orgrimmar
 					["qg"] = 3881,	-- Grimtak
 					["coord"] = { 50.7, 42.8, DUROTAR },
 					["races"] = { ORC, TROLL, MAGHAR },
@@ -2064,7 +2064,7 @@ root("Zones", m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				-- #if AFTER CATA
-				q(6384,  {	-- Ride to Orgrimmar
+				q(6384, {	-- Ride to Orgrimmar
 					["qg"] = 41140,	-- Burok
 					["coord"] = { 53.0, 43.6, DUROTAR },
 					["sourceQuest"] = 6365,	-- Meats to Orgrimmar

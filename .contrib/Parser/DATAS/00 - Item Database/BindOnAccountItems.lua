@@ -189,3 +189,15 @@ i(89684);	-- Umbrella of Chi-Ji
 i(117382);	-- Beakbreaker of Terokk
 i(116985);	-- Headdress of the First Shaman
 i(117384);	-- Warmaul of the Warmaul Chieftain
+
+-- Heirloom Upgrade Tokens
+i(122338);	-- Ancient Heirloom Armor Casing
+i(122340);	-- Timeworn Heirloom Armor Casing
+i(151614);	-- Weathered Heirloom Armor Casing
+i(167731);	-- Battle-Hardened Heirloom Armor Casing
+i(187997);	-- Eternal Heirloom Armor Casing
+i(122339);	-- Ancient Heirloom Scabbard
+i(122341);	-- Timeworn Heirloom Scabbard
+i(151615);	-- Weathered Heirloom Scabbard
+i(167732);	-- Battle-Hardened Heirloom Scabbard
+i(187998);	-- Eternal Heirloom Scabbard

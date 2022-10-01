@@ -11,7 +11,7 @@ _.Zones =
 			["isRaid"] = true,
 			["g"] = {
 				n(ACHIEVEMENTS, {
-					ach(5848,  {	-- Fish or Cut Bait: Darnassus (A)
+					ach(5848, {	-- Fish or Cut Bait: Darnassus (A)
 						["timeline"] = { "added 4.2.0" },
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = FISHING,

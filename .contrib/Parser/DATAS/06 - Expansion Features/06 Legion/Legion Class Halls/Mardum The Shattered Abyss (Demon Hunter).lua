@@ -100,6 +100,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								40816,	-- The Power to Survive (Altruis)
 								44379,	-- In Pursuit of Power (Altruis)
 							},
+							["sourceQuestNumRequired"] = 1,
 							["providers"] = {
 								{ "n", 99254 },	-- Altruis the Sufferer
 								{ "n", 95237 },	-- Altruis the Sufferer
@@ -114,6 +115,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								40814,	-- The Power to Survive (Kayn)
 								44383,	-- In Pursuit of Power (Kayn)
 							},
+							["sourceQuestNumRequired"] = 1,
 							["providers"] = {
 								{ "n", 99247 },	-- Kayn Sunfury
 								{ "n", 95240 },	-- Kayn Sunfury
@@ -166,6 +168,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								40816,	-- The Power to Survive (Altruis)
 								44379,	-- In Pursuit of Power (Altruis)
 							},
+							["sourceQuestNumRequired"] = 1,
 							["providers"] = {
 								{ "n", 99254 },	-- Altruis the Sufferer
 								{ "n", 95237 },	-- Altruis the Sufferer
@@ -180,6 +183,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								40814,	-- The Power to Survive (Kayn)
 								44383,	-- In Pursuit of Power (Kayn)
 							},
+							["sourceQuestNumRequired"] = 1,
 							["providers"] = {
 								{ "n", 99247 },	-- Kayn Sunfury
 								{ "n", 95240 },	-- Kayn Sunfury
@@ -241,6 +245,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							41863,	-- Vengeance Will Be Ours (Altruis)
 							40249,	-- Vengeance Will Be Ours (Kayn)
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 102799 },	-- Kor'vas Bloodthorn
 						["coord"] = { 74.3, 46.2, LEGION_DALARAN },
 					}),

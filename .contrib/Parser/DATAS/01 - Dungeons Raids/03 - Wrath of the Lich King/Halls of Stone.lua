@@ -232,6 +232,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								["criteriaID"] = 5615,			-- Sjonnir The Ironshaper slain
 							},
 							ach(2155),	-- Abuse the Ooze
+							i(41792, {	-- Design: Deft Monarch Topaz
+								["timeline"] = { "removed 4.0.3" },
+							}),
 							i(37667),	-- The Fleshshaper
 							-- #if AFTER 7.3.5
 							i(35679),	-- Static Cowl (7.3.5 - Used to be only Normal Mode)

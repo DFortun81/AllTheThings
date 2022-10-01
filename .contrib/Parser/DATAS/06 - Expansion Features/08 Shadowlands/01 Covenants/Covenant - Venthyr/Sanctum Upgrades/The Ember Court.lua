@@ -1665,6 +1665,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 								q(62601, {	-- Forgy
 									["provider"] = { "i", 183848 },	-- Hastily Scrawled Note to Forgy
+									["maps"] = { REVENDRETH },
 								}),
 								q(63691, {	-- Hunt-Captain Korayn's Best Friend
 									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Hunt-Captain Korayn?
@@ -2408,12 +2409,8 @@ root("HiddenQuestTriggers", {
 			q(62521),	-- 'Safe/Humble' criteria for It's Certainly Never Boring
 			q(62523),	-- 'Safe/Humble' criteria for It's Certainly Never Boring
 			q(62525),	-- 'Relaxing' criteria for It's Certainly Never Boring
-			q(61529),	-- 'Relaxing' criteria for It's Certainly Never Boring
 			q(62526),	-- 'Exciting' criteria for It's Certainly Never Boring
 			q(62520),	-- 'Clean' criteria for It's Certainly Never Boring
-
-			--q(61536),	-- Miserable Aliothe, Uncomfortable Mikanikos, Unhappy Choofa, Unhappy Alexandros Mograine, triggered after opening Mikanikos chest / New report: First Ember Court with Mikanikos
-
 			q(61930),	-- Triggered after Restock: Medic's Tent
 			q(61931),	-- Restocked Ember Court security
 			q(61935),	-- Triggered after Restock: Imported Dinnerware
@@ -2427,10 +2424,23 @@ root("HiddenQuestTriggers", {
 			--q(61932),	-- Maybe Bastion Etiquette
 			q(61458),	-- After using [Visions of Sire Denathrius] in Ember Court
 			q(61414),	-- Faulty Fireworks (+Safe)
-			q(60472),	-- Looting Decree: Baroness Vashj's Esteem
-			q(61533),	-- Looting Decree: The Countess's Favor
-			q(61528),	-- Looted Lady Moonberry cache
-			q(61535),	-- Triggered after ending Ember Court early and looting Mikanikos' Tribute
+
+		-- Baroness Vashj Decrees
+			q(60471),	-- Decree: Baroness Vashj's Favor
+			q(60472),	-- Decree: Baroness Vashj's Esteem
+			q(60473),	-- Decree: Baroness Vashj's Boon
+		-- The Countess Decrees
+			q(61533),	-- Decree: The Countess's Favor
+			q(61532),	-- Decree: The Countess's Esteem
+			q(61531),	-- Decree: The Countess's Boon
+		-- Lady Moonberry Decrees
+			q(61529),	-- Decree: Lady Moonberry's Favor
+			q(61528),	-- Decree: Lady Moonberry's Esteem
+			q(61527),	-- Decree: Lady Moonberry's Boon
+		-- Mikanikos Decrees
+			q(61536),	-- Decree: Mikanikos's Favor
+			q(61535),	-- Decree: Mikanikos's Esteem
+			q(61534),	-- Decree: Mikanikos's Boon
 
 	-- Misc
 		q(62035),	-- unlocking Soulbreaker's Court Vestments set (TransmogSetID 2065, Soulbreaker's Court items)

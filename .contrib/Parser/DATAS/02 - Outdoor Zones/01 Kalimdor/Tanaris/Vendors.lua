@@ -21,7 +21,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(33915,  {	-- Argex Irongut <Furious Gladiator Vendor>
+				n(33915, {	-- Argex Irongut <Furious Gladiator Vendor>
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				n(34088, {	-- Blazzek the Biter <Veteran Arena Vendor> Original WOTLK S6 ELITE VENDOR
@@ -61,7 +61,7 @@ _.Zones =
 					--]]
 					},
 				}),
-				n(34090,  {	-- Blazzek the Biter <Veteran Arena Vendor> Original WOTLK S7 ELITE VENDOR
+				n(34090, {	-- Blazzek the Biter <Veteran Arena Vendor> Original WOTLK S7 ELITE VENDOR
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 					--[[	-- Items are commented out to reduce bloat.
@@ -99,7 +99,7 @@ _.Zones =
 					--]]
 					},
 				}),
-				n(34093,  {	-- Blazzek the Biter <Veteran Arena Vendor> Original WOTLK S8 ELITE VENDOR
+				n(34093, {	-- Blazzek the Biter <Veteran Arena Vendor> Original WOTLK S8 ELITE VENDOR
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 					--[[	-- Items are commented out to reduce bloat.
@@ -135,7 +135,7 @@ _.Zones =
 					--]]
 					},
 				}),
-				n(40216,  {	-- Blazzek the Biter <Vicious Gladiator>
+				n(40216, {	-- Blazzek the Biter <Vicious Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, TANARIS },
 					["description"] = "Some items may require you to buy specific class ensembles to unlock every item from the vendor. Shift Rightclick the item to see which ensemble.",
@@ -791,7 +791,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(69322,  {	-- Capps Carlin <Cataclysmic Gladiator>
+				n(69322, {	-- Capps Carlin <Cataclysmic Gladiator>
 					["coord"] = { 51.6, 28.0, TANARIS },
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
@@ -1441,19 +1441,19 @@ _.Zones =
 						}),
 					},
 				}),
-				n(40589,  {	-- Dirge Quikcleave <Butcher>
+				n(40589, {	-- Dirge Quikcleave <Butcher>
 					["coord"] = { 52.6, 29.0, TANARIS },
 					["g"] = {
 						i(18046),	-- Recipe: Tender Wolf Steak
 					},
 				}),
-				n(69979,  {	-- Ecton Brasstumbler <Honor Quartermaster>
+				n(69979, {	-- Ecton Brasstumbler <Honor Quartermaster>
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				n(32362,  {	-- Evee Copperspring <Arena Vendor> Original WOTLK S5 (ELITE?) VENDOR
+				n(32362, {	-- Evee Copperspring <Arena Vendor> Original WOTLK S5 (ELITE?) VENDOR
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				n(40572,  {	-- Haughty Modiste <Fashion Designer>
+				n(40572, {	-- Haughty Modiste <Fashion Designer>
 					["coord"] = { 50.6, 28.6, TANARIS },
 					["g"] = {
 						i(37915, {	-- Pattern: Dress Shoes
@@ -1483,7 +1483,7 @@ _.Zones =
 						i(18046),	-- Recipe: Tender Wolf Steak
 					},
 				}),
-				n(14743,  {	-- Jhordy Lapforge <Engineer>
+				n(14743, {	-- Jhordy Lapforge <Engineer>
 					["requireSkill"] = 20219,	-- Gnomish Engineering
 					["description"] = "Gnomish Engineers can speak to Jhordy to learn the recipe.",
 					["coord"] = { 52.2, 27.8, TANARIS },
@@ -1491,7 +1491,7 @@ _.Zones =
 						recipe(23489),	-- Ultrasafe Transporter - Gadgetzan
 					},
 				}),
-				n(69323,  {	-- Tiny Tayger <Ruthless Gladiator>
+				n(69323, {	-- Tiny Tayger <Ruthless Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, TANARIS },
 					["g"] = {
@@ -2264,7 +2264,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(20278,  {	-- Vixton Pinchwhistle <Bloodthirsty Gladiator>
+				n(20278, {	-- Vixton Pinchwhistle <Bloodthirsty Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, TANARIS },
 					["description"] = "Some items may require you to buy specific class ensembles to unlock every item from the vendor. Shift Rightclick the item to see which ensemble.",

@@ -502,7 +502,6 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(37792),	-- Agin's Crushing Carapace
 	}),
 	category(254, {	-- Bracers
-		i(39235),	-- Bone-Framed Bracers
 		i(37776),	-- Bracers of Accurate Fire
 		i(37777),	-- Bracers of Sizzling Heat
 		i(37766),	-- Bracers of Unmitigated Larceny
@@ -819,6 +818,52 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(36668),	-- Mindless Wand
 			i(37824),	-- Gwyneth's Runed Dragonwand
 		}),
+		-- #if BEFORE MOP
+		filter(THROWN, {
+			i(36723, {	-- Clawed Shuriken
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(36721, {	-- Dragon's Teeth
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(36720, {	-- Flying Knives
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(36711, {	-- Forsaken Edge
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(36724, {	-- Frozen Throwing Blades
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(36712, {	-- Howling Throwing Knives
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(36719, {	-- Hunter's Scout
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(36718, {	-- Nexus Shrike
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(36722, {	-- Pyramid Throwing Star
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(36713, {	-- Reaching Star
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(36715, {	-- Runed Shuriken (TODO: May have never been implemented according to wowpedia)
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(36716, {	-- Threatening Darts
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(36714, {	-- Tuskarr's Piercers
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+			i(36717, {	-- Venture Co. Throwing Axe
+				["timeline"] = { "removed 5.0.4.10000", },
+			}),
+		}),
+		-- #endif
 	}),
 	filter(SHIELDS, {
 		i(36445),	-- Riveted Shield
@@ -1022,18 +1067,33 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(41780),	-- Design: Champion's Monarch Topaz
 			i(41786),	-- Design: Destructive Skyflare Diamond
 			i(41777),	-- Design: Etched Twilight Opal
+			-- #if AFTER CATA
+			i(41785, {	-- Design: Glinting Twilight Opal [CATA+] / Design: Tenuous Twilight Opal [WRATH]
+				["timeline"] = { "removed 4.0.3" },
+			}),
+			-- #endif
 			i(41789),	-- Design: Inscribed Monarch Topaz
+			-- #if AFTER CATA
+			i(41782, {	-- Design: Lightning Forest Emerald [CATA+] / Design: Shining Forest Emerald [WRATH]
+				["timeline"] = { "removed 4.0.3" },
+			}),
+			-- #endif
+			i(41781, {	-- Design: Misty Forest Emerald
+				["timeline"] = { "removed 4.0.3" },
+			}),
 			i(41783),	-- Design: Purified Twilight Opal
-			i(41699, {	-- Design: Purified Twilight Opal
-				["spellID"] = 0,	-- This is now available via 41783, need to delink the old plans from the recipe
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			i(41701, {	-- Design: Purified Twilight Opal
-				["spellID"] = 0,	-- This is now available via 41783, need to delink the old plans from the recipe
-				["u"] = REMOVED_FROM_GAME,
-			}),
 			i(41778),	-- Design: Resolute Monarch Topaz
+			-- #if BEFORE CATA
+			i(41782, {	-- Design: Shining Forest Emerald [WRATH] / Design: Lightning Forest Emerald [CATA+]
+				["timeline"] = { "removed 4.0.3" },
+			}),
+			-- #endif
 			i(41784),	-- Design: Sovereign Twilight Opal
+			-- #if AFTER CATA
+			i(41785, {	-- Design: Tenuous Twilight Opal [WRATH] / Design: Glinting Twilight Opal [CATA+]
+				["timeline"] = { "removed 4.0.3" },
+			}),
+			-- #endif
 			i(41787),	-- Design: Thundering Skyflare Diamond
 		}),
 		prof(TAILORING, {

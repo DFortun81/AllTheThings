@@ -315,6 +315,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["questID"] = 58783,
 				["isDaily"] = true,
 				["coord"] = { 44.6, 52.0, MALDRAXXUS },
+				["description"] = "You must be a Necrolord & have the Abomination building construct \"Neena\" with you otherwise the |cFFFFFFFFBonehoof Tauralus Mount|r cant drop. It's not required to use the extra action button to loot Tahonta.",
 				["g"] = {
 					crit(12, {	-- Tahonta
 						["achievementID"] = 14308,	-- Adventurer of Maldraxxus

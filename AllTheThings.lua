@@ -500,6 +500,23 @@ local defaultHierarchyComparison = function(a,b)
 	bcomp = b.g and #b.g or 0;
 	return acomp < bcomp;
 end
+local defaultTotalComparison = function(a,b)
+	-- If either object doesn't exist
+	if a then
+		if not b then
+			return true;
+		end
+	elseif b then
+		return false;
+	else
+		-- neither a or b exists, equality returns false
+		return false;
+	end
+	local acomp, bcomp;
+	acomp = a.total or 0;
+	bcomp = b.total or 0;
+	return acomp < bcomp;
+end
 app.SortDefaults = {
 	["Global"] = defaultComparison,
 	["Text"] = defaultTextComparison,
@@ -507,6 +524,8 @@ app.SortDefaults = {
 	["Value"] = defaultValueComparison,
 	-- Sorts objects first by whether they do not have sub-groups [.g] defined
 	["Hierarchy"] = defaultHierarchyComparison,
+	-- Sorts objects first by how many total collectibles they contain
+	["Total"] = defaultTotalComparison,
 };
 local function Sort(t, compare, nested)
 	if t then
@@ -1375,8 +1394,8 @@ app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
 app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
 
 -- Screenshot
-function app:TakeScreenShot()
-	if app.Settings:GetTooltipSetting("Screenshot") then
+function app:TakeScreenShot(type)
+	if app.Settings:GetTooltipSetting("Screenshot") and (not type or app.Settings:Get("Thing:"..type)) then
 		Screenshot();
 	end
 end
@@ -1467,7 +1486,7 @@ app.TryColorizeName = function(group, name)
 		return Colorize(name, app.Colors.SourceIgnored);
 	-- faction rep status
 	elseif group.factionID and group.standing then
-		return app.ColorizeStandingText((group.saved and 8) or (group.standing + (group.isFriend and 2 or 0)), name);
+		return app.GetCurrentFactionStandingText(group.factionID, group.standing, name);
 	-- locked/breadcrumb things
 	elseif group.locked or group.isBreadcrumb then
 		return Colorize(name, app.Colors.Locked);
@@ -3137,7 +3156,7 @@ local ResolveFunctions = {
 	-- Instruction to select the parent object of the group that owns the symbolic link
 	["selectparent"] = function(finalized, searchResults, o, cmd, level)
 		level = level or 1;
-		local parent = o.parent or o.sourceParent;
+		local parent = o.parent;
 		-- app.PrintDebug("selectparent",level,parent and parent.hash)
 		while level > 1 do
 			parent = parent and parent.parent;
@@ -3147,7 +3166,20 @@ local ResolveFunctions = {
 		if parent then
 			tinsert(searchResults, parent);
 		else
-			print("Failed to select parent for ",o.hash);
+			-- an extra search for the specific 'o' to retrieve the source parent since the parent is not actually attached to the reference resolving the symlink
+			local searchedObject = app.SearchForMergedObject(o.key, o[o.key]);
+			if searchedObject then
+				parent = searchedObject.parent;
+				while level > 1 do
+					parent = parent and parent.parent;
+					level = level - 1;
+				end
+				if parent then
+					tinsert(searchResults, parent);
+					return;
+				end
+			end
+			print("Failed to select parent for",o.hash);
 		end
 	end,
 	-- Instruction to find all content marked with the specified 'requireSkill'
@@ -3448,16 +3480,17 @@ local ResolveFunctions = {
 			local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id, criteriaObject;
 			for criteriaID=1,GetAchievementNumCriteria(achievementID),1 do
 				criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id = GetAchievementCriteriaInfo(achievementID, criteriaID);
+				criteriaObject = app.CreateAchievementCriteria(id);
 				if criteriaType == 27 then
 					cache = app.SearchForField("questID", assetID);
+				elseif criteriaType == 36 or criteriaType == 42 then	-- Items
+					criteriaObject.providers = {{ "i", assetID }};
 				elseif criteriaType == 110	-- Casting spells on specific target
-					or criteriaType == 43	-- Exploration
-				then
+					or criteriaType == 43 then	-- Exploration
 					-- Ignored
 				else
 					print("Unhandled Criteria Type", criteriaType, assetID);
 				end
-				criteriaObject = app.CreateAchievementCriteria(id);
 				if cache then
 					local uniques = {};
 					MergeObjects(uniques, cache);
@@ -3472,6 +3505,7 @@ local ResolveFunctions = {
 				criteriaObject.achievementID = achievementID;
 				criteriaObject.parent = o;
 				tinsert(searchResults, criteriaObject);
+				app.CacheFields(criteriaObject);
 			end
 		end
 	end,
@@ -8178,6 +8212,151 @@ local function LockedAsQuest(t)
 end
 app.LockedAsQuest = LockedAsQuest;
 
+local Search = app.SearchForObject;
+-- Traces backwards in the sequence fpr 'questID' via parent relationships within 'parents' to see if 'checkQuestID' is reached and returns true if so
+local function BackTraceForSelf(parents, questID, checkQuestID)
+	-- app.PrintDebug("Backtrace",questID)
+	local next = parents[questID];
+	while next do
+		-- app.PrintDebug("->",next)
+		if next == checkQuestID then return true; end
+		next = parents[next];
+	end
+end
+local function MapSourceQuestsRecursive(parentQuestID, questID, currentDepth, depths, parents, refs, inFilters)
+	if not questID then return; end
+
+	-- Compare current depth to existing depth in 'depths' if the current parent of the questID is already in filters
+	local prevDepth = depths[questID];
+	local currentParent = parents[questID];
+	if prevDepth and prevDepth >= currentDepth and inFilters[currentParent] then
+		-- app.PrintDebug("Ignore Depth Quest",questID,"@",currentDepth,"Previous",prevDepth)
+		return;
+	end
+
+	-- Find the quest being added (either existing clone or new search)
+	local questRef = refs[questID];
+	if questRef then
+		-- Verify this quest isn't in the current parent chain
+		if BackTraceForSelf(parents, parentQuestID, questID) then
+			-- app.PrintDebug("Ignore Backtrace Quest",questID)
+			return;
+		-- else
+		-- 	app.PrintDebug("Not in Backtrace",questID)
+		end
+	else
+		questRef = Search("questID",questID);
+		if not questRef then
+			app.report("Failed to find Source Quest",questID)
+			return;
+		end
+
+		-- Save this questRef (depth doesn't change the ref so only clone it once)
+		questRef = CreateObject(questRef, true);
+
+		-- force collectible for normally un-collectible but trackable things to make sure it shows in list if the quest needs to be completed to progess
+		if not questRef.collectible and questRef.trackable then
+			questRef.collectible = true;
+		end
+
+		-- If the user is in a Party Sync session, then force showing pre-req quests which are replayable if they are collected already
+		if app.IsInPartySync and questRef.collected then
+			questRef.OnUpdate = app.ShowIfReplayableQuest;
+		end
+
+		-- If the quest is provided by an Item, then show that Item directly under the quest so it can easily show tooltip/Source information if desired
+		if questRef.providers then
+			local id;
+			for _,p in ipairs(questRef.providers) do
+				if p[1] == "i" then
+					id = p[2];
+					-- print("Quest Item Provider",p[1], id);
+					local pRef = app.SearchForObject("itemID", id);
+					if pRef then
+						NestObject(questRef, pRef, true, 1);
+					else
+						pRef = app.CreateItem(id);
+						NestObject(questRef, pRef, nil, 1);
+					end
+					-- Make sure to always show the Quest starting item
+					pRef.OnUpdate = app.AlwaysShowUpdate;
+					-- Quest started by this Item should be represented using any sourceQuests on the Item
+					if pRef.sourceQuests then
+						if not questRef.sourceQuests then questRef.sourceQuests = {}; end
+						-- app.PrintDebug("Add Provider SQs to Quest")
+						app.ArrayAppend(questRef.sourceQuests, pRef.sourceQuests);
+					end
+				end
+			end
+		end
+
+		refs[questID] = questRef;
+	end
+
+	-- Save the new depth that this questID will be placed if it has a parent
+	depths[questID] = currentDepth;
+	-- Save the parentQuestID for this questID, but only if this quest has no parent yet, or specifically meets character filters for a different parent
+	if not currentParent then
+		parents[questID] = parentQuestID;
+	elseif currentParent ~= parentQuestID and not inFilters[currentParent] then
+		-- app.PrintDebug("Check Current Parent Filter",questID,"=>",currentParent)
+		if app.CurrentCharacterFilters(refs[parentQuestID]) then
+			-- app.PrintDebug("New Filter Parent",questID,"=>",parentQuestID)
+			parents[questID] = parentQuestID;
+			inFilters[parentQuestID] = true;
+		-- else
+		-- 	app.PrintDebug("New Parent, Filtered",questID,"=>",parentQuestID)
+		end
+	end
+
+	-- Traverse recursive quests via 'sourceQuests'
+	local sqs = questRef.sourceQuests;
+	if not sqs then return; end
+
+	-- Mark the new depth
+	local nextDepth = currentDepth + 1;
+	for _,sq in ipairs(sqs) do
+		-- Recurse against sourceQuests of sq
+		MapSourceQuestsRecursive(questID, sq, nextDepth, depths, parents, refs, inFilters);
+	end
+end
+-- Will find, clone, and nest into 'root' all known source quests starting from the provided 'root', listing each quest once at the maximum depth that it has been encountered
+app.NestSourceQuestsV2 = function(questChainRoot, questID)
+	if not questID then
+		if not questChainRoot.sourceQuests then return; end
+		questID = 0;
+	end
+
+	-- Treat the starting questID as an extremely high depth so that it will not be replaced if it is encountered again due to a looping quest chain
+	local depths = {[questID] = 9999};
+	local parents = {};
+	local refs = {[questID] = questChainRoot};
+	-- represents quests that had to be confirmed for current character filters already
+	local inFilters = {};
+
+	-- Map out the relative positions of the entire quest sequence based on depth from the root quest
+	-- Find the quest being added
+	local questRef = questID > 0 and Search("questID",questID) or app.EmptyTable;
+	-- Traverse recursive quests via 'sourceQuests'
+	local sqs = questRef.sourceQuests or questChainRoot.sourceQuests;
+	if not sqs then return; end
+
+	for _,sq in ipairs(sqs) do
+		-- Recurse against sourceQuests of sq
+		MapSourceQuestsRecursive(questID, sq, 1, depths, parents, refs, inFilters);
+	end
+
+	-- app.PrintDebug("depths")
+	-- app.PrintTable(depths)
+	-- app.PrintDebug("parents")
+	-- app.PrintTable(parents)
+
+	-- Perform a pass along the parents table to move clone references into the appropriate parent quest references
+	for qID,pID in pairs(parents) do
+		NestObject(refs[pID], refs[qID]);
+	end
+end
+
 local questFields = {
 	["key"] = function(t)
 		return "questID";
@@ -9726,7 +9905,7 @@ app.events.NEW_PET_ADDED = function(petID)
 		rawset(CollectedSpeciesHelper, speciesID, 1);
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
-		app:TakeScreenShot();
+		app:TakeScreenShot("BattlePets");
 		wipe(searchCache);
 	end
 end
@@ -10266,6 +10445,10 @@ end)();
 local GetFriendshipReputation, GetFriendshipReputationRanks =
 	GetFriendshipReputation or C_GossipInfo.GetFriendshipReputation, GetFriendshipReputationRanks or C_GossipInfo.GetFriendshipReputationRanks;
 local StandingByID = {
+	[0] = {	-- 0: No Standing (Not in a Guild)
+		["color"] = "00404040",
+		["threshold"] = -99999,
+	},
 	{	-- 1: HATED
 		["color"] = GetProgressColor(0),
 		["threshold"] = -42000,
@@ -10298,11 +10481,6 @@ local StandingByID = {
 		["color"] = GetProgressColor(1),
 		["threshold"] = 42000,
 	},
-};
-StandingByID[0] =
-{	-- 0: No Standing (Not in a Guild)
-	["color"] = "00404040",
-	["threshold"] = -99999,
 };
 app.FactionNameByID = setmetatable({}, { __index = function(t, id)
 	local name = select(1, GetFactionInfoByID(id)) or select(4, GetFriendshipReputation(id));
@@ -10350,15 +10528,6 @@ app.FACTION_RACES = {
 		36,	-- Mag'har
 	}
 };
-app.ColorizeStandingText = function(standingID, text)
-	local standing = StandingByID[standingID];
-	if standing then
-		return Colorize(text, standing.color);
-	else
-		local rgb = FACTION_BAR_COLORS[standingID];
-		return Colorize(text, RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
-	end
-end
 app.GetFactionIDByName = function(name)
 	name = strtrim(name);
 	return app.FactionIDByName[name] or name;
@@ -10366,6 +10535,9 @@ end
 app.GetFactionStanding = function(reputationPoints)
 	-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
 	if reputationPoints then
+		if type(reputationPoints) == "table" then
+			return app.GetReputationStanding(reputationPoints);
+		end
 		for i=#StandingByID,1,-1 do
 			local threshold = StandingByID[i].threshold;
 			if reputationPoints >= threshold then
@@ -10374,6 +10546,30 @@ app.GetFactionStanding = function(reputationPoints)
 		end
 	end
 	return 1, 0
+end
+-- Given a maxReputation/minReputation table, will return the proper StandingID and Amount into that Standing associated with the data
+app.GetReputationStanding = function(reputationInfo)
+	local factionID, standingOrAmount = reputationInfo[1], reputationInfo[2];
+	-- make it really easy to use threshold checks by directly providing the expected standing
+	-- incoming value can also be negative for hostile standings, so check directly on the table
+	if standingOrAmount > 0 and StandingByID[standingOrAmount] then
+		return standingOrAmount, 0;
+	else
+		local friend = GetFriendshipReputation(factionID);
+		if friend then
+			-- don't think there's a good standard way to determine friendship rank from an arbitrary amount of reputation...
+			print("Convert Friendship Reputation Threshold to StandingID",factionID,standingOrAmount)
+			return 1, standingOrAmount;
+		else
+			-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
+			for i=#StandingByID,1,-1 do
+				local threshold = StandingByID[i].threshold;
+				if standingOrAmount >= threshold then
+					return i, threshold < 0 and (threshold - standingOrAmount) or (standingOrAmount - threshold);
+				end
+			end
+		end
+	end
 end
 local function GetCurrentFactionStandings(factionID)
 	local standing, maxStanding = 0, 8;
@@ -10391,12 +10587,33 @@ local function GetCurrentFactionStandings(factionID)
 	return standing or 1, maxStanding;
 end
 app.GetCurrentFactionStandings = GetCurrentFactionStandings;
--- Returns StandingText or Requested Standing
-app.GetCurrentFactionStandingText = function(factionID, requestedStanding)
+-- Returns the 'text' colorized to match a specific standard 'StandingID'
+local function ColorizeStandingText(standingID, text)
+	local standing = StandingByID[standingID];
+	if standing then
+		return Colorize(text, standing.color);
+	else
+		local rgb = FACTION_BAR_COLORS[standingID];
+		return Colorize(text, RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
+	end
+end
+-- Returns StandingText or Requested Standing colorzing the 'Standing' text for the Faction, or otherwise the provided 'textOverride'
+app.GetCurrentFactionStandingText = function(factionID, requestedStanding, textOverride)
 	local standing = requestedStanding or GetCurrentFactionStandings(factionID);
 	local friendStandingText = select(7, GetFriendshipReputation(factionID));
-	-- friend factions are shifted up 2 to match regular factions at exalted
-	return app.ColorizeStandingText(standing + (friendStandingText and 2 or 0), friendStandingText or _G["FACTION_STANDING_LABEL" .. standing] or UNKNOWN);
+	if friendStandingText then
+		local _, maxStanding = GetFriendshipReputationRanks(factionID);
+		-- adjust relative to max based on the actual max ranks of the friendship faction
+		-- prevent any weirdness of requesting a standing higher than the max for the friendship
+		local progress = math.min(standing, maxStanding) / maxStanding;
+		-- if we requested a specific standing, we can't rely on the friendship text to be accurate
+		if requestedStanding then
+			friendStandingText = "Rank "..requestedStanding;
+		end
+		-- friendships simply colored based on rank progress, some friendships have more ranks than faction standings... makes it weird to correlate them
+		return Colorize(textOverride or friendStandingText, GetProgressColor(progress));
+	end
+	return ColorizeStandingText(standing, textOverride or friendStandingText or _G["FACTION_STANDING_LABEL" .. standing] or UNKNOWN);
 end
 app.GetFactionStandingThresholdFromString = function(replevel)
 	replevel = strtrim(replevel);
@@ -10407,7 +10624,7 @@ app.GetFactionStandingThresholdFromString = function(replevel)
 	end
 end
 app.IsFactionExclusive = function(factionID)
-	return factionID == 934 or factionID == 932;
+	return factionID == 934 or factionID == 932 or factionID == 1104 or factionID == 1105;
 end
 local cache = app.CreateCache("factionID");
 local function CacheInfo(t, field)
@@ -10547,7 +10764,7 @@ local fields = {
 		end
 	end,
 	["reputation"] = function(t)
-		return select(6, GetFactionInfoByID(t.factionID));
+		return select(6, GetFactionInfoByID(t.factionID)) or 0;
 	end,
 	["ceiling"] = function(t)
 		local _, _, _, m, ma = GetFactionInfoByID(t.factionID);
@@ -10558,6 +10775,7 @@ local fields = {
 	end,
 	["maxstanding"] = function(t)
 		if t.minReputation and t.minReputation[1] == t.factionID then
+			app.PrintDebug("Faction with MinReputation??",t.factionID)
 			return app.GetFactionStanding(t.minReputation[2]);
 		end
 		local _, maxStanding = GetCurrentFactionStandings(t.factionID);
@@ -10621,9 +10839,9 @@ local arrOfNodes = {
 	-- Argus only returns specific Flight Points per map
 	885,	-- Antoran Wastes
 	830,	-- Krokuun
-	882,	-- Mac'Aree
+	882,	-- Eredath
 	831,	-- Upper Deck [The Vindicaar: Krokuun]
-	883,	-- Upper Deck [The Vindicaar: Mac'Aree]
+	883,	-- Upper Deck [The Vindicaar: Eredath]
 	886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
 
 	862,	-- Zuldazar
@@ -11866,8 +12084,8 @@ app.BaseHeirloomLevel = app.BaseObjectFields(fields, "BaseHeirloomLevel");
 -- copy base Item fields
 -- TODO: heirlooms need to cache item information as well
 local fields = RawCloneData(itemFields);
-fields.b = function(t) return 2; end
-fields.filterID = function(t) return 109; end
+-- The fallback filter is the original Item's filter if not collecting the Heirloom itself
+fields.f = function(t) return not app.CollectibleHeirlooms and t.itemFilter; end
 fields.icon = function(t) return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or select(5, GetItemInfoInstant(t.itemID)); end
 fields.link = function(t) return C_Heirloom_GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID)); end
 fields.collectibleAsCost = app.ReturnFalse;
@@ -11896,7 +12114,8 @@ fields.saved = function(t)
 		return t.collected == 1;
 	end
 fields.isWeapon = function(t)
-		if t.f and contains(isWeapon, t.f) then
+		local f = t.itemFilter or t.f;
+		if f and contains(isWeapon, f) then
 			rawset(t, "isWeapon", true);
 			return true;
 		end
@@ -11906,7 +12125,7 @@ fields.isWeapon = function(t)
 fields.g = function(t)
 		-- unlocking the heirloom is the only thing contained in the heirloom
 		if C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID) then
-			rawset(t, "g", { setmetatable({ ["heirloomUnlockID"] = t.itemID, ["u"] = t.u, ["f"] = t.f }, app.BaseHeirloomUnlocked) });
+			rawset(t, "g", { setmetatable({ ["heirloomUnlockID"] = t.itemID, ["u"] = t.u }, app.BaseHeirloomUnlocked) });
 			return rawget(t, "g");
 		end
 	end
@@ -11914,6 +12133,14 @@ fields.g = function(t)
 app.BaseHeirloom = app.BaseObjectFields(fields, "BaseHeirloom");
 app.CreateHeirloom = function(id, t)
 	tinsert(heirloomIDs, id);
+	if t then
+		-- TODO: perhaps make Parser store the information properly in the first place...
+		-- save the original filter of the Item for tracking if NOT collecting heirlooms
+		t.itemFilter = t.f;
+		t.f = nil;
+		-- Heirlooms are always BoA
+		t.b = 2;
+	end
 	return setmetatable(constructor(id, t, "itemID"), app.BaseHeirloom);
 end
 
@@ -12696,7 +12923,7 @@ local RefreshMounts = function(newMountID)
 	UpdateRawIDs("spellID", newMounts);
 	if newMounts and #newMounts > 0 then
 		app:PlayRareFindSound();
-		app:TakeScreenShot();
+		app:TakeScreenShot("Mounts");
 	end
 end
 app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
@@ -13464,6 +13691,19 @@ SpellNameToSpellID = setmetatable({}, {
 	end
 });
 app.SpellNameToSpellID = SpellNameToSpellID;
+-- Represents a small lookup of a select set of Profession/Skill-related icons
+local SkillIcons = setmetatable({
+	[2720] = 2620862,	-- Junkyard Tinkering
+	[2819] = 3747898,	-- Protoform Synthesis
+}, { __index = function(t, key)
+	if not key then return; end
+	local skillSpellID = app.SkillIDToSpellID[key];
+	if skillSpellID then
+		local _, _, icon = GetSpellInfo(skillSpellID);
+		return icon;
+	end
+end
+});
 
 local cache = app.CreateCache("_cachekey");
 local function CacheInfo(t, field)
@@ -13478,7 +13718,8 @@ local function CacheInfo(t, field)
 	else
 		local name, _, icon = GetSpellInfo(id);
 		_t.name = name;
-		_t.icon = icon or 136243;	-- Trade_engineering
+		-- typically, the profession's spell icon will be a better representation of the spell if the spell is tied to a skill
+		_t.icon = SkillIcons[t.skillID] or icon;
 		local link = GetSpellLink(id);
 		_t.link = link;
 	end
@@ -13486,7 +13727,8 @@ local function CacheInfo(t, field)
 	local retries = (_t.retries or 0) + 1;
 	if retries > app.MaximumItemInfoRetries then
 		_t.name = t.itemID and "Item #"..t.itemID or "Spell #"..t.spellID;
-		_t.icon = 136243;
+		-- fallback to skill icon if possible
+		_t.icon = SkillIcons[t.skillID] or 136243;	-- Trade_engineering
 		_t.link = _t.name;
 	end
 	_t.retries = retries;
@@ -13941,8 +14183,9 @@ local function FilterItemClass_RequireClasses(item)
 	return not item.nmc;
 end
 local function FilterItemClass_RequireItemFilter(item)
-	if item.f then
-		return app.Settings:GetFilter(item.f);	-- Filter applied via Settings (character-equippable or manually set)
+	local f = item.f;
+	if f then
+		return app.Settings:GetFilter(f);	-- Filter applied via Settings (character-equippable or manually set)
 	else
 		return true;
 	end
@@ -13952,18 +14195,20 @@ local function FilterItemClass_RequireRaces(item)
 end
 local function FilterItemClass_RequireRacesCurrentFaction(item)
 	if item.nmr then
-		if item.r then
-			if item.r == app.FactionID then
+		local r = item.r;
+		if r then
+			if r == app.FactionID then
 				return true;
 			else
 				return false;
 			end
 		end
-		if item.races then
+		local races = item.races;
+		if races then
 			if app.FactionID == Enum.FlightPathFaction.Horde then
-				return containsAny(item.races, HORDE_ONLY);
+				return containsAny(races, HORDE_ONLY);
 			else
-				return containsAny(item.races, ALLIANCE_ONLY);
+				return containsAny(races, ALLIANCE_ONLY);
 			end
 		else
 			return false;
@@ -14494,7 +14739,7 @@ local function SetThingVisibility(parent, group)
 	end
 end
 local UpdateGroups;
-local function UpdateGroup(parent, group, window)
+local function UpdateGroup(parent, group)
 	-- if group.key == "runeforgePowerID" and group[group.key] == 134 then app.DEBUG_PRINT = 134; end
 	-- if not app.DEBUG_PRINT and shouldLog then
 	-- 	app.DEBUG_PRINT = shouldLog;
@@ -14560,11 +14805,11 @@ local function UpdateGroup(parent, group, window)
 			if ItemBindFilter ~= NoFilter and ItemBindFilter(group) then
 				app.ItemBindFilter = NoFilter;
 				-- Update the subgroups recursively...
-				UpdateGroups(group, g, window);
+				UpdateGroups(group, g);
 				-- reapply the previous BoE filter
 				app.ItemBindFilter = ItemBindFilter;
 			else
-				UpdateGroups(group, g, window);
+				UpdateGroups(group, g);
 			end
 
 			-- if app.DEBUG_PRINT then print("UpdateGroup.g.Updated",group.progress,group.total,group.__type) end
@@ -14591,19 +14836,19 @@ local function UpdateGroup(parent, group, window)
 	-- if app.DEBUG_PRINT == 134 then app.DEBUG_PRINT = nil; end
 end
 app.UpdateGroup = UpdateGroup;
-UpdateGroups = function(parent, g, window)
+UpdateGroups = function(parent, g)
 	if g then
 		for _,group in ipairs(g) do
 			if group.OnUpdate then
 				if not group:OnUpdate() then
-					UpdateGroup(parent, group, window);
+					UpdateGroup(parent, group);
 				elseif group.visible then
 					group.total = nil;
 					group.progress = nil;
-					UpdateGroups(group, group.g, window);
+					UpdateGroups(group, group.g);
 				end
 			else
-				UpdateGroup(parent, group, window);
+				UpdateGroup(parent, group);
 			end
 		end
 	end
@@ -14628,17 +14873,17 @@ local function AdjustParentProgress(group, progChange, totalChange)
 	end
 end
 -- For directly applying the full Update operation for the top-level data group within a window
-local function TopLevelUpdateGroup(group, window)
+local function TopLevelUpdateGroup(group)
 	group.total = 0;
 	group.progress = 0;
 	local ItemBindFilter = app.ItemBindFilter;
 	if ItemBindFilter ~= app.NoFilter and ItemBindFilter(group) then
 		app.ItemBindFilter = app.NoFilter;
-		UpdateGroups(group, group.g, window);
+		UpdateGroups(group, group.g);
 		-- reapply the previous BoE filter
 		app.ItemBindFilter = ItemBindFilter;
 	else
-		UpdateGroups(group, group.g, window);
+		UpdateGroups(group, group.g);
 	end
 	if group.collectible then
 		group.total = group.total + 1;
@@ -14725,7 +14970,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 				app:PlayReportSound();
 			end
 			Callback(app.PlayFanfare);
-			Callback(app.TakeScreenShot);
+			Callback(app.TakeScreenShot, "Transmog");
 		end
 
 		-- Update the groups for the sourceID results
@@ -14774,7 +15019,7 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 				app:PlayReportSound();
 			end
 			Callback(app.PlayFanfare);
-			Callback(app.TakeScreenShot);
+			Callback(app.TakeScreenShot, "Transmog");
 		end
 
 		-- Update the groups for the sourceIDs
@@ -15320,11 +15565,12 @@ function app:CreateMiniListForGroup(group)
 
 			-- Show Quest Prereqs
 			if root.sourceQuests then
-				local gTop;
-				if app.Settings:GetTooltipSetting("QuestChain:Nested") then
+				-- local gTop;
+				local useNested = app.Settings:GetTooltipSetting("QuestChain:Nested");
+				if useNested then
 					-- clean out the sub-groups of the root since it will be listed at the top of the popout
-					root.g = nil;
-					gTop = app.NestSourceQuests(root).g or {};
+					-- root.g = nil;
+					-- gTop = app.NestSourceQuests(root).g or {};
 				else
 					local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
 					local addedQuests = {};
@@ -15454,15 +15700,23 @@ function app:CreateMiniListForGroup(group)
 				end
 
 				local questChainHeader = {
-					["text"] = gTop and L["NESTED_QUEST_REQUIREMENTS"] or L["QUEST_CHAIN_REQ"],
+					["text"] = useNested and L["NESTED_QUEST_REQUIREMENTS"] or L["QUEST_CHAIN_REQ"],
 					["description"] = L["QUEST_CHAIN_REQ_DESC"],
 					["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
-					["g"] = gTop or g,
-					["hideText"] = true,
 					["OnUpdate"] = app.AlwaysShowUpdate,
 					["sourceIgnored"] = true,
+					-- copy any sourceQuests into the header incase the root is not actually a quest
+					["sourceQuests"] = root.sourceQuests,
 				};
 				NestObject(group, questChainHeader);
+				if useNested then
+					app.NestSourceQuestsV2(questChainHeader, group.questID);
+					-- Sort by the totals of the quest chain on the next game frame
+					Callback(app.Sort, questChainHeader.g, app.SortDefaults.Total, true);
+				else
+					questChainHeader.g = g;
+				end
+				questChainHeader.sourceQuests = nil;
 			end
 		end
 
@@ -15498,6 +15752,9 @@ function app:CreateMiniListForGroup(group)
 			-- Populate the Quest Rewards
 			-- think this causes quest popouts to somehow break...
 			-- app.TryPopulateQuestRewards(group)
+
+			-- Then trigger a soft update of the window afterwards
+			DelayedCallback(popout.Update, 0.25, popout);
 		end
 	end
 	popout:Toggle(true);
@@ -16300,7 +16557,7 @@ RowOnEnter = function (self)
 		end
 		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
 		if reference.minReputation and not reference.maxReputation then
-			local standingId, offset = app.GetFactionStanding(reference.minReputation[2])
+			local standingId, offset = app.GetReputationStanding(reference.minReputation)
 			local factionID = reference.minReputation[1];
 			local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
 			local msg = L["MINUMUM_STANDING"]
@@ -16309,7 +16566,7 @@ RowOnEnter = function (self)
 			GameTooltip:AddLine(msg);
 		end
 		if reference.maxReputation and not reference.minReputation then
-			local standingId, offset = app.GetFactionStanding(reference.maxReputation[2])
+			local standingId, offset = app.GetReputationStanding(reference.maxReputation)
 			local factionID = reference.maxReputation[1];
 			local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
 			local msg = L["MAXIMUM_STANDING"]
@@ -16318,8 +16575,8 @@ RowOnEnter = function (self)
 			GameTooltip:AddLine(msg);
 		end
 		if reference.minReputation and reference.maxReputation then
-			local minStandingId, minOffset = app.GetFactionStanding(reference.minReputation[2])
-			local maxStandingId, maxOffset = app.GetFactionStanding(reference.maxReputation[2])
+			local minStandingId, minOffset = app.GetReputationStanding(reference.minReputation)
+			local maxStandingId, maxOffset = app.GetReputationStanding(reference.maxReputation)
 			local factionID = reference.minReputation[1];
 			local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
 			local msg = L["MIN_MAX_STANDING"]
@@ -21470,7 +21727,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				UpdateRawIDs("spellID", learned);
 				if #learned > 0 then
 					app:PlayRareFindSound();
-					app:TakeScreenShot();
+					app:TakeScreenShot("Recipes");
 					self.force = true;
 				end
 			end
@@ -21612,7 +21869,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						UpdateSearchResults(SearchForField("spellID",spellID));
 						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
 							app:PlayFanfare();
-							app:TakeScreenShot();
+							app:TakeScreenShot("Recipes");
 							if app.Settings:GetTooltipSetting("Report:Collected") then
 								local link = app:Linkify(spellID, app.Colors.ChatLink, "search:spellID:"..spellID);
 								print(NEW_RECIPE_LEARNED_TITLE, link);
@@ -24282,7 +24539,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 		app.RefreshQuestInfo();
 		UpdateSearchResults(SearchForField("itemID", itemID));
 		app:PlayFanfare();
-		app:TakeScreenShot();
+		app:TakeScreenShot("Heirlooms");
 		wipe(searchCache);
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then
@@ -24410,7 +24667,7 @@ app.events.TOYS_UPDATED = function(itemID, new)
 		ATTAccountWideData.Toys[itemID] = 1;
 		UpdateSearchResults(SearchForField("itemID", itemID));
 		app:PlayFanfare();
-		app:TakeScreenShot();
+		app:TakeScreenShot("Toys");
 		wipe(searchCache);
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then

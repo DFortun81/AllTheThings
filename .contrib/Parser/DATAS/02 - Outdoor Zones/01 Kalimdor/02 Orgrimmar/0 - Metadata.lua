@@ -13,7 +13,7 @@ root("Zones", m(KALIMDOR, {
 		-- Assuming Crieve will smash all of these Orgrimmar files together someday...
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(5477,  {	-- Fish or Cut Bait: Orgrimmar (H)
+				ach(5477, {	-- Fish or Cut Bait: Orgrimmar (H)
 					["timeline"] = { "added 4.2.0" },
 					["races"] = HORDE_ONLY,
 					["requireSkill"] = FISHING,

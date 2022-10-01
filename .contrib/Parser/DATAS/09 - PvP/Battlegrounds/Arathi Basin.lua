@@ -998,96 +998,96 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["groups"] = {
 						-- Tabard
 						-- #if AFTER 5.0.4
-						mark(10, i(20131)),	-- Battle Tabard of the Defilers (Was originally a quest reward!)
+						moh(10, i(20131)),	-- Battle Tabard of the Defilers (Was originally a quest reward!)
 						-- #endif
 
 						-- Weapons & Cloak
-						mark(3, i(20220)),	-- Ironbark Staff
-						mark(3, i(20214)),	-- Mindfang
-						mark(2, i(20068)),	-- Deathguard's Cloak
+						moh(3, i(20220)),	-- Ironbark Staff
+						moh(3, i(20214)),	-- Mindfang
+						moh(2, i(20068)),	-- Deathguard's Cloak
 
 						-- Cloth
-						mark(2, i(20176)),	-- Defiler's Epaulets
-						mark(1, i(20163)),	-- Defiler's Cloth Girdle
-						mark(1, i(20164)),	-- Defiler's Cloth Girdle
-						mark(1, i(20165)),	-- Defiler's Cloth Girdle
-						mark(1, i(20166)),	-- Defiler's Cloth Girdle
-						mark(1, i(20159)),	-- Defiler's Cloth Boots
-						mark(1, i(20160)),	-- Defiler's Cloth Boots
-						mark(1, i(20161)),	-- Defiler's Cloth Boots
-						mark(1, i(20162)),	-- Defiler's Cloth Boots
+						moh(2, i(20176)),	-- Defiler's Epaulets
+						moh(1, i(20163)),	-- Defiler's Cloth Girdle
+						moh(1, i(20164)),	-- Defiler's Cloth Girdle
+						moh(1, i(20165)),	-- Defiler's Cloth Girdle
+						moh(1, i(20166)),	-- Defiler's Cloth Girdle
+						moh(1, i(20159)),	-- Defiler's Cloth Boots
+						moh(1, i(20160)),	-- Defiler's Cloth Boots
+						moh(1, i(20161)),	-- Defiler's Cloth Boots
+						moh(1, i(20162)),	-- Defiler's Cloth Boots
 
 						-- Leather
-						mark(2, i(20194)),	-- Defiler's Leather Shoulders
-						mark(1, i(20193)),	-- Defiler's Leather Girdle
-						mark(1, i(20191)),	-- Defiler's Leather Girdle
-						mark(1, i(20190)),	-- Defiler's Leather Girdle
-						mark(1, i(20192)),	-- Defiler's Leather Girdle
-						mark(1, i(20187)),	-- Defiler's Leather Boots
-						mark(1, i(20189)),	-- Defiler's Leather Boots
-						mark(1, i(20186)),	-- Defiler's Leather Boots
-						mark(1, i(20188)),	-- Defiler's Leather Boots
+						moh(2, i(20194)),	-- Defiler's Leather Shoulders
+						moh(1, i(20193)),	-- Defiler's Leather Girdle
+						moh(1, i(20191)),	-- Defiler's Leather Girdle
+						moh(1, i(20190)),	-- Defiler's Leather Girdle
+						moh(1, i(20192)),	-- Defiler's Leather Girdle
+						moh(1, i(20187)),	-- Defiler's Leather Boots
+						moh(1, i(20189)),	-- Defiler's Leather Boots
+						moh(1, i(20186)),	-- Defiler's Leather Boots
+						moh(1, i(20188)),	-- Defiler's Leather Boots
 
 						-- Lizardhide
-						mark(2, i(20175)),	-- Defiler's Lizardhide Shoulders
-						mark(1, i(20171)),	-- Defiler's Lizardhide Girdle
-						mark(1, i(20174)),	-- Defiler's Lizardhide Girdle
-						mark(1, i(20173)),	-- Defiler's Lizardhide Girdle
-						mark(1, i(20172)),	-- Defiler's Lizardhide Girdle
-						mark(1, i(20170)),	-- Defiler's Lizardhide Boots
-						mark(1, i(20169)),	-- Defiler's Lizardhide Boots
-						mark(1, i(20168)),	-- Defiler's Lizardhide Boots
-						mark(1, i(20167)),	-- Defiler's Lizardhide Boots
+						moh(2, i(20175)),	-- Defiler's Lizardhide Shoulders
+						moh(1, i(20171)),	-- Defiler's Lizardhide Girdle
+						moh(1, i(20174)),	-- Defiler's Lizardhide Girdle
+						moh(1, i(20173)),	-- Defiler's Lizardhide Girdle
+						moh(1, i(20172)),	-- Defiler's Lizardhide Girdle
+						moh(1, i(20170)),	-- Defiler's Lizardhide Boots
+						moh(1, i(20169)),	-- Defiler's Lizardhide Boots
+						moh(1, i(20168)),	-- Defiler's Lizardhide Boots
+						moh(1, i(20167)),	-- Defiler's Lizardhide Boots
 
 						-- Chain
-						mark(2, i(20158)),	-- Defiler's Chain Pauldrons
-						mark(1, i(20150)),	-- Defiler's Chain Girdle
-						mark(1, i(20151)),	-- Defiler's Chain Girdle
-						mark(1, i(20152)),	-- Defiler's Chain Girdle
-						mark(1, i(20153)),	-- Defiler's Chain Girdle
-						mark(1, i(20154)),	-- Defiler's Chain Greaves
-						mark(1, i(20156)),	-- Defiler's Chain Greaves
-						mark(1, i(20155)),	-- Defiler's Chain Greaves
-						mark(1, i(20157)),	-- Defiler's Chain Greaves
+						moh(2, i(20158)),	-- Defiler's Chain Pauldrons
+						moh(1, i(20150)),	-- Defiler's Chain Girdle
+						moh(1, i(20151)),	-- Defiler's Chain Girdle
+						moh(1, i(20152)),	-- Defiler's Chain Girdle
+						moh(1, i(20153)),	-- Defiler's Chain Girdle
+						moh(1, i(20154)),	-- Defiler's Chain Greaves
+						moh(1, i(20156)),	-- Defiler's Chain Greaves
+						moh(1, i(20155)),	-- Defiler's Chain Greaves
+						moh(1, i(20157)),	-- Defiler's Chain Greaves
 
 						-- Mail
-						mark(2, i(20203)),	-- Defiler's Mail Pauldrons
-						mark(1, i(20197)),	-- Defiler's Mail Girdle (Defiler's Padded Girdle)
-						mark(1, i(20196)),	-- Defiler's Mail Girdle
-						mark(1, i(20198)),	-- Defiler's Mail Girdle
-						mark(1, i(20195)),	-- Defiler's Mail Girdle
-						mark(1, i(20202)),	-- Defiler's Mail Greaves
-						mark(1, i(20201)),	-- Defiler's Mail Greaves
-						mark(1, i(20200)),	-- Defiler's Mail Greaves
-						mark(1, i(20199)),	-- Defiler's Mail Greaves
+						moh(2, i(20203)),	-- Defiler's Mail Pauldrons
+						moh(1, i(20197)),	-- Defiler's Mail Girdle (Defiler's Padded Girdle)
+						moh(1, i(20196)),	-- Defiler's Mail Girdle
+						moh(1, i(20198)),	-- Defiler's Mail Girdle
+						moh(1, i(20195)),	-- Defiler's Mail Girdle
+						moh(1, i(20202)),	-- Defiler's Mail Greaves
+						moh(1, i(20201)),	-- Defiler's Mail Greaves
+						moh(1, i(20200)),	-- Defiler's Mail Greaves
+						moh(1, i(20199)),	-- Defiler's Mail Greaves
 
 						-- Lamellar
-						mark(2, i(20184)),	-- Defiler's Lamellar Spaulders
-						mark(1, i(20180)),	-- Defiler's Lamellar Girdle
-						mark(1, i(20179)),	-- Defiler's Lamellar Girdle
-						mark(1, i(20177)),	-- Defiler's Lamellar Girdle
-						mark(1, i(20178)),	-- Defiler's Lamellar Girdle
-						mark(1, i(20181)),	-- Defiler's Lamellar Greaves
-						mark(1, i(20183)),	-- Defiler's Lamellar Greaves
-						mark(1, i(20185)),	-- Defiler's Lamellar Greaves
-						mark(1, i(20182)),	-- Defiler's Lamellar Greaves
+						moh(2, i(20184)),	-- Defiler's Lamellar Spaulders
+						moh(1, i(20180)),	-- Defiler's Lamellar Girdle
+						moh(1, i(20179)),	-- Defiler's Lamellar Girdle
+						moh(1, i(20177)),	-- Defiler's Lamellar Girdle
+						moh(1, i(20178)),	-- Defiler's Lamellar Girdle
+						moh(1, i(20181)),	-- Defiler's Lamellar Greaves
+						moh(1, i(20183)),	-- Defiler's Lamellar Greaves
+						moh(1, i(20185)),	-- Defiler's Lamellar Greaves
+						moh(1, i(20182)),	-- Defiler's Lamellar Greaves
 
 						-- Plate
-						mark(2, i(20212)),	-- Defiler's Plate Spaulders
-						mark(1, i(20204)),	-- Defiler's Plate Girdle
-						mark(1, i(20205)),	-- Defiler's Plate Girdle
-						mark(1, i(20206)),	-- Defiler's Plate Girdle
-						mark(1, i(20207)),	-- Defiler's Plate Girdle
-						mark(1, i(20209)),	-- Defiler's Plate Greaves
-						mark(1, i(20208)),	-- Defiler's Plate Greaves
-						mark(1, i(20211)),	-- Defiler's Plate Greaves
-						mark(1, i(20210)),	-- Defiler's Plate Greaves
+						moh(2, i(20212)),	-- Defiler's Plate Spaulders
+						moh(1, i(20204)),	-- Defiler's Plate Girdle
+						moh(1, i(20205)),	-- Defiler's Plate Girdle
+						moh(1, i(20206)),	-- Defiler's Plate Girdle
+						moh(1, i(20207)),	-- Defiler's Plate Girdle
+						moh(1, i(20209)),	-- Defiler's Plate Greaves
+						moh(1, i(20208)),	-- Defiler's Plate Greaves
+						moh(1, i(20211)),	-- Defiler's Plate Greaves
+						moh(1, i(20210)),	-- Defiler's Plate Greaves
 
 						-- Trinkets
-						mark(1, i(20072)),	-- Defiler's Talisman
-						mark(1, i(21115)),	-- Defiler's Talisman
-						mark(1, i(21116)),	-- Defiler's Talisman
-						mark(1, i(21120)),	-- Defiler's Talisman
+						moh(1, i(20072)),	-- Defiler's Talisman
+						moh(1, i(21115)),	-- Defiler's Talisman
+						moh(1, i(21116)),	-- Defiler's Talisman
+						moh(1, i(21120)),	-- Defiler's Talisman
 					},
 				}),
 				n(15127, {	-- Samuel Hawke <League of Arathor Supply Officer>
@@ -1103,96 +1103,96 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["groups"] = {
 						-- Tabard
 						-- #if AFTER 5.0.4
-						mark(10, i(20132)),	-- Arathor Battle Tabard (Was originally a quest reward!)
+						moh(10, i(20132)),	-- Arathor Battle Tabard (Was originally a quest reward!)
 						-- #endif
 
 						-- Weapons & Cloak
-						mark(3, i(20069)),	-- Ironbark Staff
-						mark(3, i(20070)),	-- Sageclaw
-						mark(2, i(20073)),	-- Cloak of the Honor Guard
+						moh(3, i(20069)),	-- Ironbark Staff
+						moh(3, i(20070)),	-- Sageclaw
+						moh(2, i(20073)),	-- Cloak of the Honor Guard
 
 						-- Cloth
-						mark(2, i(20061)),	-- Highlander's Epaulets
-						mark(1, i(20097)),	-- Highlander's Cloth Girdle
-						mark(1, i(20098)),	-- Highlander's Cloth Girdle
-						mark(1, i(20047)),	-- Highlander's Cloth Girdle
-						mark(1, i(20099)),	-- Highlander's Cloth Girdle
-						mark(1, i(20096)),	-- Highlander's Cloth Boots
-						mark(1, i(20054)),	-- Highlander's Cloth Boots
-						mark(1, i(20094)),	-- Highlander's Cloth Boots
-						mark(1, i(20095)),	-- Highlander's Cloth Boots
+						moh(2, i(20061)),	-- Highlander's Epaulets
+						moh(1, i(20097)),	-- Highlander's Cloth Girdle
+						moh(1, i(20098)),	-- Highlander's Cloth Girdle
+						moh(1, i(20047)),	-- Highlander's Cloth Girdle
+						moh(1, i(20099)),	-- Highlander's Cloth Girdle
+						moh(1, i(20096)),	-- Highlander's Cloth Boots
+						moh(1, i(20054)),	-- Highlander's Cloth Boots
+						moh(1, i(20094)),	-- Highlander's Cloth Boots
+						moh(1, i(20095)),	-- Highlander's Cloth Boots
 
 						-- Leather
-						mark(2, i(20059)),	-- Highlander's Leather Shoulders
-						mark(1, i(20116)),	-- Highlander's Leather Girdle
-						mark(1, i(20117)),	-- Highlander's Leather Girdle
-						mark(1, i(20115)),	-- Highlander's Leather Girdle
-						mark(1, i(20045)),	-- Highlander's Leather Girdle
-						mark(1, i(20112)),	-- Highlander's Leather Boots
-						mark(1, i(20113)),	-- Highlander's Leather Boots
-						mark(1, i(20114)),	-- Highlander's Leather Boots
-						mark(1, i(20052)),	-- Highlander's Leather Boots
+						moh(2, i(20059)),	-- Highlander's Leather Shoulders
+						moh(1, i(20116)),	-- Highlander's Leather Girdle
+						moh(1, i(20117)),	-- Highlander's Leather Girdle
+						moh(1, i(20115)),	-- Highlander's Leather Girdle
+						moh(1, i(20045)),	-- Highlander's Leather Girdle
+						moh(1, i(20112)),	-- Highlander's Leather Boots
+						moh(1, i(20113)),	-- Highlander's Leather Boots
+						moh(1, i(20114)),	-- Highlander's Leather Boots
+						moh(1, i(20052)),	-- Highlander's Leather Boots
 
 						-- Lizardhide
-						mark(2, i(20060)),	-- Highlander's Lizardhide Shoulders
-						mark(1, i(20103)),	-- Highlander's Lizardhide Girdle
-						mark(1, i(20046)),	-- Highlander's Lizardhide Girdle
-						mark(1, i(20105)),	-- Highlander's Lizardhide Girdle
-						mark(1, i(20104)),	-- Highlander's Lizardhide Girdle
-						mark(1, i(20053)),	-- Highlander's Lizardhide Boots
-						mark(1, i(20102)),	-- Highlander's Lizardhide Boots
-						mark(1, i(20101)),	-- Highlander's Lizardhide Boots
-						mark(1, i(20100)),	-- Highlander's Lizardhide Boots
+						moh(2, i(20060)),	-- Highlander's Lizardhide Shoulders
+						moh(1, i(20103)),	-- Highlander's Lizardhide Girdle
+						moh(1, i(20046)),	-- Highlander's Lizardhide Girdle
+						moh(1, i(20105)),	-- Highlander's Lizardhide Girdle
+						moh(1, i(20104)),	-- Highlander's Lizardhide Girdle
+						moh(1, i(20053)),	-- Highlander's Lizardhide Boots
+						moh(1, i(20102)),	-- Highlander's Lizardhide Boots
+						moh(1, i(20101)),	-- Highlander's Lizardhide Boots
+						moh(1, i(20100)),	-- Highlander's Lizardhide Boots
 
 						-- Chain
-						mark(2, i(20055)),	-- Highlander's Chain Pauldrons
-						mark(1, i(20088)),	-- Highlander's Chain Girdle
-						mark(1, i(20089)),	-- Highlander's Chain Girdle
-						mark(1, i(20043)),	-- Highlander's Chain Girdle
-						mark(1, i(20090)),	-- Highlander's Chain Girdle
-						mark(1, i(20091)),	-- Highlander's Chain Greaves
-						mark(1, i(20050)),	-- Highlander's Chain Greaves
-						mark(1, i(20092)),	-- Highlander's Chain Greaves
-						mark(1, i(20093)),	-- Highlander's Chain Greaves
+						moh(2, i(20055)),	-- Highlander's Chain Pauldrons
+						moh(1, i(20088)),	-- Highlander's Chain Girdle
+						moh(1, i(20089)),	-- Highlander's Chain Girdle
+						moh(1, i(20043)),	-- Highlander's Chain Girdle
+						moh(1, i(20090)),	-- Highlander's Chain Girdle
+						moh(1, i(20091)),	-- Highlander's Chain Greaves
+						moh(1, i(20050)),	-- Highlander's Chain Greaves
+						moh(1, i(20092)),	-- Highlander's Chain Greaves
+						moh(1, i(20093)),	-- Highlander's Chain Greaves
 
 						-- Mail
-						mark(2, i(20056)),	-- Highlander's Mail Pauldrons
-						mark(1, i(20120)),	-- Highlander's Mail Girdle
-						mark(1, i(20044)),	-- Highlander's Mail Girdle
-						mark(1, i(20119)),	-- Highlander's Mail Girdle
-						mark(1, i(20118)),	-- Highlander's Mail Girdle
-						mark(1, i(20051)),	-- Highlander's Mail Greaves
-						mark(1, i(20121)),	-- Highlander's Mail Greaves
-						mark(1, i(20122)),	-- Highlander's Mail Greaves
-						mark(1, i(20123)),	-- Highlander's Mail Greaves
+						moh(2, i(20056)),	-- Highlander's Mail Pauldrons
+						moh(1, i(20120)),	-- Highlander's Mail Girdle
+						moh(1, i(20044)),	-- Highlander's Mail Girdle
+						moh(1, i(20119)),	-- Highlander's Mail Girdle
+						moh(1, i(20118)),	-- Highlander's Mail Girdle
+						moh(1, i(20051)),	-- Highlander's Mail Greaves
+						moh(1, i(20121)),	-- Highlander's Mail Greaves
+						moh(1, i(20122)),	-- Highlander's Mail Greaves
+						moh(1, i(20123)),	-- Highlander's Mail Greaves
 
 						-- Lamellar
-						mark(2, i(20058)),	-- Highlander's Lamellar Spaulders
-						mark(1, i(20042)),	-- Highlander's Lamellar Girdle
-						mark(1, i(20106)),	-- Highlander's Lamellar Girdle
-						mark(1, i(20107)),	-- Highlander's Lamellar Girdle
-						mark(1, i(20108)),	-- Highlander's Lamellar Girdle
-						mark(1, i(20111)),	-- Highlander's Lamellar Greaves
-						mark(1, i(20110)),	-- Highlander's Lamellar Greaves
-						mark(1, i(20109)),	-- Highlander's Lamellar Greaves
-						mark(1, i(20049)),	-- Highlander's Lamellar Greaves
+						moh(2, i(20058)),	-- Highlander's Lamellar Spaulders
+						moh(1, i(20042)),	-- Highlander's Lamellar Girdle
+						moh(1, i(20106)),	-- Highlander's Lamellar Girdle
+						moh(1, i(20107)),	-- Highlander's Lamellar Girdle
+						moh(1, i(20108)),	-- Highlander's Lamellar Girdle
+						moh(1, i(20111)),	-- Highlander's Lamellar Greaves
+						moh(1, i(20110)),	-- Highlander's Lamellar Greaves
+						moh(1, i(20109)),	-- Highlander's Lamellar Greaves
+						moh(1, i(20049)),	-- Highlander's Lamellar Greaves
 
 						-- Plate
-						mark(2, i(20057)),	-- Highlander's Plate Spaulders
-						mark(1, i(20125)),	-- Highlander's Plate Girdle
-						mark(1, i(20041)),	-- Highlander's Plate Girdle
-						mark(1, i(20124)),	-- Highlander's Plate Girdle
-						mark(1, i(20126)),	-- Highlander's Plate Girdle
-						mark(1, i(20129)),	-- Highlander's Plate Greaves
-						mark(1, i(20128)),	-- Highlander's Plate Greaves
-						mark(1, i(20048)),	-- Highlander's Plate Greaves
-						mark(1, i(20127)),	-- Highlander's Plate Greaves
+						moh(2, i(20057)),	-- Highlander's Plate Spaulders
+						moh(1, i(20125)),	-- Highlander's Plate Girdle
+						moh(1, i(20041)),	-- Highlander's Plate Girdle
+						moh(1, i(20124)),	-- Highlander's Plate Girdle
+						moh(1, i(20126)),	-- Highlander's Plate Girdle
+						moh(1, i(20129)),	-- Highlander's Plate Greaves
+						moh(1, i(20128)),	-- Highlander's Plate Greaves
+						moh(1, i(20048)),	-- Highlander's Plate Greaves
+						moh(1, i(20127)),	-- Highlander's Plate Greaves
 
 						-- Trinkets
-						mark(1, i(20071)),	-- Talisman of Arathor
-						mark(1, i(21117)),	-- Talisman of Arathor
-						mark(1, i(21118)),	-- Talisman of Arathor
-						mark(1, i(21119)),	-- Talisman of Arathor
+						moh(1, i(20071)),	-- Talisman of Arathor
+						moh(1, i(21117)),	-- Talisman of Arathor
+						moh(1, i(21118)),	-- Talisman of Arathor
+						moh(1, i(21119)),	-- Talisman of Arathor
 					},
 				}),
 			}),

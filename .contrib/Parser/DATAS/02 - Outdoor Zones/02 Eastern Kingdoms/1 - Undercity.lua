@@ -36,17 +36,17 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						crit(1, {	-- Fish Head
 							["_quests"] = { 29317 },	-- Fish Head
 						}),
-						crit(2, {	-- Like Pike?
-							["_quests"] = { 29320 },	-- Like Pike?
-						}),
-						crit(3, {	-- Moat Monster!
-							["_quests"] = { 29361 },	-- Moat Monster!
-						}),
-						crit(4, {	-- Tadpole Terror
+						crit(2, {	-- Tadpole Terror
 							["_quests"] = { 29319 },	-- Tadpole Terror
 						}),
-						crit(5, {	-- Time for Slime
+						crit(3, {	-- Like Pike?
+							["_quests"] = { 29320 },	-- Like Pike?
+						}),
+						crit(4, {	-- Time for Slime
 							["_quests"] = { 29322 },	-- Time for Slime
+						}),
+						crit(5, {	-- Moat Monster!
+							["_quests"] = { 29361 },	-- Moat Monster!
 						}),
 					},
 				})),
@@ -1200,7 +1200,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(50304, {	-- Captain Donald Adams <Undercity Quartermaster>
-					["coord"] = { 63.6, 48.8, UNDERCITY },
+					["coords"] = {
+						{ 63.6, 48.8, UNDERCITY },
+						-- #IF AFTER 8.0.1
+						{ 56.6, 90.2, ORGRIMMAR },
+						-- #ENDIF
+					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {

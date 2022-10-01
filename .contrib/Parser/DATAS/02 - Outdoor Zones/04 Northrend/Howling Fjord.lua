@@ -251,28 +251,43 @@ root("Zones", {
 				-- #endif
 				n(FLIGHT_PATHS, {
 					fp(248, {	-- Apothecary Camp
+						["cr"] = 26844,	-- Lilleth Radescu <Bat Handler>
 						["coord"] = { 26.0, 25.0, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(192, {	-- Camp Winterhoof
+						["cr"] = 24032,	-- Celea Frozenmane <Wind Rider Master>
 						["coord"] = { 49.4, 11.6, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(184, {	-- Fort Wildervar
+						["cr"] = 24061,	-- James Ormsby <Gryphon Master>
 						["coord"] = { 60.0, 16.0, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(295, {	-- Kamagua
+						["cr"] = 28197,	-- Kip Trawlskip <Flight Master>
 						["coord"] = { 24.6, 57.8, HOWLING_FJORD },
 					}),
 					fp(190, {	-- New Agamand
+						["cr"] = 24155,	-- Tobias Sarkhoff <Bat Handler>
 						["coord"] = { 52.0, 67.4, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(183, {	-- Valgarde Port
+						["cr"] = 23736,	-- Pricilla Winterwind <Gryphon Master>
 						["coord"] = { 59.8, 63.2, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(191, {	-- Vengeance Landing
+						["cr"] = 27344,	-- Adeline Chambers <Bat Handler>
 						["coord"] = { 79.0, 29.6, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(185, {	-- Westguard Keep
+						["cr"] = 23859,	-- Greer Orehammer <Gryphon Master>
 						["coord"] = { 31.2, 44.0, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 				n(PROFESSIONS, {
@@ -709,16 +724,48 @@ root("Zones", {
 						["sourceQuest"] = 11434,	-- Forgotten Treasure
 					}),
 					q(12918, {	-- Gem Perfection (A)
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26915,	-- Ounhulo
+						["coord"] = { 59.8, 63.8, HOWLING_FJORD },
 						["requireSkill"] = JEWELCRAFTING,
+						["timeline"] = { "removed 4.0.3" },
+						["cost"] = {
+							{ "i", 36929, 2 },	-- Huge Citrine
+							{ "i", 36932, 2 },	-- Dark Jade
+							{ "i", 36926, 2 },	-- Shadow Crystal
+						},
+						["races"] = ALLIANCE_ONLY,
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							i(41888, {	-- Small Velvet Bag
+								["description"] = "Contains a 'perfect' gem.",
+							}),
+							recipe(55534, {	-- Gem Perfection
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+						},
+						-- #endif
 					}),
 					q(12952, {	-- Gem Perfection (H)
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = HORDE_ONLY,
 						["qg"] = 26960,	-- Carter Tiffens
+						["coord"] = { 79.2, 28.8, HOWLING_FJORD },
 						["requireSkill"] = JEWELCRAFTING,
+						["timeline"] = { "removed 4.0.3" },
+						["cost"] = {
+							{ "i", 36929, 2 },	-- Huge Citrine
+							{ "i", 36932, 2 },	-- Dark Jade
+							{ "i", 36926, 2 },	-- Shadow Crystal
+						},
+						["races"] = HORDE_ONLY,
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							i(41888, {	-- Small Velvet Bag
+								["description"] = "Contains a 'perfect' gem.",
+							}),
+							recipe(55534, {	-- Gem Perfection
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+						},
+						-- #endif
 					}),
 					q(12181, {	-- Give it a Name
 						["coord"] = { 53.5, 66.3, HOWLING_FJORD },
@@ -989,6 +1036,9 @@ root("Zones", {
 							i(35844),	-- Shock-Resistant Hood
 							i(35846),	-- Banded Chain Gloves
 							i(35848),	-- Munificent Legguards
+							i(35845, {	-- Crystalline Star
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(11426, {	-- Locating the Mechanism
@@ -1236,6 +1286,9 @@ root("Zones", {
 							i(35844),	-- Shock-Resistant Hood
 							i(35846),	-- Banded Chain Gloves
 							i(35848),	-- Munificent Legguards
+							i(35845, {	-- Crystalline Star
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(11292, {	-- Preying Upon the Weak

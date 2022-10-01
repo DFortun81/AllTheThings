@@ -754,7 +754,9 @@ for key,value in pairs({
 		[-543] = "Вторжение Легиона",								-- Legion Invasions
 		[-579] = "Пропуск Темного портала",							-- Dark Portal Pass
 		[-580] = "Промо Shadowlands",								-- Shadowlands Seasonal Promotions
-		[-581] = "Great Push: Второй сезон",						-- The Great Push: Season 2
+		[-581] = "TBC Classic Deluxe",								-- TBC Classic Deluxe Edition
+		[-582] = "WotLK Classic Heroic",							-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
+		[-583] = "WotLK Classic Epic",								-- WotLK Classic Northrend Epic Upgrade
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "Доспехи Претендента",							-- Aspirant PvP Gear (WoD, BfA)
@@ -1259,6 +1261,7 @@ for key,value in pairs({
 	[192060] = "Наковальня Фьорна",	-- Fjorn's Anvil
 	[192072] = "Гарпунный ящик",	-- Harpoon Crate
 	[192833] = "Имущество Бриденбрада",	-- Bridenbrad's Possessions
+	[193051] = "Нерубское яйцо Плети",	-- Nerubian Scourge Egg
 	[193195] = "Пульсирующий кристалл",	-- Pulsing Crystal
 	[193400] = "Штабель саронитовых бомб",	-- Saronite Bomb Stack
 	[194032] = "Большой костер Альянса",	-- Alliance Bonfire
@@ -1285,6 +1288,7 @@ for key,value in pairs({
 	[194389] = "Украденный документ Лиги исследователей",	-- Stolen Explorers' League Document
 	[194390] = "Украденный документ Лиги исследователей",	-- Stolen Explorers' League Document
 	[194391] = "Украденный документ Лиги исследователей",	-- Stolen Explorers' League Document
+	[194555] = "Панель управления Архивом",	-- Archivum Console
 	[194714] = "Отвратительная рабочая скамейка",	-- Disgusting Workbench
 	[195134] = "Бомба",	-- The Bomb
 	[195431] = "Штабное радио",	-- Headquarters Radio
@@ -2619,6 +2623,7 @@ for key,value in pairs({
 	[303016] = "|cFFFFFFFFШаг 14:|r Обычный камешек XIII",	-- |cFFFFFFFFStep 14:|r Ordinary Pebble XIII
 	[303017] = "|cFFFFFFFFШаг 13:|r Обычный камешек XII",	-- |cFFFFFFFFStep 13:|r Ordinary Pebble XII
 	[303018] = "|cFFFFFFFFШаг 12:|r Обычный камешек XI",	-- |cFFFFFFFFStep 12:|r Ordinary Pebble XI
+	[303039] = "Странный мешок с зерном",	-- Curious Grain Sack
 	[307265] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[307277] = "Старый кувшин",	-- Old Jug
 	[307307] = "Разбитая бочка",	-- Broken Barrel

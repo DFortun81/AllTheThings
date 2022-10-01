@@ -16,7 +16,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(4878,  {	-- Montarr
+				n(4878, {	-- Montarr
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

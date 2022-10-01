@@ -6,7 +6,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(DUSTWALLOW_MARSH, {
 			n(VENDORS, {
-				n(4894,  {	-- Craig Nollward <Cooking Trainer>
+				n(4894, {	-- Craig Nollward <Cooking Trainer>
 					["coord"] = { 66.8, 45.2, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -14,7 +14,7 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
-				n(6567,  {	-- Ghok'kah <Tailoring Supplies>
+				n(6567, {	-- Ghok'kah <Tailoring Supplies>
 					["coord"] = { 35.2, 30.8, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -23,7 +23,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(4885,  {	-- Gregor MacVince <Horse Breeder>
+				n(4885, {	-- Gregor MacVince <Horse Breeder>
 					["coord"] = { 65.2, 51.4, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -35,7 +35,7 @@ _.Zones =
 						i(2414),	-- Pinto (MOUNT!)
 					},
 				}),
-				n(4886,  {	-- Hans Weston <Armorer & Weaponsmith>
+				n(4886, {	-- Hans Weston <Armorer & Weaponsmith>
 					["coord"] = { 64.6, 50.4, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -47,7 +47,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(4897,  {	-- Helenia Olden <Trade Supplies>
+				n(4897, {	-- Helenia Olden <Trade Supplies>
 					["coord"] = { 66.4, 51.4, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -65,7 +65,7 @@ _.Zones =
 						i(12228),	-- Recipe: Roast Raptor
 					},
 				}),
-				n(4892,  {	-- Jensen Farran <Hunter Trainer & Bowyer>
+				n(4892, {	-- Jensen Farran <Hunter Trainer & Bowyer>
 					["coord"] = { 67.8, 49.8, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -84,7 +84,7 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
-				n(4879,  {	-- Ogg'marr <Butcher>
+				n(4879, {	-- Ogg'marr <Butcher>
 					["coord"] = { 36.6, 31.0, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -94,7 +94,7 @@ _.Zones =
 						i(12228),	-- Recipe: Roast Raptor
 					},
 				}),
-				n(4890,  {	-- Piter Verance <Weaponsmith & Armorer>
+				n(4890, {	-- Piter Verance <Weaponsmith & Armorer>
 					["coord"] = { 67.4, 47.8, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -144,7 +144,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(4884,  {	-- Zulrg <Weaponsmith>
+				n(4884, {	-- Zulrg <Weaponsmith>
 					["coord"] = { 36.2, 31.6, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["g"] = {

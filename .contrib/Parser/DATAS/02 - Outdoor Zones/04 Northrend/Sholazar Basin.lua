@@ -9,7 +9,42 @@ root("Zones", {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					explorationAch(1268),	-- Explore Sholazar Basin
-					ach(961),	-- Honorary Frenzyheart
+					ach(950, {	-- Frenzyheart Tribe
+						-- #if ANYCLASSIC
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1104); end]],
+						-- #endif
+					}),
+					ach(961, {	-- Honorary Frenzyheart
+						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
+						["groups"] = {
+							crit(2061, {	-- A Hero's Headgear
+								["_quests"] = { 12758 },
+							}),
+							crit(2054, {	-- Chicken Party!
+								["_quests"] = { 12702 },
+							}),
+							crit(2055, {	-- Kartak's Rampage
+								["_quests"] = { 12703 },
+							}),
+							crit(2060, {	-- Rejek: First Blood
+								["_quests"] = { 12734 },
+							}),
+							crit(2057, {	-- Secret Strength of the Frenzyheart
+								["_quests"] = { 12760 },
+							}),
+							crit(2059, {	-- Strength of the Tempest
+								["_quests"] = { 12741 },
+							}),
+							crit(2058, {	-- The Heartblood's Strength
+								["_quests"] = { 12732 },
+							}),
+							crit(2056, {	-- Tools of War
+								["_quests"] = { 12759 },
+							}),
+						},
+					}),
 					ach(39, {	-- Into the Basin
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -49,9 +84,41 @@ root("Zones", {
 						-- #endif
 					}),
 					ach(952),	-- Mercenary of Sholazar
-					ach(962),	-- Savior of the Oracles
-					ach(938, {	-- The Snows of Northrend
-						["sourceQuest"] = 12614,	-- Post-Partum Aggression
+					ach(962, {	-- Savior of the Oracles
+						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
+						["groups"] = {
+							crit(2068, {	-- A Cleansing Song
+								["_quests"] = { 12735 },
+							}),
+							crit(2062, {	-- Appeasing the Great Rain Stone
+								["_quests"] = { 12704 },
+							}),
+							crit(2064, {	-- Mastery of the Crystals
+								["_quests"] = { 12761 },
+							}),
+							crit(2065, {	-- Power of the Great Ones
+								["_quests"] = { 12762 },
+							}),
+							crit(2069, {	-- Song of Fecundity
+								["_quests"] = { 12737 },
+							}),
+							crit(2066, {	-- Song of Reflection
+								["_quests"] = { 12736 },
+							}),
+							crit(2067, {	-- Song of Wind and Water
+								["_quests"] = { 12726 },
+							}),
+							crit(2063, {	-- Will of the Titans
+								["_quests"] = { 12705 },
+							}),
+						},
+					}),
+					ach(951, {	-- The Oracles
+						-- #if ANYCLASSIC
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1105); end]],
+						-- #endif
 					}),
 				}),
 				-- #if AFTER MOP
@@ -78,221 +145,178 @@ root("Zones", {
 				-- #endif
 				n(FACTIONS, {
 					faction(1104, {	-- Frenzyheart Tribe
+						["maxReputation"] = { 1105, NEUTRAL },	-- The Oracles, Neutral.
 						["altAchievements"] = { 952 },	-- Mercenary of Sholazar
 					}),
 					faction(1105, {	-- The Oracles
+						["maxReputation"] = { 1104, NEUTRAL },	-- Frenzyheart Tribe, Neutral.
 						["altAchievements"] = { 952 },	-- Mercenary of Sholazar
 					}),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(309, {	-- Nesingwary Base Camp
+						["cr"] = 28037,	-- The Spirit of Gnomeregan <Flight Master>
 						["coord"] = { 25.2, 58.4, SHOLAZAR_BASIN },
+						["sourceQuest"] = 12522,	-- Need an Engine, Take an Engine
 					}),
 					fp(308, {	-- River's Heart
+						["cr"] = 28574,	-- Marvin Wobblesprocket <Flight Master>
 						["coord"] = { 50.0, 61.4, SHOLAZAR_BASIN },
 					}),
 				}),
 				n(QUESTS, {
 					-- Frenzyheart Tribe
 					q(12758, {	-- A Hero's Headgear
-						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["groups"] = {
-							crit(8, {	-- A Hero's Headgear
-								["achievementID"] = 961,	-- Honorary Frenzyheart
-							}),
-						},
+						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["isDaily"] = true,
 					}),
 					q(12702, {	-- Chicken Party!
-						["coord"] = { 55.5, 69.6, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 28138,	-- Elder Harkek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["groups"] = {
-							crit(1, {	-- Chicken Party!
-								["achievementID"] = 961,	-- Honorary Frenzyheart
-							}),
-						},
+						["coord"] = { 55.5, 69.6, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["isDaily"] = true,
 					}),
 					q(12582, {	-- Frenzyheart Champion
-						["coord"] = { 72.0, 57.0, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 28668,	-- Zepik the Gorloc Hunter
 						["description"] = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenzyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
+						["coord"] = { 72.0, 57.0, SHOLAZAR_BASIN },
+						["isDaily"] = true,
 					}),
 					q(12703, {	-- Kartak's Rampage
-						["coord"] = { 55.5, 68.6, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 29146,	-- Vekgar
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["groups"] = {
-							crit(2, {	-- Kartak's Rampage
-								["achievementID"] = 961,	-- Honorary Frenzyheart
-							}),
-						},
+						["coord"] = { 55.5, 68.6, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["isDaily"] = true,
 					}),
 					q(12734, {	-- Rejek: First Blood
-						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["groups"] = {
-							crit(7, {	-- Rejek: First Blood
-								["achievementID"] = 961,	-- Honorary Frenzyheart
-							}),
-						},
+						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["isDaily"] = true,
 					}),
 					q(12692, {	-- Return of the Lich Hunter
-						["coord"] = { 71.9, 57.0, SHOLAZAR_BASIN },
 						["qg"] = 28668,	-- Zepik the Gorloc Hunter
 						["sourceQuest"] = 12582,	-- Frenzyheart Champion
+						["coord"] = { 71.9, 57.0, SHOLAZAR_BASIN },
 					}),
 					q(12760, {	-- Secret Strength of the Frenzyheart
-						["coord"] = { 55.5, 68.6, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 29146,	-- Vekgar
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["groups"] = {
-							crit(4, {	-- Secret Strength of the Frenzyheart
-								["achievementID"] = 961,	-- Honorary Frenzyheart
-							}),
-						},
+						["coord"] = { 55.5, 68.6, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["isDaily"] = true,
 					}),
 					q(12741, {	-- Strength of the Tempest
-						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["groups"] = {
-							crit(6, {	-- Strength of the Tempest
-								["achievementID"] = 961,	-- Honorary Frenzyheart
-							}),
-						},
+						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["isDaily"] = true,
 					}),
 					q(12732, {	-- The Heartblood's Strength
-						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["groups"] = {
-							crit(5, {	-- The Heartblood's Strength
-								["achievementID"] = 961,	-- Honorary Frenzyheart
-							}),
-						},
+						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["isDaily"] = true,
 					}),
 					q(12759, {	-- Tools of War
-						["coord"] = { 55.5, 68.6, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 29146,	-- Vekgar
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["groups"] = {
-							crit(3, {	-- Tools of War
-								["achievementID"] = 961,	-- Honorary Frenzyheart
-							}),
-						},
+						["coord"] = { 55.5, 68.6, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["isDaily"] = true,
 					}),
 
 					-- The Oracles dailies
 					q(12735, {	-- A Cleansing Song
-						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["groups"] = {
-							crit(7, {	-- A Cleansing Song
-								["achievementID"] = 962,	-- Savior of the Oracles
-							}),
-						},
+						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["isDaily"] = true,
 					}),
 					q(12704, {	-- Appeasing the Great Rain Stone
-						["coord"] = { 54.6, 56.3, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 28027,	-- High-Oracle Soo-say
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["groups"] = {
-							crit(1, {	-- Appeasing the Great Rain Stone
-								["achievementID"] = 962,	-- Savior of the Oracles
-							}),
-						},
+						["coord"] = { 54.6, 56.3, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["isDaily"] = true,
 					}),
 					q(12689, {	-- Hand of the Oracles
-						["coord"] = { 72.5, 57.5, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 28667,	-- Jaloot
 						["description"] = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenzyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
+						["coord"] = { 72.5, 57.5, SHOLAZAR_BASIN },
+						["isDaily"] = true,
 					}),
 					q(12761, {	-- Mastery of the Crystals
-						["coord"] = { 54.2, 53.8, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 29149,	-- Oracle Soo-dow
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["groups"] = {
-							crit(3, {	-- Mastery of the Crystals
-								["achievementID"] = 962,	-- Savior of the Oracles
-							}),
-						},
+						["coord"] = { 54.2, 53.8, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["isDaily"] = true,
 					}),
 					q(12762, {	-- Power of the Great Ones
-						["coord"] = { 54.2, 53.8, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 29149,	-- Oracle Soo-dow
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["groups"] = {
-							crit(4, {	-- Power of the Great Ones
-								["achievementID"] = 962,	-- Savior of the Oracles
-							}),
-						},
+						["coord"] = { 54.2, 53.8, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["isDaily"] = true,
 					}),
 					q(12695, {	-- Return of the Friendly Dryskin
-						["coord"] = { 72.5, 57.5, SHOLAZAR_BASIN },
 						["qg"] = 28667,	-- Jaloot
 						["sourceQuest"] = 12689,	-- Hand of the Oracles
+						["coord"] = { 72.5, 57.5, SHOLAZAR_BASIN },
 					}),
 					q(12737, {	-- Song of Fecundity
-						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["groups"] = {
-							crit(8, {	-- Song of Fecundity
-								["achievementID"] = 962,	-- Savior of the Oracles
-							}),
-						},
+						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["isDaily"] = true,
 					}),
 					q(12736, {	-- Song of Reflection
-						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["groups"] = {
-							crit(5, {	-- Song of Reflection
-								["achievementID"] = 962,	-- Savior of the Oracles
-							}),
-						},
+						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["isDaily"] = true,
 					}),
 					q(12726, {	-- Song of Wind and Water
-						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["groups"] = {
-							crit(6, {	-- Song of Wind and Water
-								["achievementID"] = 962,	-- Savior of the Oracles
-							}),
-						},
+						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["isDaily"] = true,
 					}),
 					q(12705, {	-- Will of the Titans
-						["coord"] = { 54.2, 53.8, SHOLAZAR_BASIN },
-						["isDaily"] = true,
 						["qg"] = 29149,	-- Oracle Soo-dow
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["groups"] = {
-							crit(2, {	-- Will of the Titans
-								["achievementID"] = 962,	-- Savior of the Oracles
-							}),
-						},
+						["coord"] = { 54.2, 53.8, SHOLAZAR_BASIN },
+						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["isDaily"] = true,
 					}),
 
 					q(12581, {	-- A Hero's Burden
@@ -622,15 +646,19 @@ root("Zones", {
 						["description"] = "Available after you kill |cFFFFD700Pitch|r.",
 					}),
 					q(12614, {  -- Post-partum Aggression
-						["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
 						["qg"] = 28376,	-- Dorian Drakestalker
 						["sourceQuest"] = 12607,	-- A Mammoth Undertaking
+						["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
 						["groups"] = {
+							ach(938),	-- The Snows of Northrend
 							i(39487),	-- Dragon Slayer's Shortbow
 							i(39486),	-- Hemet's Trophy Gun
 							i(39488),	-- Nesingwary Brush Burner
 							i(39478),	-- Cloak of the Deadliest Game
 							i(40353),	-- Polished Protodrake Cloak
+							i(39490, {	-- Dorian's Prybar
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(12613, {	-- Powering the Waygate - The Makers' Overlook
@@ -1052,11 +1080,15 @@ root("Zones", {
 							i(44116),	-- Muddied Crimson Gloves
 							i(44122),	-- Scavenged Feathery Leggings
 							i(44121),	-- Sparkly Shiny Gloves
+							i(44118, {	-- Stolen Vrykul Harpoon
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 				}),
 				n(ZONE_DROPS, {
 					i(41122, {	-- Plans: Reinforced Cobalt Chestpiece (RECIPE!)
+						["coord"] = { 34.1, 46.8, SHOLAZAR_BASIN },
 						["cr"] = 28123,	-- Venture Co. Excavator
 					}),
 				}),

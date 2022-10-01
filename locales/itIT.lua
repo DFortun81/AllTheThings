@@ -1265,6 +1265,7 @@ for key,value in pairs({
 	[192060] = "Incudine di Fjorn",	-- Fjorn's Anvil
 	[192072] = "Cassa degli Arpioni",	-- Harpoon Crate
 	[192833] = "Spada di Bridenbrad",	-- Bridenbrad's Possessions
+	[193051] = "Uovo dei Nerubiani del Flagello",	-- Nerubian Scourge Egg
 	[193195] = "Cristallo Pulsante",	-- Pulsing Crystal
 	[193400] = "Pila di Bombe di Saronite",	-- Saronite Bomb Stack
 	[194032] = "Falò dell'Alleanza",	-- Alliance Bonfire
@@ -1291,6 +1292,7 @@ for key,value in pairs({
 	[194389] = "Documento Rubato della Lega degli Esploratori",	-- Stolen Explorers' League Document
 	[194390] = "Documento Rubato della Lega degli Esploratori",	-- Stolen Explorers' League Document
 	[194391] = "Documento Rubato della Lega degli Esploratori",	-- Stolen Explorers' League Document
+	[194555] = "Console dell'Archivum",	-- Archivum Console
 	[194714] = "Tavolo da Lavoro Disgustoso",	-- Disgusting Workbench
 	[195134] = "La Bomba",	-- The Bomb
 	[195431] = "Radio del Quartier Generale",	-- Headquarters Radio
@@ -2625,6 +2627,7 @@ for key,value in pairs({
 	[303016] = "|cFFFFFFFFStep 14:|r Sasso Comune XIII",	-- |cFFFFFFFFStep 14:|r Ordinary Pebble XIII
 	[303017] = "|cFFFFFFFFStep 13:|r Sasso Comune XII",	-- |cFFFFFFFFStep 13:|r Ordinary Pebble XII
 	[303018] = "|cFFFFFFFFStep 12:|r Sasso Comune XI",	-- |cFFFFFFFFStep 12:|r Ordinary Pebble XI
+	[303039] = "Sacco di Grano Curioso",	-- Curious Grain Sack
 	[307265] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[307277] = "Vecchio Fiasco",	-- Old Jug
 	[307307] = "Barile Spezzato",	-- Broken Barrel

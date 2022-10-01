@@ -4,21 +4,6 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 	achcat(ACHIEVEMENT_CATEGORY_NORTHREND_QUESTS, {
-		ach(561),		-- D.E.H.T.A's Little P.I.T.A. (Borean Tundra)
-		ach(1596, {		-- Guru of Drakuru
-			crit(1),		-- Cleansing Drak'Tharon
-			crit(2),		-- Betrayal
-		}),
-		ach(961, {		-- Honorary Frenzyheart (Sholazar Basin)
-			crit(1),		-- Chicken Party!
-			crit(2),		-- Kartak's Rampage
-			crit(3),		-- Tools of War
-			crit(4),		-- Secret Strength of the Frenzyheart
-			crit(5),		-- The Heartblood's Strength
-			crit(6),		-- Strength of the Tempest
-			crit(7),		-- Rejek: First Blood
-			crit(8),		-- A Hero's Headgear
-		}),
 		ach(41, {		-- Loremaster of Northrend
 			a(ach(33, {		-- Nothing Boring About Borean (Alliance)
 				crit(1),		-- Hiding in Plain Sight
@@ -152,19 +137,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				crit(11),		-- Corp'rethar: The Horror Gate
 			}),
 		}),
-		ach(1428),		-- Mine Sweeper (The Storm Peaks)
-		ach(1277),		-- Rapid Defense (Dragonblight)
-		ach(962, {		-- Savior of the Oracles (Sholazar Basin)
-			crit(1),		-- Appeasing the Great Rain Stone
-			crit(2),		-- Will of the Titans
-			crit(3),		-- Mastery of the Crystals
-			crit(4),		-- Power of the Great Ones
-			crit(5),		-- Song of Reflection
-			crit(6),		-- Song of Wind and Water
-			crit(7),		-- A Cleansing Song
-			crit(8),		-- Song of Fecundity
-		}),
-		ach(938),		-- The Snows of Northrend (Sholazar Basin)
-		ach(547),		-- Veteran of the Wrathgate (Dragonblight)
 	}),
 }));

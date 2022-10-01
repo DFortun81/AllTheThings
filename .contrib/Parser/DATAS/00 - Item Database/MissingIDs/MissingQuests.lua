@@ -844,7 +844,6 @@ q(12835),	-- All Grown Up
 q(12837),	-- Tore's Got the Goods
 q(12881),	-- The Brothers Bronzebeard
 q(12923),	-- UNUSED
-q(13097),	-- Unfinished Business
 q(13123),	-- WotLK Collector's Edition: - DEM - E - FLAG
 q(13173),	-- Amidst the Confusion
 q(13205),	-- Disarmament
@@ -912,8 +911,6 @@ q(14027),	-- Face to Face
 q(14029),	-- Breaking the Siege
 q(14032),	-- Kobold Camp Cleanup [Programming Test]
 q(14097),	-- Get That Merchant Out of Here!
-q(14100),	-- Relic of the Earthen Ring
-q(14111),	-- Relic of the Earthen Ring
 q(14133),	-- The Way to a Mage's Heart
 q(14137),	-- Class Training (Tracking Event)
 q(14156),	-- Man on the Inside

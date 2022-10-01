@@ -18,7 +18,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(8150,  {	-- Janet Hommers <Food & Drink>
+				n(8150, {	-- Janet Hommers <Food & Drink>
 					["coord"] = { 66.2, 6.6, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -26,7 +26,7 @@ _.Zones =
 						i(12233),	-- Recipe: Mystery Stew
 					},
 				}),
-				n(9636,  {	-- Kireena <Trade Goods>
+				n(9636, {	-- Kireena <Trade Goods>
 					["coord"] = { 51.0, 53.4, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -41,7 +41,7 @@ _.Zones =
 						i(12240),	-- Recipe: Heavy Kodo Stew
 					},
 				}),
-				n(8878,  {	-- Muuran <Superior Macecrafter>
+				n(8878, {	-- Muuran <Superior Macecrafter>
 					["coord"] = { 55.8, 56.6, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["g"] = {

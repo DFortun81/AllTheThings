@@ -361,6 +361,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 								["criteriaID"] = 5613,		-- Cyanigosa slain
 							},
+							i(41791, {	-- Design: Subtle Autumn's Glow [CATA+] / Design: Thick Autumn's Glow [WRATH]
+								["timeline"] = { "removed 4.0.3" },
+							}),
 							-- #if AFTER 7.3.5
 							i(35649),	-- Jailer's Baton (7.3.5 - Used to be only Normal Mode)
 							-- #endif

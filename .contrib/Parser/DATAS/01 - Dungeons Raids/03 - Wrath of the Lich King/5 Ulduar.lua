@@ -117,7 +117,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					},
 				}),
 			}),
-			-- #endif
 			n(LEGENDARY_QUESTLINE, {
 				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
 				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
@@ -125,36 +124,48 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				["icon"] = "Interface\\Icons\\inv_mace_99",
 				["isRaid"] = true,
 				["groups"] = {
-					i(45038, {	-- Fragment of Val'anyr
-						["crs"] = {
-							33113,	-- Flame Leviathan
-							33118,	-- Ignis the Furnace Master
-							33293,	-- XT-002 Deconstructor
-							32871,	-- Algalon the Observer
-							32927,	-- Runemaster Molgeim
-							32857,	-- Stormcaller Brundir
-							32867,	-- Steelbreaker
-							32930,	-- Kologarn
-							33515,	-- Auriaya
-							32845,	-- Hodir
-							32865,	-- Thorim
-							32906,	-- Freya
-							33350,	-- Mimiron
-							33271,	-- General Vezax
-							33288,	-- Yogg-Saron
-						},
-					}),
 					q(13622, {	-- Ancient History
 						["provider"] = { "i", 45039 },	-- Shattered Fragments of Val'anyr
+						["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
 					}),
 					q(13629, {	-- Val'anyr, Hammer of Ancient Kings
+						["provider"] = { "o", 194555 },	-- Archivum Console
 						["sourceQuest"] = 13622,	-- Ancient History
 						["groups"] = {
+							objective(1, {	-- 0/1 Reforged Hammer of Ancient Kings
+								["provider"] = { "i", 45897 },	-- Reforged Hammer of Ancient Kings
+								["cost"] = { { "i", 45896, 1 } },	-- Unbound Fragments of Val'anyr
+								["cr"] = 33288,	-- Yogg-Saron
+							}),
 							i(46017)	-- Val'anyr, Hammer of Ancient Kings
 						},
 					}),
 				},
 			}),
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					33113,	-- Flame Leviathan
+					33118,	-- Ignis the Furnace Master
+					33293,	-- XT-002 Deconstructor
+					32871,	-- Algalon the Observer
+					32927,	-- Runemaster Molgeim
+					32857,	-- Stormcaller Brundir
+					32867,	-- Steelbreaker
+					32930,	-- Kologarn
+					33515,	-- Auriaya
+					32845,	-- Hodir
+					32865,	-- Thorim
+					32906,	-- Freya
+					33350,	-- Mimiron
+					33271,	-- General Vezax
+					33288,	-- Yogg-Saron
+				},
+				["groups"] = {
+					i(45038),	-- Fragment of Val'anyr
+					i(45087),	-- Runed Orb
+				},
+			}),
+			-- #endif
 			d(3, {	-- 10-Man
 				["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 				["lvl"] = lvlsquish(80, 80, 30),
@@ -268,6 +279,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					-- This is a temporary solution, file in progress!
+					-- #if AFTER 7.3.5.25727
 					n(ACHIEVEMENTS, {
 						ach(2958, {	-- Glory of the Ulduar Raider (25 player)
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
@@ -369,75 +381,182 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(2976),	-- Who Needs Bloodlust? (25 player)
 						ach(2952),	-- With Open Arms (25 player)
 					}),
+					-- #else
+					n(ACHIEVEMENTS, {
+						ach(2958, {	-- Glory of the Ulduar Raider (25 player)
+							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							-- Meta Achievement
+							["sym"] = {{"meta_achievement",
+								3057,	-- Orbit-uary (25 player)
+								2929,	-- Stokin' the Furnace (25 player)
+								2924,	-- Iron Dwarf, Medium Rare (25 player)
+								3059,	-- Heartbreaker (25 player)
+								2944,	-- I Choose You, Steelbreaker (25 player)
+								2954,	-- Disarmed (25 player)
+								3007,	-- Crazy Cat Lady (25 player)
+								3184,	-- I Could Say That This Cache Was Rare (25 player)
+								3183,	-- Lose Your Illusion (25 player)
+								3187,	-- Knock, Knock, Knock on Wood (25 player)
+								3189,	-- Firefighter (25 player)
+								3188,	-- I Love the Smell of Saronite in the Morning (25 player)
+								3163,	-- One Light in the Darkness (25 player)
+							}},
+							["groups"] = {
+								i(45801),	-- Ironbound Proto-Drake (MOUNT!)
+							},
+						}),
+						ach(2921),	-- A Quick Shave (25 player)
+						ach(3164, {	-- Alone in the Darkness (25 player)
+							ach(3163),	-- One Light in the Darkness (25 player)
+							ach(3162),	-- Two Lights in the Darkness (25 player)
+							ach(3161),	-- Three Lights in the Darkness (25 player)
+						}),
+						ach(2946),	-- But I'm On Your Side (25 player)
+						ach(2948),	-- Can't Do That While Stunned (25 player)
+						ach(2962),	-- Cheese the Freeze (25 player)
+						ach(2981),	-- Con-speed-atory (25 player)
+						ach(2904, bubbleDownSelf({	-- Conqueror of Ulduar
+							["timeline"] = { "added 3.1", "removed 4.0" },
+						},{
+							title(126),	-- , Conqueror of Ulduar
+						})),
+						ach(3007),	-- Crazy Cat Lady (25 player)
+						ach(2984),	-- Deforestation (25 player)
+						ach(2954),	-- Disarmed (25 player)
+						ach(2972),	-- Don't Stand in the Lightning (25 player)
+						ach(3010),	-- Drive Me Crazy (25 player)
+						ach(3098),	-- Dwarfageddon (25 player)
+						ach(3189),	-- Firefighter (25 player)
+						ach(2983),	-- Getting Back to Nature (25 player)
+						ach(2968),	-- Getting Cold in Here (25 player)
+						ach(3013),	-- He's Not Getting Any Older (25 player)
+						ach(3059),	-- Heartbreaker (25 player)
+						ach(2928),	-- Hot Pocket (25 player)
+						ach(2942),	-- I Choose You, Runemaster Molgeim (25 player)
+						ach(2944),	-- I Choose You, Steelbreaker (25 player)
+						ach(2943),	-- I Choose You, Stormcaller Brundir (25 player)
+						ach(3184),	-- I Could Say That This Cache Was Rare (25 player)
+						ach(2965),	-- I Have the Coolest Friends (25 player)
+						ach(3188),	-- I Love the Smell of Saronite in the Morning (25 player)
+						ach(2974),	-- I'll Take You All On (25 player)
+						ach(2956),	-- If Looks Could Kill (25 player)
+						ach(3016),	-- In His House He Waits Dreaming (25 player)
+						ach(2924),	-- Iron Dwarf, Medium Rare (25 player)
+						ach(3011),	-- Kiss and Make Up (25 player)
+						ach(3187, {	-- Knock, Knock, Knock on Wood (25 player)
+							ach(3186),	-- Knock, Knock on Wood (25 player)
+							ach(3185),	-- Knock on Wood (25 player)
+						}),
+						ach(3183, {	-- Lose Your Illusion (25 player)
+							ach(2978),	-- Siffed (25 player)
+						}),
+						ach(3118),	-- Lumberjacked (25 player)
+						ach(2938),	-- Must Deconstruct Faster (25 player)
+						ach(2932),	-- Nerf Engineering (25 player)
+						ach(2936),	-- Nerf Gravity Bombs (25 player)
+						ach(2935),	-- Nerf Scrapbots (25 player)
+						ach(3077),	-- Nine Lives (25 player)
+						ach(2995),	-- Not-So-Friendly Fire (25 player)
+						ach(3037),	-- Observed (25 player)
+						ach(3057, {	-- Orbit-uary (25 player)
+							ach(2917),	-- Nuked from Orbit (25 player)
+							ach(2916),	-- Orbital Devastation (25 player)
+							ach(2918),	-- Orbital Bombardment (25 player)
+						}),
+						ach(2960),	-- Rubble and Roll (25 player)
+						ach(3237),	-- Set Up Us the Bomb (25 player)
+						ach(2997),	-- Shadowdodger (25 player)
+						ach(2926),	-- Shattered (25 player)
+						ach(2912),	-- Shutout (25 player)
+						ach(2970),	-- Staying Buffed All Winter (25 player)
+						ach(2929),	-- Stokin' the Furnace (25 player)
+						ach(3002),	-- Supermassive (25 player)
+						ach(2910),	-- Take Out Those Turrets (25 player)
+						ach(2889),	-- The Antechamber of Ulduar (25 player)
+						ach(2893),	-- The Descent into Madness (25 player)
+						ach(2891),	-- The Keepers of Ulduar (25 player)
+						ach(2895),	-- The Secrets of Ulduar (25 player)
+						ach(2887),	-- The Siege of Ulduar (25 player)
+						ach(3017),	-- They're Coming Out of the Walls (25 player)
+						ach(2908),	-- Three Car Garage (25 player)
+						ach(2906),	-- Unbroken (25 player)
+						ach(2976),	-- Who Needs Bloodlust? (25 player)
+						ach(2952),	-- With Open Arms (25 player)
+					}),
+					n(LEGENDARY_QUESTLINE, {
+						["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses in 25-Man Ulduar. Hard modes have higher drop chances.",
+						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
+						["title"] = "Val'anyr, Hammer of Ancient Kings",
+						["icon"] = "Interface\\Icons\\inv_mace_99",
+						["isRaid"] = true,
+						["groups"] = {
+							q(13622, {	-- Ancient History
+								["provider"] = { "i", 45039 },	-- Shattered Fragments of Val'anyr
+								["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
+							}),
+							q(13629, {	-- Val'anyr, Hammer of Ancient Kings
+								["provider"] = { "o", 194555 },	-- Archivum Console
+								["sourceQuest"] = 13622,	-- Ancient History
+								["groups"] = {
+									objective(1, {	-- 0/1 Reforged Hammer of Ancient Kings
+										["provider"] = { "i", 45897 },	-- Reforged Hammer of Ancient Kings
+										["cost"] = { { "i", 45896, 1 } },	-- Unbound Fragments of Val'anyr
+										["cr"] = 33288,	-- Yogg-Saron
+									}),
+									i(46017)	-- Val'anyr, Hammer of Ancient Kings
+								},
+							}),
+						},
+					}),
+					n(COMMON_BOSS_DROPS, {
+						["crs"] = {
+							33113,	-- Flame Leviathan
+							33118,	-- Ignis the Furnace Master
+							33293,	-- XT-002 Deconstructor
+							32871,	-- Algalon the Observer
+							32927,	-- Runemaster Molgeim
+							32857,	-- Stormcaller Brundir
+							32867,	-- Steelbreaker
+							32930,	-- Kologarn
+							33515,	-- Auriaya
+							32845,	-- Hodir
+							32865,	-- Thorim
+							32906,	-- Freya
+							33350,	-- Mimiron
+							33271,	-- General Vezax
+							33288,	-- Yogg-Saron
+						},
+						["groups"] = {
+							i(45038),	-- Fragment of Val'anyr
+							i(45087, {	-- Runed Orb
+								["description"] = "Can also drop from defeating 10-Man Hard Mode bosses.",
+							}),
+							i(46027),	-- Formula: Enchant Weapon - Blade Ward (RECIPE!)
+							i(46348),	-- Formula: Enchant Weapon - Blood Draining (RECIPE!)
+							i(45100),	-- Pattern: Belt of Arctic Life
+							i(45094),	-- Pattern: Belt of Dragons
+							i(45096),	-- Pattern: Blue Belt of Chaos
+							i(45095),	-- Pattern: Boots of Living Scale
+							i(45101),	-- Pattern: Boots of Wintry Endurance
+							i(45104),	-- Pattern: Cord of the White Dawn
+							i(45098),	-- Pattern: Death-Warmed Belt
+							i(45099),	-- Pattern: Footpads of Silence
+							i(45097),	-- Pattern: Lightning Grounded Boots
+							i(45102),	-- Pattern: Sash of Ancient Power
+							i(45105),	-- Pattern: Savior's Slippers
+							i(45103),	-- Pattern: Spellslinger's Slippers
+							i(45089),	-- Plans: Battlelord's Plate Boots (RECIPE!)
+							i(45088),	-- Plans: Belt of the Titans (RECIPE!)
+							i(45092),	-- Plans: Indestructible Plate Girdle (RECIPE!)
+							i(45090),	-- Plans: Plate Girdle of Righteousness (RECIPE!)
+							i(45093),	-- Plans: Spiked Deathdealers (RECIPE!)
+							i(45091),	-- Plans: Treads of Destiny (RECIPE!)
+						},
+					}),
+					-- #endif
 				},
 			}),
 			d(14, {	-- Normal
-				n(ZONE_DROPS, {
-					i(46351),	-- Bloodcrush Cudgel
-					i(45605),	-- Daschal's Bite
-					i(46350),	-- Pillar of Fortitude
-					i(46342),	-- Golemheart Longbow
-					i(46339),	-- Mimiron's Repeater
-					i(46343),	-- Fervor of the Protectorate
-					i(45539),	-- Pendant of Focused Energies
-					i(45538),	-- Titanstone Pendant
-					i(46344),	-- Iceshear Mantle
-					i(45543),	-- Shoulders of Misfortune
-					i(46341),	-- Drape of the Spellweaver
-					i(46347),	-- Cloak of the Dormant Blaze
-					i(45541),	-- Shroud of Alteration
-					i(46345),	-- Bracers of Righteous Reformation
-					i(46340),	-- Adamant Handguards
-					i(45549),	-- Grips of Chaos
-					i(45548),	-- Belt of the Sleeper
-					i(45547),	-- Relic Hunter's Cord
-					i(45544),	-- Leggings of the Tortured Earth
-					i(46346),	-- Boots of Unsettled Prey
-					i(45542),	-- Greaves of the Stonewarder
-					i(45540),	-- Bladebearer's Signet
-				}),
-				n(COMMON_BOSS_DROPS, {
-					["crs"] = {
-						33113,	-- Flame Leviathan
-						33118,	-- Ignis the Furnace Master
-						33293,	-- XT-002 Deconstructor
-						32871,	-- Algalon the Observer
-						32927,	-- Runemaster Molgeim
-						32857,	-- Stormcaller Brundir
-						32867,	-- Steelbreaker
-						32930,	-- Kologarn
-						33515,	-- Auriaya
-						32845,	-- Hodir
-						32865,	-- Thorim
-						32906,	-- Freya
-						33350,	-- Mimiron
-						33271,	-- General Vezax
-						33288,	-- Yogg-Saron
-					},
-					["groups"] = {
-						i(45087),	-- Runed Orb
-						i(46027),	-- Formula: Enchant Weapon - Blade Ward (RECIPE!)
-						i(46348),	-- Formula: Enchant Weapon - Blood Draining (RECIPE!)
-						i(45100),	-- Pattern: Belt of Arctic Life
-						i(45094),	-- Pattern: Belt of Dragons
-						i(45096),	-- Pattern: Blue Belt of Chaos
-						i(45095),	-- Pattern: Boots of Living Scale
-						i(45101),	-- Pattern: Boots of Wintry Endurance
-						i(45104),	-- Pattern: Cord of the White Dawn
-						i(45098),	-- Pattern: Death-Warmed Belt
-						i(45099),	-- Pattern: Footpads of Silence
-						i(45097),	-- Pattern: Lightning Grounded Boots
-						i(45102),	-- Pattern: Sash of Ancient Power
-						i(45105),	-- Pattern: Savior's Slippers
-						i(45103),	-- Pattern: Spellslinger's Slippers
-						i(45089),	-- Plans: Battlelord's Plate Boots (RECIPE!)
-						i(45088),	-- Plans: Belt of the Titans (RECIPE!)
-						i(45092),	-- Plans: Indestructible Plate Girdle (RECIPE!)
-						i(45090),	-- Plans: Plate Girdle of Righteousness (RECIPE!)
-						i(45093),	-- Plans: Spiked Deathdealers (RECIPE!)
-						i(45091),	-- Plans: Treads of Destiny (RECIPE!)
-					},
-				}),
 				n(QUESTS, {
 					q(13607, {	-- The Celestial Planetarium
 						["sourceQuest"] = 13604,	-- Archivum Data Disc
@@ -583,6 +702,75 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						},
 					}),
 				}),
+				n(ZONE_DROPS, {
+					i(46351),	-- Bloodcrush Cudgel
+					i(45605),	-- Daschal's Bite
+					i(46350),	-- Pillar of Fortitude
+					i(46342),	-- Golemheart Longbow
+					i(46339),	-- Mimiron's Repeater
+					i(46343),	-- Fervor of the Protectorate
+					i(45539),	-- Pendant of Focused Energies
+					i(45538),	-- Titanstone Pendant
+					i(46344),	-- Iceshear Mantle
+					i(45543),	-- Shoulders of Misfortune
+					i(46341),	-- Drape of the Spellweaver
+					i(46347),	-- Cloak of the Dormant Blaze
+					i(45541),	-- Shroud of Alteration
+					i(46345),	-- Bracers of Righteous Reformation
+					i(46340),	-- Adamant Handguards
+					i(45549),	-- Grips of Chaos
+					i(45548),	-- Belt of the Sleeper
+					i(45547),	-- Relic Hunter's Cord
+					i(45544),	-- Leggings of the Tortured Earth
+					i(46346),	-- Boots of Unsettled Prey
+					i(45542),	-- Greaves of the Stonewarder
+					i(45540),	-- Bladebearer's Signet
+					i(46138, {	-- Idol of the Flourishing Life
+						["timeline"] = { "removed 5.0.4" },
+					}),
+				}),
+				n(COMMON_BOSS_DROPS, {
+					["crs"] = {
+						33113,	-- Flame Leviathan
+						33118,	-- Ignis the Furnace Master
+						33293,	-- XT-002 Deconstructor
+						32871,	-- Algalon the Observer
+						32927,	-- Runemaster Molgeim
+						32857,	-- Stormcaller Brundir
+						32867,	-- Steelbreaker
+						32930,	-- Kologarn
+						33515,	-- Auriaya
+						32845,	-- Hodir
+						32865,	-- Thorim
+						32906,	-- Freya
+						33350,	-- Mimiron
+						33271,	-- General Vezax
+						33288,	-- Yogg-Saron
+					},
+					["groups"] = {
+						i(45087),	-- Runed Orb
+						i(46027),	-- Formula: Enchant Weapon - Blade Ward (RECIPE!)
+						i(46348),	-- Formula: Enchant Weapon - Blood Draining (RECIPE!)
+						i(45100),	-- Pattern: Belt of Arctic Life
+						i(45094),	-- Pattern: Belt of Dragons
+						i(45096),	-- Pattern: Blue Belt of Chaos
+						i(45095),	-- Pattern: Boots of Living Scale
+						i(45101),	-- Pattern: Boots of Wintry Endurance
+						i(45104),	-- Pattern: Cord of the White Dawn
+						i(45098),	-- Pattern: Death-Warmed Belt
+						i(45099),	-- Pattern: Footpads of Silence
+						i(45097),	-- Pattern: Lightning Grounded Boots
+						i(45102),	-- Pattern: Sash of Ancient Power
+						i(45105),	-- Pattern: Savior's Slippers
+						i(45103),	-- Pattern: Spellslinger's Slippers
+						i(45089),	-- Plans: Battlelord's Plate Boots (RECIPE!)
+						i(45088),	-- Plans: Belt of the Titans (RECIPE!)
+						i(45092),	-- Plans: Indestructible Plate Girdle (RECIPE!)
+						i(45090),	-- Plans: Plate Girdle of Righteousness (RECIPE!)
+						i(45093),	-- Plans: Spiked Deathdealers (RECIPE!)
+						i(45091),	-- Plans: Treads of Destiny (RECIPE!)
+					},
+				}),
 				ach(12312),	-- Dwarfageddon
 				cr(33113, e(1637, {	-- Flame Leviathan
 					ach(12320, {	-- Orbit-uary
@@ -595,6 +783,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45134),	-- Plated Leggings of Ruination
 						i(45135),	-- Boots of Fiery Resolution
 						i(45297),	-- Shimmering Seal
+						i(45296, {	-- Twirling Blades (10 Man, ilvl 232)
+							["timeline"] = { "removed 5.0.4" },
+						}),
 					}),
 					ach(12319),	-- Nuked from Orbit
 					ach(12318),	-- Orbital Devastation
@@ -630,6 +821,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45112),	-- The Leviathan's Coil
 					i(45292),	-- Energy Siphon
 					i(45286),	-- Pyrite Infuser
+					i(45086, {	-- Rising Sun (25 Man)
+						["timeline"] = { "removed 5.0.4" },
+					}),
+					i(45114, {	-- Steamcaller's Totem
+						["timeline"] = { "removed 5.0.4" },
+					}),
 				})),
 				cr(33118, e(1638, {	-- Ignis the Furnace Master
 					ach(12324),	-- Hot Pocket
@@ -662,6 +859,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45168),	-- Pyrelight Circle
 					i(45313),	-- Furnace Stone
 					i(45158),	-- Heart of Iron
+					i(45169, {	-- Totem of the Dancing Flame
+						["timeline"] = { "removed 5.0.4" },
+					}),
 				})),
 				cr(33186, e(1639, {	-- Razorscale
 					ach(12321),	-- A Quick Shave
@@ -692,6 +892,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45303),	-- Band of Draconic Guile
 					i(45308),	-- Eye of the Broodmother
 					i(45148),	-- Living Flame
+					i(45510, {	-- Libram of Discord
+						["timeline"] = { "removed 5.0.4" },
+					}),
+					i(45144, {	-- Sigil of Deflection
+						["timeline"] = { "removed 5.0.4" },
+					}),
 				})),
 				cr(33293, e(1640, {	-- XT-002 Deconstructor
 					ach(12330, {	-- Heartbreaker
@@ -733,6 +939,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45250),	-- Crazed Construct Ring
 					i(45675),	-- Power Enhancing Loop
 					i(45247),	-- Signet of the Earthshaker
+					i(45254, {	-- Sigil of the Vengeful Heart
+						["timeline"] = { "removed 5.0.4" },
+					}),
+					i(45255, {	-- Thunderfall Totem
+						["timeline"] = { "removed 5.0.4" },
+					}),
 				})),
 				cr(32871, e(1650, {	-- Algalon the Observer
 					ach(12399, {	-- Observed
@@ -892,6 +1104,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45702),	-- Emerald Signet Ring
 					i(45703),	-- Spark of Hope
 					i(45263),	-- Wrathstone
+					i(45270, {	-- Idol of the Crying Wind
+						["timeline"] = { "removed 5.0.4" },
+					}),
 				})),
 				cr(33515, e(1643, {	-- Auriaya
 					ach(12341),	-- Crazy Cat Lady
@@ -923,6 +1138,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45326),	-- Platinum Band of the Aesir
 					i(45438),	-- Ring of the Faithful Servant
 					i(45866),	-- Elemental Focus Stone
+					i(45436, {	-- Libram of the Resolute
+						["timeline"] = { "removed 5.0.4" },
+					}),
 				})),
 				cr(32845, e(1644, {	-- Hodir
 					ach(12343),	-- Cheese the Freeze
@@ -1153,6 +1371,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45503),	-- Metallic Loop of the Sufferer
 					i(45515),	-- Ring of the Vacant Eye
 					i(45507),	-- The General's Heart
+					i(45509, {	-- Idol of the Corruptor
+						["timeline"] = { "removed 5.0.4" },
+					}),
+					i(45145, {	-- Libram of the Sacred Shield
+						["timeline"] = { "removed 5.0.4" },
+					}),
 				})),
 				cr(33288, e(1649, {	-- Yogg-Saron
 					ach(12388, {	-- Alone in the Darkness

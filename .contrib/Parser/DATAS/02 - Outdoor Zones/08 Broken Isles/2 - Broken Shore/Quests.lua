@@ -427,7 +427,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 			}),
 			q(46773, {	-- The Command Center
-				["sourceQuests"] = { 46245 },	-- Begin Construction (probably?  i didn't pick it up until after doing 'defending broken isles' and finishing my class campaign)
+				["sourceQuest"] = 46245,	-- Begin Construction
 				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["coord"] = { 44.4, 63.1, BROKEN_SHORE },
 			}),
@@ -449,7 +449,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(46772, {	-- The Mage Tower
-				["sourceQuests"] = { 46773 },	-- The Command Center
+				["sourceQuest"] = 46245,	-- Begin Construction
 				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["coord"] = { 44.4, 63.1, BROKEN_SHORE },
 			}),

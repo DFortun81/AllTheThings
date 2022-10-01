@@ -25,7 +25,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			ach(122),		-- Expert Cook
 			ach(121),		-- Journeyman Cook
 		}),
-		ach(3296),		-- Cooking with Style
 		ach(9500),		-- Draenor Cook
 		ach(10593),		-- Everything Tastes Better
 		ach(1563,  {	-- Hail to the Chef
@@ -89,26 +88,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 				crit(4, { ["cost"] = { { "i", 43490, 1 } } } ),		-- Tasty Cupcake
 			}),
 			ach(1781),		-- Critter Gitter
-			ach(1782, {		-- Our Daily Bread (A)
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					crit(1),	-- Infused Mushroom Meatloaf
-					crit(2),	-- Convention at the Legerdemain
-					crit(3),	-- Sewer Stew
-					crit(4),	-- Cheese for Glowergold
-					crit(5),	-- Mustard Dogs!
-				},
-			}),
-			ach(1783, {		-- Our Daily Bread (H)
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					crit(1),	-- Infused Mushroom Meatloaf
-					crit(2),	-- Convention at the Legerdemain
-					crit(3),	-- Sewer Stew
-					crit(4),	-- Cheese for Glowergold
-					crit(5),	-- Mustard Dogs!
-				},
-			}),
 			ach(1785, {		-- Dinner Impossible
 				crit(1),		-- Alterac Valley
 				crit(2),		-- Arathi Basin

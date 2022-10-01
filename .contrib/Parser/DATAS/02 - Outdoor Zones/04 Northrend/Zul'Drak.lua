@@ -21,20 +21,12 @@ root("Zones", {
 					})),
 					explorationAch(1267),	-- Explore Zul'Drak
 					ach(1596, {	-- Guru of Drakuru
-						["collectible"] = false,
-						["groups"] = {
-							crit(2, {	-- Betrayal
-								["sourceQuest"] = 12713,	-- Betrayal
-							}),
-						},
-					}),
-					ach(1576, {	-- Of Blood and Anguish
-						["collectible"] = false,
-						["groups"] = {
-							crit(2, {	-- The Champion of Anguish
-								["sourceQuest"] = 12948,	-- The Champion of Anguish
-							}),
-						},
+						crit(5805, {	-- Betrayal
+							["_quests"] = { 12713 },	-- Betrayal
+						}),
+						crit(5804, {	-- Cleansing Drak'Tharon
+							["_quests"] = { 12238 },	-- Cleansing Drak'Tharon
+						}),
 					}),
 					ach(36, {	-- The Empire of Zul'Drak
 						-- #if ANYCLASSIC
@@ -140,18 +132,23 @@ root("Zones", {
 				-- #endif
 				n(FLIGHT_PATHS, {
 					fp(305, {	-- Ebon Watch
+						["cr"] = 28615,	-- Baneflight <Flight Master>
 						["coord"] = { 14.0, 73.6, ZULDRAK },
 					}),
 					fp(331, {	-- Gundrak
+						["cr"] = 30569,	-- Rafae <Flight Master>
 						["coord"] = { 70.4, 23.2, ZULDRAK },
 					}),
 					fp(306, {	-- Light's Breach
+						["cr"] = 28618,	-- Danica Saint <Flight Master>
 						["coord"] = { 32.2, 74.4, ZULDRAK },
 					}),
 					fp(304, {	-- The Argent Stand
+						["cr"] = 28623,	-- Gurric <Flight Master>
 						["coord"] = { 41.4, 64.4, ZULDRAK },
 					}),
 					fp(307, {	-- Zim'Torga
+						["cr"] = 28624,	-- Maaka <Flight Master>
 						["coord"] = { 60.0, 56.8, ZULDRAK },
 					}),
 				}),
@@ -336,7 +333,7 @@ root("Zones", {
 						["qg"] = 28503,	-- Overlord Drakuru
 						["altQuests"] = { 12663 },	-- Reunited
 						["description"] = "Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",
-						["sourceQuest"] = 12649,	-- Suit Up!
+						["sourceQuest"] = 12648,	-- Dressing Down
 					}),
 					q(12633, {	-- Darkness Calling
 						["provider"] = { "i", 38673 },	-- Writhing Choker
@@ -375,7 +372,7 @@ root("Zones", {
 					q(12652, {	-- Feedin' Da Goolz
 						["coord"] = { 19.8, 75.4, ZULDRAK },
 						["qg"] = 28589,	-- Gristlegut
-						["sourceQuest"] = 12643,	-- Silver Lining
+						["sourceQuest"] = 12649,	-- Suit Up!
 						["description"] = "Must be on |cFFFFD700Suit Up!|r to see this quest.",
 						["groups"] = {
 							i(39812),	-- Soiled Trousers
@@ -476,9 +473,9 @@ root("Zones", {
 						["timeline"] = { "added 3.3.0.10772", "removed 4.3.0.14732" },
 					}),
 					q(29836, {	-- Just Checkin'
-						["coord"] = { 59.9, 57.9, ZULDRAK },
 						["qg"] = 28527,	-- Chronicler To'kini
-						["altQuests"] = { 29833 },	-- Unfinished Business
+						["coord"] = { 59.9, 57.9, ZULDRAK },
+						["timeline"] = { "added 4.3.0.14732" },
 					}),
 					q(12630, {	-- Kickin' Nass and Takin' Manes
 						["coord"] = { 14.0, 73.8, ZULDRAK },
@@ -1008,11 +1005,17 @@ root("Zones", {
 						["qg"] = 28062,	-- Hexer Ubungo
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
 					}),
-					q(29833, {	-- Unfinished Business
-						["coord"] = { 60.2, 57.7, ZULDRAK },
+					q(13097, {	-- Unfinished Business
 						["qg"] = 28401,	-- Har'koa
-						["sourceQuest"] = 12730,	-- Convocation at Zol'Heb -- TODO: verify
-						["altQuests"] = { 29836 },	-- Just Checkin'
+						["sourceQuest"] = 12730,	-- Convocation at Zol'Heb
+						["coord"] = { 60.2, 57.7, ZULDRAK },
+						["timeline"] = { "removed 4.3.0.14732" },
+					}),
+					q(29833, {	-- Unfinished Business
+						["qg"] = 28401,	-- Har'koa
+						["sourceQuest"] = 12730,	-- Convocation at Zol'Heb
+						["coord"] = { 60.2, 57.7, ZULDRAK },
+						["timeline"] = { "added 4.3.0.14732" },
 					}),
 					q(12857, {	-- Wanted: Ragemane's Flipper
 						["coord"] = { 32.2, 75.6, ZULDRAK },
@@ -1142,9 +1145,23 @@ root("Zones", {
 				}),
 				n(ZONE_DROPS, {
 					i(48116, {	-- Gundrak Hatchling
+						["coords"] = {
+							{ 72.6, 27.8, ZULDRAK },
+							{ 78.2, 16.6, ZULDRAK },
+							{ 87.0, 26.6, ZULDRAK },
+							{ 81.6, 31.6, ZULDRAK },
+							{ 75.2, 38.6, ZULDRAK },
+						},
 						["cr"] = 29334,	-- Gundrak Raptor
 					}),
 					i(41120, {	-- Plans: Reinforced Cobalt Legplates (RECIPE!)
+						["coords"] = {
+							{ 78.8, 20.2, ZULDRAK },
+							{ 81.6, 24.8, ZULDRAK },
+							{ 78.6, 33.0, ZULDRAK },
+							{ 78.0, 27.0, ZULDRAK },
+							{ 73.6, 23.8, ZULDRAK },
+						},
 						["cr"] = 29235,	-- Gundrak Savage
 					}),
 					i(38660, {	-- Unliving Choker

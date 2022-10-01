@@ -7,7 +7,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(UNGORO_CRATER, {
 			n(RARES, {
-				n(14461,  {	-- Baron Charr
+				n(14461, {	-- Baron Charr
 					["description"] = "This rare was only available during the Elemental Invasions.",
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

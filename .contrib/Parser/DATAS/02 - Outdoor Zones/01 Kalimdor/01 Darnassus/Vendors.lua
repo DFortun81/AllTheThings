@@ -15,7 +15,7 @@ _.Zones =
 						i(73839),	-- Swift Mountain Horse (MOUNT!)
 					},
 				}),
-				n(4168,  {	-- Elynna <Tailoring Supplies>
+				n(4168, {	-- Elynna <Tailoring Supplies>
 					["coord"] = { 60.4, 36.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
@@ -33,7 +33,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(4223,  {	-- Fyldan <Cooking Supplies>
+				n(4223, {	-- Fyldan <Cooking Supplies>
 					["coord"] = { 49.6, 36.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
@@ -44,7 +44,7 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
-				n(4232,  {	-- Glorandiir <Axe Merchant>
+				n(4232, {	-- Glorandiir <Axe Merchant>
 					["coord"] = { 60.2, 62.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -53,7 +53,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(4173,  {	-- Landria <Bow Merchant>
+				n(4173, {	-- Landria <Bow Merchant>
 					["coord"] = { 59.6, 67.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -80,7 +80,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(4730,  {	-- Lelanai <Saber Handler>
+				n(4730, {	-- Lelanai <Saber Handler>
 					-- #if AFTER CATA
 					["coord"] = { 42.6, 32.8, DARNASSUS },
 					-- #else
@@ -127,7 +127,7 @@ _.Zones =
 						i(67526),	-- Darnassian Satchel
 					},
 				}),
-				n(4229,  {	-- Mythrin'dir <Trade Supplies>
+				n(4229, {	-- Mythrin'dir <Trade Supplies>
 					["coord"] = { 58.2, 35.0, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -144,7 +144,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(4225,  {	-- Saenorion <Leatherworking Supplies>
+				n(4225, {	-- Saenorion <Leatherworking Supplies>
 					["coord"] = { 60.0, 37.2, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
@@ -166,7 +166,7 @@ _.Zones =
 						{"sub", "common_vendor", 5193}, -- Rebecca Laughlin <Tabard Designer>
 					},
 				}),
-				n(8665,  {	-- Shylenai <Owl Trainer>
+				n(8665, {	-- Shylenai <Owl Trainer>
 					["coord"] = { 64.0, 53.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -181,7 +181,7 @@ _.Zones =
 						{"sub", "common_recipes_vendor", 50482}, -- Marith Lazuria <Jewelcrafting Supplies>
 					},
 				}),
-				n(4235,  {	-- Turian <Thrown Weapons Merchant>
+				n(4235, {	-- Turian <Thrown Weapons Merchant>
 					["coord"] = { 59.6, 67.4, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -190,7 +190,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(4226,  {	-- Ulthir <Alchemy Supplies>
+				n(4226, {	-- Ulthir <Alchemy Supplies>
 					["coord"] = { 54.6, 39.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -203,7 +203,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(13477)),	-- Recipe: Superior Mana Potion
 					},
 				}),
-				n(4228,  {	-- Vaean <Enchanting Supplies>
+				n(4228, {	-- Vaean <Enchanting Supplies>
 					["coord"] = { 56.6, 31.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = { { "sub", "common_recipes_vendor", 1318 } }, -- Jessara Cordell <Enchanting Supplies>
@@ -214,7 +214,7 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
-				n(4175,  {	-- Vinasia <Cloth Armor Merchant>
+				n(4175, {	-- Vinasia <Cloth Armor Merchant>
 					["coord"] = { 57.8, 71.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

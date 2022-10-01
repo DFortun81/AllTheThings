@@ -158,6 +158,21 @@ root("Zones", {
 						},
 						-- #endif
 					}),
+					ach(1007, {	-- The Wyrmrest Accord
+						-- #if ANYCLASSIC
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1091); end]],
+						-- #endif
+					}),
+					ach(949, {	-- Tuskarrmageddon
+						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },
+						-- #if ANYCLASSIC
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1073); end]],
+						-- #endif
+					}),
 					ach(547, {	-- Veteran of the Wrathgate
 						["sourceQuests"] = {
 							12499,	-- Return to Angrathar (A)
@@ -189,27 +204,41 @@ root("Zones", {
 				}),
 				n(FLIGHT_PATHS, {
 					fp(256, {	-- Agmar's Hammer
+						["cr"] = 26566,	-- Narzun Skybreaker <Wind Rider Master>
 						["coord"] = { 37.4, 45.6, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(251, {	-- Fordragon Hold
+						["cr"] = 26877,	-- Derek Rammel <Gryphon Master>
 						["coord"] = { 39.4, 25.8, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(260, {	-- Kor'kron Vanguard
+						["cr"] = 26850,	-- Numo Spiritbreeze <Wind Rider Master>
 						["coord"] = { 43.8, 16.8, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(294, {	-- Moa'ki
+						["cr"] = 28196,	-- Cid Flounderfix <Flight Master>
 						["coord"] = { 48.4, 74.4, DRAGONBLIGHT },
 					}),
 					fp(247, {	-- Stars' Rest
+						["cr"] = 26881,	-- Palena Silvercloud <Hippogryph Master>
 						["coord"] = { 29.2, 55.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(254, {	-- Venomspite
+						["cr"] = 26845,	-- Junter Weiss <Bat Handler>
 						["coord"] = { 76.4, 62.2, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(244, {	-- Wintergarde Keep
+						["cr"] = 26878,	-- Rodney Wells <Gryphon Master>
 						["coord"] = { 77.0, 49.8, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(252, {	-- Wyrmrest Temple
+						["cr"] = 26851,	-- Nethestrasz <Flight Master>
 						["coord"] = { 60.2, 51.4, DRAGONBLIGHT },
 					}),
 				}),
@@ -525,9 +554,7 @@ root("Zones", {
 						["coord"] = { 59.2, 54.3, DRAGONBLIGHT },
 						["isDaily"] = true,
 						["groups"] = {
-							ach(1277, {	-- Rapid Defense
-								["sourceQuest"] = 12372,	-- Defending Wyrmrest Temple
-							}),
+							ach(1277),	-- Rapid Defense
 						},
 					}),
 					q(12265, {	-- Defiling the Defilers
@@ -898,6 +925,9 @@ root("Zones", {
 							i(38135),	-- Mace of the Fallen Raven Priest
 							i(38176),	-- Stronghold Battlemace
 							i(38134),	-- Bloodtinged Spellblade
+							i(38295, {	-- Idol of the Wastes
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(12470, {	-- Mystery of the Infinite
@@ -1622,6 +1652,9 @@ root("Zones", {
 							i(38135),	-- Mace of the Fallen Raven Priest
 							i(38176),	-- Stronghold Battlemace
 							i(38134),	-- Bloodtinged Spellblade
+							i(38295, {	-- Idol of the Wastes
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(12188, {	-- The Forsaken Blight and You: How Not to Die
@@ -2219,6 +2252,10 @@ root("Zones", {
 						["timeline"] = { "added 3.3.0" },
 					}),
 					i(41124, {	-- Plans: Reinforced Cobalt Shoulders (RECIPE!)
+						["coords"] = {
+							{ 86.4, 40.4, DRAGONBLIGHT },
+							{ 73.6, 25.0, DRAGONBLIGHT },
+						},
 						["crs"] = { 27333 },	-- Onslaught Mason
 					}),
 					i(120137, {	-- Tome of Polymorph: Polar Bear Cub

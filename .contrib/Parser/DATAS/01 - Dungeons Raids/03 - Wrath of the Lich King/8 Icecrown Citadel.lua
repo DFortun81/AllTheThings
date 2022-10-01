@@ -21,16 +21,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 						4530,	-- The Frozen Throne (10 player)
 					}},
 				}),
-				ach(4636, {	-- Heroic: Fall of the Lich King (10 player)
-					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
-						4628,	-- Heroic: Storming the Citadel (10 player)
-						4629,	-- Heroic: The Plagueworks (10 player)
-						4630,	-- Heroic: The Crimson Hall (10 player)
-						4631,	-- Heroic: The Frostwing Halls (10 player)
-						4583,	-- Bane of the Fallen King
-					}},
-				}),
 				ach(4608, {	-- Fall of the Lich King (25 player)
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -39,6 +29,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 						4606,	-- The Crimson Hall (25 player)
 						4607,	-- The Frostwing Halls (25 player)
 						4597,	-- The Frozen Throne (25 player)
+					}},
+				}),
+				ach(4636, {	-- Heroic: Fall of the Lich King (10 player)
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						4628,	-- Heroic: Storming the Citadel (10 player)
+						4629,	-- Heroic: The Plagueworks (10 player)
+						4630,	-- Heroic: The Crimson Hall (10 player)
+						4631,	-- Heroic: The Frostwing Halls (10 player)
+						4583,	-- Bane of the Fallen King
 					}},
 				}),
 				ach(4637, {	-- Heroic: Fall of the Lich King (25 player)
@@ -51,340 +51,19 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 						4584,	-- The Light of Dawn
 					}},
 				}),
+				ach(4598, {	-- The Ashen Verdict
+					-- #if ANYCLASSIC
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1156); end]],
+					-- #endif
+					["groups"] = {
+						title(141),	-- <Name> of the Ashen Verdict
+					},
+				}),
 			}),
-			faction(1156, {	-- The Ashen Verdict
-				["achievementID"] = 4598,	-- The Ashen Verdict (Achievement)
-				["groups"] = {
-					title(141),	-- Of the Ashen Verdict
-					n(37687, {	-- Alchemist Finklestein
-						i(49959, {	-- Pattern: Bladeborn Leggings
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49958, {	-- Pattern: Blessed Cenarion Boots
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49954, {	-- Pattern: Deathfrost Boots
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49965, {	-- Pattern: Draconic Bonesplinter Legguards
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49963, {	-- Pattern: Earthsoul Boots
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49961, {	-- Pattern: Footpads of Impending Death
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49953, {	-- Pattern: Leggings of Woven Death
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49957, {	-- Pattern: Legwraps of Unleashed Nature
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49962, {	-- Pattern: Lightning-Infused Leggings
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49955, {	-- Pattern: Lightweave Leggings
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49966, {	-- Pattern: Rock-Steady Treads
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49956, {	-- Pattern: Sandals of Consecration
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49974, {	-- Plans: Boots of Kingly Upheaval (RECIPE!)
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49972, {	-- Plans: Hellfrozen Bonegrinders (RECIPE!)
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49971, {	-- Plans: Legplates of Painful Death (RECIPE!)
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49973, {	-- Plans: Pillars of Might (RECIPE!)
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49970, {	-- Plans: Protectors of Life (RECIPE!)
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-						i(49969, {	-- Plans: Puresteel Legplates (RECIPE!)
-							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						}),
-					}),
-					q(24815, {	-- Choose Your Path
-						["minReputation"] = { 1156, FRIENDLY },	-- The Ashen Verdict
-						["description"] = "If the quest does not appear when you hit Friendly, you may have to relog.",
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["groups"] = {
-							i(50375, {	-- Ashen Band of Courage
-								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-							}),
-							i(50377, {	-- Ashen Band of Destruction
-								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-							}),
-							i(52569, {	-- Ashen Band of Might
-								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-							}),
-							i(50376, {	-- Ashen Band of Vengeance
-								["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-							}),
-							i(50378, {	-- Ashen Band of Wisdom
-								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-							}),
-						},
-					}),
-				-- Quest Chain: Path of Courage
-					q(24827, {	-- Path of Courage (Honored)
-						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
-						["sourceQuest"] = 24815,	-- Choose Your Path
-						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["groups"] = {
-							i(50388, {	-- Ashen Band of Greater Courage
-								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-							}),
-						},
-					}),
-					q(24834, {	-- Path of Courage (Revered)
-						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
-						["sourceQuest"] = 24827,	-- Path of Courage (Honored)
-						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["groups"] = {
-							i(50403, {	-- Ashen Band of Unmatched Courage
-								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-							}),
-						},
-					}),
-					q(24835, {	-- Path of Courage (Exalted)
-						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
-						["sourceQuest"] = 24834,	-- Path of Courage (Revered)
-						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["groups"] = {
-							i(50404, {	-- Ashen Band of Endless Courage
-								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-							}),
-						},
-					}),
-				--	Quest Chain: Path of Destruction
-					q(24828, {	-- Path of Destruction (Honored)
-						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
-						["sourceQuest"] = 24815,	-- Choose Your Path
-						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["groups"] = {
-							i(50384, {	-- Ashen Band of Greater Destruction
-								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-							}),
-						},
-					}),
-					q(24823, {	-- Path of Destruction (Revered)
-						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
-						["sourceQuest"] = 24828,	-- Path of Destruction [Honored]
-						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["groups"] = {
-							i(50397, {	-- Ashen Band of Unmatched Destruction
-								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-							}),
-						},
-					}),
-					q(24829, {	-- Path of Destruction (Exalted)
-						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
-						["sourceQuest"] = 24823,	-- Path of Destruction (Revered)
-						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["groups"] = {
-							i(50398, {	-- Ashen Band of Endless Destruction
-								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-							}),
-						},
-					}),
-				--	Quest Chain: Path of Might
-					q(25239, {	-- Path of Might (Honored)
-						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
-						["sourceQuest"] = 24815,	-- Choose Your Path
-						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["groups"] = {
-							i(52570, {	-- Ashen Band of Greater Might
-								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-							}),
-						},
-					}),
-					q(25240, {	-- Path of Might [Revered]
-						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["sourceQuest"] = 25239,	-- Path of Might [Honored]
-						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-						["groups"] = {
-							i(52571, {	-- Ashen Band of Unmatched Might
-								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-							}),
-						},
-					}),
-					q(25242, {	-- Path of Might [Exalted]
-						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["sourceQuest"] = 25240,	-- Path of Might [Revered]
-						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-						["groups"] = {
-							i(52572, {	-- Ashen Band of Endless Might
-								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-							}),
-						},
-					}),
-				--	Quest Chain: Path of Vengeance
-					q(24826, {	-- Path of Vengeance [Honored]
-						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["sourceQuest"] = 24815,	-- Choose Your Path
-						["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-						["groups"] = {
-							i(50387, {	-- Ashen Band of Greater Vengeance
-								["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-							}),
-						},
-					}),
-					q(24832, {	-- Path of Vengeance [Revered]
-						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["sourceQuest"] = 24826,	-- Path of Vengeance [Honored]
-						["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-						["groups"] = {
-							i(50401, {	-- Ashen Band of Unmatched Vengeance
-								["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-							}),
-						},
-					}),
-					q(24833, {	-- Path of Vengeance [Exalted]
-						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["sourceQuest"] = 24832,	-- Path of Vengeance [Revered]
-						["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-						["groups"] = {
-							i(50402, {	-- Ashen Band of Endless Vengeance
-								["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-							}),
-						},
-					}),
-				--	Quest Chain: Path of Wisdom
-					q(24825, {	-- Path of Wisdom [Honored]
-						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["sourceQuest"] = 24815,	-- Choose Your Path
-						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-						["groups"] = {
-							i(50386, {	-- Ashen Band of Greater Wisdom
-								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-							}),
-						},
-					}),
-					q(24830, {	-- Path of Wisdom [Revered]
-						["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["sourceQuest"] = 24825,	-- Path of Wisdom [Honored]
-						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-						["groups"] = {
-							i(50399, {	-- Ashen Band of Unmatched Wisdom
-								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-							}),
-						},
-					}),
-					q(24831, {	-- Path of Wisdom [Exalted]
-						["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-						["sourceQuest"] = 24830,	-- Path of Wisdom [Revered]
-						["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-						["groups"] = {
-							i(50400, {	-- Ashen Band of Endless Wisdom
-								["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
-							}),
-						},
-					}),
-					q(24819, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(24820, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(24821, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(24822, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(24836, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(24837, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(24838, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(24839, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(24840, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(24841, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(24842, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(24843, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(24844, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(24845, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(24846, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(24847, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(25246, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(25247, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(25248, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-					q(25249, { -- A Change of Heart
-						["isRepeatable"] = true,
-						["provider"] = { "n", 38316 },	-- Ormus the Penitent
-					}),
-				},
+			n(FACTIONS, {
+				faction(1156),	-- The Ashen Verdict
 			}),
 			n(LEGENDARY_QUESTLINE, {
 				["description"] = "These quests can only be completed on 25-Man Normal or Heroic difficulty.",
@@ -529,23 +208,279 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					}),
 				},
 			}),
-			n(37184, {	-- Zafod Boombox
-				-- Note!! Putting him here rather than 4 times for an unlearnable shirt
-				i(49278, {	-- Goblin Rocket Pack
-					-- #if NOT ANYCLASSIC
-					["collectible"] = false,	-- We can't collect it so we don't want it to hurt our numbers
-					["u"] = 15,			-- Unlearnable Filter
-					-- #endif
+			n(QUESTS, {
+				q(24815, {	-- Choose Your Path
+					["minReputation"] = { 1156, FRIENDLY },	-- The Ashen Verdict
+					["description"] = "If the quest does not appear when you hit Friendly, you may have to relog.",
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["groups"] = {
+						i(50375, {	-- Ashen Band of Courage
+							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+						}),
+						i(50377, {	-- Ashen Band of Destruction
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+						}),
+						i(52569, {	-- Ashen Band of Might
+							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+						}),
+						i(50376, {	-- Ashen Band of Vengeance
+							["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
+						}),
+						i(50378, {	-- Ashen Band of Wisdom
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+						}),
+					},
 				}),
-			}),
-			n(ZONE_DROPS, {
-				i(50451),	-- Belt of the Lonely Noble
-				i(50447),	-- Harbinger's Bone Band
-				i(50450),	-- Leggings of Dubious Charms
-				i(50453),	-- Ring of Rotting Sinew
-				i(50444),	-- Rowan's Rifle of Silver Bullets
-				i(50449),	-- Stiffened Corpse Shoulderpads
-				i(50452),	-- Wodin's Lucky Necklace
+			-- Quest Chain: Path of Courage
+				q(24827, {	-- Path of Courage (Honored)
+					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+					["sourceQuest"] = 24815,	-- Choose Your Path
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["groups"] = {
+						i(50388, {	-- Ashen Band of Greater Courage
+							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+						}),
+					},
+				}),
+				q(24834, {	-- Path of Courage (Revered)
+					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+					["sourceQuest"] = 24827,	-- Path of Courage (Honored)
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["groups"] = {
+						i(50403, {	-- Ashen Band of Unmatched Courage
+							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+						}),
+					},
+				}),
+				q(24835, {	-- Path of Courage (Exalted)
+					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+					["sourceQuest"] = 24834,	-- Path of Courage (Revered)
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["groups"] = {
+						i(50404, {	-- Ashen Band of Endless Courage
+							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+						}),
+					},
+				}),
+			--	Quest Chain: Path of Destruction
+				q(24828, {	-- Path of Destruction (Honored)
+					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+					["sourceQuest"] = 24815,	-- Choose Your Path
+					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["groups"] = {
+						i(50384, {	-- Ashen Band of Greater Destruction
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+						}),
+					},
+				}),
+				q(24823, {	-- Path of Destruction (Revered)
+					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+					["sourceQuest"] = 24828,	-- Path of Destruction [Honored]
+					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["groups"] = {
+						i(50397, {	-- Ashen Band of Unmatched Destruction
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+						}),
+					},
+				}),
+				q(24829, {	-- Path of Destruction (Exalted)
+					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+					["sourceQuest"] = 24823,	-- Path of Destruction (Revered)
+					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["groups"] = {
+						i(50398, {	-- Ashen Band of Endless Destruction
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+						}),
+					},
+				}),
+			--	Quest Chain: Path of Might
+				q(25239, {	-- Path of Might (Honored)
+					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+					["sourceQuest"] = 24815,	-- Choose Your Path
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["groups"] = {
+						i(52570, {	-- Ashen Band of Greater Might
+							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+						}),
+					},
+				}),
+				q(25240, {	-- Path of Might [Revered]
+					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["sourceQuest"] = 25239,	-- Path of Might [Honored]
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+					["groups"] = {
+						i(52571, {	-- Ashen Band of Unmatched Might
+							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+						}),
+					},
+				}),
+				q(25242, {	-- Path of Might [Exalted]
+					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["sourceQuest"] = 25240,	-- Path of Might [Revered]
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+					["groups"] = {
+						i(52572, {	-- Ashen Band of Endless Might
+							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+						}),
+					},
+				}),
+			--	Quest Chain: Path of Vengeance
+				q(24826, {	-- Path of Vengeance [Honored]
+					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["sourceQuest"] = 24815,	-- Choose Your Path
+					["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
+					["groups"] = {
+						i(50387, {	-- Ashen Band of Greater Vengeance
+							["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
+						}),
+					},
+				}),
+				q(24832, {	-- Path of Vengeance [Revered]
+					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["sourceQuest"] = 24826,	-- Path of Vengeance [Honored]
+					["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
+					["groups"] = {
+						i(50401, {	-- Ashen Band of Unmatched Vengeance
+							["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
+						}),
+					},
+				}),
+				q(24833, {	-- Path of Vengeance [Exalted]
+					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["sourceQuest"] = 24832,	-- Path of Vengeance [Revered]
+					["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
+					["groups"] = {
+						i(50402, {	-- Ashen Band of Endless Vengeance
+							["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
+						}),
+					},
+				}),
+			--	Quest Chain: Path of Wisdom
+				q(24825, {	-- Path of Wisdom [Honored]
+					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["sourceQuest"] = 24815,	-- Choose Your Path
+					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+					["groups"] = {
+						i(50386, {	-- Ashen Band of Greater Wisdom
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+						}),
+					},
+				}),
+				q(24830, {	-- Path of Wisdom [Revered]
+					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["sourceQuest"] = 24825,	-- Path of Wisdom [Honored]
+					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+					["groups"] = {
+						i(50399, {	-- Ashen Band of Unmatched Wisdom
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+						}),
+					},
+				}),
+				q(24831, {	-- Path of Wisdom [Exalted]
+					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+					["sourceQuest"] = 24830,	-- Path of Wisdom [Revered]
+					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+					["groups"] = {
+						i(50400, {	-- Ashen Band of Endless Wisdom
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+						}),
+					},
+				}),
+				q(24819, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(24820, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(24821, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(24822, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(24836, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(24837, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(24838, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(24839, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(24840, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(24841, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(24842, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(24843, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(24844, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(24845, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(24846, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(24847, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(25246, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(25247, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(25248, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
+				q(25249, { -- A Change of Heart
+					["isRepeatable"] = true,
+					["provider"] = { "n", 38316 },	-- Ormus the Penitent
+				}),
 			}),
 			n(VENDORS, {
 				n(37999, {	-- Alana Moonstrike <Druid Armor>
@@ -747,6 +682,62 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							},
 						}),
 					},
+				}),
+				n(37687, {	-- Alchemist Finklestein
+					i(49959, {	-- Pattern: Bladeborn Leggings
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49958, {	-- Pattern: Blessed Cenarion Boots
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49954, {	-- Pattern: Deathfrost Boots
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49965, {	-- Pattern: Draconic Bonesplinter Legguards
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49963, {	-- Pattern: Earthsoul Boots
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49961, {	-- Pattern: Footpads of Impending Death
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49953, {	-- Pattern: Leggings of Woven Death
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49957, {	-- Pattern: Legwraps of Unleashed Nature
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49962, {	-- Pattern: Lightning-Infused Leggings
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49955, {	-- Pattern: Lightweave Leggings
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49966, {	-- Pattern: Rock-Steady Treads
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49956, {	-- Pattern: Sandals of Consecration
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49974, {	-- Plans: Boots of Kingly Upheaval (RECIPE!)
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49972, {	-- Plans: Hellfrozen Bonegrinders (RECIPE!)
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49971, {	-- Plans: Legplates of Painful Death (RECIPE!)
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49973, {	-- Plans: Pillars of Might (RECIPE!)
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49970, {	-- Plans: Protectors of Life (RECIPE!)
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(49969, {	-- Plans: Puresteel Legplates (RECIPE!)
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
 				}),
 				n(37688, {	-- Crusader Grimtong <Warrior Armor>
 					i(51214, {	-- Sanctified Ymirjar Lord's Battleplate (N)
@@ -2550,6 +2541,24 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					},
 				}),
 			}),
+			n(ZONE_DROPS, {
+				i(50451),	-- Belt of the Lonely Noble
+				i(50447),	-- Harbinger's Bone Band
+				i(50450),	-- Leggings of Dubious Charms
+				i(50453),	-- Ring of Rotting Sinew
+				i(50444),	-- Rowan's Rifle of Silver Bullets
+				i(50449),	-- Stiffened Corpse Shoulderpads
+				i(50452),	-- Wodin's Lucky Necklace
+			}),
+			n(37184, {	-- Zafod Boombox
+				-- Note!! Putting him here rather than 4 times for an unlearnable shirt
+				i(49278, {	-- Goblin Rocket Pack
+					-- #if NOT ANYCLASSIC
+					["collectible"] = false,	-- We can't collect it so we don't want it to hurt our numbers
+					["u"] = 15,			-- Unlearnable Filter
+					-- #endif
+				}),
+			}),
 			d(3, {	-- 10-Player (Normal)
 				n(-393, {	-- Storming the Citadel
 					ach(4531, {	-- Storming the Citadel (10 player)
@@ -2690,6 +2699,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50858),	-- Plague-Soaked Leather Leggings
 							i(50812),	-- Taldron's Long Neglected Boots
 							i(50986),	-- Signet of Putrefaction
+							i(50999, {	-- Gluth's Fetching Knife
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					e(1630, {	-- Rotface
@@ -3045,6 +3057,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(51879),	-- Flesh-Shaper's Gurney Strap
 							i(51873),	-- Shuffling Shoes
 							i(51878),	-- Rotface's Rupturing Ring
+							i(51880, {	-- Gluth's Fetching Knife
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					e(1631, {	-- Professor Putricide

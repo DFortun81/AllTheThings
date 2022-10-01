@@ -106,11 +106,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					cl(WARRIOR, ARMS, {
 						q(41105, {	-- The Sword of Kings
-							["sourceQuests"] = {
+							["sourceQuests"] = { 
 								40579,	-- Weapons of Legend
 								43949,	-- More Weapons of Legend
 								44417,	-- One More Legend
-							},
+							},	
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 96469 },	-- Odyn
 							["coord"] = { 58.3, 84.6, SKYHOLD },
 							["g"] = {
@@ -122,11 +123,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					cl(WARRIOR, FURY, {
 						q(40043, {	-- The Hunter of Heroes
-							["sourceQuests"] = {
+							["sourceQuests"] = { 
 								40579,	-- Weapons of Legend
 								43949,	-- More Weapons of Legend
 								44417,	-- One More Legend
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 96469 },	-- Odyn
 							["coord"] = { 58.3, 84.6, SKYHOLD },
 							["g"] = {
@@ -141,11 +143,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					cl(WARRIOR, PROTECTION, {
 						q(39191, {	-- Legacy of the Icebreaker
-							["sourceQuests"] = {
+							["sourceQuests"] = { 
 								40579,	-- Weapons of Legend
 								43949,	-- More Weapons of Legend
 								44417,	-- One More Legend
-							},
+							},	
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 96469 },	-- Odyn
 							["coord"] = { 58.3, 84.6, SKYHOLD },
 							["g"] = {
@@ -159,11 +162,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						}),
 					}),
 					q(44255, {	-- Axe and You Shall Receive
-						["sourceQuests"] = {
-							41105,	-- The Sword of Kings
-							40043,	-- The Hunter of Heroes
-							39191,	-- Legacy of the Icebreaker
-						},
+						["sourceQuests"] = { 40579 },	-- Weapons of Legend
 						["provider"] = { "n", 112392 },	-- Quartermaster Durnolf
 						["coord"] = { 56.2, 27.0, SKYHOLD },
 						["g"] = {
@@ -176,6 +175,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							40043,	-- The Hunter of Heroes
 							39191,	-- Legacy of the Icebreaker
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
 						["timeline"] = { "added 7.0.3", "removed 8.0.1" },
@@ -197,6 +197,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							39191,	-- Legacy of the Icebreaker
 							-- #ENDIF
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 100622 },	-- Danica the Reclaimer
 						["coord"] = { 59.6, 83.7, SKYHOLD },
 					}),

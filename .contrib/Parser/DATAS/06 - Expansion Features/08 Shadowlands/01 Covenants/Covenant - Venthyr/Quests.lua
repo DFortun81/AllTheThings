@@ -392,6 +392,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 					58393,	-- Strategic Executions
 				},	--
 				["provider"] = { "n", 161436 },	-- Kael'thas Sunstrider
+				["maps"] = { REVENDRETH },
 				-- no coords, is your 'pet'
 			}),
 			q(58372, {	-- Lead the Way
@@ -519,6 +520,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 					58518,	-- There's Always a Paper Trail
 				},	--
 				["provider"] = { "n", 161431 },	-- Kael'thas Sunstrider
+				["maps"] = { REVENDRETH },
 				-- no coords, is your 'pet'
 			}),
 			q(57882, {	-- Reestablishing the Household
@@ -756,6 +758,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(58518, {	-- There's Always a Paper Trail
 				["sourceQuests"] = { 58443 },	-- Continued Care of Kael'thas
 				["provider"] = { "n", 161427 },	-- Kael'thas Sunstrider
+				["maps"] = { REVENDRETH },
 				-- no coords, is your 'pet'
 			}),
 			q(60145, {	-- Third Talon Vartox
@@ -771,6 +774,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(58386, {	-- Use My Strengths
 				["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures
 				["provider"] = { "n", 161261 },	-- Kael'thas Sunstrider
+				["maps"] = { REVENDRETH },
 				-- no coords, is your 'pet'
 			}),
 			q(58325, {	-- Watcher Emil

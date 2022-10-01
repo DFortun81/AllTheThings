@@ -7,10 +7,10 @@ _.Zones =
 	m(KALIMDOR, {
 		m(WINTERSPRING, {
 			n(RARES, {
-				n(51045,  {	-- Arcanus
+				n(51045, {	-- Arcanus
 					["coord"] = { 48.0, 59.6, WINTERSPRING },
 				}),
-				n(10202,  {	-- Azurous
+				n(10202, {	-- Azurous
 					["coords"] = {
 						{ 58.0, 56.0, WINTERSPRING },
 						{ 59.8, 53.8, WINTERSPRING },
@@ -22,13 +22,13 @@ _.Zones =
 						{ 66.0, 67.8, WINTERSPRING },
 					},
 				}),
-				n(50997,  {	-- Bornak the Gorer
+				n(50997, {	-- Bornak the Gorer
 					["coords"] = {
 						{ 59.6, 17.4, WINTERSPRING },
 						{ 62.4, 24.8, WINTERSPRING },
 					},
 				}),
-				n(50995,  {	-- Bruiser
+				n(50995, {	-- Bruiser
 					["coord"] = { 65.6, 42.8, WINTERSPRING },
 				}),
 				o(240616, {	-- Frozen Supplies
@@ -39,10 +39,10 @@ _.Zones =
 						i(122224),	-- Music Roll: Mountains
 					},
 				}),
-				n(50993,  {	-- Gal'dorak
+				n(50993, {	-- Gal'dorak
 					["coord"] = { 35.6, 48.8, WINTERSPRING },
 				}),
-				n(10196,  {	-- General Colbatann
+				n(10196, {	-- General Colbatann
 					["coords"] = {
 						{ 55.8, 64.6, WINTERSPRING },
 						{ 57.2, 65.8, WINTERSPRING },
@@ -52,25 +52,25 @@ _.Zones =
 						{ 62.8, 63.6, WINTERSPRING },
 					},
 				}),
-				n(10199,  {	-- Grizzle Snowpaw
+				n(10199, {	-- Grizzle Snowpaw
 					["coord"] = { 68.6, 50.2, WINTERSPRING },
 				}),
-				n(50819,  {	-- Iceclaw
+				n(50819, {	-- Iceclaw
 					["coord"] = { 52.0, 18.8, WINTERSPRING },
 				}),
-				n(10198,  {	-- Kashoch the Reaver
+				n(10198, {	-- Kashoch the Reaver
 					["coord"] = { 61.2, 83.8, WINTERSPRING },
 				}),
-				n(50353,  {	-- Manas
+				n(50353, {	-- Manas
 					["coord"] = { 64.0, 80.0, WINTERSPRING },
 				}),
-				n(10197,  {	-- Mezzir the Howler
+				n(10197, {	-- Mezzir the Howler
 					["coord"] = { 24.2, 51.6, WINTERSPRING },
 				}),
-				n(50348,  {	-- Norissis
+				n(50348, {	-- Norissis
 					["coord"] = { 59.6, 24.0, WINTERSPRING },
 				}),
-				n(14457,  {	-- Princess Tempestria
+				n(14457, {	-- Princess Tempestria
 					["description"] = "This rare was only available during the Elemental Invasions.",
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -81,23 +81,23 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(18679)),	-- Frigid Ring
 					},
 				}),
-				n(50788,  {	-- Quetzl
+				n(50788, {	-- Quetzl
 					["coord"] = { 67.0, 83.6, WINTERSPRING },
 				}),
-				n(10200,  {	-- Rak'shiri
+				n(10200, {	-- Rak'shiri
 					["coords"] = {
 						{ 47.6, 18.2, WINTERSPRING },
 						{ 47.0, 19.6, WINTERSPRING },
 						{ 46.2, 18.6, WINTERSPRING },
 					},
 				}),
-				n(50346,  {	-- Ronak
+				n(50346, {	-- Ronak
 					["coord"] = { 59.6, 42.8, WINTERSPRING },
 				}),
-				n(10741,  {	-- Sian-Rotam
+				n(10741, {	-- Sian-Rotam
 					["coord"] = { 45.8, 17.6, WINTERSPRING },
 				}),
-				n(51028,  {	-- The Deep Tunneler
+				n(51028, {	-- The Deep Tunneler
 					["coord"] = { 50.6, 72.2, WINTERSPRING },
 				}),
 			}),

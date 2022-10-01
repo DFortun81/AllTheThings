@@ -1148,7 +1148,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 						}),
 						q(54164, {	-- The King's Death
-						-- ["sourceQuests"] = { 54282 },	-- Battle of Dazar'alor 	-- Confirmed as not a prerequisite
+							["sourceQuests"] = { 54280 },	-- Fly Out to Meet Them
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,

@@ -768,7 +768,9 @@ for key,value in pairs({
 		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
 		[-579] = "Passe do Portal Negro",							-- Dark Portal Pass
 		--TODO: [-580] = "Shadowlands Seasonal Promotions",			-- Shadowlands Seasonal Promotions
-		[-581] = "Great Push: Temporada 2",							-- The Great Push: Season 2
+		--TODO: [-581] = "TBC Classic Deluxe Edition",				-- TBC Classic Deluxe Edition
+		--TODO: [-582] = "WotLK Classic Northrend Heroic Upgrade",	-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
+		--TODO: [-583] = "WotLK Classic Northrend Epic Upgrade",	-- WotLK Classic Northrend Epic Upgrade
 	-- PvP Header
 		-- PvP Set Names
 			--TODO: [-659] = "Aspirant Gear",						-- Aspirant PvP Gear (WoD, BfA)
@@ -1270,6 +1272,7 @@ for key,value in pairs({
 	[192060] = "Bigorna de Fjorn",	-- Fjorn's Anvil
 	[192072] = "Caixote de Arpões",	-- Harpoon Crate
 	[192833] = "Posses do Brindeiro",	-- Bridenbrad's Possessions
+	[193051] = "Ovo Nerubiano do Flagelo",	-- Nerubian Scourge Egg
 	[193195] = "Cristal Pulsante",	-- Pulsing Crystal
 	[193400] = "Pilha de Bombas de Saronita",	-- Saronite Bomb Stack
 	[194032] = "Fogueira da Aliança",	-- Alliance Bonfire
@@ -1296,6 +1299,7 @@ for key,value in pairs({
 	[194389] = "Documento Roubado da Liga dos Exploradores",	-- Stolen Explorers' League Document
 	[194390] = "Documento Roubado da Liga dos Exploradores",	-- Stolen Explorers' League Document
 	[194391] = "Documento Roubado da Liga dos Exploradores",	-- Stolen Explorers' League Document
+	[194555] = "Console do Arquivo",	-- Archivum Console
 	[194714] = "Bancada de Trabalho Nojenta",	-- Disgusting Workbench
 	[195134] = "A Bomba",	-- The Bomb
 	[195431] = "Rádio do Centro de Operações",	-- Headquarters Radio
@@ -2630,6 +2634,7 @@ for key,value in pairs({
 	[303016] = "|cFFFFFFFFStep 14:|r Cascalho Comum XIII",	-- |cFFFFFFFFStep 14:|r Ordinary Pebble XIII
 	[303017] = "|cFFFFFFFFStep 13:|r Cascalho Comum XII",	-- |cFFFFFFFFStep 13:|r Ordinary Pebble XII
 	[303018] = "|cFFFFFFFFStep 12:|r Cascalho Comum XI",	-- |cFFFFFFFFStep 12:|r Ordinary Pebble XI
+	[303039] = "Saco de Grãos Curioso",	-- Curious Grain Sack
 	[307265] = "Cartaz de Procura-se",	-- Wanted Poster
 	[307277] = "Velho Garrafão",	-- Old Jug
 	[307307] = "Barril Quebrado",	-- Broken Barrel

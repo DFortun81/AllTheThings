@@ -8,9 +8,6 @@ root("Zones", {
 			["icon"] = "Interface\\Icons\\achievement_zone_boreantundra_01",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(561, {	-- D.E.H.T.A's Little P.I.T.A.
-						["sourceQuest"] = 11892,	-- The Assassination of Harold Lane
-					}),
 					explorationAch(1264),	-- Explore Borean Tundra
 					ach(33, {	-- Nothing Boring About Borean (A)
 						["races"] = ALLIANCE_ONLY,
@@ -234,28 +231,41 @@ root("Zones", {
 				}),
 				n(FLIGHT_PATHS, {
 					fp(289, {	-- Amber Ledge, Borean Tundra
+						["cr"] = 24795,	-- Surristrasz
 						["coord"] = { 45.2, 34.4, BOREAN_TUNDRA },
 					}),
 					fp(259, {	-- Bor'gorok Outpost, Borean Tundra
+						["cr"] = 26848,	-- Kimbiza <Wind Rider Master>
 						["coord"] = { 49.6, 11.0, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(246, {	-- Fizzcrank Airstrip, Borean Tundra
+						["cr"] = 26602,	-- Kara Thricestar <Air Traffic Controller>
 						["coord"] = { 56.6, 20.0, BOREAN_TUNDRA },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(258, {	-- Taunka'le Village, Borean Tundra
+						["cr"] = 26847,	-- Omu Spiritbreeze <Wind Rider Master>
 						["coord"] = { 77.6, 37.8, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(226, {	-- Transitus Shield, Coldarra
+						["cr"] = 27046,	-- Warmage Adami <Flight Master>
 						["coord"] = { 33.0, 34.4, BOREAN_TUNDRA },
 					}),
 					fp(296, {	-- Unu'pe, Borean Tundra
+						["cr"] = 28195,	-- Bilko Driftspark <Flight Master>
 						["coord"] = { 78.4, 51.4, BOREAN_TUNDRA },
 					}),
 					fp(245, {	-- Valiance Keep, Borean Tundra
+						["cr"] = 26879,	-- Tomas Riverwell <Gryphon Master>
 						["coord"] = { 58.8, 68.2, BOREAN_TUNDRA },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(257, {	-- Warsong Hold, Borean Tundra
+						["cr"] = 25288,	-- Turida Coldwind <Wind Rider Master>
 						["coord"] = { 40.4, 51.4, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY,
 					}),
 				}),
 				n(QUESTS, {
@@ -790,16 +800,48 @@ root("Zones", {
 						["sourceQuest"] = 11720,	-- The Invasion of Gammoth
 					}),
 					q(13004, {	-- Gem Perfection (A)
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26997,	-- Alestos
+						["coord"] = { 57.4, 72.2, BOREAN_TUNDRA },
 						["requireSkill"] = JEWELCRAFTING,
+						["timeline"] = { "removed 4.0.3" },
+						["cost"] = {
+							{ "i", 36929, 2 },	-- Huge Citrine
+							{ "i", 36932, 2 },	-- Dark Jade
+							{ "i", 36926, 2 },	-- Shadow Crystal
+						},
+						["races"] = ALLIANCE_ONLY,
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							i(41888, {	-- Small Velvet Bag
+								["description"] = "Contains a 'perfect' gem.",
+							}),
+							recipe(55534, {	-- Gem Perfection
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+						},
+						-- #endif
 					}),
 					q(13002, {	-- Gem Perfection (H)
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = HORDE_ONLY,
 						["qg"] = 26982,	-- Geba'li
+						["coord"] = { 41.6, 53.4, BOREAN_TUNDRA },
 						["requireSkill"] = JEWELCRAFTING,
+						["timeline"] = { "removed 4.0.3" },
+						["cost"] = {
+							{ "i", 36929, 2 },	-- Huge Citrine
+							{ "i", 36932, 2 },	-- Dark Jade
+							{ "i", 36926, 2 },	-- Shadow Crystal
+						},
+						["races"] = HORDE_ONLY,
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							i(41888, {	-- Small Velvet Bag
+								["description"] = "Contains a 'perfect' gem.",
+							}),
+							recipe(55534, {	-- Gem Perfection
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+						},
+						-- #endif
 					}),
 					q(11673, {	-- Get Me Outa Here!
 						["coord"] = { 55.5, 12.5, BOREAN_TUNDRA },
@@ -809,6 +851,15 @@ root("Zones", {
 							i(37049),	-- Lost Marksman's Rifle
 							i(37047),	-- Branch of Everlasting Flame
 							i(37528),	-- Dry Earth Circle
+							i(37573, {	-- Idol of the Plainstalker
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(37574, {	-- Libram of Furious Blows
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(37575, {	-- Totem of the Tundra
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(11703, {	-- Get to Getry
@@ -1472,6 +1523,15 @@ root("Zones", {
 							i(37049),	-- Lost Marksman's Rifle
 							i(37047),	-- Branch of Everlasting Flame
 							i(37528),	-- Dry Earth Circle
+							i(37573, {	-- Idol of the Plainstalker
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(37574, {	-- Libram of Furious Blows
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(37575, {	-- Totem of the Tundra
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(11629, {	-- Return to the Spirit Talker
@@ -1727,18 +1787,19 @@ root("Zones", {
 					}),
 					q(11892, {	-- The Assassination of Harold Lane
 						["qg"] = 25809,	-- Archdruid Lathorius
-						["coord"] = { 57.1, 44.3, BOREAN_TUNDRA },
-						["groups"] = {
-							i(38252),	-- Band of Wholesome Preservation
-							i(38251),	-- Ring of Indignant Rage
-							i(38250),	-- Activist's Signet of Blasting
-						},
 						["sourceQuests"] = {
 							11866,	-- Ears of Our Enemies
 							11884,	-- Nedar, Lord of the Rhinos...
 							11879,	-- Kaw the Mammoth Destroyer
 							11868,	-- The Culler Cometh
 							11872,	-- The Nefarious Clam Master...
+						},
+						["coord"] = { 57.1, 44.3, BOREAN_TUNDRA },
+						["groups"] = {
+							ach(561),	-- D.E.H.T.A's Little P.I.T.A.
+							i(38252),	-- Band of Wholesome Preservation
+							i(38251),	-- Ring of Indignant Rage
+							i(38250),	-- Activist's Signet of Blasting
 						},
 					}),
 					q(11630, {	-- The Bad Earth

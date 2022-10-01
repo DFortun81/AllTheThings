@@ -2613,7 +2613,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 7.3.0.24904
 				-- 7.3.0.24920
 				-- 7.3.0.24931
-				q(49386),	--
 				-- 7.3.0.24956
 				-- 7.3.0.24970
 				-- 7.3.0.24974
@@ -5696,7 +5695,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(60334),	--
 				q(60335),	--
 				q(60413),	--
-				q(60471),	--
 				q(60477),	--
 				q(60479),	--
 				-- 9.0.1.34003
@@ -5833,7 +5831,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(61507),	--
 				q(61517, { ["name"] = "zz", }),	-- zz
 				q(61521, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-				q(61536),	--
 				-- 9.0.1.35167
 				q(61563),	--
 				q(61565, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
@@ -6192,6 +6189,20 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(64087),	--
 				q(64096),	--
 				q(64102),	--
+				q(64107),	--
+				q(64110),	--
+				q(64111),	--
+				q(64112),	--
+				q(64113),	--
+				q(64114),	--
+				q(64115),	--
+				q(64116),	--
+				q(64117),	--
+				q(64118),	--
+				q(64119),	--
+				q(64121),	--
+				q(64122),	--
+				q(64127),	--
 				q(64130),	--
 				-- 9.1.0.38394
 				q(64239),	--

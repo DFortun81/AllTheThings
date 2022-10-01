@@ -58,6 +58,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["cr"] = 165907,	-- Runestag
 				["timeline"] = { "added 9.1.5" },
 			}),
+			i(175247),	-- Unusually Large Mushroom
 		}),
 	}),
 })));

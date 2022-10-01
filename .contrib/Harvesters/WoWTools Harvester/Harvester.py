@@ -24,18 +24,16 @@ class Things(Enum):
     Transmog = auto()
     # Not really collectibles, but we want to process them anyway
     # Please keep them after real collectibles
-    Creature = auto()
-    SpellItem = auto()
-    SpellName = auto()
-    SkillLine = auto()
-    Item = auto()
+    Creatures = auto()
+    SpellItems = auto()
+    SpellNames = auto()
+    SkillLines = auto()
+    Items = auto()
 
 
 def add_latest_build(build: str) -> None:
     """Append the latest build to all the BuildList files."""
     for thing in Things:
-        if thing == Things.Creature:
-            break
         with open(Path("Builds", f"{thing.name}.txt"), "a") as build_list:
             build_list.write(build + "\n")
 
@@ -55,11 +53,11 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
         Things.Titles: "chartitles",
         Things.Toys: "toy",
         Things.Transmog: "itemmodifiedappearance",
-        Things.Creature: "creature",
-        Things.SpellItem: "spellitemenchantment",
-        Things.SpellName: "spellname",
-        Things.SkillLine: "skillline",
-        Things.Item: "itemsparse",
+        Things.Creatures: "creature",
+        Things.SpellItems: "spellitemenchantment",
+        Things.SpellNames: "spellname",
+        Things.SkillLines: "skillline",
+        Things.Items: "itemsparse",
     }
     url = f"https://wow.tools/dbc/api/export/?name={thing2table[thing]}&build={build}"
     headers = {
@@ -85,12 +83,25 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
                         thing_list.append(f"{row['ID']},{row['Name_lang[0]']}\n")
                 case Things.FlightPaths:
                     # Flight Paths have names in the same db
-                    thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                    # Cursed Build
+                    if build == "8.0.1.26321":
+                        thing_list.append(f"{row['Name_lang']},--\n")
+                    else:
+                        try:
+                            thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                        except KeyError:
+                            thing_list.append(f"{row['ID']},{row['Name_lang[0]']}\n")
                 case Things.Followers:
                     # Follower Names need creature db
-                    thing_list.append(
-                        f"{row['ID']},{row['HordeCreatureID']},{row['AllianceCreatureID']}\n"
-                    )
+                    # Cursed Build
+                    if build == "6.0.1.18179":
+                        thing_list.append(
+                            f"{row['ID']},{row['Field_6_0_1_18179_001']},{row['Field_6_0_1_18179_002']}\n"
+                        )
+                    else:
+                        thing_list.append(
+                            f"{row['ID']},{row['HordeCreatureID']},{row['AllianceCreatureID']}\n"
+                        )
                 case Things.Illusions:
                     # Illusion names are in the SpellItemEnchantmentID db
                     thing_list.append(f"{row['SpellItemEnchantmentID']}\n")
@@ -105,33 +116,42 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
                     thing_list.append(f"{row['ID']},{row['CreatureID']}\n")
                 case Things.Recipes:
                     # Recipe names are in the SpellName db and Profession names are in SkillLine db
-                    thing_list.append(f"{row['SkillLine']},{row['Spell']}\n")
+                    thing_list.append(f"{row['Spell']},{row['SkillLine']}\n")
                 case Things.Titles:
                     # Titles have names in the same db
-                    thing_list.append(f"{row['Mask_ID']},{row['Name_lang']}\n")
+                    try:
+                        thing_list.append(f"{row['Mask_ID']},{row['Name_lang']}\n")
+                    except KeyError:
+                        thing_list.append(f"{row['Mask_ID']},{row['Name_lang[0]']}\n")
                 case Things.Toys:
                     # Item names are in Item Sparse db
                     thing_list.append(f"{row['ItemID']}\n")
                 case Things.Transmog:
                     # Item names are in Item Sparse db.
                     thing_list.append(f"{row['ID']},{row['ItemID']}\n")
-                case Things.Creature:
+                case Things.Creatures:
                     # Helps Followers and Pets to get names
                     thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-                case Things.SpellItem:
+                case Things.SpellItems:
                     # Helps Illusion names
-                    thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-                case Things.SpellName:
+                    try:
+                        thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                    except KeyError:
+                        thing_list.append(f"{row['ID']},{row['Name_lang[0]']}\n")
+                case Things.SpellNames:
                     # Helps Recipes
                     thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-                case Things.SkillLine:
+                case Things.SkillLines:
                     # Helps Professions
-                    thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
-                case Things.Item:
+                    try:
+                        thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
+                    except KeyError:
+                        thing_list.append(f"{row['ID']},{row['DisplayName_lang[0]']}\n")
+                case Things.Items:
                     # Helps Toys and Transmog
                     thing_list.append(f"{row['ID']},{row['Display_lang']}\n")
         except KeyError:
-            print(build)
+            print("Cursed", build)
     return thing_list
 
 
@@ -171,14 +191,25 @@ def get_existing_ids(thing: Things) -> list[str]:
     return existing_ids
 
 
-def build_profession_dict() -> dict[str, int]:
+def build_profession_dict() -> dict[str, int | dict[str, int]]:
     """Returns dict[profession: str, skillLineID: int]."""
-    profession_dict = dict[str, int]()
-    with open(Path("Raw", "SkillLine.txt")) as skillline_file:
+    profession_dict = dict[str, int | list[str]]()
+    with open(Path("Raw", "SkillLines.txt")) as skillline_file, open(Path("Builds", "SkillLines.txt")) as build_file:
+        exclusion_list = extract_nth_column(Path("Exclusion", "SkillLines.txt"), 0)
+        builds = build_file.readlines()
         for skillline_line in skillline_file:
+            if skillline_line not in builds:
+                skillline_id, profession = skillline_line.split(",")
+                skillline_id = re.sub("\\D", "", skillline_id)
+                if skillline_id+"\n" not in exclusion_list:
+                    profession_dict[profession.strip()] = int(skillline_id)
+    with open(Path("Exclusion", "SkillLineOther.txt")) as skilllineother_file:
+        other_dict = dict[str, int]()
+        for skillline_line in skilllineother_file:
             skillline_id, profession = skillline_line.split(",")
             skillline_id = re.sub("\\D", "", skillline_id)
-            profession_dict[profession] = int(skillline_id)
+            other_dict[profession.strip()] = int(skillline_id)
+            profession_dict["Other"] = other_dict
     return profession_dict
 
 
@@ -196,20 +227,25 @@ def sort_raw_file_recipes() -> None:
         builds = build_file.readlines()
         raw_lines = raw_file.readlines()
         for profession in profession_dict:
+            recipe_list = list[str]()
             with open(raw_path_dict[profession], "r+") as sorted_file:
                 for line in raw_lines:
                     if line in builds:
-                        sorted_file.write(line)
+                        recipe_list.append(line)
                     else:
-                        skill_line, spell = line.split(",")
-                        if int(skill_line) == profession_dict[profession]:
-                            sorted_file.write(spell + "\n")
+                        spell, skill_line = line.split(",")
+                        if profession == "Other":
+                            if int(skill_line.strip()) in list(profession_dict["Other"].values()):
+                                recipe_list.append(spell + "\n")
+                        else:
+                            if int(skill_line) == profession_dict[profession]:
+                                recipe_list.append(spell + "\n")
+                recipe_list = remove_empty_builds(recipe_list)
+                sorted_file.writelines(recipe_list)
 
 
 def create_raw_file(thing: Things) -> None:
     """Create a raw file for a thing."""
-    if thing == Things.Recipes:
-        raise ValueError("Use sort_raw_file_recipes() for Recipes.")
     raw_path = Path("Raw", f"{thing.name}.txt")
     builds_path = Path("Builds", f"{thing.name}.txt")
     with open(builds_path) as builds_file:
@@ -227,7 +263,7 @@ def create_raw_file(thing: Things) -> None:
 def extract_nth_column(csv_path: Path, n: int) -> list[str]:
     """Extract nth column from CSV file."""
     with open(csv_path) as csv_file:
-        return [line.split(",")[n] + "\n" for line in csv_file]
+        return [line.split(",")[n].strip() + "\n" for line in csv_file]
 
 
 def remove_empty_builds(lines: list[str]) -> list[str]:
@@ -267,23 +303,29 @@ def create_missing_recipes() -> None:
             )
             difference = remove_empty_builds(difference)
             missing_file.writelines(difference)
-        itemdb_list = list[str]()
-        itemdb_path = Path(
-            DATAS_FOLDER,
-            "00 - Item Database",
-            "ProfessionDB",
-            f"{profession}ItemDB.txt",
-        )
-        with open(itemdb_path) as itemdb_file:
-            for line in itemdb_file:
-                line = line.split(";")[0].split(",")[1]
-                line = re.sub("\\D", "", line)
-                itemdb_list.append(line + "\n")
-            difference = sorted(set(raw_lines) - set(itemdb_list), key=raw_lines.index)
-            if not (difference := remove_empty_builds(difference)):
-                continue
-            missing_file.write(f"\n\n\n\nMissing in {profession}ITemDB.lua\n\n")
-            missing_file.writelines(difference)
+            itemdb_list = list[str]()
+            itemdb_path = Path(
+                DATAS_FOLDER,
+                "00 - Item Database",
+                "ProfessionDB",
+                f"{profession}ItemDB.lua",
+            )
+            try:
+                with open(itemdb_path) as itemdb_file:
+                    for line in itemdb_file:
+                        try:
+                            line = line.split(";")[0].split(",")[1]
+                        except IndexError:
+                            line = ""
+                        line = re.sub("\\D", "", line)
+                        itemdb_list.append(line + "\n")
+                    difference = sorted(set(raw_lines) - set(itemdb_list), key=raw_lines.index)
+                    if not (difference := remove_empty_builds(difference)):
+                        continue
+                    missing_file.write(f"\n\n\n\nMissing in {profession}ItemDB.lua\n\n")
+                    missing_file.writelines(difference)
+            except FileNotFoundError:
+                print(f"This {profession} has no ItemDB.lua")
 
 
 DB_PATHS = {
@@ -344,14 +386,20 @@ def append_flightpoint_id(flight_points: list[str], fp_line: str) -> None:
 
 
 def append_illusion_id(illusions: list[str], illusion_line: str) -> None:
-    illusion_str, illusion_id = illusion_line.split("=")
+    try:
+        illusion_str, illusion_id = illusion_line.split("=")
+    except ValueError:
+        illusion_str = illusion_line
     if '["illusionID"]' in illusion_str:
         illusion_id = re.sub("\\D", "", illusion_id)
         illusions.append(illusion_id + "\n")
 
 
 def append_mount_id(mounts: list[str], mount_line: str) -> None:
-    mount_line = mount_line.split(";")[0].split(",")[1]
+    try:
+        mount_line = mount_line.split(";")[0].split(",")[1]
+    except IndexError:
+        mount_line = ""
     mount_line = re.sub("\\D", "", mount_line)
     mounts.append(mount_line + "\n")
 
@@ -426,7 +474,7 @@ def post_process(thing: Things) -> None:
     elif thing == Things.Followers:
         # TODO:
         raise NotImplementedError("Followers are not implemented yet.")
-    elif thing == Things.Creature:
+    elif thing == Things.Creatures:
         # TODO:
         # Helps Followers and Pets to get names
         # thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
@@ -447,11 +495,11 @@ def post_process(thing: Things) -> None:
         # TODO:
         # Recipe names are in the SpellName db and Profession names are in SkillLine db
         raise NotImplementedError("Recipes are not implemented yet.")
-    elif thing == Things.SpellName:
+    elif thing == Things.SpellNames:
         # TODO:
         # thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
         raise NotImplementedError("SpellNames are not implemented yet.")
-    elif thing == Things.SkillLine:
+    elif thing == Things.SkillLines:
         # TODO:
         # thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
         raise NotImplementedError("SkillLines are not implemented yet.")
@@ -477,5 +525,14 @@ def post_process(thing: Things) -> None:
 
 
 def add_latest_data(build: str) -> None:
-    """Add the latest data to the raw files."""
-    raise NotImplementedError
+    add_latest_build(build)
+    for thing in Things:
+        raw_path = Path("Raw", f"{thing.name}.txt")
+        thing_list = get_thing_data(thing, build.strip())
+        with open(raw_path, "r+") as raw_file:
+            old_lines = raw_file.readlines()
+            # TODO: this only finds new Things, not removed Things
+            difference = sorted(set(thing_list) - set(old_lines), key=lambda x: (float(x.split(",")[0])))
+            if difference:
+                raw_file.write(build+"\n")
+                raw_file.writelines(difference)

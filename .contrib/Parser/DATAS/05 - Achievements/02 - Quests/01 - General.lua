@@ -44,14 +44,25 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		ach(5752, {		-- Justly Rewarded
 			ach(1182),		-- The Bread Winner
 		}),
+		applyclassicphase(WRATH_PHASE_ONE, ach(1576, {	-- Of Blood and Anguish
+			["sourceQuests"] = {
+				9977,	-- The Ring of Blood: The Final Challenge
+				12948,	-- The Champion of Anguish
+			},
+			["maps"] = { NAGRAND, ZULDRAK },
+			["groups"] = {
+				crit(5799, {	-- The Champion of Anguish
+					["_quests"] = { 12948 },	-- The Champion of Anguish
+				}),
+				crit(5798, {	-- The Ring of Blood: The Final Challenge
+					["_quests"] = { 9977 },	-- The Ring of Blood: The Final Challenge
+				}),
+			},
+		})),
 		ach(4958, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
 			crit(1),		-- Ring of Blood in Nagrand
 			crit(2),		-- Amphitheater of Anguish in Zul'Drak
 			crit(3),		-- Crucible of Carnage in Twilight Highlands
-			ach(1576, {		-- Of Blood and Anguish
-				crit(1),		-- The Ring of Blood: The Final Challenge
-				crit(2),		-- The Champion of Anguish
-			}),
 		}),
 		ach(7520, {		-- The Loremaster
 			title(93),		-- Loremaster

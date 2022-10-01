@@ -169,7 +169,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 70.3, 36.2, AZSHARA },
 					["races"] = HORDE_ONLY,
 				}),
-				q(3381,  {	-- A Meeting with the Master
+				q(3381, {	-- A Meeting with the Master
 					["qg"] = 8399,	-- Nyrill <Xylem's Apprentice>
 					["coord"] = { 26.4, 46.2, AZSHARA },
 					["repeatable"] = true,

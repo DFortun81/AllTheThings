@@ -111,6 +111,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 32.6, 31.0, ARDENWEALD },
 				["crs"] = { 164122 },	-- Rapidly Growing Mushroom/Humon'gozz (npcID stays the same after it morphs from the mushroom into Humon'gozz)
+				["cost"] = {{"i",175247,1}},	-- Unusually Large Mushroom
 				["g"] = {
 					crit(5, {	-- Humon'gozz
 						["achievementID"] = 14309,	-- Adventurer of Ardenweald
