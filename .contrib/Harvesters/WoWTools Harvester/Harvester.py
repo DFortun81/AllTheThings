@@ -55,7 +55,7 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
         Things.Transmog: "itemmodifiedappearance",
         Things.Creatures: "creature",
         Things.SpellItems: "spellitemenchantment",
-        Things.SpellName: "spellname",
+        Things.SpellNames: "spellname",
         Things.SkillLines: "skillline",
         Things.Items: "itemsparse",
     }
@@ -138,7 +138,7 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
                         thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
                     except KeyError:
                         thing_list.append(f"{row['ID']},{row['Name_lang[0]']}\n")
-                case Things.SpellName:
+                case Things.SpellNames:
                     # Helps Recipes
                     thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
                 case Things.SkillLines:
@@ -495,7 +495,7 @@ def post_process(thing: Things) -> None:
         # TODO:
         # Recipe names are in the SpellName db and Profession names are in SkillLine db
         raise NotImplementedError("Recipes are not implemented yet.")
-    elif thing == Things.SpellName:
+    elif thing == Things.SpellNames:
         # TODO:
         # thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
         raise NotImplementedError("SpellNames are not implemented yet.")

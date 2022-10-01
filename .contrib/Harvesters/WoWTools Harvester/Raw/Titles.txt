@@ -572,3 +572,5 @@
 467,%s, Honorary Dryad
 10.0.0.44707
 468,Crimson Gladiator %s
+10.0.0.44895
+469,%s, Close and Personal Friend of Deathwing

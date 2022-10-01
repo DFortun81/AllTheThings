@@ -1516,3 +1516,25 @@
 385738,PH Red Slyvern
 385767,PH White Slyvern
 385771,PH Yellow Slyvern
+10.0.0.44895
+349935,Noble Elderhorn
+350219,Magmashell
+352926,Skyskin Hornstrider
+359408,Divine Kiss of Ohn'ahra
+359622,Liberated Slyvern
+373859,Loyal Magmammoth
+374032,Tamed Skitterfly
+374034,Azure Skitterfly
+374048,Skitterfly Verdant
+374098,Stormhide Salamanther
+374138,Scorchpath
+374196,Plainswalker Bearer
+374247,Thunderspine Behemoth
+374263,Restless Hornstrider
+376873,Splish-Splash
+376875,Scouting Ottuk
+385115,Majestic Vorquin
+385131,Vorquin Leystrider
+385134,Swift Vorquin
+385266,Zenet Hatchling
+386452,Frostbrood Proto-Wyrm
