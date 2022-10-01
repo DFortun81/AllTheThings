@@ -283,24 +283,34 @@ root("Zones", {
 				}),
 				n(FLIGHT_PATHS, {
 					fp(327, {	-- Bouldercrag's Refuge
+						["cr"] = 29950,	-- Breck Rockbrow <Flight Master>
 						["coord"] = { 30.6, 36.4, THE_STORM_PEAKS },
 					}),
 					fp(324, {	-- Camp Tunka'lo
+						["cr"] = 29762,	-- Hyeyoung Parka <Wind Rider Master>
 						["coord"] = { 65.4, 50.6, THE_STORM_PEAKS },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(322, {	-- Dun Niffelem
+						["cr"] = 32571,	-- Halvdan <Flight Master>
 						["coord"] = { 62.6, 60.8, THE_STORM_PEAKS },
 					}),
 					fp(321, {	-- Frosthold
+						["cr"] = 29750,	-- Faldorf Bitterchill <Flight Master>
 						["coord"] = { 29.4, 74.2, THE_STORM_PEAKS },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(323, {	-- Grom'arsh Crash-Site
+						["cr"] = 29757,	-- Kabarg Windtamer <Flight Master>
 						["coord"] = { 36.2, 49.2, THE_STORM_PEAKS },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(320, {	-- K3
+						["cr"] = 29721,	-- Skizzle Slickslide <Flight Master>
 						["coord"] = { 40.6, 84.6, THE_STORM_PEAKS },
 					}),
 					fp(326, {	-- Ulduar
+						["cr"] = 29951,	-- Shavalius the Fancy <Flight Master>
 						["coord"] = { 44.4, 28.2, THE_STORM_PEAKS },
 					}),
 				}),

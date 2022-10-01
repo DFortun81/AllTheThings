@@ -401,6 +401,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 			}),
 			n(FLIGHT_PATHS, {
 				fp(340, {	-- Argent Tournament Grounds, Icecrown
+					["cr"] = 33849,	-- Helidan Lightwing <Flight Master>
 					["coord"] = { 72.6, 22.6, ICECROWN },
 				}),
 			}),

@@ -86,9 +86,12 @@ root("Zones", {
 				}),
 				n(FLIGHT_PATHS, {
 					fp(309, {	-- Nesingwary Base Camp
+						["cr"] = 28037,	-- The Spirit of Gnomeregan <Flight Master>
 						["coord"] = { 25.2, 58.4, SHOLAZAR_BASIN },
+						["sourceQuest"] = 12522,	-- Need an Engine, Take an Engine
 					}),
 					fp(308, {	-- River's Heart
+						["cr"] = 28574,	-- Marvin Wobblesprocket <Flight Master>
 						["coord"] = { 50.0, 61.4, SHOLAZAR_BASIN },
 					}),
 				}),

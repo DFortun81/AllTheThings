@@ -176,15 +176,20 @@ root("Zones", {
 				}),
 				n(FLIGHT_PATHS, {
 					fp(335, {	-- Crusaders' Pinnacle
+						["cr"] = 31069,	-- Penumbrius <Flight Master>
 						["coord"] = { 79.4, 72.2, ICECROWN },
+						["sourceQuest"] = 13157,	-- The Crusaders' Pinnacle
 					}),
 					fp(325, {	-- Death's Rise
+						["cr"] = 31078,	-- Dreadwind <Flight Master>
 						["coord"] = { 19.4, 47.8, ICECROWN },
 					}),
 					fp(334, {	-- The Argent Vanguard
+						["cr"] = 30433,	-- Aedan Moran <Flight Master>
 						["coord"] = { 87.8, 78.0, ICECROWN },
 					}),
 					fp(333, {	-- The Shadow Vault
+						["cr"] = 30314,	-- Morlia Doomwing <Flight Master>
 						["coord"] = { 43.6, 24.4, ICECROWN },
 					}),
 				}),

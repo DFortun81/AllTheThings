@@ -231,28 +231,41 @@ root("Zones", {
 				}),
 				n(FLIGHT_PATHS, {
 					fp(289, {	-- Amber Ledge, Borean Tundra
+						["cr"] = 24795,	-- Surristrasz
 						["coord"] = { 45.2, 34.4, BOREAN_TUNDRA },
 					}),
 					fp(259, {	-- Bor'gorok Outpost, Borean Tundra
+						["cr"] = 26848,	-- Kimbiza <Wind Rider Master>
 						["coord"] = { 49.6, 11.0, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(246, {	-- Fizzcrank Airstrip, Borean Tundra
+						["cr"] = 26602,	-- Kara Thricestar <Air Traffic Controller>
 						["coord"] = { 56.6, 20.0, BOREAN_TUNDRA },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(258, {	-- Taunka'le Village, Borean Tundra
+						["cr"] = 26847,	-- Omu Spiritbreeze <Wind Rider Master>
 						["coord"] = { 77.6, 37.8, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(226, {	-- Transitus Shield, Coldarra
+						["cr"] = 27046,	-- Warmage Adami <Flight Master>
 						["coord"] = { 33.0, 34.4, BOREAN_TUNDRA },
 					}),
 					fp(296, {	-- Unu'pe, Borean Tundra
+						["cr"] = 28195,	-- Bilko Driftspark <Flight Master>
 						["coord"] = { 78.4, 51.4, BOREAN_TUNDRA },
 					}),
 					fp(245, {	-- Valiance Keep, Borean Tundra
+						["cr"] = 26879,	-- Tomas Riverwell <Gryphon Master>
 						["coord"] = { 58.8, 68.2, BOREAN_TUNDRA },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(257, {	-- Warsong Hold, Borean Tundra
+						["cr"] = 25288,	-- Turida Coldwind <Wind Rider Master>
 						["coord"] = { 40.4, 51.4, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY,
 					}),
 				}),
 				n(QUESTS, {

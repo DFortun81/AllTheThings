@@ -189,27 +189,41 @@ root("Zones", {
 				}),
 				n(FLIGHT_PATHS, {
 					fp(256, {	-- Agmar's Hammer
+						["cr"] = 26566,	-- Narzun Skybreaker <Wind Rider Master>
 						["coord"] = { 37.4, 45.6, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(251, {	-- Fordragon Hold
+						["cr"] = 26877,	-- Derek Rammel <Gryphon Master>
 						["coord"] = { 39.4, 25.8, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(260, {	-- Kor'kron Vanguard
+						["cr"] = 26850,	-- Numo Spiritbreeze <Wind Rider Master>
 						["coord"] = { 43.8, 16.8, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(294, {	-- Moa'ki
+						["cr"] = 28196,	-- Cid Flounderfix <Flight Master>
 						["coord"] = { 48.4, 74.4, DRAGONBLIGHT },
 					}),
 					fp(247, {	-- Stars' Rest
+						["cr"] = 26881,	-- Palena Silvercloud <Hippogryph Master>
 						["coord"] = { 29.2, 55.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(254, {	-- Venomspite
+						["cr"] = 26845,	-- Junter Weiss <Bat Handler>
 						["coord"] = { 76.4, 62.2, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(244, {	-- Wintergarde Keep
+						["cr"] = 26878,	-- Rodney Wells <Gryphon Master>
 						["coord"] = { 77.0, 49.8, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(252, {	-- Wyrmrest Temple
+						["cr"] = 26851,	-- Nethestrasz <Flight Master>
 						["coord"] = { 60.2, 51.4, DRAGONBLIGHT },
 					}),
 				}),

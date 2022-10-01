@@ -251,28 +251,43 @@ root("Zones", {
 				-- #endif
 				n(FLIGHT_PATHS, {
 					fp(248, {	-- Apothecary Camp
+						["cr"] = 26844,	-- Lilleth Radescu <Bat Handler>
 						["coord"] = { 26.0, 25.0, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(192, {	-- Camp Winterhoof
+						["cr"] = 24032,	-- Celea Frozenmane <Wind Rider Master>
 						["coord"] = { 49.4, 11.6, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(184, {	-- Fort Wildervar
+						["cr"] = 24061,	-- James Ormsby <Gryphon Master>
 						["coord"] = { 60.0, 16.0, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(295, {	-- Kamagua
+						["cr"] = 28197,	-- Kip Trawlskip <Flight Master>
 						["coord"] = { 24.6, 57.8, HOWLING_FJORD },
 					}),
 					fp(190, {	-- New Agamand
+						["cr"] = 24155,	-- Tobias Sarkhoff <Bat Handler>
 						["coord"] = { 52.0, 67.4, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(183, {	-- Valgarde Port
+						["cr"] = 23736,	-- Pricilla Winterwind <Gryphon Master>
 						["coord"] = { 59.8, 63.2, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(191, {	-- Vengeance Landing
+						["cr"] = 27344,	-- Adeline Chambers <Bat Handler>
 						["coord"] = { 79.0, 29.6, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(185, {	-- Westguard Keep
+						["cr"] = 23859,	-- Greer Orehammer <Gryphon Master>
 						["coord"] = { 31.2, 44.0, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 				n(PROFESSIONS, {

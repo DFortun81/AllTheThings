@@ -5466,6 +5466,7 @@ root("Zones", {
 				}),
 				n(FLIGHT_PATHS, {
 					fp(310, {	-- Dalaran
+						["cr"] = 28674,	-- Aludane Whitecloud <Flight Master>
 						["coord"] = { 72.1, 45.7, NORTHREND_DALARAN },
 					}),
 				}),

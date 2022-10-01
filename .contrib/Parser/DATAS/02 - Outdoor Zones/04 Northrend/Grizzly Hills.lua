@@ -178,16 +178,24 @@ root("Zones", {
 				-- #endif
 				n(FLIGHT_PATHS, {
 					fp(253, {	-- Amberpine Lodge
+						["cr"] = 26880,	-- Vana Grey <Gryphon Master>
 						["coord"] = { 31.2, 59.2, GRIZZLY_HILLS },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(249, {	-- Camp Oneqwah
+						["cr"] = 26853,	-- Makki Wintergale <Wind Rider Master>
 						["coord"] = { 64.8, 46.8, GRIZZLY_HILLS },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(250, {	-- Conquest Hold
+						["cr"] = 26852,	-- Kragh <Wind Rider Master>
 						["coord"] = { 22.0, 64.4, GRIZZLY_HILLS },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(255, {	-- Westfall Brigade
+						["cr"] = 26876,	-- Samuel Clearbook <Gryphon Master>
 						["coord"] = { 59.8, 26.6, GRIZZLY_HILLS },
+						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 				n(QUESTS, {

@@ -132,18 +132,23 @@ root("Zones", {
 				-- #endif
 				n(FLIGHT_PATHS, {
 					fp(305, {	-- Ebon Watch
+						["cr"] = 28615,	-- Baneflight <Flight Master>
 						["coord"] = { 14.0, 73.6, ZULDRAK },
 					}),
 					fp(331, {	-- Gundrak
+						["cr"] = 30569,	-- Rafae <Flight Master>
 						["coord"] = { 70.4, 23.2, ZULDRAK },
 					}),
 					fp(306, {	-- Light's Breach
+						["cr"] = 28618,	-- Danica Saint <Flight Master>
 						["coord"] = { 32.2, 74.4, ZULDRAK },
 					}),
 					fp(304, {	-- The Argent Stand
+						["cr"] = 28623,	-- Gurric <Flight Master>
 						["coord"] = { 41.4, 64.4, ZULDRAK },
 					}),
 					fp(307, {	-- Zim'Torga
+						["cr"] = 28624,	-- Maaka <Flight Master>
 						["coord"] = { 60.0, 56.8, ZULDRAK },
 					}),
 				}),
