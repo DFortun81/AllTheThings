@@ -1538,3 +1538,26 @@
 385134,Swift Vorquin
 385266,Zenet Hatchling
 386452,Frostbrood Proto-Wyrm
+10.0.0.44999
+387948,[PH] Wind Proto-Drake
+10.0.0.45141
+376875,Brown Scouting Ottuk
+10.0.0.45335
+374247,Lizi, Thunderspine Behemoth
+10.0.0.45454
+374247,Lizi, Thunderspine Tramper
+10.0.0.45661
+369536,Soar
+374048,Verdant Skitterfly
+376912,Otterworldly Ottuk Carrier
+385115,Majestic Armored Vorquin
+385131,Armored Vorquin Leystrider
+385134,Swift Armored Vorquin
+394216,Crimson Vorquin
+394218,Sapphire Vorquin
+394219,Bronze Vorquin
+394220,Obsidian Vorquin
+10.0.2.45779
+377071,Crimson Gladiator's Drake
+394737,Vicious Sabertooth
+394738,Vicious Sabertooth

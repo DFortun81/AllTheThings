@@ -19105,3 +19105,67 @@
 198511,Troubled Tome
 198522,Off-Duty Defender
 198543,Pinkie
+10.0.2.45779
+185616,Kalecgos
+186328,Fiery Carver
+189117,Phoenix Wishwing
+193842,Arcane Disc
+197089,Titan-Touched Elemental
+198591,Nokhud Brute
+198597,Sendrax
+198608,Tracker Dragon Glyph
+198615,Tracker Dragon Glyph
+198618,Tracker Dragon Glyph
+198619,Tracker Dragon Glyph
+198620,Tracker Dragon Glyph
+198621,Tracker Dragon Glyph
+198622,Tracker Dragon Glyph
+198623,Tracker Dragon Glyph
+198624,Tracker Dragon Glyph
+198628,Tracker Dragon Glyph
+198630,Tracker Dragon Glyph
+198631,Tracker Dragon Glyph
+198632,Tracker Dragon Glyph
+198633,Tracker Dragon Glyph
+198634,Tracker Dragon Glyph
+198635,Tracker Dragon Glyph
+198636,Tracker Dragon Glyph
+198637,Tracker Dragon Glyph
+198638,Tracker Dragon Glyph
+198639,Tracker Dragon Glyph
+198640,Tracker Dragon Glyph
+198641,Tracker Dragon Glyph
+198642,Tracker Dragon Glyph
+198643,Tracker Dragon Glyph
+198644,Tracker Dragon Glyph
+198646,Invisible Stalker
+198648,Khadgar's Servant
+198662,Tracker Dragon Glyph
+198667,Tracker Dragon Glyph
+198668,Tracker Dragon Glyph
+198669,Tracker Dragon Glyph
+198670,Tracker Dragon Glyph
+198672,Tracker Dragon Glyph
+198673,Tracker Dragon Glyph
+198674,Tracker Dragon Glyph
+198675,Tracker Dragon Glyph
+198676,Tracker Dragon Glyph
+198677,Tracker Dragon Glyph
+198678,Tracker Dragon Glyph
+198679,Tracker Dragon Glyph
+198680,Tracker Dragon Glyph
+198681,Tracker Dragon Glyph
+198682,Tracker Dragon Glyph
+198683,Tracker Dragon Glyph
+198684,Tracker Dragon Glyph
+198685,Tracker Dragon Glyph
+198688,Fire Elemental
+198689,Exploding Elemental
+198690,Tracker Dragon Glyph
+198691,Tracker Dragon Glyph
+198692,Tracker Dragon Glyph
+198693,Tracker Dragon Glyph
+198701,Dragonflight Reputation Catch-Up Credit
+198704,Wizened Stormrider
+198717,Proto-Drake
+198754,Ferocious Tarasek

@@ -10205,3 +10205,627 @@
 16297,Treasures of The Waking Shores
 16298,Treasure Hunter of the Dragon Isles
 16299,Treasures of the Ohn'ahran Plains
+10.0.0.44999
+16086,Echo of Headteacher Doragosa kills (Normal Algeth'ar Academy)
+16087,Echo of Headteacher Doragosa kills (Heroic Algeth'ar Academy)
+16088,Echo of Headteacher Doragosa kills (Mythic Algeth'ar Academy)
+16104,Dragon Glyphs: Algeth'ar Academy
+16269,Algeth'ar Academy
+16270,Heroic: Algeth'ar Academy
+16271,Mythic: Algeth'ar Academy
+16284,<Hidden> Travel Network - Node Unlock: Azure Span - Vakthros
+16287,<Hidden> Travel Network - Node Unlock: Thaldraszus - Algeth'era
+16296,Growlbossify
+16300,Treasures of The Azure Span
+16301,Treasures of Thaldraszus
+16302,Dragon Racing - Ohn'ahran Plains - River Rapids Route - Bronze
+16303,Dragon Racing - Ohn'ahran Plains - River Rapids Route - Silver
+16304,Dragon Racing - Ohn'ahran Plains - River Rapids Route - Gold
+16305,Dragon Racing - Ohn'ahran Plains - River Rapids Route - Advanced - Bronze
+16306,Dragon Racing - Ohn'ahran Plains - River Rapids Route - Advanced - Silver
+16307,Dragon Racing - Ohn'ahran Plains - River Rapids Route - Advanced - Gold
+16308,<DNT> Iskaara Tuskarr Rank 26
+16309,<DNT> Iskaara Tuskarr Rank 27
+16310,<DNT> Iskaara Tuskarr Rank 28
+16311,<DNT> Iskaara Tuskarr Rank 29
+16312,<DNT> Iskaara Tuskarr Rank 30
+16317,Tuskarr Fishing Mastery
+10.0.0.45141
+16086,Echo of Doragosa kills (Normal Algeth'ar Academy)
+16087,Echo of Doragosa kills (Heroic Algeth'ar Academy)
+16088,Echo of Doragosa kills (Mythic Algeth'ar Academy)
+16317,Secret Fishing Spots
+16319,A New Friend - Per Character Unlocks
+16320,Does Steam Do Fire Damage?
+16321,Cutting Tusk Equipment
+16322,Best in Slot
+16323,Fragments of History
+16324,Nokhudon Proving Grounds matches
+16325,Nokhudon Proving Grounds victories
+16326,<Hidden> ACCOUNT: Campaign Complete
+16327,<DNT> Dragonscale Expedition - Climbing Unlocked
+16328,<DNT> Dragonscale Expedition - Cataloging Unlocked
+16329,Duck, Duck, Spruce!
+16330,You Must Be Made of Hide
+10.0.0.45232
+15696,Ruby Lifeshrine Loop: Bronze
+15697,Ruby Lifeshrine Loop: Silver
+15698,Ruby Lifeshrine Loop: Gold
+15702,Ruby Lifeshrine Loop - Advanced: Bronze
+15703,Ruby Lifeshrine Loop - Advanced: Silver
+15704,Ruby Lifeshrine Loop - Advanced: Gold
+15705,Flashfrost Flyover: Bronze
+15706,Flashfrost Flyover: Silver
+15707,Flashfrost Flyover: Gold
+15709,Flashfrost Flyover - Advanced: Bronze
+15710,Flashfrost Flyover - Advanced: Silver
+15711,Flashfrost Flyover - Advanced: Gold
+15712,Wild Preserve Slalom - Bronze
+15713,Wild Preserve Slalom - Silver
+15714,Wild Preserve Slalom - Gold
+15715,Wild Preserve Slalom - Advanced: Bronze
+15716,Wild Preserve Slalom - Advanced: Silver
+15717,Wild Preserve Slalom - Advanced: Gold
+15718,Wild Preserve Circuit: Bronze
+15719,Wild Preserve Circuit: Silver
+15720,Wild Preserve Circuit: Gold
+15721,Wild Preserve Circuit - Advanced: Bronze
+15722,Wild Preserve Circuit - Advanced: Silver
+15723,Wild Preserve Circuit - Advanced: Gold
+15724,Emberflow Flight: Bronze
+15725,Emberflow Flight: Silver
+15726,Emberflow Flight: Gold
+15727,Emberflow Flight - Advanced: Bronze
+15728,Emberflow Flight - Advanced: Silver
+15729,Emberflow Flight - Advanced: Gold
+15730,Apex Canopy River Run: Bronze
+15731,Apex Canopy River Run: Silver
+15732,Apex Canopy River Run: Gold
+15733,Apex Canopy River Run - Advanced: Bronze
+15734,Apex Canopy River Run - Advanced: Silver
+15735,Apex Canopy River Run - Advanced: Gold
+15736,Uktulut Coaster: Bronze
+15737,Uktulut Coaster: Silver
+15738,Uktulut Coaster: Gold
+15739,Uktulut Coaster - Advanced: Bronze
+15740,Uktulut Coaster - Advanced: Silver
+15741,Uktulut Coaster - Advanced: Gold
+15742,Wingrest Roundabout: Bronze
+15743,Wingrest Roundabout: Silver
+15744,Wingrest Roundabout: Gold
+15745,Wingrest Roundabout - Advanced: Bronze
+15746,Wingrest Roundabout - Advanced: Silver
+15747,Wingrest Roundabout - Advanced: Gold
+15757,Waygate Woods Way: Bronze
+15758,Waygate Woods Way: Silver
+15759,Waygate Woods Way: Gold
+15760,Waygate Woods Way - Advanced: Bronze
+15761,Waygate Woods Way - Advanced: Silver
+15762,Waygate Woods Way - Advanced: Gold
+15763,Fen Flythrough: Bronze
+15764,Fen Flythrough: Silver
+15765,Fen Flythrough: Gold
+15766,Fen Flythrough - Advanced: Bronze
+15767,Fen Flythrough - Advanced: Silver
+15768,Fen Flythrough - Advanced: Gold
+15769,Ravine River Run: Bronze
+15770,Ravine River Run: Silver
+15771,Ravine River Run: Gold
+15772,Ravine River Run - Advanced: Bronze
+15773,Ravine River Run - Advanced: Silver
+15774,Ravine River Run - Advanced: Gold
+15775,Emerald Garden Ascent: Bronze
+15776,Emerald Garden Ascent: Silver
+15777,Emerald Garden Ascent: Gold
+15778,Emerald Garden Ascent - Advanced: Bronze
+15779,Emerald Garden Ascent - Advanced: Silver
+15780,Emerald Garden Ascent - Advanced: Gold
+15782,Maruukai Dash: Bronze
+15783,Maruukai Dash: Silver
+15784,Maruukai Dash: Gold
+15785,Mirror of the Sky Dash: Bronze
+15786,Mirror of the Sky Dash: Silver
+15787,Mirror of the Sky Dash: Gold
+15788,The Azure Span Sprint: Bronze
+15789,The Azure Span Sprint: Silver
+15790,The Azure Span Sprint: Gold
+15791,The Azure Span Sprint - Advanced: Bronze
+15792,The Azure Span Sprint - Advanced: Silver
+15793,The Azure Span Sprint - Advanced: Gold
+15795,Together in the Skies
+15796,Cliffside Companion
+15797,An Azure Ally
+15799,The Azure Span Slalom: Bronze
+15800,The Azure Span Slalom: Silver
+15801,The Azure Span Slalom: Gold
+15802,The Azure Span Slalom - Advanced: Bronze
+15803,The Azure Span Slalom - Advanced: Silver
+15804,The Azure Span Slalom - Advanced: Gold
+15818,The Vakthros Ascent: Bronze
+15819,The Vakthros Ascent: Silver
+15820,The Vakthros Ascent: Gold
+15821,The Vakthros Ascent - Advanced: Bronze
+15822,The Vakthros Ascent - Advanced: Silver
+15823,The Vakthros Ascent - Advanced: Gold
+15827,The Flowing Forest Flight: Bronze
+15828,The Flowing Forest Flight: Silver
+15829,The Flowing Forest Flight: Gold
+15830,The Flowing Forest Flight - Advanced: Bronze
+15831,The Flowing Forest Flight - Advanced: Silver
+15832,The Flowing Forest Flight - Advanced: Gold
+15835,Iskaara Flyover: Bronze
+15836,Iskaara Flyover: Silver
+15837,Iskaara Flyover: Gold
+15838,Iskaara Flyover - Advanced: Bronze
+15839,Iskaara Flyover - Advanced: Silver
+15840,Iskaara Flyover - Advanced: Gold
+15841,Central Circuit: Bronze
+15842,Central Circuit: Silver
+15843,Central Circuit: Gold
+15844,Central Circuit - Advanced: Bronze
+15845,Central Circuit - Advanced: Silver
+15846,Central Circuit - Advanced: Gold
+15847,Archive Ambit: Bronze
+15848,Archive Ambit: Silver
+15849,Archive Ambit: Gold
+15850,Archive Ambit - Advanced: Bronze
+15851,Archive Ambit - Advanced: Silver
+15852,Archive Ambit - Advanced: Gold
+15855,Passage Pathway: Bronze
+15856,Passage Pathway: Silver
+15857,Passage Pathway: Gold
+15858,Passage Pathway - Advanced: Bronze
+15859,Passage Pathway - Advanced: Silver
+15860,Passage Pathway - Advanced: Gold
+15891,Cliffside Circuit: Bronze
+15892,Cliffside Circuit: Silver
+15893,Cliffside Circuit: Gold
+15894,Cliffside Circuit - Advanced: Bronze
+15895,Cliffside Circuit - Advanced: Silver
+15896,Cliffside Circuit - Advanced: Gold
+15897,Academy Ascent: Bronze
+15898,Academy Ascent: Silver
+15899,Academy Ascent: Gold
+15900,Academy Ascent - Advanced: Bronze
+15901,Academy Ascent - Advanced: Silver
+15902,Academy Ascent - Advanced: Gold
+15903,Garden Gallivant: Bronze
+15904,Garden Gallivant: Silver
+15905,Garden Gallivant: Gold
+15906,Garden Gallivant - Advanced: Bronze
+15907,Garden Gallivant - Advanced: Silver
+15908,Garden Gallivant - Advanced: Gold
+15909,Caverns Criss-Cross: Bronze
+15910,Caverns Criss-Cross: Silver
+15911,Caverns Criss-Cross: Gold
+15912,Caverns Criss-Cross - Advanced: Bronze
+15913,Caverns Criss-Cross - Advanced: Silver
+15914,Caverns Criss-Cross - Advanced: Gold
+16302,River Rapids Route: Bronze
+16303,River Rapids Route: Silver
+16304,River Rapids Route: Gold
+16305,River Rapids Route - Advanced: Bronze
+16306,River Rapids Route - Advanced: Silver
+16307,River Rapids Route - Advanced: Gold
+16331,The Cracked Crystal
+16334,Waking Hope
+16335,What Frozen Things Do
+16336,Azure Spanner
+16337,It's a Trogg Eat Trogg World
+16338,Fang Flap Fire Fighter
+16339,Myths of the Dragonflight Dungeons
+16343,Vault of the Incarnates
+16345,Heroic: Vault of the Incarnates
+16346,Mythic: Eranog
+16347,Mythic: Terros
+16348,Mythic: The Primal Council
+16349,Mythic: Sennarth, The Cold Breath
+16350,Mythic: Dathea, Ascended
+16351,Mythic: Kurog Grimtotem
+16352,Mythic: Broodkeeper Diurna
+16353,Mythic: Raszageth the Storm-Eater
+16354,Mythic: Vault of the Incarnates
+16355,Glory of the Vault Raider
+16356,Vault of the Incarnates Guild Run
+16357,Heroic: Vault of the Incarnates Guild Run
+16358,Mythic: Raszageth the Storm-Eater Guild Run
+16359,Eranog kills (Raid Finder Vault of the Incarnates)
+16361,Terros kills (Raid Finder Vault of the Incarnates)
+16362,The Primal Council kills (Raid Finder Vault of the Incarnates)
+16363,Just Don't Ask Me to Spell It
+16364,The Lunker Below
+16365,Little Friends
+16366,Sennarth, The Cold Breath kills (Raid Finder Vault of the Incarnates)
+16367,Dathea, Ascended kills (Raid Finder Vault of the Incarnates)
+16368,Kurog Grimtotem kills (Raid Finder Vault of the Incarnates)
+16369,Broodkeeper Diurna kills (Raid Finder Vault of the Incarnates)
+16370,Raszageth kills (Raid Finder Vault of the Incarnates)
+16371,Eranog kills (Normal Vault of the Incarnates)
+16372,Terros kills (Normal Vault of the Incarnates)
+16373,The Primal Council kills (Normal Vault of the Incarnates)
+16374,Sennarth, The Cold Breath kills (Normal Vault of the Incarnates)
+16375,Dathea, Ascended kills (Normal Vault of the Incarnates)
+16376,Kurog Grimtotem kills (Normal Vault of the Incarnates)
+16377,Broodkeeper Diurna kills (Normal Vault of the Incarnates)
+16378,Raszageth kills (Normal Vault of the Incarnates)
+16379,Eranog kills (Heroic Vault of the Incarnates)
+16380,Terros kills (Heroic Vault of the Incarnates)
+16381,The Primal Council kills (Heroic Vault of the Incarnates)
+16382,Sennarth, The Cold Breath kills (Heroic Vault of the Incarnates)
+16383,Dathea, Ascended kills (Heroic Vault of the Incarnates)
+16384,Kurog Grimtotem kills (Heroic Vault of the Incarnates)
+16385,Broodkeeper Diurna kills (Heroic Vault of the Incarnates)
+16386,Raszageth kills (Heroic Vault of the Incarnates)
+16387,Eranog kills (Mythic Vault of the Incarnates)
+16388,Terros kills (Mythic Vault of the Incarnates)
+16389,The Primal Council kills (Mythic Vault of the Incarnates)
+16390,Sennarth, The Cold Breath kills (Mythic Vault of the Incarnates)
+16391,Dathea, Ascended kills (Mythic Vault of the Incarnates)
+16392,Kurog Grimtotem kills (Mythic Vault of the Incarnates)
+16393,Broodkeeper Diurna kills (Mythic Vault of the Incarnates)
+16394,Raszageth kills (Mythic Vault of the Incarnates)
+16395,[PH] Collect a Vault of the Incarnates transmog set
+16398,Sojourner of Thaldraszus
+16399,Lovin' Lubbins
+16400,Explore the Waking Shores
+16401,Sojourner of the Waking Shores
+16402,Dragon Kill Points
+16404,So You Can Kill This in a Way That Matters...
+16405,Sojourner of Ohn'ahran Plains
+16406,All Sides of the Story
+16409,Let's Get Quacking
+16410,Siege on Dragonbane Keep: Snack Attack
+16411,Siege on Dragonbane Keep: Home Sweet Home
+16412,Siege on Dragonbane Keep: Chiseled Record
+16414,[HIDDEN] Fates of the Shadowlands Raid Portals
+10.0.0.45335
+15757,Sundapple Copse Circuit: Bronze
+15758,Sundapple Copse Circuit: Silver
+15759,Sundapple Copse Circuit: Gold
+15760,Sundapple Copse Circuit - Advanced: Bronze
+15761,Sundapple Copse Circuit - Advanced: Silver
+15762,Sundapple Copse Circuit - Advanced: Gold
+16285,<Hidden> Travel Network - Node Unlock: Ohn'ahran Plains - Shady Sanctuary
+16395,Vaulternative Fashion
+16415,<DNT> Cobalt Assembly - Rank 1 - Low
+16416,<DNT> Cobalt Assembly - Rank 2 - Medium
+16417,<DNT> Cobalt Assembly - Rank 3 - High
+16418,<DNT> Cobalt Assembly - Rank 4 - Maximum
+16419,I Was Saving That For Later
+16423,Honor Our Ancestors
+16424,Who's a Good Bakar?
+16425,I'm a Template Character [DNT]
+16426,Hungry Hungry Hornswog
+16427,Go With The Flow
+16428,Sojourner of Azure Span
+16429,[PH] Hero: Dragonflight Season 1
+16430,All Bark, All Bite
+16431,Against the Elements
+16432,Ready for Raiding VIII
+16434,See Me After Class
+16438,Knowledge is... Preserved?
+16440,Are You My Broodmother?
+16441,Squad Goals
+16442,Incubation Extermination
+16443,Soupervisor
+16444,Leftovers' Revenge
+16445,Icy What You Did There
+16446,That's Pretty Neat!
+16447,What Are The Chances..
+16449,[DNT] <Hidden> Mythic+ Rating > 0 (Dragonflight, any season)
+10.0.0.45454
+16289,<Hidden> Travel Network - Node Unlock: Waking Shores - Rubyscale Outpost
+16447,What Are The Chances...
+16450,The Power is MINE!
+16451,The Ol Raszle Daszle
+16452,Explore the Forbidden Reach
+16453,Liquid Hot Magma
+16456,Weapons of the Maruukai
+16457,Explore the Ohn'ahran Plains
+16458,Nothing But Air
+16460,Explore the Azure Span
+16461,Stormed Off
+16462,The Ohn'ahran Trail
+16463,Thunderstorms in The Waking Shores
+16464,Battle on the Dragon Isles
+16465,Sandstorms in The Waking Shores
+16466,Firestorms in The Waking Shores
+16467,Snowstorms in The Waking Shores
+16468,Chasing Storms in The Waking Shores
+16474,Do You Wanna Build a Snowman?
+16475,Thunderstorms in the Ohn'ahran Plains
+16476,Chasing Storms in the Ohn'ahran Plains
+16477,Sandstorms in the Ohn'ahran Plains
+16478,Firestorms in the Ohn'ahran Plains
+16479,Snowstorms in the Ohn'ahran Plains
+16480,Thunderstorms in The Azure Span
+16481,Sandstorms in The Azure Span
+16482,Firestorms in The Azure Span
+16483,Snowstorms in The Azure Span
+16484,Chasing Storms in The Azure Span
+16485,Thunderstorms in Thaldraszus
+16486,Sandstorms in Thaldraszus
+16487,Firestorms in Thaldraszus
+16488,Snowstorms in Thaldraszus
+16489,Chasing Storms in Thaldraszus
+16490,Storm Chaser
+16492,Into the Storm
+16493,Grand Theft Mammoth
+16494,Backing the Throne
+16495,Obsidian Keymaster
+16496,Obsidian Champion
+16497,I'm Playing Both Sides
+16498,Elemental Overflow
+16499,Elemental Overflowing
+16500,Elemental Overload
+16501,Aquatic Battler of the Dragon Isles
+16502,WIP Storming the Runway
+16503,Beast Battler of the Dragon Isles
+16504,Critter Battler of the Dragon Isles
+16505,Dragonkin Battler of the Dragon Isles
+16506,Elemental Battler of the Dragon Isles
+16507,Flying Battler of the Dragon Isles
+16508,Humanoid Battler of the Dragon Isles
+16509,Magic Battler of the Dragon Isles
+16510,Mechanical Battler of the Dragon Isles
+16511,Undead Battler of the Dragon Isles
+16512,Family Battler of the Dragon Isles
+16517,Toxicity Strike Team
+16518,Explore Thaldrazsus
+16519,Dragon Isles Safari
+16520,10.0 Dragonflight - Expansion Quest Launch
+16522,A True Explorer
+16528,Joining the Khansguard
+16529,Joining the Community
+16530,Ally of the Flights
+16531,A Whole Lot of Lunkers
+16532,Friends with Sabellian
+16533,A Whole Lot of Lunkers
+16536,True Friends with Wrathion
+16537,Maximum Power!
+16539,In High Esteem
+16540,Hunt Master
+16541,<DNT>Complete X Hunt Steps
+16542,The Disgruntled Hunter
+16543,<DNT>Collect all companion cosmetics
+16544,<DNT>Complete a hunt from start to finish
+16545,The Best at What I Do
+16546,That's not a fish...
+16547,Pulled!
+16548,It takes a (Tuskarr) village.
+16549,Popular Around the Isles
+10.0.0.45570
+15702,Ruby Lifeshrine Loop Advanced: Bronze
+15703,Ruby Lifeshrine Loop Advanced: Silver
+15704,Ruby Lifeshrine Loop Advanced: Gold
+15709,Flashfrost Flyover Advanced: Bronze
+15710,Flashfrost Flyover Advanced: Silver
+15711,Flashfrost Flyover Advanced: Gold
+15712,Wild Preserve Slalom: Bronze
+15713,Wild Preserve Slalom: Silver
+15714,Wild Preserve Slalom: Gold
+15715,Wild Preserve Slalom Advanced: Bronze
+15716,Wild Preserve Slalom Advanced: Silver
+15717,Wild Preserve Slalom Advanced: Gold
+15721,Wild Preserve Circuit Advanced: Bronze
+15722,Wild Preserve Circuit Advanced: Silver
+15723,Wild Preserve Circuit Advanced: Gold
+15727,Emberflow Flight Advanced: Bronze
+15728,Emberflow Flight Advanced: Silver
+15729,Emberflow Flight Advanced: Gold
+15733,Apex Canopy River Run Advanced: Bronze
+15734,Apex Canopy River Run Advanced: Silver
+15735,Apex Canopy River Run Advanced: Gold
+15739,Uktulut Coaster Advanced: Bronze
+15740,Uktulut Coaster Advanced: Silver
+15741,Uktulut Coaster Advanced: Gold
+15745,Wingrest Roundabout Advanced: Bronze
+15746,Wingrest Roundabout Advanced: Silver
+15747,Wingrest Roundabout Advanced: Gold
+15760,Sundapple Copse Circuit Advanced: Bronze
+15761,Sundapple Copse Circuit Advanced: Silver
+15762,Sundapple Copse Circuit Advanced: Gold
+15766,Fen Flythrough Advanced: Bronze
+15767,Fen Flythrough Advanced: Silver
+15768,Fen Flythrough Advanced: Gold
+15772,Ravine River Run Advanced: Bronze
+15773,Ravine River Run Advanced: Silver
+15774,Ravine River Ru, Advanced: Gold
+15778,Emerald Garden Ascent Advanced: Bronze
+15779,Emerald Garden Ascent Advanced: Silver
+15780,Emerald Garden Ascent Advanced: Gold
+15791,The Azure Span Sprint Advanced: Bronze
+15792,The Azure Span Sprint Advanced: Silver
+15793,The Azure Span Sprint Advanced: Gold
+15802,The Azure Span Slalom Advanced: Bronze
+15803,The Azure Span Slalom Advanced: Silver
+15804,The Azure Span Slalom Advanced: Gold
+15821,The Vakthros Ascent Advanced: Bronze
+15822,The Vakthros Ascent Advanced: Silver
+15823,The Vakthros Ascent Advanced: Gold
+15830,The Flowing Forest Flight Advanced: Bronze
+15831,The Flowing Forest Flight Advanced: Silver
+15832,The Flowing Forest Flight Advanced: Gold
+15838,Iskaara Flyover Advanced: Bronze
+15839,Iskaara Flyover Advanced: Silver
+15840,Iskaara Flyover Advanced: Gold
+15844,Central Circuit Advanced: Bronze
+15845,Central Circuit Advanced: Silver
+15846,Central Circuit Advanced: Gold
+15850,Archive Ambit Advanced: Bronze
+15851,Archive Ambit Advanced: Silver
+15852,Archive Ambit Advanced: Gold
+15858,Passage Pathway Advanced: Bronze
+15859,Passage Pathway Advanced: Silver
+15860,Passage Pathway Advanced: Gold
+15894,Cliffside Circuit Advanced: Bronze
+15895,Cliffside Circuit Advanced: Silver
+15896,Cliffside Circuit Advanced: Gold
+15900,Academy Ascent Advanced: Bronze
+15901,Academy Ascent Advanced: Silver
+15902,Academy Ascent Advanced: Gold
+15906,Garden Gallivant Advanced: Bronze
+15907,Garden Gallivant Advanced: Silver
+15908,Garden Gallivant Advanced: Gold
+15912,Caverns Criss-Cross Advanced: Bronze
+15913,Caverns Criss-Cross Advanced: Silver
+15914,Caverns Criss-Cross Advanced: Gold
+15915,Waking Shores: Bronze
+15916,Waking Shores: Silver
+15917,Waking Shores: Gold
+15918,Ohn'ahran Plains: Bronze
+15919,Ohn'ahran Plains: Silver
+15920,Ohn'ahran Plains: Gold
+15921,Azure Span: Bronze
+15922,Azure Span: Silver
+15923,Azure Span: Gold
+15924,Thaldraszus: Bronze
+15925,Thaldraszus: Silver
+15926,Thaldraszus: Gold
+15927,Waking Shores Advanced: Bronze
+15928,Waking Shores Advanced: Silver
+15929,Waking Shores Advanced: Gold
+15930,Ohn'ahran Plains Advanced: Bronze
+15931,Ohn'ahran Plains Advanced: Silver
+15932,Ohn'ahran Plains Advanced: Gold
+15933,Azure Span Advanced: Bronze
+15934,Azure Spa, Advanced: Silver
+15935,Azure Span Advanced: Gold
+15936,Thaldraszus Advanced: Bronze
+15937,Thaldraszus Advanced: Silver
+15938,Thaldraszus Advanced: Gold
+15940,Dragon Racing Completionist: Silver
+15941,Dragon Racing Completionist: Gold
+16305,River Rapids Route Advanced: Bronze
+16306,River Rapids Route Advanced: Silver
+16307,River Rapids Route Advanced: Gold
+16497,I'm Playing All Sides
+16502,Storming the Runway
+16531,A Whole Heap of Lunkers
+16533,Lots of Lunkers
+16541,Longhunter
+16543,Tetrachromancer
+16544,Grand Hunter
+16546,What's Down There?
+16548,It Takes a Tuskarr Buddy
+16550,Giving Back to Nature
+16551,Giving More Back to Nature
+16552,Giving Even More Back to Nature
+16553,Taking From Nature
+16556,Great Gourmand of The Ruby Feast
+16560,Wildlife Photographer
+16561,Lunkers, Lunkers Everywhere
+16562,That's not a Fish...
+16563,We're Going to Need a Bigger Harpoon
+16564,It Takes a Tuskarr Family
+16565,It Takes a Tuskarr Village
+16566,Great Shot!
+16567,A Lot of Great Shots!
+16568,Great Shots Galore!
+16569,Cobalt Enthusiast
+16570,A Legendary Album
+16571,Well Supplied
+16572,Legendary Photograph
+16573,Legendary Photographs
+16574,Sleeping on the Job
+16575,Waking Shores Glyph Hunter
+16576,Ohn'ahran Plains Glyph Hunter
+16577,Azure Span Glyph Hunter
+16578,Thaldraszus Glyph Hunter
+16580,Hub Helper
+16581,Seeing Blue
+16583,Knew You Nokhud Do It!
+16584,Symbols of Hope
+16585,Loremaster of the Dragon Isles
+16587,Lead Climber
+16588,How Did These Get Here?
+16589,Malicia's Challenge
+16590,A Champion's Tour: Dragon Isles
+16591,The Gentleman Elemental
+16592,Tour of Duty: The Waking Shores
+16593,Tour of Duty: Thaldraszus
+16594,Tour of Duty: The Azure Span
+16595,Tour of Duty: Ohn'ahran Plains
+16599,A Champion's Pursuit
+16600,Isles Ascender
+16601,Dragonfight Club
+16602,Nokhud Deed Goes Unnoticed
+16603,Bounty Hunter
+16611,Resource Scavanger
+16612,Bounty Vigalante
+16613,Finder's Keepers
+16614,Bloodstained Bounty
+16615,Blood Bank
+16616,Prosperously Bloody
+16620,Ohuna Incubation
+16621,One of Everything, Please
+16622,Three Minutes or It's Free
+16623,Toe Tension
+16624,Which Knot Was It Again?
+16625,Belay On!
+16626,Working with Wyrms
+16627,Professional Draconic Master
+16630,Draconic Master of All
+16631,Dragon Isles Cook
+16632,Dragon Isles Fisherman
+10.0.0.45661
+15960,Combatant I: Dragonflight Season 1
+15985,Dragon Glyphs: Skytop Observatory Tower
+15988,Dragon Glyphs: Ruby Life Pools Peaks
+16069,Dragon Glyphs: Creektooth Den
+16073,Dragon Glyphs: Vakthros Range
+16520,10.0 Dragonflight - Expansion Quest Launch (Meet Wrathion/Ebyssian)
+16633,<DNT> Maruuk Centaur Rank 25 + Title Quest
+16634,Framing a New Perspective
+16638,Ley Line in the Span
+16639,Keystone Hero: Uldaman: Legacy of Tyr
+16640,Keystone Hero: Ruby Life Pools
+16641,Keystone Hero: The Nokhud Offensive
+16642,Keystone Hero: Brackenhide Hollow
+16643,Keystone Hero: Algeth'ar Academy
+16644,Keystone Hero: Neltharus
+16645,Keystone Hero: The Azure Vault
+16646,Keystone Hero: Halls of Infusion
+16647,Dragonflight Keystone Explorer: Season One
+16648,Dragonflight Keystone Conqueror: Season One
+16649,Dragonflight Keystone Master: Season One
+16650,Dragonflight Keystone Hero: Season One
+16658,Keystone Hero: Court of Stars
+16659,Keystone Hero: Halls of Valor
+16660,Keystone Hero: Shadowmoon Burial Grounds
+16661,Keystone Hero: Temple of the Jade Serpent
+16662,Dragon Isles Blacksmithing 75 (DNT)
+16663,Dragon Isles Tailoring 75 (DNT)
+16664,Dragon Isles Jewelcrafting 75 (DNT)
+16665,Dragon Isles Engineering 75 (DNT)
+16666,Dragon Glyphs: Gelikyr Overlook
+16667,Dragon Glyphs: Passage of Time
+16668,Dragon Glyphs: Skytop Observatory Rostrum
+16669,Dragon Glyphs: Flashfrost Enclave
+16670,Dragon Glyphs: Rubyscale Outpost
+16671,Dragon Glyphs: Mirewood Fen
+16672,Dragon Glyphs: Forkriver Crossing
+16673,Dragon Glyphs: The Fallen Course
+16676,Adventurer of The Waking Shores
+16677,Adventurer of the Ohn'ahran Plains
+16678,Adventurer of The Azure Span
+16679,Adventurer of Thaldraszus
+16681,10.0 Dragonflight - Expansion Quest Launch (Return to Docks)
+16683,In Tyr's Footsteps
+10.0.2.45779
+14613,<Hidden> Chromie Time - Hit 59 While In Chromie Time
+14615,<Hidden> Chromie Time - Hit 60 While In Chromie Time
+16703,10.0 Thal - Raid Intro Quest Launch [DNT]
+16713,<DNT> Wrathion - 1 - Trusted Champion
+16714,<DNT> Wrathion - 2 - Ally
+16715,<DNT> Wrathion - 3 - Close Ally
+16716,<DNT> Wrathion - 4 - Friend
+16717,<DNT> Wrathion - 5 - True Friend
+16718,<DNT> Sabellian - 1 - Devotee
+16719,<DNT> Sabellian - 2 - Cohort
+16720,<DNT> Sabellian - 3 - Ally
+16721,<DNT> Sabellian - 4 - Fang
+16722,<DNT> Sabellian - 5 - Friend
+16729,To All the Squirrels Hidden Till Now
+16730,Crimson Gladiator's Drake
+16731,Court is Now in Session

@@ -525,5 +525,14 @@ def post_process(thing: Things) -> None:
 
 
 def add_latest_data(build: str) -> None:
-    """Add the latest data to the raw files."""
-    raise NotImplementedError
+    add_latest_build(build)
+    for thing in Things:
+        raw_path = Path("Raw", f"{thing.name}.txt")
+        thing_list = get_thing_data(thing, build.strip())
+        with open(raw_path, "r+") as raw_file:
+            old_lines = raw_file.readlines()
+            # TODO: this only finds new Things, not removed Things
+            difference = sorted(set(thing_list) - set(old_lines), key=lambda x: (float(x.split(",")[0])))
+            if difference:
+                raw_file.write(build+"\n")
+                raw_file.writelines(difference)

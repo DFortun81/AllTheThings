@@ -2622,3 +2622,26 @@
 2825,Ohn'iri Springs, Ohn'ahran Plains
 10.0.0.44895
 2832,Cobalt Assembly, The Azure Span
+10.0.0.44999
+103,Nagrand - PvP - Attack Run Start 1 
+509,Quest Path 2063: Brian's 4.0 Test Path 
+951,Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise 
+963,Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise 
+1495,Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice 
+2392,Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path 
+2711,Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron 
+2786,Rhonin's Shield, Azure Span
+2834,Eon's Fringe, Thaldraszus
+2835,[Hidden] 10.0 Travel Network - Destination Input
+2836,Algeth'era, Thaldraszus
+2837,Vakthros, Azure Span
+2838,Cobalt Assembly, Azure Span
+2839,Rusza'thar Reach, Ohn'ahran Plains
+2840,Emerald Gardens, Ohn'ahran Plains
+2841,Skytop Observatory, The Waking Shores
+2842,Dragonscale Basecamp, The Waking Shores
+2843,[Hidden] 10.0 Travel Network - Destination Output
+10.0.0.45335
+2840,Shady Sanctuary, Ohn'ahran Plains
+10.0.0.45454
+2842,Rubyscale Outpost, The Waking Shores
