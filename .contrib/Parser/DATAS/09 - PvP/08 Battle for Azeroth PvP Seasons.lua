@@ -492,9 +492,17 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 			filter(MOUNTS, {
 				i(163123, {	-- Vicious War Riverbeast (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { 
+						"added 8.0.0", 
+						"removed 8.1.0" 
+					},
 				}),
 				i(163124, {	-- Vicious War Clefthoof (MOUNT!)
 					["races"] = HORDE_ONLY,
+					["timeline"] = { 
+						"added 8.0.0", 
+						"removed 8.1.0" 
+					},
 				}),
 			}),
 		}),
@@ -1010,9 +1018,17 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 			filter(MOUNTS, {
 				i(165019, {	-- Vicious Black Warsaber (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { 
+						"added 8.1.0", 
+						"removed 8.2.0" 
+					},
 				}),
 				i(165020, {	-- Vicious Black Bonesteed (MOUNT!)
 					["races"] = HORDE_ONLY,
+					["timeline"] = { 
+						"added 8.1.0", 
+						"removed 8.2.0" 
+					},
 				}),
 			}),
 		}),
@@ -1569,9 +1585,17 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 			filter(MOUNTS, {
 				i(163122, {	-- Vicious War Basilisk (A) (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { 
+						"added 8.2.0", 
+						"removed 8.3.0"
+					},
 				}),
 				i(163121, {	-- Vicious War Basilisk (H) (MOUNT!)
 					["races"] = HORDE_ONLY,
+					["timeline"] = { 
+						"added 8.2.0", 
+						"removed 8.3.0"
+					},
 				}),
 			}),
 		}),
@@ -2062,9 +2086,17 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 			filter(MOUNTS, {
 				i(173714, {	-- Vicious White Warsaber (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { 
+						"added 8.3.0", 
+						"removed 9.0.0"
+					},
 				}),
 				i(173713, {	-- Vicious White Bonesteed (MOUNT!)
 					["races"] = HORDE_ONLY,
+					["timeline"] = { 
+						"added 8.3.0", 
+						"removed 9.0.0"
+					},
 				}),
 			}),
 		}),
