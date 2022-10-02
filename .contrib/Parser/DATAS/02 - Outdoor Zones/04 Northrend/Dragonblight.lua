@@ -1468,16 +1468,32 @@ root("Zones", {
 					q(13377, {	-- The Battle for the Undercity (A)
 						["qg"] = 32376,	-- Broll Bearmantle
 						["sourceQuest"] = 13371,	-- The Killing Time
+						["coord"] = { 50, 68.4, TIRISFAL_GLADES },
 						["timeline"] = { "removed 4.0.3" },
+						["maps"] = { STORMWIND_CITY, UNDERCITY },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							un(REMOVED_FROM_GAME, i(44579)),	-- Medallion of Heroism
-							un(REMOVED_FROM_GAME, i(44591)),	-- Wrynn's Leggings of Foresight
-							un(REMOVED_FROM_GAME, i(44592)),	-- Wrynn's Leggings of Valor
-							un(REMOVED_FROM_GAME, i(44593)),	-- Wrynn's Leggings of Wisdom
-							un(REMOVED_FROM_GAME, i(44594)),	-- Wrynn's Legguards of Brutality
-							un(REMOVED_FROM_GAME, i(44595)),	-- Wrynn's Legguards of Heroism
-							un(REMOVED_FROM_GAME, i(44596)),	-- Wrynn's Legplates of Carnage
+							i(44597, {	-- Medallion of Heroism
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44591, {	-- Wrynn's Leggings of Foresight
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44592, {	-- Wrynn's Leggings of Valor
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44593, {	-- Wrynn's Leggings of Wisdom
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44594, {	-- Wrynn's Legguards of Brutality
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44595, {	-- Wrynn's Legguards of Heroism
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44596, {	-- Wrynn's Legplates of Carnage
+								["timeline"] = { "removed 4.0.3" },
+							}),
 						},
 					}),
 
@@ -1497,16 +1513,32 @@ root("Zones", {
 					q(13267, {	-- The Battle for the Undercity (H)
 						["qg"] = 31649,	-- Vol'jin
 						["sourceQuest"] = 13266,	-- A Life Without Regret
+						["coord"] = { 61.8, 62.6, TIRISFAL_GLADES },
 						["timeline"] = { "removed 4.0.3" },
+						["maps"] = { ORGRIMMAR, UNDERCITY },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							un(REMOVED_FROM_GAME, i(44579)),	-- Medallion of Heroism
-							un(REMOVED_FROM_GAME, i(44590)),	-- Warchief's Leggings of Foresight
-							un(REMOVED_FROM_GAME, i(44348)),	-- Warchief's Leggings of Valor
-							un(REMOVED_FROM_GAME, i(44346)),	-- Warchief's Leggings of Wisdom
-							un(REMOVED_FROM_GAME, i(44583)),	-- Warchief's Legguards of Brutality
-							un(REMOVED_FROM_GAME, i(44347)),	-- Warchief's Legguards of Heroism
-							un(REMOVED_FROM_GAME, i(44349)),	-- Warchief's Legplates of Carnage
+							i(44579, {	-- Medallion of Heroism
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44590, {	-- Warchief's Leggings of Foresight
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44348, {	-- Warchief's Leggings of Valor
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44346, {	-- Warchief's Leggings of Wisdom
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44583, {	-- Warchief's Legguards of Brutality
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44347, {	-- Warchief's Legguards of Heroism
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44349, {	-- Warchief's Legplates of Carnage
+								["timeline"] = { "removed 4.0.3" },
+							}),
 						},
 					}),
 					q(12263, {	-- The Best of Intentions
