@@ -8,9 +8,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(13958, {	-- Corrupted Gladiator's Proto-Drake
 			un(REMOVED_FROM_GAME, i(156884)),	-- Corrupted Gladiator's Proto-Drake (MOUNT!)
 		})),
-		pvp(ach(15384, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {	-- Cosmic Gladiator's Soul Eater
-			i(189507),	-- Cosmic Gladiator's Soul Eater (MOUNT!)
-		}))),
 		un(REMOVED_FROM_GAME, ach(11001, {	-- Cruel Gladiator's Storm Dragon
 			un(REMOVED_FROM_GAME, i(141845)),	-- Cruel Gladiator's Storm Dragon (MOUNT!)
 		})),
@@ -23,9 +20,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(13093, {	-- Dread Gladiator's Proto-Drake
 			un(REMOVED_FROM_GAME, i(156879)),	-- Dread Gladiator's Proto-Drake (MOUNT!)
 		})),
-		pvp(ach(15612, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {	-- Eternal Gladiator's Soul Eater
-			i(191290),	-- Eternal Gladiator's Soul Eater (MOUNT!)
-		}))),
 		un(REMOVED_FROM_GAME, ach(11000, {	-- Fearless Gladiator's Storm Dragon
 			un(REMOVED_FROM_GAME, i(141844)),	-- Fearless Gladiator's Storm Dragon (MOUNT!)
 		})),
@@ -65,14 +59,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(5767, {			-- Scourer of the Eternal Sands
 			title(143),		-- the Camel-Hoarder
 		}),
-		ach(14816, bubbleDownSelf({["timeline"] = { "added 9.0", "removed 9.1" }},{	-- Sinful Gladiator's Soul Eater
-			i(183937),	-- Sinful Gladiator's Soul Eater (MOUNT!)
-		})),
 		un(REMOVED_FROM_GAME, ach(13202, {	-- Sinister Gladiator's Proto-Drake
 			un(REMOVED_FROM_GAME, i(156880)),	-- Sinister Gladiator's Proto-Drake (MOUNT!)
-		})),
-		ach(14999, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {	-- Unchained Gladiator's Soul Eater
-			i(186177),	-- Unchained Gladiator's Soul Eater (MOUNT!)
 		})),
 		un(REMOVED_FROM_GAME, ach(10999, {	-- Vindictive Gladiator's Storm Dragon
 			un(REMOVED_FROM_GAME, i(141843)),	-- Vindictive Gladiator's Storm Dragon (MOUNT!)

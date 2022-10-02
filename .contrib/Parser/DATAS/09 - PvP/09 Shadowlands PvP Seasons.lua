@@ -413,6 +413,38 @@ root("PVP", pvp(tier(SL_TIER, {
 				i(181816),	-- Sinful Gladiator's Sigil of Adaptation
 			}),
 		})),
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 9.0.2", "removed 9.1.0" } }, {
+			ach(14686),		-- Challenger: Shadowlands Season 1
+			ach(14685, {	-- Combatant: Shadowlands Season 1
+				title(78, {	-- Combatant <Name>
+					["collectible"] = false,
+				}),
+			}),
+			ach(14688, {	-- Duelist: Shadowlands Season 1
+				illusion(6266),	-- Sinful Flame					
+				i(180424),	-- Sinful Gladiator's Prestigious Cloak
+			}),
+			ach(14691, {	-- Elite: Shadowlands Season 1
+				i(180431),	-- Sinful Gladiator's Tabard
+			}),
+			ach(14689, {		-- Gladiator: Shadowlands Season 1
+				i(183937),	-- Sinful Gladiator's Soul Eater (MOUNT!)
+			}),
+			ach(14692, {	-- Hero of the Alliance: Sinful
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(14693, {	-- Hero of the Horde: Sinful
+				["races"] = HORDE_ONLY,
+			}),
+			ach(14687),		-- Rival: Shadowlands Season 1
+			ach(14690, {	-- Sinful Gladiator: Shadowlands Season 1
+				title(434),	-- Sinful Gladiator <Name>
+			}),
+			ach(14816, {	-- Sinful Gladiator's Soul Eater
+				["provider"] = { "i", 183937 },	-- Sinful Gladiator's Soul Eater
+				["filterID"] = MOUNTS,
+			}),
+		})),
 		filter(MOUNTS, {
 			i(184014, {	-- Vicious War Spider (A) (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
@@ -826,6 +858,47 @@ root("PVP", pvp(tier(SL_TIER, {
 				}),
 				i(185312),	-- Unchained Gladiator's Warglaive
 				i(185315),	-- Unchained Gladiator's Xiphos
+			}),
+		})),
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {
+			ach(14969),		-- Challenger I: Shadowlands Season 2
+			ach(15233, {	-- Challenger II: Shadowlands Season 2
+				["timeline"] = { "added 9.1.5", "removed 9.2.0" },
+			}),
+			ach(14968, {	-- Combatant I: Shadowlands Season 2
+				title(78, {	-- Combatant <Name>
+					["collectible"] = false,
+				}),
+			}),
+			ach(15232, {	-- Combatant II: Shadowlands Season 2
+				["timeline"] = { "added 9.1.5", "removed 9.2.0" },
+			}),
+			ach(14971, {	-- Duelist: Shadowlands Season 2
+				i(185302),	-- Unchained Gladiator's Prestigious Cloak
+				illusion(6344),	-- Unchained Fury
+			}),
+			ach(14974, {	-- Elite: Shadowlands Season 2
+				i(185303),	-- Unchained Gladiator's Tabard
+			}),
+			ach(14972, {		-- Gladiator: Shadowlands Season 2
+				i(186177),	-- Unchained Gladiator's Soul Eater (MOUNT!)
+			}),
+			ach(14975, {	-- Hero of the Alliance: Unchained
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(14976, {	-- Hero of the Horde: Unchained
+				["races"] = HORDE_ONLY,
+			}),
+			ach(14970),	-- Rival I: Shadowlands Season 2
+			ach(15234, {	-- Rival II: Shadowlands Season 2
+				["timeline"] = { "added 9.1.5", "removed 9.2.0" },
+			}),
+			ach(14973, {	-- Unchained Gladiator: Shadowlands Season 2
+				title(441),	-- Unchained Gladiator <Name>
+			}),
+			ach(14999, {	-- Unchained Gladiator's Soul Eater
+				["provider"] = { "i", 186177 },	-- Unchained Gladiator's Soul Eater
+				["filterID"] = MOUNTS,
 			}),
 		})),
 		filter(MOUNTS, {
@@ -1372,6 +1445,47 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 			--]]
 		})),
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {
+			ach(15349),		-- Challenger I: Shadowlands Season 3
+			ach(15379),		-- Challenger II: Shadowlands Season 3
+			ach(15348, {	-- Combatant I: Shadowlands Season 3
+				title(78, {	-- Combatant <Name>
+					["collectible"] = false,
+				}),
+			}),
+			ach(15380),		-- Combatant II: Shadowlands Season 3
+			ach(15347, {			-- Cosmic Combatant (A)
+				["collectible"] = false,
+			}),
+			ach(15346, {			-- Cosmic Combatant (H)
+				["collectible"] = false,
+			}),
+			ach(15353, {	-- Cosmic Gladiator: Shadowlands Season 3
+				title(452),	-- Cosmic Gladiator <Name>
+			}),
+			ach(15384, {	-- Cosmic Gladiator's Soul Eater
+				["provider"] = { "i", 189507 },	-- Cosmic Gladiator's Soul Eater
+				["filterID"] = MOUNTS,
+			}),
+			ach(15351, {		-- Duelist: Shadowlands Season 3
+				illusion(6351),	-- Cosmic Flow
+				i(186776),	-- Cosmic Gladiator's Prestigious Cloak
+			}),
+			ach(15354, {		-- Elite: Shadowlands Season 3
+				i(186777),	-- Cosmic Gladiator's Tabard
+			}),
+			ach(15352, {		-- Gladiator: Shadowlands Season 3
+				i(189507),	-- Cosmic Gladiator's Soul Eater (MOUNT!)
+			}),
+			ach(15355, {	-- Hero of the Alliance: Cosmic
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(15356, {	-- Hero of the Horde: Cosmic
+				["races"] = HORDE_ONLY,
+			}),
+			ach(15350),	-- Rival I: Shadowlands Season 3
+			ach(15378),	-- Rival II: Shadowlands Season 3
+		})),
 		filter(MOUNTS, {
 			i(187681, {	-- Vicious War Gulper (A) (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
@@ -1907,6 +2021,47 @@ root("PVP", pvp(tier(SL_TIER, {
 					}),
 				}),
 			}),
+		})),
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFPRE } }, {
+			ach(15600),		-- Challenger I: Shadowlands Season 4
+			ach(15601),		-- Challenger II: Shadowlands Season 4
+			ach(15609, {	-- Combatant I: Shadowlands Season 4
+				title(78, {	-- Combatant <Name>
+					["collectible"] = false,
+				}),
+			}),
+			ach(15610),		-- Combatant II: Shadowlands Season 4
+			ach(15604, {		-- Duelist: Shadowlands Season 4
+				illusion(6378),	-- Eternal Flux
+				i(192205),	-- Eternal Gladiator's Prestigious Cloak
+			}),
+			ach(15639, {	-- Elite: Shadowlands Season 4
+				i(192206),	-- Eternal Gladiator's Tabard
+			}),
+			ach(15599, {		-- Eternal Combatant (A)
+				["collectible"] = false,
+			}),
+			ach(15598, {		-- Eternal Combatant (H)
+				["collectible"] = false,
+			}),
+			ach(15606, {	-- Eternal Gladiator: Shadowlands Season 4
+				title(461),	-- Eternal Gladiator <Name>
+			}),
+			ach(15612, {	-- Eternal Gladiator's Soul Eater
+				["provider"] = { "i", 191290 },	-- Eternal Gladiator's Soul Eater
+				["filterID"] = MOUNTS,
+			}),
+			ach(15605, {		-- Gladiator: Shadowlands Season 4
+				i(191290),	-- Eternal Gladiator's Soul Eater (MOUNT!)
+			}),
+			ach(15608, {	-- Hero of the Alliance: Eternal
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(15607, {	-- Hero of the Horde: Eternal
+				["races"] = HORDE_ONLY,
+			}),
+			ach(15602),	-- Rival I: Shadowlands Season 4
+			ach(15603),	-- Rival II: Shadowlands Season 4
 		})),
 		filter(MOUNTS, {
 			i(187644, {	-- Vicious Warstalker (A) (MOUNT!)
