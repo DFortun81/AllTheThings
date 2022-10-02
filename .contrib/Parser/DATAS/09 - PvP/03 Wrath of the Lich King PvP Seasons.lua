@@ -64,6 +64,23 @@ end]];
 -- #endif
 root("PVP", applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 3.0.1" } }, pvp(tier(WOTLK_TIER, {
 	n(SEASON_DEADLY, {
+		bubbleDown({
+			["timeline"] = { "added 3.0.1", "removed 3.1.0" },
+			-- #if BEFORE 5.0.1
+			["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
+			-- #endif
+		}, n(ACHIEVEMENTS, {
+			classicAch(3336, {	-- Deadly Gladiator: Wrath of the Lich King Season 1
+				title(56),	-- Deadly Gladiator <Name>
+			}),
+			classicAch(3096, {	-- Deadly Gladiator's Frost Wyrm
+				["provider"] = { "i", 46708 },	-- Deadly Gladiator's Frost Wyrm
+				["filterID"] = MOUNTS,
+			}),
+			i(46708, {	-- Deadly Gladiator's Frost Wyrm
+				["description"] = "Awarded to members of the Arena teams during Wrath Season 1 that were in the 0.5% bracket of their battlegroup.",
+			}),
+		})),
 		n(PVP_HONOR, {
 			n(WEAPONS, {
 				i(146647, {	-- Arsenal: Savage Gladiator's Weapons
@@ -1822,25 +1839,25 @@ root("PVP", applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDow
 				i(42128),	-- Battlemaster's Hostility Patch 3.0.2
 			})),
 		}),
-		bubbleDown({
-			["timeline"] = { "added 3.0.1", "removed 3.1.0" },
-			-- #if BEFORE 5.0.1
-			["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
-			-- #endif
-		}, n(ACHIEVEMENTS, {
-			classicAch(3336, {	-- Deadly Gladiator: Wrath of the Lich King Season 1
-				title(56),	-- Deadly Gladiator <Name>
-			}),
-			classicAch(3096, {	-- Deadly Gladiator's Frost Wyrm
-				["provider"] = { "i", 46708 },	-- Deadly Gladiator's Frost Wyrm
-				["filterID"] = MOUNTS,
-			}),
-			i(46708, {	-- Deadly Gladiator's Frost Wyrm
-				["description"] = "Awarded to members of the Arena teams during Wrath Season 1 that were in the 0.5% bracket of their battlegroup.",
-			}),
-		})),
 	}),
 	applyclassicphase(WRATH_PHASE_TWO, n(SEASON_FURIOUS, {
+		bubbleDown({
+			["timeline"] = { "added 3.1.0", "removed 3.2.0" },
+			-- #if BEFORE 5.0.1
+			["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
+			-- #endif
+		}, n(ACHIEVEMENTS, {
+			classicAch(3436, {	-- Furious Gladiator: Wrath of the Lich King Season 2
+				title(132),	-- Furious Gladiator <Name>
+			}),
+			classicAch(3756, {	-- Furious Gladiator's Frost Wyrm
+				["provider"] = { "i", 46171 },	-- Furious Gladiator's Frost Wyrm
+				["filterID"] = MOUNTS,
+			}),
+			i(46171, {	-- Furious Gladiator's Frost Wyrm
+				["description"] = "Awarded to members of the Arena teams during Wrath Season 2 that were in the 0.5% bracket of their battlegroup.",
+			}),
+		})),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
 				i(146644, {	-- Arsenal: Furious Gladiator's Weapons
@@ -2567,25 +2584,25 @@ root("PVP", applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDow
 				i(45959),	-- Furious Gladiator's Truncheon
 			}),
 		})),
-		bubbleDown({
-			["timeline"] = { "added 3.1.0", "removed 3.2.0" },
-			-- #if BEFORE 5.0.1
-			["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
-			-- #endif
-		}, n(ACHIEVEMENTS, {
-			classicAch(3436, {	-- Furious Gladiator: Wrath of the Lich King Season 2
-				title(132),	-- Furious Gladiator <Name>
-			}),
-			classicAch(3756, {	-- Furious Gladiator's Frost Wyrm
-				["provider"] = { "i", 46171 },	-- Furious Gladiator's Frost Wyrm
-				["filterID"] = MOUNTS,
-			}),
-			i(46171, {	-- Furious Gladiator's Frost Wyrm
-				["description"] = "Awarded to members of the Arena teams during Wrath Season 2 that were in the 0.5% bracket of their battlegroup.",
-			}),
-		})),
 	})),
 	applyclassicphase(WRATH_PHASE_THREE, n(SEASON_RELENTLESS, {
+		bubbleDown({
+			["timeline"] = { "added 3.2.0", "removed 3.3.2" },
+			-- #if BEFORE 5.0.1
+			["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
+			-- #endif
+		}, n(ACHIEVEMENTS, {
+			ach(3758, {	-- Relentless Gladiator: Wrath of the Lich King Season 3
+				title(134),	-- Relentless Gladiator <Name>
+			}),
+			ach(3757, {	-- Relentless Gladiator's Frost Wyrm
+				["provider"] = { "i", 47840 },	-- Relentless Gladiator's Frost Wyrm
+				["filterID"] = MOUNTS,
+			}),
+			i(47840, {	-- Relentless Gladiator's Frost Wyrm
+				["description"] = "Awarded to members of the Arena teams during Wrath Season 3 that were in the 0.5% bracket of their battlegroup.",
+			}),
+		})),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
 				i(146643, {	-- Arsenal: Relentless Gladiator's Weapons
@@ -3330,25 +3347,25 @@ root("PVP", applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDow
 				i(48511),	-- Relentless Gladiator's Truncheon
 			}),
 		})),
-		bubbleDown({
-			["timeline"] = { "added 3.2.0", "removed 3.3.2" },
-			-- #if BEFORE 5.0.1
-			["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
-			-- #endif
-		}, n(ACHIEVEMENTS, {
-			ach(3758, {	-- Relentless Gladiator: Wrath of the Lich King Season 3
-				title(134),	-- Relentless Gladiator <Name>
-			}),
-			ach(3757, {	-- Relentless Gladiator's Frost Wyrm
-				["provider"] = { "i", 47840 },	-- Relentless Gladiator's Frost Wyrm
-				["filterID"] = MOUNTS,
-			}),
-			i(47840, {	-- Relentless Gladiator's Frost Wyrm
-				["description"] = "Awarded to members of the Arena teams during Wrath Season 3 that were in the 0.5% bracket of their battlegroup.",
-			}),
-		})),
 	})),
 	applyclassicphase(WRATH_PHASE_FOUR, n(SEASON_WRATHFUL, {
+		bubbleDown({
+			["timeline"] = { "added 3.3.2", "removed 4.0.1" },
+			-- #if BEFORE 5.0.1
+			["OnUpdate"] = WRATHFUL_GLADIATOR_ONUPDATE,
+			-- #endif
+		}, n(ACHIEVEMENTS, {
+			classicAch(4599, {	-- Wrathful Gladiator: Wrath of the Lich King Season  4
+				title(142),	-- Wrathful Gladiator <Name>
+			}),
+			classicAch(4600, {	-- Wrathful Gladiator's Frost Wyrm
+				["provider"] = { "i", 50435 },	-- Wrathful Gladiator's Frost Wyrm
+				["filterID"] = MOUNTS,
+			}),
+			i(50435, {	-- Wrathful Gladiator's Frost Wyrm
+				["description"] = "Awarded to members of the Arena teams during Wrath Season 4 that were in the 0.5% bracket of their battlegroup.",
+			}),
+		})),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
 				i(146642, {	-- Arsenal: Wrathful Gladiator's Weapons
@@ -4082,23 +4099,6 @@ root("PVP", applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDow
 				i(51389),	-- Wrathful Gladiator's Sunderer
 				i(51448),	-- Wrathful Gladiator's Swiftblade
 				i(51520),	-- Wrathful Gladiator's Truncheon
-			}),
-		})),
-		bubbleDown({
-			["timeline"] = { "added 3.3.2", "removed 4.0.1" },
-			-- #if BEFORE 5.0.1
-			["OnUpdate"] = WRATHFUL_GLADIATOR_ONUPDATE,
-			-- #endif
-		}, n(ACHIEVEMENTS, {
-			classicAch(4599, {	-- Wrathful Gladiator: Wrath of the Lich King Season  4
-				title(142),	-- Wrathful Gladiator <Name>
-			}),
-			classicAch(4600, {	-- Wrathful Gladiator's Frost Wyrm
-				["provider"] = { "i", 50435 },	-- Wrathful Gladiator's Frost Wyrm
-				["filterID"] = MOUNTS,
-			}),
-			i(50435, {	-- Wrathful Gladiator's Frost Wyrm
-				["description"] = "Awarded to members of the Arena teams during Wrath Season 4 that were in the 0.5% bracket of their battlegroup.",
 			}),
 		})),
 	})),

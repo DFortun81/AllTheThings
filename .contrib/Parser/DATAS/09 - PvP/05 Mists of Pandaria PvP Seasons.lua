@@ -6,6 +6,24 @@ _.PVP =
 {
 	pvp(tier(MOP_TIER, {
 		n(SEASON_MALEVOLENT, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.0.0", "removed 5.2.0" }, }, {
+				ach(8243, {	-- Hero of the Alliance: Malevolent
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(8244, {	-- Hero of the Horde: Malevolent
+					["races"] = HORDE_ONLY,
+				}),
+				ach(8214, {	-- Malevolent Gladiator: Mists of Pandaria Season 1
+					title(223),	-- Malevolent Gladiator <Name>
+				}),
+				ach(8216, {	-- Malevolent Gladiator's Cloud Serpent
+					["provider"] = { "i", 95041 },	-- Malevolent Gladiator's Cloud Serpent
+					["filterID"] = MOUNTS,
+				}),
+				i(95041, {	-- Malevolent Gladiator's Cloud Serpent
+					["description"] = "Awarded to members of the Arena teams during MoP Season 1 that were in the 0.5% bracket of their battlegroup.",
+				}),
+			})),
 			n(PVP_HONOR, {
 				cl(DEATHKNIGHT, {
 					i(138715, {	-- Ensemble: Dreadful Gladiator's Dreadplate Armor
@@ -1785,24 +1803,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(85000)),	-- Malevolent Gladiator's Warboots of Cruelty
 				}),
 			}),
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.0.0", "removed 5.2.0" }, }, {
-				ach(8243, {	-- Hero of the Alliance: Malevolent
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(8244, {	-- Hero of the Horde: Malevolent
-					["races"] = HORDE_ONLY,
-				}),
-				ach(8214, {	-- Malevolent Gladiator: Mists of Pandaria Season 1
-					title(223),	-- Malevolent Gladiator <Name>
-				}),
-				ach(8216, {	-- Malevolent Gladiator's Cloud Serpent
-					["provider"] = { "i", 95041 },	-- Malevolent Gladiator's Cloud Serpent
-					["filterID"] = MOUNTS,
-				}),
-				i(95041, {	-- Malevolent Gladiator's Cloud Serpent
-					["description"] = "Awarded to members of the Arena teams during MoP Season 1 that were in the 0.5% bracket of their battlegroup.",
-				}),
-			})),
 			n(HONOR_TYRANNICAL, {
 				["description"] = "These items are available from Malevolent Gladiator: Season 12 Vendor.",
 				["g"] = {
@@ -2381,6 +2381,24 @@ _.PVP =
 			}),
 		}),
 		n(SEASON_TYRANNICAL, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.2.0", "removed 5.4.0" }, }, {
+				ach(8652, {	-- Hero of the Alliance: Tyrannical
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(8653, {	-- Hero of the Horde: Tyrannical
+					["races"] = HORDE_ONLY,
+				}),
+				ach(8791, {	-- Tyrannical Gladiator: Mists of Pandaria Season 2
+					title(225),	-- Tyrannical Gladiator <Name>
+				}),
+				ach(8678, {	-- Tyrannical Gladiator's Cloud Serpent
+					["provider"] = { "i", 104325 },	-- Tyrannical Gladiator's Cloud Serpent
+					["filterID"] = MOUNTS,
+				}),
+				i(104325, {	-- Tyrannical Gladiator's Cloud Serpent
+					["description"] = "Awarded to members of the Arena teams during MoP Season 2 that were in the 0.5% bracket of their battlegroup.",
+				}),
+			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -5500,26 +5518,57 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(98162)), -- Tyrannical Gladiator's Tabard
 				}),
 			}),
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.2.0", "removed 5.4.0" }, }, {
-				ach(8652, {	-- Hero of the Alliance: Tyrannical
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(8653, {	-- Hero of the Horde: Tyrannical
-					["races"] = HORDE_ONLY,
-				}),
-				ach(8791, {	-- Tyrannical Gladiator: Mists of Pandaria Season 2
-					title(225),	-- Tyrannical Gladiator <Name>
-				}),
-				ach(8678, {	-- Tyrannical Gladiator's Cloud Serpent
-					["provider"] = { "i", 104325 },	-- Tyrannical Gladiator's Cloud Serpent
-					["filterID"] = MOUNTS,
-				}),
-				i(104325, {	-- Tyrannical Gladiator's Cloud Serpent
-					["description"] = "Awarded to members of the Arena teams during MoP Season 2 that were in the 0.5% bracket of their battlegroup.",
-				}),
-			})),
 		}),
 		n(SEASON_GRIEVOUS, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.4.0", "removed 5.4.7" }, }, {
+				ach(8649),	-- Challenger: Mists of Pandaria Season 3/Season 14
+				ach(8645, {	-- Duelist: Mists of Pandaria Season 3/Season 14
+					-- #if AFTER 7.3.2
+					["g"] = {
+						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
+							illusion(5396),		-- Glorious Tyranny
+						})),
+					},
+					-- #endif
+				}),
+				ach(8644, {	-- Gladiator: Mists of Pandaria Season 3/Season 14
+					i(104326),	-- Grievous Gladiator's Cloud Serpent
+				}),
+				ach(8485, {	-- Grievous Combatant (Alliance) Mists of Pandaria Season 3/Season 14
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(8484, {	-- Grievous Combatant (Horde) Mists of Pandaria Season 3/Season 14
+					["races"] = HORDE_ONLY,
+				}),
+				ach(8643, {	-- Grievous Gladiator: Mists of Pandaria Season 3/Season 14
+					title(253),	-- Grievous Gladiator <Name>
+				}),
+				ach(8705, {	-- Grievous Gladiator's Cloud Serpent
+					["provider"] = { "i", 104326 },	-- Grievous Gladiator's Cloud Serpent
+					["filterID"] = MOUNTS,
+				}),
+				ach(8654, {	-- Hero of the Alliance: Grievous
+					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER 7.3.2
+					["g"] = {
+						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
+							illusion(5396),		-- Glorious Tyranny
+						})),
+					},
+					-- #endif
+				}),
+				ach(8657, {	-- Hero of the Horde: Grievous
+					["races"] = HORDE_ONLY,
+					-- #if AFTER 7.3.2
+					["g"] = {
+						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
+							illusion(5396),		-- Glorious Tyranny
+						})),
+					},
+					-- #endif
+				}),
+				ach(8646),	-- Rival: Mists of Pandaria Season 3/Season 14
+			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -8696,57 +8745,57 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(101697)), -- Grievous Gladiator's Tabard
 				}),
 			}),
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.4.0", "removed 5.4.7" }, }, {
-				ach(8649),	-- Challenger: Mists of Pandaria Season 3/Season 14
-				ach(8645, {	-- Duelist: Mists of Pandaria Season 3/Season 14
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							illusion(5396),		-- Glorious Tyranny
-						})),
-					},
-					-- #endif
-				}),
-				ach(8644, {	-- Gladiator: Mists of Pandaria Season 3/Season 14
-					i(104326),	-- Grievous Gladiator's Cloud Serpent
-				}),
-				ach(8485, {	-- Grievous Combatant (Alliance) Mists of Pandaria Season 3/Season 14
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(8484, {	-- Grievous Combatant (Horde) Mists of Pandaria Season 3/Season 14
-					["races"] = HORDE_ONLY,
-				}),
-				ach(8643, {	-- Grievous Gladiator: Mists of Pandaria Season 3/Season 14
-					title(253),	-- Grievous Gladiator <Name>
-				}),
-				ach(8705, {	-- Grievous Gladiator's Cloud Serpent
-					["provider"] = { "i", 104326 },	-- Grievous Gladiator's Cloud Serpent
-					["filterID"] = MOUNTS,
-				}),
-				ach(8654, {	-- Hero of the Alliance: Grievous
-					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							illusion(5396),		-- Glorious Tyranny
-						})),
-					},
-					-- #endif
-				}),
-				ach(8657, {	-- Hero of the Horde: Grievous
-					["races"] = HORDE_ONLY,
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							illusion(5396),		-- Glorious Tyranny
-						})),
-					},
-					-- #endif
-				}),
-				ach(8646),	-- Rival: Mists of Pandaria Season 3/Season 14
-			})),
 		}),
 		n(SEASON_PRIDEFUL, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.4.7", "removed 6.0.0" }, }, {
+				ach(8670),	-- Challenger: Mists of Pandaria Season 4/Season 15
+				ach(8668, {	-- Duelist: Mists of Pandaria Season 4/Season 15
+					-- #if AFTER 7.3.2
+					["g"] = {
+						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
+							illusion(5396),		-- Glorious Tyranny
+						})),
+					},
+					-- #endif
+				}),
+				ach(8667, {	-- Gladiator: Mists of Pandaria Season 4/Season 15
+					i(104327),	-- Prideful Gladiator's Cloud Serpent
+				}),
+				ach(8658, {	-- Hero of the Alliance: Prideful
+					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER 7.3.2
+					["g"] = {
+						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
+							illusion(5396),		-- Glorious Tyranny
+						})),
+					},
+					-- #endif
+				}),
+				ach(8659, {	-- Hero of the Horde: Prideful
+					["races"] = HORDE_ONLY,
+					-- #if AFTER 7.3.2
+					["g"] = {
+						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
+							illusion(5396),		-- Glorious Tyranny
+						})),
+					},
+					-- #endif
+				}),
+				ach(8642, {	-- Prideful Combatant (Alliance) Mists of Pandaria Season 4/Season 15
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(8641, {	-- Prideful Combatant (Horde) Mists of Pandaria Season 4/Season 15
+					["races"] = HORDE_ONLY,
+				}),
+				ach(8666, {	-- Prideful Gladiator: Mists of Pandaria Season 4/Season 15
+					title(254),	-- Prideful Gladiator <Name>
+				}),
+				ach(8707, {	-- Prideful Gladiator's Cloud Serpent
+					["provider"] = { "i", 104327 },	-- Prideful Gladiator's Cloud Serpent
+					["filterID"] = MOUNTS,
+				}),
+				ach(8669),	-- Rival: Mists of Pandaria Season 4/Season 15
+			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -10410,55 +10459,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(103636)), -- Prideful Gladiator's Tabard
 				}),
 			}),
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.4.7", "removed 6.0.0" }, }, {
-				ach(8670),	-- Challenger: Mists of Pandaria Season 4/Season 15
-				ach(8668, {	-- Duelist: Mists of Pandaria Season 4/Season 15
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							illusion(5396),		-- Glorious Tyranny
-						})),
-					},
-					-- #endif
-				}),
-				ach(8667, {	-- Gladiator: Mists of Pandaria Season 4/Season 15
-					i(104327),	-- Prideful Gladiator's Cloud Serpent
-				}),
-				ach(8658, {	-- Hero of the Alliance: Prideful
-					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							illusion(5396),		-- Glorious Tyranny
-						})),
-					},
-					-- #endif
-				}),
-				ach(8659, {	-- Hero of the Horde: Prideful
-					["races"] = HORDE_ONLY,
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							illusion(5396),		-- Glorious Tyranny
-						})),
-					},
-					-- #endif
-				}),
-				ach(8642, {	-- Prideful Combatant (Alliance) Mists of Pandaria Season 4/Season 15
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(8641, {	-- Prideful Combatant (Horde) Mists of Pandaria Season 4/Season 15
-					["races"] = HORDE_ONLY,
-				}),
-				ach(8666, {	-- Prideful Gladiator: Mists of Pandaria Season 4/Season 15
-					title(254),	-- Prideful Gladiator <Name>
-				}),
-				ach(8707, {	-- Prideful Gladiator's Cloud Serpent
-					["provider"] = { "i", 104327 },	-- Prideful Gladiator's Cloud Serpent
-					["filterID"] = MOUNTS,
-				}),
-				ach(8669),	-- Rival: Mists of Pandaria Season 4/Season 15
-			})),
 		}),
 	})),
 };

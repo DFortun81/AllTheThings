@@ -419,6 +419,24 @@ _.PVP =
 			},
 		}),
 		n(SEASON_VICIOUS, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 4.0.3", "removed 4.2.0" }, }, {
+				ach(5344, {	-- Hero of the Alliance: Vicious
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(5358, {	-- Hero of the Horde: Vicious
+					["races"] = HORDE_ONLY,
+				}),
+				ach(6002, {	-- Vicious Gladiator: Cataclysm Season 1
+					title(191),	-- Vicious Gladiator <Name>
+				}),
+				ach(6003, {	-- Vicious Gladiator's Twilight Drake
+					["provider"] = { "i", 71339 },	-- Vicious Gladiator's Twilight Drake
+					["filterID"] = MOUNTS,
+				}),
+				i(71339, {	-- Vicious Gladiator's Twilight Drake
+					["description"] = "Awarded to members of the Arena teams during Cata Season 1 that were in the 0.5% bracket of their battlegroup.",
+				}),
+			})),
 			n(PVP_HONOR, {
 				cl(DEATHKNIGHT, {
 					i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
@@ -2220,24 +2238,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(67466)), -- Vicious Gladiator's Hatchet (Throw wep) wrong label by blizz
 				}),
 			})),
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 4.0.3", "removed 4.2.0" }, }, {
-				ach(5344, {	-- Hero of the Alliance: Vicious
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(5358, {	-- Hero of the Horde: Vicious
-					["races"] = HORDE_ONLY,
-				}),
-				ach(6002, {	-- Vicious Gladiator: Cataclysm Season 1
-					title(191),	-- Vicious Gladiator <Name>
-				}),
-				ach(6003, {	-- Vicious Gladiator's Twilight Drake
-					["provider"] = { "i", 71339 },	-- Vicious Gladiator's Twilight Drake
-					["filterID"] = MOUNTS,
-				}),
-				i(71339, {	-- Vicious Gladiator's Twilight Drake
-					["description"] = "Awarded to members of the Arena teams during Cata Season 1 that were in the 0.5% bracket of their battlegroup.",
-				}),
-			})),
 			n(HONOR_RUTHLESS, {
 				cl(DEATHKNIGHT, {
 					i(70558),	-- Vicious Gladiator's Dreadplate Chestpiece
@@ -2461,6 +2461,24 @@ _.PVP =
 			}),
 		}),
 		n(SEASON_RUTHLESS, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 4.2.0", "removed 4.3.0" }, }, {
+				ach(6316, {	-- Hero of the Alliance: Ruthless
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(6317, {	-- Hero of the Horde: Ruthless
+					["races"] = HORDE_ONLY,
+				}),
+				ach(6124, {	-- Ruthless Gladiator: Cataclysm Season 2
+					title(192),	-- Ruthless Gladiator <Name>
+				}),
+				ach(6322, {	-- Ruthless Gladiator's Twilight Drake
+					["provider"] = { "i", 71954 },	-- Ruthless Gladiator's Twilight Drake
+					["filterID"] = MOUNTS,
+				}),
+				i(71954, {	-- Ruthless Gladiator's Twilight Drake
+					["description"] = "Awarded to members of the Arena teams during Cata Season 2 that were in the 0.5% bracket of their battlegroup.",
+				}),
+			})),
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
 					i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
@@ -3614,24 +3632,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(70198)),	-- Ruthless Gladiator's War Edge (Throw Wep)
 				}),
 			})),
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 4.2.0", "removed 4.3.0" }, }, {
-				ach(6316, {	-- Hero of the Alliance: Ruthless
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(6317, {	-- Hero of the Horde: Ruthless
-					["races"] = HORDE_ONLY,
-				}),
-				ach(6124, {	-- Ruthless Gladiator: Cataclysm Season 2
-					title(192),	-- Ruthless Gladiator <Name>
-				}),
-				ach(6322, {	-- Ruthless Gladiator's Twilight Drake
-					["provider"] = { "i", 71954 },	-- Ruthless Gladiator's Twilight Drake
-					["filterID"] = MOUNTS,
-				}),
-				i(71954, {	-- Ruthless Gladiator's Twilight Drake
-					["description"] = "Awarded to members of the Arena teams during Cata Season 2 that were in the 0.5% bracket of their battlegroup.",
-				}),
-			})),
 			n(HONOR_CATACLYSMIC, {
 				["description"] = "These items are only available from Ruthless Gladiator class ensembles.",
 				["g"] = {
@@ -3841,6 +3841,24 @@ _.PVP =
 			}),
 		}),
 		n(SEASON_CATACLYSMIC, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 4.3.0", "removed 5.0.0" }, }, {
+				ach(6939, {	-- Hero of the Alliance: Cataclysmic
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(6940, {	-- Hero of the Horde: Cataclysmic
+					["races"] = HORDE_ONLY,
+				}),
+				ach(6938, {	-- Cataclysmic Gladiator: Cataclysm Season 3
+					title(193),	-- Cataclysmic Gladiator <Name>
+				}),
+				ach(6741, {	-- Cataclysmic Gladiator's Twilight Drake
+					["provider"] = { "i", 85785 },	-- Cataclysmic Gladiator's Twilight Drake
+					["filterID"] = MOUNTS,
+				}),
+				i(85785, {	-- Cataclysmic Gladiator's Twilight Drake
+					["description"] = "Awarded to members of the Arena teams during Cata Season 3 that were in the 0.5% bracket of their battlegroup.",
+				}),
+			})),
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
 					i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons
@@ -4719,24 +4737,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(74784)),	-- Cataclysmic Gladiator's Relic of Salvation
 					un(REMOVED_FROM_GAME, i(74786)),	-- Cataclysmic Gladiator's Relic of Triumph
 					un(REMOVED_FROM_GAME, i(73412)),	-- Cataclysmic Gladiator's War Edge (Throw Wep)
-				}),
-			})),
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 4.3.0", "removed 5.0.0" }, }, {
-				ach(6939, {	-- Hero of the Alliance: Cataclysmic
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(6940, {	-- Hero of the Horde: Cataclysmic
-					["races"] = HORDE_ONLY,
-				}),
-				ach(6938, {	-- Cataclysmic Gladiator: Cataclysm Season 3
-					title(193),	-- Cataclysmic Gladiator <Name>
-				}),
-				ach(6741, {	-- Cataclysmic Gladiator's Twilight Drake
-					["provider"] = { "i", 85785 },	-- Cataclysmic Gladiator's Twilight Drake
-					["filterID"] = MOUNTS,
-				}),
-				i(85785, {	-- Cataclysmic Gladiator's Twilight Drake
-					["description"] = "Awarded to members of the Arena teams during Cata Season 3 that were in the 0.5% bracket of their battlegroup.",
 				}),
 			})),
 		}),

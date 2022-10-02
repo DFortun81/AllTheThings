@@ -355,6 +355,20 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 		}),
 	})),
 	n(SEASON_GLADIATOR, {
+		bubbleDown({
+			["timeline"] = { "added 2.0.1.6180", "removed 2.1.2" },
+			-- #if BEFORE 3.0.1
+			["OnUpdate"] = SEASONONE_GLADIATOR_ONUPDATE,
+			-- #endif
+		}, n(ACHIEVEMENTS, {
+			classicAch(886, {	-- Swift Nether Drake
+				["provider"] = { "i", 30609 },	-- Swift Nether Drake
+				["filterID"] = MOUNTS,
+			}),
+			i(30609, {	-- Swift Nether Drake
+				["description"] = "Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",
+			}),
+		})),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
 				i(146651, {	-- Arsenal: Gladiator's Weapons
@@ -1291,22 +1305,25 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 			}),
 		}),
-		bubbleDown({
-			["timeline"] = { "added 2.0.1.6180", "removed 2.1.2" },
-			-- #if BEFORE 3.0.1
-			["OnUpdate"] = SEASONONE_GLADIATOR_ONUPDATE,
-			-- #endif
-		}, n(ACHIEVEMENTS, {
-			classicAch(886, {	-- Swift Nether Drake
-				["provider"] = { "i", 30609 },	-- Swift Nether Drake
-				["filterID"] = MOUNTS,
-			}),
-			i(30609, {	-- Swift Nether Drake
-				["description"] = "Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",
-			}),
-		})),
 	}),
 	applyclassicphase(TBC_PHASE_TWO, n(SEASON_MERCILESS, {
+		bubbleDown({
+			["timeline"] = { "added 2.1.2", "removed 2.3.0.7501" },
+			-- #if BEFORE 3.0.1
+			["OnUpdate"] = MERCILESS_GLADIATOR_ONUPDATE,
+			-- #endif
+		}, n(ACHIEVEMENTS, {
+			classicAch(418, {	-- Merciless Gladiator: Burning Crusade Season 2
+				title(37),	-- Merciless Gladiator <Name>
+			}),
+			classicAch(887, {	-- Merciless Nether Drake
+				["provider"] = { "i", 34092 },	-- Merciless Nether Drake
+				["filterID"] = MOUNTS,
+			}),
+			i(34092, {	-- Merciless Nether Drake
+				["description"] = "Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",
+			}),
+		})),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
 				i(146650, {	-- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
@@ -2017,25 +2034,25 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 			}),
 		}),
-		bubbleDown({
-			["timeline"] = { "added 2.1.2", "removed 2.3.0.7501" },
-			-- #if BEFORE 3.0.1
-			["OnUpdate"] = MERCILESS_GLADIATOR_ONUPDATE,
-			-- #endif
-		}, n(ACHIEVEMENTS, {
-			classicAch(418, {	-- Merciless Gladiator: Burning Crusade Season 2
-				title(37),	-- Merciless Gladiator <Name>
-			}),
-			classicAch(887, {	-- Merciless Nether Drake
-				["provider"] = { "i", 34092 },	-- Merciless Nether Drake
-				["filterID"] = MOUNTS,
-			}),
-			i(34092, {	-- Merciless Nether Drake
-				["description"] = "Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",
-			}),
-		})),
 	})),
 	applyclassicphase(TBC_PHASE_THREE, n(SEASON_VENGEFUL, {
+		bubbleDown({
+			["timeline"] = { "added 2.3.0.7501", "removed 2.4.3.8600" },
+			-- #if BEFORE 3.0.1
+			["OnUpdate"] = VENGEFUL_GLADIATOR_ONUPDATE,
+			-- #endif
+		}, n(ACHIEVEMENTS, {
+			classicAch(419, {	-- Vengeful Gladiator: Burning Crusade Season 3
+				title(40),	-- Vengeful Gladiator <Name>
+			}),
+			classicAch(888, {	-- Vengeful Nether Drake
+				["provider"] = { "i", 37676 },	-- Vengeful Nether Drake
+				["filterID"] = MOUNTS,
+			}),
+			i(37676, {	-- Vengeful Nether Drake
+				["description"] = "Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",
+			}),
+		})),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
 				i(146649, {	-- Arsenal: Vengeful Gladiator's Weapons [ Horde / Alliance / Tested ]
@@ -2788,25 +2805,25 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				})),
 			}),
 		}),
-		bubbleDown({
-			["timeline"] = { "added 2.3.0.7501", "removed 2.4.3.8600" },
-			-- #if BEFORE 3.0.1
-			["OnUpdate"] = VENGEFUL_GLADIATOR_ONUPDATE,
-			-- #endif
-		}, n(ACHIEVEMENTS, {
-			classicAch(419, {	-- Vengeful Gladiator: Burning Crusade Season 3
-				title(40),	-- Vengeful Gladiator <Name>
-			}),
-			classicAch(888, {	-- Vengeful Nether Drake
-				["provider"] = { "i", 37676 },	-- Vengeful Nether Drake
-				["filterID"] = MOUNTS,
-			}),
-			i(37676, {	-- Vengeful Nether Drake
-				["description"] = "Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",
-			}),
-		})),
 	})),
 	applyclassicphase(TBC_PHASE_FIVE, n(SEASON_BRUTAL, {
+		bubbleDown({
+			["timeline"] = { "added 2.4.3.8600", "removed 3.0.1" },
+			-- #if BEFORE 4.0.1
+			["OnUpdate"] = BRUTAL_GLADIATOR_ONUPDATE,
+			-- #endif
+		}, n(ACHIEVEMENTS, {
+			classicAch(420, {	-- Brutal Gladiator: Burning Crusade Season 4
+				title(49),	-- Brutal Gladiator <Name>
+			}),
+			classicAch(2316, {	-- Brutal Nether Drake
+				["provider"] = { "i", 43516 },	-- Brutal Nether Drake
+				["filterID"] = MOUNTS,
+			}),
+			i(43516, {	-- Brutal Nether Drake
+				["description"] = "Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",
+			}),
+		})),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
 				i(146648, {	-- Arsenal: Brutal Gladiator's Weapons [ Horde / Alliance / Tested ]
@@ -3615,23 +3632,6 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 			}),
 		}),
-		bubbleDown({
-			["timeline"] = { "added 2.4.3.8600", "removed 3.0.1" },
-			-- #if BEFORE 4.0.1
-			["OnUpdate"] = BRUTAL_GLADIATOR_ONUPDATE,
-			-- #endif
-		}, n(ACHIEVEMENTS, {
-			classicAch(420, {	-- Brutal Gladiator: Burning Crusade Season 4
-				title(49),	-- Brutal Gladiator <Name>
-			}),
-			classicAch(2316, {	-- Brutal Nether Drake
-				["provider"] = { "i", 43516 },	-- Brutal Nether Drake
-				["filterID"] = MOUNTS,
-			}),
-			i(43516, {	-- Brutal Nether Drake
-				["description"] = "Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",
-			}),
-		})),
 	})),
 }))))));
 -- #if AFTER LEGION
