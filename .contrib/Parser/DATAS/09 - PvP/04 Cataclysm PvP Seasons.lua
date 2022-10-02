@@ -2220,7 +2220,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(67466)), -- Vicious Gladiator's Hatchet (Throw wep) wrong label by blizz
 				}),
 			})),
-			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 4.0.3", "removed 4.2.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 4.0.3", "removed 4.2.0" }, }, {
 				ach(5344, {	-- Hero of the Alliance: Vicious
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3614,7 +3614,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(70198)),	-- Ruthless Gladiator's War Edge (Throw Wep)
 				}),
 			})),
-			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 4.2.0", "removed 4.3.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 4.2.0", "removed 4.3.0" }, }, {
 				ach(6316, {	-- Hero of the Alliance: Ruthless
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -4721,7 +4721,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73412)),	-- Cataclysmic Gladiator's War Edge (Throw Wep)
 				}),
 			})),
-			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 4.3.0", "removed 5.0.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 4.3.0", "removed 5.0.0" }, }, {
 				ach(6939, {	-- Hero of the Alliance: Cataclysmic
 					["races"] = ALLIANCE_ONLY,
 				}),

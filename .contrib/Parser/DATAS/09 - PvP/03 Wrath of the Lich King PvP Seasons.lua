@@ -1827,7 +1827,7 @@ root("PVP", applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDow
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
 			-- #endif
-		}, n(REWARDS, {
+		}, n(ACHIEVEMENTS, {
 			classicAch(3336, {	-- Deadly Gladiator: Wrath of the Lich King Season 1
 				title(56),	-- Deadly Gladiator <Name>
 			}),
@@ -2572,7 +2572,7 @@ root("PVP", applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDow
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
 			-- #endif
-		}, n(REWARDS, {
+		}, n(ACHIEVEMENTS, {
 			classicAch(3436, {	-- Furious Gladiator: Wrath of the Lich King Season 2
 				title(132),	-- Furious Gladiator <Name>
 			}),
@@ -3335,7 +3335,7 @@ root("PVP", applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDow
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
 			-- #endif
-		}, n(REWARDS, {
+		}, n(ACHIEVEMENTS, {
 			ach(3758, {	-- Relentless Gladiator: Wrath of the Lich King Season 3
 				title(134),	-- Relentless Gladiator <Name>
 			}),
@@ -4089,7 +4089,7 @@ root("PVP", applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDow
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = WRATHFUL_GLADIATOR_ONUPDATE,
 			-- #endif
-		}, n(REWARDS, {
+		}, n(ACHIEVEMENTS, {
 			classicAch(4599, {	-- Wrathful Gladiator: Wrath of the Lich King Season  4
 				title(142),	-- Wrathful Gladiator <Name>
 			}),

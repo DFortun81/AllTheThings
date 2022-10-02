@@ -3154,7 +3154,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115908)),	-- Primal Gladiator's Plate Warboots
 				}),
 			}),
-			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 6.0.3", "removed 6.2.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 6.0.3", "removed 6.2.0" }, }, {
 				ach(9242),	-- Challenger: Warlords of Draenor Season 1
 				ach(9996, {	-- Defender of the Alliance: Warlords of Draenor Season 1
 					["races"] = ALLIANCE_ONLY,
@@ -6448,7 +6448,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125722)),	-- Wild Gladiator's Plate Warboots
 				}),
 			}),
-			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 6.2.0", "removed 6.2.2" }, }, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 6.2.0", "removed 6.2.2" }, }, {
 				ach(10101),	-- Challenger: Warlords of Draenor Season 2
 				ach(10106, {	-- Defender of the Alliance: Warlords of Draenor Season 2
 					["races"] = ALLIANCE_ONLY,
@@ -9756,7 +9756,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(126893)), -- Warmongering Gladiator's Plate Shoulders
 				}),
 			}),
-			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 6.2.2", "removed 7.0.3" }, }, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 6.2.2", "removed 7.0.3" }, }, {
 				ach(10113),	-- Challenger: Warlords of Draenor Season 3
 				ach(10118, {	-- Defender of the Alliance: Warlords of Draenor Season 3
 					["races"] = ALLIANCE_ONLY,
