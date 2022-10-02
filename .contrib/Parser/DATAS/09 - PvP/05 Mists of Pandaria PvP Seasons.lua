@@ -8705,10 +8705,13 @@ _.PVP =
 			}, n(REWARDS, {
 				ach(8649),	-- Challenger: Mists of Pandaria Season 3/Season 14
 				ach(8645, {	-- Duelist: Mists of Pandaria Season 3/Season 14
-					i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-					--	["timeline"] = { "added 7.3.2" },
-						illusion(5396),		-- Glorious Tyranny
-					}),
+					-- #if AFTER 7.3.2
+					["g"] = {
+						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
+							illusion(5396),		-- Glorious Tyranny
+						})),
+					},
+					-- #endif
 				}),
 				ach(8644),	-- Gladiator: Mists of Pandaria Season 3/Season 14
 				ach(8485, {	-- Grievous Combatant (Alliance) Mists of Pandaria Season 3/Season 14
@@ -8729,9 +8732,23 @@ _.PVP =
 				}),
 				ach(8654, {	-- Hero of the Alliance: Grievous
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER 7.3.2
+					["g"] = {
+						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
+							illusion(5396),		-- Glorious Tyranny
+						})),
+					},
+					-- #endif
 				}),
 				ach(8657, {	-- Hero of the Horde: Grievous
 					["races"] = HORDE_ONLY,
+					-- #if AFTER 7.3.2
+					["g"] = {
+						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
+							illusion(5396),		-- Glorious Tyranny
+						})),
+					},
+					-- #endif
 				}),
 				ach(8646),	-- Rival: Mists of Pandaria Season 3/Season 14
 			})),
@@ -10405,20 +10422,35 @@ _.PVP =
 			}, n(REWARDS, {
 				ach(8670),	-- Challenger: Mists of Pandaria Season 4/Season 15
 				ach(8668, {	-- Duelist: Mists of Pandaria Season 4/Season 15
-					i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-					--	["timeline"] = { "added 7.3.2" },
-						illusion(5396),		-- Glorious Tyranny
-					}),
+					-- #if AFTER 7.3.2
+					["g"] = {
+						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
+							illusion(5396),		-- Glorious Tyranny
+						})),
+					},
+					-- #endif
 				}),
 				ach(8667),	-- Gladiator: Mists of Pandaria Season 4/Season 15
 				ach(8658, {	-- Hero of the Alliance: Prideful
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER 7.3.2
+					["g"] = {
+						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
+							illusion(5396),		-- Glorious Tyranny
+						})),
+					},
+					-- #endif
 				}),
 				ach(8659, {	-- Hero of the Horde: Prideful
 					["races"] = HORDE_ONLY,
+					-- #if AFTER 7.3.2
+					["g"] = {
+						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
+							illusion(5396),		-- Glorious Tyranny
+						})),
+					},
+					-- #endif
 				}),
-				-- Sometimes under Legacy, sometimes under FoS.
-				-- We put them all under FoS in ATT.
 				ach(8642, {	-- Prideful Combatant (Alliance) Mists of Pandaria Season 4/Season 15
 					["races"] = ALLIANCE_ONLY,
 				}),
