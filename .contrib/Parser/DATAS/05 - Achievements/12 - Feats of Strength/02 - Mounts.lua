@@ -77,11 +77,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(10999, {	-- Vindictive Gladiator's Storm Dragon
 			un(REMOVED_FROM_GAME, i(141843)),	-- Vindictive Gladiator's Storm Dragon (MOUNT!)
 		})),
-		un(REMOVED_FROM_GAME, ach(10146, {	-- Warmongering Gladiator's Felblood Gronnling
-			un(REMOVED_FROM_GAME, i(128282)),	-- Warmongering Gladiator's Felblood Gronnling (MOUNT!)
-		})),
-		un(REMOVED_FROM_GAME, ach(10137, {	-- Wild Gladiator's Felblood Gronnling
-			un(REMOVED_FROM_GAME, i(128281)),	-- Wild Gladiator's Felblood Gronnling (MOUNT!)
-		})),
 	}),
 }));

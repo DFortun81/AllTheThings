@@ -8707,7 +8707,9 @@ _.PVP =
 					},
 					-- #endif
 				}),
-				ach(8644),	-- Gladiator: Mists of Pandaria Season 3/Season 14
+				ach(8644, {	-- Gladiator: Mists of Pandaria Season 3/Season 14
+					i(104326),	-- Grievous Gladiator's Cloud Serpent
+				}),
 				ach(8485, {	-- Grievous Combatant (Alliance) Mists of Pandaria Season 3/Season 14
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -8720,9 +8722,6 @@ _.PVP =
 				ach(8705, {	-- Grievous Gladiator's Cloud Serpent
 					["provider"] = { "i", 104326 },	-- Grievous Gladiator's Cloud Serpent
 					["filterID"] = MOUNTS,
-				}),
-				i(104326, {	-- Grievous Gladiator's Cloud Serpent
-					["description"] = "Awarded to members of the Arena teams during MoP Season 3 that were in the 0.5% bracket of their battlegroup.",
 				}),
 				ach(8654, {	-- Hero of the Alliance: Grievous
 					["races"] = ALLIANCE_ONLY,
@@ -10422,7 +10421,9 @@ _.PVP =
 					},
 					-- #endif
 				}),
-				ach(8667),	-- Gladiator: Mists of Pandaria Season 4/Season 15
+				ach(8667, {	-- Gladiator: Mists of Pandaria Season 4/Season 15
+					i(104327),	-- Prideful Gladiator's Cloud Serpent
+				}),
 				ach(8658, {	-- Hero of the Alliance: Prideful
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 7.3.2
@@ -10455,9 +10456,6 @@ _.PVP =
 				ach(8707, {	-- Prideful Gladiator's Cloud Serpent
 					["provider"] = { "i", 104327 },	-- Prideful Gladiator's Cloud Serpent
 					["filterID"] = MOUNTS,
-				}),
-				i(104327, {	-- Prideful Gladiator's Cloud Serpent
-					["description"] = "Awarded to members of the Arena teams during MoP Season 4 that were in the 0.5% bracket of their battlegroup.",
 				}),
 				ach(8669),	-- Rival: Mists of Pandaria Season 4/Season 15
 			})),
