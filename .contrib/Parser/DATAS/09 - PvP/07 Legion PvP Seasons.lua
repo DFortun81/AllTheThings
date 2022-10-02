@@ -6,7 +6,7 @@ _.PVP =
 {
 	pvp(tier(LEGION_TIER, {
 		n(SEASON_VINDICTIVE, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3", "removed 7.1.23222" } }, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3", "removed 7.1.0.23222" } }, {
 				ach(11017),	-- Challenger: Legion Season 1
 				ach(11022, {	-- Defender of the Alliance: Legion Season 1
 					["races"] = ALLIANCE_ONLY,
