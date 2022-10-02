@@ -62,9 +62,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			},
 			["timeline"] = { "removed 1.4.0" },
 		}),
-		un(REMOVED_FROM_GAME, ach(9229, {	-- Primal Gladiator's Felblood Gronnling
-			un(REMOVED_FROM_GAME, i(128277)),	-- Primal Gladiator's Felblood Gronnling (MOUNT!)
-		})),
 		ach(5767, {			-- Scourer of the Eternal Sands
 			title(143),		-- the Camel-Hoarder
 		}),

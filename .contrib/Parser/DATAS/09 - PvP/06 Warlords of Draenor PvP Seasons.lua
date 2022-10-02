@@ -3154,6 +3154,100 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115908)),	-- Primal Gladiator's Plate Warboots
 				}),
 			}),
+			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added added 6.0.3", "removed 6.2.0" }, }, {
+				ach(9242),	-- Challenger: Warlords of Draenor Season 1
+				ach(9996, {	-- Defender of the Alliance: Warlords of Draenor Season 1
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(10001, {	-- Defender of the Horde: Warlords of Draenor Season 1
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(9240),	-- Duelist: Warlords of Draenor Season 1
+				ach(9239),	-- Gladiator: Warlords of Draenor Season 1
+				ach(9997, {	-- Guardian of the Alliance: Warlords of Draenor Season 1
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(10000, {	-- Guardian of the Horde: Warlords of Draenor Season 1
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(9230, {	-- Hero of the Alliance: Primal
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(9231, {	-- Hero of the Horde: Primal
+					["races"] = HORDE_ONLY,
+				}),
+				ach(9238, {	-- Primal Combatant (Alliance) Warlords of Draenor Season 1
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(9236, {	-- Primal Combatant (Horde) Warlords of Draenor Season 1
+					["races"] = HORDE_ONLY,
+				}),
+				ach(9232, {	-- Primal Gladiator: Warlords of Draenor Season 1
+					title(308),	-- Primal Gladiator <Name>
+				}),
+				ach(9229, {	-- Primal Gladiator's Felblood Gronnling
+					["provider"] = { "i", 128277 },	-- Primal Gladiator's Felblood Gronnling
+					["filterID"] = MOUNTS,
+				}),
+				i(128277, {	-- Primal Gladiator's Felblood Gronnling
+					["description"] = "Awarded to members of the Arena teams during WoD Season 1 that were in the 0.5% bracket of their battlegroup.",
+				}),
+				ach(9241),	-- Rival: Warlords of Draenor Season 1
+				ach(9995, {	-- Soldier of the Alliance: Warlords of Draenor Season 1
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(9998, {	-- Soldier of the Horde: Warlords of Draenor Season 1
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+			})),
 		}),
 		n(SEASON_WILD, {
 			un(REMOVED_FROM_GAME, i(120356)),	-- Bronze Strongbox
