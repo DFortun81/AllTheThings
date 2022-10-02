@@ -4,14 +4,11 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 	achcat(ACHIEVEMENT_CATEGORY_MOUNTS_FOS, {
-		un(REMOVED_FROM_GAME, ach(6741, {	-- Cataclysmic Gladiator's Twilight Drake
-			un(REMOVED_FROM_GAME, i(85785)),	-- Cataclysmic Gladiator's Twilight Drake (MOUNT!)
-		})),
 		un(BLACK_MARKET, ach(14183)),			-- Conspicuous Consumption
 		un(REMOVED_FROM_GAME, ach(13958, {	-- Corrupted Gladiator's Proto-Drake
 			un(REMOVED_FROM_GAME, i(156884)),	-- Corrupted Gladiator's Proto-Drake (MOUNT!)
 		})),
-		pvp(ach(15384, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cosmic Gladiator's Soul Eater
+		pvp(ach(15384, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {	-- Cosmic Gladiator's Soul Eater
 			i(189507),	-- Cosmic Gladiator's Soul Eater (MOUNT!)
 		}))),
 		un(REMOVED_FROM_GAME, ach(11001, {	-- Cruel Gladiator's Storm Dragon
@@ -43,12 +40,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(8794)),	-- Friends In Places Even Higher Than That
 		un(REMOVED_FROM_GAME, ach(8213)),	-- Friends In Places Higher Yet
 		un(REMOVED_FROM_GAME, ach(9925)),	-- Friends In Places Yet Even Higher Than That
-		un(REMOVED_FROM_GAME, ach(8705, {	-- Grievous Gladiator's Cloud Serpent
-			un(REMOVED_FROM_GAME, i(104326)),	-- Grievous Gladiator's Cloud Serpent (MOUNT!)
-		})),
-		un(REMOVED_FROM_GAME, ach(8216, {	-- Malevolent Gladiator's Cloud Serpent
-			un(REMOVED_FROM_GAME, i(95041)),	-- Malevolent Gladiator's Cloud Serpent (MOUNT!)
-		})),
 		un(REMOVED_FROM_GAME, ach(13632, {	-- Notoroious Gladiator's Proto-Drake
 			un(REMOVED_FROM_GAME, i(156881)),	-- Notoroious Gladiator's Proto-Drake (MOUNT!)
 		})),
@@ -71,14 +62,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			},
 			["timeline"] = { "removed 1.4.0" },
 		}),
-		un(REMOVED_FROM_GAME, ach(8707, {	-- Prideful Gladiator's Cloud Serpent
-			un(REMOVED_FROM_GAME, i(104327)),	-- Prideful Gladiator's Cloud Serpent (MOUNT!)
-		})),
 		un(REMOVED_FROM_GAME, ach(9229, {	-- Primal Gladiator's Felblood Gronnling
 			un(REMOVED_FROM_GAME, i(128277)),	-- Primal Gladiator's Felblood Gronnling (MOUNT!)
-		})),
-		un(REMOVED_FROM_GAME, ach(6322, {	-- Ruthless Gladiator's Twilight Drake
-			un(REMOVED_FROM_GAME, i(71954)),	-- Ruthless Gladiator's Twilight Drake (MOUNT!)
 		})),
 		ach(5767, {			-- Scourer of the Eternal Sands
 			title(143),		-- the Camel-Hoarder
@@ -89,14 +74,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(13202, {	-- Sinister Gladiator's Proto-Drake
 			un(REMOVED_FROM_GAME, i(156880)),	-- Sinister Gladiator's Proto-Drake (MOUNT!)
 		})),
-		un(REMOVED_FROM_GAME, ach(8678, {	-- Tyrannical Gladiator's Cloud Serpent
-			un(REMOVED_FROM_GAME, i(104325)),	-- Tyrannical Gladiator's Cloud Serpent (MOUNT!)
-		})),
 		ach(14999, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {	-- Unchained Gladiator's Soul Eater
 			i(186177),	-- Unchained Gladiator's Soul Eater (MOUNT!)
-		})),
-		un(REMOVED_FROM_GAME, ach(6003, {	-- Vicious Gladiator's Twilight Drake
-			un(REMOVED_FROM_GAME, i(71339)),	-- Vicious Gladiator's Twilight Drake (MOUNT!)
 		})),
 		un(REMOVED_FROM_GAME, ach(10999, {	-- Vindictive Gladiator's Storm Dragon
 			un(REMOVED_FROM_GAME, i(141843)),	-- Vindictive Gladiator's Storm Dragon (MOUNT!)
