@@ -3154,7 +3154,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115908)),	-- Primal Gladiator's Plate Warboots
 				}),
 			}),
-			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added added 6.0.3", "removed 6.2.0" }, }, {
+			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 6.0.3", "removed 6.2.0" }, }, {
 				ach(9242),	-- Challenger: Warlords of Draenor Season 1
 				ach(9996, {	-- Defender of the Alliance: Warlords of Draenor Season 1
 					["races"] = ALLIANCE_ONLY,
