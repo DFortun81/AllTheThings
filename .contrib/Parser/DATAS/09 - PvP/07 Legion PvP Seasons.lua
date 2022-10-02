@@ -6,6 +6,100 @@ _.PVP =
 {
 	pvp(tier(LEGION_TIER, {
 		n(SEASON_VINDICTIVE, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3", "removed 7.1.23222" } }, {
+				ach(11017),	-- Challenger: Legion Season 1
+				ach(11022, {	-- Defender of the Alliance: Legion Season 1
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11023, {	-- Defender of the Horde: Legion Season 1
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11015),		-- Duelist: Legion Season 1
+				ach(11011, {	-- Gladiator: Legion Season 1
+					i(141843),	-- Vindictive Gladiator's Storm Dragon (MOUNT!)
+				}),
+				ach(11020, {	-- Guardian of the Alliance: Legion Season 1
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11021, {	-- Guardian of the Horde: Legion Season 1
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11018, {	-- Hero of the Alliance: Vindictive
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(11019, {	-- Hero of the Horde: Vindictive
+					["races"] = HORDE_ONLY,
+				}),
+				ach(11016),	-- Rival: Legion Season 1
+				ach(11036, {	-- Soldier of the Alliance: Legion Season 1
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11025, {	-- Soldier of the Horde: Legion Season 1
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(10998, {	-- Vindictive Combatant (Alliance) Legion Season 1
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(10997, {	-- Vindictive Combatant (Horde) Legion Season 1
+					["races"] = HORDE_ONLY,
+				}),
+				ach(11578),	-- Vindictive Elite
+				ach(11012, {	-- Vindictive Gladiator: Legion Season 1
+					title(353),	-- Vindictive Gladiator <Name>
+				}),
+				ach(10999, {	-- Vindictive Gladiator's Storm Dragon
+					["provider"] = { "i", 141843 },	-- Vindictive Gladiator's Storm Dragon (MOUNT!)
+					["filterID"] = MOUNTS,
+				}),
+			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				n(PVP_COMBATANT, {
 					cl(DEATHKNIGHT, {
@@ -2407,6 +2501,100 @@ _.PVP =
 			}),
 		}),
 		n(SEASON_FEARLESS, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.1.23222", "removed 7.2.0" } }, {
+				ach(11028),	-- Challenger: Legion Season 2
+				ach(11034, {	-- Defender of the Alliance: Legion Season 2
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11033, {	-- Defender of the Horde: Legion Season 2
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11026),	-- Duelist: Legion Season 2
+				ach(11004, {	-- Fearless Combatant (Alliance) Legion Season 2
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(11003, {	-- Fearless Combatant (Horde) Legion Season 2
+					["races"] = HORDE_ONLY,
+				}),
+				ach(11579),	-- Fearless Elite
+				ach(11014, {	-- Fearless Gladiator: Legion Season 2
+					title(355),	-- Fearless Gladiator <Name>
+				}),
+				ach(11000, {	-- Fearless Gladiator's Storm Dragon
+					["provider"] = { "i", 141844 },	-- Fearless Gladiator's Storm Dragon (MOUNT!)
+					["filterID"] = MOUNTS,
+				}),
+				ach(11013, {	-- Gladiator: Legion Season 2
+					i(141844),	-- Fearless Gladiator's Storm Dragon (MOUNT!)
+				}),
+				ach(11032, {	-- Guardian of the Alliance: Legion Season 2
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11031, {	-- Guardian of the Horde: Legion Season 2
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11030, {	-- Hero of the Alliance: Fearless
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(11029, {	-- Hero of the Horde: Fearless
+					["races"] = HORDE_ONLY,
+				}),
+				ach(11027),	-- Rival: Legion Season 2
+				ach(11036, {	-- Soldier of the Alliance: Legion Season 2
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11035, {	-- Soldier of the Horde: Legion Season 2
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				n(PVP_COMBATANT, {
 					cl(DEATHKNIGHT, {
@@ -3367,6 +3555,100 @@ _.PVP =
 			}),
 		}),
 		n(SEASON_CRUEL, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.2.0", "removed 7.2.5" } }, {
+				ach(11039),	-- Challenger: Legion Season 3
+				ach(11008, {	-- Cruel Combatant (Alliance) Legion Season 3
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(11005, {	-- Cruel Combatant (Horde) Legion Season 3
+					["races"] = HORDE_ONLY,
+				}),
+				ach(11697),	-- Cruel Elite
+				ach(11037, {	-- Cruel Gladiator: Legion Season 3
+					title(359),	-- Cruel Gladiator <Name>
+				}),
+				ach(11001, {	-- Cruel Gladiator's Storm Dragon
+					["provider"] = { "i", 141845 },	-- Cruel Gladiator's Storm Dragon (MOUNT!)
+					["filterID"] = MOUNTS,
+				}),
+				ach(11045, {	-- Defender of the Alliance: Legion Season 3
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11044, {	-- Defender of the Horde: Legion Season 3
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11041),	-- Duelist: Legion Season 3
+				ach(11038, {	-- Gladiator: Legion Season 3
+					i(141845),	-- Cruel Gladiator's Storm Dragon (MOUNT!)
+				}),
+				ach(11047, {	-- Guardian of the Alliance: Legion Season 3
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11046, {	-- Guardian of the Horde: Legion Season 3
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11043, {	-- Hero of the Alliance: Cruel
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(11042, {	-- Hero of the Horde: Cruel
+					["races"] = HORDE_ONLY,
+				}),
+				ach(11040),	-- Rival: Legion Season 3
+				ach(11049, {	-- Soldier of the Alliance: Legion Season 3
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11048, {	-- Soldier of the Horde: Legion Season 3
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				n(PVP_COMBATANT, {
 					cl(DEATHKNIGHT, {
@@ -5811,6 +6093,100 @@ _.PVP =
 			}),
 		}),
 		n(SEASON_FEROCIOUS, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.2.5", "removed 7.3.0" } }, {
+				ach(11060),	-- Challenger: Legion Season 4
+				ach(11054, {	-- Defender of the Alliance: Legion Season 4
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11055, {	-- Defender of the Horde: Legion Season 4
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11058),	-- Duelist: Legion Season 4
+				ach(11010, {	-- Ferocious Combatant (Alliance): Legion Season 4
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(11009, {	-- Ferocious Combatant (Horde): Legion Season 4
+					["races"] = HORDE_ONLY,
+				}),
+				ach(11698),	-- Ferocious Elite
+				ach(11062, {	-- Ferocious Gladiator: Legion Season 4
+					title(360),	-- Ferocious Gladiator <Name>
+				}),
+				ach(11002, {	-- Ferocious Gladiator's Storm Dragon
+					["provider"] = { "i", 141846 },	-- Ferocious Gladiator's Storm Dragon (MOUNT!)
+					["filterID"] = MOUNTS,
+				}),
+				ach(11052, {	-- Guardian of the Alliance: Legion Season 4
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11053, {	-- Guardian of the Horde: Legion Season 4
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11061, {	-- Gladiator: Legion Season 4
+					i(141846),	-- Ferocious Gladiator's Storm Dragon (MOUNT!)
+				}),
+				ach(11056, {	-- Hero of the Alliance: Ferocious
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(11057, {	-- Hero of the Horde: Ferocious
+					["races"] = HORDE_ONLY,
+				}),
+				ach(11059),	-- Rival: Legion Season 4
+				ach(11050, {	-- Soldier of the Alliance: Legion Season 4
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(11051, {	-- Soldier of the Horde: Legion Season 4
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				n(PVP_COMBATANT, {
 					cl(DEATHKNIGHT, {
@@ -6879,6 +7255,100 @@ _.PVP =
 			}),
 		}),
 		n(SEASON_FIERCE, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.3.0", "removed 7.3.25195" } }, { -- Antorus Opening
+				ach(12036),	-- Challenger: Legion Season 5
+				ach(12039, {	-- Defender of the Alliance: Legion Season 5
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(12043, {	-- Defender of the Horde: Legion Season 5
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(12034),	-- Duelist: Legion Season 5
+				ach(12032, {	-- Fierce  Combatant (Alliance): Legion Season 5
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(12031, {	-- Fierce  Combatant (Horde): Legion Season 5
+					["races"] = HORDE_ONLY,
+				}),
+				ach(12090),	-- Fierce Elite
+				ach(12010, {	-- Fierce Gladiator: Legion Season 5
+					title(363),	-- Fierce Gladiator <Name>
+				}),
+				ach(13450, {	-- Fierce Gladiator's Storm Dragon
+					["provider"] = { "i", 141847 },	-- Fierce Gladiator's Storm Dragon (MOUNT!)
+					["filterID"] = MOUNTS,
+				}),
+				ach(12045, {	-- Gladiator: Legion Season 5
+					i(141847),	-- Fierce Gladiator's Storm Dragon (MOUNT!)
+				}),
+				ach(12038, {	-- Guardian of the Alliance: Legion Season 5
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(12042, {	-- Guardian of the Horde: Legion Season 5
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(12037, {	-- Hero of the Alliance: Fierce
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(12041, {	-- Hero of the Horde: Fierce
+					["races"] = HORDE_ONLY,
+				}),
+				ach(12035),	-- Rival: Legion Season 5
+				ach(12040, {	-- Soldier of the Alliance: Legion Season 5
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(12044, {	-- Soldier of the Horde: Legion Season 5
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				n(PVP_COMBATANT, {
 					cl(DEATHKNIGHT, {
@@ -10043,6 +10513,100 @@ _.PVP =
 			}),
 		}),
 		n(SEASON_DOMINANT, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.3.25195", "removed 7.3.26365" } }, { -- Antorus Opening till March 20th
+				ach(12169),	-- Challenger: Legion Season 6
+				ach(12175, {	-- Defender of the Alliance: Legion Season 6
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(12174, {	-- Defender of the Horde: Legion Season 6
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(12137, {	-- Dominant Combatant (Alliance): Legion Season 6
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(12136, {	-- Dominant Combatant (Horde): Legion Season 6
+					["races"] = HORDE_ONLY,
+				}),
+				ach(12135),	-- Dominant Elite
+				ach(12134, {	-- Dominant Gladiator: Legion Season 6
+					title(368),	-- Dominant Gladiator <Name>
+				}),
+				ach(12139, {	-- Dominant Gladiator's Storm Dragon
+					["provider"] = { "i", 141848 },	-- Dominant Gladiator's Storm Dragon (MOUNT!)
+					["filterID"] = MOUNTS,
+				}),
+				ach(12171),	-- Duelist: Legion Season 6
+				ach(12167, {	-- Gladiator: Legion Season 6
+					i(141848),	-- Dominant Gladiator's Storm Dragon (MOUNT!)
+				}),
+				ach(12177, {	-- Guardian of the Alliance: Legion Season 6
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(12176, {	-- Guardian of the Horde: Legion Season 6
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(12173, {	-- Hero of the Alliance: Dominant
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(12172, {	-- Hero of the Horde: Dominant
+					["races"] = HORDE_ONLY,
+				}),
+				ach(12170),	-- Rival: Legion Season 6
+				ach(12179, {	-- Soldier of the Alliance: Legion Season 6
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(12178, {	-- Soldier of the Horde: Legion Season 6
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				n(PVP_COMBATANT, {
 					cl(DEATHKNIGHT, {
@@ -11175,6 +11739,100 @@ _.PVP =
 			}),
 		}),
 		n(SEASON_DEMONIC, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.3.26365", "removed 8.0.1" } }, { 
+				ach(12187),	-- Challenger: Legion Season 7
+				ach(12195, {	-- Defender of the Alliance: Legion Season 7
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(12194, {	-- Defender of the Horde: Legion Season 7
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(12200, {	-- Demonic Combatant (Alliance): Legion Season 7
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(12199, {	-- Demonic Combatant (Horde): Legion Season 7
+					["races"] = HORDE_ONLY,
+				}),
+				ach(12198),	-- Demonic Elite
+				ach(12185, {	-- Demonic Gladiator: Legion Season 7
+					title(370),	-- Demonic Gladiator <Name>
+				}),
+				ach(12140, {	-- Demonic Gladiator's Storm Dragon
+					["provider"] = { "i", 153493 },	-- Demonic Gladiator's Storm Dragon (MOUNT!)
+					["filterID"] = MOUNTS,
+				}),
+				ach(12186),	-- Duelist: Legion Season 7
+				ach(12168, {	-- Gladiator: Legion Season 7
+					i(153493),	-- Demonic Gladiator's Storm Dragon (MOUNT!)
+				}),
+				ach(12191, {	-- Guardian of the Alliance: Legion Season 7
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(12192, {	-- Guardian of the Horde: Legion Season 7
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(12197, {	-- Hero of the Alliance: Demonic
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(12196, {	-- Hero of the Horde: Demonic
+					["races"] = HORDE_ONLY,
+				}),
+				ach(12188),	-- Rival: Legion Season 7
+				ach(12189, {	-- Soldier of the Alliance: Legion Season 7
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(12190, {	-- Soldier of the Horde: Legion Season 7
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				n(PVP_COMBATANT, {
 					cl(DEATHKNIGHT, {

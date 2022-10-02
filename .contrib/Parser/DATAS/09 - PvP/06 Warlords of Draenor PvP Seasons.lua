@@ -14,6 +14,121 @@ _.PVP =
 			un(REMOVED_FROM_GAME, i(111600)),	-- Bronze Strongbox
 			un(REMOVED_FROM_GAME, i(111599)),	-- Silver Strongbox
 			un(REMOVED_FROM_GAME, i(111598)),	-- Gold Strongbox
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 6.0.3", "removed 6.2.0" }, }, {
+				ach(9242),	-- Challenger: Warlords of Draenor Season 1
+				ach(9996, {	-- Defender of the Alliance: Warlords of Draenor Season 1
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(310, {	-- <Name> Defender of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(10001, {	-- Defender of the Horde: Warlords of Draenor Season 1
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(313, {	-- <Name> Defender of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(9240, {	-- Duelist: Warlords of Draenor Season 1
+					-- #if AFTER 7.3.2
+					["g"] = {
+						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
+							illusion(5397),		-- Primal Victory
+						})),
+					},
+					-- #endif
+				}),
+				ach(9239, {	-- Gladiator: Warlords of Draenor Season 1
+					i(128277),	-- Primal Gladiator's Felblood Gronnling
+				}),
+				ach(9997, {	-- Guardian of the Alliance: Warlords of Draenor Season 1
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(309, {	-- <Name> Guardian of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(10000, {	-- Guardian of the Horde: Warlords of Draenor Season 1
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(312, {	-- <Name> Guardian of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(9230, {	-- Hero of the Alliance: Primal
+					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER 7.3.2
+					["g"] = {
+						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
+							illusion(5397),		-- Primal Victory
+						})),
+					},
+					-- #endif
+				}),
+				ach(9231, {	-- Hero of the Horde: Primal
+					["races"] = HORDE_ONLY,
+					-- #if AFTER 7.3.2
+					["g"] = {
+						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
+							illusion(5397),		-- Primal Victory
+						})),
+					},
+					-- #endif
+				}),
+				ach(9238, {	-- Primal Combatant (Alliance) Warlords of Draenor Season 1
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(9236, {	-- Primal Combatant (Horde) Warlords of Draenor Season 1
+					["races"] = HORDE_ONLY,
+				}),
+				ach(9232, {	-- Primal Gladiator: Warlords of Draenor Season 1
+					title(308),	-- Primal Gladiator <Name>
+				}),
+				ach(9229, {	-- Primal Gladiator's Felblood Gronnling
+					["provider"] = { "i", 128277 },	-- Primal Gladiator's Felblood Gronnling
+					["filterID"] = MOUNTS,
+				}),
+				ach(9241),	-- Rival: Warlords of Draenor Season 1
+				ach(9995, {	-- Soldier of the Alliance: Warlords of Draenor Season 1
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						title(311, {	-- <Name> Soldier of the Alliance
+							["races"] = ALLIANCE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+				ach(9998, {	-- Soldier of the Horde: Warlords of Draenor Season 1
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						title(314, {	-- <Name> Soldier of the Horde
+							["races"] = HORDE_ONLY,
+							-- #if AFTER 8.0.1
+							["collectible"] = false,	-- Blizzard....
+							-- #endif
+						}),
+					},
+				}),
+			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -3154,9 +3269,14 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115908)),	-- Primal Gladiator's Plate Warboots
 				}),
 			}),
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 6.0.3", "removed 6.2.0" }, }, {
-				ach(9242),	-- Challenger: Warlords of Draenor Season 1
-				ach(9996, {	-- Defender of the Alliance: Warlords of Draenor Season 1
+		}),
+		n(SEASON_WILD, {
+			un(REMOVED_FROM_GAME, i(120356)),	-- Bronze Strongbox
+			un(REMOVED_FROM_GAME, i(120355)),	-- Silver Strongbox
+			un(REMOVED_FROM_GAME, i(120354)),	-- Gold Strongbox
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 6.2.0", "removed 6.2.2" }, }, {
+				ach(10101),	-- Challenger: Warlords of Draenor Season 2
+				ach(10106, {	-- Defender of the Alliance: Warlords of Draenor Season 2
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						title(310, {	-- <Name> Defender of the Alliance
@@ -3167,7 +3287,7 @@ _.PVP =
 						}),
 					},
 				}),
-				ach(10001, {	-- Defender of the Horde: Warlords of Draenor Season 1
+				ach(10107, {	-- Defender of the Horde: Warlords of Draenor Season 2
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						title(313, {	-- <Name> Defender of the Horde
@@ -3178,7 +3298,7 @@ _.PVP =
 						}),
 					},
 				}),
-				ach(9240, {	-- Duelist: Warlords of Draenor Season 1
+				ach(10099, {	-- Duelist: Warlords of Draenor Season 2
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
@@ -3187,10 +3307,10 @@ _.PVP =
 					},
 					-- #endif
 				}),
-				ach(9239, {	-- Gladiator: Warlords of Draenor Season 1
-					i(128277),	-- Primal Gladiator's Felblood Gronnling
+				ach(10098, {	-- Gladiator: Warlords of Draenor Season 2
+					i(128281),	-- Wild Gladiator's Felblood Gronnling
 				}),
-				ach(9997, {	-- Guardian of the Alliance: Warlords of Draenor Season 1
+				ach(10108, {	-- Guardian of the Alliance: Warlords of Draenor Season 2
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						title(309, {	-- <Name> Guardian of the Alliance
@@ -3201,7 +3321,7 @@ _.PVP =
 						}),
 					},
 				}),
-				ach(10000, {	-- Guardian of the Horde: Warlords of Draenor Season 1
+				ach(10109, {	-- Guardian of the Horde: Warlords of Draenor Season 2
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						title(312, {	-- <Name> Guardian of the Horde
@@ -3212,7 +3332,7 @@ _.PVP =
 						}),
 					},
 				}),
-				ach(9230, {	-- Hero of the Alliance: Primal
+				ach(10102, {	-- Hero of the Alliance: Wild
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 7.3.2
 					["g"] = {
@@ -3222,7 +3342,7 @@ _.PVP =
 					},
 					-- #endif
 				}),
-				ach(9231, {	-- Hero of the Horde: Primal
+				ach(10103, {	-- Hero of the Horde: Wild
 					["races"] = HORDE_ONLY,
 					-- #if AFTER 7.3.2
 					["g"] = {
@@ -3232,21 +3352,8 @@ _.PVP =
 					},
 					-- #endif
 				}),
-				ach(9238, {	-- Primal Combatant (Alliance) Warlords of Draenor Season 1
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(9236, {	-- Primal Combatant (Horde) Warlords of Draenor Season 1
-					["races"] = HORDE_ONLY,
-				}),
-				ach(9232, {	-- Primal Gladiator: Warlords of Draenor Season 1
-					title(308),	-- Primal Gladiator <Name>
-				}),
-				ach(9229, {	-- Primal Gladiator's Felblood Gronnling
-					["provider"] = { "i", 128277 },	-- Primal Gladiator's Felblood Gronnling
-					["filterID"] = MOUNTS,
-				}),
-				ach(9241),	-- Rival: Warlords of Draenor Season 1
-				ach(9995, {	-- Soldier of the Alliance: Warlords of Draenor Season 1
+				ach(10100),	-- Rival: Warlords of Draenor Season 2
+				ach(10104, {	-- Soldier of the Alliance: Warlords of Draenor Season 2
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						title(311, {	-- <Name> Soldier of the Alliance
@@ -3257,7 +3364,7 @@ _.PVP =
 						}),
 					},
 				}),
-				ach(9998, {	-- Soldier of the Horde: Warlords of Draenor Season 1
+				ach(10105, {	-- Soldier of the Horde: Warlords of Draenor Season 2
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						title(314, {	-- <Name> Soldier of the Horde
@@ -3268,12 +3375,20 @@ _.PVP =
 						}),
 					},
 				}),
+				ach(10093, {	-- Wild Combatant (Alliance) Warlords of Draenor Season 2
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(10092, {	-- Wild Combatant (Horde) Warlords of Draenor Season 2
+					["races"] = HORDE_ONLY,
+				}),
+				ach(10096, {	-- Wild Gladiator: Warlords of Draenor Season 2
+					title(315),	-- Wild Gladiator <Name>
+				}),
+				ach(10137, {	-- Wild Gladiator's Felblood Gronnling
+					["provider"] = { "i", 128281 },	-- Wild Gladiator's Felblood Gronnling
+					["filterID"] = MOUNTS,
+				}),
 			})),
-		}),
-		n(SEASON_WILD, {
-			un(REMOVED_FROM_GAME, i(120356)),	-- Bronze Strongbox
-			un(REMOVED_FROM_GAME, i(120355)),	-- Silver Strongbox
-			un(REMOVED_FROM_GAME, i(120354)),	-- Gold Strongbox
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -6470,9 +6585,14 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125722)),	-- Wild Gladiator's Plate Warboots
 				}),
 			}),
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 6.2.0", "removed 6.2.2" }, }, {
-				ach(10101),	-- Challenger: Warlords of Draenor Season 2
-				ach(10106, {	-- Defender of the Alliance: Warlords of Draenor Season 2
+		}),
+		n(SEASON_WARMONGERING, {
+			un(REMOVED_FROM_GAME, i(120356)),	-- Bronze Strongbox
+			un(REMOVED_FROM_GAME, i(120355)),	-- Silver Strongbox
+			un(REMOVED_FROM_GAME, i(120354)),	-- Gold Strongbox
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 6.2.2", "removed 7.0.3" }, }, {
+				ach(10113),	-- Challenger: Warlords of Draenor Season 3
+				ach(10118, {	-- Defender of the Alliance: Warlords of Draenor Season 3
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						title(310, {	-- <Name> Defender of the Alliance
@@ -6483,7 +6603,7 @@ _.PVP =
 						}),
 					},
 				}),
-				ach(10107, {	-- Defender of the Horde: Warlords of Draenor Season 2
+				ach(10119, {	-- Defender of the Horde: Warlords of Draenor Season 3
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						title(313, {	-- <Name> Defender of the Horde
@@ -6494,7 +6614,7 @@ _.PVP =
 						}),
 					},
 				}),
-				ach(10099, {	-- Duelist: Warlords of Draenor Season 2
+				ach(10111, {	-- Duelist: Warlords of Draenor Season 3
 					-- #if AFTER 7.3.2
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
@@ -6503,10 +6623,10 @@ _.PVP =
 					},
 					-- #endif
 				}),
-				ach(10098, {	-- Gladiator: Warlords of Draenor Season 2
-					i(128281),	-- Wild Gladiator's Felblood Gronnling
+				ach(10110, {	-- Gladiator: Warlords of Draenor Season 3
+					i(128282),	-- Warmongering Gladiator's Felblood Gronnling (MOUNT!)
 				}),
-				ach(10108, {	-- Guardian of the Alliance: Warlords of Draenor Season 2
+				ach(10116, {	-- Guardian of the Alliance: Warlords of Draenor Season 3
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						title(309, {	-- <Name> Guardian of the Alliance
@@ -6517,7 +6637,7 @@ _.PVP =
 						}),
 					},
 				}),
-				ach(10109, {	-- Guardian of the Horde: Warlords of Draenor Season 2
+				ach(10117, {	-- Guardian of the Horde: Warlords of Draenor Season 3
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						title(312, {	-- <Name> Guardian of the Horde
@@ -6528,7 +6648,7 @@ _.PVP =
 						}),
 					},
 				}),
-				ach(10102, {	-- Hero of the Alliance: Wild
+				ach(10114, {	-- Hero of the Alliance: Warmongering
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 7.3.2
 					["g"] = {
@@ -6538,7 +6658,7 @@ _.PVP =
 					},
 					-- #endif
 				}),
-				ach(10103, {	-- Hero of the Horde: Wild
+				ach(10115, {	-- Hero of the Horde: Warmongering
 					["races"] = HORDE_ONLY,
 					-- #if AFTER 7.3.2
 					["g"] = {
@@ -6548,8 +6668,8 @@ _.PVP =
 					},
 					-- #endif
 				}),
-				ach(10100),	-- Rival: Warlords of Draenor Season 2
-				ach(10104, {	-- Soldier of the Alliance: Warlords of Draenor Season 2
+				ach(10112),	-- Rival: Warlords of Draenor Season 3
+				ach(10120, {	-- Soldier of the Alliance: Warlords of Draenor Season 3
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						title(311, {	-- <Name> Soldier of the Alliance
@@ -6560,7 +6680,7 @@ _.PVP =
 						}),
 					},
 				}),
-				ach(10105, {	-- Soldier of the Horde: Warlords of Draenor Season 2
+				ach(10121, {	-- Soldier of the Horde: Warlords of Draenor Season 3
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						title(314, {	-- <Name> Soldier of the Horde
@@ -6571,25 +6691,20 @@ _.PVP =
 						}),
 					},
 				}),
-				ach(10093, {	-- Wild Combatant (Alliance) Warlords of Draenor Season 2
+				ach(10095, {	-- Warmongering Combatant (Alliance) Warlords of Draenor Season 3
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(10092, {	-- Wild Combatant (Horde) Warlords of Draenor Season 2
+				ach(10094, {	-- Warmongering Combatant (Horde) Warlords of Draenor Season 3
 					["races"] = HORDE_ONLY,
 				}),
-				ach(10096, {	-- Wild Gladiator: Warlords of Draenor Season 2
-					title(315),	-- Wild Gladiator <Name>
+				ach(10097, {	-- Warmongering Gladiator: Warlords of Draenor Season 3
+					title(316),	-- Warmongering Gladiator <Name>
 				}),
-				ach(10137, {	-- Wild Gladiator's Felblood Gronnling
-					["provider"] = { "i", 128281 },	-- Wild Gladiator's Felblood Gronnling
+				ach(10146, {	-- Wild Gladiator's Felblood Gronnling
+					["provider"] = { "i", 128282 },	-- Wild Gladiator's Felblood Gronnling
 					["filterID"] = MOUNTS,
 				}),
 			})),
-		}),
-		n(SEASON_WARMONGERING, {
-			un(REMOVED_FROM_GAME, i(120356)),	-- Bronze Strongbox
-			un(REMOVED_FROM_GAME, i(120355)),	-- Silver Strongbox
-			un(REMOVED_FROM_GAME, i(120354)),	-- Gold Strongbox
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -9800,121 +9915,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(126893)), -- Warmongering Gladiator's Plate Shoulders
 				}),
 			}),
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 6.2.2", "removed 7.0.3" }, }, {
-				ach(10113),	-- Challenger: Warlords of Draenor Season 3
-				ach(10118, {	-- Defender of the Alliance: Warlords of Draenor Season 3
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						title(310, {	-- <Name> Defender of the Alliance
-							["races"] = ALLIANCE_ONLY,
-							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
-							-- #endif
-						}),
-					},
-				}),
-				ach(10119, {	-- Defender of the Horde: Warlords of Draenor Season 3
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						title(313, {	-- <Name> Defender of the Horde
-							["races"] = HORDE_ONLY,
-							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
-							-- #endif
-						}),
-					},
-				}),
-				ach(10111, {	-- Duelist: Warlords of Draenor Season 3
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							illusion(5397),		-- Primal Victory
-						})),
-					},
-					-- #endif
-				}),
-				ach(10110, {	-- Gladiator: Warlords of Draenor Season 3
-					i(128282),	-- Warmongering Gladiator's Felblood Gronnling (MOUNT!)
-				}),
-				ach(10116, {	-- Guardian of the Alliance: Warlords of Draenor Season 3
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						title(309, {	-- <Name> Guardian of the Alliance
-							["races"] = ALLIANCE_ONLY,
-							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
-							-- #endif
-						}),
-					},
-				}),
-				ach(10117, {	-- Guardian of the Horde: Warlords of Draenor Season 3
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						title(312, {	-- <Name> Guardian of the Horde
-							["races"] = HORDE_ONLY,
-							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
-							-- #endif
-						}),
-					},
-				}),
-				ach(10114, {	-- Hero of the Alliance: Warmongering
-					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							illusion(5397),		-- Primal Victory
-						})),
-					},
-					-- #endif
-				}),
-				ach(10115, {	-- Hero of the Horde: Warmongering
-					["races"] = HORDE_ONLY,
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							illusion(5397),		-- Primal Victory
-						})),
-					},
-					-- #endif
-				}),
-				ach(10112),	-- Rival: Warlords of Draenor Season 3
-				ach(10120, {	-- Soldier of the Alliance: Warlords of Draenor Season 3
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						title(311, {	-- <Name> Soldier of the Alliance
-							["races"] = ALLIANCE_ONLY,
-							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
-							-- #endif
-						}),
-					},
-				}),
-				ach(10121, {	-- Soldier of the Horde: Warlords of Draenor Season 3
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						title(314, {	-- <Name> Soldier of the Horde
-							["races"] = HORDE_ONLY,
-							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
-							-- #endif
-						}),
-					},
-				}),
-				ach(10095, {	-- Warmongering Combatant (Alliance) Warlords of Draenor Season 3
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(10094, {	-- Warmongering Combatant (Horde) Warlords of Draenor Season 3
-					["races"] = HORDE_ONLY,
-				}),
-				ach(10097, {	-- Warmongering Gladiator: Warlords of Draenor Season 3
-					title(316),	-- Warmongering Gladiator <Name>
-				}),
-				ach(10146, {	-- Wild Gladiator's Felblood Gronnling
-					["provider"] = { "i", 128282 },	-- Wild Gladiator's Felblood Gronnling
-					["filterID"] = MOUNTS,
-				}),
-			})),
 		}),
 	})),
 };

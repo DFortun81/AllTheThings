@@ -6,6 +6,37 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 {
 	pvp(tier(BFA_TIER, {
 		n(SEASON_DREAD, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 8.0.1", "removed 8.1.0" } }, {
+				ach(12959),	-- Challenger: Battle for Azeroth Season 1
+				ach(13199),	-- Combatant: Battle for Azeroth Season 1
+				ach(12962, {	-- Duelist: Battle for Azeroth Season 1
+					illusion(6096),		-- Dreadflame
+					i(164575),	-- Dread Gladiator's Cloak (A)
+					i(164574),	-- Dread Gladiator's Cloak (H)
+				}),
+				ach(12945, {	-- Dread Gladiator: Battle for Azeroth Season 1
+					title(79),	-- Dread Gladiator <Name>
+				}),
+				ach(13093, {	-- Dread Gladiator's Proto-Drake (MOUNT!)
+					["provider"] = { "i", 156879 },	-- Dread Gladiator's Proto-Drake (MOUNT!)
+					["filterID"] = MOUNTS,
+				}),
+				ach(13465, {		-- Elite: Battle for Azeroth Season 1
+					["timeline"] = { "added 8.0.5", "removed 8.1.0" },
+				}),
+				ach(12961, {	-- Gladiator: Battle for Azeroth Season 1
+					i(156879), 	-- Dread Gladiator's Proto-Drake (MOUNT!)
+					i(164573),	-- Dread Gladiator's Tabard (A)
+					i(164572),	-- Dread Gladiator's Tabard (H)
+				}),
+				ach(12963, {	-- Hero of the Alliance: Dread
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(12964, {	-- Hero of the Horde: Dread
+					["races"] = HORDE_ONLY,
+				}),
+				ach(12960),	-- Rival: Battle for Azeroth Season 1
+			})),
 			n(PVP_ASPIRANT, {
 				n(WEAPONS, {
 					i(162885),	-- Dread Aspirant's Barrier (A)
@@ -507,6 +538,36 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 			}),
 		}),
 		n(SEASON_SINISTER, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 8.1.0", "removed 8.2.0" } }, {
+				ach(13203),	-- Challenger: Battle for Azeroth Season 2
+				ach(13204),	-- Combatant: Battle for Azeroth Season 2
+				ach(13209, {	-- Duelist: Battle for Azeroth Season 2
+					illusion(6096),		-- Dreadflame
+					i(165060),	-- Alliance Sinister Gladiator's Cloak
+					i(165059),	-- Horde Sinister Gladiator's Cloak
+				}),
+				ach(13451, {	-- Elite: Battle for Azeroth Season 2
+					i(164910),	-- Sinister Gladiator's Tabard (A)
+					i(164909),	-- Sinister Gladiator's Tabard (H)
+				}),
+				ach(13212, {	-- Gladiator: Battle for Azeroth Season 2
+					i(156880),	-- Sinister Gladiator's Proto-Drake (MOUNT!)
+				}),
+				ach(13210, {	-- Hero of the Alliance: Sinister
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(13211, {	-- Hero of the Horde: Sinister
+					["races"] = HORDE_ONLY,
+				}),
+				ach(13205),	-- Rival: Battle for Azeroth Season 2
+				ach(13200, {	-- Sinister Gladiator: Battle for Azeroth Season 2
+					title(80),	-- Sinister Gladiator <Name>
+				}),
+				ach(13202, {	-- Sinister Gladiator's Proto-Drake (MOUNT!)
+					["provider"] = { "i", 156880 },	-- Sinister Gladiator's Proto-Drake (MOUNT!)
+					["filterID"] = MOUNTS,
+				}),
+			})),
 			n(PVP_ASPIRANT, {
 				n(WEAPONS, {
 					i(165206),	-- Sinister Aspirant's Bonecracker (A)
@@ -1033,6 +1094,36 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 			}),
 		}),
 		n(SEASON_NOTORIOUS, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 8.2.0", "removed 8.3.0" } }, {
+				ach(13634),	-- Challenger: Battle for Azeroth Season 3
+				ach(13639),	-- Combatant: Battle for Azeroth Season 3
+				ach(13642, {	-- Duelist: Battle for Azeroth Season 3
+					illusion(6096),		-- Dreadflame
+					i(167382),	-- Notorious Gladiator's Cloak (A)
+					i(167381),	-- Notorious Gladiator's Cloak (H)
+				}),
+				ach(13676, {	-- Elite: Battle for Azeroth Season 3
+					i(167363),	-- Notorious Gladiator's Tabard (A)
+					i(167362),	-- Notorious Gladiator's Tabard (H)
+				}),
+				ach(13647, {	-- Gladiator: Battle for Azeroth Season 3
+					i(156881),	-- Notorious Gladiator's Proto-Drake (MOUNT!)
+				}),
+				ach(13643, {	-- Hero of the Alliance: Notorious
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(13644, {	-- Hero of the Horde: Notorious
+					["races"] = HORDE_ONLY,
+				}),
+				ach(13630, {	-- Notorious Gladiator: Battle for Azeroth Season 3
+					title(402),	-- Notorious Gladiator <Name>
+				}),
+				ach(13632, {	-- Notorious Gladiator's Proto-Drake (MOUNT!)
+					["provider"] = { "i", 156881 },	-- Notorious Gladiator's Proto-Drake (MOUNT!)
+					["filterID"] = MOUNTS,
+				}),
+				ach(13641),	-- Rival: Battle for Azeroth Season 3
+			})),
 			n(PVP_ASPIRANT, {
 				n(WEAPONS, {
 					i(169756),	-- Notorious Aspirant's Blade (A)
@@ -1600,6 +1691,36 @@ _.PVP =	-- ToDo: S1/S2 BonusID to say "Elite" instead of "Mythic" (Maybe its Mod
 			}),
 		}),
 		n(SEASON_CORRUPTED, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 8.3.0", "removed 9.0.0" } }, {
+				ach(13959),	-- Challenger: Battle for Azeroth Season 4
+				ach(13962),	-- Combatant: Battle for Azeroth Season 4
+				ach(13957, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
+					title(411),	-- Corrupted Gladiator <Name>
+				}),
+				ach(13958, {	-- Corrupted Gladiator's Proto-Drake (MOUNT!)
+					["provider"] = { "i", 156884 },	-- Corrupted Gladiator's Proto-Drake (MOUNT!)
+					["filterID"] = MOUNTS,
+				}),
+				ach(13964, {	-- Duelist: Battle for Azeroth Season 4
+					illusion(6096),		-- Dreadflame
+					i(172671),	-- Corrupted Gladiator's Cloak (A)
+					i(172670),	-- Corrupted Gladiator's Cloak (H)
+				}),
+				ach(13989, {	-- Elite: Battle for Azeroth Season 4
+					i(172652),	-- Corrupted Gladiator's Tabard (A)
+					i(172651),	-- Corrupted Gladiator's Tabard (H)
+				}),
+				ach(13967, {	-- Gladiator: Battle for Azeroth Season 4
+					i(156884),	-- Corrupted Gladiator's Proto-Drake (MOUNT!)
+				}),
+				ach(13966, {	-- Hero of the Alliance: Corrupted
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(13965, {	-- Hero of the Horde: Corrupted
+					["races"] = HORDE_ONLY,
+				}),
+				ach(13963),	-- Rival: Battle for Azeroth Season 4
+			})),
 			n(PVP_ASPIRANT, {
 				n(WEAPONS, {
 					i(172880),	-- Corrupted Aspirant's Chopper (A)
