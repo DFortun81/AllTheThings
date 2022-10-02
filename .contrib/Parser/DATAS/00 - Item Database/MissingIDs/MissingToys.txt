@@ -1,194 +1,194 @@
 8.0.1.26788
-163017
-163073
+i(163017),	-- Pitch-Soaked Torch
+i(163073),	-- Conch of Wa'mundi
 9.0.1.35679
-177665
+i(177665),	-- Spectral Handkerchief \\ Spectral Hankerchief
 9.1.5.39977
-187958
+i(187958),	-- Shrouded Banner of the Opportune \\ PH - Banner of the Opportune
 10.0.0.44649
-192495
-193032
-193033
-193476
-193478
-197719
-197961
-197986
-198039
-198090
-198402
-198409
-198428
+i(192495),	-- Malfunctioning Stealthman 54
+i(193032),	-- Jeweled Offering
+i(193033),	-- Convergent Prism
+i(193476),	-- Gnoll Tent
+i(193478),	-- Tuskarr Bean Bag
+i(197719),	-- Artisan's Sign
+i(197961),	-- Whelps on Strings
+i(197986),	-- Murglasses
+i(198039),	-- Rock of Appreciation
+i(198090),	-- Jar of Excess Slime
+i(198402),	-- Maruuk Cooking Pot
+i(198409),	-- Personal Shell
+i(198428),	-- Tuskarr Dinghy
 10.0.0.44707
-194052
-198227
-198474
-198537
-198646
+i(194052),	-- Forlorn Funeral Pall
+i(198227),	-- Giggle Goggles \\ Gnoll Goggles
+i(198474),	-- Artist's Easel
+i(198537),	-- Taivan's Trumpet
+i(198646),	-- Ornate Dragon Statue
 10.0.0.44795
-194060
-198206
-198264
-198827
+i(194060),	-- Dragonscale Expedition's Expedition Tent \\ Explorer's League Exploring Tent
+i(198206),	-- Environmental Emulator
+i(198264),	-- Centralized Precipitation Emitter
+i(198827),	-- Magical Snow Sled
 10.0.0.44895
-194056
-198156
-198857
-199111
+i(194056),	-- Duck-Stuffed Duck Lovie \\ Duck Stuffed Duck Lovie
+i(198156),	-- Wyrmhole Generator
+i(198857),	-- Lucky Duck
+i(199111),	-- Maestro Duck's Orchestrion
 10.0.0.44999
-194057
-194058
-194059
-199554
+i(194057),	-- Cushion of Time Travel
+i(194058),	-- Cold Cushion
+i(194059),	-- Market Tent \\ Tent 1 (DNT)
+i(199554),	-- S.E.A.T.
 10.0.0.45141
-199337
-199926
+i(199337),	-- Bag of Furious Winds
+i(199926),	-- 
 10.0.0.45232
-191891
-200142
-200148
-200160
-200178
-200198
-200249
-200469
-200550
-200551
+i(191891),	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise \\ (WIP) Professor Chirpsnide's Im-PECK-able Harpy Disguise
+i(200142),	-- Generous Goblin Grenade
+i(200148),	-- A Collection Of Me
+i(200160),	-- Notfar's Favorite Food
+i(200178),	-- Infected Ichor
+i(200198),	-- Primalist Prison
+i(200249),	-- Mage's Chewed Wand \\ Chewed Mage's Wand
+i(200469),	-- Khadgar's Disenchanting Rod \\ Royal Disenchanting Rod
+i(200550),	-- Very Comfortable Pelt
+i(200551),	-- Comfortable Pile of Pelts
 10.0.0.45335
-200116
-200597
-200628
-200630
-200631
-200636
-200640
+i(200116),	-- Everlasting Horn of Lavaswimming
+i(200597),	-- Lover's Bouquet
+i(200628),	-- Somewhat-Stabilized Arcana
+i(200630),	-- Ohn'ir Windsage's Hearthstone
+i(200631),	-- Happy Tuskarr Palooza
+i(200636),	-- Primal Invocation Quintessence
+i(200640),	-- Obsidian Egg Clutch
 10.0.0.45454
-200857
-200869
-200878
+i(200857),	-- Talisman of Sargha
+i(200869),	-- Ohn Lite Branded Horn
+i(200878),	-- Wheeled Floaty Boaty Controller \\ Floaty Boaty Controller
 10.0.0.45570
-200960
-200999
+i(200960),	-- Seed of Renewed Souls
+i(200999),	-- The Super Shellkhan Gang
 10.0.0.45661
-192443
-198720
-198721
-198722
-198728
-198729
-199649
-199650
-199767
-199768
-199769
-199770
-199771
-199892
-199894
-199896
-199897
-199899
-199902
-201435
+i(192443),	-- Element-Infused Rocket Helmet
+i(198720),	-- Soft Purple Pillow
+i(198721),	-- Skinny Reliquary Pillow
+i(198722),	-- Small Triangular Pillow
+i(198728),	-- Explorer's League Banner
+i(198729),	-- Reliquary Banner
+i(199649),	-- Dragon Tea Set \\ Dragon Tea Set - NYI
+i(199650),	-- Whale Bone Tea Set \\ Whale Bone Tea Set - NYI
+i(199767),	-- Red Dragon Banner
+i(199768),	-- Black Dragon Banner
+i(199769),	-- Blue Dragon Banner
+i(199770),	-- Bronze Dragon Banner
+i(199771),	-- Green Dragon Banner
+i(199892),	-- Tuskarr Traveling Soup Pot
+i(199894),	-- Fisherman's Folly Rack \\ Fisherman's Folly Rack (NYI)
+i(199896),	-- Rubbery Fish Head
+i(199897),	-- Blue Cover Bean Bag
+i(199899),	-- Iskaara Tug Sled \\ Iskaara Pack Sled - NYI
+i(199902),	-- Wayfinder's Compass \\ Wayfinder's Compass - NYI
+i(201435),	-- Swinging Sands
 10.0.2.45779
-194885
+i(194885),	-- Ohuna Perch \\ Ohuna Mail Carrier \\ [DNT] Ohn'ahran Friendship
 
 
 
 
-Missing in ToyDB.lua
+.
 
 8.0.1.26624
-163213
+i(163213),	-- Ghostly Explorer's Skull
 8.0.1.26788
-163017
-163073
+i(163017),	-- Pitch-Soaked Torch
+i(163073),	-- Conch of Wa'mundi
 9.0.1.35679
-177665
+i(177665),	-- Spectral Handkerchief \\ Spectral Hankerchief
 10.0.0.44649
-192495
-193032
-193033
-193476
-193478
-197719
-197961
-197986
-198039
-198090
-198402
-198409
-198428
+i(192495),	-- Malfunctioning Stealthman 54
+i(193032),	-- Jeweled Offering
+i(193033),	-- Convergent Prism
+i(193476),	-- Gnoll Tent
+i(193478),	-- Tuskarr Bean Bag
+i(197719),	-- Artisan's Sign
+i(197961),	-- Whelps on Strings
+i(197986),	-- Murglasses
+i(198039),	-- Rock of Appreciation
+i(198090),	-- Jar of Excess Slime
+i(198402),	-- Maruuk Cooking Pot
+i(198409),	-- Personal Shell
+i(198428),	-- Tuskarr Dinghy
 10.0.0.44707
-194052
-198227
-198474
-198537
-198646
+i(194052),	-- Forlorn Funeral Pall
+i(198227),	-- Giggle Goggles \\ Gnoll Goggles
+i(198474),	-- Artist's Easel
+i(198537),	-- Taivan's Trumpet
+i(198646),	-- Ornate Dragon Statue
 10.0.0.44795
-194060
-198206
-198264
-198827
+i(194060),	-- Dragonscale Expedition's Expedition Tent \\ Explorer's League Exploring Tent
+i(198206),	-- Environmental Emulator
+i(198264),	-- Centralized Precipitation Emitter
+i(198827),	-- Magical Snow Sled
 10.0.0.44895
-194056
-198156
-198857
-199111
+i(194056),	-- Duck-Stuffed Duck Lovie \\ Duck Stuffed Duck Lovie
+i(198156),	-- Wyrmhole Generator
+i(198857),	-- Lucky Duck
+i(199111),	-- Maestro Duck's Orchestrion
 10.0.0.44999
-194057
-194058
-194059
-199554
+i(194057),	-- Cushion of Time Travel
+i(194058),	-- Cold Cushion
+i(194059),	-- Market Tent \\ Tent 1 (DNT)
+i(199554),	-- S.E.A.T.
 10.0.0.45141
-199337
-199926
+i(199337),	-- Bag of Furious Winds
+i(199926),	-- 
 10.0.0.45232
-191891
-200142
-200148
-200160
-200178
-200198
-200249
-200469
-200550
-200551
+i(191891),	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise \\ (WIP) Professor Chirpsnide's Im-PECK-able Harpy Disguise
+i(200142),	-- Generous Goblin Grenade
+i(200148),	-- A Collection Of Me
+i(200160),	-- Notfar's Favorite Food
+i(200178),	-- Infected Ichor
+i(200198),	-- Primalist Prison
+i(200249),	-- Mage's Chewed Wand \\ Chewed Mage's Wand
+i(200469),	-- Khadgar's Disenchanting Rod \\ Royal Disenchanting Rod
+i(200550),	-- Very Comfortable Pelt
+i(200551),	-- Comfortable Pile of Pelts
 10.0.0.45335
-200116
-200597
-200628
-200630
-200631
-200636
-200640
+i(200116),	-- Everlasting Horn of Lavaswimming
+i(200597),	-- Lover's Bouquet
+i(200628),	-- Somewhat-Stabilized Arcana
+i(200630),	-- Ohn'ir Windsage's Hearthstone
+i(200631),	-- Happy Tuskarr Palooza
+i(200636),	-- Primal Invocation Quintessence
+i(200640),	-- Obsidian Egg Clutch
 10.0.0.45454
-200857
-200869
-200878
+i(200857),	-- Talisman of Sargha
+i(200869),	-- Ohn Lite Branded Horn
+i(200878),	-- Wheeled Floaty Boaty Controller \\ Floaty Boaty Controller
 10.0.0.45570
-200960
-200999
+i(200960),	-- Seed of Renewed Souls
+i(200999),	-- The Super Shellkhan Gang
 10.0.0.45661
-192443
-198720
-198721
-198722
-198728
-198729
-199649
-199650
-199767
-199768
-199769
-199770
-199771
-199892
-199894
-199896
-199897
-199899
-199902
-201435
+i(192443),	-- Element-Infused Rocket Helmet
+i(198720),	-- Soft Purple Pillow
+i(198721),	-- Skinny Reliquary Pillow
+i(198722),	-- Small Triangular Pillow
+i(198728),	-- Explorer's League Banner
+i(198729),	-- Reliquary Banner
+i(199649),	-- Dragon Tea Set \\ Dragon Tea Set - NYI
+i(199650),	-- Whale Bone Tea Set \\ Whale Bone Tea Set - NYI
+i(199767),	-- Red Dragon Banner
+i(199768),	-- Black Dragon Banner
+i(199769),	-- Blue Dragon Banner
+i(199770),	-- Bronze Dragon Banner
+i(199771),	-- Green Dragon Banner
+i(199892),	-- Tuskarr Traveling Soup Pot
+i(199894),	-- Fisherman's Folly Rack \\ Fisherman's Folly Rack (NYI)
+i(199896),	-- Rubbery Fish Head
+i(199897),	-- Blue Cover Bean Bag
+i(199899),	-- Iskaara Tug Sled \\ Iskaara Pack Sled - NYI
+i(199902),	-- Wayfinder's Compass \\ Wayfinder's Compass - NYI
+i(201435),	-- Swinging Sands
 10.0.2.45779
-194885
+i(194885),	-- Ohuna Perch \\ Ohuna Mail Carrier \\ [DNT] Ohn'ahran Friendship

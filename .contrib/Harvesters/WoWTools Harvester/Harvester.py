@@ -262,8 +262,19 @@ def create_raw_file(thing: Things) -> None:
 
 def extract_nth_column(csv_path: Path, n: int) -> list[str]:
     """Extract nth column from CSV file."""
+    csv_list = []
     with open(csv_path) as csv_file:
-        return [line.split(",")[n].strip() + "\n" for line in csv_file]
+        for line in csv_file:
+            try:
+                if n != 1:
+                    line = line.split(",")[n].strip() + "\n"
+                else:
+                    line = line.split(",")[1:]
+                    line = ",".join(line)
+            except IndexError:
+                line = ""
+            csv_list.append(line)
+    return csv_list
 
 
 def remove_empty_builds(lines: list[str]) -> list[str]:
@@ -290,26 +301,29 @@ def create_missing_recipes() -> None:
             "Professions",
             f"{profession}.txt",
         )
-        with open(raw_path) as raw_file, open(missing_path, "w") as missing_file:
-            raw_lines = raw_file.readlines()
-            excluded_recipes = extract_nth_column(
-                Path("Exclusion", "Professions", f"{profession}.txt"), 0
-            )
-            difference = sorted(
-                set(raw_lines)
-                - set(get_existing_ids(Things.Recipes))
-                - set(excluded_recipes),
-                key=raw_lines.index,
-            )
-            difference = remove_empty_builds(difference)
-            missing_file.writelines(difference)
-            itemdb_list = list[str]()
-            itemdb_path = Path(
-                DATAS_FOLDER,
-                "00 - Item Database",
-                "ProfessionDB",
-                f"{profession}ItemDB.lua",
-            )
+        try:
+            with open(raw_path) as raw_file, open(missing_path, "w") as missing_file:
+                raw_lines = raw_file.readlines()
+                excluded_recipes = extract_nth_column(
+                    Path("Exclusion", "Professions", f"{profession}.txt"), 0
+                )
+                difference = sorted(
+                    set(raw_lines)
+                    - set(get_existing_ids(Things.Recipes))
+                    - set(excluded_recipes),
+                    key=raw_lines.index,
+                )
+                difference = remove_empty_builds(difference)
+                missing_file.writelines(difference)
+                itemdb_list = list[str]()
+                itemdb_path = Path(
+                    DATAS_FOLDER,
+                    "00 - Item Database",
+                    "ProfessionDB",
+                    f"{profession}ItemDB.lua",
+                )
+        except FileNotFoundError:
+            print(f"This {profession} has missing file?")
             try:
                 with open(itemdb_path) as itemdb_file:
                     for line in itemdb_file:
@@ -320,8 +334,9 @@ def create_missing_recipes() -> None:
                         line = re.sub("\\D", "", line)
                         itemdb_list.append(line + "\n")
                     difference = sorted(set(raw_lines) - set(itemdb_list), key=raw_lines.index)
-                    if not (difference := remove_empty_builds(difference)):
-                        continue
+                    difference = remove_empty_builds(difference)
+                    #if not (difference := remove_empty_builds(difference)):
+                    #    continue
                     missing_file.write(f"\n\n\n\nMissing in {profession}ItemDB.lua\n\n")
                     missing_file.writelines(difference)
             except FileNotFoundError:
@@ -441,7 +456,7 @@ def post_process(thing: Things) -> None:
         Things.FlightPaths: "fp(",
         Things.Followers: "follower(",
         Things.Illusions: "ill(",
-        Things.Mounts: "mnt(",
+        Things.Mounts: "mount(",
         Things.Pets: "p(",
         Things.Quests: "q(",
         Things.Recipes: "r(",
@@ -466,34 +481,42 @@ def post_process(thing: Things) -> None:
         Things.Mounts,
         Things.Titles,
     ):
-        names = extract_nth_column(raw_path, 1)
-        for n in range(len(missing_lines)):
-            stripped_id = missing_lines[n].rstrip()
-            if stripped_id.isdigit():
-                missing_lines[n] = f"{thing2prefix[thing]}{stripped_id}),\t--"
-                if stripped_id == raw_ids[n].rstrip():
-                    missing_lines[n] += " " + names[n].rstrip()
-        raise NotImplementedError("Should we overwrite some files or return something?")
+        names: list[str] = extract_nth_column(raw_path, 1)
+        count_missing = 0
+        for missing_line in missing_lines:
+            name_list: list[str] = []
+            count_raw_id = 0
+            missing_line = missing_line.strip()
+            missing_line = re.sub("[^\\d^.]", "", missing_line)
+            if missing_line.isdigit():
+                missing_lines[count_missing] = f"{thing2prefix[thing]}{missing_line}),\t-- "
+            else:
+                missing_lines[count_missing] = missing_lines[count_missing].strip()
+            for id in raw_ids:
+                if missing_line == id.strip() and names[count_raw_id] != "--\n":
+                    name_list.append(names[count_raw_id].rstrip())
+                count_raw_id += 1
+            name_list.reverse()
+            missing_lines[count_missing] += " \\\\ ".join(name_list) + "\n"
+            count_missing += 1
+        with open(missing_path, "w") as missing_file:
+            missing_file.writelines(missing_lines)
     elif thing == Things.Followers:
         # TODO:
         raise NotImplementedError("Followers are not implemented yet.")
-    elif thing == Things.Creatures:
-        # TODO:
-        # Helps Followers and Pets to get names
-        # thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-        # Alliance and Horde names..
-        raise NotImplementedError("Creatures are not implemented yet.")
     elif thing == Things.Illusions:
-        raw_id_to_nameid = extract_nth_column(raw_path, 1)
-        name_ids = extract_nth_column(Path("Raw", "SpellItem.txt"), 0)
-        names = extract_nth_column(Path("Raw", "SpellItem.txt"), 1)
+        with open(raw_path, "r") as raw_file:
+            raw_ids_and_nameids = raw_file.readlines()
+        name_ids = extract_nth_column(Path("Raw", "SpellItems.txt"), 0)
+        names = extract_nth_column(Path("Raw", "SpellItems.txt"), 1)
     elif thing == Things.Quests:
         # TODO:
         raise NotImplementedError("Quests are not implemented yet.")
     elif thing == Things.Pets:
-        raw_id_to_nameid = extract_nth_column(raw_path, 1)
-        name_ids = extract_nth_column(Path("Raw", "Creature.txt"), 0)
-        names = extract_nth_column(Path("Raw", "Creature.txt"), 1)
+        with open(raw_path, "r") as raw_file:
+            raw_ids_and_nameids = raw_file.readlines()
+        name_ids = extract_nth_column(Path("Raw", "Creatures.txt"), 0)
+        names = extract_nth_column(Path("Raw", "Creatures.txt"), 1)
     elif thing == Things.Recipes:
         # TODO:
         # Recipe names are in the SpellName db and Profession names are in SkillLine db
@@ -507,24 +530,49 @@ def post_process(thing: Things) -> None:
         # thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
         raise NotImplementedError("SkillLines are not implemented yet.")
     elif thing == Things.Toys:
-        # name_ids = raw_id_to_nameid  # TODO: this is not correct
-        names = extract_nth_column(Path("Raw", "Item.txt"), 1)
+        with open(raw_path, "r") as raw_file:
+            raw_ids_and_nameids = raw_file.readlines()
+        name_ids = extract_nth_column(Path("Raw", "Items.txt"), 0)
+        names = extract_nth_column(Path("Raw", "Items.txt"), 1)
     elif thing == Things.Transmog:
         raw_id_to_nameid = extract_nth_column(raw_path, 1)
         name_ids = extract_nth_column(Path("Raw", "Item.txt"), 0)
         names = extract_nth_column(Path("Raw", "Item.txt"), 1)
         # TODO: this should use itemID instead... have to rework
-    # TODO: I guess you want to set names, raw_id_to_nameid and name_ids for all Thing
-    # types above for this loop to work
+    # TODO: I guess you want to set names, raw_id_to_nameid and name_ids for all Thing. types above for this loop to work
+
+    """" First Recover raw_id to name_id ... they remove the lind about db.."""
     for n in range(len(missing_lines)):
-        stripped_id = missing_lines[n].rstrip()
-        if stripped_id.isdigit():
-            missing_lines[n] = f"{thing2prefix[thing]}{stripped_id}),\t--"
-            if (
-                stripped_id == raw_ids[n].rstrip()
-                and raw_id_to_nameid[n].rstrip() == name_ids[n].rstrip()
-            ):
-                missing_lines[n] += " " + names[n].rstrip()
+        id_list = []
+        name_list = []
+        missing_line = missing_lines[n].strip()
+        missing_line = re.sub("[^\\d^.]", "", missing_line)
+        if missing_line.isdigit():
+            missing_lines[n] = f"{thing2prefix[thing]}{missing_line}),\t-- "
+            for m in range(len(raw_ids_and_nameids)):
+                raw_id = raw_ids_and_nameids[m].split(",")[0].strip()
+                if missing_line == raw_id:
+                    if thing == Things.Pets:
+                        id_list.append(raw_ids_and_nameids[m].split(",")[1].strip())
+                    elif thing == Things.Illusions or thing == Things.Toys:
+                        id_list.append(raw_ids_and_nameids[m].split(",")[0].strip())
+            for k in range(len(name_ids)):
+                name_id =  name_ids[k].strip()
+                name_id = re.sub("[^\\d^.]", "", name_id)
+                for element in id_list:
+                    if missing_line.isdigit() and name_id == element:
+                        name_list.append(names[k].strip())
+        else:
+            missing_lines[n] = missing_line
+        name_list.reverse()
+        missing_lines[n] += " \\\\ ".join(name_list) + "\n"
+        print(n)
+    with open(missing_path, "w") as missing_file:
+        missing_file.writelines(missing_lines)
+
+
+
+
 
 
 def add_latest_data(build: str) -> None:
