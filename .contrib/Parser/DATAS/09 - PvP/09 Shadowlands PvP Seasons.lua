@@ -413,18 +413,6 @@ root("PVP", pvp(tier(SL_TIER, {
 				i(181816),	-- Sinful Gladiator's Sigil of Adaptation
 			}),
 		})),
-		--[[
-		i(159570),	-- Battleborn Sigil Dread Combatant
-		i(155622),	-- Warlord's Trophy Dread Combatant
-		i(164580),	-- Battleborn Sigil Dread Challenger
-		i(164584),	-- Warlord's Trophy Dread Challenger
-		i(164581),	-- Battleborn Sigil Dread Rival
-		i(164585),	-- Warlord's Trophy Dread Rival
-		i(164582),	-- Battleborn Sigil Dread Duelist
-		i(164586),	-- Warlord's Trophy Dread Duelist
-		i(164583),	-- Battleborn Sigil Dread Elite
-		i(164587),	-- Warlord's Trophy Dread Elite
-		--]]
 		filter(MOUNTS, {
 			i(184014, {	-- Vicious War Spider (A) (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
