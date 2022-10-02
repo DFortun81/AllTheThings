@@ -2501,7 +2501,7 @@ _.PVP =
 			}),
 		}),
 		n(SEASON_FEARLESS, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.1.23222", "removed 7.2.0" } }, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.1.0.23222", "removed 7.2.0" } }, {
 				ach(11028),	-- Challenger: Legion Season 2
 				ach(11034, {	-- Defender of the Alliance: Legion Season 2
 					["races"] = ALLIANCE_ONLY,
@@ -7255,7 +7255,7 @@ _.PVP =
 			}),
 		}),
 		n(SEASON_FIERCE, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.3.0", "removed 7.3.25195" } }, { -- Antorus Opening
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.3.0", "removed 7.3.0.25195" } }, { -- Antorus Opening
 				ach(12036),	-- Challenger: Legion Season 5
 				ach(12039, {	-- Defender of the Alliance: Legion Season 5
 					["races"] = ALLIANCE_ONLY,
@@ -10513,7 +10513,7 @@ _.PVP =
 			}),
 		}),
 		n(SEASON_DOMINANT, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.3.25195", "removed 7.3.26365" } }, { -- Antorus Opening till March 20th
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.3.0.25195", "removed 7.3.0.26365" } }, { -- Antorus Opening till March 20th
 				ach(12169),	-- Challenger: Legion Season 6
 				ach(12175, {	-- Defender of the Alliance: Legion Season 6
 					["races"] = ALLIANCE_ONLY,
@@ -11739,7 +11739,7 @@ _.PVP =
 			}),
 		}),
 		n(SEASON_DEMONIC, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.3.26365", "removed 8.0.1" } }, { 
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.3.0.26365", "removed 8.0.1" } }, { 
 				ach(12187),	-- Challenger: Legion Season 7
 				ach(12195, {	-- Defender of the Alliance: Legion Season 7
 					["races"] = ALLIANCE_ONLY,
