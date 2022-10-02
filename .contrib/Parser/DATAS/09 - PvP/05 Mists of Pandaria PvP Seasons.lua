@@ -1785,9 +1785,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(85000)),	-- Malevolent Gladiator's Warboots of Cruelty
 				}),
 			}),
-			bubbleDown({
-				["timeline"] = { "added 5.0.0", "removed 5.2.0" },
-			}, n(REWARDS, {
+			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 5.0.0", "removed 5.2.0" }, }, {
 				ach(8243, {	-- Hero of the Alliance: Malevolent
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -5502,9 +5500,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(98162)), -- Tyrannical Gladiator's Tabard
 				}),
 			}),
-			bubbleDown({
-				["timeline"] = { "added 5.2.0", "removed 5.4.0" },
-			}, n(REWARDS, {
+			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 5.2.0", "removed 5.4.0" }, }, {
 				ach(8652, {	-- Hero of the Alliance: Tyrannical
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -8700,9 +8696,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(101697)), -- Grievous Gladiator's Tabard
 				}),
 			}),
-			bubbleDown({
-				["timeline"] = { "added 5.4.0", "removed 5.4.7" },
-			}, n(REWARDS, {
+			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 5.4.0", "removed 5.4.7" }, }, {
 				ach(8649),	-- Challenger: Mists of Pandaria Season 3/Season 14
 				ach(8645, {	-- Duelist: Mists of Pandaria Season 3/Season 14
 					-- #if AFTER 7.3.2
@@ -10417,9 +10411,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(103636)), -- Prideful Gladiator's Tabard
 				}),
 			}),
-			bubbleDown({
-				["timeline"] = { "added 5.4.7", "removed 6.0.0" },
-			}, n(REWARDS, {
+			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 5.4.7", "removed 6.0.0" }, }, {
 				ach(8670),	-- Challenger: Mists of Pandaria Season 4/Season 15
 				ach(8668, {	-- Duelist: Mists of Pandaria Season 4/Season 15
 					-- #if AFTER 7.3.2

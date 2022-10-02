@@ -2061,7 +2061,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(69785)),	-- Vicious Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(PVP_ELITE, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { "added 4.0.3", "removed 4.2.0" }, }, {
 				-- Original Sources are:
 				-- n51255 Lieutenant Tristia <Glorious Conquest Quartermaster> in Stormwind (Alliance)
 				-- n46593 Doris Volanthius <Glorious Conquest Quartermaster> in Orgrimmar (Horde)
@@ -2219,10 +2219,8 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(67467)), -- Vicious Gladiator's War Edge (Throw wep) wrong label by blizz
 					un(REMOVED_FROM_GAME, i(67466)), -- Vicious Gladiator's Hatchet (Throw wep) wrong label by blizz
 				}),
-			}),
-			bubbleDown({
-				["timeline"] = { "added 4.0.3", "removed 4.2.0" },
-			}, n(REWARDS, {
+			})),
+			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 4.0.3", "removed 4.2.0" }, }, {
 				ach(5344, {	-- Hero of the Alliance: Vicious
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3457,7 +3455,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(70413)),	-- Ruthless Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(PVP_ELITE, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { "added 4.2.0", "removed 4.3.0" }, }, {
 				-- Original Sources are:
 				-- n40606 Knight-Lieutenant T'Maire Sydes in Stormwind (Alliance)
 				-- n54659 Blood Guard Zar'shi in Orgrimmar (Horde)
@@ -3615,10 +3613,8 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(70197)),	-- Ruthless Gladiator's Hatchet (Throw wep)
 					un(REMOVED_FROM_GAME, i(70198)),	-- Ruthless Gladiator's War Edge (Throw Wep)
 				}),
-			}),
-			bubbleDown({
-				["timeline"] = { "added 4.2.0", "removed 4.3.0" },
-			}, n(REWARDS, {
+			})),
+			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 4.2.0", "removed 4.3.0" }, }, {
 				ach(6316, {	-- Hero of the Alliance: Ruthless
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -4562,7 +4558,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73500)),	-- Cataclysmic Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(PVP_ELITE, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { "added 4.3.0", "removed 5.0.0" }, }, {
 				-- Original Sources are: Unknown. Presumably:
 				-- n00000 (7 different ID's exist) Captain Dirgehammer in Stormwind (Alliance)
 				-- n00000 (7 different ID's exist) Sergeant Thunderhorn in Orgrimmar (Horde)
@@ -4724,10 +4720,8 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(74786)),	-- Cataclysmic Gladiator's Relic of Triumph
 					un(REMOVED_FROM_GAME, i(73412)),	-- Cataclysmic Gladiator's War Edge (Throw Wep)
 				}),
-			}),
-			bubbleDown({
-				["timeline"] = { "added 4.3.0", "removed 5.0.0" },
-			}, n(REWARDS, {
+			})),
+			n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 4.3.0", "removed 5.0.0" }, }, {
 				ach(6939, {	-- Hero of the Alliance: Cataclysmic
 					["races"] = ALLIANCE_ONLY,
 				}),
