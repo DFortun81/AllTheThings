@@ -1264,7 +1264,12 @@ for key, value in pairs({
 	[191766] = "达库鲁的命令",	-- Orders From Drakuru
 	[192049] = "利齿青鱼群",	-- Fangtooth Herring School
 	[192060] = "弗约恩之砧",	-- Fjorn's Anvil	--TODO: This was manually translated
+	[192071] = "弗约恩之砧",	-- Fjorn's Anvil
 	[192072] = "鱼叉箱",	-- Harpoon Crate
+	[192078] = "霍迪尔的号角",	-- Hodir's Horn
+	[192079] = "霍迪尔之矛",	-- Hodir's Spear
+	[192080] = "霍迪尔之盔",	-- Hodir's Helm
+	[192524] = "贪婪的安格里姆",	-- Arngrim the Insatiable
 	[192833] = "布雷登布莱德的物品",	-- Bridenbrad's Possessions
 	[193051] = "天灾蛛魔之卵",	-- Nerubian Scourge Egg
 	[193195] = "脉动的水晶",	-- Pulsing Crystal
@@ -2835,6 +2840,7 @@ for key, value in pairs({
 	[353686] = "月光之荚",	-- Lunarlight Pod
 	[353687] = "破损之钟",	-- Broken Bell
 	[353688] = "破损之钟",	-- Broken Bell
+	[353689] = "破损之钟",	-- Broken Bell
 	[353691] = "天空之钟",	-- Skyward Bell
 	[353791] = "城堡保险箱",	-- Castle Strongbox
 	[353792] = "村庄保险箱",	-- Village Strongbox

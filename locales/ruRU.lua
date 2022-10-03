@@ -1250,7 +1250,12 @@ for key,value in pairs({
 	[191766] = "Приказы Дракуру",	-- Orders From Drakuru
 	[192049] = "Косяк клыкозубой сельди",	-- Fangtooth Herring School
 	[192060] = "Наковальня Фьорна",	-- Fjorn's Anvil
+	[192071] = "Наковальня Фьорна",	-- Fjorn's Anvil
 	[192072] = "Гарпунный ящик",	-- Harpoon Crate
+	[192078] = "Рог Ходира",	-- Hodir's Horn
+	[192079] = "Копье Ходира",	-- Hodir's Spear
+	[192080] = "Шлем Ходира",	-- Hodir's Helm
+	[192524] = "Арнгрим Ненасытный",	-- Arngrim the Insatiable
 	[192833] = "Имущество Бриденбрада",	-- Bridenbrad's Possessions
 	[193051] = "Нерубское яйцо Плети",	-- Nerubian Scourge Egg
 	[193195] = "Пульсирующий кристалл",	-- Pulsing Crystal
@@ -2821,6 +2826,7 @@ for key,value in pairs({
 	[353686] = "Стручок луноцвета",	-- Lunarlight Pod
 	[353687] = "Сломанный колокол",	-- Broken Bell
 	[353688] = "Сломанный колокол",	-- Broken Bell
+	[353689] = "Сломанный колокол",	-- Broken Bell
 	[353691] = "Небесный колокол",	-- Skyward Bell
 	[353791] = "Сундучок Замкового Предела",	-- Castle Strongbox
 	[353792] = "Сундучок Тихого Предела",	-- Village Strongbox
