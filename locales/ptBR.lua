@@ -1129,7 +1129,7 @@ for key,value in pairs({
 	[181150] = "Diário Empoeirado",	-- Dusty Journal
 	[181153] = "Cartaz de Procura-se: Kel'gash, o Perverso",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "Cartaz de Procura-se",	-- Wanted Poster
-	[181643] = "Restos Mortais de Barbapena",	-- Featherbeard's Remains	--TODO: This was taken from tbc Wowhead
+	[181643] = "Restos Mortais de Barbapena",	-- Featherbeard's Remains	--TODO: This was taken from wotlk Wowhead
 	[181649] = "Diário de Barbapena",	-- Featherbeard's Journal
 	[181672] = "Efígie do Homem de Palha",	-- Wickerman Effigy
 	[181698] = "Pedra do Caos",	-- Voidstone

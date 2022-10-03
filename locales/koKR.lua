@@ -1129,9 +1129,9 @@ for key,value in pairs({
 	[181150] = "먼지투성이 일지",	-- Dusty Journal
 	[181153] = "현상 수배 전단: 사악한 켈가쉬",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "현상 수배 전단",	-- Wanted Poster
-	[181643] = "페더비어드의 유골",	-- Featherbeard's Remains	--TODO: This was taken from tbc Wowhead
+	[181643] = "페더비어드의 유골",	-- Featherbeard's Remains	--TODO: This was taken from wotlk Wowhead
 	[181649] = "페더비어드의 일지",	-- Featherbeard's Journal
-	[181672] = "밀짚인형",	-- Wickerman Effigy	--TODO: This was taken from tbc Wowhead
+	[181672] = "밀짚인형",	-- Wickerman Effigy	--TODO: This was taken from wotlk Wowhead
 	[181698] = "공허의 돌",	-- Voidstone
 	[181748] = "핏빛 수정",	-- Blood Crystal
 	[181756] = "닳아해진 고대 책",	-- Battered Ancient Book
