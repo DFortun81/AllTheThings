@@ -142,7 +142,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 				-- #else
 				mount(346136),	-- Viridian Phase-Hunter (MOUNT!)
 				-- #endif
-				
+
 				n(-579, {	-- Dark Portal Pass
 					["description"] = "These rewards were made available to anyone who purchased a Dark Portal Pass for TBC Classic.\n\nThe act of adding items for real money to the In-Game Shop in Classic has widely been frowned upon.",
 					["groups"] = {
@@ -169,7 +169,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 				-- #else
 				mount(370770),	-- Tuskarr Shoreglider
 				-- #endif
-				
+
 				n(-582, {	-- WOTLK Northrend Epic Upgrade ("Cheap")
 					["groups"] = {
 						-- #if ANYCLASSIC
@@ -272,7 +272,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	})),
 	n(-11000, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Temp Dragonflight
-		["name"] = "Dragonflight",	-- Just a placeholder since wow api cant call on DF yet.
+		["name"] = "Dragonflight",	-- Just a placeholder since wow api can't call on DF yet.
 		["description"] = "These rewards are available to anyone who purchases Dragonflight Heroic Edition.",
 		["timeline"] = { "added 9.2.5" },
 		["groups"] = {

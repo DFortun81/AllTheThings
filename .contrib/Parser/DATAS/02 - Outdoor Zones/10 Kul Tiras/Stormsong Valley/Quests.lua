@@ -1689,7 +1689,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["lockCriteria"] = { 1, "lvl", 50 },
 				["races"] = ALLIANCE_ONLY,
 			},{
-				-- TODO: Check SQ also probably cant do after a certain level
+				-- TODO: Check SQ, also probably can't do after a certain level
 				q(50779),	-- A Clean Slate
 				q(51534),	-- The Battle for Brennadam
 				q(50133),	-- Weed Whacking

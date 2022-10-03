@@ -1039,7 +1039,7 @@ _.Zones =
 				n(BONUS_OBJECTIVES, sharedData({
 					["lockCriteria"] = { 1, "lvl", 45 },
 				},{
-					-- TODO: Check SQ also probably cant do after a certain level
+					-- TODO: Check SQ, also probably can't do after a certain level
 					q(38442, {	-- A Worthy Challenger
 						["coord"] = { 44.8, 45.6, STORMHEIM },
 					}),
