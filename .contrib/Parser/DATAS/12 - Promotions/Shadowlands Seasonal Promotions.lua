@@ -4,7 +4,7 @@
 root("Promotions", {
 	n(-580, {	-- Shadowlands Seasonal Promotions
 		["timeline"] = { "added 9.0.5" },
-		["description"] = "These promotions happend during the time Shadowlands was the most recent content between 23 November 2020 & 28th November 2022.\n\n They are listed in the order they appeared.",
+		["description"] = "These promotions happened during the time Shadowlands was the most recent content between 23 November 2020 & 28th November 2022.\n\n They are listed in the order they appeared.",
 		["groups"] = {
 			-- SEASON 1
 			mount(348162, {	-- Wandering Ancient (MOUNT!)
