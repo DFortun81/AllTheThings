@@ -8,7 +8,7 @@ import aiohttp
 from object_localization import LOCALES_DIR, LangCode, localize_objects
 
 
-async def main():
+async def main() -> None:
     async with aiohttp.ClientSession() as session:
         original_obj_names = await localize_objects(
             session, f"{LOCALES_DIR}deDE.lua", LangCode.DEUTSCH

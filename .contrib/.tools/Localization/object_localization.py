@@ -37,7 +37,8 @@ class LangCode(Enum):
 class GameFlavor(Enum):
     RETAIL = ""
     CLASSIC = "classic"
-    TBC = "tbc"
+    # TBC = "tbc"  # no live TBC realms anymore
+    WOTLK = "wotlk"
 
 
 async def get_localized_obj_name_flavor(
@@ -49,9 +50,12 @@ async def get_localized_obj_name_flavor(
     url = "https://"
     if lang_code != LangCode.ENGLISH:
         url += f"{lang_code.value}."
-    if game_flavor != GameFlavor.RETAIL:
+    if game_flavor == GameFlavor.CLASSIC:
         url += f"{game_flavor.value}."
-    url += f"wowhead.com/object={obj_id}"
+    url += "wowhead.com/"
+    if game_flavor == GameFlavor.WOTLK:
+        url += f"{game_flavor.value}/"
+    url += f"object={obj_id}"
     try:
         async with session.get(url=url) as response:
             if "ptr" in response.url.human_repr():
