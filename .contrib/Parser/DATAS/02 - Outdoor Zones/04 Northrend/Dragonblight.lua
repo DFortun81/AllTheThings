@@ -1063,13 +1063,9 @@ root("Zones", {
 						["qg"] = 26979,	-- Kontokanis
 					}),
 					q(11960, {	-- Planning for the Future
+						["qg"] = 26228,	-- Trapper Mau'i
 						["coord"] = { 48.2, 74.3, DRAGONBLIGHT },
 						["isDaily"] = true,
-						["qg"] = 26228,	-- Trapper Mau'i
-					}),
-					q(26178, {	-- Planning for the Future (old quest reworked to be a daily)
-						["u"] = REMOVED_FROM_GAME,
-						["qg"] = 26228,	-- Trapper Mau'i
 					}),
 					q(12463, {	-- Plunderbeard Must Be Found!
 						["coord"] = { 85.9, 50.8, DRAGONBLIGHT },
@@ -2223,11 +2219,7 @@ root("Zones", {
 							i(44197),	-- Bracers of Accorded Courtesy
 							i(44198),	-- Breastplate of the Solemn Council
 							i(44188),	-- Cloak of Peaceful Resolutions
-							i(41722),	-- Design: Stalwart Monarch Topaz
-							i(41779, {	-- Design: Stalwart Monarch Topaz
-								["u"] = REMOVED_FROM_GAME,
-								["spellID"] = 0,	-- This is now available via 41722, need to delink the old plans from the recipe
-							}),
+							i(41722),	-- Design: Stalwart Monarch Topaz [CATA+] / Design: Glimmering Monarch Topaz [WRATH]
 							i(44203),	-- Dragonfriend Bracers
 							i(44187),	-- Fang of Truth
 							i(44199),	-- Gavel of the Brewing Storm
@@ -2303,8 +2295,13 @@ root("Zones", {
 	})),
 });
 
+-- #if AFTER WRATH
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(12051),	-- Rustling Some Feathers
+		-- #if AFTER CATA
+		q(26178),	-- Planning for the Future
+		-- #endif
 	}),
 }));
+-- #endif

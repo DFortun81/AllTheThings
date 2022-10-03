@@ -877,7 +877,9 @@ root("Zones", {
 						["qg"] = 29733,	-- Elder Shaman Moky
 						["groups"] = {
 							i(41755, {	-- The Fire Extinguisher
+								-- #if AFTER TRANSMOG
 								["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+								-- #endif
 							}),
 						},
 					}),

@@ -296,7 +296,9 @@ root("Zones", {
 							["model"] = 219405,
 							["groups"] = {
 								i(44703, {	-- Dark Herring
+									-- #if AFTER TRANSMOG
 									["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+									-- #endif
 								}),
 							},
 						}),
