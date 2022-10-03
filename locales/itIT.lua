@@ -1254,7 +1254,12 @@ for key,value in pairs({
 	[191766] = "Ordini da Drakuru",	-- Orders From Drakuru
 	[192049] = "Banco di Aringhe Zannute",	-- Fangtooth Herring School
 	[192060] = "Incudine di Fjorn",	-- Fjorn's Anvil
+	[192071] = "Incudine di Fjorn",	-- Fjorn's Anvil
 	[192072] = "Cassa degli Arpioni",	-- Harpoon Crate
+	[192078] = "Corno di Hodir",	-- Hodir's Horn
+	[192079] = "Lancia di Hodir",	-- Hodir's Spear
+	[192080] = "Elmo di Hodir",	-- Hodir's Helm
+	[192524] = "Arngrim l'Insaziabile",	-- Arngrim the Insatiable
 	[192833] = "Spada di Bridenbrad",	-- Bridenbrad's Possessions
 	[193051] = "Uovo dei Nerubiani del Flagello",	-- Nerubian Scourge Egg
 	[193195] = "Cristallo Pulsante",	-- Pulsing Crystal
@@ -2825,6 +2830,7 @@ for key,value in pairs({
 	[353686] = "Baccello della Luce Lunare",	-- Lunarlight Pod
 	[353687] = "Campana Rotta",	-- Broken Bell
 	[353688] = "Campana Rotta",	-- Broken Bell
+	[353689] = "Campana Rotta",	-- Broken Bell
 	[353691] = "Campana della Vetta",	-- Skyward Bell
 	[353791] = "Forziere del Castello",	-- Castle Strongbox
 	[353792] = "Forziere del Villaggio",	-- Village Strongbox
