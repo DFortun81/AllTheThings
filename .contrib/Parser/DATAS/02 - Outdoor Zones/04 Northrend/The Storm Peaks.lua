@@ -180,63 +180,68 @@ root("Zones", {
 						["qg"] = 32540,	-- Lillehoff
 						["coord"] = { 66.1, 61.4, THE_STORM_PEAKS },
 						["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
 						["repeatable"] = true,
 					}),
 					q(13011, {	-- Culling Jorcuttar
-						["minReputation"] = { 1119, FRIENDLY },
-						["coord"] = { 65.3, 60.1, THE_STORM_PEAKS },
 						["qg"] = 30105,	-- King Jokkum
+						["coord"] = { 65.3, 60.1, THE_STORM_PEAKS },
+						["minReputation"] = { 1119, FRIENDLY },	-- The Sons of Hodir, Friendly.
 					}),
-					q(13006, {	-- A Viscious Cleaning
-					--	["minReputation"] = -- Unknown reputation requirement
-						["sourceQuest"] = 12987,	-- Mounting Hodir's Helm
-						["isDaily"]	= true,
+					q(13006, {	-- A Viscous Cleaning
+						["provider"] = { "o", 192080 },	-- Hodir's Helm
+						["sourceQuest"] = 12987,	-- Placing Hodir's Helm
 						["coord"] = { 64.2, 59.6, THE_STORM_PEAKS },
-						["icon"] = "Interface\\Icons\\INV_Helmet_110",
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["isDaily"]	= true,
 					}),
 					q(13420, {	-- Everfrost
-						["minReputation"] = { 1119, FRIENDLY },
 						["provider"] = { "i", 44725 },	-- Everfrost Chip
-						["description"] = "You can obtain these by looting Everfrost Chips in the environment.",
+						["minReputation"] = { 1119, FRIENDLY },	-- The Sons of Hodir, Friendly.
 					}),
 					q(13421, {	-- Remember Everfrost!
-						["coord"] = { 67.0, 60.8, THE_STORM_PEAKS },	-- needs verification, taken from wowhead.  there's some contention as to whether this quest is offered by an NPC or if the "qg" is just the turn-in NPC
 						["qg"] = 32594,	-- Calder <Blacksmithing Supplies>
-						["sourceQuest"] = 13420,	-- Source Quest: Everfrost
-						["repeatable"]	= true,
+						["sourceQuest"] = 13420,	-- Everfrost
+						["coord"] = { 67.0, 60.8, THE_STORM_PEAKS },
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["cost"] = { { "i", 44724, 1 } },	-- Everfrost Chip
+						["repeatable"] = true,
 					}),
 					q(12977, {	-- Hodir's Call
-					--	["minReputation"] = ,	-- unsure of reputation requirement
+						["provider"] = { "o", 192078 },	-- Hodir's Horn
 						["sourceQuest"] = 12976,	-- A Monument to the Fallen
-						["isDaily"]	= true,
 						["coord"] = { 64.1, 64.7, THE_STORM_PEAKS },
-						["icon"] = "Interface\\Icons\\INV_Misc_Horn_03",
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["isDaily"]	= true,
 					}),
 					q(13046, {	-- Feeding Arngrim
-						["minReputation"] = { 1119, REVERED },
-						["isDaily"]	= true,
+						["provider"] = { "o", 192524 },	-- Arngrim the Insatiable
 						["coord"] = { 67.5, 60.0, THE_STORM_PEAKS },
-						["icon"] = "Interface\\Icons\\Achievement_Dungeon_FrozenThrone",
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["minReputation"] = { 1119, REVERED },	-- The Sons of Hodir, Revered.
+						["isDaily"]	= true,
 					}),
 					q(12981, {	-- Hot and Cold
-					--	["minReputation"] = ,	-- unknown reputation requirement.
+						["provider"] = { "o", 192071 },	-- Fjorn's Anvil
 						["sourceQuest"] = 12967,	-- Battling the Elements
-						["isDaily"]	= true,
 						["coord"] = { 63.2, 63.0, THE_STORM_PEAKS },
-						["icon"] = "Interface\\Icons\\INV_BLACKSMITH_ANVIL",
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["isDaily"]	= true,
 					}),
 					q(12994, {	-- Spy Hunter
-						["minReputation"] = { 1119, HONORED },
-						["isDaily"]	= true,
+						["qg"] = 30294,	-- Frostworg Denmother
 						["coord"] = { 63.5, 59.7, THE_STORM_PEAKS },
-						["qg"] = 30294,	-- Quest Giver: Frostworg Denmother
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["minReputation"] = { 1119, HONORED },	-- The Sons of Hodir, Honored.
+						["isDaily"]	= true,
 					}),
 					q(13003, {	-- How to Slay Your Dragon
-						["minReputation"] = { 1119, HONORED },
+						["provider"] = { "o", 192079 },	-- Hodir's Spear
 						["sourceQuest"] = 13001,	-- Raising Hodir's Spear
-						["isDaily"]	= true,
 						["coord"] = { 65.0, 60.9, THE_STORM_PEAKS },
-						["icon"] = "Interface\\Icons\\INV_Spear_04",
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["minReputation"] = { 1119, HONORED },	-- The Sons of Hodir, Honored.
+						["isDaily"]	= true,
 					}),
 				
 					i(44751, {	-- Hyldnir Spoils
@@ -1530,6 +1535,8 @@ root("Zones", {
 							29792,	-- Frostfeather Screecher
 						},
 					}),
+					i(44724),	-- Everfrost Chip
+					i(44725),	-- Everfrost Chip
 					i(42780),	-- Relics of Ulduar
 					i(49050, {	-- Schematic: Jeeves
 						["crs"] = { 29724 },	-- Library Guardian

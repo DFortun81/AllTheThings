@@ -910,12 +910,13 @@ root("Zones", {
 						["sourceQuest"] = 13044,	-- If There Are Survivors...
 					}),
 					q(13135, {	-- It Could Kill Us All
-						["coord"] = { 82.9, 73.0, ICECROWN },
 						["qg"] = 30714,	-- Crusade Engineer Spitzpatrick
 						["sourceQuests"] = {
 							13104,	-- Once More Unto The Breach, Hero (Non-DK)
 							13105,	-- Once More Unto The Breach, Hero (DK)
 						},
+						["coord"] = { 82.9, 73.0, ICECROWN },
+						["maps"] = { CRYSTALSONG_FOREST },
 					}),
 					q(12887, {	-- It's All Fun and Games (A)
 						["races"] = ALLIANCE_ONLY,
@@ -1880,12 +1881,13 @@ root("Zones", {
 						["sourceQuest"] = 13291,	-- Borrowed Technology
 					}),
 					q(13130, {	-- The Stone That Started A Revolution
-						["coord"] = { 83.0, 73.0, ICECROWN },
 						["qg"] = 30686,	-- Crusade Architect Silas
 						["sourceQuests"] = {
 							13104,	-- Once More Unto The Breach, Hero (Non-DK)
 							13105,	-- Once More Unto The Breach, Hero (DK)
 						},
+						["coord"] = { 83.0, 73.0, ICECROWN },
+						["maps"] = { CRYSTALSONG_FOREST },
 						["groups"] = {
 							i(43855),	-- Adepts Wristwraps
 							i(43914),	-- Girdle of Reprieve
