@@ -4,7 +4,7 @@
 root("Promotions", {
 	n(-580, {	-- Shadowlands Seasonal Promotions
 		["timeline"] = { "added 9.0.5" },
-		["description"] = "These promotions happened during the time Shadowlands was the most recent content between 23 November 2020 & 28th November 2022.\n\n They are listed in the order they appeared.",
+		["description"] = "These promotions happened during the time Shadowlands was the most recent content between 23 November 2020 & 28th November 2022.\n\nThey are listed in the order they appeared.",
 		["groups"] = {
 			-- SEASON 1
 			mount(348162, {	-- Wandering Ancient (MOUNT!)
@@ -41,8 +41,9 @@ root("Promotions", {
 				["u"] = REMOVED_FROM_GAME, -- Removed again on August 24th 2022
 			}),
 			i(187958, {		-- Shrouded Banner of the Opportune (TOY!)
-				["description"] = "The Great Push: SL Season 4\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Shrouded Banner of the Opportune to use in-game!\nSign-ups close 5 Aug 2022 and The Proving Grounds start on 10 Aug (US).",
-				["u"] = REMOVED_FROM_GAME,
+			--	["description"] = "The Great Push: SL Season 4\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Shrouded Banner of the Opportune to use in-game!\nSign-ups close 5 Aug 2022 and The Proving Grounds start on 10 Aug (US).",
+			--	["u"] = REMOVED_FROM_GAME,
+			["description"] = "Break the Meta: SL Season 4\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 4 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFRaider.io/break-the-meta-2022|r and complete 2 or more eligible timed keystones at level 15 or higher during BTM S4, and the Shrouded Banner of the Opportune will be automatically added to your collection in-game within 30 days of the conclusion of the event.\n\nThe Event starts on October 4th for US, October 5th for EU & October 6th for KR/TW & lasts for the entire reset of your region.",
 			}),
 			i(95475, {	-- Crown of the Eternal Winter
 				["timeline"] = { "added 9.2.5" },
