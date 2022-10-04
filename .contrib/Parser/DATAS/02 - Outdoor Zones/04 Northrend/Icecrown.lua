@@ -814,10 +814,9 @@ root("Zones", {
 						["sourceQuest"] = 13168,	-- Parting Gifts
 					}),
 					q(13074, {	-- Hope Within the Emerald Nightmare
-						["lvl"] = 67,
-						["coord"] = { 36.2, 41.8, MOONGLADE },
 						["qg"] = 11832,	-- Keeper Remulos
 						["sourceQuest"] = 13073,	-- The Keeper's Favor
+						["coord"] = { 36.2, 41.8, MOONGLADE },
 					}),
 					q(13080, {	-- Hope Yet Remains
 						["coord"] = { 79.8, 30.8, ICECROWN },
@@ -1621,21 +1620,20 @@ root("Zones", {
 						["sourceQuest"] = 12955,	-- Eliminate the Competition
 					}),
 					q(13082, {	-- The Boon of A'dal
-						["maps"] = { SHATTRATH_CITY },
-						["coord"] = { 53.9, 44.7, ICECROWN },
 						["qg"] = 18481,	-- A'dal
 						["sourceQuest"] = 13081,	-- The Will of the Naaru
+						["coord"] = { 53.9, 44.7, ICECROWN },
+						["maps"] = { SHATTRATH_CITY },
 					}),
 					q(13079, {	-- The Boon of Alexstrasza
-						["coord"] = { 59.8, 54.7, DRAGONBLIGHT },
 						["qg"] = 26917,	-- Alexstrasza the Life-Binder
 						["sourceQuest"] = 13078,	-- Dahlia's Tears
+						["coord"] = { 59.8, 54.7, DRAGONBLIGHT },
 					}),
 					q(13075, {	-- The Boon of Remulos
-						["lvl"] = 67,
-						["coord"] = { 36.2, 41.8, MOONGLADE },
 						["qg"] = 11832,	-- Keeper Remulos
 						["sourceQuest"] = 13074,	-- Hope Within the Emerald Nightmare
+						["coord"] = { 36.2, 41.8, MOONGLADE },
 					}),
 					q(13231, {	-- The Broken Front (A)
 						["races"] = ALLIANCE_ONLY,
@@ -1750,10 +1748,10 @@ root("Zones", {
 						["sourceQuest"] = 13306,	-- Raise the Barricades
 					}),
 					q(13073, {	-- The Keeper's Favor
-						["lvl"] = 67,
-						["coord"] = { 79.7, 71.7, ICECROWN },
 						["qg"] = 31044,	-- Highlord Tirion Fordring
 						["sourceQuest"] = 13072,	-- A Hero Remains
+						["coord"] = { 79.7, 71.7, ICECROWN },
+						["maps"] = { MOONGLADE },
 					}),
 					q(13086, {	-- The Last Line Of Defense
 						["coord"] = { 85.6, 76.0, ICECROWN },

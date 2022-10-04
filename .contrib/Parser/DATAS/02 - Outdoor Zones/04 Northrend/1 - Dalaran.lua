@@ -4036,6 +4036,7 @@ root("Zones", {
 					q(13102, {	-- Sewer Stew [A]
 						["qg"] = 28705,	-- Katherine Lee
 						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
+						["maps"] = { CRYSTALSONG_FOREST },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32413, {	-- A Return to Krasarang
@@ -4070,6 +4071,7 @@ root("Zones", {
 					q(13114, {	-- Sewer Stew [H]
 						["qg"] = 29631,	-- Awilo Longomba
 						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
+						["maps"] = { CRYSTALSONG_FOREST },
 						["races"] = HORDE_ONLY,
 					}),
 					--[[
