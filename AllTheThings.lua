@@ -1462,6 +1462,7 @@ app.Colors = {
 	["ChatLinkHQT"] = "ff7aff92",
 	["ChatLink"] = "ff149bfd",
 	["TooltipDescription"] = "ff66ccff",
+	["TooltipLore"] = "ff42a7eb",
 	["DefaultDifficulty"] = "ff1eff00",
 	["RemovedWithPatch"] = "ffffaaaa",
 };
@@ -4775,7 +4776,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		-- Description for Items
 		if group.lore and app.Settings:GetTooltipSetting("Lore") then
-			tinsert(info, 1, { left = group.lore, wrap = true, color = app.Colors.TooltipDescription });
+			tinsert(info, 1, { left = group.lore, wrap = true, color = app.Colors.TooltipLore });
 		end
 		if group.description and app.Settings:GetTooltipSetting("Descriptions") then
 			tinsert(info, 1, { left = group.description, wrap = true, color = app.Colors.TooltipDescription });
