@@ -12075,14 +12075,15 @@ app.BaseHeirloomLevel = app.BaseObjectFields(fields, "BaseHeirloomLevel");
 -- copy base Item fields
 -- TODO: heirlooms need to cache item information as well
 local fields = RawCloneData(itemFields);
--- The fallback filter is the original Item's filter if not collecting the Heirloom itself
-fields.f = function(t) return not app.CollectibleHeirlooms and t.itemFilter; end
 fields.icon = function(t) return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or select(5, GetItemInfoInstant(t.itemID)); end
 fields.link = function(t) return C_Heirloom_GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID)); end
 fields.collectibleAsCost = app.ReturnFalse;
 fields.collectible = function(t)
-		if t.factionID then return app.CollectibleReputations; end
-		return t.s and app.CollectibleTransmog;
+		-- Heirloom Token for a Reputation
+		if t.factionID and app.CollectibleReputations then return true; end
+		-- Heirloom Appearance
+		if t.s and app.CollectibleTransmog then return true; end
+		-- Otherwise the Heirloom Item itself is not inherently collectible
 	end
 fields.collected = function(t)
 		if t.factionID then
@@ -12105,7 +12106,7 @@ fields.saved = function(t)
 		return t.collected == 1;
 	end
 fields.isWeapon = function(t)
-		local f = t.itemFilter or t.f;
+		local f = t.f;
 		if f and contains(isWeapon, f) then
 			rawset(t, "isWeapon", true);
 			return true;
@@ -12125,10 +12126,6 @@ app.BaseHeirloom = app.BaseObjectFields(fields, "BaseHeirloom");
 app.CreateHeirloom = function(id, t)
 	tinsert(heirloomIDs, id);
 	if t then
-		-- TODO: perhaps make Parser store the information properly in the first place...
-		-- save the original filter of the Item for tracking if NOT collecting heirlooms
-		t.itemFilter = t.f;
-		t.f = nil;
 		-- Heirlooms are always BoA
 		t.b = 2;
 	end
@@ -12183,7 +12180,7 @@ app.CacheHeirlooms = function()
 						heirloomHeader = CloneData(heirloom);
 						heirloomHeader.collectible = false;
 						-- put the upgrade object into the header heirloom object
-						heirloomHeader.g = { setmetatable({ ["level"] = i, ["heirloomLevelID"] = itemID, ["u"] = heirloom.u, ["f"] = heirloom.f }, app.BaseHeirloomLevel) };
+						heirloomHeader.g = { setmetatable({ ["level"] = i, ["heirloomLevelID"] = itemID, ["u"] = heirloom.u }, app.BaseHeirloomLevel) };
 
 						-- add the header into the appropriate upgrade token
 						if isWeapon then
@@ -14174,6 +14171,10 @@ end
 local function FilterItemClass_RequireItemFilter(item)
 	local f = item.f;
 	if f then
+		-- don't filter Heirlooms by their Type if they are collectible as Heirlooms
+		if item.__type == "BaseHeirloom" and app.CollectibleHeirlooms then
+			return true;
+		end
 		return app.Settings:GetFilter(f);	-- Filter applied via Settings (character-equippable or manually set)
 	else
 		return true;
@@ -14396,7 +14397,8 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 		local knownSource = C_TransmogCollection_GetSourceInfo(knownSourceID);
 		local acctSources = ATTAccountWideData.Sources;
 		local checkItem, checkSource, valid;
-		local knownRaces, knownClasses, knownFaction = knownItem.races, knownItem.c, knownItem.r;
+		local knownRaces, knownClasses, knownFaction, knownFilter = knownItem.races, knownItem.c, knownItem.r, knownItem.f;
+		local checkFilter;
 		-- this source unlocks a visual that the current character may tmog, so all shared visuals should be considered 'collected' regardless of restriction
 		local currentCharacterUsable = currentCharacterOnly and not knownItem.nmc and not knownItem.nmr;
 		-- For each shared Visual SourceID
@@ -14428,7 +14430,8 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 					checkItem = SearchForSourceIDQuickly(sourceID);
 					if checkItem then
 						-- filter matches or one item is Cosmetic
-						if checkItem.f == knownItem.f or checkItem.f == 2 or knownItem.f == 2 then
+						checkFilter = checkItem.f;
+						if checkFilter == knownFilter or checkFilter == 2 or knownFilter == 2 then
 							valid = true;
 							-- verify all possible restrictions that the known source may have against restrictions on the source in question
 							-- if known source has no equivalent restrictions, then restrictions on the source are irrelevant
