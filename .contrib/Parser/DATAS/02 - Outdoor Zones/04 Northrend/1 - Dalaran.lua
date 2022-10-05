@@ -4531,11 +4531,10 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 					}),
 					]]--
-					q(14203, {	-- Waterlogged Recipe
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "i", 48681 },	-- Waterlogged Recipe
+					q(24431, {	-- Waterlogged Recipe
+						["provider"] = { "i", 49667 },	-- Waterlogged Recipe
+						["requireSkill"] = COOKING,
 						["repeatable"] = true,
-						["requireSkill"] = FISHING,
 						["groups"] = {
 							currency(81),	-- Epicurean's Award 5x
 						},
@@ -4568,11 +4567,13 @@ root("Zones", {
 				n(REWARDS, {
 					i(46007, {	-- Bag of Fishing Treasures
 						["description"] = "Fishing Daily Quest Reward",
+						["requireSkill"] = FISHING,
 						["crs"] = { 28742 },	-- Marcia Chase
 						["groups"] = {
 							i(46004),	-- Sealed Vial of Poison
 							i(44983),	-- Strand Crawler Pet
 							i(45984),	-- Unusual Compass (TOY!)
+							i(49667),	-- Waterlogged Recipe
 							i(33820),	-- Weather-Beaten Fishing Hat
 							i(45986, {	-- Tiny Titanium Lockbox
 								i(45995),	-- Forgotten Necklace
