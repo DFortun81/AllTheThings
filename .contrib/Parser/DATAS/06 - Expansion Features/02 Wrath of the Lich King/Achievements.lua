@@ -80,41 +80,52 @@ root("ExpansionFeatures", tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "added 
 			["sym"] = {{"select","achievementID",2257}},	-- Frostbitten
 		}),
 		ach(2557, {	-- To All The Squirrels Who Shared My Life
-			-- TODO map/coord here instead of individual zone files
-			crit(1,  {	-- Arctic Hare (Dragonblight, Zul'Drak, Borean Tundra)
+			crit(3753,  {	-- Arctic Hare (Dragonblight, Zul'Drak, Borean Tundra)
+				["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, ZULDRAK },
 				["crs"] = { 29328 },	-- Arctic Hare
 			}),
-			crit(2,  {	-- Borean Marmot (Borean Tundra)
+			crit(9300,  {	-- Borean Marmot (Borean Tundra)
+				["maps"] = { BOREAN_TUNDRA },
 				["crs"] = { 31685 },	-- Borean Marmot
 			}),
-			crit(3,  {	-- Fjord Penguin (Howling Fjord)
+			crit(9301,  {	-- Fjord Penguin (Howling Fjord)
+				["maps"] = { HOWLING_FJORD },
 				["crs"] = { 28407 },	-- Fjord Penguin
 			}),
-			crit(4,  {	-- Fjord Turkey (Howling Fjord)
+			crit(9302,  {	-- Fjord Turkey (Howling Fjord)
+				["maps"] = { HOWLING_FJORD },
 				["crs"] = { 24746 },	-- Fjord Turkey
 			}),
-			crit(5,  {	-- Glacier Penguin (Icecrown)
+			crit(9303,  {	-- Glacier Penguin (Icecrown)
+				["maps"] = { ICECROWN },
 				["crs"] = { 32498 },	-- Glacier Penguin
 			}),
-			crit(6,  {	-- Grizzly Squirrel (Grizzly Hills, Twilight Highlands)
+			crit(9304,  {	-- Grizzly Squirrel (Grizzly Hills, Twilight Highlands)
+				["maps"] = { GRIZZLY_HILLS },
 				["crs"] = { 62818 },	-- Grizzly Squirrel
 			}),
-			crit(7,  {	-- Huge Toad (Hillsbrad Foothills, Twilight Highlands, Zul'Drak, Swamp of Sorrows)
+			crit(9305,  {	-- Huge Toad (Hillsbrad Foothills, Twilight Highlands, Zul'Drak, Swamp of Sorrows)
+				["maps"] = { HILLSBRAD_FOOTHILLS, SWAMP_OF_SORROWS, ZULDRAK },
 				["crs"] = { 6653 },	-- Huge Toad
 			}),
-			crit(8,  {	-- Lava Crab (Searing Gorge, Burning Steppes)
+			crit(9306,  {	-- Lava Crab (Searing Gorge, Burning Steppes)
+				["maps"] = { SEARING_GORGE, BURNING_STEPPES },
 				["crs"] = { 9700 },	-- Lava Crab
 			}),
-			crit(9,  {	-- Mountain Skunk (Stonetalon Mountains, Grizzly Hills, Winterspring, Howling Fjord)
+			crit(9307,  {	-- Mountain Skunk (Stonetalon Mountains, Grizzly Hills, Winterspring, Howling Fjord)
+				["maps"] = { GRIZZLY_HILLS, HOWLING_FJORD, STONETALON_MOUNTAINS, WINTERSPRING },
 				["crs"] = { 31890 },	-- Mountain Skunk
 			}),
-			crit(10, {	-- Scalawag Frog (Howling Fjord)
+			crit(9308, {	-- Scalawag Frog (Howling Fjord)
+				["maps"] = { HOWLING_FJORD },
 				["crs"] = { 26503 },	-- Scalawag Frog
 			}),
-			crit(11, {	-- Sholazar Tickbird (Sholazar Basin)
+			crit(9309, {	-- Sholazar Tickbird (Sholazar Basin)
+				["maps"] = { SHOLAZAR_BASIN },
 				["crs"] = { 28093 },	-- Sholazar Tickbird
 			}),
-			crit(12, {	-- Tundra Penguin (Borean Tundra)
+			crit(9310, {	-- Tundra Penguin (Borean Tundra)
+				["maps"] = { BOREAN_TUNDRA },
 				["crs"] = { 28440 },	-- Tundra Penguin
 			}),
 		}),
