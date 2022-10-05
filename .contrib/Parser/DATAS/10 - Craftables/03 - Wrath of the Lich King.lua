@@ -348,8 +348,8 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(INSCRIPTION, {
+		-- #if AFTER WOD
 		filter(GLYPHS, {
-			-- #if AFTER WOD
 			i(42736, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
 			i(42898, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
 			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+]
@@ -359,54 +359,45 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 				-- #endif
 				["timeline"]={ "added 3.0.2" },
 			}),
-			-- #endif
 		}),
+		-- #endif
 		category(106, {	-- Tarot Cards
 			sp(59504, {	-- Darkmoon Card of the North
-				i(44260, {["f"] = 55}),    -- Ace of Prisms
-				i(44261, {["f"] = 55}),    -- 2 of Prisms
-				i(44262, {["f"] = 55}),    -- 3 of Prisms
-				i(44263, {["f"] = 55}),    -- 4 of Prisms
-				i(44264, {["f"] = 55}),    -- 5 of Prisms
-				i(44265, {["f"] = 55}),    -- 6 of Prisms
-				i(44266, {["f"] = 55}),    -- 7 of Prisms
-				i(44267, {["f"] = 55}),    -- 8 of Prisms
-				i(44259, {	-- Prisms Deck
-					i(42988),	-- Darkmoon Card: Illusion
-				}),
-				i(44268, {["f"] = 55}),    -- Ace of Nobles
-				i(44269, {["f"] = 55}),    -- 2 of Nobles
-				i(44270, {["f"] = 55}),    -- 3 of Nobles
-				i(44271, {["f"] = 55}),    -- 4 of Nobles
-				i(44272, {["f"] = 55}),    -- 5 of Nobles
-				i(44273, {["f"] = 55}),    -- 6 of Nobles
-				i(44274, {["f"] = 55}),    -- 7 of Nobles
-				i(44275, {["f"] = 55}),    -- 8 of Nobles
-				i(44326, {	-- Nobles Deck
-					i(42987),	-- Darkmoon Card: Greatness
-				}),
-				i(44277, {["f"] = 55}),    -- Ace of Chaos
-				i(44278, {["f"] = 55}),    -- 2 of Chaos
-				i(44279, {["f"] = 55}),    -- 3 of Chaos
-				i(44280, {["f"] = 55}),    -- 4 of Chaos
-				i(44281, {["f"] = 55}),    -- 5 of Chaos
-				i(44282, {["f"] = 55}),    -- 6 of Chaos
-				i(44284, {["f"] = 55}),    -- 7 of Chaos
-				i(44285, {["f"] = 55}),    -- 8 of Chaos
-				i(44276, {	-- Chaos Deck
-					i(42989),	-- Darkmoon Card: Berserker!
-				}),
-				i(44286, {["f"] = 55}),    -- Ace of Undeath
-				i(44287, {["f"] = 55}),    -- 2 of Undeath
-				i(44288, {["f"] = 55}),    -- 3 of Undeath
-				i(44289, {["f"] = 55}),    -- 4 of Undeath
-				i(44290, {["f"] = 55}),    -- 5 of Undeath
-				i(44291, {["f"] = 55}),    -- 6 of Undeath
-				i(44292, {["f"] = 55}),    -- 7 of Undeath
-				i(44293, {["f"] = 55}),    -- 8 of Undeath
-				i(44294, {	-- Undeath Deck
-					i(42990),	-- Darkmoon Card: Death
-				}),
+				i(44277),    -- Ace of Chaos
+				i(44278),    -- 2 of Chaos
+				i(44279),    -- 3 of Chaos
+				i(44280),    -- 4 of Chaos
+				i(44281),    -- 5 of Chaos
+				i(44282),    -- 6 of Chaos
+				i(44284),    -- 7 of Chaos
+				i(44285),    -- 8 of Chaos
+				
+				i(44268),    -- Ace of Nobles
+				i(44269),    -- 2 of Nobles
+				i(44270),    -- 3 of Nobles
+				i(44271),    -- 4 of Nobles
+				i(44272),    -- 5 of Nobles
+				i(44273),    -- 6 of Nobles
+				i(44274),    -- 7 of Nobles
+				i(44275),    -- 8 of Nobles
+				
+				i(44260),    -- Ace of Prisms
+				i(44261),    -- 2 of Prisms
+				i(44262),    -- 3 of Prisms
+				i(44263),    -- 4 of Prisms
+				i(44264),    -- 5 of Prisms
+				i(44265),    -- 6 of Prisms
+				i(44266),    -- 7 of Prisms
+				i(44267),    -- 8 of Prisms
+				
+				i(44286),    -- Ace of Undeath
+				i(44287),    -- 2 of Undeath
+				i(44288),    -- 3 of Undeath
+				i(44289),    -- 4 of Undeath
+				i(44290),    -- 5 of Undeath
+				i(44291),    -- 6 of Undeath
+				i(44292),    -- 7 of Undeath
+				i(44293),    -- 8 of Undeath
 			}),
 		}),
 		filter(HELD_IN_OFF_HAND, {
@@ -460,6 +451,20 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 			i(42413),	-- Figurine - Sapphire Owl
 			i(42395),	-- Figurine - Twilight Serpent
 		}),
+	}),
+	prof(HERBALISM, {
+		["description"] = "The following items can be gathered by Herbalists out in the world.",
+		["groups"] = {
+			i(36903),	-- Adder's Tongue
+			i(37704),	-- Crystallized Life
+			i(37921),	-- Deadnettle
+			i(36908),	-- Frost Lotus
+			i(36901),	-- Goldclover
+			i(36906),	-- Icethorn
+			i(36905),	-- Lichbloom
+			i(36907),	-- Talandra's Rose
+			i(36904),	-- Tiger Lily
+		},
 	}),
 	prof(LEATHERWORKING, {
 		filter(BAGS, {
@@ -622,6 +627,74 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 			i(43130),	-- Virulent Spaulders
 		}),
 	}),
+	prof(MINING, {
+		["description"] = "The following items can be gathered by Miners out in the world.",
+		["groups"] = {
+			spell(2656, {	-- Smelting
+				["description"] = "The following items can be smelted by Miners in a city.",
+				["groups"] = {
+					i(36916, {	-- Cobalt Bar
+						["cost"] = { { "i", 36909, 1 } },	-- Cobalt Ore
+					}),
+					i(36913, {	-- Saronite Bar
+						["cost"] = { { "i", 36912, 2 } },	-- Saronite Ore
+					}),
+					i(41163, {	-- Titanium Bar
+						["cost"] = { { "i", 36910, 2 } },	-- Titanium Ore
+					}),
+					i(37663, {	-- Titansteel Bar
+						["cost"] = {
+							{ "i", 41163, 3 },	-- Titanium Bar
+							{ "i", 35624, 1 },	-- Eternal Earth
+							{ "i", 36860, 1 },	-- Eternal Fire
+							{ "i", 35627, 1 },	-- Eternal Shadow
+						},
+						["OnTooltip"] = [[function(t)
+							if _.CurrentCharacter.Spells[55208] then
+								if GetSpellCooldown(55208) > 0 then
+									GameTooltip:AddLine("Your Titansteel cooldown is unavailable.");
+								else
+									GameTooltip:AddLine("Your Titansteel cooldown is available.");
+								end
+							end
+						end]]
+					}),
+				},
+			}),
+			i(36909),	-- Cobalt Ore
+			i(36912),	-- Saronite Ore
+			i(36910),	-- Titanium Ore
+			i(37700),	-- Crystallized Air
+			i(37701),	-- Crystallized Earth
+			i(37702),	-- Crystallized Fire
+			i(37703),	-- Crystallized Shadow
+			i(37705),	-- Crystallized Water
+			i(36917),	-- Bloodstone
+			i(36923),	-- Chalcedony
+			i(36932),	-- Dark Jade
+			i(36929),	-- Huge Citrine
+			i(36926),	-- Shadow Crystal
+			i(36920),	-- Sun Crystal
+			i(36921),	-- Autumn's Glow
+			i(36933),	-- Forest Emerald
+			i(36930),	-- Monarch Topaz
+			i(36918),	-- Scarlet Ruby
+			i(36924),	-- Sky Sapphire
+			i(36927),	-- Twilight Opal
+		},
+	}),
+	prof(SKINNING, {
+		["description"] = "The following items can be gathered by skinning creatures out in the world.",
+		["groups"] = {
+			i(44128),	-- Arctic Fur
+			i(33568),	-- Borean Leather
+			i(33567),	-- Borean Leather Scraps
+			i(38425),	-- Heavy Borean Leather
+			i(38557),	-- Icy Dragonscale
+			i(38561),	-- Jormungar Scale
+			i(38558),	-- Nerubian Chitin
+		},
+	}),
 	prof(TAILORING, {
 		filter(BAGS, {
 			i(41597),	-- Abyssal Bag
@@ -698,7 +771,7 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 		}),
 		filter(MOUNTS, {
 			i(44554),	-- Flying Carpet (MOUNT!)
-			i(54797),	-- Frosty Flying Carpet (MOUNT!)
+			applyclassicphase(WRATH_PHASE_FOUR, i(54797)),	-- Frosty Flying Carpet (MOUNT!)
 			i(44558),	-- Magnificent Flying Carpet (MOUNT!)
 		}),
 		n(SHOULDER, {

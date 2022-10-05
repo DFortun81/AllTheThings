@@ -369,7 +369,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				i(31859),	-- Darkmoon Card: Madness
 			},
 		})),
-		q(13326, {	-- Darkmoon Nobles Deck
+		applyclassicphase(WRATH_PHASE_ONE, q(13326, {	-- Darkmoon Nobles Deck
 			["providers"] = {
 				{ "i", 44326 },	-- Nobles Deck
 				{ "n", 14847 },	-- Professor Thaddeus
@@ -383,7 +383,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				i(42987),	-- Darkmoon Card: Greatness
 				i(44254),	-- Darkmoon Card: Greatness
 			},
-		}),
+		})),
 		q(30450, {	-- Darkmoon Ox Deck
 			["providers"] = {
 				{ "i", 79324 },	-- Ox Deck
@@ -408,7 +408,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				i(19290),	-- Darkmoon Card: Twisting Nether
 			},
 		})),
-		q(13324, {	-- Darkmoon Prisms Deck
+		applyclassicphase(WRATH_PHASE_ONE, q(13324, {	-- Darkmoon Prisms Deck
 			["providers"] = {
 				{ "i", 44259 },	-- Prisms Deck
 				{ "n", 14847 },	-- Professor Thaddeus
@@ -419,7 +419,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["g"] = {
 				i(42988),	-- Darkmoon Card: Illusion
 			},
-		}),
+		})),
 		q(30451, {	-- Darkmoon Serpent Deck
 			["providers"] = {
 				{ "i", 79326 },	-- Serpent Deck
@@ -469,7 +469,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				i(62050),	-- Darkmoon Card: Tsunami
 			},
 		}),
-		q(13327, {	-- Darkmoon Undeath Deck
+		applyclassicphase(WRATH_PHASE_ONE, q(13327, {	-- Darkmoon Undeath Deck
 			["providers"] = {
 				{ "i", 44294 },	-- Undeath Deck
 				{ "n", 14847 },	-- Professor Thaddeus
@@ -480,7 +480,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["g"] = {
 				i(42990),	-- Darkmoon Card: Death
 			},
-		}),
+		})),
 		q(27664, {	-- Darkmoon Volcanic Deck
 			["providers"] = {
 				{ "i", 62021 },	-- Volcanic Deck

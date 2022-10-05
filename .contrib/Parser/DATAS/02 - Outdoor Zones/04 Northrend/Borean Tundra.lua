@@ -2303,6 +2303,13 @@ root("Zones", {
 						},
 					}),
 				}),
+				n(PROFESSIONS, {
+					prof(HERBALISM, {
+						i(39970, {	-- Fire Leaf
+							["description"] = "Can be gathered from herbing Firethorn.",
+						}),
+					}),
+				}),
 				-- #if AFTER 6.2.2.20444
 				n(TREASURES, {
 					o(244447, {	-- White Murloc Egg

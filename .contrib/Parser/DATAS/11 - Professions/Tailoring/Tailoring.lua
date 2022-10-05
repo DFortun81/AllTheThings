@@ -1664,10 +1664,10 @@ profession(TAILORING, {
 					["name"] = "Flying Carpet",
 					["recipeID"] = 60969
 				},
-				{
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Frosty Flying Carpet",
 					["recipeID"] = 75597
-				},
+				}),
 				{
 					["name"] = "Magnificent Flying Carpet",
 					["recipeID"] = 60971

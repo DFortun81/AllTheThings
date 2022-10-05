@@ -6292,7 +6292,7 @@ root("Zones", {
 							}),
 						},
 					}),
-					n(40160, {	-- Frozo the Renowned <Frozen Orb Trader>
+					applyclassicphase(WRATH_PHASE_FOUR, n(40160, {	-- Frozo the Renowned <Frozen Orb Trader>
 						["coord"] = { 40.0, 28.9, NORTHREND_DALARAN },
 						["groups"] = {
 							i(47556, {	-- Crusader Orb
@@ -6326,7 +6326,7 @@ root("Zones", {
 								["cost"] = { { "i", 43102, 4 }, },	-- 4x Frozen Orb
 							}),
 						},
-					}),
+					})),
 					n(28997, {	-- Griselda Hunderland <Plate Armor Merchant>
 						["coord"] = { 46.3, 27.2, NORTHREND_DALARAN },
 						["groups"] = {
