@@ -62,6 +62,7 @@ _.Zones =
 						["sourceQuest"] = 25551,	-- The Firelord
 					}),
 				}),
+				explorationAch(4863),	-- Explore Hyjal
 				ach(5864),	-- Gang War
 				ach(5865, {	-- Have... Have We Met?
 					crit(4),	-- Chromie

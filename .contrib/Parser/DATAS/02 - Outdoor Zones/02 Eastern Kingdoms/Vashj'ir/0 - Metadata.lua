@@ -24,6 +24,21 @@ _.Zones =
 							-- TODO: There are a lot more source quests than just this, but no good info on what they are
 						},
 					}),
+					explorationAch(4825, {	-- Explore Vashj'ir
+						["maps"] = {
+							201,	-- Kelp'thar Forest
+							204,	-- Abyssal Depths
+							205,	-- Shimmering Expanse
+						},
+					}),
+					ach(4975, {	-- From Hell's Heart I Stab at Thee
+						["cr"] = 40728,	-- Whale Shark
+						["maps"] = {
+							201,	-- Kelp'thar Forest
+							204,	-- Abyssal Depths
+							205,	-- Shimmering Expanse
+						},
+					}),
 				}),
 			}
 		}),
