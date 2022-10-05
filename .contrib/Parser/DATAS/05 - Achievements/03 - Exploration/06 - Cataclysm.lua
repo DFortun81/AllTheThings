@@ -93,35 +93,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(10),	-- The Scorched Plain
 			crit(11),	-- The Throne of Flame
 		}),
-		ach(4866, {	-- Explore Twilight Highlands
-			crit(1),	-- Bloodgulch
-			crit(2),	-- Crucible of Carnage
-			crit(3),	-- Crushblow
-			crit(4),	-- Dragonmaw Pass
-			crit(5),	-- Dragonmaw Port
-			crit(6),	-- Dunwald Ruins
-			crit(7),	-- Firebeard's Patrol
-			crit(8),	-- Glopgut's Hollow
-			crit(9),	-- Gorshak War Camp
-			crit(10),	-- Grim Batol
-			crit(11),	-- Highbank
-			crit(12),	-- Highland Forest
-			crit(13),	-- Humboldt Conflagration
-			crit(14),	-- Kirthaven
-			crit(15),	-- Obsidian Forest
-			crit(16),	-- Ruins of Drakgor
-			crit(17),	-- Slithering Cove
-			crit(18),	-- The Black Breach
-			crit(19),	-- The Gullet
-			crit(20),	-- The Krazzworks
-			crit(21),	-- The Twilight Breach
-			crit(22),	-- Thundermar
-			crit(23),	-- Twilight Shore
-			crit(24),	-- Vermillion Redoubt
-			crit(25),	-- Victor's Point
-			crit(26),	-- Wyrms' Bend
-			crit(27),	-- The Maw of Madness
-		}),
 		ach(4865, {	-- Explore Uldum
 			crit(1),	-- Akhenet Fields
 			crit(2),	-- Cradle of the Ancients

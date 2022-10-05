@@ -28,7 +28,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(9),	-- Lu-Ban
 			crit(10),	-- Molthor
 		}),
-		ach(8716),	-- Emissary of Ordos
 		ach(6978, {	-- Explore Dread Wastes
 			crit(1),	-- Heart of Fear
 			crit(2),	-- Klaxxi'vess
@@ -344,13 +343,11 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(3),	-- Chi-Ji's Blessing Obtained
 			crit(4),	-- Xuen's Blessing Obtained
 		}),
-		ach(7381),	-- Restore Balance (Jade Forest)
 		ach(7997, {	-- Riches of Pandaria
 			ach(7996),	-- Bounty of Pandaria
 			ach(7995),	-- Fortune of Pandaria
 			ach(7994),	-- Treasure of Pandaria
 		}),
-		ach(8730),	-- Rolo's Riddle (Timeless Isle)
 		ach(8050, {	-- Rumbles of Thunder (Isle of Thunder)
 			crit(1),	-- Lei Shen
 			crit(2),	-- The Sacred Mount
@@ -537,7 +534,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(4),	-- Sturdy Chests
 			crit(5),	-- Smoldering Chests
 		}),
-		ach(7518),	-- Wanderers, Dreamers, and You (Krasarang Wilds)
 		ach(6858, {	-- What Is Worth Fighting For
 			crit(1),	-- Pandaren Fighting Tactics (Valley of the Four Winds)
 			crit(2),	-- Always Remember (Vale of Eternal Blossoms)
@@ -550,7 +546,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(2),	-- Blackguard's Jetsam
 			crit(3),	-- Gleaming Treasure Satchel
 		}),
-		ach(8743),	-- Zarhym Altogether (Timeless Isle)
 		ach(8078, {	-- Zul'Again
 			crit(1),	-- Zandalari Scouts Slain slain (10) (Townlong Steppes, Dread Wastes, Kun-Lai Summit, Krasarang Wilds, The Jade Forest)
 			crit(2),	-- Zandalari Warbringers Slain slain (5) (Townlong Steppes, Dread Wastes, Kun-Lai Summit, The Jade Forest)

@@ -43,55 +43,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(16),	-- The Ruined Reaches
 			crit(17),	-- Storm Cliffs
 		}),
-		ach(860, {	-- Explore Azuremyst Isle
-			crit(1),	-- Ammen Vale
-			crit(2),	-- Ammen Ford
-			crit(3),	-- Azure Watch
-			crit(4),	-- Bristlelimb Village
-			crit(5),	-- Emberglade
-			crit(6),	-- Fairbridge Strand
-			crit(7),	-- Geezle's Camp
-			crit(8),	-- Moongraze Woods
-			crit(9),	-- Odesyus' Landing
-			crit(10),	-- Pod Cluster
-			crit(11),	-- Pod Wreckage
-			crit(12),	-- Silting Shore
-			crit(13),	-- Silvermyst Isle
-			crit(14),	-- Stillpine Hold
-			crit(15),	-- The Exodar
-			crit(16),	-- Valaar's Berth
-			crit(17),	-- Wrathscale Point
-		}),
-		ach(861, {	-- Explore Bloodmyst Isle
-			crit(1),	-- Amberweb Pass
-			crit(2),	-- Axxarien
-			crit(3),	-- Blacksilt Shore
-			crit(4),	-- Bladewood
-			crit(5),	-- Bloodcurse Isle
-			crit(6),	-- Blood Watch
-			crit(7),	-- Bristlelimb Enclave
-			crit(8),	-- Kessel's Crossing
-			crit(9),	-- Middenvale
-			crit(10),	-- Mystwood
-			crit(11),	-- Nazzivian
-			crit(12),	-- Ragefeather Ridge
-			crit(13),	-- Ruins of Loreth'Aran
-			crit(14),	-- Talon Stand
-			crit(15),	-- Tel'athion's Camp
-			crit(16),	-- The Bloodcursed Reef
-			crit(17),	-- The Bloodwash
-			crit(18),	-- The Crimson Reach
-			crit(19),	-- The Cryo-Core
-			crit(20),	-- The Foul Pool
-			crit(21),	-- The Hidden Reef
-			crit(22),	-- The Lost Fold
-			crit(23),	-- The Vector Coil
-			crit(24),	-- The Warp Piston
-			crit(25),	-- Veridian Point
-			crit(26),	-- Vindicator's Rest
-			crit(27),	-- Wrathscale Lair
-			crit(28),	-- Wyrmscar Island
-		}),
 		ach(844, {	-- Explore Darkshore
 			crit(1),	-- Ruins of Auberdine
 			crit(2),	-- Shatterspear Vale

@@ -79,6 +79,9 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					166143,	-- Command Table [Venthyr]
 				},
 				["g"] = {
+					i(178040, {	-- Condensed Stygia
+						currency(1767),	-- Stygia
+					}),
 					-- Follower XP Items
 					i(187413, {	-- Crystalline Memory Repository
 						["timeline"] = { "added 9.1.0.38312", "removed 9.1.5" },
