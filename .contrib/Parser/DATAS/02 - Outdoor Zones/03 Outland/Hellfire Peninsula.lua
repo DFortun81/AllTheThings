@@ -1777,6 +1777,63 @@ root("Zones", {
 							i(25504),	-- Pilgrim's Belt
 						},
 					}),
+					q(10906, {	-- Master of Elixirs (1/2)
+						["qgs"] = {
+							16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
+							18802,	-- Alchemist Gribble <Alchemy Trainer>
+						},
+						["coords"] = {
+							{ 52.2, 36.4, HELLFIRE_PENINSULA },	-- Apothecary Antonivich <Master Alchemy Trainer>
+							{ 53.8, 65.8, HELLFIRE_PENINSULA },	-- Alchemist Gribble <Alchemy Trainer>
+						},
+						["timeline"] = { "added 2.0.3", "removed 4.3.0" },
+						["requireSkill"] = ALCHEMY,
+						["altQuests"] = {
+							--10906,	-- Master of Elixirs (1/2)
+							10905,	-- Master of Potions (1/2)
+							10907,	-- Master of Transmutation (1/2)
+						},
+						["isBreadcrumb"] = true,
+						["lvl"] = 68,
+					}),
+					q(10905, {	-- Master of Potions (1/2)
+						["qgs"] = {
+							16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
+							18802,	-- Alchemist Gribble <Alchemy Trainer>
+						},
+						["coords"] = {
+							{ 52.2, 36.4, HELLFIRE_PENINSULA },	-- Apothecary Antonivich <Master Alchemy Trainer>
+							{ 53.8, 65.8, HELLFIRE_PENINSULA },	-- Alchemist Gribble <Alchemy Trainer>
+						},
+						["timeline"] = { "added 2.0.3", "removed 4.3.0" },
+						["requireSkill"] = ALCHEMY,
+						["altQuests"] = {
+							10906,	-- Master of Elixirs (1/2)
+							--10905,	-- Master of Potions (1/2)
+							10907,	-- Master of Transmutation (1/2)
+						},
+						["isBreadcrumb"] = true,
+						["lvl"] = 68,
+					}),
+					q(10907, {	-- Master of Transmutation (1/2)
+						["qgs"] = {
+							16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
+							18802,	-- Alchemist Gribble <Alchemy Trainer>
+						},
+						["coords"] = {
+							{ 52.2, 36.4, HELLFIRE_PENINSULA },	-- Apothecary Antonivich <Master Alchemy Trainer>
+							{ 53.8, 65.8, HELLFIRE_PENINSULA },	-- Alchemist Gribble <Alchemy Trainer>
+						},
+						["timeline"] = { "added 2.0.3", "removed 4.3.0" },
+						["requireSkill"] = ALCHEMY,
+						["altQuests"] = {
+							10906,	-- Master of Elixirs (1/2)
+							10905,	-- Master of Potions (1/2)
+							--10907,	-- Master of Transmutation (1/2)
+						},
+						["isBreadcrumb"] = true,
+						["lvl"] = 68,
+					}),
 					q(9438, {	-- Messenger to Thrall
 						["qg"] = 3230,	-- Nazgrel
 						["sourceQuest"] = 9406,	-- The Mag'har

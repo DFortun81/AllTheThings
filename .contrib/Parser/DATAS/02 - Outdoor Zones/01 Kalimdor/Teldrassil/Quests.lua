@@ -37,6 +37,18 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(1581, {	-- Elixirs for the Bladeleafs
+					["qg"] = 2083,	-- Syral Bladeleaf
+					["coord"] = { 55.8, 50.4, TELDRASSIL },
+					["description"] = "Available at Skill Level 20.",
+					["requireSkill"] = ALCHEMY,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2454, 6 },	-- Elixir of Lion's Strength
+						{ "i", 5997, 2 },	-- Elixir of Minor Defense
+					},
+					["lvl"] = 4,
+				}),
 				q(2459, {	-- Ferocitas the Dream Eater
 					["provider"] = { "n", 3567 },	-- Tallonkai Swiftroot
 					["coord"] = { 55.5, 49.9, TELDRASSIL },

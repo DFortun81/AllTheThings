@@ -740,6 +740,27 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
+					q(10897, {	-- Master of Potions (2/2)
+						["qg"] = 17909,	-- Lauranna Thar'well <Expedition Cataloguer>
+						["sourceQuest"] = 10905,	-- Master of Potions (1/2)
+						["description"] = "Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",
+						["coord"] = { 44.1, 36.6, ZANGARMARSH },
+						["timeline"] = { "added 2.0.3", "removed 4.3.0" },
+						["maps"] = { TEMPEST_KEEP_BOTANICA },
+						["requireSkill"] = ALCHEMY,
+						["altQuests"] = {
+							10902,	-- Master of Elixirs (2/2)
+							--10897,	-- Master of Potions (2/2)
+							10899,	-- Master of Transmutation (2/2)
+						},
+						["cost"] = {
+							{ "i", 31744, 1 },	-- Botanist's Field Guide
+							{ "i", 22829, 5 },	-- Super Healing Potion
+							{ "i", 22832, 5 },	-- Super Mana Potion
+							{ "i", 22836, 5 },	-- Major Dreamless Sleep Potion
+						},
+						["lvl"] = 68,
+					}),
 					q(9791, {	-- Menacing Marshfangs [Alliance]
 						["qg"] = 18006,	-- Noraani
 						["coord"] = { 67.6, 47.8, ZANGARMARSH },
