@@ -9569,13 +9569,13 @@ harvesterFields.text = function(t)
 			end
 
 			HarvestedAchievementDatabase[achievementID] = info;
-			AllTheThingsHarvestItems = HarvestedAchievementDatabase;
 			setmetatable(t, app.BaseAchievement);
 			rawset(t, "collected", true);
 			return Name;
 		end
 	end
 
+	AllTheThingsHarvestItems = HarvestedAchievementDatabase;
 	local name = t.name;
 	-- retries exceeded, so check the raw .name on the group (gets assigned when retries exceeded during cache attempt)
 	if name then rawset(t, "collected", true); end
@@ -19036,8 +19036,8 @@ customWindowUpdates["AchievementHarvester"] = function(self, ...)
 		if not self.initialized then
 			self.doesOwnUpdate = true;
 			self.initialized = true;
-			self.Limit = 15575;
-			self.PartitionSize = 1000;
+			self.Limit = 15596;	-- MissingAchievements:9.2.5.42850
+			self.PartitionSize = 2000;
 			local db = {};
 			local CleanUpHarvests = function()
 				local g, partition, pg, pgcount, refresh = self.data.g;

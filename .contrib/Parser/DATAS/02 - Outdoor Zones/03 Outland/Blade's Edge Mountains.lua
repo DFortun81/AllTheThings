@@ -979,7 +979,10 @@ root("Zones", {
 					}),
 					q(10584, {	-- Picking Up Some Power Converters
 						["qg"] = 21691,	-- Toshley
-						["sourceQuest"] = 10581,	-- Follow the Breadcrumbs
+						["sourceQuests"] = {
+							10580,	-- Where Did Those Darn Gnomes Go?
+							10581,	-- Follow the Breadcrumbs
+						},
 						["coord"] = { 60.5, 69.0, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(65, 20, 65),

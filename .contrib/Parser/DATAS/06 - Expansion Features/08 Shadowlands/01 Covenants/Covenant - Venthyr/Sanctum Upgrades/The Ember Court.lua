@@ -922,7 +922,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 								}),
 								q(61895, {	-- Ember Court Ambassador 4 - Bastion
-									["minReputation"] = { 2445, REVERED },
+									["minReputation"] = { 2445, EXALTED },
 									["sourceQuests"] = { 61894 },	-- Ember Court Ambassador 3 - Maldraxxus
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
 									["coord"] = { 28.5, 41.1, REVENDRETH },
@@ -2402,6 +2402,7 @@ root("HiddenQuestTriggers", {
 		-- Misc.
 			q(61918),	-- unflagged when completing Restock: Fashion Accessories (62078)
 			q(61919),	-- unflagged when completing Restock: Exploratory Meals (62094)
+			q(61938),	-- unflagged when completing Restock: My Favorite Table (62065)
 			q(61922),	-- seems to be an indicator that Restock: Stolen Rugs will be required for the next Ember Court
 			q(61937),	-- seems to be an indicator that Restock: Statues will be required for the next Ember Court
 			q(61925),	-- completed when completing a 'Restock' quest

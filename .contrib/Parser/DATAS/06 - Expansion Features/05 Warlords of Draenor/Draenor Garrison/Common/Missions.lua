@@ -138,67 +138,46 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(114098, {	-- Tormented Hood
-							["description"] = "You must have level 32 active followers in order to get missions that reward this token.",
-							["g"] = {
-								i(114326),	-- Mantisweave Hood
-								i(114327),	-- Shadow-Gorged Hood
-								i(114328),	-- Helm of Meditative Focus
-								i(114329),	-- Salt-Scorched Greathelm
-							},
+							i(114326),	-- Mantisweave Hood
+							i(114327),	-- Shadow-Gorged Hood
+							i(114328),	-- Helm of Meditative Focus
+							i(114329),	-- Salt-Scorched Greathelm
 						}),
 						i(114100, {	-- Tormented Spaulders
-							["description"] = "You must have level 39 active followers in order to get missions that reward this token.",
-							["g"] = {
-								i(114334),	-- Mantisweave Mantle
-								i(114335),	-- Shadow-Gorged Spaulders
-								i(114336),	-- Spaulders of Meditative Focus
-								i(114337),	-- Salt-Scorched Shoulderguard
-							},
+							i(114334),	-- Mantisweave Mantle
+							i(114335),	-- Shadow-Gorged Spaulders
+							i(114336),	-- Spaulders of Meditative Focus
+							i(114337),	-- Salt-Scorched Shoulderguard
 						}),
 						i(114094, {	-- Tormented Bracers
-							["description"] = "You must have level 35 active followers in order to get missions that reward this token.",
-							["g"] = {
-								i(114310),	-- Mantisweave Bracers
-								i(114311),	-- Shadow-Gorged Bracers
-								i(114312),	-- Bracers of Meditative Focus
-								i(114313),	-- Salt-Scorched Bracers
-							},
+							i(114310),	-- Mantisweave Bracers
+							i(114311),	-- Shadow-Gorged Bracers
+							i(114312),	-- Bracers of Meditative Focus
+							i(114313),	-- Salt-Scorched Bracers
 						}),
 						i(114097, {	-- Tormented Gauntlets
-							["description"] = "You must have level 37 active followers in order to get missions that reward this token.",
-							["g"] = {
-								i(114322),	-- Mantisweave Gloves
-								i(114323),	-- Shadow-Gorged Gauntlets
-								i(114324),	-- Gauntlets of Meditative Focus
-								i(114325),	-- Salt-Scorched Gauntlets
-							},
+							i(114322),	-- Mantisweave Gloves
+							i(114323),	-- Shadow-Gorged Gauntlets
+							i(114324),	-- Gauntlets of Meditative Focus
+							i(114325),	-- Salt-Scorched Gauntlets
 						}),
 						i(114101, {	-- Tormented Girdle
-							["description"] = "You must have level 31 active followers in order to get missions that reward this token.",
-							["g"] = {
-								i(114338),	-- Mantisweave Cord
-								i(114339),	-- Shadow-Gorged Belt
-								i(114340),	-- Belt of Meditative Focus
-								i(114341),	-- Salt-Scorched Girdle
-							},
+							i(114338),	-- Mantisweave Cord
+							i(114339),	-- Shadow-Gorged Belt
+							i(114340),	-- Belt of Meditative Focus
+							i(114341),	-- Salt-Scorched Girdle
 						}),
 						i(114099, {	-- Tormented Leggings
-							["description"] = "You must have level 36 active followers in order to get missions that reward this token.",
-							["g"] = {
-								i(114330),	-- Mantisweave Trousers
-								i(114331),	-- Shadow-Gorged Legguards
-								i(114332),	-- Legguards of Meditative Focus
-								i(114333),	-- Salt-Scorched Legplates
-							},
+							i(114330),	-- Mantisweave Trousers
+							i(114331),	-- Shadow-Gorged Legguards
+							i(114332),	-- Legguards of Meditative Focus
+							i(114333),	-- Salt-Scorched Legplates
 						}),
 						i(114096, {	-- Tormented Treads
-							["description"] = "You must have level 33 active followers in order to get missions that reward this token.",
-							["g"] = {
-								i(114318),	-- Mantisweave Sandals
-								i(114319),	-- Shadow-Gorged Boots
-								i(114320),	-- Boots of Meditative Focus
-								i(114321),	-- Salt-Scorched Greaves
-							},
+							i(114318),	-- Mantisweave Sandals
+							i(114319),	-- Shadow-Gorged Boots
+							i(114320),	-- Boots of Meditative Focus
+							i(114321),	-- Salt-Scorched Greaves
 						}),
 						i(114105, {	-- Tormented Trinket
 							i(114367),	-- Tormented Emblem of Flame
@@ -207,7 +186,6 @@ _.ExpansionFeatures =
 							i(114370),	-- Tormented Seal of Fortitude
 							i(114366),	-- Tormented Tooth of Ferocity
 						}),
-					-- tormented gear above is based on varying follower levels, so it makes sense for each to have a separate description
 					-- munificent, turbulent, and grandiose tokens below are each in their own bracket
 					-- maybe group each category under one header instead of having the same description on each token?
 						n(-493, sharedData({ ["description"] = "If you see this item as a reward on your Garrion Mission Table, please report to the ATT Discord with screenshots of the item and level/ilvl of your active followers", },{	-- Broken Mission Loot
