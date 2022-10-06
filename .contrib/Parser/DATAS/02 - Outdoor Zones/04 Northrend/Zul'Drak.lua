@@ -1067,7 +1067,7 @@ root("Zones", {
 						["sourceQuest"] = 12669,	-- So Far, So Bad
 					}),
 					q(39208, {	-- Zul'Drak
-						["u"] = REMOVED_FROM_GAME, -- old quest from the adventure guide. Pretty sure this was removed
+						["timeline"] = { "added 6.2.0.19934", "removed 7.3.5" },	-- old quest from the adventure guide. Pretty sure this was removed (CRIEVE NOTE: Not sure what patch it was removed.)
 						["isBreadcrumb"] = true,
 					}),
 				}),
