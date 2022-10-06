@@ -571,13 +571,14 @@ root("Zones", {
 						["sourceQuest"] = 12263,	-- The Best of Intentions
 					}),
 					q(12454, {	-- Cycle of Life
-						["coord"] = { 63.5, 72.0, DRAGONBLIGHT },
 						["qg"] = 27255,	-- Nishera the Garden Keeper
+						["coord"] = { 63.5, 72.0, DRAGONBLIGHT },
 					}),
 					q(13242, {	-- Darkness Stirs
 						["qg"] = 31333,	-- Alexstrasza the Life-Binder
 						["sourceQuest"] = 12500,	-- Return To Angrathar [Horde]
-						["u"] = REMOVED_FROM_GAME,
+						["coord"] = { 38.4, 19.4, DRAGONBLIGHT },
+						["timeline"] = { "removed 4.0.3" },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12372, {	-- Defending Wyrmrest Temple
@@ -1475,22 +1476,32 @@ root("Zones", {
 						["sourceQuest"] = 12011,	-- Signs of Big Watery Trouble
 					}),
 					q(13347, {	-- Reborn From The Ashes
+						["qg"] = 31333,	-- Alexstrasza the Life-Binder
 						["sourceQuest"] = 12499,	-- Return To Angrathar [Alliance]
+						["coord"] = { 38.4, 19.4, DRAGONBLIGHT },
 						["timeline"] = { "removed 4.0.3" },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13369, {	-- Fate, Up Against Your Will
+						["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
 						["sourceQuest"] = 13347,	-- Reborn From The Ashes
+						["coord"] = { 79.8, 38.6, STORMWIND_CITY },
 						["timeline"] = { "removed 4.0.3" },
+						["maps"] = { ORGRIMMAR },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13370, {	-- A Royal Coup
+						["qg"] = 32363,	-- Thrall <Warchief>
 						["sourceQuest"] = 13369,	-- Fate, Up Against Your Will
+						["coord"] = { 32.6, 37.6, ORGRIMMAR },
 						["timeline"] = { "removed 4.0.3" },
+						["maps"] = { STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13371, {	-- The Killing Time
+						["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
 						["sourceQuest"] = 13370,	-- A Royal Coup
+						["coord"] = { 79.8, 38.6, STORMWIND_CITY },
 						["timeline"] = { "removed 4.0.3" },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1529,13 +1540,14 @@ root("Zones", {
 					q(13257, {	-- Herald of War
 						["qg"] = 25256,	-- High Overlord Saurfang
 						["sourceQuest"] = 13242,	-- Darkness Stirs
+						["coord"] = { 41.4, 53.6, BOREAN_TUNDRA },
 						["timeline"] = { "removed 4.0.3" },
-						["maps"] = { BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13266, {	-- A Life Without Regret
 						["qg"] = 31412,	-- Thrall
 						["sourceQuest"] = 13257,	-- Herald of War
+						["coord"] = { 32, 37.8, ORGRIMMAR },
 						["timeline"] = { "removed 4.0.3" },
 						["races"] = HORDE_ONLY,
 					}),
