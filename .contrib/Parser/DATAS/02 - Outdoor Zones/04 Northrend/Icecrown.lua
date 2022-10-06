@@ -158,10 +158,13 @@ root("Zones", {
 						["cr"] = 30433,	-- Aedan Moran <Flight Master>
 						["coord"] = { 87.8, 78.0, ICECROWN },
 					}),
-					fp(333, {	-- The Shadow Vault
+					applyclassicphase(WRATH_PHASE_THREE, fp(333, {	-- The Shadow Vault
 						["cr"] = 30314,	-- Morlia Doomwing <Flight Master>
 						["coord"] = { 43.6, 24.4, ICECROWN },
-					}),
+						-- #if ANYCLASSIC
+						["description"] = "This flight path is currently broken and has no connected pathways.",
+						-- #endif
+					})),
 				}),
 				n(QUESTS, {
 					q(13286, {	-- ...All the Help We Can Get.
@@ -2206,7 +2209,6 @@ root("Zones", {
 					i(50380),	-- Battered Hilt (Horde)
 					i(37330, {	-- Formula: Enchant Cloak - Superior Arcane Resistance (RECIPE!)
 						["crs"] = {
-							32290,	-- Cult Alchemist
 							32297,	-- Cult Researcher
 							31702,	-- Frostbrood Spawn
 						},
@@ -2250,7 +2252,6 @@ root("Zones", {
 						["u"] = REMOVED_FROM_GAME,
 						["spellID"] = 0,
 						["crs"] = {
-							32290,	-- Cult Alchemistz
 							32297,	-- Cult Researcher
 							31702,	-- Frostbrood Spawn
 						},
