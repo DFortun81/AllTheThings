@@ -277,6 +277,12 @@ root("Zones", {
 					q(12758, {	-- A Hero's Headgear
 						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
+						["altQuests"] = {
+							-- 12758,	-- A Hero's Headgear
+							12734,	-- Rejek: First Blood
+							12741,	-- Strength of the Tempest
+							12732,	-- The Heartblood's Strength
+						},
 						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
 						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
@@ -307,6 +313,12 @@ root("Zones", {
 					q(12734, {	-- Rejek: First Blood
 						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
+						["altQuests"] = {
+							12758,	-- A Hero's Headgear
+							-- 12734,	-- Rejek: First Blood
+							12741,	-- Strength of the Tempest
+							12732,	-- The Heartblood's Strength
+						},
 						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
 						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
@@ -328,6 +340,12 @@ root("Zones", {
 					q(12741, {	-- Strength of the Tempest
 						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
+						["altQuests"] = {
+							12758,	-- A Hero's Headgear
+							12734,	-- Rejek: First Blood
+							-- 12741,	-- Strength of the Tempest
+							12732,	-- The Heartblood's Strength
+						},
 						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
 						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
@@ -336,6 +354,12 @@ root("Zones", {
 					q(12732, {	-- The Heartblood's Strength
 						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
+						["altQuests"] = {
+							12758,	-- A Hero's Headgear
+							12734,	-- Rejek: First Blood
+							12741,	-- Strength of the Tempest
+							-- 12732,	-- The Heartblood's Strength
+						},
 						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
 						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
@@ -354,6 +378,12 @@ root("Zones", {
 					q(12735, {	-- A Cleansing Song
 						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
+						["altQuests"] = {
+							-- 12735,	-- A Cleansing Song
+							12737,	-- Song of Fecundity
+							12736,	-- Song of Reflection
+							12726,	-- Song of Wind and Water
+						},
 						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
 						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
@@ -397,6 +427,12 @@ root("Zones", {
 					q(12737, {	-- Song of Fecundity
 						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
+						["altQuests"] = {
+							12735,	-- A Cleansing Song
+							-- 12737,	-- Song of Fecundity
+							12736,	-- Song of Reflection
+							12726,	-- Song of Wind and Water
+						},
 						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
 						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
@@ -405,6 +441,12 @@ root("Zones", {
 					q(12736, {	-- Song of Reflection
 						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
+						["altQuests"] = {
+							12735,	-- A Cleansing Song
+							12737,	-- Song of Fecundity
+							-- 12736,	-- Song of Reflection
+							12726,	-- Song of Wind and Water
+						},
 						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
 						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
@@ -413,6 +455,12 @@ root("Zones", {
 					q(12726, {	-- Song of Wind and Water
 						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
+						["altQuests"] = {
+							12735,	-- A Cleansing Song
+							12737,	-- Song of Fecundity
+							12736,	-- Song of Reflection
+							-- 12726,	-- Song of Wind and Water
+						},
 						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
 						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.

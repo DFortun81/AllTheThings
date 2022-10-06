@@ -12,10 +12,9 @@ _.Zones =
 						4324,	-- Searing Whelp
 					},
 				}),
-				n(4834, {	-- Theramore Infiltrator
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(5775)),	-- Pattern: Black Silk Pack
-					},
+				i(5775, {	-- Pattern: Black Silk Pack
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 4834,	-- Theramore Infiltrator
 				}),
 			}),
 		}),
