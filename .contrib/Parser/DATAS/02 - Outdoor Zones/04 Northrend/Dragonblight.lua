@@ -12,21 +12,21 @@ local OnTooltipForTheKaluak = [[function(t)
 			if f and #f > 0 then t.preparing = f[1]; end
 		end
 		GameTooltip:AddDoubleLine((t.preparing.text or RETRIEVING_DATA) .. " (" .. _.GetMapName(]] .. BOREAN_TUNDRA .. [[) .. ")", _.L[t.preparing.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. preparingRep .. " Rep");
-		
+
 		local puppyRep = isHuman and 550 or 500;
 		if not t.puppy then
 			local f = _.SearchForField("questID", 11960);
 			if f and #f > 0 then t.puppy = f[1]; end
 		end
 		GameTooltip:AddDoubleLine((t.puppy.text or RETRIEVING_DATA) .. " (" .. _.GetMapName(]] .. DRAGONBLIGHT .. [[) .. ")", _.L[t.puppy.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. puppyRep .. " Rep");
-		
+
 		local heartRep = isHuman and 550 or 500;
 		if not t.heart then
 			local f = _.SearchForField("questID", 11472);
 			if f and #f > 0 then t.heart = f[1]; end
 		end
 		GameTooltip:AddDoubleLine((t.heart.text or RETRIEVING_DATA) .. " (" .. _.GetMapName(]] .. HOWLING_FJORD .. [[) .. ")", _.L[t.heart.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. heartRep .. " Rep");
-		
+
 		local repPerDay = preparingRep + puppyRep + heartRep;
 		local x, n = math.ceil((42000 - t.reputation) / repPerDay), math.ceil(42000 / repPerDay);
 		GameTooltip:AddDoubleLine("Complete Dailies Everyday", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
@@ -2263,11 +2263,11 @@ root("Zones", {
 							i(44200),	-- Ancestral Sinew Wristguards
 							i(44152, {	-- Arcanum of Blissful Mending
 								["timeline"] = { "removed 5.0.4" },
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44140, {	-- Arcanum of the Eclipsed Moon
 								["timeline"] = { "removed 5.0.4" },
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44197),	-- Bracers of Accorded Courtesy
 							i(44198),	-- Breastplate of the Solemn Council

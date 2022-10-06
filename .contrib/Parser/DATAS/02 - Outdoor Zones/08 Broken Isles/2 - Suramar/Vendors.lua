@@ -161,7 +161,7 @@ _.Zones =
 							["cost"] = 5000000,	-- 500g
 						}),
 						i(140746, {	-- Treasure Map: Suramar
-							["f"] = 55,	-- Consumable
+							["filterID"] = CONSUMABLES,
 						}),
 					},
 				}),

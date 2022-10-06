@@ -470,7 +470,7 @@ root("Zones", {
 						i(152964, {	-- Krokul Flute
 							["collectible"] = false,
 							["cost"] = 5000000,	-- 500g
-							["f"] = 55,	-- Consumables
+							["filterID"] = CONSUMABLES,
 						}),
 						i(153290),	-- Krokul Mining Pick
 						i(153027, {	-- Orphaned Marsuul (PET!)

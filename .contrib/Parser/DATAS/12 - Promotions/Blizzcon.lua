@@ -95,12 +95,12 @@ root("Promotions", n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Blizzc
 	i(163985, {	-- War Mantle of the Alliance
 		["timeline"] = { "added 8.0.1.27843" },
 		["races"] = ALLIANCE_ONLY,
-		["f"] = 3,	-- Cloak
+		["filterID"] = CLOAKS,
 	}),
 	i(163984, {	-- War Mantle of the Horde
 		["timeline"] = { "added 8.0.1.27843" },
 		["races"] = HORDE_ONLY,
-		["f"] = 3,	-- Cloak
+		["filterID"] = CLOAKS,
 	}),
 
 	-- Blizzcon 2019

@@ -239,7 +239,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(52938, {	-- Small Beginnings
-				["filter"] = 101,	-- Pet Battles
+				["filterID"] = BATTLE_PETS,
 			}),
 			q(54712, {	-- Spell Components (Faction Assault WQ)
 				["lvl"] = 45,

@@ -59,7 +59,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					}),
 					i(163205, {	-- Ghostly Pet Biscuit
 						["description"] = "This gives your hunter's pet a ghostly appearance for 30 minutes.",
-						["f"] = 55,	-- Consumable
+						["filterID"] = CONSUMABLES,
 					}),
 					i(161595, {	-- Grips of the Oathsworn
 						["cost"] = 14000000,	-- 1,400g

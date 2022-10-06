@@ -15,7 +15,7 @@ root("WorldEvents", n(SIXTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_G
 				["g"] = {
 					i(178514, {	-- Crafted Cloak of War
 						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
-						["f"] = 3,	-- Cloak
+						["filterID"] = CLOAKS,
 					}),
 				},
 			}),

@@ -98,12 +98,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						applyclassicphase(TBC_PHASE_THREE, i(33124, {	-- Pattern: Cloak of Darkness
 							["spellID"] = 42546,	-- Cloak of Darkness
 							["requireSkill"] = LEATHERWORKING,
-							["f"] = 200,
+							["filterID"] = RECIPES,
 						})),
 						applyclassicphase(TBC_PHASE_THREE, i(33205, {	-- Pattern: Shadowprowler's Chestguard
 							["spellID"] = 42731,	-- Shadowprowler's Chestguard
 							["requireSkill"] = LEATHERWORKING,
-							["f"] = 200,
+							["filterID"] = RECIPES,
 						})),
 						applyclassicphase(TBC_PHASE_THREE, i(33209, {	-- Recipe: Flask of Chromatic Wonder
 							-- #if BEFORE MOP

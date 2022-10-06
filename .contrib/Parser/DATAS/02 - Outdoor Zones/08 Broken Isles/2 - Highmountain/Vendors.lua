@@ -80,7 +80,7 @@ _.Zones =
 						}),
 						i(140576),	-- Tabard of the Hightmountain Tribe
 						i(140731, {	-- Treasure Map: Highmountain
-							["f"] = 55,	-- Consumable
+							["filterID"] = CONSUMABLES,
 						}),
 						i(131814),	-- Whitewater Carp (TOY!)
 					},

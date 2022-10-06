@@ -4047,7 +4047,7 @@ root("Zones", {
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 					}),
-					
+
 					q(13115, {	-- Cheese for Glowergold [H]
 						["qg"] = 29631,	-- Awilo Longomba
 						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
@@ -5263,11 +5263,11 @@ root("Zones", {
 						["groups"] = {
 							i(44159, {	-- Arcanum of Burning Mysteries
 								["timeline"] = { "removed 5.0.4" },
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44141, {	-- Arcanum of the Flame's Soul
 								["timeline"] = { "removed 5.0.4" },
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44182),	-- Boots of Twinkling Stars
 							i(41718),	-- Design: Brilliant Scarlet Ruby [CATA+] / Design: Runed Scarlet Ruby [WRATH]

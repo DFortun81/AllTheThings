@@ -231,7 +231,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						["provider"] = { "n", 143551 },	--  Centurion Firescream
 						["g"] = {
 							i(163604, {	-- Net-O-Matic 5000
-								["f"] = 55,	-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 						},
 					}),

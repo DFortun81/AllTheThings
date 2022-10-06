@@ -2158,11 +2158,11 @@ root("Zones", {
 						["groups"] = {
 							i(44149, {	-- Arcanum of Torment
 								["timeline"] = { "removed 5.0.4" },
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44138, {	-- Arcanum of Toxic Warding
 								["timeline"] = { "removed 5.0.4" },
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44302),	-- Belt of Dark Mending
 							i(44242),	-- Dark Soldier Cape
@@ -2198,11 +2198,11 @@ root("Zones", {
 						["groups"] = {
 							i(44139, {	-- Arcanum of the Fleeing Shadow
 								["timeline"] = { "removed 5.0.4" },
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44150, {	-- Arcanum of the Stalwart Protector
 								["timeline"] = { "removed 5.0.4" },
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44244),	-- Argent Skeleton Crusher
 							i(44248),	-- Battle Mender's Helm

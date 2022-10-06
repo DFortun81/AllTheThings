@@ -16,7 +16,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(165728, {	-- Outpost Upgrade: The Great Seal
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
-						["f"] = 55,	-- Consumable
+						["filterID"] = CONSUMABLES,
 						["g"] = {
 							mi(2106, {	-- Upgrade: The Great Seal
 								["races"] = HORDE_ONLY,
@@ -39,7 +39,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(165804, {	-- Outpost Upgrade: Vulpera Hideaway
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(2108, {	-- Upgrade: Vulpera Hideaway
 								["races"] = HORDE_ONLY,
@@ -62,7 +62,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(165750, {	-- Outpost Upgrade: Zul'jan Ruins
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(2107, {	-- Upgrade: Zul'jan Ruins
 								["races"] = HORDE_ONLY,
@@ -85,7 +85,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(162533, {	-- Scouting Report: Hillcrest Pasture
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(1967, {	-- Hillcrest Pasture
 								["races"] = HORDE_ONLY,
@@ -108,7 +108,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(162535, {	-- Scouting Report: Mudfisher Cove
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(1965, {	-- Mudfisher Cove
 								["races"] = HORDE_ONLY,
@@ -148,7 +148,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(162531, {	-- Scouting Report: Stonefist Watch
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(1963, {	-- Stonefist Watch
 								["races"] = HORDE_ONLY,
@@ -188,7 +188,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(162534, {	-- Scouting Report: Stonetusk Watch
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(2067, {	-- Stonetusk Watch
 								["races"] = HORDE_ONLY,
@@ -228,7 +228,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(162536, {	-- Scouting Report: Swiftwind Post
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(1964, {	-- Swiftwind Post
 								["races"] = HORDE_ONLY,
@@ -268,7 +268,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(162532, {	-- Scouting Report: Windfall Cavern
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(1966, {	-- Windfall Cavern
 								["races"] = HORDE_ONLY,
@@ -291,7 +291,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(162530, {	-- Scouting Report: Wolf's Den
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 						--	initial outpost setup
 							mi(1880, {	-- Wolf's Den

@@ -26,7 +26,7 @@ local OnTooltipForSonsOfHodir = [[function(t)
 		else
 			GameTooltip:AddDoubleLine("Complete " .. (t.helm.text or RETRIEVING_DATA), _.L[t.helm.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
 		end
-		
+
 		if not t.monument then
 			local f = _.SearchForField("questID", 12976);
 			if f and #f > 0 then t.monument = f[1]; end
@@ -36,7 +36,7 @@ local OnTooltipForSonsOfHodir = [[function(t)
 		else
 			GameTooltip:AddDoubleLine("Complete " .. (t.monument.text or RETRIEVING_DATA), _.L[t.monument.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
 		end
-		
+
 		if not t.elements then
 			local f = _.SearchForField("questID", 12967);
 			if f and #f > 0 then t.elements = f[1]; end
@@ -46,7 +46,7 @@ local OnTooltipForSonsOfHodir = [[function(t)
 		else
 			GameTooltip:AddDoubleLine("Complete " .. (t.elements.text or RETRIEVING_DATA), _.L[t.elements.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
 		end
-		
+
 		if not t.spear then
 			local f = _.SearchForField("questID", 13001);
 			if f and #f > 0 then t.spear = f[1]; end
@@ -56,7 +56,7 @@ local OnTooltipForSonsOfHodir = [[function(t)
 		else
 			GameTooltip:AddDoubleLine("Complete " .. (t.spear.text or RETRIEVING_DATA), _.L[t.spear.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
 		end
-		
+
 		GameTooltip:AddLine("Daily Quests:");
 		if viscousRep > 0 then
 			if not t.viscous then
@@ -104,15 +104,15 @@ local OnTooltipForSonsOfHodir = [[function(t)
 			end
 			GameTooltip:AddDoubleLine(t.spy.text or RETRIEVING_DATA, _.L[t.spy.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. spyRep .. " Rep");
 		end
-		
+
 		local repPerDay = viscousRep + callRep + coldRep + dragonRep + feedingRep + spyRep;
 		local x, n = math.ceil((42000 - t.reputation) / repPerDay), math.ceil(42000 / repPerDay);
 		GameTooltip:AddDoubleLine("Complete Dailies Everyday", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		
+
 		local repPerTurnIn = isHuman and 385 or 350;
 		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
 		GameTooltip:AddDoubleLine("Turn in Everfrost.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		
+
 		-- #if AFTER CATA
 		local repPerTurnIn = isHuman and 357.5 or 325;
 		-- #else
@@ -367,7 +367,7 @@ root("Zones", {
 						["minReputation"] = { 1119, HONORED },	-- The Sons of Hodir, Honored.
 						["isDaily"]	= true,
 					}),
-				
+
 					i(44751, {	-- Hyldnir Spoils
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["description"] = "Reward from the following daily quests: Back to the Pit, Defending Your Title, Maintaining Discipline, and The Aberrations Must Die. \n\nOne of the quests is offered at random each day.",
@@ -1534,47 +1534,47 @@ root("Zones", {
 							i(44080),	-- Ice Mammoth (H) (MOUNT!)
 							i(44137, {	-- Arcanum of the Frosty Soul
 								["timeline"] = { "removed 5.0.4" },
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44193),	-- Broken Stalactite
 							i(41720),	-- Design: Smooth Autumn's Glow
 							i(44189),	-- Giant Ring Belt
 							i(44194),	-- Giant-Friend Kilt
 							i(44133, {	-- Greater Inscription of the Axe
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(50335, {	-- Greater Inscription of the Axe
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44134, {	-- Greater Inscription of the Crag
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(50336, {	-- Greater Inscription of the Crag
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44136, {	-- Greater Inscription of the Pinnacle
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(50337, {	-- Greater Inscription of the Pinnacle
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44135, {	-- Greater Inscription of the Storm
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(50338, {	-- Greater Inscription of the Storm
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44131, {	-- Lesser Inscription of the Axe
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44130, {	-- Lesser Inscription of the Crag
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44132, {	-- Lesser Inscription of the Pinnacle
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44129, {	-- Lesser Inscription of the Storm
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(42184),	-- Pattern: Glacial Bag
 							i(44510),	-- Pattern: Mammoth Mining Bag

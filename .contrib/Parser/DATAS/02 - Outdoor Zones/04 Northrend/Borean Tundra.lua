@@ -2361,7 +2361,7 @@ root("Zones", {
 						["groups"] = {
 							i(50373, {	-- Arcanum of the Savage Gladiator
 								["timeline"] = { "removed 5.0.4" },
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(38452),	-- Bulwark of the Warchief
 							i(38460),	-- Charged Wand of the Cleft
@@ -2391,7 +2391,7 @@ root("Zones", {
 						["groups"] = {
 							i(50372, {	-- Arcanum of the Savage Gladiator
 								["timeline"] = { "removed 5.0.4" },
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(38464),	-- Gnomish Magician's Quill
 							i(38455),	-- Hammer of the Alliance Vanguard

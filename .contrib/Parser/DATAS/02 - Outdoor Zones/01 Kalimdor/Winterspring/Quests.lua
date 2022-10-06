@@ -671,7 +671,7 @@ _.Zones =
 						i(67199),	-- Prankster's Fingers
 						i(67215),	-- Amusing Pauldrons
 						i(15778, {	-- Mechanical Yeti
-							["f"] = 55,	-- Consumables
+							["filterID"] = CONSUMABLES,
 						}),
 					},
 				}),
