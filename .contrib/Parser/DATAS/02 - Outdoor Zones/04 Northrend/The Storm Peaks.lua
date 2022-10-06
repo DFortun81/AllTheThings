@@ -1651,14 +1651,6 @@ root("Zones", {
 							29792,	-- Frostfeather Screecher
 						},
 					}),
-					i(41736, {	-- Design: Radiant Forest Emerald
-						["spellID"] = 0,	-- This is now available via 41819, need to delink the old plans from the recipe
-						["u"] = REMOVED_FROM_GAME,
-						["crs"] = {
-							29793,	-- Frostfeather Witch
-							29792,	-- Frostfeather Screecher
-						},
-					}),
 					i(44724),	-- Everfrost Chip
 					i(44725),	-- Everfrost Chip
 					i(42780),	-- Relics of Ulduar
