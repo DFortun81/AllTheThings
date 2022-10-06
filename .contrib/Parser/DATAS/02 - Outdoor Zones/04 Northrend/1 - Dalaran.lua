@@ -4017,27 +4017,32 @@ root("Zones", {
 						["qg"] = 28705,	-- Katherine Lee
 						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13101, {	-- Convention at the Legerdemain [A]
 						["qg"] = 28705,	-- Katherine Lee
 						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13100, {	-- Infused Mushroom Meatloaf [A]
 						["qg"] = 28705,	-- Katherine Lee
 						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13107, {	-- Mustard Dogs! [A]
 						["qg"] = 28705,	-- Katherine Lee
 						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13102, {	-- Sewer Stew [A]
 						["qg"] = 28705,	-- Katherine Lee
 						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 						["maps"] = { CRYSTALSONG_FOREST },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(32413, {	-- A Return to Krasarang
 						["qg"] = 68586,	-- Grand Magister Rommath
@@ -4052,27 +4057,32 @@ root("Zones", {
 						["qg"] = 29631,	-- Awilo Longomba
 						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13113, {	-- Convention at the Legerdemain [H]
 						["qg"] = 29631,	-- Awilo Longomba
 						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13112, {	-- Infused Mushroom Meatloaf [H]
 						["qg"] = 29631,	-- Awilo Longomba
 						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13116, {	-- Mustard Dogs! [H]
 						["qg"] = 29631,	-- Awilo Longomba
 						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13114, {	-- Sewer Stew [H]
 						["qg"] = 29631,	-- Awilo Longomba
 						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						["maps"] = { CRYSTALSONG_FOREST },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					}),
 					--[[
 					q(32406, {	-- A Tactical Assault

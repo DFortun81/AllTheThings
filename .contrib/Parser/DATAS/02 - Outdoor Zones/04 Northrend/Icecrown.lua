@@ -2264,22 +2264,19 @@ root("Zones", {
 						},
 					}),
 					i(44560, {	-- Pattern: Fur Lining - Frost Resist
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { "removed 5.0.4" },
 						["crs"] = { 32289 },	-- Damned Apothecary
-						["spellID"] = 0,
 					}),
 					i(44563, {	-- Pattern: Fur Lining - Nature Resist
-						["u"] = REMOVED_FROM_GAME,
-						["spellID"] = 0,
+						["timeline"] = { "removed 5.0.4" },
 						["crs"] = {
 							32297,	-- Cult Researcher
 							31702,	-- Frostbrood Spawn
 						},
 					}),
 					i(44561, {	-- Pattern: Fur Lining - Shadow Resist
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { "removed 5.0.4" },
 						["crs"] = { 32349 },	-- Cultist Shard Watcher
-						["spellID"] = 0,
 					}),
 					i(44564, {	-- Recipe: Mighty Arcane Protection Potion
 						["coord"] = { 50.1, 31.8, ICECROWN },
