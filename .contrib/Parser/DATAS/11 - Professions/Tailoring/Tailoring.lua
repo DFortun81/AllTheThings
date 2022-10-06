@@ -5487,14 +5487,14 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 			local u = recipeCacheU[o.spellID];
 			if u then
 				if o.u ~= u then
-					print("ITEM RECIPE MISSING U: ", name, o.spellID, u, o.u);
+					--print("TAILORING ITEM RECIPE MISSING U: ", name, o.spellID, u, o.u);
 					o.u = u;
 				end
 			elseif o.u ~= u then
-				print("RECIPE MISSING U: ", name, o.spellID, o.u);
+				--print("TAILORING RECIPE MISSING U: ", name, o.spellID, o.u);
 			end
 		else
-			print("MISSING RECIPE", name, o.spellID);
+			print("MISSING TAILORING RECIPE", name, o.spellID);
 		end
 	end
 	return o;
