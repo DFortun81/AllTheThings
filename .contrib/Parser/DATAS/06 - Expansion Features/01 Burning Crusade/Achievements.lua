@@ -95,8 +95,13 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 				["maps"] = { SHATTRATH_CITY },
 				["crs"] = { 19665 },	-- Ewe
 			}),
-			crit(3750, {	-- Fawn (Teldrassil, Elwynn Forest, Grizzly Hills)
-				["maps"] = { TELDRASSIL, ELWYNN_FOREST, GRIZZLY_HILLS },
+			crit(3750, {	-- Fawn (Teldrassil, Elwynn Forest)
+				["maps"] = {
+					-- #if AFTER CATA
+					TELDRASSIL,
+					-- #endif
+					ELWYNN_FOREST,
+				},
 				["crs"] = { 890 },	-- Fawn
 			}),
 			crit(3751, {	-- Small Frog (Darnassus, Southern Barrens, Arathi Highlands, Sunken Temple, Gundrak, Northern Barrens, Teldrassil, Zangarmarsh)

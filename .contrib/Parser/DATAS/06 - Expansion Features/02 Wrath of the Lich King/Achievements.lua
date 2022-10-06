@@ -80,7 +80,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "added 
 			["sym"] = {{"select","achievementID",2257}},	-- Frostbitten
 		}),
 		ach(2557, {	-- To All The Squirrels Who Shared My Life
-			crit(3753,  {	-- Arctic Hare (Dragonblight, Zul'Drak, Borean Tundra)
+			crit(9299,  {	-- Arctic Hare (Dragonblight, Zul'Drak, Borean Tundra)
 				["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, ZULDRAK },
 				["crs"] = { 29328 },	-- Arctic Hare
 			}),
@@ -101,9 +101,25 @@ root("ExpansionFeatures", tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "added 
 				["crs"] = { 32498 },	-- Glacier Penguin
 			}),
 			crit(9304,  {	-- Grizzly Squirrel (Grizzly Hills, Twilight Highlands)
-				["maps"] = { GRIZZLY_HILLS },
-				["crs"] = { 62818 },	-- Grizzly Squirrel
+				["maps"] = {
+					GRIZZLY_HILLS,
+					-- #if AFTER CATA
+					TWILIGHT_HIGHLANDS,
+					-- #endif
+				},
+				["crs"] = {
+					31889,		-- Grizzly Squirrel
+					-- #if AFTER CATA
+					62818,		-- Grizzly Squirrel
+					-- #endif
+				},
 			}),
+			-- #if BEFORE CATA
+			crit(3753,  {	-- Hare (Durotar)
+				["maps"] = { DUROTAR },
+				["crs"] = { 5951 },	-- Hare
+			}),
+			-- #endif
 			crit(9305,  {	-- Huge Toad (Hillsbrad Foothills, Twilight Highlands, Zul'Drak, Swamp of Sorrows)
 				["maps"] = { HILLSBRAD_FOOTHILLS, SWAMP_OF_SORROWS, ZULDRAK },
 				["crs"] = { 6653 },	-- Huge Toad

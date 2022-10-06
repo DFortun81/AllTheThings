@@ -1934,10 +1934,11 @@ root("Zones", {
 						},
 					}),
 					q(11472, {	-- The Way to His Heart...
-						["coord"] = { 24.6, 58.8, HOWLING_FJORD },
 						["qg"] = 24810,	-- Anuniaq
-						["isDaily"] = true,
 						["sourceQuest"] = 11469,	-- Swabbin' Soap
+						["coord"] = { 24.6, 58.8, HOWLING_FJORD },
+						["maxReputation"] = { 1073, EXALTED },	-- The Kalu'ak, Exalted.
+						["isDaily"] = true,
 					}),
 					q(11229, {	-- The Windrunner Fleet
 						["coord"] = { 26.2, 24.6, HOWLING_FJORD },

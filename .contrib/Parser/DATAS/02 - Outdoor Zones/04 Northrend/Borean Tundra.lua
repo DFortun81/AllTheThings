@@ -1420,9 +1420,10 @@ root("Zones", {
 						["sourceQuest"] = 11716,	-- The Wondrous Bloodspore
 					}),
 					q(11945, {	-- Preparing for the Worst
-						["isDaily"] = true,
-						["coord"] = { 64.0, 45.7, BOREAN_TUNDRA },
 						["qg"] = 26213,	-- Utaik
+						["coord"] = { 64.0, 45.7, BOREAN_TUNDRA },
+						["maxReputation"] = { 1073, EXALTED },	-- The Kalu'ak, Exalted.
+						["isDaily"] = true,
 					}),
 					q(11587, {	-- Prison Break
 						["qg"] = 25262,	-- Librarian Donathan

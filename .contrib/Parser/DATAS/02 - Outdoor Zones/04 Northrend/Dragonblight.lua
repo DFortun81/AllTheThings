@@ -1,6 +1,37 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local OnTooltipForTheKaluak = [[function(t)
+	local reputation = t.reputation;
+	if reputation < 42000 then
+		local isHuman = _.RaceIndex == 1;
+		GameTooltip:AddLine("Daily Quests:");
+		local preparingRep = isHuman and 550 or 500;
+		if not t.preparing then
+			local f = _.SearchForField("questID", 11945);
+			if f and #f > 0 then t.preparing = f[1]; end
+		end
+		GameTooltip:AddDoubleLine((t.preparing.text or RETRIEVING_DATA) .. " (" .. _.GetMapName(]] .. BOREAN_TUNDRA .. [[) .. ")", _.L[t.preparing.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. preparingRep .. " Rep");
+		
+		local puppyRep = isHuman and 550 or 500;
+		if not t.puppy then
+			local f = _.SearchForField("questID", 11960);
+			if f and #f > 0 then t.puppy = f[1]; end
+		end
+		GameTooltip:AddDoubleLine((t.puppy.text or RETRIEVING_DATA) .. " (" .. _.GetMapName(]] .. DRAGONBLIGHT .. [[) .. ")", _.L[t.puppy.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. puppyRep .. " Rep");
+		
+		local heartRep = isHuman and 550 or 500;
+		if not t.heart then
+			local f = _.SearchForField("questID", 11472);
+			if f and #f > 0 then t.heart = f[1]; end
+		end
+		GameTooltip:AddDoubleLine((t.heart.text or RETRIEVING_DATA) .. " (" .. _.GetMapName(]] .. HOWLING_FJORD .. [[) .. ")", _.L[t.heart.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. heartRep .. " Rep");
+		
+		local repPerDay = preparingRep + puppyRep + heartRep;
+		local x, n = math.ceil((42000 - t.reputation) / repPerDay), math.ceil(42000 / repPerDay);
+		GameTooltip:AddDoubleLine("Complete Dailies Everyday", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+	end
+end]];
 root("Zones", {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(DRAGONBLIGHT, {
@@ -199,6 +230,7 @@ root("Zones", {
 				n(FACTIONS, {
 					faction(1073, {	-- The Kalu'ak
 						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },
+						["OnTooltip"] = OnTooltipForTheKaluak,
 					}),
 					faction(1091),	-- The Wyrmrest Accord
 				}),
@@ -1065,6 +1097,7 @@ root("Zones", {
 					q(11960, {	-- Planning for the Future
 						["qg"] = 26228,	-- Trapper Mau'i
 						["coord"] = { 48.2, 74.3, DRAGONBLIGHT },
+						["maxReputation"] = { 1073, EXALTED },	-- The Kalu'ak, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12463, {	-- Plunderbeard Must Be Found!
