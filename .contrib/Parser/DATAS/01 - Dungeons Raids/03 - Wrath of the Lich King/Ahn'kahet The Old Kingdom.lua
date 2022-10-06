@@ -121,10 +121,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 			}),
+			n(ZONE_DROPS, {
+				-- Move other zone drops here if confirmed on both difficulties
+				i(35616),	-- Spored Tendrils Spaulders
+			}),
 			d(1, {	-- Normal
 				n(ZONE_DROPS, {
 					i(35615),	-- Glowworm Cavern Bindings
-					i(35616),	-- Spored Tendrils Spaulders
 				}),
 				e(580, {	-- Elder Nadox
 					["creatureID"] = 29309,	-- Elder Nadox

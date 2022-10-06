@@ -3073,6 +3073,8 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 		if (manual or
 				-- it's not an item
 				(not group.itemID and
+				-- not a difficulty
+				not group.difficultyID and
 				-- incomplete things actually exist below itself
 				((group.total or 0) > (group.progress or 0)) and
 				-- account/debug mode is active or it is not a 'saved' thing for this character
@@ -4010,8 +4012,8 @@ local function ResolveSymlinkGroupAsync(group)
 		-- on the initial pass due to the async nature
 		app.FillGroups(group);
 		BuildGroups(group);
-		-- auto-expand the symlink
-		ExpandGroupsRecursively(group, true, true);
+		-- auto-expand the symlink group
+		ExpandGroupsRecursively(group, true);
 		app.DirectGroupUpdate(group);
 	end
 end
@@ -19663,36 +19665,36 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				end
 
 				-- Check for difficulty groups
-				local cbd, zd = -1, -1;
-				local groupHeaderID, g;
-				for _,group in ipairs(groups) do
-					g = group.g;
-					if g and group.difficultyID then
-						cbd, zd = -1, -1;
-						-- Look for special headers
-						for j,subgroup in ipairs(g) do
-							groupHeaderID = subgroup.headerID;
-							-- Common Boss Drops
-							if groupHeaderID == -1 then
-								cbd = j;
-							end
-							-- Zone Drops
-							if groupHeaderID == 0 then
-								zd = j;
-							end
-						end
+				-- local cbd, zd = -1, -1;
+				-- local groupHeaderID, g;
+				-- for _,group in ipairs(groups) do
+				-- 	g = group.g;
+				-- 	if g and group.difficultyID then
+				-- 		cbd, zd = -1, -1;
+				-- 		-- Look for special headers
+				-- 		for j,subgroup in ipairs(g) do
+				-- 			groupHeaderID = subgroup.headerID;
+				-- 			-- Common Boss Drops
+				-- 			if groupHeaderID == -1 then
+				-- 				cbd = j;
+				-- 			end
+				-- 			-- Zone Drops
+				-- 			if groupHeaderID == 0 then
+				-- 				zd = j;
+				-- 			end
+				-- 		end
 
-						-- Push the Common Boss Drop header to the top
-						if cbd > -1 then
-							tinsert(g, 1, table.remove(g, cbd));
-						end
+				-- 		-- Push the Common Boss Drop header to the top
+				-- 		if cbd > -1 then
+				-- 			tinsert(g, 1, table.remove(g, cbd));
+				-- 		end
 
-						-- Push the Zone Drop header to the bottom
-						if zd > -1 then
-							tinsert(g, table.remove(g, zd));
-						end
-					end
-				end
+				-- 		-- Push the Zone Drop header to the bottom
+				-- 		if zd > -1 then
+				-- 			tinsert(g, table.remove(g, zd));
+				-- 		end
+				-- 	end
+				-- end
 
 				header.u = nil;
 				header.mapID = self.mapID;
@@ -19727,13 +19729,13 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 									ExpandGroupsRecursively(row, false, true);
 								end
 							-- Zone Drops/Common Boss Drops should also be expanded within instances
-							elseif row.headerID == 0 or row.headerID == -1 then
-								if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
+							-- elseif row.headerID == 0 or row.headerID == -1 then
+							-- 	if not row.expanded then ExpandGroupsRecursively(row, true); expanded = true; end
 							end
 						end
 						-- No difficulty found to expand, so just expand everything in the list
 						if not expanded then
-							ExpandGroupsRecursively(header, true, true);
+							ExpandGroupsRecursively(header, true);
 							expanded = true;
 						end
 					end
