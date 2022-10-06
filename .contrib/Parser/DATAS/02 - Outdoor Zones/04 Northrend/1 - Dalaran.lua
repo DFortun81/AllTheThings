@@ -5261,8 +5261,16 @@ root("Zones", {
 					n(32287, {	-- Archmage Alvareaux <Kirin Tor Quartermaster>
 						["coord"] = { 25.2, 47.8, NORTHREND_DALARAN },
 						["groups"] = {
+							i(44159, {	-- Arcanum of Burning Mysteries
+								["timeline"] = { "removed 5.0.4" },
+								["f"] = 55,		-- Consumable
+							}),
+							i(44141, {	-- Arcanum of the Flame's Soul
+								["timeline"] = { "removed 5.0.4" },
+								["f"] = 55,		-- Consumable
+							}),
 							i(44182),	-- Boots of Twinkling Stars
-							i(41718),	-- Design: Brilliant Scarlet Ruby
+							i(41718),	-- Design: Brilliant Scarlet Ruby [CATA+] / Design: Runed Scarlet Ruby [WRATH]
 							i(44183),	-- Fireproven Gauntlets
 							i(44173),	-- Flameheart Spell Scalpel
 							i(44181),	-- Ghostflicker Waistband
@@ -5275,7 +5283,9 @@ root("Zones", {
 							i(44167),	-- Shroud of Dedicated Research
 							i(44171),	-- Spaulders of Grounded Lightning
 							i(44174),	-- Stave of Shrouded Mysteries
-							i(43157),	-- Tabard of the Kirin Tor
+							i(43157, {	-- Tabard of the Kirin Tor
+								["factionID"] = 1090,	-- Kirin Tor
+							}),
 						},
 					}),
 					n(29499, {	-- Bartram Haller <Dagger & Fist Weapon Merchant>
@@ -6142,14 +6152,14 @@ root("Zones", {
 						["groups"] = {
 							i(82470, {	-- Ancient Tome of Portal: Dalaran
 								["timeline"] = { "added 5.0.1.15464" },
-								["isLimited"] = true,
 								["spellID"] = 120146,	-- Ancient Portal: Dalaran
 								["classes"] = { MAGE },
+								["isLimited"] = true,
 							}),
 							i(137294, {	-- Dalaran Initiates' Pin (TOY!)
 								["timeline"] = { "added 7.0.3.22248" },
-								["isLimited"] = true,
 								["classes"] = { MAGE },
+								["isLimited"] = true,
 							}),
 							i(136846, {	-- Familiar Stone (TOY!)
 								["timeline"] = { "added 7.0.3.22248" },
@@ -6168,14 +6178,20 @@ root("Zones", {
 							i(167733, {	-- Technique: Glyph of Dalaran Brilliance (RECIPE!)
 								["timeline"] = { "added 8.1.5.29701" },
 								["isLimited"] = true,
-								["timeline"] = { "added 8.1.5" },
 							}),
 							i(44714, {	-- Tome of Dalaran Brilliance
+								["timeline"] = { "removed 7.0.3" },
+								["spellID"] = 61316,	-- Dalaran Brilliance
 								["classes"] = { MAGE },
-								["u"] = REMOVED_FROM_GAME,	-- removed in 7.0.3
-								["groups"] = {
-									i(44602),	-- Magic Consumed Book
-								},
+								["isLimited"] = true,
+								["f"] = RECIPES,
+							}),
+							i(44602, {	-- Tome of Dalaran Intellect
+								["timeline"] = { "removed 7.0.3" },
+								["spellID"] = 61024,	-- Dalaran Intellect
+								["classes"] = { MAGE },
+								["isLimited"] = true,
+								["f"] = RECIPES,
 							}),
 							i(44709, {	-- Tome of Polymorph: Black Cat
 								["spellID"] = 61305,	-- Polymorph

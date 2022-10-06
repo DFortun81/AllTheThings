@@ -547,7 +547,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 				-- #if AFTER 6.0.1
 				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				-- #endif
-				["timeline"] = { "created 3.0.1.8770", "added 6.0.1", "removed 7.0.1" },
+				["timeline"] = { "added 3.0.1.8770", "removed 7.0.1" },
 			}),
 			i(36576),	-- Beaked Axe
 			i(36577),	-- Disk Axe

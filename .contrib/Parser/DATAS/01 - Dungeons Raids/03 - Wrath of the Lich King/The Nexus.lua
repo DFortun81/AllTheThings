@@ -314,6 +314,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								["criteriaID"] = 5609,		-- Keristrasza slain
 							},
 							ach(2036),	-- Intense Cold
+							i(41794, {	-- Design: Deadly Monarch Topaz
+								["timeline"] = { "removed 4.0.1" },
+							}),
 							-- #if AFTER 7.3.5
 							i(35595),	-- Glacier Sharpened Vileblade (7.3.5 - Used to be only Normal Mode)
 							-- #endif

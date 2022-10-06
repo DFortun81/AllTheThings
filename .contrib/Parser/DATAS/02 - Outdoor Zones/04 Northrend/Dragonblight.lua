@@ -2261,6 +2261,14 @@ root("Zones", {
 						["coord"] = { 59.8, 53.0, DRAGONBLIGHT },
 						["groups"] = {
 							i(44200),	-- Ancestral Sinew Wristguards
+							i(44152, {	-- Arcanum of Blissful Mending
+								["timeline"] = { "removed 5.0.4" },
+								["f"] = 55,		-- Consumable
+							}),
+							i(44140, {	-- Arcanum of the Eclipsed Moon
+								["timeline"] = { "removed 5.0.4" },
+								["f"] = 55,		-- Consumable
+							}),
 							i(44197),	-- Bracers of Accorded Courtesy
 							i(44198),	-- Breastplate of the Solemn Council
 							i(44188),	-- Cloak of Peaceful Resolutions
@@ -2275,7 +2283,9 @@ root("Zones", {
 							i(44201),	-- Sabatons of Draconic Vigor
 							i(44202),	-- Sandals of Crimson Fury
 							i(44196),	-- Sash of the Wizened Wyrm
-							i(43156),	-- Tabard of the Wyrmrest Accord
+							i(43156, {	-- Tabard of the Wyrmrest Accord
+								["factionID"] = 1091,	-- The Wyrmrest Accord
+							}),
 						},
 					}),
 					n(27054, {	-- Modoru <Reagents & Enchanting Supplies>
@@ -2294,10 +2304,13 @@ root("Zones", {
 							i(44059),	-- Cuttlefish Scale Breastplate
 							i(44060),	-- Cuttlefish Tooth Ringmail
 							i(41574),	-- Design: Defender's Shadow Crystal
-							i(41568),	-- Design: Purified Shadow Crystal
+							i(41568),	-- Design: Purified Shadow Crystal [CATA+] / Design: Seer's Dark Jade [WRATH]
 							i(44057),	-- Ivory-Reinforced Chestguard
 							i(44050),	-- Mastercraft Kalu'ak Fishing Pole
 							i(44723),	-- Nutured Penguin Egg (PET!)
+							i(44511, {	-- Pattern: Dragonscale Ammo Pouch
+								["timeline"] = { "removed 4.0.1" },
+							}),
 							i(45774),	-- Pattern: Emerald Bag
 							i(44509),	-- Pattern: Trapper's Traveling Pack
 							i(44061),	-- Pigment-Stained Robes

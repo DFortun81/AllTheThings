@@ -1123,12 +1123,8 @@ root("Zones", {
 					n(31910, {	-- Geen <Oracles Quartermaster>
 						["coord"] = { 54.6, 56.1, SHOLAZAR_BASIN },
 						["groups"] = {
-							i(41724),	-- Design: Misty Forest Emerald
-							i(41781, {	-- Design: Misty Forest Emerald
-								["spellID"] = 0,	-- This is now available via 41724, need to delink the old plans from the recipe
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(41567),	-- Design: Nimble Dark Jade
+							i(41724),	-- Design: Misty Forest Emerald [CATA+] / Design: Sundered Forest Emerald [WRATH]
+							i(41567),	-- Design: Nimble Dark Jade [CATA+] / Design: Vivid Dark Jade [WRATH]
 							i(44104),	-- Fishy Cinch
 							i(44112),	-- Glimmershell Shoulder Protectors
 							i(44106),	-- Glitterscale Wrap

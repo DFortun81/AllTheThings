@@ -2156,28 +2156,38 @@ root("Zones", {
 					n(32538, {	-- Duchess Mynx <Ebon Blade Quartermaster>
 						["coord"] = { 43.4, 20.6, ICECROWN },
 						["groups"] = {
+							i(44149, {	-- Arcanum of Torment
+								["timeline"] = { "removed 5.0.4" },
+								["f"] = 55,		-- Consumable
+							}),
+							i(44138, {	-- Arcanum of Toxic Warding
+								["timeline"] = { "removed 5.0.4" },
+								["f"] = 55,		-- Consumable
+							}),
 							i(44302),	-- Belt of Dark Mending
 							i(44242),	-- Dark Soldier Cape
 							i(44303),	-- Darkheart Chestguard
 							i(44306),	-- Death-Insured Sabatons
 							i(41562),	-- Design: Deadly Huge Citrine
-							i(41721),	-- Design: Deadly Monarch Topaz
-							i(41794, {	-- Design: Deadly Monarch Topaz
-								["spellID"] = 0,	-- This is now available via 41721, need to delink the old plans from the recipe
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(41725),	-- Design: Timeless Twilight Opal
-							i(41795, {	-- Design: Timeless Twilight Opal
-								["spellID"] = 0,	-- This is now available via 41725, need to delink the old plans from the recipe
-								["u"] = REMOVED_FROM_GAME,
-							}),
+							-- #if AFTER CATA
+							i(41721),	-- Design: Deadly Monarch Topaz [CATA+] / Design: Wicked Monarch Topaz [WRATH]
+							i(41725),	-- Design: Timeless Twilight Opal [CATA+] / Design: Glowing Twilight Opal [WRATH]
+							-- #else
+							i(41725),	-- Design: Glowing Twilight Opal [WRATH] / Design: Timeless Twilight Opal [CATA+]
+							i(41721),	-- Design: Wicked Monarch Topaz [WRATH] / Design: Deadly Monarch Topaz [CATA+]
+							-- #endif
 							i(44305),	-- Kilt of Dark Mercy
 							i(42183),	-- Pattern: Abyssal Bag
+							i(44512, {	-- Pattern: Nerubian Reinforced Quiver
+								["timeline"] = { "removed 4.0.1" },
+							}),
 							i(44250),	-- Reaper of Dark Souls
 							i(44249),	-- Runeblade of Demonstrable Power
 							i(44257),	-- Spaulders of the Black Arrow
 							i(44256),	-- Sterile Flesh-Handling Gloves
-							i(43155),	-- Tabard of the Ebon Blade
+							i(43155, {	-- Tabard of the Ebon Blade
+								["factionID"] = 1098,	-- Knights of the Ebon Blade
+							}),
 							i(44243),	-- Toxin-Tempered Sabatons
 							i(44241),	-- Unholy Persuader
 							i(44258),	-- Wound-Binder Wristguards
@@ -2186,6 +2196,14 @@ root("Zones", {
 					n(30431, {	-- Veteran Crusader Aliocha Segard <Argent Crusade Quartermaster>
 						["coord"] = { 87.6, 75.6, ICECROWN },
 						["groups"] = {
+							i(44139, {	-- Arcanum of the Fleeing Shadow
+								["timeline"] = { "removed 5.0.4" },
+								["f"] = 55,		-- Consumable
+							}),
+							i(44150, {	-- Arcanum of the Stalwart Protector
+								["timeline"] = { "removed 5.0.4" },
+								["f"] = 55,		-- Consumable
+							}),
 							i(44244),	-- Argent Skeleton Crusher
 							i(44248),	-- Battle Mender's Helm
 							i(44297),	-- Boots of the Neverending Path
@@ -2199,7 +2217,9 @@ root("Zones", {
 							i(44283),	-- Signet of Hopeful Light
 							i(44240),	-- Special Issue Legplates
 							i(44239),	-- Standard Issue Legplates
-							i(43154),	-- Tabard of the Argent Crusade
+							i(43154, {	-- Tabard of the Argent Crusade
+								["factionID"] = 1106,	-- Argent Crusade
+							}),
 							i(44245),	-- Zombie Sweeper Shotgun
 						},
 					}),

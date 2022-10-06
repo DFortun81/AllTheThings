@@ -1532,67 +1532,55 @@ root("Zones", {
 							i(44086),	-- Grand Ice Mammoth (H) (MOUNT!)
 							i(43958),	-- Ice Mammoth (A) (MOUNT!)
 							i(44080),	-- Ice Mammoth (H) (MOUNT!)
+							i(44137, {	-- Arcanum of the Frosty Soul
+								["timeline"] = { "removed 5.0.4" },
+								["f"] = 55,		-- Consumable
+							}),
 							i(44193),	-- Broken Stalactite
 							i(41720),	-- Design: Smooth Autumn's Glow
-							i(41817, {	-- Design: Smooth Autumn's Glow
-								["spellID"] = 0,	-- This is now available via 41720, need to delink the old plans from the recipe
-								["u"] = REMOVED_FROM_GAME,
-							}),
 							i(44189),	-- Giant Ring Belt
 							i(44194),	-- Giant-Friend Kilt
 							i(44133, {	-- Greater Inscription of the Axe
-								["spellID"] = 0,	-- Ignore
 								["f"] = 55,		-- Consumable
 							}),
 							i(50335, {	-- Greater Inscription of the Axe
-								["spellID"] = 0,	-- Ignore
 								["f"] = 55,		-- Consumable
 							}),
 							i(44134, {	-- Greater Inscription of the Crag
-								["spellID"] = 0,	-- Ignore
 								["f"] = 55,		-- Consumable
 							}),
 							i(50336, {	-- Greater Inscription of the Crag
-								["spellID"] = 0,	-- Ignore
 								["f"] = 55,		-- Consumable
 							}),
 							i(44136, {	-- Greater Inscription of the Pinnacle
-								["spellID"] = 0,	-- Ignore
 								["f"] = 55,		-- Consumable
 							}),
 							i(50337, {	-- Greater Inscription of the Pinnacle
-								["spellID"] = 0,	-- Ignore
 								["f"] = 55,		-- Consumable
 							}),
 							i(44135, {	-- Greater Inscription of the Storm
-								["spellID"] = 0,	-- Ignore
 								["f"] = 55,		-- Consumable
 							}),
 							i(50338, {	-- Greater Inscription of the Storm
-								["spellID"] = 0,	-- Ignore
 								["f"] = 55,		-- Consumable
 							}),
 							i(44131, {	-- Lesser Inscription of the Axe
-								["spellID"] = 0,	-- Ignore
 								["f"] = 55,		-- Consumable
 							}),
 							i(44130, {	-- Lesser Inscription of the Crag
-								["spellID"] = 0,	-- Ignore
 								["f"] = 55,		-- Consumable
 							}),
 							i(44132, {	-- Lesser Inscription of the Pinnacle
-								["spellID"] = 0,	-- Ignore
 								["f"] = 55,		-- Consumable
 							}),
 							i(44129, {	-- Lesser Inscription of the Storm
-								["spellID"] = 0,	-- Ignore
 								["f"] = 55,		-- Consumable
 							}),
 							i(42184),	-- Pattern: Glacial Bag
 							i(44510),	-- Pattern: Mammoth Mining Bag
-							i(44192),	-- Stalactite Chopper
 							i(44190),	-- Spaulders of Frozen Knives
 							i(44195),	-- Spaulders of the Giant Lords
+							i(44192),	-- Stalactite Chopper
 						},
 					}),
 					n(30472, {	-- Olut Alegut
@@ -1644,6 +1632,10 @@ root("Zones", {
 							29370,	-- Stormforged Champion
 							30222,	-- Stormforged Infiltrator
 						},
+					}),
+					i(41817, {	-- Design: Fractured Scarlet Ruby [WRATH] / Design: Smooth Autumn's Glow [CATA+]
+						["timeline"] = { "removed 4.0.1" },
+						["cr"] = 29570,	-- Nascent Val'kyr
 					}),
 					i(41819, {	-- Design: Radiant Forest Emerald
 						["crs"] = {

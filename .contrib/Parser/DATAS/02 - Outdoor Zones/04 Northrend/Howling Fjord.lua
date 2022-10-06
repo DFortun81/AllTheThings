@@ -2187,11 +2187,15 @@ root("Zones", {
 						["coord"] = { 59.6, 63.8, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							i(50372, {	-- Arcanum of the Savage Gladiator
+								["timeline"] = { "removed 5.0.4" },
+								["f"] = 55,		-- Consumable
+							}),
 							i(38464),	-- Gnomish Magician's Quill
 							i(38455),	-- Hammer of hte Alliance Vanguard
 							i(38463),	-- Lordaeron's Resolve
 							i(38459),	-- Orb of the Eastern Kingdons
-							i(44937, {	-- Plans: Titanium Plating[A] (RECIPE!)
+							i(44937, {	-- Plans: Titanium Plating [A] (RECIPE!)
 								["timeline"] = { "added 3.0.8" },
 							}),
 							i(38457),	-- Sawed-Off Hand Cannon
@@ -2204,10 +2208,14 @@ root("Zones", {
 						["coord"] = { 79.6, 30.6, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							i(50373, {	-- Arcanum of the Savage Gladiator
+								["timeline"] = { "removed 5.0.4" },
+								["f"] = 55,		-- Consumable
+							}),
 							i(38452),	-- Bulwark of the Warchief
 							i(38460),	-- Charged Wand of the Cleft
 							i(38458),	-- Darkspear Orb
-							i(44938, {	-- Plans: Titanium Plating[H] (RECIPE!)
+							i(44938, {	-- Plans: Titanium Plating [H] (RECIPE!)
 								["timeline"] = { "added 3.0.8" },
 							}),
 							i(44502),	-- Schematic: Mechano-Hog
@@ -2235,10 +2243,13 @@ root("Zones", {
 							i(44059),	-- Cuttlefish Scale Breastplate
 							i(44060),	-- Cuttlefish Tooth Ringmail
 							i(41574),	-- Design: Defender's Shadow Crystal
-							i(41568),	-- Design: Purified Shadow Crystal
+							i(41568),	-- Design: Purified Shadow Crystal [CATA+] / Design: Seer's Dark Jade [WRATH]
 							i(44057),	-- Ivory-Reinforced Chestguard
 							i(44050),	-- Mastercraft Kalu'ak Fishing Pole
 							i(44723),	-- Nutured Penguin Egg (PET!)
+							i(44511, {	-- Pattern: Dragonscale Ammo Pouch
+								["timeline"] = { "removed 4.0.1" },
+							}),
 							i(45774),	-- Pattern: Emerald Bag
 							i(44509),	-- Pattern: Trapper's Traveling Pack
 							i(44061),	-- Pigment-Stained Robes
