@@ -5457,7 +5457,7 @@ cacheRecipes(_.Professions);
 
 -- Tailoring Item Recipe Database
 local itemrecipe = function(name, itemID, spellID, phase, timeline)
-	local o = { ["itemID"] = itemID, ["spellID"] = spellID, ["requireSkill"] = TAILORING, ["f"] = RECIPES };
+	local o = { ["itemID"] = itemID, ["spellID"] = spellID, ["f"] = RECIPES };
 	if type(phase) == "string" then
 		timeline = phase;
 		phase = nil;
