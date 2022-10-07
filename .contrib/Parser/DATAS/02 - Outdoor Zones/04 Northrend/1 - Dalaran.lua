@@ -4129,15 +4129,15 @@ root("Zones", {
 							}),
 						},
 					}),
-					q(14151, {	-- Cardinal Ruby
-						["qg"] = 28703,	-- Quest Giver: Linzy Blackbolt <Alchemy Trainer>
+					applyclassicphase(WRATH_PHASE_THREE, q(14151, {	-- Cardinal Ruby
+						["qg"] = 28703,	-- Linzy Blackbolt <Alchemy Trainer>
 						["coord"] = { 42.4, 32.0, NORTHREND_DALARAN },
-						["repeatable"] = true,
 						["requireSkill"] = ALCHEMY,
+						["repeatable"] = true,
 						["groups"] = {
 							recipe(66659),	-- Transmute: Cardinal Ruby
 						},
-					}),
+					})),
 					q(13272, {	-- Cloth Scavenging (Neutral)
 						["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable.
 						["altQuests"] = {
