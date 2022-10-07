@@ -202,3 +202,4 @@ end
 
 -- Classic Recipes
 itemrecipe(18653, 23078);	-- Schematic: Goblin Jumper Cables XL
+itemrecipe(7192, 8895);		-- Schematic: Goblin Rocket Boots

@@ -336,70 +336,70 @@ profession(ENGINEERING, {
 					["name"] = "Blue Firework",
 					["recipeID"] = 23067,
 				},
-				{
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Blue Rocket Cluster",
 					["recipeID"] = 26423,
-				},
-				{
+				}),
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Cluster Launcher",
 					["recipeID"] = 26443,
-				},
-				{
+				}),
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Firework Launcher",
 					["recipeID"] = 26442,
-				},
+				}),
 				{
 					["name"] = "Green Firework",
 					["recipeID"] = 23068,
 				},
-				{
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Green Rocket Cluster",
 					["recipeID"] = 26424,
-				},
-				{
+				}),
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Large Blue Rocket",
 					["recipeID"] = 26420,
-				},
-				{
+				}),
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Large Blue Rocket Cluster",
 					["recipeID"] = 26426,
-				},
-				{
+				}),
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Large Green Rocket",
 					["recipeID"] = 26421,
-				},
-				{
+				}),
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Large Green Rocket Cluster",
 					["recipeID"] = 26427,
-				},
-				{
+				}),
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Large Red Rocket",
 					["recipeID"] = 26422,
-				},
-				{
+				}),
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Large Red Rocket Cluster",
 					["recipeID"] = 26428,
-				},
+				}),
 				{
 					["name"] = "Red Firework",
 					["recipeID"] = 23066,
 				},
-				{
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Red Rocket Cluster",
 					["recipeID"] = 26425,
-				},
-				{
+				}),
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Small Blue Rocket",
 					["recipeID"] = 26416,
-				},
-				{
+				}),
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Small Green Rocket",
 					["recipeID"] = 26417,
-				},
-				{
+				}),
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Small Red Rocket",
 					["recipeID"] = 26418,
-				},
+				}),
 				{
 					["name"] = "Snake Burst Firework",
 					["recipeID"] = 23507,
@@ -1424,10 +1424,10 @@ profession(ENGINEERING, {
 			["name"] = "Weapons",
 			["categoryID"] = 740,
 			["groups"] = {
-				{
+				applyclassicphase(CATA_PHASE_TWO, {
 					["name"] = "Extreme-Impact Hole Puncher",
 					["recipeID"] = 100687,
-				},
+				}),
 				{
 					["name"] = "Finely-Tuned Throat Needler",
 					["recipeID"] = 84420,
@@ -1454,10 +1454,10 @@ profession(ENGINEERING, {
 			["name"] = "Scopes",
 			["categoryID"] = 741,
 			["groups"] = {
-				{
+				applyclassicphase(CATA_PHASE_TWO, {
 					["name"] = "Flintlocke's Woodchucker",
 					["recipeID"] = 100587,
-				},
+				}),
 				{
 					["name"] = "Gnomish X-Ray Scope",
 					["recipeID"] = 84428,
@@ -3323,7 +3323,7 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 			-- Grab the phase from the cache.
 			local u = recipeCacheU[o.spellID];
 			if u then
-				if o.u ~= u then
+				if o.u ~= u and u ~= phase then
 					print("ITEM RECIPE MISSING U: ", name, o.spellID, u, o.u);
 					o.u = u;
 				end
@@ -3350,7 +3350,6 @@ itemrecipe("Schematic: Goblin Land Mine", 4416, 3968);
 itemrecipe("Schematic: Large Seaforium Charge", 4417, 3972);
 itemrecipe("Schematic: Flash Bomb", 6672, 8243);
 itemrecipe("Schematic: EZ-Thro Dynamite", 6716, 8339);
-itemrecipe("Schematic: Goblin Rocket Boots", 7192, 8895);
 itemrecipe("Schematic: Gnomish Universal Remote", 7560, 9269);
 itemrecipe("Schematic: Goblin Jumper Cables", 7561, 9273);
 itemrecipe("Schematic: Gnomish Cloaking Device", 7742, 3971);
@@ -3380,13 +3379,15 @@ itemrecipe("Schematic: Thorium Tube", 16047, 19795);
 itemrecipe("Schematic: Dark Iron Rifle", 16048, 19796);
 itemrecipe("Schematic: Dark Iron Bomb", 16049, 19799);
 itemrecipe("Schematic: Delicate Arcanite Converter", 16050, 19815);
+-- #if BEFORE 4.0.1
 itemrecipe("Schematic: Thorium Shells", 16051, 19800);
+-- #endif
 itemrecipe("Schematic: Voice Amplification Modulator", 16052, 19819);
 itemrecipe("Schematic: Master Engineer's Goggles", 16053, 19825);
 itemrecipe("Schematic: Arcanite Dragonling", 16054, 19830);
 itemrecipe("Schematic: Arcane Bomb", 16055, 19831);
 itemrecipe("Schematic: Flawless Arcanite Rifle", 16056, 19833);
-un(FEAST_OF_WINTER_VEIL, itemrecipe("Schematic: Snowmaster 9000", 17720, 21940));
+applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Schematic: Snowmaster 9000", 17720, 21940));
 itemrecipe("Schematic: Field Repair Bot 74A", 18235, 22704);
 itemrecipe("Schematic: Biznicks 247x128 Accurascope", 18290, 22793);
 itemrecipe("Schematic: Force Reactive Disk", 18291, 22797);
@@ -3404,21 +3405,21 @@ itemrecipe("Schematic: Ultra-Flash Shadow Reflector", 18658, 23082);
 itemrecipe("Schematic: Snake Burst Firework", 19027, 23507);
 itemrecipe("Schematic: Bloodvine Goggles", 20000, 24356, PHASE_FOUR);
 itemrecipe("Schematic: Bloodvine Lens", 20001, 24357, PHASE_FOUR);
-bubbleDown({ ["u"] = LUNAR_FESTIVAL },{
-	itemrecipe("Schematic: Small Blue Rocket", 21724, 26416),
-	itemrecipe("Schematic: Small Green Rocket", 21725, 26417),
-	itemrecipe("Schematic: Small Red Rocket", 21726, 26418),
-	itemrecipe("Schematic: Large Blue Rocket", 21727, 26420),
-	itemrecipe("Schematic: Large Green Rocket", 21728, 26421),
-	itemrecipe("Schematic: Large Red Rocket", 21729, 26422),
-	itemrecipe("Schematic: Blue Rocket Cluster", 21730, 26423),
-	itemrecipe("Schematic: Green Rocket Cluster", 21731, 26424),
-	itemrecipe("Schematic: Red Rocket Cluster", 21732, 26425),
-	itemrecipe("Schematic: Large Blue Rocket Cluster", 21733, 26426),
-	itemrecipe("Schematic: Large Green Rocket Cluster", 21734, 26427),
-	itemrecipe("Schematic: Large Red Rocket Cluster", 21735, 26428),
-	itemrecipe("Schematic: Cluster Launcher", 21737, 26443),
-	itemrecipe("Schematic: Firework Launcher", 21738, 26442),
+applyholiday(LUNAR_FESTIVAL,{
+	itemrecipe("Schematic: Small Blue Rocket", 21724, 26416, LUNAR_FESTIVAL),
+	itemrecipe("Schematic: Small Green Rocket", 21725, 26417, LUNAR_FESTIVAL),
+	itemrecipe("Schematic: Small Red Rocket", 21726, 26418, LUNAR_FESTIVAL),
+	itemrecipe("Schematic: Large Blue Rocket", 21727, 26420, LUNAR_FESTIVAL),
+	itemrecipe("Schematic: Large Green Rocket", 21728, 26421, LUNAR_FESTIVAL),
+	itemrecipe("Schematic: Large Red Rocket", 21729, 26422, LUNAR_FESTIVAL),
+	itemrecipe("Schematic: Blue Rocket Cluster", 21730, 26423, LUNAR_FESTIVAL),
+	itemrecipe("Schematic: Green Rocket Cluster", 21731, 26424, LUNAR_FESTIVAL),
+	itemrecipe("Schematic: Red Rocket Cluster", 21732, 26425, LUNAR_FESTIVAL),
+	itemrecipe("Schematic: Large Blue Rocket Cluster", 21733, 26426, LUNAR_FESTIVAL),
+	itemrecipe("Schematic: Large Green Rocket Cluster", 21734, 26427, LUNAR_FESTIVAL),
+	itemrecipe("Schematic: Large Red Rocket Cluster", 21735, 26428, LUNAR_FESTIVAL),
+	itemrecipe("Schematic: Cluster Launcher", 21737, 26443, LUNAR_FESTIVAL),
+	itemrecipe("Schematic: Firework Launcher", 21738, 26442, LUNAR_FESTIVAL),
 });
 
 -- #if AFTER TBC
@@ -3468,7 +3469,21 @@ itemrecipe("Schematic: Rocket Boots Xtreme Lite", 35582, 46697, TBC_PHASE_ONE);
 
 -- #if AFTER WRATH
 -- Wrath Recipes
+-- #if BEFORE 4.0.1
+itemrecipe("Plans: Iceblade Arrow", 52023, 72953, WRATH_PHASE_FOUR);
+itemrecipe("Plans: Shatter Rounds", 52022, 72952, WRATH_PHASE_FOUR);
+-- #endif
+applyholiday(LUNAR_FESTIVAL, itemrecipe("Schematic: Cluster Launcher", 44918, 26443, LUNAR_FESTIVAL));
+applyholiday(LUNAR_FESTIVAL, itemrecipe("Schematic: Firework Launcher", 44919, 26442, LUNAR_FESTIVAL));
+itemrecipe("Schematic: Jeeves", 49050, 68067, WRATH_PHASE_ONE);
+itemrecipe("Schematic: Mechano-hog", 44502, 60866, WRATH_PHASE_ONE);
+itemrecipe("Schematic: Mekgineer's Chopper", 44503, 60867, WRATH_PHASE_ONE);
+-- #endif
 
+-- #if AFTER CATA
+-- Cata Recipes
+itemrecipe("Schematic: Extreme-Impact Hole Puncher", 71078, 100687, CATA_PHASE_TWO);
+itemrecipe("Schematic: Flintlocke's Woodchucker", 70177, 100587, CATA_PHASE_TWO);
 -- #endif
 
 

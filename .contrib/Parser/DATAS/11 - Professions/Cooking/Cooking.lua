@@ -2476,7 +2476,7 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 			-- Grab the phase from the cache.
 			local u = recipeCacheU[o.spellID];
 			if u then
-				if not o.u then
+				if not o.u and u ~= phase then
 					print("ITEM RECIPE MISSING U: ", name, o.spellID, u, o.u);
 					o.u = u;
 				end
@@ -2615,11 +2615,11 @@ itemrecipe("Master Cookbook", 27736, 0--[[33359]], TBC_PHASE_ONE, true);
 itemrecipe("Recipe: Bad Clams", 43509, 58523, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Blackened Dragonfin", 43035, 57441, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Blackened Worg Steak", 43032, 57438, WRATH_PHASE_ONE);
-applyholiday(DAY_OF_THE_DEAD, itemrecipe("Recipe: Bread of the Dead", 46710, 65454, WRATH_PHASE_ONE));
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Candied Sweet Potato", 46806, 66034, WRATH_PHASE_ONE));
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Candied Sweet Potato", 44859, 62051, WRATH_PHASE_ONE));
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Cranberry Chutney", 44858, 62049, WRATH_PHASE_ONE));
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Cranberry Chutney", 46805, 66035, WRATH_PHASE_ONE));
+applyholiday(DAY_OF_THE_DEAD, itemrecipe("Recipe: Bread of the Dead", 46710, 65454, DAY_OF_THE_DEAD));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Candied Sweet Potato", 46806, 66034, PILGRIMS_BOUNTY));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Candied Sweet Potato", 44859, 62051, PILGRIMS_BOUNTY));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Cranberry Chutney", 44858, 62049, PILGRIMS_BOUNTY));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Cranberry Chutney", 46805, 66035, PILGRIMS_BOUNTY));
 itemrecipe("Recipe: Critter Bites", 43029, 57435, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Cuttlesteak", 43033, 57439, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Dig Rat Stew", 44977, 6417);
@@ -2635,15 +2635,15 @@ itemrecipe("Recipe: Last Week's Mammoth", 43508, 58521, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Mega Mammoth Meal", 43018, 45555, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Mighty Rhino Dogs", 43022, 45559, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Poached Northern Sculpin", 43023, 45567, WRATH_PHASE_ONE);
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Pumpkin Pie", 46804, 66036, WRATH_PHASE_ONE));
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Pumpkin Pie", 44862, 62044, WRATH_PHASE_ONE));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Pumpkin Pie", 46804, 66036, PILGRIMS_BOUNTY));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Pumpkin Pie", 44862, 62044, PILGRIMS_BOUNTY));
 itemrecipe("Recipe: Rhinolicious Wormsteak", 43028, 57434, WRATH_PHASE_ONE);
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Slow-Roasted Turkey", 44861, 62045, WRATH_PHASE_ONE));
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Slow-Roasted Turkey", 46807, 66037, WRATH_PHASE_ONE));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Slow-Roasted Turkey", 44861, 62045, PILGRIMS_BOUNTY));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Slow-Roasted Turkey", 46807, 66037, PILGRIMS_BOUNTY));
 itemrecipe("Recipe: Small Feast", 43506, 58528, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Snapper Extreme", 43031, 57437, WRATH_PHASE_ONE);
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Spice Bread Stuffing", 44860, 62050, WRATH_PHASE_ONE));
-applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Spice Bread Stuffing", 46803, 66038, WRATH_PHASE_ONE));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Spice Bread Stuffing", 44860, 62050, PILGRIMS_BOUNTY));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Spice Bread Stuffing", 46803, 66038, PILGRIMS_BOUNTY));
 itemrecipe("Recipe: Spiced Mammoth Treats", 43034, 57440, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Spiced Worm Burger", 43020, 45557, WRATH_PHASE_ONE);
 itemrecipe("Recipe: Spicy Blue Nettlefish", 43025, 45571, WRATH_PHASE_ONE);

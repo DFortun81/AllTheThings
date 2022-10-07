@@ -3557,7 +3557,7 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 			-- Grab the phase from the cache.
 			local u = recipeCacheU[o.spellID];
 			if u then
-				if o.u ~= u then
+				if o.u ~= u and u ~= phase then
 					print("ITEM RECIPE MISSING U: ", name, o.spellID, u, o.u);
 					o.u = u;
 				end
