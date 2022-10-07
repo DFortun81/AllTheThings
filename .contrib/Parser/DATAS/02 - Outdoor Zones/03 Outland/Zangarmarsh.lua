@@ -1164,6 +1164,26 @@ root("Zones", {
 						},
 						["lvl"] = 70,
 					})),
+					applyclassicphase(TBC_PHASE_ONE, {	-- The Zapthrottle Mote Extractor!
+						["allianceQuestData"] = q(9636, {	-- The Zapthrottle Mote Extractor! [A]
+							["qg"] = 17634,	-- K. Lee Smallfry <Engineering Trainer>
+							["altQuests"] = { 9635 },	-- The Zapthrottle Mote Extractor! [H]
+							["coord"] = { 68.6, 50.2, ZANGARMARSH },
+						}),
+						["hordeQuestData"] = q(9635, {	-- The Zapthrottle Mote Extractor! [A]
+							["qg"] = 17637,	-- Mack Diver <Engineering Trainer>
+							["altQuests"] = { 9636 },	-- The Zapthrottle Mote Extractor! [H]
+							["coord"] = { 34, 51, ZANGARMARSH },
+						}),
+						["requireSkill"] = ENGINEERING,
+						["groups"] = {
+							objective(1, {	-- 0/15 Steam Pump Part
+								["provider"] = { "i", 23981 },	-- Steam Pump Part
+								["coord"] = { 81.5, 40.2, ZANGARMARSH },
+							}),
+							i(23888),	-- Schematic: Zapthrottle Mote Extractor
+						},
+					}),
 					q(9769, {	-- There's No Explanation for Fashion
 						["qg"] = 18016,	-- Magasha
 						["coord"] = { 84.4, 54.3, ZANGARMARSH },

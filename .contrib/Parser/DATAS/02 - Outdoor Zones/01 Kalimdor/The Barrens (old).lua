@@ -73,6 +73,75 @@ _.Zones = {
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3341 },	-- Gann Stonespire
 				}),
+				q(3634, {	-- Gnome Engineering
+					["providers"] = {
+						{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
+						{ "i", 10789 },	-- Manual of Engineering Disciplines
+					},
+					["altQuests"] = {
+						3526,	-- Goblin Engineering
+						3629,	-- Goblin Engineering
+						3630,	-- Gnome Engineering
+						3632,	-- Gnome Engineering
+						3633,	-- Goblin Engineering
+						--3634,	-- Gnome Engineering
+						3635,	-- Gnome Engineering
+						3637,	-- Gnome Engineering
+						4181,	-- Goblin Engineering
+					},
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 62.6, 36.2, THE_BARRENS },
+					["timeline"] = { "removed 4.0.1.2000" },
+					["requireSkill"] = ENGINEERING,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(3637, {	-- Gnome Engineering
+					["providers"] = {
+						{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
+						{ "i", 10789 },	-- Manual of Engineering Disciplines
+					},
+					["altQuests"] = {
+						3526,	-- Goblin Engineering
+						3629,	-- Goblin Engineering
+						3630,	-- Gnome Engineering
+						3632,	-- Gnome Engineering
+						3633,	-- Goblin Engineering
+						3634,	-- Gnome Engineering
+						3635,	-- Gnome Engineering
+						--3637,	-- Gnome Engineering
+						4181,	-- Goblin Engineering
+					},
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 62.6, 36.2, THE_BARRENS },
+					["timeline"] = { "removed 4.0.1.2000" },
+					["requireSkill"] = ENGINEERING,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(3633, {	-- Goblin Engineering
+					["providers"] = {
+						{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
+						{ "i", 10789 },	-- Manual of Engineering Disciplines
+					},
+					["altQuests"] = {
+						3526,	-- Goblin Engineering
+						3629,	-- Goblin Engineering
+						3630,	-- Gnome Engineering
+						3632,	-- Gnome Engineering
+						--3633,	-- Goblin Engineering
+						3634,	-- Gnome Engineering
+						3635,	-- Gnome Engineering
+						3637,	-- Gnome Engineering
+						4181,	-- Goblin Engineering
+					},
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 62.6, 36.2, THE_BARRENS },
+					["timeline"] = { "removed 4.0.1.2000" },
+					["requireSkill"] = ENGINEERING,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+				}),
 				q(1062, {	-- Goblin Invaders
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

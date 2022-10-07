@@ -3269,6 +3269,82 @@ profession(ENGINEERING, {
 			},
 		},
 	})),
+	n(QUESTS, {
+		q(29477, {	-- Gnomish Engineering
+			["qgs"] = {
+				5518,	-- Lilliam Sparkspindle <Engineering Trainer> [STORMWIND_CITY]
+				5174,	-- Springspindle Fizzlegear <Engineering Trainer> [IRONFORGE]
+				11017,	-- Roxxik <Engineering Trainer> [ORGRIMMAR]
+				52651,	-- Engineer Palehoof [THUNDER_BLUFF]
+			},
+			["altQuests"] = {
+				3526,	-- Goblin Engineering
+				3629,	-- Goblin Engineering
+				3630,	-- Gnome Engineering
+				3632,	-- Gnome Engineering
+				3633,	-- Goblin Engineering
+				3634,	-- Gnome Engineering
+				3635,	-- Gnome Engineering
+				3637,	-- Gnome Engineering
+				4181,	-- Goblin Engineering
+				29475,	-- Goblin Engineering
+				--29477,	-- Gnomish Engineering
+			},
+			["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
+			["coords"] = {
+				{ 62.8, 32.0, STORMWIND_CITY },	-- Lilliam Sparkspindle
+				{ 68.8, 45.2, IRONFORGE },	-- Springspindle Fizzlegear
+				{ 56.8, 56.4, ORGRIMMAR },	-- Roxxik
+				{ 36.8, 59.6, THUNDER_BLUFF },	-- Engineer Palehoof
+			},
+			["cost"] = {
+				{ "i", 10559, 6 },	-- Mithril Tube
+				{ "i", 4392, 2 },	-- Advanced Target Dummy
+				{ "i", 4407, 1 },	-- Accurate Scope
+			},
+			["timeline"] = { "added 5.0.1" },
+			["requireSkill"] = ENGINEERING,
+			["repeatable"] = true,
+			["lvl"] = 20,
+		}),
+		q(29475, {	-- Goblin Engineering
+			["qgs"] = {
+				5518,	-- Lilliam Sparkspindle <Engineering Trainer> [STORMWIND_CITY]
+				5174,	-- Springspindle Fizzlegear <Engineering Trainer> [IRONFORGE]
+				11017,	-- Roxxik <Engineering Trainer> [ORGRIMMAR]
+				52651,	-- Engineer Palehoof [THUNDER_BLUFF]
+			},
+			["altQuests"] = {
+				3526,	-- Goblin Engineering
+				3629,	-- Goblin Engineering
+				3630,	-- Gnome Engineering
+				3632,	-- Gnome Engineering
+				3633,	-- Goblin Engineering
+				3634,	-- Gnome Engineering
+				3635,	-- Gnome Engineering
+				3637,	-- Gnome Engineering
+				4181,	-- Goblin Engineering
+				--29475,	-- Goblin Engineering
+				29477,	-- Gnomish Engineering
+			},
+			["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
+			["coords"] = {
+				{ 62.8, 32.0, STORMWIND_CITY },	-- Lilliam Sparkspindle
+				{ 68.8, 45.2, IRONFORGE },	-- Springspindle Fizzlegear
+				{ 56.8, 56.4, ORGRIMMAR },	-- Roxxik
+				{ 36.8, 59.6, THUNDER_BLUFF },	-- Engineer Palehoof
+			},
+			["cost"] = {
+				{ "i", 4394, 20 },	-- Big Iron Bomb
+				{ "i", 10507, 20 },	-- Solid Dynamite
+				{ "i", 4384, 5 },	-- Explosive Sheep
+			},
+			["timeline"] = { "added 5.0.1" },
+			["requireSkill"] = ENGINEERING,
+			["repeatable"] = true,
+			["lvl"] = 20,
+		}),
+	}),
 });
 
 -- Engineering Item Database,
