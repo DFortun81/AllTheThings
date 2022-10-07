@@ -682,6 +682,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["sourceQuests"] = { 61489 },	-- Of Hearsay and Heresy
 										["provider"] = { "n", 172515 },	-- Echthra
 										["coord"] = { 56.7, 11.6, MALDRAXXUS },
+										["maps"] = {
+											ARDENWEALD,
+											BASTION,
+											REVENDRETH
+										},
 									}),
 									q(60494, {	-- Your Friend, Dactylis
 										["sourceQuests"] = { 60493 },	-- Humble Gatherer

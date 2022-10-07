@@ -243,16 +243,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 			}),
 			pvp(ach(12577)),	-- Tour of Duty: Tiragarde Sound
 			ach(12852, {	-- Treasures of Tiragarde Sound
-				o(279750, {	-- Hay Covered Chest [Localized]
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
-					["coord"] = { 67.4, 51.7, TIRAGARDE_SOUND },
-					["questID"] = 49963,
-					["g"] = {
-						crit(1, {	-- Hay Covered Chest
-							["achievementID"] = 12852
-						}),
-					},
-				}),
 				o(281397, {	-- Cutwater Treasure Chest [Localized]
 					["icon"] = "Interface\\Icons\\garrison_bronzechest",
 					["coord"] = { 72.5, 58.1, TIRAGARDE_SOUND },
