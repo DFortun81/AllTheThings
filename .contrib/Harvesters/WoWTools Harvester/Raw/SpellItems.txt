@@ -10766,3 +10766,9 @@
 6488,Fierce Armor Kit |A:Professions-Icon-Quality-Tier1-Small:20:20|a
 6489,Fierce Armor Kit |A:Professions-Icon-Quality-Tier2-Small:20:20|a
 6490,Fierce Armor Kit |A:Professions-Icon-Quality-Tier3-Small:20:20|a
+10.0.2.45969
+6382,Primal Razorstone
+6383,Primal Razorstone
+6384,Primal Razorstone
+6692,$spell@spelldesc384266
+6693,$spell@spelldesc384266

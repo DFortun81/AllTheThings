@@ -3054,7 +3054,8 @@ ach(15899),	-- Academy Ascent: Gold \\ Dragon Racing - Thaldraszus - Academy Asc
 ach(15900),	-- Academy Ascent Advanced: Bronze \\ Academy Ascent - Advanced: Bronze \\ Dragon Racing - Thaldraszus - Academy Ascent - Advanced - Bronze
 ach(15901),	-- Academy Ascent Advanced: Silver \\ Academy Ascent - Advanced: Silver \\ Dragon Racing - Thaldraszus - Academy Ascent - Advanced - Silver
 ach(15902),	-- Academy Ascent Advanced: Gold \\ Academy Ascent - Advanced: Gold \\ Dragon Racing - Thaldraszus - Academy Ascent - Advanced - Gold
-10.0.0.4470715903Dragon Racing - Thaldraszus - Garden Gallivant - BronzeDragon Racing - Thaldraszus - Garden Gallivant - Bronze
+10.0.0.44707
+ach(15903), -- Dragon Racing - Thaldraszus - Garden Gallivant - Bronze
 ach(15904),	-- Garden Gallivant: Silver \\ Dragon Racing - Thaldraszus - Garden Gallivant - Silver
 ach(15905),	-- Garden Gallivant: Gold \\ Dragon Racing - Thaldraszus - Garden Gallivant - Gold
 ach(15906),	-- Garden Gallivant Advanced: Bronze \\ Garden Gallivant - Advanced: Bronze \\ Dragon Racing - Thaldraszus - Garden Gallivant - Advanced - Bronze
@@ -3447,7 +3448,7 @@ ach(16425),	-- I'm a Template Character [DNT]
 ach(16426),	-- Hungry Hungry Hornswog
 ach(16427),	-- Go With The Flow
 ach(16428),	-- Sojourner of Azure Span
-ach(16429),	-- [PH] Hero: Dragonflight Season 1
+ach(16429),	-- Thundering Hero: Dragonflight Season 1 \\ [PH] Hero: Dragonflight Season 1
 ach(16430),	-- All Bark, All Bite
 ach(16431),	-- Against the Elements
 ach(16432),	-- Ready for Raiding VIII
@@ -3655,3 +3656,6 @@ ach(16722),	-- <DNT> Sabellian - 5 - Friend
 ach(16729),	-- To All the Squirrels Hidden Till Now
 ach(16730),	-- Crimson Gladiator's Drake
 ach(16731),	-- Court is Now in Session
+10.0.2.45969
+ach(16734),	-- Crimson Soloist: Dragonflight Season 1
+ach(16736),	-- Grand Theft Mammoth

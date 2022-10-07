@@ -301,29 +301,26 @@ def create_missing_recipes() -> None:
             "Professions",
             f"{profession}.txt",
         )
-        try:
-            with open(raw_path) as raw_file, open(missing_path, "w") as missing_file:
-                raw_lines = raw_file.readlines()
-                excluded_recipes = extract_nth_column(
-                    Path("Exclusion", "Professions", f"{profession}.txt"), 0
-                )
-                difference = sorted(
-                    set(raw_lines)
-                    - set(get_existing_ids(Things.Recipes))
-                    - set(excluded_recipes),
-                    key=raw_lines.index,
-                )
-                difference = remove_empty_builds(difference)
-                missing_file.writelines(difference)
-                itemdb_list = list[str]()
-                itemdb_path = Path(
-                    DATAS_FOLDER,
-                    "00 - Item Database",
-                    "ProfessionDB",
-                    f"{profession}ItemDB.lua",
-                )
-        except FileNotFoundError:
-            print(f"This {profession} has missing file?")
+        with open(raw_path) as raw_file, open(missing_path, "w") as missing_file:
+            raw_lines = raw_file.readlines()
+            excluded_recipes = extract_nth_column(
+                Path("Exclusion", "Professions", f"{profession}.txt"), 0
+            )
+            difference = sorted(
+                set(raw_lines)
+                - set(get_existing_ids(Things.Recipes))
+                - set(excluded_recipes),
+                key=raw_lines.index,
+            )
+            difference = remove_empty_builds(difference)
+            missing_file.writelines(difference)
+            itemdb_list = list[str]()
+            itemdb_path = Path(
+                DATAS_FOLDER,
+                "00 - Item Database",
+                "ProfessionDB",
+                f"{profession}ItemDB.lua",
+            )
             try:
                 with open(itemdb_path) as itemdb_file:
                     for line in itemdb_file:

@@ -19169,3 +19169,16 @@
 198704,Wizened Stormrider
 198717,Proto-Drake
 198754,Ferocious Tarasek
+10.0.2.45969
+188756,Potion Cauldron of Ultimate Power |A:Professions-Icon-Quality-Tier1-Small:20:20|a
+188839,Potion Cauldron of Ultimate Power |A:Professions-Icon-Quality-Tier2-Small:20:20|a
+188841,Potion Cauldron of Ultimate Power |A:Professions-Icon-Quality-Tier3-Small:20:20|a
+191504,Sabellian
+193630,Qalashi Magmammoth
+198790,Sailor Oldenhook
+198825,Sailor Strongline
+198847,Swart
+198927,Temporal Attendant
+198957,Alliance Footsoldier
+198958,Horde Footsoldier
+198977,[DNT] Spell Bunny

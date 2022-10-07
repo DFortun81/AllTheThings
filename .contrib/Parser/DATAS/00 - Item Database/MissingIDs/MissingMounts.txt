@@ -185,6 +185,8 @@ mount(394220),	-- Obsidian Vorquin
 10.0.2.45779
 mount(394737),	-- Vicious Sabertooth
 mount(394738),	-- Vicious Sabertooth
+10.0.2.45969
+mount(387231),	-- Hailstorm Armoredon
 
 
 
@@ -376,3 +378,5 @@ mount(394220),	-- Obsidian Vorquin
 10.0.2.45779
 mount(394737),	-- Vicious Sabertooth
 mount(394738),	-- Vicious Sabertooth
+10.0.2.45969
+mount(387231),	-- Hailstorm Armoredon

@@ -3,8 +3,6 @@ i(163017),	-- Pitch-Soaked Torch
 i(163073),	-- Conch of Wa'mundi
 9.0.1.35679
 i(177665),	-- Spectral Handkerchief \\ Spectral Hankerchief
-9.1.5.39977
-i(187958),	-- Shrouded Banner of the Opportune \\ PH - Banner of the Opportune
 10.0.0.44649
 i(192495),	-- Malfunctioning Stealthman 54
 i(193032),	-- Jeweled Offering
@@ -92,6 +90,8 @@ i(199902),	-- Wayfinder's Compass \\ Wayfinder's Compass - NYI
 i(201435),	-- Swinging Sands
 10.0.2.45779
 i(194885),	-- Ohuna Perch \\ Ohuna Mail Carrier \\ [DNT] Ohn'ahran Friendship
+10.0.2.45969
+i(201815),	-- Cloak of Many Faces
 
 
 
@@ -192,3 +192,5 @@ i(199902),	-- Wayfinder's Compass \\ Wayfinder's Compass - NYI
 i(201435),	-- Swinging Sands
 10.0.2.45779
 i(194885),	-- Ohuna Perch \\ Ohuna Mail Carrier \\ [DNT] Ohn'ahran Friendship
+10.0.2.45969
+i(201815),	-- Cloak of Many Faces
