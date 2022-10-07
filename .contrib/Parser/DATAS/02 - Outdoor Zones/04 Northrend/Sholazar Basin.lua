@@ -1178,14 +1178,15 @@ root("Zones", {
 							i(44106),	-- Glitterscale Wrap
 							i(44111),	-- Gold Star Spaulders
 							i(39878, {	-- Mysterious Egg
-								i(39883, {	-- Cracked Egg
+								["provider"] = { "i", 39883 },	-- Cracked Egg
+								["groups"] = {
 									i(44707),	-- Green Proto-Drake (MOUNT!)
 									i(39898),	-- Cobra Hatchling (PET!)
 									i(44721),	-- Proto-Drake Whelp (PET!)
 									i(39896),	-- Tickbird Hatchling (PET!)
 									i(39899),	-- White Tickbird Hatchling (PET!)
 									i(44722),	-- Aged Yolk
-								}),
+								},
 							}),
 							i(44074),	-- Oracle Talisman of Ablution
 							i(44110),	-- Sharkjaw Cap
@@ -1223,9 +1224,10 @@ root("Zones", {
 							i(41561),	-- Design: Reckless Huge Citrine
 							i(44123),	-- Discarded Titanium Legplates
 							i(44717, {	-- Disgusting Jar
-								i(44718, {	-- Ripe Disgusting Jar
+								["provider"] = { "i", 44718 },	-- Ripe Disgusting Jar
+								["groups"] = {
 									i(44719),	-- Frenzyheart Brew (TOY!)
-								}),
+								},
 							}),
 							i(44073),	-- Frenzyheart Insignia of Fury
 							i(44120),	-- Giant-Sized Gauntlets

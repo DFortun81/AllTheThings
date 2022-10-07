@@ -84,14 +84,15 @@ root(ROOTS.Zones, m(905, {	-- Argus
 						["achievementID"] = 12078,	-- Commander of Argus
 					}),
 					i(153190, {	-- Fel-Spotted Egg
-						i(153191, {	-- Cracked Fel-Spotted Egg
+						["provider"] = { "i", 153191 },	-- Cracked Fel-Spotted Egg
+						["groups"] = {
 							i(152843),	-- Darkspore Mana Ray (MOUNT!)
 							i(152841),	-- Felglow Mana Ray (MOUNT!)
 							i(152840),	-- Scintillating Mana Ray (MOUNT!)
 							i(152842),	-- Vibrant Mana Ray (MOUNT!)
 							i(153054),	-- Docile Skyfin Pet
 							i(153055),	-- Fel-Afflicted Skyfin Pet
-						}),
+						},
 					}),
 				},
 			}),
