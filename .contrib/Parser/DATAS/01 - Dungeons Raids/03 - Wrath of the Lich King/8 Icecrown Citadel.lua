@@ -726,6 +726,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					i(49972, {	-- Plans: Hellfrozen Bonegrinders (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
+					i(52023, {	-- Plans: Iceblade Arrow
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["timeline"] = { "deleted 4.0.1" },
+					}),
 					i(49971, {	-- Plans: Legplates of Painful Death (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
@@ -737,6 +741,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					}),
 					i(49969, {	-- Plans: Puresteel Legplates (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+					}),
+					i(52022, {	-- Plans: Shatter Rounds
+						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
+						["timeline"] = { "deleted 4.0.1" },
 					}),
 				}),
 				n(37688, {	-- Crusader Grimtong <Warrior Armor>

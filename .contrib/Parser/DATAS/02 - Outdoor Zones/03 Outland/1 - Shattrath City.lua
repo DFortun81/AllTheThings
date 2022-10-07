@@ -2695,7 +2695,7 @@ root("Zones", {
 								["isLimited"] = true,
 							}),
 							i(32381, {	-- Schematic: Fused Wiring
-								["recipeID"] = 39895,
+								["timeline"] = { "added 2.1.0", "removed 5.0.4" },
 								["isLimited"] = true,
 							}),
 						},

@@ -263,6 +263,128 @@ profession(ENGINEERING, {
 			},
 			["lvl"] = 30,
 		}),
+		q(3641, {	-- Show Your Work
+			["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
+			["sourceQuest"] = 3640,	-- The Pledge of Secrecy
+			["altQuests"] = { 3639 },	-- Show Your Work
+			["description"] = "Requires 200 Engineering to start this quest.",
+			["requireSkill"] = ENGINEERING,
+			["coord"] = { 69.8, 50.2, IRONFORGE },
+			["timeline"] = { "removed 4.0.3.2000" },
+			["races"] = ALLIANCE_ONLY,
+			["cost"] = {
+				{ "i", 4392, 2 },	-- Advanced Target Dummy
+				{ "i", 4407, 1 },	-- Accurate Scope
+				{ "i", 10559, 6 },	-- Mithril Tube
+			},
+			["lvl"] = 30,
+			["groups"] = {
+				i(10790),	-- Gnome Engineer Membership Card
+			},
+		}),
+		q(3643, {	-- Show Your Work
+			["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
+			["sourceQuest"] = 3642,	-- The Pledge of Secrecy
+			["altQuests"] = { 3639 },	-- The Pledge of Secrecy
+			["description"] = "Requires 200 Engineering to start this quest.",
+			["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
+			["requireSkill"] = ENGINEERING,
+			["races"] = HORDE_ONLY,
+			["timeline"] = { "removed 4.0.3.2000" },
+			["cost"] = {
+				{ "i", 4392, 2 },	-- Advanced Target Dummy
+				{ "i", 4407, 1 },	-- Accurate Scope
+				{ "i", 10559, 6 },	-- Mithril Tube
+			},
+			["lvl"] = 30,
+			["groups"] = {
+				i(10790),	-- Gnome Engineer Membership Card
+			},
+		}),
+		q(3639, {	-- Show Your Work
+			["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
+			["sourceQuest"] = 3638,	-- The Pledge of Secrecy
+			["altQuests"] = {
+				3641,	-- Show Your Work
+				3643,	-- Show Your Work
+			},
+			["description"] = "Requires 200 Engineering to start this quest.",
+			["coord"] = { 54.4, 27.2, TANARIS },
+			["requireSkill"] = ENGINEERING,
+			["timeline"] = { "removed 4.0.3.2000" },
+			["cost"] = {
+				{ "i", 4392, 2 },	-- Advanced Target Dummy
+				{ "i", 4407, 1 },	-- Accurate Scope
+				{ "i", 10559, 6 },	-- Mithril Tube
+			},
+			["lvl"] = 30,
+		}),
+		q(3638, {	-- The Pledge of Secrecy
+			["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
+			["sourceQuests"] = {
+				3526,	-- Goblin Engineering
+				3629,	-- Goblin Engineering
+				3633,	-- Goblin Engineering
+				4181,	-- Goblin Engineering
+			},
+			["altQuests"] = {
+				3640,	-- The Pledge of Secrecy
+				3642,	-- The Pledge of Secrecy
+			},
+			["description"] = "Requires 200 Engineering to start this quest.",
+			["coord"] = { 54.4, 27.2, TANARIS },
+			["requireSkill"] = ENGINEERING,
+			["timeline"] = { "removed 4.0.3.2000" },
+			["cost"] = {
+				{ "i", 10792, 1 },	-- Nixx's Pledge of Secrecy
+			},
+			["lvl"] = 30,
+		}),
+		q(3640, {	-- The Pledge of Secrecy
+			["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
+			["sourceQuests"] = {
+				3630,	-- Gnome Engineering
+				3630,	-- Gnome Engineering
+				3630,	-- Gnome Engineering
+			},
+			["altQuests"] = { 3638 },	-- The Pledge of Secrecy
+			["description"] = "Requires 200 Engineering to start this quest.",
+			["coord"] = { 69.8, 50.2, IRONFORGE },
+			["requireSkill"] = ENGINEERING,
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { "removed 4.0.3.2000" },
+			["cost"] = {
+				{ "i", 11283, 1 },	-- Overspark's Signed Pledge
+			},
+			["lvl"] = 30,
+			["groups"] = {
+				i(10793, {	-- Overspark's Pledge of Secrecy
+					i(11283),	-- Overspark's Signed Pledge
+				}),
+			},
+		}),
+		q(3642, {	-- The Pledge of Secrecy
+			["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
+			["sourceQuests"] = {
+				3635,	-- Gnome Engineering
+				3637,	-- Gnome Engineering
+			},
+			["altQuests"] = { 3638 },	-- The Pledge of Secrecy
+			["description"] = "Requires 200 Engineering to start this quest.",
+			["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
+			["requireSkill"] = ENGINEERING,
+			["timeline"] = { "removed 4.0.3.2000" },
+			["races"] = HORDE_ONLY,
+			["cost"] = {
+				{ "i", 10794, 1 },	-- Oglethorpe's Signed Pledge
+			},
+			["lvl"] = 30,
+			["groups"] = {
+				i(10794, {	-- Oglethorpe's Pledge of Secrecy
+					i(10794),	-- Oglethorpe's Signed Pledge
+				}),
+			},
+		}),
 		applyclassicphase(TBC_PHASE_ONE, q(9636, {	-- The Zapthrottle Mote Extractor! [A]
 			["qg"] = 17634,	-- K. Lee Smallfry <Engineering Trainer>
 			["altQuests"] = { 9635 },	-- The Zapthrottle Mote Extractor! [H]
