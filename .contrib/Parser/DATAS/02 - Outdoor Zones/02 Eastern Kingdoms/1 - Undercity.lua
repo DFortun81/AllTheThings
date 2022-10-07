@@ -1241,7 +1241,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER 6.1.0
 				n(6566, {	-- Estelle Gendry <Heirloom "Curator">
-					["coord"] = { 78.2, 76.6, UNDERCITY },
+					["coords"] = {
+						-- #IF AFTER BFA
+						{ 57.1, 90.0, ORGRIMMAR },
+						-- #ENDIF
+						{ 78.2, 76.6, UNDERCITY },
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(122375, {	-- Aged Pauldrons of The Five Thunders
