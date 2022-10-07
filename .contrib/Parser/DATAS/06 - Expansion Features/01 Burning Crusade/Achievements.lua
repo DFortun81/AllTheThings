@@ -126,7 +126,19 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 				["crs"] = { 890 },	-- Fawn
 			}),
 			crit(3751, {	-- Small Frog (Darnassus, Southern Barrens, Arathi Highlands, Sunken Temple, Gundrak, Northern Barrens, Teldrassil, Zangarmarsh)
-				["maps"] = { DARNASSUS, ARATHI_HIGHLANDS, GUNDRAK, NORTHERN_BARRENS, TELDRASSIL, ZANGARMARSH },
+				["maps"] = {
+					-- #if AFTER CATA
+					ARATHI_HIGHLANDS,
+					DARNASSUS,
+					NORTHERN_BARRENS,
+					SOUTHERN_BARRENS,
+					TELDRASSIL,
+					-- #endif
+					EVERSONG_WOODS,
+					GUNDRAK,
+					MARAUDON,
+					ZANGARMARSH,
+				},
 				["crs"] = { 13321 },	-- Small Frog
 			}),
 			crit(3752, {	-- Gazelle (Desolace, Mulgore, Northern Barrens, Southern Barrens)

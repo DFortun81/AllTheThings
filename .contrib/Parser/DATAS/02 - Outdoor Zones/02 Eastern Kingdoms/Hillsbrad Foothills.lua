@@ -1802,6 +1802,46 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { "added 4.0.1.12984" },
 				}),
+				q(555, {	-- Soothing Turtle Bisque (A)
+					["qg"] = 2430,	-- Chef Jessen
+					["coord"] = { 51.8, 58.7, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { "removed 4.0.3.2000" },
+					["requireSkill"] = COOKING,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3712, 10 },	-- Turtle Meat
+						-- #if BEFORE WRATH
+						{ "i", 3713, 1 },	-- Soothing Spices
+						-- #endif
+					},
+					["lvl"] = 28,
+					["groups"] = {
+						i(3737, {	-- Recipe: Soothing Turtle Bisque
+							["timeline"] = { "removed 4.0.3.2000" },
+						}),
+						i(3729),	-- Soothing Turtle Bisque
+					},
+				}),
+				q(7321, {	-- Soothing Turtle Bisque (H)
+					["qg"] = 2393,	-- Christoph Jeffcoat
+					["coord"] = { 62.30, 19.05, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { "removed 4.0.3.2000" },
+					["requireSkill"] = COOKING,
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3712, 10 },	-- Turtle Meat
+						-- #if BEFORE WRATH
+						{ "i", 3713, 1 },	-- Soothing Spices
+						-- #endif
+					},
+					["lvl"] = 28,
+					["groups"] = {
+						i(3737, {	-- Recipe: Soothing Turtle Bisque
+							["timeline"] = { "removed 4.0.3.2000" },
+						}),
+						i(3729),	-- Soothing Turtle Bisque
+					},
+				}),
 				q(538, {	-- Southshore
 					["qg"] = 1440,	-- Milton Sheaf <Librarian>
 					["sourceQuest"] = 337,	-- An Old History Book

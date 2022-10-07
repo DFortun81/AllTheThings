@@ -44,6 +44,24 @@ _.Zones = {
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3446 },	-- Mebok Mizzyrix
 				}),
+				q(862, {	-- Dig Rat Stew
+					["qg"] = 3443,	-- Grub
+					["coord"] = { 55.31, 31.79, THE_BARRENS },
+					["timeline"] = { "removed 4.0.3.2000" },
+					["cost"] = { { "i", 5051, 8 } },	-- Dig Rat
+					["requireSkill"] = COOKING,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 15,
+					["groups"] = {
+						i(10919, {	-- Apothecary Gloves
+							["timeline"] = { "removed 4.0.3.2000" },
+						}),
+						i(5478),	-- Dig Rat Stew
+						i(5487, {	-- Recipe: Dig Rat Stew
+							["timeline"] = { "removed 4.3.0.2000" },
+						}),
+					},
+				}),
 				q(907,   {	-- Enraged Thunder Lizards
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

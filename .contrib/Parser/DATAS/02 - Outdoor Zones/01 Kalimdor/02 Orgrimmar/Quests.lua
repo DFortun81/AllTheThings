@@ -896,6 +896,18 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 32.6, 68.2, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
+			q(6611, {	-- To Gadgetzan You Go!
+				["qg"] = 3399,	-- Zamja
+				-- #if AFTER CATA
+				["coord"] = { 32.2, 69.4, ORGRIMMAR },
+				-- #else
+				["coord"] = { 57.4, 53.6, ORGRIMMAR },
+				-- #endif
+				["requireSkill"] = COOKING,
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
+				["lvl"] = 35,
+			}),
 			q(28816, {	-- To the Depths
 				["sourceQuests"] = { 28805 },	-- The Eye of the Storm
 				["isBreadcrumb"] = true,

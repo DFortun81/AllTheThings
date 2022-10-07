@@ -185,6 +185,16 @@ _.Zones =
 					["coord"] = { 53.2, 32.5, SILITHUS },
 					["sourceQuest"] = 8321,	-- Vyral the Vile
 				}),
+				q(8307, {	-- Desert Recipe
+					["qg"] = 15174,	-- Calandrath <Innkeeper>
+					["requireSkill"] = COOKING,
+					-- #if AFTER CATA
+					["coord"] = { 55.4, 36.6, SILITHUS },
+					-- #else
+					["coord"] = { 51.8, 39, SILITHUS },
+					-- #endif
+					["lvl"] = 40,
+				}),
 				q(8332, {	-- Dukes of the COuncil
 					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 8331,	-- Aurel Goldleaf
@@ -215,6 +225,20 @@ _.Zones =
 					["g"] = {
 						i(20724),	-- Corrupted Blackwood Staff
 					},
+				}),
+				q(8317, {	-- Kitchen Assistance
+					["qg"] = 15174,	-- Calandrath <Innkeeper>
+					["sourceQuest"] = 8313,	-- Sharing the Knowledge
+					["requireSkill"] = COOKING,
+					-- #if AFTER CATA
+					["coord"] = { 55.4, 36.6, SILITHUS },
+					-- #else
+					["coord"] = { 51.8, 39, SILITHUS },
+					-- #endif
+					["cost"] = {
+						{ "i", 20452, 10 },	-- Smoked Desert Dumplings
+					},
+					["lvl"] = 40,
 				}),
 				q(8341, {	-- Lords of the Council
 					["u"] = REMOVED_FROM_GAME,
@@ -284,6 +308,23 @@ _.Zones =
 						28859,	-- The Dunes of Silithus
 						28856,	-- The Sands of Silithus
 						28527,	-- Warchief's Command: Silithus!
+					},
+				}),
+				q(8313, {	-- Sharing the Knowledge
+					["provider"] = { "o", 180503 },	-- Sandy Cookbook
+					["sourceQuest"] = 8307,	-- Desert Recipe
+					["requireSkill"] = COOKING,
+					-- #if AFTER CATA
+					["coord"] = { 43.6, 42.0, SILITHUS },
+					-- #else
+					["coord"] = { 37.9, 45.3, SILITHUS },
+					-- #endif
+					["cost"] = {
+						{ "i", 20467, 1 },	-- Torn Recipe Page
+					},
+					["lvl"] = 40,
+					["groups"] = {
+						recipe(24801),	-- Smoked Desert Dumplings
 					},
 				}),
 				q(8348, {	-- Signet of the Dukes

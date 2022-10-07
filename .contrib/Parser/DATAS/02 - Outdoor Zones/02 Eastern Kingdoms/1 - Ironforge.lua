@@ -583,6 +583,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 35,
 				}),
+				q(6612, {	-- I Know A Guy...
+					["qg"] = 5159,	-- Daryl Riknussun
+					["coord"] = { 60.1, 36.5, IRONFORGE },
+					["timeline"] = { "removed 4.0.3.2000" },
+					["races"] = ALLIANCE_ONLY,
+					["requireSkill"] = COOKING,
+					["isBreadcrumb"] = true,
+					["lvl"] = 35,
+				}),
 				q(29356, {	-- I Need to Cask a Favor
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.4, IRONFORGE },

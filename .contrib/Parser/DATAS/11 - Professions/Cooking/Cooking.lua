@@ -1249,6 +1249,32 @@ profession(COOKING, {
 		}
 	})),
 	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, {
+		n(DISCOVERY, {
+			["description"] = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
+			["groups"] = {
+				i(118311),	-- Recipe Idea: Blackrock Ham
+				i(118313),	-- Recipe Idea: Braised Riverbeast
+				i(118315),	-- Recipe Idea: Clefthoof Sausages
+				i(118319),	-- Recipe Idea: Fat Sleeper Cakes
+				i(118320),	-- Recipe Idea: Fiery Calamari
+				i(118317),	-- Recipe Idea: Grilled Gulper
+				i(118310),	-- Recipe Idea: Hearty Elekk Steak
+				i(118312),	-- Recipe Idea: Pan-Seared Talbuk
+				i(118314),	-- Recipe Idea: Rylak Crepes
+				i(118321),	-- Recipe Idea: Skulker Chowder
+				i(118316),	-- Recipe Idea: Steamed Scorpion
+				i(118318),	-- Recipe Idea: Sturgeon Stew
+				i(118323),	-- Recipe Idea: Blackrock Barbecue
+				i(118326),	-- Recipe Idea: Calamari Crepes
+				i(118324),	-- Recipe Idea: Frosty Stew
+				i(118327),	-- Recipe Idea: Gorgrond Chowder
+				i(118325),	-- Recipe Idea: Sleeper Surprise
+				i(118322),	-- Recipe Idea: Talador Surf and Turf
+				i(118328),	-- Recipe Idea: Feast of Blood
+				i(118329),	-- Recipe Idea: Feast of the Waters
+				i(110684),	-- Leftovers [Pet!]
+			},
+		}),
 		{
 			["name"] = "Feasts",
 			["categoryID"] = 345,
@@ -2359,46 +2385,18 @@ profession(COOKING, {
 		}
 	})),
 
-	-- #if AFTER WOD
-	n(DISCOVERY, {
-		["description"] = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
-		["groups"] = {
-			i(118311),	-- Recipe Idea: Blackrock Ham
-			i(118313),	-- Recipe Idea: Braised Riverbeast
-			i(118315),	-- Recipe Idea: Clefthoof Sausages
-			i(118319),	-- Recipe Idea: Fat Sleeper Cakes
-			i(118320),	-- Recipe Idea: Fiery Calamari
-			i(118317),	-- Recipe Idea: Grilled Gulper
-			i(118310),	-- Recipe Idea: Hearty Elekk Steak
-			i(118312),	-- Recipe Idea: Pan-Seared Talbuk
-			i(118314),	-- Recipe Idea: Rylak Crepes
-			i(118321),	-- Recipe Idea: Skulker Chowder
-			i(118316),	-- Recipe Idea: Steamed Scorpion
-			i(118318),	-- Recipe Idea: Sturgeon Stew
-			i(118323),	-- Recipe Idea: Blackrock Barbecue
-			i(118326),	-- Recipe Idea: Calamari Crepes
-			i(118324),	-- Recipe Idea: Frosty Stew
-			i(118327),	-- Recipe Idea: Gorgrond Chowder
-			i(118325),	-- Recipe Idea: Sleeper Surprise
-			i(118322),	-- Recipe Idea: Talador Surf and Turf
-			i(118328),	-- Recipe Idea: Feast of Blood
-			i(118329),	-- Recipe Idea: Feast of the Waters
-			i(110684),	-- Leftovers [Pet!]
-		},
-	}),
-	-- #endif
 	-- #if AFTER MOP
 	i(86425, {	-- Cooking School Bell
 		faction(1357, {		-- Nomi (Faction)
 			["description"] = "Summon Nomi once per day, complete the daily he gives and you'll soon (42+ days later), earn your Apron.\n\nThen this little bastard will learn nothing and burn all of your food in Dalaran.",
-			["creatureID"] = 64337,	-- Nomi (Child)
+			["cr"] = 64337,	-- Nomi (Child)
 			["groups"] = {
 				ach(7325),	-- Now I Am the Master
 				q(31820, {	-- A Present for Teacher
-					["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.|r",
+					["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.",
 					["cost"] = { { "i", 86425, 1 } },	-- Cooking School Bell
 					["provider"] = { "n", 64337 },	-- Nomi
-					["g"] = {
+					["groups"] = {
 						i(86468),	-- Apron
 					},
 				}),
@@ -2406,278 +2404,8 @@ profession(COOKING, {
 		}),
 	}),
 	-- #endif
-	n(QUESTS, {
-		q(6610, {	-- Clamlette Surprise
-			-- #if AFTER CATA
-			["qg"] = 40589,	-- Dirge Quikcleave
-			["coord"] = { 52.4, 29.0, TANARIS },
-			-- #else
-			["qg"] = 8125,	-- Dirge Quikcleave
-			["coord"] = { 52.63, 28.12, TANARIS },
-			-- #endif
-			["requireSkill"] = COOKING,
-			["altQuests"] = { 13825 },	-- Clamlette Surprise
-			["cost"] = {
-				{ "i", 12207, 12 },	-- Giant Egg
-				{ "i", 7974, 10 },	-- Zesty Clam Meat
-				-- #if AFTER CATA
-				{ "i", 3927, 20 },	-- Fine Aged Cheddar
-				-- #else
-				{ "i", 8932, 20 },	-- Alterac Swiss
-				-- #endif
-			},
-			["lvl"] = 35,
-			["groups"] = {
-				i(16971),	-- Clamlette Surprise
-				-- #if AFTER WRATH
-				recipe(64054),	-- Clamlette Magnifique
-				-- #endif
-			},
-		}),
-		q(13825, {	-- Clamlette Surprise
-			["qg"] = 8125,	-- Dirge Quikcleave
-			["altQuests"] = { 6610 },	-- Clamlette Surprise
-			["coord"] = { 52.63, 28.12, TANARIS },
-			["timeline"] = { "added 3.1.0.9637", "removed 4.0.3" },
-			["requireSkill"] = COOKING,
-			["groups"] = {
-				i(16971),	-- Clamlette Surprise
-			},
-		}),
-		q(8307, {	-- Desert Recipe
-			["qg"] = 15174,	-- Calandrath <Innkeeper>
-			["requireSkill"] = COOKING,
-			-- #if AFTER CATA
-			["coord"] = { 55.4, 36.6, SILITHUS },
-			-- #else
-			["coord"] = { 51.8, 39, SILITHUS },
-			-- #endif
-			["lvl"] = 40,
-		}),
-		q(862, {	-- Dig Rat Stew
-			["qg"] = 3443,	-- Grub
-			["requireSkill"] = COOKING,
-			["coord"] = { 55.31, 31.79, THE_BARRENS },
-			["races"] = HORDE_ONLY,
-			["cost"] = {
-				{ "i", 5051, 8 },	-- Dig Rat
-			},
-			["timeline"] = { "removed 4.0.3.2000" },
-			["lvl"] = 15,
-			["groups"] = {
-				i(10919, {	-- Apothecary Gloves
-					["timeline"] = { "removed 4.0.3.2000" },
-				}),
-				i(5478),	-- Dig Rat Stew
-				i(5487, {	-- Recipe: Dig Rat Stew
-					["timeline"] = { "removed 4.3.0.2000" },
-				}),
-			},
-		}),
-		q(2178, {	-- Easy Strider Living
-			["qg"] = 3702,	-- Alanndarian Nightsong
-			["requireSkill"] = COOKING,
-			["coord"] = { 37.7, 40.7, DARKSHORE },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { "removed 4.0.3.2000" },
-			["cost"] = {
-				{ "i", 5469, 5 },	-- Strider Meat
-			},
-			["lvl"] = 9,
-			["groups"] = {
-				i(5486),	-- Recipe: Strider Stew
-				i(5477),	-- Strider Stew
-			},
-		}),
-		q(6612, {	-- I Know A Guy...
-			["qg"] = 5159,	-- Daryl Riknussun
-			["requireSkill"] = COOKING,
-			["coord"] = { 60.1, 36.5, IRONFORGE },
-			["timeline"] = { "removed 4.0.3.2000" },
-			["races"] = ALLIANCE_ONLY,
-			["isBreadcrumb"] = true,
-			["lvl"] = 35,
-		}),
-		q(8317, {	-- Kitchen Assistance
-			["qg"] = 15174,	-- Calandrath <Innkeeper>
-			["sourceQuest"] = 8313,	-- Sharing the Knowledge
-			["requireSkill"] = COOKING,
-			-- #if AFTER CATA
-			["coord"] = { 55.4, 36.6, SILITHUS },
-			-- #else
-			["coord"] = { 51.8, 39, SILITHUS },
-			-- #endif
-			["cost"] = {
-				{ "i", 20452, 10 },	-- Smoked Desert Dumplings
-			},
-			["lvl"] = 40,
-		}),
-		applyclassicphase(TBC_PHASE_ONE, q(11380, {	-- Manalicious
-			["qg"] = 24393,	-- The Rokk <Master of Cooking>
-			["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
-			["maps"] = { NETHERSTORM },
-			["requireSkill"] = COOKING,
-			["isDaily"] = true,
-			["lvl"] = 70,
-			["groups"] = {
-				objective(1, {	-- 0/15 Mana Berry
-					["provider"] = { "i", 33849 },	-- Mana Berry
-					["coord"] = { 48, 54, NETHERSTORM },
-				}),
-				i(33844),	-- Barrel of Fish
-				i(33857),	-- Crate of Meat
-			},
-		})),
-		q(4161, {	-- Recipe of the Kaldorei
-			["qg"] = 6286,	-- Zarrin
-			["requireSkill"] = COOKING,
-			["coord"] = { 57, 61.2, TELDRASSIL },
-			["timeline"] = { "removed 4.0.3.2000" },
-			["races"] = ALLIANCE_ONLY,
-			["cost"] = {
-				{ "i", 5465, 7 },	-- Small Spider Leg
-			},
-			["groups"] = {
-				i(5482, {	-- Recipe: Kaldorei Spider Kabob
-					["timeline"] = { "removed 4.0.3.2000" },
-				}),
-			},
-		}),
-		applyclassicphase(TBC_PHASE_ONE, q(11377, {	-- Revenge is Tasty
-			["qg"] = 24393,	-- The Rokk <Master of Cooking>
-			["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
-			["maps"] = { TEROKKAR_FOREST },
-			["requireSkill"] = COOKING,
-			["isDaily"] = true,
-			["lvl"] = 70,
-			["groups"] = {
-				objective(1, {	-- 0/1 Kaliri Stew
-					["provider"] = { "i", 33839 },	-- Kaliri Stew
-					["coord"] = { 68.4, 79.0, TEROKKAR_FOREST },
-					["cr"] = 23051,	-- Monstrous Kaliri
-					["cost"] = {
-						{ "i", 33837, 1 },	-- Cooking Pot
-						{ "i", 27659, 3 },	-- Warp Burger
-						{ "i", 33838, 1 },	-- Giant Kaliri Wing
-					},
-				}),
-				i(33844),	-- Barrel of Fish
-				i(33857),	-- Crate of Meat
-			},
-		})),
-		q(8313, {	-- Sharing the Knowledge
-			["provider"] = { "o", 180503 },	-- Sandy Cookbook
-			["sourceQuest"] = 8307,	-- Desert Recipe
-			["requireSkill"] = COOKING,
-			-- #if AFTER CATA
-			["coord"] = { 43.6, 42.0, SILITHUS },
-			-- #else
-			["coord"] = { 37.9, 45.3, SILITHUS },
-			-- #endif
-			["cost"] = {
-				{ "i", 20467, 1 },	-- Torn Recipe Page
-			},
-			["lvl"] = 40,
-			["groups"] = {
-				recipe(24801),	-- Smoked Desert Dumplings
-			},
-		}),
-		q(555, {	-- Soothing Turtle Bisque (A)
-			["qg"] = 2430,	-- Chef Jessen
-			["coord"] = { 51.8, 58.7, HILLSBRAD_FOOTHILLS },
-			["timeline"] = { "removed 4.0.3.2000" },
-			["requireSkill"] = COOKING,
-			["races"] = ALLIANCE_ONLY,
-			["cost"] = {
-				{ "i", 3712, 10 },	-- Turtle Meat
-				-- #if BEFORE WRATH
-				{ "i", 3713, 1 },	-- Soothing Spices
-				-- #endif
-			},
-			["lvl"] = 28,
-			["groups"] = {
-				i(3737, {	-- Recipe: Soothing Turtle Bisque
-					["timeline"] = { "removed 4.0.3.2000" },
-				}),
-				i(3729),	-- Soothing Turtle Bisque
-			},
-		}),
-		q(7321, {	-- Soothing Turtle Bisque (H)
-			["qg"] = 2393,	-- Christoph Jeffcoat
-			["coord"] = { 62.30, 19.05, HILLSBRAD_FOOTHILLS },
-			["timeline"] = { "removed 4.0.3.2000" },
-			["requireSkill"] = COOKING,
-			["races"] = HORDE_ONLY,
-			["cost"] = {
-				{ "i", 3712, 10 },	-- Turtle Meat
-				-- #if BEFORE WRATH
-				{ "i", 3713, 1 },	-- Soothing Spices
-				-- #endif
-			},
-			["lvl"] = 28,
-			["groups"] = {
-				i(3737, {	-- Recipe: Soothing Turtle Bisque
-					["timeline"] = { "removed 4.0.3.2000" },
-				}),
-				i(3729),	-- Soothing Turtle Bisque
-			},
-		}),
-		applyclassicphase(TBC_PHASE_ONE, q(11381, {	-- Soup for the Soul
-			["qg"] = 24393,	-- The Rokk <Master of Cooking>
-			["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
-			["maps"] = { NAGRAND },
-			["requireSkill"] = COOKING,
-			["isDaily"] = true,
-			["lvl"] = 70,
-			["groups"] = {
-				objective(1, {	-- 0/1 Spiritual Soup
-					["provider"] = { "i", 33850 },	-- Spiritual Soup
-					["coord"] = { 25.81, 59.40, NAGRAND },
-					["cost"] = {
-						{ "i", 33851, 1 },	-- Cooking Pot
-						{ "i", 27658, 4 },	-- Roasted Clefthoof
-					},
-				}),
-				i(33844),	-- Barrel of Fish
-				i(33857),	-- Crate of Meat
-			},
-		})),
-		applyclassicphase(TBC_PHASE_ONE, q(11379, {	-- Super Hot Stew
-			["qg"] = 24393,	-- The Rokk <Master of Cooking>
-			["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
-			["maps"] = { BLADES_EDGE_MOUNTAINS },
-			["requireSkill"] = COOKING,
-			["isDaily"] = true,
-			["lvl"] = 70,
-			["groups"] = {
-				objective(1, {	-- 0/1 Demon Broiled Surprise
-					["provider"] = { "i", 33848 },	-- Demon Broiled Surprise
-					["coord"] = { 28.0, 82.2, BLADES_EDGE_MOUNTAINS },
-					["cr"] = 19973,	-- Abyssal Flamebringer
-					["cost"] = {
-						{ "i", 33852, 1 },	-- Cooking Pot
-						{ "i", 31672, 2 },	-- Mok'Nathal Shortribs
-						{ "i", 31673, 1 },	-- Crunchy Serpent
-					},
-				}),
-				i(33844),	-- Barrel of Fish
-				i(33857),	-- Crate of Meat
-			},
-		})),
-		q(6611, {	-- To Gadgetzan You Go!
-			["qg"] = 3399,	-- Zamja
-			-- #if AFTER CATA
-			["coord"] = { 32.2, 69.4, ORGRIMMAR },
-			-- #else
-			["coord"] = { 57.4, 53.6, ORGRIMMAR },
-			-- #endif
-			["requireSkill"] = COOKING,
-			["races"] = HORDE_ONLY,
-			["isBreadcrumb"] = true,
-			["lvl"] = 35,
-		}),
-	}),
 	-- #if NOT ANYCLASSIC
+	-- TODO: Add these recipes to the place where you used to be able to buy them.
 	filter(RECIPES, {
 		tier(CLASSIC_TIER, {
 			un(REMOVED_FROM_GAME, i(16072, {	-- Expert Cookbook
@@ -2748,7 +2476,7 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 			-- Grab the phase from the cache.
 			local u = recipeCacheU[o.spellID];
 			if u then
-				if o.u ~= u then
+				if not o.u then
 					print("ITEM RECIPE MISSING U: ", name, o.spellID, u, o.u);
 					o.u = u;
 				end
@@ -2823,8 +2551,8 @@ itemrecipe("Recipe: Monster Omelet", 16110, 15933);
 itemrecipe("Recipe: Spiced Chili Crab", 16111, 15915);
 itemrecipe("Recipe: Undermine Clam Chowder", 16767, 20626);
 itemrecipe("Recipe: Mithril Head Trout", 17062, 20916);
-un(FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Gingerbread Cookie", 17200, 21143, nil, true));
-un(FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Egg Nog", 17201, 21144, nil, true));
+applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Gingerbread Cookie", 17200, 21143, nil, true));
+applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Egg Nog", 17201, 21144, nil, true));
 itemrecipe("Recipe: Tender Wolf Steak", 18046, 22480);
 itemrecipe("Recipe: Thistle Tea", 18160, 9513);
 itemrecipe("Recipe: Smoked Sagefish", 21099, 25704);
@@ -2850,7 +2578,7 @@ itemrecipe("Recipe: Juicy Bear Burger", 35566, 46688, TBC_PHASE_ONE, "removed 4.
 itemrecipe("Recipe: Lynx Steak", 27685, 33276, TBC_PHASE_ONE, "added 2.0.1.6180");
 itemrecipe("Recipe: Roasted Moongraze Tenderloin", 27686, 33277, TBC_PHASE_ONE, "added 2.0.1.6180");
 itemrecipe("Recipe: Sporeling Snack", 27689, 33285, TBC_PHASE_ONE, "removed 4.2.0.10000");
-un(FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Hot Apple Cider", 34413, 45022, true, "added 2.3.0.7501"));
+applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Hot Apple Cider", 34413, 45022, true, "added 2.3.0.7501"));
 
 itemrecipe("Recipe: Buzzard Bites", 27684, 33279, TBC_PHASE_ONE);
 itemrecipe("Recipe: Ravager Dog", 27688, 33284, TBC_PHASE_ONE);
@@ -2884,10 +2612,91 @@ itemrecipe("Master Cookbook", 27736, 0--[[33359]], TBC_PHASE_ONE, true);
 
 -- #if AFTER WRATH
 -- Wrath Recipes
+itemrecipe("Recipe: Bad Clams", 43509, 58523, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Blackened Dragonfin", 43035, 57441, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Blackened Worg Steak", 43032, 57438, WRATH_PHASE_ONE);
+applyholiday(DAY_OF_THE_DEAD, itemrecipe("Recipe: Bread of the Dead", 46710, 65454, WRATH_PHASE_ONE));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Candied Sweet Potato", 46806, 66034, WRATH_PHASE_ONE));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Candied Sweet Potato", 44859, 62051, WRATH_PHASE_ONE));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Cranberry Chutney", 44858, 62049, WRATH_PHASE_ONE));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Cranberry Chutney", 46805, 66035, WRATH_PHASE_ONE));
+itemrecipe("Recipe: Critter Bites", 43029, 57435, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Cuttlesteak", 43033, 57439, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Dig Rat Stew", 44977, 6417);
+itemrecipe("Recipe: Dragonfin Filet", 43036, 57442, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Firecracker Salmon", 43024, 45568, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Fish Feast", 43017, 57423, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Gigantic Feast", 43505, 58527, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Haunted Herring", 43510, 58525, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Hearty Rhino", 43030, 57436, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Imperial Manta Steak", 43026, 45570, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Kungaloosh", 39644, 53056, WRATH_PHASE_ONE);	-- NYI: You get this directly from the washed up mage
+itemrecipe("Recipe: Last Week's Mammoth", 43508, 58521, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Mega Mammoth Meal", 43018, 45555, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Mighty Rhino Dogs", 43022, 45559, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Poached Northern Sculpin", 43023, 45567, WRATH_PHASE_ONE);
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Pumpkin Pie", 46804, 66036, WRATH_PHASE_ONE));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Pumpkin Pie", 44862, 62044, WRATH_PHASE_ONE));
+itemrecipe("Recipe: Rhinolicious Wormsteak", 43028, 57434, WRATH_PHASE_ONE);
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Slow-Roasted Turkey", 44861, 62045, WRATH_PHASE_ONE));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Slow-Roasted Turkey", 46807, 66037, WRATH_PHASE_ONE));
+itemrecipe("Recipe: Small Feast", 43506, 58528, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Snapper Extreme", 43031, 57437, WRATH_PHASE_ONE);
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Spice Bread Stuffing", 44860, 62050, WRATH_PHASE_ONE));
+applyholiday(PILGRIMS_BOUNTY, itemrecipe("Recipe: Spice Bread Stuffing", 46803, 66038, WRATH_PHASE_ONE));
+itemrecipe("Recipe: Spiced Mammoth Treats", 43034, 57440, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Spiced Worm Burger", 43020, 45557, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Spicy Blue Nettlefish", 43025, 45571, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Spicy Fried Herring", 43027, 57433, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Tasty Cupcake", 43507, 58512, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Tender Shoveltusk Steak", 43019, 45556, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Tracker Snacks", 43037, 57443, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Very Burnt Worg", 43021, 45558, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Worg Tartare", 44954, 62350, WRATH_PHASE_ONE);
+-- #endif
 
+-- #if AFTER CATA
+-- Cata Recipes
+itemrecipe("Plump Dig Rat", 78342, 6417, CATA_PHASE_ONE);
+itemrecipe("Recipe: Baked Rockfish", 65426, 88003, CATA_PHASE_ONE);
+itemrecipe("Recipe: Basilisk Liverdog", 65427, 88004, CATA_PHASE_ONE);
+itemrecipe("Recipe: Beer-Basted Crocolisk", 65429, 88005, CATA_PHASE_ONE);
+itemrecipe("Recipe: Blackbelly Sushi", 65424, 88034, CATA_PHASE_ONE);
+itemrecipe("Recipe: Broiled Dragon Feast", 62799, 88011, CATA_PHASE_ONE);
+itemrecipe("Recipe: Broiled Mountain Trout", 65411, 88012, CATA_PHASE_ONE);
+itemrecipe("Recipe: Chocolate Cookie", 65431, 88013, CATA_PHASE_ONE);
+itemrecipe("Recipe: Crocolisk Au Gratin", 65430, 88014, CATA_PHASE_ONE);
+itemrecipe("Recipe: Delicious Sagefish Tail", 65422, 88016, CATA_PHASE_ONE);
+itemrecipe("Recipe: Feathered Lure", 65408, 88017, CATA_PHASE_ONE);
+itemrecipe("Recipe: Fish Fry", 65423, 88018, CATA_PHASE_ONE);
+itemrecipe("Recipe: Fortune Cookie", 65432, 88019, CATA_PHASE_ONE);
+itemrecipe("Recipe: Grilled Dragon", 65428, 88020, CATA_PHASE_ONE);
+itemrecipe("Recipe: Hearty Seafood Soup", 65418, 88021, CATA_PHASE_ONE);
+itemrecipe("Recipe: Highland Spirits", 65415, 88022, CATA_PHASE_ONE);
+itemrecipe("Recipe: Lavascale Fillet", 65407, 88024, CATA_PHASE_ONE);
+itemrecipe("Recipe: Lavascale Minestrone", 65409, 88025, CATA_PHASE_ONE);
+itemrecipe("Recipe: Lightly Fried Lurker", 65412, 88028, CATA_PHASE_ONE);
+itemrecipe("Recipe: Lurker Lunch", 65416, 88030, CATA_PHASE_ONE);
+itemrecipe("Recipe: Mushroom Sauce Mudfish", 65420, 88031, CATA_PHASE_ONE);
+itemrecipe("Recipe: Pickled Guppy", 65417, 88033, CATA_PHASE_ONE);
+itemrecipe("Recipe: Salted Eye", 65410, 88035, CATA_PHASE_ONE);
+itemrecipe("Recipe: Scalding Murglesnout", 68688, 96133, CATA_PHASE_ONE);
+itemrecipe("Recipe: Seafood Magnifique Feast", 62800, 88036, CATA_PHASE_ONE);
+itemrecipe("Recipe: Seasoned Crab", 65413, 88037, CATA_PHASE_ONE);
+itemrecipe("Recipe: Severed Sagefish Head", 65421, 88039, CATA_PHASE_ONE);
+itemrecipe("Recipe: Skewered Eel", 65425, 88042, CATA_PHASE_ONE);
+itemrecipe("Recipe: South Island Iced Tea", 65433, 88044, CATA_PHASE_ONE);
+itemrecipe("Recipe: Starfire Espresso", 65414, 88045, CATA_PHASE_ONE);
+itemrecipe("Recipe: Tender Baked Turtle", 65419, 88046, CATA_PHASE_ONE);
+itemrecipe("Recipe: Whitecrest Gumbo", 65406, 88047, CATA_PHASE_ONE);
 -- #endif
 
 recipeCache = nil;	-- Invalidate the cache.
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-
+	filter(200, {	-- Recipe
+		-- #if AFTER WRATH
+		itemrecipe("Recipe: Shoveltusk Soup", 34126, 44438);	-- NYI, never implemented
+		itemrecipe("Recipe: Succulent Orca Stew", 39692, 45547);	-- NYI, never implemented
+		-- #endif
+	}),
 }));
