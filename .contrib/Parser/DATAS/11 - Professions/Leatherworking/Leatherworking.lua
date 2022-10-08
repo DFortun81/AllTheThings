@@ -2323,8 +2323,18 @@ profession(LEATHERWORKING, {
 			["categoryID"] = 916,
 			["groups"] = {
 				{
+					["name"] = "Dragonscale Ammo Pouch",
+					["timeline"] = { "deleted 4.0.1" },
+					["recipeID"] = 60645,
+				},
+				{
 					["name"] = "Mammoth Mining Bag",
 					["recipeID"] = 50971,
+				},
+				{
+					["name"] = "Nerubian Reinforced Quiver",
+					["timeline"] = { "deleted 4.0.1" },
+					["recipeID"] = 60647,
 				},
 				{
 					["name"] = "Pack of Endless Pockets",
@@ -2436,14 +2446,14 @@ profession(LEATHERWORKING, {
 					["name"] = "Arctic Chestpiece",
 					["recipeID"] = 50944,
 				},
-				{	-- Crusader's Dragonscale Breastplate [Alliance]
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Crusader's Dragonscale Breastplate [Alliance]
 					["recipeID"] = 67082,  -- Crusader's Dragonscale Breastplate
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Crusader's Dragonscale Breastplate [Horde]
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Crusader's Dragonscale Breastplate [Horde]
 					["recipeID"] = 67138,  -- Crusader's Dragonscale Breastplate
 					["races"] = HORDE_ONLY,
-				},
+				}),
 				{
 					["name"] = "Dark Arctic Chestpiece",
 					["recipeID"] = 51570,
@@ -2460,14 +2470,14 @@ profession(LEATHERWORKING, {
 					["name"] = "Dark Nerubian Chestpiece",
 					["recipeID"] = 60629,
 				},
-				{	-- Ensorcelled Nerubian Breastplate [Alliance]
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Ensorcelled Nerubian Breastplate [Alliance]
 					["recipeID"] = 67080,  -- Ensorcelled Nerubian Breastplate
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Ensorcelled Nerubian Breastplate [Horde]
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Ensorcelled Nerubian Breastplate [Horde]
 					["recipeID"] = 67136,  -- Ensorcelled Nerubian Breastplate
 					["races"] = HORDE_ONLY,
-				},
+				}),
 				{
 					["name"] = "Eviscerator's Chestguard",
 					["recipeID"] = 60703,
@@ -2484,22 +2494,22 @@ profession(LEATHERWORKING, {
 					["name"] = "Icy Scale Chestguard",
 					["recipeID"] = 60999,
 				},
-				{	-- Knightbane Carapace [Alliance]
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Knightbane Carapace [Alliance]
 					["recipeID"] = 67086,  -- Knightbane Carapace
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Knightbane Carapace [Horde]
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Knightbane Carapace [Horde]
 					["recipeID"] = 67142,  -- Knightbane Carapace
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Lunar Eclipse Robes [Alliance]
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Lunar Eclipse Robes [Alliance]
 					["recipeID"] = 67084,  -- Lunar Eclipse Robes
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Lunar Eclipse Robes [Horde]
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Lunar Eclipse Robes [Horde]
 					["recipeID"] = 67140,  -- Lunar Eclipse Robes
 					["races"] = HORDE_ONLY,
-				},
+				}),
 				{
 					["name"] = "Nerubian Chestguard",
 					["recipeID"] = 50956,
@@ -2542,30 +2552,30 @@ profession(LEATHERWORKING, {
 					["name"] = "Arctic Wristguards",
 					["recipeID"] = 51571,
 				},
-				{	-- Black Chitin Bracers [Alliance]
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Black Chitin Bracers [Alliance]
 					["recipeID"] = 67081,  -- Black Chitin Bracers
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Black Chitin Bracers [Horde]
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Black Chitin Bracers [Horde]
 					["recipeID"] = 67137,  -- Black Chitin Bracers
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Bracers of Swift Death [Alliance]
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Bracers of Swift Death [Alliance]
 					["recipeID"] = 67087,  -- Bracers of Swift Death
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Bracers of Swift Death [Horde]
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Bracers of Swift Death [Horde]
 					["recipeID"] = 67139,  -- Bracers of Swift Death
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Crusader's Dragonscale Bracers [Alliance]
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Crusader's Dragonscale Bracers [Alliance]
 					["recipeID"] = 67083,  -- Crusader's Dragonscale Bracers
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Crusader's Dragonscale Bracers [Horde]
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Crusader's Dragonscale Bracers [Horde]
 					["recipeID"] = 67143,  -- Crusader's Dragonscale Bracers
 					["races"] = HORDE_ONLY,
-				},
+				}),
 				{
 					["name"] = "Eaglebane Bracers",
 					["recipeID"] = 60652,
@@ -2586,14 +2596,14 @@ profession(LEATHERWORKING, {
 					["name"] = "Iceborne Wristguards",
 					["recipeID"] = 60607,
 				},
-				{	-- Moonshadow Armguards [Alliance]
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Moonshadow Armguards [Alliance]
 					["recipeID"] = 67085,  -- Moonshadow Armguards
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Moonshadow Armguards [Horde]
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Moonshadow Armguards [Horde]
 					["recipeID"] = 67141,  -- Moonshadow Armguards
 					["races"] = HORDE_ONLY,
-				},
+				}),
 				{
 					["name"] = "Nerubian Bracers",
 					["recipeID"] = 60622,
@@ -2662,22 +2672,22 @@ profession(LEATHERWORKING, {
 					["name"] = "Arctic Belt",
 					["recipeID"] = 50949,
 				},
-				{
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Belt of Arctic Life",
 					["recipeID"] = 63200,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Belt of Dragons",
 					["recipeID"] = 63194,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Blue Belt of Chaos",
 					["recipeID"] = 63196,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Death-warmed Belt",
 					["recipeID"] = 63198,
-				},
+				}),
 				{
 					["name"] = "Eviscerator's Waistguard",
 					["recipeID"] = 60706,
@@ -2732,10 +2742,10 @@ profession(LEATHERWORKING, {
 					["name"] = "Arctic Leggings",
 					["recipeID"] = 50945,
 				},
-				{
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Bladeborn Leggings",
 					["recipeID"] = 70556,
-				},
+				}),
 				{
 					["name"] = "Dark Arctic Leggings",
 					["recipeID"] = 51569,
@@ -2752,10 +2762,10 @@ profession(LEATHERWORKING, {
 					["name"] = "Dark Nerubian Leggings",
 					["recipeID"] = 60627,
 				},
-				{
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Draconic Bonesplinter Legguards",
 					["recipeID"] = 70560,
-				},
+				}),
 				{
 					["name"] = "Earthgiving Legguards",
 					["recipeID"] = 60760,
@@ -2780,14 +2790,14 @@ profession(LEATHERWORKING, {
 					["name"] = "Leggings of Visceral Strikes",
 					["recipeID"] = 60660,
 				},
-				{
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Legwraps of Unleashed Nature",
 					["recipeID"] = 70554,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Lightning-Infused Leggings",
 					["recipeID"] = 70558,
-				},
+				}),
 				{
 					["name"] = "Nerubian Legguards",
 					["recipeID"] = 50957,
@@ -2822,14 +2832,14 @@ profession(LEATHERWORKING, {
 					["name"] = "Black Chitinguard Boots",
 					["recipeID"] = 51568,
 				},
-				{
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Blessed Cenarion Boots",
 					["recipeID"] = 70555,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Boots of Living Scale",
 					["recipeID"] = 63195,
-				},
+				}),
 				{
 					["name"] = "Boots of Wintry Endurance",
 					["recipeID"] = 63201,
@@ -2846,22 +2856,22 @@ profession(LEATHERWORKING, {
 					["name"] = "Earthgiving Boots",
 					["recipeID"] = 60761,
 				},
-				{
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Earthsoul Boots",
 					["recipeID"] = 70559,
-				},
+				}),
 				{
 					["name"] = "Eviscerator's Treads",
 					["recipeID"] = 60712,
 				},
-				{
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Footpads of Impending Death",
 					["recipeID"] = 70557,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Footpads of Silence",
 					["recipeID"] = 63199,
-				},
+				}),
 				{
 					["name"] = "Frostscale Boots",
 					["recipeID"] = 50954,
@@ -2878,10 +2888,10 @@ profession(LEATHERWORKING, {
 					["name"] = "Jormscale Footpads",
 					["recipeID"] = 60666,
 				},
-				{
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Lightning Grounded Boots",
 					["recipeID"] = 63197,
-				},
+				}),
 				{
 					["name"] = "Nerubian Boots",
 					["recipeID"] = 50960,
@@ -2898,10 +2908,10 @@ profession(LEATHERWORKING, {
 					["name"] = "Revenant's Treads",
 					["recipeID"] = 60757,
 				},
-				{
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Rock-Steady Treads",
 					["recipeID"] = 70561,
-				},
+				}),
 				{
 					["name"] = "Scaled Icewalkers",
 					["recipeID"] = 60630,
@@ -8063,6 +8073,96 @@ applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Gloves of the Greatfathe
 applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Winter Boots", 34262, 44953, FEAST_OF_WINTER_VEIL));
 -- #endif
 
+-- #if AFTER WRATH
+-- Wrath Recipes
+itemrecipe("Pattern: Belt of Arctic Life", 45100, 63200, WRATH_PHASE_TWO);
+itemrecipe("Pattern: Belt of Dragons", 45094, 63194, WRATH_PHASE_TWO);
+itemrecipe("Pattern: Black Chitin Bracers", 47646, 67137, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Black Chitin Bracers", 47629, 67081, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Bladeborn Leggings", 49959, 70556, WRATH_PHASE_FOUR);
+itemrecipe("Pattern: Blessed Cenarion Boots", 49958, 70555, WRATH_PHASE_FOUR);
+itemrecipe("Pattern: Blue Belt of Chaos", 45096, 63196, WRATH_PHASE_TWO);
+itemrecipe("Pattern: Boots of Living Scale", 45095, 63195, WRATH_PHASE_TWO);
+itemrecipe("Pattern: Boots of Wintry Endurance", 45101, 63201, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Bracers of Swift Death", 47647, 67139, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Bracers of Swift Death", 47635, 67087, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Crusader's Dragonscale Bracers", 47648, 67143, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Crusader's Dragonscale Bracers", 47631, 67083, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Crusader's Dragonscale Breastplate", 47630, 67082, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Crusader's Dragonscale Breastplate", 47649, 67138, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Dark Arctic Boots", 38597, 51568, WRATH_PHASE_ONE);	-- NYI, learned from trainer
+itemrecipe("Pattern: Dark Arctic Chestpiece", 38599, 51570, WRATH_PHASE_ONE);	-- NYI, learned from trainer
+itemrecipe("Pattern: Dark Arctic Leggings", 38598, 51569, WRATH_PHASE_ONE);	-- NYI, learned from trainer
+itemrecipe("Pattern: Death-warmed Belt", 45098, 63198, WRATH_PHASE_TWO);
+itemrecipe("Pattern: Draconic Bonesplinter Legguards", 49965, 70560, WRATH_PHASE_FOUR);
+itemrecipe("Pattern: Dragonscale Ammo Pouch", 44511, 60645, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Earthgiving Boots", 44553, 60761, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Earthgiving Legguards", 44552, 60760, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Earthsoul Boots", 49963, 70559, WRATH_PHASE_FOUR);
+itemrecipe("Pattern: Ensorcelled Nerubian Breastplate", 47628, 67080, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Ensorcelled Nerubian Breastplate", 47650, 67136, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Eviscerator's Bindings", 44516, 60704, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Eviscerator's Chestguard", 44515, 60703, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Eviscerator's Facemask", 44513, 60697, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Eviscerator's Gauntlets", 44517, 60705, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Eviscerator's Legguards", 44519, 60711, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Eviscerator's Shoulderpads", 44514, 60702, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Eviscerator's Treads", 44520, 60712, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Eviscerator's Waistguard", 44518, 60706, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Footpads of Impending Death", 49961, 70557, WRATH_PHASE_FOUR);
+itemrecipe("Pattern: Footpads of Silence", 45099, 63199, WRATH_PHASE_TWO);
+itemrecipe("Pattern: Giantmaim Bracers", 44547, 60755, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Giantmaim Legguards", 44546, 60754, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Icy Scale Belt", 44588, 61000, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Icy Scale Boots", 44589, 61002, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Icy Scale Chestguard", 44587, 60999, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Knightbane Carapace", 47634, 67086, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Knightbane Carapace", 47651, 67142, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Legwraps of Unleashed Nature", 49957, 70554, WRATH_PHASE_FOUR);
+itemrecipe("Pattern: Lightning Grounded Boots", 45097, 63197, WRATH_PHASE_TWO);
+itemrecipe("Pattern: Lightning-Infused Leggings", 49962, 70558, WRATH_PHASE_FOUR);
+itemrecipe("Pattern: Lunar Eclipse Robes", 47652, 67140, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Lunar Eclipse Robes", 47632, 67084, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Mammoth Mining Bag", 44510, 50971, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Moonshadow Armguards", 47653, 67141, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Moonshadow Armguards", 47633, 67085, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Nerubian Reinforced Quiver", 44512, 60647, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Overcast Belt", 44526, 60723, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Overcast Boots", 44528, 60727, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Overcast Bracers", 44524, 60720, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Overcast Chestguard", 44523, 60718, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Overcast Handwraps", 44525, 60721, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Overcast Headguard", 44521, 60715, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Overcast Leggings", 44527, 60725, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Overcast Spaulders", 44522, 60716, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Polar Boots", 44586, 60998, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Polar Cord", 44585, 60997, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Polar Vest", 44584, 60996, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Revenant's Breastplate", 44548, 60756, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Revenant's Treads", 44549, 60757, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Rock-Steady Treads", 49966, 70561, WRATH_PHASE_FOUR);
+itemrecipe("Pattern: Stormhide Belt", 44543, 60750, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Stormhide Crown", 44538, 60743, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Stormhide Grips", 44542, 60749, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Stormhide Hauberk", 44540, 60747, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Stormhide Legguards", 44544, 60751, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Stormhide Shoulders", 44539, 60746, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Stormhide Stompers", 44545, 60752, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Stormhide Wristguards", 44541, 60748, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Swiftarrow Belt", 44535, 60734, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Swiftarrow Boots", 44537, 60737, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Swiftarrow Bracers", 44533, 60731, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Swiftarrow Gauntlets", 44534, 60732, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Swiftarrow Hauberk", 44532, 60730, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Swiftarrow Helm", 44530, 60728, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Swiftarrow Leggings", 44536, 60735, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Swiftarrow Shoulderguards", 44531, 60729, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Trapper's Traveling Pack", 44509, 50970, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Trollwoven Girdle", 44551, 60759, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Trollwoven Spaulders", 44550, 60758, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Windripper Boots", 44932, 62176, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Windripper Leggings", 44933, 62177, WRATH_PHASE_ONE);
+-- #endif
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
