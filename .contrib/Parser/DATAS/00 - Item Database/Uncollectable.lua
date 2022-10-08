@@ -246,6 +246,7 @@ i(117013);	-- Wand of Lightning Shield
 i(180697);	-- Wing Commanders Insignia
 i(85266);	-- Winter Blossom Tree
 i(128851);	-- Roasted juicycrunch carrots
+i(172043);	-- Feast of Gluttonous Hedonism
 
 
 -- "Mount Equipment"

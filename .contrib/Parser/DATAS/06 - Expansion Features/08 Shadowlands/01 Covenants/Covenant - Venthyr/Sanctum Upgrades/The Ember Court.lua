@@ -47,7 +47,6 @@ local DORMAN_GROUP = {
 	i(180628),	-- Pearlwing Heron (PET!)
 	i(179514),	-- Ripvine Saber
 	i(179548),	-- Elderwood Gavel
-	i(172043),	-- Feast of Gluttonous Hedonism
 };
 local VOLE_GROUP = {
 	i(181168),	-- Corpulent Bonetusk (PET!)
