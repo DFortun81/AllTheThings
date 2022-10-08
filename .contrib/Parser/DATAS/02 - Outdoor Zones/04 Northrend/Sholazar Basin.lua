@@ -32,7 +32,9 @@ local OnTooltipForFrenzyheart = [[function(t)
 			if f and #f > 0 then tinsert(rejek, f[1]); end
 			t.rejek = rejek;
 		end
-		GameTooltip:AddDoubleLine("Complete 1 of 4 quests offered by Rejek:", _.L[t.rejek[1].saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. rejekRep .. " Rep");
+		local completedAny = false;
+		for i,quest in ipairs(t.rejek) do if quest.saved then completedAny = true; break; end end
+		GameTooltip:AddDoubleLine("Complete 1 of 4 quests offered by Rejek:", _.L[completedAny and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. rejekRep .. " Rep");
 		for i,quest in ipairs(t.rejek) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
 		
 		local vekgarRep = isHuman and 770 or 700;
@@ -99,7 +101,9 @@ local OnTooltipForOracles = [[function(t)
 			if f and #f > 0 then tinsert(soonee, f[1]); end
 			t.soonee = soonee;
 		end
-		GameTooltip:AddDoubleLine("Complete 1 of 4 quests offered by Oracle Soo-nee:", _.L[t.soonee[1].saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. sooneeRep .. " Rep");
+		local completedAny = false;
+		for i,quest in ipairs(t.soonee) do if quest.saved then completedAny = true; break; end end
+		GameTooltip:AddDoubleLine("Complete 1 of 4 quests offered by Oracle Soo-nee:", _.L[completedAny and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. sooneeRep .. " Rep");
 		for i,quest in ipairs(t.soonee) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
 		
 		local repPerDay = appeasingRep + soodowRep + sooneeRep;
