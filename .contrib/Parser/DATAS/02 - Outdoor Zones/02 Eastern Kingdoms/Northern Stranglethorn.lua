@@ -2237,6 +2237,22 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.1.0.13726" },
 					["races"] = HORDE_ONLY,
 				}),
+				q(5148, {	-- Tribal Leatherworking (H)
+					["qg"] = 7871,	-- Se'Jib
+					["altQuests"] = {
+						5145,	-- Dragonscale Leatherworking
+						5146,	-- Elemental Leatherworking
+					},
+					["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
+					["timeline"] = { "removed 4.0.1" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 8214, 1 },	-- Wild Leather Helmet
+						{ "i", 8211, 1 },	-- Wild Leather Vest
+					},
+					["lvl"] = 40,
+				}),
 				q(205, {	-- Troll Witchery
 					["qg"] = 739,	-- Brother Nimetz
 					["sourceQuest"] = 207,	-- Kurzen's Mystery

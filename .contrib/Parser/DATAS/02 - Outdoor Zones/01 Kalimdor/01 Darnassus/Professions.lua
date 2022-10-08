@@ -144,20 +144,6 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(LEATHERWORKING, {
-					n(QUESTS, {
-						q(1582, {	-- Moonglow Vest
-							["provider"] = { "n", 6034 },	-- Lotherias
-							["coord"] = { 60.4, 37.0, DARNASSUS },
-							["requireSkill"] = LEATHERWORKING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 8,
-							["g"] = {
-								i(6710),	-- Pattern: Moonglow Vest
-							},
-						}),
-					}),
-				}),
 			}),
 		}),
 	}),

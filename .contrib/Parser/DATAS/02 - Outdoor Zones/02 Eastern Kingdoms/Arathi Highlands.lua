@@ -455,6 +455,24 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(5146, {	-- Elemental Leatherworking (H)
+					["qg"] = 7869,	-- Brumn Winterhoof
+					["altQuests"] = {
+						5145,	-- Dragonscale Leatherworking
+						5148,	-- Tribal Leatherworking
+					},
+					["coord"] = { 28.2, 45.0, ARATHI_HIGHLANDS },
+					["timeline"] = { "removed 4.0.1" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 7081, 2 },	-- Breath of Wind
+						{ "i", 7075, 2 },	-- Core of Earth
+						{ "i", 7079, 2 },	-- Globe of Water
+						{ "i", 7077, 2 },	-- Heart of Fire
+					},
+					["lvl"] = 40,
+				}),
 				q(26022, {	-- First Blood
 					["qg"] = 41949,	-- Dark Ranger Alina
 					["sourceQuest"] = 28572,	-- Warchief's Command: Arathi Highlands!

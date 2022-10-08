@@ -97,6 +97,25 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6973)),	-- Fire Hardened Leggings
 					},
 				}),
+				q(1582, {	-- Moonglow Vest
+					["qg"] = 6034,	-- Lotherias
+					["requireSkill"] = LEATHERWORKING,
+					-- #if AFTER CATA
+					["coord"] = { 60.4, 37.0, DARNASSUS },
+					-- #else
+					["coord"] = { 64.4, 22.2, DARNASSUS },
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2309, 5 },	-- Embossed Leather Boots
+						{ "i", 2310, 5 },	-- Embossed Leather Cloak
+						{ "i", 4239, 1 },	-- Embossed Leather Gloves
+					},
+					["lvl"] = 8,
+					["groups"] = {
+						i(6710),	-- Pattern: Moonglow Vest
+					},
+				}),
 				q(26756, {	-- Nessa Shadowsong
 					["provider"] = { "n", 4241 },	-- Mydrannul
 					["coord"] = { 64.6, 53.0, DARNASSUS },
