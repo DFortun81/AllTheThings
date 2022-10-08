@@ -18,8 +18,11 @@ root("Promotions", {
 			}),
 			-- SEASON 3
 			i(187957, {		-- Encrypted Banner of the Opportune (TOY!)
+				["timeline"] = { 
+					"added 9.2.0", 
+					"removed 9.2.0.43114", -- 8th April 2022, 1 day after the event ended.
+				},	
 				["description"] = "Mythic Dungeon International: SL Season 3\n\nThe Mythic Dungeon International (MDI) returns with its global competitions for its 6th year, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Encrypted Banner of the Opportune to use in-game!\nSign-ups close 28 March 2022 and The Proving Grounds are on 30 March - 5 April (US).",
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(95474, {	-- Jewel of the Firelord
 				["timeline"] = { "added 9.2.5" },
@@ -41,6 +44,11 @@ root("Promotions", {
 				["u"] = REMOVED_FROM_GAME, -- Removed again on August 24th 2022
 			}),
 			i(187958, {		-- Shrouded Banner of the Opportune (TOY!)
+				["timeline"] = { 
+					"added 9.2.7", 
+					"removed 9.2.7.45114",	-- 16th August 2022, 1 day after the event ended.
+					"added 9.2.7.45745", 
+				},	
 				["description"] = "Break the Meta: SL Season 4\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 4 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFRaider.io/break-the-meta-2022|r and complete 2 or more eligible timed keystones at level 15 or higher during BTM S4, and the Shrouded Banner of the Opportune will be automatically added to your collection in-game within 30 days of the conclusion of the event.\n\nThe Event starts on October 4th for US, October 5th for EU & October 6th for KR/TW & lasts for the entire reset of your region.\n\nThis was previously available through The Great Push: SL Season 4.",
 				-- ["u"] = REMOVED_FROM_GAME,
 			}),
