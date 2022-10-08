@@ -150,6 +150,16 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 				}),
 			},
 		}),
+		i(170184, {	-- Ancient Reefwalker Bark
+			["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 experience for each of your faction's bodyguards.",
+			["repeatable"] = true,
+			["questID"] = 56969,
+			["g"] = {
+				crit(38, {	-- Ancient Reefwalker Bark
+					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+				}),
+			},
+		}),
 		i(170188, {	-- Barnacled Bag of Goods
 			["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 				145346,	-- Kil'karrok Commander
@@ -174,6 +184,17 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 				crit(48, {	-- Brightspine Shell
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
+			},
+		}),
+		i(168155, {	-- Chum
+			["crs"] = {	-- drops from additional mobs. this is all > 1% on WH
+				153310,	-- Qalina, Spear of Ice
+				153309,	-- Alzana, Arrow of Thunder
+				153314,	-- Aldrantiss
+				153312,	-- Kyx'zhul the Deepspeaker
+				153315,	-- Eldanar
+				153313,	-- Vyz'olgo the Mind-Taker
+				152756,	-- Daggertooth Terror
 			},
 		}),
 		i(170167, {	-- Eel Filet
@@ -306,6 +327,7 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 				i(169333),	-- Strange Volcanic Rock
 			},
 		}),
+		i(168161),	-- Molted Shell
 		i(170174, {	-- Muck Slime
 			["crs"] = {	-- may drop from additional mobs, or chests.  check back and add crs as appropriate.
 				152792,	-- Prismatic Spireshell
@@ -368,49 +390,39 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 				}),
 			},
 		}),
+		i(169370, {	-- Scalebrood Hydra (PET!)
+			crit(7, {	-- Scalebrood Hydra
+				["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+			}),
+		}),
 		i(167077, {	-- Scrying Stone
 			o(322413, {	-- Glimmering Chest
-				i(168161),	-- Molted Shell
-				i(170189),	-- Blind Eye
-				i(170079),	-- Abyssal Conch
-				i(170081),	-- Abyssal Conch (A)
-				i(169945),	-- Naga Deployment Orders
-				i(170472),	-- Encrusted Coin
-				i(170191),	-- Skeletal Hand
-				i(170177),	-- Exposed Fish
-				i(170170),	-- Fermented Deviate Fish
-				i(169351),	-- Sandclaw Nestseeker
-				i(170186),	-- Abyss Pearl
-				i(170192),	-- Mudwrap
-				i(170194),	-- Storm Totem
-				i(170178),	-- Alpha Fin
-				i(169478, {	-- Benthic Bracers
-					["sym"] = { { "fill" } },	-- simply fill this item
-				}),
-				i(169480, {	-- Benthic Chestguard
-					["sym"] = { { "fill" } },	-- simply fill this item
-				}),
-				i(169481, {	-- Benthic Cloak
-					["sym"] = { { "fill" } },	-- simply fill this item
-				}),
-				i(169485, {	-- Benthic Gauntlets
-					["sym"] = { { "fill" } },	-- simply fill this item
-				}),
-				i(169477, {	-- Benthic Girdle
-					["sym"] = { { "fill" } },	-- simply fill this item
-				}),
-				i(169479, {	-- Benthic Helm
-					["sym"] = { { "fill" } },	-- simply fill this item
-				}),
-				i(169482, {	-- Benthic Leggings
-					["sym"] = { { "fill" } },	-- simply fill this item
-				}),
-				i(169484, {	-- Benthic Spaulders
-					["sym"] = { { "fill" } },	-- simply fill this item
-				}),
-				i(169483, {	-- Benthic Treads
-					["sym"] = { { "fill" } },	-- simply fill this item
-				}),
+				-- Symlink in other Zone Drops instead of Sourcing again
+				["sym"] = {{"select","itemID",
+					168161,	-- Molted Shell
+					170189,	-- Blind Eye
+					170081,	-- Abyssal Conch (A)
+					170079,	-- Abyssal Conch (H)
+					169945,	-- Naga Deployment Orders
+					170472,	-- Encrusted Coin
+					170191,	-- Skeletal Hand
+					170177,	-- Exposed Fish
+					170170,	-- Fermented Deviate Fish
+					169351,	-- Sandclaw Nestseeker
+					170186,	-- Abyss Pearl
+					170192,	-- Mudwrap
+					170194,	-- Storm Totem
+					170178,	-- Alpha Fin
+					169478,	-- Benthic Bracers
+					169480,	-- Benthic Chestguard
+					169481,	-- Benthic Cloak
+					169485,	-- Benthic Gauntlets
+					169477,	-- Benthic Girdle
+					169479,	-- Benthic Helm
+					169482,	-- Benthic Leggings
+					169484,	-- Benthic Spaulders
+					169483,	-- Benthic Treads
+				}},
 			}),
 		}),
 		i(170200, {	-- Seastorm Totem

@@ -134,7 +134,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				},
 			}),
 			n(141985, {	-- Herald Zaxuthril
-				["questID"] = 50075,
+				-- ["questID"] = 50075,	-- TODO verify
 				["coord"] = { 71.48, 54.26, STORMSONG_VALLEY },
 			}),
 			n(141039, {	-- Ice Sickle

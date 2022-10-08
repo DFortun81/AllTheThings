@@ -2,25 +2,34 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
+-- One-Time Anniversary Content
 root("WorldEvents", n(TWELFTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, },{
 	ach(10741),	-- 12th Anniversary
 	n(MAILBOX, {
 		i(139284, {	-- Anniversary Gift
 			i(139285),	-- Celebration Package
-			q(43472, {	-- The Historians
-				["provider"] = { "i", 139410 },	-- Letter from the Timewalker [Horde]
-				["coord"] = { 36.4, 74.4, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["isYearly"] = true,
-			}),
-			q(43471, {	-- The Historians
-				["provider"] = { "i", 139409 },	-- Letter from the Timewalker [Alliance]
-				["coord"] = { 84.6, 25.0, STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["isYearly"] = true,
-			}),
+			i(139410),	-- Letter from the Timewalker [Horde]
+			i(139409),	-- Letter from the Timewalker [Alliance]
 		}),
 	}),
+	n(QUESTS, {
+		q(43472, {	-- The Historians
+			["provider"] = { "i", 139410 },	-- Letter from the Timewalker [Horde]
+			["coord"] = { 36.4, 74.4, ORGRIMMAR },
+			["races"] = HORDE_ONLY,
+			["isYearly"] = true,
+		}),
+		q(43471, {	-- The Historians
+			["provider"] = { "i", 139409 },	-- Letter from the Timewalker [Alliance]
+			["coord"] = { 84.6, 25.0, STORMWIND_CITY },
+			["races"] = ALLIANCE_ONLY,
+			["isYearly"] = true,
+		}),
+	}),
+})));
+
+-- Yearly Anniversary Content
+root("WorldEvents", n(TWELFTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 	n(QUESTS, {
 		-- Correct answers is in the bottom
 		q(43461, {	-- A Time to Reflect
@@ -87,6 +96,7 @@ root("WorldEvents", n(TWELFTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAM
 		}),
 	}),
 })));
+
 --[[
 Quiz Answers:
 What was the name of Illidian's jailer? Maiev Shadowsong

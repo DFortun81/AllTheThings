@@ -1,4 +1,4 @@
-profession(ENCHANTING, {
+profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 	tier(CLASSIC_TIER, {
 		r(7411, {	-- Enchanting (Apprentice)
 			["collectible"] = false,
@@ -1353,7 +1353,7 @@ profession(ENCHANTING, {
 			})),
 		}),
 	}))),
-	applyclassicphase(SL_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
 		r(309832),	-- Shadowlands Enchanting
 		cat(1365, {	-- Boot Enchantments
 			r(309532),	-- Agile Soulwalker
@@ -1430,7 +1430,7 @@ profession(ENCHANTING, {
 			r(309623),	-- Sinful Revelation
 		}),
 	}))),
-});
+}));
 
 -- Enchanting Item Database
 local itemDB = root("ItemDB", {});
@@ -1443,7 +1443,7 @@ local function cacheRecipes(g)
 		if g.g then cacheRecipes(g.g); end
 		local spellID = g.spellID or g.recipeID;
 		if spellID then
-			recipeCache[spellID] = true; 
+			recipeCache[spellID] = true;
 			if g.u then recipeCacheU[spellID] = g.u; end
 		end
 		for i,o in ipairs(g) do
@@ -1477,7 +1477,7 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 		o.name = name;
 	end
 	itemDB[itemID] = phase and applyclassicphase(phase, o) or o;
-	
+
 	-- Ensure that this recipe's spellID exists in the profession database.
 	if recipeCache and type(timeline) ~= "boolean" then
 		if recipeCache[o.spellID] then

@@ -70,29 +70,13 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["questID"] = 56281,
 			["isDaily"] = true,
 			["coord"] = { 58.6, 53.2, NAZJATAR },
+			["sym"] = {{"select","itemID",
+				170184,	-- Ancient Reefwalker Bark
+				170183,	-- Reefwalker Bark
+			}},
 			["g"] = {
 				crit(4, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
-				}),
-				i(170184, {	-- Ancient Reefwalker Bark
-					["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 reputation with each of your faction's bodyguards.",
-					["repeatable"] = true,
-					["questID"] = 56969,
-					["g"] = {
-						crit(38, {	-- Ancient Reefwalker Bark
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					},
-				}),
-				i(170183, {	-- Reefwalker Bark
-					["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
-					["repeatable"] = true,
-					["questID"] = 56970,	-- Reefwalker Bark (while some of the other items have separate Alliane/Horde questIDs, this one is shared)
-					["g"] = {
-						crit(39, {	-- Reefwalker Bark
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					},
 				}),
 			},
 		}),
@@ -330,29 +314,13 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["coord"] = { 50.2, 69.6, NAZJATAR },
 			["isDaily"] = true,
 			["description"] = "Use a |cFFFFD700Prismatic Crystal|r to charm a |cFFFFD700Muck Slug|r and bring it to Kelpwillow to activate him.",
+			["sym"] = {{"select","itemID",
+				170184,	-- Ancient Reefwalker Bark
+				170183,	-- Reefwalker Bark
+			}},
 			["g"] = {
 				crit(15, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
-				}),
-				i(170184, {	-- Ancient Reefwalker Bark
-					["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 reputation with each of your faction's bodyguards.",
-					["repeatable"] = true,
-					["questID"] = 56969,
-					["g"] = {
-						crit(38, {	-- Ancient Reefwalker Bark
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					},
-				}),
-				i(170183, {	-- Reefwalker Bark
-					["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
-					["repeatable"] = true,
-					["questID"] = 56970,	-- Reefwalker Bark (while some of the other items have separate Alliane/Horde questIDs, this one is shared)
-					["g"] = {
-						crit(39, {	-- Reefwalker Bark
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					},
 				}),
 			},
 		}),
@@ -446,29 +414,13 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["coord"] = { 78.2, 25.0, NAZJATAR },
 			["isDaily"] = true,
 			["description"] = "Summon a |cFFFFD700Drowned Hatchling|r battle pet to activate. You can purchase the pet from |cFFFFD700Feylana the Handler|r for 40 Prismatic Manapearls.",
+			["sym"] = {{"select","itemID",
+				170184,	-- Ancient Reefwalker Bark
+				170183,	-- Reefwalker Bark
+			}},
 			["g"] = {
 				crit(19, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
-				}),
-				i(170184, {	-- Ancient Reefwalker Bark
-					["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 reputation with each of your faction's bodyguards.",
-					["repeatable"] = true,
-					["questID"] = 56969,
-					["g"] = {
-						crit(38, {	-- Ancient Reefwalker Bark
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					},
-				}),
-				i(170183, {	-- Reefwalker Bark
-					["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
-					["repeatable"] = true,
-					["questID"] = 56970,	-- Reefwalker Bark (while some of the other items have separate Alliane/Horde questIDs, this one is shared)
-					["g"] = {
-						crit(39, {	-- Reefwalker Bark
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					},
 				}),
 			},
 		}),
@@ -571,23 +523,13 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["questID"] = 56292,
 			["isDaily"] = true,
 			["coord"] = { 35.6, 41.2, NAZJATAR },
+			["sym"] = {{"select","itemID",
+				170185,	-- Intact Naga Skeleton
+				169370,	-- Scalebrood Hydra (PET!)
+			}},
 			["g"] = {
 				crit(25, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
-				}),
-				i(170185, {	-- Intact Naga Skeleton
-					["repeatable"] = true,
-					["questID"] = 57138,
-					["g"] = {
-						crit(37, {	-- Intact Naga Skeleton
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					},
-				}),
-				i(169370, {	-- Scalebrood Hydra (PET!)
-					crit(7, {	-- Scalebrood Hydra
-						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-					}),
 				}),
 			},
 		}),
@@ -596,23 +538,13 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["questID"] = 56293,
 			["coord"] = { 27.2, 37.1, NAZJATAR },
 			["isDaily"] = true,
+			["sym"] = {{"select","itemID",
+				170185,	-- Intact Naga Skeleton
+				169370,	-- Scalebrood Hydra (PET!)
+			}},
 			["g"] = {
 				crit(26, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
-				}),
-				i(170185, {	-- Intact Naga Skeleton
-					["repeatable"] = true,
-					["questID"] = 57138,
-					["g"] = {
-						crit(37, {	-- Intact Naga Skeleton
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					},
-				}),
-				i(169370, {	-- Scalebrood Hydra (PET!)
-					crit(7, {	-- Scalebrood Hydra
-						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-					}),
 				}),
 			},
 		}),
@@ -621,24 +553,13 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["questID"] = 56294,
 			["coord"] = { 28.6, 46.6, NAZJATAR },
 			["isDaily"] = true,
+			["sym"] = {{"select","itemID",
+				170185,	-- Intact Naga Skeleton
+				169370,	-- Scalebrood Hydra (PET!)
+			}},
 			["g"] = {
 				crit(27, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
-				}),
-				i(168155),	-- Chum
-				i(170185, {	-- Intact Naga Skeleton
-					["repeatable"] = true,
-					["questID"] = 57138,
-					["g"] = {
-						crit(37, {	-- Intact Naga Skeleton
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					},
-				}),
-				i(169370, {	-- Scalebrood Hydra (PET!)
-					crit(7, {	-- Scalebrood Hydra
-						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-					}),
 				}),
 			},
 		}),
@@ -797,29 +718,13 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			},
 			["isDaily"] = true,
 			["description"] = "Kill a |cFFFFD700Staghorn Reefwalker|r on top of Urduu to activate him.  |cFFDD3333Before you start kiting make sure any followers are deactivated by right-clicking the buff to dismiss.",
+			["sym"] = {{"select","itemID",
+				170184,	-- Ancient Reefwalker Bark
+				170183,	-- Reefwalker Bark
+			}},
 			["g"] = {
 				crit(36, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
-				}),
-				i(170184, {	-- Ancient Reefwalker Bark
-					["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 experience for each of your faction's bodyguards.",
-					["repeatable"] = true,
-					["questID"] = 56969,
-					["g"] = {
-						crit(38, {	-- Ancient Reefwalker Bark
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					},
-				}),
-				i(170183, {	-- Reefwalker Bark
-					["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
-					["repeatable"] = true,
-					["questID"] = 56970,	-- Reefwalker Bark (while some of the other items have separate Alliane/Horde questIDs, this one is shared)
-					["g"] = {
-						crit(39, {	-- Reefwalker Bark
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
-					},
 				}),
 			},
 		}),

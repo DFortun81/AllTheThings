@@ -56,47 +56,6 @@ _.Zones =
 						}),
 					},
 				},
-				i(147775, {	-- Nether Portal Disruptor
-					["description"] = "Can be used to summon rare elite mobs from Nether Portals while the Nether Disruptor is up. You can only kill 50 elites per day. It is consumed on use.\n\nCan be bought or sold on the Auction House.",
-					["questID"] = 47700,	-- triggers after killing your 50 elites for the day
-					["isDaily"] = true,
-					["coords"] = {
-						{ 68.5, 26.0, BROKEN_SHORE },
-						{ 36.0, 23.5, BROKEN_SHORE },
-						{ 56.5, 35.3, BROKEN_SHORE },
-						{ 55.4, 26.3, BROKEN_SHORE },
-						{ 54.1, 41.4, BROKEN_SHORE },
-						{ 38.2, 45.4, BROKEN_SHORE },
-						{ 62.3, 41.2, BROKEN_SHORE },
-						{ 55.0, 46.0, BROKEN_SHORE },
-						{ 52.2, 10.2, BROKEN_SHORE },
-						{ 41.5, 49.2, BROKEN_SHORE },
-						{ 36.2, 57.5, BROKEN_SHORE },
-						{ 57.3, 56.5, BROKEN_SHORE },
-						{ 63.2, 26.2, BROKEN_SHORE },
-						{ 66.1, 42.5, BROKEN_SHORE },
-						{ 74.5, 34.4, BROKEN_SHORE },
-						{ 44.0, 42.4, BROKEN_SHORE },
-						{ 47.0, 67.0, BROKEN_SHORE },
-						{ 42.2, 18.2, BROKEN_SHORE },
-						{ 44.5, 77.0, BROKEN_SHORE },
-						{ 54.2, 68.9, BROKEN_SHORE },
-						{ 84.0, 54.0, BROKEN_SHORE },
-						{ 62.0, 57.0, BROKEN_SHORE },
-						{ 86.0, 27.0, BROKEN_SHORE },
-						{ 66.0, 32.5, BROKEN_SHORE },
-						{ 74.0, 30.6, BROKEN_SHORE },
-					},
-					["g"] = {
-						n(121092),	-- Anomalous Observer
-						n(121049),	-- Baleful Knight-Captain
-						n(121090),	-- Demented Shivarra
-						n(121073),	-- Deranged Succubus
-						n(121077),	-- Lambent Felhunter
-						n(121056),	-- Malformed Terrorguard
-						n(121108),	-- Ruinous Overfiend
-					},
-				}),
 				n(121016, {	-- Aqueux
 					["questID"] = 46953,	-- Rare Elite 18
 					["isDaily"] = true,
