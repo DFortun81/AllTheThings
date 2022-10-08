@@ -9,6 +9,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			ach(15991, {	-- Dragon Glyphs: Crumbling Life Archway
 				["coord"] = { 57.7, 55.0, THE_WAKING_SHORES },
 			}),
+			ach(16669, {	-- Dragon Glyphs: Flashfrost Enclave
+				["coord"] = { 58.1, 78.8, THE_WAKING_SHORES },
+			}),
 			ach(16051, {	-- Dragon Glyphs: Dragonheart Outpost
 				["coord"] = { 69.2, 46.4, THE_WAKING_SHORES },
 			}),
@@ -32,6 +35,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			}),
 			ach(15985, {	-- Dragon Glyphs: Skytop Observatory
 				["coord"] = { 75.3, 57.0, THE_WAKING_SHORES },
+			}),
+			ach(16668, {	-- Dragon Glyphs: Skytop Observatory Rostrum
+				["coord"] = { 74.3, 57.6, THE_WAKING_SHORES },
 			}),
 			ach(15989, {	-- Dragon Glyphs: The Overflowing Spring
 				["coord"] = { 46.4, 52.1, THE_WAKING_SHORES },

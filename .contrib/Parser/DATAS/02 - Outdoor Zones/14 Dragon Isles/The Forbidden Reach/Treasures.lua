@@ -13,7 +13,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			}),
 			n(191992, {	-- Eviscerated Argali
 				["coord"] = { 41.7, 23.0, THE_FORBIDDEN_REACH },
-				["questID"] = 67012,
+				-- ["questID"] = 67012, probably wrong
 				["g"] = {
 					i(194511),	-- Living Ration
 				},

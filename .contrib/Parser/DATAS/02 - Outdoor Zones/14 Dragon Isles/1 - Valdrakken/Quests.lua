@@ -78,6 +78,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["sourceQuests"] = { 70932 },	-- The Life of Spice
 				["provider"] = { "n", 189207 },	-- Griftah
 				["coord"] = { 25.6, 54.3, THE_WAKING_SHORES },
+				["g"] = {
+					i(200887),	-- Charred Porter
+					i(200888),	-- Coal-Fired Rib Rack
+					i(200889),	-- Highly-Spiced Haunch
+				},
 			}),
 
 
@@ -154,11 +159,24 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
-			q(72167, {	-- Proving in War
-				["provider"] = { "n", 196191 },	-- Malicia
-				["coord"] = { 43.4, 42.5, VALDRAKKEN },
+			q(66874, {	-- Preserving the Past: Halls of Infusion
+				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 189973 },	-- Kemora
+				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
+			pvp(n(PVP, {
+				q(72167, {	-- Proving in War
+					["provider"] = { "n", 196191 },	-- Malicia
+					["coord"] = { 43.4, 42.5, VALDRAKKEN },
+					["isWeekly"] = true,
+				}),
+				q(72166, {	-- Proving in Battle
+					["provider"] = { "n", 196191 },	-- Malicia
+					["coord"] = { 43.4, 42.5, VALDRAKKEN },
+					["isWeekly"] = true,
+				}),
+			})),
 		}),
 	}),
 })));
@@ -172,5 +190,11 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 
 		q(67055),	-- Both These popped when doing Ruby Feast
 		q(72009),
+
+		q(72258),	-- Popped when completed Ruby Feast Quest 100000 years roast
+		q(67056),	-- ^^
+
+		q(72369),	-- Unknown popped when HS to valdrakken
+		q(72366),	-- Also Unknown
 	}),
 }));

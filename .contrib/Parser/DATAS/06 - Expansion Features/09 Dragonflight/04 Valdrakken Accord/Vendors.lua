@@ -72,7 +72,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 						-- RENONWN 3 --
 					i(199648),	-- Dragon Dinner Fork
 					i(200750),	-- Dragon Dinner Knife
-					i(199649),	-- Dragon Tea Set - NYI
+					i(199649),	-- Dragon Tea Set (TOY!)
 					i(200754),	-- Jeweled Gold Dragon Goblet
 					i(200752),	-- Jeweled Silver Dragon Goblet
 					i(200753),	-- Simple Gold Dragon Goblet
@@ -190,11 +190,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
 				["g"] = {
 						-- RENOWN 26 --
-					i(199771),	-- Green Dragon Banner
-					i(199770),	-- Bronze Dragon Banner
-					i(199769),	-- Blue Dragon Banner
-					i(199768),	-- Black Dragon Banner
-					i(199767),	-- Red Dragon Banner
+					i(199771),	-- Green Dragon Banner (TOY!)
+					i(199770),	-- Bronze Dragon Banner (TOY!)
+					i(199769),	-- Blue Dragon Banner (TOY!)
+					i(199768),	-- Black Dragon Banner (TOY!)
+					i(199767),	-- Red Dragon Banner (TOY!)
 				},
 			}),
 			n(195769, {	-- Weaponsmith Koref

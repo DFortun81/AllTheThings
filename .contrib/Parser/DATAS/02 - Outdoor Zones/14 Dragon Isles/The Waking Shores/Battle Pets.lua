@@ -7,6 +7,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			pet(3367, {	-- Emberling
 				["cr"] = 193024,
 			}),
+			pet(3300, {-- Ironbeak Duck
+				["cr"] = 189131,
+			}),
 			pet(3366, {	-- Kindlet
 				["cr"] = 193000,
 			}),

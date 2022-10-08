@@ -449,7 +449,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(198202),	-- Assorted Safety Fuses
 		i(198203),	-- Assorted Safety Fuses
 		i(198173),	-- Cartomancy Cannon
-		i(198264),	-- Centralized Precipitation Emitter
+		i(198264),	-- Centralized Precipitation Emitter (TOY!)
 		i(198250),	-- Convincingly Realistic Jumper Cables
 		i(198251),	-- Convincingly Realistic Jumper Cables
 		i(198252),	-- Convincingly Realistic Jumper Cables
@@ -472,7 +472,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(198189),	-- Ever-Burning Blasting Powder
 		i(198190),	-- Ever-Burning Blasting Powder
 		i(198191),	-- Ever-Burning Blasting Powder
-		i(198227),	-- Gnoll Goggles
+		i(198227),	-- Giggle Goggles (TOY!)
 		i(198192),	-- Greased-Up Gears
 		i(198193),	-- Greased-Up Gears
 		i(198194),	-- Greased-Up Gears
@@ -536,7 +536,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(198253),	-- Unhinged Sawblade
 		i(198254),	-- Unhinged Sawblade
 		i(198255),	-- Unhinged Sawblade
-		i(198156),	-- Wyrmhole Generator
+		i(198156),	-- Wyrmhole Generator (TOY!)
 
 		--i(0, 377983);	-- Heart in a Bottle
 		--i(0, 382581);	-- Opening

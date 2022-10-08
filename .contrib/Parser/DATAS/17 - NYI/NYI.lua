@@ -409,7 +409,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197986),	-- Murglasses
 			i(198428),	-- Tuskarr Dinghy
 			i(198039),	-- Rock of Appreciation
-			i(198090),	-- Jar of Excess Slime
 			i(198402),	-- Maruuk Cooking Pot
 			i(198409),	-- Personal Shell
 		}),

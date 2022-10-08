@@ -13,6 +13,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["coord"] = { 48.9, 51.8, THE_WAKING_SHORES },
 				["questID"] = 70600,
 			}),
+			i(199841, {	-- Finely Carved Wing [FORGOT OBJECTID...]
+				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
+			}),
 		}),
 	}),
 })));

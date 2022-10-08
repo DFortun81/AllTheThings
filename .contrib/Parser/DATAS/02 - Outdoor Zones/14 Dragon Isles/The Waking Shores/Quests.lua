@@ -554,9 +554,19 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["coord"] = { 80.1, 42.9, THE_WAKING_SHORES },
 				}),
 				q(70877, {	-- A Quack in Time
-					["sourceQuests"] = { 66104 },	-- Forensic Ecology
+					["sourceQuests"] = { 66196 },	-- A Quack For Help
 					["provider"] = { "n", 196744 },	-- Bubbled Duckling
 					["coord"] = { 80.1, 39.9, THE_WAKING_SHORES },
+				}),
+				q(70917, {	-- A Shoulder to Quack On
+					["sourceQuests"] = { 70877 },	--A Quack in Time
+					["provider"] = { "n", 196746 },	-- Bubbled Duckling
+					["coord"] = { 81.6, 45.4, THE_WAKING_SHORES },
+				}),
+				q(70918, {	-- Quack for Your Life
+					["sourceQuests"] = { 70917 },	-- A Shoulder to Quack On
+					["provider"] = { "n", 196572 },	-- Bubbled Duckling
+					["coord"] = { 79.3, 42.7, THE_WAKING_SHORES },
 				}),
 
 					-- Veritistrasz --
@@ -895,6 +905,31 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				}),
 
 					-- MISC --
+				q(66003, {	-- Rings To Bind Them
+					-- ["sourceQuests"] = {} Unknown
+					["provider"] = { "n", 187609 },	-- Earthcaller Yevaa
+					["coord"] = { 37.4, 71.8, THE_WAKING_SHORES },
+					["g"] = {
+						i(194384),	-- Elemental Binding Ring
+					},
+				}),
+				q(66369, {	-- The Earthen Ward
+					["sourceQuests"] = { 66003 },	-- Rings To Bind Them
+					["provider"] = { "n", 187609 },	-- Earthcaller Yevaa
+					["coord"] = { 37.4, 71.8, THE_WAKING_SHORES },
+					["g"] = {
+						i(191837),	-- Earthen Charm
+					},
+				}),
+				q(66368, {	-- Island In A Storm
+					["sourceQuests"] = { 66369 },	-- The Earthen Ward
+					["provider"] = { "n", 187609 },	-- Earthcaller Yevaa
+					["coord"] = { 37.4, 71.8, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+					["g"] = {
+						i(191837),	-- Earthen Charm
+					},
+				}),
 				q(66101, {	-- From Such Great Heights
 					["sourceQuests"] = {
 						65452,	-- Explorers in Peril
@@ -944,6 +979,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 					["provider"] = { "n", 196827 },	-- Crabtender Kad'irsza
 					["coord"] = { 58.9, 52.2, THE_WAKING_SHORES },
+				}),
+				q(70789, {	-- Finely Carved Wing
+					--["sourceQuests"] = {  },	-- Unknown
+					["provider"] = { "i", 199841 },	-- Finely Carved Wing
+					["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
 				}),
 			}),
 			n(BONUS_OBJECTIVES, {
@@ -1005,6 +1045,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				}),
 			}),
 
+			-- Dailys at Throne
+			q(66856, {	-- Ashen Black and the Seven Gnomes
+				["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+				["provider"] = { "n", 191014 },	-- Ashen Black
+				["coord"] = { 26.5, 62.5, THE_WAKING_SHORES },
+				["isDaily"] = true,
+			}),
+			q(65842, {	-- Disarming Behavior
+				["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+				["provider"] = { "n", 190899 },	-- Talonstalker Kavia
+				["coord"] = { 26.6, 62.5, THE_WAKING_SHORES },
+				["isDaily"] = true,
+			}),
+			q(66130, {	-- Unlocking our Past?
+				["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+				["provider"] = { "n", 187284 },	-- Wrathion
+				["coord"] = { 26.8, 62.5, THE_WAKING_SHORES },
+				["cost"] = { { "i", 191264, 1 }, },	-- 1xRestored Obsidian Key
+				["isDaily"] = true,
+			}),
 
 
 
@@ -1212,7 +1272,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(70709),	-- Promising to Save Wu'de Prepfoot during The Shadow of His Wings(65691)
 		q(72059),	-- Gossip with Commander Lethanak at 62.7, 72.2 unclear when
 		q(70872),	-- Popped After A Sledgehammer of a Solution(66108A) and Don't Be So Shellfish (66106)
-		q(70872),	-- After completing A Quack In Time
+		q(70872),	-- After completing A Quack In Time and the other quests quakc
 		q(70206),	-- Popped During Stay a While (70132)
 		q(70231),	-- Gossip with Emilia Bellocq 75.4, 33.9 193915
 		-- Namning the Proto-Welp during [WIP] Theory in Practice (69902)
@@ -1221,5 +1281,8 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72177),	-- Mr.Nibbles
 		q(72179),	-- Lord Firegiggle
 		q(72178),	-- Baron von Swoopenbite
+
+
+		q(72096),	-- Release Kite at Wingrest Embassy
 	}),
 }));

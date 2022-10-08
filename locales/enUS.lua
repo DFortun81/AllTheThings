@@ -1249,6 +1249,8 @@ app.L = {
 		[-694] = "Interface\\Icons\\inv_shadebeastmount_blue",								-- Unchained Gladiator: Shadowlands Season 2
 		[-695] = "Interface\\Icons\\inv_shadebeastmount_red",								-- Cosmic Gladiator: Shadowlands Season 3
 		[-696] = "Interface\\Icons\\inv_shadebeastmount_orange",							-- Eternal Gladiator: Shadowlands Season 4
+	-- Dragonflight PvP Seasons
+		[-697] = "Interface\\Icons\\inv_drake2mountgladiator",								-- Crimson Gladiator: Dragonflight Season 1
 	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
 		[-795] = app.asset("Pet_Dungeon"),													-- Pet Battle Dungeons
@@ -1352,15 +1354,16 @@ app.L = {
 		[-1010] = "Interface\\Worldmap\\GlowSkull_64Purple",
 		[-1011] = "Interface\\Worldmap\\GlowSkull_64Red",
 	-- Dragonflight
-		[-1100] = "Interface\\Icons\\ability_dragonriding_glyph01",											-- Dragon Customization
-		[-1101] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_trinket_1ragingelement_air",													-- Primal Storms
-		[-1110] = "Interface\\Icons\\ui_majorfaction_expedition",											-- Dragonscale Expedition
-		[-1111] = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",														-- Climbing
-		[-1120] = "Interface\\Icons\\ui_majorfaction_centaur",													-- Maruuk Centaur
-		[-1121] = "Interface\\Icons\\ability_racial_returntocamp",															-- Aylaag
-		[-1122] = "Interface\\Icons\\inv_scroll_11",													-- Grand Hunts
-		[-1130] = "Interface\\Icons\\ui_majorfaction_tuskarr",												-- Iskaara Tuskarr
-		[-1140] = "Interface\\Icons\\ui_majorfaction_valdrakken",												-- Valdrakken Accord
+		[-1100] = "Interface\\Icons\\ability_dragonriding_glyph01",									-- Dragon Customization
+		[-1101] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_trinket_1ragingelement_air",	-- Primal Storms
+		[-1110] = "Interface\\Icons\\ui_majorfaction_expedition",									-- Dragonscale Expedition
+		[-1111] = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",							-- Climbing
+		[-1120] = "Interface\\Icons\\ui_majorfaction_centaur",										-- Maruuk Centaur
+		[-1121] = "Interface\\Icons\\ability_racial_returntocamp",									-- Aylaag
+		[-1122] = "Interface\\Icons\\inv_scroll_11",												-- Grand Hunts
+		[-1130] = "Interface\\Icons\\ui_majorfaction_tuskarr",										-- Iskaara Tuskarr
+		[-1131] = "Interface\\Icons\\inv_polearm_2h_kultirasharpoon_a_01",							-- Iskaara Fishing
+		[-1140] = "Interface\\Icons\\ui_majorfaction_valdrakken",									-- Valdrakken Accord
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1798,6 +1801,8 @@ app.L = {
 		[-694] = select(2, GetAchievementInfo(14973)),							-- Unchained Gladiator: Shadowlands Season 2
 		[-695] = select(2, GetAchievementInfo(15353)),							-- Cosmic Gladiator: Shadowlands Season 3
 		[-696] = select(2, GetAchievementInfo(15606)),							-- Eternal Gladiator: Shadowlands Season 4
+	-- Dragonflight PvP Seasons
+		[-697] = select(2, GetAchievementInfo(15951)),							-- Crimson Gladiator: Dragonflight Season 1
 	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
 		[-795] = "Pet Battle Dungeons",											-- Pet Battle Dungeons
@@ -1925,6 +1930,7 @@ app.L = {
 		[-1121] = "Aylaag",															-- Aylaag
 		[-1122] = "Grand Hunts",													-- Grand Hunts
 		[-1130] = "Iskaara Tuskarr",												-- Iskaara Tuskarr
+		[-1131] = "Iskaara Fishing",												-- Iskaara Fishing
 		[-1140] = "Valdrakken Accord",												-- Valdrakken Accord
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",

@@ -29,6 +29,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			ach(16066, {	-- Dragon Glyphs: Ruins of Karnthar
 				["coord"] = { 68.6, 60.4, THE_AZURE_SPAN },
 			}),
+			ach(16673, {	-- Dragon Glyphs: The Fallen Course
+				["coord"] = { 56.7, 15.9, THE_AZURE_SPAN },
+			}),
 			ach(16073, {	-- Dragon Glyphs: Vakthros Range
 				["coord"] = { 77.6, 30.8, THE_AZURE_SPAN },
 			}),

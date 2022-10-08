@@ -5,7 +5,7 @@
 root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
 	i(199018),	-- Bejeweled Stonewatcher's Pendant
 	i(199005),	-- Horn Strider's Bracers (Weird?)
-	i(201470),	-- Story of an Unusual Victory
+	i(201470),	-- Story of a Memorable Victory
 	n(ARMOR, {
 		i(199019),	-- Aerodynamic Cape
 		i(198990),	-- Drakewatcher's Cord

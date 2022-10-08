@@ -31,6 +31,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			n(191408, {	-- Wish
 				["coord"] = { 81.0, 59.5, OHNAHRAN_PLAINS },
 			}),
+			n(186189, {	-- Gentara
+				["coord"] = { 83.9, 25.9, OHNAHRAN_PLAINS },
+			}),
+			n(189278, {	-- Pesca
+				["coord"] = { 84.2, 27.1, OHNAHRAN_PLAINS },
+			}),
 		}),
 	}),
 })));

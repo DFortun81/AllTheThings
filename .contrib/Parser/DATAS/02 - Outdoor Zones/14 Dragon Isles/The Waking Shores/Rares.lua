@@ -4,6 +4,10 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	m(THE_WAKING_SHORES, {
 		n(RARES, {
+			n(193153, {	-- Forgotten Gryphon
+				["coord"] = { 33.1, 76.3, THE_WAKING_SHORES },
+				["questID"] = 72310,	-- ??? XD
+			}),
 			n(186200, {	-- Harkyn Grymstone
 				["crs"] = {
 					186201, -- Groth
@@ -25,6 +29,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			n(190971, {	-- Shas'ith
 				["description"] = "Underground",
 				["coord"] = { 24.5, 57.8, THE_WAKING_SHORES },
+				["questID"] = 66903, --??
 			}),
 			n(193226, {	-- Gorjo the Crab Shackler
 				["crs"] = { 193228 },	-- Snappy

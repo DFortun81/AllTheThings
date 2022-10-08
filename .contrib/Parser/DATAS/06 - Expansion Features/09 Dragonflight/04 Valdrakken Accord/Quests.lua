@@ -50,6 +50,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					i(198868),	-- Small Valdrakken Accord Supply Pack
 				},
 			}),
+				-- RENOWN 7 --
+			q(71227, {	-- Aerial Challenges
+				["description"] = "Requires Renown 7. Spawns Anywhere on Dragon Isles.",
+				["provider"] = { "n", 197478 },	-- Herald Flaps
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+			}),
 		}),
 	}),
 })));

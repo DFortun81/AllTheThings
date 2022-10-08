@@ -50,8 +50,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["g"] = {
 						-- RENOWN 19 --
-					i(198728),	-- Reliquary Banner
-					i(198728),	-- Explorer's League Banner
+					i(198729),	-- Reliquary Banner (TOY!)
+					i(198728),	-- Explorer's League Banner (TOY!)
 				},
 			}),
 			n(187408, {	-- Granpap Whiskers
@@ -158,9 +158,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					i(197374),	-- Renewed Proto-Drake: Swept Horns
 					i(197395),	-- Renewed Proto-Drake: Harrier Pattern
 						-- RENOWN 17 --
-					i(198720),	-- Soft Purple Pillow
-					i(198721),	-- Skinny Reliquary Pillow
-					i(198722),	-- Small Triangular Pillow
+					i(198720),	-- Soft Purple Pillow (TOY!)
+					i(198721),	-- Skinny Reliquary Pillow (TOY!)
+					i(198722),	-- Small Triangular Pillow (TOY!)
 						-- RENOWN 22 --
 					i(197010),	-- Cliffside Wylderdrake: Red Scales
 					i(197144),	-- Highland Drake: Red Scales

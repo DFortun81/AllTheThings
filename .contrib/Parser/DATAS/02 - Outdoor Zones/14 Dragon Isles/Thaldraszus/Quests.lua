@@ -868,6 +868,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["provider"] = { "n", 194812 },	-- Cae'Ryn
 				["coord"] = { 40.5, 49.0, THALDRASZUS },
 			}),
+			q(70744, {	-- Look at the Bones!
+				["sourceQuests"] = { 70743 },	-- Precious Baby
+				["provider"] = { "o", 381296 },	-- Horrible Mess
+				["coord"] = { 38.9, 45.3, THALDRASZUS },
+			}),
+			q(70745, {	-- Enforced Relaxation
+				["sourceQuests"] = { 70744 },	-- Look at the Bones!
+				["provider"] = { "n", 196160 },	-- Quilius
+				["coord"] = { 40.5, 48.9, THALDRASZUS },
+			}),
 			n(BONUS_OBJECTIVES, {
 				q(72114, {	-- Acrosoth
 					-- npc 193243

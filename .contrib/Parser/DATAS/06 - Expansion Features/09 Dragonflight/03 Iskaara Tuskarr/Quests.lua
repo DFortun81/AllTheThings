@@ -21,8 +21,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 186547 },	-- Lil Ki
 				["coord"] = { 13.5, 48.7, THE_AZURE_SPAN },
 				["g"] = {
-					i(199892),	-- Tuskarr Traveling Soup Pot
-					i(199650),	-- Whale Bone Tea Set
+					i(199892),	-- Tuskarr Traveling Soup Pot (TOY!)
+					i(199650),	-- Whale Bone Tea Set (TOY!)
 					i(200749),	-- Tuskarr Clobbering Board
 					i(200748),	-- Tuskarr Ulu Knife
 				},
@@ -38,9 +38,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 186448 },	-- Elder Poa
 				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 			}),
-			q(70940, {	-- Tuskarr Champion's Tales
-				["description"] = "Requires Renown 5.",
-				["provider"] = { "i", 201470 },	-- Story of an Unusual Victory
+			q(72291, {	-- Story of a Memorable Victory
+				--["description"] = "Requires Renown 5.",
+				["provider"] = { "i", 201470 },	-- Story of a Memorable Victory
 			}),
 		}),
 	}),

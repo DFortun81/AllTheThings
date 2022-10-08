@@ -11,6 +11,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			ach(16056, {	-- Dragon Glyphs: Emerald Gardens
 				["coord"] = { 30.0, 61.3, OHNAHRAN_PLAINS },
 			}),
+			ach(16672, {	-- Dragon Glyphs: Forkriver Crossing
+				["coord"] = { 70.1, 86.7, OHNAHRAN_PLAINS },
+			}),
+			ach(16671, {	-- Dragon Glyphs: Mirewood Fen
+				["coord"] = { 78.3, 21.3, OHNAHRAN_PLAINS },
+			}),
 			ach(16059, {	-- Dragon Glyphs: Mirror of the Sky
 				["coord"] = { 47.3, 72.4, OHNAHRAN_PLAINS },
 			}),

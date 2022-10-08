@@ -7626,7 +7626,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(67009),	--
 			q(67010),	--
 			q(67011),	--
-			q(67012),	--
 			q(67013),	--
 			q(67014),	--
 			q(67016),	--

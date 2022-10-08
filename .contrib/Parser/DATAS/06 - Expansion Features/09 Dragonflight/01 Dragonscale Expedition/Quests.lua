@@ -96,6 +96,40 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					i(194325),	-- Researcher's Magnifier
 				},
 			}),
+				-- RENOWN 8 --
+			q(69869, {	-- A Cataloger's Paradise
+				["description"] = "Requires Renown 8. Spawns Anywhere on Dragon Isles.",
+				["provider"] = { "n", 196643 },	-- Doc Nanners
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+			}),
+			q(72032, {	-- Dragonscale Expedition Supplies
+				["description"] = "Requires Renown 8.",
+				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
+				},
+			}),
+			q(72034, {	-- Dragonscale Expedition Supplies
+				["description"] = "Requires Renown 8.",
+				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
+				},
+			}),
+
+
+
+
+			q(72397, {	-- Welcome to the Basecamp
+				["description"] = "Requires Renown 7.",
+				["sourceQuests"] = { 69855 },	-- A Climber's Calling
+				["provider"] = { "n", 186869 },	-- Naleidea Rivergleam
+				["coord"] = { 47.9, 82.4, THE_WAKING_SHORES },
+			}),
 				-- RENOWN 1 --
 			q(71008, {	-- Wanted: Stoneheart's Stone Heart
 				["provider"] = { "o", 381670 },	-- Archivist's Request
@@ -127,6 +161,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					i(198490),	-- Bushwhacker's Compass
 				},
 			}),
+			q(71010, {	-- Wanted: Temporal Spyglass
+				["provider"] = { "o", 381671 },	-- Archivist's Request
+				["coord"] = { 48.0, 83.7, THE_WAKING_SHORES },
+			}),
 		}),
+	}),
+})));
+
+root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
+	n(DRAGONSCALE_EXPEDITION, {
+		q(70824),	-- Highest/Tallest Peak WingRest Embassy
 	}),
 })));

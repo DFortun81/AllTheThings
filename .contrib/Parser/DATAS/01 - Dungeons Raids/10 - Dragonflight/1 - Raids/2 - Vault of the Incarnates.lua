@@ -1,14 +1,16 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
---[[
+
 root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	inst(1200, {	-- Vault of the Incarnates
 		["isRaid"] = true,
 		["coord"] = { 73.0, 55.7, THALDRASZUS },
 		["order"] = "01",
 		["maps"] = {
-
+			2119,	-- The Primal Bulwark
+			2122,	-- The Vault Approach
+			2124,	-- The Primal Convergence
 		},
 		["g"] = {
 			d(14, {	-- Normal
@@ -31,7 +33,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					},
 				}),
 				e(2639, {	-- Terros
-					-- ["crs"] = {  },
+					["crs"] = { 190496 },	-- Terros
 					["g"] = {
 
 					},
@@ -63,4 +65,4 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			}),
 		},
 	}),
-})));]]
+})));

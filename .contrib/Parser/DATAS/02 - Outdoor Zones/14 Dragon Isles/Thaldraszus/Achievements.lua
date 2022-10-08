@@ -11,6 +11,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			ach(16102, {	-- Dragon Glyphs: Algeth'era
 				["coord"] = { 49.9, 40.3, THALDRASZUS },
 			}),
+			ach(16666, {	-- Dragon Glyphs: Gelikyr Overlook
+				["coord"] = { 52.7, 67.4, THALDRASZUS },
+			}),
+			ach(16667, {	-- Dragon Glyphs: Passage of Time
+				["coord"] = { 55.8, 72.4, THALDRASZUS },
+			}),
 			ach(16100, {	-- Dragon Glyphs: South Hold Gate
 				["coord"] = { 35.6, 85.5, THALDRASZUS },
 			}),

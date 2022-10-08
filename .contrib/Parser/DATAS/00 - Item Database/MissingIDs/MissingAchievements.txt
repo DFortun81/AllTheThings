@@ -2863,6 +2863,9 @@ ach(15592),	-- <Hidden> 9.2 ZM - Cypher System - Talent Research Started - Treba
 ach(15593),	-- <Hidden> 9.2 ZM - Cypher System - Talent Research Started - Sopranian (copy)
 9.2.5.42850
 ach(15596),	-- Return to Lordaeron (Hidden Character Achievement)
+9.2.5.43254
+ach(15645),	-- To Catch Falling Stars
+ach(15653),	-- The More You Know*
 10.0.0.44649
 ach(15325),	-- Dracthyr, Awaken
 ach(15394),	-- Ohn'a'Roll \\ Waking Hope
@@ -2877,55 +2880,7 @@ ach(15657),	-- Dragon Isles Blacksmithing 100 (DNT)
 ach(15658),	-- Dragon Isles Alchemy 25 (DNT)
 ach(15659),	-- Dragon Isles Alchemy 50 (DNT)
 ach(15660),	-- Dragon Isles Alchemy 100 (DNT)
-ach(15696),	-- Ruby Lifeshrine Loop: Bronze \\ Dragon Racing - Waking Shores - Ruby Lifeshrine Loop - Bronze
-ach(15697),	-- Ruby Lifeshrine Loop: Silver \\ Dragon Racing - Waking Shores - Ruby Lifeshrine Loop - Silver
-ach(15698),	-- Ruby Lifeshrine Loop: Gold \\ Dragon Racing - Waking Shores - Ruby Lifeshrine Loop - Gold
-ach(15702),	-- Ruby Lifeshrine Loop Advanced: Bronze \\ Ruby Lifeshrine Loop - Advanced: Bronze \\ Dragon Racing - Waking Shores - Ruby Lifeshrine Loop - Advanced - Bronze
-ach(15703),	-- Ruby Lifeshrine Loop Advanced: Silver \\ Ruby Lifeshrine Loop - Advanced: Silver \\ Dragon Racing - Waking Shores - Ruby Lifeshrine Loop - Advanced - Silver
-ach(15704),	-- Ruby Lifeshrine Loop Advanced: Gold \\ Ruby Lifeshrine Loop - Advanced: Gold \\ Dragon Racing - Waking Shores - Ruby Lifeshrine Loop - Advanced - Gold
-ach(15705),	-- Flashfrost Flyover: Bronze \\ Dragon Racing - Waking Shores - Flashfrost Flyover - Bronze
-ach(15706),	-- Flashfrost Flyover: Silver \\ Dragon Racing - Waking Shores - Flashfrost Flyover - Silver
-ach(15707),	-- Flashfrost Flyover: Gold \\ Dragon Racing - Waking Shores - Flashfrost Flyover - Gold
 ach(15708),	-- <Hidden> 10.0 Dragon Riding - Drake Customization - Protodrake - Green Scales [DNT]
-ach(15709),	-- Flashfrost Flyover Advanced: Bronze \\ Flashfrost Flyover - Advanced: Bronze \\ Dragon Racing - Waking Shores - Flashfrost Flyover - Advanced - Bronze
-ach(15710),	-- Flashfrost Flyover Advanced: Silver \\ Flashfrost Flyover - Advanced: Silver \\ Dragon Racing - Waking Shores - Flashfrost Flyover - Advanced - Silver
-ach(15711),	-- Flashfrost Flyover Advanced: Gold \\ Flashfrost Flyover - Advanced: Gold \\ Dragon Racing - Waking Shores - Flashfrost Flyover - Advanced - Gold
-ach(15712),	-- Wild Preserve Slalom: Bronze \\ Wild Preserve Slalom - Bronze \\ Dragon Racing - Waking Shores - Wild Preserve Slalom - Bronze
-ach(15713),	-- Wild Preserve Slalom: Silver \\ Wild Preserve Slalom - Silver \\ Dragon Racing - Waking Shores - Wild Preserve Slalom - Silver
-ach(15714),	-- Wild Preserve Slalom: Gold \\ Wild Preserve Slalom - Gold \\ Dragon Racing - Waking Shores - Wild Preserve Slalom - Gold
-ach(15715),	-- Wild Preserve Slalom Advanced: Bronze \\ Wild Preserve Slalom - Advanced: Bronze \\ Dragon Racing - Waking Shores - Wild Preserve Slalom - Advanced - Bronze
-ach(15716),	-- Wild Preserve Slalom Advanced: Silver \\ Wild Preserve Slalom - Advanced: Silver \\ Dragon Racing - Waking Shores - Wild Preserve Slalom - Advanced - Silver
-ach(15717),	-- Wild Preserve Slalom Advanced: Gold \\ Wild Preserve Slalom - Advanced: Gold \\ Dragon Racing - Waking Shores - Wild Preserve Slalom - Advanced - Gold
-ach(15718),	-- Wild Preserve Circuit: Bronze \\ Dragon Racing - Waking Shores - Wild Preserve Circuit - Bronze
-ach(15719),	-- Wild Preserve Circuit: Silver \\ Dragon Racing - Waking Shores - Wild Preserve Circuit - Silver
-ach(15720),	-- Wild Preserve Circuit: Gold \\ Dragon Racing - Waking Shores - Wild Preserve Circuit - Gold
-ach(15721),	-- Wild Preserve Circuit Advanced: Bronze \\ Wild Preserve Circuit - Advanced: Bronze \\ Dragon Racing - Waking Shores - Wild Preserve Circuit - Advanced - Bronze
-ach(15722),	-- Wild Preserve Circuit Advanced: Silver \\ Wild Preserve Circuit - Advanced: Silver \\ Dragon Racing - Waking Shores - Wild Preserve Circuit - Advanced - Silver
-ach(15723),	-- Wild Preserve Circuit Advanced: Gold \\ Wild Preserve Circuit - Advanced: Gold \\ Dragon Racing - Waking Shores - Wild Preserve Circuit - Advanced - Gold
-ach(15724),	-- Emberflow Flight: Bronze \\ Dragon Racing - Waking Shores - Emberflow Flight - Bronze
-ach(15725),	-- Emberflow Flight: Silver \\ Dragon Racing - Waking Shores - Emberflow Flight - Silver
-ach(15726),	-- Emberflow Flight: Gold \\ Dragon Racing - Waking Shores - Emberflow Flight - Gold
-ach(15727),	-- Emberflow Flight Advanced: Bronze \\ Emberflow Flight - Advanced: Bronze \\ Dragon Racing - Waking Shores - Emberflow Flight - Advanced - Bronze
-ach(15728),	-- Emberflow Flight Advanced: Silver \\ Emberflow Flight - Advanced: Silver \\ Dragon Racing - Waking Shores - Emberflow Flight - Advanced - Silver
-ach(15729),	-- Emberflow Flight Advanced: Gold \\ Emberflow Flight - Advanced: Gold \\ Dragon Racing - Waking Shores - Emberflow Flight - Advanced - Gold
-ach(15730),	-- Apex Canopy River Run: Bronze \\ Dragon Racing - Waking Shores - Apex Canopy River Run - Bronze
-ach(15731),	-- Apex Canopy River Run: Silver \\ Dragon Racing - Waking Shores - Apex Canopy River Run - Silver
-ach(15732),	-- Apex Canopy River Run: Gold \\ Dragon Racing - Waking Shores - Apex Canopy River Run - Gold
-ach(15733),	-- Apex Canopy River Run Advanced: Bronze \\ Apex Canopy River Run - Advanced: Bronze \\ Dragon Racing - Waking Shores - Apex Canopy River Run - Advanced - Bronze
-ach(15734),	-- Apex Canopy River Run Advanced: Silver \\ Apex Canopy River Run - Advanced: Silver \\ Dragon Racing - Waking Shores - Apex Canopy River Run - Advanced - Silver
-ach(15735),	-- Apex Canopy River Run Advanced: Gold \\ Apex Canopy River Run - Advanced: Gold \\ Dragon Racing - Waking Shores - Apex Canopy River Run - Advanced - Gold
-ach(15736),	-- Uktulut Coaster: Bronze \\ Dragon Racing - Waking Shores - Uktulut Coaster - Bronze
-ach(15737),	-- Uktulut Coaster: Silver \\ Dragon Racing - Waking Shores - Uktulut Coaster - Silver
-ach(15738),	-- Uktulut Coaster: Gold \\ Dragon Racing - Waking Shores - Uktulut Coaster - Gold
-ach(15739),	-- Uktulut Coaster Advanced: Bronze \\ Uktulut Coaster - Advanced: Bronze \\ Dragon Racing - Waking Shores - Uktulut Coaster - Advanced - Bronze
-ach(15740),	-- Uktulut Coaster Advanced: Silver \\ Uktulut Coaster - Advanced: Silver \\ Dragon Racing - Waking Shores - Uktulut Coaster - Advanced - Silver
-ach(15741),	-- Uktulut Coaster Advanced: Gold \\ Uktulut Coaster - Advanced: Gold \\ Dragon Racing - Waking Shores - Uktulut Coaster - Advanced - Gold
-ach(15742),	-- Wingrest Roundabout: Bronze \\ Dragon Racing - Waking Shores - Wingrest Roundabout - Bronze
-ach(15743),	-- Wingrest Roundabout: Silver \\ Dragon Racing - Waking Shores - Wingrest Roundabout - Silver
-ach(15744),	-- Wingrest Roundabout: Gold \\ Dragon Racing - Waking Shores - Wingrest Roundabout - Gold
-ach(15745),	-- Wingrest Roundabout Advanced: Bronze \\ Wingrest Roundabout - Advanced: Bronze \\ Dragon Racing - Waking Shores - Wingrest Roundabout - Advanced - Bronze
-ach(15746),	-- Wingrest Roundabout Advanced: Silver \\ Wingrest Roundabout - Advanced: Silver \\ Dragon Racing - Waking Shores - Wingrest Roundabout - Advanced - Silver
-ach(15747),	-- Wingrest Roundabout Advanced: Gold \\ Wingrest Roundabout - Advanced: Gold \\ Dragon Racing - Waking Shores - Wingrest Roundabout - Advanced - Gold
 ach(15757),	-- Sundapple Copse Circuit: Bronze \\ Waygate Woods Way: Bronze \\ Dragon Racing - Ohn'ahran Plains - Waygate Woods Way - Bronze
 ach(15758),	-- Sundapple Copse Circuit: Silver \\ Waygate Woods Way: Silver \\ Dragon Racing - Ohn'ahran Plains - Waygate Woods Way - Silver
 ach(15759),	-- Sundapple Copse Circuit: Gold \\ Waygate Woods Way: Gold \\ Dragon Racing - Ohn'ahran Plains - Waygate Woods Way - Gold
@@ -3055,7 +3010,7 @@ ach(15900),	-- Academy Ascent Advanced: Bronze \\ Academy Ascent - Advanced: Bro
 ach(15901),	-- Academy Ascent Advanced: Silver \\ Academy Ascent - Advanced: Silver \\ Dragon Racing - Thaldraszus - Academy Ascent - Advanced - Silver
 ach(15902),	-- Academy Ascent Advanced: Gold \\ Academy Ascent - Advanced: Gold \\ Dragon Racing - Thaldraszus - Academy Ascent - Advanced - Gold
 10.0.0.44707
-ach(15903), -- Dragon Racing - Thaldraszus - Garden Gallivant - Bronze
+ach(15903),	-- Garden Gallivant: Bronze \\ Dragon Racing - Thaldraszus - Garden Gallivant - Bronze \\ Dragon Racing - Thaldraszus - Garden Gallivant - Bronze
 ach(15904),	-- Garden Gallivant: Silver \\ Dragon Racing - Thaldraszus - Garden Gallivant - Silver
 ach(15905),	-- Garden Gallivant: Gold \\ Dragon Racing - Thaldraszus - Garden Gallivant - Gold
 ach(15906),	-- Garden Gallivant Advanced: Bronze \\ Garden Gallivant - Advanced: Bronze \\ Dragon Racing - Thaldraszus - Garden Gallivant - Advanced - Bronze
@@ -3108,15 +3063,7 @@ ach(15959),	-- Hero of the Alliance: Crimson
 ach(15960),	-- Combatant I: Dragonflight Season 1 \\ Combatant I: Shadowlands Dragonflight Season 1
 ach(15961),	-- Combatant II: Dragonflight Season 1
 ach(15984),	-- Elite: Dragonflight Season 1
-ach(15985),	-- Dragon Glyphs: Skytop Observatory Tower \\ Dragon Glyphs: Skytop Observatory
-ach(15986),	-- Dragon Glyphs: Wingrest Embassy
-ach(15987),	-- Dragon Glyphs: Obsidian Bulwark
-ach(15988),	-- Dragon Glyphs: Ruby Life Pools Peaks \\ Dragon Glyphs: Ruby Life Pools
-ach(15989),	-- Dragon Glyphs: The Overflowing Spring
-ach(15990),	-- Dragon Glyphs: Life-Binder Observatory
-ach(15991),	-- Dragon Glyphs: Crumbling Life Archway
 10.0.0.44795
-ach(15903),	-- Garden Gallivant: Bronze \\ Dragon Racing - Thaldraszus - Garden Gallivant - Bronze
 ach(15992),	-- <DNT> Dragonscale Expedition Rank 01
 ach(16022),	-- <DNT> Dragonscale Expedition Rank 02
 ach(16023),	-- <DNT> Dragonscale Expedition Rank 03
@@ -3147,29 +3094,6 @@ ach(16047),	-- <DNT> Dragonscale Expedition Rank 27
 ach(16048),	-- <DNT> Dragonscale Expedition Rank 28
 ach(16049),	-- <DNT> Dragonscale Expedition Rank 29
 ach(16050),	-- <DNT> Dragonscale Expedition Rank 30
-ach(16051),	-- Dragon Glyphs: Dragonheart Outpost
-ach(16052),	-- Dragon Glyphs: Scalecracker Peak
-ach(16053),	-- Dragon Glyphs: Obsidian Throne
-ach(16054),	-- Dragon Glyphs: Ohn'ahra's Roost
-ach(16055),	-- Dragon Glyphs: Nokhudon Hold
-ach(16056),	-- Dragon Glyphs: Emerald Gardens
-ach(16057),	-- Dragon Glyphs: The Eternal Kurgans
-ach(16058),	-- Dragon Glyphs: Szar Skeleth
-ach(16059),	-- Dragon Glyphs: Mirror of the Sky
-ach(16060),	-- Dragon Glyphs: Ohn'iri Springs
-ach(16061),	-- Dragon Glyphs: Dragonsprings Summit
-ach(16062),	-- Dragon Glyphs: Rusza'thar Reach
-ach(16063),	-- Dragon Glyphs: Windsong Rise
-ach(16064),	-- Dragon Glyphs: Cobalt Assembly
-ach(16065),	-- Dragon Glyphs: Azure Archive
-ach(16066),	-- Dragon Glyphs: Ruins of Karnthar
-ach(16067),	-- Dragon Glyphs: Lost Ruins
-ach(16068),	-- Dragon Glyphs: Brackenhide Hollow
-ach(16069),	-- Dragon Glyphs: Creektooth Den \\ Dragon Glyphs: Drake Eye's Pond
-ach(16070),	-- Dragon Glyphs: Imbu
-ach(16071),	-- Dragon Glyphs: Zelthrak Outpost
-ach(16072),	-- Dragon Glyphs: Kalthraz Fortress
-ach(16073),	-- Dragon Glyphs: Vakthros Range \\ Dragon Glyphs: Vakthros Summit
 ach(16074),	-- Decatriarch Wratheye kills (Normal Brackenhide Hollow)
 ach(16075),	-- Decatriarch Wratheye kills (Heroic Brackenhide Hollow)
 ach(16076),	-- Decatriarch Wratheye kills (Mythic Brackenhide Hollow)
@@ -3194,15 +3118,7 @@ ach(16094),	-- Balakar Khan kills (Mythic The Nokhud Offensive)
 ach(16095),	-- Chrono-Lord Deios kills (Normal Uldaman: Legacy of Tyr)
 ach(16096),	-- Chrono-Lord Deios kills (Heroic Uldaman: Legacy of Tyr)
 ach(16097),	-- Chrono-Lord Deios kills (Mythic Uldaman: Legacy of Tyr)
-ach(16098),	-- Dragon Glyphs: Temporal Conflux
 ach(16099),	-- Dragon Glyphs: Stormshroud Peak
-ach(16100),	-- Dragon Glyphs: South Hold Gate
-ach(16101),	-- Dragon Glyphs: Valdrakken
-ach(16102),	-- Dragon Glyphs: Algeth'era
-ach(16103),	-- Dragon Glyphs: Tyrhold
-ach(16104),	-- Dragon Glyphs: Algeth'ar Academy \\ Dragon Glyphs: Taz'algeth Academy
-ach(16105),	-- Dragon Glyphs: Veiled Ossuary
-ach(16106),	-- Dragon Glyphs: Vault of the Incarnates
 ach(16107),	-- Dragon Glyphs: Thaldrazsus Apex
 ach(16109),	-- Dragon Isles Leatherworking 100 (DNT)
 ach(16110),	-- Subscribed to Hyena Facts
@@ -3563,8 +3479,6 @@ ach(16571),	-- Well Supplied
 ach(16572),	-- Legendary Photograph
 ach(16573),	-- Legendary Photographs
 ach(16574),	-- Sleeping on the Job
-ach(16575),	-- Waking Shores Glyph Hunter
-ach(16576),	-- Ohn'ahran Plains Glyph Hunter
 ach(16577),	-- Azure Span Glyph Hunter
 ach(16578),	-- Thaldraszus Glyph Hunter
 ach(16580),	-- Hub Helper
@@ -3631,7 +3545,6 @@ ach(16666),	-- Dragon Glyphs: Gelikyr Overlook
 ach(16667),	-- Dragon Glyphs: Passage of Time
 ach(16668),	-- Dragon Glyphs: Skytop Observatory Rostrum
 ach(16669),	-- Dragon Glyphs: Flashfrost Enclave
-ach(16670),	-- Dragon Glyphs: Rubyscale Outpost
 ach(16671),	-- Dragon Glyphs: Mirewood Fen
 ach(16672),	-- Dragon Glyphs: Forkriver Crossing
 ach(16673),	-- Dragon Glyphs: The Fallen Course

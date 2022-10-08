@@ -79,6 +79,9 @@ i(194291, 376552);	-- Master's Wildercloth Fishing Cap
 i(194292, 376554);	-- Master's Wildercloth Gardening Hat
 i(194294, 376531);	-- Explorer's Banner of Dragon Isles Flora
 i(194295, 376532);	-- Explorer's Banner of Dragon Isles Geology
+i(194279, 376501);	-- Azureweave Slippers
+i(194280, 376505);	-- Chronocloth Sash
+
 
 -- NO SOURCE
 i(194259, 376497);	-- Allied Cinch of Time Dilation
@@ -89,8 +92,7 @@ i(194258, 376495);	-- Bloody Legwraps of Possibility
 i(194260, 376496);	-- Blue Dragon Soles
 i(194261, 376539);	-- Frozen Spellthread
 i(194262, 376540);	-- Temporal Spellthread
-i(194263, 376498);	-- Blue Dragon Rider's Robe
-i(194264, 376499);	-- Bronze Dragon Rider's Wraps
+
 
 i(194271, 376519);	-- Crimson Combatant's Wildercloth Cloak
 i(194278, 376520);	-- Crimson Combatant's Wildercloth Tunic
@@ -103,36 +105,19 @@ i(194275, 376526);	-- Crimson Combatant's Wildercloth Sash
 i(194270, 376527);	-- Crimson Combatant's Wildercloth Bands
 
 
-
-
-
-
-i(0, 376500);	-- Azureweave Robe
-i(194279, 376501);	-- Azureweave Slippers
-i(0, 376502);	-- Azureweave Mantle
-i(0, 376503);	-- Chronocloth Gloves
-i(0, 376504);	-- Chronocloth Leggings
-i(194280, 376505);	-- Chronocloth Sash
-
-
-
-
 i(194293, 376534);	-- Vibrant Polishing Cloth
-
 i(194286, 376536);	-- Chromatic Embroidery Thread
 i(194267, 376537);	-- Shimmering Embroidery Thread
-
-
 i(194265, 376541);	-- Blue Silken Lining
 i(194266, 376542);	-- Bronzed Grip Wrappings
-
-i(0, 376556);	-- Azureweave Bolt
-i(0, 376557);	-- Chronocloth Bolt
 i(194269, 376559);	-- Bloody Wildercloth Bolt
 i(194296, 376563);	-- Fiddle with Draconium Fabric Cutters
 i(194297, 376564);	-- Fiddle with Khaz'gorite Fabric Cutters
-
 i(194298, 376566);	-- Forlorn Funeral Pall
+-- WIERD?!
+i(194263, 376498);	-- Blue Dragon Rider's Robe
+i(194264, 376499);	-- Bronze Dragon Rider's Wraps
+
 
 
 
@@ -154,5 +139,12 @@ i(0, 376515);	-- Vibrant Wildercloth Slacks
 i(0, 376516);	-- Vibrant Wildercloth Shoulderspikes
 i(0, 376517);	-- Vibrant Wildercloth Girdle
 i(0, 376518);	-- Vibrant Wildercloth Wristwraps
+
+i(0, 376557);	-- Chronocloth Bolt
+i(0, 376503);	-- Chronocloth Gloves
+i(0, 376504);	-- Chronocloth Leggings
+i(0, 376556);	-- Azureweave Bolt
+i(0, 376502);	-- Azureweave Mantle
+i(0, 376500);	-- Azureweave Robe
 -- Quest
 i(0, 377986);	-- Heart in a Bottle

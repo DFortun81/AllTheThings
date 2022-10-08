@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
 	n(MARUUK_CENTAUR, {
-		n(-1122, {
+		n(GRAND_HUNTS, {
 			n(195283, {	-- Yamakh
 				["description"] = "Behind Rock Wall.",
 				["coord"] = { 66.1, 51.2, THE_AZURE_SPAN },

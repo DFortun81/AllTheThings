@@ -111,11 +111,7 @@ mount(352927),	-- [PH] Water Salamander Blue
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
 mount(359409),	-- Iskaara Trader's Ottuk \\ [PH] Black River Otter
 mount(359622),	-- Liberated Slyvern \\ PH Black Slyvern \\ PH Fox Wyvern
-mount(360954),	-- Highland Drake
 mount(368893),	-- Winding Slitherdrake
-mount(368896),	-- Renewed Proto-Drake
-mount(368899),	-- Windborne Velocidrake
-mount(368901),	-- Cliffside Wylderdrake
 mount(371176),	-- PH Lava Mammoth Blue
 mount(371571),	-- Dragon Isles Drake Model Test
 mount(372995),	-- Swift Spectral Drake
@@ -123,14 +119,11 @@ mount(373646),	-- Dracthyr Flight Test
 mount(373859),	-- Loyal Magmammoth \\ PH Lava Mammoth Orange
 mount(373913),	-- PH Moose Bull Brown
 mount(373967),	-- PH Moose Bull Dark
-mount(374032),	-- Tamed Skitterfly \\ [PH] Dragonfly Black
-mount(374034),	-- Azure Skitterfly \\ [PH] Dragonfly Blue
 mount(374048),	-- Verdant Skitterfly \\ Skitterfly Verdant \\ [PH] Dragonfly Green
 mount(374071),	-- [PH] Dragonfly Yellow
 mount(374090),	-- [PH] Water Salamander Green
 mount(374093),	-- [PH] Water Salamander Orange
 mount(374097),	-- [PH] Water Salamander Pink
-mount(374098),	-- Stormhide Salamanther \\ [PH] Water Salamander Purple
 mount(374138),	-- Scorchpath \\ PH Lava Slug Red
 mount(374140),	-- PH Lava Slug Blue
 mount(374142),	-- PH Lava Slug Yellow
@@ -174,14 +167,12 @@ mount(385266),	-- Zenet Hatchling \\ [PH] Red Wind Eagle
 mount(385738),	-- PH Red Slyvern
 mount(385767),	-- PH White Slyvern
 mount(385771),	-- PH Yellow Slyvern
+10.0.0.44895
+mount(386452),	-- Frostbrood Proto-Wyrm
 10.0.0.44999
 mount(387948),	-- [PH] Wind Proto-Drake
 10.0.0.45661
 mount(369536),	-- Soar
-mount(394216),	-- Crimson Vorquin
-mount(394218),	-- Sapphire Vorquin
-mount(394219),	-- Bronze Vorquin
-mount(394220),	-- Obsidian Vorquin
 10.0.2.45779
 mount(394737),	-- Vicious Sabertooth
 mount(394738),	-- Vicious Sabertooth

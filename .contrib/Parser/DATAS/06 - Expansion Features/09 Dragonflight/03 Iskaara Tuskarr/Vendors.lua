@@ -35,8 +35,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 				["coord"] = { 13.5, 48.7, THE_AZURE_SPAN },
 				["g"] = {
 						-- RENOWN 4 --
-					i(199892),	-- Tuskarr Traveling Soup Pot
-					i(199650),	-- Whale Bone Tea Set
+					i(199892),	-- Tuskarr Traveling Soup Pot (TOY!)
+					i(199650),	-- Whale Bone Tea Set (TOY!)
 					i(200749),	-- Tuskarr Clobbering Board
 					i(200748),	-- Tuskarr Ulu Knife
 				},
@@ -57,7 +57,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 						i(199864),	-- Tuskarr Trader's Waders
 					}),
 						-- RENOWN 22 --
-					i(199897),	-- Blue Cover Bean Bag
+					i(199897),	-- Blue Cover Bean Bag (TOY!)
 						-- RENOWN 27 --
 					i(199539),	-- Blue Tufted Shoulderpads
 					i(199540),	-- Green Tufted Shoulderpads
@@ -96,8 +96,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 				["coord"] = { 13.9, 49.2, THE_AZURE_SPAN },
 				["g"] = {
 						-- RENOWN 17 --
-					i(199894),	-- Fisherman's Folly Rack
-					i(199896),	-- Rubbery Fish Head
+					i(199894),	-- Fisherman's Folly Rack (TOY!)
+					i(199896),	-- Rubbery Fish Head (TOY!)
 				},
 			}),
 			n(196018, {	-- Lontupit

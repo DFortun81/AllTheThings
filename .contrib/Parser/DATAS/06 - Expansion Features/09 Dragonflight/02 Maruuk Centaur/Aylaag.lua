@@ -32,6 +32,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					["coord"] = { 70.9, 62.6, OHNAHRAN_PLAINS },	-- River Camp?
 					["isDaily"] = true,
 				}),
+				q(65789, {	-- Where Rivers Sleep
+					--["sourceQuests"] = {  },
+					["provider"] = { "n", 185867 },	-- Barnak of the Reeds
+					["coord"] = { 71.4, 31.0, OHNAHRAN_PLAINS },	-- River Camp?
+					["isDaily"] = true,
+				}),
 
 
 

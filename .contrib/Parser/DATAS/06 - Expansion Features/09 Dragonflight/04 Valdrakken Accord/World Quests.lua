@@ -9,6 +9,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 				q(70417, {	-- Dragonrider Racing - Wingrest Roundabout
 					["coord"] = { 73.2, 33.9, THE_WAKING_SHORES },
 				}),
+				-- Ohn
+				q(70423, {	-- Dragonrider Racing - Maruukai Dash
+					["coord"] = { 60.0, 35.5, OHNAHRAN_PLAINS },
+				}),
 			})),
 			n(REWARDS, {
 

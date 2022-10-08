@@ -42,6 +42,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				i(193214),	-- Adamant Scales++
 				i(193922),	-- Wildercloth
 				i(194123),	-- Chromatic Dust
+				i(194714),	-- Miguel's Gift
 			},
 		}),
 		q(67137, {	-- Professionally Equipped
@@ -115,11 +116,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				{ 72.0, 81.1, OHNAHRAN_PLAINS },
 				{ 35.4, 58.8, VALDRAKKEN },
 			},
+			["g"] = {
+				i(193528),	-- Wildercloth Alchemist's Robe
+				i(193529),	-- Wildercloth Fishing Cap
+				i(193615),	-- Jeweler's Cover
+			},
 		}),
 		q(69915, {	-- Targeted Ads
 			["provider"] = { "n", 194026 },	-- Azley
 			["coords"] = {
 				{ 72.0, 81.1, OHNAHRAN_PLAINS },
+			},
+			["g"] = {
+				i(191234),	-- Alchemist's Sturdy Mixing Rod
+				i(198225),	-- Draconium Fisherfriend
+				i(191233),	-- Chef's Smooth Rolling Pin
 			},
 		}),
 		q(69981, {	-- Customer Satisfaction
@@ -134,6 +145,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				i(193394),	-- Adamant Scale Vest
 				i(189538),	-- Explorer's Plate Chestguard
 				i(198048),	-- Titan Training Matrix I
+				i(201343),	-- Bag of Cloth Armor Reagents
+				i(201352),	-- Bag of Leather Reagents
+				i(201353),	-- Bag of Mail Armor Reagents
+				i(201354),	-- Bag of Plate Armor Reagents
 			},
 		}),
 		q(70221, {	-- Show Your Mettle
