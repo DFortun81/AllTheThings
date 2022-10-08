@@ -9913,7 +9913,8 @@
 15900,Dragon Racing - Thaldraszus - Academy Ascent - Advanced - Bronze
 15901,Dragon Racing - Thaldraszus - Academy Ascent - Advanced - Silver
 15902,Dragon Racing - Thaldraszus - Academy Ascent - Advanced - Gold
-10.0.0.4470715903,Dragon Racing - Thaldraszus - Garden Gallivant - Bronze
+10.0.0.44707
+15903,Dragon Racing - Thaldraszus - Garden Gallivant - Bronze
 15904,Dragon Racing - Thaldraszus - Garden Gallivant - Silver
 15905,Dragon Racing - Thaldraszus - Garden Gallivant - Gold
 15906,Dragon Racing - Thaldraszus - Garden Gallivant - Advanced - Bronze
