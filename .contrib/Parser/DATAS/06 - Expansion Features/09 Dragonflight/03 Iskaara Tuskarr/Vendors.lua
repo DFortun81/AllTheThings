@@ -127,7 +127,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					i(198341),	-- Tan Paw Pack
 				},
 			}),
-			n(186471, {	-- Tatto
+			n(186462, {	-- Tatto
 				["coord"] = { 13.8, 49.7, THE_AZURE_SPAN },
 				["g"] = {
 						-- RENOWN 24 --

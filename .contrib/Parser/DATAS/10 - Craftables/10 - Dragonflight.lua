@@ -623,3 +623,142 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(193894),	-- Thousandbite Piranha Lure
 	}),
 }))));
+
+root("HiddenQuestTriggers", {
+	tier(DF_TIER, {
+		prof(ENGINEERING, {
+			q(71478),	-- Handful of Tyrivite Bolts
+			q(71479),	-- Shock-Spring Coil
+			q(71480),	-- Everburning Blasting Powder
+			q(71481),	-- Greased-Up Gears
+			q(71482),	-- Arclight Capacitor
+
+			q(71448),	-- Deadline Deadeyes
+			q(71447),	-- Milestone Magnifiers
+			q(71446),	-- Quality-Assured Optics
+			q(71449),	-- Sentry's Stabilized Specs
+
+
+			q(71511),	-- P.E.W. x2
+
+
+			q(71512),	-- Gyroscopic Kaleidoscope
+
+			q(71468),	-- Haphazardly Tethered Wires
+
+
+			q(71877),	-- Bronze Fireflight
+
+			q(71462),	-- Creature Combustion Canister
+
+
+			q(71891),	-- Neural Silencer Mk3
+
+
+			q(71495),	-- Bottomless Stonecrust Ore Satchel
+			q(71493),	-- Draconium Delver's Helmet
+			q(71485),	-- Draconium Brainwave Amplifier
+			q(71497),	-- Spring-Loaded Draconium Fabric Cutters
+		}),
+		prof(TAILORING, {
+			-- FIRST CRAFT
+				-- Tailoring Essentials --
+			--q(),	-- Dragon Isles Unravelling
+			--q(),	-- Recraft Equipment
+				-- Woven Cloth	--
+			q(71842),	-- Azureweave Bolt
+			q(71843),	-- Chornocloth Bolt
+			q(71845),	-- Bloody Wildercloth Bolt
+			q(71844),	-- Vibrant Wildercloth Bolt
+			q(71841),	-- Wildercloth Bolt
+				-- Optional Reagents --
+			q(71827),	-- Blue Silken Lining
+			q(71828),	-- Bronzed Grip Wrappings
+				-- Finishing Reagents --
+			--q(),	-- Essence of Tyr
+			q(71819),	-- Abrasive Polishing Cloth
+			q(71820),	-- Vibrant Polishing Cloth
+			--q(),	-- Wisp of Tyr
+			q(71823),	-- Shimmering Embroidery Thread
+			q(71822),	-- Chromatic Embroidery Thread
+			q(71821),	-- Blazing Embroidery Thread
+				-- Garments --
+			q(71803),	-- Vibrant Wildercloth Girdle
+			q(71799),	-- Vibrant Wildercloth Handwraps
+			q(71800),	-- Vibrant Wildercloth Headcover
+			q(71796),	-- Vibrant Wildercloth Shawl
+			q(71802),	-- Vibrant Wildercloth Shoulderspikes
+			q(71801),	-- Vibrant Wildercloth Slacks
+			q(71798),	-- Vibrant Wildercloth Slippers
+			q(71797),	-- Vibrant Wildercloth Vestments
+			q(71804),	-- Vibrant Wildercloth Wristwrap
+			q(71813),	-- Crimson Combatant's Wildercloth Bands
+			q(71805),	-- Crimson Combatant's Wildercloth Cloak
+			q(71808),	-- Crimson Combatant's Wildercloth Gloves
+			q(71809),	-- Crimson Combatant's Wildercloth Hood
+			q(71810),	-- Crimson Combatant's Wildercloth Leggings
+			q(71812),	-- Crimson Combatant's Wildercloth Sash
+			q(71811),	-- Crimson Combatant's Wildercloth Shoulderpads
+			q(71807),	-- Crimson Combatant's Wildercloth Treads
+			q(71806),	-- Crimson Combatant's Wildercloth Tunic
+			q(71792),	-- Explorer's Tailored Cloak
+			q(71793),	-- Explorer's Cloth Robe
+			q(71794),	-- Explorer's Cloth Treads
+			q(71795),	-- Explorer's Cloth Bands
+				-- Azureweave Garments --
+			q(71779),	-- Amice of the Blue
+			q(71788),	-- Azureweave Mantle
+			q(71786),	-- Azureweave Robe
+			q(71787),	-- Azureweave Slippers
+			q(71780),	-- Bloody Handwraps of Gesticulation
+			q(71782),	-- Blue Dragon Soles
+				-- Chronocloth Garments --
+			q(71783),	-- Allied Cinch of Time Dilation
+			q(71781),	-- Bloody Legwraps of Possibility
+			q(71789),	-- Chronocloth Gloves
+			q(71790),	-- Chronocloth Leggings
+			q(71791),	-- Chronocloth Sash
+			q(71776),	-- Hood of Surging Time
+				-- Profession Garments --
+			q(71832),	-- Dragoncloth Tailoring Vestments
+			q(71830),	-- Master's Wildercloth Alchemist's Robe
+			q(71834),	-- Master's Wildercloth Chef's Hat
+			q(71836),	-- Master's Wildercloth Enchanter's Hat
+			--q(),	-- Master's Wildercloth Fishing Cap
+			q(71840),	-- Master's Wildercloth Gardening Hat
+			q(71829),	-- Wildercloth Alchemist's Robe
+			q(71835),	-- Wildercloth Enchanter's Hat
+			q(71833),	-- Wildercloth Chef's Hat
+			q(71837),	-- Wildercloth Fishing Cap
+			q(71839),	-- Wildercloth Gardening Hat
+			q(71831),	-- Wildercloth Tailor's Coat
+				-- Spellthread --
+			q(71825),	-- Frozen Spellthread
+			q(71826),	-- Temporal Spellthread
+			q(71824),	-- Vibrant Spellthread
+				-- Embroidered Bags --
+			q(71847),	-- Chronocloth Reagent Bag
+			q(71815),	-- Azureweave Expedition Pack
+			q(71814),	-- Wildercloth Bag
+			q(71846),	-- Simply Stitched Reagent Bag
+				-- Assorted Embroidery --
+			q(71850),	-- Duck-Stuffed Duck Lovie
+			q(71851),	-- Forlorn Funeral Pall
+			q(71817),	-- Explorer's Banner of Dragon Isles Flora
+			--q(),	-- Explorer's Banner of Dragon Isles Geology
+			q(71855),	-- Dragonscale Expedition's Expedition Tent
+			q(71853),	-- Cold Cushion
+			q(71852),	-- Cushion of Time Travel
+			q(71854),	-- Market Tent
+			q(71816),	-- Wildercloth Bandage
+				-- Experiments --
+			q(71848),	-- Fiddle with Draconium Fabric Cutters
+			--q(),	-- Fiddle with Khaz'gorite Fabric Cutters
+				-- Specc --
+			q(71946),	-- Timeweaving unlocked
+			q(71947),	-- Timeweaving Full maxed out
+			q(71290),	-- Azureweave unlocked
+			q(71294),	-- Azureweave Full maxed out
+		}),
+	}),
+});
