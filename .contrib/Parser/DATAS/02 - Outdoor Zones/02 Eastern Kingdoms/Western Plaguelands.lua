@@ -2485,10 +2485,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						applyclassicphase(PHASE_SIX_CLASSICERA, i(184937, {	-- Chronoboon Displacer
 							["sourceQuest"] = 4972,	-- Counting Out Time
-							["f"] = 55,	-- Consumable
+							["filterID"] = CONSUMABLES,
 							["groups"] = {
 								i(184938, {	-- Supercharged Chronoboon Displacer
-									["f"] = 55,	-- Consumable
+									["filterID"] = CONSUMABLES,
 								}),
 							},
 						})),
@@ -2532,40 +2532,40 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ 46.8, 34.5, WESTERN_PLAGUELANDS },
 						{ 49.8, 33.3, WESTERN_PLAGUELANDS },
 						{ 56.7, 34.7, WESTERN_PLAGUELANDS },
-						
+
 						-- Spooky Cave
 						{ 66.5, 42.2, WESTERN_PLAGUELANDS },
 						{ 68.0, 44.7, WESTERN_PLAGUELANDS },
 						{ 64.0, 48.7, WESTERN_PLAGUELANDS },
 						{ 68.7, 49.2, WESTERN_PLAGUELANDS },
 						{ 67.0, 53.8, WESTERN_PLAGUELANDS },
-						
+
 						-- Gahrron's Withering
 						{ 64.1, 57.9, WESTERN_PLAGUELANDS },
 						{ 63.2, 59.2, WESTERN_PLAGUELANDS },
 						{ 62.0, 58.5, WESTERN_PLAGUELANDS },
-						
+
 						-- Felstone Field
 						{ 36.5, 53.6, WESTERN_PLAGUELANDS },
 						{ 35.9, 57.5, WESTERN_PLAGUELANDS },
 						{ 38.2, 56.3, WESTERN_PLAGUELANDS },
 						{ 40.8, 57.5, WESTERN_PLAGUELANDS },
 						{ 42.2, 54.8, WESTERN_PLAGUELANDS },
-						
+
 						-- Dalson's Tears
 						{ 44.6, 53.5, WESTERN_PLAGUELANDS },
 						{ 45.9, 51.1, WESTERN_PLAGUELANDS },
 						{ 47.9, 53.1, WESTERN_PLAGUELANDS },
 						{ 52.3, 55.0, WESTERN_PLAGUELANDS },
 						{ 47.0, 69.9, WESTERN_PLAGUELANDS },
-						
+
 						-- The Writhing Haunt
 						{ 53.5, 63.5, WESTERN_PLAGUELANDS },
 						{ 52.3, 66.3, WESTERN_PLAGUELANDS },
 						{ 53.3, 66.2, WESTERN_PLAGUELANDS },
 						{ 55.3, 59.6, WESTERN_PLAGUELANDS },
 						{ 57.8, 66.6, WESTERN_PLAGUELANDS },
-						
+
 						-- Ruins of Andorhal
 						{ 41.5, 62.1, WESTERN_PLAGUELANDS },
 						{ 42.8, 64.2, WESTERN_PLAGUELANDS },
@@ -2579,7 +2579,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ 47.6, 70.0, WESTERN_PLAGUELANDS },
 						{ 47.0, 67.1, WESTERN_PLAGUELANDS },
 						{ 49.4, 68.1, WESTERN_PLAGUELANDS },
-						
+
 						-- Caer Darrow
 						{ 63.6, 75.5, WESTERN_PLAGUELANDS },
 						{ 64.9, 74.5, WESTERN_PLAGUELANDS },

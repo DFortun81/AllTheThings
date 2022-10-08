@@ -535,7 +535,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						13866,	-- To The Ramparts!
-						29111,	-- Mor'shan Caravan Delivery
 						28493,	-- Warchief's Command: Ashenvale!
 					},
 				}),

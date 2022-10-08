@@ -469,6 +469,23 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["isBreadcrumb"] = true,
 				}),
+				q(5145, {	-- Dragonscale Leatherworking (H)
+					["qg"] = 7867,	-- Thorkaf Dragoneye
+					["altQuests"] = {
+						5146,	-- Elemental Leatherworking
+						5148,	-- Tribal Leatherworking
+					},
+					["coord"] = { 62.6, 57.4, BADLANDS },
+					["timeline"] = { "removed 4.0.1" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
+						{ "i", 8204, 2 },	-- Tough Scorpid Gloves
+						{ "i", 8165, 10 },	-- Worn Dragonscale
+					},
+					["lvl"] = 40,
+				}),
 				q(3821, {	-- Dreadmaul Rock
 					["qg"] = 9082,	-- Thal'trak Proudtusk
 					["coord"] = { 3.4, 48, BADLANDS },

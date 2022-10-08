@@ -80,30 +80,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(2),		-- Purified Blessing of Power
 			crit(3),		-- Purified Blessing of Fortitude
 		}),
-		ach(14763, {	-- Crypt Couture
-			i(183693),	-- Plague Doctor's Mask
-			crit(1, {	-- Ashen Ink
-				["cost"] = { { "i", 183690, 1 } },
-			}),
-			crit(2, {	-- Jagged Bonesaw
-				["cost"] = { { "i", 183692, 1 } },
-			}),
-			crit(3, {	-- Discarded Grimoire
-				["cost"] = { { "i", 183394, 1 } },
-			}),
-			crit(4, {	-- Sorcerer's Blade
-				["cost"] = { { "i", 183397, 1 } },
-			}),
-			crit(5, {	-- Mucosal Pigment
-				["cost"] = { { "i", 183691, 1 } },
-			}),
-			crit(6, {	-- Amethystine Dye
-				["cost"] = { { "i", 183401, 1 } },
-			}),
-			crit(7, {	-- Ritualist's Mantle
-				["cost"] = { { "i", 183399, 1 } },
-			}),
-		}),
 		ach(15402, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cyphers of the First Ones
 			recipe(365040),	-- Pale Regal Cervid
 		})),

@@ -999,13 +999,14 @@ root("Zones", {
 							i(25565),	-- Spaulders of the Ring
 						},
 					}),
-					q(9871, {	-- Murkblood Invaders! (A)
+					q(9871, {	-- Murkblood Invaders (A)
 						["crs"] = { 18238 },	-- Murkblood Invader
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "i", 24559 },	-- Murkblood Invasion Plans (Alliance Version)
 						["coord"] = { 33.9, 58.0, NAGRAND },
 						-- #if AFTER 9.0.2
-						["lockCriteria"] = { 1, "lvl", 50 },
+						-- confirmed on a lvl 53, no party sync
+						-- ["lockCriteria"] = { 1, "lvl", 50 },
 						-- #endif
 					}),
 					q(9872, {	-- Murkblood Invaders (H)
@@ -1014,7 +1015,7 @@ root("Zones", {
 						["provider"] = { "i", 24558 },	-- Murkblood Invasion Plans (Horde Version)
 						["coord"] = { 33.9, 58.0, NAGRAND },
 						-- #if AFTER 9.0.2
-						["lockCriteria"] = { 1, "lvl", 50 },
+						-- ["lockCriteria"] = { 1, "lvl", 50 },
 						-- #endif
 					}),
 					q(9867, {	-- Murkblood Leaders..

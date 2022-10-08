@@ -317,12 +317,50 @@ _.Zones =
 					["coord"] = { 77.2, 56.5, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(2853, {	-- Master of the Wild Leather
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 7852 },	-- Pratt McGrubben
+				q(2853, {	-- Master of the Wild Leather (A)
+					["qg"] = 7852,	-- Pratt McGrubben
+					["sourceQuests"] = {
+						2851,	-- Wild Leather Boots
+						2850,	-- Wild Leather Helmet
+						2852,	-- Wild Leather Leggings
+						2848,	-- Wild Leather Shoulders
+						2849,	-- Wild Leather Vest
+					},
+					["coord"] = { 30.6, 42.7, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = LEATHERWORKING,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(8408)),	-- Pattern: Wild Leather Cloak
+					["cost"] = {
+						{ "i", 9235, 1 },	-- Pratt's Letter
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						i(8408, {	-- Pattern: Wild Leather Cloak
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(2860, {	-- Master of the Wild Leather (H)
+					["qg"] = 7854,	-- Jangdor Swiftstrider
+					["sourceQuests"] = {
+						2858,	-- Wild Leather Boots
+						2857,	-- Wild Leather Helmet
+						2859,	-- Wild Leather Leggings
+						2855,	-- Wild Leather Shoulders
+						2856,	-- Wild Leather Vest
+					},
+					["coord"] = { 74.43, 42.91, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 9236, 1 },	-- Jangdor's Letter
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						i(8408, {	-- Pattern: Wild Leather Cloak
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(25333, {	-- Might of the Sentinels
@@ -894,6 +932,22 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25641,	-- The Flow of Muisek
 				}),
+				q(5143, {	-- Tribal Leatherworking (A)
+					["qg"] = 7870,	-- Caryssia Moonhunter
+					["altQuests"] = {
+						5141,	-- Dragonscale Leatherworking
+						5144,	-- Elemental Leatherworking
+					},
+					["coord"] = { 89.4, 46.5, FERALAS },
+					["timeline"] = { "removed 4.0.1" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 8214, 1 },	-- Wild Leather Helmet
+						{ "i", 8211, 1 },	-- Wild Leather Vest
+					},
+					["lvl"] = 40,
+				}),
 				q(25349, {	-- Twisted Sisters
 					["provider"] = { "n", 39847 },	-- Chief Spirithorn
 					["coord"] = { 74.5, 42.8, FERALAS },
@@ -981,44 +1035,214 @@ _.Zones =
 						i(157023),	-- Power of the Forest
 					},
 				}),
-				q(2851, {	-- Wild Leather Boots
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 7852 },	-- Pratt McGrubben
+				q(2847, {	-- Wild Leather Armor (A)
+					["qg"] = 7852,	-- Pratt McGrubben
+					["coord"] = { 30.6, 42.7, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = LEATHERWORKING,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(8406)),	-- Pattern: Wild Leather Boots
+					["cost"] = {
+						{ "i", 4304, 10 },	-- Thick Leather
+					},
+					["lvl"] = 30,
+				}),
+				q(2854, {	-- Wild Leather Armor (H)
+					["qg"] = 7854,	-- Jangdor Swiftstrider
+					["coord"] = { 74.43, 42.91, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 4304, 10 },	-- Thick Leather
+					},
+					["lvl"] = 30,
+				}),
+				q(2851, {	-- Wild Leather Boots (A)
+					["qg"] = 7852,	-- Pratt McGrubben
+					["sourceQuest"] = 2847,	-- Wild Leather Armor
+					["coord"] = { 30.6, 42.7, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 8193, 2 },	-- Nightscape Pants
+						{ "i", 8197, 2 },	-- Nightscape Boots
+						{ "i", 8153, 2 },	-- Wildvine
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						i(8406, {	-- Pattern: Wild Leather Boots
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
-				q(2850, {	-- Wild Leather Helmet
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 7852 },	-- Pratt McGrubben
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(8405)),	-- Pattern: Wild Leather Helmet
+				q(2858, {	-- Wild Leather Boots (H)
+					["qg"] = 7854,	-- Jangdor Swiftstrider
+					["sourceQuest"] = 2854,	-- Wild Leather Armor
+					["coord"] = { 74.43, 42.91, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 8193, 2 },	-- Nightscape Pants
+						{ "i", 8197, 2 },	-- Nightscape Boots
+						{ "i", 8153, 2 },	-- Wildvine
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						i(8406, {	-- Pattern: Wild Leather Boots
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
-				q(2852, {	-- Wild Leather Leggings
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 7852 },	-- Pratt McGrubben
+				q(2850, {	-- Wild Leather Helmet (A)
+					["qg"] = 7852,	-- Pratt McGrubben
+					["sourceQuest"] = 2847,	-- Wild Leather Armor
+					["coord"] = { 30.6, 42.7, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = LEATHERWORKING,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(8407)),	-- Pattern: Wild Leather Leggings
+					["cost"] = {
+						{ "i", 8175, 2 },	-- Nightscape Tunic
+						{ "i", 8176, 2 },	-- Nightscape Headband
+						{ "i", 8153, 1 },	-- Wildvine
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						i(8405, {	-- Pattern: Wild Leather Helmet
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
-				q(2848, {	-- Wild Leather Shoulders
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 7852 },	-- Pratt McGrubben
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(8403)),	-- Pattern: Wild Leather Shoulders
+				q(2857, {	-- Wild Leather Helmet (H)
+					["qg"] = 7854,	-- Jangdor Swiftstrider
+					["sourceQuest"] = 2854,	-- Wild Leather Armor
+					["coord"] = { 74.43, 42.91, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 8175, 2 },	-- Nightscape Tunic
+						{ "i", 8176, 2 },	-- Nightscape Headband
+						{ "i", 8153, 1 },	-- Wildvine
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						i(8405, {	-- Pattern: Wild Leather Helmet
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
-				q(2849, {	-- Wild Leather Vest
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 7852 },	-- Pratt McGrubben
+				q(2852, {	-- Wild Leather Leggings (A)
+					["qg"] = 7852,	-- Pratt McGrubben
+					["sourceQuest"] = 2847,	-- Wild Leather Armor
+					["coord"] = { 30.6, 42.7, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = LEATHERWORKING,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(8404)),	-- Pattern: Wild Leather Vest
+					["cost"] = {
+						{ "i", 8191, 2 },	-- Turtle Scale Helm
+						{ "i", 8198, 2 },	-- Turtle Scale Bracers
+						{ "i", 8153, 2 },	-- Wildvine
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						i(8407, {	-- Pattern: Wild Leather Leggings
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(2859, {	-- Wild Leather Leggings (H)
+					["qg"] = 7854,	-- Jangdor Swiftstrider
+					["sourceQuest"] = 2854,	-- Wild Leather Armor
+					["coord"] = { 74.43, 42.91, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 8191, 2 },	-- Turtle Scale Helm
+						{ "i", 8198, 2 },	-- Turtle Scale Bracers
+						{ "i", 8153, 2 },	-- Wildvine
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						i(8407, {	-- Pattern: Wild Leather Leggings
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(2848, {	-- Wild Leather Shoulders (A)
+					["qg"] = 7852,	-- Pratt McGrubben
+					["sourceQuest"] = 2847,	-- Wild Leather Armor
+					["coord"] = { 30.6, 42.7, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 8173, 6 },	-- Thick Armor Kit
+						{ "i", 8153, 1 },	-- Wildvine
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						i(8403, {	-- Pattern: Wild Leather Shoulders
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(2855, {	-- Wild Leather Shoulders (H)
+					["qg"] = 7854,	-- Jangdor Swiftstrider
+					["sourceQuest"] = 2854,	-- Wild Leather Armor
+					["coord"] = { 74.43, 42.91, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 8173, 6 },	-- Thick Armor Kit
+						{ "i", 8153, 1 },	-- Wildvine
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						i(8403, {	-- Pattern: Wild Leather Shoulders
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(2849, {	-- Wild Leather Vest (A)
+					["qg"] = 7852,	-- Pratt McGrubben
+					["sourceQuest"] = 2847,	-- Wild Leather Armor
+					["coord"] = { 30.6, 42.7, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 8189, 2 },	-- Turtle Scale Breastplate
+						{ "i", 8187, 2 },	-- Turtle Scale Gloves
+						{ "i", 8153, 1 },	-- Wildvine
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						i(8404, {	-- Pattern: Wild Leather Vest
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(2856, {	-- Wild Leather Vest (H)
+					["qg"] = 7854,	-- Jangdor Swiftstrider
+					["sourceQuest"] = 2854,	-- Wild Leather Armor
+					["coord"] = { 74.43, 42.91, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 8189, 2 },	-- Turtle Scale Breastplate
+						{ "i", 8187, 2 },	-- Turtle Scale Gloves
+						{ "i", 8153, 1 },	-- Wildvine
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						i(8404, {	-- Pattern: Wild Leather Vest
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(2902, {	-- Woodpaw Investigation

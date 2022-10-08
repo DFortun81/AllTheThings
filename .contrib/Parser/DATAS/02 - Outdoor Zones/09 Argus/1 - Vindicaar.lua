@@ -405,6 +405,12 @@ root("Zones", {
 						["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
 						["coord"] = { 43.7, 29.2, 831 },
 					}),
+					q(48069, {	-- The Wrench Calls
+						["qg"] = 125525,	-- Durael
+						["sourceQuest"] = 46941,	-- The Path Forward
+						["timeline"] = { "added 7.3.0.24614" },
+						["requireSkill"] = ENGINEERING,
+					}),
 					q(48344, {	-- We Have a Problem
 						["sourceQuests"] = { 48461 },	-- Where They Least Expect It
 						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
@@ -470,7 +476,7 @@ root("Zones", {
 						i(152964, {	-- Krokul Flute
 							["collectible"] = false,
 							["cost"] = 5000000,	-- 500g
-							["f"] = 55,	-- Consumables
+							["filterID"] = CONSUMABLES,
 						}),
 						i(153290),	-- Krokul Mining Pick
 						i(153027, {	-- Orphaned Marsuul (PET!)

@@ -231,7 +231,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						["provider"] = { "n", 143551 },	--  Centurion Firescream
 						["g"] = {
 							i(163604, {	-- Net-O-Matic 5000
-								["f"] = 55,	-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 						},
 					}),
@@ -1917,7 +1917,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["lockCriteria"] = { 1, "lvl", 50 },
 				["races"] = HORDE_ONLY,
 			},{
-				-- TODO: Check SQ also probably cant do after a certain level
+				-- TODO: Check SQ, also probably can't do after a certain level
 				q(47527),	-- Rituals of Heresy
 				q(47797),	-- Occupation Hazard
 				q(49315),	-- Dreadpearl Collusion

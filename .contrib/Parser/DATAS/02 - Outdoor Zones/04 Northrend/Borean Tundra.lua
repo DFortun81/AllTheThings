@@ -1420,9 +1420,10 @@ root("Zones", {
 						["sourceQuest"] = 11716,	-- The Wondrous Bloodspore
 					}),
 					q(11945, {	-- Preparing for the Worst
-						["isDaily"] = true,
-						["coord"] = { 64.0, 45.7, BOREAN_TUNDRA },
 						["qg"] = 26213,	-- Utaik
+						["coord"] = { 64.0, 45.7, BOREAN_TUNDRA },
+						["maxReputation"] = { 1073, EXALTED },	-- The Kalu'ak, Exalted.
+						["isDaily"] = true,
 					}),
 					q(11587, {	-- Prison Break
 						["qg"] = 25262,	-- Librarian Donathan
@@ -2303,6 +2304,13 @@ root("Zones", {
 						},
 					}),
 				}),
+				n(PROFESSIONS, {
+					prof(HERBALISM, {
+						i(39970, {	-- Fire Leaf
+							["description"] = "Can be gathered from herbing Firethorn.",
+						}),
+					}),
+				}),
 				-- #if AFTER 6.2.2.20444
 				n(TREASURES, {
 					o(244447, {	-- White Murloc Egg
@@ -2351,10 +2359,14 @@ root("Zones", {
 						["coord"] = { 41.4, 53.7, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							i(50373, {	-- Arcanum of the Savage Gladiator
+								["timeline"] = { "removed 5.0.4" },
+								["filterID"] = CONSUMABLES,
+							}),
 							i(38452),	-- Bulwark of the Warchief
 							i(38460),	-- Charged Wand of the Cleft
 							i(38458),	-- Darkspear Orb
-							i(44938, {	-- Plans: Titanium Plating[H] (RECIPE!)
+							i(44938, {	-- Plans: Titanium Plating [H] (RECIPE!)
 								["timeline"] = { "added 3.0.8" },
 							}),
 							i(44502),	-- Schematic: Mechano-Hog
@@ -2377,11 +2389,15 @@ root("Zones", {
 						["coord"] = { 57.7, 66.4, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							i(50372, {	-- Arcanum of the Savage Gladiator
+								["timeline"] = { "removed 5.0.4" },
+								["filterID"] = CONSUMABLES,
+							}),
 							i(38464),	-- Gnomish Magician's Quill
 							i(38455),	-- Hammer of the Alliance Vanguard
 							i(38463),	-- Lordaeron's Resolve
 							i(38459),	-- Orb of the Eastern Kingdons
-							i(44937, {	-- Plans: Titanium Plating[A] (RECIPE!)
+							i(44937, {	-- Plans: Titanium Plating [A] (RECIPE!)
 								["timeline"] = { "added 3.0.8" },
 							}),
 							i(38457),	-- Sawed-Off Hand Cannon

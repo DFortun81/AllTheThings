@@ -783,7 +783,7 @@ root("Zones", m(BROKEN_ISLES, {
 			n(BONUS_OBJECTIVES, sharedData({
 				["lockCriteria"] = { 1, "lvl", 45 },
 			},{
-				-- TODO: Check SQ also probably cant do after a certain level
+				-- TODO: Check SQ, also probably can't do after a certain level
 				q(37965),	-- A Tainted Vintage
 				q(42020),	-- Bonus Objective: Hatecoil Warcamp
 				q(37495, {	-- Plunder the Cove

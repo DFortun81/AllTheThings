@@ -383,7 +383,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				q(39023, {	-- Call of the Archmage
-					-- Cant find provider
+					-- Can't find provider
 					["sourceQuests"] = {
 						36014,	-- Blackhand's Secret
 						36016,	-- The Unbroken Circle
@@ -476,7 +476,7 @@ _.ExpansionFeatures =
 				}),
 				-- Part 4
 				q(39024, {	-- Call of the Archmage
-					-- Cant find provider
+					-- Can't find provider
 					["sourceQuests"] = { 37841 },	-- The Final Assault
 					["isBreadcrumb"] = true,
 					["timeline"] = {

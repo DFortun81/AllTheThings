@@ -93,94 +93,110 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	}),
 	tier(TBC_TIER, {
-		n(-534, { -- Original The Burning Crusade Collectors Edition
-			["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
-			["timeline"] = { "added 2.0.1" },
-			["groups"] = {
-				ach(665),	-- Collector's Edition: Netherwhelp
-				i(25535),	-- Netherwhelp's Collar (Netherwhelp)
-				i(30360, {	-- Lurky's Egg (Lurky)
-					["description"] = "This was only available in the EU.",
-				}),
-			},
-		}),
-		n(-581, {	-- TBC Classic Deluxe Edition
-			["timeline"] = { "added 2.5.1" },
-			["groups"] = {
-				-- #if ANYCLASSIC
-				n(QUESTS, {
-					q(63450, {	-- A Deluxe Delivery (Landro Longshot)
-						["qg"] = 17249,	-- Landro Longshot <The Black Flame>
-						["altQuests"] = { 63448 },	-- A Deluxe Delivery (Cities)
-						["coord"] = { 28.0, 75.8, STRANGLETHORN_VALE },
-						["maps"] = {
-							THE_EXODAR,
-							IRONFORGE,
-							STORMWIND_CITY,
-							UNDERCITY,
-							THUNDER_BLUFF,
-							ORGRIMMAR,
-							SILVERMOON_CITY,
-						},
-						["crs"] = {
-							16739,	-- Caregiver Breel <Innkeeper>
-							5111,	-- Innkeeper Firebrew <Innkeeper>
-							6740,	-- Innkeeper Allison <Innkeeper>
-							6741,	-- Innkeeper Norman <Innkeeper>
-							6746,	-- Innkeeper Pala <Innkeeper>
-							6929,	-- Innkeeper Gryshka <Innkeeper>
-							16618,	-- Innkeeper Velandra <Innkeeper>
-							17630,	-- Innkeeper Jovia <Innkeeper>
-						},
-						["groups"] = {
-							i(184865),	-- Reawakened Phase-Hunter
-							i(184871),	-- Dark Portal
-							i(38233),	-- Path of Illidan
-						},
-					}),
-				}),
-				-- #else
-				mount(346136),	-- Viridian Phase-Hunter (MOUNT!)
-				-- #endif
-				
-				n(-579, {	-- Dark Portal Pass
-					["description"] = "These rewards were made available to anyone who purchased a Dark Portal Pass for TBC Classic.\n\nThe act of adding items for real money to the In-Game Shop in Classic has widely been frowned upon.",
+		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
+		["timeline"] = { "added 2.0.1" },
+		["groups"] = {
+			ach(665),	-- Collector's Edition: Netherwhelp
+			i(25535),	-- Netherwhelp's Collar (Netherwhelp)
+			i(30360, {	-- Lurky's Egg (Lurky)
+				["description"] = "This was only available in the EU.",
+			}),
+		},
+	}),
+	n(-581, {	-- TBC Classic Deluxe Edition
+		["timeline"] = { "added 2.5.1" },
+		["groups"] = {
+			-- #if ANYCLASSIC
+			n(QUESTS, {
+				q(63450, {	-- A Deluxe Delivery (Landro Longshot)
+					["qg"] = 17249,	-- Landro Longshot <The Black Flame>
+					["altQuests"] = { 63448 },	-- A Deluxe Delivery (Cities)
+					["coord"] = { 28.0, 75.8, STRANGLETHORN_VALE },
+					["maps"] = {
+						THE_EXODAR,
+						IRONFORGE,
+						STORMWIND_CITY,
+						UNDERCITY,
+						THUNDER_BLUFF,
+						ORGRIMMAR,
+						SILVERMOON_CITY,
+					},
+					["crs"] = {
+						16739,	-- Caregiver Breel <Innkeeper>
+						5111,	-- Innkeeper Firebrew <Innkeeper>
+						6740,	-- Innkeeper Allison <Innkeeper>
+						6741,	-- Innkeeper Norman <Innkeeper>
+						6746,	-- Innkeeper Pala <Innkeeper>
+						6929,	-- Innkeeper Gryshka <Innkeeper>
+						16618,	-- Innkeeper Velandra <Innkeeper>
+						17630,	-- Innkeeper Jovia <Innkeeper>
+					},
 					["groups"] = {
-						-- Appropriate Gear for the Boosted Character
+						i(184865),	-- Reawakened Phase-Hunter
+						i(184871),	-- Dark Portal
+						i(38233),	-- Path of Illidan
 					},
 				}),
-			},
-		}),
+			}),
+			-- #else
+			mount(346136),	-- Viridian Phase-Hunter (MOUNT!)
+			-- #endif
+
+			n(-579, {	-- Dark Portal Pass
+				["description"] = "These rewards were made available to anyone who purchased a Dark Portal Pass for TBC Classic.\n\nThe act of adding items for real money to the In-Game Shop in Classic has widely been frowned upon.",
+				["groups"] = {
+					-- Appropriate Gear for the Boosted Character
+				},
+			}),
+		},
 	}),
 	tier(WOTLK_TIER, {
-		n(-534, {	-- Original WOTLK Collectors Edition
-			["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
-			["timeline"] = { "added 3.0.1" },
-			["groups"] = {
-				ach(683),	-- Collector's Edition: Frost Wyrm Whelp
-				i(39286),	-- Frosty's Collar (Frosty)
-			},
-		}),
-		n(-583, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- WOTLK Northrend Heroic Upgrade
-			["timeline"] = { "added 3.3.5" },
-			["groups"] = {
-				-- #if ANYCLASSIC
-				i(192455),	-- Kalu'ak Whalebone Glider
-				-- #else
-				mount(370770),	-- Tuskarr Shoreglider
-				-- #endif
-				
-				n(-582, {	-- WOTLK Northrend Epic Upgrade ("Cheap")
-					["groups"] = {
-						-- #if ANYCLASSIC
-						i(198665),	-- Pebble's Pebble
-						i(198647),	-- Fishspeaker's Lucky Lure
-						-- #endif
+		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+		["timeline"] = { "added 3.0.1" },
+		["groups"] = {
+			ach(683),	-- Collector's Edition: Frost Wyrm Whelp
+			i(39286),	-- Frosty's Collar (Frosty)
+		},
+	}),
+	n(-583, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- WOTLK Northrend Heroic Upgrade
+		["timeline"] = { "added 3.3.5" },
+		["groups"] = {
+			-- #if ANYCLASSIC
+			i(192455),	-- Kalu'ak Whalebone Glider
+			-- #else
+			mount(370770),	-- Tuskarr Shoreglider
+			-- #endif
+			-- #if ANYCLASSIC
+			n(-582, {	-- WOTLK Northrend Epic Upgrade ("Cheap")
+				i(198665),	-- Pebble's Pebble
+				i(198647),	-- Fishspeaker's Lucky Lure
+				ach(16332, {	-- The Perfect Pebble
+					["providers"] = {
+						{ "n", 194870 },	-- Pebble
+						{ "i", 199914 },	-- Glowing Pebble
+					},
+					["cost"] = {
+						{ "i", 41812, 1 },	-- Barrelhead Goby
+						{ "i", 41808, 1 },	-- Bonescale Snapper
+						{ "i", 41805, 1 },	-- Borean Man O' War
+						{ "i", 41800, 1 },	-- Deep Sea Monsterbelly
+						{ "i", 41807, 1 },	-- Dragonfin Angelfish
+						{ "i", 41810, 1 },	-- Fangtooth Herring
+						{ "i", 43646, 1 },	-- Fountain Goldfish
+						{ "i", 41809, 1 },	-- Glacial Salmon
+						{ "i", 41814, 1 },	-- Glassfin Minnow
+						{ "i", 41802, 1 },	-- Imperial Manta Ray
+						{ "i", 41801, 1 },	-- Moonglow Cuttlefish
+						{ "i", 41806, 1 },	-- Musselback Sculpin
+						{ "i", 41813, 1 },	-- Nettlefish
+						{ "i", 40199, 1 },	-- Pygmy Suckerfish
+						{ "i", 41803, 1 },	-- Rockfin Grouper
 					},
 				}),
-			},
-		})),
-	}),
+			}),
+			-- #endif
+		},
+	})),
 	tier(CATA_TIER, {
 		n(-534, {	-- Original Cata Collectors Edition
 			["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",

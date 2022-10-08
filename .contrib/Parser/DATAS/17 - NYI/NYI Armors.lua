@@ -58,7 +58,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(5005),	-- Emberspark Pendant
 				i(13811),	-- Necklace of the Dawn
 				i(23058),	-- Life Channeling Necklace
-				i(5004),	-- Mark of the Kirin Tor
 				--
 				i(7550),	-- Warrior's Honor
 				i(18023),	-- Blood Ruby Pendant

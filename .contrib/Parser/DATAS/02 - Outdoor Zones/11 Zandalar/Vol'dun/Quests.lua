@@ -1557,7 +1557,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["lockCriteria"] = { 1, "lvl", 50 },
 				["races"] = HORDE_ONLY,
 			},{
-				-- TODO: probably cant do after a certain level?
+				-- TODO: probably can't do after a certain level?
 				q(47647, {	-- Monsters of Zem'lan
 					["sourceQuests"] = {
 						51054,	-- Overdue Mutiny

@@ -1561,3 +1561,5 @@
 377071,Crimson Gladiator's Drake
 394737,Vicious Sabertooth
 394738,Vicious Sabertooth
+10.0.2.45969
+387231,Hailstorm Armoredon

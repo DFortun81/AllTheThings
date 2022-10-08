@@ -128,7 +128,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190731),	-- Deceiver's Illusionary Signet
 					i(189968),	-- Dreadlord General's Tunic
 					i(190125, {	-- Kris of Intricate Secrets
-						["filterID"] = 20,	-- Dagger, blizzard is dumb
+						["filterID"] = DAGGERS,
 					}),
 					i(189948),	-- Strangulating Chainlink Lasso
 				},

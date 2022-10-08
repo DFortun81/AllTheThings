@@ -1,22 +1,15 @@
 # AllTheThings
 
-## [SL-2.9.8](https://github.com/DFortun81/AllTheThings/tree/SL-2.9.8) (2022-09-25)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.9.7...SL-2.9.8) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
-
-
-### Functional changes
-
-- Overhauled internal logic concerning reputations: we will work with new Friedship repuatations better, including using proper colors. Also fixed some Lua errors concerning Friendships in the process.
+## [SL-2.9.10](https://github.com/DFortun81/AllTheThings/tree/SL-2.9.10) (2022-10-04)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.9.9...SL-2.9.10) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
 ### Logic fixes
 
-- Screenshots 📸 should now only be taken when collecting a Thing which is actually being tracked as collectible (note that screenshots are only triggered from automated checks of new Things, and many Types of Things do rely on manual refreshes and will not trigger screenshots when collected in this way).
+- Fixed an issue with Heirlooms introduced by changing how they filter in previous release. We will consider Appearance collected in Unique mode if you only know it from Heirlooms (as it was before the last release).
 
 
 ### Data fixes
 
-- More fixes for Battle for Azeroth PvP sets.
-- Fixed Trashmaster Mantle AGAIN. This fix is for the version which specifically comes from Great Vault.
-- Tiny changes for Brewfest and Hallow's End.
-- Other fixes, quite a lot of fixed quest lines in this update.
+- You can get the Shrouded Banner of the Opportune toy again if you missed it during The Great Push SL Season 4. Check out [Raider.IO's Break the Meta](https://raider.io/news/403-break-the-meta-s4-arrives-october-4th) event!
+- Other fixes.

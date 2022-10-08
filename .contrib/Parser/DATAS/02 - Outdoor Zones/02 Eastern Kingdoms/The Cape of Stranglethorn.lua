@@ -1185,6 +1185,25 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 41.1, 73.1, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
+				q(3643, {	-- Show Your Work
+					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
+					["sourceQuest"] = 3642,	-- The Pledge of Secrecy
+					["altQuests"] = { 3639, 3641 },	-- The Pledge of Secrecy
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
+					["timeline"] = { "removed 4.0.3.2000" },
+					["requireSkill"] = ENGINEERING,
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 4392, 2 },	-- Advanced Target Dummy
+						{ "i", 4407, 1 },	-- Accurate Scope
+						{ "i", 10559, 6 },	-- Mithril Tube
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						i(10790),	-- Gnome Engineer Membership Card
+					},
+				}),
 				q(605, {	-- Singing Blue Shards
 					["qg"] = 2498,	-- Crank Fizzlebub
 					["coord"] = { 27.12, 77.22, STRANGLETHORN_VALE },
@@ -1606,6 +1625,26 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1493,	-- Mok'rash
 					["lvl"] = 35,
+				}),
+				q(3642, {	-- The Pledge of Secrecy
+					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
+					["sourceQuests"] = {
+						3635,	-- Gnome Engineering
+						3637,	-- Gnome Engineering
+					},
+					["altQuests"] = { 3638, 3640 },	-- The Pledge of Secrecy
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
+					["timeline"] = { "removed 4.0.3.2000" },
+					["requireSkill"] = ENGINEERING,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- 0/1 Oglethorpe's Signed Pledge
+							["provider"] = { "i", 11282 },	-- Oglethorpe's Signed Pledge
+							["cost"] = { { "i", 10794, 1 } },	-- Oglethorpe's Pledge of Secrecy
+						}),
+					},
 				}),
 				q(578, {	-- The Stone of the Tides
 					["providers"] = {

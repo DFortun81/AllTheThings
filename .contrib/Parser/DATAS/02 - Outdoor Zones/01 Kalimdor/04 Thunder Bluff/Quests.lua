@@ -94,12 +94,13 @@ _.Zones =
 					["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
-				q(769,   {	-- Kodo Hide Bag
+				q(769, {	-- Kodo Hide Bag
+					["qg"] = 3050,	-- Veren Tallstrider
+					["coord"] = { 44, 44.6, THUNDER_BLUFF },
 					["requireSkill"] = LEATHERWORKING,
-					["provider"] = { "n", 3050 },	-- Veren Tallstrider
-					["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["lvl"] = 5,
+					["groups"] = {
 						i(5083),	-- Pattern: Kodo Hide Bag
 					},
 				}),

@@ -112,9 +112,7 @@ profession(TAILORING, {
 				{
 					["name"] = "Black Silk Pack",
 					["recipeID"] = 6695,
-					-- #if AFTER SHADOWLANDS
-					["u"] = REMOVED_FROM_GAME,
-					-- #endif
+					["timeline"] = { "removed 4.0.3" },
 				},
 				{
 					["name"] = "Bottomless Bag",
@@ -404,24 +402,18 @@ profession(TAILORING, {
 					["name"] = "Felcloth Robe",
 					["recipeID"] = 18451
 				},
-				{
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Festival Dress",
 					["recipeID"] = 26403,
-					-- #if NOT ANYCLASSIC
-					["u"] = LUNAR_FESTIVAL,
-					-- #endif
-				},
-				{
+				}),
+				applyholiday(LUNAR_FESTIVAL, {
 					["name"] = "Festival Suit",
 					["recipeID"] = 26407,
-					-- #if NOT ANYCLASSIC
-					["u"] = LUNAR_FESTIVAL,
-					-- #endif
-				},
-				{
+				}),
+				applyclassicphase(PHASE_THREE, {
 					["name"] = "Flarecore Robe",
 					["recipeID"] = 23666
-				},
+				}),
 				{
 					["name"] = "Frostweave Robe",
 					["recipeID"] = 18404
@@ -451,19 +443,16 @@ profession(TAILORING, {
 					["name"] = "Green Silk Armor",
 					["recipeID"] = 8784
 				},
-				applyclassicphase(TBC_PHASE_ONE, {
+				applyholiday(FEAST_OF_WINTER_VEIL, {
 					["name"] = "Green Winter Clothes",
 					["timeline"] = { "added 2.3.0.7382" },
 					["recipeID"] = 44950,
-					-- #if NOT ANYCLASSIC
-					["u"] = FEAST_OF_WINTER_VEIL,
-					-- #endif
 				}),
 				{
 					["name"] = "Green Woolen Vest",
 					["recipeID"] = 2399
 				},
-				applyclassicphase(TBC_PHASE_ONE, {
+				applyholiday(FEAST_OF_WINTER_VEIL, {
 					["name"] = "Haliscan Jacket",
 					["timeline"] = { "added 2.4.2.8301" },
 					["recipeID"] = 50644
@@ -472,10 +461,10 @@ profession(TAILORING, {
 					["name"] = "Lesser Wizard's Robe",
 					["recipeID"] = 6690
 				},
-				{
+				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Mooncloth Robe",
 					["recipeID"] = 22902,
-				},
+				}),
 				{
 					["name"] = "Mooncloth Vest",
 					["recipeID"] = 18447
@@ -492,13 +481,10 @@ profession(TAILORING, {
 					["name"] = "Red Mageweave Vest",
 					["recipeID"] = 12056
 				},
-				applyclassicphase(TBC_PHASE_ONE, {
+				applyholiday(FEAST_OF_WINTER_VEIL, {
 					["name"] = "Red Winter Clothes",
 					["timeline"] = { "added 2.3.0.7382" },
 					["recipeID"] = 44958,
-					-- #if NOT ANYCLASSIC
-					["u"] = FEAST_OF_WINTER_VEIL,
-					-- #endif
 				}),
 				{
 					["name"] = "Robe of Power",
@@ -511,7 +497,10 @@ profession(TAILORING, {
 				{
 					["name"] = "Robe of the Void",
 					["timeline"] = { "removed 5.0.4.10000" },
-					["recipeID"] = 18458
+					["recipeID"] = 18458,
+					-- #if AFTER TBC
+					["classes"] = { WARLOCK },
+					-- #endif
 				},
 				{
 					["name"] = "Robe of Winter Night",
@@ -780,10 +769,10 @@ profession(TAILORING, {
 					["name"] = "Felcloth Pants",
 					["recipeID"] = 18419
 				},
-				{
+				applyclassicphase(PHASE_THREE, {
 					["name"] = "Flarecore Leggings",
 					["recipeID"] = 23667
-				},
+				}),
 				{
 					["name"] = "Frostweave Pants",
 					["recipeID"] = 18424
@@ -1035,13 +1024,10 @@ profession(TAILORING, {
 					["name"] = "Gray Woolen Shirt",
 					["recipeID"] = 2406
 				},
-				{
+				applyholiday(FEAST_OF_WINTER_VEIL, {
 					["name"] = "Green Holiday Shirt",
 					["recipeID"] = 21945,
-					-- #if NOT ANYCLASSIC
-					["u"] = FEAST_OF_WINTER_VEIL,
-					-- #endif
-				},
+				}),
 				{
 					["name"] = "Green Linen Shirt",
 					["recipeID"] = 2396
@@ -1214,18 +1200,22 @@ profession(TAILORING, {
 			["groups"] = {
 				{
 					["name"] = "Golden Spellthread",
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					["recipeID"] = 31433
 				},
 				{
 					["name"] = "Mystic Spellthread",
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					["recipeID"] = 31430
 				},
 				{
 					["name"] = "Runic Spellthread",
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					["recipeID"] = 31432
 				},
 				{
 					["name"] = "Silver Spellthread",
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					["recipeID"] = 31431
 				}
 			}
@@ -1257,10 +1247,6 @@ profession(TAILORING, {
 				{
 					["name"] = "Primal Mooncloth Bag",
 					["recipeID"] = 26763
-				},
-				{
-					["name"] = "Satchel of Cenarius",
-					["recipeID"] = 27725
 				},
 				{
 					["name"] = "Spellfire Bag",
@@ -1296,10 +1282,10 @@ profession(TAILORING, {
 					["recipeID"] = 26756
 				},
 				-- #endif
-				{
+				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Mantle of Nimble Thought",
 					["recipeID"] = 41206
-				},
+				}),
 				-- #if AFTER 4.0.1.12984
 				{
 					["name"] = "Primal Mooncloth Shoulders",
@@ -1310,11 +1296,11 @@ profession(TAILORING, {
 					["name"] = "Soulcloth Shoulders",
 					["recipeID"] = 26780
 				},
-				{
+				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Swiftheal Mantle",
 					["recipeID"] = 41208
-				}
-			}
+				}),
+			},
 		},
 		{
 			["name"] = "Robes & Tunics",
@@ -1326,6 +1312,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Flameheart Vest",
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					["recipeID"] = 37884
 				},
 				-- #if AFTER 4.0.1.12984
@@ -1356,10 +1343,10 @@ profession(TAILORING, {
 					["recipeID"] = 26762
 				},
 				-- #endif
-				{
+				applyclassicphase(TBC_PHASE_FIVE, {
 					["name"] = "Robe of Eternal Light",
 					["recipeID"] = 46131
-				},
+				}),
 				{
 					["name"] = "Soulcloth Vest",
 					["recipeID"] = 26781
@@ -1370,11 +1357,11 @@ profession(TAILORING, {
 					["recipeID"] = 26754
 				},
 				-- #endif
-				{
+				applyclassicphase(TBC_PHASE_FIVE, {
 					["name"] = "Sunfire Robe",
 					["recipeID"] = 46130
-				}
-			}
+				}),
+			},
 		},
 		{
 			["name"] = "Bracers",
@@ -1392,44 +1379,45 @@ profession(TAILORING, {
 					["name"] = "Bracers of Havok",
 					["recipeID"] = 31435
 				},
-				{
+				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Bracers of Nimble Thought",
 					["recipeID"] = 41205
-				},
+				}),
 				{
 					["name"] = "Flameheart Bracers",
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					["recipeID"] = 37882
 				},
 				{
 					["name"] = "Netherweave Bracers",
 					["recipeID"] = 26764
 				},
-				{
+				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Soulguard Bracers",
 					["recipeID"] = 40021
-				},
-				{
+				}),
+				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Swiftheal Wraps",
 					["recipeID"] = 41207
-				},
+				}),
 				{
 					["name"] = "Unyielding Bracers",
 					["recipeID"] = 31434
-				}
-			}
+				},
+			},
 		},
 		{
 			["name"] = "Belts",
 			["categoryID"] = 1007,
 			["groups"] = {
-				{
+				applyclassicphase(TBC_PHASE_TWO, {
 					["name"] = "Belt of Blasting",
 					["recipeID"] = 36315
-				},
-				{
+				}),
+				applyclassicphase(TBC_PHASE_TWO, {
 					["name"] = "Belt of the Long Road",
 					["recipeID"] = 36316
-				},
+				}),
 				{
 					["name"] = "Black Belt of Knowledge",
 					["recipeID"] = 31444
@@ -1448,10 +1436,10 @@ profession(TAILORING, {
 					["recipeID"] = 26760
 				},
 				-- #endif
-				{
+				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Soulguard Girdle",
 					["recipeID"] = 40024
-				},
+				}),
 				-- #if AFTER 4.0.1.12984
 				{
 					["name"] = "Spellfire Belt",
@@ -1461,8 +1449,8 @@ profession(TAILORING, {
 				{
 					["name"] = "Unyielding Girdle",
 					["recipeID"] = 31442
-				}
-			}
+				},
+			},
 		},
 		{
 			["name"] = "Gloves",
@@ -1470,12 +1458,13 @@ profession(TAILORING, {
 			["groups"] = {
 				{
 					["name"] = "Flameheart Gloves",
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					["recipeID"] = 37883
 				},
-				{
+				applyclassicphase(TBC_PHASE_FIVE, {
 					["name"] = "Hands of Eternal Light",
 					["recipeID"] = 46129
-				},
+				}),
 				{
 					["name"] = "Netherweave Gloves",
 					["recipeID"] = 26770
@@ -1490,11 +1479,11 @@ profession(TAILORING, {
 					["recipeID"] = 26753
 				},
 				-- #endif
-				{
+				applyclassicphase(TBC_PHASE_FIVE, {
 					["name"] = "Sunfire Handwraps",
 					["recipeID"] = 46128
-				}
-			}
+				}),
+			},
 		},
 		{
 			["name"] = "Pants",
@@ -1512,10 +1501,10 @@ profession(TAILORING, {
 					["name"] = "Netherweave Pants",
 					["recipeID"] = 26771
 				},
-				{
+				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Soulguard Leggings",
 					["recipeID"] = 40023
-				},
+				}),
 				{
 					["name"] = "Spellstrike Pants",
 					["recipeID"] = 31452
@@ -1534,14 +1523,14 @@ profession(TAILORING, {
 					["name"] = "Arcanoweave Boots",
 					["recipeID"] = 26783
 				},
-				{
+				applyclassicphase(TBC_PHASE_TWO, {
 					["name"] = "Boots of Blasting",
 					["recipeID"] = 36317
-				},
-				{
+				}),
+				applyclassicphase(TBC_PHASE_TWO, {
 					["name"] = "Boots of the Long Road",
 					["recipeID"] = 36318
-				},
+				}),
 				-- #if AFTER 4.0.1.12984
 				{
 					["name"] = "Frozen Shadoweave Boots",
@@ -1556,11 +1545,11 @@ profession(TAILORING, {
 					["name"] = "Netherweave Boots",
 					["recipeID"] = 26772
 				},
-				{
+				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Soulguard Slippers",
 					["recipeID"] = 40020
-				}
-			}
+				}),
+			},
 		},
 		{
 			["name"] = "Cloaks",
@@ -1582,10 +1571,10 @@ profession(TAILORING, {
 					["name"] = "Manaweave Cloak",
 					["recipeID"] = 31450
 				},
-				{
+				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Night's End",
 					["recipeID"] = 40060
-				},
+				}),
 				{
 					["name"] = "Resolute Cape",
 					["recipeID"] = 31448
@@ -1664,10 +1653,10 @@ profession(TAILORING, {
 					["name"] = "Flying Carpet",
 					["recipeID"] = 60969
 				},
-				{
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Frosty Flying Carpet",
 					["recipeID"] = 75597
-				},
+				}),
 				{
 					["name"] = "Magnificent Flying Carpet",
 					["recipeID"] = 60971
@@ -1750,10 +1739,10 @@ profession(TAILORING, {
 					["name"] = "Aurora Slippers",
 					["recipeID"] = 56023
 				},
-				{
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Deathfrost Boots",
 					["recipeID"] = 70551
-				},
+				}),
 				{
 					["name"] = "Duskweave Boots",
 					["recipeID"] = 55924
@@ -1770,22 +1759,22 @@ profession(TAILORING, {
 					["name"] = "Glacial Slippers",
 					["recipeID"] = 60994
 				},
-				{
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Sandals of Consecration",
 					["recipeID"] = 70553
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Savior's Slippers",
 					["recipeID"] = 63206
-				},
+				}),
 				{
 					["name"] = "Silky Iceshard Boots",
 					["recipeID"] = 56019
 				},
-				{
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Spellslinger's Slippers",
 					["recipeID"] = 63204
-				}
+				}),
 			}
 		},
 		{
@@ -1812,14 +1801,14 @@ profession(TAILORING, {
 					["name"] = "Frostwoven Leggings",
 					["recipeID"] = 56030
 				},
-				{
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Leggings of Woven Death",
 					["recipeID"] = 70550
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Lightweave Leggings",
 					["recipeID"] = 70552
-				}
+				}),
 			}
 		},
 		{
@@ -1870,10 +1859,10 @@ profession(TAILORING, {
 			["name"] = "Belts",
 			["categoryID"] = 992,
 			["groups"] = {
-				{
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Cord of the White Dawn",
 					["recipeID"] = 63205
-				},
+				}),
 				{
 					["name"] = "Deep Frozen Cord",
 					["recipeID"] = 56020
@@ -1894,10 +1883,10 @@ profession(TAILORING, {
 					["name"] = "Glacial Waistband",
 					["recipeID"] = 60990
 				},
-				{
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Sash of Ancient Power",
 					["recipeID"] = 63203
-				}
+				}),
 			}
 		},
 		{
@@ -1928,16 +1917,16 @@ profession(TAILORING, {
 					["name"] = "Glacial Robe",
 					["recipeID"] = 60993
 				},
-				{
+				applyclassicphase(WRATH_PHASE_THREE, {
 					["name"] = "Merlin's Robe",
 					["recipeID"] = 67066,
 					["races"] = ALLIANCE_ONLY,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {
 					["name"] = "Merlin's Robe",
 					["recipeID"] = 67146,
 					["races"] = HORDE_ONLY,
-				},
+				}),
 				{
 					["name"] = "Moonshroud Robe",
 					["recipeID"] = 56024
@@ -1946,16 +1935,16 @@ profession(TAILORING, {
 					["name"] = "Mystic Frostwoven Robe",
 					["recipeID"] = 55911
 				},
-				{
+				applyclassicphase(WRATH_PHASE_THREE, {
 					["name"] = "Royal Moonshroud Robe",
 					["recipeID"] = 67064,
 					["races"] = ALLIANCE_ONLY,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {
 					["name"] = "Royal Moonshroud Robe",
 					["recipeID"] = 67144,
 					["races"] = HORDE_ONLY,
-				},
+				}),
 				{
 					["name"] = "Spellweave Robe",
 					["recipeID"] = 56028
@@ -2058,6 +2047,7 @@ profession(TAILORING, {
 			["name"] = "Materials",
 			["categoryID"] = 985,
 			["groups"] = {
+				recipe(59390),	-- Northern Cloth Scavenging
 				{
 					["name"] = "Bolt of Frostweave",
 					["recipeID"] = 55899
@@ -2084,16 +2074,16 @@ profession(TAILORING, {
 			["name"] = "Bracers",
 			["categoryID"] = 991,
 			["groups"] = {
-				{
+				applyclassicphase(WRATH_PHASE_THREE, {
 					["name"] = "Bejeweled Wizard's Bracers",
 					["recipeID"] = 67079,
 					["races"] = ALLIANCE_ONLY,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {
 					["name"] = "Bejeweled Wizard's Bracers",
 					["recipeID"] = 67145,
 					["races"] = HORDE_ONLY,
-				},
+				}),
 				{
 					["name"] = "Black Duskweave Wristwraps",
 					["recipeID"] = 55943
@@ -2114,16 +2104,16 @@ profession(TAILORING, {
 					["name"] = "Mystic Frostwoven Wristwraps",
 					["recipeID"] = 55913
 				},
-				{
+				applyclassicphase(WRATH_PHASE_THREE, {
 					["name"] = "Royal Moonshroud Bracers",
 					["recipeID"] = 67065,
 					["races"] = ALLIANCE_ONLY,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {
 					["name"] = "Royal Moonshroud Bracers",
 					["recipeID"] = 67147,
 					["races"] = HORDE_ONLY,
-				},
+				}),
 			}
 		},
 		-- #if AFTER BFA
@@ -2244,10 +2234,10 @@ profession(TAILORING, {
 					["name"] = "Illusionary Bag",
 					["recipeID"] = 75308
 				},
-				{
+				applyclassicphase(CATA_PHASE_TWO, {
 					["name"] = "Luxurious Silk Gem Bag",
 					["recipeID"] = 100585
-				},
+				}),
 				{
 					["name"] = "Otherworldly Bag",
 					["recipeID"] = 75265
@@ -2332,18 +2322,18 @@ profession(TAILORING, {
 			["name"] = "Bracers",
 			["categoryID"] = 978,
 			["groups"] = {
-				{
+				applyclassicphase(CATA_PHASE_THREE, {
 					["name"] = "Bracers of Unconquered Power",
 					["recipeID"] = 101923
-				},
+				}),
 				{
 					["name"] = "Deathsilk Bracers",
 					["recipeID"] = 75249
 				},
-				{
+				applyclassicphase(CATA_PHASE_THREE, {
 					["name"] = "Dreamwraps of the Light",
 					["recipeID"] = 101922
-				},
+				}),
 				{
 					["name"] = "Spiritmend Bracers",
 					["recipeID"] = 75259
@@ -2396,14 +2386,14 @@ profession(TAILORING, {
 					["name"] = "Deathsilk Gloves",
 					["recipeID"] = 75253
 				},
-				{
+				applyclassicphase(CATA_PHASE_TWO, {
 					["name"] = "Don Tayo's Inferno Mittens",
 					["recipeID"] = 99449
-				},
-				{
+				}),
+				applyclassicphase(CATA_PHASE_TWO, {
 					["name"] = "Grips of Altered Reality",
 					["recipeID"] = 99448
-				},
+				}),
 				{
 					["name"] = "Spiritmend Gloves",
 					["recipeID"] = 75262
@@ -2434,10 +2424,10 @@ profession(TAILORING, {
 					["name"] = "Flame-Ascended Pantaloons",
 					["recipeID"] = 75301
 				},
-				{
+				applyclassicphase(CATA_PHASE_THREE, {
 					["name"] = "Lavaquake Legwraps",
 					["recipeID"] = 101921
-				},
+				}),
 				{
 					["name"] = "Spiritmend Leggings",
 					["recipeID"] = 75263
@@ -2450,28 +2440,28 @@ profession(TAILORING, {
 					["name"] = "Vicious Fireweave Pants",
 					["recipeID"] = 75302
 				},
-				{
+				applyclassicphase(CATA_PHASE_THREE, {
 					["name"] = "World Mender's Pants",
 					["recipeID"] = 101920
-				}
+				}),
 			}
 		},
 		{
 			["name"] = "Boots",
 			["categoryID"] = 982,
 			["groups"] = {
-				{
+				applyclassicphase(CATA_PHASE_TWO, {
 					["name"] = "Boots of the Black Flame",
 					["recipeID"] = 99460
-				},
+				}),
 				{
 					["name"] = "Deathsilk Boots",
 					["recipeID"] = 75252
 				},
-				{
+				applyclassicphase(CATA_PHASE_TWO, {
 					["name"] = "Endless Dream Walkers",
 					["recipeID"] = 99459
-				},
+				}),
 				{
 					["name"] = "Spiritmend Boots",
 					["recipeID"] = 75261
@@ -3242,6 +3232,38 @@ profession(TAILORING, {
 		}),
 	})),
 	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, {
+		n(DROPS, {
+			q(36236, {	-- The Cryptic Tome of Tailoring
+				["provider"] = { "i", 114972 },	-- Cryptic Tome of Tailoring
+				["description"] = "This item can drop from any Draenor mob.",
+				["timeline"] = { "added 6.0.1.18522" },
+				["requireSkill"] = TAILORING,
+				["races"] = ALLIANCE_ONLY,
+				["maps"] = {
+					FROSTFIRE_RIDGE,
+					GORGROND,
+					DRAENOR_NAGRAND,
+					DRAENOR_SHADOWMOON_VALLEY,
+					SPIRES_OF_ARAK,
+					TALADOR,
+				},
+			}),
+			q(36301, {	-- Trega's Tailoring Kit
+				["provider"] = { "i", 114973 },	-- Frostwolf Tailoring Kit
+				["description"] = "This item can drop from any Draenor mob.",
+				["timeline"] = { "added 6.0.1.18522" },
+				["requireSkill"] = TAILORING,
+				["races"] = HORDE_ONLY,
+				["maps"] = {
+					FROSTFIRE_RIDGE,
+					GORGROND,
+					DRAENOR_NAGRAND,
+					DRAENOR_SHADOWMOON_VALLEY,
+					SPIRES_OF_ARAK,
+					TALADOR,
+				},
+			}),
+		}),
 		-- #if AFTER SHADOWLANDS
 		{
 			["name"] = "Optional Reagents",
@@ -3278,25 +3300,33 @@ profession(TAILORING, {
 					["name"] = "Fearsome Battle Standard",
 					["races"] = ALLIANCE_ONLY,
 					["recipeID"] = 176314,
+					-- #if NOT ANYCLASSIC
 					["u"] = 15,
+					-- #endif
 				},
 				{
 					["name"] = "Fearsome Battle Standard",
 					["races"] = HORDE_ONLY,
 					["recipeID"] = 176316,
+					-- #if NOT ANYCLASSIC
 					["u"] = 15,
+					-- #endif
 				},
 				{
 					["name"] = "Inspiring Battle Standard",
 					["races"] = HORDE_ONLY,
 					["recipeID"] = 176315,
+					-- #if NOT ANYCLASSIC
 					["u"] = 15,
+					-- #endif
 				},
 				{
 					["name"] = "Inspiring Battle Standard",
 					["races"] = ALLIANCE_ONLY,
 					["recipeID"] = 176313,
+					-- #if NOT ANYCLASSIC
 					["u"] = 15,
+					-- #endif
 				},
 			},
 		},
@@ -5317,6 +5347,16 @@ profession(TAILORING, {
 			}
 		},
 	})),
+	-- #if AFTER 8.0.1
+	n(ACHIEVEMENTS, {
+		ach(5480, {	-- Preparing for Disaster
+			["requireSkill"] = TAILORING,
+		}),
+		ach(137, {	-- Stocking Up
+			["requireSkill"] = TAILORING,
+		}),
+	}),
+	-- #endif
 	n(QUESTS, bubbleDown({ ["timeline"] = { "removed 4.0.3.10000" } }, {
 		applyclassicphase(TBC_PHASE_ONE, q(10831, {	-- Becoming a Mooncloth Tailor
 			["qg"] = 22208,	-- Nasmara Moonsong <Mooncloth Specialist>
@@ -5438,18 +5478,19 @@ for i,o in ipairs({
 }) do table.insert(TIME_LOST_TRADER_GROUPS, o); end
 
 -- Tailoring Item Database
-_.ItemDB = {};
+local itemDB = root("ItemDB", {});
 
 -- Recipe Cache (for Validation)
-local recipeCache = {
-
-};
+local recipeCache, recipeCacheU = {}, {};
 local function cacheRecipes(g)
 	if g and type(g) == "table" then
 		if g.groups then cacheRecipes(g.groups); end
 		if g.g then cacheRecipes(g.g); end
-		if g.recipeID then recipeCache[g.recipeID] = true; end
-		if g.spellID then recipeCache[g.spellID] = true; end
+		local spellID = g.spellID or g.recipeID;
+		if spellID then
+			recipeCache[spellID] = true; 
+			if g.u then recipeCacheU[spellID] = g.u; end
+		end
 		for i,o in ipairs(g) do
 			cacheRecipes(o);
 		end
@@ -5459,7 +5500,7 @@ cacheRecipes(_.Professions);
 
 -- Tailoring Item Recipe Database
 local itemrecipe = function(name, itemID, spellID, phase, timeline)
-	local o = { ["itemID"] = itemID, ["spellID"] = spellID, ["requireSkill"] = TAILORING, ["f"] = RECIPES };
+	local o = { ["itemID"] = itemID, ["spellID"] = spellID, ["f"] = RECIPES };
 	if type(phase) == "string" then
 		timeline = phase;
 		phase = nil;
@@ -5467,7 +5508,7 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 	if timeline then
 		-- Ensure that the timeline is in a table format.
 		if type(timeline) == "string" then timeline = { timeline }; end
-		o.timeline = timeline;
+		if type(timeline) == "table" then o.timeline = timeline; end
 	end
 	if name then
 		-- Ensure that the name is in a string format.
@@ -5480,15 +5521,184 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 		end
 		o.name = name;
 	end
-	_.ItemDB[itemID] = phase and applyclassicphase(phase, o) or o;
+	itemDB[itemID] = phase and applyclassicphase(phase, o) or o;
 
 	-- Ensure that this recipe's spellID exists in the profession database.
-	if recipeCache and not recipeCache[o.spellID] then print("MISSING RECIPE", name, o.spellID); end
+	if recipeCache and type(timeline) ~= "boolean" then
+		if recipeCache[o.spellID] then
+			-- Grab the phase from the cache.
+			local u = recipeCacheU[o.spellID];
+			if u then
+				if o.u ~= u then
+					--print("TAILORING ITEM RECIPE MISSING U: ", name, o.spellID, u, o.u);
+					o.u = u;
+				end
+			elseif o.u ~= u then
+				--print("TAILORING RECIPE MISSING U: ", name, o.spellID, o.u);
+			end
+		else
+			print("MISSING TAILORING RECIPE", name, o.spellID);
+		end
+	end
 	return o;
 end
 
+-- Classic Recipes
+itemrecipe("Pattern: Red Linen Robe", 2598, 2389);
+itemrecipe("Pattern: Gray Woolen Robe", 2601, 2403);
+itemrecipe("Pattern: Green Woolen Bag", 4292, 3758);
+itemrecipe("Pattern: Red Woolen Boots", 4345, 3847);
+itemrecipe("Pattern: Heavy Woolen Cloak", 4346, 3844);
+itemrecipe("Pattern: Reinforced Woolen Shoulders", 4347, 3849);
+itemrecipe("Pattern: Phoenix Gloves", 4348, 3868);
+itemrecipe("Pattern: Phoenix Pants", 4349, 3851);
+itemrecipe("Pattern: Spider Silk Slippers", 4350, 3856);
+itemrecipe("Pattern: Shadow Hood", 4351, 3858);
+itemrecipe("Pattern: Boots of the Enchanter", 4352, 3860);
+itemrecipe("Pattern: Spider Belt", 4353, 3863);
+itemrecipe("Pattern: Rich Purple Silk Shirt", 4354, 3872);
+itemrecipe("Pattern: Icy Cloak", 4355, 3862);
+itemrecipe("Pattern: Star Belt", 4356, 3864);
+itemrecipe("Pattern: Red Linen Bag", 5771, 6686);
+itemrecipe("Pattern: Red Woolen Bag", 5772, 6688);
+itemrecipe("Pattern: Robes of Arcana", 5773, 6692);
+itemrecipe("Pattern: Green Silk Pack", 5774, 6693);
+itemrecipe("Pattern: Black Silk Pack", 5775, 6695);
+itemrecipe("Pattern: Blue Linen Vest", 6270, 7630);
+itemrecipe("Pattern: Red Linen Vest", 6271, 7629);
+itemrecipe("Pattern: Blue Linen Robe", 6272, 7633);
+itemrecipe("Pattern: Blue Overalls", 6274, 7639);
+itemrecipe("Pattern: Greater Adept's Robe", 6275, 7643);
+itemrecipe("Pattern: Stylish Blue Shirt", 6390, 7892);
+itemrecipe("Pattern: Stylish Green Shirt", 6391, 7893);
+itemrecipe("Pattern: Dark Silk Shirt", 6401, 3870);
+itemrecipe("Pattern: Crimson Silk Shoulders", 7084, 8793);
+itemrecipe("Pattern: Azure Shoulders", 7085, 8795);
+itemrecipe("Pattern: Earthen Silk Belt", 7086, 8797);
+itemrecipe("Pattern: Crimson Silk Cloak", 7087, 8789);
+itemrecipe("Pattern: Crimson Silk Robe", 7088, 8802);
+itemrecipe("Pattern: Azure Silk Cloak", 7089, 8786);
+itemrecipe("Pattern: Green Silk Armor", 7090, 8784);
+itemrecipe("Pattern: Truefaith Gloves", 7091, 8782);
+itemrecipe("Pattern: Hands of Darkness", 7092, 8780);
+itemrecipe("Pattern: Azure Silk Gloves", 7114, 3854);
+itemrecipe("Pattern: Red Mageweave Vest", 10300, 12056);
+itemrecipe("Pattern: White Bandit Mask", 10301, 12059);
+itemrecipe("Pattern: Red Mageweave Pants", 10302, 12060);
+itemrecipe("Pattern: Orange Martial Shirt", 10311, 12064);
+itemrecipe("Pattern: Red Mageweave Gloves", 10312, 12066);
+itemrecipe("Pattern: Lavender Mageweave Shirt", 10314, 12075);
+itemrecipe("Pattern: Red Mageweave Shoulders", 10315, 12078);
+itemrecipe("Pattern: Colorful Kilt", 10316, 12047);
+itemrecipe("Pattern: Pink Mageweave Shirt", 10317, 12080);
+itemrecipe("Pattern: Admiral's Hat", 10318, 12081);
+itemrecipe("Pattern: Red Mageweave Headband", 10320, 12084);
+itemrecipe("Pattern: Tuxedo Shirt", 10321, 12085);
+itemrecipe("Pattern: Tuxedo Pants", 10323, 12089);
+itemrecipe("Pattern: White Wedding Dress", 10325, 12091);
+itemrecipe("Pattern: Tuxedo Jacket", 10326, 12093);
+itemrecipe("Pattern: Shadoweave Mask", 10463, 12086, "removed 4.0.3.10000");
+itemrecipe("Pattern: Black Swashbuckler's Shirt", 10728, 3873);
+itemrecipe("Pattern: Frostweave Tunic", 14466, 18403);
+itemrecipe("Pattern: Frostweave Robe", 14467, 18404);
+itemrecipe("Pattern: Runecloth Bag", 14468, 18405);
+itemrecipe("Pattern: Runecloth Robe", 14469, 18406);
+itemrecipe("Pattern: Runecloth Tunic", 14470, 18407);
+itemrecipe("Pattern: Cindercloth Vest", 14471, 18408);
+itemrecipe("Pattern: Runecloth Cloak", 14472, 18409);
+itemrecipe("Pattern: Ghostweave Belt", 14473, 18410);
+itemrecipe("Pattern: Frostweave Gloves", 14474, 18411);
+itemrecipe("Pattern: Cindercloth Gloves", 14476, 18412);
+itemrecipe("Pattern: Ghostweave Gloves", 14477, 18413);
+itemrecipe("Pattern: Brightcloth Robe", 14478, 18414);
+itemrecipe("Pattern: Brightcloth Gloves", 14479, 18415);
+itemrecipe("Pattern: Ghostweave Vest", 14480, 18416);
+itemrecipe("Pattern: Runecloth Gloves", 14481, 18417);
+itemrecipe("Pattern: Cindercloth Cloak", 14482, 18418);
+itemrecipe("Pattern: Felcloth Pants", 14483, 18419);
+itemrecipe("Pattern: Brightcloth Cloak", 14484, 18420);
+itemrecipe("Pattern: Wizardweave Leggings", 14485, 18421);
+itemrecipe("Pattern: Cloak of Fire", 14486, 18422);
+itemrecipe("Pattern: Runecloth Boots", 14488, 18423);
+itemrecipe("Pattern: Frostweave Pants", 14489, 18424);
+itemrecipe("Pattern: Cindercloth Pants", 14490, 18434);
+itemrecipe("Pattern: Runecloth Pants", 14491, 18438);
+itemrecipe("Pattern: Felcloth Boots", 14492, 18437);
+itemrecipe("Pattern: Robe of Winter Night", 14493, 18436);
+itemrecipe("Pattern: Brightcloth Pants", 14494, 18439);
+itemrecipe("Pattern: Ghostweave Pants", 14495, 18441);
+itemrecipe("Pattern: Felcloth Hood", 14496, 18442);
+itemrecipe("Pattern: Mooncloth Leggings", 14497, 18440);
+itemrecipe("Pattern: Runecloth Headband", 14498, 18444);
+itemrecipe("Pattern: Mooncloth Bag", 14499, 18445);
+itemrecipe("Pattern: Wizardweave Robe", 14500, 18446);
+itemrecipe("Pattern: Mooncloth Vest", 14501, 18447);
+itemrecipe("Pattern: Runecloth Shoulders", 14504, 18449);
+itemrecipe("Pattern: Wizardweave Turban", 14505, 18450);
+itemrecipe("Pattern: Felcloth Robe", 14506, 18451);
+itemrecipe("Pattern: Mooncloth Shoulders", 14507, 18448);
+itemrecipe("Pattern: Felcloth Shoulders", 14508, 18453);
+itemrecipe("Pattern: Mooncloth Circlet", 14509, 18452);
+itemrecipe("Pattern: Bottomless Bag", 14510, 18455);
+itemrecipe("Pattern: Gloves of Spell Mastery", 14511, 18454);
+itemrecipe("Pattern: Truefaith Vestments", 14512, 18456);
+itemrecipe("Pattern: Robe of the Archmage", 14513, 18457);
+itemrecipe("Pattern: Robe of the Void", 14514, 18458);
+itemrecipe("Pattern: Mooncloth", 14526, 18560);
+itemrecipe("Pattern: Bright Yellow Shirt", 14627, 3869);
+itemrecipe("Pattern: Enchanter's Cowl", 14630, 3857);
+itemrecipe("Pattern: Flarecore Mantle", 17017, 20848);
+itemrecipe("Pattern: Flarecore Gloves", 17018, 20849);
+itemrecipe("Pattern: Flarecore Wraps", 18265, 22759);
+itemrecipe("Pattern: Core Felcloth Bag", 21371, 26087);
+itemrecipe("Pattern: Soul Pouch", 21358, 26085);
+itemrecipe("Pattern: Enchanted Mageweave Pouch", 22307, 27658);
+
+itemrecipe("Pattern: Belt of the Archmage", 18414, 22866, PHASE_ONE_DIREMAUL);
+itemrecipe("Pattern: Felcloth Gloves", 18415, 22867, PHASE_ONE_DIREMAUL);
+itemrecipe("Pattern: Inferno Gloves", 18416, 22868, PHASE_ONE_DIREMAUL);
+itemrecipe("Pattern: Mooncloth Gloves", 18417, 22869, PHASE_ONE_DIREMAUL);
+itemrecipe("Pattern: Cloak of Warding", 18418, 22870, PHASE_ONE_DIREMAUL);
+itemrecipe("Pattern: Mooncloth Robe", 18487, 22902, PHASE_ONE_DIREMAUL);
+
+itemrecipe("Pattern: Wisdom of the Timbermaw", 19215, 23662, PHASE_THREE);
+itemrecipe("Pattern: Argent Boots", 19216, 23664, PHASE_THREE);
+itemrecipe("Pattern: Argent Shoulders", 19217, 23665, PHASE_THREE);
+itemrecipe("Pattern: Mantle of the Timbermaw", 19218, 23663, PHASE_THREE);
+itemrecipe("Pattern: Flarecore Robe", 19219, 23666, PHASE_THREE);
+itemrecipe("Pattern: Flarecore Leggings", 19220, 23667, PHASE_THREE);
+
+itemrecipe("Pattern: Bloodvine Vest", 19764, 24091, PHASE_FOUR);
+itemrecipe("Pattern: Bloodvine Leggings", 19765, 24092, PHASE_FOUR);
+itemrecipe("Pattern: Bloodvine Boots", 19766, 24093, PHASE_FOUR);
+itemrecipe("Pattern: Runed Stygian Leggings", 20546, 24901, PHASE_FOUR);
+itemrecipe("Pattern: Runed Stygian Boots", 20547, 24903, PHASE_FOUR);
+itemrecipe("Pattern: Runed Stygian Belt", 20548, 24902, PHASE_FOUR);
+
+itemrecipe("Pattern: Enchanted Runecloth Bag", 22308, 27659, PHASE_FIVE);
+itemrecipe("Pattern: Big Bag of Enchantment", 22309, 27660, PHASE_FIVE);
+itemrecipe("Pattern: Cenarion Herb Bag", 22310, 27724, PHASE_FIVE);
+itemrecipe("Pattern: Satchel of Cenarius", 22312, 27725, PHASE_FIVE);
+
+itemrecipe("Pattern: Gaea's Embrace", 22683, 28210, PHASE_FIVE_CATCH_UP);
+itemrecipe("Pattern: Sylvan Shoulders", 22772, 28482, PHASE_FIVE_CATCH_UP);
+itemrecipe("Pattern: Sylvan Crown", 22773, 28481, PHASE_FIVE_CATCH_UP);
+itemrecipe("Pattern: Sylvan Vest", 22774, 28480, PHASE_FIVE_CATCH_UP);
+
+itemrecipe("Pattern: Glacial Gloves", 22684, 28205, PHASE_SIX);
+itemrecipe("Pattern: Glacial Cloak", 22685, 28208, PHASE_SIX);
+itemrecipe("Pattern: Glacial Vest", 22686, 28207, PHASE_SIX);
+itemrecipe("Pattern: Glacial Wrists", 22687, 28209, PHASE_SIX);
+
+applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Green Holiday Shirt", 17724, 21945));
+applyholiday(LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Dress", 21722, 26403));
+applyholiday(LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Suit", 21723, 26407));
+
 -- #if AFTER TBC
 -- TBC Recipes
+applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Green Winter Clothes", 34261, 44950));
+applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Red Winter Clothes", 34319, 44958));
+
 itemrecipe("Pattern: Frozen Shadoweave Shoulders", 21912, 26756, TBC_PHASE_ONE);
 itemrecipe("Pattern: Frozen Shadoweave Robe", 21913, 26758, TBC_PHASE_ONE);
 itemrecipe("Pattern: Frozen Shadoweave Boots", 21914, 26757, TBC_PHASE_ONE);
@@ -5498,19 +5708,289 @@ itemrecipe("Pattern: Primal Mooncloth Shoulders", 21918, 26761, TBC_PHASE_ONE);
 itemrecipe("Pattern: Spellfire Belt", 21908, 26752, TBC_PHASE_ONE);
 itemrecipe("Pattern: Spellfire Gloves", 21909, 26753, TBC_PHASE_ONE);
 itemrecipe("Pattern: Spellfire Robe", 21910, 26754, TBC_PHASE_ONE);
+
+itemrecipe("Pattern: Bolt of Imbued Netherweave", 21892, 26747, TBC_PHASE_ONE);
+itemrecipe("Pattern: Imbued Netherweave Bag", 21893, 26749, TBC_PHASE_ONE);
+itemrecipe("Pattern: Bolt of Soulcloth", 21894, 26750, TBC_PHASE_ONE);
+itemrecipe("Pattern: Primal Mooncloth", 21895, 26751, TBC_PHASE_ONE);
+itemrecipe("Pattern: Netherweave Robe", 21896, 26773, TBC_PHASE_ONE);
+itemrecipe("Pattern: Netherweave Tunic", 21897, 26774, TBC_PHASE_ONE);
+itemrecipe("Pattern: Imbued Netherweave Pants", 21898, 26775, TBC_PHASE_ONE);
+itemrecipe("Pattern: Imbued Netherweave Boots", 21899, 26776, TBC_PHASE_ONE);
+itemrecipe("Pattern: Imbued Netherweave Robe", 21900, 26777, TBC_PHASE_ONE);
+itemrecipe("Pattern: Imbued Netherweave Tunic", 21901, 26778, TBC_PHASE_ONE);
+itemrecipe("Pattern: Soulcloth Gloves", 21902, 26779, TBC_PHASE_ONE);
+itemrecipe("Pattern: Soulcloth Shoulders", 21903, 26780, TBC_PHASE_ONE);
+itemrecipe("Pattern: Soulcloth Vest", 21904, 26781, TBC_PHASE_ONE);
+itemrecipe("Pattern: Arcanoweave Bracers", 21905, 26782, TBC_PHASE_ONE);
+itemrecipe("Pattern: Arcanoweave Boots", 21906, 26783, TBC_PHASE_ONE);
+itemrecipe("Pattern: Arcanoweave Robe", 21907, 26784, TBC_PHASE_ONE);
+itemrecipe("Pattern: Spellfire Bag", 21911, 26755, TBC_PHASE_ONE);
+itemrecipe("Pattern: Ebon Shadowbag", 21915, 26759, TBC_PHASE_ONE);
+itemrecipe("Pattern: Primal Mooncloth Bag", 21919, 26763, TBC_PHASE_ONE);
+itemrecipe("Pattern: Mystic Spellthread", 24292, 31430, TBC_PHASE_ONE);
+itemrecipe("Pattern: Silver Spellthread", 24293, 31431, TBC_PHASE_ONE);
+itemrecipe("Pattern: Runic Spellthread", 24294, 31432, TBC_PHASE_ONE);
+itemrecipe("Pattern: Golden Spellthread", 24295, 31433, TBC_PHASE_ONE);
+itemrecipe("Pattern: Unyielding Bracers", 24296, 31434, TBC_PHASE_ONE);
+itemrecipe("Pattern: Bracers of Havok", 24297, 31435, TBC_PHASE_ONE);
+
+itemrecipe("Pattern: Blackstrike Bracers", 24298, 31437, TBC_PHASE_ONE);
+itemrecipe("Pattern: Cloak of the Black Void", 24299, 31438, TBC_PHASE_ONE);
+itemrecipe("Pattern: Cloak of Eternity", 24300, 31440, TBC_PHASE_ONE);
+itemrecipe("Pattern: White Remedy Cape", 24301, 31441, TBC_PHASE_ONE);
+itemrecipe("Pattern: Unyielding Girdle", 24302, 31442, TBC_PHASE_ONE);
+itemrecipe("Pattern: Girdle of Ruination", 24303, 31443, TBC_PHASE_ONE);
+itemrecipe("Pattern: Black Belt of Knowledge", 24304, 31444, TBC_PHASE_ONE);
+itemrecipe("Pattern: Resolute Cape", 24305, 31448, TBC_PHASE_ONE);
+itemrecipe("Pattern: Vengeance Wrap", 24306, 31449, TBC_PHASE_ONE);
+itemrecipe("Pattern: Manaweave Cloak", 24307, 31450, TBC_PHASE_ONE);
+itemrecipe("Pattern: Whitemend Pants", 24308, 31451, TBC_PHASE_ONE);
+itemrecipe("Pattern: Spellstrike Pants", 24309, 31452, TBC_PHASE_ONE);
+itemrecipe("Pattern: Battlecast Pants", 24310, 31453, TBC_PHASE_ONE);
+itemrecipe("Pattern: Whitemend Hood", 24311, 31454, TBC_PHASE_ONE);
+itemrecipe("Pattern: Spellstrike Hood", 24312, 31455, TBC_PHASE_ONE);
+itemrecipe("Pattern: Battlecast Hood", 24313, 31456, TBC_PHASE_ONE);
+itemrecipe("Pattern: Bag of Jewels", 24314, 31459, TBC_PHASE_ONE);
+itemrecipe("Pattern: Spellcloth", 24316, 31373, TBC_PHASE_ONE);
+itemrecipe("Pattern: Shadowcloth", 30483, 36686, TBC_PHASE_ONE);
+itemrecipe("Pattern: Cloak of Arcane Evasion", 30833, 37873, TBC_PHASE_ONE);
+itemrecipe("Pattern: Flameheart Bracers", 30842, 37882, TBC_PHASE_ONE);
+itemrecipe("Pattern: Flameheart Gloves", 30843, 37883, TBC_PHASE_ONE);
+itemrecipe("Pattern: Flameheart Vest", 30844, 37884, TBC_PHASE_ONE);
+
+itemrecipe("Pattern: Dress Shoes", 37915, 49677, TBC_PHASE_ONE, "added 2.4.2.8301");
+itemrecipe("Pattern: Mycah's Botanical Bag", 38229, 50194, TBC_PHASE_ONE);
+itemrecipe("Pattern: Haliscan Jacket", 38327, 50644, TBC_PHASE_ONE, "added 2.4.2.8301");
+itemrecipe("Pattern: Haliscan Pantaloons", 38328, 50647, TBC_PHASE_ONE, "added 2.4.2.8301");
+
+itemrecipe("Pattern: Belt of Blasting", 30280, 36315, TBC_PHASE_TWO);
+itemrecipe("Pattern: Belt of the Long Road", 30281, 36316, TBC_PHASE_TWO);
+itemrecipe("Pattern: Boots of Blasting", 30282, 36317, TBC_PHASE_TWO);
+itemrecipe("Pattern: Boots of the Long Road", 30283, 36318, TBC_PHASE_TWO);
+
+itemrecipe("Pattern: Soulguard Slippers", 32437, 40020, TBC_PHASE_THREE);
+itemrecipe("Pattern: Soulguard Bracers", 32438, 40021, TBC_PHASE_THREE);
+itemrecipe("Pattern: Soulguard Leggings", 32439, 40023, TBC_PHASE_THREE);
+itemrecipe("Pattern: Soulguard Girdle", 32440, 40024, TBC_PHASE_THREE);
+itemrecipe("Pattern: Night's End", 32447, 40060, TBC_PHASE_THREE);
+itemrecipe("Pattern: Swiftheal Wraps", 32752, 41207, TBC_PHASE_THREE);
+itemrecipe("Pattern: Swiftheal Mantle", 32753, 41208, TBC_PHASE_THREE);
+itemrecipe("Pattern: Bracers of Nimble Thought", 32754, 41205, TBC_PHASE_THREE);
+itemrecipe("Pattern: Mantle of Nimble Thought", 32755, 41206, TBC_PHASE_THREE);
+
+itemrecipe("Pattern: Sunfire Handwraps", 35204, 46128, TBC_PHASE_FIVE);
+itemrecipe("Pattern: Hands of Eternal Light", 35205, 46129, TBC_PHASE_FIVE);
+itemrecipe("Pattern: Sunfire Robe", 35206, 46130, TBC_PHASE_FIVE);
+itemrecipe("Pattern: Robe of Eternal Light", 35207, 46131, TBC_PHASE_FIVE);
+itemrecipe("Pattern: Unyielding Bracers", 35308, 31434, TBC_PHASE_FIVE, true);
+itemrecipe("Pattern: Unyielding Girdle", 35309, 31442, TBC_PHASE_FIVE, true);
+-- #endif
+
+-- #if AFTER WRATH
+-- Wrath Recipes
+itemrecipe("A Guide to Northern Cloth Scavenging", 43876, 59390, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Abyssal Bag", 42183, 56004, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Aurora Slippers", 42196, 56023, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Bejeweled Wizard's Bracers", 47654, 67079, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Bejeweled Wizard's Bracers", 47639, 67145, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Blue Lumberjack Shirt", 42173, 55994, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Blue Workman's Shirt", 42176, 55998, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Brilliant Spellthread", 42187, 56009, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Cord of the White Dawn", 45104, 63205, WRATH_PHASE_TWO);
+itemrecipe("Pattern: Deathchill Cloak", 42190, 56017, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Deathfrost Boots", 49954, 70551, WRATH_PHASE_FOUR);
+itemrecipe("Pattern: Ebonweave", 42180, 56002, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Ebonweave Gloves", 42200, 56027, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Ebonweave Robe", 42199, 56026, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Emerald Bag", 45774, 63924, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Frostmoon Pants", 42194, 56021, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Frostweave Bag", 42186, 56007, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Frosty Flying Carpet", 54798, 75597, WRATH_PHASE_FOUR);
+itemrecipe("Pattern: Glacial Bag", 42184, 56005, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Glacial Cord", 42193, 56020, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Green Lumberjack Shirt", 42175, 55996, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Green Workman's Shirt", 42179, 56000, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Hat of Wintry Doom", 42191, 56018, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Leggings of Woven Death", 49953, 70550, WRATH_PHASE_FOUR);
+itemrecipe("Pattern: Light Blessed Mittens", 42195, 56022, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Lightweave Leggings", 49955, 70552, WRATH_PHASE_FOUR);
+itemrecipe("Pattern: Merlin's Robe", 47655, 67066, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Merlin's Robe", 47638, 67146, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Moonshroud", 42181, 56001, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Moonshroud Gloves", 42198, 56025, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Moonshroud Robe", 42197, 56024, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Mysterious Bag", 42185, 56006, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Red Lumberjack Shirt", 42172, 55993, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Red Workman's Shirt", 42177, 55997, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Royal Moonshroud Bracers", 47656, 67065, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Royal Moonshroud Bracers", 47637, 67147, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Royal Moonshroud Robe", 47636, 67144, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Royal Moonshroud Robe", 47657, 67064, WRATH_PHASE_THREE);
+itemrecipe("Pattern: Rustic Workman's Shirt", 42178, 55999, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Sandals of Consecration", 49956, 70553, WRATH_PHASE_FOUR);
+itemrecipe("Pattern: Sapphire Spellthread", 42188, 56011, WRATH_PHASE_ONE);
+itemrecipe("Pattern: Sash of Ancient Power", 45102, 63203, WRATH_PHASE_TWO);
+itemrecipe("Pattern: Savior's Slippers", 45105, 63206, WRATH_PHASE_TWO);
+itemrecipe("Pattern: Silky Iceshard Boots", 42192, 56019, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Spellslinger's Slippers", 45103, 63204, WRATH_PHASE_TWO);
+itemrecipe("Pattern: Spellweave", 42182, 56003, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Spellweave Gloves", 42202, 56029, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Spellweave Robe", 42201, 56028, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Wispcloak", 42189, 56016, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Pattern: Yellow Lumberjack Shirt", 42174, 55995, WRATH_PHASE_ONE);
+
+applyholiday(LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Dress", 44916, 26403));
+applyholiday(LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Suit", 44917, 26407));
+-- #endif
+
+-- #if AFTER CATA
+itemrecipe("Pattern: Belt of the Depths", 54601, 75298, CATA_PHASE_ONE);
+itemrecipe("Pattern: Black Embersilk Gown", 68199, 75288, CATA_PHASE_ONE);
+itemrecipe("Pattern: Boots of the Black Flame", 69976, 99460, CATA_PHASE_TWO);
+itemrecipe("Pattern: Bracers of Unconquered Power", 72004, 101923, CATA_PHASE_THREE);
+itemrecipe("Pattern: Breeches of Mended Nightmares", 54603, 75300, CATA_PHASE_ONE);
+itemrecipe("Pattern: Don Tayo's Inferno Mittens", 69966, 99449, CATA_PHASE_TWO);
+itemrecipe("Pattern: Dreamless Belt", 54602, 75299, CATA_PHASE_ONE);
+itemrecipe("Pattern: Dreamwraps of the Light", 72003, 101922, CATA_PHASE_THREE);
+itemrecipe("Pattern: Endless Dream Walkers", 69975, 99459, CATA_PHASE_ONE);
+itemrecipe("Pattern: Flame-Ascended Pantaloons", 54604, 75301, CATA_PHASE_ONE);
+itemrecipe("Pattern: Grips of Altered Reality", 69965, 99448, CATA_PHASE_TWO);
+itemrecipe("Pattern: High Society Top Hat", 67541, 75289, CATA_PHASE_ONE);
+itemrecipe("Pattern: Illusionary Bag", 54605, 75308, CATA_PHASE_ONE);
+itemrecipe("Pattern: Lavaquake Legwraps", 72002, 101921, CATA_PHASE_THREE);
+itemrecipe("Pattern: Luxurious Silk Gem Bag", 70176, 100585, CATA_PHASE_TWO);
+itemrecipe("Pattern: Powerful Enchanted Spellthread", 54599, 75309, CATA_PHASE_ONE);
+itemrecipe("Pattern: Powerful Ghostly Spellthread", 54600, 75310, CATA_PHASE_ONE);
+itemrecipe("Pattern: Vicious Embersilk Cowl", 54593, 75306, CATA_PHASE_ONE);
+itemrecipe("Pattern: Vicious Embersilk Pants", 54594, 75307, CATA_PHASE_ONE);
+itemrecipe("Pattern: Vicious Embersilk Robe", 54595, 75305, CATA_PHASE_ONE);
+itemrecipe("Pattern: Vicious Fireweave Cowl", 54596, 75304, CATA_PHASE_ONE);
+itemrecipe("Pattern: Vicious Fireweave Pants", 54597, 75302, CATA_PHASE_ONE);
+itemrecipe("Pattern: Vicious Fireweave Robe", 54598, 75303, CATA_PHASE_ONE);
+itemrecipe("Pattern: World Mender's Pants", 72000, 101920, CATA_PHASE_THREE);
 -- #endif
 
 -- Never Implemented Recipe and Crafted Item Database
+local nyi_ = root("NeverImplemented", {});
 local neverimplemented = function(thing)
-	table.insert(_.NeverImplemented, prof(TAILORING, { thing }));
+	table.insert(nyi_, prof(TAILORING, { thing }));
 end
-_.NeverImplemented = {};
 recipeCache = nil;	-- Disable the cache validation.
---[[
-neverimplemented(itemrecipe("Pattern: ", , ));
-neverimplemented(recipe());	--
-neverimplemented(i());	--
-]]
+
+-- Recipes that were created with the launch of the game, but never implemented. :(
+neverimplemented(itemrecipe("Pattern: Boots of Darkness", 7093, 8778));
+neverimplemented(recipe(8778));	-- Boots of Darkness
+neverimplemented(i(7027));	-- Boots of Darkness
+neverimplemented(itemrecipe("Pattern: Green Woolen Robe", 6273, 7636));
+neverimplemented(recipe(7636));	-- Green Woolen Robe
+neverimplemented(i(6243));	-- Green Woolen Robe
+neverimplemented(itemrecipe("Pattern: Stormcloth Boots", 10324, 12090));
+neverimplemented(recipe(12090));	-- Stormcloth Boots
+neverimplemented(i(10039));	-- Stormcloth Boots
+neverimplemented(itemrecipe("Pattern: Stormcloth Gloves", 10304, 12063));
+neverimplemented(recipe(12063));	-- Stormcloth Gloves
+neverimplemented(i(10011));	-- Stormcloth Gloves
+neverimplemented(itemrecipe("Pattern: Stormcloth Headband", 10319, 12083));
+neverimplemented(recipe(12083));	-- Stormcloth Headband
+neverimplemented(i(10032));	-- Stormcloth Headband
+neverimplemented(itemrecipe("Pattern: Stormcloth Pants", 10303, 12062));
+neverimplemented(recipe(12062));	-- Stormcloth Pants
+neverimplemented(i(10010));	-- Stormcloth Pants
+neverimplemented(itemrecipe("Pattern: Stormcloth Shoulders", 10322, 12087));
+neverimplemented(recipe(12087));	-- Stormcloth Shoulders
+neverimplemented(i(10038));	-- Stormcloth Shoulders
+neverimplemented(itemrecipe("Pattern: Stormcloth Vest", 10313, 12068));
+neverimplemented(recipe(12068));	-- Stormcloth Vest
+neverimplemented(i(10020));	-- Stormcloth Vest
+neverimplemented(itemrecipe("Pattern: Felcloth Bag", 21369, 26086));	-- recipe item is not in game; you learn the pattern from Jandice Barov's Journal in Scholo
+neverimplemented(itemrecipe("Pattern: Runecloth Robe", 21924));
+
+-- #if AFTER TBC
+neverimplemented(itemrecipe("Pattern: Heavy Netherweave Net", 24315));
+neverimplemented(itemrecipe("Pattern: Lifeblood Bracers", 30474, 36672));
+neverimplemented(recipe(36672));	-- Lifeblood Bracers
+neverimplemented(i(30464));	-- Lifeblood Bracers
+neverimplemented(itemrecipe("Pattern: Lifeblood Belt", 30473, 36670));
+neverimplemented(recipe(36670));	-- Lifeblood Belt
+neverimplemented(i(30463));	-- Lifeblood Belt
+neverimplemented(itemrecipe("Pattern: Lifeblood Leggings", 30472, 36669));
+neverimplemented(recipe(36669));	-- Lifeblood Leggings
+neverimplemented(i(30465));	-- Lifeblood Leggings
+neverimplemented(itemrecipe("Pattern: Netherflame Belt", 30470, 36667));
+neverimplemented(recipe(36667));	-- Netherflame Belt
+neverimplemented(i(30460));	-- Netherflame Belt
+neverimplemented(itemrecipe("Pattern: Netherflame Boots", 30471, 36668));
+neverimplemented(recipe(36668));	-- Netherflame Boots
+neverimplemented(i(30461));	-- Netherflame Boots
+neverimplemented(itemrecipe("Pattern: Netherflame Robe", 30469, 36665));
+neverimplemented(recipe(36665));	-- Netherflame Robe
+neverimplemented(i(30459));	-- Netherflame Robe
+neverimplemented(itemrecipe("Pattern: Truefaith Vestments", 29120));
+neverimplemented(itemrecipe("Pattern: Bracers of Nimble Thought", 35518));
+neverimplemented(itemrecipe("Pattern: Mantle of Nimble Thought", 35522));
+neverimplemented(itemrecipe("Pattern: Swiftheal Mantle", 35525));
+neverimplemented(itemrecipe("Pattern: Swiftheal Wraps", 35526));
+neverimplemented(itemrecipe("Pattern: Hands of Eternal Light", 35544));
+neverimplemented(itemrecipe("Pattern: Robe of Eternal Light", 35548));
+neverimplemented(itemrecipe("Pattern: Sunfire Handwraps", 35551));
+neverimplemented(itemrecipe("Pattern: Sunfire Robe", 35552));
+-- #endif
+
+-- #if AFTER WRATH
+neverimplemented(i(42196));	-- Pattern: Aurora Slippers (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42190));	-- Pattern: Deathchill Cloak (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42180));	-- Pattern: Ebonweave (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42200));	-- Pattern: Ebonweave Gloves (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42199));	-- Pattern: Ebonweave Robe (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42194));	-- Pattern: Frostmoon Pants (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42186));	-- Pattern: Frostweave Bag (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42179));	-- Pattern: Green Workman's Shirt (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42191));	-- Pattern: Hat of Wintry Doom (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42195));	-- Pattern: Light Blessed Mittens (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42181));	-- Pattern: Moonshroud (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42198));	-- Pattern: Moonshroud Gloves (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42197));	-- Pattern: Moonshroud Robe (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42192));	-- Pattern: Silky Iceshard Boots (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42182));	-- Pattern: Spellweave (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42202));	-- Pattern: Spellweave Gloves (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42201));	-- Pattern: Spellweave Robe (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42189));	-- Pattern: Wispcloak (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42174));	-- Pattern: Yellow Lumberjack Shirt (pattern never went live, but it's learned at the trainer)
+-- #endif
+
+-- #if AFTER CATA
+
+-- #endif
+
+-- #if AFTER MOP
+
+-- #endif
+
+-- #if AFTER WOD
+neverimplemented(recipe(169669));	-- Hexweave Cloth
+neverimplemented(recipe(168851));	-- Miniature Flying Carpet
+neverimplemented(i(114833));	-- Miniature Flying Carpet
+neverimplemented(recipe(173415));	-- Murloc Chew Toy
+neverimplemented(i(118052));	-- Murloc Chew Toy
+-- #endif
+
+-- #if AFTER LEGION
+neverimplemented(i(137981));	-- Pattern: Silkweave Cloak
+-- #endif
+
+-- #if AFTER BFA
+neverimplemented(i(162424));	-- Pattern: Embroidered Deep Sea Cloak of the Feather (alliance)
+neverimplemented(i(162770));	-- Pattern: Embroidered Deep Sea Cloak of the Feather (horde)
+neverimplemented(i(162426));	-- Pattern: Embroidered Deep Sea Cloak of Resilience (alliance)
+neverimplemented(i(162771));	-- Pattern: Embroidered Deep Sea Cloak of Resilience (horde)
+neverimplemented(i(162428));	-- Pattern: Embroidered Deep Sea Gloves (Rank 3)
+neverimplemented(i(162430));	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
+-- #endif
+
+-- #if AFTER SHADOWLANDS
+
+-- #endif
 
 -- Apply the Never Implemented flag to the Never Implemented things.
-bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, _.NeverImplemented);
+bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, nyi_);

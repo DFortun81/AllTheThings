@@ -547,7 +547,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 				-- #if AFTER 6.0.1
 				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				-- #endif
-				["timeline"] = { "created 3.0.1.8770", "added 6.0.1", "removed 7.0.1" },
+				["timeline"] = { "added 3.0.1.8770", "removed 7.0.1" },
 			}),
 			i(36576),	-- Beaked Axe
 			i(36577),	-- Disk Axe
@@ -1089,6 +1089,9 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			}),
 			-- #endif
 			i(41784),	-- Design: Sovereign Twilight Opal
+			i(41779, {	-- Design: Stalwart Monarch Topaz
+				["timeline"] = { "removed 4.0.3" },
+			}),
 			-- #if AFTER CATA
 			i(41785, {	-- Design: Tenuous Twilight Opal [WRATH] / Design: Glinting Twilight Opal [CATA+]
 				["timeline"] = { "removed 4.0.3" },

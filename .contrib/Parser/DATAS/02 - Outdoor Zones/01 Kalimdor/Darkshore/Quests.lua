@@ -247,6 +247,19 @@ _.Zones =
 						i(131292),	-- Silver Inlaid Footguards
 					},
 				}),
+				q(2178, {	-- Easy Strider Living
+					["qg"] = 3702,	-- Alanndarian Nightsong
+					["coord"] = { 37.7, 40.7, DARKSHORE },
+					["timeline"] = { "removed 4.0.3.2000" },
+					["requireSkill"] = COOKING,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = { { "i", 5469, 5 } },	-- Strider Meat
+					["lvl"] = 9,
+					["groups"] = {
+						i(5486),	-- Recipe: Strider Stew
+						i(5477),	-- Strider Stew
+					},
+				}),
 				q(13582, {	-- Elune's Fire
 					["provider"] = { "n", 33119 },	-- Aroom
 					["coord"] = { 45.5, 48.4, DARKSHORE },

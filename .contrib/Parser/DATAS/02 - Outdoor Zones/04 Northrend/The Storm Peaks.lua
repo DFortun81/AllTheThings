@@ -1,6 +1,128 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local OnTooltipForSonsOfHodir = [[function(t)
+	local reputation = t.reputation;
+	if reputation < 0 then
+		if not t.mending then
+			local f = _.SearchForField("questID", 12915);
+			if f and #f > 0 then t.mending = f[1]; end
+		end
+		GameTooltip:AddDoubleLine("Complete " .. (t.mending.text or RETRIEVING_DATA), _.L[t.mending.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+		if not t.spark then
+			local f = _.SearchForField("questID", 12956);
+			if f and #f > 0 then t.spark = f[1]; end
+		end
+		GameTooltip:AddDoubleLine("Complete " .. (t.spark.text or RETRIEVING_DATA), _.L[t.spark.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+	elseif reputation < 42000 then
+		local isHuman = _.RaceIndex == 1;
+		local viscousRep, callRep, coldRep, dragonRep = 0, 0, 0, 0;
+		if not t.helm then
+			local f = _.SearchForField("questID", 12987);
+			if f and #f > 0 then t.helm = f[1]; end
+		end
+		if t.helm.saved then
+			viscousRep = isHuman and 385 or 350;
+		else
+			GameTooltip:AddDoubleLine("Complete " .. (t.helm.text or RETRIEVING_DATA), _.L[t.helm.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+		end
+
+		if not t.monument then
+			local f = _.SearchForField("questID", 12976);
+			if f and #f > 0 then t.monument = f[1]; end
+		end
+		if t.monument.saved then
+			callRep = isHuman and 385 or 350;
+		else
+			GameTooltip:AddDoubleLine("Complete " .. (t.monument.text or RETRIEVING_DATA), _.L[t.monument.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+		end
+
+		if not t.elements then
+			local f = _.SearchForField("questID", 12967);
+			if f and #f > 0 then t.elements = f[1]; end
+		end
+		if t.elements.saved then
+			coldRep = isHuman and 385 or 350;
+		else
+			GameTooltip:AddDoubleLine("Complete " .. (t.elements.text or RETRIEVING_DATA), _.L[t.elements.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+		end
+
+		if not t.spear then
+			local f = _.SearchForField("questID", 13001);
+			if f and #f > 0 then t.spear = f[1]; end
+		end
+		if t.spear.saved then
+			dragonRep = isHuman and 550 or 500;
+		else
+			GameTooltip:AddDoubleLine("Complete " .. (t.spear.text or RETRIEVING_DATA), _.L[t.spear.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+		end
+
+		GameTooltip:AddLine("Daily Quests:");
+		if viscousRep > 0 then
+			if not t.viscous then
+				local f = _.SearchForField("questID", 13006);
+				if f and #f > 0 then t.viscous = f[1]; end
+			end
+			GameTooltip:AddDoubleLine(t.viscous.text or RETRIEVING_DATA, _.L[t.viscous.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. viscousRep .. " Rep");
+		end
+		local feedingRep = 0;
+		if reputation >= ]] .. REVERED .. [[ then
+			feedingRep = isHuman and 385 or 350;
+			if not t.feeding then
+				local f = _.SearchForField("questID", 13046);
+				if f and #f > 0 then t.feeding = f[1]; end
+			end
+			GameTooltip:AddDoubleLine(t.feeding.text or RETRIEVING_DATA, _.L[t.feeding.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. feedingRep .. " Rep");
+		end
+		if callRep > 0 then
+			if not t.call then
+				local f = _.SearchForField("questID", 12977);
+				if f and #f > 0 then t.call = f[1]; end
+			end
+			GameTooltip:AddDoubleLine(t.call.text or RETRIEVING_DATA, _.L[t.call.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. callRep .. " Rep");
+		end
+		if coldRep > 0 then
+			if not t.cold then
+				local f = _.SearchForField("questID", 12981);
+				if f and #f > 0 then t.cold = f[1]; end
+			end
+			GameTooltip:AddDoubleLine(t.cold.text or RETRIEVING_DATA, _.L[t.cold.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. coldRep .. " Rep");
+		end
+		if dragonRep > 0 then
+			if not t.dragon then
+				local f = _.SearchForField("questID", 13003);
+				if f and #f > 0 then t.dragon = f[1]; end
+			end
+			GameTooltip:AddDoubleLine(t.dragon.text or RETRIEVING_DATA, _.L[t.dragon.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. dragonRep .. " Rep");
+		end
+		local spyRep = 0;
+		if reputation >= ]] .. HONORED .. [[ then
+			spyRep = isHuman and 385 or 350;
+			if not t.spy then
+				local f = _.SearchForField("questID", 12994);
+				if f and #f > 0 then t.spy = f[1]; end
+			end
+			GameTooltip:AddDoubleLine(t.spy.text or RETRIEVING_DATA, _.L[t.spy.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. spyRep .. " Rep");
+		end
+
+		local repPerDay = viscousRep + callRep + coldRep + dragonRep + feedingRep + spyRep;
+		local x, n = math.ceil((42000 - t.reputation) / repPerDay), math.ceil(42000 / repPerDay);
+		GameTooltip:AddDoubleLine("Complete Dailies Everyday", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+
+		local repPerTurnIn = isHuman and 385 or 350;
+		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
+		GameTooltip:AddDoubleLine("Turn in Everfrost.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+
+		-- #if AFTER CATA
+		local repPerTurnIn = isHuman and 357.5 or 325;
+		-- #else
+		local repPerTurnIn = isHuman and 550 or 500;
+		-- #endif
+		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
+		GameTooltip:AddDoubleLine("Turn in Relics of Ulduar.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		GameTooltip:AddDoubleLine(" ", (x * 10) .. " Relics to go!", 1, 1, 1);
+	end
+end]];
 root("Zones", {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(THE_STORM_PEAKS, {
@@ -139,7 +261,9 @@ root("Zones", {
 				})),
 				-- #endif
 				n(FACTIONS, {
-					faction(1119),	-- The Sons of Hodir
+					faction(1119, {	-- The Sons of Hodir
+						["OnTooltip"] = OnTooltipForSonsOfHodir,
+					}),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(327, {	-- Bouldercrag's Refuge
@@ -180,65 +304,70 @@ root("Zones", {
 						["qg"] = 32540,	-- Lillehoff
 						["coord"] = { 66.1, 61.4, THE_STORM_PEAKS },
 						["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
 						["repeatable"] = true,
 					}),
 					q(13011, {	-- Culling Jorcuttar
-						["minReputation"] = { 1119, FRIENDLY },
-						["coord"] = { 65.3, 60.1, THE_STORM_PEAKS },
 						["qg"] = 30105,	-- King Jokkum
+						["coord"] = { 65.3, 60.1, THE_STORM_PEAKS },
+						["minReputation"] = { 1119, FRIENDLY },	-- The Sons of Hodir, Friendly.
 					}),
-					q(13006, {	-- A Viscious Cleaning
-					--	["minReputation"] = -- Unknown reputation requirement
-						["sourceQuest"] = 12987,	-- Mounting Hodir's Helm
-						["isDaily"]	= true,
+					q(13006, {	-- A Viscous Cleaning
+						["provider"] = { "o", 192080 },	-- Hodir's Helm
+						["sourceQuest"] = 12987,	-- Placing Hodir's Helm
 						["coord"] = { 64.2, 59.6, THE_STORM_PEAKS },
-						["icon"] = "Interface\\Icons\\INV_Helmet_110",
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["isDaily"]	= true,
 					}),
 					q(13420, {	-- Everfrost
-						["minReputation"] = { 1119, FRIENDLY },
 						["provider"] = { "i", 44725 },	-- Everfrost Chip
-						["description"] = "You can obtain these by looting Everfrost Chips in the environment.",
+						["minReputation"] = { 1119, FRIENDLY },	-- The Sons of Hodir, Friendly.
 					}),
 					q(13421, {	-- Remember Everfrost!
-						["coord"] = { 67.0, 60.8, THE_STORM_PEAKS },	-- needs verification, taken from wowhead.  there's some contention as to whether this quest is offered by an NPC or if the "qg" is just the turn-in NPC
 						["qg"] = 32594,	-- Calder <Blacksmithing Supplies>
-						["sourceQuest"] = 13420,	-- Source Quest: Everfrost
-						["repeatable"]	= true,
+						["sourceQuest"] = 13420,	-- Everfrost
+						["coord"] = { 67.0, 60.8, THE_STORM_PEAKS },
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["cost"] = { { "i", 44724, 1 } },	-- Everfrost Chip
+						["repeatable"] = true,
 					}),
 					q(12977, {	-- Hodir's Call
-					--	["minReputation"] = ,	-- unsure of reputation requirement
+						["provider"] = { "o", 192078 },	-- Hodir's Horn
 						["sourceQuest"] = 12976,	-- A Monument to the Fallen
-						["isDaily"]	= true,
 						["coord"] = { 64.1, 64.7, THE_STORM_PEAKS },
-						["icon"] = "Interface\\Icons\\INV_Misc_Horn_03",
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["isDaily"]	= true,
 					}),
 					q(13046, {	-- Feeding Arngrim
-						["minReputation"] = { 1119, REVERED },
-						["isDaily"]	= true,
+						["provider"] = { "o", 192524 },	-- Arngrim the Insatiable
 						["coord"] = { 67.5, 60.0, THE_STORM_PEAKS },
-						["icon"] = "Interface\\Icons\\Achievement_Dungeon_FrozenThrone",
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["minReputation"] = { 1119, REVERED },	-- The Sons of Hodir, Revered.
+						["isDaily"]	= true,
 					}),
 					q(12981, {	-- Hot and Cold
-					--	["minReputation"] = ,	-- unknown reputation requirement.
+						["provider"] = { "o", 192071 },	-- Fjorn's Anvil
 						["sourceQuest"] = 12967,	-- Battling the Elements
-						["isDaily"]	= true,
 						["coord"] = { 63.2, 63.0, THE_STORM_PEAKS },
-						["icon"] = "Interface\\Icons\\INV_BLACKSMITH_ANVIL",
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["isDaily"]	= true,
 					}),
 					q(12994, {	-- Spy Hunter
-						["minReputation"] = { 1119, HONORED },
-						["isDaily"]	= true,
+						["qg"] = 30294,	-- Frostworg Denmother
 						["coord"] = { 63.5, 59.7, THE_STORM_PEAKS },
-						["qg"] = 30294,	-- Quest Giver: Frostworg Denmother
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["minReputation"] = { 1119, HONORED },	-- The Sons of Hodir, Honored.
+						["isDaily"]	= true,
 					}),
 					q(13003, {	-- How to Slay Your Dragon
-						["minReputation"] = { 1119, HONORED },
+						["provider"] = { "o", 192079 },	-- Hodir's Spear
 						["sourceQuest"] = 13001,	-- Raising Hodir's Spear
-						["isDaily"]	= true,
 						["coord"] = { 65.0, 60.9, THE_STORM_PEAKS },
-						["icon"] = "Interface\\Icons\\INV_Spear_04",
+						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["minReputation"] = { 1119, HONORED },	-- The Sons of Hodir, Honored.
+						["isDaily"]	= true,
 					}),
-				
+
 					i(44751, {	-- Hyldnir Spoils
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["description"] = "Reward from the following daily quests: Back to the Pit, Defending Your Title, Maintaining Discipline, and The Aberrations Must Die. \n\nOne of the quests is offered at random each day.",
@@ -1403,67 +1532,55 @@ root("Zones", {
 							i(44086),	-- Grand Ice Mammoth (H) (MOUNT!)
 							i(43958),	-- Ice Mammoth (A) (MOUNT!)
 							i(44080),	-- Ice Mammoth (H) (MOUNT!)
+							i(44137, {	-- Arcanum of the Frosty Soul
+								["timeline"] = { "removed 5.0.4" },
+								["filterID"] = CONSUMABLES,
+							}),
 							i(44193),	-- Broken Stalactite
 							i(41720),	-- Design: Smooth Autumn's Glow
-							i(41817, {	-- Design: Smooth Autumn's Glow
-								["spellID"] = 0,	-- This is now available via 41720, need to delink the old plans from the recipe
-								["u"] = REMOVED_FROM_GAME,
-							}),
 							i(44189),	-- Giant Ring Belt
 							i(44194),	-- Giant-Friend Kilt
 							i(44133, {	-- Greater Inscription of the Axe
-								["spellID"] = 0,	-- Ignore
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(50335, {	-- Greater Inscription of the Axe
-								["spellID"] = 0,	-- Ignore
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44134, {	-- Greater Inscription of the Crag
-								["spellID"] = 0,	-- Ignore
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(50336, {	-- Greater Inscription of the Crag
-								["spellID"] = 0,	-- Ignore
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44136, {	-- Greater Inscription of the Pinnacle
-								["spellID"] = 0,	-- Ignore
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(50337, {	-- Greater Inscription of the Pinnacle
-								["spellID"] = 0,	-- Ignore
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44135, {	-- Greater Inscription of the Storm
-								["spellID"] = 0,	-- Ignore
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(50338, {	-- Greater Inscription of the Storm
-								["spellID"] = 0,	-- Ignore
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44131, {	-- Lesser Inscription of the Axe
-								["spellID"] = 0,	-- Ignore
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44130, {	-- Lesser Inscription of the Crag
-								["spellID"] = 0,	-- Ignore
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44132, {	-- Lesser Inscription of the Pinnacle
-								["spellID"] = 0,	-- Ignore
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(44129, {	-- Lesser Inscription of the Storm
-								["spellID"] = 0,	-- Ignore
-								["f"] = 55,		-- Consumable
+								["filterID"] = CONSUMABLES,
 							}),
 							i(42184),	-- Pattern: Glacial Bag
 							i(44510),	-- Pattern: Mammoth Mining Bag
-							i(44192),	-- Stalactite Chopper
 							i(44190),	-- Spaulders of Frozen Knives
 							i(44195),	-- Spaulders of the Giant Lords
+							i(44192),	-- Stalactite Chopper
 						},
 					}),
 					n(30472, {	-- Olut Alegut
@@ -1516,20 +1633,18 @@ root("Zones", {
 							30222,	-- Stormforged Infiltrator
 						},
 					}),
+					i(41817, {	-- Design: Fractured Scarlet Ruby [WRATH] / Design: Smooth Autumn's Glow [CATA+]
+						["timeline"] = { "removed 4.0.1" },
+						["cr"] = 29570,	-- Nascent Val'kyr
+					}),
 					i(41819, {	-- Design: Radiant Forest Emerald
 						["crs"] = {
 							29793,	-- Frostfeather Witch
 							29792,	-- Frostfeather Screecher
 						},
 					}),
-					i(41736, {	-- Design: Radiant Forest Emerald
-						["spellID"] = 0,	-- This is now available via 41819, need to delink the old plans from the recipe
-						["u"] = REMOVED_FROM_GAME,
-						["crs"] = {
-							29793,	-- Frostfeather Witch
-							29792,	-- Frostfeather Screecher
-						},
-					}),
+					i(44724),	-- Everfrost Chip
+					i(44725),	-- Everfrost Chip
 					i(42780),	-- Relics of Ulduar
 					i(49050, {	-- Schematic: Jeeves
 						["crs"] = { 29724 },	-- Library Guardian

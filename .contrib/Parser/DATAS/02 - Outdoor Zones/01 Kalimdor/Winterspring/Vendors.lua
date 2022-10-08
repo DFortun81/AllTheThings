@@ -78,8 +78,8 @@ _.Zones =
 							["isLimited"] = true,
 						}),
 						i(32381, {	-- Schematic: Fused Wiring
-							["recipeID"] = 39895,
-							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
+							["timeline"] = { "added 2.1.0", "removed 5.0.4" },
+							["isLimited"] = true,
 						}),
 						i(18652, {	-- Schematic: Gyrofreeze Ice Reflector
 							["isLimited"] = true,
@@ -91,8 +91,8 @@ _.Zones =
 							["isLimited"] = true,
 						}),
 						i(16047, {	-- Schematic: Thorium Tube
-							["spellID"] = 0,
-							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
+							["timeline"] = { "removed 2.1.0" },
+							["isLimited"] = true,
 						}),
 					},
 				}),

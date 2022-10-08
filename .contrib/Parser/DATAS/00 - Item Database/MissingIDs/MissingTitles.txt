@@ -1,46 +1,49 @@
 3.1.0.9767
-96
-104
-105
+title(96),	-- %s the Flawless Victor
+title(104),	-- Matron %s
+title(105),	-- Patron %s
 6.0.1.18125
-240
-252
+title(240),	-- %s the Crazy Cat Lady
+title(252),	-- %s the Crazy Cat Man
 6.0.1.18689
-278
-279
+title(278),	-- Talon King %s
+title(279),	-- Talon Queen %s
 6.0.1.18738
-296
-297
+title(296),	-- %s, Lord of Blackrock
+title(297),	-- %s, Lady of Blackrock
 6.0.2.18816
-302
-303
+title(302),	-- %s, Lord of War
+title(303),	-- %s, Lady of War
 9.0.1.35167
-426
-427
-429
-430
+title(426),	-- Baron %s
+title(427),	-- Baroness %s
+title(429),	-- Count %s
+title(430),	-- Countess %s
 9.2.0.41726
-453
+title(453),	-- %s the [PH] TBD Title
 9.2.0.41962
-455
+title(455),	-- %s, Guardian of the Pattern
 10.0.0.44649
-467
+title(467),	-- %s, Honorary Dryad
 10.0.0.44707
-468
+title(468),	-- Crimson Gladiator %s
 10.0.0.44895
-469
+title(469),	-- %s, The Worldbreaker \\ %s, Close and Personal Friend of Deathwing
 10.0.0.45335
-470
-471
-472
+title(470),	-- %s the Thundering Hero \\ %s, the [PH] Hero
+title(471),	-- Soupervisor %s
+title(472),	-- Birdwatcher %s
 10.0.0.45454
-473
-474
-475
-476
+title(473),	-- Khansguard %s
+title(474),	-- %s, Ally of Dragons
+title(475),	-- Intrepid Explorer %s
+title(476),	-- %s of Iskaara
 10.0.0.45661
-477
-478
-479
+title(477),	-- %s the Thundering \\ %s the [PH Season 1 Title]
+title(478),	-- Isles Racer %s
+title(479),	-- Malicious %s
 10.0.2.45779
-480
+title(480),	-- %s, Knight of Feathersworth
+10.0.2.45969
+title(481),	-- %s the Elite Evoker
+title(482),	-- Crimson Soloist %s

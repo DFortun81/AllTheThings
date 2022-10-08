@@ -220,7 +220,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					["coord"] = { 56.4, 25.8, BORALUS },
 					["g"] = {
 						i(163604, {	-- Net-O-Matic 5000
-							["f"] = 55,	-- Consumable
+							["filterID"] = CONSUMABLES,
 						}),
 					},
 				}),
@@ -252,7 +252,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(165880, {	-- Outpost Upgrade: Arom's Stand
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(2111, {	-- Upgrade: Arom's Stand
 								["races"] = ALLIANCE_ONLY,
@@ -275,7 +275,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(165836, {	-- Outpost Upgrade: Brennadam
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(2109, {	-- Upgrade: Brennadam
 								["races"] = ALLIANCE_ONLY,
@@ -298,7 +298,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(165873, {	-- Outpost Upgrade: Castaway Point
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(2110, {	-- Upgrade: Castaway Point
 								["races"] = ALLIANCE_ONLY,
@@ -321,7 +321,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(163043, {	-- Scouting Report: Grimwatt's Crash
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(2090, {	-- Grimwatt's Crash
 								["races"] = ALLIANCE_ONLY,
@@ -361,7 +361,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(163044, {	-- Scouting Report: Mistvine Ledge
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(2089, {	-- Mistvine Ledge
 								["races"] = ALLIANCE_ONLY,
@@ -401,7 +401,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(163047, {	-- Scouting Report: Mugamba Overlook
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(2069, {	-- Mugamba Overlook
 								["races"] = ALLIANCE_ONLY,
@@ -441,7 +441,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(163048, {	-- Scouting Report: Veiled Grotto
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(2068, {	-- Veiled Grotto
 								["races"] = ALLIANCE_ONLY,
@@ -464,7 +464,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(163046, {	-- Scouting Report: Verdant Hollow
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(2070, {	-- Verdant Hollow
 								["races"] = ALLIANCE_ONLY,
@@ -504,7 +504,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(163041, {	-- Scouting Report: Vulture's Nest
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
-						["f"] = 55,	-- Consumable; Might change to Misc later
+						["filterID"] = CONSUMABLES,	-- Might change to Misc later
 						["g"] = {
 							mi(2091, {	-- Vulture's Nest
 								["races"] = ALLIANCE_ONLY,

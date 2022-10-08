@@ -1436,6 +1436,25 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(3643, {	-- Show Your Work
+					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
+					["sourceQuest"] = 3642,	-- The Pledge of Secrecy
+					["altQuests"] = { 3639, 3641 },	-- The Pledge of Secrecy
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
+					["timeline"] = { "removed 4.0.3.2000" },
+					["requireSkill"] = ENGINEERING,
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 4392, 2 },	-- Advanced Target Dummy
+						{ "i", 4407, 1 },	-- Accurate Scope
+						{ "i", 10559, 6 },	-- Mithril Tube
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						i(10790),	-- Gnome Engineer Membership Card
+					},
+				}),
 				q(605, {	-- Singing Blue Shards
 					["qg"] = 2498,	-- Crank Fizzlebub
 					["coord"] = { 27.12, 77.22, STRANGLETHORN_VALE },
@@ -1932,6 +1951,26 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["cr"] = 1493,	-- Mok'rash
 					["lvl"] = 35,
 				}),
+				q(3642, {	-- The Pledge of Secrecy
+					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
+					["sourceQuests"] = {
+						3635,	-- Gnome Engineering
+						3637,	-- Gnome Engineering
+					},
+					["altQuests"] = { 3638, 3640 },	-- The Pledge of Secrecy
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
+					["timeline"] = { "removed 4.0.3.2000" },
+					["requireSkill"] = ENGINEERING,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- 0/1 Oglethorpe's Signed Pledge
+							["provider"] = { "i", 11282 },	-- Oglethorpe's Signed Pledge
+							["cost"] = { { "i", 10794, 1 } },	-- Oglethorpe's Pledge of Secrecy
+						}),
+					},
+				}),
 				q(203, {	-- The Second Rebellion
 					["qg"] = 733,	-- Sergeant Yohwa
 					["coord"] = { 38.0, 3.3, STRANGLETHORN_VALE },
@@ -2090,6 +2129,22 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(30, 30, 1),
+				}),
+				q(5148, {	-- Tribal Leatherworking (H)
+					["qg"] = 7871,	-- Se'Jib
+					["altQuests"] = {
+						5145,	-- Dragonscale Leatherworking
+						5146,	-- Elemental Leatherworking
+					},
+					["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
+					["timeline"] = { "removed 4.0.1" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 8214, 1 },	-- Wild Leather Helmet
+						{ "i", 8211, 1 },	-- Wild Leather Vest
+					},
+					["lvl"] = 40,
 				}),
 				q(205, {	-- Troll Witchery
 					["qg"] = 739,	-- Brother Nimetz

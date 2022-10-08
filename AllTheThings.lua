@@ -1463,6 +1463,7 @@ app.Colors = {
 	["ChatLinkHQT"] = "ff7aff92",
 	["ChatLink"] = "ff149bfd",
 	["TooltipDescription"] = "ff66ccff",
+	["TooltipLore"] = "ff42a7eb",
 	["DefaultDifficulty"] = "ff1eff00",
 	["RemovedWithPatch"] = "ffffaaaa",
 };
@@ -3074,6 +3075,8 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 		if (manual or
 				-- it's not an item
 				(not group.itemID and
+				-- not a difficulty
+				not group.difficultyID and
 				-- incomplete things actually exist below itself
 				((group.total or 0) > (group.progress or 0)) and
 				-- account/debug mode is active or it is not a 'saved' thing for this character
@@ -4011,8 +4014,8 @@ local function ResolveSymlinkGroupAsync(group)
 		-- on the initial pass due to the async nature
 		app.FillGroups(group);
 		BuildGroups(group);
-		-- auto-expand the symlink
-		ExpandGroupsRecursively(group, true, true);
+		-- auto-expand the symlink group
+		ExpandGroupsRecursively(group, true);
 		app.DirectGroupUpdate(group);
 	end
 end
@@ -4777,7 +4780,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		-- Description for Items
 		if group.lore and app.Settings:GetTooltipSetting("Lore") then
-			tinsert(info, 1, { left = group.lore, wrap = true, color = app.Colors.TooltipDescription });
+			tinsert(info, 1, { left = group.lore, wrap = true, color = app.Colors.TooltipLore });
 		end
 		if group.description and app.Settings:GetTooltipSetting("Descriptions") then
 			tinsert(info, 1, { left = group.description, wrap = true, color = app.Colors.TooltipDescription });
@@ -9570,13 +9573,13 @@ harvesterFields.text = function(t)
 			end
 
 			HarvestedAchievementDatabase[achievementID] = info;
-			AllTheThingsHarvestItems = HarvestedAchievementDatabase;
 			setmetatable(t, app.BaseAchievement);
 			rawset(t, "collected", true);
 			return Name;
 		end
 	end
 
+	AllTheThingsHarvestItems = HarvestedAchievementDatabase;
 	local name = t.name;
 	-- retries exceeded, so check the raw .name on the group (gets assigned when retries exceeded during cache attempt)
 	if name then rawset(t, "collected", true); end
@@ -12084,14 +12087,15 @@ app.BaseHeirloomLevel = app.BaseObjectFields(fields, "BaseHeirloomLevel");
 -- copy base Item fields
 -- TODO: heirlooms need to cache item information as well
 local fields = RawCloneData(itemFields);
--- The fallback filter is the original Item's filter if not collecting the Heirloom itself
-fields.f = function(t) return not app.CollectibleHeirlooms and t.itemFilter; end
 fields.icon = function(t) return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or select(5, GetItemInfoInstant(t.itemID)); end
 fields.link = function(t) return C_Heirloom_GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID)); end
 fields.collectibleAsCost = app.ReturnFalse;
 fields.collectible = function(t)
-		if t.factionID then return app.CollectibleReputations; end
-		return t.s and app.CollectibleTransmog;
+		-- Heirloom Token for a Reputation
+		if t.factionID and app.CollectibleReputations then return true; end
+		-- Heirloom Appearance
+		if t.s and app.CollectibleTransmog then return true; end
+		-- Otherwise the Heirloom Item itself is not inherently collectible
 	end
 fields.collected = function(t)
 		if t.factionID then
@@ -12114,7 +12118,7 @@ fields.saved = function(t)
 		return t.collected == 1;
 	end
 fields.isWeapon = function(t)
-		local f = t.itemFilter or t.f;
+		local f = t.f;
 		if f and contains(isWeapon, f) then
 			rawset(t, "isWeapon", true);
 			return true;
@@ -12134,10 +12138,6 @@ app.BaseHeirloom = app.BaseObjectFields(fields, "BaseHeirloom");
 app.CreateHeirloom = function(id, t)
 	tinsert(heirloomIDs, id);
 	if t then
-		-- TODO: perhaps make Parser store the information properly in the first place...
-		-- save the original filter of the Item for tracking if NOT collecting heirlooms
-		t.itemFilter = t.f;
-		t.f = nil;
 		-- Heirlooms are always BoA
 		t.b = 2;
 	end
@@ -12192,7 +12192,7 @@ app.CacheHeirlooms = function()
 						heirloomHeader = CloneData(heirloom);
 						heirloomHeader.collectible = false;
 						-- put the upgrade object into the header heirloom object
-						heirloomHeader.g = { setmetatable({ ["level"] = i, ["heirloomLevelID"] = itemID, ["u"] = heirloom.u, ["f"] = heirloom.f }, app.BaseHeirloomLevel) };
+						heirloomHeader.g = { setmetatable({ ["level"] = i, ["heirloomLevelID"] = itemID, ["u"] = heirloom.u }, app.BaseHeirloomLevel) };
 
 						-- add the header into the appropriate upgrade token
 						if isWeapon then
@@ -14185,6 +14185,10 @@ end
 local function FilterItemClass_RequireItemFilter(item)
 	local f = item.f;
 	if f then
+		-- don't filter Heirlooms by their Type if they are collectible as Heirlooms
+		if item.__type == "BaseHeirloom" and app.CollectibleHeirlooms then
+			return true;
+		end
 		return app.Settings:GetFilter(f);	-- Filter applied via Settings (character-equippable or manually set)
 	else
 		return true;
@@ -14407,7 +14411,8 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 		local knownSource = C_TransmogCollection_GetSourceInfo(knownSourceID);
 		local acctSources = ATTAccountWideData.Sources;
 		local checkItem, checkSource, valid;
-		local knownRaces, knownClasses, knownFaction = knownItem.races, knownItem.c, knownItem.r;
+		local knownRaces, knownClasses, knownFaction, knownFilter = knownItem.races, knownItem.c, knownItem.r, knownItem.f;
+		local checkFilter;
 		-- this source unlocks a visual that the current character may tmog, so all shared visuals should be considered 'collected' regardless of restriction
 		local currentCharacterUsable = currentCharacterOnly and not knownItem.nmc and not knownItem.nmr;
 		-- For each shared Visual SourceID
@@ -14439,7 +14444,8 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 					checkItem = SearchForSourceIDQuickly(sourceID);
 					if checkItem then
 						-- filter matches or one item is Cosmetic
-						if checkItem.f == knownItem.f or checkItem.f == 2 or knownItem.f == 2 then
+						checkFilter = checkItem.f;
+						if checkFilter == knownFilter or checkFilter == 2 or knownFilter == 2 then
 							valid = true;
 							-- verify all possible restrictions that the known source may have against restrictions on the source in question
 							-- if known source has no equivalent restrictions, then restrictions on the source are irrelevant
@@ -19044,8 +19050,8 @@ customWindowUpdates["AchievementHarvester"] = function(self, ...)
 		if not self.initialized then
 			self.doesOwnUpdate = true;
 			self.initialized = true;
-			self.Limit = 15575;
-			self.PartitionSize = 1000;
+			self.Limit = 15596;	-- MissingAchievements:9.2.5.42850
+			self.PartitionSize = 2000;
 			local db = {};
 			local CleanUpHarvests = function()
 				local g, partition, pg, pgcount, refresh = self.data.g;
@@ -19671,36 +19677,36 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				end
 
 				-- Check for difficulty groups
-				local cbd, zd = -1, -1;
-				local groupHeaderID, g;
-				for _,group in ipairs(groups) do
-					g = group.g;
-					if g and group.difficultyID then
-						cbd, zd = -1, -1;
-						-- Look for special headers
-						for j,subgroup in ipairs(g) do
-							groupHeaderID = subgroup.headerID;
-							-- Common Boss Drops
-							if groupHeaderID == -1 then
-								cbd = j;
-							end
-							-- Zone Drops
-							if groupHeaderID == 0 then
-								zd = j;
-							end
-						end
+				-- local cbd, zd = -1, -1;
+				-- local groupHeaderID, g;
+				-- for _,group in ipairs(groups) do
+				-- 	g = group.g;
+				-- 	if g and group.difficultyID then
+				-- 		cbd, zd = -1, -1;
+				-- 		-- Look for special headers
+				-- 		for j,subgroup in ipairs(g) do
+				-- 			groupHeaderID = subgroup.headerID;
+				-- 			-- Common Boss Drops
+				-- 			if groupHeaderID == -1 then
+				-- 				cbd = j;
+				-- 			end
+				-- 			-- Zone Drops
+				-- 			if groupHeaderID == 0 then
+				-- 				zd = j;
+				-- 			end
+				-- 		end
 
-						-- Push the Common Boss Drop header to the top
-						if cbd > -1 then
-							tinsert(g, 1, table.remove(g, cbd));
-						end
+				-- 		-- Push the Common Boss Drop header to the top
+				-- 		if cbd > -1 then
+				-- 			tinsert(g, 1, table.remove(g, cbd));
+				-- 		end
 
-						-- Push the Zone Drop header to the bottom
-						if zd > -1 then
-							tinsert(g, table.remove(g, zd));
-						end
-					end
-				end
+				-- 		-- Push the Zone Drop header to the bottom
+				-- 		if zd > -1 then
+				-- 			tinsert(g, table.remove(g, zd));
+				-- 		end
+				-- 	end
+				-- end
 
 				header.u = nil;
 				header.mapID = self.mapID;
@@ -19735,13 +19741,13 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 									ExpandGroupsRecursively(row, false, true);
 								end
 							-- Zone Drops/Common Boss Drops should also be expanded within instances
-							elseif row.headerID == 0 or row.headerID == -1 then
-								if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
+							-- elseif row.headerID == 0 or row.headerID == -1 then
+							-- 	if not row.expanded then ExpandGroupsRecursively(row, true); expanded = true; end
 							end
 						end
 						-- No difficulty found to expand, so just expand everything in the list
 						if not expanded then
-							ExpandGroupsRecursively(header, true, true);
+							ExpandGroupsRecursively(header, true);
 							expanded = true;
 						end
 					end

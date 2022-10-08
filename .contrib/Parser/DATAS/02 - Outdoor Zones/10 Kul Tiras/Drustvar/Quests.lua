@@ -1487,7 +1487,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["lockCriteria"] = { 1, "lvl", 50 },
 				["races"] = ALLIANCE_ONLY,
 			},{
-				-- TODO: Check SQ also probably cant do after a certain level
+				-- TODO: Check SQ, also probably can't do after a certain level
 				q(48525),	-- Break Them to Splinters
 				q(48474),	-- Crypt Keepers
 				q(47969),	-- Fallhaven's Curse

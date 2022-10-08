@@ -18,6 +18,7 @@ _.Zones =
 						}),
 					},
 				})),
+				explorationAch(4865),	-- Explore Uldum
 				ach(4872, {	-- Unearthing Uldum
 					crit(1, {	-- Rescued by Outsiders
 						["sourceQuest"] = 28112,	-- Escape From the Lost City

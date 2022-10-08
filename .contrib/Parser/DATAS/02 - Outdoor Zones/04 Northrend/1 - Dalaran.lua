@@ -2097,115 +2097,13 @@ root("Zones", {
 						}),
 						n(40212, {	-- Trapjaw Rix <Savage Gladiator>
 							["coord"] = { 59.3, 57.3, NORTHREND_THE_UNDERBELLY },
-							["itemID"] = 137642,	-- Mark of Honor
 							["groups"] = {
-								n(WEAPONS, {
-									i(146647, {	-- Arsenal: Savage Gladiator's Weapons
-										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-										["sym"] = {
-											{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR },
-											{"exclude", "itemID", 146647 },	-- Exclude itself to stop duplicating
-										},
-									}),
-									i(42557, {	-- Savage Gladiator's Barrier
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42511, {	-- Savage Gladiator's Baton of Light
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42356, {	-- Savage Gladiator's Battle Staff
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42221, {	-- Savage Gladiator's Bonecracker
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42295, {	-- Savage Gladiator's Bonegrinder
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42212, {	-- Savage Gladiator's Chopper
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42206, {	-- Savage Gladiator's Cleaver
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42294, {	-- Savage Gladiator's Decapitator
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42382, {	-- Savage Gladiator's Energy Staff
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42220, {	-- Savage Gladiator's Fleshslicer
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(44416, {	-- Savage Gladiator's Focus Staff
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42344, {	-- Savage Gladiator's Gavel
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42297, {	-- Savage Gladiator's Greatsword
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42213, {	-- Savage Gladiator's Hacker
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42446, {	-- Savage Gladiator's Heavy Crossbow
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42445, {	-- Savage Gladiator's Longbow
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42215, {	-- Savage Gladiator's Mutilator
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42517, {	-- Savage Gladiator's Piercing Touch
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42296, {	-- Savage Gladiator's Pike
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42222, {	-- Savage Gladiator's Pummeler
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42223, {	-- Savage Gladiator's Quickblade
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42568, {	-- Savage Gladiator's Redoubt
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42447, {	-- Savage Gladiator's Rifle
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42218, {	-- Savage Gladiator's Ripper
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42216, {	-- Savage Gladiator's Shanker
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42556, {	-- Savage Gladiator's Shield Wall
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42217, {	-- Savage Gladiator's Shiv
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42219, {	-- Savage Gladiator's Slasher
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42224, {	-- Savage Gladiator's Slicer
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42343, {	-- Savage Gladiator's Spellblade
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42388, {	-- Savage Gladiator's Staff
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(42448, {	-- Savage Gladiator's Touch of Defeat
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
-									i(44415, {	-- Savage Gladiator's War Staff
-										-- ["cost"] = { { "i", 137642, TODO } },	-- ??x Mark of Honor
-									}),
+								i(146647, {	-- Arsenal: Savage Gladiator's Weapons
+									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR },
+										{"exclude", "itemID", 146647 },	-- Exclude itself to stop duplicating
+									},
 								}),
 								cl(DEATHKNIGHT, {
 									i(146580, {	-- Ensemble: Savage Gladiator's Dreadplate Armor
@@ -4017,26 +3915,32 @@ root("Zones", {
 						["qg"] = 28705,	-- Katherine Lee
 						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13101, {	-- Convention at the Legerdemain [A]
 						["qg"] = 28705,	-- Katherine Lee
 						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13100, {	-- Infused Mushroom Meatloaf [A]
 						["qg"] = 28705,	-- Katherine Lee
 						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13107, {	-- Mustard Dogs! [A]
 						["qg"] = 28705,	-- Katherine Lee
 						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13102, {	-- Sewer Stew [A]
 						["qg"] = 28705,	-- Katherine Lee
 						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
+						["maps"] = { CRYSTALSONG_FOREST },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(32413, {	-- A Return to Krasarang
 						["qg"] = 68586,	-- Grand Magister Rommath
@@ -4046,31 +3950,37 @@ root("Zones", {
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 					}),
-					
+
 					q(13115, {	-- Cheese for Glowergold [H]
 						["qg"] = 29631,	-- Awilo Longomba
 						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13113, {	-- Convention at the Legerdemain [H]
 						["qg"] = 29631,	-- Awilo Longomba
 						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13112, {	-- Infused Mushroom Meatloaf [H]
 						["qg"] = 29631,	-- Awilo Longomba
 						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13116, {	-- Mustard Dogs! [H]
 						["qg"] = 29631,	-- Awilo Longomba
 						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13114, {	-- Sewer Stew [H]
 						["qg"] = 29631,	-- Awilo Longomba
 						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
+						["maps"] = { CRYSTALSONG_FOREST },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					}),
 					--[[
 					q(32406, {	-- A Tactical Assault
@@ -4117,15 +4027,15 @@ root("Zones", {
 							}),
 						},
 					}),
-					q(14151, {	-- Cardinal Ruby
-						["qg"] = 28703,	-- Quest Giver: Linzy Blackbolt <Alchemy Trainer>
+					applyclassicphase(WRATH_PHASE_THREE, q(14151, {	-- Cardinal Ruby
+						["qg"] = 28703,	-- Linzy Blackbolt <Alchemy Trainer>
 						["coord"] = { 42.4, 32.0, NORTHREND_DALARAN },
-						["repeatable"] = true,
 						["requireSkill"] = ALCHEMY,
+						["repeatable"] = true,
 						["groups"] = {
 							recipe(66659),	-- Transmute: Cardinal Ruby
 						},
-					}),
+					})),
 					q(13272, {	-- Cloth Scavenging (Neutral)
 						["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable.
 						["altQuests"] = {
@@ -4529,11 +4439,10 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 					}),
 					]]--
-					q(14203, {	-- Waterlogged Recipe
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "i", 48681 },	-- Waterlogged Recipe
+					q(24431, {	-- Waterlogged Recipe
+						["provider"] = { "i", 49667 },	-- Waterlogged Recipe
+						["requireSkill"] = COOKING,
 						["repeatable"] = true,
-						["requireSkill"] = FISHING,
 						["groups"] = {
 							currency(81),	-- Epicurean's Award 5x
 						},
@@ -4566,11 +4475,13 @@ root("Zones", {
 				n(REWARDS, {
 					i(46007, {	-- Bag of Fishing Treasures
 						["description"] = "Fishing Daily Quest Reward",
+						["requireSkill"] = FISHING,
 						["crs"] = { 28742 },	-- Marcia Chase
 						["groups"] = {
 							i(46004),	-- Sealed Vial of Poison
 							i(44983),	-- Strand Crawler Pet
 							i(45984),	-- Unusual Compass (TOY!)
+							i(49667),	-- Waterlogged Recipe
 							i(33820),	-- Weather-Beaten Fishing Hat
 							i(45986, {	-- Tiny Titanium Lockbox
 								i(45995),	-- Forgotten Necklace
@@ -5258,8 +5169,16 @@ root("Zones", {
 					n(32287, {	-- Archmage Alvareaux <Kirin Tor Quartermaster>
 						["coord"] = { 25.2, 47.8, NORTHREND_DALARAN },
 						["groups"] = {
+							i(44159, {	-- Arcanum of Burning Mysteries
+								["timeline"] = { "removed 5.0.4" },
+								["filterID"] = CONSUMABLES,
+							}),
+							i(44141, {	-- Arcanum of the Flame's Soul
+								["timeline"] = { "removed 5.0.4" },
+								["filterID"] = CONSUMABLES,
+							}),
 							i(44182),	-- Boots of Twinkling Stars
-							i(41718),	-- Design: Brilliant Scarlet Ruby
+							i(41718),	-- Design: Brilliant Scarlet Ruby [CATA+] / Design: Runed Scarlet Ruby [WRATH]
 							i(44183),	-- Fireproven Gauntlets
 							i(44173),	-- Flameheart Spell Scalpel
 							i(44181),	-- Ghostflicker Waistband
@@ -5272,7 +5191,9 @@ root("Zones", {
 							i(44167),	-- Shroud of Dedicated Research
 							i(44171),	-- Spaulders of Grounded Lightning
 							i(44174),	-- Stave of Shrouded Mysteries
-							i(43157),	-- Tabard of the Kirin Tor
+							i(43157, {	-- Tabard of the Kirin Tor
+								["factionID"] = 1090,	-- Kirin Tor
+							}),
 						},
 					}),
 					n(29499, {	-- Bartram Haller <Dagger & Fist Weapon Merchant>
@@ -6139,14 +6060,14 @@ root("Zones", {
 						["groups"] = {
 							i(82470, {	-- Ancient Tome of Portal: Dalaran
 								["timeline"] = { "added 5.0.1.15464" },
-								["isLimited"] = true,
 								["spellID"] = 120146,	-- Ancient Portal: Dalaran
 								["classes"] = { MAGE },
+								["isLimited"] = true,
 							}),
 							i(137294, {	-- Dalaran Initiates' Pin (TOY!)
 								["timeline"] = { "added 7.0.3.22248" },
-								["isLimited"] = true,
 								["classes"] = { MAGE },
+								["isLimited"] = true,
 							}),
 							i(136846, {	-- Familiar Stone (TOY!)
 								["timeline"] = { "added 7.0.3.22248" },
@@ -6165,14 +6086,20 @@ root("Zones", {
 							i(167733, {	-- Technique: Glyph of Dalaran Brilliance (RECIPE!)
 								["timeline"] = { "added 8.1.5.29701" },
 								["isLimited"] = true,
-								["timeline"] = { "added 8.1.5" },
 							}),
 							i(44714, {	-- Tome of Dalaran Brilliance
+								["timeline"] = { "removed 7.0.3" },
+								["spellID"] = 61316,	-- Dalaran Brilliance
 								["classes"] = { MAGE },
-								["u"] = REMOVED_FROM_GAME,	-- removed in 7.0.3
-								["groups"] = {
-									i(44602),	-- Magic Consumed Book
-								},
+								["isLimited"] = true,
+								["f"] = RECIPES,
+							}),
+							i(44602, {	-- Tome of Dalaran Intellect
+								["timeline"] = { "removed 7.0.3" },
+								["spellID"] = 61024,	-- Dalaran Intellect
+								["classes"] = { MAGE },
+								["isLimited"] = true,
+								["f"] = RECIPES,
 							}),
 							i(44709, {	-- Tome of Polymorph: Black Cat
 								["spellID"] = 61305,	-- Polymorph
@@ -6290,7 +6217,7 @@ root("Zones", {
 							}),
 						},
 					}),
-					n(40160, {	-- Frozo the Renowned <Frozen Orb Trader>
+					applyclassicphase(WRATH_PHASE_FOUR, n(40160, {	-- Frozo the Renowned <Frozen Orb Trader>
 						["coord"] = { 40.0, 28.9, NORTHREND_DALARAN },
 						["groups"] = {
 							i(47556, {	-- Crusader Orb
@@ -6324,7 +6251,7 @@ root("Zones", {
 								["cost"] = { { "i", 43102, 4 }, },	-- 4x Frozen Orb
 							}),
 						},
-					}),
+					})),
 					n(28997, {	-- Griselda Hunderland <Plate Armor Merchant>
 						["coord"] = { 46.3, 27.2, NORTHREND_DALARAN },
 						["groups"] = {

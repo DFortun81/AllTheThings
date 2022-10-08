@@ -976,7 +976,7 @@ _.Zones =
 				n(BONUS_OBJECTIVES, sharedData({
 					["lockCriteria"] = { 1, "lvl", 45 },
 				},{
-					-- TODO: Check SQ also probably cant do after a certain level
+					-- TODO: Check SQ, also probably can't do after a certain level
 					q(39274),	-- Defend the Riverlands
 					q(39576),	-- Echoes of Deathwing
 					q(40050),	-- Shipwreck Cove

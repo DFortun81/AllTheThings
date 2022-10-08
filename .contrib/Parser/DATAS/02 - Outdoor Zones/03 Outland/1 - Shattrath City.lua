@@ -906,6 +906,22 @@ root("Zones", {
 							i(32860),	-- Reins of the Purple Netherwing Drake Mount
 						},
 					})),
+					q(11380, {	-- Manalicious
+						["qg"] = 24393,	-- The Rokk <Master of Cooking>
+						["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
+						["maps"] = { NETHERSTORM },
+						["requireSkill"] = COOKING,
+						["isDaily"] = true,
+						["lvl"] = 70,
+						["groups"] = {
+							objective(1, {	-- 0/15 Mana Berry
+								["provider"] = { "i", 33849 },	-- Mana Berry
+								["coord"] = { 48, 54, NETHERSTORM },
+							}),
+							i(33844),	-- Barrel of Fish
+							i(33857),	-- Crate of Meat
+						},
+					}),
 					q(10325, {	-- Marks of Kil'jaeden
 						["qg"] = 18537,	-- Adyen the Lightwarden
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
@@ -919,6 +935,27 @@ root("Zones", {
 						["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 30809, 10 } },	-- Mark of Sargeras
+					}),
+					q(10902, {	-- Master of Elixirs (2/2)
+						["qg"] = 19052,	-- Lorokeem <Master Alchemy Trainer>
+						["sourceQuest"] = 10906,	-- Master of Elixirs (1/2)
+						["description"] = "Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",
+						["coord"] = { 45.8, 20.4, SHATTRATH_CITY },
+						["timeline"] = { "added 2.0.3", "removed 4.3.0" },
+						["maps"] = { CAVERNS_OF_TIME_BLACK_MORASS },
+						["requireSkill"] = ALCHEMY,
+						["altQuests"] = {
+							10902,	-- Master of Elixirs (2/2)
+							--10897,	-- Master of Potions (2/2)
+							10899,	-- Master of Transmutation (2/2)
+						},
+						["cost"] = {
+							{ "i", 31753, 10 },	-- Essence of Infinity
+							{ "i", 22834, 5 },	-- Elixir of Major Defense
+							{ "i", 28104, 5 },	-- Elixir of Mastery
+							{ "i", 22831, 5 },	-- Elixir of Major Agility
+						},
+						["lvl"] = 68,
 					}),
 					q(10025, {	-- More Basilisk Eyes
 						["qg"] = 18596,	-- Arcanist Adyria
@@ -1049,6 +1086,28 @@ root("Zones", {
 						["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
+					q(11377, {	-- Revenge is Tasty
+						["qg"] = 24393,	-- The Rokk <Master of Cooking>
+						["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
+						["maps"] = { TEROKKAR_FOREST },
+						["requireSkill"] = COOKING,
+						["isDaily"] = true,
+						["lvl"] = 70,
+						["groups"] = {
+							objective(1, {	-- 0/1 Kaliri Stew
+								["provider"] = { "i", 33839 },	-- Kaliri Stew
+								["coord"] = { 68.4, 79.0, TEROKKAR_FOREST },
+								["cr"] = 23051,	-- Monstrous Kaliri
+								["cost"] = {
+									{ "i", 33837, 1 },	-- Cooking Pot
+									{ "i", 27659, 3 },	-- Warp Burger
+									{ "i", 33838, 1 },	-- Giant Kaliri Wing
+								},
+							}),
+							i(33844),	-- Barrel of Fish
+							i(33857),	-- Crate of Meat
+						},
+					}),
 					q(10414, {	-- Single Firewing Signet
 						["qg"] = 18531,	-- Magistrix Fyalenn
 						["sourceQuest"] = 10412,	-- Firewing Signets
@@ -1084,6 +1143,26 @@ root("Zones", {
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 						["cost"] = { { "i", 30810, 1 } },	-- Sunfury Signet
 						["repeatable"] = true,
+					}),
+					q(11381, {	-- Soup for the Soul
+						["qg"] = 24393,	-- The Rokk <Master of Cooking>
+						["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
+						["maps"] = { NAGRAND },
+						["requireSkill"] = COOKING,
+						["isDaily"] = true,
+						["lvl"] = 70,
+						["groups"] = {
+							objective(1, {	-- 0/1 Spiritual Soup
+								["provider"] = { "i", 33850 },	-- Spiritual Soup
+								["coord"] = { 25.81, 59.40, NAGRAND },
+								["cost"] = {
+									{ "i", 33851, 1 },	-- Cooking Pot
+									{ "i", 27658, 4 },	-- Roasted Clefthoof
+								},
+							}),
+							i(33844),	-- Barrel of Fish
+							i(33857),	-- Crate of Meat
+						},
 					}),
 					q(10984, {	-- Speak with the Ogre
 						["qg"] = 22497,	-- V'eru
@@ -1136,6 +1215,28 @@ root("Zones", {
 						["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 						["cost"] = { { "i", 30810, 10 } },	-- Sunfury Signet
+					}),
+					q(11379, {	-- Super Hot Stew
+						["qg"] = 24393,	-- The Rokk <Master of Cooking>
+						["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
+						["maps"] = { BLADES_EDGE_MOUNTAINS },
+						["requireSkill"] = COOKING,
+						["isDaily"] = true,
+						["lvl"] = 70,
+						["groups"] = {
+							objective(1, {	-- 0/1 Demon Broiled Surprise
+								["provider"] = { "i", 33848 },	-- Demon Broiled Surprise
+								["coord"] = { 28.0, 82.2, BLADES_EDGE_MOUNTAINS },
+								["cr"] = 19973,	-- Abyssal Flamebringer
+								["cost"] = {
+									{ "i", 33852, 1 },	-- Cooking Pot
+									{ "i", 31672, 2 },	-- Mok'Nathal Shortribs
+									{ "i", 31673, 1 },	-- Crunchy Serpent
+								},
+							}),
+							i(33844),	-- Barrel of Fish
+							i(33857),	-- Crate of Meat
+						},
 					}),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11112, {	-- Suraku the Azure Netherwing Drake
 						["qg"] = 23461,	-- Suraku
@@ -2594,7 +2695,7 @@ root("Zones", {
 								["isLimited"] = true,
 							}),
 							i(32381, {	-- Schematic: Fused Wiring
-								["recipeID"] = 39895,
+								["timeline"] = { "added 2.1.0", "removed 5.0.4" },
 								["isLimited"] = true,
 							}),
 						},

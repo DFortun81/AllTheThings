@@ -294,7 +294,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 37.7, 31.8, DREADSCAR_RIFT },
 					}),
 					q(44099, {	-- A Mutual Friend
-						["sourceQuests"] = { 40823 },	-- Rebuilding the Council
+						["sourceQuests"] = { 40824 },	-- The Path of the Dreadscar
 						["provider"] = { "n", 112693 },	-- Black Harvest Acolyte
 						["maps"] = { LEGION_THE_UNDERBELLY },
 						["isBreadcrumb"] = true,

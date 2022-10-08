@@ -158,10 +158,13 @@ root("Zones", {
 						["cr"] = 30433,	-- Aedan Moran <Flight Master>
 						["coord"] = { 87.8, 78.0, ICECROWN },
 					}),
-					fp(333, {	-- The Shadow Vault
+					applyclassicphase(WRATH_PHASE_THREE, fp(333, {	-- The Shadow Vault
 						["cr"] = 30314,	-- Morlia Doomwing <Flight Master>
 						["coord"] = { 43.6, 24.4, ICECROWN },
-					}),
+						-- #if ANYCLASSIC
+						["description"] = "This flight path is currently broken and has no connected pathways.",
+						-- #endif
+					})),
 				}),
 				n(QUESTS, {
 					q(13286, {	-- ...All the Help We Can Get.
@@ -814,10 +817,9 @@ root("Zones", {
 						["sourceQuest"] = 13168,	-- Parting Gifts
 					}),
 					q(13074, {	-- Hope Within the Emerald Nightmare
-						["lvl"] = 67,
-						["coord"] = { 36.2, 41.8, MOONGLADE },
 						["qg"] = 11832,	-- Keeper Remulos
 						["sourceQuest"] = 13073,	-- The Keeper's Favor
+						["coord"] = { 36.2, 41.8, MOONGLADE },
 					}),
 					q(13080, {	-- Hope Yet Remains
 						["coord"] = { 79.8, 30.8, ICECROWN },
@@ -910,12 +912,13 @@ root("Zones", {
 						["sourceQuest"] = 13044,	-- If There Are Survivors...
 					}),
 					q(13135, {	-- It Could Kill Us All
-						["coord"] = { 82.9, 73.0, ICECROWN },
 						["qg"] = 30714,	-- Crusade Engineer Spitzpatrick
 						["sourceQuests"] = {
 							13104,	-- Once More Unto The Breach, Hero (Non-DK)
 							13105,	-- Once More Unto The Breach, Hero (DK)
 						},
+						["coord"] = { 82.9, 73.0, ICECROWN },
+						["maps"] = { CRYSTALSONG_FOREST },
 					}),
 					q(12887, {	-- It's All Fun and Games (A)
 						["races"] = ALLIANCE_ONLY,
@@ -1620,21 +1623,20 @@ root("Zones", {
 						["sourceQuest"] = 12955,	-- Eliminate the Competition
 					}),
 					q(13082, {	-- The Boon of A'dal
-						["maps"] = { SHATTRATH_CITY },
-						["coord"] = { 53.9, 44.7, ICECROWN },
 						["qg"] = 18481,	-- A'dal
 						["sourceQuest"] = 13081,	-- The Will of the Naaru
+						["coord"] = { 53.9, 44.7, ICECROWN },
+						["maps"] = { SHATTRATH_CITY },
 					}),
 					q(13079, {	-- The Boon of Alexstrasza
-						["coord"] = { 59.8, 54.7, DRAGONBLIGHT },
 						["qg"] = 26917,	-- Alexstrasza the Life-Binder
 						["sourceQuest"] = 13078,	-- Dahlia's Tears
+						["coord"] = { 59.8, 54.7, DRAGONBLIGHT },
 					}),
 					q(13075, {	-- The Boon of Remulos
-						["lvl"] = 67,
-						["coord"] = { 36.2, 41.8, MOONGLADE },
 						["qg"] = 11832,	-- Keeper Remulos
 						["sourceQuest"] = 13074,	-- Hope Within the Emerald Nightmare
+						["coord"] = { 36.2, 41.8, MOONGLADE },
 					}),
 					q(13231, {	-- The Broken Front (A)
 						["races"] = ALLIANCE_ONLY,
@@ -1749,10 +1751,10 @@ root("Zones", {
 						["sourceQuest"] = 13306,	-- Raise the Barricades
 					}),
 					q(13073, {	-- The Keeper's Favor
-						["lvl"] = 67,
-						["coord"] = { 79.7, 71.7, ICECROWN },
 						["qg"] = 31044,	-- Highlord Tirion Fordring
 						["sourceQuest"] = 13072,	-- A Hero Remains
+						["coord"] = { 79.7, 71.7, ICECROWN },
+						["maps"] = { MOONGLADE },
 					}),
 					q(13086, {	-- The Last Line Of Defense
 						["coord"] = { 85.6, 76.0, ICECROWN },
@@ -1880,12 +1882,13 @@ root("Zones", {
 						["sourceQuest"] = 13291,	-- Borrowed Technology
 					}),
 					q(13130, {	-- The Stone That Started A Revolution
-						["coord"] = { 83.0, 73.0, ICECROWN },
 						["qg"] = 30686,	-- Crusade Architect Silas
 						["sourceQuests"] = {
 							13104,	-- Once More Unto The Breach, Hero (Non-DK)
 							13105,	-- Once More Unto The Breach, Hero (DK)
 						},
+						["coord"] = { 83.0, 73.0, ICECROWN },
+						["maps"] = { CRYSTALSONG_FOREST },
 						["groups"] = {
 							i(43855),	-- Adepts Wristwraps
 							i(43914),	-- Girdle of Reprieve
@@ -2153,28 +2156,38 @@ root("Zones", {
 					n(32538, {	-- Duchess Mynx <Ebon Blade Quartermaster>
 						["coord"] = { 43.4, 20.6, ICECROWN },
 						["groups"] = {
+							i(44149, {	-- Arcanum of Torment
+								["timeline"] = { "removed 5.0.4" },
+								["filterID"] = CONSUMABLES,
+							}),
+							i(44138, {	-- Arcanum of Toxic Warding
+								["timeline"] = { "removed 5.0.4" },
+								["filterID"] = CONSUMABLES,
+							}),
 							i(44302),	-- Belt of Dark Mending
 							i(44242),	-- Dark Soldier Cape
 							i(44303),	-- Darkheart Chestguard
 							i(44306),	-- Death-Insured Sabatons
 							i(41562),	-- Design: Deadly Huge Citrine
-							i(41721),	-- Design: Deadly Monarch Topaz
-							i(41794, {	-- Design: Deadly Monarch Topaz
-								["spellID"] = 0,	-- This is now available via 41721, need to delink the old plans from the recipe
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(41725),	-- Design: Timeless Twilight Opal
-							i(41795, {	-- Design: Timeless Twilight Opal
-								["spellID"] = 0,	-- This is now available via 41725, need to delink the old plans from the recipe
-								["u"] = REMOVED_FROM_GAME,
-							}),
+							-- #if AFTER CATA
+							i(41721),	-- Design: Deadly Monarch Topaz [CATA+] / Design: Wicked Monarch Topaz [WRATH]
+							i(41725),	-- Design: Timeless Twilight Opal [CATA+] / Design: Glowing Twilight Opal [WRATH]
+							-- #else
+							i(41725),	-- Design: Glowing Twilight Opal [WRATH] / Design: Timeless Twilight Opal [CATA+]
+							i(41721),	-- Design: Wicked Monarch Topaz [WRATH] / Design: Deadly Monarch Topaz [CATA+]
+							-- #endif
 							i(44305),	-- Kilt of Dark Mercy
 							i(42183),	-- Pattern: Abyssal Bag
+							i(44512, {	-- Pattern: Nerubian Reinforced Quiver
+								["timeline"] = { "removed 4.0.1" },
+							}),
 							i(44250),	-- Reaper of Dark Souls
 							i(44249),	-- Runeblade of Demonstrable Power
 							i(44257),	-- Spaulders of the Black Arrow
 							i(44256),	-- Sterile Flesh-Handling Gloves
-							i(43155),	-- Tabard of the Ebon Blade
+							i(43155, {	-- Tabard of the Ebon Blade
+								["factionID"] = 1098,	-- Knights of the Ebon Blade
+							}),
 							i(44243),	-- Toxin-Tempered Sabatons
 							i(44241),	-- Unholy Persuader
 							i(44258),	-- Wound-Binder Wristguards
@@ -2183,6 +2196,14 @@ root("Zones", {
 					n(30431, {	-- Veteran Crusader Aliocha Segard <Argent Crusade Quartermaster>
 						["coord"] = { 87.6, 75.6, ICECROWN },
 						["groups"] = {
+							i(44139, {	-- Arcanum of the Fleeing Shadow
+								["timeline"] = { "removed 5.0.4" },
+								["filterID"] = CONSUMABLES,
+							}),
+							i(44150, {	-- Arcanum of the Stalwart Protector
+								["timeline"] = { "removed 5.0.4" },
+								["filterID"] = CONSUMABLES,
+							}),
 							i(44244),	-- Argent Skeleton Crusher
 							i(44248),	-- Battle Mender's Helm
 							i(44297),	-- Boots of the Neverending Path
@@ -2196,7 +2217,9 @@ root("Zones", {
 							i(44283),	-- Signet of Hopeful Light
 							i(44240),	-- Special Issue Legplates
 							i(44239),	-- Standard Issue Legplates
-							i(43154),	-- Tabard of the Argent Crusade
+							i(43154, {	-- Tabard of the Argent Crusade
+								["factionID"] = 1106,	-- Argent Crusade
+							}),
 							i(44245),	-- Zombie Sweeper Shotgun
 						},
 					}),
@@ -2206,7 +2229,6 @@ root("Zones", {
 					i(50380),	-- Battered Hilt (Horde)
 					i(37330, {	-- Formula: Enchant Cloak - Superior Arcane Resistance (RECIPE!)
 						["crs"] = {
-							32290,	-- Cult Alchemist
 							32297,	-- Cult Researcher
 							31702,	-- Frostbrood Spawn
 						},
@@ -2242,23 +2264,19 @@ root("Zones", {
 						},
 					}),
 					i(44560, {	-- Pattern: Fur Lining - Frost Resist
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { "removed 5.0.4" },
 						["crs"] = { 32289 },	-- Damned Apothecary
-						["spellID"] = 0,
 					}),
 					i(44563, {	-- Pattern: Fur Lining - Nature Resist
-						["u"] = REMOVED_FROM_GAME,
-						["spellID"] = 0,
+						["timeline"] = { "removed 5.0.4" },
 						["crs"] = {
-							32290,	-- Cult Alchemistz
 							32297,	-- Cult Researcher
 							31702,	-- Frostbrood Spawn
 						},
 					}),
 					i(44561, {	-- Pattern: Fur Lining - Shadow Resist
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { "removed 5.0.4" },
 						["crs"] = { 32349 },	-- Cultist Shard Watcher
-						["spellID"] = 0,
 					}),
 					i(44564, {	-- Recipe: Mighty Arcane Protection Potion
 						["coord"] = { 50.1, 31.8, ICECROWN },

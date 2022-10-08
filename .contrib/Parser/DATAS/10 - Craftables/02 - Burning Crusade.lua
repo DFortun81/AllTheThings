@@ -598,16 +598,16 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSel
 	}),
 	-- #if AFTER WRATH
 	prof(INSCRIPTION, {
-		filter(GLYPHS, {
 		-- #if AFTER WOD
-		i(42743, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
-		i(43316, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Aquatic Form
-		i(43368, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Sense Undead / Glyph of Truth[CATA] / Glyph of Seal of Blood[MOP+]
-		i(42461, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Health Funnel
-		i(42908, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap[MOP+]
-		i(43378, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Safe Fall
-		-- #endif
+		filter(GLYPHS, {
+			i(42743, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
+			i(43316, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Aquatic Form
+			i(43368, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Sense Undead / Glyph of Truth[CATA] / Glyph of Seal of Blood[MOP+]
+			i(42461, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Health Funnel
+			i(42908, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap[MOP+]
+			i(43378, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Safe Fall
 		}),
+		-- #endif
 		category(106, {	-- Tarot Cards
 			i(44317, {	-- Greater Darkmoon Card
 				-- Blessings Deck
@@ -1061,13 +1061,29 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSel
 			spell(2656, {	-- Smelting
 				["description"] = "The following items can be smelted by Miners in a city.",
 				["groups"] = {
-					i(23446),	-- Adamantite Bar
-					i(23447),	-- Eternium Bar
-					i(23445),	-- Fel Iron Bar
-					i(23448),	-- Felsteel Bar
-					i(23573),	-- Hardened Adamantite Bar
-					applyclassicphase(TBC_PHASE_FIVE, i(35128)),	-- Hardened Khorium Bar
-					i(23449),	-- Khorium Bar
+					i(23446, {	-- Adamantite Bar
+						["cost"] = { { "i", 23425, 2 } },	-- Adamantite Ore
+					}),
+					i(23447, {	-- Eternium Bar
+						["cost"] = { { "i", 23427, 2 } },	-- Eternium Ore
+					}),
+					i(23445, {	-- Fel Iron Bar
+						["cost"] = { { "i", 23424, 2 } },	-- Fel Iron Ore
+					}),
+					i(23448, {	-- Felsteel Bar
+						["cost"] = { { "i", 23445, 3 } },	-- Fel Iron Bar
+						["cost"] = { { "i", 23447, 2 } },	-- Eternium Bar
+					}),
+					i(23573, {	-- Hardened Adamantite Bar
+						["cost"] = { { "i", 23446, 10 } },	-- Adamantite Bar
+					}),
+					applyclassicphase(TBC_PHASE_FIVE, i(35128, {	-- Hardened Khorium Bar
+						["cost"] = { { "i", 23449, 3 } },	-- Khorium Bar
+						["cost"] = { { "i", 23573, 1 } },	-- Hardened Adamantite Bar
+					})),
+					i(23449, {	-- Khorium Bar
+						["cost"] = { { "i", 23426, 2 } },	-- Khorium Ore
+					}),
 				},
 			}),
 			i(23425),	-- Adamantite Ore

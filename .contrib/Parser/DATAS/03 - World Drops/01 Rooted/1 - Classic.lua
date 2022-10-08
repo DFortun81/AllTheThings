@@ -2648,6 +2648,12 @@ root("WorldDrops", tier(CLASSIC_TIER, {
 		i(1315),	-- Lei of Lilies
 		i(12031),	-- Lodestone Necklace
 		i(12034),	-- Marble Necklace
+		i(5004, {	-- Mark of the Kirin Tor
+			-- #if AFTER 6.0.1
+			["description"] = "Dropped from Crate of Salvage during Warlords of Draenor.",
+			-- #endif
+			["timeline"] = { "created 1.11.1.13287", "added 6.0.1", "removed 7.0.1" },
+		}),
 		i(12042),	-- Marsh Chain
 		i(13091),	-- Medallion of Grand Marshal Morris
 		i(1714),	-- Necklace of Calisea

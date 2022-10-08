@@ -460,7 +460,7 @@ _.Zones =
 							}),
 							q(32398, {	-- The Bell Speaks
 								["minReputation"] = { 1375, EXALTED },
-								["sourceQuests"] = { 
+								["sourceQuests"] = {
 									32412,	-- One Last Grasp
 									32413,	-- A Return to Krasarang
 								},
@@ -683,7 +683,7 @@ _.Zones =
 								},
 							}),
 							n(69060, {	-- Tuskripper Grukna <Dominance Offensive Quartermaster>
-								["coord"] = { 9.71, 50.7, KRASARANG_WILDS },
+								["coord"] = { 10.8, 53.4, KRASARANG_WILDS },
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									i(93329),	-- Bambrick's Striking Strap

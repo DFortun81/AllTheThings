@@ -534,6 +534,52 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(3632, {	-- Gnome Engineering
+					["providers"] = {
+						{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
+						{ "i", 10789 },	-- Manual of Engineering Disciplines
+					},
+					["altQuests"] = {
+						3526,	-- Goblin Engineering
+						3629,	-- Goblin Engineering
+						3630,	-- Gnome Engineering
+						--3632,	-- Gnome Engineering
+						3633,	-- Goblin Engineering
+						3634,	-- Gnome Engineering
+						3635,	-- Gnome Engineering
+						3637,	-- Gnome Engineering
+						4181,	-- Goblin Engineering
+					},
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 68.8, 45.2, IRONFORGE },
+					["timeline"] = { "removed 4.0.1.2000" },
+					["requireSkill"] = ENGINEERING,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(4181, {	-- Goblin Engineering
+					["providers"] = {
+						{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
+						{ "i", 10789 },	-- Manual of Engineering Disciplines
+					},
+					["altQuests"] = {
+						3526,	-- Goblin Engineering
+						3629,	-- Goblin Engineering
+						3630,	-- Gnome Engineering
+						3632,	-- Gnome Engineering
+						3633,	-- Goblin Engineering
+						3634,	-- Gnome Engineering
+						3635,	-- Gnome Engineering
+						3637,	-- Gnome Engineering
+						--4181,	-- Goblin Engineering
+					},
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 68.8, 45.2, IRONFORGE },
+					["timeline"] = { "removed 4.0.1.2000" },
+					["requireSkill"] = ENGINEERING,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+				}),
 				q(1682, {	-- Grey Iron Weapons
 					["qg"] = 6031,	-- Tormus Deepforge
 					["sourceQuest"] = 1681,	-- Ironband's Compound
@@ -580,6 +626,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 35,
+				}),
+				q(6612, {	-- I Know A Guy...
+					["qg"] = 5159,	-- Daryl Riknussun
+					["coord"] = { 60.1, 36.5, IRONFORGE },
+					["timeline"] = { "removed 4.0.3.2000" },
+					["races"] = ALLIANCE_ONLY,
+					["requireSkill"] = COOKING,
 					["isBreadcrumb"] = true,
 					["lvl"] = 35,
 				}),
@@ -855,6 +910,25 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(3641, {	-- Show Your Work
+					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
+					["sourceQuest"] = 3640,	-- The Pledge of Secrecy
+					["altQuests"] = { 3639, 3643 },	-- Show Your Work
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 69.8, 50.2, IRONFORGE },
+					["timeline"] = { "removed 4.0.3.2000" },
+					["requireSkill"] = ENGINEERING,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4392, 2 },	-- Advanced Target Dummy
+						{ "i", 4407, 1 },	-- Accurate Scope
+						{ "i", 10559, 6 },	-- Mithril Tube
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						i(10790),	-- Gnome Engineer Membership Card
+					},
+				}),
 				q(3451, {	-- Signal for Pickup (1/2)
 					["qg"] = 8517,	-- Xiggs Fuselighter
 					["sourceQuest"] = 3450,	-- An Easy Pickup
@@ -928,6 +1002,27 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = FISHING_AWARD_GROUPS,
+				}),
+				q(3640, {	-- The Pledge of Secrecy
+					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
+					["sourceQuests"] = {
+						3630,	-- Gnome Engineering
+						3630,	-- Gnome Engineering
+						3630,	-- Gnome Engineering
+					},
+					["altQuests"] = { 3638, 3642 },	-- The Pledge of Secrecy
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 69.8, 50.2, IRONFORGE },
+					["timeline"] = { "removed 4.0.3.2000" },
+					["requireSkill"] = ENGINEERING,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- 0/1 Overspark's Signed Pledge
+							["provider"] = { "i", 11283 },	-- Overspark's Signed Pledge
+							["cost"] = { { "i", 10793, 1 } },	-- Overspark's Pledge of Secrecy
+						}),
+					},
 				}),
 				q(38402, {	-- The Same, But Different
 					["qg"] = 6294,	-- Krom Stoutarm

@@ -1,6 +1,37 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local OnTooltipForTheKaluak = [[function(t)
+	local reputation = t.reputation;
+	if reputation < 42000 then
+		local isHuman = _.RaceIndex == 1;
+		GameTooltip:AddLine("Daily Quests:");
+		local preparingRep = isHuman and 550 or 500;
+		if not t.preparing then
+			local f = _.SearchForField("questID", 11945);
+			if f and #f > 0 then t.preparing = f[1]; end
+		end
+		GameTooltip:AddDoubleLine((t.preparing.text or RETRIEVING_DATA) .. " (" .. _.GetMapName(]] .. BOREAN_TUNDRA .. [[) .. ")", _.L[t.preparing.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. preparingRep .. " Rep");
+
+		local puppyRep = isHuman and 550 or 500;
+		if not t.puppy then
+			local f = _.SearchForField("questID", 11960);
+			if f and #f > 0 then t.puppy = f[1]; end
+		end
+		GameTooltip:AddDoubleLine((t.puppy.text or RETRIEVING_DATA) .. " (" .. _.GetMapName(]] .. DRAGONBLIGHT .. [[) .. ")", _.L[t.puppy.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. puppyRep .. " Rep");
+
+		local heartRep = isHuman and 550 or 500;
+		if not t.heart then
+			local f = _.SearchForField("questID", 11472);
+			if f and #f > 0 then t.heart = f[1]; end
+		end
+		GameTooltip:AddDoubleLine((t.heart.text or RETRIEVING_DATA) .. " (" .. _.GetMapName(]] .. HOWLING_FJORD .. [[) .. ")", _.L[t.heart.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. heartRep .. " Rep");
+
+		local repPerDay = preparingRep + puppyRep + heartRep;
+		local x, n = math.ceil((42000 - t.reputation) / repPerDay), math.ceil(42000 / repPerDay);
+		GameTooltip:AddDoubleLine("Complete Dailies Everyday", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+	end
+end]];
 root("Zones", {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(DRAGONBLIGHT, {
@@ -199,6 +230,7 @@ root("Zones", {
 				n(FACTIONS, {
 					faction(1073, {	-- The Kalu'ak
 						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },
+						["OnTooltip"] = OnTooltipForTheKaluak,
 					}),
 					faction(1091),	-- The Wyrmrest Accord
 				}),
@@ -539,13 +571,14 @@ root("Zones", {
 						["sourceQuest"] = 12263,	-- The Best of Intentions
 					}),
 					q(12454, {	-- Cycle of Life
-						["coord"] = { 63.5, 72.0, DRAGONBLIGHT },
 						["qg"] = 27255,	-- Nishera the Garden Keeper
+						["coord"] = { 63.5, 72.0, DRAGONBLIGHT },
 					}),
 					q(13242, {	-- Darkness Stirs
 						["qg"] = 31333,	-- Alexstrasza the Life-Binder
 						["sourceQuest"] = 12500,	-- Return To Angrathar [Horde]
-						["u"] = REMOVED_FROM_GAME,
+						["coord"] = { 38.4, 19.4, DRAGONBLIGHT },
+						["timeline"] = { "removed 4.0.3" },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12372, {	-- Defending Wyrmrest Temple
@@ -1063,13 +1096,10 @@ root("Zones", {
 						["qg"] = 26979,	-- Kontokanis
 					}),
 					q(11960, {	-- Planning for the Future
+						["qg"] = 26228,	-- Trapper Mau'i
 						["coord"] = { 48.2, 74.3, DRAGONBLIGHT },
+						["maxReputation"] = { 1073, EXALTED },	-- The Kalu'ak, Exalted.
 						["isDaily"] = true,
-						["qg"] = 26228,	-- Trapper Mau'i
-					}),
-					q(26178, {	-- Planning for the Future (old quest reworked to be a daily)
-						["u"] = REMOVED_FROM_GAME,
-						["qg"] = 26228,	-- Trapper Mau'i
 					}),
 					q(12463, {	-- Plunderbeard Must Be Found!
 						["coord"] = { 85.9, 50.8, DRAGONBLIGHT },
@@ -1446,67 +1476,110 @@ root("Zones", {
 						["sourceQuest"] = 12011,	-- Signs of Big Watery Trouble
 					}),
 					q(13347, {	-- Reborn From The Ashes
+						["qg"] = 31333,	-- Alexstrasza the Life-Binder
 						["sourceQuest"] = 12499,	-- Return To Angrathar [Alliance]
+						["coord"] = { 38.4, 19.4, DRAGONBLIGHT },
 						["timeline"] = { "removed 4.0.3" },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13369, {	-- Fate, Up Against Your Will
+						["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
 						["sourceQuest"] = 13347,	-- Reborn From The Ashes
+						["coord"] = { 79.8, 38.6, STORMWIND_CITY },
 						["timeline"] = { "removed 4.0.3" },
+						["maps"] = { ORGRIMMAR },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13370, {	-- A Royal Coup
+						["qg"] = 32363,	-- Thrall <Warchief>
 						["sourceQuest"] = 13369,	-- Fate, Up Against Your Will
+						["coord"] = { 32.6, 37.6, ORGRIMMAR },
 						["timeline"] = { "removed 4.0.3" },
+						["maps"] = { STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13371, {	-- The Killing Time
+						["qg"] = 29611,	-- King Varian Wrynn <King of Stormwind>
 						["sourceQuest"] = 13370,	-- A Royal Coup
+						["coord"] = { 79.8, 38.6, STORMWIND_CITY },
 						["timeline"] = { "removed 4.0.3" },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13377, {	-- The Battle for the Undercity (A)
 						["qg"] = 32376,	-- Broll Bearmantle
 						["sourceQuest"] = 13371,	-- The Killing Time
+						["coord"] = { 50, 68.4, TIRISFAL_GLADES },
 						["timeline"] = { "removed 4.0.3" },
+						["maps"] = { STORMWIND_CITY, UNDERCITY },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							un(REMOVED_FROM_GAME, i(44579)),	-- Medallion of Heroism
-							un(REMOVED_FROM_GAME, i(44591)),	-- Wrynn's Leggings of Foresight
-							un(REMOVED_FROM_GAME, i(44592)),	-- Wrynn's Leggings of Valor
-							un(REMOVED_FROM_GAME, i(44593)),	-- Wrynn's Leggings of Wisdom
-							un(REMOVED_FROM_GAME, i(44594)),	-- Wrynn's Legguards of Brutality
-							un(REMOVED_FROM_GAME, i(44595)),	-- Wrynn's Legguards of Heroism
-							un(REMOVED_FROM_GAME, i(44596)),	-- Wrynn's Legplates of Carnage
+							i(44597, {	-- Medallion of Heroism
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44591, {	-- Wrynn's Leggings of Foresight
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44592, {	-- Wrynn's Leggings of Valor
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44593, {	-- Wrynn's Leggings of Wisdom
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44594, {	-- Wrynn's Legguards of Brutality
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44595, {	-- Wrynn's Legguards of Heroism
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44596, {	-- Wrynn's Legplates of Carnage
+								["timeline"] = { "removed 4.0.3" },
+							}),
 						},
 					}),
 
 					q(13257, {	-- Herald of War
 						["qg"] = 25256,	-- High Overlord Saurfang
 						["sourceQuest"] = 13242,	-- Darkness Stirs
+						["coord"] = { 41.4, 53.6, BOREAN_TUNDRA },
 						["timeline"] = { "removed 4.0.3" },
-						["maps"] = { BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13266, {	-- A Life Without Regret
 						["qg"] = 31412,	-- Thrall
 						["sourceQuest"] = 13257,	-- Herald of War
+						["coord"] = { 32, 37.8, ORGRIMMAR },
 						["timeline"] = { "removed 4.0.3" },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13267, {	-- The Battle for the Undercity (H)
 						["qg"] = 31649,	-- Vol'jin
 						["sourceQuest"] = 13266,	-- A Life Without Regret
+						["coord"] = { 61.8, 62.6, TIRISFAL_GLADES },
 						["timeline"] = { "removed 4.0.3" },
+						["maps"] = { ORGRIMMAR, UNDERCITY },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							un(REMOVED_FROM_GAME, i(44579)),	-- Medallion of Heroism
-							un(REMOVED_FROM_GAME, i(44590)),	-- Warchief's Leggings of Foresight
-							un(REMOVED_FROM_GAME, i(44348)),	-- Warchief's Leggings of Valor
-							un(REMOVED_FROM_GAME, i(44346)),	-- Warchief's Leggings of Wisdom
-							un(REMOVED_FROM_GAME, i(44583)),	-- Warchief's Legguards of Brutality
-							un(REMOVED_FROM_GAME, i(44347)),	-- Warchief's Legguards of Heroism
-							un(REMOVED_FROM_GAME, i(44349)),	-- Warchief's Legplates of Carnage
+							i(44579, {	-- Medallion of Heroism
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44590, {	-- Warchief's Leggings of Foresight
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44348, {	-- Warchief's Leggings of Valor
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44346, {	-- Warchief's Leggings of Wisdom
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44583, {	-- Warchief's Legguards of Brutality
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44347, {	-- Warchief's Legguards of Heroism
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(44349, {	-- Warchief's Legplates of Carnage
+								["timeline"] = { "removed 4.0.3" },
+							}),
 						},
 					}),
 					q(12263, {	-- The Best of Intentions
@@ -2188,14 +2261,18 @@ root("Zones", {
 						["coord"] = { 59.8, 53.0, DRAGONBLIGHT },
 						["groups"] = {
 							i(44200),	-- Ancestral Sinew Wristguards
+							i(44152, {	-- Arcanum of Blissful Mending
+								["timeline"] = { "removed 5.0.4" },
+								["filterID"] = CONSUMABLES,
+							}),
+							i(44140, {	-- Arcanum of the Eclipsed Moon
+								["timeline"] = { "removed 5.0.4" },
+								["filterID"] = CONSUMABLES,
+							}),
 							i(44197),	-- Bracers of Accorded Courtesy
 							i(44198),	-- Breastplate of the Solemn Council
 							i(44188),	-- Cloak of Peaceful Resolutions
-							i(41722),	-- Design: Stalwart Monarch Topaz
-							i(41779, {	-- Design: Stalwart Monarch Topaz
-								["u"] = REMOVED_FROM_GAME,
-								["spellID"] = 0,	-- This is now available via 41722, need to delink the old plans from the recipe
-							}),
+							i(41722),	-- Design: Stalwart Monarch Topaz [CATA+] / Design: Glimmering Monarch Topaz [WRATH]
 							i(44203),	-- Dragonfriend Bracers
 							i(44187),	-- Fang of Truth
 							i(44199),	-- Gavel of the Brewing Storm
@@ -2206,7 +2283,9 @@ root("Zones", {
 							i(44201),	-- Sabatons of Draconic Vigor
 							i(44202),	-- Sandals of Crimson Fury
 							i(44196),	-- Sash of the Wizened Wyrm
-							i(43156),	-- Tabard of the Wyrmrest Accord
+							i(43156, {	-- Tabard of the Wyrmrest Accord
+								["factionID"] = 1091,	-- The Wyrmrest Accord
+							}),
 						},
 					}),
 					n(27054, {	-- Modoru <Reagents & Enchanting Supplies>
@@ -2225,10 +2304,13 @@ root("Zones", {
 							i(44059),	-- Cuttlefish Scale Breastplate
 							i(44060),	-- Cuttlefish Tooth Ringmail
 							i(41574),	-- Design: Defender's Shadow Crystal
-							i(41568),	-- Design: Purified Shadow Crystal
+							i(41568),	-- Design: Purified Shadow Crystal [CATA+] / Design: Seer's Dark Jade [WRATH]
 							i(44057),	-- Ivory-Reinforced Chestguard
 							i(44050),	-- Mastercraft Kalu'ak Fishing Pole
 							i(44723),	-- Nutured Penguin Egg (PET!)
+							i(44511, {	-- Pattern: Dragonscale Ammo Pouch
+								["timeline"] = { "removed 4.0.1" },
+							}),
 							i(45774),	-- Pattern: Emerald Bag
 							i(44509),	-- Pattern: Trapper's Traveling Pack
 							i(44061),	-- Pigment-Stained Robes
@@ -2271,8 +2353,13 @@ root("Zones", {
 	})),
 });
 
+-- #if AFTER WRATH
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(12051),	-- Rustling Some Feathers
+		-- #if AFTER CATA
+		q(26178),	-- Planning for the Future
+		-- #endif
 	}),
 }));
+-- #endif

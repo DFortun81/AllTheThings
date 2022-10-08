@@ -2161,6 +2161,47 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 7.3.5", "removed 8.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(3630, {	-- Gnome Engineering
+					["providers"] = {
+						{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
+						{ "i", 10789 },	-- Manual of Engineering Disciplines
+					},
+					["altQuests"] = {
+						3629,	-- Goblin Engineering
+						3632,	-- Gnome Engineering
+						3634,	-- Gnome Engineering
+						4181,	-- Goblin Engineering
+					},
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 55.0, 8.6, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.1.2000" },
+					["requireSkill"] = ENGINEERING,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(3629, {	-- Goblin Engineering
+					["providers"] = {
+						{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
+						{ "i", 10789 },	-- Manual of Engineering Disciplines
+					},
+					["altQuests"] = {
+						3526,	-- Goblin Engineering
+						--3629,	-- Goblin Engineering
+						3630,	-- Gnome Engineering
+						3632,	-- Gnome Engineering
+						3633,	-- Goblin Engineering
+						3634,	-- Gnome Engineering
+						3635,	-- Gnome Engineering
+						3637,	-- Gnome Engineering
+						4181,	-- Goblin Engineering
+					},
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 55.0, 8.6, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.1.2000" },
+					["requireSkill"] = ENGINEERING,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+				}),
 				q(39800, {	-- Greymane's Gambit
 					["qg"] = 96663,	-- Genn Greymane
 					["sourceQuest"] = 38206,	-- Making the Rounds

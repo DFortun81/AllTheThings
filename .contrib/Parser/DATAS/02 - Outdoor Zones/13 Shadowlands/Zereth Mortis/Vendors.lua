@@ -285,7 +285,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(191701),	-- Bag of Explored Souls
 					i(190237),	-- Broker Translocation Matrix (TOY!)
 					i(190956, {	-- Decanter of Untapped Potential
-						--["questID"] = ,
+						["questID"] = 70705,
 						["cost"] = { { "g", 25000000 } },	-- 2500g
 						["sym"] = {
 							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier

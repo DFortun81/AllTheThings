@@ -52,7 +52,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(163213, {	-- Ghostly Explorer's Skull
-						["f"] = 55,  -- They may change it to a toy?
+						["filterID"] = CONSUMABLES,	-- They may change it to a toy?
 					}),
 					i(161545, {	-- Girdle of Scavenged Plates
 						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)

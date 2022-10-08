@@ -242,14 +242,6 @@ q(2520),	-- Sathrah's Sacrifice,		TBC: Sathrah's Sacrifice,		CLASSIC: Sathrah's 
 q(2769),	-- The Brassbolts Brothers,		TBC: The Brassbolts Brothers,		CLASSIC: The Brassbolts Brothers
 q(2821),	-- The Mark of Quality,		TBC: The Mark of Quality,		CLASSIC: The Mark of Quality
 q(2844),	-- The Giant Guardian,		TBC: The Giant Guardian,		CLASSIC: The Giant Guardian
-q(2847),	-- Wild Leather Armor,		TBC: Wild Leather Armor,		CLASSIC: Wild Leather Armor
-q(2854),	-- Wild Leather Armor,		TBC: Wild Leather Armor,		CLASSIC: Wild Leather Armor
-q(2855),	-- Wild Leather Shoulders,		TBC: Wild Leather Shoulders,		CLASSIC: Wild Leather Shoulders
-q(2856),	-- Wild Leather Vest,		TBC: Wild Leather Vest,		CLASSIC: Wild Leather Vest
-q(2857),	-- Wild Leather Helmet,		TBC: Wild Leather Helmet,		CLASSIC: Wild Leather Helmet
-q(2858),	-- Wild Leather Boots,		TBC: Wild Leather Boots,		CLASSIC: Wild Leather Boots
-q(2859),	-- Wild Leather Leggings,		TBC: Wild Leather Leggings,		CLASSIC: Wild Leather Leggings
-q(2860),	-- Master of the Wild Leather,		TBC: Master of the Wild Leather,		CLASSIC: Master of the Wild Leather
 q(2866),	-- The Ruins of Solarsal,		TBC: The Ruins of Solarsal,		CLASSIC: The Ruins of Solarsal
 q(2867),	-- Return to Feathermoon Stronghold,		TBC: Return to Feathermoon Stronghold,		CLASSIC: Return to Feathermoon Stronghold
 q(2868),	-- <TXT> The Shriveled Heart,		TBC: <TXT> The Shriveled Heart,		CLASSIC: <TXT> The Shriveled Heart
@@ -381,12 +373,6 @@ q(4968),	-- Knowledge of the Orb of Orahil,		TBC: Knowledge of the Orb of Orahil
 q(4969),	-- Knowledge of the Orb of Orahil,		TBC: Knowledge of the Orb of Orahil,		CLASSIC: Knowledge of the Orb of Orahil
 q(4976),	-- Returning the Cleansed Orb,		TBC: Returning the Cleansed Orb,		CLASSIC: Returning the Cleansed Orb
 q(5101),	-- Lee's Ultimate Test Quest... of Doom!,		TBC: Lee's Ultimate Test Quest... of Doom!,		CLASSIC: Lee's Ultimate Test Quest... of Doom!
-q(5141),	-- Dragonscale Leatherworking,		TBC: Dragonscale Leatherworking,		CLASSIC: Dragonscale Leatherworking
-q(5143),	-- Tribal Leatherworking,		TBC: Tribal Leatherworking,		CLASSIC: Tribal Leatherworking
-q(5144),	-- Elemental Leatherworking,		TBC: Elemental Leatherworking,		CLASSIC: Elemental Leatherworking
-q(5145),	-- Dragonscale Leatherworking,		TBC: Dragonscale Leatherworking,		CLASSIC: Dragonscale Leatherworking
-q(5146),	-- Elemental Leatherworking,		TBC: Elemental Leatherworking,		CLASSIC: Elemental Leatherworking
-q(5148),	-- Tribal Leatherworking,		TBC: Tribal Leatherworking,		CLASSIC: Tribal Leatherworking
 q(5157),	-- [DEPRECATED]Collection of the Corrupt Water,		TBC: Collection of the Corrupt Water,		CLASSIC: Collection of the Corrupt Water
 q(5205),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(5207),	-- <NYI> <TXT> The True Summoner,		TBC: <NYI> <TXT> The True Summoner,		CLASSIC: <NYI> <TXT> The True Summoner
@@ -846,7 +832,6 @@ q(12881),	-- The Brothers Bronzebeard
 q(12923),	-- UNUSED
 q(13123),	-- WotLK Collector's Edition: - DEM - E - FLAG
 q(13173),	-- Amidst the Confusion
-q(13205),	-- Disarmament
 q(13210),	-- Blizzard Account: - DEM - E - FLAG
 q(13240),	-- Timear Foresees Centrifuge Constructs in your Future!
 q(13241),	-- Timear Foresees Ymirjar Berserkers in your Future!

@@ -30,10 +30,6 @@ root("Promotions", filter(MISC, {
 			["description"] = "Reward from the 2007 Korean Worldwide Invitational (Korea Only)",
 			["timeline"] = { "added 2.4.2.8278" },
 		}),
-		mount(386452, {	-- Frostbrood Proto-Wyrm
-			["timeline"] = { "added 9.2.7.45338", REMOVED_DFREL },
-			["description"] = "In order to unlock the Frostbrood Proto-Wyrm you have finish the Death Knight starting zone in |cFFfe040fWotLK Classic|r. The very first Death Knight you make is completely free of restrictions, so even if you've never played Classic before, you can create a Death Knight starting at level 55.",
-		}),
 		i(103632, {	-- Lucky Box of Greatness
 			["description"] = "Reward from the Azeroth Academy Mentor Recruitment Promotion (China Only)",
 			["timeline"] = { "added 5.4.0.17169" },

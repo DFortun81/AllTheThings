@@ -493,6 +493,52 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(3635, {	-- Gnome Engineering
+					["providers"] = {
+						{ "n", 4586 },	-- Graham Van Talen <Journeyman Engineer>
+						{ "i", 10789 },	-- Manual of Engineering Disciplines
+					},
+					["altQuests"] = {
+						3526,	-- Goblin Engineering
+						3629,	-- Goblin Engineering
+						3630,	-- Gnome Engineering
+						3632,	-- Gnome Engineering
+						3633,	-- Goblin Engineering
+						3634,	-- Gnome Engineering
+						--3635,	-- Gnome Engineering
+						3637,	-- Gnome Engineering
+						4181,	-- Goblin Engineering
+					},
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 75.6, 74.6, UNDERCITY },
+					["timeline"] = { "removed 4.0.1.2000" },
+					["requireSkill"] = ENGINEERING,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(3526, {	-- Goblin Engineering
+					["providers"] = {
+						{ "n", 4586 },	-- Graham Van Talen <Journeyman Engineer>
+						{ "i", 10789 },	-- Manual of Engineering Disciplines
+					},
+					["altQuests"] = {
+						--3526,	-- Goblin Engineering
+						3629,	-- Goblin Engineering
+						3630,	-- Gnome Engineering
+						3632,	-- Gnome Engineering
+						3633,	-- Goblin Engineering
+						3634,	-- Gnome Engineering
+						3635,	-- Gnome Engineering
+						3637,	-- Gnome Engineering
+						4181,	-- Goblin Engineering
+					},
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 75.6, 74.6, UNDERCITY },
+					["timeline"] = { "removed 4.0.1.2000" },
+					["requireSkill"] = ENGINEERING,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+				}),
 				q(1478, {	-- Halgar's Summons
 					["qg"] = 5724,	-- Ageron Kargal
 					["coord"] = { 61.6, 52.6, TIRISFAL_GLADES },
@@ -1241,7 +1287,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER 6.1.0
 				n(6566, {	-- Estelle Gendry <Heirloom "Curator">
-					["coord"] = { 78.2, 76.6, UNDERCITY },
+					["coords"] = {
+						-- #IF AFTER BFA
+						{ 57.1, 90.0, ORGRIMMAR },
+						-- #ENDIF
+						{ 78.2, 76.6, UNDERCITY },
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(122375, {	-- Aged Pauldrons of The Five Thunders

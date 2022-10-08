@@ -877,7 +877,7 @@ WRATH_ENCHANTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] 
 		r(44500),	-- Superior Agility[Cloak]
 	}),
 	cat(OTHER, {
-		r(69412, {["timeline"]={"added 3.2.2"}}),	-- Abyssal Shatter
+		applyclassicphase(WRATH_PHASE_THREE, r(69412, {["timeline"]={"added 3.2.2"}})),	-- Abyssal Shatter
 		r(60619, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Runed Titanium Rod
 		applyclassicphase(LEGION_PHASE_ONE, r(217644, {["timeline"]={"added 7.0.3"}})),	-- Tome of Illusions: Northrend
 	}),

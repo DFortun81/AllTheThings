@@ -1138,9 +1138,9 @@ for key,value in pairs({
 	[181150] = "먼지투성이 일지",	-- Dusty Journal
 	[181153] = "현상 수배 전단: 사악한 켈가쉬",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "현상 수배 전단",	-- Wanted Poster
-	[181643] = "페더비어드의 유골",	-- Featherbeard's Remains	--TODO: This was taken from tbc Wowhead
+	[181643] = "페더비어드의 유골",	-- Featherbeard's Remains	--TODO: This was taken from wotlk Wowhead
 	[181649] = "페더비어드의 일지",	-- Featherbeard's Journal
-	[181672] = "밀짚인형",	-- Wickerman Effigy	--TODO: This was taken from tbc Wowhead
+	[181672] = "밀짚인형",	-- Wickerman Effigy	--TODO: This was taken from wotlk Wowhead
 	[181698] = "공허의 돌",	-- Voidstone
 	[181748] = "핏빛 수정",	-- Blood Crystal
 	[181756] = "닳아해진 고대 책",	-- Battered Ancient Book
@@ -1270,7 +1270,12 @@ for key,value in pairs({
 	[191766] = "드라쿠루의 명령서",	-- Orders From Drakuru
 	[192049] = "송곳니 청어 떼",	-- Fangtooth Herring School
 	[192060] = "피요른의 모루",	-- Fjorn's Anvil
+	[192071] = "피요른의 모루",	-- Fjorn's Anvil
 	[192072] = "작살 상자",	-- Harpoon Crate
+	[192078] = "호디르의 뿔피리",	-- Hodir's Horn
+	[192079] = "호디르의 창",	-- Hodir's Spear
+	[192080] = "호디르의 투구",	-- Hodir's Helm
+	[192524] = "탐욕의 아른그림",	-- Arngrim the Insatiable
 	[192833] = "브라이든브래드의 물건 상자",	-- Bridenbrad's Possessions
 	[193051] = "네루비안 스컬지 알",	-- Nerubian Scourge Egg
 	[193195] = "고동치는 수정",	-- Pulsing Crystal
@@ -2841,6 +2846,7 @@ for key,value in pairs({
 	[353686] = "달빛 깍지",	-- Lunarlight Pod
 	[353687] = "망가진 종",	-- Broken Bell
 	[353688] = "망가진 종",	-- Broken Bell
+	[353689] = "망가진 종",	-- Broken Bell
 	[353691] = "하늘맞이 종",	-- Skyward Bell
 	[353791] = "성채 금고",	-- Castle Strongbox
 	[353792] = "촌락 금고",	-- Village Strongbox

@@ -77,6 +77,21 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(39676),	-- Wraps of the San'layn
 					},
 				}),
+				q(13205, {	-- Disarmament
+					["qg"] = 24111,	-- Defender Mordun
+					["coord"] = { 59.4, 48.8, HOWLING_FJORD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(68, 68, 10),
+					["groups"] = {
+						objective(1, {	-- 0/5 Vrykul Weapon
+							["provider"] = { "i", 43513 },	-- Vrykul Weapon
+						}),
+						i(44374),	-- Amulet of the Tranquil Mind
+						i(44375),	-- Razor-Blade Pendant
+						i(44376),	-- Necklace of Fragmented Light
+						i(44377),	-- Woven Steel Necklace
+					},
+				}),
 				q(29764, {	-- Disarmament
 					["qg"] = 24111,	-- Defender Mordun
 					["timeline"] = { "added 4.3.0.14732" },

@@ -1014,12 +1014,6 @@ i(188680);	-- Winter Veil Chorus Book
 -- NYI --
 i(187861);	-- Magical Seeds
 i(187959);	-- PH - Banner of the Opportune
--- #if BEFORE 9.2.0
-i(187957);	-- Encrypted Banner of the Opportune
--- #endif
--- #if BEFORE 9.2.7
-i(187958);	-- Shrouded Banner of the Opportune
--- #endif
 
 -----------------
 -- PATCH 9.2.0 --
@@ -1047,6 +1041,7 @@ i(190196);	-- Enlightened Hearthstone
 i(192099);  -- Earpieces of Tranquil Focus
 i(192485);	-- Stored Wisdom Device
 i(193588);	-- Timewalker's Hearthstone
+i(187958);	-- Shrouded Banner of the Opportune
 -- NYI --
 i(191937);	-- Falling Star Catcher
 i(191925);	-- Falling Star Flinger

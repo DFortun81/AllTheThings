@@ -3171,17 +3171,17 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["g"] = {
 						i(158174, { -- Battleworn Armor Kit
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						}),
 						i(162143, { -- Potion of Restoration
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						}),
 						i(158179, { -- Potion of Combat Acumen
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						})
 					}
@@ -3197,7 +3197,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["g"] = {
 						i(158326, { -- Makeshift Explosives
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						})
 					}
@@ -3210,7 +3210,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["g"] = {
 						i(158709, { -- Refurbished Shredder
 							["b"] = 1,
-							["f"] = 102,
+							["filterID"] = TOYS,
 							["ilvl"] = 30,
 							["q"] = 3,
 						})
@@ -3235,22 +3235,22 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["g"] = {
 						i(159723, { -- Chunk of Boar Meat
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
 						i(159726, { -- Baked Egg
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
 						i(159724, { -- Slice of Cheese
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
 						i(159727, { -- Flagon of Applebrew
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						})
 					}
@@ -3287,7 +3287,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["g"] = {
 						i(160054, { -- War-Torn Satchel of Cooperation
 							["b"] = 1,
-							["f"] = 102,
+							["filterID"] = TOYS,
 							["ilvl"] = 30,
 							["q"] = 3,
 						})
@@ -3338,17 +3338,17 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["g"] = {
 						i(162140, { -- Battleworn Armor Kit
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						}),
 						i(162142, { -- Potion of Restoration
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						}),
 						i(162141, { -- Potion of Combat Acumen
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						})
 					}
@@ -3360,22 +3360,22 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["g"] = {
 						i(163988, { -- Chunk of Boar Meat
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
 						i(163990, { -- Baked Egg
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
 						i(163989, { -- Slice of Cheese
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
 						i(163991, { -- Flagon of Applebrew
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						})
 					}
@@ -3397,7 +3397,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["g"] = {
 						i(163219, { -- Repurposed Explosive Device
 							["b"] = 1,
-							["f"] = 55,
+							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						})
 					}
@@ -5894,7 +5894,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(61920),	--
 				q(61932),	--
 				q(61934),	--
-				q(61938),	--
 				q(61941),	--
 				q(61964, { ["name"] = "Aubrie Weekly Jailers Tower Quest", }),	-- Aubrie Weekly Jailers Tower Quest
 				-- 9.0.1.35282

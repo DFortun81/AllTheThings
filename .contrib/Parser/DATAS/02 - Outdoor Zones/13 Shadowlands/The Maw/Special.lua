@@ -150,7 +150,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 					}),
 					-- TODO: are individual boss loots weekly/daily? shows as all un-flagged for me when i killed them before, so assuming daily
-					-- Need more questID's from existing Tormentors/repeat Tormentors... they cant repeat in the same daily lockout so idk about that
+					-- Need more questID's from existing Tormentors/repeat Tormentors... they can't repeat in the same daily lockout so idk about that
 					-- currently have 64692 - 64694 saved, no Tormentors killed today, but 3 for the week
 					-- 177370, Grievous Soul Crusher
 					n(178897, {	-- Algel the Haunter

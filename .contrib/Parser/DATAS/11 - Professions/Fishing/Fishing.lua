@@ -120,10 +120,6 @@ profession(FISHING, {
 		p(163),		-- Toothy
 	}),
 	n(QUESTS, {
-		q(24431, {	-- Waterlogged Recipe
-			["repeatable"] = true,
-			["provider"] = { "i", 49667 },	-- Waterlogged Recipe
-		}),
 		q(40960, {	-- Luminous Pearl
 			["provider"] = { "i", 133887 },	-- Luminous Pearl
 		}),

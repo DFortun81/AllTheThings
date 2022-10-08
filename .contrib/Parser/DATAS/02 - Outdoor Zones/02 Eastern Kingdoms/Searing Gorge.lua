@@ -231,6 +231,24 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
+				q(5144, {	-- Elemental Leatherworking (A)
+					["qg"] = 7868,	-- Sarah Tanner
+					["altQuests"] = {
+						5141,	-- Dragonscale Leatherworking
+						5143,	-- Tribal Leatherworking
+					},
+					["coord"] = { 63.6, 76.0, SEARING_GORGE },
+					["timeline"] = { "removed 4.0.1" },
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 7081, 2 },	-- Breath of Wind
+						{ "i", 7075, 2 },	-- Core of Earth
+						{ "i", 7079, 2 },	-- Globe of Water
+						{ "i", 7077, 2 },	-- Heart of Fire
+					},
+					["lvl"] = 40,
+				}),
 				q(7724, {	-- Fiery Menace!
 					["qg"] = 14627,	-- Hansel Heavyhands
 					["coord"] = { 38.6, 27.8, SEARING_GORGE },
@@ -737,21 +755,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(3379, {	-- Shadoweaver
-					["qg"] = 8439,	-- Nilith Lokrav
-					["coord"] = { 41.0, 75.0, SEARING_GORGE },
-					["timeline"] = { "removed 4.0.3.10000" },
-					["requireSkill"] = TAILORING,
-					["lvl"] = 40,
-					["groups"] = {
-						objective(1, {	-- 0/5 Shadowsilk Poacher <The Undermarket>
-							["provider"] = { "n", 8442 },	-- Shadowsilk Poacher
-						}),
-						i(10461, {	-- Shadowy Bracers
-							["timeline"] = { "removed 4.0.3.10000" },
-						}),
-					},
-				}),
 				q(3463, {	-- Set Them Ablaze!
 					["qg"] = 8509,	-- Squire Maltrake
 					["sourceQuest"] = 3462,	-- Squire Maltrake
@@ -791,6 +794,21 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27986,	-- In the Hall of the Mountain-Lord
 					["coord"] = { 39.4, 67.8, SEARING_GORGE },
 					["timeline"] = { "added 4.0.3.13277" },
+				}),
+				q(3379, {	-- Shadoweaver
+					["qg"] = 8439,	-- Nilith Lokrav
+					["coord"] = { 41.0, 75.0, SEARING_GORGE },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["requireSkill"] = TAILORING,
+					["lvl"] = 40,
+					["groups"] = {
+						objective(1, {	-- 0/5 Shadowsilk Poacher <The Undermarket>
+							["provider"] = { "n", 8442 },	-- Shadowsilk Poacher
+						}),
+						i(10461, {	-- Shadowy Bracers
+							["timeline"] = { "removed 4.0.3.10000" },
+						}),
+					},
 				}),
 				q(28028, {	-- Siege!
 					["qg"] = 47393,	-- Mountain-Lord Rendan

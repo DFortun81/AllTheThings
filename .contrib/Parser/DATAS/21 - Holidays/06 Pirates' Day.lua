@@ -63,11 +63,11 @@ root("Holidays", applyholiday(PIRATES_DAY, {
 					ach(3457),	-- The Captain's Booty
 					i(116392, {	-- Big Bag of Booty
 						["timeline"] = { "added 6.0.2.18816" },
-						["f"] = 55,	-- Consumable; Changed from "Toy"
+						["filterID"] = CONSUMABLES,	-- Changed from "Toy"
 					}),
 					i(138400, {	-- Petey
 						["timeline"] = { "added 7.0.3.22248" },
-						["f"] = 55,	-- Consumable; Changed from nothing
+						["filterID"] = CONSUMABLES,	-- Changed from nothing
 					}),
 				},
 			}),

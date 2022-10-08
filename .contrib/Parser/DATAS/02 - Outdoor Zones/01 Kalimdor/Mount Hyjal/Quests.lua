@@ -119,7 +119,10 @@ _.Zones =
 				q(27874, {	-- Aviana's Legacy
 					["provider"] = { "n", 40289 },	-- Ysera
 					["coord"] = { 62.0, 24.8, MOUNT_HYJAL },
-					["sourceQuest"] = 25611,	-- Return from the Firelands
+					["sourceQuests"] = {
+						25611,	-- Return from the Firelands (A)
+						25612,	-- Return from the Firelands (H)
+					},
 					["isBreadcrumb"] = true,
 				}),
 				q(29125, {	-- Between the Trees
@@ -773,16 +776,16 @@ _.Zones =
 					["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 				}),
-				q(25612, {	-- Return from the Firelands
-					["provider"] = { "n", 40834 },	-- Jordan Olafson
-					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25600,	-- Forgemaster Pyrendius
-				}),
-				q(25611, {	-- Return from the Firelands
+				q(25611, {	-- Return from the Firelands (A)
 					["provider"] = { "n", 40834 },	-- Jordan Olafson
 					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25600,	-- Forgemaster Pyrendius
+				}),
+				q(25612, {	-- Return from the Firelands (H)
+					["provider"] = { "n", 40834 },	-- Jordan Olafson
+					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25600,	-- Forgemaster Pyrendius
 				}),
 				q(25424, {	-- Return to Alysra

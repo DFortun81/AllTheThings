@@ -157,7 +157,6 @@ i(168124);	-- Cash of War Resources
 i(44626);	-- Cask of Aged Dalaran Red
 i(13509);	-- Clutch of Foresight
 i(187220);	-- Coalesced Power
-i(178040);	-- Condensed Stygia
 i(23122);	-- Consecrated Sharpening Stone
 i(143542);	-- Crown Co. "Kure-Everything" Tonic
 i(180693);	-- Cyclonic Chronicles
@@ -247,6 +246,7 @@ i(117013);	-- Wand of Lightning Shield
 i(180697);	-- Wing Commanders Insignia
 i(85266);	-- Winter Blossom Tree
 i(128851);	-- Roasted juicycrunch carrots
+i(172043);	-- Feast of Gluttonous Hedonism
 
 
 -- "Mount Equipment"

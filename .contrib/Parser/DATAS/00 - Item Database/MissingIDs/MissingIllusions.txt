@@ -1,33 +1,33 @@
 9.0.1.34365
-1898
-5360
-5387
-5389
-5393
-5861
-5862
-6185
+ill(1898),	-- Lifestealing
+ill(5360),	-- Hide Weapon Enchant
+ill(5387),	-- Agility
+ill(5389),	-- Striking
+ill(5393),	-- Crusader
+ill(5861),	-- Beastslayer
+ill(5862),	-- Titanguard
+ill(6185),	-- Stinging Sands
 10.0.0.45232
-6672
+ill(6672),	-- Primal Mastery
 10.0.0.45454
-6675
-6676
-6677
-6678
+ill(6675),	-- Primal Air
+ill(6676),	-- Primal Earth
+ill(6677),	-- Primal Fire
+ill(6678),	-- Primal Frost
 
 
 
 
-Missing in Illusions.lua
+.
 
 9.0.1.34365
-6185
+ill(6185),	-- Stinging Sands
 9.0.1.35755
-6266
+ill(6266),	-- Sinful Flame
 10.0.0.45232
-6672
+ill(6672),	-- Primal Mastery
 10.0.0.45454
-6675
-6676
-6677
-6678
+ill(6675),	-- Primal Air
+ill(6676),	-- Primal Earth
+ill(6677),	-- Primal Fire
+ill(6678),	-- Primal Frost

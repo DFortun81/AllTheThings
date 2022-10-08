@@ -37,6 +37,18 @@ _.Zones =
 					["lvl"] = 10,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(1581, {	-- Elixirs for the Bladeleafs
+					["qg"] = 2083,	-- Syral Bladeleaf
+					["coord"] = { 55.8, 50.4, TELDRASSIL },
+					["description"] = "Available at Skill Level 20.",
+					["requireSkill"] = ALCHEMY,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2454, 6 },	-- Elixir of Lion's Strength
+						{ "i", 5997, 2 },	-- Elixir of Minor Defense
+					},
+					["lvl"] = 4,
+				}),
 				q(2459, {	-- Ferocitas the Dream Eater
 					["provider"] = { "n", 3567 },	-- Tallonkai Swiftroot
 					["coord"] = { 55.5, 49.9, TELDRASSIL },
@@ -112,6 +124,19 @@ _.Zones =
 					["coords"] = {
 						{ 59.9, 59.7, TELDRASSIL },
 						{ 43.9, 44.2, TELDRASSIL },
+					},
+				}),
+				q(4161, {	-- Recipe of the Kaldorei
+					["qg"] = 6286,	-- Zarrin
+					["coord"] = { 57, 61.2, TELDRASSIL },
+					["timeline"] = { "removed 4.0.3.2000" },
+					["requireSkill"] = COOKING,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = { { "i", 5465, 7 } },	-- Small Spider Leg
+					["groups"] = {
+						i(5482, {	-- Recipe: Kaldorei Spider Kabob
+							["timeline"] = { "removed 4.0.3.2000" },
+						}),
 					},
 				}),
 				q(922,   {	-- Rellian Greenspyre

@@ -174,6 +174,45 @@ _.Zones =
 					["coord"] = { 55.6, 60.8, TANARIS },
 					["sourceQuest"] = 24932,	-- Cutting Losses
 				}),
+				q(6610, {	-- Clamlette Surprise
+					-- #if AFTER CATA
+					["qg"] = 40589,	-- Dirge Quikcleave
+					["coord"] = { 52.4, 29.0, TANARIS },
+					-- #else
+					["qg"] = 8125,	-- Dirge Quikcleave
+					["coord"] = { 52.63, 28.12, TANARIS },
+					-- #endif
+					["requireSkill"] = COOKING,
+					["altQuests"] = { 13825 },	-- Clamlette Surprise
+					["cost"] = {
+						{ "i", 12207, 12 },	-- Giant Egg
+						{ "i", 7974, 10 },	-- Zesty Clam Meat
+						-- #if AFTER CATA
+						{ "i", 3927, 20 },	-- Fine Aged Cheddar
+						-- #else
+						{ "i", 8932, 20 },	-- Alterac Swiss
+						-- #endif
+					},
+					["lvl"] = 35,
+					["groups"] = {
+						i(16971),	-- Clamlette Surprise
+						-- #if AFTER WRATH
+						recipe(64054),	-- Clamlette Magnifique
+						-- #endif
+					},
+				}),
+				q(13825, {	-- Clamlette Surprise
+					["qg"] = 8125,	-- Dirge Quikcleave
+					["coord"] = { 52.63, 28.12, TANARIS },
+					["timeline"] = { "added 3.1.0.9637", "removed 4.0.3" },
+					["requireSkill"] = COOKING,
+					["groups"] = {
+						i(16971),	-- Clamlette Surprise
+						-- #if AFTER WRATH
+						recipe(64054),	-- Clamlette Magnifique
+						-- #endif
+					},
+				}),
 				q(24932, {	-- Cutting Losses
 					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
 					["sourceQuests"] = {
@@ -691,6 +730,24 @@ _.Zones =
 						i(165845),	-- Feathers (PET!)
 					},
 				}),
+				q(3639, {	-- Show Your Work
+					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
+					["sourceQuest"] = 3638,	-- The Pledge of Secrecy
+					["altQuests"] = {
+						3641,	-- Show Your Work
+						3643,	-- Show Your Work
+					},
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 54.4, 27.2, TANARIS },
+					["timeline"] = { "removed 4.0.3.2000" },
+					["requireSkill"] = ENGINEERING,
+					["cost"] = {
+						{ "i", 4392, 2 },	-- Advanced Target Dummy
+						{ "i", 4407, 1 },	-- Accurate Scope
+						{ "i", 10559, 6 },	-- Mithril Tube
+					},
+					["lvl"] = 30,
+				}),
 				q(2876, {	-- Ship Schedules
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 9250 },	-- Ship Schedule
@@ -801,6 +858,30 @@ _.Zones =
 						i(7986),	-- Plans: Ornate Mithril Breastplate (RECIPE!)
 					},
 				})),
+				q(3638, {	-- The Pledge of Secrecy
+					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
+					["sourceQuests"] = {
+						3526,	-- Goblin Engineering
+						3629,	-- Goblin Engineering
+						3633,	-- Goblin Engineering
+						4181,	-- Goblin Engineering
+					},
+					["altQuests"] = {
+						3640,	-- The Pledge of Secrecy
+						3642,	-- The Pledge of Secrecy
+					},
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 54.4, 27.2, TANARIS },
+					["timeline"] = { "removed 4.0.3.2000" },
+					["requireSkill"] = ENGINEERING,
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- 0/1 Nixx's Pledge of Secrecy
+							["provider"] = { "i", 11270 },	-- Nixx's Pledge of Secrecy
+							["cost"] = { { "i", 10792, 1 } },	-- Nixx's Pledge of Secrecy
+						}),
+					},
+				}),
 				q(10,    {	-- The Scrimshank Redemption
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, TANARIS },

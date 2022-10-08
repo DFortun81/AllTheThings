@@ -552,7 +552,7 @@ _.Zones =
 						["sourceQuest"] = 36488,	-- Thieving Dwarves
 					}),
 					n(BONUS_OBJECTIVES, {
-						-- TODO: Check SQ also probably cant do after a certain level
+						-- TODO: Check SQ, also probably can't do after a certain level
 						q(36473,  {	-- Affliction Ridge
 							["coord"] = { 47.1, 64.4, GORGROND },
 							["sourceQuest"] = 35151,	-- Your Base, Your Choice

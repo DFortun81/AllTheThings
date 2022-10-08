@@ -31,12 +31,12 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(13497, {	-- Recipe: Greater Arcane Protection Potion
+					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },
 					["crs"] = { 7437 },	-- Cobalt Mageweaver
-					["timeline"] = { "added 1.11.1.5462", "removed 4.0" },
 				}),
 				i(13495, {	-- Recipe: Greater Frost Protection Potion
+					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },
 					["crs"] = { 7428 },	-- Frostmaul Giant
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(18665, {	-- The Eye of Shadow
 					["classes"] = { PRIEST },

@@ -318,6 +318,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 								["criteriaID"] = 9261,		-- The Prophet Tharon'ja slain
 							},
+							i(41795, {	-- Design: Timeless Twilight Opal
+								["timeline"] = { "removed 4.0.1" },
+							}),
 							i(37733),	-- Mojo Masked Crusher
 							-- #if AFTER 7.3.5
 							i(35636),	-- Tharon'ja's Aegis (7.3.5 - Used to be only Normal Mode)

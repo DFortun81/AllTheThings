@@ -591,3 +591,8 @@
 479,Malicious %s
 10.0.2.45779
 480,%s, Knight of Feathersworth
+10.0.2.45969
+470,%s the Thundering Hero
+477,%s the Thundering
+481,%s the Elite Evoker
+482,Crimson Soloist %s

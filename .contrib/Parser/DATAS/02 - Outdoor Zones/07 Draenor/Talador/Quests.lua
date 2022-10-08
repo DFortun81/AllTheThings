@@ -44,13 +44,13 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34878,	-- The Foot of the Fortress
 					}),
-					q(34711, {	-- Due Cause to Celebrate
+					q(34711, {	-- Due Cause to Celebrate (A)
 						["provider"] = { "n", 80617 },	-- Kirin Tor Magus (Magister Serena)
 						["coord"] = { 64.2, 81.8, TALADOR },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34912,	-- The Final Step
 					}),
-					q(34712, {	-- Due Cause to Celebrate
+					q(34712, {	-- Due Cause to Celebrate (H)
 						["provider"] = { "n", 80389 },	-- Kirin Tor Magus (Magister Krelas)
 						["coord"] = { 64.2, 81.7, TALADOR },
 						["races"] = HORDE_ONLY,
@@ -514,9 +514,12 @@ _.Zones =
 					["provider"] = { "n", 79573 },	-- Kalaam
 					["coord"] = { 69.4, 21.4, TALADOR },
 					["isBreadcrumb"] = true,
+					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
-						34711,	-- Due Cause to Celebrate (arcane sanctum)
-						34981,	-- The Only Way to Travel (artillery tower)
+						34711,	-- Due Cause to Celebrate (alliance, arcane sanctum)
+						34712,	-- Due Cause to Celebrate (horde, arcane sanctum)
+						34981,	-- The Only Way to Travel (alliance, artillery tower)
+						34971,	-- The Only Way to Travel (horde, artillery tower)
 					},
 				}),
 				q(34558, {	-- At Your Command
@@ -1045,10 +1048,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33754,	-- Through the Looking Glass
 				}),
-				q(36801, {	-- One Step Ahead
+				q(36801, {	-- One Step Ahead (A)
 					["provider"] = { "n", 86442 },	-- Sloan McCoy
 					["coord"] = { 69.6, 20.7, TALADOR },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						34624,	-- Gas Guzzlers (artillery tower)
 						34573,	-- Iridium Recovery (artillery tower)
@@ -1060,6 +1064,7 @@ _.Zones =
 					["provider"] = { "n", 79627 },	-- Shadow Hunter Kajassa
 					["coord"] = { 71.2, 29.9, TALADOR },
 					["races"] = HORDE_ONLY,
+					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						34579,	-- Gas Guzzlers (artillery tower)
 						34576,	-- Iridium Recovery (artillery tower)
@@ -1237,6 +1242,7 @@ _.Zones =
 					["coord"] = { 69.6, 21.6, TALADOR },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						34711,	-- Due Cause to Celebrate (arcane sanctum)
 						34981,	-- The Only Way to Travel (artillery tower)
@@ -1393,13 +1399,16 @@ _.Zones =
 					["provider"] = { "n", 75803 },	-- Vindicator Maraad
 					["coord"] = { 63.0, 25.8, TALADOR },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuestNumRequired"] = 2,
 					["sourceQuests"] = {
-						34711,	-- Due Cause to Celebrate (arcane sanctum)
 						34701,	-- Speaker for the Dead (breadcrumb)
+						34711,	-- Due Cause to Celebrate (arcane sanctum)
 						34981,	-- The Only Way to Travel (artillery tower)
+						36801,	-- One Step Ahead (A)
 					},
 				}),
 				q(33754, {	-- Through the Looking Glass
+					-- TODO: based on the Alliance version, this quest is likely missing some sourceQuest info
 					["provider"] = { "n", 75806 },	-- Durotan
 					["coord"] = { 61.4, 10.8, TALADOR },
 					["races"] = HORDE_ONLY,
@@ -1592,6 +1601,7 @@ _.Zones =
 					["provider"] = { "n", 79963 },	-- Quartermaster O'Riley
 					["coord"] = { 69.5, 21.5, TALADOR },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						34624,	-- Gas Guzzlers (artillery tower)
 						34573,	-- Iridium Recovery (artillery tower)

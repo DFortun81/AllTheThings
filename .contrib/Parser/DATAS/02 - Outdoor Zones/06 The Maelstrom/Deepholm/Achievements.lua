@@ -36,6 +36,7 @@ _.Zones =
 						["sourceQuest"] = 26971,	-- The Binding
 					}),
 				}),
+				explorationAch(4864),	-- Explore Deepholm
 			}),
 		}),
 	}),
