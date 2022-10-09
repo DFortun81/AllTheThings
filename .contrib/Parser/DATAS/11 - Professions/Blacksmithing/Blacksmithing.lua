@@ -6346,10 +6346,10 @@ profession(BLACKSMITHING, {
 				}),
 			},
 		}),
-		-- TODO Verified Sources through here...
 		applyclassicphase(TBC_PHASE_ONE, q(10891, {	-- Imperial Plate Armor [A]
 			["qg"] = 11145,	-- Myolor Sunderfury
 			["coord"] = { 52.0, 41.4, IRONFORGE },
+			["timeline"] = { "added 3.3.2.11403", "removed 4.0.3"},
 			["requireSkill"] = BLACKSMITHING,
 			["isBreadcrumb"] = true,
 			["races"] = ALLIANCE_ONLY,
@@ -6358,6 +6358,7 @@ profession(BLACKSMITHING, {
 		applyclassicphase(TBC_PHASE_ONE, q(10892, {	-- Imperial Plate Armor [H]
 			["qg"] = 11176,	-- Krathok Moltenfist
 			["coord"] = { 80.0, 23.3, ORGRIMMAR },
+			["timeline"] = { "added 3.3.2.11403", "removed 4.0.3"},
 			["requireSkill"] = BLACKSMITHING,
 			["isBreadcrumb"] = true,
 			["races"] = HORDE_ONLY,
@@ -6484,6 +6485,7 @@ profession(BLACKSMITHING, {
 				}),
 			},
 		}),
+		-- TODO Verified Sources through here...
 		q(5306, {	-- Snakestone of the Shadow Huntress
 			["qg"] = 11192,	-- Kilram
 			-- #if BEFORE TBC

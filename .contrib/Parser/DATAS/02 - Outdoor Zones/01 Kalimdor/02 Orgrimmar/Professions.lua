@@ -89,14 +89,34 @@ root("Zones", m(KALIMDOR, {
 							}),
 						},
 					}),
+					applyclassicphase(TBC_PHASE_ONE, q(10892, {	-- Imperial Plate Armor [H]
+						["qg"] = 11176,	-- Krathok Moltenfist
+						["coord"] = { 80.0, 23.3, ORGRIMMAR },
+						["timeline"] = { "added 3.3.2.11403", "removed 4.0.3"},
+						["requireSkill"] = BLACKSMITHING,
+						["isBreadcrumb"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 50,
+					})),
 					q(2755, {	-- Joys of Omosh
-						["provider"] = { "n", 7790 },	-- Orokk Omosh
-						["coord"] = { 76.8, 37.7, ORGRIMMAR },
+						["qg"] = 7790,	-- Orokk Omosh
 						["sourceQuest"] = 2754,	-- Horns of Frenzy
 						["requireSkill"] = BLACKSMITHING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 32,
+						["coords"] = {
+							-- #IF ANYCLASSIC
+							{ 79.4, 22.4, ORGRIMMAR },
+							-- #ELSE
+							{ 76.8, 37.7, ORGRIMMAR },
+							-- #ENDIF
+						},
 						["g"] = {
-							i(7982),	-- Plans: Barbaric Iron Gloves (RECIPE!)
+							i(7982, {	-- Plans: Barbaric Iron Gloves (RECIPE!)
+								-- #IF ANYCLASSIC
+								["description"] = "This item can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths.",
+								-- #ENDIF
+							}),
 						},
 					}),
 					q(2756, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- The Old Ways
@@ -110,14 +130,28 @@ root("Zones", m(KALIMDOR, {
 						},
 					})),
 					q(2752, {	-- On Iron Pauldrons
-						["provider"] = { "n", 7790 },	-- Orokk Omosh
-						["coord"] = { 76.8, 37.7, ORGRIMMAR },
+						["qg"] = 7790,	-- Orokk Omosh
 						["sourceQuest"] = 2751,	-- Barbaric Battlements
 						["requireSkill"] = BLACKSMITHING,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 32,
+						["coords"] = {
+							-- #IF ANYCLASSIC
+							{ 79.4, 22.4, ORGRIMMAR },
+							-- #ELSE
+							{ 76.8, 37.7, ORGRIMMAR },
+							-- #ENDIF
+						},
+						["cost"] = {
+							{ "i", 7958, 4 },	-- Bronze Battle Axe
+							{ "i", 7956, 4 },	-- Bronze Warhammer
+						},
 						["g"] = {
-							i(7978),	-- Plans: Barbaric Iron Shoulders (RECIPE!)
+							i(7978, {	-- Plans: Barbaric Iron Shoulders (RECIPE!)
+								-- #IF ANYCLASSIC
+								["description"] = "This item can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths.",
+								-- #ENDIF
+							}),
 						},
 					}),
 					q(2753, {	-- Trampled Under Foot
