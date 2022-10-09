@@ -607,6 +607,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		}),
 	}))),
 	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
+		-- #IF ANYCLASSIC
 		n(DROPS, {
 			q(36308, {	-- Enchanted Highmaul Bracer (A)
 				["provider"] = { "i", 115281 },	-- Enchanted Highmaul Bracer
@@ -641,6 +642,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 				["lvl"] = 90,
 			}),
 		}),
+		-- #ENDIF
 		r(158716, {	-- Enchanting (Draenor Master)
 			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
 			["collectible"] = false,
@@ -857,6 +859,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(191075),	-- Enchanted Torch
 			r(191078),	-- Leylight Brazier
 		}),
+		-- #IF ANYCLASSIC
 		n(QUESTS, {
 			q(39874, {	-- Some Enchanted Evening
 				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
@@ -1085,6 +1088,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 				},
 			}),
 		})
+		-- #ENDIF
 	}))),
 	applyclassicphase(BFA_PHASE_ONE, tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {
 		r(264473, {	-- Kul Tiran Enchanting
@@ -1259,6 +1263,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		cat(1249, sharedDataSelf({ ["timeline"] = { "added 8.1.5" } }, {	-- Tools of the Trade
 			r(287494),	-- Iwen's Enchanting Rod
 		})),
+		-- #IF ANYCLASSIC
 		n(QUESTS, {
 			q(54473, {	-- Enchanted Formulae (A)
 				["provider"] = { "n", 136041 },	-- Emily Fairweather <Enchanting Trainer>
@@ -1352,6 +1357,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 				},
 			})),
 		}),
+		-- #ENDIF
 	}))),
 	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
 		r(309832),	-- Shadowlands Enchanting
