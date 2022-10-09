@@ -71,7 +71,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 		["g"] = {
 			d(17, {	-- LFR
 				["description"] = "Items of 249 item level or lower will take the LFR appearance.\nSeason 4 (speculated): 275 item level or lower.",
-				["g"] = bubbleDown({ ["modID"] = 4 }, {
+				["g"] = bubbleDown({ ["modID"] = 4 },
+						sharedData({["cost"] = {{"i",190189,2070}}},{	-- 2070 Sandworn Relic, Full set cost from Vendor
 					cl(DEATHKNIGHT, {
 						["sym"] = SymRaid(DEATHKNIGHT, 4),
 						["g"] = {
@@ -180,7 +181,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 							i(188943),	-- Vambraces of the Infinite Infantry
 						},
 					}),
-				}),
+				})),
 			}),
 			d(14, {	-- Normal
 				["description"] = "Items between 252 and 262 item level will take the Normal appearance.\nSeason 4 (speculated): between item level 278 and 288.",
