@@ -1176,7 +1176,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(24992, {	-- Escaped From Gilneas
 					["sourceQuest"] = 24990,	-- Darkhound Pounding
 					["cr"] = 1548,	-- Cursed Darkhound
-					["description"] = "Quest is granted by getting in combat with a Cursed Darkhound while on or after completing |cFFFFD700Darkhound Pounding|r.",
+					["description"] = "Quest is granted by getting in combat with (not by killing) a Cursed Darkhound while on or after completing |cFFFFD700Darkhound Pounding|r.",
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
