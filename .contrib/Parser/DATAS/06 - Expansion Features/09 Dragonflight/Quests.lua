@@ -47,6 +47,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 			["coord"] = { 44.2, 37.8, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 		}),
+		q(72240, {	-- The Obsidian Warders [A]
+			["sourceQuests"] = {
+				65101,	-- An Iconic, Draconic, Look [A]
+				66577,	-- Aspectral Invitation [A]
+			},
+			["provider"] = { "n", 189603 },	-- Scalecommander Azurathel
+			["coord"] = { 79.9, 27.1, STORMWIND_CITY },
+			["races"] = ALLIANCE_ONLY,
+		}),
 		q(72256, {	-- The Dark Talons [H]
 			["sourceQuests"] = {
 				65613,	-- An Iconic, Draconic, Look [H]
@@ -59,6 +68,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 		q(66596, {	-- Whispers in the Winds [A]
 			["sourceQuests"] = {
 				66589,	-- Expeditionary Coordination [A]
+				72240,	-- The Obsidian Warders [A]
 			},
 			["provider"] = { "n", 193450 },	-- Archmage Khadgar
 			["coord"] = { 23.0, 56.1, STORMWIND_CITY },

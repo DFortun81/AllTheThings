@@ -100,6 +100,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 186584 },	-- Commander Lethanak
 					["coord"] = { 71.2, 40.8, THE_WAKING_SHORES },
 					["g"] = {
+						i(194401),	-- Expedition Guard's Chestguard
 						i(194403),	-- Field Scout's Vest
 						i(194402),	-- League Mercenary's Hauberk
 					},
@@ -141,6 +142,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 186767 },	-- Majordomo Selistra
 					["coord"] = { 62.7, 33.1, THE_WAKING_SHORES },
 					["g"] = {
+						i(194375),	-- Explorer's Short Sword
+						i(194394),	-- Persistent Threat Cleaver
 						i(193917),	-- Rejuvenating Draught
 					},
 				}),
@@ -176,6 +179,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 190171 },	-- Sendrax
 					["coord"] = { 54.0, 22.8, THE_WAKING_SHORES },	-- This isnt true, He follows you....
 					["g"] = {
+						i(194338),	-- Expedition Guard's Sabatons
 						i(194383),	-- Field Scout's Boots
 						i(194382),	-- League Mercenary's Boots
 						-- Crit for Chap.
@@ -247,6 +251,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 187290 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 62.3, 73.0, THE_WAKING_SHORES },
 					["g"] = {
+						i(194344),	-- Expedition Guard's Gauntlets
 						i(194346),	-- League Mercenary's Grips
 					},
 				}),
@@ -313,6 +318,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 191895 },	-- Majordomo Selistra
 					["coord"] = { 53.7, 80.2, THE_WAKING_SHORES },
 					["g"] = {
+						i(194355),	-- Expedition Guard's Spaulders
 						i(197354),	-- Renewed Proto-Drake: Horned Back
 						-- Crit Chapter
 					},
@@ -323,13 +329,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 187115 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 46.1, 78.3, THE_WAKING_SHORES },
 				}),
+				q(72241, {	-- Lessons from Our Past
+					["sourceQuests"] = { 66124 },	-- Exeunt, Triumphant
+					["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
+					["coord"] = { 42.4, 66.8, THE_WAKING_SHORES },
+				}),
 				q(66048, {	-- Best Plans and Intentions
-					["sourceQuests"] = { 66079 },	-- Wrathion Awaits
+					["sourceQuests"] = { 72241 },	-- Lessons from Our Past
 					["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
 					["coord"] = { 42.5, 66.8, THE_WAKING_SHORES },
 				}),
 				q(66078, {	-- Sharp Practice
-					["sourceQuests"] = { 66079 },	-- Wrathion Awaits
+					["sourceQuests"] = { 72241 },	-- Lessons from Our Past
 					["provider"] = { "n", 186274 },	-- Wrathion
 					["coord"] = { 42.5, 66.8, THE_WAKING_SHORES },
 				}),
@@ -378,6 +389,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 186493 },	-- Forgemaster Bazentus
 					["coord"] = { 27.3, 62.8, THE_WAKING_SHORES },
 					["g"] = {
+						i(194358),	-- Expedition Guard's Girdle
 						i(194360),	-- League Mercenary's Belt
 					},
 				}),
@@ -399,6 +411,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 186493 },	-- Forgemaster Bazentus
 					["coord"] = { 24.7, 61.1, THE_WAKING_SHORES },
 					["g"] = {
+						i(194340),	-- Expedition Guard's Greaves
 						i(194341),	-- League Mercenary's Legguards
 						-- Crit Chapter 3
 					},
@@ -422,6 +435,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 185894 },	-- Sabellian
 					["coord"] = { 24.2, 55.9, THE_WAKING_SHORES },
 					["g"] = {
+						i(194363),	-- Expedition Guard's Vambraces
 						i(194364),	-- League Mercenary's Bracers
 					},
 				}),
@@ -448,6 +462,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 185905 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 62.3, 73.0, THE_WAKING_SHORES },
 					["g"] = {
+						i(194380),	-- Expedition Guard's Helm
 						i(194349),	-- Field Scout's Helmet
 						i(194348),	-- League Mercenary's Helm
 						-- Crit Last chapter
@@ -519,6 +534,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 186410 },	-- Ecologist Iskha
 					["coord"] = { 74.4, 42.1, THE_WAKING_SHORES },
 					["g"] = {
+						i(194350),	-- Expedition Guard's Legguards
 						i(194352),	-- League Mercenary's Leggings
 					},
 				}),
@@ -540,6 +556,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 186410 },	-- Ecologist Iskha
 					["coord"] = { 74.4, 42.1, THE_WAKING_SHORES },
 					["g"] = {
+						i(194412),	-- Expedition Guard's Wristguards
 						i(194413),	-- League Mercenary's Wristwraps
 					},
 				}),
@@ -574,7 +591,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 					["provider"] = { "n", 194076 },	-- Veritistrasz
 					["coord"] = { 57.8, 66.8, THE_WAKING_SHORES },
+				}),
+				q(70134, {	-- Memories
+					["sourceQuests"] = { 70132 },	-- Stay a While
+					["provider"] = { "n", 194076 },	-- Veritistrasz
+					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 					["g"] = {
+						i(197361),	-- Renewed Proto-Drake: Spiked Crest
 						-- Crit All Sides of Story
 					},
 				}),
@@ -655,6 +678,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 190525 },	-- Vaeros
 					["coord"] = { 55.3, 63.5, THE_WAKING_SHORES },
 					["g"] = {
+						i(194415),	-- Reinforced Beekeeper's Helm
 						i(194405),	-- Wasp Repelling Skullcap
 						i(193064),	-- Smoke Diffuser
 					},
@@ -762,29 +786,36 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				}),
 
 					-- Beyond the Barrier --
-				q(66437, {	-- A Key Element
+				q(69896, {	-- Disastrous Detour
 					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["provider"] = { "n", 190273 },	-- Scout Kuvaeth
+					["coord"] = { 63.5, 61.8, THE_WAKING_SHORES },
+					["isBreadcrumb"] = true,
+				}),
+				q(66437, {	-- A Key Element
+					["sourceQuests"] = { 69896 },	-- Disastrous Detour
 					["provider"] = { "i", 191904 },	-- Orb of Primal Stone
 					["coord"] = { 66.5, 57.7, THE_WAKING_SHORES },
 				}),
 				q(66435, {	-- Site Salvage
-					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["sourceQuests"] = { 69896 },	-- Disastrous Detour
 					["provider"] = { "n", 188735 },	-- Elementalist Taiyang
 					["coord"] = { 66.1, 58.1, THE_WAKING_SHORES },
 				}),
-				q(66612, {	-- Unearthed Troublemakers
+				q(66436, {	-- Unearthed Troublemakers
 					--["sourceQuests"] = {  },	-- Unknown
 					["provider"] = { "n", 188735 },	-- Elementalist Taiyang
 					["coord"] = { 66.1, 58.1, THE_WAKING_SHORES },
 					["g"] = {
 						i(194409),	-- Earth Binding Chain
+						i(194407),	-- Ruby Guardian's Girdle
 					},
 				}),
 				q(66441, {	-- Distilled Effort
 					["sourceQuests"] = {
 						66437,	-- A Key Element
 						66435,	-- Site Salvage
-						66612,	-- Unearthed Troublemakers
+						66436,	-- Unearthed Troublemakers
 					},
 					["provider"] = { "n", 190352 },	-- Elementalist Taiyang
 					["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
@@ -796,7 +827,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["sourceQuests"] = {
 						66437,	-- A Key Element
 						66435,	-- Site Salvage
-						66612,	-- Unearthed Troublemakers
+						66436,	-- Unearthed Troublemakers
 					},
 					["provider"] = { "n", 188503 },	-- Examiner Tae'Shara Bloodwatcher
 					["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
@@ -805,7 +836,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["sourceQuests"] = {
 						66437,	-- A Key Element
 						66435,	-- Site Salvage
-						66612,	-- Unearthed Troublemakers
+						66436,	-- Unearthed Troublemakers
 					},
 					["provider"] = { "n", 188053 },	-- Acadia Chistlestone
 					["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
@@ -824,6 +855,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 190353 },	-- Elementalist Taiyang
 					["coord"] = { 66.4, 55.7, THE_WAKING_SHORES },
 					["g"] = {
+						i(194393),	-- Expedition Guard's Cudgel
+						i(194376),	-- Vault Guardian's Poleaxe
 						i(194416),	-- Titan Lightning Generator
 						i(194371),	-- Expedition Guard's Shield
 						i(194386),	-- League Mercenary's Mace
@@ -970,12 +1003,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					},
 				}),
 					-- Kinda Weird? Just nothing more --
-				q(66612, {	-- Gills with Gall
+				q(71141, {	-- Gills with Gall
 					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 					["provider"] = { "n", 193304 },	-- Ru'Kroszk
 					["coord"] = { 59.1, 52.4, THE_WAKING_SHORES },
 				}),
-				q(71141, {	-- Crabtender's Adversary
+				q(66612, {	-- Crabtender's Quandry
 					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 					["provider"] = { "n", 196827 },	-- Crabtender Kad'irsza
 					["coord"] = { 58.9, 52.2, THE_WAKING_SHORES },
@@ -1042,6 +1075,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				q(70196, {	-- Pruning the Preserve
 					--["sourceQuests"] = {  },	-- Unknown
 					["coord"] = { 44.4, 82.1, THE_WAKING_SHORES },
+				}),
+				q(66076, {	-- Ancient Hornswog
+					["coord"] = { 77.2, 22.1, THE_WAKING_SHORES },
 				}),
 			}),
 
@@ -1273,7 +1309,16 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72059),	-- Gossip with Commander Lethanak at 62.7, 72.2 unclear when
 		q(70872),	-- Popped After A Sledgehammer of a Solution(66108A) and Don't Be So Shellfish (66106)
 		q(70872),	-- After completing A Quack In Time and the other quests quakc
-		q(70206),	-- Popped During Stay a While (70132)
+		-- Popped During Stay a While (70132)
+		q(70206),	-- 1
+		q(70543),	-- 2
+		q(70544),	-- 3
+		q(70217),	-- 4
+		q(70546),	-- 5
+		q(70547),	-- 6
+		q(70219),	-- 7
+		q(70548),	-- 8
+		q(70223),	-- 9
 		q(70231),	-- Gossip with Emilia Bellocq 75.4, 33.9 193915
 		-- Namning the Proto-Welp during [WIP] Theory in Practice (69902)
 		q(72176),	-- Toughscale

@@ -1070,6 +1070,7 @@ i(200640);	-- Obsidian Egg Clutch
 i(191891);	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise
 i(199767);	-- Red Dragon Banner
 i(198729);	-- Reliquary Banner
+i(198039);	-- Rock of Appreciation
 i(199896);	-- Rubbery Fish Head
 i(198721);	-- Skinny Reliquary Pillow
 i(198722);	-- Small Triangular Pillow
@@ -1088,7 +1089,6 @@ i(197719);	-- Artisan's Sign
 i(197961);	-- Whelps on Strings
 i(197986);	-- Murglasses
 i(198428);	-- Tuskarr Dinghy
-i(198039);	-- Rock of Appreciation
 i(198409);	-- Personal Shell
 i(194052);	-- Forlorn Funeral Pall
 i(198474);	-- Artist's Easel

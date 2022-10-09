@@ -26,6 +26,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["coord"] = { 31.4, 71.0, OHNAHRAN_PLAINS },	-- Follows you
 					["g"] = {
 						i(197897),	-- Keratin-Reinforced Coif
+						i(197899),	-- Speakbreaker Barbuta
 						i(197356),	-- Renewed Proto-Drake: Hairy Back
 						-- Crit Eternal Krugans
 					},

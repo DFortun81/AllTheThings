@@ -6,7 +6,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	m(OHNAHRAN_PLAINS, {
 		n(ACHIEVEMENTS, {
 			ach(16061, {	-- Dragon Glyphs: Dragonsprings Summit
-				["coord"] = { 30.0, 61.3, OHNAHRAN_PLAINS },
+				["coord"] = { 84.1, 77.4, OHNAHRAN_PLAINS },
 			}),
 			ach(16056, {	-- Dragon Glyphs: Emerald Gardens
 				["coord"] = { 30.0, 61.3, OHNAHRAN_PLAINS },

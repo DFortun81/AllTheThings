@@ -59,6 +59,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				i(193482),	-- Skinner's Cap
 				i(193534),	-- Wildercloth Chef's Hat
 				i(193529),	-- Wildercloth Fishing Cap
+				i(193612),	-- Smithing Apron
+				i(198243),	-- Draconium Delver's Helmet
 			},
 		}),
 		q(70126, {	-- A Finishing Touch
@@ -177,6 +179,34 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				},
 			}),
 		}),
+		prof(BLACKSMITHING, {
+			q(70358, {	-- Dragon Isles Blacksmithing
+				--["sourceQuests"] = {  },	--
+				["provider"] = { "n", 192563 },	-- Kholmar Sunrunner
+				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
+			}),
+		}),
+		prof(COOKING, {
+			q(72250, {	-- Dragon Isles Cooking
+				--["sourceQuests"] = {  },	--
+				["provider"] = { "n", 198094 },	-- Head Chef Stacks
+				["coord"] = { 76.4, 35.7, THE_WAKING_SHORES },
+			}),
+		}),
+		prof(FISHING, {
+			q(72252, {	-- Dragon Isles Fishing [A]
+				["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
+				["provider"] = { "n", 191150 },	-- Danielle Anglers
+				["coord"] = { 81.3, 31.3, THE_WAKING_SHORES },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(72253, {	-- Dragon Isles Fishing [H]
+				["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
+				--["provider"] = { "n", 191150 },	-- Danielle Anglers
+				--["coord"] = { 81.3, 31.3, THE_WAKING_SHORES },
+				["races"] = HORDE_ONLY,
+			}),
+		}),
 		prof(JEWELCRAFTING, {
 			q(70365, {	-- To the Dragon Isles: Jewelcrafting
 				["sourceQuests"] = { 66057 },	-- Restoring the Faith
@@ -215,6 +245,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
+			}),
+		}),
+		prof(MINING, {
+			q(70028, {	-- Artisan's Supply: Salt Deposits
+				-- TODO: Available 64??
+				--["sourceQuests"] = {  },	-- To the Dragon Isles:
+				["provider"] = { "n", 187261 },	-- Grun Ashbeard
+				["coord"] = { 76.3, 34.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(190394),	-- Tyrivite Ore+++
+				}
 			}),
 		}),
 		prof(SKINNING, {

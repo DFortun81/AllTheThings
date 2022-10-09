@@ -47,6 +47,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
 					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },	-- Close to Maruuk?
 					["isDaily"] = true,
+					["g"] = {
+						i(198627),	-- Blood of the Khansguard
+					},
 				}),
 				q(70701, {	-- Bakar Dream of Lost Argali
 					--["sourceQuests"] = {  },
@@ -54,11 +57,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },	-- Close to Maruuk?
 					["isDaily"] = true,
 				}),
-				q(67034, {	-- Duck, Duck, Trap
+				q(71241, {	-- Duck, Duck, Trap
 					--["sourceQuests"] = {  },
 					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
 					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },	-- Close to Maruuk?
 					["isDaily"] = true,
+				}),
+				q(70299, {	-- Draconic Defensive
+					--["sourceQuests"] = {  },
+					["provider"] = { "n", 185867 },	-- Barnak of the Reeds
+					["coord"] = { 55.9, 51.9, OHNAHRAN_PLAINS },	-- Close to Maruuk?
+					["isDaily"] = true,
+					["g"] = {
+						i(198691),	-- Howling Heart
+						i(198542),	-- Shikaari Huntress' Arrowhead
+					},
 				}),
 
 				--

@@ -1098,7 +1098,21 @@ pet(0, 3249, {			-- Lil' Ursoc
 -- PATCH 10.0.0 --
 ------------------
 -- SOURCED
+pet(199175, 3316);	-- Lubbins
+pet(193484, 3302);	-- Pilot
+pet(198353, 3368);	-- Shiverweb Broodling
+pet(193619, 3319);	-- Yipper
+
+
+pet(0, 3367);	-- Emberling
 pet(0, 3300);	-- Ironbeak Duck
+pet(0, 3366);	-- Kindlet
+pet(0, 3273);	-- Magma Slug
+pet(0, 3296);	-- Palamanther
+pet(0, 3272);	-- Pricklefury Hare
+pet(0, 3353);	-- Stoneshell
+pet(0, 3282);	-- Swoglet
+pet(0, 3276);	-- Treeflitter
 
 -- NOT SOURCED YET
 pet(193889, 3256);	-- Jeweled Onyx Whelpling
@@ -1116,17 +1130,13 @@ pet(193620, 3267);	-- Time-Lost Slyvern
 pet(0, 3268);	-- Swog
 pet(193852, 3269);	-- Azure Frillfish
 pet(192459, 3270);	-- Jean's Lucky Fish
-pet(0, 3272);	-- Pricklefury Hare
-pet(0, 3273);	-- Magma Slug
 pet(191886, 3274);	-- Alvin the Anvil
 pet(193066, 3275);	-- Chestnut
-pet(0, 3276);	-- Treeflitter
 pet(193068, 3277);	-- Time-Lost Treeflitter
 pet(193071, 3278);	-- Pistachio
 pet(0, 3279);	-- Bronze Racing Enthusiast
 pet(0, 3280);	-- Shyfly
 pet(0, 3281);	-- Scruffy Ottuk
-pet(0, 3282);	-- Swoglet
 pet(0, 3283);	-- Snowlemental
 pet(193225, 3284);	-- Whiskuk
 pet(193235, 3285);	-- Scarlet Ottuk Pup
@@ -1140,13 +1150,11 @@ pet(193373, 3292);	-- Phoenix Wishwing
 pet(193374, 3293);	-- Crimson Phoenix Hatchling
 pet(193377, 3294);	-- Time-Lost Phoenix Hatchling
 pet(0, 3295);	-- Igneoid
-pet(0, 3296);	-- Palamanther
 pet(193429, 3297);	-- Time-Lost Salamanther
 pet(193380, 3298);	-- Pink Salamanther
 pet(0, 3299);	-- Echo of the Depths
 
 pet(0, 3301);	-- Wild Duckling
-pet(193484, 3302);	-- [PH] Brown Baby Duck
 pet(193571, 3303);	-- [PH] Mallard Baby Duck
 pet(193572, 3306);	-- Quack-E
 pet(0, 3307);	-- Plucky Duckling
@@ -1157,7 +1165,6 @@ pet(0, 3311);	-- Ohuna Companion
 pet(193587, 3312);	-- Time-Lost Duck
 pet(0, 3313);	-- Grassland Stomper
 pet(193614, 3314);	-- Groundshaker
-pet(0, 3316);	-- Lubbins
 pet(193618, 3317);	-- Hoofhelper
 pet(0, 3318);	-- Thunderfoot Calf
 pet(0, 3320);	-- Whitewhisker
@@ -1190,7 +1197,6 @@ pet(0, 3348);	-- Primal Stormling
 pet(194098, 3350);	-- Lord Basilton
 pet(0, 3351);	-- Grizzlefur Cub
 pet(0, 3352);	-- Razortooth Bear Cub
-pet(0, 3353);	-- Stoneshell
 pet(0, 3354);	-- Storm-Touched Ottuk
 pet(0, 3355);	-- Echo of the Cave
 pet(0, 3356);	-- Chalkshell Turtle
@@ -1203,9 +1209,6 @@ pet(0, 3362);	-- Sapphire Crab
 pet(0, 3363);	-- Truesilver Crab
 pet(0, 3364);	-- Striped Snakebiter
 pet(0, 3365);	-- Roseate Hopper
-pet(0, 3366);	-- Kindlet
-pet(0, 3367);	-- Emberling
-pet(198353, 3368);	-- Shiverweb Broodling
 
 pet(193908);	-- [PH] Blue Crystal Porcupine
 
@@ -1215,9 +1218,6 @@ pet(193063);	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
 pet(193862);	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
 pet(191929);	-- zzOld - [PH] White Flying Squirrel (REUSE)
 
-
--- Quests
-pet(193619, 3319);	-- Yipper [Quests?]
 
 
 

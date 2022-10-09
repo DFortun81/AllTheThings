@@ -626,6 +626,10 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 
 root("HiddenQuestTriggers", {
 	tier(DF_TIER, {
+		prof(BLACKSMITHING, {
+			q(71361),	-- Draconium Blacksmith's Hammer
+			q(71315),	-- Explorer's Plate Bracers
+		}),
 		prof(ENGINEERING, {
 			q(71478),	-- Handful of Tyrivite Bolts
 			q(71479),	-- Shock-Spring Coil
@@ -659,6 +663,10 @@ root("HiddenQuestTriggers", {
 			q(71493),	-- Draconium Delver's Helmet
 			q(71485),	-- Draconium Brainwave Amplifier
 			q(71497),	-- Spring-Loaded Draconium Fabric Cutters
+		}),
+		prof(MINING, {
+			q(72160),	-- Iridescent Ore Fragments
+			--q(71950),
 		}),
 		prof(TAILORING, {
 			-- FIRST CRAFT

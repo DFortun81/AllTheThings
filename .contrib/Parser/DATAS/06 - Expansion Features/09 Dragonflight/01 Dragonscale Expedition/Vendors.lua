@@ -151,7 +151,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					i(194325),	-- Researcher's Magnifier
 						-- RENOWN 8	--
 					i(197360),	-- Renewed Proto-Drake: Spined Brow
-					i(197366),	-- Renewed Proto-Drake: Maned Crest
+					i(197363),	-- Renewed Proto-Drake: Maned Crest
 					i(197386),	-- Renewed Proto-Drake: Spiked Jaw
 						-- RENOWN 15 --
 					i(197402),	-- Renewed Proto-Drake: Spiked Club Tail

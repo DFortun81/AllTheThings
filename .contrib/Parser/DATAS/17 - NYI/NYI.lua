@@ -370,13 +370,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193377),	-- [PH] Yellow Baby Phoenix
 			i(193429),	-- [PH] Orange Baby Salamander
 			i(193380),	-- [PH] Pink Baby Salamander
-			i(193484),	-- [PH] Brown Baby Duck
 			i(193571),	-- [PH] Mallard Baby Duck
 			i(193572),	-- [PH] Mech Baby Duck
 			i(193587),	-- [PH] Yellow Duck
 			i(193614),	-- [PH] Blue Baby Thunder Lizard
 			i(193618),	-- [PH] Green Baby Thunder Lizard
-			i(193619),	-- Yipper
 			i(193834),	-- [PH] Black Woodpecker
 			i(193835),	-- [PH] Red Woodpecker
 			i(193837),	-- [PH] Blue Baby Primal Beaver
@@ -390,7 +388,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193887),	-- Jeweled Ruby Whelpling
 			i(193888),	-- Jeweled Emerald Whelpling
 			i(194098),	-- Lord Basilton
-			i(198353),	-- Shiverweb Egg
 			i(193908),	-- [PH] Blue Crystal Porcupine
 			i(192050),	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
 			i(193863),	-- zzOld - [PH] Dark Baby Vorquin (REUSE)
