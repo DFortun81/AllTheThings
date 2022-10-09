@@ -82,29 +82,6 @@ root("WorldEvents", n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIV
 				i(150545),	-- Ring of Ancient Arcana
 			},
 		}),
-		n(121913, {	-- Emeriss [Duskwood - 4th Rotation]
-			["isRaid"] = true,
-			["questID"] = 47463,
-			["isDaily"] = true,
-			["coord"] = { 46.54, 39.73, DUSKWOOD },
-			["g"] = {
-				i(150429),	-- Emerald Dragonfang
-				i(150412),	-- Hammer of Bestial Fury
-				i(150393),	-- Nightmare Blade
-				i(150403),	-- Polished Ironwood Crossbow
-				i(150408),	-- Staff of Rampant Growth
-				i(150405),	-- Circlet of Restless Dreams
-				i(150407),	-- Dragonheart Necklace
-				i(150411),	-- Green Dragonskin Cloak
-				i(150415),	-- Dragonspur Wraps
-				i(150416),	-- Gloves of Delusional Power
-				i(150410),	-- Acid Inscribed Greaves
-				i(150406),	-- Boots of the Endless Moor
-				i(150392),	-- Mindtear Band
-				i(150404),	-- Ring of the Unliving
-				i(150388),	-- Hibernation Crystal
-			},
-		}),
 		n(121818, {	-- Lord Kazzak [Blasted Lands - Always up]
 			["isRaid"] = true,
 			["questID"] = 47461,
@@ -123,74 +100,76 @@ root("WorldEvents", n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIV
 				i(150384),	-- Ring of Entropy
 			},
 		}),
-		n(121821, {	-- Lethon [The Hinterlands - 3rd Rotation]
-			["isRaid"] = true,
+		n(-19, {	-- Dragons of Nightmare
 			["questID"] = 47463,
-			["isDaily"] = true,
-			["coord"] = { 62.87, 25.2, THE_HINTERLANDS },
-			["g"] = {
-				i(150429),	-- Emerald Dragonfang
-				i(150412),	-- Hammer of Bestial Fury
-				i(150393),	-- Nightmare Blade
-				i(150403),	-- Polished Ironwood Crossbow
-				i(150408),	-- Staff of Rampant Growth
-				i(150401),	-- Deviate Growth Cap
-				i(150407),	-- Dragonheart Necklace
-				i(150411),	-- Green Dragonskin Cloak
-				i(150399),	-- Black Bark Wristbands
-				i(150402),	-- Gauntlets of the Shining Light
-				i(150398),	-- Dark Heart Pants
-				i(150400),	-- Malignant Footguards
-				i(150392),	-- Mindtear Band
-				i(150404),	-- Ring of the Unliving
-				i(150388),	-- Hibernation Crystal
-			},
-		}),
-		n(121911, {	-- Taerar [Ashenvale - 1st Rotation] [1st one in 2017]
 			["isRaid"] = true,
-			["questID"] = 47463,
 			["isDaily"] = true,
-			["coord"] = { 93.8, 40.8, ASHENVALE },
 			["g"] = {
-				i(150429),	-- Emerald Dragonfang
-				i(150412),	-- Hammer of Bestial Fury
-				i(150393),	-- Nightmare Blade
-				i(150403),	-- Polished Ironwood Crossbow
-				i(150408),	-- Staff of Rampant Growth
-				i(150407),	-- Dragonheart Necklace
-				i(150395),	-- Unnatural Leather Spaulders
-				i(150411),	-- Green Dragonskin Cloak
-				i(150413),	-- Dragonbone Wristguards
-				i(150414),	-- Ancient Corroded Leggings
-				i(150390),	-- Strangely Glyphed Legplates
-				i(150394),	-- Mendicant's Slippers
-				i(150392),	-- Mindtear Band
-				i(150404),	-- Ring of the Unliving
-				i(150388),	-- Hibernation Crystal
-			},
-		}),
-		n(121912, {	-- Ysondre [Feralas - 2nd Rotation] [1st one in 2018]
-			["isRaid"] = true,
-			["questID"] = 47463,
-			["isDaily"] = true,
-			["coord"] = { 50.93, 11.91, FERALAS },
-			["g"] = {
-				i(150429),	-- Emerald Dragonfang
-				i(150412),	-- Hammer of Bestial Fury
-				i(150393),	-- Nightmare Blade
-				i(150403),	-- Polished Ironwood Crossbow
-				i(150408),	-- Staff of Rampant Growth
-				i(150409),	-- Trance Stone
-				i(150407),	-- Dragonheart Necklace
-				i(150411),	-- Green Dragonskin Cloak
-				i(150387),	-- Acid Inscribed Pauldrons
-				i(150391),	-- Jade Inlaid Vestments
-				i(150397),	-- Belt of the Dark Bog
-				i(150389),	-- Leggings of the Demented Mind
-				i(150396),	-- Boots of Fright
-				i(150392),	-- Mindtear Band
-				i(150404),	-- Ring of the Unliving
-				i(150388),	-- Hibernation Crystal
+				n(COMMON_BOSS_DROPS, {
+					["crs"] = {
+						121913,	-- Emeriss
+						121821,	-- Lethon
+						121911,	-- Taerar
+						121912,	-- Ysondre
+					},
+					["g"] = {
+						i(150429),	-- Emerald Dragonfang
+						i(150412),	-- Hammer of Bestial Fury
+						i(150393),	-- Nightmare Blade
+						i(150403),	-- Polished Ironwood Crossbow
+						i(150408),	-- Staff of Rampant Growth
+						i(150411),	-- Green Dragonskin Cloak
+						i(150392),	-- Mindtear Band
+						i(150404),	-- Ring of the Unliving
+						i(150388),	-- Hibernation Crystal
+						i(150407),	-- Dragonheart Necklace
+					},
+				}),
+				n(121913, {	-- Emeriss [Duskwood - 4th Rotation]
+					["isRaid"] = true,
+					["coord"] = { 46.54, 39.73, DUSKWOOD },
+					["g"] = {
+						i(150405),	-- Circlet of Restless Dreams
+						i(150415),	-- Dragonspur Wraps
+						i(150416),	-- Gloves of Delusional Power
+						i(150410),	-- Acid Inscribed Greaves
+						i(150406),	-- Boots of the Endless Moor
+					},
+				}),
+				n(121821, {	-- Lethon [The Hinterlands - 3rd Rotation]
+					["isRaid"] = true,
+					["coord"] = { 62.87, 25.2, THE_HINTERLANDS },
+					["g"] = {
+						i(150401),	-- Deviate Growth Cap
+						i(150399),	-- Black Bark Wristbands
+						i(150402),	-- Gauntlets of the Shining Light
+						i(150398),	-- Dark Heart Pants
+						i(150400),	-- Malignant Footguards
+					},
+				}),
+				n(121911, {	-- Taerar [Ashenvale - 1st Rotation] [1st one in 2017]
+					["isRaid"] = true,
+					["coord"] = { 93.8, 40.8, ASHENVALE },
+					["g"] = {
+						i(150395),	-- Unnatural Leather Spaulders
+						i(150413),	-- Dragonbone Wristguards
+						i(150414),	-- Ancient Corroded Leggings
+						i(150390),	-- Strangely Glyphed Legplates
+						i(150394),	-- Mendicant's Slippers
+					},
+				}),
+				n(121912, {	-- Ysondre [Feralas - 2nd Rotation] [1st one in 2018]
+					["isRaid"] = true,
+					["coord"] = { 50.93, 11.91, FERALAS },
+					["g"] = {
+						i(150409),	-- Trance Stone
+						i(150387),	-- Acid Inscribed Pauldrons
+						i(150391),	-- Jade Inlaid Vestments
+						i(150397),	-- Belt of the Dark Bog
+						i(150389),	-- Leggings of the Demented Mind
+						i(150396),	-- Boots of Fright
+					},
+				}),
 			},
 		}),
 	}),

@@ -42,6 +42,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							["name"] = "Traveler Found",
 							["description"] = "After talking to Prince Tortheldrin, you can talk to her/him for the next part of the chain. After you have done so, read Grand Inquisitor Isillien's Journal at Hearthglen in Western Plaguelands.",
 							["sourceQuest"] = 43682,	-- Book Presented
+							["timeline"] = { "added 7.0.3.21570" },
 							["qgs"] = {
 								11609,	-- Alexia Ironknife
 								11608,	-- Bardu Sharpeye
@@ -101,11 +102,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					cl(PALADIN, HOLY, {
 						q(42231, {	-- The Mysterious Paladin
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								40408,	-- Weapons of Legend
 								44063,	-- Bolstering Your Arsenal
 								44370, 	-- Completing Your Arsenal
-							},	
+							},
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 							["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
@@ -118,11 +119,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					cl(PALADIN, PROTECTION, {
 						q(42000, {	-- Seeker of Truth
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								40408,	-- Weapons of Legend
 								44063,	-- Bolstering Your Arsenal
 								44370,	-- Completing Your Arsenal
-							},	
+							},
 							["sourceQuestNumRequired"] = 1,
 							["providers"] = {
 								{ "n", 90259 },	-- Lord Maxwell Tyrosus
@@ -148,11 +149,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					cl(PALADIN, RETRIBUTION, {
 						q(42770, {	-- Seeking Guidance
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								40408,	-- Weapons of Legend
 								44063,	-- Bolstering Your Arsenal
 								44370,	-- Completing Your Arsenal
-							},	
+							},
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 							["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
