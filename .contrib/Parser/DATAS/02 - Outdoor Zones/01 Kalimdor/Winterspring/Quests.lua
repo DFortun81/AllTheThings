@@ -122,8 +122,26 @@ _.Zones =
 						i(67197),	-- Rocksnitch Helmet
 					},
 				}),
-				q(5307, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Corruption
-					["provider"] = { "n", 11193 },	-- Seril Scourgebane
+				q(5307, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Corruption
+					["qg"] = 11193,	-- Seril Scourgebane
+					["lvl"] = 50,
+					["coord"] = { 61.2, 37.2, WINTERSPRING },
+					["maps"] = { STRATHOLME },
+					["cost"] = {
+						{ "i", 13350, 1 },	-- Insignia of the Black Guard
+					},
+					["requireSkill"] =
+						-- #if BEFORE TBC
+						9787,	-- Weaponsmith
+						-- #else
+						BLACKSMITHING,
+						-- #endif
+					-- #if BEFORE TBC
+					["altQuests"] = {
+						5306,	-- Snakestone of the Shadow Huntress [Master Axesmith]
+						5305,	-- Sweet Serenity [Master Hammersmith]
+					},
+					-- #endif
 					["g"] = {
 						i(12825),	-- Plans: Blazing Rapier (RECIPE!)
 					},

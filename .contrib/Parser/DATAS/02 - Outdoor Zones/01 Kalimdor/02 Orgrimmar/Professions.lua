@@ -22,29 +22,56 @@ root("Zones", m(KALIMDOR, {
 				}),
 				n(QUESTS, {
 					q(2751, {	-- Barbaric Battlements
-						["provider"] = { "n", 7790 },	-- Orokk Omosh
-						["coord"] = { 76.8, 37.7, ORGRIMMAR },
+						["qg"] = 7790,	-- Orokk Omosh
 						["requireSkill"] = BLACKSMITHING,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 32,
+						["coords"] = {
+							-- #IF ANYCLASSIC
+							{ 79.4, 22.4, ORGRIMMAR },
+							-- #ELSE
+							{ 76.8, 37.7, ORGRIMMAR },
+							-- #ENDIF
+						},
+						["cost"] = {
+							{ "i", 2868, 2 },	-- Patterned Bronze Bracers
+							{ "i", 7957, 2 },	-- Bronze Greatsword
+							{ "i", 5635, 2 },	-- Sharp Claw
+						},
 						["g"] = {
-							i(7979),	-- Plans: Barbaric Iron Breastplate (RECIPE!)
+							i(7979, {	-- Plans: Barbaric Iron Breastplate (RECIPE!)
+								-- #IF ANYCLASSIC
+								["description"] = "This item can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths.",
+								-- #ENDIF
+							}),
 						},
 					}),
-					q(2757, {	-- Booty Bay or Bust!
-						["provider"] = { "n", 7793 },	-- Ox
-						["coord"] = { 75.6, 36.8, ORGRIMMAR },
+					q(2757, bubbleDownSelf({["timeline"] = {"added 1.11.1.10772", "removed 4.0.3"}},{	-- Booty Bay or Bust!
+						["qg"] = 7793, -- Ox
+						["coords"] = {
+							-- #IF ANYCLASSIC
+							{ 80.4, 23.2, ORGRIMMAR },
+							-- #ELSE
+							{ 75.6, 36.8, ORGRIMMAR },
+							-- #ENDIF
+						},
+						["lvl"] = 40,
 						["sourceQuest"] = 2756,	-- The Old Ways
 						["requireSkill"] = BLACKSMITHING,
 						["races"] = HORDE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
-							un(REMOVED_FROM_GAME, i(8663)),	-- Mithril Insignia (RECIPE!)
+							i(8663),	-- Mithril Insignia
 						},
-					}),
+					})),
 					q(2754, {	-- Horns of Frenzy
-						["provider"] = { "n", 7790 },	-- Orokk Omosh
-						["coord"] = { 76.8, 37.7, ORGRIMMAR },
+						["qg"] = 7790,	-- Orokk Omosh
+						["coords"] = {
+							-- #IF ANYCLASSIC
+							{ 79.4, 22.4, ORGRIMMAR },
+							-- #ELSE
+							{ 76.8, 37.7, ORGRIMMAR },
+							-- #ENDIF
+						},
 						["sourceQuest"] = 2753,	-- Trampled Under Foot
 						["requireSkill"] = BLACKSMITHING,
 						["races"] = HORDE_ONLY,
@@ -55,7 +82,11 @@ root("Zones", m(KALIMDOR, {
 							{ "i", 3483, 2 },	-- Silvered Bronze Gauntlets
 						},
 						["g"] = {
-							i(7980),	-- Plans: Barbaric Iron Helm (RECIPE!)
+							i(7980, {	-- Plans: Barbaric Iron Helm (RECIPE!)
+								-- #IF ANYCLASSIC
+								["description"] = "This item can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths.",
+								-- #ENDIF
+							}),
 						},
 					}),
 					q(2755, {	-- Joys of Omosh

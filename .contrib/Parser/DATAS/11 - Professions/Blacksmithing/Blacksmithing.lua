@@ -1860,7 +1860,7 @@ profession(BLACKSMITHING, {
 				applyclassicphase(TBC_PHASE_TWO, {
 					["name"] = "Red Havoc Boots",
 					["recipeID"] = 36392,
-				}),				
+				}),
 				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Shadesteel Sabots",
 					["recipeID"] = 40033,
@@ -6232,8 +6232,8 @@ profession(BLACKSMITHING, {
 			},
 		},
 	}))),
+	-- #if ANYCLASSIC
 	n(QUESTS, {
-		-- #if ANYCLASSIC
 		-- I need to add timelines still and then source these in their respective zones.
 		q(7652, {	-- A Blue Light Bargain
 			["qg"] = 14567,	-- Derotain Mudsipper
@@ -6247,6 +6247,7 @@ profession(BLACKSMITHING, {
 			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 51.4, 28.7, TANARIS },
 			["lvl"] = 50,
+			["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 		}),
 		q(2771, {	-- A Good Head On Your Shoulders
 			["qg"] = 7804,	-- Trenton Lighthammer
@@ -6345,6 +6346,7 @@ profession(BLACKSMITHING, {
 				}),
 			},
 		}),
+		-- TODO Verified Sources through here...
 		applyclassicphase(TBC_PHASE_ONE, q(10891, {	-- Imperial Plate Armor [A]
 			["qg"] = 11145,	-- Myolor Sunderfury
 			["coord"] = { 52.0, 41.4, IRONFORGE },
@@ -6595,7 +6597,6 @@ profession(BLACKSMITHING, {
 				recipe(9957),	-- Orcish War Leggings
 			},
 		}),
-		
 		q(5284, {	-- The Way of the Weaponsmith (A)
 			["qg"] = 11146,	-- Ironus Coldsteel
 			["requireSkill"] = BLACKSMITHING,
@@ -6666,7 +6667,6 @@ profession(BLACKSMITHING, {
 				}),
 			},
 		}),
-		-- #endif
 		-- Rethu's Incessant Courage Questline
 		q(46696, {	-- The Legend of the Four Hammers
 			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
@@ -6722,6 +6722,7 @@ profession(BLACKSMITHING, {
 			},
 		}),
 	}),
+	-- #endif
 });
 
 -- Blacksmithing Item Database
@@ -6735,7 +6736,7 @@ local function cacheRecipes(g)
 		if g.g then cacheRecipes(g.g); end
 		local spellID = g.spellID or g.recipeID;
 		if spellID then
-			recipeCache[spellID] = true; 
+			recipeCache[spellID] = true;
 			if g.u then recipeCacheU[spellID] = g.u; end
 		end
 		for i,o in ipairs(g) do
@@ -6769,7 +6770,7 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 		o.name = name;
 	end
 	itemDB[itemID] = phase and applyclassicphase(phase, o) or o;
-	
+
 	-- Ensure that this recipe's spellID exists in the profession database.
 	if recipeCache and type(timeline) ~= "boolean" then
 		if recipeCache[o.spellID] then
@@ -7087,14 +7088,14 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		itemrecipe("Plans: Rough Bronze Bracers", 5577, 2671);
 		itemrecipe("Plans: Rune Edge", 12826, 16980);
 		itemrecipe("Plans: Thorium Greatsword", 12816, 16960);
-		
+
 		-- #if BEFORE TBC
 		-- This wasn't implemented until TBC, it was NYI until then.
 		i(12698);	-- Plans: Dawnbringer Shoulders
 		recipe(16660),	-- Dawnbringer Shoulders
 		i(12625),	-- Dawnbringer Shoulders
 		-- #endif
-		
+
 		-- #if AFTER TBC
 		itemrecipe("Plans: Dawnsteel Bracers", 35529);
 		itemrecipe("Plans: Dawnsteel Shoulders", 35530, 41135);

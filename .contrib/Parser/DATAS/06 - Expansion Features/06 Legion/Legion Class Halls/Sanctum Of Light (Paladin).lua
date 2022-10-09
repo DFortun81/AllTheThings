@@ -25,7 +25,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						q(43682, {	-- Book Presented
 							["name"] = "Book Presented",
 							["description"] = "You need to bring the Complete Copy of Nat Pagle's Fishing Guide and the Head of Nefarian for him to grant you this interaction.\n\nAlliance: Go to Western Plaguelands and talk to Alexia Ironknife.\n\nHorde: Go to Tirisfal Glades and talk to Bardu Sharpeye.",
-							["sourceQuest"] = -91190,	-- Special Quest ID for Sister Elda <Keeper of the Ancient Tomes>
+							-- TODO: does this have an actual sourceQuest or no
+							-- ["sourceQuest"] = -91190,	-- Special Quest ID for Sister Elda <Keeper of the Ancient Tomes>
 							["qg"] = 11486,	-- Prince Tortheldrin
 							["maps"] = { DIRE_MAUL, 236 },	-- Capital Gardens
 							["cost"] = {
