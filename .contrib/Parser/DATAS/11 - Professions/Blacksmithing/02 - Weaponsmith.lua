@@ -31,11 +31,11 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16970,
 						["requireSkill"] = 17041,
 					},
-					{
+					applyclassicphase(PHASE_THREE, {
 						["name"] = "Nightfall",
 						["recipeID"] = 23653,
 						["requireSkill"] = 17041,
-					},
+					}),
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE,{
 						["name"] = "Black Planar Edge",
@@ -126,6 +126,7 @@ profession(BLACKSMITHING, {
 					}),
 					{
 						["name"] = "Enchanted Battlehammer",
+						["timeline"] = { "removed 4.0.1" },
 						["recipeID"] = 16973,
 						["requireSkill"] = 17040,
 					},
@@ -136,6 +137,7 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Masterwork Stormhammer",
+						["timeline"] = { "removed 6.0.2" },
 						["recipeID"] = 16993,
 						["requireSkill"] = 17040,
 					},
@@ -146,9 +148,9 @@ profession(BLACKSMITHING, {
 					}),
 					{
 						["name"] = "Serenity",
+						["timeline"] = { "removed 2.0.1", "added 3.0.1" },
 						["recipeID"] = 16983,
 						["requireSkill"] = 17040,
-						["timeline"] = { "removed 2.0.1", "added 3.0.1" },
 					},
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -364,21 +366,23 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 23639,
 						["requireSkill"] = 9787,
 					}),
-					un(NEVER_IMPLEMENTED, {
+					{
 						["name"] = "Bleakwood Hew",
+						["timeline"] = { "created 1.12.1.13287", "added 7.1.5" },
 						["recipeID"] = 16965,
 						["requireSkill"] = 9787,
-					}),
+					},
 					{
 						["name"] = "Blight",
 						["recipeID"] = 10011,
 						["requireSkill"] = 9787,
 					},
-					un(NEVER_IMPLEMENTED, {
+					{
 						["name"] = "Blood Talon",
+						["timeline"] = { "created 1.12.1.6898" },	-- Never Implemented
 						["recipeID"] = 16986,
 						["requireSkill"] = 9787,
-					}),
+					},
 					{
 						["name"] = "Dark Iron Pulverizer",
 						["recipeID"] = 15292,
@@ -389,29 +393,45 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 15294,
 						["requireSkill"] = 9787,
 					},
-					un(NEVER_IMPLEMENTED, {
+					{
 						["name"] = "Darkspear",
+						["timeline"] = { "created 1.12.1.13287", "added 7.1.5" },
 						["recipeID"] = 16987,
 						["requireSkill"] = 9787,
-					}),
+					},
 					{
 						["name"] = "Heartseeker",
 						["recipeID"] = 16995,
 						["requireSkill"] = 9787,
 					},
 					-- #endif
-					applyclassicphase(TBC_PHASE_ONE,{					
+					applyclassicphase(WRATH_PHASE_ONE, {
+						["name"] = "Corroded Saronite Edge",
+						["timeline"] = { "removed 4.0.1" },
+						["recipeID"] = 55183,
+					}),
+					applyclassicphase(WRATH_PHASE_ONE, {
+						["name"] = "Corroded Saronite Woundbringer",
+						["timeline"] = { "removed 4.0.1" },
+						["recipeID"] = 55184,
+					}),
+					-- #if BEFORE 7.1.5
+					applyclassicphase(TBC_PHASE_ONE, {					
 						["name"] = "Light Earthforged Blade", 
+						["timeline"] = { "created 2.0.1.6180", "added 7.1.5" },
 						["recipeID"] = 36125,
 						["requireSkill"] = 9787,
 					}),
-					applyclassicphase(TBC_PHASE_ONE,{					
-						["name"] = "Light Emberforged Hammer", 
+					-- #endif
+					applyclassicphase(TBC_PHASE_ONE, {					
+						["name"] = "Light Emberforged Hammer",
+						["timeline"] = { "removed 4.0.1.13287" },
 						["recipeID"] = 36128,
 						["requireSkill"] = 9787,
 					}),
-					applyclassicphase(TBC_PHASE_ONE,{					
-						["name"] = "Light Skyforged Axe", 
+					applyclassicphase(TBC_PHASE_ONE, {					
+						["name"] = "Light Skyforged Axe",
+						["timeline"] = { "removed 4.0.1.13287" },
 						["recipeID"] = 36126,
 						["requireSkill"] = 9787,
 					}),
@@ -423,11 +443,13 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "The Shatterer",
+						["timeline"] = { "removed 4.0.1" },
 						["recipeID"] = 10003,
 						["requireSkill"] = 9787,
 					},
 					{
 						["name"] = "Truesilver Champion",
+						["timeline"] = { "removed 4.0.1" },
 						["recipeID"] = 10015,
 						["requireSkill"] = 9787,
 					},

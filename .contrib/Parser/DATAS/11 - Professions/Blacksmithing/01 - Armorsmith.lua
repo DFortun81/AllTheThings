@@ -30,6 +30,11 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36257,
 						["requireSkill"] = 9788,
 					}),
+					applyclassicphase(WRATH_PHASE_ONE,{
+						["name"] = "Chestplate of Conquest",
+						["timeline"] = { "removed 4.0.1" },
+						["recipeID"] = 55186,
+					}),
 					applyclassicphase(TBC_PHASE_ONE,{
 						["name"] = "Embrace of the Twisting Nether",
 						["timeline"] = { "removed 4.0.1" },
@@ -72,6 +77,11 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 36122,
 						["requireSkill"] = 9788,
 					}),
+					applyclassicphase(WRATH_PHASE_ONE,{
+						["name"] = "Legplates of Conquest",
+						["timeline"] = { "removed 4.0.1" },
+						["recipeID"] = 55187,
+					}),
 					applyclassicphase(TBC_PHASE_ONE,{	
 						["name"] = "Windforged Leggings",
 						["timeline"] = { "removed 4.0.1" },
@@ -92,6 +102,7 @@ profession(BLACKSMITHING, {
 					}),
 					applyclassicphase(PHASE_THREE, {
 						["name"] = "Enchanted Thorium Helm",
+						["timeline"] = { "removed 4.0.1" },
 						["recipeID"] = 16742,
 						["requireSkill"] = 9788,
 					}),
@@ -152,6 +163,7 @@ profession(BLACKSMITHING, {
 					}),
 					{
 						["name"] = "Fiery Plate Gauntlets",
+						["timeline"] = { "removed 4.0.1" },
 						["recipeID"] = 16655,
 						["requireSkill"] = 9788,
 					},
@@ -167,6 +179,7 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Truesilver Gauntlets",
+						["timeline"] = { "removed 4.0.1" },
 						["recipeID"] = 9954,
 						["requireSkill"] = 9788,
 					},
@@ -184,11 +197,13 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Demon Forged Breastplate",
+						["timeline"] = { "removed 4.0.1" },
 						["recipeID"] = 16667,
 						["requireSkill"] = 9788,
 					},
 					applyclassicphase(PHASE_THREE, {
 						["name"] = "Enchanted Thorium Breastplate",
+						["timeline"] = { "removed 4.0.1" },
 						["recipeID"] = 16745,
 						["requireSkill"] = 9788,
 					}),
@@ -199,6 +214,7 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Truesilver Breastplate",
+						["timeline"] = { "removed 4.0.1" },
 						["recipeID"] = 9974,
 						["requireSkill"] = 9788,
 					},
@@ -231,6 +247,7 @@ profession(BLACKSMITHING, {
 					},
 					applyclassicphase(PHASE_THREE, {
 						["name"] = "Enchanted Thorium Leggings",
+						["timeline"] = { "removed 4.0.1" },
 						["recipeID"] = 16744,
 						["requireSkill"] = 9788,
 					}),

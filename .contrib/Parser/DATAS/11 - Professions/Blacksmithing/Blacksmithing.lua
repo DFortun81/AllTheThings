@@ -1297,11 +1297,13 @@ profession(BLACKSMITHING, {
 					["name"] = "Jade Serpentblade",
 					["recipeID"] = 3493,
 				},
-				{
+				-- #if AFTER 7.1.5
+				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Light Earthforged Blade",
 					["timeline"] = { "created 2.0.1.6180", "added 7.1.5" },
 					["recipeID"] = 36125,
-				},
+				}),
+				-- #endif
 				{
 					["name"] = "Massive Iron Axe",
 					["recipeID"] = 3498,
@@ -2035,6 +2037,17 @@ profession(BLACKSMITHING, {
 		},
 		-- #endif
 		{
+			["name"] = "Materials",
+			["categoryID"] = 215,
+			["groups"] = {
+				{
+					["name"] = "Titanium Rod",
+					["timeline"] = { "removed 5.0.4" },
+					["recipeID"] = 55732,
+				},
+			},
+		},
+		{
 			["name"] = "Equipment Mods",
 			["categoryID"] = 578,
 			["groups"] = {
@@ -2042,24 +2055,19 @@ profession(BLACKSMITHING, {
 					["name"] = "Eternal Belt Buckle",
 					["recipeID"] = 55656,
 				},
-				{	-- Socket Bracer	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic],
-					["recipeID"] = 55628--[[Socket Bracer]],
-					["u"] = NEVER_IMPLEMENTED,
-					["description"] = "These are the Socket Bracer plans. They were removed in Patch 5.0.4.",
+				{
+					["name"] = "Socket Bracer",
+					["timeline"] = { "deleted 5.0.4" },
+					["recipeID"] = 55628,
 				},
-				{	-- Socket Gloves	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic],
-					["recipeID"] = 55641--[[Socket Gloves]],
-					["u"] = NEVER_IMPLEMENTED,
-					["description"] = "These are the Socket Gloves plans. They were removed in Patch 5.0.4.",
+				{
+					["name"] = "Socket Gloves",
+					["timeline"] = { "deleted 5.0.4" },
+					["recipeID"] = 55641,
 				},
 				{
 					["name"] = "Titanium Plating",
 					["recipeID"] = 62202,
-				},
-				{	-- Titanium Rod	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic],
-					["recipeID"] = 55732--[[Titanium Rod]],
-					["u"] = NEVER_IMPLEMENTED,
-					["description"] = "These are the Titanium Rod plans. They were removed in Patch 5.0.4.",
 				},
 				{
 					["name"] = "Titanium Shield Spike",
@@ -2075,26 +2083,26 @@ profession(BLACKSMITHING, {
 			["name"] = "Armor",
 			["categoryID"] = 579,
 			["groups"] = {
-				{
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Battlelord's Plate Boots",
 					["recipeID"] = 63188,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Belt of the Titans",
 					["recipeID"] = 63187,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Boots of Kingly Upheaval",
 					["recipeID"] = 70568,
-				},
-				{	-- Breastplate of the White Knight [Alliance],
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Breastplate of the White Knight [Alliance],
 					["recipeID"] = 67091--[[Breastplate of the White Knight]],
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Breastplate of the White Knight [Horde],
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Breastplate of the White Knight [Horde],
 					["recipeID"] = 67130--[[Breastplate of the White Knight]],
 					["races"] = HORDE_ONLY,
-				},
+				}),
 				{
 					["name"] = "Brilliant Saronite Belt",
 					["recipeID"] = 59436,
@@ -2136,11 +2144,6 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 55377,
 				},
 				{
-					["name"] = "Chestplate of Conquest",
-					["u"] = REMOVED_FROM_GAME,
-					["recipeID"] = 55186,
-				},
-				{
 					["name"] = "Cobalt Belt",
 					["recipeID"] = 52568,
 				},
@@ -2180,10 +2183,10 @@ profession(BLACKSMITHING, {
 					["name"] = "Daunting Legplates",
 					["recipeID"] = 55303,
 				},
-				{
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Hellfrozen Bonegrinders",
 					["recipeID"] = 70566,
-				},
+				}),
 				{
 					["name"] = "Helm of Command",
 					["recipeID"] = 55302,
@@ -2204,19 +2207,14 @@ profession(BLACKSMITHING, {
 					["name"] = "Icebane Treads",
 					["recipeID"] = 61010,
 				},
-				{
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Indestructible Plate Girdle",
 					["recipeID"] = 63191,
-				},
-				{
-					["name"] = "Legplates of Conquest",
-					["u"] = REMOVED_FROM_GAME,
-					["recipeID"] = 55187,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Legplates of Painful Death",
 					["recipeID"] = 70565,
-				},
+				}),
 				{
 					["name"] = "Ornate Saronite Bracers",
 					["recipeID"] = 56549,
@@ -2249,22 +2247,22 @@ profession(BLACKSMITHING, {
 					["name"] = "Ornate Saronite Walkers",
 					["recipeID"] = 56552,
 				},
-				{
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Pillars of Might",
 					["recipeID"] = 70567,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Plate Girdle of Righteousness",
 					["recipeID"] = 63189,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Protectors of Life",
 					["recipeID"] = 70563,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_FOUR, {
 					["name"] = "Puresteel Legplates",
 					["recipeID"] = 70562,
-				},
+				}),
 				{
 					["name"] = "Reinforced Cobalt Chestpiece",
 					["recipeID"] = 54981,
@@ -2289,14 +2287,14 @@ profession(BLACKSMITHING, {
 					["name"] = "Righteous Greaves",
 					["recipeID"] = 55304,
 				},
-				{	-- Saronite Swordbreakers [Alliance],
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Saronite Swordbreakers [Alliance],
 					["recipeID"] = 67092--[[Saronite Swordbreakers]],
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Saronite Swordbreakers [Horde],
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Saronite Swordbreakers [Horde],
 					["recipeID"] = 67131--[[Saronite Swordbreakers]],
 					["races"] = HORDE_ONLY,
-				},
+				}),
 				{
 					["name"] = "Savage Saronite Bracers",
 					["recipeID"] = 55305,
@@ -2361,10 +2359,10 @@ profession(BLACKSMITHING, {
 					["name"] = "Spiked Cobalt Shoulders",
 					["recipeID"] = 54941,
 				},
-				{
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Spiked Deathdealers",
 					["recipeID"] = 63192,
-				},
+				}),
 				{
 					["name"] = "Spiked Titansteel Helm",
 					["recipeID"] = 55372,
@@ -2373,22 +2371,22 @@ profession(BLACKSMITHING, {
 					["name"] = "Spiked Titansteel Treads",
 					["recipeID"] = 55375,
 				},
-				{	-- Sunforged Bracers [Alliance],
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Sunforged Bracers [Alliance],
 					["recipeID"] = 67096--[[Sunforged Bracers]],
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Sunforged Bracers [Horde],
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Sunforged Bracers [Horde],
 					["recipeID"] = 67135--[[Sunforged Bracers]],
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Sunforged Breastplate [Alliance],
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Sunforged Breastplate [Alliance],
 					["recipeID"] = 67095--[[Sunforged Breastplate]],
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Sunforged Breastplate [Horde],
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Sunforged Breastplate [Horde],
 					["recipeID"] = 67134--[[Sunforged Breastplate]],
 					["races"] = HORDE_ONLY,
-				},
+				}),
 				{
 					["name"] = "Tempered Saronite Belt",
 					["recipeID"] = 54551,
@@ -2429,26 +2427,26 @@ profession(BLACKSMITHING, {
 					["name"] = "Tempered Titansteel Treads",
 					["recipeID"] = 55376,
 				},
-				{	-- Titanium Razorplate [Alliance],
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Titanium Razorplate [Alliance],
 					["recipeID"] = 67093--[[Titanium Razorplate]],
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Titanium Razorplate [Horde],
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Titanium Razorplate [Horde],
 					["recipeID"] = 67132--[[Titanium Razorplate]],
 					["races"] = HORDE_ONLY,
-				},
-				{	-- Titanium Spikeguards [Alliance],
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Titanium Spikeguards [Alliance],
 					["recipeID"] = 67094--[[Titanium Spikeguards]],
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- Titanium Spikeguards [Horde],
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, {	-- Titanium Spikeguards [Horde],
 					["recipeID"] = 67133--[[Titanium Spikeguards]],
 					["races"] = HORDE_ONLY,
-				},
-				{
+				}),
+				applyclassicphase(WRATH_PHASE_TWO, {
 					["name"] = "Treads of Destiny",
 					["recipeID"] = 63190,
-				},
+				}),
 				{
 					["name"] = "Vengeance Bindings",
 					["recipeID"] = 55298,
@@ -2488,16 +2486,6 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Cobalt Tenderizer",
 					["recipeID"] = 55201,
-				},
-				{
-					["name"] = "Corroded Saronite Edge",
-					["u"] = REMOVED_FROM_GAME,
-					["recipeID"] = 55183,
-				},
-				{
-					["name"] = "Corroded Saronite Woundbringer",
-					["u"] = REMOVED_FROM_GAME,
-					["recipeID"] = 55184,
 				},
 				{
 					["name"] = "Cudgel of Saronite Justice",
@@ -2547,10 +2535,10 @@ profession(BLACKSMITHING, {
 					["name"] = "Sturdy Cobalt Quickblade",
 					["recipeID"] = 55200,
 				},
-				{	-- Sure-Fire Shuriken	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic],
-					["recipeID"] = 55202--[[Sure-Fire Shuriken]],
-					["u"] = NEVER_IMPLEMENTED,
-					["description"] = "These are the Sure-Fire Shuriken plans. They were removed in Patch 5.0.4.",
+				{
+					["name"] = "Sure-Fire Shuriken",
+					["timeline"] = { "removed 5.0.4" },
+					["recipeID"] = 55202,
 				},
 				{
 					["name"] = "Titansteel Bonecrusher",
@@ -7046,6 +7034,39 @@ itemrecipe("Plans: Hard Khorium Battlefists", 35209, 46141, TBC_PHASE_FIVE);
 itemrecipe("Plans: Sunblessed Breastplate", 35210, 46142, TBC_PHASE_FIVE);
 itemrecipe("Plans: Hard Khorium Battleplate", 35211, 46144, TBC_PHASE_FIVE);
 itemrecipe("Plans: Adamantite Weapon Chain", 35296, 42688, TBC_PHASE_FIVE, true);
+-- #endif
+
+-- #if AFTER WRATH
+itemrecipe("Plans: Battlelord's Plate Boots", 45089, 63188, WRATH_PHASE_TWO);
+itemrecipe("Plans: Belt of the Titans", 45088, 63187, WRATH_PHASE_TWO);
+itemrecipe("Plans: Boots of Kingly Upheaval", 49974, 70568, WRATH_PHASE_FOUR);
+itemrecipe("Plans: Breastplate of the White Knight", 47640, 67130, WRATH_PHASE_THREE);
+itemrecipe("Plans: Breastplate of the White Knight", 47622, 67091, WRATH_PHASE_THREE);
+itemrecipe("Plans: Hellfrozen Bonegrinders", 49972, 70566, WRATH_PHASE_FOUR);
+itemrecipe("Plans: Indestructible Plate Girdle", 45092, 63191, WRATH_PHASE_TWO);
+itemrecipe("Plans: Legplates of Painful Death", 49971, 70565, WRATH_PHASE_FOUR);
+itemrecipe("Plans: Pillars of Might", 49973, 70567, WRATH_PHASE_FOUR);
+itemrecipe("Plans: Plate Girdle of Righteousness", 45090, 63189, WRATH_PHASE_TWO);
+itemrecipe("Plans: Protectors of Life", 49970, 70563, WRATH_PHASE_FOUR);
+itemrecipe("Plans: Puresteel Legplates", 49969, 70562, WRATH_PHASE_FOUR);
+itemrecipe("Plans: Reinforced Cobalt Chestpiece", 41122, 54981, WRATH_PHASE_ONE);
+itemrecipe("Plans: Reinforced Cobalt Helm", 41123, 54979, WRATH_PHASE_ONE);
+itemrecipe("Plans: Reinforced Cobalt Legplates", 41120, 54980, WRATH_PHASE_ONE);
+itemrecipe("Plans: Reinforced Cobalt Shoulders", 41124, 54978, WRATH_PHASE_ONE);
+itemrecipe("Plans: Saronite Swordbreakers", 47641, 67131, WRATH_PHASE_THREE);
+itemrecipe("Plans: Saronite Swordbreakers", 47623, 67092, WRATH_PHASE_THREE);
+itemrecipe("Plans: Spiked Deathdealers", 45093, 63192, WRATH_PHASE_TWO);
+itemrecipe("Plans: Sunforged Bracers", 47642, 67135, WRATH_PHASE_THREE);
+itemrecipe("Plans: Sunforged Bracers", 47627, 67096, WRATH_PHASE_THREE);
+itemrecipe("Plans: Sunforged Breastplate", 47643, 67134, WRATH_PHASE_THREE);
+itemrecipe("Plans: Sunforged Breastplate", 47626, 67095, WRATH_PHASE_THREE);
+itemrecipe("Plans: Titanium Plating", 44937, 62202, WRATH_PHASE_ONE);
+itemrecipe("Plans: Titanium Plating", 44938, 62202, WRATH_PHASE_ONE);
+itemrecipe("Plans: Titanium Razorplate", 47644, 67132, WRATH_PHASE_THREE);
+itemrecipe("Plans: Titanium Razorplate", 47624, 67093, WRATH_PHASE_THREE);
+itemrecipe("Plans: Titanium Spikeguards", 47645, 67133, WRATH_PHASE_THREE);
+itemrecipe("Plans: Titanium Spikeguards", 47625, 67094, WRATH_PHASE_THREE);
+itemrecipe("Plans: Treads of Destiny", 45091, 63190, WRATH_PHASE_TWO);
 -- #endif
 
 -- These items never made it in.
