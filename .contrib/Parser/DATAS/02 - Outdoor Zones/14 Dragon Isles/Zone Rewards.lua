@@ -7,6 +7,22 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 		i(198058),	-- Titan Training Matrix III
 		i(194701),	-- Ominous Conch (Something for fishing thingy)
 		i(192029),	-- Swift Dragonbone Mace
+		i(192018),	-- Piercing Shikaar Thrust
+		i(197923),	-- Bloodcharger's Skewer
+
+
+
+		i(191996),	-- Ottuk Hide Bindings
+		i(191994),	-- Ottuk Hide Breeches
+		i(192014),	-- Ottuk Hide Epaulets
+		i(191992),	-- Ottuk Hide Grips
+		i(191993),	-- Ottuk Hide Helm
+		i(191995),	-- Ottuk Hide Sash
+		i(192013),	-- Ottuk Hide Vest
+		i(191991),	-- Ottuk Hide Waders
+
+
+
 
 
 		i(192037),	-- Ohn'ahran Falconer's Belt

@@ -535,6 +535,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["coord"] = { 74.4, 42.1, THE_WAKING_SHORES },
 					["g"] = {
 						i(194350),	-- Expedition Guard's Legguards
+						i(194353),	-- Field Scout's Breeches
 						i(194352),	-- League Mercenary's Leggings
 					},
 				}),
@@ -557,6 +558,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["coord"] = { 74.4, 42.1, THE_WAKING_SHORES },
 					["g"] = {
 						i(194412),	-- Expedition Guard's Wristguards
+						i(194414),	-- Field Scout's Bindings
 						i(194413),	-- League Mercenary's Wristwraps
 					},
 				}),
@@ -1087,6 +1089,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["provider"] = { "n", 191014 },	-- Ashen Black
 				["coord"] = { 26.5, 62.5, THE_WAKING_SHORES },
 				["isDaily"] = true,
+				["g"] = {
+					i(197939),	-- Razortooth Harpoon
+				},
 			}),
 			q(65842, {	-- Disarming Behavior
 				["sourceQuests"] = { 66133 },	-- Keys of Loyalty

@@ -17,6 +17,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					i(200070),	-- Obsidian Strongbox
 				},
 			}),
+			q(70021, {	-- Tale of Tapionnuq
+				["coord"] = { 15.1, 91.3, THE_WAKING_SHORES },
+			}),
 			q(67012, {	-- When Riverbeasts Fly
 				["coord"] = { 77.4, 48.4, THE_WAKING_SHORES },
 			}),
