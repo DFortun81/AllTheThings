@@ -952,5 +952,10 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(66887),	-- 	Choose Trophy from First Hunt (Renewal of Vows 66783)
 		q(66889),	-- 	Choose Eagle Feather (Renewal of Vows 66783)
 		q(66888),	-- 	Choose Blood (Renewal of Vows 66783)
+
+
+		-- Has to do with the Chest Event In the South
+		--q(70511),	-- complete??
+		--q(71033),	-- Loot? Object (381981)
 	}),
 }));

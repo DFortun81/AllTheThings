@@ -10,6 +10,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			q(71181, {	-- Forgotten Grotto Relics
 				["coord"] = { 58.7, 36.8, THALDRASZUS }
 			}),
+			q(70934, {	-- Salamanther's Embrace
+				["coord"] = { 54.9, 35.7, THALDRASZUS }
+			}),
 			q(70057, {	-- Thieving Tarasek
 				["coord"] = { 56.2, 68.7, THALDRASZUS }
 			}),

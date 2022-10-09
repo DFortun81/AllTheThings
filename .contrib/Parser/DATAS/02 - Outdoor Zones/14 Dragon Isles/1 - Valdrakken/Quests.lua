@@ -141,6 +141,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["coord"] = { 50.7, 58.0, THALDRASZUS },
 				["isWeekly"] = true,
 			}),
+			q(66867, {	-- Relic Recovery: Algeth'ar Academy
+				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 191957 },	-- Theldren
+				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				["isWeekly"] = true,
+			}),
 			q(66865, {	-- Relic Recovery: The Azure Vault
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 191957 },	-- Theldren
