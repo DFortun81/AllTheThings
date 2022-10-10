@@ -106,11 +106,9 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					q(40684, {	-- The Tome of Blighted Implements
 						["sourceQuests"] = {
 								40729,	-- The New Blood
-								40712,	-- The Power Possessed
-								41156,	-- The Power Possessed
 							},
 						["provider"] = { "n", 101097 },	-- Calydus
-						["description"] = "You must complete the Affliction quest line BEFORE completing the Demonology quest line to obtain the breadcrumb quests.",
+						["description"] = "You must complete the Affliction quest line BEFORE completing the Demonology quest line to obtain certain breadcrumb quests.",
 						["coord"] = { 56.3, 65.0, LEGION_THE_UNDERBELLY },
 					}),
 					q(43984, {	-- The Tome Opens Again

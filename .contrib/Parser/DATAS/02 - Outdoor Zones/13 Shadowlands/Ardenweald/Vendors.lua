@@ -166,7 +166,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 					}),
 					i(187937, {	-- Technique: Mark of the Sable Ardenmoth (RECIPE!)
-						["minReputation"] = { 2464, HONORED },	-- Court of Night, Honored
+						["minReputation"] = { 2464, 6 },	-- Court of Night, Honored
 						["cost"] = {
 							{ "c", ANIMA, 1000 },
 							{ "c", GRATEFUL, 5 },
@@ -174,14 +174,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["timeline"] = { "added 9.1.5" },
 					}),
 					i(183053, {	-- Umbral Scythehorn (MOUNT!)
-						["minReputation"] = { 2464, REVERED },	-- Court of Night, Revered
+						["minReputation"] = { 2464, 7 },	-- Court of Night, Revered
 						["cost"] = {
 							{ "c", ANIMA, 5000 },
 							{ "c", GRATEFUL, 5 },
 						},
 					}),
 					i(180636, {	-- Willowbreeze (PET)
-						["minReputation"] = { 2464, FRIENDLY },	-- Court of Night, Friendly
+						["minReputation"] = { 2464, 5 },	-- Court of Night, Friendly
 						["cost"] = {
 							{ "i", 163036, 250 },
 							{ "c", GRATEFUL, 5 },
@@ -189,21 +189,21 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 					n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
 						i(180415, {	-- Winterborn Runestag (MOUNT!)
-							["minReputation"] = { 2464, REVERED },	-- Court of Night, Revered
+							["minReputation"] = { 2464, 7 },	-- Court of Night, Revered
 							["cost"] = {
 								{ "c", ANIMA, 5000 },
 								{ "c", GRATEFUL, 5 },
 							},
 						}),
 						i(182664, {	-- Stemmins (PET)
-							["minReputation"] = { 2464, FRIENDLY },	-- Court of Night, Friendly
+							["minReputation"] = { 2464, 5 },	-- Court of Night, Friendly
 							["cost"] = {
 								{ "i", 163036, 250 },
 								{ "c", GRATEFUL, 5 },
 							},
 						}),
 						i(184116, {	-- Ensemble: Winterborn Guise
-							["minReputation"] = { 2464, EXALTED },	-- Court of Night, Exalted
+							["minReputation"] = { 2464, 8 },	-- Court of Night, Exalted
 							["cost"] = {
 								{ "c", ANIMA, 25000 },
 								{ "c", GRATEFUL, 5 },
@@ -225,7 +225,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							},
 						}),
 						i(184115, {	-- Ensemble: Winterborn Raiment
-							["minReputation"] = { 2464, EXALTED },	-- Court of Night, Exalted
+							["minReputation"] = { 2464, 8 },	-- Court of Night, Exalted
 							["cost"] = {
 								{ "c", ANIMA, 25000 },
 								{ "c", GRATEFUL, 5 },
@@ -247,7 +247,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							},
 						}),
 						i(184114, {	-- Ensemble: Winterborn Regalia
-							["minReputation"] = { 2464, EXALTED },	-- Court of Night, Exalted
+							["minReputation"] = { 2464, 8 },	-- Court of Night, Exalted
 							["cost"] = {
 								{ "c", ANIMA, 25000 },
 								{ "c", GRATEFUL, 5 },
@@ -268,7 +268,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							},
 						}),
 						i(184117, {	-- Ensemble: Winterborn Warbark
-							["minReputation"] = { 2464, EXALTED },	-- Court of Night, Exalted
+							["minReputation"] = { 2464, 8 },	-- Court of Night, Exalted
 							["cost"] = {
 								{ "c", ANIMA, 25000 },
 								{ "c", GRATEFUL, 5 },
@@ -296,14 +296,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							["timeline"] = { "added 9.1.5" },
 						}),
 						i(182174, {	-- Leonine Soul
-							["minReputation"] = { 2464, FRIENDLY },	-- Court of Night, Friendly
+							["minReputation"] = { 2464, 5 },	-- Court of Night, Friendly
 							["cost"] = {
 								{ "c", ANIMA, 1500 },
 								{ "c", GRATEFUL, 5 },
 							},
 						}),
 						i(182182, {	-- Lupine Soul
-							["minReputation"] = { 2464, FRIENDLY },	-- Court of Night, Friendly
+							["minReputation"] = { 2464, 5 },	-- Court of Night, Friendly
 							["cost"] = {
 								{ "c", ANIMA, 1500 },
 								{ "c", GRATEFUL, 5 },
@@ -317,14 +317,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							["timeline"] = { "added 9.1.5" },
 						}),
 						i(181308, {	-- Winterwoven Bulb
-							["minReputation"] = { 2464, HONORED },	-- Court of Night, Honored
+							["minReputation"] = { 2464, 6 },	-- Court of Night, Honored
 							["cost"] = {
 								{ "c", ANIMA, 3500 },
 								{ "c", GRATEFUL, 5 },
 							},
 						}),
 						i(181312, {	-- Winterwoven Pack
-							["minReputation"] = { 2464, HONORED },	-- Court of Night, Honored
+							["minReputation"] = { 2464, 6 },	-- Court of Night, Honored
 							["cost"] = {
 								{ "c", ANIMA, 3500 },
 								{ "c", GRATEFUL, 5 },

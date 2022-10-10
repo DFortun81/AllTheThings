@@ -18,7 +18,7 @@ root("PVP", pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Prest
 					["timeline"] = { "removed 8.0.1.10000" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(42985, {	-- A Royal Audience [Alliance]
+				q(42978, {	-- A Royal Audience [Alliance]
 					["provider"] = { "i", 138992 },	-- Grand Marshal's Medal of Valor
 					["description"]	= "You get this quest when you reach Prestige Rank 2.",
 					["timeline"] = { "removed 8.0.1.10000" },

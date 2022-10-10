@@ -5455,89 +5455,89 @@ app.HasCost = function(group, idType, id)
 	return false;
 end
 
-app.NestSourceQuests = function(root, addedQuests, depth)
-	-- root is already the cloned source of the new list, just add each sourceQuest cloned into sub-groups
-	-- setup tracking which quests have been added as a sub-group, so we can only add them once
-	if not addedQuests then addedQuests = {}; end
-	root.hideText = true;
-	root.depth = depth or 0;
-	if root.sourceQuests and #root.sourceQuests > 0 then
-		local qs;
-		-- we will ignore custom collect if the root quest is already out of scope
-		local checkCustomCollects = app.CheckCustomCollects(root);
-		local prereqs;
-		for _,sourceQuestID in ipairs(root.sourceQuests) do
-			if not addedQuests[sourceQuestID] then
-				addedQuests[sourceQuestID] = true;
-				qs = sourceQuestID < 1 and app.SearchForField("creatureID", math.abs(sourceQuestID)) or app.SearchForField("questID", sourceQuestID);
-				if qs and #qs > 0 then
-					local i, sq = #qs;
-					while not sq and i > 0 do
-						if qs[i].questID == sourceQuestID then sq = qs[i]; end
-						i = i - 1;
-					end
-					if sq and sq.questID then
-						if sq.parent and sq.parent.questID == sq.questID then
-							sq = sq.parent;
-						end
-						-- clone the object so as to not modify actual data
-						sq = CreateObject(sq);
-						sq.hideText = true;
-						-- clean anything out of it so that items don't show in the quest requirements
-						sq.g = nil;
+-- app.NestSourceQuests = function(root, addedQuests, depth)
+-- 	-- root is already the cloned source of the new list, just add each sourceQuest cloned into sub-groups
+-- 	-- setup tracking which quests have been added as a sub-group, so we can only add them once
+-- 	if not addedQuests then addedQuests = {}; end
+-- 	root.hideText = true;
+-- 	root.depth = depth or 0;
+-- 	if root.sourceQuests and #root.sourceQuests > 0 then
+-- 		local qs;
+-- 		-- we will ignore custom collect if the root quest is already out of scope
+-- 		local checkCustomCollects = app.CheckCustomCollects(root);
+-- 		local prereqs;
+-- 		for _,sourceQuestID in ipairs(root.sourceQuests) do
+-- 			if not addedQuests[sourceQuestID] then
+-- 				addedQuests[sourceQuestID] = true;
+-- 				qs = sourceQuestID < 1 and app.SearchForField("creatureID", math.abs(sourceQuestID)) or app.SearchForField("questID", sourceQuestID);
+-- 				if qs and #qs > 0 then
+-- 					local i, sq = #qs;
+-- 					while not sq and i > 0 do
+-- 						if qs[i].questID == sourceQuestID then sq = qs[i]; end
+-- 						i = i - 1;
+-- 					end
+-- 					if sq and sq.questID then
+-- 						if sq.parent and sq.parent.questID == sq.questID then
+-- 							sq = sq.parent;
+-- 						end
+-- 						-- clone the object so as to not modify actual data
+-- 						sq = CreateObject(sq);
+-- 						sq.hideText = true;
+-- 						-- clean anything out of it so that items don't show in the quest requirements
+-- 						sq.g = nil;
 
-						-- force collectible for normally un-collectible things to make sure it shows in list if the quest needs to be completed to progess
-						if not sq.collectible and sq.missingSourceQuests then
-							sq.collectible = true;
-						end
+-- 						-- force collectible for normally un-collectible things to make sure it shows in list if the quest needs to be completed to progess
+-- 						if not sq.collectible and sq.missingSourceQuests then
+-- 							sq.collectible = true;
+-- 						end
 
-						-- If the user is in a Party Sync session, then force showing pre-req quests which are replayable if they are collected already
-						if app.IsInPartySync and sq.collected then
-							sq.OnUpdate = app.ShowIfReplayableQuest;
-						end
+-- 						-- If the user is in a Party Sync session, then force showing pre-req quests which are replayable if they are collected already
+-- 						if app.IsInPartySync and sq.collected then
+-- 							sq.OnUpdate = app.ShowIfReplayableQuest;
+-- 						end
 
-						sq = (not checkCustomCollects or app.CheckCustomCollects(sq)) and app.RecursiveGroupRequirementsFilter(sq) and app.NestSourceQuests(sq, addedQuests, (depth or 0) + 1);
-					elseif sourceQuestID > 0 then
-						-- Create a Quest Object.
-						sq = app.CreateQuest(sourceQuestID, { ['hideText'] = true, });
-					else
-						-- Create a NPC Object.
-						sq = app.CreateNPC(math.abs(sourceQuestID), { ['hideText'] = true, });
-					end
+-- 						sq = (not checkCustomCollects or app.CheckCustomCollects(sq)) and app.RecursiveGroupRequirementsFilter(sq) and app.NestSourceQuests(sq, addedQuests, (depth or 0) + 1);
+-- 					elseif sourceQuestID > 0 then
+-- 						-- Create a Quest Object.
+-- 						sq = app.CreateQuest(sourceQuestID, { ['hideText'] = true, });
+-- 					else
+-- 						-- Create a NPC Object.
+-- 						sq = app.CreateNPC(math.abs(sourceQuestID), { ['hideText'] = true, });
+-- 					end
 
-					if sq then
-						-- track how many quests levels are nested so it can be sorted in a decent-ish looking way
-						root.depth = math.max((root.depth or 0),(sq.depth or 1));
-						if prereqs then tinsert(prereqs, sq);
-						else prereqs = { sq }; end
-					else
-						addedQuests[sourceQuestID] = nil;
-					end
-				end
-			end
-		end
-		-- sort quests with less sub-quests to the top
-		if prereqs then
-			app.Sort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
-			NestObjects(root, prereqs);
-		end
-	end
-	-- If the root quest is provided by an Item, then show that Item directly under the root Quest so it can easily show tooltip/Source information if desired
-	if root.providers then
-		for _,p in ipairs(root.providers) do
-			if p[1] == "i" then
-				-- print("Root Provider",p[1], p[2]);
-				local pRef = app.SearchForObject("itemID", p[2]);
-				if pRef then
-					NestObject(root, pRef, true, 1);
-				else
-					NestObject(root, app.CreateItem(p[2]), nil, 1);
-				end
-			end
-		end
-	end
-	return root;
-end
+-- 					if sq then
+-- 						-- track how many quests levels are nested so it can be sorted in a decent-ish looking way
+-- 						root.depth = math.max((root.depth or 0),(sq.depth or 1));
+-- 						if prereqs then tinsert(prereqs, sq);
+-- 						else prereqs = { sq }; end
+-- 					else
+-- 						addedQuests[sourceQuestID] = nil;
+-- 					end
+-- 				end
+-- 			end
+-- 		end
+-- 		-- sort quests with less sub-quests to the top
+-- 		if prereqs then
+-- 			app.Sort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
+-- 			NestObjects(root, prereqs);
+-- 		end
+-- 	end
+-- 	-- If the root quest is provided by an Item, then show that Item directly under the root Quest so it can easily show tooltip/Source information if desired
+-- 	if root.providers then
+-- 		for _,p in ipairs(root.providers) do
+-- 			if p[1] == "i" then
+-- 				-- print("Root Provider",p[1], p[2]);
+-- 				local pRef = app.SearchForObject("itemID", p[2]);
+-- 				if pRef then
+-- 					NestObject(root, pRef, true, 1);
+-- 				else
+-- 					NestObject(root, app.CreateItem(p[2]), nil, 1);
+-- 				end
+-- 			end
+-- 		end
+-- 	end
+-- 	return root;
+-- end
 local function SendGroupMessage(msg)
 	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then
 		C_ChatInfo.SendAddonMessage("ATT", msg, "INSTANCE_CHAT")
@@ -8214,7 +8214,7 @@ end
 app.LockedAsQuest = LockedAsQuest;
 
 local Search = app.SearchForObject;
--- Traces backwards in the sequence fpr 'questID' via parent relationships within 'parents' to see if 'checkQuestID' is reached and returns true if so
+-- Traces backwards in the sequence for 'questID' via parent relationships within 'parents' to see if 'checkQuestID' is reached and returns true if so
 local function BackTraceForSelf(parents, questID, checkQuestID)
 	-- app.PrintDebug("Backtrace",questID)
 	local next = parents[questID];
@@ -8242,8 +8242,16 @@ local function MapSourceQuestsRecursive(parentQuestID, questID, currentDepth, de
 		if BackTraceForSelf(parents, parentQuestID, questID) then
 			-- app.PrintDebug("Ignore Backtrace Quest",questID)
 			return;
-		-- else
-		-- 	app.PrintDebug("Not in Backtrace",questID)
+		else
+			-- maybe a better fix at some point? still possible to write really strange quest sequences that can trigger this
+			if currentDepth > 1000 then
+				if not app._reportedBadQuestSequence then
+					app._reportedBadQuestSequence = true;
+					app.report("Likely bad Quest chain sequence encountered @ 1000 depth for",questID);
+				end
+				return;
+			end
+			-- app.PrintDebug("Not in Backtrace",questID)
 		end
 	else
 		questRef = Search("questID",questID);
@@ -8342,6 +8350,7 @@ app.NestSourceQuestsV2 = function(questChainRoot, questID)
 	local sqs = questRef.sourceQuests or questChainRoot.sourceQuests;
 	if not sqs then return; end
 
+	app._reportedBadQuestSequence = nil;
 	for _,sq in ipairs(sqs) do
 		-- Recurse against sourceQuests of sq
 		MapSourceQuestsRecursive(questID, sq, 1, depths, parents, refs, inFilters);
