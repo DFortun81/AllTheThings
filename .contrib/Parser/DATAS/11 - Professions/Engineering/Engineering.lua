@@ -1104,54 +1104,86 @@ profession(ENGINEERING, {
 			["groups"] = {
 				{
 					["name"] = "Armored Titanium Goggles",
+					-- #if BEFORE 7.3.0
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+					-- #endif
 					["recipeID"] = 56480,
 				},
 				{
 					["name"] = "Charged Titanium Specs",
+					-- #if BEFORE 7.3.0
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+					-- #endif
 					["recipeID"] = 56483,
 				},
 				{
 					["name"] = "Electroflux Sight Enhancers",
+					-- #if BEFORE 7.3.0
+					["classes"] = { HUNTER, SHAMAN },
+					-- #endif
 					["recipeID"] = 56487,
 				},
 				{
-					["name"] = "Gnomish X-Ray Specs",
-					["recipeID"] = 56473,
-				},
-				{
 					["name"] = "Greensight Gogs",
+					-- #if BEFORE 7.3.0
+					["classes"] = { DRUID },
+					-- #endif
 					["recipeID"] = 56486,
 				},
 				{
 					["name"] = "Mechanized Snow Goggles",
+					-- #if BEFORE 7.3.0
+					["classes"] = { PRIEST, MAGE, WARLOCK },
+					-- #endif
 					["recipeID"] = 56465,
 				},
 				{
 					["name"] = "Mechanized Snow Goggles",
+					-- #if BEFORE 7.3.0
+					["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+					-- #endif
 					["recipeID"] = 61481,
 				},
 				{
 					["name"] = "Mechanized Snow Goggles",
+					-- #if BEFORE 7.3.0
+					["classes"] = { HUNTER, SHAMAN },
+					-- #endif
 					["recipeID"] = 61482,
 				},
 				{
 					["name"] = "Mechanized Snow Goggles",
+					-- #if BEFORE 7.3.0
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+					-- #endif
 					["recipeID"] = 61483,
 				},
 				{
 					["name"] = "Truesight Ice Blinders",
+					-- #if BEFORE 7.3.0
+					["classes"] = { HUNTER, SHAMAN },
+					-- #endif
 					["recipeID"] = 56574,
 				},
 				{
 					["name"] = "Unbreakable Healing Amplifiers",
+					-- #if BEFORE 7.3.0
+					["classes"] = { PALADIN },
+					-- #endif
 					["recipeID"] = 62271,
 				},
 				{
 					["name"] = "Visage Liquification Goggles",
+					-- #if BEFORE 7.3.0
+					["classes"] = { PRIEST, MAGE, WARLOCK },
+					-- #endif
 					["recipeID"] = 56484,
 				},
 				{
 					["name"] = "Weakness Spectralizers",
+					-- #if BEFORE 7.3.0
+					["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+					-- #endif
 					["recipeID"] = 56481,
 				},
 			},
