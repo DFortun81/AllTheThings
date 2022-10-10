@@ -28,6 +28,7 @@ profession(BLACKSMITHING, {
 					},
 					{
 						["name"] = "Dawn's Edge",
+						["timeline"] = { "removed 4.0.3", "added 7.1.5" },
 						["recipeID"] = 16970,
 						["requireSkill"] = 17041,
 					},
@@ -249,10 +250,14 @@ profession(BLACKSMITHING, {
 						["name"] = "Blazing Rapier",
 						["recipeID"] = 16978,
 						["requireSkill"] = 17039,
+						["timeline"] = {
+							"removed 4.0.1.13287",
+							"added 7.1.5.23360",
+						},
 					},
 					{
 						["name"] = "Corruption",
-						["timeline"] = { "removed 2.0.1", "added 3.0.1" },
+						["timeline"] = { "removed 2.0.1", "added 3.0.1", "removed 4.0.3", "added 7.1.5" },
 						["recipeID"] = 16985,
 						["requireSkill"] = 17039,
 					},
