@@ -42,6 +42,7 @@ root("Zones", {
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4553),	-- Forlorn Woods
+					exploration(4554),	-- Ruins of Shandaral
 					exploration(4558),	-- Sunreaver's Command
 					exploration(4555),	-- The Azure Front
 					exploration(4552),	-- The Decrepit Flow

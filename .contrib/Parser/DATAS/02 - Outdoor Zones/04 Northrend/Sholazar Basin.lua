@@ -253,6 +253,37 @@ root("Zones", {
 					}),
 				})),
 				-- #endif
+				-- #if ANYCLASSIC
+				n(EXPLORATION, {
+					exploration(4369),	-- Dorian's Outpost
+					exploration(4292),	-- Frenzyheart Hill
+					exploration(4287),	-- Kartak's Hold
+					exploration(4306),	-- Mistwhisper Refuge
+					exploration(4284),	-- Nesingwary Base Camp
+					exploration(4291),	-- Rainspeaker Canopy
+					exploration(4386),	-- Rainspeaker Rapids
+					exploration(4290),	-- River's Heart
+					exploration(4304),	-- Sapphire Hive
+					exploration(4288),	-- Sparktouched Haven
+					exploration(4308),	-- Spearborn Encampment
+					exploration(4391),	-- Swindlegrin's Dig
+					exploration(4282),	-- The Avalanche
+					exploration(4368),	-- The Bonefields
+					exploration(4307),	-- The Glimmering Pillar
+					exploration(4296),	-- The Lifeblood Pillar
+					exploration(4283),	-- The Lost Lands
+					exploration(4483),	-- The Lost Passage
+					exploration(4412),	-- The Makers' Overlook
+					exploration(4413),	-- The Makers' Perch
+					exploration(4400),	-- The Mosslight Pillar
+					exploration(4376),	-- The Savage Thicket
+					exploration(4302),	-- The Skyreach Pillar
+					exploration(4392),	-- The Stormwright's Shelf
+					exploration(4389),	-- The Suntouched Pillar
+					exploration(4300),	-- Waygate
+					exploration(4293),	-- Wildgrowth Mangal
+				}),
+				-- #endif
 				n(FACTIONS, {
 					faction(1104, {	-- Frenzyheart Tribe
 						["maxReputation"] = { 1105, NEUTRAL },	-- The Oracles, Neutral.

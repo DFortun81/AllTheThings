@@ -130,6 +130,43 @@ root("Zones", {
 					}),
 				})),
 				-- #endif
+				-- #if ANYCLASSIC
+				n(EXPLORATION, {
+					exploration(4322),	-- Altar of Har'koa
+					exploration(4329),	-- Altar of Mam'toth
+					exploration(4325),	-- Altar of Quetz'lun
+					exploration(4321),	-- Altar of Rhunok
+					exploration(4276),	-- Altar of Sseratus
+					exploration(4320),	-- Amphitheater of Anguish
+					exploration(4469),	-- Dargath's Demise
+					exploration(4327),	-- Drak'Mabwa
+					exploration(4279),	-- Drak'Sotra
+					exploration(4278),	-- Drak'Sotra Fields
+					exploration(4312),	-- Ebon Watch
+					exploration(4375),	-- Gundrak
+					exploration(4326),	-- Heb'Drakkar
+					exploration(4294),	-- Heb'Valok
+					exploration(4481),	-- Jintha'kalar Passage
+					exploration(4299),	-- Kolramas
+					exploration(4317),	-- Light's Breach
+					exploration(4371),	-- Mam'toth Crater
+					exploration(4324),	-- Pools of Jin'Alai
+					exploration(4318),	-- Pools of Zha'Jin
+					exploration(4316),	-- Rageclaw Den
+					exploration(4374),	-- Rageclaw Lake
+					exploration(4311),	-- Reliquary of Agony
+					exploration(4315),	-- Reliquary of Pain
+					exploration(4275),	-- The Argent Stand
+					exploration(4468),	-- The Dead Fields
+					exploration(4313),	-- Thrym's End
+					exploration(4314),	-- Voltarus
+					exploration(4310),	-- Zeramas
+					exploration(4319),	-- Zim'Abwa
+					exploration(4328),	-- Zim'Rhuk
+					exploration(4323),	-- Zim'Torga
+					exploration(4372),	-- Zol'Maz Stronghold
+				}),
+				-- #endif
 				n(FLIGHT_PATHS, {
 					fp(305, {	-- Ebon Watch
 						["cr"] = 28615,	-- Baneflight <Flight Master>

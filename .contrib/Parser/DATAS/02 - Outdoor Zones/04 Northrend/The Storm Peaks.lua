@@ -260,6 +260,47 @@ root("Zones", {
 					}),
 				})),
 				-- #endif
+				-- #if ANYCLASSIC
+				n(EXPLORATION, {
+					exploration(4452),	-- Bor's Breath
+					exploration(4484),	-- Bouldercrag's Refuge
+					exploration(4442),	-- Brann's Base-Camp
+					exploration(4422),	-- Brunnhildar Village
+					exploration(4441),	-- Camp Tunka'lo
+					exploration(4438),	-- Dun Niffelem
+					exploration(4431),	-- Engine of the Makers
+					exploration(4495),	-- Fjorn's Anvil
+					exploration(4439),	-- Frostfield Lake
+					exploration(4428),	-- Frosthold
+					exploration(4421),	-- Garm
+					exploration(4460),	-- Garm's Bane
+					exploration(4461),	-- Garm's Rise
+					exploration(4429),	-- Grom'arsh Crash-Site
+					exploration(4418),	-- K3
+					exploration(4435),	-- Narvir's Cradle
+					exploration(4434),	-- Nidavelir
+					exploration(4444),	-- Plain of Echoes
+					exploration(4459),	-- Ricket's Folly
+					exploration(4453),	-- Rohemdal Pass
+					exploration(4423),	-- Sifreldar Village
+					exploration(4419),	-- Snowblind Hills
+					exploration(4436),	-- Snowdrift Plains
+					exploration(4458),	-- Sparksocket Minefield
+					exploration(4490),	-- Stormcrest
+					exploration(4463),	-- Temple of Life
+					exploration(4464),	-- Temple of Order
+					exploration(4430),	-- Temple of Storms
+					exploration(4465),	-- Temple of Winter
+					exploration(4543),	-- Temple of Wisdom
+					exploration(4446),	-- Terrace of the Makers
+					exploration(4432),	-- The Foot Steppes
+					exploration(4473),	-- The Frigid Tomb
+					exploration(4440),	-- Thunderfall
+					exploration(4445),	-- Ulduar
+					exploration(4424),	-- Valkyrion
+					exploration(4437),	-- Valley of Ancient Winters
+				}),
+				-- #endif
 				n(FACTIONS, {
 					faction(1119, {	-- The Sons of Hodir
 						["OnTooltip"] = OnTooltipForSonsOfHodir,
