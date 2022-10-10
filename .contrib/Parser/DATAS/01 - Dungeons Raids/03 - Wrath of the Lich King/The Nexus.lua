@@ -337,6 +337,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(35597),	-- Band of Glittering Permafrost (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(37166),	-- Sphere of Red Dragon's Blood
+							-- #if BEFORE 4.0.1
+							i(43665),	-- Keristrasza's Broken Heart
+							-- #endif
 						},
 					}),
 				},

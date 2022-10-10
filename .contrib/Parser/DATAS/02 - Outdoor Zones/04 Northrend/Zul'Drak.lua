@@ -842,9 +842,9 @@ root("Zones", {
 						["sourceQuest"] = 12516,	-- Too Much of a Good Thing
 					}),
 					q(12948, {	-- The Champion of Anguish
-						["coord"] = { 48.4, 56.3, ZULDRAK },
 						["qg"] = 30007,	-- Gurgthock
 						["sourceQuest"] = 12936,	-- The Amphitheater of Anguish: Korrak the Bloodrager!
+						["coord"] = { 48.4, 56.3, ZULDRAK },
 						["groups"] = {
 							i(41815),	-- Icier Barbed Spear
 							i(41821),	-- Chilly Slobberknocker
@@ -853,6 +853,12 @@ root("Zones", {
 							i(41822),	-- Screw-Sprung Fixer-Upper
 							i(41824),	-- Crimson Cranium Crusher
 						},
+					}),
+					q(12974, {	-- The Champion's Call!
+						["qg"] = 30137,	-- Shifty Vickers
+						["coord"] = { 55.4, 49.4, NORTHREND_THE_UNDERBELLY },
+						["maps"] = { NORTHREND_DALARAN },
+						["isBreadcrumb"] = true,
 					}),
 					q(12562, {	-- The Drakkari Do Not Need Water Elementals!
 						["coord"] = { 40.1, 68.9, ZULDRAK },

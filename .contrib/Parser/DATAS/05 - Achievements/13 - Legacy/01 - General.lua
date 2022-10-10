@@ -112,7 +112,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		un(REMOVED_FROM_GAME, h(ach(8022))),	-- Now You're Just Showing Off (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
 		un(REMOVED_FROM_GAME, a(ach(9171))),	-- Now You're Just Showing Off (Season 2) (Alliance) **Comments on wowhead indicate this might still available in Legion, this needs to be tested.**
 		un(REMOVED_FROM_GAME, h(ach(9175))),	-- Now You're Just Showing Off (Season 2) (Horde) **Comments on wowhead indicate this might still available in Legion, this needs to be tested.**
-		un(REMOVED_FROM_GAME, ach(2019)),		-- Proof of Demise
 		un(REMOVED_FROM_GAME, ach(8507, {		-- Proving Yourself: Endless Damage (Wave 30) (Level 90)
 			un(REMOVED_FROM_GAME, ach(8504)),		-- Proving Yourself: Endless Damage (Wave 20) (Level 90)
 			un(REMOVED_FROM_GAME, ach(8501)),		-- Proving Yourself: Endless Damage (Wave 10) (Level 90)
@@ -147,7 +146,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		})),
 		un(REMOVED_FROM_GAME, a(ach(7940))),	-- The Second Rule of Brawler's Guild (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
 		un(REMOVED_FROM_GAME, h(ach(7939))),	-- The Second Rule of Brawler's Guild (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
-		un(REMOVED_FROM_GAME, ach(2018)),		-- Timear Foresees
 		un(REMOVED_FROM_GAME, a(ach(7937))),	-- You Are Not Your $#*@! Legplates (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
 		un(REMOVED_FROM_GAME, h(ach(8020))),	-- You Are Not Your $#*@! Legplates (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
 		un(REMOVED_FROM_GAME, ach(8697)),		-- You're Doing it Wrong (Level 90)

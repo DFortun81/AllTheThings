@@ -270,6 +270,11 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
+				prof(FISHING, {
+					i(45905, {	-- Bloodtooth Frenzy
+						["description"] = "Kill an animal and then swim in a body of water to create a pool to fish from.",
+					}),
+				}),
 				n(FLIGHT_PATHS, {
 					fp(289, {	-- Amber Ledge, Borean Tundra
 						["cr"] = 24795,	-- Surristrasz

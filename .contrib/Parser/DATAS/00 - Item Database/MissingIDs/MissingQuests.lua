@@ -826,22 +826,6 @@ q(12923),	-- UNUSED
 q(13123),	-- WotLK Collector's Edition: - DEM - E - FLAG
 q(13173),	-- Amidst the Confusion
 q(13210),	-- Blizzard Account: - DEM - E - FLAG
-q(13240),	-- Timear Foresees Centrifuge Constructs in your Future!
-q(13241),	-- Timear Foresees Ymirjar Berserkers in your Future!
-q(13243),	-- Timear Foresees Infinite Agents in your Future!
-q(13244),	-- Timear Foresees Titanium Vanguards in your Future!
-q(13245),	-- Proof of Demise: Ingvar the Plunderer
-q(13246),	-- Proof of Demise: Keristrasza
-q(13247),	-- Proof of Demise: Ley-Guardian Eregos
-q(13248),	-- Proof of Demise: King Ymiron
-q(13249),	-- Proof of Demise: The Prophet Tharon'ja
-q(13250),	-- Proof of Demise: Gal'darah
-q(13251),	-- Proof of Demise: Mal'Ganis
-q(13252),	-- Proof of Demise: Sjonnir The Ironshaper
-q(13253),	-- Proof of Demise: Loken
-q(13254),	-- Proof of Demise: Anub'arak
-q(13255),	-- Proof of Demise: Herald Volazj
-q(13256),	-- Proof of Demise: Cyanigosa
 q(13299),	-- ZZOLDWisp Cloak
 q(13303),	-- The Panchurian Candidate
 q(13317),	-- ----

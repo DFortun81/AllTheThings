@@ -342,6 +342,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(37193),	-- Staggering Legplates
 							i(37192),	-- Annhylde's Ring
 							i(37186),	-- Unsmashable Heavy Band
+							-- #if BEFORE 4.0.1
+							i(43662),	-- Axe of the Plunderer
+							-- #endif
 						},
 					}),
 				},

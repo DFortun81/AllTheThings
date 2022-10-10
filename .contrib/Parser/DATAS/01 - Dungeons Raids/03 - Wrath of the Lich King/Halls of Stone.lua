@@ -250,6 +250,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(37666),	-- Boots of the Whirling Mist
 							i(37660),	-- Forge Ember
 							i(37657),	-- Spark of Life
+							-- #if BEFORE 4.0.1
+							i(43699),	-- The Curse of Flesh Disc
+							-- #endif
 						},
 					}),
 				},

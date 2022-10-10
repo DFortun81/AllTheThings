@@ -380,7 +380,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							-- #endif
 							i(37642),	-- Hemorrhaging Circle
 							i(37638),	-- Offering of Sacrifice
-							
+							-- #if BEFORE 4.0.1
+							i(43693),	-- Mojo Remnant of Akali
+							-- #endif
 						},
 					}),
 				},

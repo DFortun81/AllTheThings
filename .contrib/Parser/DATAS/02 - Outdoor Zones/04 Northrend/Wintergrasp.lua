@@ -412,6 +412,9 @@ root("Zones", {
 			["lore"] = "Wintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns.",
 			["icon"] = "Interface\\Icons\\Spell_frost_chillingblast",
 			["groups"] = {
+				prof(FISHING, {
+					i(45904),	-- Terrorfish
+				}),
 				n(FLIGHT_PATHS, {
 					fp(303, {	-- Valiance Landing Camp
 						["cr"] = 30869,	-- Arzo Safeflight <Flight Master>

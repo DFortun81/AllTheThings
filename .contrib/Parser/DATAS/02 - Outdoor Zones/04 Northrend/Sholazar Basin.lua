@@ -296,6 +296,11 @@ root("Zones", {
 						["OnTooltip"] = OnTooltipForOracles,
 					}),
 				}),
+				prof(FISHING, {
+					i(45902, {	-- Phantom Ghostfish
+						["description"] = "Eat this before it despawns!",
+					}),
+				}),
 				n(FLIGHT_PATHS, {
 					fp(309, {	-- Nesingwary Base Camp
 						["cr"] = 28037,	-- The Spirit of Gnomeregan <Flight Master>
