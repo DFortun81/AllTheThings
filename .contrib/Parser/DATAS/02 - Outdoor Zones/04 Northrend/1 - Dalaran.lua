@@ -4093,7 +4093,6 @@ root("Zones", {
 						},
 					})),
 					q(29609, {	-- Friends in Dalaran
-						["races"] = HORDE_ONLY,
 						["qgs"] = {
 							27344,	-- Adeline Chambers
 							25288,	-- Turida Coldwind
@@ -4102,6 +4101,8 @@ root("Zones", {
 							{ 79.0, 29.7, HOWLING_FJORD },	-- Adeline Chambers
 							{ 40.3, 51.3, BOREAN_TUNDRA },	-- Turida Coldwind
 						},
+						["timeline"] = { "added 4.3.0.14732" },
+						["races"] = HORDE_ONLY,
 					}),
 					--[[
 					q(32405, {	-- Hand of the Silver Covenant
