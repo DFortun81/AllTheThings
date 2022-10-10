@@ -1048,8 +1048,10 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		-- #endif
 		prof(INSCRIPTION, {
 			i(45912, {	-- Book of Glyph Mastery
+				-- #if AFTER 6.0.1.18379
+				["sym"] = {{"select","spellID",165465}},	-- Research: Ink of the Sea
+				-- #endif
 				["filterID"] = MISC,
-				-- TODO: symlink or source actual Glyphs which can be learned from this book. Only Source Recipes here if there are no other Sources!
 			}),
 		}),
 		prof(JEWELCRAFTING, {

@@ -7212,6 +7212,22 @@ root("Zones", {
 							i(21910),	-- Pattern: Spellfire Robe
 						},
 					}),
+					-- #if BEFORE 4.0.1
+					n(28723, {	-- Larana Drome <Inscription Supplies>
+						["coord"] = { 41.8, 36.8, NORTHREND_DALARAN },
+						["groups"] = {
+							i(50166, {	-- Technique: Glyph of Eternal Water
+								["timeline"] = { "deleted 4.0.1" },
+							}),
+							i(50168, {	-- Technique: Glyph of Quick Decay
+								["timeline"] = { "deleted 4.0.1" },
+							}),
+							i(50167, {	-- Technique: Glyph of Rapid Rejuvenation
+								["timeline"] = { "deleted 4.0.1" },
+							}),
+						},
+					}),
+					-- #endif
 					n(29510, {	-- Linna Bruder <Shadoweave Tailoring Specialist>
 						["coord"] = { 34.6, 34.4, NORTHREND_DALARAN },
 						["groups"] = {

@@ -3076,6 +3076,17 @@ root("Zones", {
 						},
 					}),
 					-- #endif
+					-- #if BEFORE 4.0.1
+					n(30734, {	-- Jezebel Bican <Inscription Supplies>
+						["coord"] = { 54.0, 65.6, NORTHREND_DALARAN },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(50166, {	-- Technique: Glyph of Eternal Water
+								["timeline"] = { "deleted 4.0.1" },
+							}),
+						},
+					}),
+					-- #endif
 					n(18773, {	-- Johan Barnes <Enchanting Trainer>
 						["coord"] = { 53.6, 66.0, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
@@ -3086,6 +3097,17 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["groups"] = JEWELCRAFTING_PATTERNS,
 					}),
+					-- #if BEFORE 4.0.1
+					n(30735, {	-- Kul Inkspiller <Inscription Supplies>
+						["coord"] = { 52.4, 36.0, NORTHREND_DALARAN },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(50166, {	-- Technique: Glyph of Eternal Water
+								["timeline"] = { "deleted 4.0.1" },
+							}),
+						},
+					}),
+					-- #endif
 					n(18775, {	-- Lebowski <Engineering Trainer>
 						["coord"] = { 55.6, 65.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,

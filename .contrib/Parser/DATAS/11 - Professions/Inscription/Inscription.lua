@@ -418,6 +418,9 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(57229, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Corpse Explosion / Glyph of Path of Frost[CATA+]
 			r(57215, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Death's Embrace
 			-- #endif
+			r(71101, {	-- Glyph of Eternal Water
+				["timeline"] = { "added 3.3.0", "deleted 4.0.1" },	-- With the new talent system, the Mage's Water Elemental has become a permanent pet by default. As a result, this glyph has been removed completely.
+			})
 		}),
 		cat(801, {	-- Cards
 			r(59503),	-- Greater Darkmoon Card
@@ -454,8 +457,14 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		cat(794, {	-- Glyphs
 			r(148275),	-- Glyph of Angels
 			r(293801, {["timeline"]={"added 8.1.5"}}),	-- Glyph of Dalaran Brilliance*
-			r(112469),	-- Glyph of Fighting Pose
-			r(112464),	-- Glyph of Honor
+			-- #if BEFORE 6.0.1.18379
+			r(112469, {	-- Glyph of Fighting Pose
+				["timeline"] = { "added 5.0.4.15890" },	-- This was moved to Research with 6.0.1
+			}),
+			r(112464, {	-- Glyph of Honor
+				["timeline"] = { "added 5.0.4.15890" },	-- This was moved to Research with 6.0.1
+			}),
+			-- #endif
 			-- #if AFTER WOD
 			r(56968, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
 			r(56995, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
@@ -464,7 +473,22 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			-- #endif
 		}),
 		cat(795, {	-- Scrolls & Research
-			r(165465, {["timeline"]={"added 6.0.2"}}),	-- Research: Ink of the Sea*
+			-- #if AFTER 6.0.1.18379
+			r(165465, {	-- Research: Ink of the Sea
+				["timeline"] = { "added 6.0.1.18379" },
+				["groups"] = {
+					r(112469, {	-- Glyph of Fighting Pose
+						["timeline"] = { "added 5.0.4.15890" },
+					}),
+					r(112464, {	-- Glyph of Honor
+						["timeline"] = { "added 5.0.4.15890" },
+					}),
+					r(56948, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+]
+						["timeline"] = { "added 3.0.2" },
+					}),
+				},
+			}),
+			-- #endif
 			r(69385),	-- Runescroll of Fortitude
 			r(58482),	-- Scroll of Agility VII
 			r(58483),	-- Scroll of Agility VIII
@@ -493,14 +517,18 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(61119),	-- Master's Inscription of the Pinnacle
 			r(61120),	-- Master's Inscription of the Storm
 		}),
+		-- #if BEFORE 6.0.1.18379
 		n(DISCOVERY, {
-			spell(165465, {	-- Research: Ink of the Sea
+			["provider"] = { "i", 45912 },	-- Book of Glyph Mastery
+			["description"] = "Recipes listed below are learned by using a Book of Glyph Mastery.",
+			["groups"] = {
 				r(56968, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
 				r(56995, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
 				r(57229, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Corpse Explosion / Glyph of Path of Frost[CATA+]
 				r(56948, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+]
-			}),
+			},
 		}),
+		-- #endif
 	}))),
 	applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
 		r(86008, {	-- Inscription (Cata)
@@ -1708,3 +1736,79 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		}),
 	}),
 })));
+
+-- #if AFTER WRATH
+-- Inscription Item Database
+local itemDB = root("ItemDB", {});
+
+-- Recipe Cache (for Validation)
+local recipeCache, recipeCacheU = {}, {};
+local function cacheRecipes(g)
+	if g and type(g) == "table" then
+		if g.groups then cacheRecipes(g.groups); end
+		if g.g then cacheRecipes(g.g); end
+		local spellID = g.spellID or g.recipeID;
+		if spellID then
+			recipeCache[spellID] = true;
+			if g.u then recipeCacheU[spellID] = g.u; end
+		end
+		for i,o in ipairs(g) do
+			cacheRecipes(o);
+		end
+	end
+end
+cacheRecipes(_.Professions);
+
+-- Inscription Item Recipe Database
+local itemrecipe = function(name, itemID, spellID, phase, timeline)
+	local o = { ["itemID"] = itemID, ["spellID"] = spellID };
+	if type(phase) == "string" then
+		timeline = phase;
+		phase = nil;
+	end
+	if timeline then
+		-- Ensure that the timeline is in a table format.
+		if type(timeline) == "string" then timeline = { timeline }; end
+		if type(timeline) == "table" then o.timeline = timeline; end
+	end
+	if name then
+		-- Ensure that the name is in a string format.
+		if type(name) == "table" then
+			-- #if AFTER CATA
+			name = name[2];
+			-- #else
+			name = name[1];
+			-- #endif
+		end
+		o.name = name;
+	end
+	itemDB[itemID] = phase and applyclassicphase(phase, o) or o;
+
+	-- Ensure that this recipe's spellID exists in the profession database.
+	if recipeCache and type(timeline) ~= "boolean" then
+		if recipeCache[o.spellID] then
+			-- Grab the phase from the cache.
+			local u = recipeCacheU[o.spellID];
+			if u then
+				if o.u ~= u then
+					print("ITEM RECIPE MISSING U: ", name, o.spellID, u, o.u);
+					o.u = u;
+				end
+			elseif o.u ~= u then
+				print("RECIPE MISSING U: ", name, o.spellID, o.u);
+			end
+		else
+			print("MISSING RECIPE", name, o.spellID);
+		end
+	end
+	return o;
+end
+
+-- #if BEFORE 4.0.1
+-- These techniques get completely deleted from the database with cataclysm.
+itemrecipe("Technique: Glyph of Eternal Water", 50166, 71101, WRATH_PHASE_ONE);
+itemrecipe("Technique: Glyph of Quick Decay", 50168, 71102, WRATH_PHASE_ONE);
+itemrecipe("Technique: Glyph of Rapid Rejuvenation", 50167, 71015, WRATH_PHASE_ONE);
+-- #endif
+itemrecipe("Technique: Rituals of the New Moon", 46108, 64051, WRATH_PHASE_ONE);
+-- #endif
