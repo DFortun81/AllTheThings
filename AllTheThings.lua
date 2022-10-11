@@ -13813,103 +13813,35 @@ end)();
 
 -- Tier Lib
 (function()
-local tiers = {
-	{	-- Classic
-		["icon"] = app.asset("Expansion_CLASSIC"),
-		["lore"] = L["CLASSIC_TIER_DESC"],
-	},
-	{	-- Burning Crusade
-		["icon"] = app.asset("Expansion_TBC"),
-		["lore"] = L["TBC_TIER_DESC"],
-		["lvl"] = 10,
-	},
-	{	-- Wrath of the Lich King
-		["icon"] = app.asset("Expansion_WOTLK"),
-		["lore"] = L["WOTLK_TIER_DESC"],
-		["lvl"] = 10,
-	},
-	{	-- Cataclysm
-		["icon"] = app.asset("Expansion_CATA"),
-		["lore"] = L["CATA_TIER_DESC"],
-		["lvl"] = 10,
-	},
-	{	-- Mists of Pandaria
-		["icon"] = app.asset("Expansion_MOP"),
-		["lore"] = L["MOP_TIER_DESC"],
-		["lvl"] = 10,
-	},
-	{	-- Warlords of Draenor
-		["icon"] = app.asset("Expansion_WOD"),
-		["lore"] = L["WOD_TIER_DESC"],
-		["lvl"] = 10,
-	},
-	{	-- Legion
-		["icon"] = app.asset("Expansion_LEGION"),
-		["lore"] = L["LEGION_TIER_DESC"],
-		["lvl"] = 10,
-	},
-	{	-- Battle for Azeroth
-		["icon"] = app.asset("Expansion_BFA"),
-		["lore"] = L["BFA_TIER_DESC"],
-		["lvl"] = 10,
-	},
-	{	-- Shadowlands
-		["icon"] = app.asset("Expansion_SL"),
-		["lore"] = L["SL_TIER_DESC"],
-		["lvl"] = 50,
-	},
-	{	-- Dragonflight
-		["icon"] = app.asset("Expansion_SL"),	-- TODO: Change asset
-		["lore"] = L["DF_TIER_DESC"],
-		["lvl"] = 60,
-	},
-};
-local function GetTierInfo(tierID, key)
-	if rawget(tiers, tierID) then
-		return rawget(rawget(tiers, tierID), key);
-	end
-end
-local EJ_GetTierInfo = EJ_GetTierInfo;
 local math_floor = math.floor;
-local cache = app.CreateCache("tierID");
-local function CacheInfo(t, field)
-	local _t, id = cache.GetCached(t);
+app.BaseTier = {
+	__type = function() return "BaseTier"; end,
+	__index = function(t, key)
+		if key == "key" then
+			return "tierID";
+		elseif key == "text" then
+			return app.TryColorizeName(t, t.name);
+		elseif key == "name" then
+			local info = rawget(L.TIER_DATA, t.tierID);
+			return info and rawget(info, key) or EJ_GetTierInfo(t.tierID);
+		else
+			local info = rawget(L.TIER_DATA, t.tierID);
+			return info and rawget(info, key);
+		end
+	end,
+};
+app.CreateTier = function(id, t)
 	-- patch can be included in the id
 	local tierID = math_floor(id);
-	rawset(t, "tierKey", tierID);
-	local patch_decimal = 100 * (id - tierID);
-	local patch = math_floor(patch_decimal + 0.0001);
-	local rev = math_floor(10 * (patch_decimal - patch) + 0.0001);
-	-- print("tier cache",id,tierID,patch_decimal,patch,rev)
+	t = constructor(tierID, t, "tierID");
 	if id > tierID then
-		_t.name = tostring(tierID).."."..tostring(patch).."."..tostring(rev);
-	else
-		_t.name = EJ_GetTierInfo(tierID);
+		local patch_decimal = 100 * (id - tierID);
+		local patch = math_floor(patch_decimal + 0.0001);
+		local rev = math_floor(10 * (patch_decimal - patch) + 0.0001);
+		-- print("tier cache",id,tierID,patch_decimal,patch,rev)
+		rawset(t, "name", tostring(tierID).."."..tostring(patch).."."..tostring(rev));
 	end
-	if field then return _t[field]; end
-end
-local fields = {
-	["key"] = function(t)
-		return "tierID";
-	end,
-	["name"] = function(t)
-		return cache.GetCachedField(t, "name", CacheInfo);
-	end,
-	-- Keyed values from 'tiers' data
-	["icon"] = function(t)
-		return GetTierInfo(t.tierKey or t.tierID, "icon");
-	end,
-	["lore"] = function(t)
-		return GetTierInfo(t.tierKey or t.tierID, "lore");
-	end,
-	["lvl"] = function(t)
-		return GetTierInfo(t.tierKey or t.tierID, "lvl");
-	end,
-};
-
-app.BaseTier = app.BaseObjectFields(fields, "BaseTier");
-app.CreateTier = function(id, t)
-	return setmetatable(constructor(id, t, "tierID"), app.BaseTier);
+	return setmetatable(t, app.BaseTier);
 end
 end)();
 
