@@ -111,6 +111,7 @@ root("Professions", prof(ALCHEMY, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Gurubashi Mojo Madness",
+					["timeline"] = { "removed 4.0.1" },
 					["recipeID"] = 24266
 				}),
 			}
