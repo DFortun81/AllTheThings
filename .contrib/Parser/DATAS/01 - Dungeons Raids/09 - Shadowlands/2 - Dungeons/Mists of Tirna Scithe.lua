@@ -93,7 +93,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				e(2402, {	-- Mistcaller
 					["crs"] = { 164501 },	-- Mistcaller
 					["g"] = {
-						i(182185),	-- Shrieker Soul (Soulshape!)
+						ig(182185),	-- Shrieker Soul (Soulshape!)
 						i(178710),	-- Tanglewood Thorn
 						i(182305),	-- Crown of Autumnal Flora
 						i(178691),	-- Hood of the Hidden Path
@@ -143,7 +143,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					e(2402, {	-- Mistcaller
 						["crs"] = { 164501 },	-- Mistcaller
 						["g"] = {
-							i(182185),	-- Shrieker Soul (Soulshape!)
+							ig(182185),	-- Shrieker Soul (Soulshape!)
 							i(178710),	-- Tanglewood Thorn
 							i(182305),	-- Crown of Autumnal Flora
 							i(178691),	-- Hood of the Hidden Path
@@ -206,7 +206,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					e(2402, {	-- Mistcaller
 						["crs"] = { 164501 },	-- Mistcaller
 						["g"] = {
-							i(182185),	-- Shrieker Soul (Soulshape!)
+							ig(182185),	-- Shrieker Soul (Soulshape!)
 							i(178710),	-- Tanglewood Thorn
 							i(182305),	-- Crown of Autumnal Flora
 							i(178691),	-- Hood of the Hidden Path
