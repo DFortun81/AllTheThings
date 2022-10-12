@@ -13812,38 +13812,58 @@ end
 end)();
 
 -- Tier Lib
-(function()
+do
+local EJ_GetTierInfo = EJ_GetTierInfo;
 local math_floor = math.floor;
-app.BaseTier = {
-	__type = function() return "BaseTier"; end,
-	__index = function(t, key)
-		if key == "key" then
-			return "tierID";
-		elseif key == "text" then
-			return app.TryColorizeName(t, t.name);
-		elseif key == "name" then
-			local info = rawget(L.TIER_DATA, t.tierID);
-			return info and rawget(info, key) or EJ_GetTierInfo(t.tierID);
-		else
-			local info = rawget(L.TIER_DATA, t.tierID);
-			return info and rawget(info, key);
-		end
-	end,
-};
-app.CreateTier = function(id, t)
+local cache = app.CreateCache("tierID");
+local function CacheInfo(t, field)
+	local _t, id = cache.GetCached(t);
 	-- patch can be included in the id
 	local tierID = math_floor(id);
-	t = constructor(tierID, t, "tierID");
+	rawset(t, "tierKey", tierID);
+	local info = rawget(L.TIER_DATA, tierID);
+	-- assign the cached values from locale
+	if info then
+		-- app.PrintDebug("tier cache locale data",id,tierID,"via",field)
+		for key,val in pairs(info) do
+			-- app.PrintDebug("--",key,val)
+			rawset(_t, key, val);
+		end
+	end
 	if id > tierID then
 		local patch_decimal = 100 * (id - tierID);
 		local patch = math_floor(patch_decimal + 0.0001);
 		local rev = math_floor(10 * (patch_decimal - patch) + 0.0001);
-		-- print("tier cache",id,tierID,patch_decimal,patch,rev)
-		rawset(t, "name", tostring(tierID).."."..tostring(patch).."."..tostring(rev));
+		-- app.PrintDebug("tier cache patch ID",id,tierID,patch_decimal,patch,rev)
+		_t.name = tostring(tierID).."."..tostring(patch).."."..tostring(rev);
+	else
+		-- only use API for name if not set from locale
+		_t.name = _t.name or EJ_GetTierInfo(tierID);
 	end
-	return setmetatable(t, app.BaseTier);
+	if field then return _t[field]; end
 end
-end)();
+local fields = {
+	["key"] = function(t)
+		return "tierID";
+	end,
+	["name"] = function(t)
+		return cache.GetCachedField(t, "name", CacheInfo);
+	end,
+	["icon"] = function(t)
+		return cache.GetCachedField(t, "icon", CacheInfo);
+	end,
+	["lore"] = function(t)
+		return cache.GetCachedField(t, "lore", CacheInfo);
+	end,
+	["lvl"] = function(t)
+		return cache.GetCachedField(t, "lvl", CacheInfo);
+	end,
+};
+app.BaseTier = app.BaseObjectFields(fields, "BaseTier");
+app.CreateTier = function(id, t)
+	return setmetatable(constructor(id, t, "tierID"), app.BaseTier);
+end
+end -- Tier Lib
 
 -- Title Lib
 (function()

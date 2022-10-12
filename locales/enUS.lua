@@ -232,11 +232,12 @@ app.L = {
 	["LOCK_CRITERIA_FACTION_LABEL"] = "Faction Reputation";
 	["LOCK_CRITERIA_FACTION_FORMAT"] = "%s with %s (Current: %s)";
 	["FORCE_REFRESH_REQUIRED"] = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.."-Click) to properly be collected.";
-	
+
 	["TIER_DATA"] = {
 		{	-- Classic
 			["icon"] = app.asset("Expansion_CLASSIC"),
 			["lore"] = "Four years after the Battle of Mount Hyjal, tensions between the Alliance & the Horde begin to arise once again. Intent on settling the arid region of Durotar, Thrall's new Horde expanded its ranks, inviting the undead Forsaken to join orcs, tauren, & trolls. Meanwhile, dwarves, gnomes & the ancient night elves pledged their loyalties to a reinvigorated Alliance, guided by the human kingdom of Stormwind. After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was marred by the manipulations & mind control of the Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, ancient foes surfaced in lands throughout the world to menace Horde & Alliance alike.",
+			["lvl"] = 1,
 		},
 		{	-- Burning Crusade
 			["icon"] = app.asset("Expansion_TBC"),
