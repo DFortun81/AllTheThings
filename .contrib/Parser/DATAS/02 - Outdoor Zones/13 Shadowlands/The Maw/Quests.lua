@@ -331,7 +331,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["timeline"] = { "added 9.1.0" },
 			}),
 			q(64521, {	-- Helsworn Battle Plans
-				["sourceQuests"] = { 63612 },	-- The Chains of Command
+				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 				["provider"] = { "i", 187275 },	-- Helsworn Battle Plans
 				["isWeekly"] = true,
 				["timeline"] = { "added 9.1.0" },
