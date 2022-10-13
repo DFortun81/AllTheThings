@@ -4,12 +4,12 @@
 
 root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, {
 	n(PROFESSIONS, {
-		-- #IF BEFORE BFA
 		prof(FIRST_AID, {
 			ach(135, { -- Grand Master Medic (450)
 				["timeline"] = { "added 3.0", "removed 8.0" },
 				["requireSkill"] = FIRST_AID,
 			}),
+			-- #IF BEFORE BFA
 			ach(137, {	-- Stocking Up
 				["requireSkill"] = FIRST_AID,
 			}),
@@ -22,8 +22,8 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, {
 					{ "i", 72986, 1 },	-- Heavy Windwool Bandage
 				},
 			}),
+			-- #ENDIF
 		}),
-		-- #ENDIF
 		-- #IF AFTER BFA
 		prof(TAILORING, {
 			ach(137, {	-- Stocking Up
