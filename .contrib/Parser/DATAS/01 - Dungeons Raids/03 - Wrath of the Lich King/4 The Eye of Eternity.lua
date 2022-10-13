@@ -32,7 +32,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						ach(1869),	-- A Poke in the Eye (10 player)
 						ach(2148),	-- Denyin' the Scion (10 player)
 						ach(1658, {	-- Champion of the Frozen Wastes: Malygos
-							["criteriaID"] = 3,	-- Malygos (10 or 25 player) slain
+							["criteriaID"] = 5890,	-- Malygos (10 or 25 player) slain
 						}),
 						ach(622),	-- The Spellweaver's Downfall (10 player)
 						ach(1874),	-- You Don't Have an Eternity (10 player)
@@ -75,7 +75,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						ach(1870),	-- A Poke in the Eye (25 player)
 						ach(2149),	-- Denyin' the Scion (25 player)
 						ach(1658, {	-- Champion of the Frozen Wastes: Malygos
-							["criteriaID"] = 3,	-- Malygos (10 or 25 player) slain
+							["criteriaID"] = 5890,	-- Malygos (10 or 25 player) slain
 						}),
 						ach(623),	-- The Spellweaver's Downfall (25 player)
 						ach(1875),	-- You Don't Have an Eternity (25 player)

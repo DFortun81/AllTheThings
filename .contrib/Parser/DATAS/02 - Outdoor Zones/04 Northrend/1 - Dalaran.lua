@@ -4750,7 +4750,7 @@ root("Zones", {
 				}),
 				n(REWARDS, {
 					i(46007, {	-- Bag of Fishing Treasures
-						["provider"] = { "i", 28742 },	-- Marcia Chase
+						["provider"] = { "n", 28742 },	-- Marcia Chase
 						["description"] = "Fishing Daily Quest Reward",
 						["sourceQuests"] = {
 							-- #if BEFORE CATA
