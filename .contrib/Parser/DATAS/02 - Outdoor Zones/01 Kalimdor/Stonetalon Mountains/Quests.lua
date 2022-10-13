@@ -699,7 +699,6 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 71.0, 91.2, STONETALON_MOUNTAINS },
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
-				["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
 			}),
 			q(1085, {	-- On Guard in Stonetalon
 				["u"] = REMOVED_FROM_GAME,

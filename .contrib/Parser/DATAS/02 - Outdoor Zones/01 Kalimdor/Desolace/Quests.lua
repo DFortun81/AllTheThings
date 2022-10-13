@@ -507,7 +507,10 @@ _.Zones =
 					["coord"] = { 54.7, 8.7, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["sourceQuest"] = 28548,	-- Warchief's Command: Desolace!
+					["sourceQuests"] = {
+						28548,	-- Warchief's Command: Desolace!
+						26134,	-- Nothing Left for You Here
+					},
 				}),
 				q(14327, {	-- My Word is My Bond
 					["provider"] = { "n", 36163 },	-- Khan Kammah

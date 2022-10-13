@@ -12,21 +12,21 @@ _.Zones =
 				["g"] = {
 					n(QUESTS, {
 						q(31834, {	-- Begin Your Training: Master Cheng - Monk Only
-							i(89551),
-							i(89553),
+							i(89551),	-- Aspirant's Staff of Harmony
+							i(89553),	-- Aspirant's Staff of Grace
 						}),
 						q(31837, {	-- Continue Your Training: Master Cheng
-							i(89564),
-							i(89565),
+							i(89564),	-- Red Belt of Gentle Persuasion
+							i(89565),	-- Red Belt of Unspoken Warning
 						}),
 						q(31839, {	-- Continue Your Training: Master Hsu
-							i(89606),
-							i(89576),
-							i(89577),
+							i(89606),	-- Bladed Staff of the Echoing Gong
+							i(89576),	-- Bladed sTaff of the Frozen Mountain
+							i(89577),	-- Bladed STaff of the Summit's Breeze
 						}),
 						q(31835, {	-- Continue Your Training: Master Kistane
-							i(89561),
-							i(89562),
+							i(89562),	-- Green Belt of Hushed Wisdom
+							i(89561),	-- Green Belt of Quiet Understanding
 						}),
 						q(31838, {	-- Continue Your Training: Master Tsang
 							i(89567),

@@ -986,10 +986,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "i", 187527 },	-- Aeon Matrix
 			}),
 			q(64860, {	-- Aetheric Lattice
-				["sourceQuests"] = {
-					64579,	-- Hallow Efforts
-					64717	-- Materials of Creation
-				},
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "i", 187788 },	-- Aetheric Lattice
 			}),
 			q(65265, {	-- Buried Remnants
