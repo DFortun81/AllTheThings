@@ -198,7 +198,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							ach(14502),	-- Pursuing Loyalty
 							ach(14852),	-- The Hoot of the Issue
 							ach(14887, {	-- To the Moon
-								["description"] = "Requires the Path of Ascension building. Some people needed 50+ tries for this achievement, others needed 500+. There is no guaranteed way known. You need to /wave at Athanos while he knocks you off with any ability.",
+								["description"] = "You need to |cffffffff/wave|r at Athanos after he 'waves goodbye to you' while you are falling off the edge.\n\nAllowing 'Massive Charge' to hit, pick up, and drop you over the edge is very consistent for getting him to wave since he doesn't use another ability immediately afterwards.",
 							}),
 						}),
 						prof(ASCENSION_CRAFTING, {
