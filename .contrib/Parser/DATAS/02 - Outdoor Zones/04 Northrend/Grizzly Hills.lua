@@ -218,6 +218,16 @@ root("Zones", {
 					exploration(4209),	-- Zeb'Halak
 				}),
 				-- #endif
+				prof(FISHING, {
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5282,	-- Glacial Salmon School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5284,	-- Imperial Manta Ray School
+						["requireSkill"] = FISHING,
+					}),
+				}),
 				n(FLIGHT_PATHS, {
 					fp(253, {	-- Amberpine Lodge
 						["cr"] = 26880,	-- Vana Grey <Gryphon Master>

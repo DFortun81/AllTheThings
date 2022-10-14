@@ -300,6 +300,34 @@ root("Zones", {
 					exploration(3982),	-- Wyrmskull Village
 				}),
 				-- #endif
+				prof(FISHING, {
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5279,	-- Deep Sea Monsterbelly School
+						["requireSkill"] = FISHING,
+					}),
+					o(192049, {	-- Fangtooth Herring School
+						["model"] = 219405,
+						["groups"] = {
+							ach(1517, {	-- Northrend Angler
+								["criteriaID"] = 5281,	-- Fangtooth Herring School
+								["requireSkill"] = FISHING,
+							}),
+							i(44703, {	-- Dark Herring
+								-- #if AFTER TRANSMOG
+								["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+								-- #endif
+							}),
+						},
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5284,	-- Imperial Manta Ray School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5285,	-- Moonglow Cuttlefish School
+						["requireSkill"] = FISHING,
+					}),
+				}),
 				n(FLIGHT_PATHS, {
 					fp(248, {	-- Apothecary Camp
 						["cr"] = 26844,	-- Lilleth Radescu <Bat Handler>
@@ -341,18 +369,10 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
+				
 				n(PROFESSIONS, {
 					prof(FISHING, {
-						o(192049, {	-- Fangtooth Herring School
-							["model"] = 219405,
-							["groups"] = {
-								i(44703, {	-- Dark Herring
-									-- #if AFTER TRANSMOG
-									["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-									-- #endif
-								}),
-							},
-						}),
+						
 					}),
 				}),
 				n(QUESTS, {

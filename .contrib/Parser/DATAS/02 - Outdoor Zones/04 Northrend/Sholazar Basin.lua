@@ -297,6 +297,10 @@ root("Zones", {
 					}),
 				}),
 				prof(FISHING, {
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5287,	-- Nettlefish School
+						["requireSkill"] = FISHING,
+					}),
 					i(45902, {	-- Phantom Ghostfish
 						["description"] = "Eat this before it despawns!",
 					}),

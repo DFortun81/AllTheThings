@@ -52,6 +52,12 @@ root("Zones", {
 					exploration(4559),	-- Windrunner's Overlook
 				}),
 				-- #endif
+				prof(FISHING, {
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5283,	-- Glassfin Minnow School
+						["requireSkill"] = FISHING,
+					}),
+				}),
 				n(FLIGHT_PATHS, {
 					fp(337, {	-- Sunreaver's Command
 						["cr"] = 30269,	-- Skymaster Baeric <Dragonhawk Master>

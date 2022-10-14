@@ -274,6 +274,26 @@ root("Zones", {
 					i(45905, {	-- Bloodtooth Frenzy
 						["description"] = "Kill an animal and then swim in a body of water to create a pool to fish from.",
 					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5278,	-- Borean Man O' War School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5279,	-- Deep Sea Monsterbelly School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5284,	-- Imperial Manta Ray School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5285,	-- Moonglow Cuttlefish School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5286,	-- Musselback Sculpin School
+						["requireSkill"] = FISHING,
+					}),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(289, {	-- Amber Ledge, Borean Tundra
