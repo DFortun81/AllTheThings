@@ -4764,6 +4764,12 @@ root("Zones", {
 						},
 						["requireSkill"] = FISHING,
 						["groups"] = {
+							i(45991, {	-- Bone Fishing Pole
+								["timeline"] = { "added 3.1.0.9658" },
+							}),
+							i(45992, {	-- Jeweled Fishing Pole
+								["timeline"] = { "added 3.1.0.9658" },
+							}),
 							i(46004, {	-- Sealed Vial of Poison
 								-- #if ANYCLASSIC
 								["description"] = "Provides a nice source of XP. You can buy and sell this on the AH!",
