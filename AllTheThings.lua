@@ -24497,9 +24497,8 @@ end
 -- Seems to be some sort of hidden tracking for HQTs and other sorts of things...
 app.events.CRITERIA_UPDATE = function(...)
 	-- print("CRITERIA_UPDATE",...)
-	-- sometimes triggers many times at once but refresh quest info is a 1 sec callback threshold
+	-- sometimes triggers many times at once but RefreshQuestInfo unhooks CRITERIA_UPDATE until quest refresh completes
 	app.RefreshQuestInfo();
-	app:RefreshWindows();
 end
 app.events.QUEST_TURNED_IN = function(questID)
 	-- print("QUEST_TURNED_IN")
