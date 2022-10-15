@@ -218,6 +218,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(3180),	-- Firefighter (10 player)
 						ach(2982),	-- Getting Back to Nature (10 player)
 						ach(2967),	-- Getting Cold in Here (10 player)
+						ach(3004, {	-- He Feeds On Your Tears (10 player)
+							["timeline"] = { "removed 4.0.3" },
+						}),
 						ach(3012),	-- He's Not Getting Any Older (10 player)
 						ach(3058),	-- Heartbreaker (10 player)
 						ach(2927),	-- Hot Pocket (10 player)
@@ -327,6 +330,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(3189),	-- Firefighter (25 player)
 						ach(2983),	-- Getting Back to Nature (25 player)
 						ach(2968),	-- Getting Cold in Here (25 player)
+						ach(3005, {	-- He Feeds On Your Tears (25 player)
+							["timeline"] = { "removed 4.0.3" },
+						}),
 						ach(3013),	-- He's Not Getting Any Older (25 player)
 						ach(3059),	-- Heartbreaker (25 player)
 						ach(2928),	-- Hot Pocket (25 player)
@@ -429,6 +435,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(3189),	-- Firefighter (25 player)
 						ach(2983),	-- Getting Back to Nature (25 player)
 						ach(2968),	-- Getting Cold in Here (25 player)
+						ach(3005, {	-- He Feeds On Your Tears (25 player)
+							["timeline"] = { "removed 4.0.3" },
+						}),
 						ach(3013),	-- He's Not Getting Any Older (25 player)
 						ach(3059),	-- Heartbreaker (25 player)
 						ach(2928),	-- Hot Pocket (25 player)

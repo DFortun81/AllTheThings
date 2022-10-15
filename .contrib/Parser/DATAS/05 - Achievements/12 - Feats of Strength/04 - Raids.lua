@@ -63,8 +63,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(6181, {	-- Fangs of the Father
 			["classes"] = { ROGUE },
 		}),
-		un(REMOVED_FROM_GAME, ach(3004)),	-- He Feeds On Your Tears (10 player)
-		un(REMOVED_FROM_GAME, ach(3005)),	-- He Feeds On Your Tears (25 player)
 		un(REMOVED_FROM_GAME, ach(5313)),	-- I Can't Hear You Over the Sound of How Awesome I Am
 		un(REMOVED_FROM_GAME, ach(8089)),	-- I Thought He Was Supposed to Be Hard?
 		ach(11869, {	-- I'll Hold These For You Until You Get Out

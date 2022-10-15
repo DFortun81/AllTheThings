@@ -86,18 +86,10 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			crit(13),		-- Snapclaw
 			crit(14),		-- Piranha!
 		}),
-		ach(1517,  {	-- Northrend Angler
-			crit(1),		-- Borean Man O' War School
-			crit(2),		-- Deep Sea Monsterbelly School
-			crit(3),		-- Dragonfin Angelfish School
-			crit(4),		-- Fangtooth Herring School
-			crit(5),		-- Glacial Salmon School
-			crit(6),		-- Glassfin Minnow School
-			crit(7),		-- Imperial Manta Ray School
-			crit(8),		-- Moonglow Cuttlefish School
-			crit(9),		-- Musselback Sculpin School
-			crit(10),		-- Nettlefish School
-		}),
+		applyclassicphase(WRATH_PHASE_ONE, ach(1517, {	-- Northrend Angler
+			["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, HOWLING_FJORD, GRIZZLY_HILLS, CRYSTALSONG_FOREST, SHOLAZAR_BASIN },
+			["requireSkill"] = FISHING,
+		})),
 		ach(130),		-- Northrend Fisherman
 		ach(878),		-- One That Didn't Get Away
 		ach(1225, {	-- Outland Angler
