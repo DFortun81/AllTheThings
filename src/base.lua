@@ -19,8 +19,8 @@ end
 app.PrintDebugPrior = function(...)
 	if app.DEBUG_PRINT then
 		if app.DEBUG_PRINT_LAST then
-			local frames = math.ceil((GetTimePreciseSec() - app.DEBUG_PRINT_LAST) / 0.000166666) / 100;
-			print("@60",frames,...)
+			local frames = math.ceil(1 / (GetTimePreciseSec() - app.DEBUG_PRINT_LAST));
+			print("Stutter @",frames,...)
 		else
 			print(0,...)
 		end
@@ -66,7 +66,9 @@ local events = {};
 local _ = CreateFrame("FRAME", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
 _:SetScript("OnEvent", function(self, e, ...)
 -- app.PrintDebug(e,...);
-(rawget(events, e) or print)(...); end);
+(rawget(events, e) or print)(...);
+-- app.PrintDebugPrior(e);
+end);
 _:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
 _:SetSize(1, 1);
 _:Show();
