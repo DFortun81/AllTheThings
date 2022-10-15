@@ -194,13 +194,10 @@ root("Zones", {
 						["cr"] = 30433,	-- Aedan Moran <Flight Master>
 						["coord"] = { 87.8, 78.0, ICECROWN },
 					}),
-					applyclassicphase(WRATH_PHASE_THREE, fp(333, {	-- The Shadow Vault
+					fp(333, {	-- The Shadow Vault
 						["cr"] = 30314,	-- Morlia Doomwing <Flight Master>
 						["coord"] = { 43.6, 24.4, ICECROWN },
-						-- #if ANYCLASSIC
-						["description"] = "This flight path is currently broken and has no connected pathways.",
-						-- #endif
-					})),
+					}),
 				}),
 				n(QUESTS, {
 					q(13286, {	-- ...All the Help We Can Get.
