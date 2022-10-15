@@ -47,3 +47,6 @@ title(480),	-- %s, Knight of Feathersworth
 10.0.2.45969
 title(481),	-- %s the Elite Evoker
 title(482),	-- Crimson Soloist %s
+10.0.2.46091
+title(483),	-- %s, Paragon of the Obsidian Brood
+title(484),	-- %s, Agent of the Black Prince

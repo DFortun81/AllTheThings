@@ -616,13 +616,11 @@ p(3269),	-- Azure Frillfish \\ [PH] Blue Frillfish
 p(3270),	-- Jean's Lucky Fish
 p(3274),	-- Alvin the Anvil
 p(3275),	-- Chestnut \\ [PH] Chestnut Flying Squirrel
-p(3276),	-- Treeflitter \\ [PH] Dark Chocolate Flying Squirrel
 p(3277),	-- Time-Lost Treeflitter \\ [PH] Gold Flying Squirrel
 p(3278),	-- Pistachio \\ [PH] Pistachio Flying Squirrel
 p(3279),	-- Bronze Racing Enthusiast \\ Bronze Race Enthusiast \\ [PH] Silver Flying Squirrel
 p(3280),	-- Shyfly \\ Dragonshy \\ [PH] Walnut Flying Squirrel
 p(3281),	-- Scruffy Ottuk
-p(3282),	-- Swoglet
 p(3283),	-- Snowlemental
 p(3284),	-- Whiskuk \\ [PH] Purple Baby Ottuk
 p(3285),	-- Scarlet Ottuk Pup \\ [PH] Red Baby Ottuk
@@ -636,11 +634,9 @@ p(3292),	-- Phoenix Wishwing \\ Smoldering Phoenix Hatchling \\ [PH] Orange Baby
 p(3293),	-- Crimson Phoenix Hatchling \\ [PH] Red Baby Phoenix
 p(3294),	-- Time-Lost Phoenix Hatchling \\ [PH] Yellow Baby Phoenix
 p(3295),	-- Igneoid
-p(3296),	-- Palamanther
 p(3297),	-- Time-Lost Salamanther \\ [PH] Orange Baby Salamanther
 p(3298),	-- Pink Salamanther \\ [PH] Pink Baby Water Salamanther
 p(3299),	-- Echo of the Depths \\ Purple Baby Salamanther \\ [PH] Purple Baby Salamanther
-p(3300),	-- Ironbeak Duck
 p(3301),	-- Wild Duckling
 p(3306),	-- Quack-E \\ [PH] Mech Baby Duck
 p(3307),	-- Plucky Duckling \\ [PH] White Baby Duck
@@ -651,7 +647,6 @@ p(3311),	-- Ohuna Companion \\ White Duck \\ [PH] White Duck
 p(3312),	-- Time-Lost Duck \\ [PH] Yellow Duck
 p(3313),	-- Grassland Stomper \\ Armoredon Calf \\ [PH] Black Baby Thunder Lizard
 p(3314),	-- Groundshaker \\ [PH] Blue Baby Thunder Lizard
-p(3316),	-- Lubbins \\ [PH] Brown Baby Thunder Lizard
 p(3317),	-- Hoofhelper \\ [PH] Green Baby Thunder Lizard
 p(3318),	-- Thunderfoot Calf \\ [PH] Light Baby Thunder Lizard
 p(3320),	-- Whitewhisker \\ [PH] White Baby Slyvern
@@ -684,7 +679,6 @@ p(3348),	-- Primal Stormling \\ [PH] Black Gem Dragon Whelp
 p(3350),	-- Lord Basilton
 p(3351),	-- Grizzlefur Cub \\ Grizzlefur Cub \\ Grizzlefury Cub \\ Grizzlefury Cub \\ [PH] Black Primal Bear Cub
 p(3352),	-- Razortooth Bear Cub \\ [PH] Red Primal Bear Cub
-p(3353),	-- Stoneshell \\ [PH] Black Baby Turtle
 p(3354),	-- Storm-Touched Ottuk \\ Green Baby Turtle \\ [PH]Green Baby Turtle
 p(3355),	-- Echo of the Cave \\ Orange Baby Turtle \\ [PH] Orange Baby Turtle
 p(3356),	-- Chalkshell Turtle \\ [PH] White Baby Turtle

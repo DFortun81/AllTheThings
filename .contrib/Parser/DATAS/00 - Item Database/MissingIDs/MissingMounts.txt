@@ -178,6 +178,8 @@ mount(394737),	-- Vicious Sabertooth
 mount(394738),	-- Vicious Sabertooth
 10.0.2.45969
 mount(387231),	-- Hailstorm Armoredon
+10.0.2.46091
+mount(395644),	-- Divine Kiss of Ohn'ahra
 
 
 
@@ -282,3 +284,5 @@ mount(276112),	-- Darkforge Ram
 mount(363608),	-- Lightforged Ruinstrider
 9.2.5.43022
 mount(370770),	-- Tuskarr Shoreglider
+10.0.2.46091
+mount(395644),	-- Divine Kiss of Ohn'ahra

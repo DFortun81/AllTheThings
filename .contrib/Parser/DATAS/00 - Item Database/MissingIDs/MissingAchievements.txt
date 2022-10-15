@@ -3119,7 +3119,7 @@ ach(16095),	-- Chrono-Lord Deios kills (Normal Uldaman: Legacy of Tyr)
 ach(16096),	-- Chrono-Lord Deios kills (Heroic Uldaman: Legacy of Tyr)
 ach(16097),	-- Chrono-Lord Deios kills (Mythic Uldaman: Legacy of Tyr)
 ach(16099),	-- Dragon Glyphs: Stormshroud Peak
-ach(16107),	-- Dragon Glyphs: Thaldrazsus Apex
+ach(16107),	-- Dragon Glyphs: Thaldraszus Apex \\ Dragon Glyphs: Thaldrazsus Apex
 ach(16109),	-- Dragon Isles Leatherworking 100 (DNT)
 ach(16110),	-- Subscribed to Hyena Facts
 10.0.0.44895
@@ -3286,7 +3286,6 @@ ach(16334),	-- Waking Hope
 ach(16335),	-- What Frozen Things Do
 ach(16336),	-- Azure Spanner
 ach(16337),	-- It's a Trogg Eat Trogg World
-ach(16338),	-- Fang Flap Fire Fighter
 ach(16339),	-- Myths of the Dragonflight Dungeons
 ach(16343),	-- Vault of the Incarnates
 ach(16345),	-- Heroic: Vault of the Incarnates
@@ -3415,7 +3414,7 @@ ach(16489),	-- Chasing Storms in Thaldraszus
 ach(16490),	-- Storm Chaser
 ach(16492),	-- Into the Storm
 ach(16493),	-- Grand Theft Mammoth
-ach(16494),	-- Backing the Throne
+ach(16494),	-- Loyalty to the Prince \\ Backing the Throne
 ach(16495),	-- Obsidian Keymaster
 ach(16496),	-- Obsidian Champion
 ach(16497),	-- I'm Playing All Sides \\ I'm Playing Both Sides
@@ -3435,7 +3434,7 @@ ach(16510),	-- Mechanical Battler of the Dragon Isles
 ach(16511),	-- Undead Battler of the Dragon Isles
 ach(16512),	-- Family Battler of the Dragon Isles
 ach(16517),	-- Toxicity Strike Team
-ach(16518),	-- Explore Thaldrazsus
+ach(16518),	-- Explore Thaldraszus \\ Explore Thaldrazsus
 ach(16519),	-- Dragon Isles Safari
 ach(16520),	-- 10.0 Dragonflight - Expansion Quest Launch (Meet Wrathion/Ebyssian) \\ 10.0 Dragonflight - Expansion Quest Launch
 ach(16522),	-- A True Explorer
@@ -3541,13 +3540,6 @@ ach(16662),	-- Dragon Isles Blacksmithing 75 (DNT)
 ach(16663),	-- Dragon Isles Tailoring 75 (DNT)
 ach(16664),	-- Dragon Isles Jewelcrafting 75 (DNT)
 ach(16665),	-- Dragon Isles Engineering 75 (DNT)
-ach(16666),	-- Dragon Glyphs: Gelikyr Overlook
-ach(16667),	-- Dragon Glyphs: Passage of Time
-ach(16668),	-- Dragon Glyphs: Skytop Observatory Rostrum
-ach(16669),	-- Dragon Glyphs: Flashfrost Enclave
-ach(16671),	-- Dragon Glyphs: Mirewood Fen
-ach(16672),	-- Dragon Glyphs: Forkriver Crossing
-ach(16673),	-- Dragon Glyphs: The Fallen Course
 ach(16676),	-- Adventurer of The Waking Shores
 ach(16677),	-- Adventurer of the Ohn'ahran Plains
 ach(16678),	-- Adventurer of The Azure Span
@@ -3572,3 +3564,19 @@ ach(16731),	-- Court is Now in Session
 10.0.2.45969
 ach(16734),	-- Crimson Soloist: Dragonflight Season 1
 ach(16736),	-- Grand Theft Mammoth
+10.0.2.46091
+ach(16745),	-- Total Crafting Orders Fulfilled
+ach(16746),	-- Public Crafting Orders Fulfilled
+ach(16747),	-- Guild Crafting Orders Fulfilled
+ach(16748),	-- Private Crafting Orders Fulfilled
+ach(16749),	-- Alchemy Crafting Orders Fulfilled
+ach(16750),	-- Blacksmithing Crafting Orders Fulfilled
+ach(16751),	-- Enchanting Crafting Orders Fulfilled
+ach(16752),	-- Engineering Crafting Orders Fulfilled
+ach(16753),	-- Inscription Crafting Orders Fulfilled
+ach(16754),	-- Jewelcrafting Crafting Orders Fulfilled
+ach(16755),	-- Leatherworking Crafting Orders Fulfilled
+ach(16756),	-- Tailoring Crafting Orders Fulfilled
+ach(16758),	-- Ready, Aim, Catalog!
+ach(16759),	-- <Hidden> Adventure Mode - Reached Dragon Isles
+ach(16760),	-- The Obsidian Bloodline
