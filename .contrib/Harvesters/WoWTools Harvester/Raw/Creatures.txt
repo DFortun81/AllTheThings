@@ -19182,3 +19182,6 @@
 198957,Alliance Footsoldier
 198958,Horde Footsoldier
 198977,[DNT] Spell Bunny
+10.0.2.46091
+199171,Hornswog Chorus Sound Stalker A
+199172,Hornswog Chorus Sound Stalker B

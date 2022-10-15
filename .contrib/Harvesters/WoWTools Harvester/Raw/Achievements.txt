@@ -10835,3 +10835,23 @@
 16429,Thundering Hero: Dragonflight Season 1
 16734,Crimson Soloist: Dragonflight Season 1
 16736,Grand Theft Mammoth
+10.0.2.46091
+16065,Dragon Glyphs: Azure Archives
+16107,Dragon Glyphs: Thaldraszus Apex
+16494,Loyalty to the Prince
+16518,Explore Thaldraszus
+16745,Total Crafting Orders Fulfilled
+16746,Public Crafting Orders Fulfilled
+16747,Guild Crafting Orders Fulfilled
+16748,Private Crafting Orders Fulfilled
+16749,Alchemy Crafting Orders Fulfilled
+16750,Blacksmithing Crafting Orders Fulfilled
+16751,Enchanting Crafting Orders Fulfilled
+16752,Engineering Crafting Orders Fulfilled
+16753,Inscription Crafting Orders Fulfilled
+16754,Jewelcrafting Crafting Orders Fulfilled
+16755,Leatherworking Crafting Orders Fulfilled
+16756,Tailoring Crafting Orders Fulfilled
+16758,Ready, Aim, Catalog!
+16759,<Hidden> Adventure Mode - Reached Dragon Isles
+16760,The Obsidian Bloodline

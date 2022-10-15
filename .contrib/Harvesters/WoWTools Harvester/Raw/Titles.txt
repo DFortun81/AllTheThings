@@ -596,3 +596,6 @@
 477,%s the Thundering
 481,%s the Elite Evoker
 482,Crimson Soloist %s
+10.0.2.46091
+483,%s, Paragon of the Obsidian Brood
+484,%s, Agent of the Black Prince
