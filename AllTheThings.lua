@@ -2581,13 +2581,12 @@ local PrintQuestInfo = function(questID, new, info)
 		print("Quest",questChange,chatMsg,(info or ""));
 	end
 end
-local DirtyQuests = {};
+local DirtyQuests, TotalQuests = {}, 0;
 local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	key = tonumber(key);
-	local total = rawget(t, "_TOTAL") or 0;
 	if value then
 		if not rawget(t, key) then
-			rawset(t, "_TOTAL", total + 1);
+			TotalQuests = TotalQuests + 1;
 		end
 		rawset(t, key, value);
 		rawset(DirtyQuests, key, true);
@@ -2596,7 +2595,7 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		app.CurrentCharacter.Quests[key] = 1;
 		PrintQuestInfo(key);
 	elseif value == false then
-		rawset(t, "_TOTAL", total - 1);
+		TotalQuests = TotalQuests - 1;
 		rawset(DirtyQuests, key, true);
 		rawset(DirtyQuests, "DIRTY", true);
 		-- no need to actually set the key in the table since it's been marked as incomplete
@@ -8843,43 +8842,44 @@ app.ShowIfReplayableQuest = function(data)
 	data.visible = C_QuestLog_IsQuestReplayable(data.questID) or app.CollectedItemVisibilityFilter(data);
 	return true;
 end
-local UpdateQuestIDs = {};
+local UpdateQuestIDs, CompletedKeys = {}, {};
 local function QueryCompletedQuests()
 	local freshCompletes = C_QuestLog_GetAllCompletedQuestIDs();
 	-- sometimes Blizz pretends that 0 Quests are completed. How silly of them!
 	if not freshCompletes or #freshCompletes == 0 then
 		return;
 	end
-	local t = CompletedQuests;
-	-- print("total completed quests new/previous",#freshCompletes,rawget(t, "_TOTAL") or 0)
+	-- print("total completed quests new/previous",#freshCompletes,TotalQuests)
 	local oldReportSetting = app.Settings:GetTooltipSetting("Report:CompletedQuests");
 	-- check if Blizzard is being dumb / should we print a summary instead of individual lines
-	local questDiff = #freshCompletes - (rawget(t, "_TOTAL") or 0);
-	if app.IsReady then
-		if oldReportSetting and questDiff > 50 then
+	local questDiff = #freshCompletes - TotalQuests;
+	local manyQuests;
+	if app.IsReady and oldReportSetting then
+		if questDiff > 50 then
+			manyQuests = true;
 			print(questDiff,"Quests Completed");
-		elseif oldReportSetting and questDiff < -50 then
+		elseif questDiff < -50 then
+			manyQuests = true;
 			print(questDiff,"Quests Unflagged");
 		end
 	end
-	questDiff = math.abs(questDiff);
-	if questDiff > 50 then
+	if manyQuests then
 		app.Settings:SetTooltipSetting("Report:CompletedQuests", false);
 	end
-	local completedKeys = {};
+	wipe(CompletedKeys);
 	-- allow individual prints
 	for _,v in ipairs(freshCompletes) do
-		t[v] = true;
-		completedKeys[v] = true;
+		CompletedQuests[v] = true;
+		CompletedKeys[v] = true;
 	end
 	-- check for 'unflagged' questIDs (this seems to basically not impact lag at all... i hope)
-	for q,_ in pairs(t) do
-		if not completedKeys[q] and q ~= "_TOTAL" then
-			t[q] = nil;		-- delete the key
-			t[q] = false;	-- trigger the metatable function
+	for q,_ in pairs(CompletedQuests) do
+		if not CompletedKeys[q] then
+			CompletedQuests[q] = nil;	-- delete the key
+			CompletedQuests[q] = false;	-- trigger the metatable function
 		end
 	end
-	if questDiff > 50 then
+	if manyQuests then
 		app.Settings:SetTooltipSetting("Report:CompletedQuests", oldReportSetting);
 	end
 end
