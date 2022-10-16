@@ -12,7 +12,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				}),
 			}),
 			ach(14688, {	-- Duelist: Shadowlands Season 1
-				illusion(6266),	-- Sinful Flame					
+				illusion(6266),	-- Sinful Flame
 				i(180424),	-- Sinful Gladiator's Prestigious Cloak
 			}),
 			ach(14691, {	-- Elite: Shadowlands Season 1
