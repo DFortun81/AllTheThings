@@ -5,7 +5,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FIVE, {
 	inst(761, {	-- The Ruby Sanctum
 		["mapID"] = THE_RUBY_SANCTUM,
 		["coord"] = { 61.2, 52.7, DRAGONBLIGHT },
+		-- #if AFTER CATA
 		["sharedLockout"] = 1,
+		-- #endif
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["groups"] = {

@@ -6,7 +6,9 @@ root("Instances", tier(WOTLK_TIER, {
 		["mapID"] = NAXXRAMAS,
 		["maps"] = { 163, 164, 165, 166, 167 },
 		["coord"] = { 87.4, 51.1, DRAGONBLIGHT },
+		-- #if AFTER CATA
 		["sharedLockout"] = 1,
+		-- #endif
 		["isRaid"] = true,
 		["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
 			d(3, {	-- 10-Man

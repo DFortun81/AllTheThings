@@ -5,7 +5,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(753, {	-- Vault of Archavon
 		["mapID"] = VAULT_OF_ARCHAVON,
 		["coord"] = { 50.0, 11.9, WINTERGRASP },
+		-- #if AFTER CATA
 		["sharedLockout"] = 1,
+		-- #endif
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["groups"] = {

@@ -6,7 +6,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 		["mapID"] = ICECROWN_CITADEL,
 		["maps"] = { 187, 188, 189, 190, 191, 192, 193, 699, 1359 },	-- 1359 may be a specific scenario map - it was reported as missing in early 2019, but i couldn't find context for it
 		["coord"] = { 53.7, 87.0, ICECROWN },
+		-- #if AFTER CATA
 		["sharedLockout"] = 1,
+		-- #endif
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["groups"] = {

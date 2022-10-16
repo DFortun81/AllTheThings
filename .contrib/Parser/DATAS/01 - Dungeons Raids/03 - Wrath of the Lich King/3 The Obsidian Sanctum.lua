@@ -5,7 +5,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(755, {	-- The Obsidian Sanctum
 		["mapID"] = THE_OBSIDIAN_SANCTUM,
 		["coord"] = { 60.0, 56.7, DRAGONBLIGHT },
+		-- #if AFTER CATA
 		["sharedLockout"] = 1,
+		-- #endif
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["groups"] = {

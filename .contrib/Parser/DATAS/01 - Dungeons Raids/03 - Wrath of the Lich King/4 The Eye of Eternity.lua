@@ -5,7 +5,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(756, {	-- The Eye of Eternity
 		["mapID"] = THE_EYE_OF_ETERNITY,
 		["coord"] = { 27.5, 26.6, BOREAN_TUNDRA },	-- The Eye of Eternity (Coldarra)
+		-- #if AFTER CATA
 		["sharedLockout"] = 1,
+		-- #endif
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["groups"] = {

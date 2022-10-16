@@ -12,6 +12,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 		["mapID"] = ULDUAR,
 		["maps"] = { 148, 149, 150, 151, 152 },
 		["coord"] = { 41.5, 17.9, THE_STORM_PEAKS },
+		-- #if AFTER CATA
+		["sharedLockout"] = 1,
+		-- #endif
 		["isRaid"] = true,
 		["lvl"] = lvlsquish(80, 80, 30),
 		["groups"] = {
