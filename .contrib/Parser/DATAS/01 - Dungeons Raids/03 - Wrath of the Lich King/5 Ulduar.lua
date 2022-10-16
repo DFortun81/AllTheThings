@@ -122,6 +122,22 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						}),
 					},
 				}),
+				ach(12312, {	-- Dwarfageddon
+					["timeline"] = { "added 7.3.5.25727" },
+					["crs"] = {
+						33236,	-- Steelforged Defender
+						33572,	-- Steelforged Defender
+					},
+				}),
+				ach(12360, {	-- Lumberjacked
+					["description"] = "Must be killed before killing Freya or they will despawn.",
+					["timeline"] = { "added 7.3.5.25727" },
+					["providers"] = {
+						{ "n", 32915 },	-- Elder Brightleaf
+						{ "n", 32913 },	-- Elder Ironbranch
+						{ "n", 32914 },	-- Elder Stonebark
+					},
+				}),
 			}),
 			n(LEGENDARY_QUESTLINE, {
 				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
@@ -315,22 +331,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						},{
 							title(127),	-- , Champion of Ulduar
 						})),
-						ach(3097, {	-- Dwarfageddon (10 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
-							["crs"] = {
-								33236,	-- Steelforged Defender
-								33572,	-- Steelforged Defender
-							},
-						}),
-						ach(2979, {	-- Lumberjacked (10 player)
-							["providers"] = {
-								{ "n", 32915 },	-- Elder Brightleaf
-								{ "n", 32913 },	-- Elder Ironbranch
-								{ "n", 32914 },	-- Elder Stonebark
-							},
-							["description"] = "Must be killed before killing Freya or they will despawn.",
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
-						}),
 						ach(2894, {	-- The Secrets of Ulduar (10 player)
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 							-- Meta Achievement
@@ -400,8 +400,46 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								}),
 							},
 						}),
+						ach(3097, {	-- Dwarfageddon (10 player)
+							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["crs"] = {
+								33236,	-- Steelforged Defender
+								33572,	-- Steelforged Defender
+							},
+						}),
+						ach(2979, {	-- Lumberjacked (10 player)
+							["providers"] = {
+								{ "n", 32915 },	-- Elder Brightleaf
+								{ "n", 32913 },	-- Elder Ironbranch
+								{ "n", 32914 },	-- Elder Stonebark
+							},
+							["description"] = "Must be killed before killing Freya or they will despawn.",
+							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+						}),
 					}),
 					n(QUESTS, {
+						q(13614, {	-- Algalon
+							["qg"] = 33957,	-- Prospector Loren
+							["providers"] = {
+								{ "n", 33957 },	-- Prospector Loren
+								{ "i", 45791 },	-- Sigils of the Watchers
+							},
+							["sourceQuests"] = {
+								13606,	-- Freya's Sigil
+								13609,	-- Hodir's Sigil
+								13611,	-- Mimiron's Sigil
+								13610,	-- Thorim's Sigil
+							},
+							["timeline"] = { "removed 7.3.5.25600" },
+							["groups"] = {
+								i(45796, {	-- Celestial Planetarium Key
+									["timeline"] = { "removed 4.2.0" },
+								}),
+								i(45875, {	-- Sack of Ulduar Spoils
+									["sym"] = { { "select", "itemID", 45087 } },	-- Runed Orb
+								}),
+							},
+						}),
 						q(13631, {	-- All Is Well That Ends Well
 							["providers"] = {
 								{ "i", 46052 },	-- Reply-Code Alpha
@@ -415,6 +453,71 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								i(46323),	-- Starshine Signet
 							},
 						}),
+						q(13604, {	-- Archivum Data Disc
+							["provider"] = { "i", 45506 },	-- Archivum Data Disc
+						}),
+						q(13606, {	-- Freya's Sigil
+							["qg"] = 33957,	-- Prospector Loren
+							["sourceQuest"] = 13607,	-- The Celestial Planetarium
+							["timeline"] = { "removed 7.3.5.25600" },
+							["groups"] = {
+								objective(1, {	-- 0/1 Freya's Sigil
+									["provider"] = { "i", 45788 },	-- Freya's Sigil
+									["cr"] = 32906,	-- Freya
+								}),
+							},
+						}),
+						q(13609, {	-- Hodir's Sigil
+							["qg"] = 33957,	-- Prospector Loren
+							["sourceQuest"] = 13607,	-- The Celestial Planetarium
+							["timeline"] = { "removed 7.3.5.25600" },
+							["groups"] = {
+								objective(1, {	-- 0/1 Hodir's Sigil
+									["provider"] = { "i", 45786 },	-- Hodir's Sigil
+									["cr"] = 32845,	-- Hodir
+								}),
+							},
+						}),
+						q(13611, {	-- Mimiron's Sigil
+							["qg"] = 33957,	-- Prospector Loren
+							["sourceQuest"] = 13607,	-- The Celestial Planetarium
+							["timeline"] = { "removed 7.3.5.25600" },
+							["groups"] = {
+								objective(1, {	-- 0/1 Mimiron's Sigil
+									["provider"] = { "i", 45787 },	-- Mimiron's Sigil
+									["cr"] = 33350,	-- Mimiron
+								}),
+							},
+						}),
+						q(13607, {	-- The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
+							["sourceQuest"] = 13604,	-- Archivum Data Disc
+							["timeline"] = { "removed 7.3.5.25600" },
+						}),
+						q(13610, {	-- Thorim's Sigil
+							["qg"] = 33957,	-- Prospector Loren
+							["sourceQuest"] = 13607,	-- The Celestial Planetarium
+							["timeline"] = { "removed 7.3.5.25600" },
+							["groups"] = {
+								objective(1, {	-- 0/1 Thorim's Sigil
+									["provider"] = { "i", 45784 },	-- Thorim's Sigil
+									["cr"] = 32865,	-- Thorim
+								}),
+							},
+						}),
+					}),
+					n(ZONE_DROPS, {
+						i(46351),	-- Bloodcrush Cudgel
+						i(46350),	-- Pillar of Fortitude
+						i(46342),	-- Golemheart Longbow
+						i(46339),	-- Mimiron's Repeater
+						i(46343),	-- Fervor of the Protectorate
+						i(46344),	-- Iceshear Mantle
+						i(46341),	-- Drape of the Spellweaver
+						i(46347),	-- Cloak of the Dormant Blaze
+						i(46345),	-- Bracers of Righteous Reformation
+						i(46340),	-- Adamant Handguards
+						i(46346),	-- Boots of Unsettled Prey
 					}),
 					e(1637, {	-- Flame Leviathan
 						["creatureID"] = 33113,	-- Flame Leviathan
@@ -461,33 +564,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(142086, {	-- Red-Hot Coal (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(45171),	-- Intensity
 							i(45311),	-- Relentless Edge
-							i(45165),	-- Worldcarver
 							i(45309),	-- Rifle of the Platinum Guard
-							i(45170),	-- Scepter of Creation
 							i(45314),	-- Igniter Rod
-							i(45164),	-- Helm of the Furnace Master
 							i(45321),	-- Pauldrons of Tempered Will
-							i(45186),	-- Soot-Covered Mantle
 							i(45318),	-- Drape of Fuming Anger
 							i(45317),	-- Shawl of the Caretaker
-							i(45167),	-- Lifeforge Breastplate
 							i(45316),	-- Armbraces of the Vibrant Flame
-							i(45187),	-- Wristguards of the Firetender
 							i(45310),	-- Gauntlets of the Iron Furnace
 							i(45312),	-- Gloves of Smoldering Touch
-							i(45185),	-- Flamewrought Cinch
-							i(45161),	-- Girdle of Embers
-							i(45166),	-- Charred Saronite Greaves
-							i(45162),	-- Flamestalker Boots
-							i(45157),	-- Cindershard Ring
-							i(45168),	-- Pyrelight Circle
 							i(45313),	-- Furnace Stone
-							i(45158),	-- Heart of Iron
-							i(45169, {	-- Totem of the Dancing Flame
-								["timeline"] = { "removed 5.0.4" },
-							}),
 						},
 					}),
 					e(1639, {	-- Razorscale
@@ -498,35 +584,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(142087, {	-- Ironbound Collar (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(45147),	-- Guiding Star
 							i(45298),	-- Razorscale Talon
-							i(45142),	-- Remorse
-							i(45137),	-- Veranus' Bane
-							i(45150),	-- Collar of the Wyrmhunter
 							i(45299),	-- Dragonsteel Faceplate
-							i(45140),	-- Razorscale Shoulderguards
-							i(45138),	-- Drape of the Drakerider
 							i(45305),	-- Breastplate of the Afterlife
-							i(45149),	-- Bracers of the Broodmother
 							i(45301),	-- Bracers of the Smothering Inferno
-							i(45146),	-- Shackles of the Odalisque
-							i(45151),	-- Belt of the Fallen Wyrm
 							i(45306),	-- Binding of the Dragon Matriarch
-							i(45139),	-- Dragonslayer's Brace
 							i(45304),	-- Stormtempered Girdle
 							i(45307),	-- Ironscale Leggings
-							i(45141),	-- Proto-Hide Leggings
-							i(45143),	-- Saronite Mesh Legguards
 							i(45302),	-- Treads of the Invader
 							i(45303),	-- Band of Draconic Guile
 							i(45308),	-- Eye of the Broodmother
-							i(45148),	-- Living Flame
-							i(45510, {	-- Libram of Discord
-								["timeline"] = { "removed 5.0.4" },
-							}),
-							i(45144, {	-- Sigil of Deflection
-								["timeline"] = { "removed 5.0.4" },
-							}),
 						},
 					}),
 					e(1640, {	-- XT-002 Deconstructor
@@ -534,14 +601,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						["groups"] = {
 							revampAch(3058, {	-- Heartbreaker (10 player)
 								i(45868),	-- Aesir's Edge
-								i(45442),	-- Sorthalis, Hammer of the Watchers
 								i(45870),	-- Magnetized Projectile Emitter
-								i(45443),	-- Charm of Meticulous Timing
-								i(45445),	-- Breastplate of the Devoted
 								i(45867),	-- Breastplate of the Stoneshaper
 								i(45869),	-- Fluxing Energy Coils
-								i(45446),	-- Grasps of Reason
-								i(45444),	-- Gloves of the Steady Hand
 								i(45871),	-- Seal of Ulduar
 							}),
 							revampAch(2937),	-- Must Deconstruct Faster (10 player)
@@ -555,35 +617,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 									33343,	-- XS-013 Scrapbot
 								},
 							}),
-							i(45256),	-- Twisted Visage
-							i(45246),	-- Golem-Shard Sticker
 							i(45685),	-- Plasma Foil
-							i(45257),	-- Quartz Crystal Wand
 							i(45682),	-- Pulsing Spellshield
 							i(45687),	-- Helm of Veiled Energies
-							i(45253),	-- Mantle of Wavering Calm
-							i(45251),	-- Shoulderplates of the Deconstructor
 							i(45677),	-- Treacherous Shoulderpads
 							i(45676),	-- Chestplate of Vicious Potency
-							i(45259),	-- Quartz-Studded Harness
 							i(45686),	-- Vest of the Glowing Crescent
 							i(45680),	-- Armbands of the Construct
-							i(45252),	-- Horologist's Wristguards
 							i(45679),	-- Gloves of Taut Grip
 							i(45694),	-- Conductive Cord
-							i(45248),	-- Clockwork Legplates
-							i(45260),	-- Boots of Hasty Revival
-							i(45249),	-- Brass-Lined Boots
-							i(45258),	-- Sandals of Rash Temperament
-							i(45250),	-- Crazed Construct Ring
 							i(45675),	-- Power Enhancing Loop
-							i(45247),	-- Signet of the Earthshaker
-							i(45254, {	-- Sigil of the Vengeful Heart
-								["timeline"] = { "removed 5.0.4" },
-							}),
-							i(45255, {	-- Thunderfall Totem
-								["timeline"] = { "removed 5.0.4" },
-							}),
 						},
 					}),
 					e(1650, {	-- Algalon the Observer
@@ -594,7 +637,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							}),
 							revampAch(3036, {	-- Observed (10 player)
 								title(129),	-- Starcaller
-								title(130),	-- the Astral Walker
 							}),
 							revampAch(3003, {	-- Supermassive (10 player)
 								crit(1),	-- Close 3 Black Holes within 10 seconds
@@ -612,36 +654,19 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								},
 							}),
 							i(46052),	-- Reply-Code Alpha
-							i(46053),	-- Reply-Code Alpha
-							i(45613),	-- Dreambinder
-							i(45612),	-- Constellus
-							i(45607),	-- Fang of Oblivion
-							i(45620),	-- Starshard Edge
-							i(45570),	-- Skyforge Crossbow
-							i(45587),	-- Bulwark of Algalon
-							i(45617),	-- Cosmos
-							i(45610),	-- Boundless Gaze
 							i(46047),	-- Pendant of the Somber Witness
 							i(46040),	-- Strength of the Heavens
 							i(46044),	-- Observer's Mantle
 							i(46037),	-- Shoulderplates of the Celestial Watch
 							i(46042),	-- Drape of the Messenger
 							i(46039),	-- Breastplate of the Timeless
-							i(45611),	-- Solar Bindings
 							i(46043),	-- Gloves of the Endless Dark
-							i(45665),	-- Pharos Gloves
 							i(46045),	-- Pulsar Gloves
-							i(45616),	-- Star-Beaded Clutch
 							i(46041),	-- Starfall Girdle
-							i(45619),	-- Starwatcher's Binding
-							i(45594),	-- Legplates of the Endless Void
 							i(46049),	-- Zodiac Leggings
-							i(45615),	-- Planewalker Treads
-							i(45599),	-- Sabatons of Lifeless Night
 							i(46050),	-- Starlight Treads
 							i(46048),	-- Band of Lights
 							i(46046),	-- Nebula Band
-							i(45609),	-- Comet's Trail
 							i(46038),	-- Dark Matter
 							i(46051),	-- Meteorite Crystal
 						},
@@ -660,49 +685,27 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(2947),	-- Can't Do That While Stunned (10 player)
 							revampAch(2939),	-- I Choose You, Runemaster Molgeim (10 player)
 							revampAch(2941, {	-- I Choose You, Steelbreaker (10 player)
-								i(45607),	-- Fang of Oblivion
 								i(45448),	-- Perilous Bite
 								i(45449),	-- The Masticator
-								i(45243),	-- Sapphire Amulet of Renewal
 								i(45447),	-- Watchful Eye of Fate
-								i(45245),	-- Shoulderpads of the Intruder
-								i(45242),	-- Drape of Mortal Downfall
-								i(45241),	-- Belt of Colossal Rage
 								i(45455),	-- Belt of the Crystal Tree
-								i(45244),	-- Greaves of Swift Vengeance
 								i(45456),	-- Loop of the Agile
 								i(45506),	-- Archivum Data Disc
-								i(45857),	-- Archivum Data Disc
 							}),
 							revampAch(2940),	-- I Choose You, Stormcaller Brundir (10 player)
 							i(142088, {	-- Stormforged Rune (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(45234),	-- Rapture
-							i(45233),	-- Stormrune Edge
 							i(45331),	-- Rune-Etched Nightblade
 							i(45332),	-- Stormtip
-							i(45226),	-- Ancient Iron Heaume
 							i(45329),	-- Circlet of True Sight
-							i(45193),	-- Insurmountable Fervor
-							i(45236),	-- Unblinking Eye
-							i(45227),	-- Iron-Studded Mantle
 							i(45322),	-- Cloak of the Iron Council
-							i(45224),	-- Drape of the Lithe
-							i(45237),	-- Phaelia's Vestments of the Sprouting Seed
-							i(45240),	-- Raiments of the Iron Council
-							i(45225),	-- Steelbreaker's Embrace
 							i(45423),	-- Runetouch Wristwraps
-							i(45228),	-- Handguards of the Enclave
-							i(45239),	-- Runeshaper's Gloves
 							i(45333),	-- Belt of the Iron Servant
 							i(45324),	-- Leggings of Swift Reflexes
-							i(45238),	-- Overload Legwraps
 							i(45378),	-- Boots of the Petrified Forest
 							i(45330),	-- Greaves of Iron Intensity
-							i(45232),	-- Runed Ironhide Boots
 							i(45418),	-- Lady Maye's Sapphire Ring
-							i(45235),	-- Radiant Seal
 						},
 					}),
 					e(1642, {	-- Kologarn
@@ -713,32 +716,15 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(2959),	-- Rubble and Roll (10 player)
 							revampAch(2951),	-- With Open Arms (10 player)
 							i(45695),	-- Spire of Withering Dreams
-							i(45266),	-- Malice
 							i(45700),	-- Stoneguard
-							i(45261),	-- Giant's Bane
-							i(45271),	-- Ironmender
 							i(45696),	-- Mark of the Unyielding
-							i(45262),	-- Necklace of Unerring Mettle
 							i(45699),	-- Pendant of the Piercing Glare
 							i(45697),	-- Shoulderguards of the Solemn Watch
-							i(45265),	-- Shoulderpads of the Monolith
 							i(45704),	-- Shawl of the Shattered Giant
-							i(45272),	-- Robes of the Umbral Brute
-							i(45275),	-- Bracers of Unleashed Magic
-							i(45264),	-- Decimator's Armguards
-							i(45269),	-- Unfaltering Armguards
-							i(45268),	-- Gloves of the Pythonic Guardian
-							i(45273),	-- Handwraps of Plentiful Recovery
-							i(45274),	-- Leggings of the Stoneweaver
-							i(45267),	-- Saronite Plated Legguards
 							i(45701),	-- Greaves of the Earthbinder
 							i(45698),	-- Sabatons of the Iron Watcher
 							i(45702),	-- Emerald Signet Ring
 							i(45703),	-- Spark of Hope
-							i(45263),	-- Wrathstone
-							i(45270, {	-- Idol of the Crying Wind
-								["timeline"] = { "removed 5.0.4" },
-							}),
 						},
 					}),
 					e(1643, {	-- Auriaya
@@ -751,33 +737,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(142089, {	-- Glittering Ball of Yarn (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(45437),	-- Runescribed Blade
-							i(45315),	-- Stonerender
 							i(45713),	-- Nurturing Touch
-							i(45327),	-- Siren's Cry
 							i(45707),	-- Shieldwall of the Breaker
 							i(45864),	-- Cover of the Keepers
-							i(45435),	-- Cowl of the Absolute
-							i(45439),	-- Unwavering Stare
-							i(45440),	-- Amice of the Stoic Watch
 							i(45711),	-- Ironaya's Discarded Mantle
 							i(45832),	-- Mantle of the Preserver
-							i(45320),	-- Shoulderplates of the Eternal
-							i(45319),	-- Cloak of the Makers
 							i(45712),	-- Chestplate of Titanic Fury
 							i(45865),	-- Raiments of the Corrupted
-							i(45334),	-- Unbreakable Chestguard
-							i(45325),	-- Gloves of the Stonereaper
 							i(45709),	-- Nimble Climber's Belt
 							i(45708),	-- Archaedas' Lost Legplates
-							i(45434),	-- Greaves of the Rockmender
-							i(45441),	-- Sandals of the Ancient Keeper
-							i(45326),	-- Platinum Band of the Aesir
-							i(45438),	-- Ring of the Faithful Servant
 							i(45866),	-- Elemental Focus Stone
-							i(45436, {	-- Libram of the Resolute
-								["timeline"] = { "removed 5.0.4" },
-							}),
 						},
 					}),
 					e(1644, {	-- Hodir
@@ -787,43 +756,28 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(2967),	-- Getting Cold in Here (10 player)
 							revampAch(3182, {	-- I Could Say That This Cache Was Rare (10 player)
 								i(45886),	-- Icecore Staff
-								i(45457),	-- Staff of Endless Winter
-								i(45612),	-- Constellus
 								i(45876),	-- Shiver
 								i(45887),	-- Ice Layered Barrier
 								i(45877),	-- The Boreal Guard
-								i(45459),	-- Frigid Strength of Hodir
-								i(45461),	-- Drape of Icy Intent
-								i(45460),	-- Bindings of Winter Gale
 								i(45888),	-- Bitter Cold Armguards
-								i(45462),	-- Gloves of the Frozen Glade
+								i(45786),	-- Hodir's Sigil
 							}),
 							revampAch(2963),	-- I Have the Coolest Friends (10 player)
 							revampAch(2969),	-- Staying Buffed All Winter (10 player)
-							i(45632),	-- Breastplate of the Wayward Conqueror
-							i(45633),	-- Breastplate of the Wayward Protector
-							i(45634),	-- Breastplate of the Wayward Vanquisher
-							i(45650),	-- Leggings of the Wayward Conqueror
-							i(45651),	-- Leggings of the Wayward Protector
-							i(45652),	-- Leggings of the Wayward Vanquisher
 							i(142090, {	-- Ominous Pile of Snow (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(138800, {	-- Illusion: Blade Ward
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
+							i(45650),	-- Leggings of the Wayward Conqueror
+							i(45651),	-- Leggings of the Wayward Protector
+							i(45652),	-- Leggings of the Wayward Vanquisher
 							i(45458),	-- Stormedge
 							i(45872),	-- Avalanche
-							i(45450),	-- Northern Barrier
 							i(45464),	-- Cowl of Icy Breaths
 							i(45873),	-- Winter's Frigid Embrace
-							i(45453),	-- Winter's Icy Embrace
-							i(45454),	-- Frost-Bound Chain Bracers
-							i(45452),	-- Frostplate Greaves
-							i(45451),	-- Frozen Loop
 							i(45874),	-- Signet of Winter
-							i(45786),	-- Hodir's Sigil
-							i(45815),	-- Hodir's Sigil
 						},
 					}),
 					e(1645, {	-- Thorim
@@ -837,40 +791,25 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							}),
 							revampAch(3176, {	-- Lose Your Illusion (10 player)
 								i(45930),	-- Combatant's Bootblade
-								i(45570),	-- Skyforge Crossbow
-								i(45470),	-- Wisdom's Hold
-								i(45472),	-- Warhelm of the Champion
 								i(45933),	-- Pendant of the Shallow Grave
-								i(45474),	-- Pauldrons of the Combatant
-								i(45473),	-- Embrace of the Gladiator
 								i(45928),	-- Gauntlets of the Thunder Lord
-								i(45471),	-- Fate's Clutch
 								i(45931),	-- Mjolnir Runestone
 								i(45929),	-- Sif's Remembrance
+								i(45784),	-- Thorim's Sigil
 							}),
 							revampAch(2977),	-- Siffed (10 player)
 							revampAch(2975),	-- Who Needs Bloodlust? (10 player)
-							i(45638),	-- Crown of the Wayward Conqueror
-							i(45639),	-- Crown of the Wayward Protector
-							i(45640),	-- Crown of the Wayward Vanquisher
-							i(45659),	-- Spaulders of the Wayward Conqueror
-							i(45660),	-- Spaulders of the Wayward Protector
-							i(45661),	-- Spaulders of the Wayward Vanquisher
 							i(138800, {	-- Illusion: Blade Ward
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
+							i(45659),	-- Spaulders of the Wayward Conqueror
+							i(45660),	-- Spaulders of the Wayward Protector
+							i(45661),	-- Spaulders of the Wayward Vanquisher
 							i(45892),	-- Legacy of Thunder
-							i(45463),	-- Vulmir, the Northern Tempest
 							i(45893),	-- Guise of the Midgard Serpent
 							i(45927),	-- Handwraps of Resonance
-							i(45467),	-- Belt of the Betrayed
 							i(45895),	-- Belt of the Blood Pit
-							i(45468),	-- Leggings of Lost Love
 							i(45894),	-- Leggings of Unstable Discharge
-							i(45469),	-- Sif's Promise
-							i(45466),	-- Scale of Fates
-							i(45784),	-- Thorim's Sigil
-							i(45817),	-- Thorim's Sigil
 						},
 					}),
 					e(1646, {	-- Freya
@@ -882,42 +821,27 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(3177),	-- Knock on Wood (10 player)
 							revampAch(3178),	-- Knock, Knock on Wood (10 player)
 							revampAch(3179, {	-- Knock, Knock, Knock on Wood (10 player)
-								i(45613),	-- Dreambinder
-								i(45484),	-- Bladetwister
 								i(45947),	-- Serilas, Blood Blade of Invar One-Arm
 								i(45294),	-- Petrified Ivy Sprig
-								i(45485),	-- Bronze Pendant of the Vanir
 								i(45945),	-- Seed of Budding Carnage
-								i(45486),	-- Drape of the Sullen Goddess
 								i(45943),	-- Gloves of Whispering Winds
-								i(45487),	-- Handguards of Revitalization
-								i(45488),	-- Leggings of the Enslaved Idol
 								i(45946),	-- Fire Orchid Signet
+								i(45788),	-- Freya's Sigil
 							}),
 							i(142091, {	-- Blessed Seed (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(45644),	-- Gloves of the Wayward Conqueror
-							i(45645),	-- Gloves of the Wayward Protector
-							i(45646),	-- Gloves of the Wayward Vanquisher
-							i(45653),	-- Legplates of the Wayward Conqueror
-							i(45654),	-- Legplates of the Wayward Protector
-							i(45655),	-- Legplates of the Wayward Vanquisher
 							i(138800, {	-- Illusion: Blade Ward
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
-							i(45479),	-- The Lifebinder
+							i(45644),	-- Gloves of the Wayward Conqueror
+							i(45645),	-- Gloves of the Wayward Protector
+							i(45646),	-- Gloves of the Wayward Vanquisher
 							i(45934),	-- Unraveling Reach
 							i(45935),	-- Ironbark Faceguard
-							i(45480),	-- Nymph Heart Charm
 							i(45941),	-- Chestguard of the Lasher
 							i(45940),	-- Tunic of the Limber Stalker
-							i(45481),	-- Gauntlets of Ruthless Reprisal
-							i(45482),	-- Leggings of the Lifetender
 							i(45936),	-- Legplates of Fluorishing Resolve
-							i(45483),	-- Boots of the Servant
-							i(45788),	-- Freya's Sigil
-							i(45814),	-- Freya's Sigil
 							i(46110, {	-- Alchemist's Cache
 								["requireSkill"] = ALCHEMY,
 							}),
@@ -932,17 +856,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						},
 						["groups"] = {
 							revampAch(3180, {	-- Firefighter (10 player)
-								i(45494),	-- Delirium's Touch
 								i(45990),	-- Fusion Blade
-								i(45620),	-- Starshard Edge
-								i(45497),	-- Crown of Luminescence
 								i(45993),	-- Mimiron's Flight Goggles
-								i(45496),	-- Titanskin Cloak
-								i(45663),	-- Armbands of Bedlam
 								i(45982),	-- Fused Alloy Legplates
 								i(45988),	-- Greaves of the Iron Army
 								i(45989),	-- Tempered Mercury Greaves
-								i(45495),	-- Conductive Seal
+								i(45787),	-- Mimiron's Sigil
 							}),
 							revampAch(3138, {	-- Not-So-Friendly Fire (10 player)
 								["cr"] = 34057,	-- Assault Bot
@@ -952,30 +871,20 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								crit(2),	-- A Rocket Strike
 								crit(3),	-- A Bomb Bot
 							}),
-							i(45641),	-- Gauntlets of the Wayward Conqueror
-							i(45642),	-- Gauntlets of the Wayward Protector
-							i(45643),	-- Gauntlets of the Wayward Vanquisher
-							i(45647),	-- Helm of the Wayward Conqueror
-							i(45648),	-- Helm of the Wayward Protector
-							i(45649),	-- Helm of the Wayward Vanquisher
 							i(138800, {	-- Illusion: Blade Ward
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
 							i(142092, {	-- Overcomplicated Controller (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(45489),	-- Insanity's Grip
+							i(45647),	-- Helm of the Wayward Conqueror
+							i(45648),	-- Helm of the Wayward Protector
+							i(45649),	-- Helm of the Wayward Vanquisher
 							i(45972),	-- Pulse Baton
-							i(45492),	-- Malleable Steelweave Mantle
 							i(45974),	-- Shoulderguards of Assimilation
-							i(45493),	-- Asimov's Drape
 							i(45973),	-- Stylish Power Cape
 							i(45976),	-- Static Charge Handwraps
 							i(45975),	-- Cable of the Metrognome
-							i(45491),	-- Waistguard of the Creator
-							i(45490),	-- Pandora's Plea
-							i(45787),	-- Mimiron's Sigil
-							i(45816),	-- Mimiron's Sigil
 							i(140782, {	-- Neural Net Detangler
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
@@ -986,46 +895,23 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						["groups"] = {
 							revampAch(3181, {	-- I Love the Smell of Saronite in the Morning (10 player)
 								i(46033),	-- Tortured Earth
-								i(45516),	-- Voidrethar, Dark Blade of Oblivion
 								i(46035),	-- Aesuga, Hand of the Argent Champion
 								i(46036),	-- Void Sabre
-								i(45517),	-- Pendulum of Infinity
 								i(46032),	-- Drape of the Faceless General
-								i(45519),	-- Vestments of the Blind Denizen
-								i(45520),	-- Handwraps of the Vigilant
 								i(46034),	-- Leggings of Profound Darkness
-								i(45518),	-- Flare of the Heavens
 							}),
 							revampAch(2996),	-- Shadowdodger (10 player)
 							i(45996),	-- Hoperender
-							i(45498),	-- Lotrafen, Spear of the Damned
 							i(46011),	-- Shadowbite
-							i(45511),	-- Scepter of Lost Souls
-							i(45502),	-- Helm of the Faceless
 							i(46008),	-- Choker of the Abyss
 							i(46015),	-- Pendant of Endless Despair
-							i(45514),	-- Mantle of the Unknowing
 							i(46013),	-- Underworld Mantle
 							i(46014),	-- Saronite Animus Cloak
 							i(46012),	-- Vestments of the Piercing Light
 							i(46009),	-- Bindings of the Depths
 							i(45997),	-- Gauntlets of the Wretched
-							i(45512),	-- Grips of the Unbroken
-							i(45505),	-- Belt of Clinging Hope
-							i(45508),	-- Belt of the Darkspeaker
-							i(45504),	-- Darkcore Leggings
-							i(45513),	-- Boots of the Forgotten Depths
-							i(45501),	-- Boots of the Underdweller
+							i(46346),	-- Boots of Unsettled Prey
 							i(46010),	-- Darkstone Ring
-							i(45503),	-- Metallic Loop of the Sufferer
-							i(45515),	-- Ring of the Vacant Eye
-							i(45507),	-- The General's Heart
-							i(45509, {	-- Idol of the Corruptor
-								["timeline"] = { "removed 5.0.4" },
-							}),
-							i(45145, {	-- Libram of the Sacred Shield
-								["timeline"] = { "removed 5.0.4" },
-							}),
 						},
 					}),
 					e(1649, {	-- Yogg-Saron
@@ -1034,6 +920,15 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(3159, {	-- Alone in the Darkness (10 player)
 								i(46312),	-- Vanquished Clutches of Yogg-Saron
 							}),
+							revampAch(3158, {	-- One Light in the Darkness (10 player)
+								i(46067),	-- Hammer of Crushing Whispers
+								i(46097),	-- Caress of Insanity
+								i(46068),	-- Amice of Inconceivable Horror
+								i(46095),	-- Soul-Devouring Cinch
+								i(46096),	-- Signet of Soft Lament
+							}),
+							revampAch(3141),	-- Two Lights in the Darkness (10 player)
+							revampAch(3157),	-- Three Lights in the Darkness (10 player)
 							revampAch(3008),	-- Drive Me Crazy (10 player)
 							revampAch(3012),	-- He's Not Getting Any Older (10 player)
 							revampAch(3015, {	-- In His House He Waits Dreaming (10 player)
@@ -1045,53 +940,26 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
 								["crs"] = { 33134 },	-- Sara
 							}),
-							revampAch(3158, {	-- One Light in the Darkness (10 player)
-								i(45533),	-- Dark Edge of Depravity
-								i(46067),	-- Hammer of Crushing Whispers
-								i(46097),	-- Caress of Insanity
-								i(46068),	-- Amice of Inconceivable Horror
-								i(46095),	-- Soul-Devouring Cinch
-								i(45536),	-- Legguards of Cunning Deception
-								i(45537),	-- Treads of the False Oracle
-								i(45534),	-- Seal of the Betrayed King
-								i(46096),	-- Signet of Soft Lament
-								i(45535),	-- Show of Faith
-							}),
-							revampAch(3141),	-- Two Lights in the Darkness (10 player)
-							revampAch(3157),	-- Three Lights in the Darkness (10 player)
 							revampAch(3014),	-- They're Coming Out of the Walls (10 player)
-							i(45635),	-- Chestguard of the Wayward Conqueror
-							i(45636),	-- Chestguard of the Wayward Protector
-							i(45637),	-- Chestguard of the Wayward Vanquisher
-							i(45656),	-- Mantle of the Wayward Conqueror
-							i(45657),	-- Mantle of the Wayward Protector
-							i(45658),	-- Mantle of the Wayward Vanquisher
 							i(138801, {	-- Illusion: Blood Draining
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
 							i(142093, {	-- Wriggling Darkness (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
+							i(45635),	-- Chestguard of the Wayward Conqueror
+							i(45636),	-- Chestguard of the Wayward Protector
+							i(45637),	-- Chestguard of the Wayward Vanquisher
 							i(46016),	-- Abaddon
 							i(46025),	-- Devotion
-							i(45521),	-- Earthshaper
 							i(46024),	-- Kingsbane
-							i(45527),	-- Soulscribe
 							i(46031),	-- Touch of Madness
 							i(46018),	-- Deliverance
-							i(45532),	-- Cowl of Dark Whispers
 							i(46028),	-- Faceguard of the Eyeless Horror
-							i(45523),	-- Garona's Guise
 							i(46022),	-- Pendant of a Thousand Maws
-							i(45529),	-- Shawl of Haunted Memories
-							i(45524),	-- Chestguard of Insidious Intent
-							i(45531),	-- Chestguard of the Fallen God
 							i(46019),	-- Leggings of the Insatiable
 							i(46030),	-- Treads of the Dragon Council
-							i(45525),	-- Godbane Signet
 							i(46021),	-- Royal Seal of King Llane
-							i(45530),	-- Sanity's Bond
-							i(45522),	-- Blood of the Old God
 						},
 					}),
 					-- #endif
@@ -1240,22 +1108,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						},{
 							title(126),	-- , Conqueror of Ulduar
 						})),
-						ach(3098, {	-- Dwarfageddon (25 player)
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
-							["crs"] = {
-								33236,	-- Steelforged Defender
-								33572,	-- Steelforged Defender
-							},
-						}),
-						ach(3118, {	-- Lumberjacked (25 player)
-							["providers"] = {
-								{ "n", 32915 },	-- Elder Brightleaf
-								{ "n", 32913 },	-- Elder Ironbranch
-								{ "n", 32914 },	-- Elder Stonebark
-							},
-							["description"] = "Must be killed before killing Freya or they will despawn.",
-							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
-						}),
 						ach(2895, {	-- The Secrets of Ulduar (25 player)
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 							-- Meta Achievement
@@ -1325,6 +1177,22 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								}),
 							},
 						}),
+						ach(3098, {	-- Dwarfageddon (25 player)
+							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							["crs"] = {
+								33236,	-- Steelforged Defender
+								33572,	-- Steelforged Defender
+							},
+						}),
+						ach(3118, {	-- Lumberjacked (25 player)
+							["providers"] = {
+								{ "n", 32915 },	-- Elder Brightleaf
+								{ "n", 32913 },	-- Elder Ironbranch
+								{ "n", 32914 },	-- Elder Stonebark
+							},
+							["description"] = "Must be killed before killing Freya or they will despawn.",
+							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+						}),
 					}),
 					n(LEGENDARY_QUESTLINE, {
 						["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses in 25-Man Ulduar. Hard modes have higher drop chances.",
@@ -1352,6 +1220,30 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						},
 					}),
 					n(QUESTS, {
+						q(13818, {	-- Heroic: Algalon
+							["providers"] = {
+								{ "n", 33957 },	-- Prospector Loren
+								{ "i", 45855 },	-- Sigils of the Watchers
+							},
+							["sourceQuests"] = {
+								13821,	-- Heroic: Freya's Sigil
+								13822,	-- Heroic: Hodir's Sigil
+								13824,	-- Heroic: Mimiron's Sigil
+								13823,	-- Heroic: Thorim's Sigil
+							},
+							["groups"] = {
+								i(45798),	-- Heroic Celestial Planetarium Key
+								i(45878, {	-- Large Sack of Ulduar Spoils
+									["sym"] = {
+										{ "selectparent", 3 },	-- Select the difficulty header.
+										{ "pop" },	-- Get the Rewards.
+										{ "where", "headerID", COMMON_BOSS_DROPS },	-- Select the "Common Boss Drops" header.
+										{ "pop" },	-- Get the Rewards.
+										{ "exclude", "itemID", 46027, 46348, 45038 },	-- Exclude the Enchanting Recipes & Fragment
+									},
+								}),
+							},
+						}),
 						q(13819, {	-- Heroic: All Is Well That Ends Well
 							["providers"] = {
 								{ "i", 46053 },	-- Reply-Code Alpha
@@ -1364,6 +1256,69 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								i(45608),	-- Brann's Signet Ring
 								i(45614),	-- Starshine Circle
 							},
+						}),
+						q(13817, {	-- Heroic: Archivum Data Disc
+							["provider"] = { "i", 45857 },	-- Heroic: Archivum Data Disc
+						}),
+						q(13821, {	-- Heroic: Freya's Sigil
+							["qg"] = 33957,	-- Prospector Loren
+							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+							["groups"] = {
+								objective(1, {	-- 0/1 Freya's Sigil
+									["provider"] = { "i", 45814 },	-- Freya's Sigil
+									["cr"] = 32906,	-- Freya
+								}),
+							},
+						}),
+						q(13822, {	-- Heroic: Hodir's Sigil
+							["qg"] = 33957,	-- Prospector Loren
+							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+							["groups"] = {
+								objective(1, {	-- 0/1 Hodir's Sigil
+									["provider"] = { "i", 45815 },	-- Hodir's Sigil
+									["cr"] = 32845,	-- Hodir
+								}),
+							},
+						}),
+						q(13824, {	-- Heroic: Mimiron's Sigil
+							["qg"] = 33957,	-- Prospector Loren
+							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+							["groups"] = {
+								objective(1, {	-- 0/1 Mimiron's Sigil
+									["provider"] = { "i", 45816 },	-- Mimiron's Sigil
+									["cr"] = 33350,	-- Mimiron
+								}),
+							},
+						}),
+						q(13816, {	-- Heroic: The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
+							["sourceQuest"] = 13817,	-- Heroic: Archivum Data Disc
+						}),
+						q(13823, {	-- Heroic: Thorim's Sigil
+							["qg"] = 33957,	-- Prospector Loren
+							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+							["groups"] = {
+								objective(1, {	-- 0/1 Thorim's Sigil
+									["provider"] = { "i", 45817 },	-- Thorim's Sigil
+									["cr"] = 32865,	-- Thorim
+								}),
+							},
+						}),
+					}),
+					n(ZONE_DROPS, {
+						i(45605),	-- Daschal's Bite
+						i(45539),	-- Pendant of Focused Energies
+						i(45538),	-- Titanstone Pendant
+						i(45543),	-- Shoulders of Misfortune
+						i(45541),	-- Shroud of Alteration
+						i(45549),	-- Grips of Chaos
+						i(45548),	-- Belt of the Sleeper
+						i(45547),	-- Relic Hunter's Cord
+						i(45544),	-- Leggings of the Tortured Earth
+						i(45542),	-- Greaves of the Stonewarder
+						i(45540),	-- Bladebearer's Signet
+						i(46138, {	-- Idol of the Flourishing Life
+							["timeline"] = { "removed 5.0.4" },
 						}),
 					}),
 					n(COMMON_BOSS_DROPS, {
@@ -1464,28 +1419,18 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(45171),	-- Intensity
-							i(45311),	-- Relentless Edge
 							i(45165),	-- Worldcarver
-							i(45309),	-- Rifle of the Platinum Guard
 							i(45170),	-- Scepter of Creation
-							i(45314),	-- Igniter Rod
 							i(45164),	-- Helm of the Furnace Master
-							i(45321),	-- Pauldrons of Tempered Will
 							i(45186),	-- Soot-Covered Mantle
-							i(45318),	-- Drape of Fuming Anger
-							i(45317),	-- Shawl of the Caretaker
 							i(45167),	-- Lifeforge Breastplate
-							i(45316),	-- Armbraces of the Vibrant Flame
 							i(45187),	-- Wristguards of the Firetender
-							i(45310),	-- Gauntlets of the Iron Furnace
-							i(45312),	-- Gloves of Smoldering Touch
 							i(45185),	-- Flamewrought Cinch
 							i(45161),	-- Girdle of Embers
 							i(45166),	-- Charred Saronite Greaves
 							i(45162),	-- Flamestalker Boots
 							i(45157),	-- Cindershard Ring
 							i(45168),	-- Pyrelight Circle
-							i(45313),	-- Furnace Stone
 							i(45158),	-- Heart of Iron
 							i(45169, {	-- Totem of the Dancing Flame
 								["timeline"] = { "removed 5.0.4" },
@@ -1501,27 +1446,17 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(45147),	-- Guiding Star
-							i(45298),	-- Razorscale Talon
 							i(45142),	-- Remorse
 							i(45137),	-- Veranus' Bane
 							i(45150),	-- Collar of the Wyrmhunter
-							i(45299),	-- Dragonsteel Faceplate
 							i(45140),	-- Razorscale Shoulderguards
 							i(45138),	-- Drape of the Drakerider
-							i(45305),	-- Breastplate of the Afterlife
 							i(45149),	-- Bracers of the Broodmother
-							i(45301),	-- Bracers of the Smothering Inferno
 							i(45146),	-- Shackles of the Odalisque
 							i(45151),	-- Belt of the Fallen Wyrm
-							i(45306),	-- Binding of the Dragon Matriarch
 							i(45139),	-- Dragonslayer's Brace
-							i(45304),	-- Stormtempered Girdle
-							i(45307),	-- Ironscale Leggings
 							i(45141),	-- Proto-Hide Leggings
 							i(45143),	-- Saronite Mesh Legguards
-							i(45302),	-- Treads of the Invader
-							i(45303),	-- Band of Draconic Guile
-							i(45308),	-- Eye of the Broodmother
 							i(45148),	-- Living Flame
 							i(45510, {	-- Libram of Discord
 								["timeline"] = { "removed 5.0.4" },
@@ -1535,16 +1470,11 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						["creatureID"] = 33293,	-- XT-002 Deconstructor
 						["groups"] = {
 							revampAch(3059, {	-- Heartbreaker (25 player)
-								i(45868),	-- Aesir's Edge
 								i(45442),	-- Sorthalis, Hammer of the Watchers
-								i(45870),	-- Magnetized Projectile Emitter
 								i(45443),	-- Charm of Meticulous Timing
 								i(45445),	-- Breastplate of the Devoted
-								i(45867),	-- Breastplate of the Stoneshaper
-								i(45869),	-- Fluxing Energy Coils
 								i(45446),	-- Grasps of Reason
 								i(45444),	-- Gloves of the Steady Hand
-								i(45871),	-- Seal of Ulduar
 							}),
 							revampAch(2938),	-- Must Deconstruct Faster (25 player)
 							revampAch(2932, {	-- Nerf Engineering (25 player)
@@ -1559,26 +1489,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							}),
 							i(45256),	-- Twisted Visage
 							i(45246),	-- Golem-Shard Sticker
-							i(45685),	-- Plasma Foil
 							i(45257),	-- Quartz Crystal Wand
-							i(45682),	-- Pulsing Spellshield
-							i(45687),	-- Helm of Veiled Energies
 							i(45253),	-- Mantle of Wavering Calm
 							i(45251),	-- Shoulderplates of the Deconstructor
-							i(45677),	-- Treacherous Shoulderpads
-							i(45676),	-- Chestplate of Vicious Potency
 							i(45259),	-- Quartz-Studded Harness
-							i(45686),	-- Vest of the Glowing Crescent
-							i(45680),	-- Armbands of the Construct
 							i(45252),	-- Horologist's Wristguards
-							i(45679),	-- Gloves of Taut Grip
-							i(45694),	-- Conductive Cord
 							i(45248),	-- Clockwork Legplates
 							i(45260),	-- Boots of Hasty Revival
 							i(45249),	-- Brass-Lined Boots
 							i(45258),	-- Sandals of Rash Temperament
 							i(45250),	-- Crazed Construct Ring
-							i(45675),	-- Power Enhancing Loop
 							i(45247),	-- Signet of the Earthshaker
 							i(45254, {	-- Sigil of the Vengeful Heart
 								["timeline"] = { "removed 5.0.4" },
@@ -1595,14 +1515,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								["timeline"] = { "removed 4.0.3" },
 							}),
 							revampAch(3037, {	-- Observed (25 player)
-								title(129),	-- Starcaller
 								title(130),	-- the Astral Walker
 							}),
 							revampAch(3002, {	-- Supermassive (25 player)
 								crit(1),	-- Close 3 Black Holes within 10 seconds
 								crit(2),	-- Defeat Algalon the Observer
 							}),
-							i(46052),	-- Reply-Code Alpha
 							i(46053),	-- Reply-Code Alpha
 							i(45613),	-- Dreambinder
 							i(45612),	-- Constellus
@@ -1612,29 +1530,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45587),	-- Bulwark of Algalon
 							i(45617),	-- Cosmos
 							i(45610),	-- Boundless Gaze
-							i(46047),	-- Pendant of the Somber Witness
-							i(46040),	-- Strength of the Heavens
-							i(46044),	-- Observer's Mantle
-							i(46037),	-- Shoulderplates of the Celestial Watch
-							i(46042),	-- Drape of the Messenger
-							i(46039),	-- Breastplate of the Timeless
 							i(45611),	-- Solar Bindings
-							i(46043),	-- Gloves of the Endless Dark
 							i(45665),	-- Pharos Gloves
-							i(46045),	-- Pulsar Gloves
 							i(45616),	-- Star-Beaded Clutch
-							i(46041),	-- Starfall Girdle
 							i(45619),	-- Starwatcher's Binding
 							i(45594),	-- Legplates of the Endless Void
-							i(46049),	-- Zodiac Leggings
 							i(45615),	-- Planewalker Treads
 							i(45599),	-- Sabatons of Lifeless Night
-							i(46050),	-- Starlight Treads
-							i(46048),	-- Band of Lights
-							i(46046),	-- Nebula Band
 							i(45609),	-- Comet's Trail
-							i(46038),	-- Dark Matter
-							i(46051),	-- Meteorite Crystal
 						},
 					}),
 					e(1641, {	-- Assembly of Iron
@@ -1652,22 +1555,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(2942),	-- I Choose You, Runemaster Molgeim (25 player)
 							revampAch(2944, {	-- I Choose You, Steelbreaker (25 player)
 								i(45607),	-- Fang of Oblivion
-								i(45448),	-- Perilous Bite
-								i(45449),	-- The Masticator
 								i(45243),	-- Sapphire Amulet of Renewal
-								i(45447),	-- Watchful Eye of Fate
 								i(45245),	-- Shoulderpads of the Intruder
 								i(45242),	-- Drape of Mortal Downfall
 								i(45241),	-- Belt of Colossal Rage
-								i(45455),	-- Belt of the Crystal Tree
 								i(45244),	-- Greaves of Swift Vengeance
-								i(45456),	-- Loop of the Agile
-								i(45506, {	-- Archivum Data Disc
-									["questID"] = 13604,	-- Archivum Data Disc
-								}),
-								i(45857, {	-- Archivum Data Disc
-									["questID"] = 13817,	-- Heroic: Archivum Data Disc
-								}),
+								i(45857),	-- Archivum Data Disc
 							}),
 							revampAch(2943),	-- I Choose You, Stormcaller Brundir (25 player)
 							i(142088, {	-- Stormforged Rune (PET!)
@@ -1675,28 +1568,18 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							}),
 							i(45234),	-- Rapture
 							i(45233),	-- Stormrune Edge
-							i(45331),	-- Rune-Etched Nightblade
-							i(45332),	-- Stormtip
 							i(45226),	-- Ancient Iron Heaume
-							i(45329),	-- Circlet of True Sight
 							i(45193),	-- Insurmountable Fervor
 							i(45236),	-- Unblinking Eye
 							i(45227),	-- Iron-Studded Mantle
-							i(45322),	-- Cloak of the Iron Council
 							i(45224),	-- Drape of the Lithe
 							i(45237),	-- Phaelia's Vestments of the Sprouting Seed
 							i(45240),	-- Raiments of the Iron Council
 							i(45225),	-- Steelbreaker's Embrace
-							i(45423),	-- Runetouch Wristwraps
 							i(45228),	-- Handguards of the Enclave
 							i(45239),	-- Runeshaper's Gloves
-							i(45333),	-- Belt of the Iron Servant
-							i(45324),	-- Leggings of Swift Reflexes
 							i(45238),	-- Overload Legwraps
-							i(45378),	-- Boots of the Petrified Forest
-							i(45330),	-- Greaves of Iron Intensity
 							i(45232),	-- Runed Ironhide Boots
-							i(45418),	-- Lady Maye's Sapphire Ring
 							i(45235),	-- Radiant Seal
 						},
 					}),
@@ -1707,17 +1590,11 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(2956),	-- If Looks Could Kill (25 player)
 							revampAch(2960),	-- Rubble and Roll (25 player)
 							revampAch(2952),	-- With Open Arms (25 player)
-							i(45695),	-- Spire of Withering Dreams
 							i(45266),	-- Malice
-							i(45700),	-- Stoneguard
 							i(45261),	-- Giant's Bane
 							i(45271),	-- Ironmender
-							i(45696),	-- Mark of the Unyielding
 							i(45262),	-- Necklace of Unerring Mettle
-							i(45699),	-- Pendant of the Piercing Glare
-							i(45697),	-- Shoulderguards of the Solemn Watch
 							i(45265),	-- Shoulderpads of the Monolith
-							i(45704),	-- Shawl of the Shattered Giant
 							i(45272),	-- Robes of the Umbral Brute
 							i(45275),	-- Bracers of Unleashed Magic
 							i(45264),	-- Decimator's Armguards
@@ -1726,10 +1603,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45273),	-- Handwraps of Plentiful Recovery
 							i(45274),	-- Leggings of the Stoneweaver
 							i(45267),	-- Saronite Plated Legguards
-							i(45701),	-- Greaves of the Earthbinder
-							i(45698),	-- Sabatons of the Iron Watcher
-							i(45702),	-- Emerald Signet Ring
-							i(45703),	-- Spark of Hope
 							i(45263),	-- Wrathstone
 							i(45270, {	-- Idol of the Crying Wind
 								["timeline"] = { "removed 5.0.4" },
@@ -1748,28 +1621,18 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							}),
 							i(45437),	-- Runescribed Blade
 							i(45315),	-- Stonerender
-							i(45713),	-- Nurturing Touch
 							i(45327),	-- Siren's Cry
-							i(45707),	-- Shieldwall of the Breaker
-							i(45864),	-- Cover of the Keepers
 							i(45435),	-- Cowl of the Absolute
 							i(45439),	-- Unwavering Stare
 							i(45440),	-- Amice of the Stoic Watch
-							i(45711),	-- Ironaya's Discarded Mantle
-							i(45832),	-- Mantle of the Preserver
 							i(45320),	-- Shoulderplates of the Eternal
 							i(45319),	-- Cloak of the Makers
-							i(45712),	-- Chestplate of Titanic Fury
-							i(45865),	-- Raiments of the Corrupted
 							i(45334),	-- Unbreakable Chestguard
 							i(45325),	-- Gloves of the Stonereaper
-							i(45709),	-- Nimble Climber's Belt
-							i(45708),	-- Archaedas' Lost Legplates
 							i(45434),	-- Greaves of the Rockmender
 							i(45441),	-- Sandals of the Ancient Keeper
 							i(45326),	-- Platinum Band of the Aesir
 							i(45438),	-- Ring of the Faithful Servant
-							i(45866),	-- Elemental Focus Stone
 							i(45436, {	-- Libram of the Resolute
 								["timeline"] = { "removed 5.0.4" },
 							}),
@@ -1781,44 +1644,30 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(2962),	-- Cheese the Freeze (25 player)
 							revampAch(2968),	-- Getting Cold in Here (25 player)
 							revampAch(3184, {	-- I Could Say That This Cache Was Rare (25 player)
-								i(45886),	-- Icecore Staff
 								i(45457),	-- Staff of Endless Winter
 								i(45612),	-- Constellus
-								i(45876),	-- Shiver
-								i(45887),	-- Ice Layered Barrier
-								i(45877),	-- The Boreal Guard
 								i(45459),	-- Frigid Strength of Hodir
 								i(45461),	-- Drape of Icy Intent
 								i(45460),	-- Bindings of Winter Gale
-								i(45888),	-- Bitter Cold Armguards
 								i(45462),	-- Gloves of the Frozen Glade
+								i(45815),	-- Hodir's Sigil
 							}),
 							revampAch(2965),	-- I Have the Coolest Friends (25 player)
 							revampAch(2970),	-- Staying Buffed All Winter (25 player)
-							i(45632),	-- Breastplate of the Wayward Conqueror
-							i(45633),	-- Breastplate of the Wayward Protector
-							i(45634),	-- Breastplate of the Wayward Vanquisher
-							i(45650),	-- Leggings of the Wayward Conqueror
-							i(45651),	-- Leggings of the Wayward Protector
-							i(45652),	-- Leggings of the Wayward Vanquisher
 							i(142090, {	-- Ominous Pile of Snow (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
 							i(138800, {	-- Illusion: Blade Ward
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
-							i(45458),	-- Stormedge
-							i(45872),	-- Avalanche
+							i(45632),	-- Breastplate of the Wayward Conqueror
+							i(45633),	-- Breastplate of the Wayward Protector
+							i(45634),	-- Breastplate of the Wayward Vanquisher
 							i(45450),	-- Northern Barrier
-							i(45464),	-- Cowl of Icy Breaths
-							i(45873),	-- Winter's Frigid Embrace
 							i(45453),	-- Winter's Icy Embrace
 							i(45454),	-- Frost-Bound Chain Bracers
 							i(45452),	-- Frostplate Greaves
 							i(45451),	-- Frozen Loop
-							i(45874),	-- Signet of Winter
-							i(45786),	-- Hodir's Sigil
-							i(45815),	-- Hodir's Sigil
 						},
 					}),
 					e(1645, {	-- Thorim
@@ -1831,41 +1680,27 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								crit(3),	-- Participate in slaying Ancient Rune Giant
 							}),
 							revampAch(3183, {	-- Lose Your Illusion (25 player)
-								i(45930),	-- Combatant's Bootblade
 								i(45570),	-- Skyforge Crossbow
 								i(45470),	-- Wisdom's Hold
 								i(45472),	-- Warhelm of the Champion
-								i(45933),	-- Pendant of the Shallow Grave
 								i(45474),	-- Pauldrons of the Combatant
 								i(45473),	-- Embrace of the Gladiator
-								i(45928),	-- Gauntlets of the Thunder Lord
 								i(45471),	-- Fate's Clutch
-								i(45931),	-- Mjolnir Runestone
-								i(45929),	-- Sif's Remembrance
+								i(45817),	-- Thorim's Sigil
 							}),
 							revampAch(2978),	-- Siffed (25 player)
 							revampAch(2976),	-- Who Needs Bloodlust? (25 player)
-							i(45638),	-- Crown of the Wayward Conqueror
-							i(45639),	-- Crown of the Wayward Protector
-							i(45640),	-- Crown of the Wayward Vanquisher
-							i(45659),	-- Spaulders of the Wayward Conqueror
-							i(45660),	-- Spaulders of the Wayward Protector
-							i(45661),	-- Spaulders of the Wayward Vanquisher
 							i(138800, {	-- Illusion: Blade Ward
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
-							i(45892),	-- Legacy of Thunder
+							i(45638),	-- Crown of the Wayward Conqueror
+							i(45639),	-- Crown of the Wayward Protector
+							i(45640),	-- Crown of the Wayward Vanquisher
 							i(45463),	-- Vulmir, the Northern Tempest
-							i(45893),	-- Guise of the Midgard Serpent
-							i(45927),	-- Handwraps of Resonance
 							i(45467),	-- Belt of the Betrayed
-							i(45895),	-- Belt of the Blood Pit
 							i(45468),	-- Leggings of Lost Love
-							i(45894),	-- Leggings of Unstable Discharge
 							i(45469),	-- Sif's Promise
 							i(45466),	-- Scale of Fates
-							i(45784),	-- Thorim's Sigil
-							i(45817),	-- Thorim's Sigil
 						},
 					}),
 					e(1646, {	-- Freya
@@ -1879,40 +1714,26 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(3187, {	-- Knock, Knock, Knock on Wood (25 player)
 								i(45613),	-- Dreambinder
 								i(45484),	-- Bladetwister
-								i(45947),	-- Serilas, Blood Blade of Invar One-Arm
-								i(45294),	-- Petrified Ivy Sprig
 								i(45485),	-- Bronze Pendant of the Vanir
-								i(45945),	-- Seed of Budding Carnage
 								i(45486),	-- Drape of the Sullen Goddess
-								i(45943),	-- Gloves of Whispering Winds
 								i(45487),	-- Handguards of Revitalization
 								i(45488),	-- Leggings of the Enslaved Idol
-								i(45946),	-- Fire Orchid Signet
+								i(45814),	-- Freya's Sigil
 							}),
 							i(142091, {	-- Blessed Seed (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(45644),	-- Gloves of the Wayward Conqueror
-							i(45645),	-- Gloves of the Wayward Protector
-							i(45646),	-- Gloves of the Wayward Vanquisher
-							i(45653),	-- Legplates of the Wayward Conqueror
-							i(45654),	-- Legplates of the Wayward Protector
-							i(45655),	-- Legplates of the Wayward Vanquisher
 							i(138800, {	-- Illusion: Blade Ward
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
+							i(45653),	-- Legplates of the Wayward Conqueror
+							i(45654),	-- Legplates of the Wayward Protector
+							i(45655),	-- Legplates of the Wayward Vanquisher
 							i(45479),	-- The Lifebinder
-							i(45934),	-- Unraveling Reach
-							i(45935),	-- Ironbark Faceguard
 							i(45480),	-- Nymph Heart Charm
-							i(45941),	-- Chestguard of the Lasher
-							i(45940),	-- Tunic of the Limber Stalker
 							i(45481),	-- Gauntlets of Ruthless Reprisal
 							i(45482),	-- Leggings of the Lifetender
-							i(45936),	-- Legplates of Fluorishing Resolve
 							i(45483),	-- Boots of the Servant
-							i(45788),	-- Freya's Sigil
-							i(45814),	-- Freya's Sigil
 							i(46110, {	-- Alchemist's Cache
 								["requireSkill"] = ALCHEMY,
 							}),
@@ -1928,16 +1749,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						["groups"] = {
 							revampAch(3189, {	-- Firefighter (25 player)
 								i(45494),	-- Delirium's Touch
-								i(45990),	-- Fusion Blade
 								i(45620),	-- Starshard Edge
 								i(45497),	-- Crown of Luminescence
-								i(45993),	-- Mimiron's Flight Goggles
 								i(45496),	-- Titanskin Cloak
 								i(45663),	-- Armbands of Bedlam
-								i(45982),	-- Fused Alloy Legplates
-								i(45988),	-- Greaves of the Iron Army
-								i(45989),	-- Tempered Mercury Greaves
 								i(45495),	-- Conductive Seal
+								i(45816),	-- Mimiron's Sigil
 							}),
 							revampAch(2995, {	-- Not-So-Friendly Fire (25 player)
 								["cr"] = 34057,	-- Assault Bot
@@ -1947,30 +1764,20 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								crit(2),	-- A Rocket Strike
 								crit(3),	-- A Bomb Bot
 							}),
-							i(45641),	-- Gauntlets of the Wayward Conqueror
-							i(45642),	-- Gauntlets of the Wayward Protector
-							i(45643),	-- Gauntlets of the Wayward Vanquisher
-							i(45647),	-- Helm of the Wayward Conqueror
-							i(45648),	-- Helm of the Wayward Protector
-							i(45649),	-- Helm of the Wayward Vanquisher
 							i(138800, {	-- Illusion: Blade Ward
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
 							i(142092, {	-- Overcomplicated Controller (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
+							i(45641),	-- Gauntlets of the Wayward Conqueror
+							i(45642),	-- Gauntlets of the Wayward Protector
+							i(45643),	-- Gauntlets of the Wayward Vanquisher
 							i(45489),	-- Insanity's Grip
-							i(45972),	-- Pulse Baton
 							i(45492),	-- Malleable Steelweave Mantle
-							i(45974),	-- Shoulderguards of Assimilation
 							i(45493),	-- Asimov's Drape
-							i(45973),	-- Stylish Power Cape
-							i(45976),	-- Static Charge Handwraps
-							i(45975),	-- Cable of the Metrognome
 							i(45491),	-- Waistguard of the Creator
 							i(45490),	-- Pandora's Plea
-							i(45787),	-- Mimiron's Sigil
-							i(45816),	-- Mimiron's Sigil
 							i(140782, {	-- Neural Net Detangler
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
@@ -1980,38 +1787,23 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						["creatureID"] = 33271,	-- General Vezax
 						["groups"] = {
 							revampAch(3188, {	-- I Love the Smell of Saronite in the Morning (25 player)
-								i(46033),	-- Tortured Earth
 								i(45516),	-- Voidrethar, Dark Blade of Oblivion
-								i(46035),	-- Aesuga, Hand of the Argent Champion
-								i(46036),	-- Void Sabre
 								i(45517),	-- Pendulum of Infinity
-								i(46032),	-- Drape of the Faceless General
 								i(45519),	-- Vestments of the Blind Denizen
 								i(45520),	-- Handwraps of the Vigilant
-								i(46034),	-- Leggings of Profound Darkness
 								i(45518),	-- Flare of the Heavens
 							}),
 							revampAch(2997),	-- Shadowdodger (25 player)
-							i(45996),	-- Hoperender
 							i(45498),	-- Lotrafen, Spear of the Damned
-							i(46011),	-- Shadowbite
 							i(45511),	-- Scepter of Lost Souls
 							i(45502),	-- Helm of the Faceless
-							i(46008),	-- Choker of the Abyss
-							i(46015),	-- Pendant of Endless Despair
 							i(45514),	-- Mantle of the Unknowing
-							i(46013),	-- Underworld Mantle
-							i(46014),	-- Saronite Animus Cloak
-							i(46012),	-- Vestments of the Piercing Light
-							i(46009),	-- Bindings of the Depths
-							i(45997),	-- Gauntlets of the Wretched
 							i(45512),	-- Grips of the Unbroken
 							i(45505),	-- Belt of Clinging Hope
 							i(45508),	-- Belt of the Darkspeaker
 							i(45504),	-- Darkcore Leggings
 							i(45513),	-- Boots of the Forgotten Depths
 							i(45501),	-- Boots of the Underdweller
-							i(46010),	-- Darkstone Ring
 							i(45503),	-- Metallic Loop of the Sufferer
 							i(45515),	-- Ring of the Vacant Eye
 							i(45507),	-- The General's Heart
@@ -2033,6 +1825,15 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								}),
 								i(45693),	-- Mimiron's Head (MOUNT!)
 							}),
+							revampAch(3163, {	-- One Light in the Darkness (25 player)
+								i(45533),	-- Dark Edge of Depravity
+								i(45536),	-- Legguards of Cunning Deception
+								i(45537),	-- Treads of the False Oracle
+								i(45534),	-- Seal of the Betrayed King
+								i(45535),	-- Show of Faith
+							}),
+							revampAch(3162),	-- Two Lights in the Darkness (25 player)
+							revampAch(3161),	-- Three Lights in the Darkness (25 player)
 							revampAch(3010),	-- Drive Me Crazy (25 player)
 							revampAch(3013),	-- He's Not Getting Any Older (25 player)
 							revampAch(3016, {	-- In His House He Waits Dreaming (25 player)
@@ -2044,51 +1845,24 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
 								["crs"] = { 33134 },	-- Sara
 							}),
-							revampAch(3163, {	-- One Light in the Darkness (25 player)
-								i(45533),	-- Dark Edge of Depravity
-								i(46067),	-- Hammer of Crushing Whispers
-								i(46097),	-- Caress of Insanity
-								i(46068),	-- Amice of Inconceivable Horror
-								i(46095),	-- Soul-Devouring Cinch
-								i(45536),	-- Legguards of Cunning Deception
-								i(45537),	-- Treads of the False Oracle
-								i(45534),	-- Seal of the Betrayed King
-								i(46096),	-- Signet of Soft Lament
-								i(45535),	-- Show of Faith
-							}),
-							revampAch(3162),	-- Two Lights in the Darkness (25 player)
-							revampAch(3161),	-- Three Lights in the Darkness (25 player)
 							revampAch(3017),	-- They're Coming Out of the Walls (25 player)
-							i(45635),	-- Chestguard of the Wayward Conqueror
-							i(45636),	-- Chestguard of the Wayward Protector
-							i(45637),	-- Chestguard of the Wayward Vanquisher
-							i(45656),	-- Mantle of the Wayward Conqueror
-							i(45657),	-- Mantle of the Wayward Protector
-							i(45658),	-- Mantle of the Wayward Vanquisher
 							i(138801, {	-- Illusion: Blood Draining
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
 							i(142093, {	-- Wriggling Darkness (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(46016),	-- Abaddon
-							i(46025),	-- Devotion
+							i(45656),	-- Mantle of the Wayward Conqueror
+							i(45657),	-- Mantle of the Wayward Protector
+							i(45658),	-- Mantle of the Wayward Vanquisher
 							i(45521),	-- Earthshaper
-							i(46024),	-- Kingsbane
 							i(45527),	-- Soulscribe
-							i(46031),	-- Touch of Madness
-							i(46018),	-- Deliverance
 							i(45532),	-- Cowl of Dark Whispers
-							i(46028),	-- Faceguard of the Eyeless Horror
 							i(45523),	-- Garona's Guise
-							i(46022),	-- Pendant of a Thousand Maws
 							i(45529),	-- Shawl of Haunted Memories
 							i(45524),	-- Chestguard of Insidious Intent
 							i(45531),	-- Chestguard of the Fallen God
-							i(46019),	-- Leggings of the Insatiable
-							i(46030),	-- Treads of the Dragon Council
 							i(45525),	-- Godbane Signet
-							i(46021),	-- Royal Seal of King Llane
 							i(45530),	-- Sanity's Bond
 							i(45522),	-- Blood of the Old God
 						},
@@ -2099,68 +1873,25 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 			-- #if AFTER 7.3.5.25600
 			d(14, {	-- Normal
 				n(QUESTS, {
-					q(13607, {	-- The Celestial Planetarium
-						["sourceQuest"] = 13604,	-- Archivum Data Disc
-						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(13606, {	-- Freya's Sigil
-						["sourceQuest"] = 13607,	-- The Celestial Planetarium
-						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = { 32906 },	-- Freya
-						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
-							objective(1, {
-								["provider"] = { "i", 45788 },	-- Freya's Sigil
-							}),
-						},
-					}),
-					q(13609, {	-- Hodir's Sigil
-						["sourceQuest"] = 13607,	-- The Celestial Planetarium
-						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = { 32845 },	-- Hodir
-						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
-							objective(1, {
-								["provider"] = { "i", 45786 },	-- Hodir's Sigil
-							}),
-						},
-					}),
-					q(13611, {	-- Mimiron's Sigil
-						["sourceQuest"] = 13607,	-- The Celestial Planetarium
-						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = { 33350 },	-- Mimiron
-						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
-							objective(1, {
-								["provider"] = { "i", 45787 },	-- Mimiron's Sigil
-							}),
-						},
-					}),
-					q(13610, {	-- Thorim's Sigil
-						["sourceQuest"] = 13607,	-- The Celestial Planetarium
-						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = { 32865 },	-- Thorim
-						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
-							objective(1, {
-								["provider"] = { "i", 45784 },	-- Thorim's Sigil
-							}),
-						},
-					}),
 					q(13614, {	-- Algalon
+						["qg"] = 33957,	-- Prospector Loren
+						["providers"] = {
+							{ "n", 33957 },	-- Prospector Loren
+							{ "i", 45791 },	-- Sigils of the Watchers
+						},
 						["sourceQuests"] = {
 							13606,	-- Freya's Sigil
 							13609,	-- Hodir's Sigil
 							13611,	-- Mimiron's Sigil
 							13610,	-- Thorim's Sigil
 						},
-						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = { 32871 },	-- Algalon the Observer
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { "removed 7.3.5.25600" },
 						["groups"] = {
+							i(45796, {	-- Celestial Planetarium Key
+								["timeline"] = { "removed 4.2.0" },
+							}),
 							i(45875, {	-- Sack of Ulduar Spoils
-								i(45087),	-- Runed Orb
+								["sym"] = { { "select", "itemID", 45087 } },	-- Runed Orb
 							}),
 						},
 					}),
@@ -2177,6 +1908,83 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(46323),	-- Starshine Signet
 						},
 					}),
+					q(13604, {	-- Archivum Data Disc
+						["provider"] = { "i", 45506 },	-- Archivum Data Disc
+					}),
+					q(13606, {	-- Freya's Sigil
+						["qg"] = 33957,	-- Prospector Loren
+						["sourceQuest"] = 13607,	-- The Celestial Planetarium
+						["timeline"] = { "removed 7.3.5.25600" },
+						["groups"] = {
+							objective(1, {	-- 0/1 Freya's Sigil
+								["provider"] = { "i", 45788 },	-- Freya's Sigil
+								["cr"] = 32906,	-- Freya
+							}),
+						},
+					}),
+					q(13609, {	-- Hodir's Sigil
+						["qg"] = 33957,	-- Prospector Loren
+						["sourceQuest"] = 13607,	-- The Celestial Planetarium
+						["timeline"] = { "removed 7.3.5.25600" },
+						["groups"] = {
+							objective(1, {	-- 0/1 Hodir's Sigil
+								["provider"] = { "i", 45786 },	-- Hodir's Sigil
+								["cr"] = 32845,	-- Hodir
+							}),
+						},
+					}),
+					q(13611, {	-- Mimiron's Sigil
+						["qg"] = 33957,	-- Prospector Loren
+						["sourceQuest"] = 13607,	-- The Celestial Planetarium
+						["timeline"] = { "removed 7.3.5.25600" },
+						["groups"] = {
+							objective(1, {	-- 0/1 Mimiron's Sigil
+								["provider"] = { "i", 45787 },	-- Mimiron's Sigil
+								["cr"] = 33350,	-- Mimiron
+							}),
+						},
+					}),
+					q(13607, {	-- The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
+						["sourceQuest"] = 13604,	-- Archivum Data Disc
+						["timeline"] = { "removed 7.3.5.25600" },
+					}),
+					q(13610, {	-- Thorim's Sigil
+						["qg"] = 33957,	-- Prospector Loren
+						["sourceQuest"] = 13607,	-- The Celestial Planetarium
+						["timeline"] = { "removed 7.3.5.25600" },
+						["groups"] = {
+							objective(1, {	-- 0/1 Thorim's Sigil
+								["provider"] = { "i", 45784 },	-- Thorim's Sigil
+								["cr"] = 32865,	-- Thorim
+							}),
+						},
+					}),
+					
+					q(13818, {	-- Heroic: Algalon
+						["providers"] = {
+							{ "n", 33957 },	-- Prospector Loren
+							{ "i", 45855 },	-- Sigils of the Watchers
+						},
+						["sourceQuests"] = {
+							13821,	-- Heroic: Freya's Sigil
+							13822,	-- Heroic: Hodir's Sigil
+							13824,	-- Heroic: Mimiron's Sigil
+							13823,	-- Heroic: Thorim's Sigil
+						},
+						["groups"] = {
+							i(45798),	-- Heroic Celestial Planetarium Key
+							i(45878, {	-- Large Sack of Ulduar Spoils
+								["sym"] = {
+									{ "selectparent", 3 },	-- Select the difficulty header.
+									{ "pop" },	-- Get the Rewards.
+									{ "where", "headerID", COMMON_BOSS_DROPS },	-- Select the "Common Boss Drops" header.
+									{ "pop" },	-- Get the Rewards.
+									{ "exclude", "itemID", 46027, 46348, 45038 },	-- Exclude the Enchanting Recipes & Fragment
+								},
+							}),
+						},
+					}),
 					q(13819, {	-- Heroic: All Is Well That Ends Well
 						["providers"] = {
 							{ "i", 46053 },	-- Reply-Code Alpha
@@ -2190,81 +1998,50 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45614),	-- Starshine Circle
 						},
 					}),
-					q(13816, {	-- Heroic: The Celestial Planetarium
-						["sourceQuest"] = 13817,	-- Heroic: Archivum Data Disc
-						["provider"] = { "n", 33957 },	-- Prospector Loren
+					q(13817, {	-- Heroic: Archivum Data Disc
+						["provider"] = { "i", 45857 },	-- Heroic: Archivum Data Disc
 					}),
 					q(13821, {	-- Heroic: Freya's Sigil
+						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = { 32906 },	-- Freya
 						["groups"] = {
-							objective(1, {
+							objective(1, {	-- 0/1 Freya's Sigil
 								["provider"] = { "i", 45814 },	-- Freya's Sigil
+								["cr"] = 32906,	-- Freya
 							}),
 						},
 					}),
 					q(13822, {	-- Heroic: Hodir's Sigil
+						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = { 32845 },	-- Hodir
 						["groups"] = {
-							objective(1, {
+							objective(1, {	-- 0/1 Hodir's Sigil
 								["provider"] = { "i", 45815 },	-- Hodir's Sigil
+								["cr"] = 32845,	-- Hodir
 							}),
 						},
 					}),
 					q(13824, {	-- Heroic: Mimiron's Sigil
+						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = { 33350 },	-- Mimiron
 						["groups"] = {
-							objective(1, {
+							objective(1, {	-- 0/1 Mimiron's Sigil
 								["provider"] = { "i", 45816 },	-- Mimiron's Sigil
+								["cr"] = 33350,	-- Mimiron
 							}),
 						},
+					}),
+					q(13816, {	-- Heroic: The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
+						["sourceQuest"] = 13817,	-- Heroic: Archivum Data Disc
 					}),
 					q(13823, {	-- Heroic: Thorim's Sigil
+						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = { 32865 },	-- Thorim
 						["groups"] = {
-							objective(1, {
+							objective(1, {	-- 0/1 Thorim's Sigil
 								["provider"] = { "i", 45817 },	-- Thorim's Sigil
-							}),
-						},
-					}),
-					q(13818, {	-- Heroic: Algalon
-						["sourceQuests"] = {
-							13821,	-- Heroic: Freya's Sigil
-							13822,	-- Heroic: Hodir's Sigil
-							13824,	-- Heroic: Mimiron's Sigil
-							13823,	-- Heroic: Thorim's Sigil
-						},
-						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = { 32871 },	-- Algalon the Observer
-						["groups"] = {
-							i(45798),	-- Heroic Celestial Planetarium Key
-							i(45878, {	-- Large Sack of Ulduar Spoils
-								i(45087),	-- Runed Orb
-								i(45100),	-- Pattern: Belt of Arctic Life
-								i(45094),	-- Pattern: Belt of Dragons
-								i(45096),	-- Pattern: Blue Belt of Chaos
-								i(45095),	-- Pattern: Boots of Living Scale
-								i(45101),	-- Pattern: Boots of Wintry Endurance
-								i(45104),	-- Pattern: Cord of the White Dawn
-								i(45098),	-- Pattern: Death-Warmed Belt
-								i(45099),	-- Pattern: Footpads of Silence
-								i(45097),	-- Pattern: Lightning Grounded Boots
-								i(45102),	-- Pattern: Sash of Ancient Power
-								i(45105),	-- Pattern: Savior's Slippers
-								i(45103),	-- Pattern: Spellslinger's Slippers
-								i(45089),	-- Plans: Battlelord's Plate Boots (RECIPE!)
-								i(45088),	-- Plans: Belt of the Titans (RECIPE!)
-								i(45092),	-- Plans: Indestructible Plate Girdle (RECIPE!)
-								i(45090),	-- Plans: Plate Girdle of Righteousness (RECIPE!)
-								i(45093),	-- Plans: Spiked Deathdealers (RECIPE!)
-								i(45091),	-- Plans: Treads of Destiny (RECIPE!)
+								["cr"] = 32865,	-- Thorim
 							}),
 						},
 					}),
@@ -2338,7 +2115,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45091),	-- Plans: Treads of Destiny (RECIPE!)
 					},
 				}),
-				ach(12312),	-- Dwarfageddon
 				e(1637, {	-- Flame Leviathan
 					["creatureID"] = 33113,	-- Flame Leviathan
 					["groups"] = {
@@ -2607,12 +2383,8 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45455),	-- Belt of the Crystal Tree
 							i(45244),	-- Greaves of Swift Vengeance
 							i(45456),	-- Loop of the Agile
-							i(45506, {	-- Archivum Data Disc
-								["questID"] = 13604,	-- Archivum Data Disc
-							}),
-							i(45857, {	-- Archivum Data Disc
-								["questID"] = 13817,	-- Heroic: Archivum Data Disc
-							}),
+							i(45506),	-- Archivum Data Disc
+							i(45857),	-- Archivum Data Disc
 						}),
 						ach(12333),	-- I Choose You, Stormcaller Brundir
 						i(142088, {	-- Stormforged Rune (PET!)
@@ -2735,21 +2507,23 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45460),	-- Bindings of Winter Gale
 							i(45888),	-- Bitter Cold Armguards
 							i(45462),	-- Gloves of the Frozen Glade
+							i(45786),	-- Hodir's Sigil
+							i(45815),	-- Hodir's Sigil
 						}),
 						ach(12344),	-- I Have the Coolest Friends
 						ach(12346),	-- Staying Buffed All Winter
-						i(45632),	-- Breastplate of the Wayward Conqueror
-						i(45633),	-- Breastplate of the Wayward Protector
-						i(45634),	-- Breastplate of the Wayward Vanquisher
-						i(45650),	-- Leggings of the Wayward Conqueror
-						i(45651),	-- Leggings of the Wayward Protector
-						i(45652),	-- Leggings of the Wayward Vanquisher
 						i(142090, {	-- Ominous Pile of Snow (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
 						i(138800, {	-- Illusion: Blade Ward
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
+						i(45632),	-- Breastplate of the Wayward Conqueror
+						i(45633),	-- Breastplate of the Wayward Protector
+						i(45634),	-- Breastplate of the Wayward Vanquisher
+						i(45650),	-- Leggings of the Wayward Conqueror
+						i(45651),	-- Leggings of the Wayward Protector
+						i(45652),	-- Leggings of the Wayward Vanquisher
 						i(45458),	-- Stormedge
 						i(45872),	-- Avalanche
 						i(45450),	-- Northern Barrier
@@ -2760,8 +2534,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45452),	-- Frostplate Greaves
 						i(45451),	-- Frozen Loop
 						i(45874),	-- Signet of Winter
-						i(45786),	-- Hodir's Sigil
-						i(45815),	-- Hodir's Sigil
 					},
 				}),
 				e(1645, {	-- Thorim
@@ -2785,18 +2557,20 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45471),	-- Fate's Clutch
 							i(45931),	-- Mjolnir Runestone
 							i(45929),	-- Sif's Remembrance
+							i(45784),	-- Thorim's Sigil
+							i(45817),	-- Thorim's Sigil
 						}),
 						ach(12351),	-- Siffed
 						ach(12350),	-- Who Needs Bloodlust?
+						i(138800, {	-- Illusion: Blade Ward
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 						i(45638),	-- Crown of the Wayward Conqueror
 						i(45639),	-- Crown of the Wayward Protector
 						i(45640),	-- Crown of the Wayward Vanquisher
 						i(45659),	-- Spaulders of the Wayward Conqueror
 						i(45660),	-- Spaulders of the Wayward Protector
 						i(45661),	-- Spaulders of the Wayward Vanquisher
-						i(138800, {	-- Illusion: Blade Ward
-							["timeline"] = { "added 7.0.3.22248" },
-						}),
 						i(45892),	-- Legacy of Thunder
 						i(45463),	-- Vulmir, the Northern Tempest
 						i(45893),	-- Guise of the Midgard Serpent
@@ -2807,16 +2581,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45894),	-- Leggings of Unstable Discharge
 						i(45469),	-- Sif's Promise
 						i(45466),	-- Scale of Fates
-						i(45784),	-- Thorim's Sigil
-						i(45817),	-- Thorim's Sigil
-					},
-				}),
-				ach(12360, {	-- Lumberjacked
-					["description"] = "Must be killed before killing Freya or they will despawn.",
-					["providers"] = {
-						{ "n", 32915 },	-- Elder Brightleaf
-						{ "n", 32913 },	-- Elder Ironbranch
-						{ "n", 32914 },	-- Elder Stonebark
 					},
 				}),
 				e(1646, {	-- Freya
@@ -2839,9 +2603,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45487),	-- Handguards of Revitalization
 							i(45488),	-- Leggings of the Enslaved Idol
 							i(45946),	-- Fire Orchid Signet
+							i(45788),	-- Freya's Sigil
+							i(45814),	-- Freya's Sigil
 						}),
 						i(142091, {	-- Blessed Seed (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
+						}),
+						i(138800, {	-- Illusion: Blade Ward
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(45644),	-- Gloves of the Wayward Conqueror
 						i(45645),	-- Gloves of the Wayward Protector
@@ -2849,9 +2618,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45653),	-- Legplates of the Wayward Conqueror
 						i(45654),	-- Legplates of the Wayward Protector
 						i(45655),	-- Legplates of the Wayward Vanquisher
-						i(138800, {	-- Illusion: Blade Ward
-							["timeline"] = { "added 7.0.3.22248" },
-						}),
 						i(45479),	-- The Lifebinder
 						i(45934),	-- Unraveling Reach
 						i(45935),	-- Ironbark Faceguard
@@ -2862,8 +2628,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45482),	-- Leggings of the Lifetender
 						i(45936),	-- Legplates of Fluorishing Resolve
 						i(45483),	-- Boots of the Servant
-						i(45788),	-- Freya's Sigil
-						i(45814),	-- Freya's Sigil
 						i(46110, {	-- Alchemist's Cache
 							["requireSkill"] = ALCHEMY,
 						}),
@@ -2889,6 +2653,8 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45988),	-- Greaves of the Iron Army
 							i(45989),	-- Tempered Mercury Greaves
 							i(45495),	-- Conductive Seal
+							i(45787),	-- Mimiron's Sigil
+							i(45816),	-- Mimiron's Sigil
 						}),
 						ach(12368),	-- Not-So-Friendly Fire
 						ach(12367, {	-- Set Up Us the Bomb
@@ -2896,18 +2662,18 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							crit(2),	-- A Rocket Strike
 							crit(3),	-- A Bomb Bot
 						}),
-						i(45641),	-- Gauntlets of the Wayward Conqueror
-						i(45642),	-- Gauntlets of the Wayward Protector
-						i(45643),	-- Gauntlets of the Wayward Vanquisher
-						i(45647),	-- Helm of the Wayward Conqueror
-						i(45648),	-- Helm of the Wayward Protector
-						i(45649),	-- Helm of the Wayward Vanquisher
 						i(138800, {	-- Illusion: Blade Ward
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(142092, {	-- Overcomplicated Controller (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
+						i(45641),	-- Gauntlets of the Wayward Conqueror
+						i(45642),	-- Gauntlets of the Wayward Protector
+						i(45643),	-- Gauntlets of the Wayward Vanquisher
+						i(45647),	-- Helm of the Wayward Conqueror
+						i(45648),	-- Helm of the Wayward Protector
+						i(45649),	-- Helm of the Wayward Vanquisher
 						i(45489),	-- Insanity's Grip
 						i(45972),	-- Pulse Baton
 						i(45492),	-- Malleable Steelweave Mantle
@@ -2918,8 +2684,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45975),	-- Cable of the Metrognome
 						i(45491),	-- Waistguard of the Creator
 						i(45490),	-- Pandora's Plea
-						i(45787),	-- Mimiron's Sigil
-						i(45816),	-- Mimiron's Sigil
 						i(140782, {	-- Neural Net Detangler
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
@@ -2983,17 +2747,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45693),	-- Mimiron's Head (MOUNT!)
 							i(46312),	-- Vanquished Clutches of Yogg-Saron
 						}),
-						ach(12395),	-- Drive Me Crazy
-						ach(12396),	-- He's Not Getting Any Older
-						ach(12398, {	-- In His House He Waits Dreaming
-							crit(1),	-- The Assassination of King Llane
-							crit(2),	-- The Forging of the Demon Soul
-							crit(3),	-- The Tortured Champion
-						}),
-						ach(12384, {	-- Kiss and Make Up
-							["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
-							["crs"] = { 33134 },	-- Sara
-						}),
 						ach(12387, {	-- One Light in the Darkness
 							i(45533),	-- Dark Edge of Depravity
 							i(46067),	-- Hammer of Crushing Whispers
@@ -3008,19 +2761,30 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						}),
 						ach(12386),	-- Two Lights in the Darkness
 						ach(12385),	-- Three Lights in the Darkness
+						ach(12395),	-- Drive Me Crazy
+						ach(12396),	-- He's Not Getting Any Older
+						ach(12398, {	-- In His House He Waits Dreaming
+							crit(1),	-- The Assassination of King Llane
+							crit(2),	-- The Forging of the Demon Soul
+							crit(3),	-- The Tortured Champion
+						}),
+						ach(12384, {	-- Kiss and Make Up
+							["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
+							["crs"] = { 33134 },	-- Sara
+						}),
 						ach(12397),	-- They're Coming Out of the Walls
-						i(45635),	-- Chestguard of the Wayward Conqueror
-						i(45636),	-- Chestguard of the Wayward Protector
-						i(45637),	-- Chestguard of the Wayward Vanquisher
-						i(45656),	-- Mantle of the Wayward Conqueror
-						i(45657),	-- Mantle of the Wayward Protector
-						i(45658),	-- Mantle of the Wayward Vanquisher
 						i(138801, {	-- Illusion: Blood Draining
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(142093, {	-- Wriggling Darkness (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
+						i(45635),	-- Chestguard of the Wayward Conqueror
+						i(45636),	-- Chestguard of the Wayward Protector
+						i(45637),	-- Chestguard of the Wayward Vanquisher
+						i(45656),	-- Mantle of the Wayward Conqueror
+						i(45657),	-- Mantle of the Wayward Protector
+						i(45658),	-- Mantle of the Wayward Vanquisher
 						i(46016),	-- Abaddon
 						i(46025),	-- Devotion
 						i(45521),	-- Earthshaper
