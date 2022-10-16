@@ -9,6 +9,12 @@ root("PVP", pvp(tier(DF_TIER, {
 			ach(15956),	-- Challenger II: Dragonflight Season 1
 			ach(15960),	-- Combatant I: Dragonflight Season 1
 			ach(15961),	-- Combatant II: Dragonflight Season 1
+			ach(15943, {	-- Crimson Combatant [A]
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(15942, {	-- Crimson Combatant [H]
+				["races"] = HORDE_ONLY,
+			}),
 			ach(15951),	-- Crimson Gladiator: Dragonflight Season 1
 			ach(16734),	-- Crimson Soloist: Dragonflight Season 1
 			ach(15954),	-- Duelist: Dragonflight Season 1

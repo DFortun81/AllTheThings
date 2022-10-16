@@ -55,6 +55,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2565, {	-- Echo of Doragosa
 					["crs"] = { 190609 },	-- Echo of Doragosa
 					["g"] = {
+						ach(16269),	-- Algeth'ar Academy
 						i(193701),	-- Algeth'ar Puzzle Box
 						i(193705),	-- Breastplate of Proven Knowledge
 						i(193707),	-- Final Grade
@@ -106,6 +107,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2565, {	-- Echo of Doragosa
 					["crs"] = { 190609 },	-- Echo of Doragosa
 					["g"] = {
+						ach(16270),	-- Heroic: Algeth'ar Academy
 						i(193701),	-- Algeth'ar Puzzle Box
 						i(193705),	-- Breastplate of Proven Knowledge
 						i(193707),	-- Final Grade
@@ -126,6 +128,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 						194181, -- Vexamus
 					},
 					["g"] = {
+						ach(16434),	-- See Me After Class
 						i(193708),	-- Platinum Star Band
 						i(193711),	-- Spellbane Cutlass
 						i(193710),	-- Spellboon Saber
@@ -135,6 +138,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2563, {	-- Overgrown Ancient
 					["crs"] = { 196482 },	-- Overgrown Ancient
 					["g"] = {
+						ach(16329),	-- Duck, Duck, Spruce!
 						i(193716),	-- Algeth'ar Hedgecleaver
 						i(193715),	-- Boots of Explosive Growth
 						i(193713),	-- Experimental Safety Gloves
@@ -146,6 +150,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2564, {	-- Crawth
 					["crs"] = { 191736 },	-- Crawth
 					["g"] = {
+						ach(16441),	-- Squad Goals
 						i(193722),	-- Azure Belt of Competition
 						i(193720),	-- Bronze Challenger's Robe
 						i(193719),	-- Dragon Games Equipment
@@ -157,6 +162,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2565, {	-- Echo of Doragosa
 					["crs"] = { 190609 },	-- Echo of Doragosa
 					["g"] = {
+						ach(16271),	-- Mythic: Algeth'ar Academy
 						i(193701),	-- Algeth'ar Puzzle Box
 						i(193705),	-- Breastplate of Proven Knowledge
 						i(193707),	-- Final Grade

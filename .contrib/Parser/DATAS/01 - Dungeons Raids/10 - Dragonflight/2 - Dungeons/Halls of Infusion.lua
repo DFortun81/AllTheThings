@@ -53,6 +53,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2618, {	-- Primal Tsunami
 					["crs"] = { 189729 },	-- Primal Tsunami
 					["g"] = {
+						ach(16260),	-- Halls of Infusion
 						i(193741),	-- Mantle of Crushing Waves
 						i(193738),	-- Robe of Plunging Depths
 						i(193740),	-- Torrential Downpour Gauntlets
@@ -98,6 +99,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2618, {	-- Primal Tsunami
 					["crs"] = { 189729 },	-- Primal Tsunami
 					["g"] = {
+						ach(16261),	-- Heroic: Halls of Infusion
 						i(193741),	-- Mantle of Crushing Waves
 						i(193738),	-- Robe of Plunging Depths
 						i(193740),	-- Torrential Downpour Gauntlets
@@ -108,6 +110,9 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				}),
 			}),
 			d(23, {	-- Mythic
+				n(ACHIEVEMENTS, {
+					ach(16517),	-- Toxicity Strike Team
+				}),
 				e(2615, {	-- Watcher Irideus
 					["crs"] = { 189719 },	-- Watcher Irideus
 					["g"] = {
@@ -121,6 +126,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2616, {	-- Gulping Goliath
 					["crs"] = { 189722 },	-- Gulping Goliath
 					["g"] = {
+						ach(16426),	-- Hungry Hungry Hornswog
 						i(193726),	-- Amphibian's Bellowing Crown
 						i(193725),	-- Ancient Hornswog Spaulders
 						i(193730),	-- Croaking Dagger
@@ -143,6 +149,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2618, {	-- Primal Tsunami
 					["crs"] = { 189729 },	-- Primal Tsunami
 					["g"] = {
+						ach(16262),	-- Mythic: Halls of Infusion
+						ach(16427),	-- Go With The Flow
 						i(193741),	-- Mantle of Crushing Waves
 						i(193738),	-- Robe of Plunging Depths
 						i(193740),	-- Torrential Downpour Gauntlets

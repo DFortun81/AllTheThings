@@ -4,6 +4,13 @@
 root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
 	n(MARUUK_CENTAUR, {
 		n(AYLAAG, {
+			n(ACHIEVEMENTS, {
+				ach(16462, {	-- The Ohn'ahran Trail
+					crit(1),	-- Aylaag Outpost to river camp
+					crit(2),	-- River camp to Eaglewatch Outpost
+					crit(3),	-- Eaglewatch Outpost to Aylaag Outpost
+				}),
+			}),
 			n(QUESTS, {
 				q(67039, {	-- An Amazing Journey
 					--["sourceQuests"] = {  },

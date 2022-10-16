@@ -1098,11 +1098,18 @@ pet(0, 3249, {			-- Lil' Ursoc
 -- PATCH 10.0.0 --
 ------------------
 -- SOURCED
-pet(199175, 3316);	-- Lubbins
-pet(193484, 3302);	-- Pilot
-pet(198353, 3368);	-- Shiverweb Broodling
-pet(193619, 3319);	-- Yipper
+pet(199688, 3279);	-- Bronze Racing Enthusiast
+pet(191941, 3264);	-- Crystalline Mini-Monster
 
+pet(199175, 3316);	-- Lubbins
+
+pet(191946, 3265);	-- Mister Muskoxeles
+pet(200519, 3286);	-- Mister Toots
+pet(193484, 3302);	-- Pilot
+pet(191936, 3263);	-- Secretive Frogduck
+pet(198353, 3368);	-- Shiverweb Broodling
+pet(191932, 3262);	-- Violet Violence
+pet(193619, 3319);	-- Yipper
 
 pet(0, 3367);	-- Emberling
 pet(0, 3300);	-- Ironbeak Duck
@@ -1121,10 +1128,6 @@ pet(0, 3257);	-- Test Beetle
 pet(191915, 3259);	-- Time-Lost Feral Rabbit
 pet(0, 3260);	-- Snowy Treeflitter
 pet(191930, 3261);	-- Blue Phoenix Hatchling
-pet(191932, 3262);	-- Violet Violence
-pet(191936, 3263);	-- Secretive Frogduck
-pet(191941, 3264);	-- Crystalline Mini-Monster
-pet(191946, 3265);	-- Mister Muskoxeles
 pet(0, 3266);	-- Black Slyvern Pup
 pet(193620, 3267);	-- Time-Lost Slyvern
 pet(0, 3268);	-- Swog
@@ -1134,13 +1137,11 @@ pet(191886, 3274);	-- Alvin the Anvil
 pet(193066, 3275);	-- Chestnut
 pet(193068, 3277);	-- Time-Lost Treeflitter
 pet(193071, 3278);	-- Pistachio
-pet(0, 3279);	-- Bronze Racing Enthusiast
 pet(0, 3280);	-- Shyfly
 pet(0, 3281);	-- Scruffy Ottuk
 pet(0, 3283);	-- Snowlemental
 pet(193225, 3284);	-- Whiskuk
 pet(193235, 3285);	-- Scarlet Ottuk Pup
-pet(0, 3286);	-- Mister Toots
 pet(0, 3287);	-- Ghostflame
 pet(0, 3288);	-- Trunkalumpf
 pet(0, 3289);	-- Echo of the Inferno
@@ -1194,7 +1195,6 @@ pet(193885, 3345);	-- Jeweled Amber Whelpling
 pet(193887, 3346);	-- Jeweled Ruby Whelpling
 pet(193888, 3347);	-- Jeweled Emerald Whelpling
 pet(0, 3348);	-- Primal Stormling
-pet(194098, 3350);	-- Lord Basilton
 pet(0, 3351);	-- Grizzlefur Cub
 pet(0, 3352);	-- Razortooth Bear Cub
 pet(0, 3354);	-- Storm-Touched Ottuk

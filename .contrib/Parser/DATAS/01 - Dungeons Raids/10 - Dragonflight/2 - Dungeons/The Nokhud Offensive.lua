@@ -17,7 +17,9 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["coord"] = { 41.6, 56.7, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(200251),	-- Medallion of the ancestors
-						-- Crit Elder Nazuun
+						crit(5, {	-- Elder Nazuun
+							["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
+						}),
 					},
 				}),
 				q(66658, {	-- The Nokhud Offensive: Founders Keepers
@@ -28,7 +30,9 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 						i(197897),	-- Keratin-Reinforced Coif
 						i(197899),	-- Speakbreaker Barbuta
 						i(197356),	-- Renewed Proto-Drake: Hairy Back
-						-- Crit Eternal Krugans
+						crit(6, {	-- The Eternal Kurgans
+							["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
+						}),
 					},
 				}),
 				q(66339, {	-- The Wind Belongs to the Sky
@@ -81,6 +85,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2580, {	-- Balakar Khan
 					["crs"] = { 186151 },	-- Balakar Khan
 					["g"] = {
+						ach(16275),	-- The Nokhud Offensive
 						i(193683),	-- Blessed Ohn'ir Robes
 						i(193687),	-- Koroleth's Crackling Dagger
 						i(193684),	-- Legguards of Adamant Rule
@@ -131,6 +136,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2580, {	-- Balakar Khan
 					["crs"] = { 186151 },	-- Balakar Khan
 					["g"] = {
+						ach(16276),	-- Heroic: The Nokhud Offensive
 						i(193683),	-- Blessed Ohn'ir Robes
 						i(193687),	-- Koroleth's Crackling Dagger
 						i(193684),	-- Legguards of Adamant Rule
@@ -142,6 +148,9 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				}),
 			}),
 			d(23, {	-- Mythic
+				n(ACHIEVEMENTS, {
+					ach(16620),	-- Ohuna Incubation
+				}),
 				e(2637, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
@@ -157,6 +166,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2636, {	-- The Raging Tempest
 					["crs"] = { 186615 },	-- The Raging Tempest
 					["g"] = {
+						ach(16447),	-- What Are The Chances...
 						i(193697),	-- Bottle of Spiraling Winds
 						i(193699),	-- Staff of Violent Storms
 						i(193700),	-- Strike Twice
@@ -170,6 +180,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 						186339,	-- Teera
 					},
 					["g"] = {
+						ach(16456),	-- Weapons of the Maruukai
 						i(193681),	-- Bow of the First Khanam
 						i(193677),	-- Furious Ragefeather
 						i(193679),	-- Idol of Trampling Hooves
@@ -181,6 +192,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2580, {	-- Balakar Khan
 					["crs"] = { 186151 },	-- Balakar Khan
 					["g"] = {
+						ach(16277),	-- Mythic: The Nokhud Offensive
+						ach(16602),	-- Nokhud Deed Goes Unnoticed
 						i(193683),	-- Blessed Ohn'ir Robes
 						i(193687),	-- Koroleth's Crackling Dagger
 						i(193684),	-- Legguards of Adamant Rule

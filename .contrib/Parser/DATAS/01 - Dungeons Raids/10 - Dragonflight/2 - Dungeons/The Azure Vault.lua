@@ -54,6 +54,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2584, {	-- Umbrelskul
 					["crs"] = { 186738 },	-- Umbrelskul
 					["g"] = {
+						ach(16272),	-- The Azure Vault
 						i(193644),	-- Breastplate of Irreparable Madness
 						i(193645),	-- Crystalized Bulwark
 						i(193641),	-- Headwrap of the Abandoned
@@ -102,6 +103,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2584, {	-- Umbrelskul
 					["crs"] = { 186738 },	-- Umbrelskul
 					["g"] = {
+						ach(16273),	-- Heroic: The Azure Vault
 						i(193644),	-- Breastplate of Irreparable Madness
 						i(193645),	-- Crystalized Bulwark
 						i(193641),	-- Headwrap of the Abandoned
@@ -140,6 +142,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2583, {	-- Telash Greywing
 					["crs"] = { 186737 },	-- Telash Greywing
 					["g"] = {
+						ach(16445),	-- Icy What You Did There
 						i(193648),	-- Azureblade's Work Gloves
 						i(193647),	-- Custodian's Seal of Delusion
 						i(193651),	-- Golden-Winged Rod
@@ -150,6 +153,9 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2584, {	-- Umbrelskul
 					["crs"] = { 186738 },	-- Umbrelskul
 					["g"] = {
+						ach(16274),	-- Mythic: The Azure Vault
+						ach(16330),	-- You Must Be Made of Hide
+						ach(16331),	-- The Cracked Crystal
 						i(193644),	-- Breastplate of Irreparable Madness
 						i(193645),	-- Crystalized Bulwark
 						i(193641),	-- Headwrap of the Abandoned

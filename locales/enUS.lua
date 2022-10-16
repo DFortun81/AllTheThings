@@ -1353,6 +1353,8 @@ app.L = {
 		[-1009] = app.asset("Difficulty_Mythic"),
 		[-1010] = "Interface\\Worldmap\\GlowSkull_64Purple",
 		[-1011] = "Interface\\Worldmap\\GlowSkull_64Red",
+	-- Temp
+		[-1099] = "Interface\\Icons\\inv_legioncampaign04",											-- Campaign
 	-- Dragonflight
 		[-1100] = "Interface\\Icons\\ability_dragonriding_glyph01",									-- Dragon Customization
 		[-1101] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_trinket_1ragingelement_air",	-- Primal Storms
@@ -1919,7 +1921,6 @@ app.L = {
 		[-1010] = "Gladiator Alternative",											-- Gladiator Alternative
 		[-1011] = "Elite Alternative",												-- Elite Alternative
 	-- Temp
-		[-1098] = "Side Quests",													-- Side Quests
 		[-1099] = TRACKER_HEADER_CAMPAIGN_QUESTS,									-- Campaign
 	-- Dragonflight
 		[-1100] = "Dragon Customization",											-- Dragon Customization

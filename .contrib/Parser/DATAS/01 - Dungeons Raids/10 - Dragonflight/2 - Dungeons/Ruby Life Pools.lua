@@ -44,6 +44,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({
 						190485,	-- Erkhart Stormvein
 					},
 					["g"] = {
+						ach(16266),	-- Ruby Life Pools
 						i(193755),	-- Backdraft Cleaver
 						i(193751),	-- Crown of Roaring Storms
 						i(193754),	-- Drake Rider's Stecktarge
@@ -84,6 +85,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({
 						190485,	-- Erkhart Stormvein
 					},
 					["g"] = {
+						ach(16267),	-- Heroic: Ruby Life Pools
 						i(193755),	-- Backdraft Cleaver
 						i(193751),	-- Crown of Roaring Storms
 						i(193754),	-- Drake Rider's Stecktarge
@@ -101,6 +103,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({
 				e(2609, {	-- Melidrussa Chillworn
 					["crs"] = { 188252 },	-- Melidrussa Chillworn
 					["g"] = {
+						ach(16402),	-- Dragon Kill Points
 						i(193761),	-- Chillworn's Infusion Staff
 						i(193759),	-- Egg Tender's Leggings
 						i(193757),	-- Ruby Whelp Shell
@@ -111,6 +114,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({
 				e(2606, {	-- Kokia Blazehoof
 					["crs"] = { 189232 },	-- Kokia Blazehoof
 					["g"] = {
+						ach(16320),	-- Does Steam Do Fire Damage?
 						i(193762),	-- Blazebinder's Hoof
 						i(193765),	-- Blazebound Lieutenant's Helm
 						i(193763),	-- Fireproof Drape of Cinders
@@ -125,6 +129,8 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({
 						190485,	-- Erkhart Stormvein
 					},
 					["g"] = {
+						ach(16268),	-- Mythic: Ruby Life Pools
+						ach(16440),	-- Are You My Broodmother?
 						i(193755),	-- Backdraft Cleaver
 						i(193751),	-- Crown of Roaring Storms
 						i(193754),	-- Drake Rider's Stecktarge

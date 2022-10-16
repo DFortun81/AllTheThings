@@ -4,6 +4,18 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 	achcat(ACHIEVEMENT_CATEGORY_MOUNTS, {
+		ach(15834, {	-- A Horde of Hoofbeats (A, 500 mounts)
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				i(198654),	-- Otterworldly Ottuk Carrier (MOUNT!)
+			},
+		}),
+		ach(15833, {	-- A Horde of Hoofbeats (H, 500 mounts)
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				i(198654),	-- Otterworldly Ottuk Carrier (MOUNT!)
+			},
+		}),
 		ach(12933, {	-- A Horde of Hoofbeats (A, 400 mounts)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {

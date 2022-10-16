@@ -50,6 +50,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2611, {	-- Warlord Sargha
 					["crs"] = { 189901 },	-- Warlord Sargha
 					["g"] = {
+						ach(16263),	-- Neltharus
 						i(193776),	-- Dragonkiln Chestguard
 						i(193777),	-- Helm of Hardened Gold
 						i(193778),	-- Qalashi Defender
@@ -95,6 +96,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2611, {	-- Warlord Sargha
 					["crs"] = { 189901 },	-- Warlord Sargha
 					["g"] = {
+						ach(16264),	-- Heroic: Neltharus
 						i(193776),	-- Dragonkiln Chestguard
 						i(193777),	-- Helm of Hardened Gold
 						i(193778),	-- Qalashi Defender
@@ -109,6 +111,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2613, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales
 					["g"] = {
+						ach(16438),	-- Knowledge is... Preserved?
 						i(193772),	-- Dragonscale Ripper
 						i(193769),	-- Erupting Spear Fragment
 						i(193727),	-- Obsidian-Hardened Wraps
@@ -119,6 +122,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2612, {	-- Forgemaster Gorek
 					["crs"] = { 189478 },	-- Forgemaster Gorek
 					["g"] = {
+						ach(16432),	-- Ready for Raiding VIII
 						i(193782),	-- Emberguard Harness
 						i(193780),	-- Flare-Singed Strap
 						i(193784),	-- Forgemaster's Grips
@@ -130,6 +134,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2610, {	-- Magmatusk
 					["crs"] = { 181861 },	-- Magmatusk
 					["g"] = {
+						ach(16453),	-- Liquid Hot Magma
 						i(193789),	-- Fural's Blazing Faulds
 						i(193787),	-- Mammoth Trainer Drape
 						i(193788),	-- Molten Magma Mantle
@@ -140,6 +145,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2611, {	-- Warlord Sargha
 					["crs"] = { 189901 },	-- Warlord Sargha
 					["g"] = {
+						ach(16265),	-- Mythic: Neltharus
 						i(193776),	-- Dragonkiln Chestguard
 						i(193777),	-- Helm of Hardened Gold
 						i(193778),	-- Qalashi Defender

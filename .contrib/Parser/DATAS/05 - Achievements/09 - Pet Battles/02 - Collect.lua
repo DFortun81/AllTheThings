@@ -217,39 +217,51 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(20),		-- Un'Goro Crater
 			crit(21),		-- Winterspring
 		})),
-		petbattle(ach(12958, {	-- Master of Minions (1000) *
-			i(163218),		-- Hearthy
-			ach(12992, {	-- Pet Emporium
-				i(163220),		-- Rooter
-			}),
-			ach(9643, {		-- So. Many. Pets. (600)
-				i(118577),		-- Stormwing
-			}),
-			ach(7501, {		-- That's a Lot of Pet Food (400)
-				i(89736),		-- Venus
-			}),
-			ach(7500, {		-- Going to Need More Leashes(250)
-				i(85578),		-- Feral Vermling
-			}),
-			ach(5875, {		-- Littlest Pet Shop (150)
-				i(54810),		-- Celestial Dragon
-			}),
-			ach(5877, {		-- Menagerie (125)
-				i(71387),		-- Brilliant Kaliri
-			}),
-			ach(5876, {		-- Petting Zoo (100)
-				i(71140),		-- Nuts' Acorn
-			}),
-			ach(2516, {		-- Lil' Game Hunter (75)
-				i(44841),		-- Little Fawn's Salt Lick
-			}),
-			ach(1250, {		-- Shop Smart, Shop Pet...Smart (50)
-				i(40653),		-- Reeking Pet Carrier
-			}),
-			ach(1248),		-- Plethora of Pets (25)
-			ach(15),		-- Plenty of Pets (15)
-			ach(1017),		-- Can I Keep Him? (1)
-		})),
+		petbattle(ach(15644, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {	-- Good Things Come in Small Packages (2000)
+			i(191946),	-- Mister Muskoxeles (PET!)
+		}))),
+		petbattle(ach(15643,  bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {	-- What Can I Say? They Love Me. (1750)
+			i(191932),	-- Violet Violence (PET!)
+		}))),
+		petbattle(ach(15642,  bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {	-- Proven Pet Parent (1500)
+			i(191936),	-- Secretive Frogduck (PET!)
+		}))),
+		petbattle(ach(15641,  bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {	-- Many More Mini Minions (1250)
+			i(191941),	-- Crystalline Mini-Monster (PET!)
+		}))),
+		petbattle(ach(12958, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- Master of Minions (1000)
+			i(163218),		-- Hearthy (PET!)
+		}))),
+		petbattle(ach(12992, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- Pet Emporium (800)
+			i(163220),		-- Rooter (PET!)
+		}))),
+		petbattle(ach(9643, bubbleDownSelf({ ["timeline"] = { "added 6.0.1" } }, {	-- So. Many. Pets. (600)
+			i(118577),		-- Stormwing (PET!)
+		}))),
+		petbattle(ach(7501, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {		-- That's a Lot of Pet Food (400)
+			i(89736),		-- Venus (PET!)
+		}))),
+		petbattle(ach(7500, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {		-- Going to Need More Leashes(250)
+			i(85578),		-- Feral Vermling (PET!)
+		}))),
+		petbattle(ach(5875, bubbleDownSelf({ ["timeline"] = { "added 4.1.0" } }, {		-- Littlest Pet Shop (150)
+			i(54810),		-- Celestial Dragon (PET!)
+		}))),
+		petbattle(ach(5877, bubbleDownSelf({ ["timeline"] = { "added 4.1.0" } }, {		-- Menagerie (125)
+			i(71387),		-- Brilliant Kaliri (PET!)
+		}))),
+		petbattle(ach(5876, bubbleDownSelf({ ["timeline"] = { "added 4.1.0" } }, {		-- Petting Zoo (100)
+			i(71140),		-- Nuts' Acorn (PET!)
+		}))),
+		petbattle(ach(2516, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {		-- Lil' Game Hunter (75)
+			i(44841),		-- Little Fawn's Salt Lick (PET!)
+		}))),
+		petbattle(ach(1250, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {		-- Shop Smart, Shop Pet...Smart (50)
+			i(40653),		-- Reeking Pet Carrier (PET!)
+		}))),
+		petbattle(ach(1248, {["timeline"] = { "added 3.0.2" }})),		-- Plethora of Pets (25)
+		petbattle(ach(15, {["timeline"] = { "added 3.0.2" }})),		-- Plenty of Pets (15)
+		petbattle(ach(1017, {["timeline"] = { "added 3.0.2" }})),		-- Can I Keep Him? (1)
 		petbattle(ach(13693, {	-- Mecha-Safari
 			crit(1),	-- Junkheap Roach
 			crit(2),	-- Fleeting Frog

@@ -899,6 +899,7 @@ root("PetBattles", petbattle({
 			["g"] = {
 				i(122457),	-- Ultimate Battle-Training Stone
 				i(200519),	-- Mister Toots (PET!)
+				ach(16399),	-- Lovin' Lubbins
 			},
 		}),
 		-- Daily Quests

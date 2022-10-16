@@ -56,6 +56,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2569, {	-- Decatriarch Wratheye
 					["crs"] = { 186121 },	-- Decatriarch Wratheye
 					["g"] = {
+						ach(16255),	-- Brackenhide Hollow
 						i(193661),	-- Blight Weaver's Clutches
 						i(193665),	-- Decatriarch's Bone Pestle
 						i(193663),	-- Decay Mother's Wrathful Gaze
@@ -105,6 +106,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2569, {	-- Decatriarch Wratheye
 					["crs"] = { 186121 },	-- Decatriarch Wratheye
 					["g"] = {
+						ach(16256),	-- Heroic: Brackenhide Hollow
 						i(193661),	-- Blight Weaver's Clutches
 						i(193665),	-- Decatriarch's Bone Pestle
 						i(193663),	-- Decay Mother's Wrathful Gaze
@@ -115,6 +117,9 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				}),
 			}),
 			d(23, {	-- Mythic
+				n(ACHIEVEMENTS, {
+					ach(16110),	-- Subscribed to Hyena Facts
+				}),
 				e(2570, {	-- Hackclaw's War-Band
 					["crs"] = {
 						186124,	-- Gashtooth
@@ -122,6 +127,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 						186125,	-- Tricktotem
 					},
 					["g"] = {
+						ach(16296),	-- Growlbossify
 						i(193674),	-- Ancestral Stone Shaper
 						i(193671),	-- Bloodied Wedding Ring
 						i(193672),	-- Frenzying Signoll Flare
@@ -132,6 +138,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2568, {	-- Treemouth
 					["crs"] = { 186120 },	-- Treemouth
 					["g"] = {
+						ach(16430),	-- All Bark, All Bite
 						i(193654),	-- Ancient Rot Walkers
 						i(193657),	-- Binders of the Moldering
 						i(193658),	-- Crushing Bough of Deterioration
@@ -154,6 +161,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2569, {	-- Decatriarch Wratheye
 					["crs"] = { 186121 },	-- Decatriarch Wratheye
 					["g"] = {
+						ach(16257),	-- Mythic: Brackenhide Hollow
+						ach(16404),	-- So You Can Kill This in a Way That Matters...
 						i(193661),	-- Blight Weaver's Clutches
 						i(193665),	-- Decatriarch's Bone Pestle
 						i(193663),	-- Decay Mother's Wrathful Gaze

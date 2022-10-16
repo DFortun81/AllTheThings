@@ -1066,6 +1066,7 @@ i(198090);	-- Jar of Excess Slime
 i(200597);	-- Lover's Bouquet
 i(198857);	-- Lucky Duck
 i(198402);	-- Maruuk Cooking Pot
+i(197986);	-- Murglasses
 i(200640);	-- Obsidian Egg Clutch
 i(191891);	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise
 i(199767);	-- Red Dragon Banner
@@ -1075,6 +1076,7 @@ i(199896);	-- Rubbery Fish Head
 i(198721);	-- Skinny Reliquary Pillow
 i(198722);	-- Small Triangular Pillow
 i(198720);	-- Soft Purple Pillow
+i(198428);	-- Tuskarr Dinghy
 i(199892);	-- Tuskarr Traveling Soup Pot
 i(200550);	-- Very Comfortable Pelt
 i(199650);	-- Whale Bone Tea Set
@@ -1087,8 +1089,6 @@ i(193478);	-- Tuskarr Bean Bag
 i(193476);	-- Gnoll Tent
 i(197719);	-- Artisan's Sign
 i(197961);	-- Whelps on Strings
-i(197986);	-- Murglasses
-i(198428);	-- Tuskarr Dinghy
 i(198409);	-- Personal Shell
 i(194052);	-- Forlorn Funeral Pall
 i(198474);	-- Artist's Easel

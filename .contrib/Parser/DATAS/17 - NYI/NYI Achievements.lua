@@ -61,5 +61,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			ach(14593),	-- Torghast: The Upper Reaches: Layer 7
 			ach(14594),	-- Torghast: The Upper Reaches: Layer 8
 		}),
+		---
+		ach(15798),	-- Winding Slitherdrake
 	}),
 }));

@@ -74,18 +74,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					i(198863),	-- Small Dragon Expedition Supply Pack
 				},
 			}),
-				-- RENOWN 7 --
-			q(69855, {	-- A Climber's Calling
-				["description"] = "Requires Renown 7. Spawns Anywhere on Dragon Isles.",
-				["provider"] = { "n", 196643 },	-- Doc Nanners
-				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
-			}),
-			q(66351, {	-- Smoke Over the Mountain
-				["description"] = "Requires Renown 7.",
-				["sourceQuests"] = { 69855 },	-- A Climber's Calling
-				["provider"] = { "n", 187700 },	-- Pathfinder Jab
-				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
-			}),
 			q(70807, {	-- Advanced Excavation Tools
 				["description"] = "Requires Renown 7.",
 				["provider"] = { "n", 188265 },	-- Rae'ana

@@ -61,6 +61,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2559, {	-- Chrono-Lord Deios
 					["crs"] = { 184125 },	-- Chrono-Lord Deios
 					["g"] = {
+						ach(16278),	-- Uldaman: Legacy of Tyr
 						i(193799),	-- Crazed Traveler's Legwraps
 						i(193801),	-- Fatebound Chainmail
 						i(193803),	-- Infinite Dragonspire
@@ -121,6 +122,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2559, {	-- Chrono-Lord Deios
 					["crs"] = { 184125 },	-- Chrono-Lord Deios
 					["g"] = {
+						ach(16279),	-- Heroic: Uldaman: Legacy of Tyr
 						i(193799),	-- Crazed Traveler's Legwraps
 						i(193801),	-- Fatebound Chainmail
 						i(193803),	-- Infinite Dragonspire
@@ -149,6 +151,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2556, {	-- Bromach
 					["crs"] = { 184018 },	-- Bromach
 					["g"] = {
+						ach(16337),	-- It's a Trogg Eat Trogg World
 						i(193809),	-- Bromach's Disentombed Locket
 						i(193813),	-- Excavated Earthen Wristslabs
 						i(193810),	-- Miner's Sturdy Trousers
@@ -160,6 +163,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2557, {	-- Sentinel Talondras
 					["crs"] = { 184124 },	-- Sentinel Talondras
 					["g"] = {
+						ach(16282),	-- No, You're Stunning!
 						i(193806),	-- Ancient Crosswrapped Sandals
 						i(193804),	-- Eternal Sentry's Ring
 						i(193805),	-- Inexorable Resonator
@@ -181,6 +185,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2559, {	-- Chrono-Lord Deios
 					["crs"] = { 184125 },	-- Chrono-Lord Deios
 					["g"] = {
+						ach(16280),	-- Mythic: Uldaman: Legacy of Tyr
+						ach(16281),	-- Like Sands Through the Hourglass
 						i(193799),	-- Crazed Traveler's Legwraps
 						i(193801),	-- Fatebound Chainmail
 						i(193803),	-- Infinite Dragonspire

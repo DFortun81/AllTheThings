@@ -111,7 +111,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					["g"] = {
 						i(197989),	-- Water Ordained Signet
-						-- Chapter 1 finish
+						crit(1, {	-- Into the Archives
+							["achievementID"] = 16336,	-- Azure Spanner
+						}),
 					},
 				}),
 					-- Chapter  2
@@ -209,7 +211,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["g"] = {
 						i(198024),	-- Bramble Chain Bracers
 						i(198016),	-- Twisted Leather Bindings
-						-- Chapter 2 finish
+						crit(2, {	-- Tuskarr Troubles
+							["achievementID"] = 16336,	-- Azure Spanner
+						}),
 					},
 				}),
 					-- Chapter 3
@@ -284,9 +288,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["sourceQuests"] = { 65850 },	-- The Cycle of the Sea
 					["provider"] = { "n", 186177 },	-- Kalecgos
 					["coord"] = { 12.9, 50.4, THE_AZURE_SPAN },
-					--["g"] = {
-						-- Chapter 3 finish
-					--},
+					["g"] = {
+						crit(3, {	-- Decayed Roots
+							["achievementID"] = 16336,	-- Azure Spanner
+						}),
+					},
 				}),
 					-- Chapter 4
 				q(66027, {	-- Calling the Blue Dragons
@@ -294,8 +300,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 186280 },	-- Kalecgos
 					["coord"] = { 39.5, 63.0, THE_AZURE_SPAN },
 					["g"] = {
-						-- spell 377709 (Whirling Surge Unlock)
 						i(194705),	-- Highland Drake (MOUNT!)
+						ach(15797),	-- An Azure Ally
 					},
 				}),
 				q(65886, {	-- To Rhonin's Shield
@@ -378,7 +384,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["g"] = {
 						i(198019),	-- Bramble Chain Pauldrons
 						i(198011),	-- Twisted Leather Spaulders
-						-- Chapter 4 finish
+						crit(4, {	-- Vakthros
+							["achievementID"] = 16336,	-- Azure Spanner
+						}),
 					},
 				}),
 			}),
@@ -1322,6 +1330,154 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					i(191044),	-- Spider Squasher
 					i(198353),	-- Shiverweb Egg (PET!)
 					-- Shiverweb Vale
+				},
+			}),
+
+
+
+
+			q(67741, {	-- Archive Ambit
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 193027 },	-- Bronze Timekeeper
+				["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					ach(15847),	-- Archive Ambit: Bronze
+					ach(15848),	-- Archive Ambit: Silver
+					ach(15849),	-- Archive Ambit: Gold
+				},
+			}),
+			q(67742, {	-- Archive Ambit - Advanced
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 193027 },	-- Bronze Timekeeper
+				["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					ach(15850),	-- Archive Ambit Advanced: Bronze
+					ach(15851),	-- Archive Ambit Advanced: Silver
+					ach(15852),	-- Archive Ambit Advanced: Gold
+				},
+			}),
+			q(67002, {	-- Azure Span Slalom
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 191947 },	-- Bronze Timekeeper
+				["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					ach(15799),	-- The Azure Span Slalom: Bronze
+					ach(15800),	-- The Azure Span Slalom: Silver
+					ach(15801),	-- The Azure Span Slalom: Gold
+				},
+			}),
+			q(67003, {	-- Azure Span Slalom - Advanced
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 191947 },	-- Bronze Timekeeper
+				["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					ach(15802),	-- The Azure Span Slalom Advanced: Bronze
+					ach(15803),	-- The Azure Span Slalom Advanced: Silver
+					ach(15804),	-- The Azure Span Slalom Advanced: Gold
+				},
+			}),
+			q(66946, {	-- Azure Span Sprint
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 191572 },	-- Bronze Timekeeper
+				["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					ach(15788),	-- The Azure Span Sprint: Bronze
+					ach(15789),	-- The Azure Span Sprint: Silver
+					ach(15790),	-- The Azure Span Sprint: Gold
+				},
+			}),
+			q(66947, {	-- Azure Span Sprint - Advanced
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 191572 },	-- Bronze Timekeeper
+				["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					ach(15791),	-- The Azure Span Sprint Advanced: Bronze
+					ach(15792),	-- The Azure Span Sprint Advanced: Silver
+					ach(15793),	-- The Azure Span Sprint Advanced: Gold
+				},
+			}),
+			q(67565, {	-- Central Circuit
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 192945 },	-- Bronze Timekeeper
+				["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					ach(15841),	-- Central Circuit: Bronze
+					ach(15842),	-- Central Circuit: Silver
+					ach(15843),	-- Central Circuit: Gold
+				},
+			}),
+			q(67566, {	-- Central Circuit - Advanced
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 192945 },	-- Bronze Timekeeper
+				["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					ach(15844),	-- Central Circuit Advanced: Bronze
+					ach(15845),	-- Central Circuit Advanced: Silver
+					ach(15846),	-- Central Circuit Advanced: Gold
+				},
+			}),
+			q(67296, {	-- Iskaara Flyover
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 192886 },	-- Bronze Timekeeper
+				["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					ach(15835),	-- Iskaara Flyover: Bronze
+					ach(15836),	-- Iskaara Flyover: Silver
+					ach(15837),	-- Iskaara Flyover: Gold
+				},
+			}),
+			q(67297, {	-- Iskaara Flyover - Advanced
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 192886 },	-- Bronze Timekeeper
+				["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					ach(15838),	-- Iskaara Flyover Advanced: Bronze
+					ach(15839),	-- Iskaara Flyover Advanced: Silver
+					ach(15840),	-- Iskaara Flyover Advanced: Gold
+				},
+			}),
+			q(67031, {	-- Vakthros Ascent
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 192115 },	-- Bronze Timekeeper
+				["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					ach(15818),	-- The Vakthros Ascent: Bronze
+					ach(15819),	-- The Vakthros Ascent: Silver
+					ach(15820),	-- The Vakthros Ascent: Gold
+				},
+			}),
+			q(67032, {	-- Vakthros Ascent - Advanced
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 192115 },	-- Bronze Timekeeper
+				["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					ach(15821),	-- The Vakthros Ascent Advanced: Bronze
+					ach(15822),	-- The Vakthros Ascent Advanced: Silver
+					ach(15823),	-- The Vakthros Ascent Advanced: Gold
 				},
 			}),
 			n(BONUS_OBJECTIVIES, {
