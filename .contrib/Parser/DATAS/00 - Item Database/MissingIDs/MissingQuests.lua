@@ -1786,7 +1786,6 @@ q(43416),	-- Treasure
 q(43439),	--
 q(43482),	--
 q(43544),	--
-q(43579),	-- Looted DK Daily Mount
 q(43584),	-- Battlelord of the Valarjar
 q(43602),	-- Vignette: Randril
 q(43689),	-- Soulfiend Tagerma

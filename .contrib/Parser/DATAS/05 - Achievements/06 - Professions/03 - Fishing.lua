@@ -32,11 +32,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			}},
 			["requireSkill"] = FISHING,
 			["groups"] = {
-				-- #if AFTER CATA
-				title(83),	-- Salty %t
-				-- #else
 				title(51),	-- Salty %t
-				-- #endif
 			},
 		})),
 		ach(12757),		-- Angling for Battle
