@@ -3956,7 +3956,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 4.1.0.13726" },
 					}),
 					q(12373, {	-- Candy Bucket — Ghostlands, Tranquillien, Horde
-						["coord"] = { 48.1, 47.8, EVERSONG_WOODS },
+						["coord"] = { 48.1, 47.8, GHOSTLANDS },
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(12947, {	-- Candy Bucket — Grizzly Hills, Camp Oneqwah, Horde
