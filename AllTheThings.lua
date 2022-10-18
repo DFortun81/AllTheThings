@@ -1626,7 +1626,7 @@ end
 local function GetProgressTextForRow(data)
 	local total = data.total;
 	local isCollectible = data.collectible;
-	local isContainer = total and (total > 1 or (total > 0 and not isCollectible));
+	local isContainer = total and (total > 0 and not isCollectible);
 
 	if isContainer then
 		local costTotal = data.costTotal;
@@ -1662,7 +1662,7 @@ end
 local function GetProgressTextForTooltip(data, iconOnly)
 	local total = data.total;
 	local isCollectible = data.collectible;
-	local isContainer = total and (total > 1 or (total > 0 and not isCollectible));
+	local isContainer = total and (total > 0 and not isCollectible);
 	local stateText = GetStateIcon(data, iconOnly);
 
 	if isContainer then
