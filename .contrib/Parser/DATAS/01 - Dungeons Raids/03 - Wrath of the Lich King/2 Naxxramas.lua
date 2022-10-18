@@ -64,6 +64,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7146,	-- Anub'Rehkan slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
+									-- #endif
 								}),
 								i(39140),	-- Knife of Incision
 								i(39146),	-- Collar of Dissolution
@@ -94,6 +97,9 @@ root("Instances", tier(WOTLK_TIER, {
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7147,	-- Grand Widow Faerlina slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
+									-- #endif
 								}),
 								i(39200),	-- Grieving Spellblade
 								i(39199),	-- Watchful Eye
@@ -117,6 +123,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7148,	-- Maexxna slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
+									-- #endif
 								}),
 								i(93030, {	-- Dusty Clutch of Eggs (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
@@ -144,6 +153,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7153,	-- Noth the Plaguebringer slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
+									-- #endif
 								}),
 								i(39240),	-- Noth's Curse
 								i(39237),	-- Spaulders of Resumed Battle
@@ -174,6 +186,9 @@ root("Instances", tier(WOTLK_TIER, {
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7154,	-- Heigan the Unclean slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
+									-- #endif
 								}),
 								i(39245),	-- Demise
 								i(39255),	-- Staff of the Plague Beast
@@ -204,6 +219,9 @@ root("Instances", tier(WOTLK_TIER, {
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7155,	-- Loatheb slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
+									-- #endif
 								}),
 								i(93032, {	-- Blighted Spore (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
@@ -236,6 +254,9 @@ root("Instances", tier(WOTLK_TIER, {
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7156,	-- Instructor Razuvious slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
+									-- #endif
 								}),
 								i(39296),	-- Accursed Bow of the Elite
 								i(39311),	-- Scepter of Murmuring Spirits
@@ -265,6 +286,9 @@ root("Instances", tier(WOTLK_TIER, {
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7157,	-- Gothik the Harvester slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
+									-- #endif
 								}),
 								i(39344),	-- Slayer of the Lifeless
 								i(39392),	-- Veiled Amulet of Life
@@ -313,6 +337,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7149,	-- Patchwerk slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
+									-- #endif
 								}),
 								i(39271),	-- Blade of Dormant Memories
 								i(39270),	-- Hatestrike
@@ -347,6 +374,9 @@ root("Instances", tier(WOTLK_TIER, {
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7150,	-- Grobbulus slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
+									-- #endif
 								}),
 								i(39281),	-- Infection Repulser
 								i(39276),	-- The Skull of Ruin
@@ -393,6 +423,9 @@ root("Instances", tier(WOTLK_TIER, {
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7151,	-- Gluth slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
+									-- #endif
 								}),
 								i(93029, {	-- Gluth's Bone (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
@@ -532,6 +565,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7152,	-- Thaddius slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
+									-- #endif
 								}),
 								i(40619),	-- Leggings of the Lost Conqueror
 								i(40620),	-- Leggings of the Lost Protector
@@ -553,6 +589,9 @@ root("Instances", tier(WOTLK_TIER, {
 								ach(2146),	-- The Hundred Club (10 player)
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7158,	-- Sapphiron slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
+									-- #endif
 								}),
 								i(44569),	-- Key to the Focusing Iris (Item)
 								i(39409),	-- Cowl of Winged Fear
@@ -583,6 +622,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 6802,	-- Kel'Thuzad slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
+									-- #endif
 								}),
 								i(40616),	-- Helm of the Lost Conqueror
 								i(40617),	-- Helm of the Lost Protector
@@ -777,6 +819,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7166,	-- Noth the Plaguebringer slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
+									-- #endif
 								}),
 								i(40189),	-- Angry Dread
 								i(40192),	-- Accursed Spine
@@ -818,6 +863,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7167,	-- Heigan the Unclean slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
+									-- #endif
 								}),
 								i(40208),	-- Cryptfiend's Bite
 								i(40233),	-- The Undeath Carrier
@@ -864,6 +912,9 @@ root("Instances", tier(WOTLK_TIER, {
 								-- #endif
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7168,	-- Loatheb slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
+									-- #endif
 								}),
 								i(93032, {	-- Blighted Spore (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
@@ -894,6 +945,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7169,	-- Instructor Razuvious slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
+									-- #endif
 								}),
 								i(40071),	-- Chains of Adoration
 								i(40065),	-- Fool's Trial
@@ -934,6 +988,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7170,	-- Gothik the Harvester slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
+									-- #endif
 								}),
 								i(40336),	-- Life and Death
 								i(40335),	-- Touch of Horror
@@ -1016,6 +1073,9 @@ root("Instances", tier(WOTLK_TIER, {
 								-- #endif
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7162,	-- Patchwerk slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
+									-- #endif
 								}),
 								i(40264),	-- Split Greathammer
 								i(40265),	-- Arrowsong
@@ -1056,6 +1116,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7163,	-- Grobbulus slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
+									-- #endif
 								}),
 								i(40280),	-- Origin of Nightmares
 								i(40281),	-- Twilight Mist
@@ -1109,6 +1172,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7164,	-- Gluth slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
+									-- #endif
 								}),
 								i(93029, {	-- Gluth's Bone (TOY!)
 									["timeline"] = { "added 5.1.0.16309" },
@@ -1305,6 +1371,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7165,	-- Thaddius slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
+									-- #endif
 								}),
 								i(40634),	-- Legplates of the Lost Conqueror
 								i(40635),	-- Legplates of the Lost Protector
@@ -1331,6 +1400,9 @@ root("Instances", tier(WOTLK_TIER, {
 								ach(2147),	-- The Hundred Club (25 player)
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7171,	-- Sapphiron slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
+									-- #endif
 								}),
 								i(44577),	-- Heroic Key to the Focusing Iris (Item)
 								i(40368),	-- Murder
@@ -1379,6 +1451,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7172,	-- Kel'Thuzad slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
+									-- #endif
 								}),
 								i(40631),	-- Crown of the Lost Conqueror
 								i(40632),	-- Crown of the Lost Protector

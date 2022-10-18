@@ -8531,11 +8531,19 @@ root("Zones", {
 							}),
 							i(44230, {	-- Wooly Mammoth (A) (MOUNT!)
 								["races"] = ALLIANCE_ONLY,
+								-- #if AFTER CATA
 								["cost"] = 100000000,	-- 10,000g
+								-- #else
+								["cost"] = { { "c", 101, 200 } },	-- Emblem of Heroism
+								-- #endif
 							}),
 							i(44231, {	-- Wooly Mammoth (H) (MOUNT!)
 								["races"] = HORDE_ONLY,
+								-- #if AFTER CATA
 								["cost"] = 100000000,	-- 10,000g
+								-- #else
+								["cost"] = { { "c", 101, 200 } },	-- Emblem of Heroism
+								-- #endif
 							}),
 						},
 					}),
