@@ -540,7 +540,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 				}),
 			}),
 			ach(1261, {	-- G.N.E.R.D. Rage
-				["cost"] = { { "i", 37583, 1 } },	-- G.N.E.R.D.S.
+				["provider"] = { "i", 37583 },	-- G.N.E.R.D.S.
 			}),
 			ach(288, {	-- Out With It
 				["description"] = "Eat 2-10 Tricky Treats quickly to trigger the debuff. Results may vary.",
@@ -2054,6 +2054,9 @@ root("Holidays", applyholiday(HALLOWS_END, {
 				}),
 				-- #endif
 				-- #endif
+				i(33226, {	-- Tricky Treats
+					["timeline"] = { "added 2.4.3.8600" },
+				}),
 				i(34068, {	-- Weighted Jack-o'-Lantern
 					["timeline"] = { "added 2.2.2.7318" },
 				}),
@@ -4249,6 +4252,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					{ "select", "achievementID", 972 },	-- Trick or Treat!
 					{ "finalize" },	-- Push the processed items on to the finalized stack and ignore further queries on them.
 					-- #endif
+					-- #if AFTER 4.2.0
 					-- Masks & Wands & Candy
 					{ "selectparent" },	-- Select the "Rewards" header.
 					{ "pop" },	-- Get the Rewards.
@@ -4259,14 +4263,16 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
 					{ "exclude", "itemID", 20413 },	-- Exclude Hallowed Wand - Random
 					{ "finalize" },	-- Push the processed items on to the finalized stack and ignore further queries on them.
-					-- #if AFTER WRATH
 					{ "select", "itemID", 33292 },	-- Hallowed Helm
 					{ "select", "itemID", 33154 },	-- Sinister Squashling (PET!)
+					-- #else
+					-- Before 4.2.0 these bags were super boring.
+					{ "select", "itemID", 37585, 37583, 37582, 37584 },	-- G.N.E.R.D.S., Pyroblast Cinnamon Ball, Soothing Spearmint Candy, and Chewy Fel Taffy
 					-- #endif
 				},
 			}),
 			i(20393, {	-- Treat Bag
-				-- #if BEFORE 3.0.1
+				-- #if BEFORE 4.2.0
 				["description"] = "Get this by Trick or Treating at any Innkeeper.",
 				["sym"] = {
 					{ "selectparent" },	-- Select the "Rewards" header.
@@ -4274,7 +4280,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					{ "exclude", "itemID", 20393 },	-- Treat Bag (self)
 				},
 				-- #endif
-				["timeline"] = { "removed 3.0.1" },
+				["timeline"] = { "removed 4.2.0" },
 			}),
 			i(20390, {	-- Candy Bar
 				["timeline"] = { "removed 4.0.1" },
