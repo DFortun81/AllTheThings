@@ -80,7 +80,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				}),
 				q(65700, {	-- Core Control
 					["description"] = "Requires Dealic Understanding.",
-					["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+					["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 					["provider"] = { "n", 177958 },	-- Firim
 					["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 				}),

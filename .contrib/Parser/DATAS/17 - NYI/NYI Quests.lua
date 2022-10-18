@@ -109,9 +109,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(26837, {	-- The Explorers' League Digsite (The Cape of Stranglethorn)
 				["timeline"] = { "created 4.0.3.13277" },	-- was replaced To the Cape! "To the Cape!"
 			}),
-			q(26412, {	-- The Mosh'Ogg Bounty (NYI - dupe) (Northern Stranglethorn)
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
 			q(28752, {	-- Unstoppable Onslaught (REMOVED in Beta) [Hillsbrad Foothills]
 				["timeline"] = { "created 4.0.1.12984" },
 			}),

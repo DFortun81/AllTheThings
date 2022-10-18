@@ -32,8 +32,8 @@ _.Secrets =
 				["questID"] = 63643,	-- adding the page to the codex
 				["sourceQuest"] = 63611,	-- Runed Chest
 				["coords"] = {
-					{ 24.5, 17.3, THE_MAW },
-					{ 24.64, 12.58, THE_MAW },
+					{ 24.6, 12.5, THE_MAW },
+					{ 27.6, 17.3, THE_MAW },
 				},
 				["cost"] = { { "i", 185350, 1 } },	-- Partial Rune Codex
 			}),

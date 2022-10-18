@@ -1634,6 +1634,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(131564, {	-- Night Watch Hauberk
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
+						i(1127),	-- Flash Bundle
 					},
 				}),
 				q(173, {	-- Worgen in the Woods (1/4)
