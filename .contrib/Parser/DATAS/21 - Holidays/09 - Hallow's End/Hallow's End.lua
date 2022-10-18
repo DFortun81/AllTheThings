@@ -406,6 +406,9 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						291,				-- Check Your Head
 						283,				-- The Masquerade
 						292,				-- Sinister Calling
+						-- #if BEFORE 4.2.0
+						970,	-- Tricks and Treats of Azeroth (A)
+						-- #endif
 						971,				-- Tricks and Treats of Azeroth
 					},
 				},
@@ -645,6 +648,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 			}),
 			ach(289),	-- The Savior of Hallow's End
 			ach(972),	-- Trick or Treat!
+			-- #if AFTER 4.2.0
 			ach(971, {	-- Tricks and Treats of Azeroth
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {{"meta_achievement",
@@ -656,6 +660,27 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					968,	-- Tricks and Treats of Outlands (H)
 				}},
 			}),
+			-- #else
+			ach(970, {	-- Tricks and Treats of Azeroth (A)
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["timeline"] = { "removed 4.2.0" },
+				["sym"] = {{"meta_achievement",
+					966,	-- Tricks and Treats of Eastern Kingdoms (A)
+					963,	-- Tricks and Treats of Kalimdor (A)
+					969,	-- Tricks and Treats of Outlands (A)
+				}},
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(971, {	-- Tricks and Treats of Azeroth (H)
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["sym"] = {{"meta_achievement",
+					967,	-- Tricks and Treats of Eastern Kingdoms (H)
+					965,	-- Tricks and Treats of Kalimdor (H)
+					968,	-- Tricks and Treats of Outlands (H)
+				}},
+				["races"] = HORDE_ONLY,
+			}),
+			-- #endif
 			ach(5837, {	-- Tricks and Treats of Cataclysm (A)
 				["timeline"] = { "added 4.2.0" },
 				["sym"] = {{ "achievement_criteria" }},
