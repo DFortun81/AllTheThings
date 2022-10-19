@@ -646,7 +646,9 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					["provider"] = { "i", 20414 },	-- Hallowed Wand - Wisp
 				}),
 			}),
-			ach(289),	-- The Savior of Hallow's End
+			ach(289, {	-- The Savior of Hallow's End
+				["maps"] = { ELWYNN_FOREST, AZUREMYST_ISLE, TIRISFAL_GLADES, EVERSONG_WOODS, DUN_MOROGH, DUROTAR },
+			}),
 			ach(972),	-- Trick or Treat!
 			-- #if AFTER 4.2.0
 			ach(971, {	-- Tricks and Treats of Azeroth

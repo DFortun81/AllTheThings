@@ -701,6 +701,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7159,	-- Anub'Rekhan slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
+									-- #endif
 								}),
 								i(39714),	-- Webbed Death
 								i(39712),	-- Gemmed Wand of the Nerubians
@@ -737,6 +740,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7160,	-- Grand Widow Faerlina slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
+									-- #endif
 								}),
 								i(39730),	-- Widow's Fury
 								i(39732),	-- Faerlina's Madness
@@ -778,6 +784,9 @@ root("Instances", tier(WOTLK_TIER, {
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7161,	-- Maexxna slain
+									-- #if ANYCLASSIC
+									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
+									-- #endif
 								}),
 								i(93030, {	-- Dusty Clutch of Eggs (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
