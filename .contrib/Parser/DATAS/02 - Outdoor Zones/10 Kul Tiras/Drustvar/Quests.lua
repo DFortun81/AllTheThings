@@ -1104,12 +1104,11 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(160262),	-- Relic of the Makers
 				},
 			}),
-			o(277459, {	-- Pig Effigy
-				q(47949, {	-- That's Not My Fetish
-					["coord"] = { 63.3, 30.1, DRUSTVAR },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 47945 },	-- To Market, To Market
-				}),
+			q(47949, {	-- That's Not My Fetish
+				["provider"] = { "o", 277459 },	-- Pig Effigy
+				["coord"] = { 63.3, 30.1, DRUSTVAR },
+				["races"] = ALLIANCE_ONLY,
+				["sourceQuests"] = { 47945 },	-- To Market, To Market
 			}),
 			q(48793, {	-- The Adventurer's Society
 				["provider"] = { "n", 127015 },	-- Thaddeus "Gramps" Rifthold
