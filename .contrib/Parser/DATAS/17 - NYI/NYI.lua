@@ -882,7 +882,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(174073),	-- Regenerative Frame
 				i(169937),	-- Ritual Components
 				i(174489),	-- Treated Animacone
-				i(181442),	-- Visions of Sire Denathrius
 			}),
 			tier(SL_TIER, 0.2, {
 				i(184169),	-- Vault Chain Pull
