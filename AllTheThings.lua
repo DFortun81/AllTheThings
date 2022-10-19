@@ -1626,19 +1626,23 @@ end
 local function GetProgressTextForRow(data)
 	local total = data.total;
 	local isCollectible = data.collectible;
-	local isContainer = total and (total > 0 and not isCollectible);
+	local isContainer = total and (total > 1 or (total > 0 and not isCollectible));
 
 	if isContainer then
-		local costTotal = data.costTotal;
-		local isCost = costTotal and costTotal > 0;
-		local isFilledCost = data.filledCost;
 
-		-- Cost & Progress
-		if isFilledCost then
+		-- Uncollected Collectible (show uncollected icon & container info)
+		if isCollectible and not data.collected then
+			return GetCollectionIcon().." "..GetProgressColorText(data.progress or 0, total);
+		end
+
+		-- Cost & Progress (show cost icon & container info)
+		if data.filledCost then
 			return L["COST_ICON"].." "..GetProgressColorText(data.progress or 0, total);
 		end
 
-		-- Cost
+		local costTotal = data.costTotal;
+		local isCost = costTotal and costTotal > 0;
+		-- Cost (show cost icon)
 		if isCost then
 			return L["COST_ICON"];
 		end
@@ -1662,27 +1666,36 @@ end
 local function GetProgressTextForTooltip(data, iconOnly)
 	local total = data.total;
 	local isCollectible = data.collectible;
-	local isContainer = total and (total > 0 and not isCollectible);
+	local isContainer = total and (total > 1 or (total > 0 and not isCollectible));
 	local stateText = GetStateIcon(data, iconOnly);
 
 	if isContainer then
-		local costTotal = data.costTotal;
-		local isCost = costTotal and costTotal > 0;
-		local isFilledCost = data.filledCost;
 
-		-- Cost & Progress
-		if isFilledCost then
+		-- Uncollected Collectible (show uncollected state & container info)
+		if isCollectible and not data.collected then
 			if stateText then
-				return L["COST_TEXT"].." "..GetProgressColorText(data.progress or 0, total).." "..stateText;
+				-- this should be the case 100% of the time, unless a Type defines 'collectible' without 'collected'
+				return stateText.." "..GetProgressColorText(data.progress or 0, total);
+			else
+				return GetProgressColorText(data.progress or 0, total);
+			end
+		end
+
+		-- Cost & Progress (show cost icon & container info)
+		if data.filledCost then
+			if stateText then
+				return stateText.." "..L["COST_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
 			else
 				return L["COST_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
 			end
 		end
 
-		-- Cost
+		local costTotal = data.costTotal;
+		local isCost = costTotal and costTotal > 0;
+		-- Cost (show cost icon)
 		if isCost then
 			if stateText then
-				return L["COST_TEXT"].." "..stateText;
+				return stateText.." "..L["COST_TEXT"];
 			else
 				return L["COST_TEXT"];
 			end
@@ -1690,7 +1703,7 @@ local function GetProgressTextForTooltip(data, iconOnly)
 
 		-- Progress Only
 		if stateText then
-			return GetProgressColorText(data.progress or 0, total).." "..stateText;
+			return stateText.." "..GetProgressColorText(data.progress or 0, total);
 		else
 			return GetProgressColorText(data.progress or 0, total);
 		end
