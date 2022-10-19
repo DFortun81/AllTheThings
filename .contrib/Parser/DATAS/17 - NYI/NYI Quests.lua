@@ -6134,7 +6134,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(63948, { ["name"] = "Seeking the Seeker's Staff [PH]", }),	-- Seeking the Seeker's Staff [PH]
 				q(63419, { ["name"] = "Spores Galore", }),	-- Spores Galore
 				q(64305, { ["name"] = "The Tormentors of Torghast", }),	-- The Tormentors of Torghast
-				q(64546, { ["name"] = "Visions of Sire Denathrius", ["_drop"] = {"g"} }),	-- Visions of Sire Denathrius
 				q(64235, { ["name"] = "[DNT] Training Kill Quest", }),	-- [DNT] Training Kill Quest
 				q(64231, { ["name"] = "[DNT] Training Quest", }),	-- [DNT] Training Quest
 				-- Quest from WoW.Tools
