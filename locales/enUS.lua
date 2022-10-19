@@ -1234,6 +1234,7 @@ app.L = {
 		[-581] = app.asset("Expansion_TBC"),												-- TBC Classic Deluxe Edition
 		[-582] = app.asset("Expansion_WOTLK"),												-- Northrend Heroic Upgrade ("Cheap")
 		[-583] = app.asset("Expansion_WOTLK"),												-- Northrend Epic Upgrade
+		[-584] = app.asset("Expansion_DF"),													-- Dragonflight Seasonal Promotions
 	-- PvP Headers
 		[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
@@ -1765,6 +1766,7 @@ app.L = {
 		[-581] = "TBC Classic Deluxe Edition",									-- TBC Classic Deluxe Edition
 		[-582] = "WotLK Classic Northrend Heroic Upgrade",						-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		[-583] = "WotLK Classic Northrend Epic Upgrade",						-- WotLK Classic Northrend Epic Upgrade
+		[-584] = "Dragonflight Seasonal Promotions",							-- Dragonflight Seasonal Promotions
 	-- PvP Header
 		-- Special Season Tags
 		--[-650] = "Rated Battleground",										-- Listed under Cata PvP Seasons
