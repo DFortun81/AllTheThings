@@ -194,14 +194,17 @@ def get_existing_ids(thing: Things) -> list[str]:
 def build_profession_dict() -> dict[str, int | dict[str, int]]:
     """Returns dict[profession: str, skillLineID: int]."""
     profession_dict = dict[str, int | list[str]]()
-    with open(Path("Raw", "SkillLines.txt")) as skillline_file, open(Path("Builds", "SkillLines.txt")) as build_file:
+    with (
+        open(Path("Raw", "SkillLines.txt")) as skillline_file,
+        open(Path("Builds", "SkillLines.txt")) as build_file,
+    ):
         exclusion_list = extract_nth_column(Path("Exclusion", "SkillLines.txt"), 0)
         builds = build_file.readlines()
         for skillline_line in skillline_file:
             if skillline_line not in builds:
                 skillline_id, profession = skillline_line.split(",")
                 skillline_id = re.sub("\\D", "", skillline_id)
-                if skillline_id+"\n" not in exclusion_list:
+                if skillline_id + "\n" not in exclusion_list:
                     profession_dict[profession.strip()] = int(skillline_id)
     with open(Path("Exclusion", "SkillLineOther.txt")) as skilllineother_file:
         other_dict = dict[str, int]()
@@ -235,7 +238,9 @@ def sort_raw_file_recipes() -> None:
                     else:
                         spell, skill_line = line.split(",")
                         if profession == "Other":
-                            if int(skill_line.strip()) in list(profession_dict["Other"].values()):
+                            if int(skill_line.strip()) in list(
+                                profession_dict["Other"].values()
+                            ):
                                 recipe_list.append(spell + "\n")
                         else:
                             if int(skill_line) == profession_dict[profession]:
@@ -254,7 +259,10 @@ def create_raw_file(thing: Things) -> None:
             with open(raw_path, "r+") as raw_file:
                 old_lines = raw_file.readlines()
                 # TODO: this only finds new Things, not removed Things
-                difference = sorted(set(thing_list) - set(old_lines), key=lambda x: (float(x.split(",")[0])))
+                difference = sorted(
+                    set(thing_list) - set(old_lines),
+                    key=lambda x: (float(x.split(",")[0])),
+                )
                 if difference:
                     raw_file.write(build)
                     raw_file.writelines(difference)
@@ -330,9 +338,11 @@ def create_missing_recipes() -> None:
                             line = ""
                         line = re.sub("\\D", "", line)
                         itemdb_list.append(line + "\n")
-                    difference = sorted(set(raw_lines) - set(itemdb_list), key=raw_lines.index)
+                    difference = sorted(
+                        set(raw_lines) - set(itemdb_list), key=raw_lines.index
+                    )
                     difference = remove_empty_builds(difference)
-                    #if not (difference := remove_empty_builds(difference)):
+                    # if not (difference := remove_empty_builds(difference)):
                     #    continue
                     missing_file.write(f"\n\n\n\nMissing in {profession}ItemDB.lua\n\n")
                     missing_file.writelines(difference)
@@ -486,7 +496,9 @@ def post_process(thing: Things) -> None:
             missing_line = missing_line.strip()
             missing_line = re.sub("[^\\d^.]", "", missing_line)
             if missing_line.isdigit():
-                missing_lines[count_missing] = f"{thing2prefix[thing]}{missing_line}),\t-- "
+                missing_lines[
+                    count_missing
+                ] = f"{thing2prefix[thing]}{missing_line}),\t-- "
             else:
                 missing_lines[count_missing] = missing_lines[count_missing].strip()
             for id in raw_ids:
@@ -554,7 +566,7 @@ def post_process(thing: Things) -> None:
                     elif thing == Things.Illusions or thing == Things.Toys:
                         id_list.append(raw_ids_and_nameids[m].split(",")[0].strip())
             for k in range(len(name_ids)):
-                name_id =  name_ids[k].strip()
+                name_id = name_ids[k].strip()
                 name_id = re.sub("[^\\d^.]", "", name_id)
                 for element in id_list:
                     if missing_line.isdigit() and name_id == element:
@@ -568,10 +580,6 @@ def post_process(thing: Things) -> None:
         missing_file.writelines(missing_lines)
 
 
-
-
-
-
 def add_latest_data(build: str) -> None:
     add_latest_build(build)
     for thing in Things:
@@ -580,7 +588,9 @@ def add_latest_data(build: str) -> None:
         with open(raw_path, "r+") as raw_file:
             old_lines = raw_file.readlines()
             # TODO: this only finds new Things, not removed Things
-            difference = sorted(set(thing_list) - set(old_lines), key=lambda x: (float(x.split(",")[0])))
+            difference = sorted(
+                set(thing_list) - set(old_lines), key=lambda x: (float(x.split(",")[0]))
+            )
             if difference:
-                raw_file.write(build+"\n")
+                raw_file.write(build + "\n")
                 raw_file.writelines(difference)
