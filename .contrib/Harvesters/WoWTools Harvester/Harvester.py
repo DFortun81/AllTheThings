@@ -150,8 +150,8 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
                 case Things.Items:
                     # Helps Toys and Transmog
                     thing_list.append(f"{row['ID']},{row['Display_lang']}\n")
-        except KeyError:
-            print("Cursed", build)
+        except KeyError as error:
+            print(f"Cursed build: {build}\nKeyError: {error}")
     return thing_list
 
 
@@ -514,7 +514,7 @@ def post_process(thing: Things) -> None:
         # TODO:
         raise NotImplementedError("Followers are not implemented yet.")
     elif thing == Things.Illusions:
-        with open(raw_path, "r") as raw_file:
+        with open(raw_path) as raw_file:
             raw_ids_and_nameids = raw_file.readlines()
         name_ids = extract_nth_column(Path("Raw", "SpellItems.txt"), 0)
         names = extract_nth_column(Path("Raw", "SpellItems.txt"), 1)
@@ -522,7 +522,7 @@ def post_process(thing: Things) -> None:
         # TODO:
         raise NotImplementedError("Quests are not implemented yet.")
     elif thing == Things.Pets:
-        with open(raw_path, "r") as raw_file:
+        with open(raw_path) as raw_file:
             raw_ids_and_nameids = raw_file.readlines()
         name_ids = extract_nth_column(Path("Raw", "Creatures.txt"), 0)
         names = extract_nth_column(Path("Raw", "Creatures.txt"), 1)
@@ -539,7 +539,7 @@ def post_process(thing: Things) -> None:
         # thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
         raise NotImplementedError("SkillLines are not implemented yet.")
     elif thing == Things.Toys:
-        with open(raw_path, "r") as raw_file:
+        with open(raw_path) as raw_file:
             raw_ids_and_nameids = raw_file.readlines()
         name_ids = extract_nth_column(Path("Raw", "Items.txt"), 0)
         names = extract_nth_column(Path("Raw", "Items.txt"), 1)
