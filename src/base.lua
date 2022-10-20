@@ -210,7 +210,7 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 		self.editBox:SetWidth(240);
 		self.editBox:HighlightText();
 	end;
-	popup.text = (msg or "")..app.L["REPORT_TIP"];
+	popup.text = (msg or "");
 	popup.callback = callback;
 	StaticPopup_Hide ("ALL_THE_THINGS_EDITBOX");
 	StaticPopup_Show ("ALL_THE_THINGS_EDITBOX");
@@ -292,5 +292,5 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick)
 	ATTEditBox:Show()
 end
 function app:ShowPopupDialogToReport(reportReason, text)
-	app:ShowPopupDialogWithEditBox((reportReason or "Missing Data") .. app.L["PLEASE_REPORT_MESSAGE"], text);
+	app:ShowPopupDialogWithEditBox((reportReason or "Missing Data").."\n"..app.L["PLEASE_REPORT_MESSAGE"]..app.L["REPORT_TIP"], text);
 end
