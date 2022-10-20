@@ -12,7 +12,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				}),
 			}),
 			ach(14688, {	-- Duelist: Shadowlands Season 1
-				illusion(6266),	-- Sinful Flame					
+				illusion(6266),	-- Sinful Flame
 				i(180424),	-- Sinful Gladiator's Prestigious Cloak
 			}),
 			ach(14691, {	-- Elite: Shadowlands Season 1
@@ -1496,7 +1496,7 @@ root("PVP", pvp(tier(SL_TIER, {
 		}),
 	})),
 	n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFPRE } }, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFPRE } }, {
+		n(ACHIEVEMENTS, {
 			ach(15600),		-- Challenger I: Shadowlands Season 4
 			ach(15601),		-- Challenger II: Shadowlands Season 4
 			ach(15609, {	-- Combatant I: Shadowlands Season 4
@@ -1536,7 +1536,7 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 			ach(15602),	-- Rival I: Shadowlands Season 4
 			ach(15603),	-- Rival II: Shadowlands Season 4
-		})),
+		}),
 		n(PVP_ASPIRANT, {
 			n(BACK, {
 				i(192390),	-- Eternal Aspirant's Cape

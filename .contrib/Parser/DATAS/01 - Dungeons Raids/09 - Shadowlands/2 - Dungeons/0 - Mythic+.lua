@@ -41,11 +41,11 @@ root("Instances", tier(SL_TIER, {
 				title(458),	-- <Name>, the Cryptic Hero (TITLE!)
 			})),
 			-- Season 4
-			ach(15688, {["timeline"] = { ADDED_SLS4, REMOVED_DFPRE }}),	-- Shadowlands Keystone Explorer: Season Four
-			ach(15689, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFPRE } }, {	-- Shadowlands Keystone Conqueror: Season Four
+			ach(15688, {["timeline"] = { ADDED_SLS4, REMOVED_DFREL }}),	-- Shadowlands Keystone Explorer: Season Four
+			ach(15689, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFREL } }, {	-- Shadowlands Keystone Conqueror: Season Four
 				title(465),	-- <Name> the Shrouded
 			})),
-			ach(15690, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFPRE } }, {	-- Shadowlands Keystone Master: Season Four
+			ach(15690, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFREL } }, {	-- Shadowlands Keystone Master: Season Four
 				i(192557),	-- Restoration Deathwalker (MOUNT!)
 			})),
 			ach(15756, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFPRE } }, {	-- Shrouded Hero: Shadowlands Season 4
@@ -53,23 +53,23 @@ root("Instances", tier(SL_TIER, {
 			})),
 			-- Keystone Hero
 			ach(15051, {["timeline"] = {"added 9.1.0", REMOVED_SLS4}}),	-- Keystone Hero: De Other Side
-			ach(15695, {["timeline"] = { ADDED_SLS4, REMOVED_DFPRE }}),	-- Keystone Hero: Grimrail Depot
+			ach(15695, {["timeline"] = { ADDED_SLS4, REMOVED_DFREL }}),	-- Keystone Hero: Grimrail Depot
 			ach(15048, {["timeline"] = {"added 9.1.0", REMOVED_SLS4}}),	-- Keystone Hero: Halls of Atonement
-			ach(15694, {["timeline"] = { ADDED_SLS4, REMOVED_DFPRE }}),	-- Keystone Hero: Iron Docks
+			ach(15694, {["timeline"] = { ADDED_SLS4, REMOVED_DFREL }}),	-- Keystone Hero: Iron Docks
 			ach(15047, {["timeline"] = {"added 9.1.0", REMOVED_SLS4}}),	-- Keystone Hero: Mists of Tirna Scithe
-			ach(15693, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFPRE } }, {	-- Keystone Hero: Operation: Mechagon
+			ach(15693, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFREL } }, {	-- Keystone Hero: Operation: Mechagon
 				crit(1),	-- Operation: Mechagon - Junkyard
 				crit(2),	-- Operation: Mechagon - Workshop
 			})),
 			ach(15046, {["timeline"] = {"added 9.1.0", REMOVED_SLS4}}),	-- Keystone Hero: Plaguefall
-			ach(15692, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFPRE } }, {	-- Keystone Hero: Return to Karazhan
+			ach(15692, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFREL } }, {	-- Keystone Hero: Return to Karazhan
 				crit(1),	-- Return to Karazhan: Lower
 				crit(2),	-- Return to Karazhan: Upper
 			})),
 			ach(15052, {["timeline"] = {"added 9.1.0", REMOVED_SLS4}}),	-- Keystone Hero: Sanguine Depths
 			ach(15049, {["timeline"] = {"added 9.1.0", REMOVED_SLS4}}),	-- Keystone Hero: Spires of Ascension
 			ach(15045, {["timeline"] = {"added 9.1.0", REMOVED_SLS4}}),	-- Keystone Hero: The Necrotic Wake
-			ach(15500, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_DFPRE }, }, {	-- Keystone Hero: Tazavesh, the Veiled Market
+			ach(15500, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_DFREL }, }, {	-- Keystone Hero: Tazavesh, the Veiled Market
 				crit(1),	-- Tazavesh: Streets of Wonder
 				crit(2),	-- Tazavesh: So'leah's Gambit
 			})),

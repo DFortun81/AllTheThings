@@ -27,7 +27,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 				15324,	-- Tower Ranger
 				15648,	-- Walking in Maw-mphis
 			}},
-			["g"] = {
+			["groups"] = {
 				title(463),	-- Veilstrider <Name>
 			},
 		})),
