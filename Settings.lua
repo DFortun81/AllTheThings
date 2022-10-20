@@ -2682,6 +2682,7 @@ for i,filterID in ipairs(awColumn1) do
 		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
 	end
 	filter.filterID = filterID;
+	filter:SetATTTooltip(L["FILTER_ID"]..": "..filterID);
 	last = filter;
 end
 
@@ -2697,6 +2698,7 @@ for i,filterID in ipairs(awColumn2) do
 		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
 	end
 	filter.filterID = filterID;
+	filter:SetATTTooltip(L["FILTER_ID"]..": "..filterID);
 	last = filter;
 end
 
