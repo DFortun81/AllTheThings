@@ -3491,6 +3491,7 @@ root("Zones", m(KALIMDOR, {
 				},
 			}),
 			n(12794, {	-- Stone Guard Zarg <Legacy Weapon Quartermaster>
+				["description"] = "In order to collect these, you need to have the original title associated with the gear.",
 				["coord"] = { 38.6, 72.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = pvp({
