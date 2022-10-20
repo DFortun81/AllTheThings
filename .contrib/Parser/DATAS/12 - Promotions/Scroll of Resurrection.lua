@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root("Promotions", n(-573, {	-- Scroll of Resurrection
 	["description"] = "The following item sets were implemented as boosted character rewards for recipients of the Scroll of Resurrection.\n\nThey were later added to vendors in Mount Hyjal and Vash'jir once the Scroll of Resurrection Service was retired.",
-	["timeline"] = { "added 4.3.0.15005" },
+	["timeline"] = { "added 4.3.0.15005", "removed 5.4.7", },
 	["groups"] = {
 		cl(DEATHKNIGHT, {
 			i(72994),	-- Ebonsoul Blade
@@ -87,7 +87,7 @@ root("Promotions", n(-573, {	-- Scroll of Resurrection
 		}),
 		cl(HUNTER, {
 			i(73000),	-- Beastsoul Rifle
-			un(REMOVED_FROM_GAME, i(73001)),	-- Beastsoul Spear
+			i(73001),	-- Beastsoul Spear
 			i(72913),	-- Beastsoul Helm
 			i(72915),	-- Beastsoul Spaulders
 			i(73146),	-- Beastsoul Choker
@@ -246,7 +246,7 @@ root("Promotions", n(-573, {	-- Scroll of Resurrection
 		}),
 		cl(ROGUE, {
 			i(72995),	-- Shadowstalking Dagger
-			un(REMOVED_FROM_GAME, i(72996)),	-- Shadowstalking Shiv
+			i(72996),	-- Shadowstalking Shiv
 			i(72997),	-- Shadowstalking Sword
 			i(72667),	-- Shadowstalking Hood
 			i(72669),	-- Shadowstalking Shoulders
