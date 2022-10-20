@@ -71,37 +71,28 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
             match thing:
                 case Things.Achievements:
                     # Achievements have names in the same db
-                    try:
-                        thing_list.append(f"{row['ID']},{row['Title_lang']}\n")
-                    except KeyError:
-                        thing_list.append(f"{row['ID']},{row['Title_lang[0]']}\n")
+                    title = "Title_lang" if "Title_lang" in row else "Title_lang[0]"
+                    thing_list.append(f"{row['ID']},{row[title]}\n")
                 case Things.Factions:
                     # Factions have names in the same db
-                    try:
-                        thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-                    except KeyError:
-                        thing_list.append(f"{row['ID']},{row['Name_lang[0]']}\n")
+                    name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
+                    thing_list.append(f"{row['ID']},{row[name]}\n")
                 case Things.FlightPaths:
                     # Flight Paths have names in the same db
-                    # Cursed Build
-                    if build == "8.0.1.26321":
-                        thing_list.append(f"{row['Name_lang']},--\n")
+                    name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
+                    if build == "8.0.1.26321":  # Cursed build
+                        thing_list.append(f"{row[name]},--\n")
                     else:
-                        try:
-                            thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-                        except KeyError:
-                            thing_list.append(f"{row['ID']},{row['Name_lang[0]']}\n")
+                        thing_list.append(f"{row['ID']},{row[name]}\n")
                 case Things.Followers:
                     # Follower Names need creature db
-                    # Cursed Build
-                    if build == "6.0.1.18179":
-                        thing_list.append(
-                            f"{row['ID']},{row['Field_6_0_1_18179_001']},{row['Field_6_0_1_18179_002']}\n"
+                    horde, alliance = "HordeCreatureID", "AllianceCreatureID"
+                    if build == "6.0.1.18179":  # Cursed build
+                        horde, alliance = (
+                            "Field_6_0_1_18179_001",
+                            "Field_6_0_1_18179_002",
                         )
-                    else:
-                        thing_list.append(
-                            f"{row['ID']},{row['HordeCreatureID']},{row['AllianceCreatureID']}\n"
-                        )
+                    thing_list.append(f"{row['ID']},{row[horde]},{row[alliance]}\n")
                 case Things.Illusions:
                     # Illusion names are in the SpellItemEnchantmentID db
                     thing_list.append(f"{row['SpellItemEnchantmentID']}\n")
@@ -119,10 +110,8 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
                     thing_list.append(f"{row['Spell']},{row['SkillLine']}\n")
                 case Things.Titles:
                     # Titles have names in the same db
-                    try:
-                        thing_list.append(f"{row['Mask_ID']},{row['Name_lang']}\n")
-                    except KeyError:
-                        thing_list.append(f"{row['Mask_ID']},{row['Name_lang[0]']}\n")
+                    name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
+                    thing_list.append(f"{row['Mask_ID']},{row[name]}\n")
                 case Things.Toys:
                     # Item names are in Item Sparse db
                     thing_list.append(f"{row['ItemID']}\n")
@@ -134,19 +123,19 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
                     thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
                 case Things.SpellItems:
                     # Helps Illusion names
-                    try:
-                        thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-                    except KeyError:
-                        thing_list.append(f"{row['ID']},{row['Name_lang[0]']}\n")
+                    name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
+                    thing_list.append(f"{row['ID']},{row[name]}\n")
                 case Things.SpellNames:
                     # Helps Recipes
                     thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
                 case Things.SkillLines:
                     # Helps Professions
-                    try:
-                        thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
-                    except KeyError:
-                        thing_list.append(f"{row['ID']},{row['DisplayName_lang[0]']}\n")
+                    name = (
+                        "DisplayName_lang"
+                        if "DisplayName_lang" in row
+                        else "DisplayName_lang[0]"
+                    )
+                    thing_list.append(f"{row['ID']},{row[name]}\n")
                 case Things.Items:
                     # Helps Toys and Transmog
                     thing_list.append(f"{row['ID']},{row['Display_lang']}\n")
