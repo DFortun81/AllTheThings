@@ -2499,17 +2499,17 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(12343),	-- Cheese the Freeze
 						ach(12345),	-- Getting Cold in Here
 						ach(12347, {	-- I Could Say That This Cache Was Rare
-							i(45886),	-- Icecore Staff
-							i(45457),	-- Staff of Endless Winter
-							i(45612),	-- Constellus
-							i(45876),	-- Shiver
-							i(45887),	-- Ice Layered Barrier
-							i(45877),	-- The Boreal Guard
-							i(45459),	-- Frigid Strength of Hodir
-							i(45461),	-- Drape of Icy Intent
-							i(45460),	-- Bindings of Winter Gale
-							i(45888),	-- Bitter Cold Armguards
-							i(45462),	-- Gloves of the Frozen Glade
+							un(45, i(45886)),	-- Icecore Staff
+							un(45, i(45457)),	-- Staff of Endless Winter
+							un(45, i(45612)),	-- Constellus
+							un(45, i(45876)),	-- Shiver
+							un(45, i(45887)),	-- Ice Layered Barrier
+							un(45, i(45877)),	-- The Boreal Guard
+							un(45, i(45459)),	-- Frigid Strength of Hodir
+							un(45, i(45461)),	-- Drape of Icy Intent
+							un(45, i(45460)),	-- Bindings of Winter Gale
+							un(45, i(45888)),	-- Bitter Cold Armguards
+							un(45, i(45462)),	-- Gloves of the Frozen Glade
 							i(45786),	-- Hodir's Sigil
 							i(45815),	-- Hodir's Sigil
 						}),
@@ -2549,15 +2549,15 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							crit(3),	-- Participate in slaying Ancient Rune Giant
 						}),
 						ach(12352, {	-- Lose Your Illusion
-							i(45930),	-- Combatant's Bootblade
-							i(45570),	-- Skyforge Crossbow
-							i(45470),	-- Wisdom's Hold
-							i(45472),	-- Warhelm of the Champion
-							i(45933),	-- Pendant of the Shallow Grave
-							i(45474),	-- Pauldrons of the Combatant
-							i(45473),	-- Embrace of the Gladiator
-							i(45928),	-- Gauntlets of the Thunder Lord
-							i(45471),	-- Fate's Clutch
+							un(45, i(45930)),	-- Combatant's Bootblade
+							un(45, i(45570)),	-- Skyforge Crossbow
+							un(45, i(45470)),	-- Wisdom's Hold
+							un(45, i(45472)),	-- Warhelm of the Champion
+							un(45, i(45933)),	-- Pendant of the Shallow Grave
+							un(45, i(45474)),	-- Pauldrons of the Combatant
+							un(45, i(45473)),	-- Embrace of the Gladiator
+							un(45, i(45928)),	-- Gauntlets of the Thunder Lord
+							un(45, i(45471)),	-- Fate's Clutch
 							i(45931),	-- Mjolnir Runestone
 							i(45929),	-- Sif's Remembrance
 							i(45784),	-- Thorim's Sigil
@@ -2595,16 +2595,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(12364),	-- Knock on Wood
 						ach(12365),	-- Knock, Knock on Wood
 						ach(12366, {	-- Knock, Knock, Knock on Wood
-							i(45613),	-- Dreambinder
-							i(45484),	-- Bladetwister
-							i(45947),	-- Serilas, Blood Blade of Invar One-Arm
-							i(45294),	-- Petrified Ivy Sprig
-							i(45485),	-- Bronze Pendant of the Vanir
-							i(45945),	-- Seed of Budding Carnage
-							i(45486),	-- Drape of the Sullen Goddess
-							i(45943),	-- Gloves of Whispering Winds
-							i(45487),	-- Handguards of Revitalization
-							i(45488),	-- Leggings of the Enslaved Idol
+							un(45, i(45613)),	-- Dreambinder
+							un(45, i(45484)),	-- Bladetwister
+							un(45, i(45947)),	-- Serilas, Blood Blade of Invar One-Arm
+							un(45, i(45294)),	-- Petrified Ivy Sprig
+							un(45, i(45485)),	-- Bronze Pendant of the Vanir
+							un(45, i(45945)),	-- Seed of Budding Carnage
+							un(45, i(45486)),	-- Drape of the Sullen Goddess
+							un(45, i(45943)),	-- Gloves of Whispering Winds
+							un(45, i(45487)),	-- Handguards of Revitalization
+							un(45, i(45488)),	-- Leggings of the Enslaved Idol
 							i(45946),	-- Fire Orchid Signet
 							i(45788),	-- Freya's Sigil
 							i(45814),	-- Freya's Sigil

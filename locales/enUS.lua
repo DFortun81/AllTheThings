@@ -2127,7 +2127,7 @@ app.L = {
 		-- #if BEFORE BFA
 		--[41] = {1, "|CFFFF0000This is only available to players that completed the associated Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances"},
 		-- #endif
-		[45] = {1, "|CFFFF0000Blizzard's Loot changes broke several Items and made them Unobtainable.\nHouse of Nobles Cape/Gurubashi Empire Greatcloak (both BFA Emissary Rewards), Ogom the Mangler & some Ulduar HM items are currently broken and need to be fixed.|r", "Broken Loot"},
+		[45] = {1, "|CFFFF0000Blizzard's Loot changes broke several Items and made them Unobtainable.\nHouse of Nobles Cape/Gurubashi Empire Greatcloak (both BFA Emissary Rewards), Ogom the Mangler, WoD Mission Loot & some Ulduar HM items are currently broken and need to be fixed.|r", "Broken Loot"},
 
 		-- Seasonal Filters
 		[1000] = {4, "|CFF00FFDEThis requires the Brewfest Holiday to be Active.|r", "Brewfest"},
