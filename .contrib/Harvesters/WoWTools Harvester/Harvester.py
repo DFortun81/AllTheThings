@@ -38,8 +38,8 @@ def add_latest_build(build: str) -> None:
             build_list.write(build + "\n")
 
 
-def get_thing_data(thing: Things, build: str) -> list[str]:
-    """Get the IDs (and some thing specific data) of a thing from a build."""
+def get_thing_table(thing: Things, build: str) -> list[str]:
+    """Get the table of a thing from a build."""
     thing2table = {
         Things.Achievements: "achievement",
         Things.Factions: "faction",
@@ -63,85 +63,154 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36"
     }
+    return requests.get(url, headers=headers).content.decode("utf-8").splitlines()
+
+
+def get_thing_data(thing: Things, build: str) -> list[str]:
+    """Get the IDs (and some thing specific data) of a thing from a build."""
     thing_list = list[str]()
-    request = requests.get(url, headers=headers)
-    reader = csv.DictReader(request.content.decode("utf-8").splitlines())
+    reader = csv.DictReader(get_thing_table(thing, build))
     for row in reader:
         try:
             match thing:
                 case Things.Achievements:
-                    # Achievements have names in the same db
-                    title = "Title_lang" if "Title_lang" in row else "Title_lang[0]"
-                    thing_list.append(f"{row['ID']},{row[title]}\n")
+                    append_achievement_info(thing_list, row)
                 case Things.Factions:
-                    # Factions have names in the same db
-                    name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
-                    thing_list.append(f"{row['ID']},{row[name]}\n")
+                    append_faction_info(thing_list, row)
                 case Things.FlightPaths:
-                    # Flight Paths have names in the same db
-                    name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
-                    if build == "8.0.1.26321":  # Cursed build
-                        thing_list.append(f"{row[name]},--\n")
-                    else:
-                        thing_list.append(f"{row['ID']},{row[name]}\n")
+                    append_flight_path_info(build, thing_list, row)
                 case Things.Followers:
-                    # Follower Names need creature db
-                    horde, alliance = "HordeCreatureID", "AllianceCreatureID"
-                    if build == "6.0.1.18179":  # Cursed build
-                        horde, alliance = (
-                            "Field_6_0_1_18179_001",
-                            "Field_6_0_1_18179_002",
-                        )
-                    thing_list.append(f"{row['ID']},{row[horde]},{row[alliance]}\n")
+                    append_follower_info(build, thing_list, row)
                 case Things.Illusions:
-                    # Illusion names are in the SpellItemEnchantmentID db
-                    thing_list.append(f"{row['SpellItemEnchantmentID']}\n")
+                    append_illusion_info(thing_list, row)
                 case Things.Mounts:
-                    # Mounts have names in the same db
-                    thing_list.append(f"{row['SourceSpellID']},{row['Name_lang']}\n")
+                    append_mount_info(thing_list, row)
                 case Things.Quests:
-                    # TODO: I think we need wowhead here.
-                    thing_list.append(f"{row['ID']}\n")
+                    append_quest_info(thing_list, row)
                 case Things.Pets:
-                    # Pet Names need creature db
-                    thing_list.append(f"{row['ID']},{row['CreatureID']}\n")
+                    append_pet_info(thing_list, row)
                 case Things.Recipes:
-                    # Recipe names are in the SpellName db and Profession names are in SkillLine db
-                    thing_list.append(f"{row['Spell']},{row['SkillLine']}\n")
+                    append_recipe_info(thing_list, row)
                 case Things.Titles:
-                    # Titles have names in the same db
-                    name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
-                    thing_list.append(f"{row['Mask_ID']},{row[name]}\n")
+                    append_title_info(thing_list, row)
                 case Things.Toys:
-                    # Item names are in Item Sparse db
-                    thing_list.append(f"{row['ItemID']}\n")
+                    append_toy_info(thing_list, row)
                 case Things.Transmog:
-                    # Item names are in Item Sparse db.
-                    thing_list.append(f"{row['ID']},{row['ItemID']}\n")
+                    append_transmog_info(thing_list, row)
                 case Things.Creatures:
-                    # Helps Followers and Pets to get names
-                    thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                    append_creature_info(thing_list, row)
                 case Things.SpellItems:
-                    # Helps Illusion names
-                    name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
-                    thing_list.append(f"{row['ID']},{row[name]}\n")
+                    append_spell_item_info(thing_list, row)
                 case Things.SpellNames:
-                    # Helps Recipes
-                    thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                    append_spell_name_info(thing_list, row)
                 case Things.SkillLines:
-                    # Helps Professions
-                    name = (
-                        "DisplayName_lang"
-                        if "DisplayName_lang" in row
-                        else "DisplayName_lang[0]"
-                    )
-                    thing_list.append(f"{row['ID']},{row[name]}\n")
+                    append_skill_line_info(thing_list, row)
                 case Things.Items:
-                    # Helps Toys and Transmog
-                    thing_list.append(f"{row['ID']},{row['Display_lang']}\n")
+                    append_item_info(thing_list, row)
         except KeyError as error:
             print(f"Cursed build: {build}\nKeyError: {error}")
     return thing_list
+
+
+def append_achievement_info(thing_list: list[str], row: dict[str, str]) -> None:
+    # Achievements have names in the same db
+    title = "Title_lang" if "Title_lang" in row else "Title_lang[0]"
+    thing_list.append(f"{row['ID']},{row[title]}\n")
+
+
+def append_faction_info(thing_list: list[str], row: dict[str, str]) -> None:
+    # Factions have names in the same db
+    name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
+    thing_list.append(f"{row['ID']},{row[name]}\n")
+
+
+def append_flight_path_info(
+    build: str, thing_list: list[str], row: dict[str, str]
+) -> None:
+    # Flight Paths have names in the same db
+    name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
+    if build == "8.0.1.26321":  # Cursed build
+        thing_list.append(f"{row[name]},--\n")
+    else:
+        thing_list.append(f"{row['ID']},{row[name]}\n")
+
+
+def append_follower_info(
+    build: str, thing_list: list[str], row: dict[str, str]
+) -> None:
+    # Follower Names need creature db
+    horde, alliance = "HordeCreatureID", "AllianceCreatureID"
+    if build == "6.0.1.18179":  # Cursed build
+        horde, alliance = "Field_6_0_1_18179_001", "Field_6_0_1_18179_002"
+    thing_list.append(f"{row['ID']},{row[horde]},{row[alliance]}\n")
+
+
+def append_illusion_info(thing_list: list[str], row: dict[str, str]) -> None:
+    # Illusion names are in the SpellItemEnchantmentID db
+    thing_list.append(f"{row['SpellItemEnchantmentID']}\n")
+
+
+def append_mount_info(thing_list: list[str], row: dict[str, str]) -> None:
+    # Mounts have names in the same db
+    thing_list.append(f"{row['SourceSpellID']},{row['Name_lang']}\n")
+
+
+def append_quest_info(thing_list: list[str], row: dict[str, str]) -> None:
+    # TODO: I think we need wowhead here.
+    thing_list.append(f"{row['ID']}\n")
+
+
+def append_pet_info(thing_list: list[str], row: dict[str, str]) -> None:
+    # Pet Names need creature db
+    thing_list.append(f"{row['ID']},{row['CreatureID']}\n")
+
+
+def append_recipe_info(thing_list: list[str], row: dict[str, str]) -> None:
+    # Recipe names are in the SpellName db and Profession names are in SkillLine db
+    thing_list.append(f"{row['Spell']},{row['SkillLine']}\n")
+
+
+def append_title_info(thing_list: list[str], row: dict[str, str]) -> None:
+    # Titles have names in the same db
+    name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
+    thing_list.append(f"{row['Mask_ID']},{row[name]}\n")
+
+
+def append_toy_info(thing_list: list[str], row: dict[str, str]) -> None:
+    # Item names are in Item Sparse db
+    thing_list.append(f"{row['ItemID']}\n")
+
+
+def append_transmog_info(thing_list: list[str], row: dict[str, str]) -> None:
+    # Item names are in Item Sparse db.
+    thing_list.append(f"{row['ID']},{row['ItemID']}\n")
+
+
+def append_creature_info(thing_list: list[str], row: dict[str, str]) -> None:
+    # Helps Followers and Pets to get names
+    thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+
+
+def append_spell_item_info(thing_list: list[str], row: dict[str, str]) -> None:
+    # Helps Illusion names
+    name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
+    thing_list.append(f"{row['ID']},{row[name]}\n")
+
+
+def append_spell_name_info(thing_list: list[str], row: dict[str, str]) -> None:
+    # Helps Recipes
+    thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+
+
+def append_skill_line_info(thing_list: list[str], row: dict[str, str]) -> None:
+    # Helps Professions
+    name = "DisplayName_lang" if "DisplayName_lang" in row else "DisplayName_lang[0]"
+    thing_list.append(f"{row['ID']},{row[name]}\n")
+
+
+def append_item_info(thing_list: list[str], row: dict[str, str]) -> None:
+    # Helps Toys and Transmog
+    thing_list.append(f"{row['ID']},{row['Display_lang']}\n")
 
 
 def get_existing_ids(thing: Things) -> list[str]:
