@@ -4304,7 +4304,8 @@ root("Holidays", applyholiday(HALLOWS_END, {
 				["sym"] = {
 					{ "selectparent" },	-- Select the "Rewards" header.
 					{ "pop" },	-- Get the Rewards.
-					{ "exclude", "itemID", 20393 },	-- Treat Bag (self)
+					{ "exclude", "itemID", 20393, 37586, 34077 },	-- Treat Bag & Crudely Wrapped Gift
+					{ "select", "itemID", 33292, 33154 },	-- Hallowed Helm & Sinister Squashling
 				},
 				-- #endif
 				["timeline"] = { "removed 4.2.0" },
