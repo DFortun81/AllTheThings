@@ -5332,6 +5332,12 @@ app.BuildSourceParent = function(group)
 	if specificSource then
 		 specificSource = specificSource[group[groupKey]];
 	end
+	-- group with some Source-able data can be treated as specific Source
+	if not specificSource and (
+		group.npcID or group.creatureID or group.crs or group.providers
+	) then
+		specificSource = true;
+	end
 	if not thingCheck and not specificSource then return; end
 
 	-- pull all listings of this 'Thing'

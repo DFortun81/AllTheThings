@@ -549,7 +549,10 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 
 			-- Chapter 6: Drust to Drust (Renown 13 required to start)
 			q(60898, {	-- The Fate of Ara'lon
-				["sourceQuests"] = { 62560 },	-- Growing in Power
+				["sourceQuests"] = {
+					62560,	-- Growing in Power (can be pre-completed due to covenant skip)
+					59071,	-- Mending a Broken Hart
+				},
 				["provider"] = { "n", 158544 },	-- Lord Herne
 				["coord"] = { 40.9, 72.4, THE_TRUNK },
 			}),
