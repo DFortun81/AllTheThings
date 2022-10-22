@@ -528,6 +528,8 @@ _.ExpansionFeatures =
 							["isBreadcrumb"] = true,
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["races"] = HORDE_ONLY,
+							["minReputation"] = { 2157, FRIENDLY+4500 },
+							["description"] = "Relog if this doesn't appear upon hitting the reputation requirement",
 						}),
 						q(51784, {	-- A Stroll Through a Cemetery
 							["sourceQuests"] = {
@@ -578,6 +580,8 @@ _.ExpansionFeatures =
 							["isBreadcrumb"] = true,	-- were these removed?  it used to be automatically offered upon meeting a rep requirement, but it didn't pop up for me even though i already had the reputation
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["races"] = HORDE_ONLY,
+							["minReputation"] = { 2157, HONORED+3000 },
+							["description"] = "Relog if this doesn't appear upon hitting the reputation requirement",
 						}),
 						q(51797, {	-- Tracking Tidesages
 							["sourceQuests"] = {
@@ -640,6 +644,8 @@ _.ExpansionFeatures =
 							["isBreadcrumb"] = true,	-- were these removed?  it used to be automatically offered upon meeting a rep requirement, but it didn't pop up for me even though i already had the reputation
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["races"] = HORDE_ONLY,
+							["minReputation"] = { 2157, HONORED+7500 },
+							["description"] = "Relog if this doesn't appear upon hitting the reputation requirement",
 						}),
 						q(52764, {	-- Journey to the Middle of Nowhere
 							["sourceQuests"] = {
@@ -725,6 +731,8 @@ _.ExpansionFeatures =
 							["isBreadcrumb"] = true,
 							["provider"] = { "n", 141644 },	-- Nathanos Blightcaller
 							["races"] = HORDE_ONLY,
+							["minReputation"] = { 2157, REVERED },
+							["description"] = "Relog if this doesn't appear upon hitting the reputation requirement",
 						}),
 						q(52183, {	-- When a Plan Comes Together
 							["sourceQuests"] = {
