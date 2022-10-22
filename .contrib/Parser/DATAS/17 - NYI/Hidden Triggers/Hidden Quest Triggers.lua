@@ -2210,8 +2210,8 @@ root("HiddenQuestTriggers", {
 		q(42458),	-- Legion 110 A
 		q(42462),	-- Legion 110 A
 		q(42464),	-- Legion 110 A
-		q(42466),	-- Legion 110 A
-		q(42467),	-- Legion 110 A
+		q(42466, { ["_drop"] = { "g" }, }),	-- Legion 110 A
+		q(42467, { ["_drop"] = { "g" }, }),	-- Legion 110 A
 		q(42468),	-- Legion 110 A
 		q(42469),	-- Legion 110 A
 		q(42470),	-- Legion 110 A
@@ -2229,8 +2229,8 @@ root("HiddenQuestTriggers", {
 		q(42460),	-- Legion 110 H
 		q(42463),	-- Legion 110 H
 		q(42465),	-- Legion 110 H
-		q(42471),	-- Legion 110 H
-		q(42472),	-- Legion 110 H
+		q(42471, { ["_drop"] = { "g" }, }),	-- Legion 110 H
+		q(42472, { ["_drop"] = { "g" }, }),	-- Legion 110 H
 		q(42473),	-- Legion 110 H
 		q(42474),	-- Legion 110 H
 		q(42475),	-- Legion 110 H
