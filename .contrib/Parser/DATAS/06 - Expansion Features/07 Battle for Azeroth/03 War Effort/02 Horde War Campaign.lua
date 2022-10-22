@@ -1164,7 +1164,9 @@ _.ExpansionFeatures =
 							["sourceQuests"] = {
 								54165,	-- The Return of Derek Proudmoore
 								54109,	-- Queen's Favor
+								-- #if before 8.2.5
 								54282,	-- Battle of Dazar'alor
+								-- #endif
 							},
 							["altQuests"] = { 54961 },	-- Righting Wrongs (Sylvanas Version)
 							["provider"] = { "n", 150433 },	-- Bluffwatcher Proudscar
@@ -1175,7 +1177,9 @@ _.ExpansionFeatures =
 							["sourceQuests"] = {
 								54165,	-- The Return of Derek Proudmoore
 								54754,	-- For the Queen
+								-- #if before 8.2.5
 								54282,	-- Battle of Dazar'alor
+								-- #endif
 							},
 							["altQuests"] = { 55124 },	-- Righting Wrongs
 							["provider"] = { "n", 150433 },	-- Bluffwatcher Proudscar
