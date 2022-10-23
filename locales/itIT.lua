@@ -2215,6 +2215,7 @@ for key,value in pairs({
 	[252282] = "Mazzo di Chiavi Luccicante",	-- Sparkling Set of Keys
 	[252284] = "Mucchio di Bombe Appiccicose",	-- Pile of Sticky Bombs
 	[252289] = "Polvere Rimovente",	-- Vanishing Powder
+	[252395] = "Palo del Nerodestriero",	-- Deathcharger Hitching Post
 	[252412] = "|cFFFFFFFFStep 2:|r Mucchio di Terra",	-- |cFFFFFFFFStep 2:|r Mound of Dirt
 	[252432] = "Antica Formazione di Mana Scintillante",	-- Shimmering Ancient Mana Cluster
 	[252434] = "|cFFFFFFFFStep 12:|r Globo Famelico X",	-- |cFFFFFFFFStep 12:|r Hungering Orb X

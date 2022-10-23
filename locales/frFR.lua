@@ -2221,6 +2221,7 @@ for key,value in pairs({
 	[252282] = "Jeu de clés étincelant",	-- Sparkling Set of Keys
 	[252284] = "Tas de bombes collantes",	-- Pile of Sticky Bombs
 	[252289] = "Poussière évanescente",	-- Vanishing Powder
+	[252395] = "Barre d’attache de destrier de la mort",	-- Deathcharger Hitching Post
 	[252412] = "|cFFFFFFFFÉtape 2:|r Monticule de poussière",	-- |cFFFFFFFFStep 2:|r Mound of Dirt
 	[252432] = "Amas de mana ancestral chatoyant",	-- Shimmering Ancient Mana Cluster
 	[252434] = "|cFFFFFFFFÉtape 12:|r Orbe affamé X",	-- |cFFFFFFFFStep 12:|r Hungering Orb X

@@ -2223,6 +2223,7 @@ for key,value in pairs({
 	[252282] = "Glitzernder Schlüsselsatz",	-- Sparkling Set of Keys
 	[252284] = "Haufen Haftbomben",	-- Pile of Sticky Bombs
 	[252289] = "Rauchpulver",	-- Vanishing Powder
+	[252395] = "Anbindepfosten für Todesstreitrösser",	-- Deathcharger Hitching Post
 	[252412] = "|cFFFFFFFFSchritt 2:|r Erdhaufen",	-- |cFFFFFFFFStep 2:|r Mound of Dirt
 	[252432] = "Schimmernde uralte Manazusammenballung",	-- Shimmering Ancient Mana Cluster
 	[252434] = "|cFFFFFFFFSchritt 12:|r Hungernde Kugel X",	-- |cFFFFFFFFStep 12:|r Hungering Orb X
