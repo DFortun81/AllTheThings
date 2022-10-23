@@ -7,6 +7,14 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 		["maps"] = { ICECROWN },
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(3676, { -- A Silver Confidant (Alliance)
+					-- #if ANYCLASSIC
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1094); end]],	-- The Silver Covenant
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+				}),
 				ach(2758, {	-- Argent Valor
 					ach(2756, {	-- Argent Aspiration
 						["sourceQuests"] = {
@@ -173,17 +181,25 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						["crs"] = { 33749, 35327 },	-- Undercity Champion
 					}),
 				}),
+				ach(3677, { -- The Sunreavers (Horde)
+					-- #if ANYCLASSIC
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1124); end]],	-- The Sunreavers
+					-- #endif
+					["races"] = HORDE_ONLY,
+				}),
 				ach(4596, {	-- The Sword in the Skull
 					["description"] = "This is the quest chain for obtaining an epic Quel'Delar weapon.",
 					["maps"] = {
 						NORTHREND_DALARAN,
 						ISLE_OF_QUELDANAS,
 					},
-					["lvl"] = 67,	-- Requirement for the Battered Hilt itself.
 					["cost"] = {
 						{ "i", 50379, 1 },	-- Battered Hilt (A)
 						{ "i", 50380, 1 },	-- Battered Hilt (H)
 					},
+					["lvl"] = 67,	-- Requirement for the Battered Hilt itself.
 					["g"] = {
 						a(q(14443, {	-- The Battered Hilt [Alliance]
 							["provider"] = { "i", 50379 },	-- Battered Hilt
@@ -391,14 +407,6 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					},
 				}),
 				ach(2772),	-- Tilted!
-			}),
-			n(FACTIONS, {
-				a(faction(1094, { -- The Silver Covenant
-					a(ach(3676)),	-- A Silver Confidant (Alliance)
-				})),
-				h(faction(1124, {	-- The Sunreavers
-					h(ach(3677)),	-- The Sunreavers (Horde)
-				})),
 			}),
 			n(FLIGHT_PATHS, {
 				fp(340, {	-- Argent Tournament Grounds, Icecrown
