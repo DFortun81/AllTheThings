@@ -4,6 +4,10 @@
 [Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.9.12...SL-2.9.13) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
+### Dragonflight on the horizon
+
+This is likely the last update before prepatch, do not expect new release right on the weekly reset, we need to fix lots of bugs due to the interface overhaul in Dragonflight. See you in Dragon Isles! 🐉
+
 ### Functional changes
 
 - Slight revision to the handling of showing the various combinations of states of a Thing concerning: Collectible, Collected, Container, Cost (why do they all start with 'c') (i.e. this should make it more clear if something is both collectible and a container, or a cost as a container, or collectible and a cost, etc.)
