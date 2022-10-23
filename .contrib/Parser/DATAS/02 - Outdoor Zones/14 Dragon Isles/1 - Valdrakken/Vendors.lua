@@ -90,7 +90,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			n(196191, {
 				["coord"] = { 43.4, 42.5, VALDRAKKEN },
 				["sym"] = {
-					{"select", "npcID", 197553 },	-- Select Shadowlands Fieldmaster Emberath
+					{"select", "npcID", 197553 },	-- Select Fieldmaster Emberath
 					{"pop"},
 					{"modID", 74}
 				},
@@ -194,12 +194,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					i(198618),	-- Pattern: Artisan's Sign (RECIPE!)
 					i(198598),	-- Technique: Scroll of Sales (RECIPE!)
 					i(198802),	-- Artisan's Consortium Tabard
+					i(194293),	-- Pattern: Vibrant Polishing Cloth (RECIPE!)
+					i(194286),	-- Pattern: Chromatic Embroidery Thread (RECIPE!)
+					i(191586),	-- Recipe: Sagacious Incense (RECIPE!)
+					i(191590),	-- Recipe: Stable Fluidic Draconium (RECIPE!)
+					i(191594),	-- Recipe: Reactive Phial Embelishment (RECIPE!)
+					i(191593),	-- Recipe: Agitating Potion Augmentation (RECIPE!)
 				},
 			}),
 			n(196598, {	-- Rethelshi
 				["coord"] = { 38.4, 36.8, VALDRAKKEN },
 				["sym"] = {
-					{"select", "npcID", 196516 },	-- Select Shadowlands Mythressa
+					{"select", "npcID", 196516 },	-- Select Mythressa
 					{"pop"},
 					{"not", "itemID", 192775 },		-- Not Stormhide Salamanther (MOUNT!)
 					{"modID", 74}

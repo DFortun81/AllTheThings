@@ -10,6 +10,9 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			2072,	-- The Vault of Tyr
 		},
 		["g"] = {
+			n(ZONE_DROPS, {
+				i(194256),	-- Pattern: Hood of Surging Time (RECIPE!)
+			}),
 			d(1, {	-- Normal
 				e(2555, {	-- The Lost Dwarves
 					["crs"] = {

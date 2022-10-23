@@ -42,6 +42,18 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } },
 		i(199031),	-- Stonewatcher's Eye
 		i(199029),	-- Stonewatcher's Toe
 	}),
+	filter(RECIPES, {
+		i(194298, {	-- Pattern: Forlorn Funeral Pall (RECIPE!)
+			["description"] = "Drops from Decaying World Creatures.",
+		}),
+		i(194267),	-- Pattern: Shimmering Embroidery Thread (RECIPE!)
+		i(191580, {	-- Recipe: Transmute: Awakened Earth (RECIPE!)
+			["description"] = "Drops from Earthen World Creatures.",
+		}),
+		i(191578, {	-- Recipe: Transmute: Awakened Fire (RECIPE!)
+			["description"] = "Drops from Fiery World Creatures.",
+		}),
+	}),
 	n(WEAPONS, {
 		i(199020),	-- Drake Racing Starter Pistol
 		i(199027),	-- Drake Slayer's Greatsword

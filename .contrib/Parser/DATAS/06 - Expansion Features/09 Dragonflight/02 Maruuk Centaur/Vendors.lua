@@ -27,6 +27,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					-- RENOWN 5 --
 					i(197569),	-- Windborne Velocidrake: Horned Jaw
 					i(197610),	-- Windborne Velocidrake: Yellow Horns
+					-- RENOWN 13 --
+					i(191547),	-- Recipe: Alacritous Alchemist Stone (RECIPE!)
+					-- RENOWN 22 --
+					i(191588),	-- Recipe: Exultant Incense (RECIPE!)
 				},
 			}),
 		}),

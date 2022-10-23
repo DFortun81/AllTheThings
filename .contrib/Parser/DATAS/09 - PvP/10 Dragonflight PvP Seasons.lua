@@ -29,6 +29,20 @@ root("PVP", pvp(tier(DF_TIER, {
 			ach(15952),	-- Rival I: Dragonflight Season 1
 			ach(15953),	-- Rival II: Dragonflight Season 1
 		}),
+		filter(RECIPES, {
+			i(194270),	-- Pattern: Crimson Combatant's Wildercloth Bands (RECIPE!)
+			i(194271),	-- Pattern: Crimson Combatant's Wildercloth Cloak (RECIPE!)
+			i(194272),	-- Pattern: Crimson Combatant's Wildercloth Gloves (RECIPE!)
+			i(194273),	-- Pattern: Crimson Combatant's Wildercloth Hood (RECIPE!)
+			i(194274),	-- Pattern: Crimson Combatant's Wildercloth Leggings (RECIPE!)
+			i(194275),	-- Pattern: Crimson Combatant's Wildercloth Sash (RECIPE!)
+			i(194276),	-- Pattern: Crimson Combatant's Wildercloth Shoulderpads (RECIPE!)
+			i(194277),	-- Pattern: Crimson Combatant's Wildercloth Treads (RECIPE!)
+			i(194278),	-- Pattern: Crimson Combatant's Wildercloth Tunic (RECIPE!)
+			i(194257),	-- Pattern: Infurious Handwraps of Gesticulation (RECIPE!)
+			i(194258),	-- Pattern: Infurious Legwraps of Possibility (RECIPE!)
+			i(194269),	-- Pattern: Infurious Wildercloth Bolt (RECIPE!)
+		}),
 		n(PVP_ASPIRANT, {
 			n(BACK, {
 				i(201752),	-- Crimson Aspirant's Cape

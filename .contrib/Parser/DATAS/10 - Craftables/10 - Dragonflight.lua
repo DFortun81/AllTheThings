@@ -3,8 +3,8 @@
 ---------------------------------------------
 root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
 	-- Crafting
-	i(191529),	-- Essence of Tyr
-	i(191526),	-- Wisp of Tyr
+	i(191529),	-- Illustrious Insight
+	i(191526),	-- Lesser Illustrious Insight
 	i(194746),	-- Thomas's Empty Bottle
 
 	i(190456),	-- Artisan's Mettle
@@ -12,7 +12,6 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 	i(197921),	-- Primal Infusion
 	i(190454),	-- Primal Chaos
 	i(193053),	-- Dragon Isles Duck Feather
-	i(193050),	-- Tattered Wildercloth
 	i(193360),	-- Centaur's Trophy Necklace
 	i(194110),	-- [PH] Dragon Rider's Honor
 	-- Souls
@@ -23,180 +22,208 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 
 	-- Awakened
 	i(190327),	-- Awakened Air
-	i(190450),	-- Awakened Blood
 	i(190331),	-- Awakened Decay
 	i(190316),	-- Awakened Earth
 	i(190321),	-- Awakened Fire
 	i(190329),	-- Awakened Frost
+	i(190450),	-- Awakened Ire
 	i(190324),	-- Awakened Order
 	-- Rousing
 	i(190326),	-- Rousing Air
-	i(190451),	-- Rousing Blood
 	i(190330),	-- Rousing Decay
 	i(190315),	-- Rousing Earth
 	i(190320),	-- Rousing Fire
 	i(190328),	-- Rousing Frost
+	i(190451),	-- Rousing Ire
 	i(190322),	-- Rousing Order
+	-- Cloth
+	i(193050),	-- Tattered Wildercloth
+	i(193922),	-- Wildercloth
+	i(193923),	-- Decayed Wildercloth
+	i(193924),	-- Frostbitten Wildercloth
+	i(193925),	-- Singed Wildercloth
 	prof(ALCHEMY, {
-		-- Unknown
-		i(191570),	-- Dragon's Alchemical Solution
-		-- Crafting
-		i(191520),	-- Agitating Potion Augmentation
-		i(191521),	-- Agitating Potion Augmentation
-		i(191522),	-- Agitating Potion Augmentation
-		i(191535),	-- Alchemical Flavor Pocket
-		i(191536),	-- Alchemical Flavor Pocket
-		i(191537),	-- Alchemical Flavor Pocket
-		i(191514),	-- Brood Salt
-		i(191515),	-- Brood Salt
-		i(191516),	-- Brood Salt
-		i(191474),	-- Draconic Vial
-		i(191475),	-- Draconic Vial
-		i(191476),	-- Draconic Vial
-		i(191496),	-- Omnium Draconis
-		i(191497),	-- Omnium Draconis
-		i(191498),	-- Omnium Draconis
-		i(191532),	-- Potion Absorption Inhibitor
-		i(191533),	-- Potion Absorption Inhibitor
-		i(191534),	-- Potion Absorption Inhibitor
-		i(191493),	-- Primal Convergent
-		i(191494),	-- Primal Convergent
-		i(191495),	-- Primal Convergent
-		i(191523),	-- Reactive Phial Embelishment
-		i(191524),	-- Reactive Phial Embelishment
-		i(191525),	-- Reactive Phial Embelishment
-		i(194973),	-- Reclaim Concoctions
-		i(191511),	-- Stable Fluidic Draconium
-		i(191512),	-- Stable Fluidic Draconium
-		i(191513),	-- Stable Fluidic Draconium
-		i(191517),	-- Writhefire Oil [NYI]
-		i(191518),	-- Writhefire Oil [NYI]
-		i(191519),	-- Writhefire Oil [NYI]
-		-- Pots
-		i(191384),	-- Aerated Mana Potion
-		i(191385),	-- Aerated Mana Potion
-		i(191386),	-- Aerated Mana Potion
-		i(191342),	-- Aerated Phial of Deftness [NYI]
-		i(191343),	-- Aerated Phial of Deftness [NYI]
-		i(191344),	-- Aerated Phial of Deftness [NYI]
-		i(197720),	-- Aerated Phial of Quick Hands [NYI]
-		i(197721),	-- Aerated Phial of Quick Hands [NYI]
-		i(197722),	-- Aerated Phial of Quick Hands [NYI]
-		i(191360),	-- Bottled Putrescence
-		i(191361),	-- Bottled Putrescence
-		i(191362),	-- Bottled Putrescence
-		i(191390),	-- Breezy Potion of Draconic Vigor [NYI]
-		i(191391),	-- Breezy Potion of Draconic Vigor [NYI]
-		i(191392),	-- Breezy Potion of Draconic Vigor [NYI]
-		i(191488),	-- Cauldron of the Pooka
-		i(191489),	-- Cauldron of the Pooka
-		i(191490),	-- Cauldron of the Pooka
-		i(191348),	-- Charged Phial of Alacrity
-		i(191349),	-- Charged Phial of Alacrity
-		i(191350),	-- Charged Phial of Alacrity
-		i(191354),	-- Crystaline Phial of Perception [NYI]
-		i(191355),	-- Crystaline Phial of Perception [NYI]
-		i(191356),	-- Crystaline Phial of Perception [NYI]
-		i(191375),	-- Delicate Suspension of Spores
-		i(191376),	-- Delicate Suspension of Spores
-		i(191377),	-- Delicate Suspension of Spores
-		i(191387),	-- Elemental Potion of Power
-		i(191388),	-- Elemental Potion of Power
-		i(191389),	-- Elemental Potion of Power
-		i(191381),	-- Elemental Potion of Ultimate Power
-		i(191382),	-- Elemental Potion of Ultimate Power
-		i(191383),	-- Elemental Potion of Ultimate Power
-		i(191327),	-- Iced Phial of Corrupting Rage
-		i(191328),	-- Iced Phial of Corrupting Rage
-		i(191329),	-- Iced Phial of Corrupting Rage
-		i(191330),	-- Phial of Charged Isolation
-		i(191331),	-- Phial of Charged Isolation
-		i(191332),	-- Phial of Charged Isolation
-		i(191357),	-- Phial of Elemental Chaos
-		i(191358),	-- Phial of Elemental Chaos
-		i(191359),	-- Phial of Elemental Chaos
-		i(191333),	-- Phial of Glacial Fury
-		i(191334),	-- Phial of Glacial Fury
-		i(191335),	-- Phial of Glacial Fury
-		i(191324),	-- Phial of Icy Preservation
-		i(191325),	-- Phial of Icy Preservation
-		i(191326),	-- Phial of Icy Preservation
-		i(191336),	-- Phial of Static Empowerment
-		i(191337),	-- Phial of Static Empowerment
-		i(191338),	-- Phial of Static Empowerment
-		i(191321),	-- Phial of Still Air
-		i(191322),	-- Phial of Still Air
-		i(191323),	-- Phial of Still Air
-		i(191339),	-- Phial of Tepid Versatility
-		i(191340),	-- Phial of Tepid Versatility
-		i(191341),	-- Phial of Tepid Versatility
-		i(191318),	-- Phial of the Eye in the Storm
-		i(191319),	-- Phial of the Eye in the Storm
-		i(191320),	-- Phial of the Eye in the Storm
-		i(191482),	-- Potion Cauldron of Power
-		i(191483),	-- Potion Cauldron of Power
-		i(191484),	-- Potion Cauldron of Power
-		i(191485),	-- Potion Cauldron of Ultimate Power
-		i(191486),	-- Potion Cauldron of Ultimate Power
-		i(191487),	-- Potion Cauldron of Ultimate Power
-		i(191402),	-- Potion of Burning Purification [NYI]
-		i(191403),	-- Potion of Burning Purification [NYI]
-		i(191404),	-- Potion of Burning Purification [NYI]
-		i(191366),	-- Potion of Chilled Clarity
-		i(191367),	-- Potion of Chilled Clarity
-		i(191368),	-- Potion of Chilled Clarity
-		i(191351),	-- Potion of Frozen Fatality
-		i(191352),	-- Potion of Frozen Fatality
-		i(191353),	-- Potion of Frozen Fatality
-		i(191363),	-- Potion of Frozen Focus
-		i(191364),	-- Potion of Frozen Focus
-		i(191365),	-- Potion of Frozen Focus
-		i(191396),	-- Potion of Gusts
-		i(191397),	-- Potion of Gusts
-		i(191398),	-- Potion of Gusts
-		i(191399),	-- Potion of Shocking Disclosure
-		i(191400),	-- Potion of Shocking Disclosure
-		i(191401),	-- Potion of Shocking Disclosure
-		i(191393),	-- Potion of the Hushed Zephyr
-		i(191394),	-- Potion of the Hushed Zephyr
-		i(191395),	-- Potion of the Hushed Zephyr
-		i(191369),	-- Potion of Withering Vitality
-		i(191370),	-- Potion of Withering Vitality
-		i(191371),	-- Potion of Withering Vitality
-		i(191372),	-- Residual Neural Channelling Agent
-		i(191373),	-- Residual Neural Channelling Agent
-		i(191374),	-- Residual Neural Channelling Agent
-		i(191378),	-- Steaming Healing Potion
-		i(191379),	-- Steaming Healing Potion
-		i(191380),	-- Steaming Healing Potion
-		i(191345),	-- Steaming Phial of Finesse [NYI]
-		i(191346),	-- Steaming Phial of Finesse [NYI]
-		i(191347),	-- Steaming Phial of Finesse [NYI]
-		-- Trinket
-		i(191492),	-- Alacritous Alchemist Stone
-		i(191491),	-- Sustaining Alchemist Stone
-		-- Unknown
-		--i(),	-- Demonstration Item Recipe
-		--i(),	-- Dragon Isles Alchemy Troubleshooting Test Recipe (DNT)
-		--i(),	-- Heart in a Bottle
-		--i(),	-- Opening
-		i(191505),	-- Exultant Incense
-		i(191506),	-- Exultant Incense
-		i(191507),	-- Exultant Incense
-		i(191508),	-- Fervid Incense
-		i(191509),	-- Fervid Incense
-		i(191510),	-- Fervid Incense
-		i(191499),	-- Sagacious Incense
-		i(191500),	-- Sagacious Incense
-		i(191501),	-- Sagacious Incense
-		i(191502),	-- Somniferous Incense
-		i(191503),	-- Somniferous Incense
-		i(191504),	-- Somniferous Incense
-		-- Discovery?
-		--i(191602),	-- Recipe: Advanced Phial Experimentation
-		--i(191600),	-- Recipe: Advanced Potion Experimentation
-		--i(191601),	-- Recipe: Basic Phial Experimentation
-		--i(191599),	-- Recipe: Basic Potion Experimentation
+		spell(370747, {	-- Advanced Phial Experimentation
+			r(370472),	-- Aerated Phial of Deftness
+			r(370476),	-- Charged Phial of Alacrity
+			r(370483),	-- Crystaline Phial of Perception
+			r(370460),	-- Phial of Charged Isolation
+			r(370504),	-- Phial of Elemental Chaos
+			r(370462),	-- Phial of Glacial Fury
+			r(370463),	-- Phial of Static Empowerment
+			r(370453),	-- Phial of Still Air
+			r(370438),	-- Phial of the Eye in the Storm
+			r(370473),	-- Steaming Phial of Finesse
+			-- Decay
+			r(370457, {	-- Iced Phial of Corrupting Rage
+				["description"] = "Requires Decayology."
+			}),
+			r(370456, {	-- Phial of Icy Preservation
+				["description"] = "Requires Decayology."
+			}),
+		}),
+		spell(370745, {	-- Advanced Potion Experimentation
+			r(370478),	-- Potion of Frozen Fatality
+			r(370524),	-- Potion of Frozen Focus
+			r(370558),	-- Potion of Gusts
+			r(370561),	-- Potion of Shocking Disclosure
+			r(370556),	-- Potion of the Hushed Zephyr
+			r(370533),	-- Residual Neural Channeling Agent
+			-- Decay
+			r(370521, {	-- Bottled Putrescence
+				["description"] = "Requires Decayology."
+			}),
+			r(370536, {	-- Delicate Suspension of Spores
+				["description"] = "Requires Decayology."
+			}),
+			r(370525, {	-- Potion of Chilled Clarity
+				["description"] = "Requires Decayology."
+			}),
+			r(370528, {	-- Potion of Withering Vitality
+				["description"] = "Requires Decayology."
+			}),
+		}),
+		filter(MISC, {
+			i(191520),	-- Agitating Potion Augmentation+
+			i(191521),	-- Agitating Potion Augmentation++
+			i(191522),	-- Agitating Potion Augmentation+++
+			i(191514),	-- Brood Salt+
+			i(191515),	-- Brood Salt++
+			i(191516),	-- Brood Salt+++
+			i(191505),	-- Exultant Incense+
+			i(191506),	-- Exultant Incense++
+			i(191507),	-- Exultant Incense+++
+			i(191508),	-- Fervid Incense+
+			i(191509),	-- Fervid Incense++
+			i(191510),	-- Fervid Incense+++
+			i(191532),	-- Potion Absorption Inhibitor+
+			i(191533),	-- Potion Absorption Inhibitor++
+			i(191534),	-- Potion Absorption Inhibitor+++
+			i(191523),	-- Reactive Phial Embellishment+
+			i(191524),	-- Reactive Phial Embellishment++
+			i(191525),	-- Reactive Phial Embellishment+++
+			i(191499),	-- Sagacious Incense+
+			i(191500),	-- Sagacious Incense++
+			i(191501),	-- Sagacious Incense+++
+			i(191502),	-- Somniferous Incense+
+			i(191503),	-- Somniferous Incense++
+			i(191504),	-- Somniferous Incense+++
+			i(191511),	-- Stable Fluidic Draconium+
+			i(191512),	-- Stable Fluidic Draconium++
+			i(191513),	-- Stable Fluidic Draconium+++
+			i(191517),	-- Writhefire Oil+
+			i(191518),	-- Writhefire Oil++
+			i(191519),	-- Writhefire Oil+++
+		}),
+		filter(56, {	-- Reagents
+			i(191570),	-- Dragon's Alchemical Solution
+			i(191474),	-- Draconic Vial+
+			i(191475),	-- Draconic Vial++
+			i(191476),	-- Draconic Vial+++
+			i(191493),	-- Primal Convergent+
+			i(191494),	-- Primal Convergent++
+			i(191495),	-- Primal Convergent+++
+			i(191496),	-- Omnium Draconis+
+			i(191497),	-- Omnium Draconis++
+			i(191498),	-- Omnium Draconis+++
+		}),
+		n(-386, {	-- Trinkets
+			i(191492),	-- Alacritous Alchemist Stone
+			i(191491),	-- Sustaining Alchemist Stone
+		}),
+		i(191384),	-- Aerated Mana Potion+
+		i(191385),	-- Aerated Mana Potion++
+		i(191386),	-- Aerated Mana Potion+++
+		i(191342),	-- Aerated Phial of Deftness+
+		i(191343),	-- Aerated Phial of Deftness++
+		i(191344),	-- Aerated Phial of Deftness+++
+		i(197720),	-- Aerated Phial of Quick Hands+
+		i(197721),	-- Aerated Phial of Quick Hands++
+		i(197722),	-- Aerated Phial of Quick Hands+++
+		i(191360),	-- Bottled Putrescence+
+		i(191361),	-- Bottled Putrescence++
+		i(191362),	-- Bottled Putrescence+++
+		i(191488),	-- Cauldron of the Pooka+
+		i(191489),	-- Cauldron of the Pooka++
+		i(191490),	-- Cauldron of the Pooka+++
+		i(191348),	-- Charged Phial of Alacrity+
+		i(191349),	-- Charged Phial of Alacrity++
+		i(191350),	-- Charged Phial of Alacrity+++
+		i(191354),	-- Crystalline Phial of Perception+
+		i(191355),	-- Crystalline Phial of Perception++
+		i(191356),	-- Crystalline Phial of Perception+++
+		i(191375),	-- Delicate Suspension of Spores+
+		i(191376),	-- Delicate Suspension of Spores++
+		i(191377),	-- Delicate Suspension of Spores+++
+		i(191387),	-- Elemental Potion of Power+
+		i(191388),	-- Elemental Potion of Power++
+		i(191389),	-- Elemental Potion of Power+++
+		i(191381),	-- Elemental Potion of Ultimate Power+
+		i(191382),	-- Elemental Potion of Ultimate Power++
+		i(191383),	-- Elemental Potion of Ultimate Power+++
+		i(191327),	-- Iced Phial of Corrupting Rage+
+		i(191328),	-- Iced Phial of Corrupting Rage++
+		i(191329),	-- Iced Phial of Corrupting Rage+++
+		i(191330),	-- Phial of Charged Isolation+
+		i(191331),	-- Phial of Charged Isolation++
+		i(191332),	-- Phial of Charged Isolation+++
+		i(191357),	-- Phial of Elemental Chaos+
+		i(191358),	-- Phial of Elemental Chaos++
+		i(191359),	-- Phial of Elemental Chaos+++
+		i(191333),	-- Phial of Glacial Fury+
+		i(191334),	-- Phial of Glacial Fury++
+		i(191335),	-- Phial of Glacial Fury+++
+		i(191324),	-- Phial of Icy Preservation+
+		i(191325),	-- Phial of Icy Preservation++
+		i(191326),	-- Phial of Icy Preservation+++
+		i(191336),	-- Phial of Static Empowerment+
+		i(191337),	-- Phial of Static Empowerment++
+		i(191338),	-- Phial of Static Empowerment+++
+		i(191321),	-- Phial of Still Air+
+		i(191322),	-- Phial of Still Air++
+		i(191323),	-- Phial of Still Air+++
+		i(191339),	-- Phial of Tepid Versatility+
+		i(191340),	-- Phial of Tepid Versatility++
+		i(191341),	-- Phial of Tepid Versatility+++
+		i(191318),	-- Phial of the Eye in the Storm+
+		i(191319),	-- Phial of the Eye in the Storm++
+		i(191320),	-- Phial of the Eye in the Storm+++
+		i(191482),	-- Potion Cauldron of Power+
+		i(191483),	-- Potion Cauldron of Power++
+		i(191484),	-- Potion Cauldron of Power+++
+		i(191485),	-- Potion Cauldron of Ultimate Power+
+		i(191486),	-- Potion Cauldron of Ultimate Power++
+		i(191487),	-- Potion Cauldron of Ultimate Power+++
+		i(191366),	-- Potion of Chilled Clarity+
+		i(191367),	-- Potion of Chilled Clarity++
+		i(191368),	-- Potion of Chilled Clarity+++
+		i(191351),	-- Potion of Frozen Fatality+
+		i(191352),	-- Potion of Frozen Fatality++
+		i(191353),	-- Potion of Frozen Fatality+++
+		i(191363),	-- Potion of Frozen Focus+
+		i(191364),	-- Potion of Frozen Focus++
+		i(191365),	-- Potion of Frozen Focus+++
+		i(191396),	-- Potion of Gusts+
+		i(191397),	-- Potion of Gusts++
+		i(191398),	-- Potion of Gusts+++
+		i(191399),	-- Potion of Shocking Disclosure+
+		i(191400),	-- Potion of Shocking Disclosure++
+		i(191401),	-- Potion of Shocking Disclosure+++
+		i(191393),	-- Potion of the Hushed Zephyr+
+		i(191394),	-- Potion of the Hushed Zephyr++
+		i(191395),	-- Potion of the Hushed Zephyr+++
+		i(191369),	-- Potion of Withering Vitality+
+		i(191370),	-- Potion of Withering Vitality++
+		i(191371),	-- Potion of Withering Vitality+++
+		i(191378),	-- Refreshing Healing Potion+
+		i(191379),	-- Refreshing Healing Potion++
+		i(191380),	-- Refreshing Healing Potion+++
+		i(191372),	-- Residual Neural Channeling Agent+
+		i(191373),	-- Residual Neural Channeling Agent++
+		i(191374),	-- Residual Neural Channeling Agent+++
+		i(191345),	-- Steaming Phial of Finesse+
+		i(191346),	-- Steaming Phial of Finesse++
+		i(191347),	-- Steaming Phial of Finesse+++
 	}),
 	prof(BLACKSMITHING, {
 		-- sold
@@ -565,6 +592,11 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(198303),	-- Tinker: Supercollide-O-Tron
 	}),
 	prof(FISHING, {
+		i(198438, {	-- Draconic Recipe in a Bottle
+			i(191544),	-- Recipe: Cauldron of the Pooka (RECIPE!)
+			i(191589),	-- Recipe: Fervid Incense (RECIPE!)
+			i(191587),	-- Recipe: Somniferous Incense (RECIPE!)
+		}),
 		i(194967),	-- Aileron Seamoth
 		i(194968),	-- Cerulean Spinefish
 		i(194970),	-- Islefin Dorado
@@ -622,47 +654,332 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(193895),	-- Temporal Dragonhead Lure
 		i(193894),	-- Thousandbite Piranha Lure
 	}),
+	prof(TAILORING, {
+		n(ARMOR, {
+			i(193530),	-- Allied Cinch of Time Dilation
+			i(193526),	-- Amice of the Blue
+			i(193520),	-- Azureweave Mantle
+			i(193536),	-- Azureweave Robe
+			i(193525),	-- Azureweave Slippers
+			i(193532),	-- Blue Dragon Soles
+			i(193527),	-- Chronocloth Gloves
+			i(193537),	-- Chronocloth Leggings
+			i(193512),	-- Chronocloth Sash
+			i(193505),	-- Crimson Combatant's Wildercloth Bands
+			i(193522),	-- Crimson Combatant's Wildercloth Cloak
+			i(193507),	-- Crimson Combatant's Wildercloth Gloves
+			i(193506),	-- Crimson Combatant's Wildercloth Hood
+			i(193501),	-- Crimson Combatant's Wildercloth Leggings
+			i(193517),	-- Crimson Combatant's Wildercloth Sash
+			i(193502),	-- Crimson Combatant's Wildercloth Shoulderpads
+			i(193503),	-- Crimson Combatant's Wildercloth Treads
+			i(193514),	-- Crimson Combatant's Wildercloth Tunic
+			i(193521),	-- Hood of Surging Time
+			i(193513),	-- Infurious Handwraps of Gesticulation
+			i(193524),	-- Infurious Legwraps of Possibility
+			i(193516),	-- Vibrant Wildercloth Girdle
+			i(193504),	-- Vibrant Wildercloth Handwraps
+			i(193523),	-- Vibrant Wildercloth Headcover
+			i(193511),	-- Vibrant Wildercloth Shawl
+			i(193508),	-- Vibrant Wildercloth Shoulderspikes
+			i(193518),	-- Vibrant Wildercloth Slacks
+			i(193519),	-- Vibrant Wildercloth Slippers
+			i(193509),	-- Vibrant Wildercloth Vestments
+			i(193510),	-- Vibrant Wildercloth Wristwraps
+			i(193497),	-- Surveyor's Cloth Bands
+			i(193515),	-- Surveyor's Cloth Robe
+			i(193498),	-- Surveyor's Cloth Treads
+			i(201940),	-- Surveyor's Seasoned Cord
+			i(201938),	-- Surveyor's Seasoned Gloves
+			i(201936),	-- Surveyor's Seasoned Hood
+			i(201939),	-- Surveyor's Seasoned Pants
+			i(201937),	-- Surveyor's Seasoned Shoulders
+			i(193500),	-- Surveyor's Tailored Cloak
+			-- Profession Accessory
+			i(193540),	-- Dragoncloth Tailoring Vestments
+			i(193544),	-- Master's Wildercloth Alchemist's Robe
+			i(193545),	-- Master's Wildercloth Chef's Hat
+			i(193533),	-- Master's Wildercloth Enchanter's Hat
+			i(193543),	-- Master's Wildercloth Fishing Cap
+			i(193542),	-- Master's Wildercloth Gardening Hat
+			i(193528),	-- Wildercloth Alchemist's Robe
+			i(193534),	-- Wildercloth Chef's Hat
+			i(193539),	-- Wildercloth Enchanter's Hat
+			i(193529),	-- Wildercloth Fishing Cap
+			i(193538),	-- Wildercloth Gardening Hat
+			i(193541),	-- Wildercloth Tailor's Coat
+		}),
+		filter(MISC, {
+			i(193950),	-- Abrasive Polishing Cloth+
+			i(193951),	-- Abrasive Polishing Cloth++
+			i(193952),	-- Abrasive Polishing Cloth+++
+			i(194018),	-- Azureweave Expedition Pack
+			i(193956),	-- Blazing Embroidery Thread+
+			i(193957),	-- Blazing Embroidery Thread++
+			i(193958),	-- Blazing Embroidery Thread+++
+			i(193944),	-- Blue Silken Lining+
+			i(193945),	-- Blue Silken Lining++
+			i(193946),	-- Blue Silken Lining+++
+			i(193941),	-- Bronzed Grip Wrappings+
+			i(193942),	-- Bronzed Grip Wrappings++
+			i(193943),	-- Bronzed Grip Wrappings+++
+			i(193959),	-- Chromatic Embroidery Thread+
+			i(193960),	-- Chromatic Embroidery Thread++
+			i(193961),	-- Chromatic Embroidery Thread+++
+			i(194020),	-- Chronocloth Reagent Bag
+			i(194042),	-- Explorer's Banner of Herbology+
+			i(194043),	-- Explorer's Banner of Herbology++
+			i(194044),	-- Explorer's Banner of Herbology+++
+			i(194045),	-- Explorer's Banner of Geology+
+			i(194046),	-- Explorer's Banner of Geology++
+			i(194047),	-- Explorer's Banner of Geology+++
+			i(194011),	-- Frozen Spellthread+
+			i(194012),	-- Frozen Spellthread++
+			i(194013),	-- Frozen Spellthread+++
+			i(193962),	-- Shimmering Embroidery Thread+
+			i(193963),	-- Shimmering Embroidery Thread++
+			i(193964),	-- Shimmering Embroidery Thread+++
+			i(194019),	-- Simply Stitched Reagent Bag
+			i(194014),	-- Temporal Spellthread+
+			i(194015),	-- Temporal Spellthread++
+			i(194016),	-- Temporal Spellthread+++
+			i(193953),	-- Vibrant Polishing Cloth+
+			i(193954),	-- Vibrant Polishing Cloth++
+			i(193955),	-- Vibrant Polishing Cloth+++
+			i(194008),	-- Vibrant Spellthread+
+			i(194009),	-- Vibrant Spellthread++
+			i(194010),	-- Vibrant Spellthread+++
+			i(194017),	-- Wildercloth Bag
+			i(194048),	-- Wildercloth Bandage+
+			i(194049),	-- Wildercloth Bandage++
+			i(194050),	-- Wildercloth Bandage+++
+		}),
+		filter(56, {	-- Reagents
+			i(193938),	-- Azureweave Bolt+
+			i(193939),	-- Azureweave Bolt++
+			i(193940),	-- Azureweave Bolt+++
+			i(193935),	-- Chronocloth Bolt+
+			i(193936),	-- Chronocloth Bolt++
+			i(193937),	-- Chronocloth Bolt+++
+			i(193932),	-- Infurious Wildercloth Bolt+
+			i(193933),	-- Infurious Wildercloth Bolt++
+			i(193934),	-- Infurious Wildercloth Bolt+++
+			i(193929),	-- Vibrant Wildercloth Bolt+
+			i(193930),	-- Vibrant Wildercloth Bolt++
+			i(193931),	-- Vibrant Wildercloth Bolt+++
+			i(193926),	-- Wildercloth Bolt+
+			i(193927),	-- Wildercloth Bolt++
+			i(193928),	-- Wildercloth Bolt+++
+		}),
+		filter(TOYS, {
+			i(194058),	-- Cold Cushion (TOY!)
+			i(194057),	-- Cushion of Time Travel (TOY!)
+			i(194060),	-- Dragonscale Expedition's Expedition Tent (TOY!)
+			i(194056),	-- Duck-Stuffed Duck Lovie (TOY!)
+			i(194052),	-- Forlorn Funeral Pall (TOY!)
+			i(194059),	-- Market Tent (TOY!)
+		}),
+		n(WEAPONS, {
+			i(194070),	-- Draconium Fabric Cutters Left Blade
+			i(194069),	-- Draconium Fabric Cutters Right Blade
+			i(198041),	-- Khaz'gorite Fabric Cutters Left Blade
+			i(194065),	-- Khaz'gorite Fabric Cutters Right Blade
+		}),
+	}),
 }))));
 
 root("HiddenQuestTriggers", {
 	tier(DF_TIER, {
+		prof(ALCHEMY, {
+			-- FIRST CRAFT
+			q(71251),	-- Advanced Phial Alchemical Experimentation
+			--q(),	-- Advanced Potion Alchemical Experimentation
+			--q(),	-- Basic Phial Alchemical Experimentation
+			--q(),	-- Basic Potion Alchemical Experimentation
+			--q(),	-- Reclaim Concoctions
+			--q(),	-- Recraft Equipment
+			-- Reagents
+			q(71258),	-- Omnium Draconis
+			q(71249),	-- Primal Convergent
+			-- Air Potions
+			q(71287),	-- Aerated Mana Potion
+			q(71279),	-- Bottled Putrescence
+			q(71292),	-- Potion of Gusts
+			q(71293),	-- Potion of Shocking Disclosure
+			q(71291),	-- Potion of the Hushed Zephyr
+			q(71283),	-- Residual Neural Channeling Agent
+			-- Frost Potions
+			q(71284),	-- Delicate Suspension of Spores
+			q(71281),	-- Potion of Chilled Clarity
+			q(71276),	-- Potion of Frozen Fatality
+			q(71280),	-- Potion of Frozen Focus
+			q(71282),	-- Potion of Withering Vitality
+			q(71285),	-- Refreshing Healing Potion
+			-- Cauldrons
+			q(71295),	-- Potion Cauldron of Ultimate Power
+			q(71296),	-- Potion Cauldron of Power
+			q(71247),	-- Cauldron of the Pooka
+			-- Elemental Phials and Potions
+			q(71286),	-- Elemental Potion of Ultimate Power
+			q(71288),	-- Elemental Potion of Power
+			q(71278),	-- Phial of Elemental Chaos
+			-- Air Phials
+			q(71274),	-- Aerated Phial of Deftness
+			--q(),	-- Aerated Phial of Quick Hands
+			q(71272),	-- Charged Phial of Alacrity
+			q(71268),	-- Phial of Charged Isolation
+			q(71270),	-- Phial of Static Empowerment
+			q(71265),	-- Phial of Still Air
+			q(71264),	-- Phial of the Eye in the Storm
+			-- Frost Phials
+			q(71277),	-- Crystalline Phial of Perception
+			q(71267),	-- Iced Phial of Corrupting Rage
+			q(71269),	-- Phial of Glacial Fury
+			q(71266),	-- Phial of Icy Preservation
+			q(71271),	-- Phial of Tepid Versatility
+			q(71275),	-- Steaming Phial of Finesse
+			-- Transmutations
+			q(71297),	-- Transmute: Awakened Air
+			--q(),	-- Transmute: Awakened Earth
+			--q(),	-- Transmute: Awakened Fire
+			--q(),	-- Transmute: Awakened Frost
+			q(71301),	-- Transmute: Decay to Elements
+			--q(),	-- Transmute: Order to Elements
+			-- Optional Reagents
+			q(71263),	-- Potion Absorption Inhibitor
+			-- Finishing Reagents
+			q(71257),	-- Agitating Potion Augmentation
+			q(71255),	-- Brood Salt
+			--q(),	-- Illustrious Insight
+			--q(),	-- Reactive Phial Embellishment
+			q(71254),	-- Stable Fluidic Draconium
+			q(71256),	-- Writhefire Oil
+			-- Incense
+			q(71259),	-- Exultant Incense
+			q(71289),	-- Fervid Incense
+			q(71261),	-- Sagacious Incense
+			q(71260),	-- Somniferous Incense
+			-- Alchemist Stones
+			q(71246),	-- Alacritous Alchemist Stone
+			q(71245),	-- Sustaining Alchemist Stone
+			-- Misc
+			q(71948),	-- Maxxed Out Transmutation
+
+		}),
 		prof(BLACKSMITHING, {
 			q(71361),	-- Draconium Blacksmith's Hammer
 			q(71315),	-- Explorer's Plate Bracers
 		}),
 		prof(ENGINEERING, {
-			q(71478),	-- Handful of Tyrivite Bolts
-			q(71479),	-- Shock-Spring Coil
+			-- Recrafting --
+			q(),	-- Recraft Equipment
+			-- Parts --
+			q(71482),	-- Arclight Capacitor
+			q(),	-- Assorted Safety Fuses
 			q(71480),	-- Everburning Blasting Powder
 			q(71481),	-- Greased-Up Gears
-			q(71482),	-- Arclight Capacitor
-
+			q(71478),	-- Handful of Tyrivite Bolts
+			q(),	-- Reinforced Machine Chassis
+			q(),	-- Rummage Through Scrap
+			q(71479),	-- Shock-Spring Coil
+			-- Finishing Reagents
+			q(71468),	-- Haphazardly Tethered Wires
+			q(),	-- Illustrious Insight
+			q(),	-- Overcharged Overclocker
+			-- Optional Reagents
+			q(),	-- Calibrated Safety Switch
+			q(),	-- Critical Failure Prevention Unit
+			q(),	-- Magazine of Healing Darts
+			q(),	-- Spring-Loaded Capacitor Casing
+			-- Tinker
+			q(),	-- Tinker: Alarm-O-Turret
+			q(),	-- Tinker: Arclight Vital Correctors
+			q(),	-- Tinker: Breath of Neltharion
+			q(),	-- Tinker: Grounded Circuitry
+			q(),	-- Tinker: Plane Displacer
+			q(),	-- Tinker: Polarity Amplifier
+			q(),	-- Tinker: Supercollide-O-Tron
+			-- Googles
+			q(),	-- Battle-Ready Binoculars
 			q(71448),	-- Deadline Deadeyes
+			q(),	-- Lightweight Ocular Lenses
 			q(71447),	-- Milestone Magnifiers
+			q(),	-- Oscillating Wilderness Opticals
+			q(),	-- Peripheral Vision Projectors
 			q(71446),	-- Quality-Assured Optics
 			q(71449),	-- Sentry's Stabilized Specs
-
-
+			-- Armor
+			q(),	-- Complicated Cuffs
+			q(),	-- Difficult Wrist Protectors
+			q(),	-- Needlessy Complex Wristguards
+			q(),	-- Overengineered Sleeve Extenders
+			-- Weapons
 			q(71511),	-- P.E.W. x2
-
-
+			q(),	-- Sophisticated Problem Solver
+			-- Cogwheels
+			q(),	-- Meticulously-Tuned Gear
+			q(),	-- One-Size-Fits-All
+			q(),	-- Rapidly Ticking Gear
+			q(),	-- Razor-Sharp Gear
+			-- Scopes & Ammo
+			q(),	-- Completely Safe Rockets
+			q(),	-- Endless Stack of Needles
 			q(71512),	-- Gyroscopic Kaleidoscope
-
-			q(71468),	-- Haphazardly Tethered Wires
-
-
+			q(),	-- High Intensity Thermal Scanner
+			q(),	-- Projectile Propulsion Pinion
+			-- Fireworks
+			q(),	-- Black Fireflight
+			q(),	-- Blue Fireflight
 			q(71877),	-- Bronze Fireflight
-
-			q(71462),	-- Creature Combustion Canister
-
-
+			q(),	-- Bundle of Fireworks
+			q(),	-- Green Fireflight
+			q(),	-- Red Fireflight
+			-- Explosives
+			q(),	-- Creature Combustion Canister
+			q(),	-- EZ-Thro Creature Combustion Canister
+			q(),	-- EZ-Thro Gravitational Displacer
+			q(),	-- EZ-Thro Grease Grenade
+			q(),	-- EZ-Thro Primal Deconstruction Charge
+			q(),	-- Gravitational Displacer
+			q(),	-- Grease Grenade
+			q(),	-- I.W.I.N Button Mk10
+			q(),	-- Primal Deconstruction Charge
+			q(),	-- Sticky Warp Grenade
+			q(),	-- Suspiciously Silent Crate
+			q(),	-- Suspiciously Ticking Crate
+			-- Devices
+			q(),	-- Cartomancy Cannon
+			q(),	-- Centralized Precipitation Emitter
+			q(),	-- Element-Infused Rocket Helmet
+			q(),	-- Environmental Emulator
+			q(),	-- Expedition Multi-Toolbox
+			q(),	-- Giggle Googles
+			q(),	-- H.E.L.P
 			q(71891),	-- Neural Silencer Mk3
-
-
+			q(),	-- Portable Alchemist's Lab Bench
+			q(),	-- Portable Tinker's Workbench
+			q(),	-- S.A.V.I.O.R
+			q(),	-- Tinker Removal Kit
+			q(),	-- Wyrmhole Generator
+			q(),	-- Zapthrottle Soul Inhaler
+			-- Profession Equipment
+			q(),	-- Bottomless Mireslush Ore Satchel
 			q(71495),	-- Bottomless Stonecrust Ore Satchel
-			q(71493),	-- Draconium Delver's Helmet
 			q(71485),	-- Draconium Brainwave Amplifier
+			q(71493),	-- Draconium Delver's Helmet
+			q(),	-- Draconium Encased Samophlange
+			q(),	-- Draconium Fisherfriend
+			q(71485),	-- Khaz'gorite Brainwave Amplifier
+			q(71493),	-- Khaz'gorite Delver's Helmet
+			q(),	-- Khaz'gorite Encased Samophlange
+			q(),	-- Khaz'gorite Fisherfriend
+			q(),	-- Lapidary's Draconium Clamps
+			q(),	-- Lapidary's Khaz'gorite Clamps
 			q(71497),	-- Spring-Loaded Draconium Fabric Cutters
+			q(),	-- Spring-Loaded Khaz'gorite Fabric Cutters
+			-- Robotics
+			q(),	-- D.U.C.K.O.Y
+			q(),	-- Quack-E
 		}),
 		prof(MINING, {
 			q(72160),	-- Iridescent Ore Fragments
@@ -676,30 +993,20 @@ root("HiddenQuestTriggers", {
 				-- Woven Cloth	--
 			q(71842),	-- Azureweave Bolt
 			q(71843),	-- Chornocloth Bolt
-			q(71845),	-- Bloody Wildercloth Bolt
+			q(71845),	-- Infurious Wildercloth Bolt
 			q(71844),	-- Vibrant Wildercloth Bolt
 			q(71841),	-- Wildercloth Bolt
 				-- Optional Reagents --
 			q(71827),	-- Blue Silken Lining
 			q(71828),	-- Bronzed Grip Wrappings
 				-- Finishing Reagents --
-			--q(),	-- Essence of Tyr
+			--q(),	-- Illustrious Insight
 			q(71819),	-- Abrasive Polishing Cloth
 			q(71820),	-- Vibrant Polishing Cloth
-			--q(),	-- Wisp of Tyr
-			q(71823),	-- Shimmering Embroidery Thread
 			q(71822),	-- Chromatic Embroidery Thread
 			q(71821),	-- Blazing Embroidery Thread
+			q(71823),	-- Shimmering Embroidery Thread
 				-- Garments --
-			q(71803),	-- Vibrant Wildercloth Girdle
-			q(71799),	-- Vibrant Wildercloth Handwraps
-			q(71800),	-- Vibrant Wildercloth Headcover
-			q(71796),	-- Vibrant Wildercloth Shawl
-			q(71802),	-- Vibrant Wildercloth Shoulderspikes
-			q(71801),	-- Vibrant Wildercloth Slacks
-			q(71798),	-- Vibrant Wildercloth Slippers
-			q(71797),	-- Vibrant Wildercloth Vestments
-			q(71804),	-- Vibrant Wildercloth Wristwrap
 			q(71813),	-- Crimson Combatant's Wildercloth Bands
 			q(71805),	-- Crimson Combatant's Wildercloth Cloak
 			q(71808),	-- Crimson Combatant's Wildercloth Gloves
@@ -709,24 +1016,38 @@ root("HiddenQuestTriggers", {
 			q(71811),	-- Crimson Combatant's Wildercloth Shoulderpads
 			q(71807),	-- Crimson Combatant's Wildercloth Treads
 			q(71806),	-- Crimson Combatant's Wildercloth Tunic
-			q(71792),	-- Explorer's Tailored Cloak
-			q(71793),	-- Explorer's Cloth Robe
-			q(71794),	-- Explorer's Cloth Treads
-			q(71795),	-- Explorer's Cloth Bands
+			q(71803),	-- Vibrant Wildercloth Girdle
+			q(71799),	-- Vibrant Wildercloth Handwraps
+			q(71800),	-- Vibrant Wildercloth Headcover
+			q(71796),	-- Vibrant Wildercloth Shawl
+			q(71802),	-- Vibrant Wildercloth Shoulderspikes
+			q(71801),	-- Vibrant Wildercloth Slacks
+			q(71798),	-- Vibrant Wildercloth Slippers
+			q(71797),	-- Vibrant Wildercloth Vestments
+			q(71804),	-- Vibrant Wildercloth Wristwrap
+			q(71795),	-- Surveyor's Cloth Bands
+			q(71793),	-- Surveyor's Cloth Robe
+			q(71794),	-- Surveyor's Cloth Treads
+			q(72504),	-- Surveyor's Seasoned Cord
+			q(72506),	-- Surveyor's Seasoned Gloves
+			q(72507),	-- Surveyor's Seasoned Hood
+			q(72505),	-- Surveyor's Seasoned Pants
+			--q(),	-- Surveyor's Seasoned Shoulders
+			q(71792),	-- Surveyor's Tailored Cloak
 				-- Azureweave Garments --
 			q(71779),	-- Amice of the Blue
 			q(71788),	-- Azureweave Mantle
 			q(71786),	-- Azureweave Robe
 			q(71787),	-- Azureweave Slippers
-			q(71780),	-- Bloody Handwraps of Gesticulation
 			q(71782),	-- Blue Dragon Soles
+			q(71780),	-- Infurious Handwraps of Gesticulation
 				-- Chronocloth Garments --
 			q(71783),	-- Allied Cinch of Time Dilation
-			q(71781),	-- Bloody Legwraps of Possibility
 			q(71789),	-- Chronocloth Gloves
 			q(71790),	-- Chronocloth Leggings
 			q(71791),	-- Chronocloth Sash
 			q(71776),	-- Hood of Surging Time
+			q(71781),	-- Infurious Legwraps of Possibility
 				-- Profession Garments --
 			q(71832),	-- Dragoncloth Tailoring Vestments
 			q(71830),	-- Master's Wildercloth Alchemist's Robe
@@ -735,8 +1056,8 @@ root("HiddenQuestTriggers", {
 			--q(),	-- Master's Wildercloth Fishing Cap
 			q(71840),	-- Master's Wildercloth Gardening Hat
 			q(71829),	-- Wildercloth Alchemist's Robe
-			q(71835),	-- Wildercloth Enchanter's Hat
 			q(71833),	-- Wildercloth Chef's Hat
+			q(71835),	-- Wildercloth Enchanter's Hat
 			q(71837),	-- Wildercloth Fishing Cap
 			q(71839),	-- Wildercloth Gardening Hat
 			q(71831),	-- Wildercloth Tailor's Coat
@@ -745,18 +1066,18 @@ root("HiddenQuestTriggers", {
 			q(71826),	-- Temporal Spellthread
 			q(71824),	-- Vibrant Spellthread
 				-- Embroidered Bags --
-			q(71847),	-- Chronocloth Reagent Bag
 			q(71815),	-- Azureweave Expedition Pack
-			q(71814),	-- Wildercloth Bag
+			q(71847),	-- Chronocloth Reagent Bag
 			q(71846),	-- Simply Stitched Reagent Bag
+			q(71814),	-- Wildercloth Bag
 				-- Assorted Embroidery --
-			q(71850),	-- Duck-Stuffed Duck Lovie
-			q(71851),	-- Forlorn Funeral Pall
-			q(71817),	-- Explorer's Banner of Dragon Isles Flora
-			--q(),	-- Explorer's Banner of Dragon Isles Geology
-			q(71855),	-- Dragonscale Expedition's Expedition Tent
+			--q(),	-- Explorer's Banner of Geology
+			q(71817),	-- Explorer's Banner of Herbology
 			q(71853),	-- Cold Cushion
 			q(71852),	-- Cushion of Time Travel
+			q(71855),	-- Dragonscale Expedition's Expedition Tent
+			q(71850),	-- Duck-Stuffed Duck Lovie
+			q(71851),	-- Forlorn Funeral Pall
 			q(71854),	-- Market Tent
 			q(71816),	-- Wildercloth Bandage
 				-- Experiments --

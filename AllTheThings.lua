@@ -22894,22 +22894,22 @@ hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, recipeID, rea
 end)
 -- GameTooltip:HookScript("OnUpdate", CheckAttachTooltip);
 GameTooltip:HookScript("OnShow", AttachTooltip);
-GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
-GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
-GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
-GameTooltip:HookScript("OnTooltipCleared", ClearTooltip);
+--GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+--GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+--GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
+--GameTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 ItemRefTooltip:HookScript("OnShow", AttachTooltip);
-ItemRefTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
-ItemRefTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
-ItemRefTooltip:HookScript("OnTooltipCleared", ClearTooltip);
+--ItemRefTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+--ItemRefTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+--ItemRefTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 ItemRefShoppingTooltip1:HookScript("OnShow", AttachTooltip);
-ItemRefShoppingTooltip1:HookScript("OnTooltipSetQuest", AttachTooltip);
-ItemRefShoppingTooltip1:HookScript("OnTooltipSetItem", AttachTooltip);
-ItemRefShoppingTooltip1:HookScript("OnTooltipCleared", ClearTooltip);
+--ItemRefShoppingTooltip1:HookScript("OnTooltipSetQuest", AttachTooltip);
+--ItemRefShoppingTooltip1:HookScript("OnTooltipSetItem", AttachTooltip);
+--ItemRefShoppingTooltip1:HookScript("OnTooltipCleared", ClearTooltip);
 ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
-ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
-ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
-ItemRefShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
+--ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
+--ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
+--ItemRefShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
 
 --[[
 hooksecurefunc("EmbeddedItemTooltip_SetCurrencyByID", function(self, id, ...)

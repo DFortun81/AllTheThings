@@ -1056,15 +1056,21 @@ i(199897);	-- Blue Cover Bean Bag
 i(199769);	-- Blue Dragon Banner
 i(199770);	-- Bronze Dragon Banner
 i(198264);	-- Centralized Precipitation Emitter
+i(194058);	-- Cold Cushion
 i(200551);	-- Comfortable Pile of Pelts
+i(194057);	-- Cushion of Time Travel
 i(199649);	-- Dragon Tea Set
+i(194060);	-- Dragonscale Expedition's Expedition Tent
+i(194056);	-- Duck-Stuffed Duck Lovie
 i(198728);	-- Explorer's League Banner
 i(199894);	-- Fisherman's Folly Rack
+i(194052);	-- Forlorn Funeral Pall
 i(198227);	-- Giggle Goggles
 i(199771);	-- Green Dragon Banner
 i(198090);	-- Jar of Excess Slime
 i(200597);	-- Lover's Bouquet
 i(198857);	-- Lucky Duck
+i(194059);	-- Market Tent
 i(198402);	-- Maruuk Cooking Pot
 i(197986);	-- Murglasses
 i(200640);	-- Obsidian Egg Clutch
@@ -1090,18 +1096,12 @@ i(193476);	-- Gnoll Tent
 i(197719);	-- Artisan's Sign
 i(197961);	-- Whelps on Strings
 i(198409);	-- Personal Shell
-i(194052);	-- Forlorn Funeral Pall
 i(198474);	-- Artist's Easel
 i(198537);	-- Taivan's Trumpet
 i(198646);	-- Ornate Dragon Statue
-i(194060);	-- Dragonscale Expedition's Expedition Tent
 i(198206);	-- Environmental Emulator
 i(198827);	-- Magical Snow Sled
-i(194056);	-- Duck-Stuffed Duck Lovie
 i(199111);	-- Maestro Duck's Orchestrion
-i(194057);	-- Cushion of Time Travel
-i(194058);	-- Cold Cushion
-i(194059);	-- Market Tent
 i(199554);	-- S.E.A.T.
 i(199337);	-- Bag of Furious Winds
 i(199926);	-- Portable J.A.M.

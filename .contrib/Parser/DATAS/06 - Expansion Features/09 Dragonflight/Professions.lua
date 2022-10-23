@@ -273,6 +273,30 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				},
 			}),
 		}),
+		prof(TAILORING, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(376556),	-- Azureweave Bolt
+					r(376502),	-- Azureweave Mantle
+					r(376500),	-- Azureweave Robe
+					r(376557),	-- Chronocloth Bolt
+					r(376503),	-- Chronocloth Gloves
+					r(376504),	-- Chronocloth Leggings
+					r(376546),	-- Dragoncloth Tailoring Vestments
+					r(376569),	-- Market Tent
+					r(376513),	-- Vibrant Wildercloth Handwraps
+					r(376512),	-- Vibrant Wildercloth Slippers
+					r(376514),	-- Vibrant Wildercloth Headcover
+					r(376510),	-- Vibrant Wildercloth Shawl
+					r(376511),	-- Vibrant Wildercloth Vestments
+					r(376515),	-- Vibrant Wildercloth Slacks
+					r(376516),	-- Vibrant Wildercloth Shoulderspikes
+					r(376517),	-- Vibrant Wildercloth Girdle
+					r(376518),	-- Vibrant Wildercloth Wristwraps
+				}
+			})
+		}),
 	}),
 })));
 

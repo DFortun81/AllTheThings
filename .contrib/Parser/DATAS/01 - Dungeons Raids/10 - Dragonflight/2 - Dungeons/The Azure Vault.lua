@@ -19,6 +19,9 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 				}),
 			}),
+			n(ZONE_DROPS, {
+				i(194255),	-- Pattern: Amice of the Blue (RECIPE!)
+			}),
 			d(1, {	-- Normal
 				e(2582, {	-- Leymor
 					["crs"] = { 186644 },	-- Leymor
