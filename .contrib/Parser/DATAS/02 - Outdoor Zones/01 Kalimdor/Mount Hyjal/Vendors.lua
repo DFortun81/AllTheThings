@@ -28,7 +28,6 @@ _.Zones =
 				n(71304, {	-- Iris Moondreamer <Quartermaster>
 					["coord"] = { 62.8, 24.2, MOUNT_HYJAL },
 					["timeline"] = { "added 5.3.0.16781" },
-					["lvl"] = lvlsquish(80, 30, 80),
 					["sym"] = {
 						{ "select", "headerID", -573 },	-- Scroll of Resurrection
 						{ "pop" },						-- Pop the Headers

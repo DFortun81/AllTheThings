@@ -6,7 +6,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 		["mapID"] = TRIAL_OF_THE_CRUSADER,
 		["coord"] = { 75.0, 21.8, ICECROWN },	-- Trial of the Crusader (Argent Tournament Grounds)
 		["maps"] = { 173 },
+		-- #if AFTER CATA
 		["sharedLockout"] = 1,
+		-- #endif
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["groups"] = {
@@ -1862,6 +1864,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34465,	-- Velanaa
 					},
 					["groups"] = {
+						ach(3814, {	-- Resilience Will Fix It (25 player)
+							["timeline"] = { "deleted 4.0.3" },
+						}),
 						i(47285),	-- Dual-Blade Butcher
 						i(47287),	-- Bastion of Resolve
 						i(47291),	-- Shroud of Displacement
@@ -1898,6 +1903,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34441,	-- Vivienne Blackwhisper
 					},
 					["groups"] = {
+						ach(3814, {	-- Resilience Will Fix It (25 player)
+							["timeline"] = { "deleted 4.0.3" },
+						}),
 						i(47069),	-- Justicebringer
 						i(47079),	-- Bastion of Purity
 						i(47089),	-- Cloak of Displacement

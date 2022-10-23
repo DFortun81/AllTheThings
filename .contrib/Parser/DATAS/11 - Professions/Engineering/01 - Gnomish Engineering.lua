@@ -6,6 +6,20 @@ profession(ENGINEERING, {
 			3643,	-- Show Your Work
 		},
 		["groups"] = {
+			-- #if BEFORE 4.0.1
+			{
+				["name"] = "Bullets",
+				["timeline"] = { "added 3.3.0" },
+				["categoryID"] = 1,
+				["groups"] = {
+					applyclassicphase(WRATH_PHASE_FOUR, {
+						["name"] = "Iceblade Arrow",
+						["timeline"] = { "added 3.3.0", "deleted 4.0.1" },
+						["recipeID"] = 72953,
+					}),
+				},
+			},
+			-- #endif
 			{
 				["name"] = "Devices",
 				["categoryID"] = 188,
@@ -193,3 +207,9 @@ end
 -- Classic Recipes
 itemrecipe(18654, 23096);	-- Schematic: Gnomish Alarm-O-Bot
 itemrecipe(18661, 23129);	-- Schematic: World Enlarger
+
+-- #if AFTER WRATH
+-- #if BEFORE 4.0.1
+itemrecipe(52023, 72953);	-- Plans: Iceblade Arrow
+-- #endif
+-- #endif

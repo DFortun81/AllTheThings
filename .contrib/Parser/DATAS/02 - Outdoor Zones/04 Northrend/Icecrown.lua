@@ -140,6 +140,42 @@ root("Zones", {
 					}),
 				})),
 				-- #endif
+				-- #if ANYCLASSIC
+				n(EXPLORATION, {
+					exploration(4510),	-- Aldur'thar: The Desolation Gate
+					exploration(4527),	-- Balargarde Fortress
+					exploration(4521),	-- Cathedral of Darkness
+					exploration(4518),	-- Corp'rethar: The Horror Gate
+					exploration(4522),	-- Icecrown Citadel
+					exploration(4523),	-- Icecrown Glacier
+					exploration(4503),	-- Ironwall Dam
+					exploration(4516),	-- Ironwall Rampart
+					exploration(4496),	-- Jotunheim
+					exploration(4528),	-- Kul'galar Keep
+					exploration(4520),	-- Malykriss: The Vile Hold
+					exploration(4508),	-- Mord'rethar: The Death Gate
+					exploration(4526),	-- Njorndar Village
+					exploration(4417),	-- Onslaught Harbor
+					exploration(4497),	-- Savage Ledge
+					exploration(4506),	-- Scourgeholme
+					exploration(4533),	-- Sindragosa's Fall
+					exploration(4501),	-- The Argent Vanguard
+					exploration(4509),	-- The Bombardment
+					exploration(4505),	-- The Breach
+					exploration(4507),	-- The Broken Front
+					exploration(4515),	-- The Conflagration
+					exploration(4519),	-- The Court of Bones
+					exploration(4531),	-- The Fleshwerks
+					exploration(4477),	-- The Shadow Vault
+					exploration(4540),	-- The Valley of Fallen Heroes
+					exploration(4537),	-- The Valley of Lost Hope
+					exploration(4492),	-- Ufrang's Hall
+					exploration(4524),	-- Valhalas
+					exploration(4504),	-- Valley of Echoes
+					exploration(4517),	-- Weeping Quarry
+					exploration(4513),	-- Ymirheim
+				}),
+				-- #endif
 				n(FACTIONS, {
 					faction(1106),	-- Argent Crusade
 					faction(1098),	-- Knights of the Ebon Blade
@@ -158,13 +194,10 @@ root("Zones", {
 						["cr"] = 30433,	-- Aedan Moran <Flight Master>
 						["coord"] = { 87.8, 78.0, ICECROWN },
 					}),
-					applyclassicphase(WRATH_PHASE_THREE, fp(333, {	-- The Shadow Vault
+					fp(333, {	-- The Shadow Vault
 						["cr"] = 30314,	-- Morlia Doomwing <Flight Master>
 						["coord"] = { 43.6, 24.4, ICECROWN },
-						-- #if ANYCLASSIC
-						["description"] = "This flight path is currently broken and has no connected pathways.",
-						-- #endif
-					})),
+					}),
 				}),
 				n(QUESTS, {
 					q(13286, {	-- ...All the Help We Can Get.

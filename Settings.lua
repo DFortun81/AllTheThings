@@ -2216,7 +2216,7 @@ ExtraThingsLabel.OnRefresh = function(self)
     local numEvents = C_Calendar.GetNumDayEvents(0, date.monthDay);
     for i=1, numEvents do
         local event = C_Calendar.GetHolidayInfo(0, date.monthDay, i);
-        if event.texture == 235461 then -- Non-localised way to detect specific holiday, I hope?
+        if event.texture == 235461 or event.texture == 235462 then -- Non-localised way to detect specific holiday, I hope?
             self:SetText(L["STRANGER_THINGS_LABEL"]);
         end
     end
@@ -2696,6 +2696,7 @@ for i,filterID in ipairs(awColumn1) do
 		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
 	end
 	filter.filterID = filterID;
+	filter:SetATTTooltip(L["FILTER_ID"]..": "..filterID);
 	last = filter;
 end
 
@@ -2711,6 +2712,7 @@ for i,filterID in ipairs(awColumn2) do
 		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, 4);
 	end
 	filter.filterID = filterID;
+	filter:SetATTTooltip(L["FILTER_ID"]..": "..filterID);
 	last = filter;
 end
 

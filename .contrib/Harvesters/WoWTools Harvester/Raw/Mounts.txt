@@ -1563,3 +1563,5 @@
 394738,Vicious Sabertooth
 10.0.2.45969
 387231,Hailstorm Armoredon
+10.0.2.46091
+395644,Divine Kiss of Ohn'ahra

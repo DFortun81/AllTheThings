@@ -32,7 +32,9 @@ local OnTooltipForFrenzyheart = [[function(t)
 			if f and #f > 0 then tinsert(rejek, f[1]); end
 			t.rejek = rejek;
 		end
-		GameTooltip:AddDoubleLine("Complete 1 of 4 quests offered by Rejek:", _.L[t.rejek[1].saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. rejekRep .. " Rep");
+		local completedAny = false;
+		for i,quest in ipairs(t.rejek) do if quest.saved then completedAny = true; break; end end
+		GameTooltip:AddDoubleLine("Complete 1 of 4 quests offered by Rejek:", _.L[completedAny and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. rejekRep .. " Rep");
 		for i,quest in ipairs(t.rejek) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
 		
 		local vekgarRep = isHuman and 770 or 700;
@@ -99,7 +101,9 @@ local OnTooltipForOracles = [[function(t)
 			if f and #f > 0 then tinsert(soonee, f[1]); end
 			t.soonee = soonee;
 		end
-		GameTooltip:AddDoubleLine("Complete 1 of 4 quests offered by Oracle Soo-nee:", _.L[t.soonee[1].saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. sooneeRep .. " Rep");
+		local completedAny = false;
+		for i,quest in ipairs(t.soonee) do if quest.saved then completedAny = true; break; end end
+		GameTooltip:AddDoubleLine("Complete 1 of 4 quests offered by Oracle Soo-nee:", _.L[completedAny and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. sooneeRep .. " Rep");
 		for i,quest in ipairs(t.soonee) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
 		
 		local repPerDay = appeasingRep + soodowRep + sooneeRep;
@@ -249,6 +253,37 @@ root("Zones", {
 					}),
 				})),
 				-- #endif
+				-- #if ANYCLASSIC
+				n(EXPLORATION, {
+					exploration(4369),	-- Dorian's Outpost
+					exploration(4292),	-- Frenzyheart Hill
+					exploration(4287),	-- Kartak's Hold
+					exploration(4306),	-- Mistwhisper Refuge
+					exploration(4284),	-- Nesingwary Base Camp
+					exploration(4291),	-- Rainspeaker Canopy
+					exploration(4386),	-- Rainspeaker Rapids
+					exploration(4290),	-- River's Heart
+					exploration(4304),	-- Sapphire Hive
+					exploration(4288),	-- Sparktouched Haven
+					exploration(4308),	-- Spearborn Encampment
+					exploration(4391),	-- Swindlegrin's Dig
+					exploration(4282),	-- The Avalanche
+					exploration(4368),	-- The Bonefields
+					exploration(4307),	-- The Glimmering Pillar
+					exploration(4296),	-- The Lifeblood Pillar
+					exploration(4283),	-- The Lost Lands
+					exploration(4483),	-- The Lost Passage
+					exploration(4412),	-- The Makers' Overlook
+					exploration(4413),	-- The Makers' Perch
+					exploration(4400),	-- The Mosslight Pillar
+					exploration(4376),	-- The Savage Thicket
+					exploration(4302),	-- The Skyreach Pillar
+					exploration(4392),	-- The Stormwright's Shelf
+					exploration(4389),	-- The Suntouched Pillar
+					exploration(4300),	-- Waygate
+					exploration(4293),	-- Wildgrowth Mangal
+				}),
+				-- #endif
 				n(FACTIONS, {
 					faction(1104, {	-- Frenzyheart Tribe
 						["maxReputation"] = { 1105, NEUTRAL },	-- The Oracles, Neutral.
@@ -259,6 +294,15 @@ root("Zones", {
 						["maxReputation"] = { 1104, NEUTRAL },	-- Frenzyheart Tribe, Neutral.
 						["altAchievements"] = { 952 },	-- Mercenary of Sholazar
 						["OnTooltip"] = OnTooltipForOracles,
+					}),
+				}),
+				prof(FISHING, {
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5287,	-- Nettlefish School
+						["requireSkill"] = FISHING,
+					}),
+					i(45902, {	-- Phantom Ghostfish
+						["description"] = "Eat this before it despawns!",
 					}),
 				}),
 				n(FLIGHT_PATHS, {

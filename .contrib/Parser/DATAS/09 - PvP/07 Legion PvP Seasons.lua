@@ -104,7 +104,7 @@ _.PVP =
 				n(PVP_COMBATANT, {
 					cl(DEATHKNIGHT, {
 						i(146164, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 1
@@ -135,7 +135,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						i(146264, {	-- Ensemble: Vindictive Combatant's Felskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 1
@@ -166,7 +166,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(146168, {	-- Ensemble: Vindictive Combatant's Dragonhide Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 1
@@ -197,7 +197,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(146154, {	-- Ensemble: Vindictive Combatant's Chain Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 1
@@ -228,7 +228,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(146156, {	-- Ensemble: Vindictive Combatant's Silk Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 1
@@ -259,7 +259,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(146170, {	-- Ensemble: Vindictive Combatant's Ironskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 1
@@ -290,7 +290,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(146166, {	-- Ensemble: Vindictive Combatant's Scaled Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 1
@@ -321,7 +321,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(146158, {	-- Ensemble: Vindictive Combatant's Satin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 1
@@ -352,7 +352,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(146172, {	-- Ensemble: Vindictive Combatant's Leather Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 1
@@ -383,7 +383,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(146152, {	-- Ensemble: Vindictive Combatant's Ringmail Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 1
@@ -414,7 +414,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(146160, {	-- Ensemble: Vindictive Combatant's Felweave Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 1
@@ -445,7 +445,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(146162, {	-- Ensemble: Vindictive Combatant's Plate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 1
@@ -503,7 +503,7 @@ _.PVP =
 				n(PVP_GLADIATOR, {
 					cl(DEATHKNIGHT, {
 						i(146132, {	-- Ensemble: Vindictive Gladiator's Dreadplate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 1
@@ -534,7 +534,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						i(146262, {	-- Ensemble: Vindictive Gladiator's Felskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 1
@@ -565,7 +565,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(146140, {	-- Ensemble: Vindictive Gladiator's Dragonhide Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 1
@@ -596,7 +596,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(146138, {	-- Ensemble: Vindictive Gladiator's Chain Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 1
@@ -627,7 +627,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(146146, {	-- Ensemble: Vindictive Gladiator's Silk Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 1
@@ -658,7 +658,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(146142, {	-- Ensemble: Vindictive Gladiator's Ironskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 1
@@ -689,7 +689,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(146134, {	-- Ensemble: Vindictive Gladiator's Scaled Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 1
@@ -720,7 +720,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(146148, {	-- Ensemble: Vindictive Gladiator's Satin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 1
@@ -751,7 +751,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(146144, {	-- Ensemble: Vindictive Gladiator's Leather Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 1
@@ -782,7 +782,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(146136, {	-- Ensemble: Vindictive Gladiator's Ringmail Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 1
@@ -813,7 +813,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(146150, {	-- Ensemble: Vindictive Gladiator's Felweave Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 1
@@ -844,7 +844,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(146130, {	-- Ensemble: Vindictive Gladiator's Plate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 1
@@ -902,7 +902,7 @@ _.PVP =
 				n(PVP_ELITE, {
 					cl(DEATHKNIGHT, {
 						un(ELITE_PVP_REQUIREMENT, i(146220, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 1
@@ -933,7 +933,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						un(ELITE_PVP_REQUIREMENT, i(146270, {	-- Ensemble: Elite Vindictive Gladiator's Felskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 1
@@ -964,7 +964,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						un(ELITE_PVP_REQUIREMENT, i(146228, {	-- Ensemble: Elite Vindictive Gladiator's Dragonhide Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 1
@@ -995,7 +995,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						un(ELITE_PVP_REQUIREMENT, i(146226, {	-- Ensemble: Elite Vindictive Gladiator's Chain Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 1
@@ -1026,7 +1026,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						un(ELITE_PVP_REQUIREMENT, i(146234, {	-- Ensemble: Elite Vindictive Gladiator's Silk Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 1
@@ -1057,7 +1057,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						un(ELITE_PVP_REQUIREMENT, i(146230, {	-- Ensemble: Elite Vindictive Gladiator's Ironskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 1
@@ -1088,7 +1088,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						un(ELITE_PVP_REQUIREMENT, i(146222, {	-- Ensemble: Elite Vindictive Gladiator's Scaled Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 1
@@ -1119,7 +1119,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						un(ELITE_PVP_REQUIREMENT, i(146236, {	-- Ensemble: Elite Vindictive Gladiator's Satin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 1
@@ -1150,7 +1150,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						un(ELITE_PVP_REQUIREMENT, i(146232, {	-- Ensemble: Elite Vindictive Gladiator's Leather Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 1
@@ -1181,7 +1181,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						un(ELITE_PVP_REQUIREMENT, i(146224, {	-- Ensemble: Elite Vindictive Gladiator's Ringmail Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 1
@@ -1212,7 +1212,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						un(ELITE_PVP_REQUIREMENT, i(146238, {	-- Ensemble: Elite Vindictive Gladiator's Felweave Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 1
@@ -1243,7 +1243,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						un(ELITE_PVP_REQUIREMENT, i(146218, {	-- Ensemble: Elite Vindictive Gladiator's Plate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 1
@@ -1334,7 +1334,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						i(146265, {	-- Ensemble: Vindictive Combatant's Felskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 1
@@ -1365,7 +1365,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(146169, {	-- Ensemble: Vindictive Combatant's Dragonhide Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 1
@@ -1396,7 +1396,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(146155, {	-- Ensemble: Vindictive Combatant's Chain Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 1
@@ -1427,7 +1427,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(146157, {	-- Ensemble: Vindictive Combatant's Silk Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 1
@@ -1458,7 +1458,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(146171, {	-- Ensemble: Vindictive Combatant's Ironskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 1
@@ -1489,7 +1489,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(146167, {	-- Ensemble: Vindictive Combatant's Scaled Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 1
@@ -1520,7 +1520,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(146159, {	-- Ensemble: Vindictive Combatant's Satin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 1
@@ -1551,7 +1551,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(146173, {	-- Ensemble: Vindictive Combatant's Leather Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 1
@@ -1582,7 +1582,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(146153, {	-- Ensemble: Vindictive Combatant's Ringmail Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 1
@@ -1613,7 +1613,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(146161, {	-- Ensemble: Vindictive Combatant's Felweave Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 1
@@ -1644,7 +1644,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(146163, {	-- Ensemble: Vindictive Combatant's Plate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 1
@@ -1702,7 +1702,7 @@ _.PVP =
 				n(PVP_GLADIATOR, {
 					cl(DEATHKNIGHT, {
 						i(146133, {	-- Ensemble: Vindictive Gladiator's Dreadplate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 1
@@ -1733,7 +1733,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						i(146263, {	-- Ensemble: Vindictive Gladiator's Felskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 1
@@ -1764,7 +1764,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(146141, {	-- Ensemble: Vindictive Gladiator's Dragonhide Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 1
@@ -1795,7 +1795,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(146139, {	-- Ensemble: Vindictive Gladiator's Chain Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 1
@@ -1826,7 +1826,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(146147, {	-- Ensemble: Vindictive Gladiator's Silk Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 1
@@ -1857,7 +1857,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(146143, {	-- Ensemble: Vindictive Gladiator's Ironskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 1
@@ -1888,7 +1888,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(146135, {	-- Ensemble: Vindictive Gladiator's Scaled Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 1
@@ -1919,7 +1919,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(146149, {	-- Ensemble: Vindictive Gladiator's Satin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 1
@@ -1950,7 +1950,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(146145, {	-- Ensemble: Vindictive Gladiator's Leather Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 1
@@ -1981,7 +1981,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(146137, {	-- Ensemble: Vindictive Gladiator's Ringmail Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, SHAMAN },	-- Season 1
@@ -2012,7 +2012,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(146151, {	-- Ensemble: Vindictive Gladiator's Felweave Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 1
@@ -2043,7 +2043,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(146131, {	-- Ensemble: Vindictive Gladiator's Plate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 1
@@ -2101,7 +2101,7 @@ _.PVP =
 				n(PVP_ELITE, {
 					cl(DEATHKNIGHT, {
 						i(146221, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 1
@@ -2133,7 +2133,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						i(146271, {	-- Ensemble: Elite Vindictive Gladiator's Felskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 1
@@ -2164,7 +2164,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(146229, {	-- Ensemble: Elite Vindictive Gladiator's Dragonhide Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 1
@@ -2195,7 +2195,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(146227, {	-- Ensemble: Elite Vindictive Gladiator's Chain Armor
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 1
@@ -2226,7 +2226,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(146235, {	-- Ensemble: Elite Vindictive Gladiator's Silk Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 1
@@ -2257,7 +2257,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(146231, {	-- Ensemble: Elite Vindictive Gladiator's Ironskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 1
@@ -2288,7 +2288,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(146223, {	-- Ensemble: Elite Vindictive Gladiator's Scaled Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 1
@@ -2319,7 +2319,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(146237, {	-- Ensemble: Elite Vindictive Gladiator's Satin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 1
@@ -2350,7 +2350,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(146233, {	-- Ensemble: Elite Vindictive Gladiator's Leather Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 1
@@ -2381,7 +2381,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(146225, {	-- Ensemble: Elite Vindictive Gladiator's Ringmail Armor
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 1
@@ -2412,7 +2412,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(146239, {	-- Ensemble: Elite Vindictive Gladiator's Felweave Armor (H)
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 1
@@ -2443,7 +2443,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(146219, {	-- Ensemble: Elite Vindictive Gladiator's Plate Armor
-							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_VINDICTIVE, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 1
@@ -3653,7 +3653,7 @@ _.PVP =
 				n(PVP_COMBATANT, {
 					cl(DEATHKNIGHT, {
 						i(147677, {	-- Ensemble: Cruel Combatant's Dreadplate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 3
@@ -3684,7 +3684,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						i(147680, {	-- Ensemble: Cruel Combatant's Felskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 3
@@ -3715,7 +3715,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(147675, {	-- Ensemble: Cruel Combatant's Dragonhide Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 3
@@ -3746,7 +3746,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(147689, {	-- Ensemble: Cruel Combatant's Chain Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 3
@@ -3777,7 +3777,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(147696, {	-- Ensemble: Cruel Combatant's Silk Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 3
@@ -3808,7 +3808,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(147684, {	-- Ensemble: Cruel Combatant's Ironskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 3
@@ -3839,7 +3839,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(147693, {	-- Ensemble: Cruel Combatant's Scaled Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 3
@@ -3870,7 +3870,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(147688, {	-- Ensemble: Cruel Combatant's Satin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 3
@@ -3901,7 +3901,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(147685, {	-- Ensemble: Cruel Combatant's Leather Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 3
@@ -3932,7 +3932,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(147674, {	-- Ensemble: Cruel Combatant's Ringmail Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 3
@@ -3963,7 +3963,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(147682, {	-- Ensemble: Cruel Combatant's Felweave Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 3
@@ -3994,7 +3994,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(147692, {	-- Ensemble: Cruel Combatant's Plate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 3
@@ -4080,7 +4080,7 @@ _.PVP =
 				n(PVP_GLADIATOR, {
 					cl(DEATHKNIGHT, {
 						i(147650, {	-- Ensemble: Cruel Gladiator's Dreadplate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 3
@@ -4111,7 +4111,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						i(147651, {	-- Ensemble: Cruel Gladiator's Felskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 3
@@ -4142,7 +4142,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(147647, {	-- Ensemble: Cruel Gladiator's Dragonhide Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 3
@@ -4173,7 +4173,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(147646, {	-- Ensemble: Cruel Gladiator's Chain Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 3
@@ -4204,7 +4204,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(147668, {	-- Ensemble: Cruel Gladiator's Silk Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 3
@@ -4235,7 +4235,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(147656, {	-- Ensemble: Cruel Gladiator's Ironskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 3
@@ -4266,7 +4266,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(147665, {	-- Ensemble: Cruel Gladiator's Scaled Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 3
@@ -4297,7 +4297,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(147663, {	-- Ensemble: Cruel Gladiator's Satin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 3
@@ -4328,7 +4328,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(147657, {	-- Ensemble: Cruel Gladiator's Leather Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 3
@@ -4359,7 +4359,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(147661, {	-- Ensemble: Cruel Gladiator's Ringmail Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 3
@@ -4390,7 +4390,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(147653, {	-- Ensemble: Cruel Gladiator's Felweave Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 3
@@ -4421,7 +4421,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(147660, {	-- Ensemble: Cruel Gladiator's Plate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 3
@@ -4477,7 +4477,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(147360)),	-- Cruel Gladiator's Cloak [Elite Rating]
 					cl(DEATHKNIGHT, {
 						un(ELITE_PVP_REQUIREMENT, i(147625, {	-- Ensemble: Elite Cruel Gladiator's Dreadplate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 3
@@ -4508,7 +4508,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						un(ELITE_PVP_REQUIREMENT, i(147627, {	-- Ensemble: Elite Cruel Gladiator's Felskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 3
@@ -4539,7 +4539,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						un(ELITE_PVP_REQUIREMENT, i(147623, {	-- Ensemble: Elite Cruel Gladiator's Dragonhide Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 3
@@ -4570,7 +4570,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						un(ELITE_PVP_REQUIREMENT, i(147621, {	-- Ensemble: Elite Cruel Gladiator's Chain Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 3
@@ -4601,7 +4601,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						un(ELITE_PVP_REQUIREMENT, i(147644, {	-- Ensemble: Elite Cruel Gladiator's Silk Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 3
@@ -4632,7 +4632,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						un(ELITE_PVP_REQUIREMENT, i(147632, {	-- Ensemble: Elite Cruel Gladiator's Ironskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 3
@@ -4663,7 +4663,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						un(ELITE_PVP_REQUIREMENT, i(147642, {	-- Ensemble: Elite Cruel Gladiator's Scaled Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 3
@@ -4694,7 +4694,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						un(ELITE_PVP_REQUIREMENT, i(147640, {	-- Ensemble: Elite Cruel Gladiator's Satin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 3
@@ -4725,7 +4725,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						un(ELITE_PVP_REQUIREMENT, i(147634, {	-- Ensemble: Elite Cruel Gladiator's Leather Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 3
@@ -4756,7 +4756,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						un(ELITE_PVP_REQUIREMENT, i(147637, {	-- Ensemble: Elite Cruel Gladiator's Ringmail Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 3
@@ -4787,7 +4787,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						un(ELITE_PVP_REQUIREMENT, i(147629, {	-- Ensemble: Elite Cruel Gladiator's Felweave Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 3
@@ -4818,7 +4818,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						un(ELITE_PVP_REQUIREMENT, i(147636, {	-- Ensemble: Elite Cruel Gladiator's Plate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 3
@@ -4874,7 +4874,7 @@ _.PVP =
 				n(PVP_COMBATANT, {
 					cl(DEATHKNIGHT, {
 						i(147678, {	-- Ensemble: Cruel Combatant's Dreadplate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 3
@@ -4905,7 +4905,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						i(147679, {	-- Ensemble: Cruel Combatant's Felskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 3
@@ -4936,7 +4936,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(147676, {	-- Ensemble: Cruel Combatant's Dragonhide Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 3
@@ -4967,7 +4967,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(147690, {	-- Ensemble: Cruel Combatant's Chain Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 3
@@ -4998,7 +4998,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(147695, {	-- Ensemble: Cruel Combatant's Silk Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 3
@@ -5029,7 +5029,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(147683, {	-- Ensemble: Cruel Combatant's Ironskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 3
@@ -5060,7 +5060,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(147694, {	-- Ensemble: Cruel Combatant's Scaled Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 3
@@ -5091,7 +5091,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(147687, {	-- Ensemble: Cruel Combatant's Satin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 3
@@ -5122,7 +5122,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(147686, {	-- Ensemble: Cruel Combatant's Leather Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 3
@@ -5153,7 +5153,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(147673, {	-- Ensemble: Cruel Combatant's Ringmail Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 3
@@ -5184,7 +5184,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(147681, {	-- Ensemble: Cruel Combatant's Felweave Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 3
@@ -5215,7 +5215,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(147691, {	-- Ensemble: Cruel Combatant's Plate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 3
@@ -5301,7 +5301,7 @@ _.PVP =
 				n(PVP_GLADIATOR, {
 					cl(DEATHKNIGHT, {
 						i(147649, {	-- Ensemble: Cruel Gladiator's Dreadplate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 3
@@ -5332,7 +5332,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						i(147652, {	-- Ensemble: Cruel Gladiator's Felskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 3
@@ -5363,7 +5363,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(147648, {	-- Ensemble: Cruel Gladiator's Dragonhide Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 3
@@ -5394,7 +5394,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(147645, {	-- Ensemble: Cruel Gladiator's Chain Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 3
@@ -5425,7 +5425,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(147667, {	-- Ensemble: Cruel Gladiator's Silk Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 3
@@ -5456,7 +5456,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(147655, {	-- Ensemble: Cruel Gladiator's Ironskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 3
@@ -5487,7 +5487,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(147666, {	-- Ensemble: Cruel Gladiator's Scaled Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 3
@@ -5518,7 +5518,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(147664, {	-- Ensemble: Cruel Gladiator's Satin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 3
@@ -5549,7 +5549,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(147658, {	-- Ensemble: Cruel Gladiator's Leather Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 3
@@ -5580,7 +5580,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(147662, {	-- Ensemble: Cruel Gladiator's Ringmail Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, SHAMAN },	-- Season 3
@@ -5611,7 +5611,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(147654, {	-- Ensemble: Cruel Gladiator's Felweave Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 3
@@ -5642,7 +5642,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(147659, {	-- Ensemble: Cruel Gladiator's Plate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 3
@@ -5698,7 +5698,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(147357)),	-- Cruel Gladiator's Cloak [Elite Rating] h
 					cl(DEATHKNIGHT, {
 						i(147626, {	-- Ensemble: Elite Cruel Gladiator's Dreadplate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 3
@@ -5729,7 +5729,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						i(147628, {	-- Ensemble: Elite Cruel Gladiator's Felskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 3
@@ -5760,7 +5760,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(147624, {	-- Ensemble: Elite Cruel Gladiator's Dragonhide Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 3
@@ -5791,7 +5791,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(147622, {	-- Ensemble: Elite Cruel Gladiator's Chain Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 3
@@ -5822,7 +5822,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(147643, {	-- Ensemble: Elite Cruel Gladiator's Silk Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 3
@@ -5853,7 +5853,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(147631, {	-- Ensemble: Elite Cruel Gladiator's Ironskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 3
@@ -5884,7 +5884,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(147641, {	-- Ensemble: Elite Cruel Gladiator's Scaled Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 3
@@ -5915,7 +5915,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(147639, {	-- Ensemble: Elite Cruel Gladiator's Satin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 3
@@ -5946,7 +5946,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(147633, {	-- Ensemble: Elite Cruel Gladiator's Leather Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 3
@@ -5977,7 +5977,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(147638, {	-- Ensemble: Elite Cruel Gladiator's Ringmail Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 3
@@ -6008,7 +6008,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(147630, {	-- Ensemble: Elite Cruel Gladiator's Felweave Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 3
@@ -6039,7 +6039,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(147635, {	-- Ensemble: Elite Cruel Gladiator's Plate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_CRUEL, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 3
@@ -7353,7 +7353,7 @@ _.PVP =
 				n(PVP_COMBATANT, {
 					cl(DEATHKNIGHT, {
 						i(150252, {	-- Ensemble: Fierce Combatant's Dreadplate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 5
@@ -7394,7 +7394,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						i(150255, {	-- Ensemble: Fierce Combatant's Felskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DEMONHUNTER },	-- Season 5
@@ -7435,7 +7435,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(150250, {	-- Ensemble: Fierce Combatant's Dragonhide Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, DRUID },	-- Season 5
@@ -7476,7 +7476,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(150264, {	-- Ensemble: Fierce Combatant's Chain Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, HUNTER },	-- Season 5
@@ -7517,7 +7517,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(150271, {	-- Ensemble: Fierce Combatant's Silk Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MAGE },	-- Season 5
@@ -7558,7 +7558,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(150259, {	-- Ensemble: Fierce Combatant's Ironskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, MONK },	-- Season 5
@@ -7599,7 +7599,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(150268, {	-- Ensemble: Fierce Combatant's Scaled Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PALADIN },	-- Season 5
@@ -7640,7 +7640,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(150263, {	-- Ensemble: Fierce Combatant's Satin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, PRIEST },	-- Season 5
@@ -7681,7 +7681,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(150260, {	-- Ensemble: Fierce Combatant's Leather Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, ROGUE },	-- Season 5
@@ -7722,7 +7722,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(150249, {	-- Ensemble: Fierce Combatant's Ringmail Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, SHAMAN },	-- Season 5
@@ -7763,7 +7763,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(150257, {	-- Ensemble: Fierce Combatant's Felweave Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARLOCK },	-- Season 5
@@ -7804,7 +7804,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(150267, {	-- Ensemble: Fierce Combatant's Plate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_COMBATANT, WARRIOR },	-- Season 5
@@ -7900,7 +7900,7 @@ _.PVP =
 				n(PVP_GLADIATOR, {
 					cl(DEATHKNIGHT, {
 						i(149483, {	-- Ensemble: Fierce Gladiator's Dreadplate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 5
@@ -7941,7 +7941,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						i(149484, {	-- Ensemble: Fierce Gladiator's Felskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 5
@@ -7982,7 +7982,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(149480, {	-- Ensemble: Fierce Gladiator's Dragonhide Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },	-- Season 5
@@ -8023,7 +8023,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(149479, {	-- Ensemble: Fierce Gladiator's Chain Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },	-- Season 5
@@ -8064,7 +8064,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(149501, {	-- Ensemble: Fierce Gladiator's Silk Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },	-- Season 5
@@ -8105,7 +8105,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(149489, {	-- Ensemble: Fierce Gladiator's Ironskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },	-- Season 5
@@ -8146,7 +8146,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(149498, {	-- Ensemble: Fierce Gladiator's Scaled Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },	-- Season 5
@@ -8187,7 +8187,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(149496, {	-- Ensemble: Fierce Gladiator's Satin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },	-- Season 5
@@ -8228,7 +8228,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(149490, {	-- Ensemble: Fierce Gladiator's Leather Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },	-- Season 5
@@ -8269,7 +8269,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(149494, {	-- Ensemble: Fierce Gladiator's Ringmail Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },	-- Season 5
@@ -8310,7 +8310,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(149486, {	-- Ensemble: Fierce Gladiator's Felweave Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },	-- Season 5
@@ -8351,7 +8351,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(149493, {	-- Ensemble: Fierce Gladiator's Plate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },	-- Season 5
@@ -8417,7 +8417,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(149445)),	-- Fierce Gladiator's Cloak [Elite Rating]
 					cl(DEATHKNIGHT, {
 						un(ELITE_PVP_REQUIREMENT, i(149458, {	-- Ensemble: Elite Fierce Gladiator's Dreadplate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 5
@@ -8458,7 +8458,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						un(ELITE_PVP_REQUIREMENT, i(149460, {	-- Ensemble: Elite Fierce Gladiator's Felskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEMONHUNTER },	-- Season 5
@@ -8499,7 +8499,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						un(ELITE_PVP_REQUIREMENT, i(149456, {	-- Ensemble: Elite Fierce Gladiator's Dragonhide Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DRUID },	-- Season 5
@@ -8540,7 +8540,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						un(ELITE_PVP_REQUIREMENT, i(149454, {	-- Ensemble: Elite Fierce Gladiator's Chain Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, HUNTER },	-- Season 5
@@ -8581,7 +8581,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						un(ELITE_PVP_REQUIREMENT, i(149477, {	-- Ensemble: Elite Fierce Gladiator's Silk Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 5
@@ -8622,7 +8622,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						un(ELITE_PVP_REQUIREMENT, i(149465, {	-- Ensemble: Elite Fierce Gladiator's Ironskin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MONK },	-- Season 5
@@ -8663,7 +8663,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						un(ELITE_PVP_REQUIREMENT, i(149475, {	-- Ensemble: Elite Fierce Gladiator's Scaled Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 5
@@ -8704,7 +8704,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						un(ELITE_PVP_REQUIREMENT, i(149473, {	-- Ensemble: Elite Fierce Gladiator's Satin Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 5
@@ -8745,7 +8745,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						un(ELITE_PVP_REQUIREMENT, i(149467, {	-- Ensemble: Elite Fierce Gladiator's Leather Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 5
@@ -8786,7 +8786,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						un(ELITE_PVP_REQUIREMENT, i(149470, {	-- Ensemble: Elite Fierce Gladiator's Ringmail Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, SHAMAN },	-- Season 5
@@ -8827,7 +8827,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						un(ELITE_PVP_REQUIREMENT, i(149462, {	-- Ensemble: Elite Fierce Gladiator's Felweave Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 5
@@ -8868,7 +8868,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						un(ELITE_PVP_REQUIREMENT, i(149469, {	-- Ensemble: Elite Fierce Gladiator's Plate Armor (A)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 5
@@ -8934,7 +8934,7 @@ _.PVP =
 				n(PVP_COMBATANT, {
 					cl(DEATHKNIGHT, {
 						i(150253, {	-- Ensemble: Fierce Combatant's Dreadplate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, DEATHKNIGHT },	-- Season 5
@@ -8975,7 +8975,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						i(150254, {	-- Ensemble: Fierce Combatant's Felskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, DEMONHUNTER },	-- Season 5
@@ -9016,7 +9016,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(150251, {	-- Ensemble: Fierce Combatant's Dragonhide Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, DRUID },	-- Season 5
@@ -9057,7 +9057,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(150265, {	-- Ensemble: Fierce Combatant's Chain Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, HUNTER },	-- Season 5
@@ -9098,7 +9098,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(150270, {	-- Ensemble: Fierce Combatant's Silk Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, MAGE },	-- Season 5
@@ -9139,7 +9139,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(150258, {	-- Ensemble: Fierce Combatant's Ironskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, MONK },	-- Season 5
@@ -9180,7 +9180,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(150269, {	-- Ensemble: Fierce Combatant's Scaled Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, PALADIN },	-- Season 5
@@ -9221,7 +9221,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(150262, {	-- Ensemble: Fierce Combatant's Satin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, PRIEST },	-- Season 5
@@ -9262,7 +9262,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(150261, {	-- Ensemble: Fierce Combatant's Leather Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, ROGUE },	-- Season 5
@@ -9303,7 +9303,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(150248, {	-- Ensemble: Fierce Combatant's Ringmail Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, SHAMAN },	-- Season 5
@@ -9344,7 +9344,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(150256, {	-- Ensemble: Fierce Combatant's Felweave Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARLOCK },	-- Season 5
@@ -9385,7 +9385,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(150266, {	-- Ensemble: Fierce Combatant's Plate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_COMBATANT, WARRIOR },	-- Season 5
@@ -9481,7 +9481,7 @@ _.PVP =
 				n(PVP_GLADIATOR, {
 					cl(DEATHKNIGHT, {
 						i(149482, {	-- Ensemble: Fierce Gladiator's Dreadplate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEATHKNIGHT },	-- Season 5
@@ -9522,7 +9522,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						i(149485, {	-- Ensemble: Fierce Gladiator's Felskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DEMONHUNTER },	-- Season 5
@@ -9563,7 +9563,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(149481, {	-- Ensemble: Fierce Gladiator's Dragonhide Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, DRUID },	-- Season 5
@@ -9604,7 +9604,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(149478, {	-- Ensemble: Fierce Gladiator's Chain Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 5
@@ -9645,7 +9645,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(149500, {	-- Ensemble: Fierce Gladiator's Silk Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MAGE },	-- Season 5
@@ -9686,7 +9686,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(149488, {	-- Ensemble: Fierce Gladiator's Ironskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, MONK },	-- Season 5
@@ -9727,7 +9727,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(149499, {	-- Ensemble: Fierce Gladiator's Scaled Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PALADIN },	-- Season 5
@@ -9768,7 +9768,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(149497, {	-- Ensemble: Fierce Gladiator's Satin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, PRIEST },	-- Season 5
@@ -9809,7 +9809,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(149491, {	-- Ensemble: Fierce Gladiator's Leather Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, ROGUE },	-- Season 5
@@ -9850,7 +9850,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(149495, {	-- Ensemble: Fierce Gladiator's Ringmail Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, HUNTER },	-- Season 5
@@ -9891,7 +9891,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(149487, {	-- Ensemble: Fierce Gladiator's Felweave Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARLOCK },	-- Season 5
@@ -9932,7 +9932,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(149492, {	-- Ensemble: Fierce Gladiator's Plate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR, WARRIOR },	-- Season 5
@@ -9998,7 +9998,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(149444)),	-- Fierce Gladiator's Cloak [Elite Rating]
 					cl(DEATHKNIGHT, {
 						i(149459, {	-- Ensemble: Elite Fierce Gladiator's Dreadplate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, DEATHKNIGHT },	-- Season 5
@@ -10039,7 +10039,7 @@ _.PVP =
 					}),
 					cl(DEMONHUNTER, {
 						i(149461, {	-- Ensemble: Elite Fierce Gladiator's Felskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, DEMONHUNTER },	-- Season 5
@@ -10080,7 +10080,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(149457, {	-- Ensemble: Elite Fierce Gladiator's Dragonhide Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, DRUID },	-- Season 5
@@ -10121,7 +10121,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(149455, {	-- Ensemble: Elite Fierce Gladiator's Chain Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, HUNTER },	-- Season 5
@@ -10162,7 +10162,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(149476, {	-- Ensemble: Elite Fierce Gladiator's Silk Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 5
@@ -10203,7 +10203,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(149464, {	-- Ensemble: Elite Fierce Gladiator's Ironskin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, MONK },	-- Season 5
@@ -10244,7 +10244,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(149474, {	-- Ensemble: Elite Fierce Gladiator's Scaled Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, PALADIN },	-- Season 5
@@ -10285,7 +10285,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(149472, {	-- Ensemble: Elite Fierce Gladiator's Satin Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 5
@@ -10326,7 +10326,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(149466, {	-- Ensemble: Elite Fierce Gladiator's Leather Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 5
@@ -10367,7 +10367,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(149471, {	-- Ensemble: Elite Fierce Gladiator's Ringmail Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, SHAMAN },	-- Season 5
@@ -10408,7 +10408,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(149463, {	-- Ensemble: Elite Fierce Gladiator's Felweave Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 5
@@ -10449,7 +10449,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(149468, {	-- Ensemble: Elite Fierce Gladiator's Plate Armor (H)
-							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, WARRIOR },	-- Season 5

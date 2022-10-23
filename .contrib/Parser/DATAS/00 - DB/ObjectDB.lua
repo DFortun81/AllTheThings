@@ -1408,6 +1408,7 @@ _.ObjectNames = {
 	[252282] = "Sparkling Set of Keys",
 	[252284] = "Pile of Sticky Bombs",
 	[252289] = "Vanishing Powder",
+	[252395] = "Deathcharger Hitching Post",
 	[252412] = "|cFFFFFFFFStep 2:|r Mound of Dirt",
 	[252432] = "Shimmering Ancient Mana Cluster",
 	[252434] = "|cFFFFFFFFStep 12:|r Hungering Orb X",

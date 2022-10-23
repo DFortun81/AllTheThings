@@ -38,7 +38,7 @@ local OnTooltipForBloodsail = [[function(t)
 			local repPerKill = isHuman and 5.5 or 5;
 			local x, n = math.ceil((41999 - reputation) / repPerKill), math.ceil(21000 / repPerKill);
 			GameTooltip:AddDoubleLine("Kill Jazzrik.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			GameTooltip:AddDoubleLine(" 5.33 - 8 Minute respawn", math.floor((x * 5.33) / 60.0) .. " - " .. math.ceil((x * 8) / 60.0) .. " Hours to go!", 1, 1, 1);
+			GameTooltip:AddDoubleLine(" 5.33 - 8.5 Minute respawn", math.floor((x * 5.33) / 60.0) .. " - " .. math.ceil((x * 8.5) / 60.0) .. " Hours to go!", 1, 1, 1);
 			if not t.eventful then
 				t.eventful = true;
 				if DBM then
@@ -51,7 +51,7 @@ local OnTooltipForBloodsail = [[function(t)
 							local guid = select(6, ...);
 							if select(6, strsplit("-",guid)) == "9179" then
 								DBM:CreatePizzaTimer(320, "Respawn (min)");
-								DBM:CreatePizzaTimer(482, "Respawn (max)");
+								DBM:CreatePizzaTimer(510, "Respawn (max)");
 							end
 						end
 					end

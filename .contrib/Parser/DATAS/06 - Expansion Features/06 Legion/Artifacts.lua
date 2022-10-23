@@ -2534,7 +2534,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(43655),	-- Hidden Appearance Unlocked - Beast Mastery Hunter
 		q(43656),	-- Hidden Appearance Unlocked - Marksmanship Hunter
 		q(43657),	-- Hidden Appearance Unlocked - Survival Hunter
-		q(43658),	-- Hidden Appearance Unlocked - Arcane Mage
+		-- q(43658),	-- Hidden Appearance Unlocked - Arcane Mage [Used as a header in Mage Class Hall]
 		q(43659),	-- Hidden Appearance Unlocked - Fire Mage
 		q(43660),	-- Hidden Appearance Unlocked - Frost Mage
 		q(43661),	-- Hidden Appearance Unlocked - Brewmaster Monk

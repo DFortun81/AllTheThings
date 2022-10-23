@@ -215,6 +215,47 @@ root("Zones", {
 					}),
 				})),
 				-- #endif
+				-- #if ANYCLASSIC
+				n(EXPLORATION, {
+					exploration(4023),	-- Amber Ledge
+					exploration(4105),	-- Beryl Point
+					exploration(4021),	-- Bloodspore Plains
+					exploration(4122),	-- Bor'gorok Outpost
+					exploration(4133),	-- Charred Rise
+					exploration(4027),	-- Coast of Echoes
+					exploration(4024),	-- Coldarra
+					exploration(4039),	-- Coldrock Quarry
+					exploration(4114),	-- Death's Stand
+					exploration(4111),	-- Farshire
+					exploration(4108),	-- Fizzcrank Airstrip
+					exploration(4138),	-- Frozen Reach
+					exploration(4106),	-- Garrosh's Landing
+					exploration(4041),	-- Kaskala
+					exploration(4109),	-- Lake Kum'uya
+					exploration(4123),	-- Magmoth
+					exploration(4020),	-- Mightstone Quarry
+					exploration(4031),	-- Pal'ea
+					exploration(4029),	-- Riplash Ruins
+					exploration(4028),	-- Riplash Strand
+					exploration(4101),	-- Sands of Nasam
+					exploration(4269),	-- Shrine of Scales
+					exploration(4127),	-- Steeljaw's Caravan
+					exploration(4118),	-- Talramas
+					exploration(4037),	-- Taunka'le Village
+					exploration(4125),	-- Temple City of En'kilah
+					exploration(4124),	-- The Dens of Dying
+					exploration(4043),	-- The Flood Plains
+					exploration(4035),	-- The Geyser Fields
+					exploration(4120),	-- The Nexus
+					exploration(4026),	-- The Transitus Stair
+					exploration(4126),	-- The Wailing Ziggurat
+					exploration(4042),	-- Transborea
+					exploration(4121),	-- Transitus Shield
+					exploration(4113),	-- Unu'pe
+					exploration(4032),	-- Valiance Keep
+					exploration(4129),	-- Warsong Hold
+				}),
+				-- #endif
 				n(FACTIONS, {
 					faction(1037, {	-- Alliance Vanguard
 						["races"] = ALLIANCE_ONLY,
@@ -227,6 +268,31 @@ root("Zones", {
 					}),
 					faction(1050, {	-- Valiance Expedition
 						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				prof(FISHING, {
+					i(45905, {	-- Bloodtooth Frenzy
+						["description"] = "Kill an animal and then swim in a body of water to create a pool to fish from.",
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5278,	-- Borean Man O' War School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5279,	-- Deep Sea Monsterbelly School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5284,	-- Imperial Manta Ray School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5285,	-- Moonglow Cuttlefish School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5286,	-- Musselback Sculpin School
+						["requireSkill"] = FISHING,
 					}),
 				}),
 				n(FLIGHT_PATHS, {

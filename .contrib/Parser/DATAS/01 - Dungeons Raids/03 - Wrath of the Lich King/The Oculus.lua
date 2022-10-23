@@ -348,9 +348,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(36961),	-- Dragonflight Great-Ring (7.3.5 - Used to be only Normal Mode)
 							i(36972),	-- Tome of Arcane Phenomena (7.3.5 - Used to be only Normal Mode)
 							-- #endif
+							-- #if BEFORE 4.0.1
+							i(43668),	-- Ley Line Tuner
+							-- #endif
 							i(52676, {	-- Cache of the Ley-Guardian
 								-- #if ANYCLASSIC
 								["description"] = "This bag is only available if you queue for the instance using the Dungeon Finder... How this bag can be obtained with Blizzard being a bunch of anti-LFD troglodytes I don't know. Tell Crieve if you get it to drop and what you did to get it.",
+								["timeline"] = { "created 3.3.2.11403" },
 								-- #else
 								["description"] = "This bag is only available if you queue for the instance using the Dungeon Finder.",
 								-- #endif

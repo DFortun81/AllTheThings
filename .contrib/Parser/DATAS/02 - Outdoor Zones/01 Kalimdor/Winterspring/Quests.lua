@@ -122,12 +122,33 @@ _.Zones =
 						i(67197),	-- Rocksnitch Helmet
 					},
 				}),
-				q(5307, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Corruption
-					["provider"] = { "n", 11193 },	-- Seril Scourgebane
-					["g"] = {
-						i(12825),	-- Plans: Blazing Rapier (RECIPE!)
+				q(5307, {	-- Corruption
+					["qg"] = 11193,	-- Seril Scourgebane
+					["coord"] = { 61.2, 37.2, WINTERSPRING },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { STRATHOLME },
+					-- #if BEFORE TBC
+					["requireSkill"] = 9787,	-- Weaponsmith
+					-- #else
+					["requireSkill"] = BLACKSMITHING,
+					-- #endif
+					-- #if BEFORE TBC
+					["altQuests"] = {
+						5306,	-- Snakestone of the Shadow Huntress [Master Axesmith]
+						5305,	-- Sweet Serenity [Master Hammersmith]
 					},
-				})),
+					-- #endif
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/1 Insignia of the Black Guard
+							["provider"] = { "i", 13350 },	-- Insignia of the Black Guard
+							["cr"] = 11121,	-- Black Guard Swordsmith
+						}),
+						i(12825, {	-- Plans: Blazing Rapier (RECIPE!)
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
 				q(28831, {	-- Damn You, Frostilicus
 					["provider"] = { "n", 50263 },	-- Jadrag the Slicer
 					["coord"] = { 61.8, 74.6, WINTERSPRING },
@@ -383,12 +404,36 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11629 },	-- Jessica Redpath
 				}),
-				q(5306, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Snakestone of the Shadow Huntress
-					["provider"] = { "n", 11192 },	-- Kilram
-					["g"] = {
-						i(12821),	-- Plans: Dawn's Edge (RECIPE!)
+				q(5306, {	-- Snakestone of the Shadow Huntress
+					["qg"] = 11192,	-- Kilram
+					-- #if BEFORE TBC
+					["altQuests"] = {
+						5307,	-- Corruption [Master Swordsmith]
+						5305,	-- Sweet Serenity [Master Hammersmith]
 					},
-				})),
+					-- #endif
+					-- #if BEFORE 4.0.3
+					["description"] = "Upon finishing this quest, you will become a Master Axesmith and be locked out of becoming a Master Hammersmith and Master Swordsmith.",
+					-- #endif
+					["coord"] = { 61.2, 37, WINTERSPRING },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { BLACKROCK_SPIRE },
+					-- #if BEFORE TBC
+					["requireSkill"] = 9787,	-- Weaponsmith
+					-- #else
+					["requireSkill"] = BLACKSMITHING,
+					-- #endif
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/1 Vosh'gajin's Snakestone
+							["provider"] = { "i", 13352 },	-- Vosh'gajin's Snakestone
+							["cr"] = 9236,	-- Shadow Hunter Vosh'gajin
+						}),
+						i(12821, {	-- Plans: Dawn's Edge (RECIPE!)
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
 				q(28707, {	-- Spray it Again
 					["provider"] = { "n", 49399 },	-- Remma Curtainfire
 					["coord"] = { 45.6, 41.5, WINTERSPRING },
@@ -441,13 +486,37 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(15789)),	-- Deep River Cloak
 					},
 				}),
-				q(5305, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Sweet Serenity
-					["provider"] = { "n", 11191 },	-- Lilith the Lithe
-					["requireSkill"] = BLACKSMITHING,
-					["g"] = {
-						i(12824),	-- Plans: Enchanted Battlehammer (RECIPE!)
+				q(5305, {	-- Sweet Serenity
+					["qg"] = 11191,	-- Lilith the Lithe
+					-- #if BEFORE TBC
+					["altQuests"] = {
+						5306,	-- Snakestone of the Shadow Huntress [Master Axesmith]
+						5307,	-- Corruption [Master Swordsmith]
+						8869,	-- Sweet Serenity (Deprecated?)
 					},
-				})),
+					-- #endif
+					-- #if BEFORE 4.0.3
+					["description"] = "Upon finishing this quest, you will become a Master Hammersmith and be locked out of becoming a Master Axesmith and Master Swordsmith.",
+					-- #endif
+					["coord"] = { 61.2, 37.2, WINTERSPRING },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { STRATHOLME },
+					-- #if BEFORE TBC
+					["requireSkill"] = 9787,	-- Weaponsmith
+					-- #else
+					["requireSkill"] = BLACKSMITHING,
+					-- #endif
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/1 Crimson Hammersmith's Apron
+							["provider"] = { "i", 13351 },	-- Crimson Hammersmith's Apron
+							["cr"] = 11120,	-- Crimson Hammersmith
+						}),
+						i(12824, {	-- Plans: Enchanted Battlehammer (RECIPE!)
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
 				q(28841, {	-- The Arcane Storm Within
 					["provider"] = { "n", 10929 },	-- Haleh
 					["coord"] = { 58.0, 63.7, WINTERSPRING },

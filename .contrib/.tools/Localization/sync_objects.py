@@ -10,7 +10,7 @@ from object_localization import LOCALES_DIR, LangCode, get_objects_info, sync_ob
 OBJECT_DB_PATH = "../../../db/ObjectDB.lua"
 
 
-async def main():
+async def main() -> None:
     async with aiohttp.ClientSession() as session:
         objects = (await get_objects_info(session, OBJECT_DB_PATH)).objects
         await sync_objects(session, objects, f"{LOCALES_DIR}deDE.lua", LangCode.DEUTSCH)

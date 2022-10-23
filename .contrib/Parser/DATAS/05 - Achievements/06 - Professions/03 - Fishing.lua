@@ -12,23 +12,29 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			ach(1556),		-- 25 Fish
 		}),
 		ach(9456),		-- Abyssal Gulper Eel Angler
-		ach(1516,  {	-- Accomplished Angler
-			title(51),		-- Salty
-			crit(1),		-- Grand Master Fisherman
-			crit(2),		-- The Old Gnome and the Sea
-			crit(3),		-- The Scavenger
-			crit(4),		-- The Fishing Diplomat
-			crit(5),		-- Master Angler of Azeroth
-			crit(6),		-- Mr. Pinchy's Magical Crawdad Box
-			crit(7),		-- One That Didn't Get Away
-			crit(8),		-- Old Man Barlowned
-			crit(9),		-- The Lurker Above
-			crit(10),		-- Outland Angler
-			crit(11),		-- Northrend Angler
-			crit(12),		-- Fish Don't Leave Footprints
-			crit(13),		-- 1000 Fish
-			crit(14),		-- The Coin Master
-		}),
+		applyclassicphase(WRATH_PHASE_ONE, ach(1516, {	-- Accomplished Angler
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				1561,		-- 1000 Fish
+				1243,		-- Fish Don't Leave Footprints
+				130,		-- Grand Master Fisherman / Northrend Fisherman
+				306,		-- Master Angler of Azeroth
+				726,		-- Mr. Pinchy's Magical Crawdad Box
+				1517,		-- Northrend Angler
+				905,		-- Old Man Barlowned
+				878,		-- One That Didn't Get Away
+				1225,		-- Outland Angler
+				2096,		-- The Coin Master
+				150,		-- The Fishing Diplomat
+				144,		-- The Lurker Above
+				153,		-- The Old Gnome and the Sea
+				1257,		-- The Scavenger
+			}},
+			["requireSkill"] = FISHING,
+			["groups"] = {
+				title(51),	-- Salty %t
+			},
+		})),
 		ach(12757),		-- Angling for Battle
 		ach(128,   {	-- Artisan Fisherman
 			ach(127),		-- Expert Fisherman
@@ -76,18 +82,10 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			crit(13),		-- Snapclaw
 			crit(14),		-- Piranha!
 		}),
-		ach(1517,  {	-- Northrend Angler
-			crit(1),		-- Borean Man O' War School
-			crit(2),		-- Deep Sea Monsterbelly School
-			crit(3),		-- Dragonfin Angelfish School
-			crit(4),		-- Fangtooth Herring School
-			crit(5),		-- Glacial Salmon School
-			crit(6),		-- Glassfin Minnow School
-			crit(7),		-- Imperial Manta Ray School
-			crit(8),		-- Moonglow Cuttlefish School
-			crit(9),		-- Musselback Sculpin School
-			crit(10),		-- Nettlefish School
-		}),
+		applyclassicphase(WRATH_PHASE_ONE, ach(1517, {	-- Northrend Angler
+			["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, HOWLING_FJORD, GRIZZLY_HILLS, CRYSTALSONG_FOREST, SHOLAZAR_BASIN },
+			["requireSkill"] = FISHING,
+		})),
 		ach(130),		-- Northrend Fisherman
 		ach(878),		-- One That Didn't Get Away
 		ach(1225, {	-- Outland Angler

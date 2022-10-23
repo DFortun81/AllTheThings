@@ -26,15 +26,21 @@ root("Zones", {
 					n(QUESTS, {
 						q(13571, {	-- Fletcher's Lost and Found
 							["qg"] = 32516,	-- Washed-Up Mage
+							["sourceQuest"] = 12645,	-- The Taste Test
+							["coord"] = { 44.2, 25.6, NORTHREND_THE_UNDERBELLY },
+							["requireSkill"] = COOKING,
 							["groups"] = {
 								recipe(53056),	-- Kungaloosh
 							},
 						}),
-						q(12974, {	-- The Champion's Call!
-							["coord"] = { 49.3, 45.9, NORTHREND_DALARAN },
-							["qg"] = 30137,	-- Shifty Vickers
-							["description"] = "Patrols the center area of Underbelly.",
-							["isBreadcrumb"] = true,
+						q(13845, {	-- Sealed Vial of Poison
+							["providers"] = {
+								{ "i", 46004 },	-- Sealed Vial of Poison
+								{ "i", 46004 },	-- Sealed Vial of Poison
+								{ "n", 29535 },	-- Alchemist Cinesra <Poison Vendor>
+							},
+							["coord"] = { 63.6, 12.0, NORTHREND_THE_UNDERBELLY },
+							["repeatable"] = true,
 						}),
 					}),
 					n(VENDORS, {
@@ -3841,6 +3847,59 @@ root("Zones", {
 							}),
 						},
 					}),
+					ach(2019, {	-- Proof of Demise
+						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+						["groups"] = {
+							crit(7309, {	-- Proof of Demise: Anub'arak
+								["_quests"] = { 13254 },	-- Proof of Demise: Anub'arak
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+							crit(7311, {	-- Proof of Demise: Cyanigosa
+								["_quests"] = { 13256 },	-- Proof of Demise: Cyanigosa
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+							crit(7305, {	-- Proof of Demise: Gal'darah
+								["_quests"] = { 13250 },	-- Proof of Demise: Gal'darah
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+							crit(7310, {	-- Proof of Demise: Herald Volazj
+								["_quests"] = { 13255 },	-- Proof of Demise: Herald Volazj
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+							crit(7300, {	-- Proof of Demise: Ingvar the Plunderer
+								["_quests"] = { 13245 },	-- Proof of Demise: Ingvar the Plunderer
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+							crit(7301, {	-- Proof of Demise: Keristrasza
+								["_quests"] = { 13246 },	-- Proof of Demise: Keristrasza
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+							crit(7303, {	-- Proof of Demise: King Ymiron
+								["_quests"] = { 13248 },	-- Proof of Demise: King Ymiron
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+							crit(7302, {	-- Proof of Demise: Ley-Guardian Eregos
+								["_quests"] = { 13247 },	-- Proof of Demise: Ley-Guardian Eregos
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+							crit(7308, {	-- Proof of Demise: Loken
+								["_quests"] = { 13253 },	-- Proof of Demise: Loken
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+							crit(7306, {	-- Proof of Demise: Mal'Ganis
+								["_quests"] = { 13251 },	-- Proof of Demise: Mal'Ganis
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+							crit(7307, {	-- Proof of Demise: Sjonnir The Ironshaper
+								["_quests"] = { 13252 },	-- Proof of Demise: Sjonnir The Ironshaper
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+							crit(7304, {	-- Proof of Demise: The Prophet Tharon'ja
+								["_quests"] = { 13249 },	-- Proof of Demise: The Prophet Tharon'ja
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+						},
+					}),
 					ach(2095, {	-- Silver in the City
 						["sym"] = {{ "achievement_criteria" }},
 						["requireSkill"] = FISHING,
@@ -3866,6 +3925,27 @@ root("Zones", {
 					ach(1957, {	-- There's Gold In That There Fountain
 						["sym"] = {{ "achievement_criteria" }},
 						["requireSkill"] = FISHING,
+					}),
+					ach(2018, {	-- Timear Foresees
+						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+						["groups"] = {
+							crit(7296, {	-- Timear Foresees Centrifuge Constructs in your Future!
+								["_quests"] = { 13240 },	-- Timear Foresees Centrifuge Constructs in your Future!
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+							crit(7298, {	-- Timear Foresees Infinite Agents in your Future!
+								["_quests"] = { 13243 },	-- Timear Foresees Infinite Agents in your Future!
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+							crit(7299, {	-- Timear Foresees Titanium Vanguards in your Future!
+								["_quests"] = { 13244 },	-- Timear Foresees Titanium Vanguards in your Future!
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+							crit(7297, {	-- Timear Foresees Ymirjar Berserkers in your Future!
+								["_quests"] = { 13241 },	-- Timear Foresees Ymirjar Berserkers in your Future!
+								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+							}),
+						},
 					}),
 				}),
 				n(FACTIONS, {
@@ -3988,17 +4068,18 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 					}),
 					]]--
-					q(29608, {	-- Allies in Dalaran -- TODO:: figure out where this leads
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,	-- Gold said this gets invalidated by something, but idk what.
-						["coords"] = {
-							{ 59.7, 63.2, HOWLING_FJORD },	-- Pricilla Winterwind
-							{ 58.9, 68.2, BOREAN_TUNDRA },	-- Tomas Riverwell
-						},
+					q(29608, {	-- Allies in Dalaran
 						["qgs"] = {
 							23736,	-- Pricilla Winterwind
 							26879,	-- Tomas Riverwell
 						},
+						["coords"] = {
+							{ 59.7, 63.2, HOWLING_FJORD },	-- Pricilla Winterwind
+							{ 58.9, 68.2, BOREAN_TUNDRA },	-- Tomas Riverwell
+						},
+						["timeline"] = { "added 4.3.0.14732" },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,	-- Gold said this gets invalidated by something, but idk what.
 					}),
 					q(13986, {	-- An Injured Colleague
 						["qg"] = 35471,	-- Sorn Proudmane
@@ -4017,14 +4098,16 @@ root("Zones", {
 						},
 					}),
 					q(13833, {	-- Blood Is Thicker
-						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
-						["isDaily"] = true,
 						["qg"] = 28742,	-- Marcia Chase
+						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
+						["maps"] = { BOREAN_TUNDRA },
 						["requireSkill"] = FISHING,
+						["isDaily"] = true,
 						["groups"] = {
-							i(46007, {	-- Bag of Fishing Treasures
-								["sym"] = { { "fill" } },	-- fill the content
+							objective(1, {	-- 0/5 Bloodtooth Frenzy
+								["provider"] = { "i", 45905 },	-- Bloodtooth Frenzy
 							}),
+							i(46007),	-- Bag of Fishing Treasures
 						},
 					}),
 					applyclassicphase(WRATH_PHASE_THREE, q(14151, {	-- Cardinal Ruby
@@ -4052,25 +4135,29 @@ root("Zones", {
 						},
 					}),
 					q(13834, {	-- Dangerously Delicious
-						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
-						["isDaily"] = true,
 						["qg"] = 28742,	-- Marcia Chase
+						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
+						["maps"] = { WINTERGRASP },
 						["requireSkill"] = FISHING,
+						["isDaily"] = true,
 						["groups"] = {
-							i(46007, {	-- Bag of Fishing Treasures
-								["sym"] = { { "fill" } },	-- fill the content
+							objective(1, {	-- 0/10 Terrorfish
+								["provider"] = { "i", 45904 },	-- Terrorfish
 							}),
+							i(46007),	-- Bag of Fishing Treasures
 						},
 					}),
 					q(13836, {	-- Disarmed!
-						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
-						["isDaily"] = true,
 						["qg"] = 28742,	-- Marcia Chase
+						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
 						["requireSkill"] = FISHING,
+						["isDaily"] = true,
 						["groups"] = {
-							i(46007, {	-- Bag of Fishing Treasures
-								["sym"] = { { "fill" } },	-- fill the content
+							objective(1, {	-- 0/1 Severed Arm
+								["provider"] = { "i", 45323 },	-- Severed Arm
+								["cost"] = { { "i", 45328, 1 } },	-- Bloated Slippery Eel
 							}),
+							i(46007),	-- Bag of Fishing Treasures
 						},
 					}),
 					q(13041, {	-- Finish the Shipment
@@ -4093,7 +4180,6 @@ root("Zones", {
 						},
 					})),
 					q(29609, {	-- Friends in Dalaran
-						["races"] = HORDE_ONLY,
 						["qgs"] = {
 							27344,	-- Adeline Chambers
 							25288,	-- Turida Coldwind
@@ -4102,6 +4188,8 @@ root("Zones", {
 							{ 79.0, 29.7, HOWLING_FJORD },	-- Adeline Chambers
 							{ 40.3, 51.3, BOREAN_TUNDRA },	-- Turida Coldwind
 						},
+						["timeline"] = { "added 4.3.0.14732" },
+						["races"] = HORDE_ONLY,
 					}),
 					--[[
 					q(32405, {	-- Hand of the Silver Covenant
@@ -4136,14 +4224,15 @@ root("Zones", {
 					}),
 					]]--
 					q(13832, {	-- Jewel Of The Sewers
-						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
-						["isDaily"] = true,
 						["qg"] = 28742,	-- Marcia Chase
+						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
 						["requireSkill"] = FISHING,
+						["isDaily"] = true,
 						["groups"] = {
-							i(46007, {	-- Bag of Fishing Treasures
-								["sym"] = { { "fill" } },	-- fill the content
+							objective(1, {	-- 0/1 Corroded Jewelry
+								["provider"] = { "i", 45903 },	-- Corroded Jewelry
 							}),
+							i(46007),	-- Bag of Fishing Treasures
 						},
 					}),
 					--[[
@@ -4252,8 +4341,18 @@ root("Zones", {
 						["qg"] = 31085,	-- Sky-Reaver Klum
 						["sourceQuests"] = { 49537 }	-- Warchief's Command: Icecrown!
 					}),
-					-- TODO: Add all of this guy's quests and objectives.
-					-- https://www.wowhead.com/wotlk/npc=20735/archmage-landalock
+					q(13254, {	-- Proof of Demise: Anub'arak
+						["qg"] = 20735,	-- Archmage Lan'dalock
+						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { AZJOL_NERUB },
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 The Idle Crown of Anub'arak
+								["provider"] = { "i", 43726 },	-- The Idle Crown of Anub'arak
+							}),
+						},
+					}),
 					q(13256, {	-- Proof of Demise: Cyanigosa
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
@@ -4263,6 +4362,138 @@ root("Zones", {
 						["groups"] = {
 							objective(1, {	-- 0/1 Head of Cyanigosa
 								["provider"] = { "i", 43823 },	-- Head of Cyanigosa
+							}),
+						},
+					}),
+					q(13250, {	-- Proof of Demise: Gal'darah
+						["qg"] = 20735,	-- Archmage Lan'dalock
+						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { GUNDRAK },
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Mojo Remnant of Akali
+								["provider"] = { "i", 43693 },	-- Mojo Remnant of Akali
+							}),
+						},
+					}),
+					q(13255, {	-- Proof of Demise: Herald Volazj
+						["qg"] = 20735,	-- Archmage Lan'dalock
+						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { AHNKAHET_THE_OLD_KINGDOM },
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Faceless One's Withered Brain
+								["provider"] = { "i", 43821 },	-- Faceless One's Withered Brain
+							}),
+						},
+					}),
+					q(13245, {	-- Proof of Demise: Ingvar the Plunderer
+						["qg"] = 20735,	-- Archmage Lan'dalock
+						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { UTGARDE_KEEP },
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Axe of the Plunderer
+								["provider"] = { "i", 43662 },	-- Axe of the Plunderer
+							}),
+						},
+					}),
+					q(13246, {	-- Proof of Demise: Keristrasza
+						["qg"] = 20735,	-- Archmage Lan'dalock
+						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { THE_NEXUS },
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Keristrasza's Broken Heart
+								["provider"] = { "i", 43665 },	-- Keristrasza's Broken Heart
+							}),
+						},
+					}),
+					q(13248, {	-- Proof of Demise: King Ymiron
+						["qg"] = 20735,	-- Archmage Lan'dalock
+						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { UTGARDE_PINNACLE },
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Locket of the Deceased Queen
+								["provider"] = { "i", 43669 },	-- Locket of the Deceased Queen
+							}),
+						},
+					}),
+					q(13247, {	-- Proof of Demise: Ley-Guardian Eregos
+						["qg"] = 20735,	-- Archmage Lan'dalock
+						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { THE_OCULUS },
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Ley Line Tuner
+								["provider"] = { "i", 43668 },	-- Ley Line Tuner
+							}),
+						},
+					}),
+					q(13253, {	-- Proof of Demise: Loken
+						["qg"] = 20735,	-- Archmage Lan'dalock
+						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { HALLS_OF_LIGHTNING },
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Celestial Ruby Ring
+								["provider"] = { "i", 43724 },	-- Celestial Ruby Ring
+							}),
+						},
+					}),
+					q(13251, {	-- Proof of Demise: Mal'Ganis
+						["qg"] = 20735,	-- Archmage Lan'dalock
+						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { THE_CULLING_OF_STRATHOLME },
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Artifact from the Nathrezim Homeworld
+								["provider"] = { "i", 43697 },	-- Artifact from the Nathrezim Homeworld
+							}),
+						},
+					}),
+					q(13252, {	-- Proof of Demise: Sjonnir The Ironshaper
+						["qg"] = 20735,	-- Archmage Lan'dalock
+						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { HALLS_OF_STONE },
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 The Curse of Flesh Disc
+								["provider"] = { "i", 43699 },	-- The Curse of Flesh Disc
+							}),
+						},
+					}),
+					applyclassicphase(WRATH_PHASE_THREE, q(14199, {	-- Proof of Demise: The Black Knight
+						["qg"] = 20735,	-- Archmage Lan'dalock
+						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { TRIAL_OF_THE_CHAMPION },
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Fragment of the Black Knight's Soul
+								["provider"] = { "i", 48418 },	-- Fragment of the Black Knight's Soul
+							}),
+						},
+					})),
+					q(13249, {	-- Proof of Demise: The Prophet Tharon'ja
+						["qg"] = 20735,	-- Archmage Lan'dalock
+						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { DRAKTHARON_KEEP },
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Prophet's Enchanted Tiki
+								["provider"] = { "i", 43670 },	-- Prophet's Enchanted Tiki
 							}),
 						},
 					}),
@@ -4288,80 +4519,77 @@ root("Zones", {
 							}),
 						},
 					}),
-					q(13845, {	-- Sealed Vial of Poison
-						["provider"] = { "i", 46004 },	-- Sealed Vial of Poison
-						["repeatable"] = true,
-						["requireSkill"] = FISHING,
-					}),
 					q(12958, {	-- Shipment: Blood Jade Amulet
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["isDaily"] = true,
 						["qg"] = 28701,	-- Timothy Jones
+						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 						["requireSkill"] = JEWELCRAFTING,
+						["isDaily"] = true,
 						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
 					q(12962, {	-- Shipment: Bright Armor Relic
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["isDaily"] = true,
 						["qg"] = 28701,	-- Timothy Jones
+						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 						["requireSkill"] = JEWELCRAFTING,
+						["isDaily"] = true,
 						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
 					q(12959, {	-- Shipment: Glowing Ivory Figurine
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["isDaily"] = true,
 						["qg"] = 28701,	-- Timothy Jones
+						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 						["requireSkill"] = JEWELCRAFTING,
+						["isDaily"] = true,
 						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
 					q(12961, {	-- Shipment: Intricate Bone Figurine
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["isDaily"] = true,
 						["qg"] = 28701,	-- Timothy Jones
+						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 						["requireSkill"] = JEWELCRAFTING,
+						["isDaily"] = true,
 						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
 					q(12963, {	-- Shipment: Shifting Sun Curio
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["isDaily"] = true,
 						["qg"] = 28701,	-- Timothy Jones
+						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 						["requireSkill"] = JEWELCRAFTING,
+						["isDaily"] = true,
 						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
 					q(12960, {	-- Shipment: Wicked Sun Brooch
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["isDaily"] = true,
 						["qg"] = 28701,	-- Timothy Jones
+						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 						["requireSkill"] = JEWELCRAFTING,
+						["isDaily"] = true,
 						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
 					q(39209, {	-- Sholazar Basin -- Adventure Guide
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { "added 6.2.0.19934", "removed 7.0.1" },	-- TODO: Find out the patch this was removed, if at all.
 					}),
 					q(39212, {	-- Sholazar Basin -- Adventure Guide
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { "added 6.2.0.19934", "removed 7.0.1" },	-- TODO: Find out the patch this was removed, if at all.
 					}),
 					q(13830, {	-- The Ghostfish
-						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
-						["isDaily"] = true,
 						["qg"] = 28742,	-- Marcia Chase
+						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
+						["maps"] = { SHOLAZAR_BASIN },
 						["requireSkill"] = FISHING,
+						["isDaily"] = true,
 						["groups"] = {
-							i(46007, {	-- Bag of Fishing Treasures
-								["sym"] = { { "fill" } },	-- fill the content
+							objective(1, {	-- 0/1 Discover the Ghostfish mystery
+								["provider"] = { "i", 45902 },	-- Phantom Ghostfish
 							}),
+							i(46007),	-- Bag of Fishing Treasures
 						},
 					}),
 					q(12794, {	-- The Magical Kingdom of Dalaran (A)
@@ -4422,8 +4650,56 @@ root("Zones", {
 					]]--
 					-- TODO: https://www.wowhead.com/wotlk/npc=31439/archmage-timear
 					q(13240, {	-- Timear Foresees Centrifuge Constructs in your Future!
+						["qg"] = 31439,	-- Archmage Timear
+						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
 						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { THE_OCULUS },
 						["isDaily"] = true,
+						["lvl"] = 78,
+						["groups"] = {
+							objective(1, {	-- 0/10 Centrifuge Construct slain
+								["provider"] = { "n", 27641 },	-- Centrifuge Construct
+							}),
+						},
+					}),
+					q(13243, {	-- Timear Foresees Infinite Agents in your Future!
+						["qg"] = 31439,	-- Archmage Timear
+						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { THE_CULLING_OF_STRATHOLME },
+						["isDaily"] = true,
+						["lvl"] = 78,
+						["groups"] = {
+							objective(1, {	-- 0/4 Infinite Agent slain
+								["provider"] = { "n", 27744 },	-- Infinite Agent
+							}),
+						},
+					}),
+					q(13244, {	-- Timear Foresees Titanium Vanguards in your Future!
+						["qg"] = 31439,	-- Archmage Timear
+						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { HALLS_OF_LIGHTNING },
+						["isDaily"] = true,
+						["lvl"] = 78,
+						["groups"] = {
+							objective(1, {	-- 0/7 Titanium Vanguard slain
+								["provider"] = { "n", 28838 },	-- Titanium Vanguard
+							}),
+						},
+					}),
+					q(13241, {	-- Timear Foresees Ymirjar Berserkers in your Future!
+						["qg"] = 31439,	-- Archmage Timear
+						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { UTGARDE_PINNACLE },
+						["isDaily"] = true,
+						["lvl"] = 78,
+						["groups"] = {
+							objective(1, {	-- 0/7 Ymirjar Berserker slain
+								["provider"] = { "n", 26696 },	-- Ymirjar Berserker
+							}),
+						},
 					}),
 					q(14103, {	-- Titanium Powder
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
@@ -4474,11 +4750,31 @@ root("Zones", {
 				}),
 				n(REWARDS, {
 					i(46007, {	-- Bag of Fishing Treasures
+						["provider"] = { "n", 28742 },	-- Marcia Chase
 						["description"] = "Fishing Daily Quest Reward",
+						["sourceQuests"] = {
+							-- #if BEFORE CATA
+							24806,	-- Better Luck Next Time
+							-- #endif
+							13833,	-- Blood Is Thicker
+							13834,	-- Dangerously Delicious
+							13836,	-- Disarmed!
+							13832,	-- Jewel Of The Sewers
+							13830,	-- The Ghostfish
+						},
 						["requireSkill"] = FISHING,
-						["crs"] = { 28742 },	-- Marcia Chase
 						["groups"] = {
-							i(46004),	-- Sealed Vial of Poison
+							i(45991, {	-- Bone Fishing Pole
+								["timeline"] = { "added 3.1.0.9658" },
+							}),
+							i(45992, {	-- Jeweled Fishing Pole
+								["timeline"] = { "added 3.1.0.9658" },
+							}),
+							i(46004, {	-- Sealed Vial of Poison
+								-- #if ANYCLASSIC
+								["description"] = "Provides a nice source of XP. You can buy and sell this on the AH!",
+								-- #endif
+							}),
 							i(44983),	-- Strand Crawler Pet
 							i(45984),	-- Unusual Compass (TOY!)
 							i(49667),	-- Waterlogged Recipe
@@ -5638,6 +5934,7 @@ root("Zones", {
 						["coord"] = { 39.0, 26.0, NORTHREND_DALARAN },
 						["groups"] = {
 							i(136782, {	-- Fireworks Instruction Manual
+								["timeline"] = { "added 7.0.3.22248" },
 								["spellID"] = 127933,	-- Fireworks
 							}),
 							i(23817, {	-- Schematic: Titanium Toolbox
@@ -7211,6 +7508,22 @@ root("Zones", {
 							i(21910),	-- Pattern: Spellfire Robe
 						},
 					}),
+					-- #if BEFORE 4.0.1
+					n(28723, {	-- Larana Drome <Inscription Supplies>
+						["coord"] = { 41.8, 36.8, NORTHREND_DALARAN },
+						["groups"] = {
+							i(50166, {	-- Technique: Glyph of Eternal Water
+								["timeline"] = { "deleted 4.0.1" },
+							}),
+							i(50168, {	-- Technique: Glyph of Quick Decay
+								["timeline"] = { "deleted 4.0.1" },
+							}),
+							i(50167, {	-- Technique: Glyph of Rapid Rejuvenation
+								["timeline"] = { "deleted 4.0.1" },
+							}),
+						},
+					}),
+					-- #endif
 					n(29510, {	-- Linna Bruder <Shadoweave Tailoring Specialist>
 						["coord"] = { 34.6, 34.4, NORTHREND_DALARAN },
 						["groups"] = {
@@ -8218,11 +8531,19 @@ root("Zones", {
 							}),
 							i(44230, {	-- Wooly Mammoth (A) (MOUNT!)
 								["races"] = ALLIANCE_ONLY,
+								-- #if AFTER CATA
 								["cost"] = 100000000,	-- 10,000g
+								-- #else
+								["cost"] = { { "c", 101, 200 } },	-- Emblem of Heroism
+								-- #endif
 							}),
 							i(44231, {	-- Wooly Mammoth (H) (MOUNT!)
 								["races"] = HORDE_ONLY,
+								-- #if AFTER CATA
 								["cost"] = 100000000,	-- 10,000g
+								-- #else
+								["cost"] = { { "c", 101, 200 } },	-- Emblem of Heroism
+								-- #endif
 							}),
 						},
 					}),

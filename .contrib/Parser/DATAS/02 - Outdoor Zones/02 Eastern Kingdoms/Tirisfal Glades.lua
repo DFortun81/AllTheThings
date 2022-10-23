@@ -688,20 +688,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				})),
 			}),
-			-- #if AFTER 7.0.3.21570
-			n(ARTIFACTS, {
-				n(11608, {	-- Bardu Sharpeye
-					["questID"] = 43683,	-- Traveller Found [Retribution Paladin Hidden Artifact Appearance]
-					["sourceQuest"] = 43682,	-- Book Presented
-					["description"] = "After talking to Prince Tortheldrin, you can talk to him for the next part of the chain. After you have done so, read Grand Inquisitor Isillien's Journal at Hearthglen in Western Plaguelands.",
-					["coord"] = { 83.2, 71.8, TIRISFAL_GLADES },
-					["timeline"] = { "added 7.0.3.21570" },
-					["classes"] = { PALADIN },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 98,
-				}),
-			}),
-			-- #endif
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				p(417, {	-- Bat
@@ -1190,7 +1176,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(24992, {	-- Escaped From Gilneas
 					["sourceQuest"] = 24990,	-- Darkhound Pounding
 					["cr"] = 1548,	-- Cursed Darkhound
-					["description"] = "Quest is granted by getting in combat with a Cursed Darkhound while on or after completing |cFFFFD700Darkhound Pounding|r.",
+					["description"] = "Quest is granted by getting in combat with (not by killing) a Cursed Darkhound while on or after completing |cFFFFD700Darkhound Pounding|r.",
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),

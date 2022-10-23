@@ -648,6 +648,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 					["groups"] = COOKING_AWARD_GROUPS,
 				}),
+				applyclassicphase(TBC_PHASE_ONE, q(10891, {	-- Imperial Plate Armor [A]
+					["qg"] = 11145,	-- Myolor Sunderfury
+					["coord"] = { 52.0, 41.4, IRONFORGE },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = BLACKSMITHING,
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+				})),
 				q(1073, {	-- Ineptitude + Chemicals = Fun (1/2)
 					["qg"] = 4081,	-- Lomac Gearstrip
 					["sourceQuest"] = 1072,	-- An Old Colleague
@@ -993,6 +1002,27 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
+				q(5283, {	-- The Art of the Armorsmith (A)
+					["qg"] = 5164,	-- Grumnus Steelshaper
+					["altQuests"] = {
+						5301,	-- The Art of the Armorsmith (H)
+						5284,	-- The Way of the Weaponsmith (A)
+						5302,	-- The Way of the Weaponsmith (H)
+					},
+					-- #if BEFORE 4.0.3
+					["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
+					-- #endif
+					["coord"] = { 50.2, 42.6, IRONFORGE },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = BLACKSMITHING,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 7937, 4 },	-- Ornate Mithril Helm
+						{ "i", 7936, 2 },	-- Ornate Mithril Boots
+						{ "i", 7935, 1 },	-- Ornate Mithril Breastplate
+					},
+					["lvl"] = 40,
+				}),
 				q(29350, {	-- The Gnomish Bait-o-Matic
 					["qg"] = 5161,	-- Grimnur Stonebrand
 					["coord"] = { 48.4, 8.2, IRONFORGE },
@@ -1064,6 +1094,28 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(6866),	-- Symbol of Life
 					},
 					-- #endif
+				}),
+				q(5284, {	-- The Way of the Weaponsmith (A)
+					["qg"] = 11146,	-- Ironus Coldsteel
+					["altQuests"] = {
+						5283,	-- The Art of the Armorsmith (A)
+						5301,	-- The Art of the Armorsmith (H)
+						5302,	-- The Way of the Weaponsmith (H)
+					},
+					-- #if BEFORE 4.0.3
+					["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
+					-- #endif
+					["coord"] = { 49.8, 45, IRONFORGE },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = BLACKSMITHING,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3853, 4 },	-- Moonsteel Broadsword
+						{ "i", 3855, 4 },	-- Massive Iron Axe
+						{ "i", 7941, 2 },	-- Heavy Mithril Axe
+						{ "i", 7945, 2 },	-- Big Black Mace
+					},
+					["lvl"] = 40,
 				}),
 				q(1802, {	-- Tome of the Cabal (2/3 Alliance)
 					["qg"] = 6294,	-- Krom Stoutarm

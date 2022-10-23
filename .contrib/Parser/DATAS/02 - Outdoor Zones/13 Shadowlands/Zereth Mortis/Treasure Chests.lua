@@ -407,16 +407,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["coord"] = { 43, 40, 2029 },
 						["questID"] = 65567,
 						["isDaily"] = true,
-						["g"] = {
-							i(190096, {	-- Pocobold
-								["questID"] = 65534,
-								["g"] = {
-									crit(8, {	-- Pocobold
-										["achievementID"] = 15508,	-- Fashion of the First Ones
-									}),
-								},
-							}),
-						},
+						["sym"] = {{"select","itemID",190096}},	-- Pocobold
 					}),
 				},
 			}),

@@ -227,12 +227,74 @@ root("Zones", {
 					}),
 				})),
 				-- #endif
+				-- #if ANYCLASSIC
+				n(EXPLORATION, {
+					exploration(4253),	-- 7th Legion Front
+					exploration(4165),	-- Agmar's Hammer
+					exploration(4172),	-- Angrathar the Wrathgate
+					exploration(4183),	-- Azure Dragonshrine
+					exploration(4175),	-- Bronze Dragonshrine
+					exploration(4230),	-- Coldwind Heights
+					exploration(4478),	-- Coldwind Pass
+					exploration(4227),	-- Dragon's Fall
+					exploration(4241),	-- Eldritch Heights
+					exploration(4179),	-- Emerald Dragonshrine
+					exploration(4169),	-- Fordragon Hold
+					exploration(4173),	-- Galakrond's Rest
+					exploration(4163),	-- Icemist Village
+					exploration(4194),	-- Jintha'kalar
+					exploration(4170),	-- Kor'kron Vanguard
+					exploration(4166),	-- Lake Indu'le
+					exploration(4191),	-- Light's Trust
+					exploration(4160),	-- Lothalor Woodlands
+					exploration(4152),	-- Moa'ki Harbor
+					exploration(4157),	-- Moonrest Gardens
+					exploration(4234),	-- Naxxramas
+					exploration(4180),	-- New Hearthglen
+					exploration(4396),	-- Nozzlerust Post
+					exploration(4167),	-- Obsidian Dragonshrine
+					exploration(4189),	-- Onslaught Base Camp
+					exploration(4168),	-- Ruby Dragonshrine
+					exploration(4193),	-- Scarlet Point
+					exploration(4154),	-- Snowfall Glade
+					exploration(4158),	-- Stars' Rest
+					exploration(4188),	-- The Carrion Fields
+					exploration(4171),	-- The Court of Skulls
+					exploration(4187),	-- The Crystal Vice
+					exploration(4185),	-- The Forgotten Shore
+					exploration(4176),	-- The Mirror of Dawn
+					exploration(4164),	-- The Pit of Narjun
+					exploration(4232),	-- Vengeance Pass
+					exploration(4186),	-- Venomspite
+					exploration(4151),	-- Westwind Refugee Camp
+					exploration(4177),	-- Wintergarde Keep
+					exploration(4161),	-- Wyrmrest Temple
+				}),
+				-- #endif
 				n(FACTIONS, {
 					faction(1073, {	-- The Kalu'ak
 						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },
 						["OnTooltip"] = OnTooltipForTheKaluak,
 					}),
 					faction(1091),	-- The Wyrmrest Accord
+				}),
+				prof(FISHING, {
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5279,	-- Deep Sea Monsterbelly School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5280,	-- Dragonfin Angelfish School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5284,	-- Imperial Manta Ray School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5285,	-- Moonglow Cuttlefish School
+						["requireSkill"] = FISHING,
+					}),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(256, {	-- Agmar's Hammer

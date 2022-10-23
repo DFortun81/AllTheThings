@@ -4,7 +4,7 @@
 
 root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 	m(MECHAGON, {
-		profession(JUNKYARD_TINKERING, bubbleDownSelf({ ["requireSkill"] = JUNKYARD_TINKERING }, {
+		prof(JUNKYARD_TINKERING, bubbleDownSelf({ ["requireSkill"] = JUNKYARD_TINKERING }, {
 			["cr"] = 150359,	-- Pascal-K1N6
 			["coord"] = { 71.4, 32.3, MECHAGON },
 			["groups"] = {

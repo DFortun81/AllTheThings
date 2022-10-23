@@ -572,6 +572,7 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 			q(36308, {	-- Enchanted Highmaul Bracer (A)
 				["description"] = "This item can drop from any Draenor mob.",
 				["provider"] = { "i", 115281 },	-- Enchanted Highmaul Bracer
+				["timeline"] = { "added 6.0.1.18522" },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					FROSTFIRE_RIDGE,
@@ -585,6 +586,7 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 			q(36255, {	-- Enchanted Highmaul Bracer (H)
 				["description"] = "This item can drop from any Draenor mob.",
 				["provider"] = { "i", 115008 },	-- Enchanted Highmaul Bracer
+				["timeline"] = { "added 6.0.1.18522" },
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					FROSTFIRE_RIDGE,

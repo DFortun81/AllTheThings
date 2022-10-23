@@ -109,9 +109,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(26837, {	-- The Explorers' League Digsite (The Cape of Stranglethorn)
 				["timeline"] = { "created 4.0.3.13277" },	-- was replaced To the Cape! "To the Cape!"
 			}),
-			q(26412, {	-- The Mosh'Ogg Bounty (NYI - dupe) (Northern Stranglethorn)
-				["timeline"] = { "created 4.0.3.13277" },
-			}),
 			q(28752, {	-- Unstoppable Onslaught (REMOVED in Beta) [Hillsbrad Foothills]
 				["timeline"] = { "created 4.0.1.12984" },
 			}),
@@ -6137,7 +6134,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(63948, { ["name"] = "Seeking the Seeker's Staff [PH]", }),	-- Seeking the Seeker's Staff [PH]
 				q(63419, { ["name"] = "Spores Galore", }),	-- Spores Galore
 				q(64305, { ["name"] = "The Tormentors of Torghast", }),	-- The Tormentors of Torghast
-				q(64546, { ["name"] = "Visions of Sire Denathrius", ["_drop"] = {"g"} }),	-- Visions of Sire Denathrius
 				q(64235, { ["name"] = "[DNT] Training Kill Quest", }),	-- [DNT] Training Kill Quest
 				q(64231, { ["name"] = "[DNT] Training Quest", }),	-- [DNT] Training Quest
 				-- Quest from WoW.Tools
@@ -6188,7 +6184,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(64087),	--
 				q(64096),	--
 				q(64102),	--
-				q(64107),	--
 				q(64110),	--
 				q(64111),	--
 				q(64112),	--

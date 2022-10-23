@@ -840,9 +840,6 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				exploration(3911, "256:256:215:298"),	-- Tranquil Shore [TBC]
 				exploration(3466, "128:256:292:319"),	-- West Sanctum [TBC]
 				exploration(3475, "128:193:554:475"),	-- Zeb'Watha [TBC]
-				--[[
-				exploration(3481, ""),	-- Duskwither Spire [TBC]
-				]]--
 			}),
 			-- #endif
 			n(FLIGHT_PATHS, {

@@ -336,6 +336,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(37784),	-- Keystone Great-Ring
 							i(37732),	-- Spectral Seal of the Prophet
 							i(37734),	-- Talisman of Troll Divinity
+							-- #if BEFORE 4.0.1
+							i(43670),	-- Prophet's Enchanted Tiki
+							-- #endif
 						},
 					}),
 				},

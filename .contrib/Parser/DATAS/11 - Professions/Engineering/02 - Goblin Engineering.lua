@@ -3,6 +3,20 @@ profession(ENGINEERING, {
 		["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level a second Engineer and complete the opposing specialization.",
 		["sourceQuest"] = 3639,	-- Show Your Work
 		["groups"] = {
+			-- #if BEFORE 4.0.1
+			{
+				["name"] = "Bullets",
+				["timeline"] = { "added 3.3.0" },
+				["categoryID"] = 1,
+				["groups"] = {
+					applyclassicphase(WRATH_PHASE_FOUR, {
+						["name"] = "Shatter Rounds",
+						["timeline"] = { "added 3.3.0", "deleted 4.0.1" },
+						["recipeID"] = 72952,
+					}),
+				},
+			},
+			-- #endif
 			{
 				["name"] = "Devices",
 				["categoryID"] = 188,
@@ -203,3 +217,9 @@ end
 -- Classic Recipes
 itemrecipe(18653, 23078);	-- Schematic: Goblin Jumper Cables XL
 itemrecipe(7192, 8895);		-- Schematic: Goblin Rocket Boots
+
+-- #if AFTER WRATH
+-- #if BEFORE 4.0.1
+itemrecipe(52022, 72952);	-- Plans: Shatter Rounds
+-- #endif
+-- #endif

@@ -2047,7 +2047,9 @@ profession(TAILORING, {
 			["name"] = "Materials",
 			["categoryID"] = 985,
 			["groups"] = {
+				-- #IF ANYCLASSIC
 				recipe(59390),	-- Northern Cloth Scavenging
+				-- #ENDIF
 				{
 					["name"] = "Bolt of Frostweave",
 					["recipeID"] = 55899
@@ -5347,16 +5349,6 @@ profession(TAILORING, {
 			}
 		},
 	})),
-	-- #if AFTER 8.0.1
-	n(ACHIEVEMENTS, {
-		ach(5480, {	-- Preparing for Disaster
-			["requireSkill"] = TAILORING,
-		}),
-		ach(137, {	-- Stocking Up
-			["requireSkill"] = TAILORING,
-		}),
-	}),
-	-- #endif
 	n(QUESTS, bubbleDown({ ["timeline"] = { "removed 4.0.3.10000" } }, {
 		applyclassicphase(TBC_PHASE_ONE, q(10831, {	-- Becoming a Mooncloth Tailor
 			["qg"] = 22208,	-- Nasmara Moonsong <Mooncloth Specialist>
@@ -5488,7 +5480,7 @@ local function cacheRecipes(g)
 		if g.g then cacheRecipes(g.g); end
 		local spellID = g.spellID or g.recipeID;
 		if spellID then
-			recipeCache[spellID] = true; 
+			recipeCache[spellID] = true;
 			if g.u then recipeCacheU[spellID] = g.u; end
 		end
 		for i,o in ipairs(g) do
@@ -5789,7 +5781,9 @@ itemrecipe("Pattern: Unyielding Girdle", 35309, 31442, TBC_PHASE_FIVE, true);
 
 -- #if AFTER WRATH
 -- Wrath Recipes
+-- #IF ANYCLASSIC
 itemrecipe("A Guide to Northern Cloth Scavenging", 43876, 59390, WRATH_PHASE_ONE);
+-- #ENDIF
 itemrecipe("Pattern: Abyssal Bag", 42183, 56004, WRATH_PHASE_ONE);
 itemrecipe("Pattern: Aurora Slippers", 42196, 56023, WRATH_PHASE_ONE);	-- NYI, taught by trainers
 itemrecipe("Pattern: Bejeweled Wizard's Bracers", 47654, 67079, WRATH_PHASE_THREE);

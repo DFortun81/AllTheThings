@@ -285,6 +285,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							-- #if AFTER 7.3.5
 							i(37111),	-- Soul Preserver (7.3.5 - Used to be only Normal Mode)
 							-- #endif
+							-- #if BEFORE 4.0.1
+							i(43697),	-- Artifact from the Nathrezim Homeworld
+							-- #endif
 						},
 					}),
 				},

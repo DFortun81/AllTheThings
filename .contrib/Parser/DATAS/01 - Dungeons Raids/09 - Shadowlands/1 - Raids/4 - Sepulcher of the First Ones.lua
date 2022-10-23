@@ -1417,7 +1417,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						crit(11, {	-- The Jailer
 							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
 						}),
-						ach(15470),	-- Ahead of the Curve: The Jailer
+						ach(15470, {["timeline"] = { "added 9.2.0", REMOVED_SLS4 }}),	-- Ahead of the Curve: The Jailer
 						i(189855),	-- Bindings of the Banished One
 						i(188252),	-- Chains of Domination
 						i(189818),	-- Domination's Deliverance
@@ -1759,7 +1759,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								title(454),	-- <Name>, Famed Slayer of The Banished One
 							},
 						})),
-						ach(15471),	-- Cutting Edge: The Jailer
+						ach(15471, {["timeline"] = { "added 9.2.0", REMOVED_SLS4 }}),	-- Cutting Edge: The Jailer
 						i(189855),	-- Bindings of the Banished One
 						i(188252),	-- Chains of Domination
 						i(189818),	-- Domination's Deliverance

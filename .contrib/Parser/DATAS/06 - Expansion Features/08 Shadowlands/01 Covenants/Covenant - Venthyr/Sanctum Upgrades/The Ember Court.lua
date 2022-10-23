@@ -296,6 +296,14 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								["cost"] = { { "i", 185682, 1 } },	-- Temel's Egg
 								["u"] = NOBLEGARDEN,
 							}),
+							q(64546, {	-- Visions of Sire Denathrius
+								["provider"] = { "n", 180458 },	-- Vision of Sire Denathrius
+								["g"] = {
+									i(181442),	-- Vision of Sire Denathrius
+								},
+								["u"] = HALLOWS_END,
+								["repeatable"] = true,	-- probably yearly, Blizzard API says it's daily, in practice it unflaggs right after completion
+							}),
 							q(62146),	-- A Little More Comfortable
 							q(62130),	-- A Quiet Moment
 							q(62126),	-- Animal Rescue

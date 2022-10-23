@@ -1019,11 +1019,6 @@ profession(ENGINEERING, {
 			["name"] = "Bullets",
 			["categoryID"] = 1,
 			["groups"] = {
-				applyclassicphase(WRATH_PHASE_FOUR, {
-					["name"] = "Iceblade Arrow",
-					["timeline"] = { "added 3.4.0.43659", "deleted 4.0.1" },
-					["recipeID"] = 72953,
-				}),
 				{
 					["name"] = "Mammoth Cutters",
 					["timeline"] = { "deleted 4.0.1" },
@@ -1034,11 +1029,6 @@ profession(ENGINEERING, {
 					["timeline"] = { "deleted 4.0.1" },
 					["recipeID"] = 56475,
 				},
-				applyclassicphase(WRATH_PHASE_FOUR, {
-					["name"] = "Shatter Rounds",
-					["timeline"] = { "added 3.4.0.43659", "deleted 4.0.1" },
-					["recipeID"] = 72952,
-				}),
 			},
 		},
 		-- #endif
@@ -1106,10 +1096,6 @@ profession(ENGINEERING, {
 					["name"] = "Explosive Decoy",
 					["recipeID"] = 56463,
 				},
-				{
-					["name"] = "Global Thermal Sapper Charge",
-					["recipeID"] = 56514,
-				},
 			},
 		},
 		{
@@ -1118,54 +1104,86 @@ profession(ENGINEERING, {
 			["groups"] = {
 				{
 					["name"] = "Armored Titanium Goggles",
+					-- #if BEFORE 7.3.0
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+					-- #endif
 					["recipeID"] = 56480,
 				},
 				{
 					["name"] = "Charged Titanium Specs",
+					-- #if BEFORE 7.3.0
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+					-- #endif
 					["recipeID"] = 56483,
 				},
 				{
 					["name"] = "Electroflux Sight Enhancers",
+					-- #if BEFORE 7.3.0
+					["classes"] = { HUNTER, SHAMAN },
+					-- #endif
 					["recipeID"] = 56487,
 				},
 				{
-					["name"] = "Gnomish X-Ray Specs",
-					["recipeID"] = 56473,
-				},
-				{
 					["name"] = "Greensight Gogs",
+					-- #if BEFORE 7.3.0
+					["classes"] = { DRUID },
+					-- #endif
 					["recipeID"] = 56486,
 				},
 				{
 					["name"] = "Mechanized Snow Goggles",
+					-- #if BEFORE 7.3.0
+					["classes"] = { PRIEST, MAGE, WARLOCK },
+					-- #endif
 					["recipeID"] = 56465,
 				},
 				{
 					["name"] = "Mechanized Snow Goggles",
+					-- #if BEFORE 7.3.0
+					["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+					-- #endif
 					["recipeID"] = 61481,
 				},
 				{
 					["name"] = "Mechanized Snow Goggles",
+					-- #if BEFORE 7.3.0
+					["classes"] = { HUNTER, SHAMAN },
+					-- #endif
 					["recipeID"] = 61482,
 				},
 				{
 					["name"] = "Mechanized Snow Goggles",
+					-- #if BEFORE 7.3.0
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+					-- #endif
 					["recipeID"] = 61483,
 				},
 				{
 					["name"] = "Truesight Ice Blinders",
+					-- #if BEFORE 7.3.0
+					["classes"] = { HUNTER, SHAMAN },
+					-- #endif
 					["recipeID"] = 56574,
 				},
 				{
 					["name"] = "Unbreakable Healing Amplifiers",
+					-- #if BEFORE 7.3.0
+					["classes"] = { PALADIN },
+					-- #endif
 					["recipeID"] = 62271,
 				},
 				{
 					["name"] = "Visage Liquification Goggles",
+					-- #if BEFORE 7.3.0
+					["classes"] = { PRIEST, MAGE, WARLOCK },
+					-- #endif
 					["recipeID"] = 56484,
 				},
 				{
 					["name"] = "Weakness Spectralizers",
+					-- #if BEFORE 7.3.0
+					["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+					-- #endif
 					["recipeID"] = 56481,
 				},
 			},
@@ -3545,10 +3563,6 @@ itemrecipe("Schematic: Rocket Boots Xtreme Lite", 35582, 46697, TBC_PHASE_ONE);
 
 -- #if AFTER WRATH
 -- Wrath Recipes
--- #if BEFORE 4.0.1
-itemrecipe("Plans: Iceblade Arrow", 52023, 72953, WRATH_PHASE_FOUR);
-itemrecipe("Plans: Shatter Rounds", 52022, 72952, WRATH_PHASE_FOUR);
--- #endif
 applyholiday(LUNAR_FESTIVAL, itemrecipe("Schematic: Cluster Launcher", 44918, 26443, LUNAR_FESTIVAL));
 applyholiday(LUNAR_FESTIVAL, itemrecipe("Schematic: Firework Launcher", 44919, 26442, LUNAR_FESTIVAL));
 itemrecipe("Schematic: Jeeves", 49050, 68067, WRATH_PHASE_ONE);

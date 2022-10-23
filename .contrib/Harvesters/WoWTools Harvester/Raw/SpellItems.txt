@@ -10772,3 +10772,6 @@
 6384,Primal Razorstone
 6692,$spell@spelldesc384266
 6693,$spell@spelldesc384266
+10.0.2.46091
+6694,Chirping Rune
+6695,Chirping Rune

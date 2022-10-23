@@ -176,6 +176,58 @@ root("Zones", {
 					}),
 				})),
 				-- #endif
+				-- #if ANYCLASSIC
+				n(EXPLORATION, {
+					exploration(4204),	-- Amberpine Lodge
+					exploration(4482),	-- Arriga Footbridge
+					exploration(4262),	-- Ashwood Post
+					exploration(4217),	-- Blackriver Logging Camp
+					exploration(4244),	-- Bloodmoon Isle
+					exploration(4222),	-- Blue Sky Logging Grounds
+					exploration(4214),	-- Boulder Hills
+					exploration(4211),	-- Camp Oneqwah
+					exploration(4206),	-- Conquest Hold
+					exploration(4210),	-- Drak'Tharon Keep
+					exploration(4216),	-- Drakil'jin Ruins
+					exploration(4220),	-- Dun Argol
+					exploration(4212),	-- Eastwind Shore
+					exploration(4240),	-- Forest's Edge Post
+					exploration(4208),	-- Granite Springs
+					exploration(395),	-- Grizzlemaw
+					exploration(4266),	-- Harkor's Camp
+					exploration(4218),	-- Heart's Blood Shrine
+					exploration(4229),	-- Prospector's Point
+					exploration(4215),	-- Rage Fang Shrine
+					exploration(4231),	-- Redwood Trading Post
+					exploration(4255),	-- Ruins of Drak'Zin
+					exploration(4250),	-- Ruins of Tethys
+					exploration(4199),	-- Silverbrook
+					exploration(4251),	-- Silverbrook Hills
+					exploration(4205),	-- Solstice Village
+					exploration(4480),	-- The Forgotten Overlook
+					exploration(4221),	-- Thor Modan
+					exploration(4366),	-- Ursoc's Den
+					exploration(4242),	-- Venture Bay
+					exploration(4207),	-- Voldrune
+					exploration(4267),	-- Vordrassil Pass
+					exploration(4200),	-- Vordrassil's Heart
+					exploration(4203),	-- Vordrassil's Limb
+					exploration(4202),	-- Vordrassil's Tears
+					exploration(4159),	-- Westfall Brigade Encampment
+					exploration(4238),	-- White Pine Trading Post
+					exploration(4209),	-- Zeb'Halak
+				}),
+				-- #endif
+				prof(FISHING, {
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5282,	-- Glacial Salmon School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5284,	-- Imperial Manta Ray School
+						["requireSkill"] = FISHING,
+					}),
+				}),
 				n(FLIGHT_PATHS, {
 					fp(253, {	-- Amberpine Lodge
 						["cr"] = 26880,	-- Vana Grey <Gryphon Master>

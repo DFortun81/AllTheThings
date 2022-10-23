@@ -79,6 +79,16 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 45.3, 46.2, VOLDUN },
 				["races"] = HORDE_ONLY,
 			}),
+			q(52055, {	-- An Ore for an Eye
+				["provider"] = { "n", 139792 },	-- Ta'mil Nadu
+				["coord"] = { 27.6, 69.8, VOLDUN },
+				["sourceQuest"] = 52053,	-- The Platinum Map
+				["requireSkill"] = MINING,
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					recipe(253341),	-- Platinum Deposit Rank 3
+				},
+			}),
 			q(47322, {	-- Aided Escape
 				["provider"] = { "n", 137631 },	-- Neri
 				["coord"] = { 54.6, 42.4, VOLDUN },	-- The Brine Basin

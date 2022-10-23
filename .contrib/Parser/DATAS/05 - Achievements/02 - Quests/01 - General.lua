@@ -35,11 +35,29 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			ach(11131),		-- 5000 World Quests Completed
 		}),
 		ach(31),		-- A Simple Re-Quest
-		ach(941, {		-- Hemet Nesingwary: The Collected Quests
-			ach(940),		-- The Green Hills of Stranglethorn
-			ach(939),		-- Hills Like White Elekk
-			ach(938),		-- The Snows of Northrend
-		}),
+		applyclassicphase(WRATH_PHASE_ONE, ach(941, {	-- Hemet Nesingwary: The Collected Quests
+			-- #if BEFORE WRATH
+			["description"] = "Complete the Green Hills of Stranglethorn, Hills Like White Elekk and Snows of Northrend achievements.",
+			["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
+			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
+			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 939, 938, 940); end]],
+			-- #else
+			["maps"] = {
+				NAGRAND,
+				-- #if AFTER CATA
+				NORTHERN_STRANGLETHORN,
+				-- #else
+				STRANGLETHORN_VALE,
+				-- #endif
+				SHOLAZAR_BASIN,
+			},
+			["sym"] = { {"select","achievementID",
+				939,	-- Hills Like White Elekk
+				938,	-- The Snows of Northrend
+				940,	-- The Green Hills of Stranglethorn
+			}},
+			-- #endif
+		})),
 		ach(14222),     -- Exile's Reach
 		ach(5752, {		-- Justly Rewarded
 			ach(1182),		-- The Bread Winner

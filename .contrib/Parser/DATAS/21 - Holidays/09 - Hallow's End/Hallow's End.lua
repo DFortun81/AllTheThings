@@ -406,6 +406,9 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						291,				-- Check Your Head
 						283,				-- The Masquerade
 						292,				-- Sinister Calling
+						-- #if BEFORE 4.2.0
+						970,	-- Tricks and Treats of Azeroth (A)
+						-- #endif
 						971,				-- Tricks and Treats of Azeroth
 					},
 				},
@@ -540,7 +543,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 				}),
 			}),
 			ach(1261, {	-- G.N.E.R.D. Rage
-				["cost"] = { { "i", 37583, 1 } },	-- G.N.E.R.D.S.
+				["provider"] = { "i", 37583 },	-- G.N.E.R.D.S.
 			}),
 			ach(288, {	-- Out With It
 				["description"] = "Eat 2-10 Tricky Treats quickly to trigger the debuff. Results may vary.",
@@ -643,8 +646,11 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					["provider"] = { "i", 20414 },	-- Hallowed Wand - Wisp
 				}),
 			}),
-			ach(289),	-- The Savior of Hallow's End
+			ach(289, {	-- The Savior of Hallow's End
+				["maps"] = { ELWYNN_FOREST, AZUREMYST_ISLE, TIRISFAL_GLADES, EVERSONG_WOODS, DUN_MOROGH, DUROTAR },
+			}),
 			ach(972),	-- Trick or Treat!
+			-- #if AFTER 4.2.0
 			ach(971, {	-- Tricks and Treats of Azeroth
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {{"meta_achievement",
@@ -656,6 +662,27 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					968,	-- Tricks and Treats of Outlands (H)
 				}},
 			}),
+			-- #else
+			ach(970, {	-- Tricks and Treats of Azeroth (A)
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["timeline"] = { "removed 4.2.0" },
+				["sym"] = {{"meta_achievement",
+					966,	-- Tricks and Treats of Eastern Kingdoms (A)
+					963,	-- Tricks and Treats of Kalimdor (A)
+					969,	-- Tricks and Treats of Outlands (A)
+				}},
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(971, {	-- Tricks and Treats of Azeroth (H)
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["sym"] = {{"meta_achievement",
+					967,	-- Tricks and Treats of Eastern Kingdoms (H)
+					965,	-- Tricks and Treats of Kalimdor (H)
+					968,	-- Tricks and Treats of Outlands (H)
+				}},
+				["races"] = HORDE_ONLY,
+			}),
+			-- #endif
 			ach(5837, {	-- Tricks and Treats of Cataclysm (A)
 				["timeline"] = { "added 4.2.0" },
 				["sym"] = {{ "achievement_criteria" }},
@@ -2054,6 +2081,9 @@ root("Holidays", applyholiday(HALLOWS_END, {
 				}),
 				-- #endif
 				-- #endif
+				i(33226, {	-- Tricky Treats
+					["timeline"] = { "added 2.4.3.8600" },
+				}),
 				i(34068, {	-- Weighted Jack-o'-Lantern
 					["timeline"] = { "added 2.2.2.7318" },
 				}),
@@ -3956,7 +3986,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 4.1.0.13726" },
 					}),
 					q(12373, {	-- Candy Bucket — Ghostlands, Tranquillien, Horde
-						["coord"] = { 48.1, 47.8, EVERSONG_WOODS },
+						["coord"] = { 48.1, 47.8, GHOSTLANDS },
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(12947, {	-- Candy Bucket — Grizzly Hills, Camp Oneqwah, Horde
@@ -4249,6 +4279,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					{ "select", "achievementID", 972 },	-- Trick or Treat!
 					{ "finalize" },	-- Push the processed items on to the finalized stack and ignore further queries on them.
 					-- #endif
+					-- #if AFTER 4.2.0
 					-- Masks & Wands & Candy
 					{ "selectparent" },	-- Select the "Rewards" header.
 					{ "pop" },	-- Get the Rewards.
@@ -4259,22 +4290,25 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
 					{ "exclude", "itemID", 20413 },	-- Exclude Hallowed Wand - Random
 					{ "finalize" },	-- Push the processed items on to the finalized stack and ignore further queries on them.
-					-- #if AFTER WRATH
 					{ "select", "itemID", 33292 },	-- Hallowed Helm
 					{ "select", "itemID", 33154 },	-- Sinister Squashling (PET!)
+					-- #else
+					-- Before 4.2.0 these bags were super boring.
+					{ "select", "itemID", 37585, 37583, 37582, 37584 },	-- G.N.E.R.D.S., Pyroblast Cinnamon Ball, Soothing Spearmint Candy, and Chewy Fel Taffy
 					-- #endif
 				},
 			}),
 			i(20393, {	-- Treat Bag
-				-- #if BEFORE 3.0.1
+				-- #if BEFORE 4.2.0
 				["description"] = "Get this by Trick or Treating at any Innkeeper.",
 				["sym"] = {
 					{ "selectparent" },	-- Select the "Rewards" header.
 					{ "pop" },	-- Get the Rewards.
-					{ "exclude", "itemID", 20393 },	-- Treat Bag (self)
+					{ "exclude", "itemID", 20393, 37586, 34077 },	-- Treat Bag & Crudely Wrapped Gift
+					{ "select", "itemID", 33292, 33154 },	-- Hallowed Helm & Sinister Squashling
 				},
 				-- #endif
-				["timeline"] = { "removed 3.0.1" },
+				["timeline"] = { "removed 4.2.0" },
 			}),
 			i(20390, {	-- Candy Bar
 				["timeline"] = { "removed 4.0.1" },

@@ -159,7 +159,10 @@ _.Zones =
 					["provider"] = { "n", 37135 },	-- Nura Pathfinder
 					["coord"] = { 31.4, 13.3, SOUTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 28549,	-- Warchief's Command: Southern Barrens!
+					["sourceQuests"] = {
+						28549,	-- Warchief's Command: Southern Barrens!
+						26069,	-- Nura Pathfinder
+					},
 				}),
 				q(24604, {	-- Concern for Mankrik
 					["provider"] = { "n", 37812 },	-- Mahka

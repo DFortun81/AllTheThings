@@ -1154,7 +1154,9 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					q(54759, {	-- When Spririts Whisper
 						["provider"] = { "n", 149088 },	-- Spiritwalker Isahi
 						["coord"] = { 39.1, 79.0, ORGRIMMAR },
+						-- #if BEFORE SHADOWLANDS
 						["sourceQuest"] = 55779,	-- Stay of Execution (after the Baine Rescue Scenario)
+						-- #endif
 					}),
 					q(54760, {	-- The Spiritwalkers
 						["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>

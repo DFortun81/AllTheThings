@@ -382,10 +382,6 @@ q(5244),	-- [DEPRECATED]The Ruins of Kel'Theril,		TBC: The Ruins of Kel'Theril,	
 q(5245),	-- [DEPRECATED]Troubled Spirits of Kel'Theril,		TBC: Troubled Spirits of Kel'Theril,		CLASSIC: Troubled Spirits of Kel'Theril
 q(5249),	-- [DEPRECATED]To Winterspring!,		TBC: To Winterspring!,		CLASSIC: To Winterspring!
 q(5250),	-- Starfall,		TBC: Starfall,		CLASSIC: Starfall
-q(5283),	-- The Art of the Armorsmith,		TBC: The Art of the Armorsmith,		CLASSIC: The Art of the Armorsmith
-q(5284),	-- The Way of the Weaponsmith,		TBC: The Way of the Weaponsmith,		CLASSIC: The Way of the Weaponsmith
-q(5301),	-- The Art of the Armorsmith,		TBC: The Art of the Armorsmith,		CLASSIC: The Art of the Armorsmith
-q(5302),	-- The Way of the Weaponsmith,		TBC: The Way of the Weaponsmith,		CLASSIC: The Way of the Weaponsmith
 q(5303),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5304),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5506),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -540,7 +536,6 @@ q(7644),	-- Blessed Arcanite Barding,		TBC: Blessed Arcanite Barding,		CLASSIC: 
 q(7645),	-- Manna-Enriched Horse Feed,		TBC: Manna-Enriched Horse Feed,		CLASSIC: Manna-Enriched Horse Feed
 q(7646),	-- The Divination Scryer,		TBC: The Divination Scryer,		CLASSIC: The Divination Scryer
 q(7648),	-- Grimand's Finest Work,		TBC: Grimand's Finest Work,		CLASSIC: Grimand's Finest Work
-q(7652),	-- A Blue Light Bargain,		TBC: A Blue Light Bargain,		CLASSIC: A Blue Light Bargain
 q(7670),	-- Lord Grayson Shadowbreaker,		TBC: Lord Grayson Shadowbreaker,		CLASSIC: Lord Grayson Shadowbreaker
 q(7681),	-- Hunter test quest,		TBC: Hunter test quest,		CLASSIC: Hunter test quest
 q(7682),	-- Hunter test quest2,		TBC: Hunter test quest2,		CLASSIC: Hunter test quest2
@@ -724,8 +719,6 @@ q(10790),	-- Return to Mordak Darkfist,		TBC: Return to Gan'rul Bloodeye
 q(10794),	-- Rogues of the Shattered Hand,		TBC: Rogues of the Shattered Hand
 q(10844),	-- Forge Camp: Anger,		TBC: Forge Camp: Anger
 q(10890),	-- [UNUSED] <NYI>,		TBC: [UNUSED] <NYI>
-q(10891),	-- Imperial Plate Armor,		TBC: Imperial Plate Armor
-q(10892),	-- Imperial Plate Armor,		TBC: Imperial Plate Armor
 q(10931),	-- Return to the Exodar,		TBC: Return to the Exodar
 q(10932),	-- Return to the Exodar,		TBC: Return to the Exodar
 q(10933),	-- Return to Silvermoon,		TBC: Return to Silvermoon
@@ -833,22 +826,6 @@ q(12923),	-- UNUSED
 q(13123),	-- WotLK Collector's Edition: - DEM - E - FLAG
 q(13173),	-- Amidst the Confusion
 q(13210),	-- Blizzard Account: - DEM - E - FLAG
-q(13240),	-- Timear Foresees Centrifuge Constructs in your Future!
-q(13241),	-- Timear Foresees Ymirjar Berserkers in your Future!
-q(13243),	-- Timear Foresees Infinite Agents in your Future!
-q(13244),	-- Timear Foresees Titanium Vanguards in your Future!
-q(13245),	-- Proof of Demise: Ingvar the Plunderer
-q(13246),	-- Proof of Demise: Keristrasza
-q(13247),	-- Proof of Demise: Ley-Guardian Eregos
-q(13248),	-- Proof of Demise: King Ymiron
-q(13249),	-- Proof of Demise: The Prophet Tharon'ja
-q(13250),	-- Proof of Demise: Gal'darah
-q(13251),	-- Proof of Demise: Mal'Ganis
-q(13252),	-- Proof of Demise: Sjonnir The Ironshaper
-q(13253),	-- Proof of Demise: Loken
-q(13254),	-- Proof of Demise: Anub'arak
-q(13255),	-- Proof of Demise: Herald Volazj
-q(13256),	-- Proof of Demise: Cyanigosa
 q(13299),	-- ZZOLDWisp Cloak
 q(13303),	-- The Panchurian Candidate
 q(13317),	-- ----
@@ -1809,7 +1786,6 @@ q(43416),	-- Treasure
 q(43439),	--
 q(43482),	--
 q(43544),	--
-q(43579),	-- Looted DK Daily Mount
 q(43584),	-- Battlelord of the Valarjar
 q(43602),	-- Vignette: Randril
 q(43689),	-- Soulfiend Tagerma

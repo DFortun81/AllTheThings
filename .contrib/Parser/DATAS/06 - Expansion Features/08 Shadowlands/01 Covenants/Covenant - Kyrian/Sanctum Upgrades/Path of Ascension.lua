@@ -196,12 +196,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								crit(10),	-- Azaruux
 							}),
 							ach(14502),	-- Pursuing Loyalty
-							ach(14852, {	-- The Hoot of the Issue
-								crit(1),	-- Defeat Alderyn and Myn'ir in a Trial of Loyalty as Mikanikos
-								crit(2),	-- Defeat Splinterbark Nightmare in a Trial of Loyalty as Mikanikos
-							}),
+							ach(14852),	-- The Hoot of the Issue
 							ach(14887, {	-- To the Moon
-								["description"] = "Requires the Path of Ascension building. Some people needed 50+ tries for this achievement, others needed 500+. There is no guaranteed way known. You need to /wave at Athanos while he knocks you off with any ability.",
+								["description"] = "You need to |cffffffff/wave|r at Athanos after he 'waves goodbye to you' while you are falling off the edge.\n\nAllowing 'Massive Charge' to hit, pick up, and drop you over the edge is very consistent for getting him to wave since he doesn't use another ability immediately afterwards.",
 							}),
 						}),
 						prof(ASCENSION_CRAFTING, {
@@ -713,6 +710,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 													crit(1, {	-- Defeat Alderyn and Myn'ir in a Trial of Loyalty as Mikanikos
 														["achievementID"] = 14852,	-- The Hoot of the Issue
 													}),
+													crit(3, ach(14502)),	-- Pursuing Loyalty - Alderyn & Myn'ir
 													i(184407, {	-- Blueprint: Steward Mail Pouch
 													--	this quest showed as complete for me before i did it... not sure what's up there.
 														["questID"] = 62970,	-- Blueprint: Steward Mail Pouch
@@ -740,6 +738,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										n(LOYALTY, {
 											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
 											["g"] = {
+												crit(2, ach(14502)),	-- Pursuing Loyalty - Echthra
 												i(184445, {	-- Blueprint: Medallion of Service
 													["questID"] = 62984,	-- Blueprint: Medallion of Service
 												}),
@@ -758,6 +757,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										n(LOYALTY, {
 											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
 											["g"] = {
+												crit(1, ach(14502)),	-- Pursuing Loyalty - Kalisthene
 												i(180495, {	-- Blueprint: Phial of Serenity
 													["questID"] = 60973,	-- Blueprint: Phial of Serenity
 												}),
@@ -773,6 +773,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										n(LOYALTY, {
 											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
 											["g"] = {
+												crit(4, ach(14502)),	-- Pursuing Loyalty - Nuuminuuru
 												BRIGHTSCALE_HATCHLING,	-- (PET!)
 											},
 										}),
@@ -989,6 +990,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										n(LOYALTY, {
 											["description"] = "Requires defeating Than'tiok, Mad Mortimer, and Athanos on 'Courage' difficulty; and unlocking Azaruux.",
 											["g"] = {
+												crit(5, ach(14502)),	-- Pursuing Loyalty - Craven Corinth
 												i(184411, {	-- Blueprint: Gilded Abacus
 													["questID"] = 62971,	-- Blueprint: Gilded Abacus
 												}),
@@ -1009,6 +1011,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 												}),
 											}),
 											n(LOYALTY, {
+												crit(8, ach(14502)),	-- Pursuing Loyalty - Mad Mortimer
 												i(180761),	-- Phalynx of Loyalty (MOUNT!)
 											}),
 										},
@@ -1020,6 +1023,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 												crit(2, {	-- Defeat Splinterbark Nightmare in a Trial of Loyalty as Mikanikos
 													["achievementID"] = 14852,	-- The Hoot of the Issue
 												}),
+												crit(6, ach(14502)),	-- Pursuing Loyalty - Splinterbark Nightmare
 												i(184348, {	-- Blueprint: Ring of Warding
 													["questID"] = 62928,	-- Blueprint: Ring of Warding
 												}),
@@ -1035,6 +1039,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										n(LOYALTY, {
 											["description"] = "Requires unlocking and defeating Azaruux.",
 											["g"] = {
+												crit(7, ach(14502)),	-- Pursuing Loyalty - Thran'tiok
 												i(181238, {	-- Blueprint: Charm of Focus
 													["questID"] = 63000,	-- Blueprint: Charm of Focus
 												}),

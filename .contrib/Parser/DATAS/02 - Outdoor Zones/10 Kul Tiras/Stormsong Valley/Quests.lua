@@ -1711,7 +1711,6 @@ root("HiddenQuestTriggers", m(KUL_TIRAS, {
 			q(54775),	-- Warmode Storm's Rage
 			q(54716),	-- Secret Chest during Stormsong Valley Incursion in Warmode
 			q(54317),	-- BfA Alliance Stormsong "Invasion"
-			--q(53635),	-- Got this either just after collecting Curious Grain Sacks, or after Killing Poacher Zane
 			q(50694),	-- triggers with / alternate way of completing 'A Bloody Mess' (50593)
 		}),
 	}),

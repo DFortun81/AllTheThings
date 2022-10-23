@@ -154,8 +154,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					-- currently have 64692 - 64694 saved, no Tormentors killed today, but 3 for the week
 					-- 177370, Grievous Soul Crusher
 					n(178897, {	-- Algel the Haunter
-						-- ["questID"] = 64107,
-						-- ["isDaily"] = true,
+						["questID"] = 64107,	-- confirmed 2022-10-10
+						["isDaily"] = true,
 						["g"] = {
 							i(186239),	-- Drape of the Phantasm
 							i(186227),	-- Jangling Chain Manacles

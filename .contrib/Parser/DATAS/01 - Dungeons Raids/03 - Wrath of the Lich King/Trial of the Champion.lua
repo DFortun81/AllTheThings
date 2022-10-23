@@ -560,6 +560,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 							i(47215),	-- Tears of the Vanquished (7.3.5 - Used to be only Normal Mode)
 							i(47216),	-- The Black Heart (7.3.5 - Used to be only Normal Mode)
 							-- #endif
+							-- #if BEFORE 4.0.1
+							i(48418),	-- Fragment of the Black Knight's Soul
+							-- #endif
 						},
 					}),
 				},

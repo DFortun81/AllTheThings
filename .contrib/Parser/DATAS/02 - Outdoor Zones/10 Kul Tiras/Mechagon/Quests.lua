@@ -417,14 +417,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["provider"] = { "o", 326027 },	-- Recyclerizer DX-82
 				["cost"] = { { "i", 168946, 1 } },	-- Bundle of Recyclable Parts
 				["isDaily"] = true,
-				["g"] = {
-					i(168264, {	-- Recycling Requisition(Green)
-						["sym"] = {{"fill"}},
-					}),
-					i(168266, {	-- Strange Recycling Requisiton(Epic)
-						["sym"] = {{"fill"}},
-					}),
-				},
+				["sym"] = {{"select","itemID",
+					168264,	-- Recycling Requisition(Green)
+					168266,	-- Strange Recycling Requisiton(Epic)
+				}},
 			}),
 			q(56523, {	-- My Chickens are Not for Eating!
 				["provider"] = { "n", 155254 },	-- Oglethorpe Obnoticus

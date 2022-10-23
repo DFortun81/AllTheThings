@@ -2,12 +2,14 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
+-- One-Time Anniversary Content
 root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	ach(14942),	-- WoW's 17th Anniversary
 	n(MAILBOX, {
 		i(185906, {	-- Anniversary Gift
 			i(185907),	-- Celebration Package
 			i(172013),	-- Celebration Firework
+			i(171177),	-- Invitation from the Timewalkers
 		}),
 	}),
 	n(QUESTS, {
@@ -57,4 +59,8 @@ root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM
 			},
 		}),
 	}),
+})));
+
+-- Yearly Anniversary Content -- TODO verify this after 18th anniversary starts
+root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 })));

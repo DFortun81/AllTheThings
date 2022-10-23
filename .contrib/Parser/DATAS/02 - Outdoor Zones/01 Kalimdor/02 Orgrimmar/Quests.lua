@@ -1076,9 +1076,21 @@ root("Zones", m(KALIMDOR, {
 			}),
 			q(26324, {	-- Where Is My Warfleet?
 				["sourceQuests"] = { 26311 },	-- Unfamiliar Waters
-				["provider"] = { "n", 14720 },	-- High Overlord Saurfang
-				["coord"] = { 48.6, 71.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
+				["qgs"] = {
+					-- #IF AFTER BFA
+					3144,	-- Etrigg
+					-- #ELSE
+					14720,	-- High Overlord Saurfang
+					-- #ENDIF
+				},
+				["coords"] = {
+					-- #IF AFTER BFA
+					{ 49.2, 72.3, ORGRIMMAR },
+					-- #ELSE
+					{ 48.6, 71.0, ORGRIMMAR },
+					-- #ENDIF
+				},
 			}),
 			q(49982, {	-- Witness to the Wound
 				["sourceQuests"] = { 50341 },	-- A Recent Discovery

@@ -573,6 +573,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["sourceQuests"] = {
 						28857,	-- Blasted Lands: The Other Side of the World
 						28673,	-- Hero's Call: Blasted Lands!
+						28867,	-- Nethergarde Needs You!
 					},
 				}),
 				q(36307, {	-- Investigating the Invasion

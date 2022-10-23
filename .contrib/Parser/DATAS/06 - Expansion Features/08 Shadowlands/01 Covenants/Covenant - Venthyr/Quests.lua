@@ -111,7 +111,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(65169, {	-- A Stalwart Ally
 				["sourceQuests"] = { 62920 },	-- A Conduit For Change
 				["provider"] = { "n", 161977 },	-- General Draven
-				["coord"]  = { 46.1, 14.9, SINFALL_REACHES },
+				["coord"] = { 46.1, 14.9, SINFALL_REACHES },
 				["timeline"] = { "added 9.1.5" },
 				["g"] = {
 					follower(1209),	-- General Draven
@@ -380,7 +380,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(65170, {	-- Kindred Spirits
 				["sourceQuests"] = { 62920 },	-- A Conduit For Change
 				["provider"] = { "n", 161979 },	-- Theotar
-				["coord"]  = { 50.5, 18, SINFALL_REACHES },
+				["coord"] = { 50.5, 18, SINFALL_REACHES },
 				["timeline"] = { "added 9.1.5" },
 				["g"] = {
 					follower(1210),	-- Theotar

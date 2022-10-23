@@ -1,4 +1,4 @@
-profession(ENCHANTING, {
+profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 	tier(CLASSIC_TIER, {
 		r(7411, {	-- Enchanting (Apprentice)
 			["collectible"] = false,
@@ -607,40 +607,6 @@ profession(ENCHANTING, {
 		}),
 	}))),
 	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
-		n(DROPS, {
-			q(36308, {	-- Enchanted Highmaul Bracer (A)
-				["provider"] = { "i", 115281 },	-- Enchanted Highmaul Bracer
-				["description"] = "This item can drop from any Draenor mob.",
-				["timeline"] = { "added 6.0.1.18522" },
-				["requireSkill"] = ENCHANTING,
-				["races"] = ALLIANCE_ONLY,
-				["maps"] = {
-					FROSTFIRE_RIDGE,
-					GORGROND,
-					DRAENOR_NAGRAND,
-					DRAENOR_SHADOWMOON_VALLEY,
-					SPIRES_OF_ARAK,
-					TALADOR,
-				},
-				["lvl"] = 90,
-			}),
-			q(36255, {	-- Enchanted Highmaul Bracer (H)
-				["provider"] = { "i", 115008 },	-- Enchanted Highmaul Bracer
-				["description"] = "This item can drop from any Draenor mob.",
-				["timeline"] = { "added 6.0.1.18522" },
-				["requireSkill"] = ENCHANTING,
-				["races"] = HORDE_ONLY,
-				["maps"] = {
-					FROSTFIRE_RIDGE,
-					GORGROND,
-					DRAENOR_NAGRAND,
-					DRAENOR_SHADOWMOON_VALLEY,
-					SPIRES_OF_ARAK,
-					TALADOR,
-				},
-				["lvl"] = 90,
-			}),
-		}),
 		r(158716, {	-- Enchanting (Draenor Master)
 			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
 			["collectible"] = false,
@@ -857,234 +823,6 @@ profession(ENCHANTING, {
 			r(191075),	-- Enchanted Torch
 			r(191078),	-- Leylight Brazier
 		}),
-		n(QUESTS, {
-			q(39874, {	-- Some Enchanted Evening
-				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
-				["coord"] = { 38.6, 40.8, LEGION_DALARAN },
-				["g"] = {
-					r(195096, {	-- Enchanting (Legion Master)
-						["timeline"]={ "added 7.0.3", "removed 8.0.1" },
-						["collectible"] = false,
-					}),
-					r(264471, {["timeline"]={"added 8.0.1"}}),	-- Legion Enchanting
-					r(190869),	-- Word of Versatility [Rank 1]
-				},
-			}),
-			q(39875, {	-- The Last Few
-				["sourceQuests"] = { 39874 },	-- Some Enchanted Evening
-				["provider"] = { "n", 93530 },	-- Ildine Sorrowspear
-				["coord"] = { 38.6, 41.6, LEGION_DALARAN },
-				["cost"] = { { "i", 128540, 2 } },	-- 2x Enchant Ring - Word of Versatility
-			}),
-			q(39876, {	-- Helping the Hunters
-				["sourceQuests"] = { 39875 },	-- The Last Few
-				["provider"] = { "n", 93530 },	-- Ildine Sorrowspear
-				["coord"] = { 38.6, 41.6, LEGION_DALARAN },
-			}),
-			q(39877, {	-- In the Loop
-				["sourceQuests"] = { 39875 },	-- Helping the Hunters
-				["provider"] = { "n", 90317 },	-- Jace Darkweaver <Illidari>
-				["coord"] = { 43.2, 43.6, AZSUNA },
-			}),
-			q(40048, {	-- Strings of the Puppet Masters
-				["sourceQuests"] = { 39876 },	-- Helping the Hunters
-				["provider"] = { "n", 90317 },	-- Jace Darkweaver <Illidari>
-				["coord"] = { 43.2, 43.6, AZSUNA },
-			}),
-			q(39905, {	-- Ringing True
-				["sourceQuests"] = {
-					39877,	-- In the Loop
-					40048,	-- Strings of the Puppet Masters
-				},
-				["provider"] = { "n", 90317 },	-- Jace Darkweaver
-				["coord"] = { 43.2, 43.6, AZSUNA },
-				["g"] = {
-					r(190866),	-- Word of Critical Strike [Rank 1]
-					r(190867),	-- Word of Haste [Rank 1]
-					r(190868),	-- Word of Mastery [Rank 1]
-				},
-			}),
-			q(39878, {	-- Thunder Struck
-				["sourceQuests"] = { 39905 },	-- Ringing True
-				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
-				["coord"] = { 38.6, 40.8, LEGION_DALARAN },
-			}),
-			q(39879, {	-- Strong Like the Earth
-				["sourceQuests"] = { 39878 },	-- Thunder Struck
-				["provider"] = { "n", 98017 },	-- Guron Twaintail
-				["coord"] = { 46.6, 60.4, HIGHMOUNTAIN },
-			}),
-			q(39880, {	-- Waste Not
-				["sourceQuests"] = { 39878 },	-- Thunder Struck
-				["provider"] = { "n", 98017 },	-- Guron Twaintail
-				["coord"] = { 46.6, 60.4, HIGHMOUNTAIN },
-				["g"] = {
-					i(137195),	-- Highmountain Armor
-				},
-			}),
-			q(39883, {	-- Cloaked in Tradition
-				["sourceQuests"] = {
-					39879,	-- Strong Like the Earth
-					39880,	-- Waste Not
-				},
-				["provider"] = { "n", 98017 },	-- Guron Twaintail
-				["coord"] = { 46.6, 60.4, HIGHMOUNTAIN },
-				["g"] = {
-					r(190875),	-- Word of Agility [Rank 1]
-					r(190876),	-- Word of Intellect [Rank 1]
-					r(190874),	-- Word of Strength [Rank 1]
-				},
-			}),
-			q(39881, {	-- Fey Enchantments
-				["sourceQuests"] = { 39883 },	-- Cloaked in Tradition
-				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
-				["coord"] = { 38.6, 40.8, LEGION_DALARAN },
-			}),
-			q(39884, {	-- No Longer Worthy
-				["sourceQuests"] = { 39881 },	-- Fey Enchantments
-				["provider"] = { "n", 98156 },	-- Nalamya
-				["coord"] = { 54.4, 57.6, VALSHARAH },
-			}),
-			q(39889, {	-- Led Astray
-				["sourceQuests"] = { 39881 },	-- Fey Enchantments
-				["provider"] = { "n", 98156 },	-- Nalamya
-				["coord"] = { 54.4, 57.6, VALSHARAH },
-			}),
-			q(39882, {	-- Darkheart Thicket: The Glamour Has Faded
-				["sourceQuests"] = {
-					39884,	-- No Longer Worthy
-					39889,	-- Led Astray
-				},
-				["provider"] = { "n", 98156 },	-- Nalamya
-				["maps"] = { 733, },	-- Darkheart Thicket
-				["coord"] = { 54.4, 57.6, VALSHARAH },
-				["g"] = {
-					r(190954),	-- Boon of the Scavenger
-				},
-			}),
-			q(39903, {	-- An Enchanting Home
-				["sourceQuests"] = { 39883 },	-- Cloaked in Tradition
-				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
-				["coord"] = { 38.6, 40.8, LEGION_DALARAN },
-			}),
-			q(40265, {	-- A Touch of Magic
-				["sourceQuests"] = { 39903 },	-- An Enchanting Home
-				["provider"] = { "n", 98367 },	-- Tigrid the Charmer
-				["coord"] = { 39.4, 42.6, STORMHEIM },
-			}),
-			q(39904, {	-- Halls of Valor: Revenge of the Enchantress
-				["sourceQuests"] = { 40265 },	-- A Touch of Magic
-				["provider"] = { "n", 98367 },	-- Tigrid the Charmer
-				["coord"] = { 39.4, 42.6, STORMHEIM },
-				["maps"] = { 703, 704, 705 },	-- Halls of Valor
-				["g"] = {
-					r(191076),	-- Enchanted Pen
-				},
-			}),
-			q(39891, {	-- Cursed, But Convenient
-				["sourceQuests"] = { 39904 },	-- Halls of Valor: Revenge of the Enchantress
-				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
-				["coord"] = { 38.6, 40.8, LEGION_DALARAN },
-			}),
-			q(40169, {	-- Crossroads Rendezvous
-				["sourceQuests"] = { 39891 },	-- Cursed, But Convenient
-				["provider"] = { "n", 107139 },	-- Enchantress Ilanya
-				["coord"] = { 46.8, 40.8, AZSUNA },
-			}),
-			q(39916, {	-- Turnabout Betrayal
-				["sourceQuests"] = { 40169 },	-- Crossroads Rendezvous
-				["provider"] = { "n", 98675 },	-- Fallen Priestess
-				["coord"] = { 63.8, 30.2, AZSUNA },
-				["g"] = {
-					i(129751),	-- Dust of Foul Lies
-					i(137286),	-- Fel-Crusted Rune
-				},
-			}),
-			q(40130, {	-- Washed Clean
-				["sourceQuests"] = { 39916 },	-- Turnabout Betrayal
-				["provider"] = { "n", 98675 },	-- Fallen Priestess
-				["coord"] = { 63.8, 30.2, AZSUNA },
-			}),
-			q(39918, {	-- The Absent Priestess
-				["sourceQuests"] = { 40130 },	-- Washed Clean
-				["provider"] = { "n", 98698 },	-- Priestess Driana
-				["coord"] = { 36.4, 34.0, AZSUNA },
-				["g"] = {
-					r(228408),	-- Mark of the Ancient Priestess [Rank 1]
-					r(190894),	-- Mark of the Hidden Satyr [Rank 1]
-				},
-			}),
-			q(39910, {	-- The Druid's Debt
-				["sourceQuests"] = { 39891 },	-- Cursed, But Convenient
-				["provider"] = { "n", 98381 },	-- Merrus Dawnwind
-				["coord"] = { 46.8, 40.8, AZSUNA },
-				["g"] = {
-					r(190892),	-- Mark of the Claw [Rank 1]
-					r(228402),	-- Mark of the Heavy Hide [Rank 1]
-				},
-			}),
-			q(39906, {	-- Prepping For Battle
-				["sourceQuests"] = { 39891 },	-- Cursed, But Convenient
-				["provider"] = { "n", 98159 },	-- Alynblaze <The Sentinel>
-				["coord"] = { 46.8, 40.8, AZSUNA },
-				["cost"] = {
-					{ "i", 128545, 1 },	-- 1x Enchant Cloak - Word of Strength
-					{ "i", 128537, 1 },	-- 1x Enchant Ring - Word of Critical Strike
-					{ "i", 128539, 1 },	-- 1x Enchant Ring - Word of Mastery
-				},
-			}),
-			q(39914, {	-- Sentinel's Final Duty
-				["sourceQuests"] = { 39906 },	-- Prepping For Battle
-				["provider"] = { "n", 98159 },	-- Alynblaze
-				["coord"] = { 46.8, 40.8, AZSUNA },
-				["g"] = {
-					r(190893),	-- Mark of the Distant Army [Rank 1]
-					r(228405),	-- Mark of the Trained Soldier [Rank 1]
-				},
-			}),
-			q(39907, {	-- Elven Enchantments
-				["sourceQuests"] = {
-					39918,	-- The Absent Priestess
-					39910,	-- The Druid's Debt
-					39914,	-- Sentinel's Final Duty
-				},
-				["provider"] = { "n", 107139 },	-- Enchantress Ilanya
-				["coord"] = { 46.8, 40.8, AZSUNA },
-			}),
-			q(39920, {	-- On Azure Wings
-				["sourceQuests"] = { 39907 },	-- Elven Enchantments
-				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
-				["coord"] = { 38.6, 40.8, LEGION_DALARAN },
-			}),
-			q(39921, {	-- Neltharion's Lair: Rod of Azure
-				["sourceQuests"] = { 39920 },	-- On Azure Wings
-				["provider"] = { "n", 99420 },	-- Kharmeera <Enchantress>
-				["maps"] = {
-					731,	-- Neltharion's Lair
-					324,	-- The Stonecore
-					477, 478, 479,	-- Scholomance
-				},
-				["coord"] = { 47.2, 26.4, AZSUNA },
-			}),
-			q(39923, {	-- Down to the Core
-				["sourceQuests"] = { 39921 },	-- Neltharion's Lair: Rod of Azure
-				["provider"] = { "n", 99420 },	-- Kharmeera
-				["coord"] = { 47.2, 26.4, AZSUNA },
-				["g"] = {
-					r(190870),	-- Binding of Critical Strike [Rank 1]
-					r(190871),	-- Binding of Haste [Rank 1]
-					r(190872),	-- Binding of Mastery [Rank 1]
-					r(190873),	-- Binding of Versatility [Rank 1]
-				},
-			}),
-			q(42971, {	-- Controlling the Elements
-				["provider"] = { "n", 42465 },	-- Therazane <The Stonemother>
-				["coord"] = { 56.4, 12.2, DEEPHOLM },
-				["g"] = {
-					r(217649),	-- Tome of Illusions: Elemental Lords
-				},
-			}),
-		})
 	}))),
 	applyclassicphase(BFA_PHASE_ONE, tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {
 		r(264473, {	-- Kul Tiran Enchanting
@@ -1259,101 +997,8 @@ profession(ENCHANTING, {
 		cat(1249, sharedDataSelf({ ["timeline"] = { "added 8.1.5" } }, {	-- Tools of the Trade
 			r(287494),	-- Iwen's Enchanting Rod
 		})),
-		n(QUESTS, {
-			q(54473, {	-- Enchanted Formulae (A)
-				["provider"] = { "n", 136041 },	-- Emily Fairweather <Enchanting Trainer>
-				["coord"] = { 74.1, 11.4, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 8.1.0", "removed 9.0.1" },	-- Might no be correct removed patch
-			}),
-			q(54474, {	-- Enchanted Formulae (H)
-				["provider"] = { "n", 122702 },	-- Enchantress Quinni <Enchanting Trainer>
-				["coord"] = { 47.0, 35.8, DAZARALOR },
-				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 8.1.0", "removed 9.0.1" },	-- Might no be correct removed patch
-			}),
-			q(54005, {	-- What the Drust Knew (A)
-				["description"] = "This quest chain requires 150 in Kul Tiran Enchanting.",
-				["provider"] = { "n", 136041 },	-- Emily Fairweather
-				["coord"] = { 74.2, 11.3, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 8.1.5" },
-			}),
-			q(54161, {	-- What the Drust Knew (H)
-				["description"] = "This quest chain requires 150 in Zandalari Enchanting.",
-				["provider"] = { "n", 122702 },	-- Enchantress Quinni
-				["coord"] = { 47.1, 35.7, DAZARALOR },
-				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 8.1.5" },
-			}),
-			q(53993, {	-- A Voice on the Wind (A)
-				["sourceQuest"] = 54005,	-- What the Drust Knew (A)
-				["provider"] = { "n", 147014 },	-- Ancient Drust Relic Dust
-				["coord"] = { 74.2, 11.4, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 8.1.5" },
-			}),
-			q(55635, {	-- A Voice on the Wind (H)
-				["sourceQuest"] = 54161,	-- What the Drust Knew (H)
-				["provider"] = { "n", 147014 },	-- Ancient Drust Relic Dust
-				["coord"] = { 47.1, 35.3, DAZARALOR },
-				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 8.1.5" },
-			}),
-			q(53996, {	-- Pick Up Sticks
-				["sourceQuests"] = {
-					53993,	-- A Voice on the Wind (A)
-					55635,	-- A Voice on the Wind (H)
-				},
-				["provider"] = { "n", 146053 },	-- Sef Iwen
-				["coord"] = { 53.4, 40.1, DRUSTVAR },
-				["timeline"] = { "added 8.1.5" },
-			}),
-			q(53997, {	-- The Sixth Sense
-				["sourceQuest"] = 53996,	-- Pick Up Sticks
-				["provider"] = { "n", 146053 },	-- Sef Iwen
-				["coord"] = { 53.4, 40.1, DRUSTVAR },
-				["timeline"] = { "added 8.1.5" },
-			}),
-			q(53998, {	-- Exhumed
-				["sourceQuest"] = 53997,	-- The Sixth Sense
-				["provider"] = { "n", 146091 },	-- Sef Iwen
-				["coord"] = { 55.3, 46.1, DRUSTVAR },
-				["timeline"] = { "added 8.1.5" },
-			}),
-			q(53999, {	-- The Threads That Bind
-				["sourceQuest"] = 53998,	-- Exhumed
-				["provider"] = { "n", 146091 },	-- Sef Iwen
-				["coord"] = { 55.3, 46.1, DRUSTVAR },
-				["timeline"] = { "added 8.1.5" },
-			}),
-			q(54000, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, {	-- The Beat Goes On
-				["provider"] = { "n", 146093 },	-- Sef Iwen
-				["coord"] = { 63.0, 59.4, DRUSTVAR },
-				["sourceQuest"] = 53999,	-- Exhumed
-				["g"] = {
-					r(284415, {	-- Enchant Runic Power Core
-						["u"] = 15,	-- Training
-					}),
-				},
-			})),
-			q(54001, {	-- We're Going In
-				["sourceQuest"] = 54000,	-- The Beat Goes On
-				["provider"] = { "n", 146094 },	-- Sef Iwen
-				["coord"] = { 58.9, 62.9, DRUSTVAR },
-				["timeline"] = { "added 8.1.5" },
-			}),
-			q(54002, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, {	-- Putting it All Togethereeee
-				["sourceQuest"] = 54001,	-- We're Going In
-				["provider"] = { "n", 152255 },	-- Sef Iwen
-				["coord"] = { 57.8, 80.8, DRUSTVAR },
-				["g"] = {
-					r(287494),	-- Iwen's Enchanting Rod
-				},
-			})),
-		}),
 	}))),
-	applyclassicphase(SL_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
 		r(309832),	-- Shadowlands Enchanting
 		cat(1365, {	-- Boot Enchantments
 			r(309532),	-- Agile Soulwalker
@@ -1430,7 +1075,7 @@ profession(ENCHANTING, {
 			r(309623),	-- Sinful Revelation
 		}),
 	}))),
-});
+}));
 
 -- Enchanting Item Database
 local itemDB = root("ItemDB", {});
@@ -1443,7 +1088,7 @@ local function cacheRecipes(g)
 		if g.g then cacheRecipes(g.g); end
 		local spellID = g.spellID or g.recipeID;
 		if spellID then
-			recipeCache[spellID] = true; 
+			recipeCache[spellID] = true;
 			if g.u then recipeCacheU[spellID] = g.u; end
 		end
 		for i,o in ipairs(g) do
@@ -1477,7 +1122,7 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 		o.name = name;
 	end
 	itemDB[itemID] = phase and applyclassicphase(phase, o) or o;
-	
+
 	-- Ensure that this recipe's spellID exists in the profession database.
 	if recipeCache and type(timeline) ~= "boolean" then
 		if recipeCache[o.spellID] then

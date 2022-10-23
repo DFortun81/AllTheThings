@@ -249,6 +249,85 @@ root("Zones", {
 					}),
 				})),
 				-- #endif
+				-- #if ANYCLASSIC
+				n(EXPLORATION, {
+					exploration(4062),	-- Apothecary Camp
+					exploration(3996),	-- Baelgun's Excavation Site
+					exploration(4001),	-- Baleheim
+					exploration(4403),	-- Balejar Watch
+					exploration(4055),	-- Caldemere Lake
+					exploration(4018),	-- Camp Winterhoof
+					exploration(4059),	-- Cauldros Isle
+					exploration(4070),	-- Chillmere Coast
+					exploration(3980),	-- Daggercap Bay
+					exploration(4050),	-- Derelict Strand
+					exploration(4048),	-- Ember Clutch
+					exploration(4063),	-- Ember Spear Tower
+					exploration(3997),	-- Explorers' League Outpost
+					exploration(4003),	-- Fort Wildervar
+					exploration(4066),	-- Frostblade Peak
+					exploration(3989),	-- Garvan's Reef
+					exploration(4261),	-- Ghostblade Post
+					exploration(4061),	-- Giants' Run
+					exploration(4006),	-- Gjalerbron
+					exploration(4065),	-- Gjalerhorn
+					exploration(3994),	-- Halgrind
+					exploration(4005),	-- Ivald's Ruin
+					exploration(3988),	-- Kamagua
+					exploration(4058),	-- Lake Cauldros
+					exploration(4263),	-- Lydell's Ambush
+					exploration(3991),	-- New Agamand
+					exploration(3984),	-- Nifflevar
+					exploration(4054),	-- Rivenwood
+					exploration(3990),	-- Scalawag Point
+					exploration(4057),	-- Shield Hill
+					exploration(4002),	-- Skorn
+					exploration(4077),	-- Sorlof's Strand
+					exploration(3999),	-- Steel Gate
+					exploration(3992),	-- The Ancient Lift
+					exploration(4051),	-- The Frozen Glade
+					exploration(3987),	-- The Isle of Spears
+					exploration(4053),	-- The Twisted Glade
+					exploration(4052),	-- The Vibrant Glade
+					exploration(4260),	-- Thorvald's Camp
+					exploration(3983),	-- Utgarde Keep
+					exploration(3981),	-- Valgarde
+					exploration(4000),	-- Vengeance Landing
+					exploration(4402),	-- Vengeance Lift
+					exploration(3998),	-- Westguard Keep
+					exploration(4071),	-- Whisper Gulch
+					exploration(4479),	-- Winter's Breath Lake
+					exploration(3982),	-- Wyrmskull Village
+				}),
+				-- #endif
+				prof(FISHING, {
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5279,	-- Deep Sea Monsterbelly School
+						["requireSkill"] = FISHING,
+					}),
+					o(192049, {	-- Fangtooth Herring School
+						["model"] = 219405,
+						["groups"] = {
+							ach(1517, {	-- Northrend Angler
+								["criteriaID"] = 5281,	-- Fangtooth Herring School
+								["requireSkill"] = FISHING,
+							}),
+							i(44703, {	-- Dark Herring
+								-- #if AFTER TRANSMOG
+								["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+								-- #endif
+							}),
+						},
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5284,	-- Imperial Manta Ray School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["criteriaID"] = 5285,	-- Moonglow Cuttlefish School
+						["requireSkill"] = FISHING,
+					}),
+				}),
 				n(FLIGHT_PATHS, {
 					fp(248, {	-- Apothecary Camp
 						["cr"] = 26844,	-- Lilleth Radescu <Bat Handler>
@@ -290,18 +369,10 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
+				
 				n(PROFESSIONS, {
 					prof(FISHING, {
-						o(192049, {	-- Fangtooth Herring School
-							["model"] = 219405,
-							["groups"] = {
-								i(44703, {	-- Dark Herring
-									-- #if AFTER TRANSMOG
-									["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-									-- #endif
-								}),
-							},
-						}),
+						
 					}),
 				}),
 				n(QUESTS, {

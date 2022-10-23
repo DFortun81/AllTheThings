@@ -2305,7 +2305,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
 						}),
 						i(6148, {	-- Web-covered Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 8.0.1" },
 						}),
 					},
 				}),

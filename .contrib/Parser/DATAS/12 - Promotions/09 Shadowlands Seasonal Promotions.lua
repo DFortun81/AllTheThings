@@ -4,7 +4,7 @@
 root("Promotions", {
 	n(-580, {	-- Shadowlands Seasonal Promotions
 		["timeline"] = { "added 9.0.5" },
-		["description"] = "These promotions happened during the time Shadowlands was the most recent content between 23 November 2020 & 28th November 2022.\n\nThey are listed in the order of their first appearance.",
+		["description"] = "These promotions happened during the time Shadowlands was the most recent content between 13th October 2020 & 25th October 2022.\n\nThey are listed in the order of their first appearance.",
 		["groups"] = {
 			-- SEASON 1
 			mount(348162, {	-- Wandering Ancient (MOUNT!)
@@ -19,14 +19,14 @@ root("Promotions", {
 			-- SEASON 3
 			i(187957, {		-- Encrypted Banner of the Opportune (TOY!)
 				["description"] = "Mythic Dungeon International: SL Season 3\n\nThe Mythic Dungeon International (MDI) returns with its global competitions for its 6th year, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Encrypted Banner of the Opportune to use in-game!\nSign-ups close 28 March 2022 and The Proving Grounds are on 30 March - 5 April (US).",
-				["timeline"] = { 
-					"added 9.2.0", 
+				["timeline"] = {
+					"added 9.2.0",
 					"removed 9.2.0.43114", -- 8th April 2022, 1 day after the event ended.
-				},	
+				},
 			}),
 			i(95474, {	-- Jewel of the Firelord
 				["description"] = "Obtained through Prime Gaming from June 29th 2022 till July 26th 2022.",
-				["timeline"] = { 
+				["timeline"] = {
 					"added 9.2.5",
 					"removed 9.2.7.44908",	-- 2nd August 2022, 6 days after the event ended
 				},
@@ -37,7 +37,7 @@ root("Promotions", {
 				["g"] = {
 					title(459),	-- Fearless Spectator <Name>
 				},
-				["timeline"] = { 
+				["timeline"] = {
 					"added 9.2.5",
 					"removed 9.2.7.44908",	-- 2nd August 2022, 7 days after the event ended
 				},
@@ -49,15 +49,16 @@ root("Promotions", {
 			}),
 			i(187958, {		-- Shrouded Banner of the Opportune (TOY!)
 				["description"] = "Break the Meta: SL Season 4\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 4 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFRaider.io/break-the-meta-2022|r and complete 2 or more eligible timed keystones at level 15 or higher during BTM S4, and the Shrouded Banner of the Opportune will be automatically added to your collection in-game within 30 days of the conclusion of the event.\n\nThe Event starts on October 4th for US, October 5th for EU & October 6th for KR/TW & lasts for the entire reset of your region.\n\nThis was previously available through The Great Push: SL Season 4.",
-				["timeline"] = { 
-					"added 9.2.7", 
+				["timeline"] = {
+					"added 9.2.7",
 					"removed 9.2.7.45114",	-- 16th August 2022, 1 day after the event ended.
 					"added 9.2.7.45745", 	-- 23rd September 2022, 11 days before the event started.
-				},	
+				},
+				["u"] = REMOVED_FROM_GAME, -- Removed again on October 12th 2022
 			}),
 			i(95475, {	-- Crown of the Eternal Winter
 				["description"] = "Obtained through Prime Gaming from August 24th 2022 till September 20th 2022.",
-				["timeline"] = { 
+				["timeline"] = {
 					"added 9.2.5",
 					"removed 9.2.7.45114",	-- 23 September 2022, 3 days after the event ended.
 				},

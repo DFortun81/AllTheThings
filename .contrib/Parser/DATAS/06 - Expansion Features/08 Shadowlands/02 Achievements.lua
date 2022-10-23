@@ -7,6 +7,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 		ach(15654, bubbleDownSelf({	-- Back from the Beyond
 			["timeline"] = { "added 9.2.5", REMOVED_DFREL },
 			["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
+		},{
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				14715,	-- Castle Nathria
@@ -26,8 +27,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 				15324,	-- Tower Ranger
 				15648,	-- Walking in Maw-mphis
 			}},
-		},{
-			title(463),	-- Veilstrider <Name>
+			["groups"] = {
+				title(463),	-- Veilstrider <Name>
+			},
 		})),
 		ach(14763, {	-- Crypt Couture
 			i(183693),	-- Plague Doctor's Mask

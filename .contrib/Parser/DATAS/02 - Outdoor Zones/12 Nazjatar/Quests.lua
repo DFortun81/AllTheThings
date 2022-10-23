@@ -1913,10 +1913,10 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			},
 			["g"] = {
 				ach(13763),	-- Back to the Depths!
-				i(170081, {	-- Abyssal Conch
+				i(170081, {	-- Abyssal Conch (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(170079, {	-- Abyssal Conch
+				i(170079, {	-- Abyssal Conch (H)
 					["races"] = HORDE_ONLY,
 				}),
 			},

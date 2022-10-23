@@ -630,6 +630,13 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							["timeline"] = { "added 7.0.3", "removed 8.0.1" },
 						}),
 					}),
+					o(252395, {	-- Deathcharger Hitching Post
+						["questID"] = 43579,
+						["isDaily"] = true,
+						["g"] = {
+							i(139502),	-- Reins of the Deathcharger
+						},
+					}),
 				}),
 				n(VENDORS, {
 					n(93550, {	-- Quartermaster Ozorg
@@ -740,17 +747,17 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 54.8, 28.9, 648 },
 						["g"] = {
 							i(147539, {	-- Bloodbrood Whelpling (PET!)
-								["sourceQuest"]  =46813,	-- The Lost Glacier
+								["sourceQuest"] = 46813,	-- The Lost Glacier
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								["timeline"] = { "added 7.2.0" },
 							}),
 							i(147540, {	-- Frostbrood Whelpling (PET!)
-								["sourceQuest"]  =46813,	-- The Lost Glacier
+								["sourceQuest"] = 46813,	-- The Lost Glacier
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								["timeline"] = { "added 7.2.0" },
 							}),
 							i(147541, {	-- Vilebrood Whelpling (PET!)
-								["sourceQuest"]  =46813,	-- The Lost Glacier
+								["sourceQuest"] = 46813,	-- The Lost Glacier
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								["timeline"] = { "added 7.2.0" },
 							}),

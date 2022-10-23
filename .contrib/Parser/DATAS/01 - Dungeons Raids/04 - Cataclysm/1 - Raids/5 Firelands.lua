@@ -830,6 +830,7 @@ root("Instances", tier(CATA_TIER, {
 					}),
 					e(198, {	-- Ragnaros
 						["creatureID"] = 52409,
+						["sym"] = {{"select","itemID",175158}},	-- Flames of Fury (Bag of Tricks addition)
 						["g"] = {
 							ach(5803, {	-- Heroic: Ragnaros
 								title(190),	-- Firelord
@@ -839,12 +840,6 @@ root("Instances", tier(CATA_TIER, {
 							i(71684),	-- Crown of the Fiery Protector
 							i(71670),	-- Crown of the Fiery Vanquisher
 							i(69224),	-- Pureblood Fire Hawk (MOUNT!)
-							i(175158, {	-- Flames of Fury (Bag of Tricks addition)
-								["races"] = { VULPERA },
-								["questID"] = 59029,
-								["timeline"] = { "added 8.3.0.33115" },
-								["ignoreBonus"] = true,
-							}),
 							i(71797),	-- Sho'ravon, Greatstaff of Annihilation
 							i(70723),	-- Sulfuras, the Extinguished Hand
 							i(71615),	-- Ko'gun, Hammer of the Firelord

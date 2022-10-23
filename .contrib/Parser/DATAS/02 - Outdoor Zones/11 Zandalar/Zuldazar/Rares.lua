@@ -185,6 +185,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 			}),
 			n(136413, {	-- Syrawon the Dominus
 				["questID"] = 51080,
+				["isYearly"] = true, -- Resets randomly, might be yearly. -- Gold October 2022
 				["coord"] = { 53.80, 44.84, ZULDAZAR },
 				["g"] = {
 					i(161047),	-- Shadow Wind Leggings

@@ -1476,6 +1476,7 @@ _.Zones =
 					["provider"] = { "n", 80854 },	-- Patrick Messer
 					["coord"] = { 69.4, 21.1, TALADOR },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						34624,	-- Gas Guzzlers (artillery tower)
 						34573,	-- Iridium Recovery (artillery tower)
@@ -1514,6 +1515,7 @@ _.Zones =
 					["provider"] = { "n", 80854 },	-- Patrick Messer
 					["coord"] = { 69.4, 21.1, TALADOR },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						34624,	-- Gas Guzzlers (artillery tower)
 						34573,	-- Iridium Recovery (artillery tower)
@@ -1552,6 +1554,7 @@ _.Zones =
 					["provider"] = { "n", 80854 },	-- Patrick Messer
 					["coord"] = { 69.4, 21.1, TALADOR },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						34624,	-- Gas Guzzlers (artillery tower)
 						34573,	-- Iridium Recovery (artillery tower)

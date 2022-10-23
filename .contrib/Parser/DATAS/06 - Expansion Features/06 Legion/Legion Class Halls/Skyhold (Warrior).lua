@@ -106,11 +106,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					cl(WARRIOR, ARMS, {
 						q(41105, {	-- The Sword of Kings
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								40579,	-- Weapons of Legend
 								43949,	-- More Weapons of Legend
 								44417,	-- One More Legend
-							},	
+							},
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 96469 },	-- Odyn
 							["coord"] = { 58.3, 84.6, SKYHOLD },
@@ -123,7 +123,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					cl(WARRIOR, FURY, {
 						q(40043, {	-- The Hunter of Heroes
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								40579,	-- Weapons of Legend
 								43949,	-- More Weapons of Legend
 								44417,	-- One More Legend
@@ -143,11 +143,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					cl(WARRIOR, PROTECTION, {
 						q(39191, {	-- Legacy of the Icebreaker
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								40579,	-- Weapons of Legend
 								43949,	-- More Weapons of Legend
 								44417,	-- One More Legend
-							},	
+							},
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 96469 },	-- Odyn
 							["coord"] = { 58.3, 84.6, SKYHOLD },
@@ -634,6 +634,9 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					})),
 					i(144437, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Lost Legend of the Valarjar
 						["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior. (any spec)",
+						["crs"] = {
+							115732,	-- Jorvild the Trusted (highest drop chance)
+						},
 						["g"] = {
 							n(-2206, {	-- His Name Is Dragonblood
 								["questID"] = 46229,

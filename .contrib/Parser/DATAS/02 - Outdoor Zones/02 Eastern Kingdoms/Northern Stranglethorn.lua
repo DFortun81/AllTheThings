@@ -1902,6 +1902,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 47.5, 10.2, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						28699,	-- Hero's Call: Northern Stranglethorn!
+					},
 				}),
 				q(588, {	-- The Fate of Yenniku
 					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
@@ -2724,6 +2727,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 			}),
 		},
+	}),
+}));
+
+root(ROOTS.HiddenQuestTriggers, m(EASTERN_KINGDOMS, {
+	m(NORTHERN_STRANGLETHORN, {
+		q(26412),	-- The Mosh'Ogg Bounty triggers with 'The Mosh'Ogg Bounty' (26783)
 	}),
 }));
 -- #endif

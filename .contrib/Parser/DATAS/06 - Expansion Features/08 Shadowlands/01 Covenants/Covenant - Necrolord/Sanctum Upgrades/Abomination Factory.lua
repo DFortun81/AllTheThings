@@ -966,6 +966,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 									}),
 									q(60230, {	-- More the Merrier
+										["sourceQuests"] = { 60041 },	-- Build-A-Bomination
 										["provider"] = { "n", 167150 },	-- Rathan
 										["coord"] = { 55.1, 68.8, MALDRAXXUS },
 									}),
@@ -1169,6 +1170,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 									}),
 									q(61635, {	-- Troubled Souls
+										["sourceQuests"] = { 60230 },	-- More the Merrier
 										["provider"] = { "n", 167150 },	-- Rathan
 										["coord"] = { 55.1, 68.8, MALDRAXXUS },
 									}),
@@ -1208,6 +1210,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										}),
 										q(58411, {
 											["name"] = "Construct Body: Iron Phillip",
+											["sourceQuests"] = { 61638 },	-- Iron Solution
 											["cost"] = {
 												{ "i", 178061, 20 },	-- 20x Malleable Flesh
 												{ "i", 171828, 20 },	-- 20x Laestrite Ore
@@ -1217,6 +1220,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										}),
 										q(58413, {
 											["name"] = "Construct Body: Naxx",
+											["sourceQuests"] = { 61638 },	-- Iron Solution
 											["cost"] = {
 												{ "i", 178061, 20 },	-- 20x Malleable Flesh
 												{ "i", 173202, 12 },	-- 12x Shrouded Cloth
@@ -1258,6 +1262,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 									}),
 									q(61638, {	-- Iron Solution
+										["sourceQuests"] = { 61635 },	-- Troubled Souls
 										["provider"] = { "n", 167150 },	-- Rathan
 										["coord"] = { 55.1, 68.8, MALDRAXXUS },
 									}),
@@ -1309,6 +1314,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 								n(QUESTS, {
 									q(61637, {	-- Unity
+										["sourceQuests"] = { 61638 },	-- Iron Solution
 										["provider"] = { "n", 167150 },	-- Rathan
 										["coord"] = { 55.1, 68.8, MALDRAXXUS },
 										["cost"] = { { "i", 183717, 1 }, },	-- 1x Bindings of Wellbeing

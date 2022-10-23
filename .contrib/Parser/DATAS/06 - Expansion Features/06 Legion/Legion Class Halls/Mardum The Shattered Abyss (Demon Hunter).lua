@@ -7,63 +7,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		cl(DEMONHUNTER, bubbleDownSelf({ ["classes"] = { DEMONHUNTER } }, {
 			["maps"] = { MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER, MARDUM_THE_SHATTERED_ABYSS_LOWER_COMMAND_CENTER },
 			["g"] = {
-				n(ARTIFACTS, {
-					cl(DEMONHUNTER, HAVOC, {
-						i(141409, {	-- Candrael's Charm
-							["description"] = "Find this item on mobs in Suramar.",
-							["maps"] = { SURAMAR },
-						}),
-						n(113935, {	-- Candrael Twinshadow
-							["description"] = "They will fling you up in the air to flying demon Downfall.",
-							["coord"] = { 28.2, 70.2, SURAMAR },
-							["cost"] = {{ "i", 141409, 1}},	-- 1xCandrael's Charm
-							["g"] = {
-								n(111110, {	-- Downfall
-									["description"] = "If you are near him his winds will keep you aloft while you fight him.\nHe will occassionaly knock you back, make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",
-									["g"] = {
-										i(139549, {	-- Guise of the Deathwalker
-											artifact(982),	-- Twinblades of the Deceiver [Main Hand]
-											artifact(982),	-- Twinblades of the Deceiver [Off Hand]
-										}),
-									},
-								}),
-							},
-						}),
-					}),
-					cl(DEMONHUNTER, VENGEANCE, {
-						gt(419, {	-- Twisting Nether
-							["questID"] = 44707,
-							["crs"] = {
-								112385,	-- Argothel
-								112380,	-- Balzorok
-								112378,	-- Dal'grozz
-								112397,	-- Dargrol
-								112376,	-- Dro'zek
-								112377,	-- Erdu'un
-								112374,	-- Firecaller Rok'duun
-								112399,	-- Gelgothar
-								112381,	-- Gelthrak
-								112396,	-- Gloth
-								112395,	-- Gurgstok
-								112391,	-- Idra'zuul
-								112384,	-- Ko'razz
-								112394,	-- Kur'zok
-								112398,	-- Maglothar
-								112387,	-- Mordrethal
-								112389,	-- Ra'thuzek
-								112379,	-- Rek'zelok
-								112388,	-- Thel'draz
-								112375,	-- Zaldrok
-							},
-							["g"] = {
-								i(139550, {	-- Bulwark of the Iron Warden
-									artifact(571),	-- Aldrachi Warblades [Main Hand]
-									artifact(571),	-- Aldrachi Warblades [Off Hand]
-								}),
-							},
-						}),
-					}),
-				}),
 				n(QUESTS, {
 					q(39047, {	-- Call of the Illidari (Altruis)
 						["maps"] = { LEGION_DALARAN },
@@ -888,6 +831,28 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 				}),
 				n(SPECIAL, {
+					cl(DEMONHUNTER, HAVOC, {
+						i(141409, {	-- Candrael's Charm
+							["description"] = "Find this item on mobs in Suramar.",
+							["maps"] = { SURAMAR },
+						}),
+						n(113935, {	-- Candrael Twinshadow
+							["description"] = "They will fling you up in the air to flying demon Downfall.",
+							["coord"] = { 28.2, 70.2, SURAMAR },
+							["cost"] = {{ "i", 141409, 1}},	-- 1xCandrael's Charm
+							["g"] = {
+								n(111110, {	-- Downfall
+									["description"] = "If you are near him his winds will keep you aloft while you fight him.\nHe will occassionaly knock you back, make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",
+									["g"] = {
+										i(139549, {	-- Guise of the Deathwalker
+											artifact(982),	-- Twinblades of the Deceiver [Main Hand]
+											artifact(982),	-- Twinblades of the Deceiver [Off Hand]
+										}),
+									},
+								}),
+							},
+						}),
+					}),
 					gt(419, {	-- Twisting Nether
 						["questID"] = 44707,
 						["crs"] = {
@@ -913,6 +878,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							112375,	-- Zaldrok
 						},
 						["g"] = {
+							i(139550, {	-- Bulwark of the Iron Warden
+								artifact(571),	-- Aldrachi Warblades [Main Hand]
+								artifact(571),	-- Aldrachi Warblades [Off Hand]
+							}),
 							i(136900),	-- Hateful Eye (PET!)
 							i(141959),	-- Soul Flame of Alacrity
 							i(141962),	-- Soul Flame of Castigation

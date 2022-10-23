@@ -352,6 +352,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(122237, {	-- Music Roll: Mountains of Thunder
 								["timeline"] = { "added 6.1.0.19480" },
 							}),
+							-- #if BEFORE 4.0.1
+							i(43724),	-- Celestial Ruby Ring
+							-- #endif
 						},
 					}),
 				},

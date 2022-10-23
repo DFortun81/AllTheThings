@@ -199,6 +199,7 @@ _.Instances = { tier(CATA_TIER, {
 					}),
 					e(167, {	-- Cho'gall
 						["creatureID"] = 43324,
+						["sym"] = {{"select","itemID",175159}},	-- Sinister Shadows (Bag of Tricks addition)
 						["groups"] = {
 							ach(5120),	-- Heroic: Cho'gall
 							ach(5312),	-- The Abyss Will Gaze Back Into You
@@ -206,12 +207,6 @@ _.Instances = { tier(CATA_TIER, {
 							i(65087),	-- Shoulders of the Forlorn Protector
 							i(65089),	-- Shoulders of the Forlorn Vanquisher
 							i(152972),	-- Twilight Summoning Portal (PET!)
-							i(175159, {	-- Sinister Shadows (Bag of Tricks addition)
-								["races"] = { VULPERA },
-								["questID"] = 59032,
-								["timeline"] = { "added 8.3.0.33115" },
-								["ignoreBonus"] = true,
-							}),
 							i(65145),	-- Shalug'doom, the Axe of Unmaking
 							i(65090),	-- Twilight's Hammer
 							i(68600),	-- Uhn'agh Fash, the Darkest Betrayal

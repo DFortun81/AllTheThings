@@ -5,24 +5,26 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(755, {	-- The Obsidian Sanctum
 		["mapID"] = THE_OBSIDIAN_SANCTUM,
 		["coord"] = { 60.0, 56.7, DRAGONBLIGHT },
+		-- #if AFTER CATA
 		["sharedLockout"] = 1,
+		-- #endif
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["groups"] = {
 			d(3, {	-- 10-Player
 				n(ACHIEVEMENTS, {
 					ach(624, {	-- Less Is More [10 player]
-						crit(1, {	-- Vesperon
-							["provider"] = { "n", 30449 },	-- Vesperon
+						crit(522, {	-- Sartharion
+							["provider"] = { "n", 28860 },	-- Sartharion
 						}),
-						crit(2, {	-- Tenebron
-							["provider"] = { "n", 30452 },	-- Tenebron
-						}),
-						crit(3, {	-- Shadron
+						crit(7191, {	-- Shadron
 							["provider"] = { "n", 30451 },	-- Shadron
 						}),
-						crit(4, {	-- Sartharion
-							["provider"] = { "n", 28860 },	-- Sartharion
+						crit(7190, {	-- Tenebron
+							["provider"] = { "n", 30452 },	-- Tenebron
+						}),
+						crit(7189, {	-- Vesperon
+							["provider"] = { "n", 30449 },	-- Vesperon
 						}),
 					}),
 				}),
@@ -55,7 +57,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							title(107),	-- of the Nightfall
 							i(43986)	-- Black Drake (MOUNT!)
 						}),
-						crit(1, {	-- Sartharion (10 or 25 player) slain
+						crit(5889, {	-- Sartharion (10 or 25 player) slain
 							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 						}),
 						i(40613),	-- Gloves of the Lost Conqueror		//** Confirmed Drop 4/19/19 [1 Drake up]
@@ -76,17 +78,17 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			d(4, {	-- 25-Player
 				n(ACHIEVEMENTS, {
 					ach(1877, {	-- Less Is More [25 player]
-						crit(1, {	-- Vesperon
-							["provider"] = { "n", 30449 },	-- Vesperon
+						crit(7186, {	-- Sartharion
+							["provider"] = { "n", 28860 },	-- Sartharion
 						}),
-						crit(2, {	-- Tenebron
-							["provider"] = { "n", 30452 },	-- Tenebron
-						}),
-						crit(3, {	-- Shadron
+						crit(7187, {	-- Shadron
 							["provider"] = { "n", 30451 },	-- Shadron
 						}),
-						crit(4, {	-- Sartharion
-							["provider"] = { "n", 28860 },	-- Sartharion
+						crit(7188, {	-- Tenebron
+							["provider"] = { "n", 30452 },	-- Tenebron
+						}),
+						crit(7185, {	-- Vesperon
+							["provider"] = { "n", 30449 },	-- Vesperon
 						}),
 					}),
 				}),
@@ -119,7 +121,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							title(89),	-- Twilight Vanquisher
 							i(43954)	-- Twilight Drake (MOUNT!)
 						}),
-						crit(1, {	-- Sartharion (10 or 25 player) slain
+						crit(5889, {	-- Sartharion (10 or 25 player) slain
 							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 						}),
 						i(40628),	-- Gauntlets of the Lost Conqueror		//** Confirmed Drop 4/19/19 [3 Drakes up]

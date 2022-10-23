@@ -38,9 +38,15 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 			q(51117),	-- Bajiani the Stick
 			q(54272, {	-- Battle Bots (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
+				["sym"] = {{"select","objectID",
+					311903,	-- Loose Parts (A)
+				}},
 			}),
 			q(54273, {	-- Battle Bots (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
+				["sym"] = {{"select","objectID",
+					311902,	-- Loose Parts (H)
+				}},
 			}),
 			q(51641),	-- Beachhead
 			q(54609, {	-- Beastlord Drakara (Faction Assault WQ)

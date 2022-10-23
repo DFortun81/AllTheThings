@@ -22,31 +22,7 @@ _.Zones =
 						["description"] = "The coordinates provided will take you to a small, door-sized cave entrance. It's hidden in some mist and, depending on your camera angle, can be difficult to see.",
 						["questID"] = 46949,
 						["coord"] = { 32.9, 43.2, HELHEIM },
-						["g"] = {
-							i(144437, {	-- Lost Legend of the Valarjar
-								["classes"] = { WARRIOR },
-								["g"] = {
-									q(46229, {	-- Valarjar Lore Unlock 1
-										["description"] = "His Name Is Dragonblood",
-									}),
-									q(46230, {	-- Valarjar Lore Unlock 2
-										["description"] = "The Last Words of Asgrim the Dreadkiller",
-									}),
-									q(46231, {	-- Valarjar Lore Unlock 3
-										["description"] = "A Shieldmaiden's Creed",
-									}),
-									q(46232, {	-- Valarjar Lore Unlock 4
-										["description"] = "The Prophecy of Rythas the Oracle",
-									}),
-									q(46233, {	-- Valarjar Lore Unlock 5
-										["description"] = "The Lessons of the Blackfist",
-									}),
-									q(46234, {	-- Valarjar Lore Unlock 6
-										["description"] = "Volund's Folly",
-									}),
-								}
-							}),
-						}
+						["sym"] = {{"select","itemID",144437}},	-- Lost Legend of the Valarjar (highest drop chance NPC)
 					}),
 					n(97630,  {	-- Soulthirster
 						["questID"] = 39870,
