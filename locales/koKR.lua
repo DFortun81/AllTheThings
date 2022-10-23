@@ -2222,6 +2222,7 @@ for key,value in pairs({
 	[252282] = "반짝거리는 열쇠 꾸러미",	-- Sparkling Set of Keys
 	[252284] = "점착 폭탄 더미",	-- Pile of Sticky Bombs
 	[252289] = "사라지는 가루",	-- Vanishing Powder
+	[252395] = "죽음의 군마 말뚝대",	-- Deathcharger Hitching Post
 	[252412] = "|cFFFFFFFFStep 2:|r 흙무더기",	-- |cFFFFFFFFStep 2:|r Mound of Dirt
 	[252432] = "반짝이는 고대 마나 응집체",	-- Shimmering Ancient Mana Cluster
 	[252434] = "|cFFFFFFFFStep 12:|r 굶주린 보주 X",	-- |cFFFFFFFFStep 12:|r Hungering Orb X

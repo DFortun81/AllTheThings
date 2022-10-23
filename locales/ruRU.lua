@@ -2212,6 +2212,7 @@ for key,value in pairs({
 	[252282] = "Связка блестящих ключей",	-- Sparkling Set of Keys
 	[252284] = "Куча бомб-липучек",	-- Pile of Sticky Bombs
 	[252289] = "Стирающий порошок",	-- Vanishing Powder
+	[252395] = "Коновязь коня смерти",	-- Deathcharger Hitching Post
 	[252412] = "|cFFFFFFFFШаг 2:|r Куча грязи",	-- |cFFFFFFFFStep 2:|r Mound of Dirt
 	[252432] = "Скопление мерцающих кристаллов древней маны",	-- Shimmering Ancient Mana Cluster
 	[252434] = "|cFFFFFFFFШаг 12:|r Алчущая сфера X",	-- |cFFFFFFFFStep 12:|r Hungering Orb X

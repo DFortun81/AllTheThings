@@ -2225,6 +2225,7 @@ for key, value in pairs({
 	--TODO: [252282] = "Sparkling Set of Keys",	-- Sparkling Set of Keys
 	[252284] = "一堆黏性炸弹",	-- Pile of Sticky Bombs
 	[252289] = "消失粉",	-- Vanishing Powder
+	[252395] = "死亡战马马桩",	-- Deathcharger Hitching Post
 	[252412] = "|cFFFFFFFF第2步:|r 泥土堆",	-- |cFFFFFFFFStep 2:|r Mound of Dirt
 	[252432] = "发光的远古魔力晶簇",	-- Shimmering Ancient Mana Cluster
 	[252434] = "|cFFFFFFFF第12步:|r 饥渴宝珠",	-- |cFFFFFFFFStep 12:|r Hungering Orb X
