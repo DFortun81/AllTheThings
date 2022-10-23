@@ -280,7 +280,7 @@ app.L = {
 			["lvl"] = 48,
 		},
 		{	-- Dragonflight
-			["icon"] = app.asset("Expansion_SL"),	-- TODO: Change asset
+			["icon"] = app.asset("Expansion_DF"),
 			["lore"] = "Dragonflight is the ninth expansion. The dragonflights of Azeroth have returned, called upon to defend their ancestral home, the Dragon Isles. Surging with elemental magic and the life energies of Azeroth, the Isles are awakening once more, and it's up to you to explore their primordial wonder and discover long-forgotten secrets.",
 			["lvl"] = 58,
 		},
