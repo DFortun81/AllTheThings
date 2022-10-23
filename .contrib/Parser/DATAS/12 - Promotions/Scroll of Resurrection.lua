@@ -95,7 +95,7 @@ root("Promotions", n(-573, {	-- Scroll of Resurrection
 		}),
 		cl(HUNTER, {
 			i(73000),	-- Beastsoul Rifle
-			i(73001),	-- Beastsoul Spear
+			un(REMOVED_FROM_GAME, i(73001)),	-- Beastsoul Spear (missing on the vendor implementation)
 			i(72913),	-- Beastsoul Helm
 			i(72915),	-- Beastsoul Spaulders
 			i(73146),	-- Beastsoul Choker
@@ -254,7 +254,7 @@ root("Promotions", n(-573, {	-- Scroll of Resurrection
 		}),
 		cl(ROGUE, {
 			i(72995),	-- Shadowstalking Dagger
-			i(72996),	-- Shadowstalking Shiv
+			un(REMOVED_FROM_GAME, i(72996)),	-- Shadowstalking Shiv (missing on the vendor implementation)
 			i(72997),	-- Shadowstalking Sword
 			i(72667),	-- Shadowstalking Hood
 			i(72669),	-- Shadowstalking Shoulders
