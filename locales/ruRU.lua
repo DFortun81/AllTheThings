@@ -686,12 +686,8 @@ for key,value in pairs({
 		[-131] = "Внутренние земли - активен",						-- The Hinterlands Active
 		[-132] = "Фералас - активен",								-- Feralas Active
 		[-133] = "Сумеречный лес - активирован",					-- Duskwood Activated
-	-- Class Trial
-		[-148] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."(Пробный)",	-- Level 50 (Trial)
 	-- Garrison
 		[-152] = "Гарнизонная кампания",							-- Garrison Campaign
-	-- Class Trial
-		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."(Мгновенное повышение уровня)",	-- Level 50 (Boost)
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = "Внутренние земли - активирован",					-- The Hinterlands Activated
 		[-158] = "Фералас - активирован",							-- Feralas Activated

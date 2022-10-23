@@ -699,12 +699,8 @@ for key,value in pairs({
 		--TODO: [-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),	-- The Hinterlands Active
 		--TODO: [-132] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137),	-- Feralas Active
 		--TODO: [-133] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741),	-- Duskwood Activated
-	-- Class Trial
-		--TODO: [-148] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."(Trial)",	-- Level 50 (Trial)
 	-- Garrison
 		--TODO: [-152] = "Garrison Campaign",						-- Garrison Campaign
-	-- Class Trial
-		--TODO: [-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."(Boost)",	-- Level 50 (Boost)
 	-- Druid Feral Druid Hidden Artifact Appearance
 		--TODO: [-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),	-- The Hinterlands Activated
 		--TODO: [-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),	-- Feralas Activated
@@ -888,7 +884,7 @@ for key,value in pairs({
 			--TODO: [-5204] = "Challenge Appearance",
 			--TODO: [-5205] = "Hidden Appearance",
 		-- Class Sets
-			--TODO: [-5350] = "Class Trial Item Sets",				-- Class Trial
+			--TODO: [-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER.." Item Sets",	-- Class Trial Item Sets
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------

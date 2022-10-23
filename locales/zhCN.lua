@@ -704,8 +704,6 @@ for key,value in pairs({
 		[-88] = "修道院",												-- Cathedral
 	-- Garrisons
 		[-99] = "建筑",												-- Buildings
-	-- Class Trial
-		[-148] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."（试玩）",	-- Level 50 (Trial)
 	-- Garrison
 		[-152] = "要塞战役",											-- Garrison Campaign
 	-- Class Trial

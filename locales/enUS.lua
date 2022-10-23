@@ -1062,7 +1062,7 @@ app.L = {
 		[-146] = select(6, EJ_GetInstanceInfo(556)),										-- The Everbloom
 		[-147] = select(6, EJ_GetInstanceInfo(559)),										-- Upper Blackrock Spire
 	-- Class Trial
-		[-148] = 236566,																	-- Level 50 (Trial)
+		[-148] = 236566,																	-- Level 50 Class Trial
 		[-149] = 1408997,																	-- Level 110
 		[-150] = 2065613,																	-- Level 120
 	-- Garrison
@@ -1070,13 +1070,13 @@ app.L = {
 		[-153] = 1103070,																	-- Work Orders
 	-- Class Trial
 		[-154] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Level 48
-		[-155] = 236566,																	-- Level 50 (Boost)
-		[-156] = 236567,																	-- Level 60 (Boost)
+		[-155] = 236566,																	-- Level 50 Character Boost
+		[-156] = 236567,																	-- Level 60 Character Boost
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Activated
 		[-158] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Activated
 	-- Class Trial
-		[-160] = 236568,																	-- Level 60 (Trial)
+		[-160] = 236568,																	-- Level 60 Class Trial
 	-- Junkboxes
 		[-165] = "Interface\\Icons\\inv_box_01",											-- Junkboxes
 	-- Emissary
@@ -1605,7 +1605,7 @@ app.L = {
 		[-146] = select(2, GetAchievementInfo(9044)),							-- The Everbloom
 		[-147] = select(2, GetAchievementInfo(9042)),							-- Upper Blackrock Spire
 	-- Class Trial
-		[-148] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."(Trial)",		-- Level 50 (Trial)
+		[-148] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." "..CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,	-- Level 50 Class Trial
 		[-149] = string.format(SPELLBOOK_AVAILABLE_AT, 110),					-- Level 110
 		[-150] = string.format(SPELLBOOK_AVAILABLE_AT, 120),					-- Level 120
 	-- Garrison
@@ -1613,15 +1613,15 @@ app.L = {
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
 	-- Class Trial
 		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48
-		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."(Boost)",		-- Level 50 (Boost)
-		[-156] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." ".."(Boost)",		-- Level 60 (Boost)
+		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." "..CHARACTER_UPGRADE_CHARACTER_LIST_LABEL,	-- Level 50 Character Boost
+		[-156] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_UPGRADE_CHARACTER_LIST_LABEL,	-- Level 60 Character Boost
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),		-- The Hinterlands Activated
 		[-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),		-- Feralas Activated
 	-- Class Hall /Artifact
 		[-159] = "Event Roll",													-- Daily Dreamway Event Roll
 	-- Class Trial
-		[-160] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." ".."(Trial)",		-- Level 60 (Trial)
+		[-160] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,	-- Level 60 Class Trial
 	-- Junkboxes
 		[-165] = GetItemSubClassInfo(13,1),										-- Junkboxes
 	-- Emissary
@@ -2006,7 +2006,7 @@ app.L = {
 		[-5204] = "Challenge Appearance",
 		[-5205] = "Hidden Appearance",
 		-- Class Sets
-		[-5350] = "Class Trial Item Sets",										-- Class Trial
+		[-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER.." Item Sets",		-- Class Trial Item Sets
 		-- Note!! We are localizing them here so when we filter the achievement we don't filter the entire section which is bad!
 		[-5353] = select(2,GetAchievementInfo(2398)),							-- 4th Anniversary
 		[-5354] = select(2,GetAchievementInfo(4400)),							-- 5th Anniversary
