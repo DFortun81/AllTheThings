@@ -68,43 +68,47 @@ def get_existing_ids(thing: type[Thing]) -> list[str]:
     return existing_ids
 
 
-def build_profession_dict() -> dict[str, int | dict[str, int]]:
+def build_profession_dict() -> dict[str, int]:
     """Returns dict[profession: str, skillLineID: int]."""
-    profession_dict = dict[str, int | list[str]]()
+    profession_dict = dict[str, int]()
+    exclusion_list = extract_nth_column(Path("Exclusion", "SkillLines.txt"), 0)
     with (
         open(Path("Raw", "SkillLines.txt")) as skillline_file,
-        open(Path("Builds", "SkillLines.txt")) as build_file,
+        open(Path("Builds", "SkillLines.txt")) as builds_file,
     ):
-        exclusion_list = extract_nth_column(Path("Exclusion", "SkillLines.txt"), 0)
-        builds = build_file.readlines()
+        builds = builds_file.readlines()
         for skillline_line in skillline_file:
             if skillline_line not in builds:
                 skillline_id, profession = skillline_line.split(",")
                 skillline_id = re.sub("\\D", "", skillline_id)
                 if skillline_id + "\n" not in exclusion_list:
                     profession_dict[profession.strip()] = int(skillline_id)
-    with open(Path("Exclusion", "SkillLineOther.txt")) as skilllineother_file:
-        other_dict = dict[str, int]()
-        for skillline_line in skilllineother_file:
-            skillline_id, profession = skillline_line.split(",")
-            skillline_id = re.sub("\\D", "", skillline_id)
-            other_dict[profession.strip()] = int(skillline_id)
-            profession_dict["Other"] = other_dict
     return profession_dict
+
+
+def get_other_skilllines() -> list[int]:
+    """Get the "other" skilllines ."""
+    other_skilllines = list[int]()
+    with open(Path("Exclusion", "SkillLineOther.txt")) as skilllineother_file:
+        for line in skilllineother_file:
+            skillline_id = re.sub("\\D", "", line.split(",")[0])
+            other_skilllines.append(int(skillline_id))
+    return other_skilllines
 
 
 def sort_raw_file_recipes() -> None:
     """Sort raw files for recipes."""
     profession_dict = build_profession_dict()
+    other_skilllines = get_other_skilllines()
     raw_path_dict = {
         profession: Path("Raw", "Professions", f"{profession}.txt")
         for profession in profession_dict
     }
     with (
         open(Path("Raw", "Recipes.txt")) as raw_file,
-        open(Path("Builds", "Recipes.txt")) as build_file,
+        open(Path("Builds", "Recipes.txt")) as builds_file,
     ):
-        builds = build_file.readlines()
+        builds = builds_file.readlines()
         raw_lines = raw_file.readlines()
         for profession in profession_dict:
             recipe_list = list[str]()
@@ -114,14 +118,12 @@ def sort_raw_file_recipes() -> None:
                         recipe_list.append(line)
                     else:
                         spell, skill_line = line.split(",")
-                        if profession == "Other":
-                            if int(skill_line.strip()) in list(
-                                profession_dict["Other"].values()
-                            ):
-                                recipe_list.append(spell + "\n")
-                        else:
-                            if int(skill_line) == profession_dict[profession]:
-                                recipe_list.append(spell + "\n")
+                        skill_line_id = int(skill_line.strip())
+                        if (
+                            skill_line_id == profession_dict[profession]
+                            or skill_line_id in other_skilllines
+                        ):
+                            recipe_list.append(spell + "\n")
                 recipe_list = remove_empty_builds(recipe_list)
                 sorted_file.writelines(recipe_list)
 
