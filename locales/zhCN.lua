@@ -861,11 +861,14 @@ for key,value in pairs({
 		--TODO: [-1098] = "Side Quests",							-- Side Quests
 	-- Dragonflight
 		--TODO: [-1100] = "Dragon Customization",					-- Dragon Customization
-		--TODO: [-1110] = "Dragonscale Expedition",					-- Dragonscale Expedition
-		--TODO: [-1120] = "Maruuk Centaur",							-- Maruuk Centaur
-		--TODO: [-1121] = "Aylaag",									-- Aylaag
-		--TODO: [-1130] = "Iskaara Tuskarr",						-- Iskaara Tuskarr
-		--TODO: [-1140] = "Valdrakken Accord",						-- Valdrakken Accord
+		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
+		[-1110] = "龙鳞探险队",											-- Dragonscale Expedition
+		--TODO: [-1111] = "Climbing",								-- Climbing
+		[-1120] = "马鲁克半人马",											-- Maruuk Centaur
+		[-1121] = "艾拉格氏族",											-- Clan Aylaag
+		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
+		[-1130] = "伊斯卡拉海象人",										-- Iskaara Tuskarr
+		[-1140] = "瓦德拉肯联军",											-- Valdrakken Accord
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
@@ -919,6 +922,12 @@ for key,value in pairs({
 				[-1433962] = "残破的镜子 D-3",							-- Broken Mirror
 })
 do a[key] = value; end
+if GetLocale() == "zhTW" then
+	a[-1110] = "龍鱗遠征隊"												-- Dragonscale Expedition
+	a[-1120] = "莫魯克半人馬",											-- Maruuk Centaur
+	a[-1130] = "伊斯凱拉巨牙海民",										-- Iskaara Tuskarr
+	a[-1140] = "沃卓肯協調者",											-- Valdrakken Accord
+end
 
 local a = L.HEADER_DESCRIPTIONS;
 for key,value in pairs({

@@ -858,11 +858,14 @@ for key,value in pairs({
 		--TODO: [-1098] = "Side Quests",							-- Side Quests
 	-- Dragonflight
 		--TODO: [-1100] = "Dragon Customization",					-- Dragon Customization
-		--TODO: [-1110] = "Dragonscale Expedition",					-- Dragonscale Expedition
-		--TODO: [-1120] = "Maruuk Centaur",							-- Maruuk Centaur
-		--TODO: [-1121] = "Aylaag",									-- Aylaag
-		--TODO: [-1130] = "Iskaara Tuskarr",						-- Iskaara Tuskarr
-		--TODO: [-1140] = "Valdrakken Accord",						-- Valdrakken Accord
+		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
+		[-1110] = "Expedición Dragontina",							-- Dragonscale Expedition
+		--TODO: [-1111] = "Climbing",								-- Climbing
+		[-1120] = "Centauros Maruuk",								-- Maruuk Centaur
+		[-1121] = "Clan Aylaag",									-- Clan Aylaag
+		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
+		[-1130] = "Colmillarr de Iskaara",							-- Iskaara Tuskarr
+		[-1140] = "Acuerdo de Valdrakken",							-- Valdrakken Accord
 	-- Warrior order hall lore items
 		[-2200] = "El gran Odyn y el Señor del Fuego",				-- Great Odyn and the Firelord
 		[-2201] = "El nómada y la serpiente",						-- The Wanderer and the Serpent
