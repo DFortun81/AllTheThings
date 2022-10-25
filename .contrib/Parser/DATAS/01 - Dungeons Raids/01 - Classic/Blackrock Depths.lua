@@ -1303,7 +1303,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 48,
 				}),
-				
+
 				q(28393, {	-- A Dangerous Alliance [A]
 					["qgs"] = {
 						-- #if BEFORE SHADOWLANDS
@@ -1706,7 +1706,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					--	i(141982),	-- Crown of the Hallowed
 					},
 				}),
-				
+
 				q(27569, {	-- Dark Iron Tacticians
 					["qg"] = 45894,	-- Prospector Seymour
 					["sourceQuest"] = 27568,	-- Infilitrating Shadowforge City [Alliance]
@@ -2277,7 +2277,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 				e(380, {	-- Hurley Blackbreath
 					["creatureID"] = 9537,
-					["description"]	= "Break the 3 Thunderbrew Lager Kegs to start the encounter.",
+					["description"] = "Break the 3 Thunderbrew Lager Kegs to start the encounter.",
 					["groups"] = {
 						i(11312),	-- Lost Thunderbrew Recipe
 						-- #if AFTER 7.3.2
@@ -2297,7 +2297,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 				e(9543, {	-- Ribbly Screwspigot
 					["creatureID"] = 9543,
-					["description"]	= "Speak to him to start the encounter.",
+					["description"] = "Speak to him to start the encounter.",
 					["groups"] = {
 						i(11313),	-- Ribbly's Head
 						i(11612),	-- Plans: Dark Iron Plate (RECIPE!)
@@ -2330,7 +2330,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				})),
 				e(381, {	-- Phalanx
 					["creatureID"] = 9502,
-					["description"]	= "Private Rocknot must be sent into a drunken rage to aggro Phalanx.\nTo do that, give him 6 dark iron ale mugs, which can be bought from Plugger Spazzring.\nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",
+					["description"] = "Private Rocknot must be sent into a drunken rage to aggro Phalanx.\nTo do that, give him 6 dark iron ale mugs, which can be bought from Plugger Spazzring.\nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",
 					["groups"] = {
 						i(11744),	-- Bloodfist
 						i(11743, {	-- Rockfist

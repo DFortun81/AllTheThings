@@ -132,7 +132,7 @@ local COUNTESS_GROUP = {
 	i(180956),	-- Axeblade Blunderbuss
 	i(180957),	-- Batwing Glaive
 };
-local SILVERTIP_DREDWING =  i(181316, {	-- -- Silvertip Dredwing (MOUNT!)
+local SILVERTIP_DREDWING = i(181316, {	-- -- Silvertip Dredwing (MOUNT!)
 	["cost"] = { { "c", ANIMA, 5000 } },
 });
 

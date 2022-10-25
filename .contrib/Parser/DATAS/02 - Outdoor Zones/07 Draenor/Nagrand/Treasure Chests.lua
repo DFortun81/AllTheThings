@@ -129,7 +129,7 @@ root("Zones", {
 					["sym"] = COMMON_TREASURE_SYM,
 				}),
 				o(233658, {	-- Adventurer's Pouch
-					["description"]	= "Follow coords in order, start at cave and follow ramp to reach the pouch.",
+					["description"] = "Follow coords in order, start at cave and follow ramp to reach the pouch.",
 					["questID"] = 36088,
 					["modelID"] = 32854,
 					["coords"] = {

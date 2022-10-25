@@ -6372,7 +6372,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(31804),	-- Cenarion Expedition Tabard
 						i(36941, {	-- Competitor's Tabard
 							["u"] = REMOVED_FROM_GAME,
-							["description"]	= "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
+							["description"] = "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
 						}),
 						i(31776),	-- Consortium Tabard
 						i(31404, {	-- Green Trophy Tabard of the Illidari

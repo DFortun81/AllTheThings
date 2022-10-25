@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.5" } }, {
+root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.5" } }, {
 	m(STORMSONG_VALLEY, {
 		n(FACTIONS, {
 			faction(2395, {	-- Honeyback Hive

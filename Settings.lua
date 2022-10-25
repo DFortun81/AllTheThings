@@ -379,7 +379,7 @@ settings.DeleteProfile = function(self, key)
 		-- deleting a profile used by other characters, they too will reset to default
 		for char,profKey in pairs(AllTheThingsProfiles.Assignments) do
 			if profKey == key then
-				AllTheThingsProfiles.Assignments[char]  = nil;
+				AllTheThingsProfiles.Assignments[char] = nil;
 			end
 		end
 		return true;

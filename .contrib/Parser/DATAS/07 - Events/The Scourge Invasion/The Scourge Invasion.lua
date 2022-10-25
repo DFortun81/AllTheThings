@@ -3,7 +3,7 @@
 --------------------------------------------
 -- Note: This is up here to prevent the unobtainable flag from getting put on the Major Healing and Mana Potions (for now)
 local MAJOR_HEALING_POTION = i(13446);	-- Major Healing Potion
-local MAJOR_MANA_POTION =    i(13444);	-- Major Mana Potion
+local MAJOR_MANA_POTION = i(13444);	-- Major Mana Potion
 local REMOVED_WITH_NAXX_RELEASE = "removed 2.0.1";
 local ADDED_WITH_WRATH_PREPATCH = "added 3.0.1";
 -- #if ANYCLASSIC

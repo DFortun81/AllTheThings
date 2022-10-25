@@ -67,7 +67,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			petbattle(filter(BATTLE_PETS, {
 				p(411, {	-- Baby Ape
 					["crs"] = { 61324 },
-					["description"]	= "This wild pet can be found on Jaguero Isle in The Cape of Stranglethorn. It only spawns when it's raining on the island, but this area has its own unique weather pattern. Although it might be raining in Stranglethorn, it may not be raining on the isle.",
+					["description"] = "This wild pet can be found on Jaguero Isle in The Cape of Stranglethorn. It only spawns when it's raining on the island, but this area has its own unique weather pattern. Although it might be raining in Stranglethorn, it may not be raining on the isle.",
 				}),
 				p(406, { -- Beetle
 					["crs"] = { 61319 },
@@ -1499,7 +1499,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(8553, {	-- The Captain's Cutlass
-					["qg"]	= 2500,	-- Captain Hecklebury Smotts
+					["qg"] = 2500,	-- Captain Hecklebury Smotts
 					["sourceQuest"] = 8552,	-- The Monogrammed Sash
 					["altQuests"] = { 615 },	-- The Captain's Cutlass
 					["coord"] = { 26.6, 73.6, STRANGLETHORN_VALE },

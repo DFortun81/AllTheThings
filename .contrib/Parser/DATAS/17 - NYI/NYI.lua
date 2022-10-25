@@ -7,7 +7,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(SOURCELESS, {
 		["description"] = "This Category contains Things that probably exist in the game but no known source.",
 		["g"] = {
-			n(ARMOR, bubbleDownSelf({ ["description"] =  "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+			n(ARMOR, bubbleDownSelf({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
 				-- Quests / Rares ?
 				i(160378),	-- Stormchaser Clutch
 				i(155091),	-- Thovas-Explorer's Cape	-- rewarded by some BfA quest probably
@@ -23,7 +23,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				i(113710),	-- Ravaged Leather Leggings	-- I collected it somehow -Darkal
 			})),
-			n(WEAPONS, bubbleDownSelf({ ["description"] =  "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+			n(WEAPONS, bubbleDownSelf({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
 				-- Quests / Rares ?
 				i(108905),	-- Jagged Turtleshell Blade
 				i(118186),	-- Frostwolf Wisdom Stick	-- rewarded by some WoD quest

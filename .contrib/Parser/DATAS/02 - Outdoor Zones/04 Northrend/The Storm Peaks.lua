@@ -358,7 +358,7 @@ root("Zones", {
 						["sourceQuest"] = 12987,	-- Placing Hodir's Helm
 						["coord"] = { 64.2, 59.6, THE_STORM_PEAKS },
 						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
-						["isDaily"]	= true,
+						["isDaily"] = true,
 					}),
 					q(13420, {	-- Everfrost
 						["provider"] = { "i", 44725 },	-- Everfrost Chip
@@ -377,28 +377,28 @@ root("Zones", {
 						["sourceQuest"] = 12976,	-- A Monument to the Fallen
 						["coord"] = { 64.1, 64.7, THE_STORM_PEAKS },
 						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
-						["isDaily"]	= true,
+						["isDaily"] = true,
 					}),
 					q(13046, {	-- Feeding Arngrim
 						["provider"] = { "o", 192524 },	-- Arngrim the Insatiable
 						["coord"] = { 67.5, 60.0, THE_STORM_PEAKS },
 						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
 						["minReputation"] = { 1119, REVERED },	-- The Sons of Hodir, Revered.
-						["isDaily"]	= true,
+						["isDaily"] = true,
 					}),
 					q(12981, {	-- Hot and Cold
 						["provider"] = { "o", 192071 },	-- Fjorn's Anvil
 						["sourceQuest"] = 12967,	-- Battling the Elements
 						["coord"] = { 63.2, 63.0, THE_STORM_PEAKS },
 						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
-						["isDaily"]	= true,
+						["isDaily"] = true,
 					}),
 					q(12994, {	-- Spy Hunter
 						["qg"] = 30294,	-- Frostworg Denmother
 						["coord"] = { 63.5, 59.7, THE_STORM_PEAKS },
 						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
 						["minReputation"] = { 1119, HONORED },	-- The Sons of Hodir, Honored.
-						["isDaily"]	= true,
+						["isDaily"] = true,
 					}),
 					q(13003, {	-- How to Slay Your Dragon
 						["provider"] = { "o", 192079 },	-- Hodir's Spear
@@ -406,7 +406,7 @@ root("Zones", {
 						["coord"] = { 65.0, 60.9, THE_STORM_PEAKS },
 						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
 						["minReputation"] = { 1119, HONORED },	-- The Sons of Hodir, Honored.
-						["isDaily"]	= true,
+						["isDaily"] = true,
 					}),
 
 					i(44751, {	-- Hyldnir Spoils

@@ -3324,7 +3324,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			}),
 			n(VENDORS, {
 				n(12384, {	-- Agustus the Touched
-					["description"]	= "Vendor will not sell to you until you complete his quest.",
+					["description"] = "Vendor will not sell to you until you complete his quest.",
 					-- #if AFTER CATA
 					["sourceQuest"] = 27534,	-- Augustus' Receipt Book
 					["coord"] = { 11.4, 28.6, EASTERN_PLAGUELANDS },

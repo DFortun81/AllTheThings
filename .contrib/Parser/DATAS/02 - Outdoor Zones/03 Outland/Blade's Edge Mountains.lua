@@ -539,7 +539,7 @@ root("Zones", {
 					q(10719, {	-- Did You Get The Note?
 						["provider"] = { "i", 31120 },	-- Meeting Note
 						["sourceQuest"] = 10682,	-- A Time for Negotiation...
-						["description"]	= "You have to accept or complete the quest '...and a Time for Action' to receive the item.",
+						["description"] = "You have to accept or complete the quest '...and a Time for Action' to receive the item.",
 						["lvl"] = lvlsquish(65, 20, 65),
 					}),
 					q(10487, {	-- Dust from the Drakes
@@ -556,7 +556,7 @@ root("Zones", {
 							10989,	-- Mog'dorg the Wizened
 							11057,	-- The Trouble Below
 						},
-						["description"]	= "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
+						["description"] = "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
 						["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
 						["maps"] = { TEROKKAR_FOREST },
 						["lvl"] = lvlsquish(70, 20, 70),
@@ -585,7 +585,7 @@ root("Zones", {
 					q(10797, {	-- Favor of the Gronn
 						["provider"] = { "i", 31363 },	-- Gorgrom's Favor
 						["coord"] = { 55.0, 24.2, BLADES_EDGE_MOUNTAINS },
-						["description"]	= "You have to accept or complete the quest 'A Date with Dorgok' to receive the item.",
+						["description"] = "You have to accept or complete the quest 'A Date with Dorgok' to receive the item.",
 						["races"] = ALLIANCE_ONLY,
 						["cr"] = 20753,	-- Dorgok
 						["lvl"] = lvlsquish(65, 20, 65),
@@ -721,7 +721,7 @@ root("Zones", {
 							10989,	-- Mog'dorg the Wizened
 							11057,	-- The Trouble Below
 						},
-						["description"]	= "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
+						["description"] = "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
 						["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
 						["lvl"] = lvlsquish(70, 20, 70),
 					}),
@@ -843,7 +843,7 @@ root("Zones", {
 							10989,	-- Mog'dorg the Wizened
 							11057,	-- The Trouble Below
 						},
-						["description"]	= "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
+						["description"] = "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
 						["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
 						["lvl"] = lvlsquish(70, 20, 70),
 					}),
@@ -2143,7 +2143,7 @@ root("Zones", {
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31942, {	-- Deathwing Brood Cloak
-						["description"]	= "You need to summon the four dragons for 35 Apexis Shards and loot the scale to put the cloak together.",
+						["description"] = "You need to summon the four dragons for 35 Apexis Shards and loot the scale to put the cloak together.",
 						["cost"] = {
 							{ "i", 32684, 1 },	-- Insidion's Ebony Scale
 							{ "i", 32683, 1 },	-- Jet Scale of Furywing

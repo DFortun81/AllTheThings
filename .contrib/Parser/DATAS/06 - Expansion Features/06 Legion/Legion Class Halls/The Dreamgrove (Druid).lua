@@ -98,7 +98,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							{ "n", 119982 },	-- Druid of the Talon
 						},
 						["coord"] = { 40.9, 42.6, MOUNT_HYJAL },
-						["sourceQuest"]	= 44869,	-- Talon Terror
+						["sourceQuest"] = 44869,	-- Talon Terror
 					}),
 					q(44888, {	-- Aviana's Grace
 						["providers"] = {
@@ -382,7 +382,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					q(44921, {	-- Lone Wolf
 						["provider"] = { "n", 115749 },	-- Aviana
 						["coord"] = { 44.3, 48.0, MOUNT_HYJAL },
-						["sourceQuest"]	= 44888,	-- Aviana's Grace
+						["sourceQuest"] = 44888,	-- Aviana's Grace
 					}),
 					q(42033, {	-- Malorne's Refuge
 						["lvl"] = 103,
@@ -414,7 +414,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							{ "n", 119982 },	-- Druid of the Talon
 						},
 						["coord"] = { 40.9, 42.6, MOUNT_HYJAL },
-						["sourceQuest"]	= 44869,	-- Talon Terror
+						["sourceQuest"] = 44869,	-- Talon Terror
 					}),
 					q(45426, {	-- Nature's Advance
 						["provider"] = { "n", 115750 },	-- Goldrinn <Ancient>

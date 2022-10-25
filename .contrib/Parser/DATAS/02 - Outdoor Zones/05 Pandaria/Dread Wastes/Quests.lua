@@ -481,7 +481,7 @@ _.Zones =
 					},
 				}),
 				q(31727, {	-- Gambling Problem
-					["description"] =  "Gambling Problem showed up at Ambersmith Zikk after completed all Paragons except for |cFF006211Iyyokuk the Lucid and Ka'roz the Locust|r. \nDo not touch any quests at Soggy's Gamble, otherwise you are not eligible for the quest.\n\n By Niixten.",
+					["description"] = "Gambling Problem showed up at Ambersmith Zikk after completed all Paragons except for |cFF006211Iyyokuk the Lucid and Ka'roz the Locust|r. \nDo not touch any quests at Soggy's Gamble, otherwise you are not eligible for the quest.\n\n By Niixten.",
 					["coord"] = { 55.0, 35.5, DREAD_WASTES },
 					["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 					["sourceQuest"] = 31398,	-- Falling to Pieces

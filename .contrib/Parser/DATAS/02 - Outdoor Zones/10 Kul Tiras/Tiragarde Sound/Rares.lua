@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
+root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(TIRAGARDE_SOUND, {
 		n(RARES, {
 			n(132182, {	-- Auditor Dolp
@@ -179,7 +179,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				},
 			}),
 			n(131252, {	-- Merianae
-				["questID"]	= 49921,
+				["questID"] = 49921,
 				["coord"] = { 43.5, 17.2, TIRAGARDE_SOUND },	-- cave entrance
 				["g"] = {
 					i(160461),	-- Thick Sauroskin Pants
