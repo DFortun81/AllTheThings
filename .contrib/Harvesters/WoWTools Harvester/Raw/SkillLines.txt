@@ -1,613 +1,613 @@
 0.5.3.3368
-6,Frost Magic
-8,Fire Magic
-26,Combat Maneuvers
-38,Street Fighting
-39,Deception
-40,Poisons
-43,Swords
-44,Axes
-45,Bows
-46,Guns
-50,Beast Handling
-51,Tracking
-54,Maces
-55,Two-Handed Swords
-56,Holy Magic
-74,Feign Death
-78,Shadow Magic
-95,Defense
-96,Nature Magic
-98,Language: Common
-99,Language: Common
-101,Dwarven Racial
-109,Language: Orcish
-110,Language: Orcish
-111,Language: Dwarven
-112,Language: Dwarven
-113,Language: Darnassian
-114,Language: Darnassian
-115,Language: Taurahe
-116,Language: Taurahe
-118,Dual Wield
-120,Summoning
-124,Tauren Racial
-125,Orc Racial
-126,Night Elf Racial
-129,First Aid
-130,Conjuration
-134,Shapeshifting
-136,Staves
-137,Thalassian
-138,Draconic
-139,Demon Tongue
-140,Titan
-141,Old Tongue
-142,Survival
-148,Horse Riding
-149,Wolf Riding
-150,Tiger Riding
-151,Nightmare Riding
-152,Ram Riding
-155,Swimming
-160,Two-Handed Maces
-162,Unarmed
-163,Combat Shots
-164,Blacksmithing
-165,Leatherworking
-171,Alchemy
-172,Two-Handed Axes
-173,Daggers
-176,Thrown
-181,Lockpicking1
-182,Herbalism
-183,GENERIC (DND)
-184,Holy Strikes
-185,Cooking
-186,Mining
-188,Pet - Imp
-189,Pet - Felhunter
-197,Tailoring
-198,Seals
-199,Spirit Combat
-202,Engineering
-203,Pet - Spider
-204,Pet - Voidwalker
-205,Pet - Succubus
-206,Pet - Infernal
-207,Pet - Doomguard
-208,Pet - Wolf
-209,Pet - Cat
-210,Pet - Bear
-211,Pet - Boar
-212,Pet - Crocilisk
-213,Pet - Carrion Bird
-214,Pet - Crab
-215,Pet - Gorilla
-216,Pet - Horse
-217,Pet - Raptor
-218,Pet - Tall Strider
-220,Racial - Undead
-222,Weapon Talents
-226,Crossbows
-227,Spears
-228,Wands
-229,Polearms
-230,Attribute Enhancements
-231,Slayer Talents
-233,Magic Talents
-234,Defensive Talents
-236,Pet - Scorpion
-237,Arcane Magic
-238,Pick Pockets
-239,Stealth
-241,Disarm Traps
-242,Lockpicking2
-243,Stances
-244,Shouts
-245,Advanced Combat
-246,Undead Mastery
-247,Sneaking
-249,Forage
-251,Pet - Turtle
-252,Ranged Combat
-253,Assassination
-254,Acrobatics
-255,Dueling
-256,Savage Combat
-257,Shields
-258,Taunt
-259,Totems
-260,Mend Pet
-261,Beast Training
-262,Expert Shots
-263,Fire Shots
-264,Frost Shots
-267,Auras
-268,Block
-269,Justice
-270,Pet - Talents
-271,Magic Unlock
-272,Growl
-273,Disengage
-293,Plate Mail
-313,Language: Gnomish
-314,Language: Gnomish
-315,Language: Troll
-316,Language: Troll
-333,Enchanting
-353,Soul Craft
-354,Demon Mastery
-355,Curses
-356,Fishing
+6@@@Frost Magic
+8@@@Fire Magic
+26@@@Combat Maneuvers
+38@@@Street Fighting
+39@@@Deception
+40@@@Poisons
+43@@@Swords
+44@@@Axes
+45@@@Bows
+46@@@Guns
+50@@@Beast Handling
+51@@@Tracking
+54@@@Maces
+55@@@Two-Handed Swords
+56@@@Holy Magic
+74@@@Feign Death
+78@@@Shadow Magic
+95@@@Defense
+96@@@Nature Magic
+98@@@Language: Common
+99@@@Language: Common
+101@@@Dwarven Racial
+109@@@Language: Orcish
+110@@@Language: Orcish
+111@@@Language: Dwarven
+112@@@Language: Dwarven
+113@@@Language: Darnassian
+114@@@Language: Darnassian
+115@@@Language: Taurahe
+116@@@Language: Taurahe
+118@@@Dual Wield
+120@@@Summoning
+124@@@Tauren Racial
+125@@@Orc Racial
+126@@@Night Elf Racial
+129@@@First Aid
+130@@@Conjuration
+134@@@Shapeshifting
+136@@@Staves
+137@@@Thalassian
+138@@@Draconic
+139@@@Demon Tongue
+140@@@Titan
+141@@@Old Tongue
+142@@@Survival
+148@@@Horse Riding
+149@@@Wolf Riding
+150@@@Tiger Riding
+151@@@Nightmare Riding
+152@@@Ram Riding
+155@@@Swimming
+160@@@Two-Handed Maces
+162@@@Unarmed
+163@@@Combat Shots
+164@@@Blacksmithing
+165@@@Leatherworking
+171@@@Alchemy
+172@@@Two-Handed Axes
+173@@@Daggers
+176@@@Thrown
+181@@@Lockpicking1
+182@@@Herbalism
+183@@@GENERIC (DND)
+184@@@Holy Strikes
+185@@@Cooking
+186@@@Mining
+188@@@Pet - Imp
+189@@@Pet - Felhunter
+197@@@Tailoring
+198@@@Seals
+199@@@Spirit Combat
+202@@@Engineering
+203@@@Pet - Spider
+204@@@Pet - Voidwalker
+205@@@Pet - Succubus
+206@@@Pet - Infernal
+207@@@Pet - Doomguard
+208@@@Pet - Wolf
+209@@@Pet - Cat
+210@@@Pet - Bear
+211@@@Pet - Boar
+212@@@Pet - Crocilisk
+213@@@Pet - Carrion Bird
+214@@@Pet - Crab
+215@@@Pet - Gorilla
+216@@@Pet - Horse
+217@@@Pet - Raptor
+218@@@Pet - Tall Strider
+220@@@Racial - Undead
+222@@@Weapon Talents
+226@@@Crossbows
+227@@@Spears
+228@@@Wands
+229@@@Polearms
+230@@@Attribute Enhancements
+231@@@Slayer Talents
+233@@@Magic Talents
+234@@@Defensive Talents
+236@@@Pet - Scorpion
+237@@@Arcane Magic
+238@@@Pick Pockets
+239@@@Stealth
+241@@@Disarm Traps
+242@@@Lockpicking2
+243@@@Stances
+244@@@Shouts
+245@@@Advanced Combat
+246@@@Undead Mastery
+247@@@Sneaking
+249@@@Forage
+251@@@Pet - Turtle
+252@@@Ranged Combat
+253@@@Assassination
+254@@@Acrobatics
+255@@@Dueling
+256@@@Savage Combat
+257@@@Shields
+258@@@Taunt
+259@@@Totems
+260@@@Mend Pet
+261@@@Beast Training
+262@@@Expert Shots
+263@@@Fire Shots
+264@@@Frost Shots
+267@@@Auras
+268@@@Block
+269@@@Justice
+270@@@Pet - Talents
+271@@@Magic Unlock
+272@@@Growl
+273@@@Disengage
+293@@@Plate Mail
+313@@@Language: Gnomish
+314@@@Language: Gnomish
+315@@@Language: Troll
+316@@@Language: Troll
+333@@@Enchanting
+353@@@Soul Craft
+354@@@Demon Mastery
+355@@@Curses
+356@@@Fishing
 0.5.5.3494
-199,Spirit Magic
-373,Air Magic
-374,Water Magic
-375,Earth Magic
-393,Skinning
+199@@@Spirit Magic
+373@@@Air Magic
+374@@@Water Magic
+375@@@Earth Magic
+393@@@Skinning
 0.6.0.3592
-413,Mail
-414,Leather
-415,Cloth
-416,Strength
-417,Agility
-418,Stamina
-419,Intellect
-420,Spirit
-433,Shield
-434,Buckler
-453,Sword Power
-473,Unarmed Weapons
+413@@@Mail
+414@@@Leather
+415@@@Cloth
+416@@@Strength
+417@@@Agility
+418@@@Stamina
+419@@@Intellect
+420@@@Spirit
+433@@@Shield
+434@@@Buckler
+453@@@Sword Power
+473@@@Unarmed Weapons
 0.7.0.3694
-26,Arms
-256,Fury
-257,Protection
-473,Fist Weapons
-513,Beast Tracking
-514,Humanoid Tracking
-516,Demon Tracking
-517,Undead Tracking
-518,Dragon Tracking
-519,Elemental Tracking
-533,Raptor Riding
-553,Mechanostrider Piloting
-554,Undead Horsemanship
+26@@@Arms
+256@@@Fury
+257@@@Protection
+473@@@Fist Weapons
+513@@@Beast Tracking
+514@@@Humanoid Tracking
+516@@@Demon Tracking
+517@@@Undead Tracking
+518@@@Dragon Tracking
+519@@@Elemental Tracking
+533@@@Raptor Riding
+553@@@Mechanostrider Piloting
+554@@@Undead Horsemanship
 0.8.0.3734
-6,Frost
-38,Combat
-39,Subtlety
-56,Holy
-184,Combat
-237,Arcane
-267,Protection
-354,Demonology
-573,Restoration
-574,Balance
-593,Destruction
-594,Holy
+6@@@Frost
+38@@@Combat
+39@@@Subtlety
+56@@@Holy
+184@@@Combat
+237@@@Arcane
+267@@@Protection
+354@@@Demonology
+573@@@Restoration
+574@@@Balance
+593@@@Destruction
+594@@@Holy
 0.9.0.3807
-50,Beast Mastery
-51,Outdoorsmanship
-163,Ranged Combat
-218,Pet - Tallstrider
-236,Pet - Scorpid
-613,Discipline
-633,Lockpicking3
-653,Pet - Bat
-654,Pet - Hyena
-655,Pet - Owl
-656,Pet - Wind Serpent
+50@@@Beast Mastery
+51@@@Outdoorsmanship
+163@@@Ranged Combat
+218@@@Pet - Tallstrider
+236@@@Pet - Scorpid
+613@@@Discipline
+633@@@Lockpicking3
+653@@@Pet - Bat
+654@@@Pet - Hyena
+655@@@Pet - Owl
+656@@@Pet - Wind Serpent
 1.0.0.3980
-8,Fire
-134,Feral Combat
-137,Language: Thalassian
-138,Language: Draconic
-139,Language: Demon Tongue
-140,Language: Titan
-141,Language: Old Tongue
-355,Affliction
-373,Enhancement
-374,Restoration
-375,Elemental Combat
-673,Language: Gutterspeak
+8@@@Fire
+134@@@Feral Combat
+137@@@Language: Thalassian
+138@@@Language: Draconic
+139@@@Language: Demon Tongue
+140@@@Language: Titan
+141@@@Language: Old Tongue
+355@@@Affliction
+373@@@Enhancement
+374@@@Restoration
+375@@@Elemental Combat
+673@@@Language: Gutterspeak
 1.1.2.4125
-51,Survival
-163,Marksmanship
-184,Retribution
-713,Kodo Riding
-733,Racial - Troll
-753,Racial - Gnome
-754,Racial - Human
+51@@@Survival
+163@@@Marksmanship
+184@@@Retribution
+713@@@Kodo Riding
+733@@@Racial - Troll
+753@@@Racial - Gnome
+754@@@Racial - Human
 1.13.0.28211
-270,Pet - Generic
-758,Pet - Event - Remote Control
+270@@@Pet - Generic
+758@@@Pet - Event - Remote Control
 2.0.0.6080
-755,Jewelcrafting
-756,Blood Elf Racial
-759,Language: Draenei
-760,Draenei Racial
-761,Pet - Felguard
-762,Riding
-763,Pet - Dragonhawk
-764,Pet - Nether Ray
-765,Pet - Sporebat
-766,Pet - Warp Stalker
-767,Pet - Ravager
-768,Pet - Serpent
+755@@@Jewelcrafting
+756@@@Blood Elf Racial
+759@@@Language: Draenei
+760@@@Draenei Racial
+761@@@Pet - Felguard
+762@@@Riding
+763@@@Pet - Dragonhawk
+764@@@Pet - Nether Ray
+765@@@Pet - Sporebat
+766@@@Pet - Warp Stalker
+767@@@Pet - Ravager
+768@@@Pet - Serpent
 2.4.3.8606
-769,Internal
+769@@@Internal
 2.5.1.38043
-2812,Outland Leatherworking
+2812@@@Outland Leatherworking
 3.0.1.8303
-770,Blood
-771,Frost
-772,Unholy
-773,Inscription
+770@@@Blood
+771@@@Frost
+772@@@Unholy
+773@@@Inscription
 3.0.1.8622
-212,Pet - Crocolisk
-655,Pet - Bird of Prey
-775,Pet - Moth
-776,Runeforging1
-777,Companions
+212@@@Pet - Crocolisk
+655@@@Pet - Bird of Prey
+775@@@Pet - Moth
+776@@@Runeforging1
+777@@@Companions
 3.0.1.8874
-777,Mounts
-778,Companions
-780,Pet - Exotic Chimaera
-781,Pet - Exotic Devlisaur
-782,Pet - Ghoul
-783,Pet - Exotic Silithid
-784,Pet - Exotic Worm
-785,Pet- Wasp
-786,Pet - Exotic Rhino
+777@@@Mounts
+778@@@Companions
+780@@@Pet - Exotic Chimaera
+781@@@Pet - Exotic Devlisaur
+782@@@Pet - Ghoul
+783@@@Pet - Exotic Silithid
+784@@@Pet - Exotic Worm
+785@@@Pet- Wasp
+786@@@Pet - Exotic Rhino
 3.1.0.9767
-270,Pet - Generic Hunter
-787,Pet - Exotic Core Hound
-788,Pet - Exotic Spirit Beast
+270@@@Pet - Generic Hunter
+787@@@Pet - Exotic Core Hound
+788@@@Pet - Exotic Spirit Beast
 4.0.1.12911
-134,Feral
-789,Racial - Worgen
-790,Racial - Goblin
-791,Language: Gilnean
-792,Language: Goblin
-794,Archaeology
-795,Hunter - General
-796,Death Knight - General
-797,Rogue - General
-798,Druid - General
-799,Mage -  General
-800,Paladin - General
-801,Shaman - General
-802,Warlock - General
-803,Warrior - General
-804,Priest - General
-805,Pet - Water Elemental
-808,Pet - Fox
-810,All - Glyphs
-816,Guild Perks
-817,Shale Spider
+134@@@Feral
+789@@@Racial - Worgen
+790@@@Racial - Goblin
+791@@@Language: Gilnean
+792@@@Language: Goblin
+794@@@Archaeology
+795@@@Hunter - General
+796@@@Death Knight - General
+797@@@Rogue - General
+798@@@Druid - General
+799@@@Mage -  General
+800@@@Paladin - General
+801@@@Shaman - General
+802@@@Warlock - General
+803@@@Warrior - General
+804@@@Priest - General
+805@@@Pet - Water Elemental
+808@@@Pet - Fox
+810@@@All - Glyphs
+816@@@Guild Perks
+817@@@Shale Spider
 4.3.4.15595
-673,Language: Forsaken
-811,Pet - Dog
-815,Monkey
-818,Beetle
-821,All - Guild Perks
-824,Hydra
+673@@@Language: Forsaken
+811@@@Pet - Dog
+815@@@Monkey
+818@@@Beetle
+821@@@All - Guild Perks
+824@@@Hydra
 5.0.3.15882
-795,Hunter
-796,Death Knight
-798,Druid
-800,Paladin
-804,Priest
-829,Monk
-840,Warrior
-843,
-849,Warlock
-899,Pandaren Racial
-904,Mage
-905,Language: Pandaren Neutral
-906,Language: Pandaren Alliance
-907,Language: Pandaren Horde
-921,Rogue
-924,Shaman
-927,Fel Imp
-928,Voidlord
-929,Shivarra
-930,Observer
-931,Wrathguard
-934,All - Specializations
-960,Runeforging2
-962,Pet - Primal Fire Elemental
-963,Pet - Primal Earth Elemental
-975,Way of the Grill
-976,Way of the Wok
-977,Way of the Pot
-978,Way of the Steamer
-979,Way of the Oven
-980,Way of the Brew
-981,Apprentice Cooking
-982,Journeyman Cookbook
-983,Porcupine
-984,Crane
-985,Water Strider
-986,Quilen
-987,Goat
-988,Basilisk
-999,NO PLAYERS
+795@@@Hunter
+796@@@Death Knight
+798@@@Druid
+800@@@Paladin
+804@@@Priest
+829@@@Monk
+840@@@Warrior
+843@@@
+849@@@Warlock
+899@@@Pandaren Racial
+904@@@Mage
+905@@@Language: Pandaren Neutral
+906@@@Language: Pandaren Alliance
+907@@@Language: Pandaren Horde
+921@@@Rogue
+924@@@Shaman
+927@@@Fel Imp
+928@@@Voidlord
+929@@@Shivarra
+930@@@Observer
+931@@@Wrathguard
+934@@@All - Specializations
+960@@@Runeforging2
+962@@@Pet - Primal Fire Elemental
+963@@@Pet - Primal Earth Elemental
+975@@@Way of the Grill
+976@@@Way of the Wok
+977@@@Way of the Pot
+978@@@Way of the Steamer
+979@@@Way of the Oven
+980@@@Way of the Brew
+981@@@Apprentice Cooking
+982@@@Journeyman Cookbook
+983@@@Porcupine
+984@@@Crane
+985@@@Water Strider
+986@@@Quilen
+987@@@Goat
+988@@@Basilisk
+999@@@NO PLAYERS
 6.0.1.18179
-101,Racial - Dwarf
-124,Racial - Tauren
-125,Racial - Orc
-126,Racial - Night Elf
-756,Racial - Blood Elf
-760,Racial - Draenei
-781,Pet - Exotic Devilsaur
-815,Pet - Monkey
-817,Pet - Shale Spider
-824,Pet - Hydra
-899,Racial - Pandaren
-986,Pet - Exotic Quilen
-987,Pet - Goat
-1305,Direhorn
-1748,Pet - Primal Storm Elemental
-1777,Pet - Water Elemental Minor Talent Version
-1818,Pet - Exotic Hook Wasp
-1819,Pet - Riverbeast
-1830,GarrEnchanting
+101@@@Racial - Dwarf
+124@@@Racial - Tauren
+125@@@Racial - Orc
+126@@@Racial - Night Elf
+756@@@Racial - Blood Elf
+760@@@Racial - Draenei
+781@@@Pet - Exotic Devilsaur
+815@@@Pet - Monkey
+817@@@Pet - Shale Spider
+824@@@Pet - Hydra
+899@@@Racial - Pandaren
+986@@@Pet - Exotic Quilen
+987@@@Pet - Goat
+1305@@@Direhorn
+1748@@@Pet - Primal Storm Elemental
+1777@@@Pet - Water Elemental Minor Talent Version
+1818@@@Pet - Exotic Hook Wasp
+1819@@@Pet - Riverbeast
+1830@@@GarrEnchanting
 7.3.0.24473
-785,Pet - Wasp
-786,Pet - Exotic Clefthoof
-1818,Pet - Exotic Rylak
-1830,Unused
-1848,Demon Hunter
-1945,Logging
-1981,Pet - Terrorguard
-1982,Pet - Abyssal
-1993,Pet - Stag
-2000,Trading Post
-2152,Warglaives
-2189,Pet - Mechanical
-2216,Pet - Abomination
-2279,Pet - Oxen
-2280,Pet - Scalehide
-2361,Pet - Feathermane
+785@@@Pet - Wasp
+786@@@Pet - Exotic Clefthoof
+1818@@@Pet - Exotic Rylak
+1830@@@Unused
+1848@@@Demon Hunter
+1945@@@Logging
+1981@@@Pet - Terrorguard
+1982@@@Pet - Abyssal
+1993@@@Pet - Stag
+2000@@@Trading Post
+2152@@@Warglaives
+2189@@@Pet - Mechanical
+2216@@@Pet - Abomination
+2279@@@Pet - Oxen
+2280@@@Pet - Scalehide
+2361@@@Pet - Feathermane
 7.3.0.24727
-983,Rodent
+983@@@Rodent
 7.3.5.25928
-2419,Racial - Nightborne
-2420,Racial - Highmountain Tauren
-2421,Racial - Lightforged Draenei
-2423,Racial - Void Elf
-2464,Language: Shalassian
-2465,Language: Thalassian
+2419@@@Racial - Nightborne
+2420@@@Racial - Highmountain Tauren
+2421@@@Racial - Lightforged Draenei
+2423@@@Racial - Void Elf
+2464@@@Language: Shalassian
+2465@@@Language: Thalassian
 8.0.1.25902
-2437,8.0 Blacksmithing
-2454,Legion Blacksmithing
-2472,Draenor Blacksmithing
-2473,Pandaria Blacksmithing
-2474,Cataclysm Blacksmithing
-2475,Northrend Blacksmithing
-2476,Outland Blacksmithing
-2477,Classic Blacksmithing
-2478,8.0 Alchemy
-2479,Legion Alchemy
-2480,Draenor Alchemy
-2481,Pandaria Alchemy
-2482,Cataclysm Alchemy
-2483,Northrend Alchemy
-2484,Outland Alchemy
-2485,Classic Alchemy
-2486,8.0 Enchanting
-2487,Legion Enchanting
-2488,Draenor Enchanting
-2489,Pandaria Enchanting
-2491,Cataclysm Enchanting
-2492,Northrend Enchanting
-2493,Outland Enchanting
-2494,Classic Enchanting
-2499,8.0 Engineering
-2500,Legion Engineering
-2501,Draenor Engineering
-2502,Pandaria Engineering
-2503,Cataclsym Engineering
-2504,Northrend Engineering
-2505,Outland Engineering
-2506,Classic Engineering
-2507,8.0 Inscription
-2508,Legion Inscription
-2509,Draenor Inscription
-2510,Pandaria Inscription
-2511,Cataclysm Inscription
-2512,Northrend Inscription
-2513,Outland Inscription
-2514,Classic Inscription
-2517,8.0 Jewelcrafting
-2518,Legion Jewelcrafting
-2519,Draenor Jewelcrafting
-2520,Pandaria Jewelcrafting
-2521,Cataclysm Jewelcrafting
-2522,Northrend Jewelcrafting
-2523,Outland Jewelcrafting
-2524,Classic Jewelcrafting
-2525,8.0 Leatherworking
-2526,Legion Leatherworking
-2527,Draenor Leatherworking
-2528,Pandaria Leatherworking
-2529,Cataclysm Leatherworking
-2530,Northrend Leatherworking
-2531,Outland Leatherworking
-2532,Classic Leatherworking
-2533,8.0 Tailoring
-2534,Legion Tailoring
-2535,Draenor Tailoring
-2536,Pandaria Tailoring
-2537,Cataclysm Tailoring
-2538,Northrend Tailoring
-2539,Outland Tailoring
-2540,Classic Tailoring
-2541,8.0 Cooking
-2542,Legion Cooking
-2543,Draenor Cooking
-2544,Pandaria Cooking
-2545,Cataclysm Cooking
-2546,Northrend Cooking
-2547,Outland Cooking
-2548,Classic Cooking
+2437@@@8.0 Blacksmithing
+2454@@@Legion Blacksmithing
+2472@@@Draenor Blacksmithing
+2473@@@Pandaria Blacksmithing
+2474@@@Cataclysm Blacksmithing
+2475@@@Northrend Blacksmithing
+2476@@@Outland Blacksmithing
+2477@@@Classic Blacksmithing
+2478@@@8.0 Alchemy
+2479@@@Legion Alchemy
+2480@@@Draenor Alchemy
+2481@@@Pandaria Alchemy
+2482@@@Cataclysm Alchemy
+2483@@@Northrend Alchemy
+2484@@@Outland Alchemy
+2485@@@Classic Alchemy
+2486@@@8.0 Enchanting
+2487@@@Legion Enchanting
+2488@@@Draenor Enchanting
+2489@@@Pandaria Enchanting
+2491@@@Cataclysm Enchanting
+2492@@@Northrend Enchanting
+2493@@@Outland Enchanting
+2494@@@Classic Enchanting
+2499@@@8.0 Engineering
+2500@@@Legion Engineering
+2501@@@Draenor Engineering
+2502@@@Pandaria Engineering
+2503@@@Cataclsym Engineering
+2504@@@Northrend Engineering
+2505@@@Outland Engineering
+2506@@@Classic Engineering
+2507@@@8.0 Inscription
+2508@@@Legion Inscription
+2509@@@Draenor Inscription
+2510@@@Pandaria Inscription
+2511@@@Cataclysm Inscription
+2512@@@Northrend Inscription
+2513@@@Outland Inscription
+2514@@@Classic Inscription
+2517@@@8.0 Jewelcrafting
+2518@@@Legion Jewelcrafting
+2519@@@Draenor Jewelcrafting
+2520@@@Pandaria Jewelcrafting
+2521@@@Cataclysm Jewelcrafting
+2522@@@Northrend Jewelcrafting
+2523@@@Outland Jewelcrafting
+2524@@@Classic Jewelcrafting
+2525@@@8.0 Leatherworking
+2526@@@Legion Leatherworking
+2527@@@Draenor Leatherworking
+2528@@@Pandaria Leatherworking
+2529@@@Cataclysm Leatherworking
+2530@@@Northrend Leatherworking
+2531@@@Outland Leatherworking
+2532@@@Classic Leatherworking
+2533@@@8.0 Tailoring
+2534@@@Legion Tailoring
+2535@@@Draenor Tailoring
+2536@@@Pandaria Tailoring
+2537@@@Cataclysm Tailoring
+2538@@@Northrend Tailoring
+2539@@@Outland Tailoring
+2540@@@Classic Tailoring
+2541@@@8.0 Cooking
+2542@@@Legion Cooking
+2543@@@Draenor Cooking
+2544@@@Pandaria Cooking
+2545@@@Cataclysm Cooking
+2546@@@Northrend Cooking
+2547@@@Outland Cooking
+2548@@@Classic Cooking
 8.0.1.25976
-2507,Kul'Tiras Inscription
-2549,8.0 Herbalism
-2550,Legion Herbalism
-2551,Draenor Herbalism
-2552,Pandaria Herbalism
-2553,Cataclysm Herbalism
-2554,Northrend Herbalism
-2555,Outland Herbalism
-2556,Classic Herbalism
-2557,8.0 Skinning
-2558,Legion Skinning
-2559,Draenor Skinning
-2560,Pandaria Skinning
-2561,Cataclysm Skinning
-2562,Northrend Skinning
-2563,Outland Skinning
-2564,Classic Skinning
-2565,8.0 Mining
-2566,Legion Mining
-2567,Draenor Mining
-2568,Pandaria Mining
-2569,Cataclysm Mining
-2570,Northrend Mining
-2571,Outland Mining
-2572,Classic Mining
+2507@@@Kul'Tiras Inscription
+2549@@@8.0 Herbalism
+2550@@@Legion Herbalism
+2551@@@Draenor Herbalism
+2552@@@Pandaria Herbalism
+2553@@@Cataclysm Herbalism
+2554@@@Northrend Herbalism
+2555@@@Outland Herbalism
+2556@@@Classic Herbalism
+2557@@@8.0 Skinning
+2558@@@Legion Skinning
+2559@@@Draenor Skinning
+2560@@@Pandaria Skinning
+2561@@@Cataclysm Skinning
+2562@@@Northrend Skinning
+2563@@@Outland Skinning
+2564@@@Classic Skinning
+2565@@@8.0 Mining
+2566@@@Legion Mining
+2567@@@Draenor Mining
+2568@@@Pandaria Mining
+2569@@@Cataclysm Mining
+2570@@@Northrend Mining
+2571@@@Outland Mining
+2572@@@Classic Mining
 8.0.1.26010
-2503,Cataclysm Engineering
+2503@@@Cataclysm Engineering
 8.0.1.26095
-988,Pet - Basilisk
-1305,Pet - Direhorn
+988@@@Pet - Basilisk
+1305@@@Pet - Direhorn
 8.0.1.26131
-2437,Kul Tiran Blacksmithing
-2478,Kul Tiran Alchemy
-2486,Kul Tiran Enchanting
-2499,Kul Tiran Engineering
-2507,Kul Tiran Inscription
-2517,Kul Tiran Jewelcrafting
-2525,Kul Tiran Leatherworking
-2533,Kul Tiran Tailoring
-2541,Kul Tiran Cooking
-2549,Kul Tiran Herbalism
-2557,Kul Tiran Skinning
-2565,Kul Tiran Mining
+2437@@@Kul Tiran Blacksmithing
+2478@@@Kul Tiran Alchemy
+2486@@@Kul Tiran Enchanting
+2499@@@Kul Tiran Engineering
+2507@@@Kul Tiran Inscription
+2517@@@Kul Tiran Jewelcrafting
+2525@@@Kul Tiran Leatherworking
+2533@@@Kul Tiran Tailoring
+2541@@@Kul Tiran Cooking
+2549@@@Kul Tiran Herbalism
+2557@@@Kul Tiran Skinning
+2565@@@Kul Tiran Mining
 8.0.1.26175
-983,Pet - Rodent
-984,Pet - Crane
-985,Pet - Water Strider
+983@@@Pet - Rodent
+984@@@Pet - Crane
+985@@@Pet - Water Strider
 8.0.1.26287
-2477,Blacksmithing
-2485,Alchemy
-2494,Enchanting
-2506,Engineering
-2514,Inscription
-2524,Jewelcrafting
-2532,Leatherworking
-2540,Tailoring
-2548,Cooking
-2556,Herbalism
-2564,Skinning
-2572,Mining
-2585,Kul Tiran Fishing
-2586,Legion Fishing
-2587,Draenor Fishing
-2588,Pandaria Fishing
-2589,Cataclysm Fishing
-2590,Northrend Fishing
-2591,Outland Fishing
-2592,Fishing
+2477@@@Blacksmithing
+2485@@@Alchemy
+2494@@@Enchanting
+2506@@@Engineering
+2514@@@Inscription
+2524@@@Jewelcrafting
+2532@@@Leatherworking
+2540@@@Tailoring
+2548@@@Cooking
+2556@@@Herbalism
+2564@@@Skinning
+2572@@@Mining
+2585@@@Kul Tiran Fishing
+2586@@@Legion Fishing
+2587@@@Draenor Fishing
+2588@@@Pandaria Fishing
+2589@@@Cataclysm Fishing
+2590@@@Northrend Fishing
+2591@@@Outland Fishing
+2592@@@Fishing
 8.0.1.26367
-2597,Racial - Dark Iron Dwarf
+2597@@@Racial - Dark Iron Dwarf
 8.0.1.26476
-2598,Racial - Mag'har Orc
+2598@@@Racial - Mag'har Orc
 8.0.1.26624
-817,Pet - Exotic Shale Spider
-2703,Pet - Lizard
-2704,Pet - Horse
-2705,Pet - Exotic Pterrordax
-2706,Pet - Toad
-2707,Pet - Exotic Krolusk
+817@@@Pet - Exotic Shale Spider
+2703@@@Pet - Lizard
+2704@@@Pet - Horse
+2705@@@Pet - Exotic Pterrordax
+2706@@@Pet - Toad
+2707@@@Pet - Exotic Krolusk
 8.0.1.27219
-2716,Second Pet - Hunter
+2716@@@Second Pet - Hunter
 8.1.0.28202
-2719,Pet - Blood Beast
+2719@@@Pet - Blood Beast
 8.1.5.28938
-2721,Racial - Zandalari Troll
-2723,Racial - Kul Tiran
+2721@@@Racial - Zandalari Troll
+2723@@@Racial - Kul Tiran
 8.2.0.30080
-2720,Junkyard Tinkering
-2727,All Classes
-2734,Mount Equipment
+2720@@@Junkyard Tinkering
+2727@@@All Classes
+2734@@@Mount Equipment
 8.3.0.32044
-2773,Racial - Dark Iron Dwarf
-2774,Racial - Mechgnome
-2775,Racial - Vulpera
+2773@@@Racial - Dark Iron Dwarf
+2774@@@Racial - Mechgnome
+2775@@@Racial - Vulpera
 8.3.0.32414
-2776,Language: Vulpera
+2776@@@Language: Vulpera
 9.0.1.33978
-986,Pet - Exotic Stone Hound
-2730,Kyrian
-2731,Venthyr
-2732,Night Fae
-2733,Necrolord
-2750,Shadowlands Alchemy
-2751,Shadowlands Blacksmithing
-2752,Shadowlands Cooking
-2753,Shadowlands Enchanting
-2754,Shadowlands Fishing
-2755,Shadowlands Engineering
-2756,Shadowlands Inscription
-2757,Shadowlands Jewelcrafting
-2758,Shadowlands Leatherworking
-2759,Shadowlands Tailoring
-2760,Shadowlands Herbalism
-2761,Shadowlands Mining
-2762,Shadowlands Skinning
-2777,Soul Cyphering
-2780,Shadowlands Tailoring
-2787,Abominable Stitching
-2791,Ascension Crafting
+986@@@Pet - Exotic Stone Hound
+2730@@@Kyrian
+2731@@@Venthyr
+2732@@@Night Fae
+2733@@@Necrolord
+2750@@@Shadowlands Alchemy
+2751@@@Shadowlands Blacksmithing
+2752@@@Shadowlands Cooking
+2753@@@Shadowlands Enchanting
+2754@@@Shadowlands Fishing
+2755@@@Shadowlands Engineering
+2756@@@Shadowlands Inscription
+2757@@@Shadowlands Jewelcrafting
+2758@@@Shadowlands Leatherworking
+2759@@@Shadowlands Tailoring
+2760@@@Shadowlands Herbalism
+2761@@@Shadowlands Mining
+2762@@@Shadowlands Skinning
+2777@@@Soul Cyphering
+2780@@@Shadowlands Tailoring
+2787@@@Abominable Stitching
+2791@@@Ascension Crafting
 9.0.1.35432
-783,Pet - Exotic Aqiri
-811,Pet - Hound
-817,Pet - Exotic Shale Beast
-987,Pet - Gruffhorn
-2707,Pet - Exotic Carapid
-2805,Pet - Mammoth
-2806,Pet - Courser
-2807,Pet - Camel
+783@@@Pet - Exotic Aqiri
+811@@@Pet - Hound
+817@@@Pet - Exotic Shale Beast
+987@@@Pet - Gruffhorn
+2707@@@Pet - Exotic Carapid
+2805@@@Pet - Mammoth
+2806@@@Pet - Courser
+2807@@@Pet - Camel
 9.0.5.37503
-2811,Stygia Crafting
+2811@@@Stygia Crafting
 9.2.0.41089
-2817,Language: Cypher
-2819,Protoform Synthesis
+2817@@@Language: Cypher
+2819@@@Protoform Synthesis
 10.0.0.44649
-2592,Classic Fishing
-2808,Racial - Dracthyr
-2810,Evoker
-2821,Arcana Manipulation
-2822,Dragon Isles Blacksmithing
-2823,Dragon Isles Alchemy
-2824,Dragon Isles Cooking
-2825,Dragon Isles Enchanting
-2826,Dragon Isles Fishing
-2827,Dragon Isles Engineering
-2828,Dragon Isles Inscription
-2829,Dragon Isles Jewelcrafting
-2830,Dragon Isles Leatherworking
-2831,Dragon Isles Tailoring
-2832,Dragon Isles Herbalism
-2833,Dragon Isles Mining
-2834,Dragon Isles Skinning
-2843,Template Character Spells
-2846,Crafting
+2592@@@Classic Fishing
+2808@@@Racial - Dracthyr
+2810@@@Evoker
+2821@@@Arcana Manipulation
+2822@@@Dragon Isles Blacksmithing
+2823@@@Dragon Isles Alchemy
+2824@@@Dragon Isles Cooking
+2825@@@Dragon Isles Enchanting
+2826@@@Dragon Isles Fishing
+2827@@@Dragon Isles Engineering
+2828@@@Dragon Isles Inscription
+2829@@@Dragon Isles Jewelcrafting
+2830@@@Dragon Isles Leatherworking
+2831@@@Dragon Isles Tailoring
+2832@@@Dragon Isles Herbalism
+2833@@@Dragon Isles Mining
+2834@@@Dragon Isles Skinning
+2843@@@Template Character Spells
+2846@@@Crafting
 10.0.0.44999
-2847,Tuskarr Fishing Gear
+2847@@@Tuskarr Fishing Gear
 10.0.0.45570
-2850,Pet - Lesser Dragonkin
+2850@@@Pet - Lesser Dragonkin

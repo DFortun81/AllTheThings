@@ -1,169 +1,169 @@
-2812,  Outland Leatherworking
-975,  Way of the Grill
-976,  Way of the Wok
-977,  Way of the Pot
-978,  Way of the Steamer
-979,  Way of the Oven
-980,  Way of the Brew
-981,  Apprentice Cooking
-982,  Journeyman Cookbook
-1830,  GarrEnchanting
-2437,  8.0 Blacksmithing
-2454,  Legion Blacksmithing
-2472,  Draenor Blacksmithing
-2473,  Pandaria Blacksmithing
-2474,  Cataclysm Blacksmithing
-2475,  Northrend Blacksmithing
-2476,  Outland Blacksmithing
-2477,  Classic Blacksmithing
-2478,  8.0 Alchemy
-2479,  Legion Alchemy
-2480,  Draenor Alchemy
-2481,  Pandaria Alchemy
-2482,  Cataclysm Alchemy
-2483,  Northrend Alchemy
-2484,  Outland Alchemy
-2485,  Classic Alchemy
-2486,  8.0 Enchanting
-2487,  Legion Enchanting
-2488,  Draenor Enchanting
-2489,  Pandaria Enchanting
-2491,  Cataclysm Enchanting
-2492,  Northrend Enchanting
-2493,  Outland Enchanting
-2494,  Classic Enchanting
-2499,  8.0 Engineering
-2500,  Legion Engineering
-2501,  Draenor Engineering
-2502,  Pandaria Engineering
-2503,  Cataclsym Engineering
-2504,  Northrend Engineering
-2505,  Outland Engineering
-2506,  Classic Engineering
-2507,  8.0 Inscription
-2508,  Legion Inscription
-2509,  Draenor Inscription
-2510,  Pandaria Inscription
-2511,  Cataclysm Inscription
-2512,  Northrend Inscription
-2513,  Outland Inscription
-2514,  Classic Inscription
-2517,  8.0 Jewelcrafting
-2518,  Legion Jewelcrafting
-2519,  Draenor Jewelcrafting
-2520,  Pandaria Jewelcrafting
-2521,  Cataclysm Jewelcrafting
-2522,  Northrend Jewelcrafting
-2523,  Outland Jewelcrafting
-2524,  Classic Jewelcrafting
-2525,  8.0 Leatherworking
-2526,  Legion Leatherworking
-2527,  Draenor Leatherworking
-2528,  Pandaria Leatherworking
-2529,  Cataclysm Leatherworking
-2530,  Northrend Leatherworking
-2531,  Outland Leatherworking
-2532,  Classic Leatherworking
-2533,  8.0 Tailoring
-2534,  Legion Tailoring
-2535,  Draenor Tailoring
-2536,  Pandaria Tailoring
-2537,  Cataclysm Tailoring
-2538,  Northrend Tailoring
-2539,  Outland Tailoring
-2540,  Classic Tailoring
-2541,  8.0 Cooking
-2542,  Legion Cooking
-2543,  Draenor Cooking
-2544,  Pandaria Cooking
-2545,  Cataclysm Cooking
-2546,  Northrend Cooking
-2547,  Outland Cooking
-2548,  Classic Cooking
-2507,  Kul'Tiras Inscription
-2549,  8.0 Herbalism
-2550,  Legion Herbalism
-2551,  Draenor Herbalism
-2552,  Pandaria Herbalism
-2553,  Cataclysm Herbalism
-2554,  Northrend Herbalism
-2555,  Outland Herbalism
-2556,  Classic Herbalism
-2557,  8.0 Skinning
-2558,  Legion Skinning
-2559,  Draenor Skinning
-2560,  Pandaria Skinning
-2561,  Cataclysm Skinning
-2562,  Northrend Skinning
-2563,  Outland Skinning
-2564,  Classic Skinning
-2565,  8.0 Mining
-2566,  Legion Mining
-2567,  Draenor Mining
-2568,  Pandaria Mining
-2569,  Cataclysm Mining
-2570,  Northrend Mining
-2571,  Outland Mining
-2572,  Classic Mining
-2503,  Cataclysm Engineering
-2437,  Kul Tiran Blacksmithing
-2478,  Kul Tiran Alchemy
-2486,  Kul Tiran Enchanting
-2499,  Kul Tiran Engineering
-2507,  Kul Tiran Inscription
-2517,  Kul Tiran Jewelcrafting
-2525,  Kul Tiran Leatherworking
-2533,  Kul Tiran Tailoring
-2541,  Kul Tiran Cooking
-2549,  Kul Tiran Herbalism
-2557,  Kul Tiran Skinning
-2565,  Kul Tiran Mining
-2477,  Blacksmithing
-2485,  Alchemy
-2494,  Enchanting
-2506,  Engineering
-2514,  Inscription
-2524,  Jewelcrafting
-2532,  Leatherworking
-2540,  Tailoring
-2548,  Cooking
-2556,  Herbalism
-2564,  Skinning
-2572,  Mining
-2585,  Kul Tiran Fishing
-2586,  Legion Fishing
-2587,  Draenor Fishing
-2588,  Pandaria Fishing
-2589,  Cataclysm Fishing
-2590,  Northrend Fishing
-2591,  Outland Fishing
-2592,  Fishing
-2750,  Shadowlands Alchemy
-2751,  Shadowlands Blacksmithing
-2752,  Shadowlands Cooking
-2753,  Shadowlands Enchanting
-2754,  Shadowlands Fishing
-2755,  Shadowlands Engineering
-2756,  Shadowlands Inscription
-2757,  Shadowlands Jewelcrafting
-2758,  Shadowlands Leatherworking
-2759,  Shadowlands Tailoring
-2760,  Shadowlands Herbalism
-2761,  Shadowlands Mining
-2762,  Shadowlands Skinning
-2780,  Shadowlands Tailoring
-2592,Classic Fishing
-2822,Dragon Isles Blacksmithing
-2823,Dragon Isles Alchemy
-2824,Dragon Isles Cooking
-2825,Dragon Isles Enchanting
-2826,Dragon Isles Fishing
-2827,Dragon Isles Engineering
-2828,Dragon Isles Inscription
-2829,Dragon Isles Jewelcrafting
-2830,Dragon Isles Leatherworking
-2831,Dragon Isles Tailoring
-2832,Dragon Isles Herbalism
-2833,Dragon Isles Mining
-2834,Dragon Isles Skinning
-2846,Crafting
+2812@@@Outland Leatherworking
+975@@@Way of the Grill
+976@@@Way of the Wok
+977@@@Way of the Pot
+978@@@Way of the Steamer
+979@@@Way of the Oven
+980@@@Way of the Brew
+981@@@Apprentice Cooking
+982@@@Journeyman Cookbook
+1830@@@GarrEnchanting
+2437@@@8.0 Blacksmithing
+2454@@@Legion Blacksmithing
+2472@@@Draenor Blacksmithing
+2473@@@Pandaria Blacksmithing
+2474@@@Cataclysm Blacksmithing
+2475@@@Northrend Blacksmithing
+2476@@@Outland Blacksmithing
+2477@@@Classic Blacksmithing
+2478@@@8.0 Alchemy
+2479@@@Legion Alchemy
+2480@@@Draenor Alchemy
+2481@@@Pandaria Alchemy
+2482@@@Cataclysm Alchemy
+2483@@@Northrend Alchemy
+2484@@@Outland Alchemy
+2485@@@Classic Alchemy
+2486@@@8.0 Enchanting
+2487@@@Legion Enchanting
+2488@@@Draenor Enchanting
+2489@@@Pandaria Enchanting
+2491@@@Cataclysm Enchanting
+2492@@@Northrend Enchanting
+2493@@@Outland Enchanting
+2494@@@Classic Enchanting
+2499@@@8.0 Engineering
+2500@@@Legion Engineering
+2501@@@Draenor Engineering
+2502@@@Pandaria Engineering
+2503@@@Cataclsym Engineering
+2504@@@Northrend Engineering
+2505@@@Outland Engineering
+2506@@@Classic Engineering
+2507@@@8.0 Inscription
+2508@@@Legion Inscription
+2509@@@Draenor Inscription
+2510@@@Pandaria Inscription
+2511@@@Cataclysm Inscription
+2512@@@Northrend Inscription
+2513@@@Outland Inscription
+2514@@@Classic Inscription
+2517@@@8.0 Jewelcrafting
+2518@@@Legion Jewelcrafting
+2519@@@Draenor Jewelcrafting
+2520@@@Pandaria Jewelcrafting
+2521@@@Cataclysm Jewelcrafting
+2522@@@Northrend Jewelcrafting
+2523@@@Outland Jewelcrafting
+2524@@@Classic Jewelcrafting
+2525@@@8.0 Leatherworking
+2526@@@Legion Leatherworking
+2527@@@Draenor Leatherworking
+2528@@@Pandaria Leatherworking
+2529@@@Cataclysm Leatherworking
+2530@@@Northrend Leatherworking
+2531@@@Outland Leatherworking
+2532@@@Classic Leatherworking
+2533@@@8.0 Tailoring
+2534@@@Legion Tailoring
+2535@@@Draenor Tailoring
+2536@@@Pandaria Tailoring
+2537@@@Cataclysm Tailoring
+2538@@@Northrend Tailoring
+2539@@@Outland Tailoring
+2540@@@Classic Tailoring
+2541@@@8.0 Cooking
+2542@@@Legion Cooking
+2543@@@Draenor Cooking
+2544@@@Pandaria Cooking
+2545@@@Cataclysm Cooking
+2546@@@Northrend Cooking
+2547@@@Outland Cooking
+2548@@@Classic Cooking
+2507@@@Kul'Tiras Inscription
+2549@@@8.0 Herbalism
+2550@@@Legion Herbalism
+2551@@@Draenor Herbalism
+2552@@@Pandaria Herbalism
+2553@@@Cataclysm Herbalism
+2554@@@Northrend Herbalism
+2555@@@Outland Herbalism
+2556@@@Classic Herbalism
+2557@@@8.0 Skinning
+2558@@@Legion Skinning
+2559@@@Draenor Skinning
+2560@@@Pandaria Skinning
+2561@@@Cataclysm Skinning
+2562@@@Northrend Skinning
+2563@@@Outland Skinning
+2564@@@Classic Skinning
+2565@@@8.0 Mining
+2566@@@Legion Mining
+2567@@@Draenor Mining
+2568@@@Pandaria Mining
+2569@@@Cataclysm Mining
+2570@@@Northrend Mining
+2571@@@Outland Mining
+2572@@@Classic Mining
+2503@@@Cataclysm Engineering
+2437@@@Kul Tiran Blacksmithing
+2478@@@Kul Tiran Alchemy
+2486@@@Kul Tiran Enchanting
+2499@@@Kul Tiran Engineering
+2507@@@Kul Tiran Inscription
+2517@@@Kul Tiran Jewelcrafting
+2525@@@Kul Tiran Leatherworking
+2533@@@Kul Tiran Tailoring
+2541@@@Kul Tiran Cooking
+2549@@@Kul Tiran Herbalism
+2557@@@Kul Tiran Skinning
+2565@@@Kul Tiran Mining
+2477@@@Blacksmithing
+2485@@@Alchemy
+2494@@@Enchanting
+2506@@@Engineering
+2514@@@Inscription
+2524@@@Jewelcrafting
+2532@@@Leatherworking
+2540@@@Tailoring
+2548@@@Cooking
+2556@@@Herbalism
+2564@@@Skinning
+2572@@@Mining
+2585@@@Kul Tiran Fishing
+2586@@@Legion Fishing
+2587@@@Draenor Fishing
+2588@@@Pandaria Fishing
+2589@@@Cataclysm Fishing
+2590@@@Northrend Fishing
+2591@@@Outland Fishing
+2592@@@Fishing
+2750@@@Shadowlands Alchemy
+2751@@@Shadowlands Blacksmithing
+2752@@@Shadowlands Cooking
+2753@@@Shadowlands Enchanting
+2754@@@Shadowlands Fishing
+2755@@@Shadowlands Engineering
+2756@@@Shadowlands Inscription
+2757@@@Shadowlands Jewelcrafting
+2758@@@Shadowlands Leatherworking
+2759@@@Shadowlands Tailoring
+2760@@@Shadowlands Herbalism
+2761@@@Shadowlands Mining
+2762@@@Shadowlands Skinning
+2780@@@Shadowlands Tailoring
+2592@@@Classic Fishing
+2822@@@Dragon Isles Blacksmithing
+2823@@@Dragon Isles Alchemy
+2824@@@Dragon Isles Cooking
+2825@@@Dragon Isles Enchanting
+2826@@@Dragon Isles Fishing
+2827@@@Dragon Isles Engineering
+2828@@@Dragon Isles Inscription
+2829@@@Dragon Isles Jewelcrafting
+2830@@@Dragon Isles Leatherworking
+2831@@@Dragon Isles Tailoring
+2832@@@Dragon Isles Herbalism
+2833@@@Dragon Isles Mining
+2834@@@Dragon Isles Skinning
+2846@@@Crafting

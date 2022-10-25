@@ -6,6 +6,7 @@ from pathlib import Path
 import requests
 from ThingTypes import (
     DATAS_FOLDER,
+    DELIMITER,
     Achievements,
     Factions,
     FlightPaths,
@@ -79,7 +80,7 @@ def build_profession_dict() -> dict[str, int]:
         builds = builds_file.readlines()
         for skillline_line in skillline_file:
             if skillline_line not in builds:
-                skillline_id, profession = skillline_line.split(",")
+                skillline_id, profession = skillline_line.split(DELIMITER)
                 skillline_id = re.sub("\\D", "", skillline_id)
                 if skillline_id + "\n" not in exclusion_list:
                     profession_dict[profession.strip()] = int(skillline_id)
@@ -91,7 +92,7 @@ def get_other_skilllines() -> list[int]:
     other_skilllines = list[int]()
     with open(Path("Exclusion", "SkillLineOther.txt")) as skilllineother_file:
         for line in skilllineother_file:
-            skillline_id = re.sub("\\D", "", line.split(",")[0])
+            skillline_id = re.sub("\\D", "", line.split(DELIMITER)[0])
             other_skilllines.append(int(skillline_id))
     return other_skilllines
 
@@ -117,7 +118,7 @@ def sort_raw_file_recipes() -> None:
                     if line in builds:
                         recipe_list.append(line)
                     else:
-                        spell, skill_line = line.split(",")
+                        spell, skill_line = line.split(DELIMITER)
                         skill_line_id = int(skill_line.strip())
                         if (
                             skill_line_id == profession_dict[profession]
@@ -140,7 +141,7 @@ def create_raw_file(thing: type[Thing]) -> None:
                 # TODO: this only finds new Things, not removed Things
                 difference = sorted(
                     set(thing_list) - set(old_lines),
-                    key=lambda x: (float(x.split(",")[0])),
+                    key=lambda x: (float(x.split(DELIMITER)[0])),
                 )
                 if difference:
                     raw_file.write(build)
@@ -149,19 +150,8 @@ def create_raw_file(thing: type[Thing]) -> None:
 
 def extract_nth_column(csv_path: Path, n: int) -> list[str]:
     """Extract nth column from CSV file."""
-    csv_list = []
     with open(csv_path) as csv_file:
-        for line in csv_file:
-            try:
-                if n != 1:
-                    line = line.split(",")[n].strip() + "\n"
-                else:
-                    line = line.split(",")[1:]
-                    line = ",".join(line)
-            except IndexError:
-                line = ""
-            csv_list.append(line)
-    return csv_list
+        return [line.split(DELIMITER)[n].strip() + "\n" for line in csv_file]
 
 
 def remove_empty_builds(lines: list[str]) -> list[str]:
@@ -391,7 +381,8 @@ def add_latest_data(build: str) -> None:
             old_lines = raw_file.readlines()
             # TODO: this only finds new Things, not removed Things
             difference = sorted(
-                set(thing_list) - set(old_lines), key=lambda x: (float(x.split(",")[0]))
+                set(thing_list) - set(old_lines),
+                key=lambda x: (float(x.split(DELIMITER)[0])),
             )
             if difference:
                 raw_file.write(build + "\n")

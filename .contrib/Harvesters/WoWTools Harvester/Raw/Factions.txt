@@ -1,1000 +1,1000 @@
 0.5.3.3368
-1,Human (Player)
-2,Orc (Player)
-3,Dwarf (Player)
-4,Nightelf (Player)
-5,Undead (Player)
-6,Tauren (Player)
-7,Creature
-8,Gnome (Player)
-9,Troll (Player)
-14,Monster
-15,Defias (Azeroth)
-16,Gnoll (Riverpaw)
-17,Gnoll (Redridge)
-18,Gnoll (Shadowhide)
-19,Murloc
-20,Undead, Scourge
-21,Booty Bay
-22,Spider
-23,Boar
-24,Worgen
-25,Kobold
-26,Bloodscalp Troll
-27,Skullsplitter Troll
-28,Prey
-29,Wolf
-30,Defias Traitor (Azeroth)
-31,Friendly
-32,Trogg
-33,Troll, Ice
-34,Orc, Blackrock
-35,Villian
-36,Victim
-37,Bear
-38,Ogre
-39,Kurzen's Mercenaries
-40,Escortee
-41,Stranglethorn Goblins
-42,Raptor
-43,Basilisk
-44,Dragonflight - Green
-45,Lost Ones
-46,Orc, Stonard
-47,Dwarf, Ironforge
-48,Dwarf, DarkIron
-49,Human, Night Watch
-50,Dragonflight - Red
-51,Gnoll (Mosshide)
-52,Orc, Dragonmaw
-53,Gnome, Leper
-54,Gnome
-55,Leopard
-56,Scarlet Crusade
-57,Gnoll (Rothide)
-58,Gorilla
-59,Vulture
-60,Naga, Monster
-61,Dalaran (Alliance Ally)
-62,Forlorn Spirit
-63,Darkhowl
-64,Grell
-65,Furbolg
-66,Horde Friendly
-67,Unused - Use Me for Something
-68,Undead, Forsaken
-69,Night Elf
-70,Syndicate
-71,Hillsbrad Militia
-72,Human, Stormwind
-73,Demon
-74,Elemental
-75,Spirit
-76,Orc, Orgrimar
-77,Treasure
-78,Gnoll (Mudsnout)
-79,HIllsbrad, Southshore Mayor
-80,Dragonflight - Black
-81,Tauren, Thunderbluff
-82,Troll, Witherbark
-83,Monster - Non Social
-84,Razormane
-85,Quilboar, Bristleback
-86,Monster - Social
-87,Bloodsail Buccaneers
-88,Blackfathom
-89,Makrura
-90,Kolkar
-91,Galak
-92,Gelkis
-93,Magram
-94,Maraudine
-108,Human, Theramore
-109,Quilboar, Razorfen
-110,Quilboar, Razormane
-111,Quilboar, Deathshead
-128,Enemy
-148,Ambient
-168,Nethergarde Caravan
-169,AAAReuseme
-189,Alliance Generic
-209,Nethergarde
+1@@@Human (Player)
+2@@@Orc (Player)
+3@@@Dwarf (Player)
+4@@@Nightelf (Player)
+5@@@Undead (Player)
+6@@@Tauren (Player)
+7@@@Creature
+8@@@Gnome (Player)
+9@@@Troll (Player)
+14@@@Monster
+15@@@Defias (Azeroth)
+16@@@Gnoll (Riverpaw)
+17@@@Gnoll (Redridge)
+18@@@Gnoll (Shadowhide)
+19@@@Murloc
+20@@@Undead, Scourge
+21@@@Booty Bay
+22@@@Spider
+23@@@Boar
+24@@@Worgen
+25@@@Kobold
+26@@@Bloodscalp Troll
+27@@@Skullsplitter Troll
+28@@@Prey
+29@@@Wolf
+30@@@Defias Traitor (Azeroth)
+31@@@Friendly
+32@@@Trogg
+33@@@Troll, Ice
+34@@@Orc, Blackrock
+35@@@Villian
+36@@@Victim
+37@@@Bear
+38@@@Ogre
+39@@@Kurzen's Mercenaries
+40@@@Escortee
+41@@@Stranglethorn Goblins
+42@@@Raptor
+43@@@Basilisk
+44@@@Dragonflight - Green
+45@@@Lost Ones
+46@@@Orc, Stonard
+47@@@Dwarf, Ironforge
+48@@@Dwarf, DarkIron
+49@@@Human, Night Watch
+50@@@Dragonflight - Red
+51@@@Gnoll (Mosshide)
+52@@@Orc, Dragonmaw
+53@@@Gnome, Leper
+54@@@Gnome
+55@@@Leopard
+56@@@Scarlet Crusade
+57@@@Gnoll (Rothide)
+58@@@Gorilla
+59@@@Vulture
+60@@@Naga, Monster
+61@@@Dalaran (Alliance Ally)
+62@@@Forlorn Spirit
+63@@@Darkhowl
+64@@@Grell
+65@@@Furbolg
+66@@@Horde Friendly
+67@@@Unused - Use Me for Something
+68@@@Undead, Forsaken
+69@@@Night Elf
+70@@@Syndicate
+71@@@Hillsbrad Militia
+72@@@Human, Stormwind
+73@@@Demon
+74@@@Elemental
+75@@@Spirit
+76@@@Orc, Orgrimar
+77@@@Treasure
+78@@@Gnoll (Mudsnout)
+79@@@HIllsbrad, Southshore Mayor
+80@@@Dragonflight - Black
+81@@@Tauren, Thunderbluff
+82@@@Troll, Witherbark
+83@@@Monster - Non Social
+84@@@Razormane
+85@@@Quilboar, Bristleback
+86@@@Monster - Social
+87@@@Bloodsail Buccaneers
+88@@@Blackfathom
+89@@@Makrura
+90@@@Kolkar
+91@@@Galak
+92@@@Gelkis
+93@@@Magram
+94@@@Maraudine
+108@@@Human, Theramore
+109@@@Quilboar, Razorfen
+110@@@Quilboar, Razormane
+111@@@Quilboar, Deathshead
+128@@@Enemy
+148@@@Ambient
+168@@@Nethergarde Caravan
+169@@@AAAReuseme
+189@@@Alliance Generic
+209@@@Nethergarde
 0.5.5.3494
-229,Wailing Caverns
-249,Silithid
+229@@@Wailing Caverns
+249@@@Silithid
 0.6.0.3592
-269,Alliance Red Team
-270,Alliance Blue Team
-289,Blackwater Pirates
+269@@@Alliance Red Team
+270@@@Alliance Blue Team
+289@@@Blackwater Pirates
 0.7.0.3694
-309,Scorpid
-310,Bat
-311,Titan
-329,Taskmaster Fizzule
-349,Ravenholdt
-369,Gadgetzan
-389,Gnomeregan Bug
-409,Harpy
+309@@@Scorpid
+310@@@Bat
+311@@@Titan
+329@@@Taskmaster Fizzule
+349@@@Ravenholdt
+369@@@Gadgetzan
+389@@@Gnomeregan Bug
+409@@@Harpy
 0.8.0.3734
-429,Burning Blade
-449,Shadowsilk Poacher
-450,Searing Spiders
+429@@@Burning Blade
+449@@@Shadowsilk Poacher
+450@@@Searing Spiders
 0.9.0.3807
-67,_REUSE ME 003
-92,Gelkis Centaurs
-93,Magram Centaurs
-169,Steamwheedle Cartel
-469,_REUSE ME 002
-470,Ratchet
-471,Wildhammer Clan
-489,Goblin, Darkiron Bar Patron
+67@@@_REUSE ME 003
+92@@@Gelkis Centaurs
+93@@@Magram Centaurs
+169@@@Steamwheedle Cartel
+469@@@_REUSE ME 002
+470@@@Ratchet
+471@@@Wildhammer Clan
+489@@@Goblin, Darkiron Bar Patron
 1.0.0.3980
-1,PLAYER, Human
-2,PLAYER, Orc
-3,PLAYER, Dwarf
-4,PLAYER, Night Elf
-5,PLAYER, Undead
-6,PLAYER, Tauren 
-8,PLAYER, Gnome
-9,PLAYER, Troll
-15,Defias Brotherhood
-16,Gnoll, Riverpaw
-17,Gnoll, Redridge
-18,Gnoll, Shadowhide
-22,Beast, Spider
-23,Beast, Boar
-26,Troll, Bloodscalp
-27,Troll, Skullsplitter
-29,Beast, Wolf
-30,Defias Brotherhood Traitor
-33,Troll, Frostmane
-37,Beast, Bear
-41,Venture Company
-42,Beast, Raptor
-43,Beast, Basilisk
-44,Dragonflight, Green
-46,Blacksmithing - Armorsmithing
-47,Ironforge
-48,Dwarf, Dark Iron
-50,Dragonflight, Red
-51,Gnoll, Mosshide
-54,Gnomeregan Exiles
-57,Gnoll, Rothide
-58,Beast, Gorilla
-59,Beast, Vulture
-60,Naga
-61,Dalaran
-66,Horde Generic
-67,Horde
-68,Undercity
-69,Darnassus
-72,Stormwind
-76,Orgrimmar
-78,Gnoll, Mudsnout
-80,Dragonflight, Black
-81,Thunder Bluff
-83,Leatherworking - Elemental
-84,Quilboar, Razormane
-86,Leatherworking - Dragonscale
-90,Centaur, Kolkar
-91,Centaur, Galak
-92,Centaur, Gelkis
-93,Centaur, Magram
-110,Quilboar, Razormane 2
-289,Blacksmithing - Weaponsmithing
-310,Beast, Bat
-450,Beast, Spider, Searing
-469,Alliance
-471,Dwarf, Wildhammer
-489,Goblin, Dark Iron Bar Patron
-509,Horde Red Team
-510,Horde Blue Team
-511,Giant
-529,Argent Dawn
-530,Darkspear Trolls
-531,Dragonflight, Bronze
-532,Dragonflight, Blue
-549,Leatherworking - Tribal
-550,Engineering - Goblin
-551,Engineering - Gnome
-569,Blacksmithing - Hammersmithing
-570,Blacksmithing - Axesmithing
-571,Blacksmithing - Swordsmithing
-572,Troll, Vilebranch
-573,Southsea Freebooters
-574,Caer Darrow
-575,Furbolg, Uncorrupted
-576,Timbermaw Furbolgs
-577,Everlook
-589,Wintersaber Trainers
-609,Cenarion Circle
-629,Shatterspear Trolls
-630,Ravasaur Trainers
+1@@@PLAYER, Human
+2@@@PLAYER, Orc
+3@@@PLAYER, Dwarf
+4@@@PLAYER, Night Elf
+5@@@PLAYER, Undead
+6@@@PLAYER, Tauren
+8@@@PLAYER, Gnome
+9@@@PLAYER, Troll
+15@@@Defias Brotherhood
+16@@@Gnoll, Riverpaw
+17@@@Gnoll, Redridge
+18@@@Gnoll, Shadowhide
+22@@@Beast, Spider
+23@@@Beast, Boar
+26@@@Troll, Bloodscalp
+27@@@Troll, Skullsplitter
+29@@@Beast, Wolf
+30@@@Defias Brotherhood Traitor
+33@@@Troll, Frostmane
+37@@@Beast, Bear
+41@@@Venture Company
+42@@@Beast, Raptor
+43@@@Beast, Basilisk
+44@@@Dragonflight, Green
+46@@@Blacksmithing - Armorsmithing
+47@@@Ironforge
+48@@@Dwarf, Dark Iron
+50@@@Dragonflight, Red
+51@@@Gnoll, Mosshide
+54@@@Gnomeregan Exiles
+57@@@Gnoll, Rothide
+58@@@Beast, Gorilla
+59@@@Beast, Vulture
+60@@@Naga
+61@@@Dalaran
+66@@@Horde Generic
+67@@@Horde
+68@@@Undercity
+69@@@Darnassus
+72@@@Stormwind
+76@@@Orgrimmar
+78@@@Gnoll, Mudsnout
+80@@@Dragonflight, Black
+81@@@Thunder Bluff
+83@@@Leatherworking - Elemental
+84@@@Quilboar, Razormane
+86@@@Leatherworking - Dragonscale
+90@@@Centaur, Kolkar
+91@@@Centaur, Galak
+92@@@Centaur, Gelkis
+93@@@Centaur, Magram
+110@@@Quilboar, Razormane 2
+289@@@Blacksmithing - Weaponsmithing
+310@@@Beast, Bat
+450@@@Beast, Spider, Searing
+469@@@Alliance
+471@@@Dwarf, Wildhammer
+489@@@Goblin, Dark Iron Bar Patron
+509@@@Horde Red Team
+510@@@Horde Blue Team
+511@@@Giant
+529@@@Argent Dawn
+530@@@Darkspear Trolls
+531@@@Dragonflight, Bronze
+532@@@Dragonflight, Blue
+549@@@Leatherworking - Tribal
+550@@@Engineering - Goblin
+551@@@Engineering - Gnome
+569@@@Blacksmithing - Hammersmithing
+570@@@Blacksmithing - Axesmithing
+571@@@Blacksmithing - Swordsmithing
+572@@@Troll, Vilebranch
+573@@@Southsea Freebooters
+574@@@Caer Darrow
+575@@@Furbolg, Uncorrupted
+576@@@Timbermaw Furbolgs
+577@@@Everlook
+589@@@Wintersaber Trainers
+609@@@Cenarion Circle
+629@@@Shatterspear Trolls
+630@@@Ravasaur Trainers
 1.1.2.4125
-22,Beast - Spider
-23,Beast - Boar
-29,Beast - Wolf
-37,Beast - Bear
-42,Beast - Raptor
-46, Blacksmithing - Armorsmithing
-58,Beast - Gorilla
-59,Thorium Brotherhood
-83, Leatherworking - Elemental
-86, Leatherworking - Dragonscale
-92,Gelkis Clan Centaur
-93,Magram Clan Centaur
-289, Blacksmithing - Weaponsmithing
-310,Beast - Bat
-450,Searing Spider
-549, Leatherworking - Tribal
-550, Engineering - Goblin
-551, Engineering - Gnome
-569, Blacksmithing - Hammersmithing
-570, Blacksmithing - Axesmithing
-571, Blacksmithing - Swordsmithing
-649,Majordomo Executus
-669,Beast - Carrion Bird
-670,Beast - Cat
-671,Beast - Crab
-672,Beast - Crocilisk
-673,Beast - Hyena
-674,Beast - Owl
-675,Beast - Scorpid
-676,Beast - Tallstrider
-677,Beast - Turtle
-678,Beast - Wind Serpent
-679,Training Dummy
-689,Dragonflight, Black - Bait
+22@@@Beast - Spider
+23@@@Beast - Boar
+29@@@Beast - Wolf
+37@@@Beast - Bear
+42@@@Beast - Raptor
+46@@@ Blacksmithing - Armorsmithing
+58@@@Beast - Gorilla
+59@@@Thorium Brotherhood
+83@@@ Leatherworking - Elemental
+86@@@ Leatherworking - Dragonscale
+92@@@Gelkis Clan Centaur
+93@@@Magram Clan Centaur
+289@@@ Blacksmithing - Weaponsmithing
+310@@@Beast - Bat
+450@@@Searing Spider
+549@@@ Leatherworking - Tribal
+550@@@ Engineering - Goblin
+551@@@ Engineering - Gnome
+569@@@ Blacksmithing - Hammersmithing
+570@@@ Blacksmithing - Axesmithing
+571@@@ Blacksmithing - Swordsmithing
+649@@@Majordomo Executus
+669@@@Beast - Carrion Bird
+670@@@Beast - Cat
+671@@@Beast - Crab
+672@@@Beast - Crocilisk
+673@@@Beast - Hyena
+674@@@Beast - Owl
+675@@@Beast - Scorpid
+676@@@Beast - Tallstrider
+677@@@Beast - Turtle
+678@@@Beast - Wind Serpent
+679@@@Training Dummy
+689@@@Dragonflight, Black - Bait
 1.13.0.28211
-16,Gnoll - Riverpaw
-17,Gnoll - Redridge
-18,Gnoll - Shadowhide
-48,Dark Iron Dwarves
-51,Gnoll - Mosshide
-53,Gnome - Leper
-57,Gnoll - Rothide
-78,Gnoll - Mudsnout
-108,Theramore
-269,Silvermoon Remnant
-270,Zandalar Tribe
-509,The League of Arathor
-510,The Defilers
-576,Timbermaw Hold
-709,Battleground Neutral
-729,Frostwolf Clan
-730,Stormpike Guard
-749,Hydraxian Waterlords
-750,Sulfuron Firelords
-769,Gizlock's Dummy
-770,Gizlock's Charm
-771,Gizlock
-789,Moro'gai
-790,Spirit Guide - Alliance
-809,Shen'dralar
-829,Ogre (Captain Kromcrush)
-849,Spirit Guide - Horde
-869,Jaedenar
-889,Warsong Outriders
-890,Silverwing Sentinels
-891,Alliance Forces
-892,Horde Forces
-893,Revantusk Trolls
-909,Darkmoon Faire
-910,Brood of Nozdormu
-912,Might of Kalimdor
-915,Armies of C'Thun
-916,Silithid Attackers
-917,The Ironforge Brigade
-918,RC Enemies
-919,RC Objects
-920,Red
-921,Blue
-928,Scourge Invaders
-931,Test Faction (not a real faction)
-950,ToWoW - Flag
-951,ToWoW - Flag Trigger Alliance (DND)
-954,ToWoW - Flag Trigger Horde (DND)
+16@@@Gnoll - Riverpaw
+17@@@Gnoll - Redridge
+18@@@Gnoll - Shadowhide
+48@@@Dark Iron Dwarves
+51@@@Gnoll - Mosshide
+53@@@Gnome - Leper
+57@@@Gnoll - Rothide
+78@@@Gnoll - Mudsnout
+108@@@Theramore
+269@@@Silvermoon Remnant
+270@@@Zandalar Tribe
+509@@@The League of Arathor
+510@@@The Defilers
+576@@@Timbermaw Hold
+709@@@Battleground Neutral
+729@@@Frostwolf Clan
+730@@@Stormpike Guard
+749@@@Hydraxian Waterlords
+750@@@Sulfuron Firelords
+769@@@Gizlock's Dummy
+770@@@Gizlock's Charm
+771@@@Gizlock
+789@@@Moro'gai
+790@@@Spirit Guide - Alliance
+809@@@Shen'dralar
+829@@@Ogre (Captain Kromcrush)
+849@@@Spirit Guide - Horde
+869@@@Jaedenar
+889@@@Warsong Outriders
+890@@@Silverwing Sentinels
+891@@@Alliance Forces
+892@@@Horde Forces
+893@@@Revantusk Trolls
+909@@@Darkmoon Faire
+910@@@Brood of Nozdormu
+912@@@Might of Kalimdor
+915@@@Armies of C'Thun
+916@@@Silithid Attackers
+917@@@The Ironforge Brigade
+918@@@RC Enemies
+919@@@RC Objects
+920@@@Red
+921@@@Blue
+928@@@Scourge Invaders
+931@@@Test Faction (not a real faction)
+950@@@ToWoW - Flag
+951@@@ToWoW - Flag Trigger Alliance (DND)
+954@@@ToWoW - Flag Trigger Horde (DND)
 1.13.2.30172
-2402,CTF - Flag - Horde
-2403,CTF - Flag - Alliance
+2402@@@CTF - Flag - Horde
+2403@@@CTF - Flag - Alliance
 1.14.1.41077
-1041,Frenzy
+1041@@@Frenzy
 1.14.2.41959
-2505,Dragonflight, Chromatic
+2505@@@Dragonflight, Chromatic
 2.0.0.6080
-911,Silvermoon City
-914,PLAYER, Blood Elf
-922,Tranquillien
-923,Farstriders
-924,DEPRECATED
-925,Sunstriders
-926,Magister's Guild
-927,PLAYER, Draenei
-929,Bloodmaul Clan
-930,Exodar
-932,The Aldor
-933,The Consortium
-934,The Scryers
-935,The Sha'tar
-936,Shattrath City
-937,Troll, Forest
-938,The Omenai
-939,DEPRECATED
-940,The Sons of Lothar
-941,The Mag'har
-942,Cenarion Expedition
-943,Fel Orc
-944,Fel Orc Ghost
-945,Sons of Lothar Ghosts
-946,Honor Hold
-947,Thrallmar
-948,Test Faction 2
-949,Test Faction 1
-952,Test Faction 3
-953,Test Faction 4
-955,Broken
-956,Ethereum
-957,Earth Elemental
-958,Fighting Robots
-959,Actor Good
-960,Actor Evil
-961,Stillpine Furbolg
-962,Crazed Owlkin
-963,Chess Alliance
-964,Chess Horde
-965,Monster Spar
-966,Monster Spar Buddy
-967,The Violet Eye
-968,Sunhawks
-969,Hand of Argus
-970,Sporeggar
-971,Fungal Giant
-972,Spore Bat
-973,Monster, Predator
-974,Monster, Prey
-975,Void Anomaly
-976,Hyjal Defenders
-977,Hyjal Invaders
-978,Kurenai
-979,Earthen Ring
-980,Outland
-981,Arakkoa
-982,Zangarmarsh Banner (Alliance)
-983,Zangarmarsh Banner (Horde)
-984,Zangarmarsh Banner (Neutral)
-985,Caverns of Time - Thrall
-986,Caverns of Time - Durnholde
-987,Caverns of Time - Southshore Guards
-988,Shadow Council Covert
-989,Keepers of Time
-990,The Scale of the Sands
-991,Dark Portal Defender, Alliance
-992,Dark Portal Defender, Horde
-993,Dark Portal Attacker, Legion
-994,Inciter Trigger 1
-995,Inciter Trigger 2
-996,Inciter Trigger 3
-997,Inciter Trigger 4
-998,Inciter Trigger 5
-999,Mana Creature
-1000,Khadgar's Servant
-1001,Bladespire Clan
-1002,Ethereum Sparbuddy
-1003,Protectorate
-1004,Arcane Annihilator (DNR)
-1005,REUSE
+911@@@Silvermoon City
+914@@@PLAYER, Blood Elf
+922@@@Tranquillien
+923@@@Farstriders
+924@@@DEPRECATED
+925@@@Sunstriders
+926@@@Magister's Guild
+927@@@PLAYER, Draenei
+929@@@Bloodmaul Clan
+930@@@Exodar
+932@@@The Aldor
+933@@@The Consortium
+934@@@The Scryers
+935@@@The Sha'tar
+936@@@Shattrath City
+937@@@Troll, Forest
+938@@@The Omenai
+939@@@DEPRECATED
+940@@@The Sons of Lothar
+941@@@The Mag'har
+942@@@Cenarion Expedition
+943@@@Fel Orc
+944@@@Fel Orc Ghost
+945@@@Sons of Lothar Ghosts
+946@@@Honor Hold
+947@@@Thrallmar
+948@@@Test Faction 2
+949@@@Test Faction 1
+952@@@Test Faction 3
+953@@@Test Faction 4
+955@@@Broken
+956@@@Ethereum
+957@@@Earth Elemental
+958@@@Fighting Robots
+959@@@Actor Good
+960@@@Actor Evil
+961@@@Stillpine Furbolg
+962@@@Crazed Owlkin
+963@@@Chess Alliance
+964@@@Chess Horde
+965@@@Monster Spar
+966@@@Monster Spar Buddy
+967@@@The Violet Eye
+968@@@Sunhawks
+969@@@Hand of Argus
+970@@@Sporeggar
+971@@@Fungal Giant
+972@@@Spore Bat
+973@@@Monster, Predator
+974@@@Monster, Prey
+975@@@Void Anomaly
+976@@@Hyjal Defenders
+977@@@Hyjal Invaders
+978@@@Kurenai
+979@@@Earthen Ring
+980@@@Outland
+981@@@Arakkoa
+982@@@Zangarmarsh Banner (Alliance)
+983@@@Zangarmarsh Banner (Horde)
+984@@@Zangarmarsh Banner (Neutral)
+985@@@Caverns of Time - Thrall
+986@@@Caverns of Time - Durnholde
+987@@@Caverns of Time - Southshore Guards
+988@@@Shadow Council Covert
+989@@@Keepers of Time
+990@@@The Scale of the Sands
+991@@@Dark Portal Defender, Alliance
+992@@@Dark Portal Defender, Horde
+993@@@Dark Portal Attacker, Legion
+994@@@Inciter Trigger 1
+995@@@Inciter Trigger 2
+996@@@Inciter Trigger 3
+997@@@Inciter Trigger 4
+998@@@Inciter Trigger 5
+999@@@Mana Creature
+1000@@@Khadgar's Servant
+1001@@@Bladespire Clan
+1002@@@Ethereum Sparbuddy
+1003@@@Protectorate
+1004@@@Arcane Annihilator (DNR)
+1005@@@REUSE
 2.4.3.8606
-994,Inciter Trigger
-1005,Friendly, Hidden
-1006,Kirin'Var - Dathric
-1007,Kirin'Var - Belmara
-1008,Kirin'Var - Luminrath
-1009,Kirin'Var - Cohlien
-1010,Servant of Illidan
-1011,Lower City
-1012,Ashtongue Deathsworn
-1013,Spirits of Shadowmoon 1
-1014,Spirits of Shadowmoon 2
-1015,Netherwing
-1016,Wyrmcult
-1017,Treant
-1018,Leotheras Demon I
-1019,Leotheras Demon II
-1020,Leotheras Demon III
-1021,Leotheras Demon IV
-1022,Leotheras Demon V
-1023,Azaloth
-1024,Rock Flayer
-1025,Flayer Hunter
-1026,Shadowmoon Shade
-1027,Legion Communicator
-1028,Ravenswood Ancients
-1029,Chess, Friendly to All Chess
-1030,Black Temple Gates - Illidari
-1031,Sha'tari Skyguard
-1032,Area 52
-1033,Maiev
-1034,Skettis Shadowy Arakkoa
-1035,Skettis Arakkoa
-1036,Dragonmaw Enemy
-1037,REUSE
-1038,Ogri'la
-1039,Ravager
-1040,REUSE
-1042,Skyguard Enemy
-1043,Skunk, Petunia
-1044,Theramore Deserter
-1049,Troll, Amani
-1059,CTF - Flags
-1069,Ram Racing Powerup DND
-1070,Ram Racing Trap DND
-1071,Craig's Squirrels
-1074,Holiday - Water Barrel
-1075,Holiday - Generic
-1077,Shattered Sun Offensive
-1078,Fighting Vanity Pet
-1080,Monster, Force Reaction
-1081,Object, Force Reaction
-1087,Holiday Monster
+994@@@Inciter Trigger
+1005@@@Friendly, Hidden
+1006@@@Kirin'Var - Dathric
+1007@@@Kirin'Var - Belmara
+1008@@@Kirin'Var - Luminrath
+1009@@@Kirin'Var - Cohlien
+1010@@@Servant of Illidan
+1011@@@Lower City
+1012@@@Ashtongue Deathsworn
+1013@@@Spirits of Shadowmoon 1
+1014@@@Spirits of Shadowmoon 2
+1015@@@Netherwing
+1016@@@Wyrmcult
+1017@@@Treant
+1018@@@Leotheras Demon I
+1019@@@Leotheras Demon II
+1020@@@Leotheras Demon III
+1021@@@Leotheras Demon IV
+1022@@@Leotheras Demon V
+1023@@@Azaloth
+1024@@@Rock Flayer
+1025@@@Flayer Hunter
+1026@@@Shadowmoon Shade
+1027@@@Legion Communicator
+1028@@@Ravenswood Ancients
+1029@@@Chess, Friendly to All Chess
+1030@@@Black Temple Gates - Illidari
+1031@@@Sha'tari Skyguard
+1032@@@Area 52
+1033@@@Maiev
+1034@@@Skettis Shadowy Arakkoa
+1035@@@Skettis Arakkoa
+1036@@@Dragonmaw Enemy
+1037@@@REUSE
+1038@@@Ogri'la
+1039@@@Ravager
+1040@@@REUSE
+1042@@@Skyguard Enemy
+1043@@@Skunk, Petunia
+1044@@@Theramore Deserter
+1049@@@Troll, Amani
+1059@@@CTF - Flags
+1069@@@Ram Racing Powerup DND
+1070@@@Ram Racing Trap DND
+1071@@@Craig's Squirrels
+1074@@@Holiday - Water Barrel
+1075@@@Holiday - Generic
+1077@@@Shattered Sun Offensive
+1078@@@Fighting Vanity Pet
+1080@@@Monster, Force Reaction
+1081@@@Object, Force Reaction
+1087@@@Holiday Monster
 3.0.1.8303
-1037,Alliance Vanguard
-1045,Vrykul
-1046,Northsea Pirates
-1047,Tuskarr
-1048,UNUSED
-1050,Valiance Expedition
-1051,UNUSED
-1052,Horde Expedition
-1053,Westguard
-1054,Spotted Gryphon
-1055,Tamed Plaguehound
-1056,Vrykul (Ancient Spirit 1)
-1057,Vrykul (Ancient Siprit 2)
-1058,Vrykul (Ancient Siprit 3)
-1060,Test
-1061,vrykul
-1062,Vrykul Gladiator
-1063,Valgarde Combatant
-1064,The Taunka
-1065,Monster, Zone Force Reaction 1
-1066,Monster, Zone Force Reaction 2
-1067,The Hand of Vengeance
-1068,Explorer's League
-1072,REUSE
-1073,The Kalu'ak
-1076,Iron Dwarves
-1079,Murloc, Winterfin
-1080,Friendly, Force Reaction
-1082,REUSE
-1083,REUSE
-1084,Vrykul, Sea
-1085,Warsong Offensive
-1086,Poacher
-1088,Furbolg, Redfang
-1089,Furbolg, Frostpaw
-1090,Kirin Tor
-1091,The Wyrmrest Accord
-1092,Azjol-Nerub
-1093,REUSE
-1094,The Silver Covenant
-1095,Grizzly Hills Trapper
-1096,REUSE
-1097,Northrend
-1098,Knights of the Ebon Blade
-1099,Wrathgate Scourge
-1100,Wrathgate Alliance
-1101,Wrathgate Horde
+1037@@@Alliance Vanguard
+1045@@@Vrykul
+1046@@@Northsea Pirates
+1047@@@Tuskarr
+1048@@@UNUSED
+1050@@@Valiance Expedition
+1051@@@UNUSED
+1052@@@Horde Expedition
+1053@@@Westguard
+1054@@@Spotted Gryphon
+1055@@@Tamed Plaguehound
+1056@@@Vrykul (Ancient Spirit 1)
+1057@@@Vrykul (Ancient Siprit 2)
+1058@@@Vrykul (Ancient Siprit 3)
+1060@@@Test
+1061@@@vrykul
+1062@@@Vrykul Gladiator
+1063@@@Valgarde Combatant
+1064@@@The Taunka
+1065@@@Monster, Zone Force Reaction 1
+1066@@@Monster, Zone Force Reaction 2
+1067@@@The Hand of Vengeance
+1068@@@Explorer's League
+1072@@@REUSE
+1073@@@The Kalu'ak
+1076@@@Iron Dwarves
+1079@@@Murloc, Winterfin
+1080@@@Friendly, Force Reaction
+1082@@@REUSE
+1083@@@REUSE
+1084@@@Vrykul, Sea
+1085@@@Warsong Offensive
+1086@@@Poacher
+1088@@@Furbolg, Redfang
+1089@@@Furbolg, Frostpaw
+1090@@@Kirin Tor
+1091@@@The Wyrmrest Accord
+1092@@@Azjol-Nerub
+1093@@@REUSE
+1094@@@The Silver Covenant
+1095@@@Grizzly Hills Trapper
+1096@@@REUSE
+1097@@@Northrend
+1098@@@Knights of the Ebon Blade
+1099@@@Wrathgate Scourge
+1100@@@Wrathgate Alliance
+1101@@@Wrathgate Horde
 3.0.1.8622
-980,The Burning Crusade
-1059,CTF - Flag - Alliance
-1068,Explorers' League
-1097,Wrath of the Lich King
-1102,CTF - Flag - Horde
-1103,CTF - Flag - Neutral
-1104,Frenzyheart Tribe
-1105,The Oracles
-1106,Argent Crusade
-1107,Troll, Drakkari
-1108,CoT Arthas
-1109,CoT Stratholme Citizen
-1110,CoT Scourge
-1111,Freya
-1112,Mount - Taxi - Alliance
-1113,Mount - Taxi - Horde
-1114,Mount - Taxi - Neutral
-1115,Elemental, Water
-1116,Elemental, Air
-1117,Sholazar Basin
-1118,Classic
+980@@@The Burning Crusade
+1059@@@CTF - Flag - Alliance
+1068@@@Explorers' League
+1097@@@Wrath of the Lich King
+1102@@@CTF - Flag - Horde
+1103@@@CTF - Flag - Neutral
+1104@@@Frenzyheart Tribe
+1105@@@The Oracles
+1106@@@Argent Crusade
+1107@@@Troll, Drakkari
+1108@@@CoT Arthas
+1109@@@CoT Stratholme Citizen
+1110@@@CoT Scourge
+1111@@@Freya
+1112@@@Mount - Taxi - Alliance
+1113@@@Mount - Taxi - Horde
+1114@@@Mount - Taxi - Neutral
+1115@@@Elemental, Water
+1116@@@Elemental, Air
+1117@@@Sholazar Basin
+1118@@@Classic
 3.0.1.8874
-1119,The Sons of Hodir
-1120,Iron Giants
-1121,Frost Vrykul
-1122,Earthen
-1123,Monster Referee
-1124,The Sunreavers
-1125,Hyldsmeet
+1119@@@The Sons of Hodir
+1120@@@Iron Giants
+1121@@@Frost Vrykul
+1122@@@Earthen
+1123@@@Monster Referee
+1124@@@The Sunreavers
+1125@@@Hyldsmeet
 3.1.0.9767
-1126,The Frostborn
-1127,Orgrimmar (Alex Test)
+1126@@@The Frostborn
+1127@@@Orgrimmar (Alex Test)
 3.3.5.12340
-1136,Tranquillien Conversion
-1137,Wintersaber Conversion
-1145,Hates Everything
-1154,Silver Covenant Conversion
-1155,Sunreavers Conversion
-1156,The Ashen Verdict
-1159,CTF - Flag - Alliance 2
-1160,CTF - Flag - Horde 2
+1136@@@Tranquillien Conversion
+1137@@@Wintersaber Conversion
+1145@@@Hates Everything
+1154@@@Silver Covenant Conversion
+1155@@@Sunreavers Conversion
+1156@@@The Ashen Verdict
+1159@@@CTF - Flag - Alliance 2
+1160@@@CTF - Flag - Horde 2
 4.0.1.12911
-52,Orc, Fel Dragonmaw
-54,Gnomeregan
-471,DEPRECATED Wildhammer Clan, DEPRECATED
-979,Earthen Ring, Old World
-1128,Twilight's Hammer
-1129,Furbolg, Blackwood
-1130,Stag, Darkshore
-1131,Bear, Darkshore
-1132,Moonstalker, Darkshore
-1133,Bilgewater Cartel
-1134,Gilneas
-1135,The Earthen Ring
-1138,Cataclysm - New Neutral Reputation
-1142,Magram Remnant
-1143,Sons of Gelkis
-1144,REUSE
-1152,PLAYER, Goblin
-1153,PLAYER, Worgen
-1157,Pygmy
-1158,Guardians of Hyjal
-1161,Grimtotem
-1162,Cataclysm
-1163,New test rep for Alex
-1166,Test Faction 5
-1167,Test Faction 5
-1168,Guild Reputation
-1169,Guild
-1171,Therazane
-1172,Dragonmaw Clan
-1173,Ramkahen
-1174,Wildhammer Clan
-1177,Baradin Wardens
-1178,Hellscream's Reach
+52@@@Orc, Fel Dragonmaw
+54@@@Gnomeregan
+471@@@DEPRECATED Wildhammer Clan, DEPRECATED
+979@@@Earthen Ring, Old World
+1128@@@Twilight's Hammer
+1129@@@Furbolg, Blackwood
+1130@@@Stag, Darkshore
+1131@@@Bear, Darkshore
+1132@@@Moonstalker, Darkshore
+1133@@@Bilgewater Cartel
+1134@@@Gilneas
+1135@@@The Earthen Ring
+1138@@@Cataclysm - New Neutral Reputation
+1142@@@Magram Remnant
+1143@@@Sons of Gelkis
+1144@@@REUSE
+1152@@@PLAYER, Goblin
+1153@@@PLAYER, Worgen
+1157@@@Pygmy
+1158@@@Guardians of Hyjal
+1161@@@Grimtotem
+1162@@@Cataclysm
+1163@@@New test rep for Alex
+1166@@@Test Faction 5
+1167@@@Test Faction 5
+1168@@@Guild Reputation
+1169@@@Guild
+1171@@@Therazane
+1172@@@Dragonmaw Clan
+1173@@@Ramkahen
+1174@@@Wildhammer Clan
+1177@@@Baradin Wardens
+1178@@@Hellscream's Reach
 4.3.4.15595
-1168,Guild
-1177,Baradin's Wardens
-1179,Slime
-1181,Friendly, New
-1189,K3
-1204,Avengers of Hyjal
-1233,CoT Well of Eternity - Illidan
-1234,CoT Well of Eternity - High Elves
-1235,CoT Well of Eternity - Illidan (Stealth)
-1237,CoT Well of Eternity - Demons
-1240,CoT Well of Eternity - Demon Balls
-1241,CoT Well of Eternity - Hunter Stalkers
-1265,Shen'dralar
+1168@@@Guild
+1177@@@Baradin's Wardens
+1179@@@Slime
+1181@@@Friendly, New
+1189@@@K3
+1204@@@Avengers of Hyjal
+1233@@@CoT Well of Eternity - Illidan
+1234@@@CoT Well of Eternity - High Elves
+1235@@@CoT Well of Eternity - Illidan (Stealth)
+1237@@@CoT Well of Eternity - Demons
+1240@@@CoT Well of Eternity - Demon Balls
+1241@@@CoT Well of Eternity - Hunter Stalkers
+1265@@@Shen'dralar
 5.0.3.15882
-1080,Friendly, Force Reaction 1
-1216,Shang Xi's Academy
-1228,Forest Hozen
-1242,Pearlfin Jinyu
-1243,Hozen
-1245,Mists of Pandaria
-1249,PLAYER, Expansion 4 Neutral
-1252,Sha
-1253,Guardians of the East Temple
-1268,Mogu
-1269,Golden Lotus
-1270,Shado-Pan
-1271,Order of the Cloud Serpent
-1272,The Tillers
-1273,Jogu the Drunk
-1275,Ella
-1276,Old Hillpaw
-1277,Chee Chee
-1278,Sho
-1279,Haohan Mudclaw
-1280,Tina Mudclaw
-1281,Gina Mudclaw
-1282,Fish Fellreed
-1283,Farmer Fung
-1286,Guardians of the Red Crane
-1302,The Anglers
-1336,The Mantid Swarm
-1337,The Klaxxi
-1338,Gurthan Mogu
-1339,Harthak Mogu
-1340,Korgesh Mogu
-1341,The August Celestials
-1345,The Lorewalkers
-1351,The Brewmasters
-1352,Huojin Pandaren
-1353,Tushui Pandaren
-1357,Nomi
-1358,Nat Pagle
-1359,The Black Prince
-1364,Friendly, Force Reaction 2
-1366,Friendly, Force Reaction 3
-1367,Friendly, Force Reaction 4
-1368,Friendly, Force Reaction 5
-1369,Friendly, Force Reaction 6
-1370,Friendly, Force Reaction 7
+1080@@@Friendly, Force Reaction 1
+1216@@@Shang Xi's Academy
+1228@@@Forest Hozen
+1242@@@Pearlfin Jinyu
+1243@@@Hozen
+1245@@@Mists of Pandaria
+1249@@@PLAYER, Expansion 4 Neutral
+1252@@@Sha
+1253@@@Guardians of the East Temple
+1268@@@Mogu
+1269@@@Golden Lotus
+1270@@@Shado-Pan
+1271@@@Order of the Cloud Serpent
+1272@@@The Tillers
+1273@@@Jogu the Drunk
+1275@@@Ella
+1276@@@Old Hillpaw
+1277@@@Chee Chee
+1278@@@Sho
+1279@@@Haohan Mudclaw
+1280@@@Tina Mudclaw
+1281@@@Gina Mudclaw
+1282@@@Fish Fellreed
+1283@@@Farmer Fung
+1286@@@Guardians of the Red Crane
+1302@@@The Anglers
+1336@@@The Mantid Swarm
+1337@@@The Klaxxi
+1338@@@Gurthan Mogu
+1339@@@Harthak Mogu
+1340@@@Korgesh Mogu
+1341@@@The August Celestials
+1345@@@The Lorewalkers
+1351@@@The Brewmasters
+1352@@@Huojin Pandaren
+1353@@@Tushui Pandaren
+1357@@@Nomi
+1358@@@Nat Pagle
+1359@@@The Black Prince
+1364@@@Friendly, Force Reaction 2
+1366@@@Friendly, Force Reaction 3
+1367@@@Friendly, Force Reaction 4
+1368@@@Friendly, Force Reaction 5
+1369@@@Friendly, Force Reaction 6
+1370@@@Friendly, Force Reaction 7
 6.0.1.18179
-1371,Paw'don Village
-1372,Honeydew Village
-1374,Brawl'gar Arena
-1375,Dominance Offensive
-1376,Operation: Shieldwall
-1387,Kirin Tor Offensive
-1388,Sunreaver Onslaught
-1416,Akama's Trust
-1419,Bizmo's Brawlpub
-1433,Monster, Enforced Neutral For Force Reaction
-1435,Shado-Pan Assault
-1440,Darkspear Rebellion
-1443,Kor'kron
-1444,Warlords of Draenor
-1445,Frostwolf Orcs
-1447,Darkspear Trolls
-1457,Forelings
-1483,Foreling-Eaters
-1491,The Timewalkers
-1492,Emperor Shaohao
-1496,Frostfire Ogres
-1500,Red Phantom
-1508,Shadowmoon Orc
-1509,The Pale
-1514,Adherents of Arakk
-1515,Arakkoa Outcasts
-1520,Palemoon Orc
-1521,Shadow Council
-1591,Draenei, Draenor
+1371@@@Paw'don Village
+1372@@@Honeydew Village
+1374@@@Brawl'gar Arena
+1375@@@Dominance Offensive
+1376@@@Operation: Shieldwall
+1387@@@Kirin Tor Offensive
+1388@@@Sunreaver Onslaught
+1416@@@Akama's Trust
+1419@@@Bizmo's Brawlpub
+1433@@@Monster, Enforced Neutral For Force Reaction
+1435@@@Shado-Pan Assault
+1440@@@Darkspear Rebellion
+1443@@@Kor'kron
+1444@@@Warlords of Draenor
+1445@@@Frostwolf Orcs
+1447@@@Darkspear Trolls
+1457@@@Forelings
+1483@@@Foreling-Eaters
+1491@@@The Timewalkers
+1492@@@Emperor Shaohao
+1496@@@Frostfire Ogres
+1500@@@Red Phantom
+1508@@@Shadowmoon Orc
+1509@@@The Pale
+1514@@@Adherents of Arakk
+1515@@@Arakkoa Outcasts
+1520@@@Palemoon Orc
+1521@@@Shadow Council
+1591@@@Draenei, Draenor
 7.3.0.24473
-1374,Brawl'gar Arena (Season 1)
-1419,Bizmo's Brawlpub (Season 1)
-1508,Shadowmoon Orcs
-1514,Adherents of Rukhmar
-1520,Shadowmoon Exiles
-1617,Primal
-1618,Breaker
-1623,The Iron Horde
-1665,The Sargerei
-1674,Draenor Spores
-1679,Operation: Aardvark
-1680,Highmaul
-1681,Vol'jin's Spear
-1682,Wrynn's Vanguard
-1687,Gorgrond Goren
-1690,Brawl'gar Arena (Season 2)
-1691,Bizmo's Brawlpub (Season 2)
-1708,Laughing Skull Orcs
-1710,Sha'tari Defense
-1711,Steamwheedle Preservation Society
-1712,GarInvasion_IronHorde
-1713,GarInvasion_ShadowCouncil
-1714,GarInvasion_Ogres
-1715,GarInvasion_Primals
-1716,GarInvasion_Breakers
-1717,GarInvasion_ThunderLord
-1718,GarInvasion_Shadowmoon
-1731,Council of Exarchs
-1732,Steamwheedle Draenor Expedition
-1733,Delvar Ironfist
-1735,Barracks Bodyguards
-1736,Tormmok
-1737,Talonpriest Ishaal
-1738,Defender Illona
-1739,Vivianne
-1740,Aeda Brightdawn
-1741,Leorajh
-1746,Nagrand Gronn
-1747,Coliseum Treasure
-1756,LVA_Looters
-1757,LVA_Preservers
-1758,LVA_Naturalists
-1759,LVA_Machines
-1760,Highmaul Gladiators
-1786,Burning Legion Invaders
-1815,Gilnean Survivors
-1828,Highmountain Tribe
-1833,Uncrowned
-1834,Legion
-1847,Hand of the Prophet
-1848,Vol'jin's Headhunters
-1849,Order of the Awakened
-1850,The Saberstalkers
-1859,The Nightfallen
-1860,Arcane Thirst (Thalyssra)
-1861,Arcane Thirst (Silgryn) DEPRECATED
-1862,Arcane Thirst (Oculeth)
-1883,Dreamweavers
-1888,Jandvik Vrykul
-1894,The Wardens
-1899,Moonguard
-1900,Court of Farondis
-1905,Dreamgrove Druid
-1910,Drogbar
-1911,Kvaldir Ghosts
-1912,Kvaldir
-1913,Nightborne
-1914,Withered
-1919,Arcane Thirst (Valtrois)
-1920,Moon Guard
-1947,Illidari
-1948,Valarjar
-1953,Nightmare
-1962,Nightborne Civilian
-1975,Conjurer Margoss
-1984,The First Responders
-1989,Moon Guard
-2010,Brawl'gar Arena
-2011,Bizmo's Brawlpub
-2012,Nightborne Rebels
-2018,Talon's Vengeance
-2040,Talon's Vengeance
-2045,Armies of Legionfall
-2063,Arne Test - Paragon Reputation Stormwind
-2085,Highmountain Tribe (Paragon)
-2086,Valarjar (Paragon)
-2087,Court of Farondis (Paragon)
-2088,Dreamweavers (Paragon)
-2089,The Nightfallen (Paragon)
-2090,The Wardens (Paragon)
-2091,Armies of Legionfall (Paragon)
-2097,Ilyssia of the Waters
-2098,Keeper Raynae
-2099,Akule Riverhorn
-2100,Corbyn
-2101,Sha'leth
-2102,Impus
-2135,Chromie
+1374@@@Brawl'gar Arena (Season 1)
+1419@@@Bizmo's Brawlpub (Season 1)
+1508@@@Shadowmoon Orcs
+1514@@@Adherents of Rukhmar
+1520@@@Shadowmoon Exiles
+1617@@@Primal
+1618@@@Breaker
+1623@@@The Iron Horde
+1665@@@The Sargerei
+1674@@@Draenor Spores
+1679@@@Operation: Aardvark
+1680@@@Highmaul
+1681@@@Vol'jin's Spear
+1682@@@Wrynn's Vanguard
+1687@@@Gorgrond Goren
+1690@@@Brawl'gar Arena (Season 2)
+1691@@@Bizmo's Brawlpub (Season 2)
+1708@@@Laughing Skull Orcs
+1710@@@Sha'tari Defense
+1711@@@Steamwheedle Preservation Society
+1712@@@GarInvasion_IronHorde
+1713@@@GarInvasion_ShadowCouncil
+1714@@@GarInvasion_Ogres
+1715@@@GarInvasion_Primals
+1716@@@GarInvasion_Breakers
+1717@@@GarInvasion_ThunderLord
+1718@@@GarInvasion_Shadowmoon
+1731@@@Council of Exarchs
+1732@@@Steamwheedle Draenor Expedition
+1733@@@Delvar Ironfist
+1735@@@Barracks Bodyguards
+1736@@@Tormmok
+1737@@@Talonpriest Ishaal
+1738@@@Defender Illona
+1739@@@Vivianne
+1740@@@Aeda Brightdawn
+1741@@@Leorajh
+1746@@@Nagrand Gronn
+1747@@@Coliseum Treasure
+1756@@@LVA_Looters
+1757@@@LVA_Preservers
+1758@@@LVA_Naturalists
+1759@@@LVA_Machines
+1760@@@Highmaul Gladiators
+1786@@@Burning Legion Invaders
+1815@@@Gilnean Survivors
+1828@@@Highmountain Tribe
+1833@@@Uncrowned
+1834@@@Legion
+1847@@@Hand of the Prophet
+1848@@@Vol'jin's Headhunters
+1849@@@Order of the Awakened
+1850@@@The Saberstalkers
+1859@@@The Nightfallen
+1860@@@Arcane Thirst (Thalyssra)
+1861@@@Arcane Thirst (Silgryn) DEPRECATED
+1862@@@Arcane Thirst (Oculeth)
+1883@@@Dreamweavers
+1888@@@Jandvik Vrykul
+1894@@@The Wardens
+1899@@@Moonguard
+1900@@@Court of Farondis
+1905@@@Dreamgrove Druid
+1910@@@Drogbar
+1911@@@Kvaldir Ghosts
+1912@@@Kvaldir
+1913@@@Nightborne
+1914@@@Withered
+1919@@@Arcane Thirst (Valtrois)
+1920@@@Moon Guard
+1947@@@Illidari
+1948@@@Valarjar
+1953@@@Nightmare
+1962@@@Nightborne Civilian
+1975@@@Conjurer Margoss
+1984@@@The First Responders
+1989@@@Moon Guard
+2010@@@Brawl'gar Arena
+2011@@@Bizmo's Brawlpub
+2012@@@Nightborne Rebels
+2018@@@Talon's Vengeance
+2040@@@Talon's Vengeance
+2045@@@Armies of Legionfall
+2063@@@Arne Test - Paragon Reputation Stormwind
+2085@@@Highmountain Tribe (Paragon)
+2086@@@Valarjar (Paragon)
+2087@@@Court of Farondis (Paragon)
+2088@@@Dreamweavers (Paragon)
+2089@@@The Nightfallen (Paragon)
+2090@@@The Wardens (Paragon)
+2091@@@Armies of Legionfall (Paragon)
+2097@@@Ilyssia of the Waters
+2098@@@Keeper Raynae
+2099@@@Akule Riverhorn
+2100@@@Corbyn
+2101@@@Sha'leth
+2102@@@Impus
+2135@@@Chromie
 7.3.0.24608
-2165,Army of the Light
-2166,Army of the Light (Paragon)
-2167,Argussian Reach (Paragon)
-2170,Argussian Reach
+2165@@@Army of the Light
+2166@@@Army of the Light (Paragon)
+2167@@@Argussian Reach (Paragon)
+2170@@@Argussian Reach
 7.3.0.24727
-2180,_JKL - test rep
+2180@@@_JKL - test rep
 7.3.5.25928
-2229,PLAYER, Void Elf
-2230,PLAYER, Highmountain Tauren
-2231,PLAYER, Nightborne
-2232,PLAYER, Lightforged Draenei
+2229@@@PLAYER, Void Elf
+2230@@@PLAYER, Highmountain Tauren
+2231@@@PLAYER, Nightborne
+2232@@@PLAYER, Lightforged Draenei
 8.0.1.25902
-2103,Zandalari Empire
-2104,Battle for Azeroth
-2105,Nazmani
-2111,Zandalari Dinosaurs
-2120,Kul Tiras
-2121,Great Sea Privateers
-2122,Irontide Raiders
-2155,Blood Trolls
-2156,Nazmir Expedition (8.0)
-2157,Horde War Effort
-2158,Vulpera (8.0)
-2159,Alliance War Effort
-2160,House Proudmoore (8.0)
-2161,House Waycrest (8.0)
-2162,House Stormsong (8.0)
-2163,Tortollan Seekers (8.0)
-2164,Voice of Azeroth (8.0)
-2176,Neutral, Force Reaction 1
-2177,Neutral, Force Reaction 2
-2178,Neutral, Force Reaction 3
-2179,Neutral, Force Reaction 4
-2185,The Bilge Rats
-2186,Blacktooth Brawlers
-2187,Cutwater Corsairs
-2192,Ashvane Trading Co.
-2218,8.0 Hidden Object - Red
-2219,8.0 Hidden Object - Withered - Red
-2220,8.0 Hidden Object - Withered - Blue
-2221,8.0 Hidden Object - Withered - Green
-2222,8.0 Hidden Object - Withered - Yellow
-2227,Beast - Bee
-2228,Beast - Wendigo
-2233,Dino Training - Pterrodax
+2103@@@Zandalari Empire
+2104@@@Battle for Azeroth
+2105@@@Nazmani
+2111@@@Zandalari Dinosaurs
+2120@@@Kul Tiras
+2121@@@Great Sea Privateers
+2122@@@Irontide Raiders
+2155@@@Blood Trolls
+2156@@@Nazmir Expedition (8.0)
+2157@@@Horde War Effort
+2158@@@Vulpera (8.0)
+2159@@@Alliance War Effort
+2160@@@House Proudmoore (8.0)
+2161@@@House Waycrest (8.0)
+2162@@@House Stormsong (8.0)
+2163@@@Tortollan Seekers (8.0)
+2164@@@Voice of Azeroth (8.0)
+2176@@@Neutral, Force Reaction 1
+2177@@@Neutral, Force Reaction 2
+2178@@@Neutral, Force Reaction 3
+2179@@@Neutral, Force Reaction 4
+2185@@@The Bilge Rats
+2186@@@Blacktooth Brawlers
+2187@@@Cutwater Corsairs
+2192@@@Ashvane Trading Co.
+2218@@@8.0 Hidden Object - Red
+2219@@@8.0 Hidden Object - Withered - Red
+2220@@@8.0 Hidden Object - Withered - Blue
+2221@@@8.0 Hidden Object - Withered - Green
+2222@@@8.0 Hidden Object - Withered - Yellow
+2227@@@Beast - Bee
+2228@@@Beast - Wendigo
+2233@@@Dino Training - Pterrodax
 8.0.1.26032
-2160,Proudmoore Admiralty
-2242,8.0 - Stormsong - Crazed Diggers Anti-Social (MDE)
-2243,8.0 - Stormsong - Crazed Diggers Social (MDE)
+2160@@@Proudmoore Admiralty
+2242@@@8.0 - Stormsong - Crazed Diggers Anti-Social (MDE)
+2243@@@8.0 - Stormsong - Crazed Diggers Social (MDE)
 8.0.1.26095
-2245,Horde Commanders (MDE)
+2245@@@Horde Commanders (MDE)
 8.0.1.26131
-2156,Talanji's Expedition
-2158,Voldunai
-2161,Order of Embers
-2162,Storm's Wake
-2164,Champions of Azeroth
+2156@@@Talanji's Expedition
+2158@@@Voldunai
+2161@@@Order of Embers
+2162@@@Storm's Wake
+2164@@@Champions of Azeroth
 8.0.1.26433
-2157,The Honorbound
-2159,7th Legion
-2258,Wendigo
-2259,Bees
+2157@@@The Honorbound
+2159@@@7th Legion
+2258@@@Wendigo
+2259@@@Bees
 8.0.1.26476
-2120,Kul Tiras - Tiragarde
-2163,Tortollan Seekers
-2264,Kul Tiras - Drustvar
-2265,Kul Tiras - Stormsong
+2120@@@Kul Tiras - Tiragarde
+2163@@@Tortollan Seekers
+2264@@@Kul Tiras - Drustvar
+2265@@@Kul Tiras - Stormsong
 8.1.0.27826
-2370,Dino Training - Direhorn
-2378,Zandalari Empire (Paragon)
-2379,Proudmoore Admiralty (Paragon)
-2380,Talanji's Expedition (Paragon)
-2381,Storm's Wake (Paragon)
+2370@@@Dino Training - Direhorn
+2378@@@Zandalari Empire (Paragon)
+2379@@@Proudmoore Admiralty (Paragon)
+2380@@@Talanji's Expedition (Paragon)
+2381@@@Storm's Wake (Paragon)
 8.1.0.28048
-2382,Voldunai (Paragon)
-2383,Order of Embers (Paragon)
-2384,7th Legion (Paragon)
-2385,The Honorbound (Paragon)
-2386,Champions of Azeroth (Paragon)
-2387,Tortollan Seekers (Paragon)
+2382@@@Voldunai (Paragon)
+2383@@@Order of Embers (Paragon)
+2384@@@7th Legion (Paragon)
+2385@@@The Honorbound (Paragon)
+2386@@@Champions of Azeroth (Paragon)
+2387@@@Tortollan Seekers (Paragon)
 8.1.5.28938
-2010,Brawl'gar Arena (Season 3)
-2011,Bizmo's Brawlpub (Season 3)
-2371,Bizmo's Brawlpub
-2372,Brawl'gar Arena
+2010@@@Brawl'gar Arena (Season 3)
+2011@@@Bizmo's Brawlpub (Season 3)
+2371@@@Bizmo's Brawlpub
+2372@@@Brawl'gar Arena
 8.2.0.30080
-2373,Unshackled
-2374,Unshackled (Paragon)
-2375,Hunter Akana
-2376,Farseer Ori
-2377,Bladesman Inowari
-2388,Poen Gillbrack
-2389,Neri Sharpfin
-2390,Vim Brineheart
-2391,Rustbolt Resistance
-2392,Rustbolt Resistance (Paragon)
-2394,Hermit Crabs
-2395,Hivemother
-2396,Drone
-2397,Queen
-2398,Honey Bee
-2400,Ankoan
-2401,Ankoan (Paragon)
+2373@@@Unshackled
+2374@@@Unshackled (Paragon)
+2375@@@Hunter Akana
+2376@@@Farseer Ori
+2377@@@Bladesman Inowari
+2388@@@Poen Gillbrack
+2389@@@Neri Sharpfin
+2390@@@Vim Brineheart
+2391@@@Rustbolt Resistance
+2392@@@Rustbolt Resistance (Paragon)
+2394@@@Hermit Crabs
+2395@@@Hivemother
+2396@@@Drone
+2397@@@Queen
+2398@@@Honey Bee
+2400@@@Ankoan
+2401@@@Ankoan (Paragon)
 8.2.0.30329
-2395,Tidebreak Hive
-2396,Tidebreak Guardian
-2397,Tidebreak Hivemother
-2398,Tidebreak Harvester
+2395@@@Tidebreak Hive
+2396@@@Tidebreak Guardian
+2397@@@Tidebreak Hivemother
+2398@@@Tidebreak Harvester
 8.2.0.30495
-2373,The Unshackled
-2374,The Unshackled (Paragon)
-2400,Waveblade Ankoan
-2401,Waveblade Ankoan (Paragon)
+2373@@@The Unshackled
+2374@@@The Unshackled (Paragon)
+2400@@@Waveblade Ankoan
+2401@@@Waveblade Ankoan (Paragon)
 8.2.5.31337
-2395,Honeyback Hive
-2396,Honeyback Drone
-2397,Honeyback Hivemother
-2398,Honeyback Harvester
+2395@@@Honeyback Hive
+2396@@@Honeyback Drone
+2397@@@Honeyback Hivemother
+2398@@@Honeyback Harvester
 8.3.0.32044
-2415,Rajani
-2416,Rajani (Paragon)
-2417,Uldum Accord
-2418,Uldum Accord (Paragon)
-2419,Nzoth
+2415@@@Rajani
+2416@@@Rajani (Paragon)
+2417@@@Uldum Accord
+2418@@@Uldum Accord (Paragon)
+2419@@@Nzoth
 8.3.0.32489
-2427,Aqir Hatchling
+2427@@@Aqir Hatchling
 8.3.0.32593
-2431,Owen Test
+2431@@@Owen Test
 9.0.1.33978
-2404,9.0 Maldraxxus - Abominations
-2405,9.0 Maldraxxus - Lich
-2406,9.0 Maldraxxus - Warriors
-2407,Kyrian
-2408,Dark Kyrian
-2410,9.0 Maldraxxus - End Game
-2411,Stone Legion
-2412,Sinfall
-2413,Court of Harvesters
-2414,Shadowlands
-2422,Night Fae
-2432,Maw Broker
-2437,Torghast - Guard
-2438,Torghast - Prisoner
+2404@@@9.0 Maldraxxus - Abominations
+2405@@@9.0 Maldraxxus - Lich
+2406@@@9.0 Maldraxxus - Warriors
+2407@@@Kyrian
+2408@@@Dark Kyrian
+2410@@@9.0 Maldraxxus - End Game
+2411@@@Stone Legion
+2412@@@Sinfall
+2413@@@Court of Harvesters
+2414@@@Shadowlands
+2422@@@Night Fae
+2432@@@Maw Broker
+2437@@@Torghast - Guard
+2438@@@Torghast - Prisoner
 9.0.1.34081
-2404,House of Constructs
-2405,House of Rituals
-2406,House of the Chosen
-2410,Necrolords
+2404@@@House of Constructs
+2405@@@House of Rituals
+2406@@@House of the Chosen
+2410@@@Necrolords
 9.0.1.34137
-2439,The Avowed
+2439@@@The Avowed
 9.0.1.34714
-2407,The Ascended
-2410,The Undying Army
-2440,The Undying Army (Paragon)
-2441,The Ascended (Paragon)
-2442,Court of Harvesters (Paragon)
-2443,The Wild Hunt
-2444,The Wild Hunt (Paragon)
+2407@@@The Ascended
+2410@@@The Undying Army
+2440@@@The Undying Army (Paragon)
+2441@@@The Ascended (Paragon)
+2442@@@Court of Harvesters (Paragon)
+2443@@@The Wild Hunt
+2444@@@The Wild Hunt (Paragon)
 9.0.1.34821
-2422,The Wild Hunt
+2422@@@The Wild Hunt
 9.0.1.34902
-2432,Ve'nari
+2432@@@Ve'nari
 9.0.1.34972
-2445,The Ember Court
-2446,Baroness Vashj
-2447,Lady Moonberry
-2448,Mikanikos
-2449,The Countess
-2450,Alexandros Mograine
-2451,Hunt-Captain Korayn
-2452,Polemarch Adrestes
-2453,Rendle and Cudgelface
-2454,Choofa
-2455,Cryptkeeper Kassir
-2456,Droman Aliothe
-2457,Grandmaster Vole
-2458,Kleia and Pelagos
-2459,Sika
-2460,Stonehead
-2461,Plague Deviser Marileth
+2445@@@The Ember Court
+2446@@@Baroness Vashj
+2447@@@Lady Moonberry
+2448@@@Mikanikos
+2449@@@The Countess
+2450@@@Alexandros Mograine
+2451@@@Hunt-Captain Korayn
+2452@@@Polemarch Adrestes
+2453@@@Rendle and Cudgelface
+2454@@@Choofa
+2455@@@Cryptkeeper Kassir
+2456@@@Droman Aliothe
+2457@@@Grandmaster Vole
+2458@@@Kleia and Pelagos
+2459@@@Sika
+2460@@@Stonehead
+2461@@@Plague Deviser Marileth
 9.0.1.35755
-2462,Stitchmasters
-2463,Marasmius
-2464,Court of Night
+2462@@@Stitchmasters
+2463@@@Marasmius
+2464@@@Court of Night
 9.0.2.36086
-2465,The Wild Hunt
+2465@@@The Wild Hunt
 9.1.0.38312
-2468,Korthia
-2470,Death's Advance
-2471,Death's Advance (Paragon)
+2468@@@Korthia
+2470@@@Death's Advance
+2471@@@Death's Advance (Paragon)
 9.1.0.38511
-2472,The Archivist's Codex
-2473,The Archivist's Codex (Paragon)
-2474,Ve'nari (Paragon)
+2472@@@The Archivist's Codex
+2473@@@The Archivist's Codex (Paragon)
+2474@@@Ve'nari (Paragon)
 9.1.0.38783
-2472,The Archivists' Codex
-2473,The Archivists' Codex (Paragon)
+2472@@@The Archivists' Codex
+2473@@@The Archivists' Codex (Paragon)
 9.2.0.41089
-2469,Fractal Lore
-2478,The Enlightened
-2479,The Enlightened (Paragon)
-2480,Automa
-2481,Automa (Paragon)
-2502,Zereth Mortis Lured Monsters
+2469@@@Fractal Lore
+2478@@@The Enlightened
+2479@@@The Enlightened (Paragon)
+2480@@@Automa
+2481@@@Automa (Paragon)
+2502@@@Zereth Mortis Lured Monsters
 10.0.0.44649
-957,Elemental, Earth
-1072,[DNT] AC Major Faction Child Renown Test
-2503,Maruuk Centaur
-2504,Maruuk Centaur (Paragon)
-2506,Dragonflight
-2507,Dragonscale Expedition
-2508,Dragonscale Expedition (Paragon)
-2509,Clan Shikaar
-2510,Valdrakken Accord
-2511,Iskaara Tuskarr
-2512,Clan Aylaag
-2513,Clan Ohn'ir
-2514,Primalists
-2516,Djaradin
-2517,Wrathion
-2518,Sabellian
-2519,Reclaimers
-2520,Clan Nokhud
-2521,Clan Nokhud (Paragon)
-2522,Clan Teerai
-2523,The Talons
-2524,The New Warders
-2525,Elemental, Fire
-2526,Winterpelt Furbolg
-2542,Clan Ukhel
-2544,Artisan's Consortium - Dragon Isles Branch
-2545,Maruuk Centaur (Renown)
-2546,Iskaara Tuskarr (Renown)
-2547,Dragonscale Expedition (Renown)
-2548,Valdrakken Accord (Renown)
+957@@@Elemental, Earth
+1072@@@[DNT] AC Major Faction Child Renown Test
+2503@@@Maruuk Centaur
+2504@@@Maruuk Centaur (Paragon)
+2506@@@Dragonflight
+2507@@@Dragonscale Expedition
+2508@@@Dragonscale Expedition (Paragon)
+2509@@@Clan Shikaar
+2510@@@Valdrakken Accord
+2511@@@Iskaara Tuskarr
+2512@@@Clan Aylaag
+2513@@@Clan Ohn'ir
+2514@@@Primalists
+2516@@@Djaradin
+2517@@@Wrathion
+2518@@@Sabellian
+2519@@@Reclaimers
+2520@@@Clan Nokhud
+2521@@@Clan Nokhud (Paragon)
+2522@@@Clan Teerai
+2523@@@The Talons
+2524@@@The New Warders
+2525@@@Elemental, Fire
+2526@@@Winterpelt Furbolg
+2542@@@Clan Ukhel
+2544@@@Artisan's Consortium - Dragon Isles Branch
+2545@@@Maruuk Centaur (Renown)
+2546@@@Iskaara Tuskarr (Renown)
+2547@@@Dragonscale Expedition (Renown)
+2548@@@Valdrakken Accord (Renown)
 10.0.0.44707
-2550,Cobalt Assembly
+2550@@@Cobalt Assembly
 10.0.0.44795
-2551,Iskaara Tuskarr (Paragon)
-2552,Valdrakken Accord (Paragon)
+2551@@@Iskaara Tuskarr (Paragon)
+2552@@@Valdrakken Accord (Paragon)
 10.0.0.44999
-2553,Timewalkers
+2553@@@Timewalkers
 10.0.0.45141
-2554,Clan Toghus
-2555,Clan Kaighan
+2554@@@Clan Toghus
+2555@@@Clan Kaighan
 10.0.2.45779
-2523,Dark Talons
-2524,Obsidian Warders
+2523@@@Dark Talons
+2524@@@Obsidian Warders

@@ -1,601 +1,601 @@
 2.5.1.38043
-1,Private %s
-2,Corporal %s
-3,Sergeant %s
-4,Master Sergeant %s
-5,Sergeant Major %s
-6,Knight %s
-7,Knight-Lieutenant %s
-8,Knight-Captain %s
-9,Knight-Champion %s
-10,Lieutenant Commander %s
-11,Commander %s
-12,Marshal %s
-13,Field Marshal %s
-14,Grand Marshal %s
-15,Scout %s
-16,Grunt %s
-17,Sergeant %s
-18,Senior Sergeant %s
-19,First Sergeant %s
-20,Stone Guard %s
-21,Blood Guard %s
-22,Legionnaire %s
-23,Centurion %s
-24,Champion %s
-25,Lieutenant General %s
-26,General %s
-27,Warlord %s
-28,High Warlord %s
-29,Gladiator %s
-30,Duelist %s
-31,Rival %s
-32,Challenger %s
-33,Scarab Lord %s
-34,Conqueror %s
-35,Justicar %s
-36,%s, Champion of the Naaru
-37,Merciless Gladiator %s
-38,%s of the Shattered Sun
-39,%s, Hand of A'dal
-40,Vengeful Gladiator %s
-41,Infernal Gladiator %s
+1@@@Private %s
+2@@@Corporal %s
+3@@@Sergeant %s
+4@@@Master Sergeant %s
+5@@@Sergeant Major %s
+6@@@Knight %s
+7@@@Knight-Lieutenant %s
+8@@@Knight-Captain %s
+9@@@Knight-Champion %s
+10@@@Lieutenant Commander %s
+11@@@Commander %s
+12@@@Marshal %s
+13@@@Field Marshal %s
+14@@@Grand Marshal %s
+15@@@Scout %s
+16@@@Grunt %s
+17@@@Sergeant %s
+18@@@Senior Sergeant %s
+19@@@First Sergeant %s
+20@@@Stone Guard %s
+21@@@Blood Guard %s
+22@@@Legionnaire %s
+23@@@Centurion %s
+24@@@Champion %s
+25@@@Lieutenant General %s
+26@@@General %s
+27@@@Warlord %s
+28@@@High Warlord %s
+29@@@Gladiator %s
+30@@@Duelist %s
+31@@@Rival %s
+32@@@Challenger %s
+33@@@Scarab Lord %s
+34@@@Conqueror %s
+35@@@Justicar %s
+36@@@%s, Champion of the Naaru
+37@@@Merciless Gladiator %s
+38@@@%s of the Shattered Sun
+39@@@%s, Hand of A'dal
+40@@@Vengeful Gladiator %s
+41@@@Infernal Gladiator %s
 2.5.1.39399
-128,Vanquisher %s
+128@@@Vanquisher %s
 2.5.2.39570
-49,Brutal Gladiator %s
+49@@@Brutal Gladiator %s
 3.0.1.8303
-40,%s, Title Tester
+40@@@%s, Title Tester
 3.0.1.8622
-41,Battlemaster %s
-42,Battlemaster %s
+41@@@Battlemaster %s
+42@@@Battlemaster %s
 3.0.1.8874
-43,Elder %s
-44,Flame Warden %s
-45,Flame Keeper %s
-46,%s the Exalted
-47,%s the Explorer
+43@@@Elder %s
+44@@@Flame Warden %s
+45@@@Flame Keeper %s
+46@@@%s the Exalted
+47@@@%s the Explorer
 3.1.0.9767
-42,%s the Seeker
-48,%s the Diplomat
-50,Arena Master %s
-51,Salty %s
-52,Chef %s
-53,%s the Supreme
-54,%s of the Ten Storms
-55,%s of the Emerald Dream
-56,Deadly Gladiator %s
-57,Prophet %s
-58,%s the Malefic
-59,Stalker %s
-60,%s of the Ebon Blade
-61,Archmage %s
-62,Warbringer %s
-63,Assassin %s
-64,Grand Master Alchemist %s
-65,Grand Master Blacksmith %s
-66,Iron Chef %s
-67,Grand Master Enchanter %s
-68,Grand Master Engineer %s
-69,Doctor %s
-70,Grand Master Angler %s
-71,Grand Master Herbalist %s
-72,Grand Master Scribe %s
-73,Grand Master Jewelcrafter %s
-74,Grand Master Leatherworker %s
-75,Grand Master Miner %s
-76,Grand Master Skinner %s
-77,Grand Master Tailor %s
-78,%s of Quel'Thalas
-79,%s of Argus
-80,%s of Khaz Modan
-81,%s of Gnomeregan
-82,%s the Lion Hearted
-83,%s, Champion of Elune
-84,%s, Hero of Orgrimmar
-85,Plainsrunner %s
-86,%s of the Darkspear
-87,%s the Forsaken
-88,%s the Magic Seeker
-89,Twilight Vanquisher %s
-90,%s, Conqueror of Naxxramas
-91,%s, Hero of Northrend
-92,%s the Hallowed
-93,Loremaster %s
-94,%s of the Alliance
-95,%s of the Horde
-96,%s the Flawless Victor
-97,%s, Champion of the Frozen Wastes
-98,Ambassador %s
-99,%s the Argent Champion
-100,%s, Guardian of Cenarius
-101,Brewmaster %s
-102,Merrymaker %s
-103,%s the Love Fool
-104,Matron %s
-105,Patron %s
-106,Obsidian Slayer %s
-107,%s of the Nightfall
-108,%s the Immortal
-109,%s the Undying
-110,%s Jenkins
-111,Bloodsail Admiral %s
-112,%s the Insane
-113,%s of the Exodar
-114,%s of Darnassus
-115,%s of Ironforge
-116,%s of Stormwind
-117,%s of Orgrimmar
-118,%s of Sen'jin
-119,%s of Silvermoon
-120,%s of Thunder Bluff
-121,%s of the Undercity
-122,%s the Noble
-123,Crusader %s
-124,%s, Death's Demise
-125,%s the Celestial Defender
-126,%s, Conqueror of Ulduar
-127,%s, Champion of Ulduar
-129,Starcaller %s
-130,%s the Astral Walker
-131,%s, Herald of the Titans
+42@@@%s the Seeker
+48@@@%s the Diplomat
+50@@@Arena Master %s
+51@@@Salty %s
+52@@@Chef %s
+53@@@%s the Supreme
+54@@@%s of the Ten Storms
+55@@@%s of the Emerald Dream
+56@@@Deadly Gladiator %s
+57@@@Prophet %s
+58@@@%s the Malefic
+59@@@Stalker %s
+60@@@%s of the Ebon Blade
+61@@@Archmage %s
+62@@@Warbringer %s
+63@@@Assassin %s
+64@@@Grand Master Alchemist %s
+65@@@Grand Master Blacksmith %s
+66@@@Iron Chef %s
+67@@@Grand Master Enchanter %s
+68@@@Grand Master Engineer %s
+69@@@Doctor %s
+70@@@Grand Master Angler %s
+71@@@Grand Master Herbalist %s
+72@@@Grand Master Scribe %s
+73@@@Grand Master Jewelcrafter %s
+74@@@Grand Master Leatherworker %s
+75@@@Grand Master Miner %s
+76@@@Grand Master Skinner %s
+77@@@Grand Master Tailor %s
+78@@@%s of Quel'Thalas
+79@@@%s of Argus
+80@@@%s of Khaz Modan
+81@@@%s of Gnomeregan
+82@@@%s the Lion Hearted
+83@@@%s, Champion of Elune
+84@@@%s, Hero of Orgrimmar
+85@@@Plainsrunner %s
+86@@@%s of the Darkspear
+87@@@%s the Forsaken
+88@@@%s the Magic Seeker
+89@@@Twilight Vanquisher %s
+90@@@%s, Conqueror of Naxxramas
+91@@@%s, Hero of Northrend
+92@@@%s the Hallowed
+93@@@Loremaster %s
+94@@@%s of the Alliance
+95@@@%s of the Horde
+96@@@%s the Flawless Victor
+97@@@%s, Champion of the Frozen Wastes
+98@@@Ambassador %s
+99@@@%s the Argent Champion
+100@@@%s, Guardian of Cenarius
+101@@@Brewmaster %s
+102@@@Merrymaker %s
+103@@@%s the Love Fool
+104@@@Matron %s
+105@@@Patron %s
+106@@@Obsidian Slayer %s
+107@@@%s of the Nightfall
+108@@@%s the Immortal
+109@@@%s the Undying
+110@@@%s Jenkins
+111@@@Bloodsail Admiral %s
+112@@@%s the Insane
+113@@@%s of the Exodar
+114@@@%s of Darnassus
+115@@@%s of Ironforge
+116@@@%s of Stormwind
+117@@@%s of Orgrimmar
+118@@@%s of Sen'jin
+119@@@%s of Silvermoon
+120@@@%s of Thunder Bluff
+121@@@%s of the Undercity
+122@@@%s the Noble
+123@@@Crusader %s
+124@@@%s, Death's Demise
+125@@@%s the Celestial Defender
+126@@@%s, Conqueror of Ulduar
+127@@@%s, Champion of Ulduar
+129@@@Starcaller %s
+130@@@%s the Astral Walker
+131@@@%s, Herald of the Titans
 3.3.5.12340
-132,Furious Gladiator %s
-133,%s the Pilgrim
-134,Relentless Gladiator %s
-135,Grand Crusader %s
-136,%s the Argent Defender
-137,%s the Patient
-138,%s the Light of Dawn
-139,%s, Bane of the Fallen King
-140,%s the Kingslayer
-141,%s of the Ashen Verdict
-142,Wrathful Gladiator %s
+132@@@Furious Gladiator %s
+133@@@%s the Pilgrim
+134@@@Relentless Gladiator %s
+135@@@Grand Crusader %s
+136@@@%s the Argent Defender
+137@@@%s the Patient
+138@@@%s the Light of Dawn
+139@@@%s, Bane of the Fallen King
+140@@@%s the Kingslayer
+141@@@%s of the Ashen Verdict
+142@@@Wrathful Gladiator %s
 4.0.1.12911
-143,Recruit of %s
-144,Guardian of %s
-145,Veteran of %s
-146,Champion of %s
+143@@@Recruit of %s
+144@@@Guardian of %s
+145@@@Veteran of %s
+146@@@Champion of %s
 4.3.4.15595
-143,%s the Camel-Hoarder
-144,Warbringer %s
-145,Warbound %s
-146,%s, Blessed Defender of Nordrassil
-147,%s, Slayer of Stupid, Incompetent and Disappointing Minions
-148,Assistant Professor %s
-149,Associate Professor %s
-150,Professor %s
-151,%s of the Four Winds
-152,%s, Veteran of the Alliance
-153,%s, Veteran of the Horde
-154,Private %s
-155,Corporal %s
-156,Sergeant %s
-157,Master Sergeant %s
-158,Sergeant Major %s
-159,Knight %s
-160,Knight-Lieutenant %s
-161,Knight-Captain %s
-162,Knight-Champion %s
-163,Lieutenant Commander %s
-164,Commander %s
-165,Marshal %s
-166,Field Marshal %s
-167,Grand Marshal %s
-168,Scout %s
-169,Grunt %s
-170,Sergeant %s
-171,Senior Sergeant %s
-172,First Sergeant %s
-173,Stone Guard %s
-174,Blood Guard %s
-175,Legionnaire %s
-176,Centurion %s
-177,Champion %s
-178,Lieutenant General %s
-179,General %s
-180,Warlord %s
-181,High Warlord %s
-182,%s, Hero of the Alliance
-183,%s, Hero of the Horde
-184,%s, The Bloodthirsty
-185,%s, Defender of a Shattered World
-186,Dragonslayer %s
-187,%s, Blackwing's Bane
-188,%s, Avenger of Hyjal
-189,%s the Flamebreaker
-190,Firelord %s
-191,Vicious Gladiator %s
-192,Ruthless Gladiator %s
-193,Cataclysmic Gladiator %s
-194,%s, Savior of Azeroth
-196,%s, Destroyer's End
+143@@@%s the Camel-Hoarder
+144@@@Warbringer %s
+145@@@Warbound %s
+146@@@%s, Blessed Defender of Nordrassil
+147@@@%s, Slayer of Stupid, Incompetent and Disappointing Minions
+148@@@Assistant Professor %s
+149@@@Associate Professor %s
+150@@@Professor %s
+151@@@%s of the Four Winds
+152@@@%s, Veteran of the Alliance
+153@@@%s, Veteran of the Horde
+154@@@Private %s
+155@@@Corporal %s
+156@@@Sergeant %s
+157@@@Master Sergeant %s
+158@@@Sergeant Major %s
+159@@@Knight %s
+160@@@Knight-Lieutenant %s
+161@@@Knight-Captain %s
+162@@@Knight-Champion %s
+163@@@Lieutenant Commander %s
+164@@@Commander %s
+165@@@Marshal %s
+166@@@Field Marshal %s
+167@@@Grand Marshal %s
+168@@@Scout %s
+169@@@Grunt %s
+170@@@Sergeant %s
+171@@@Senior Sergeant %s
+172@@@First Sergeant %s
+173@@@Stone Guard %s
+174@@@Blood Guard %s
+175@@@Legionnaire %s
+176@@@Centurion %s
+177@@@Champion %s
+178@@@Lieutenant General %s
+179@@@General %s
+180@@@Warlord %s
+181@@@High Warlord %s
+182@@@%s, Hero of the Alliance
+183@@@%s, Hero of the Horde
+184@@@%s, The Bloodthirsty
+185@@@%s, Defender of a Shattered World
+186@@@Dragonslayer %s
+187@@@%s, Blackwing's Bane
+188@@@%s, Avenger of Hyjal
+189@@@%s the Flamebreaker
+190@@@Firelord %s
+191@@@Vicious Gladiator %s
+192@@@Ruthless Gladiator %s
+193@@@Cataclysmic Gladiator %s
+194@@@%s, Savior of Azeroth
+196@@@%s, Destroyer's End
 5.0.3.15882
-195,Farmer %s
-197,%s the Beloved
-198,%s the Fearless
-199,Zookeeper %s
-200,%s the Relic Hunter
-201,%s the Undaunted
-202,%s, Master of the Ways
-203,%s the Tranquil Master
-204,%s, Delver of the Vaults
-205,Shado-Master %s
+195@@@Farmer %s
+197@@@%s the Beloved
+198@@@%s the Fearless
+199@@@Zookeeper %s
+200@@@%s the Relic Hunter
+201@@@%s the Undaunted
+202@@@%s, Master of the Ways
+203@@@%s the Tranquil Master
+204@@@%s, Delver of the Vaults
+205@@@Shado-Master %s
 5.0.3.15890
-206,%s the Scenaterdist
+206@@@%s the Scenaterdist
 6.0.1.18125
-184,%s, the Bloodthirsty
-206,%s the Scenaturdist
-207,Tamer %s
-208,%s, Seeker of Knowledge
-209,Brawler %s
-211,%s, Conqueror of Orgrimmar
-212,%s, Liberator of Orgrimmar
-214,%s, Hellscream's Downfall
-215,%s the Proven Assailant
-216,%s the Proven Defender
-218,%s the Wakener
-219,%s the Proven Healer
-220,%s Khan
-221,%s the Stormbreaker
-222,%s, Storm's End
-223,Malevolent Gladiator %s
-224,Gob Squad Recruit %s
-225,Tyrannical Gladiator %s
-226,Gob Squad Commando %s
-227,Trainer %s
-228,Darkspear Revolutionary %s
-229,Gorgeous %s
-230,%s the Hordebreaker
-231,%s the Poisoned Mind
-232,%s the Bloodseeker
-233,%s the Locust
-234,%s the Swarmkeeper
-235,%s the Prime
-236,%s the Manipulator
-237,%s the Dissector
-238,%s the Lucid
-239,%s the Wind-Reaver
-240,%s the Crazy Cat Lady
-241,%s, Defender of the Wall
-242,Mogu-Slayer %s
-243,Flameweaver %s
-244,Scarlet Commander %s
-245,Darkmaster %s
-246,Purified Defender %s
-247,Siegebreaker %s
-248,Stormbrewer %s
-249,Jade Protector %s
-251,Fire-Watcher %s
-252,%s the Crazy Cat Man
-253,Grievous Gladiator %s
-254,Prideful Gladiator %s
+184@@@%s, the Bloodthirsty
+206@@@%s the Scenaturdist
+207@@@Tamer %s
+208@@@%s, Seeker of Knowledge
+209@@@Brawler %s
+211@@@%s, Conqueror of Orgrimmar
+212@@@%s, Liberator of Orgrimmar
+214@@@%s, Hellscream's Downfall
+215@@@%s the Proven Assailant
+216@@@%s the Proven Defender
+218@@@%s the Wakener
+219@@@%s the Proven Healer
+220@@@%s Khan
+221@@@%s the Stormbreaker
+222@@@%s, Storm's End
+223@@@Malevolent Gladiator %s
+224@@@Gob Squad Recruit %s
+225@@@Tyrannical Gladiator %s
+226@@@Gob Squad Commando %s
+227@@@Trainer %s
+228@@@Darkspear Revolutionary %s
+229@@@Gorgeous %s
+230@@@%s the Hordebreaker
+231@@@%s the Poisoned Mind
+232@@@%s the Bloodseeker
+233@@@%s the Locust
+234@@@%s the Swarmkeeper
+235@@@%s the Prime
+236@@@%s the Manipulator
+237@@@%s the Dissector
+238@@@%s the Lucid
+239@@@%s the Wind-Reaver
+240@@@%s the Crazy Cat Lady
+241@@@%s, Defender of the Wall
+242@@@Mogu-Slayer %s
+243@@@Flameweaver %s
+244@@@Scarlet Commander %s
+245@@@Darkmaster %s
+246@@@Purified Defender %s
+247@@@Siegebreaker %s
+248@@@Stormbrewer %s
+249@@@Jade Protector %s
+251@@@Fire-Watcher %s
+252@@@%s the Crazy Cat Man
+253@@@Grievous Gladiator %s
+254@@@Prideful Gladiator %s
 6.0.1.18156
-255,Mistwalker %s
+255@@@Mistwalker %s
 6.0.1.18379
-256,%s of the Black Harvest
+256@@@%s of the Black Harvest
 6.0.1.18505
-257,Lumberjack %s
-258,Timer Lord %s
-259,%s The Commandojack
+257@@@Lumberjack %s
+258@@@Timer Lord %s
+259@@@%s The Commandojack
 6.0.1.18522
-260,Architect %s
+260@@@Architect %s
 6.0.1.18594
-258,Timber Lord %s
-259,%s the Commandojack
+258@@@Timber Lord %s
+259@@@%s the Commandojack
 6.0.1.18663
-261,Blood Champion %s
-262,%s the Manslayer
-263,Gnomebane %s
-264,%s the Dwarfstalker
-265,Worgen Hunter %s
-266,%s, Scourge of the Kaldorei
-267,%s, Draenei Destroyer
-268,%s, Terror of the Tushui
+261@@@Blood Champion %s
+262@@@%s the Manslayer
+263@@@Gnomebane %s
+264@@@%s the Dwarfstalker
+265@@@Worgen Hunter %s
+266@@@%s, Scourge of the Kaldorei
+267@@@%s, Draenei Destroyer
+268@@@%s, Terror of the Tushui
 6.0.1.18689
-269,%s, Warlord of Draenor
-270,%s the Butcher
-271,Orcslayer %s
-272,%s the Deathstalker
-273,%s, Killer of Kezan
-274,Troll Hunter %s
-275,%s, Slayer of Sin'dorei
-276,%s, Huojin's Fall
-277,Stable Master %s
-278,Talon King %s
-279,Talon Queen %s
+269@@@%s, Warlord of Draenor
+270@@@%s the Butcher
+271@@@Orcslayer %s
+272@@@%s the Deathstalker
+273@@@%s, Killer of Kezan
+274@@@Troll Hunter %s
+275@@@%s, Slayer of Sin'dorei
+276@@@%s, Huojin's Fall
+277@@@Stable Master %s
+278@@@Talon King %s
+279@@@Talon Queen %s
 6.0.1.18716
-272,%s the Death Stalker
+272@@@%s the Death Stalker
 6.0.1.18738
-280,%s, Tarren Mill Terror
-281,%s, Southshore Slayer
-282,%s of the Frostwolves
-283,Chancellor %s
-284,"Conservationist" %s
-285,%s, Spear of Vol'jin
-286,%s, Sword of Wrynn
-287,Comedian %s
-288,Sniper %s
-289,%s of the Iron Vanguard
-290,%s the Indomitable
-291,%s the Mine Master
-292,Dockmaster %s
-293,%s the Soul Preserver
-294,%s, Scion of Rukhmar
-295,Spiritwalker %s
-296,%s, Lord of Blackrock
-297,%s, Lady of Blackrock
-298,%s the Violet Guardian
-299,%s the Grimrail Suplexer
-300,%s the Savage Hero
-301,%s Ironbane
+280@@@%s, Tarren Mill Terror
+281@@@%s, Southshore Slayer
+282@@@%s of the Frostwolves
+283@@@Chancellor %s
+284@@@"Conservationist" %s
+285@@@%s, Spear of Vol'jin
+286@@@%s, Sword of Wrynn
+287@@@Comedian %s
+288@@@Sniper %s
+289@@@%s of the Iron Vanguard
+290@@@%s the Indomitable
+291@@@%s the Mine Master
+292@@@Dockmaster %s
+293@@@%s the Soul Preserver
+294@@@%s, Scion of Rukhmar
+295@@@Spiritwalker %s
+296@@@%s, Lord of Blackrock
+297@@@%s, Lady of Blackrock
+298@@@%s the Violet Guardian
+299@@@%s the Grimrail Suplexer
+300@@@%s the Savage Hero
+301@@@%s Ironbane
 6.0.2.18816
-302,%s, Lord of War
-303,%s, Lady of War
-304,%s, Empire's Twilight
+302@@@%s, Lord of War
+303@@@%s, Lady of War
+304@@@%s, Empire's Twilight
 6.0.2.18850
-305,Artisan %s
+305@@@Artisan %s
 6.0.2.18888
-283,Prelate %s
-288,Peacekeeper %s
+283@@@Prelate %s
+288@@@Peacekeeper %s
 6.0.2.18898
-306,%s, Legend of Pandaria
+306@@@%s, Legend of Pandaria
 6.0.2.18927
-287,Masked Chuckler %s
+287@@@Masked Chuckler %s
 6.1.0.19567
-307,Photographer %s
+307@@@Photographer %s
 6.1.0.19611
-307,Field Photographer %s
+307@@@Field Photographer %s
 6.2.0.19890
-308,Primal Gladiator %s
-309,%s, Guardian of the Alliance
-310,%s, Defender of the Alliance
-311,%s, Soldier of the Alliance
-312,%s, Guardian of the Horde
-313,%s, Defender of the Horde
-314,%s, Soldier of the Horde
+308@@@Primal Gladiator %s
+309@@@%s, Guardian of the Alliance
+310@@@%s, Defender of the Alliance
+311@@@%s, Soldier of the Alliance
+312@@@%s, Guardian of the Horde
+313@@@%s, Defender of the Horde
+314@@@%s, Soldier of the Horde
 6.2.0.19973
-315,Wild Gladiator %s
-316,Warmongering Gladiator %s
+315@@@Wild Gladiator %s
+316@@@Warmongering Gladiator %s
 6.2.0.20008
-317,Captain %s
-318,%s of the Jungle
+317@@@Captain %s
+318@@@%s of the Jungle
 6.2.0.20061
-59,Predator %s
-319,%s, Defiler's End
+59@@@Predator %s
+319@@@%s, Defiler's End
 6.2.2.20395
-53,Crashin' Thrashin' %s
+53@@@Crashin' Thrashin' %s
 7.3.0.24473
-62,Battlelord %s
-320,Slayer %s
-321,The Honorable %s
-322,The Prestigious %s
-323,The Unrelenting %s
-324,Legionary %s
-325,%s, Bound by Honor
-326,%s, Patron of War
-327,Archdruid %s
-328,Deathlord %s
-329,Grandmaster %s
-330,Master Assassin %s
-331,%s, Lord of the Reins
-332,%s, Guardian of G'Hanir
-333,%s the Groundbreaker
-334,%s the Fabulous
-335,Huntmaster %s
-336,Farseer %s
-337,Netherlord %s
-338,Shadowblade %s
-339,High Priest %s
-340,Field Medic %s
-341,%s the Dreamer
-342,%s, Vengeance Incarnate
-343,%s the Gullible
-344,Illidari %s
-345,Highlord %s
-346,%s, Talon's Vengeance
-347,%s the Chosen
-348,Headmaster %s
-353,Vindictive Gladiator %s
-354,%s the Unstoppable Force
-355,Fearless Gladiator %s
-356,Stylist %s
-357,%s the Darkener
-358,%s, Adventuring Instructor
-359,Cruel Gladiator %s
-360,Ferocious Gladiator %s
-361,Timelord %s
-362,%s, the Tomb Raider
-363,Fierce Gladiator %s
+62@@@Battlelord %s
+320@@@Slayer %s
+321@@@The Honorable %s
+322@@@The Prestigious %s
+323@@@The Unrelenting %s
+324@@@Legionary %s
+325@@@%s, Bound by Honor
+326@@@%s, Patron of War
+327@@@Archdruid %s
+328@@@Deathlord %s
+329@@@Grandmaster %s
+330@@@Master Assassin %s
+331@@@%s, Lord of the Reins
+332@@@%s, Guardian of G'Hanir
+333@@@%s the Groundbreaker
+334@@@%s the Fabulous
+335@@@Huntmaster %s
+336@@@Farseer %s
+337@@@Netherlord %s
+338@@@Shadowblade %s
+339@@@High Priest %s
+340@@@Field Medic %s
+341@@@%s the Dreamer
+342@@@%s, Vengeance Incarnate
+343@@@%s the Gullible
+344@@@Illidari %s
+345@@@Highlord %s
+346@@@%s, Talon's Vengeance
+347@@@%s the Chosen
+348@@@Headmaster %s
+353@@@Vindictive Gladiator %s
+354@@@%s the Unstoppable Force
+355@@@Fearless Gladiator %s
+356@@@Stylist %s
+357@@@%s the Darkener
+358@@@%s, Adventuring Instructor
+359@@@Cruel Gladiator %s
+360@@@Ferocious Gladiator %s
+361@@@Timelord %s
+362@@@%s, the Tomb Raider
+363@@@Fierce Gladiator %s
 7.3.0.24651
-364,Titanslayer %s
-365,%s the Collector
+364@@@Titanslayer %s
+365@@@%s the Collector
 7.3.0.24727
-366,%s, The Lightbringer
-367,Demonslayer %s
+366@@@%s, The Lightbringer
+367@@@Demonslayer %s
 7.3.0.24758
-366,%s, the Lightbringer
+366@@@%s, the Lightbringer
 7.3.2.25079
-368,Dominant Gladiator %s
-369,%s, the Tactician
+368@@@Dominant Gladiator %s
+369@@@%s, the Tactician
 7.3.5.25928
-370,Demonic Gladiator %s
-372,Postmaster %s
-373,Prospector %s
+370@@@Demonic Gladiator %s
+372@@@Postmaster %s
+373@@@Prospector %s
 8.0.1.25902
-371,%s, No Good, Dirty, Rotten, Candy Stealer!
+371@@@%s, No Good, Dirty, Rotten, Candy Stealer!
 8.0.1.26433
-374,%s, Famed Slayer of G'huun
+374@@@%s, Famed Slayer of G'huun
 8.0.1.26567
-375,%s, the Horde Slayer
-376,%s, the Allliance Slayer
+375@@@%s, the Horde Slayer
+376@@@%s, the Allliance Slayer
 8.0.1.26624
-369,%s the Tactician
-377,%s, Conqueror of Azeroth
-378,Inquisitor %s
-379,Esteemed %s
-380,%s the Admired
-381,%s the Purifier
+369@@@%s the Tactician
+377@@@%s, Conqueror of Azeroth
+378@@@Inquisitor %s
+379@@@Esteemed %s
+380@@@%s the Admired
+381@@@%s the Purifier
 8.0.1.26707
-382,Expedition Leader %s
+382@@@Expedition Leader %s
 8.0.1.26734
-376,%s, the Alliance Slayer
+376@@@%s, the Alliance Slayer
 8.0.1.26903
-383,Contender %s
+383@@@Contender %s
 8.1.0.27826
-78,Combatant %s
-79,Dread Gladiator %s
-80,Sinister Gladiator %s
+78@@@Combatant %s
+79@@@Dread Gladiator %s
+80@@@Sinister Gladiator %s
 8.1.0.28202
-384,%s, Famed Conqueror of Dazar'alor
-385,%s, Famed Defender of Dazar'alor
+384@@@%s, Famed Conqueror of Dazar'alor
+385@@@%s, Famed Defender of Dazar'alor
 8.1.0.28294
-386,%s, Hero of Dazar'alor
+386@@@%s, Hero of Dazar'alor
 8.1.0.28616
-387,%s the Elite Death Knight
-388,%s the Elite Demon Hunter
-389,%s the Elite Druid
-390,%s the Elite Hunter
-391,%s the Elite Mage
-392,%s the Elite Monk
-393,%s the Elite Paladin
-394,%s the Elite Priest
-395,%s the Elite Rogue
-396,%s the Elite Shaman
-397,%s the Elite Warlock
-398,%s the Elite Warrior
+387@@@%s the Elite Death Knight
+388@@@%s the Elite Demon Hunter
+389@@@%s the Elite Druid
+390@@@%s the Elite Hunter
+391@@@%s the Elite Mage
+392@@@%s the Elite Monk
+393@@@%s the Elite Paladin
+394@@@%s the Elite Priest
+395@@@%s the Elite Rogue
+396@@@%s the Elite Shaman
+397@@@%s the Elite Warlock
+398@@@%s the Elite Warrior
 8.1.5.28938
-399,%s the T-Shirt Enthusiast
+399@@@%s the T-Shirt Enthusiast
 8.2.0.30080
-324,Trashmaster %s
-400,%s, Famed Slayer of the Harbinger
+324@@@Trashmaster %s
+400@@@%s, Famed Slayer of the Harbinger
 8.2.0.30262
-402,Notorious Gladiator %s
+402@@@Notorious Gladiator %s
 8.2.0.30329
-403,Junkyard %s
+403@@@Junkyard %s
 8.2.0.30430
-404,%s the Eternal
-405,%s of the Deeps
-406,Sparking %s
-407,%s, Azeroth's Champion
+404@@@%s the Eternal
+405@@@%s of the Deeps
+406@@@Sparking %s
+407@@@%s, Azeroth's Champion
 8.2.0.31229
-409,%s, Famed Slayer of Azshara
+409@@@%s, Famed Slayer of Azshara
 8.2.5.31337
-410,Renowned Explorer %s
-411,%s, Devoted of the Dark Lady
-412,%s, Veteran of the Fourth War
+410@@@Renowned Explorer %s
+411@@@%s, Devoted of the Dark Lady
+412@@@%s, Veteran of the Fourth War
 8.3.0.32044
-411,Corrupted Gladiator %s
-414,%s, Servant of N'Zoth
-415,%s, Minion of Mayhem
+411@@@Corrupted Gladiator %s
+414@@@%s, Servant of N'Zoth
+415@@@%s, Minion of Mayhem
 8.3.0.32272
-416,%s, Famed Slayer of N'Zoth
-417,%s the Uncorrupted
+416@@@%s, Famed Slayer of N'Zoth
+417@@@%s the Uncorrupted
 8.3.0.32414
-418,%s the Awakened
+418@@@%s the Awakened
 8.3.0.32593
-419,%s the Faceless One
+419@@@%s the Faceless One
 9.0.1.33978
-408,Pilgrim %s the Mallet Bearer
-413,%s, As Themselves
-423,%s the Cryptkeeper
+408@@@Pilgrim %s the Mallet Bearer
+413@@@%s, As Themselves
+423@@@%s the Cryptkeeper
 9.0.1.35167
-425,%s, Hand of the Archon
-426,Baron %s
-427,Baroness %s
-428,%s, Winter's Envoy
-429,Count %s
-430,Countess %s
+425@@@%s, Hand of the Archon
+426@@@Baron %s
+427@@@Baroness %s
+428@@@%s, Winter's Envoy
+429@@@Count %s
+430@@@Countess %s
 9.0.1.35256
-424,Deathbringer %s
+424@@@Deathbringer %s
 9.0.1.35360
-423,Cryptkeeper %s
-431,%s the Proud
+423@@@Cryptkeeper %s
+431@@@%s the Proud
 9.0.1.35522
-432,Sinbreaker %s
+432@@@Sinbreaker %s
 9.0.1.35598
-433,%s, the Party Herald
-434,Sinful Gladiator %s
-435,Fun Guy %s
+433@@@%s, the Party Herald
+434@@@Sinful Gladiator %s
+435@@@Fun Guy %s
 9.0.1.35679
-436,%s the Avowed
+436@@@%s the Avowed
 9.0.2.35854
-437,Abominable %s
-438,Spirestalker %s
+437@@@Abominable %s
+438@@@Spirestalker %s
 9.0.2.35978
-439,%s the Ascended
+439@@@%s the Ascended
 9.0.2.36086
-440,%s, Famed Slayer of Denathrius
+440@@@%s, Famed Slayer of Denathrius
 9.1.0.38312
-441,Unchained Gladiator %s
-442,%s, Protector of the Weald
-443,%s, Sword of the Primus
-444,Sin Eater %s
-445,%s, Disciple of Devotion
+441@@@Unchained Gladiator %s
+442@@@%s, Protector of the Weald
+443@@@%s, Sword of the Primus
+444@@@Sin Eater %s
+445@@@%s, Disciple of Devotion
 9.1.0.38950
-446,%s the Tormented
+446@@@%s the Tormented
 9.1.0.39069
-447,%s, Breaker of Chains
-448,%s, Famed Bane of the Banshee Queen
+447@@@%s, Breaker of Chains
+448@@@%s, Famed Bane of the Banshee Queen
 9.1.5.40622
-451,%s, the Tormented Hero
+451@@@%s, the Tormented Hero
 9.2.0.41089
-449,Gauntlet Runner %s
-450,%s, Tower Ranger
-452,Cosmic Gladiator %s
+449@@@Gauntlet Runner %s
+450@@@%s, Tower Ranger
+452@@@Cosmic Gladiator %s
 9.2.0.41726
-453,%s the [PH] TBD Title
+453@@@%s the [PH] TBD Title
 9.2.0.41962
-454,%s, Famed Slayer of The Jailer
-455,%s, Guardian of the Pattern
+454@@@%s, Famed Slayer of The Jailer
+455@@@%s, Guardian of the Pattern
 9.2.0.42069
-456,Soloist %s
+456@@@Soloist %s
 9.2.0.42174
-457,%s the Cryptic
-458,%s, the Cryptic Hero
+457@@@%s the Cryptic
+458@@@%s, the Cryptic Hero
 9.2.0.42257
-454,%s, Famed Slayer of The Banished One
+454@@@%s, Famed Slayer of The Banished One
 9.2.5.42850
-459,Fearless Spectator %s
-460,%s of Lordaeron
-461,Eternal Gladiator %s
+459@@@Fearless Spectator %s
+460@@@%s of Lordaeron
+461@@@Eternal Gladiator %s
 9.2.5.43254
-462,%s, Maw Walker
-463,Veilstrider %s
+462@@@%s, Maw Walker
+463@@@Veilstrider %s
 9.2.5.43412
-464,%s, Hero of Fate
-465,%s the [PH] Season 4 Title
+464@@@%s, Hero of Fate
+465@@@%s the [PH] Season 4 Title
 9.2.5.43741
-465,%s the Shrouded
-466,%s, the Shrouded Hero
+465@@@%s the Shrouded
+466@@@%s, the Shrouded Hero
 10.0.0.44649
-467,%s, Honorary Dryad
+467@@@%s, Honorary Dryad
 10.0.0.44707
-468,Crimson Gladiator %s
+468@@@Crimson Gladiator %s
 10.0.0.44895
-469,%s, Close and Personal Friend of Deathwing
+469@@@%s, Close and Personal Friend of Deathwing
 10.0.0.44999
-469,%s, The Worldbreaker
+469@@@%s, The Worldbreaker
 10.0.0.45335
-470,%s, the [PH] Hero
-471,Soupervisor %s
-472,Birdwatcher %s
+470@@@%s, the [PH] Hero
+471@@@Soupervisor %s
+472@@@Birdwatcher %s
 10.0.0.45454
-473,Khansguard %s
-474,%s, Ally of Dragons
-475,Intrepid Explorer %s
-476,%s of Iskaara
+473@@@Khansguard %s
+474@@@%s, Ally of Dragons
+475@@@Intrepid Explorer %s
+476@@@%s of Iskaara
 10.0.0.45661
-477,%s the [PH Season 1 Title]
-478,Isles Racer %s
-479,Malicious %s
+477@@@%s the [PH Season 1 Title]
+478@@@Isles Racer %s
+479@@@Malicious %s
 10.0.2.45779
-480,%s, Knight of Feathersworth
+480@@@%s, Knight of Feathersworth
 10.0.2.45969
-470,%s the Thundering Hero
-477,%s the Thundering
-481,%s the Elite Evoker
-482,Crimson Soloist %s
+470@@@%s the Thundering Hero
+477@@@%s the Thundering
+481@@@%s the Elite Evoker
+482@@@Crimson Soloist %s
 10.0.2.46091
-483,%s, Paragon of the Obsidian Brood
-484,%s, Agent of the Black Prince
+483@@@%s, Paragon of the Obsidian Brood
+484@@@%s, Agent of the Black Prince

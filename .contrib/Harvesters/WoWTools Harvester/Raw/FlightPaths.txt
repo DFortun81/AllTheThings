@@ -1,2647 +1,2647 @@
 0.5.3.3368
-1,Northshire Abbey
-2,Stormwind, Elwynn
-3,Programmer Isle
-4,Sentinel Hill, Westfall
-5,Lakeshire, Redridge
-6,Ironforge, Dun Morogh
-7,Menethil Harbor, Wetlands
-8,Thelsamar, Loch Modan
-9,Booty Bay, Stranglethorn
-10,Sepulcher, Silverpine
-11,Undercity, Tirisfal
-12,Darkshire, Duskwood
-13,Tarren Mill, Hillsbrad
-14,Southshore, Hillsbrad
-15,Eastern Plaguelands
-16,Arathi - Refuge Pointe
-17,Arathi - Hammerfall
-18,Stranglethorn - Booty Bay - Horde
-19,Stranglethorn - Booty Bay - Alliance
-20,Stranglethorn - Grom'gol
-21,Badlands - Kargath - Windrider
-22,Mulgore - Thunder Bluff
-23,Durotar - Orgrimmar
-24,Badlands - Kargath - Bat
-25,The Barrens - Crossroads
-26,Teldrassil - Darnassus
-27,Darkshore - Auberdeen
-28,Ashenvale - Astranaar
-29,Stonetalon Mtns. - Sun Rock
-30,Thousand Needles - Freewind Post
-31,Thousand Needles - Thalanaar
-32,Dustwallow - Theramore
-33,Stonetalon Mtns. - Stonetalon Peak
-34,The Barrens - Ratchet Boat Return TEST
-35,The Barrens - Ratchet Boat TEST
-36,TEST
+1@@@Northshire Abbey
+2@@@Stormwind, Elwynn
+3@@@Programmer Isle
+4@@@Sentinel Hill, Westfall
+5@@@Lakeshire, Redridge
+6@@@Ironforge, Dun Morogh
+7@@@Menethil Harbor, Wetlands
+8@@@Thelsamar, Loch Modan
+9@@@Booty Bay, Stranglethorn
+10@@@Sepulcher, Silverpine
+11@@@Undercity, Tirisfal
+12@@@Darkshire, Duskwood
+13@@@Tarren Mill, Hillsbrad
+14@@@Southshore, Hillsbrad
+15@@@Eastern Plaguelands
+16@@@Arathi - Refuge Pointe
+17@@@Arathi - Hammerfall
+18@@@Stranglethorn - Booty Bay - Horde
+19@@@Stranglethorn - Booty Bay - Alliance
+20@@@Stranglethorn - Grom'gol
+21@@@Badlands - Kargath - Windrider
+22@@@Mulgore - Thunder Bluff
+23@@@Durotar - Orgrimmar
+24@@@Badlands - Kargath - Bat
+25@@@The Barrens - Crossroads
+26@@@Teldrassil - Darnassus
+27@@@Darkshore - Auberdeen
+28@@@Ashenvale - Astranaar
+29@@@Stonetalon Mtns. - Sun Rock
+30@@@Thousand Needles - Freewind Post
+31@@@Thousand Needles - Thalanaar
+32@@@Dustwallow - Theramore
+33@@@Stonetalon Mtns. - Stonetalon Peak
+34@@@The Barrens - Ratchet Boat Return TEST
+35@@@The Barrens - Ratchet Boat TEST
+36@@@TEST
 0.5.5.3494
-16,Refuge Pointe - Arathi
-17,Hammerfall - Arathi
-18,Booty Bay - Stranglethorn
-19,Booty Bay - Stranglethorn
-20,Grom'gol - Stranglethorn
-21,Kargath - Badlands
-22,Thunder Bluff - Mulgore
-23,Orgrimmar - Durotar
-24,Badlands - Kargath - Bat - UNUSED
-25,Crossroads - The Barrens
-26,Auberdine, Darkshore
-27,Rut'theran Village - Teldrassil
-28,Astranaar - Ashenvale
-29,Sun Rock Retreat - Stonetalon Mountains
-30,Freewind Post - Thousand Needles
-31,Thalanaar - Thousand Needles
-32,Theramore - Dustwallow Marsh
-33,Stonetalon Peak - Stonetalon Mountains
-56,Stonard - Swamp of Sorrows
-57,FIshing Village - Teldrassil
+16@@@Refuge Pointe - Arathi
+17@@@Hammerfall - Arathi
+18@@@Booty Bay - Stranglethorn
+19@@@Booty Bay - Stranglethorn
+20@@@Grom'gol - Stranglethorn
+21@@@Kargath - Badlands
+22@@@Thunder Bluff - Mulgore
+23@@@Orgrimmar - Durotar
+24@@@Badlands - Kargath - Bat - UNUSED
+25@@@Crossroads - The Barrens
+26@@@Auberdine, Darkshore
+27@@@Rut'theran Village - Teldrassil
+28@@@Astranaar - Ashenvale
+29@@@Sun Rock Retreat - Stonetalon Mountains
+30@@@Freewind Post - Thousand Needles
+31@@@Thalanaar - Thousand Needles
+32@@@Theramore - Dustwallow Marsh
+33@@@Stonetalon Peak - Stonetalon Mountains
+56@@@Stonard - Swamp of Sorrows
+57@@@FIshing Village - Teldrassil
 0.6.0.3592
-37,Nijel's Point - Desolace
-38,Ghostwalker Post - Desolace
+37@@@Nijel's Point - Desolace
+38@@@Ghostwalker Post - Desolace
 0.7.0.3694
-34,The Barrens - Ratchet to Booty Bay Boat
-39,Gadgetzan, Tanaris
-40,Gadgetzan, Tanaris
-41,Feathermoon, Feralas
-42,Camp Mojache, Feralas
-43,Aerie Peak, The Hinterlands
+34@@@The Barrens - Ratchet to Booty Bay Boat
+39@@@Gadgetzan, Tanaris
+40@@@Gadgetzan, Tanaris
+41@@@Feathermoon, Feralas
+42@@@Camp Mojache, Feralas
+43@@@Aerie Peak, The Hinterlands
 0.8.0.3734
-44,Valormok, Azshara
-45,Nethergarde Keep, Blasted Lands
+44@@@Valormok, Azshara
+45@@@Nethergarde Keep, Blasted Lands
 0.9.0.3807
-35,Durotar - Orgrimmar to Underzity Zepplin
-46,Southshore Ferry, Hillsbrad
-47,Stranglethorn - Grom'Gol to Orgrimmar Zeppelin
-48,Bloodvenom River, Felwood
+35@@@Durotar - Orgrimmar to Underzity Zepplin
+46@@@Southshore Ferry, Hillsbrad
+47@@@Stranglethorn - Grom'Gol to Orgrimmar Zeppelin
+48@@@Bloodvenom River, Felwood
 1.0.0.3980
-16,Refuge Pointe, Arathi
-17,Hammerfall, Arathi
-18,Booty Bay, Stranglethorn
-19,Booty Bay, Stranglethorn
-20,Grom'gol, Stranglethorn
-21,Kargath, Badlands
-22,Thunder Bluff, Mulgore
-23,Orgrimmar, Durotar
-24,Generic, World target for Zeppelin Paths
-25,Crossroads, The Barrens
-27,Rut'theran Village, Teldrassil
-28,Astranaar, Ashenvale
-29,Sun Rock Retreat, Stonetalon Mountains
-30,Freewind Post, Thousand Needles
-31,Thalanaar, Thousand Needles
-32,Theramore, Dustwallow Marsh
-33,Stonetalon Peak, Stonetalon Mountains
-34,The Barrens, Ratchet to Booty Bay Boat
-35,Durotar, Orgrimmar & Grom'Gol to Undercity Zeppelins
-37,Nijel's Point, Desolace
-38,Shadowprey Village, Desolace
-47,Stranglethorn, Grom'Gol to Orgrimmar Zeppelin
-49,Nighthaven, Moonglade
-50,Menethil to Theramore Boat Path
-51,Rut'theran to Auberdine Boat
-52,Everlook, Winterspring
-53,Everlook, Winterspring
-54,Feralas, Feathermoon Stronghold - Boat
-55,Brackenwall VIllage, Dustwallow Marsh
-56,Stonard, Swamp of Sorrows
-57,FIshing Village, Teldrassil
-58,Coast of Ashenvale
+16@@@Refuge Pointe, Arathi
+17@@@Hammerfall, Arathi
+18@@@Booty Bay, Stranglethorn
+19@@@Booty Bay, Stranglethorn
+20@@@Grom'gol, Stranglethorn
+21@@@Kargath, Badlands
+22@@@Thunder Bluff, Mulgore
+23@@@Orgrimmar, Durotar
+24@@@Generic, World target for Zeppelin Paths
+25@@@Crossroads, The Barrens
+27@@@Rut'theran Village, Teldrassil
+28@@@Astranaar, Ashenvale
+29@@@Sun Rock Retreat, Stonetalon Mountains
+30@@@Freewind Post, Thousand Needles
+31@@@Thalanaar, Thousand Needles
+32@@@Theramore, Dustwallow Marsh
+33@@@Stonetalon Peak, Stonetalon Mountains
+34@@@The Barrens, Ratchet to Booty Bay Boat
+35@@@Durotar, Orgrimmar & Grom'Gol to Undercity Zeppelins
+37@@@Nijel's Point, Desolace
+38@@@Shadowprey Village, Desolace
+47@@@Stranglethorn, Grom'Gol to Orgrimmar Zeppelin
+49@@@Nighthaven, Moonglade
+50@@@Menethil to Theramore Boat Path
+51@@@Rut'theran to Auberdine Boat
+52@@@Everlook, Winterspring
+53@@@Everlook, Winterspring
+54@@@Feralas, Feathermoon Stronghold - Boat
+55@@@Brackenwall VIllage, Dustwallow Marsh
+56@@@Stonard, Swamp of Sorrows
+57@@@FIshing Village, Teldrassil
+58@@@Coast of Ashenvale
 1.1.2.4125
-31,Thalanaar, Feralas
-48,Bloodvenom Post, Felwood
-49,Moonglade
-55,Brackenwall Village, Dustwallow Marsh
-57,Fishing Village, Teldrassil
-58,Zoram'gar Outpost, Ashenvale
-59,Alliance Stronghold, Alterac Valley
-60,Horde Stronghold, Alterac Valley
-61,Splintertree Post, Ashenvale
-62,Nighthaven, Moonglade
-63,Nighthaven, Moonglade
-64,Talrendis Point, Azshara
-65,Talonbranch Glade, Felwood
-66,Chillwind Point, Western Plaguelands
-67,Light's Hope Chapel, Eastern Plaguelands
-68,Light's Hope Chapel, Eastern Plaguelands
-69,Moonglade
+31@@@Thalanaar, Feralas
+48@@@Bloodvenom Post, Felwood
+49@@@Moonglade
+55@@@Brackenwall Village, Dustwallow Marsh
+57@@@Fishing Village, Teldrassil
+58@@@Zoram'gar Outpost, Ashenvale
+59@@@Alliance Stronghold, Alterac Valley
+60@@@Horde Stronghold, Alterac Valley
+61@@@Splintertree Post, Ashenvale
+62@@@Nighthaven, Moonglade
+63@@@Nighthaven, Moonglade
+64@@@Talrendis Point, Azshara
+65@@@Talonbranch Glade, Felwood
+66@@@Chillwind Point, Western Plaguelands
+67@@@Light's Hope Chapel, Eastern Plaguelands
+68@@@Light's Hope Chapel, Eastern Plaguelands
+69@@@Moonglade
 1.13.0.28211
-10,The Sepulcher, Silverpine Forest
-34,Transport, Booty Bay - Ratchet
-35,Transport, Orgrimmar Zepplins
-36,Generic, World target
-47,Transport, Grom'gol - Orgrimmar
-50,Transport, Menethil Ships
-51,Transport, Rut'theran - Auberdine
-54,Transport, Feathermoon - Feralas
-59,Dun Baldar, Alterac Valley
-60,Frostwolf Keep, Alterac Valley
-66,Chillwind Camp, Western Plaguelands
-70,Flame Crest, Burning Steppes
-71,Morgan's Vigil, Burning Steppes
-72,Cenarion Hold, Silithus
-73,Cenarion Hold, Silithus
-74,Thorium Point, Searing Gorge
-75,Thorium Point, Searing Gorge
-76,Revantusk Village, The Hinterlands
-77,Camp Taurajo, The Barrens
-78,Naxxramas
-79,Marshal's Refuge, Un'Goro Crater
-80,Ratchet, The Barrens
-84,Plaguewood Tower, Eastern Plaguelands
-85,Northpass Tower, Eastern Plaguelands
-86,Eastwall Tower, Eastern Plaguelands
-87,Crown Guard Tower, Eastern Plaguelands
+10@@@The Sepulcher, Silverpine Forest
+34@@@Transport, Booty Bay - Ratchet
+35@@@Transport, Orgrimmar Zepplins
+36@@@Generic, World target
+47@@@Transport, Grom'gol - Orgrimmar
+50@@@Transport, Menethil Ships
+51@@@Transport, Rut'theran - Auberdine
+54@@@Transport, Feathermoon - Feralas
+59@@@Dun Baldar, Alterac Valley
+60@@@Frostwolf Keep, Alterac Valley
+66@@@Chillwind Camp, Western Plaguelands
+70@@@Flame Crest, Burning Steppes
+71@@@Morgan's Vigil, Burning Steppes
+72@@@Cenarion Hold, Silithus
+73@@@Cenarion Hold, Silithus
+74@@@Thorium Point, Searing Gorge
+75@@@Thorium Point, Searing Gorge
+76@@@Revantusk Village, The Hinterlands
+77@@@Camp Taurajo, The Barrens
+78@@@Naxxramas
+79@@@Marshal's Refuge, Un'Goro Crater
+80@@@Ratchet, The Barrens
+84@@@Plaguewood Tower, Eastern Plaguelands
+85@@@Northpass Tower, Eastern Plaguelands
+86@@@Eastwall Tower, Eastern Plaguelands
+87@@@Crown Guard Tower, Eastern Plaguelands
 2.0.0.6080
-24,Generic, World Target 002
-34,Transport, Booty Bay
-35,Transport, Orgrimmar
-36,Generic, World Target 001
-46,Transport, Southshore
-47,Transport, Grom'gol
-50,Transport, Menethil Harbor
-51,Transport, Auberdine
-54,Transport, Feathermoon
-81,Filming
-82,Silvermoon City
-83,Tranquillien, Ghostlands
-88,Transport, Exodar
-89,Transport, Theramore
-90,Transport, Undercity
-91,Quest - Azuremyst Shaman Target
-92,Quest - Azuremyst Shaman Start
-93,Blood Watch, Bloodmyst Isle
-94,The Exodar
-95,Zangarmarsh - Quest - As the Crow Flies
-96,Zangarmarsh - Quest - As the Crow Flies - End
-97,Quest - Elekk Path to Kessel
-98,Quest - Elekk to Kessel Target
-99,Thrallmar, Hellfire Peninsula
-100,Honor Hold, Hellfire Peninsula
-101,Temple of Telhamat, Hellfire Peninsula
-102,Falcon Watch, Hellfire Peninsula
-103,Nagrand - PvP - Attack Run Start 1
-104,Nagrand - PvP - Attack Run End 1
-105,Nagrand - PvP - Attack Run Start 2
-106,Nagrand - PvP - Attack Run End 2
-107,Nagrand - PvP - Attack Run Start 3
-108,Nagrand - PvP - Attack Run End 3
-109,Nagrand - PvP - Attack Run Start 4
-110,Nagrand - PvP - Attack Run End 4
-111,Eversong - Duskwither Teleport
-112,Eversong - Duskwither Teleport End
-113,Quest - Nethrandamus Start
-114,Quest - Nethrandamus End Target
-115,Quest - Caverns of Time OH - Begin
-116,Quest - Caverns of Time OH - End
-117,Telredor, Zangarmarsh
-118,Zabra'jin, Zangarmarsh
-119,Telaar, Nagrand
-120,Garadar, Nagrand
-121,Allerian Stronghold, Terokkar Forest
-122,Area 52, Netherstorm
-123,Shadowmoon Village, Shadowmoon Valley
-124,Wildhammer Stronghold, Shadowmoon Valley
-125,Sylvannar, Blade's Edge Mountains
-126,Thunderlord Stronghold, Blade's Edge Mountains
-127,Stonebreaker Hold, Terokkar Forest
-128,Shattrath, Terokkar Forest
-129,Hellfire Peninsula, The Dark Portal, Alliance
-130,Hellfire Peninsula, The Dark Portal, Horde
-131,Quest - Horde Hellfire Start
-132,Quest - Horde Hellfire End
-133,Quest - Hellfire Peninsula (Alliance Path) Start
-134,Quest - Hellfire Peninsula (Alliance) End
-135,Quest - Hellfire, Aerial Mission (Horde) Start
-136,Quest - Hellfire, Aerial Mission (Horde) End
-137,Quest - Hellfire, Aerial Mission (Alliance) Start
-138,Quest - Hellfire, Aerial Mission (Alliance) End
-139,The Stormspire, Netherstorm
-140,Altar of Shattra, Shadowmoon Valley
-141,Spinebreaker Ridge, Hellfire Peninsula
-142,Hellfire Peninsula - Reaver's Fall
-143,Quest - Caverns of Time (Intro Flight Path) (End)
-144,Quest - Caverns of Time (Intro Flight Path) (Start)
-145,Netherstorm - Stealth Flight - Begin
-146,Netherstorm - Stealth Flight End
-147,Hellfire Peninsula - Force Camp Beach Head
-148,Shatter Point, Hellfire Peninsula (Beach Assault)
-149,Shatter Point, Hellfire Peninsula
-150,Cosmowrench, Netherstorm
-151,Swamprat Post, Zangarmarsh
+24@@@Generic, World Target 002
+34@@@Transport, Booty Bay
+35@@@Transport, Orgrimmar
+36@@@Generic, World Target 001
+46@@@Transport, Southshore
+47@@@Transport, Grom'gol
+50@@@Transport, Menethil Harbor
+51@@@Transport, Auberdine
+54@@@Transport, Feathermoon
+81@@@Filming
+82@@@Silvermoon City
+83@@@Tranquillien, Ghostlands
+88@@@Transport, Exodar
+89@@@Transport, Theramore
+90@@@Transport, Undercity
+91@@@Quest - Azuremyst Shaman Target
+92@@@Quest - Azuremyst Shaman Start
+93@@@Blood Watch, Bloodmyst Isle
+94@@@The Exodar
+95@@@Zangarmarsh - Quest - As the Crow Flies
+96@@@Zangarmarsh - Quest - As the Crow Flies - End
+97@@@Quest - Elekk Path to Kessel
+98@@@Quest - Elekk to Kessel Target
+99@@@Thrallmar, Hellfire Peninsula
+100@@@Honor Hold, Hellfire Peninsula
+101@@@Temple of Telhamat, Hellfire Peninsula
+102@@@Falcon Watch, Hellfire Peninsula
+103@@@Nagrand - PvP - Attack Run Start 1
+104@@@Nagrand - PvP - Attack Run End 1
+105@@@Nagrand - PvP - Attack Run Start 2
+106@@@Nagrand - PvP - Attack Run End 2
+107@@@Nagrand - PvP - Attack Run Start 3
+108@@@Nagrand - PvP - Attack Run End 3
+109@@@Nagrand - PvP - Attack Run Start 4
+110@@@Nagrand - PvP - Attack Run End 4
+111@@@Eversong - Duskwither Teleport
+112@@@Eversong - Duskwither Teleport End
+113@@@Quest - Nethrandamus Start
+114@@@Quest - Nethrandamus End Target
+115@@@Quest - Caverns of Time OH - Begin
+116@@@Quest - Caverns of Time OH - End
+117@@@Telredor, Zangarmarsh
+118@@@Zabra'jin, Zangarmarsh
+119@@@Telaar, Nagrand
+120@@@Garadar, Nagrand
+121@@@Allerian Stronghold, Terokkar Forest
+122@@@Area 52, Netherstorm
+123@@@Shadowmoon Village, Shadowmoon Valley
+124@@@Wildhammer Stronghold, Shadowmoon Valley
+125@@@Sylvannar, Blade's Edge Mountains
+126@@@Thunderlord Stronghold, Blade's Edge Mountains
+127@@@Stonebreaker Hold, Terokkar Forest
+128@@@Shattrath, Terokkar Forest
+129@@@Hellfire Peninsula, The Dark Portal, Alliance
+130@@@Hellfire Peninsula, The Dark Portal, Horde
+131@@@Quest - Horde Hellfire Start
+132@@@Quest - Horde Hellfire End
+133@@@Quest - Hellfire Peninsula (Alliance Path) Start
+134@@@Quest - Hellfire Peninsula (Alliance) End
+135@@@Quest - Hellfire, Aerial Mission (Horde) Start
+136@@@Quest - Hellfire, Aerial Mission (Horde) End
+137@@@Quest - Hellfire, Aerial Mission (Alliance) Start
+138@@@Quest - Hellfire, Aerial Mission (Alliance) End
+139@@@The Stormspire, Netherstorm
+140@@@Altar of Shattra, Shadowmoon Valley
+141@@@Spinebreaker Ridge, Hellfire Peninsula
+142@@@Hellfire Peninsula - Reaver's Fall
+143@@@Quest - Caverns of Time (Intro Flight Path) (End)
+144@@@Quest - Caverns of Time (Intro Flight Path) (Start)
+145@@@Netherstorm - Stealth Flight - Begin
+146@@@Netherstorm - Stealth Flight End
+147@@@Hellfire Peninsula - Force Camp Beach Head
+148@@@Shatter Point, Hellfire Peninsula (Beach Assault)
+149@@@Shatter Point, Hellfire Peninsula
+150@@@Cosmowrench, Netherstorm
+151@@@Swamprat Post, Zangarmarsh
 2.4.3.8606
-125,Sylvanaar, Blade's Edge Mountains
-140,Altar of Sha'tar, Shadowmoon Valley
-145,Quest - Netherstorm - Stealth Flight - Begin
-146,Quest - Netherstorm - Stealth Flight - End
-152,Quest - Netherstorm - Manaforge Ultris (Start)
-153,Quest - Netherstorm - Manaforge Ultris (End)
-154,Quest - Netherstorm - Manaforge Ultris (Second Pass) Start
-155,Quest - Netherstorm - Manaforge Ultris (Second Pass) End
-156,Toshley's Station, Blade's Edge Mountains
-157,Quest - Blade's Edge - Vision Guide - Start
-158,Quest - Blade's Edge - Vision Guide - End
-159,Sanctum of the Stars, Shadowmoon Valley
-160,Evergrove, Blade's Edge Mountains
-161,Quest - Nether Dragon Ally - Start
-162,Quest - Nether Dragon Ally - End
-163,Mok'Nathal Village, Blade's Edge Mountains
-164,Orebor Harborage, Zangarmarsh
-166,Emerald Sanctuary, Felwood
-167,Forest Song, Ashenvale
-168,Filming
-169,Quest - Netherwing Ledge - Mine Cart Ride - South - Start
-170,Quest - Netherwing Ledge - Mine Cart Ride - South - End
-171,Skettis
-172,Ogri'La
-173,Quest - Yarzill Flight Start
-174,Quest - Yarzill Flight Start End
-179,Mudsprocket, Dustwallow Marsh
-180,Quest - Dustwallow - Alcaz Survey Start
-181,Quest - Dustwallow - Alcaz Survey End
-195,Rebel Camp, Stranglethorn Vale
-197,Test SP2
-198,Test SP1
-201,Development Land - Kyle Radue Start
-202,Development Land - Kyle Radue End
-205,Zul'Aman, Ghostlands
-206,Transport, Feathermoon (NE Ship)
-209,Quest - Sunwell Daily - Dead Scar Bombing - Start
-210,Quest - Sunwell Daily - Dead Scar Bombing - End
-211,Quest - Sunwell Daily - Ship Bombing - Start
-212,Quest - Sunwell Daily - Ship Bombing - End
-213,Shattered Sun Staging Area
-220,
+125@@@Sylvanaar, Blade's Edge Mountains
+140@@@Altar of Sha'tar, Shadowmoon Valley
+145@@@Quest - Netherstorm - Stealth Flight - Begin
+146@@@Quest - Netherstorm - Stealth Flight - End
+152@@@Quest - Netherstorm - Manaforge Ultris (Start)
+153@@@Quest - Netherstorm - Manaforge Ultris (End)
+154@@@Quest - Netherstorm - Manaforge Ultris (Second Pass) Start
+155@@@Quest - Netherstorm - Manaforge Ultris (Second Pass) End
+156@@@Toshley's Station, Blade's Edge Mountains
+157@@@Quest - Blade's Edge - Vision Guide - Start
+158@@@Quest - Blade's Edge - Vision Guide - End
+159@@@Sanctum of the Stars, Shadowmoon Valley
+160@@@Evergrove, Blade's Edge Mountains
+161@@@Quest - Nether Dragon Ally - Start
+162@@@Quest - Nether Dragon Ally - End
+163@@@Mok'Nathal Village, Blade's Edge Mountains
+164@@@Orebor Harborage, Zangarmarsh
+166@@@Emerald Sanctuary, Felwood
+167@@@Forest Song, Ashenvale
+168@@@Filming
+169@@@Quest - Netherwing Ledge - Mine Cart Ride - South - Start
+170@@@Quest - Netherwing Ledge - Mine Cart Ride - South - End
+171@@@Skettis
+172@@@Ogri'La
+173@@@Quest - Yarzill Flight Start
+174@@@Quest - Yarzill Flight Start End
+179@@@Mudsprocket, Dustwallow Marsh
+180@@@Quest - Dustwallow - Alcaz Survey Start
+181@@@Quest - Dustwallow - Alcaz Survey End
+195@@@Rebel Camp, Stranglethorn Vale
+197@@@Test SP2
+198@@@Test SP1
+201@@@Development Land - Kyle Radue Start
+202@@@Development Land - Kyle Radue End
+205@@@Zul'Aman, Ghostlands
+206@@@Transport, Feathermoon (NE Ship)
+209@@@Quest - Sunwell Daily - Dead Scar Bombing - Start
+210@@@Quest - Sunwell Daily - Dead Scar Bombing - End
+211@@@Quest - Sunwell Daily - Ship Bombing - Start
+212@@@Quest - Sunwell Daily - Ship Bombing - End
+213@@@Shattered Sun Staging Area
+220@@@
 3.0.1.8303
-165,Transport, Northrend 2
-175,Transport, Howling Fjord
-176,Quest - Howling Fjord Tauren Canoe (Start)
-177,Quest - Howling Fjord Tauren Canoe (End)
-178,Transport, Borean Tundra
-182,Quest - Howling Fjord - Break the Blockade Zeppelin
-183,Valgarde Port, Howling Fjord
-184,Fort Wildervar, Howling Fjord
-185,Westguard Keep, Howling Fjord
-186,Quest - Howling Fjord - Flight to the Windrunner - Start
-187,Quest - Howling Fjord - Flight to the Windrunner - End
-188,Quest - Howling Fjord - Test at Sea - Start
-189,Quest - Howling Fjord - Test at Sea - End
-190,New Agamand, Howling Fjord
-191,Vengeance Landing, Howling Fjord
-192,Camp Winterhoof, Howling Fjord
-193,Quest - Howling Fjord - Mission: Plague This! - End
-194,Quest - Howling Fjord - Mission: Plague This! - Start
-196,Test - SP
-199,Quest - Howling Fjord - McGoyver Start
-200,Quest - Howling Fjord - McGoyver End
-203,Quest - Stars' Rest -> Wintergarde
-204,Quest - New Agamand -> Venomspite
-207,Quest - Howling Fjord - Sister Mercy (Start)
-208,Quest - Howling Fjord - Sister Mercy (End)
-214,Quest - Howling Fjord - Naglfar (Start)
-215,Quest - Howling Fjord - Naglfar (Nodes)
-216,
-217,
-218,Transport, Howling Fjord (Gondola, Top)
-219,Transport, Howling Fjord (Gondola, Bottom)
-221,Amber Ledge, Borean (To Beryl)
-222,Beryl Point, Borean
-223,Quest - Naglevar
-224,Borean Tundra, Naglevar
-225,Amber Ledge, Borean (to Coldarra)
-226,Transitus Shield, Coldarra
-227,Transport, PattyMacDevTest
-228,Development Land - Pat Test Start
-229,Development Land - Pat Test End
-230,Transport, Tuskarr 01
-231,Transport, Tuskarr 02
-232,Borean Tundra - Warsong Hold Wolf Start
-233,Borean Tundra - Warsong Hold Wolf End
-234,Coldarra Ledge, Coldarra
-235,Transitus Shield, Coldarra (NOT USED)
-236,Coldarra, Keristrasza to Malygos
-237,Coldarra, Keristrasza Landing
-238,
-239,Borean Tundra - Quest - Dusk Start
-240,Borean Tundra - Quest - Dusk - End
-241,Transport, Valiance Keep
-242,Quest - Dragonblight - Spiritual Vision - Start
-243,Quest - Dragonblight - Spiritual Vision - End
-244,Wintergarde Keep, Dragonblight
-245,Valiance Keep, Borean Tundra
-246,Fizzcrank Airstrip, Borean Tundra
-247,Star's Rest, Dragonblight
-248,Apothecary Camp, Howling Fjord
-249,Camp Oneqwah, Grizzly Hills
-250,Conquest Hold, Grizzly Hills
-251,Fordragon Hold, Dragonblight
-252,Wyrmrest Temple, Dragonblight
-253,Amberpine Lodge, Grizzly Hills
-254,Venomspite, Dragonblight
-255,Westfall Brigade, Grizzly Hills
-256,Agmar's Hammer, Dragonblight
-257,Warsong Hold, Borean Tundra
-258,Taunka'le Village, Borean Tundra
-259,Bor'gorok Outpost, Borean Tundra
-260,Kor'koron Vanguard, Dragonblight
-261,Quest - Stars' Rest to Wintergarde End
-262,Grizzly Hills, Alliance Log Ride Start 01
-263,Grizzly Hills, Alliance Log Ride End 01
-264,Transport, Auberdine (NEW)
-265,Transport, Theramore (NEW)
-266,Transport, Menethil (NEW)
-267,Grizzly Hills, Alliance Log Ride Start
-268,Grizzly Hills, Alliance Log Ride End
-269,Quest - Westguard Keep to Wintergarde Keep Start
-270,Quest - Westguard Keep to Wintergarde Keep End
-271,Grizzly Hills, Horde Log Ride Start
-272,Grizzly Hills, Horde Log Ride End
-273,Wyrmrest Temple - bottom to top, Dragonblight - Begin
-274,Wyrmrest Temple - bottom to top, Dragonblight - End
-275,Wyrmrest Temple - top to bottom, Dragonblight - Begin
-276,Wyrmrest Temple - top to bottom, Dragonblight - End
-277,Wyrmrest Temple - top to middle, Dragonblight - Begin
-278,Wyrmrest Temple - top to middle, Dragonblight - End
-279,Wyrmrest Temple - middle to top, Dragonblight - End
-280,Wyrmrest Temple - middle to top, Dragonblight - Begin
-281,Wyrmrest Temple - middle to bottom, Dragonblight - End
-282,Wyrmrest Temple - middle to bottom, Dragonblight - Begin
-283,Wyrmrest Temple - bottom to middle, Dragonblight - End
-284,Wyrmrest Temple - bottom to middle, Dragonblight - Begin
-285,Quest - Wintergarde -> Stars' Rest (Start)
-286,Quest - Wintergarde -> Stars' Rest (End)
-287,Quest - Valgarde -> Westguard Keep Start
-288,Quest - Valgarde -> Westguard Keep End
-289,Amber Ledge, Borean Tundra
+165@@@Transport, Northrend 2
+175@@@Transport, Howling Fjord
+176@@@Quest - Howling Fjord Tauren Canoe (Start)
+177@@@Quest - Howling Fjord Tauren Canoe (End)
+178@@@Transport, Borean Tundra
+182@@@Quest - Howling Fjord - Break the Blockade Zeppelin
+183@@@Valgarde Port, Howling Fjord
+184@@@Fort Wildervar, Howling Fjord
+185@@@Westguard Keep, Howling Fjord
+186@@@Quest - Howling Fjord - Flight to the Windrunner - Start
+187@@@Quest - Howling Fjord - Flight to the Windrunner - End
+188@@@Quest - Howling Fjord - Test at Sea - Start
+189@@@Quest - Howling Fjord - Test at Sea - End
+190@@@New Agamand, Howling Fjord
+191@@@Vengeance Landing, Howling Fjord
+192@@@Camp Winterhoof, Howling Fjord
+193@@@Quest - Howling Fjord - Mission: Plague This! - End
+194@@@Quest - Howling Fjord - Mission: Plague This! - Start
+196@@@Test - SP
+199@@@Quest - Howling Fjord - McGoyver Start
+200@@@Quest - Howling Fjord - McGoyver End
+203@@@Quest - Stars' Rest -> Wintergarde
+204@@@Quest - New Agamand -> Venomspite
+207@@@Quest - Howling Fjord - Sister Mercy (Start)
+208@@@Quest - Howling Fjord - Sister Mercy (End)
+214@@@Quest - Howling Fjord - Naglfar (Start)
+215@@@Quest - Howling Fjord - Naglfar (Nodes)
+216@@@
+217@@@
+218@@@Transport, Howling Fjord (Gondola, Top)
+219@@@Transport, Howling Fjord (Gondola, Bottom)
+221@@@Amber Ledge, Borean (To Beryl)
+222@@@Beryl Point, Borean
+223@@@Quest - Naglevar
+224@@@Borean Tundra, Naglevar
+225@@@Amber Ledge, Borean (to Coldarra)
+226@@@Transitus Shield, Coldarra
+227@@@Transport, PattyMacDevTest
+228@@@Development Land - Pat Test Start
+229@@@Development Land - Pat Test End
+230@@@Transport, Tuskarr 01
+231@@@Transport, Tuskarr 02
+232@@@Borean Tundra - Warsong Hold Wolf Start
+233@@@Borean Tundra - Warsong Hold Wolf End
+234@@@Coldarra Ledge, Coldarra
+235@@@Transitus Shield, Coldarra (NOT USED)
+236@@@Coldarra, Keristrasza to Malygos
+237@@@Coldarra, Keristrasza Landing
+238@@@
+239@@@Borean Tundra - Quest - Dusk Start
+240@@@Borean Tundra - Quest - Dusk - End
+241@@@Transport, Valiance Keep
+242@@@Quest - Dragonblight - Spiritual Vision - Start
+243@@@Quest - Dragonblight - Spiritual Vision - End
+244@@@Wintergarde Keep, Dragonblight
+245@@@Valiance Keep, Borean Tundra
+246@@@Fizzcrank Airstrip, Borean Tundra
+247@@@Star's Rest, Dragonblight
+248@@@Apothecary Camp, Howling Fjord
+249@@@Camp Oneqwah, Grizzly Hills
+250@@@Conquest Hold, Grizzly Hills
+251@@@Fordragon Hold, Dragonblight
+252@@@Wyrmrest Temple, Dragonblight
+253@@@Amberpine Lodge, Grizzly Hills
+254@@@Venomspite, Dragonblight
+255@@@Westfall Brigade, Grizzly Hills
+256@@@Agmar's Hammer, Dragonblight
+257@@@Warsong Hold, Borean Tundra
+258@@@Taunka'le Village, Borean Tundra
+259@@@Bor'gorok Outpost, Borean Tundra
+260@@@Kor'koron Vanguard, Dragonblight
+261@@@Quest - Stars' Rest to Wintergarde End
+262@@@Grizzly Hills, Alliance Log Ride Start 01
+263@@@Grizzly Hills, Alliance Log Ride End 01
+264@@@Transport, Auberdine (NEW)
+265@@@Transport, Theramore (NEW)
+266@@@Transport, Menethil (NEW)
+267@@@Grizzly Hills, Alliance Log Ride Start
+268@@@Grizzly Hills, Alliance Log Ride End
+269@@@Quest - Westguard Keep to Wintergarde Keep Start
+270@@@Quest - Westguard Keep to Wintergarde Keep End
+271@@@Grizzly Hills, Horde Log Ride Start
+272@@@Grizzly Hills, Horde Log Ride End
+273@@@Wyrmrest Temple - bottom to top, Dragonblight - Begin
+274@@@Wyrmrest Temple - bottom to top, Dragonblight - End
+275@@@Wyrmrest Temple - top to bottom, Dragonblight - Begin
+276@@@Wyrmrest Temple - top to bottom, Dragonblight - End
+277@@@Wyrmrest Temple - top to middle, Dragonblight - Begin
+278@@@Wyrmrest Temple - top to middle, Dragonblight - End
+279@@@Wyrmrest Temple - middle to top, Dragonblight - End
+280@@@Wyrmrest Temple - middle to top, Dragonblight - Begin
+281@@@Wyrmrest Temple - middle to bottom, Dragonblight - End
+282@@@Wyrmrest Temple - middle to bottom, Dragonblight - Begin
+283@@@Wyrmrest Temple - bottom to middle, Dragonblight - End
+284@@@Wyrmrest Temple - bottom to middle, Dragonblight - Begin
+285@@@Quest - Wintergarde -> Stars' Rest (Start)
+286@@@Quest - Wintergarde -> Stars' Rest (End)
+287@@@Quest - Valgarde -> Westguard Keep Start
+288@@@Quest - Valgarde -> Westguard Keep End
+289@@@Amber Ledge, Borean Tundra
 3.0.1.8622
-242,Quest - Dragonblight - Spiritual Vision - Begin
-269,Quest - Westguard Keep to Wintergarde Keep Begin
-290,Argent Stand, Zul'Drak
-291,Ruined City Post 01, Zul'Drak
-292,Flavor - Stormwind Harbor  - Start
-293,Flavor - Stormwind Harbor - Stop
-294,Moa'ki, Dragonblight
-295,Kamagua, Howling Fjord
-296,Unu'pe, Borean Tundra
-297,Sholazar Basin - Quest - Reconnaisance - Start
-298,Sholazar Basin - Quest - Reconnaisance - End
-299,Transport: Menethil <-> Valgarde
-300,Transport, Stormwind
-301,Quest - Borean Tundra - Check In With Bixie - Begin
-302,Quest - Borean Tundra - Check In With Bixie - End
-303,The Argent Stand, Zul'Drak (DO NOT USE)
-304,The Argent Stand, Zul'Drak
-305,Ebon Watch, Zul'Drak
-306,Light's Breach, Zul'Drak
-307,Zim'Torga, Zul'Drak
-308,River's Heart, Sholazar Basin
-309,Nesingwary Base Camp, Sholazar Basin
-310,Dalaran
-311,Camp Onequah, Grizzly Hills (Quest)
-312,Light's Breach, Zul'Drak
-313,Westfall Brigade, Grizzly Hills (Quest)
-314,Zim'Torga, Zul'Drak (Quest)
+242@@@Quest - Dragonblight - Spiritual Vision - Begin
+269@@@Quest - Westguard Keep to Wintergarde Keep Begin
+290@@@Argent Stand, Zul'Drak
+291@@@Ruined City Post 01, Zul'Drak
+292@@@Flavor - Stormwind Harbor  - Start
+293@@@Flavor - Stormwind Harbor - Stop
+294@@@Moa'ki, Dragonblight
+295@@@Kamagua, Howling Fjord
+296@@@Unu'pe, Borean Tundra
+297@@@Sholazar Basin - Quest - Reconnaisance - Start
+298@@@Sholazar Basin - Quest - Reconnaisance - End
+299@@@Transport: Menethil <-> Valgarde
+300@@@Transport, Stormwind
+301@@@Quest - Borean Tundra - Check In With Bixie - Begin
+302@@@Quest - Borean Tundra - Check In With Bixie - End
+303@@@The Argent Stand, Zul'Drak (DO NOT USE)
+304@@@The Argent Stand, Zul'Drak
+305@@@Ebon Watch, Zul'Drak
+306@@@Light's Breach, Zul'Drak
+307@@@Zim'Torga, Zul'Drak
+308@@@River's Heart, Sholazar Basin
+309@@@Nesingwary Base Camp, Sholazar Basin
+310@@@Dalaran
+311@@@Camp Onequah, Grizzly Hills (Quest)
+312@@@Light's Breach, Zul'Drak
+313@@@Westfall Brigade, Grizzly Hills (Quest)
+314@@@Zim'Torga, Zul'Drak (Quest)
 3.0.1.8874
-312,Light's Breach, Zul'Drak (Quest)
-315,Acherus: The Ebon Hold
-316,Ebon Hold - Acherus -> Death's Breach Start
-317,Ebon Hold - Acherus -> Death's Breach End
-318,Ebon Hold - Death's Breach -> Acherus Start
-319,Ebon Hold - Death's Breach -> Acherus End
-320,AAA K3, The Storm Peaks
-321,AAA Frosthold, The Storm Peaks
-322,AAA Brann's Base Camp, The Storm Peaks
-323,AAA Grom'arsh Crash-Site
-324,AAA Camp Tunka'lo, The Storm Peaks
-325,AAA Ulduar (H)
-326,AAA Ulduar (A)
-327,AAA Bouldercrag's Refuge, The Storm Peaks
-328,AAAA Transport, Icecrown (A)
-329,AAAA Transport, Icecrown (H)
-330,AAAA Transport, Icecrown (Target)
+312@@@Light's Breach, Zul'Drak (Quest)
+315@@@Acherus: The Ebon Hold
+316@@@Ebon Hold - Acherus -> Death's Breach Start
+317@@@Ebon Hold - Acherus -> Death's Breach End
+318@@@Ebon Hold - Death's Breach -> Acherus Start
+319@@@Ebon Hold - Death's Breach -> Acherus End
+320@@@AAA K3, The Storm Peaks
+321@@@AAA Frosthold, The Storm Peaks
+322@@@AAA Brann's Base Camp, The Storm Peaks
+323@@@AAA Grom'arsh Crash-Site
+324@@@AAA Camp Tunka'lo, The Storm Peaks
+325@@@AAA Ulduar (H)
+326@@@AAA Ulduar (A)
+327@@@AAA Bouldercrag's Refuge, The Storm Peaks
+328@@@AAAA Transport, Icecrown (A)
+329@@@AAAA Transport, Icecrown (H)
+330@@@AAAA Transport, Icecrown (Target)
 3.1.0.9767
-247,Stars' Rest, Dragonblight
-303,Valiance Landing Camp, Wintergrasp
-320,K3, The Storm Peaks
-321,Frosthold, The Storm Peaks
-322,Dun Nifflelem, The Storm Peaks
-323,Grom'arsh Crash-Site, The Storm Peaks
-324,Camp Tunka'lo, The Storm Peaks
-325,Death's Rise, Icecrown
-326,Ulduar, The Storm Peaks
-327,Bouldercrag's Refuge, The Storm Peaks
-328,Transport, Icecrown Airship (A)
-329,Transport, Icecrown Airship (H)
-330,Transport, Icecrown (Target)
-331,Gundrak, Zul'Drak
-332,Warsong Camp, Wintergrasp
-333,The Shadow Vault, Icecrown
-334,The Argent Vanguard, Icecrown
-335,Crusaders' Pinnacle, Icecrown
-336,Windrunner's Overlook, Crystalsong Forest
-337,Sunreaver's Command, Crystalsong Forest
-340,Argent Tournament Grounds, Icecrown
-341,Ulduar Raid - Interior - Insertion Point
-342,Ulduar Raid - Iron Concourse
+247@@@Stars' Rest, Dragonblight
+303@@@Valiance Landing Camp, Wintergrasp
+320@@@K3, The Storm Peaks
+321@@@Frosthold, The Storm Peaks
+322@@@Dun Nifflelem, The Storm Peaks
+323@@@Grom'arsh Crash-Site, The Storm Peaks
+324@@@Camp Tunka'lo, The Storm Peaks
+325@@@Death's Rise, Icecrown
+326@@@Ulduar, The Storm Peaks
+327@@@Bouldercrag's Refuge, The Storm Peaks
+328@@@Transport, Icecrown Airship (A)
+329@@@Transport, Icecrown Airship (H)
+330@@@Transport, Icecrown (Target)
+331@@@Gundrak, Zul'Drak
+332@@@Warsong Camp, Wintergrasp
+333@@@The Shadow Vault, Icecrown
+334@@@The Argent Vanguard, Icecrown
+335@@@Crusaders' Pinnacle, Icecrown
+336@@@Windrunner's Overlook, Crystalsong Forest
+337@@@Sunreaver's Command, Crystalsong Forest
+340@@@Argent Tournament Grounds, Icecrown
+341@@@Ulduar Raid - Interior - Insertion Point
+342@@@Ulduar Raid - Iron Concourse
 3.3.5.12340
-348,Transport: Thunder Bluff <-> Org (Zep)
-352,Isle of Conquest - Gunships
-353,
-357,
-358,Quest - Icecrown - North Sea Kraken Bombing - Start
-359,Quest - Icecrown - North Sea Kraken Bombing - End
-375,REUSEME
-376,AAAIcecrown Raid - Airship Battle Taxi Paths
-377,Icecrown Dungeon - Gunships
-379,AAAAIcecrown Raid - Saurfang's Ship (End)
-380,AAAAIcecrown Raid - Saurfang's Ship (Start)
-381,AAAAQuest [Transport] Icecrown Raid - Saurfang Ship (START)
-382,Quest [Transport] Icecrown Raid - Saurfang Ship (END)
-383,Thondoril River, Western Plaguelands
-384,The Bulwark, Tirisfal
-392,CC Prologue - GT - Quest - Vent Horizon - Start
-393,CC Prologue - GT - Quest - Vent Horizon - End
-394,CC Prologue - GT - Battle Flight - Start
-395,CC Prologue - GT - Battle Flight - End
-404,Durotar - ET - CC Prologue Spy Frog Start
-405,Durotar - ET - CC Prologue Spy Frog End
-438,Durotar - ET - CC Prologue Troll Taxi Bat Start
-439,Durotar - ET - CC Prologue Troll Recruit End
-440,Durotar - ET - CC Prologue - Troll Battle End
+348@@@Transport: Thunder Bluff <-> Org (Zep)
+352@@@Isle of Conquest - Gunships
+353@@@
+357@@@
+358@@@Quest - Icecrown - North Sea Kraken Bombing - Start
+359@@@Quest - Icecrown - North Sea Kraken Bombing - End
+375@@@REUSEME
+376@@@AAAIcecrown Raid - Airship Battle Taxi Paths
+377@@@Icecrown Dungeon - Gunships
+379@@@AAAAIcecrown Raid - Saurfang's Ship (End)
+380@@@AAAAIcecrown Raid - Saurfang's Ship (Start)
+381@@@AAAAQuest [Transport] Icecrown Raid - Saurfang Ship (START)
+382@@@Quest [Transport] Icecrown Raid - Saurfang Ship (END)
+383@@@Thondoril River, Western Plaguelands
+384@@@The Bulwark, Tirisfal
+392@@@CC Prologue - GT - Quest - Vent Horizon - Start
+393@@@CC Prologue - GT - Quest - Vent Horizon - End
+394@@@CC Prologue - GT - Battle Flight - Start
+395@@@CC Prologue - GT - Battle Flight - End
+404@@@Durotar - ET - CC Prologue Spy Frog Start
+405@@@Durotar - ET - CC Prologue Spy Frog End
+438@@@Durotar - ET - CC Prologue Troll Taxi Bat Start
+439@@@Durotar - ET - CC Prologue Troll Recruit End
+440@@@Durotar - ET - CC Prologue - Troll Battle End
 4.0.1.12911
-25,Crossroads, Northern Barrens
-26,Lor'danel, Darkshore
-30,Westreach Summit, Thousand Needles
-31,Shadebough, Feralas
-33,Thal'darah Overlook, Stonetalon Mountains
-44,Bilgewater Harbor, Azshara
-48,Bloodvenom Post, Felwood [DISABLED in 4.x]
-64,Talrendis Point, Azshara (NEVER in 4.x)
-77,AA Fields of Blood, The Barrens
-79,Marshal's Stand, Un'Goro Crater
-322,Dun Niffelem, The Storm Peaks
-338,Blackfathom Camp, Ashenvale
-339,Grove of the Ancients, Darkshore
-343,Splintertree, Ashenvale
-344,Quest - Splintertree  Post -> Zoramgar
-345,Quest - Zoramgar, Ashenvale
-346,Ashenvale 4.x, Azshara to Mor'shan Ramparts
-347,Ashenvale 4.x, Mor'shan Landing
-349,Andruk, Zoram'gar
-350,Hellscream's Watch, Ashenvale
-351,Stardust Spire, Ashenvale
-354,The Mor'Shan Ramparts, Ashenvale
-356,Silverwind Refuge, Ashenvale
-360,Cliffwalker Post, Stonetalon Mountains
-361,Windshear Fortress, Stonetalon Mountains
-362,Krom'gar Fortress, Stonetalon Mountains
-363,Malaka'jin, Stonetalon Mountains
-364,Northwatch Expedition Base Camp, Stonetalon Mountains
-365,Farwatcher's Glen, Stonetalon Mountains
-366,Furien's Post, Desolace
-367,Thargad's Camp, Desolace
-368,Karnum's Glade, Desolace
-369,Thunk's Abode, Desolace
-370,Ethel Rethor, Desolace
-371,Vashj'ir - Alliance Start
-372,Vashj'ir - Alliance End
-373,Mulgore - Red Cloud Mesa: To Bloodhoof
-374,Mulgore - Red Cloud Mesa: To Bloodhoof (End)
-375,Transport, Gadgetzan
-376,Icecrown Raid - Airship Battle Taxi Paths
-378,Quest - Dun Morogh - Coldridge Valley - Pack Your Bags End
-379,Icecrown Raid - Saurfang's Ship (End)
-380,Icecrown Raid - Saurfang's Ship (Start)
-381,Quest [Transport] Icecrown Raid - Saurfang Ship (START)
-383,Thondoril River, Eastern Plaguelands
-386,Mossy Pile, Un'Goro Crater
-387,Honor's Stand, Southern Barrens
-388,Northwatch Hold, Southern Barrens
-389,Fort Triumph, Southern Barrens
-390,Hunter's Hill, Southern Barrens
-391,Desolation Hold, Southern Barrens
-402,Bloodhoof Village, Mulgore
-413,Quest - "To The Summit" - Westreach Summit - End
-414,Quest - "To The Summit" - Camp Mojache -> Westreach Summit - Begin
-429,Quest - "To The Summit" - Mudsprocket -> Westreach Summit - Begin
-433,Quest - "To New Thalanaar" - Mudsprocket -> New Thalanaar - Begin
-434,Quest - "To New Thalanaar" - New Thalanaar - End
-436,Quest - "To New Thalanaar" - Shadebough -> New Thalanaar - Begin
-456,Dolanaar, Teldrassil
-457,Darnassus, Teldrassil
-458,Nozzlepot's Outpost, Northern Barrens
-460,Brill, Tirisfal Glades
-509,Quest Path 2063: Brian's 4.0 Test Path
-513,Fizzle Pozzik's Speedbarge, Thousand Needles
-521,Smuggler's Cove, Vashj'ir
-522,Silver Tide Hollow, Vashj'ir
-523,Tranquil Wash, Vashj'ir
-524,Darkbreak Cove, Vashj'ir
-525,Legion's Rest, Vashj'ir
-526,Tenebrous Cavern, Vashj'ir
-531,Dawnrise Expedition, Tanaris
-532,Gunstan's Dig, Tanaris
-536,Sen'jin Village, Durotar
-537,Razor Hill, Durotar
-538,test - JZB - Orgrim's Hammer
-539,Bootlegger Outpost, Tanaris
-540,The Sludgewerks, Stonetalon Mountains
-541,Mirkfallon Post, Stonetalon Mountains
-551,Whelgar's Retreat, Wetlands
-552,Greenwarden's Grove, Wetlands
-553,Dun Modr, Wetlands
-554,Slabchisel's Survey, Wetlands
-555,Farstrider Lodge, Loch Modan
-557,Shrine of Aviana, Hyjal
-558,Shrine of Aessina, Hyjal
-559,Nordrassil, Hyjal
-560,Quest Path 2171: [3.x] Transport, Org -> Undercity (Thundercaller)
-561,Quest Path 2172: [3.x] Transport, Thunder Bluff -> Org (Zephyr)
-562,Quest Path 2173: [3.x] Transport, Borean Tundra -> Org (Mighty Wind)
-563,Quest Path 2174: [3.x] Transport, Grom'gol -> Orgrimmar (The Iron Eagle)
-564,Quest Path 2175: Stonetalon 4.x - Taxi to Thal'darah Overlook Start
-565,Dreamer's Rest, Feralas
-567,Tower of Estulan, Feralas
-568,Camp Ataya, Feralas
-569,Stonemaul Hold, Feralas
-574,Quest Path 2201: Dun Morogh - Quest - Flight to Ironforge Airfield
-575,Quest Path 2203: Dun Morogh - Quest - Striking Back (Bombing Run)
-577,Quest Path 2206: Ironforge, Dun Morogh - Quest - Breadcrumb to Loch Modan
-578,Quest Path 2207: Dun Morogh - Quest - Flight to Gol'Bolar from Ironforge Airfield
-582,Goldshire, Elwynn
-583,Moonbrook, Westfall
-584,Furlbrow's Pumpkin Farm, Westfall
-585,Quest Path 293: Transport, Auberdine -> Rut'theran Village, Teldrassil (NO LONGER USED in 4.x)
-586,Justin Test Node 1
-587,Justin Test Node 2
-589,Eastvale Logging Camp, Elwynn
-590,Fort Livingston, Stranglethorn
-591,Explorers' League Digsite, Stranglethorn
-592,Hardwrench Hideaway, Stranglethorn
-593,Bambala, Stranglethorn
-594,Whisperwind Grove, Felwood
-595,Wildheart Point, Felwood
-596,Shalewind Canyon, Redridge
-597,Irontree Clearing, Felwood
-598,Alliance Hub, Swamp of Sorrows
-599,Neutral Hub, Swamp of Sorrows
-600,The Harborage, Swamp of Sorrows
-601,Galen's Fall, Arathi
-602,Surwich, Blasted Lands
-603,Blood Elf Camp, Blasted Lands
-604,Orc Camp, Blasted Lands
-605,Voldrin's Hold, Vashj'ir
-606,Sandy Beach (A) Air, Vashj'ir
-607,Sandy Beach (A) Swim, Vashj'ir
-608,Sandy Beach (H) Air, Vashj'ir
-609,Sandy Beach (H) Swim, Vashj'ir
-610,Stygian Bounty, Vashj'ir
-611,Voldrin's Hold, Vashj'ir
-612,Stygian Bounty, Vashj'ir
-613,Southern Rocketway, Azshara
-614,Northern Rocketway, Azshara
-615,Camp Everstill, Redridge
-616,Gates of Southann, Hyjal
-617,Hiri'watha Research Station, The Hinterlands
-618,Stormfeather Outpost, The Hinterlands
-619,Kharanos, Dun Morogh
-620,Gol'Bolar Quarry, Dun Morogh
-621,Quest Path 2367: QA's Test Path 1
-622,Raven Hill, Duskwood
-623,Quest Path 2374: Deeopholm Test Copy
-624,Azure Watch, Azuremyst Isle
-625,Fairbreeze Village, Eversong Woods
-626,Quest Path 508: zzzThe Exodar -> Blood Watch, Bloodmyst Isle
-627,Quest Path 2376: zzzThe Exodar -> Azure Watch, Azuremyst Isle
-628,Quest Path 507: zzzBlood Watch, Bloodmyst Isle -> The Exodar
-629,Quest Path 2375: zzzAzure Watch, Azuremyst Isle -> The Exodar
-630,Light's Shield Tower, Eastern Plaguelands
-631,Falconwing Square, Eversong Woods
-632,Bloodwatcher Point, Badlands
-633,Dustwind Dig, Badlands
-634,Dragon's Mouth, Badlands
-635,Fuselight, Badlands
-645,Forsaken High Command, Silverpine Forest
-646,Forsaken Forward Command, Gilneas
-649,Andorhal, Western Plaguelands
-650,Andorhal, Western Plaguelands
-651,The Menders' Stead, Western Plaguelands
-652,Center Uldum, Uldum
-653,North Western Uldum, Uldum
-654,The Forsaken Front, Silverpine Forest
-656,Crushblow, Twilight Highlands
-657,The Gullet, Twilight Highlands
-658,Vermillion Redoubt, Twilight Highlands
-659,Bloodgulch, Twilight Highlands
-660,The Krazzworks, Twilight Highlands
-661,Dragonmaw Port, Twilight Highlands
-662,High Bank, Twilight Highlands
-663,Victory Point, Twilight Highlands
-664,Firebeard's Patrol, Twilight Highlands
-665,Thundermar, Twilight Highlands
-666,Kirthaven, Twilight Highlands
-667,Ruins of Southshore, Hillsbrad
-668,Southpoint Gate, Hillsbrad
-669,Eastpoint Tower, Hillsbrad
-670,Strahnbrad, Alterac Mountains
-672,Hearthglen, Western Plaguelands
-673,Iron Summit, Searing Gorge
+25@@@Crossroads, Northern Barrens
+26@@@Lor'danel, Darkshore
+30@@@Westreach Summit, Thousand Needles
+31@@@Shadebough, Feralas
+33@@@Thal'darah Overlook, Stonetalon Mountains
+44@@@Bilgewater Harbor, Azshara
+48@@@Bloodvenom Post, Felwood [DISABLED in 4.x]
+64@@@Talrendis Point, Azshara (NEVER in 4.x)
+77@@@AA Fields of Blood, The Barrens
+79@@@Marshal's Stand, Un'Goro Crater
+322@@@Dun Niffelem, The Storm Peaks
+338@@@Blackfathom Camp, Ashenvale
+339@@@Grove of the Ancients, Darkshore
+343@@@Splintertree, Ashenvale
+344@@@Quest - Splintertree  Post -> Zoramgar
+345@@@Quest - Zoramgar, Ashenvale
+346@@@Ashenvale 4.x, Azshara to Mor'shan Ramparts
+347@@@Ashenvale 4.x, Mor'shan Landing
+349@@@Andruk, Zoram'gar
+350@@@Hellscream's Watch, Ashenvale
+351@@@Stardust Spire, Ashenvale
+354@@@The Mor'Shan Ramparts, Ashenvale
+356@@@Silverwind Refuge, Ashenvale
+360@@@Cliffwalker Post, Stonetalon Mountains
+361@@@Windshear Fortress, Stonetalon Mountains
+362@@@Krom'gar Fortress, Stonetalon Mountains
+363@@@Malaka'jin, Stonetalon Mountains
+364@@@Northwatch Expedition Base Camp, Stonetalon Mountains
+365@@@Farwatcher's Glen, Stonetalon Mountains
+366@@@Furien's Post, Desolace
+367@@@Thargad's Camp, Desolace
+368@@@Karnum's Glade, Desolace
+369@@@Thunk's Abode, Desolace
+370@@@Ethel Rethor, Desolace
+371@@@Vashj'ir - Alliance Start
+372@@@Vashj'ir - Alliance End
+373@@@Mulgore - Red Cloud Mesa: To Bloodhoof
+374@@@Mulgore - Red Cloud Mesa: To Bloodhoof (End)
+375@@@Transport, Gadgetzan
+376@@@Icecrown Raid - Airship Battle Taxi Paths
+378@@@Quest - Dun Morogh - Coldridge Valley - Pack Your Bags End
+379@@@Icecrown Raid - Saurfang's Ship (End)
+380@@@Icecrown Raid - Saurfang's Ship (Start)
+381@@@Quest [Transport] Icecrown Raid - Saurfang Ship (START)
+383@@@Thondoril River, Eastern Plaguelands
+386@@@Mossy Pile, Un'Goro Crater
+387@@@Honor's Stand, Southern Barrens
+388@@@Northwatch Hold, Southern Barrens
+389@@@Fort Triumph, Southern Barrens
+390@@@Hunter's Hill, Southern Barrens
+391@@@Desolation Hold, Southern Barrens
+402@@@Bloodhoof Village, Mulgore
+413@@@Quest - "To The Summit" - Westreach Summit - End
+414@@@Quest - "To The Summit" - Camp Mojache -> Westreach Summit - Begin
+429@@@Quest - "To The Summit" - Mudsprocket -> Westreach Summit - Begin
+433@@@Quest - "To New Thalanaar" - Mudsprocket -> New Thalanaar - Begin
+434@@@Quest - "To New Thalanaar" - New Thalanaar - End
+436@@@Quest - "To New Thalanaar" - Shadebough -> New Thalanaar - Begin
+456@@@Dolanaar, Teldrassil
+457@@@Darnassus, Teldrassil
+458@@@Nozzlepot's Outpost, Northern Barrens
+460@@@Brill, Tirisfal Glades
+509@@@Quest Path 2063: Brian's 4.0 Test Path
+513@@@Fizzle Pozzik's Speedbarge, Thousand Needles
+521@@@Smuggler's Cove, Vashj'ir
+522@@@Silver Tide Hollow, Vashj'ir
+523@@@Tranquil Wash, Vashj'ir
+524@@@Darkbreak Cove, Vashj'ir
+525@@@Legion's Rest, Vashj'ir
+526@@@Tenebrous Cavern, Vashj'ir
+531@@@Dawnrise Expedition, Tanaris
+532@@@Gunstan's Dig, Tanaris
+536@@@Sen'jin Village, Durotar
+537@@@Razor Hill, Durotar
+538@@@test - JZB - Orgrim's Hammer
+539@@@Bootlegger Outpost, Tanaris
+540@@@The Sludgewerks, Stonetalon Mountains
+541@@@Mirkfallon Post, Stonetalon Mountains
+551@@@Whelgar's Retreat, Wetlands
+552@@@Greenwarden's Grove, Wetlands
+553@@@Dun Modr, Wetlands
+554@@@Slabchisel's Survey, Wetlands
+555@@@Farstrider Lodge, Loch Modan
+557@@@Shrine of Aviana, Hyjal
+558@@@Shrine of Aessina, Hyjal
+559@@@Nordrassil, Hyjal
+560@@@Quest Path 2171: [3.x] Transport, Org -> Undercity (Thundercaller)
+561@@@Quest Path 2172: [3.x] Transport, Thunder Bluff -> Org (Zephyr)
+562@@@Quest Path 2173: [3.x] Transport, Borean Tundra -> Org (Mighty Wind)
+563@@@Quest Path 2174: [3.x] Transport, Grom'gol -> Orgrimmar (The Iron Eagle)
+564@@@Quest Path 2175: Stonetalon 4.x - Taxi to Thal'darah Overlook Start
+565@@@Dreamer's Rest, Feralas
+567@@@Tower of Estulan, Feralas
+568@@@Camp Ataya, Feralas
+569@@@Stonemaul Hold, Feralas
+574@@@Quest Path 2201: Dun Morogh - Quest - Flight to Ironforge Airfield
+575@@@Quest Path 2203: Dun Morogh - Quest - Striking Back (Bombing Run)
+577@@@Quest Path 2206: Ironforge, Dun Morogh - Quest - Breadcrumb to Loch Modan
+578@@@Quest Path 2207: Dun Morogh - Quest - Flight to Gol'Bolar from Ironforge Airfield
+582@@@Goldshire, Elwynn
+583@@@Moonbrook, Westfall
+584@@@Furlbrow's Pumpkin Farm, Westfall
+585@@@Quest Path 293: Transport, Auberdine -> Rut'theran Village, Teldrassil (NO LONGER USED in 4.x)
+586@@@Justin Test Node 1
+587@@@Justin Test Node 2
+589@@@Eastvale Logging Camp, Elwynn
+590@@@Fort Livingston, Stranglethorn
+591@@@Explorers' League Digsite, Stranglethorn
+592@@@Hardwrench Hideaway, Stranglethorn
+593@@@Bambala, Stranglethorn
+594@@@Whisperwind Grove, Felwood
+595@@@Wildheart Point, Felwood
+596@@@Shalewind Canyon, Redridge
+597@@@Irontree Clearing, Felwood
+598@@@Alliance Hub, Swamp of Sorrows
+599@@@Neutral Hub, Swamp of Sorrows
+600@@@The Harborage, Swamp of Sorrows
+601@@@Galen's Fall, Arathi
+602@@@Surwich, Blasted Lands
+603@@@Blood Elf Camp, Blasted Lands
+604@@@Orc Camp, Blasted Lands
+605@@@Voldrin's Hold, Vashj'ir
+606@@@Sandy Beach (A) Air, Vashj'ir
+607@@@Sandy Beach (A) Swim, Vashj'ir
+608@@@Sandy Beach (H) Air, Vashj'ir
+609@@@Sandy Beach (H) Swim, Vashj'ir
+610@@@Stygian Bounty, Vashj'ir
+611@@@Voldrin's Hold, Vashj'ir
+612@@@Stygian Bounty, Vashj'ir
+613@@@Southern Rocketway, Azshara
+614@@@Northern Rocketway, Azshara
+615@@@Camp Everstill, Redridge
+616@@@Gates of Southann, Hyjal
+617@@@Hiri'watha Research Station, The Hinterlands
+618@@@Stormfeather Outpost, The Hinterlands
+619@@@Kharanos, Dun Morogh
+620@@@Gol'Bolar Quarry, Dun Morogh
+621@@@Quest Path 2367: QA's Test Path 1
+622@@@Raven Hill, Duskwood
+623@@@Quest Path 2374: Deeopholm Test Copy
+624@@@Azure Watch, Azuremyst Isle
+625@@@Fairbreeze Village, Eversong Woods
+626@@@Quest Path 508: zzzThe Exodar -> Blood Watch, Bloodmyst Isle
+627@@@Quest Path 2376: zzzThe Exodar -> Azure Watch, Azuremyst Isle
+628@@@Quest Path 507: zzzBlood Watch, Bloodmyst Isle -> The Exodar
+629@@@Quest Path 2375: zzzAzure Watch, Azuremyst Isle -> The Exodar
+630@@@Light's Shield Tower, Eastern Plaguelands
+631@@@Falconwing Square, Eversong Woods
+632@@@Bloodwatcher Point, Badlands
+633@@@Dustwind Dig, Badlands
+634@@@Dragon's Mouth, Badlands
+635@@@Fuselight, Badlands
+645@@@Forsaken High Command, Silverpine Forest
+646@@@Forsaken Forward Command, Gilneas
+649@@@Andorhal, Western Plaguelands
+650@@@Andorhal, Western Plaguelands
+651@@@The Menders' Stead, Western Plaguelands
+652@@@Center Uldum, Uldum
+653@@@North Western Uldum, Uldum
+654@@@The Forsaken Front, Silverpine Forest
+656@@@Crushblow, Twilight Highlands
+657@@@The Gullet, Twilight Highlands
+658@@@Vermillion Redoubt, Twilight Highlands
+659@@@Bloodgulch, Twilight Highlands
+660@@@The Krazzworks, Twilight Highlands
+661@@@Dragonmaw Port, Twilight Highlands
+662@@@High Bank, Twilight Highlands
+663@@@Victory Point, Twilight Highlands
+664@@@Firebeard's Patrol, Twilight Highlands
+665@@@Thundermar, Twilight Highlands
+666@@@Kirthaven, Twilight Highlands
+667@@@Ruins of Southshore, Hillsbrad
+668@@@Southpoint Gate, Hillsbrad
+669@@@Eastpoint Tower, Hillsbrad
+670@@@Strahnbrad, Alterac Mountains
+672@@@Hearthglen, Western Plaguelands
+673@@@Iron Summit, Searing Gorge
 4.3.4.15595
-21,New Kargath, Badlands
-25,The Crossroads, Northern Barrens
-77,Vendetta Point, Southern Barrens
-80,Ratchet, Northern Barrens
-129,Hellfire Peninsula, The Dark Portal
-130,Hellfire Peninsula, The Dark Portal
-260,Kor'kron Vanguard, Dragonblight
-361,Windshear Hold, Stonetalon Mountains
-383,Thondroril River, Eastern Plaguelands
-513,Fizzle & Pozzik's Speedbarge, Thousand Needles
-521,Smuggler's Scar, Vashj'ir
-558,Grove of Aessina, Hyjal
-598,Marshtide Watch, Swamp of Sorrows
-599,Bogpaddle, Swamp of Sorrows
-603,Sunveil Excursion, Blasted Lands
-604,Dreadmaul Hold, Blasted Lands
-606,Sandy Beach, Vashj'ir
-607,Sandy Beach, Vashj'ir
-608,Sandy Beach, Vashj'ir
-609,Sandy Beach, Vashj'ir
-616,Gates of Sothann, Hyjal
-652,Ramkahen, Uldum
-653,Oasis of Vir'sar, Uldum
-662,Highbank, Twilight Highlands
-663,Victor's Point, Twilight Highlands
-674,Schnottz's Landing, Uldum
-675,Flamestar Post, Burning Steppes
-676,Chiselgrip, Burning Steppes
-681,Forsaken Rear Guard, Silverpine Forest
-682,Quest Path 1843: Transport - Gadgetzan to ??? JZB RVM Test [DISABLED]
-683,Valormok, Azshara
-728,Quest Path 2653: 4.1 - ZG Event - Rebel Camp -> Explorers' League
-757,Quest Path 2695: PattyMac Taxi Path Speed Test
-781,Sanctuary of Malorne, Hyjal
-906,Dragon Soul Raid - Wyrmrest Temple Base
-907,Dragon Soul Raid - East Sarlac
+21@@@New Kargath, Badlands
+25@@@The Crossroads, Northern Barrens
+77@@@Vendetta Point, Southern Barrens
+80@@@Ratchet, Northern Barrens
+129@@@Hellfire Peninsula, The Dark Portal
+130@@@Hellfire Peninsula, The Dark Portal
+260@@@Kor'kron Vanguard, Dragonblight
+361@@@Windshear Hold, Stonetalon Mountains
+383@@@Thondroril River, Eastern Plaguelands
+513@@@Fizzle & Pozzik's Speedbarge, Thousand Needles
+521@@@Smuggler's Scar, Vashj'ir
+558@@@Grove of Aessina, Hyjal
+598@@@Marshtide Watch, Swamp of Sorrows
+599@@@Bogpaddle, Swamp of Sorrows
+603@@@Sunveil Excursion, Blasted Lands
+604@@@Dreadmaul Hold, Blasted Lands
+606@@@Sandy Beach, Vashj'ir
+607@@@Sandy Beach, Vashj'ir
+608@@@Sandy Beach, Vashj'ir
+609@@@Sandy Beach, Vashj'ir
+616@@@Gates of Sothann, Hyjal
+652@@@Ramkahen, Uldum
+653@@@Oasis of Vir'sar, Uldum
+662@@@Highbank, Twilight Highlands
+663@@@Victor's Point, Twilight Highlands
+674@@@Schnottz's Landing, Uldum
+675@@@Flamestar Post, Burning Steppes
+676@@@Chiselgrip, Burning Steppes
+681@@@Forsaken Rear Guard, Silverpine Forest
+682@@@Quest Path 1843: Transport - Gadgetzan to ??? JZB RVM Test [DISABLED]
+683@@@Valormok, Azshara
+728@@@Quest Path 2653: 4.1 - ZG Event - Rebel Camp -> Explorers' League
+757@@@Quest Path 2695: PattyMac Taxi Path Speed Test
+781@@@Sanctuary of Malorne, Hyjal
+906@@@Dragon Soul Raid - Wyrmrest Temple Base
+907@@@Dragon Soul Raid - East Sarlac
 5.0.3.15882
-888,Quest Path 2837: Quest - Jade Forest: (DLA) - Dawnblossom to Jade Mines
-894,Grookin Hill, Jade Forest
-895,Dawn's Blossom, Jade Forest
-918,Quest Path 2954: Quest - Valley of the Four Winds (Flyback: Chen A) PRK
-919,Quest Path 2955: Quest - Valley of the Four Winds (Flyback: Chen B) PRK
-920,Quest Path 2956: Quest - Valley of the Four Winds (Flyback: Chen C) PRK
-921,Quest Path 2957: Quest - Valley of the Four Winds (Flyback: Chen D) PRK
-922,Quest Path 2958: Quest - Valley of the Four Winds (Flyback: Sad Panda A) PRK
-923,Quest Path 2959: Quest - Valley of the Four Winds (Flyback: Sad Panda B) PRK
-924,Quest Path 2960: Quest - Valley of the Four Winds (Flyback: Horde A) PRK
-925,Quest Path 2961: Quest - Valley of the Four Winds (Flyback: Alliance A) PRK
-926,Quest Path 2962: Quest - Valley of the Four Winds (Flyback: Horde B) PRK
-927,Quest Path 2963: Quest - Valley of the Four Winds (Flyback: Alliance B) PRK
-935,Quest Path 2986: Jade Forest: -hmc (Taxi: Glassfin Village to Dawnblossom)
-949,Quest Path 3002: Jade Forest: -hmc (Taxi: Serpent's Spine to Statue Top)
-950,Quest Path 3003: Jade Forest: -hmc (Taxi: Statue Top to Serpent's Spine)
-951,Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise
-963,Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise
-966,Paw'Don Village, Jade Forest
-967,The Arboretum, Jade Forest
-968,Jade Temple Grounds, Jade Forest
-969,Sri-La Village, Jade Forest
-970,Emperor's Omen, Jade Forest
-971,Tian Monastery, Jade Forest
-972,Pearlfin Village, Jade Forest
-973,Honeydew Village, Jade Forest
-984,Pang's Stead, Valley of the Four Winds
-985,Halfhill, Valley of the Four Winds
-986,Zhu's Watch, Krasarang Wilds
-987,Thunder Cleft, Krasarang Wilds
-988,The Incursion, Krasarang Wilds
-989,Stoneplow, Valley of the Four Winds
-990,Dawnchaser Retreat, Krasarang Wilds
-991,Sentinel Basecamp, Krasarang Wilds
-992,Cradle of Chi-Ji, Krasarang Wilds
-993,Marista, Krasarang Wilds
-998,Quest Path 3154: Quest - Kun-Lai Summit - Neverrest Peak -> Valley of Emperors
-1009,Quest Path 3173: Quest - Kun-Lai Summit - Valley -> Whispercloud Rise
-1016,Quest Path 3066: Quest - Jade Forest - Serpent's Spine -> VotFW - JLR
-1017,Binan Village, Kun-Lai Summit
-1018,Temple of the White Tiger, Kun-Lai Summit
-1019,Eastwind Rest, Kun-Lai Summit
-1020,Westwind Rest, Kun-Lai Summit
-1021,Zouchin Village, Kun-Lai Summit
-1022,One Keg, Kun-Lai Summit
-1023,Kota Basecamp, Kun-Lai Summit
-1024,Shado-Pan Fallback, Kun-Lai Summit
-1025,Winter's Blossom, Kun-Lai Summit
-1029,Tavern in the Mists, The Veiled Stair
-1030,Quest Path 3244: Jade Forest: -hmc (Taxi: Serpent's Spine to East Temple)
-1032,Quest Path 3246: Quest - Kun-Lai Summit - GoWB - To the Wall! (NLC)
-1038,Quest Path 3248: Quest - Kun-Lai Summit - GoWB - Back from the Wall (NLC)
-1046,Jade Forest - Cliff path 04 Start
-1047,Jade Forest - Cliff path 04 End
-1048,Quest Path 3263: Jade forest - Cliff path 04
-1049,Quest Path 3264: Jade Forest - Cliff Path 01
-1050,Quest Path 3265: Jade Forest - Cliff Path 02
-1051,Quest Path 3266: Jade Forest - Cliff Path 03
-1052,Grassy Cline, Valley of the Four Winds
-1053,Longying Outpost, Townlong Steppes
-1054,Gao-Ran Battlefront, Townlong Steppes
-1055,Rensai's Watchpost, Townlong Steppes
-1056,Shado-Pan Garrison, Townlong Steppes
-1057,Shrine of Seven Stars, Vale of Eternal Blossoms
-1058,Shrine of Two Moons, Vale of Eternal Blossoms
-1070,Klaxxi'vess, Dread Wastes
-1071,Soggy's Gamble, Dread Wastes
-1072,The Sunset Brewgarden, Dread Wastes
-1073,Serpent's Spine, Vale of Eternal Blossoms
-1076,Quest Path 3375: Jade Forest: JSB - East Temple -> Grookin' Hill
-1079,Quest Path 3377: Jade Forest: JSB - East Temple -> Glassfin Village
-1080,Serpent's Overlook, Jade Forest
-1090,The Briny Muck, Dread Wastes
-1091,Quest Path 3448: Dread Wastes: Klaxxi'vess -> Briny Muck Quest Path
-1092,Quest Path 3449: Dread Wastes: Klaxxi'vess -> Lake of Stars Quest Path
-1104,Test - Spy Quest H01a - PRK
-1105,Test - Spy Quest H01b - PRK
-1114,Quest Path 3481: Quest - Kun-Lai Summit: JLR - Zouchin Village -> Isle of Reckoning
-1115,The Lion's Redoubt, Dread Wastes
-1116,Quest Path 3482: Quest - Kun-Lai Summit: JLR - Isle of Reckoning - Zouchin
-1117,Hellscream's Fist, Townlong Steppes
-1130,Quest Path 3506: Jade Forest: -hmc (Taxi: Serpent's Spine to Statue Top) NEW (Tab 870)
-1131,Quest Path 3507: Jade Forest: -hmc (Taxi: Statue Top to Serpent's Spine) NEW (Tab 870)
+888@@@Quest Path 2837: Quest - Jade Forest: (DLA) - Dawnblossom to Jade Mines
+894@@@Grookin Hill, Jade Forest
+895@@@Dawn's Blossom, Jade Forest
+918@@@Quest Path 2954: Quest - Valley of the Four Winds (Flyback: Chen A) PRK
+919@@@Quest Path 2955: Quest - Valley of the Four Winds (Flyback: Chen B) PRK
+920@@@Quest Path 2956: Quest - Valley of the Four Winds (Flyback: Chen C) PRK
+921@@@Quest Path 2957: Quest - Valley of the Four Winds (Flyback: Chen D) PRK
+922@@@Quest Path 2958: Quest - Valley of the Four Winds (Flyback: Sad Panda A) PRK
+923@@@Quest Path 2959: Quest - Valley of the Four Winds (Flyback: Sad Panda B) PRK
+924@@@Quest Path 2960: Quest - Valley of the Four Winds (Flyback: Horde A) PRK
+925@@@Quest Path 2961: Quest - Valley of the Four Winds (Flyback: Alliance A) PRK
+926@@@Quest Path 2962: Quest - Valley of the Four Winds (Flyback: Horde B) PRK
+927@@@Quest Path 2963: Quest - Valley of the Four Winds (Flyback: Alliance B) PRK
+935@@@Quest Path 2986: Jade Forest: -hmc (Taxi: Glassfin Village to Dawnblossom)
+949@@@Quest Path 3002: Jade Forest: -hmc (Taxi: Serpent's Spine to Statue Top)
+950@@@Quest Path 3003: Jade Forest: -hmc (Taxi: Statue Top to Serpent's Spine)
+951@@@Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise
+963@@@Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise
+966@@@Paw'Don Village, Jade Forest
+967@@@The Arboretum, Jade Forest
+968@@@Jade Temple Grounds, Jade Forest
+969@@@Sri-La Village, Jade Forest
+970@@@Emperor's Omen, Jade Forest
+971@@@Tian Monastery, Jade Forest
+972@@@Pearlfin Village, Jade Forest
+973@@@Honeydew Village, Jade Forest
+984@@@Pang's Stead, Valley of the Four Winds
+985@@@Halfhill, Valley of the Four Winds
+986@@@Zhu's Watch, Krasarang Wilds
+987@@@Thunder Cleft, Krasarang Wilds
+988@@@The Incursion, Krasarang Wilds
+989@@@Stoneplow, Valley of the Four Winds
+990@@@Dawnchaser Retreat, Krasarang Wilds
+991@@@Sentinel Basecamp, Krasarang Wilds
+992@@@Cradle of Chi-Ji, Krasarang Wilds
+993@@@Marista, Krasarang Wilds
+998@@@Quest Path 3154: Quest - Kun-Lai Summit - Neverrest Peak -> Valley of Emperors
+1009@@@Quest Path 3173: Quest - Kun-Lai Summit - Valley -> Whispercloud Rise
+1016@@@Quest Path 3066: Quest - Jade Forest - Serpent's Spine -> VotFW - JLR
+1017@@@Binan Village, Kun-Lai Summit
+1018@@@Temple of the White Tiger, Kun-Lai Summit
+1019@@@Eastwind Rest, Kun-Lai Summit
+1020@@@Westwind Rest, Kun-Lai Summit
+1021@@@Zouchin Village, Kun-Lai Summit
+1022@@@One Keg, Kun-Lai Summit
+1023@@@Kota Basecamp, Kun-Lai Summit
+1024@@@Shado-Pan Fallback, Kun-Lai Summit
+1025@@@Winter's Blossom, Kun-Lai Summit
+1029@@@Tavern in the Mists, The Veiled Stair
+1030@@@Quest Path 3244: Jade Forest: -hmc (Taxi: Serpent's Spine to East Temple)
+1032@@@Quest Path 3246: Quest - Kun-Lai Summit - GoWB - To the Wall! (NLC)
+1038@@@Quest Path 3248: Quest - Kun-Lai Summit - GoWB - Back from the Wall (NLC)
+1046@@@Jade Forest - Cliff path 04 Start
+1047@@@Jade Forest - Cliff path 04 End
+1048@@@Quest Path 3263: Jade forest - Cliff path 04
+1049@@@Quest Path 3264: Jade Forest - Cliff Path 01
+1050@@@Quest Path 3265: Jade Forest - Cliff Path 02
+1051@@@Quest Path 3266: Jade Forest - Cliff Path 03
+1052@@@Grassy Cline, Valley of the Four Winds
+1053@@@Longying Outpost, Townlong Steppes
+1054@@@Gao-Ran Battlefront, Townlong Steppes
+1055@@@Rensai's Watchpost, Townlong Steppes
+1056@@@Shado-Pan Garrison, Townlong Steppes
+1057@@@Shrine of Seven Stars, Vale of Eternal Blossoms
+1058@@@Shrine of Two Moons, Vale of Eternal Blossoms
+1070@@@Klaxxi'vess, Dread Wastes
+1071@@@Soggy's Gamble, Dread Wastes
+1072@@@The Sunset Brewgarden, Dread Wastes
+1073@@@Serpent's Spine, Vale of Eternal Blossoms
+1076@@@Quest Path 3375: Jade Forest: JSB - East Temple -> Grookin' Hill
+1079@@@Quest Path 3377: Jade Forest: JSB - East Temple -> Glassfin Village
+1080@@@Serpent's Overlook, Jade Forest
+1090@@@The Briny Muck, Dread Wastes
+1091@@@Quest Path 3448: Dread Wastes: Klaxxi'vess -> Briny Muck Quest Path
+1092@@@Quest Path 3449: Dread Wastes: Klaxxi'vess -> Lake of Stars Quest Path
+1104@@@Test - Spy Quest H01a - PRK
+1105@@@Test - Spy Quest H01b - PRK
+1114@@@Quest Path 3481: Quest - Kun-Lai Summit: JLR - Zouchin Village -> Isle of Reckoning
+1115@@@The Lion's Redoubt, Dread Wastes
+1116@@@Quest Path 3482: Quest - Kun-Lai Summit: JLR - Isle of Reckoning - Zouchin
+1117@@@Hellscream's Fist, Townlong Steppes
+1130@@@Quest Path 3506: Jade Forest: -hmc (Taxi: Serpent's Spine to Statue Top) NEW (Tab 870)
+1131@@@Quest Path 3507: Jade Forest: -hmc (Taxi: Statue Top to Serpent's Spine) NEW (Tab 870)
 6.0.1.18125
-1076,Quest Path 3375: Jade Forest: JSB - East Temple -> Grookin' Hill
-1117,Serpent's Spine, Kun-Lai Summit
-1190,Lion's Landing, Krasarang Wilds
-1195,Domination Point, Krasarang Wilds
-1221,Beeble's Wreck, Isle Of Giants
-1222,Bozzle's Wreck, Isle Of Giants
-1284,Quest Path 3877: Garrosh Raid - Siege Engineer - Pipe Transfer
-1291,Quest Path 3885: Timeless Isle 5.4 - Vignette - Source of Water - Bubble Up (RKS) [REUSEME]
-1292,Quest Path 3886: Timeless Isle 5.4 - Vignette - Source of Water - Bubble Down (RKS) [REUSEME]
-1293,Tushui Landing, Timeless Isle
-1294,Huojin Landing, Timeless Isle
-1350,Shadowmoon Valley 6.0 - Observatory (JP3)
-1351,Shadowmoon Valley 6.0 - Ironhorde POI (JP3)
-1381,Teluuna Observatory, Shadowmoon Valley
-1382,Twilight Glade, Shadowmoon Valley
-1383,Path of Light, Shadowmoon Valley
-1384,Palemoon Village, Shadowmoon Valley
-1385,Arkaat Outpost, Shadowmoon Valley
-1386,Wor'gol, Frostfire Ridge
-1387,Bladespire Fortress, Frostfire Ridge
-1388,Exile Camp, Frostfire Ridge
-1389,Blue (PH), Frostfire Ridge
-1390,Stonefang Village, Frostfire Ridge
-1394,Thunder Pass. Frostfire Ridge
-1395,Thunder Pass, Frostfire Ridge
-1396,Muster Field, Frostfire Ridge
-1408,Horde Staging Area, Ashran
-1420,Alliance Staging Area, Ashran
-1421,Shadowmoon Valley 6.0:Jp3 - Darktide Roost - Bottom Of Hill
-1422,Shadowmoon Valley 6.0:JP3 - Darktide Roost - Top of Hill
-1430,Test Loc 1, Talador
-1431,Test Loc 2, Talador
-1432,Horde Garrison (PH), Frostfire Ridge
+1076@@@Quest Path 3375: Jade Forest: JSB - East Temple -> Grookin' Hill
+1117@@@Serpent's Spine, Kun-Lai Summit
+1190@@@Lion's Landing, Krasarang Wilds
+1195@@@Domination Point, Krasarang Wilds
+1221@@@Beeble's Wreck, Isle Of Giants
+1222@@@Bozzle's Wreck, Isle Of Giants
+1284@@@Quest Path 3877: Garrosh Raid - Siege Engineer - Pipe Transfer
+1291@@@Quest Path 3885: Timeless Isle 5.4 - Vignette - Source of Water - Bubble Up (RKS) [REUSEME]
+1292@@@Quest Path 3886: Timeless Isle 5.4 - Vignette - Source of Water - Bubble Down (RKS) [REUSEME]
+1293@@@Tushui Landing, Timeless Isle
+1294@@@Huojin Landing, Timeless Isle
+1350@@@Shadowmoon Valley 6.0 - Observatory (JP3)
+1351@@@Shadowmoon Valley 6.0 - Ironhorde POI (JP3)
+1381@@@Teluuna Observatory, Shadowmoon Valley
+1382@@@Twilight Glade, Shadowmoon Valley
+1383@@@Path of Light, Shadowmoon Valley
+1384@@@Palemoon Village, Shadowmoon Valley
+1385@@@Arkaat Outpost, Shadowmoon Valley
+1386@@@Wor'gol, Frostfire Ridge
+1387@@@Bladespire Fortress, Frostfire Ridge
+1388@@@Exile Camp, Frostfire Ridge
+1389@@@Blue (PH), Frostfire Ridge
+1390@@@Stonefang Village, Frostfire Ridge
+1394@@@Thunder Pass. Frostfire Ridge
+1395@@@Thunder Pass, Frostfire Ridge
+1396@@@Muster Field, Frostfire Ridge
+1408@@@Horde Staging Area, Ashran
+1420@@@Alliance Staging Area, Ashran
+1421@@@Shadowmoon Valley 6.0:Jp3 - Darktide Roost - Bottom Of Hill
+1422@@@Shadowmoon Valley 6.0:JP3 - Darktide Roost - Top of Hill
+1430@@@Test Loc 1, Talador
+1431@@@Test Loc 2, Talador
+1432@@@Horde Garrison (PH), Frostfire Ridge
 6.0.1.18156
-1432,Frostwall Garrison (PH), Frostfire Ridge
+1432@@@Frostwall Garrison (PH), Frostfire Ridge
 6.0.1.18164
-1388,Throm'Var, Frostfire Ridge
-1396,Darkspear's Edge, Frostfire Ridge
+1388@@@Throm'Var, Frostfire Ridge
+1396@@@Darkspear's Edge, Frostfire Ridge
 7.3.0.24473
-1381,Embaari Village, Shadowmoon Valley
-1383,Path of the Light, Shadowmoon Valley
-1384,Exile's Rise, Shadowmoon Valley
-1387,Bladespire Citadel, Frostfire Ridge
-1389,Bloodmaul Slag Mines, Frostfire Ridge
-1390,Stonefang Outpost, Frostfire Ridge
-1408,Warspear, Ashran
-1420,Stormshield (Alliance), Ashran
-1432,Frostwall Garrison, Frostfire Ridge
-1440,Zangarra, Talador
-1441,Frostwolf Overlook, Talador
-1442,Beastwatch, Gorgrond
-1443,Vol'jin's Pride, Talador
-1445,Durotan's Grasp, Talador
-1447,Fort Wrynn (Alliance), Talador
-1448,Redemption Rise, Talador
-1450,Shattrath City, Talador
-1451,Anchorite's Sojourn, Talador
-1452,Retribution Point, Talador
-1453,Exarch's Refuge, Talador
-1454,Exarch's Refuge, Talador
-1462,Terokkar Refuge, Talador
-1463,Quest Path 4263: Draenor Zone Breadcrumb - Frostfire Garrison > Talador Start Loc (CSA)
-1464,Quest Path 4266: Draenor Zone Breadcrumb - Shadowmoon Garrison > Talador Start Loc (CSA)
-1465,Quest Path 4269: Draenor Zone Breadcrumb - Shadowmoon Garrison > Nagrand Start Loc (ELM)
-1466,Quest Path 4270: Draenor Zone Breadcrumb - Frostfire Ridge Garrison > Nagrand Start Loc (ELM)
-1467,The Draakorium, Shadowmoon Valley
-1468,Elodor (Alliance), Shadowmoon Valley
-1475,Socrethar's Rise, Shadowmoon Valley
-1476,Lunarfall (Alliance), Shadowmoon Valley
-1477,Quest Path 4316: Frostfire Ridge - Garrison - Max-Level Chapter - Sargerei - Taxi Path to Shadowmoon (HMC)
-1487,Axefall, Spires of Arak
-1488,Quest Path 4333: Shadowmoon Valley 6.0:JP3 - Darktide Roost - Taxi Path to Darktide Roost
-1489,Quest Path 4334: Frostfire Ridge:JP3 - Darktide Roost - Taxi to Darktide Roost
-1490,Quest Path 4337: Spires of Arak 6.0 - Horde Garrison Outpost > Shadow's Defiance
-1493,Southport, Spires of Arak
-1494,Quest Path 4341: Spires of Arak 6.0 - Alliance Garrison Outpost > Shadow's Defiance
-1495,Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice
-1496,Quest Path 4345: Spires of Arak 6.0 - Shattered Hand Poison Camp > Horde Garrison Outpost
-1497,Quest Path 4346: Spires of Arak 6.0 - Shattered Hand Poison Camp > Alliance Garrison Outpost
-1498,Quest Path 4353: Frostfire Ridge:JP3 - Broken Precipice - Taxi to Nagrand / Broken Precipice
-1502,The Ring of Trials, Nagrand
-1503,Throne of the Elements, Nagrand
-1504,Wor'var, Nagrand
-1505,Riverside Post, Nagrand
-1506,Telaari Station, Nagrand
-1507,Yrel's Watch, Nagrand
-1508,Veil Terokk, Spires of Arak
-1509,Talon Watch, Spires of Arak
-1510,Pinchwhistle Gearworks, Spires of Arak
-1511,Bastion Rise, Gorgrond
-1512,Bastion Rise, Gorgrond
-1513,Apexis Excavation, Spires of Arak
-1514,Evermorn Springs, Gorgrond
-1515,Crow's Crook, Spires of Arak
-1518,Wildwood Wash, Gorgrond
-1519,Highpass, Gorgrond
-1520,Breaker's Crown, Gorgrond
-1523,Deeproot, Gorgrond
-1524,Iron Docks, Gorgrond
-1527,Quest Path 4442: Spires of Arak: (DLA) - Veil Terokk -> Talon Watch Breadcrumb
-1528,Iron Siegeworks, Frostfire Ridge
-1529,Darktide Roost, Shadowmoon Valley
-1535,Quest Path 4535: Quest Path - Spires of Arak 6.0 - Horde Garrison Outpost > Pinchwhistle Gearworks (LWB)
-1536,Quest Path 4538: Quest Path - Spires of Arak 6.0 - Alliance Garrison Outpost > Pinchwhistle Gearworks (LWB)
-1537,Shattered Landing, Blasted Lands
-1538,Shattered Beachhead, Blasted Lands
-1539,Skysea Ridge, Gorgrond
-1540,Quest Path 4579: Talador 6.0 - Zangarra > Khadgar's Tower
-1541,Quest Path 4580: Talador 6.0 - Khadgar's Tower > Zangarra
-1547,Quest Path 4590: Shadowmoon Valley 6.0:JP3 - A - Ashran - Taxi Path to Ashran Staging Area
-1549,Quest Path 4600: Frostfire Ridge:JP3 - Ashran Staging Area - Taxi to Ashran
-1550,Quest Path 4599: Shadowmoon 6.x - "The Search for Owynn Graddock": Garrison, Shadowmoon Valley -> Bloodmaul Slag Mines, Frostfire Ridge (HMC)
-1553,Quest Path 4634: Shadowmoon 6.x - "Pinchwhistle Gearworks": Garrison, Shadowmoon Valley -> Pinchwhistle Gearworks, Spires of Arak (LWB)
-1554,Quest Path 4635: Frostfire 6.x - "Pinchwhistle Gearworks": Garrison, Frostfire ->Pinchwhistle Gearworks, Spires of Arak (LWB)
-1555,Quest Path 4636: Shadowmoon Valley, Tier 3 Garrison -> Ashran, Stormshield (Shortcut Path) (CSA)
-1556,Tranquil Court, Shadowmoon Valley
-1559,Wolf's Stand, Frostfire Ridge
-1562,Quest Path 4665: Ashran - Lane - Warspear to Stormshield
-1563,Quest Path 4666: Ashran - Lane - Stormshield to Warspear
-1567,Temple of Karabor, Shadowmoon Valley
-1568,Everbloom Wilds, Gorgrond
-1569,Akeeta's Hovel, Shadowmoon Valley
-1572,Rilzit's Holdfast, Nagrand
-1573,Nivek's Overlook, Nagrand
-1574,Joz's Rylaks, Nagrand
-1580,Everbloom Overlook, Gorgrond
-1581,Quest Path 4881: Lunarfall, Shadowmoon Valley -> Terokkar Pass, Spires of Arak
-1582,Quest Path 4888: Frostwall Garrison, Frostfire Ridge -> Terokkar Pass, Spires of Arak
-1599,Quest Path 4958: Garrison - 6.1 Chapter - H - Taxi to Iron Docks - JMC
-1601,Quest Path 4960: Garrison - 6.1 Chapter - H - Taxi from Iron Docks to Garrison - JMC
-1605,Quest Path 4965: Garrison - 6.1 Chapter - A - Taxi from Garrison to Iron Docks - JMC
-1606,Quest Path 4966: Garrison - 6.1 Chapter - A - Taxi from Iron Docks to Garrison - JMC
-1613,Azurewing Repose, Azsuna
-1614,Quest Path 4974: 6.2 Tanaan - Quest - H - From Vol'mar to Iron Front - JMC
-1615,Challiane's Terrace, Azsuna
-1620,Lion's Watch, Tanaan Jungle
-1621,Vol'mar, Tanaan Jungle
-1622,Illidari Stand, Azsuna
-1625,Quest Path 4987: 6.2 Tanaan - Lion's Watch - Taxi Path to Aktar's Post (LWB)
-1626,Quest Path 4988: 6.2 Tanaan - Volmar - Taxi Path to Aktar's Post (LWB)
-1633,Shackle's Den, Azsuna
-1634,Quest Path 5017: 7.0 Azsuna - Rift 01 - East Chasm -> West Chasm
-1635,Quest Path 5018: 7.0 Azsuna - Rift 01 - West Chasm -> East Chasm
-1636,Quest Path 5019: 7.0 Azsuna - Rift 02 - Tower -> Rock (ZTO)
-1637,Quest Path 5020: 7.0 Azsuna - Rift 03, Tower - Base -> Top (ZTO/PRK)
-1642,Quest Path 5026: 6.2 Tanaan - Quest - A - From Lion's Watch to Iron Front - JMC
-1643,Aktar's Post, Tanaan Jungle
-1644,The Iron Front, Tanaan Jungle
-1645,The Iron Front, Tanaan Jungle
-1646,Vault of the Earth, Tanaan Jungle
-1647,Malo's Lookout, Tanaan Jungle
-1648,Sha'naari Refuge, Tanaan Jungle
-1660,Bret Test 3-3s
-1661,Bret Test 3-3e
-1662,Carl Test a
-1673,Lorlathil, Val'sharah
-1713,Bradensbrook, Val'sharah
-1716,Quest Path 5222: Garrison, Alliance Shipyard -> Tanaan (IGC)
-1719,Thunder Totem, Highmountain
-1722,Quest Path 5262: Stormheim: (DLA) - Valdisdall -> Dreadwake (Spell Taxi)
-1723,Quest Path 5263: Stormheim: (DLA) - Valdisdall -> Greywatch (Spell Taxi)
-1729,Quest Path 5283: Alliance Garrison (Tier 3) > Alliance Shipyard
-1730,Quest Path 5284: Alliance Shipyard > Alliance Garrison (Tier 3)
-1731,Alliance Shipyard Taxi
-1732,Quest Path 5286: 7.0 DH-Mardum - Illidari Foothold -> The Fel Hammer (ELM)
-1738,Cullen's Post, Stormheim
-1739,Dreadwake's Landing, Stormheim
-1741,Forsaken Foothold, Stormheim
-1742,Valdisdall, Stormheim
-1744,Greywatch, Stormheim
-1745,Lorna's Watch, Stormheim
-1747,Skyfire Triage Camp, Stormheim
-1748,Quest Path 5333: 7.0 Artifacts - Monk - Order Formation - Number Nine Flight - LWB
-1753,Skyhorn, Highmountain
-1754,The Witchwood, Highmountain
-1755,Felbane Camp, Highmountain
-1756,Shipwreck Cove, Highmountain
-1758,Obsidian Overlook, Highmountain
-1759,Ironhorn Enclave, Highmountain
-1760,Trueshot Lodge, Highmountain
-1761,Prepfoot, Highmountain
-1764,Starsong Refuge, Val'sharah
-1766,Garden of the Moon, Val'sharah
-1767,Nesingwary, Highmountain
-1774,Dalaran
-1777,Sylvan Falls, Highmountain
-1778,Stonehoof Watch, Highmountain
-1783,Quest Path 5500: 7.0 Azsuna - Rift 02 - Rock -> Tower (ZTO)
-1784,Quest Path 5509: 7.0 Highmountain - Stonehoof Watch -> Sylvan Falls (Quest, ZTO)
-1787,Quest Path 5512: Quest Path 5020: 7.0 Azsuna - Rift 03, Base - Tower (ZTO)
-1800,Quest Path 4621: [OLD]7.0 Quest - Azsuna (Down to Azsuna: Unlearned Taxi Dalaran --> Azsuna - Alliance) - ELM
-1801,Quest Path 5597: [OLD]7.0 Quest - Azsuna (Down to Azsuna: Unlearned Taxi Dalaran --> Azsuna - Horde) - ELM
-1803,Quest Path 5615: 7.0 Dalaran -> Trueshot Lodge, Highmountain
-1813,Quest Path 5643: 7.0 Quest - Azsuna (Down to Azsuna: Unlearned Taxi Dalaran --> Azsuna - Alliance) - ELM
-1814,Quest Path 5645: [OLD2]7.0 Quest - Azsuna (Down to Azsuna: Unlearned Taxi Dalaran --> Azsuna - Horde) - ELM
-1815,The Dreamgrove, Val'sharah (Druids Only)
-1818,Quest Path 5654: 7.0 Artifacts - Druid - Feral - Q:42428 - Dreamgrove -> Ashamane's Fall - LWB
-1819,Quest Path 5655: 7.0 Quest - Azsuna (Down to Azsuna: Unlearned Taxi Dalaran --> Azsuna - Horde) - ELM
-1825,Quest Path 5667: 7.0 DH-OHC - "Malace in Vrykul Land" Alliance - Dalaran -> Valdishall (ELM)
-1826,Quest Path 5668: 7.0 DH-OHC - "Malace in Vrykul Land" Horde - Dalaran -> Valdishall (ELM)
-1827,Quest Path 5669: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Rings Portal 01 - SBV
-1828,Quest Path 5670: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Rings Portal Top -> Ring A - SBV
-1829,Quest Path 5671: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Rings Portal Middle 02 - SBV
-1830,Quest Path 5672: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Rings Portal Middle 03 - SBV
-1831,Quest Path 5673: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Side Platform Portal B -> Ring C - SBV
-1832,Quest Path 5674: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Portal - Ring A -> Center - SBV
-1833,Quest Path 5675: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Portal - Ring B -> Center - SBV
-1834,Quest Path 5676: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Side Platform Portal A -> Ring B - SBV
-1835,Quest Path 5677: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Side Platform Portal C -> Ring A - SBV
-1836,Quest Path 5678: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Rings Portal - Ring C -> Ring A - SBV
-1837,Wardens' Redoubt, Azsuna
-1838,Thorim's Peak
-1839,Nastrondir
-1840,Eastern Suramar
-1841,Western Suramar
-1842,Carl Test b
-1843,Carl Test c
-1844,Carl Test d
-1845,Isle of the Watchers
-1846,Faronaar
-1847,The Dreamgrove
-1848,Trueshot Lodge
-1849,Dalaran
-1850,Eastern Highmountain
-1855,Shield's Rest, Stormheim
-1856,Vengeance Point, Broken Shore
-1857,Stormtorn Foothills, Stormheim
-1858,Meredil, Suramar
-1859,Felblaze Ingress, Azsuna
-1860,Watchers' Aerie, Azsuna
-1861,Illidari Perch, Azsuna
-1862,Acherus: The Ebon Hold
-1863,Hafr Fjall, Stormheim
-1864,Quest Path 5598: Nesingwary, Highmountain -> Shipwreck Cove, Highmountain [Unlearned]
-1865,Boost 2.0 - Alliance - Leave Point
-1867,Quest Path 5911: 7.0 Dalaran -> Acherus
-1868,Quest Path 5912: 7.0 Acherus -> Dalaran
-1869,Quest Path 5913: 7.0 Karazhan - Ballroom -> Opera Portal
-1870,Eye of Azshara, Azsuna
-1871,Quest Path 5925: Quest Path 5654: 7.0 Artifacts - Druid - Feral - Q:42428 - Ashamane's Fall -> Dreamgrove - LWB
-1874,Quest Path 5962: 7.0 Artifacts - Death Knight - Blood - From Dalaran to Broken Shore Portal - Taxi Version - LWB
-1875,Quest Path 5963: 7.0 Artifacts - Death Knight - Blood - From Broken Shore to Dalaran - Taxi - LWB
-1877,Quest Path 5626: 7.0 Artifacts - Priest - Holy - Dalaran to Broken Shore Portal - LWB
-1878,Quest Path 5627: 7.0 Artifacts - Priest - Holy - Quest NPC - Broken Shore - Fly Back - LWB
-1879,Crimson Thicket, Suramar
-1880,Irongrove Retreat, Suramar
-1885,Gloaming Reef, Val'sharah
-1892,Quest Path 6004: 7.2 Assault - Val'sharah - Black Rook - Base Camp to Ramparts - LWB
-1893,Quest Path 6005: 7.2 Legion Invasion - Val'sharah - 03 - Taxi to Top - LWB
-1894,Quest Path 6009: 7.1 Suramar -> Black Rook Hold ("We Need Weapons" ) - ZTO
-1899,Quest Path 6026: 7.2 OHC - Paladin - Light's Hope Chapel (Alliance) -> Broken Shore (1666) - JAP
-1900,Quest Path 6027: Quest Path 6026: 7.2 OHC - Paladin - Light's Hope Chapel (Horde) -> Broken Shore (1666) - JAP
-1902,Quest Path 6030: 7.2 Fel Hammer -> 7.2 Mardum
-1906,The Fel Hammer, Broken Shore
-1907,Quest Path 6038: 7.0 - Death Knight - No Man's Land - Taxi Route - LWB
-1908,Quest Path 6036: 7.2 Fel Hammer -> 7.2 Broken Shore
-1909,Quest Path 6041: 7.2 Wandering Isle -> Stormstout Brewery, Pandaria
-1910,Quest Path 6042: 7.2 OHC - Priest - Dalaran -> Broken Shore - Teleport (JAP)
-1913,Quest Path 6048: Quest Path 6005: 7.2 Legion Invasion - Val'sharah - 03 - Taxi to Bottom - LWB
-1916,Quest Path 6052: 7.2 OHC - Hunter - Trueshot Lodge -> Broken Shore - Teleport (JAP)
-1917,Quest Path 6053: 7.2 Order Hall - Shaman - Ch 5 - Thunderaan Transport (JLW)
-1922,Quest Path 6065: 7.2 Assault - Val'sharah - Black Rook - Top to Final Terrace
-1923,Quest Path 6067: 7.2 Assault - Val'sharah - Black Rook - Base Camp to Final Terrace
-1924,Quest Path 6068: 7.2 Acherus: The Ebon Hold -> Illidari Camp, Broken Shore
-1927,Quest Path 6072: 7.2 Order Hall - Rogue - Ch 5 - Temp To BS (JLW)
-1928,Krokuun, Argus
-1933,Quest Path 6084: Acherus: The Ebon Hold -> Thorim's Peak, Stormheim
-1934,TEMPAREA1, Argus
-1935,TEMPAREA2, Argus
-1941,Deliverance Point, Broken Shore
-1942,Aalgen Point, Broken Shore
-1944,Vindicaar, Argus
-1947,Quest Path 6175: 7.3 Argus - Isle 2 - Alleria Arc - Alleria Shadow Ball Taxi (JAK)
-1967,The Xenedar, Argus
-1976,Destiny Point, Argus
-1977,Vindicaar, Mac'Aree
-1978,Conservatory of the Arcane, Mac'Aree
-1981,Shadowguard Incursion, Mac'Aree
-1982,Triumvirate's End, Mac'Aree
-1985,[Hidden] Argus Ground Points Hub (Ground TP out to here, TP to Vindicaar from here)
-1986,[Hidden] Argus Vindicaar Ground Hub (Vindicaar TP out to here, TP to ground from here)
-1987,[Hidden] Argus Vindicaar No Load Hub (Vindicaar No Load transition goes through here)
-1988,Landing, Stygian Wake
-1991,Prophet's Reflection, Mac'Aree
-1992,South, Stygian Wake
-1993,North, Stygian Wake
-1994,Vindicaar, Stygian Wake
+1381@@@Embaari Village, Shadowmoon Valley
+1383@@@Path of the Light, Shadowmoon Valley
+1384@@@Exile's Rise, Shadowmoon Valley
+1387@@@Bladespire Citadel, Frostfire Ridge
+1389@@@Bloodmaul Slag Mines, Frostfire Ridge
+1390@@@Stonefang Outpost, Frostfire Ridge
+1408@@@Warspear, Ashran
+1420@@@Stormshield (Alliance), Ashran
+1432@@@Frostwall Garrison, Frostfire Ridge
+1440@@@Zangarra, Talador
+1441@@@Frostwolf Overlook, Talador
+1442@@@Beastwatch, Gorgrond
+1443@@@Vol'jin's Pride, Talador
+1445@@@Durotan's Grasp, Talador
+1447@@@Fort Wrynn (Alliance), Talador
+1448@@@Redemption Rise, Talador
+1450@@@Shattrath City, Talador
+1451@@@Anchorite's Sojourn, Talador
+1452@@@Retribution Point, Talador
+1453@@@Exarch's Refuge, Talador
+1454@@@Exarch's Refuge, Talador
+1462@@@Terokkar Refuge, Talador
+1463@@@Quest Path 4263: Draenor Zone Breadcrumb - Frostfire Garrison > Talador Start Loc (CSA)
+1464@@@Quest Path 4266: Draenor Zone Breadcrumb - Shadowmoon Garrison > Talador Start Loc (CSA)
+1465@@@Quest Path 4269: Draenor Zone Breadcrumb - Shadowmoon Garrison > Nagrand Start Loc (ELM)
+1466@@@Quest Path 4270: Draenor Zone Breadcrumb - Frostfire Ridge Garrison > Nagrand Start Loc (ELM)
+1467@@@The Draakorium, Shadowmoon Valley
+1468@@@Elodor (Alliance), Shadowmoon Valley
+1475@@@Socrethar's Rise, Shadowmoon Valley
+1476@@@Lunarfall (Alliance), Shadowmoon Valley
+1477@@@Quest Path 4316: Frostfire Ridge - Garrison - Max-Level Chapter - Sargerei - Taxi Path to Shadowmoon (HMC)
+1487@@@Axefall, Spires of Arak
+1488@@@Quest Path 4333: Shadowmoon Valley 6.0:JP3 - Darktide Roost - Taxi Path to Darktide Roost
+1489@@@Quest Path 4334: Frostfire Ridge:JP3 - Darktide Roost - Taxi to Darktide Roost
+1490@@@Quest Path 4337: Spires of Arak 6.0 - Horde Garrison Outpost > Shadow's Defiance
+1493@@@Southport, Spires of Arak
+1494@@@Quest Path 4341: Spires of Arak 6.0 - Alliance Garrison Outpost > Shadow's Defiance
+1495@@@Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice
+1496@@@Quest Path 4345: Spires of Arak 6.0 - Shattered Hand Poison Camp > Horde Garrison Outpost
+1497@@@Quest Path 4346: Spires of Arak 6.0 - Shattered Hand Poison Camp > Alliance Garrison Outpost
+1498@@@Quest Path 4353: Frostfire Ridge:JP3 - Broken Precipice - Taxi to Nagrand / Broken Precipice
+1502@@@The Ring of Trials, Nagrand
+1503@@@Throne of the Elements, Nagrand
+1504@@@Wor'var, Nagrand
+1505@@@Riverside Post, Nagrand
+1506@@@Telaari Station, Nagrand
+1507@@@Yrel's Watch, Nagrand
+1508@@@Veil Terokk, Spires of Arak
+1509@@@Talon Watch, Spires of Arak
+1510@@@Pinchwhistle Gearworks, Spires of Arak
+1511@@@Bastion Rise, Gorgrond
+1512@@@Bastion Rise, Gorgrond
+1513@@@Apexis Excavation, Spires of Arak
+1514@@@Evermorn Springs, Gorgrond
+1515@@@Crow's Crook, Spires of Arak
+1518@@@Wildwood Wash, Gorgrond
+1519@@@Highpass, Gorgrond
+1520@@@Breaker's Crown, Gorgrond
+1523@@@Deeproot, Gorgrond
+1524@@@Iron Docks, Gorgrond
+1527@@@Quest Path 4442: Spires of Arak: (DLA) - Veil Terokk -> Talon Watch Breadcrumb
+1528@@@Iron Siegeworks, Frostfire Ridge
+1529@@@Darktide Roost, Shadowmoon Valley
+1535@@@Quest Path 4535: Quest Path - Spires of Arak 6.0 - Horde Garrison Outpost > Pinchwhistle Gearworks (LWB)
+1536@@@Quest Path 4538: Quest Path - Spires of Arak 6.0 - Alliance Garrison Outpost > Pinchwhistle Gearworks (LWB)
+1537@@@Shattered Landing, Blasted Lands
+1538@@@Shattered Beachhead, Blasted Lands
+1539@@@Skysea Ridge, Gorgrond
+1540@@@Quest Path 4579: Talador 6.0 - Zangarra > Khadgar's Tower
+1541@@@Quest Path 4580: Talador 6.0 - Khadgar's Tower > Zangarra
+1547@@@Quest Path 4590: Shadowmoon Valley 6.0:JP3 - A - Ashran - Taxi Path to Ashran Staging Area
+1549@@@Quest Path 4600: Frostfire Ridge:JP3 - Ashran Staging Area - Taxi to Ashran
+1550@@@Quest Path 4599: Shadowmoon 6.x - "The Search for Owynn Graddock": Garrison, Shadowmoon Valley -> Bloodmaul Slag Mines, Frostfire Ridge (HMC)
+1553@@@Quest Path 4634: Shadowmoon 6.x - "Pinchwhistle Gearworks": Garrison, Shadowmoon Valley -> Pinchwhistle Gearworks, Spires of Arak (LWB)
+1554@@@Quest Path 4635: Frostfire 6.x - "Pinchwhistle Gearworks": Garrison, Frostfire ->Pinchwhistle Gearworks, Spires of Arak (LWB)
+1555@@@Quest Path 4636: Shadowmoon Valley, Tier 3 Garrison -> Ashran, Stormshield (Shortcut Path) (CSA)
+1556@@@Tranquil Court, Shadowmoon Valley
+1559@@@Wolf's Stand, Frostfire Ridge
+1562@@@Quest Path 4665: Ashran - Lane - Warspear to Stormshield
+1563@@@Quest Path 4666: Ashran - Lane - Stormshield to Warspear
+1567@@@Temple of Karabor, Shadowmoon Valley
+1568@@@Everbloom Wilds, Gorgrond
+1569@@@Akeeta's Hovel, Shadowmoon Valley
+1572@@@Rilzit's Holdfast, Nagrand
+1573@@@Nivek's Overlook, Nagrand
+1574@@@Joz's Rylaks, Nagrand
+1580@@@Everbloom Overlook, Gorgrond
+1581@@@Quest Path 4881: Lunarfall, Shadowmoon Valley -> Terokkar Pass, Spires of Arak
+1582@@@Quest Path 4888: Frostwall Garrison, Frostfire Ridge -> Terokkar Pass, Spires of Arak
+1599@@@Quest Path 4958: Garrison - 6.1 Chapter - H - Taxi to Iron Docks - JMC
+1601@@@Quest Path 4960: Garrison - 6.1 Chapter - H - Taxi from Iron Docks to Garrison - JMC
+1605@@@Quest Path 4965: Garrison - 6.1 Chapter - A - Taxi from Garrison to Iron Docks - JMC
+1606@@@Quest Path 4966: Garrison - 6.1 Chapter - A - Taxi from Iron Docks to Garrison - JMC
+1613@@@Azurewing Repose, Azsuna
+1614@@@Quest Path 4974: 6.2 Tanaan - Quest - H - From Vol'mar to Iron Front - JMC
+1615@@@Challiane's Terrace, Azsuna
+1620@@@Lion's Watch, Tanaan Jungle
+1621@@@Vol'mar, Tanaan Jungle
+1622@@@Illidari Stand, Azsuna
+1625@@@Quest Path 4987: 6.2 Tanaan - Lion's Watch - Taxi Path to Aktar's Post (LWB)
+1626@@@Quest Path 4988: 6.2 Tanaan - Volmar - Taxi Path to Aktar's Post (LWB)
+1633@@@Shackle's Den, Azsuna
+1634@@@Quest Path 5017: 7.0 Azsuna - Rift 01 - East Chasm -> West Chasm
+1635@@@Quest Path 5018: 7.0 Azsuna - Rift 01 - West Chasm -> East Chasm
+1636@@@Quest Path 5019: 7.0 Azsuna - Rift 02 - Tower -> Rock (ZTO)
+1637@@@Quest Path 5020: 7.0 Azsuna - Rift 03, Tower - Base -> Top (ZTO/PRK)
+1642@@@Quest Path 5026: 6.2 Tanaan - Quest - A - From Lion's Watch to Iron Front - JMC
+1643@@@Aktar's Post, Tanaan Jungle
+1644@@@The Iron Front, Tanaan Jungle
+1645@@@The Iron Front, Tanaan Jungle
+1646@@@Vault of the Earth, Tanaan Jungle
+1647@@@Malo's Lookout, Tanaan Jungle
+1648@@@Sha'naari Refuge, Tanaan Jungle
+1660@@@Bret Test 3-3s
+1661@@@Bret Test 3-3e
+1662@@@Carl Test a
+1673@@@Lorlathil, Val'sharah
+1713@@@Bradensbrook, Val'sharah
+1716@@@Quest Path 5222: Garrison, Alliance Shipyard -> Tanaan (IGC)
+1719@@@Thunder Totem, Highmountain
+1722@@@Quest Path 5262: Stormheim: (DLA) - Valdisdall -> Dreadwake (Spell Taxi)
+1723@@@Quest Path 5263: Stormheim: (DLA) - Valdisdall -> Greywatch (Spell Taxi)
+1729@@@Quest Path 5283: Alliance Garrison (Tier 3) > Alliance Shipyard
+1730@@@Quest Path 5284: Alliance Shipyard > Alliance Garrison (Tier 3)
+1731@@@Alliance Shipyard Taxi
+1732@@@Quest Path 5286: 7.0 DH-Mardum - Illidari Foothold -> The Fel Hammer (ELM)
+1738@@@Cullen's Post, Stormheim
+1739@@@Dreadwake's Landing, Stormheim
+1741@@@Forsaken Foothold, Stormheim
+1742@@@Valdisdall, Stormheim
+1744@@@Greywatch, Stormheim
+1745@@@Lorna's Watch, Stormheim
+1747@@@Skyfire Triage Camp, Stormheim
+1748@@@Quest Path 5333: 7.0 Artifacts - Monk - Order Formation - Number Nine Flight - LWB
+1753@@@Skyhorn, Highmountain
+1754@@@The Witchwood, Highmountain
+1755@@@Felbane Camp, Highmountain
+1756@@@Shipwreck Cove, Highmountain
+1758@@@Obsidian Overlook, Highmountain
+1759@@@Ironhorn Enclave, Highmountain
+1760@@@Trueshot Lodge, Highmountain
+1761@@@Prepfoot, Highmountain
+1764@@@Starsong Refuge, Val'sharah
+1766@@@Garden of the Moon, Val'sharah
+1767@@@Nesingwary, Highmountain
+1774@@@Dalaran
+1777@@@Sylvan Falls, Highmountain
+1778@@@Stonehoof Watch, Highmountain
+1783@@@Quest Path 5500: 7.0 Azsuna - Rift 02 - Rock -> Tower (ZTO)
+1784@@@Quest Path 5509: 7.0 Highmountain - Stonehoof Watch -> Sylvan Falls (Quest, ZTO)
+1787@@@Quest Path 5512: Quest Path 5020: 7.0 Azsuna - Rift 03, Base - Tower (ZTO)
+1800@@@Quest Path 4621: [OLD]7.0 Quest - Azsuna (Down to Azsuna: Unlearned Taxi Dalaran --> Azsuna - Alliance) - ELM
+1801@@@Quest Path 5597: [OLD]7.0 Quest - Azsuna (Down to Azsuna: Unlearned Taxi Dalaran --> Azsuna - Horde) - ELM
+1803@@@Quest Path 5615: 7.0 Dalaran -> Trueshot Lodge, Highmountain
+1813@@@Quest Path 5643: 7.0 Quest - Azsuna (Down to Azsuna: Unlearned Taxi Dalaran --> Azsuna - Alliance) - ELM
+1814@@@Quest Path 5645: [OLD2]7.0 Quest - Azsuna (Down to Azsuna: Unlearned Taxi Dalaran --> Azsuna - Horde) - ELM
+1815@@@The Dreamgrove, Val'sharah (Druids Only)
+1818@@@Quest Path 5654: 7.0 Artifacts - Druid - Feral - Q:42428 - Dreamgrove -> Ashamane's Fall - LWB
+1819@@@Quest Path 5655: 7.0 Quest - Azsuna (Down to Azsuna: Unlearned Taxi Dalaran --> Azsuna - Horde) - ELM
+1825@@@Quest Path 5667: 7.0 DH-OHC - "Malace in Vrykul Land" Alliance - Dalaran -> Valdishall (ELM)
+1826@@@Quest Path 5668: 7.0 DH-OHC - "Malace in Vrykul Land" Horde - Dalaran -> Valdishall (ELM)
+1827@@@Quest Path 5669: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Rings Portal 01 - SBV
+1828@@@Quest Path 5670: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Rings Portal Top -> Ring A - SBV
+1829@@@Quest Path 5671: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Rings Portal Middle 02 - SBV
+1830@@@Quest Path 5672: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Rings Portal Middle 03 - SBV
+1831@@@Quest Path 5673: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Side Platform Portal B -> Ring C - SBV
+1832@@@Quest Path 5674: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Portal - Ring A -> Center - SBV
+1833@@@Quest Path 5675: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Portal - Ring B -> Center - SBV
+1834@@@Quest Path 5676: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Side Platform Portal A -> Ring B - SBV
+1835@@@Quest Path 5677: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Side Platform Portal C -> Ring A - SBV
+1836@@@Quest Path 5678: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Rings Portal - Ring C -> Ring A - SBV
+1837@@@Wardens' Redoubt, Azsuna
+1838@@@Thorim's Peak
+1839@@@Nastrondir
+1840@@@Eastern Suramar
+1841@@@Western Suramar
+1842@@@Carl Test b
+1843@@@Carl Test c
+1844@@@Carl Test d
+1845@@@Isle of the Watchers
+1846@@@Faronaar
+1847@@@The Dreamgrove
+1848@@@Trueshot Lodge
+1849@@@Dalaran
+1850@@@Eastern Highmountain
+1855@@@Shield's Rest, Stormheim
+1856@@@Vengeance Point, Broken Shore
+1857@@@Stormtorn Foothills, Stormheim
+1858@@@Meredil, Suramar
+1859@@@Felblaze Ingress, Azsuna
+1860@@@Watchers' Aerie, Azsuna
+1861@@@Illidari Perch, Azsuna
+1862@@@Acherus: The Ebon Hold
+1863@@@Hafr Fjall, Stormheim
+1864@@@Quest Path 5598: Nesingwary, Highmountain -> Shipwreck Cove, Highmountain [Unlearned]
+1865@@@Boost 2.0 - Alliance - Leave Point
+1867@@@Quest Path 5911: 7.0 Dalaran -> Acherus
+1868@@@Quest Path 5912: 7.0 Acherus -> Dalaran
+1869@@@Quest Path 5913: 7.0 Karazhan - Ballroom -> Opera Portal
+1870@@@Eye of Azshara, Azsuna
+1871@@@Quest Path 5925: Quest Path 5654: 7.0 Artifacts - Druid - Feral - Q:42428 - Ashamane's Fall -> Dreamgrove - LWB
+1874@@@Quest Path 5962: 7.0 Artifacts - Death Knight - Blood - From Dalaran to Broken Shore Portal - Taxi Version - LWB
+1875@@@Quest Path 5963: 7.0 Artifacts - Death Knight - Blood - From Broken Shore to Dalaran - Taxi - LWB
+1877@@@Quest Path 5626: 7.0 Artifacts - Priest - Holy - Dalaran to Broken Shore Portal - LWB
+1878@@@Quest Path 5627: 7.0 Artifacts - Priest - Holy - Quest NPC - Broken Shore - Fly Back - LWB
+1879@@@Crimson Thicket, Suramar
+1880@@@Irongrove Retreat, Suramar
+1885@@@Gloaming Reef, Val'sharah
+1892@@@Quest Path 6004: 7.2 Assault - Val'sharah - Black Rook - Base Camp to Ramparts - LWB
+1893@@@Quest Path 6005: 7.2 Legion Invasion - Val'sharah - 03 - Taxi to Top - LWB
+1894@@@Quest Path 6009: 7.1 Suramar -> Black Rook Hold ("We Need Weapons" ) - ZTO
+1899@@@Quest Path 6026: 7.2 OHC - Paladin - Light's Hope Chapel (Alliance) -> Broken Shore (1666) - JAP
+1900@@@Quest Path 6027: Quest Path 6026: 7.2 OHC - Paladin - Light's Hope Chapel (Horde) -> Broken Shore (1666) - JAP
+1902@@@Quest Path 6030: 7.2 Fel Hammer -> 7.2 Mardum
+1906@@@The Fel Hammer, Broken Shore
+1907@@@Quest Path 6038: 7.0 - Death Knight - No Man's Land - Taxi Route - LWB
+1908@@@Quest Path 6036: 7.2 Fel Hammer -> 7.2 Broken Shore
+1909@@@Quest Path 6041: 7.2 Wandering Isle -> Stormstout Brewery, Pandaria
+1910@@@Quest Path 6042: 7.2 OHC - Priest - Dalaran -> Broken Shore - Teleport (JAP)
+1913@@@Quest Path 6048: Quest Path 6005: 7.2 Legion Invasion - Val'sharah - 03 - Taxi to Bottom - LWB
+1916@@@Quest Path 6052: 7.2 OHC - Hunter - Trueshot Lodge -> Broken Shore - Teleport (JAP)
+1917@@@Quest Path 6053: 7.2 Order Hall - Shaman - Ch 5 - Thunderaan Transport (JLW)
+1922@@@Quest Path 6065: 7.2 Assault - Val'sharah - Black Rook - Top to Final Terrace
+1923@@@Quest Path 6067: 7.2 Assault - Val'sharah - Black Rook - Base Camp to Final Terrace
+1924@@@Quest Path 6068: 7.2 Acherus: The Ebon Hold -> Illidari Camp, Broken Shore
+1927@@@Quest Path 6072: 7.2 Order Hall - Rogue - Ch 5 - Temp To BS (JLW)
+1928@@@Krokuun, Argus
+1933@@@Quest Path 6084: Acherus: The Ebon Hold -> Thorim's Peak, Stormheim
+1934@@@TEMPAREA1, Argus
+1935@@@TEMPAREA2, Argus
+1941@@@Deliverance Point, Broken Shore
+1942@@@Aalgen Point, Broken Shore
+1944@@@Vindicaar, Argus
+1947@@@Quest Path 6175: 7.3 Argus - Isle 2 - Alleria Arc - Alleria Shadow Ball Taxi (JAK)
+1967@@@The Xenedar, Argus
+1976@@@Destiny Point, Argus
+1977@@@Vindicaar, Mac'Aree
+1978@@@Conservatory of the Arcane, Mac'Aree
+1981@@@Shadowguard Incursion, Mac'Aree
+1982@@@Triumvirate's End, Mac'Aree
+1985@@@[Hidden] Argus Ground Points Hub (Ground TP out to here, TP to Vindicaar from here)
+1986@@@[Hidden] Argus Vindicaar Ground Hub (Vindicaar TP out to here, TP to ground from here)
+1987@@@[Hidden] Argus Vindicaar No Load Hub (Vindicaar No Load transition goes through here)
+1988@@@Landing, Stygian Wake
+1991@@@Prophet's Reflection, Mac'Aree
+1992@@@South, Stygian Wake
+1993@@@North, Stygian Wake
+1994@@@Vindicaar, Stygian Wake
 7.3.0.24500
-1967,Shattered Fields, Argus
+1967@@@Shattered Fields, Argus
 7.3.0.24539
-1928,Krokul Enclave, Argus
-2003,City Center, Mac'Aree
+1928@@@Krokul Enclave, Argus
+2003@@@City Center, Mac'Aree
 7.3.0.24608
-1928,Krokul Hovel, Krokuun
-1944,Vindicaar, Krokuun
-1967,Shattered Fields, Krokuun
-1976,Destiny Point, Krokuun
-1988,Landing, Antoran Wastes
-1992,South, Antoran Wastes
-1993,North, Antoran Wastes
-1994,Vindicaar, Antoran Wastes
+1928@@@Krokul Hovel, Krokuun
+1944@@@Vindicaar, Krokuun
+1967@@@Shattered Fields, Krokuun
+1976@@@Destiny Point, Krokuun
+1988@@@Landing, Antoran Wastes
+1992@@@South, Antoran Wastes
+1993@@@North, Antoran Wastes
+1994@@@Vindicaar, Antoran Wastes
 7.3.0.24651
-1988,Hope's Landing, Antoran Wastes
-1992,Light's Purchase, Antoran Wastes
-1993,The Veiled Den, Antoran Wastes
+1988@@@Hope's Landing, Antoran Wastes
+1992@@@Light's Purchase, Antoran Wastes
+1993@@@The Veiled Den, Antoran Wastes
 7.3.0.24758
-2018,Quest Path 6440: 7.3 QA - TEST HOTFIX - Task 110012 - TaxiPathNode - RRB
+2018@@@Quest Path 6440: 7.3 QA - TEST HOTFIX - Task 110012 - TaxiPathNode - RRB
 7.3.0.24829
-2020,Quest Path 6443: 7.3 QA - TEST HOTFIX - Task 110012 - TaxiPathNode - 2 - RRB
+2020@@@Quest Path 6443: 7.3 QA - TEST HOTFIX - Task 110012 - TaxiPathNode - 2 - RRB
 7.3.5.25928
-2058,Staghelm Point, Silithus
-2059,Southwind Village, Silithus
+2058@@@Staghelm Point, Silithus
+2059@@@Southwind Village, Silithus
 8.0.1.25902
-1945,Quest Path 6154: 8.0 Zuldazar - Quest - "King Rastakhan" - ZTO
-1953,Zul'jan, Nazmir
-1954,Zo'bal Ruins, Nazmir
-1955,Gloom Hollow, Nazmir
-1956,Sunken Shipyard (TEMP NAME), Nazmir (Horde)
-1957,Zuldazar Harbor, Zuldazar
-1959,Horde Embassy, Zuldazar
-1961,Quest Path 6233: 8.0 Nazmir - Q: 47250 - Taxi to Jeb'watha ruins - LWB
-1962,Quest Path 6234: 8.0 Nazmir - Q: 42750 - Flight from Jeb'watha -> Zul'jan - LWB
-1964,Quest Path 6237: 8.0 Warfronts - Barrens - Intro Quest - Taxi from Theramore to Fort Triumph
-1965,Nesingwary's Gameland, Zuldazar
-1966,Warbeast Kraal, Zuldazar
-1974,Fossil POI, Zuldazar - Horde
-1975,Zeb'ahari, Zuldazar
-1983,Quest Path 6309: 8.0 Nazmir - Q: 47631 - Flight from Zul'jan -> Gloom Hollow - LWB
-1984,Quest Path 6310: 8.0 Nazmir - Q: 47602 - Flight out of Sundered Span - LWB
-2009,Warport Rastari, Zuldazar
-2012,Fossil POI, Zuldazar - Alliance
-2015,Quest Path 6437: 8.0 Nazmir - Q49082 - Flight out of Hir'eek's Lair - LWB
-2023,Freehold, Tiragarde Sound
-2027,Temple of the Prophet, Zuldazar
-2033,Fallhaven, Drustvar
-2034,Hangman's Point, Drustvar
-2035,Fletcher's Hollow, Drustvar
-2037,Barbthorn Ridge, Drustvar
-2041,Quest Path 6474: 8.0 Freehold, Tiragarde Sound -> Southwind Ferry Dock, Tiragarde Sound
-2042,Vigil Hill, Tiragarde Sound
-2043,xxOLD - Zuldazar, Nazmir Outskirts
-2045,Garden of the Loa, Zuldazar
-2046,Atal'dazar, Zuldazar
-2052,Ferry - Anglepoint Wharf, Tiragarde Sound
-2053,Ferry - Old Drust Road, Tiragarde Sound
-2054,Ferry - Fogcliff Strand, Tiragarde Sound
-2055,Ferry - Southwind Ferry Dock, Tiragarde Sound
-2056,Ferry - Fallhaven, Drustvar
-2057,Ferry - Fletcher's Hollow, Drustvar
-2060,Timberfell Station, Tiragarde Sound
-2061,The Sliver, Zuldazar
-2062,Northern River Horde Camp, Tiragarde Sound
-2065,Harbor, Zuldazar
-2066,Atal'Gral, Zuldazar
-2067,Azerite Mine Overlook Horde Camp, Tiragarde Sound
-2068,Scaletrader Post, Zuldazar
-2069,Crater Bay, Zuldazar
-2070,Zandalar Arena, Zuldazar
-2071,Dreadpearl, Zuldazar
-2073,Throne Room, Zuldazar
-2074,Bridgeport, Tiragarde Sound
-2075,Seeker's Outpost, Zuldazar
-2076,Atal'Gral, Zuldazar
-2077,Castaway Point, Tiragarde Sound
-2078,Alliance Hub, North East, Nazmir
-2079,Kenning Lodge, Tiragarde Sound
-2080,Alliance Camp - West (TEMP NAME)
-2081,Alliance Camp - East (TEMP NAME)
-2083,askjgklajgkl, Tiragarde Sound
-2084,Nowington Estate, Tiragarde Sound
-2085,Tidecross, Stormsong Valley
-2086,Brennadam, Stormsong Valley
+1945@@@Quest Path 6154: 8.0 Zuldazar - Quest - "King Rastakhan" - ZTO
+1953@@@Zul'jan, Nazmir
+1954@@@Zo'bal Ruins, Nazmir
+1955@@@Gloom Hollow, Nazmir
+1956@@@Sunken Shipyard (TEMP NAME), Nazmir (Horde)
+1957@@@Zuldazar Harbor, Zuldazar
+1959@@@Horde Embassy, Zuldazar
+1961@@@Quest Path 6233: 8.0 Nazmir - Q: 47250 - Taxi to Jeb'watha ruins - LWB
+1962@@@Quest Path 6234: 8.0 Nazmir - Q: 42750 - Flight from Jeb'watha -> Zul'jan - LWB
+1964@@@Quest Path 6237: 8.0 Warfronts - Barrens - Intro Quest - Taxi from Theramore to Fort Triumph
+1965@@@Nesingwary's Gameland, Zuldazar
+1966@@@Warbeast Kraal, Zuldazar
+1974@@@Fossil POI, Zuldazar - Horde
+1975@@@Zeb'ahari, Zuldazar
+1983@@@Quest Path 6309: 8.0 Nazmir - Q: 47631 - Flight from Zul'jan -> Gloom Hollow - LWB
+1984@@@Quest Path 6310: 8.0 Nazmir - Q: 47602 - Flight out of Sundered Span - LWB
+2009@@@Warport Rastari, Zuldazar
+2012@@@Fossil POI, Zuldazar - Alliance
+2015@@@Quest Path 6437: 8.0 Nazmir - Q49082 - Flight out of Hir'eek's Lair - LWB
+2023@@@Freehold, Tiragarde Sound
+2027@@@Temple of the Prophet, Zuldazar
+2033@@@Fallhaven, Drustvar
+2034@@@Hangman's Point, Drustvar
+2035@@@Fletcher's Hollow, Drustvar
+2037@@@Barbthorn Ridge, Drustvar
+2041@@@Quest Path 6474: 8.0 Freehold, Tiragarde Sound -> Southwind Ferry Dock, Tiragarde Sound
+2042@@@Vigil Hill, Tiragarde Sound
+2043@@@xxOLD - Zuldazar, Nazmir Outskirts
+2045@@@Garden of the Loa, Zuldazar
+2046@@@Atal'dazar, Zuldazar
+2052@@@Ferry - Anglepoint Wharf, Tiragarde Sound
+2053@@@Ferry - Old Drust Road, Tiragarde Sound
+2054@@@Ferry - Fogcliff Strand, Tiragarde Sound
+2055@@@Ferry - Southwind Ferry Dock, Tiragarde Sound
+2056@@@Ferry - Fallhaven, Drustvar
+2057@@@Ferry - Fletcher's Hollow, Drustvar
+2060@@@Timberfell Station, Tiragarde Sound
+2061@@@The Sliver, Zuldazar
+2062@@@Northern River Horde Camp, Tiragarde Sound
+2065@@@Harbor, Zuldazar
+2066@@@Atal'Gral, Zuldazar
+2067@@@Azerite Mine Overlook Horde Camp, Tiragarde Sound
+2068@@@Scaletrader Post, Zuldazar
+2069@@@Crater Bay, Zuldazar
+2070@@@Zandalar Arena, Zuldazar
+2071@@@Dreadpearl, Zuldazar
+2073@@@Throne Room, Zuldazar
+2074@@@Bridgeport, Tiragarde Sound
+2075@@@Seeker's Outpost, Zuldazar
+2076@@@Atal'Gral, Zuldazar
+2077@@@Castaway Point, Tiragarde Sound
+2078@@@Alliance Hub, North East, Nazmir
+2079@@@Kenning Lodge, Tiragarde Sound
+2080@@@Alliance Camp - West (TEMP NAME)
+2081@@@Alliance Camp - East (TEMP NAME)
+2083@@@askjgklajgkl, Tiragarde Sound
+2084@@@Nowington Estate, Tiragarde Sound
+2085@@@Tidecross, Stormsong Valley
+2086@@@Brennadam, Stormsong Valley
 8.0.1.25976
-1974,Xibala, Zuldazar
-2012,Xibala, Zuldazar
-2041,Quest Path 6474: Freehold, Tiragarde Sound -> Southwind Ferry Dock, Tiragarde Sound
-2054,Ferry - Firebreaker Expedition, Tiragarde Sound
-2079,Kennings Lodge, Tiragarde Sound
-2083,[TEMP] Alliance Hub, Tiragarde Sound
-2084,Norwington Estate, Tiragarde Sound
-2087,Outrigger Point, Tiragarde Sound
-2088,Mildenhall Meadery, Stormsong Valley
-2089,Windswept Coast, Stormsong Valley
-2090,Logjam, Stormsong Valley
-2091,Wind Farm, Stormsong Valley
-2092,Hunting Lodge, Stormsong Valley
-2093,Mildenhall Meadery, Stormsong Valley
-2094,Horde Incursion, Stormsong Valley
-2095,Shrine of the Storm, Stormsong Valley
-2096,Tol Dagor, Tiragarde Sound
-2097,Maloy Tailwind, Stormsong
-2101,The Amber Waves, Stormsong Valley
-2102,Roughneck Camp, Tiragarde Sound
-2103,Eastpoint Station, Tiragarde Sound
-2104,Ferry - Eastpoint Station, Tiragarde Sound
-2105,Ferry - Boralus, Tiragarde Sound
-2106,Arom's Stand, Drustvar
-2107,Watchman's Rise, Drustvar
-2108,Falconhurst, Drustvar
-2109,Whitegrove Chapel, Drustvar
-2110,Alliance Docks, Vol'dun
-2111,Vorrik's Adytum, Vol'dun
-2112,Slithering Gulch, Vol'dun
-2113,Tortaka Refuge, Vol'dun
-2114,Arid Basin Camp, Vol'dun
+1974@@@Xibala, Zuldazar
+2012@@@Xibala, Zuldazar
+2041@@@Quest Path 6474: Freehold, Tiragarde Sound -> Southwind Ferry Dock, Tiragarde Sound
+2054@@@Ferry - Firebreaker Expedition, Tiragarde Sound
+2079@@@Kennings Lodge, Tiragarde Sound
+2083@@@[TEMP] Alliance Hub, Tiragarde Sound
+2084@@@Norwington Estate, Tiragarde Sound
+2087@@@Outrigger Point, Tiragarde Sound
+2088@@@Mildenhall Meadery, Stormsong Valley
+2089@@@Windswept Coast, Stormsong Valley
+2090@@@Logjam, Stormsong Valley
+2091@@@Wind Farm, Stormsong Valley
+2092@@@Hunting Lodge, Stormsong Valley
+2093@@@Mildenhall Meadery, Stormsong Valley
+2094@@@Horde Incursion, Stormsong Valley
+2095@@@Shrine of the Storm, Stormsong Valley
+2096@@@Tol Dagor, Tiragarde Sound
+2097@@@Maloy Tailwind, Stormsong
+2101@@@The Amber Waves, Stormsong Valley
+2102@@@Roughneck Camp, Tiragarde Sound
+2103@@@Eastpoint Station, Tiragarde Sound
+2104@@@Ferry - Eastpoint Station, Tiragarde Sound
+2105@@@Ferry - Boralus, Tiragarde Sound
+2106@@@Arom's Stand, Drustvar
+2107@@@Watchman's Rise, Drustvar
+2108@@@Falconhurst, Drustvar
+2109@@@Whitegrove Chapel, Drustvar
+2110@@@Alliance Docks, Vol'dun
+2111@@@Vorrik's Adytum, Vol'dun
+2112@@@Slithering Gulch, Vol'dun
+2113@@@Tortaka Refuge, Vol'dun
+2114@@@Arid Basin Camp, Vol'dun
 8.0.1.26010
-2116,Quest Path 6698: Horde Embassy, Zuldazar -> Throne Room, Zuldazar
-2117,Vulpera Hideaway, Vol'dun
-2118,Temple of Akunda, Vol'dun
-2119,Sanctuary of the Devoted, Vol'dun
-2120,Temple of Kimbul, Vol'dun
+2116@@@Quest Path 6698: Horde Embassy, Zuldazar -> Throne Room, Zuldazar
+2117@@@Vulpera Hideaway, Vol'dun
+2118@@@Temple of Akunda, Vol'dun
+2119@@@Sanctuary of the Devoted, Vol'dun
+2120@@@Temple of Kimbul, Vol'dun
 8.0.1.26095
-2060,Hatherford, Tiragarde Sound
-2083,Alliance Hub, Tiragarde Sound
-2105,Ferry - Boralus Hub, Tiragarde Sound
-2126,Scaletrader Post, Zuldazar
-2127,Smuggler's Cove, Drustvar
+2060@@@Hatherford, Tiragarde Sound
+2083@@@Alliance Hub, Tiragarde Sound
+2105@@@Ferry - Boralus Hub, Tiragarde Sound
+2126@@@Scaletrader Post, Zuldazar
+2127@@@Smuggler's Cove, Drustvar
 8.0.1.26131
-2067,Marris Outpost, Tiragarde Sound
-2097,Deadwash, Stormsong
+2067@@@Marris Outpost, Tiragarde Sound
+2097@@@Deadwash, Stormsong
 8.0.1.26175
-2128,Quest Path 6783: 8.0 Stormsong - Monastery -> Water Bridge - GJC
-2129,Quest Path 6799: 8.0 Nazmir - Player Flight Path to Altar of Rot - (STM)
-2130,Quest Path 6801: 8.0 Nazmir - Altar of Rot to Zul'jan Ruins - (STM)
+2128@@@Quest Path 6783: 8.0 Stormsong - Monastery -> Water Bridge - GJC
+2129@@@Quest Path 6799: 8.0 Nazmir - Player Flight Path to Altar of Rot - (STM)
+2130@@@Quest Path 6801: 8.0 Nazmir - Altar of Rot to Zul'jan Ruins - (STM)
 8.0.1.26287
-2091,Central Hills, Stormsong Valley
-2097,Deadwash, Stormsong Valley
-2110,Shatterstone Harbor, Vol'dun
-2133,Shrine of the Storm, Stormsong Valley
-2135,Krazzlefrazz Outpost, Drustvar
-2137,Millstone Hamlet, Stormsong Valley
-2138,Fort Daelin, Stormsong Valley
+2091@@@Central Hills, Stormsong Valley
+2097@@@Deadwash, Stormsong Valley
+2110@@@Shatterstone Harbor, Vol'dun
+2133@@@Shrine of the Storm, Stormsong Valley
+2135@@@Krazzlefrazz Outpost, Drustvar
+2137@@@Millstone Hamlet, Stormsong Valley
+2138@@@Fort Daelin, Stormsong Valley
 8.0.1.26310
-2089,Seekers Vista, Stormsong Valley
-2090,Farm Outpost, Stormsong Valley
-2092,Dire Hills, Stormsong Valley
-2094,Warfang Hold, Stormsong Valley
-2112,Crankchug's Overlook, Vol'dun
-2120,Tortaka Refuge, Vol'dun
-2139,Windwhisper Summit, Stormsong Valley
-2140,Plunder Harbor, Tiragarde Sound8.0.1.26321
-1,--
-2,--
-3,--
-4,--
-5,--
-6,--
-7,--
-8,--
-9,--
-10,--
-11,--
-12,--
-13,--
-14,--
-15,--
-16,--
-17,--
-18,--
-19,--
-20,--
-21,--
-22,--
-23,--
-24,--
-25,--
-26,--
-27,--
-28,--
-29,--
-30,--
-31,--
-32,--
-33,--
-34,--
-35,--
-36,--
-37,--
-38,--
-39,--
-40,--
-41,--
-42,--
-43,--
-44,--
-45,--
-46,--
-47,--
-48,--
-49,--
-50,--
-51,--
-52,--
-53,--
-54,--
-55,--
-56,--
-57,--
-58,--
-59,--
-60,--
-61,--
-62,--
-63,--
-64,--
-65,--
-66,--
-67,--
-68,--
-69,--
-70,--
-71,--
-72,--
-73,--
-74,--
-75,--
-76,--
-77,--
-78,--
-79,--
-80,--
-81,--
-82,--
-83,--
-84,--
-85,--
-86,--
-87,--
-88,--
-89,--
-90,--
-91,--
-92,--
-93,--
-94,--
-95,--
-96,--
-97,--
-98,--
-99,--
-100,--
-101,--
-102,--
-103,--
-104,--
-105,--
-106,--
-107,--
-108,--
-109,--
-110,--
-111,--
-112,--
-113,--
-114,--
-115,--
-116,--
-117,--
-118,--
-119,--
-120,--
-121,--
-122,--
-123,--
-124,--
-125,--
-126,--
-127,--
-128,--
-129,--
-130,--
-131,--
-132,--
-133,--
-134,--
-135,--
-136,--
-137,--
-138,--
-139,--
-140,--
-141,--
-142,--
-143,--
-144,--
-145,--
-146,--
-147,--
-148,--
-149,--
-150,--
-151,--
-152,--
-153,--
-154,--
-155,--
-156,--
-157,--
-158,--
-159,--
-160,--
-161,--
-162,--
-163,--
-164,--
-165,--
-166,--
-167,--
-168,--
-169,--
-170,--
-171,--
-172,--
-173,--
-174,--
-175,--
-176,--
-177,--
-178,--
-179,--
-180,--
-181,--
-182,--
-183,--
-184,--
-185,--
-186,--
-187,--
-188,--
-189,--
-190,--
-191,--
-192,--
-193,--
-194,--
-195,--
-196,--
-197,--
-198,--
-199,--
-200,--
-201,--
-202,--
-203,--
-204,--
-205,--
-206,--
-207,--
-208,--
-209,--
-210,--
-211,--
-212,--
-213,--
-214,--
-215,--
-218,--
-219,--
-221,--
-222,--
-223,--
-224,--
-225,--
-226,--
-227,--
-228,--
-229,--
-230,--
-231,--
-232,--
-233,--
-234,--
-235,--
-236,--
-237,--
-239,--
-240,--
-241,--
-242,--
-243,--
-244,--
-245,--
-246,--
-247,--
-248,--
-249,--
-250,--
-251,--
-252,--
-253,--
-254,--
-255,--
-256,--
-257,--
-258,--
-259,--
-260,--
-261,--
-262,--
-263,--
-264,--
-265,--
-266,--
-267,--
-268,--
-269,--
-270,--
-271,--
-272,--
-273,--
-274,--
-275,--
-276,--
-277,--
-278,--
-279,--
-280,--
-281,--
-282,--
-283,--
-284,--
-285,--
-286,--
-287,--
-288,--
-289,--
-290,--
-291,--
-292,--
-293,--
-294,--
-295,--
-296,--
-297,--
-298,--
-299,--
-300,--
-301,--
-302,--
-303,--
-304,--
-305,--
-306,--
-307,--
-308,--
-309,--
-310,--
-311,--
-312,--
-313,--
-314,--
-315,--
-316,--
-317,--
-318,--
-319,--
-320,--
-321,--
-322,--
-323,--
-324,--
-325,--
-326,--
-327,--
-328,--
-329,--
-330,--
-331,--
-332,--
-333,--
-334,--
-335,--
-336,--
-337,--
-338,--
-339,--
-340,--
-341,--
-342,--
-343,--
-344,--
-345,--
-346,--
-347,--
-348,--
-349,--
-350,--
-351,--
-352,--
-354,--
-356,--
-358,--
-359,--
-360,--
-361,--
-362,--
-363,--
-364,--
-365,--
-366,--
-367,--
-368,--
-369,--
-370,--
-371,--
-372,--
-373,--
-374,--
-375,--
-376,--
-377,--
-378,--
-379,--
-380,--
-381,--
-382,--
-383,--
-384,--
-386,--
-387,--
-388,--
-389,--
-390,--
-391,--
-392,--
-393,--
-394,--
-395,--
-402,--
-404,--
-405,--
-413,--
-414,--
-429,--
-433,--
-434,--
-436,--
-438,--
-439,--
-440,--
-456,--
-457,--
-458,--
-460,--
-509,--
-513,--
-521,--
-522,--
-523,--
-524,--
-525,--
-526,--
-531,--
-532,--
-536,--
-537,--
-538,--
-539,--
-540,--
-541,--
-551,--
-552,--
-553,--
-554,--
-555,--
-557,--
-558,--
-559,--
-560,--
-561,--
-562,--
-563,--
-564,--
-565,--
-567,--
-568,--
-569,--
-574,--
-575,--
-577,--
-578,--
-582,--
-583,--
-584,--
-585,--
-586,--
-587,--
-589,--
-590,--
-591,--
-592,--
-593,--
-594,--
-595,--
-596,--
-597,--
-598,--
-599,--
-600,--
-601,--
-602,--
-603,--
-604,--
-605,--
-606,--
-607,--
-608,--
-609,--
-610,--
-611,--
-612,--
-613,--
-614,--
-615,--
-616,--
-617,--
-618,--
-619,--
-620,--
-621,--
-622,--
-623,--
-624,--
-625,--
-626,--
-627,--
-628,--
-629,--
-630,--
-631,--
-632,--
-633,--
-634,--
-635,--
-645,--
-646,--
-649,--
-650,--
-651,--
-652,--
-653,--
-654,--
-656,--
-657,--
-658,--
-659,--
-660,--
-661,--
-662,--
-663,--
-664,--
-665,--
-666,--
-667,--
-668,--
-669,--
-670,--
-672,--
-673,--
-674,--
-675,--
-676,--
-681,--
-682,--
-683,--
-728,--
-757,--
-781,--
-888,--
-894,--
-895,--
-906,--
-907,--
-918,--
-919,--
-920,--
-921,--
-922,--
-923,--
-924,--
-925,--
-926,--
-927,--
-935,--
-949,--
-950,--
-951,--
-963,--
-966,--
-967,--
-968,--
-969,--
-970,--
-971,--
-972,--
-973,--
-984,--
-985,--
-986,--
-987,--
-988,--
-989,--
-990,--
-991,--
-992,--
-993,--
-998,--
-1009,--
-1016,--
-1017,--
-1018,--
-1019,--
-1020,--
-1021,--
-1022,--
-1023,--
-1024,--
-1025,--
-1029,--
-1030,--
-1032,--
-1038,--
-1046,--
-1047,--
-1048,--
-1049,--
-1050,--
-1051,--
-1052,--
-1053,--
-1054,--
-1055,--
-1056,--
-1057,--
-1058,--
-1070,--
-1071,--
-1072,--
-1073,--
-1076,--
-1079,--
-1080,--
-1090,--
-1091,--
-1092,--
-1104,--
-1105,--
-1114,--
-1115,--
-1116,--
-1117,--
-1130,--
-1131,--
-1190,--
-1195,--
-1221,--
-1222,--
-1284,--
-1292,--
-1293,--
-1294,--
-1350,--
-1351,--
-1381,--
-1382,--
-1383,--
-1384,--
-1386,--
-1387,--
-1388,--
-1389,--
-1390,--
-1395,--
-1396,--
-1408,--
-1420,--
-1421,--
-1422,--
-1432,--
-1440,--
-1441,--
-1442,--
-1443,--
-1445,--
-1447,--
-1448,--
-1450,--
-1451,--
-1452,--
-1453,--
-1454,--
-1462,--
-1463,--
-1464,--
-1465,--
-1466,--
-1467,--
-1468,--
-1475,--
-1476,--
-1477,--
-1487,--
-1488,--
-1489,--
-1490,--
-1493,--
-1494,--
-1495,--
-1496,--
-1497,--
-1498,--
-1502,--
-1503,--
-1504,--
-1505,--
-1506,--
-1507,--
-1508,--
-1509,--
-1510,--
-1511,--
-1512,--
-1513,--
-1514,--
-1515,--
-1518,--
-1519,--
-1520,--
-1523,--
-1524,--
-1527,--
-1528,--
-1529,--
-1535,--
-1536,--
-1537,--
-1538,--
-1539,--
-1540,--
-1541,--
-1547,--
-1549,--
-1550,--
-1553,--
-1554,--
-1555,--
-1556,--
-1559,--
-1562,--
-1563,--
-1567,--
-1568,--
-1569,--
-1572,--
-1573,--
-1574,--
-1580,--
-1581,--
-1582,--
-1599,--
-1601,--
-1605,--
-1606,--
-1613,--
-1614,--
-1615,--
-1620,--
-1621,--
-1622,--
-1625,--
-1626,--
-1633,--
-1634,--
-1635,--
-1636,--
-1637,--
-1642,--
-1643,--
-1644,--
-1645,--
-1646,--
-1647,--
-1648,--
-1660,--
-1661,--
-1662,--
-1673,--
-1713,--
-1716,--
-1719,--
-1722,--
-1723,--
-1729,--
-1730,--
-1731,--
-1732,--
-1738,--
-1739,--
-1741,--
-1742,--
-1744,--
-1745,--
-1747,--
-1748,--
-1753,--
-1754,--
-1755,--
-1756,--
-1758,--
-1759,--
-1760,--
-1761,--
-1764,--
-1766,--
-1767,--
-1774,--
-1777,--
-1778,--
-1783,--
-1784,--
-1787,--
-1800,--
-1801,--
-1803,--
-1813,--
-1814,--
-1815,--
-1818,--
-1819,--
-1825,--
-1826,--
-1827,--
-1828,--
-1829,--
-1830,--
-1831,--
-1832,--
-1833,--
-1834,--
-1835,--
-1836,--
-1837,--
-1838,--
-1839,--
-1840,--
-1841,--
-1842,--
-1843,--
-1844,--
-1845,--
-1846,--
-1847,--
-1848,--
-1849,--
-1850,--
-1855,--
-1856,--
-1857,--
-1858,--
-1859,--
-1860,--
-1861,--
-1862,--
-1863,--
-1864,--
-1865,--
-1867,--
-1868,--
-1869,--
-1870,--
-1871,--
-1874,--
-1875,--
-1877,--
-1878,--
-1879,--
-1880,--
-1885,--
-1892,--
-1893,--
-1894,--
-1899,--
-1900,--
-1902,--
-1906,--
-1907,--
-1908,--
-1909,--
-1910,--
-1913,--
-1916,--
-1917,--
-1922,--
-1923,--
-1924,--
-1927,--
-1928,--
-1933,--
-1934,--
-1935,--
-1941,--
-1942,--
-1944,--
-1945,--
-1947,--
-1953,--
-1954,--
-1955,--
-1956,--
-1957,--
-1959,--
-1961,--
-1962,--
-1964,--
-1965,--
-1966,--
-1967,--
-1974,--
-1975,--
-1976,--
-1977,--
-1978,--
-1981,--
-1982,--
-1983,--
-1984,--
-1985,--
-1986,--
-1987,--
-1988,--
-1991,--
-1992,--
-1993,--
-1994,--
-2003,--
-2009,--
-2012,--
-2015,--
-2018,--
-2020,--
-2023,--
-2027,--
-2033,--
-2034,--
-2035,--
-2037,--
-2041,--
-2042,--
-2043,--
-2045,--
-2046,--
-2052,--
-2053,--
-2054,--
-2055,--
-2056,--
-2057,--
-2058,--
-2059,--
-2060,--
-2061,--
-2062,--
-2065,--
-2066,--
-2067,--
-2068,--
-2069,--
-2070,--
-2071,--
-2073,--
-2074,--
-2075,--
-2076,--
-2077,--
-2078,--
-2079,--
-2080,--
-2081,--
-2083,--
-2084,--
-2085,--
-2086,--
-2087,--
-2088,--
-2089,--
-2090,--
-2091,--
-2092,--
-2093,--
-2094,--
-2095,--
-2096,--
-2097,--
-2101,--
-2102,--
-2103,--
-2104,--
-2105,--
-2106,--
-2107,--
-2108,--
-2109,--
-2110,--
-2111,--
-2112,--
-2114,--
-2116,--
-2117,--
-2118,--
-2119,--
-2120,--
-2126,--
-2127,--
-2128,--
-2129,--
-2130,--
-2133,--
-2135,--
-2137,--
-2138,--
+2089@@@Seekers Vista, Stormsong Valley
+2090@@@Farm Outpost, Stormsong Valley
+2092@@@Dire Hills, Stormsong Valley
+2094@@@Warfang Hold, Stormsong Valley
+2112@@@Crankchug's Overlook, Vol'dun
+2120@@@Tortaka Refuge, Vol'dun
+2139@@@Windwhisper Summit, Stormsong Valley
+2140@@@Plunder Harbor, Tiragarde Sound8.0.1.26321
+1@@@--
+2@@@--
+3@@@--
+4@@@--
+5@@@--
+6@@@--
+7@@@--
+8@@@--
+9@@@--
+10@@@--
+11@@@--
+12@@@--
+13@@@--
+14@@@--
+15@@@--
+16@@@--
+17@@@--
+18@@@--
+19@@@--
+20@@@--
+21@@@--
+22@@@--
+23@@@--
+24@@@--
+25@@@--
+26@@@--
+27@@@--
+28@@@--
+29@@@--
+30@@@--
+31@@@--
+32@@@--
+33@@@--
+34@@@--
+35@@@--
+36@@@--
+37@@@--
+38@@@--
+39@@@--
+40@@@--
+41@@@--
+42@@@--
+43@@@--
+44@@@--
+45@@@--
+46@@@--
+47@@@--
+48@@@--
+49@@@--
+50@@@--
+51@@@--
+52@@@--
+53@@@--
+54@@@--
+55@@@--
+56@@@--
+57@@@--
+58@@@--
+59@@@--
+60@@@--
+61@@@--
+62@@@--
+63@@@--
+64@@@--
+65@@@--
+66@@@--
+67@@@--
+68@@@--
+69@@@--
+70@@@--
+71@@@--
+72@@@--
+73@@@--
+74@@@--
+75@@@--
+76@@@--
+77@@@--
+78@@@--
+79@@@--
+80@@@--
+81@@@--
+82@@@--
+83@@@--
+84@@@--
+85@@@--
+86@@@--
+87@@@--
+88@@@--
+89@@@--
+90@@@--
+91@@@--
+92@@@--
+93@@@--
+94@@@--
+95@@@--
+96@@@--
+97@@@--
+98@@@--
+99@@@--
+100@@@--
+101@@@--
+102@@@--
+103@@@--
+104@@@--
+105@@@--
+106@@@--
+107@@@--
+108@@@--
+109@@@--
+110@@@--
+111@@@--
+112@@@--
+113@@@--
+114@@@--
+115@@@--
+116@@@--
+117@@@--
+118@@@--
+119@@@--
+120@@@--
+121@@@--
+122@@@--
+123@@@--
+124@@@--
+125@@@--
+126@@@--
+127@@@--
+128@@@--
+129@@@--
+130@@@--
+131@@@--
+132@@@--
+133@@@--
+134@@@--
+135@@@--
+136@@@--
+137@@@--
+138@@@--
+139@@@--
+140@@@--
+141@@@--
+142@@@--
+143@@@--
+144@@@--
+145@@@--
+146@@@--
+147@@@--
+148@@@--
+149@@@--
+150@@@--
+151@@@--
+152@@@--
+153@@@--
+154@@@--
+155@@@--
+156@@@--
+157@@@--
+158@@@--
+159@@@--
+160@@@--
+161@@@--
+162@@@--
+163@@@--
+164@@@--
+165@@@--
+166@@@--
+167@@@--
+168@@@--
+169@@@--
+170@@@--
+171@@@--
+172@@@--
+173@@@--
+174@@@--
+175@@@--
+176@@@--
+177@@@--
+178@@@--
+179@@@--
+180@@@--
+181@@@--
+182@@@--
+183@@@--
+184@@@--
+185@@@--
+186@@@--
+187@@@--
+188@@@--
+189@@@--
+190@@@--
+191@@@--
+192@@@--
+193@@@--
+194@@@--
+195@@@--
+196@@@--
+197@@@--
+198@@@--
+199@@@--
+200@@@--
+201@@@--
+202@@@--
+203@@@--
+204@@@--
+205@@@--
+206@@@--
+207@@@--
+208@@@--
+209@@@--
+210@@@--
+211@@@--
+212@@@--
+213@@@--
+214@@@--
+215@@@--
+218@@@--
+219@@@--
+221@@@--
+222@@@--
+223@@@--
+224@@@--
+225@@@--
+226@@@--
+227@@@--
+228@@@--
+229@@@--
+230@@@--
+231@@@--
+232@@@--
+233@@@--
+234@@@--
+235@@@--
+236@@@--
+237@@@--
+239@@@--
+240@@@--
+241@@@--
+242@@@--
+243@@@--
+244@@@--
+245@@@--
+246@@@--
+247@@@--
+248@@@--
+249@@@--
+250@@@--
+251@@@--
+252@@@--
+253@@@--
+254@@@--
+255@@@--
+256@@@--
+257@@@--
+258@@@--
+259@@@--
+260@@@--
+261@@@--
+262@@@--
+263@@@--
+264@@@--
+265@@@--
+266@@@--
+267@@@--
+268@@@--
+269@@@--
+270@@@--
+271@@@--
+272@@@--
+273@@@--
+274@@@--
+275@@@--
+276@@@--
+277@@@--
+278@@@--
+279@@@--
+280@@@--
+281@@@--
+282@@@--
+283@@@--
+284@@@--
+285@@@--
+286@@@--
+287@@@--
+288@@@--
+289@@@--
+290@@@--
+291@@@--
+292@@@--
+293@@@--
+294@@@--
+295@@@--
+296@@@--
+297@@@--
+298@@@--
+299@@@--
+300@@@--
+301@@@--
+302@@@--
+303@@@--
+304@@@--
+305@@@--
+306@@@--
+307@@@--
+308@@@--
+309@@@--
+310@@@--
+311@@@--
+312@@@--
+313@@@--
+314@@@--
+315@@@--
+316@@@--
+317@@@--
+318@@@--
+319@@@--
+320@@@--
+321@@@--
+322@@@--
+323@@@--
+324@@@--
+325@@@--
+326@@@--
+327@@@--
+328@@@--
+329@@@--
+330@@@--
+331@@@--
+332@@@--
+333@@@--
+334@@@--
+335@@@--
+336@@@--
+337@@@--
+338@@@--
+339@@@--
+340@@@--
+341@@@--
+342@@@--
+343@@@--
+344@@@--
+345@@@--
+346@@@--
+347@@@--
+348@@@--
+349@@@--
+350@@@--
+351@@@--
+352@@@--
+354@@@--
+356@@@--
+358@@@--
+359@@@--
+360@@@--
+361@@@--
+362@@@--
+363@@@--
+364@@@--
+365@@@--
+366@@@--
+367@@@--
+368@@@--
+369@@@--
+370@@@--
+371@@@--
+372@@@--
+373@@@--
+374@@@--
+375@@@--
+376@@@--
+377@@@--
+378@@@--
+379@@@--
+380@@@--
+381@@@--
+382@@@--
+383@@@--
+384@@@--
+386@@@--
+387@@@--
+388@@@--
+389@@@--
+390@@@--
+391@@@--
+392@@@--
+393@@@--
+394@@@--
+395@@@--
+402@@@--
+404@@@--
+405@@@--
+413@@@--
+414@@@--
+429@@@--
+433@@@--
+434@@@--
+436@@@--
+438@@@--
+439@@@--
+440@@@--
+456@@@--
+457@@@--
+458@@@--
+460@@@--
+509@@@--
+513@@@--
+521@@@--
+522@@@--
+523@@@--
+524@@@--
+525@@@--
+526@@@--
+531@@@--
+532@@@--
+536@@@--
+537@@@--
+538@@@--
+539@@@--
+540@@@--
+541@@@--
+551@@@--
+552@@@--
+553@@@--
+554@@@--
+555@@@--
+557@@@--
+558@@@--
+559@@@--
+560@@@--
+561@@@--
+562@@@--
+563@@@--
+564@@@--
+565@@@--
+567@@@--
+568@@@--
+569@@@--
+574@@@--
+575@@@--
+577@@@--
+578@@@--
+582@@@--
+583@@@--
+584@@@--
+585@@@--
+586@@@--
+587@@@--
+589@@@--
+590@@@--
+591@@@--
+592@@@--
+593@@@--
+594@@@--
+595@@@--
+596@@@--
+597@@@--
+598@@@--
+599@@@--
+600@@@--
+601@@@--
+602@@@--
+603@@@--
+604@@@--
+605@@@--
+606@@@--
+607@@@--
+608@@@--
+609@@@--
+610@@@--
+611@@@--
+612@@@--
+613@@@--
+614@@@--
+615@@@--
+616@@@--
+617@@@--
+618@@@--
+619@@@--
+620@@@--
+621@@@--
+622@@@--
+623@@@--
+624@@@--
+625@@@--
+626@@@--
+627@@@--
+628@@@--
+629@@@--
+630@@@--
+631@@@--
+632@@@--
+633@@@--
+634@@@--
+635@@@--
+645@@@--
+646@@@--
+649@@@--
+650@@@--
+651@@@--
+652@@@--
+653@@@--
+654@@@--
+656@@@--
+657@@@--
+658@@@--
+659@@@--
+660@@@--
+661@@@--
+662@@@--
+663@@@--
+664@@@--
+665@@@--
+666@@@--
+667@@@--
+668@@@--
+669@@@--
+670@@@--
+672@@@--
+673@@@--
+674@@@--
+675@@@--
+676@@@--
+681@@@--
+682@@@--
+683@@@--
+728@@@--
+757@@@--
+781@@@--
+888@@@--
+894@@@--
+895@@@--
+906@@@--
+907@@@--
+918@@@--
+919@@@--
+920@@@--
+921@@@--
+922@@@--
+923@@@--
+924@@@--
+925@@@--
+926@@@--
+927@@@--
+935@@@--
+949@@@--
+950@@@--
+951@@@--
+963@@@--
+966@@@--
+967@@@--
+968@@@--
+969@@@--
+970@@@--
+971@@@--
+972@@@--
+973@@@--
+984@@@--
+985@@@--
+986@@@--
+987@@@--
+988@@@--
+989@@@--
+990@@@--
+991@@@--
+992@@@--
+993@@@--
+998@@@--
+1009@@@--
+1016@@@--
+1017@@@--
+1018@@@--
+1019@@@--
+1020@@@--
+1021@@@--
+1022@@@--
+1023@@@--
+1024@@@--
+1025@@@--
+1029@@@--
+1030@@@--
+1032@@@--
+1038@@@--
+1046@@@--
+1047@@@--
+1048@@@--
+1049@@@--
+1050@@@--
+1051@@@--
+1052@@@--
+1053@@@--
+1054@@@--
+1055@@@--
+1056@@@--
+1057@@@--
+1058@@@--
+1070@@@--
+1071@@@--
+1072@@@--
+1073@@@--
+1076@@@--
+1079@@@--
+1080@@@--
+1090@@@--
+1091@@@--
+1092@@@--
+1104@@@--
+1105@@@--
+1114@@@--
+1115@@@--
+1116@@@--
+1117@@@--
+1130@@@--
+1131@@@--
+1190@@@--
+1195@@@--
+1221@@@--
+1222@@@--
+1284@@@--
+1292@@@--
+1293@@@--
+1294@@@--
+1350@@@--
+1351@@@--
+1381@@@--
+1382@@@--
+1383@@@--
+1384@@@--
+1386@@@--
+1387@@@--
+1388@@@--
+1389@@@--
+1390@@@--
+1395@@@--
+1396@@@--
+1408@@@--
+1420@@@--
+1421@@@--
+1422@@@--
+1432@@@--
+1440@@@--
+1441@@@--
+1442@@@--
+1443@@@--
+1445@@@--
+1447@@@--
+1448@@@--
+1450@@@--
+1451@@@--
+1452@@@--
+1453@@@--
+1454@@@--
+1462@@@--
+1463@@@--
+1464@@@--
+1465@@@--
+1466@@@--
+1467@@@--
+1468@@@--
+1475@@@--
+1476@@@--
+1477@@@--
+1487@@@--
+1488@@@--
+1489@@@--
+1490@@@--
+1493@@@--
+1494@@@--
+1495@@@--
+1496@@@--
+1497@@@--
+1498@@@--
+1502@@@--
+1503@@@--
+1504@@@--
+1505@@@--
+1506@@@--
+1507@@@--
+1508@@@--
+1509@@@--
+1510@@@--
+1511@@@--
+1512@@@--
+1513@@@--
+1514@@@--
+1515@@@--
+1518@@@--
+1519@@@--
+1520@@@--
+1523@@@--
+1524@@@--
+1527@@@--
+1528@@@--
+1529@@@--
+1535@@@--
+1536@@@--
+1537@@@--
+1538@@@--
+1539@@@--
+1540@@@--
+1541@@@--
+1547@@@--
+1549@@@--
+1550@@@--
+1553@@@--
+1554@@@--
+1555@@@--
+1556@@@--
+1559@@@--
+1562@@@--
+1563@@@--
+1567@@@--
+1568@@@--
+1569@@@--
+1572@@@--
+1573@@@--
+1574@@@--
+1580@@@--
+1581@@@--
+1582@@@--
+1599@@@--
+1601@@@--
+1605@@@--
+1606@@@--
+1613@@@--
+1614@@@--
+1615@@@--
+1620@@@--
+1621@@@--
+1622@@@--
+1625@@@--
+1626@@@--
+1633@@@--
+1634@@@--
+1635@@@--
+1636@@@--
+1637@@@--
+1642@@@--
+1643@@@--
+1644@@@--
+1645@@@--
+1646@@@--
+1647@@@--
+1648@@@--
+1660@@@--
+1661@@@--
+1662@@@--
+1673@@@--
+1713@@@--
+1716@@@--
+1719@@@--
+1722@@@--
+1723@@@--
+1729@@@--
+1730@@@--
+1731@@@--
+1732@@@--
+1738@@@--
+1739@@@--
+1741@@@--
+1742@@@--
+1744@@@--
+1745@@@--
+1747@@@--
+1748@@@--
+1753@@@--
+1754@@@--
+1755@@@--
+1756@@@--
+1758@@@--
+1759@@@--
+1760@@@--
+1761@@@--
+1764@@@--
+1766@@@--
+1767@@@--
+1774@@@--
+1777@@@--
+1778@@@--
+1783@@@--
+1784@@@--
+1787@@@--
+1800@@@--
+1801@@@--
+1803@@@--
+1813@@@--
+1814@@@--
+1815@@@--
+1818@@@--
+1819@@@--
+1825@@@--
+1826@@@--
+1827@@@--
+1828@@@--
+1829@@@--
+1830@@@--
+1831@@@--
+1832@@@--
+1833@@@--
+1834@@@--
+1835@@@--
+1836@@@--
+1837@@@--
+1838@@@--
+1839@@@--
+1840@@@--
+1841@@@--
+1842@@@--
+1843@@@--
+1844@@@--
+1845@@@--
+1846@@@--
+1847@@@--
+1848@@@--
+1849@@@--
+1850@@@--
+1855@@@--
+1856@@@--
+1857@@@--
+1858@@@--
+1859@@@--
+1860@@@--
+1861@@@--
+1862@@@--
+1863@@@--
+1864@@@--
+1865@@@--
+1867@@@--
+1868@@@--
+1869@@@--
+1870@@@--
+1871@@@--
+1874@@@--
+1875@@@--
+1877@@@--
+1878@@@--
+1879@@@--
+1880@@@--
+1885@@@--
+1892@@@--
+1893@@@--
+1894@@@--
+1899@@@--
+1900@@@--
+1902@@@--
+1906@@@--
+1907@@@--
+1908@@@--
+1909@@@--
+1910@@@--
+1913@@@--
+1916@@@--
+1917@@@--
+1922@@@--
+1923@@@--
+1924@@@--
+1927@@@--
+1928@@@--
+1933@@@--
+1934@@@--
+1935@@@--
+1941@@@--
+1942@@@--
+1944@@@--
+1945@@@--
+1947@@@--
+1953@@@--
+1954@@@--
+1955@@@--
+1956@@@--
+1957@@@--
+1959@@@--
+1961@@@--
+1962@@@--
+1964@@@--
+1965@@@--
+1966@@@--
+1967@@@--
+1974@@@--
+1975@@@--
+1976@@@--
+1977@@@--
+1978@@@--
+1981@@@--
+1982@@@--
+1983@@@--
+1984@@@--
+1985@@@--
+1986@@@--
+1987@@@--
+1988@@@--
+1991@@@--
+1992@@@--
+1993@@@--
+1994@@@--
+2003@@@--
+2009@@@--
+2012@@@--
+2015@@@--
+2018@@@--
+2020@@@--
+2023@@@--
+2027@@@--
+2033@@@--
+2034@@@--
+2035@@@--
+2037@@@--
+2041@@@--
+2042@@@--
+2043@@@--
+2045@@@--
+2046@@@--
+2052@@@--
+2053@@@--
+2054@@@--
+2055@@@--
+2056@@@--
+2057@@@--
+2058@@@--
+2059@@@--
+2060@@@--
+2061@@@--
+2062@@@--
+2065@@@--
+2066@@@--
+2067@@@--
+2068@@@--
+2069@@@--
+2070@@@--
+2071@@@--
+2073@@@--
+2074@@@--
+2075@@@--
+2076@@@--
+2077@@@--
+2078@@@--
+2079@@@--
+2080@@@--
+2081@@@--
+2083@@@--
+2084@@@--
+2085@@@--
+2086@@@--
+2087@@@--
+2088@@@--
+2089@@@--
+2090@@@--
+2091@@@--
+2092@@@--
+2093@@@--
+2094@@@--
+2095@@@--
+2096@@@--
+2097@@@--
+2101@@@--
+2102@@@--
+2103@@@--
+2104@@@--
+2105@@@--
+2106@@@--
+2107@@@--
+2108@@@--
+2109@@@--
+2110@@@--
+2111@@@--
+2112@@@--
+2114@@@--
+2116@@@--
+2117@@@--
+2118@@@--
+2119@@@--
+2120@@@--
+2126@@@--
+2127@@@--
+2128@@@--
+2129@@@--
+2130@@@--
+2133@@@--
+2135@@@--
+2137@@@--
+2138@@@--
 8.0.1.26367
-103,Nagrand - PvP - Attack Run Start 1
-509,Quest Path 2063: Brian's 4.0 Test Path
-951,Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise
-963,Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise
-1495,Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice
-2111,Vorrik's Sanctum, Vol'dun
-2140,Plunder Harbor, Tiragarde Sound
-2143,Scorched Sands Outpost, Vol'dun
-2144,Goldtusk Inn, Vol'dun
+103@@@Nagrand - PvP - Attack Run Start 1
+509@@@Quest Path 2063: Brian's 4.0 Test Path
+951@@@Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise
+963@@@Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise
+1495@@@Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice
+2111@@@Vorrik's Sanctum, Vol'dun
+2140@@@Plunder Harbor, Tiragarde Sound
+2143@@@Scorched Sands Outpost, Vol'dun
+2144@@@Goldtusk Inn, Vol'dun
 8.0.1.26433
-2078,Alliance Hub, Fort Victory - Nazmir
-2145,Iron Hollow, Zuldazar
-2147,Talanji's Rebuke, Zuldazar
-2148,Zuldazar - Alliance Hub (Sandscar Beach Outskirt)
-2153,The Slough, Zuldazar
-2156,Quest Path 6967: 8.0 War Campaign - Horde - Chapter 02 - Anyport to Barrowknoll (JLW)
+2078@@@Alliance Hub, Fort Victory - Nazmir
+2145@@@Iron Hollow, Zuldazar
+2147@@@Talanji's Rebuke, Zuldazar
+2148@@@Zuldazar - Alliance Hub (Sandscar Beach Outskirt)
+2153@@@The Slough, Zuldazar
+2156@@@Quest Path 6967: 8.0 War Campaign - Horde - Chapter 02 - Anyport to Barrowknoll (JLW)
 8.0.1.26476
-1953,Zul'jan, Nazmir (Horde)
-1954,Zo'bal Ruins, Nazmir (Horde)
-1955,Gloom Hollow, Nazmir (Horde)
-1956,Forlorn Ruins, Nazmir (Horde)
-2062,Wolf's Den, Tiragarde Sound
-2078,Fort Victory - Nazmir (Alliance)
-2080,West Camp, Nazmir (Alliance)
-2083,Tradewinds Market, Tiragarde Sound
-2157,The Golden Road, Zuldazar
-2158,Quest Path 6995: 8.0 Quest - Warchief's Command: Thousand Needles! - Orgrimmar --> Mudsprocket (ELM)
-2159,Quest Path 6996: 8.0 Quest - Warchief's Command: Un'Goro Crater! - Orgrimmar --> Marshal's Stand (ELM)
-2160,Quest Path 6997: 8.0 Quest - Warchief's Command: Silithus! - Orgrimmar --> Cenarion Hold (ELM)
-2161,North Camp, Nazmir (Alliance)
-2162,Devoted Sanctuary, Vol'dun
-2163,Quest Path 7004: 8.0 Quest - Warchief's Command: Southern Barrens! - Orgrimmar --> Malaka'jin (ELM)
+1953@@@Zul'jan, Nazmir (Horde)
+1954@@@Zo'bal Ruins, Nazmir (Horde)
+1955@@@Gloom Hollow, Nazmir (Horde)
+1956@@@Forlorn Ruins, Nazmir (Horde)
+2062@@@Wolf's Den, Tiragarde Sound
+2078@@@Fort Victory - Nazmir (Alliance)
+2080@@@West Camp, Nazmir (Alliance)
+2083@@@Tradewinds Market, Tiragarde Sound
+2157@@@The Golden Road, Zuldazar
+2158@@@Quest Path 6995: 8.0 Quest - Warchief's Command: Thousand Needles! - Orgrimmar --> Mudsprocket (ELM)
+2159@@@Quest Path 6996: 8.0 Quest - Warchief's Command: Un'Goro Crater! - Orgrimmar --> Marshal's Stand (ELM)
+2160@@@Quest Path 6997: 8.0 Quest - Warchief's Command: Silithus! - Orgrimmar --> Cenarion Hold (ELM)
+2161@@@North Camp, Nazmir (Alliance)
+2162@@@Devoted Sanctuary, Vol'dun
+2163@@@Quest Path 7004: 8.0 Quest - Warchief's Command: Southern Barrens! - Orgrimmar --> Malaka'jin (ELM)
 8.0.1.26522
-1956,Forlorn Ruins, Nazmir
-2114,Deadwood Cove, Vol'dun
-2164,Isle of Fangs, Zuldazar
-2165,Tusk Isle, Zuldazar
-2166,Quest Path 7063: 8.0 War Campaign - Horde - Chapter 05 - Plunder Harbor to Flagship (JLW)
-2167,Quest Path 7064: 8.0 War Campaign - Horde - Chapter 05 - Plunder Harbor to Ship (JLW)
-2168,Quest Path 7065: 8.0 War Campaign - Horde - Chapter 05 - Ship to Plunder Harbor (JLW)
-2169,Quest Path 7066: 8.0 War Campaign - Horde - Chapter 05 - Flagship to Plunder Harbor (JLW)
-2170,Quest Path 7067: 8.0 War Campaign - Horde - Chapter 05 - Ship to Flagship (JLW)
-2171,Quest Path 7068: 8.0 War Campaign - Horde - Chapter 05 - Flagship to Ship (JLW)
-2172,Disable Taxi Paths - Source - RRB
-2173,Disable Taxi Paths - Destination - RRB
+1956@@@Forlorn Ruins, Nazmir
+2114@@@Deadwood Cove, Vol'dun
+2164@@@Isle of Fangs, Zuldazar
+2165@@@Tusk Isle, Zuldazar
+2166@@@Quest Path 7063: 8.0 War Campaign - Horde - Chapter 05 - Plunder Harbor to Flagship (JLW)
+2167@@@Quest Path 7064: 8.0 War Campaign - Horde - Chapter 05 - Plunder Harbor to Ship (JLW)
+2168@@@Quest Path 7065: 8.0 War Campaign - Horde - Chapter 05 - Ship to Plunder Harbor (JLW)
+2169@@@Quest Path 7066: 8.0 War Campaign - Horde - Chapter 05 - Flagship to Plunder Harbor (JLW)
+2170@@@Quest Path 7067: 8.0 War Campaign - Horde - Chapter 05 - Ship to Flagship (JLW)
+2171@@@Quest Path 7068: 8.0 War Campaign - Horde - Chapter 05 - Flagship to Ship (JLW)
+2172@@@Disable Taxi Paths - Source - RRB
+2173@@@Disable Taxi Paths - Destination - RRB
 8.0.1.26567
-1957,Port of Zandalar, Zuldazar
-1959,The Great Seal
-2052,Anglepoint Wharf, Tiragarde Sound
-2053,Old Drust Road, Tiragarde Sound
-2054,Firebreaker Expedition, Tiragarde Sound
-2055,Southwind Ferry Dock, Tiragarde Sound
-2056,Fallhaven, Drustvar
-2057,Fletcher's Hollow, Drustvar
-2104,Eastpoint Station, Tiragarde Sound
-2105,Tradewinds Market, Tiragarde Sound
-2272,Quest Path 6801: 8.0 Nazmir - Altar of Rot to Zul'jan Ruins - (STM)
+1957@@@Port of Zandalar, Zuldazar
+1959@@@The Great Seal
+2052@@@Anglepoint Wharf, Tiragarde Sound
+2053@@@Old Drust Road, Tiragarde Sound
+2054@@@Firebreaker Expedition, Tiragarde Sound
+2055@@@Southwind Ferry Dock, Tiragarde Sound
+2056@@@Fallhaven, Drustvar
+2057@@@Fletcher's Hollow, Drustvar
+2104@@@Eastpoint Station, Tiragarde Sound
+2105@@@Tradewinds Market, Tiragarde Sound
+2272@@@Quest Path 6801: 8.0 Nazmir - Altar of Rot to Zul'jan Ruins - (STM)
 8.1.0.27985
-2055,Southwind Station, Tiragarde Sound
-2067,Timberfell Outpost, Tiragarde Sound
-2078,Fort Victory, Nazmir
-2080,Grimwatt's Crash, Nazmir
-2087,Outrigger Post, Tiragarde Sound
-2090,Hillcrest Pasture, Stormsong Valley
-2091,Stonetusk Watch, Stormsong Valley
-2092,Diretusk Hollow, Stormsong Valley
-2093,Ironmaul Overlook, Stormsong Valley
-2112,Vulture's Nest, Vol'dun
-2127,Anyport, Drustvar
-2139,Windfall Cavern, Stormsong Valley
-2145,Verdant Hollow, Zuldazar
-2147,Castaway Encampment, Zuldazar
-2148,Mugamba Overlook, Zuldazar
-2153,Mistvine Ledge, Zuldazar
-2157,Veiled Grotto, Zuldazar
-2161,Redfield's Watch, Nazmir
-2273,Waning Glacier, Tiragarde Sound
-2274,Swiftwind Post, Drustvar
-2275,Mudfisher Cove, Drustvar
-2276,Tol Dagor, Tiragarde Sound
-2277,Proudmoore Keep, Tiragarde Sound
-2278,Mariner's Row, Tiragarde Sound
-2279,Stonefist Watch, Tiragarde Sound
-2282,Quest Path 6478: 8.0 Nazmir - Zuldazar to Talanji's Camp - (STM)
-2381,The Mugambala, Zuldazar
+2055@@@Southwind Station, Tiragarde Sound
+2067@@@Timberfell Outpost, Tiragarde Sound
+2078@@@Fort Victory, Nazmir
+2080@@@Grimwatt's Crash, Nazmir
+2087@@@Outrigger Post, Tiragarde Sound
+2090@@@Hillcrest Pasture, Stormsong Valley
+2091@@@Stonetusk Watch, Stormsong Valley
+2092@@@Diretusk Hollow, Stormsong Valley
+2093@@@Ironmaul Overlook, Stormsong Valley
+2112@@@Vulture's Nest, Vol'dun
+2127@@@Anyport, Drustvar
+2139@@@Windfall Cavern, Stormsong Valley
+2145@@@Verdant Hollow, Zuldazar
+2147@@@Castaway Encampment, Zuldazar
+2148@@@Mugamba Overlook, Zuldazar
+2153@@@Mistvine Ledge, Zuldazar
+2157@@@Veiled Grotto, Zuldazar
+2161@@@Redfield's Watch, Nazmir
+2273@@@Waning Glacier, Tiragarde Sound
+2274@@@Swiftwind Post, Drustvar
+2275@@@Mudfisher Cove, Drustvar
+2276@@@Tol Dagor, Tiragarde Sound
+2277@@@Proudmoore Keep, Tiragarde Sound
+2278@@@Mariner's Row, Tiragarde Sound
+2279@@@Stonefist Watch, Tiragarde Sound
+2282@@@Quest Path 6478: 8.0 Nazmir - Zuldazar to Talanji's Camp - (STM)
+2381@@@The Mugambala, Zuldazar
 8.1.0.28151
-2382,Quest Path 7405: 8.1 War Campaign - A - Ch1 - South Shore -> Ramparts - KRB
-2383,Quest Path 7496: 8.1 War Campaign - A - Ch1 - Ramparts -> South Shore  - KRB
-2384,Quest Path 7497: 8.1 War Campaign - A - Ch1 - North Shore -> Ramparts - KRB
+2382@@@Quest Path 7405: 8.1 War Campaign - A - Ch1 - South Shore -> Ramparts - KRB
+2383@@@Quest Path 7496: 8.1 War Campaign - A - Ch1 - Ramparts -> South Shore  - KRB
+2384@@@Quest Path 7497: 8.1 War Campaign - A - Ch1 - North Shore -> Ramparts - KRB
 8.1.0.28202
-2046,Atal'Dazar, Zuldazar
+2046@@@Atal'Dazar, Zuldazar
 8.2.0.30080
-2392,Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path
-2403,Highborne Ghost Flight Master (Neutral), Nazjatar
-2404,Newhome (Horde), Nazjatar
-2405,Zin'Azshari (Horde), Nazjatar
-2406,Elun'alor Temple (Alliance), Nazjatar
-2407,Utama's Stand (Alliance), Nazjatar
-2408,Mezzamere (Alliance), Nazjatar
-2409,Spears of Azshara (Alliance Start), Nazjatar
-2410,Ashen Strand (Alliance), Nazjatar
-2411,Ashen Strand (Horde), Nazjatar
-2412,Spears of Azshara (Horde Start), Nazjatar
-2437,Ekka's Hideaway (Horde), Nazjatar
-2441,Prospectus Bay, Mechagon
-2442,Overspark Expedition Camp, Mechagon
-2467,test node
-2471,test node
-2472,test node
-2473,test node
-2474,adams test node
-2475,adams second test node
+2392@@@Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path
+2403@@@Highborne Ghost Flight Master (Neutral), Nazjatar
+2404@@@Newhome (Horde), Nazjatar
+2405@@@Zin'Azshari (Horde), Nazjatar
+2406@@@Elun'alor Temple (Alliance), Nazjatar
+2407@@@Utama's Stand (Alliance), Nazjatar
+2408@@@Mezzamere (Alliance), Nazjatar
+2409@@@Spears of Azshara (Alliance Start), Nazjatar
+2410@@@Ashen Strand (Alliance), Nazjatar
+2411@@@Ashen Strand (Horde), Nazjatar
+2412@@@Spears of Azshara (Horde Start), Nazjatar
+2437@@@Ekka's Hideaway (Horde), Nazjatar
+2441@@@Prospectus Bay, Mechagon
+2442@@@Overspark Expedition Camp, Mechagon
+2467@@@test node
+2471@@@test node
+2472@@@test node
+2473@@@test node
+2474@@@adams test node
+2475@@@adams second test node
 8.2.0.30168
-2482,The Tidal Conflux (Horde), Nazjatar
-2483,The Tidal Conflux (Alliance), Nazjatar
+2482@@@The Tidal Conflux (Horde), Nazjatar
+2483@@@The Tidal Conflux (Alliance), Nazjatar
 8.2.0.30262
-2403,Kelya's Grave, Nazjatar
-2404,Newhome, Nazjatar
-2405,Zin'Azshari, Nazjatar
-2407,Utama's Stand, Nazjatar
-2408,Mezzamere, Nazjatar
-2409,Wreck of the Old Blanchy, Nazjatar
-2410,Ashen Strand, Nazjatar
-2411,Ashen Strand, Nazjatar
-2412,Wreck of the Hungry Riverbeast, Nazjatar
-2437,Ekka's Hideaway, Nazjatar
-2482,The Tidal Conflux, Nazjatar
-2483,The Tidal Conflux, Nazjatar
+2403@@@Kelya's Grave, Nazjatar
+2404@@@Newhome, Nazjatar
+2405@@@Zin'Azshari, Nazjatar
+2407@@@Utama's Stand, Nazjatar
+2408@@@Mezzamere, Nazjatar
+2409@@@Wreck of the Old Blanchy, Nazjatar
+2410@@@Ashen Strand, Nazjatar
+2411@@@Ashen Strand, Nazjatar
+2412@@@Wreck of the Hungry Riverbeast, Nazjatar
+2437@@@Ekka's Hideaway, Nazjatar
+2482@@@The Tidal Conflux, Nazjatar
+2483@@@The Tidal Conflux, Nazjatar
 8.2.0.30430
-2406,Elun'alor Temple, Nazjatar
+2406@@@Elun'alor Temple, Nazjatar
 8.2.5.31337
-2406,Orise's Vigil, Nazjatar
+2406@@@Orise's Vigil, Nazjatar
 8.3.0.32414
-2544,Mistfall Village, Vale of Eternal Blossoms
+2544@@@Mistfall Village, Vale of Eternal Blossoms
 9.0.1.33978
-2393,TEMP, 9.0, Oribos, Bastion
-2394,TEMP, 9.0, Oribos, Maldraxxus
-2395,9.0 Oribos
-2396,TEMP, 9.0, Oribos, Ardenweald
-2397,TEMP, 9.0, Zone, Bastion
-2398,Bleak Redoubt, Maldraxxus
-2399,TEMP, 9.0, Zone, Revendreth
-2400,TEMP, 9.0, Zone, Ardenweald
-2401,Alliance Outpost, Exile's Reach Outpost
-2402,Ogre Citadel, Exile's Reach Island
-2488,Darkhaven, Revendreth
-2490,Quest Path 7759: Oribos go south 2 (msc)
-2506,Quest Path 7794: 9.0 Bastion - Temple of Humility - Quest - Transport To Humiity Top (JLW)
-2511,Sanctuary of the Mad, Revendreth
-2512,Halls of Atonement, Revendreth
-2513,Old Gate, Revendreth
-2514,Pridefall Hamlet, Revendreth
-2515,Dominance Keep, Revendreth
-2516,Chalice District, Revendreth
-2517,Menagerie of the Master, Revendreth
-2518,Gloomhill Crypt, Revendreth
-2519,Aspirant's Rest, Bastion
-2520,Eonian Archives, Bastion
-2527,Quest Path 7856: 9.0 Ardenweald - COV - MC - Q57782 - Taxi to Boss - LWB
-2528,Elysian Hold, Bastion
-2529,Hero's Rest, Bastion
-2530,Tirna Fenn, Ardenweald
-2537,Charred Ramparts, Revendreth
-2541,Quest Path 7899: 9.0 Bastion - Campaign - Ch 05 - Revendreth - Redelav District - Transport Down from Wall (JLW)
-2548,Sinfall, Revendreth
-2549,Quest Path 7925: 9.0 Bastion - Temple of Wisdom - Teleport Pads - Grounds -> Temple Base - GJC
-2550,Quest Path 7926: 9.0 Bastion - Temple of Wisdom - Teleport Pads - Temple Base -> Grounds - GJC
-2552,Quest Path 7869: 9.0 Bastion - Hero's Rest - Zipline - North - Up - GJC
-2553,Quest Path 7949: 9.0 Ardenweald - Bastion Campaign - Queen's Chamber - Up - RRB
-2554,Quest Path 7950: 9.0 Ardenweald - Bastion Campaign - Queen's Chamber - Down - RRB
-2555,The Maw
-2556,Progenitor Console
-2557,[Hidden] The Maw - Outdoor - Desmotaeron Oribos Teleport Dest
-2558,The Spearhead, Maldraxxus
-2559,Hidden Camp, Maldraxxus
-2560,Keres' Rest, Maldraxxus
-2561,Renounced Bastille, Maldraxxus
-2562,Quest Path 7870: 9.0 Bastion - Hero's Rest - Zipline - South - Up - GJC
-2563,Quest Path 7876: 9.0 Bastion - Hero's Rest - Zipline - South - Down - GJC
-2564,Theater of Pain, Maldraxxus
-2565,Starlit Overlook, Ardenweald
-2566,Quest Path 7875: 9.0 Bastion - Hero's Rest - Zipline - West - Down - GJC
-2567,Quest Path 7874: 9.0 Bastion - Hero's Rest - Zipline - West - Up - GJC
-2568,Quest Path 7877: 9.0 Bastion - Hero's Rest - Zipline - North - Down - GJC
-2569,Plague Watch, Maldraxxus
-2572,Quest Path 8039: 9.0 Bastion - Campaign - Ch 05 - Revendreth - Tower to Ember Ward (JLW)
-2573,Quest Path 8047: 9.0 Ardenweald - Covenant Hall - Queen's Audience Chamber Taxi Up - KRB
-2574,Quest Path 8048: 9.0 Ardenweald - Covenant Hall - Queen's Audience Chamber Taxi Down - KRB
-2575,Quest Path 8054: 9.0 Ardenweald - COV - Sisters - Q05 - Queen's Audience Chamber Taxi Up - KRB
-2576,Quest Path 8055: 9.0 Ardenweald - COV - Sisters - Q05 - Queen's Audience Chamber Taxi Down - KRB
-2580,Quest Path 8079: 9.0 Bastion Campaign - Ch 09 - Loyalty - Stage 6 - Ground -> Temple of Loyalty - GJC
-2584,Tirna Eas, Ardenweald
-2585,Tirna Vaal, Ardenweald
-2586,Tirna Glayn, Ardenweald
-2587,Heart of the Forest, Ardenweald
-2588,Root-Home, Ardenweald
-2589,Tirna Kaithe, Ardenweald
-2590,Refugee Camp, Ardenweald
-2591,Crucible of Souls
-2594,9.0 Maw - Oribos - Teleport In
-2595,Quest Path 8159: 9.0 Bastion - Level Up - Memory Extraction - Zipline - Up (JAK)
-2596,Quest Path 8160: 9.0 Bastion - Level Up - Memory Extraction - Zipline - Down (JAK)
-2602,Quest Path 8194: 9.0 Bastion - Level Up - Temple of Purity - Zipline - Up (JAK)
-2603,Quest Path 8195: 9.0 Bastion - Level Up - Temple of Purity - Zipline - Down (JAK)
+2393@@@TEMP, 9.0, Oribos, Bastion
+2394@@@TEMP, 9.0, Oribos, Maldraxxus
+2395@@@9.0 Oribos
+2396@@@TEMP, 9.0, Oribos, Ardenweald
+2397@@@TEMP, 9.0, Zone, Bastion
+2398@@@Bleak Redoubt, Maldraxxus
+2399@@@TEMP, 9.0, Zone, Revendreth
+2400@@@TEMP, 9.0, Zone, Ardenweald
+2401@@@Alliance Outpost, Exile's Reach Outpost
+2402@@@Ogre Citadel, Exile's Reach Island
+2488@@@Darkhaven, Revendreth
+2490@@@Quest Path 7759: Oribos go south 2 (msc)
+2506@@@Quest Path 7794: 9.0 Bastion - Temple of Humility - Quest - Transport To Humiity Top (JLW)
+2511@@@Sanctuary of the Mad, Revendreth
+2512@@@Halls of Atonement, Revendreth
+2513@@@Old Gate, Revendreth
+2514@@@Pridefall Hamlet, Revendreth
+2515@@@Dominance Keep, Revendreth
+2516@@@Chalice District, Revendreth
+2517@@@Menagerie of the Master, Revendreth
+2518@@@Gloomhill Crypt, Revendreth
+2519@@@Aspirant's Rest, Bastion
+2520@@@Eonian Archives, Bastion
+2527@@@Quest Path 7856: 9.0 Ardenweald - COV - MC - Q57782 - Taxi to Boss - LWB
+2528@@@Elysian Hold, Bastion
+2529@@@Hero's Rest, Bastion
+2530@@@Tirna Fenn, Ardenweald
+2537@@@Charred Ramparts, Revendreth
+2541@@@Quest Path 7899: 9.0 Bastion - Campaign - Ch 05 - Revendreth - Redelav District - Transport Down from Wall (JLW)
+2548@@@Sinfall, Revendreth
+2549@@@Quest Path 7925: 9.0 Bastion - Temple of Wisdom - Teleport Pads - Grounds -> Temple Base - GJC
+2550@@@Quest Path 7926: 9.0 Bastion - Temple of Wisdom - Teleport Pads - Temple Base -> Grounds - GJC
+2552@@@Quest Path 7869: 9.0 Bastion - Hero's Rest - Zipline - North - Up - GJC
+2553@@@Quest Path 7949: 9.0 Ardenweald - Bastion Campaign - Queen's Chamber - Up - RRB
+2554@@@Quest Path 7950: 9.0 Ardenweald - Bastion Campaign - Queen's Chamber - Down - RRB
+2555@@@The Maw
+2556@@@Progenitor Console
+2557@@@[Hidden] The Maw - Outdoor - Desmotaeron Oribos Teleport Dest
+2558@@@The Spearhead, Maldraxxus
+2559@@@Hidden Camp, Maldraxxus
+2560@@@Keres' Rest, Maldraxxus
+2561@@@Renounced Bastille, Maldraxxus
+2562@@@Quest Path 7870: 9.0 Bastion - Hero's Rest - Zipline - South - Up - GJC
+2563@@@Quest Path 7876: 9.0 Bastion - Hero's Rest - Zipline - South - Down - GJC
+2564@@@Theater of Pain, Maldraxxus
+2565@@@Starlit Overlook, Ardenweald
+2566@@@Quest Path 7875: 9.0 Bastion - Hero's Rest - Zipline - West - Down - GJC
+2567@@@Quest Path 7874: 9.0 Bastion - Hero's Rest - Zipline - West - Up - GJC
+2568@@@Quest Path 7877: 9.0 Bastion - Hero's Rest - Zipline - North - Down - GJC
+2569@@@Plague Watch, Maldraxxus
+2572@@@Quest Path 8039: 9.0 Bastion - Campaign - Ch 05 - Revendreth - Tower to Ember Ward (JLW)
+2573@@@Quest Path 8047: 9.0 Ardenweald - Covenant Hall - Queen's Audience Chamber Taxi Up - KRB
+2574@@@Quest Path 8048: 9.0 Ardenweald - Covenant Hall - Queen's Audience Chamber Taxi Down - KRB
+2575@@@Quest Path 8054: 9.0 Ardenweald - COV - Sisters - Q05 - Queen's Audience Chamber Taxi Up - KRB
+2576@@@Quest Path 8055: 9.0 Ardenweald - COV - Sisters - Q05 - Queen's Audience Chamber Taxi Down - KRB
+2580@@@Quest Path 8079: 9.0 Bastion Campaign - Ch 09 - Loyalty - Stage 6 - Ground -> Temple of Loyalty - GJC
+2584@@@Tirna Eas, Ardenweald
+2585@@@Tirna Vaal, Ardenweald
+2586@@@Tirna Glayn, Ardenweald
+2587@@@Heart of the Forest, Ardenweald
+2588@@@Root-Home, Ardenweald
+2589@@@Tirna Kaithe, Ardenweald
+2590@@@Refugee Camp, Ardenweald
+2591@@@Crucible of Souls
+2594@@@9.0 Maw - Oribos - Teleport In
+2595@@@Quest Path 8159: 9.0 Bastion - Level Up - Memory Extraction - Zipline - Up (JAK)
+2596@@@Quest Path 8160: 9.0 Bastion - Level Up - Memory Extraction - Zipline - Down (JAK)
+2602@@@Quest Path 8194: 9.0 Bastion - Level Up - Temple of Purity - Zipline - Up (JAK)
+2603@@@Quest Path 8195: 9.0 Bastion - Level Up - Temple of Purity - Zipline - Down (JAK)
 9.0.1.34137
-2395,Oribos
-2604,Quest Path 8242: [UNUSED]9.x Quest - The Battle for Lordaeron (H) - Orgrimmar, Valley of Strength --> Orgrimmar, Gates of Orgrimmar (ELM)
+2395@@@Oribos
+2604@@@Quest Path 8242: [UNUSED]9.x Quest - The Battle for Lordaeron (H) - Orgrimmar, Valley of Strength --> Orgrimmar, Gates of Orgrimmar (ELM)
 9.0.1.34490
-2530,Dreamsong Fenn, Ardenweald
-2584,Glitterfall Basin, Ardenweald
-2586,Hibernal Hollow, Ardenweald
-2589,Claw's Edge, Ardenweald
+2530@@@Dreamsong Fenn, Ardenweald
+2584@@@Glitterfall Basin, Ardenweald
+2586@@@Hibernal Hollow, Ardenweald
+2589@@@Claw's Edge, Ardenweald
 9.0.1.34615
-2554,Quest Path 7950: 9.0 Ardenweald - Bastion Campaign - Queen's Chamber - Down - RRB/ELM
-2605,Quest Path 8278: Theater of Pain Taxi Path
-2625,Elysian Hold, Bastion
-2626,Hero's Rest, Bastion
-2627,[Hidden] 9.0 Bastion Ground Points Hub (Ground TP out to here, TP to Sanctum from here)
-2628,[Hidden] 9.0 Bastion Ground Hub (Sanctum TP out to here, TP to ground from here)
-2630,Aspirant's Rest, Bastion
-2631,Xandria's Vigil, Bastion
-2632,Sagehaven, Bastion
-2633,Temple of Purity, Bastion
-2634,Seat of Eternal Hymns, Bastion
-2635,Temple of Humility, Bastion
-2636,Exaltation Rise, Bastion
-2637,Summoned Steward, Bastion
+2554@@@Quest Path 7950: 9.0 Ardenweald - Bastion Campaign - Queen's Chamber - Down - RRB/ELM
+2605@@@Quest Path 8278: Theater of Pain Taxi Path
+2625@@@Elysian Hold, Bastion
+2626@@@Hero's Rest, Bastion
+2627@@@[Hidden] 9.0 Bastion Ground Points Hub (Ground TP out to here, TP to Sanctum from here)
+2628@@@[Hidden] 9.0 Bastion Ground Hub (Sanctum TP out to here, TP to ground from here)
+2630@@@Aspirant's Rest, Bastion
+2631@@@Xandria's Vigil, Bastion
+2632@@@Sagehaven, Bastion
+2633@@@Temple of Purity, Bastion
+2634@@@Seat of Eternal Hymns, Bastion
+2635@@@Temple of Humility, Bastion
+2636@@@Exaltation Rise, Bastion
+2637@@@Summoned Steward, Bastion
 9.0.1.34714
-2639,Quest Path 8321: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - A to D - EJC
-2640,Quest Path 8322: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - B to C - EJC
-2641,Quest Path 8323: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - C to D - EJC
-2642,Quest Path 8324: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - D to E - EJC
-2643,Theater of Pain North, Maldraxxus
-2644,Quest Path 8326: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - F to A - EJC
-2645,Quest Path 8327: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - C to F - EJC
-2646,Quest Path 8328: 9.0 Bastion - Max Level - Temple of Courage - Zipline -  Up (JAK)
-2647,Quest Path 8329: 9.0 Bastion - Max Level - Temple of Courage - Zipline -  Down (JAK)
-2648,Quest Path 8330: 9.0 Bastion - Max Level - Temple of Wisdom - Zipline -  Up (JAK)
-2649,Quest Path 8331: 9.0 Bastion - Max Level - Temple of Wisdom - Zipline - Down (JAK)
-2650,Quest Path 8332: 9.0 Bastion - Max Level - Temple of Humility - Zipline -  Up (JAK)
-2651,Quest Path 8333: 9.0 Bastion - Max Level - Temple of Humility - Zipline -  Down (JAK)
-2652,Quest Path 8334: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - E to B - EJC
-2653,Quest Path 8336: 9.0 Bastion - Max Level - Temple of Loyalty - Zipline - Lower - Up (JAK)
-2654,Quest Path 8337: 9.0 Bastion - Max Level - Temple of Loyalty - Zipline - Lower - Down (JAK)
-2655,Quest Path 8338: 9.0 Bastion - Max Level - Temple of Loyalty - Zipline - Upper - Up (JAK)
-2656,Quest Path 8339: 9.0 Bastion - Max Level - Temple of Loyalty - Zipline - Upper - Down (JAK)
-2657,Quest Path 8335: 9.0 Maw - Torghast - Floor 90 - Up
-2658,Quest Path 8340: 9.0 Maw - Torghast - Floor 90 - Down
+2639@@@Quest Path 8321: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - A to D - EJC
+2640@@@Quest Path 8322: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - B to C - EJC
+2641@@@Quest Path 8323: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - C to D - EJC
+2642@@@Quest Path 8324: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - D to E - EJC
+2643@@@Theater of Pain North, Maldraxxus
+2644@@@Quest Path 8326: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - F to A - EJC
+2645@@@Quest Path 8327: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - C to F - EJC
+2646@@@Quest Path 8328: 9.0 Bastion - Max Level - Temple of Courage - Zipline -  Up (JAK)
+2647@@@Quest Path 8329: 9.0 Bastion - Max Level - Temple of Courage - Zipline -  Down (JAK)
+2648@@@Quest Path 8330: 9.0 Bastion - Max Level - Temple of Wisdom - Zipline -  Up (JAK)
+2649@@@Quest Path 8331: 9.0 Bastion - Max Level - Temple of Wisdom - Zipline - Down (JAK)
+2650@@@Quest Path 8332: 9.0 Bastion - Max Level - Temple of Humility - Zipline -  Up (JAK)
+2651@@@Quest Path 8333: 9.0 Bastion - Max Level - Temple of Humility - Zipline -  Down (JAK)
+2652@@@Quest Path 8334: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - E to B - EJC
+2653@@@Quest Path 8336: 9.0 Bastion - Max Level - Temple of Loyalty - Zipline - Lower - Up (JAK)
+2654@@@Quest Path 8337: 9.0 Bastion - Max Level - Temple of Loyalty - Zipline - Lower - Down (JAK)
+2655@@@Quest Path 8338: 9.0 Bastion - Max Level - Temple of Loyalty - Zipline - Upper - Up (JAK)
+2656@@@Quest Path 8339: 9.0 Bastion - Max Level - Temple of Loyalty - Zipline - Upper - Down (JAK)
+2657@@@Quest Path 8335: 9.0 Maw - Torghast - Floor 90 - Up
+2658@@@Quest Path 8340: 9.0 Maw - Torghast - Floor 90 - Down
 9.0.1.34821
-2518,Wanecrypt Hill, Revendreth
-2557,[Hidden] The Maw - Outdoor - Cocyrus Oribos Teleport Dest
-2659,Quest Path 8347: 9.0 Bastion - Treasure Max Level - Courage - Taxi - Return - EJC
-2660,Quest Path 8348: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - Return - EJC
+2518@@@Wanecrypt Hill, Revendreth
+2557@@@[Hidden] The Maw - Outdoor - Cocyrus Oribos Teleport Dest
+2659@@@Quest Path 8347: 9.0 Bastion - Treasure Max Level - Courage - Taxi - Return - EJC
+2660@@@Quest Path 8348: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - Return - EJC
 9.0.1.34902
-2661,Quest Path 8359: 9.0 Ardenweald - COV - Drust - Ch2 - Flight out of Darkreach - LWB
+2661@@@Quest Path 8359: 9.0 Ardenweald - COV - Drust - Ch2 - Flight out of Darkreach - LWB
 9.0.1.34972
-2662,Quest Path 8363: 9.0 Maldraxxus - House of Plagues - Pipeline Up - EJC
+2662@@@Quest Path 8363: 9.0 Maldraxxus - House of Plagues - Pipeline Up - EJC
 9.0.1.35167
-2559,Spider's Watch, Maldraxxus
-2663,Quest Path 8372: 9.0 Bastion - Path of Ascension - Capture - Devourer - Anima Gateway Taxi - GJC
-2664,Quest Path 8374: 9.0 Maw - Outdoor - Ve'nari -> Planes of Torment
+2559@@@Spider's Watch, Maldraxxus
+2663@@@Quest Path 8372: 9.0 Bastion - Path of Ascension - Capture - Devourer - Anima Gateway Taxi - GJC
+2664@@@Quest Path 8374: 9.0 Maw - Outdoor - Ve'nari -> Planes of Torment
 9.0.1.35360
-2665,Quest Path 8387: 9.0 Bastion - Teleport Pads -  Eternal Forge Suburbs -> Miri's Chapel - SBV
-2666,Quest Path 8388: 9.0 Bastion - Teleport Pads -  Miri's Chapel ->  Eternal Forge Suburbs - SBV
+2665@@@Quest Path 8387: 9.0 Bastion - Teleport Pads -  Eternal Forge Suburbs -> Miri's Chapel - SBV
+2666@@@Quest Path 8388: 9.0 Bastion - Teleport Pads -  Miri's Chapel ->  Eternal Forge Suburbs - SBV
 9.0.1.35598
-2520,Sagehaven, Bastion
+2520@@@Sagehaven, Bastion
 9.0.1.35755
-2670,Quest Path 8421: 9.0 Maw - Outdoor - Mawsworn Rifts - Zovaal's -> Calcis
-2671,Quest Path 8422: 9.0 Maw - Outdoor - Mawsworn Rifts - Calcis -> Zovaal's
-2672,Quest Path 8423: 9.0 Maw - Outdoor - Mawsworn Rifts - Crucible -> Tremaculum
-2673,Quest Path 8424: 9.0 Maw - Outdoor - Mawsworn Rifts - Tremaculum -> Crucible
-2674,Quest Path 8375: 9.0 Maw - Outdoor - Ve'nari -> Beastwarrens
+2670@@@Quest Path 8421: 9.0 Maw - Outdoor - Mawsworn Rifts - Zovaal's -> Calcis
+2671@@@Quest Path 8422: 9.0 Maw - Outdoor - Mawsworn Rifts - Calcis -> Zovaal's
+2672@@@Quest Path 8423: 9.0 Maw - Outdoor - Mawsworn Rifts - Crucible -> Tremaculum
+2673@@@Quest Path 8424: 9.0 Maw - Outdoor - Mawsworn Rifts - Tremaculum -> Crucible
+2674@@@Quest Path 8375: 9.0 Maw - Outdoor - Ve'nari -> Beastwarrens
 9.0.1.35828
-2675,Quest Path 8425: 9.0 Bastion - Treasure - Out of Bounds Teleporter - 01 - SBV
-2676,Quest Path 8426: 9.0 Bastion - Treasure - Out of Bounds Teleporter - 02 - SBV
-2677,Quest Path 8427: 9.0 Bastion - Treasure - Out of Bounds Teleporter - 03 - SBV
-2678,Quest Path 8428: 9.0 Bastion - Treasure - Out of Bounds Teleporter - 04 - SBV
+2675@@@Quest Path 8425: 9.0 Bastion - Treasure - Out of Bounds Teleporter - 01 - SBV
+2676@@@Quest Path 8426: 9.0 Bastion - Treasure - Out of Bounds Teleporter - 02 - SBV
+2677@@@Quest Path 8427: 9.0 Bastion - Treasure - Out of Bounds Teleporter - 03 - SBV
+2678@@@Quest Path 8428: 9.0 Bastion - Treasure - Out of Bounds Teleporter - 04 - SBV
 9.0.2.35978
-2680,Eonian Archives, Bastion
+2680@@@Eonian Archives, Bastion
 9.0.2.36086
-2636,Eonian Archives, Bastion
+2636@@@Eonian Archives, Bastion
 9.0.2.36165
-2681,Quest Path 8460: 9.0 Bastion - Cloudwalker Coffer - Zipline - To Memorial Shrine (MAH)
+2681@@@Quest Path 8460: 9.0 Bastion - Cloudwalker Coffer - Zipline - To Memorial Shrine (MAH)
 9.0.2.36206
-2397,9.0, Zone, Bastion
+2397@@@9.0, Zone, Bastion
 9.0.2.36294
-2636,Terrace of the Collectors, Bastion
-2680,Terrace of the Collectors, Bastion
-2682,Elysian Beacon, Bastion
+2636@@@Terrace of the Collectors, Bastion
+2680@@@Terrace of the Collectors, Bastion
+2682@@@Elysian Beacon, Bastion
 9.0.2.37106
-2683,Quest Path 8472: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Amphitheater -> Covenant Hall - GJC
-2684,Quest Path 8473: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Sanctum -> Amphitheater - GJC
-2685,Quest Path 8474: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Fate's Precipice -> Sanctum - GJC
-2686,Quest Path 8475: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Sanctum -> Fate's Precipice - GJC
-2687,Quest Path 8476: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Humility Terrace -> Sanctum - GJC
-2688,Quest Path 8477: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Sanctum -> Humility Terrace - GJC
+2683@@@Quest Path 8472: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Amphitheater -> Covenant Hall - GJC
+2684@@@Quest Path 8473: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Sanctum -> Amphitheater - GJC
+2685@@@Quest Path 8474: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Fate's Precipice -> Sanctum - GJC
+2686@@@Quest Path 8475: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Sanctum -> Fate's Precipice - GJC
+2687@@@Quest Path 8476: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Humility Terrace -> Sanctum - GJC
+2688@@@Quest Path 8477: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Sanctum -> Humility Terrace - GJC
 9.0.5.37503
-2690,Quest Path 8500: 9.0.5 Maw - Hidden Object - Shadehound Mount - Perdition Upper to Zovaals - LJS
+2690@@@Quest Path 8500: 9.0.5 Maw - Hidden Object - Shadehound Mount - Perdition Upper to Zovaals - LJS
 9.1.0.38312
-2691,Quest Path 8507: 9.1 Campaign- Ch 06 - House of Rituals - Surface -> Exoramas - KRB
-2692,Quest Path 8508: 9.1 Campaign- Ch 06 - House of Rituals - Exoramas -> Surface - KRB
-2695,Quest Path 8530: 9.1 - Dungeon - Broker City - RP Throughline - Elevator Taxi Path
-2698,Keeper's Respite
-2699,Tazavesh Outdoor
-2700,Ve'nari's Refuge
-2703,9.1, Tazavesh (Broker Dungeon)
+2691@@@Quest Path 8507: 9.1 Campaign- Ch 06 - House of Rituals - Surface -> Exoramas - KRB
+2692@@@Quest Path 8508: 9.1 Campaign- Ch 06 - House of Rituals - Exoramas -> Surface - KRB
+2695@@@Quest Path 8530: 9.1 - Dungeon - Broker City - RP Throughline - Elevator Taxi Path
+2698@@@Keeper's Respite
+2699@@@Tazavesh Outdoor
+2700@@@Ve'nari's Refuge
+2703@@@9.1, Tazavesh (Broker Dungeon)
 9.1.0.38709
-2703,Tazavesh, the Veiled Market
+2703@@@Tazavesh, the Veiled Market
 9.1.5.39977
-2708,Quest Path 8614: 9.0 Maw - Outdoor - Ve'nari -> Perdition Hold
-2709,Quest Path 8615: 9.0 Maw - Outdoor - Ve'nari -> Desmotaeron
-2710,Quest Path 8616: 9.0 Maw - Outdoor - Mawsworn Rifts - Desmotaeron -> Perdition Hold
-2711,Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron
+2708@@@Quest Path 8614: 9.0 Maw - Outdoor - Ve'nari -> Perdition Hold
+2709@@@Quest Path 8615: 9.0 Maw - Outdoor - Ve'nari -> Desmotaeron
+2710@@@Quest Path 8616: 9.0 Maw - Outdoor - Mawsworn Rifts - Desmotaeron -> Perdition Hold
+2711@@@Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron
 9.1.5.40078
-1977,Vindicaar, Eredath
-1978,Conservatory of the Arcane, Eredath
-1981,Shadowguard Incursion, Eredath
-1982,Triumvirate's End, Eredath
-1991,Prophet's Reflection, Eredath
-2003,City Center, Eredath
+1977@@@Vindicaar, Eredath
+1978@@@Conservatory of the Arcane, Eredath
+1981@@@Shadowguard Incursion, Eredath
+1982@@@Triumvirate's End, Eredath
+1991@@@Prophet's Reflection, Eredath
+2003@@@City Center, Eredath
 9.2.0.41089
-2712,9.2 Raid - Progenitor - Flight Path Console - Hub
-2713,9.2 Raid - Progenitor - Flight Path Console - Terrestrial 01
-2714,9.2 Raid - Progenitor - Flight Path Console - Terrestrial 02
-2715,9.2 Raid - Progenitor - Flight Path Console - Emphemera 01
-2716,9.2 Raid - Progenitor - Flight Path Console - Emphemera 02
-2724,Haven, Zereth Mortis
-2725,Faith's Repose, Zereth Mortis
-2728,Pilgrim's Grace, Zereth Mortis
-2729,Gravid Repose Locus
-2730,Interior Locus
-2731,9.2 Raid - Progenitor - Flight Path Console - Anduin 01
-2732,[HIDDEN] - 9.2 Resonant Peaks - Teleport Network - Hidden Hub (Connects all Nodes to each other without unique paths) (MAH/JDA)
-2733,Zovaal's Grasp, Zereth Mortis
-2734,Antecedent Isle, Zereth Mortis
-2736,Sepulcher Overlook, Zereth Mortis
-2737,Sepulcher Of The First Ones, Zereth Mortis
-2738,Ultimus Locus
-2742,Quintus Locus
-2743,Quartus Locus
-2744,Tertius Locus
-2745,Secundus Locus
-2746,Primus Locus
-2747,Camber Alcove - Treasure 1  (MAH)
-2748,Repertory Alcove - Treasure 2  (MAH)
-2749,Rondure Alcove - Treasure 3  (MAH)
-2750,Dormant Alcove - Treasure 4 (MAH)
-2751,Fulgor Alcove - Treasure 5  (MAH)
-2754,Treasure Access  (MAH)
+2712@@@9.2 Raid - Progenitor - Flight Path Console - Hub
+2713@@@9.2 Raid - Progenitor - Flight Path Console - Terrestrial 01
+2714@@@9.2 Raid - Progenitor - Flight Path Console - Terrestrial 02
+2715@@@9.2 Raid - Progenitor - Flight Path Console - Emphemera 01
+2716@@@9.2 Raid - Progenitor - Flight Path Console - Emphemera 02
+2724@@@Haven, Zereth Mortis
+2725@@@Faith's Repose, Zereth Mortis
+2728@@@Pilgrim's Grace, Zereth Mortis
+2729@@@Gravid Repose Locus
+2730@@@Interior Locus
+2731@@@9.2 Raid - Progenitor - Flight Path Console - Anduin 01
+2732@@@[HIDDEN] - 9.2 Resonant Peaks - Teleport Network - Hidden Hub (Connects all Nodes to each other without unique paths) (MAH/JDA)
+2733@@@Zovaal's Grasp, Zereth Mortis
+2734@@@Antecedent Isle, Zereth Mortis
+2736@@@Sepulcher Overlook, Zereth Mortis
+2737@@@Sepulcher Of The First Ones, Zereth Mortis
+2738@@@Ultimus Locus
+2742@@@Quintus Locus
+2743@@@Quartus Locus
+2744@@@Tertius Locus
+2745@@@Secundus Locus
+2746@@@Primus Locus
+2747@@@Camber Alcove - Treasure 1  (MAH)
+2748@@@Repertory Alcove - Treasure 2  (MAH)
+2749@@@Rondure Alcove - Treasure 3  (MAH)
+2750@@@Dormant Alcove - Treasure 4 (MAH)
+2751@@@Fulgor Alcove - Treasure 5  (MAH)
+2754@@@Treasure Access  (MAH)
 9.2.0.41360
-2712,Immortal Hearth
-2713,Genesis Cradle Alpha
-2714,Genesis Cradle Beta
-2715,Ephemeral Plains Alpha
-2716,Ephemeral Plains Omega
-2731,Domination's Grasp
-2747,Camber Alcove
-2748,Repertory Alcove
-2749,Rondure Alcove
-2750,Dormant Alcove
-2751,Fulgor Alcove
-2754,Treasure Access
+2712@@@Immortal Hearth
+2713@@@Genesis Cradle Alpha
+2714@@@Genesis Cradle Beta
+2715@@@Ephemeral Plains Alpha
+2716@@@Ephemeral Plains Omega
+2731@@@Domination's Grasp
+2747@@@Camber Alcove
+2748@@@Repertory Alcove
+2749@@@Rondure Alcove
+2750@@@Dormant Alcove
+2751@@@Fulgor Alcove
+2754@@@Treasure Access
 9.2.0.41462
-2757,Genesis Cradle Omega
+2757@@@Genesis Cradle Omega
 9.2.0.41962
-2754,Arcae Locus
+2754@@@Arcae Locus
 10.0.0.44649
-2693,Seamless Proto, Revendreth
-2694,Seamless Proto, Boralus
-2717,Quest Path 8628: 10.0 - Pre-Prod - Krav'rel to Azure Archives - (STM)
-2718,Quest Path 8629: 10.0 - Pre-Prod: Azure Archives to Kirin Tor Hub - (STM)
-2719,Quest Path 8630: 10.0 - Pre-Prod - Bombing Run - (STM)
-2720,Quest Path 8631: 10.0 - Pre-Prod - Kalthraz Fortress to Azure Archives - (STM)
-2722,Quest Path 8635: 10.0 Pre-Prod - Grasslands - Dragonsmeet to Emerald Gardens (JLW)
-2739,Rebuff Lookout, The Waking Shores
-2740,10.0 Construction - Teleport Network - Hidden Hub (Connects all Nodes to each other without unique paths) (JDA)
-2741,Skytop Lookout (QD), The Waking Shores
-2752,Ruby Lifeshrine, The Waking Shores
-2770,Brackenhide Outskirts, The Azure Span
-2771,Emerald Gardens, Ohn'ahran Plains
-2773,Azure Archives, Azure Span
-2774,Camp Antonidas, Azure Span
-2775,Iskaara, Azure Span
-2776,Life Pools - top to bottom, Waking Shores - Begin
-2777,Life Pools - top to bottom, Waking Shores - End
-2778,Dragonscale Basecamp (QD), The Waking Shores
-2779,Wingrest Embassy (QD), The Waking Shores
-2780,10.0 Explorers - Travel Network - Hub
-2782,Quest Path 8851: 10.0 Plains - Emerald Hub - Taxi Down to Portal Grove (RMV)
-2783,Quest Path 8852: 10.0 Plains - Emerald Hub - Taxi Up to Shady Snctuary (RMV)
-2784,Camp Nowhere, Azure Span
-2786,Ronin's Shield, Azure Span
-2787,Cobalt Assembly, Azure Span
-2788,Theron's Watch, Azure Span
-2789,Three-Falls Lookout, Azure Span
-2790,Timberstep Outpost, Ohn'ahran Plains
-2792,Maruukai, Ohn'ahran Plains
-2793,Forkriver Crossing, Ohn'ahran Plains
-2794,Teerakai, Ohn'ahran Plains
-2795,Broadhoof Outpost, Ohn'ahran Plains
-2796,Shady Sanctuary, Ohn'ahran Plains
-2797,Emberwatch, Ohn'ahran Plains
-2798,Pinewood Post, Ohn'ahran Plains
-2799,Rusza'thar Reach, Ohn'ahran Plains
-2800,Apex Canopy, The Waking Shores
-2801,Apex Observatory, The Waking Shores
-2802,Obsidian Throne, The Waking Shores
-2803,Uktulut Pier, The Waking Shores
-2804,Uktulut Backwater, The Waking Shores
-2805,Wingrest Embassy, The Waking Shores
-2806,Life Vault Ruins, The Waking Shores
-2807,Ruby Life Pools, The Waking Shores
-2808,Obsidian Bulwark, The Waking Shores
-2809,Dragonscale Basecamp, The Waking Shores
-2810,Valdrakken, Thaldraszus
-2811,Gelikyr Post, Thaldraszus
-2812,Temporal Conflux, Thaldraszus
-2813,Algeth'era, Thaldraszus
-2814,Veiled Ossuary, Thaldraszus
-2815,Garden Shrine, Thaldraszus
-2816,Shifting Sands, Thaldraszus
-2817,Skytop Observatory, The Waking Shores
-2818,Vault of the Incarnates, Thaldraszus
+2693@@@Seamless Proto, Revendreth
+2694@@@Seamless Proto, Boralus
+2717@@@Quest Path 8628: 10.0 - Pre-Prod - Krav'rel to Azure Archives - (STM)
+2718@@@Quest Path 8629: 10.0 - Pre-Prod: Azure Archives to Kirin Tor Hub - (STM)
+2719@@@Quest Path 8630: 10.0 - Pre-Prod - Bombing Run - (STM)
+2720@@@Quest Path 8631: 10.0 - Pre-Prod - Kalthraz Fortress to Azure Archives - (STM)
+2722@@@Quest Path 8635: 10.0 Pre-Prod - Grasslands - Dragonsmeet to Emerald Gardens (JLW)
+2739@@@Rebuff Lookout, The Waking Shores
+2740@@@10.0 Construction - Teleport Network - Hidden Hub (Connects all Nodes to each other without unique paths) (JDA)
+2741@@@Skytop Lookout (QD), The Waking Shores
+2752@@@Ruby Lifeshrine, The Waking Shores
+2770@@@Brackenhide Outskirts, The Azure Span
+2771@@@Emerald Gardens, Ohn'ahran Plains
+2773@@@Azure Archives, Azure Span
+2774@@@Camp Antonidas, Azure Span
+2775@@@Iskaara, Azure Span
+2776@@@Life Pools - top to bottom, Waking Shores - Begin
+2777@@@Life Pools - top to bottom, Waking Shores - End
+2778@@@Dragonscale Basecamp (QD), The Waking Shores
+2779@@@Wingrest Embassy (QD), The Waking Shores
+2780@@@10.0 Explorers - Travel Network - Hub
+2782@@@Quest Path 8851: 10.0 Plains - Emerald Hub - Taxi Down to Portal Grove (RMV)
+2783@@@Quest Path 8852: 10.0 Plains - Emerald Hub - Taxi Up to Shady Snctuary (RMV)
+2784@@@Camp Nowhere, Azure Span
+2786@@@Ronin's Shield, Azure Span
+2787@@@Cobalt Assembly, Azure Span
+2788@@@Theron's Watch, Azure Span
+2789@@@Three-Falls Lookout, Azure Span
+2790@@@Timberstep Outpost, Ohn'ahran Plains
+2792@@@Maruukai, Ohn'ahran Plains
+2793@@@Forkriver Crossing, Ohn'ahran Plains
+2794@@@Teerakai, Ohn'ahran Plains
+2795@@@Broadhoof Outpost, Ohn'ahran Plains
+2796@@@Shady Sanctuary, Ohn'ahran Plains
+2797@@@Emberwatch, Ohn'ahran Plains
+2798@@@Pinewood Post, Ohn'ahran Plains
+2799@@@Rusza'thar Reach, Ohn'ahran Plains
+2800@@@Apex Canopy, The Waking Shores
+2801@@@Apex Observatory, The Waking Shores
+2802@@@Obsidian Throne, The Waking Shores
+2803@@@Uktulut Pier, The Waking Shores
+2804@@@Uktulut Backwater, The Waking Shores
+2805@@@Wingrest Embassy, The Waking Shores
+2806@@@Life Vault Ruins, The Waking Shores
+2807@@@Ruby Life Pools, The Waking Shores
+2808@@@Obsidian Bulwark, The Waking Shores
+2809@@@Dragonscale Basecamp, The Waking Shores
+2810@@@Valdrakken, Thaldraszus
+2811@@@Gelikyr Post, Thaldraszus
+2812@@@Temporal Conflux, Thaldraszus
+2813@@@Algeth'era, Thaldraszus
+2814@@@Veiled Ossuary, Thaldraszus
+2815@@@Garden Shrine, Thaldraszus
+2816@@@Shifting Sands, Thaldraszus
+2817@@@Skytop Observatory, The Waking Shores
+2818@@@Vault of the Incarnates, Thaldraszus
 10.0.0.44707
-2820,Quest Path 9123: 10.0 Plains - Merithra's Watch - Taxi Down to Shady Sanctuary (RMV)
-2821,Quest Path 9124: 10.0 Plains - Emerald Hub - Taxi Up to Merithra's Watch (RMV)
-2822,Quest Path 9125: 10.0 Plains - Emerald Hub - Taxi to Lunedane (RMV)
-2823,Quest Path 9126: 10.0 Plains - Lunedane - Taxi to Shady Sanctuary (RMV)
+2820@@@Quest Path 9123: 10.0 Plains - Merithra's Watch - Taxi Down to Shady Sanctuary (RMV)
+2821@@@Quest Path 9124: 10.0 Plains - Emerald Hub - Taxi Up to Merithra's Watch (RMV)
+2822@@@Quest Path 9125: 10.0 Plains - Emerald Hub - Taxi to Lunedane (RMV)
+2823@@@Quest Path 9126: 10.0 Plains - Lunedane - Taxi to Shady Sanctuary (RMV)
 10.0.0.44795
-2824,Quest Path 9147: 10.0 Plains - Emerald Hub - Taxi to Lunedane - PERSONAL (RMV)
-2825,Ohn'iri Springs, Ohn'ahran Plains
+2824@@@Quest Path 9147: 10.0 Plains - Emerald Hub - Taxi to Lunedane - PERSONAL (RMV)
+2825@@@Ohn'iri Springs, Ohn'ahran Plains
 10.0.0.44895
-2832,Cobalt Assembly, The Azure Span
+2832@@@Cobalt Assembly, The Azure Span
 10.0.0.44999
-103,Nagrand - PvP - Attack Run Start 1 
-509,Quest Path 2063: Brian's 4.0 Test Path 
-951,Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise 
-963,Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise 
-1495,Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice 
-2392,Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path 
-2711,Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron 
-2786,Rhonin's Shield, Azure Span
-2834,Eon's Fringe, Thaldraszus
-2835,[Hidden] 10.0 Travel Network - Destination Input
-2836,Algeth'era, Thaldraszus
-2837,Vakthros, Azure Span
-2838,Cobalt Assembly, Azure Span
-2839,Rusza'thar Reach, Ohn'ahran Plains
-2840,Emerald Gardens, Ohn'ahran Plains
-2841,Skytop Observatory, The Waking Shores
-2842,Dragonscale Basecamp, The Waking Shores
-2843,[Hidden] 10.0 Travel Network - Destination Output
+103@@@Nagrand - PvP - Attack Run Start 1
+509@@@Quest Path 2063: Brian's 4.0 Test Path
+951@@@Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise
+963@@@Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise
+1495@@@Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice
+2392@@@Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path
+2711@@@Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron
+2786@@@Rhonin's Shield, Azure Span
+2834@@@Eon's Fringe, Thaldraszus
+2835@@@[Hidden] 10.0 Travel Network - Destination Input
+2836@@@Algeth'era, Thaldraszus
+2837@@@Vakthros, Azure Span
+2838@@@Cobalt Assembly, Azure Span
+2839@@@Rusza'thar Reach, Ohn'ahran Plains
+2840@@@Emerald Gardens, Ohn'ahran Plains
+2841@@@Skytop Observatory, The Waking Shores
+2842@@@Dragonscale Basecamp, The Waking Shores
+2843@@@[Hidden] 10.0 Travel Network - Destination Output
 10.0.0.45335
-2840,Shady Sanctuary, Ohn'ahran Plains
+2840@@@Shady Sanctuary, Ohn'ahran Plains
 10.0.0.45454
-2842,Rubyscale Outpost, The Waking Shores
+2842@@@Rubyscale Outpost, The Waking Shores

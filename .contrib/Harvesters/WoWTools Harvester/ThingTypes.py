@@ -3,6 +3,7 @@ from abc import ABC, abstractmethod
 from pathlib import Path
 
 DATAS_FOLDER = Path("..", "..", "Parser", "DATAS")
+DELIMITER = "~"
 
 
 class Thing(ABC):
@@ -49,7 +50,7 @@ class Achievements(Thing):
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Achievements have names in the same db
         title = "Title_lang" if "Title_lang" in row else "Title_lang[0]"
-        return f"{row['ID']},{row[title]}"
+        return f"{row['ID']}{DELIMITER}{row[title]}"
 
 
 class Factions(Thing):
@@ -69,7 +70,7 @@ class Factions(Thing):
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Factions have names in the same db
         name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
-        return f"{row['ID']},{row[name]}"
+        return f"{row['ID']}{DELIMITER}{row[name]}"
 
 
 class FlightPaths(Thing):
@@ -92,9 +93,9 @@ class FlightPaths(Thing):
         # Flight Paths have names in the same db
         name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
         if build == "8.0.1.26321":  # Cursed build
-            return f"{row[name]},--"
+            return f"{row[name]}{DELIMITER}--"
         else:
-            return f"{row['ID']},{row[name]}"
+            return f"{row['ID']}{DELIMITER}{row[name]}"
 
     @staticmethod
     def extract_existing_info(line: str) -> str:
@@ -122,7 +123,7 @@ class Followers(Thing):
         horde, alliance = "HordeCreatureID", "AllianceCreatureID"
         if build == "6.0.1.18179":  # Cursed build
             horde, alliance = "Field_6_0_1_18179_001", "Field_6_0_1_18179_002"
-        return f"{row['ID']},{row[horde]},{row[alliance]}"
+        return f"{row['ID']}{DELIMITER}{row[horde]}{DELIMITER}{row[alliance]}"
 
 
 class Illusions(Thing):
@@ -171,7 +172,7 @@ class Mounts(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Mounts have names in the same db
-        return f"{row['SourceSpellID']},{row['Name_lang']}"
+        return f"{row['SourceSpellID']}{DELIMITER}{row['Name_lang']}"
 
     @staticmethod
     def extract_existing_info(line: str) -> str | None:
@@ -199,7 +200,7 @@ class Pets(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Pet Names need creature db
-        return f"{row['ID']},{row['CreatureID']}"
+        return f"{row['ID']}{DELIMITER}{row['CreatureID']}"
 
     @staticmethod
     def extract_existing_info(line: str) -> str | None:
@@ -244,7 +245,7 @@ class Recipes(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Recipe names are in the SpellName db and Profession names are in SkillLine db
-        return f"{row['Spell']},{row['SkillLine']}"
+        return f"{row['Spell']}{DELIMITER}{row['SkillLine']}"
 
 
 class Titles(Thing):
@@ -264,7 +265,7 @@ class Titles(Thing):
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Titles have names in the same db
         name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
-        return f"{row['Mask_ID']},{row[name]}"
+        return f"{row['Mask_ID']}{DELIMITER}{row[name]}"
 
 
 class Toys(Thing):
@@ -311,7 +312,7 @@ class Transmog(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Item names are in Item Sparse db.
-        return f"{row['ID']},{row['ItemID']}"
+        return f"{row['ID']}{DELIMITER}{row['ItemID']}"
 
 
 class Creatures(Thing):
@@ -324,7 +325,7 @@ class Creatures(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Helps Followers and Pets to get names
-        return f"{row['ID']},{row['Name_lang']}"
+        return f"{row['ID']}{DELIMITER}{row['Name_lang']}"
 
 
 class SpellItems(Thing):
@@ -338,7 +339,7 @@ class SpellItems(Thing):
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Helps Illusion names
         name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
-        return f"{row['ID']},{row[name]}"
+        return f"{row['ID']}{DELIMITER}{row[name]}"
 
 
 class SpellNames(Thing):
@@ -351,7 +352,7 @@ class SpellNames(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Helps Recipes
-        return f"{row['ID']},{row['Name_lang']}"
+        return f"{row['ID']}{DELIMITER}{row['Name_lang']}"
 
 
 class SkillLines(Thing):
@@ -367,7 +368,7 @@ class SkillLines(Thing):
         name = (
             "DisplayName_lang" if "DisplayName_lang" in row else "DisplayName_lang[0]"
         )
-        return f"{row['ID']},{row[name]}"
+        return f"{row['ID']}{DELIMITER}{row[name]}"
 
 
 class Items(Thing):
@@ -380,4 +381,4 @@ class Items(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Helps Toys and Transmog
-        return f"{row['ID']},{row['Display_lang']}"
+        return f"{row['ID']}{DELIMITER}{row['Display_lang']}"
