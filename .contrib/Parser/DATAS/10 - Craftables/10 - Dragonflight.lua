@@ -872,114 +872,114 @@ root("HiddenQuestTriggers", {
 		}),
 		prof(ENGINEERING, {
 			-- Recrafting --
-			q(),	-- Recraft Equipment
+			-- q(),	-- Recraft Equipment
 			-- Parts --
 			q(71482),	-- Arclight Capacitor
-			q(),	-- Assorted Safety Fuses
+			-- q(),	-- Assorted Safety Fuses
 			q(71480),	-- Everburning Blasting Powder
 			q(71481),	-- Greased-Up Gears
 			q(71478),	-- Handful of Tyrivite Bolts
-			q(),	-- Reinforced Machine Chassis
-			q(),	-- Rummage Through Scrap
+			-- q(),	-- Reinforced Machine Chassis
+			-- q(),	-- Rummage Through Scrap
 			q(71479),	-- Shock-Spring Coil
 			-- Finishing Reagents
 			q(71468),	-- Haphazardly Tethered Wires
-			q(),	-- Illustrious Insight
-			q(),	-- Overcharged Overclocker
+			-- q(),	-- Illustrious Insight
+			-- q(),	-- Overcharged Overclocker
 			-- Optional Reagents
-			q(),	-- Calibrated Safety Switch
-			q(),	-- Critical Failure Prevention Unit
-			q(),	-- Magazine of Healing Darts
-			q(),	-- Spring-Loaded Capacitor Casing
+			-- q(),	-- Calibrated Safety Switch
+			-- q(),	-- Critical Failure Prevention Unit
+			-- q(),	-- Magazine of Healing Darts
+			-- q(),	-- Spring-Loaded Capacitor Casing
 			-- Tinker
-			q(),	-- Tinker: Alarm-O-Turret
-			q(),	-- Tinker: Arclight Vital Correctors
-			q(),	-- Tinker: Breath of Neltharion
-			q(),	-- Tinker: Grounded Circuitry
-			q(),	-- Tinker: Plane Displacer
-			q(),	-- Tinker: Polarity Amplifier
-			q(),	-- Tinker: Supercollide-O-Tron
+			-- q(),	-- Tinker: Alarm-O-Turret
+			-- q(),	-- Tinker: Arclight Vital Correctors
+			-- q(),	-- Tinker: Breath of Neltharion
+			-- q(),	-- Tinker: Grounded Circuitry
+			-- q(),	-- Tinker: Plane Displacer
+			-- q(),	-- Tinker: Polarity Amplifier
+			-- q(),	-- Tinker: Supercollide-O-Tron
 			-- Googles
-			q(),	-- Battle-Ready Binoculars
+			-- q(),	-- Battle-Ready Binoculars
 			q(71448),	-- Deadline Deadeyes
-			q(),	-- Lightweight Ocular Lenses
+			-- q(),	-- Lightweight Ocular Lenses
 			q(71447),	-- Milestone Magnifiers
-			q(),	-- Oscillating Wilderness Opticals
-			q(),	-- Peripheral Vision Projectors
+			-- q(),	-- Oscillating Wilderness Opticals
+			-- q(),	-- Peripheral Vision Projectors
 			q(71446),	-- Quality-Assured Optics
 			q(71449),	-- Sentry's Stabilized Specs
 			-- Armor
-			q(),	-- Complicated Cuffs
-			q(),	-- Difficult Wrist Protectors
-			q(),	-- Needlessy Complex Wristguards
-			q(),	-- Overengineered Sleeve Extenders
+			-- q(),	-- Complicated Cuffs
+			-- q(),	-- Difficult Wrist Protectors
+			-- q(),	-- Needlessy Complex Wristguards
+			-- q(),	-- Overengineered Sleeve Extenders
 			-- Weapons
 			q(71511),	-- P.E.W. x2
-			q(),	-- Sophisticated Problem Solver
+			-- q(),	-- Sophisticated Problem Solver
 			-- Cogwheels
-			q(),	-- Meticulously-Tuned Gear
-			q(),	-- One-Size-Fits-All
-			q(),	-- Rapidly Ticking Gear
-			q(),	-- Razor-Sharp Gear
+			-- q(),	-- Meticulously-Tuned Gear
+			-- q(),	-- One-Size-Fits-All
+			-- q(),	-- Rapidly Ticking Gear
+			-- q(),	-- Razor-Sharp Gear
 			-- Scopes & Ammo
-			q(),	-- Completely Safe Rockets
-			q(),	-- Endless Stack of Needles
+			-- q(),	-- Completely Safe Rockets
+			-- q(),	-- Endless Stack of Needles
 			q(71512),	-- Gyroscopic Kaleidoscope
-			q(),	-- High Intensity Thermal Scanner
-			q(),	-- Projectile Propulsion Pinion
+			-- q(),	-- High Intensity Thermal Scanner
+			-- q(),	-- Projectile Propulsion Pinion
 			-- Fireworks
-			q(),	-- Black Fireflight
-			q(),	-- Blue Fireflight
+			-- q(),	-- Black Fireflight
+			-- q(),	-- Blue Fireflight
 			q(71877),	-- Bronze Fireflight
-			q(),	-- Bundle of Fireworks
-			q(),	-- Green Fireflight
-			q(),	-- Red Fireflight
+			-- q(),	-- Bundle of Fireworks
+			-- q(),	-- Green Fireflight
+			-- q(),	-- Red Fireflight
 			-- Explosives
-			q(),	-- Creature Combustion Canister
-			q(),	-- EZ-Thro Creature Combustion Canister
-			q(),	-- EZ-Thro Gravitational Displacer
-			q(),	-- EZ-Thro Grease Grenade
-			q(),	-- EZ-Thro Primal Deconstruction Charge
-			q(),	-- Gravitational Displacer
-			q(),	-- Grease Grenade
-			q(),	-- I.W.I.N Button Mk10
-			q(),	-- Primal Deconstruction Charge
-			q(),	-- Sticky Warp Grenade
-			q(),	-- Suspiciously Silent Crate
-			q(),	-- Suspiciously Ticking Crate
+			-- q(),	-- Creature Combustion Canister
+			-- q(),	-- EZ-Thro Creature Combustion Canister
+			-- q(),	-- EZ-Thro Gravitational Displacer
+			-- q(),	-- EZ-Thro Grease Grenade
+			-- q(),	-- EZ-Thro Primal Deconstruction Charge
+			-- q(),	-- Gravitational Displacer
+			-- q(),	-- Grease Grenade
+			-- q(),	-- I.W.I.N Button Mk10
+			-- q(),	-- Primal Deconstruction Charge
+			-- q(),	-- Sticky Warp Grenade
+			-- q(),	-- Suspiciously Silent Crate
+			-- q(),	-- Suspiciously Ticking Crate
 			-- Devices
-			q(),	-- Cartomancy Cannon
-			q(),	-- Centralized Precipitation Emitter
-			q(),	-- Element-Infused Rocket Helmet
-			q(),	-- Environmental Emulator
-			q(),	-- Expedition Multi-Toolbox
-			q(),	-- Giggle Googles
-			q(),	-- H.E.L.P
+			-- q(),	-- Cartomancy Cannon
+			-- q(),	-- Centralized Precipitation Emitter
+			-- q(),	-- Element-Infused Rocket Helmet
+			-- q(),	-- Environmental Emulator
+			-- q(),	-- Expedition Multi-Toolbox
+			-- q(),	-- Giggle Googles
+			-- q(),	-- H.E.L.P
 			q(71891),	-- Neural Silencer Mk3
-			q(),	-- Portable Alchemist's Lab Bench
-			q(),	-- Portable Tinker's Workbench
-			q(),	-- S.A.V.I.O.R
-			q(),	-- Tinker Removal Kit
-			q(),	-- Wyrmhole Generator
-			q(),	-- Zapthrottle Soul Inhaler
+			-- q(),	-- Portable Alchemist's Lab Bench
+			-- q(),	-- Portable Tinker's Workbench
+			-- q(),	-- S.A.V.I.O.R
+			-- q(),	-- Tinker Removal Kit
+			-- q(),	-- Wyrmhole Generator
+			-- q(),	-- Zapthrottle Soul Inhaler
 			-- Profession Equipment
-			q(),	-- Bottomless Mireslush Ore Satchel
+			-- q(),	-- Bottomless Mireslush Ore Satchel
 			q(71495),	-- Bottomless Stonecrust Ore Satchel
 			q(71485),	-- Draconium Brainwave Amplifier
 			q(71493),	-- Draconium Delver's Helmet
-			q(),	-- Draconium Encased Samophlange
-			q(),	-- Draconium Fisherfriend
+			-- q(),	-- Draconium Encased Samophlange
+			-- q(),	-- Draconium Fisherfriend
 			q(71485),	-- Khaz'gorite Brainwave Amplifier
 			q(71493),	-- Khaz'gorite Delver's Helmet
-			q(),	-- Khaz'gorite Encased Samophlange
-			q(),	-- Khaz'gorite Fisherfriend
-			q(),	-- Lapidary's Draconium Clamps
-			q(),	-- Lapidary's Khaz'gorite Clamps
+			-- q(),	-- Khaz'gorite Encased Samophlange
+			-- q(),	-- Khaz'gorite Fisherfriend
+			-- q(),	-- Lapidary's Draconium Clamps
+			-- q(),	-- Lapidary's Khaz'gorite Clamps
 			q(71497),	-- Spring-Loaded Draconium Fabric Cutters
-			q(),	-- Spring-Loaded Khaz'gorite Fabric Cutters
+			-- q(),	-- Spring-Loaded Khaz'gorite Fabric Cutters
 			-- Robotics
-			q(),	-- D.U.C.K.O.Y
-			q(),	-- Quack-E
+			-- q(),	-- D.U.C.K.O.Y
+			-- q(),	-- Quack-E
 		}),
 		prof(MINING, {
 			q(72160),	-- Iridescent Ore Fragments
