@@ -468,11 +468,15 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 	}),
 	prof(LEATHERWORKING, {
 		filter(BAGS, {
-			i(38347),			-- Mammoth Mining Bag
-			i(38399),			-- Trapper's Traveling Pack
-			i(44446),			-- Pack of Endless Pockets
-			un(REMOVED_FROM_GAME, i(44447)),	-- Dragonscale Ammo Pouch
-			un(REMOVED_FROM_GAME, i(44448)),	-- Nerubian Reinforced Quiver
+			i(44447, {	-- Dragonscale Ammo Pouch
+				["timeline"] = { "removed 4.0.1" },
+			}),
+			i(38347),	-- Mammoth Mining Bag
+			i(38399),	-- Trapper's Traveling Pack
+			i(44446),	-- Pack of Endless Pockets
+			i(44448, {	-- Nerubian Reinforced Quiver
+				["timeline"] = { "removed 4.0.1" },
+			}),
 		}),
 		filter(CONSUMABLES, {
 			i(38371),	-- Jormungar Leg Armor
