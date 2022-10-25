@@ -923,10 +923,10 @@ for key,value in pairs({
 })
 do a[key] = value; end
 if GetLocale() == "zhTW" then
-	a[-1110] = "龍鱗遠征隊"												-- Dragonscale Expedition
-	a[-1120] = "莫魯克半人馬",											-- Maruuk Centaur
-	a[-1130] = "伊斯凱拉巨牙海民",										-- Iskaara Tuskarr
-	a[-1140] = "沃卓肯協調者",											-- Valdrakken Accord
+	a[-1110] = "龍鱗遠征隊";												-- Dragonscale Expedition
+	a[-1120] = "莫魯克半人馬";											-- Maruuk Centaur
+	a[-1130] = "伊斯凱拉巨牙海民";										-- Iskaara Tuskarr
+	a[-1140] = "沃卓肯協調者";											-- Valdrakken Accord
 end
 
 local a = L.HEADER_DESCRIPTIONS;
