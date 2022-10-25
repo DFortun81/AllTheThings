@@ -657,9 +657,6 @@ fp(2801),	-- Apex Observatory, The Waking Shores
 fp(2802),	-- Obsidian Throne, The Waking Shores
 fp(2803),	-- Uktulut Pier, The Waking Shores
 fp(2804),	-- Uktulut Backwater, The Waking Shores
-fp(2805),	-- Wingrest Embassy, The Waking Shores
-fp(2806),	-- Life Vault Ruins, The Waking Shores
-fp(2807),	-- Ruby Life Pools, The Waking Shores
 fp(2808),	-- Obsidian Bulwark, The Waking Shores
 fp(2809),	-- Dragonscale Basecamp, The Waking Shores
 fp(2810),	-- Valdrakken, Thaldraszus
@@ -669,7 +666,6 @@ fp(2813),	-- Algeth'era, Thaldraszus
 fp(2814),	-- Veiled Ossuary, Thaldraszus
 fp(2815),	-- Garden Shrine, Thaldraszus
 fp(2816),	-- Shifting Sands, Thaldraszus
-fp(2817),	-- Skytop Observatory, The Waking Shores
 fp(2818),	-- Vault of the Incarnates, Thaldraszus
 10.0.0.44707
 fp(2820),	-- Quest Path 9123: 10.0 Plains - Merithra's Watch - Taxi Down to Shady Sanctuary (RMV)

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, tier(LEGION_TIER, {
-	n(-857, {	-- Mythic+
+	n(MYTHIC_PLUS, {
 		n(ACHIEVEMENTS, {
 			ach(11224, {	-- Realm First! Legion Keystone Master
 				["u"] = REMOVED_FROM_GAME,

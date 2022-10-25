@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
+root("Zones", bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(ZANDALAR, {
 		n(ZONE_REWARDS, {
 			i(163857, {	-- Azerite Armor Cache

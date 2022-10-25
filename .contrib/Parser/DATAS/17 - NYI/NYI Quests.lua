@@ -6568,4 +6568,1487 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 	}),
+	tier(DF_TIER, {
+		n(QUESTS, {
+			-- 10.0.0.44649
+			q(63520),	-- Just As Good As the Real Ones
+			q(64159),	-- Repatriate Rare Supplies
+			q(64162),	-- Ritual Rival
+			q(64163),	-- Revenge Against Renegades
+			q(64259),	--
+			q(64523),	--
+			q(64524),	--
+			q(64525),	--
+			q(64537),	--
+			q(64538),	--
+			q(64539),	--
+			q(64540),	--
+			q(64558),	--
+			q(64559),	--
+			q(64580),	--
+			q(64764),	--
+			q(64768),	--
+			q(64855),	--
+			q(64856),	--
+			q(64859),	--
+			q(64971),	--
+			q(64981),	--
+			q(65041),	-- Memories of Scoroxia
+			q(65042),	-- Dragons!
+			q(65051),	-- Who We Were
+			q(65065),	-- The Tuskarr
+			q(65083),	--
+			q(65085),	-- Primalist Rage
+			q(65086),	-- Second Thoughts
+			q(65099),	-- Neltharion's Final Command
+			q(65106),	-- [TEMP] Intro Cinematic
+			q(65118),	--
+			q(65120),	--
+			q(65133),	--
+			q(65267),	-- Smash 'Em to Feathereens
+			q(65279),	-- By Royal Decree
+			q(65283),	-- Zip Line Treasure
+			q(65287),	--
+			q(65296),	--
+			q(65302),	-- Keys to the Kingdom
+			q(65304),	--
+			q(65306),	-- Rot Rancher
+			q(65313),	--
+			q(65365),	--
+			q(65369),	--
+			q(65371),	--
+			q(65372),	-- Hanging Marmoset Treasure
+			q(65373),	--
+			q(65374),	--
+			q(65421),	--
+			q(65422),	-- Treasure Hunting Ain't Easy
+			q(65428),	--
+			q(65438),	-- Awesome Quest Start
+			q(65442),	--
+			q(65446),	--
+			q(65451),	--
+			q(65452),	--
+			q(65453),	--
+			q(65454),	--
+			q(65458),	--
+			q(65459),	--
+			q(65475),	--
+			q(65486),	--
+			q(65490),	--
+			q(65502),	--
+			q(65533),	--
+			q(65568),	--
+			q(65569),	--
+			q(65570),	--
+			q(65594),	-- Making a Mountain Out of a Gnoll Hill
+			q(65595),	-- One Bad Apple
+			q(65596),	--
+			q(65599),	--
+			q(65608),	--
+			q(65639),	-- Tarasek
+			q(65642),	--
+			q(65646),	--
+			q(65648),	--
+			q(65654),	--
+			q(65671),	--
+			q(65672),	--
+			q(65673),	--
+			q(65675),	--
+			q(65676),	--
+			q(65677),	--
+			q(65678),	--
+			q(65687),	-- A Show of Force
+			q(65690),	-- Wings in Need
+			q(65691),	--
+			q(65692),	--
+			q(65696),	--
+			q(65710),	--
+			q(65711),	--
+			q(65712),	--
+			q(65714),	--
+			q(65716),	--
+			q(65718),	--
+			q(65719),	--
+			q(65720),	--
+			q(65721),	--
+			q(65722),	--
+			q(65723),	--
+			q(65734),	--
+			q(65736),	--
+			q(65737),	--
+			q(65738),	--
+			q(65740),	--
+			q(65750),	-- Eight-Legged Menace
+			q(65758),	-- Grungir the Explorer
+			q(65759),	--
+			q(65760),	--
+			q(65761),	--
+			q(65765),	--
+			q(65766),	--
+			q(65769),	-- Icy Webs
+			q(65770),	--
+			q(65777),	-- Mudcaked Necklace
+			q(65778),	--
+			q(65779),	--
+			q(65780),	--
+			q(65781),	--
+			q(65782),	--
+			q(65783),	--
+			q(65784),	-- The Otter Side
+			q(65786),	--
+			q(65787),	--
+			q(65789),	-- Where Rivers Sleep
+			q(65790),	--
+			q(65791),	--
+			q(65792),	-- Teeth for a Tooth
+			q(65793),	--
+			q(65794),	--
+			q(65795),	--
+			q(65796),	-- The Best Defense...
+			q(65797),	--
+			q(65799),	--
+			q(65800),	--
+			q(65801),	--
+			q(65802),	--
+			q(65803),	--
+			q(65804),	--
+			q(65805),	--
+			q(65806),	--
+			q(65807),	--
+			q(65808),	--
+			q(65809),	--
+			q(65832),	-- Dwarven Antifreeze
+			q(65833),	-- Primalist Tampering
+			q(65834),	-- Kill the Queen
+			q(65835),	--
+			q(65836),	--
+			q(65837),	--
+			q(65840),	--
+			q(65842),	--
+			q(65843),	--
+			q(65851),	--
+			q(65853),	--
+			q(65863),	--
+			q(65865),	-- They've Got Us Pinned Down!
+			q(65874),	-- A Rotten Revelation
+			q(65875),	--
+			q(65876),	-- Shiverweb Silk
+			q(65877),	--
+			q(65878),	--
+			q(65879),	--
+			q(65880),	--
+			q(65881),	--
+			q(65882),	--
+			q(65883),	--
+			q(65884),	--
+			q(65885),	--
+			q(65886),	-- To Rhonin's Shield
+			q(65887),	-- To the Mountain
+			q(65889),	--
+			q(65890),	-- The Nelthazan Ruins
+			q(65891),	-- Tools of the Tirade
+			q(65892),	-- Asunder the Sundered
+			q(65893),	-- The Relic Inquiry
+			q(65894),	-- [DNT] - Removed - Eggs Benediction
+			q(65895),	--
+			q(65896),	-- [PH] - Let the Healing Begin
+			q(65897),	-- [DNT] - Removed - Focus Locus
+			q(65898),	--
+			q(65899),	-- Find Theramus
+			q(65900),	--
+			q(65901),	--
+			q(65902),	--
+			q(65903),	--
+			q(65904),	--
+			q(65905),	--
+			q(65906),	--
+			q(65907),	--
+			q(65908),	--
+			q(65909),	--
+			q(65910),	--
+			q(65912),	--
+			q(65913),	-- Listen to the Land
+			q(65914),	-- Mammoths Matter
+			q(65915),	--
+			q(65916),	--
+			q(65917),	--
+			q(65918),	--
+			q(65919),	--
+			q(65920),	--
+			q(65921),	--
+			q(65922),	--
+			q(65923),	--
+			q(65924),	--
+			q(65925),	-- Culling the Cullers
+			q(65926),	-- Tackling the Falls
+			q(65927),	--
+			q(65928),	-- Wayward Winds
+			q(65929),	-- Ice Breakers
+			q(65930),	-- A Wrestle of Wind and Water
+			q(65931),	--
+			q(65932),	--
+			q(65933),	--
+			q(65934),	--
+			q(65935),	--
+			q(65936),	-- Break the Storm
+			q(65937),	--
+			q(65938),	--
+			q(65939),	--
+			q(65940),	--
+			q(65941),	--
+			q(65942),	--
+			q(65943),	-- Primal Offensive
+			q(65944),	-- Lava Burst
+			q(65945),	--
+			q(65947),	--
+			q(65948),	--
+			q(65949),	--
+			q(65950),	-- Thieving Gorlocs
+			q(65951),	-- Sole Supplier
+			q(65952),	--
+			q(65953),	--
+			q(65954),	--
+			q(65955),	--
+			q(65956),	--
+			q(65957),	--
+			q(65958),	-- Primal Power
+			q(65960),	--
+			q(65961),	--
+			q(65962),	--
+			q(65964),	--
+			q(65965),	--
+			q(65977),	-- Kirin Tor Recovery
+			q(65989),	--
+			q(65990),	--
+			q(65991),	--
+			q(65992),	--
+			q(65993),	--
+			q(65994),	--
+			q(65995),	--
+			q(65996),	--
+			q(65997),	--
+			q(65998),	--
+			q(65999),	--
+			q(66000),	--
+			q(66001),	--
+			q(66002),	--
+			q(66003),	-- Rings To Bind Them
+			q(66004),	-- Galgresh
+			q(66005),	-- Medallion of a Fallen Friend
+			q(66006),	--
+			q(66007),	-- Free Air
+			q(66008),	--
+			q(66009),	-- In Defense of Vakthros
+			q(66010),	--
+			q(66011),	--
+			q(66015),	-- The Blue Dragon Oathstone
+			q(66016),	--
+			q(66017),	--
+			q(66018),	--
+			q(66019),	--
+			q(66020),	--
+			q(66021),	--
+			q(66022),	--
+			q(66023),	--
+			q(66024),	--
+			q(66025),	--
+			q(66027),	-- Calling the Blue Dragons
+			q(66028),	--
+			q(66029),	--
+			q(66030),	--
+			q(66031),	--
+			q(66032),	--
+			q(66033),	--
+			q(66034),	--
+			q(66035),	--
+			q(66036),	--
+			q(66037),	--
+			q(66038),	--
+			q(66039),	--
+			q(66040),	--
+			q(66043),	--
+			q(66044),	--
+			q(66045),	--
+			q(66046),	--
+			q(66048),	--
+			q(66049),	--
+			q(66051),	--
+			q(66052),	--
+			q(66053),	--
+			q(66054),	--
+			q(66055),	--
+			q(66056),	--
+			q(66057),	--
+			q(66058),	--
+			q(66070),	--
+			q(66071),	-- Flying Rocs
+			q(66072),	--
+			q(66073),	--
+			q(66074),	-- Primal Scythid Queen
+			q(66075),	--
+			q(66076),	-- Ancient Hornswog
+			q(66078),	--
+			q(66079),	--
+			q(66080),	--
+			q(66081),	--
+			q(66082),	--
+			q(66083),	--
+			q(66084),	--
+			q(66085),	--
+			q(66086),	--
+			q(66087),	--
+			q(66088),	--
+			q(66089),	--
+			q(66092),	--
+			q(66099),	--
+			q(66100),	-- Supplying in Weight
+			q(66101),	--
+			q(66102),	--
+			q(66103),	--
+			q(66104),	--
+			q(66105),	-- A Scalpel of a Solution
+			q(66106),	--
+			q(66107),	-- Wildlife Rescue
+			q(66108),	--
+			q(66109),	-- Enchanted Compass
+			q(66110),	--
+			q(66111),	--
+			q(66112),	--
+			q(66113),	--
+			q(66114),	--
+			q(66115),	--
+			q(66116),	--
+			q(66117),	--
+			q(66118),	--
+			q(66119),	--
+			q(66120),	--
+			q(66121),	--
+			q(66122),	--
+			q(66123),	--
+			q(66124),	--
+			q(66125),	--
+			q(66127),	--
+			q(66132),	--
+			q(66133),	--
+			q(66134),	-- Azeroth Pest Control
+			q(66135),	--
+			q(66136),	--
+			q(66137),	--
+			q(66138),	--
+			q(66139),	--
+			q(66141),	-- Broken Traditions, Broken Bodies
+			q(66142),	--
+			q(66143),	--
+			q(66144),	--
+			q(66146),	--
+			q(66147),	-- Crystals in the Water
+			q(66148),	-- Former Furbolg Family
+			q(66149),	-- Elemental Influence
+			q(66150),	-- Rescuing Radza
+			q(66151),	-- His Stone Heart
+			q(66152),	-- Nowhere to Go
+			q(66153),	--
+			q(66154),	-- Salivatory Samples
+			q(66155),	-- Ruriq's River Rapids Ride
+			q(66157),	--
+			q(66158),	--
+			q(66161),	--
+			q(66162),	-- Cataloging Wildlife
+			q(66164),	-- Fishy Fingers
+			q(66167),	--
+			q(66168),	--
+			q(66169),	--
+			q(66171),	--
+			q(66172),	--
+			q(66173),	--
+			q(66174),	--
+			q(66175),	-- Field Experiment
+			q(66176),	--
+			q(66177),	-- No Dwarf Left Behind
+			q(66187),	-- Mad Mordigan & The Crystal King
+			q(66192),	--
+			q(66194),	--
+			q(66195),	--
+			q(66196),	--
+			q(66197),	--
+			q(66199),	--
+			q(66200),	--
+			q(66201),	--
+			q(66202),	--
+			q(66203),	--
+			q(66204),	--
+			q(66205),	-- Spell It Out For Me
+			q(66206),	-- Nozdormu, I've Come to Bargain
+			q(66207),	--
+			q(66208),	--
+			q(66209),	--
+			q(66214),	--
+			q(66215),	--
+			q(66216),	--
+			q(66219),	--
+			q(66220),	--
+			q(66221),	--
+			q(66222),	--
+			q(66224),	--
+			q(66225),	--
+			q(66226),	--
+			q(66229),	--
+			q(66230),	-- A Sketchy Request
+			q(66232),	-- Afront 'Till A Salt
+			q(66233),	--
+			q(66234),	--
+			q(66236),	--
+			q(66238),	--
+			q(66240),	--
+			q(66241),	--
+			q(66242),	--
+			q(66244),	-- To Valdrakken
+			q(66245),	--
+			q(66246),	--
+			q(66247),	--
+			q(66248),	--
+			q(66249),	--
+			q(66250),	--
+			q(66251),	--
+			q(66252),	--
+			q(66254),	--
+			q(66255),	--
+			q(66256),	--
+			q(66257),	--
+			q(66258),	--
+			q(66259),	--
+			q(66260),	--
+			q(66261),	-- A Minor Setback
+			q(66262),	-- Waste Water Cleanup
+			q(66263),	-- A Precision Approach
+			q(66264),	-- Disarmed and Docile
+			q(66265),	-- Who's Next?
+			q(66266),	-- Filthy Mongrels
+			q(66267),	-- M.E.T.A.
+			q(66268),	-- Third Try's the Charm
+			q(66269),	-- Just To Be Sure
+			q(66270),	-- Whack-a-Gnoll
+			q(66271),	--
+			q(66273),	--
+			q(66274),	--
+			q(66276),	--
+			q(66277),	-- [DNT] Making Quest
+			q(66278),	--
+			q(66279),	--
+			q(66284),	--
+			q(66299),	--
+			q(66300),	--
+			q(66301),	--
+			q(66303),	--
+			q(66304),	--
+			q(66305),	--
+			q(66306),	--
+			q(66307),	--
+			q(66308),	--
+			q(66310),	--
+			q(66311),	--
+			q(66312),	--
+			q(66315),	--
+			q(66319),	--
+			q(66320),	--
+			q(66321),	--
+			q(66322),	--
+			q(66325),	--
+			q(66326),	--
+			q(66327),	--
+			q(66328),	--
+			q(66329),	--
+			q(66330),	--
+			q(66331),	--
+			q(66332),	--
+			q(66333),	--
+			q(66334),	--
+			q(66335),	--
+			q(66336),	--
+			q(66337),	--
+			q(66338),	--
+			q(66339),	--
+			q(66340),	--
+			q(66341),	--
+			q(66342),	--
+			q(66344),	--
+			q(66345),	--
+			q(66346),	--
+			q(66347),	--
+			q(66348),	--
+			q(66349),	-- Training Rock
+			q(66350),	--
+			q(66351),	-- Smoke Over the Mountain
+			q(66352),	-- What the Enemy Knows
+			q(66353),	-- R.A.D. Anomalies
+			q(66354),	--
+			q(66355),	--
+			q(66356),	-- Irontree
+			q(66357),	--
+			q(66358),	--
+			q(66359),	--
+			q(66360),	--
+			q(66361),	--
+			q(66362),	--
+			q(66363),	--
+			q(66364),	--
+			q(66365),	--
+			q(66366),	-- Overly Loud Pocketwatch
+			q(66367),	-- Elaborate Lace Cuff
+			q(66368),	--
+			q(66369),	--
+			q(66370),	--
+			q(66371),	--
+			q(66372),	--
+			q(66373),	--
+			q(66374),	--
+			q(66375),	--
+			q(66376),	--
+			q(66377),	--
+			q(66378),	--
+			q(66379),	--
+			q(66380),	--
+			q(66381),	--
+			q(66382),	--
+			q(66384),	--
+			q(66385),	--
+			q(66386),	--
+			q(66387),	--
+			q(66388),	--
+			q(66389),	--
+			q(66391),	-- To the Ruins!
+			q(66403),	--
+			q(66404),	--
+			q(66405),	--
+			q(66407),	--
+			q(66408),	--
+			q(66412),	--
+			q(66419),	--
+			q(66421),	--
+			q(66422),	-- The Expedition Continues!
+			q(66423),	-- Worries and Validations
+			q(66424),	-- Scraps to Upgrades
+			q(66425),	-- Arcane Overload
+			q(66426),	-- Running Out of Time
+			q(66427),	-- A Looming Menace
+			q(66428),	-- Friendship For Granted
+			q(66429),	-- I Will Remember
+			q(66433),	--
+			q(66434),	-- Ancient Sword Design
+			q(66435),	-- Site Salvage
+			q(66436),	-- Unearthed Troublemakers
+			q(66437),	--
+			q(66438),	--
+			q(66439),	--
+			q(66441),	--
+			q(66442),	--
+			q(66445),	--
+			q(66446),	--
+			q(66447),	--
+			q(66448),	-- The Wayward Waywatcher
+			q(66449),	--
+			q(66450),	--
+			q(66451),	--
+			q(66452),	--
+			q(66453),	--
+			q(66454),	--
+			q(66455),	--
+			q(66456),	--
+			q(66457),	--
+			q(66459),	-- The Field of Ferocity: Terror of the Swamp!
+			q(66460),	--
+			q(66461),	--
+			q(66462),	--
+			q(66463),	--
+			q(66464),	--
+			q(66465),	--
+			q(66466),	--
+			q(66467),	--
+			q(66468),	-- What Once Was Ours
+			q(66469),	--
+			q(66470),	--
+			q(66471),	--
+			q(66472),	--
+			q(66473),	--
+			q(66474),	--
+			q(66475),	--
+			q(66476),	--
+			q(66477),	--
+			q(66478),	--
+			q(66479),	--
+			q(66481),	--
+			q(66482),	-- Scout for Trophies: Terramaw
+			q(66483),	--
+			q(66484),	-- Know Your Enemy: Proto-Dragons
+			q(66485),	--
+			q(66486),	--
+			q(66487),	--
+			q(66490),	-- Dragons!
+			q(66491),	--
+			q(66492),	--
+			q(66494),	--
+			q(66495),	--
+			q(66496),	--
+			q(66497),	--
+			q(66498),	--
+			q(66499),	--
+			q(66502),	--
+			q(66504),	--
+			q(66505),	--
+			q(66506),	--
+			q(66509),	-- Paranoid 1
+			q(66510),	--
+			q(66512),	--
+			q(66514),	--
+			q(66515),	--
+			q(66516),	--
+			q(66517),	--
+			q(66518),	-- Reinforced Scales
+			q(66519),	-- Azure Basilisk Belly
+			q(66520),	-- Stolen Weapon Mold
+			q(66521),	-- Stolen Valdrakken Weapon
+			q(66522),	-- Draconium Blade Sharpener
+			q(66524),	-- Amateur Protography
+			q(66525),	--
+			q(66526),	--
+			q(66527),	--
+			q(66528),	--
+			q(66529),	--
+			q(66530),	--
+			q(66531),	--
+			q(66532),	--
+			q(66533),	--
+			q(66535),	--
+			q(66536),	--
+			q(66537),	--
+			q(66538),	--
+			q(66539),	--
+			q(66540),	--
+			q(66541),	--
+			q(66542),	--
+			q(66543),	--
+			q(66544),	--
+			q(66545),	--
+			q(66546),	--
+			q(66547),	--
+			q(66548),	--
+			q(66549),	--
+			q(66550),	-- [PH] More Storms!
+			q(66551),	-- Swog the Elder[REUSE ME][DNT]
+			q(66553),	-- Hollow Up
+			q(66554),	-- Aggressive Self-Defence
+			q(66555),	-- Bear With Me
+			q(66556),	-- Ice Cave Ya Got There
+			q(66557),	-- Academic Aquaintances
+			q(66559),	-- Back To Camp
+			q(66561),	--
+			q(66562),	--
+			q(66563),	--
+			q(66564),	--
+			q(66565),	--
+			q(66566),	--
+			q(66567),	--
+			q(66568),	--
+			q(66569),	--
+			q(66570),	--
+			q(66571),	--
+			q(66572),	--
+			q(66573),	--
+			q(66574),	--
+			q(66575),	-- Item as Questgiver: Vial
+			q(66576),	--
+			q(66580),	--
+			q(66581),	--
+			q(66582),	--
+			q(66583),	--
+			q(66585),	--
+			q(66587),	--
+			q(66588),	--
+			q(66591),	--
+			q(66592),	--
+			q(66595),	--
+			q(66597),	--
+			q(66598),	--
+			q(66599),	--
+			q(66600),	--
+			q(66601),	--
+			q(66602),	--
+			q(66603),	--
+			q(66604),	--
+			q(66605),	--
+			q(66606),	--
+			q(66607),	--
+			q(66608),	--
+			q(66609),	--
+			q(66610),	--
+			q(66611),	-- Clearing the Skies
+			q(66612),	-- Gills with Gall
+			q(66622),	-- Wayward Tools
+			q(66623),	--
+			q(66624),	--
+			q(66625),	--
+			q(66626),	--
+			q(66627),	--
+			q(66628),	--
+			q(66629),	--
+			q(66630),	--
+			q(66631),	--
+			q(66632),	--
+			q(66633),	--
+			q(66634),	--
+			q(66636),	--
+			q(66637),	--
+			q(66638),	--
+			q(66639),	--
+			q(66640),	--
+			q(66641),	--
+			q(66642),	--
+			q(66643),	--
+			q(66644),	--
+			q(66645),	--
+			q(66646),	--
+			q(66647),	-- Elemental Unfocus
+			q(66651),	-- Up to No-khud
+			q(66652),	-- Return to Mender
+			q(66653),	--
+			q(66654),	--
+			q(66655),	--
+			q(66656),	--
+			q(66657),	--
+			q(66658),	--
+			q(66660),	--
+			q(66663),	--
+			q(66664),	--
+			q(66665),	--
+			q(66666),	--
+			q(66667),	--
+			q(66668),	--
+			q(66669),	--
+			q(66670),	--
+			q(66672),	--
+			q(66674),	--
+			q(66675),	--
+			q(66676),	--
+			q(66677),	--
+			q(66678),	--
+			q(66679),	-- Waking Shores - Race 01 - Novice
+			q(66680),	--
+			q(66681),	--
+			q(66682),	--
+			q(66683),	--
+			q(66684),	--
+			q(66685),	--
+			q(66686),	--
+			q(66687),	--
+			q(66688),	--
+			q(66689),	--
+			q(66690),	--
+			q(66691),	--
+			q(66692),	-- Waking Shores - Race 01 - Advanced
+			q(66697),	--
+			q(66698),	-- Counting Argali
+			q(66700),	--
+			q(66701),	--
+			q(66702),	--
+			q(66703),	-- Snowball Effect
+			q(66704),	--
+			q(66705),	--
+			q(66706),	-- [DNT]QuestNameHere
+			q(66707),	-- Calming the Storm
+			q(66708),	-- Riders in the Snow
+			q(66709),	-- Field Medic 101
+			q(66710),	-- Waking Shores - Flashfrost Flyover
+			q(66711),	-- Delicacy in the Dark
+			q(66712),	-- Waking Shores - Flashfrost Flyover - Advanced
+			q(66713),	-- [DNT]QuestNameHere
+			q(66714),	-- [DNT]QuestNameHere
+			q(66715),	-- The Extraction
+			q(66716),	--
+			q(66717),	--
+			q(66718),	-- Gnolls Must Die
+			q(66719),	--
+			q(66720),	--
+			q(66721),	-- Waking Shores - Wild Preserve Slalom
+			q(66722),	-- Waking Shores - Wild Preserve Slalom - Advanced
+			q(66723),	--
+			q(66724),	-- The Gleamfisher
+			q(66725),	-- Waking Shores - Wild Preserve Circuit
+			q(66726),	-- Waking Shores - Wild Preserve Circuit - Advanced
+			q(66727),	-- Waking Shores - Emberflow Flight
+			q(66728),	-- Waking Shores - Emberflow Flight - Advanced
+			q(66729),	-- Conditionals
+			q(66730),	-- True Survivors
+			q(66731),	--
+			q(66732),	-- Waking Shores - Apex Canopy River Run
+			q(66733),	-- Waking Shores - Apex Canopy River Run - Advanced
+			q(66734),	--
+			q(66735),	--
+			q(66736),	--
+			q(66737),	--
+			q(66739),	--
+			q(66740),	--
+			q(66741),	--
+			q(66742),	--
+			q(66743),	--
+			q(66744),	--
+			q(66745),	--
+			q(66746),	--
+			q(66747),	--
+			q(66748),	--
+			q(66749),	--
+			q(66750),	--
+			q(66751),	--
+			q(66752),	--
+			q(66753),	--
+			q(66754),	--
+			q(66755),	--
+			q(66756),	--
+			q(66757),	--
+			q(66758),	--
+			q(66759),	--
+			q(66760),	--
+			q(66761),	--
+			q(66762),	--
+			q(66763),	--
+			q(66764),	--
+			q(66765),	--
+			q(66766),	--
+			q(66767),	--
+			q(66768),	--
+			q(66769),	--
+			q(66770),	--
+			q(66771),	--
+			q(66772),	--
+			q(66773),	--
+			q(66774),	--
+			q(66775),	--
+			q(66776),	--
+			q(66777),	-- Waking Shores - Uktulut Coaster
+			q(66778),	-- Waking Shores - Uktulut Coaster - Advanced
+			q(66779),	--
+			q(66780),	--
+			q(66781),	-- A Matter of Taste
+			q(66782),	--
+			q(66783),	--
+			q(66784),	--
+			q(66785),	--
+			q(66786),	-- Waking Shores - Wingrest Roundabout
+			q(66787),	-- Waking Shores - Wingrest Roundabout - Advanced
+			q(66788),	--
+			q(66789),	--
+			q(66790),	--
+			q(66791),	--
+			q(66792),	--
+			q(66793),	--
+			q(66794),	--
+			q(66795),	--
+			q(66796),	--
+			q(66797),	--
+			q(66798),	--
+			q(66800),	--
+			q(66801),	--
+			q(66802),	--
+			q(66803),	--
+			q(66804),	--
+			q(66805),	--
+			q(66806),	--
+			q(66807),	--
+			q(66808),	--
+			q(66809),	--
+			q(66810),	--
+			q(66811),	--
+			q(66812),	--
+			q(66813),	--
+			q(66815),	--
+			q(66816),	--
+			q(66817),	--
+			q(66818),	-- [DNT] The Windy Springs
+			q(66819),	--
+			q(66820),	--
+			q(66821),	--
+			q(66822),	--
+			q(66823),	--
+			q(66824),	-- [DNT] Curious Treasure
+			q(66825),	--
+			q(66827),	--
+			q(66828),	--
+			q(66830),	--
+			q(66831),	--
+			q(66832),	--
+			q(66833),	--
+			q(66834),	--
+			q(66835),	-- Ohn'ahran Plains - Waygate Woods Way
+			q(66836),	--
+			q(66837),	-- Nothing for Breakfast
+			q(66838),	-- It's Cold Up Here
+			q(66839),	-- It's Brew Time!
+			q(66840),	-- Water Safety
+			q(66841),	-- What the Rains Uncovered
+			q(66842),	-- A Shard of the Past
+			q(66843),	-- Where Is Lukh?
+			q(66844),	-- The Great Shokhari
+			q(66845),	-- Rare Foil
+			q(66846),	-- The Heart of the Deck
+			q(66847),	--
+			q(66848),	--
+			q(66849),	--
+			q(66850),	--
+			q(66851),	--
+			q(66852),	--
+			q(66853),	--
+			q(66856),	--
+			q(66857),	--
+			q(66859),	--
+			q(66860),	--
+			q(66861),	--
+			q(66862),	--
+			q(66863),	--
+			q(66864),	--
+			q(66865),	--
+			q(66866),	--
+			q(66867),	--
+			q(66868),	--
+			q(66869),	--
+			q(66870),	--
+			q(66871),	--
+			q(66872),	--
+			q(66873),	--
+			q(66874),	--
+			q(66875),	--
+			q(66876),	--
+			q(66877),	-- Ohn'ahran Plains - Fen Flythrough
+			q(66878),	-- Ohn'ahran Plains - Fen Flythrough - Advanced
+			q(66879),	--
+			q(66880),	-- Ohn'ahran Plains - Ravine River Run
+			q(66881),	-- Ohn'ahran Plains - Ravine River Run - Advanced
+			q(66882),	--
+			q(66883),	--
+			q(66884),	--
+			q(66885),	-- Ohn'ahran Plains - Emerald Garden Ascent
+			q(66886),	-- Ohn'ahran Plains - Emerald Garden Ascent - Advanced
+			q(66887),	--
+			q(66888),	--
+			q(66889),	--
+			q(66890),	--
+			q(66891),	--
+			q(66892),	--
+			q(66893),	--
+			q(66894),	--
+			q(66895),	--
+			q(66896),	--
+			q(66897),	--
+			q(66898),	--
+			q(66899),	--
+			q(66900),	--
+			q(66902),	--
+			q(66921),	-- Ohn'ahran Plains - Maruukai Dash
+			q(66926),	--
+			q(66927),	--
+			q(66928),	--
+			q(66929),	-- Gotta Collect Them All
+			q(66930),	--
+			q(66931),	--
+			q(66932),	--
+			q(66933),	-- Ohn'ahran Plains - Mirror of Sky Dash
+			q(66934),	--
+			q(66935),	--
+			q(66936),	--
+			q(66937),	--
+			q(66938),	--
+			q(66939),	-- Hunting the Huntmaster
+			q(66940),	-- Elixir Experiment
+			q(66941),	-- Tremendous Tools
+			q(66942),	--
+			q(66943),	--
+			q(66944),	--
+			q(66945),	--
+			q(66946),	-- Azure Span - The Azure Span Sprint
+			q(66947),	-- Azure Span - The Azure Span Sprint - Advanced
+			q(66948),	--
+			q(66949),	--
+			q(66950),	--
+			q(66951),	--
+			q(66952),	--
+			q(66953),	--
+			q(66954),	--
+			q(66955),	--
+			q(66956),	-- Dragonhunter Igordan
+			q(66957),	-- A Shadow In The Ice
+			q(66958),	-- Protect And Herd
+			q(66960),	-- Klozicc the Ascended
+			q(66962),	--
+			q(66963),	-- Out For Delivery
+			q(66964),	-- The Gallant Guide
+			q(66965),	--
+			q(66966),	--
+			q(66967),	--
+			q(66968),	-- Pruning The Pack
+			q(66969),	--
+			q(66970),	--
+			q(66971),	-- The Face of Death
+			q(66972),	-- Old Stonetusk
+			q(66973),	--
+			q(66974),	--
+			q(66975),	--
+			q(66976),	--
+			q(66977),	--
+			q(66978),	--
+			q(66979),	--
+			q(66980),	--
+			q(66981),	--
+			q(66982),	-- The Queen of Dragons
+			q(66983),	--
+			q(66984),	--
+			q(66985),	--
+			q(66986),	--
+			q(66987),	--
+			q(66989),	--
+			q(66992),	--
+			q(66993),	--
+			q(66994),	--
+			q(66995),	--
+			q(66996),	--
+			q(66997),	--
+			q(66998),	-- Fighting Fire with... Water
+			q(67000),	-- Game Set Match
+			q(67001),	--
+			q(67002),	-- Azure Span - The Azure Span Slalom
+			q(67003),	-- Azure Span - The Azure Span Slalom - Advanced
+			q(67004),	--
+			q(67005),	--
+			q(67006),	--
+			q(67007),	--
+			q(67009),	--
+			q(67010),	--
+			q(67011),	--
+			q(67013),	--
+			q(67014),	--
+			q(67016),	--
+			q(67017),	-- [DNT] Training: Nothing Like a Strider Wing
+			q(67019),	--
+			q(67020),	--
+			q(67022),	--
+			q(67023),	--
+			q(67024),	--
+			q(67025),	--
+			q(67026),	--
+			q(67028),	--
+			q(67029),	--
+			q(67030),	--
+			q(67031),	-- Azure Span - The Vakthros Ascent
+			q(67032),	-- Azure Span - The Vakthros Ascent - Advanced
+			q(67034),	-- Of Wind and Water
+			q(67037),	--
+			q(67039),	-- An Amazing Journey
+			q(67040),	--
+			q(67042),	--
+			q(67044),	-- Tale of a Hero: Yanikk
+			q(67045),	--
+			q(67046),	--
+			q(67047),	--
+			q(67048),	--
+			q(67049),	--
+			q(67050),	-- Flame On
+			q(67051),	--
+			q(67052),	--
+			q(67053),	--
+			q(67054),	-- Our Present, Our History
+			q(67055),	--
+			q(67056),	--
+			q(67057),	--
+			q(67058),	--
+			q(67059),	--
+			q(67060),	--
+			q(67061),	--
+			q(67062),	--
+			q(67063),	-- Garden Party 2 - Wednesday (WIP)
+			q(67064),	--
+			q(67065),	--
+			q(67066),	--
+			q(67067),	-- Garden Party 6 - Sunday (WIP)
+			q(67068),	-- Garden Party 7 - Monday (WIP)
+			q(67069),	--
+			q(67070),	-- [DNT] My First Quest
+			q(67071),	--
+			q(67073),	--
+			q(67080),	--
+			q(67085),	--
+			q(67086),	--
+			q(67087),	--
+			q(67088),	--
+			q(67089),	--
+			q(67090),	--
+			q(67091),	--
+			q(67092),	--
+			q(67093),	-- Anomaly of Aman'thul
+			q(67094),	-- A Dryad's Work Is Never Done
+			q(67095),	-- Thaldraszus - The Flowing Forest Flight
+			q(67096),	-- Thaldraszus - The Flowing Forest Flight - Advanced
+			q(67098),	--
+			q(67099),	--
+			q(67100),	-- A Gift for Miguel
+			q(67111),	-- The Ailing Apprentice
+			q(67112),	-- [DNT] Kill those Bandits
+			q(67113),	--
+			q(67114),	--
+			q(67115),	--
+			q(67137),	--
+			q(67138),	--
+			q(67139),	--
+			q(67140),	--
+			q(67141),	--
+			q(67142),	--
+			q(67143),	--
+			q(67148),	--
+			q(67149),	--
+			q(67150),	--
+			q(67151),	--
+			q(67152),	--
+			q(67153),	--
+			q(67154),	-- Entropic Remnants
+			q(67163),	--
+			q(67164),	--
+			q(67165),	--
+			q(67166),	--
+			q(67167),	--
+			q(67168),	--
+			q(67171),	--
+			q(67172),	--
+			q(67173),	-- Thieving Gnolls
+			q(67178),	--
+			q(67220),	--
+			q(67221),	--
+			q(67222),	-- Darkened Clouds
+			q(67223),	--
+			q(67224),	--
+			q(67225),	--
+			q(67226),	--
+			q(67227),	--
+			q(67228),	--
+			q(67295),	--
+			q(67296),	-- Azure Span - Iskaara Flyover
+			q(67297),	-- Azure Span - Iskaara Flyover - Advanced
+			q(67298),	--
+			q(67299),	-- Drakes be Gone
+			q(67564),	-- Artisan's Courier
+			q(67565),	-- Azure Span - Central Circuit
+			q(67566),	-- Azure Span - Central Circuit - Advanced
+			q(67605),	-- Thundering Plains
+			q(67606),	--
+			q(67717),	-- Web-Queen Ashkaz
+			q(67718),	--
+			q(67724),	-- The Fending Flames
+			q(67741),	-- Azure Span - Archive Ambit
+			q(67742),	-- Azure Span - Archive Ambit - Advanced
+			q(67743),	-- Whelpling Hide 'n Seek
+			q(67744),	-- Shezra
+			q(67749),	--
+			q(67772),	--
+			q(67921),	--
+			q(67950),	--
+			q(68083),	--
+			q(68084),	--
+			q(68085),	--
+			q(68086),	--
+			q(68087),	--
+			q(68639),	-- [NYI] Prowling Polar Predators
+			q(68641),	-- [NYI] Mossing the Mark
+			q(68642),	-- [NYI] Needles to Say
+			q(68643),	-- [NYI] Vitamins and Minerals
+			q(68644),	-- [NYI] Sugar, Spice, and Everything Nice
+			q(68795),	--
+			q(68796),	--
+			q(68797),	--
+			q(68798),	--
+			q(68799),	--
+			q(69093),	--
+			q(69094),	--
+			q(69095),	--
+			q(69096),	--
+			q(69097),	--
+			q(69292),	-- PH
+			q(69667),	--
+			q(69668),	--
+			q(69669),	-- PH
+			q(69837),	--
+			q(69838),	--
+			q(69839),	--
+			q(69840),	--
+			q(69841),	--
+			q(69848),	--
+			q(69849),	-- Enraged Steamburst Elemental
+			q(69850),	-- Woolfang
+			q(69851),	-- Ripsaw the Stalker
+			q(69852),	-- Territorial Coastling
+			q(69853),	--
+			q(69854),	-- Solethus' Gravestone
+			q(69855),	--
+			q(69856),	-- Fulgurb
+			q(69857),	--
+			q(69858),	-- Blightfur
+			q(69859),	--
+			q(69860),	--
+			q(69861),	--
+			q(69862),	-- [NYI] Save a Fox
+			q(69863),	--
+			q(69864),	-- Forgotten Creation
+			q(69865),	-- Scaleseeker Mezeri
+			q(69866),	--
+			q(69867),	--
+			q(69868),	--
+			q(69869),	--
+			q(69870),	-- Pictures with Purpose
+			q(69871),	--
+			q(69872),	-- Vakril, the Strongest Tuskarr
+			q(69873),	-- Henlare
+			q(69874),	--
+			q(69875),	--
+			q(69877),	-- Oshigol
+			q(69878),	--
+			q(69879),	-- Spellwrought Snowman
+			q(69880),	--
+			q(69881),	--
+			q(69882),	-- Lord Epochbrgl
+			q(69883),	--
+			q(69885),	--
+			q(69886),	--
+			q(69887),	-- Hanmuk
+			q(69891),	--
+			q(69892),	--
+			q(69895),	-- Summoned Destroyer
+			q(69896),	-- Disastrous Detour
+			q(69897),	-- Field Research: Pet the Whelp
+			q(69898),	-- Collecting Samples: Tooth for a Tooth
+			q(69899),	--
+			q(69900),	--
+			q(69901),	--
+			q(69902),	--
+			q(69903),	--
+			q(69905),	--
+			q(69906),	--
+			q(69907),	--
+			q(69908),	--
+			q(69910),	--
+			q(69911),	--
+			q(69912),	--
+			q(69913),	--
+			q(69914),	--
+			q(69915),	-- Targeted Ads
+			q(69916),	--
+			q(69917),	--
+			q(69918),	--
+			q(69919),	-- A Craft in Need
+			q(69920),	--
+			q(69923),	--
+			q(69924),	--
+			q(69925),	--
+			q(69926),	--
+			q(69927),	--
+			q(69928),	--
+			q(69929),	--
+			q(69930),	--
+			q(69931),	--
+			q(69932),	-- A Life Well Lived
+			q(69933),	-- The Essential Ingredient
+			q(69934),	--
+			q(69935),	--
+			q(69936),	--
+			q(69937),	--
+			q(69938),	--
+			q(69939),	--
+			q(69940),	--
+			q(69941),	--
+			q(69942),	--
+			q(69945),	--
+			q(69946),	--
+			q(69947),	--
+			q(69948),	-- Wilrive
+			q(69950),	--
+			q(69951),	--
+			q(69952),	--
+			q(69953),	--
+			q(69954),	--
+			q(69955),	--
+			q(69956),	--
+			q(69957),	-- Thaldraszus - Passage Pathway
+			q(69958),	-- Thaldraszus - Passage Pathway - Advanced
+			q(69959),	--
+			q(69960),	--
+			q(69961),	--
+			q(69962),	-- Corrupted Proto-Dragon
+			q(69963),	--
+			q(69964),	-- Craggravated Elemental
+			q(69965),	--
+			q(69966),	--
+			q(69967),	-- Lookout Mordren
+			q(69968),	-- Prozela Galeshot
+			q(69969),	--
+			q(69970),	--
+			q(69971),	--
+			q(69972),	--
+			q(69973),	--
+			q(69974),	--
+			q(69975),	--
+			q(69976),	--
+			q(69977),	--
+			q(69978),	--
+			q(69979),	--
+			q(69980),	-- Seavine: Fisherman Tinnak's Gift
+			q(69982),	--
+			q(69983),	--
+			q(69984),	--
+			q(69985),	--
+			q(69987),	--
+			q(69988),	--
+			q(69989),	--
+			q(69990),	--
+			q(69991),	--
+			q(69992),	--
+			q(69993),	--
+			q(69994),	--
+			q(69995),	--
+			q(69996),	--
+			q(69997),	--
+			q(69998),	--
+			q(69999),	--
+			q(70000),	--
+			q(70001),	--
+			q(70002),	--
+			q(70003),	--
+			q(70004),	--
+			q(70005),	--
+			q(70006),	--
+			q(70007),	--
+			q(70008),	--
+			q(70009),	--
+			q(70010),	--
+			q(70011),	--
+			q(70012),	--
+			q(70013),	--
+			q(70014),	--
+			q(70015),	--
+			q(70016),	--
+			q(70017),	--
+			q(70018),	--
+			q(70019),	--
+			q(70020),	--
+			q(70021),	--
+			q(70022),	--
+			q(70023),	--
+			q(70024),	--
+			q(70025),	--
+			q(70026),	--
+			q(70027),	--
+			q(70028),	--
+			q(70029),	--
+			q(70030),	--
+			q(70031),	--
+			q(70032),	--
+			q(70033),	--
+			q(70034),	--
+			q(70035),	--
+			q(70037),	--
+			q(70038),	--
+			q(70039),	--
+			q(70040),	--
+			q(70041),	-- The Storm-Eater's Fury
+			q(70042),	--
+			q(70046),	--
+			q(70047),	--
+			q(70048),	--
+			q(70049),	--
+			q(70051),	-- Thaldraszus - Cliffside Circuit
+			q(70052),	-- Thaldraszus - Cliffside Circuit - Advanced
+			q(70055),	--
+			q(70056),	--
+			q(70057),	--
+			q(70058),	-- Friend on the Mend
+			q(70059),	-- Thaldraszus - Academy Ascent
+			q(70060),	-- Thaldraszus - Academy Ascent - Advanced
+			q(70061),	--
+			q(70062),	-- All In A Day's Work
+			q(70064),	--
+			q(70065),	--
+			q(70066),	--
+			q(70067),	--
+			q(70068),	--
+			q(70069),	--
+			q(70070),	--
+			q(70071),	--
+			q(70072),	--
+			q(70073),	--
+			q(70074),	--
+			q(70075),	--
+			q(70076),	--
+			q(70077),	--
+			q(70078),	--
+			q(70079),	--
+			q(70080),	--
+			q(70081),	--
+			q(70082),	--
+			q(70083),	--
+			q(70084),	--
+			q(70085),	--
+			q(70086),	--
+			q(70087),	--
+			q(70088),	--
+			q(70089),	--
+			q(70090),	--
+			q(70091),	--
+			q(70092),	--
+			q(70093),	--
+			q(70094),	--
+			q(70095),	--
+			q(70096),	--
+			q(70097),	--
+			q(70098),	--
+			q(70099),	--
+			q(70100),	--
+			q(70101),	--
+			q(70102),	--
+			q(70103),	--
+			q(70104),	--
+			q(70105),	--
+			q(70106),	--
+			q(70107),	--
+			q(70108),	--
+			q(70109),	--
+			q(70110),	--
+			q(70111),	--
+			q(70112),	--
+			q(70113),	--
+			q(70114),	--
+			q(70115),	--
+			q(70116),	--
+			q(70117),	--
+			q(70118),	--
+			q(70119),	--
+			q(70120),	--
+			q(70121),	--
+			q(70122),	--
+			q(70123),	--
+			q(70124),	--
+			q(70125),	--
+			q(70126),	--
+			q(70130),	--
+			q(70131),	--
+			q(70132),	-- A Long Time Ago
+			q(70134),	--
+			q(70135),	--
+			q(70136),	--
+			q(70139),	--
+			q(70140),	--
+			q(70141),	--
+			q(70142),	--
+			q(70143),	--
+			q(70144),	--
+			q(70145),	--
+			q(70146),	--
+			q(70147),	--
+			q(70148),	-- Without Purpose
+			q(70149),	--
+			q(70150),	--
+			q(70151),	--
+		}),
+	})
 }));

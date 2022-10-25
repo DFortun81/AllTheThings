@@ -340,7 +340,8 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 								i(168972),	-- Pyroclastic Greatboots
 								i(169529),	-- Recipe: Monelite Reinforced Chassis (Rank 3)
 								i(169609),	-- Schematic: Super-Charged Engine (Rank 3)
-								n(-857, {	-- Mythic+
+								n(MYTHIC_PLUS, {
+									-- This one I thoguht was confirmed, but all screenshots were removed once it was fixed...
 									i(199921, {	-- Trashmaster's Mantle
 										["description"] = "Blizzard didn't want the M+ version of this cloak to be able to be used for the related Quest. So they created a brand new ItemID along with new SourceIDs...\n\nConfirmed as a Great Vault +15 reward",
 										["bonusID"] = 7359,

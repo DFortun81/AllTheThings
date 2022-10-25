@@ -830,6 +830,78 @@ root("PetBattles", petbattle({
 				i(90173),	-- Pandaren Water Spirit
 			},
 		}),
+		-- Dragonflight
+		-- PET QUESTS?!
+		q(70647, {	-- Oh Where, Oh Where Can He Be?
+			["description"] = "Account-Wide Quest.",
+			["sourceQuests"] = { 66244 },	-- To Valdrakken
+			["provider"] = { "n", 185563 },	-- Jyhanna
+			["coord"] = { 10.4, 58.3, VALDRAKKEN },
+			["g"] = {
+				i(199175),	-- Lubbins (PET!)
+			},
+		}),
+		q(70697, {	-- An Expert Opinion
+			["description"] = "Account-Wide Quest.",
+			["sourceQuests"] = { 70647 },	-- Oh Where, Oh Where Can He Be?
+			["provider"] = { "n", 185563 },	-- Jyhanna
+			["coord"] = { 10.4, 58.3, VALDRAKKEN },
+		}),
+		q(70722, {	-- What Lubbins Needs
+			["description"] = "Account-Wide Quest.",
+			["sourceQuests"] = { 70697 },	-- An Expert Opinion
+			["provider"] = { "n", 196069 },	-- Patchu
+			["coord"] = { 13.9, 49.8, THE_AZURE_SPAN },
+			["g"] = {
+				i(92683),	-- Flawless Dragonkin Battle-Stone
+				i(163936),	-- Polished Pet Charm
+			},
+		}),
+		q(70732, {	-- A Practice Bout
+			["description"] = "Account-Wide Quest.",
+			["sourceQuests"] = { 70722 },	-- What Lubbins Needs
+			["provider"] = { "n", 196069 },	-- Patchu
+			["coord"] = { 13.9, 49.8, THE_AZURE_SPAN },
+			["g"] = {
+				i(122457),	-- Ultimate Battle-Training Stone
+			},
+		}),
+		q(70849, {	-- This Calls for a Specialist
+			["description"] = "Account-Wide Quest.",
+			["sourceQuests"] = { 70732 },	-- A Practice Bout
+			["provider"] = { "n", 196069 },	-- Patchu
+			["coord"] = { 13.9, 49.8, THE_AZURE_SPAN },
+		}),
+		q(70851, {	-- Born to Be Wilder
+			["description"] = "Account-Wide Quest.",
+			["sourceQuests"] = { 70849 },	-- This Calls for a Specialist
+			["provider"] = { "n", 196264 },	-- Haniko
+			["coord"] = { 38.9, 83.3, THE_WAKING_SHORES },
+			["g"] = {
+				i(163936),	-- Polished Pet Charm
+			},
+		}),
+		q(70853, {	-- A Friend for Lubbins
+			["description"] = "Account-Wide Quest.",
+			["sourceQuests"] = { 70851 },	-- Born to Be Wilder
+			["provider"] = { "n", 196264 },	-- Haniko
+			["coord"] = { 38.9, 83.3, THE_WAKING_SHORES },
+			["g"] = {
+				i(163936),	-- Polished Pet Charm
+				i(116421),	-- Flying Battle-Training Stone
+			},
+		}),
+		q(70854, {	-- So How Did It Go?
+			["description"] = "Account-Wide Quest.",
+			["sourceQuests"] = { 70853 },	-- A Friend for Lubbins
+			["provider"] = { "n", 196264 },	-- Haniko
+			["coord"] = { 38.9, 83.3, THE_WAKING_SHORES },
+			["g"] = {
+				i(122457),	-- Ultimate Battle-Training Stone
+				i(200519),	-- Mister Toots (PET!)
+				ach(16399),	-- Lovin' Lubbins
+			},
+		}),
 		-- Daily Quests
 		q(31854, {	-- Analynn
 			["provider"] = { "n", 66136 },	-- Analynn

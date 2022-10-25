@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
+root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(TIRAGARDE_SOUND, {
 		n(ZONE_DROPS, bubbleDown({["bonusID"] = 4796, }, {
 			i(159184),	-- Foxhollow Circlet

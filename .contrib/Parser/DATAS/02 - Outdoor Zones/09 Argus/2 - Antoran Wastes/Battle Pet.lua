@@ -56,7 +56,7 @@ _.Zones =
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12089, {	-- Aquatic Assault
-							["groups"]	= {
+							["groups"] = {
 								{
 									["achievementID"] = 12089,	-- Aquatic Assault
 									["criteriaID"] = 14,		-- Bloat
@@ -231,7 +231,7 @@ _.Zones =
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12095, {	-- Fierce Fliers
-							["groups"]	= {
+							["groups"] = {
 								{
 									["achievementID"] = 12095,	-- Aquatic Assault
 									["criteriaID"] = 14,		-- Bloat

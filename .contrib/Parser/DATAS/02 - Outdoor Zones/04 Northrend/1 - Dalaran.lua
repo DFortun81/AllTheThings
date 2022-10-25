@@ -6413,7 +6413,7 @@ root("Zones", {
 							i(31804),	-- Cenarion Expedition Tabard
 							i(36941, {	-- Competitor's Tabard
 								["u"] = REMOVED_FROM_GAME,
-								["description"]	= "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
+								["description"] = "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
 							}),
 							i(31776),	-- Consortium Tabard
 							i(19031, {	-- Frostwolf Battle Tabard

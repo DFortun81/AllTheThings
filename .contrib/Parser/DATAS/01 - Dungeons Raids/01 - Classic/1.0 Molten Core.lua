@@ -305,7 +305,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(18260, {	-- Formula: Enchant Weapon - Healing Power (RECIPE!)
-					["crs"]	= {
+					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
 						12259,	-- Gehennas
@@ -316,7 +316,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				i(18259, {	-- Formula: Enchant Weapon - Spellpower (RECIPE!)
-					["crs"]	= {
+					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
 						12259,	-- Gehennas
@@ -327,7 +327,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				i(18252, {	-- Pattern: Core Armor Kit
-					["crs"]	= {
+					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
 						12259,	-- Gehennas
@@ -338,7 +338,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				i(21371, {	-- Pattern: Core Felcloth Bag
-					["crs"]	= {
+					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
 						12259,	-- Gehennas
@@ -349,7 +349,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				i(18265, {	-- Pattern: Flarecore Wraps
-					["crs"]	= {
+					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
 						12259,	-- Gehennas
@@ -360,7 +360,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				i(18264, {	-- Plans: Elemental Sharpening Stone (RECIPE!)
-					["crs"]	= {
+					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
 						12259,	-- Gehennas
@@ -371,7 +371,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				i(18257, {	-- Recipe: Major Rejuvenation Potion
-					["crs"]	= {
+					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
 						12259,	-- Gehennas
@@ -382,7 +382,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				i(18290, {	-- Schematic: Biznicks 247x128 Accurascope
-					["crs"]	= {
+					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
 						12259,	-- Gehennas
@@ -393,7 +393,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				i(18292, {	-- Schematic: Core Marksman Rifle
-					["crs"]	= {
+					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
 						12259,	-- Gehennas
@@ -404,7 +404,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				i(18291, {	-- Schematic: Force Reactive Disk
-					["crs"]	= {
+					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
 						12259,	-- Gehennas

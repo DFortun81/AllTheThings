@@ -36,6 +36,7 @@ namespace ATT
             { "LEGION", 70 },   // LEGION_PHASE_ONE
             { "BFA", 80 },      // BFA_PHASE_ONE
             { "SHADOWLANDS", 90 },      // SHADOWLANDS_PHASE_ONE
+            { "DF", 100 },      // DF_PHASE_ONE
         };
 
         /// <summary>
@@ -55,6 +56,7 @@ namespace ATT
             { "LEGION", 79 },   // LEGION_PHASE_SIX?
             { "BFA", 89 },      // BFA_PHASE_SIX?
             { "SHADOWLANDS", 99 },      // SHADOWLANDS_PHASE_SIX?
+            { "DF", 99 },      // DF_PHASE_SIX?
         };
 
         /// <summary>
@@ -74,6 +76,7 @@ namespace ATT
             { "LEGION", new int[] { 7, 0, 1, 20740 } },
             { "BFA", new int[] { 8, 0, 1, 27026 } },
             { "SHADOWLANDS", new int[] { 9, 0, 1, 36216 } },
+            { "DF", new int[] { 10, 0, 0, 45335 } },
         };
 
         /// <summary>
@@ -93,11 +96,14 @@ namespace ATT
             { "WOD", new int[] { 6, 2, 4, 21345 } },
             { "LEGION", new int[] { 7, 3, 5, 26365 } },
             { "BFA", new int[] { 8, 3, 7, 35249 } },
-            { "SHADOWLANDS", new int[] { 9, 2, 7, 45338 } },
+            { "SHADOWLANDS", new int[] { 9, 2, 7, 45745 } },
+            { "DF", new int[] { 10, 0, 0, 46293 } },
         };
 
         public static readonly string CURRENT_RELEASE_PHASE_NAME =
-#if SHADOWLANDS
+#if DF
+                "DF"
+#elif SHADOWLANDS
                 "SHADOWLANDS"
 #elif BFA
                 "BFA"
@@ -266,7 +272,7 @@ namespace ATT
         /// <summary>
         /// Represents the valid values for the 'classes' / 'c' field of an object
         /// </summary>
-        internal static readonly HashSet<long> Valid_Classes = new HashSet<long>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+        internal static readonly HashSet<long> Valid_Classes = new HashSet<long>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
 
         /// <summary>
         /// A Dictionary of key-ID types and how many times each value of key-type has been referenced in the final DB

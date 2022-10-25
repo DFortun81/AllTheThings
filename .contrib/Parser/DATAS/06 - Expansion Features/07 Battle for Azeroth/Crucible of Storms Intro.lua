@@ -56,7 +56,7 @@ root("ExpansionFeatures", {
 			}),
 			q(53765, {	-- His Eye Upon You
 				["sourceQuests"] = { 54126 },	-- Twist the Knife [Alliance]
-				["description"]	= "You only get the toy if you choose to cleanse the gift.",
+				["description"] = "You only get the toy if you choose to cleanse the gift.",
 				["provider"] = { "n", 146902 },	-- Brother Pike
 				["coord"] = { 67.4, 21.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -67,7 +67,7 @@ root("ExpansionFeatures", {
 			q(53766, {	-- His Eye Upon You
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = { 53763 },	-- Twist the Knife
-				["description"]	= "You just get the Toy if you choose to cleanse the gift.",
+				["description"] = "You just get the Toy if you choose to cleanse the gift.",
 				["providers"] = {
 					{ "n", 146335 },	-- Queen Talanji
 					{ "n", 133050 },	-- Princess Talanji
@@ -109,7 +109,7 @@ root("ExpansionFeatures", {
 				["provider"] = { "n", 134345 },	-- Collector Kojo
 			}),
 			q(54141, {	-- The Azsharan Medallion
-				["description"]	= "To get the quest item, you need to kill Naga while the world quest 'Naga Attack!' is up.  Complete the questline to receive the Twitching Eyeball toy.",
+				["description"] = "To get the quest item, you need to kill Naga while the world quest 'Naga Attack!' is up.  Complete the questline to receive the Twitching Eyeball toy.",
 				["provider"] = { "i", 165605 },	-- The Azsharan Medallion
 				["races"] = ALLIANCE_ONLY,
 				["crs"] = {
@@ -122,7 +122,7 @@ root("ExpansionFeatures", {
 				},
 			}),
 			q(54172, {	-- The Azsharan Medallion
-				["description"]	= "To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up.  Complete the questline to receive the Twitching Eyeball Toy",
+				["description"] = "To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up.  Complete the questline to receive the Twitching Eyeball Toy",
 				["races"] = HORDE_ONLY,
 				["provider"] = { "i", 165668 },	-- The Azsharan Medallion
 				["crs"] = {

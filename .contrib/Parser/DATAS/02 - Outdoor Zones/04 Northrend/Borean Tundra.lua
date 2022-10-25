@@ -700,7 +700,7 @@ root("Zones", {
 						["qg"] = 26117,	-- Raelorasz
 						["coord"] = { 33.3, 34.5, BOREAN_TUNDRA },
 						["sourceQuest"] = 11936,	-- Hatching a Plan
-						["groups"]	= {
+						["groups"] = {
 							i(37382),	-- Charred Drakehide Belt
 							i(37435),	-- Flame Infused Bindings
 							i(37513),	-- Helm of the Crimson Drakonid

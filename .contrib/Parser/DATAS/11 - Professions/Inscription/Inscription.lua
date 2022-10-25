@@ -722,22 +722,22 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		}),
 		cat(361, {	-- Item Enhancers
 			r(187519, {	-- Savage Ensorcelled Tarot
-				["timeline"] =  { "removed 9.0.1" },
+				["timeline"] = { "removed 9.0.1" },
 			}),
 			r(187518, {	-- Savage Weapon Crystal
-				["timeline"] =  { "removed 9.0.1" },
+				["timeline"] = { "removed 9.0.1" },
 			}),
 			r(187495, {	-- Mighty Ensorcelled Tarot
-				["timeline"] =  { "removed 9.0.1" },
+				["timeline"] = { "removed 9.0.1" },
 			}),
 			r(187494, {	-- Mighty Weapon Crystal
-				["timeline"] =  { "removed 9.0.1" },
+				["timeline"] = { "removed 9.0.1" },
 			}),
 			r(178248, {	-- Ensorcelled Tarot
-				["timeline"] =  { "removed 9.0.1" },
+				["timeline"] = { "removed 9.0.1" },
 			}),
 			r(166366, {	-- Weapon Crystal
-				["timeline"] =  { "removed 9.0.1" },
+				["timeline"] = { "removed 9.0.1" },
 			}),
 			r(166432),	-- Volatile Crystal
 		}),

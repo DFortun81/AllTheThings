@@ -495,3 +495,140 @@ i(0, 359666);		-- Crafter's Mark IV (Multiple Recipes from this itemID:187750 de
 i(0, 359673);		-- Crafter's Mark of the First Ones (Multiple Recipes from this itemID:187749 depending on profession)
 i(187828, 360014);	-- Infusion: Corpse Purification
 i(187848, 360318);	-- Sustaining Armor Polish
+
+------------------
+-- PATCH 10.0.0 --
+------------------
+-- Trainer
+i(0, 366261);	-- Dragon Isles Alchemy
+i(0, 370547);	-- Aerated Mana Potion
+i(0, 370746);	-- Basic Phial Experimentation
+i(0, 370743);	-- Basic Potion Experimentation
+i(0, 370551);	-- Elemental Potion of Power
+i(0, 370722);	-- Omnium Draconis
+i(0, 370465);	-- Phial of Tepid Versatility
+i(0, 370717);	-- Primal Convergent
+i(0, 370748);	-- Reclaim Concoctions
+i(0, 389190);	-- Recraft Equipment
+i(0, 370539);	-- Refreshing Healing Potion
+i(0, 370711);	-- Transmute: Awakened Air
+i(0, 370731);	-- Writhefire Oil
+-- ITEM
+i(198533, 381270);	-- Aerated Phial of Quick Hands
+i(191593, 370732);	-- Agitating Potion Augmentation
+i(191547, 370677);	-- Alacritous Alchemist Stone
+i(191544, 370673);	-- Cauldron of the Pooka
+i(191588, 370725);	-- Exultant Incense
+i(191589, 370728);	-- Fervid Incense
+i(191597, 370738);	-- Potion Absorption Inhibitor
+i(191594, 370733);	-- Reactive Phial Embelishment
+i(191586, 370723);	-- Sagacious Incense
+i(191587, 370724);	-- Somniferous Incense
+i(191590, 370729);	-- Stable Fluidic Draconium
+i(191545, 370676);	-- Sustaining Alchemist Stone
+i(191580, 370710);	-- Transmute: Awakened Earth
+i(191578, 370707);	-- Transmute: Awakened Fire
+i(191579, 370708);	-- Transmute: Awakened Frost
+-- Special
+i(0, 370543);	-- Elemental Potion of Ultimate Power [Shares item 201740]
+i(0, 370672);	-- Potion Cauldron of Ultimate Power [Shares item 201740]
+-- Disc
+-- Phial
+i(0, 370472);	-- Aerated Phial of Deftness
+i(0, 370476);	-- Charged Phial of Alacrity
+i(0, 370483);	-- Crystaline Phial of Perception
+i(0, 370457);	-- Iced Phial of Corrupting Rage
+i(0, 370460);	-- Phial of Charged Isolation
+i(0, 370504);	-- Phial of Elemental Chaos
+i(0, 370462);	-- Phial of Glacial Fury
+i(0, 370456);	-- Phial of Icy Preservation
+i(0, 370463);	-- Phial of Static Empowerment
+i(0, 370453);	-- Phial of Still Air
+i(0, 370438);	-- Phial of the Eye in the Storm
+i(0, 370473);	-- Steaming Phial of Finesse
+-- Potion
+i(0, 370521);	-- Bottled Putrescence
+i(0, 370536);	-- Delicate Suspension of Spores
+i(0, 370525);	-- Potion of Chilled Clarity
+i(0, 370478);	-- Potion of Frozen Fatality
+i(0, 370524);	-- Potion of Frozen Focus
+i(0, 370558);	-- Potion of Gusts
+i(0, 370561);	-- Potion of Shocking Disclosure
+i(0, 370556);	-- Potion of the Hushed Zephyr
+i(0, 370528);	-- Potion of Withering Vitality
+i(0, 370533);	-- Residual Neural Channeling Agent
+-- Specc
+i(0, 370747);	-- Advanced Phial Experimentation
+i(0, 370745);	-- Advanced Potion Experimentation
+i(0, 370730);	-- Brood Salt
+i(0, 370735);	-- Illustrious Insight
+i(0, 370668);	-- Potion Cauldron of Power
+i(0, 370715);	-- Transmute: Order to Elements
+i(0, 370714);	-- Transmute: Decay to Elements
+-- QUEST
+i(0, 377978);	-- Heart in a Bottle
+-- NO SOURCE
+i(0, 382571);	-- Opening
+-- NYI?
+i(0, 371635);	-- Demonstration Item Recipe
+i(0, 370771);	-- Dragon Isles Alchemy Troubleshooting Test Recipe (DNT)
+i(191598, 370739);	-- Alchemical Flavor Pocket
+i(191453, 370554);	-- Breezy Potion of Draconic Vigor
+i(191457, 370563);	-- Potion of Burning Purification
+i(191595, 370734);	-- Wisp of Tyr
+
+
+i(194543, 0);	-- Dragon Isles Jewelcrafting Recipe Template (DNT)
+i(191428, 0);	-- Dragon Isles Alchemy Recipe Template (DNT)
+i(194959, 0);	-- Dragon Isles Cooking Recipe Template (DNT)
+
+
+i(191602, 0);	-- Advanced Phial Experimentation
+i(191600, 0);	-- Advanced Potion Experimentation
+i(191451, 0);	-- Aerated Mana Potion
+i(191437, 0);	-- Aerated Phial of Deftness
+i(191601, 0);	-- Basic Phial Experimentation
+i(191599, 0);	-- Basic Potion Experimentation
+i(191443, 0);	-- Bottled Putrescence
+i(191591, 0);	-- Brood Salt
+i(191439, 0);	-- Charged Phial of Alacrity
+i(191441, 0);	-- Crystaline Phial of Perception
+i(191448, 0);	-- Delicate Suspension of Spores
+i(191452, 0);	-- Elemental Potion of Power
+i(191450, 0);	-- Elemental Potion of Ultimate Power
+i(191432, 0);	-- Iced Phial of Corrupting Rage
+i(191596, 0);	-- Illustrious Insight
+i(191585, 0);	-- Omnium Draconis
+i(191433, 0);	-- Phial of Charged Isolation
+i(191442, 0);	-- Phial of Elemental Chaos
+i(191434, 0);	-- Phial of Glacial Fury
+i(191431, 0);	-- Phial of Icy Preservation
+i(191435, 0);	-- Phial of Static Empowerment
+i(191430, 0);	-- Phial of Still Air
+i(191436, 0);	-- Phial of Tepid Versatility
+i(191429, 0);	-- Phial of the Eye in the Storm
+i(191542, 0);	-- Potion Cauldron of Power
+i(191543, 0);	-- Potion Cauldron of Ultimate Power
+i(191445, 0);	-- Potion of Chilled Clarity
+i(191440, 0);	-- Potion of Frozen Fatality
+i(191444, 0);	-- Potion of Frozen Focus
+i(191455, 0);	-- Potion of Gusts
+i(191456, 0);	-- Potion of Shocking Disclosure
+i(191454, 0);	-- Potion of the Hushed Zephyr
+i(191446, 0);	-- Potion of Withering Vitality
+i(191584, 0);	-- Primal Convergent
+i(191449, 0);	-- Refreshing Healing Potion
+i(191447, 0);	-- Residual Neural Channeling Agent
+i(191438, 0);	-- Steaming Phial of Finesse
+i(191581, 0);	-- Transmute: Awakened Air
+i(191582, 0);	-- Transmute: Decay to Elements
+i(191583, 0);	-- Transmute: Order to Elements
+i(191592, 0);	-- Writhefire Oil
+
+
+
+
+
+
+
+

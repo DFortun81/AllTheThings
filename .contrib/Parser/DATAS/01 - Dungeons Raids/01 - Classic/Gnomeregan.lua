@@ -108,7 +108,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ "i", 1206, 1 },	-- Moss Agate
 						{ "g", 3000 },	-- 30s
 					},
-					["lvl"]	= lvlsquish(28, 10, 28),
+					["lvl"] = lvlsquish(28, 10, 28),
 					["groups"] = {
 						i(9538),	-- Talvash's Gold Ring
 					},
@@ -200,7 +200,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["coord"] = { 75.8, 25.2, ORGRIMMAR },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["lvl"]	= 28,
+					["lvl"] = 28,
 					["cost"] = {
 						{ "i", 9362, 1 },	-- Brilliant Gold Ring
 						{ "i", 2842, 1 },	-- Silver Bar
@@ -218,7 +218,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 					["sourceQuest"] = 2945,	-- Grime-Encrusted Ring
 					["races"] = ALLIANCE_ONLY,
-					["lvl"]	= lvlsquish(28, 10, 28),
+					["lvl"] = lvlsquish(28, 10, 28),
 				}),
 				q(2949, {	-- Return of the Ring [Horde]
 					["providers"] = {
@@ -227,14 +227,14 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 					["sourceQuest"] = 2945,	-- Grime-Encrusted Ring
 					["races"] = HORDE_ONLY,
-					["lvl"]	= lvlsquish(28, 10, 28),
+					["lvl"] = lvlsquish(28, 10, 28),
 				}),
 				q(2841, {	-- Rig Wars
 					["qg"] = 3412, 	-- Nogg <Expert Engineer>
 					["coord"] = { 75.8, 25.2, ORGRIMMAR },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["lvl"]	= 25,
+					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- 0/1 Rig Blueprints
 							["provider"] = { "i", 9153 },	-- Rig Blueprints

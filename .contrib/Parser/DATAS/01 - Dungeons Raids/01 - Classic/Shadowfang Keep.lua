@@ -1383,7 +1383,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				q(1013, {	-- The Book of Ur
-					["qg"]	= 2934,	-- Keeper Bel'dugur
+					["qg"] = 2934,	-- Keeper Bel'dugur
 					["coord"] = { 54, 54.6, UNDERCITY },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,

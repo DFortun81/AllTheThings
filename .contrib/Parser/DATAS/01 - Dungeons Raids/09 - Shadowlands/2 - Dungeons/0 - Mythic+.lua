@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root("Instances", tier(SL_TIER, {
-	n(-857, {	-- Mythic+
+	n(MYTHIC_PLUS, {
 		n(ACHIEVEMENTS, {
 			-- Season 1
 			ach(14662, {		-- Realm First! Shadowlands Keystone Master

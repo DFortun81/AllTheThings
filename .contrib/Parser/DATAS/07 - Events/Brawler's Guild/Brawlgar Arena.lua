@@ -195,7 +195,7 @@ root("WorldEvents", m(503,
 			n(68364, {	-- Paul North <Brawl'gar Arena Quartermaster>  This vendor will change if you start the murder questline  New vendor = 145695 "Bad Luck" Symmes <Brawl'gar Arena Quartermaster>
 				["races"] = HORDE_ONLY,
 				["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
-				["g"]	= {
+				["g"] = {
 					i(142403, {	-- Brawler's Burly Basilisk (MOUNT!) unobtainable as of BFA prepatch
 						["timeline"] = { "added 7.1", "removed 8.0" },
 					}),

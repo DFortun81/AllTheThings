@@ -367,12 +367,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gan'zulah's Head
-							["provider"] =  { "i", 3904 },	-- Gan'zulah's Head
+							["provider"] = { "i", 3904 },	-- Gan'zulah's Head
 							["coord"] = { 23.8, 8.6, STRANGLETHORN_VALE },
 							["cr"] = 1061,	-- Gan'zulah <Bloodscalp Chief>
 						}),
 						objective(2, {	-- 0/1 Nezzliok's Head
-							["provider"] =  { "i", 3905 },	-- Nezzliok's Head
+							["provider"] = { "i", 3905 },	-- Nezzliok's Head
 							["coord"] = { 23.6, 9.6, STRANGLETHORN_VALE },
 							["cr"] = 1062,	-- Nezzliok the Dire <Bloodscalp Clan Witchdoctor>
 						}),

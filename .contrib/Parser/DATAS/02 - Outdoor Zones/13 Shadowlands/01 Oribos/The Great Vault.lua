@@ -80,7 +80,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 					},
 				}),
-				n(-857, {	-- Mythic+
+				n(MYTHIC_PLUS, {
 					["sym"] = {
 						-- Dungeons
 						{"select", "instanceID", 1188},			-- De Other Side

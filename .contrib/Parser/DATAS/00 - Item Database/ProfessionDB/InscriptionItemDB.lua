@@ -1334,3 +1334,25 @@ i(187797, 359786);	-- Contract: Enlightened Brokers
 i(190379, 367389);	-- Glyph of the Spectral Lupine
 i(190381, 367393);	-- Glyph of the Spectral Vulpine
 i(187806, 359890);	-- Vantus Rune: Sepulcher of the First Ones
+
+------------------
+-- PATCH 10.0.0 --
+------------------
+i(0, 366251);	-- Dragon Isles Inscription
+i(0, 382989);	-- Cataclysm Milling
+i(0, 382994);	-- Classic Milling
+i(0, 382987);	-- Draenor Milling
+i(0, 382981);	-- Dragon Isles Milling
+i(0, 377985);	-- Heart in a Bottle
+i(0, 382984);	-- Kul Tiras and Zandalar Milling
+i(0, 382986);	-- Legion Milling
+i(0, 371340);	-- Mixing Rod I
+i(0, 371376);	-- Mixing Rod II
+i(0, 382990);	-- Northrend Milling
+i(0, 382583);	-- Opening
+i(0, 382991);	-- Outland Milling
+i(0, 382988);	-- Pandaria Milling
+i(0, 371341);	-- Rolling Pin I
+i(0, 371375);	-- Rolling Pin II
+i(0, 381545);	-- Scroll of Sales
+i(0, 382982);	-- Shadowlands Milling

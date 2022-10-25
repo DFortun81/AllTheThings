@@ -59,7 +59,7 @@ _.Zones =
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12089, {	-- Aquatic Assault
-							["groups"]	= {
+							["groups"] = {
 								{
 									["achievementID"] = 12089,	-- Aquatic Assault
 									["criteriaID"] = 3,			-- Baneglow
@@ -129,7 +129,7 @@ _.Zones =
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12092, {	-- Critical Critters
-							["groups"]	= {
+							["groups"] = {
 								{
 									["achievementID"] = 12092,	-- Critical Critters
 									["criteriaID"] = 3,			-- Baneglow
@@ -164,7 +164,7 @@ _.Zones =
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12093, {	-- Draconic Destruction
-							["groups"]	= {
+							["groups"] = {
 								{
 									["achievementID"] = 12093,	-- Draconic Destruction
 									["criteriaID"] = 3,			-- Baneglow
@@ -304,7 +304,7 @@ _.Zones =
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12097, {	-- Magical Mayhem
-							["groups"]	= {
+							["groups"] = {
 								{
 									["achievementID"] = 12097,	-- Magical Mayhem
 									["criteriaID"] = 3,			-- Baneglow
@@ -374,7 +374,7 @@ _.Zones =
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12099, {	-- Unstoppable Undead
-							["groups"]	= {
+							["groups"] = {
 								{
 									["achievementID"] = 12099,	-- Unstoppable Undead
 									["criteriaID"] = 3,			-- Baneglow

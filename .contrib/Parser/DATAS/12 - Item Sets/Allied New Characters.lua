@@ -5,7 +5,7 @@
 _.GearSets =
 {
 	n(-210, {	-- Allied New Characters
-		["description"] = "You obtain these things by creating an allied race with the specific class. Contains Death Knight and Demon Hunter starting gear as well.",
+		["description"] = "You obtain these things by creating an allied race with the specific class. Contains Death Knight, Demon Hunter and Evoker starting gear as well.",
 		["g"] = {
 			cl(PRIEST, {
 				["classes"] = { PRIEST },
@@ -183,6 +183,22 @@ _.GearSets =
 					i(157643),	-- Helm-Hewer Greataxe
 				},
 			}),
+			cl(EVOKER, {
+				["classes"] = { EVOKER },
+				["g"] = {
+					i(188814),	-- Emerald Winglord's Amulet
+					i(188824),	-- Emerald Winglord's Boots
+					i(188823),	-- Emerald Winglord's Bracers
+					i(188815),	-- Emerald Winglord's Cloak
+					i(188820),	-- Emerald Winglord's Coif
+					i(188819),	-- Emerald Winglord's Greaves
+					i(188821),	-- Emerald Winglord's Grips
+					i(188822),	-- Emerald Winglord's Hauberk
+					i(188816),	-- Emerald Winglord's Insignia
+					i(188813),	-- Emerald Winglord's Loop
+					i(188812),	-- Emerald Winglord's Ringw
+				},
+			})
 		},
 	}),
 };

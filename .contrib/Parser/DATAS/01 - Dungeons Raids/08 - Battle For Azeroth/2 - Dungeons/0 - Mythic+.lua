@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(BFA_TIER, {
-	n(-857, {	-- Mythic+
+	n(MYTHIC_PLUS, {
 		n(AZERITE_ESSENCES, bubbleDownSelf({ ["timeline"] = { "added 8.2.0.30918", "removed 9.0.0" } }, {
 			i(169491),	-- Focused Life Anima
 			i(168399, {	-- Fetish of the Dark Caverns (Rank 1)

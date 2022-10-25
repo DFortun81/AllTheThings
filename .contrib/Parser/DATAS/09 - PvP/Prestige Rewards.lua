@@ -20,7 +20,7 @@ root("PVP", pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Prest
 				}),
 				q(42978, {	-- A Royal Audience [Alliance]
 					["provider"] = { "i", 138992 },	-- Grand Marshal's Medal of Valor
-					["description"]	= "You get this quest when you reach Prestige Rank 2.",
+					["description"] = "You get this quest when you reach Prestige Rank 2.",
 					["timeline"] = { "removed 8.0.1.10000" },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -60,7 +60,7 @@ root("PVP", pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Prest
 				}),
 				q(42985, {	-- A Royal Audience [Horde]
 					["provider"] = { "i", 138996 },	-- High Warlord's Medal of Valor
-					["description"]	= "You get this quest when you reach Prestige Rank 2.",
+					["description"] = "You get this quest when you reach Prestige Rank 2.",
 					["timeline"] = { "removed 8.0.1.10000" },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,

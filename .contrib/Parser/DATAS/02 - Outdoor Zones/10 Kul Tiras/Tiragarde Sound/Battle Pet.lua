@@ -2,7 +2,7 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
+root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(TIRAGARDE_SOUND, {
 		petbattle(filter(BATTLE_PETS, {
 			p(487, {	-- Alpine Chipmunk

@@ -1,0 +1,140 @@
+---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+
+root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
+	m(THE_AZURE_SPAN, {
+		n(ACHIEVEMENTS, {
+			ach(16065, {	-- Dragon Glyphs: Azure Archive
+				["coord"] = { 40.4, 66.5, THE_AZURE_SPAN },
+			}),
+			ach(16068, {	-- Dragon Glyphs: Brackenhide Hollow
+				["coord"] = { 10.3, 35.9, THE_AZURE_SPAN },
+			}),
+			ach(16064, {	-- Dragon Glyphs: Cobalt Assembly
+				["coord"] = { 45.8, 25.8, THE_AZURE_SPAN },
+			}),
+			ach(16069, {	-- Dragon Glyphs: Creektooth Den
+				["coord"] = { 22.2, 36.7, THE_AZURE_SPAN },
+			}),
+			ach(16070, {	-- Dragon Glyphs: Imbu
+				["coord"] = { 60.6, 70.0, THE_AZURE_SPAN },
+			}),
+			ach(16072, {	-- Dragon Glyphs: Kalthraz Fortress
+				["coord"] = { 67.6, 29.1, THE_AZURE_SPAN },
+			}),
+			ach(16067, {	-- Dragon Glyphs: Lost Ruins
+				["coord"] = { 70.6, 46.3, THE_AZURE_SPAN },
+			}),
+			ach(16066, {	-- Dragon Glyphs: Ruins of Karnthar
+				["coord"] = { 68.6, 60.4, THE_AZURE_SPAN },
+			}),
+			ach(16673, {	-- Dragon Glyphs: The Fallen Course
+				["coord"] = { 56.7, 15.9, THE_AZURE_SPAN },
+			}),
+			ach(16073, {	-- Dragon Glyphs: Vakthros Range
+				["coord"] = { 77.6, 30.8, THE_AZURE_SPAN },
+			}),
+			ach(16071, {	-- Dragon Glyphs: Zelthrak Outpost
+				["coord"] = { 52.9, 49.0, THE_AZURE_SPAN },
+			}),
+			ach(16577, {	-- Azure Span Glyph Hunter
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					16065,	-- Dragon Glyphs: Azure Archive
+					16068,	-- Dragon Glyphs: Brackenhide Hollow
+					16064,	-- Dragon Glyphs: Cobalt Assembly
+					16069,	-- Dragon Glyphs: Creektooth Den
+					16672,	-- Dragon Glyphs: Forkriver Crossing
+					16070,	-- Dragon Glyphs: Imbu
+					16072,	-- Dragon Glyphs: Kalthraz Fortress
+					16067,	-- Dragon Glyphs: Lost Ruins
+					16066,	-- Dragon Glyphs: Ruins of Karnthar
+					16673,	-- Dragon Glyphs: The Fallen Course
+					16073,	-- Dragon Glyphs: Vakthros Range
+					16071,	-- Dragon Glyphs: Zelthrak Outpost
+				}},
+			}),
+			ach(15921, {	-- Azure Span: Bronze
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					15847,	-- Archive Ambit: Bronze
+					15799,	-- The Azure Span Slalom: Bronze
+					15788,	-- The Azure Span Sprint: Bronze
+					15841,	-- Central Circuit: Bronze
+					15835,	-- Iskaara Flyover: Bronze
+					15818,	-- The Vakthros Ascent: Bronze
+				}},
+			}),
+			ach(15922, {	-- Azure Span: Silver
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					15848,	-- Archive Ambit: Silver
+					15800,	-- The Azure Span Slalom: Silver
+					15789,	-- The Azure Span Sprint: Silver
+					15842,	-- Central Circuit: Silver
+					15836,	-- Iskaara Flyover: Silver
+					15819,	-- The Vakthros Ascent: Silver
+				}},
+			}),
+			ach(15923, {	-- Azure Span: Gold
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					15849,	-- Archive Ambit: Gold
+					15801,	-- The Azure Span Slalom: Gold
+					15790,	-- The Azure Span Sprint: Gold
+					15843,	-- Central Circuit: Gold
+					15837,	-- Iskaara Flyover: Gold
+					15820,	-- The Vakthros Ascent: Gold
+				}},
+			}),
+			ach(15933, {	-- Azure Span Advanced: Bronze
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					15850,	-- Archive Ambit Advanced: Bronze
+					15802,	-- The Azure Span Slalom Advanced: Bronze
+					15791,	-- The Azure Span Sprint Advanced: Bronze
+					15844,	-- Central Circuit Advanced: Bronze
+					15838,	-- Iskaara Flyover Advanced: Bronze
+					15821,	-- The Vakthros Ascent Advanced: Bronze
+				}},
+			}),
+			ach(15934, {	-- Azure Span Advanced: Silver
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					15851,	-- Archive Ambit Advanced: Silver
+					15803,	-- The Azure Span Slalom Advanced: Silver
+					15792,	-- The Azure Span Sprint Advanced: Silver
+					15845,	-- Central Circuit Advanced: Silver
+					15839,	-- Iskaara Flyover Advanced: Silver
+					15822,	-- The Vakthros Ascent Advanced: Silver
+				}},
+			}),
+			ach(15935, {	-- Azure Span Advanced: Gold
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					15852,	-- Archive Ambit Advanced: Gold
+					15804,	-- The Azure Span Slalom Advanced: Gold
+					15793,	-- The Azure Span Sprint Advanced: Gold
+					15846,	-- Central Circuit Advanced: Gold
+					15840,	-- Iskaara Flyover Advanced: Gold
+					15823,	-- The Vakthros Ascent Advanced: Gold
+				}},
+			}),
+			ach(15889, {	-- River Rapids Wrangler
+				i(198428),	-- Tuskarr Dinghy (TOY!)
+			}),
+			ach(16336),	-- Azure Spanner
+
+			-- TODO: NOT DONE YET
+			ach(16300),	-- Treasures of The Azure Span
+			ach(16474),	-- Do You Wanna Build a Snowman?
+			ach(16460),	-- Explore the Azure Span
+			ach(16428),	-- Sojourner of Azure Span
+			ach(16678),	-- Adventurer of The Azure Span
+			ach(16638),	-- Ley Line in the Span
+			ach(16580),	-- Hub Helper
+			ach(16581),	-- Seeing Blue
+		}),
+	})
+})));

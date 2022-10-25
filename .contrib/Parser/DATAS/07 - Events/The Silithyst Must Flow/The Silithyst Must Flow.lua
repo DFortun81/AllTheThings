@@ -3,7 +3,7 @@
 --------------------------------------------
 -- Note: This is up here to prevent the unobtainable flag from getting put on the Major Healing and Mana Potions (for now)
 local MAJOR_HEALING_POTION = i(13446);	-- Major Healing Potion
-local MAJOR_MANA_POTION =    i(13444);	-- Major Mana Potion
+local MAJOR_MANA_POTION = i(13444);	-- Major Mana Potion
 
 root("WorldEvents", n(-541,	-- The Silithyst Must Flow
 	applyclassicphase(PHASE_SIX_SILITHYST, {

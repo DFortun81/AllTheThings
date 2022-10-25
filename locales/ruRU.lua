@@ -686,12 +686,8 @@ for key,value in pairs({
 		[-131] = "Внутренние земли - активен",						-- The Hinterlands Active
 		[-132] = "Фералас - активен",								-- Feralas Active
 		[-133] = "Сумеречный лес - активирован",					-- Duskwood Activated
-	-- Class Trial
-		[-148] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."(Пробный)",	-- Level 50 (Trial)
 	-- Garrison
 		[-152] = "Гарнизонная кампания",							-- Garrison Campaign
-	-- Class Trial
-		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."(Мгновенное повышение уровня)",	-- Level 50 (Boost)
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = "Внутренние земли - активирован",					-- The Hinterlands Activated
 		[-158] = "Фералас - активирован",							-- Feralas Activated
@@ -841,6 +837,18 @@ for key,value in pairs({
 		[-1009] = "Эпохальный Реколор",								-- Mythic Alternative
 		[-1010] = "Гладиатор Реколор",								-- Gladiator Alternative
 		[-1011] = "Ветеран Реколор",								-- Elite Alternative
+	-- Temp
+		[-1098] = "Побочные Задания",								-- Side Quests
+	-- Dragonflight
+		[-1100] = "Кастомизации Драконов",							-- Dragon Customization
+		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
+		[-1110] = "Драконья экспедиция",							-- Dragonscale Expedition
+		--TODO: [-1111] = "Climbing",								-- Climbing
+		[-1120] = "Кентавры Маруук",								-- Maruuk Centaur
+		[-1121] = "Клан Айлааг",									-- Clan Aylaag
+		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
+		[-1130] = "Искарские клыкарры",								-- Iskaara Tuskarr
+		[-1140] = "Союз Вальдраккена",								-- Valdrakken Accord
 	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",
 		[-2201] = "Странник и змей",

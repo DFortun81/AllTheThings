@@ -171,7 +171,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 				i(198665),	-- Pebble's Pebble
 				i(198647),	-- Fishspeaker's Lucky Lure
 				ach(16332, {	-- The Perfect Pebble
-					["providers"] = { 
+					["providers"] = {
 						{ "n", 194870 },	-- Pebble
 						{ "i", 199914 },	-- Glowing Pebble
 					},
@@ -287,8 +287,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 			}),
 		},
 	})),
-	n(-11000, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Temp Dragonflight
-		["name"] = "Dragonflight",	-- Just a placeholder since wow api can't call on DF yet.
+	tier(DF_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["description"] = "These rewards are available to anyone who purchases Dragonflight Heroic Edition.",
 		["timeline"] = { "added 9.2.5" },
 		["groups"] = {

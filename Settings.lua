@@ -43,14 +43,28 @@ settings:SetBackdrop({
 	insets = { left = 4, right = 4, top = 4, bottom = 4 }
 });
 settings:SetBackdropColor(0, 0, 0, 1);
-InterfaceOptions_AddCategory(settings);
-settings.Open = function(self)
-	-- Open the Options menu.
-	if InterfaceOptionsFrame:IsVisible() then
-		InterfaceOptionsFrame_Show();
+do	-- Add the ATT Settings frame into the WoW Settings options
+	local toc = select(4, GetBuildInfo());
+	-- 10.0: new way to configure settings frame
+	if toc >= 100000 then
+		local category = Settings.RegisterCanvasLayoutCategory(settings, settings.name)
+		Settings.RegisterAddOnCategory(category)
+		settings.Open = function(self)
+			-- Open the Options menu.
+			Settings.OpenToCategory(self.name);
+		end
 	else
-		InterfaceOptionsFrame_OpenToCategory(self.name);
-		InterfaceOptionsFrame_OpenToCategory(self.name);
+		InterfaceOptions_AddCategory(settings);
+		settings.Open = function(self)
+			-- Open the Options menu.
+			if InterfaceOptionsFrame:IsVisible() then
+				InterfaceOptionsFrame_Show();
+			else
+				Settings.OpenToCategory(category);
+				InterfaceOptionsFrame_OpenToCategory(self.name);
+				InterfaceOptionsFrame_OpenToCategory(self.name);
+			end
+		end
 	end
 end
 -- Provides a Unique Counter value for the Key referenced on each reference
@@ -221,11 +235,11 @@ local TooltipSettingsBase = {
 	},
 };
 
-local OnClickForTab = function(self)
-	local id = self:GetID();
-	local parent = self:GetParent();
+local OnClickForTab = function(self, button, id)
+	local id = id or self:GetID();
+	local parent = self and self:GetParent() or settings;
 	PanelTemplates_SetTab(parent, id);
-	-- print("CLICKED TAB", id, self:GetText());
+	-- print("CLICKED TAB", id, self and self:GetText());
 	for i,tab in ipairs(parent.Tabs) do
 		if i == id then
 			for j,o in ipairs(tab.objects) do
@@ -243,7 +257,8 @@ end;
 
 local RawSettings;
 settings.Initialize = function(self)
-	PanelTemplates_SetNumTabs(self, #self.Tabs);
+	PanelTemplates_SetNumTabs(self, self.numTabs);
+	OnClickForTab(nil, "AUTO", 1);
 
 	-- Assign the default settings
 	if not settings:ApplyProfile() then
@@ -285,7 +300,6 @@ settings.Initialize = function(self)
 	elseif app.Minimap then
 		app.Minimap:Hide();
 	end
-	OnClickForTab(self.Tabs[1]);
 	self:UpdateMode();
 
 	if self:GetTooltipSetting("Auto:MainList") then
@@ -365,7 +379,7 @@ settings.DeleteProfile = function(self, key)
 		-- deleting a profile used by other characters, they too will reset to default
 		for char,profKey in pairs(AllTheThingsProfiles.Assignments) do
 			if profKey == key then
-				AllTheThingsProfiles.Assignments[char]  = nil;
+				AllTheThingsProfiles.Assignments[char] = nil;
 			end
 		end
 		return true;
@@ -702,7 +716,7 @@ settings.ApplyBackdropColor = function(frame, r, g, b, a)
 end
 -- Creates a font string attached to the top of the provided frame with the given text
 local function AddLabel(frame, text)
-	local label = frame:CreateFontString(frame, "OVERLAY", "GameFontNormalSmall");
+	local label = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
 	label:SetPoint("BOTTOMLEFT", frame, "TOPLEFT", 0, -2);
 	label:SetJustifyH("LEFT");
 	label:SetHeight(18);
@@ -732,16 +746,15 @@ settings.CreateCheckBox = function(self, text, OnRefresh, OnClick)
 	return cb;
 end
 settings.CreateTab = function(self, text)
-	local id = #self.Tabs + 1;
-	local tab = CreateFrame("Button", self:GetName() .. "-Tab" .. id, self, "OptionsFrameTabButtonTemplate");
-	if id > 1 then tab:SetPoint("TOPLEFT", self.Tabs[id - 1], "TOPRIGHT", L["TAB_SPACING"], 0); end
-	table.insert(self.Tabs, tab);
+	local id = (self.numTabs or 0) + 1;
+	self.numTabs = id;
+	local tab = CreateFrame("Button", self:GetName() .. "-Tab" .. id, self, "PanelTopTabButtonTemplate");
+	-- using the PanelTopTabButtonTemplate seems to auto-insert the button into the .Tabs element of the parent now
 	self.MostRecentTab = tab;
 	tab.objects = {};
 	tab:SetID(id);
 	tab:SetText(text);
 	self.TabsByName[text] = tab;
-	PanelTemplates_TabResize(tab, 0);
 	tab:SetScript("OnClick", OnClickForTab);
 	return tab;
 end
@@ -905,7 +918,7 @@ settings.CreateButton = function(self, opts, functions)
 	local width = opts.width;
 	local tooltip = opts.tooltip;
 	local refs = opts.refs;
-	local template = opts.template or "OptionsButtonTemplate";
+	local template = opts.template;
 
 	local f = CreateFrame("Button", name, self, template);
 	f:SetText(text);
@@ -936,6 +949,7 @@ settings.CreateButton = function(self, opts, functions)
 	if self.MostRecentTab then table.insert(self.MostRecentTab.objects, f); end
 	return f;
 end
+
 -- Small library for building a scrolling frame with minimal setup
 (function()
 local scrollWidth = 16;
@@ -1379,7 +1393,7 @@ f:SetText("v" .. GetAddOnMetadata("AllTheThings", "Version"));
 f:Show();
 settings.version = f;
 
-f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
+f = CreateFrame("Button", nil, settings);
 f:SetPoint("TOPLEFT", settings, "BOTTOMLEFT", 0, -6);
 f:SetText(L["DISCORD_BUTTON_LABEL"]);
 f:SetWidth(100);
@@ -1389,7 +1403,7 @@ f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "discord.g
 f:SetATTTooltip(L["DISCORD_BUTTON_TOOLTIP"]);
 settings.community = f;
 
-f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
+f = CreateFrame("Button", nil, settings);
 f:SetPoint("TOPLEFT", settings.community, "TOPRIGHT", 4, 0);
 f:SetText(L["TWITCH_BUTTON_LABEL"]);
 f:SetWidth(100);
@@ -1399,7 +1413,7 @@ f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "twitch.tv
 f:SetATTTooltip(L["TWITCH_BUTTON_TOOLTIP"]);
 settings.twitch = f;
 
-f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
+f = CreateFrame("Button", nil, settings);
 f:SetPoint("TOPLEFT", settings.twitch, "TOPRIGHT", 4, 0);
 f:SetText(L["PATREON_BUTTON_LABEL"]);
 f:SetWidth(100);
@@ -1409,7 +1423,7 @@ f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "patreon.c
 f:SetATTTooltip(L["PATREON_BUTTON_TOOLTIP"]);
 settings.patreon = f;
 
-f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
+f = CreateFrame("Button", nil, settings);
 f:SetPoint("TOPLEFT", settings.patreon, "TOPRIGHT", 4, 0);
 f:SetText(L["MERCH_BUTTON_LABEL"]);
 f:SetWidth(100);
@@ -1428,7 +1442,7 @@ tab:SetPoint("TOPLEFT", settings.logo, "BOTTOMRIGHT", -36, 0);
 line = settings:CreateTexture(nil, "ARTWORK");
 line:SetPoint("LEFT", settings, "LEFT", 4, 0);
 line:SetPoint("RIGHT", settings, "RIGHT", -4, 0);
-line:SetPoint("TOP", settings.Tabs[1], "BOTTOM", 0, 0);
+line:SetPoint("TOP", tab, "BOTTOM", 0, 0);
 line:SetColorTexture(1, 1, 1, 0.4);
 line:SetHeight(2);
 
@@ -2733,7 +2747,7 @@ local allEquipmentFilters = {	-- Filter IDs
 	28,	-- Staves
 }
 
-f = CreateFrame("Button", nil, child, "OptionsButtonTemplate");
+f = CreateFrame("Button", nil, child);
 f:SetPoint("LEFT", ItemFiltersLabel, "LEFT", 0, -426);
 f:SetText(L["CLASS_DEFAULTS_BUTTON"]);
 f:SetWidth(120);
@@ -2757,7 +2771,7 @@ end;
 table.insert(settings.MostRecentTab.objects, f);
 settings.equipfilterdefault = f;
 
-f = CreateFrame("Button", nil, child, "OptionsButtonTemplate");
+f = CreateFrame("Button", nil, child);
 f:SetPoint("TOPLEFT", settings.equipfilterdefault, "TOPRIGHT", 4, 0);
 f:SetText(L["ALL_BUTTON"]);
 f:SetWidth(70);
@@ -2781,7 +2795,7 @@ end;
 table.insert(settings.MostRecentTab.objects, f);
 settings.equipfilterall = f
 
-f = CreateFrame("Button", nil, child, "OptionsButtonTemplate");
+f = CreateFrame("Button", nil, child);
 f:SetPoint("TOPLEFT", settings.equipfilterall, "TOPRIGHT", 4, 0);
 f:SetText(L["UNCHECK_ALL_BUTTON"]);
 f:SetWidth(70);

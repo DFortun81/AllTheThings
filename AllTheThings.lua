@@ -1077,7 +1077,8 @@ local function GetTradeSkillSpecialization(skillID)
 	return tradeSkillSpecializationMap[skillID];
 end
 app.GetTradeSkillLine = function()
-	return GetBaseTradeSkillID(C_TradeSkillUI.GetTradeSkillLine());
+	local profInfo = C_TradeSkillUI.GetBaseProfessionInfo();
+	return GetBaseTradeSkillID(profInfo.professionID);
 end
 app.GetSpecializationBaseTradeSkill = function(specializationID)
 	return specializationTradeSkillMap[specializationID];
@@ -1154,7 +1155,7 @@ for i=1,MAX_CREATURES_PER_ENCOUNTER do
 	model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
 	fi = math.floor(i / 2);
 	model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - 0.3);
-	model:SetDepth(i);
+	--model:SetDepth(i);
 	model:Hide();
 	tinsert(GameTooltipModel.Models, model);
 end
@@ -2779,6 +2780,7 @@ local NPCTitlesFromID = {};
 local NPCHarvester = CreateFrame("GameTooltip", "AllTheThingsNPCHarvester", UIParent, "GameTooltipTemplate");
 app.NPCNameFromID = setmetatable({}, { __index = function(t, id)
 	if not id then return; end
+	id = tonumber(id);
 	if id > 0 then
 		NPCHarvester:SetOwner(UIParent,"ANCHOR_NONE");
 		NPCHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id));
@@ -10036,6 +10038,7 @@ local classIcons = {
 	[10] = "Interface\\Icons\\ClassIcon_Monk",
 	[11] = "Interface\\Icons\\ClassIcon_Druid",
 	[12] = "Interface\\Icons\\ClassIcon_DemonHunter",
+	[13] = "Interface\\Icons\\ClassIcon_Evoker",
 };
 local GetClassIDFromClassFile = function(classFile)
 	for i,icon in pairs(classIcons) do
@@ -10470,7 +10473,8 @@ end)();
 
 -- Faction Lib
 (function()
-local GetFriendshipReputation, GetFriendshipReputationRanks = GetFriendshipReputation, GetFriendshipReputationRanks;
+local GetFriendshipReputation, GetFriendshipReputationRanks =
+	GetFriendshipReputation or C_GossipInfo.GetFriendshipReputation, GetFriendshipReputationRanks or C_GossipInfo.GetFriendshipReputationRanks;
 local StandingByID = {
 	[0] = {	-- 0: No Standing (Not in a Guild)
 		["color"] = "00404040",
@@ -10603,6 +10607,11 @@ local function GetCurrentFactionStandings(factionID)
 	local friend = GetFriendshipReputation(factionID);
 	if friend then
 		standing, maxStanding = GetFriendshipReputationRanks(factionID);
+		-- 10.0: GetFriendshipReputationRanks is now a table instead of 2 values, so split them
+		if not maxStanding then
+			maxStanding = standing.maxLevel;
+			standing = standing.currentLevel;
+		end
 	else
 		standing = select(3, GetFactionInfoByID(factionID));
 	end
@@ -17470,7 +17479,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window:SetMovable(true);
 		window:SetResizable(true);
 		window:SetPoint("CENTER");
-		window:SetMinResize(96, 32);
+		--window:SetMinResize(96, 32);
 		window:SetSize(300, 300);
 
 		-- set the scaling for the new window if settings have been initialized
@@ -17500,12 +17509,13 @@ function app:GetWindow(suffix, parent, onUpdate)
 
 		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
 		window.CloseButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
-		window.CloseButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 4, 3);
+		window.CloseButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", -1, -1);
+		window.CloseButton:SetSize(20, 20);
 		window.CloseButton:SetScript("OnClick", OnCloseButtonPressed);
 
 		-- The Scroll Bar.
 		local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
-		scrollbar:SetPoint("TOP", window.CloseButton, "BOTTOM", 0, -10);
+		scrollbar:SetPoint("TOP", window.CloseButton, "BOTTOM", 0, -15);
 		scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
 		scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
 		scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
@@ -21545,10 +21555,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 		local C_TradeSkillUI = C_TradeSkillUI;
 		local C_TradeSkillUI_GetCategoryInfo = C_TradeSkillUI.GetCategoryInfo;
 		local C_TradeSkillUI_GetRecipeInfo = C_TradeSkillUI.GetRecipeInfo;
-		local C_TradeSkillUI_GetRecipeItemLink = C_TradeSkillUI.GetRecipeItemLink;
-		local C_TradeSkillUI_GetRecipeNumReagents = C_TradeSkillUI.GetRecipeNumReagents;
-		local C_TradeSkillUI_GetRecipeReagentInfo = C_TradeSkillUI.GetRecipeReagentInfo;
-		local C_TradeSkillUI_GetRecipeReagentItemLink = C_TradeSkillUI.GetRecipeReagentItemLink;
+		local C_TradeSkillUI_GetRecipeSchematic = C_TradeSkillUI.GetRecipeSchematic;
 
 		self.initialized = true;
 		self.SkillsInit = {};
@@ -21571,6 +21578,46 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			['g'] = { },
 		});
 
+		-- Adds the pertinent information about a given recipeID to the reagentcache
+		local function CacheRecipeSchematic(recipeID, skipcaching, reagentCache)
+			local schematic = C_TradeSkillUI_GetRecipeSchematic(recipeID, false);
+			local craftedItemID = schematic.outputItemID;
+			-- app.PrintDebug("Recipe",recipeID,"==>",craftedItemID)
+			local reagentItem, reagentCount;
+			-- Recipes now have Slots for available Regeants...
+			for _,reagentSlot in ipairs(schematic.reagentSlotSchematics) do
+				-- reagentType: 1 = required, 0 = optional
+				if reagentSlot.reagentType == 1 then
+					reagentCount = reagentSlot.quantityRequired;
+					-- Each available Reagent for the Slot can be associated to the Recipe/Output Item
+					for _,reagentItemID in ipairs(reagentSlot.reagents) do
+						-- Make sure a cache table exists for this item.
+						-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
+						-- Index 2: The Crafted Item IDs => reagentCount
+						-- TODO: potentially re-design this structure
+						if reagentItemID then
+							reagentItem = reagentCache[reagentItemID];
+							if skipcaching then
+								-- remove any existing cached recipes
+								if reagentItem then
+									-- app.PrintDebug("removing reagent cache info",reagentItemID,recipeID,craftedItemID)
+									reagentItem[1][recipeID] = nil;
+									reagentItem[2][craftedItemID] = nil;
+								end
+							else
+								if not reagentItem then
+									reagentItem = { {}, {} };
+									reagentCache[reagentItemID] = reagentItem;
+								end
+								reagentItem[1][recipeID] = { craftedItemID, reagentCount };
+								reagentItem[2][craftedItemID] = reagentCount;
+							end
+						end
+
+					end
+				end
+			end
+		end
 		local function UpdateLocalizedCategories(self, updates)
 			if not updates["Categories"] then
 				-- app.PrintDebug("UpdateLocalizedCategories",self.lastTradeSkillID)
@@ -21597,7 +21644,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;
-				local skipcaching, spellRecipeInfo, categoryData, cachedRecipe, currentCategoryID, reagentItem;
+				local skipcaching, spellRecipeInfo, categoryData, cachedRecipe, currentCategoryID;
 				local categories = AllTheThingsAD.LocalizedCategoryNames;
 				-- print("Scanning recipes",#recipeIDs)
 				for i = 1,#recipeIDs do
@@ -21654,42 +21701,9 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 							end
 						end
 
-						local recipeLink = C_TradeSkillUI_GetRecipeItemLink(recipeID);
-						local craftedItemID = recipeLink and GetItemInfoInstant(recipeLink);
-						if craftedItemID then
-							local reagentLink, itemID, reagentCount;
-							for i=1,C_TradeSkillUI_GetRecipeNumReagents(recipeID) do
-								reagentCount = select(3, C_TradeSkillUI_GetRecipeReagentInfo(recipeID, i));
-								reagentLink = C_TradeSkillUI_GetRecipeReagentItemLink(recipeID, i);
-								itemID = reagentLink and GetItemInfoInstant(reagentLink);
-								-- print(recipeID, itemID, "=",reagentCount,">", craftedItemID);
-
-								-- Make sure a cache table exists for this item.
-								-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
-								-- Index 2: The Crafted Item IDs => reagentCount
-								-- TODO: potentially re-design this structure
-								if itemID then
-									reagentItem = reagentCache[itemID];
-									if skipcaching then
-										-- remove any existing cached recipes
-										if reagentItem then
-											-- print("removing reagent cache info", itemID,recipeID,craftedItemID)
-											reagentItem[1][recipeID] = nil;
-											reagentItem[2][craftedItemID] = nil;
-										end
-									else
-										if not reagentItem then
-											reagentItem = { {}, {} };
-											reagentCache[itemID] = reagentItem;
-										end
-										reagentItem[1][recipeID] = { craftedItemID, reagentCount };
-										-- if craftedItemID then reagentItem[2][craftedItemID] = reagentCount; end
-										reagentItem[2][craftedItemID] = reagentCount;
-									end
-								end
-							end
-						-- else
-						-- 	print("recipe does not craft an item",recipeLink)
+						-- Does this Recipe craft an Item?
+						if spellRecipeInfo.createsItem then
+							CacheRecipeSchematic(recipeID, skipcaching, reagentCache);
 						end
 					end
 				end
@@ -21775,6 +21789,11 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				-- Default Alignment on the WoW UI.
 				self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
 				self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
+				self:SetMovable(false);
+			elseif ProfessionsFrame then
+				-- Default Alignment on the 10.0 WoW UI
+				self:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT", 0, 0);
+				self:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT", 0, 0);
 				self:SetMovable(false);
 			else
 				self:SetMovable(false);
@@ -22725,7 +22744,7 @@ app.LoadDebugger = function()
 					end
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
 					if guid then type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
-					if app.DEBUG_PRINT then print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npc_id); end
+					if app.DEBUG_PRINT then print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npc_id, app.NPCNameFromID[npc_id]); end
 
 					local rawGroups = {};
 					for i=1,GetNumQuestRewards(),1 do
@@ -22844,7 +22863,7 @@ hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
 end)
 hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, recipeID, reagentID, ...)
 	if CanAttachTooltips() then
-		local link = C_TradeSkillUI.GetRecipeReagentItemLink(recipeID, reagentID);
+		local link = C_TradeSkillUI.GetRecipeFixedReagentItemLink(recipeID, reagentID);
 		if link then
 			AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
 			self:Show();
@@ -22853,22 +22872,22 @@ hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, recipeID, rea
 end)
 -- GameTooltip:HookScript("OnUpdate", CheckAttachTooltip);
 GameTooltip:HookScript("OnShow", AttachTooltip);
-GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
-GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
-GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
-GameTooltip:HookScript("OnTooltipCleared", ClearTooltip);
+--GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+--GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+--GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
+--GameTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 ItemRefTooltip:HookScript("OnShow", AttachTooltip);
-ItemRefTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
-ItemRefTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
-ItemRefTooltip:HookScript("OnTooltipCleared", ClearTooltip);
+--ItemRefTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+--ItemRefTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+--ItemRefTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 ItemRefShoppingTooltip1:HookScript("OnShow", AttachTooltip);
-ItemRefShoppingTooltip1:HookScript("OnTooltipSetQuest", AttachTooltip);
-ItemRefShoppingTooltip1:HookScript("OnTooltipSetItem", AttachTooltip);
-ItemRefShoppingTooltip1:HookScript("OnTooltipCleared", ClearTooltip);
+--ItemRefShoppingTooltip1:HookScript("OnTooltipSetQuest", AttachTooltip);
+--ItemRefShoppingTooltip1:HookScript("OnTooltipSetItem", AttachTooltip);
+--ItemRefShoppingTooltip1:HookScript("OnTooltipCleared", ClearTooltip);
 ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
-ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
-ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
-ItemRefShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
+--ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
+--ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
+--ItemRefShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
 
 --[[
 hooksecurefunc("EmbeddedItemTooltip_SetCurrencyByID", function(self, id, ...)

@@ -1097,3 +1097,10 @@ i(186992, 355184);	-- Anima-ted Leash
 -----------------
 i(187826, 360013);	-- Cosmic Protoweave
 i(187824, 360007);	-- Magically Regulated Automa Core
+
+------------------
+-- PATCH 10.0.0 --
+------------------
+i(0, 366255);		-- Dragon Isles Enchanting
+i(0, 382580);		-- Opening
+i(0, 377982);		-- Heart in a Bottle

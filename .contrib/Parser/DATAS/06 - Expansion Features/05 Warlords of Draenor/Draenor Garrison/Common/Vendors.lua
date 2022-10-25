@@ -132,7 +132,7 @@ _.ExpansionFeatures =
 				}),
 				n(88633, {	-- Deluwin Whisperfield <Contracts>
 					["races"] = ALLIANCE_ONLY,
-					["description"]	= "Sells contracts for followers not chosen during zone quests.",
+					["description"] = "Sells contracts for followers not chosen during zone quests.",
 					["g"] = {
 						i(119291, {	-- Contract: Artificer Andren
 							["cost"] = 50000000,	-- 5,000g
@@ -641,7 +641,7 @@ _.ExpansionFeatures =
 						}),
 						ach(9497, {	-- Finding Your Waystones
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"]	= {
+							["g"] = {
 								i(116197),	-- Spirit Lodge, Level 3
 							},
 						}),
@@ -1164,7 +1164,7 @@ _.ExpansionFeatures =
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9497, {	-- Finding Your Waystones
-							["g"]	= {
+							["g"] = {
 								i(109063),	-- Mage Tower, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",

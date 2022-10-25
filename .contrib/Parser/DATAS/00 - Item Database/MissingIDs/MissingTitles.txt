@@ -30,8 +30,6 @@ title(468),	-- Crimson Gladiator %s
 10.0.0.44895
 title(469),	-- %s, The Worldbreaker \\ %s, Close and Personal Friend of Deathwing
 10.0.0.45335
-title(470),	-- %s the Thundering Hero \\ %s, the [PH] Hero
-title(471),	-- Soupervisor %s
 title(472),	-- Birdwatcher %s
 10.0.0.45454
 title(473),	-- Khansguard %s
@@ -40,10 +38,12 @@ title(475),	-- Intrepid Explorer %s
 title(476),	-- %s of Iskaara
 10.0.0.45661
 title(477),	-- %s the Thundering \\ %s the [PH Season 1 Title]
-title(478),	-- Isles Racer %s
 title(479),	-- Malicious %s
 10.0.2.45779
 title(480),	-- %s, Knight of Feathersworth
 10.0.2.45969
 title(481),	-- %s the Elite Evoker
 title(482),	-- Crimson Soloist %s
+10.0.2.46091
+title(483),	-- %s, Paragon of the Obsidian Brood
+title(484),	-- %s, Agent of the Black Prince

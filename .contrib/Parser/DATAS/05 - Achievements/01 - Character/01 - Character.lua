@@ -52,13 +52,14 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_CHARACTER, {
 		ach(5455),		-- Got My Mind On My Money (50,000)
 		ach(5456),		-- Got My Mind On My Money (100,000)
 	}),
-	ach(14783, {	-- Level 60
-		ach(6),			-- Level 10
-		ach(7),			-- Level 20
-		ach(8),			-- Level 30
-		ach(9),			-- Level 40
-		ach(14782),		-- Level 50
-	}),
+	ach(15805, {["timeline"] = { ADDED_DF }}),		-- Level 70
+	ach(14783, {["timeline"] = { "added 9.0.1" }}),	-- Level 60
+	ach(14782, {["timeline"] = { "added 9.0.1" }}),	-- Level 50
+	ach(14884, {["timeline"] = { "added 9.0.1" }}),	-- Level 45
+	ach(9, {["timeline"] = { "added 3.0.2" }}),		-- Level 40
+	ach(8, {["timeline"] = { "added 3.0.2" }}),		-- Level 30
+	ach(7, {["timeline"] = { "added 3.0.2" }}),		-- Level 20
+	ach(6, {["timeline"] = { "added 3.0.2" }}),		-- Level 10
 	ach(7384, {		-- Quintessential Quintet
 		ach(7382),		-- Dynamic Duo
 		ach(7383),		-- Terrific Trio

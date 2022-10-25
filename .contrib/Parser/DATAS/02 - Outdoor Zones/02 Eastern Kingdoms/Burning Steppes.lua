@@ -1768,7 +1768,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 44927,	-- Worth Its Weight in Steel
 					["coord"] = { 46.9, 44.6, BURNING_STEPPES },
 					["timeline"] = { "added 7.1.5.23038" },
-					["groups"]	= {
+					["groups"] = {
 						i(142346, {	-- Plans: Bleakwood Hew (RECIPE!)
 							["timeline"] = { "added 7.1.5.23360" },
 						}),
