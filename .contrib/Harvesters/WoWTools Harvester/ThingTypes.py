@@ -6,6 +6,10 @@ DATAS_FOLDER = Path("..", "..", "Parser", "DATAS")
 DELIMITER = "~"
 
 
+def remove_non_digits(string: str) -> str:
+    return re.sub("\\D", "", string)
+
+
 class Thing(ABC):
     real_collectible: bool = True
     db_path: Path | None = None
@@ -100,7 +104,7 @@ class FlightPaths(Thing):
     @staticmethod
     def extract_existing_info(line: str) -> str:
         fp_line = line.split("=")[0]
-        fp_line = re.sub("\\D", "", fp_line)
+        fp_line = remove_non_digits(fp_line)
         return fp_line
 
 

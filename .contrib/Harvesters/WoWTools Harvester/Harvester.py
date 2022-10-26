@@ -22,6 +22,7 @@ from ThingTypes import (
     Titles,
     Toys,
     Transmog,
+    remove_non_digits,
 )
 
 
@@ -81,18 +82,18 @@ def build_profession_dict() -> dict[str, int]:
         for skillline_line in skillline_file:
             if skillline_line not in builds:
                 skillline_id, profession = skillline_line.split(DELIMITER)
-                skillline_id = re.sub("\\D", "", skillline_id)
+                skillline_id = remove_non_digits(skillline_id)
                 if skillline_id + "\n" not in exclusion_list:
                     profession_dict[profession.strip()] = int(skillline_id)
     return profession_dict
 
 
 def get_other_skilllines() -> list[int]:
-    """Get the "other" skilllines ."""
+    """Get other interesting skilllines ."""
     other_skilllines = list[int]()
     with open(Path("Exclusion", "SkillLineOther.txt")) as skilllineother_file:
         for line in skilllineother_file:
-            skillline_id = re.sub("\\D", "", line.split(DELIMITER)[0])
+            skillline_id = remove_non_digits(line.split(DELIMITER)[0])
             other_skilllines.append(int(skillline_id))
     return other_skilllines
 
@@ -189,32 +190,35 @@ def create_missing_recipes() -> None:
             )
             difference = remove_empty_builds(difference)
             missing_file.writelines(difference)
-            itemdb_list = list[str]()
-            itemdb_path = Path(
-                DATAS_FOLDER,
-                "00 - Item Database",
-                "ProfessionDB",
-                f"{profession}ItemDB.lua",
-            )
-            try:
-                with open(itemdb_path) as itemdb_file:
-                    for line in itemdb_file:
-                        try:
-                            line = line.split(";")[0].split(",")[1]
-                        except IndexError:
-                            line = ""
-                        line = re.sub("\\D", "", line)
-                        itemdb_list.append(line + "\n")
-                    difference = sorted(
-                        set(raw_lines) - set(itemdb_list), key=raw_lines.index
-                    )
-                    difference = remove_empty_builds(difference)
-                    # if not (difference := remove_empty_builds(difference)):
-                    #    continue
-                    missing_file.write(f"\n\n\n\nMissing in {profession}ItemDB.lua\n\n")
-                    missing_file.writelines(difference)
-            except FileNotFoundError:
-                print(f"This {profession} has no ItemDB.lua")
+            if not (difference := get_itemdb_difference(profession, raw_lines)):
+                continue
+            missing_file.write(f"\n\n\n\nMissing in {profession}ItemDB.lua\n\n")
+            missing_file.writelines(difference)
+
+
+def get_itemdb_difference(profession: str, raw_lines: list[str]) -> list[str]:
+    itemdb_list = list[str]()
+    itemdb_path = Path(
+        DATAS_FOLDER,
+        "00 - Item Database",
+        "ProfessionDB",
+        f"{profession}ItemDB.lua",
+    )
+    try:
+        with open(itemdb_path) as itemdb_file:
+            for line in itemdb_file:
+                try:
+                    line = line.split(";")[0].split(",")[1]
+                except IndexError:
+                    line = ""
+                line = remove_non_digits(line)
+                itemdb_list.append(line + "\n")
+            difference = sorted(set(raw_lines) - set(itemdb_list), key=raw_lines.index)
+            difference = remove_empty_builds(difference)
+            return difference
+    except FileNotFoundError:
+        print(f"This {profession} has no ItemDB.lua")
+        return []
 
 
 def create_missing_file(thing: type[Thing]) -> None:
@@ -223,37 +227,35 @@ def create_missing_file(thing: type[Thing]) -> None:
         raise NotImplementedError("This is not a real collectible.")
     if thing == Recipes:
         create_missing_recipes()
-    else:
-        missing_path = Path(
-            DATAS_FOLDER,
-            "00 - Item Database",
-            "MissingIDs",
-            f"Missing{thing.__name__}.txt",
+        return
+    missing_path = Path(
+        DATAS_FOLDER,
+        "00 - Item Database",
+        "MissingIDs",
+        f"Missing{thing.__name__}.txt",
+    )
+    with open(missing_path, "w") as missing_file:
+        raw_ids = extract_nth_column(Path("Raw", f"{thing.__name__}.txt"), 0)
+        excluded_ids = extract_nth_column(Path("Exclusion", f"{thing.__name__}.txt"), 0)
+        difference = sorted(
+            set(raw_ids) - set(get_existing_ids(thing)) - set(excluded_ids),
+            key=raw_ids.index,
         )
-        with open(missing_path, "w") as missing_file:
-            raw_ids = extract_nth_column(Path("Raw", f"{thing.__name__}.txt"), 0)
-            excluded_ids = extract_nth_column(
-                Path("Exclusion", f"{thing.__name__}.txt"), 0
-            )
-            difference = sorted(
-                set(raw_ids) - set(get_existing_ids(thing)) - set(excluded_ids),
-                key=raw_ids.index,
-            )
-            difference = remove_empty_builds(difference)
-            missing_file.writelines(difference)
-            if thing.db_path:
-                existing_things = list[str]()
-                with open(thing.db_path) as db_file:
-                    for line in db_file:
-                        if info := thing.extract_existing_info(line):
-                            existing_things.append(info + "\n")
-                    difference = sorted(
-                        set(raw_ids) - set(existing_things), key=raw_ids.index
-                    )
-                    if not (difference := remove_empty_builds(difference)):
-                        return
-                    missing_file.write(f"\n\n\n\nMissing in {thing.db_path.name}\n\n")
-                    missing_file.writelines(difference)
+        difference = remove_empty_builds(difference)
+        missing_file.writelines(difference)
+        if thing.db_path:
+            existing_things = list[str]()
+            with open(thing.db_path) as db_file:
+                for line in db_file:
+                    if info := thing.extract_existing_info(line):
+                        existing_things.append(info + "\n")
+                difference = sorted(
+                    set(raw_ids) - set(existing_things), key=raw_ids.index
+                )
+                if not (difference := remove_empty_builds(difference)):
+                    return
+                missing_file.write(f"\n\n\n\nMissing in {thing.db_path.name}\n\n")
+                missing_file.writelines(difference)
 
 
 def post_process(thing: type[Thing]) -> None:
