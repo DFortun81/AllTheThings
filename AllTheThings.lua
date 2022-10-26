@@ -3080,6 +3080,7 @@ app.MergedObject = function(group, rootOnly)
 	return merged;
 end
 end)();
+
 local function ExpandGroupsRecursively(group, expanded, manual)
 	-- expand if there is any sub-group
 	if group.g then
@@ -10474,7 +10475,27 @@ end)();
 -- Faction Lib
 (function()
 local GetFriendshipReputation, GetFriendshipReputationRanks =
-	GetFriendshipReputation or C_GossipInfo.GetFriendshipReputation, GetFriendshipReputationRanks or C_GossipInfo.GetFriendshipReputationRanks;
+	GetFriendshipReputation, GetFriendshipReputationRanks;
+
+-- 10.0 Blizz does some weird stuff with Friendship functions now, so let's try to wrap the functionality to work with what we expected before... at least for now
+if C_GossipInfo then
+	local GetBlizzFriendship = C_GossipInfo.GetFriendshipReputation;
+	GetFriendshipReputation = function(factionID, field)
+		local friendInfo = GetBlizzFriendship(factionID);
+		local friendFactionID = friendInfo and friendInfo.friendshipFactionID or 0;
+		if friendFactionID ~= 0 then
+			return field and friendInfo[field] or true;
+		end
+	end
+	local GetBlizzFriendshipRanks = C_GossipInfo.GetFriendshipReputationRanks;
+	GetFriendshipReputationRanks = function(factionID)
+		local rankInfo = GetBlizzFriendshipRanks(factionID);
+		local maxLevel = rankInfo and rankInfo.maxLevel or 0;
+		if maxLevel ~= 0 then
+			return rankInfo.currentLevel, maxLevel;
+		end
+	end
+end
 local StandingByID = {
 	[0] = {	-- 0: No Standing (Not in a Guild)
 		["color"] = "00404040",
@@ -10514,7 +10535,7 @@ local StandingByID = {
 	},
 };
 app.FactionNameByID = setmetatable({}, { __index = function(t, id)
-	local name = select(1, GetFactionInfoByID(id)) or select(4, GetFriendshipReputation(id));
+	local name = select(1, GetFactionInfoByID(id)) or GetFriendshipReputation(id, "name");
 	if name then
 		rawset(t, id, name);
 		rawset(app.FactionIDByName, name, id);
@@ -10607,11 +10628,6 @@ local function GetCurrentFactionStandings(factionID)
 	local friend = GetFriendshipReputation(factionID);
 	if friend then
 		standing, maxStanding = GetFriendshipReputationRanks(factionID);
-		-- 10.0: GetFriendshipReputationRanks is now a table instead of 2 values, so split them
-		if not maxStanding then
-			maxStanding = standing.maxLevel;
-			standing = standing.currentLevel;
-		end
 	else
 		standing = select(3, GetFactionInfoByID(factionID));
 	end
@@ -10631,7 +10647,7 @@ end
 -- Returns StandingText or Requested Standing colorzing the 'Standing' text for the Faction, or otherwise the provided 'textOverride'
 app.GetCurrentFactionStandingText = function(factionID, requestedStanding, textOverride)
 	local standing = requestedStanding or GetCurrentFactionStandings(factionID);
-	local friendStandingText = select(7, GetFriendshipReputation(factionID));
+	local friendStandingText = GetFriendshipReputation(factionID, "reaction");
 	if friendStandingText then
 		local _, maxStanding = GetFriendshipReputationRanks(factionID);
 		-- adjust relative to max based on the actual max ranks of the friendship faction
@@ -10663,8 +10679,8 @@ local function CacheInfo(t, field)
 	-- do not attempt caching more than 1 time per factionID since not every cached field may have a cached value
 	if _t.name then return end
 	local factionInfo = { GetFactionInfoByID(id) };
-	local friendshipInfo = { GetFriendshipReputation(id) };
-	local name = factionInfo[1] or friendshipInfo[4];
+	local friendshipName = GetFriendshipReputation(id, "name");
+	local name = factionInfo[1] or friendshipName;
 	local lore = factionInfo[2];
 	_t.name = name or (t.creatureID and app.NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. id);
 	if lore then
@@ -10672,9 +10688,9 @@ local function CacheInfo(t, field)
 	elseif not name then
 		_t.description = L["FACTION_SPECIFIC_REP"];
 	end
-	if friendshipInfo[1] then
+	if friendshipName then
 		rawset(t, "isFriend", true);
-		local friendship = friendshipInfo[5];
+		local friendship = GetFriendshipReputation(id, "text");
 		if friendship then
 			if _t.lore then
 		 		_t.lore = _t.lore.."\n\n"..friendship;
@@ -10701,7 +10717,7 @@ local fields = {
 	["icon"] = function(t)
 		return t.achievementID and select(10, GetAchievementInfo(t.achievementID))
 			or L["FACTION_ID_ICONS"][t.factionID]
-			or t.isFriend and select(6, GetFriendshipReputation(t.factionID))
+			or t.isFriend and GetFriendshipReputation(t.factionID, "texture")
 			or app.asset("Category_Factions");
 	end,
 	["link"] = function(t)
@@ -10750,12 +10766,6 @@ local fields = {
 		local factionID = t.factionID;
 		if app.CurrentCharacter.Factions[factionID] then return true; end
 		if t.standing >= t.maxstanding then
-			app.CurrentCharacter.Factions[factionID] = 1;
-			ATTAccountWideData.Factions[factionID] = 1;
-			return true;
-		end
-		local friendID, _, _, _, _, _, _, _, nextFriendThreshold = GetFriendshipReputation(factionID);
-		if friendID and not nextFriendThreshold then
 			app.CurrentCharacter.Factions[factionID] = 1;
 			ATTAccountWideData.Factions[factionID] = 1;
 			return true;
