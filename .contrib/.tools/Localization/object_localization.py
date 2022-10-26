@@ -58,7 +58,7 @@ async def get_localized_obj_name_flavor(
     url += f"object={obj_id}"
     try:
         async with session.get(url=url) as response:
-            if "ptr" in response.url.human_repr():
+            if any(test in response.url.human_repr() for test in ("ptr", "beta")):
                 logging.warning(f"{url} redirects to {response.url.human_repr()}")
                 return ""
             resp = await response.read()
