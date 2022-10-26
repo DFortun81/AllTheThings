@@ -860,7 +860,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 186157 },	-- Ruriq
 					["coord"] = { 45.4, 54.2, THE_AZURE_SPAN },
 				}),
-				q(65724, {	-- The Gleamfisher
+				q(66724, {	-- The Gleamfisher
 					["sourceQuests"] = { 65926 },	-- Tackling the Falls
 					["provider"] = { "n", 186386 },	-- Kauj
 					["coord"] = { 45.5, 54.2, THE_AZURE_SPAN },

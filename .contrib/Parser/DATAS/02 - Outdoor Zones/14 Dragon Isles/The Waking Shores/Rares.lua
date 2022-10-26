@@ -35,6 +35,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["crs"] = { 193228 },	-- Snappy
 				["coord"] = { 78.6, 50.0, THE_WAKING_SHORES },
 			}),
+			--[[
 			v(5386, {	-- 	Qalashi War Party
 				["crs"] = {
 					192737,	-- Qalashi War Mammoth
@@ -45,6 +46,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				},
 				["coord"] = { 53.3, 66.5, THE_WAKING_SHORES },
 			}),
+			--]]
 		}),
 	}),
 })));
