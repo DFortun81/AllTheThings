@@ -39,7 +39,7 @@ While we tried our best to add all the new content new expansion offers we only 
 ### Functional changes
 
 - Initial support for Dragonflight changes
-- Added a 'Future Unobtainable' category to the Dynamic groups to help how what things are known/expected to become unavailable in a predicted future patch. You can use this to hunt the content that's known to become unobtainable with expansion release next month.
+- Added a 'Future Unobtainable' category to the Dynamic groups to help show what things are known/expected to become unavailable in a predicted future patch. You can use this to hunt the content that's known to become unobtainable with expansion release next month.
 
 
 ### Logic fixes
@@ -50,9 +50,3 @@ As this is a new expansion we have some unresolved bugs that will be fixed in fu
 - AllTheThings map icon is inside the minimap
 - You can't change profile because the switch button is not functional
 - ATT tooltips (or parts of them) disappear after a few milliseconds
-
-
-### Data fixes
-
--
-- Other fixes.
