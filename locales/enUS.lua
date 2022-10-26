@@ -10,6 +10,10 @@
 --				This script is called directly after the Core.lua file. 	  --
 --------------------------------------------------------------------------------
 
+-- Globals that Blizzard broke/removed in 10.0
+CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER = "Class Trial";
+CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "Character Boost";
+
 local name, app = ...;
 app.L = {
 	["TAB_SPACING"] = -10;	-- This is to control spacing between tab names in Settings
