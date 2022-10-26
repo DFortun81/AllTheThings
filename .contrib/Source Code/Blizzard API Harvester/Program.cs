@@ -603,11 +603,17 @@ namespace ATT
                     return true;
                 // 27 QUIVER, ignore
                 // 28 RELIC, ignore
+                case "PROFESSION_TOOL":
+                    inventoryTypeID = 29;
+                    return true;
+                case "PROFESSION_GEAR":
+                    inventoryTypeID = 30;
+                    return true;
                 default:
                     Console.Write("Unhandled Inventory Type ");
                     Console.Write(inventoryType);
                     Console.WriteLine();
-                    Console.ReadLine();
+                    //Console.ReadLine();
                     inventoryTypeID = 0;
                     return false;
             }

@@ -40,3 +40,4 @@ __pycache__
 .venv
 .contrib/Parser/*.txt
 .contrib/Source Code/Item DB Compare Tool/bin/
+.contrib/Source Code/Blizzard API Harvester/packages/

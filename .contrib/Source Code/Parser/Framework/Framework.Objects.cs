@@ -408,6 +408,9 @@ namespace ATT
                     // WoW Token
                     case 18: return Filters.Ignored;
 
+                    // Profession
+                    case 19: return Filters.Ignored;
+
                     // Not something where these settings would help parse it.
                     default: break;
                 }
