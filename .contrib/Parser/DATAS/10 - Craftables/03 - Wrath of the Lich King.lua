@@ -312,9 +312,15 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 		filter(TOYS, {
 			i(40895),	-- Gnomish X-Ray Specs (TOY!)
 			i(40768),	-- MOLL-E (TOY!)
+			-- #if BEFORE 4.0.1
+			i(40727, {	-- Personal Ejector Seat / Gnomish Gravity Well (TOY!)
+				["description"] = "This later becomes the Gnomish Gravity Well toy.",
+				["timeline"] = { "created 3.3.0", "added 4.0.1" },
+			}),
+			-- #endif
 			i(48933),	-- Wormhole Generator: Northrend (TOY!)
 		}),
-		filter(CONSUMABLES, {
+		category(755, {	-- Scopes
 			i(41146),	-- Sun Scope
 			i(41167),	-- Heartseeker Scope
 		}),
