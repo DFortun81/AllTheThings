@@ -236,6 +236,8 @@ app.L = {
 	["LOCK_CRITERIA_FACTION_LABEL"] = "Faction Reputation";
 	["LOCK_CRITERIA_FACTION_FORMAT"] = "%s with %s (Current: %s)";
 	["FORCE_REFRESH_REQUIRED"] = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.."-Click) to properly be collected.";
+	["FUTURE_UNOBTAINABLE"] = "Future Unobtainable!";
+	["FUTURE_UNOBTAINABLE_TOOLTIP"] = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
 
 	["TIER_DATA"] = {
 		{	-- Classic

@@ -5894,6 +5894,7 @@ fieldCache["professionID"] = {};
 fieldCache["requireSkill"] = rawget(fieldCache, "professionID");
 fieldCache["questID"] = {};
 fieldCache["runeforgePowerID"] = {};
+fieldCache["rwp"] = {};
 fieldCache["s"] = {};
 fieldCache["speciesID"] = {};
 fieldCache["spellID"] = {};
@@ -6013,6 +6014,9 @@ fieldConverters = {
 	end,
 	["runeforgePowerID"] = function(group, value)
 		CacheField(group, "runeforgePowerID", value);
+	end,
+	["rwp"] = function(group, value)
+		CacheField(group, "rwp", value);
 	end,
 	["s"] = function(group, value)
 		CacheField(group, "s", value);
@@ -17740,6 +17744,17 @@ function app:GetDataCache()
 		-- don't cache maps for dynamic content because it's already source-cached for the respective maps
 		app.ToggleCacheMaps(true);
 		app.print(sformat(L["LOADING_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]));
+
+		-- Future Unobtainable
+		local db = {}; -- temp
+		db.parent = primeData;
+		db.back = 1;
+		db.name = L["FUTURE_UNOBTAINABLE"];
+		db.text = db.name;
+		db.description = L["FUTURE_UNOBTAINABLE_TOOLTIP"];
+		db.icon = 134399; -- inv_misc_qirajicrystal_05
+		db.dynamic_withsubgroups = true;
+		tinsert(g, DynamicCategory(db, "rwp"));
 
 		-- Artifacts (Dynamic)
 		local db = app.CreateNPC(-10067);
