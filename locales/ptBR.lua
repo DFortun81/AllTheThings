@@ -2440,7 +2440,7 @@ for key,value in pairs({
 	[280576] = "Pergaminho Embrulhado",	-- Encased Scroll
 	[280619] = "Baú Férreo Antigo",	-- Old Ironbound Chest
 	[280727] = "Bilhete Chamuscado",	-- Charred Note
-	--TODO: [280755] = "Quintin's Satchel",	-- Quintin's Satchel
+	[280755] = "Algibeira de Quintino",	-- Quintin's Satchel
 	[280815] = "|cFFFFFFFFStep 1:|r Carta da Srta. Graham I",	-- |cFFFFFFFFStep 1:|r Letter from Ms. Graham I
 	[280836] = "|cFFFFFFFFStep 2:|r Letter from Ms. Graham II",	-- |cFFFFFFFFStep 2:|r Letter from Ms. Graham II
 	[280837] = "|cFFFFFFFFStep 3:|r Carta da Srta. Graham III",	-- |cFFFFFFFFStep 3:|r Letter from Ms. Graham III
@@ -2646,9 +2646,9 @@ for key,value in pairs({
 	[307325] = "Cartaz de Procura-se",	-- Wanted Poster
 	--TODO: [307330] = "Captain's Footlocker",	-- Captain's Footlocker
 	[307748] = "Carta da Empreendimentos S.A.",	-- Venture Co. Letter
-	--TODO: [309498] = "Armor Stand",	-- Armor Stand
+	[309498] = "Estande de Armaduras",	-- Armor Stand
 	[310709] = "Baú Encharcado",	-- Waterlogged Chest
-	--TODO: [311155] = "Ancient Tablet",	-- Ancient Tablet
+	[311155] = "Tabuleta Ancestral",	-- Ancient Tablet
 	[311218] = "Xal'atath, a Lâmina do Império Negro",	-- Xal'atath, Blade of the Black Empire
 	[311902] = "Peças Soltas",	-- Loose Parts
 	[311903] = "Peças Soltas",	-- Loose Parts
