@@ -1351,7 +1351,7 @@ GameTooltipModel.TrySetModel = function(self, reference)
 			end
 		end
 
-		if reference.model then
+		if reference.model and reference.model > 0 then
 			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
 			self.Model:SetCamDistanceScale(reference.modelScale or 1);
 			self.Model:SetUnit("none");
