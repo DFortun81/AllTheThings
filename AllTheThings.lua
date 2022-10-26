@@ -8293,6 +8293,11 @@ local function MapSourceQuestsRecursive(parentQuestID, questID, currentDepth, de
 			questRef.collectible = true;
 		end
 
+		-- don't consider locked quests which have been skipped if not tracking locked quests
+		if not questRef.collected and questRef.locked and not app.Settings:Get("Thing:QuestsLocked") then
+			questRef.collectible = false;
+		end
+
 		-- If the user is in a Party Sync session, then force showing pre-req quests which are replayable if they are collected already
 		if app.IsInPartySync and questRef.collected then
 			questRef.OnUpdate = app.ShowIfReplayableQuest;
