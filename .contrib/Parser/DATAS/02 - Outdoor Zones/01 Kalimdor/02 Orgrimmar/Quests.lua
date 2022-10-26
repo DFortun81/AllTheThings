@@ -869,11 +869,6 @@ root("Zones", m(KALIMDOR, {
 					un(REMOVED_FROM_GAME, i(7298)),	-- Blade of Cunning
 				},
 			}),
-			q(27570, {	-- The Situation So Far
-				["provider"] = { "n", 39283 },	-- Earthmender Norsala
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
 			q(50769, {	-- The Stormwind Extraction
 				["sourceQuests"] = { 51443 },	-- Mission Statement
 				["provider"] = { "n", 135205 },	-- Nathanos Blightcaller

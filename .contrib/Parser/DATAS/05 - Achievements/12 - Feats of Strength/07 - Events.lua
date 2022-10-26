@@ -36,9 +36,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, a(ach(4786))),	-- Operation: Gnomeregan (Alliance)
 		un(REMOVED_FROM_GAME, ach(6059)),		-- Red Rider Air Rifle
 		un(FEAST_OF_WINTER_VEIL, ach(15313)),	-- Rockin' Rollin' Racer
-		un(REMOVED_FROM_GAME, ach(1637)),		-- Spirit of Competition
-		un(REMOVED_FROM_GAME, ach(2116)),		-- Tabard of the Argent Dawn
-		un(REMOVED_FROM_GAME, ach(2079)),		-- Tabard of the Protector
 		un(REMOVED_FROM_GAME, ach(9618, {		-- The Iron Invasion
 			un(REMOVED_FROM_GAME,title(289)),		-- of the Iron Vanguard
 		})),
@@ -52,8 +49,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		}),
 		un(REMOVED_FROM_GAME, ach(7852)),		-- They're Both Footballs?
 		ach(15308),								-- Tower Overwhelming
-		un(REMOVED_FROM_GAME, ach(4887)),		-- Tripping the Rifts
-		un(REMOVED_FROM_GAME, ach(2456)),		-- Vampire Hunter
 		un(REMOVED_FROM_GAME, ach(5533)),		-- Veteran of the Shifting Sands
 		un(REMOVED_FROM_GAME, a(ach(9729, {		-- Victory in Hillsbrad (Alliance)
 			un(REMOVED_FROM_GAME, title(280)),		-- , Tarren Mill Terror

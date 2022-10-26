@@ -922,6 +922,7 @@ q(24227),	-- DEPRECATED
 q(24426),	-- Call to Arms: Alterac Valley
 q(24427),	-- Call to Arms: Alterac Valley
 q(24460),	-- Out of Order
+q(24462),	-- Operation Item Get
 q(24494),	-- Empowered Rune
 q(24508),	-- Temp Quest Record
 q(24509),	-- Temp Quest Record
@@ -1082,8 +1083,6 @@ q(27137),	-- Earth Girls Aren't So Easy
 q(27138),	-- Earth Girls Aren't So Easy
 q(27149),	-- School of the Damned
 q(27250),	-- REUSE - BAD COPY
-q(27307),	-- The Elements Cry Out
-q(27308),	-- The Elements Cry Out
 q(27543),	-- [TEMP PH] What We Have Done
 q(27678),	-- The Platinum Discs
 q(27723),	-- Kyle's Test Quest
