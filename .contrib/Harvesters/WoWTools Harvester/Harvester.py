@@ -282,25 +282,19 @@ def post_process(thing: type[Thing]) -> None:
         Titles,
     ):
         names: list[str] = extract_nth_column(raw_path, 1)
-        count_missing = 0
-        for missing_line in missing_lines:
-            name_list: list[str] = []
-            count_raw_id = 0
+        for index, missing_line in enumerate(missing_lines):
             missing_line = missing_line.strip()
             missing_line = re.sub("[^\\d^.]", "", missing_line)
             if missing_line.isdigit():
-                missing_lines[
-                    count_missing
-                ] = f"{thing.new_prefix()}{missing_line}),\t-- "
+                missing_lines[index] = f"{thing.new_prefix()}{missing_line}),\t-- "
             else:
-                missing_lines[count_missing] = missing_lines[count_missing].strip()
-            for id in raw_ids:
-                if missing_line == id.strip() and names[count_raw_id] != "--\n":
-                    name_list.append(names[count_raw_id].rstrip())
-                count_raw_id += 1
+                missing_lines[index] = missing_lines[index].strip()
+            name_list: list[str] = []
+            for index_raw, id in enumerate(raw_ids):
+                if missing_line == id and names[index_raw] != "--\n":
+                    name_list.append(names[index_raw].rstrip())
             name_list.reverse()
-            missing_lines[count_missing] += " \\\\ ".join(name_list) + "\n"
-            count_missing += 1
+            missing_lines[index] += " \\\\ ".join(name_list) + "\n"
         with open(missing_path, "w") as missing_file:
             missing_file.writelines(missing_lines)
     elif thing == Followers:
@@ -337,13 +331,13 @@ def post_process(thing: type[Thing]) -> None:
         name_ids = extract_nth_column(Path("Raw", "Items.txt"), 0)
         names = extract_nth_column(Path("Raw", "Items.txt"), 1)
     elif thing == Transmog:
-        raw_id_to_nameid = extract_nth_column(raw_path, 1)
+        raw_ids_and_nameids = extract_nth_column(raw_path, 1)
         name_ids = extract_nth_column(Path("Raw", "Item.txt"), 0)
         names = extract_nth_column(Path("Raw", "Item.txt"), 1)
         # TODO: this should use itemID instead... have to rework
-    # TODO: I guess you want to set names, raw_id_to_nameid and name_ids for all Thing. types above for this loop to work
+    # TODO: I guess you want to set names, raw_id_to_nameid and name_ids for all Thing types above for this loop to work
 
-    """" First Recover raw_id to name_id ... they remove the lind about db.."""
+    # first recover raw_id to name_id ... they remove the lind about db..
     for n in range(len(missing_lines)):
         id_list = []
         name_list = []
@@ -358,12 +352,11 @@ def post_process(thing: type[Thing]) -> None:
                         id_list.append(raw_ids_and_nameids[m].split(",")[1].strip())
                     elif thing == Illusions or thing == Toys:
                         id_list.append(raw_ids_and_nameids[m].split(",")[0].strip())
-            for k in range(len(name_ids)):
-                name_id = name_ids[k].strip()
-                name_id = re.sub("[^\\d^.]", "", name_id)
-                for element in id_list:
-                    if missing_line.isdigit() and name_id == element:
-                        name_list.append(names[k].strip())
+            for name_id in name_ids:
+                name_id = re.sub("[^\\d^.]", "", name_id.strip())
+                for index, element in enumerate(id_list):
+                    if name_id == element:
+                        name_list.append(names[index].strip())
         else:
             missing_lines[n] = missing_line
         name_list.reverse()
