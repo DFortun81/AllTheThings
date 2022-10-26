@@ -8955,7 +8955,7 @@ local function RefreshQuestCompletionState(questID)
 	-- app.PrintDebugPrior("RefreshedQuestCompletionState")
 end
 app.RefreshQuestInfo = function(questID)
-	-- print("RefreshQuestInfo",questID)
+	-- app.PrintDebug("RefreshQuestInfo",questID)
 	-- unregister criteria update until the quest refresh actually completes
 	app:UnregisterEvent("CRITERIA_UPDATE");
 	if questID then
@@ -15795,6 +15795,7 @@ app._RefreshWindows = function()
 	for _,window in pairs(app.Windows) do
 		window:Refresh();
 	end
+	-- app.PrintDebugPrior("_RefreshWindows")
 end
 function app:RefreshWindows()
 	-- no need to update windows when a refresh is pending
@@ -19906,93 +19907,68 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		self:BaseUpdate(force or got, got);
 	end
 end;
-customWindowUpdates["ItemFilter"] = function(self)
+customWindowUpdates["ItemFilter"] = function(self, force)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
-			self.dirty = true;
+			-- self.dirty = true;
+
+			self.Clear = function(self)
+				local temp = self.data.g[1];
+				wipe(self.data.g);
+				tinsert(self.data.g, temp);
+			end
 
 			-- Item Filter
-			local actions = {
+			local data = {
 				['text'] = L["ITEM_FILTER_TEXT"],
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
 				["description"] = L["ITEM_FILTER_DESCRIPTION"],
 				['visible'] = true,
 				['expanded'] = true,
 				['back'] = 1,
-				['OnUpdate'] = function(data)
-					if not self.dirty then return nil; end
-					self.dirty = nil;
-
-					local g = {};
-					tinsert(g, 1, data.setItemFilter);
-					if data.results and #data.results > 0 then
-						for i,result in ipairs(data.results) do
-							tinsert(g, result);
-						end
-					end
-					data.g = g;
-
-					-- Update the groups without forcing Debug Mode.
-					local visibilityFilter = app.VisibilityFilter;
-					app.VisibilityFilter = app.ObjectVisibilityFilter;
-					data.progress = 0;
-					data.total = 0;
-					self.ExpandInfo = { Expand = true };
-					BuildGroups(data, data.g);
-					self:BaseUpdate(true);
-					app.VisibilityFilter = visibilityFilter;
-				end,
-				['g'] = {},
-				['results'] = {},
-				['setItemFilter'] = {
-					['text'] = L["ITEM_FILTER_BUTTON_TEXT"],
-					['icon'] = "Interface\\Icons\\INV_MISC_KEY_12",
-					['description'] = L["ITEM_FILTER_BUTTON_DESCRIPTION"],
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						app:ShowPopupDialogWithEditBox(L["ITEM_FILTER_POPUP_TEXT"], "", function(text)
-							text = string_lower(text);
-							local f = tonumber(text);
-							if tostring(f) ~= text then
-								-- The string form did not match, the filter must have been by name.
-								for id,filter in pairs(L["FILTER_ID_TYPES"]) do
-									if string.match(string_lower(filter), text) then
-										f = tonumber(id);
-										break;
+				['g'] = {
+					{
+						['text'] = L["ITEM_FILTER_BUTTON_TEXT"],
+						['icon'] = "Interface\\Icons\\INV_MISC_KEY_12",
+						['description'] = L["ITEM_FILTER_BUTTON_DESCRIPTION"],
+						['visible'] = true,
+						['OnUpdate'] = app.AlwaysShowUpdate,
+						['OnClick'] = function(row, button)
+							app:ShowPopupDialogWithEditBox(L["ITEM_FILTER_POPUP_TEXT"], "", function(text)
+								text = string_lower(text);
+								local f = tonumber(text);
+								if text ~= "" and tostring(f) ~= text then
+									-- The string form did not match, the filter must have been by name.
+									for id,filter in pairs(L["FILTER_ID_TYPES"]) do
+										if string.match(string_lower(filter), text) then
+											f = tonumber(id);
+											break;
+										end
 									end
 								end
-							end
-							if f then
-								self.data.results = app:BuildSearchResponse(app:GetWindow("Prime").data.g, "f", f);
-								row.ref.f = f;
-								self.dirty = true;
-							end
-							wipe(searchCache);
-							self:Update();
-						end);
-						return true;
-					end,
-					['OnUpdate'] = app.AlwaysShowUpdate,
+
+								self:Clear();
+
+								if f then
+									local g = self.data.g;
+									app.ArrayAppend(g, app:BuildSearchResponse(app:GetDataCache().g, "f", f));
+								end
+
+								self:BuildData();
+								self:Update(true);
+							end);
+							return true;
+						end,
+					},
 				},
 			};
 
-			self.Reset = function()
-				self:SetData(actions);
-			end
-
-			-- Setup Event Handlers and register for events
-			self:SetScript("OnEvent", function(self, e, ...)
-				self.dirty = true;
-				self:Update();
-			end);
-			self:Reset();
+			self:SetData(data);
+			self:BuildData();
 		end
 
-		-- Update the window and all of its row data
-		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
-		-- soft update since collection content isn't changing within the window normally
-		self:BaseUpdate();
+		self:BaseUpdate(force);
 	end
 end;
 customWindowUpdates["ItemFinder"] = function(self, ...)
