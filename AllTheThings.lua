@@ -1351,11 +1351,12 @@ GameTooltipModel.TrySetModel = function(self, reference)
 			end
 		end
 
-		if reference.model and reference.model > 0 then
+		local modelID = tonumber(reference.model);
+		if modelID and modelID > 0 then
 			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
 			self.Model:SetCamDistanceScale(reference.modelScale or 1);
 			self.Model:SetUnit("none");
-			self.Model:SetModel(reference.model);
+			self.Model:SetModel(modelID);
 			self.Model:Show();
 			self:Show();
 			return true;
