@@ -1136,10 +1136,10 @@ DF_PHASE_ONE = 100;
 -- Done defining Phases for Classic
 -- #endif
 
--- TEMPORARY SHADOWLANDS TIMELINE (BLIZZARD DECIDE TO BREAK UP 9.2.5 and Season 4 Release)
+-- Timelines
 ADDED_SLS4 = "added 9.2.5.44908";
 REMOVED_SLS4 = "removed 9.2.5.44908";
-ADDED_DF = "added 9.2.5";
+ADDED_DF = "added 10.0.2";
 REMOVED_DFPRE = "removed 10.0";
 REMOVED_DFREL = "removed 10.0.2";
 
