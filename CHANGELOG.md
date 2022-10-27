@@ -17,6 +17,7 @@ Please don't spam us with these:
 ### Logic fixes
 
 - Fixed ATT tooltips not showing up/disappearing in most situations.
+- Fixed "This gets removed in patch 10.0.0" on Things that are already removed. We are in 10.0 patch after all!
 
 
 ### Data fixes
