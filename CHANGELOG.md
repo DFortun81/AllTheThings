@@ -8,7 +8,6 @@
 
 Please don't spam us with these:
 
-- Tooltips might stil break sometimes but they should be mostly fixed.
 - Map icon is inside the minimap.
 - You can't change profiles because the switch button is not functional.
 - The autoreset on dungeons seems broken in `/attra`.
@@ -16,7 +15,7 @@ Please don't spam us with these:
 
 ### Logic fixes
 
-- Fixed ATT tooltips not showing up/disappearing in most situations.
+- Fixed ATT tooltips not showing up/disappearing.
 - Fixed "This gets removed in patch 10.0.0" on Things that are already removed. We are in 10.0 patch after all!
 
 
