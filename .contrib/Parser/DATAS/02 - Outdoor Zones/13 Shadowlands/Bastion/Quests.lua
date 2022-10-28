@@ -1035,6 +1035,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						i(181596),	-- Forgehand's Handguards
 						i(181608),	-- Shieldguard's Gauntlets
 					},
+					["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 				}),
 				q(59015, {	-- Hostile Recollection
 				}),
@@ -1045,6 +1046,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["g"] = {
 						i(181703),	-- Skychime Necklace
 					},
+					["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 				}),
 				q(62732, {	-- Locus Focus (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -1056,6 +1058,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						i(181603),	-- Forgehand's Chain
 						i(181612),	-- Shieldguard's Girdle
 					},
+					["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 				}),
 				q(62736, {	-- Maldraxxi Eviction Notice (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -1066,6 +1069,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						i(181591),	-- Forgehand's Hauberk
 						i(181605),	-- Shieldguard's Breastplate
 					},
+					["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 				}),
 				q(62705, {	-- Scour the Temple (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -1074,6 +1078,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["g"] = {
 						i(181721),	-- Ascendent Valor Signet
 					},
+					["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 				}),
 			}),
 		}),

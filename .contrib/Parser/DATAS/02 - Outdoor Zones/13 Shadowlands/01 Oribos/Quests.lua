@@ -686,13 +686,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 174871 },	-- Fatescribe Roh-Tahl
 				["coord"] = { 19.6, 50.2, ORIBOS },
 				["sourceQuests"] = { 59770 },	-- Stand as One
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			q(63771, {	-- Fate's Reminder
 				["description"] = "To get this Quest, you have to choose 'Replay Storyline' and pick 'Skip Storyline' right after.",
 				["sourceQuests"] = { 62704 },	-- The Threads of Fate
 				["altQuests"] = { 62713 },	-- Becoming a Skip character will exclude this Quest from being available
 				["isBreadcrumb"] = true,
-				["timeline"] = { "added 9.0.5" },
+				["timeline"] = { "added 9.0.5", REMOVED_DFREL },
 				["lockCriteria"] = { 1, "lvl", 60 },
 			}),
 			q(62716, {	-- Re-Introductions
@@ -706,12 +707,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					{ 79.0, 49.2, ORIBOS },
 				},
 				["sourceQuests"] = { 62704 },	-- The Threads of Fate
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			q(62000, {	-- Choosing Your Purpose
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
 				["sourceQuests"] = { 62716 },	-- Re-Introductionse
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 
 			-- Zone Choice Quests
@@ -728,6 +731,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					"questID", 62748,	-- Rallying Maldraxxus
 					"questID", 62778,	-- Reinforcing Revendreth
 				},
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			q(63208, {	-- The Next Step
 				["description"] = "Offered after completing 1 Zone Meta-quest.",
@@ -743,6 +747,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					"questID", 62748,	-- Rallying Maldraxxus
 					"questID", 62778,	-- Reinforcing Revendreth
 				},
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			q(63209, {	-- Furthering the Purpose
 				["description"] = "Offered after completing 2 Zone Meta-quests.",
@@ -758,6 +763,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					"questID", 62748,	-- Rallying Maldraxxus
 					"questID", 62778,	-- Reinforcing Revendreth
 				},
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			q(63210, {	-- The Last Step
 				["description"] = "Offered after completing 3 Zone Meta-quests.",
@@ -773,6 +779,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					"questID", 62748,	-- Rallying Maldraxxus
 					"questID", 62778,	-- Reinforcing Revendreth
 				},
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 
 			-- Zone Select Breadcrumbs
@@ -783,6 +790,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["lockCriteria"] = { 1, "questID", 62153 },	-- accepting this Quest
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			q(62275, {	-- Bastion
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -791,6 +799,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["lockCriteria"] = { 1, "questID", 62151 },	-- accepting this Quest
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			q(62278, {	-- Maldraxxus
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -799,6 +808,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["lockCriteria"] = { 1, "questID", 62152 },	-- accepting this Quest
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			q(62279, {	-- Revendreth
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -807,13 +817,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["lockCriteria"] = { 1, "questID", 62154 },	-- accepting this Quest
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			q(65031, {	-- Battlegrounds
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { "added 9.1.5", REMOVED_DFREL },
 				["lockCriteria"] = { 1, "questID", 65030 },	-- accepting this Quest
 			}),
 			q(64846, {	-- Torghast
@@ -821,7 +832,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { "added 9.1.5", REMOVED_DFREL },
 			}),
 
 			-- Zone Travel Breadcrumbs
@@ -833,6 +844,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			q(63036, {	-- Restoring Balance [Night Fae]
 				["customCollect"] = { "SL_SKIP", "SL_COV_NFA", },	-- SL Skip Character + Night Fae
@@ -841,6 +853,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			-- Bastion
 			q(62707, {	-- The Elysian Fields [Non-Kyrian]
@@ -850,6 +863,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62275 },	-- Bastion
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			q(63034, {	-- The Elysian Fields [Kyrian]
 				["customCollect"] = { "SL_SKIP", "SL_COV_KYR", },	-- SL Skip Character + Kyrian
@@ -858,6 +872,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62275 },	-- Bastion
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			-- Maldraxxus
 			q(62738, {	-- A Fresh Blade [Non-Necrolord]
@@ -867,6 +882,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			q(63035, {	-- A Fresh Blade [Necrolord]
 				["customCollect"] = { "SL_SKIP", "SL_COV_NEC", },	-- SL Skip Character + Necrolord
@@ -875,6 +891,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62278 },	-- Maldraxxus
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			-- Revendreth
 			q(62740, {	-- Dark Aspirations [Non-Venthyr]
@@ -884,6 +901,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62279 },	-- Revendreth
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			q(63037, {	-- Dark Aspirations [Venthyr]
 				["customCollect"] = { "SL_SKIP", "SL_COV_VEN", },	-- SL Skip Character + Venthyr
@@ -892,6 +910,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 62279 },	-- Revendreth
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			-- Battlegrounds
 			q(65032, {	-- Battleground Observers
@@ -900,7 +919,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { "added 9.1.5", REMOVED_DFREL },
 			}),
 			-- Torghast
 			q(64849, {	-- Tower of the Damned
@@ -909,7 +928,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { "added 9.1.5", REMOVED_DFREL },
 			}),
 
 			-- Zone Meta Quests (keep in Oribos for visibility to players who may skip storyline I suppose)
@@ -938,6 +957,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(179508),	-- Duskwarder Warglaive
 					-- TODO: more rewards
 				},
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			-- Bastion
 			q(62723, {	-- Bolstering Bastion
@@ -963,6 +983,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(181629),	-- Waylight Defender
 					-- TODO: more rewards
 				},
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			-- Maldraxxus
 			q(62748, {	-- Rallying Maldraxxus
@@ -990,6 +1011,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(181692),	-- Gorewrought Warblade
 					i(181687),	-- Gorewrought Warglaive
 				},
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			-- Revendreth
 			q(62778, {	-- Reinforcing Revendreth
@@ -1027,6 +1049,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(181214),	-- Tax Collector's Barb
 					-- TODO: more rewards
 				},
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			-- Battlegrounds
 			pvp(q(65033, {	-- Observing Victory
@@ -1035,7 +1058,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isDaily"] = true,
 				["coord"] = { 34.7, 56.5, ORIBOS },
 				["lvl"] = { 50, 59 },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { "added 9.1.5", REMOVED_DFREL },
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
 				["sym"] = {
 					{"select", "mapID", BASTION },{"pop"},
@@ -1065,7 +1088,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 181328 },	-- Ve'nish
 				["coord"] = { 35.5, 46.9, 1627 },
 				["isDaily"] = true,
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { "added 9.1.5", REMOVED_DFREL },
 				["customCollect"] = "SL_SKIP",
 				["lockCriteria"] = { 1, "lvl", 60 },
 			}),
@@ -1078,6 +1101,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 49.2, 52.2, ARDENWEALD },
 				["sourceQuests"] = { 62763 },	-- Support the Court
 				["lvl"] = { 48, 60 },
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			-- Bastion
 			q(62729, {	-- Return to Oribos
@@ -1086,6 +1110,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 51.1, 43.7, BASTION },
 				["sourceQuests"] = { 62723 },	-- Bolstering Bastion
 				["lvl"] = { 48, 60 },
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			-- Maldraxxus
 			q(62761, {	-- Return to Oribos
@@ -1094,6 +1119,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 52.8, 68.2, MALDRAXXUS },
 				["sourceQuests"] = { 62748 },	-- Rallying Maldraxxus
 				["lvl"] = { 48, 60 },
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			-- Revendreth
 			q(62779, {	-- Return to Oribos
@@ -1108,13 +1134,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 				["sourceQuests"] = { 62778 },	-- Reinforcing Revendreth
 				["lvl"] = { 48, 60 },
+				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 			}),
 			-- Battlegrounds
 			pvp(q(65034, {	-- Return to Oribos
 				["sourceQuests"] = { 65033 },	-- Observing Victory
 				["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 				["coord"] = { 34.7, 56.5, ORIBOS },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { "added 9.1.5", REMOVED_DFREL },
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
 				["lvl"] = { 48, 60 },
 			})),
@@ -1123,7 +1150,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 64850 },	-- Traversing Torghast
 				["provider"] = { "n", 181328 },	-- Ve'nish
 				["coord"] = { 35.5, 46.9, 1627 },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { "added 9.1.5", REMOVED_DFREL },
 				["customCollect"] = "SL_SKIP",
 				["lvl"] = { 48, 60 },
 			}),

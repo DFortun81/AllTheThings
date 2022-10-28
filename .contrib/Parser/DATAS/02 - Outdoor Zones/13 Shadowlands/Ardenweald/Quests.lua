@@ -902,6 +902,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["g"] = {
 						i(175713),	-- Sprigthistle Loop
 					},
+					["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 				}),
 				q(60840, {	-- Wild Hunt Offensive
 					["coord"] = { 64.0, 46.0, ARDENWEALD },
@@ -915,6 +916,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						i(181405),	-- Gormhusk Steps
 						i(181403),	-- Sapsteel Sabatons
 					},
+					["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 				}),
 				q(62775, {	-- The Waning Grove (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -925,6 +927,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						i(181416),	-- Gormhusk Kilt
 						i(181414),	-- Sapsteel Legplates
 					},
+					["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 				}),
 				q(62774, {	-- Tranquil Pools (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -935,6 +938,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						i(181421),	-- Gormhusk Mantle
 						i(181419),	-- Sapsteel Pauldrons
 					},
+					["timeline"] = { "added 9.0.2", REMOVED_DFREL },
 				}),
 			}),
 		}),
