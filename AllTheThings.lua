@@ -15273,7 +15273,7 @@ local function CreateMinimapButton()
 	button:UpdateStyle();
 
 	-- Button Configuration
-	local radius = 78;
+	local radius = 100;
 	local rounding = 10;
 	local MinimapShapes = {
 		-- quadrant booleans (same order as SetTexCoord)
