@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DFREL } }, {
+root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 	inst(1198, {	-- The Nokhud Offensive
 		["coord"] = { 62.0, 42.5, OHNAHRAN_PLAINS },
 		["maps"] = { 2093 },	-- The Nokhud Offensive
