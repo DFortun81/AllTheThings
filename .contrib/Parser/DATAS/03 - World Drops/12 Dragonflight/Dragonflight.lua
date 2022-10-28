@@ -2,7 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
+root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DFREL } }, {
 	i(199018),	-- Bejeweled Stonewatcher's Pendant
 	i(199005),	-- Horn Strider's Bracers (Weird?)
 	i(201470),	-- Story of a Memorable Victory

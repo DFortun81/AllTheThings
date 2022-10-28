@@ -1139,7 +1139,8 @@ DF_PHASE_ONE = 100;
 -- Timelines
 ADDED_SLS4 = "added 9.2.5.44908";
 REMOVED_SLS4 = "removed 9.2.5.44908";
-ADDED_DF = "added 10.0.2";
+ADDED_DFPRE = "added 10.0.0";
+ADDED_DFREL = "created 10.0.0", "added 10.0.2";
 REMOVED_DFPRE = "removed 10.0";
 REMOVED_DFREL = "removed 10.0.2";
 
