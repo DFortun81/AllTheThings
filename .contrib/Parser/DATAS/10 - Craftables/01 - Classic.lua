@@ -309,6 +309,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(10421),	-- Rough Copper Vest
 			i(2857),	-- Runed Copper Belt
 			i(2854),	-- Runed Copper Bracers
+			i(2864),	-- Runed Copper Breastplate
 			i(3472),	-- Runed Copper Gauntlets
 			i(3473),	-- Runed Copper Pants
 			i(12611),	-- Runic Plate Boots
@@ -439,7 +440,6 @@ root("Craftables", tier(CLASSIC_TIER, {
 					{ "i", 3466, 4 },	-- Strong Flux
 				},
 			}),
-			i(2864),	-- Runed Copper Breastplate
 			i(7946),	-- Runed Mithril Hammer
 			i(12260),	-- Searing Golden Blade
 			i(3856),	-- Shadow Crescent Axe

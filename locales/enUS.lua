@@ -685,6 +685,7 @@ app.L = {
 	["SECRETS_HEADER"] = "Secrets";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
 	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
+	["ADDED_WITH_PATCH_FORMAT"] = "This gets added in patch %s";
 	["REMOVED_WITH_PATCH_FORMAT"] = "This gets removed in patch %s";
 
 	-- Filter Text
@@ -1208,6 +1209,7 @@ app.L = {
 		[-520] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",					-- Expansion Pre-Launch
 		[-522] = "Interface\\Icons\\expansionicon_wrathofthelichking",						-- Wotlk: Zombie Infestation
 		[-523] = app.asset("Expansion_CATA"),												-- Elemental Unrest
+		[-524] = "Interface\\Icons\\inv_misc_tournaments_symbol_gnome",						-- Operation: Gnomeregan
 		[-525] = "Interface\\Icons\\Achievement_Boss_Blackhand",							-- WoD: Iron Horde Incursion
 		[-526] = "Interface\\Icons\\inv_legionadventure",									-- Legion: Legion Invasion
 		[-527] = "Interface\\Icons\\Spell_Shaman_StormEarthFire",							-- BFA: War of the Thorns
@@ -1758,6 +1760,7 @@ app.L = {
 		[-520] = "Expansion Pre-Launch",										-- Expansion Pre-Launch
 		[-522] = EXPANSION_NAME2..": Zombie Infestation",						-- Wrath of the Lich King: Zombie Infestation
 		[-523] = "Elemental Unrest",											-- Elemental Unrest
+		[-524] = "Operation: Gnomeregan",										-- Operation: Gnomeregan
 		[-525] = EXPANSION_NAME5..": Iron Horde Incursion",						-- Warlords of Draenor: Iron Horde Incursion
 		[-526] = EXPANSION_NAME6..": Legion Invasion",							-- Legion: Legion Invasion
 		[-527] = EXPANSION_NAME7..": War of the Thorns",						-- Battle for Azeroth: War of the Thorns

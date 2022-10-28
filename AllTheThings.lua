@@ -1712,6 +1712,12 @@ local function GetProgressTextForTooltip(data, iconOnly)
 	end
 	return stateText;
 end
+local function GetAddedWithPatchString(awp)
+	if awp then
+		awp = tonumber(awp);
+		return sformat(L["ADDED_WITH_PATCH_FORMAT"], math.floor(awp / 10000) .. "." .. (math.floor(awp / 100) % 10) .. "." .. (awp % 10));
+	end
+end
 local function GetRemovedWithPatchString(rwp)
 	rwp = tonumber(rwp);
 	if rwp then
@@ -4801,6 +4807,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		if group.rwp then
 			tinsert(info, 1, { left = GetRemovedWithPatchString(group.rwp), wrap = true, color = app.Colors.RemovedWithPatch });
+		end
+		if group.awp then
+			tinsert(info, 1, { left = GetAddedWithPatchString(group.awp), wrap = true, color = "FFAAFFAA" });
 		end
 		if group.u and (not group.crs or group.itemID or group.s) then
 			tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2], wrap = true });
@@ -16820,6 +16829,20 @@ RowOnEnter = function (self)
 				local rwp = GetRemovedWithPatchString(reference.rwp);
 				local _,r,g,b = HexToARGB(app.Colors.RemovedWithPatch);
 				GameTooltip:AddLine(rwp, r / 255, g / 255, b / 255, 1);
+			end
+			if reference.awp then
+				local found = false;
+				local awp = GetAddedWithPatchString(reference.awp);
+				for i=1,GameTooltip:NumLines() do
+					if _G["GameTooltipTextLeft"..i]:GetText() == awp then
+						found = true;
+						break;
+					end
+				end
+				if not found then
+					local a,r,g,b = HexToARGB("FFAAFFAA");
+					GameTooltip:AddLine(awp, r / 255, g / 255, b / 255, 1);
+				end
 			end
 			-- an item used for a faction which is repeatable
 			if reference.itemID and reference.factionID and reference.repeatable then
