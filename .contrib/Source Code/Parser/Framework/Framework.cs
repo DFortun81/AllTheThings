@@ -1108,7 +1108,7 @@ namespace ATT
                                         removed = 0;
                                         addedPatch = 0;
                                     }
-                                    else if (removed == 4 || removed == 2)
+                                    else if (removed == 4 || removed == 2 || removed == 1)
                                     {
                                         // Mark the first patch this comes back on.
                                         if (addedPatch == 0) addedPatch = version;
