@@ -200,6 +200,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					i(191590),	-- Recipe: Stable Fluidic Draconium (RECIPE!)
 					i(191594),	-- Recipe: Reactive Phial Embelishment (RECIPE!)
 					i(191593),	-- Recipe: Agitating Potion Augmentation (RECIPE!)
+					i(199295),	-- Schematic: Black Fireflight (RECIPE!)
+					i(199289),	-- Schematic: Blue Fireflight (RECIPE!)
+					i(199240),	-- Schematic: Green Fireflight (RECIPE!)
+					i(199285),	-- Schematic: Khaz'gorite Encased Samophlange (RECIPE!)
+					i(199286),	-- Schematic: Khaz'gorite Brainwave Amplifier (RECIPE!)
+					i(199242),	-- Schematic: Portable Alchemist's Lab Bench (RECIPE!)
+					i(199243),	-- Schematic: Portable Tinker's Workbench (RECIPE!)
+					i(199290),	-- Schematic: Red Fireflight (RECIPE!)
 				},
 			}),
 			n(196598, {	-- Rethelshi

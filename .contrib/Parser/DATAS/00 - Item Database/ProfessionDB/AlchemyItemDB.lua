@@ -499,7 +499,7 @@ i(187848, 360318);	-- Sustaining Armor Polish
 ------------------
 -- PATCH 10.0.0 --
 ------------------
--- Trainer
+-- TRAINER --
 i(0, 366261);	-- Dragon Isles Alchemy
 i(0, 370547);	-- Aerated Mana Potion
 i(0, 370746);	-- Basic Phial Experimentation
@@ -513,7 +513,7 @@ i(0, 389190);	-- Recraft Equipment
 i(0, 370539);	-- Refreshing Healing Potion
 i(0, 370711);	-- Transmute: Awakened Air
 i(0, 370731);	-- Writhefire Oil
--- ITEM
+-- ITEM --
 i(198533, 381270);	-- Aerated Phial of Quick Hands
 i(191593, 370732);	-- Agitating Potion Augmentation
 i(191547, 370677);	-- Alacritous Alchemist Stone
@@ -532,7 +532,7 @@ i(191579, 370708);	-- Transmute: Awakened Frost
 -- Special
 i(0, 370543);	-- Elemental Potion of Ultimate Power [Shares item 201740]
 i(0, 370672);	-- Potion Cauldron of Ultimate Power [Shares item 201740]
--- Disc
+-- DISCOVERY --
 -- Phial
 i(0, 370472);	-- Aerated Phial of Deftness
 i(0, 370476);	-- Charged Phial of Alacrity
@@ -557,7 +557,7 @@ i(0, 370561);	-- Potion of Shocking Disclosure
 i(0, 370556);	-- Potion of the Hushed Zephyr
 i(0, 370528);	-- Potion of Withering Vitality
 i(0, 370533);	-- Residual Neural Channeling Agent
--- Specc
+-- SPECIALiZATION --
 i(0, 370747);	-- Advanced Phial Experimentation
 i(0, 370745);	-- Advanced Potion Experimentation
 i(0, 370730);	-- Brood Salt
@@ -565,24 +565,19 @@ i(0, 370735);	-- Illustrious Insight
 i(0, 370668);	-- Potion Cauldron of Power
 i(0, 370715);	-- Transmute: Order to Elements
 i(0, 370714);	-- Transmute: Decay to Elements
--- QUEST
+-- QUEST --
 i(0, 377978);	-- Heart in a Bottle
--- NO SOURCE
-i(0, 382571);	-- Opening
--- NYI?
+-- NYI --
 i(0, 371635);	-- Demonstration Item Recipe
 i(0, 370771);	-- Dragon Isles Alchemy Troubleshooting Test Recipe (DNT)
+i(0, 382571);	-- Opening
 i(191598, 370739);	-- Alchemical Flavor Pocket
 i(191453, 370554);	-- Breezy Potion of Draconic Vigor
 i(191457, 370563);	-- Potion of Burning Purification
 i(191595, 370734);	-- Wisp of Tyr
-
-
 i(194543, 0);	-- Dragon Isles Jewelcrafting Recipe Template (DNT)
 i(191428, 0);	-- Dragon Isles Alchemy Recipe Template (DNT)
 i(194959, 0);	-- Dragon Isles Cooking Recipe Template (DNT)
-
-
 i(191602, 0);	-- Advanced Phial Experimentation
 i(191600, 0);	-- Advanced Potion Experimentation
 i(191451, 0);	-- Aerated Mana Potion
@@ -624,11 +619,3 @@ i(191581, 0);	-- Transmute: Awakened Air
 i(191582, 0);	-- Transmute: Decay to Elements
 i(191583, 0);	-- Transmute: Order to Elements
 i(191592, 0);	-- Writhefire Oil
-
-
-
-
-
-
-
-

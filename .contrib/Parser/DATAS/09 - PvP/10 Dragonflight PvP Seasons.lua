@@ -42,6 +42,11 @@ root("PVP", pvp(tier(DF_TIER, {
 			i(194257),	-- Pattern: Infurious Handwraps of Gesticulation (RECIPE!)
 			i(194258),	-- Pattern: Infurious Legwraps of Possibility (RECIPE!)
 			i(194269),	-- Pattern: Infurious Wildercloth Bolt (RECIPE!)
+			i(199241),	-- Schematic: H.E.L.P. (RECIPE!)
+			i(199238),	-- Schematic: Sticky Warp Grenade (RECIPE!)
+			i(199239),	-- Schematic: Tinker: Alarm-O-Turret (RECIPE!)
+			i(199299),	-- Schematic: Tinker: Polarity Amplifier (RECIPE!)
+
 		}),
 		n(PVP_ASPIRANT, {
 			n(BACK, {

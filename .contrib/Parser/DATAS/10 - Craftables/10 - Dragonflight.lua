@@ -417,185 +417,240 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		--i(),	-- Heart in a Bottle
 	}),
 	prof(ENGINEERING, {
+		n(DISCOVERY, {
+			["description"] = "Multiple Ways of Discovering.",
+			["g"] = {
+				r(382350),	-- Calibrated Safety Switch
+				r(382319),	-- Complicated Cuffs
+				r(382349),	-- Critical Failure Prevention Unit
+				r(382320),	-- Difficult Wrist Protectors
+				r(382317),	-- Overengineered Sleeve Extenders
+				r(382318),	-- Needlessly Complex Wristguards
+				r(384491),	-- Spring-Loaded Capacitor Casing
+			},
+		}),
+		spell(382330, {	-- Creature Combustion Canister
+			r(382355),	-- EZ-Thro Creature Combustion Canister
+		}),
+		spell(382343, {	-- Gravitational Displacer
+			r(382356),	-- EZ-Thro Gravitational Displacer
+		}),
+		spell(382323, {	-- Grease Grenade
+			r(386670),	-- EZ-Thro Grease Grenade
+		}),
+		spell(382378, {	-- Greased-Up Gears
+			r(382363),	-- Meticulously-Tuned Gear
+			r(382364),	-- One-Size-Fits-All Gear
+			r(382362),	-- Rapidly Ticking Gear
+			r(382361),	-- Razor-Sharp Gear
+		}),
+		spell(382322, {	-- Primal Deconstruction Charge
+			r(382357),	-- EZ-Thro Primal Deconstruction Charge
+		}),
 		n(ARMOR, {
-			i(198322),	-- 10.0 Engineering - Cloth - Wrist
-			i(198327),	-- 10.0 Engineering - Leather - Wrist
-			i(198332),	-- 10.0 Engineering - Mail - Wrist
-			i(198333),	-- 10.0 Engineering - Plate - Wrist
 			i(198326),	-- Battle-Ready Binoculars
+			i(198332),	-- Complicated Cuffs
 			i(198330),	-- Deadline Deadeyes
+			i(198333),	-- Difficult Wrist Protectors
 			i(198323),	-- Lightweight Ocular Lenses
 			i(198329),	-- Milestone Magnifiers
+			i(198327),	-- Needlessly Complex Wristguards
+			i(198322),	-- Overengineered Sleeve Extenders
 			i(198325),	-- Oscillating Wilderness Opticals
 			i(198324),	-- Peripheral Vision Projectors
 			i(198328),	-- Quality-Assured Optics
 			i(198331),	-- Sentry's Stabilized Specs
+			-- Tools
+			i(198204),	-- Draconium Brainwave Amplifier
+			i(198243),	-- Draconium Delver's Helmet
+			i(198245),	-- Draconium Encased Samophlange
+			i(198225),	-- Draconium Fisherfriend
+			i(198205),	-- Khaz'gorite Brainwave Amplifier
+			i(198244),	-- Khaz'gorite Delver's Helmet
+			i(198226),	-- Khaz'gorite Fisherfriend
+			i(198246),	-- Khaz'gorite Encased Samophlange
+			i(198234),	-- Lapidary's Draconium Clamps
+			i(198235),	-- Lapidary's Khaz'gorite Clamps
+			i(194125),	-- Spring-Loaded Draconium Fabric Cutters
+			i(194126),	-- Spring-Loaded Khaz'gorite Fabric Cutters
+			-- Tinker
+			i(198289),	-- Tinker: Alarm-O-Turret+
+			i(198290),	-- Tinker: Alarm-O-Turret++
+			i(198291),	-- Tinker: Alarm-O-Turret+++
+			i(201407),	-- Tinker: Arclight Vital Correctors+
+			i(201408),	-- Tinker: Arclight Vital Correctors++
+			i(201409),	-- Tinker: Arclight Vital Correctors+++
+			i(198295),	-- Tinker: Breath of Neltharion+
+			i(198296),	-- Tinker: Breath of Neltharion++
+			i(198297),	-- Tinker: Breath of Neltharion+++
+			i(198304),	-- Tinker: Grounded Circuitry+
+			i(198305),	-- Tinker: Grounded Circuitry++
+			i(198306),	-- Tinker: Grounded Circuitry+++
+			i(198298),	-- Tinker: Plane Displacer+
+			i(198299),	-- Tinker: Plane Displacer++
+			i(198300),	-- Tinker: Plane Displacer+++
+			i(199188),	-- Tinker: Polarity Amplifier+
+			i(199189),	-- Tinker: Polarity Amplifier++
+			i(199190),	-- Tinker: Polarity Amplifier+++
+			i(198301),	-- Tinker: Supercollide-O-Tron+
+			i(198302),	-- Tinker: Supercollide-O-Tron++
+			i(198303),	-- Tinker: Supercollide-O-Tron+++
+			i(202087),	-- Tinker Removal Kit
+		}),
+		filter(BATTLE_PETS, {
+			i(193572),	-- Quack-E (PET!)
+		}),
+		filter(MISC, {
+			i(198549),	-- Black Fireflight
+			i(198222),	-- Blue Fireflight
+			i(198263),	-- Bottomless Mireslush Ore Satchel
+			i(198262),	-- Bottomless Stonecrust Ore Satchel
+			i(198550),	-- Bronze Fireflight
+			i(198172),	-- Bundle of Fireworks
+			i(198253),	-- Calibrated Safety Switch+
+			i(198254),	-- Calibrated Safety Switch++
+			i(198255),	-- Calibrated Safety Switch+++
+			i(198173),	-- Cartomancy Cannon
+			i(198160),	-- Completely Safe Rockets+
+			i(198161),	-- Completely Safe Rockets++
+			i(198162),	-- Completely Safe Rockets+++
+			i(198239),	-- Creature Combustion Canister+
+			i(198240),	-- Creature Combustion Canister++
+			i(198241),	-- Creature Combustion Canister++
+			i(198259),	-- Critical Failure Prevention Unit+
+			i(198260),	-- Critical Failure Prevention Unit++
+			i(198261),	-- Critical Failure Prevention Unit+++
+			i(198180),	-- D.U.C.K.O.Y.+
+			i(198181),	-- D.U.C.K.O.Y.++
+			i(198182),	-- D.U.C.K.O.Y.+++
+			i(198163),	-- Endless Stack of Needles+
+			i(198164),	-- Endless Stack of Needles++
+			i(198165),	-- Endless Stack of Needles+++
+			i(198207),	-- EZ-Thro Creature Combustion Canister+
+			i(198208),	-- EZ-Thro Creature Combustion Canister++
+			i(198209),	-- EZ-Thro Creature Combustion Canister+++
+			i(198213),	-- EZ-Thro Gravitational Displacer+
+			i(198214),	-- EZ-Thro Gravitational Displacer++
+			i(198215),	-- EZ-Thro Gravitational Displacer+++
+			i(199193),	-- EZ-Thro Grease Grenade+
+			i(199194),	-- EZ-Thro Grease Grenade++
+			i(199195),	-- EZ-Thro Grease Grenade+++
+			i(198210),	-- EZ-Thro Primal Deconstruction Charge+
+			i(198211),	-- EZ-Thro Primal Deconstruction Charge++
+			i(198212),	-- EZ-Thro Primal Deconstruction Charge+++
+			i(198228),	-- Gravitational Displacer+
+			i(198229),	-- Gravitational Displacer++
+			i(198230),	-- Gravitational Displacer+++
+			i(198292),	-- Grease Grenade+
+			i(198293),	-- Grease Grenade++
+			i(198294),	-- Grease Grenade+++
+			i(198224),	-- Green Fireflight
+			i(198310),	-- Gyroscopic Kaleidoscope+
+			i(198311),	-- Gyroscopic Kaleidoscope++
+			i(198312),	-- Gyroscopic Kaleidoscope+++
+			i(198216),	-- Haphazardly Tethered Wires+
+			i(198217),	-- Haphazardly Tethered Wires++
+			i(198218),	-- Haphazardly Tethered Wires+++
+			i(198316),	-- High Intensity Thermal Scanner+
+			i(198317),	-- High Intensity Thermal Scanner++
+			i(198318),	-- High Intensity Thermal Scanner+++
+			i(198157),	-- I.W.I.N. Button Mk10+
+			i(198158),	-- I.W.I.N. Button Mk10++
+			i(198159),	-- I.W.I.N. Button Mk10+++
+			i(198256),	-- Magazine of Healing Darts+
+			i(198257),	-- Magazine of Healing Darts++
+			i(198258),	-- Magazine of Healing Darts+++
+			i(198236),	-- Meticulously-Tuned Gear+
+			i(198237),	-- Meticulously-Tuned Gear++
+			i(198238),	-- Meticulously-Tuned Gear+++
+			i(198247),	-- Neural Silencer Mk3
+			i(198307),	-- One-Size-Fits-All Gear+
+			i(198308),	-- One-Size-Fits-All Gear++
+			i(198309),	-- One-Size-Fits-All Gear+++
+			i(198219),	-- Overcharged Overclocker+
+			i(198220),	-- Overcharged Overclocker++
+			i(198221),	-- Overcharged Overclocker+++
+			i(198265),	-- Portable Alchemist's Lab Bench
+			i(198268),	-- Portable Tinker's Workbench
+			i(198278),	-- Primal Deconstruction Charge+
+			i(198279),	-- Primal Deconstruction Charge++
+			i(198280),	-- Primal Deconstruction Charge+++
+			i(198313),	-- Projectile Propulsion Pinion+
+			i(198314),	-- Projectile Propulsion Pinion++
+			i(198315),	-- Projectile Propulsion Pinion+++
+			i(198231),	-- Rapidly Ticking Gear+
+			i(198232),	-- Rapidly Ticking Gear++
+			i(198233),	-- Rapidly Ticking Gear+++
+			i(198174),	-- Razor-Sharp Gear+
+			i(198175),	-- Razor-Sharp Gear++
+			i(198176),	-- Razor-Sharp Gear+++
+			i(198223),	-- Red Fireflight
+			i(198275),	-- S.A.V.I.O.R.+
+			i(198276),	-- S.A.V.I.O.R.++
+			i(198277),	-- S.A.V.I.O.R.+++
+			i(198619),	-- Spring-Loaded Capacitor Casing+
+			i(198620),	-- Spring-Loaded Capacitor Casing++
+			i(198621),	-- Spring-Loaded Capacitor Casing+++
+			i(198281),	-- Sticky Warp Grenade+
+			i(198282),	-- Sticky Warp Grenade++
+			i(198283),	-- Sticky Warp Grenade+++
+			i(198169),	-- Suspiciously Silent Crate+
+			i(198170),	-- Suspiciously Silent Crate++
+			i(198171),	-- Suspiciously Silent Crate+++
+			i(198166),	-- Suspiciously Ticking Crate+
+			i(198167),	-- Suspiciously Ticking Crate++
+			i(198168),	-- Suspiciously Ticking Crate+++
+			i(199414),	-- Zapthrottle Soul Inhaler
+			-- Weird
+			i(198271),	-- H.E.L.P.+
+			i(198272),	-- H.E.L.P.++
+			i(198273),	-- H.E.L.P.+++
+			i(201930),	-- H.E.L.P.
+			i(198650),	-- Rummage Through Scrap
+		}),
+		filter(56, {	-- Reagents
+			i(198195),	-- Arclight Capacitor+
+			i(198196),	-- Arclight Capacitor++
+			i(198197),	-- Arclight Capacitor+++
+			i(198201),	-- Assorted Safety Fuses+
+			i(198202),	-- Assorted Safety Fuses++
+			i(198203),	-- Assorted Safety Fuses+++
+			i(198189),	-- Everburning Blasting Powder+
+			i(198190),	-- Everburning Blasting Powder++
+			i(198191),	-- Everburning Blasting Powder+++
+			i(198192),	-- Greased-Up Gears+
+			i(198193),	-- Greased-Up Gears++
+			i(198194),	-- Greased-Up Gears+++
+			i(198183),	-- Handful of Serevite Bolts+
+			i(198184),	-- Handful of Serevite Bolts++
+			i(198185),	-- Handful of Serevite Bolts+++
+			i(198198),	-- Reinforced Machine Chassis+
+			i(198199),	-- Reinforced Machine Chassis++
+			i(198200),	-- Reinforced Machine Chassis+++
+			i(198186),	-- Shock-Spring Coil+
+			i(198187),	-- Shock-Spring Coil++
+			i(198188),	-- Shock-Spring Coil+++
+		}),
+		filter(TOYS, {
+			i(198264),	-- Centralized Precipitation Emitter (TOY!)
+			i(192443),	-- Element-Infused Rocket Helmet (TOY!)
+			i(198206),	-- Environmental Emulator (TOY!)
+			i(198227),	-- Giggle Goggles (TOY!)
+			i(198156),	-- Wyrmhole Generator (TOY!)
 		}),
 		n(WEAPONS, {
-			i(198334),	-- 10.0 Engineering - Gun - 1
-			i(198335),	-- 10.0 Engineering - Gun - 2
+			i(198334),	-- P.E.W. x2
+			i(198335),	-- Sophisticated Problem Solver
 		}),
-		-- Bag
-		i(198263),	-- Bottomless Mireslush Ore Satchel
-		i(198262),	-- T2 Leather Bottomless Ore Satchel
-		--MISC
-		i(198172),	-- Bundle of Fireworks
-		i(198177),	-- Draconic Gunshoes
-		i(198178),	-- Draconic Gunshoes
-		i(198179),	-- Draconic Gunshoes
-		i(198210),	-- Ez-Thro SiegeBomb
-		i(198211),	-- Ez-Thro SiegeBomb
-		i(198212),	-- Ez-Thro SiegeBomb
-		i(198213),	-- Ez-Thro Sticky Warp Grenade
-		i(198214),	-- Ez-Thro Sticky Warp Grenade
-		i(198215),	-- Ez-Thro Sticky Warp Grenade
-		i(198222),	-- Fireworks
-		i(198223),	-- Fireworks
-		i(198224),	-- Fireworks
-		i(198228),	-- Gravity Bomb
-		i(198229),	-- Gravity Bomb
-		i(198230),	-- Gravity Bomb
-		i(198278),	-- Siege Bomb
-		i(198279),	-- Siege Bomb
-		i(198280),	-- Siege Bomb
-		i(198281),	-- Sticky Warp Grenade
-		i(198282),	-- Sticky Warp Grenade
-		i(198283),	-- Sticky Warp Grenade
-		-- TOOLS --
-		i(198234),	-- Lapidary's Draconium Knife
-		i(198235),	-- Lapidary's Titanicium Knife
-		i(198245),	-- Multitool T1
-		i(198246),	-- Multitool T2
-		i(198284),	-- Spring-Loaded Draconium Fabric Cutter
-		i(198285),	-- Spring-Loaded Titanicium Fabric Cutter
-		-- Unknown
-		i(198195),	-- Arclight Capacitor
-		i(198196),	-- Arclight Capacitor
-		i(198197),	-- Arclight Capacitor
-		i(198201),	-- Assorted Safety Fuses
-		i(198202),	-- Assorted Safety Fuses
-		i(198203),	-- Assorted Safety Fuses
-		i(198173),	-- Cartomancy Cannon
-		i(198264),	-- Centralized Precipitation Emitter (TOY!)
-		i(198250),	-- Convincingly Realistic Jumper Cables
-		i(198251),	-- Convincingly Realistic Jumper Cables
-		i(198252),	-- Convincingly Realistic Jumper Cables
-		i(198239),	-- Creature Combustion Canister
-		i(198240),	-- Creature Combustion Canister
-		i(198241),	-- Creature Combustion Canister
-		i(198180),	-- D.U.C.K.O.Y.
-		i(198181),	-- D.U.C.K.O.Y.
-		i(198182),	-- D.U.C.K.O.Y.
-		i(198243),	-- Draconium Delver's Helmet
-		i(198225),	-- Draconium Fisherfriend
-		i(198274),	-- Element-Infused Rocket Helmet
-		i(192443),	-- Element-Infused Rocket Helmet
-		i(198163),	-- Endless Stack of Needles
-		i(198164),	-- Endless Stack of Needles
-		i(198165),	-- Endless Stack of Needles
-		i(198204),	-- Engineering Hat T1
-		i(198205),	-- Engineering Hat T2
-		i(198206),	-- Environmental Emulator
-		i(198189),	-- Ever-Burning Blasting Powder
-		i(198190),	-- Ever-Burning Blasting Powder
-		i(198191),	-- Ever-Burning Blasting Powder
-		i(198227),	-- Giggle Goggles (TOY!)
-		i(198192),	-- Greased-Up Gears
-		i(198193),	-- Greased-Up Gears
-		i(198194),	-- Greased-Up Gears
-		i(198310),	-- Gyroscopic Kaleidoscope
-		i(198311),	-- Gyroscopic Kaleidoscope
-		i(198312),	-- Gyroscopic Kaleidoscope
-		i(198183),	-- Handful of Tyrivite Bolts
-		i(198184),	-- Handful of Tyrivite Bolts
-		i(198185),	-- Handful of Tyrivite Bolts
-		i(198216),	-- Haphazardly Tethered Wires
-		i(198217),	-- Haphazardly Tethered Wires
-		i(198218),	-- Haphazardly Tethered Wires
-		i(198316),	-- High Intensity Thermal Scanner
-		i(198317),	-- High Intensity Thermal Scanner
-		i(198318),	-- High Intensity Thermal Scanner
-		i(198256),	-- Magazine of Healing Darts
-		i(198257),	-- Magazine of Healing Darts
-		i(198258),	-- Magazine of Healing Darts
-		i(198236),	-- Meticulously-Tuned Gear
-		i(198237),	-- Meticulously-Tuned Gear
-		i(198238),	-- Meticulously-Tuned Gear
-		i(198247),	-- Neural Silencer Mk3
-		i(198307),	-- One-Size-Fits-All Gear
-		i(198308),	-- One-Size-Fits-All Gear
-		i(198309),	-- One-Size-Fits-All Gear
-		i(198219),	-- Overcharged Overclocker
-		i(198220),	-- Overcharged Overclocker
-		i(198221),	-- Overcharged Overclocker
-		i(198152),	-- Perfectly Calibrated Lenses
-		i(198153),	-- Perfectly Calibrated Lenses
-		i(198154),	-- Perfectly Calibrated Lenses
-		i(198265),	-- Portable Alchemy Table
-		i(198268),	-- Portable Engineering Table
-		i(198313),	-- Projectile Propulsion Pinion
-		i(198314),	-- Projectile Propulsion Pinion
-		i(198315),	-- Projectile Propulsion Pinion
-		i(198271),	-- PvP Flare Gun
-		i(198272),	-- PvP Flare Gun
-		i(198273),	-- PvP Flare Gun
-		i(198242),	-- Quack-E
-		i(198160),	-- Quiver of Completely Safe Rockets
-		i(198161),	-- Quiver of Completely Safe Rockets
-		i(198162),	-- Quiver of Completely Safe Rockets
-		i(198231),	-- Rapidly Ticking Gear
-		i(198232),	-- Rapidly Ticking Gear
-		i(198233),	-- Rapidly Ticking Gear
-		i(198174),	-- Razor-Sharp Gear
-		i(198175),	-- Razor-Sharp Gear
-		i(198176),	-- Razor-Sharp Gear
-		i(198198),	-- Reinforced Machine Chassis
-		i(198199),	-- Reinforced Machine Chassis
-		i(198200),	-- Reinforced Machine Chassis
-		i(198259),	-- Sappy Sapper Charges
-		i(198260),	-- Sappy Sapper Charges
-		i(198261),	-- Sappy Sapper Charges
-		i(198186),	-- Shock-Spring Coil
-		i(198187),	-- Shock-Spring Coil
-		i(198188),	-- Shock-Spring Coil
-		i(198244),	-- Titanicium Delver's Helmet
-		i(198226),	-- Titanicium Fisherfriend
-		i(198253),	-- Unhinged Sawblade
-		i(198254),	-- Unhinged Sawblade
-		i(198255),	-- Unhinged Sawblade
-		i(198156),	-- Wyrmhole Generator (TOY!)
-
-		--i(0, 377983);	-- Heart in a Bottle
-		--i(0, 382581);	-- Opening
-		--i(0, 382374);	-- Rummage Through Scrap
-		-- Trinket
-		i(198289),	-- Tinker: Alarm-O-Turret
-		i(198290),	-- Tinker: Alarm-O-Turret
-		i(198291),	-- Tinker: Alarm-O-Turret
-		i(198292),	-- Tinker: Bomberang
-		i(198293),	-- Tinker: Bomberang
-		i(198294),	-- Tinker: Bomberang
-		i(198295),	-- Tinker: Breath of Neltharion
-		i(198296),	-- Tinker: Breath of Neltharion
-		i(198297),	-- Tinker: Breath of Neltharion
-		i(198304),	-- Tinker: Overclocked Mechanical Dragonling
-		i(198305),	-- Tinker: Overclocked Mechanical Dragonling
-		i(198306),	-- Tinker: Overclocked Mechanical Dragonling
-		i(198298),	-- Tinker: Plane Displacer
-		i(198299),	-- Tinker: Plane Displacer
-		i(198300),	-- Tinker: Plane Displacer
-		i(198286),	-- Tinker Removal Kit
-		i(198287),	-- Tinker Removal Kit
-		i(198288),	-- Tinker Removal Kit
-		i(198301),	-- Tinker: Supercollide-O-Tron
-		i(198302),	-- Tinker: Supercollide-O-Tron
-		i(198303),	-- Tinker: Supercollide-O-Tron
 	}),
 	prof(FISHING, {
 		i(198438, {	-- Draconic Recipe in a Bottle
 			i(191544),	-- Recipe: Cauldron of the Pooka (RECIPE!)
 			i(191589),	-- Recipe: Fervid Incense (RECIPE!)
 			i(191587),	-- Recipe: Somniferous Incense (RECIPE!)
+			i(199232),	-- Schematic: Bundle of Fireworks (RECIPE!)
+			i(199236),	-- Schematic: D.U.C.K.O.Y. (RECIPE!)
+			i(199228),	-- Schematic: Grease Grenade (RECIPE!)
 		}),
 		i(194967),	-- Aileron Seamoth
 		i(194968),	-- Cerulean Spinefish
@@ -633,16 +688,31 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(194545),	-- Prismatic Ore
 	}),
 	prof(MINING, {
-		i(188658),	-- Draconium Ore
-		i(189143),	-- Draconium Ore
-		i(190311),	-- Draconium Ore
+		n(DISCOVERY, {
+			r(389701),	-- Overload Hardened Node
+			r(389704),	-- Overload Infurious Node
+			r(389700),	-- Overload Molten Node
+			r(389702),	-- Overload Primal Node
+			r(389703),	-- Overload Titan Node
+			r(383793),	-- Refine Draconium++
+			r(383795),	-- Refine Draconium+++
+			r(383796),	-- Refine Khaz'gorite++
+			r(383797),	-- Refine Khaz'gorite+++
+			r(383649),	-- Refine Serevite++
+			r(383792),	-- Refine Serevite+++
+		}),
+		i(189143),	-- Draconium Ore+
+		i(188658),	-- Draconium Ore++
+		i(190311),	-- Draconium Ore+++
+		i(201301),	-- Iridescent Ore
+		i(201300),	-- Iridescent Ore Fragments
+		i(190312),	-- Khaz'gorite Ore+
+		i(190313),	-- Khaz'gorite Ore++
+		i(190314),	-- Khaz'gorite Ore+++
 		i(197754),	-- Salt Deposit
-		i(190312),	-- Titanicium Ore
-		i(190313),	-- Titanicium Ore
-		i(190314),	-- Titanicium Ore
-		i(190394),	-- Tyrivite Ore
-		i(190395),	-- Tyrivite Ore
-		i(190396),	-- Tyrivite Ore
+		i(190395),	-- Serevite Ore+
+		i(190396),	-- Serevite Ore++
+		i(190394),	-- Serevite Ore+++
 	}),
 	prof(SKINNING, {
 		i(198401),	-- Aileron Seamoth Lure
@@ -872,114 +942,113 @@ root("HiddenQuestTriggers", {
 		}),
 		prof(ENGINEERING, {
 			-- Recrafting --
-			-- q(),	-- Recraft Equipment
+			--q(),	-- Recraft Equipment
 			-- Parts --
 			q(71482),	-- Arclight Capacitor
-			-- q(),	-- Assorted Safety Fuses
+			q(71484),	-- Assorted Safety Fuses
 			q(71480),	-- Everburning Blasting Powder
 			q(71481),	-- Greased-Up Gears
-			q(71478),	-- Handful of Tyrivite Bolts
-			-- q(),	-- Reinforced Machine Chassis
-			-- q(),	-- Rummage Through Scrap
+			q(71478),	-- Handful of Serevite Bolts
+			q(71483),	-- Reinforced Machine Chassis
+			--q(),	-- Rummage Through Scrap
 			q(71479),	-- Shock-Spring Coil
 			-- Finishing Reagents
 			q(71468),	-- Haphazardly Tethered Wires
-			-- q(),	-- Illustrious Insight
-			-- q(),	-- Overcharged Overclocker
+			--q(),	-- Illustrious Insight
+			q(71469),	-- Overcharged Overclocker
 			-- Optional Reagents
-			-- q(),	-- Calibrated Safety Switch
-			-- q(),	-- Critical Failure Prevention Unit
-			-- q(),	-- Magazine of Healing Darts
-			-- q(),	-- Spring-Loaded Capacitor Casing
+			q(71476),	-- Calibrated Safety Switch
+			--q(),	-- Critical Failure Prevention Unit
+			q(71474),	-- Magazine of Healing Darts
+			--q(),	-- Spring-Loaded Capacitor Casing
 			-- Tinker
-			-- q(),	-- Tinker: Alarm-O-Turret
-			-- q(),	-- Tinker: Arclight Vital Correctors
-			-- q(),	-- Tinker: Breath of Neltharion
-			-- q(),	-- Tinker: Grounded Circuitry
-			-- q(),	-- Tinker: Plane Displacer
-			-- q(),	-- Tinker: Polarity Amplifier
-			-- q(),	-- Tinker: Supercollide-O-Tron
+			q(71501),	-- Tinker: Alarm-O-Turret
+			q(71944),	-- Tinker: Arclight Vital Correctors
+			q(71502),	-- Tinker: Breath of Neltharion
+			q(71506),	-- Tinker: Grounded Circuitry
+			q(71503),	-- Tinker: Plane Displacer
+			q(71505),	-- Tinker: Polarity Amplifier
+			q(71504),	-- Tinker: Supercollide-O-Tron
 			-- Googles
-			-- q(),	-- Battle-Ready Binoculars
+			q(71444),	-- Battle-Ready Binoculars
 			q(71448),	-- Deadline Deadeyes
-			-- q(),	-- Lightweight Ocular Lenses
+			--q(),	-- Lightweight Ocular Lenses
 			q(71447),	-- Milestone Magnifiers
-			-- q(),	-- Oscillating Wilderness Opticals
-			-- q(),	-- Peripheral Vision Projectors
+			q(71443),	-- Oscillating Wilderness Opticals
+			q(71442),	-- Peripheral Vision Projectors
 			q(71446),	-- Quality-Assured Optics
 			q(71449),	-- Sentry's Stabilized Specs
 			-- Armor
-			-- q(),	-- Complicated Cuffs
-			-- q(),	-- Difficult Wrist Protectors
-			-- q(),	-- Needlessy Complex Wristguards
-			-- q(),	-- Overengineered Sleeve Extenders
+			q(71450),	-- Complicated Cuffs
+			q(71451),	-- Difficult Wrist Protectors
+			q(71445),	-- Needlessy Complex Wristguards
+			--q(),	-- Overengineered Sleeve Extenders
 			-- Weapons
 			q(71511),	-- P.E.W. x2
-			-- q(),	-- Sophisticated Problem Solver
+			q(71510),	-- Sophisticated Problem Solver
 			-- Cogwheels
-			-- q(),	-- Meticulously-Tuned Gear
-			-- q(),	-- One-Size-Fits-All
-			-- q(),	-- Rapidly Ticking Gear
-			-- q(),	-- Razor-Sharp Gear
+			q(71472),	-- Meticulously-Tuned Gear
+			q(71509),	-- One-Size-Fits-All
+			q(71470),	-- Rapidly Ticking Gear
+			q(71455),	-- Razor-Sharp Gear
 			-- Scopes & Ammo
-			-- q(),	-- Completely Safe Rockets
-			-- q(),	-- Endless Stack of Needles
+			q(71438),	-- Completely Safe Rockets
+			q(71439),	-- Endless Stack of Needles
 			q(71512),	-- Gyroscopic Kaleidoscope
-			-- q(),	-- High Intensity Thermal Scanner
-			-- q(),	-- Projectile Propulsion Pinion
+			q(71508),	-- High Intensity Thermal Scanner
+			q(71507),	-- Projectile Propulsion Pinion
 			-- Fireworks
-			-- q(),	-- Black Fireflight
-			-- q(),	-- Blue Fireflight
+			--q(),	-- Black Fireflight
+			q(71872),	-- Blue Fireflight
 			q(71877),	-- Bronze Fireflight
-			-- q(),	-- Bundle of Fireworks
-			-- q(),	-- Green Fireflight
-			-- q(),	-- Red Fireflight
+			q(71868),	-- Bundle of Fireworks
+			q(71879),	-- Green Fireflight
+			q(71882),	-- Red Fireflight
 			-- Explosives
-			-- q(),	-- Creature Combustion Canister
-			-- q(),	-- EZ-Thro Creature Combustion Canister
-			-- q(),	-- EZ-Thro Gravitational Displacer
-			-- q(),	-- EZ-Thro Grease Grenade
-			-- q(),	-- EZ-Thro Primal Deconstruction Charge
-			-- q(),	-- Gravitational Displacer
-			-- q(),	-- Grease Grenade
-			-- q(),	-- I.W.I.N Button Mk10
-			-- q(),	-- Primal Deconstruction Charge
-			-- q(),	-- Sticky Warp Grenade
-			-- q(),	-- Suspiciously Silent Crate
-			-- q(),	-- Suspiciously Ticking Crate
+			--q(),	-- Creature Combustion Canister
+			--q(),	-- EZ-Thro Creature Combustion Canister
+			--q(),	-- EZ-Thro Gravitational Displacer
+			--q(),	-- EZ-Thro Grease Grenade
+			--q(),	-- EZ-Thro Primal Deconstruction Charge
+			q(71460),	-- Gravitational Displacer
+			q(71461),	-- Grease Grenade
+			--q(),	-- I.W.I.N Button Mk10
+			--q(),	-- Primal Deconstruction Charge
+			q(71464),	-- Sticky Warp Grenade
+			q(71453),	-- Suspiciously Silent Crate
+			q(71452),	-- Suspiciously Ticking Crate
 			-- Devices
-			-- q(),	-- Cartomancy Cannon
-			-- q(),	-- Centralized Precipitation Emitter
-			-- q(),	-- Element-Infused Rocket Helmet
-			-- q(),	-- Environmental Emulator
-			-- q(),	-- Expedition Multi-Toolbox
-			-- q(),	-- Giggle Googles
-			-- q(),	-- H.E.L.P
+			q(71866),	-- Cartomancy Cannon
+			--q(),	-- Centralized Precipitation Emitter
+			q(71885),	-- Element-Infused Rocket Helmet
+			--q(),	-- Environmental Emulator
+			q(71887),	-- Giggle Googles
+			--q(),	-- H.E.L.P
 			q(71891),	-- Neural Silencer Mk3
-			-- q(),	-- Portable Alchemist's Lab Bench
-			-- q(),	-- Portable Tinker's Workbench
-			-- q(),	-- S.A.V.I.O.R
-			-- q(),	-- Tinker Removal Kit
-			-- q(),	-- Wyrmhole Generator
-			-- q(),	-- Zapthrottle Soul Inhaler
+			q(71889),	-- Portable Alchemist's Lab Bench
+			q(71890),	-- Portable Tinker's Workbench
+			q(71471),	-- S.A.V.I.O.R
+			q(72711),	-- Tinker Removal Kit
+			q(71888),	-- Wyrmhole Generator
+			--q(),	-- Zapthrottle Soul Inhaler
 			-- Profession Equipment
 			-- q(),	-- Bottomless Mireslush Ore Satchel
 			q(71495),	-- Bottomless Stonecrust Ore Satchel
 			q(71485),	-- Draconium Brainwave Amplifier
 			q(71493),	-- Draconium Delver's Helmet
-			-- q(),	-- Draconium Encased Samophlange
-			-- q(),	-- Draconium Fisherfriend
-			q(71485),	-- Khaz'gorite Brainwave Amplifier
+			q(71487),	-- Draconium Encased Samophlange
+			q(71489),	-- Draconium Fisherfriend
+			q(71486),	-- Khaz'gorite Brainwave Amplifier
 			q(71493),	-- Khaz'gorite Delver's Helmet
-			-- q(),	-- Khaz'gorite Encased Samophlange
-			-- q(),	-- Khaz'gorite Fisherfriend
-			-- q(),	-- Lapidary's Draconium Clamps
-			-- q(),	-- Lapidary's Khaz'gorite Clamps
+			q(71488),	-- Khaz'gorite Encased Samophlange
+			q(71490),	-- Khaz'gorite Fisherfriend
+			q(71491),	-- Lapidary's Draconium Clamps
+			q(71492),	-- Lapidary's Khaz'gorite Clamps
 			q(71497),	-- Spring-Loaded Draconium Fabric Cutters
-			-- q(),	-- Spring-Loaded Khaz'gorite Fabric Cutters
+			q(71498),	-- Spring-Loaded Khaz'gorite Fabric Cutters
 			-- Robotics
-			-- q(),	-- D.U.C.K.O.Y
-			-- q(),	-- Quack-E
+			q(71458),	-- D.U.C.K.O.Y
+			--q(),	-- Quack-E
 		}),
 		prof(MINING, {
 			q(72160),	-- Iridescent Ore Fragments

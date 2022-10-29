@@ -16,6 +16,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 			i(199841, {	-- Finely Carved Wing [FORGOT OBJECTID...]
 				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
 			}),
+			-- In Djaradin Cache no ObjectID atm..
+			i(199230),	-- Schematic: Projectile Propulsion Pinion (RECIPE!)
 		}),
 	}),
 })));
