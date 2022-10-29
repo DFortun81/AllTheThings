@@ -711,6 +711,7 @@ namespace ATT
                 {2479, 171},    // Legion Alchemy [8.0.1]
                 {2478, 171},    // Kul Tiran Alchemy [8.0.1]
                 {2750, 171},    // Shadowlands Alchemy [9.0.1]
+                {2823, 171},    // Dragon Isles Alchemy [10.0.0]
 
                 // Archaeology Skills
                 {794, 794},     // Archaeology [7.3.5]
@@ -731,6 +732,7 @@ namespace ATT
                 {2454, 164},    // Legion Blacksmithing [8.0.1]
                 {2437, 164},    // Kul Tiran Blacksmithing [8.0.1]
                 {2751, 164},    // Shadowlands Blacksmithing [9.0.1]
+                {2822, 164},    // Dragon Isles Blacksmithing [10.0.0]
 
                 // Cooking Skills
                 {185, 185},     // Cooking [7.3.5]
@@ -767,6 +769,7 @@ namespace ATT
                 {2487, 333},    // Legion Enchanting [8.0.1]
                 {2486, 333},    // Kul Tiran Enchanting [8.0.1]
                 {2753, 333},    // Shadowlands Enchanting [9.0.1]
+                {2825, 333},    // Dragon Isles Enchanting [10.0.0]
 
                 // Engineering Skills
                 {202, 202},     // Engineering [7.3.5]
@@ -781,6 +784,7 @@ namespace ATT
                 {2500, 202},    // Legion Engineering [8.0.1]
                 {2499, 202},    // Kul Tiran Engineering [8.0.1]
                 {2755, 202},    // Shadowlands Engineering [9.0.1]
+                {2827, 202},    // Dragon Isles Engineering [10.0.0]
 
                 // First Aid Skills
                 {129, 129},     // First Aid [7.3.5] [REMOVED FROM GAME]
@@ -808,6 +812,7 @@ namespace ATT
                 {2550, 182},    // Legion Herbalism [8.0.1]
                 {2549, 182},    // Kul Tiran Herbalism [8.0.1]
                 {2760, 182},    // Shadowlands Herbalism [9.0.1]
+                {2832, 182},    // Dragon Isles Herbalism [10.0.0]
 
                 // Inscription Skills
                 {773, 773},     // Inscription [7.3.5]
@@ -820,6 +825,7 @@ namespace ATT
                 {2508, 773},    // Legion Inscription [8.0.1]
                 {2507, 773},    // Kul Tiran Inscription [8.0.1]
                 {2756, 773},    // Shadowlands Inscription [9.0.1]
+                {2828, 773},    // Dragon Isles Inscription [9.0.1]
 
                 // Jewelcrafting Skills
                 {755, 755},     // Jewelcrafting [7.3.5]
@@ -832,6 +838,7 @@ namespace ATT
                 {2518, 755},    // Legion Jewelcrafting [8.0.1]
                 {2517, 755},    // Kul Tiran Jewelcrafting [8.0.1]
                 {2757, 755},    // Shadowlands Jewelcrafting [9.0.1]
+                {2829, 755},    // Dragon Isles Jewelcrafting [10.0.0]
 
                 // Leatherworking Skills
                 {165, 165},     // Leatherworking [7.3.5]
@@ -847,6 +854,7 @@ namespace ATT
                 {2526, 165},    // Legion Leatherworking [8.0.1]
                 {2525, 165},    // Kul Tiran Leatherworking [8.0.1]
                 {2758, 165},    // Shadowlands Leatherworking [9.0.1]
+                {2830, 165},    // Dragon Isles Leatherworking [10.0.0]
 
                 // Lockpicking Skills
                 {633, 633 },
@@ -862,6 +870,7 @@ namespace ATT
                 {2566, 186},    // Legion Mining [8.0.1]
                 {2565, 186},    // Kul Tiran Mining [8.0.1]
                 {2761, 186},    // Shadowlands Mining [9.0.1]
+                {2833, 186},    // Dragon Isles Mining [10.0.0]
 
                 // Runeforging [Deathknight only]
                 {960, 960},     // Runeforging
@@ -877,6 +886,7 @@ namespace ATT
                 {2558, 393},    // Legion Skinning [8.0.1]
                 {2557, 393},    // Kul Tiran Skinning [8.0.1]
                 {2762, 393},    // Shadowlands Skinning [9.0.1]
+                {2834, 393},    // Dragon Isles Skinning [10.0.0]
 
                 // Tailoring Skills
                 {197, 197},     // Tailoring [7.3.5]
@@ -892,6 +902,7 @@ namespace ATT
                 {2534, 197},    // Legion Tailoring [8.0.1]
                 {2533, 197},    // Kul Tiran Tailoring [8.0.1]
                 {2759, 197},    // Shadowlands Tailoring [9.0.1]
+                {2831, 197},    // Dragon Isles Tailoring [10.0.0]
 
                 // Tinkering [Mechagon]
                 {2720, 2720},   // Tinkering [8.2]
