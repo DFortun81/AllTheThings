@@ -735,8 +735,8 @@ for key,value in pairs({
 	-- Blizzard Events and Anniversaries
 		[-519] = "Игровые события",									-- World Events
 		[-520] = "Препатч",											-- Expansion Pre-Launch
-		[-522] = "Wrath of the Lich King: Нашествие зомби",			-- Wrath of the Lich King: Zombie Infestation
-		[-523] = "Cataclysm: Бейство элементалей",					-- Cataclysm: Elemental Unrest
+		[-522] = "Падение Залазана",								-- Zalazane's Fall
+		[-523] = "Бейство элементалей",								-- Elemental Unrest
 		[-525] = "Warlords of Draenor: Вторжение Железной Орды",	-- Warlords of Draenor: Iron Horde Incursion
 		[-526] = "Legion: Вторжение Легиона",						-- Legion: Legion Invasion
 		[-527] = "Battle for Azeroth: Война Шипов",					-- Battle for Azeroth: War of the Thorns

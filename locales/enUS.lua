@@ -1207,7 +1207,7 @@ app.L = {
 	-- Blizzard Events and Anniversaries
 		[-519] = app.asset("Category_Event"),												-- World Events
 		[-520] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",					-- Expansion Pre-Launch
-		[-522] = "Interface\\Icons\\expansionicon_wrathofthelichking",						-- Wotlk: Zombie Infestation
+		[-522] = "Interface\\Icons\\inv_misc_tournaments_banner_troll",						-- Zalazane's Fall
 		[-523] = app.asset("Expansion_CATA"),												-- Elemental Unrest
 		[-524] = "Interface\\Icons\\inv_misc_tournaments_symbol_gnome",						-- Operation: Gnomeregan
 		[-525] = "Interface\\Icons\\Achievement_Boss_Blackhand",							-- WoD: Iron Horde Incursion
@@ -1758,7 +1758,7 @@ app.L = {
 	-- Blizzard Events and Anniversaries
 		[-519] = "World Events",												-- World Events
 		[-520] = "Expansion Pre-Launch",										-- Expansion Pre-Launch
-		[-522] = EXPANSION_NAME2..": Zombie Infestation",						-- Wrath of the Lich King: Zombie Infestation
+		[-522] = "Zalazane's Fall",												-- Zalazane's Fall
 		[-523] = "Elemental Unrest",											-- Elemental Unrest
 		[-524] = "Operation: Gnomeregan",										-- Operation: Gnomeregan
 		[-525] = EXPANSION_NAME5..": Iron Horde Incursion",						-- Warlords of Draenor: Iron Horde Incursion

@@ -1287,6 +1287,10 @@ root("Zones", m(KALIMDOR, {
 						i(11845),	-- Handmade Leather Bag
 					},
 				})),
+				q(26951, {	-- Cleanup on Isle E.
+					["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+				}),
 				q(25170, {	-- Cleaning Up the Coastline
 					["qg"] = 10578,	-- Bom'bay
 					["coord"] = { 55.6, 75.2, DUROTAR },

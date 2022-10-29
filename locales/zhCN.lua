@@ -747,8 +747,8 @@ for key,value in pairs({
 	-- Blizzard Events and Anniversaries
 		[-519] = "世界事件",											-- World Events
 		[-520] = "资料片前夕",											-- Expansion Pre-Launch
-		[-522] = EXPANSION_NAME2.."：僵尸感染",							-- Wrath of the Lich King: Zombie Infestation
-		[-523] = EXPANSION_NAME3.."：元素动荡",							-- Cataclysm: Elemental Unrest
+		[-522] = "扎拉赞恩的灭亡",										-- Zalazane's Fall
+		[-523] = "元素动荡",												-- Elemental Unrest
 		[-525] = EXPANSION_NAME5.."：钢铁部落入侵",						-- Warlords of Draenor: Iron Horde Incursion
 		[-526] = EXPANSION_NAME6.."：军团入侵",							-- Legion: Legion Invasion
 		[-527] = EXPANSION_NAME7.."：荆棘战争",							-- Battle for Azeroth: War of the Thorns

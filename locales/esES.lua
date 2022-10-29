@@ -750,8 +750,8 @@ for key,value in pairs({
 	-- Blizzard Events and Anniversaries
 		--TODO: [-519] = "World Events",							-- World Events
 		--TODO: [-520] = "Expansion Pre-Launch",					-- Expansion Pre-Launch
-		--TODO: [-522] = EXPANSION_NAME2..": Zombie Infestation",	-- Wrath of the Lich King: Zombie Infestation
-		--TODO: [-523] = EXPANSION_NAME3..": Elemental Unrest",		-- Cataclysm: Elemental Unrest
+		--TODO: [-522] = "Zalazane's Fall",												-- Zalazane's Fall
+		--TODO: [-523] = "Elemental Unrest",						-- Elemental Unrest
 		--TODO: [-525] = EXPANSION_NAME5..": Iron Horde Incursion",	-- Warlords of Draenor: Iron Horde Incursion
 		--TODO: [-526] = EXPANSION_NAME6..": Legion Invasion",		-- Legion: Legion Invasion
 		--TODO: [-527] = EXPANSION_NAME7..": War of the Thorns",	-- Battle for Azeroth: War of the Thorns
