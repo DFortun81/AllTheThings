@@ -2645,3 +2645,17 @@
 2840@@@Shady Sanctuary, Ohn'ahran Plains
 10.0.0.45454
 2842@@@Rubyscale Outpost, The Waking Shores
+10.0.2.46259
+103@@@Nagrand - PvP - Attack Run Start 1 
+509@@@Quest Path 2063: Brian's 4.0 Test Path 
+951@@@Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise 
+963@@@Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise 
+1495@@@Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice 
+2392@@@Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path 
+2711@@@Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron 
+2800@@@Uktulut Outpost, The Waking Shores
+2847@@@Maruukai, The Nokhud Offensive
+2848@@@Ohn'iri Springs, The Nokhud Offensive
+2849@@@The Battle of Spears, The Nokhud Offensive
+2850@@@The Eternal Kurgans, The Nokhud Offensive
+2851@@@Ohn'iri Springs, The Nokhud Offensive

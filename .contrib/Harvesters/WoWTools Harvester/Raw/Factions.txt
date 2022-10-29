@@ -998,3 +998,5 @@
 10.0.2.45779
 2523@@@Dark Talons
 2524@@@Obsidian Warders
+10.0.2.46259
+6@@@PLAYER, Tauren 

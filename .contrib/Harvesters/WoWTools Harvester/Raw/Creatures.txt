@@ -19185,3 +19185,44 @@
 10.0.2.46091
 199171@@@Hornswog Chorus Sound Stalker A
 199172@@@Hornswog Chorus Sound Stalker B
+10.0.2.46259
+187491@@@Pond Duckling
+187671@@@Treeflitter
+190754@@@Wrathion & Sabellian
+191499@@@Blacktalon Avenger
+191502@@@Sabellian
+191505@@@Armored Magmammoth Mount
+191514@@@Wrathion
+191522@@@Baskilan
+192734@@@Osoria
+192735@@@Evorian
+193185@@@Champion Ugi
+193186@@@Blacktalon Sentry
+193191@@@Champion Ugi's Mount
+193213@@@Zepharion
+195585@@@Stormbound Proto-Drake
+196757@@@Black Drake
+196785@@@Red Drake
+196787@@@Blue Drake
+196788@@@Bronze Drake
+197089@@@Sophic Amalgamation
+197656@@@Blue Drake
+197659@@@Blue Drake
+198158@@@Sabellian & Wrathion
+199316@@@Time-Lost Devilsaur
+199317@@@Bronze Sentry
+199335@@@Zepharion
+199364@@@Evorian
+199380@@@Air Elemental
+199384@@@Voraxian
+199431@@@Arcane Disc
+199437@@@Flame Wielder
+199448@@@Tattukiaka
+199564@@@Naldormi
+199565@@@Xiddorm
+199608@@@Siaszerathel
+199609@@@Andantenormu
+199611@@@Kivrok
+199689@@@Arrow
+199704@@@Snowball
+199706@@@Snowball

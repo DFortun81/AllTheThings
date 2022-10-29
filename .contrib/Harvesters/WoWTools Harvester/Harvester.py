@@ -37,7 +37,7 @@ def get_thing_table(thing: type[Thing], build: str) -> list[str]:
     """Get the table of a thing from a build."""
     url = f"https://wow.tools/dbc/api/export/?name={thing.table()}&build={build}"
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Linux; Android 9; G3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
     }
     return requests.get(url, headers=headers).content.decode("utf-8").splitlines()
 
@@ -370,6 +370,7 @@ def add_latest_data(build: str) -> None:
     add_latest_build(build)
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
+        print(thing)
         raw_path = Path("Raw", f"{thing.__name__}.txt")
         thing_list = get_thing_data(thing, build.strip())
         with open(raw_path, "r+") as raw_file:
@@ -382,3 +383,6 @@ def add_latest_data(build: str) -> None:
             if difference:
                 raw_file.write(build + "\n")
                 raw_file.writelines(difference)
+
+
+sort_raw_file_recipes()

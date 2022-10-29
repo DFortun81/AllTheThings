@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 from pathlib import Path
 
 DATAS_FOLDER = Path("..", "..", "Parser", "DATAS")
-DELIMITER = "~"
+DELIMITER = "@@@"
 
 
 def remove_non_digits(string: str) -> str:

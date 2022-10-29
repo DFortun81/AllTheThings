@@ -599,3 +599,7 @@
 10.0.2.46091
 483@@@%s, Paragon of the Obsidian Brood
 484@@@%s, Agent of the Black Prince
+10.0.2.46259
+469@@@%s, the Worldbreaker
+485@@@Merchant Artisan %s
+486@@@Personal Crafter %s

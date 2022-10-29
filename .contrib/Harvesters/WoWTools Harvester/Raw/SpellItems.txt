@@ -10775,3 +10775,21 @@
 10.0.2.46091
 6694@@@Chirping Rune
 6695@@@Chirping Rune
+10.0.2.46259
+6092@@@+$k1 Speed
+6147@@@+$k1 Speed
+6379@@@Sharpened: +$k1 Attack Power |A:Professions-Icon-Quality-Tier1-Small:20:20|a
+6380@@@Sharpened: +$k1 Attack Power |A:Professions-Icon-Quality-Tier2-Small:20:20|a
+6381@@@Sharpened: +$k1 Attack Power |A:Professions-Icon-Quality-Tier3-Small:20:20|a
+6382@@@Razor Sharp: +$k1 Finesse |A:Professions-Icon-Quality-Tier1-Small:20:20|a
+6383@@@Razor Sharp: +$k1 Finesse |A:Professions-Icon-Quality-Tier2-Small:20:20|a
+6384@@@Razor Sharp: +$k1 Finesse |A:Professions-Icon-Quality-Tier3-Small:20:20|a
+6638@@@Sophic Writ |A:Professions-Icon-Quality-Tier1-Small:20:20|a
+6639@@@Sophic Writ |A:Professions-Icon-Quality-Tier2-Small:20:20|a
+6640@@@Sophic Writ |A:Professions-Icon-Quality-Tier3-Small:20:20|a
+6641@@@Sophic Devotion |A:Professions-Icon-Quality-Tier1-Small:20:20|a
+6642@@@Sophic Devotion |A:Professions-Icon-Quality-Tier2-Small:20:20|a
+6643@@@Sophic Devotion |A:Professions-Icon-Quality-Tier3-Small:20:20|a
+6696@@@Weighted: +$k1 Attack Power |A:Professions-Icon-Quality-Tier1-Small:20:20|a
+6697@@@Weighted: +$k1 Attack Power |A:Professions-Icon-Quality-Tier2-Small:20:20|a
+6698@@@Weighted: +$k1 Attack Power |A:Professions-Icon-Quality-Tier3-Small:20:20|a
