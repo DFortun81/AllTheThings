@@ -39,14 +39,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(9618, {		-- The Iron Invasion
 			un(REMOVED_FROM_GAME,title(289)),		-- of the Iron Vanguard
 		})),
-		ach(7467, {	-- Theramore's Fall (A)
-			["races"] = ALLIANCE_ONLY,
-			["u"] = REMOVED_FROM_GAME,	-- Unobtainable after MoP Launch
-		}),
-		ach(7468, {	-- Theramore's Fall (H)
-			["races"] = HORDE_ONLY,
-			["u"] = REMOVED_FROM_GAME,	-- Unobtainable after MoP Launch
-		}),
 		un(REMOVED_FROM_GAME, ach(7852)),		-- They're Both Footballs?
 		ach(15308),								-- Tower Overwhelming
 		un(REMOVED_FROM_GAME, ach(5533)),		-- Veteran of the Shifting Sands

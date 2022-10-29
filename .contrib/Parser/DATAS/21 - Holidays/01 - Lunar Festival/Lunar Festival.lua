@@ -1156,11 +1156,11 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 					}),
 					i(90000, {	-- Everlasting Horde Firework (TOY!)
-						["timeline"] = { "added 5.0.4.15913" },
+						["timeline"] = { "added 6.0.2" },
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
 					i(89999, {	-- Everlasting Alliance Firework (TOY!)
-						["timeline"] = { "added 5.0.4.15913" },
+						["timeline"] = { "added 6.0.2" },
 						["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 					}),
 					i(143827, {	-- Red Dragon Head Costume (TOY!)

@@ -124,26 +124,6 @@ _.Zones =
 						}),
 					},
 				}),
-				n(63546, {	-- Zidormi
-					["description"] = "Vendor only sells to those who completed the level 85 version of the Theramore's Fall Scenario.",
-					["coord"] = { 55.8, 49.6, DUSTWALLOW_MARSH },
-					["g"] = {
-						i(89196, {	-- Theramore Tabard
-							["races"] = ALLIANCE_ONLY,
-							["timeline"] = {
-								"added 5.0.1",
-								"removed 6.1",
-							},
-						}),
-						i(89205, {	-- Mini Mana Bomb (TOY!)
-							["races"] = HORDE_ONLY,
-							["timeline"] = {
-								"added 5.0.1",
-								"removed 6.1",
-							},
-						}),
-					},
-				}),
 				n(4884, {	-- Zulrg <Weaponsmith>
 					["coord"] = { 36.2, 31.6, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
