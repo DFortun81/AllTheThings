@@ -104,8 +104,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 71.2, 40.8, THE_WAKING_SHORES },
 					["g"] = {
 						i(194401),	-- Expedition Guard's Chestguard
+						i(194402),	-- Expedition Mercenary's Hauberk
+						i(194400),	-- Expedition Researcher's Vestments
 						i(194403),	-- Field Scout's Vest
-						i(194402),	-- League Mercenary's Hauberk
 					},
 				}),
 				q(65991, {	-- Time for a Reckoning
@@ -182,9 +183,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["provider"] = { "n", 190171 },	-- Sendrax
 					["coord"] = { 54.0, 22.8, THE_WAKING_SHORES },	-- This isnt true, He follows you....
 					["g"] = {
+						i(194382),	-- Expedition Mercenary's Boots
+						i(194381),	-- Expedition Researcher's Treads
 						i(194338),	-- Expedition Guard's Sabatons
 						i(194383),	-- Field Scout's Boots
-						i(194382),	-- League Mercenary's Boots
 						crit(2, {	-- Dragons in Distress
 							["achievementID"] = 16334,	-- Waking Hope
 						}),
@@ -259,7 +261,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 62.3, 73.0, THE_WAKING_SHORES },
 					["g"] = {
 						i(194344),	-- Expedition Guard's Gauntlets
-						i(194346),	-- League Mercenary's Grips
+						i(194346),	-- Expedition Mercenary's Grips
+						i(194345),	-- Expedition Researcher's Gloves
+						i(194343),	-- Field Scout's Gloves
 					},
 				}),
 				q(70061, {	-- Training Wings
@@ -316,8 +320,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 53.7, 80.2, THE_WAKING_SHORES },
 					["g"] = {
 						i(194355),	-- Expedition Guard's Spaulders
+						i(194357),	-- Expedition Mercenary's Monnion
+						i(194356),	-- Expedition Researcher's Mantle
 						i(194354),	-- Field Scout's Spaulders
-						i(194357),	-- League Mercenary's Monnion
 						i(192436),	-- Ruby Spear
 					},
 				}),
@@ -400,7 +405,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 27.3, 62.8, THE_WAKING_SHORES },
 					["g"] = {
 						i(194358),	-- Expedition Guard's Girdle
-						i(194360),	-- League Mercenary's Belt
+						i(194360),	-- Expedition Mercenary's Belt
+						i(194359),	-- Expedition Researcher's Sash
+						i(194361),	-- Field Scout's Belt
 					},
 				}),
 				q(66056, {	-- Forging A New Future
@@ -422,7 +429,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 24.7, 61.1, THE_WAKING_SHORES },
 					["g"] = {
 						i(194340),	-- Expedition Guard's Greaves
-						i(194341),	-- League Mercenary's Legguards
+						i(194341),	-- Expedition Mercenary's Legguards
+						i(194339),	-- Expedition Researcher's Pantaloons
+						i(194342),	-- Field Scout's Pants
 						crit(4, {	-- Wrathion's Gambit
 							["achievementID"] = 16334,	-- Waking Hope
 						}),
@@ -449,7 +458,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 24.2, 55.9, THE_WAKING_SHORES },
 					["g"] = {
 						i(194363),	-- Expedition Guard's Vambraces
-						i(194364),	-- League Mercenary's Bracers
+						i(194364),	-- Expedition Mercenary's Bracers
+						i(194362),	-- Expedition Researcher's Wraps
+						i(194365),	-- Field Scout's Bindings
 					},
 				}),
 				q(66785, {	-- The Last Eggtender
@@ -476,8 +487,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 62.3, 73.0, THE_WAKING_SHORES },
 					["g"] = {
 						i(194380),	-- Expedition Guard's Helm
+						i(194348),	-- Expedition Mercenary's Helm
+						i(194347),	-- Expedition Researcher's Hood
 						i(194349),	-- Field Scout's Helmet
-						i(194348),	-- League Mercenary's Helm
 						crit(5, {	-- A Purpose Restored
 							["achievementID"] = 16334,	-- Waking Hope
 						}),
@@ -509,7 +521,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						["provider"] = { "n", 188735 },	-- Elementalist Taiyang
 						["coord"] = { 66.1, 58.1, THE_WAKING_SHORES },
 						["g"] = {
+							i(194410),	-- Cinch of the Ruby Defenders
 							i(194409),	-- Earth Binding Chain
+							i(194408),	-- Life Vault Cord
 							i(194407),	-- Ruby Guardian's Girdle
 						},
 					}),
@@ -752,7 +766,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						["provider"] = { "n", 190525 },	-- Vaeros
 						["coord"] = { 55.3, 63.5, THE_WAKING_SHORES },
 						["g"] = {
+							i(194404),	-- Beetender's Hood
 							i(194415),	-- Reinforced Beekeeper's Helm
+							i(194406),	-- Stingerproof Helmet
 							i(194405),	-- Wasp Repelling Skullcap
 							i(193064),	-- Smoke Diffuser
 						},
@@ -789,8 +805,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						["coord"] = { 74.4, 42.1, THE_WAKING_SHORES },
 						["g"] = {
 							i(194350),	-- Expedition Guard's Legguards
+							i(194352),	-- Expedition Mercenary's Leggings
+							i(194351),	-- Expedition Researcher's Leggings
 							i(194353),	-- Field Scout's Breeches
-							i(194352),	-- League Mercenary's Leggings
 						},
 					}),
 					q(66107, {	-- Wildlife Rescue
@@ -812,8 +829,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						["coord"] = { 74.4, 42.1, THE_WAKING_SHORES },
 						["g"] = {
 							i(194412),	-- Expedition Guard's Wristguards
+							i(194413),	-- Expedition Mercenary's Wristwraps
+							i(194411),	-- Expedition Researcher's Binders
 							i(194414),	-- Field Scout's Bindings
-							i(194413),	-- League Mercenary's Wristwraps
 							crit(5, {	-- Save the Hippos!
 								["achievementID"] = 16401,	-- Sojourner of the Waking Shores
 							}),

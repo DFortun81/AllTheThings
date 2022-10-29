@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 root("PVP", pvp(tier(DF_TIER, {
-	n(-697, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
+	n(CAMPAIGN, bubbleDownSelf({ ["timeline"] = "added 9.0.1" }, {
 		n(ACHIEVEMENTS, {
 			ach(15955),	-- Challenger I: Dragonflight Season 1
 			ach(15956),	-- Challenger II: Dragonflight Season 1
@@ -46,7 +46,6 @@ root("PVP", pvp(tier(DF_TIER, {
 			i(199238),	-- Schematic: Sticky Warp Grenade (RECIPE!)
 			i(199239),	-- Schematic: Tinker: Alarm-O-Turret (RECIPE!)
 			i(199299),	-- Schematic: Tinker: Polarity Amplifier (RECIPE!)
-
 		}),
 		n(PVP_ASPIRANT, {
 			n(BACK, {

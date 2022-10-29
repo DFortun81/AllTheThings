@@ -1407,19 +1407,22 @@ app.L = {
 		[-1010] = "Interface\\Worldmap\\GlowSkull_64Purple",
 		[-1011] = "Interface\\Worldmap\\GlowSkull_64Red",
 	-- Temp
-		[-1098] = 236785,																			-- Side Quests
 		[-1099] = "Interface\\Icons\\inv_legioncampaign04",											-- Campaign
 	-- Dragonflight
 		[-1100] = "Interface\\Icons\\ability_dragonriding_glyph01",									-- Dragon Customization
 		[-1101] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_trinket_1ragingelement_air",	-- Primal Storms
 		[-1110] = "Interface\\Icons\\ui_majorfaction_expedition",									-- Dragonscale Expedition
 		[-1111] = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",							-- Climbing
+		[-1112] = "Interface\\Icons\\inv_misc_-selfiecamera_01",									-- Cataloging
 		[-1120] = "Interface\\Icons\\ui_majorfaction_centaur",										-- Maruuk Centaur
 		[-1121] = "Interface\\Icons\\ability_racial_returntocamp",									-- Clan Aylaag
 		[-1122] = "Interface\\Icons\\inv_scroll_11",												-- Grand Hunts
 		[-1130] = "Interface\\Icons\\ui_majorfaction_tuskarr",										-- Iskaara Tuskarr
 		[-1131] = "Interface\\Icons\\inv_polearm_2h_kultirasharpoon_a_01",							-- Iskaara Fishing
+		[-1132] = "Interface\\Icons\\inv_tradeskill_cooking_stonesouppot01",						-- Iskaara Cooking
 		[-1140] = "Interface\\Icons\\ui_majorfaction_valdrakken",									-- Valdrakken Accord
+		[-1141] = "Interface\\Icons\\inv_artifact_dragonscales",									-- Siege on Dragonbane Keep
+		[-1142] = "Interface\\Icons\\inv_checkered_flag",											-- Aerial Challenges
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1978,19 +1981,22 @@ app.L = {
 		[-1010] = "Gladiator Alternative",											-- Gladiator Alternative
 		[-1011] = "Elite Alternative",												-- Elite Alternative
 	-- Temp
-		[-1098] = "Side Quests",													-- Side Quests
 		[-1099] = TRACKER_HEADER_CAMPAIGN_QUESTS,									-- Campaign
 	-- Dragonflight
 		[-1100] = "Dragon Customization",											-- Dragon Customization
 		[-1101] = "Primal Storms",													-- Primal Storms
 		[-1110] = "Dragonscale Expedition",											-- Dragonscale Expedition
 		[-1111] = "Climbing",														-- Climbing
+		[-1112] = "Cataloging",														-- Cataloging
  		[-1120] = "Maruuk Centaur",													-- Maruuk Centaur
 		[-1121] = "Clan Aylaag",													-- Clan Aylaag
 		[-1122] = "Grand Hunts",													-- Grand Hunts
 		[-1130] = "Iskaara Tuskarr",												-- Iskaara Tuskarr
 		[-1131] = "Iskaara Fishing",												-- Iskaara Fishing
+		[-1132] = "Iskaara Cooking",												-- Iskaara Cooking
 		[-1140] = "Valdrakken Accord",												-- Valdrakken Accord
+		[-1141] = "Siege On Dragonbane Keep",										-- Siege on Dragonbane Keep
+		[-1142] = "Aerial Challenges",												-- Aerial Challenges
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",

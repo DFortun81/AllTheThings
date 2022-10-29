@@ -1120,28 +1120,28 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 							ach(15908),	-- Garden Gallivant Advanced: Gold
 						},
 					}),
-					q(69957, {	-- Passage Pathway
+					q(69957, {	-- Tyrhold Trial
 						["sourceQuests"] = { 68795 },	-- Dragonriding
 						["provider"] = { "n", 193651 },	-- Bronze Timekeeper
 						["coord"] = { 57.2, 66.9, THALDRASZUS },
 						["repeatable"] = true,
 						["g"] = {
 							i(191140),	-- Bronze Timepiece
-							ach(15855),	-- Passage Pathway: Bronze
-							ach(15856),	-- Passage Pathway: Silver
-							ach(15857),	-- Passage Pathway: Gold
+							ach(15855),	-- Tyrhold Trial: Bronze
+							ach(15856),	-- Tyrhold Trial: Silver
+							ach(15857),	-- Tyrhold Trial: Gold
 						},
 					}),
-					q(69958, {	-- Passage Pathway - Advanced
+					q(69958, {	-- Tyrhold Trial - Advanced
 						["sourceQuests"] = { 68795 },	-- Dragonriding
 						["provider"] = { "n", 193651 },	-- Bronze Timekeeper
 						["coord"] = { 57.2, 66.9, THALDRASZUS },
 						["repeatable"] = true,
 						["g"] = {
 							i(191140),	-- Bronze Timepiece
-							ach(15858),	-- Passage Pathway Advanced: Bronze
-							ach(15859),	-- Passage Pathway Advanced: Silver
-							ach(15860),	-- Passage Pathway Advanced: Gold
+							ach(15858),	-- Tyrhold Trial Advanced: Bronze
+							ach(15859),	-- Tyrhold Trial Advanced: Silver
+							ach(15860),	-- Tyrhold Trial Advanced: Gold
 						},
 					}),
 				},

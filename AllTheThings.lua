@@ -1091,6 +1091,7 @@ app.RefreshTradeSkillCache = function()
 	cache[2720] = true;	-- Junkyard Tinkering
 	cache[2791] = true;	-- Ascension Crafting
 	cache[2819] = true;	-- Protoform Synthesis
+	cache[2847] = true;	-- Tuskarr Fishing Gear
 	local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
 	for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do
 		if j ~= 0 then

@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
---[[
+
 root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		n(CATALOGING, {
@@ -25,18 +25,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 
 
 
-			WS
+			--WS
 			q(70075),	-- Cataloging the Waking Shores
 			q(70632),	-- Cataloging the Waking Shores
-			OP
+			--OP
 			q(70079),	-- Cataloging the Ohn'ahran Plains
 			q(70659),	-- Cataloging the Ohn'ahran Plains
-			AS
+			--AS
 			q(70100),	-- Cataloging the Azure Span
-			T
+			--T
 			q(70110),	-- Cataloging Thaldraszus
 			q(70699),	-- Cataloging Thaldraszus
 		})),
 	}),
 })));
---]]

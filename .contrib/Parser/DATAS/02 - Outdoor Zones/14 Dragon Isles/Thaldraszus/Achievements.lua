@@ -65,7 +65,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					15891,	-- Cliffside Circuit: Bronze
 					15827,	-- The Flowing Forest Flight: Bronze
 					15903,	-- Garden Gallivant: Bronze
-					15855,	-- Passage Pathway: Bronze
+					15855,	-- Tyrhold Trial: Bronze
 				}},
 			}),
 			ach(15925, {	-- Thaldraszus: Silver
@@ -76,7 +76,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					15892,	-- Cliffside Circuit: Silver
 					15828,	-- The Flowing Forest Flight: Silver
 					15904,	-- Garden Gallivant: Silver
-					15856,	-- Passage Pathway: Silver
+					15856,	-- Tyrhold Trial: Silver
 				}},
 			}),
 			ach(15926, {	-- Thaldraszus: Gold
@@ -87,7 +87,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					15893,	-- Cliffside Circuit: Gold
 					15829,	-- The Flowing Forest Flight: Gold
 					15905,	-- Garden Gallivant: Gold
-					15857,	-- Passage Pathway: Gold
+					15857,	-- Tyrhold Trial: Gold
 				}},
 			}),
 			ach(15936, {	-- Thaldraszus Advanced: Bronze
@@ -98,7 +98,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					15894,	-- Cliffside Circuit Advanced: Bronze
 					15830,	-- The Flowing Forest Flight Advanced: Bronze
 					15906,	-- Garden Gallivant Advanced: Bronze
-					15858,	-- Passage Pathway Advanced: Bronze
+					15858,	-- Tyrhold Trial Advanced: Bronze
 				}},
 			}),
 			ach(15937, {	-- Thaldraszus Advanced: Silver
@@ -109,7 +109,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					15895,	-- Cliffside Circuit Advanced: Silver
 					15831,	-- The Flowing Forest Flight Advanced: Silver
 					15907,	-- Garden Gallivant Advanced: Silver
-					15859,	-- Passage Pathway Advanced: Silver
+					15859,	-- Tyrhold Trial Advanced: Silver
 				}},
 			}),
 			ach(15938, {	-- Thaldraszus Advanced: Gold
@@ -120,7 +120,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					15896,	-- Cliffside Circuit Advanced: Gold
 					15832,	-- The Flowing Forest Flight Advanced: Gold
 					15908,	-- Garden Gallivant Advanced: Gold
-					15860,	-- Passage Pathway Advanced: Gold
+					15860,	-- Tyrhold Trial Advanced: Gold
 				}},
 			}),
 
