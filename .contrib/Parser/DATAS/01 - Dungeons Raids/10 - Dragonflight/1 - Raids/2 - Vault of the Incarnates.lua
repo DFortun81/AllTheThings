@@ -37,6 +37,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				i(194266),	-- Pattern: Bronzed Grip Wrappings (RECIPE!)
 				i(194260),	-- Pattern: Blue Dragon Soles (RECIPE!)
 				i(191597),	-- Recipe: Potion Absorption Inhibitor (RECIPE!)
+				i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
 			}),
 			d(14, {	-- Normal
 				e(2587, {	-- Eranog

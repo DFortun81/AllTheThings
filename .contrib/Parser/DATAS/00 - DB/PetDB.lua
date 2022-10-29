@@ -1106,6 +1106,7 @@ pet(199175, 3316);	-- Lubbins
 pet(191946, 3265);	-- Mister Muskoxeles
 pet(200519, 3286);	-- Mister Toots
 pet(193484, 3302);	-- Pilot
+pet(193572, 3306);	-- Quack-E
 pet(191936, 3263);	-- Secretive Frogduck
 pet(198353, 3368);	-- Shiverweb Broodling
 pet(191932, 3262);	-- Violet Violence
@@ -1157,7 +1158,6 @@ pet(0, 3299);	-- Echo of the Depths
 
 pet(0, 3301);	-- Wild Duckling
 pet(193571, 3303);	-- [PH] Mallard Baby Duck
-pet(193572, 3306);	-- Quack-E
 pet(0, 3307);	-- Plucky Duckling
 pet(0, 3308);	-- Time-Lost Duckling
 pet(0, 3309);	-- Viridescent Duck

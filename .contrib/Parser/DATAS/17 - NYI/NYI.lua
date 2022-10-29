@@ -381,15 +381,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(190340),	-- Plainshunter's Supplies
 		}),
 		n(CRAFTABLES, {
-			i(189143),	-- Draconium Ore+
-			i(188658),	-- Draconium Ore++
-			i(190311),	-- Draconium Ore+++
 			i(189541),	-- Primal Molten Alloy+
 			i(189542),	-- Primal Molten Alloy++
 			i(189543),	-- Primal Molten Alloy+++
-			i(190312),	-- Khaz'gorite Ore+
-			i(190313),	-- Khaz'gorite Ore++
-			i(190314),	-- Khaz'gorite Ore+++
 			i(190318),	-- Perception!
 			i(190319),	-- Resourceful!
 			i(190332),	-- Sparking Catalyst
@@ -407,9 +401,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(190536),	-- Infurious Alloy+
 			i(190537),	-- Infurious Alloy++
 			i(190538),	-- Infurious Alloy+++
-			i(190394),	-- Serevite Ore+++
-			i(190395),	-- Serevite Ore+
-			i(190396),	-- Serevite Ore++
+
 			i(190482),	-- Draconium Stiletto
 			i(190483),	-- Draconium Dirk
 			i(190484),	-- Draconium Sword
@@ -842,7 +834,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(191294),	-- Small Expedition Shovel
 		i(191296),	-- Enchanted Lockbox
 		i(191304),	-- Sturdy Expedition Shovel
-		i(191305),	-- Expedition Multi-Toolbox
+
 
 
 		i(191460),	-- Hochenblume+
@@ -1013,14 +1005,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(192132),	-- Draconium Blade Sharpener
 
 
-		i(192443),	-- Element-Infused Rocket Helmet
+
 
 		i(192459),	-- Jean's Lucky Fish
 		i(192464),	-- Darkmoon Deck: Ysera
 
 		i(192476),	-- Expedition Bullwhip
 
-		i(192495),	-- Malfunctioning Stealthman 54
+
 
 		i(192523),	-- Renewed Proto-Drake: Green Scales
 
@@ -1285,8 +1277,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(193029),	-- Projection Prism
 		i(193030),	-- Projection Prism
 		i(193031),	-- Projection Prism
-		i(193032),	-- Jeweled Offering
-		i(193033),	-- Convergent Prism
+
+
 		i(193034),	-- Ludicrously Luxurious Lucky Loop
 		i(193035),	-- Bold-Print Bifocals
 		i(193036),	-- Left-Handed Magnifying Glass
@@ -1474,9 +1466,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(193469),	-- Toxified Armor Patch
 		i(193470),	-- Feral Hide Drums
 		i(193475),	-- Masterwork Riding Crop
-		i(193476),	-- Gnoll Tent
+
 		i(193477),	-- Battle Scarred Scale
-		i(193478),	-- Tuskarr Bean Bag
+
 		i(193479),	-- Floral Basket
 		i(193480),	-- Durable Pack
 		i(193481),	-- Emblazoned Ruby Staff
@@ -1511,7 +1503,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(193567),	-- Reinforced Armor Kit
 		i(193568),	-- Engraved Spearhead
 		i(193571),	-- Mallard Duckling
-		i(193572),	-- Quack-E
+
 		i(193587),	-- Time-Lost Duck
 		i(193600),	-- Lost Battlepack
 		i(193601),	-- The Black Locus
@@ -1895,8 +1887,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194122),	-- Sour Apple
 		i(194123),	-- Chromatic Dust
 		i(194124),	-- Vibrant Shard
-		i(194125),	-- Spring-Loaded Draconium Fabric Cutters
-		i(194126),	-- Spring-Loaded Khaz'gorite Fabric Cutters
+
+
 		i(194127),	-- Dragon Isles Unravelling
 		i(194299),	-- Decoration of Flame
 		i(194300),	-- Conjured Chillglobe
@@ -2885,7 +2877,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197706),	-- Eaglestrike Pike
 		i(197708),	-- Unstable Matrix Core
 		i(197718),	-- Scroll of Sales
-		i(197719),	-- Artisan's Sign
+
 		i(197725),	-- Deathrip's Curled Claw
 		i(197727),	-- Mystical Water Vial
 		i(197733),	-- Unsustainable Containment Core
@@ -2907,7 +2899,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197751),	-- Pastry Packets
 		i(197752),	-- Conveniently Packaged Ingredients
 		i(197753),	-- Thaldraszian Cocoa Powder
-		i(197754),	-- Salt Deposit
+
 		i(197755),	-- Lava Beetle
 		i(197756),	-- Pebbled Rock Salts
 		i(197757),	-- Assorted Exotic Spices
@@ -3029,7 +3021,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197957),	-- Timeless Watcher's Saber
 		i(197959),	-- Lavafused Armor
 		i(197960),	-- Bag of Biscuits
-		i(197961),	-- Whelps on Strings
+
 		i(197964),	-- Pattern: Crimson Combatant's Resilient Mask
 		i(197965),	-- Pattern: Crimson Combatant's Resilient Chestpiece
 		i(197966),	-- Pattern: Crimson Combatant's Resilient Trousers
@@ -3051,7 +3043,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197983),	-- Drakmoss Clump
 		i(197984),	-- Pattern: Wisp of Tyr
 		i(197985),	-- Pattern: Essence of Tyr
-		i(197986),	-- Murglasses
 		i(197988),	-- Frozen Shard Ring
 		i(197989),	-- Water Ordained Signet
 		i(197990),	-- Solemn Seashell String
@@ -3100,7 +3091,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198035),	-- Archer's Decorated Bow
 		i(198036),	-- Spineripper's Fang
 		i(198037),	-- Brimming Arcanocrystal
-		i(198039),	-- Rock of Appreciation
+
 
 		i(198043),	-- Stealthy Elven Port
 		i(198044),	-- Whirlwind Wine
@@ -3181,180 +3172,48 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198149),	-- Copy Footwraps of the druid name PH
 		i(198150),	-- Copy Wrap of the druid name PH
 		i(198151),	-- Cracked Heart in a Bottle
-		i(198152),	-- Perfectly Calibrated Lenses
-		i(198153),	-- Perfectly Calibrated Lenses
-		i(198154),	-- Perfectly Calibrated Lenses
-		i(198156),	-- Wyrmhole Generator
-		i(198157),	-- I.W.I.N. Button Mk10
-		i(198158),	-- I.W.I.N. Button Mk10
-		i(198159),	-- I.W.I.N. Button Mk10
-		i(198160),	-- Completely Safe Rockets
-		i(198161),	-- Completely Safe Rockets
-		i(198162),	-- Completely Safe Rockets
-		i(198163),	-- Endless Stack of Needles
-		i(198164),	-- Endless Stack of Needles
-		i(198165),	-- Endless Stack of Needles
-		i(198166),	-- Suspiciously Ticking Crate
-		i(198167),	-- Suspiciously Ticking Crate
-		i(198168),	-- Suspiciously Ticking Crate
-		i(198169),	-- Suspiciously Silent Crate
-		i(198170),	-- Suspiciously Silent Crate
-		i(198171),	-- Suspiciously Silent Crate
-		i(198172),	-- Bundle of Fireworks
-		i(198173),	-- Cartomancy Cannon
-		i(198174),	-- Razor-Sharp Gear
-		i(198175),	-- Razor-Sharp Gear
-		i(198176),	-- Razor-Sharp Gear
-		i(198177),	-- Draconic Gunshoes
-		i(198178),	-- Draconic Gunshoes
-		i(198179),	-- Draconic Gunshoes
-		i(198180),	-- D.U.C.K.O.Y.
-		i(198181),	-- D.U.C.K.O.Y.
-		i(198182),	-- D.U.C.K.O.Y.
-		i(198183),	-- Handful of Serevite Bolts
-		i(198184),	-- Handful of Serevite Bolts
-		i(198185),	-- Handful of Serevite Bolts
-		i(198186),	-- Shock-Spring Coil
-		i(198187),	-- Shock-Spring Coil
-		i(198188),	-- Shock-Spring Coil
-		i(198189),	-- Everburning Blasting Powder
-		i(198190),	-- Everburning Blasting Powder
-		i(198191),	-- Everburning Blasting Powder
-		i(198192),	-- Greased-Up Gears
-		i(198193),	-- Greased-Up Gears
-		i(198194),	-- Greased-Up Gears
-		i(198195),	-- Arclight Capacitor
-		i(198196),	-- Arclight Capacitor
-		i(198197),	-- Arclight Capacitor
-		i(198198),	-- Reinforced Machine Chassis
-		i(198199),	-- Reinforced Machine Chassis
-		i(198200),	-- Reinforced Machine Chassis
-		i(198201),	-- Assorted Safety Fuses
-		i(198202),	-- Assorted Safety Fuses
-		i(198203),	-- Assorted Safety Fuses
-		i(198204),	-- Draconium Brainwave Amplifier
-		i(198205),	-- Khaz'gorite Brainwave Amplifier
-		i(198206),	-- Environmental Emulator
-		i(198207),	-- EZ-Thro Creature Combustion Canister
-		i(198208),	-- EZ-Thro Creature Combustion Canister
-		i(198209),	-- EZ-Thro Creature Combustion Canister
-		i(198210),	-- EZ-Thro Primal Deconstruction Charge
-		i(198211),	-- EZ-Thro Primal Deconstruction Charge
-		i(198212),	-- EZ-Thro Primal Deconstruction Charge
-		i(198213),	-- EZ-Thro Gravitational Displacer
-		i(198214),	-- EZ-Thro Gravitational Displacer
-		i(198215),	-- EZ-Thro Gravitational Displacer
-		i(198216),	-- Haphazardly Tethered Wires
-		i(198217),	-- Haphazardly Tethered Wires
-		i(198218),	-- Haphazardly Tethered Wires
-		i(198219),	-- Overcharged Overclocker
-		i(198220),	-- Overcharged Overclocker
-		i(198221),	-- Overcharged Overclocker
-		i(198222),	-- Blue Fireflight
-		i(198223),	-- Red Fireflight
-		i(198224),	-- Green Fireflight
-		i(198225),	-- Draconium Fisherfriend
-		i(198226),	-- Khaz'gorite Fisherfriend
-		i(198227),	-- Giggle Goggles
-		i(198228),	-- Gravitational Displacer
-		i(198229),	-- Gravitational Displacer
-		i(198230),	-- Gravitational Displacer
-		i(198231),	-- Rapidly Ticking Gear
-		i(198232),	-- Rapidly Ticking Gear
-		i(198233),	-- Rapidly Ticking Gear
-		i(198234),	-- Lapidary's Draconium Clamps
-		i(198235),	-- Lapidary's Khaz'gorite Clamps
-		i(198236),	-- Meticulously-Tuned Gear
-		i(198237),	-- Meticulously-Tuned Gear
-		i(198238),	-- Meticulously-Tuned Gear
-		i(198239),	-- Creature Combustion Canister
-		i(198240),	-- Creature Combustion Canister
-		i(198241),	-- Creature Combustion Canister
-		i(198242),	-- Quack-E
-		i(198243),	-- Draconium Delver's Helmet
-		i(198244),	-- Khaz'gorite Delver's Helmet
-		i(198245),	-- Draconium Encased Samophlange
-		i(198246),	-- Khaz'gorite Encased Samophlange
-		i(198247),	-- Neural Silencer Mk3
-		i(198250),	-- Convincingly Realistic Jumper Cables
-		i(198251),	-- Convincingly Realistic Jumper Cables
-		i(198252),	-- Convincingly Realistic Jumper Cables
-		i(198253),	-- Calibrated Safety Switch
-		i(198254),	-- Calibrated Safety Switch
-		i(198255),	-- Calibrated Safety Switch
-		i(198256),	-- Magazine of Healing Darts
-		i(198257),	-- Magazine of Healing Darts
-		i(198258),	-- Magazine of Healing Darts
-		i(198259),	-- Critical Failure Prevention Unit
-		i(198260),	-- Critical Failure Prevention Unit
-		i(198261),	-- Critical Failure Prevention Unit
-		i(198262),	-- Bottomless Stonecrust Ore Satchel
-		i(198263),	-- Bottomless Mireslush Ore Satchel
-		i(198264),	-- Centralized Precipitation Emitter
-		i(198265),	-- Portable Alchemist's Lab Bench
-		i(198268),	-- Portable Tinker's Workbench
-		i(198271),	-- H.E.L.P.
-		i(198272),	-- H.E.L.P.
-		i(198273),	-- H.E.L.P.
-		i(198274),	-- Element-Infused Rocket Helmet
-		i(198275),	-- S.A.V.I.O.R.
-		i(198276),	-- S.A.V.I.O.R.
-		i(198277),	-- S.A.V.I.O.R.
-		i(198278),	-- Primal Deconstruction Charge
-		i(198279),	-- Primal Deconstruction Charge
-		i(198280),	-- Primal Deconstruction Charge
-		i(198281),	-- Sticky Warp Grenade
-		i(198282),	-- Sticky Warp Grenade
-		i(198283),	-- Sticky Warp Grenade
-		i(198284),	-- Spring-Loaded Draconium Fabric Cutter
-		i(198285),	-- Spring-Loaded Titanicium Fabric Cutter
-		i(198286),	-- Tinker Removal Kit
-		i(198287),	-- Tinker Removal Kit
-		i(198288),	-- Tinker Removal Kit
-		i(198289),	-- Tinker: Alarm-O-Turret
-		i(198290),	-- Tinker: Alarm-O-Turret
-		i(198291),	-- Tinker: Alarm-O-Turret
-		i(198292),	-- Grease Grenade
-		i(198293),	-- Grease Grenade
-		i(198294),	-- Grease Grenade
-		i(198295),	-- Tinker: Breath of Neltharion
-		i(198296),	-- Tinker: Breath of Neltharion
-		i(198297),	-- Tinker: Breath of Neltharion
-		i(198298),	-- Tinker: Plane Displacer
-		i(198299),	-- Tinker: Plane Displacer
-		i(198300),	-- Tinker: Plane Displacer
-		i(198301),	-- Tinker: Supercollide-O-Tron
-		i(198302),	-- Tinker: Supercollide-O-Tron
-		i(198303),	-- Tinker: Supercollide-O-Tron
-		i(198304),	-- Tinker: Grounded Circuitry
-		i(198305),	-- Tinker: Grounded Circuitry
-		i(198306),	-- Tinker: Grounded Circuitry
-		i(198307),	-- One-Size-Fits-All Gear
-		i(198308),	-- One-Size-Fits-All Gear
-		i(198309),	-- One-Size-Fits-All Gear
-		i(198310),	-- Gyroscopic Kaleidoscope
-		i(198311),	-- Gyroscopic Kaleidoscope
-		i(198312),	-- Gyroscopic Kaleidoscope
-		i(198313),	-- Projectile Propulsion Pinion
-		i(198314),	-- Projectile Propulsion Pinion
-		i(198315),	-- Projectile Propulsion Pinion
-		i(198316),	-- High Intensity Thermal Scanner
-		i(198317),	-- High Intensity Thermal Scanner
-		i(198318),	-- High Intensity Thermal Scanner
-		i(198322),	-- Overengineered Sleeve Extenders
-		i(198323),	-- Lightweight Ocular Lenses
-		i(198324),	-- Peripheral Vision Projectors
-		i(198325),	-- Oscillating Wilderness Opticals
-		i(198326),	-- Battle-Ready Binoculars
-		i(198327),	-- Needlessly Complex Wristguards
-		i(198328),	-- Quality-Assured Optics
-		i(198329),	-- Milestone Magnifiers
-		i(198330),	-- Deadline Deadeyes
-		i(198331),	-- Sentry's Stabilized Specs
-		i(198332),	-- Complicated Cuffs
-		i(198333),	-- Difficult Wrist Protectors
-		i(198334),	-- P.E.W. x2
-		i(198335),	-- Sophisticated Problem Solver
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		i(198336),	-- Arcane-Infused Quill
 		i(198337),	-- Azure Paw Pack
 		i(198338),	-- Black Print Paw Pack
@@ -3392,12 +3251,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198398),	-- Primal Proto-Whelp Scale
 		i(198400),	-- Lucky Horseshoe
 		i(198401),	-- Aileron Seamoth Lure
-		i(198402),	-- Maruuk Cooking Pot
+
 		i(198403),	-- Islefin Dorado Lure
 		i(198404),	-- Bottled Pheromones
 		i(198407),	-- Azure Arcanic Amplifier
 		i(198408),	-- Timewalker Notes
-		i(198409),	-- Personal Shell
+
 		i(198410),	-- Timewalker Staff
 		i(198411),	-- Claw of Preparedness
 		i(198412),	-- Serene Pigment
@@ -3415,7 +3274,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198424),	-- Refine Dragon Isles Hides
 		i(198425),	-- Refine Dragon Isles Leather
 		i(198426),	-- Refine Dragon Isles Scales
-		i(198428),	-- Tuskarr Dinghy
+
 		i(198429),	-- Typhoon Bringer
 		i(198430),	-- Time Capsule
 		i(198431),	-- Jetscale Sigil
@@ -3517,8 +3376,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198545),	-- Bronze Valdrakken Jacket
 		i(198546),	-- Bronze Valdrakken Boots
 		i(198547),	-- Bronze Valdrakken Pants
-		i(198549),	-- Black Fireflight
-		i(198550),	-- Bronze Fireflight
+
+
 		i(198551),	-- Crimson Valdrakken Jacket
 		i(198552),	-- Crimson Valdrakken Boots
 		i(198553),	-- Crimson Valdrakken Pants
@@ -3586,15 +3445,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198616),	-- Scroll of Sales
 		i(198617),	-- Scroll of Sales
 		i(198618),	-- Pattern: Artisan's Sign
-		i(198619),	-- Spring-Loaded Capacitor Casing
-		i(198620),	-- Spring-Loaded Capacitor Casing
-		i(198621),	-- Spring-Loaded Capacitor Casing
+
 		i(198622),	-- Spyragos
 		i(198626),	-- Dislodged Dragoneye
 		i(198627),	-- Blood of the Khansguard
 		i(198646),	-- Ornate Dragon Statue
 		i(198649),	-- Time-Lost Possession
-		i(198650),	-- Rummage Through Scrap
+
 		i(198651),	-- Piece of Scrap
 		i(198652),	-- Boku's Belongings
 		i(198653),	-- PH Profession Drop
@@ -3712,12 +3569,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198777),	-- Ensemble: Renowned Expeditioner's Mail Armor
 		i(198778),	-- Ensemble: Renowned Expeditioner's Plate Armor
 		i(198779),	-- Formula: Crystal Magical Lockpick
-		i(198780),	-- Schematic: Expedition Multi-Toolbox
-		i(198781),	-- Schematic: Gravitational Displacer
-		i(198782),	-- Schematic: Bottomless Mireslush Ore Satchel
-		i(198783),	-- Schematic: Spring-Loaded Khaz'gorite Fabric Cutters
-		i(198784),	-- Schematic: Primal Deconstruction Charge
-		i(198785),	-- Schematic: Quack-E
+
+
+
+
+
 		i(198786),	-- Technique: Wrathion Darkmoon Deckbox
 		i(198787),	-- Technique: Red Haired Renewed Proto-Drake Manuscript
 		i(198788),	-- Technique: Contract: Dragonscale Expedition
@@ -3728,7 +3584,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198793),	-- Rockfang Femur
 		i(198794),	-- Vulture Gizzard
 		i(198795),	-- Hornstrider Scale
-		i(198796),	-- Quack-E Quack Modulator
 		i(198797),	-- Vial of Mineral Water
 		i(198798),	-- Flashfrozen Scroll
 		i(198799),	-- Forgotten Arcane Tome
@@ -3757,7 +3612,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198832),	-- Conjured Blubbery Muffin
 		i(198833),	-- Conjured Celebratory Cake
 		i(198834),	-- Slimy Sunglasses
-		i(198836),	-- Arclight Vital Correctors
 		i(198837),	-- Curious Hide Scraps
 		i(198839),	-- Design: Signet of Titanic Insight
 		i(198840),	-- Kalecite Cluster
@@ -4071,13 +3925,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199185),	-- Fanciful Strings
 		i(199186),	-- Bewitched Wood
 		i(199187),	-- Impossible Sheet Music
-		i(199188),	-- Tinker: Polarity Amplifier
-		i(199189),	-- Tinker: Polarity Amplifier
-		i(199190),	-- Tinker: Polarity Amplifier
 		i(199192),	-- Dragon Racer's Purse
-		i(199193),	-- EZ-Thro Grease Grenade
-		i(199194),	-- EZ-Thro Grease Grenade
-		i(199195),	-- EZ-Thro Grease Grenade
+
 		i(199199),	-- Tough Moose Flank
 		i(199200),	-- Tender Vorquin Meat
 		i(199201),	-- Tender Vorquin Meat
@@ -4092,84 +3941,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199213),	-- Lakkamuk Blenny
 		i(199216),	-- A Box of Rocks
 		i(199219),	-- Element-Infused Blood
-		i(199221),	-- Schematic: Element-Infused Rocket Helmet
-		i(199222),	-- Schematic: Overengineered Sleeve Extenders
-		i(199223),	-- Schematic: Needlessly Complex Wristguards
-		i(199224),	-- Schematic: Complicated Cuffs
-		i(199225),	-- Schematic: Difficult Wrist Protectors
-		i(199226),	-- Schematic: P.E.W. x2
-		i(199227),	-- Schematic: Sophisticated Problem Solver
-		i(199228),	-- Schematic: Grease Grenade
-		i(199229),	-- Schematic: Tinker: Breath of Neltharion
-		i(199230),	-- Schematic: Projectile Propulsion Pinion
-		i(199231),	-- Schematic: High Intensity Thermal Scanner
-		i(199232),	-- Schematic: Bundle of Fireworks
-		i(199233),	-- Schematic: S.A.V.I.O.R.
-		i(199234),	-- Schematic: Khaz'gorite Fisherfriend
-		i(199235),	-- Schematic: Creature Combustion Canister
-		i(199236),	-- Schematic: D.U.C.K.O.Y.
-		i(199238),	-- Schematic: Sticky Warp Grenade
-		i(199239),	-- Schematic: Tinker: Alarm-O-Turret
-		i(199240),	-- Schematic: Green Fireflight
-		i(199241),	-- Schematic: H.E.L.P.
-		i(199242),	-- Schematic: Portable Alchemist's Lab Bench
-		i(199243),	-- Schematic: Portable Tinker's Workbench
-		i(199244),	-- Schematic: Khaz'gorite Delver's Helmet
-		i(199245),	-- Schematic: Lapidary's Khaz'gorite Clamps
-		i(199246),	-- Schematic: Tinker: Grounded Circuitry
-		i(199247),	-- Schematic: Haphazardly Tethered Wires
-		i(199248),	-- Schematic: Overcharged Overclocker
-		i(199249),	-- Schematic: Critical Failure Prevention Unit
-		i(199250),	-- Schematic: Calibrated Safety Switch
-		i(199251),	-- Schematic: Magazine of Healing Darts
-		i(199252),	-- Schematic: I.W.I.N. Button Mk10
-		i(199253),	-- Schematic: Suspiciously Ticking Crate
-		i(199254),	-- Schematic: EZ-Thro Creature Combustion Canister
-		i(199255),	-- Schematic: EZ-Thro Gravitational Displacer
-		i(199256),	-- Schematic: EZ-Thro Primal Deconstruction Charge
-		i(199257),	-- Schematic: Suspiciously Silent Crate
-		i(199258),	-- Schematic: Tinker: Supercollide-O-Tron
-		i(199259),	-- Schematic: Razor-Sharp Gear
-		i(199260),	-- Schematic: Rapidly Ticking Gear
-		i(199261),	-- Schematic: Meticulously Tuned Gear
-		i(199262),	-- Schematic: One-Size-Fits-All Gear
-		i(199263),	-- Schematic: Completely Safe Rockets
-		i(199264),	-- Schematic: Endless Stack of Needles
-		i(199265),	-- Schematic: Wyrmhole Generator
-		i(199266),	-- Schematic: Centralized Precipitation Emitter
-		i(199267),	-- Schematic: Environmental Emulator
-		i(199268),	-- Schematic: Giggle Goggles
-		i(199270),	-- Schematic: Quality-Assured Optics
-		i(199271),	-- Schematic: Milestone Magnifiers
-		i(199272),	-- Schematic: Deadline Deadeyes
-		i(199273),	-- Schematic: Sentry's Stabilized Specs
-		i(199274),	-- Schematic: Lightweight Ocular Lenses
-		i(199275),	-- Schematic: Peripheral Vision Projectors
-		i(199276),	-- Schematic: Oscillating Wilderness Opticals
-		i(199277),	-- Schematic: Battle-Ready Binoculars
-		i(199278),	-- Schematic: Draconium Delver's Helmet
-		i(199279),	-- Schematic: Bottomless Stonecrust Ore Satchel
-		i(199280),	-- Schematic: Draconium Fisherfriend
-		i(199281),	-- Schematic: Lapidary's Draconium Clamps
-		i(199282),	-- Schematic: Spring-Loaded Draconium Fabric Cutters
-		i(199283),	-- Schematic: Draconium Encased Samophlange
-		i(199284),	-- Schematic: Draconium Brainwave Amplifier
-		i(199285),	-- Schematic: Khaz'gorite Encased Samophlange
-		i(199286),	-- Schematic: Khaz'gorite Brainwave Amplifier
-		i(199287),	-- Schematic: Tinker: Plane Displacer
-		i(199288),	-- Schematic: Gyroscopic Kaleidoscope
-		i(199289),	-- Schematic: Blue Fireflight
-		i(199290),	-- Schematic: Red Fireflight
-		i(199291),	-- Schematic: Draconic Gunshoes
-		i(199292),	-- Schematic: Convincingly Realistic Jumper Cables
-		i(199293),	-- Schematic: Neural Silencer Mk3
-		i(199294),	-- Schematic: Cartomancy Cannon
-		i(199295),	-- Schematic: Black Fireflight
-		i(199296),	-- Schematic: Bronze Fireflight
-		i(199297),	-- Schematic: Spring-Loaded Capacitor Casing
-		i(199298),	-- Schematic: Arclight Vital Correctors
-		i(199299),	-- Schematic: Tinker: Polarity Amplifier
-		i(199300),	-- Schematic: EZ-Thro Grease Grenade
 		i(199301),	-- Clopper's Clambering Gear
 		i(199302),	-- Clopper's Compass
 		i(199303),	-- Clopper's Knapsack
@@ -4257,8 +4028,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199408),	-- Squallbreaker Longblade
 		i(199409),	-- Stormbender Saber
 		i(199412),	-- Hailstorm Armoredon
-		i(199414),	-- Zapthrottle Soul Inhaler
-		i(199415),	-- Schematic: Zapthrottle Soul Inhaler
+
 		i(199416),	-- Galerider Crescent
 		i(199417),	-- Vestment of Raging Tempests
 		i(199418),	-- Boots of Raging Tempests
@@ -5724,8 +5494,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201297),	-- Docile Earthen Soul
 		i(201298),	-- Docile Fiery Soul
 		i(201299),	-- Docile Frosty Soul
-		i(201300),	-- Iridescent Ore Fragments
-		i(201301),	-- Iridescent Ore
+
 		i(201302),	-- Scarab Blaster
 		i(201303),	-- Beheader's Poleaxe
 		i(201304),	-- Dunesplitter
@@ -5827,9 +5596,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201404),	-- Tallstrider Sinew
 		i(201405),	-- Tuft of Primal Wool
 		i(201406),	-- Glowing Titan Orb
-		i(201407),	-- Tinker: Arclight Vital Correctors
-		i(201408),	-- Tinker: Arclight Vital Correctors
-		i(201409),	-- Tinker: Arclight Vital Correctors
+
 		i(201410),	-- Powerful Purple Thing
 		i(201411),	-- Ancient Vault Artifact
 		i(201412),	-- Ancient Vault Artifact
@@ -6184,7 +5951,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201791),	-- How to Train a Dragonkin
 		i(201792),	-- Highland Drake: Embodiment of the Crimson Gladiator
 		i(201793),	-- Resplendent Gemstone
-		i(201794),	-- Schematic: Tranquil Mechanical Yeti
 		i(201795),	-- Valdrakken Guard's Claw
 		i(201796),	-- Valdrakken Drakonid's Claw
 		i(201797),	-- Crimson Gladiator's Cloak
@@ -6308,7 +6074,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201925),	-- Obsidian Genealogy
 		i(201926),	-- Crushing
 		i(201927),	-- Assorted Arcanocrystals
-		i(201930),	-- H.E.L.P.
+
 		i(201933),	-- Black Dragon's Challenge Dummy
 		i(201934),	-- Nokuhd Whittling Knife
 
@@ -6368,8 +6134,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(202009),	-- [PH] BoE Mail Waist
 		i(202010),	-- [PH] BoE Plate Wrist
 		prof(ALCHEMY, {
-			r(371635),	-- Demonstration Item Recipe (RECIPE!)
-			r(370771),	-- Dragon Isles Alchemy Troubleshooting Test Recipe (DNT) (RECIPE!)
+			r(371635),	-- Demonstration Item Recipe
+			r(370771),	-- Dragon Isles Alchemy Troubleshooting Test Recipe (DNT)
+			r(382571),	-- Opening
 			i(191598),	-- Recipe: Alchemical Flavor Pocket (RECIPE!)
 			i(191453),	-- Recipe: Frostfire Potion of Draconic Vigor (RECIPE!)
 			i(191457),	-- Recipe: Potion of Burning Purification (RECIPE!)
@@ -6430,16 +6197,108 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191583),	-- Recipe: Transmute: Order to Elements (RECIPE!)
 			i(191592),	-- Recipe: Writhefire Oil (RECIPE!)
 		}),
+		prof(ENGINEERING, {
+			r(382581),	-- Opening
+			r(382352),	-- Perfectly Calibrated Lenses
+			r(382382),	-- Wisp of Tyr
+			r(382372),	--
+			r(382373),	--
+			--
+			i(199298),	-- Schematic: Arclight Vital Correctors (RECIPE!)
+			i(198780),	-- Schematic: Expedition Multi-Toolbox (RECIPE!)
+			i(199292),	-- Schematic: Convincingly Realistic Jumper Cables (RECIPE!)
+			i(199291),	-- Schematic: Draconic Gunshoes (RECIPE!)
+			--
+			i(199277),	-- Schematic: Battle-Ready Binoculars (RECIPE!)
+			i(199279),	-- Schematic: Bottomless Stonecrust Ore Satchel (RECIPE!)
+			i(199296),	-- Schematic: Bronze Fireflight (RECIPE!)
+			i(199250),	-- Schematic: Calibrated Safety Switch (RECIPE!)
+			i(199294),	-- Schematic: Cartomancy Cannon (RECIPE!)
+			i(199266),	-- Schematic: Centralized Precipitation Emitter (RECIPE!)
+			i(199263),	-- Schematic: Completely Safe Rockets (RECIPE!)
+			i(199224),	-- Schematic: Complicated Cuffs (RECIPE!)
+			i(199235),	-- Schematic: Creature Combustion Canister (RECIPE!)
+			i(199249),	-- Schematic: Critical Failure Prevention Unit (RECIPE!)
+			i(199272),	-- Schematic: Deadline Deadeyes (RECIPE!)
+			i(199225),	-- Schematic: Difficult Wrist Protectors (RECIPE!)
+			i(199284),	-- Schematic: Draconium Brainwave Amplifier (RECIPE!)
+			i(199278),	-- Schematic: Draconium Delver's Helmet (RECIPE!)
+			i(199283),	-- Schematic: Draconium Encased Samophlange (RECIPE!)
+			i(199280),	-- Schematic: Draconium Fisherfriend (RECIPE!)
+			i(199221),	-- Schematic: Element-Infused Rocket Helmet (RECIPE!)
+			i(199264),	-- Schematic: Endless Stack of Needles (RECIPE!)
+			i(199267),	-- Schematic: Environmental Emulator (RECIPE!)
+			i(199254),	-- Schematic: EZ-Thro Creature Combustion Canister (RECIPE!)
+			i(199255),	-- Schematic: EZ-Thro Gravitational Displacer (RECIPE!)
+			i(199300),	-- Schematic: EZ-Thro Grease Grenade (RECIPE!)
+			i(199256),	-- Schematic: EZ-Thro Primal Deconstruction Charge (RECIPE!)
+			i(199268),	-- Schematic: Giggle Goggles (RECIPE!)
+			i(199288),	-- Schematic: Gyroscopic Kaleidoscope (RECIPE!)
+			i(199247),	-- Schematic: Haphazardly Tethered Wires (RECIPE!)
+			i(199231),	-- Schematic: High Intensity Thermal Scanner (RECIPE!)
+			i(199252),	-- Schematic: I.W.I.N. Button Mk10 (RECIPE!)
+			i(199281),	-- Schematic: Lapidary's Draconium Clamps (RECIPE!)
+			i(199274),	-- Schematic: Lightweight Ocular Lenses (RECIPE!)
+			i(199251),	-- Schematic: Magazine of Healing Darts (RECIPE!)
+			i(199261),	-- Schematic: Meticulously Tuned Gear (RECIPE!)
+			i(199271),	-- Schematic: Milestone Magnifiers (RECIPE!)
+			i(199223),	-- Schematic: Needlessly Complex Wristguards (RECIPE!)
+			i(199293),	-- Schematic: Neural Silencer Mk3 (RECIPE!)
+			i(199262),	-- Schematic: One-Size-Fits-All Gear (RECIPE!)
+			i(199276),	-- Schematic: Oscillating Wilderness Opticals (RECIPE!)
+			i(199248),	-- Schematic: Overcharged Overclocker (RECIPE!)
+			i(199222),	-- Schematic: Overengineered Sleeve Extenders (RECIPE!)
+			i(199226),	-- Schematic: P.E.W. x2 (RECIPE!)
+			i(199275),	-- Schematic: Peripheral Vision Projectors (RECIPE!)
+			i(199270),	-- Schematic: Quality-Assured Optics (RECIPE!)
+			i(199260),	-- Schematic: Rapidly Ticking Gear (RECIPE!)
+			i(199259),	-- Schematic: Razor-Sharp Gear (RECIPE!)
+			i(199233),	-- Schematic: S.A.V.I.O.R. (RECIPE!)
+			i(199273),	-- Schematic: Sentry's Stabilized Specs (RECIPE!)
+			i(199297),	-- Schematic: Spring-Loaded Capacitor Casing (RECIPE!)
+			i(199282),	-- Schematic: Spring-Loaded Draconium Fabric Cutters (RECIPE!)
+			i(199257),	-- Schematic: Suspiciously Silent Crate (RECIPE!)
+			i(199253),	-- Schematic: Suspiciously Ticking Crate (RECIPE!)
+			i(199287),	-- Schematic: Tinker: Plane Displacer (RECIPE!)
+			i(199258),	-- Schematic: Tinker: Supercollide-O-Tron (RECIPE!)
+			i(201794),	-- Schematic: Tranquil Mechanical Yeti (RECIPE!)
+			i(199265),	-- Schematic: Wyrmhole Generator (RECIPE!)
+			i(199415),	-- Schematic: Zapthrottle Soul Inhaler (RECIPE!)
+			-- Crafted
+			i(198836),	-- Arclight Vital Correctors
+			i(198250),	-- Convincingly Realistic Jumper Cables+
+			i(198251),	-- Convincingly Realistic Jumper Cables++
+			i(198252),	-- Convincingly Realistic Jumper Cables+++
+			i(198274),	-- Element-Infused Rocket Helmet (TOY!) [Used Another ID]
+			i(191305),	-- Expedition Multi-Toolbox
+			i(198177),	-- Draconic Gunshoes+
+			i(198178),	-- Draconic Gunshoes++
+			i(198179),	-- Draconic Gunshoes+++
+			i(198152),	-- Perfectly Calibrated Lenses+
+			i(198153),	-- Perfectly Calibrated Lenses++
+			i(198154),	-- Perfectly Calibrated Lenses+++
+			i(198242),	-- Quack-E [Used another ID!]
+			i(198284),	-- Spring-Loaded Draconium Fabric Cutter
+			i(198285),	-- Spring-Loaded Titanicium Fabric Cutter
+			i(198286),	-- Tinker Removal Kit+
+			i(198287),	-- Tinker Removal Kit++
+			i(198288),	-- Tinker Removal Kit+++
+		}),
+		prof(MINING, {
+			r(382586),	-- Opening
+		}),
 		prof(TAILORING, {
 			-- Probably not NYI?
 			i(194296),	-- Pattern: Fiddle with Draconium Fabric Cutters
 			i(194297),	-- Pattern: Fiddle with Khaz'gorite Fabric Cutters
-			-- Probably NYI
-			r(376697),	-- Pattern: Wisp of Tyr (RECIPE!)
+			--
+			r(382588);	-- Opening
+			r(376697),	-- Pattern: Wisp of Tyr
+			--
 			i(194263),	-- Pattern: Blue Dragon Rider's Robe (RECIPE!)
 			i(194264),	-- Pattern: Bronze Dragon Rider's Wraps (RECIPE!)
 			i(194284),	-- Pattern: Wildercloth Weapon Upholstery (RECIPE!)
-			-- Items
+			-- Craftable
 			i(193531),	-- Blue Dragon Rider's Robe
 			i(193535),	-- Bronze Dragon Rider's Wraps
 			i(194051),	-- Wildercloth Weapon Upholstery
@@ -6604,10 +6463,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193476),	-- Gnoll Tent
 			i(197719),	-- Artisan's Sign
 			i(197961),	-- Whelps on Strings
-			i(197986),	-- Murglasses
-			i(198428),	-- Tuskarr Dinghy
-			i(198039),	-- Rock of Appreciation
-			i(198402),	-- Maruuk Cooking Pot
 			i(198409),	-- Personal Shell
 		}),
 		filter(MOUNTS, {

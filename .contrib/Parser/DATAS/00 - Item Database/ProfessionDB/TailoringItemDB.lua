@@ -38,7 +38,7 @@ end
 ------------------
 -- PATCH 10.0.0 --
 ------------------
--- Trainer
+-- TRAINER --
 i(0, 376533);	-- Abrasive Polishing Cloth
 i(0, 376535);	-- Blazing Embroidery Thread
 i(0, 392396);	-- Dragon Isles Cloth Scavenging
@@ -67,25 +67,7 @@ i(0, 376549);	-- Wildercloth Enchanter's Hat
 i(0, 376551);	-- Wildercloth Fishing Cap
 i(0, 376553);	-- Wildercloth Gardening Hat
 i(0, 376545);	-- Wildercloth Tailor's Coat
--- SPECCC
-i(0, 376556);	-- Azureweave Bolt
-i(0, 376502);	-- Azureweave Mantle
-i(0, 376500);	-- Azureweave Robe
-i(0, 376557);	-- Chronocloth Bolt
-i(0, 376503);	-- Chronocloth Gloves
-i(0, 376504);	-- Chronocloth Leggings
-i(0, 376546);	-- Dragoncloth Tailoring Vestments
-i(0, 376569);	-- Market Tent
-i(0, 376513);	-- Vibrant Wildercloth Handwraps
-i(0, 376512);	-- Vibrant Wildercloth Slippers
-i(0, 376514);	-- Vibrant Wildercloth Headcover
-i(0, 376510);	-- Vibrant Wildercloth Shawl
-i(0, 376511);	-- Vibrant Wildercloth Vestments
-i(0, 376515);	-- Vibrant Wildercloth Slacks
-i(0, 376516);	-- Vibrant Wildercloth Shoulderspikes
-i(0, 376517);	-- Vibrant Wildercloth Girdle
-i(0, 376518);	-- Vibrant Wildercloth Wristwraps
--- ITEMS
+-- ITEM --
 i(194259, 376497);	-- Allied Cinch of Time Dilation
 i(194255, 376493);	-- Amice of the Blue
 i(194285, 376529);	-- Azureweave Expedtion Pack
@@ -125,15 +107,32 @@ i(194292, 376554);	-- Master's Wildercloth Gardening Hat
 i(194267, 376537);	-- Shimmering Embroidery Thread
 i(194262, 376540);	-- Temporal Spellthread
 i(194293, 376534);	-- Vibrant Polishing Cloth
--- NO SOURCE
+-- SPECIALiZATION --
+i(0, 376556);	-- Azureweave Bolt
+i(0, 376502);	-- Azureweave Mantle
+i(0, 376500);	-- Azureweave Robe
+i(0, 376557);	-- Chronocloth Bolt
+i(0, 376503);	-- Chronocloth Gloves
+i(0, 376504);	-- Chronocloth Leggings
+i(0, 376546);	-- Dragoncloth Tailoring Vestments
+i(0, 376569);	-- Market Tent
+i(0, 376513);	-- Vibrant Wildercloth Handwraps
+i(0, 376512);	-- Vibrant Wildercloth Slippers
+i(0, 376514);	-- Vibrant Wildercloth Headcover
+i(0, 376510);	-- Vibrant Wildercloth Shawl
+i(0, 376511);	-- Vibrant Wildercloth Vestments
+i(0, 376515);	-- Vibrant Wildercloth Slacks
+i(0, 376516);	-- Vibrant Wildercloth Shoulderspikes
+i(0, 376517);	-- Vibrant Wildercloth Girdle
+i(0, 376518);	-- Vibrant Wildercloth Wristwraps
+-- QUEST --
+i(0, 377986);	-- Heart in a Bottle
+-- NO SOURCE --
 i(194296, 376563);	-- Fiddle with Draconium Fabric Cutters
 i(194297, 376564);	-- Fiddle with Khaz'gorite Fabric Cutters
--- Quest
-i(0, 377986);	-- Heart in a Bottle
--- NYI?
+-- NYI --
 i(0, 376697);	-- Wisp of Tyr
+i(0, 382588);	-- Opening
 i(194263, 376498);	-- Blue Dragon Rider's Robe
 i(194264, 376499);	-- Bronze Dragon Rider's Wraps
 i(194284, 376571);	-- Wildercloth Weapon Upholstery
--- Unknown
-i(0, 382588);	-- Opening

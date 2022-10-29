@@ -1062,6 +1062,8 @@ i(194057);	-- Cushion of Time Travel
 i(199649);	-- Dragon Tea Set
 i(194060);	-- Dragonscale Expedition's Expedition Tent
 i(194056);	-- Duck-Stuffed Duck Lovie
+i(192443);	-- Element-Infused Rocket Helmet
+i(198206);	-- Environmental Emulator
 i(198728);	-- Explorer's League Banner
 i(199894);	-- Fisherman's Folly Rack
 i(194052);	-- Forlorn Funeral Pall
@@ -1099,7 +1101,6 @@ i(198409);	-- Personal Shell
 i(198474);	-- Artist's Easel
 i(198537);	-- Taivan's Trumpet
 i(198646);	-- Ornate Dragon Statue
-i(198206);	-- Environmental Emulator
 i(198827);	-- Magical Snow Sled
 i(199111);	-- Maestro Duck's Orchestrion
 i(199554);	-- S.E.A.T.
@@ -1122,7 +1123,6 @@ i(200869);	-- Ohn Lite Branded Horn
 i(200878);	-- Wheeled Floaty Boaty Controller
 i(200960);	-- Seed of Renewed Souls
 i(200999);	-- The Super Shellkhan Gang
-i(192443);	-- Element-Infused Rocket Helmet
 i(199899);	-- Iskaara Tug Sled
 i(199902);	-- Wayfinder's Compass
 i(201435);	-- Swinging Sands

@@ -43,6 +43,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				i(193922),	-- Wildercloth
 				i(194123),	-- Chromatic Dust
 				i(194714),	-- Miguel's Gift
+				-- Recipes
+				r(377978,{["u"]=15}),	-- Heart in a Bottle (ALCHEMY)
+				r(377983,{["u"]=15}),	-- Heart in a Bottle (ENGINEERING)
+				r(377987,{["u"]=15}),	-- Heart in a Bottle (MINING)
+				r(377986,{["u"]=15}),	-- Heart in a Bottle (TAILORING)
 			},
 		}),
 		q(67137, {	-- Professionally Equipped
@@ -164,6 +169,18 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 			},
 		}),
 		prof(ALCHEMY, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(370747),	-- Advanced Phial Experimentation
+					r(370745),	-- Advanced Potion Experimentation
+					r(370730),	-- Brood Salt
+					r(370735),	-- Illustrious Insight
+					r(370668),	-- Potion Cauldron of Power
+					r(370715),	-- Transmute: Order to Elements
+					r(370714),	-- Transmute: Decay to Elements
+				},
+			}),
 			q(70355, {	-- To the Dragon Isles: Alchemy
 				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 				["provider"] = { "n", 191893 },	-- Zherrak
@@ -191,6 +208,33 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				--["sourceQuests"] = {  },	--
 				["provider"] = { "n", 198094 },	-- Head Chef Stacks
 				["coord"] = { 76.4, 35.7, THE_WAKING_SHORES },
+			}),
+		}),
+		prof(ENGINEERING, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(382345),	-- Assorted Safety Fuses
+					r(382408),	-- Cartomancy Cannon
+					r(382368),	-- Centralized Precipitation Emitter
+					r(382365),	-- Completely Safe Rockets
+					r(382371),	-- Element-Infused Rocket Helmet
+					r(382366),	-- Endless Stack of Needles
+					r(382369),	-- Environmental Emulator
+					r(382370),	-- Giggle Goggles
+					r(382326),	-- High Intensity Thermal Scanner
+					r(382353),	-- I.W.I.N. Button Mk10
+					r(382381),	-- Illustrious Insight
+					r(382351),	-- Magazine of Healing Darts
+					r(382374),	-- Rummage Through Scrap
+					r(382328),	-- S.A.V.I.O.R.
+					r(382358),	-- Suspiciously Silent Crate
+					r(382354),	-- Suspiciously Ticking Crate
+					r(382359),	-- Tinker: Supercollide-O-Tron
+					r(393796),	-- Tinker: Arclight Vital Correctors
+					r(382367),	-- Wyrmhole Generator
+					r(387246),	-- Zapthrottle Soul Inhaler
+				},
 			}),
 		}),
 		prof(FISHING, {
@@ -248,6 +292,22 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 			}),
 		}),
 		prof(MINING, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(389701),	-- Overload Hardened Node
+					r(389704),	-- Overload Infurious Node
+					r(389700),	-- Overload Molten Node
+					r(389702),	-- Overload Primal Node
+					r(389703),	-- Overload Titan Node
+					r(383793),	-- Refine Draconium++
+					r(383795),	-- Refine Draconium+++
+					r(383796),	-- Refine Khaz'gorite++
+					r(383797),	-- Refine Khaz'gorite+++
+					r(383649),	-- Refine Serevite++
+					r(383792),	-- Refine Serevite+++
+				},
+			}),
 			q(70028, {	-- Artisan's Supply: Salt Deposits
 				-- TODO: Available 64??
 				--["sourceQuests"] = {  },	-- To the Dragon Isles:

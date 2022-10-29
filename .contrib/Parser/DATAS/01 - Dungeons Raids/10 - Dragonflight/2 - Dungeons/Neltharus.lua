@@ -15,6 +15,10 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["coord"] = { 25.1, 56.2, THE_WAKING_SHORES },
 				}),
 			}),
+			n(TREASURES, {
+				-- Dont have ObjectID etc.. atm
+				i(199229),	-- Schematic: Tinker: Breath of Neltharion (RECIPE!)
+			}),
 			d(1, {	-- Normal
 				e(2613, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales

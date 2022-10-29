@@ -52,8 +52,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					i(194500),	-- Plans: Titanicium Leatherworker's Toolset (RECIPE!)
 					i(194498),	-- Plans: Titanicium Needle Set (RECIPE!)
 					i(194495),	-- Plans: Titanicium Sickle (RECIPE!)
-					i(199245),	-- Schematic: Lapidary's Titanicium Clamps (RECIPE!)
-					i(199244),	-- Schematic: Titanicium Delver's Helmet (RECIPE!)
+					i(199245),	-- Schematic: Lapidary's Khaz'gorite Clamps  (RECIPE!)
+					i(199244),	-- Schematic: Khaz'gorite Delver's Helmet  (RECIPE!)
 					i(194288),	-- Pattern: Master's Wildercloth Alchemist's Robe (RECIPE!)
 					i(194290),	-- Pattern: Master's Wildercloth Enchanter's Hat (RECIPE!)
 					i(194292),	-- Pattern: Master's Wildercloth Gradening Hat (RECIPE!)
@@ -64,6 +64,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					i(198912),	-- Technique: Illusion Parchment: Whirling Breeze (RECIPE!)
 					i(194282),	-- Pattern: Cushion of Time Travel (RECIPE!)
 					i(194284),	-- Pattern: Wildercloth Weapon Upholstery (RECIPE!)
+
+
+
 				},
 			}),
 			n(185556, {	-- Erugosa

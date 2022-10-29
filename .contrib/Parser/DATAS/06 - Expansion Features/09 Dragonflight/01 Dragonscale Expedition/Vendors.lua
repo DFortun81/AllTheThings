@@ -24,7 +24,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					i(194632),	-- Design: Idol of the Lifebinder (RECIPE!)
 					i(194635),	-- Design: Idol of the Earth Warder (RECIPE!)
 						-- RENOWN 15 --
-					i(198783),	-- Schematic: Spring-Loaded Titanicium Fabric Cutter (RECIPE!)
+					i(198783),	-- Schematic: Spring-Loaded Khaz'gorite Fabric Cutters (RECIPE!)
 					i(198782),	-- Schematic: Bottomless Mireslush Ore Satchel (RECIPE!)
 					i(194661),	-- Design: Magnificent Margin Magnifier (RECIPE!)
 					i(194291),	-- Pattern: Master's Wildercloth Fishing Cap (RECIPE!)

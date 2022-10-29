@@ -18,6 +18,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					i(193890),	-- Diced Meat
 				},
 			}),
+			n(191608, {	-- The Great Swog
+				["coord"] = { 82.2, 73.2, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(199234),	-- Schematic: Khaz'gorite Fisherfriend (RECIPE!)
+					-- For one Gold coin?
+				},
+			}),
 			-- Doogies
 			n(187667, {	-- Ellam
 				["coord"] = { 76.7, 30.5, OHNAHRAN_PLAINS },
