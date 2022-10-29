@@ -58,31 +58,63 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. FEAST_OF_WINTER_VEIL .. [[, 12, 16, 1, 2); end]],
 	["groups"] = {
 		n(ACHIEVEMENTS, {
-			ach(1691, {	-- Merrymaker
-				-- Meta Achievement should symlink the contained Achievements from Source
-				["sym"] = {
-					{"meta_achievement",
-						273,			-- On Metzen!
-						252,			-- With a Little Helper from My Friends
-						1255,			-- Scrooge (A)
-						259,			-- Scrooge (H)
-						1282,			-- Fa-la-la-la-Ogri'la
-						277,			-- 'Tis the Season
-						279,			-- Simply Abominable
-						1687,			-- Let It Snow
-						1686,			-- Bros. Before Ho Ho Ho's (A)
-						1685,			-- Bros. Before Ho Ho Ho's (H)
-						1688,			-- The Winter Veil Gourmet
-						1689,			-- He Knows If You've Been Naughty
-						1690,			-- A Frosty Shake
-					},
-				},
+			ach(1691, {	-- Merrymaker (H) / Merrymaker [MOP+]
+				["sym"] = {{"meta_achievement",
+					273,			-- On Metzen!
+					252,			-- With a Little Helper from My Friends
+					-- #if AFTER MOP
+					1255,			-- Scrooge (A)
+					-- #endif
+					259,			-- Scrooge (H)
+					1282,			-- Fa-la-la-la-Ogri'la
+					277,			-- 'Tis the Season
+					279,			-- Simply Abominable
+					1687,			-- Let It Snow
+					-- #if AFTER MOP
+					1686,			-- Bros. Before Ho Ho Ho's (A)
+					-- #endif
+					1685,			-- Bros. Before Ho Ho Ho's (H)
+					1688,			-- The Winter Veil Gourmet
+					1689,			-- He Knows If You've Been Naughty
+					1690,			-- A Frosty Shake
+				}},
+				-- #if BEFORE MOP
+				["races"] = HORDE_ONLY,
+				-- #endif
 				["groups"] = {
 					title(102),				-- Merrymaker
 				},
 			}),
+			-- #if BEFORE MOP
+			ach(1692, {	-- Merrymaker (A)
+				["sym"] = {{"meta_achievement",
+					273,			-- On Metzen!
+					252,			-- With a Little Helper from My Friends
+					1255,			-- Scrooge (A)
+					1282,			-- Fa-la-la-la-Ogri'la
+					277,			-- 'Tis the Season
+					279,			-- Simply Abominable
+					1687,			-- Let It Snow
+					1686,			-- Bros. Before Ho Ho Ho's (A)
+					1688,			-- The Winter Veil Gourmet
+					1689,			-- He Knows If You've Been Naughty
+					1690,			-- A Frosty Shake
+				}},
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					title(102),				-- Merrymaker
+				},
+			}),
+			-- #endif
 			ach(277),	-- 'Tis the Season
 			ach(5853, {	-- A-Caroling We Will Go (A)
+				-- #if AFTER 9.1.5
+				["provider"] = { "i", 188680 },	-- Winter Veil Chorus Book
+				-- #else
+				["provider"] = { "i", 70923 },	-- Gaudy Winter Veil Sweater
+				-- #endif
+				["timeline"] = { "added 4.3.0" },
+				["maps"] = { ORGRIMMAR, SILVERMOON_CITY, THUNDER_BLUFF, UNDERCITY },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					crit(1),	-- Orgrimmar
@@ -92,6 +124,13 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				},
 			}),
 			ach(5854, {	-- A-Caroling We Will Go (H)
+				-- #if AFTER 9.1.5
+				["provider"] = { "i", 188680 },	-- Winter Veil Chorus Book
+				-- #else
+				["provider"] = { "i", 70923 },	-- Gaudy Winter Veil Sweater
+				-- #endif
+				["timeline"] = { "added 4.3.0" },
+				["maps"] = { DARNASSUS, THE_EXODAR, IRONFORGE, STORMWIND_CITY },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					crit(1),	-- Darnassus
@@ -100,7 +139,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					crit(4),	-- Stormwind City
 				},
 			}),
-			ach(1690),	-- A Frosty Shake
+			ach(1690, {	-- A Frosty Shake
+				["maps"] = { NORTHREND_DALARAN },
+			}),
 			ach(4436, {	-- BB King (A)
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -118,9 +159,14 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				},
 			}),
 			ach(1295, {	-- Crashin' & Thrashin'
-				crit(1),	-- Gain 25 crashes with your Crashin' Thrashin' Racer
+				["providers"] = {
+					{ "i", 37710 },	-- Crashin' Thrashin' Racer Controller
+					{ "i", 54343 },	-- Blue Crashin' Thrashin' Racer Controller
+				},
 			}),
-			ach(1282),	-- Fa-la-la-la-Ogri'la
+			ach(1282, {	-- Fa-la-la-la-Ogri'la
+				["maps"] = { BLADES_EDGE_MOUNTAINS },
+			}),
 			ach(1689),	-- He Knows If You've Been Naughty
 			ach(1686, {	-- Holiday Bromance (A)
 				["races"] = ALLIANCE_ONLY,
@@ -168,11 +214,14 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				},
 			}),
 			ach(10353, {	-- Iron Armada
-				crit(1),		-- Crashin' Thrashin' Flamer
-				crit(2),		-- Crashin' Thrashin' Killdozer
-				crit(3),		-- Crashin' Thrashin' Mortar
-				crit(4),		-- Crashin' Thrashin' Cannon
-				crit(5),		-- Crashin' Thrashin' Roller
+				["timeline"] = { "added 6.2.2.20426" },
+				["groups"] = {
+					crit(1),		-- Crashin' Thrashin' Flamer
+					crit(2),		-- Crashin' Thrashin' Killdozer
+					crit(3),		-- Crashin' Thrashin' Mortar
+					crit(4),		-- Crashin' Thrashin' Cannon
+					crit(5),		-- Crashin' Thrashin' Roller
+				},
 			}),
 			ach(1687, {	-- Let It Snow
 				crit(1),	-- Orc Death Knight
@@ -194,7 +243,10 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["races"] = HORDE_ONLY,
 			}),
 			ach(279),	-- Simply Abominable
-			ach(8699),	-- The Danger Zone
+			ach(8699, {	-- The Danger Zone
+				["provider"] = { "i", 104318 },	-- Crashin' Thrashin' Flyer Controller
+				["timeline"] = { "added 5.4.0.17227" },
+			}),
 			ach(1688, {	-- The Winter Veil Gourmet
 				crit(1),	-- Gingerbread Cookie
 				crit(2),	-- Winter Veil Egg Nog
