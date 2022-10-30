@@ -661,17 +661,26 @@ end
 settings.GetTooltipSetting = function(self, setting)
 	return RawSettings.Tooltips[setting];
 end
+do
+local ModifierFuncs = {
+	["Shift"] = IsShiftKeyDown,
+	["Ctrl"] = IsControlKeyDown,
+	["Alt"] = IsAltKeyDown,
+	["Cmd"] = IsMetaKeyDown,
+};
 -- only returns 'true' for the requested TooltipSetting if the Setting's associated Modifier key is currently being pressed
 settings.GetTooltipSettingWithMod = function(self, setting)
 	local v = RawSettings.Tooltips[setting];
 	if not v then return v; end
-	local k = RawSettings.Tooltips[setting .. ":Mod"];
-	if k == "None"
-		or (k == "Shift" and IsShiftKeyDown())
-		or (k == "Ctrl" and IsControlKeyDown())
-		or (k == "Alt" and IsAltKeyDown()) then
+	local k = RawSettings.Tooltips[setting..":Mod"];
+	if k == "None" then
 		return v;
 	end
+	local func = ModifierFuncs[k];
+	if func and func() then
+		return v;
+	end
+end
 end
 settings.Set = function(self, setting, value)
 	RawSettings.General[setting] = value;
@@ -3273,7 +3282,7 @@ EnableTooltipInformationCheckBox:SetPoint("TOPLEFT", ShowTooltipHelpCheckBox, "B
 local TooltipModifierLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 TooltipModifierLabel:SetJustifyH("LEFT");
 TooltipModifierLabel:SetText(L["TOOLTIP_MOD_LABEL"]);
-TooltipModifierLabel:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox, "BOTTOMLEFT", 10, -2);
+TooltipModifierLabel:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox.Text, "TOPRIGHT", 10, 0);
 TooltipModifierLabel:SetTextColor(1, 1, 1, 1);
 TooltipModifierLabel:Show();
 table.insert(settings.MostRecentTab.objects, TooltipModifierLabel);
@@ -3285,60 +3294,46 @@ TooltipModifierLabel.OnRefresh = function(self)
 	end
 end;
 
--- Create Unique Disable methods for callbacks
-local function None_Disable(self)
-	self:Disable();
-end
-local function Shift_Disable(self)
-	self:Disable();
-end
-local function Ctrl_Disable(self)
-	self:Disable();
-end
-local function Alt_Disable(self)
-	self:Disable();
-end
 local TooltipModifierNoneCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_NONE"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "None");
 	if not settings:GetTooltipSetting("Enabled") then
-		app.Callback(None_Disable, self);
+		self:Disable();
 		self:SetAlpha(0.2);
 	else
+		self:Enable();
 		self:SetAlpha(1);
-		-- act like a radio button
-		if not self:GetChecked() then
-			self:Enable();
-		else
-			app.Callback(None_Disable, self);
-		end
 	end
 end,
 function(self)
+	-- re-checking the same box
+	if settings:GetTooltipSetting("Enabled:Mod") == "None" then
+		self:SetChecked(true);
+		return;
+	end
 	if self:GetChecked() then
 		settings:SetTooltipSetting("Enabled:Mod", "None");
 	end
 end);
-TooltipModifierNoneCheckBox:SetPoint("TOP", EnableTooltipInformationCheckBox, "BOTTOM", 0, 4);
-TooltipModifierNoneCheckBox:SetPoint("LEFT", TooltipModifierLabel, "RIGHT", 4, 0);
+TooltipModifierNoneCheckBox:SetPoint("TOPLEFT", EnableTooltipInformationCheckBox, "BOTTOMLEFT", 10, 4);
 
 local TooltipModifierShiftCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_SHIFT"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Shift");
 	if not settings:GetTooltipSetting("Enabled") then
-		app.Callback(Shift_Disable, self);
+		self:Disable();
 		self:SetAlpha(0.2);
 	else
+		self:Enable();
 		self:SetAlpha(1);
-		-- act like a radio button
-		if not self:GetChecked() then
-			self:Enable();
-		else
-			app.Callback(Shift_Disable, self);
-		end
 	end
 end,
 function(self)
+	-- re-checking the same box
+	if settings:GetTooltipSetting("Enabled:Mod") == "Shift" then
+		self:SetChecked(true);
+		return;
+	end
 	if self:GetChecked() then
 		settings:SetTooltipSetting("Enabled:Mod", "Shift");
 	end
@@ -3350,19 +3345,19 @@ local TooltipModifierCtrlCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_CTRL"
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Ctrl");
 	if not settings:GetTooltipSetting("Enabled") then
-		app.Callback(Ctrl_Disable, self);
+		self:Disable();
 		self:SetAlpha(0.2);
 	else
+		self:Enable();
 		self:SetAlpha(1);
-		-- act like a radio button
-		if not self:GetChecked() then
-			self:Enable();
-		else
-			app.Callback(Ctrl_Disable, self);
-		end
 	end
 end,
 function(self)
+	-- re-checking the same box
+	if settings:GetTooltipSetting("Enabled:Mod") == "Ctrl" then
+		self:SetChecked(true);
+		return;
+	end
 	if self:GetChecked() then
 		settings:SetTooltipSetting("Enabled:Mod", "Ctrl");
 	end
@@ -3374,25 +3369,51 @@ local TooltipModifierAltCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_ALT"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Alt");
 	if not settings:GetTooltipSetting("Enabled") then
-		app.Callback(Alt_Disable, self);
+		self:Disable();
 		self:SetAlpha(0.2);
 	else
+		self:Enable();
 		self:SetAlpha(1);
-		-- act like a radio button
-		if not self:GetChecked() then
-			self:Enable();
-		else
-			app.Callback(Alt_Disable, self);
-		end
 	end
 end,
 function(self)
+	-- re-checking the same box
+	if settings:GetTooltipSetting("Enabled:Mod") == "Alt" then
+		self:SetChecked(true);
+		return;
+	end
 	if self:GetChecked() then
 		settings:SetTooltipSetting("Enabled:Mod", "Alt");
 	end
 end);
 TooltipModifierAltCheckBox:SetPoint("TOP", TooltipModifierCtrlCheckBox, "TOP", 0, 0);
 TooltipModifierAltCheckBox:SetPoint("LEFT", TooltipModifierCtrlCheckBox.Text, "RIGHT", 4, 0);
+
+if IsMacClient() then
+	local TooltipModifierMetaCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_CMD"],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Enabled:Mod") == "Cmd");
+		if not settings:GetTooltipSetting("Enabled") then
+			self:Disable();
+			self:SetAlpha(0.2);
+		else
+			self:Enable();
+			self:SetAlpha(1);
+		end
+	end,
+	function(self)
+		-- re-checking the same box
+		if settings:GetTooltipSetting("Enabled:Mod") == "Cmd" then
+			self:SetChecked(true);
+			return;
+		end
+		if self:GetChecked() then
+			settings:SetTooltipSetting("Enabled:Mod", "Cmd");
+		end
+	end);
+	TooltipModifierMetaCheckBox:SetPoint("TOP", TooltipModifierAltCheckBox, "TOP", 0, 0);
+	TooltipModifierMetaCheckBox:SetPoint("LEFT", TooltipModifierAltCheckBox.Text, "RIGHT", 4, 0);
+end
 
 local DisplayInCombatCheckBox = settings:CreateCheckBox(L["DISPLAY_IN_COMBAT_CHECKBOX"],
 function(self)
@@ -3409,8 +3430,8 @@ function(self)
 	settings:SetTooltipSetting("DisplayInCombat", self:GetChecked());
 end);
 DisplayInCombatCheckBox:SetATTTooltip(L["DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP"]);
-DisplayInCombatCheckBox:SetPoint("LEFT", EnableTooltipInformationCheckBox, "LEFT", 8, 0);
-DisplayInCombatCheckBox:SetPoint("TOP", TooltipModifierLabel, "BOTTOM", 0, -2);
+DisplayInCombatCheckBox:SetPoint("LEFT", EnableTooltipInformationCheckBox, "LEFT", 0, 0);
+DisplayInCombatCheckBox:SetPoint("TOP", TooltipModifierNoneCheckBox, "BOTTOM", 0, 4);
 
 local SummarizeThingsCheckBox = settings:CreateCheckBox(L["SUMMARIZE_CHECKBOX"],
 function(self)
@@ -3468,7 +3489,7 @@ local TooltipShowLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNorm
 TooltipShowLabel:SetJustifyH("LEFT");
 TooltipShowLabel:SetText(L["TOOLTIP_SHOW_LABEL"]);
 TooltipShowLabel:SetPoint("TOP", ContainsSlider, "BOTTOM", 0, -14);
-TooltipShowLabel:SetPoint("LEFT", TooltipModifierLabel, "LEFT", -8, 0);
+TooltipShowLabel:SetPoint("LEFT", SummarizeThingsCheckBox, "LEFT", 0, 0);
 TooltipShowLabel:Show();
 table.insert(settings.MostRecentTab.objects, TooltipShowLabel);
 TooltipShowLabel.OnRefresh = function(self)
@@ -3494,7 +3515,8 @@ function(self)
 	settings:SetTooltipSetting("Progress", self:GetChecked());
 end);
 ShowCollectionProgressCheckBox:SetATTTooltip(L["SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP"]);
-ShowCollectionProgressCheckBox:SetPoint("TOPLEFT", TooltipShowLabel, "BOTTOMLEFT", 0, -2);
+ShowCollectionProgressCheckBox:SetPoint("LEFT", SummarizeThingsCheckBox, "LEFT", 0, 0);
+ShowCollectionProgressCheckBox:SetPoint("TOP", TooltipShowLabel, "BOTTOM", 0, -2);
 
 local ShortenProgressCheckBox = settings:CreateCheckBox(L["ICON_ONLY_CHECKBOX"],
 function(self)
