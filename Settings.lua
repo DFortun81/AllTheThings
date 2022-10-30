@@ -927,7 +927,7 @@ settings.CreateButton = function(self, opts, functions)
 	local width = opts.width;
 	local tooltip = opts.tooltip;
 	local refs = opts.refs;
-	local template = opts.template;
+	local template = opts.template or "UIPanelButtonTemplate";
 
 	local f = CreateFrame("Button", name, self, template);
 	f:SetText(text);
@@ -1402,7 +1402,7 @@ f:SetText("v" .. GetAddOnMetadata("AllTheThings", "Version"));
 f:Show();
 settings.version = f;
 
-f = CreateFrame("Button", nil, settings);
+f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate");
 f:SetPoint("TOPLEFT", settings, "BOTTOMLEFT", 0, -6);
 f:SetText(L["DISCORD_BUTTON_LABEL"]);
 f:SetWidth(100);
@@ -1412,7 +1412,7 @@ f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "discord.g
 f:SetATTTooltip(L["DISCORD_BUTTON_TOOLTIP"]);
 settings.community = f;
 
-f = CreateFrame("Button", nil, settings);
+f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate");
 f:SetPoint("TOPLEFT", settings.community, "TOPRIGHT", 4, 0);
 f:SetText(L["TWITCH_BUTTON_LABEL"]);
 f:SetWidth(100);
@@ -1422,7 +1422,7 @@ f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "twitch.tv
 f:SetATTTooltip(L["TWITCH_BUTTON_TOOLTIP"]);
 settings.twitch = f;
 
-f = CreateFrame("Button", nil, settings);
+f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate");
 f:SetPoint("TOPLEFT", settings.twitch, "TOPRIGHT", 4, 0);
 f:SetText(L["PATREON_BUTTON_LABEL"]);
 f:SetWidth(100);
@@ -1432,7 +1432,7 @@ f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "patreon.c
 f:SetATTTooltip(L["PATREON_BUTTON_TOOLTIP"]);
 settings.patreon = f;
 
-f = CreateFrame("Button", nil, settings);
+f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate");
 f:SetPoint("TOPLEFT", settings.patreon, "TOPRIGHT", 4, 0);
 f:SetText(L["MERCH_BUTTON_LABEL"]);
 f:SetWidth(100);
@@ -1441,6 +1441,7 @@ f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", function() app:ShowPopupDialogWithEditBox(nil, "designbyhumans.com/shop/allthethings", nil, 10) end);
 f:SetATTTooltip(L["MERCH_BUTTON_TOOLTIP"]);
 settings.merch = f;
+
 ------------------------------------------
 -- The "General" Tab.					--
 ------------------------------------------
@@ -2756,7 +2757,7 @@ local allEquipmentFilters = {	-- Filter IDs
 	28,	-- Staves
 }
 
-f = CreateFrame("Button", nil, child);
+f = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
 f:SetPoint("LEFT", ItemFiltersLabel, "LEFT", 0, -426);
 f:SetText(L["CLASS_DEFAULTS_BUTTON"]);
 f:SetWidth(120);
@@ -2780,7 +2781,7 @@ end;
 table.insert(settings.MostRecentTab.objects, f);
 settings.equipfilterdefault = f;
 
-f = CreateFrame("Button", nil, child);
+f = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
 f:SetPoint("TOPLEFT", settings.equipfilterdefault, "TOPRIGHT", 4, 0);
 f:SetText(L["ALL_BUTTON"]);
 f:SetWidth(70);
@@ -2804,7 +2805,7 @@ end;
 table.insert(settings.MostRecentTab.objects, f);
 settings.equipfilterall = f
 
-f = CreateFrame("Button", nil, child);
+f = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
 f:SetPoint("TOPLEFT", settings.equipfilterall, "TOPRIGHT", 4, 0);
 f:SetText(L["UNCHECK_ALL_BUTTON"]);
 f:SetWidth(70);
