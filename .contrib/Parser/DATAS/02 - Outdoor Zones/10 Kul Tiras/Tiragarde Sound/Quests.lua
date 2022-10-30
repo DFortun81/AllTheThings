@@ -1513,9 +1513,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["lockCriteria"] = { 1, "lvl", 50 },
 				["races"] = ALLIANCE_ONLY,
 			},{
-				-- TODO: Check SQ, also probably can't do after a certain level
 				q(49300, {	-- Creature Corruption
-					-- not 100% on this one based on discord info?
 					["sourceQuest"] = 48366,	-- Paddle to Safety
 				}),
 				q(49739, {	-- Enemies at the Gate
