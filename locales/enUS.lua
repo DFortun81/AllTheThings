@@ -499,6 +499,7 @@ app.L = {
 	["TOOLTIP_MOD_SHIFT"] = SHIFT_KEY_TEXT;
 	["TOOLTIP_MOD_CTRL"] = CTRL_KEY_TEXT;
 	["TOOLTIP_MOD_ALT"] = ALT_KEY_TEXT;
+	["TOOLTIP_MOD_CMD"] = CMD_KEY_TEXT;
 	["TOOLTIP_SHOW_LABEL"] = "Shown Information";
 	["SHOW_COLLECTION_PROGRESS_CHECKBOX"] = "Collection Progress";
 	["SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.";
