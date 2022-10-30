@@ -1518,7 +1518,10 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					-- not 100% on this one based on discord info?
 					["sourceQuest"] = 48366,	-- Paddle to Safety
 				}),
-				q(49739),	-- Enemies at the Gate
+				q(49739, {	-- Enemies at the Gate
+					["sourceQuest"] = 49736,	-- For Kul Tiras!
+					["description"] = "You must accept |cffffff9aFor Kul Tiras!|r in order for this Bonus Objective to become active.",
+				}),
 				q(50009, {	-- Shipwreck Recovery Crew
 					["sourceQuest"] = 50026,	-- Save our Shipmates
 				}),
