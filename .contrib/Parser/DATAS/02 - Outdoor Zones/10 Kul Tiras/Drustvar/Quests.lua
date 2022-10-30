@@ -1502,7 +1502,9 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				}),
 				q(50959),	-- Plundering Pirates
 				q(50448),	-- Reclaiming Corlain
-				q(45972),	-- The Accursed Thicket
+				q(45972, {	-- The Accursed Thicket
+					["sourceQuest"] = 47428,	-- Kitty?
+				}),
 				q(50091),	-- Village Repair
 			})),
 --[[	raw quest list to check against
