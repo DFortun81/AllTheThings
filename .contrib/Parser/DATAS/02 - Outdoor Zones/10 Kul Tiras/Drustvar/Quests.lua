@@ -1491,7 +1491,10 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			},{
 				-- TODO: Check SQ, also probably can't do after a certain level
 				q(48525),	-- Break Them to Splinters
-				q(48474),	-- Crypt Keepers
+				q(48474, {	-- Crypt Keepers
+					["sourceQuest"] = 48475,	-- Seeing Spirits
+					["description"] = "You must accept the quest |cffffff00Seeing Spirits|r in order for this Bonus Objective to activate.",
+				}),
 				q(47969, {	-- Fallhaven's Curse
 					["sourceQuest"] = 47968,	-- Signs and Portents
 					["description"] = "You must accept the quest |cffffff00Signs and Portents|r in order for this Bonus Objective to activate.",
