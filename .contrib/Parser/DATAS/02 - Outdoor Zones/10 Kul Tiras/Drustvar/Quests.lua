@@ -1489,7 +1489,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["lockCriteria"] = { 1, "lvl", 50 },
 				["races"] = ALLIANCE_ONLY,
 			},{
-				-- TODO: Check SQ, also probably can't do after a certain level
 				q(48525, {	-- Break Them to Splinters
 					["sourceQuest"] = 48519,	-- Hope They Can't Swim
 				}),
@@ -1506,7 +1505,9 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["sourceQuest"] = 48678,	-- Questionable Offerings
 				}),
 				q(50959),	-- Plundering Pirates
-				q(50448),	-- Reclaiming Corlain
+				q(50448, {	-- Reclaiming Corlain
+					["sourceQuest"] = 50253,	-- An Improved Arsenal
+				}),
 				q(45972, {	-- The Accursed Thicket
 					["sourceQuest"] = 47428,	-- Kitty?
 				}),
