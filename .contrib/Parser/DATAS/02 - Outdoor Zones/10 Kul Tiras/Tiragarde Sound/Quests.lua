@@ -1523,7 +1523,10 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				q(50009, {	-- Shipwreck Recovery Crew
 					["sourceQuest"] = 50026,	-- Save our Shipmates
 				}),
-				q(49529),	-- Spring Cleaning
+				q(49529, {	-- Spring Cleaning
+					["sourceQuest"] = 49897,	-- Making Mysteries
+					["description"] = "You must accept |cffffff00Making Mysteries|r in order for this Bonus Objective to become available.",
+				}),
 			})),
 			-- Want to see q49310 The Prophet's Ploy? Its under Boralus>Quests
 --[[	raw quest list to check against
