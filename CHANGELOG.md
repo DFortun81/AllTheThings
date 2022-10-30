@@ -1,24 +1,21 @@
 # AllTheThings
 
-## [DF-3.0.1](https://github.com/DFortun81/AllTheThings/tree/DF-3.0.1) (2022-10-27)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.0.0...DF-3.0.1) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
-
-
-### KNOWN ISSUES
-
-Please don't spam us with these:
-
-- Map icon is inside the minimap.
-- You can't change profiles because the switch button is not functional.
-- The autoreset on dungeons seems broken in `/attra`.
+## [DF-3.0.2](https://github.com/DFortun81/AllTheThings/tree/DF-3.0.2) (2022-10-30)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.0.1...DF-3.0.2) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
 ### Logic fixes
 
-- Fixed ATT tooltips not showing up/disappearing.
-- Fixed "This gets removed in patch 10.0.0" on Things that are already removed. We are in 10.0 patch after all!
+- Fixed minimap button 🗺
 
 
 ### Data fixes
 
-- Harvested Item/Quest/Achievement data, this should make new content behave as collectable and show up in lists.
+- Threads of Fate will become unavailable for new characters as of 10.0.2 patch (Dragonflight launch). This should now show up in future unobtainables!
+- Dragonflight content will now only show up in Debug mode (with a note stating that it will become available in patch 10.0.2). Apart from some new collecting achievements that are already available. (And apart from some bugged profession data, please bear with us)
+- Some adjustments to past pre-patch events (not Dragonflight yet!).
+- Some adjustments to Winter Veil.
+- Profession updates. This is not yet finished.
+- Updates to Dragonflight content (visible in Debug mode for now).
+- Fixes to some obscure quests in BfA.
+- Other fixes.
