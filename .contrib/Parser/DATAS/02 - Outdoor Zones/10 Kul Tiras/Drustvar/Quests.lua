@@ -1510,7 +1510,9 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				q(45972, {	-- The Accursed Thicket
 					["sourceQuest"] = 47428,	-- Kitty?
 				}),
-				q(50091),	-- Village Repair
+				q(50091, {	-- Village Repair
+					["sourceQuest"] = 49939,	-- So Long, Sister
+				}),
 			})),
 --[[	raw quest list to check against
 			-- Unknown
