@@ -1691,7 +1691,9 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			},{
 				-- TODO: Check SQ, also probably can't do after a certain level
 				q(50779),	-- A Clean Slate
-				q(51534),	-- The Battle for Brennadam
+				q(51534, {	-- The Battle for Brennadam
+					["sourceQuest"] = 51401,	-- Carry On
+				}),
 				q(50133),	-- Weed Whacking
 			})),
 		}),
