@@ -1490,7 +1490,9 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["races"] = ALLIANCE_ONLY,
 			},{
 				-- TODO: Check SQ, also probably can't do after a certain level
-				q(48525),	-- Break Them to Splinters
+				q(48525, {	-- Break Them to Splinters
+					["sourceQuest"] = 48519,	-- Hope They Can't Swim
+				}),
 				q(48474, {	-- Crypt Keepers
 					["sourceQuest"] = 48475,	-- Seeing Spirits
 					["description"] = "You must accept the quest |cffffff00Seeing Spirits|r in order for this Bonus Objective to activate.",
