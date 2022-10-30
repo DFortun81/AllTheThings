@@ -1497,7 +1497,9 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["description"] = "You must accept the quest |cffffff00Signs and Portents|r in order for this Bonus Objective to activate.",
 				}),
 				q(48181),	-- Nooooope
-				q(48680),	-- Not the Bees!
+				q(48680, {	-- Not the Bees!
+					["sourceQuest"] = 48678,	-- Questionable Offerings
+				}),
 				q(50959),	-- Plundering Pirates
 				q(50448),	-- Reclaiming Corlain
 				q(45972),	-- The Accursed Thicket
