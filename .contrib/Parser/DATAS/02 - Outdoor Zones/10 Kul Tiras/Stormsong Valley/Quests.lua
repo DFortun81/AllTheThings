@@ -1689,7 +1689,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["lockCriteria"] = { 1, "lvl", 50 },
 				["races"] = ALLIANCE_ONLY,
 			},{
-				-- TODO: Check SQ, also probably can't do after a certain level
 				q(50779, {	-- A Clean Slate
 					["sourceQuest"] = 50777,	-- The Storm Awakens
 					["description"] = "You must accept |cffffff00The Storm Awakens|r in order for this Bonus Objective to become available.",
@@ -1697,7 +1696,9 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				q(51534, {	-- The Battle for Brennadam
 					["sourceQuest"] = 51401,	-- Carry On
 				}),
-				q(50133),	-- Weed Whacking
+				q(50133, {	-- Weed Whacking
+					["sourceQuest"] = 49755,	-- Heavy Artillery
+				}),
 			})),
 		}),
 	}),
