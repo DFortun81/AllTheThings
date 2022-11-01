@@ -25,13 +25,19 @@ root("Holidays", applyholiday(DAY_OF_THE_DEAD, {
 				["timeline"] = { "added 3.2.2.10505" },
 				["coords"] = {
 					{ 47.8, 55.9, AZUREMYST_ISLE },
+					-- #if AFTER 7.0.1
 					{ 33.9, 39.3, LEGION_DALARAN },
+					-- #endif
 					{ 34.4, 39.1, NORTHREND_DALARAN },
 					{ 69.4, 40.5, DARNASSUS },
 					{ 61.0, 36.9, DUN_MOROGH },
 					{ 47.2, 17.8, DUROTAR },	-- Org
 					{ 47.7, 49.7, EVERSONG_WOODS },
+					-- #if AFTER CATA
 					{ 46.6, 25.8, STORMWIND_CITY },
+					-- #else
+					{ 39.0, 60.1, ELWYNN_FOREST },
+					-- #endif
 					{ 56.4, 18.4, THUNDER_BLUFF },
 					{ 39.9, 21.8, TEROKKAR_FOREST },
 					{ 62.2, 67.4, TIRISFAL_GLADES },	-- Undercity
@@ -74,7 +80,9 @@ root("Holidays", applyholiday(DAY_OF_THE_DEAD, {
 				["qg"] = 35256,	-- Cheerful Dalaran Spirit
 				["coords"] = {
 					{ 34.4, 38.1, NORTHREND_DALARAN },
+					-- #if AFTER 7.0.1
 					{ 33.8, 38.3, LEGION_DALARAN },
+					-- #endif
 				},
 			}),
 			q(14170, {	-- The Grateful Dead — Darnassus, Night Elf / Void Elf
@@ -121,7 +129,11 @@ root("Holidays", applyholiday(DAY_OF_THE_DEAD, {
 			}),
 			q(13952, {	-- The Grateful Dead — Stormwind City, Human
 				["qg"] = 34435,	-- Cheerful Human Spirit
+				-- #if AFTER CATA
 				["coord"] = { 47.6, 26.6, STORMWIND_CITY },
+				-- #else
+				["coord"] = { 39.4, 61.1, ELWYNN_FOREST },
+				-- #endif
 				["races"] = { HUMAN },
 			}),
 			q(14172, {	-- The Grateful Dead — Terokkar Forest, Aldor, all
