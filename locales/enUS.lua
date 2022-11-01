@@ -2202,6 +2202,7 @@ app.L = {
 		[1015] = {4, "|CFF00FFDEThis requires the Stranglethorn Fishing Extravaganza to be active.|r", "Stranglethorn Fishing Extravaganza"},
 		[1016] = {4, "|CFF00FFDEThis requires the Timewalking Event to be active.|r", "Timewalking"},
 		[1017] = {4, "|CFF00FFDEThis requires the WoW's Anniversary Event to be active.|r", "WoW's Anniversary"},
+		[1018] = {4, "|CFF00FFDEThis requires the Kalu'ak Fishing Derby to be active.|r", "Kalu'ak Fishing Derby"},
 	};
 
 	["CUSTOM_COLLECTS_REASONS"] = {
