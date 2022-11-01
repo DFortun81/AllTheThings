@@ -334,7 +334,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			q(53311, {	-- Gleaming Storm Silver
 				["requireSkill"] = MINING,
 				["isWorldQuest"] = true,
-				["races"] = ALLIANCE_ONLY,
 				["lvl"] = { 50 },
 			}),
 			q(51507, {	-- Gorehorn
