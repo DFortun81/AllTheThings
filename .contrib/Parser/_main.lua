@@ -1724,6 +1724,12 @@ applycost = function(item, ...)
 	end
 	return item;
 end
+emoc = function(cost, item)								-- Assign a Emblem of Conquest cost to an item with proper timeline & phase requirements.
+	-- #if BEFORE 4.0.1
+	applycost(item, { "c", 221, cost });	-- Emblem of Conquest
+	-- #endif
+	return applyclassicphase(WRATH_PHASE_TWO, item);
+end
 emof = function(cost, item)								-- Assign a Emblem of Frost cost to an item with proper timeline & phase requirements.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 341, cost });	-- Emblem of Frost

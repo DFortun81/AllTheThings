@@ -19,6 +19,13 @@ i(12844, 529);		-- Argent Dawn Valor Token [Argent Dawn]
 i(19858, 270);	-- Zandalar Honor Token [Zandalar Tribe]
 
 -- Wrath of the Lich King
+-- Timear Foresees & Emblems of Triumph
+i(44711, 1106);	-- Argent Crusade Commendation Badge
+i(44713, 1098);	-- Ebon Blade Commendation Badge
+i(43950, 1090);	-- Kirin Tor Commendation Badge
+i(49702, 1119);	-- Sons of Hodir Commendation Badge
+i(44710, 1091);	-- Wyrmrest Commendation Badge
+
 -- Argent Tournament
 a(i(45714, 69));	-- Darnassus Commendation Badge
 a(i(45715, 930));	-- Exodar Commendation Badge
