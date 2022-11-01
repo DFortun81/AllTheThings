@@ -5917,6 +5917,77 @@ root("Zones", {
 							i(45828),	-- Windchill Binding
 						},
 					}),
+					n(32509, {	-- Brammold Deepmine <Antiques & Heirlooms>
+						["coord"] = { 51.0, 53.6, NORTHREND_DALARAN },
+						["groups"] = {
+							emoh(40, i(42944, {	-- Balanced Heartseeker
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(65, i(42943, {	-- Bloodied Arcanite Reaper
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(40, i(42950, {	-- Champion Herod's Shoulder
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(40, i(48677, {	-- Champion's Deathdealer Breastplate
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(65, i(42946, {	-- Charmed Ancient Bone Bow
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(50, i(42948, {	-- Devout Aurastone Hammer
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(65, i(42947, {	-- Dignified Headmaster's Charge
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(50, i(42992, {	-- Discerning Eye of the Beast
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(40, i(42951, {	-- Mystical Pauldrons of Elements
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(40, i(48683, {	-- Mystical Vest of Elements
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(40, i(48685, {	-- Polished Breastplate of Valor
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(40, i(42949, {	-- Polished Spaulders of Valor
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(40, i(48687, {	-- Preened Ironfeather Breastplate
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(40, i(42984, {	-- Preened Ironfeather Shoulders
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(65, i(48718, {	-- Repurposed Lava Dredger
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(40, i(42952, {	-- Stained Shadowcraft Spaulders
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(40, i(48689, {	-- Stained Shadowcraft Tunic
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(50, i(42991, {	-- Swift Hand of Justice
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(40, i(42985, {	-- Tattered Dreadmist Mantle
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(40, i(48691, {	-- Tattered Dreadmist Robe
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(40, i(42945, {	-- Venerable Dal'Rend's Sacred Charge
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+							emoh(40, i(48716, {	-- Venerable Mass of McGowan
+								["timeline"] = { "removed 6.1.0.19445" },
+							})),
+						},
+					}),
 					n(28951, {	-- Breanni <Pet Supplies>
 						["coord"] = { 58.7, 39.2, NORTHREND_DALARAN },
 						["groups"] = {
@@ -6351,6 +6422,16 @@ root("Zones", {
 							i(48448),	-- Wrynn's Pauldrons of Conquest
 							i(48374),	-- Wrynn's Shoulderplates of Conquest
 						},
+					}),
+					n(35508, {	-- Enchanter Erodin <Heirloom Vendor>
+						["coord"] = { 37.2, 55.6, NORTHREND_DALARAN },
+						["sym"] = {{ "select", "npcID", 32509 },{"pop"}},	-- Brammold Deepmine <Antiques & Heirlooms>
+						["races"] = HORDE_ONLY,
+					}),
+					n(35507, {	-- Enchanter Isian <Heirloom Vendor>
+						["coord"] = { 37.2, 55.6, NORTHREND_DALARAN },
+						["sym"] = {{ "select", "npcID", 32509 },{"pop"}},	-- Brammold Deepmine <Antiques & Heirlooms>
+						["races"] = ALLIANCE_ONLY,
 					}),
 					n(28715, {	-- Endora Moorehead
 						["coord"] = { 38.62, 55.57, NORTHREND_DALARAN },
