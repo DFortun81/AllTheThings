@@ -454,7 +454,10 @@ pet(74610, 341);	-- Lunar Lantern
 pet(139791, 1922);	-- Lurking Owl Kitten
 pet(30360, 111);	-- Lurky's Egg (Lurky)
 pet(169353, 2687);	-- Lustrous Glimmershell
+-- #if AFTER 5.4.0
+-- Due to special circumstances, this pet is not actually permanently collectible until patch 5.4.0.
 pet(46831, 1351);	-- Macabre Marionette
+-- #endif
 pet(67275, 292);	-- Magic Lamp
 pet(27445, 132);	-- Magical Crawdad Box (Magical Crawdad)
 pet(142084, 1953);	-- Magnataur Hunting Horn (Snobold Runt)
