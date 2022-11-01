@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root("Promotions", {
 	n(-584, {	-- Dragonflight Seasonal Promotions
-		["timeline"] = { "added 10.0.2" },
+		["timeline"] = { "added 10.0.0" },
 		["description"] = "These promotions happened during the time Dragonflight was the most recent content between 25th October 2022 & 12nd November 2024.\n\nThey are listed in the order of their first appearance.",
 		["groups"] = {
 			-- "Pre" Season

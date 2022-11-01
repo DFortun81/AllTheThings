@@ -1496,6 +1496,9 @@ i(192557, 334482);	-- Restoration Deathwalker
 ------------------
 -- PATCH 10.0.0 --
 ------------------
+i(0, 315132);		-- Gargantuan Grrloc
+i(0, 381529);		-- Telix the Stormhorn
+
 -- NOT SOURCED YET
 
 i(194106, 360954);	-- Highland Drake
