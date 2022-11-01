@@ -6598,36 +6598,36 @@ root("Zones", {
 					applyclassicphase(WRATH_PHASE_FOUR, n(40160, {	-- Frozo the Renowned <Frozen Orb Trader>
 						["coord"] = { 40.0, 28.9, NORTHREND_DALARAN },
 						["groups"] = {
-							i(47556, {	-- Crusader Orb
+							applyclassicphase(WRATH_PHASE_THREE, i(47556, {	-- Crusader Orb
 								["cost"] = { { "i", 43102, 6 }, },	-- 6x Frozen Orb
-							}),
-							i(35623, {	-- Eternal Air
+							})),
+							applyclassicphase(WRATH_PHASE_ONE, i(35623, {	-- Eternal Air
 								["cost"] = { { "i", 43102, 1 }, },	-- 1x Frozen Orb
-							}),
-							i(35624, {	-- Eternal Earth
+							})),
+							applyclassicphase(WRATH_PHASE_ONE, i(35624, {	-- Eternal Earth
 								["cost"] = { { "i", 43102, 1 }, },	-- 1x Frozen Orb
-							}),
-							i(36860, {	-- Eternal Fire
+							})),
+							applyclassicphase(WRATH_PHASE_ONE, i(36860, {	-- Eternal Fire
 								["cost"] = { { "i", 43102, 1 }, },	-- 1x Frozen Orb
-							}),
-							i(35625, {	-- Eternal Life
+							})),
+							applyclassicphase(WRATH_PHASE_ONE, i(35625, {	-- Eternal Life
 								["cost"] = { { "i", 43102, 1 }, },	-- 1x Frozen Orb
-							}),
-							i(35627, {	-- Eternal Shadow
+							})),
+							applyclassicphase(WRATH_PHASE_ONE, i(35627, {	-- Eternal Shadow
 								["cost"] = { { "i", 43102, 1 }, },	-- 1x Frozen Orb
-							}),
-							i(35622, {	-- Eternal Water
+							})),
+							applyclassicphase(WRATH_PHASE_ONE, i(35622, {	-- Eternal Water
 								["cost"] = { { "i", 43102, 1 }, },	-- 1x Frozen Orb
-							}),
-							i(36908, {	-- Frost Lotus
+							})),
+							applyclassicphase(WRATH_PHASE_ONE, i(36908, {	-- Frost Lotus
 								["cost"] = { { "i", 43102, 1 }, },	-- 1x Frozen Orb
-							}),
+							})),
 							i(54798, {	-- Pattern: Frosty Flying Carpet
 								["cost"] = { { "i", 43102, 6 }, },	-- 6x Frozen Orb
 							}),
-							i(45087, {	-- Runed Orb
+							applyclassicphase(WRATH_PHASE_TWO, i(45087, {	-- Runed Orb
 								["cost"] = { { "i", 43102, 4 }, },	-- 4x Frozen Orb
-							}),
+							})),
 						},
 					})),
 					n(28997, {	-- Griselda Hunderland <Plate Armor Merchant>
