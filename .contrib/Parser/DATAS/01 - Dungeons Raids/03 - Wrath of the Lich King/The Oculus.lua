@@ -353,13 +353,19 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							-- #endif
 							i(52676, {	-- Cache of the Ley-Guardian
 								-- #if ANYCLASSIC
-								["description"] = "This bag is only available if you queue for the instance using the Dungeon Finder... How this bag can be obtained with Blizzard being a bunch of anti-LFD troglodytes I don't know. Tell Crieve if you get it to drop and what you did to get it.",
+								["description"] = "This bag is only available if you queue for the instance using the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this bag and the mount it contains unobtainable until Cataclysm.",
 								["timeline"] = { "created 3.3.2.11403" },
 								-- #else
 								["description"] = "This bag is only available if you queue for the instance using the Dungeon Finder.",
 								-- #endif
 								["groups"] = {
 									i(43953),	-- Reins of the Blue Drake
+									i(43953, {	-- Blue Drake (MOUNT!)
+										-- #if BEFORE 4.0.3
+										["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Occulus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
+										-- #endif
+										["timeline"] = { "created 3.0.1", "added 4.0.3" },
+									}),
 									i(36933),	-- Forest Emerald
 									i(36921),	-- Autumn's Glow
 									i(36930),	-- Monarch Topaz

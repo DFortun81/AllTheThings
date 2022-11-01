@@ -39,7 +39,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						ach(622),	-- The Spellweaver's Downfall (10 player)
 						ach(1874),	-- You Don't Have an Eternity (10 player)
 						i(43952),	-- Azure Drake (MOUNT!)
-						i(43953),	-- Blue Drake (MOUNT!)
+						i(43953, {	-- Blue Drake (MOUNT!)
+							-- #if BEFORE 4.0.3
+							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Occulus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
+							-- #endif
+							["timeline"] = { "created 3.0.1", "added 4.0.3" },
+						}),
 						i(40497),	-- Black Ice
 						i(40489),	-- Greatstaff of the Nexus
 						i(40491),	-- Hailstorm
@@ -82,7 +87,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						ach(623),	-- The Spellweaver's Downfall (25 player)
 						ach(1875),	-- You Don't Have an Eternity (25 player)
 						i(43952),	-- Azure Drake (MOUNT!)
-						i(43953),	-- Blue Drake (MOUNT!)
+						i(43953, {	-- Blue Drake (MOUNT!)
+							-- #if BEFORE 4.0.3
+							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Occulus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
+							-- #endif
+							["timeline"] = { "created 3.0.1", "added 4.0.3" },
+						}),
 						i(40543),	-- Blue Aspect Helm
 						i(40562),	-- Hood of Rationality
 						i(40590),	-- Elevated Lair Pauldrons
