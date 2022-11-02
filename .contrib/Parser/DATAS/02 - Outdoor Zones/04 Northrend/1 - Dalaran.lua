@@ -336,6 +336,161 @@ local EMBLEM_OF_CONQUEST_QUARTERMASTER_GROUPS = {
 	emoc(28, i(45828)),	-- Windchill Binding
 	emoc(39, i(45842)),	-- Wyrmguard Legplates
 };
+local EMBLEM_OF_FROST_QUARTERMASTER_GROUPS = {
+	emof(60, i(50993)),	-- Band of the Night Raven
+	emof(60, i(50996)),	-- Belt of Omission
+	emof(60, i(50994)),	-- Belt of Petrified Ivy
+	emof(30, i(50458, {	-- Bizuri's Totem of Shattered Ice
+		["timeline"] = { "removed 5.0.4" },
+	})),
+	emof(60, i(50980)),	-- Blizzard Keeper's Mitts
+	emof(95, i(50965)),	-- Castle Breaker's Battleplate
+	emof(60, i(50982)),	-- Cat Burglar's Grips
+	emof(95, i(50968)),	-- Cataclysmic Chestguard
+	emof(95, i(50969)),	-- Chestplate of Unspoken Truths
+	emof(60, i(50997)),	-- Circle of Ossus
+	emof(60, i(50356)),	-- Corroded Skeleton Key
+	emof(50, i(50468)),	-- Drape of the Violet Tower
+	emof(95, i(50975)),	-- Ermine Coronation Robes
+	emof(60, i(50977)),	-- Gatecrasher's Gauntlets
+	emof(60, i(50976)),	-- Gauntlets of Overexposure
+	emof(60, i(50978)),	-- Gauntlets of the Kraken
+	emof(60, i(50984)),	-- Gloves of Ambivalence
+	emof(60, i(50983)),	-- Gloves of False Gestures
+	emof(60, i(50981)),	-- Gloves of the Great Horned Owl
+	emof(60, i(50355)),	-- Herkuml War Token
+	emof(30, i(50454, {	-- Idol of the Black Willow
+		["timeline"] = { "removed 5.0.4" },
+	})),
+	emof(30, i(50456, {	-- Idol of the Crying Moon
+		["timeline"] = { "removed 5.0.4" },
+	})),
+	emof(30, i(50457, {	-- Idol of the Lunar Eclipse
+		["timeline"] = { "removed 5.0.4" },
+	})),
+	emof(30, i(50460, {	-- Libram of Blinding Light
+		["timeline"] = { "removed 5.0.4" },
+	})),
+	emof(30, i(50461, {	-- Libram of the Eternal Tower
+		["timeline"] = { "removed 5.0.4" },
+	})),
+	emof(30, i(50455, {	-- Libram of Three Truths
+		["timeline"] = { "removed 5.0.4" },
+	})),
+	emof(60, i(50989)),	-- Lich Killer's Lanyard
+	emof(60, i(50979)),	-- Logsplitters
+	emof(95, i(50970)),	-- Longstrider's Vest
+	emof(60, i(50357)),	-- Maghia's Misguided Quill
+	emof(95, i(50971)),	-- Mail of the Geyser
+	emof(60, i(50987)),	-- Malevolent Girdle
+	emof(95, i(50974)),	-- Meteor Chaser's Raiment
+	emof(50, i(50467)),	-- Might of the Ocean Serpent
+	emof(23, i(49908)),	-- Primordial Saronite
+	emof(60, i(50358)),	-- Purified Lunar Dust
+	emof(50, i(50470)),	-- Recovered Scarlet Onslaught Cape
+	i(41088),	-- Relentless Gladiator's Chain Armor
+	i(41144),	-- Relentless Gladiator's Chain Gauntlets
+	i(41158),	-- Relentless Gladiator's Chain Helm
+	i(41206),	-- Relentless Gladiator's Chain Leggings
+	i(41218),	-- Relentless Gladiator's Chain Spaulders
+	i(41774),	-- Relentless Gladiator's Dragonhide Gloves
+	i(41679),	-- Relentless Gladiator's Dragonhide Helm
+	i(41668),	-- Relentless Gladiator's Dragonhide Legguards
+	i(41662),	-- Relentless Gladiator's Dragonhide Robes
+	i(41716),	-- Relentless Gladiator's Dragonhide Spaulders
+	i(40791),	-- Relentless Gladiator's Dreadplate Chestpiece
+	i(40811),	-- Relentless Gladiator's Dreadplate Gauntlets
+	i(40830),	-- Relentless Gladiator's Dreadplate Helm
+	i(40851),	-- Relentless Gladiator's Dreadplate Legguards
+	i(40871),	-- Relentless Gladiator's Dreadplate Shoulders
+	i(42012),	-- Relentless Gladiator's Felweave Amice
+	i(41994),	-- Relentless Gladiator's Felweave Cowl
+	i(42018),	-- Relentless Gladiator's Felweave Handguards
+	i(41999),	-- Relentless Gladiator's Felweave Raiment
+	i(42006),	-- Relentless Gladiator's Felweave Trousers
+	i(41288),	-- Relentless Gladiator's Kodohide Gloves
+	i(41322),	-- Relentless Gladiator's Kodohide Helm
+	i(41299),	-- Relentless Gladiator's Kodohide Legguards
+	i(41311),	-- Relentless Gladiator's Kodohide Robes
+	i(41276),	-- Relentless Gladiator's Kodohide Spaulders
+	i(41768),	-- Relentless Gladiator's Leather Gloves
+	i(41673),	-- Relentless Gladiator's Leather Helm
+	i(41656),	-- Relentless Gladiator's Leather Legguards
+	i(41684),	-- Relentless Gladiator's Leather Spaulders
+	i(41651),	-- Relentless Gladiator's Leather Tunic
+	i(41082),	-- Relentless Gladiator's Linked Armor
+	i(41138),	-- Relentless Gladiator's Linked Gauntlets
+	i(41152),	-- Relentless Gladiator's Linked Helm
+	i(41200),	-- Relentless Gladiator's Linked Leggings
+	i(41212),	-- Relentless Gladiator's Linked Spaulders
+	i(40995),	-- Relentless Gladiator's Mail Armor
+	i(41008),	-- Relentless Gladiator's Mail Gauntlets
+	i(41020),	-- Relentless Gladiator's Mail Helm
+	i(41034),	-- Relentless Gladiator's Mail Leggings
+	i(41045),	-- Relentless Gladiator's Mail Spaulders
+	i(41875),	-- Relentless Gladiator's Mooncloth Gloves
+	i(41855),	-- Relentless Gladiator's Mooncloth Hood
+	i(41865),	-- Relentless Gladiator's Mooncloth Leggings
+	i(41870),	-- Relentless Gladiator's Mooncloth Mantle
+	i(41860),	-- Relentless Gladiator's Mooncloth Robe
+	i(40910),	-- Relentless Gladiator's Ornamented Chestguard
+	i(40928),	-- Relentless Gladiator's Ornamented Gloves
+	i(40934),	-- Relentless Gladiator's Ornamented Headcover
+	i(40940),	-- Relentless Gladiator's Ornamented Legplates
+	i(40964),	-- Relentless Gladiator's Ornamented Spaulders
+	i(40790),	-- Relentless Gladiator's Plate Chestpiece
+	i(40810),	-- Relentless Gladiator's Plate Gauntlets
+	i(40829),	-- Relentless Gladiator's Plate Helm
+	i(40850),	-- Relentless Gladiator's Plate Legguards
+	i(40870),	-- Relentless Gladiator's Plate Shoulders
+	i(40994),	-- Relentless Gladiator's Ringmail Armor
+	i(41002),	-- Relentless Gladiator's Ringmail Gauntlets
+	i(41014),	-- Relentless Gladiator's Ringmail Helm
+	i(41028),	-- Relentless Gladiator's Ringmail Leggings
+	i(41039),	-- Relentless Gladiator's Ringmail Spaulders
+	i(41941),	-- Relentless Gladiator's Satin Gloves
+	i(41916),	-- Relentless Gladiator's Satin Hood
+	i(41928),	-- Relentless Gladiator's Satin Leggings
+	i(41935),	-- Relentless Gladiator's Satin Mantle
+	i(41922),	-- Relentless Gladiator's Satin Robe
+	i(40792),	-- Relentless Gladiator's Scaled Chestpiece
+	i(40812),	-- Relentless Gladiator's Scaled Gauntlets
+	i(40831),	-- Relentless Gladiator's Scaled Helm
+	i(40852),	-- Relentless Gladiator's Scaled Legguards
+	i(40872),	-- Relentless Gladiator's Scaled Shoulders
+	i(41966),	-- Relentless Gladiator's Silk Amice
+	i(41947),	-- Relentless Gladiator's Silk Cowl
+	i(41972),	-- Relentless Gladiator's Silk Handguards
+	i(41954),	-- Relentless Gladiator's Silk Raiment
+	i(41960),	-- Relentless Gladiator's Silk Trousers
+	i(41294),	-- Relentless Gladiator's Wyrmhide Gloves
+	i(41328),	-- Relentless Gladiator's Wyrmhide Helm
+	i(41305),	-- Relentless Gladiator's Wyrmhide Legguards
+	i(41317),	-- Relentless Gladiator's Wyrmhide Robes
+	i(41282),	-- Relentless Gladiator's Wyrmhide Spaulders
+	emof(50, i(50466)),	-- Sentinel's Winter Cloak
+	emof(95, i(50972)),	-- Shadow Seeker's Tunic
+	emof(30, i(50474, {	-- Shrapnel Star
+		["timeline"] = { "removed 5.0.4" },
+	})),
+	emof(30, i(50462, {	-- Sigil of the Bone Gryphon
+		["timeline"] = { "removed 5.0.4" },
+	})),
+	emof(30, i(50459, {	-- Sigil of the Hanged Man
+		["timeline"] = { "removed 5.0.4" },
+	})),
+	emof(30, i(50463, {	-- Totem of the Avalanche
+		["timeline"] = { "removed 5.0.4" },
+	})),
+	emof(30, i(50464, {	-- Totem of the Surging Sea
+		["timeline"] = { "removed 5.0.4" },
+	})),
+	emof(60, i(50995)),	-- Vengeful Noose
+	emof(60, i(50991)),	-- Verdigris Chain Belt
+	emof(95, i(50973)),	-- Vestments of Spruce and Fir
+	emof(50, i(50469)),	-- Volde's Cloak of the Night Sky
+	emof(60, i(50992)),	-- Waistband of Despair
+};
 local EMBLEM_OF_HEROISM_QUARTERMASTER_GROUPS = {
 	emoh(40, i(40693)),	-- Beadwork Belt of Shamanic Vision
 	emoh(25, i(40679)),	-- Chained Military Gorget
@@ -599,6 +754,3016 @@ local EMBLEM_OF_VALOR_QUARTERMASTER_GROUPS = {
 	emov(40, i(40750)),	-- Xintor's Expeditionary Boots
 	emov(60, i(40735)),	-- Zartson's Jungle Vambraces
 };
+
+local TIER_TEN_HEROIC_GROUPS = {
+	["DEATHKNIGHT"] = {
+		-- DPS
+		i(51312, {	-- Sanctified Scourgelord Helmet (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 51127, 1 },	-- Sanctified Scourgelord Helmet
+			},
+		}),
+		i(51314, {	-- Sanctified Scourgelord Shoulderplates (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 51125, 1 },	-- Sanctified Scourgelord Shoulderplates
+			},
+		}),
+		i(51311, {	-- Sanctified Scourgelord Gauntlets (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 51128, 1 },	-- Sanctified Scourgelord Gauntlets
+			},
+		}),
+		i(51310, {	-- Sanctified Scourgelord Battleplate (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 51129, 1 },	-- Sanctified Scourgelord Battleplate
+			},
+		}),
+		i(51313, {	-- Sanctified Scourgelord Legplates (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 51126, 1 },	-- Sanctified Scourgelord Legplates
+			},
+		}),
+		
+		-- Tank
+		i(51306, {	-- Sanctified Scourgelord Faceguard (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 51133, 1 },	-- Sanctified Scourgelord Faceguard
+			},
+		}),
+		i(51309, {	-- Sanctified Scourgelord Pauldrons (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 51130, 1 },	-- Sanctified Scourgelord Pauldrons
+			},
+		}),
+		i(51307, {	-- Sanctified Scourgelord Handguards (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 51132, 1 },	-- Sanctified Scourgelord Handguards
+			},
+		}),
+		i(51305, {	-- Sanctified Scourgelord Chestguard (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 51134, 1 },	-- Sanctified Scourgelord Chestguard
+			},
+		}),
+		i(51308, {	-- Sanctified Scourgelord Legguards (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 51131, 1 },	-- Sanctified Scourgelord Legguards
+			},
+		}),
+	},
+	["DRUID"] = {
+		-- Boomkin
+		i(51290, {	-- Sanctified Lasherweave Cover (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51149, 1 },	-- Sanctified Lasherweave Cover
+			},
+		}),
+		i(51292, {	-- Sanctified Lasherweave Mantle (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51147, 1 },	-- Sanctified Lasherweave Mantle
+			},
+		}),
+		i(51291, {	-- Sanctified Lasherweave Gloves (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51148, 1 },	-- Sanctified Lasherweave Gloves
+			},
+		}),
+		i(51294, {	-- Sanctified Lasherweave Vestment (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51145, 1 },	-- Sanctified Lasherweave Vestment
+			},
+		}),
+		i(51293, {	-- Sanctified Lasherweave Trousers (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51146, 1 },	-- Sanctified Lasherweave Trousers
+			},
+		}),
+		
+		-- Feral
+		i(51296, {	-- Sanctified Lasherweave Headguard (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51143, 1 },	-- Sanctified Lasherweave Headguard
+			},
+		}),
+		i(51299, {	-- Sanctified Lasherweave Shoulderpads (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51140, 1 },	-- Sanctified Lasherweave Shoulderpads
+			},
+		}),
+		i(51295, {	-- Sanctified Lasherweave Handgrips (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51144, 1 },	-- Sanctified Lasherweave Handgrips
+			},
+		}),
+		i(51298, {	-- Sanctified Lasherweave Raiment (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51141, 1 },	-- Sanctified Lasherweave Raiment
+			},
+		}),
+		i(51297, {	-- Sanctified Lasherweave Legguards (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51142, 1 },	-- Sanctified Lasherweave Legguards
+			},
+		}),
+		
+		-- Restoration
+		i(51302, {	-- Sanctified Lasherweave Helmet (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51137, 1 },	-- Sanctified Lasherweave Helmet
+			},
+		}),
+		i(51304, {	-- Sanctified Lasherweave Pauldrons (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51135, 1 },	-- Sanctified Lasherweave Pauldrons
+			},
+		}),
+		i(51301, {	-- Sanctified Lasherweave Gauntlets (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51138, 1 },	-- Sanctified Lasherweave Gauntlets
+			},
+		}),
+		i(51300, {	-- Sanctified Lasherweave Robes (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51139, 1 },	-- Sanctified Lasherweave Robes
+			},
+		}),
+		i(51303, {	-- Sanctified Lasherweave Legplates (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51136, 1 },	-- Sanctified Lasherweave Legplates
+			},
+		}),
+	},
+	["HUNTER"] = {
+		i(51286, {	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51153, 1 },	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
+			},
+		}),
+		i(51288, {	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51151, 1 },	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
+			},
+		}),
+		i(51285, {	-- Sanctified Ahn'Kahar Blood Hunter's Handguards (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51154, 1 },	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
+			},
+		}),
+		i(51289, {	-- Sanctified Ahn'Kahar Blood Hunter's Tunic (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51150, 1 },	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
+			},
+		}),
+		i(51287, {	-- Sanctified Ahn'Kahar Blood Hunter's Legguards (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51152, 1 },	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
+			},
+		}),
+	},
+	["MAGE"] = {
+		i(51281, {	-- Sanctified Bloodmage Hood (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51158, 1 },	-- Sanctified Bloodmage Hood
+			},
+		}),
+		i(51284, {	-- Sanctified Bloodmage Shoulderpads (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51155, 1 },	-- Sanctified Bloodmage Shoulderpads
+			},
+		}),
+		i(51280, {	-- Sanctified Bloodmage Gloves (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51159, 1 },	-- Sanctified Bloodmage Gloves
+			},
+		}),
+		i(51283, {	-- Sanctified Bloodmage Robe (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51156, 1 },	-- Sanctified Bloodmage Robe
+			},
+		}),
+		i(51282, {	-- Sanctified Bloodmage Leggings (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51157, 1 },	-- Sanctified Bloodmage Leggings
+			},
+		}),
+	},
+	["PALADIN"] = {
+		-- Holy
+		i(51272, {	-- Sanctified Lightsworn Headpiece (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 51167, 1 },	-- Sanctified Lightsworn Headpiece
+			},
+		}),
+		i(51273, {	-- Sanctified Lightsworn Spaulders (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 51166, 1 },	-- Sanctified Lightsworn Spaulders
+			},
+		}),
+		i(51270, {	-- Sanctified Lightsworn Gloves (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 51169, 1 },	-- Sanctified Lightsworn Gloves
+			},
+		}),
+		i(51274, {	-- Sanctified Lightsworn Tunic (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 51165, 1 },	-- Sanctified Lightsworn Tunic
+			},
+		}),
+		i(51271, {	-- Sanctified Lightsworn Greaves (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 51168, 1 },	-- Sanctified Lightsworn Greaves
+			},
+		}),
+		
+		-- Protection
+		i(51266, {	-- Sanctified Lightsworn Faceguard (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 51173, 1 },	-- Sanctified Lightsworn Faceguard
+			},
+		}),
+		i(51269, {	-- Sanctified Lightsworn Shoulderguards (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 51170, 1 },	-- Sanctified Lightsworn Shoulderguards
+			},
+		}),
+		i(51267, {	-- Sanctified Lightsworn Handguards (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 51172, 1 },	-- Sanctified Lightsworn Handguards
+			},
+		}),
+		i(51265, {	-- Sanctified Lightsworn Chestguard (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 51174, 1 },	-- Sanctified Lightsworn Chestguard
+			},
+		}),
+		i(51268, {	-- Sanctified Lightsworn Legguards (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 51171, 1 },	-- Sanctified Lightsworn Legguards
+			},
+		}),
+		
+		-- Retribution
+		i(51277, {	-- Sanctified Lightsworn Helmet (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 51162, 1 },	-- Sanctified Lightsworn Helmet
+			},
+		}),
+		i(51279, {	-- Sanctified Lightsworn Shoulderplates (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 51160, 1 },	-- Sanctified Lightsworn Shoulderplates
+			},
+		}),
+		i(51276, {	-- Sanctified Lightsworn Gauntlets (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 51163, 1 },	-- Sanctified Lightsworn Gauntlets
+			},
+		}),
+		i(51275, {	-- Sanctified Lightsworn Battleplate (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 51164, 1 },	-- Sanctified Lightsworn Battleplate
+			},
+		}),
+		i(51278, {	-- Sanctified Lightsworn Legplates (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 51161, 1 },	-- Sanctified Lightsworn Legplates
+			},
+		}),
+	},
+	["PRIEST"] = {
+		-- Holy/Disc
+		i(51261, {	-- Sanctified Crimson Acolyte Hood (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
+				{ "i", 51178, 1 },	-- Sanctified Crimson Acolyte Hood
+			},
+		}),
+		i(51264, {	-- Sanctified Crimson Acolyte Shoulderpads (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
+				{ "i", 51175, 1 },	-- Sanctified Crimson Acolyte Shoulderpads
+			},
+		}),
+		i(51260, {	-- Sanctified Crimson Acolyte Gloves (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
+				{ "i", 51179, 1 },	-- Sanctified Crimson Acolyte Gloves
+			},
+		}),
+		i(51263, {	-- Sanctified Crimson Acolyte Robe (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
+				{ "i", 51176, 1 },	-- Sanctified Crimson Acolyte Robe
+			},
+		}),
+		i(51262, {	-- Sanctified Crimson Acolyte Leggings (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
+				{ "i", 51177, 1 },	-- Sanctified Crimson Acolyte Leggings
+			},
+		}),
+		
+		-- Shadow
+		i(51255, {	-- Sanctified Crimson Acolyte Cowl (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
+				{ "i", 51184, 1 },	-- Sanctified Crimson Acolyte Cowl
+			},
+		}),
+		i(51257, {	-- Sanctified Crimson Acolyte Mantle (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
+				{ "i", 51182, 1 },	-- Sanctified Crimson Acolyte Mantle
+			},
+		}),
+		i(51256, {	-- Sanctified Crimson Acolyte Handwraps (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
+				{ "i", 51183, 1 },	-- Sanctified Crimson Acolyte Handwraps
+			},
+		}),
+		i(51259, {	-- Sanctified Crimson Acolyte Raiments (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
+				{ "i", 51180, 1 },	-- Sanctified Crimson Acolyte Raiments
+			},
+		}),
+		i(51258, {	-- Sanctified Crimson Acolyte Pants (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
+				{ "i", 51181, 1 },	-- Sanctified Crimson Acolyte Pants
+			},
+		}),
+	},
+	["ROGUE"] = {
+		i(51252, {	-- Sanctified Shadowblade Helmet (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51187, 1 },	-- Sanctified Shadowblade Helmet
+			},
+		}),
+		i(51254, {	-- Sanctified Shadowblade Pauldrons (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51185, 1 },	-- Sanctified Shadowblade Pauldrons
+			},
+		}),
+		i(51251, {	-- Sanctified Shadowblade Gauntlets (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51188, 1 },	-- Sanctified Shadowblade Gauntlets
+			},
+		}),
+		i(51250, {	-- Sanctified Shadowblade Breastplate (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51189, 1 },	-- Sanctified Shadowblade Breastplate
+			},
+		}),
+		i(51253, {	-- Sanctified Shadowblade Legplates (H)
+			["cost"] = {
+				{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
+				{ "i", 51186, 1 },	-- Sanctified Shadowblade Legplates
+			},
+		}),
+	},
+	["SHAMAN"] = {
+		-- Elemental
+		i(51237, {	-- Sanctified Frost Witch's Helm (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51202, 1 },	-- Sanctified Frost Witch's Helm
+			},
+		}),
+		i(51235, {	-- Sanctified Frost Witch's Shoulderpads (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51204, 1 },	-- Sanctified Frost Witch's Shoulderpads
+			},
+		}),
+		i(51238, {	-- Sanctified Frost Witch's Gloves (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51201, 1 },	-- Sanctified Frost Witch's Gloves
+			},
+		}),
+		i(51239, {	-- Sanctified Frost Witch's Hauberk (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51200, 1 },	-- Sanctified Frost Witch's Hauberk
+			},
+		}),
+		i(51236, {	-- Sanctified Frost Witch's Kilt (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51203, 1 },	-- Sanctified Frost Witch's Kilt
+			},
+		}),
+		
+		-- Enhancement
+		i(51242, {	-- Sanctified Frost Witch's Faceguard (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51197, 1 },	-- Sanctified Frost Witch's Faceguard
+			},
+		}),
+		i(51240, {	-- Sanctified Frost Witch's Shoulderguards (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51199, 1 },	-- Sanctified Frost Witch's Shoulderguards
+			},
+		}),
+		i(51243, {	-- Sanctified Frost Witch's Grips (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51196, 1 },	-- Sanctified Frost Witch's Grips
+			},
+		}),
+		i(51244, {	-- Sanctified Frost Witch's Chestguard (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51195, 1 },	-- Sanctified Frost Witch's Chestguard
+			},
+		}),
+		i(51241, {	-- Sanctified Frost Witch's War-Kilt (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51198, 1 },	-- Sanctified Frost Witch's War-Kilt
+			},
+		}),
+		
+		-- Restoration
+		i(51247, {	-- Sanctified Frost Witch's Headpiece (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51192, 1 },	-- Sanctified Frost Witch's Headpiece
+			},
+		}),
+		i(51245, {	-- Sanctified Frost Witch's Spaulders (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51194, 1 },	-- Sanctified Frost Witch's Spaulders
+			},
+		}),
+		i(51248, {	-- Sanctified Frost Witch's Handguards (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51191, 1 },	-- Sanctified Frost Witch's Handguards
+			},
+		}),
+		i(51249, {	-- Sanctified Frost Witch's Tunic (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51190, 1 },	-- Sanctified Frost Witch's Tunic
+			},
+		}),
+		i(51246, {	-- Sanctified Frost Witch's Legguards (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51193, 1 },	-- Sanctified Frost Witch's Legguards
+			},
+		}),
+	},
+	["WARLOCK"] = {
+		i(51231, {	-- Sanctified Dark Coven Hood (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
+				{ "i", 51208, 1 },	-- Sanctified Dark Coven Hood
+			},
+		}),
+		i(51234, {	-- Sanctified Dark Coven Shoulderpads (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
+				{ "i", 51205, 1 },	-- Sanctified Dark Coven Shoulderpads
+			},
+		}),
+		i(51230, {	-- Sanctified Dark Coven Gloves (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
+				{ "i", 51209, 1 },	-- Sanctified Dark Coven Gloves
+			},
+		}),
+		i(51233, {	-- Sanctified Dark Coven Robe (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
+				{ "i", 51206, 1 },	-- Sanctified Dark Coven Robe
+			},
+		}),
+		i(51232, {	-- Sanctified Dark Coven Leggings (H)
+			["cost"] = {
+				{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
+				{ "i", 51207, 1 },	-- Sanctified Dark Coven Leggings
+			},
+		}),
+	},
+	["WARRIOR"] = {
+		-- Arms/Fury
+		i(51227, {	-- Sanctified Ymirjar Lord's Helmet (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51212, 1 },	-- Sanctified Ymirjar Lord's Helmet
+			},
+		}),
+		i(51229, {	-- Sanctified Ymirjar Lord's Shoulderplates (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51210, 1 },	-- Sanctified Ymirjar Lord's Shoulderplates
+			},
+		}),
+		i(51226, {	-- Sanctified Ymirjar Lord's Gauntlets (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51213, 1 },	-- Sanctified Ymirjar Lord's Gauntlets
+			},
+		}),
+		i(51225, {	-- Sanctified Ymirjar Lord's Battleplate (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51214, 1 },	-- Sanctified Ymirjar Lord's Battleplate
+			},
+		}),
+		i(51228, {	-- Sanctified Ymirjar Lord's Legplates (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51211, 1 },	-- Sanctified Ymirjar Lord's Legplates
+			},
+		}),
+		
+		-- Tank
+		i(51221, {	-- Sanctified Ymirjar Lord's Greathelm (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51218, 1 },	-- Sanctified Ymirjar Lord's Greathelm
+			},
+		}),
+		i(51224, {	-- Sanctified Ymirjar Lord's Pauldrons (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51215, 1 },	-- Sanctified Ymirjar Lord's Pauldrons
+			},
+		}),
+		i(51222, {	-- Sanctified Ymirjar Lord's Handguards (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51217, 1 },	-- Sanctified Ymirjar Lord's Handguards
+			},
+		}),
+		i(51220, {	-- Sanctified Ymirjar Lord's Breastplate (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51219, 1 },	-- Sanctified Ymirjar Lord's Breastplate
+			},
+		}),
+		i(51223, {	-- Sanctified Ymirjar Lord's Legguards (H)
+			["cost"] = {
+				{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 51216, 1 },	-- Sanctified Ymirjar Lord's Legguards
+			},
+		}),
+	},
+};
+for key,g in pairs(TIER_TEN_HEROIC_GROUPS) do
+	applyclassicphase(WRATH_PHASE_FOUR, g);
+end
+
+local TIER_TEN_NORMAL_GROUPS = {
+	["DEATHKNIGHT"] = {
+		-- DPS
+		i(51127, {	-- Sanctified Scourgelord Helmet (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 50096, 1 },	-- Scourgelord Helmet
+			},
+		}),
+		i(51125, {	-- Sanctified Scourgelord Shoulderplates (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 50098, 1 },	-- Scourgelord Shoulderplates
+			},
+		}),
+		i(51128, {	-- Sanctified Scourgelord Gauntlets (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 50095, 1 },	-- Scourgelord Gauntlets
+			},
+		}),
+		i(51129, {	-- Sanctified Scourgelord Battleplate (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 50094, 1 },	-- Scourgelord Battleplate
+			},
+		}),
+		i(51126, {	-- Sanctified Scourgelord Legplates (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 50097, 1 },	-- Scourgelord Legplates
+			},
+		}),
+		
+		-- Tank
+		i(51133, {	-- Sanctified Scourgelord Faceguard (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 50855, 1 },	-- Scourgelord Faceguard
+			},
+		}),
+		i(51130, {	-- Sanctified Scourgelord Pauldrons (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 50853, 1 },	-- Scourgelord Pauldrons
+			},
+		}),
+		i(51132, {	-- Sanctified Scourgelord Handguards (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 50856, 1 },	-- Scourgelord Handguards
+			},
+		}),
+		i(51134, {	-- Sanctified Scourgelord Chestguard (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 50857, 1 },	-- Scourgelord Chestguard
+			},
+		}),
+		i(51131, {	-- Sanctified Scourgelord Legguards (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
+				{ "i", 50854, 1 },	-- Scourgelord Legguards
+			},
+		}),
+	},
+	["DRUID"] = {
+		-- Boomkin
+		i(51149, {	-- Sanctified Lasherweave Cover (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50821, 1 },	-- Lasherweave Cover
+			},
+		}),
+		i(51147, {	-- Sanctified Lasherweave Mantle (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50819, 1 },	-- Lasherweave Mantle
+			},
+		}),
+		i(51148, {	-- Sanctified Lasherweave Gloves (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50822, 1 },	-- Lasherweave Gloves
+			},
+		}),
+		i(51145, {	-- Sanctified Lasherweave Vestment (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50823, 1 },	-- Lasherweave Vestment
+			},
+		}),
+		i(51146, {	-- Sanctified Lasherweave Trousers (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50820, 1 },	-- Lasherweave Trousers
+			},
+		}),
+		
+		-- Feral
+		i(51143, {	-- Sanctified Lasherweave Headguard (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50826, 1 },	-- Lasherweave Headguard
+			},
+		}),
+		i(51140, {	-- Sanctified Lasherweave Shoulderpads (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50824, 1 },	-- Lasherweave Shoulderpads
+			},
+		}),
+		i(51144, {	-- Sanctified Lasherweave Handgrips (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50827, 1 },	-- Lasherweave Handgrips
+			},
+		}),
+		i(51141, {	-- Sanctified Lasherweave Raiment (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50828, 1 },	-- Lasherweave Raiment
+			},
+		}),
+		i(51142, {	-- Sanctified Lasherweave Legguards (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50825, 1 },	-- Lasherweave Legguards
+			},
+		}),
+		
+		-- Restoration
+		i(51137, {	-- Sanctified Lasherweave Helmet (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50108, 1 },	-- Lasherweave Helmet
+			},
+		}),
+		i(51135, {	-- Sanctified Lasherweave Pauldrons (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50113, 1 },	-- Lasherweave Pauldrons
+			},
+		}),
+		i(51139, {	-- Sanctified Lasherweave Robes (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50106, 1 },	-- Lasherweave Robes
+			},
+		}),
+		i(51138, {	-- Sanctified Lasherweave Gauntlets (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50107, 1 },	-- Lasherweave Gauntlets
+			},
+		}),
+		i(51136, {	-- Sanctified Lasherweave Legplates (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50109, 1 },	-- Lasherweave Legplates
+			},
+		}),
+	},
+	["HUNTER"] = {
+		i(51153, {	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50115, 1 },	-- Ahn'Kahar Blood Hunter's Headpiece
+			},
+		}),
+		i(51151, {	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50117, 1 },	-- Ahn'Kahar Blood Hunter's Spaulders
+			},
+		}),
+		i(51154, {	-- Sanctified Ahn'Kahar Blood Hunter's Handguards (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50114, 1 },	-- Ahn'Kahar Blood Hunter's Handguards
+			},
+		}),
+		i(51150, {	-- Sanctified Ahn'Kahar Blood Hunter's Tunic (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50118, 1 },	-- Ahn'Kahar Blood Hunter's Tunic
+			},
+		}),
+		i(51152, {	-- Sanctified Ahn'Kahar Blood Hunter's Legguards (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50116, 1 },	-- Ahn'Kahar Blood Hunter's Legguards
+			},
+		}),
+	},
+	["MAGE"] = {
+		i(51158, {	-- Sanctified Bloodmage Hood (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50276, 1 },	-- Bloodmage Hood
+			},
+		}),
+		i(51155, {	-- Sanctified Bloodmage Shoulderpads (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50279, 1 },	-- Bloodmage Shoulderpads
+			},
+		}),
+		i(51159, {	-- Sanctified Bloodmage Gloves (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50275, 1 },	-- Bloodmage Gloves
+			},
+		}),
+		i(51156, {	-- Sanctified Bloodmage Robe (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50278, 1 },	-- Bloodmage Robe
+			},
+		}),
+		i(51157, {	-- Sanctified Bloodmage Leggings (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50277, 1 },	-- Bloodmage Leggings
+			},
+		}),
+	},
+	["PALADIN"] = {
+		-- Holy
+		i(51167, {	-- Sanctified Lightsworn Headpiece (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 50867, 1 },	-- Lightsworn Headpiece
+			},
+		}),
+		i(51166, {	-- Sanctified Lightsworn Spaulders (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 50865, 1 },	-- Lightsworn Spaulders
+			},
+		}),
+		i(51169, {	-- Sanctified Lightsworn Gloves (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 50868, 1 },	-- Lightsworn Gloves
+			},
+		}),
+		i(51168, {	-- Sanctified Lightsworn Greaves (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 50866, 1 },	-- Lightsworn Greaves
+			},
+		}),
+		i(51165, {	-- Sanctified Lightsworn Tunic (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 50869, 1 },	-- Lightsworn Tunic
+			},
+		}),
+		
+		-- Protection
+		i(51173, {	-- Sanctified Lightsworn Faceguard (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 50862, 1 },	-- Lightsworn Faceguard
+			},
+		}),
+		i(51170, {	-- Sanctified Lightsworn Shoulderguards (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 50860, 1 },	-- Lightsworn Shoulderguards
+			},
+		}),
+		i(51172, {	-- Sanctified Lightsworn Handguards (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 50863, 1 },	-- Lightsworn Handguards
+			},
+		}),
+		i(51174, {	-- Sanctified Lightsworn Chestguard (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 50864, 1 },	-- Lightsworn Chestguard
+			},
+		}),
+		i(51171, {	-- Sanctified Lightsworn Legguards (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 50861, 1 },	-- Lightsworn Legguards
+			},
+		}),
+		
+		-- Retribution
+		i(51162, {	-- Sanctified Lightsworn Helmet (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 50326, 1 },	-- Lightsworn Helmet
+			},
+		}),
+		i(51160, {	-- Sanctified Lightsworn Shoulderplates (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 50324, 1 },	-- Lightsworn Shoulderplates
+			},
+		}),
+		i(51163, {	-- Sanctified Lightsworn Gauntlets (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 50327, 1 },	-- Lightsworn Gauntlets
+			},
+		}),
+		i(51164, {	-- Sanctified Lightsworn Battleplate (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 50328, 1 },	-- Lightsworn Battleplate
+			},
+		}),
+		i(51161, {	-- Sanctified Lightsworn Legplates (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
+				{ "i", 50325, 1 },	-- Lightsworn Legplates
+			},
+		}),
+	},
+	["PRIEST"] = {
+		-- Holy/Disc
+		i(51178, {	-- Sanctified Crimson Acolyte Hood (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
+				{ "i", 50765, 1 },	-- Crimson Acolyte Hood
+			},
+		}),
+		i(51175, {	-- Sanctified Crimson Acolyte Shoulderpads (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
+				{ "i", 50767, 1 },	-- Crimson Acolyte Shoulderpads
+			},
+		}),
+		i(51179, {	-- Sanctified Crimson Acolyte Gloves (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
+				{ "i", 50766, 1 },	-- Crimson Acolyte Gloves
+			},
+		}),
+		i(51176, {	-- Sanctified Crimson Acolyte Robe (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
+				{ "i", 50768, 1 },	-- Crimson Acolyte Robe
+			},
+		}),
+		i(51177, {	-- Sanctified Crimson Acolyte Leggings (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
+				{ "i", 50769, 1 },	-- Crimson Acolyte Leggings
+			},
+		}),
+		
+		-- Shadow
+		i(51184, {	-- Sanctified Crimson Acolyte Cowl (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
+				{ "i", 50392, 1 },	-- Crimson Acolyte Cowl
+			},
+		}),
+		i(51182, {	-- Sanctified Crimson Acolyte Mantle (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
+				{ "i", 50396, 1 },	-- Crimson Acolyte Mantle
+			},
+		}),
+		i(51183, {	-- Sanctified Crimson Acolyte Handwraps (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
+				{ "i", 50391, 1 },	-- Crimson Acolyte Handwraps
+			},
+		}),
+		i(51180, {	-- Sanctified Crimson Acolyte Raiments (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
+				{ "i", 50394, 1 },	-- Crimson Acolyte Raiments
+			},
+		}),
+		i(51181, {	-- Sanctified Crimson Acolyte Pants (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
+				{ "i", 50393, 1 },	-- Crimson Acolyte Pants
+			},
+		}),
+	},
+	["ROGUE"] = {
+		i(51187, {	-- Sanctified Shadowblade Helmet (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50089, 1 },	-- Shadowblade Helmet
+			},
+		}),
+		i(51185, {	-- Sanctified Shadowblade Pauldrons (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50105, 1 },	-- Shadowblade Pauldrons
+			},
+		}),
+		i(51188, {	-- Sanctified Shadowblade Gauntlets (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50088, 1 },	-- Shadowblade Gauntlets
+			},
+		}),
+		i(51189, {	-- Sanctified Shadowblade Breastplate (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50087, 1 },	-- Shadowblade Breastplate
+			},
+		}),
+		i(51186, {	-- Sanctified Shadowblade Legplates (N)
+			["cost"] = {
+				{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
+				{ "i", 50090, 1 },	-- Shadowblade Legplates
+			},
+		}),
+	},
+	["SHAMAN"] = {
+		-- Elemental
+		i(51202, {	-- Sanctified Frost Witch's Helm (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50843, 1 },	-- Frost Witch's Helm
+			},
+		}),
+		i(51204, {	-- Sanctified Frost Witch's Shoulderpads (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50845, 1 },	-- Frost Witch's Shoulderpads
+			},
+		}),
+		i(51201, {	-- Sanctified Frost Witch's Gloves (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50842, 1 },	-- Frost Witch's Gloves
+			},
+		}),
+		i(51200, {	-- Sanctified Frost Witch's Hauberk (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50841, 1 },	-- Frost Witch's Hauberk
+			},
+		}),
+		i(51203, {	-- Sanctified Frost Witch's Kilt (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50844, 1 },	-- Frost Witch's Kilt
+			},
+		}),
+		
+		-- Enhancement
+		i(51197, {	-- Sanctified Frost Witch's Faceguard (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50832, 1 },	-- Frost Witch's Faceguard
+			},
+		}),
+		i(51199, {	-- Sanctified Frost Witch's Shoulderguards (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50834, 1 },	-- Frost Witch's Shoulderguards
+			},
+		}),
+		i(51196, {	-- Sanctified Frost Witch's Grips (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50831, 1 },	-- Frost Witch's Grips
+			},
+		}),
+		i(51195, {	-- Sanctified Frost Witch's Chestguard (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50830, 1 },	-- Frost Witch's Chestguard
+			},
+		}),
+		i(51198, {	-- Sanctified Frost Witch's War-Kilt (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50833, 1 },	-- Frost Witch's War-Kilt
+			},
+		}),
+		
+		-- Restoration
+		i(51192, {	-- Sanctified Frost Witch's Headpiece (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50837, 1 },	-- Frost Witch's Headpiece
+			},
+		}),
+		i(51194, {	-- Sanctified Frost Witch's Spaulders (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50839, 1 },	-- Frost Witch's Spaulders
+			},
+		}),
+		i(51191, {	-- Sanctified Frost Witch's Handguards (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50836, 1 },	-- Frost Witch's Handguards
+			},
+		}),
+		i(51190, {	-- Sanctified Frost Witch's Tunic (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50835, 1 },	-- Frost Witch's Tunic
+			},
+		}),
+		i(51193, {	-- Sanctified Frost Witch's Legguards (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50838, 1 },	-- Frost Witch's Legguards
+			},
+		}),
+	},
+	["WARLOCK"] = {
+		i(51208, {	-- Sanctified Dark Coven Hood (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
+				{ "i", 50241, 1 },	-- Dark Coven Hood
+			},
+		}),
+		i(51205, {	-- Sanctified Dark Coven Shoulderpads (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
+				{ "i", 50244, 1 },	-- Dark Coven Shoulderpads
+			},
+		}),
+		i(51209, {	-- Sanctified Dark Coven Gloves (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
+				{ "i", 50240, 1 },	-- Dark Coven Gloves
+			},
+		}),
+		i(51206, {	-- Sanctified Dark Coven Robe (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
+				{ "i", 50243, 1 },	-- Dark Coven Robe
+			},
+		}),
+		i(51207, {	-- Sanctified Dark Coven Leggings (N)
+			["cost"] = {
+				{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
+				{ "i", 50242, 1 },	-- Dark Coven Leggings
+			},
+		}),
+	},
+	["WARRIOR"] = {
+		-- Arms/Fury
+		i(51212, {	-- Sanctified Ymirjar Lord's Helmet (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50080, 1 },	-- Ymirjar Lord's Helmet
+			},
+		}),
+		i(51210, {	-- Sanctified Ymirjar Lord's Shoulderplates (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50082, 1 },	-- Ymirjar Lord's Shoulderplates
+			},
+		}),
+		i(51213, {	-- Sanctified Ymirjar Lord's Gauntlets (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50079, 1 },	-- Ymirjar Lord's Gauntlets
+			},
+		}),
+		i(51214, {	-- Sanctified Ymirjar Lord's Battleplate (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50078, 1 },	-- Ymirjar Lord's Battleplate
+			},
+		}),
+		i(51211, {	-- Sanctified Ymirjar Lord's Legplates (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50081, 1 },	-- Ymirjar Lord's Legplates
+			},
+		}),
+		
+		-- Tank
+		i(51218, {	-- Sanctified Ymirjar Lord's Greathelm (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50848, 1 },	-- Ymirjar Lord's Greathelm
+			},
+		}),
+		i(51215, {	-- Sanctified Ymirjar Lord's Pauldrons (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50846, 1 },	-- Ymirjar Lord's Pauldrons
+			},
+		}),
+		i(51217, {	-- Sanctified Ymirjar Lord's Handguards (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50849, 1 },	-- Ymirjar Lord's Handguards
+			},
+		}),
+		i(51219, {	-- Sanctified Ymirjar Lord's Breastplate (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50850, 1 },	-- Ymirjar Lord's Breastplate
+			},
+		}),
+		i(51216, {	-- Sanctified Ymirjar Lord's Legguards (N)
+			["cost"] = {
+				{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
+				{ "i", 50847, 1 },	-- Ymirjar Lord's Legguards
+			},
+		}),
+	},
+};
+for key,g in pairs(TIER_TEN_NORMAL_GROUPS) do
+	applyclassicphase(WRATH_PHASE_FOUR, g);
+end
+
+local TIER_TEN_GROUPS = {
+	["DEATHKNIGHT"] = {
+		-- DPS
+		emof(95, i(50096)),	-- Scourgelord Helmet
+		emof(60, i(50098)),	-- Scourgelord Shoulderplates
+		emof(60, i(50095)),	-- Scourgelord Gauntlets
+		emof(95, i(50094)),	-- Scourgelord Battleplate
+		emof(95, i(50097)),	-- Scourgelord Legplates
+		
+		-- Tank
+		emof(95, i(50855)),	-- Scourgelord Faceguard
+		emof(60, i(50853)),	-- Scourgelord Pauldrons
+		emof(60, i(50856)),	-- Scourgelord Handguards
+		emof(95, i(50857)),	-- Scourgelord Chestguard
+		emof(95, i(50854)),	-- Scourgelord Legguards
+	},
+	["DRUID"] = {
+		-- Boomkin
+		emof(95, i(50821)),	-- Lasherweave Cover
+		emof(60, i(50819)),	-- Lasherweave Mantle
+		emof(60, i(50822)),	-- Lasherweave Gloves
+		emof(95, i(50823)),	-- Lasherweave Vestment
+		emof(95, i(50820)),	-- Lasherweave Trousers
+		
+		-- Feral
+		emof(95, i(50826)),	-- Lasherweave Headguard
+		emof(60, i(50824)),	-- Lasherweave Shoulderpads
+		emof(60, i(50827)),	-- Lasherweave Handgrips
+		emof(95, i(50828)),	-- Lasherweave Raiment
+		emof(95, i(50825)),	-- Lasherweave Legguards
+		
+		-- Restoration
+		emof(95, i(50108)),	-- Lasherweave Helmet
+		emof(60, i(50113)),	-- Lasherweave Pauldrons
+		emof(60, i(50107)),	-- Lasherweave Gauntlets
+		emof(95, i(50106)),	-- Lasherweave Robes
+		emof(95, i(50109)),	-- Lasherweave Legplates
+	},
+	["HUNTER"] = {
+		emof(95, i(50115)),	-- Ahn'Kahar Blood Hunter's Headpiece
+		emof(60, i(50117)),	-- Ahn'Kahar Blood Hunter's Spaulders
+		emof(60, i(50114)),	-- Ahn'Kahar Blood Hunter's Handguards
+		emof(95, i(50118)),	-- Ahn'Kahar Blood Hunter's Tunic
+		emof(95, i(50116)),	-- Ahn'Kahar Blood Hunter's Legguards
+	},
+	["MAGE"] = {
+		emof(95, i(50276)),	-- Bloodmage Hood
+		emof(60, i(50279)),	-- Bloodmage Shoulderpads
+		emof(60, i(50275)),	-- Bloodmage Gloves
+		emof(95, i(50278)),	-- Bloodmage Robe
+		emof(95, i(50277)),	-- Bloodmage Leggings
+	},
+	["PALADIN"] = {
+		-- Holy
+		emof(95, i(50867)),	-- Lightsworn Headpiece
+		emof(60, i(50865)),	-- Lightsworn Spaulders
+		emof(60, i(50868)),	-- Lightsworn Gloves
+		emof(95, i(50869)),	-- Lightsworn Tunic
+		emof(95, i(50866)),	-- Lightsworn Greaves
+		
+		-- Protection
+		emof(95, i(50862)),	-- Lightsworn Faceguard
+		emof(60, i(50860)),	-- Lightsworn Shoulderguards
+		emof(60, i(50863)),	-- Lightsworn Handguards
+		emof(95, i(50864)),	-- Lightsworn Chestguard
+		emof(95, i(50861)),	-- Lightsworn Legguards
+		
+		-- Retribution
+		emof(95, i(50326)),	-- Lightsworn Helmet
+		emof(60, i(50324)),	-- Lightsworn Shoulderplates
+		emof(60, i(50327)),	-- Lightsworn Gauntlets
+		emof(95, i(50328)),	-- Lightsworn Battleplate
+		emof(95, i(50325)),	-- Lightsworn Legplates
+	},
+	["PRIEST"] = {
+		-- Holy/Disc
+		emof(95, i(50765)),	-- Crimson Acolyte Hood
+		emof(60, i(50767)),	-- Crimson Acolyte Shoulderpads
+		emof(60, i(50766)),	-- Crimson Acolyte Gloves
+		emof(95, i(50768)),	-- Crimson Acolyte Robe
+		emof(95, i(50769)),	-- Crimson Acolyte Leggings
+		
+		-- Shadow
+		emof(95, i(50392)),	-- Crimson Acolyte Cowl
+		emof(60, i(50396)),	-- Crimson Acolyte Mantle
+		emof(60, i(50391)),	-- Crimson Acolyte Handwraps
+		emof(95, i(50394)),	-- Crimson Acolyte Raiments
+		emof(95, i(50393)),	-- Crimson Acolyte Pants
+	},
+	["ROGUE"] = {
+		emof(95, i(50089)),	-- Shadowblade Helmet
+		emof(60, i(50105)),	-- Shadowblade Pauldrons
+		emof(60, i(50088)),	-- Shadowblade Gauntlets
+		emof(95, i(50087)),	-- Shadowblade Breastplate
+		emof(95, i(50090)),	-- Shadowblade Legplates
+	},
+	["SHAMAN"] = {
+		-- Elemental
+		emof(95, i(50843)),	-- Frost Witch's Helm
+		emof(60, i(50845)),	-- Frost Witch's Shoulderpads
+		emof(60, i(50842)),	-- Frost Witch's Gloves
+		emof(95, i(50841)),	-- Frost Witch's Hauberk
+		emof(95, i(50844)),	-- Frost Witch's Kilt
+		
+		-- Enhancement
+		emof(95, i(50832)),	-- Frost Witch's Faceguard
+		emof(60, i(50834)),	-- Frost Witch's Shoulderguards
+		emof(60, i(50831)),	-- Frost Witch's Grips
+		emof(95, i(50830)),	-- Frost Witch's Chestguard
+		emof(95, i(50833)),	-- Frost Witch's War-Kilt
+		
+		-- Restoration
+		emof(95, i(50837)),	-- Frost Witch's Headpiece
+		emof(60, i(50839)),	-- Frost Witch's Spaulders
+		emof(60, i(50836)),	-- Frost Witch's Handguards
+		emof(95, i(50835)),	-- Frost Witch's Tunic
+		emof(95, i(50838)),	-- Frost Witch's Legguards
+	},
+	["WARLOCK"] = {
+		emof(95, i(50241)),	-- Dark Coven Hood
+		emof(60, i(50244)),	-- Dark Coven Shoulderpads
+		emof(60, i(50240)),	-- Dark Coven Gloves
+		emof(95, i(50243)),	-- Dark Coven Robe
+		emof(95, i(50242)),	-- Dark Coven Leggings
+	},
+	["WARRIOR"] = {
+		-- Arms/Fury
+		emof(95, i(50080)),	-- Ymirjar Lord's Helmet
+		emof(60, i(50082)),	-- Ymirjar Lord's Shoulderplates
+		emof(60, i(50079)),	-- Ymirjar Lord's Gauntlets
+		emof(95, i(50078)),	-- Ymirjar Lord's Battleplate
+		emof(95, i(50081)),	-- Ymirjar Lord's Legplates
+		
+		-- Tank
+		emof(95, i(50848)),	-- Ymirjar Lord's Greathelm
+		emof(60, i(50846)),	-- Ymirjar Lord's Pauldrons
+		emof(60, i(50849)),	-- Ymirjar Lord's Handguards
+		emof(95, i(50850)),	-- Ymirjar Lord's Breastplate
+		emof(95, i(50847)),	-- Ymirjar Lord's Legguards
+	},
+};
+for key,g in pairs(TIER_TEN_GROUPS) do
+	applyclassicphase(WRATH_PHASE_FOUR, g);
+end
+
+local TIER_NINE_GROUPS = {
+	["DEATHKNIGHT_A"] = {
+		-- Alliance
+		-- DPS
+		emot(50, a(i(48472))),	-- Thassarian's Helmet of Conquest
+		emot(30, a(i(48478))),	-- Thassarian's Shoulderplates of Conquest
+		emot(30, a(i(48480))),	-- Thassarian's Gauntlets of Conquest
+		emot(50, a(i(48474))),	-- Thassarian's Battleplate of Conquest
+		emot(50, a(i(48476))),	-- Thassarian's Legplates of Conquest
+		
+		-- Tank
+		emot(50, a(i(48529))),	-- Thassarian's Faceguard of Conquest
+		emot(30, a(i(48535))),	-- Thassarian's Pauldrons of Conquest
+		emot(30, a(i(48537))),	-- Thassarian's Handguards of Conquest
+		emot(50, a(i(48531))),	-- Thassarian's Chestguard of Conquest
+		emot(50, a(i(48533))),	-- Thassarian's Legguards of Conquest
+	},
+	["DEATHKNIGHT_H"] = {
+		-- DPS
+		emot(50, h(i(48503))),	-- Koltira's Helmet of Conquest
+		emot(30, h(i(48505))),	-- Koltira's Shoulderplates of Conquest
+		emot(30, h(i(48502))),	-- Koltira's Gauntlets of Conquest
+		emot(50, h(i(48501))),	-- Koltira's Battleplate of Conquest
+		emot(50, h(i(48504))),	-- Koltira's Legplates of Conquest
+		
+		-- Tank
+		emot(50, h(i(48560))),	-- Koltira's Faceguard of Conquest
+		emot(30, h(i(48562))),	-- Koltira's Pauldrons of Conquest
+		emot(30, h(i(48559))),	-- Koltira's Handguards of Conquest
+		emot(50, h(i(48558))),	-- Koltira's Chestguard of Conquest
+		emot(50, h(i(48561))),	-- Koltira's Legguards of Conquest
+	},
+	["DRUID"] = {
+		-- Alliance
+		-- Boomkin
+		emot(50, a(i(48158))),	-- Malfurion's Cover of Conquest
+		emot(30, a(i(48161))),	-- Malfurion's Mantle of Conquest
+		emot(30, a(i(48162))),	-- Malfurion's Gloves of Conquest
+		emot(50, a(i(48159))),	-- Malfurion's Vestments of Conquest
+		emot(50, a(i(48160))),	-- Malfurion's Trousers of Conquest
+		
+		-- Feral
+		emot(50, a(i(48214))),	-- Malfurion's Headguard of Conquest
+		emot(30, a(i(48217))),	-- Malfurion's Shoulderpads of Conquest
+		emot(30, a(i(48213))),	-- Malfurion's Handgrips of Conquest
+		emot(50, a(i(48216))),	-- Malfurion's Raiments of Conquest
+		emot(50, a(i(48215))),	-- Malfurion's Legguards of Conquest
+		
+		-- Restoration
+		emot(50, a(i(48102))),	-- Malfurion's Headpiece of Conquest
+		emot(30, a(i(48131))),	-- Malfurion's Spaulders of Conquest
+		emot(30, a(i(48132))),	-- Malfurion's Handguards of Conquest
+		emot(50, a(i(48129))),	-- Malfurion's Robe of Conquest
+		emot(50, a(i(48130))),	-- Malfurion's Leggings of Conquest
+		
+		-- Horde
+		-- Boomkin
+		emot(50, h(i(48184))),	-- Runetotem's Cover of Conquest
+		emot(30, h(i(48187))),	-- Runetotem's Mantle of Conquest
+		emot(30, h(i(48183))),	-- Runetotem's Gloves of Conquest
+		emot(50, h(i(48186))),	-- Runetotem's Vestments of Conquest
+		emot(50, h(i(48185))),	-- Runetotem's Trousers of Conquest
+		
+		-- Feral
+		emot(50, h(i(48188))),	-- Runetotem's Headguard of Conquest
+		emot(30, h(i(48191))),	-- Runetotem's Shoulderpads of Conquest
+		emot(30, h(i(48192))),	-- Runetotem's Handgrips of Conquest
+		emot(50, h(i(48189))),	-- Runetotem's Raiments of Conquest
+		emot(50, h(i(48190))),	-- Runetotem's Legguards of Conquest
+		
+		-- Restoration
+		emot(50, h(i(48154))),	-- Runetotem's Headpiece of Conquest
+		emot(30, h(i(48157))),	-- Runetotem's Spaulders of Conquest
+		emot(30, h(i(48153))),	-- Runetotem's Handguards of Conquest
+		emot(50, h(i(48156))),	-- Runetotem's Robe of Conquest
+		emot(50, h(i(48155))),	-- Runetotem's Leggings of Conquest
+	},
+	["HUNTER"] = {
+		emot(50, a(i(48250))),	-- Windrunner's Headpiece of Conquest (A)
+		emot(30, a(i(48253))),	-- Windrunner's Spaulders of Conquest (A)
+		emot(30, a(i(48254))),	-- Windrunner's Handguards of Conquest (A)
+		emot(50, a(i(48251))),	-- Windrunner's Tunic of Conquest (A)
+		emot(50, a(i(48252))),	-- Windrunner's Legguards of Conquest (A)
+		
+		emot(50, h(i(48277))),	-- Windrunner's Headpiece of Conquest (H)
+		emot(30, h(i(48279))),	-- Windrunner's Spaulders of Conquest (H)
+		emot(30, h(i(48276))),	-- Windrunner's Handguards of Conquest (H)
+		emot(50, h(i(48275))),	-- Windrunner's Tunic of Conquest (H)
+		emot(50, h(i(48278))),	-- Windrunner's Legguards of Conquest (H)
+	},
+	["MAGE"] = {
+		emot(50, a(i(47748))),	-- Khadgar's Hood of Conquest
+		emot(30, a(i(47751))),	-- Khadgar's Shoulderpads of Conquest
+		emot(30, a(i(47752))),	-- Khadgar's Gauntlets of Conquest
+		emot(50, a(i(47749))),	-- Khadgar's Robe of Conquest
+		emot(50, a(i(47750))),	-- Khadgar's Leggings of Conquest
+		
+		emot(50, h(i(47774))),	-- Sunstrider's Hood of Conquest
+		emot(30, h(i(47777))),	-- Sunstrider's Shoulderpads of Conquest
+		emot(30, h(i(47773))),	-- Sunstrider's Gauntlets of Conquest
+		emot(50, h(i(47776))),	-- Sunstrider's Robe of Conquest
+		emot(50, h(i(47775))),	-- Sunstrider's Leggings of Conquest
+	},
+	["PALADIN_A"] = {
+		-- Holy
+		emot(50, a(i(48564))),	-- Turalyon's Headpiece of Conquest
+		emot(30, a(i(48572))),	-- Turalyon's Spaulders of Conquest
+		emot(30, a(i(48574))),	-- Turalyon's Gloves of Conquest
+		emot(50, a(i(48566))),	-- Turalyon's Tunic of Conquest
+		emot(50, a(i(48568))),	-- Turalyon's Greaves of Conquest
+		
+		-- Protection
+		emot(50, a(i(48634))),	-- Turalyon's Faceguard of Conquest
+		emot(30, a(i(48636))),	-- Turalyon's Shoulderguards of Conquest
+		emot(30, a(i(48633))),	-- Turalyon's Handguards of Conquest
+		emot(50, a(i(48632))),	-- Turalyon's Breastplate of Conquest
+		emot(50, a(i(48635))),	-- Turalyon's Legguards of Conquest
+		
+		-- Retribution
+		emot(50, a(i(48604))),	-- Turalyon's Helm of Conquest
+		emot(30, a(i(48606))),	-- Turalyon's Shoulderplates of Conquest
+		emot(30, a(i(48603))),	-- Turalyon's Gauntlets of Conquest
+		emot(50, a(i(48602))),	-- Turalyon's Battleplate of Conquest
+		emot(50, a(i(48605))),	-- Turalyon's Legplates of Conquest
+	},
+	["PALADIN_H"] = {
+		-- Holy
+		emot(50, h(i(48597))),	-- Liadrin's Headpiece of Conquest
+		emot(30, h(i(48595))),	-- Liadrin's Spaulders of Conquest
+		emot(30, h(i(48598))),	-- Liadrin's Gloves of Conquest
+		emot(50, h(i(48599))),	-- Liadrin's Tunic of Conquest
+		emot(50, h(i(48596))),	-- Liadrin's Greaves of Conquest
+		
+		-- Protection
+		emot(50, h(i(48654))),	-- Liadrin's Faceguard of Conquest
+		emot(30, h(i(48656))),	-- Liadrin's Shoulderguards of Conquest
+		emot(30, h(i(48653))),	-- Liadrin's Handguards of Conquest
+		emot(50, h(i(48652))),	-- Liadrin's Breastplate of Conquest
+		emot(50, h(i(48655))),	-- Liadrin's Legguards of Conquest
+		
+		-- Retribution
+		emot(50, h(i(48629))),	-- Liadrin's Helm of Conquest
+		emot(30, h(i(48627))),	-- Liadrin's Shoulderplates of Conquest
+		emot(30, h(i(48630))),	-- Liadrin's Gauntlets of Conquest
+		emot(50, h(i(48631))),	-- Liadrin's Battleplate of Conquest
+		emot(50, h(i(48628))),	-- Liadrin's Legplates of Conquest
+	},
+	["PRIEST"] = {
+		-- Alliance
+		-- Holy/Disc
+		emot(50, a(i(47914))),	-- Velen's Cowl of Conquest
+		emot(30, a(i(47981))),	-- Velen's Shoulderpads of Conquest
+		emot(30, a(i(47982))),	-- Velen's Gloves of Conquest
+		emot(50, a(i(47936))),	-- Velen's Robe of Conquest
+		emot(50, a(i(47980))),	-- Velen's Leggings of Conquest
+		
+		-- Shadow
+		emot(50, a(i(48073))),	-- Velen's Circlet of Conquest
+		emot(30, a(i(48076))),	-- Velen's Mantle of Conquest
+		emot(30, a(i(48072))),	-- Velen's Handwraps of Conquest
+		emot(50, a(i(48075))),	-- Velen's Raiments of Conquest
+		emot(50, a(i(48074))),	-- Velen's Pants of Conquest
+		
+		-- Horde
+		-- Holy/Disc
+		emot(50, h(i(48068))),	-- Zabra's Cowl of Conquest
+		emot(30, h(i(48071))),	-- Zabra's Shoulderpads of Conquest
+		emot(30, h(i(48067))),	-- Zabra's Gloves of Conquest
+		emot(50, h(i(48070))),	-- Zabra's Robe of Conquest
+		emot(50, h(i(48069))),	-- Zabra's Leggings of Conquest
+		
+		-- Shadow
+		emot(50, h(i(48098))),	-- Zabra's Circlet of Conquest
+		emot(30, h(i(48101))),	-- Zabra's Mantle of Conquest
+		emot(30, h(i(48097))),	-- Zabra's Handwraps of Conquest
+		emot(50, h(i(48100))),	-- Zabra's Raiments of Conquest
+		emot(50, h(i(48099))),	-- Zabra's Pants of Conquest
+	},
+	["ROGUE"] = {
+		emot(50, h(i(48245))),	-- Garona's Helmet of Conquest
+		emot(30, h(i(48247))),	-- Garona's Pauldrons of Conquest
+		emot(30, h(i(48244))),	-- Garona's Gauntlets of Conquest
+		emot(50, h(i(48243))),	-- Garona's Breastplate of Conquest
+		emot(50, h(i(48246))),	-- Garona's Legplates of Conquest
+		
+		emot(50, a(i(48218))),	-- VanCleef's Helmet of Conquest
+		emot(30, a(i(48221))),	-- VanCleef's Pauldrons of Conquest
+		emot(30, a(i(48222))),	-- VanCleef's Gauntlets of Conquest
+		emot(50, a(i(48219))),	-- VanCleef's Breastplate of Conquest
+		emot(50, a(i(48220))),	-- VanCleef's Legplates of Conquest
+	},
+	["SHAMAN"] = {
+		-- Alliance
+		-- Elemental
+		emot(50, a(i(48313))),	-- Nobundo's Helm of Conquest
+		emot(30, a(i(48315))),	-- Nobundo's Shoulderpads of Conquest
+		emot(30, a(i(48312))),	-- Nobundo's Gloves of Conquest
+		emot(50, a(i(48310))),	-- Nobundo's Hauberk of Conquest
+		emot(50, a(i(48314))),	-- Nobundo's Kilt of Conquest
+		
+		-- Enhancement
+		emot(50, a(i(48343))),	-- Nobundo's Faceguard of Conquest
+		emot(30, a(i(48345))),	-- Nobundo's Shoulderguards of Conquest
+		emot(30, a(i(48342))),	-- Nobundo's Grips of Conquest
+		emot(50, a(i(48341))),	-- Nobundo's Chestguard of Conquest
+		emot(50, a(i(48344))),	-- Nobundo's War-Kilt of Conquest
+		
+		-- Restoration
+		emot(50, a(i(48280))),	-- Nobundo's Headpiece of Conquest
+		emot(30, a(i(48283))),	-- Nobundo's Spaulders of Conquest
+		emot(30, a(i(48284))),	-- Nobundo's Handguards of Conquest
+		emot(50, a(i(48281))),	-- Nobundo's Tunic of Conquest
+		emot(50, a(i(48282))),	-- Nobundo's Legguards of Conquest
+		
+		-- Horde
+		-- Elemental
+		emot(50, h(i(48338))),	-- Thrall's Helm of Conquest
+		emot(30, h(i(48340))),	-- Thrall's Shoulderpads of Conquest
+		emot(30, h(i(48337))),	-- Thrall's Gloves of Conquest
+		emot(50, h(i(48336))),	-- Thrall's Hauberk of Conquest
+		emot(50, h(i(48339))),	-- Thrall's Kilt of Conquest
+		
+		-- Enhancement
+		emot(50, h(i(48368))),	-- Thrall's Faceguard of Conquest
+		emot(30, h(i(48370))),	-- Thrall's Shoulderguards of Conquest
+		emot(30, h(i(48367))),	-- Thrall's Grips of Conquest
+		emot(50, h(i(48366))),	-- Thrall's Chestguard of Conquest
+		emot(50, h(i(48369))),	-- Thrall's War-Kilt of Conquest
+		
+		-- Restoration
+		emot(50, h(i(48297))),	-- Thrall's Headpiece of Conquest
+		emot(30, h(i(48299))),	-- Thrall's Spaulders of Conquest
+		emot(30, h(i(48296))),	-- Thrall's Handguards of Conquest
+		emot(50, h(i(48295))),	-- Thrall's Tunic of Conquest
+		emot(50, h(i(48298))),	-- Thrall's Legguards of Conquest
+	},
+	["WARLOCK"] = {
+		emot(50, h(i(47801))),	-- Gul'dan's Hood of Conquest
+		emot(30, h(i(47798))),	-- Gul'dan's Shoulderpads of Conquest
+		emot(30, h(i(47802))),	-- Gul'dan's Gloves of Conquest
+		emot(50, h(i(47799))),	-- Gul'dan's Robe of Conquest
+		emot(50, h(i(47800))),	-- Gul'dan's Leggings of Conquest
+		
+		emot(50, a(i(47784))),	-- Kel'Thuzad's Hood of Conquest
+		emot(30, a(i(47787))),	-- Kel'Thuzad's Shoulderpads of Conquest
+		emot(30, a(i(47783))),	-- Kel'Thuzad's Gloves of Conquest
+		emot(50, a(i(47786))),	-- Kel'Thuzad's Robe of Conquest
+		emot(50, a(i(47785))),	-- Kel'Thuzad's Leggings of Conquest
+	},
+	["WARRIOR_A"] = {
+		-- Arms/Fury
+		emot(50, a(i(48371))),	-- Wrynn's Helmet of Conquest
+		emot(30, a(i(48374))),	-- Wrynn's Shoulderplates of Conquest
+		emot(30, a(i(48375))),	-- Wrynn's Gauntlets of Conquest
+		emot(50, a(i(48372))),	-- Wrynn's Battleplate of Conquest
+		emot(50, a(i(48373))),	-- Wrynn's Legplates of Conquest
+		
+		-- Tank
+		emot(50, a(i(48429))),	-- Wrynn's Greathelm of Conquest
+		emot(30, a(i(48448))),	-- Wrynn's Pauldrons of Conquest
+		emot(30, a(i(48449))),	-- Wrynn's Handguards of Conquest
+		emot(50, a(i(48436))),	-- Wrynn's Breastplate of Conquest
+		emot(50, a(i(48445))),	-- Wrynn's Legguards of Conquest
+	},
+	["WARRIOR_H"] = {
+		-- Arms/Fury
+		emot(50, h(i(48388))),	-- Hellscream's Helmet of Conquest
+		emot(30, h(i(48390))),	-- Hellscream's Shoulderplates of Conquest
+		emot(30, h(i(48387))),	-- Hellscream's Gauntlets of Conquest
+		emot(50, h(i(48386))),	-- Hellscream's Battleplate of Conquest
+		emot(50, h(i(48389))),	-- Hellscream's Legplates of Conquest
+		
+		-- Tank
+		emot(50, h(i(48458))),	-- Hellscream's Greathelm of Conquest
+		emot(30, h(i(48460))),	-- Hellscream's Pauldrons of Conquest
+		emot(30, h(i(48457))),	-- Hellscream's Handguards of Conquest
+		emot(50, h(i(48456))),	-- Hellscream's Breastplate of Conquest
+		emot(50, h(i(48459))),	-- Hellscream's Legguards of Conquest
+	},
+};
+for key,g in pairs(TIER_NINE_GROUPS) do
+	applyclassicphase(WRATH_PHASE_THREE, g);
+end
+
+local TIER_EIGHT_HEROIC_GROUPS = {
+	["DEATHKNIGHT"] = {
+		-- DPS
+		i(46115, {	-- Conqueror's Darkruned Helmet
+			["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
+		}),
+		i(46117, {	-- Conqueror's Darkruned Shoulderplates
+			["cost"] = { { "i", 45658, 1 }, },	-- Mantle of the Wayward Vanquisher
+		}),
+		i(46113, {	-- Conqueror's Darkruned Gauntlets
+			["cost"] = { { "i", 45643, 1 }, },	-- Gauntlets of the Wayward Vanquisher
+		}),
+		i(46111, {	-- Conqueror's Darkruned Battleplate
+			["cost"] = { { "i", 45634, 1 }, },	-- Breastplate of the Wayward Vanquisher
+		}),
+		i(46116, {	-- Conqueror's Darkruned Legplates
+			["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
+		}),
+		
+		-- Tank
+		i(46120, {	-- Conqueror's Darkruned Faceguard
+			["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
+		}),
+		i(46122, {	-- Conqueror's Darkruned Pauldrons
+			["cost"] = { { "i", 45658, 1 }, },	-- Mantle of the Wayward Vanquisher
+		}),
+		i(46119, {	-- Conqueror's Darkruned Handguards
+			["cost"] = { { "i", 45643, 1 }, },	-- Gauntlets of the Wayward Vanquisher
+		}),
+		i(46118, {	-- Conqueror's Darkruned Chestguard
+			["cost"] = { { "i", 45634, 1 }, },	-- Breastplate of the Wayward Vanquisher
+		}),
+		i(46121, {	-- Conqueror's Darkruned Legguards
+			["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
+		}),
+	},
+	["DRUID"] = {
+		-- Boomkin
+		i(46191, {	-- Conqueror's Nightsong Cover
+			["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
+		}),
+		i(46196, {	-- Conqueror's Nightsong Mantle
+			["cost"] = { { "i", 45658, 1 }, },	-- Mantle of the Wayward Vanquisher
+		}),
+		i(46189, {	-- Conqueror's Nightsong Gloves
+			["cost"] = { { "i", 45643, 1 }, },	-- Gauntlets of the Wayward Vanquisher
+		}),
+		i(46194, {	-- Conqueror's Nightsong Vestments
+			["cost"] = { { "i", 45634, 1 }, },	-- Breastplate of the Wayward Vanquisher
+		}),
+		i(46192, {	-- Conqueror's Nightsong Trousers
+			["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
+		}),
+		
+		-- Feral
+		i(46161, {	-- Conqueror's Nightsong Headguard
+			["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
+		}),
+		i(46157, {	-- Conqueror's Nightsong Shoulderpads
+			["cost"] = { { "i", 45658, 1 }, },	-- Mantle of the Wayward Vanquisher
+		}),
+		i(46158, {	-- Conqueror's Nightsong Handgrips
+			["cost"] = { { "i", 45643, 1 }, },	-- Gauntlets of the Wayward Vanquisher
+		}),
+		i(46159, {	-- Conqueror's Nightsong Raiments
+			["cost"] = { { "i", 45634, 1 }, },	-- Breastplate of the Wayward Vanquisher
+		}),
+		i(46160, {	-- Conqueror's Nightsong Legguards
+			["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
+		}),
+		
+		-- Restoration
+		i(46184, {	-- Conqueror's Nightsong Headpiece
+			["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
+		}),
+		i(46187, {	-- Conqueror's Nightsong Spaulders
+			["cost"] = { { "i", 45658, 1 }, },	-- Mantle of the Wayward Vanquisher
+		}),
+		i(46183, {	-- Conqueror's Nightsong Handguards
+			["cost"] = { { "i", 45643, 1 }, },	-- Gauntlets of the Wayward Vanquisher
+		}),
+		i(46186, {	-- Conqueror's Nightsong Robe
+			["cost"] = { { "i", 45634, 1 }, },	-- Breastplate of the Wayward Vanquisher
+		}),
+		i(46185, {	-- Conqueror's Nightsong Leggings
+			["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
+		}),
+	},
+	["HUNTER"] = {
+		i(46143, {	-- Conqueror's Scourgestalker Headpiece
+			["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
+		}),
+		i(46145, {	-- Conqueror's Scourgestalker Spaulders
+			["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
+		}),
+		i(46141, {	-- Conqueror's Scourgestalker Tunic
+			["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
+		}),
+		i(46142, {	-- Conqueror's Scourgestalker Handguards
+			["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
+		}),
+		i(46144, {	-- Conqueror's Scourgestalker Legguards
+			["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
+		}),
+	},
+	["MAGE"] = {
+		i(46129, {	-- Conqueror's Kirin Tor Hood
+			["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
+		}),
+		i(46134, {	-- Conqueror's Kirin Tor Shoulderpads
+			["cost"] = { { "i", 45658, 1 }, },	-- Mantle of the Wayward Vanquisher
+		}),
+		i(46132, {	-- Conqueror's Kirin Tor Gauntlets
+			["cost"] = { { "i", 45643, 1 }, },	-- Gauntlets of the Wayward Vanquisher
+		}),
+		i(46130, {	-- Conqueror's Kirin Tor Tunic
+			["cost"] = { { "i", 45634, 1 }, },	-- Breastplate of the Wayward Vanquisher
+		}),
+		i(46133, {	-- Conqueror's Kirin Tor Leggings
+			["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
+		}),
+	},
+	["PALADIN"] = {
+		-- Holy
+		i(46180, {	-- Conqueror's Aegis Headpiece
+			["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
+		}),
+		i(46182, {	-- Conqueror's Aegis Spaulders
+			["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
+		}),
+		i(46179, {	-- Conqueror's Aegis Gloves
+			["cost"] = { { "i", 45641, 1 }, },	-- Gauntlets of the Wayward Conqueror
+		}),
+		i(46178, {	-- Conqueror's Aegis Tunic
+			["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
+		}),
+		i(46181, {	-- Conqueror's Aegis Greaves
+			["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
+		}),
+		
+		-- Protection
+		i(46175, {	-- Conqueror's Aegis Faceguard
+			["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
+		}),
+		i(46177, {	-- Conqueror's Aegis Shoulderguards
+			["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
+		}),
+		i(46174, {	-- Conqueror's Aegis Handguards
+			["cost"] = { { "i", 45641, 1 }, },	-- Gauntlets of the Wayward Conqueror
+		}),
+		i(46173, {	-- Conqueror's Aegis Breastplate
+			["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
+		}),
+		i(46176, {	-- Conqueror's Aegis Legguards
+			["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
+		}),
+		
+		-- Retribution
+		i(46156, {	-- Conqueror's Aegis Helm
+			["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
+		}),
+		i(46152, {	-- Conqueror's Aegis Shoulderplates
+			["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
+		}),
+		i(46155, {	-- Conqueror's Aegis Gauntlets
+			["cost"] = { { "i", 45641, 1 }, },	-- Gauntlets of the Wayward Conqueror
+		}),
+		i(46154, {	-- Conqueror's Aegis Battleplate
+			["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
+		}),
+		i(46153, {	-- Conqueror's Aegis Legplates
+			["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
+		}),
+	},
+	["PRIEST"] = {
+		-- Holy/Disc
+		i(46197, {	-- Conqueror's Cowl of Sanctification
+			["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
+		}),
+		i(46190, {	-- Conqueror's Shoulderpads of Sanctification
+			["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
+		}),
+		i(46188, {	-- Conqueror's Gloves of Sanctification
+			["cost"] = { { "i", 45641, 1 }, },	-- Gauntlets of the Wayward Conqueror
+		}),
+		i(46193, {	-- Conqueror's Robe of Sanctification
+			["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
+		}),
+		i(46195, {	-- Conqueror's Leggings of Sanctification
+			["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
+		}),
+		
+		-- Shadow
+		i(46172, {	-- Conqueror's Circlet of Sanctification
+			["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
+		}),
+		i(46165, {	-- Conqueror's Mantle of Sanctification
+			["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
+		}),
+		i(46163, {	-- Conqueror's Handwraps of Sanctification
+			["cost"] = { { "i", 45641, 1 }, },	-- Gauntlets of the Wayward Conqueror
+		}),
+		i(46168, {	-- Conqueror's Raiments of Sanctification
+			["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
+		}),
+		i(46170, {	-- Conqueror's Pants of Sanctification
+			["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
+		}),
+	},
+	["ROGUE"] = {
+		i(46125, {	-- Conqueror's Terrorblade Helmet
+			["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
+		}),
+		i(46127, {	-- Conqueror's Terrorblade Pauldrons
+			["cost"] = { { "i", 45658, 1 }, },	-- Mantle of the Wayward Vanquisher
+		}),
+		i(46124, {	-- Conqueror's Terrorblade Gauntlets
+			["cost"] = { { "i", 45643, 1 }, },	-- Gauntlets of the Wayward Vanquisher
+		}),
+		i(46123, {	-- Conqueror's Terrorblade Breastplate
+			["cost"] = { { "i", 45634, 1 }, },	-- Breastplate of the Wayward Vanquisher
+		}),
+		i(46126, {	-- Conqueror's Terrorblade Legplates
+			["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
+		}),
+	},
+	["SHAMAN"] = {
+		-- Elemental
+		i(46209, {	-- Conqueror's Worldbreaker Helm
+			["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
+		}),
+		i(46211, {	-- Conqueror's Worldbreaker Shoulderpads
+			["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
+		}),
+		i(46206, {	-- Conqueror's Worldbreaker Hauberk
+			["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
+		}),
+		i(46207, {	-- Conqueror's Worldbreaker Gloves
+			["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
+		}),
+		i(46210, {	-- Conqueror's Worldbreaker Kilt
+			["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
+		}),
+		
+		-- Enhancement
+		i(46212, {	-- Conqueror's Worldbreaker Faceguard
+			["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
+		}),
+		i(46203, {	-- Conqueror's Worldbreaker Shoulderguards
+			["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
+		}),
+		i(46205, {	-- Conqueror's Worldbreaker Chestguard
+			["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
+		}),
+		i(46200, {	-- Conqueror's Worldbreaker Grips
+			["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
+		}),
+		i(46208, {	-- Conqueror's Worldbreaker War-Kilt
+			["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
+		}),
+		
+		-- Restoration
+		i(46201, {	-- Conqueror's Worldbreaker Headpiece
+			["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
+		}),
+		i(46204, {	-- Conqueror's Worldbreaker Spaulders
+			["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
+		}),
+		i(46199, {	-- Conqueror's Worldbreaker Handguards
+			["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
+		}),
+		i(46198, {	-- Conqueror's Worldbreaker Tunic
+			["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
+		}),
+		i(46202, {	-- Conqueror's Worldbreaker Legguards
+			["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
+		}),
+	},
+	["WARLOCK"] = {
+		i(46140, {	-- Conqueror's Deathbringer Hood
+			["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
+		}),
+		i(46136, {	-- Conqueror's Deathbringer Shoulderpads
+			["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
+		}),
+		i(46135, {	-- Conqueror's Deathbringer Gloves
+			["cost"] = { { "i", 45641, 1 }, },	-- Gauntlets of the Wayward Conqueror
+		}),
+		i(46137, {	-- Conqueror's Deathbringer Robe
+			["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
+		}),
+		i(46139, {	-- Conqueror's Deathbringer Leggings
+			["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
+		}),
+	},
+	["WARRIOR"] = {
+		-- Arms/Fury
+		i(46151, {	-- Conqueror's Siegebreaker Helmet
+			["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
+		}),
+		i(46149, {	-- Conqueror's Siegebreaker Shoulderplates
+			["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
+		}),
+		i(46148, {	-- Conqueror's Siegebreaker Gauntlets
+			["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
+		}),
+		i(46146, {	-- Conqueror's Siegebreaker Battleplate
+			["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
+		}),
+		i(46150, {	-- Conqueror's Siegebreaker Legplates
+			["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
+		}),
+		
+		-- Tank
+		i(46166, {	-- Conqueror's Siegebreaker Greathelm
+			["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
+		}),
+		i(46167, {	-- Conqueror's Siegebreaker Pauldrons
+			["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
+		}),
+		i(46164, {	-- Conqueror's Siegebreaker Handguards
+			["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
+		}),
+		i(46162, {	-- Conqueror's Siegebreaker Breastplate
+			["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
+		}),
+		i(46169, {	-- Conqueror's Siegebreaker Legguards
+			["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
+		}),
+	},
+};
+for key,g in pairs(TIER_EIGHT_HEROIC_GROUPS) do
+	applyclassicphase(WRATH_PHASE_TWO, g);
+end
+
+local TIER_EIGHT_GROUPS = {
+	["DEATHKNIGHT"] = {
+		-- DPS
+		i(45342, {	-- Valorous Darkruned Helmet
+			["cost"] = { { "i", 45649, 1 }, },	-- Helm
+		}),
+		i(45344, {	-- Valorous Darkruned Shoulderplates
+			["cost"] = { { "i", 45661, 1 }, },	-- Spaulders
+		}),
+		i(45341, {	-- Valorous Darkruned Gauntlets
+			["cost"] = { { "i", 45646, 1 }, },	-- Gloves
+		}),
+		i(45340, {	-- Valorous Darkruned Battleplate
+			["cost"] = { { "i", 45637, 1 }, },	-- Chestguard of the Wayward Vanquisher
+		}),
+		i(45343, {	-- Valorous Darkruned Legplates
+			["cost"] = { { "i", 45652, 1 }, },	-- Leggings
+		}),
+		
+		-- Tank
+		i(45336, {	-- Valorous Darkruned Faceguard
+			["cost"] = { { "i", 45649, 1 }, },	-- Helm
+		}),
+		i(45339, {	-- Valorous Darkruned Pauldrons
+			["cost"] = { { "i", 45661, 1 }, },	-- Spaulders
+		}),
+		i(45337, {	-- Valorous Darkruned Handguards
+			["cost"] = { { "i", 45646, 1 }, },	-- Gloves
+		}),
+		i(45335, {	-- Valorous Darkruned Chestguard
+			["cost"] = { { "i", 45637, 1 }, },	-- Chestguard of the Wayward Vanquisher
+		}),
+		i(45338, {	-- Valorous Darkruned Legguards
+			["cost"] = { { "i", 45652, 1 }, },	-- Leggings
+		}),
+	},
+	["DRUID"] = {
+		-- Boomkin
+		i(46313, {	-- Valorous Nightsong Cover
+			["cost"] = { { "i", 45649, 1 }, },	-- Helm of the Wayward Vanquisher
+		}),
+		i(45352, {	-- Valorous Nightsong Mantle
+			["cost"] = { { "i", 45661, 1 }, },	-- Spaulders of the Wayward Vanquisher
+		}),
+		i(45351, {	-- Valorous Nightsong Gloves
+			["cost"] = { { "i", 45646, 1 }, },	-- Gloves of the Wayward Vanquisher
+		}),
+		i(45354, {	-- Valorous Nightsong Vestments
+			["cost"] = { { "i", 45637, 1 }, },	-- Chestguard of the Wayward Vanquisher
+		}),
+		i(45353, {	-- Valorous Nightsong Trousers
+			["cost"] = { { "i", 45652, 1 }, },	-- Leggings of the Wayward Vanquisher
+		}),
+		
+		-- Feral
+		i(45356, {	-- Valorous Nightsong Headguard
+			["cost"] = { { "i", 45649, 1 }, },	-- Helm of the Wayward Vanquisher
+		}),
+		i(45359, {	-- Valorous Nightsong Shoulderpads
+			["cost"] = { { "i", 45661, 1 }, },	-- Spaulders of the Wayward Vanquisher
+		}),
+		i(45355, {	-- Valorous Nightsong Handgrips
+			["cost"] = { { "i", 45646, 1 }, },	-- Gloves of the Wayward Vanquisher
+		}),
+		i(45358, {	-- Valorous Nightsong Raiments
+			["cost"] = { { "i", 45637, 1 }, },	-- Chestguard of the Wayward Vanquisher
+		}),
+		i(45357, {	-- Valorous Nightsong Legguards
+			["cost"] = { { "i", 45652, 1 }, },	-- Leggings of the Wayward Vanquisher
+		}),
+		
+		-- Restoration
+		i(45346, {	-- Valorous Nightsong Headpiece
+			["cost"] = { { "i", 45649, 1 }, },	-- Helm of the Wayward Vanquisher
+		}),
+		i(45349, {	-- Valorous Nightsong Spaulders
+			["cost"] = { { "i", 45661, 1 }, },	-- Spaulders of the Wayward Vanquisher
+		}),
+		i(45345, {	-- Valorous Nightsong Handguards
+			["cost"] = { { "i", 45646, 1 }, },	-- Gloves of the Wayward Vanquisher
+		}),
+		i(45348, {	-- Valorous Nightsong Robe
+			["cost"] = { { "i", 45637, 1 }, },	-- Chestguard of the Wayward Vanquisher
+		}),
+		i(45347, {	-- Valorous Nightsong Leggings
+			["cost"] = { { "i", 45652, 1 }, },	-- Leggings of the Wayward Vanquisher
+		}),
+	},
+	["HUNTER"] = {
+		i(45361, {	-- Valorous Scourgestalker Headpiece
+			["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
+		}),
+		i(45363, {	-- Valorous Scourgestalker Spaulders
+			["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
+		}),
+		i(45360, {	-- Valorous Scourgestalker Handguards
+			["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
+		}),
+		i(45364, {	-- Valorous Scourgestalker Tunic
+			["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
+		}),
+		i(45362, {	-- Valorous Scourgestalker Legguards
+			["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
+		}),
+	},
+	["MAGE"] = {
+		i(45365, {	-- Valorous Kirin Tor Hood
+			["cost"] = { { "i", 45649, 1 }, },	-- Helm of the Wayward Vanquisher
+		}),
+		i(45369, {	-- Valorous Kirin Tor Shoulderpads
+			["cost"] = { { "i", 45661, 1 }, },	-- Spaulders of the Wayward Vanquisher
+		}),
+		i(46131, {	-- Valorous Kirin Tor Gauntlets
+			["cost"] = { { "i", 45646, 1 }, },	-- Gloves of the Wayward Vanquisher
+		}),
+		i(45368, {	-- Valorous Kirin Tor Tunic
+			["cost"] = { { "i", 45637, 1 }, },	-- Chestguard of the Wayward Vanquisher
+		}),
+		i(45367, {	-- Valorous Kirin Tor Leggings
+			["cost"] = { { "i", 45652, 1 }, },	-- Leggings of the Wayward Vanquisher
+		}),
+	},
+	["PALADIN"] = {
+		-- Holy
+		i(45372, {	-- Valorous Aegis Headpiece
+			["cost"] = { { "i", 45647, 1 }, },	-- Helm of the Wayward Conqueror
+		}),
+		i(45373, {	-- Valorous Aegis Spaulders
+			["cost"] = { { "i", 45659, 1 }, },	-- Spaulders of the Wayward Conqueror
+		}),
+		i(45370, {	-- Valorous Aegis Gloves
+			["cost"] = { { "i", 45644, 1 }, },	-- Gloves of the Wayward Conqueror
+		}),
+		i(45374, {	-- Valorous Aegis Tunic
+			["cost"] = { { "i", 45635, 1 }, },	-- Chestguard of the Wayward Conqueror
+		}),
+		i(45371, {	-- Valorous Aegis Greaves
+			["cost"] = { { "i", 45650, 1 }, },	-- Leggings of the Wayward Conqueror
+		}),
+		
+		-- Protection
+		i(45382, {	-- Valorous Aegis Faceguard
+			["cost"] = { { "i", 45647, 1 }, },	-- Helm of the Wayward Conqueror
+		}),
+		i(45385, {	-- Valorous Aegis Shoulderguards
+			["cost"] = { { "i", 45659, 1 }, },	-- Spaulders of the Wayward Conqueror
+		}),
+		i(45383, {	-- Valorous Aegis Handguards
+			["cost"] = { { "i", 45644, 1 }, },	-- Gloves of the Wayward Conqueror
+		}),
+		i(45381, {	-- Valorous Aegis Breastplate
+			["cost"] = { { "i", 45635, 1 }, },	-- Chestguard of the Wayward Conqueror
+		}),
+		i(45384, {	-- Valorous Aegis Legguards
+			["cost"] = { { "i", 45650, 1 }, },	-- Leggings of the Wayward Conqueror
+		}),
+		
+		-- Retribution
+		i(45377, {	-- Valorous Aegis Helm
+			["cost"] = { { "i", 45647, 1 }, },	-- Helm of the Wayward Conqueror
+		}),
+		i(45380, {	-- Valorous Aegis Shoulderplates
+			["cost"] = { { "i", 45659, 1 }, },	-- Spaulders of the Wayward Conqueror
+		}),
+		i(45376, {	-- Valorous Aegis Gauntlets
+			["cost"] = { { "i", 45644, 1 }, },	-- Gloves of the Wayward Conqueror
+		}),
+		i(45375, {	-- Valorous Aegis Battleplate
+			["cost"] = { { "i", 45635, 1 }, },	-- Chestguard of the Wayward Conqueror
+		}),
+		i(45379, {	-- Valorous Aegis Legplates
+			["cost"] = { { "i", 45650, 1 }, },	-- Leggings of the Wayward Conqueror
+		}),
+	},
+	["PRIEST"] = {
+		-- Holy/Disc
+		i(45386, {	-- Valorous Cowl of Sanctification
+			["cost"] = { { "i", 45647, 1 }, },	-- Helm of the Wayward Conqueror
+		}),
+		i(45390, {	-- Valorous Shoulderpads of Sanctification
+			["cost"] = { { "i", 45659, 1 }, },	-- Spaulders of the Wayward Conqueror
+		}),
+		i(45387, {	-- Valorous Gloves of Sanctification
+			["cost"] = { { "i", 45644, 1 }, },	-- Gloves of the Wayward Conqueror
+		}),
+		i(45389, {	-- Valorous Robe of Sanctification
+			["cost"] = { { "i", 45635, 1 }, },	-- Chestguard of the Wayward Conqueror
+		}),
+		i(45388, {	-- Valorous Leggings of Sanctification
+			["cost"] = { { "i", 45650, 1 }, },	-- Leggings of the Wayward Conqueror
+		}),
+		
+		-- Shadow
+		i(45391, {	-- Valorous Circlet of Sanctification
+			["cost"] = { { "i", 45647, 1 }, },	-- Helm of the Wayward Conqueror
+		}),
+		i(45393, {	-- Valorous Mantle of Sanctification
+			["cost"] = { { "i", 45659, 1 }, },	-- Spaulders of the Wayward Conqueror
+		}),
+		i(45392, {	-- Valorous Handwraps of Sanctification
+			["cost"] = { { "i", 45644, 1 }, },	-- Gloves of the Wayward Conqueror
+		}),
+		i(45395, {	-- Valorous Raiments of Sanctification
+			["cost"] = { { "i", 45635, 1 }, },	-- Chestguard of the Wayward Conqueror
+		}),
+		i(45394, {	-- Valorous Pants of Sanctification
+			["cost"] = { { "i", 45650, 1 }, },	-- Leggings of the Wayward Conqueror
+		}),
+	},
+	["ROGUE"] = {
+		i(45398, {	-- Valorous Terrorblade Helmet
+			["cost"] = { { "i", 45649, 1 }, },	-- Helm of the Wayward Vanquisher
+		}),
+		i(45400, {	-- Valorous Terrorblade Pauldrons
+			["cost"] = { { "i", 45661, 1 }, },	-- Spaulders of the Wayward Vanquisher
+		}),
+		i(45397, {	-- Valorous Terrorblade Gauntlets
+			["cost"] = { { "i", 45646, 1 }, },	-- Gloves of the Wayward Vanquisher
+		}),
+		i(45396, {	-- Valorous Terrorblade Breastplate
+			["cost"] = { { "i", 45637, 1 }, },	-- Chestguard of the Wayward Vanquisher
+		}),
+		i(45399, {	-- Valorous Terrorblade Legplates
+			["cost"] = { { "i", 45652, 1 }, },	-- Leggings of the Wayward Vanquisher
+		}),
+	},
+	["SHAMAN"] = {
+		-- Elemental
+		i(45408, {	-- Valorous Worldbreaker Helm
+			["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
+		}),
+		i(45410, {	-- Valorous Worldbreaker Shoulderpads
+			["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
+		}),
+		i(45406, {	-- Valorous Worldbreaker Gloves
+			["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
+		}),
+		i(45411, {	-- Valorous Worldbreaker Hauberk
+			["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
+		}),
+		i(45409, {	-- Valorous Worldbreaker Kilt
+			["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
+		}),
+		
+		-- Enhancement
+		i(45412, {	-- Valorous Worldbreaker Faceguard
+			["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
+		}),
+		i(45415, {	-- Valorous Worldbreaker Shoulderguards
+			["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
+		}),
+		i(45414, {	-- Valorous Worldbreaker Grips
+			["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
+		}),
+		i(45413, {	-- Valorous Worldbreaker Chestguard
+			["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
+		}),
+		i(45416, {	-- Valorous Worldbreaker War-Kilt
+			["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
+		}),
+		
+		-- Restoration
+		i(45402, {	-- Valorous Worldbreaker Headpiece
+			["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
+		}),
+		i(45404, {	-- Valorous Worldbreaker Spaulders
+			["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
+		}),
+		i(45401, {	-- Valorous Worldbreaker Handguards
+			["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
+		}),
+		i(45405, {	-- Valorous Worldbreaker Tunic
+			["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
+		}),
+		i(45403, {	-- Valorous Worldbreaker Legguards
+			["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
+		}),
+	},
+	["WARLOCK"] = {
+		i(45417, {	-- Valorous Deathbringer Hood
+			["cost"] = { { "i", 45647, 1 }, },	-- Helm of the Wayward Conqueror
+		}),
+		i(45422, {	-- Valorous Deathbringer Shoulderpads
+			["cost"] = { { "i", 45659, 1 }, },	-- Spaulders of the Wayward Conqueror
+		}),
+		i(45419, {	-- Valorous Deathbringer Gloves
+			["cost"] = { { "i", 45644, 1 }, },	-- Gloves of the Wayward Conqueror
+		}),
+		i(45421, {	-- Valorous Deathbringer Robe
+			["cost"] = { { "i", 45635, 1 }, },	-- Chestguard of the Wayward Conqueror
+		}),
+		i(45420, {	-- Valorous Deathbringer Leggings
+			["cost"] = { { "i", 45650, 1 }, },	-- Leggings of the Wayward Conqueror
+		}),
+	},
+	["WARRIOR"] = {
+		-- Arms/Fury
+		i(45431, {	-- Valorous Siegebreaker Helmet
+			["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
+		}),
+		i(45433, {	-- Valorous Siegebreaker Shoulderplates
+			["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
+		}),
+		i(45430, {	-- Valorous Siegebreaker Gauntlets
+			["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
+		}),
+		i(45429, {	-- Valorous Siegebreaker Battleplate
+			["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
+		}),
+		i(45432, {	-- Valorous Siegebreaker Legplates
+			["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
+		}),
+		
+		-- Tank
+		i(45425, {	-- Valorous Siegebreaker Greathelm
+			["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
+		}),
+		i(45428, {	-- Valorous Siegebreaker Pauldrons
+			["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
+		}),
+		i(45426, {	-- Valorous Siegebreaker Handguards
+			["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
+		}),
+		i(45424, {	-- Valorous Siegebreaker Breastplate
+			["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
+		}),
+		i(45427, {	-- Valorous Siegebreaker Legguards
+			["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
+		}),
+	},
+};
+for key,g in pairs(TIER_EIGHT_GROUPS) do
+	applyclassicphase(WRATH_PHASE_TWO, g);
+end
+
+local TIER_SEVEN_HEROIC_GROUPS = {
+	["DEATHKNIGHT"] = {
+		-- DPS
+		i(40554, {	-- Valorous Scourgeborne Helmet
+			["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
+		}),
+		i(40557, {	-- Valorous Scourgeborne Shoulderplates
+			["cost"] = { { "i", 40639, 1 }, },	-- Mantle of the Lost Vanquisher
+		}),
+		i(40552, {	-- Valorous Scourgeborne Gauntlets
+			["cost"] = { { "i", 40630, 1 }, },	-- Gauntlets of the Lost Vanquisher
+		}),
+		i(40550, {	-- Valorous Scourgeborne Battleplate
+			["cost"] = { { "i", 40627, 1 }, },	-- Breastplate of the Lost Vanquisher
+		}),
+		i(40556, {	-- Valorous Scourgeborne Legplates
+			["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
+		}),
+		
+		-- Tank
+		i(40565, {	-- Valorous Scourgeborne Faceguard
+			["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
+		}),
+		i(40568, {	-- Valorous Scourgeborne Pauldrons
+			["cost"] = { { "i", 40639, 1 }, },	-- Mantle of the Lost Vanquisher
+		}),
+		i(40563, {	-- Valorous Scourgeborne Handguards
+			["cost"] = { { "i", 40630, 1 }, },	-- Gauntlets of the Lost Vanquisher
+		}),
+		i(40559, {	-- Valorous Scourgeborne Chestguard
+			["cost"] = { { "i", 40627, 1 }, },	-- Breastplate of the Lost Vanquisher
+		}),
+		i(40567, {	-- Valorous Scourgeborne Legguards
+			["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
+		}),
+	},
+	["DRUID"] = {
+		-- Boomkin
+		i(40467, {	-- Valorous Dreamwalker Cover
+			["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
+		}),
+		i(40470, {	-- Valorous Dreamwalker Mantle
+			["cost"] = { { "i", 40639, 1 }, },	-- Mantle of the Lost Vanquisher
+		}),
+		i(40466, {	-- Valorous Dreamwalker Gloves
+			["cost"] = { { "i", 40630, 1 }, },	-- Gauntlets of the Lost Vanquisher
+		}),
+		i(40469, {	-- Valorous Dreamwalker Vestments
+			["cost"] = { { "i", 40627, 1 }, },	-- Breastplate of the Lost Vanquisher
+		}),
+		i(40468, {	-- Valorous Dreamwalker Trousers
+			["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
+		}),
+		
+		-- Feral
+		i(40473, {	-- Valorous Dreamwalker Headguard
+			["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
+		}),
+		i(40494, {	-- Valorous Dreamwalker Shoulderpads
+			["cost"] = { { "i", 40639, 1 }, },	-- Mantle of the Lost Vanquisher
+		}),
+		i(40472, {	-- Valorous Dreamwalker Handgrips
+			["cost"] = { { "i", 40630, 1 }, },	-- Gauntlets of the Lost Vanquisher
+		}),
+		i(40471, {	-- Valorous Dreamwalker Raiments
+			["cost"] = { { "i", 40627, 1 }, },	-- Breastplate of the Lost Vanquisher
+		}),
+		i(40493, {	-- Valorous Dreamwalker Legguards
+			["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
+		}),
+		
+		-- Restoration
+		i(40461, {	-- Valorous Dreamwalker Headpiece
+			["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
+		}),
+		i(40465, {	-- Valorous Dreamwalker Spaulders
+			["cost"] = { { "i", 40639, 1 }, },	-- Mantle of the Lost Vanquisher
+		}),
+		i(40460, {	-- Valorous Dreamwalker Handguards
+			["cost"] = { { "i", 40630, 1 }, },	-- Gauntlets of the Lost Vanquisher
+		}),
+		i(40463, {	-- Valorous Dreamwalker Robe
+			["cost"] = { { "i", 40627, 1 }, },	-- Breastplate of the Lost Vanquisher
+		}),
+		i(40462, {	-- Valorous Dreamwalker Leggings
+			["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
+		}),
+	},
+	["HUNTER"] = {
+		i(40505, {	-- Valorous Cryptstalker Headpiece
+			["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
+		}),
+		i(40507, {	-- Valorous Cryptstalker Spaulders
+			["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
+		}),
+		i(40504, {	-- Valorous Cryptstalker Handguards
+			["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
+		}),
+		i(40503, {	-- Valorous Cryptstalker Tunic
+			["cost"] = { { "i", 40626, 1 }, },	-- Breastlplate of the Lost Protector
+		}),
+		i(40506, {	-- Valorous Cryptstalker Legguards
+			["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
+		}),
+	},
+	["MAGE"] = {
+		i(40416, {	-- Valorous Frostfire Circlet
+			["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
+		}),
+		i(40419, {	-- Valorous Frostfire Shoulderpads
+			["cost"] = { { "i", 40639, 1 }, },	-- Mantle of the Lost Vanquisher
+		}),
+		i(40415, {	-- Valorous Frostfire Gloves
+			["cost"] = { { "i", 40630, 1 }, },	-- Gauntlets of the Lost Vanquisher
+		}),
+		i(40418, {	-- Valorous Frostfire Robe
+			["cost"] = { { "i", 40627, 1 }, },	-- Breastplate of the Lost Vanquisher
+		}),
+		i(40417, {	-- Valorous Frostfire Leggings
+			["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
+		}),
+	},
+	["PALADIN"] = {
+		-- Holy
+		i(40571, {	-- Valorous Redemption Headpiece
+			["cost"] = { { "i", 40631, 1 }, },	-- Crown of the Lost Conqueror
+		}),
+		i(40573, {	-- Valorous Redemption Spaulders
+			["cost"] = { { "i", 40637, 1 }, },	-- Mantle of the Lost Conqueror
+		}),
+		i(40570, {	-- Valorous Redemption Gloves
+			["cost"] = { { "i", 40628, 1 }, },	-- Gauntlets of the Lost Conqueror
+		}),
+		i(40569, {	-- Valorous Redemption Tunic
+			["cost"] = { { "i", 40625, 1 }, },	-- Breastplate of the Lost Conqueror
+		}),
+		i(40572, {	-- Valorous Redemption Greaves
+			["cost"] = { { "i", 40634, 1 }, },	-- Legplates of the Lost Conqueror
+		}),
+		
+		-- Protection
+		i(40581, {	-- Valorous Redemption Faceguard
+			["cost"] = { { "i", 40631, 1 }, },	-- Crown of the Lost Conqueror
+		}),
+		i(40584, {	-- Valorous Redemption Shoulderguards
+			["cost"] = { { "i", 40637, 1 }, },	-- Mantle of the Lost Conqueror
+		}),
+		i(40580, {	-- Valorous Redemption Handguards
+			["cost"] = { { "i", 40628, 1 }, },	-- Gauntlets of the Lost Conqueror
+		}),
+		i(40579, {	-- Valorous Redemption Breastplate
+			["cost"] = { { "i", 40625, 1 }, },	-- Breastplate of the Lost Conqueror
+		}),
+		i(40583, {	-- Valorous Redemption Legguards
+			["cost"] = { { "i", 40634, 1 }, },	-- Legplates of the Lost Conqueror
+		}),
+		
+		-- Retribution
+		i(40576, {	-- Valorous Redemption Helm
+			["cost"] = { { "i", 40631, 1 }, },	-- Crown of the Lost Conqueror
+		}),
+		i(40578, {	-- Valorous Redemption Shoulderplates
+			["cost"] = { { "i", 40637, 1 }, },	-- Mantle of the Lost Conqueror
+		}),
+		i(40575, {	-- Valorous Redemption Gauntlets
+			["cost"] = { { "i", 40628, 1 }, },	-- Gauntlets of the Lost Conqueror
+		}),
+		i(40574, {	-- Valorous Redemption Chestpiece
+			["cost"] = { { "i", 40625, 1 }, },	-- Breastplate of the Lost Conqueror
+		}),
+		i(40577, {	-- Valorous Redemption Legplates
+			["cost"] = { { "i", 40634, 1 }, },	-- Legplates of the Lost Conqueror
+		}),
+	},
+	["PRIEST"] = {
+		-- Holy/Disc
+		i(40447, {	-- Valorous Crown of Faith
+			["cost"] = { { "i", 40631, 1 }, },	-- Crown of the Lost Conqueror
+		}),
+		i(40450, {	-- Valorous Shoulderpads of Faith
+			["cost"] = { { "i", 40637, 1 }, },	-- Mantle of the Lost Conqueror
+		}),
+		i(40445, {	-- Valorous Gloves of Faith
+			["cost"] = { { "i", 40628, 1 }, },	-- Gauntlets of the Lost Conqueror
+		}),
+		i(40449, {	-- Valorous Robe of Faith
+			["cost"] = { { "i", 40625, 1 }, },	-- Breastplate of the Lost Conqueror
+		}),
+		i(40448, {	-- Valorous Leggings of Faith
+			["cost"] = { { "i", 40634, 1 }, },	-- Legplates of the Lost Conqueror
+		}),
+		
+		-- Shadow
+		i(40456, {	-- Valorous Circlet of Faith
+			["cost"] = { { "i", 40631, 1 }, },	-- Crown of the Lost Conqueror
+		}),
+		i(40459, {	-- Valorous Mantle of Faith
+			["cost"] = { { "i", 40637, 1 }, },	-- Mantle of the Lost Conqueror
+		}),
+		i(40454, {	-- Valorous Handwraps of Faith
+			["cost"] = { { "i", 40628, 1 }, },	-- Gauntlets of the Lost Conqueror
+		}),
+		i(40458, {	-- Valorous Raiments of Faith
+			["cost"] = { { "i", 40625, 1 }, },	-- Breastplate of the Lost Conqueror
+		}),
+		i(40457, {	-- Valorous Pants of Faith
+			["cost"] = { { "i", 40634, 1 }, },	-- Legplates of the Lost Conqueror
+		}),
+	},
+	["ROGUE"] = {
+		i(40499, {	-- Valorous Bonescythe Helmet
+			["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
+		}),
+		i(40502, {	-- Valorous Bonescythe Pauldrons
+			["cost"] = { { "i", 40639, 1 }, },	-- Mantle of the Lost Vanquisher
+		}),
+		i(40496, {	-- Valorous Bonescythe Gauntlets
+			["cost"] = { { "i", 40630, 1 }, },	-- Gauntlets of the Lost Vanquisher
+		}),
+		i(40495, {	-- Valorous Bonescythe Breastplate
+			["cost"] = { { "i", 40627, 1 }, },	-- Breastplate of the Lost Vanquisher
+		}),
+		i(40500, {	-- Valorous Bonescythe Legplates
+			["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
+		}),
+	},
+	["SHAMAN"] = {
+		-- Elemental
+		i(40516, {	-- Valorous Earthshatter Helm
+			["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
+		}),
+		i(40518, {	-- Valorous Earthshatter Shoulderpads
+			["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
+		}),
+		i(40515, {	-- Valorous Earthshatter Gloves
+			["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
+		}),
+		i(40514, {	-- Valorous Earthshatter Hauberk
+			["cost"] = { { "i", 40626, 1 }, },	-- Breastplate of the Lost Protector
+		}),
+		i(40517, {	-- Valorous Earthshatter Kilt
+			["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
+		}),
+		
+		-- Enhancement
+		i(40521, {	-- Valorous Earthshatter Faceguard
+			["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
+		}),
+		i(40524, {	-- Valorous Earthshatter Shoulderguards
+			["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
+		}),
+		i(40520, {	-- Valorous Earthshatter Grips
+			["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
+		}),
+		i(40523, {	-- Valorous Earthshatter Chestguard
+			["cost"] = { { "i", 40626, 1 }, },	-- Breastplate of the Lost Protector
+		}),
+		i(40522, {	-- Valorous Earthshatter War-Kilt
+			["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
+		}),
+		
+		-- Restoration
+		i(40510, {	-- Valorous Earthshatter Headpiece
+			["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
+		}),
+		i(40513, {	-- Valorous Earthshatter Spaulders
+			["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
+		}),
+		i(40509, {	-- Valorous Earthshatter Handguards
+			["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
+		}),
+		i(40508, {	-- Valorous Earthshatter Tunic
+			["cost"] = { { "i", 40626, 1 }, },	-- Breastplate of the Lost Protector
+		}),
+		i(40512, {	-- Valorous Earthshatter Legguards
+			["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
+		}),
+	},
+	["WARLOCK"] = {
+		i(40421, {	-- Valorous Plagueheart Circlet
+			["cost"] = { { "i", 40631, 1 }, },	-- Crown of the Lost Conqueror
+		}),
+		i(40424, {	-- Valorous Plagueheart Shoulderpads
+			["cost"] = { { "i", 40637, 1 }, },	-- Mantle of the Lost Conqueror
+		}),
+		i(40420, {	-- Valorous Plagueheart Gloves
+			["cost"] = { { "i", 40628, 1 }, },	-- Gauntlets of the Lost Conqueror
+		}),
+		i(40423, {	-- Valorous Plagueheart Robe
+			["cost"] = { { "i", 40625, 1 }, },	-- Breastplate of the Lost Conqueror
+		}),
+		i(40422, {	-- Valorous Plagueheart Leggings
+			["cost"] = { { "i", 40634, 1 }, },	-- Legplates of the Lost Conqueror
+		}),
+	},
+	["WARRIOR"] = {
+		-- Arms/Fury
+		i(40528, {	-- Valorous Dreadnaught Helmet
+			["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
+		}),
+		i(40530, {	-- Valorous Dreadnaught Shoulderplates
+			["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
+		}),
+		i(40527, {	-- Valorous Dreadnaught Gauntlets
+			["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
+		}),
+		i(40525, {	-- Valorous Dreadnaught Battleplate
+			["cost"] = { { "i", 40626, 1 }, },	-- Breastplate of the Lost Protector
+		}),
+		i(40529, {	-- Valorous Dreadnaught Legplates
+			["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
+		}),
+		
+		-- Tank
+		i(40546, {	-- Valorous Dreadnaught Greathelm
+			["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
+		}),
+		i(40548, {	-- Valorous Dreadnaught Pauldrons
+			["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
+		}),
+		i(40545, {	-- Valorous Dreadnaught Handguards
+			["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
+		}),
+		i(40544, {	-- Valorous Dreadnaught Breastplate
+			["cost"] = { { "i", 40626, 1 }, },	-- Breastplate of the Lost Protector
+		}),
+		i(40547, {	-- Valorous Dreadnaught Legguards
+			["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
+		}),
+	},
+};
+for key,g in pairs(TIER_SEVEN_HEROIC_GROUPS) do
+	applyclassicphase(WRATH_PHASE_ONE, g);
+end
+
+local TIER_SEVEN_GROUPS = {
+	["DEATHKNIGHT"] = {
+		-- DPS
+		i(39619, {	-- Heroes' Scourgeborne Helmet
+			["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
+		}),
+		i(39621, {	-- Heroes' Scourgeborne Shoulderplates
+			["cost"] = { { "i", 40624, 1 }, },	-- Spaulders of the Lost Vanquisher
+		}),
+		i(39618, {	-- Heroes' Scourgeborne Gauntlets
+			["cost"] = { { "i", 40615, 1 }, },	-- Gloves of the Lost Vanquisher
+		}),
+		i(39617, {	-- Heroes' Scourgeborne Battleplate
+			["cost"] = { { "i", 40612, 1 }, },	-- Chestguard of the Lost Vanquisher
+		}),
+		i(39620, {	-- Heroes' Scourgeborne Legplates
+			["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
+		}),
+		
+		-- Tank
+		i(39625, {	-- Heroes' Scourgeborne Faceguard
+			["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
+		}),
+		i(39627, {	-- Heroes' Scourgeborne Pauldrons
+			["cost"] = { { "i", 40624, 1 }, },	-- Spaulders of the Lost Vanquisher
+		}),
+		i(39624, {	-- Heroes' Scourgeborne Handguards
+			["cost"] = { { "i", 40615, 1 }, },	-- Gloves of the Lost Vanquisher
+		}),
+		i(39623, {	-- Heroes' Scourgeborne Chestguard
+			["cost"] = { { "i", 40612, 1 }, },	-- Chestguard of the Lost Vanquisher
+		}),
+		i(39626, {	-- Heroes' Scourgeborne Legguards
+			["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
+		}),
+	},
+	["DRUID"] = {
+		-- Boomkin
+		i(39545, {	-- Heroes' Dreamwalker Cover
+			["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
+		}),
+		i(39548, {	-- Heroes' Dreamwalker Mantle
+			["cost"] = { { "i", 40624, 1 }, },	-- Spaulders of the Lost Vanquisher
+		}),
+		i(39544, {	-- Heroes' Dreamwalker Gloves
+			["cost"] = { { "i", 40615, 1 }, },	-- Gloves of the Lost Vanquisher
+		}),
+		i(39547, {	-- Heroes' Dreamwalker Vestments
+			["cost"] = { { "i", 40612, 1 }, },	-- Chestguard of the Lost Vanquisher
+		}),
+		i(39546, {	-- Heroes' Dreamwalker Trousers
+			["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
+		}),
+		
+		-- Feral
+		i(39553, {	-- Heroes' Dreamwalker Headguard
+			["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
+		}),
+		i(39556, {	-- Heroes' Dreamwalker Shoulderpads
+			["cost"] = { { "i", 40624, 1 }, },	-- Spaulders of the Lost Vanquisher
+		}),
+		i(39557, {	-- Heroes' Dreamwalker Handgrips
+			["cost"] = { { "i", 40615, 1 }, },	-- Gloves of the Lost Vanquisher
+		}),
+		i(39554, {	-- Heroes' Dreamwalker Raiments
+			["cost"] = { { "i", 40612, 1 }, },	-- Chestguard of the Lost Vanquisher
+		}),
+		i(39555, {	-- Heroes' Dreamwalker Legguards
+			["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
+		}),
+		
+		-- Restoration
+		i(39531, {	-- Heroes' Dreamwalker Headpiece
+			["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
+		}),
+		i(39542, {	-- Heroes' Dreamwalker Spaulders
+			["cost"] = { { "i", 40624, 1 }, },	-- Spaulders of the Lost Vanquisher
+		}),
+		i(39543, {	-- Heroes' Dreamwalker Handguards
+			["cost"] = { { "i", 40615, 1 }, },	-- Gloves of the Lost Vanquisher
+		}),
+		i(39538, {	-- Heroes' Dreamwalker Robe
+			["cost"] = { { "i", 40612, 1 }, },	-- Chestguard of the Lost Vanquisher
+		}),
+		i(39539, {	-- Heroes' Dreamwalker Leggings
+			["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
+		}),
+	},
+	["HUNTER"] = {
+		i(39578, {	-- Heroes' Cryptstalker Headpiece
+			["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
+		}),
+		i(39581, {	-- Heroes' Cryptstalker Spaulders
+			["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
+		}),
+		i(39582, {	-- Heroes' Cryptstalker Handguards
+			["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
+		}),
+		i(39579, {	-- Heroes' Cryptstalker Tunic
+			["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
+		}),
+		i(39580, {	-- Heroes' Cryptstalker Legguards
+			["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
+		}),
+	},
+	["MAGE"] = {
+		i(39491, {	-- Heroes' Frostfire Circlet
+			["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
+		}),
+		i(39494, {	-- Heroes' Frostfire Shoulderpads
+			["cost"] = { { "i", 40624, 1 }, },	-- Spaulders of the Lost Vanquisher
+		}),
+		i(39495, {	-- Heroes' Frostfire Gloves
+			["cost"] = { { "i", 40615, 1 }, },	-- Gloves of the Lost Vanquisher
+		}),
+		i(39492, {	-- Heroes' Frostfire Robe
+			["cost"] = { { "i", 40612, 1 }, },	-- Chestguard of the Lost Vanquisher
+		}),
+		i(39493, {	-- Heroes' Frostfire Leggings
+			["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
+		}),
+	},
+	["PALADIN"] = {
+		-- Holy
+		i(39628, {	-- Heroes' Redemption Headpiece
+			["cost"] = { { "i", 40616, 1 }, },	-- Helm of the Lost Conqueror
+		}),
+		i(39631, {	-- Heroes' Redemption Spaulders
+			["cost"] = { { "i", 40622, 1 }, },	-- Spaulders of the Lost Conqueror
+		}),
+		i(39632, {	-- Heroes' Redemption Gloves
+			["cost"] = { { "i", 40613, 1 }, },	-- Gloves of the Lost Conqueror
+		}),
+		i(39629, {	-- Heroes' Redemption Tunic
+			["cost"] = { { "i", 40610, 1 }, },	-- Chestguard of the Lost Conqueror
+		}),
+		i(39630, {	-- Heroes' Redemption Greaves
+			["cost"] = { { "i", 40619, 1 }, },	-- Leggings of the Lost Conqueror
+		}),
+		
+		-- Protection
+		i(39640, {	-- Heroes' Redemption Faceguard
+			["cost"] = { { "i", 40616, 1 }, },	-- Helm of the Lost Conqueror
+		}),
+		i(39642, {	-- Heroes' Redemption Shoulderguards
+			["cost"] = { { "i", 40622, 1 }, },	-- Spaulders of the Lost Conqueror
+		}),
+		i(39639, {	-- Heroes' Redemption Handguards
+			["cost"] = { { "i", 40613, 1 }, },	-- Gloves of the Lost Conqueror
+		}),
+		i(39638, {	-- Heroes' Redemption Breastplate
+			["cost"] = { { "i", 40610, 1 }, },	-- Chestguard of the Lost Conqueror
+		}),
+		i(39641, {	-- Heroes' Redemption Legguards
+			["cost"] = { { "i", 40619, 1 }, },	-- Leggings of the Lost Conqueror
+		}),
+		
+		-- Retribution
+		i(39635, {	-- Heroes' Redemption Helm
+			["cost"] = { { "i", 40616, 1 }, },	-- Helm of the Lost Conqueror
+		}),
+		i(39637, {	-- Heroes' Redemption Shoulderplates
+			["cost"] = { { "i", 40622, 1 }, },	-- Spaulders of the Lost Conqueror
+		}),
+		i(39634, {	-- Heroes' Redemption Gauntlets
+			["cost"] = { { "i", 40613, 1 }, },	-- Gloves of the Lost Conqueror
+		}),
+		i(39633, {	-- Heroes' Redemption Chestpiece
+			["cost"] = { { "i", 40610, 1 }, },	-- Chestguard of the Lost Conqueror
+		}),
+		i(39636, {	-- Heroes' Redemption Legplates
+			["cost"] = { { "i", 40619, 1 }, },	-- Leggings of the Lost Conqueror
+		}),
+	},
+	["PRIEST"] = {
+		-- Holy/Disc
+		i(39514, {	-- Heroes' Crown of Faith
+			["cost"] = { { "i", 40616, 1 }, },	-- Helm of the Lost Conqueror
+		}),
+		i(39518, {	-- Heroes' Shoulderpads of Faith
+			["cost"] = { { "i", 40622, 1 }, },	-- Spaulders of the Lost Conqueror
+		}),
+		i(39519, {	-- Heroes' Gloves of Faith
+			["cost"] = { { "i", 40613, 1 }, },	-- Gloves of the Lost Conqueror
+		}),
+		i(39515, {	-- Heroes' Robe of Faith
+			["cost"] = { { "i", 40610, 1 }, },	-- Chestguard of the Lost Conqueror
+		}),
+		i(39517, {	-- Heroes' Leggings of Faith
+			["cost"] = { { "i", 40619, 1 }, },	-- Leggings of the Lost Conqueror
+		}),
+		
+		-- Shadow
+		i(39521, {	-- Heroes' Circlet of Faith
+			["cost"] = { { "i", 40616, 1 }, },	-- Helm of the Lost Conqueror
+		}),
+		i(39529, {	-- Heroes' Mantle of Faith
+			["cost"] = { { "i", 40622, 1 }, },	-- Spaulders of the Lost Conqueror
+		}),
+		i(39530, {	-- Heroes' Handwraps of Faith
+			["cost"] = { { "i", 40613, 1 }, },	-- Gloves of the Lost Conqueror
+		}),
+		i(39523, {	-- Heroes' Raiments of Faith
+			["cost"] = { { "i", 40610, 1 }, },	-- Chestguard of the Lost Conqueror
+		}),
+		i(39528, {	-- Heroes' Pants of Faith
+			["cost"] = { { "i", 40619, 1 }, },	-- Leggings of the Lost Conqueror
+		}),
+	},
+	["ROGUE"] = {
+		i(39561, {	-- Heroes' Bonescythe Helmet
+			["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
+		}),
+		i(39565, {	-- Heroes' Bonescythe Pauldrons
+			["cost"] = { { "i", 40624, 1 }, },	-- Spaulders of the Lost Vanquisher
+		}),
+		i(39560, {	-- Heroes' Bonescythe Gauntlets
+			["cost"] = { { "i", 40615, 1 }, },	-- Gloves of the Lost Vanquisher
+		}),
+		i(39558, {	-- Heroes' Bonescythe Breastplate
+			["cost"] = { { "i", 40612, 1 }, },	-- Chestguard of the Lost Vanquisher
+		}),
+		i(39564, {	-- Heroes' Bonescythe Legplates
+			["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
+		}),
+	},
+	["SHAMAN"] = {
+		-- Elemental
+		i(39594, {	-- Heroes' Earthshatter Helm
+			["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
+		}),
+		i(39596, {	-- Heroes' Earthshatter Shoulderpads
+			["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
+		}),
+		i(39593, {	-- Heroes' Earthshatter Gloves
+			["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
+		}),
+		i(39592, {	-- Heroes' Earthshatter Hauberk
+			["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
+		}),
+		i(39595, {	-- Heroes' Earthshatter Kilt
+			["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
+		}),
+		
+		-- Enhancement
+		i(39602, {	-- Heroes' Earthshatter Faceguard
+			["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
+		}),
+		i(39604, {	-- Heroes' Earthshatter Shoulderguards
+			["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
+		}),
+		i(39601, {	-- Heroes' Earthshatter Grips
+			["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
+		}),
+		i(39597, {	-- Heroes' Earthshatter Chestguard
+			["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
+		}),
+		i(39603, {	-- Heroes' Earthshatter War-Kilt
+			["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
+		}),
+		
+		-- Restoration
+		i(39583, {	-- Heroes' Earthshatter Headpiece
+			["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
+		}),
+		i(39590, {	-- Heroes' Earthshatter Spaulders
+			["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
+		}),
+		i(39591, {	-- Heroes' Earthshatter Handguards
+			["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
+		}),
+		i(39588, {	-- Heroes' Earthshatter Tunic
+			["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
+		}),
+		i(39589, {	-- Heroes' Earthshatter Legguards
+			["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
+		}),
+	},
+	["WARLOCK"] = {
+		i(39496, {	-- Heroes' Plagueheart Circlet
+			["cost"] = { { "i", 40616, 1 }, },	-- Helm of the Lost Conqueror
+		}),
+		i(39499, {	-- Heroes' Plagueheart Shoulderpads
+			["cost"] = { { "i", 40622, 1 }, },	-- Spaulders of the Lost Conqueror
+		}),
+		i(39500, {	-- Heroes' Plagueheart Gloves
+			["cost"] = { { "i", 40613, 1 }, },	-- Gloves of the Lost Conqueror
+		}),
+		i(39497, {	-- Heroes' Plagueheart Robe
+			["cost"] = { { "i", 40610, 1 }, },	-- Chestguard of the Lost Conqueror
+		}),
+		i(39498, {	-- Heroes' Plagueheart Leggings
+			["cost"] = { { "i", 40619, 1 }, },	-- Leggings of the Lost Conqueror
+		}),
+	},
+	["WARRIOR"] = {
+		-- Arms/Fury
+		i(39605, {	-- Heroes' Dreadnaught Helmet
+			["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
+		}),
+		i(39608, {	-- Heroes' Dreadnaught Shoulderplates
+			["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
+		}),
+		i(39609, {	-- Heroes' Dreadnaught Gauntlets
+			["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
+		}),
+		i(39606, {	-- Heroes' Dreadnaught Battleplate
+			["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
+		}),
+		i(39607, {	-- Heroes' Dreadnaught Legplates
+			["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
+		}),
+		
+		-- Tank
+		i(39610, {	-- Heroes' Dreadnaught Greathelm
+			["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
+		}),
+		i(39613, {	-- Heroes' Dreadnaught Pauldrons
+			["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
+		}),
+		i(39622, {	-- Heroes' Dreadnaught Handguards
+			["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
+		}),
+		i(39611, {	-- Heroes' Dreadnaught Breastplate
+			["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
+		}),
+		i(39612, {	-- Heroes' Dreadnaught Legguards
+			["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
+		}),
+	},
+};
+for key,g in pairs(TIER_SEVEN_GROUPS) do
+	applyclassicphase(WRATH_PHASE_ONE, g);
+end
+
 root("Zones", {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(NORTHREND_DALARAN, {
@@ -1930,29 +5095,34 @@ root("Zones", {
 						n(29538, {	-- Hexil Garrot <Tools of the Trade>
 							["coord"] = { 60.6, 11.9, NORTHREND_THE_UNDERBELLY },
 							["groups"] = {
-								i(40739),	-- Bands of the Great Tree
-								i(50994),	-- Belt of Petrified Ivy
-								i(45830),	-- Belt of the Living Thicket
-								i(45829),	-- Belt of the Twilight Assassin
-								i(40748),	-- Boots of Captain Ellis
-								i(50982),	-- Cat Burglar's Grips
-								i(45838),	-- Gloves of the Blind Stalker
-								i(50981),	-- Gloves of the Great Horned Owl
-								i(45839),	-- Grips of the Secret Grove
-								i(40694),	-- Jorach's Crocolisk Skin Belt
-								i(45846),	-- Leggings of Wavering Shadow
+								emov(60, i(40739)),	-- Bands of the Great Tree
+								emof(60, i(50994)),	-- Belt of Petrified Ivy
+								emoc(28, i(45830)),	-- Belt of the Living Thicket
+								emoc(28, i(45829)),	-- Belt of the Twilight Assassin
+								emov(40, i(40748)),	-- Boots of Captain Ellis
+								emof(60, i(50982)),	-- Cat Burglar's Grips
+								i(44652),	-- Dalaran Dagger
+								i(44644, {	-- Dalaran Dart
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(44641),	-- Dalaran Knuckles
+								emoc(28, i(45838)),	-- Gloves of the Blind Stalker
+								emof(60, i(50981)),	-- Gloves of the Great Horned Owl
+								emoc(28, i(45839)),	-- Grips of the Secret Grove
+								emoh(40, i(40694)),	-- Jorach's Crocolisk Skin Belt
+								emoc(39, i(45846)),	-- Leggings of Wavering Shadow
 								emoh(15, i(40716, {	-- Lillehoff's Winged Blades
 									["timeline"] = { "removed 5.0.4" },
 								})),
-								i(40704),	-- Pride
-								i(40749),	-- Rainey's Chewed Boots
-								i(40702),	-- Rolfsen's Ripper
-								i(50972),	-- Shadow Seeker's Tunic
-								i(50995),	-- Vengeful Noose
-								i(50973),	-- Vestments of Spruce and Fir
-								i(40695),	-- Vine Belt of the Woodland Dryad
-								i(45847),	-- Wildstrider Legguards
-								i(40738),	-- Wristwraps of the Cutthroat
+								emoh(50, i(40704)),	-- Pride
+								emov(40, i(40749)),	-- Rainey's Chewed Boots
+								emoh(50, i(40702)),	-- Rolfsen's Ripper
+								emof(95, i(50972)),	-- Shadow Seeker's Tunic
+								emof(60, i(50995)),	-- Vengeful Noose
+								emof(95, i(50973)),	-- Vestments of Spruce and Fir
+								emoh(40, i(40695)),	-- Vine Belt of the Woodland Dryad
+								emoc(39, i(45847)),	-- Wildstrider Legguards
+								emov(60, i(40738)),	-- Wristwraps of the Cutthroat
 							},
 						}),
 						n(69318, {	-- Kylo Kelwin <Furious Gladiator>
@@ -5453,6 +8623,18 @@ root("Zones", {
 					-- TODO: Add Epicurean's Award and a Small Spice Bag?
 				}),
 				n(VENDORS, {
+					-- #if BEFORE 8.0.1
+					n(28994, {	-- Abra Cadabra [WRATH] / Wanda Chanter <Wands> [BFA+]
+						["coord"] = { 49.1, 73.2, NORTHREND_DALARAN },
+						["groups"] = {
+							emot(25, i(47658)),	-- Brimstone Igniter
+							i(40019),	-- Wand of Amber
+							i(40021),	-- Wand of Crystal
+							i(40020),	-- Wand of Jade
+							i(40018),	-- Wand of Onyx
+						},
+					}),
+					-- #endif
 					n(29548, {	-- Aimee <Pie, Pastry & Cakes>
 						["coord"] = { 36.4, 33.8, NORTHREND_DALARAN },
 						["groups"] = {
@@ -5509,129 +8691,11 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = EMBLEM_OF_TRIUMPH_QUARTERMASTER_A_GROUPS,
 					})),
-					n(37942, {	-- Arcanist Uovril <Legacy Justice Quartermaster>
+					applyclassicphase(WRATH_PHASE_FOUR, n(37942, {	-- Arcanist Uovril <Legacy Justice Quartermaster> / <Emblem of Frost Quartermaster> [WRATH]
 						["coord"] = { 38.3, 54.4, NORTHREND_DALARAN },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(50993),	-- Band of the Night Raven
-							i(50996),	-- Belt of Omission
-							i(50994),	-- Belt of Petrified Ivy
-							i(50980),	-- Blizzard Keeper's Mitts
-							i(50965),	-- Castle Breaker's Battleplate
-							i(50982),	-- Cat Burglar's Grips
-							i(50968),	-- Cataclysmic Chestguard
-							i(50969),	-- Chestplate of Unspoken Truths
-							i(50997),	-- Circle of Ossus
-							i(50356),	-- Corroded Skeleton Key
-							i(50468),	-- Drape of the Violet Tower
-							i(50975),	-- Ermine Coronation Robes
-							i(50977),	-- Gatecrasher's Gauntlets
-							i(50976),	-- Gauntlets of Overexposure
-							i(50978),	-- Gauntlets of the Kraken
-							i(50984),	-- Gloves of Ambivalence
-							i(50983),	-- Gloves of False Gestures
-							i(50981),	-- Gloves of the Great Horned Owl
-							i(50355),	-- Herkuml War Token
-							i(50989),	-- Lich Killer's Lanyard
-							i(50979),	-- Logsplitters
-							i(50970),	-- Longstrider's Vest
-							i(50357),	-- Maghia's Misguided Quill
-							i(50971),	-- Mail of the Geyser
-							i(50987),	-- Malevolent Girdle
-							i(50974),	-- Meteor Chaser's Raiment
-							i(50467),	-- Might of the Ocean Serpent
-							i(49908),	-- Primordial Saronite
-							i(50358),	-- Purified Lunar Dust
-							i(50470),	-- Recovered Scarlet Onslaught Cape
-							i(41088),	-- Relentless Gladiator's Chain Armor
-							i(41144),	-- Relentless Gladiator's Chain Gauntlets
-							i(41158),	-- Relentless Gladiator's Chain Helm
-							i(41206),	-- Relentless Gladiator's Chain Leggings
-							i(41218),	-- Relentless Gladiator's Chain Spaulders
-							i(41774),	-- Relentless Gladiator's Dragonhide Gloves
-							i(41679),	-- Relentless Gladiator's Dragonhide Helm
-							i(41668),	-- Relentless Gladiator's Dragonhide Legguards
-							i(41662),	-- Relentless Gladiator's Dragonhide Robes
-							i(41716),	-- Relentless Gladiator's Dragonhide Spaulders
-							i(40791),	-- Relentless Gladiator's Dreadplate Chestpiece
-							i(40811),	-- Relentless Gladiator's Dreadplate Gauntlets
-							i(40830),	-- Relentless Gladiator's Dreadplate Helm
-							i(40851),	-- Relentless Gladiator's Dreadplate Legguards
-							i(40871),	-- Relentless Gladiator's Dreadplate Shoulders
-							i(42012),	-- Relentless Gladiator's Felweave Amice
-							i(41994),	-- Relentless Gladiator's Felweave Cowl
-							i(42018),	-- Relentless Gladiator's Felweave Handguards
-							i(41999),	-- Relentless Gladiator's Felweave Raiment
-							i(42006),	-- Relentless Gladiator's Felweave Trousers
-							i(41288),	-- Relentless Gladiator's Kodohide Gloves
-							i(41322),	-- Relentless Gladiator's Kodohide Helm
-							i(41299),	-- Relentless Gladiator's Kodohide Legguards
-							i(41311),	-- Relentless Gladiator's Kodohide Robes
-							i(41276),	-- Relentless Gladiator's Kodohide Spaulders
-							i(41768),	-- Relentless Gladiator's Leather Gloves
-							i(41673),	-- Relentless Gladiator's Leather Helm
-							i(41656),	-- Relentless Gladiator's Leather Legguards
-							i(41684),	-- Relentless Gladiator's Leather Spaulders
-							i(41651),	-- Relentless Gladiator's Leather Tunic
-							i(41082),	-- Relentless Gladiator's Linked Armor
-							i(41138),	-- Relentless Gladiator's Linked Gauntlets
-							i(41152),	-- Relentless Gladiator's Linked Helm
-							i(41200),	-- Relentless Gladiator's Linked Leggings
-							i(41212),	-- Relentless Gladiator's Linked Spaulders
-							i(40995),	-- Relentless Gladiator's Mail Armor
-							i(41008),	-- Relentless Gladiator's Mail Gauntlets
-							i(41020),	-- Relentless Gladiator's Mail Helm
-							i(41034),	-- Relentless Gladiator's Mail Leggings
-							i(41045),	-- Relentless Gladiator's Mail Spaulders
-							i(41875),	-- Relentless Gladiator's Mooncloth Gloves
-							i(41855),	-- Relentless Gladiator's Mooncloth Hood
-							i(41865),	-- Relentless Gladiator's Mooncloth Leggings
-							i(41870),	-- Relentless Gladiator's Mooncloth Mantle
-							i(41860),	-- Relentless Gladiator's Mooncloth Robe
-							i(40910),	-- Relentless Gladiator's Ornamented Chestguard
-							i(40928),	-- Relentless Gladiator's Ornamented Gloves
-							i(40934),	-- Relentless Gladiator's Ornamented Headcover
-							i(40940),	-- Relentless Gladiator's Ornamented Legplates
-							i(40964),	-- Relentless Gladiator's Ornamented Spaulders
-							i(40790),	-- Relentless Gladiator's Plate Chestpiece
-							i(40810),	-- Relentless Gladiator's Plate Gauntlets
-							i(40829),	-- Relentless Gladiator's Plate Helm
-							i(40850),	-- Relentless Gladiator's Plate Legguards
-							i(40870),	-- Relentless Gladiator's Plate Shoulders
-							i(40994),	-- Relentless Gladiator's Ringmail Armor
-							i(41002),	-- Relentless Gladiator's Ringmail Gauntlets
-							i(41014),	-- Relentless Gladiator's Ringmail Helm
-							i(41028),	-- Relentless Gladiator's Ringmail Leggings
-							i(41039),	-- Relentless Gladiator's Ringmail Spaulders
-							i(41941),	-- Relentless Gladiator's Satin Gloves
-							i(41916),	-- Relentless Gladiator's Satin Hood
-							i(41928),	-- Relentless Gladiator's Satin Leggings
-							i(41935),	-- Relentless Gladiator's Satin Mantle
-							i(41922),	-- Relentless Gladiator's Satin Robe
-							i(40792),	-- Relentless Gladiator's Scaled Chestpiece
-							i(40812),	-- Relentless Gladiator's Scaled Gauntlets
-							i(40831),	-- Relentless Gladiator's Scaled Helm
-							i(40852),	-- Relentless Gladiator's Scaled Legguards
-							i(40872),	-- Relentless Gladiator's Scaled Shoulders
-							i(41966),	-- Relentless Gladiator's Silk Amice
-							i(41947),	-- Relentless Gladiator's Silk Cowl
-							i(41972),	-- Relentless Gladiator's Silk Handguards
-							i(41954),	-- Relentless Gladiator's Silk Raiment
-							i(41960),	-- Relentless Gladiator's Silk Trousers
-							i(41294),	-- Relentless Gladiator's Wyrmhide Gloves
-							i(41328),	-- Relentless Gladiator's Wyrmhide Helm
-							i(41305),	-- Relentless Gladiator's Wyrmhide Legguards
-							i(41317),	-- Relentless Gladiator's Wyrmhide Robes
-							i(41282),	-- Relentless Gladiator's Wyrmhide Spaulders
-							i(50466),	-- Sentinel's Winter Cloak
-							i(50972),	-- Shadow Seeker's Tunic
-							i(50995),	-- Vengeful Noose
-							i(50991),	-- Verdigris Chain Belt
-							i(50973),	-- Vestments of Spruce and Fir
-							i(50469),	-- Volde's Cloak of the Night Sky
-							i(50992),	-- Waistband of Despair
-						},
-					}),
+						["groups"] = EMBLEM_OF_FROST_QUARTERMASTER_GROUPS,
+					})),
 					n(32287, {	-- Archmage Alvareaux <Kirin Tor Quartermaster>
 						["coord"] = { 25.2, 47.8, NORTHREND_DALARAN },
 						["groups"] = {
@@ -5665,8 +8729,13 @@ root("Zones", {
 					n(29499, {	-- Bartram Haller <Dagger & Fist Weapon Merchant>
 						["coord"] = { 53.5, 62.4, NORTHREND_DALARAN },
 						["groups"] = {
-							i(40704),	-- Pride
-							i(40702),	-- Rolfsen's Ripper
+							i(44652),	-- Dalaran Dagger
+							i(44644, {	-- Dalaran Dart
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(44641),	-- Dalaran Knuckles
+							emoh(50, i(40704)),	-- Pride
+							emoh(50, i(40702)),	-- Rolfsen's Ripper
 							emoh(15, i(40716, {	-- Lillehoff's Winged Blades
 								["timeline"] = { "removed 5.0.4" },
 							})),
@@ -5827,264 +8896,34 @@ root("Zones", {
 					n(29523, {	-- Bragund Brightlink <Mail Armor Merchant>
 						["coord"] = { 51.2, 72.8, NORTHREND_DALARAN },
 						["groups"] = {
-							i(40736),	-- Armguard of the Tower Archer
-							i(50993),	-- Band of the Night Raven
-							i(40693),	-- Beadwork Belt of Shamanic Vision
-							i(45827),	-- Belt of the Ardent Marksman
-							i(50980),	-- Blizzard Keeper's Mitts
-							i(46142, {	-- Conqueror's Scourgestalker Handguards
-								["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
-							}),
-							i(46143, {	-- Conqueror's Scourgestalker Headpiece
-								["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
-							}),
-							i(46144, {	-- Conqueror's Scourgestalker Legguards
-								["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
-							}),
-							i(46145, {	-- Conqueror's Scourgestalker Spaulders
-								["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
-							}),
-							i(46141, {	-- Conqueror's Scourgestalker Tunic
-								["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
-							}),
-							i(46205, {	-- Conqueror's Worldbreaker Chestguard
-								["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
-							}),
-							i(46212, {	-- Conqueror's Worldbreaker Faceguard
-								["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
-							}),
-							i(46207, {	-- Conqueror's Worldbreaker Gloves
-								["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
-							}),
-							i(46200, {	-- Conqueror's Worldbreaker Grips
-								["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
-							}),
-							i(46199, {	-- Conqueror's Worldbreaker Handguards
-								["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
-							}),
-							i(46206, {	-- Conqueror's Worldbreaker Hauberk
-								["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
-							}),
-							i(46201, {	-- Conqueror's Worldbreaker Headpiece
-								["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
-							}),
-							i(46209, {	-- Conqueror's Worldbreaker Helm
-								["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
-							}),
-							i(46210, {	-- Conqueror's Worldbreaker Kilt
-								["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
-							}),
-							i(46202, {	-- Conqueror's Worldbreaker Legguards
-								["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
-							}),
-							i(46203, {	-- Conqueror's Worldbreaker Shoulderguards
-								["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
-							}),
-							i(46211, {	-- Conqueror's Worldbreaker Shoulderpads
-								["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
-							}),
-							i(46204, {	-- Conqueror's Worldbreaker Spaulders
-								["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
-							}),
-							i(46198, {	-- Conqueror's Worldbreaker Tunic
-								["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
-							}),
-							i(46208, {	-- Conqueror's Worldbreaker War-Kilt
-								["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
-							}),
-							i(45837),	-- Gloves of Augury
-							i(45836),	-- Gloves of Unerring Aim
-							i(39582, {	-- Heroes' Cryptstalker Handguards
-								["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
-							}),
-							i(39578, {	-- Heroes' Cryptstalker Headpiece
-								["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
-							}),
-							i(39580, {	-- Heroes' Cryptstalker Legguards
-								["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
-							}),
-							i(39581, {	-- Heroes' Cryptstalker Spaulders
-								["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
-							}),
-							i(39579, {	-- Heroes' Cryptstalker Tunic
-								["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
-							}),
-							i(39597, {	-- Heroes' Earthshatter Chestguard
-								["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
-							}),
-							i(39602, {	-- Heroes' Earthshatter Faceguard
-								["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
-							}),
-							i(39593, {	-- Heroes' Earthshatter Gloves
-								["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
-							}),
-							i(39601, {	-- Heroes' Earthshatter Grips
-								["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
-							}),
-							i(39591, {	-- Heroes' Earthshatter Handguards
-								["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
-							}),
-							i(39592, {	-- Heroes' Earthshatter Hauberk
-								["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
-							}),
-							i(39583, {	-- Heroes' Earthshatter Headpiece
-								["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
-							}),
-							i(39594, {	-- Heroes' Earthshatter Helm
-								["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
-							}),
-							i(39595, {	-- Heroes' Earthshatter Kilt
-								["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
-							}),
-							i(39589, {	-- Heroes' Earthshatter Legguards
-								["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
-							}),
-							i(39604, {	-- Heroes' Earthshatter Shoulderguards
-								["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
-							}),
-							i(39596, {	-- Heroes' Earthshatter Shoulderpads
-								["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
-							}),
-							i(39590, {	-- Heroes' Earthshatter Spaulders
-								["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
-							}),
-							i(39588, {	-- Heroes' Earthshatter Tunic
-								["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
-							}),
-							i(39603, {	-- Heroes' Earthshatter War-Kilt
-								["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
-							}),
-							i(45844),	-- Leggings of the Tireless Sentry
-							i(45845),	-- Leggings of the Weary Mystic
-							i(50979),	-- Logsplitters
-							i(50970),	-- Longstrider's Vest
-							i(50971),	-- Mail of the Geyser
-							i(40746),	-- Pack-Ice Striders
-							i(40737),	-- Pigmented Clan Bindings
-							i(40747),	-- Treads of Coastal Wandering
-							i(40504, {	-- Valorous Cryptstalker Handguards
-								["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
-							}),
-							i(40505, {	-- Valorous Cryptstalker Headpiece
-								["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
-							}),
-							i(40506, {	-- Valorous Cryptstalker Legguards
-								["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
-							}),
-							i(40507, {	-- Valorous Cryptstalker Spaulders
-								["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
-							}),
-							i(40503, {	-- Valorous Cryptstalker Tunic
-								["cost"] = { { "i", 40626, 1 }, },	-- Breastlplate of the Lost Protector
-							}),
-							i(40523, {	-- Valorous Earthshatter Chestguard
-								["cost"] = { { "i", 40626, 1 }, },	-- Breastplate of the Lost Protector
-							}),
-							i(40521, {	-- Valorous Earthshatter Faceguard
-								["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
-							}),
-							i(40515, {	-- Valorous Earthshatter Gloves
-								["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
-							}),
-							i(40520, {	-- Valorous Earthshatter Grips
-								["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
-							}),
-							i(40509, {	-- Valorous Earthshatter Handguards
-								["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
-							}),
-							i(40514, {	-- Valorous Earthshatter Hauberk
-								["cost"] = { { "i", 40626, 1 }, },	-- Breastplate of the Lost Protector
-							}),
-							i(40510, {	-- Valorous Earthshatter Headpiece
-								["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
-							}),
-							i(40516, {	-- Valorous Earthshatter Helm
-								["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
-							}),
-							i(40517, {	-- Valorous Earthshatter Kilt
-								["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
-							}),
-							i(40512, {	-- Valorous Earthshatter Legguards
-								["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
-							}),
-							i(40524, {	-- Valorous Earthshatter Shoulderguards
-								["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
-							}),
-							i(40518, {	-- Valorous Earthshatter Shoulderpads
-								["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
-							}),
-							i(40513, {	-- Valorous Earthshatter Spaulders
-								["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
-							}),
-							i(40508, {	-- Valorous Earthshatter Tunic
-								["cost"] = { { "i", 40626, 1 }, },	-- Breastplate of the Lost Protector
-							}),
-							i(40522, {	-- Valorous Earthshatter War-Kilt
-								["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
-							}),
-							i(45360, {	-- Valorous Scourgestalker Handguards
-								["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
-							}),
-							i(45361, {	-- Valorous Scourgestalker Headpiece
-								["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
-							}),
-							i(45362, {	-- Valorous Scourgestalker Legguards
-								["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
-							}),
-							i(45363, {	-- Valorous Scourgestalker Spaulders
-								["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
-							}),
-							i(45364, {	-- Valorous Scourgestalker Tunic
-								["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
-							}),
-							i(45413, {	-- Valorous Worldbreaker Chestguard
-								["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
-							}),
-							i(45412, {	-- Valorous Worldbreaker Faceguard
-								["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
-							}),
-							i(45406, {	-- Valorous Worldbreaker Gloves
-								["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
-							}),
-							i(45414, {	-- Valorous Worldbreaker Grips
-								["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
-							}),
-							i(45401, {	-- Valorous Worldbreaker Handguards
-								["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
-							}),
-							i(45411, {	-- Valorous Worldbreaker Hauberk
-								["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
-							}),
-							i(45402, {	-- Valorous Worldbreaker Headpiece
-								["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
-							}),
-							i(45408, {	-- Valorous Worldbreaker Helm
-								["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
-							}),
-							i(45409, {	-- Valorous Worldbreaker Kilt
-								["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
-							}),
-							i(45403, {	-- Valorous Worldbreaker Legguards
-								["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
-							}),
-							i(45415, {	-- Valorous Worldbreaker Shoulderguards
-								["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
-							}),
-							i(45410, {	-- Valorous Worldbreaker Shoulderpads
-								["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
-							}),
-							i(45404, {	-- Valorous Worldbreaker Spaulders
-								["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
-							}),
-							i(45405, {	-- Valorous Worldbreaker Tunic
-								["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
-							}),
-							i(45416, {	-- Valorous Worldbreaker War-Kilt
-								["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
-							}),
-							i(40692),	-- Vereesa's Silver Chain Belt
-							i(50992),	-- Waistband of Despair
-							i(45828),	-- Windchill Binding
+							cl(HUNTER, appendGroups(
+								TIER_EIGHT_HEROIC_GROUPS.HUNTER,
+								TIER_EIGHT_GROUPS.HUNTER,
+								TIER_SEVEN_HEROIC_GROUPS.HUNTER,
+								TIER_SEVEN_GROUPS.HUNTER, {})),
+							cl(SHAMAN, appendGroups(
+								TIER_EIGHT_HEROIC_GROUPS.SHAMAN,
+								TIER_EIGHT_GROUPS.SHAMAN,
+								TIER_SEVEN_HEROIC_GROUPS.SHAMAN,
+								TIER_SEVEN_GROUPS.SHAMAN, {})),
+							emov(60, i(40736)),	-- Armguard of the Tower Archer
+							emof(60, i(50993)),	-- Band of the Night Raven
+							emoh(40, i(40693)),	-- Beadwork Belt of Shamanic Vision
+							emoc(28, i(45827)),	-- Belt of the Ardent Marksman
+							emof(60, i(50980)),	-- Blizzard Keeper's Mitts
+							emoc(28, i(45837)),	-- Gloves of Augury
+							emoc(28, i(45836)),	-- Gloves of Unerring Aim
+							emoc(39, i(45844)),	-- Leggings of the Tireless Sentry
+							emoc(39, i(45845)),	-- Leggings of the Weary Mystic
+							emof(60, i(50979)),	-- Logsplitters
+							emof(95, i(50970)),	-- Longstrider's Vest
+							emof(95, i(50971)),	-- Mail of the Geyser
+							emov(40, i(40746)),	-- Pack-Ice Striders
+							emov(60, i(40737)),	-- Pigmented Clan Bindings
+							emov(40, i(40747)),	-- Treads of Coastal Wandering
+							emoh(40, i(40692)),	-- Vereesa's Silver Chain Belt
+							emof(60, i(50992)),	-- Waistband of Despair
+							emoc(28, i(45828)),	-- Windchill Binding
 						},
 					}),
 					n(32509, {	-- Brammold Deepmine <Antiques & Heirlooms>
@@ -6184,18 +9023,22 @@ root("Zones", {
 						},
 					}),
 					n(28699, {	-- Charles Worth <Tailoring Trainer>
+						-- #if AFTER 6.2.2
 						["description"] = "You can now learn these recipes even if the achievements have been completed on a different character.  If your tailor isn't your main, rejoice!  Just speak to Charles Worth and tell him you're ready to learn the patterns.",
+						-- #endif
 						["coord"] = { 36.3, 33.4, NORTHREND_DALARAN },
+						["requireSkill"] = TAILORING,
 						["groups"] = {
-							ach(41, {	-- Loremaster of Northrend
-								recipe(56017, {	-- Deathchill Cloak
-									["requireSkill"] = TAILORING,
-								}),
+							-- TODO: Maybe convert the sym into an OnTooltip?
+							recipe(56017, {	-- Deathchill Cloak
+								["description"] = "In order to learn this recipe, you must have the Loremaster of Northrend achievement completed.",
+								["sym"] = {{ "select", "achievementID", 41, 1360 },{ "pop" }},	-- Loremaster of Northrend
+								["requireSkill"] = TAILORING,
 							}),
-							ach(1288, {	-- Northrend Dungeonmaster
-								recipe(56016, {	-- Wispcloak
-									["requireSkill"] = TAILORING,
-								}),
+							recipe(56016, {	-- Wispcloak
+								["description"] = "In order to learn this recipe, you must have the Northrend Dungeonmaster achievement completed.",
+								["sym"] = {{ "select", "achievementID", 1288 },{ "pop" }},	-- Northrend Dungeonmaster
+								["requireSkill"] = TAILORING,
 							}),
 						},
 					}),
@@ -6240,18 +9083,18 @@ root("Zones", {
 					n(29528, {	-- Debbi Moore <Trinkets & Charms>
 						["coord"] = { 49.7, 55.5, NORTHREND_DALARAN },
 						["groups"] = {
-							i(50356),	-- Corroded Skeleton Key
-							i(47735),	-- Glyph of Indomitability
-							i(50355),	-- Herkuml War Token
-							i(50357),	-- Maghia's Misguided Quill
-							i(47734),	-- Mark of Supremacy
-							i(40684),	-- Mirror of Truth
-							i(50358),	-- Purified Lunar Dust
-							i(48722),	-- Shard of the Crystal Heart
-							i(40682),	-- Sundial of the Exiled
-							i(48724),	-- Talisman of Resurgence
-							i(40685),	-- The Egg of Mortal Essence
-							i(40683),	-- Valor Medal of the First War
+							emof(60, i(50356)),	-- Corroded Skeleton Key
+							emot(50, i(47735)),	-- Glyph of Indomitability
+							emof(60, i(50355)),	-- Herkuml War Token
+							emof(60, i(50357)),	-- Maghia's Misguided Quill
+							emot(50, i(47734)),	-- Mark of Supremacy
+							emoh(40, i(40684)),	-- Mirror of Truth
+							emof(60, i(50358)),	-- Purified Lunar Dust
+							emot(50, i(48722)),	-- Shard of the Crystal Heart
+							emoh(40, i(40682)),	-- Sundial of the Exiled
+							emot(50, i(48724)),	-- Talisman of Resurgence
+							emoh(40, i(40685)),	-- The Egg of Mortal Essence
+							emoh(40, i(40683)),	-- Valor Medal of the First War
 						},
 					}),
 					n(31032, {	-- Derek Odds <Cooking Supplies>
@@ -6346,251 +9189,19 @@ root("Zones", {
 					n(34252, {	-- Dubin Clay <Plate Armor Merchant>
 						["coord"] = { 46.2, 27.2, NORTHREND_DALARAN },
 						["groups"] = {
-							i(46154, {	-- Conqueror's Aegis Battleplate
-								["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
-							}),
-							i(46173, {	-- Conqueror's Aegis Breastplate
-								["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
-							}),
-							i(46175, {	-- Conqueror's Aegis Faceguard
-								["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
-							}),
-							i(46155, {	-- Conqueror's Aegis Gauntlets
-								["cost"] = { { "i", 45641, 1 }, },	-- Gauntlets of the Wayward Conqueror
-							}),
-							i(46179, {	-- Conqueror's Aegis Gloves
-								["cost"] = { { "i", 45641, 1 }, },	-- Gauntlets of the Wayward Conqueror
-							}),
-							i(46181, {	-- Conqueror's Aegis Greaves
-								["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
-							}),
-							i(46174, {	-- Conqueror's Aegis Handguards
-								["cost"] = { { "i", 45641, 1 }, },	-- Gauntlets of the Wayward Conqueror
-							}),
-							i(46180, {	-- Conqueror's Aegis Headpiece
-								["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
-							}),
-							i(46156, {	-- Conqueror's Aegis Helm
-								["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
-							}),
-							i(46176, {	-- Conqueror's Aegis Legguards
-								["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
-							}),
-							i(46153, {	-- Conqueror's Aegis Legplates
-								["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
-							}),
-							i(46177, {	-- Conqueror's Aegis Shoulderguards
-								["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
-							}),
-							i(46152, {	-- Conqueror's Aegis Shoulderplates
-								["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
-							}),
-							i(46182, {	-- Conqueror's Aegis Spaulders
-								["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
-							}),
-							i(46178, {	-- Conqueror's Aegis Tunic
-								["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
-							}),
-							i(46111, {	-- Conqueror's Darkruned Battleplate
-								["cost"] = { { "i", 45634, 1 }, },	-- Breastplate of the Wayward Vanquisher
-							}),
-							i(46118, {	-- Conqueror's Darkruned Chestguard
-								["cost"] = { { "i", 45634, 1 }, },	-- Breastplate of the Wayward Vanquisher
-							}),
-							i(46120, {	-- Conqueror's Darkruned Faceguard
-								["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
-							}),
-							i(46113, {	-- Conqueror's Darkruned Gauntlets
-								["cost"] = { { "i", 45643, 1 }, },	-- Gauntlets of the Wayward Vanquisher
-							}),
-							i(46119, {	-- Conqueror's Darkruned Handguards
-								["cost"] = { { "i", 45643, 1 }, },	-- Gauntlets of the Wayward Vanquisher
-							}),
-							i(46115, {	-- Conqueror's Darkruned Helmet
-								["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
-							}),
-							i(46121, {	-- Conqueror's Darkruned Legguards
-								["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
-							}),
-							i(46116, {	-- Conqueror's Darkruned Legplates
-								["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
-							}),
-							i(46122, {	-- Conqueror's Darkruned Pauldrons
-								["cost"] = { { "i", 45658, 1 }, },	-- Mantle of the Wayward Vanquisher
-							}),
-							i(46117, {	-- Conqueror's Darkruned Shoulderplates
-								["cost"] = { { "i", 45658, 1 }, },	-- Mantle of the Wayward Vanquisher
-							}),
-							i(46146, {	-- Conqueror's Siegebreaker Battleplate
-								["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
-							}),
-							i(46162, {	-- Conqueror's Siegebreaker Breastplate
-								["cost"] = { { "i", 45633, 1 }, },	-- Breastplate of the Wayward Protector
-							}),
-							i(46148, {	-- Conqueror's Siegebreaker Gauntlets
-								["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
-							}),
-							i(46166, {	-- Conqueror's Siegebreaker Greathelm
-								["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
-							}),
-							i(46164, {	-- Conqueror's Siegebreaker Handguards
-								["cost"] = { { "i", 45642, 1 }, },	-- Gauntlets of the Wayward Protector
-							}),
-							i(46151, {	-- Conqueror's Siegebreaker Helmet
-								["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
-							}),
-							i(46169, {	-- Conqueror's Siegebreaker Legguards
-								["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
-							}),
-							i(46150, {	-- Conqueror's Siegebreaker Legplates
-								["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
-							}),
-							i(46167, {	-- Conqueror's Siegebreaker Pauldrons
-								["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
-							}),
-							i(46149, {	-- Conqueror's Siegebreaker Shoulderplates
-								["cost"] = { { "i", 45657, 1 }, },	-- Mantle of the Wayward Protector
-							}),
-							i(48474),	-- Thassarian's Battleplate of Conquest
-							i(48531),	-- Thassarian's Chestguard of Conquest
-							i(48529),	-- Thassarian's Faceguard of Conquest
-							i(48480),	-- Thassarian's Gauntlets of Conquest
-							i(48537),	-- Thassarian's Handguards of Conquest
-							i(48472),	-- Thassarian's Helmet of Conquest
-							i(48533),	-- Thassarian's Legguards of Conquest
-							i(48476),	-- Thassarian's Legplates of Conquest
-							i(48535),	-- Thassarian's Pauldrons of Conquest
-							i(48478),	-- Thassarian's Shoulderplates of Conquest
-							i(48602),	-- Turalyon's Battleplate of Conquest
-							i(48632),	-- Turalyon's Breastplate of Conquest
-							i(48634),	-- Turalyon's Faceguard of Conquest
-							i(48603),	-- Turalyon's Gauntlets of Conquest
-							i(48574),	-- Turalyon's Gloves of Conquest
-							i(48568),	-- Turalyon's Greaves of Conquest
-							i(48633),	-- Turalyon's Handguards of Conquest
-							i(48564),	-- Turalyon's Headpiece of Conquest
-							i(48604),	-- Turalyon's Helm of Conquest
-							i(48635),	-- Turalyon's Legguards of Conquest
-							i(48605),	-- Turalyon's Legplates of Conquest
-							i(48636),	-- Turalyon's Shoulderguards of Conquest
-							i(48606),	-- Turalyon's Shoulderplates of Conquest
-							i(48572),	-- Turalyon's Spaulders of Conquest
-							i(48566),	-- Turalyon's Tunic of Conquest
-							i(45375, {	-- Valorous Aegis Battleplate
-								["cost"] = { { "i", 45635, 1 }, },	-- Chestguard of the Wayward Conqueror
-							}),
-							i(45381, {	-- Valorous Aegis Breastplate
-								["cost"] = { { "i", 45635, 1 }, },	-- Chestguard of the Wayward Conqueror
-							}),
-							i(45382, {	-- Valorous Aegis Faceguard
-								["cost"] = { { "i", 45647, 1 }, },	-- Helm of the Wayward Conqueror
-							}),
-							i(45376, {	-- Valorous Aegis Gauntlets
-								["cost"] = { { "i", 45644, 1 }, },	-- Gloves of the Wayward Conqueror
-							}),
-							i(45370, {	-- Valorous Aegis Gloves
-								["cost"] = { { "i", 45644, 1 }, },	-- Gloves of the Wayward Conqueror
-							}),
-							i(45371, {	-- Valorous Aegis Greaves
-								["cost"] = { { "i", 45650, 1 }, },	-- Leggings of the Wayward Conqueror
-							}),
-							i(45383, {	-- Valorous Aegis Handguards
-								["cost"] = { { "i", 45644, 1 }, },	-- Gloves of the Wayward Conqueror
-							}),
-							i(45372, {	-- Valorous Aegis Headpiece
-								["cost"] = { { "i", 45647, 1 }, },	-- Helm of the Wayward Conqueror
-							}),
-							i(45377, {	-- Valorous Aegis Helm
-								["cost"] = { { "i", 45647, 1 }, },	-- Helm of the Wayward Conqueror
-							}),
-							i(45384, {	-- Valorous Aegis Legguards
-								["cost"] = { { "i", 45650, 1 }, },	-- Leggings of the Wayward Conqueror
-							}),
-							i(45379, {	-- Valorous Aegis Legplates
-								["cost"] = { { "i", 45650, 1 }, },	-- Leggings of the Wayward Conqueror
-							}),
-							i(45385, {	-- Valorous Aegis Shoulderguards
-								["cost"] = { { "i", 45659, 1 }, },	-- Spaulders of the Wayward Conqueror
-							}),
-							i(45380, {	-- Valorous Aegis Shoulderplates
-								["cost"] = { { "i", 45659, 1 }, },	-- Spaulders of the Wayward Conqueror
-							}),
-							i(45373, {	-- Valorous Aegis Spaulders
-								["cost"] = { { "i", 45659, 1 }, },	-- Spaulders of the Wayward Conqueror
-							}),
-							i(45374, {	-- Valorous Aegis Tunic
-								["cost"] = { { "i", 45635, 1 }, },	-- Chestguard of the Wayward Conqueror
-							}),
-							i(45340, {	-- Valorous Darkruned Battleplate
-								["cost"] = { { "i", 45637, 1 }, },	-- Chestguard of the Wayward Vanquisher
-							}),
-							i(45335, {	-- Valorous Darkruned Chestguard
-								["cost"] = { { "i", 45637, 1 }, },	-- Chestguard of the Wayward Vanquisher
-							}),
-							i(45336, {	-- Valorous Darkruned Faceguard
-								["cost"] = { { "i", 45649, 1 }, },	-- Helm
-							}),
-							i(45341, {	-- Valorous Darkruned Gauntlets
-								["cost"] = { { "i", 45646, 1 }, },	-- Gloves
-							}),
-							i(45337, {	-- Valorous Darkruned Handguards
-								["cost"] = { { "i", 45646, 1 }, },	-- Gloves
-							}),
-							i(45342, {	-- Valorous Darkruned Helmet
-								["cost"] = { { "i", 45649, 1 }, },	-- Helm
-							}),
-							i(45338, {	-- Valorous Darkruned Legguards
-								["cost"] = { { "i", 45652, 1 }, },	-- Leggings
-							}),
-							i(45343, {	-- Valorous Darkruned Legplates
-								["cost"] = { { "i", 45652, 1 }, },	-- Leggings
-							}),
-							i(45339, {	-- Valorous Darkruned Pauldrons
-								["cost"] = { { "i", 45661, 1 }, },	-- Spaulders
-							}),
-							i(45344, {	-- Valorous Darkruned Shoulderplates
-								["cost"] = { { "i", 45661, 1 }, },	-- Spaulders
-							}),
-							i(45429, {	-- Valorous Siegebreaker Battleplate
-								["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
-							}),
-							i(45424, {	-- Valorous Siegebreaker Breastplate
-								["cost"] = { { "i", 45636, 1 }, },	-- Chestguard of the Wayward Protector
-							}),
-							i(45430, {	-- Valorous Siegebreaker Gauntlets
-								["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
-							}),
-							i(45425, {	-- Valorous Siegebreaker Greathelm
-								["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
-							}),
-							i(45426, {	-- Valorous Siegebreaker Handguards
-								["cost"] = { { "i", 45645, 1 }, },	-- Gloves of the Wayward Protector
-							}),
-							i(45431, {	-- Valorous Siegebreaker Helmet
-								["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
-							}),
-							i(45427, {	-- Valorous Siegebreaker Legguards
-								["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
-							}),
-							i(45432, {	-- Valorous Siegebreaker Legplates
-								["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
-							}),
-							i(45428, {	-- Valorous Siegebreaker Pauldrons
-								["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
-							}),
-							i(45433, {	-- Valorous Siegebreaker Shoulderplates
-								["cost"] = { { "i", 45660, 1 }, },	-- Spaulders of the Wayward Protector
-							}),
-							i(48372),	-- Wrynn's Battleplate of Conquest
-							i(48436),	-- Wrynn's Breastplate of Conquest
-							i(48375),	-- Wrynn's Gauntlets of Conquest
-							i(48429),	-- Wrynn's Greathelm of Conquest
-							i(48449),	-- Wrynn's Handguards of Conquest
-							i(48371),	-- Wrynn's Helmet of Conquest
-							i(48445),	-- Wrynn's Legguards of Conquest
-							i(48373),	-- Wrynn's Legplates of Conquest
-							i(48448),	-- Wrynn's Pauldrons of Conquest
-							i(48374),	-- Wrynn's Shoulderplates of Conquest
+							-- NOTE: This vendor doesn't sell the horde T9.
+							cl(DEATHKNIGHT, appendGroups(
+								TIER_NINE_GROUPS.DEATHKNIGHT_A,
+								TIER_EIGHT_HEROIC_GROUPS.DEATHKNIGHT,
+								TIER_EIGHT_GROUPS.DEATHKNIGHT, {})),
+							cl(PALADIN, appendGroups(
+								TIER_NINE_GROUPS.PALADIN_A,
+								TIER_EIGHT_HEROIC_GROUPS.PALADIN,
+								TIER_EIGHT_GROUPS.PALADIN, {})),
+							cl(WARRIOR, appendGroups(
+								TIER_NINE_GROUPS.WARRIOR_A,
+								TIER_EIGHT_HEROIC_GROUPS.WARRIOR,
+								TIER_EIGHT_GROUPS.WARRIOR, {})),
 						},
 					}),
 					n(35508, {	-- Enchanter Erodin <Heirloom Vendor>
@@ -6658,6 +9269,7 @@ root("Zones", {
 						},
 					}),
 					n(28776, {	-- Elizabeth Ross <Tabard Vendor>
+						-- TODO: Do something with Tabard Vendors, they're out of control.
 						["coord"] = { 51.8, 55.8, NORTHREND_DALARAN },
 						["groups"] = {
 							i(31779),	-- Aldor Tabard
@@ -6803,243 +9415,42 @@ root("Zones", {
 					n(28997, {	-- Griselda Hunderland <Plate Armor Merchant>
 						["coord"] = { 46.3, 27.2, NORTHREND_DALARAN },
 						["groups"] = {
-							i(45824),	-- Belt of the Singing Blade
-							i(45833),	-- Bladebreaker Gauntlets
-							i(40742),	-- Bladed Steelboots
-							i(40734),	-- Bracers of Dalaran's Parapets
-							i(50965),	-- Castle Breaker's Battleplate
-							i(50968),	-- Cataclysmic Chestguard
-							i(50969),	-- Chestplate of Unspoken Truths
-							i(50977),	-- Gatecrasher's Gauntlets
-							i(50976),	-- Gauntlets of Overexposure
-							i(45835),	-- Gauntlets of Serene Blessing
-							i(50978),	-- Gauntlets of the Kraken
-							i(45834),	-- Gauntlets of the Royal Watch
-							i(45826),	-- Girdle of Unyielding Trust
-							i(39606, {	-- Heroes' Dreadnaught Battleplate
-								["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
-							}),
-							i(39611, {	-- Heroes' Dreadnaught Breastplate
-								["cost"] = { { "i", 40611, 1 }, },	-- Chestguard of the Lost Protector
-							}),
-							i(39609, {	-- Heroes' Dreadnaught Gauntlets
-								["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
-							}),
-							i(39610, {	-- Heroes' Dreadnaught Greathelm
-								["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
-							}),
-							i(39622, {	-- Heroes' Dreadnaught Handguards
-								["cost"] = { { "i", 40614, 1 }, },	-- Gloves of the Lost Protector
-							}),
-							i(39605, {	-- Heroes' Dreadnaught Helmet
-								["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
-							}),
-							i(39612, {	-- Heroes' Dreadnaught Legguards
-								["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
-							}),
-							i(39607, {	-- Heroes' Dreadnaught Legplates
-								["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
-							}),
-							i(39613, {	-- Heroes' Dreadnaught Pauldrons
-								["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
-							}),
-							i(39608, {	-- Heroes' Dreadnaught Shoulderplates
-								["cost"] = { { "i", 40623, 1 }, },	-- Spaulders of the Lost Protector
-							}),
-							i(39638, {	-- Heroes' Redemption Breastplate
-								["cost"] = { { "i", 40610, 1 }, },	-- Chestguard of the Lost Conqueror
-							}),
-							i(39633, {	-- Heroes' Redemption Chestpiece
-								["cost"] = { { "i", 40610, 1 }, },	-- Chestguard of the Lost Conqueror
-							}),
-							i(39640, {	-- Heroes' Redemption Faceguard
-								["cost"] = { { "i", 40616, 1 }, },	-- Helm of the Lost Conqueror
-							}),
-							i(39634, {	-- Heroes' Redemption Gauntlets
-								["cost"] = { { "i", 40613, 1 }, },	-- Gloves of the Lost Conqueror
-							}),
-							i(39632, {	-- Heroes' Redemption Gloves
-								["cost"] = { { "i", 40613, 1 }, },	-- Gloves of the Lost Conqueror
-							}),
-							i(39630, {	-- Heroes' Redemption Greaves
-								["cost"] = { { "i", 40619, 1 }, },	-- Leggings of the Lost Conqueror
-							}),
-							i(39639, {	-- Heroes' Redemption Handguards
-								["cost"] = { { "i", 40613, 1 }, },	-- Gloves of the Lost Conqueror
-							}),
-							i(39628, {	-- Heroes' Redemption Headpiece
-								["cost"] = { { "i", 40616, 1 }, },	-- Helm of the Lost Conqueror
-							}),
-							i(39635, {	-- Heroes' Redemption Helm
-								["cost"] = { { "i", 40616, 1 }, },	-- Helm of the Lost Conqueror
-							}),
-							i(39641, {	-- Heroes' Redemption Legguards
-								["cost"] = { { "i", 40619, 1 }, },	-- Leggings of the Lost Conqueror
-							}),
-							i(39636, {	-- Heroes' Redemption Legplates
-								["cost"] = { { "i", 40619, 1 }, },	-- Leggings of the Lost Conqueror
-							}),
-							i(39642, {	-- Heroes' Redemption Shoulderguards
-								["cost"] = { { "i", 40622, 1 }, },	-- Spaulders of the Lost Conqueror
-							}),
-							i(39637, {	-- Heroes' Redemption Shoulderplates
-								["cost"] = { { "i", 40622, 1 }, },	-- Spaulders of the Lost Conqueror
-							}),
-							i(39631, {	-- Heroes' Redemption Spaulders
-								["cost"] = { { "i", 40622, 1 }, },	-- Spaulders of the Lost Conqueror
-							}),
-							i(39629, {	-- Heroes' Redemption Tunic
-								["cost"] = { { "i", 40610, 1 }, },	-- Chestguard of the Lost Conqueror
-							}),
-							i(39617, {	-- Heroes' Scourgeborne Battleplate
-								["cost"] = { { "i", 40612, 1 }, },	-- Chestguard of the Lost Vanquisher
-							}),
-							i(39623, {	-- Heroes' Scourgeborne Chestguard
-								["cost"] = { { "i", 40612, 1 }, },	-- Chestguard of the Lost Vanquisher
-							}),
-							i(39625, {	-- Heroes' Scourgeborne Faceguard
-								["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
-							}),
-							i(39618, {	-- Heroes' Scourgeborne Gauntlets
-								["cost"] = { { "i", 40615, 1 }, },	-- Gloves of the Lost Vanquisher
-							}),
-							i(39624, {	-- Heroes' Scourgeborne Handguards
-								["cost"] = { { "i", 40615, 1 }, },	-- Gloves of the Lost Vanquisher
-							}),
-							i(39619, {	-- Heroes' Scourgeborne Helmet
-								["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
-							}),
-							i(39626, {	-- Heroes' Scourgeborne Legguards
-								["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
-							}),
-							i(39620, {	-- Heroes' Scourgeborne Legplates
-								["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
-							}),
-							i(39627, {	-- Heroes' Scourgeborne Pauldrons
-								["cost"] = { { "i", 40624, 1 }, },	-- Spaulders of the Lost Vanquisher
-							}),
-							i(39621, {	-- Heroes' Scourgeborne Shoulderplates
-								["cost"] = { { "i", 40624, 1 }, },	-- Spaulders of the Lost Vanquisher
-							}),
-							i(40743),	-- Kyzoc's Ground Stompers
-							i(45843),	-- Legguards of the Peaceful Covenant
-							i(45841),	-- Legplates of the Violet Champion
-							i(50989),	-- Lich Killer's Lanyard
-							i(40691),	-- Magroth's Meditative Cincture
-							i(50987),	-- Malevolent Girdle
-							i(40745),	-- Sabatons of Rapid Recovery
-							i(45825),	-- Shieldwarder Girdle
-							i(40525, {	-- Valorous Dreadnaught Battleplate
-								["cost"] = { { "i", 40626, 1 }, },	-- Breastplate of the Lost Protector
-							}),
-							i(40544, {	-- Valorous Dreadnaught Breastplate
-								["cost"] = { { "i", 40626, 1 }, },	-- Breastplate of the Lost Protector
-							}),
-							i(40527, {	-- Valorous Dreadnaught Gauntlets
-								["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
-							}),
-							i(40546, {	-- Valorous Dreadnaught Greathelm
-								["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
-							}),
-							i(40545, {	-- Valorous Dreadnaught Handguards
-								["cost"] = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
-							}),
-							i(40528, {	-- Valorous Dreadnaught Helmet
-								["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
-							}),
-							i(40547, {	-- Valorous Dreadnaught Legguards
-								["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
-							}),
-							i(40529, {	-- Valorous Dreadnaught Legplates
-								["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
-							}),
-							i(40548, {	-- Valorous Dreadnaught Pauldrons
-								["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
-							}),
-							i(40530, {	-- Valorous Dreadnaught Shoulderplates
-								["cost"] = { { "i", 40638, 1 }, },	-- Mantle of the Lost Protector
-							}),
-							i(40579, {	-- Valorous Redemption Breastplate
-								["cost"] = { { "i", 40625, 1 }, },	-- Breastplate of the Lost Conqueror
-							}),
-							i(40574, {	-- Valorous Redemption Chestpiece
-								["cost"] = { { "i", 40625, 1 }, },	-- Breastplate of the Lost Conqueror
-							}),
-							i(40581, {	-- Valorous Redemption Faceguard
-								["cost"] = { { "i", 40631, 1 }, },	-- Crown of the Lost Conqueror
-							}),
-							i(40575, {	-- Valorous Redemption Gauntlets
-								["cost"] = { { "i", 40628, 1 }, },	-- Gauntlets of the Lost Conqueror
-							}),
-							i(40570, {	-- Valorous Redemption Gloves
-								["cost"] = { { "i", 40628, 1 }, },	-- Gauntlets of the Lost Conqueror
-							}),
-							i(40572, {	-- Valorous Redemption Greaves
-								["cost"] = { { "i", 40634, 1 }, },	-- Legplates of the Lost Conqueror
-							}),
-							i(40580, {	-- Valorous Redemption Handguards
-								["cost"] = { { "i", 40628, 1 }, },	-- Gauntlets of the Lost Conqueror
-							}),
-							i(40571, {	-- Valorous Redemption Headpiece
-								["cost"] = { { "i", 40631, 1 }, },	-- Crown of the Lost Conqueror
-							}),
-							i(40576, {	-- Valorous Redemption Helm
-								["cost"] = { { "i", 40631, 1 }, },	-- Crown of the Lost Conqueror
-							}),
-							i(40583, {	-- Valorous Redemption Legguards
-								["cost"] = { { "i", 40634, 1 }, },	-- Legplates of the Lost Conqueror
-							}),
-							i(40577, {	-- Valorous Redemption Legplates
-								["cost"] = { { "i", 40634, 1 }, },	-- Legplates of the Lost Conqueror
-							}),
-							i(40584, {	-- Valorous Redemption Shoulderguards
-								["cost"] = { { "i", 40637, 1 }, },	-- Mantle of the Lost Conqueror
-							}),
-							i(40578, {	-- Valorous Redemption Shoulderplates
-								["cost"] = { { "i", 40637, 1 }, },	-- Mantle of the Lost Conqueror
-							}),
-							i(40573, {	-- Valorous Redemption Spaulders
-								["cost"] = { { "i", 40637, 1 }, },	-- Mantle of the Lost Conqueror
-							}),
-							i(40569, {	-- Valorous Redemption Tunic
-								["cost"] = { { "i", 40625, 1 }, },	-- Breastplate of the Lost Conqueror
-							}),
-							i(40550, {	-- Valorous Scourgeborne Battleplate
-								["cost"] = { { "i", 40627, 1 }, },	-- Breastplate of the Lost Vanquisher
-							}),
-							i(40559, {	-- Valorous Scourgeborne Chestguard
-								["cost"] = { { "i", 40627, 1 }, },	-- Breastplate of the Lost Vanquisher
-							}),
-							i(40565, {	-- Valorous Scourgeborne Faceguard
-								["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
-							}),
-							i(40552, {	-- Valorous Scourgeborne Gauntlets
-								["cost"] = { { "i", 40630, 1 }, },	-- Gauntlets of the Lost Vanquisher
-							}),
-							i(40563, {	-- Valorous Scourgeborne Handguards
-								["cost"] = { { "i", 40630, 1 }, },	-- Gauntlets of the Lost Vanquisher
-							}),
-							i(40554, {	-- Valorous Scourgeborne Helmet
-								["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
-							}),
-							i(40567, {	-- Valorous Scourgeborne Legguards
-								["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
-							}),
-							i(40556, {	-- Valorous Scourgeborne Legplates
-								["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
-							}),
-							i(40568, {	-- Valorous Scourgeborne Pauldrons
-								["cost"] = { { "i", 40639, 1 }, },	-- Mantle of the Lost Vanquisher
-							}),
-							i(40557, {	-- Valorous Scourgeborne Shoulderplates
-								["cost"] = { { "i", 40639, 1 }, },	-- Mantle of the Lost Vanquisher
-							}),
-							i(50991),	-- Verdigris Chain Belt
-							i(40688),	-- Verdungo's Barbarian Cord
-							i(40689),	-- Waistguard of Living Iron
-							i(40733),	-- Wristbands of the Sentinel Huntress
-							i(45842),	-- Wyrmguard Legplates
-							i(40735),	-- Zartson's Jungle Vambraces
+							cl(DEATHKNIGHT, appendGroups(
+								TIER_SEVEN_HEROIC_GROUPS.DEATHKNIGHT,
+								TIER_SEVEN_GROUPS.DEATHKNIGHT, {})),
+							cl(PALADIN, appendGroups(
+								TIER_SEVEN_HEROIC_GROUPS.PALADIN,
+								TIER_SEVEN_GROUPS.PALADIN, {})),
+							cl(WARRIOR, appendGroups(
+								TIER_SEVEN_HEROIC_GROUPS.WARRIOR,
+								TIER_SEVEN_GROUPS.WARRIOR, {})),
+							emoc(28, i(45824)),	-- Belt of the Singing Blade
+							emoc(28, i(45833)),	-- Bladebreaker Gauntlets
+							emov(40, i(40742)),	-- Bladed Steelboots
+							emov(60, i(40734)),	-- Bracers of Dalaran's Parapets
+							emof(95, i(50965)),	-- Castle Breaker's Battleplate
+							emof(95, i(50968)),	-- Cataclysmic Chestguard
+							emof(95, i(50969)),	-- Chestplate of Unspoken Truths
+							emof(60, i(50977)),	-- Gatecrasher's Gauntlets
+							emof(60, i(50976)),	-- Gauntlets of Overexposure
+							emoc(28, i(45835)),	-- Gauntlets of Serene Blessing
+							emof(60, i(50978)),	-- Gauntlets of the Kraken
+							emoc(28, i(45834)),	-- Gauntlets of the Royal Watch
+							emoc(28, i(45826)),	-- Girdle of Unyielding Trust
+							emov(40, i(40743)),	-- Kyzoc's Ground Stompers
+							emoc(39, i(45843)),	-- Legguards of the Peaceful Covenant
+							emoc(39, i(45841)),	-- Legplates of the Violet Champion
+							emof(60, i(50989)),	-- Lich Killer's Lanyard
+							emoh(40, i(40691)),	-- Magroth's Meditative Cincture
+							emof(60, i(50987)),	-- Malevolent Girdle
+							emov(40, i(40745)),	-- Sabatons of Rapid Recovery
+							emoc(28, i(45825)),	-- Shieldwarder Girdle
+							emof(60, i(50991)),	-- Verdigris Chain Belt
+							emoh(40, i(40688)),	-- Verdungo's Barbarian Cord
+							emoh(40, i(40689)),	-- Waistguard of Living Iron
+							emov(60, i(40733)),	-- Wristbands of the Sentinel Huntress
+							emoc(39, i(45842)),	-- Wyrmguard Legplates
+							emov(60, i(40735)),	-- Zartson's Jungle Vambraces
 						},
 					}),
 					n(32172, {	-- Harold Winston <Jewelry Vendor>
@@ -7053,64 +9464,108 @@ root("Zones", {
 									{ "i", 40585 },	-- Signet of the Kirin Tor
 								},
 							}),
-							i(40719),	-- Band of Channeled Magic
-							i(47732),	-- Band of the Invoker
-							i(40586),	-- Band of the Kirin Tor
-							i(47729),	-- Bloodshed Band
-							i(45820),	-- Brooch of the Wailing Night
-							i(40679),	-- Chained Military Gorget
-							i(47731),	-- Clutch of Fortification
-							i(47730),	-- Dexterous Brightstone Ring
-							i(40680),	-- Encircling Burnished Gold Chains
-							i(48954, {	-- Etched Band of the Kirin Tor
-								["cost"] = { { "i", 45688, 1 }, },	-- Inscribed Band of the Kirin Tor
+							emov(25, i(40719)),	-- Band of Channeled Magic
+							emot(35, i(47732)),	-- Band of the Invoker
+							i(40586, {	-- Band of the Kirin Tor
+								["cost"] = 85000000,	-- 8.5k
 							}),
-							i(48955, {	-- Etched Loop of the Kirin Tor
-								["cost"] = { { "i", 45689, 1 }, },	-- Inscribed Loop of the Kirin Tor
+							emot(35, i(47729)),	-- Bloodshed Band
+							emoc(19, i(45820)),	-- Brooch of the Wailing Night
+							emoh(25, i(40679)),	-- Chained Military Gorget
+							emot(35, i(47731)),	-- Clutch of Fortification
+							emot(35, i(47730)),	-- Dexterous Brightstone Ring
+							emoh(25, i(40680)),	-- Encircling Burnished Gold Chains
+							applyclassicphase(WRATH_PHASE_THREE, i(48954, {	-- Etched Band of the Kirin Tor
+								["cost"] = {
+									{ "i", 45688, 1 },	-- Inscribed Band of the Kirin Tor
+									{ "g", 12500000 },	-- 1250g
+								},
+							})),
+							applyclassicphase(WRATH_PHASE_THREE, i(48955, {	-- Etched Loop of the Kirin Tor
+								["cost"] = {
+									{ "i", 45689, 1 },	-- Inscribed Loop of the Kirin Tor
+									{ "g", 12500000 },	-- 1250g
+								},
+							})),
+							applyclassicphase(WRATH_PHASE_THREE, i(48956, {	-- Etched Ring of the Kirin Tor
+								["cost"] = {
+									{ "i", 45690, 1 },	-- Inscribed Ring of the Kirin Tor
+									{ "g", 12500000 },	-- 1250g
+								},
+							})),
+							applyclassicphase(WRATH_PHASE_THREE, i(48957, {	-- Etched Signet of the Kirin Tor
+								["cost"] = {
+									{ "i", 45691, 1 },	-- Inscribed Signet of the Kirin Tor
+									{ "g", 12500000 },	-- 1250g
+								},
+							})),
+							emoc(19, i(45822)),	-- Evoker's Charm
+							emoc(19, i(45823)),	-- Frozen Tear of Elune
+							emot(35, i(47733)),	-- Heartmender Circle
+							applyclassicphase(WRATH_PHASE_TWO, i(45688, {	-- Inscribed Band of the Kirin Tor
+								["cost"] = {
+									{ "i", 40586, 1 },	-- Band of the Kirin Tor
+									{ "g", 12500000 },	-- 1250g
+								},
+							})),
+							applyclassicphase(WRATH_PHASE_TWO, i(45689, {	-- Inscribed Loop of the Kirin Tor
+								["cost"] = {
+									{ "i", 44934, 1 },	-- Loop of the Kirin Tor
+									{ "g", 12500000 },	-- 1250g
+								},
+							})),
+							applyclassicphase(WRATH_PHASE_TWO, i(45690, {	-- Inscribed Ring of the Kirin Tor
+								["cost"] = {
+									{ "i", 44935, 1 },	-- Ring of the Kirin Tor
+									{ "g", 12500000 },	-- 1250g
+								},
+							})),
+							applyclassicphase(WRATH_PHASE_TWO, i(45691, {	-- Inscribed Signet of the Kirin Tor
+								["cost"] = {
+									{ "i", 40585, 1 },	-- Signet of the Kirin Tor
+									{ "g", 12500000 },	-- 1250g
+								},
+							})),
+							emoh(25, i(40681)),	-- Lattice Choker of Light
+							i(44934, {	-- Loop of the Kirin Tor
+								["cost"] = 85000000,	-- 8.5k
 							}),
-							i(48956, {	-- Etched Ring of the Kirin Tor
-								["cost"] = { { "i", 45690, 1 }, },	-- Inscribed Ring of the Kirin Tor
+							emoh(25, i(40678)),	-- Pendant of the Outcast Hero
+							emov(25, i(40720)),	-- Renewal of Life
+							emov(25, i(40717)),	-- Ring of Invincibility
+							i(44935, {	-- Ring of the Kirin Tor
+								["cost"] = 85000000,	-- 8.5k
 							}),
-							i(48957, {	-- Etched Signet of the Kirin Tor
-								["cost"] = { { "i", 45691, 1 }, },	-- Inscribed Signet of the Kirin Tor
+							applyclassicphase(WRATH_PHASE_FOUR, i(51560, {	-- Runed Band of the Kirin Tor
+								["cost"] = {
+									{ "i", 48954, 1 },	-- Etched Band of the Kirin Tor
+									{ "g", 12500000 },	-- 1250g
+								},
+							})),
+							applyclassicphase(WRATH_PHASE_FOUR, i(51558, {	-- Runed Loop of the Kirin Tor
+								["cost"] = {
+									{ "i", 48955, 1 },	-- Etched Loop of the Kirin Tor
+									{ "g", 12500000 },	-- 1250g
+								},
+							})),
+							applyclassicphase(WRATH_PHASE_FOUR, i(51559, {	-- Runed Ring of the Kirin Tor
+								["cost"] = {
+									{ "i", 48956, 1 },	-- Etched Ring of the Kirin Tor
+									{ "g", 12500000 },	-- 1250g
+								},
+							})),
+							applyclassicphase(WRATH_PHASE_FOUR, i(51557, {	-- Runed Signet of the Kirin Tor
+								["cost"] = {
+									{ "i", 48957, 1 },	-- Etched Signet of the Kirin Tor
+									{ "g", 12500000 },	-- 1250g
+								},
+							})),
+							emoc(19, i(45821)),	-- Shard of the Crystal Forest
+							emov(25, i(40718)),	-- Signet of the Impregnable Fortress
+							i(40585, {	-- Signet of the Kirin Tor
+								["cost"] = 85000000,	-- 8.5k
 							}),
-							i(45822),	-- Evoker's Charm
-							i(45823),	-- Frozen Tear of Elune
-							i(47733),	-- Heartmender Circle
-							i(45688, {	-- Inscribed Band of the Kirin Tor
-								["cost"] = { { "i", 40586, 1 }, },	-- Band of the Kirin Tor
-							}),
-							i(45689, {	-- Inscribed Loop of the Kirin Tor
-								["cost"] = { { "i", 44934, 1 }, },	-- Loop of the Kirin Tor
-							}),
-							i(45690, {	-- Inscribed Ring of the Kirin Tor
-								["cost"] = { { "i", 44935, 1 }, },	-- Ring of the Kirin Tor
-							}),
-							i(45691, {	-- Inscribed Signet of the Kirin Tor
-								["cost"] = { { "i", 40585, 1 }, },	-- Signet of the Kirin Tor
-							}),
-							i(40681),	-- Lattice Choker of Light
-							i(44934),	-- Loop of the Kirin Tor
-							i(40678),	-- Pendant of the Outcast Hero
-							i(40720),	-- Renewal of Life
-							i(40717),	-- Ring of Invincibility
-							i(44935),	-- Ring of the Kirin Tor
-							i(51560, {	-- Runed Band of the Kirin Tor
-								["cost"] = { { "i", 48954, 1 }, },	-- Etched Band of the Kirin Tor
-							}),
-							i(51558, {	-- Runed Loop of the Kirin Tor
-								["cost"] = { { "i", 48955, 1 }, },	-- Etched Loop of the Kirin Tor
-							}),
-							i(51559, {	-- Runed Ring of the Kirin Tor
-								["cost"] = { { "i", 48956, 1 }, },	-- Etched Ring of the Kirin Tor
-							}),
-							i(51557, {	-- Runed Signet of the Kirin Tor
-								["cost"] = { { "i", 48957, 1 }, },	-- Etched Signet of the Kirin Tor
-							}),
-							i(45821),	-- Shard of the Crystal Forest
-							i(40718),	-- Signet of the Impregnable Fortress
-							i(40585),	-- Signet of the Kirin Tor
-							i(45819),	-- Spiked Battleguard Choker
+							emoc(19, i(45819)),	-- Spiked Battleguard Choker
 						},
 					}),
 					n(31238, {	-- Hira Snowdawn <Cold Weather Flying Trainer>
@@ -7126,531 +9581,24 @@ root("Zones", {
 					n(35498, {	-- Horace Hunderland <Plate Armor Merchant>
 						["coord"] = { 46.6, 27.1, NORTHREND_DALARAN },
 						["groups"] = {
-							i(48386),	-- Hellscream's Battleplate of Conquest
-							i(48456),	-- Hellscream's Breastplate of Conquest
-							i(48387),	-- Hellscream's Gauntlets of Conquest
-							i(48458),	-- Hellscream's Greathelm of Conquest
-							i(48457),	-- Hellscream's Handguards of Conquest
-							i(48388),	-- Hellscream's Helmet of Conquest
-							i(48459),	-- Hellscream's Legguards of Conquest
-							i(48389),	-- Hellscream's Legplates of Conquest
-							i(48460),	-- Hellscream's Pauldrons of Conquest
-							i(48390),	-- Hellscream's Shoulderplates of Conquest
-							i(48501),	-- Koltira's Battleplate of Conquest
-							i(48558),	-- Koltira's Chestguard of Conquest
-							i(48560),	-- Koltira's Faceguard of Conquest
-							i(48502),	-- Koltira's Gauntlets of Conquest
-							i(48559),	-- Koltira's Handguards of Conquest
-							i(48503),	-- Koltira's Helmet of Conquest
-							i(48561),	-- Koltira's Legguards of Conquest
-							i(48504),	-- Koltira's Legplates of Conquest
-							i(48562),	-- Koltira's Pauldrons of Conquest
-							i(48505),	-- Koltira's Shoulderplates of Conquest
-							i(48631),	-- Liadrin's Battleplate of Conquest
-							i(48652),	-- Liadrin's Breastplate of Conquest
-							i(48654),	-- Liadrin's Faceguard of Conquest
-							i(48630),	-- Liadrin's Gauntlets of Conquest
-							i(48598),	-- Liadrin's Gloves of Conquest
-							i(48596),	-- Liadrin's Greaves of Conquest
-							i(48653),	-- Liadrin's Handguards of Conquest
-							i(48597),	-- Liadrin's Headpiece of Conquest
-							i(48629),	-- Liadrin's Helm of Conquest
-							i(48655),	-- Liadrin's Legguards of Conquest
-							i(48628),	-- Liadrin's Legplates of Conquest
-							i(48656),	-- Liadrin's Shoulderguards of Conquest
-							i(48627),	-- Liadrin's Shoulderplates of Conquest
-							i(48595),	-- Liadrin's Spaulders of Conquest
-							i(48599),	-- Liadrin's Tunic of Conquest
-							i(50328),	-- Lightsworn Battleplate
-							i(50864),	-- Lightsworn Chestguard
-							i(50862),	-- Lightsworn Faceguard
-							i(50327),	-- Lightsworn Gauntlets
-							i(50868),	-- Lightsworn Gloves
-							i(50866),	-- Lightsworn Greaves
-							i(50863),	-- Lightsworn Handguards
-							i(50867),	-- Lightsworn Headpiece
-							i(50326),	-- Lightsworn Helmet
-							i(50861),	-- Lightsworn Legguards
-							i(50325),	-- Lightsworn Legplates
-							i(50860),	-- Lightsworn Shoulderguards
-							i(50324),	-- Lightsworn Shoulderplates
-							i(50865),	-- Lightsworn Spaulders
-							i(50869),	-- Lightsworn Tunic
-							i(51164, {	-- Sanctified Lightsworn Battleplate (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 50328, 1 },	-- Lightsworn Battleplate
-								},
-							}),
-							i(51275, {	-- Sanctified Lightsworn Battleplate (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 51164, 1 },	-- Sanctified Lightsworn Battleplate
-								},
-							}),
-							i(51174, {	-- Sanctified Lightsworn Chestguard (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 50864, 1 },	-- Lightsworn Chestguard
-								},
-							}),
-							i(51265, {	-- Sanctified Lightsworn Chestguard (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 51174, 1 },	-- Sanctified Lightsworn Chestguard
-								},
-							}),
-							i(51173, {	-- Sanctified Lightsworn Faceguard (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 50862, 1 },	-- Lightsworn Faceguard
-								},
-							}),
-							i(51266, {	-- Sanctified Lightsworn Faceguard (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 51173, 1 },	-- Sanctified Lightsworn Faceguard
-								},
-							}),
-							i(51163, {	-- Sanctified Lightsworn Gauntlets (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 50327, 1 },	-- Lightsworn Gauntlets
-								},
-							}),
-							i(51276, {	-- Sanctified Lightsworn Gauntlets (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 51163, 1 },	-- Sanctified Lightsworn Gauntlets
-								},
-							}),
-							i(51169, {	-- Sanctified Lightsworn Gloves (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 50868, 1 },	-- Lightsworn Gloves
-								},
-							}),
-							i(51270, {	-- Sanctified Lightsworn Gloves (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 51169, 1 },	-- Sanctified Lightsworn Gloves
-								},
-							}),
-							i(51168, {	-- Sanctified Lightsworn Greaves (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 50866, 1 },	-- Lightsworn Greaves
-								},
-							}),
-							i(51271, {	-- Sanctified Lightsworn Greaves (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 51168, 1 },	-- Sanctified Lightsworn Greaves
-								},
-							}),
-							i(51172, {	-- Sanctified Lightsworn Handguards (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 50863, 1 },	-- Lightsworn Handguards
-								},
-							}),
-							i(51267, {	-- Sanctified Lightsworn Handguards (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 51172, 1 },	-- Sanctified Lightsworn Handguards
-								},
-							}),
-							i(51167, {	-- Sanctified Lightsworn Headpiece (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 50867, 1 },	-- Lightsworn Headpiece
-								},
-							}),
-							i(51272, {	-- Sanctified Lightsworn Headpiece (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 51167, 1 },	-- Sanctified Lightsworn Headpiece
-								},
-							}),
-							i(51162, {	-- Sanctified Lightsworn Helmet (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 50326, 1 },	-- Lightsworn Helmet
-								},
-							}),
-							i(51277, {	-- Sanctified Lightsworn Helmet (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 51162, 1 },	-- Sanctified Lightsworn Helmet
-								},
-							}),
-							i(51171, {	-- Sanctified Lightsworn Legguards (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 50861, 1 },	-- Lightsworn Legguards
-								},
-							}),
-							i(51268, {	-- Sanctified Lightsworn Legguards (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 51171, 1 },	-- Sanctified Lightsworn Legguards
-								},
-							}),
-							i(51161, {	-- Sanctified Lightsworn Legplates (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 50325, 1 },	-- Lightsworn Legplates
-								},
-							}),
-							i(51278, {	-- Sanctified Lightsworn Legplates (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 51161, 1 },	-- Sanctified Lightsworn Legplates
-								},
-							}),
-							i(51170, {	-- Sanctified Lightsworn Shoulderguards (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 50860, 1 },	-- Lightsworn Shoulderguards
-								},
-							}),
-							i(51269, {	-- Sanctified Lightsworn Shoulderguards (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 51170, 1 },	-- Sanctified Lightsworn Shoulderguards
-								},
-							}),
-							i(51160, {	-- Sanctified Lightsworn Shoulderplates (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 50324, 1 },	-- Lightsworn Shoulderplates
-								},
-							}),
-							i(51279, {	-- Sanctified Lightsworn Shoulderplates (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 51160, 1 },	-- Sanctified Lightsworn Shoulderplates
-								},
-							}),
-							i(51166, {	-- Sanctified Lightsworn Spaulders (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 50865, 1 },	-- Lightsworn Spaulders
-								},
-							}),
-							i(51273, {	-- Sanctified Lightsworn Spaulders (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 51166, 1 },	-- Sanctified Lightsworn Spaulders
-								},
-							}),
-							i(51165, {	-- Sanctified Lightsworn Tunic (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 50869, 1 },	-- Lightsworn Tunic
-								},
-							}),
-							i(51274, {	-- Sanctified Lightsworn Tunic (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification
-									{ "i", 51165, 1 },	-- Sanctified Lightsworn Tunic
-								},
-							}),
-							i(51129, {	-- Sanctified Scourgelord Battleplate (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 50094, 1 },	-- Scourgelord Battleplate
-								},
-							}),
-							i(51310, {	-- Sanctified Scourgelord Battleplate (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 51129, 1 },	-- Sanctified Scourgelord Battleplate
-								},
-							}),
-							i(51134, {	-- Sanctified Scourgelord Chestguard (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 50857, 1 },	-- Scourgelord Chestguard
-								},
-							}),
-							i(51305, {	-- Sanctified Scourgelord Chestguard (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 51134, 1 },	-- Sanctified Scourgelord Chestguard
-								},
-							}),
-							i(51133, {	-- Sanctified Scourgelord Faceguard (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 50855, 1 },	-- Scourgelord Faceguard
-								},
-							}),
-							i(51306, {	-- Sanctified Scourgelord Faceguard (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 51133, 1 },	-- Sanctified Scourgelord Faceguard
-								},
-							}),
-							i(51128, {	-- Sanctified Scourgelord Gauntlets (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 50095, 1 },	-- Scourgelord Gauntlets
-								},
-							}),
-							i(51311, {	-- Sanctified Scourgelord Gauntlets (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 51128, 1 },	-- Sanctified Scourgelord Gauntlets
-								},
-							}),
-							i(51132, {	-- Sanctified Scourgelord Handguards (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 50856, 1 },	-- Scourgelord Handguards
-								},
-							}),
-							i(51307, {	-- Sanctified Scourgelord Handguards (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 51132, 1 },	-- Sanctified Scourgelord Handguards
-								},
-							}),
-							i(51127, {	-- Sanctified Scourgelord Helmet (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 50096, 1 },	-- Scourgelord Helmet
-								},
-							}),
-							i(51312, {	-- Sanctified Scourgelord Helmet (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 51127, 1 },	-- Sanctified Scourgelord Helmet
-								},
-							}),
-							i(51131, {	-- Sanctified Scourgelord Legguards (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 50854, 1 },	-- Scourgelord Legguards
-								},
-							}),
-							i(51308, {	-- Sanctified Scourgelord Legguards (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 51131, 1 },	-- Sanctified Scourgelord Legguards
-								},
-							}),
-							i(51126, {	-- Sanctified Scourgelord Legplates (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 50097, 1 },	-- Scourgelord Legplates
-								},
-							}),
-							i(51313, {	-- Sanctified Scourgelord Legplates (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 51126, 1 },	-- Sanctified Scourgelord Legplates
-								},
-							}),
-							i(51130, {	-- Sanctified Scourgelord Pauldrons (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 50853, 1 },	-- Scourgelord Pauldrons
-								},
-							}),
-							i(51309, {	-- Sanctified Scourgelord Pauldrons (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 51130, 1 },	-- Sanctified Scourgelord Pauldrons
-								},
-							}),
-							i(51125, {	-- Sanctified Scourgelord Shoulderplates (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 50098, 1 },	-- Scourgelord Shoulderplates
-								},
-							}),
-							i(51314, {	-- Sanctified Scourgelord Shoulderplates (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification
-									{ "i", 51125, 1 },	-- Sanctified Scourgelord Shoulderplates
-								},
-							}),
-							i(51214, {	-- Sanctified Ymirjar Lord's Battleplate (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50078, 1 },	-- Ymirjar Lord's Battleplate
-								},
-							}),
-							i(51225, {	-- Sanctified Ymirjar Lord's Battleplate (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51214, 1 },	-- Sanctified Ymirjar Lord's Battleplate
-								},
-							}),
-							i(51219, {	-- Sanctified Ymirjar Lord's Breastplate (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50850, 1 },	-- Ymirjar Lord's Breastplate
-								},
-							}),
-							i(51220, {	-- Sanctified Ymirjar Lord's Breastplate (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51219, 1 },	-- Sanctified Ymirjar Lord's Breastplate
-								},
-							}),
-							i(51213, {	-- Sanctified Ymirjar Lord's Gauntlets (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50079, 1 },	-- Ymirjar Lord's Gauntlets
-								},
-							}),
-							i(51226, {	-- Sanctified Ymirjar Lord's Gauntlets (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51213, 1 },	-- Sanctified Ymirjar Lord's Gauntlets
-								},
-							}),
-							i(51218, {	-- Sanctified Ymirjar Lord's Greathelm (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50848, 1 },	-- Ymirjar Lord's Greathelm
-								},
-							}),
-							i(51221, {	-- Sanctified Ymirjar Lord's Greathelm (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51218, 1 },	-- Sanctified Ymirjar Lord's Greathelm
-								},
-							}),
-							i(51217, {	-- Sanctified Ymirjar Lord's Handguards (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50849, 1 },	-- Ymirjar Lord's Handguards
-								},
-							}),
-							i(51222, {	-- Sanctified Ymirjar Lord's Handguards (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51217, 1 },	-- Sanctified Ymirjar Lord's Handguards
-								},
-							}),
-							i(51212, {	-- Sanctified Ymirjar Lord's Helmet (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50080, 1 },	-- Ymirjar Lord's Helmet
-								},
-							}),
-							i(51227, {	-- Sanctified Ymirjar Lord's Helmet (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51212, 1 },	-- Sanctified Ymirjar Lord's Helmet
-								},
-							}),
-							i(51216, {	-- Sanctified Ymirjar Lord's Legguards (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50847, 1 },	-- Ymirjar Lord's Legguards
-								},
-							}),
-							i(51223, {	-- Sanctified Ymirjar Lord's Legguards (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51216, 1 },	-- Sanctified Ymirjar Lord's Legguards
-								},
-							}),
-							i(51211, {	-- Sanctified Ymirjar Lord's Legplates (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50081, 1 },	-- Ymirjar Lord's Legplates
-								},
-							}),
-							i(51228, {	-- Sanctified Ymirjar Lord's Legplates (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51211, 1 },	-- Sanctified Ymirjar Lord's Legplates
-								},
-							}),
-							i(51215, {	-- Sanctified Ymirjar Lord's Pauldrons (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50846, 1 },	-- Ymirjar Lord's Pauldrons
-								},
-							}),
-							i(51224, {	-- Sanctified Ymirjar Lord's Pauldrons (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51215, 1 },	-- Sanctified Ymirjar Lord's Pauldrons
-								},
-							}),
-							i(51210, {	-- Sanctified Ymirjar Lord's Shoulderplates (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50082, 1 },	-- Ymirjar Lord's Shoulderplates
-								},
-							}),
-							i(51229, {	-- Sanctified Ymirjar Lord's Shoulderplates (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51210, 1 },	-- Sanctified Ymirjar Lord's Shoulderplates
-								},
-							}),
-							i(50094),	-- Scourgelord Battleplate
-							i(50857),	-- Scourgelord Chestguard
-							i(50855),	-- Scourgelord Faceguard
-							i(50095),	-- Scourgelord Gauntlets
-							i(50856),	-- Scourgelord Handguards
-							i(50096),	-- Scourgelord Helmet
-							i(50854),	-- Scourgelord Legguards
-							i(50097),	-- Scourgelord Legplates
-							i(50853),	-- Scourgelord Pauldrons
-							i(50098),	-- Scourgelord Shoulderplates
-							i(48474),	-- Thassarian's Battleplate of Conquest
-							i(48531),	-- Thassarian's Chestguard of Conquest
-							i(48529),	-- Thassarian's Faceguard of Conquest
-							i(48480),	-- Thassarian's Gauntlets of Conquest
-							i(48537),	-- Thassarian's Handguards of Conquest
-							i(48472),	-- Thassarian's Helmet of Conquest
-							i(48533),	-- Thassarian's Legguards of Conquest
-							i(48476),	-- Thassarian's Legplates of Conquest
-							i(48535),	-- Thassarian's Pauldrons of Conquest
-							i(48478),	-- Thassarian's Shoulderplates of Conquest
-							i(48602),	-- Turalyon's Battleplate of Conquest
-							i(48632),	-- Turalyon's Breastplate of Conquest
-							i(48634),	-- Turalyon's Faceguard of Conquest
-							i(48603),	-- Turalyon's Gauntlets of Conquest
-							i(48574),	-- Turalyon's Gloves of Conquest
-							i(48568),	-- Turalyon's Greaves of Conquest
-							i(48633),	-- Turalyon's Handguards of Conquest
-							i(48564),	-- Turalyon's Headpiece of Conquest
-							i(48604),	-- Turalyon's Helm of Conquest
-							i(48635),	-- Turalyon's Legguards of Conquest
-							i(48605),	-- Turalyon's Legplates of Conquest
-							i(48636),	-- Turalyon's Shoulderguards of Conquest
-							i(48606),	-- Turalyon's Shoulderplates of Conquest
-							i(48572),	-- Turalyon's Spaulders of Conquest
-							i(48566),	-- Turalyon's Tunic of Conquest
-							i(48372),	-- Wrynn's Battleplate of Conquest
-							i(48436),	-- Wrynn's Breastplate of Conquest
-							i(48375),	-- Wrynn's Gauntlets of Conquest
-							i(48429),	-- Wrynn's Greathelm of Conquest
-							i(48449),	-- Wrynn's Handguards of Conquest
-							i(48371),	-- Wrynn's Helmet of Conquest
-							i(48445),	-- Wrynn's Legguards of Conquest
-							i(48373),	-- Wrynn's Legplates of Conquest
-							i(48448),	-- Wrynn's Pauldrons of Conquest
-							i(48374),	-- Wrynn's Shoulderplates of Conquest
-							i(50078),	-- Ymirjar Lord's Battleplate
-							i(50850),	-- Ymirjar Lord's Breastplate
-							i(50079),	-- Ymirjar Lord's Gauntlets
-							i(50848),	-- Ymirjar Lord's Greathelm
-							i(50849),	-- Ymirjar Lord's Handguards
-							i(50080),	-- Ymirjar Lord's Helmet
-							i(50847),	-- Ymirjar Lord's Legguards
-							i(50081),	-- Ymirjar Lord's Legplates
-							i(50846),	-- Ymirjar Lord's Pauldrons
-							i(50082),	-- Ymirjar Lord's Shoulderplates
+							cl(DEATHKNIGHT, appendGroups(
+								TIER_TEN_HEROIC_GROUPS.DEATHKNIGHT,
+								TIER_TEN_NORMAL_GROUPS.DEATHKNIGHT,
+								TIER_TEN_GROUPS.DEATHKNIGHT,
+								TIER_NINE_GROUPS.DEATHKNIGHT_A,
+								TIER_NINE_GROUPS.DEATHKNIGHT_H, {})),
+							cl(PALADIN, appendGroups(
+								TIER_TEN_HEROIC_GROUPS.PALADIN,
+								TIER_TEN_NORMAL_GROUPS.PALADIN,
+								TIER_TEN_GROUPS.PALADIN,
+								TIER_NINE_GROUPS.PALADIN_A,
+								TIER_NINE_GROUPS.PALADIN_H, {})),
+							cl(WARRIOR, appendGroups(
+								TIER_TEN_HEROIC_GROUPS.WARRIOR,
+								TIER_TEN_NORMAL_GROUPS.WARRIOR,
+								TIER_TEN_GROUPS.WARRIOR,
+								TIER_NINE_GROUPS.WARRIOR_A,
+								TIER_NINE_GROUPS.WARRIOR_H, {})),
 						},
 					}),
 					n(28714, {	-- Ildine Sorrowspear
@@ -7785,129 +9733,11 @@ root("Zones", {
 							i(30483),	-- Pattern: Shadowcloth
 						},
 					}),
-					n(37941, {	-- Magister Arlan <Legacy Justice Quartermaster>
+					applyclassicphase(WRATH_PHASE_FOUR, n(37941, {	-- Magister Arlan <Legacy Justice Quartermaster> / <Emblem of Frost Quartermaster> [WRATH]
 						["coord"] = { 65.9, 22.9, NORTHREND_DALARAN },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(50993),	-- Band of the Night Raven
-							i(50996),	-- Belt of Omission
-							i(50994),	-- Belt of Petrified Ivy
-							i(50980),	-- Blizzard Keeper's Mitts
-							i(50965),	-- Castle Breaker's Battleplate
-							i(50982),	-- Cat Burglar's Grips
-							i(50968),	-- Cataclysmic Chestguard
-							i(50969),	-- Chestplate of Unspoken Truths
-							i(50997),	-- Circle of Ossus
-							i(50356),	-- Corroded Skeleton Key
-							i(50468),	-- Drape of the Violet Tower
-							i(50975),	-- Ermine Coronation Robes
-							i(50977),	-- Gatecrasher's Gauntlets
-							i(50976),	-- Gauntlets of Overexposure
-							i(50978),	-- Gauntlets of the Kraken
-							i(50984),	-- Gloves of Ambivalence
-							i(50983),	-- Gloves of False Gestures
-							i(50981),	-- Gloves of the Great Horned Owl
-							i(50355),	-- Herkuml War Token
-							i(50989),	-- Lich Killer's Lanyard
-							i(50979),	-- Logsplitters
-							i(50970),	-- Longstrider's Vest
-							i(50357),	-- Maghia's Misguided Quill
-							i(50971),	-- Mail of the Geyser
-							i(50987),	-- Malevolent Girdle
-							i(50974),	-- Meteor Chaser's Raiment
-							i(50467),	-- Might of the Ocean Serpent
-							i(49908),	-- Primordial Saronite
-							i(50358),	-- Purified Lunar Dust
-							i(50470),	-- Recovered Scarlet Onslaught Cape
-							i(41088),	-- Relentless Gladiator's Chain Armor
-							i(41144),	-- Relentless Gladiator's Chain Gauntlets
-							i(41158),	-- Relentless Gladiator's Chain Helm
-							i(41206),	-- Relentless Gladiator's Chain Leggings
-							i(41218),	-- Relentless Gladiator's Chain Spaulders
-							i(41774),	-- Relentless Gladiator's Dragonhide Gloves
-							i(41679),	-- Relentless Gladiator's Dragonhide Helm
-							i(41668),	-- Relentless Gladiator's Dragonhide Legguards
-							i(41662),	-- Relentless Gladiator's Dragonhide Robes
-							i(41716),	-- Relentless Gladiator's Dragonhide Spaulders
-							i(40791),	-- Relentless Gladiator's Dreadplate Chestpiece
-							i(40811),	-- Relentless Gladiator's Dreadplate Gauntlets
-							i(40830),	-- Relentless Gladiator's Dreadplate Helm
-							i(40851),	-- Relentless Gladiator's Dreadplate Legguards
-							i(40871),	-- Relentless Gladiator's Dreadplate Shoulders
-							i(42012),	-- Relentless Gladiator's Felweave Amice
-							i(41994),	-- Relentless Gladiator's Felweave Cowl
-							i(42018),	-- Relentless Gladiator's Felweave Handguards
-							i(41999),	-- Relentless Gladiator's Felweave Raiment
-							i(42006),	-- Relentless Gladiator's Felweave Trousers
-							i(41288),	-- Relentless Gladiator's Kodohide Gloves
-							i(41322),	-- Relentless Gladiator's Kodohide Helm
-							i(41299),	-- Relentless Gladiator's Kodohide Legguards
-							i(41311),	-- Relentless Gladiator's Kodohide Robes
-							i(41276),	-- Relentless Gladiator's Kodohide Spaulders
-							i(41768),	-- Relentless Gladiator's Leather Gloves
-							i(41673),	-- Relentless Gladiator's Leather Helm
-							i(41656),	-- Relentless Gladiator's Leather Legguards
-							i(41684),	-- Relentless Gladiator's Leather Spaulders
-							i(41651),	-- Relentless Gladiator's Leather Tunic
-							i(41082),	-- Relentless Gladiator's Linked Armor
-							i(41138),	-- Relentless Gladiator's Linked Gauntlets
-							i(41152),	-- Relentless Gladiator's Linked Helm
-							i(41200),	-- Relentless Gladiator's Linked Leggings
-							i(41212),	-- Relentless Gladiator's Linked Spaulders
-							i(40995),	-- Relentless Gladiator's Mail Armor
-							i(41008),	-- Relentless Gladiator's Mail Gauntlets
-							i(41020),	-- Relentless Gladiator's Mail Helm
-							i(41034),	-- Relentless Gladiator's Mail Leggings
-							i(41045),	-- Relentless Gladiator's Mail Spaulders
-							i(41875),	-- Relentless Gladiator's Mooncloth Gloves
-							i(41855),	-- Relentless Gladiator's Mooncloth Hood
-							i(41865),	-- Relentless Gladiator's Mooncloth Leggings
-							i(41870),	-- Relentless Gladiator's Mooncloth Mantle
-							i(41860),	-- Relentless Gladiator's Mooncloth Robe
-							i(40910),	-- Relentless Gladiator's Ornamented Chestguard
-							i(40928),	-- Relentless Gladiator's Ornamented Gloves
-							i(40934),	-- Relentless Gladiator's Ornamented Headcover
-							i(40940),	-- Relentless Gladiator's Ornamented Legplates
-							i(40964),	-- Relentless Gladiator's Ornamented Spaulders
-							i(40790),	-- Relentless Gladiator's Plate Chestpiece
-							i(40810),	-- Relentless Gladiator's Plate Gauntlets
-							i(40829),	-- Relentless Gladiator's Plate Helm
-							i(40850),	-- Relentless Gladiator's Plate Legguards
-							i(40870),	-- Relentless Gladiator's Plate Shoulders
-							i(40994),	-- Relentless Gladiator's Ringmail Armor
-							i(41002),	-- Relentless Gladiator's Ringmail Gauntlets
-							i(41014),	-- Relentless Gladiator's Ringmail Helm
-							i(41028),	-- Relentless Gladiator's Ringmail Leggings
-							i(41039),	-- Relentless Gladiator's Ringmail Spaulders
-							i(41941),	-- Relentless Gladiator's Satin Gloves
-							i(41916),	-- Relentless Gladiator's Satin Hood
-							i(41928),	-- Relentless Gladiator's Satin Leggings
-							i(41935),	-- Relentless Gladiator's Satin Mantle
-							i(41922),	-- Relentless Gladiator's Satin Robe
-							i(40792),	-- Relentless Gladiator's Scaled Chestpiece
-							i(40812),	-- Relentless Gladiator's Scaled Gauntlets
-							i(40831),	-- Relentless Gladiator's Scaled Helm
-							i(40852),	-- Relentless Gladiator's Scaled Legguards
-							i(40872),	-- Relentless Gladiator's Scaled Shoulders
-							i(41966),	-- Relentless Gladiator's Silk Amice
-							i(41947),	-- Relentless Gladiator's Silk Cowl
-							i(41972),	-- Relentless Gladiator's Silk Handguards
-							i(41954),	-- Relentless Gladiator's Silk Raiment
-							i(41960),	-- Relentless Gladiator's Silk Trousers
-							i(41294),	-- Relentless Gladiator's Wyrmhide Gloves
-							i(41328),	-- Relentless Gladiator's Wyrmhide Helm
-							i(41305),	-- Relentless Gladiator's Wyrmhide Legguards
-							i(41317),	-- Relentless Gladiator's Wyrmhide Robes
-							i(41282),	-- Relentless Gladiator's Wyrmhide Spaulders
-							i(50466),	-- Sentinel's Winter Cloak
-							i(50972),	-- Shadow Seeker's Tunic
-							i(50995),	-- Vengeful Noose
-							i(50991),	-- Verdigris Chain Belt
-							i(50973),	-- Vestments of Spruce and Fir
-							i(50469),	-- Volde's Cloak of the Night Sky
-							i(50992),	-- Waistband of Despair
-						},
-					}),
+						["groups"] = EMBLEM_OF_FROST_QUARTERMASTER_GROUPS,
+					})),
 					n(31581, {	-- Magister Brasael <Legacy Justice Quartermaster> / <Emblem of Valor Quartermaster> [WRATH]
 						["coord"] = { 66.1, 23.4, NORTHREND_DALARAN },
 						["races"] = HORDE_ONLY,
@@ -7931,306 +9761,16 @@ root("Zones", {
 					n(35500, {	-- Matilda Brightlink <Mail Armor Merchant>
 						["coord"] = { 51.7, 73.0, NORTHREND_DALARAN },
 						["groups"] = {
-							i(50114),	-- Ahn'Kahar Blood Hunter's Handguards
-							i(50115),	-- Ahn'Kahar Blood Hunter's Headpiece
-							i(50116),	-- Ahn'Kahar Blood Hunter's Legguards
-							i(50117),	-- Ahn'Kahar Blood Hunter's Spaulders
-							i(50118),	-- Ahn'Kahar Blood Hunter's Tunic
-							i(50830),	-- Frost Witch's Chestguard
-							i(50832),	-- Frost Witch's Faceguard
-							i(50842),	-- Frost Witch's Gloves
-							i(50831),	-- Frost Witch's Grips
-							i(50836),	-- Frost Witch's Handguards
-							i(50841),	-- Frost Witch's Hauberk
-							i(50837),	-- Frost Witch's Headpiece
-							i(50843),	-- Frost Witch's Helm
-							i(50844),	-- Frost Witch's Kilt
-							i(50838),	-- Frost Witch's Legguards
-							i(50834),	-- Frost Witch's Shoulderguards
-							i(50845),	-- Frost Witch's Shoulderpads
-							i(50839),	-- Frost Witch's Spaulders
-							i(50835),	-- Frost Witch's Tunic
-							i(50833),	-- Frost Witch's War-Kilt
-							a(i(48341)),	-- Nobundo's Chestguard of Conquest
-							a(i(48343)),	-- Nobundo's Faceguard of Conquest
-							a(i(48312)),	-- Nobundo's Gloves of Conquest
-							a(i(48342)),	-- Nobundo's Grips of Conquest
-							a(i(48284)),	-- Nobundo's Handguards of Conquest
-							a(i(48310)),	-- Nobundo's Hauberk of Conquest
-							a(i(48280)),	-- Nobundo's Headpiece of Conquest
-							a(i(48313)),	-- Nobundo's Helm of Conquest
-							a(i(48314)),	-- Nobundo's Kilt of Conquest
-							a(i(48282)),	-- Nobundo's Legguards of Conquest
-							a(i(48345)),	-- Nobundo's Shoulderguards of Conquest
-							a(i(48315)),	-- Nobundo's Shoulderpads of Conquest
-							a(i(48283)),	-- Nobundo's Spaulders of Conquest
-							a(i(48281)),	-- Nobundo's Tunic of Conquest
-							a(i(48344)),	-- Nobundo's War-Kilt of Conquest
-							i(51154, {	-- Sanctified Ahn'Kahar Blood Hunter's Handguards (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50114, 1 },	-- Ahn'Kahar Blood Hunter's Handguards
-								},
-							}),
-							i(51285, {	-- Sanctified Ahn'Kahar Blood Hunter's Handguards (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51154, 1 },	-- Sanctified Ahn'Kahar Blood Hunter's Handguards
-								},
-							}),
-							i(51153, {	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50115, 1 },	-- Ahn'Kahar Blood Hunter's Headpiece
-								},
-							}),
-							i(51286, {	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51153, 1 },	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece
-								},
-							}),
-							i(51152, {	-- Sanctified Ahn'Kahar Blood Hunter's Legguards (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50116, 1 },	-- Ahn'Kahar Blood Hunter's Legguards
-								},
-							}),
-							i(51287, {	-- Sanctified Ahn'Kahar Blood Hunter's Legguards (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51152, 1 },	-- Sanctified Ahn'Kahar Blood Hunter's Legguards
-								},
-							}),
-							i(51151, {	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50117, 1 },	-- Ahn'Kahar Blood Hunter's Spaulders
-								},
-							}),
-							i(51288, {	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51151, 1 },	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders
-								},
-							}),
-							i(51150, {	-- Sanctified Ahn'Kahar Blood Hunter's Tunic (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50118, 1 },	-- Ahn'Kahar Blood Hunter's Tunic
-								},
-							}),
-							i(51289, {	-- Sanctified Ahn'Kahar Blood Hunter's Tunic (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51150, 1 },	-- Sanctified Ahn'Kahar Blood Hunter's Tunic
-								},
-							}),
-							i(51195, {	-- Sanctified Frost Witch's Chestguard (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50830, 1 },	-- Frost Witch's Chestguard
-								},
-							}),
-							i(51244, {	-- Sanctified Frost Witch's Chestguard (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51195, 1 },	-- Sanctified Frost Witch's Chestguard
-								},
-							}),
-							i(51197, {	-- Sanctified Frost Witch's Faceguard (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50832, 1 },	-- Frost Witch's Faceguard
-								},
-							}),
-							i(51242, {	-- Sanctified Frost Witch's Faceguard (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51197, 1 },	-- Sanctified Frost Witch's Faceguard
-								},
-							}),
-							i(51201, {	-- Sanctified Frost Witch's Gloves (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50842, 1 },	-- Frost Witch's Gloves
-								},
-							}),
-							i(51238, {	-- Sanctified Frost Witch's Gloves (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51201, 1 },	-- Sanctified Frost Witch's Gloves
-								},
-							}),
-							i(51196, {	-- Sanctified Frost Witch's Grips (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50831, 1 },	-- Frost Witch's Grips
-								},
-							}),
-							i(51243, {	-- Sanctified Frost Witch's Grips (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51196, 1 },	-- Sanctified Frost Witch's Grips
-								},
-							}),
-							i(51191, {	-- Sanctified Frost Witch's Handguards (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50836, 1 },	-- Frost Witch's Handguards
-								},
-							}),
-							i(51248, {	-- Sanctified Frost Witch's Handguards (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51191, 1 },	-- Sanctified Frost Witch's Handguards
-								},
-							}),
-							i(51200, {	-- Sanctified Frost Witch's Hauberk (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50841, 1 },	-- Frost Witch's Hauberk
-								},
-							}),
-							i(51239, {	-- Sanctified Frost Witch's Hauberk (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51200, 1 },	-- Sanctified Frost Witch's Hauberk
-								},
-							}),
-							i(51192, {	-- Sanctified Frost Witch's Headpiece (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50837, 1 },	-- Frost Witch's Headpiece
-								},
-							}),
-							i(51247, {	-- Sanctified Frost Witch's Headpiece (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51192, 1 },	-- Sanctified Frost Witch's Headpiece
-								},
-							}),
-							i(51202, {	-- Sanctified Frost Witch's Helm (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50843, 1 },	-- Frost Witch's Helm
-								},
-							}),
-							i(51237, {	-- Sanctified Frost Witch's Helm (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51202, 1 },	-- Sanctified Frost Witch's Helm
-								},
-							}),
-							i(51203, {	-- Sanctified Frost Witch's Kilt (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50844, 1 },	-- Frost Witch's Kilt
-								},
-							}),
-							i(51236, {	-- Sanctified Frost Witch's Kilt (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51203, 1 },	-- Sanctified Frost Witch's Kilt
-								},
-							}),
-							i(51193, {	-- Sanctified Frost Witch's Legguards (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50838, 1 },	-- Frost Witch's Legguards
-								},
-							}),
-							i(51246, {	-- Sanctified Frost Witch's Legguards (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51193, 1 },	-- Sanctified Frost Witch's Legguards
-								},
-							}),
-							i(51199, {	-- Sanctified Frost Witch's Shoulderguards (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50834, 1 },	-- Frost Witch's Shoulderguards
-								},
-							}),
-							i(51240, {	-- Sanctified Frost Witch's Shoulderguards (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51199, 1 },	-- Sanctified Frost Witch's Shoulderguards
-								},
-							}),
-							i(51204, {	-- Sanctified Frost Witch's Shoulderpads (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50845, 1 },	-- Frost Witch's Shoulderpads
-								},
-							}),
-							i(51235, {	-- Sanctified Frost Witch's Shoulderpads (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51204, 1 },	-- Sanctified Frost Witch's Shoulderpads
-								},
-							}),
-							i(51194, {	-- Sanctified Frost Witch's Spaulders (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50839, 1 },	-- Frost Witch's Spaulders
-								},
-							}),
-							i(51245, {	-- Sanctified Frost Witch's Spaulders (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51194, 1 },	-- Sanctified Frost Witch's Spaulders
-								},
-							}),
-							i(51190, {	-- Sanctified Frost Witch's Tunic (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50835, 1 },	-- Frost Witch's Tunic
-								},
-							}),
-							i(51249, {	-- Sanctified Frost Witch's Tunic (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51190, 1 },	-- Sanctified Frost Witch's Tunic
-								},
-							}),
-							i(51198, {	-- Sanctified Frost Witch's War-Kilt (N)
-								["cost"] = {
-									{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 50833, 1 },	-- Frost Witch's War-Kilt
-								},
-							}),
-							i(51241, {	-- Sanctified Frost Witch's War-Kilt (H)
-								["cost"] = {
-									{ "i", 52029, 1 },	-- Protector's Mark of Sanctification
-									{ "i", 51198, 1 },	-- Sanctified Frost Witch's War-Kilt
-								},
-							}),
-							h(i(48366)),	-- Thrall's Chestguard of Conquest
-							h(i(48368)),	-- Thrall's Faceguard of Conquest
-							h(i(48337)),	-- Thrall's Gloves of Conquest
-							h(i(48367)),	-- Thrall's Grips of Conquest
-							h(i(48296)),	-- Thrall's Handguards of Conquest
-							h(i(48336)),	-- Thrall's Hauberk of Conquest
-							h(i(48297)),	-- Thrall's Headpiece of Conquest
-							h(i(48338)),	-- Thrall's Helm of Conquest
-							h(i(48339)),	-- Thrall's Kilt of Conquest
-							h(i(48298)),	-- Thrall's Legguards of Conquest
-							h(i(48370)),	-- Thrall's Shoulderguards of Conquest
-							h(i(48340)),	-- Thrall's Shoulderpads of Conquest
-							h(i(48299)),	-- Thrall's Spaulders of Conquest
-							h(i(48295)),	-- Thrall's Tunic of Conquest
-							h(i(48369)),	-- Thrall's War-Kilt of Conquest
-							a(i(48254)),	-- Windrunner's Handguards of Conquest (A)
-							h(i(48276)),	-- Windrunner's Handguards of Conquest (H)
-							a(i(48250)),	-- Windrunner's Headpiece of Conquest (A)
-							h(i(48277)),	-- Windrunner's Headpiece of Conquest (H)
-							a(i(48252)),	-- Windrunner's Legguards of Conquest (A)
-							h(i(48278)),	-- Windrunner's Legguards of Conquest (H)
-							a(i(48253)),	-- Windrunner's Spaulders of Conquest (A)
-							h(i(48279)),	-- Windrunner's Spaulders of Conquest (H)
-							a(i(48251)),	-- Windrunner's Tunic of Conquest (A)
-							h(i(48275)),	-- Windrunner's Tunic of Conquest (H)
+							cl(HUNTER, appendGroups(
+								TIER_TEN_HEROIC_GROUPS.HUNTER,
+								TIER_TEN_NORMAL_GROUPS.HUNTER,
+								TIER_TEN_GROUPS.HUNTER,
+								TIER_NINE_GROUPS.HUNTER, {})),
+							cl(SHAMAN, appendGroups(
+								TIER_TEN_HEROIC_GROUPS.SHAMAN,
+								TIER_TEN_NORMAL_GROUPS.SHAMAN,
+								TIER_TEN_GROUPS.SHAMAN,
+								TIER_NINE_GROUPS.SHAMAN, {})),
 						},
 					}),
 					n(32216, {	-- Mei Francis <Exotic Mounts>
@@ -8439,905 +9979,105 @@ root("Zones", {
 					n(29495, {	-- Norvin Alderman <Cloaks>
 						["coord"] = { 44.7, 48.9, NORTHREND_DALARAN },
 						["groups"] = {
-							i(40724),	-- Cloak of Kea Feathers
-							i(40723),	-- Disguise of the Kumiho
-							i(50468),	-- Drape of the Violet Tower
-							i(40721),	-- Hammerhead Sharkskin Cloak
-							i(50467),	-- Might of the Ocean Serpent
-							i(40722),	-- Platinum Mesh Cloak
-							i(50470),	-- Recovered Scarlet Onslaught Cape
-							i(50466),	-- Sentinel's Winter Cloak
-							i(50469),	-- Volde's Cloak of the Night Sky
+							emov(25, i(40724)),	-- Cloak of Kea Feathers
+							emov(25, i(40723)),	-- Disguise of the Kumiho
+							emof(50, i(50468)),	-- Drape of the Violet Tower
+							emov(25, i(40721)),	-- Hammerhead Sharkskin Cloak
+							emof(50, i(50467)),	-- Might of the Ocean Serpent
+							emov(25, i(40722)),	-- Platinum Mesh Cloak
+							emof(50, i(50470)),	-- Recovered Scarlet Onslaught Cape
+							emof(50, i(50466)),	-- Sentinel's Winter Cloak
+							emof(50, i(50469)),	-- Volde's Cloak of the Night Sky
 						},
 					}),
 					n(29527, {	-- Orton Bennet <Offhand Offerings>
 						["coord"] = { 51.9, 55.1, NORTHREND_DALARAN },
 						["groups"] = {
-							i(40699),	-- Handbook of Obscure Remedies
-							i(40698),	-- Ward of the Violet Citadel
+							emoh(25, i(40699)),	-- Handbook of Obscure Remedies
+							emoh(25, i(40698)),	-- Ward of the Violet Citadel
 						},
 					}),
 					n(28995, {	-- Paldesse <Cloth Armor Merchant>
 						["coord"] = { 43.8, 49.4, NORTHREND_DALARAN },
 						["groups"] = {
-							i(50996),	-- Belt of Omission
-							i(50997),	-- Circle of Ossus
-							i(46172, {	-- Conqueror's Circlet of Sanctification
-								["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
-							}),
-							i(46197, {	-- Conqueror's Cowl of Sanctification
-								["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
-							}),
-							i(46135, {	-- Conqueror's Deathbringer Gloves
-								["cost"] = { { "i", 45641, 1 }, },	-- Gauntlets of the Wayward Conqueror
-							}),
-							i(46140, {	-- Conqueror's Deathbringer Hood
-								["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
-							}),
-							i(46139, {	-- Conqueror's Deathbringer Leggings
-								["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
-							}),
-							i(46137, {	-- Conqueror's Deathbringer Robe
-								["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
-							}),
-							i(46136, {	-- Conqueror's Deathbringer Shoulderpads
-								["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
-							}),
-							i(46188, {	-- Conqueror's Gloves of Sanctification
-								["cost"] = { { "i", 45641, 1 }, },	-- Gauntlets of the Wayward Conqueror
-							}),
-							i(46163, {	-- Conqueror's Handwraps of Sanctification
-								["cost"] = { { "i", 45641, 1 }, },	-- Gauntlets of the Wayward Conqueror
-							}),
-							i(46132, {	-- Conqueror's Kirin Tor Gauntlets
-								["cost"] = { { "i", 45643, 1 }, },	-- Gauntlets of the Wayward Vanquisher
-							}),
-							i(46129, {	-- Conqueror's Kirin Tor Hood
-								["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
-							}),
-							i(46133, {	-- Conqueror's Kirin Tor Leggings
-								["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
-							}),
-							i(46134, {	-- Conqueror's Kirin Tor Shoulderpads
-								["cost"] = { { "i", 45658, 1 }, },	-- Mantle of the Wayward Vanquisher
-							}),
-							i(46130, {	-- Conqueror's Kirin Tor Tunic
-								["cost"] = { { "i", 45634, 1 }, },	-- Breastplate of the Wayward Vanquisher
-							}),
-							i(46195, {	-- Conqueror's Leggings of Sanctification
-								["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
-							}),
-							i(46165, {	-- Conqueror's Mantle of Sanctification
-								["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
-							}),
-							i(46170, {	-- Conqueror's Pants of Sanctification
-								["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
-							}),
-							i(46168, {	-- Conqueror's Raiments of Sanctification
-								["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
-							}),
-							i(46193, {	-- Conqueror's Robe of Sanctification
-								["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
-							}),
-							i(46190, {	-- Conqueror's Shoulderpads of Sanctification
-								["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
-							}),
-							i(40697),	-- Elegant Temple Gardens' Girdle
-							i(50975),	-- Ermine Coronation Robes
-							i(50984),	-- Gloves of Ambivalence
-							i(50983),	-- Gloves of False Gestures
-							i(39521, {	-- Heroes' Circlet of Faith
-								["cost"] = { { "i", 40616, 1 }, },	-- Helm of the Lost Conqueror
-							}),
-							i(39514, {	-- Heroes' Crown of Faith
-								["cost"] = { { "i", 40616, 1 }, },	-- Helm of the Lost Conqueror
-							}),
-							i(39491, {	-- Heroes' Frostfire Circlet
-								["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
-							}),
-							i(39495, {	-- Heroes' Frostfire Gloves
-								["cost"] = { { "i", 40615, 1 }, },	-- Gloves of the Lost Vanquisher
-							}),
-							i(39493, {	-- Heroes' Frostfire Leggings
-								["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
-							}),
-							i(39492, {	-- Heroes' Frostfire Robe
-								["cost"] = { { "i", 40612, 1 }, },	-- Chestguard of the Lost Vanquisher
-							}),
-							i(39494, {	-- Heroes' Frostfire Shoulderpads
-								["cost"] = { { "i", 40624, 1 }, },	-- Spaulders of the Lost Vanquisher
-							}),
-							i(39519, {	-- Heroes' Gloves of Faith
-								["cost"] = { { "i", 40613, 1 }, },	-- Gloves of the Lost Conqueror
-							}),
-							i(39530, {	-- Heroes' Handwraps of Faith
-								["cost"] = { { "i", 40613, 1 }, },	-- Gloves of the Lost Conqueror
-							}),
-							i(39517, {	-- Heroes' Leggings of Faith
-								["cost"] = { { "i", 40619, 1 }, },	-- Leggings of the Lost Conqueror
-							}),
-							i(39529, {	-- Heroes' Mantle of Faith
-								["cost"] = { { "i", 40622, 1 }, },	-- Spaulders of the Lost Conqueror
-							}),
-							i(39528, {	-- Heroes' Pants of Faith
-								["cost"] = { { "i", 40619, 1 }, },	-- Leggings of the Lost Conqueror
-							}),
-							i(39496, {	-- Heroes' Plagueheart Circlet
-								["cost"] = { { "i", 40616, 1 }, },	-- Helm of the Lost Conqueror
-							}),
-							i(39500, {	-- Heroes' Plagueheart Gloves
-								["cost"] = { { "i", 40613, 1 }, },	-- Gloves of the Lost Conqueror
-							}),
-							i(39498, {	-- Heroes' Plagueheart Leggings
-								["cost"] = { { "i", 40619, 1 }, },	-- Leggings of the Lost Conqueror
-							}),
-							i(39497, {	-- Heroes' Plagueheart Robe
-								["cost"] = { { "i", 40610, 1 }, },	-- Chestguard of the Lost Conqueror
-							}),
-							i(39499, {	-- Heroes' Plagueheart Shoulderpads
-								["cost"] = { { "i", 40622, 1 }, },	-- Spaulders of the Lost Conqueror
-							}),
-							i(39523, {	-- Heroes' Raiments of Faith
-								["cost"] = { { "i", 40610, 1 }, },	-- Chestguard of the Lost Conqueror
-							}),
-							i(39515, {	-- Heroes' Robe of Faith
-								["cost"] = { { "i", 40610, 1 }, },	-- Chestguard of the Lost Conqueror
-							}),
-							i(39518, {	-- Heroes' Shoulderpads of Faith
-								["cost"] = { { "i", 40622, 1 }, },	-- Spaulders of the Lost Conqueror
-							}),
-							i(45848),	-- Legwraps of the Master Conjurer
-							i(50974),	-- Meteor Chaser's Raiment
-							i(40696),	-- Plush Sash of Guzbah
-							i(45831),	-- Sash of Potent Incantations
-							i(40751),	-- Slippers of the Holy Light
-							i(45840),	-- Touch of the Occult
-							i(40456, {	-- Valorous Circlet of Faith
-								["cost"] = { { "i", 40631, 1 }, },	-- Crown of the Lost Conqueror
-							}),
-							i(45391, {	-- Valorous Circlet of Sanctification
-								["cost"] = { { "i", 45647, 1 }, },	-- Helm of the Wayward Conqueror
-							}),
-							i(45386, {	-- Valorous Cowl of Sanctification
-								["cost"] = { { "i", 45647, 1 }, },	-- Helm of the Wayward Conqueror
-							}),
-							i(40447, {	-- Valorous Crown of Faith
-								["cost"] = { { "i", 40631, 1 }, },	-- Crown of the Lost Conqueror
-							}),
-							i(45419, {	-- Valorous Deathbringer Gloves
-								["cost"] = { { "i", 45644, 1 }, },	-- Gloves of the Wayward Conqueror
-							}),
-							i(45417, {	-- Valorous Deathbringer Hood
-								["cost"] = { { "i", 45647, 1 }, },	-- Helm of the Wayward Conqueror
-							}),
-							i(45420, {	-- Valorous Deathbringer Leggings
-								["cost"] = { { "i", 45650, 1 }, },	-- Leggings of the Wayward Conqueror
-							}),
-							i(45421, {	-- Valorous Deathbringer Robe
-								["cost"] = { { "i", 45635, 1 }, },	-- Chestguard of the Wayward Conqueror
-							}),
-							i(45422, {	-- Valorous Deathbringer Shoulderpads
-								["cost"] = { { "i", 45659, 1 }, },	-- Spaulders of the Wayward Conqueror
-							}),
-							i(40416, {	-- Valorous Frostfire Circlet
-								["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
-							}),
-							i(40415, {	-- Valorous Frostfire Gloves
-								["cost"] = { { "i", 40630, 1 }, },	-- Gauntlets of the Lost Vanquisher
-							}),
-							i(40417, {	-- Valorous Frostfire Leggings
-								["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
-							}),
-							i(40418, {	-- Valorous Frostfire Robe
-								["cost"] = { { "i", 40627, 1 }, },	-- Breastplate of the Lost Vanquisher
-							}),
-							i(40419, {	-- Valorous Frostfire Shoulderpads
-								["cost"] = { { "i", 40639, 1 }, },	-- Mantle of the Lost Vanquisher
-							}),
-							i(40445, {	-- Valorous Gloves of Faith
-								["cost"] = { { "i", 40628, 1 }, },	-- Gauntlets of the Lost Conqueror
-							}),
-							i(45387, {	-- Valorous Gloves of Sanctification
-								["cost"] = { { "i", 45644, 1 }, },	-- Gloves of the Wayward Conqueror
-							}),
-							i(40454, {	-- Valorous Handwraps of Faith
-								["cost"] = { { "i", 40628, 1 }, },	-- Gauntlets of the Lost Conqueror
-							}),
-							i(45392, {	-- Valorous Handwraps of Sanctification
-								["cost"] = { { "i", 45644, 1 }, },	-- Gloves of the Wayward Conqueror
-							}),
-							i(46131, {	-- Valorous Kirin Tor Gauntlets
-								["cost"] = { { "i", 45646, 1 }, },	-- Gloves of the Wayward Vanquisher
-							}),
-							i(45365, {	-- Valorous Kirin Tor Hood
-								["cost"] = { { "i", 45649, 1 }, },	-- Helm of the Wayward Vanquisher
-							}),
-							i(45367, {	-- Valorous Kirin Tor Leggings
-								["cost"] = { { "i", 45652, 1 }, },	-- Leggings of the Wayward Vanquisher
-							}),
-							i(45369, {	-- Valorous Kirin Tor Shoulderpads
-								["cost"] = { { "i", 45661, 1 }, },	-- Spaulders of the Wayward Vanquisher
-							}),
-							i(45368, {	-- Valorous Kirin Tor Tunic
-								["cost"] = { { "i", 45637, 1 }, },	-- Chestguard of the Wayward Vanquisher
-							}),
-							i(40448, {	-- Valorous Leggings of Faith
-								["cost"] = { { "i", 40634, 1 }, },	-- Legplates of the Lost Conqueror
-							}),
-							i(45388, {	-- Valorous Leggings of Sanctification
-								["cost"] = { { "i", 45650, 1 }, },	-- Leggings of the Wayward Conqueror
-							}),
-							i(40459, {	-- Valorous Mantle of Faith
-								["cost"] = { { "i", 40637, 1 }, },	-- Mantle of the Lost Conqueror
-							}),
-							i(45393, {	-- Valorous Mantle of Sanctification
-								["cost"] = { { "i", 45659, 1 }, },	-- Spaulders of the Wayward Conqueror
-							}),
-							i(40457, {	-- Valorous Pants of Faith
-								["cost"] = { { "i", 40634, 1 }, },	-- Legplates of the Lost Conqueror
-							}),
-							i(45394, {	-- Valorous Pants of Sanctification
-								["cost"] = { { "i", 45650, 1 }, },	-- Leggings of the Wayward Conqueror
-							}),
-							i(40421, {	-- Valorous Plagueheart Circlet
-								["cost"] = { { "i", 40631, 1 }, },	-- Crown of the Lost Conqueror
-							}),
-							i(40420, {	-- Valorous Plagueheart Gloves
-								["cost"] = { { "i", 40628, 1 }, },	-- Gauntlets of the Lost Conqueror
-							}),
-							i(40422, {	-- Valorous Plagueheart Leggings
-								["cost"] = { { "i", 40634, 1 }, },	-- Legplates of the Lost Conqueror
-							}),
-							i(40423, {	-- Valorous Plagueheart Robe
-								["cost"] = { { "i", 40625, 1 }, },	-- Breastplate of the Lost Conqueror
-							}),
-							i(40424, {	-- Valorous Plagueheart Shoulderpads
-								["cost"] = { { "i", 40637, 1 }, },	-- Mantle of the Lost Conqueror
-							}),
-							i(40458, {	-- Valorous Raiments of Faith
-								["cost"] = { { "i", 40625, 1 }, },	-- Breastplate of the Lost Conqueror
-							}),
-							i(45395, {	-- Valorous Raiments of Sanctification
-								["cost"] = { { "i", 45635, 1 }, },	-- Chestguard of the Wayward Conqueror
-							}),
-							i(40449, {	-- Valorous Robe of Faith
-								["cost"] = { { "i", 40625, 1 }, },	-- Breastplate of the Lost Conqueror
-							}),
-							i(45389, {	-- Valorous Robe of Sanctification
-								["cost"] = { { "i", 45635, 1 }, },	-- Chestguard of the Wayward Conqueror
-							}),
-							i(40450, {	-- Valorous Shoulderpads of Faith
-								["cost"] = { { "i", 40637, 1 }, },	-- Mantle of the Lost Conqueror
-							}),
-							i(45390, {	-- Valorous Shoulderpads of Sanctification
-								["cost"] = { { "i", 45659, 1 }, },	-- Spaulders of the Wayward Conqueror
-							}),
-							i(40740),	-- Wraps of the Astral Traveler
-							i(40750),	-- Xintor's Expeditionary Boots
+							cl(MAGE, appendGroups(
+								TIER_EIGHT_HEROIC_GROUPS.MAGE,
+								TIER_EIGHT_GROUPS.MAGE,
+								TIER_SEVEN_HEROIC_GROUPS.MAGE,
+								TIER_SEVEN_GROUPS.MAGE, {})),
+							cl(PRIEST, appendGroups(
+								TIER_EIGHT_HEROIC_GROUPS.PRIEST,
+								TIER_EIGHT_GROUPS.PRIEST,
+								TIER_SEVEN_HEROIC_GROUPS.PRIEST,
+								TIER_SEVEN_GROUPS.PRIEST, {})),
+							cl(WARLOCK, appendGroups(
+								TIER_EIGHT_HEROIC_GROUPS.WARLOCK,
+								TIER_EIGHT_GROUPS.WARLOCK,
+								TIER_SEVEN_HEROIC_GROUPS.WARLOCK,
+								TIER_SEVEN_GROUPS.WARLOCK, {})),
+							emof(60, i(50996)),	-- Belt of Omission
+							emof(60, i(50997)),	-- Circle of Ossus
+							emoh(40, i(40697)),	-- Elegant Temple Gardens' Girdle
+							emof(95, i(50975)),	-- Ermine Coronation Robes
+							emof(60, i(50984)),	-- Gloves of Ambivalence
+							emof(60, i(50983)),	-- Gloves of False Gestures
+							emoc(39, i(45848)),	-- Legwraps of the Master Conjurer
+							emof(95, i(50974)),	-- Meteor Chaser's Raiment
+							emoh(40, i(40696)),	-- Plush Sash of Guzbah
+							emoc(28, i(45831)),	-- Sash of Potent Incantations
+							emov(40, i(40751)),	-- Slippers of the Holy Light
+							emoc(28, i(45840)),	-- Touch of the Occult
+							emov(60, i(40740)),	-- Wraps of the Astral Traveler
+							emov(40, i(40750)),	-- Xintor's Expeditionary Boots
 						},
 					}),
 					n(35497, {	-- Rafael Langrom <Leather Armor Merchant>
 						["coord"] = { 51.2, 71.5, NORTHREND_DALARAN },
 						["groups"] = {
-							h(i(48243)),	-- Garona's Breastplate of Conquest
-							h(i(48244)),	-- Garona's Gauntlets of Conquest
-							h(i(48245)),	-- Garona's Helmet of Conquest
-							h(i(48246)),	-- Garona's Legplates of Conquest
-							h(i(48247)),	-- Garona's Pauldrons of Conquest
-							i(50821),	-- Lasherweave Cover
-							i(50107),	-- Lasherweave Gauntlets
-							i(50822),	-- Lasherweave Gloves
-							i(50827),	-- Lasherweave Handgrips
-							i(50826),	-- Lasherweave Headguard
-							i(50108),	-- Lasherweave Helmet
-							i(50825),	-- Lasherweave Legguards
-							i(50109),	-- Lasherweave Legplates
-							i(50819),	-- Lasherweave Mantle
-							i(50113),	-- Lasherweave Pauldrons
-							i(50828),	-- Lasherweave Raiment
-							i(50106),	-- Lasherweave Robes
-							i(50824),	-- Lasherweave Shoulderpads
-							i(50820),	-- Lasherweave Trousers
-							i(50823),	-- Lasherweave Vestment
-							a(i(48158)),	-- Malfurion's Cover of Conquest
-							a(i(48162)),	-- Malfurion's Gloves of Conquest
-							a(i(48213)),	-- Malfurion's Handgrips of Conquest
-							a(i(48132)),	-- Malfurion's Handguards of Conquest
-							a(i(48214)),	-- Malfurion's Headguard of Conquest
-							a(i(48102)),	-- Malfurion's Headpiece of Conquest
-							a(i(48130)),	-- Malfurion's Leggings of Conquest
-							a(i(48215)),	-- Malfurion's Legguards of Conquest
-							a(i(48161)),	-- Malfurion's Mantle of Conquest
-							a(i(48216)),	-- Malfurion's Raiments of Conquest
-							a(i(48129)),	-- Malfurion's Robe of Conquest
-							a(i(48217)),	-- Malfurion's Shoulderpads of Conquest
-							a(i(48131)),	-- Malfurion's Spaulders of Conquest
-							a(i(48160)),	-- Malfurion's Trousers of Conquest
-							a(i(48159)),	-- Malfurion's Vestments of Conquest
-							h(i(48184)),	-- Runetotem's Cover of Conquest
-							h(i(48183)),	-- Runetotem's Gloves of Conquest
-							h(i(48192)),	-- Runetotem's Handgrips of Conquest
-							h(i(48153)),	-- Runetotem's Handguards of Conquest
-							h(i(48188)),	-- Runetotem's Headguard of Conquest
-							h(i(48154)),	-- Runetotem's Headpiece of Conquest
-							h(i(48155)),	-- Runetotem's Leggings of Conquest
-							h(i(48190)),	-- Runetotem's Legguards of Conquest
-							h(i(48187)),	-- Runetotem's Mantle of Conquest
-							h(i(48189)),	-- Runetotem's Raiments of Conquest
-							h(i(48156)),	-- Runetotem's Robe of Conquest
-							h(i(48191)),	-- Runetotem's Shoulderpads of Conquest
-							h(i(48157)),	-- Runetotem's Spaulders of Conquest
-							h(i(48185)),	-- Runetotem's Trousers of Conquest
-							h(i(48186)),	-- Runetotem's Vestments of Conquest
-							i(51149, {	-- Sanctified Lasherweave Cover (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50821, 1 },	-- Lasherweave Cover
-								},
-							}),
-							i(51290, {	-- Sanctified Lasherweave Cover (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51149, 1 },	-- Sanctified Lasherweave Cover
-								},
-							}),
-							i(51138, {	-- Sanctified Lasherweave Gauntlets (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50107, 1 },	-- Lasherweave Gauntlets
-								},
-							}),
-							i(51301, {	-- Sanctified Lasherweave Gauntlets (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51138, 1 },	-- Sanctified Lasherweave Gauntlets
-								},
-							}),
-							i(51148, {	-- Sanctified Lasherweave Gloves (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50822, 1 },	-- Lasherweave Gloves
-								},
-							}),
-							i(51291, {	-- Sanctified Lasherweave Gloves (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51148, 1 },	-- Sanctified Lasherweave Gloves
-								},
-							}),
-							i(51144, {	-- Sanctified Lasherweave Handgrips (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50827, 1 },	-- Lasherweave Handgrips
-								},
-							}),
-							i(51295, {	-- Sanctified Lasherweave Handgrips (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51144, 1 },	-- Sanctified Lasherweave Handgrips
-								},
-							}),
-							i(51143, {	-- Sanctified Lasherweave Headguard (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50826, 1 },	-- Lasherweave Headguard
-								},
-							}),
-							i(51296, {	-- Sanctified Lasherweave Headguard (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51143, 1 },	-- Sanctified Lasherweave Headguard
-								},
-							}),
-							i(51137, {	-- Sanctified Lasherweave Helmet (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50108, 1 },	-- Lasherweave Helmet
-								},
-							}),
-							i(51302, {	-- Sanctified Lasherweave Helmet (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51137, 1 },	-- Sanctified Lasherweave Helmet
-								},
-							}),
-							i(51142, {	-- Sanctified Lasherweave Legguards (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50825, 1 },	-- Lasherweave Legguards
-								},
-							}),
-							i(51297, {	-- Sanctified Lasherweave Legguards (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51142, 1 },	-- Sanctified Lasherweave Legguards
-								},
-							}),
-							i(51136, {	-- Sanctified Lasherweave Legplates (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50109, 1 },	-- Lasherweave Legplates
-								},
-							}),
-							i(51303, {	-- Sanctified Lasherweave Legplates (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51136, 1 },	-- Sanctified Lasherweave Legplates
-								},
-							}),
-							i(51147, {	-- Sanctified Lasherweave Mantle (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50819, 1 },	-- Lasherweave Mantle
-								},
-							}),
-							i(51292, {	-- Sanctified Lasherweave Mantle (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51147, 1 },	-- Sanctified Lasherweave Mantle
-								},
-							}),
-							i(51135, {	-- Sanctified Lasherweave Pauldrons (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50113, 1 },	-- Lasherweave Pauldrons
-								},
-							}),
-							i(51304, {	-- Sanctified Lasherweave Pauldrons (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51135, 1 },	-- Sanctified Lasherweave Pauldrons
-								},
-							}),
-							i(51141, {	-- Sanctified Lasherweave Raiment (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50828, 1 },	-- Lasherweave Raiment
-								},
-							}),
-							i(51298, {	-- Sanctified Lasherweave Raiment (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51141, 1 },	-- Sanctified Lasherweave Raiment
-								},
-							}),
-							i(51139, {	-- Sanctified Lasherweave Robes (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50106, 1 },	-- Lasherweave Robes
-								},
-							}),
-							i(51300, {	-- Sanctified Lasherweave Robes (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51139, 1 },	-- Sanctified Lasherweave Robes
-								},
-							}),
-							i(51140, {	-- Sanctified Lasherweave Shoulderpads (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50824, 1 },	-- Lasherweave Shoulderpads
-								},
-							}),
-							i(51299, {	-- Sanctified Lasherweave Shoulderpads (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51140, 1 },	-- Sanctified Lasherweave Shoulderpads
-								},
-							}),
-							i(51146, {	-- Sanctified Lasherweave Trousers (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50820, 1 },	-- Lasherweave Trousers
-								},
-							}),
-							i(51293, {	-- Sanctified Lasherweave Trousers (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51146, 1 },	-- Sanctified Lasherweave Trousers
-								},
-							}),
-							i(51145, {	-- Sanctified Lasherweave Vestment (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50823, 1 },	-- Lasherweave Vestment
-								},
-							}),
-							i(51294, {	-- Sanctified Lasherweave Vestment (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51145, 1 },	-- Sanctified Lasherweave Vestment
-								},
-							}),
-							i(51189, {	-- Sanctified Shadowblade Breastplate (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50087, 1 },	-- Shadowblade Breastplate
-								},
-							}),
-							i(51250, {	-- Sanctified Shadowblade Breastplate (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51189, 1 },	-- Sanctified Shadowblade Breastplate
-								},
-							}),
-							i(51188, {	-- Sanctified Shadowblade Gauntlets (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50088, 1 },	-- Shadowblade Gauntlets
-								},
-							}),
-							i(51251, {	-- Sanctified Shadowblade Gauntlets (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51188, 1 },	-- Sanctified Shadowblade Gauntlets
-								},
-							}),
-							i(51187, {	-- Sanctified Shadowblade Helmet (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50089, 1 },	-- Shadowblade Helmet
-								},
-							}),
-							i(51252, {	-- Sanctified Shadowblade Helmet (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51187, 1 },	-- Sanctified Shadowblade Helmet
-								},
-							}),
-							i(51186, {	-- Sanctified Shadowblade Legplates (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50090, 1 },	-- Shadowblade Legplates
-								},
-							}),
-							i(51253, {	-- Sanctified Shadowblade Legplates (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51186, 1 },	-- Sanctified Shadowblade Legplates
-								},
-							}),
-							i(51185, {	-- Sanctified Shadowblade Pauldrons (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50105, 1 },	-- Shadowblade Pauldrons
-								},
-							}),
-							i(51254, {	-- Sanctified Shadowblade Pauldrons (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51185, 1 },	-- Sanctified Shadowblade Pauldrons
-								},
-							}),
-							i(50087),	-- Shadowblade Breastplate
-							i(50088),	-- Shadowblade Gauntlets
-							i(50089),	-- Shadowblade Helmet
-							i(50090),	-- Shadowblade Legplates
-							i(50105),	-- Shadowblade Pauldrons
-							a(i(48219)),	-- VanCleef's Breastplate of Conquest
-							a(i(48222)),	-- VanCleef's Gauntlets of Conquest
-							a(i(48218)),	-- VanCleef's Helmet of Conquest
-							a(i(48220)),	-- VanCleef's Legplates of Conquest
-							a(i(48221)),	-- VanCleef's Pauldrons of Conquest
+							cl(DRUID, appendGroups(
+								TIER_TEN_HEROIC_GROUPS.DRUID,
+								TIER_TEN_NORMAL_GROUPS.DRUID,
+								TIER_TEN_GROUPS.DRUID,
+								TIER_NINE_GROUPS.DRUID, {})),
+							cl(ROGUE, appendGroups(
+								TIER_TEN_HEROIC_GROUPS.ROGUE,
+								TIER_TEN_NORMAL_GROUPS.ROGUE,
+								TIER_TEN_GROUPS.ROGUE,
+								TIER_NINE_GROUPS.ROGUE, {})),
 						},
 					}),
 					n(35496, {	-- Rueben Lauren <Cloth Armor Merchant>
 						["coord"] = { 44.1, 48.9, NORTHREND_DALARAN },
 						["groups"] = {
-							i(50275),	-- Bloodmage Gloves
-							i(50276),	-- Bloodmage Hood
-							i(50277),	-- Bloodmage Leggings
-							i(50278),	-- Bloodmage Robe
-							i(50279),	-- Bloodmage Shoulderpads
-							i(50392),	-- Crimson Acolyte Cowl
-							i(50766),	-- Crimson Acolyte Gloves
-							i(50391),	-- Crimson Acolyte Handwraps
-							i(50765),	-- Crimson Acolyte Hood
-							i(50769),	-- Crimson Acolyte Leggings
-							i(50396),	-- Crimson Acolyte Mantle
-							i(50393),	-- Crimson Acolyte Pants
-							i(50394),	-- Crimson Acolyte Raiments
-							i(50768),	-- Crimson Acolyte Robe
-							i(50767),	-- Crimson Acolyte Shoulderpads
-							i(50240),	-- Dark Coven Gloves
-							i(50241),	-- Dark Coven Hood
-							i(50242),	-- Dark Coven Leggings
-							i(50243),	-- Dark Coven Robe
-							i(50244),	-- Dark Coven Shoulderpads
-							h(i(47802)),	-- Gul'dan's Gloves of Conquest
-							h(i(47801)),	-- Gul'dan's Hood of Conquest
-							h(i(47800)),	-- Gul'dan's Leggings of Conquest
-							h(i(47799)),	-- Gul'dan's Robe of Conquest
-							h(i(47798)),	-- Gul'dan's Shoulderpads of Conquest
-							a(i(47783)),	-- Kel'Thuzad's Gloves of Conquest
-							a(i(47784)),	-- Kel'Thuzad's Hood of Conquest
-							a(i(47785)),	-- Kel'Thuzad's Leggings of Conquest
-							a(i(47786)),	-- Kel'Thuzad's Robe of Conquest
-							a(i(47787)),	-- Kel'Thuzad's Shoulderpads of Conquest
-							a(i(47752)),	-- Khadgar's Gauntlets of Conquest
-							a(i(47748)),	-- Khadgar's Hood of Conquest
-							a(i(47750)),	-- Khadgar's Leggings of Conquest
-							a(i(47749)),	-- Khadgar's Robe of Conquest
-							a(i(47751)),	-- Khadgar's Shoulderpads of Conquest
-							i(51159, {	-- Sanctified Bloodmage Gloves (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50275, 1 },	-- Bloodmage Gloves
-								},
-							}),
-							i(51280, {	-- Sanctified Bloodmage Gloves (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51159, 1 },	-- Sanctified Bloodmage Gloves
-								},
-							}),
-							i(51158, {	-- Sanctified Bloodmage Hood (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50276, 1 },	-- Bloodmage Hood
-								},
-							}),
-							i(51281, {	-- Sanctified Bloodmage Hood (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51158, 1 },	-- Sanctified Bloodmage Hood
-								},
-							}),
-							i(51157, {	-- Sanctified Bloodmage Leggings (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50277, 1 },	-- Bloodmage Leggings
-								},
-							}),
-							i(51282, {	-- Sanctified Bloodmage Leggings (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51157, 1 },	-- Sanctified Bloodmage Leggings
-								},
-							}),
-							i(51156, {	-- Sanctified Bloodmage Robe (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50278, 1 },	-- Bloodmage Robe
-								},
-							}),
-							i(51283, {	-- Sanctified Bloodmage Robe (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51156, 1 },	-- Sanctified Bloodmage Robe
-								},
-							}),
-							i(51155, {	-- Sanctified Bloodmage Shoulderpads (N)
-								["cost"] = {
-									{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
-									{ "i", 50279, 1 },	-- Bloodmage Shoulderpads
-								},
-							}),
-							i(51284, {	-- Sanctified Bloodmage Shoulderpads (H)
-								["cost"] = {
-									{ "i", 52028, 1 },	-- Vanquisher's Mark of Sanctification (H)
-									{ "i", 51155, 1 },	-- Sanctified Bloodmage Shoulderpads
-								},
-							}),
-							i(51184, {	-- Sanctified Crimson Acolyte Cowl (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
-									{ "i", 50392, 1 },	-- Crimson Acolyte Cowl
-								},
-							}),
-							i(51255, {	-- Sanctified Crimson Acolyte Cowl (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
-									{ "i", 51184, 1 },	-- Sanctified Crimson Acolyte Cowl
-								},
-							}),
-							i(51179, {	-- Sanctified Crimson Acolyte Gloves (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
-									{ "i", 50766, 1 },	-- Crimson Acolyte Gloves
-								},
-							}),
-							i(51260, {	-- Sanctified Crimson Acolyte Gloves (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
-									{ "i", 51179, 1 },	-- Sanctified Crimson Acolyte Gloves
-								},
-							}),
-							i(51183, {	-- Sanctified Crimson Acolyte Handwraps (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
-									{ "i", 50391, 1 },	-- Crimson Acolyte Handwraps
-								},
-							}),
-							i(51256, {	-- Sanctified Crimson Acolyte Handwraps (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
-									{ "i", 51183, 1 },	-- Sanctified Crimson Acolyte Handwraps
-								},
-							}),
-							i(51178, {	-- Sanctified Crimson Acolyte Hood (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
-									{ "i", 50765, 1 },	-- Crimson Acolyte Hood
-								},
-							}),
-							i(51261, {	-- Sanctified Crimson Acolyte Hood (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
-									{ "i", 51178, 1 },	-- Sanctified Crimson Acolyte Hood
-								},
-							}),
-							i(51177, {	-- Sanctified Crimson Acolyte Leggings (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
-									{ "i", 50769, 1 },	-- Crimson Acolyte Leggings
-								},
-							}),
-							i(51262, {	-- Sanctified Crimson Acolyte Leggings (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
-									{ "i", 51177, 1 },	-- Sanctified Crimson Acolyte Leggings
-								},
-							}),
-							i(51182, {	-- Sanctified Crimson Acolyte Mantle (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
-									{ "i", 50396, 1 },	-- Crimson Acolyte Mantle
-								},
-							}),
-							i(51257, {	-- Sanctified Crimson Acolyte Mantle (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
-									{ "i", 51182, 1 },	-- Sanctified Crimson Acolyte Mantle
-								},
-							}),
-							i(51181, {	-- Sanctified Crimson Acolyte Pants (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
-									{ "i", 50393, 1 },	-- Crimson Acolyte Pants
-								},
-							}),
-							i(51258, {	-- Sanctified Crimson Acolyte Pants (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
-									{ "i", 51181, 1 },	-- Sanctified Crimson Acolyte Pants
-								},
-							}),
-							i(51180, {	-- Sanctified Crimson Acolyte Raiments (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
-									{ "i", 50394, 1 },	-- Crimson Acolyte Raiments
-								},
-							}),
-							i(51259, {	-- Sanctified Crimson Acolyte Raiments (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
-									{ "i", 51180, 1 },	-- Sanctified Crimson Acolyte Raiments
-								},
-							}),
-							i(51176, {	-- Sanctified Crimson Acolyte Robe (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
-									{ "i", 50768, 1 },	-- Crimson Acolyte Robe
-								},
-							}),
-							i(51263, {	-- Sanctified Crimson Acolyte Robe (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
-									{ "i", 51176, 1 },	-- Sanctified Crimson Acolyte Robe
-								},
-							}),
-							i(51175, {	-- Sanctified Crimson Acolyte Shoulderpads (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
-									{ "i", 50767, 1 },	-- Crimson Acolyte Shoulderpads
-								},
-							}),
-							i(51264, {	-- Sanctified Crimson Acolyte Shoulderpads (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
-									{ "i", 51175, 1 },	-- Sanctified Crimson Acolyte Shoulderpads
-								},
-							}),
-							i(51209, {	-- Sanctified Dark Coven Gloves (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
-									{ "i", 50240, 1 },	-- Dark Coven Gloves
-								},
-							}),
-							i(51230, {	-- Sanctified Dark Coven Gloves (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
-									{ "i", 51209, 1 },	-- Sanctified Dark Coven Gloves
-								},
-							}),
-							i(51208, {	-- Sanctified Dark Coven Hood (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
-									{ "i", 50241, 1 },	-- Dark Coven Hood
-								},
-							}),
-							i(51231, {	-- Sanctified Dark Coven Hood (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
-									{ "i", 51208, 1 },	-- Sanctified Dark Coven Hood
-								},
-							}),
-							i(51207, {	-- Sanctified Dark Coven Leggings (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
-									{ "i", 50242, 1 },	-- Dark Coven Leggings
-								},
-							}),
-							i(51232, {	-- Sanctified Dark Coven Leggings (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
-									{ "i", 51207, 1 },	-- Sanctified Dark Coven Leggings
-								},
-							}),
-							i(51206, {	-- Sanctified Dark Coven Robe (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
-									{ "i", 50243, 1 },	-- Dark Coven Robe
-								},
-							}),
-							i(51233, {	-- Sanctified Dark Coven Robe (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
-									{ "i", 51206, 1 },	-- Sanctified Dark Coven Robe
-								},
-							}),
-							i(51205, {	-- Sanctified Dark Coven Shoulderpads (N)
-								["cost"] = {
-									{ "i", 52027, 1 },	-- Conqueror's Mark of Sanctification (N)
-									{ "i", 50244, 1 },	-- Dark Coven Shoulderpads
-								},
-							}),
-							i(51234, {	-- Sanctified Dark Coven Shoulderpads (H)
-								["cost"] = {
-									{ "i", 52030, 1 },	-- Conqueror's Mark of Sanctification (H)
-									{ "i", 51205, 1 },	-- Sanctified Dark Coven Shoulderpads
-								},
-							}),
-							h(i(47773)),	-- Sunstrider's Gauntlets of Conquest
-							h(i(47774)),	-- Sunstrider's Hood of Conquest
-							h(i(47775)),	-- Sunstrider's Leggings of Conquest
-							h(i(47776)),	-- Sunstrider's Robe of Conquest
-							h(i(47777)),	-- Sunstrider's Shoulderpads of Conquest
-							a(i(48073)),	-- Velen's Circlet of Conquest
-							a(i(47914)),	-- Velen's Cowl of Conquest
-							a(i(47982)),	-- Velen's Gloves of Conquest
-							a(i(48072)),	-- Velen's Handwraps of Conquest
-							a(i(47980)),	-- Velen's Leggings of Conquest
-							a(i(48076)),	-- Velen's Mantle of Conquest
-							a(i(48074)),	-- Velen's Pants of Conquest
-							a(i(48075)),	-- Velen's Raiments of Conquest
-							a(i(47936)),	-- Velen's Robe of Conquest
-							a(i(47981)),	-- Velen's Shoulderpads of Conquest
-							h(i(48098)),	-- Zabra's Circlet of Conquest
-							h(i(48068)),	-- Zabra's Cowl of Conquest
-							h(i(48067)),	-- Zabra's Gloves of Conquest
-							h(i(48097)),	-- Zabra's Handwraps of Conquest
-							h(i(48069)),	-- Zabra's Leggings of Conquest
-							h(i(48101)),	-- Zabra's Mantle of Conquest
-							h(i(48099)),	-- Zabra's Pants of Conquest
-							h(i(48100)),	-- Zabra's Raiments of Conquest
-							h(i(48070)),	-- Zabra's Robe of Conquest
-							h(i(48071)),	-- Zabra's Shoulderpads of Conquest
+							cl(MAGE, appendGroups(
+								TIER_TEN_HEROIC_GROUPS.MAGE,
+								TIER_TEN_NORMAL_GROUPS.MAGE,
+								TIER_TEN_GROUPS.MAGE,
+								TIER_NINE_GROUPS.MAGE, {})),
+							cl(PRIEST, appendGroups(
+								TIER_TEN_HEROIC_GROUPS.PRIEST,
+								TIER_TEN_NORMAL_GROUPS.PRIEST,
+								TIER_TEN_GROUPS.PRIEST,
+								TIER_NINE_GROUPS.PRIEST, {})),
+							cl(WARLOCK, appendGroups(
+								TIER_TEN_HEROIC_GROUPS.WARLOCK,
+								TIER_TEN_NORMAL_GROUPS.WARLOCK,
+								TIER_TEN_GROUPS.WARLOCK,
+								TIER_NINE_GROUPS.WARLOCK, {})),
 						},
 					}),
 					n(29703, {	-- Sheddle Glossgleam <Cobbler>
 						["coord"] = { 45.0, 46.5, NORTHREND_DALARAN },
 						["groups"] = {
-							i(40742),	-- Bladed Steelboots
-							i(40748),	-- Boots of Captain Ellis
-							i(40743),	-- Kyzoc's Ground Stompers
-							i(40746),	-- Pack-Ice Striders
-							i(40749),	-- Rainey's Chewed Boots
-							i(40745),	-- Sabatons of Rapid Recovery
-							i(40751),	-- Slippers of the Holy Light
-							i(40747),	-- Treads of Coastal Wandering
-							i(40750),	-- Xintor's Expeditionary Boots
+							emov(40, i(40742)),	-- Bladed Steelboots
+							emov(40, i(40748)),	-- Boots of Captain Ellis
+							emov(40, i(40743)),	-- Kyzoc's Ground Stompers
+							emov(40, i(40746)),	-- Pack-Ice Striders
+							emov(40, i(40749)),	-- Rainey's Chewed Boots
+							emov(40, i(40745)),	-- Sabatons of Rapid Recovery
+							emov(40, i(40751)),	-- Slippers of the Holy Light
+							emov(40, i(40747)),	-- Treads of Coastal Wandering
+							emov(40, i(40750)),	-- Xintor's Expeditionary Boots
 						},
 					}),
 					n(28721, {	-- Tiffany Cartier <Jewelcrafting Supplies>
@@ -9941,270 +10681,40 @@ root("Zones", {
 					n(28991, {	-- Valaden Silverblade <Sword Merchant>
 						["coord"] = { 54.5, 62.9, NORTHREND_DALARAN },
 						["groups"] = {
-							i(40703),	-- Grasscutter
+							emoh(50, i(40703)),	-- Grasscutter
 						},
 					}),
 					n(28992, {	-- Valerie Langrom <Leather Armor Merchant>
 						["coord"] = { 51.6, 72.4, NORTHREND_DALARAN },
 						["groups"] = {
-							i(40739),	-- Bands of the Great Tree
-							i(50994),	-- Belt of Petrified Ivy
-							i(45830),	-- Belt of the Living Thicket
-							i(45829),	-- Belt of the Twilight Assassin
-							i(40748),	-- Boots of Captain Ellis
-							i(50982),	-- Cat Burglar's Grips
-							i(46191, {	-- Conqueror's Nightsong Cover
-								["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
-							}),
-							i(46189, {	-- Conqueror's Nightsong Gloves
-								["cost"] = { { "i", 45643, 1 }, },	-- Gauntlets of the Wayward Vanquisher
-							}),
-							i(46158, {	-- Conqueror's Nightsong Handgrips
-								["cost"] = { { "i", 45643, 1 }, },	-- Gauntlets of the Wayward Vanquisher
-							}),
-							i(46183, {	-- Conqueror's Nightsong Handguards
-								["cost"] = { { "i", 45643, 1 }, },	-- Gauntlets of the Wayward Vanquisher
-							}),
-							i(46161, {	-- Conqueror's Nightsong Headguard
-								["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
-							}),
-							i(46184, {	-- Conqueror's Nightsong Headpiece
-								["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
-							}),
-							i(46185, {	-- Conqueror's Nightsong Leggings
-								["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
-							}),
-							i(46160, {	-- Conqueror's Nightsong Legguards
-								["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
-							}),
-							i(46196, {	-- Conqueror's Nightsong Mantle
-								["cost"] = { { "i", 45658, 1 }, },	-- Mantle of the Wayward Vanquisher
-							}),
-							i(46159, {	-- Conqueror's Nightsong Raiments
-								["cost"] = { { "i", 45634, 1 }, },	-- Breastplate of the Wayward Vanquisher
-							}),
-							i(46186, {	-- Conqueror's Nightsong Robe
-								["cost"] = { { "i", 45634, 1 }, },	-- Breastplate of the Wayward Vanquisher
-							}),
-							i(46157, {	-- Conqueror's Nightsong Shoulderpads
-								["cost"] = { { "i", 45658, 1 }, },	-- Mantle of the Wayward Vanquisher
-							}),
-							i(46187, {	-- Conqueror's Nightsong Spaulders
-								["cost"] = { { "i", 45658, 1 }, },	-- Mantle of the Wayward Vanquisher
-							}),
-							i(46192, {	-- Conqueror's Nightsong Trousers
-								["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
-							}),
-							i(46194, {	-- Conqueror's Nightsong Vestments
-								["cost"] = { { "i", 45634, 1 }, },	-- Breastplate of the Wayward Vanquisher
-							}),
-							i(46123, {	-- Conqueror's Terrorblade Breastplate
-								["cost"] = { { "i", 45634, 1 }, },	-- Breastplate of the Wayward Vanquisher
-							}),
-							i(46124, {	-- Conqueror's Terrorblade Gauntlets
-								["cost"] = { { "i", 45643, 1 }, },	-- Gauntlets of the Wayward Vanquisher
-							}),
-							i(46125, {	-- Conqueror's Terrorblade Helmet
-								["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
-							}),
-							i(46126, {	-- Conqueror's Terrorblade Legplates
-								["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
-							}),
-							i(46127, {	-- Conqueror's Terrorblade Pauldrons
-								["cost"] = { { "i", 45658, 1 }, },	-- Mantle of the Wayward Vanquisher
-							}),
-							i(45838),	-- Gloves of the Blind Stalker
-							i(50981),	-- Gloves of the Great Horned Owl
-							i(45839),	-- Grips of the Secret Grove
-							i(39558, {	-- Heroes' Bonescythe Breastplate
-								["cost"] = { { "i", 40612, 1 }, },	-- Chestguard of the Lost Vanquisher
-							}),
-							i(39560, {	-- Heroes' Bonescythe Gauntlets
-								["cost"] = { { "i", 40615, 1 }, },	-- Gloves of the Lost Vanquisher
-							}),
-							i(39561, {	-- Heroes' Bonescythe Helmet
-								["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
-							}),
-							i(39564, {	-- Heroes' Bonescythe Legplates
-								["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
-							}),
-							i(39565, {	-- Heroes' Bonescythe Pauldrons
-								["cost"] = { { "i", 40624, 1 }, },	-- Spaulders of the Lost Vanquisher
-							}),
-							i(39545, {	-- Heroes' Dreamwalker Cover
-								["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
-							}),
-							i(39544, {	-- Heroes' Dreamwalker Gloves
-								["cost"] = { { "i", 40615, 1 }, },	-- Gloves of the Lost Vanquisher
-							}),
-							i(39557, {	-- Heroes' Dreamwalker Handgrips
-								["cost"] = { { "i", 40615, 1 }, },	-- Gloves of the Lost Vanquisher
-							}),
-							i(39543, {	-- Heroes' Dreamwalker Handguards
-								["cost"] = { { "i", 40615, 1 }, },	-- Gloves of the Lost Vanquisher
-							}),
-							i(39553, {	-- Heroes' Dreamwalker Headguard
-								["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
-							}),
-							i(39531, {	-- Heroes' Dreamwalker Headpiece
-								["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
-							}),
-							i(39539, {	-- Heroes' Dreamwalker Leggings
-								["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
-							}),
-							i(39555, {	-- Heroes' Dreamwalker Legguards
-								["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
-							}),
-							i(39548, {	-- Heroes' Dreamwalker Mantle
-								["cost"] = { { "i", 40624, 1 }, },	-- Spaulders of the Lost Vanquisher
-							}),
-							i(39554, {	-- Heroes' Dreamwalker Raiments
-								["cost"] = { { "i", 40612, 1 }, },	-- Chestguard of the Lost Vanquisher
-							}),
-							i(39538, {	-- Heroes' Dreamwalker Robe
-								["cost"] = { { "i", 40612, 1 }, },	-- Chestguard of the Lost Vanquisher
-							}),
-							i(39556, {	-- Heroes' Dreamwalker Shoulderpads
-								["cost"] = { { "i", 40624, 1 }, },	-- Spaulders of the Lost Vanquisher
-							}),
-							i(39542, {	-- Heroes' Dreamwalker Spaulders
-								["cost"] = { { "i", 40624, 1 }, },	-- Spaulders of the Lost Vanquisher
-							}),
-							i(39546, {	-- Heroes' Dreamwalker Trousers
-								["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
-							}),
-							i(39547, {	-- Heroes' Dreamwalker Vestments
-								["cost"] = { { "i", 40612, 1 }, },	-- Chestguard of the Lost Vanquisher
-							}),
-							i(40694),	-- Jorach's Crocolisk Skin Belt
-							i(45846),	-- Leggings of Wavering Shadow
-							i(40749),	-- Rainey's Chewed Boots
-							i(50972),	-- Shadow Seeker's Tunic
-							i(40495, {	-- Valorous Bonescythe Breastplate
-								["cost"] = { { "i", 40627, 1 }, },	-- Breastplate of the Lost Vanquisher
-							}),
-							i(40496, {	-- Valorous Bonescythe Gauntlets
-								["cost"] = { { "i", 40630, 1 }, },	-- Gauntlets of the Lost Vanquisher
-							}),
-							i(40499, {	-- Valorous Bonescythe Helmet
-								["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
-							}),
-							i(40500, {	-- Valorous Bonescythe Legplates
-								["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
-							}),
-							i(40502, {	-- Valorous Bonescythe Pauldrons
-								["cost"] = { { "i", 40639, 1 }, },	-- Mantle of the Lost Vanquisher
-							}),
-							i(40467, {	-- Valorous Dreamwalker Cover
-								["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
-							}),
-							i(40466, {	-- Valorous Dreamwalker Gloves
-								["cost"] = { { "i", 40630, 1 }, },	-- Gauntlets of the Lost Vanquisher
-							}),
-							i(40472, {	-- Valorous Dreamwalker Handgrips
-								["cost"] = { { "i", 40630, 1 }, },	-- Gauntlets of the Lost Vanquisher
-							}),
-							i(40460, {	-- Valorous Dreamwalker Handguards
-								["cost"] = { { "i", 40630, 1 }, },	-- Gauntlets of the Lost Vanquisher
-							}),
-							i(40473, {	-- Valorous Dreamwalker Headguard
-								["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
-							}),
-							i(40461, {	-- Valorous Dreamwalker Headpiece
-								["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
-							}),
-							i(40462, {	-- Valorous Dreamwalker Leggings
-								["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
-							}),
-							i(40493, {	-- Valorous Dreamwalker Legguards
-								["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
-							}),
-							i(40470, {	-- Valorous Dreamwalker Mantle
-								["cost"] = { { "i", 40639, 1 }, },	-- Mantle of the Lost Vanquisher
-							}),
-							i(40471, {	-- Valorous Dreamwalker Raiments
-								["cost"] = { { "i", 40627, 1 }, },	-- Breastplate of the Lost Vanquisher
-							}),
-							i(40463, {	-- Valorous Dreamwalker Robe
-								["cost"] = { { "i", 40627, 1 }, },	-- Breastplate of the Lost Vanquisher
-							}),
-							i(40494, {	-- Valorous Dreamwalker Shoulderpads
-								["cost"] = { { "i", 40639, 1 }, },	-- Mantle of the Lost Vanquisher
-							}),
-							i(40465, {	-- Valorous Dreamwalker Spaulders
-								["cost"] = { { "i", 40639, 1 }, },	-- Mantle of the Lost Vanquisher
-							}),
-							i(40468, {	-- Valorous Dreamwalker Trousers
-								["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
-							}),
-							i(40469, {	-- Valorous Dreamwalker Vestments
-								["cost"] = { { "i", 40627, 1 }, },	-- Breastplate of the Lost Vanquisher
-							}),
-							i(46313, {	-- Valorous Nightsong Cover
-								["cost"] = { { "i", 45649, 1 }, },	-- Helm of the Wayward Vanquisher
-							}),
-							i(45351, {	-- Valorous Nightsong Gloves
-								["cost"] = { { "i", 45646, 1 }, },	-- Gloves of the Wayward Vanquisher
-							}),
-							i(45355, {	-- Valorous Nightsong Handgrips
-								["cost"] = { { "i", 45646, 1 }, },	-- Gloves of the Wayward Vanquisher
-							}),
-							i(45345, {	-- Valorous Nightsong Handguards
-								["cost"] = { { "i", 45646, 1 }, },	-- Gloves of the Wayward Vanquisher
-							}),
-							i(45356, {	-- Valorous Nightsong Headguard
-								["cost"] = { { "i", 45649, 1 }, },	-- Helm of the Wayward Vanquisher
-							}),
-							i(45346, {	-- Valorous Nightsong Headpiece
-								["cost"] = { { "i", 45649, 1 }, },	-- Helm of the Wayward Vanquisher
-							}),
-							i(45347, {	-- Valorous Nightsong Leggings
-								["cost"] = { { "i", 45652, 1 }, },	-- Leggings of the Wayward Vanquisher
-							}),
-							i(45357, {	-- Valorous Nightsong Legguards
-								["cost"] = { { "i", 45652, 1 }, },	-- Leggings of the Wayward Vanquisher
-							}),
-							i(45352, {	-- Valorous Nightsong Mantle
-								["cost"] = { { "i", 45661, 1 }, },	-- Spaulders of the Wayward Vanquisher
-							}),
-							i(45358, {	-- Valorous Nightsong Raiments
-								["cost"] = { { "i", 45637, 1 }, },	-- Chestguard of the Wayward Vanquisher
-							}),
-							i(45348, {	-- Valorous Nightsong Robe
-								["cost"] = { { "i", 45637, 1 }, },	-- Chestguard of the Wayward Vanquisher
-							}),
-							i(45359, {	-- Valorous Nightsong Shoulderpads
-								["cost"] = { { "i", 45661, 1 }, },	-- Spaulders of the Wayward Vanquisher
-							}),
-							i(45349, {	-- Valorous Nightsong Spaulders
-								["cost"] = { { "i", 45661, 1 }, },	-- Spaulders of the Wayward Vanquisher
-							}),
-							i(45353, {	-- Valorous Nightsong Trousers
-								["cost"] = { { "i", 45652, 1 }, },	-- Leggings of the Wayward Vanquisher
-							}),
-							i(45354, {	-- Valorous Nightsong Vestments
-								["cost"] = { { "i", 45637, 1 }, },	-- Chestguard of the Wayward Vanquisher
-							}),
-							i(45396, {	-- Valorous Terrorblade Breastplate
-								["cost"] = { { "i", 45637, 1 }, },	-- Chestguard of the Wayward Vanquisher
-							}),
-							i(45397, {	-- Valorous Terrorblade Gauntlets
-								["cost"] = { { "i", 45646, 1 }, },	-- Gloves of the Wayward Vanquisher
-							}),
-							i(45398, {	-- Valorous Terrorblade Helmet
-								["cost"] = { { "i", 45649, 1 }, },	-- Helm of the Wayward Vanquisher
-							}),
-							i(45399, {	-- Valorous Terrorblade Legplates
-								["cost"] = { { "i", 45652, 1 }, },	-- Leggings of the Wayward Vanquisher
-							}),
-							i(45400, {	-- Valorous Terrorblade Pauldrons
-								["cost"] = { { "i", 45661, 1 }, },	-- Spaulders of the Wayward Vanquisher
-							}),
-							i(50995),	-- Vengeful Noose
-							i(50973),	-- Vestments of Spruce and Fir
-							i(40695),	-- Vine Belt of the Woodland Dryad
-							i(45847),	-- Wildstrider Legguards
-							i(40738),	-- Wristwraps of the Cutthroat
+							cl(DRUID, appendGroups(
+								TIER_EIGHT_HEROIC_GROUPS.DRUID,
+								TIER_EIGHT_GROUPS.DRUID,
+								TIER_SEVEN_HEROIC_GROUPS.DRUID,
+								TIER_SEVEN_GROUPS.DRUID, {})),
+							cl(ROGUE, appendGroups(
+								TIER_EIGHT_HEROIC_GROUPS.ROGUE,
+								TIER_EIGHT_GROUPS.ROGUE,
+								TIER_SEVEN_HEROIC_GROUPS.ROGUE,
+								TIER_SEVEN_GROUPS.ROGUE, {})),
+							emov(60, i(40739)),	-- Bands of the Great Tree
+							emof(60, i(50994)),	-- Belt of Petrified Ivy
+							emoc(28, i(45830)),	-- Belt of the Living Thicket
+							emoc(28, i(45829)),	-- Belt of the Twilight Assassin
+							emov(40, i(40748)),	-- Boots of Captain Ellis
+							emof(60, i(50982)),	-- Cat Burglar's Grips
+							emoc(28, i(45838)),	-- Gloves of the Blind Stalker
+							emof(60, i(50981)),	-- Gloves of the Great Horned Owl
+							emoc(28, i(45839)),	-- Grips of the Secret Grove
+							emoh(40, i(40694)),	-- Jorach's Crocolisk Skin Belt
+							emoc(39, i(45846)),	-- Leggings of Wavering Shadow
+							emov(40, i(40749)),	-- Rainey's Chewed Boots
+							emof(95, i(50972)),	-- Shadow Seeker's Tunic
+							emof(60, i(50995)),	-- Vengeful Noose
+							emof(95, i(50973)),	-- Vestments of Spruce and Fir
+							emoh(40, i(40695)),	-- Vine Belt of the Woodland Dryad
+							emoc(39, i(45847)),	-- Wildstrider Legguards
+							emov(60, i(40738)),	-- Wristwraps of the Cutthroat
 						},
 					}),
 					n(32514, {	-- Vanessa Sellers
@@ -10295,12 +10805,18 @@ root("Zones", {
 							}),
 						},
 					}),
-					n(28994, {	-- Wanda Chanter
+					-- #if AFTER 8.0.1
+					n(28994, {	-- Wanda Chanter <Wands> [BFA+] / Abra Cadabra [WRATH]
 						["coord"] = { 49.1, 73.2, NORTHREND_DALARAN },
 						["groups"] = {
-							i(47658),	-- Brimstone Igniter
+							emot(25, i(47658)),	-- Brimstone Igniter
+							i(40019),	-- Wand of Amber
+							i(40021),	-- Wand of Crystal
+							i(40020),	-- Wand of Jade
+							i(40018),	-- Wand of Onyx
 						},
 					}),
+					-- #endif
 				}),
 			},
 		}),

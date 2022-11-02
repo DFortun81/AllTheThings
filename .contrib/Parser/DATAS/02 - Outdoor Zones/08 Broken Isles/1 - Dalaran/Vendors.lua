@@ -6786,7 +6786,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(97012,  {	-- Wanda Chanter
+				n(97012,  {	-- Wanda Chanter <Wands>
 					["coord"] = { 48.6, 73.8, LEGION_DALARAN },
 					["sym"] = {
 						{"sub", "common_vendor", 28994},	--  Wanda Chanter (Dalaran Northrend)
