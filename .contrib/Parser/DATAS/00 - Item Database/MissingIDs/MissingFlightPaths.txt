@@ -34,7 +34,7 @@ fp(95),	-- Zangarmarsh - Quest - As the Crow Flies
 fp(96),	-- Zangarmarsh - Quest - As the Crow Flies - End
 fp(97),	-- Quest - Elekk Path to Kessel
 fp(98),	-- Quest - Elekk to Kessel Target
-fp(103),	-- Nagrand - PvP - Attack Run Start 1 \\ Nagrand - PvP - Attack Run Start 1 \\ Nagrand - PvP - Attack Run Start 1
+fp(103),	-- Nagrand - PvP - Attack Run Start 1 \\ Nagrand - PvP - Attack Run Start 1 \\ Nagrand - PvP - Attack Run Start 1 \\ Nagrand - PvP - Attack Run Start 1
 fp(104),	-- Nagrand - PvP - Attack Run End 1
 fp(105),	-- Nagrand - PvP - Attack Run Start 2
 fp(106),	-- Nagrand - PvP - Attack Run End 2
@@ -235,7 +235,7 @@ fp(429),	-- Quest - "To The Summit" - Mudsprocket -> Westreach Summit - Begin
 fp(433),	-- Quest - "To New Thalanaar" - Mudsprocket -> New Thalanaar - Begin
 fp(434),	-- Quest - "To New Thalanaar" - New Thalanaar - End
 fp(436),	-- Quest - "To New Thalanaar" - Shadebough -> New Thalanaar - Begin
-fp(509),	-- Quest Path 2063: Brian's 4.0 Test Path \\ Quest Path 2063: Brian's 4.0 Test Path \\ Quest Path 2063: Brian's 4.0 Test Path
+fp(509),	-- Quest Path 2063: Brian's 4.0 Test Path \\ Quest Path 2063: Brian's 4.0 Test Path \\ Quest Path 2063: Brian's 4.0 Test Path \\ Quest Path 2063: Brian's 4.0 Test Path
 fp(538),	-- test - JZB - Orgrim's Hammer
 fp(560),	-- Quest Path 2171: [3.x] Transport, Org -> Undercity (Thundercaller)
 fp(561),	-- Quest Path 2172: [3.x] Transport, Thunder Bluff -> Org (Zephyr)
@@ -276,8 +276,8 @@ fp(927),	-- Quest Path 2963: Quest - Valley of the Four Winds (Flyback: Alliance
 fp(935),	-- Quest Path 2986: Jade Forest: -hmc (Taxi: Glassfin Village to Dawnblossom)
 fp(949),	-- Quest Path 3002: Jade Forest: -hmc (Taxi: Serpent's Spine to Statue Top)
 fp(950),	-- Quest Path 3003: Jade Forest: -hmc (Taxi: Statue Top to Serpent's Spine)
-fp(951),	-- Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise \\ Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise \\ Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise
-fp(963),	-- Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise \\ Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise \\ Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise
+fp(951),	-- Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise \\ Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise \\ Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise \\ Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise
+fp(963),	-- Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise \\ Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise \\ Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise \\ Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise
 fp(998),	-- Quest Path 3154: Quest - Kun-Lai Summit - Neverrest Peak -> Valley of Emperors
 fp(1009),	-- Quest Path 3173: Quest - Kun-Lai Summit - Valley -> Whispercloud Rise
 fp(1016),	-- Quest Path 3066: Quest - Jade Forest - Serpent's Spine -> VotFW - JLR
@@ -322,7 +322,7 @@ fp(1488),	-- Quest Path 4333: Shadowmoon Valley 6.0:JP3 - Darktide Roost - Taxi 
 fp(1489),	-- Quest Path 4334: Frostfire Ridge:JP3 - Darktide Roost - Taxi to Darktide Roost
 fp(1490),	-- Quest Path 4337: Spires of Arak 6.0 - Horde Garrison Outpost > Shadow's Defiance
 fp(1494),	-- Quest Path 4341: Spires of Arak 6.0 - Alliance Garrison Outpost > Shadow's Defiance
-fp(1495),	-- Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice \\ Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice \\ Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice
+fp(1495),	-- Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice \\ Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice \\ Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice \\ Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice
 fp(1496),	-- Quest Path 4345: Spires of Arak 6.0 - Shattered Hand Poison Camp > Horde Garrison Outpost
 fp(1497),	-- Quest Path 4346: Spires of Arak 6.0 - Shattered Hand Poison Camp > Alliance Garrison Outpost
 fp(1498),	-- Quest Path 4353: Frostfire Ridge:JP3 - Broken Precipice - Taxi to Nagrand / Broken Precipice
@@ -480,7 +480,7 @@ fp(2382),	-- Quest Path 7405: 8.1 War Campaign - A - Ch1 - South Shore -> Rampar
 fp(2383),	-- Quest Path 7496: 8.1 War Campaign - A - Ch1 - Ramparts -> South Shore  - KRB
 fp(2384),	-- Quest Path 7497: 8.1 War Campaign - A - Ch1 - North Shore -> Ramparts - KRB
 8.2.0.30080
-fp(2392),	-- Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path \\ Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path
+fp(2392),	-- Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path \\ Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path \\ Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path
 fp(2467),	-- test node
 fp(2471),	-- test node
 fp(2472),	-- test node
@@ -597,7 +597,7 @@ fp(2699),	-- Tazavesh Outdoor
 fp(2708),	-- Quest Path 8614: 9.0 Maw - Outdoor - Ve'nari -> Perdition Hold
 fp(2709),	-- Quest Path 8615: 9.0 Maw - Outdoor - Ve'nari -> Desmotaeron
 fp(2710),	-- Quest Path 8616: 9.0 Maw - Outdoor - Mawsworn Rifts - Desmotaeron -> Perdition Hold
-fp(2711),	-- Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron \\ Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron
+fp(2711),	-- Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron \\ Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron \\ Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron
 9.2.0.41089
 fp(2729),	-- Gravid Repose Locus
 fp(2730),	-- Interior Locus
@@ -652,7 +652,7 @@ fp(2796),	-- Shady Sanctuary, Ohn'ahran Plains
 fp(2797),	-- Emberwatch, Ohn'ahran Plains
 fp(2798),	-- Pinewood Post, Ohn'ahran Plains
 fp(2799),	-- Rusza'thar Reach, Ohn'ahran Plains
-fp(2800),	-- Apex Canopy, The Waking Shores
+fp(2800),	-- Uktulut Outpost, The Waking Shores \\ Apex Canopy, The Waking Shores
 fp(2801),	-- Apex Observatory, The Waking Shores
 fp(2802),	-- Obsidian Throne, The Waking Shores
 fp(2803),	-- Uktulut Pier, The Waking Shores
@@ -688,6 +688,12 @@ fp(2840),	-- Shady Sanctuary, Ohn'ahran Plains \\ Emerald Gardens, Ohn'ahran Pla
 fp(2841),	-- Skytop Observatory, The Waking Shores
 fp(2842),	-- Rubyscale Outpost, The Waking Shores \\ Dragonscale Basecamp, The Waking Shores
 fp(2843),	-- [Hidden] 10.0 Travel Network - Destination Output
+10.0.2.46259
+fp(2847),	-- Maruukai, The Nokhud Offensive
+fp(2848),	-- The Nokhud Approach, The Nokhud Offensive \\ Ohn'iri Springs, The Nokhud Offensive
+fp(2849),	-- The Battle of Spears, The Nokhud Offensive
+fp(2850),	-- Teerakai, The Nokhud Offensive \\ The Eternal Kurgans, The Nokhud Offensive
+fp(2851),	-- Ohn'iri Springs, The Nokhud Offensive
 
 
 
@@ -705,7 +711,7 @@ fp(95),	-- Zangarmarsh - Quest - As the Crow Flies
 fp(96),	-- Zangarmarsh - Quest - As the Crow Flies - End
 fp(97),	-- Quest - Elekk Path to Kessel
 fp(98),	-- Quest - Elekk to Kessel Target
-fp(103),	-- Nagrand - PvP - Attack Run Start 1 \\ Nagrand - PvP - Attack Run Start 1 \\ Nagrand - PvP - Attack Run Start 1
+fp(103),	-- Nagrand - PvP - Attack Run Start 1 \\ Nagrand - PvP - Attack Run Start 1 \\ Nagrand - PvP - Attack Run Start 1 \\ Nagrand - PvP - Attack Run Start 1
 fp(104),	-- Nagrand - PvP - Attack Run End 1
 fp(105),	-- Nagrand - PvP - Attack Run Start 2
 fp(106),	-- Nagrand - PvP - Attack Run End 2
@@ -905,7 +911,7 @@ fp(429),	-- Quest - "To The Summit" - Mudsprocket -> Westreach Summit - Begin
 fp(433),	-- Quest - "To New Thalanaar" - Mudsprocket -> New Thalanaar - Begin
 fp(434),	-- Quest - "To New Thalanaar" - New Thalanaar - End
 fp(436),	-- Quest - "To New Thalanaar" - Shadebough -> New Thalanaar - Begin
-fp(509),	-- Quest Path 2063: Brian's 4.0 Test Path \\ Quest Path 2063: Brian's 4.0 Test Path \\ Quest Path 2063: Brian's 4.0 Test Path
+fp(509),	-- Quest Path 2063: Brian's 4.0 Test Path \\ Quest Path 2063: Brian's 4.0 Test Path \\ Quest Path 2063: Brian's 4.0 Test Path \\ Quest Path 2063: Brian's 4.0 Test Path
 fp(538),	-- test - JZB - Orgrim's Hammer
 fp(560),	-- Quest Path 2171: [3.x] Transport, Org -> Undercity (Thundercaller)
 fp(561),	-- Quest Path 2172: [3.x] Transport, Thunder Bluff -> Org (Zephyr)
@@ -946,8 +952,8 @@ fp(927),	-- Quest Path 2963: Quest - Valley of the Four Winds (Flyback: Alliance
 fp(935),	-- Quest Path 2986: Jade Forest: -hmc (Taxi: Glassfin Village to Dawnblossom)
 fp(949),	-- Quest Path 3002: Jade Forest: -hmc (Taxi: Serpent's Spine to Statue Top)
 fp(950),	-- Quest Path 3003: Jade Forest: -hmc (Taxi: Statue Top to Serpent's Spine)
-fp(951),	-- Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise \\ Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise \\ Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise
-fp(963),	-- Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise \\ Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise \\ Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise
+fp(951),	-- Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise \\ Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise \\ Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise \\ Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise
+fp(963),	-- Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise \\ Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise \\ Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise \\ Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise
 fp(998),	-- Quest Path 3154: Quest - Kun-Lai Summit - Neverrest Peak -> Valley of Emperors
 fp(1009),	-- Quest Path 3173: Quest - Kun-Lai Summit - Valley -> Whispercloud Rise
 fp(1016),	-- Quest Path 3066: Quest - Jade Forest - Serpent's Spine -> VotFW - JLR
@@ -992,7 +998,7 @@ fp(1488),	-- Quest Path 4333: Shadowmoon Valley 6.0:JP3 - Darktide Roost - Taxi 
 fp(1489),	-- Quest Path 4334: Frostfire Ridge:JP3 - Darktide Roost - Taxi to Darktide Roost
 fp(1490),	-- Quest Path 4337: Spires of Arak 6.0 - Horde Garrison Outpost > Shadow's Defiance
 fp(1494),	-- Quest Path 4341: Spires of Arak 6.0 - Alliance Garrison Outpost > Shadow's Defiance
-fp(1495),	-- Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice \\ Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice \\ Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice
+fp(1495),	-- Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice \\ Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice \\ Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice \\ Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice
 fp(1496),	-- Quest Path 4345: Spires of Arak 6.0 - Shattered Hand Poison Camp > Horde Garrison Outpost
 fp(1497),	-- Quest Path 4346: Spires of Arak 6.0 - Shattered Hand Poison Camp > Alliance Garrison Outpost
 fp(1498),	-- Quest Path 4353: Frostfire Ridge:JP3 - Broken Precipice - Taxi to Nagrand / Broken Precipice
@@ -1153,7 +1159,7 @@ fp(2382),	-- Quest Path 7405: 8.1 War Campaign - A - Ch1 - South Shore -> Rampar
 fp(2383),	-- Quest Path 7496: 8.1 War Campaign - A - Ch1 - Ramparts -> South Shore  - KRB
 fp(2384),	-- Quest Path 7497: 8.1 War Campaign - A - Ch1 - North Shore -> Ramparts - KRB
 8.2.0.30080
-fp(2392),	-- Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path \\ Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path
+fp(2392),	-- Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path \\ Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path \\ Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path
 fp(2467),	-- test node
 fp(2471),	-- test node
 fp(2472),	-- test node
@@ -1270,7 +1276,7 @@ fp(2699),	-- Tazavesh Outdoor
 fp(2708),	-- Quest Path 8614: 9.0 Maw - Outdoor - Ve'nari -> Perdition Hold
 fp(2709),	-- Quest Path 8615: 9.0 Maw - Outdoor - Ve'nari -> Desmotaeron
 fp(2710),	-- Quest Path 8616: 9.0 Maw - Outdoor - Mawsworn Rifts - Desmotaeron -> Perdition Hold
-fp(2711),	-- Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron \\ Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron
+fp(2711),	-- Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron \\ Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron \\ Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron
 9.2.0.41089
 fp(2712),	-- Immortal Hearth \\ 9.2 Raid - Progenitor - Flight Path Console - Hub
 fp(2713),	-- Genesis Cradle Alpha \\ 9.2 Raid - Progenitor - Flight Path Console - Terrestrial 01
@@ -1340,7 +1346,7 @@ fp(2796),	-- Shady Sanctuary, Ohn'ahran Plains
 fp(2797),	-- Emberwatch, Ohn'ahran Plains
 fp(2798),	-- Pinewood Post, Ohn'ahran Plains
 fp(2799),	-- Rusza'thar Reach, Ohn'ahran Plains
-fp(2800),	-- Apex Canopy, The Waking Shores
+fp(2800),	-- Uktulut Outpost, The Waking Shores \\ Apex Canopy, The Waking Shores
 fp(2801),	-- Apex Observatory, The Waking Shores
 fp(2802),	-- Obsidian Throne, The Waking Shores
 fp(2803),	-- Uktulut Pier, The Waking Shores
@@ -1380,3 +1386,9 @@ fp(2840),	-- Shady Sanctuary, Ohn'ahran Plains \\ Emerald Gardens, Ohn'ahran Pla
 fp(2841),	-- Skytop Observatory, The Waking Shores
 fp(2842),	-- Rubyscale Outpost, The Waking Shores \\ Dragonscale Basecamp, The Waking Shores
 fp(2843),	-- [Hidden] 10.0 Travel Network - Destination Output
+10.0.2.46259
+fp(2847),	-- Maruukai, The Nokhud Offensive
+fp(2848),	-- The Nokhud Approach, The Nokhud Offensive \\ Ohn'iri Springs, The Nokhud Offensive
+fp(2849),	-- The Battle of Spears, The Nokhud Offensive
+fp(2850),	-- Teerakai, The Nokhud Offensive \\ The Eternal Kurgans, The Nokhud Offensive
+fp(2851),	-- Ohn'iri Springs, The Nokhud Offensive

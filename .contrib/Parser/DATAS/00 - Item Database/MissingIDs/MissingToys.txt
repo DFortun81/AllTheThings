@@ -3,67 +3,17 @@ i(163017),	-- Pitch-Soaked Torch
 i(163073),	-- Conch of Wa'mundi
 9.0.1.35679
 i(177665),	-- Spectral Handkerchief \\ Spectral Hankerchief
-10.0.0.44649
-i(192495),	-- Malfunctioning Stealthman 54
-i(193032),	-- Jeweled Offering
-i(193033),	-- Convergent Prism
-i(193476),	-- Gnoll Tent
-i(193478),	-- Tuskarr Bean Bag
-i(197719),	-- Artisan's Sign
-i(197961),	-- Whelps on Strings
-i(197986),	-- Murglasses
-i(198409),	-- Personal Shell
-i(198428),	-- Tuskarr Dinghy
-10.0.0.44707
-i(194052),	-- Forlorn Funeral Pall
-i(198474),	-- Artist's Easel
-i(198646),	-- Ornate Dragon Statue
-10.0.0.44795
-i(194060),	-- Dragonscale Expedition's Expedition Tent \\ Explorer's League Exploring Tent
-i(198827),	-- Magical Snow Sled
-10.0.0.44895
-i(194056),	-- Duck-Stuffed Duck Lovie \\ Duck Stuffed Duck Lovie
-i(199111),	-- Maestro Duck's Orchestrion
-10.0.0.44999
-i(194057),	-- Cushion of Time Travel
-i(194058),	-- Cold Cushion
-i(194059),	-- Market Tent \\ Tent 1 (DNT)
-i(199554),	-- S.E.A.T.
 10.0.0.45141
-i(199337),	-- Bag of Furious Winds
 i(199926),	-- 
-10.0.0.45232
-i(200142),	-- Generous Goblin Grenade
-i(200148),	-- A Collection Of Me
-i(200160),	-- Notfar's Favorite Food
-i(200178),	-- Infected Ichor
-i(200198),	-- Primalist Prison
-i(200249),	-- Mage's Chewed Wand \\ Chewed Mage's Wand
-i(200469),	-- Khadgar's Disenchanting Rod \\ Royal Disenchanting Rod
-10.0.0.45335
-i(200116),	-- Everlasting Horn of Lavaswimming
-i(200628),	-- Somewhat-Stabilized Arcana
-i(200630),	-- Ohn'ir Windsage's Hearthstone
-i(200631),	-- Happy Tuskarr Palooza
-i(200636),	-- Primal Invocation Quintessence
-10.0.0.45454
-i(200857),	-- Talisman of Sargha
-i(200869),	-- Ohn Lite Branded Horn
-i(200878),	-- Wheeled Floaty Boaty Controller \\ Floaty Boaty Controller
-10.0.0.45570
-i(200960),	-- Seed of Renewed Souls
-i(200999),	-- The Super Shellkhan Gang
-10.0.0.45661
-i(199899),	-- Iskaara Tug Sled \\ Iskaara Pack Sled - NYI
-i(199902),	-- Wayfinder's Compass \\ Wayfinder's Compass - NYI
-i(201435),	-- Swinging Sands
-10.0.2.45779
-i(194885),	-- Ohuna Perch \\ Ohuna Mail Carrier \\ [DNT] Ohn'ahran Friendship
-10.0.2.45969
-i(201815),	-- Cloak of Many Faces
 10.0.2.46091
 i(201927),	-- Assorted Arcanocrystals
 i(201933),	-- Black Dragon's Challenge Dummy
+10.0.2.46259
+i(200926),	-- Compendium of Love
+i(202019),	-- Golden Dragon Goblet
+i(202021),	-- Breaker's Flag of Victory
+i(202022),	-- Yennu's Kite
+i(202042),	-- Aquatic Shades
 
 
 
@@ -75,8 +25,12 @@ i(163213),	-- Ghostly Explorer's Skull
 8.0.1.26788
 i(163017),	-- Pitch-Soaked Torch
 i(163073),	-- Conch of Wa'mundi
-9.0.1.35679
-i(177665),	-- Spectral Handkerchief \\ Spectral Hankerchief
 10.0.2.46091
 i(201927),	-- Assorted Arcanocrystals
 i(201933),	-- Black Dragon's Challenge Dummy
+10.0.2.46259
+i(200926),	-- Compendium of Love
+i(202019),	-- Golden Dragon Goblet
+i(202021),	-- Breaker's Flag of Victory
+i(202022),	-- Yennu's Kite
+i(202042),	-- Aquatic Shades

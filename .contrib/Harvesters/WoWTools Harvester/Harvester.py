@@ -64,7 +64,7 @@ def get_existing_ids(thing: type[Thing]) -> list[str]:
         for line in categories_file:
             words = line.split(",")
             for word in words:
-                if any(prefix in thing.existing_prefixes() for prefix in word):
+                if any(prefix in word for prefix in thing.existing_prefixes()):
                     thing_id = re.sub("[^\\d^.]", "", word)
                     existing_ids.append(thing_id + "\n")
     return existing_ids
@@ -152,8 +152,21 @@ def create_raw_file(thing: type[Thing]) -> None:
 
 def extract_nth_column(csv_path: Path, n: int) -> list[str]:
     """Extract nth column from CSV file."""
+    csv_list = []
     with open(csv_path) as csv_file:
-        return [line.split(DELIMITER)[n].strip() + "\n" for line in csv_file]
+        for line in csv_file:
+            try:
+                if n != 1:
+                    line = line.split(DELIMITER)[n].strip() + "\n"
+                else:
+                    line = line.split(DELIMITER)[1:]
+                    line = DELIMITER.join(line)
+            except IndexError:
+                line = ""
+            csv_list.append(line)
+    return csv_list
+    #with open(csv_path) as csv_file:
+    #    return [line.split(DELIMITER)[n].strip() + "\n" for line in csv_file]
 
 
 def remove_empty_builds(lines: list[str]) -> list[str]:
@@ -171,6 +184,8 @@ def remove_empty_builds(lines: list[str]) -> list[str]:
 def create_missing_recipes() -> None:
     """Create a missing file for Recipes using difference between Categories.lua, raw file and exclusions."""
     profession_dict = build_profession_dict()
+    other_skilllines = get_other_skilllines()
+    profession_dict['Other'] = other_skilllines
     for profession in profession_dict:
         raw_path = Path("Raw", "Professions", f"{profession}.txt")
         missing_path = Path(
@@ -292,12 +307,13 @@ def post_process(thing: type[Thing]) -> None:
                 missing_lines[index] = missing_lines[index].strip()
             name_list: list[str] = []
             for index_raw, id in enumerate(raw_ids):
-                if missing_line == id and names[index_raw] != "--\n":
+                if missing_line == id.strip() and names[index_raw] != "--\n":
                     name_list.append(names[index_raw].rstrip())
             name_list.reverse()
             missing_lines[index] += " \\\\ ".join(name_list) + "\n"
         with open(missing_path, "w") as missing_file:
             missing_file.writelines(missing_lines)
+        return
     elif thing == Followers:
         # TODO:
         raise NotImplementedError("Followers are not implemented yet.")
@@ -347,22 +363,21 @@ def post_process(thing: type[Thing]) -> None:
         if missing_line.isdigit():
             missing_lines[n] = f"{thing.new_prefix()}{missing_line}),\t-- "
             for m in range(len(raw_ids_and_nameids)):
-                raw_id = raw_ids_and_nameids[m].split(",")[0].strip()
+                raw_id = raw_ids_and_nameids[m].split(DELIMITER)[0].strip()
                 if missing_line == raw_id:
                     if thing == Pets:
-                        id_list.append(raw_ids_and_nameids[m].split(",")[1].strip())
+                        id_list.append(raw_ids_and_nameids[m].split(DELIMITER)[1].strip())
                     elif thing == Illusions or thing == Toys:
-                        id_list.append(raw_ids_and_nameids[m].split(",")[0].strip())
-            for name_id in name_ids:
+                        id_list.append(raw_ids_and_nameids[m].split(DELIMITER)[0].strip())
+            for index, name_id in enumerate(name_ids):
                 name_id = re.sub("[^\\d^.]", "", name_id.strip())
-                for index, element in enumerate(id_list):
+                for element in id_list:
                     if name_id == element:
                         name_list.append(names[index].strip())
         else:
             missing_lines[n] = missing_line
         name_list.reverse()
         missing_lines[n] += " \\\\ ".join(name_list) + "\n"
-        print(n)
     with open(missing_path, "w") as missing_file:
         missing_file.writelines(missing_lines)
 

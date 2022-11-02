@@ -28,7 +28,7 @@ title(467),	-- %s, Honorary Dryad
 10.0.0.44707
 title(468),	-- Crimson Gladiator %s
 10.0.0.44895
-title(469),	-- %s, The Worldbreaker \\ %s, Close and Personal Friend of Deathwing
+title(469),	-- %s, the Worldbreaker \\ %s, The Worldbreaker \\ %s, Close and Personal Friend of Deathwing
 10.0.0.45335
 title(472),	-- Birdwatcher %s
 10.0.0.45454
@@ -47,3 +47,9 @@ title(482),	-- Crimson Soloist %s
 10.0.2.46091
 title(483),	-- %s, Paragon of the Obsidian Brood
 title(484),	-- %s, Agent of the Black Prince
+10.0.2.46259
+title(485),	-- Merchant Artisan %s
+title(486),	-- Personal Crafter %s
+10.0.2.46420
+title(487),	-- %s, Famed Slayer of Raszageth
+title(488),	-- %s the Storm-Eater

@@ -600,69 +600,32 @@ p(3158),	-- Missing1
 9.1.5.39977
 p(3188),	-- Trub'ul \\ Trouble
 10.0.0.44649
-p(3256),	-- Jeweled Onyx Whelpling
 p(3257),	-- Test Beetle
-p(3259),	-- Time-Lost Feral Rabbit \\ [PH] Brown Shaggy Rabbit
 p(3260),	-- Snowy Treeflitter \\ [PH] White Flying Squirrel
-p(3261),	-- Blue Phoenix Hatchling \\ [PH] Blue Baby Phoenix
-p(3262),	-- Violet Violence
-p(3263),	-- Secretive Frogduck
-p(3264),	-- Crystalline Mini-Monster
-p(3265),	-- Mister Muskoxeles
 p(3266),	-- Black Slyvern Pup \\ [PH] Black Baby Slyvern
-p(3267),	-- Time-Lost Slyvern \\ [PH] Yellow Baby Slyvern
 p(3268),	-- Swog
-p(3269),	-- Azure Frillfish \\ [PH] Blue Frillfish
-p(3270),	-- Jean's Lucky Fish
-p(3274),	-- Alvin the Anvil
-p(3275),	-- Chestnut \\ [PH] Chestnut Flying Squirrel
-p(3277),	-- Time-Lost Treeflitter \\ [PH] Gold Flying Squirrel
-p(3278),	-- Pistachio \\ [PH] Pistachio Flying Squirrel
-p(3279),	-- Bronze Racing Enthusiast \\ Bronze Race Enthusiast \\ [PH] Silver Flying Squirrel
 p(3280),	-- Shyfly \\ Dragonshy \\ [PH] Walnut Flying Squirrel
 p(3281),	-- Scruffy Ottuk
 p(3283),	-- Snowlemental
-p(3284),	-- Whiskuk \\ [PH] Purple Baby Ottuk
-p(3285),	-- Scarlet Ottuk Pup \\ [PH] Red Baby Ottuk
-p(3286),	-- Mister Toots \\ Phantus \\ [PH] Blue Baby Mammoth
 p(3287),	-- Ghostflame \\ Grey Baby Mammoth \\ [PH] Grey Baby Mammoth
 p(3288),	-- Trunkalumpf \\ [PH] Dark Baby Mammoth
 p(3289),	-- Echo of the Inferno \\ Green Baby Mammoth \\ [PH] Green Baby Mammoth
-p(3290),	-- Auburntusk Calf \\ [PH] Orange Baby Mammoth
-p(3291),	-- Time-Lost Baby Mammoth \\ [PH] Yellow Baby Mammoth
-p(3292),	-- Phoenix Wishwing \\ Smoldering Phoenix Hatchling \\ [PH] Orange Baby Phoenix
-p(3293),	-- Crimson Phoenix Hatchling \\ [PH] Red Baby Phoenix
-p(3294),	-- Time-Lost Phoenix Hatchling \\ [PH] Yellow Baby Phoenix
 p(3295),	-- Igneoid
-p(3297),	-- Time-Lost Salamanther \\ [PH] Orange Baby Salamanther
-p(3298),	-- Pink Salamanther \\ [PH] Pink Baby Water Salamanther
 p(3299),	-- Echo of the Depths \\ Purple Baby Salamanther \\ [PH] Purple Baby Salamanther
 p(3301),	-- Wild Duckling
-p(3306),	-- Quack-E \\ [PH] Mech Baby Duck
 p(3307),	-- Plucky Duckling \\ [PH] White Baby Duck
 p(3308),	-- Time-Lost Duckling \\ [PH] Yellow Baby Duck
 p(3309),	-- Viridescent Duck \\ [PH] Green Duck
 p(3310),	-- Echo of the Heights \\ Brown Duck \\ [PH] Brown Duck
 p(3311),	-- Ohuna Companion \\ White Duck \\ [PH] White Duck
-p(3312),	-- Time-Lost Duck \\ [PH] Yellow Duck
 p(3313),	-- Grassland Stomper \\ Armoredon Calf \\ [PH] Black Baby Thunder Lizard
-p(3314),	-- Groundshaker \\ [PH] Blue Baby Thunder Lizard
-p(3317),	-- Hoofhelper \\ [PH] Green Baby Thunder Lizard
 p(3318),	-- Thunderfoot Calf \\ [PH] Light Baby Thunder Lizard
 p(3320),	-- Whitewhisker \\ [PH] White Baby Slyvern
-p(3321),	-- Blackfeather Nester \\ [PH] Black Woodpecker
 p(3322),	-- Woodbiter Piculet \\ Woodland Piculet \\ [PH] Blue Woodpecker
-p(3323),	-- Brightfeather \\ [PH] Red Woodpecker
 p(3325),	-- Bakar Companion \\ White Woodpecker \\ [PH] White Woodpecker
-p(3326),	-- Backswimmer Timbertooth \\ [PH] Blue Baby Timbertooth
 p(3327),	-- Dusky Timbertooth \\ [PH] Brown Baby Timbertooth
 p(3328),	-- Tiny Timbertooth \\ [PH] Dark Baby Timbertooth
 p(3329),	-- Storm-Touched Timbertooth \\ Light Baby Timbertooth \\ [PH] Light Baby Timbertooth
-p(3330),	-- Time-Lost Timbertooth \\ [PH] Yellow Baby Timbertooth
-p(3331),	-- Emerald Frillfish \\ [PH] Green Fillfish
-p(3332),	-- Purple Frillfish \\ [PH] Purple Frillfish
-p(3333),	-- Blue Vorquin Foal \\ [PH] Blue Baby Vorquin
-p(3334),	-- Time-Lost Vorquin Foal \\ [PH] Bronze Baby Vorquin
 p(3335),	-- Pale Baby Vorquin \\ [PH] Pale Baby Vorquin
 p(3336),	-- Vorquin Runt
 p(3338),	-- Sapphire Crystalspine \\ [PH] Blue Crystalspine
@@ -671,10 +634,6 @@ p(3340),	-- Blue Dragon Whelp \\ [PH] Blue Dragon Whelp
 p(3341),	-- Red Dragon Whelp \\ [PH] Red Dragon Whelp
 p(3342),	-- Spyragos
 p(3343),	-- Bronze Dragon Whelp \\ [PH] Bronze Dragon Whelp
-p(3344),	-- Jeweled Sapphire Whelpling
-p(3345),	-- Jeweled Amber Whelpling
-p(3346),	-- Jeweled Ruby Whelpling
-p(3347),	-- Jeweled Emerald Whelpling
 p(3348),	-- Primal Stormling \\ [PH] Black Gem Dragon Whelp
 p(3350),	-- Lord Basilton
 p(3351),	-- Grizzlefur Cub \\ Grizzlefur Cub \\ Grizzlefury Cub \\ Grizzlefury Cub \\ [PH] Black Primal Bear Cub
@@ -697,8 +656,6 @@ p(3377),	-- Gwosh
 p(3378),	-- Magic Nibbler
 p(3379),	-- Crimson Proto-Whelp
 10.0.0.45141
-p(3380),	-- Black Skitterbug
-p(3381),	-- Gray Marmoni
 p(3382),	-- Stormie
 10.0.0.45232
 p(3384),	-- Storm-Touched Bluefeather \\ Orange Baby Turtle \\ [PH] Orange Baby Turtle
@@ -707,7 +664,7 @@ p(3386),	-- Faceripper \\ Brown Duck \\ [PH] Brown Duck
 p(3387),	-- Bloodbiter \\ REUSE ME \\ [PH] Brown Baby Thunder Lizard
 p(3388),	-- Tina \\ [PH] White Shaggy Rabbit
 p(3389),	-- The Quackcestor \\ Duck Spirit
-p(3390),	-- Titan-Touched Elemental \\ Order Elemental
+p(3390),	-- Sophic Amalgamation \\ Titan-Touched Elemental \\ Order Elemental
 p(3391),	-- Phantus
 p(3392),	-- Skritches
 p(3393),	-- Anubisath Idol
@@ -1984,3 +1941,5 @@ p(3218),	-- Enraged Poultrid
 p(3219),	-- Predatory Helicid \\ Predatory Gastropod
 9.2.0.41726
 p(3246),	-- Tezpet
+10.0.0.44649
+p(3350),	-- Lord Basilton

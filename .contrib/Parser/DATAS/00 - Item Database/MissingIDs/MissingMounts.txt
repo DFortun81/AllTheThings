@@ -99,85 +99,26 @@ mount(276112),	-- Darkforge Ram
 9.1.5.40622
 mount(363608),	-- Lightforged Ruinstrider
 10.0.0.44649
-mount(349935),	-- Noble Elderhorn \\ PH Moose Bull Black
-mount(349943),	-- [PH] Dragonfly Orange
-mount(350219),	-- Magmashell \\ PH Lava Snail Orange
-mount(350220),	-- PH Lava Slug Orange
-mount(351403),	-- [PH] Mammoth V2 Dark
 mount(351404),	-- PH Mammoth V2 Lava
-mount(351408),	-- PH Thunder Lizard Green
-mount(352926),	-- Skyskin Hornstrider \\ PH Primal Tallstrider Blue
-mount(352927),	-- [PH] Water Salamander Blue
-mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
-mount(359409),	-- Iskaara Trader's Ottuk \\ [PH] Black River Otter
-mount(359622),	-- Liberated Slyvern \\ PH Black Slyvern \\ PH Fox Wyvern
 mount(368893),	-- Winding Slitherdrake
-mount(371176),	-- PH Lava Mammoth Blue
 mount(371571),	-- Dragon Isles Drake Model Test
 mount(372995),	-- Swift Spectral Drake
 mount(373646),	-- Dracthyr Flight Test
-mount(373859),	-- Loyal Magmammoth \\ PH Lava Mammoth Orange
-mount(373913),	-- PH Moose Bull Brown
-mount(373967),	-- PH Moose Bull Dark
-mount(374048),	-- Verdant Skitterfly \\ Skitterfly Verdant \\ [PH] Dragonfly Green
 mount(374071),	-- [PH] Dragonfly Yellow
-mount(374090),	-- [PH] Water Salamander Green
-mount(374093),	-- [PH] Water Salamander Orange
-mount(374097),	-- [PH] Water Salamander Pink
-mount(374138),	-- Scorchpath \\ PH Lava Slug Red
-mount(374140),	-- PH Lava Slug Blue
-mount(374142),	-- PH Lava Slug Yellow
-mount(374155),	-- PH Lava Snail Red
-mount(374157),	-- PH Lava Snail Blue
-mount(374162),	-- PH Lava Snail Yellow
-mount(374172),	-- [PH] Mammoth V2 Gray
-mount(374181),	-- [PH] Mammoth V2 Blue
-mount(374194),	-- [PH] Mammoth V2 Green
-mount(374196),	-- Plainswalker Bearer \\ [PH] Mammoth V2 Orange
-mount(374200),	-- PH Thunder Lizard Black
-mount(374201),	-- PH Thunder Lizard Blue
-mount(374204),	-- PH Thunder Lizard Light
-mount(374247),	-- Lizi, Thunderspine Tramper \\ Lizi, Thunderspine Behemoth \\ Thunderspine Behemoth \\ PH Thunder Lizard Brown
-mount(374255),	-- PH Primal Tallstrider White
-mount(374258),	-- PH Primal Tallstrider Black
-mount(374259),	-- PH Primal Tallstrider Red
-mount(374263),	-- Restless Hornstrider \\ PH Primal Tallstrider Green
-mount(374275),	-- PH Lava Mammoth Red
-mount(374278),	-- PH Lava Mammoth Yellow
-mount(376873),	-- Splish-Splash \\ [PH] Blue River Otter
-mount(376875),	-- Brown Scouting Ottuk \\ Scouting Ottuk \\ [PH] Brown River Otter
-mount(376879),	-- Ivory Trader's Ottuk \\ [PH] White River Otter
-mount(376880),	-- [PH] Yellow River Otter
 mount(376898),	-- [PH] Black Armored River Otter
 mount(376909),	-- [PH] Blue Armored River Otter
-mount(376910),	-- [PH] Brown Armored River Otter
-mount(376912),	-- Otterworldly Ottuk Carrier \\ Carrier Ottuk \\ [PH] White Armored River Otter
-mount(376913),	-- [PH] Yellow Armored River Otter
 mount(377071),	-- Crimson Gladiator's Drake \\ [PH] Gladiator Drake
-mount(377849),	-- Carrier Yeti
 10.0.0.44795
 mount(384963),	-- [PH] Black Vorquin
-mount(385115),	-- Majestic Armored Vorquin \\ Majestic Vorquin \\ [PH] Pale Vorquin
-mount(385131),	-- Armored Vorquin Leystrider \\ Vorquin Leystrider \\ [PH] Blue Vorquin
-mount(385134),	-- Swift Armored Vorquin \\ Swift Vorquin \\ [PH] Bronze Vorquin
 mount(385253),	-- [PH] Brown Wind Eagle
 mount(385260),	-- [PH] Sepia Wind Eagle
 mount(385262),	-- [PH] Dark Wind Eagle
-mount(385266),	-- Zenet Hatchling \\ [PH] Red Wind Eagle
-mount(385738),	-- PH Red Slyvern
 mount(385767),	-- PH White Slyvern
 mount(385771),	-- PH Yellow Slyvern
-10.0.0.44895
-mount(386452),	-- Frostbrood Proto-Wyrm
 10.0.0.44999
 mount(387948),	-- [PH] Wind Proto-Drake
 10.0.0.45661
 mount(369536),	-- Soar
-10.0.2.45779
-mount(394737),	-- Vicious Sabertooth
-mount(394738),	-- Vicious Sabertooth
-10.0.2.45969
-mount(387231),	-- Hailstorm Armoredon
 10.0.2.46091
 mount(395644),	-- Divine Kiss of Ohn'ahra
 
@@ -188,6 +129,9 @@ Missing in MountDB.lua
 
 6.0.1.18179
 mount(3363),	-- Nether Drake
+mount(6896),	-- Black Ram
+mount(6897),	-- Blue Ram
+mount(10787),	-- Black Nightsaber
 mount(25675),	-- Reindeer
 mount(25858),	-- Reindeer
 mount(25859),	-- Reindeer
@@ -265,6 +209,7 @@ mount(148970),	-- Felsteed
 mount(148972),	-- Dreadsteed
 mount(150926),	-- Draenor Chimera
 7.3.0.24473
+mount(194046),	-- Swift Spectral Rylak
 mount(205656),	-- Charger
 mount(221883),	-- Charger
 mount(221885),	-- Great Sunwalker Kodo
