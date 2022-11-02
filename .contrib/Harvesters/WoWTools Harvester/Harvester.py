@@ -101,20 +101,19 @@ def get_other_skilllines() -> list[int]:
 def sort_raw_file_recipes() -> None:
     """Sort raw files for recipes."""
     profession_dict = build_profession_dict()
-    other_skilllines = get_other_skilllines()
-    profession_dict['Other'] = other_skilllines
     raw_path_dict = {
         profession: Path("Raw", "Professions", f"{profession}.txt")
         for profession in profession_dict
     }
+    other_skilllines = get_other_skilllines()
+    raw_path_dict["Other"] = Path("Raw", "Professions", "Other.txt")
     with (
         open(Path("Raw", "Recipes.txt")) as raw_file,
         open(Path("Builds", "Recipes.txt")) as builds_file,
     ):
         builds = builds_file.readlines()
         raw_lines = raw_file.readlines()
-        #profession_dict = {'Other': other_skilllines}
-        for profession in profession_dict:
+        for profession in profession_dict.keys() | {"Other"}:
             recipe_list = list[str]()
             with open(raw_path_dict[profession], "r+") as sorted_file:
                 for line in raw_lines:
@@ -123,9 +122,11 @@ def sort_raw_file_recipes() -> None:
                     else:
                         spell, skill_line = line.split(DELIMITER)
                         skill_line_id = int(skill_line.strip())
-                        if skill_line_id == profession_dict[profession]:
-                            recipe_list.append(spell + "\n")
-                        elif 'Other' == profession and skill_line_id in other_skilllines:
+                        if (
+                            profession == "Other"
+                            and skill_line_id in other_skilllines
+                            or skill_line_id == profession_dict[profession]
+                        ):
                             recipe_list.append(spell + "\n")
                 recipe_list = remove_empty_builds(recipe_list)
                 sorted_file.writelines(recipe_list)
@@ -165,7 +166,7 @@ def extract_nth_column(csv_path: Path, n: int) -> list[str]:
                 line = ""
             csv_list.append(line)
     return csv_list
-    #with open(csv_path) as csv_file:
+    # with open(csv_path) as csv_file:
     #    return [line.split(DELIMITER)[n].strip() + "\n" for line in csv_file]
 
 
@@ -184,9 +185,7 @@ def remove_empty_builds(lines: list[str]) -> list[str]:
 def create_missing_recipes() -> None:
     """Create a missing file for Recipes using difference between Categories.lua, raw file and exclusions."""
     profession_dict = build_profession_dict()
-    other_skilllines = get_other_skilllines()
-    profession_dict['Other'] = other_skilllines
-    for profession in profession_dict:
+    for profession in profession_dict.keys() | {"Other"}:
         raw_path = Path("Raw", "Professions", f"{profession}.txt")
         missing_path = Path(
             DATAS_FOLDER,
@@ -366,9 +365,13 @@ def post_process(thing: type[Thing]) -> None:
                 raw_id = raw_ids_and_nameids[m].split(DELIMITER)[0].strip()
                 if missing_line == raw_id:
                     if thing == Pets:
-                        id_list.append(raw_ids_and_nameids[m].split(DELIMITER)[1].strip())
+                        id_list.append(
+                            raw_ids_and_nameids[m].split(DELIMITER)[1].strip()
+                        )
                     elif thing == Illusions or thing == Toys:
-                        id_list.append(raw_ids_and_nameids[m].split(DELIMITER)[0].strip())
+                        id_list.append(
+                            raw_ids_and_nameids[m].split(DELIMITER)[0].strip()
+                        )
             for index, name_id in enumerate(name_ids):
                 name_id = re.sub("[^\\d^.]", "", name_id.strip())
                 for element in id_list:
