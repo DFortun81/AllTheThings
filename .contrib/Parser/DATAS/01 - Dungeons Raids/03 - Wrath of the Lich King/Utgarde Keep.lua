@@ -79,6 +79,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 				q(13205, {	-- Disarmament
 					["qg"] = 24111,	-- Defender Mordun
+					["timeline"] = { "added 3.0.0", "removed 4.3.0.14732" },
 					["coord"] = { 59.4, 48.8, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),

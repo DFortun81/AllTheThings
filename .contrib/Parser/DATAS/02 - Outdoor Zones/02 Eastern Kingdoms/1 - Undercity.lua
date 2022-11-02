@@ -718,7 +718,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 6323,	-- Ride to the Undercity
 					["coord"] = { 61.6, 41.8, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,

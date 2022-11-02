@@ -5890,7 +5890,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(61917),	--
 				q(61920),	--
 				q(61932),	--
-				q(61934),	--
 				q(61941),	--
 				q(61964, { ["name"] = "Aubrie Weekly Jailers Tower Quest", }),	-- Aubrie Weekly Jailers Tower Quest
 				-- 9.0.1.35282
@@ -6560,7 +6559,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.2.5.43254
 				-- 9.2.5.43412
 				-- 9.2.5.43519
-				q(66696),	-- Tempting Fate: Fate of the Shadowlands
 				-- 9.2.5.43630
 				-- 9.2.5.43741
 				-- 9.2.5.43810

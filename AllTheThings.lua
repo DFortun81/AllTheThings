@@ -20449,6 +20449,9 @@ customWindowUpdates["RaidAssistant"] = function(self)
 				end);
 				return true;
 			end
+			local function AttemptResetInstances()
+				ResetInstances();
+			end
 			raidassistant = {
 				['text'] = L["RAID_ASSISTANT"],
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp",
@@ -20577,7 +20580,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 									data.shouldReset = true;
 								elseif data.shouldReset then
 									data.shouldReset = nil;
-									C_Timer.After(0.5, ResetInstances);
+									C_Timer.After(0.5, AttemptResetInstances);
 								end
 							end
 						end,
@@ -20781,7 +20784,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 			self:SetData(raidassistant);
 
 			-- Setup Event Handlers and register for events
-			self:SetScript("OnEvent", function(self, e, ...) Callback(self.Update, self); end);
+			self:SetScript("OnEvent", function(self, e, ...) Callback(self.Update, self, true); end);
 			self:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
 			self:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
 			self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");

@@ -2421,6 +2421,7 @@ root("HiddenQuestTriggers", {
 			q(62520),	-- 'Clean' criteria for It's Certainly Never Boring
 			q(61930),	-- Triggered after Restock: Medic's Tent
 			q(61931),	-- Restocked Ember Court security
+			q(61934),	-- triggered on first non-tutorial ember court when the preparation timer finished
 			q(61935),	-- Triggered after Restock: Imported Dinnerware
 			q(61936),	-- Triggered after Restock: Surveillance
 			q(61940),	-- Triggered after Restock: Fine Cutlery (Unflagged)

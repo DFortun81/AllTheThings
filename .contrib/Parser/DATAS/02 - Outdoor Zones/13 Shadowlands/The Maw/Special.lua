@@ -194,8 +194,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 					}),
 					n(178004, {	-- Intercessor Razzra
-						-- ["questID"] = 64111,
-						-- ["isDaily"] = true,
+						["questID"] = 64111,	-- confirmed 2022-10-31
+						["isDaily"] = true,
 						["g"] = {
 							i(186231),	-- Gloves of Fervent Intercession
 							i(186004),	-- Kris of Dark Temptation
