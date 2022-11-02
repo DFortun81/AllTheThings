@@ -1101,9 +1101,10 @@ pet(0, 3249, {			-- Lil' Ursoc
 -- PATCH 10.0.0 --
 ------------------
 -- SOURCED
+pet(198726, 3380);	-- Black Skitterbug
 pet(199688, 3279);	-- Bronze Racing Enthusiast
 pet(191941, 3264);	-- Crystalline Mini-Monster
-
+pet(198725, 3381);	-- Gray Marmoni
 pet(199175, 3316);	-- Lubbins
 
 pet(191946, 3265);	-- Mister Muskoxeles
@@ -1231,8 +1232,8 @@ pet(0, 3376);	-- Chip
 pet(0, 3377);	-- Gwosh
 pet(0, 3378);	-- Magic Nibbler
 pet(0, 3379);	-- Crimson Proto-Whelp
-pet(0, 3380);	-- Black Skitterbug
-pet(0, 3381);	-- Gray Marmoni
+
+
 pet(0, 3382);	-- Stormie
 pet(0, 3384);	-- Storm-Touched Bluefeather
 pet(0, 3385);	-- Storm-Touched Stomper

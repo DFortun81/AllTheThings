@@ -53,6 +53,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 85.7, 25.3, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197657),	-- Nokhud Reaver Waistguard
+						i(197658),	-- Ohn'ir Initiate Sash
 						i(197659),	-- Shikaar Scount Buckle
 						i(197660),	-- Teerai Watcher Belt
 					},
@@ -171,6 +172,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 61.0, 39.2, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197639),	-- Nokhud Reaver Chestplate
+						i(197638),	-- Ohn'ir Initiate Vestments
 						i(197640),	-- Shikaar Scout Hauberk
 						i(197641),	-- Teerai Watcher Vest
 					},
@@ -191,6 +193,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 59.5, 38.7, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197685),	-- Nokhud Reaver Skullguard
+						i(197646),	-- Ohn'ir Initiate Hood
 						i(197647),	-- Shikaar Scout Helm
 						i(197648),	-- Teerai Watcher Hood
 						i(197405),	-- Renewed Proto-Drake: Maned Tail
@@ -222,6 +225,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 41.8, 61.7, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197649),	-- Nokhud Reaver Legplates
+						i(197650),	-- Ohn'ir Initiate Leggings
 						i(197651),	-- Shikaar Scout Breeches
 						i(197652),	-- Teerai Watcher Breeches
 					},
@@ -247,6 +251,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 49.4, 63.1, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197643),	-- Nokhud Reaver Crushers
+						i(197644),	-- Ohn'ir Initiate Gloves
 						i(197645),	-- Shikaar Scout Grips
 						i(197642),	-- Teerai Watcher Gloves
 					},
@@ -312,6 +317,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 73.0, 40.5, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197654),	-- Nokhud Reaver Shoulderguards
+						i(197655),	-- Ohn'ir Initiate Mantle
 						i(197656),	-- Shikaar Scout Pauldrons
 						i(197653),	-- Teerai Watcher Spaulders
 					},
@@ -351,6 +357,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 25.6, 40.5, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197662),	-- Nokhud Reaver Armguards
+						i(197661),	-- Ohn'ir Initiate Wraps
 						i(197663),	-- Shikaar Scout Bracers
 						i(197664),	-- Teerai Watcher Bindings
 					},

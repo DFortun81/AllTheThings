@@ -603,3 +603,6 @@
 469@@@%s, the Worldbreaker
 485@@@Merchant Artisan %s
 486@@@Personal Crafter %s
+10.0.2.46420
+487@@@%s, Famed Slayer of Raszageth
+488@@@%s the Storm-Eater

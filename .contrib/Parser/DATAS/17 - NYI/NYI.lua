@@ -1313,7 +1313,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 		i(193201),	-- Key Framing
 
-		i(193205),	-- Ohuna Companion Color: Brown
+
 
 
 
@@ -1565,24 +1565,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194082),	-- Band of New Beginnings
 
 		i(194084),	-- Charged Storm Crystal
-		i(194085),	-- Proof of Might
-		i(194086),	-- Proof of Cunning
-		i(194087),	-- Ohuna Companion Color: Red
-		i(194088),	-- Ohuna Companion Color: Dark
-		i(194089),	-- Bakar Companion Color: Orange
-		i(194090),	-- Bakar Companion Color: White
-		i(194091),	-- Bakar Companion Color: Golden Brown
-		i(194092),	-- Timbertooth Pelt
-		i(194093),	-- Bakar Companion Color: Brown
-		i(194094),	-- Bakar Companion Color: Black
-		i(194095),	-- Ohuna Companion Color: Sepia
-		i(194097),	-- Hunter's Fabulous Treasure
-
-		i(194099),	-- Shikaar Hunting Horn
 
 
 		i(194106),	-- Highland Drake
-		i(194108),	-- Mighty Hunter's Horn
+
 
 		i(194110),	-- [PH] Dragon Rider's Honor
 		i(194112),	-- Straddling Illimited Diamond
@@ -1595,8 +1581,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 		i(194127),	-- Dragon Isles Unravelling
 
-		i(194309),	-- Spiteful Storm
-		i(194310),	-- Desperate Invoker's Codex
+
 		i(194311),	-- Pattern: Tuskarr Bean Bag
 		i(194312),	-- Pattern: Gnoll Tent
 		i(194314),	-- Light of the Enlightened
@@ -1614,43 +1599,22 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 
 
-
-
-
-
-
-
-
+		-- Waking Shore Quest Rewards?
 		i(194372),	-- Vault Guardian's Missive
-
 		i(194374),	-- Explorer's League Rifle
 		i(194375),	-- Explorer's Short Sword
 		i(194376),	-- Vault Guardian's Poleaxe
-
-
 		i(194378),	-- Explorer's Belt Knife
 		i(194379),	-- Field Scout's Longblade
-
-
-
 		i(194387),	-- Obsidian Watcher's Crossbow
 		i(194388),	-- Obsidian Guardian's Cleaver
-
 		i(194392),	-- Expedition Defender's Blade
 		i(194393),	-- Expedition Guard's Cudgel
 		i(194394),	-- Persistent Threat Cleaver
 		i(194395),	-- Doomsayer's Greatsword
-
 		i(194397),	-- Darkscale Twinblade
 		i(194398),	-- Crumbling Watcher's Stone (NYI)
-
-
-
-
-
-
 		i(194417),	-- Vault Guard's Talon
-
 		i(194419),	-- Life Pool Herb Pouch
 		i(194420),	-- Blacktalon Blade
 
@@ -1721,7 +1685,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194510),	-- Iskaaran Harpoon
 
 
-		i(194521),	-- Cliffside Wylderdrake
+
 		i(194522),	-- Blue Winglord's Staff
 		i(194523),	-- Blue Winglord's Chain
 		i(194524),	-- Blue Winglord's Boots
@@ -1850,7 +1814,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194698),	-- Draconic Treatise on Tailoring
 		i(194699),	-- Draconic Treatise on Inscription
 		i(194700),	-- Draconic Treatise on Leatherworking
-		i(194701),	-- Ominous Conch
 		i(194702),	-- Draconic Treatise on Enchanting
 		i(194703),	-- Draconic Treatise on Jewelcrafting
 		i(194704),	-- Draconic Treatise on Herbalism
@@ -1878,27 +1841,20 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194736),	-- Illusion Parchment: Chilling Wind
 		i(194737),	-- Illusion Parchment: Spell Shield
 		i(194738),	-- Illusion Parchment: Shadow Orb
-		i(194739),	-- Trapped Duck
-		i(194740),	-- Duck Trap Kit
-		i(194741),	-- Earthbound Tome
-		i(194742),	-- Worn Book
-		i(194743),	-- Gulchak's Pointer
-		i(194744),	-- Lava-Charred Flesh
-		i(194746),	-- Thomas's Empty Bottle
-		i(194747),	-- Intact Crawler Venom Gland
+
 		i(194748),	-- Split-Lens Specs
 		i(194749),	-- Design: Split-Lens Specs
 		i(194750),	-- Professional Equipment
-		i(194751),	-- Blazing Ink
-		i(194752),	-- Blazing Ink
-		i(194754),	-- Cosmic Ink
-		i(194755),	-- Cosmic Ink
-		i(194756),	-- Cosmic Ink
-		i(194758),	-- Flourishing Ink
-		i(194760),	-- Burnished Ink
-		i(194761),	-- Burnished Ink
-		i(194767),	-- Chilled Rune
-		i(194768),	-- Chilled Rune
+		i(194751),	-- Blazing Ink+
+		i(194752),	-- Blazing Ink++
+		i(194754),	-- Cosmic Ink+
+		i(194755),	-- Cosmic Ink++
+		i(194756),	-- Cosmic Ink+++
+		i(194758),	-- Flourishing Ink++
+		i(194760),	-- Burnished Ink+
+		i(194761),	-- Burnished Ink++
+		i(194767),	-- Chilled Rune++
+		i(194768),	-- Chilled Rune+++
 		i(194784),	-- Glittering Parchment
 		i(194785),	-- Ace of Fire
 		i(194786),	-- Two of Fire
@@ -1932,16 +1888,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194814),	-- Six of Earth
 		i(194815),	-- Seven of Earth
 		i(194816),	-- Eight of Earth
-		i(194817),	-- Howling Rune
-		i(194818),	-- Proto-Drake Wrangler Rope
-		i(194819),	-- Howling Rune
-		i(194820),	-- Howling Rune
-		i(194821),	-- Buzzing Rune
-		i(194822),	-- Buzzing Rune
-		i(194823),	-- Buzzing Rune
-		i(194824),	-- Chirping Rune
-		i(194825),	-- Chirping Rune
-		i(194826),	-- Chirping Rune
+		i(194817),	-- Howling Rune+
+		i(194819),	-- Howling Rune++
+		i(194820),	-- Howling Rune+++
+		i(194821),	-- Buzzing Rune+
+		i(194822),	-- Buzzing Rune++
+		i(194823),	-- Buzzing Rune+++
+		i(194824),	-- Chirping Rune+
+		i(194825),	-- Chirping Rune++
+		i(194826),	-- Chirping Rune+++
 		i(194827),	-- Bundle O' Cards: Dragon Isles
 		i(194828),	-- Stacked Deck of Darkmoon Mysteries
 		i(194829),	-- Fated Fortune Card
@@ -1959,47 +1914,43 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194841),	-- Cliffside Wylderdrake Manuscript: Red Mane
 		i(194842),	-- Regal Barding Manuscript
 		i(194843),	-- Explorer's Barding Manuscript
-		i(194846),	-- Blazing Ink
-		i(194850),	-- Flourishing Ink
-		i(194852),	-- Flourishing Ink
-		i(194855),	-- Burnished Ink
-		i(194856),	-- Serene Ink
-		i(194857),	-- Serene Ink
-		i(194858),	-- Serene Ink
-		i(194859),	-- Chilled Rune
-		i(194862),	-- Runed Writhebark
-		i(194863),	-- Runed Writhebark
-		i(194864),	-- Runed Writhebark
-		i(194868),	-- Emberscale Sigil
-		i(194869),	-- Sagescale Sigil
-		i(194870),	-- Bronzescale Sigil
-		i(194871),	-- Azurescale Sigil
+		i(194846),	-- Blazing Ink+++
+		i(194850),	-- Flourishing Ink+
+		i(194852),	-- Flourishing Ink+++
+		i(194855),	-- Burnished Ink+++
+		i(194856),	-- Serene Ink+
+		i(194857),	-- Serene Ink++
+		i(194858),	-- Serene Ink+++
+		i(194859),	-- Chilled Rune+
+		i(194862),	-- Runed Writhebark+
+		i(194863),	-- Runed Writhebark++
+		i(194864),	-- Runed Writhebark+++
+		i(194868),	-- Emberscale Sigil+
+		i(194869),	-- Sagescale Sigil+
+		i(194870),	-- Bronzescale Sigil+
+		i(194871),	-- Azurescale Sigil+
 		i(194872),	-- Darkmoon Deck Box: Inferno
 		i(194873),	-- Apprentice's Fluffed Quill
 		i(194874),	-- Scribe's Fastened Quill
 		i(194875),	-- Scribe's Resplendent Quill
 		i(194877),	-- Core Explorer's Compendium
 		i(194879),	-- Crackling Codex of the Isles
-		i(194883),	-- Runic Wing
-		i(194884),	-- Annoy-o-Tron Gang
+
+
 		i(194885),	-- Ohuna Perch
-		i(194886),	-- Tazenrath's Torn Wing
-		i(194887),	-- Scrap Trap
+
 		i(194888),	-- Dracthyr's Inscribed Blade
-		i(194889),	-- XD-57 "Bullseye" Guided Rocket Kit
-		i(194890),	-- GG-117 Micro-Jetpack
-		i(194891),	-- Arcane Hook
+
 		i(194892),	-- Pioneer's Writhebark Stave
 		i(194893),	-- Overseer's Writhebark Stave
 		i(194894),	-- Weathered Explorer's Stave
 		i(194897),	-- Kinetic Pillar of the Isles
 		i(194898),	-- Illuminating Pillar of the Isles
-		i(194899),	-- Dispelling Wand
-		i(194900),	-- Miva's Dispelling Wand
-		i(194901),	-- Curved Horns
+
+
 		i(194902),	-- Ooey-Gooey Chocolate
 		i(194903),	-- Pocket Chocolate
-		i(194961),	-- Stolen Rocket Hop
+
 		i(194963),	-- Plans: Obsidian Seared Alloy
 		i(194964),	-- Recipe: Thrice-Spiced Mammoth Kabob
 		i(194965),	-- Recipe: Yusa's Hearty Stew
@@ -2008,9 +1959,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194968),	-- Cerulean Spinefish
 		i(194969),	-- Temporal Dragonhead
 		i(194970),	-- Islefin Dorado
-		i(194971),	-- Crystalized Draconium
-		i(195041),	-- Everliving Wooden Key
-		i(195044),	-- Try Again
+
+
+		-- Thaldraszus
 		i(195177),	-- Moment's Notice
 		i(195178),	-- Swirling Sand Fists
 		i(195179),	-- Timeways Baton
@@ -2020,156 +1971,57 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(195183),	-- Reach of Years
 		i(195184),	-- Bronze Tower
 		i(195185),	-- Annihilation Warder's Cloak
-		i(195186),	-- Artist's Cinch
-		i(195187),	-- Artist's Belt
-		i(195188),	-- Artist's Sash
-		i(195189),	-- Artist's Waistguard
-		i(195190),	-- Wardkeeper's Robe
-		i(195191),	-- Wardkeeper's Vest
-		i(195192),	-- Wardkeeper's Hauberk
-		i(195193),	-- Wardkeeper's Heartguard
-		i(195194),	-- Time Walkers
-		i(195195),	-- Time Walkers
-		i(195196),	-- Time Walkers
-		i(195197),	-- Time Walkers
-		i(195198),	-- Chronomental Halfgloves
-		i(195199),	-- Chronomental Grips
-		i(195200),	-- Chronomental Gloves
-		i(195201),	-- Chronomental Gauntlets
-		i(195202),	-- Eavesdropper's Cowl
-		i(195203),	-- Eavesdropper's Cap
-		i(195204),	-- Eavesdropper's Coif
-		i(195205),	-- Eavesdropper's Helm
-		i(195206),	-- Junior Timewarder Leggings
-		i(195207),	-- Junior Timewarder Breeches
-		i(195208),	-- Junior Timewarder Scales
-		i(195209),	-- Junior Timewarder Greaves
-		i(195210),	-- Heart of Azmerloth
-		i(195211),	-- Chromie's Spare Beacon
-		i(195212),	-- Causality Band
-		i(195213),	-- Life-Binder's Band
-		i(195214),	-- Hoursteel Barrier
-		i(195215),	-- Highfather's Cover
-		i(195216),	-- Highfather's Guard
-		i(195217),	-- Highfather's Legacy
-		i(195218),	-- Highfather's Burden
-		i(195219),	-- Magmasworn Spearhead
-		i(195220),	-- Uncanny Pocketwatch
-		i(195221),	-- Magmatalon Wraps
-		i(195222),	-- Magmatalon Wristguards
-		i(195223),	-- Magmatalon Wrist Scales
-		i(195224),	-- Magmatalon Bracers
-		i(195357),	-- Artisan's Consortium Invoice
-		i(195386),	-- Ayanga's Horn
-		i(195392),	-- Thaldraszian Acorn Extract
+
+
+
+
+
+
+
+
+
+
+
+
 		i(195453),	-- Ludo's Stash Map
-		i(195455),	-- Argali Cheese
-		i(195456),	-- Plains Flatbread
-		i(195457),	-- Mammoth Jerky
-		i(195458),	-- Forager's Stew
-		i(195459),	-- Argali Milk
-		i(195460),	-- Fermented Musken Milk
-		i(195462),	-- Fried Hornstrider Wings
-		i(195463),	-- Seasoned Mudstomper Belly
-		i(195464),	-- Sweetened Broadhoof Milk
-		i(195465),	-- Stormwing Egg Breakfast
-		i(195466),	-- Frenzy and Chips
 		i(195467),	-- zzOld(DNT) Test Belt of Molten Metallic Awesomeness
-		i(195468),	-- Shiverweb Silk
-		i(195475),	-- Flame Marshal's Bulwark
-		i(195476),	-- Eranog's Adorned Sallet
-		i(195477),	-- Scaldrons of Molten Might
-		i(195478),	-- Valdrakken Protector's Turncoat
-		i(195479),	-- Flametender's Legwraps
-		i(195480),	-- Seal of Diurna's Chosen
-		i(195481),	-- Scepter of Final Authority
-		i(195482),	-- Decorated Commander's Cindercloak
-		i(195483),	-- Imbued Qalashi Poleaxe
-		i(195484),	-- Icewrath's Channeling Conduit
-		i(195485),	-- Councilor's Terrormask
-		i(195486),	-- Twisted Loam Spaulders
-		i(195487),	-- Embar's Ashen Hauberk
-		i(195488),	-- Opalfang's Earthbound Legguards
-		i(195489),	-- Maul of the Earthshaper
-		i(195490),	-- Shearing Windcaster
-		i(195491),	-- Infused Stormglaives
-		i(195492),	-- Windborne Hatsuburi
-		i(195493),	-- Ascended Squallspires
-		i(195494),	-- Dathea's Cyclonic Cage
-		i(195495),	-- Daring Chasm-Leapers
-		i(195496),	-- Eye of the Vengeful Hurricane
-		i(195497),	-- Quake-Detecting Seismostaff
-		i(195498),	-- Gaze of the Living Quarry
-		i(195499),	-- Faultline Mantle
-		i(195500),	-- Compressed Cultist's Frock
-		i(195501),	-- Fused Shale Waistband
-		i(195502),	-- Terros' Captive Core
-		i(195503),	-- Enduring Shard of Terros
-		i(195504),	-- Awakened Planar Pillar
-		i(195505),	-- Caustic Coldsteel Slicer
-		i(195506),	-- Diamond-Etched Gauntlets
-		i(195507),	-- Unnatural Dripstone Cinch
-		i(195508),	-- Chilled Silken Restraints
-		i(195509),	-- Ice-Climber's Cleats
-		i(195510),	-- Frostbreath Thumper
-		i(195511),	-- Acid-Proof Webbing
-		i(195512),	-- Fist of the Grand Summoner
-		i(195513),	-- Scripture of Primal Devotion
-		i(195514),	-- Treacherous Totem Wraps
-		i(195515),	-- Magatha's Spiritual Sash
-		i(195516),	-- Surging-Song Conductors
-		i(195517),	-- Kurog's Thunderhooves
-		i(195518),	-- Awak'mani
-		i(195519),	-- Kharnalex
-		i(195520),	-- Broodsworn Legionnaire's Pavise
-		i(195521),	-- Ornamental Drakonid Claw
-		i(195522),	-- Tassets of the Tarasek Legion
-		i(195523),	-- Eggtender's Safety Mitts
-		i(195524),	-- Matriarch's Opulent Girdle
-		i(195525),	-- Loyal Flametender's Bracers
-		i(195526),	-- Seal of Filial Duty
-		i(195527),	-- Neltharax
-		i(195528),	-- Incarnate Sky-Splitter
-		i(195529),	-- Stormlash's Last Resort
-		i(195530),	-- Loathsome Thunderhosen
-		i(195531),	-- Calamitous Shockguards
-		i(195532),	-- Sandals of the Wild Sovereign
-		i(195533),	-- Shackles of Titanic Failure
-		i(195542),	-- Slumber Incense
-		i(195543),	-- Riptide Brew
-		i(195572),	-- Empty Elixir
+
+
+
+
+
+
+
+
 		i(195580),	-- Suspicious Bottle
 		i(195881),	-- Recipe: Charred Hornswog Steaks
-		i(195884),	-- Crystalline Petals
+
 		i(195885),	-- Black Dragon's Scale Cloak
-		i(196182),	-- Journal Entry
-		i(196435),	-- Scytherin's Barbed Necklace
-		i(196440),	-- Dragon Flight
-		i(196540),	-- Broadhoof Tail Poutine
-		i(196582),	-- Syrup-Drenched Toast
-		i(196583),	-- Greenberry Toast
-		i(196584),	-- Acorn Milk
-		i(196585),	-- Plainswheat Pretzel
-		i(196586),	-- Dreadful Amethyst Forgestone
-		i(196587),	-- Dreadful Garnet Forgestone
-		i(196588),	-- Dreadful Jade Forgestone
-		i(196589),	-- Dreadful Lapis Forgestone
-		i(196590),	-- Dreadful Topaz Forgestone
-		i(196591),	-- Zenith Amethyst Forgestone
-		i(196592),	-- Zenith Garnet Forgestone
-		i(196593),	-- Zenith Jade Forgestone
-		i(196594),	-- Zenith Lapis Forgestone
-		i(196595),	-- Zenith Topaz Forgestone
-		i(196596),	-- Mystic Amethyst Forgestone
-		i(196597),	-- Mystic Garnet Forgestone
-		i(196598),	-- Mystic Jade Forgestone
-		i(196599),	-- Mystic Lapis Forgestone
-		i(196600),	-- Mystic Topaz Forgestone
-		i(196601),	-- Venerated Amethyst Forgestone
-		i(196602),	-- Venerated Garnet Forgestone
-		i(196603),	-- Venerated Jade Forgestone
-		i(196604),	-- Venerated Lapis Forgestone
-		i(196605),	-- Venerated Topaz Forgestone
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		i(196961),	-- Cliffside Wylderdrake: Armor
 		i(196962),	-- Cliffside Wylderdrake: Silver and Purple Armor
 		i(196963),	-- Cliffside Wylderdrake: Silver and Blue Armor
@@ -2419,72 +2271,45 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197634),	-- Windborne Velocidrake: Windswept Pattern
 		i(197635),	-- Windborne Velocidrake: Reaver Pattern
 		i(197636),	-- Windborne Velocidrake: Shrieker Pattern
-		i(197637),	-- Nokhud Reaver Stompers
-		i(197638),	-- Ohn'ir Initiate Vestments
-		i(197639),	-- Nokhud Reaver Chestplate
-		i(197640),	-- Shikaar Scout Hauberk
-		i(197641),	-- Teerai Watcher Vest
-		i(197642),	-- Teerai Watcher Gloves
-		i(197643),	-- Nokhud Reaver Crushers
-		i(197644),	-- Ohn'ir Initiate Gloves
-		i(197645),	-- Shikaar Scout Grips
-		i(197646),	-- Ohn'ir Initiate Hood
-		i(197647),	-- Shikaar Scout Helm
-		i(197648),	-- Teerai Watcher Hood
-		i(197649),	-- Nokhud Reaver Legplates
-		i(197650),	-- Ohn'ir Initiate Leggings
-		i(197651),	-- Shikaar Scout Breeches
-		i(197652),	-- Teerai Watcher Breeches
-		i(197653),	-- Teerai Watcher Spaulders
-		i(197654),	-- Nokhud Reaver Shoulderguards
-		i(197655),	-- Ohn'ir Initiate Mantle
-		i(197656),	-- Shikaar Scout Pauldrons
-		i(197657),	-- Nokhud Reaver Waistguard
-		i(197658),	-- Ohn'ir Initiate Sash
-		i(197659),	-- Shikaar Scout Buckle
-		i(197660),	-- Teerai Watcher Belt
-		i(197661),	-- Ohn'ir Initiate Wraps
-		i(197662),	-- Nokhud Reaver Armguards
-		i(197663),	-- Shikaar Scout Bracers
-		i(197664),	-- Teerai Watcher Bindings
-		i(197665),	-- Ohn'ahra's Gratitude
-		i(197666),	-- Maruuk Ring of Bravery
-		i(197668),	-- Roscha's Band of Remembrance
-		i(197670),	-- Nokhud Choker
-		i(197671),	-- Shikaar Chain
-		i(197672),	-- Emerald Shroud of Loyalty
+
+
+
+
+
+
+
+
+
+
+
+
 		i(197674),	-- Drakefire Shield
-		i(197675),	-- Code of the Maruuk
+
 		i(197677),	-- Plainswalking Stick
-		i(197679),	-- Rockfang Uppercut
+
 		i(197680),	-- Centaur Cavalry Saber
 		i(197684),	-- Argali Shearing Blade
+
+
 		i(197685),	-- Nokhud Reaver Skullguard
-		i(197686),	-- Ohn'ir Initiate Slippers
-		i(197687),	-- Shikaar Scout Sabatons
-		i(197688),	-- Teerai Watcher Moccasins
-		i(197690),	-- Staff of the Windsage
-		i(197691),	-- Amaa's Golden Mace
+
+
 		i(197692),	-- Shikaar Fishing Bow
 		i(197693),	-- Shikaar Hunter's Crossbow
-		i(197695),	-- Tuskchopper
-		i(197697),	-- Ohn'ir Ritual Scepter
+
 		i(197698),	-- Mystic's Windblade
 		i(197699),	-- Nokhud Skullcrusher
 		i(197701),	-- Ohn'ahran Greatsword
-		i(197703),	-- Ceeqa's Toothpick
-		i(197706),	-- Eaglestrike Pike
-		i(197708),	-- Unstable Matrix Core
+
+
 		i(197718),	-- Scroll of Sales
 
 		i(197725),	-- Deathrip's Curled Claw
-		i(197727),	-- Mystical Water Vial
-		i(197733),	-- Unsustainable Containment Core
+
 		i(197735),	-- Finished Prototype Explorer's Barding
 		i(197736),	-- Finished Prototype Regal Barding
-		i(197737),	-- Popfizz Punch
-		i(197738),	-- Flameslinger Rum
-		i(197739),	-- Happy Trigger Sour
+
+		-- Crafting cooking
 		i(197741),	-- Maybe Meat
 		i(197742),	-- Ribbed Mollusk Meat
 		i(197743),	-- Waterfowl Filet
@@ -2538,45 +2363,33 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197793),	-- Yusa's Hearty Stew
 		i(197794),	-- Grand Banquet of the Kalu'ak
 		i(197795),	-- Hoard of Draconic Delicacies
+		---
 		i(197796),	-- 10.0 Rare Reward TBD - Mace2H - Str - 2 Hand
 		i(197802),	-- zzDog Bone (DNT - Reward PH)
 		i(197806),	-- 10.0 Rare Reward TBD - Staff_2H_Titan_C_01 - Staff - Int
-		i(197846),	-- Ohn'ahra's Carving
-		i(197847),	-- Gorloc Fin Soup
-		i(197848),	-- Hearty Squash Stew
-		i(197849),	-- Ancient Firewine
-		i(197850),	-- Mammoth Dumpling
-		i(197851),	-- Extra Crispy Mutton
-		i(197852),	-- Goat Brisket
-		i(197853),	-- Critter Kebab
-		i(197854),	-- Enchanted Argali Tenderloin
-		i(197855),	-- Explorer's Mix
-		i(197856),	-- Cup o' Wakeup
-		i(197857),	-- Swog Slurp
-		i(197858),	-- Salt-Baked Scalebelly
-		i(197860),	-- Ancient Scrap of Draconic Wisdom
-		i(197861),	-- Fleeting Philosopher's Stone
-		i(197886),	-- Geyserwalker Robes
-		i(197887),	-- Geyserwalker Bindings
-		i(197888),	-- Geyserwalker Cord
-		i(197889),	-- Geyserwalker Visage
-		i(197890),	-- Embroidered Broadhoof Coat
-		i(197891),	-- Embroidered Broadhoof Cowl
-		i(197892),	-- Embroidered Broadhoof Waistband
-		i(197893),	-- Embroidered Broadhoof Wristband
-		i(197894),	-- Keratin-Reinforced Harness
-		i(197895),	-- Keratin-Reinforced Girdle
-		i(197896),	-- Keratin-Reinforced Wristguards
-		i(197897),	-- Keratin-Reinforced Coif
-		i(197898),	-- Spearbreaker Chestguard
-		i(197899),	-- Spearbreaker Barbuta
-		i(197900),	-- Spearbreaker Belt
-		i(197901),	-- Spearbreaker Vambraces
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		i(197903),	-- Waterback Culling Axe
 		i(197904),	-- Shikaar Hunting Knife
 		i(197905),	-- Salamanther Slicer
-		i(197906),	-- Teerai Locket
-		i(197907),	-- Ohn'ir Pendant
+
 		i(197910),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
 		i(197911),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
 		i(197912),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
@@ -2586,13 +2399,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197916),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
 		i(197917),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
 		i(197921),	-- Primal Infusion
+
+		-- WQ?
 		i(197922),	-- Cavalry's Charging Lance
 		i(197923),	-- Bloodcharger's Skewer
 		i(197924),	-- Wyrm Poacher's Emberblade
 		i(197925),	-- Burning Club of the Wallclimbers
 		i(197926),	-- Billowing Magmathrower's Cudgel
 		i(197927),	-- Djaradin Bludgeoning Hammer
-		i(197928),	-- Captivating Cap
+
 		i(197931),	-- Waking Shores Cleaver
 		i(197932),	-- Chipped Reef Hacker
 		i(197933),	-- Lutokk's Wedding Ring
@@ -2608,17 +2423,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197943),	-- Elder's Bioluminous Quarterstaff
 		i(197944),	-- Deepsea Hunter's Crossbow
 		i(197945),	-- Gnarled Thorn Bow
-		i(197946),	-- Dragonforged Poker
-		i(197947),	-- Molten Pugilist's Fist
+
+
 		i(197948),	-- Stone Sentinel's Greatsword
-		i(197950),	-- Deepminted Coin
-		i(197952),	-- Titan Disc
+
 		i(197953),	-- Ancient Protector's Broadsword
 		i(197954),	-- Stonewatcher's Buckler
 		i(197955),	-- Sword of the Eternal Guard
 		i(197956),	-- Empowered Shortsword of Insight
 		i(197957),	-- Timeless Watcher's Saber
-		i(197959),	-- Lavafused Armor
+
 		i(197960),	-- Bag of Biscuits
 
 		i(197964),	-- Pattern: Crimson Combatant's Resilient Mask
@@ -2639,64 +2453,31 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197979),	-- Pattern: Crimson Combatant's Adamant Girdle
 		i(197981),	-- Pattern: Finished Prototype Regal Barding
 		i(197982),	-- Pattern: Finished Prototype Explorer's Barding
-		i(197983),	-- Drakmoss Clump
+
 		i(197984),	-- Pattern: Wisp of Tyr
 		i(197985),	-- Pattern: Essence of Tyr
-		i(197988),	-- Frozen Shard Ring
-		i(197989),	-- Water Ordained Signet
-		i(197990),	-- Solemn Seashell String
-		i(197993),	-- Windswept Wraps
-		i(197994),	-- Windswept Vestments
-		i(197995),	-- Windswept Slippers
-		i(197996),	-- Windswept Sash
-		i(197997),	-- Windswept Mantle
-		i(197998),	-- Windswept Leggings
-		i(197999),	-- Windswept Hood
-		i(198000),	-- Windswept Gloves
-		i(198001),	-- Tuskarr Spirit Shawl
+
+
+
+
+
 		i(198002),	-- Draconic Compendium
-		i(198003),	-- Ornate Steel Cleaver
-		i(198004),	-- Steel Draconic Gavel
+
 		i(198005),	-- Sleek Obsidian Kris
 		i(198006),	-- Sharpened Silver Sword
 		i(198007),	-- Large Brass Cleaver
-		i(198008),	-- Shined Iron Polearm
+
 		i(198009),	-- Gleaming Bronze Blade
-		i(198010),	-- Twisted Leather Vest
-		i(198011),	-- Twisted Leather Spaulders
-		i(198012),	-- Twisted Leather Moccasins
-		i(198013),	-- Twisted Leather Hood
-		i(198014),	-- Twisted Leather Gloves
-		i(198015),	-- Twisted Leather Breeches
-		i(198016),	-- Twisted Leather Bindings
-		i(198017),	-- Twisted Leather Belt
-		i(198018),	-- Bramble Chain Sabatons
-		i(198019),	-- Bramble Chain Pauldrons
-		i(198020),	-- Bramble Chain Helm
-		i(198021),	-- Bramble Chain Hauberk
-		i(198022),	-- Bramble Chain Grips
-		i(198023),	-- Bramble Chain Breeches
-		i(198024),	-- Bramble Chain Bracers
-		i(198025),	-- Bramble Chain Belt
-		i(198026),	-- Sleet Shined Waistguard
-		i(198027),	-- Sleet Shined Stompers
-		i(198028),	-- Sleet Shined Skullguard
-		i(198029),	-- Sleet Shined Shoulderguards
-		i(198030),	-- Sleet Shined Legplates
-		i(198031),	-- Sleet Shined Crushers
-		i(198032),	-- Sleet Shined Chestplate
-		i(198033),	-- Sleet Shined Armguards
-		i(198034),	-- Rustic Barrier
+
+
+
 		i(198035),	-- Archer's Decorated Bow
-		i(198036),	-- Spineripper's Fang
-		i(198037),	-- Brimming Arcanocrystal
 
 
-		i(198043),	-- Stealthy Elven Port
-		i(198044),	-- Whirlwind Wine
-		i(198045),	-- Slam Bam Swill
+
+
+
 		i(198046),	-- Concentrated Primal Infusion
-		i(198047),	-- Kul Tiran Red
 		i(198048),	-- Titan Training Matrix I
 		i(198056),	-- Titan Training Matrix II
 		i(198058),	-- Titan Training Matrix III
@@ -2704,7 +2485,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198070),	-- Tattered Seavine
 		i(198071),	-- Flamecarved Bone
 		i(198072),	-- Gold-banded Dragon Tooth
-		i(198076),	-- Pest Fogger
+
 		i(198080),	-- Sigil of Storms
 		i(198081),	-- Caregiver's Charm
 		i(198082),	-- Pre-Sentient Rock Cluster
@@ -2714,8 +2495,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198087),	-- Darkmoon Deck: Rime
 		i(198088),	-- Darkmoon Deck: Dance
 		i(198089),	-- Darkmoon Deck: Watcher
-		i(198090),	-- Jar of Excess Slime
-		i(198091),	-- Slightly Used Recrafted Armor
+
+
 		i(198092),	-- Recipe: Twice-Baked Potato
 		i(198093),	-- Recipe: Cheese and Quackers
 		i(198094),	-- Recipe: Mackerel Snackerel
@@ -2758,9 +2539,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198134),	-- Shiny Surveyor Scope
 		i(198135),	-- Jeb's Supply Pack
 		i(198137),	-- Esoteric Dragon Shard of Knowledge
-		i(198138),	-- Lightning Infused Rock
-		i(198139),	-- Jeb's Underwear
-		i(198141),	-- Astral Essence
+
 		i(198142),	-- Copy Headpiece of the druid name PH
 		i(198143),	-- Copy Leggings of the druid name PH
 		i(198144),	-- Copy Chestguard of the druid name PH
@@ -2813,32 +2592,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 
 
-		i(198336),	-- Arcane-Infused Quill
-		i(198337),	-- Azure Paw Pack
-		i(198338),	-- Black Print Paw Pack
-		i(198339),	-- Dark Blue Paw Pack
-		i(198340),	-- Red Print Paw Pack
-		i(198341),	-- Tan Paw Pack
 		i(198342),	-- Tuskarr Expedition Pack
-		i(198343),	-- Soft Ruby Feather
-		i(198344),	-- Scrap of Fabric
-		i(198345),	-- Glass Bead
-		i(198346),	-- "Order Anything Crafters Make!"
-		i(198347),	-- "Public Orders: Fast and Made For You!"
-		i(198348),	-- "Custom High-Quality Gear: Better Business with Personal Orders!"
-		i(198349),	-- Stolen Dragonscale Supplies
-		i(198350),	-- Fresh Fish Steak
-		i(198351),	-- Ancient Mana Gem
+
+
 		i(198352),	-- Sigil of Storms
-		i(198353),	-- Shiverweb Egg
-		i(198354),	-- The Black Locus
-		i(198356),	-- Honey Snack
+
+
 		i(198357),	-- Rock of Aegis
 		i(198385),	-- Draconian Garden Pick
 		i(198386),	-- Gardener's Tilling Spork
-		i(198387),	-- Excavator's Mallet
-		i(198388),	-- Swirling Draconian Concoction
-		i(198389),	-- Weighted Potion Cylinder
 		i(198390),	-- Milling
 		i(198391),	-- zzOldDarkmoon Binding: Inferno
 		i(198392),	-- zzOldDarkmoon Binding: Awakened Chill
@@ -2847,45 +2609,42 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198395),	-- Dull Spined Clam
 		i(198396),	-- Ribbed Mollusk Meat
 		i(198397),	-- Rainbow Pearl
-		i(198398),	-- Primal Proto-Whelp Scale
+
 		i(198400),	-- Lucky Horseshoe
 		i(198401),	-- Aileron Seamoth Lure
 
 		i(198403),	-- Islefin Dorado Lure
 		i(198404),	-- Bottled Pheromones
 		i(198407),	-- Azure Arcanic Amplifier
-		i(198408),	-- Timewalker Notes
 
-		i(198410),	-- Timewalker Staff
 		i(198411),	-- Claw of Preparedness
-		i(198412),	-- Serene Pigment
-		i(198413),	-- Serene Pigment
-		i(198414),	-- Serene Pigment
-		i(198415),	-- Flourishing Pigment
-		i(198416),	-- Flourishing Pigment
-		i(198417),	-- Flourishing Pigment
-		i(198418),	-- Blazing Pigment
-		i(198419),	-- Blazing Pigment
-		i(198420),	-- Blazing Pigment
-		i(198421),	-- Shimmering Pigment
-		i(198422),	-- Shimmering Pigment
-		i(198423),	-- Shimmering Pigment
+		i(198412),	-- Serene Pigment+
+		i(198413),	-- Serene Pigment++
+		i(198414),	-- Serene Pigment+++
+		i(198415),	-- Flourishing Pigment+
+		i(198416),	-- Flourishing Pigment++
+		i(198417),	-- Flourishing Pigment+++
+		i(198418),	-- Blazing Pigment+
+		i(198419),	-- Blazing Pigment++
+		i(198420),	-- Blazing Pigment+++
+		i(198421),	-- Shimmering Pigment+
+		i(198422),	-- Shimmering Pigment++
+		i(198423),	-- Shimmering Pigment+++
 		i(198424),	-- Refine Dragon Isles Hides
 		i(198425),	-- Refine Dragon Isles Leather
 		i(198426),	-- Refine Dragon Isles Scales
 
-		i(198429),	-- Typhoon Bringer
-		i(198430),	-- Time Capsule
-		i(198431),	-- Jetscale Sigil
-		i(198432),	-- Crude Wind Charm
+
+
+		i(198431),	-- Jetscale Sigil+
+
 		i(198433),	-- zzOldDarkmoon Deckbox: Awakened Chill
 		i(198434),	-- zzOldDarkmoon Deckbox: Refreshing Dance
 		i(198435),	-- zzOldDarkmoon Deckbox: Watcher
-		i(198436),	-- Hunting Horseshoe
-		i(198437),	-- Caravan Horseshoe
-		i(198438),	-- Draconic Recipe in a Bottle
+
+
 		i(198439),	-- Aged Recipe in a Bottle
-		i(198440),	-- Discounted Meat
+
 		i(198441),	-- Thunderspine Tenders
 		i(198442),	-- Bogthwottle's Shrinky-Do
 		i(198443),	-- Titan Temple Relic
@@ -2895,8 +2654,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198452),	-- Prototype F
 		i(198453),	-- Unstable Azerite Grenade
 		i(198454),	-- Draconic Treatise on Blacksmithing
-		i(198455),	-- Tangled Roots
-		i(198456),	-- Oliveye Fry
+
 		i(198457),	-- Pattern: Masterwork Smock
 		i(198458),	-- Pattern: Resplendent Cover
 		i(198459),	-- Pattern: Lavish Floral Pack
@@ -2918,35 +2676,26 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198484),	-- Brackenhide's Decay
 		i(198486),	-- Windscale Rider
 		i(198487),	-- Iridescent Water
-		i(198488),	-- Staff of Discovery
-		i(198489),	-- Dreamscape Prism
-		i(198490),	-- Bushwhacker's Compass
-		i(198491),	-- Vantus Rune: Vault of the Incarnates
-		i(198492),	-- Vantus Rune: Vault of the Incarnates
-		i(198493),	-- Vantus Rune: Vault of the Incarnates
-		i(198494),	-- Contract: Iskaara Tuskarr
-		i(198495),	-- Contract: Iskaara Tuskarr
-		i(198496),	-- Contract: Iskaara Tuskarr
-		i(198497),	-- Contract: Valdrakken Accord
-		i(198498),	-- Contract: Valdrakken Accord
-		i(198499),	-- Contract: Valdrakken Accord
-		i(198500),	-- Contract: Maruuk Centaur
-		i(198501),	-- Contract: Maruuk Centaur
-		i(198502),	-- Contract: Maruuk Centaur
-		i(198503),	-- Contract: Artisan's Consortium
-		i(198504),	-- Contract: Artisan's Consortium
-		i(198505),	-- Contract: Artisan's Consortium
-		i(198506),	-- Contract: Dragonscale Expedition
-		i(198507),	-- Contract: Dragonscale Expedition
-		i(198508),	-- Contract: Dragonscale Expedition
+
+		i(198491),	-- Vantus Rune: Vault of the Incarnates+
+		i(198492),	-- Vantus Rune: Vault of the Incarnates++
+		i(198493),	-- Vantus Rune: Vault of the Incarnates+++
+		i(198494),	-- Contract: Iskaara Tuskarr+
+		i(198495),	-- Contract: Iskaara Tuskarr++
+		i(198496),	-- Contract: Iskaara Tuskarr+++
+		i(198497),	-- Contract: Valdrakken Accord+
+		i(198498),	-- Contract: Valdrakken Accord++
+		i(198499),	-- Contract: Valdrakken Accord+++
+		i(198500),	-- Contract: Maruuk Centaur+
+		i(198501),	-- Contract: Maruuk Centaur++
+		i(198502),	-- Contract: Maruuk Centaur+++
+		i(198503),	-- Contract: Artisan's Consortium+
+		i(198504),	-- Contract: Artisan's Consortium++
+		i(198505),	-- Contract: Artisan's Consortium+++
+		i(198506),	-- Contract: Dragonscale Expedition+
+		i(198507),	-- Contract: Dragonscale Expedition++
+		i(198508),	-- Contract: Dragonscale Expedition+++
 		i(198510),	-- Draconic Treatise on Engineering
-		i(198511),	-- Building Materials
-		i(198512),	-- The Great Halls
-		i(198513),	-- The Academy
-		i(198514),	-- The Sealed Vault
-		i(198515),	-- The Fire Labs
-		i(198516),	-- Hudson's Final Drawing
-		i(198517),	-- Pelt of Konkhular
 		i(198518),	-- Professor Instructaur's Top Secret Guide to Blacksmithing
 		i(198519),	-- Professor Instructaur's Top Secret Guide to Alchemy
 		i(198520),	-- Professor Instructaur's Top Secret Guide to Enchanting
@@ -2962,72 +2711,24 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198530),	-- Raw Zandali Chilis
 		i(198531),	-- Peripheral Vision Projectors (TYLER'S TEST DNT)
 		i(198532),	-- The Cartographer's Calipers
-		i(198534),	-- Draconic Missive of Inspiration
-		i(198535),	-- Draconic Missive of Inspiration
-		i(198536),	-- Draconic Missive of Inspiration
-		i(198537),	-- Taivan's Trumpet
+		i(198534),	-- Draconic Missive of Inspiration+
+		i(198535),	-- Draconic Missive of Inspiration++
+		i(198536),	-- Draconic Missive of Inspiration+++
+
 		i(198538),	-- Magically Bound Message
 		i(198539),	-- Breath of the Plains
 		i(198540),	-- Golden Claw
-		i(198541),	-- Depleted Violet Vapors
-		i(198542),	-- Shikaari Huntress' Arrowhead
+
+
 		i(198543),	-- Tail Fragments
-		i(198545),	-- Bronze Valdrakken Jacket
-		i(198546),	-- Bronze Valdrakken Boots
-		i(198547),	-- Bronze Valdrakken Pants
 
-
-		i(198551),	-- Crimson Valdrakken Jacket
-		i(198552),	-- Crimson Valdrakken Boots
-		i(198553),	-- Crimson Valdrakken Pants
-		i(198554),	-- Green Valdrakken Jacket
-		i(198555),	-- Green Valdrakken Boots
-		i(198556),	-- Green Valdrakken Pants
-		i(198557),	-- Azure Valdrakken Jacket
-		i(198558),	-- Azure Valdrakken Boots
-		i(198559),	-- Azure Valdrakken Pants
-		i(198560),	-- Black Valdrakken Jacket
-		i(198561),	-- Black Valdrakken Boots
-		i(198562),	-- Black Valdrakken Pants
 		i(198563),	-- Arcane Spark
-		i(198564),	-- Time-Lost Relic
-		i(198565),	-- Drakebreaker's Vestment
-		i(198566),	-- Drakebreaker's Boots
-		i(198567),	-- Drakebreaker's Gloves
-		i(198568),	-- Drakebreaker's Hood
-		i(198569),	-- Drakebreaker's Leggings
-		i(198570),	-- Drakebreaker's Cord
-		i(198571),	-- Drakebreaker's Cuffs
-		i(198572),	-- Drakebreaker's Shoulderpads
-		i(198573),	-- Drakebreaker's Waders
-		i(198574),	-- Drakebreaker's Handguards
-		i(198575),	-- Drakebreaker's Cowl
-		i(198576),	-- Drakebreaker's Breeches
-		i(198577),	-- Drakebreaker's Sash
-		i(198578),	-- Drakebreaker's Bindings
-		i(198579),	-- Drakebreaker's Vest
-		i(198580),	-- Drakebreaker's Epaulets
-		i(198581),	-- Drakebreaker's Helm
-		i(198582),	-- Drakebreaker's Breastplate
-		i(198583),	-- Drakebreaker's Sabatons
-		i(198584),	-- Drakebreaker's Gauntlets
-		i(198585),	-- Drakebreaker's Legguards
-		i(198586),	-- Drakebreaker's Mantle
-		i(198587),	-- Drakebreaker's Girdle
-		i(198588),	-- Drakebreaker's Armplates
-		i(198589),	-- Drakebreaker's Chestguard
-		i(198590),	-- Drakebreaker's Striders
-		i(198591),	-- Drakebreaker's Grips
-		i(198592),	-- Drakebreaker's Coif
-		i(198593),	-- Drakebreaker's Greaves
-		i(198594),	-- Drakebreaker's Shoulderguards
-		i(198595),	-- Drakebreaker's Cinch
-		i(198596),	-- Drakebreaker's Bracers
-		i(198597),	-- Time-Lost Possession
+
+
+
 		i(198598),	-- Technique: Scroll of Sales
 		i(198599),	-- Experimental Decay Sample
-		i(198601),	-- Time-Lost Relic
-		i(198602),	-- Time-Lost Relic
+
 		i(198603),	-- Arcane Rune
 		i(198604),	-- Arcane Gem
 		i(198605),	-- Energized Arcana Vessel
@@ -3047,15 +2748,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 		i(198622),	-- Spyragos
 		i(198626),	-- Dislodged Dragoneye
-		i(198627),	-- Blood of the Khansguard
+
 		i(198646),	-- Ornate Dragon Statue
-		i(198649),	-- Time-Lost Possession
+
 
 		i(198651),	-- Piece of Scrap
-		i(198652),	-- Boku's Belongings
+
 		i(198653),	-- PH Profession Drop
 		i(198654),	-- Otterworldly Ottuk Carrier
-		i(198655),	-- Boku's Totem
+
 		i(198656),	-- Painter's Pretty Jewel
 		i(198657),	-- Forgotten Jewelry Box
 		i(198658),	-- Decay-Infused Tanning Oil
@@ -3069,11 +2770,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198668),	-- Blooming Shallowlily
 		i(198669),	-- How to Train Your Whelpling
 		i(198670),	-- Lofty Malygite
-		i(198671),	-- Mystic's String of Slime
-		i(198673),	-- Empty Life Pools Vial
-		i(198674),	-- Filled Life Pools Vial
+
+
 		i(198675),	-- Lava-Infused Seed
-		i(198676),	-- Divo's Worn Cloth
+
 		i(198677),	-- jrz test vellum quality 1 [DNT]
 		i(198678),	-- jrz test vellum quality 2 [DNT]
 		i(198679),	-- jrz test vellum quality 3 [DNT]
@@ -3085,16 +2785,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198685),	-- Well Insulated Mug
 		i(198686),	-- Frosted Parchment
 		i(198687),	-- Closely Guarded Shiny
-		i(198688),	-- Catnip Leaf
+
 		i(198689),	-- Stormbound Horn
 		i(198690),	-- Decayed Scales
-		i(198691),	-- Howling Heart
+
 		i(198692),	-- Noteworthy Scrap of Carpet
 		i(198693),	-- Dusty Darkmoon Card
 		i(198694),	-- Enriched Earthen Shard
 		i(198696),	-- Wind-Blessed Hide
 		i(198697),	-- Contraband Concoction
-		i(198698),	-- Ridgewater Retreat Orders
+
 		i(198699),	-- Mysterious Banner
 		i(198702),	-- Itinerant Singed Fabric
 		i(198703),	-- Sign Language Reference Sheet
@@ -3106,67 +2806,20 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198714),	-- Plans: Prototype Regal Barding Framework
 		i(198715),	-- Runed Draconium Rod
 		i(198716),	-- Runed Khaz'gorite Rod
-		i(198717),	-- Excavator's Punch
-		i(198718),	-- Excavator's Chisel
+
 		i(198719),	-- Plans: Sturdy Expedition Shovel - NYI
-		i(198720),	-- Soft Purple Pillow
-		i(198721),	-- Skinny Reliquary Pillow
-		i(198722),	-- Small Triangular Pillow
+
 		i(198723),	-- Expedition Binoculars (NYI)
 		i(198724),	-- Expedition Telescope (NYI)
-		i(198725),	-- Gray Marmoni
-		i(198726),	-- Black Skitterbug
-		i(198727),	-- Expedition Explosives
-		i(198728),	-- Explorer's League Banner
-		i(198729),	-- Reliquary Banner
+
+
+
 		i(198730),	-- Dragonscale Expedition Tabard
 		i(198731),	-- Iskaara Tuskarr Tabard
 		i(198732),	-- Valdrakken Accord Tabard
 		i(198733),	-- Wayfinderr's Compass (NYI)
-		i(198734),	-- Relic Handler's Gloves
-		i(198735),	-- Relic Handler's Gloves
-		i(198736),	-- Relic Handler's Grips
-		i(198737),	-- Relic Handler's Gauntlets
-		i(198738),	-- Dragonscale Expedition Leggings
-		i(198739),	-- Dragonscale Expedition Breeches
-		i(198740),	-- Dragonscale Expedition Greaves
-		i(198741),	-- Dragonscale Expedition Legguards
-		i(198742),	-- Renowned Expeditioner's Vestment
-		i(198743),	-- Renowned Expeditioner's Sandals
-		i(198744),	-- Renowned Expeditioner's Handwraps
-		i(198745),	-- Renowned Expeditioner's Cowl
-		i(198746),	-- Renowned Expeditioner's Leggings
-		i(198747),	-- Renowned Expeditioner's Cord
-		i(198748),	-- Renowned Expeditioner's Cuffs
-		i(198749),	-- Renowned Expeditioner's Waders
-		i(198750),	-- Renowned Expeditioner's Gloves
-		i(198751),	-- Renowned Expeditioner's Headgear
-		i(198752),	-- Renowned Expeditioner's Breeches
-		i(198753),	-- Renowned Expeditioner's Belt
-		i(198754),	-- Renowned Expeditioner's Bindings
-		i(198755),	-- Renowned Expeditioner's Chainmail
-		i(198756),	-- Renowned Expeditioner's Striders
-		i(198757),	-- Renowned Expeditioner's Grips
-		i(198758),	-- Renowned Expeditioner's Coif
-		i(198759),	-- Renowned Expeditioner's Greaves
-		i(198760),	-- Renowned Expeditioner's Shoulderguards
-		i(198761),	-- Renowned Expeditioner's Girdle
-		i(198762),	-- Renowned Expeditioner's Bracers
-		i(198763),	-- Renowned Expeditioner's Helmet
-		i(198764),	-- Renowned Expeditioner's Breastplate
-		i(198765),	-- Renowned Expeditioner's Sabatons
-		i(198766),	-- Renowned Expeditioner's Gauntlets
-		i(198767),	-- Renowned Expeditioner's Legguards
-		i(198768),	-- Renowned Expeditioner's Shoulderplates
-		i(198769),	-- Renowned Expeditioner's Greatbelt
-		i(198770),	-- Renowned Expeditioner's Vambraces
-		i(198771),	-- Renowned Expeditioner's Vest
-		i(198772),	-- Renowned Expeditioner's Epaulets
-		i(198773),	-- Renowned Expeditioner's Amice
-		i(198775),	-- Ensemble: Renowned Expeditioner's Cloth Armor
-		i(198776),	-- Ensemble: Renowned Expeditioner's Leather Armor
-		i(198777),	-- Ensemble: Renowned Expeditioner's Mail Armor
-		i(198778),	-- Ensemble: Renowned Expeditioner's Plate Armor
+
+
 		i(198779),	-- Formula: Crystal Magical Lockpick
 
 
@@ -3179,15 +2832,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198789),	-- Intact Coil Capacitor
 		i(198790),	-- I.O.U.
 		i(198791),	-- Glimmer of Blacksmithing Wisdom
-		i(198792),	-- Ottuk Heart
-		i(198793),	-- Rockfang Femur
-		i(198794),	-- Vulture Gizzard
-		i(198795),	-- Hornstrider Scale
-		i(198797),	-- Vial of Mineral Water
+
 		i(198798),	-- Flashfrozen Scroll
 		i(198799),	-- Forgotten Arcane Tome
 		i(198800),	-- Fractured Titanic Sphere
-		i(198802),	-- Artisan's Consortium Tabard
+
 		i(198804),	-- Frost-Infused Creature Bait
 		i(198805),	-- Earth-Infused Creature Bait
 		i(198806),	-- Decay-Infused Creature Bait
@@ -3196,10 +2845,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198809),	-- Armored Vorquin Leystrider
 		i(198810),	-- Swift Armored Vorquin
 		i(198811),	-- Majestic Armored Vorquin
-		i(198812),	-- Rae'ana Alchemy Kit
-		i(198813),	-- [DNT] Key to Knowledge
-		i(198818),	-- Sneaky Mud Mask
-		i(198820),	-- [DNT] The Book of Knowledge
+
 		i(198821),	-- Divine Kiss of Ohn'ahra
 		i(198822),	-- [PH] Sepia Wind Eagle
 		i(198823),	-- [PH] Brown Wind Eagle
@@ -4267,123 +3913,19 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200311),	-- Bonespike Mallet
 		i(200313),	-- Earthen Protoscale Drape
 		i(200314),	-- Skyspeaker's Envelope
-		i(200315),	-- Crystal Scholar's Tunic
-		i(200316),	-- Crystal Scholar's Footwraps
-		i(200317),	-- Crystal Scholar's Pageturners
-		i(200318),	-- Crystal Scholar's Cowl
-		i(200319),	-- Crystal Scholar's Britches
-		i(200320),	-- Crystal Scholar's Beacons
-		i(200321),	-- Crystal Scholar's Cinch
-		i(200322),	-- Crystal Scholar's Cuffs
-		i(200323),	-- Crystal Scholar's Cape
-		i(200324),	-- Draconic Hierophant's Vestment
-		i(200325),	-- Draconic Hierophant's Slippers
-		i(200326),	-- Draconic Hierophant's Grips
-		i(200327),	-- Draconic Hierophant's Archcowl
-		i(200328),	-- Draconic Hierophant's Britches
-		i(200329),	-- Draconic Hierophant's Wisdom
-		i(200330),	-- Draconic Hierophant's Sash
-		i(200331),	-- Draconic Hierophant's Wristbands
-		i(200332),	-- Draconic Hierophant's Drape
-		i(200333),	-- Scalesworn Cultist's Frock
-		i(200334),	-- Scalesworn Cultist's Sandals
-		i(200335),	-- Scalesworn Cultist's Gloves
-		i(200336),	-- Scalesworn Cultist's Scorn
-		i(200337),	-- Scalesworn Cultist's Culottes
-		i(200338),	-- Scalesworn Cultist's Effigy
-		i(200339),	-- Scalesworn Cultist's Girdle
-		i(200340),	-- Scalesworn Cultist's Wristwraps
-		i(200341),	-- Scalesworn Cultist's Runedrape
-		i(200342),	-- Skybound Avenger's Harness
-		i(200343),	-- Skybound Avenger's Boots
-		i(200344),	-- Skybound Avenger's Grips
-		i(200345),	-- Skybound Avenger's Visor
-		i(200346),	-- Skybound Avenger's Legguards
-		i(200347),	-- Skybound Avenger's Ailerons
-		i(200348),	-- Skybound Avenger's Waistwrap
-		i(200349),	-- Skybound Avenger's Wristbands
-		i(200350),	-- Skybound Avenger's Cape
-		i(200351),	-- Lost Landcaller's Robes
-		i(200352),	-- Lost Landcaller's Moccasins
-		i(200353),	-- Lost Landcaller's Claws
-		i(200354),	-- Lost Landcaller's Antlers
-		i(200355),	-- Lost Landcaller's Leggings
-		i(200356),	-- Lost Landcaller's Mantle
-		i(200357),	-- Lost Landcaller's Sash
-		i(200358),	-- Lost Landcaller's Bindings
-		i(200359),	-- Lost Landcaller's Laena
-		i(200360),	-- Chestwrap of the Waking Fist
-		i(200361),	-- Gaiters of the Waking Fist
-		i(200362),	-- Palms of the Waking Fist
-		i(200363),	-- Gaze of the Waking Fist
-		i(200364),	-- Legguards of the Waking Fist
-		i(200365),	-- Mantle of the Waking Fist
-		i(200366),	-- Girdle of the Waking Fist
-		i(200367),	-- Cuffs of the Waking Fist
-		i(200368),	-- Drape of the Waking Fist
-		i(200369),	-- Vault Delver's Brigandine
-		i(200370),	-- Vault Delver's Shinguards
-		i(200371),	-- Vault Delver's Lockbreakers
-		i(200372),	-- Vault Delver's Vizard
-		i(200373),	-- Vault Delver's Pantaloons
-		i(200374),	-- Vault Delver's Epaulets
-		i(200375),	-- Vault Delver's Utility Belt
-		i(200376),	-- Vault Delver's Sweatbands
-		i(200377),	-- Vault Delver's Camouflage
-		i(200378),	-- Hauberk of the Awakened
-		i(200379),	-- Treads of the Awakened
-		i(200380),	-- Gauntlets of the Awakened
-		i(200381),	-- Crown of the Awakened
-		i(200382),	-- Legguards of the Awakened
-		i(200383),	-- Talons of the Awakened
-		i(200384),	-- Chain of the Awakened
-		i(200385),	-- Bracers of the Awakened
-		i(200386),	-- Shroud of the Awakened
-		i(200387),	-- Stormwing Harrier's Cuirass
-		i(200388),	-- Stormwing Harrier's Sabatons
-		i(200389),	-- Stormwing Harrier's Handguards
-		i(200390),	-- Stormwing Harrier's Skullmask
-		i(200391),	-- Stormwing Harrier's Greaves
-		i(200392),	-- Stormwing Harrier's Pinions
-		i(200393),	-- Stormwing Harrier's Belt
-		i(200394),	-- Stormwing Harrier's Wristguards
-		i(200395),	-- Stormwing Harrier's Plumage
-		i(200396),	-- Robe of Infused Earth
-		i(200397),	-- Treads of Infused Earth
-		i(200398),	-- Gauntlets of Infused Earth
-		i(200399),	-- Faceguard of Infused Earth
-		i(200400),	-- Leggings of Infused Earth
-		i(200401),	-- Calderas of Infused Earth
-		i(200402),	-- Faulds of Infused Earth
-		i(200403),	-- Cuffs of Infused Earth
-		i(200404),	-- Greatcloak of Infused Earth
-		i(200405),	-- Breastplate of the Haunted Frostbrood
-		i(200406),	-- Sabatons of the Haunted Frostbrood
-		i(200407),	-- Grasps of the Haunted Frostbrood
-		i(200408),	-- Maw of the Haunted Frostbrood
-		i(200409),	-- Greaves of the Haunted Frostbrood
-		i(200410),	-- Jaws of the Haunted Frostbrood
-		i(200411),	-- Girdle of the Haunted Frostbrood
-		i(200412),	-- Vambraces of the Haunted Frostbrood
-		i(200413),	-- Drape of the Haunted Frostbrood
-		i(200414),	-- Virtuous Silver Breastplate
-		i(200415),	-- Virtuous Silver Greatboots
-		i(200416),	-- Virtuous Silver Gauntlets
-		i(200417),	-- Virtuous Silver Heaume
-		i(200418),	-- Virtuous Silver Cuisses
-		i(200419),	-- Virtuous Silver Pauldrons
-		i(200420),	-- Virtuous Silver Faulds
-		i(200421),	-- Virtuous Silver Bracers
-		i(200422),	-- Virtuous Silver Cloak
-		i(200423),	-- Husk of the Walking Mountain
-		i(200424),	-- Boots of the Walking Mountain
-		i(200425),	-- Gauntlets of the Walking Mountain
-		i(200426),	-- Casque of the Walking Mountain
-		i(200427),	-- Poleyns of the Walking Mountain
-		i(200428),	-- Peaks of the Walking Mountain
-		i(200429),	-- Core of the Walking Mountain
-		i(200430),	-- Bracers of the Walking Mountain
-		i(200431),	-- Drape of the Walking Mountain
+
+
+
+
+
+
+
+
+
+
+
+
+
 		i(200432),	-- Rotguard Cowl
 		i(200433),	-- Footwraps of Subjugation
 		i(200434),	-- Anund's Mana-Singed Amice
@@ -5732,6 +5274,209 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(202008),	-- [PH] BoE Leather Feet
 		i(202009),	-- [PH] BoE Mail Waist
 		i(202010),	-- [PH] BoE Plate Wrist
+		i(32624),	-- Large Iron Metamorphosis Geode
+		i(44129),	-- Lesser Inscription of the Storm
+		i(133589),	-- Dalape�o Pepper
+		i(191857),	-- Warmwater Riverfish
+		i(193049),	-- Earth Key [DNT/UNUSED]
+		i(193455),	-- Infurious Footwraps of Indemnity
+		i(193456),	-- Infurious Spirit's Hood
+		i(193459),	-- Ancestor's Dew Drippers
+		i(193461),	-- Infurious Boots of Reprieve
+		i(193462),	-- Infurious Chainhelm Protector
+		i(193478),	-- Tuskarr Beanbag
+		i(193513),	-- Infurious Binding of Gesticulation
+		i(193530),	-- Allied Wristguards of Time Dilation
+		i(193871),	-- Pattern: Infurious Spirit's Hood
+		i(193877),	-- Pattern: Infurious Boots of Reprieve
+		i(193878),	-- Pattern: Ancestor's Dew Drippers
+		i(193879),	-- Pattern:  Infurious Footwraps of Indemnity
+		i(193884),	-- Pattern: Infurious Chainhelm Protector
+		i(194042),	-- Explorer's Banner of Herbology
+		i(194043),	-- Explorer's Banner of Herbology
+		i(194044),	-- Explorer's Banner of Herbology
+		i(194045),	-- Explorer's Banner of Geology
+		i(194046),	-- Explorer's Banner of Geology
+		i(194047),	-- Explorer's Banner of Geology
+		i(194257),	-- Pattern: Infurious Binding of Gesticulation
+		i(194259),	-- Pattern: Allied Wristguards of Time Dilation
+		i(194294),	-- Pattern: Explorer's Banner of Herbology
+		i(194295),	-- Pattern: Explorer's Banner of Geology
+		i(194311),	-- Pattern: Tuskarr Beanbag
+		i(194747),	-- Frozen Venom Gland
+		i(195483),	-- Awak'mani, Grimtotem's Legacy
+		i(195502),	-- Terros's Captive Core
+		i(195518),	-- Imbued Qalashi Crusher
+		i(198701),	-- Inert Vessel
+		i(198870),	-- Otto
+		i(199757),	-- Magic Nibbler
+		i(199894),	-- Fisherman's Folly
+		i(199897),	-- Blue-Covered Beanbag
+		i(199970),	-- Enchant Weapon - Sophic Devotion
+		i(199971),	-- Enchant Weapon - Sophic Writ
+		i(200012),	-- Enchant Weapon - Sophic Devotion
+		i(200013),	-- Enchant Weapon - Sophic Writ
+		i(200054),	-- Enchant Weapon - Sophic Devotion
+		i(200055),	-- Enchant Weapon - Sophic Writ
+		i(200081),	-- Strong Seavine
+		i(200095),	-- Supply-Laden Soup Pot
+		i(200109),	-- Medicative Potion
+		i(200129),	-- Kolgar's Pack
+		i(200221),	-- Gorloc Crystals
+		i(200479),	-- Sophic Amalgamation
+		i(201024),	-- Nokhudon Mantle
+		i(201025),	-- Nokhudon Harness
+		i(201027),	-- Nokhudon Breeches
+		i(201028),	-- Nokhudon Boots
+		i(201029),	-- Nokhudon Hood
+		i(201030),	-- Nokhudon Grips
+		i(201031),	-- Nokhudon Cloak
+		i(201032),	-- Nokhudon Wraps
+		i(201034),	-- Nokhudon Girdle
+		i(201035),	-- Citadel Crusher'sl Pauldrons
+		i(201036),	-- Citadel Crusher's Chestplate
+		i(201037),	-- Citadel Crusher's Legguards
+		i(201038),	-- Citadel Crusher's Footwraps
+		i(201039),	-- Citadel Crusher's Helm
+		i(201040),	-- Citadel Crusher's Gauntlets
+		i(201041),	-- Citadel Crusher'sl Cloak
+		i(201042),	-- Obsidian Crusher's Bracers
+		i(201043),	-- Obsidian Crusher's Belt
+		i(201435),	-- Shuffling Sands
+		i(201442),	-- Primal Revenant's Frostblade
+		i(201443),	-- Primal Revenant's Icewall
+		i(201444),	-- Primal Revenant's Earthblade
+		i(201445),	-- Primal Revenant's Emberblade
+		i(201446),	-- Primal Revenant's Firewall
+		i(201447),	-- Primal Revenant's Breezeblade
+		i(201448),	-- Primal Revenant's Windwall
+		i(201992),	-- Emissary's Flamewrought Seal
+		i(202003),	-- Primal Seeker's Leggings
+		i(202004),	-- Brawler's Earthen Cuirass
+		i(202005),	-- Frozen Claw Mantle
+		i(202006),	-- Greathelm of Horned Fury
+		i(202007),	-- Woven Stone Bracelets
+		i(202008),	-- Galvanic Gaiters
+		i(202009),	-- Lavamancer's Ceremonial Waistguard
+		i(202010),	-- Primalist Warden's Bracers
+		i(202011),	-- Elementally-Charged Stone
+		i(202013),	-- Ruby Recipe Journal VIII
+		i(202014),	-- Infused Pollen
+		i(202016),	-- Saturated Bone
+		i(202019),	-- Golden Dragon Goblet
+		i(202021),	-- Breaker's Flag of Victory
+		i(202022),	-- Yennu's Kite
+		i(202023),	-- Spark of Life
+		i(202033),	-- Slippery Salmon
+		i(202034),	-- Flame of Remembrance
+		i(202042),	-- Aquatic Shades
+		i(202046),	-- Lucky Tortollan Charm
+		i(202047),	-- Gleaming Incarnate Thunderstone
+		i(202048),	-- Queen's Gift
+		i(202049),	-- Dreamer's Vision
+		i(202050),	-- Keeper's Glory
+		i(202051),	-- Earthwarden's Prize
+		i(202052),	-- Timewatcher's Patience
+		i(202054),	-- Queen's Gift
+		i(202055),	-- Dreamer's Vision
+		i(202056),	-- Keeper's Glory
+		i(202057),	-- Earthwarden's Prize
+		i(202058),	-- Timewatcher's Patience
+		i(202062),	-- Ash Feather
+		i(202063),	-- Flopping Tilapia
+		i(202064),	-- Warbanner of Ire
+		i(202065),	-- Static Sand
+		i(202072),	-- Frigid Floe Fish
+		i(202073),	-- Calamitous Carp
+		i(202074),	-- Kingfin, the Wise Whiskerfish
+		i(202079),	-- Cache of Vault Treasures
+		i(202080),	-- Cache of Vault Treasures
+		i(202081),	-- Dragon Isles Supply Bag
+		i(202085),	-- Bugbiter Tortoise
+		i(202086),	-- Crimson Gladiator's Drake
+		i(202087),	-- Tinker Removal Kit
+		i(202091),	-- Dragonscale Expedition Insignia
+		i(202092),	-- Iskaara Tuskarr Insignia
+		i(202093),	-- Valdrakken Accord Insignia
+		i(202094),	-- Maruuk Centaur Insignia
+		i(202097),	-- Bulging Box of Skins and Scales
+		i(202098),	-- Crowded Crate of Mined Materials
+		i(202099),	-- Stocked Sack of Hale Herbs
+		i(202100),	-- Populous Pack of Castoff Cloth
+		i(202101),	-- Topped Trunk of Disenchanted Detritus
+		i(202102),	-- Immaculate Sac of Swog Treasures
+		i(202105),	-- Rusted Coin of the Isles
+		i(202107),	-- Shadowscrawled Coin
+		i(202108),	-- Bouncing Bass
+		i(202116),	-- Alacritous Alchemist Stone
+		i(202117),	-- Assembly Preserver's Band
+		i(202118),	-- Assembly Guardian's Ring
+		i(202119),	-- Assembly Scholar's Loop
+		i(202122),	-- Primal Chaos Cluster
+		i(202123),	-- Crimson Gladiator's Greatbow
+		i(202124),	-- Crimson Gladiator's Crossbow
+		i(202125),	-- Crimson Gladiator's Greatstaff
+		i(202126),	-- Crimson Gladiator's Spellblade
+		i(202127),	-- Crimson Gladiator's Censer
+		i(202128),	-- Crimson Gladiator's Rod
+		i(202129),	-- Crimson Gladiator's Barrier
+		i(202130),	-- Crimson Gladiator's Bulwark
+		i(202131),	-- Crimson Gladiator's Sword
+		i(202132),	-- Crimson Gladiator's Warhammer
+		i(202133),	-- Crimson Gladiator's Blade
+		i(202134),	-- Crimson Gladiator's Glaive
+		i(202135),	-- Crimson Gladiator's Poleaxe
+		i(202136),	-- Crimson Gladiator's Quarterstaff
+		i(202137),	-- Crimson Gladiator's Greataxe
+		i(202138),	-- Crimson Gladiator's Greatmace
+		i(202140),	-- Crimson Gladiator's Claw
+		i(202142),	-- Dragonbane Strongbox
+		i(202143),	-- Woven Stone Bracelets
+		i(202144),	-- Greathelm of Horned Fury
+		i(202145),	-- Frozen Claw Mantle
+		i(202146),	-- Brawler's Earthen Cuirass
+		i(202147),	-- Primal Seeker's Leggings
+		i(202148),	-- Emissary's Flamewrought Seal
+		i(202149),	-- Primalist Warden's Bracers
+		i(202150),	-- Galvanic Gaiters
+		i(202151),	-- Lavamancer's Ceremonial Waistguard
+		i(202152),	-- Storm-Charged Manipulator
+		i(202171),	-- Small Dragon Purse
+		i(202172),	-- Overflowing Satchel of Coins
+		i(202173),	-- Magmote
+		i(193037),	-- Sundered Onyx Loupe
+		i(193629),	-- Cloak of Lost Devotion
+		i(194115),	-- Stone Sculpture
+		i(194119),	-- Ornamented Shield
+		i(194120),	-- Decorated Teapot
+		i(194121),	-- Handcrafted Boat
+		i(194480),	-- Plans: Obsidian Seared Halberd
+		i(194715),	-- Gatherer's Reagent Pouch
+		i(194838),	-- Highland Drake Manuscript: Spined Head
+		i(198072),	-- Gold-Banded Dragon Tooth
+		i(198895),	-- Technique: Highland Drake: Spined Head
+		i(198896),	-- Technique: Highland Drake: Spined Neck
+		i(198901),	-- Technique: Renewed Proto-Drake: Spined Crest
+		i(198903),	-- Technique: Windborne Velocidrake: Spined Head
+		i(200072),	-- Dragonbane Keep Strongbox
+		i(200094),	-- Caravan Strongbox
+		i(200468),	-- Grand Hunt Spoils
+		i(200513),	-- Grand Hunt Spoils
+		i(200515),	-- Grand Hunt Spoils
+		i(200516),	-- Grand Hunt Spoils
+		i(202142),	-- Dragonbane Keep Strongbox
+		i(202171),	-- Dragon Purse
+		i(202184),	-- Trophy of Strife
+		i(202188),	-- Storm-Battered Reagent Bag
+		i(202190),	-- Dead Man's Chains
+		i(202191),	-- Dead Man's Breastplate
+		i(202192),	-- Dead Man's Leathers
+		i(202193),	-- Dead Man's Tunic
+		i(202194),	-- Misty Satchel
+		i(202198),	-- Salt Crystal Ring
+		i(202199),	-- Frozen Shard Ring
+		i(202200),	-- Solemn Seashell String
+		i(202201),	-- Tuskarr Spirit Shawl
 		prof(ALCHEMY, {
 			r(371635),	-- Demonstration Item Recipe
 			r(370771),	-- Dragon Isles Alchemy Troubleshooting Test Recipe (DNT)

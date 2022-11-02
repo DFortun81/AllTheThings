@@ -2659,3 +2659,6 @@
 2849@@@The Battle of Spears, The Nokhud Offensive
 2850@@@The Eternal Kurgans, The Nokhud Offensive
 2851@@@Ohn'iri Springs, The Nokhud Offensive
+10.0.2.46420
+2848@@@The Nokhud Approach, The Nokhud Offensive
+2850@@@Teerakai, The Nokhud Offensive

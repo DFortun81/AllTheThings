@@ -1567,3 +1567,6 @@
 395644@@@Divine Kiss of Ohn'ahra
 10.0.2.46259
 376873@@@Otto
+10.0.2.46420
+315132@@@Gargantuan Grrloc
+381529@@@Telix the Stormhorn

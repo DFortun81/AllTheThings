@@ -24151,7 +24151,7 @@ SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
 	if cmd then
 		local min,max,reset = strsplit(",",cmd);
 		app.customHarvestMin = tonumber(min) or 1;
-		app.customHarvestMax = tonumber(max) or 200000;
+		app.customHarvestMax = tonumber(max) or 210000;
 		app.print("Set Harvest ItemID Bounds:",app.customHarvestMin,app.customHarvestMax);
 		AllTheThingsHarvestItems = reset and {} or AllTheThingsHarvestItems or {};
 		AllTheThingsArtifactsItems = reset and {} or AllTheThingsArtifactsItems or {};

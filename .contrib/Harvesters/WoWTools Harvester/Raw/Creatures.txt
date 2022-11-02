@@ -19226,3 +19226,8 @@
 199689@@@Arrow
 199704@@@Snowball
 199706@@@Snowball
+10.0.2.46420
+199722@@@Emerald Dragon
+199723@@@Turbulent Gust
+199724@@@Howling Wind
+199725@@@Emerald Drake

@@ -40,7 +40,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 46.7, 39.8, THE_AZURE_SPAN },
 					["g"] = {
 						i(198021),	-- Bramble Chain Hauberk
+						i(198032),	-- Sleet Shined Chestplate
 						i(198010),	-- Twisted Leather Vest
+						i(197994),	-- Windswept Vestments
 					},
 				}),
 				q(65688, {	-- Meeting Kalecgos
@@ -88,7 +90,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 40.0, 61.5, THE_AZURE_SPAN },
 					["g"] = {
 						i(198020),	-- Bramble Chain Helm
+						i(198028),	-- Sleet Shined Skullguard
 						i(198013),	-- Twisted Leather Hood
+						i(197999),	-- Windswept Hood
 						i(194891),	-- Arcane Hook
 					},
 				}),
@@ -133,7 +137,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 35.3, 36.9, THE_AZURE_SPAN },
 					["g"] = {
 						i(198023),	-- Bramble Chain Breeches
+						i(198030),	-- Sleet Shined Legplates
 						i(198015),	-- Twisted Leather Breeches
+						i(197998),	-- Windswept Leggings
 						i(197388),	-- Renewed Proto-Drake: Finned Jaw
 					},
 				}),
@@ -210,7 +216,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 28.8, 34.7, THE_AZURE_SPAN },
 					["g"] = {
 						i(198024),	-- Bramble Chain Bracers
+						i(198033),	-- Sleet Shined Armguards
 						i(198016),	-- Twisted Leather Bindings
+						i(197993),	-- Windswept Wraps
 						crit(2, {	-- Tuskarr Troubles
 							["achievementID"] = 16336,	-- Azure Spanner
 						}),
@@ -252,7 +260,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 16.7, 37.3, THE_AZURE_SPAN },
 					["g"] = {
 						i(198018),	-- Bramble Chain Sabatons
+						i(198027),	-- Sleet Shined Stompers
 						i(198012),	-- Twisted Leather Moccasins
+						i(197995),	-- Windswept Slippers
 					},
 				}),
 				q(65847, {	-- Realignment
@@ -368,7 +378,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 78.4, 40.0, THE_AZURE_SPAN },
 					["g"] = {
 						i(198022),	-- Bramble Chain Grips
+						i(198031),	-- Sleet Shined Crushers
 						i(198014),	-- Twisted Leather Gloves
+						i(198000),	-- Windswept Gloves
 						i(197603),	-- Windborne Velocidrake: Curved Horns
 					},
 				}),
@@ -383,7 +395,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 78.2, 33.3, THE_AZURE_SPAN },
 					["g"] = {
 						i(198019),	-- Bramble Chain Pauldrons
+						i(198029),	-- Sleet Shined Shoulderguards
 						i(198011),	-- Twisted Leather Spaulders
+						i(197997),	-- Windswept Mantle
 						crit(4, {	-- Vakthros
 							["achievementID"] = 16336,	-- Azure Spanner
 						}),
