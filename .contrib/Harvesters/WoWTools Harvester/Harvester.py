@@ -102,6 +102,7 @@ def sort_raw_file_recipes() -> None:
     """Sort raw files for recipes."""
     profession_dict = build_profession_dict()
     other_skilllines = get_other_skilllines()
+    profession_dict['Other'] = other_skilllines
     raw_path_dict = {
         profession: Path("Raw", "Professions", f"{profession}.txt")
         for profession in profession_dict
@@ -112,6 +113,7 @@ def sort_raw_file_recipes() -> None:
     ):
         builds = builds_file.readlines()
         raw_lines = raw_file.readlines()
+        #profession_dict = {'Other': other_skilllines}
         for profession in profession_dict:
             recipe_list = list[str]()
             with open(raw_path_dict[profession], "r+") as sorted_file:
@@ -121,10 +123,9 @@ def sort_raw_file_recipes() -> None:
                     else:
                         spell, skill_line = line.split(DELIMITER)
                         skill_line_id = int(skill_line.strip())
-                        if (
-                            skill_line_id == profession_dict[profession]
-                            or skill_line_id in other_skilllines
-                        ):
+                        if skill_line_id == profession_dict[profession]:
+                            recipe_list.append(spell + "\n")
+                        elif 'Other' == profession and skill_line_id in other_skilllines:
                             recipe_list.append(spell + "\n")
                 recipe_list = remove_empty_builds(recipe_list)
                 sorted_file.writelines(recipe_list)
