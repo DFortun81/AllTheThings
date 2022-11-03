@@ -973,7 +973,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 })));
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
-		i(143638, {	-- Archdruid's Lunarwing Form (MOUNT!)
+		i(143638, {	-- Archdruid's Lunarwing Form (MOUNT!) 
+		-- While it can show as collected for some players, you never received an item. It does not count for any mount achievements.
 		}),
 	}),
 }));
