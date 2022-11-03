@@ -66,9 +66,10 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(97989, {	-- Enchanted Fey Dragon (MOUNT!)
 			["timeline"] = { "added 5.3.0.16758" },
 		}),
-		mount(315132, {	-- Gargantuan Grrloc
+		--Probably later in the Shop
+		--[[mount(315132, {	-- Gargantuan Grrloc
 			["timeline"] = { "added 10.0.0.46366" },
-		}),
+		}),--]]
 		i(153540, {	-- Gilded Ravasaur (MOUNT!)
 			["timeline"] = { "added 7.3.5.25937" },
 			["races"] = HORDE_ONLY,
@@ -128,9 +129,10 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(166776, {	-- Sylverian Dreamer (MOUNT!)
 			["timeline"] = { "added 8.2.0.30948" },
 		}),
-		mount(381529, {	-- Telix the Stormhorn
+		--Probably later in the Shop
+		--[[mount(381529, {	-- Telix the Stormhorn
 			["timeline"] = { "added 10.0.0.46366" },
-		}),
+		}),--]]
 		i(160589, {	-- The Dreadwake (MOUNT!)
 			["timeline"] = { "added 8.0.1.27602" },
 		}),
