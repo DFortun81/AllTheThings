@@ -1104,3 +1104,70 @@ i(187824, 360007);	-- Magically Regulated Automa Core
 i(0, 366255);		-- Dragon Isles Enchanting
 i(0, 382580);		-- Opening
 i(0, 377982);		-- Heart in a Bottle
+
+
+i(0, 366255);	-- Dragon Isles Enchanting
+i(0, 377982);	-- Heart in a Bottle
+i(0, 382580);	-- Opening
+i(0, 383736);	--
+i(0, 388930);	-- Writ of Critical Strike
+i(0, 389135);	-- Writ of Haste
+i(0, 389136);	-- Writ of Mastery
+i(0, 389151);	-- Writ of Versatility
+i(0, 389191);	-- Recraft Equipment
+i(0, 389292);	-- Devotion of Critical Strike
+i(0, 389293);	-- Devotion of Haste
+i(0, 389294);	-- Devotion of Mastery
+i(0, 389295);	-- Devotion of Versatility
+i(0, 389297);	-- Writ of Avoidance
+i(0, 389298);	-- Writ of Leech
+i(0, 389300);	-- Writ of Speed
+i(0, 389301);	-- Devotion of Avoidance
+i(0, 389303);	-- Devotion of Leech
+i(0, 389304);	-- Devotion of Speed
+i(0, 389397);	-- Writ of Avoidance
+i(0, 389398);	-- Writ of Leech
+i(0, 389400);	-- Writ of Speed
+i(0, 389410);	-- Waking Stats
+i(0, 389417);	-- Reserve of Intellect
+i(0, 389519);	-- Draconic Inspiration
+i(0, 389530);	-- Draconic Resourcefulness
+i(0, 389537);	-- Burning Writ
+i(0, 389540);	-- Earthen Writ
+i(0, 389542);	-- Sophic Writ \\ Titanic Writ \\ Enigmatic Writ
+i(0, 389543);	-- Frozen Writ
+i(0, 389546);	-- Wafting Writ
+i(0, 389547);	-- Burning Devotion
+i(0, 389549);	-- Earthen Devotion
+i(0, 389550);	-- Sophic Devotion \\ Titanic Devotion \\ Enigmatic Devotion
+i(0, 389551);	-- Frozen Devotion
+i(0, 389558);	-- Wafting Devotion
+i(0, 390823);	-- Runed Draconium Rod
+i(0, 390825);	-- Runed Khaz'gorite Rod \\ Runed Titanicium Rod
+i(0, 390831);	-- Sophic Amalgamation \\ Titan-Touched Elemental \\ Order Elemental
+i(0, 390839);	-- Illusion: Primal Mastery
+i(0, 390855);	-- Khadgar's Disenchanting Rod \\ Royal Disenchanting Rod
+i(0, 390951);	-- Illusory Adornment: Fire \\ Primal Illusion: Fire
+i(0, 391176);	-- Enchanted Writhebark Wand \\ Enchanted Vibrant Wand
+i(0, 391179);	-- Torch of Primal Awakening
+i(0, 391185);	-- Primal Invocation Extract
+i(0, 391196);	-- Scepter of Spectacle: Fire \\ Scepter of Spectacle: Ember
+i(0, 391197);	-- Scepter of Spectacle: Frost
+i(0, 391200);	-- Wisp of Tyr
+i(0, 391202);	-- Illustrious Insight \\ Essence of Tyr
+i(0, 391302);	-- Crystalline Shatter
+i(0, 391304);	-- Elemental Shatter
+i(0, 391813);	-- Illusion: Primal Air
+i(0, 391814);	-- Illusion: Primal Earth
+i(0, 391815);	-- Illusion: Primal Fire
+i(0, 391816);	-- Illusion: Primal Frost
+i(0, 392407);	-- Crystal Magical Lockpick
+i(0, 392888);	-- Disenchant
+i(0, 391806);	-- Scepter of Spectacle: Air
+i(0, 391807);	-- Scepter of Spectacle: Earth
+i(0, 391808);	-- Scepter of Spectacle: Order
+i(0, 391809);	-- Illusory Adornment: Frost
+i(0, 391810);	-- Illusory Adornment: Air
+i(0, 391811);	-- Illusory Adornment: Earth
+i(0, 391812);	-- Illusory Adornment: Order
+i(0, 394189);	-- Runed Serevite Rod \\ Runed Tyrivite Rod

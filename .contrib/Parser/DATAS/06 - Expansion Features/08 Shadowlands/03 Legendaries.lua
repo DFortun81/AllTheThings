@@ -12,7 +12,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 		i(183246),	-- Memory of Sephuz
 		i(183243),	-- Memory of the Arbiter's Judgment
 		i(183244),	-- Memory of the Rattle of the Maw
-		cl(DEATHKNIGHT, bubbleDown({ ["classes"] = { DEATHKNIGHT } }, {
+		cl(DEATHKNIGHT, bubbleDownSelf({ ["classes"] = { DEATHKNIGHT } }, {
 			i(182638),	-- Memory of a Frenzied Monstrosity
 			i(182634),	-- Memory of a Frozen Champion's Rage
 			i(182640),	-- Memory of a Reanimated Shambler
@@ -49,7 +49,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["timeline"] = { "added 9.2.0" },
 			}),
 		})),
-		cl(DEMONHUNTER, bubbleDown({ ["classes"] = { DEMONHUNTER } }, {
+		cl(DEMONHUNTER, bubbleDownSelf({ ["classes"] = { DEMONHUNTER } }, {
 			i(183216),	-- Memory of a Burning Wound
 			i(183212),	-- Memory of a Darkglare Medallion
 			i(183210),	-- Memory of a Fel Bombardment
@@ -82,7 +82,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["timeline"] = { "added 9.2.0" },
 			}),
 		})),
-		cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
+		cl(DRUID, bubbleDownSelf({ ["classes"] = { DRUID } }, {
 			i(183231),	-- Memory of a Cat-Eye Curio
 			i(183224),	-- Memory of a Deep Focus Draught
 			i(183234),	-- Memory of a Luffa-Infused Embrace
@@ -123,7 +123,10 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["timeline"] = { "added 9.2.0" },
 			}),
 		})),
-		cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
+		cl(EVOKER, bubbleDownSelf({ ["classes"] = { EVOKER }, ["timeline"] = { "added 10.0.0" } }, {
+			i(199552),	-- Memory of Unity (EVOKER)
+		})),
+		cl(HUNTER, bubbleDownSelf({ ["classes"] = { HUNTER } }, {
 			i(183251),	-- Memory of a Craven Strategem
 			i(183254),	-- Memory of a Dire Command
 			i(183252),	-- Memory of a Trapping Apparatus
@@ -160,7 +163,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["timeline"] = { "added 9.2.0" },
 			}),
 		})),
-		cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
+		cl(MAGE, bubbleDownSelf({ ["classes"] = { MAGE } }, {
 			i(183274),	-- Memory of a Fevered Incantation
 			i(183268),	-- Memory of a Grisly Icicle
 			i(183272),	-- Memory of a Siphoning Storm
@@ -197,7 +200,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["timeline"] = { "added 9.2.0" },
 			}),
 		})),
-		cl(MONK, bubbleDown({ ["classes"] = { MONK } }, {
+		cl(MONK, bubbleDownSelf({ ["classes"] = { MONK } }, {
 			i(183288),	-- Memory of a Celestial Infusion
 			i(183290),	-- Memory of Ancient Teachings
 			i(183287),	-- Memory of Charred Passions
@@ -234,7 +237,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["timeline"] = { "added 9.2.0" },
 			}),
 		})),
-		cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
+		cl(PALADIN, bubbleDownSelf({ ["classes"] = { PALADIN } }, {
 			i(183307),	-- Memory of a Holy Sigil
 			i(183312),	-- Memory of a Relentless Inquisitor
 			i(183303),	-- Memory of Maraad's Dying Breath
@@ -271,7 +274,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["timeline"] = { "added 9.2.0" },
 			}),
 		})),
-		cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
+		cl(PRIEST, bubbleDownSelf({ ["classes"] = { PRIEST } }, {
 			i(183318),	-- Memory of a Clear Mind
 			i(183322),	-- Memory of a Divine Image
 			i(183324),	-- Memory of a Harmonious Apparatus
@@ -308,7 +311,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["timeline"] = { "added 9.2.0" },
 			}),
 		})),
-		cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
+		cl(ROGUE, bubbleDownSelf({ ["classes"] = { ROGUE } }, {
 			i(183339),	-- Memory of a Concealed Bluderbuss
 			i(183341),	-- Memory of a Guile Charm
 			i(183342),	-- Memory of Akaari's Soul Fragment
@@ -345,7 +348,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["timeline"] = { "added 9.2.0" },
 			}),
 		})),
-		cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
+		cl(SHAMAN, bubbleDownSelf({ ["classes"] = { SHAMAN } }, {
 			i(183346),	-- Memory of an Ancestral Reminder
 			i(183358),	-- Memory of an Earthen Harmony
 			i(183351),	-- Memory of an Elemental Equilibrium
@@ -382,7 +385,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["timeline"] = { "added 9.2.0" },
 			}),
 		})),
-		cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
+		cl(WARLOCK, bubbleDownSelf({ ["classes"] = { WARLOCK } }, {
 			i(183362),	-- Memory of a Malefic Wrath
 			i(183373),	-- Memory of an Implosive Potential
 			i(183363),	-- Memory of Azj'Aqir's Agony
@@ -419,7 +422,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["timeline"] = { "added 9.2.0" },
 			}),
 		})),
-		cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
+		cl(WARRIOR, bubbleDownSelf({ ["classes"] = { WARRIOR } }, {
 			i(183382),	-- Memory of a Battlelord
 			i(183380),	-- Memory of a Seismic Reverberation
 			i(183388),	-- Memory of a Reckless Defense

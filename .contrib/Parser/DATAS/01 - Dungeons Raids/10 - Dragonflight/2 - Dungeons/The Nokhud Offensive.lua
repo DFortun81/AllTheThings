@@ -27,6 +27,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["provider"] = { "n", 193985 },	-- Initiate Zorig
 					["coord"] = { 31.4, 71.0, OHNAHRAN_PLAINS },	-- Follows you
 					["g"] = {
+						i(197891),	-- Embroidered Broadhoof Cowl
+						i(197889),	-- Geyserwalker Visage
 						i(197897),	-- Keratin-Reinforced Coif
 						i(197899),	-- Speakbreaker Barbuta
 						i(197356),	-- Renewed Proto-Drake: Hairy Back

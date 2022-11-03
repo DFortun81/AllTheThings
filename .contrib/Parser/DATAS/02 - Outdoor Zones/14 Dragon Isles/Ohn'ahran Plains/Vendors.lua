@@ -21,8 +21,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 			n(191608, {	-- The Great Swog
 				["coord"] = { 82.2, 73.2, OHNAHRAN_PLAINS },
 				["g"] = {
-					i(199234),	-- Schematic: Khaz'gorite Fisherfriend (RECIPE!)
-					-- For one Gold coin?
+					i(199234, {	-- Schematic: Khaz'gorite Fisherfriend (RECIPE!)
+						["cost"] = { { "i", 199340, 1}, },	-- 1xGold Coin of the Isles
+					}),
+					i(199341),	-- Regurgitated Sac of Swog Treasures
+					i(199342),	-- Weighted Sac of Swog Treasures
+					i(199343),	-- Immaculate Sac of Swog Treasures
 				},
 			}),
 			-- Doogies

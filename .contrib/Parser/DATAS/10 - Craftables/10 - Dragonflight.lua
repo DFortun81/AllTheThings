@@ -117,9 +117,6 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		}),
 		filter(56, {	-- Reagents
 			i(191570),	-- Dragon's Alchemical Solution
-			i(191474),	-- Draconic Vial+
-			i(191475),	-- Draconic Vial++
-			i(191476),	-- Draconic Vial+++
 			i(191493),	-- Primal Convergent+
 			i(191494),	-- Primal Convergent++
 			i(191495),	-- Primal Convergent+++
@@ -644,7 +641,11 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		}),
 	}),
 	prof(FISHING, {
+		i(198439, {
+			i(14514),	-- Pattern: Robe of the Void (RECIPE!)
+		}),
 		i(198438, {	-- Draconic Recipe in a Bottle
+			i(194671),	-- Design: "Rhinestone" Sunglasses (RECIPE!)
 			i(191544),	-- Recipe: Cauldron of the Pooka (RECIPE!)
 			i(191589),	-- Recipe: Fervid Incense (RECIPE!)
 			i(191587),	-- Recipe: Somniferous Incense (RECIPE!)
@@ -652,6 +653,10 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(199236),	-- Schematic: D.U.C.K.O.Y. (RECIPE!)
 			i(199228),	-- Schematic: Grease Grenade (RECIPE!)
 		}),
+		i(199338),	-- Copper Coin of the Isles
+		i(199339),	-- Silver Coin of the Isles
+		i(199340),	-- Gold Coin of the Isles
+
 		i(194967),	-- Aileron Seamoth
 		i(194968),	-- Cerulean Spinefish
 		i(194970),	-- Islefin Dorado
@@ -685,7 +690,237 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		--i(0, 382583);	-- Opening
 	}),
 	prof(JEWELCRAFTING, {
-		i(194545),	-- Prismatic Ore
+		spell(374627, {	-- Dragon Isles Prospecting
+			i(192852),	-- Alexstraszite+
+			i(192853),	-- Alexstraszite++
+			i(192855),	-- Alexstraszite+++
+			i(192849),	-- Eternity Amber+
+			i(192850),	-- Eternity Amber++
+			i(192851),	-- Eternity Amber+++
+			i(192869),	-- Illimited Diamond+
+			i(192870),	-- Illimited Diamond++
+			i(192871),	-- Illimited Diamond+++
+			i(192856),	-- Malygite+
+			i(192857),	-- Malygite++
+			i(192858),	-- Malygite+++
+			i(192840),	-- Mystic Sapphire+
+			i(192841),	-- Mystic Sapphire++
+			i(192842),	-- Mystic Sapphire+++
+			i(192862),	-- Neltharite+
+			i(192863),	-- Neltharite++
+			i(192865),	-- Neltharite+++
+			i(192866),	-- Nozdorite+
+			i(192867),	-- Nozdorite++
+			i(192868),	-- Nozdorite+++
+			i(194545),	-- Prismatic Ore
+			i(192837),	-- Queen's Ruby+
+			i(192838),	-- Queen's Ruby++
+			i(192839),	-- Queen's Ruby+++
+			i(192846),	-- Sundered Onyx+
+			i(192847),	-- Sundered Onyx++
+			i(192848),	-- Sundered Onyx+++
+			i(192843),	-- Vibrant Emerald+
+			i(192844),	-- Vibrant Emerald++
+			i(192845),	-- Vibrant Emerald+++
+			i(192859),	-- Ysemerald+
+			i(192860),	-- Ysemerald++
+			i(192861),	-- Ysemerald+++
+		}),
+		-- Unclear
+		i(192889),	-- Dreamer's Vision
+		i(202049),	-- Dreamer's Vision
+		i(202055),	-- Dreamer's Vision
+		i(192891),	-- Earthwarden's Prize
+		i(202051),	-- Earthwarden's Prize
+		i(202057),	-- Earthwarden's Prize
+		i(194723),	-- Kalu'ak Figurine
+		i(194724),	-- Kalu'ak Figurine
+		i(194725),	-- Kalu'ak Figurine
+		i(192890),	-- Keeper's Glory
+		i(202050),	-- Keeper's Glory
+		i(202056),	-- Keeper's Glory
+		i(192888),	-- Queen's Gift
+		i(202048),	-- Queen's Gift
+		i(202054),	-- Queen's Gift
+		i(192892),	-- Timewatcher's Patience
+		i(202052),	-- Timewatcher's Patience
+		i(202058),	-- Timewatcher's Patience
+		i(200938),	-- Empty Soul Cage
+		n(ARMOR, {
+			i(193041),	-- Alexstraszite Loupes
+			i(193035),	-- Bold-Print Bifocals
+			i(193038),	-- Chromatic Focus
+			i(193039),	-- Fine-Print Trifocals
+			i(193036),	-- Left-Handed Magnifying Glass
+			i(193040),	-- Magnificent Margin Magnifier
+			i(193042),	-- Resonant Focus
+			i(194748),	-- Split-Lens Specs
+			i(193037),	-- Sundered Onyx Loupe
+			n(COSMETIC, {
+				i(193371),	-- "Rhinestone" Sunglasses
+			}),
+			filter(NECK_F, {
+				i(192998),	-- Crimson Combatant's Jeweled Amulet
+				i(193002),	-- Choker of Shielding
+				i(193001),	-- Elemental Lariat
+				i(192996),	-- Pendant of Impending Perils
+				i(201759),	-- Torc of Passed Time
+			}),
+			filter(FINGER_F, {
+				i(194082),	-- Band of New Beginnings
+				i(192997),	-- Crimson Combatant's Jeweled Signet
+				i(193000),	-- Ring-Bound Hourglass
+				i(192999),	-- Signet of Titanic Insight
+			}),
+			filter(TRINKET_F, {
+				i(193005),	-- Idol of the Dreamer
+				i(193006),	-- Idol of the Earth Warder
+				i(193003),	-- Idol of the Lifebinder
+				i(193004),	-- Idol of the Spell-Weaver
+			}),
+		}),
+		filter(BATTLE_PETS, {
+			i(193885),	-- Jeweled Amber Whelpling (PET!)
+			i(193888),	-- Jeweled Emerald Whelpling (PET!)
+			i(193889),	-- Jeweled Onyx Whelpling (PET!)
+			i(193887),	-- Jeweled Ruby Whelpling (PET!)
+			i(193886),	-- Jeweled Sapphire Whelpling (PET!)
+		}),
+		filter(MISC, {
+			i(192894),	-- Blotting Sand+
+			i(192895),	-- Blotting Sand++
+			i(192896),	-- Blotting Sand+++
+			i(193019),	-- Djaradin's "Pinata"+
+			i(193020),	-- Djaradin's "Pinata"++
+			i(193021),	-- Djaradin's "Pinata"+++
+			i(193007),	-- Narcissist's Sculpture+
+			i(193008),	-- Narcissist's Sculpture++
+			i(193009),	-- Narcissist's Sculpture+++
+			i(192897),	-- Pounce+
+			i(192898),	-- Pounce++
+			i(192899),	-- Pounce+++
+			i(193029),	-- Projection Prism+
+			i(193030),	-- Projection Prism++
+			i(193031),	-- Projection Prism+++
+			i(193011),	-- Revitalizing Red Carving+
+			i(193012),	-- Revitalizing Red Carving++
+			i(193013),	-- Revitalizing Red Carving+++
+			i(193015),	-- Statue of Tyr's Herald+
+			i(193016),	-- Statue of Tyr's Herald++
+			i(193017),	-- Statue of Tyr's Herald+++
+			i(192992),	-- Tiered Medallion Setting+
+			i(192993),	-- Tiered Medallion Setting++
+			i(192994),	-- Tiered Medallion Setting+++
+		}),
+		filter(56, {	-- Reagents
+			i(191474),	-- Draconic Vial+
+			i(191475),	-- Draconic Vial++
+			i(191476),	-- Draconic Vial+++
+			i(192887),	-- Elemental Harmony+
+			i(193378),	-- Elemental Harmony++
+			i(193379),	-- Elemental Harmony+++
+			i(192876),	-- Frameless Lens+
+			i(192877),	-- Frameless Lens++
+			i(192878),	-- Frameless Lens+++
+			i(192883),	-- Glossy Stone+
+			i(192884),	-- Glossy Stone++
+			i(192885),	-- Glossy Stone+++
+			i(192893),	-- Jeweled Dragon's Heart
+			i(192834),	-- Shimmering Clasp+
+			i(192835),	-- Shimmering Clasp++
+			i(192836),	-- Shimmering Clasp+++
+		}),
+		filter(TOYS, {
+			i(193033),	-- Convergent Prism (TOY!)
+			i(193032),	-- Jeweled Offering (TOY!)
+		}),
+		i(192917),	-- Crafty Alexstraszite+
+		i(192918),	-- Crafty Alexstraszite++
+		i(192919),	-- Crafty Alexstraszite+++
+		i(192900),	-- Crafty Queen's Ruby+
+		i(192901),	-- Crafty Queen's Ruby++
+		i(192902),	-- Crafty Queen's Ruby+++
+		i(192943),	-- Crafty Ysemerald+
+		i(192944),	-- Crafty Ysemerald++
+		i(192945),	-- Crafty Ysemerald+++
+		i(192926),	-- Deadly Alexstraszite+
+		i(192927),	-- Deadly Alexstraszite++
+		i(192928),	-- Deadly Alexstraszite+++
+		i(192933),	-- Energized Malygite+
+		i(192934),	-- Energized Malygite++
+		i(192935),	-- Energized Malygite+++
+		i(192906),	-- Energized Vibrant Emerald+
+		i(192907),	-- Energized Vibrant Emerald++
+		i(192908),	-- Energized Vibrant Emerald+++
+		i(192950),	-- Energized Ysemerald+
+		i(192951),	-- Energized Ysemerald++
+		i(192952),	-- Energized Ysemerald+++
+		i(192983),	-- Fierce Illimited Diamond+
+		i(192984),	-- Fierce Illimited Diamond++
+		i(192985),	-- Fierce Illimited Diamond+++
+		i(192971),	-- Forceful Nozdorite+
+		i(192972),	-- Forceful Nozdorite++
+		i(192973),	-- Forceful Nozdorite+++
+		i(192965),	-- Fractured Neltharite+
+		i(192966),	-- Fractured Neltharite++
+		i(192967),	-- Fractured Neltharite+++
+		i(192980),	-- Inscribed Illimited Diamond+
+		i(192981),	-- Inscribed Illimited Diamond++
+		i(192982),	-- Inscribed Illimited Diamond+++
+		i(192968),	-- Jagged Nozdorite+
+		i(192969),	-- Jagged Nozdorite++
+		i(192970),	-- Jagged Nozdorite+++
+		i(192959),	-- Keen Neltharite+
+		i(192960),	-- Keen Neltharite++
+		i(192961),	-- Keen Neltharite+++
+		i(192946),	-- Keen Ysemerald+
+		i(192947),	-- Keen Ysemerald++
+		i(192948),	-- Keen Ysemerald+++
+		i(192974),	-- Puissant Nozdorite+
+		i(192975),	-- Puissant Nozdorite++
+		i(192976),	-- Puissant Nozdorite+++
+		i(192953),	-- Quick Ysemerald+
+		i(192954),	-- Quick Ysemerald++
+		i(192955),	-- Quick Ysemerald+++
+		i(192929),	-- Radiant Malygite+
+		i(192931),	-- Radiant Malygite++
+		i(192932),	-- Radiant Malygite+++
+		i(192923),	-- Radiant Alexstraszite+
+		i(192924),	-- Radiant Alexstraszite++
+		i(192925),	-- Radiant Alexstraszite+++
+		i(192989),	-- Resplendent Illimited Diamond+
+		i(192990),	-- Resplendent Illimited Diamond++
+		i(192991),	-- Resplendent Illimited Diamond+++
+		i(192920),	-- Sensei's Alexstraszite+
+		i(192921),	-- Sensei's Alexstraszite++
+		i(192922),	-- Sensei's Alexstraszite+++
+		i(192956),	-- Sensei's Neltharite+
+		i(192957),	-- Sensei's Neltharite++
+		i(192958),	-- Sensei's Neltharite+++
+		i(192910),	-- Sensei's Sundered Onyx+
+		i(192911),	-- Sensei's Sundered Onyx++
+		i(192912),	-- Sensei's Sundered Onyx+++
+		i(192986),	-- Skillful Illimited Diamond+
+		i(192987),	-- Skillful Illimited Diamond++
+		i(192988),	-- Skillful Illimited Diamond+++
+		i(192913),	-- Solid Eternity Amber+
+		i(192914),	-- Solid Eternity Amber++
+		i(192916),	-- Solid Eternity Amber+++
+		i(192977),	-- Steady Nozdorite+
+		i(192978),	-- Steady Nozdorite++
+		i(192979),	-- Steady Nozdorite+++
+		i(192940),	-- Stormy Malygite+
+		i(192941),	-- Stormy Malygite++
+		i(192942),	-- Stormy Malygite+++
+		i(192936),	-- Zen Malygite+
+		i(192937),	-- Zen Malygite++
+		i(192938),	-- Zen Malygite+++
+		i(192903),	-- Zen Mystic Sapphire+
+		i(192904),	-- Zen Mystic Sapphire++
+		i(192905),	-- Zen Mystic Sapphire+++
+		i(192962),	-- Zen Neltharite+
+		i(192963),	-- Zen Neltharite++
+		i(192964),	-- Zen Neltharite+++
 	}),
 	prof(MINING, {
 		n(DISCOVERY, {
@@ -1050,6 +1285,109 @@ root("HiddenQuestTriggers", {
 			q(71458),	-- D.U.C.K.O.Y
 			--q(),	-- Quack-E
 		}),
+		--[[
+		prof(JEWELCRAFTING, {
+			-- Jewelcrafting Essentials
+			q(),	-- Dragon Isles Crushing
+			q(),	-- Dragon Isles Prospecting
+			-- Reagents
+			q(),	-- Blotting Sand
+			q(),	-- Draconic Vial
+			q(),	-- Elemental Harmony
+			q(),	-- Empty Soul Cage
+			q(),	-- Frameless Lens
+			q(),	-- Glossy Stone
+			q(),	-- Illustrious Insight
+			q(),	-- Pounce
+			q(),	-- Shimmering Clasp
+			-- Rudimentary Gems
+			q(),	-- Crafty Queen's Ruby
+			q(),	-- Energized Vibrant Emerald
+			q(),	-- Sensei's Sundered Onyx
+			q(),	-- Soild Eternity Amber
+			q(),	-- Zen Mystic Sapphire
+			-- Air Gems
+			q(),	-- Crafty Alexstraszite
+			q(),	-- Energized Malygite
+			q(),	-- Forceful Nozdorite
+			q(),	-- Keen Neltharite
+			q(),	-- Quick Ysemerald
+			-- Earth Gems
+			q(),	-- Fractured Neltharite
+			q(),	-- Keen Ysemerald
+			q(),	-- Puissant Nozdorite
+			q(),	-- Sensei's Alexstraszite
+			q(),	-- Zen Malygite
+			-- Fire Gems
+			q(),	-- Crafty Ysemerald
+			q(),	-- Deadly Alexstraszite
+			q(),	-- Jagged Nozdorite
+			q(),	-- Radiant Malygite
+			q(),	-- Sensei's Neltharite
+			-- Frost Gems
+			q(),	-- Energized Ysemerald
+			q(),	-- Radiant Alexstraszite
+			q(),	-- Steady Nozdorite
+			q(),	-- Stormy Malygite
+			q(),	-- Zen Neltharite
+			-- Primalist Gems
+			q(),	-- Fierce Illimited Diamond
+			q(),	-- Inscribed Illimited Diamond
+			q(),	-- Resplendent Illimited Diamond
+			q(),	-- Skillful Illimited Diamond
+			-- Misc
+			q(),	-- Tiered Medallion Setting
+			-- Trinkets
+			q(),	-- Idol of the Earth Warder
+			q(),	-- Idol of the Dreamer
+			q(),	-- Idol of the Lifebinder
+			q(),	-- Idol of the Spellweaver
+			-- Jewelry
+			q(),	-- Band of New Beginnings
+			q(),	-- Choker of Shielding
+			q(),	-- Crimson Combatant's Jeweled Amulet
+			q(),	-- Crimson Combatant's Jeweled Signet
+			q(),	-- Elemental Lariat
+			q(),	-- Pendent of Impending Perils
+			q(),	-- Ring-Bound Hourglass
+			q(),	-- Signet of Titanic Insight
+			q(),	-- Torc of Passed Time
+			-- Statues & Carvings
+			q(),	-- Djaradin's "Pinata"
+			q(),	-- Kalu'ak Figurine
+			q(),	-- Narcissist's Sculpture
+			q(),	-- Revitalizing Red Carving
+			q(),	-- Statue of Tyr's Herald
+			-- Battle Pets
+			q(),	-- Jeweled Amber Whelpling
+			q(),	-- Jeweled Emerald Whelpling
+			q(),	-- Jeweled Onyx Whelpling
+			q(),	-- Jeweled Ruby Whelpling
+			q(),	-- Jeweled Sapphire Whelpling
+			-- Noevelties
+			q(),	-- "Rhinestone" Sunglasses
+			q(),	-- Covergent Prism
+			q(),	-- Jeweled Offering
+			q(),	-- Projection Prism
+			q(),	-- Split-Lens Specs
+			-- Profession Equipment
+			q(),	-- Alexstraszite Loupes
+			q(),	-- Bold-Print Bifocals
+			q(),	-- Chromatic Focus
+			q(),	-- Fine-Print Trifocals
+			q(),	-- Left-Handed Magnifying Glass
+			q(),	-- Magnificent Margin Magnifier
+			q(),	-- Resonant Focus
+			q(),	-- Sundered Onyx Loupes
+			-- Extravagant Glasswares
+			q(),	-- Dreamer's Vision
+			q(),	-- Earthwarden's Prize
+			q(),	-- Jeweled Dragon's Heart
+			q(),	-- Keeper's Glory
+			q(),	-- Queen's Gift
+			q(),	-- Timewatcher's Patience
+		}),
+		--]]
 		prof(MINING, {
 			q(72160),	-- Iridescent Ore Fragments
 			--q(71950),

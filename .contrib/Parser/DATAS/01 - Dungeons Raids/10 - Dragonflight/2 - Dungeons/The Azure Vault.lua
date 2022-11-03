@@ -37,7 +37,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 				e(2585, {	-- Azureblade
 					["crs"] = { 186739 },	-- Azureblade
 					["g"] = {
-						i(193629),	-- Cloak of Feathers
+						i(193629),	-- Cloak of Lost Devotion
 						i(193632),	-- Fear Striker Tz'onna
 						i(193631),	-- Horizon Splitter
 						i(193628),	-- Tome of Unstable Power
@@ -86,7 +86,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 				e(2585, {	-- Azureblade
 					["crs"] = { 186739 },	-- Azureblade
 					["g"] = {
-						i(193629),	-- Cloak of Feathers
+						i(193629),	-- Cloak of Lost Devotion
 						i(193632),	-- Fear Striker Tz'onna
 						i(193631),	-- Horizon Splitter
 						i(193628),	-- Tome of Unstable Power
@@ -135,7 +135,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 				e(2585, {	-- Azureblade
 					["crs"] = { 186739 },	-- Azureblade
 					["g"] = {
-						i(193629),	-- Cloak of Feathers
+						i(193629),	-- Cloak of Lost Devotion
 						i(193632),	-- Fear Striker Tz'onna
 						i(193631),	-- Horizon Splitter
 						i(193628),	-- Tome of Unstable Power

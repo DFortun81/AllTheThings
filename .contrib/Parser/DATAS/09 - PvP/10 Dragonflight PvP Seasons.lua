@@ -30,6 +30,9 @@ root("PVP", pvp(tier(DF_TIER, {
 			ach(15953),	-- Rival II: Dragonflight Season 1
 		}),
 		filter(RECIPES, {
+			i(194637),	-- Design: Crimson Combatant's Jeweled Amulet (RECIPE!)
+			i(194638),	-- Design: Crimson Combatant's Jeweled Signet (RECIPE!)
+			i(194646),	-- Design: Djaradin's "Pinata" (RECIPE!)
 			i(194270),	-- Pattern: Crimson Combatant's Wildercloth Bands (RECIPE!)
 			i(194271),	-- Pattern: Crimson Combatant's Wildercloth Cloak (RECIPE!)
 			i(194272),	-- Pattern: Crimson Combatant's Wildercloth Gloves (RECIPE!)

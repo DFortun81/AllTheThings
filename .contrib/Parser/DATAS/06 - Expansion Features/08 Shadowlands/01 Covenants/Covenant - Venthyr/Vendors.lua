@@ -12,6 +12,7 @@ local CHRONICLE_OF_LOST_MEMORIES = i(184665, {	-- Chronicle of Lost Memories
 			190584,	-- Memory of Unity (DK)
 			190587,	-- Memory of Unity (DH)
 			190588,	-- Memory of Unity (DRUID)
+			199552,	-- Memory of Unity (EVOKER)
 			190589,	-- Memory of Unity (HUNTER)
 			190590,	-- Memory of Unity (MAGE)
 			190591,	-- Memory of Unity (MONK)

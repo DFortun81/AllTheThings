@@ -99,6 +99,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 70.0, 38.0, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197637),	-- Nokhud Reaver Stompers
+						i(197686),	-- Ohn'ir Initiate Slippers
 						i(197687),	-- Shikaar Scount Sabatons
 						i(197688),	-- Teerai Watcher Moccasins
 					},
@@ -502,7 +503,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						["provider"] = { "n", 190014 },	-- Initiate Radiya
 						["coord"] = { 48.3, 56.5, OHNAHRAN_PLAINS },
 						["g"] = {
+							i(200277),	-- Embroidered Broadhoof Footwraps
+							i(200275),	-- Geyserwalker Sandals
 							i(200272),	-- Keratin-Reinforced Boots
+							i(200274),	-- Spearbreaker Footguards
 							crit(2, {	-- Initiate's Day Out
 								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
 							}),
@@ -561,6 +565,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						["provider"] = { "n", 186303 },	-- Celina Crunchyleaves
 						["coord"] = { 24.4, 63.0, OHNAHRAN_PLAINS },
 						["g"] = {
+							i(197890),	-- Embroidered Broadhoof Coat
+							i(197886),	-- Geyserwalker Robes
 							i(197894),	-- Keratin-Reinforced Harness
 							i(197898),	-- Spearbreaker Chestguard
 						},
@@ -620,7 +626,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						["provider"] = { "n", 190025 },	-- Scout Watu
 						["coord"] = { 84.0, 60.7, OHNAHRAN_PLAINS },
 						["g"] = {
+							i(197893),	-- Embroidered Broadhoof Wristband
+							i(197887),	-- Geyserwalker Bindings
 							i(197896),	-- Keratin-Reinforced Wristguards
+							i(197901),	-- Spearbreaker Vambraces
 							crit(4, {	-- Pinewood Post
 								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
 							}),
@@ -706,6 +715,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						["provider"] = { "n", 193985 },	-- Initiate Zorig
 						["coord"] = { 31.4, 71.0, OHNAHRAN_PLAINS },	-- Follows you
 						["g"] = {
+							i(197892),	-- Embroidered Broadhoof Waistband
+							i(197888),	-- Geyserwalker Cord
 							i(197895),	-- Keratin-Reinforced Girdle
 							i(197900),	-- Spearbreaker Belt
 						},

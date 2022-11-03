@@ -8,6 +8,7 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, 
 	i(201470),	-- Story of a Memorable Victory
 	n(ARMOR, {
 		i(199019),	-- Aerodynamic Cape
+		i(199017),	-- Claw-Marked Signet
 		i(198990),	-- Drakewatcher's Cord
 		i(198987),	-- Drakewatcher's Handwraps
 		i(198988),	-- Drakewatcher's Hood
@@ -40,6 +41,7 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, 
 		i(199010),	-- Shorebreaker's Legguards
 		i(199011),	-- Shorebreaker's Pauldrons
 		i(199031),	-- Stonewatcher's Eye
+		i(199030),	-- Stonewatcher's Thumb
 		i(199029),	-- Stonewatcher's Toe
 	}),
 	filter(RECIPES, {
@@ -57,6 +59,7 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, 
 	n(WEAPONS, {
 		i(199020),	-- Drake Racing Starter Pistol
 		i(199027),	-- Drake Slayer's Greatsword
+		i(199032),	-- Drakescale Shield
 		i(199039),	-- Drakewatcher's Beacon
 		i(199033),	-- Drakewatcher's Scriptures
 		i(199045),	-- Earth-Blessed Mace
@@ -73,6 +76,8 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, 
 		i(199046),	-- Shorebreaker's Greataxe
 		i(199037),	-- Shorebreaker's Poleaxe
 		i(199021),	-- Shorebreaker's Sword
+		i(199043),	-- Skullsplitting Axe
+		i(199024),	-- Talon Sharpening Axe
 		i(199047),	-- Wind-Blessed Claw
 		i(199040),	-- Wind-Blessed Hammer
 	}),

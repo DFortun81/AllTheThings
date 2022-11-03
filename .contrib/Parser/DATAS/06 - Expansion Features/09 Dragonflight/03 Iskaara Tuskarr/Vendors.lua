@@ -115,6 +115,23 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					i(199531),	-- Red Stocking Cap
 				},
 			}),
+			n(194059, {	-- Rokkutuk <Lead Craftsman>
+				["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
+				["g"] = {
+						-- RENOWN 10 --
+					i(194611),	-- Design: Energized Ysemerald (RECIPE!)
+					i(194726),	-- Design: Kalu'ak Figurine (RECIPE!)
+					i(194610),	-- Design: Keen Ysemerald (RECIPE!)
+					i(194603),	-- Design: Radiant Alexstraszite (RECIPE!)
+					i(194602),	-- Design: Sensei's Alexstraszite (RECIPE!)
+						-- RENOWN 15 --
+					i(194634),	-- Design: Idol of the Dreamer (RECIPE!)
+					i(194633),	-- Design: Idol of the Spell-Weaver (RECIPE!)
+						-- RENOWN 18 --
+					i(194660),	-- Design: Fine-Print Trifocals (RECIPE!)
+					i(194663),	-- Design: Resonant Focus (RECIPE!)
+				},
+			}),
 			n(187680, {	-- Scaps
 				["sourceQuests"] = { 66223 },	-- Can We Keep It?
 				["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },

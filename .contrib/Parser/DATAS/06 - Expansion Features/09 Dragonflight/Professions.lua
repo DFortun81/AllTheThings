@@ -46,6 +46,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL 
 				-- Recipes
 				r(377978,{["u"]=15}),	-- Heart in a Bottle (ALCHEMY)
 				r(377983,{["u"]=15}),	-- Heart in a Bottle (ENGINEERING)
+				r(377915,{["u"]=15}),	-- Heart in a Bottle (JEWELCRAFTING)
 				r(377987,{["u"]=15}),	-- Heart in a Bottle (MINING)
 				r(377986,{["u"]=15}),	-- Heart in a Bottle (TAILORING)
 			},
@@ -252,6 +253,40 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL 
 			}),
 		}),
 		prof(JEWELCRAFTING, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(374483),	-- Blotting Sand
+					r(374442),	-- Crafty Alexstraszite
+					r(374450),	-- Crafty Ysemerald
+					r(374445),	-- Deadly Alexstraszite
+					r(374547),	-- Dreamer's Vision
+					r(374549),	-- Earthwarden's Prize
+					r(392697),	-- Empty Soul Cage
+					r(374467),	-- Fierce Illimited Diamond
+					r(374459),	-- Fractured Neltharite
+					r(391782),	-- Illustrious Insight
+					r(374465),	-- Inscribed Illimited Diamond
+					r(374551),	-- Jeweled Dragon's Heart
+					r(374522),	-- Jeweled Offering
+					r(374548),	-- Keeper's Glory
+					r(374502),	-- Narcissist's Sculpture
+					r(374484),	-- Pounce
+					r(374518),	-- Projection Prism
+					r(374546),	-- Queen's Gift
+					r(374455),	-- Quick Ysemerald
+					r(374470),	-- Resplendent Illimited Diamond
+					r(374497),	-- Signet of Titanic Insight
+					r(374468),	-- Skillful Illimited Diamond
+					r(377960),	-- Split-Lens Specs
+					r(374508),	-- Statue of Tyr's Herald
+					r(374449),	-- Stormy Malygite
+					r(374472),	-- Tiered Medallion Setting
+					r(394621),	-- Torc of Passed Time
+					r(374448),	-- Zen Malygite
+					r(374458),	-- Zen Neltharite
+				},
+			}),
 			q(70365, {	-- To the Dragon Isles: Jewelcrafting
 				["sourceQuests"] = { 66057 },	-- Restoring the Faith
 				["provider"] = { "n", 192121 },	-- Falron Greygold

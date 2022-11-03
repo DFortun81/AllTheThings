@@ -16,7 +16,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					i(194605),	-- Design: Radiant Malygite (RECIPE!)
 					i(194606),	-- Design: Energized Malygite (RECIPE!)
 					i(194613),	-- Design: Sensei's Neltharite (RECIPE!)
-					i(194613),	-- Design: Keen Neltharite (RECIPE!)
+					i(194614),	-- Design: Keen Neltharite (RECIPE!)
 					i(199811),	-- Formula: Enchant Cloak - Graceful Avoidance (RECIPE!)
 					i(199812),	-- Formula: Enchant Boots - Rider's Assurance (RECIPE!)
 						-- RENOWN 13 --

@@ -5,6 +5,9 @@
 root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 	n(VALDRAKKEN_ACCORD, {
 		n(AERIAL_CHALLENGES, {
+			n(REWARDS, {
+				i(199192),	-- Dragon Racer's Purse
+			}),
 		}),
 	}),
 })));

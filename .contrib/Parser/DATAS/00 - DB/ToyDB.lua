@@ -1051,6 +1051,7 @@ i(191925);	-- Falling Star Flinger
 -- PATCH 10.0.0 --
 ------------------
 -- SOURCED
+i(199337);	-- Bag of Furious Winds
 i(199768);	-- Black Dragon Banner
 i(199897);	-- Blue Cover Bean Bag
 i(199769);	-- Blue Dragon Banner
@@ -1058,6 +1059,7 @@ i(199770);	-- Bronze Dragon Banner
 i(198264);	-- Centralized Precipitation Emitter
 i(194058);	-- Cold Cushion
 i(200551);	-- Comfortable Pile of Pelts
+i(193033);	-- Convergent Prism
 i(194057);	-- Cushion of Time Travel
 i(199649);	-- Dragon Tea Set
 i(194060);	-- Dragonscale Expedition's Expedition Tent
@@ -1070,6 +1072,7 @@ i(194052);	-- Forlorn Funeral Pall
 i(198227);	-- Giggle Goggles
 i(199771);	-- Green Dragon Banner
 i(198090);	-- Jar of Excess Slime
+i(193032);	-- Jeweled Offering
 i(200597);	-- Lover's Bouquet
 i(198857);	-- Lucky Duck
 i(194059);	-- Market Tent
@@ -1081,6 +1084,7 @@ i(199767);	-- Red Dragon Banner
 i(198729);	-- Reliquary Banner
 i(198039);	-- Rock of Appreciation
 i(199896);	-- Rubbery Fish Head
+i(200960);	-- Seed of Renewed Souls
 i(198721);	-- Skinny Reliquary Pillow
 i(198722);	-- Small Triangular Pillow
 i(198720);	-- Soft Purple Pillow
@@ -1091,8 +1095,6 @@ i(199650);	-- Whale Bone Tea Set
 i(198156);	-- Wyrmhole Generator
 -- NOT SOURCED YET
 i(192495);	-- Malfunctioning Stealthman 54
-i(193032);	-- Jeweled Offering
-i(193033);	-- Convergent Prism
 i(193478);	-- Tuskarr Bean Bag
 i(193476);	-- Gnoll Tent
 i(197719);	-- Artisan's Sign
@@ -1104,7 +1106,6 @@ i(198646);	-- Ornate Dragon Statue
 i(198827);	-- Magical Snow Sled
 i(199111);	-- Maestro Duck's Orchestrion
 i(199554);	-- S.E.A.T.
-i(199337);	-- Bag of Furious Winds
 i(199926);	-- Portable J.A.M.
 i(200142);	-- Generous Goblin Grenade
 i(200148);	-- A Collection Of Me
@@ -1121,7 +1122,6 @@ i(200636);	-- Primal Invocation Quintessence
 i(200857);	-- Talisman of Sargha
 i(200869);	-- Ohn Lite Branded Horn
 i(200878);	-- Wheeled Floaty Boaty Controller
-i(200960);	-- Seed of Renewed Souls
 i(200999);	-- The Super Shellkhan Gang
 i(199899);	-- Iskaara Tug Sled
 i(199902);	-- Wayfinder's Compass

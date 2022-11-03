@@ -49,5 +49,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 				["coord"] = { 63.0, 26.2, THE_WAKING_SHORES },
 			}),
 		}),
+		n(REWARDS, {
+			i(194641),	-- Design: Elemental Lariat (RECIPE!)
+		}),
 	}),
 })));

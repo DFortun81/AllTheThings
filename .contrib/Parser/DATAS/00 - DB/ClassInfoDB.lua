@@ -4,7 +4,7 @@ ClassInfoDB = {
 ["GetClassesBySet"] = function(specSetID)
 	local classes = ClassInfoDB["SpecSet"][specSetID];
 	-- if all classes are valid, then no need to define
-	if #classes < 12 then
+	if #classes < 13 then
 		return classes;
 	end
 end
@@ -67,6 +67,9 @@ local specs = {
 [1454]=9,
 [1455]=6,
 [1456]=12,
+[1465]=13,
+[1467]=13,
+[1468]=13,
 };
 
 -- scraped from https://wow.tools/dbc/?dbc=specsetmember
@@ -277,6 +280,10 @@ local specSets = {
 {72,168},
 {71,168},
 {73,168},
+{1467,170},
+{1468,170},
+{1467,171},
+{1468,172},
 };
 
 -- Store Spec-Class associations

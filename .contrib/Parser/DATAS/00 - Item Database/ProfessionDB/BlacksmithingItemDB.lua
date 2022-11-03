@@ -2002,3 +2002,44 @@ i(194497, 371367);	-- Titanicium Skinning Knife
 i(194488, 367612);	-- Traitorous Primal Gauntlets of the Dragon
 i(194507, 371394);	-- Tyrivite Skeleton Key
 i(194492, 367618);	-- Unstable Frostfire Belt
+
+
+i(0, 365677);	-- Dragon Isles Blacksmithing
+i(0, 365735);	-- Primal Molten Alloy
+i(0, 367595);	-- Draconium Knuckles
+i(0, 367596);	-- Draconium Dirk
+i(0, 367597);	-- Draconium Stiletto
+i(0, 367598);	-- Draconium Great Mace
+i(0, 367599);	-- Draconium Sword
+i(0, 367600);	-- Draconium Axe
+i(0, 367609);	-- Explorer's Plate Bracers
+i(0, 367610);	-- Explorer's Plate Boots
+i(0, 367611);	-- Explorer's Expert Clasp \\ Explorer's Plate Chestguard
+i(0, 367712);	-- Frostfire Alloy
+i(0, 367714);	-- Infurious Alloy \\ Bloody Alloy
+i(0, 371302);	-- Draconium Needle Set
+i(0, 371304);	-- Draconium Skinning Knife
+i(0, 371309);	-- Draconium Pickaxe
+i(0, 371338);	-- Draconium Leatherworker's Knife
+i(0, 371343);	-- Draconium Sickle
+i(0, 371344);	-- Draconium Blacksmith's Hammer
+i(0, 371360);	-- Draconium Leatherworker's Toolset
+i(0, 371364);	-- Draconium Blacksmith's Toolbox
+i(0, 371395);	-- Serevite Repair Hammer \\ Tyrivite Repair Hammer
+i(0, 371396);	-- Draconium Repair Hammer
+i(0, 376698);	-- Wisp of Tyr
+i(0, 376700);	-- Illustrious Insight \\ Essence of Tyr
+i(0, 377280);	-- Prototype Regal Barding Framework
+i(0, 377281);	-- Prototype Explorer's Barding Framework
+i(0, 377981);	-- Heart in a Bottle
+i(0, 382579);	-- Opening
+i(0, 385304);	-- Recraft Equipment \\ Recraft Equipment [NYI] \\ Recraft Dragon Isles Equipment
+i(0, 388279);	-- Sturdy Expedition Shovel \\ Sturdy Expedition shovel
+i(0, 393404);	-- Draconium Defender
+i(0, 393416);	-- Draconium Great Axe
+i(0, 393853);	-- Master's Hammer
+i(0, 395879);	-- Explorer's Expert Gauntlets
+i(0, 395880);	-- Explorer's Expert Spaulders
+i(0, 395881);	-- Explorer's Expert Greaves
+i(0, 395883);	-- Explorer's Expert Helm
+i(0, 395886);	-- Explorer's Plate Chestguard

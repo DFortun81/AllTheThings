@@ -201,6 +201,14 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["repeatable"] = true,
 				["timeline"] = { "added 9.1.5" },
 			}),
+			q(72113, bubbleDownSelf({ ["timeline"] = { "added 10.0.0" } }, {	-- Shapes Beyond the Veil
+				-- ["sourceQuests"] = {  },	-- Unknown
+				["provider"] = { "n", 174209 },	-- Lady Muunn
+				["coord"] = { 38.2, 24.4, THE_TRUNK },
+				["g"] = {
+					i(200960),	-- Seed of Renewed Souls (TOY!)
+				},
+			})),
 			q(62536, {	-- The Lost of Teldrassil
 				-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday.
 				-- i *think* this requires doing "their new home" and then waiting for a daily (or weekly?) reset.  it was the last campaign quest i did, and the next day (which was a weekly reset day) this quest was there

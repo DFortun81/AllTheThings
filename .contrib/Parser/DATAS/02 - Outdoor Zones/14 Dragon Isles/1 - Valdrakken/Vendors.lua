@@ -202,6 +202,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					i(199242),	-- Schematic: Portable Alchemist's Lab Bench (RECIPE!)
 					i(199243),	-- Schematic: Portable Tinker's Workbench (RECIPE!)
 					i(199290),	-- Schematic: Red Fireflight (RECIPE!)
+					i(194662),	-- Design: Alexstraszite Loupes (RECIPE!)
 				},
 			}),
 			n(196598, {	-- Rethelshi

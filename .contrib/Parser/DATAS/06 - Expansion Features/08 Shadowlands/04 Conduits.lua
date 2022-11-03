@@ -111,6 +111,18 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
+		cl(EVOKER, bubbleDown({ ["timeline"] = { "added 10.0.0" } }, {
+			i(199454),	-- Bronze Acceleration
+			i(199457),	-- Circle of Life
+			i(199460),	-- Graceful Stride
+			i(199456),	-- Grandiose Boon
+			i(199458),	-- Inherent Resistance
+			i(199455),	-- Intense Awakening
+			i(199461),	-- Legacy of Coldarra
+			i(199462),	-- Natural Weapons
+			i(199459),	-- Primal Fortitude
+			i(199453),	-- Spark of Savagery
+		})),
 		cl(HUNTER, {
 			i(184587),	-- Ambuscade
 			i(183402),	-- Bloodletting

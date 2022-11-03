@@ -49,6 +49,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 				ach(16358),	-- Mythic: Raszageth the Storm-Eater Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {
+				i(194642),	-- Design: Choker of Shielding (RECIPE!)
 				i(194259),	-- Pattern: Allied Cinch of Time Dilation (RECIPE!)
 				i(194266),	-- Pattern: Bronzed Grip Wrappings (RECIPE!)
 				i(194260),	-- Pattern: Blue Dragon Soles (RECIPE!)

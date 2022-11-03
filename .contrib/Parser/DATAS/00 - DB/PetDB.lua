@@ -1103,8 +1103,15 @@ pet(0, 3249, {			-- Lil' Ursoc
 -- SOURCED
 pet(198726, 3380);	-- Black Skitterbug
 pet(199688, 3279);	-- Bronze Racing Enthusiast
+pet(199326, 3376);	-- Chip
 pet(191941, 3264);	-- Crystalline Mini-Monster
 pet(198725, 3381);	-- Gray Marmoni
+pet(193885, 3345);	-- Jeweled Amber Whelpling
+pet(193888, 3347);	-- Jeweled Emerald Whelpling
+pet(193889, 3256);	-- Jeweled Onyx Whelpling
+pet(193887, 3346);	-- Jeweled Ruby Whelpling
+pet(193886, 3344);	-- Jeweled Sapphire Whelpling
+
 pet(199175, 3316);	-- Lubbins
 
 pet(191946, 3265);	-- Mister Muskoxeles
@@ -1127,7 +1134,7 @@ pet(0, 3282);	-- Swoglet
 pet(0, 3276);	-- Treeflitter
 
 -- NOT SOURCED YET
-pet(193889, 3256);	-- Jeweled Onyx Whelpling
+
 pet(191126, 3256);	-- Jeweled Onyx Whelpling / Obsidian Whelpling
 pet(0, 3257);	-- Test Beetle
 pet(191915, 3259);	-- Time-Lost Feral Rabbit
@@ -1194,10 +1201,7 @@ pet(0, 3340);	-- Blue Dragon Whelp
 pet(0, 3341);	-- Red Dragon Whelp
 pet(0, 3342);	-- Spyragos
 pet(0, 3343);	-- Bronze Dragon Whelp
-pet(193886, 3344);	-- Jeweled Sapphire Whelpling
-pet(193885, 3345);	-- Jeweled Amber Whelpling
-pet(193887, 3346);	-- Jeweled Ruby Whelpling
-pet(193888, 3347);	-- Jeweled Emerald Whelpling
+
 pet(0, 3348);	-- Primal Stormling
 pet(0, 3351);	-- Grizzlefur Cub
 pet(0, 3352);	-- Razortooth Bear Cub
@@ -1228,7 +1232,7 @@ pet(191929);	-- zzOld - [PH] White Flying Squirrel (REUSE)
 
 
 
-pet(0, 3376);	-- Chip
+
 pet(0, 3377);	-- Gwosh
 pet(0, 3378);	-- Magic Nibbler
 pet(0, 3379);	-- Crimson Proto-Whelp

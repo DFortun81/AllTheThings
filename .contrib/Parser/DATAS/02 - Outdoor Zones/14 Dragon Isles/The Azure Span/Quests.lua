@@ -330,7 +330,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 70.0, 35.3, THE_AZURE_SPAN },
 					["g"] = {
 						i(198025),	-- Bramble Chain Belt
+						i(198026),	-- Sleet Shined Waistguard
 						i(198017),	-- Twisted Leather Belt
+						i(197996),	-- Windswept Sash
 					},
 				}),
 				q(65944, {	-- Lava Burst
@@ -883,7 +885,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						["provider"] = { "n", 186157 },	-- Ruriq
 						["coord"] = { 45.0, 54.0, THE_AZURE_SPAN },
 						["g"] = {
+							i(199828),	-- Tuskarr Feet Buckets
+							i(199826),	-- Tuskarr Puddle Steppers
 							i(199829),	-- Tuskarr Wading Boots
+							i(199827),	-- Tuskarr Water Kickers
 							i(197607),	-- Windborne Velocidrake: Split Horns
 							crit(8, {	-- Kauriq Gleamlet
 								["achievementID"] = 16428,	-- Sojourner of Azure Span

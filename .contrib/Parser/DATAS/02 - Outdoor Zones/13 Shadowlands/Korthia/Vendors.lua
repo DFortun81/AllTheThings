@@ -134,6 +134,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 								190584,	-- Memory of Unity (DK)
 								190587,	-- Memory of Unity (DH)
 								190588,	-- Memory of Unity (DRUID)
+								199552,	-- Memory of Unity (EVOKER)
 								190589,	-- Memory of Unity (HUNTER)
 								190590,	-- Memory of Unity (MAGE)
 								190591,	-- Memory of Unity (MONK)
