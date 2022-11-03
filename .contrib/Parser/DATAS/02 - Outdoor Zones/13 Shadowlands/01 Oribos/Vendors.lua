@@ -17,9 +17,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["collectible"] = false,
 						["timeline"] = { "added 9.1.0" }
 					}),
-					i(188152, {	-- Gateway Control Shard
-						["timeline"] = { "added 9.1.5" }
-					}),
 				},
 			}),
 			n(176064, {	-- Adjutant Mikaros <Ascended Quartermaster>

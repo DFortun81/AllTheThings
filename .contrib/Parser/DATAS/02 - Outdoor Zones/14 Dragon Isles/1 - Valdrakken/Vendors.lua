@@ -6,12 +6,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 	m(VALDRAKKEN, {
 		n(VENDORS, {
 			-- TODO: COSTS
-			n(185569, {	-- Gohfyrr
-				["coord"] = { 36.0, 67.9, VALDRAKKEN },
-				["g"] = {
-					i(188152),	-- Gateway Control Shard
-				},
-			}),
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
 				["g"] = {
