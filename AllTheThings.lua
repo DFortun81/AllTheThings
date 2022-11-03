@@ -8251,14 +8251,23 @@ end
 app.LockedAsQuest = LockedAsQuest;
 
 local Search = app.SearchForObject;
+local BackTraceChecks = {};
 -- Traces backwards in the sequence for 'questID' via parent relationships within 'parents' to see if 'checkQuestID' is reached and returns true if so
 local function BackTraceForSelf(parents, questID, checkQuestID)
 	-- app.PrintDebug("Backtrace",questID)
+	wipe(BackTraceChecks);
 	local next = parents[questID];
-	while next do
+	while next and not BackTraceChecks[next] do
 		-- app.PrintDebug("->",next)
 		if next == checkQuestID then return true; end
+		BackTraceChecks[next] = 1;
 		next = parents[next];
+	end
+
+	-- looping quest sequence exists
+	if next and BackTraceChecks[next] then
+		app.report("Looping Quest Chain encountered!",next)
+		return true;
 	end
 end
 local function MapSourceQuestsRecursive(parentQuestID, questID, currentDepth, depths, parents, refs, inFilters)

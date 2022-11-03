@@ -342,7 +342,7 @@ _.Zones =
 				q(35339, {	-- A Parting Favor
 					["sourceQuests"] = {
 						35329,	-- I See Dead People (A)
-						35339,	-- I See Dead People (H)
+						35322,	-- I See Dead People (H)
 					},
 					["coord"] = { 38.9, 48.8, SPIRES_OF_ARAK },
 					["providers"] = {
@@ -640,25 +640,25 @@ _.Zones =
 					["coord"] = { 45.4, 36.6, SPIRES_OF_ARAK },
 					["provider"] = { "n", 80470 },	-- Kaliri Egg
 				}),
-				q(35276, {	-- Inspecting the Troops (Alliance)
+				q(35276, {	-- Inspecting the Troops (A)
 					["sourceQuests"] = { 35274 },	-- One of Our Own
 					["coord"] = { 45.9, 46.3, SPIRES_OF_ARAK },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 81891 },	-- Jasper Fel
 				}),
-				q(35275, {	-- Inspecting the Troops (Horde)
+				q(35275, {	-- Inspecting the Troops (H)
 					["sourceQuests"] = { 35272 },	-- One of Our Own
 					["coord"] = { 45.9, 46.3, SPIRES_OF_ARAK },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 81890 },	-- Shadow Hunter Ukambe
 				}),
-				q(35329, {	-- I See Dead People (Alliance)
+				q(35329, {	-- I See Dead People (A)
 					["sourceQuests"] = { 35293 },	-- Old Friends
 					["coord"] = { 39.1, 48.8, SPIRES_OF_ARAK },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 81960 },	-- Jasper Fel
 				}),
-				q(35322, {	-- I See Dead People (horde)
+				q(35322, {	-- I See Dead People (H)
 					["sourceQuests"] = { 35295 },	-- What's Theirs is Ours
 					["coord"] = { 39.1, 48.9, SPIRES_OF_ARAK },
 					["races"] = HORDE_ONLY,
