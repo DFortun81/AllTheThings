@@ -973,12 +973,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 })));
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
-		i(143638, {	-- Archdruid's Lunarwing Form (MOUNT!) 
 		-- While it can show as collected for some players, you never received an item. It does not count for any mount achievements.
-		}),
+		i(143638),	-- Archdruid's Lunarwing Form (MOUNT!)
 	}),
 }));
-									
+
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		q(42513),	-- Ashamane's Fall - landing and approaching RPing NPCs at the start of "The Shrine of Ashamane" (questID 42428)

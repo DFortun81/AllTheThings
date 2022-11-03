@@ -3296,6 +3296,7 @@ do a[key] = value; end
 -- didn't use the same localization for the instance. Sorry.
 local a = L.SAVED_TO_DJ_INSTANCES;
 for key,value in pairs({
+	["Огненные Недра"] = "Огненные недра";	-- Molten Core
 })
 do a[key] = value; end
 
