@@ -111,7 +111,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
-		cl(EVOKER, bubbleDown({ ["timeline"] = { "added 10.0.0" } }, {
+		cl(EVOKER, bubbleDown({ ["timeline"] = { ADDED_DFPRE } }, {
 			i(199454),	-- Bronze Acceleration
 			i(199457),	-- Circle of Life
 			i(199460),	-- Graceful Stride

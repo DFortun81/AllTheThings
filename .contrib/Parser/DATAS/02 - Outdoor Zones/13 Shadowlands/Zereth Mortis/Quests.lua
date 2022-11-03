@@ -732,7 +732,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190471),	-- Cinch of Unity
 					i(190466),	-- Clasp of Unity
 					i(190473),	-- Clasp of Unity
-					i(199551, {["timeline"] = { "added 10.0.0" }, }),	-- Clasp of Unity
+					i(199551, {["timeline"] = { ADDED_DFPRE }, }),	-- Clasp of Unity
 					i(190464),	-- Cord of Unity
 					i(190468),	-- Cord of Unity
 					i(190469),	-- Cord of Unity

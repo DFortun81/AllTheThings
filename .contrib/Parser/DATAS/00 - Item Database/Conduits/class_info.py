@@ -1,7 +1,8 @@
 import csv
+from pathlib import Path
 from typing import NamedTuple
 
-WORK_DIR = ".contrib/Parser/DATAS/00 - Item Database/Conduits/"
+WORK_DIR = Path(".contrib", "Parser", "DATAS", "00 - Item Database", "Conduits")
 
 
 class SpecXClass(NamedTuple):
@@ -21,7 +22,7 @@ class SetXClasses(NamedTuple):
 
 def build_set_x_classes() -> dict[int, SetXClasses]:
     specs: dict[int, SpecXClass] = {}
-    with open(WORK_DIR + "chrspecialization.csv", newline="") as csvfile:
+    with open(Path(WORK_DIR, "chrspecialization.csv"), newline="") as csvfile:
         csvreader = csv.reader(csvfile, delimiter=",")
         next(csvreader)
         for row in csvreader:
@@ -30,11 +31,11 @@ def build_set_x_classes() -> dict[int, SetXClasses]:
             specs[spec_id] = SpecXClass(spec_id, class_id)
 
     spec_sets: list[SpecXSet] = []
-    with open(WORK_DIR + "specsetmember.csv", newline="") as csvfile:
+    with open(Path(WORK_DIR, "specsetmember.csv"), newline="") as csvfile:
         csvreader = csv.reader(csvfile, delimiter=",")
         next(csvreader)
-        for _, spec_id, set_id in csvreader:
-            spec_sets.append(SpecXSet(int(spec_id), int(set_id)))
+        for _, spec_id_str, set_id_str in csvreader:
+            spec_sets.append(SpecXSet(int(spec_id_str), int(set_id_str)))
 
     spec_set_x_classes: dict[int, SetXClasses] = {}
     for spec_set_info in spec_sets:

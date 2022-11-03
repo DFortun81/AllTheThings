@@ -201,7 +201,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["repeatable"] = true,
 				["timeline"] = { "added 9.1.5" },
 			}),
-			q(72113, bubbleDownSelf({ ["timeline"] = { "added 10.0.0" } }, {	-- Shapes Beyond the Veil
+			q(72113, bubbleDownSelf({ ["timeline"] = { ADDED_DFPRE } }, {	-- Shapes Beyond the Veil
 				-- ["sourceQuests"] = {  },	-- Unknown
 				["provider"] = { "n", 174209 },	-- Lady Muunn
 				["coord"] = { 38.2, 24.4, THE_TRUNK },

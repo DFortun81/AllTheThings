@@ -1,4 +1,5 @@
 import csv
+from pathlib import Path
 from typing import NamedTuple
 
 from class_info import get_classes_by_set
@@ -11,16 +12,16 @@ class Conduit(NamedTuple):
     covenant_id: int = 0
 
 
-WORK_DIR = ".contrib/Parser/DATAS/00 - Item Database/Conduits/"
+WORK_DIR = Path(".contrib", "Parser", "DATAS", "00 - Item Database", "Conduits")
 
 conduits: dict[int, Conduit] = {}
-with open(WORK_DIR + "soulbindconduititem.csv", newline="") as csvfile:
+with open(Path(WORK_DIR, "soulbindconduititem.csv"), newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     next(csvreader)
     for _, item_id, conduit_id in csvreader:
         conduits[int(conduit_id)] = Conduit(int(conduit_id), int(item_id))
 
-with open(WORK_DIR + "soulbindconduit.csv", newline="") as csvfile:
+with open(Path(WORK_DIR, "soulbindconduit.csv"), newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     next(csvreader)
     for conduit_id, _, covenant_id, spec_set_id, _ in csvreader:
@@ -29,7 +30,7 @@ with open(WORK_DIR + "soulbindconduit.csv", newline="") as csvfile:
             spec_set_id=int(spec_set_id), covenant_id=int(covenant_id)
         )
 
-with open(WORK_DIR + "conduits_info.txt", "w") as f:
+with open(Path(WORK_DIR, "conduits_info.txt"), "w") as f:
     covenant_dict = {
         0: "",
         1: "SL_COV_KYR",
@@ -37,7 +38,7 @@ with open(WORK_DIR + "conduits_info.txt", "w") as f:
         3: "SL_COV_NFA",
         4: "SL_COV_NEC",
     }
-    for _, conduit in conduits.items():
+    for conduit in conduits.values():
         classes = get_classes_by_set(conduit.spec_set_id)
         classes_str = f"{{{classes[0]}"
         for class_id in classes[1:]:

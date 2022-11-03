@@ -31,7 +31,7 @@ Cunning,Cunning,Guileful creatures capable of skillfully mitigating lethal blows
 Tenacity,Tenacity,Stalwart and veteran defenders who unquestionably place their thick hides and protective exteriors in harm's way for their allies.,81,0,1,1,0,0,132121,0,0,0,0
 Balance,Balance,"Can shapeshift into a powerful Moonkin, balancing the power of Arcane and Nature magic to destroy enemies.
 
-Preferred Weapon: Staff, Dagger, Mace",102,11,0,0,2,331,136096,0,363,326085,0
+Preferred Weapon: Staff, Dagger, Mace",102,11,0,0,2,331,136096,0,363,393014,0
 Feral,Feral,"Takes on the form of a great cat to deal damage with bleeds and bites.
 
 Preferred Weapon: Staff, Polearm",103,11,1,0,2,260,132115,3,363,77493,0
@@ -50,7 +50,7 @@ Preferred Weapons: Dual Axes, Maces, Swords",251,6,1,0,2,4,135773,5,0,77514,0
 Unholy,Unholy,"A master of death and decay, spreading infection and controlling undead minions to do $Ghis:her; bidding.
 
 Preferred Weapon: Two-Handed Axe, Mace, Sword",252,6,2,0,2,68,135775,5,0,77515,0
-Beast Mastery,Beast Mastery,"A master of the wild who can tame a wide variety of beasts to assist $Ghim:her; in combat.
+Beast Mastery,Beast Mastery,"A master of the wild who can tame a wide variety of beasts to assist them in combat.
 
 Preferred Weapon: Bow, Crossbow, Gun",253,3,0,0,2,66,461112,2,0,76657,0
 Marksmanship,Marksmanship,"A master sharpshooter who excels in bringing down enemies from afar.
@@ -125,3 +125,10 @@ Initial,Initial,,1453,4,4,0,2,68,236270,3,0,0,0
 Initial,Initial,,1454,9,4,0,2,67,136145,0,357,0,0
 Initial,Initial,,1455,6,4,0,2,68,135775,5,0,0,0
 Initial,Initial,,1456,12,4,0,2,68,1247264,3,364,0,0
+Initial,Initial,,1465,13,4,0,2,3,4574311,0,0,0,0
+Devastation,Devastation,"Releases innate power as chaotic Red flames or focused Blue magic to bathe the battlefield in destruction.
+
+Preferred Weapon: Staff, Sword, Dagger, Mace",1467,13,0,0,2,67,4511811,0,0,362980,0
+Preservation,Preservation,"Calls upon the Emerald Dream to rejuvenate life, and the Bronze sands of time to prevent harm.
+
+Preferred Weapon: Staff, Sword, Dagger, Mace",1468,13,1,0,1,3,4511812,0,0,363510,0
