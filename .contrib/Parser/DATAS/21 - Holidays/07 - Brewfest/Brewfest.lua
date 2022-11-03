@@ -199,40 +199,40 @@ root("Holidays", applyholiday(BREWFEST, {
 			}),
 			ach(1183, {	-- Brew of the Year
 				crit(3526, {	-- Aromatic Honey Brew
-					["cost"] = { { "i", 37490, 1 } },	-- Aromatic Honey Brew
+					["provider"] = { "i", 37490 },	-- Aromatic Honey Brew
 				}),
 				crit(3525, {	-- Autmunal Acorn Ale
-					["cost"] = { { "i", 37497, 1 } },	-- Autmunal Acorn Ale
+					["provider"] = { "i", 37497 },	-- Autmunal Acorn Ale
 				}),
 				crit(3524, {	-- Bartlett's Bitter Brew
-					["cost"] = { { "i", 37498, 1 } },	-- Bartlett's Bitter Brew
+					["provider"] = { "i", 37498 },	-- Bartlett's Bitter Brew
 				}),
 				crit(3523, {	-- Binary Brew
-					["cost"] = { { "i", 37496, 1 } },	-- Binary Brew
+					["provider"] = { "i", 37496 },	-- Binary Brew
 				}),
 				crit(3522, {	-- Blackrock Lager
-					["cost"] = { { "i", 37493, 1 } },	-- Blackrock Lager
+					["provider"] = { "i", 37493 },	-- Blackrock Lager
 				}),
 				crit(3521, {	-- Draenic Pale Ale
-					["cost"] = { { "i", 37495, 1 } },	-- Draenic Pale Ale
+					["provider"] = { "i", 37495 },	-- Draenic Pale Ale
 				}),
 				crit(3520, {	-- Izzard's Ever Flavor
-					["cost"] = { { "i", 37489, 1 } },	-- Izzard's Ever Flavor
+					["provider"] = { "i", 37489 },	-- Izzard's Ever Flavor
 				}),
 				crit(3519, {	-- Lord of Frost's Private Label
-					["cost"] = { { "i", 37499, 1 } },	-- Lord of Frost's Private Label
+					["provider"] = { "i", 37499 },	-- Lord of Frost's Private Label
 				}),
 				crit(3518, {	-- Metok's Bubble Bock
-					["cost"] = { { "i", 37491, 1 } },	-- Metok's Bubble Bock
+					["provider"] = { "i", 37491 },	-- Metok's Bubble Bock
 				}),
 				crit(3517, {	-- Springtime Stout
-					["cost"] = { { "i", 37492, 1 } },	-- Springtime Stout
+					["provider"] = { "i", 37492 },	-- Springtime Stout
 				}),
 				crit(3516, {	-- Stranglethorn Brew
-					["cost"] = { { "i", 37494, 1 } },	-- Stranglethorn Brew
+					["provider"] = { "i", 37494 },	-- Stranglethorn Brew
 				}),
 				crit(3515, {	-- Wild Winter Pilsner
-					["cost"] = { { "i", 37488, 1 } },	-- Wild Winter Pilsner
+					["provider"] = { "i", 37488 },	-- Wild Winter Pilsner
 				}),
 			}),
 			ach(293, {	-- Disturbing the Peace

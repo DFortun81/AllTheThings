@@ -3510,6 +3510,7 @@ local ResolveFunctions = {
 				elseif criteriaType == 36 or criteriaType == 42 then	-- Items
 					criteriaObject.providers = {{ "i", assetID }};
 				elseif criteriaType == 110	-- Casting spells on specific target
+					or criteriaType == 29 or criteriaType == 69	-- Buff Gained
 					or criteriaType == 43 then	-- Exploration
 					-- Ignored
 				else

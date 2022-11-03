@@ -69,8 +69,10 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 			}),
 			ach(3576, {	-- Now We're Cookin' (A)
 				["timeline"] = { "added 3.2.2.10505" },
+				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = ALLIANCE_PILGRIM_MAPS,
 				["races"] = ALLIANCE_ONLY,
+				--[[
 				["groups"] = {
 					crit(1),	-- Candied Sweet Potato
 					crit(2),	-- Cranberry Chutney
@@ -78,11 +80,14 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 					crit(4),	-- Slow-Roasted Turkey
 					crit(5),	-- Spice Bread Stuffing
 				},
+				]]--
 			}),
 			ach(3577, {	-- Now We're Cookin' (H)
 				["timeline"] = { "added 3.2.2.10505" },
+				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = HORDE_PILGRIM_MAPS,
 				["races"] = HORDE_ONLY,
+				--[[
 				["groups"] = {
 					crit(1),	-- Candied Sweet Potato
 					crit(2),	-- Cranberry Chutney
@@ -90,61 +95,84 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 					crit(4),	-- Slow-Roasted Turkey
 					crit(5),	-- Spice Bread Stuffing
 				},
+				]]--
 			}),
 			ach(3556, {	-- Pilgrim's Paunch (A)
 				["timeline"] = { "added 3.2.2.10505" },
+				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = ALLIANCE_PILGRIM_MAPS,
 				["races"] = ALLIANCE_ONLY,
+				--[[
 				["groups"] = {
 					crit(1),	-- Darnassus
 					crit(2),	-- The Exodar
 					crit(3),	-- Ironforge
 					crit(4),	-- Stormwind
 				},
+				]]--
 			}),
 			ach(3557, {	-- Pilgrim's Paunch (H)
 				["timeline"] = { "added 3.2.2.10505" },
+				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = HORDE_PILGRIM_MAPS,
 				["races"] = HORDE_ONLY,
+				--[[
 				["groups"] = {
 					crit(1),	-- Orgrimmar
 					crit(2),	-- Silvermoon City
 					crit(3),	-- Thunder Bluff
 					crit(4),	-- Undercity
 				},
+				]]--
 			}),
 			ach(3580, {	-- Pilgrim's Peril (A)
 				["timeline"] = { "added 3.2.2.10505" },
+				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = ALLIANCE_PILGRIM_MAPS,
 				["races"] = ALLIANCE_ONLY,
+				--[[
 				["groups"] = {
 					crit(1),	-- Orgrimmar
 					crit(2),	-- Silvermoon City
 					crit(3),	-- Thunder Bluff
 					crit(4),	-- Undercity
 				},
+				]]--
 			}),
 			ach(3581, {	-- Pilgrim's Peril (H)
 				["timeline"] = { "added 3.2.2.10505" },
+				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = HORDE_PILGRIM_MAPS,
 				["races"] = HORDE_ONLY,
+				--[[
 				["groups"] = {
 					crit(1),	-- Darnassus
 					crit(2),	-- The Exodar
 					crit(3),	-- Ironforge
 					crit(4),	-- Stormwind
 				},
+				]]--
 			}),
 			ach(3596, {	-- Pilgrim's Progress (A)
 				["timeline"] = { "added 3.2.2.10505" },
 				["maps"] = ALLIANCE_PILGRIM_MAPS,
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					crit(1),	-- Can't Get Enough Turkey
-					crit(2),	-- Don't Forget the Stuffing!
-					crit(3),	-- Easy As Pie
-					crit(4),	-- She Says Potato
-					crit(5),	-- We're Out of Cranberry Chutney Again?
+					crit(11201, {	-- Can't Get Enough Turkey
+						["_quests"] = { 14048 },	-- Can't Get Enough Turkey (A)
+					}),
+					crit(11200, {	-- Don't Forget the Stuffing!
+						["_quests"] = { 14051 },	-- Don't Forget the Stuffing! (A)
+					}),
+					crit(11202, {	-- Easy As Pie
+						["_quests"] = { 14054 },	-- Easy As Pie (A)
+					}),
+					crit(11198, {	-- She Says Potato
+						["_quests"] = { 14055 },	-- She Says Potato (A)
+					}),
+					crit(11199, {	-- We're Out of Cranberry Chutney Again?
+						["_quests"] = { 14053 },	-- We're Out of Cranberry Chutney Again? (A)
+					}),
 				},
 			}),
 			ach(3597, {	-- Pilgrim's Progress (H)
@@ -152,16 +180,28 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 				["maps"] = HORDE_PILGRIM_MAPS,
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					crit(1),	-- Can't Get Enough Turkey
-					crit(2),	-- Don't Forget the Stuffing!
-					crit(3),	-- Easy As Pie
-					crit(4),	-- She Says Potato
-					crit(5),	-- We're Out of Cranberry Chutney Again?
+					crit(11203, {	-- Can't Get Enough Turkey
+						["_quests"] = { 14061 },	-- Can't Get Enough Turkey (H)
+					}),
+					crit(11204, {	-- Don't Forget the Stuffing!
+						["_quests"] = { 14062 },	-- Don't Forget the Stuffing! (H)
+					}),
+					crit(11205, {	-- Easy As Pie
+						["_quests"] = { 14060 },	-- Easy As Pie (H)
+					}),
+					crit(11206, {	-- She Says Potato
+						["_quests"] = { 14058 },	-- She Says Potato (H)
+					}),
+					crit(11207, {	-- We're Out of Cranberry Chutney Again?
+						["_quests"] = { 14059 },	-- We're Out of Cranberry Chutney Again? (H)
+					}),
 				},
 			}),
 			ach(3558, {	-- Sharing is Caring
 				["timeline"] = { "added 3.2.2.10505" },
+				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = ALL_PILGIM_MAPS,
+				--[[
 				["groups"] = {
 					crit(1),	-- Candied Sweet Potatoes
 					crit(2),	-- Cranberry Chutney
@@ -169,6 +209,7 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 					crit(4),	-- Slow-Roasted Turkey
 					crit(5),	-- Spice Bread Stuffing
 				},
+				]]--
 			}),
 			ach(3582, {	-- Terokkar Turkey Time
 				["timeline"] = { "added 3.2.2.10505" },
