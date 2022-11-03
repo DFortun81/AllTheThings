@@ -301,7 +301,7 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 				["crs"] = {
 					6827,	-- Crab
 					-- #if AFTER 5.0.1.15544
-					61158,	-- Shore Crab
+					60761,	-- Shore Crab
 					-- #endif
 				},
 			}),
