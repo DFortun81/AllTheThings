@@ -1461,7 +1461,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["repeatable"] = true,
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182702, 1 } },	-- 1x Black Muck Dye
-									-- ["repeatable"] = true,
 									["g"] = {
 										crit(1, {	-- Black Muck Armor Dye
 											["achievementID"] = 14683,	-- Dredger Style

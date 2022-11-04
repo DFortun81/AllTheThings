@@ -1624,13 +1624,18 @@ local function GetStateIcon(data, iconOnly)
 	if data.collectible then
 		return iconOnly and GetCollectionIcon(data.collected) or GetCollectionText(data.collected);
 	elseif data.trackable then
-		return iconOnly and GetCompletionIcon(data.saved) or GetCompletionText(data.saved);
+		local saved = data.saved;
+		-- only show if the data is saved, or is not repeatable
+		if saved or not rawget(data, "repeatable") then
+			return iconOnly and GetCompletionIcon(saved) or GetCompletionText(saved);
+		end
 	end
 end
 local function GetProgressTextForRow(data)
 	local total = data.total;
 	local isCollectible = data.collectible;
 	local isContainer = total and (total > 1 or (total > 0 and not isCollectible));
+	local stateIcon = GetStateIcon(data, true);
 
 	if isContainer then
 
@@ -1653,10 +1658,8 @@ local function GetProgressTextForRow(data)
 
 		-- Progress Only
 		return GetProgressColorText(data.progress or 0, total);
-	elseif isCollectible then
-		return GetCollectionIcon(data.collected);
-	elseif data.trackable then
-		return GetCompletionIcon(data.saved);
+	elseif stateIcon then
+		return stateIcon;
 	elseif data.visible then
 		if data.count then
 			return (data.count .. "x");
@@ -8487,10 +8490,7 @@ local questFields = {
 	end,
 	["collectible"] = app.CollectibleAsQuest,
 	["collected"] = IsQuestFlaggedCompletedForObject,
-	["trackable"] = function(t)
-		-- raw repeatable quests can't really be tracked since they immediately unflag
-		return not rawget(t, "repeatable");
-	end,
+	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
 		return QuestConsideredSaved(t.questID);
 	end,
@@ -9195,11 +9195,7 @@ local fields = {
 			end
 		end
 	end,
-	["trackable"] = function(t)
-		-- don't show tracking for achievements if they have sub-groups and are within instances (still using achievements as headers under LFR...)
-		rawset(t, "trackable", not rawget(t, "g") or not GetRelativeValue(t, "instanceID"));
-		return rawget(t, "trackable");
-	end,
+	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
 		local id = t.achievementID;
 		if app.CurrentCharacter.Achievements[id] then return true; end
