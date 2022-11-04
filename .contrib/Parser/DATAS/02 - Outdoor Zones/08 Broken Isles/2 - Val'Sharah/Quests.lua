@@ -723,7 +723,8 @@ _.Zones =
 					["provider"] = { "n", 95117 },	-- Aldos Duskwing
 				}),
 				n(BONUS_OBJECTIVES, sharedData({
-					["lockCriteria"] = { 1, "lvl", 45 },
+					["isBreadcrumb"] = true,
+					["description"] = "This can be completed in party-sync if the second character is in Chromie time for Legion.",
 				},{
 					-- TODO: Check SQ, also probably can't do after a certain level
 					q(38716),	-- Black Rook Hold

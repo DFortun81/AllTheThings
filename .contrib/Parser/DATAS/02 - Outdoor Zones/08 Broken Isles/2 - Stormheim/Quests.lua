@@ -1037,7 +1037,8 @@ _.Zones =
 					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller
 				}),
 				n(BONUS_OBJECTIVES, sharedData({
-					["lockCriteria"] = { 1, "lvl", 45 },
+					["isBreadcrumb"] = true,
+					["description"] = "This can be completed in party-sync if the second character is in Chromie time for Legion.",
 				},{
 					-- TODO: Check SQ, also probably can't do after a certain level
 					q(38442, {	-- A Worthy Challenger
