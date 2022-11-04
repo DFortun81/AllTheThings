@@ -2306,6 +2306,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
 						{"select", "itemID", 67312},	-- Formula: Magic Lamp (RECIPE!)
+						{"exclude","itemID",6343},	-- Formula: Enchant Chest - Lesser Mana
 					},
 				}),
 				n(50433, {	-- Aristaleon Sunweaver <Cloth Trader>
@@ -2396,6 +2397,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
 						{"select", "itemID", 67312},	-- Formula: Magic Lamp (RECIPE!)
+						{"exclude","itemID",6343},	-- Formula: Enchant Chest - Lesser Mana
 					},
 				}),
 				n(50172, {	-- Threm Blackscalp <Hide & Leather Trader>

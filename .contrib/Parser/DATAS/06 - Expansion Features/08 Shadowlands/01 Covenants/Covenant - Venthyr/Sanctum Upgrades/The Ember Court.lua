@@ -2425,12 +2425,12 @@ root("HiddenQuestTriggers", {
 			q(61935),	-- Triggered after Restock: Imported Dinnerware
 			q(61936),	-- Triggered after Restock: Surveillance
 			q(61940),	-- Triggered after Restock: Fine Cutlery (Unflagged)
+			q(61932),	-- Triggered after Restock: Unconventional Weapons
 			--q(61825),	-- During Ember Court after finishin Glimpse of the Wilds Niya's minigame
 			q(59691),	-- "The Party Herald"
 			--q(61941),	-- Maybe Etiquette?
 			q(61926),	-- Maybe Revendreth Etiquette?
 			q(63353),	-- Triggered after turning in Red Noggin Candle as criteria for Rendle's Big Day
-			--q(61932),	-- Maybe Bastion Etiquette
 			q(61458),	-- After using [Visions of Sire Denathrius] in Ember Court
 			q(61414),	-- Faulty Fireworks (+Safe)
 

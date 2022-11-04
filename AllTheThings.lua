@@ -1468,6 +1468,7 @@ app.Colors = {
 	["TooltipLore"] = "ff42a7eb",
 	["DefaultDifficulty"] = "ff1eff00",
 	["RemovedWithPatch"] = "ffffaaaa",
+	["AddedWithPatch"] = "ffaaffaa",
 };
 Colorize = function(str, color)
 	return "|c" .. color .. str .. "|r";
@@ -4813,7 +4814,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			tinsert(info, 1, { left = GetRemovedWithPatchString(group.rwp), wrap = true, color = app.Colors.RemovedWithPatch });
 		end
 		if group.awp then
-			tinsert(info, 1, { left = GetAddedWithPatchString(group.awp), wrap = true, color = "FFAAFFAA" });
+			tinsert(info, 1, { left = GetAddedWithPatchString(group.awp), wrap = true, color = app.Colors.AddedWithPatch });
 		end
 		if group.u and (not group.crs or group.itemID or group.s) then
 			tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2], wrap = true });
@@ -16844,18 +16845,9 @@ RowOnEnter = function (self)
 				GameTooltip:AddLine(rwp, r / 255, g / 255, b / 255, 1);
 			end
 			if reference.awp then
-				local found = false;
-				local awp = GetAddedWithPatchString(reference.awp);
-				for i=1,GameTooltip:NumLines() do
-					if _G["GameTooltipTextLeft"..i]:GetText() == awp then
-						found = true;
-						break;
-					end
-				end
-				if not found then
-					local a,r,g,b = HexToARGB("FFAAFFAA");
-					GameTooltip:AddLine(awp, r / 255, g / 255, b / 255, 1);
-				end
+				local rwp = GetAddedWithPatchString(reference.awp);
+				local _,r,g,b = HexToARGB(app.Colors.AddedWithPatch);
+				GameTooltip:AddLine(rwp, r / 255, g / 255, b / 255, 1);
 			end
 			-- an item used for a faction which is repeatable
 			if reference.itemID and reference.factionID and reference.repeatable then

@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 root("PVP", pvp(tier(DF_TIER, {
-	n(CAMPAIGN, bubbleDownSelf({ ["timeline"] = "added 9.0.1" }, {
+	n(CAMPAIGN, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 		n(ACHIEVEMENTS, {
 			ach(15955),	-- Challenger I: Dragonflight Season 1
 			ach(15956),	-- Challenger II: Dragonflight Season 1

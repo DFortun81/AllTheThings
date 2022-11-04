@@ -5889,7 +5889,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(61897),	--
 				q(61917),	--
 				q(61920),	--
-				q(61932),	--
 				q(61941),	--
 				q(61964, { ["name"] = "Aubrie Weekly Jailers Tower Quest", }),	-- Aubrie Weekly Jailers Tower Quest
 				-- 9.0.1.35282
