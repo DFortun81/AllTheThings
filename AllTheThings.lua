@@ -3553,8 +3553,10 @@ local SubroutineCache = {
 		select(finalized, searchResults, o, "select", "tierID", tierID);	-- Select the Expansion header
 		pop(finalized, searchResults);	-- Discard the Expansion header and acquire the children.
 		where(finalized, searchResults, o, "where", "headerID", headerID1);	-- Select the Season header
-		pop(finalized, searchResults);	-- Discard the Season header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", headerID2);	-- Select the Set header
+		if headerID2 then
+			pop(finalized, searchResults);	-- Discard the Season header and acquire the children.
+			where(finalized, searchResults, o, "where", "headerID", headerID2);	-- Select the Set header
+		end
 	end,
 	["pvp_gear_faction_base"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2, headerID3)
 		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
