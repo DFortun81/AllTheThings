@@ -8198,7 +8198,7 @@ local function IsGroupLocked(t)
 			if critFunc then
 				if critFunc(lockCriteria[i]) then
 					criteriaRequired = criteriaRequired - 1;
-					if not nonQuestLock and critKey ~= "questID" then
+					if not nonQuestLock and critKey ~= "questID" and critKey ~= "lvl" then
 						nonQuestLock = true;
 					end
 				end
@@ -8210,11 +8210,12 @@ local function IsGroupLocked(t)
 				-- we can rawset this since there's no real way for a player to 'remove' this lock during a session
 				-- and this does not come into play during party sync
 				rawset(t, "locked", true);
-				-- if this was locked due to something other than a Quest specifically, indicate it cannot be done in Party Sync
+				-- if this was locked due to something other than a Quest/Level specifically, indicate it cannot be done in Party Sync
 				if nonQuestLock then
-					-- app.PrintDebug("Automatic DisablePartySync", app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
+					-- app.PrintDebug("Automatic DisablePartySync", app:Linkify(t.hash, app.Colors.ChatLink, "search:"..t.key..":"..t[t.key]))
 					rawset(t, "DisablePartySync", true);
 				end
+				-- app.PrintDebug("Locked", app:Linkify(t.hash, app.Colors.ChatLink, "search:"..t.key..":"..t[t.key]))
 				return true;
 			end
 			i = i + 1;
@@ -8244,6 +8245,7 @@ local function LockedAsQuest(t)
 					nq = app.SearchForObject("questID", questID);
 					if nq and (IsQuestFlaggedCompleted(nq.questID) or nq.altcollected or nq.locked) then
 						rawset(t, "locked", questID);
+						-- app.PrintDebug("Locked Quest", app:Linkify(t.hash, app.Colors.ChatLink, "search:"..t.key..":"..t[t.key]))
 						return questID;
 					end
 				end
