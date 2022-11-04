@@ -417,6 +417,10 @@ namespace ATT
                     return false;
             }
 
+            // If this container has an aqd or hqd, then process those objects as well.
+            if (data.TryGetValue("aqd", out Dictionary<string, object> qd)) Process(qd, modID, minLevel);
+            if (data.TryGetValue("hqd", out qd)) Process(qd, modID, minLevel);
+
             // If this container has groups, then process those groups as well.
             if (data.TryGetValue("g", out List<object> groups))
             {
