@@ -3978,7 +3978,7 @@ root("Zones", {
 							-- #endif
 							["timeline"] = { "added 5.2.0.16577" },
 						}),
-						applyclassicphase(WRATH_PHASE_FOUR, n(33926, {	-- Xazi Smolderpipe <Arena Vendor> // Original S8 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
+						applyclassicphase(WRATH_PHASE_FOUR, n(33937, {	-- Xazi Smolderpipe <Arena Vendor> // Original S8 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
 							["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE 4.0.3.13277
 							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
@@ -4035,7 +4035,7 @@ root("Zones", {
 							-- #endif
 							["timeline"] = { "added 4.0.3.13277", "removed 4.2.0.14333" },
 						})),
-						applyclassicphase(WRATH_PHASE_FOUR, n(33925, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S8 Vendor // Furious Gladiator: Season 8 Honor Gear
+						applyclassicphase(WRATH_PHASE_FOUR, n(33938, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S8 Vendor // Furious Gladiator: Season 8 Honor Gear
 							["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE 4.0.3.13277
 							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
