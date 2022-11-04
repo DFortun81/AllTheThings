@@ -8487,7 +8487,10 @@ local questFields = {
 	end,
 	["collectible"] = app.CollectibleAsQuest,
 	["collected"] = IsQuestFlaggedCompletedForObject,
-	["trackable"] = app.ReturnTrue,
+	["trackable"] = function(t)
+		-- raw repeatable quests can't really be tracked since they immediately unflag
+		return not rawget(t, "repeatable");
+	end,
 	["saved"] = function(t)
 		return QuestConsideredSaved(t.questID);
 	end,
@@ -11861,7 +11864,10 @@ local itemFields = {
 		return rawget(t, "modItemID");
 	end,
 	["indicatorIcon"] = app.GetQuestIndicator,
-	["trackableAsQuest"] = app.ReturnTrue,
+	["trackableAsQuest"] = function(t)
+		-- raw repeatable quests can't really be tracked since they immediately unflag
+		return not rawget(t, "repeatable");
+	end,
 	["collectibleAsAchievement"] = function(t)
 		return app.CollectibleAchievements;
 	end,
