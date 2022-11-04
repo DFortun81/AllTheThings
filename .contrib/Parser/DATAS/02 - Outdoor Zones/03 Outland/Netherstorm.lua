@@ -2104,29 +2104,11 @@ root("Zones", {
 							i(10393),	-- Undercity Cockroach (PET!)
 						},
 					}),
-					n(34094, {	-- Grex Brainboiler <Veteran Arena Vendor> Original WOTLK S8 ELITE VENDOR
-						-- #if BEFORE 4.0.3.13277
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_WRATHFUL, PVP_ELITE },{"merge"}},	-- Wrathful Gladiator's Elite Set
-						-- #endif
-						["timeline"] = { "added 3.3.2.11403", "removed 4.0.3.13277" },
-					}),
-					n(34091, {	-- Grex Brainboiler <Veteran Arena Vendor> Original WOTLK S7 ELITE VENDOR
-						-- #if BEFORE 4.0.3.13277
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_ELITE },{"merge"}},	-- Relentless Gladiator's Elite Set
-						-- #endif
-						["timeline"] = { "added 3.3.2.11403", "removed 4.0.3.13277" },
-					}),
-					n(34089, {	-- Grex Brainboiler <Veteran Arena Vendor> Original WOTLK S6 ELITE VENDOR
-						-- #if BEFORE 4.0.3
-						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_ELITE },{"merge"}},	-- Furious Gladiator's Elite Set
-						-- #endif
-						["timeline"] = { "added 3.1.1.9806", "removed 4.0.3" },
-					}),
-					-- #if NOT ANYCLASSIC
 					n(40209, {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
-						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
+						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
-						["groups"] = pvp({
+						["timeline"] = { "added 4.0.3.13277" },
+						["groups"] = bubbleDown({ ["timeline"] = { "added 4.3.0.15005" } }, pvp({
 							i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
 							i(77692),	-- Replica Field Marshal's Satin Mantle
 							i(77710),	-- Replica Field Marshal's Coronal
@@ -2176,11 +2158,21 @@ root("Zones", {
 							i(77848),	-- Replica Knight-Captain's Dreadweave Tunic
 							i(77777),	-- Replica Knight-Captain's Silk Legguards
 							i(77720),	-- Replica Knight-Lieutenant's Dragonhide Grips
-							i(120993),	-- Replica Knight-Lieutenant's Leather Clasp
-							i(120992),	-- Replica Knight-Lieutenant's Dragonhide Belt
-							i(120996),	-- Replica Knight-Lieutenant's Dreadweave Wrap
-							i(120995),	-- Replica Knight-Lieutenant's Satin Belt
-							i(120994),	-- Replica Knight-Lieutenant's Silk Cinch
+							i(120993, {	-- Replica Knight-Lieutenant's Leather Clasp
+								["timeline"] = { "added 6.1.0.19445" },
+							}),
+							i(120992, {	-- Replica Knight-Lieutenant's Dragonhide Belt
+								["timeline"] = { "added 6.1.0.19445" },
+							}),
+							i(120996, {	-- Replica Knight-Lieutenant's Dreadweave Wrap
+								["timeline"] = { "added 6.1.0.19445" },
+							}),
+							i(120995, {	-- Replica Knight-Lieutenant's Satin Belt
+								["timeline"] = { "added 6.1.0.19445" },
+							}),
+							i(120994, {	-- Replica Knight-Lieutenant's Silk Cinch
+								["timeline"] = { "added 6.1.0.19445" },
+							}),
 							i(77733),	-- Replica Knight-Lieutenant's Dreadweave Handwraps
 							i(77732),	-- Replica Knight-Lieutenant's Dreadweave Walkers
 							i(77731),	-- Replica Knight-Lieutenant's Leather Grips
@@ -2226,8 +2218,30 @@ root("Zones", {
 							i(77605),	-- Replica Sergeant Major's Dragonhide Armsplints
 							i(77640),	-- Replica Sergeant Major's Leather Armsplints
 							i(77787),	-- Replica Sergeant Major's Silk Cuffs
-						}),
+						})),
 					}),
+					applyclassicphase(WRATH_PHASE_FOUR, n(34094, {	-- Grex Brainboiler <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S8 ELITE VENDOR
+						["coord"] = { 33.1, 64.0, NETHERSTORM },
+						-- #if BEFORE 4.0.3.13277
+						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_WRATHFUL, PVP_ELITE },{"merge"}},	-- Wrathful Gladiator's Elite Set
+						-- #endif
+						["timeline"] = { "added 3.3.2.11403", "removed 4.0.3.13277" },
+					})),
+					applyclassicphase(WRATH_PHASE_THREE, n(34091, {	-- Grex Brainboiler <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S7 ELITE VENDOR
+						["coord"] = { 33.1, 64.0, NETHERSTORM },
+						-- #if BEFORE 4.0.3.13277
+						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_ELITE },{"merge"}},	-- Relentless Gladiator's Elite Set
+						-- #endif
+						["timeline"] = { "added 3.2.0.10314", "removed 4.0.3.13277" },
+					})),
+					applyclassicphase(WRATH_PHASE_TWO, n(34089, {	-- Grex Brainboiler <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S6 ELITE VENDOR
+						["coord"] = { 33.1, 64.0, NETHERSTORM },
+						-- #if BEFORE 4.0.3
+						["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_ELITE },{"merge"}},	-- Furious Gladiator's Elite Set
+						-- #endif
+						["timeline"] = { "added 3.1.1.9806", "removed 4.0.3" },
+					})),
+					-- #if NOT ANYCLASSIC
 					n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["itemID"] = 137642,	-- Mark of Honor
