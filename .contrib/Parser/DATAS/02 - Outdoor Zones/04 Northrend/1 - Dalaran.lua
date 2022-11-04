@@ -4310,10 +4310,12 @@ root("Zones", {
 						}),
 						n(29505, {	-- Imindril Spearsong <Blacksmithing Trainer>
 							["coord"] = { 45.6, 28.6, NORTHREND_DALARAN },
+							["requireSkill"] = 9787,	-- Weaponsmith
 							["groups"] = WRATH_WEAPONSMITHING,
 						}),
 						n(29506, {	-- Orland Schaeffer <Blacksmithing Trainer>
 							["coord"] = { 45.0, 28.0, NORTHREND_DALARAN },
+							["requireSkill"] = 9788,	-- Armorsmith
 							["groups"] = WRATH_ARMORSMITHING,
 						}),
 					}),
