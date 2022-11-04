@@ -3784,6 +3784,7 @@ root("Zones", {
 						}),
 					}),
 					prof(FISHING, {
+						i(45903),	-- Corroded Jewelry
 						i(43698),	-- Giant Sewer Rat
 					}),
 					n(QUESTS, {
@@ -3795,6 +3796,16 @@ root("Zones", {
 							["groups"] = {
 								recipe(53056),	-- Kungaloosh
 							},
+						}),
+						q(12853, {	-- Luxurious Getaway!
+							["qg"] = 30490,	-- Rin Duoctane
+							-- #if AFTER 7.3.5.25600
+							["sourceQuests"] = {
+								49554,	-- Hero's Call: Storm Peaks!
+								49536,	-- Warchief's Command: Storm Peaks!
+							},
+							-- #endif
+							["coord"] = { 31.2, 49.6, NORTHREND_THE_UNDERBELLY },
 						}),
 						q(13845, {	-- Sealed Vial of Poison
 							["providers"] = {
@@ -4296,6 +4307,11 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
+				n(FISHING, {
+					i(45328, {	-- Bloated Slippery Eel
+						i(45323),	-- Severed Arm
+					}),
+				}),
 				n(FLIGHT_PATHS, {
 					fp(310, {	-- Dalaran
 						["cr"] = 28674,	-- Aludane Whitecloud <Flight Master>
@@ -4310,7 +4326,7 @@ root("Zones", {
 						}),
 						n(29505, {	-- Imindril Spearsong <Blacksmithing Trainer>
 							["coord"] = { 45.6, 28.6, NORTHREND_DALARAN },
-							["requireSkill"] = 9787,	-- Weaponsmith
+							["requireSkill"] = 9788,	-- Weaponsmith
 							["groups"] = WRATH_WEAPONSMITHING,
 						}),
 						n(29506, {	-- Orland Schaeffer <Blacksmithing Trainer>
@@ -4327,84 +4343,6 @@ root("Zones", {
 					}),
 				}),
 				n(QUESTS, {
-					-- Cooking Dailies (todo: sort them)
-					q(13103, {	-- Cheese for Glowergold [A]
-						["qg"] = 28705,	-- Katherine Lee
-						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
-					}),
-					q(13101, {	-- Convention at the Legerdemain [A]
-						["qg"] = 28705,	-- Katherine Lee
-						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
-					}),
-					q(13100, {	-- Infused Mushroom Meatloaf [A]
-						["qg"] = 28705,	-- Katherine Lee
-						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
-					}),
-					q(13107, {	-- Mustard Dogs! [A]
-						["qg"] = 28705,	-- Katherine Lee
-						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
-					}),
-					q(13102, {	-- Sewer Stew [A]
-						["qg"] = 28705,	-- Katherine Lee
-						["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
-						["maps"] = { CRYSTALSONG_FOREST },
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
-					}),
-					q(32413, {	-- A Return to Krasarang
-						["qg"] = 68586,	-- Grand Magister Rommath
-						["sourceQuest"] = 32412,	-- One Last Grasp
-						["description"] = "To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",
-						["timeline"] = { "added 5.1.0.16155" },
-						["isBreadcrumb"] = true,
-						["races"] = HORDE_ONLY,
-					}),
-
-					q(13115, {	-- Cheese for Glowergold [H]
-						["qg"] = 29631,	-- Awilo Longomba
-						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-					}),
-					q(13113, {	-- Convention at the Legerdemain [H]
-						["qg"] = 29631,	-- Awilo Longomba
-						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-					}),
-					q(13112, {	-- Infused Mushroom Meatloaf [H]
-						["qg"] = 29631,	-- Awilo Longomba
-						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-					}),
-					q(13116, {	-- Mustard Dogs! [H]
-						["qg"] = 29631,	-- Awilo Longomba
-						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-					}),
-					q(13114, {	-- Sewer Stew [H]
-						["qg"] = 29631,	-- Awilo Longomba
-						["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
-						["maps"] = { CRYSTALSONG_FOREST },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-					}),
-					--[[
-					q(32406, {	-- A Tactical Assault
-						["timeline"] = { "added 5.1.0.16155" },
-						["races"] = HORDE_ONLY,
-					}),
-					]]--
 					q(29608, {	-- Allies in Dalaran
 						["qgs"] = {
 							23736,	-- Pricilla Winterwind
@@ -4419,21 +4357,27 @@ root("Zones", {
 						["isBreadcrumb"] = true,	-- Gold said this gets invalidated by something, but idk what.
 					}),
 					q(13986, {	-- An Injured Colleague
-						["qg"] = 35471,	-- Sorn Proudmane
+						["providers"] = {
+							{ "n", 35471 },	-- Sorn Proudmane
+							{ "i", 46775 },	-- Battered Tribal Shield
+						},
+						["coord"] = { 60.2, 26.6, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.3" },
+						["maps"] = { THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
+						["lvl"] = 71,
 					}),
-					q(24580, {	-- Anub'Rekhan Must Die!
+					applyclassicphase(WRATH_PHASE_FOUR, q(24580, {	-- Anub'Rekhan Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 						["maps"] = { NAXXRAMAS },
 						["isWeekly"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Anub'Rekhan slain
-								["qg"] = 15956,	-- Anub'Rekhan
+								["provider"] = { "n", 15956 },	-- Anub'Rekhan
 							}),
 						},
-					}),
+					})),
 					q(13833, {	-- Blood Is Thicker
 						["qg"] = 28742,	-- Marcia Chase
 						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
@@ -4456,8 +4400,32 @@ root("Zones", {
 							recipe(66659),	-- Transmute: Cardinal Ruby
 						},
 					})),
+					{	-- Cheese for Glowergold
+						["allianceQuestData"] = q(13103, {	-- Cheese for Glowergold [A]
+							["qg"] = 28705,	-- Katherine Lee
+							["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
+						}),
+						["hordeQuestData"] = q(13115, {	-- Cheese for Glowergold [H]
+							["qg"] = 29631,	-- Awilo Longomba
+							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
+						}),
+						["requireSkill"] = COOKING,
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Wine and Cheese Platter
+								["provider"] = { "i", 43136 },	-- Wine and Cheese Platter
+								["cost"] = {
+									{ "i", 43139, 1 },	-- Empty Cheese Serving Platter
+									{ "i", 43137, 1 },	-- Aged Dalaran Limburger
+									{ "i", 43138, 6 },	-- Half Full Dalaran Wine Glass
+								},
+							}),
+							i(44113),	-- Small Spice Bag
+							currency(81),	-- Epicurean's Award
+						},
+					},
 					q(13272, {	-- Cloth Scavenging (Neutral)
-						["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable.
+						["qg"] = 28699,	-- Charles Worth
 						["altQuests"] = {
 							13268,	-- Cloth Scavenging (A, Howling Fjord)
 							13269,	-- Cloth Scavenging (H, Howling Fjord)
@@ -4465,12 +4433,34 @@ root("Zones", {
 							13270,	-- Cloth Scavenging (H, Borean Tundra)
 						},
 						["coord"] = { 36.1, 33.5, NORTHREND_DALARAN },
-						["qg"] = 28699,	-- Charles Worth
 						["requireSkill"] = TAILORING,
+						["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable.
 						["groups"] = {
 							spell(59390),	-- Cloth Scavenging -- NOTE: there doesn't appear to be a recipe for this
 						},
 					}),
+					{	-- Convention at the Legerdemain
+						["allianceQuestData"] = q(13101, {	-- Convention at the Legerdemain [A]
+							["qg"] = 28705,	-- Katherine Lee
+							["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
+						}),
+						["hordeQuestData"] = q(13113, {	-- Convention at the Legerdemain [H]
+							["qg"] = 29631,	-- Awilo Longomba
+							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
+						}),
+						["requireSkill"] = COOKING,
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/4 Northern Stew
+								["provider"] = { "i", 34747 },	-- Northern Stew
+							}),
+							objective(2, {	-- 0/1 Jug of Wine
+								["provider"] = { "i", 43128 },	-- Jug of Wine
+							}),
+							i(44113),	-- Small Spice Bag
+							currency(81),	-- Epicurean's Award
+						},
+					},
 					q(13834, {	-- Dangerously Delicious
 						["qg"] = 28742,	-- Marcia Chase
 						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
@@ -4492,27 +4482,30 @@ root("Zones", {
 						["groups"] = {
 							objective(1, {	-- 0/1 Severed Arm
 								["provider"] = { "i", 45323 },	-- Severed Arm
-								["cost"] = { { "i", 45328, 1 } },	-- Bloated Slippery Eel
 							}),
 							i(46007),	-- Bag of Fishing Treasures
 						},
 					}),
 					q(13041, {	-- Finish the Shipment
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 						["qg"] = 28701,	-- Timothy Jones
+						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 						["requireSkill"] = JEWELCRAFTING,
+						["lvl"] = lvlsquish(65, 65, 10),
 						["groups"] = {
+							objective(1, {	-- 0/1 Chalcedony
+								["provider"] = { "i", 36923 },	-- Chalcedony
+							}),
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
-					applyclassicphase(WRATH_PHASE_TWO, q(24585, {	-- Flame Leviathan Must Die!
+					applyclassicphase(WRATH_PHASE_FOUR, q(24585, {	-- Flame Leviathan Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 						["maps"] = { ULDUAR },
 						["isWeekly"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Flame Leviathan slain
-								["qg"] = 33113,	-- Flame Leviathan
+								["provider"] = { "n", 33113 },	-- Flame Leviathan
 							}),
 						},
 					})),
@@ -4528,41 +4521,57 @@ root("Zones", {
 						["timeline"] = { "added 4.3.0.14732" },
 						["races"] = HORDE_ONLY,
 					}),
-					--[[
-					q(32405, {	-- Hand of the Silver Covenant
-						["races"] = HORDE_ONLY,
-					}),
-					--]]
-					applyclassicphase(WRATH_PHASE_TWO, q(24587, {	-- Ignis the Furnace Master Must Die!
+					applyclassicphase(WRATH_PHASE_FOUR, q(24587, {	-- Ignis the Furnace Master Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 						["maps"] = { ULDUAR },
 						["isWeekly"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Ignis the Furnace Master slain
-								["qg"] = 33118,	-- Ignis the Furnace Master
+								["provider"] = { "n", 33118 },	-- Ignis the Furnace Master
 							}),
 						},
 					})),
-					q(24582, {	-- Instructor Razuvious Must Die!
+					{	-- Infused Mushroom Meatloaf
+						["allianceQuestData"] = q(13100, {	-- Infused Mushroom Meatloaf [A]
+							["qg"] = 28705,	-- Katherine Lee
+							["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
+						}),
+						["hordeQuestData"] = q(13112, {	-- Infused Mushroom Meatloaf [H]
+							["qg"] = 29631,	-- Awilo Longomba
+							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
+						}),
+						["maps"] = { NORTHREND_THE_UNDERBELLY },
+						["requireSkill"] = COOKING,
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Infused Mushroom Meatloaf
+								["provider"] = { "i", 43099 },	-- Infused Mushroom Meatloaf
+								["cost"] = {
+									{ "i", 43101, 1 },	-- Meatloaf Pan
+									{ "i", 43100, 4 },	-- Infused Mushroom
+									{ "i", 43013, 2 },	-- Chilled Meat
+								},
+							}),
+							i(44113),	-- Small Spice Bag
+							currency(81),	-- Epicurean's Award
+						},
+					},
+					applyclassicphase(WRATH_PHASE_FOUR, q(24582, {	-- Instructor Razuvious Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 						["maps"] = { NAXXRAMAS },
 						["isWeekly"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Instructor Razuvious slain
-								["qg"] = 16061,	-- Instructor Razuvious
+								["provider"] = { "n", 16061 },	-- Instructor Razuvious
 							}),
 						},
-					}),
-					--[[
-					q(32403, {	-- It Starts in the Sewers
-						["races"] = HORDE_ONLY,
-					}),
-					]]--
+					})),
 					q(13832, {	-- Jewel Of The Sewers
 						["qg"] = 28742,	-- Marcia Chase
 						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
+						["maps"] = { NORTHREND_THE_UNDERBELLY },
 						["requireSkill"] = FISHING,
 						["isDaily"] = true,
 						["groups"] = {
@@ -4572,11 +4581,6 @@ root("Zones", {
 							i(46007),	-- Bag of Fishing Treasures
 						},
 					}),
-					--[[
-					q(32410, {	-- Krasus' Landing
-						["races"] = HORDE_ONLY,
-					}),
-					--]]
 					q(12790, {	-- Learning to Leave and Return: the Magical Way
 						["qg"] = 29156,	-- Archmage Celindra
 						["sourceQuests"] = {
@@ -4588,14 +4592,14 @@ root("Zones", {
 						["coord"] = { 56.3, 46.7, NORTHREND_DALARAN },
 						["maps"] = { CRYSTALSONG_FOREST },
 					}),
-					applyclassicphase(WRATH_PHASE_THREE, q(24589, {	-- Lord Jaraxxus Must Die!
+					applyclassicphase(WRATH_PHASE_FOUR, q(24589, {	-- Lord Jaraxxus Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 						["maps"] = { TRIAL_OF_THE_CRUSADER },
 						["isWeekly"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Lord Jaraxxus slain
-								["qg"] = 34780,	-- Lord Jaraxxus
+								["provider"] = { "n", 34780 },	-- Lord Jaraxxus
 							}),
 						},
 					})),
@@ -4606,77 +4610,114 @@ root("Zones", {
 						["isWeekly"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Lord Marrowgar slain
-								["qg"] = 36612,	-- Lord Marrowgar
+								["provider"] = { "n", 36612 },	-- Lord Marrowgar
 							}),
 						},
 					})),
-					q(12853, {	-- Luxurious Getaway!
-						["qg"] = 30490,	-- Rin Duoctane
-						["coord"] = { 31.2, 49.6, NORTHREND_THE_UNDERBELLY },
-						["sourceQuests"] = {
-							49554,	-- Hero's Call: Storm Peaks!
-							49536,	-- Warchief's Command: Storm Peaks!
-						},
-					}),
 					q(29073, {	-- Make Haste to Orgrimmar!
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = HORDE_ONLY,
 						["provider"] = { "o", 208317 },	-- Warchief's Command Board
+						["timeline"] = { "added 4.0.6.13596", "removed 6.2.0" },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(29071, {	-- Make Haste to Stormwind!
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "o", 208316 },	-- Hero's Call Board
+						["timeline"] = { "added 4.0.6.13596", "removed 6.2.0" },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
-					q(24584, {	-- Malygos Must Die!
+					applyclassicphase(WRATH_PHASE_FOUR, q(24584, {	-- Malygos Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 						["maps"] = { THE_EYE_OF_ETERNITY },
 						["isWeekly"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Malygos slain
-								["qg"] = 28859,	-- Malygos
+								["provider"] = { "n", 28859 },	-- Malygos
 							}),
 						},
+					})),
+					{	-- Mustard Dogs!
+						["allianceQuestData"] = q(13107, {	-- Mustard Dogs! [A]
+							["qg"] = 28705,	-- Katherine Lee
+							["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
+						}),
+						["hordeQuestData"] = q(13116, {	-- Mustard Dogs! [H]
+							["qg"] = 29631,	-- Awilo Longomba
+							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
+						}),
+						["requireSkill"] = COOKING,
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Mustard Dog Basket
+								["provider"] = { "i", 43144 },	-- Mustard Dog Basket
+								["cost"] = {
+									{ "i", 43142, 1 },	-- Empty Picnic Basket
+									{ "i", 34752, 4 },	-- Rhino Dogs
+									{ "i", 43143, 4 },	-- Wild Mustard
+								},
+							}),
+							i(44113),	-- Small Spice Bag
+							currency(81),	-- Epicurean's Award
+						},
+					},
+					q(13148, {	-- Necklace Repair
+						["providers"] = {
+							{ "i", 43297 },	-- Damaged Necklace
+							{ "n", 28701 },	-- Timothy Jones
+						},
+						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
+						["requireSkill"] = JEWELCRAFTING,
+						["repeatable"] = true,
+						["lvl"] = lvlsquish(77, 77, 10),
+						["groups"] = {
+							objective(1, {	-- 0/1 Beautiful Chalcedony Necklace
+								["provider"] = { "i", 43298 },	-- Beautiful Chalcedony Necklace
+								["cost"] = {
+									{ "i", 43299, 1 },	-- Damaged Necklace
+									{ "i", 36923, 1 },	-- Chalcedony
+								},
+							}),
+							currency(61),	-- Dalaran Jewelcrafter's Token
+						},
 					}),
-					q(24581, {	-- Noth the Plaguebringer Must Die!
+					applyclassicphase(WRATH_PHASE_FOUR, q(24581, {	-- Noth the Plaguebringer Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 						["maps"] = { NAXXRAMAS },
 						["isWeekly"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Noth the Plaguebringer slain
-								["qg"] = 15954,	-- Noth the Plaguebringer
+								["provider"] = { "n", 15954 },	-- Noth the Plaguebringer
 							}),
 						},
-					}),
-					--[[
-					q(32412, {	-- One Last Grasp
-						["races"] = HORDE_ONLY,
-					}),
-					]]--
-					q(24583, {	-- Patchwerk Must Die!
+					})),
+					applyclassicphase(WRATH_PHASE_FOUR, q(24583, {	-- Patchwerk Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 						["maps"] = { NAXXRAMAS },
 						["isWeekly"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Patchwerk slain
-								["qg"] = 16028,	-- Patchwerk
+								["provider"] = { "n", 16028 },	-- Patchwerk
 							}),
 						},
-					}),
-					q(13418, {	-- Preparations for War
+					})),
+					q(13418, {	-- Preparations for War [A]
+						["qg"] = 31081,	-- Officer Van Rossem
+						-- #if AFTER 7.3.5.25632
+						["sourceQuest"] = 49555,	-- Hero's Call: Icecrown!
+						-- #endif
 						["coord"] = { 67.7, 47.2, NORTHREND_DALARAN },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 31081,	-- Officer Van Rossem
-						["sourceQuests"] = { 49555 }	-- Hero's Call: Icecrown!
 					}),
-					q(13419, {	-- Preparations for War
+					q(13419, {	-- Preparations for War [H]
+						["qg"] = 31085,	-- Sky-Reaver Klum
+						-- #if AFTER 7.3.5.25632
+						["sourceQuest"] = 49537,	-- Warchief's Command: Icecrown!
+						-- #endif
 						["coord"] = { 69.4, 40.7, NORTHREND_DALARAN },
 						["races"] = HORDE_ONLY,
-						["qg"] = 31085,	-- Sky-Reaver Klum
-						["sourceQuests"] = { 49537 }	-- Warchief's Command: Icecrown!
 					}),
 					q(13254, {	-- Proof of Demise: Anub'arak
 						["qg"] = 20735,	-- Archmage Lan'dalock
@@ -4834,79 +4875,164 @@ root("Zones", {
 							}),
 						},
 					}),
-					applyclassicphase(WRATH_PHASE_TWO, q(24586, {	-- Razorscale Must Die!
+					applyclassicphase(WRATH_PHASE_FOUR, q(24586, {	-- Razorscale Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 						["maps"] = { ULDUAR },
 						["isWeekly"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Razorscale slain
-								["qg"] = 33186,	-- Razorscale
+								["provider"] = { "n", 33186 },	-- Razorscale
 							}),
 						},
 					})),
-					q(24579, {	-- Sartharion Must Die!
+					applyclassicphase(WRATH_PHASE_FOUR, q(24579, {	-- Sartharion Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 						["maps"] = { THE_OBSIDIAN_SANCTUM },
 						["isWeekly"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Sartharion slain
-								["qg"] = 28860,	-- Sartharion
+								["provider"] = { "n", 28860 },	-- Sartharion
 							}),
 						},
-					}),
+					})),
+					{	-- Sewer Stew
+						["allianceQuestData"] = q(13102, {	-- Sewer Stew [A]
+							["qg"] = 28705,	-- Katherine Lee
+							["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
+						}),
+						["hordeQuestData"] = q(13114, {	-- Sewer Stew [H]
+							["qg"] = 29631,	-- Awilo Longomba
+							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
+						}),
+						["maps"] = { NORTHREND_THE_UNDERBELLY, CRYSTALSONG_FOREST },
+						["requireSkill"] = COOKING,
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Vegetable Stew
+								["provider"] = { "i", 43149 },	-- Vegetable Stew
+								["cost"] = {
+									{ "i", 43147, 1 },	-- Stew Cookpot
+									{ "i", 43148, 4 },	-- Crystalsong Carrot
+									{ "i", 43013, 4 },	-- Chilled Meat
+								},
+							}),
+							i(44113),	-- Small Spice Bag
+							currency(81),	-- Epicurean's Award
+						},
+					},
 					q(12958, {	-- Shipment: Blood Jade Amulet
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
+						["maps"] = { ICECROWN, THE_STORM_PEAKS, HOWLING_FJORD },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
+						["lvl"] = lvlsquish(65, 65, 10),
 						["groups"] = {
+							objective(1, {	-- 0/1 Blood Jade Amulet
+								["provider"] = { "i", 43269 },	-- Blood Jade Amulet
+								["cost"] = {
+									{ "i", 41989, 1 },	-- Vrykul Amulet
+									{ "i", 36932, 1 },	-- Dark Jade
+									{ "i", 36917, 1 },	-- Bloodstone
+								},
+							}),
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
 					q(12962, {	-- Shipment: Bright Armor Relic
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
+						["maps"] = { DRAGONBLIGHT, THE_STORM_PEAKS },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
+						["lvl"] = lvlsquish(65, 65, 10),
 						["groups"] = {
+							objective(1, {	-- 0/1 Bright Armor Relic
+								["provider"] = { "i", 43275 },	-- Bright Armor Relic
+								["cost"] = {
+									{ "i", 42107, 1 },	-- Elemental Armor Scrap
+									{ "i", 36929, 1 },	-- Huge Citrine
+									{ "i", 36917, 1 },	-- Bloodstone
+								},
+							}),
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
 					q(12959, {	-- Shipment: Glowing Ivory Figurine
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
+						["maps"] = { DRAGONBLIGHT, SHOLAZAR_BASIN, THE_STORM_PEAKS },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
+						["lvl"] = lvlsquish(65, 65, 10),
 						["groups"] = {
+							objective(1, {	-- 0/1 Glowing Ivory Figurine
+								["provider"] = { "i", 43270 },	-- Glowing Ivory Figurine
+								["cost"] = {
+									{ "i", 42104, 1 },	-- Northern Ivory
+									{ "i", 36923, 1 },	-- Chalcedony
+									{ "i", 36926, 1 },	-- Shadow Crystal
+								},
+							}),
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
 					q(12961, {	-- Shipment: Intricate Bone Figurine
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
+						["maps"] = { THE_STORM_PEAKS, SHOLAZAR_BASIN, HOWLING_FJORD },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
+						["lvl"] = lvlsquish(65, 65, 10),
 						["groups"] = {
+							objective(1, {	-- 0/1 Intricate Bone Figurine
+								["provider"] = { "i", 43274 },	-- Intricate Bone Figurine
+								["cost"] = {
+									{ "i", 42106, 1 },	-- Proto Dragon Bone
+									{ "i", 36920, 1 },	-- Sun Crystal
+									{ "i", 36932, 1 },	-- Dark Jade
+								},
+							}),
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
 					q(12963, {	-- Shipment: Shifting Sun Curio
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
+						["maps"] = { ICECROWN, CRYSTALSONG_FOREST },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
+						["lvl"] = lvlsquish(65, 65, 10),
 						["groups"] = {
+							objective(1, {	-- 0/1 Shifting Sun Curio
+								["provider"] = { "i", 43276 },	-- Shifting Sun Curio
+								["cost"] = {
+									{ "i", 42108, 1 },	-- Scourge Curio
+									{ "i", 36920, 1 },	-- Sun Crystal
+									{ "i", 36926, 1 },	-- Shadow Crystal
+								},
+							}),
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
 					q(12960, {	-- Shipment: Wicked Sun Brooch
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
+						["maps"] = { THE_STORM_PEAKS, HOWLING_FJORD, GRIZZLY_HILLS },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
+						["lvl"] = lvlsquish(65, 65, 10),
 						["groups"] = {
+							objective(1, {	-- 0/1 Wicked Sun Brooch
+								["provider"] = { "i", 43272 },	-- Wicked Sun Brooch
+								["cost"] = {
+									{ "i", 42105, 1 },	-- Wicked Sun Brooch
+									{ "i", 36929, 1 },	-- Huge Citrine
+									{ "i", 36920, 1 },	-- Sun Crystal
+								},
+							}),
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
@@ -4967,25 +5093,10 @@ root("Zones", {
 						["isBreadcrumb"] = true,
 					}),
 					q(39210, {	-- The Magical Kingdom of Dalaran
-						["u"] = REMOVED_FROM_GAME, -- this version doesn't appear to exist anymore
+						["timeline"] = { "added 6.2.0.19934", "removed 7.0.1" },	-- TODO: Find out the patch this was removed, if at all.
 						["maps"] = { CRYSTALSONG_FOREST },
 						["isBreadcrumb"] = true,
 					}),
-					--[[
-					q(32409, {	-- The Kirin Tor's True Colors
-						["races"] = HORDE_ONLY,
-					}),
-					q(32411, {	-- The Remaining Sunreavers
-						["races"] = HORDE_ONLY,
-					}),
-					q(32408, {	-- The Silver Covenant's Stronghold
-						["races"] = HORDE_ONLY,
-					}),
-					q(32402, {	-- The Situation In Dalaran
-						["races"] = HORDE_ONLY,
-					}),
-					]]--
-					-- TODO: https://www.wowhead.com/wotlk/npc=31439/archmage-timear
 					q(13240, {	-- Timear Foresees Centrifuge Constructs in your Future!
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
@@ -5099,19 +5210,15 @@ root("Zones", {
 						},
 					}),
 					q(14103, {	-- Titanium Powder
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 						["qg"] = 28701,	-- Timothy Jones
-						["repeatable"] = true,
+						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
+						["cost"] = {{ "i", 46849, 10 }},	-- Titanium Powder
 						["requireSkill"] = JEWELCRAFTING,
+						["repeatable"] = true,
 						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
-					--[[
-					q(32404, {	-- Violence in the Arena
-						["races"] = HORDE_ONLY,
-					}),
-					]]--
 					q(24431, {	-- Waterlogged Recipe
 						["provider"] = { "i", 49667 },	-- Waterlogged Recipe
 						["requireSkill"] = COOKING,
@@ -5121,26 +5228,28 @@ root("Zones", {
 						},
 					}),
 					q(12521, {	-- Where in the World is Hemet Nesingwary?
-						["coord"] = { 68.5, 42.0, NORTHREND_DALARAN },
 						["qg"] = 28160,	-- Achmage Pentarus
+						-- #if AFTER 7.3.5.25600
 						["sourceQuests"] = {
 							49553,	-- Hero's Call: Sholazar Basin!
 							49535,	-- Warchief's Command: Sholazar Basin!
 						},
+						-- #endif
+						["coord"] = { 68.5, 42.0, NORTHREND_DALARAN },
 					}),
 					q(14160, {	-- Writ of Merit
-						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "i", 47246 },	-- Writ of Merit
+						["timeline"] = { "added 3.2.0.10192", "removed 3.2.1" },	-- This was a one-time ever quest sent out to JCs during 3.2.0 when they changed Dragon's Eyes.
 						["requireSkill"] = JEWELCRAFTING,
 					}),
-					applyclassicphase(WRATH_PHASE_TWO, q(24588, {	-- XT-002 Deconstructor Must Die!
+					applyclassicphase(WRATH_PHASE_FOUR, q(24588, {	-- XT-002 Deconstructor Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
 						["maps"] = { ULDUAR },
 						["isWeekly"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 XT-002 Deconstructor slain
-								["qg"] = 33293,	-- XT-002 Deconstructor
+								["provider"] = { "n", 33293 },	-- XT-002 Deconstructor
 							}),
 						},
 					})),
@@ -5161,17 +5270,30 @@ root("Zones", {
 						},
 						["requireSkill"] = FISHING,
 						["groups"] = {
+							applyclassicphase(WRATH_PHASE_TWO, i(45862)),	-- Bold Stormjewel
+							applyclassicphase(WRATH_PHASE_TWO, i(45879)),	-- Delicate Stormjewel
+							applyclassicphase(WRATH_PHASE_TWO, i(45987)),	-- Rigid Stormjewel
+							applyclassicphase(WRATH_PHASE_TWO, i(45883)),	-- Runed Stormjewel
+							applyclassicphase(WRATH_PHASE_TWO, i(45880)),	-- Solid Stormjewel
+							i(45998),	-- Battered Jungle Hat
 							i(45991, {	-- Bone Fishing Pole
 								["timeline"] = { "added 3.1.0.9658" },
 							}),
+							i(6522),	-- Deviate Fish
+							i(45861),	-- Diamond-tipped Cane
+							i(46006),	-- Glow Worm
+							i(19971),	-- High Test Eternium Fishing Line
 							i(45992, {	-- Jeweled Fishing Pole
 								["timeline"] = { "added 3.1.0.9658" },
 							}),
+							i(36783),	-- Northsea Pearl
+							i(40195),	-- Pygmy Oil
 							i(46004, {	-- Sealed Vial of Poison
 								-- #if ANYCLASSIC
 								["description"] = "Provides a nice source of XP. You can buy and sell this on the AH!",
 								-- #endif
 							}),
+							i(36784),	-- Siren's Tear
 							i(44983),	-- Strand Crawler Pet
 							i(45984),	-- Unusual Compass (TOY!)
 							i(49667),	-- Waterlogged Recipe
@@ -5189,7 +5311,31 @@ root("Zones", {
 							}),
 						},
 					}),
-					-- TODO: Add Epicurean's Award and a Small Spice Bag?
+					i(44113, {	-- Small Spice Bag
+						["description"] = "Cooking Daily Quest Reward",
+						["sourceQuests"] = {
+							13103,	-- Cheese for Glowergold [A]
+							13115,	-- Cheese for Glowergold [H]
+							13113,	-- Convention at the Legerdemain [A]
+							13101,	-- Convention at the Legerdemain [H]
+							13100,	-- Infused Mushroom Meatloaf [A]
+							13112,	-- Infused Mushroom Meatloaf [H]
+							13107,	-- Mustard Dogs! [A]
+							13116,	-- Mustard Dogs! [H]
+							13102,	-- Sewer Stew [A]
+							13114,	-- Sewer Stew [H]
+						},
+						["requireSkill"] = COOKING,
+						["groups"] = {
+							currency(81),	-- Epicurean's Award
+							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(33925),	-- Recipe: Delicious Chocolate Cake
+							i(33871),	-- Recipe: Stormchops
+							i(43007),	-- Northern Spices
+							i(44228),	-- Baby Spice
+							i(44114),	-- Old Spices
+						},
+					}),
 				}),
 				n(VENDORS, {
 					-- #if BEFORE 8.0.1
@@ -5671,7 +5817,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(46349, {	-- Chef's Hat
-								["timeline"] = { "removed 7.0.3.22248" },
+								["timeline"] = { "deleted 7.0.3.22248" },
 								["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
 							}),
 							i(134020, {	-- Chef's Hat (TOY!)
@@ -6424,7 +6570,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(46349, {	-- Chef's Hat
-								["timeline"] = { "removed 7.0.3.22248" },
+								["timeline"] = { "deleted 7.0.3.22248" },
 								["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
 							}),
 							i(134020, {	-- Chef's Hat (TOY!)

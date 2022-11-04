@@ -117,6 +117,15 @@ _.Zones =
 								["coord"] = { 68.9, 45.8, 392 },
 								["races"] = HORDE_ONLY,
 							}),
+							q(32413, {	-- A Return to Krasarang
+								["qg"] = 68586,	-- Grand Magister Rommath
+								["sourceQuest"] = 32412,	-- One Last Grasp
+								["description"] = "To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",
+								["timeline"] = { "added 5.1.0.16155" },
+								["maps"] = { 501, 502 },	-- Dalaran (Scenario)
+								["isBreadcrumb"] = true,
+								["races"] = HORDE_ONLY,
+							}),
 							q(32406, {	-- A Tactical Assault
 								["sourceQuests"] = { 32405 },	-- Hand of the Silver Covenant
 								["provider"] = { "n", 68586 },	-- Grand Magister Rommath

@@ -984,16 +984,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 				32447,	-- Zul'Drak Sentinel
 			},
 		}),
-		i(43297, {	-- Damaged Necklace (Quest Version)
-			["repeatable"] = true,
-			["questID"] = 13148,
-			["groups"] = {
-				currency(61),	-- Dalaran Jewelcrafter's Token
-				i(43299, {	-- Damaged Necklace (Damage Version)
-					i(43298),	-- Beautiful Chalcedony Necklace
-				}),
-			},
-		}),
+		i(43297),	-- Damaged Necklace
 		i(36812, {	-- Ground Gear
 			["description"] = "Drops from mechs in Northrend for level 10-12 characters. Can also drop from Mimiron in Ulduar.",
 		}),

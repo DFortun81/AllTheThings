@@ -418,6 +418,11 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(JEWELCRAFTING, {
+		category(168, {	-- Materials
+			i(46849, {	-- Titanium Powder
+				["cost"] = {{ "i", 36910, 5 }},	-- Titanium Ore
+			}),
+		}),
 		filter(NECK_F, {
 			i(42339),	-- Blood Sun Necklace
 			i(43245),	-- Crystal Chalcedony Amulet
