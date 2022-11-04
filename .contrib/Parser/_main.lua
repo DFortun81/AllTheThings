@@ -2147,7 +2147,7 @@ tier = function(id, patch, t)							-- Create a TIER Object
 	end
 	t = struct("tierID", id, t);
 	if not t.timeline then
-		t.timeline = { "added " .. math.floor(id) .. ".0.1" };
+		t.timeline = { "added " .. math.floor(id) .. ".0" };
 	end
 	return t;
 end
