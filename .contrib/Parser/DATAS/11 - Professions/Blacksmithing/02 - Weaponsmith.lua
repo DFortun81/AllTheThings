@@ -446,6 +446,15 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 10007,
 						["requireSkill"] = 9787,
 					},
+					-- #endif
+					-- #if BEFORE CATA
+					applyclassicphase(WRATH_PHASE_ONE, {
+						["name"] = "Saronite Mindcrusher",
+						["timeline"] = { "added 3.0.2" },
+						["recipeID"] = 55185,
+					}),
+					-- #endif
+					-- #if BEFORE TBC
 					{
 						["name"] = "The Shatterer",
 						["timeline"] = { "removed 4.0.1" },

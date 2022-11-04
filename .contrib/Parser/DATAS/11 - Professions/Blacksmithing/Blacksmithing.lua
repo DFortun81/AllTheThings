@@ -2520,10 +2520,12 @@ profession(BLACKSMITHING, {
 					["name"] = "Saronite Ambusher",
 					["recipeID"] = 55179,
 				},
+				-- #if AFTER CATA
 				{
 					["name"] = "Saronite Mindcrusher",
 					["recipeID"] = 55185,
 				},
+				-- #endif
 				{
 					["name"] = "Saronite Shiv",
 					["recipeID"] = 55181,
