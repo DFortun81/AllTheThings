@@ -286,12 +286,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 					i(169593, {	-- Large Storage Fragment
 						["description"] = "Dropped by mobs in Junkwatt Depot once '|cffffffffDiscs of Norgannon|r' has been completed the same day.\n\nThis appears to have a lower droprate than the other three discs.",
 					}),
-					i(169594, {	-- Rust Covered Disc
-						["description"] = "Contained in Recycling Requisitions (usually during 'Rainy' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
-					}),
-					i(169595, {	-- Scorched Data Disc
-						["description"] = "Contained in Recycling Requisitions (usually during 'Sunny' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
-					}),
 					i(169474),	-- Corrupted Data Disc
 				},
 			}),
@@ -417,10 +411,50 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				["provider"] = { "o", 326027 },	-- Recyclerizer DX-82
 				["cost"] = { { "i", 168946, 1 } },	-- Bundle of Recyclable Parts
 				["isDaily"] = true,
-				["sym"] = {{"select","itemID",
-					168264,	-- Recycling Requisition(Green)
-					168266,	-- Strange Recycling Requisiton(Epic)
-				}},
+				["g"] = {
+					i(168264, {	-- Recycling Requisition
+						["repeatable"] = true,
+						["questID"] = 55148,
+						["g"] = {
+							i(169167),	-- Blueprint: Orange Spraybot
+							i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
+							i(167795),	-- Paint Vial: Copper Trim
+							i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
+								["sym"] = {{"fill"}},	-- fill with sourced content
+							}),
+							i(169594, {	-- Rust Covered Disc
+								["description"] = "Contained in Recycling Requisitions (usually during 'Rainy' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
+								["sourceQuest"] = 56410,	-- Discs of Norgannon
+							}),
+							i(169595, {	-- Scorched Data Disc
+								["description"] = "Contained in Recycling Requisitions (usually during 'Sunny' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
+								["sourceQuest"] = 56410,	-- Discs of Norgannon
+							}),
+						},
+					}),
+					i(168266, {	-- Strange Recycling Requisiton
+						["questID"] = 56079,
+						["isDaily"] = true,
+						["g"] = {
+							i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
+								["sym"] = {{"fill"}},	-- fill with sourced content
+							}),
+							i(169175),	-- Blueprint: Annoy-o-Tron Gang
+							i(169167),	-- Blueprint: Orange Spraybot
+							i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
+							i(167795),	-- Paint Vial: Copper Trim
+							i(169689),	-- Vinyl: Mimiron's Brainstorm
+							i(169594, {	-- Rust Covered Disc
+								["description"] = "Contained in Recycling Requisitions (usually during 'Rainy' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
+								["sourceQuest"] = 56410,	-- Discs of Norgannon
+							}),
+							i(169595, {	-- Scorched Data Disc
+								["description"] = "Contained in Recycling Requisitions (usually during 'Sunny' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
+								["sourceQuest"] = 56410,	-- Discs of Norgannon
+							}),
+						},
+					}),
+				},
 			}),
 			q(56523, {	-- My Chickens are Not for Eating!
 				["provider"] = { "n", 155254 },	-- Oglethorpe Obnoticus

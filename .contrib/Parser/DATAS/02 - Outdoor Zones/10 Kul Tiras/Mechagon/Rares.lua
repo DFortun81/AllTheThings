@@ -344,32 +344,8 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, {
 							i(169879),	-- Melted Irradiated Undercoat (PET!)
 						},
 					}),
-					i(168264, {	-- Recycling Requisition
-						["repeatable"] = true,
-						["questID"] = 55148,
-						["g"] = {
-							i(169167),	-- Blueprint: Orange Spraybot
-							i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
-							i(167795),	-- Paint Vial: Copper Trim
-							i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
-								["sym"] = {{"fill"}},	-- fill with sourced content
-							}),
-						},
-					}),
-					i(168266, {	-- Strange Recycling Requisiton
-						["questID"] = 56079,	-- triggered when completing normal-mode rig and receiving this item on top of normal box
-						["isDaily"] = true,
-						["g"] = {
-							i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
-								["sym"] = {{"fill"}},	-- fill with sourced content
-							}),
-							i(169175),	-- Blueprint: Annoy-o-Tron Gang
-							i(169167),	-- Blueprint: Orange Spraybot
-							i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
-							i(167795),	-- Paint Vial: Copper Trim
-							i(169689),	-- Vinyl: Mimiron's Brainstorm
-						},
-					}),
+					i(168264, {["sym"]={{"fill"}}}),	-- Recycling Requisition (Green)
+					i(168266, {["sym"]={{"fill"}}}),	-- Recycling Requisition (Epic)
 				},
 			}),
 			n(150575, {	-- Rumblerocks
