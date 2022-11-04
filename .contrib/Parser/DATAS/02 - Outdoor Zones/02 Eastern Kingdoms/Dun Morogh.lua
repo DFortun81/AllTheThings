@@ -191,12 +191,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 						q(24493, {	-- Don't Forget About Us
 							["qg"] = 37087,	-- Jona Ironstock
+							["altQuests"] = { 24492 },	-- Pack Your Bags
 							["sourceQuest"] = 24491,	-- Follow that Gyro-Copter!
 							["description"] = "Only available during |cFFFFD700Pack Your Bags|r.",
 							["coord"] = { 61.0, 19.7, COLDRIDGE_VALLEY },
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
-							["isBreadcrumb"] = true,
 						}),
 						q(24477, {	-- Dwarven Artifacts
 							["qg"] = 1104,	-- Grundel Harkin
