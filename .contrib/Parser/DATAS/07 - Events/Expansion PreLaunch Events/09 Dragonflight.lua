@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 10.0.0.46455" } }, {	-- Expansion Prelaunch Events
+root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 10.0.0.46480" } }, {	-- Expansion Prelaunch Events
 	tier(DF_TIER, {
 		i(199211),	-- Primeval Essence
 		i(199686),	-- Unstable Elemental Confluence
