@@ -396,10 +396,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL 
 })));
 
 
+--TODO: should we organize this section differently with the HQTs? There's going to be a million of them...
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
 		q(71705),	-- When I craft item 193388 first time, leatherworking. But may due to / First time/ getting artisans mettle?
 		q(71753),	-- Crafted i(193615)
 		q(71704),	-- First time crafting item 193386 (Resilient Leather Boots)
+		q(72569),	-- First craft 193388 (Pioneer's Leather Wristguards)
+		q(71703),	-- First craft Pioneer's Leather Tunic
+		q(71767),	-- First craft Durable Pack
+		q(72495),	-- First craft Pioneer's Practiced Belt
+		q(72496),	-- First craft Pioneer's Practiced Gloves
+		q(71683),	-- First craft Alchemist's Hat
+		q(72497),	-- Pioneer's Practiced Leggings
+		q(71773),	-- First craft Tuskarr Bean Bag
+		q(71764),	-- First craft Earthshine Scales
+		q(71713),	-- First craft Life-Bound Bindings
 	}),
 }));
