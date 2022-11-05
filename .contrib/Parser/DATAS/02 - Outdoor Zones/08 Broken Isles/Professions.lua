@@ -732,6 +732,11 @@ _.Zones =
 					q(39958,  {	-- Skin Deep
 						["provider"] = { "n", 93523 },	-- Namha Moonwater
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+						["_drop"] = { "g" }, -- Bad API data
+						["cost"] = {
+							{"i",124113,20},	-- 20x Stonehide Leather
+							{"i",124115,5},	-- 5x Stormscale
+						},
 						["g"] = {
 							recipe(264590),	-- Legion Leatherworking
 						},

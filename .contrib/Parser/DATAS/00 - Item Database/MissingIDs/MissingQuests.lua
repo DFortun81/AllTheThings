@@ -1671,7 +1671,6 @@ q(42755),	-- Eye of Azshara: Azsunian Pearls
 q(42759),	--
 q(42760),	--
 q(42761),	--
-q(42778),	-- Scarlet Crusader
 q(42793),	--
 q(42794),	--
 q(42804),	-- Invasion: Azshara

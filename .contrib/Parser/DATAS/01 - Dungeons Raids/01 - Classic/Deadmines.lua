@@ -785,8 +785,15 @@ root("Instances", tier(CLASSIC_TIER, {
 -- #if AFTER 6.0.1
 root("HiddenQuestTriggers", {
 	tier(WOD_TIER, {
-		q(35586),	-- Deadmines Reward Quest - Normal completion
-		q(35587),	-- Deadmines Reward Quest - Heroic completion
+		inst(63, {	-- Deadmines
+			q(35586),	-- Deadmines Reward Quest - Normal completion
+			q(35587),	-- Deadmines Reward Quest - Heroic completion
+		}),
+	}),
+	tier(LEGION_TIER, {
+		inst(63, {	-- Deadmines
+			q(42778),	-- [Scarlet Crusader] When completing 44930/using Ensemble: Blackened Defias Armor
+		}),
 	}),
 });
 -- #endif

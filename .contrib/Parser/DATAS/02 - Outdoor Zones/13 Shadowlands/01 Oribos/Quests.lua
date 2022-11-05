@@ -245,7 +245,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			q(57878, {	-- Choosing Your Purpose
 				["sourceQuests"] = { 57877 },	-- The Looming Dark
-				["altQuests"] = { 62704 },	-- The Threads of Fate (can't do this version on a Skip character)
+				["altQuests"] = {
+					62704,	-- The Threads of Fate (can't do this version on a Skip character)
+					62000,	-- Choosing Your Purpose
+				},
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 39.2, 69.7, ORIBOS },
 			}),
@@ -712,6 +715,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			q(62000, {	-- Choosing Your Purpose
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
 				["sourceQuests"] = { 62716 },	-- Re-Introductionse
+				["altQuests"] = {
+					57878,	-- Choosing Your Purpose
+				},
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["timeline"] = { "added 9.0.2", REMOVED_DFREL },
