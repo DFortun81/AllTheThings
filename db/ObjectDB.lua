@@ -77,6 +77,7 @@ _.ObjectNames = {
 	[19023] = "|cFFFFFFFFStep 7:|r Page 2351",
 	[19024] = "Hidden Shrine",
 	[19030] = "Mound of Dirt",
+	[19877] = "Velinde's Locker",
 	[20805] = "Rizzle's Unguarded Plans",
 	[20985] = "Loose Dirt",
 	[20992] = "Black Shield",

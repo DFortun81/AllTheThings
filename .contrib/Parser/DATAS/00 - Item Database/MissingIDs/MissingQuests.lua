@@ -30,7 +30,6 @@ q(548),	-- [DEPRECATED] <NYI> <TXT> Bloodstone Pendant,		TBC: <NYI> <TXT> Bloods
 q(612),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(636),	-- Legends of the Earth <NYI>,		TBC: Legends of the Earth <NYI>,		CLASSIC: Legends of the Earth <NYI>
 q(729),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
-q(730),	-- Trouble In Darkshore?,		TBC: Trouble In Darkshore?,		CLASSIC: Trouble In Darkshore?
 q(731),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
 q(759),	-- Wildmane Totem,		TBC: Wildmane Totem,		CLASSIC: Wildmane Totem
 q(760),	-- Wildmane Cleansing,		TBC: Wildmane Cleansing,		CLASSIC: Wildmane Cleansing
@@ -55,14 +54,12 @@ q(928),	-- Teldrassil: Passing Awareness,		TBC: Crown of the Earth,		CLASSIC: Cr
 q(934),	-- Crown of the Earth,		TBC: Crown of the Earth,		CLASSIC: Crown of the Earth
 q(939),	-- [DEPRECATED]Flute of Xavaric,		TBC: Flute of Xavaric,		CLASSIC: Flute of Xavaric
 q(940),	-- Teldrassil,		TBC: Teldrassil,		CLASSIC: Teldrassil
-q(942),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
 q(944),	-- The Master's Glaive,		TBC: The Master's Glaive,		CLASSIC: The Master's Glaive
 q(945),	-- Therylune's Escape,		TBC: Therylune's Escape,		CLASSIC: Therylune's Escape
 q(946),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(948),	-- Onu,		TBC: Onu,		CLASSIC: Onu
 q(949),	-- The Twilight Camp,		TBC: The Twilight Camp,		CLASSIC: The Twilight Camp
 q(950),	-- Return to Onu,		TBC: Return to Onu,		CLASSIC: Return to Onu
-q(952),	-- Grove of the Ancients,		TBC: Grove of the Ancients,		CLASSIC: Grove of the Ancients
 q(953),	-- The Fall of Ameth'Aran,		TBC: The Fall of Ameth'Aran,		CLASSIC: The Fall of Ameth'Aran
 q(954),	-- Bashal'Aran,		TBC: Bashal'Aran,		CLASSIC: Bashal'Aran
 q(955),	-- Bashal'Aran,		TBC: Bashal'Aran,		CLASSIC: Bashal'Aran
@@ -224,9 +221,7 @@ q(2078),	-- Gyromast's Revenge,		TBC: Gyromast's Revenge,		CLASSIC: Gyromast's R
 q(2098),	-- Gyromast's Retrieval,		TBC: Gyromast's Retrieval,		CLASSIC: Gyromast's Retrieval
 q(2118),	-- Plagued Lands,		TBC: Plagued Lands,		CLASSIC: Plagued Lands
 q(2138),	-- Cleansing of the Infected,		TBC: Cleansing of the Infected,		CLASSIC: Cleansing of the Infected
-q(2242),	-- Destiny Calls,		TBC: Destiny Calls,		CLASSIC: Destiny Calls
 q(2259),	-- Erion Shadewhisper,		TBC: Erion Shadewhisper,		CLASSIC: Erion Shadewhisper
-q(2260),	-- Erion's Behest,		TBC: Erion's Behest,		CLASSIC: Erion's Behest
 q(2358),	-- Horns of Nez'ra,		CLASSIC: Horns of Nez'ra
 q(2378),	-- Find the Shattered Hand,		TBC: Find the Shattered Hand,		CLASSIC: Find the Shattered Hand
 q(2379),	-- Zando'zan,		TBC: Zando'zan,		CLASSIC: Zando'zan
@@ -237,8 +232,6 @@ q(2460),	-- The Shattered Salute,		TBC: The Shattered Salute,		CLASSIC: The Shat
 q(2478),	-- Mission: Possible But Not Probable,		TBC: Mission: Possible But Not Probable,		CLASSIC: Mission: Possible But Not Probable
 q(2479),	-- Hinott's Assistance,		TBC: Hinott's Assistance,		CLASSIC: Hinott's Assistance
 q(2498),	-- Return to Denalan,		TBC: Return to Denalan,		CLASSIC: Return to Denalan
-q(2519),	-- The Temple of the Moon,		TBC: The Temple of the Moon,		CLASSIC: The Temple of the Moon
-q(2520),	-- Sathrah's Sacrifice,		TBC: Sathrah's Sacrifice,		CLASSIC: Sathrah's Sacrifice
 q(2769),	-- The Brassbolts Brothers,		TBC: The Brassbolts Brothers,		CLASSIC: The Brassbolts Brothers
 q(2821),	-- The Mark of Quality,		TBC: The Mark of Quality,		CLASSIC: The Mark of Quality
 q(2844),	-- The Giant Guardian,		TBC: The Giant Guardian,		CLASSIC: The Giant Guardian
@@ -305,14 +298,8 @@ q(3624),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(3631),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
 q(3661),	-- Favored of Elune?,		TBC: Favored of Elune?,		CLASSIC: Favored of Elune?
 q(3681),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
-q(3763),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm,		CLASSIC: Assisting Arch Druid Staghelm
-q(3764),	-- Un'Goro Soil,		TBC: Un'Goro Soil,		CLASSIC: Un'Goro Soil
-q(3781),	-- Morrowgrain Research,		TBC: Morrowgrain Research,		CLASSIC: Morrowgrain Research
-q(3785),	-- Morrowgrain Research,		TBC: Morrowgrain Research,		CLASSIC: Morrowgrain Research
 q(3787),	-- Jonespyre's Request,		TBC: Jonespyre's Request,		CLASSIC: Jonespyre's Request
 q(3788),	-- Jonespyre's Request,		TBC: Jonespyre's Request,		CLASSIC: Jonespyre's Request
-q(3789),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm,		CLASSIC: Assisting Arch Druid Staghelm
-q(3790),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm,		CLASSIC: Assisting Arch Druid Staghelm
 q(3885),	-- <NYI> <TXT> The Gadgetzan Run,		TBC: <NYI> <TXT> The Gadgetzan Run,		CLASSIC: <NYI> <TXT> The Gadgetzan Run
 q(3910),	-- <NYI> <TXT> The Un'Goro Run,		CLASSIC: <NYI> <TXT> The Un'Goro Run
 q(4101),	-- [DEPRECATED]Cleansing Felwood,		TBC: Cleansing Felwood,		CLASSIC: Cleansing Felwood
@@ -392,13 +379,6 @@ q(5523),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(5530),	-- <NYI> <TXT> Necklace of the Dawn,		CLASSIC: <NYI> <TXT> Necklace of the Dawn
 q(5532),	-- <NYI> <TXT> Ring of the Dawn,		TBC: <NYI> <TXT> Ring of the Dawn,		CLASSIC: <NYI> <TXT> Ring of the Dawn
 q(5622),	-- In Favor of Elune,		TBC: In Favor of Elune,		CLASSIC: In Favor of Elune
-q(5627),	-- Stars of Elune,		TBC: Stars of Elune,		CLASSIC: Stars of Elune
-q(5628),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
-q(5629),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
-q(5630),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
-q(5631),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
-q(5632),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
-q(5633),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
 q(5641),	-- A Lack of Fear,		TBC: A Lack of Fear,		CLASSIC: A Lack of Fear
 q(5642),	-- Shadowguard,		TBC: Shadowguard,		CLASSIC: Shadowguard
 q(5643),	-- Shadowguard,		TBC: Shadowguard,		CLASSIC: Shadowguard
@@ -419,10 +399,6 @@ q(5668),	-- <NYI> A Blessing of Light,		CLASSIC: <NYI> A Blessing of Light
 q(5669),	-- <NYI> A Blessing of Light,		CLASSIC: <NYI> A Blessing of Light
 q(5670),	-- <NYI> A Blessing of Light,		CLASSIC: <NYI> A Blessing of Light
 q(5671),	-- <NYI> A Blessing of Light,		CLASSIC: <NYI> A Blessing of Light
-q(5672),	-- Elune's Grace,		TBC: Elune's Grace,		CLASSIC: Elune's Grace
-q(5673),	-- Elune's Grace,		TBC: Elune's Grace,		CLASSIC: Elune's Grace
-q(5674),	-- Elune's Grace,		TBC: Elune's Grace,		CLASSIC: Elune's Grace
-q(5675),	-- Elune's Grace,		TBC: Elune's Grace,		CLASSIC: Elune's Grace
 q(5680),	-- Shadowguard,		TBC: Shadowguard,		CLASSIC: Shadowguard
 q(5681),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5682),	-- <UNUSED>,		CLASSIC: <UNUSED>
@@ -543,8 +519,6 @@ q(7741),	-- Praise from the Emerald Circle <NYI> <TXT>,		CLASSIC: Praise from th
 q(7788),	-- Vanquish the Invaders!,		TBC: Vanquish the Invaders!,		CLASSIC: Vanquish the Invaders!
 q(7789),	-- Quell the Silverwing Usurpers,		TBC: Quell the Silverwing Usurpers,		CLASSIC: Quell the Silverwing Usurpers
 q(7790),	-- The Written Word,		TBC: REUSE,		CLASSIC: REUSE
-q(7799),	-- A Donation of Mageweave,		TBC: A Donation of Mageweave,		CLASSIC: A Donation of Mageweave
-q(7800),	-- A Donation of Runecloth,		TBC: A Donation of Runecloth,		CLASSIC: A Donation of Runecloth
 q(7869),	-- test quest - do not use,		CLASSIC: test quest - do not use
 q(7870),	-- test quest2 - do not use,		CLASSIC: test quest2 - do not use
 q(7871),	-- Vanquish the Invaders!,		TBC: Vanquish the Invaders!,		CLASSIC: Vanquish the Invaders!
@@ -683,8 +657,6 @@ q(10219),	-- Walk the Dog
 q(10244),	-- R.T.F.R.C.M.,		TBC: R.T.F.R.C.M.
 q(10260),	-- Netherologist Coppernickels,		TBC: Netherologist Coppernickels
 q(10292),	-- More Power!,		TBC: More Power!
-q(10352),	-- A Donation of Wool,		TBC: A Donation of Wool
-q(10354),	-- A Donation of Silk,		TBC: A Donation of Silk
 q(10364),	-- Caedmos,		TBC: Caedmos
 q(10376),	-- Symbol of Hope
 q(10377),	-- Nothing to Fear,		TBC: Nothing to Fear
@@ -696,7 +668,6 @@ q(10404),	-- Against the Legion,		TBC: Against the Legion
 q(10452),	-- DON'T USE [PH] Fel Orc 1,		TBC: DON'T USE [PH] Fel Orc 1
 q(10453),	-- DON'T USE [PH] Fel Orc bread,		TBC: DON'T USE [PH] Fel Orc bread
 q(10491),	-- Call of Air,		TBC: Call of Air
-q(10520),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm
 q(10529),	-- The Hunter's Path,		TBC: The Hunter's Path
 q(10530),	-- The Hunter's Path,		TBC: The Hunter's Path
 q(10532),	-- Cut Arathor Supply Lines,		TBC: Cut Arathor Supply Lines

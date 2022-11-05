@@ -13,7 +13,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				ach(4926, {	-- Bloodmyst Isle Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(1, {	-- The Triumvirate's First, Boros
 							["sourceQuest"] = 9700,	-- I Shoot Magic Into the Darkness
 						}),
