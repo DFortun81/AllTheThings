@@ -96,16 +96,6 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(153753),	-- Springrain Stone of Rage
 					}),
 				}),
-				--[[
-				cl(EVOKER, {
-					i(?, {	-- Adventurer's Footlocker
-						
-					}),
-					cl(EVOKER, DEVASTATION, {
-						
-					}),
-				}),
-				]]--
 				cl(HUNTER, {
 					i(187659, {	-- Adventurer's Footlocker
 						i(170638),	-- Trailseeker Shotgun
