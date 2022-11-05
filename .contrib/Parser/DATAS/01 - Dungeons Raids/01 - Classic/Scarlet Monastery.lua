@@ -484,7 +484,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							}),
 							q(1160, {	-- Test of Lore (5/6)
 								["qg"] = 4488,	-- Parqual Fintallas
-								["sourceQuest"] = 1159,	-- Test of Lore
+								["sourceQuest"] = 1159,	-- Test of Lore (4/6)
 								["coord"] = { 57.8, 65.4, UNDERCITY },
 								["timeline"] = { "removed 4.0.3" },
 								["races"] = HORDE_ONLY,

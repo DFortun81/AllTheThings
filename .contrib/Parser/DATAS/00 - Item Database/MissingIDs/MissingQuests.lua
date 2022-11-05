@@ -77,12 +77,6 @@ q(1001),	-- Buzzbox 411,		TBC: Buzzbox 411,		CLASSIC: Buzzbox 411
 q(1002),	-- Buzzbox 323,		TBC: Buzzbox 323,		CLASSIC: Buzzbox 323
 q(1003),	-- Buzzbox 525,		TBC: Buzzbox 525,		CLASSIC: Buzzbox 525
 q(1052),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
-q(1057),	-- Reclaiming the Charred Vale,		TBC: Reclaiming the Charred Vale,		CLASSIC: Reclaiming the Charred Vale
-q(1061),	-- The Spirits of Stonetalon,		TBC: The Spirits of Stonetalon,		CLASSIC: The Spirits of Stonetalon
-q(1077),	-- Special Delivery for Gaxim,		TBC: Special Delivery for Gaxim,		CLASSIC: Special Delivery for Gaxim
-q(1082),	-- Update for Sentinel Thenysil,		TBC: Update for Sentinel Thenysil,		CLASSIC: Update for Sentinel Thenysil
-q(1084),	-- Wounded Ancients,		TBC: Wounded Ancients,		CLASSIC: Wounded Ancients
-q(1091),	-- Kaela's Update,		TBC: Kaela's Update,		CLASSIC: Kaela's Update
 q(1100),	-- Lonebrow's Journal,		TBC: Lonebrow's Journal,		CLASSIC: Lonebrow's Journal
 q(1132),	-- Fiora Longears,		TBC: Fiora Longears,		CLASSIC: Fiora Longears
 q(1141),	-- The Family and the Fishing Pole,		TBC: The Family and the Fishing Pole,		CLASSIC: The Family and the Fishing Pole
@@ -153,7 +147,6 @@ q(1507),	-- Devourer of Souls,		TBC: Devourer of Souls,		CLASSIC: Devourer of So
 q(1508),	-- Blind Cazul,		TBC: Blind Cazul,		CLASSIC: Blind Cazul
 q(1509),	-- News of Dogran,		TBC: News of Dogran,		CLASSIC: News of Dogran
 q(1510),	-- News of Dogran,		TBC: News of Dogran,		CLASSIC: News of Dogran
-q(1511),	-- Ken'zigla's Draught,		TBC: Ken'zigla's Draught,		CLASSIC: Ken'zigla's Draught
 q(1512),	-- Love's Gift,		TBC: Love's Gift,		CLASSIC: Love's Gift
 q(1515),	-- Dogran's Captivity,		TBC: Dogran's Captivity,		CLASSIC: Dogran's Captivity
 q(1519),	-- Call of Earth,		TBC: Call of Earth,		CLASSIC: Call of Earth
@@ -446,7 +439,6 @@ q(6141),	-- Brother Anton,		TBC: Brother Anton,		CLASSIC: Brother Anton
 q(6165),	-- <NYI> <TXT> Archmage Timolain's Remains,		TBC: <NYI> <TXT> Archmage Timolain's Remains,		CLASSIC: <NYI> <TXT> Archmage Timolain's Remains
 q(6201),	-- <UNUSED> The Legacy of the Ashbringer,		TBC: <UNUSED> The Legacy of the Ashbringer,		CLASSIC: <UNUSED> The Legacy of the Ashbringer
 q(6202),	-- <UNUSED> Good and Evil,		CLASSIC: <UNUSED> Good and Evil
-q(6542),	-- Report to Kadrak,		TBC: Report to Kadrak,		CLASSIC: Report to Kadrak
 q(6603),	-- Trouble in Winterspring!,		TBC: Trouble in Winterspring!,		CLASSIC: Trouble in Winterspring!
 q(6604),	-- Enraged Wildkin,		TBC: Enraged Wildkin,		CLASSIC: Enraged Wildkin
 q(6605),	-- A Strange One,		TBC: A Strange One,		CLASSIC: A Strange One

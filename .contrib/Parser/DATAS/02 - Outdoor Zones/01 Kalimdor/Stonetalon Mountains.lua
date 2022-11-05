@@ -3,13 +3,25 @@
 ---------------------------------------------------
 root("Zones", m(KALIMDOR, {
 	m(STONETALON_MOUNTAINS, {
+		-- #if AFTER CATA
 		["lore"] = "Stonetalon Mountains was heavily changed in the Shattering. Formerly a sleepy zone facing threats from the goblin loggers, it's now a fast-paced zone tracing a ticking time bomb headed towards a night elf camp by Stonetalon Peak.",
-		["achievementID"] = 847,
+		-- #else
+		["lore"] = "The Stonetalon Mountains are craggy and forbidding. The air is usually hot, though violent rainstorms and severe winds cool the slopes and endanger travelers. The mountains are home to many fierce creatures, including hippogryphs, harpies, drakes, wyverns and kobolds. This region is inhospitable and extreme.",
+		-- #endif
+		-- #if AFTER WRATH
+		["icon"] = "Interface\\Icons\\achievement_zone_stonetalon_01",
+		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				explorationAch(847, {	-- Explore Stonetalon Mountains
+					-- #if BEFORE WRATH
+					["description"] = "Explore Stonetalon Mountains, revealing the covered areas of the world map.",
+					-- #endif
+				}),
 				ach(4936, {	-- Stonetalon Mountains Quests (A)
+					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(1, {	-- Clearing a Path
 							["sourceQuests"] = {
 								25642,	-- Don't Look Them in the Eyes
@@ -27,8 +39,9 @@ root("Zones", m(KALIMDOR, {
 					},
 				}),
 				ach(4980, {	-- Stonetalon Mountains Quests (H)
+					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(1, {	-- A Short-Lived Victory
 							["sourceQuest"] = 26010,	-- Ashes to Ashes
 						}),
@@ -79,1148 +92,1930 @@ root("Zones", m(KALIMDOR, {
 				}),
 			})),
 			-- #endif
+			-- #if ANYCLASSIC
+			n(EXPLORATION, explorationBatch({
+				["125:125:475:433"] = 2541,	-- Sishir Canyon
+				["125:86:663:582"] = 2539,	-- Malaka'jin
+				["145:107:572:561"] = 2540,	-- Boulderslide Ravine
+				["150:150:389:320"] = 460,	-- Sun Rock Retreat
+				["190:97:718:571"] = 2538,	-- Camp Aparaje
+				["200:215:390:145"] = 464,	-- Mirkfallon Lake
+				["225:120:668:515"] = 2537,	-- Grimtotem Post
+				["230:355:210:234"] = 465,	-- The Charred Vale
+				["270:205:247:0"] = 467,	-- Stonetalon Peak
+				["288:355:457:282"] = 1076,	-- Webwinder Path
+				["320:275:553:197"] = 461,	-- Windshear Crag
+				--[[
+				[463] = 3,                               -- Cragpool Lake
+				[466] = 6,                               -- Valley of the Bloodfuries
+				[468] = 8,                               -- The Talon Den
+				[469] = 9,                               -- Greatwood Vale
+				[636] = 10,                              -- Blackwolf River
+				[1277] = 12,                             -- The Talondeep Path
+				[2160] = 13,                             -- Windshear Mine
+				[3157] = 19,                             -- Boulderslide Cavern
+				]]--
+			})),
+			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(360, {	-- Cliffwalker Post, Stonetalon Mountains
+					["cr"] = 35141,	-- Orna Skywatcher <Flight Master>
 					["coord"] = { 45.0, 30.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(365, {	-- Farwatcher's Glen, Stonetalon Mountains
+					["cr"] = 35138,	-- Ceyora <Flight Master>
 					["coord"] = { 32.0, 61.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(362, {	-- Krom'gar Fortress, Stonetalon Mountains
+					["cr"] = 35140,	-- Kormal the Swift <Flight Master>
 					["coord"] = { 66.4, 62.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(363, {	-- Malaka'jin, Stonetalon Mountains
+					["cr"] = 35139,	-- Zillane <Flight Master>
 					["coord"] = { 70.6, 89.4, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(541, {	-- Mirkfallon Post, Stonetalon Mountains
+					["cr"] = 41240,	-- Fiora Moonsoar <Flight Master>
 					["coord"] = { 48.6, 51.6, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(364, {	-- Northwatch Expedition Base Camp, Stonetalon Mountains
+					["cr"] = 35136,	-- Kaluna Songflight <Flight Master>
 					["coord"] = { 70.8, 80.4, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(29, {	-- Sun Rock Retreat, Stonetalon Mountains
+					["cr"] = 4312,	-- Tharm <Wind Rider Master>
+					-- #if AFTER CATA
 					["coord"] = { 48.4, 62.0, STONETALON_MOUNTAINS },
+					-- #else
+					["coord"] = { 45.2, 59.8, STONETALON_MOUNTAINS },
+					-- #endif
+					["races"] = HORDE_ONLY,
 				}),
-				fp(33, {	-- Thal'darah Overlook, Stonetalon Mountains
+				fp(33, {	-- Thal'darah Overlook, Stonetalon Mountains [CATA+] / Stonetalon Peak, Stonetalon Mountains
+					["cr"] = 4407,	-- Teloren <Hippogryph Master>
+					-- #if AFTER CATA
 					["coord"] = { 40.0, 32.0, STONETALON_MOUNTAINS },
+					-- #else
+					["coord"] = { 36.4, 7.2, STONETALON_MOUNTAINS },
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(540, {	-- The Sludgewerks, Stonetalon Mountains
+					["cr"] = 41246,	-- Flok <Flight Master>
 					["coord"] = { 53.8, 40.0, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(361, {	-- Windshear Hold, Stonetalon Mountains
+					["cr"] = 35137,	-- Allana Swiftglide <Flight Master>
 					["coord"] = { 58.8, 54.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			n(QUESTS, bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } }, {
+			n(QUESTS, {
 				q(1071, {	-- A Gnome's Respite
-					["sourceQuest"] = 1085,	-- On Guard in Stonetalon
-					["provider"] = { "n", 4077 },	-- Gaxim Rustfizzle
+					["qg"] = 4077,	-- Gaxim Rustfizzle
+					["sourceQuest"] = 1085,	-- On Guard in Stonetalon (2/2)
+					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["groups"] = {
+						objective(1, {	-- 0/10 Venture Co. Logger slain
+							["provider"] = { "n", 3989 },	-- Venture Co. Logger
+						}),
+						objective(2, {	-- 0/10 Venture Co. Deforester slain
+							["provider"] = { "n", 3991 },	-- Venture Co. Deforester
+						}),
+					},
 				}),
 				q(25837, {	-- A Proper Peace Offerin'
-					["provider"] = { "n", 41278 },	-- "Cookie" McWeaksauce
-					["coord"] = { 70.9, 79.7, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41278,	-- "Cookie" McWeaksauce
 					["sourceQuest"] = 25834,	-- Death by Proxy
+					["coord"] = { 70.9, 79.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1075, {	-- A Scroll from Mauren
 					["qg"] = 4077,	-- Gaxim Rustfizzle
 					["sourceQuest"] = 1071,	-- A Gnome's Respite
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
 				}),
 				q(25821, {	-- A Special Kind of Job
-					["provider"] = { "n", 41277 },	-- Lieutenant Paulson
-					["coord"] = { 72.1, 75.9, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41277,	-- Lieutenant Paulson
 					["sourceQuests"] = {
 						25808,	-- Is This Thing On?
 						25809,	-- Leave No Man Behind
 						25811,	-- Shuttin Her Down
 					},
+					["coord"] = { 72.1, 75.9, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(25852, {	-- All's Clear
+					["qg"] = 41229,	-- Force Commander Valen
+					["sourceQuest"] = 25851,	-- Dances with Grimtotem
+					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(26073, {	-- All's Quiet on the Southern Front
+					["qg"] = 3995,	-- Witch Doctor Jin'Zil
+					["sourceQuests"] = {
+						26067,	-- Jin'Zil's Blessing
+						26068,	-- Kobold Fury!
+					},
+					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(26002, {	-- Alliance Attack Plans
+					["qg"] = 40901,	-- Blastgineer Fuzzwhistle
+					["sourceQuest"] = 26001,	-- The Missing Blastgineer
+					["coord"] = { 73.2, 56.6, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(1072, {	-- An Old Colleague
 					["qg"] = 4077,	-- Gaxim Rustfizzle
 					["sourceQuest"] = 1071,	-- A Gnome's Respite
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
-				}),
-				q(25852, {	-- All's Clear
-					["provider"] = { "n", 41229 },	-- Force Commander Valen
-					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25851,	-- Dances with Grimtotem
-				}),
-				q(26073, {	-- All's Quiet on the Southern Front
-					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
-					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						26067,	-- Jin'Zil's Blessing
-						26068,	-- Kobold Fury!
-					},
-				}),
-				q(26002, {	-- Alliance Attack Plans
-					["provider"] = { "n", 40901 },	-- Blastgineer Fuzzwhistle
-					["coord"] = { 73.2, 56.6, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 26001,	-- The Missing Blastgineer
 				}),
 				q(26047, {	-- And That's Why They Call Them Peons...
-					["provider"] = { "n", 41992 },	-- Blastgineer Igore
-					["coord"] = { 67.2, 64.5, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 41992,	-- Blastgineer Igore
 					["sourceQuest"] = 26044,	-- Where Are the Parts?
+					["coord"] = { 67.2, 64.5, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
-				q(6284, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Arachnophobia
+				q(6284, {	-- Arachnophobia
 					["provider"] = { "o", 177904 },	-- Wanted Poster: Besseleth
 					["coord"] = { 59.09, 75.76, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 15,
-					["g"] = {
-						i(16891),	-- Claystone Shortsword
-						i(16894),	-- Clear Crystal Rod
+					["groups"] = {
+						objective(1, {	-- 0/1 Besseleth's Fang
+							["provider"] = { "i", 16192 },	-- Besseleth's Fang
+							["coord"] = { 52.8, 72.6, STONETALON_MOUNTAINS },
+							["cr"] = 11921,	-- Besseleth
+						}),
+						i(16891, {	-- Claystone Shortsword
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(16894, {	-- Clear Crystal Rod
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
-				})),
+				}),
 				q(25766, {	-- Arcane Legacy
-					["provider"] = { "n", 40899 },	-- Arcanist Valdurian
-					["coord"] = { 58.6, 55.9, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 40899,	-- Arcanist Valdurian
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
+					["coord"] = { 58.6, 55.9, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25822, {	-- Armaments for War
-					["provider"] = { "n", 41229 },	-- Force Commander Valen
-					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41229,	-- Force Commander Valen
 					["sourceQuest"] = 25845,	-- Terms of Service
-					["g"] = {
-						i(57450),	-- Northwatch Amulet
-						i(57449),	-- Diplomat's Chestguard
-						i(57448),	-- Basecamp Leggings
-						i(131447, {["timeline"] = { "added 7.0.3.22248" }}),	-- Basecamp Breeches
+					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57450, {	-- Northwatch Amulet
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57449, {	-- Diplomat's Chestguard
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57448, {	-- Basecamp Leggings
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131447, {	-- Basecamp Breeches
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(25930, {	-- Ascending the Vale
-					["provider"] = { "n", 41487 },	-- Hierophant Malyk
-					["coord"] = { 33.1, 59.5, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41487,	-- Hierophant Malyk
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
+					["coord"] = { 33.1, 59.5, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26010, {	-- Ashes to Ashes
-					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
-					["coord"] = { 66.0, 63.7, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 41023,	-- Overlord Krom'gar
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
-					["g"] = {
-						i(57479),	-- Flamethrower's Gloves
-						i(57478),	-- Vest of Ashes
-						i(57477),	-- Overlord's Favor
-						i(131464, {["timeline"] = { "added 7.0.3.22248" }}),	-- Tunic of Ashes
+					["coord"] = { 66.0, 63.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(57479, {	-- Flamethrower's Gloves
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57478, {	-- Vest of Ashes
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57477, {	-- Overlord's Favor
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131464, {	-- Tunic of Ashes
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(6548, {	-- Avenge My Village
 					["qg"] = 11857,	-- Makaba Flathoof
-					--["coord"] = { 35.23, 27.79, THE_BARRENS },
+					["coord"] = { 35.23, 27.79, THE_BARRENS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 				}),
 				q(25914, {	-- Back to the Depths!
-					["provider"] = { "n", 41488 },	-- Sentinel Mistress Geleneth
-					["coord"] = { 39.6, 30.7, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41488,	-- Sentinel Mistress Geleneth
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
+					["coord"] = { 39.6, 30.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25999, {	-- Barrier to Entry
-					["provider"] = { "n", 34341 },	-- Saurboz
-					["coord"] = { 74.3, 47.7, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 34341,	-- Saurboz
 					["sourceQuest"] = 25945,	-- We're Here to Do One Thing, Maybe Two...
-					["g"] = {
-						i(57471),	-- Elf-Killer Breastplate
-						i(57470),	-- Incinerator's Gauntlets
-						i(57469),	-- Saurboz's Leggings
-						i(131463, {["timeline"] = { "added 7.0.3.22248" }}),	-- Saurboz's Handwraps
+					["coord"] = { 74.3, 47.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(57471, {	-- Elf-Killer Breastplate
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57470, {	-- Incinerator's Gauntlets
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57469, {	-- Saurboz's Leggings
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131463, {	-- Saurboz's Handwraps
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(26074, {	-- Beginning of the End
-					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
-					["coord"] = { 66.1, 63.7, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 41023,	-- Overlord Krom'gar
 					["sourceQuest"] = 26073,	-- All's Quiet on the Southern Front
+					["coord"] = { 66.1, 63.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(26098, {	-- Betrayal at the Grove
-					["provider"] = { "n", 42091 },	-- Orthus Cliffwalker
-					["coord"] = { 39.6, 46.4, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 42091,	-- Orthus Cliffwalker
 					["sourceQuest"] = 26097,	-- Proof of Lies
+					["coord"] = { 39.6, 46.4, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(26046, {	-- Between a Rock and a Hard Place
-					["provider"] = { "n", 41990 },	-- Scout Utvoch
-					["coord"] = { 67.0, 64.5, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 41990,	-- Scout Utvoch
 					["sourceQuest"] = 26044,	-- Where Are the Parts?
+					["coord"] = { 67.0, 64.5, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25730, {	-- BEWARE OF CRAGJAW!
-					["coord"] = { 65.0, 49.4, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 203186 },	-- STAY OUT!
-					["g"] = {
-						i(57429),	-- Fisherman's Belt
-						i(57430),	-- Irongoat Legguards
-						i(57428),	-- Fish Stunner
-						i(131879, {["timeline"] = { "added 7.0.3.22248" }}),	-- Fisherman's Links
+					["coord"] = { 65.0, 49.4, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57429, {	-- Fisherman's Belt
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57430, {	-- Irongoat Legguards
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57428, {	-- Fish Stunner
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131879, {	-- Fisherman's Links
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(26043, {	-- BEWARE OF CRAGJAW!
-					["coord"] = { 65.0, 49.4, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 203186 },	-- STAY OUT!
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
-					["g"] = {
-						i(57483),	-- Cragpool Band
-						i(57482),	-- Anara's Belt
-						i(57481),	-- Fisherman's Gloves
-						i(57480),	-- Spy-Mistress' Necklace
-						i(131471, {["timeline"] = { "added 7.0.3.22248" }}),	-- Anara's Cord
+					["coord"] = { 65.0, 49.4, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(57483, {	-- Cragpool Band
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57482, {	-- Anara's Belt
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57481, {	-- Fisherman's Gloves
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57480, {	-- Spy-Mistress' Necklace
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131471, {	-- Anara's Cord
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(6461, {	-- Blood Feeders
 					["qg"] = 12816,	-- Xen'Zilla
-					["coord"] = { 71.25, 95.00, STONETALON_MOUNTAINS },
+					["coord"] = { 71.25, 95.0, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["groups"] = {
+						objective(1, {	-- 0/10 Deepmoss Creeper slain
+							["provider"] = { "n", 4005 },	-- Deepmoss Creeper
+						}),
+						objective(2, {	-- 0/7 Deepmoss Venomspitter slain
+							["provider"] = { "n", 4007 },	-- Deepmoss Venomspitter
+						}),
+					},
 				}),
-				q(6283, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, { 	-- Bloodfury Bloodline
+				q(6283, {	-- Bloodfury Bloodline
 					["qg"] = 11860,	-- Maggran Earthbinder
 					["sourceQuest"] = 6282,	-- Harpies Threaten
 					["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
-					["g"] = {
-						i(16990),	-- Spritekin Cloak
-						i(16987),	-- Screecher Belt
+					["groups"] = {
+						objective(1, {	-- 0/1 Bloodfury Ripper's Remains
+							["provider"] = { "i", 16190 },	-- Bloodfury Ripper's Remains
+							["coord"] = { 31.8, 62.6, STONETALON_MOUNTAINS },
+							["cr"] = 12579,	-- Bloodfury Ripper
+						}),
+						i(16990, {	-- Spritekin Cloak
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(16987, {	-- Screecher Belt
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
-				})),
+				}),
 				q(25768, {	-- Bombs Away: Mirkfallon Post!
-					["provider"] = { "n", 40896 },	-- Lord Fallowmere
-					["coord"] = { 59.5, 56.8, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 40896,	-- Lord Fallowmere
 					["sourceQuest"] = 25769,	-- Fallowmere Beckons
-					["g"] = {
-						i(57435),	-- Oil-Stained Bracers
-						i(57436),	-- Well Oiled Helm
-						i(57437),	-- Barus' Backup Sword
-						i(57434),	-- Oiler's Ring
-						i(131881, {["timeline"] = { "added 7.0.3.22248" }}),	-- Barus' Armbands
+					["coord"] = { 59.5, 56.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57435, {	-- Oil-Stained Bracers
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57436, {	-- Well Oiled Helm
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57437, {	-- Barus' Backup Sword
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57434, {	-- Oiler's Ring
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131881, {	-- Barus' Armbands
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(6421, {	-- Boulderslide Ravine
 					["qg"] = 11861,	-- Mor'rogal
 					["coord"] = { 47.17, 64.10, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 16581, 10 },	-- Resonite Crystal
-					},
 					["lvl"] = 14,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
+					["groups"] = {
+						objective(1, {	-- 0/10 Resonite Crystal
+							["provider"] = { "i", 16581 },	-- Resonite Crystal
+							["coord"] = { 57.4, 89.4, STONETALON_MOUNTAINS },
+							["cr"] = 11920,	-- Goggeroc
+						}),
+					},
 				}),
 				q(25640, {	-- Bombs Away: Windshear Mine!
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 40895,	-- Professor Xakxak Gyromate
 					["sourceQuest"] = 25622,	-- Burn, Baby, Burn!
+					["coord"] = { 35.4, 71.2, ASHENVALE },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25931, {	-- Brood of Seldarria
-					["coord"] = { 30.6, 70.4, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41487,	-- Hierophant Malyk
 					["sourceQuest"] = 25930,	-- Ascending the Vale
-					["g"] = {
-						i(57463),	-- Brood-Killer Shoulderguard
-						i(57462),	-- Goldrinn Acolyte's Cowl
-						i(57461),	-- Egg Smasher
-						i(57464),	-- Hierophant's Blessed Hands
-						i(131457, {["timeline"] = { "added 7.0.3.22248" }}),	-- Brood-Killer Amice
+					["coord"] = { 30.6, 70.4, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57463, {	-- Brood-Killer Shoulderguard
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57462, {	-- Goldrinn Acolyte's Cowl
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57461, {	-- Egg Smasher
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57464, {	-- Hierophant's Blessed Hands
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131457, {	-- Brood-Killer Amice
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(25622, {	-- Burn, Baby, Burn!
-					["coord"] = { 73.0, 46.6, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 40895,	-- Professor Xakxak Gyromate
 					["sourceQuest"] = 25621,	-- Field Test: Gnomecorder
-					["g"] = {
-						i(57426),	-- Xakxak's Lab Frock
-						i(57427),	-- Vonderful Bracers
-						i(57425),	-- Gyromatic Axe
+					["coord"] = { 35.4, 71.2, ASHENVALE },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57426, {	-- Xakxak's Lab Frock
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57427, {	-- Vonderful Bracers
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57425, {	-- Gyromatic Axe
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 					},
 				}),
 				q(5881, {	-- Calling in the Reserves
-					["qg"] = 11860,	-- Maggran Earthbinder
+					["providers"] = {
+						{ "n", 11860 },	-- Maggran Earthbinder
+						{ "i", 16189 },	-- Maggran's Reserve Letter
+					},
 					["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 				}),
 				q(25767, {	-- Capturing Memories
-					["provider"] = { "n", 40900 },	-- Neophyte Starcrest
-					["coord"] = { 58.6, 55.9, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 40900,	-- Neophyte Starcrest
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
+					["coord"] = { 58.6, 55.9, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1087, {	-- Cenarius' Legacy
 					["qg"] = 4198,	-- Braelyn Firehand
 					["coord"] = { 45.91, 60.35, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
+					["groups"] = {
+						objective(1, {	-- 0/4 Son of Cenarius slain
+							["provider"] = { "n", 4057 },	-- Son of Cenarius
+						}),
+						objective(2, {	-- 0/4 Daughter of Cenarius slain
+							["provider"] = { "n", 4053 },	-- Daughter of Cenarius
+						}),
+						objective(3, {	-- 0/4 Cenarion Botanist slain
+							["provider"] = { "n", 4051 },	-- Cenarion Botanist
+						}),
+					},
 				}),
 				q(25652, {	-- Commandeer That Balloon!
-					["provider"] = { "n", 40879 },	-- Boog the "Gear Whisperer"
-					["coord"] = { 72.5, 61.4, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 40879,	-- Boog the "Gear Whisperer"
 					["sourceQuest"] = 25650,	-- Orders from High Command
-					["g"] = {
-						i(57420),	-- Commandeered Gloves
-						i(57418),	-- Stonetalon Defender's Staff
-						i(57419),	-- Wand of Bought Time
+					["coord"] = { 72.5, 61.4, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57420, {	-- Commandeered Gloves
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57418, {	-- Stonetalon Defender's Staff
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57419, {	-- Wand of Bought Time
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 					},
 				}),
-				q(1079, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Covert Ops - Alpha
-					["qg"] = 4077,	-- Gaxim Rustfizzle
+				q(1079, {	-- Covert Ops - Alpha
+					["providers"] = {
+						{ "n", 4077 },	-- Gaxim Rustfizzle
+						{ "i", 5738 },	-- Covert Ops Pack
+					},
 					["sourceQuests"] = {
 						1074,	-- Ineptitude + Chemicals = Fun (2/2)
 						1077,	-- Special Delivery for Gaxim
 					},
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
-					["g"] = {
-						i(5738),	-- Covert Ops Pack
+					["groups"] = {
+						objective(1, {	-- 0/1 Venture Co. Engineering Plans
+							["provider"] = { "i", 5718 },	-- Venture Co. Engineering Plans
+							["coord"] = { 66.1, 51.3, STONETALON_MOUNTAINS },
+						}),
 					},
-				})),
-				q(1080, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Covert Ops - Beta
-					["qg"] = 4077,	-- Gaxim Rustfizzle
-					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
+				}),
+				q(1080, {	-- Covert Ops - Beta
+					["providers"] = {
+						{ "n", 4077 },	-- Gaxim Rustfizzle
+						{ "i", 5738 },	-- Covert Ops Pack
+					},
 					["sourceQuests"] = {
 						1074,	-- Ineptitude + Chemicals = Fun (2/2)
 						1077,	-- Special Delivery for Gaxim
 					},
+					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
-					["g"] = {
-						i(5738),	-- Covert Ops Pack
+					["groups"] = {
+						objective(1, {	-- 0/1 Venture Co. Letters
+							["provider"] = { "i", 5717 },	-- Venture Co. Letters
+							["coord"] = { 74.4, 59.2, STONETALON_MOUNTAINS },
+						}),
 					},
-				})),
+				}),
 				q(6301, {	-- Cycle of Rebirth
 					["qg"] = 11864,	-- Tammra Windfield
 					["coord"] = { 47.44, 58.47, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 16205, 10 },	-- Gaea Seed
-					},
 					["lvl"] = 17,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
+					["groups"] = {
+						objective(1, {	-- 0/10 Gaea Seed
+							["provider"] = { "i", 16205 },	-- Gaea Seed
+						}),
+					},
 				}),
 				q(26061, {	-- Da Voodoo: Ram Horns
-					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
-					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 3995,	-- Witch Doctor Jin'Zil
 					["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
+					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(26062, {	-- Da Voodoo: Resonite Crystal
-					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
-					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 3995,	-- Witch Doctor Jin'Zil
 					["sourceQuests"] = {
 						26061,	-- Da Voodoo: Ram Horns
 						26060,	-- Da Voodoo: Stormer Heart
 					},
+					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(26060, {	-- Da Voodoo: Stormer Heart
-					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
-					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 3995,	-- Witch Doctor Jin'Zil
 					["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
+					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25851, {	-- Dances with Grimtotem
-					["provider"] = { "n", 11858 },	-- Grundig Darkcloud
-					["coord"] = { 72.2, 83.7, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 11858,	-- Grundig Darkcloud
 					["sourceQuest"] = 25848,	-- Downfall
-					["g"] = {
-						i(57468),	-- Valen's Cloak
-						i(57467),	-- Fancy Footwork
-						i(57466),	-- Negotiator's Armbands
-						i(131449, {["timeline"] = { "added 7.0.3.22248" }}),	-- Valen's Treads
-						i(57465),	-- Ambassador's Amulet
+					["coord"] = { 72.2, 83.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57468, {	-- Valen's Cloak
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57467, {	-- Fancy Footwork
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57466, {	-- Negotiator's Armbands
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131449, {	-- Valen's Treads
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(57465, {	-- Ambassador's Amulet
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 					},
 				}),
 				q(25834, {	-- Death by Proxy
-					["provider"] = { "n", 41229 },	-- Force Commander Valen
-					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41229,	-- Force Commander Valen
 					["sourceQuest"] = 25821,	-- A Special Kind of Job
+					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25642, {	-- Don't Look Them in the Eyes
-					["provider"] = { "n", 40879 },	-- Boog the "Gear Whisperer"
-					["coord"] = { 72.5, 61.4, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 40879,	-- Boog the "Gear Whisperer"
 					["sourceQuest"] = 25640,	-- Bombs Away: Windshear Mine!
+					["coord"] = { 72.5, 61.4, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25848, {	-- Downfall
-					["provider"] = { "n", 11858 },	-- Grundig Darkcloud
-					["coord"] = { 72.2, 83.7, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 11858,	-- Grundig Darkcloud
 					["sourceQuest"] = 25847,	-- Grimtotem Supremacy
+					["coord"] = { 72.2, 83.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26026, {	-- Dream of a Better Tomorrow
-					["provider"] = { "n", 40907 },	-- Clarissa
-					["coord"] = { 66.0, 64.1, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 40907,	-- Clarissa
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
+					["coord"] = { 66.0, 64.1, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
-				q(6481, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Earthen Arise
+				q(6481, {	-- Earthen Arise
 					["qg"] = 11861,	-- Mor'rogal
 					["sourceQuest"] = 6421,	-- Boulderslide Ravine
 					["coord"] = { 47.17, 64.10, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
-					["g"] = {
-						i(16981),	-- Owlbeard Bracers
-						i(1306),	-- Wolfmane Wristguards
+					["groups"] = {
+						objective(1, {	-- 0/1 Goggeroc slain
+							["provider"] = { "n", 11920 },	-- Goggeroc
+							["coord"] = { 57.4, 89.4, STONETALON_MOUNTAINS },
+							["cost"] = {{ "i", 16603, 1 }},	-- Enchanted Resonite Crystal
+						}),
+						i(16981, {	-- Owlbeard Bracers
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(1306, {	-- Wolfmane Wristguards
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
-				})),
+				}),
 				q(6393, {	-- Elemental War
 					["qg"] = 11862,	-- Tsunaman
 					["coord"] = { 47.28, 64.31, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 16312, 10 },	-- Incendrites
-					},
 					["lvl"] = 19,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
+					["groups"] = {
+						objective(1, {	-- 0/10 Incendrites
+							["provider"] = { "i", 16312 },	-- Incendrites
+							["crs"] = {
+								4038,	-- Burning Destroyer
+								4037,	-- Burning Ravager
+								4036,	-- Rogue Flame Spirit
+							},
+						}),
+					},
 				}),
 				q(26011, {	-- Enemy of the Horde: Marshal Paltrow
-					["provider"] = { "n", 40903 },	-- Spy-Mistress Anara
-					["coord"] = { 65.7, 63.2, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 40903,	-- Spy-Mistress Anara
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
+					["coord"] = { 65.7, 63.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(1083, {	-- Enraged Spirits
 					["qg"] = 4080,	-- Kaela Shadowspear
 					["sourceQuest"] = 1091,	-- Kaela's Update
 					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 5659, 8 },	-- Smoldering Embers
-					},
 					["lvl"] = 20,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
+					["groups"] = {
+						objective(1, {	-- 0/8 Smoldering Embers
+							["provider"] = { "i", 5659 },	-- Smoldering Embers
+							["crs"] = {
+								4038,	-- Burning Destroyer
+								4037,	-- Burning Ravager
+								4036,	-- Rogue Flame Spirit
+							},
+						}),
+					},
 				}),
 				q(26059, {	-- Eyes and Ears: Malaka'jin
-					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
-					["coord"] = { 66.1, 63.6, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 41023,	-- Overlord Krom'gar
 					["sourceQuest"] = 26058,	-- In Defense of Krom'gar Fortress
+					["coord"] = { 66.1, 63.6, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25769, {	-- Fallowmere Beckons
-					["provider"] = { "n", 40899 },	-- Arcanist Valdurian
-					["coord"] = { 58.6, 55.9, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 40899,	-- Arcanist Valdurian
 					["sourceQuests"] = {
 						25766,	-- Arcane Legacy
 						25767,	-- Capturing Memories
 					},
+					["coord"] = { 58.6, 55.9, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26064, {	-- Fight On Their Stomachs
-					["provider"] = { "n", 3411 },	-- Denni'ka
-					["coord"] = { 72.0, 91.2, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 3411,	-- Denni'ka
 					["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
+					["coord"] = { 72.0, 91.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(26077, {	-- Final Delivery
-					["provider"] = { "n", 42033 },	-- Jibbly Rakit
-					["coord"] = { 52.9, 39.1, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 42033,	-- Jibbly Rakit
 					["sourceQuest"] = 26076,	-- Spy Infestation
+					["coord"] = { 52.9, 39.1, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25662, {	-- Free Our Sisters
-					["provider"] = { "n", 40896 },	-- Lord Fallowmere
-					["coord"] = { 59.5, 56.8, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 40896,	-- Lord Fallowmere
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
+					["coord"] = { 59.5, 56.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1094, {	-- Further Instructions (1/2)
-					["qg"] = 4201,	-- Ziz Fizziks
+					["providers"] = {
+						{ "n", 4201 },	-- Ziz Fizziks
+						{ "i", 5735 },	-- Sealed Envelope
+					},
 					["sourceQuest"] = 1093,	-- Super Reaper 6000
 					["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
-					["cost"] = {
-						{ "i", 5735, 1 },	-- Sealed Envelope
-					},
+					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 16,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 				}),
 				q(1095, {	-- Further Instructions (2/2)
 					["qg"] = 3442,	-- Sputtervalve
 					["sourceQuest"] = 1094,	-- Further Instructions (1/2)
-					["coord"] = { 62.97, 37.19, NORTHERN_BARRENS },
+					["coord"] = { 62.97, 37.19, THE_BARRENS },
+					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 16,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 				}),
-				q(1096, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Gerenzo Wrenchwhistle
+				q(1096, {	-- Gerenzo Wrenchwhistle
 					["qg"] = 4201,	-- Ziz Fizziks
 					["sourceQuest"] = 1095,	-- Further Instructions (2/2)
-					["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
+					["coord"] = { 59.0, 62.53, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 16,
-					["g"] = {
-						objective(1, {	-- Gerenzo's Mechanical Arm
+					["groups"] = {
+						objective(1, {	-- 0/1 Gerenzo's Mechanical Arm
 							["provider"] = { "i", 5736 },	-- Gerenzo's Mechanical Arm
-							["cr"] = 4202,	-- Gerenzo Wrenchwhistle
 							["coord"] = { 63.6, 39.6, STONETALON_MOUNTAINS },
+							["cr"] = 4202,	-- Gerenzo Wrenchwhistle
 						}),
-						i(6667),	-- Engineer's Cloak
-						i(6668),	-- Draftsman Boots
+						i(6667, {	-- Engineer's Cloak
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(6668, {	-- Draftsman Boots
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
-				})),
+				}),
 				q(1090, {	-- Gerenzo's Orders (1/2)
 					["qg"] = 4276,	-- Piznik
 					["coord"] = { 71.80, 60.05, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 17,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
 				}),
-				q(1092, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Gerenzo's Orders (2/2)
-					["qg"] = 4276,	-- Piznik
+				q(1092, {	-- Gerenzo's Orders (2/2)
+					["providers"] = {
+						{ "n", 4276 },	-- Piznik
+						{ "i", 5733 },	-- Unidentified Ore
+					},
 					["sourceQuest"] = 1090,	-- Gerenzo's Orders (1/2)
 					["coord"] = { 71.80, 60.05, STONETALON_MOUNTAINS },
-					["cost"] = {
-						{ "i", 5733, 1 },	-- Unidentified Ore
-					},
+					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 17,
-					["g"] = {
-						i(6666),	-- Dredge Boots
+					["groups"] = {
+						i(6666, {	-- Dredge Boots
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
-				})),
+				}),
 				q(25875, {	-- Gnome on the Inside
-					["provider"] = { "n", 41233 },	-- Scout Commander Barus
-					["coord"] = { 48.3, 51.8, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41233,	-- Scout Commander Barus
 					["sourceQuest"] = 25768,	-- Bombs Away: Mirkfallon Post!
+					["coord"] = { 48.3, 51.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(1062, {	-- Goblin Invaders
+					["qg"] = 4049,	-- Seereth Stonebreak
+					["sourceQuest"] = 1061,	-- The Spirits of Stonetalon
+					["coord"] = { 35.28, 27.84, THE_BARRENS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 13,
+					["groups"] = {
+						objective(1, {	-- 0/15 Venture Co. Logger slain
+							["provider"] = { "n", 3989 },	-- Venture Co. Logger
+						}),
+					},
 				}),
 				q(25847, {	-- Grimtotem Supremacy
-					["provider"] = { "n", 11858 },	-- Grundig Darkcloud
-					["coord"] = { 72.2, 83.7, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 11858,	-- Grundig Darkcloud
 					["sourceQuest"] = 25846,	-- Grundig Darkcloud, Chieftain of the Grimtotem
+					["coord"] = { 72.2, 83.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25846, {	-- Grundig Darkcloud, Chieftain of the Grimtotem
-					["provider"] = { "n", 41229 },	-- Force Commander Valen
-					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41229,	-- Force Commander Valen
 					["sourceQuest"] = 25822,	-- Armaments for War
+					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6282, {	-- Harpies Threaten
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 11860,	-- Maggran Earthbinder
+					["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 11860 },	-- Maggran Earthbinder
-				}),
-				q(25938, {	-- Help for Desolace (mutually exclusive with Rerouted! and Hero's Call: Desolace!)
-					["provider"] = { "n", 41487 },	-- Hierophant Malyk
-					["coord"] = { 33.0, 59.6, STONETALON_MOUNTAINS },
-					["isBreadcrumb"] = true,
-					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
+					["groups"] = {
+						objective(1, {	-- 0/7 Bloodfury Harpy slain
+							["provider"] = { "n", 4022 },	-- Bloodfury Harpy
+						}),
+						objective(2, {	-- 0/7 Bloodfury Ambusher slain
+							["provider"] = { "n", 4025 },	-- Bloodfury Ambusher
+						}),
+						objective(3, {	-- 0/7 Bloodfury Slayer slain
+							["provider"] = { "n", 4024 },	-- Bloodfury Slayer
+						}),
+						objective(4, {	-- 0/7 Bloodfury Roguefeather slain
+							["provider"] = { "n", 4023 },	-- Bloodfury Roguefeather
+						}),
+					},
 				}),
 				q(25935, {	-- Hungry Pups
-					["provider"] = { "n", 41638 },	-- Houndmaster Jonathan
-					["coord"] = { 32.3, 60.4, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41638,	-- Houndmaster Jonathan
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
+					["coord"] = { 32.3, 60.4, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26045, {	-- I Got Your Parts Right Here...
-					["provider"] = { "n", 41991 },	-- Sergeant Dontrag
-					["coord"] = { 67.1, 64.5, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 41991,	-- Sergeant Dontrag
 					["sourceQuest"] = 26044,	-- Where Are the Parts?
+					["coord"] = { 67.1, 64.5, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25739, {	-- If the Horde Don't Get You...
-					["provider"] = { "n", 40897 },	-- Northwatch Captain Kosak
-					["coord"] = { 59.4, 56.8, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 40897,	-- Northwatch Captain Kosak
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
+					["coord"] = { 59.4, 56.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25647, {	-- Illegible Orc Letter
 					["provider"] = { "i", 55181 },	-- Illegible Orc Letter
-					["crs"] = { 40905 },	-- Windshear Overseer
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25640,	-- Bombs Away: Windshear Mine
+					["crs"] = { 40905 },	-- Windshear Overseer
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26058, {	-- In Defense of Krom'gar Fortress
-					["provider"] = { "n", 40902 },	-- Chief Blastgineer Bombguts
-					["coord"] = { 66.2, 62.9, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 40902,	-- Chief Blastgineer Bombguts
 					["sourceQuest"] = 26048,	-- Spare Parts Up in Here!
+					["coord"] = { 66.2, 62.9, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(26099, {	-- Is This Justice?
-					["provider"] = { "n", 42039 },	-- High Chieftain Cliffwalker
-					["coord"] = { 45.0, 32.7, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 42039,	-- High Chieftain Cliffwalker
 					["sourceQuest"] = 26098,	-- Betrayal at the Grove
+					["coord"] = { 45.0, 32.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25808, {	-- Is This Thing On?
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41277,	-- Lieutenant Paulson
 					["sourceQuest"] = 25806,	-- They Put the Assass in... Never Mind
-					["g"] = {
-						i(57447),	-- Paulson's Crossbow
-						i(57446),	-- Crackling Pauldrons
-						i(57445),	-- Mine Worker Cloak
-						i(57444),	-- Assassin Assassinator
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57447, {	-- Paulson's Crossbow
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57446, {	-- Crackling Pauldrons
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57445, {	-- Mine Worker Cloak
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57444, {	-- Assassin Assassinator
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 					},
 				}),
 				q(25876, {	-- It's Up There!
-					["provider"] = { "n", 41434 },	-- "Goblin" Pump Controller
-					["coord"] = { 53.6, 42.3, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41434,	-- "Goblin" Pump Controller
 					["sourceQuest"] = 25875,	-- Gnome on the Inside
+					["coord"] = { 53.6, 42.3, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26067, {	-- Jin'Zil's Blessing
-					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
-					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 3995,	-- Witch Doctor Jin'Zil
 					["sourceQuest"] = 26062,	-- Da Voodoo: Resonite Crystal
+					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(1058, {	-- Jin'Zil's Forest Magic
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
+					["qg"] = 3995,	-- Witch Doctor Jin'Zil
+					["coord"] = { 74.54, 97.84, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(6665)),	-- Hexed Bracers
-						un(REMOVED_FROM_GAME, i(6664)),	-- Voodoo Mantle
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/5 Stonetalon Sap
+							["provider"] = { "i", 5582 },	-- Stonetalon Sap
+							["cr"] = 4020,	-- Sap Beast
+						}),
+						objective(2, {	-- 0/5 Twilight Whisker
+							["provider"] = { "i", 5584 },	-- Twilight Whisker
+							["cr"] = 4067,	-- Twilight Runner
+						}),
+						objective(3, {	-- 0/30 Courser Eye
+							["provider"] = { "i", 5585 },	-- Courser Eye
+							["crs"] = {
+								4018,	-- Antlered Courser
+								4019,	-- Great Courser
+							},
+						}),
+						objective(4, {	-- 0/1 Fey Dragon Scale
+							["provider"] = { "i", 5583 },	-- Fey Dragon Scale
+							["crs"] = {
+								4016,	-- Fey Dragon
+								4066,	-- Nal'taszar
+								4017,	-- Wily Fey Dragon
+							},
+						}),
+						i(6664, {	-- Voodoo Mantle
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(6665, {	-- Hexed Bracers
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(25673, {	-- Just Ask Alice
-					["provider"] = { "n", 40908 },	-- Alice
-					["coord"] = { 58.5, 55.2, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 40908,	-- Alice
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon?
+					["coord"] = { 58.5, 55.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(1091, {	-- Kaela's Update
+					["providers"] = {
+						{ "n", 4077 },	-- Gaxim Rustfizzle
+						{ "i", 5717 },	-- Venture Co. Letters
+					},
+					["sourceQuests"] = {
+						1079,	-- Covert Ops - Alpha
+						1080,	-- Covert Ops - Beta
+					},
+					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
+				}),
+				q(6401, {	-- Kaya's Alive
+					["qg"] = 11857,	-- Makaba Flathoof
+					["sourceQuest"] = 6523,	-- Protect Kaya
+					["coord"] = { 35.23, 27.79, THE_BARRENS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 12,
+				}),
+				q(1511, {	-- Ken'zigla's Draught
+					["providers"] = {
+						{ "n", 4197 },	-- Ken'zigla
+						{ "i", 6624 },	-- Ken'zigla's Draught
+					},
+					["sourceQuest"] = 1510,	-- News of Dogran (2/2)
+					["coord"] = { 73.2, 95, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { WARLOCK },
+					["races"] = { ORC, UNDEAD },
+					["lvl"] = 20,
+				}),
+				q(6629, {	-- Kill Grundig Darkcloud
+					["qg"] = 11857,	-- Makaba Flathoof
+					["sourceQuest"] = 6548,	-- Avenge My Village
+					["coord"] = { 35.23, 27.79, THE_BARRENS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 12,
+					["groups"] = {
+						objective(1, {	-- 0/1 Grundig Darkcloud slain
+							["provider"] = { "n", 11858 },	-- Grundig Darkcloud
+							["coord"] = { 73.8, 86.6, STONETALON_MOUNTAINS },
+						}),
+						objective(2, {	-- 0/6 Grimtotem Brute slain
+							["provider"] = { "n", 11912 },	-- Grimtotem Brute
+						}),
+					},
 				}),
 				q(26068, {	-- Kobold Fury!
-					["provider"] = { "n", 42023 },	-- Subjugator Devo
-					["races"] = HORDE_ONLY,
+					["qg"] = 42023,	-- Subjugator Devo
 					["sourceQuest"] = 26066,	-- Reinforcements...
-					["g"] = {
-						i(57507),	-- Kobold-Wrangler Leggings
-						i(57506),	-- Unearthed Cloak
-						i(57508),	-- Devo's Handaxe
-						i(131476),	-- Kobold-Wrangler Legguards
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(57507, {	-- Kobold-Wrangler Leggings
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57506, {	-- Unearthed Cloak
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57508, {	-- Devo's Handaxe
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131476, {	-- Kobold-Wrangler Legguards
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(26004, {	-- Krom'gar Fortress
-					["provider"] = { "n", 34341 },	-- Saurboz
-					["coord"] = { 74.2, 47.7, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 34341,	-- Saurboz
 					["sourceQuest"] = 26002,	-- Alliance Attack Plans
+					["coord"] = { 74.2, 47.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25891, {	-- Last Ditch Effort
-					["provider"] = { "n", 41482 },	-- Master Thal'darah
-					["coord"] = { 39.9, 33.5, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41482,	-- Master Thal'darah
 					["sourceQuest"] = 25889,	-- Save the Children!
+					["coord"] = { 39.9, 33.5, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25809, {	-- Leave No Man Behind!
-					["provider"] = { "n", 41282 },	-- Corporal Wocard
-					["coord"] = { 72.0, 75.9, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41282,	-- Corporal Wocard
 					["sourceQuest"] = 25793,	-- The Deep Reaches
+					["coord"] = { 72.0, 75.9, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26003, {	-- Lessons from the Lost Isles
-					["provider"] = { "n", 40926 },	-- Kilag Gorefang
-					["coord"] = { 74.4, 47.6, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 40926,	-- Kilag Gorefang
 					["sourceQuest"] = 25999,	-- Barrier to Entry
+					["coord"] = { 74.4, 47.6, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(26101, {	-- Might Makes Right
-					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
-					["coord"] = { 66.1, 63.7, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 41023,	-- Overlord Krom'gar
 					["sourceQuest"] = 26100,	-- The General is Dead
+					["coord"] = { 66.1, 63.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(28084, {	-- Might of the Krom'gar
-					["provider"] = { "n", 42028 },	-- Krom'gar Quartermaster
-					["coord"] = { 65.9, 64.1, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 42028,	-- Krom'gar Quartermaster
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
+					["coord"] = { 65.9, 64.1, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25649, {	-- Minx'll Fix It
-					["provider"] = { "n", 40879 },	-- Boog the "Gear Whisperer"
-					["coord"] = { 72.5, 61.4, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 40879,	-- Boog the "Gear Whisperer"
 					["sourceQuest"] = 25647,	-- Illegible Orc Letter
+					["coord"] = { 72.5, 61.4, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26028, {	-- Mr. D's Wild Ride
-					["provider"] = { "n", 40907 },	-- Clarissa
-					["coord"] = { 66.1, 64.2, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
-					["description"] = "Warning: If you complete |cFFFFD700To Be Horde...|r, this quest cannot be completed.",
+					["qg"] = 40907,	-- Clarissa
 					["sourceQuest"] = 26026,	-- Dream of a Better Tomorrow
+					["coord"] = { 66.1, 64.2, STONETALON_MOUNTAINS },
+					["description"] = "Warning: If you complete |cFFFFD700To Be Horde...|r, this quest cannot be completed.",
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25728, {	-- Mr. P's Wild Ride
-					["provider"] = { "n", 40908 },	-- Alice
-					["coord"] = { 58.5, 55.2, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 40908,	-- Alice
 					["sourceQuest"] = 25673,	-- Just Ask Alice
+					["coord"] = { 58.5, 55.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6381, {	-- New Life
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 11864 },	-- Tammra Windfield
+					["qg"] = 11864,	-- Tammra Windfield
+					["sourceQuest"] = 6301,	-- Cycle of Rebirth
+					["coord"] = { 47.44, 58.47, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(16986)),	-- Sandspire Gloves
-						un(REMOVED_FROM_GAME, i(16985)),	-- Windseeker Boots
+					["lvl"] = 17,
+					["groups"] = {
+						objective(1, {	-- 0/10 Gaea seed planted
+							["provider"] = { "i", 16208 },	-- 	Enchanted Gaea Seeds
+						}),
+						i(16985, {	-- Windseeker Boots
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(16986, {	-- Sandspire Gloves
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(26134, {	-- Nothing Left for You Here
-					["provider"] = { "n", 42039 },	-- High Chieftain Cliffwalker
+					["qg"] = 42039,	-- High Chieftain Cliffwalker
+					["sourceQuest"] = 26115,	-- To Be Horde...
 					["coord"] = { 45.5, 33.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["sourceQuest"] = 26115,	-- To Be Horde...
 				}),
 				q(25877, {	-- No Time for Goodbyes!
-					["provider"] = { "n", 41434 },	-- "Goblin" Pump Controller
-					["coord"] = { 53.6, 42.3, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41434,	-- "Goblin" Pump Controller
 					["sourceQuest"] = 25876,	-- It's Up There!
-					["g"] = {
-						i(57440),	-- Shoulderguards of Warning
-						i(57439),	-- Messenger's Chestpiece
-						i(57438),	-- News Bearer Gloves
-						i(131453),	-- Messenger's Vest
+					["coord"] = { 53.6, 42.3, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57440, {	-- Shoulderguards of Warning
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57439, {	-- Messenger's Chestpiece
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57438, {	-- News Bearer Gloves
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131453, {	-- Messenger's Vest
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(26069, {	-- Nura Pathfinder
-					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
+					["qg"] = 3995,	-- Witch Doctor Jin'Zil
 					["coord"] = { 71.0, 91.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(1085, {	-- On Guard in Stonetalon
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4080 },	-- Kaela Shadowspear
+				q(1070, {	-- On Guard in Stonetalon (1/2)
+					["qg"] = 4079,	-- Sentinel Thenysil
+					["coord"] = { 34.9, 49.8, ASHENVALE },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 1070,	-- On Guard in Stonetalon
+					["isBreadcrumb"] = true,
+					["lvl"] = 17,
+				}),
+				q(1085, {	-- On Guard in Stonetalon (2/2)
+					["qg"] = 4080,	-- Kaela Shadowspear
+					["sourceQuest"] = 1070,	-- On Guard in Stonetalon (1/2)
+					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(1088, {	-- Ordanus
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4198 },	-- Braelyn Firehand
+					["qg"] = 4198,	-- Braelyn Firehand
 					["sourceQuest"] = 1087,	-- Cenarius' Legacy
-				}),
-				q(26016, {	-- Orders from Base Camp
-					["u"] = REMOVED_FROM_GAME,
-					["crs"] = { 41937 },	-- Marshal Paltrow
+					["coord"] = { 45.91, 60.35, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "i", 56474 },	-- Orders from Base Camp
-				}),
-				q(25650, {	-- Orders from High Command
-					["provider"] = { "n", 40881 },	-- Minx
-					["coord"] = { 70.7, 63.0, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25649,	-- Minx'll Fix It
-				}),
-				q(25741, {	-- Preparations for the Future
-					["provider"] = { "n", 40898 },	-- Alithia Fallowmere
-					["coord"] = { 59.0, 56.4, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
-				}),
-				q(26097, {	-- Proof of Lies
-					["provider"] = { "n", 42039 },	-- High Chieftain Cliffwalker
-					["coord"] = { 45.0, 32.7, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 26082,	-- To Battlescar!
-				}),
-				q(6523, {	-- Protect Kaya
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 11856 },	-- Kaya Flathoof
-				}),
-				q(25913, {	-- Putting Them to Rest
-					["provider"] = { "n", 41488 },	-- Sentinel Mistress Geleneth
-					["coord"] = { 39.6, 30.7, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25891,	-- Last Ditch Effort
-				}),
-				q(1081, {	-- Reception from Tyrande
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4079 },	-- Sentinel Thenysil
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(6678)),	-- Band of Elven Grace
-						un(REMOVED_FROM_GAME, i(7334)),	-- Efflorescent Robe
-						un(REMOVED_FROM_GAME, i(7335)),	-- Grizzly Tunic
-						un(REMOVED_FROM_GAME, i(7336)),	-- Wildwood Chain
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/1 Ordanus' Head
+							["provider"] = { "i", 5686 },	-- Ordanus' Head
+							["coord"] = { 62.0, 51.2, ASHENVALE },
+							["cr"] = 4273,	-- Keeper Ordanus
+						}),
 					},
 				}),
-				q(1059, {	-- Reclaiming the Charred Vale
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3994 },	-- Keeper Albagorm
+				q(26016, {	-- Orders from Base Camp
+					["provider"] = { "i", 56474 },	-- Orders from Base Camp
+					["timeline"] = { "added 4.0.3.13277", "removed 5.0.4" },
+					["crs"] = { 41937 },	-- Marshal Paltrow
+					["races"] = HORDE_ONLY,
+				}),
+				q(25650, {	-- Orders from High Command
+					["qg"] = 40881,	-- Minx
+					["sourceQuest"] = 25649,	-- Minx'll Fix It
+					["coord"] = { 70.7, 63.0, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(6676)),	-- Constable Buckler
-						un(REMOVED_FROM_GAME, i(6675)),	-- Tempered Bracers
+				}),
+				q(25741, {	-- Preparations for the Future
+					["qg"] = 40898,	-- Alithia Fallowmere
+					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
+					["coord"] = { 59.0, 56.4, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(26097, {	-- Proof of Lies
+					["qg"] = 42039,	-- High Chieftain Cliffwalker
+					["sourceQuest"] = 26082,	-- To Battlescar!
+					["coord"] = { 45.0, 32.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(6523, {	-- Protect Kaya
+					["qg"] = 11856,	-- Kaya Flathoof
+					["coord"] = { 73.51, 85.68, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 12,
+				}),
+				q(25913, {	-- Putting Them to Rest
+					["qg"] = 41488,	-- Sentinel Mistress Geleneth
+					["sourceQuest"] = 25891,	-- Last Ditch Effort
+					["coord"] = { 39.6, 30.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(1081, {	-- Reception from Tyrande
+					["qg"] = 4079,	-- Sentinel Thenysil
+					["sourceQuest"] = 1082,	-- Update for Sentinel Thenysil
+					["coord"] = { 34.8, 49.8, ASHENVALE },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
+					["groups"] = {
+						i(7334, {	-- Efflorescent Robe
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(7335, {	-- Grizzly Tunic
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(7336, {	-- Wildwood Chain
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(6678, {	-- Band of Elven Grace
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(1057, {	-- Reclaiming the Charred Vale (1/2)
+					["qg"] = 3994,	-- Keeper Albagorm
+					["coord"] = { 37.1, 8.1, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/7 Bloodfury Harpy slain
+							["provider"] = { "n", 4022 },	-- Bloodfury Harpy
+						}),
+						objective(2, {	-- 0/7 Bloodfury Ambusher slain
+							["provider"] = { "n", 4025 },	-- Bloodfury Ambusher
+						}),
+						objective(3, {	-- 0/7 Bloodfury Slayer slain
+							["provider"] = { "n", 4024 },	-- Bloodfury Slayer
+						}),
+						objective(4, {	-- 0/7 Bloodfury Roguefeather slain
+							["provider"] = { "n", 4023 },	-- Bloodfury Roguefeather
+						}),
+					},
+				}),
+				q(1059, {	-- Reclaiming the Charred Vale (2/2)
+					["qg"] = 3994,	-- Keeper Albagorm
+					["sourceQuest"] = 1057,	-- Reclaiming the Charred Vale (1/2)
+					["coord"] = { 37.1, 8.1, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { FERALAS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
+					["groups"] = {
+						i(6675, {	-- Tempered Bracers
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(6676, {	-- Constable Buckler
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(26066, {	-- Reinforcements...
-					["provider"] = { "n", 42023 },	-- Subjugator Devo
-					["coord"] = { 71.1, 91.1, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 42023,	-- Subjugator Devo
 					["sourceQuests"] = {
 						26061,	-- Da Voodoo: Ram Horns
 						26060,	-- Da Voodoo: Stormer Heart
 					},
+					["coord"] = { 71.1, 91.1, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(26020, {	-- Report to Bombgutz
-					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
-					["coord"] = { 66.2, 63.6, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 41023,	-- Overlord Krom'gar
 					["sourceQuest"] = 26010,	-- Ashes to Ashes
+					["coord"] = { 66.2, 63.6, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(1078, {	-- Retrieval for Mauren
 					["qg"] = 4078,	-- Collin Mauren
-					["coord"] = { 52.8, 86.6, STORMWIND_CITY },
+					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { THOUSAND_NEEDLES },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["lvl"] = 17,
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(6677)),	-- Spellcrafter Wand
+						objective(1, {	-- 0/8 Crystalized Scales
+							["provider"] = { "i", 5675 },	-- Crystalized Scales
+							["crs"] = {
+								4044,	-- Blackened Basilisk
+								4147,	-- Saltstone Basilisk
+								4041,	-- Scorched Basilisk
+								4042,	-- Singed Basilisk
+							},
+						}),
+						i(6677, {	-- Spellcrafter Wand
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(25615, {	-- Return to Stardust
-					["provider"] = { "n", 39256 },	-- Kalen Trueshot
-					["coord"] = { 71.8, 45.6, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 39256,	-- Kalen Trueshot
 					["sourceQuest"] = 25614,	-- The Only Way Down is in a Body Bag
-					["g"] = {
-						i(57415),	-- Stardust Belt
-						i(57416),	-- Hippogryph Down Belt
-						i(57417),	-- Clear Path Boots
-						i(131877),	-- Stardust Waistcord
+					["coord"] = { 71.8, 45.6, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57415, {	-- Stardust Belt
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57416, {	-- Hippogryph Down Belt
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57417, {	-- Clear Path Boots
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131877, {	-- Stardust Waistcord
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(25669, {	-- Rumble in the Lumber... Mill
-					["provider"] = { "n", 41071 },	-- Huntress Illiona
-					["coord"] = { 66.2, 54.5, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41071,	-- Huntress Illiona
 					["sourceQuest"] = 25662,	-- Free Our Sisters
-					["g"] = {
-						i(57432),	-- Thwarter's Boots
-						i(57433),	-- Windshear Axe
-						i(57431),	-- Strategy Guide
-						i(131880),	-- Thwarter's Footguards
+					["coord"] = { 66.2, 54.5, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57432, {	-- Thwarter's Boots
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57433, {	-- Windshear Axe
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57431, {	-- Strategy Guide
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131880, {	-- Thwarter's Footguards
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(25844, {	-- Sating the Savage Beast
-					["provider"] = { "n", 41278 },	-- "Cookie" McWeaksauce
-					["coord"] = { 70.9, 79.7, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41278,	-- "Cookie" McWeaksauce
 					["sourceQuest"] = 25837,	-- A Proper Peace Offerin'
+					["coord"] = { 70.9, 79.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25889, {	-- Save the Children!
-					["provider"] = { "n", 41482 },	-- Master Thal'darah
-					["coord"] = { 39.9, 33.5, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41482,	-- Master Thal'darah
 					["sourceQuest"] = 25880,	-- Warn Master Thal'darah
-					["g"] = {
-						i(57460),	-- Breastplate of Rescue
-						i(57459),	-- Headguard of the Innocent
-						i(131455),	-- Helm of the Innocent
-						i(57458),	-- Thal'darah's Pendant
+					["coord"] = { 39.9, 33.5, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57460, {	-- Breastplate of Rescue
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57459, {	-- Headguard of the Innocent
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131455, {	-- Helm of the Innocent
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(57458, {	-- Thal'darah's Pendant
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 					},
 				}),
 				q(25878, {	-- Schemin' That Sabotage
-					["provider"] = { "n", 41441 },	-- Scout Mistress Yvonia
-					["coord"] = { 48.4, 51.8, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41441,	-- Scout Mistress Yvonia
 					["sourceQuest"] = 25768,	-- Bombs Away: Mirkfallon Post!
-					["g"] = {
-						i(57453),	-- Yvonia's Pauldrons
-						i(57452),	-- Shield of Control
-						i(57451),	-- Sabotage Leggings
-						i(131454),	-- Yvonia's Spaulders
+					["coord"] = { 48.4, 51.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57453, {	-- Yvonia's Pauldrons
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57452, {	-- Shield of Control
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57451, {	-- Sabotage Leggings
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131454, {	-- Yvonia's Spaulders
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(26009, {	-- Seek and Destroy
-					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
+					["qg"] = 41023,	-- Overlord Krom'gar
+					["altQuests"] = { 26115 },	-- To Be Horde...
+					["sourceQuest"] = 26004,	-- Krom'gar Fortress
 					["coord"] = { 66.1, 63.7, STONETALON_MOUNTAINS },
+					["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Orgrimmar, or after finishing the Stonetalon Mountains questline.",
+					["timeline"] = { "added 4.0.3.13277" },
+					["maxReputation"] = { 76, EXALTED },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["maxReputation"] = { 76, EXALTED },
-					["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Orgrimmar, or after finishing the Stonetalon Mountains questline.",
-					["sourceQuest"] = 26004,	-- Krom'gar Fortress
-					["altQuests"] = { 26115 },	-- To Be Horde...
 				}),
 				q(25912, {	-- Seen Better Days
-					["provider"] = { "n", 41486 },	-- Elder Sareth'na
-					["coord"] = { 39.6, 30.7, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41486,	-- Elder Sareth'na
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
-					["g"] = {
-						i(57457),	-- Legguards of Winding Ways
-						i(57456),	-- Headguard of Solace
-						i(57455),	-- Sareth'na's Mantle
-						i(57454),	-- Elune-Blessed Bow
-						i(131456),	-- Cowl of Solace
+					["coord"] = { 39.6, 30.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57457, {	-- Legguards of Winding Ways
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57456, {	-- Headguard of Solace
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57455, {	-- Sareth'na's Mantle
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57454, {	-- Elune-Blessed Bow
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131456, {	-- Cowl of Solace
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
+				q(1068, {	-- Shredding Machines
+					["qg"] = 4049,	-- Seereth Stonebreak
+					["sourceQuest"] = 1062,	-- Goblin Invaders
+					["coord"] = { 35.28, 27.84, THE_BARRENS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 13,
+					["groups"] = {
+						objective(1, {	-- 0/1 XT:4 slain
+							["provider"] = { "n", 4073 },	-- XT:4
+						}),
+						objective(2, {	-- 0/1 XT:9 slain
+							["provider"] = { "n", 4074 },	-- XT:9
+						}),
 					},
 				}),
 				q(25811, {	-- Shuttin Her Down
-					["provider"] = { "n", 41276 },	-- Steeltoe McGee
-					["coord"] = { 72.0, 75.9, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41276,	-- Steeltoe McGee
 					["sourceQuest"] = 25793,	-- The Deep Reaches
-					["g"] = {
-						i(57443),	-- Deep Reach Helm
-						i(57442),	-- Mine Sealer's Ring
+					["coord"] = { 72.0, 75.9, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57443, {	-- Deep Reach Helm
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57442, {	-- Mine Sealer's Ring
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 					},
 				}),
 				q(26048, {	-- Spare Parts Up In Here!
-					["provider"] = { "n", 41991 },	-- Sergeant Dontrag
-					["coord"] = { 67.1, 64.5, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 41991,	-- Sergeant Dontrag
 					["sourceQuests"] = {
 						26047,	-- And That's Why They Call Them Peons...
 						26046,	-- Between a Rock and a Hard Place
 						26045,	-- I Got Your Parts Right Here
 					},
-					["g"] = {
-						i(57491),	-- Spare Part Leggings
-						i(57490),	-- Blastgineer's Belt
-						i(57489),	-- Bombgutz Band
-						i(131472),	-- Blastgineer's Waistband
+					["coord"] = { 67.1, 64.5, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(57491, {	-- Spare Part Leggings
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57490, {	-- Blastgineer's Belt
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57489, {	-- Bombgutz Band
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131472, {	-- Blastgineer's Waistband
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
+				q(1077, {	-- Special Delivery for Gaxim
+					["providers"] = {
+						{ "n", 4078 },	-- Collin Mauren
+						{ "i", 5731 },	-- Scroll of Messaging
+					},
+					["sourceQuest"] = 1076,	-- Devils in Westfall
+					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
+				}),
 				q(26076, {	-- Spy Infestation
-					["provider"] = { "n", 42033 },	-- Jibbly Rakit
-					["coord"] = { 52.9, 39.1, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 42033,	-- Jibbly Rakit
 					["sourceQuest"] = 26075,	-- The Turd Problem
-					["g"] = {
-						i(57500),	-- Crawling Amulet
-						i(57499),	-- Infested Breastplate
-						i(57498),	-- Bow of Invisible Aim
+					["coord"] = { 52.9, 39.1, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(57500, {	-- Crawling Amulet
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57499, {	-- Infested Breastplate
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57498, {	-- Bow of Invisible Aim
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 					},
 				}),
 				q(1093, {	-- Super Reaper 6000
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4201 },	-- Ziz Fizziks
+					["qg"] = 4201,	-- Ziz Fizziks
 					["sourceQuest"] = 1483,	-- Ziz Fizziks
+					["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					["lvl"] = 16,
+					["groups"] = {
+						objective(1, {	-- 0/1 Super Reaper 6000 Blueprints
+							["provider"] = { "i", 5734 },	-- Super Reaper 6000 Blueprints
+							["cr"] = 3988,	-- Venture Co. Operator
+						}),
+					},
 				}),
 				q(25765, {	-- Tell 'Em Koko Sent You
-					["provider"] = { "n", 40897 },	-- Northwatch Captain Kosak
-					["coord"] = { 59.4, 56.8, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 40897,	-- Northwatch Captain Kosak
 					["sourceQuest"] = 25739,	-- If the Horde Don't Get You...
+					["coord"] = { 59.4, 56.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25845, {	-- Terms of Service
-					["provider"] = { "n", 41350 },	-- Ton Windbow
-					["coord"] = { 72.6, 81.0, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41350,	-- Ton Windbow
 					["sourceQuest"] = 25844,	-- Sating the Savage Beast
-				}),
-				q(1154, {	-- Test of Lore
-					["provider"] = { "n", 4489 },	-- Braug Dimspirit
-					["coord"] = { 78.6, 45.6, STONETALON_MOUNTAINS },
-					["sourceQuest"] = 1152,	-- Test of Lore
-					["races"] = HORDE_ONLY,
-					["lvl"] = 25,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(6627, {	-- Test of Lore
-					["provider"] = { "n", 4489 },	-- Braug Dimspirit
-					["coord"] = { 78.6, 45.6, STONETALON_MOUNTAINS },
-					["sourceQuest"] = 1154,	-- Test of Lore
-					["races"] = HORDE_ONLY,
-					["lvl"] = 25,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(1159, {	-- Test of Lore
-					["provider"] = { "n", 4489 },	-- Braug Dimspirit
-					["coord"] = { 78.6, 45.6, STONETALON_MOUNTAINS },
-					["sourceQuest"] = 6627,	-- Test of Lore
-					["races"] = HORDE_ONLY,
-					["lvl"] = 25,
-					["u"] = REMOVED_FROM_GAME,
+					["coord"] = { 72.6, 81.0, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25925, {	-- Thal'darah's Vengeance
-					["provider"] = { "n", 41482 },	-- Master Thal'darah
-					["coord"] = { 39.9, 33.5, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41482,	-- Master Thal'darah
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
+					["coord"] = { 39.9, 33.5, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25793, {	-- The Deep Reaches
-					["provider"] = { "n", 41229 },	-- Force Commander Valen
-					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41229,	-- Force Commander Valen
 					["sourceQuest"] = 25765,	-- Tell 'Em Koko Sent You
+					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1089, {	-- The Den
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4198 },	-- Braelyn Firehand
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(6671)),	-- Juggernaut Leggings
-						un(REMOVED_FROM_GAME, i(6670)),	-- Panther Armor
-						un(REMOVED_FROM_GAME, i(6669)),	-- Sacred Band
+					["providers"] = {
+						{ "n", 4198 },	-- Braelyn Firehand
+						{ "i", 5687 },	-- Gatekeeper's Key
 					},
+					["sourceQuest"] = 1088,	-- Ordanus
+					["coord"] = { 45.91, 60.35, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/1 Sleepers' Key
+							["provider"] = { "i", 5689 },	-- Sleepers' Key
+							["coord"] = { 25.6, 11.4, STONETALON_MOUNTAINS },
+						}),
+						objective(2, {	-- 0/1 Claw Key
+							["provider"] = { "i", 5690 },	-- Claw Key
+							["coord"] = { 29.5, 15.8, STONETALON_MOUNTAINS },
+						}),
+						objective(3, {	-- 0/1 Barrow Key
+							["provider"] = { "i", 5691 },	-- Barrow Key
+							["coord"] = { 27.9, 13.8, STONETALON_MOUNTAINS },
+						}),
+						i(6671, {	-- Juggernaut Leggings
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(6670, {	-- Panther Armor
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(6669, {	-- Sacred Band
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(1063, {	-- The Elder Crone
+					["qg"] = 4049,	-- Seereth Stonebreak
+					["sourceQuest"] = 1062,	-- Goblin Invaders
+					["coord"] = { 35.28, 27.84, THE_BARRENS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 13,
 				}),
 				q(26100, {	-- The General is Dead
-					["provider"] = { "n", 42047 },	-- Masha Cliffwalker
-					["coord"] = { 45.1, 32.7, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 42047,	-- Masha Cliffwalker
 					["sourceQuest"] = 26099,	-- Is This Justice?
+					["coord"] = { 45.1, 32.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25879, {	-- The Lumbering Oaf Problem
-					["provider"] = { "n", 41441 },	-- Scout Mistress Yvonia
-					["coord"] = { 48.4, 51.8, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41441,	-- Scout Mistress Yvonia
 					["sourceQuest"] = 25768,	-- Bombs Away: Mirkfallon Post!
+					["coord"] = { 48.4, 51.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26001, {	-- The Missing Blastgineer
-					["provider"] = { "n", 34341 },	-- Saurboz
-					["coord"] = { 74.2, 47.7, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 34341,	-- Saurboz
 					["sourceQuest"] = 25999,	-- Barrier to Entry
+					["coord"] = { 74.2, 47.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25614, {	-- The Only Way Down is in a Body Bag
-					["provider"] = { "n", 39256 },	-- Kalen Trueshot
-					["coord"] = { 71.8, 45.7, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 39256,	-- Kalen Trueshot
 					["sourceQuest"] = 25613,	-- Do Yourself a Favor
+					["coord"] = { 71.8, 45.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26063, {	-- The Queen and Her Court (aa?)
-					["provider"] = { "n", 11821 },	-- Darn Talongrip
+					["qg"] = 11821,	-- Darn Talongrip
 					["coord"] = { 64.9, 82.5, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(57493),	-- Darn Legguards
-						i(57492),	-- Talongrip Dagger
+					["groups"] = {
+						i(57493, {	-- Darn Legguards
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57492, {	-- Talongrip Dagger
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 					},
 				}),
-				q(26075, {	-- The Turd Problem
-					["provider"] = { "n", 42033 },	-- Jibbly Rakit
-					["coord"] = { 52.9, 39.1, STONETALON_MOUNTAINS },
+				q(1061, {	-- The Spirits of Stonetalon
+					["qg"] = 4047,	-- Zor Lonetree
+					["coord"] = { 39.03, 38.04, ORGRIMMAR },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { THE_BARRENS },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 13,
+				}),
+				q(26075, {	-- The Turd Problem
+					["qg"] = 42033,	-- Jibbly Rakit
 					["sourceQuest"] = 26074,	-- Beginning of the End
+					["coord"] = { 52.9, 39.1, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25823, {	-- The Unrelenting Horde
-					["provider"] = { "n", 41229 },	-- Force Commander Valen
-					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41229,	-- Force Commander Valen
 					["sourceQuest"] = 25845,	-- Terms of Service
+					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25806, {	-- They Put the Assass in... Never Mind
-					["provider"] = { "n", 41277 },	-- Lieutenant Paulson
-					["coord"] = { 72.0, 75.9, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41277,	-- Lieutenant Paulson
 					["sourceQuest"] = 25793,	-- The Deep Reaches
+					["coord"] = { 72.0, 75.9, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25671, {	-- Thinning the Horde
-					["provider"] = { "n", 40896 },	-- Lord Fallowmere
+					["qg"] = 40896,	-- Lord Fallowmere
+					["sourceQuest"] = 25652,	-- Commandeer That Ballon!
 					["coord"] = { 59.5, 56.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Darnassus, or after finishing the Stonetalon Mountains questline.",
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
-					["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Darnassus, or after finishing the Stonetalon Mountains questline.",
-					["sourceQuest"] = 25652,	-- Commandeer That Ballon!
 				}),
 				q(26082, {	-- To Battlescar!
-					["provider"] = { "n", 42050 },	-- General Grebo
-					["coord"] = { 45.1, 32.7, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 42050,	-- General Grebo
 					["sourceQuest"] = 26077,	-- Final Delivery
-					["g"] = {
-						i(57497),	-- Grebo's Crossbow
-						i(57496),	-- Wand of Destructive Talent
-						i(57495),	-- Shield of Battlescar Valley
-						i(57494),	-- Rampaging Staff
+					["coord"] = { 45.1, 32.7, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(57497, {	-- Grebo's Crossbow
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57496, {	-- Wand of Destructive Talent
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57495, {	-- Shield of Battlescar Valley
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57494, {	-- Rampaging Staff
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 					},
 				}),
 				q(26115, {	-- To Be Horde...
-					["provider"] = { "n", 42106 },	-- Overlord Krom'gar
-					["coord"] = { 45.6, 34.1, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 42106,	-- Overlord Krom'gar
 					["sourceQuest"] = 26101,	-- Might Makes Right
-					["g"] = {
-						i(57512),	-- Cliffwalker Boots
-						i(57511),	-- Belt of the Grieving Father
-						i(57510),	-- Masha's Armbands
-						i(57509),	-- Orthus' Amulet
-						i(131486),	-- Cinch of the Grieving Father
+					["coord"] = { 45.6, 34.1, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(57512, {	-- Cliffwalker Boots
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57511, {	-- Belt of the Grieving Father
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57510, {	-- Masha's Armbands
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57509, {	-- Orthus' Amulet
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131486, {	-- Cinch of the Grieving Father
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
-				q(25880, {	-- Warn Master Thal'darah
-					["provider"] = { "n", 41233 },	-- Scout Commander Barus
-					["coord"] = { 48.4, 51.8, STONETALON_MOUNTAINS },
+				q(1082, {	-- Update for Sentinel Thenysil
+					["qg"] = 4080,	-- Kaela Shadowspear
+					["sourceQuests"] = {
+						1083,	-- Enraged Spirits
+						1084,	-- Wounded Ancients
+					},
+					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
+				}),
+				q(25880, {	-- Warn Master Thal'darah
+					["qg"] = 41233,	-- Scout Commander Barus
 					["sourceQuest"] = 25877,	-- No Time for Goodbyes!
+					["coord"] = { 48.4, 51.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26044, {	-- Where Are the Parts?
-					["provider"] = { "n", 40902 },	-- Chief Blastgineer Bombgutz
-					["coord"] = { 66.2, 62.9, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["qg"] = 40902,	-- Chief Blastgineer Bombgutz
 					["sourceQuest"] = 26020,	-- Report to Bombgutz
+					["coord"] = { 66.2, 62.9, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25646, {	-- Windshear Mine Cleanup
-					["provider"] = { "n", 40973 },	-- Sentinal Heliana
-					["coord"] = { 72.5, 61.4, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 40973,	-- Sentinal Heliana
 					["sourceQuest"] = 25640,	-- Bombs Away: Windshear Mine
-					["g"] = {
-						i(57422),	-- Quiet Slippers
-						i(57423),	-- Overseer's Gloves
-						i(57421),	-- Amulet of Shrill Screams
-						i(57424),	-- Heliana's Ring
-						i(131878),	-- Overseer's Handguards
+					["coord"] = { 72.5, 61.4, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57422, {	-- Quiet Slippers
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57423, {	-- Overseer's Gloves
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57421, {	-- Amulet of Shrill Screams
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57424, {	-- Heliana's Ring
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131878, {	-- Overseer's Handguards
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(25934, {	-- World First: Gnomegen
-					["provider"] = { "n", 41664 },	-- Salsbury the "Help"
-					["coord"] = { 33.1, 59.5, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 41664,	-- Salsbury the "Help"
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
+					["coord"] = { 33.1, 59.5, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
-			})),
+				q(1084, {	-- Wounded Ancients
+					["qg"] = 4080,	-- Kaela Shadowspear
+					["sourceQuest"] = 1091,	-- Kaela's Update
+					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
+					["groups"] = {
+						objective(1, {	-- 0/1 Corroded Shrapnel
+							["provider"] = { "i", 5664 },	-- Corroded Shrapnel
+							["crs"] = {
+								4029,	-- Blackened Ancient
+								4028,	-- Charred Ancient
+								4030,	-- Vengeful Ancient
+							},
+						}),
+					},
+				}),
+				q(1483, {	-- Ziz Fizziks
+					["qg"] = 3442,	-- Sputtervalve
+					["coord"] = { 62.98, 37.21, THE_BARRENS },
+					["timeline"] = { "removed 4.0.3" },
+					["isBreadcrumb"] = true,
+					["lvl"] = 16,
+				}),
+			}),
 			n(RARES, {
 				n(50812, {	-- Arae
 					["coord"] = { 49.4, 65.6, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 5.2.0.16650" },
 				}),
 				n(5915, {	-- Brother Ravenoak
+					-- #if AFTER CATA
 					["coord"] = { 41.8, 19.0, STONETALON_MOUNTAINS },
+					-- #else
+					["coord"] = { 28.2, 12.8, STONETALON_MOUNTAINS },
+					-- #endif
 				}),
 				n(50884, {	-- Dustflight the Cowardly
 					["coord"] = { 44.8, 55.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 5.2.0.16650" },
 				}),
 				n(50825, {	-- Feras
 					["coord"] = { 76.0, 91.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 5.2.0.16650" },
+				}),
+				n(5931, {	-- Foreman Rigger
+					["coords"] = {
+						{ 67.6, 45.4, STONETALON_MOUNTAINS },
+						{ 68.0, 54.0, STONETALON_MOUNTAINS },
+						{ 63.8, 51.8, STONETALON_MOUNTAINS },
+					},
+					["timeline"] = { "removed 4.0.3" },
 				}),
 				n(50986, {	-- Goldenback
 					["coord"] = { 82.2, 79.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				n(50759, {	-- Iriss the Widow
 					["coord"] = { 54.4, 74.8, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 5.2.0.16650" },
 				}),
 				n(51062, {	-- Khep-Re
 					["coord"] = { 74.6, 73.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				n(4066, {	-- Nal'taszar
+					-- #if AFTER CATA
 					["coord"] = { 48.6, 73.2, STONETALON_MOUNTAINS },
+					-- #else
+					["coord"] = { 25.6, 12.6, STONETALON_MOUNTAINS },
+					-- #endif
 				}),
 				n(4015, {	-- Pridewing Patriarch
+					-- #if AFTER CATA
 					["coord"] = { 55.6, 44.8, STONETALON_MOUNTAINS },
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(5751)),	-- Webwing Cloak
-						un(REMOVED_FROM_GAME, i(5752)),	-- Wyvern Tailspike
+					-- #else
+					["coords"] = {
+						{ 45.2, 39.2, STONETALON_MOUNTAINS },
+						{ 44.8, 45.6, STONETALON_MOUNTAINS },
+						{ 48.8, 48.0, STONETALON_MOUNTAINS },
+						{ 54.8, 38.0, STONETALON_MOUNTAINS },
+					},
+					-- #endif
+					["timeline"] = { "removed 4.0.3", "added 7.2.0" },
+					["groups"] = {
+						i(5751, {	-- Webwing Cloak
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(5752, {	-- Wyvern Tailspike
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				n(50343, {	-- Quall
@@ -1228,52 +2023,114 @@ root("Zones", m(KALIMDOR, {
 						{ 60.0, 63.4, STONETALON_MOUNTAINS },
 						{ 59.6, 64.0, STONETALON_MOUNTAINS },
 					},
+					["timeline"] = { "added 5.2.0.16650" },
+				}),
+				n(5916, {	-- Sentinel Amarassan
+					["coords"] = {
+						{ 30.2, 14.8, STONETALON_MOUNTAINS },
+						{ 33.2, 17.6, STONETALON_MOUNTAINS },
+						{ 36.2, 18.8, STONETALON_MOUNTAINS },
+						{ 36.6, 14.6, STONETALON_MOUNTAINS },
+					},
+					["timeline"] = { "removed 4.0.3" },
 				}),
 				n(5930, {	-- Sister Riven
+					-- #if AFTER CATA
 					["coords"] = {
 						{ 40.4, 70.8, STONETALON_MOUNTAINS },
 						{ 40.4, 71.6, STONETALON_MOUNTAINS },
 					},
+					-- #else
+					["coords"] = {
+						{ 36.8, 68.8, STONETALON_MOUNTAINS },
+						{ 29.2, 67.0, STONETALON_MOUNTAINS },
+						{ 29.0, 73.6, STONETALON_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				n(5928, {	-- Sorrow Wing
+					-- #if AFTER CATA
 					["coord"] = { 50.2, 41.2, STONETALON_MOUNTAINS },
+					-- #else
+					["coords"] = {
+						{ 46.8, 30.4, STONETALON_MOUNTAINS },
+						{ 45.8, 38.8, STONETALON_MOUNTAINS },
+						{ 49.6, 35.6, STONETALON_MOUNTAINS },
+						{ 51.6, 36.8, STONETALON_MOUNTAINS },
+						{ 51.4, 40.6, STONETALON_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				n(50786, {	-- Sparkwing
 					["coord"] = { 58.8, 86.6, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 5.2.0.16650" },
 				}),
 				n(5932, {	-- Taskmaster Whipfang
+					-- #if AFTER CATA
 					["coord"] = { 64.6, 45.6, STONETALON_MOUNTAINS },
+					-- #else
+					["coords"] = {
+						{ 64.8, 49.2, STONETALON_MOUNTAINS },
+						{ 60.4, 51.4, STONETALON_MOUNTAINS },
+						{ 63.0, 54.4, STONETALON_MOUNTAINS },
+						{ 64.2, 57.0, STONETALON_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				n(50874, {	-- Tenok
 					["coord"] = { 44.4, 49.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 5.1.0.16309" },
+				}),
+				n(4030, {	-- Vengeful Ancient
+					["coords"] = {
+						{ 33.4, 63.0, STONETALON_MOUNTAINS },
+						{ 30.2, 68.6, STONETALON_MOUNTAINS },
+						{ 29.4, 72.6, STONETALON_MOUNTAINS },
+						{ 33.0, 73.6, STONETALON_MOUNTAINS },
+						{ 37.4, 72.4, STONETALON_MOUNTAINS },
+					},
+					["timeline"] = { "removed 4.0.3" },
 				}),
 				n(50895, {	-- Volux
 					["coord"] = { 39.8, 46.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 5.2.0.16650" },
 				}),
 			}),
 			n(VENDORS, {
 				n(9549, {	-- Borand <Bowyer>
+					-- #if AFTER CATA
 					["coord"] = { 48.6, 61.4, STONETALON_MOUNTAINS },
+					-- #else
+					["coord"] = { 45.2, 59.2, STONETALON_MOUNTAINS },
+					-- #endif
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(11304, {	-- Fine Longbow
 							["isLimited"] = true,
 						}),
 					},
 				}),
 				n(4083, {	-- Jeeda <Apprentice Witch Doctor>
+					-- #if AFTER CATA
 					["coord"] = { 50.4, 63.4, STONETALON_MOUNTAINS },
+					-- #else
+					["coord"] = { 47.6, 61.6, STONETALON_MOUNTAINS },
+					-- #endif
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(6055, {	-- Recipe: Fire Protection Potion
 							["isLimited"] = true,
 						}),
 					},
 				}),
 				n(12043, {	-- Kulwia <Trade Supplies>
+					-- #if AFTER CATA
 					["coord"] = { 48.6, 61.6, STONETALON_MOUNTAINS },
+					-- #else
+					["coord"] = { 45.4, 59.4, STONETALON_MOUNTAINS },
+					-- #endif
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(11101, {	-- Formula: Enchant Bracer - Lesser Strength (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -1284,37 +2141,99 @@ root("Zones", m(KALIMDOR, {
 				}),
 				n(42028, {	-- Krom'gar Quartermaster <Quartermaster>
 					["coord"] = { 65.8, 64.0, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" }, }, {
 						i(57505),	-- Krom'gar Champion's Armored Pauldrons
-						i(131887),	-- Krom'gar Champion's Chain Shoulderguard
+						i(131887, {	-- Krom'gar Champion's Chain Shoulderguard
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 						i(57502),	-- Krom'gar Champion's Hide Shoulderguard
 						i(57503),	-- Krom'gar Champion's Leather Shoulderguard
 						i(57501),	-- Krom'gar Champion's Linen Shoulderpads
-						i(131886),	-- Krom'gar Champion's Mesh Shoulderguard
+						i(131886, {	-- Krom'gar Champion's Mesh Shoulderguard
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 						i(57504),	-- Krom'gar Champion's Plate Pauldrons
 						i(57517),	-- Krom'gar General's Armored Helm
-						i(131889),	-- Krom'gar General's Chain Mask
+						i(131889, {	-- Krom'gar General's Chain Mask
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 						i(57514),	-- Krom'gar General's Hide Mask
 						i(57515),	-- Krom'gar General's Leather Mask
 						i(57513),	-- Krom'gar General's Linen Cowl
-						i(131888),	-- Krom'gar General's Mesh Mask
+						i(131888, {	-- Krom'gar General's Mesh Mask
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 						i(57516),	-- Krom'gar General's Plate Helm
 						i(57488),	-- Krom'gar Legionnaire's Armored Bracers
-						i(131885),	-- Krom'gar Legionnaire's Chain Bracers
+						i(131885, {	-- Krom'gar Legionnaire's Chain Bracers
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 						i(57485),	-- Krom'gar Legionnaire's Hide Wraps
 						i(57486),	-- Krom'gar Legionnaire's Leather Bracers
 						i(57484),	-- Krom'gar Legionnaire's Linen Bracers
-						i(131884),	-- Krom'gar Legionnaire's Mesh Wraps
+						i(131884, {	-- Krom'gar Legionnaire's Mesh Wraps
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 						i(57487),	-- Krom'gar Legionnaire's Plate Bracers
 						i(57476),	-- Krom'gar Sergeant's Armored Greaves
-						i(131883),	-- Krom'gar Sergeant's Chain Boots
+						i(131883, {	-- Krom'gar Sergeant's Chain Boots
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 						i(57473),	-- Krom'gar Sergeant's Hide Boots
 						i(57474),	-- Krom'gar Sergeant's Leather Boots
 						i(57472),	-- Krom'gar Sergeant's Linen Footwraps
-						i(131882),	-- Krom'gar Sergeant's Mesh Boots
+						i(131882, {	-- Krom'gar Sergeant's Mesh Boots
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 						i(57475),	-- Krom'gar Sergeant's Plate Greaves
+					}),
+				}),
+				n(4085, {	-- Nizzik <Venture Armor Salesman>
+					["coord"] = { 62.6, 40.2, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					-- #if BEFORE 4.0.3
+					["groups"] = {
+						i(4827),	-- Wizard's Belt
+						i(4828),	-- Nightwind Belt
+						i(4829),	-- Dreamer's Belt
+						i(4830),	-- Saber Leggings
+						i(4831),	-- Stalking Pants
+						i(4832),	-- Mystic Sarong
+						i(4833),	-- Glorious Shoulders
+						i(4835),	-- Elite Shoulders
 					},
+					-- #endif
+				}),
+				n(4086, {	-- Veenix <Venture Co. Merchant>
+					["coord"] = { 58.2, 51.6, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					-- #if BEFORE 4.0.3
+					["groups"] = {
+						i(4817),	-- Orb of Power
+						i(4818, {	-- Executioner's Sword
+							["isLimited"] = true,
+						}),
+						i(4836),	-- Fireproof Orb
+						i(4837),	-- Strength of Will
+						i(4838),	-- Orb of Power
+						i(7561),	-- Schematic: Goblin Jumper Cables
+					},
+					-- #endif
+				}),
+			}),
+			n(ZONE_DROPS, {
+				i(11151, {	-- Formula: Enchant Gloves - Herbalism
+					["timeline"] = { "removed 4.3.0", "deleted 7.0.1" },	-- Replaced by BOP Version
+					["crs"] = {
+						4029,	-- Blackened Ancient
+						4028,	-- Charred Ancient
+						4030,	-- Vengeful Ancient
+					},
+				}),
+				i(6840, {	-- Galvanized Horn
+					["cr"] = 6167,	-- Chimaera Matriarch
 				}),
 			}),
 		},
