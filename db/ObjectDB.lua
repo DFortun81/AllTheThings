@@ -175,6 +175,7 @@ _.ObjectNames = {
 	[179499] = "Ogre Tannin Basket",
 	[179501] = "Knot Thimblejack's Cache",
 	[179564] = "Gordok Tribute Chest",
+	[179565] = "Dusty Reliquary",
 	[179697] = "Arena Treasure Chest",
 	[179827] = "Wanted/Missing/Lost & Found",
 	[179832] = "Pillaclencher's Ornate Pillow",

@@ -1,10 +1,5 @@
 --[[
 5.0.3.15890
-q(26),	-- A Lesson to Learn,		TBC: A Lesson to Learn,		CLASSIC: A Lesson to Learn
-q(27),	-- A Lesson to Learn,		TBC: A Lesson to Learn,		CLASSIC: A Lesson to Learn
-q(28),	-- Trial of the Lake,		TBC: Trial of the Lake,		CLASSIC: Trial of the Lake
-q(29),	-- Trial of the Lake,		TBC: Trial of the Lake,		CLASSIC: Trial of the Lake
-q(30),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
 q(63),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(73),	-- <TXT> No Reward,		TBC: <TXT> No Reward,		CLASSIC: <TXT> No Reward
 q(96),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
@@ -15,7 +10,6 @@ q(242),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(259),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(260),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(261),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
-q(272),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
 q(352),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(406),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(456),	-- The Balance of Nature,		TBC: The Balance of Nature,		CLASSIC: The Balance of Nature
@@ -82,9 +76,6 @@ q(990),	-- Trek to Ashenvale,		TBC: Trek to Ashenvale,		CLASSIC: Trek to Ashenva
 q(1001),	-- Buzzbox 411,		TBC: Buzzbox 411,		CLASSIC: Buzzbox 411
 q(1002),	-- Buzzbox 323,		TBC: Buzzbox 323,		CLASSIC: Buzzbox 323
 q(1003),	-- Buzzbox 525,		TBC: Buzzbox 525,		CLASSIC: Buzzbox 525
-q(1015),	-- The New Frontier,		TBC: The New Frontier,		CLASSIC: The New Frontier
-q(1019),	-- The New Frontier,		TBC: The New Frontier,		CLASSIC: The New Frontier
-q(1047),	-- The New Frontier,		TBC: The New Frontier,		CLASSIC: The New Frontier
 q(1052),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
 q(1057),	-- Reclaiming the Charred Vale,		TBC: Reclaiming the Charred Vale,		CLASSIC: Reclaiming the Charred Vale
 q(1061),	-- The Spirits of Stonetalon,		TBC: The Spirits of Stonetalon,		CLASSIC: The Spirits of Stonetalon
@@ -432,20 +423,6 @@ q(5709),	-- <NYI> Flirting With Darkness,		CLASSIC: <NYI> Flirting With Darkness
 q(5710),	-- <NYI> <TXT> Troll Priest Robe,		CLASSIC: <NYI> <TXT> Troll Priest Robe
 q(5711),	-- <NYI> The Lost Ways,		CLASSIC: <NYI> The Lost Ways
 q(5712),	-- <NYI> The Lost Ways,		CLASSIC: <NYI> The Lost Ways
-q(5921),	-- Moonglade,		TBC: Moonglade,		CLASSIC: Moonglade
-q(5922),	-- Moonglade,		TBC: Moonglade,		CLASSIC: Moonglade
-q(5923),	-- Heeding the Call,		TBC: Heeding the Call,		CLASSIC: Heeding the Call
-q(5924),	-- Heeding the Call,		TBC: Heeding the Call,		CLASSIC: Heeding the Call
-q(5925),	-- Heeding the Call,		TBC: Heeding the Call,		CLASSIC: Heeding the Call
-q(5926),	-- Heeding the Call,		TBC: Heeding the Call,		CLASSIC: Heeding the Call
-q(5927),	-- Heeding the Call,		TBC: Heeding the Call,		CLASSIC: Heeding the Call
-q(5928),	-- Heeding the Call,		TBC: Heeding the Call,		CLASSIC: Heeding the Call
-q(5929),	-- Great Bear Spirit,		TBC: Great Bear Spirit,		CLASSIC: Great Bear Spirit
-q(5930),	-- Great Bear Spirit,		TBC: Great Bear Spirit,		CLASSIC: Great Bear Spirit
-q(5931),	-- Back to Darnassus,		TBC: Back to Darnassus,		CLASSIC: Back to Darnassus
-q(5932),	-- Back to Thunder Bluff,		TBC: Back to Thunder Bluff,		CLASSIC: Back to Thunder Bluff
-q(6001),	-- Body and Heart,		TBC: Body and Heart,		CLASSIC: Body and Heart
-q(6002),	-- Body and Heart,		TBC: Body and Heart,		CLASSIC: Body and Heart
 q(6003),	-- <nyi> <txt> Green With Envy,		CLASSIC: <nyi> <txt> Green With Envy
 q(6026),	-- That's Asking A Lot,		TBC: That's Asking A Lot,		CLASSIC: That's Asking A Lot
 q(6028),	-- The Everlook Report,		TBC: The Everlook Report,		CLASSIC: The Everlook Report
@@ -463,14 +440,8 @@ q(6089),	-- Training the Beast,		TBC: Training the Beast,		CLASSIC: Training the
 q(6101),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
 q(6102),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
 q(6103),	-- Training the Beast,		TBC: Training the Beast,		CLASSIC: Training the Beast
-q(6121),	-- Lessons Anew,		TBC: Lessons Anew,		CLASSIC: Lessons Anew
-q(6122),	-- The Principal Source,		TBC: The Principal Source,		CLASSIC: The Principal Source
 q(6123),	-- Gathering the Cure,		TBC: Gathering the Cure,		CLASSIC: Gathering the Cure
-q(6125),	-- Power over Poison,		TBC: Power over Poison,		CLASSIC: Power over Poison
-q(6126),	-- Lessons Anew,		TBC: Lessons Anew,		CLASSIC: Lessons Anew
-q(6127),	-- The Principal Source,		TBC: The Principal Source,		CLASSIC: The Principal Source
 q(6128),	-- Gathering the Cure,		TBC: Gathering the Cure,		CLASSIC: Gathering the Cure
-q(6130),	-- Power over Poison,		TBC: Power over Poison,		CLASSIC: Power over Poison
 q(6141),	-- Brother Anton,		TBC: Brother Anton,		CLASSIC: Brother Anton
 q(6165),	-- <NYI> <TXT> Archmage Timolain's Remains,		TBC: <NYI> <TXT> Archmage Timolain's Remains,		CLASSIC: <NYI> <TXT> Archmage Timolain's Remains
 q(6201),	-- <UNUSED> The Legacy of the Ashbringer,		TBC: <UNUSED> The Legacy of the Ashbringer,		CLASSIC: <UNUSED> The Legacy of the Ashbringer
@@ -487,8 +458,6 @@ q(6708),	-- [DEPRECATED] <TXT> BRD, DM, BRS,		CLASSIC: [DEPRECATED] <TXT> BRD, D
 q(6710),	-- [DEPRECATED] <TXT> UBRS, STRATH, SCHOL,		CLASSIC: [DEPRECATED] <TXT> UBRS, STRATH, SCHOL
 q(6721),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
 q(6722),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
-q(6761),	-- The New Frontier,		TBC: The New Frontier,		CLASSIC: The New Frontier
-q(6762),	-- Rabine Saturna,		TBC: Rabine Saturna,		CLASSIC: Rabine Saturna
 q(6841),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(6843),	-- Da Foo,		CLASSIC: Da Foo
 q(7384),	-- <nyi> <txt> The Scale Crafters,		CLASSIC: <nyi> <txt> The Scale Crafters
@@ -694,9 +663,6 @@ q(10931),	-- Return to the Exodar,		TBC: Return to the Exodar
 q(10932),	-- Return to the Exodar,		TBC: Return to the Exodar
 q(10933),	-- Return to Silvermoon,		TBC: Return to Silvermoon
 q(10934),	-- Return to Silvermoon,		TBC: Return to Silvermoon
-q(10955),	-- Morthis Whisperwing,		TBC: Morthis Whisperwing
-q(10965),	-- No Mere Dream,		TBC: No Mere Dream
-q(10978),	-- Return to Morthis Whisperwing,		TBC: Return to Morthis Whisperwing
 q(10999),	-- One Shot, One Kill,		TBC: One Shot, One Kill
 q(11121),	-- DAILY TEST QUEST (RAID),		TBC: DAILY TEST QUEST (RAID)
 q(11125),	-- [PH] New Hinterlands Quest,		TBC: [PH] New Hinterlands Quest

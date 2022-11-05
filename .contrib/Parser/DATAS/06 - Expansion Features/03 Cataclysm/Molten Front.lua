@@ -115,6 +115,11 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["sourceQuest"] = 29281,	-- Additional Armaments
 					["isDaily"] = true,
 				}),
+				q(29298, {	-- A Smoke-Stained Locket
+					["provider"] = { "i", 69854 },	-- Smoke-Stained Locket
+					["timeline"] = { "added 4.2.0.14241" },
+					["maps"] = { MOONGLADE },
+				}),
 				q(29281, {	-- Additional Armaments
 					["provider"] = { "n", 53214 },	-- Damek Bloombeard
 					["coord"] = { 47.0, 90.0, 338 },
@@ -472,6 +477,19 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["coord"] = { 45.5, 85.8, 338 },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["isDaily"] = true,
+				}),
+				q(29303, {	-- Tragedy and Family
+					["qg"] = 11801,	-- Rabine Saturna
+					["sourceQuest"] = 29302,	-- Unlocking the Secrets Within
+					["coord"] = { 51.6, 44.8, MOONGLADE },
+					["timeline"] = { "added 4.2.0.14133" },
+					["lvl"] = 85,
+				}),
+				q(29302, {	-- Unlocking the Secrets Within
+					["qg"] = 11801,	-- Rabine Saturna
+					["sourceQuest"] = 29298,	-- A Smoke-Stained Locket
+					["coord"] = { 51.6, 44.8, MOONGLADE },
+					["lvl"] = 85,
 				}),
 				q(29282, {	-- Well Armed
 					["provider"] = { "n", 52669 },	-- Matoclaw

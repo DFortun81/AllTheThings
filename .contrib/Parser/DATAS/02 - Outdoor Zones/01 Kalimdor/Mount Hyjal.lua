@@ -290,8 +290,21 @@ root("Zones", m(KALIMDOR, {
 						25985,	-- Wings Over Mount Hyjal
 					},
 				}),
+				q(25316, {	-- As Hyjal Burns
+					["qg"] = 39865,	-- Emissary Windsong
+					["sourceQuests"] = {
+						-- #if AFTER 7.3.5.25600
+						49855,	-- Disaster at Mount Hyjal
+						-- #endif
+						27726,	-- Hero's Call: Mount Hyjal!
+						27721,	-- Warchief's Command: Mount Hyjal!
+					},
+					["coord"] = { 45.4, 44.6, MOONGLADE },
+					["timeline"] = { "added 4.0.3.13277" },
+					["isBreadcrumb"] = true,
+				}),
 				q(27874, {	-- Aviana's Legacy
-					["provider"] = { "n", 40289 },	-- Ysera
+					["qg"] = 40289,	-- Ysera
 					["coord"] = { 62.0, 24.8, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25611,	-- Return from the Firelands (A)

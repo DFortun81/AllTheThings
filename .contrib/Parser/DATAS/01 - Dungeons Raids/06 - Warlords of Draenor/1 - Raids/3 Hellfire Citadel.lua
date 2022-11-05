@@ -836,6 +836,23 @@ root("Instances", tier(WOD_TIER, {
 			}),
 			d(15, {	-- Heroic
 				n(QUESTS, {
+					q(40962, {	-- Dark Waters
+						["qg"] = 102432,	-- Malfurion Stormrage
+						["sourceQuest"] = 40904,	-- Shadow of the Defiler
+						["coord"] = { 36.4, 41.6, MOONGLADE },
+						["timeline"] = { "removed 7.0.3" },
+						["lvl"] = 100,
+						["groups"] = {
+							i(128422, {	-- Grove Warden (MOUNT!)
+								["timeline"] = { "removed 7.0.3" },
+							}),
+						},
+					}),
+					q(40904, {	-- Shadow of the Defiler
+						["provider"] = { "i", 133762 },	-- Remnant of Chaos
+						["timeline"] = { "removed 7.0.3" },
+						["maps"] = { MOONGLADE },
+					}),
 					q(39504, {	-- The Fel Spire (Heroic)
 						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
 						["sourceQuests"] = { 39500 },	-- Well of Souls (Heroic)
@@ -1297,10 +1314,9 @@ root("Instances", tier(WOD_TIER, {
 				})),
 				cr(91331, e(1438, {	-- Archimonde
 					un(REMOVED_FROM_GAME, ach(10044)),	-- Ahead of the Curve: The Black Gate
-					un(REMOVED_FROM_GAME, i(133762, {
-						un(REMOVED_FROM_GAME, q(40904, {
-						})),
-					})),
+					i(133762, {	-- Remnant of Chaos
+						["timeline"] = { "removed 7.0.3" },
+					}),
 					i(124389),	-- Calamity's Edge
 					i(124382),	-- Edict of Argus
 					i(124372),	-- Gavel of the Eredar
@@ -1835,6 +1851,9 @@ root("Instances", tier(WOD_TIER, {
 						title(319),		-- , Defiler's End
 					}),
 					ig(123890),	-- Felsteel Annihilator (MOUNT!)
+					i(133762, {	-- Remnant of Chaos
+						["timeline"] = { "removed 7.0.3" },
+					}),
 					i(124389),	-- Calamity's Edge
 					i(124382),	-- Edict of Argus
 					i(124372),	-- Gavel of the Eredar
