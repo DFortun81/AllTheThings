@@ -1678,7 +1678,7 @@ namespace ATT
             Trace.WriteLine("Data Validation...");
             foreach (var container in Objects.AllContainers)
             {
-                ProcessingAchievementCategory = container.Key == "Achievements";
+                ProcessingAchievementCategory = container.Key.Contains("Achievement");
                 Process(container.Value, 0, 1);
             }
 
@@ -1688,7 +1688,7 @@ namespace ATT
             AdditionalProcessing();
             foreach (var container in Objects.AllContainers)
             {
-                ProcessingAchievementCategory = container.Key == "Achievements";
+                ProcessingAchievementCategory = container.Key.Contains("Achievement");
                 Process(container.Value, 0, 1);
             }
 
