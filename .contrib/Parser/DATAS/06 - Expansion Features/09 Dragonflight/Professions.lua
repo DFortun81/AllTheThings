@@ -45,6 +45,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL 
 				i(194714),	-- Miguel's Gift
 				-- Recipes
 				r(377978,{["u"]=15}),	-- Heart in a Bottle (ALCHEMY)
+				r(377981,{["u"]=15}),	-- Heart in a Bottle (BLACKSMITHING)
 				r(377983,{["u"]=15}),	-- Heart in a Bottle (ENGINEERING)
 				r(377915,{["u"]=15}),	-- Heart in a Bottle (JEWELCRAFTING)
 				r(377987,{["u"]=15}),	-- Heart in a Bottle (MINING)
@@ -198,10 +199,42 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL 
 			}),
 		}),
 		prof(BLACKSMITHING, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(376700),	-- Illustrious Insight
+					r(371412),	-- Khaz'gorite Blacksmith's Hammer
+					r(371374),	-- Khaz'gorite Blacksmith's Toolbox
+					r(371366),	-- Khaz'gorite Pickaxe
+					r(393853),	-- Master's Hammer
+					r(367608),	-- Primal Molten Breastplate
+					r(367622),	-- Primal Molten Defender
+					r(367606),	-- Primal Molten Gauntlets
+					r(365734),	-- Primal Molten Greataxe
+					r(367602),	-- Primal Molten Greatbelt
+					r(367605),	-- Primal Molten Helm
+					r(367604),	-- Primal Molten Legplates
+					r(367585),	-- Primal Molten Longsword
+					r(367586),	-- Primal Molten Mace
+					r(367603),	-- Primal Molten Pauldrons
+					r(367607),	-- Primal Molten Sabatons
+					r(365730),	-- Primal Molten Shortblade
+					r(365731),	-- Primal Molten Spellblade
+					r(367601),	-- Primal Molten Vambraces
+					r(365729),	-- Primal Molten Warglaive
+				},
+			}),
 			q(70358, {	-- Dragon Isles Blacksmithing
 				--["sourceQuests"] = {  },	--
 				["provider"] = { "n", 192563 },	-- Kholmar Sunrunner
 				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
+			}),
+			q(67221, {	-- A Head For Metal
+			-- Dont know more info about this quest
+				["maps"] = {THE_WAKING_SHORES},
+				["g"] = {
+					i(194963),	-- Plans: Black Dragon Seared Alloy
+				},
 			}),
 		}),
 		prof(COOKING, {

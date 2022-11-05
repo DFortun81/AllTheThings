@@ -30,7 +30,9 @@ root("PVP", pvp(tier(DF_TIER, {
 			ach(15953),	-- Rival II: Dragonflight Season 1
 		}),
 		filter(RECIPES, {
-			i(194637),	-- Design: Crimson Combatant's Jeweled Amulet (RECIPE!)
+			i(201258),	-- Bloodstained Pattern: Infurious Wildercloth Bolt (RECIPE!) ???????
+			i(201256),	-- Bloodstained Plans: Infurious Alloy (RECIPE!) ???????
+ 			i(194637),	-- Design: Crimson Combatant's Jeweled Amulet (RECIPE!)
 			i(194638),	-- Design: Crimson Combatant's Jeweled Signet (RECIPE!)
 			i(194646),	-- Design: Djaradin's "Pinata" (RECIPE!)
 			i(194270),	-- Pattern: Crimson Combatant's Wildercloth Bands (RECIPE!)
@@ -45,6 +47,17 @@ root("PVP", pvp(tier(DF_TIER, {
 			i(194257),	-- Pattern: Infurious Handwraps of Gesticulation (RECIPE!)
 			i(194258),	-- Pattern: Infurious Legwraps of Possibility (RECIPE!)
 			i(194269),	-- Pattern: Infurious Wildercloth Bolt (RECIPE!)
+			i(194459),	-- Plans: Crimson Combatant's Draconium Armguards (RECIPE!)
+			i(194454),	-- Plans: Crimson Combatant's Draconium Breastplate (RECIPE!)
+			i(194457),	-- Plans: Crimson Combatant's Draconium Gauntlets (RECIPE!)
+			i(194455),	-- Plans: Crimson Combatant's Draconium Greaves (RECIPE!)
+			i(194453),	-- Plans: Crimson Combatant's Draconium Helm (RECIPE!)
+			i(194456),	-- Plans: Crimson Combatant's Draconium Pauldrons (RECIPE!)
+			i(194458),	-- Plans: Crimson Combatant's Draconium Sabatons (RECIPE!)
+			i(194460),	-- Plans: Crimson Combatant's Draconium Waistguard (RECIPE!)
+			i(200102),	-- Plans: Infurious Alloy (RECIPE!)
+			i(194484),	-- Plans: Infurious Helm of Vengeance
+			i(194485),	-- Plans: Infurious Warboots of Impunity
 			i(199241),	-- Schematic: H.E.L.P. (RECIPE!)
 			i(199238),	-- Schematic: Sticky Warp Grenade (RECIPE!)
 			i(199239),	-- Schematic: Tinker: Alarm-O-Turret (RECIPE!)

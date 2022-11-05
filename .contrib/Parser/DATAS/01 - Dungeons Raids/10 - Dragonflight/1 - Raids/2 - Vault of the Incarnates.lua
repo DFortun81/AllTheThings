@@ -53,6 +53,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 				i(194259),	-- Pattern: Allied Cinch of Time Dilation (RECIPE!)
 				i(194266),	-- Pattern: Bronzed Grip Wrappings (RECIPE!)
 				i(194260),	-- Pattern: Blue Dragon Soles (RECIPE!)
+				i(194489),	-- Plans: Allied Chestplate of Generosity (RECIPE!)
+				i(194490),	-- Plans: Allied Wristguard of Companionship (RECIPE!)
 				i(191597),	-- Recipe: Potion Absorption Inhibitor (RECIPE!)
 				i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
 			}),

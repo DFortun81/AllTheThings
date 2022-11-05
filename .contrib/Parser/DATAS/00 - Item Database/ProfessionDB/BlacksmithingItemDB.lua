@@ -1917,129 +1917,125 @@ i(0, 359700);	-- Vestige of the Eternal
 ------------------
 -- PATCH 10.0.0 --
 ------------------
+-- TRAINER --
 i(0, 365677);	-- Dragon Isles Blacksmithing
-i(0, 367714);	-- Bloody Alloy
 i(0, 367600);	-- Draconium Axe
 i(0, 371344);	-- Draconium Blacksmith's Hammer
 i(0, 371364);	-- Draconium Blacksmith's Toolbox
+i(0, 393404);	-- Draconium Defender
 i(0, 367596);	-- Draconium Dirk
+i(0, 393416);	-- Draconium Great Axe
 i(0, 367598);	-- Draconium Great Mace
 i(0, 367595);	-- Draconium Knuckles
 i(0, 371338);	-- Draconium Leatherworker's Knife
 i(0, 371360);	-- Draconium Leatherworker's Toolset
 i(0, 371302);	-- Draconium Needle Set
 i(0, 371309);	-- Draconium Pickaxe
-i(0, 371396);	-- Draconium Repair Hammer
 i(0, 371343);	-- Draconium Sickle
 i(0, 371304);	-- Draconium Skinning Knife
 i(0, 367597);	-- Draconium Stiletto
 i(0, 367599);	-- Draconium Sword
-i(0, 376700);	-- Essence of Tyr
+i(0, 367611);	-- Explorer's Expert Clasp
+i(0, 395879);	-- Explorer's Expert Gauntlets
+i(0, 395881);	-- Explorer's Expert Greaves
+i(0, 395883);	-- Explorer's Expert Helm
+i(0, 395880);	-- Explorer's Expert Spaulders
 i(0, 367610);	-- Explorer's Plate Boots
 i(0, 367609);	-- Explorer's Plate Bracers
-i(0, 367611);	-- Explorer's Plate Chestguard
+i(0, 395886);	-- Explorer's Plate Chestguard
 i(0, 367712);	-- Frostfire Alloy
-i(0, 377981);	-- Heart in a Bottle
-i(0, 382579);	-- Opening
 i(0, 365735);	-- Primal Molten Alloy
-i(0, 377281);	-- Prototype Explorer's Barding Framework
-i(0, 377280);	-- Prototype Regal Barding Framework
-i(0, 371395);	-- Tyrivite Repair Hammer
-i(0, 376698);	-- Wisp of Tyr
+i(0, 371674);	-- Primal Weightstone
+i(0, 371650);	-- Primal Whetstone
+i(0, 385304);	-- Recraft Equipment
+i(0, 371395);	-- Serevite Repair Hammer
+i(0, 371394);	-- Serevite Skeleton Key
+-- ITEM --
 i(194489, 367615);	-- Allied Chestplate of Generosity
 i(194490, 367614);	-- Allied Wristguard of Companionship
 i(194508, 371403);	-- Alvin the Anvil
 i(194493, 371349);	-- Armor Spikes
-i(194963, 367713);	-- Black Dragon Seared Alloy
-i(194479, 367590);	-- Black Dragon Seared Claymore
-i(194481, 367591);	-- Black Dragon Seared Crusher
-i(194478, 367589);	-- Black Dragon Seared Facesmasher
-i(194480, 367588);	-- Black Dragon Seared Halberd
-i(194476, 367587);	-- Black Dragon Seared Hexsword
-i(194482, 367592);	-- Black Dragon Seared Invoker
-i(194477, 367594);	-- Black Dragon Seared Runeaxe
-i(194483, 367593);	-- Black Dragon Seared Slicer
 i(194503, 371372);	-- Black Dragon Touched Hammer
-i(194484, 367617);	-- Bloody Helm of Vengeance
-i(194485, 367616);	-- Bloody Warboots of Impunity
+i(194459, 376617);	-- Crimson Combatant's Draconium Armguards
+i(194454, 376618);	-- Crimson Combatant's Draconium Breastplate
+i(194457, 376619);	-- Crimson Combatant's Draconium Gauntlets
+i(194455, 376620);	-- Crimson Combatant's Draconium Greaves
+i(194453, 376621);	-- Crimson Combatant's Draconium Helm
+i(194456, 376622);	-- Crimson Combatant's Draconium Pauldrons
+i(194458, 376623);	-- Crimson Combatant's Draconium Sabatons
+i(194460, 376624);	-- Crimson Combatant's Draconium Waistguard
 i(194491, 367619);	-- Frostfire Legguards of Preparation
-i(194487, 367613);	-- Pauldrons of the Dragon
-i(194462, 367608);	-- Primal Molten Breastplate
-i(194469, 367622);	-- Primal Molten Defender
-i(194465, 367606);	-- Primal Molten Gauntlets
-i(194475, 365734);	-- Primal Molten Greataxe
-i(194468, 367602);	-- Primal Molten Greatbelt
-i(194461, 367605);	-- Primal Molten Helm
-i(194463, 367604);	-- Primal Molten Legplates
-i(194472, 367585);	-- Primal Molten Longsword
-i(194474, 367586);	-- Primal Molten Mace
-i(194464, 367603);	-- Primal Molten Pauldrons
-i(194466, 367607);	-- Primal Molten Sabatons
-i(194470, 365730);	-- Primal Molten Shortblade
-i(194471, 365731);	-- Primal Molten Spellblade
-i(194467, 367601);	-- Primal Molten Vambraces
-i(194473, 365729);	-- Primal Molten Warglaive
-i(194459, 376617);	-- PvP Starter Armguards (TBD)
-i(194454, 376618);	-- PvP Starter Breastplate (TBD)
-i(194457, 376619);	-- PvP Starter Gauntlets (TBD)
-i(194455, 376620);	-- PvP Starter Greaves (TBD)
-i(194453, 376621);	-- PvP Starter Helm (TBD)
-i(194456, 376622);	-- PvP Starter Pauldrons (TBD)
-i(194458, 376623);	-- PvP Starter Sabatons (TBD)
-i(194460, 376624);	-- PvP Starter Waistguard (TBD)
+i(200102, 367714);	-- Infurious Alloy
+i(201256, 367714);	-- Infurious Alloy
+i(194484, 367617);	-- Infurious Helm of Vengeance
+i(194485, 367616);	-- Infurious Warboots of Impunity
+i(194499, 371369);	-- Khaz'gorite Leatherworker's Knife
+i(194500, 371371);	-- Khaz'gorite Leatherworker's Toolset
+i(194498, 371368);	-- Khaz'gorite Needle Set
+i(194495, 371365);	-- Khaz'gorite Sickle
+i(194497, 371367);	-- Khaz'gorite Skinning Knife
+i(194963, 367713);	-- Obsidian Seared Alloy
+i(194479, 367590);	-- Obsidian Seared Claymore
+i(194481, 367591);	-- Obsidian Seared Crusher
+i(194478, 367589);	-- Obsidian Seared Facesmasher
+i(194480, 367588);	-- Obsidian Seared Halberd
+i(194476, 367587);	-- Obsidian Seared Hexsword
+i(194482, 367592);	-- Obsidian Seared Invoker
+i(194477, 367594);	-- Obsidian Seared Runeaxe
+i(194483, 367593);	-- Obsidian Seared Slicer
+i(194506, 371682);	-- Primal Razorstone
+i(198713, 377281);	-- Prototype Explorer's Barding Framework
+i(198714, 377280);	-- Prototype Regal Barding Framework
 i(194486, 367623);	-- Shield of the Hearth
-i(194506, 371682);	-- Tempered Dracothyst Razorstone
-i(194505, 371674);	-- Tempered Dracothyst Weightstone
-i(194504, 371650);	-- Tempered Dracothyst Whetstone
-i(194501, 371412);	-- Titanicium Blacksmith's Hammer
-i(194502, 371374);	-- Titanicium Blacksmith's Toolbox
-i(194499, 371369);	-- Titanicium Leatherworker's Knife
-i(194500, 371371);	-- Titanicium Leatherworker's Toolset
-i(194498, 371368);	-- Titanicium Needle Set
-i(194496, 371366);	-- Titanicium Pickaxe
-i(194495, 371365);	-- Titanicium Sickle
-i(194497, 371367);	-- Titanicium Skinning Knife
-i(194488, 367612);	-- Traitorous Primal Gauntlets of the Dragon
-i(194507, 371394);	-- Tyrivite Skeleton Key
+i(198719, 388279);	-- Sturdy Expedition Shovel
 i(194492, 367618);	-- Unstable Frostfire Belt
-
-
-i(0, 365677);	-- Dragon Isles Blacksmithing
-i(0, 365735);	-- Primal Molten Alloy
-i(0, 367595);	-- Draconium Knuckles
-i(0, 367596);	-- Draconium Dirk
-i(0, 367597);	-- Draconium Stiletto
-i(0, 367598);	-- Draconium Great Mace
-i(0, 367599);	-- Draconium Sword
-i(0, 367600);	-- Draconium Axe
-i(0, 367609);	-- Explorer's Plate Bracers
-i(0, 367610);	-- Explorer's Plate Boots
-i(0, 367611);	-- Explorer's Expert Clasp \\ Explorer's Plate Chestguard
-i(0, 367712);	-- Frostfire Alloy
-i(0, 367714);	-- Infurious Alloy \\ Bloody Alloy
-i(0, 371302);	-- Draconium Needle Set
-i(0, 371304);	-- Draconium Skinning Knife
-i(0, 371309);	-- Draconium Pickaxe
-i(0, 371338);	-- Draconium Leatherworker's Knife
-i(0, 371343);	-- Draconium Sickle
-i(0, 371344);	-- Draconium Blacksmith's Hammer
-i(0, 371360);	-- Draconium Leatherworker's Toolset
-i(0, 371364);	-- Draconium Blacksmith's Toolbox
-i(0, 371395);	-- Serevite Repair Hammer \\ Tyrivite Repair Hammer
-i(0, 371396);	-- Draconium Repair Hammer
-i(0, 376698);	-- Wisp of Tyr
-i(0, 376700);	-- Illustrious Insight \\ Essence of Tyr
-i(0, 377280);	-- Prototype Regal Barding Framework
-i(0, 377281);	-- Prototype Explorer's Barding Framework
-i(0, 377981);	-- Heart in a Bottle
-i(0, 382579);	-- Opening
-i(0, 385304);	-- Recraft Equipment \\ Recraft Equipment [NYI] \\ Recraft Dragon Isles Equipment
-i(0, 388279);	-- Sturdy Expedition Shovel \\ Sturdy Expedition shovel
-i(0, 393404);	-- Draconium Defender
-i(0, 393416);	-- Draconium Great Axe
+-- SPECIALIZATION --
+i(0, 376700);	-- Illustrious Insight
+i(0, 371412);	-- Khaz'gorite Blacksmith's Hammer
+i(0, 371374);	-- Khaz'gorite Blacksmith's Toolbox
+i(0, 371366);	-- Khaz'gorite Pickaxe
 i(0, 393853);	-- Master's Hammer
-i(0, 395879);	-- Explorer's Expert Gauntlets
-i(0, 395880);	-- Explorer's Expert Spaulders
-i(0, 395881);	-- Explorer's Expert Greaves
-i(0, 395883);	-- Explorer's Expert Helm
-i(0, 395886);	-- Explorer's Plate Chestguard
+i(0, 367608);	-- Primal Molten Breastplate
+i(0, 367622);	-- Primal Molten Defender
+i(0, 367606);	-- Primal Molten Gauntlets
+i(0, 365734);	-- Primal Molten Greataxe
+i(0, 367602);	-- Primal Molten Greatbelt
+i(0, 367605);	-- Primal Molten Helm
+i(0, 367604);	-- Primal Molten Legplates
+i(0, 367585);	-- Primal Molten Longsword
+i(0, 367586);	-- Primal Molten Mace
+i(0, 367603);	-- Primal Molten Pauldrons
+i(0, 367607);	-- Primal Molten Sabatons
+i(0, 365730);	-- Primal Molten Shortblade
+i(0, 365731);	-- Primal Molten Spellblade
+i(0, 367601);	-- Primal Molten Vambraces
+i(0, 365729);	-- Primal Molten Warglaive
+-- QUEST --
+i(0, 377981);	-- Heart in a Bottle
+-- NYI --
+i(0, 371396);	-- Draconium Repair Hammer
+i(0, 382579);	-- Opening
+i(0, 376698);	-- Wisp of Tyr
+i(194487, 367613);	-- Pauldrons of the Dragon
+i(194488, 367612);	-- Traitorous Primal Gauntlets of the Dragon
+i(194501, 0);	-- Khaz'gorite Blacksmith's Hammer
+i(194502, 0);	-- Khaz'gorite Blacksmith's Toolbox
+i(194496, 0);	-- Khaz'gorite Pickaxe
+i(194462, 0);	-- Primal Molten Breastplate
+i(194469, 0);	-- Primal Molten Defender
+i(194465, 0);	-- Primal Molten Gauntlets
+i(194475, 0);	-- Primal Molten Greataxe
+i(194468, 0);	-- Primal Molten Greatbelt
+i(194461, 0);	-- Primal Molten Helm
+i(194463, 0);	-- Primal Molten Legplates
+i(194472, 0);	-- Primal Molten Longsword
+i(194474, 0);	-- Primal Molten Mace
+i(194464, 0);	-- Primal Molten Pauldrons
+i(194466, 0);	-- Primal Molten Sabatons
+i(194470, 0);	-- Primal Molten Shortblade
+i(194471, 0);	-- Primal Molten Spellblade
+i(194467, 0);	-- Primal Molten Vambraces
+i(194473, 0);	-- Primal Molten Warglaive
+i(194505, 0);	-- Primal Weightstone
+i(194504, 0);	-- Primal Whetstone
+i(194507, 0);	-- Serevite Skeleton Key

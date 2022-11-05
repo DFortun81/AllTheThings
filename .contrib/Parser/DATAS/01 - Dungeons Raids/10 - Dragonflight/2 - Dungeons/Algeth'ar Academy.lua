@@ -19,6 +19,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 			n(ZONE_DROPS, {
 				i(194255),	-- Pattern: Amice of the Blue (RECIPE!)
 				i(194256),	-- Pattern: Hood of Surging Time (RECIPE!)
+				i(194491),	-- Plans: Frostfire Legguards of Preparation (RECIPE!)
+				i(194492),	-- Plans: Unstable Frostfire Belt (RECIPE!)
 			}),
 			d(1, {	-- Normal
 				e(2562, {	-- Vexamus

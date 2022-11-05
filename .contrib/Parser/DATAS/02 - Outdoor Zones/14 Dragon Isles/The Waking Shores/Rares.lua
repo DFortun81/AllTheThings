@@ -26,6 +26,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 				["description"] = "Underground",
 				["coord"] = { 24.4, 54.5, THE_WAKING_SHORES },
 			}),
+			n(187598, {	-- Rohzor Forgesmash <Djaradin Smithmaster>
+				["coord"] = { 25.6, 60.4, THE_WAKING_SHORES },
+				["g"] = {
+					i(194503),	-- Plans: Black Dragon Touched Hammer (RECIPE!)
+				},
+			}),
 			n(190971, {	-- Shas'ith
 				["description"] = "Underground",
 				["coord"] = { 24.5, 57.8, THE_WAKING_SHORES },

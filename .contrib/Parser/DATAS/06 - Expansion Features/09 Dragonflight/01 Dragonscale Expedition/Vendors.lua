@@ -9,7 +9,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 				["g"] = {
 						-- RENOWN 5 --
-					i(198719),	-- Plans: Sturdy Expedition Shover (RECIPE!)
+					i(198719),	-- Plans: Sturdy Expedition Shovel (RECIPE!)
 						-- RENOWN 9 --
 					i(198781),	-- Schematic: Gravitational Displacer (RECIPE!)
 					i(198784),	-- Schematic: Primal Deconstruction Charge (RECIPE!)

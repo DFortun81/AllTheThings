@@ -1101,6 +1101,7 @@ pet(0, 3249, {			-- Lil' Ursoc
 -- PATCH 10.0.0 --
 ------------------
 -- SOURCED
+pet(191886, 3274);	-- Alvin the Anvil
 pet(198726, 3380);	-- Black Skitterbug
 pet(199688, 3279);	-- Bronze Racing Enthusiast
 pet(199326, 3376);	-- Chip
@@ -1145,7 +1146,6 @@ pet(193620, 3267);	-- Time-Lost Slyvern
 pet(0, 3268);	-- Swog
 pet(193852, 3269);	-- Azure Frillfish
 pet(192459, 3270);	-- Jean's Lucky Fish
-pet(191886, 3274);	-- Alvin the Anvil
 pet(193066, 3275);	-- Chestnut
 pet(193068, 3277);	-- Time-Lost Treeflitter
 pet(193071, 3278);	-- Pistachio

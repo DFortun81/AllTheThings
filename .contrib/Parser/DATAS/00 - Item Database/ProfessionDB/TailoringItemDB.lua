@@ -99,6 +99,7 @@ i(194256, 376492);	-- Hood of Surging Time
 i(194257, 376494);	-- Infurious Handwraps of Gesticulation
 i(194258, 376495);	-- Infurious Legwraps of Possibility
 i(194269, 376559);	-- Infurious Wildercloth Bolt
+i(201258, 376559);	-- Infurious Wildercloth Bolt
 i(194288, 376544);	-- Master's Wildercloth Alchemist's Robe
 i(194289, 376548);	-- Master's Wildercloth Chef's Hat
 i(194290, 376550);	-- Master's Wildercloth Enchanter's Hat
@@ -107,7 +108,7 @@ i(194292, 376554);	-- Master's Wildercloth Gardening Hat
 i(194267, 376537);	-- Shimmering Embroidery Thread
 i(194262, 376540);	-- Temporal Spellthread
 i(194293, 376534);	-- Vibrant Polishing Cloth
--- SPECIALiZATION --
+-- SPECIALIZATION --
 i(0, 376556);	-- Azureweave Bolt
 i(0, 376502);	-- Azureweave Mantle
 i(0, 376500);	-- Azureweave Robe

@@ -484,129 +484,26 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(190454),	-- Primal Chaos
 			i(190455),	-- Concentrated Primal Focus
 			i(190456),	-- Artisan's Mettle
-			prof(BLACKSMITHING, {
-				i(189541),	-- Primal Molten Alloy+
-				i(189542),	-- Primal Molten Alloy++
-				i(189543),	-- Primal Molten Alloy+++
-				i(190530),	-- Frostfire Alloy+
-				i(190531),	-- Frostfire Alloy++
-				i(190532),	-- Frostfire Alloy+++
-				i(190533),	-- Obsidian Seared Alloy+
-				i(190534),	-- Obsidian Seared Alloy++
-				i(190535),	-- Obsidian Seared Alloy+++
-				i(190536),	-- Infurious Alloy+
-				i(190537),	-- Infurious Alloy++
-				i(190538),	-- Infurious Alloy+++
-				i(190482),	-- Draconium Stiletto
-				i(190483),	-- Draconium Dirk
-				i(190484),	-- Draconium Sword
-				i(190485),	-- Draconium Knuckles
-				i(190486),	-- Draconium Great Mace
-				i(190487),	-- Draconium Axe
-				i(190495),	-- Primal Molten Breastplate
-				i(190496),	-- Primal Molten Sabatons
-				i(190497),	-- Primal Molten Gauntlets
-				i(190498),	-- Primal Molten Helm
-				i(190499),	-- Primal Molten Legplates
-				i(190500),	-- Primal Molten Pauldrons
-				i(190501),	-- Primal Molten Greatbelt
-				i(190502),	-- Primal Molten Vambraces
-				i(190503),	-- Primal Molten Defender
-				i(190505),	-- Primal Molten Shortblade
-				i(190506),	-- Primal Molten Spellblade
-				i(190507),	-- Primal Molten Longsword
-				i(190508),	-- Primal Molten Warglaive
-				i(190509),	-- Primal Molten Mace
-				i(190510),	-- Primal Molten Greataxe
-				i(190511),	-- Obsidian Seared Hexsword
-				i(190512),	-- Obsidian Seared Runeaxe
-				i(190513),	-- Obsidian Seared Facesmasher
-				i(190514),	-- Obsidian Seared Claymore
-				i(190515),	-- Obsidian Seared Halberd
-				i(190516),	-- Obsidian Seared Crusher
-				i(190517),	-- Obsidian Seared Invoker
-				i(190518),	-- Obsidian Seared Slicer
-				i(190519),	-- Allied Chestplate of Generosity
-				i(190522),	-- Infurious Helm of Vengeance
-				i(190523),	-- Frostfire Legguards of Preparation
-				i(190526),	-- Allied Wristguard of Companionship
-				i(190520),	-- zzOldPauldrons of the Dragon
-				i(190521),	-- zzOldTraitorous Primal Gauntlets of the Dragon
-				i(191223),	-- Khaz'gorite Pickaxe
-				i(191224),	-- Khaz'gorite Sickle
-				i(191225),	-- Khaz'gorite Skinning Knife
-				i(191226),	-- Khaz'gorite Needle Set
-				i(191227),	-- Khaz'gorite Leatherworker's Knife
-				i(191228),	-- Black Dragon Touched Hammer
-				i(191229),	-- Khaz'gorite Leatherworker's Toolset
-				i(191230),	-- Khaz'gorite Blacksmith's Toolbox
-				i(191231),	-- Alchemist's Brilliant Mixing Rod
-				i(191232),	-- Chef's Splendid Rolling Pin
-				i(191233),	-- Chef's Smooth Rolling Pin
-				i(191234),	-- Alchemist's Sturdy Mixing Rod
-				i(191235),	-- Draconium Blacksmith's Toolbox
-				i(191236),	-- Draconium Leatherworker's Toolset
-				i(191237),	-- Draconium Blacksmith's Hammer
-				i(191238),	-- Draconium Leatherworker's Knife
-				i(191239),	-- Draconium Needle Set
-				i(191240),	-- Draconium Skinning Knife
-				i(191241),	-- Draconium Sickle
-				i(191242),	-- Draconium Pickaxe
-				i(191250),	-- Armor Spikes+
-				i(191252),	-- Reinforced Plating+
-				i(191256),	-- Serevite Skeleton Key
-				i(191260),	-- Serevite Repair Hammer
-				i(191261),	-- Draconium Repair Hammer
-
-				i(191623),	-- Unstable Frostfire Belt
-
-				i(191872),	-- Armor Spikes++
-				i(191873),	-- Armor Spikes+++
-				i(191874),	-- Reinforced Plating++
-				i(191875),	-- Reinforced Plating+++
-				i(191876),	-- DNT - Stonename Razorstone
-				i(191877),	-- DNT - Stonename Razorstone
-				i(191878),	-- DNT - Stonename Weightstone
-				i(191879),	-- DNT - Stonename Weightstone
-				i(191880),	-- DNT - Stonename Whetstone
-				i(191881),	-- DNT - Stonename Whetstone
-				i(191882),	-- Serevite Repair Hammer
-				i(191883),	-- Serevite Repair Hammer
-				i(191884),	-- Draconium Repair Hammer
-				i(191885),	-- Draconium Repair Hammer
-				-- PET
-				i(191886),	-- Alvin the Anvil
-
-				i(191888),	-- Khaz'gorite Blacksmith's Hammer
-				i(191933),	-- Primal Whetstone+
-
-				i(193602),	-- Crimson Combatant's Draconium Breastplate
-				i(193603),	-- Crimson Combatant's Draconium Sabatons
-				i(193604),	-- Crimson Combatant's Draconium Gauntlets
-				i(193605),	-- Crimson Combatant's Draconium Helm
-				i(193606),	-- Crimson Combatant's Draconium Greaves
-				i(193607),	-- Crimson Combatant's Draconium Pauldrons
-				i(193608),	-- Crimson Combatant's Draconium Waistguard
-				i(193609),	-- Crimson Combatant's Draconium Armguards
-
-				i(191939),	-- Primal Whetstone++
-				i(191940),	-- Primal Whetstone+++
-				i(191943),	-- Primal Weightstone+
-				i(191944),	-- Primal Weightstone++
-				i(191945),	-- Primal Weightstone+++
-				i(191948),	-- Primal Razorstone+
-				i(191949),	-- Primal Razorstone++
-				i(191950),	-- Primal Razorstone+++
-				i(191985),	-- Infurious Warboots of Impunity
-				i(192095),	-- Spool of Wilderthread+
-				i(192096),	-- Spool of Wilderthread++
-				i(192097),	-- Spool of Wilderthread+++
-				i(192078),	-- Bottled Putrescence
-				i(192081),	-- Shield of the Hearth
-				i(192552),	-- Draconic Missive of the Fireflash+++
-				i(192553),	-- Draconic Missive of the Fireflash+
-				i(192554),	-- Draconic Missive of the Fireflash++
-			}),
+			i(191231),	-- Alchemist's Brilliant Mixing Rod
+			i(191232),	-- Chef's Splendid Rolling Pin
+			i(191233),	-- Chef's Smooth Rolling Pin
+			i(191234),	-- Alchemist's Sturdy Mixing Rod
+			i(191252),	-- Reinforced Plating+
+			i(191874),	-- Reinforced Plating++
+			i(191875),	-- Reinforced Plating+++
+			i(191876),	-- DNT - Stonename Razorstone
+			i(191877),	-- DNT - Stonename Razorstone
+			i(191878),	-- DNT - Stonename Weightstone
+			i(191879),	-- DNT - Stonename Weightstone
+			i(191880),	-- DNT - Stonename Whetstone
+			i(191881),	-- DNT - Stonename Whetstone
+			i(192095),	-- Spool of Wilderthread+
+			i(192096),	-- Spool of Wilderthread++
+			i(192097),	-- Spool of Wilderthread+++
+			i(192078),	-- Bottled Putrescence
+			i(192552),	-- Draconic Missive of the Fireflash+++
+			i(192553),	-- Draconic Missive of the Fireflash+
+			i(192554),	-- Draconic Missive of the Fireflash++
 			prof(HERBALISM, {
 				i(191460),	-- Hochenblume+
 				i(191461),	-- Hochenblume++
@@ -814,7 +711,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(190233),	-- Maruuk Centaur Supplies
 			i(190340),	-- Plainshunter's Supplies
 			i(191203),	-- Dragonscale Expedition Supplies
-			i(191304),	-- Sturdy Expedition Shovel
+
 			i(190954),	-- Serevite Lockbox
 			i(191296),	-- Enchanted Lockbox
 			-- Treasure Hunt?
@@ -1327,62 +1224,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193201),	-- Key Framing
 			i(194337),	-- Liquid Courage
 		}),
-		i(194453),	-- Plans: Crimson Combatant's Draconium Helm
-		i(194454),	-- Plans: Crimson Combatant's Draconium Breastplate
-		i(194455),	-- Plans: Crimson Combatant's Draconium Greaves
-		i(194456),	-- Plans: Crimson Combatant's Draconium Pauldrons
-		i(194457),	-- Plans: Crimson Combatant's Draconium Gauntlets
-		i(194458),	-- Plans: Crimson Combatant's Draconium Sabatons
-		i(194459),	-- Plans: Crimson Combatant's Draconium Armguards
-		i(194460),	-- Plans: Crimson Combatant's Draconium Waistguard
-		i(194461),	-- Plans: Primal Molten Helm
-		i(194462),	-- Plans: Primal Molten Breastplate
-		i(194463),	-- Plans: Primal Molten Legplates
-		i(194464),	-- Plans: Primal Molten Pauldrons
-		i(194465),	-- Plans: Primal Molten Gauntlets
-		i(194466),	-- Plans: Primal Molten Sabatons
-		i(194467),	-- Plans: Primal Molten Vambraces
-		i(194468),	-- Plans: Primal Molten Greatbelt
-		i(194469),	-- Plans: Primal Molten Defender
-		i(194470),	-- Plans: Primal Molten Shortblade
-		i(194471),	-- Plans: Primal Molten Spellblade
-		i(194472),	-- Plans: Primal Molten Longsword
-		i(194473),	-- Plans: Primal Molten Warglaive
-		i(194474),	-- Plans: Primal Molten Mace
-		i(194475),	-- Plans: Primal Molten Greataxe
-		i(194476),	-- Plans: Obsidian Seared Hexsword
-		i(194477),	-- Plans: Obsidian Seared Runeaxe
-		i(194478),	-- Plans: Obsidian Seared Facesmasher
-		i(194479),	-- Plans: Obsidian Seared Claymore
-		i(194480),	-- Plans: Obsidian Halberd
-		i(194481),	-- Plans: Obsidian Seared Crusher
-		i(194482),	-- Plans: Obsidian Seared Invoker
-		i(194483),	-- Plans: Obsidian Seared Slicer
-		i(194484),	-- Plans: Infurious Helm of Vengeance
-		i(194485),	-- Plans: Infurious Warboots of Impunity
-		i(194486),	-- Plans: Shield of the Hearth
-		i(194487),	-- Plans: Pauldrons of the Dragon
-		i(194488),	-- Plans: Traitorous Primal Gauntlets of the Dragon
-		i(194489),	-- Plans: Allied Chestplate of Generosity
-		i(194490),	-- Plans: Allied Wristguard of Companionship
-		i(194491),	-- Plans: Frostfire Legguards of Preparation
-		i(194492),	-- Plans: Unstable Frostfire Belt
-		i(194493),	-- Plans: Armor Spikes
 		i(194494),	-- Reinforced Plating
-		i(194495),	-- Plans: Khaz'gorite Sickle
-		i(194496),	-- Plans: Khaz'gorite Pickaxe
-		i(194497),	-- Plans: Khaz'gorite Skinning Knife
-		i(194498),	-- Plans: Khaz'gorite Needle Set
-		i(194499),	-- Plans: Khaz'gorite Leatherworker's Knife
-		i(194500),	-- Plans: Khaz'gorite Leatherworker's Toolset
-		i(194501),	-- Plans: Khaz'gorite Blacksmith's Hammer
-		i(194502),	-- Plans: Khaz'gorite Blacksmith's Toolbox
-		i(194503),	-- Plans: Black Dragon Touched Hammer
-		i(194504),	-- Plans: Primal Whetstone
-		i(194505),	-- Plans: Primal Weightstone
-		i(194506),	-- Plans: Primal Razorstone
-		i(194507),	-- Plans: Serevite Skeleton Key
-		i(194508),	-- Plans: Alvin the Anvil
 		i(194510),	-- Iskaaran Harpoon
 		i(194522),	-- Blue Winglord's Staff
 		i(194523),	-- Blue Winglord's Chain
@@ -1402,8 +1244,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194537),	-- Fiddle with Draconium Fabric Cutters
 		i(194538),	-- Fiddle with Khaz'gorite Fabric Cutters
 		i(194540),	-- Nokhud Armorer's Notes
-		i(194541),	-- Prototype Regal Barding Framework
-		i(194542),	-- Prototype Explorer's Barding Framework
+
 		i(194566),	-- Draconic Missive of the Feverflare+++
 		i(194567),	-- Draconic Missive of the Feverflare+
 		i(194568),	-- Draconic Missive of the Feverflare++
@@ -1544,7 +1385,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194898),	-- Illuminating Pillar of the Isles
 		i(194902),	-- Ooey-Gooey Chocolate
 		i(194903),	-- Pocket Chocolate
-		i(194963),	-- Plans: Obsidian Seared Alloy
+
 		i(194964),	-- Recipe: Thrice-Spiced Mammoth Kabob
 		i(194965),	-- Recipe: Yusa's Hearty Stew
 		i(194966),	-- Thousandbite Piranha
@@ -2200,11 +2041,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198710),	-- Canteen of Suspicious Water
 		i(198711),	-- Poacher's Pack
 		i(198712),	-- Firewater Powder Sample
-		i(198713),	-- Plans: Prototype Explorer's Barding Framework
-		i(198714),	-- Plans: Prototype Regal Barding Framework
 		i(198715),	-- Runed Draconium Rod
 		i(198716),	-- Runed Khaz'gorite Rod
-		i(198719),	-- Plans: Sturdy Expedition Shovel - NYI
+
 		i(198723),	-- Expedition Binoculars (NYI)
 		i(198724),	-- Expedition Telescope (NYI)
 		i(198730),	-- Dragonscale Expedition Tabard
@@ -2642,7 +2481,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200094),	-- Aylaag Strongbox
 		i(200095),	-- Supply Laden Soup Pot
 
-		i(200102),	-- Plans: Infurious Alloy
+
 		i(200103),	-- Pattern: Infurious Hide
 		i(200104),	-- Pattern: Infurious Scales
 
@@ -3421,7 +3260,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201253),	-- Competitor's Edge
 		i(201254),	-- Medal of Honor
 		i(201255),	-- Medal of Honor
-		i(201256),	-- Bloodstained Plans: Infurious Alloy
+
 		i(201257),	-- Bloodstained Pattern: Infurious Hide
 		i(201258),	-- Bloodstained Pattern: Infurious Wildercloth Bolt
 		i(201259),	-- Bloodstained Pattern: Infurious Scales
@@ -3485,9 +3324,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201319),	-- Illusory Adornment: Order
 		i(201320),	-- Illusory Adornment: Order
 		i(201321),	-- Illusory Adornment: Order
-		i(201322),	-- Draconium Defender
+
 		i(201323),	-- Essence of Awakening
-		i(201324),	-- Draconium Great Axe
+
 		i(201325),	-- Draconic Augment Rune
 		i(201326),	-- Draconic Satchel of Cooperation
 		i(201327),	-- Emerald Dreamtime
@@ -3528,7 +3367,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201362),	-- Fated Equipment Chest
 		i(201363),	-- Brackenhide Hollow Maul
 		i(201365),	-- Brackenhide Gnoll Guard
-		i(201366),	-- Master's Hammer
+
 		i(201367),	-- Hollow Hunter's Sticker
 		i(201368),	-- Brackenhide Hollow Barbslinger
 		i(201369),	-- Hollow Greatwood Pestilence
@@ -3766,11 +3605,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201948),	-- Trailblazer's Toughened Grips
 		i(201949),	-- Trailblazer's Toughened Legguards
 		i(201950),	-- Trailblazer's Toughened Chainbelt
-		i(201951),	-- Explorer's Expert Helm
-		i(201952),	-- Explorer's Expert Spaulders
-		i(201953),	-- Explorer's Expert Gauntlets
-		i(201954),	-- Explorer's Expert Greaves
-		i(201955),	-- Explorer's Expert Clasp
+
 		i(201967),	-- Autographed Skull
 		i(201968),	-- Enormous Grain of Salt
 		i(201969),	-- Threatening Note
@@ -3925,7 +3760,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194119),	-- Ornamented Shield
 		i(194120),	-- Decorated Teapot
 		i(194121),	-- Handcrafted Boat
-		i(194480),	-- Plans: Obsidian Seared Halberd
+
 		i(194715),	-- Gatherer's Reagent Pouch
 		i(194838),	-- Highland Drake Manuscript: Spined Head
 		i(198072),	-- Gold-Banded Dragon Tooth
@@ -4015,6 +3850,42 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191582),	-- Recipe: Transmute: Decay to Elements (RECIPE!)
 			i(191583),	-- Recipe: Transmute: Order to Elements (RECIPE!)
 			i(191592),	-- Recipe: Writhefire Oil (RECIPE!)
+		}),
+		prof(BLACKSMITHING, {
+			r(371396),	-- Draconium Repair Hammer
+			r(382579),	-- Opening
+			r(376698),	-- Wisp of Tyr
+			--
+			i(194487),	-- Plans: Pauldrons of the Dragon (RECIPE!)
+			i(194488),	-- Plans: Traitorous Primal Gauntlets of the Dragon (RECIPE!)
+			-- Only Items
+			i(194501),	-- Plans: Khaz'gorite Blacksmith's Hammer (RECIPE!)
+			i(194502),	-- Plans: Khaz'gorite Blacksmith's Toolbox (RECIPE!)
+			i(194496),	-- Plans: Khaz'gorite Pickaxe (RECIPE!)
+			i(194462),	-- Plans: Primal Molten Breastplate (RECIPE!)
+			i(194469),	-- Plans: Primal Molten Defender (RECIPE!)
+			i(194465),	-- Plans: Primal Molten Gauntlets (RECIPE!)
+			i(194475),	-- Plans: Primal Molten Greataxe (RECIPE!)
+			i(194468),	-- Plans: Primal Molten Greatbelt (RECIPE!)
+			i(194461),	-- Plans: Primal Molten Helm (RECIPE!)
+			i(194463),	-- Plans: Primal Molten Legplates (RECIPE!)
+			i(194472),	-- Plans: Primal Molten Longsword (RECIPE!)
+			i(194474),	-- Plans: Primal Molten Mace (RECIPE!)
+			i(194464),	-- Plans: Primal Molten Pauldrons (RECIPE!)
+			i(194466),	-- Plans: Primal Molten Sabatons (RECIPE!)
+			i(194470),	-- Plans: Primal Molten Shortblade (RECIPE!)
+			i(194471),	-- Plans: Primal Molten Spellblade (RECIPE!)
+			i(194467),	-- Plans: Primal Molten Vambraces (RECIPE!)
+			i(194473),	-- Plans: Primal Molten Warglaive (RECIPE!)
+			i(194505),	-- Plans: Primal Weightstone (RECIPE!)
+			i(194504),	-- Plans: Primal Whetstone (RECIPE!)
+			i(194507),	-- Plans: Serevite Skeleton Key (RECIPE!)
+			--
+			i(191261),	-- Draconium Repair Hammer
+			i(191884),	-- Draconium Repair Hammer
+			i(191885),	-- Draconium Repair Hammer
+			i(190520),	-- zzOldPauldrons of the Dragon
+			i(190521),	-- zzOldTraitorous Primal Gauntlets of the Dragon
 		}),
 		prof(ENGINEERING, {
 			r(382581),	-- Opening
@@ -4183,64 +4054,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194051),	-- Wildercloth Weapon Upholstery
 		}),
 		--[[
-		prof(BLACKSMITHING, {
-			i(194489),	-- Plans: Allied Chestplate of Generosity (RECIPE!)
-			i(194490),	-- Plans: Allied Wristguard of Companionship (RECIPE!)
-			i(194508),	-- Plans: Alvin the Anvil (RECIPE!)
-			i(194493),	-- Armor Spikes (RECIPE!)
-			i(194963),	-- Plans: Black Dragon Seared Alloy (RECIPE!)
-			i(194479),	-- Plans: Black Dragon Seared Claymore (RECIPE!)
-			i(194481),	-- Plans: Black Dragon Seared Crusher (RECIPE!)
-			i(194478),	-- Plans: Black Dragon Seared Facesmasher (RECIPE!)
-			i(194480),	-- Plans: Black Dragon Seared Halberd (RECIPE!)
-			i(194476),	-- Plans: Black Dragon Seared Hexsword (RECIPE!)
-			i(194482),	-- Plans: Black Dragon Seared Invoker (RECIPE!)
-			i(194477),	-- Plans: Black Dragon Seared Runeaxe (RECIPE!)
-			i(194483),	-- Plans: Black Dragon Seared Slicer (RECIPE!)
-			i(194503),	-- Plans: Black Dragon Touched Hammer (RECIPE!)
-			i(194484),	-- Plans: Bloody Helm of Vengeance (RECIPE!)
-			i(194485),	-- Plans: Bloody Warboots of Impunity (RECIPE!)
-			i(194491),	-- Plans: Frostfire Legguards of Preparation (RECIPE!)
-			i(194487),	-- Plans: Pauldrons of the Dragon (RECIPE!)
-			i(194462),	-- Plans: Primal Molten Breastplate (RECIPE!)
-			i(194469),	-- Plans: Primal Molten Defender (RECIPE!)
-			i(194465),	-- Plans: Primal Molten Gauntlets (RECIPE!)
-			i(194475),	-- Plans: Primal Molten Greataxe (RECIPE!)
-			i(194468),	-- Plans: Primal Molten Greatbelt (RECIPE!)
-			i(194461),	-- Plans: Primal Molten Helm (RECIPE!)
-			i(194463),	-- Plans: Primal Molten Legplates (RECIPE!)
-			i(194472),	-- Plans: Primal Molten Longsword (RECIPE!)
-			i(194474),	-- Plans: Primal Molten Mace (RECIPE!)
-			i(194464),	-- Plans: Primal Molten Pauldrons (RECIPE!)
-			i(194466),	-- Plans: Primal Molten Sabatons (RECIPE!)
-			i(194467),	-- Plans: Primal Molten Vambraces (RECIPE!)
-			i(194470),	-- Plans: Primal Molten Shortblade (RECIPE!)
-			i(194471),	-- Plans: Primal Molten Spellblade (RECIPE!)
-			i(194473),	-- Plans: Primal Molten Warglaive (RECIPE!)
-			i(194459),	-- Plans: PvP Starter Armguards (TBD) (RECIPE!)
-			i(194454),	-- Plans: PvP Starter Breastplate (TBD) (RECIPE!)
-			i(194457),	-- Plans: PvP Starter Gauntlets (TBD) (RECIPE!)
-			i(194455),	-- Plans: PvP Starter Greaves (TBD) (RECIPE!)
-			i(194453),	-- Plans: PvP Starter Helm (TBD) (RECIPE!)
-			i(194456),	-- Plans: PvP Starter Pauldrons (TBD) (RECIPE!)
-			i(194458),	-- Plans: PvP Starter Sabatons (TBD) (RECIPE!)
-			i(194460),	-- Plans: PvP Starter Waistguard (TBD) (RECIPE!)
-			i(194486),	-- Plans: Shield of the Hearth (RECIPE!)
-			i(194506),	-- DNT Plans: <Dracothyst > Razorstone (RECIPE!)
-			i(194505),	-- DNT Plans: <Dracothyst > Weightstone (RECIPE!)
-			i(194504),	-- DNT Plans: <Dracothyst> Whetstone (RECIPE!)
-			i(194501),	-- Plans: Titanicium Blacksmith's Hammer (RECIPE!)
-			i(194502),	-- Plans: Titanicium Blacksmith's Toolbox (RECIPE!)
-			i(194499),	-- Plans: Titanicium Leatherworker's Knife (RECIPE!)
-			i(194500),	-- Plans: Titanicium Leatherworker's Toolset (RECIPE!)
-			i(194498),	-- Plans: Titanicium Needle Set (RECIPE!)
-			i(194496),	-- Plans: Titanicium Pickaxe (RECIPE!)
-			i(194495),	-- Plans: Titanicium Sickle (RECIPE!)
-			i(194497),	-- Plans: Titanicium Skinning Knife (RECIPE!)
-			i(194488),	-- Plans: Traitorous Primal Gauntlets of the Dragon (RECIPE!)
-			i(194507),	-- Plans: Tyrivite Skeleton Key (RECIPE!)
-			i(194492),	-- Plans: Unstable Frostfire Belt (RECIPE!)
-		}),
 		prof(COOKING, {
 			i(198118),	-- Recipe: Aromatic Seafood Platter (RECIPE!)
 			i(198100),	-- Recipe: Assorted Exotic Spices (RECIPE!)

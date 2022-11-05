@@ -42,16 +42,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					i(199246),	-- Schematic: Tinker: Grounded Circuitry (RECIPE!)
 						-- RENOWN 14 --
 					i(191545),	-- Recipe: Sustaining Alchemist's Stone (RECIPE!)
-					i(194482),	-- Plans: Black Dragon Seared Invoker (RECIPE!)
-					i(194479),	-- Plans: Black Dragon Seared Claymore (RECIPE!)
+					i(194482),	-- Plans: Obsidian Seared Invoker (RECIPE!)
+					i(194479),	-- Plans: Obsidian Seared Claymore (RECIPE!)
 					i(194280),	-- Pattern: Chronocloth Sash (RECIPE!)
 					i(194279),	-- Pattern: Azureweave Slippers (RECIPE!)
 						-- RENOWN 15 --
 					i(198892),	-- Technique Cliffside Wylderdrake Manuscript: Red Mane (RECIPE!)
 						-- RENOWN 19 --
-					i(194500),	-- Plans: Titanicium Leatherworker's Toolset (RECIPE!)
-					i(194498),	-- Plans: Titanicium Needle Set (RECIPE!)
-					i(194495),	-- Plans: Titanicium Sickle (RECIPE!)
+					i(194500),	-- Plans: Khaz'gorite Leatherworker's Toolset (RECIPE!)
+					i(194498),	-- Plans: Khaz'gorite Needle Set (RECIPE!)
+					i(194495),	-- Plans: Khaz'gorite Sickle (RECIPE!)
 					i(199245),	-- Schematic: Lapidary's Khaz'gorite Clamps  (RECIPE!)
 					i(199244),	-- Schematic: Khaz'gorite Delver's Helmet  (RECIPE!)
 					i(194288),	-- Pattern: Master's Wildercloth Alchemist's Robe (RECIPE!)

@@ -15,6 +15,19 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 				-- npc 187971/187320
 
 			}),
+			i(194508, {	-- Plans: Alvin the Anvil (RECIPE!)
+				["description"] = "Drops Around Obsidian Citadel from Powerful Blacksmiths.",
+			}),
+			i(194481, {	-- Plans: Obsidian Seared Crusher (RECIPE!)
+				["description"] = "Drops Around Obsidian Citadel.",
+			}),
+			i(194476, {	-- Plans: Obsidian Seared Hexsword (RECIPE!)
+				["description"] = "Drops Around Obsidian Citadel.",
+			}),
+			i(194483, {	-- Plans: Obsidian Seared Slicer (RECIPE!)
+				["description"] = "Drops Around Obsidian Citadel.",
+			}),
+
 		}),
 	}),
 })));

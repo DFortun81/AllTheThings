@@ -223,28 +223,28 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(191347),	-- Steaming Phial of Finesse+++
 	}),
 	prof(BLACKSMITHING, {
-		-- sold
-		i(190452),	-- Primal Flux
-		-- Crafting Material?
-		i(190533),	-- Black Dragon Seared Alloy
-		i(190534),	-- Black Dragon Seared Alloy
-		i(190535),	-- Black Dragon Seared Alloy
-		i(190536),	-- Bloody Alloy
-		i(190537),	-- Bloody Alloy
-		i(190538),	-- Bloody Alloy
-		i(190530),	-- Frostfire Alloy
-		i(190531),	-- Frostfire Alloy
-		i(190532),	-- Frostfire Alloy
-		i(189541),	-- Primal Molten Alloy
-		i(189542),	-- Primal Molten Alloy
-		i(189543),	-- Primal Molten Alloy
 		n(ARMOR, {
 			i(190519),	-- Allied Chestplate of Generosity
 			i(190526),	-- Allied Wristguard of Companionship
-			i(190522),	-- Bloody Helm of Vengeance
-			i(191985),	-- Bloody Warboots of Impunity
+			i(193609),	-- Crimson Combatant's Draconium Armguards
+			i(193602),	-- Crimson Combatant's Draconium Breastplate
+			i(193604),	-- Crimson Combatant's Draconium Gauntlets
+			i(193606),	-- Crimson Combatant's Draconium Greaves
+			i(193605),	-- Crimson Combatant's Draconium Helm
+			i(193607),	-- Crimson Combatant's Draconium Pauldrons
+			i(193603),	-- Crimson Combatant's Draconium Sabatons
+			i(193608),	-- Crimson Combatant's Draconium Waistguard
+			i(201955),	-- Explorer's Expert Clasp
+			i(201953),	-- Explorer's Expert Gauntlets
+			i(201954),	-- Explorer's Expert Greaves
+			i(201951),	-- Explorer's Expert Helm
+			i(201952),	-- Explorer's Expert Spaulders
+			i(189537),	-- Explorer's Plate Boots
+			i(189539),	-- Explorer's Plate Bracers
+			i(189538),	-- Explorer's Plate Chestguard
 			i(190523),	-- Frostfire Legguards of Preparation
-			i(190520),	-- Pauldrons of the Dragon
+			i(190522),	-- Infurious Helm of Vengeance
+			i(191985),	-- Infurious Warboots of Impunity
 			i(190495),	-- Primal Molten Breastplate
 			i(190497),	-- Primal Molten Gauntlets
 			i(190501),	-- Primal Molten Greatbelt
@@ -253,56 +253,67 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(190500),	-- Primal Molten Pauldrons
 			i(190496),	-- Primal Molten Sabatons
 			i(190502),	-- Primal Molten Vambraces
-			i(193609),	-- PvP Starter Armguards (TBD)
-			i(193602),	-- PvP Starter Breastplate (TBD)
-			i(193604),	-- PvP Starter Gauntlets (TBD)
-			i(193606),	-- PvP Starter Greaves (TBD)
-			i(193605),	-- PvP Starter Helm (TBD)
-			i(193607),	-- PvP Starter Pauldrons (TBD)
-			i(193603),	-- PvP Starter Sabatons (TBD)
-			i(193608),	-- PvP Starter Waistguard (TBD)
-			i(190521),	-- Traitorous Primal Gauntlets of the Dragon
 			i(191623),	-- Unstable Frostfire Belt
 		}),
-		filter(MISC, {
-			i(191250),	-- Armor Spikes
-			i(191872),	-- Armor Spikes
-			i(191873),	-- Armor Spikes
-			i(191261),	-- Draconium Repair Hammer
-			i(191884),	-- Draconium Repair Hammer
-			i(191885),	-- Draconium Repair Hammer
-			i(191948),	-- DNT Tempered Dracothyst Razorstone
-			i(191949),	-- DNT Tempered Dracothyst Razorstone
-			i(191950),	-- DNT Tempered Dracothyst Razorstone
-			i(191943),	-- DNT Tempered Dracothyst Weightstone
-			i(191944),	-- DNT Tempered Dracothyst Weightstone
-			i(191945),	-- DNT Tempered Dracothyst Weightstone
-			i(191933),	-- DNT Tempered Dracothyst Whetstone
-			i(191939),	-- DNT Tempered Dracothyst Whetstone
-			i(191940),	-- DNT Tempered Dracothyst Whetstone
-			i(191260),	-- Tyrivite Repair Hammer
-			i(191882),	-- Tyrivite Repair Hammer
-			i(191883),	-- Tyrivite Repair Hammer
-			i(191256),	-- Tyrivite Skeleton Key
+		filter(BATTLE_PETS, {
+			i(191886),	-- Alvin the Anvil (PET!)
 		}),
-		--filter(PETS, {
-			--i(191886),	-- Alvin the Anvil (PET!)
-		--}),
+		filter(MISC, {
+			i(191250),	-- Armor Spikes+
+			i(191872),	-- Armor Spikes++
+			i(191873),	-- Armor Spikes+++
+			i(201366),	-- Master's Hammer
+			i(191948),	-- Primal Razorstone+
+			i(191949),	-- Primal Razorstone++
+			i(191950),	-- Primal Razorstone+++
+			i(191943),	-- Primal Weightstone+
+			i(191944),	-- Primal Weightstone++
+			i(191945),	-- Primal Weightstone+++
+			i(191933),	-- Primal Whetstone+
+			i(191939),	-- Primal Whetstone++
+			i(191940),	-- Primal Whetstone+++
+			i(191304),	-- Sturdy Expedition Shovel
+			-- Unsure?
+			i(191260),	-- Serevite Repair Hammer
+			i(191882),	-- Serevite Repair Hammer
+			i(191883),	-- Serevite Repair Hammer
+			--
+			i(191256),	-- Serevite Skeleton Key
+		}),
+		filter(56, {	-- Reagents
+			i(190530),	-- Frostfire Alloy+
+			i(190531),	-- Frostfire Alloy++
+			i(190532),	-- Frostfire Alloy+++
+			i(190536),	-- Infurious Alloy+
+			i(190537),	-- Infurious Alloy++
+			i(190538),	-- Infurious Alloy+++
+			i(190533),	-- Obsidian Seared Alloy+
+			i(190534),	-- Obsidian Seared Alloy++
+			i(190535),	-- Obsidian Seared Alloy+++
+			i(190452),	-- Primal Flux
+			i(189541),	-- Primal Molten Alloy+
+			i(189542),	-- Primal Molten Alloy++
+			i(189543),	-- Primal Molten Alloy+++
+			i(194542),	-- Prototype Explorer's Barding Framework
+			i(194541),	-- Prototype Regal Barding Framework
+		}),
 		n(WEAPONS, {
-			i(190514),	-- Black Dragon Seared Claymore
-			i(190516),	-- Black Dragon Seared Crusher
-			i(190513),	-- Black Dragon Seared Facesmasher
-			i(190515),	-- Black Dragon Seared Halberd
-			i(190511),	-- Black Dragon Seared Hexsword
-			i(190517),	-- Black Dragon Seared Invoker
-			i(190512),	-- Black Dragon Seared Runeaxe
-			i(190518),	-- Black Dragon Seared Slicer
 			i(190487),	-- Draconium Axe
+			i(201322),	-- Draconium Defender
 			i(190483),	-- Draconium Dirk
+			i(201324),	-- Draconium Great Axe
 			i(190486),	-- Draconium Great Mace
 			i(190485),	-- Draconium Knuckles
 			i(190482),	-- Draconium Stiletto
 			i(190484),	-- Draconium Sword
+			i(190514),	-- Obsidian Seared Claymore
+			i(190516),	-- Obsidian Seared Crusher
+			i(190513),	-- Obsidian Seared Facesmasher
+			i(190515),	-- Obsidian Seared Halberd
+			i(190511),	-- Obsidian Seared Hexsword
+			i(190517),	-- Obsidian Seared Invoker
+			i(190512),	-- Obsidian Seared Runeaxe
+			i(190518),	-- Obsidian Seared Slicer
 			i(190503),	-- Primal Molten Defender
 			i(190510),	-- Primal Molten Greataxe
 			i(190507),	-- Primal Molten Longsword
@@ -311,33 +322,25 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(190506),	-- Primal Molten Spellblade
 			i(190508),	-- Primal Molten Warglaive
 			i(192081),	-- Shield of the Hearth
+			-- Tools
+			i(191228),	-- Black Dragon Touched Hammer
+			i(191237),	-- Draconium Blacksmith's Hammer
+			i(191235),	-- Draconium Blacksmith's Toolbox
+			i(191238),	-- Draconium Leatherworker's Knife
+			i(191236),	-- Draconium Leatherworker's Toolset
+			i(191239),	-- Draconium Needle Set
+			i(191242),	-- Draconium Pickaxe
+			i(191241),	-- Draconium Sickle
+			i(191240),	-- Draconium Skinning Knife
+			i(191888),	-- Khaz'gorite Blacksmith's Hammer
+			i(191230),	-- Khaz'gorite Blacksmith's Toolbox
+			i(191227),	-- Khaz'gorite Leatherworker's Knife
+			i(191229),	-- Khaz'gorite Leatherworker's Toolset
+			i(191226),	-- Khaz'gorite Needle Set
+			i(191223),	-- Khaz'gorite Pickaxe
+			i(191224),	-- Khaz'gorite Sickle
+			i(191225),	-- Khaz'gorite Skinning Knife
 		}),
-		-- Tools
-		i(191228),	-- Black Dragon Touched Hammer
-		i(191237),	-- Draconium Blacksmith's Hammer
-		i(191235),	-- Draconium Blacksmith's Toolbox
-		i(191238),	-- Draconium Leatherworker's Knife
-		i(191236),	-- Draconium Leatherworker's Toolset
-		i(191239),	-- Draconium Needle Set
-		i(191242),	-- Draconium Pickaxe
-		i(191241),	-- Draconium Sickle
-		i(191240),	-- Draconium Skinning Knife
-		i(191888),	-- Titanicium Blacksmith's Hammer
-		i(191230),	-- Titanicium Blacksmith's Toolbox
-		i(191227),	-- Titanicium Leatherworker's Knife
-		i(191229),	-- Titanicium Leatherworker's Toolset
-		i(191226),	-- Titanicium Needle Set
-		i(191223),	-- Titanicium Pickaxe
-		i(191224),	-- Titanicium Sickle
-		i(191225),	-- Titanicium Skinning Knife
-		-- Unknown
-		i(189537),	-- Explorer's Plate Boots
-		i(189539),	-- Explorer's Plate Bracers
-		i(189538),	-- Explorer's Plate Chestguard
-		--r(377981);	-- Heart in a Bottle
-		--r(382579);	-- Opening
-		i(194542),	-- Prototype Explorer's Barding Framework
-		i(194541),	-- Prototype Regal Barding Framework
 	}),
 	prof(COOKING, {
 		-- Maybe World Drop
@@ -641,11 +644,15 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		}),
 	}),
 	prof(FISHING, {
-		i(198439, {
-			i(14514),	-- Pattern: Robe of the Void (RECIPE!)
+		i(198439, {	-- Aged Recipe in a Bottle
+			["description"] = "Please Report to the ATT-Discord if you get this item.",
+			["g"] = {
+				i(14514),	-- Pattern: Robe of the Void (RECIPE!)
+			},
 		}),
 		i(198438, {	-- Draconic Recipe in a Bottle
 			i(194671),	-- Design: "Rhinestone" Sunglasses (RECIPE!)
+			i(198714),	-- Plans: Prototype Regal Barding Framework (RECIPE!)
 			i(191544),	-- Recipe: Cauldron of the Pooka (RECIPE!)
 			i(191589),	-- Recipe: Fervid Incense (RECIPE!)
 			i(191587),	-- Recipe: Somniferous Incense (RECIPE!)
@@ -1171,10 +1178,108 @@ root("HiddenQuestTriggers", {
 			q(71948),	-- Maxxed Out Transmutation
 
 		}),
+		--[[
 		prof(BLACKSMITHING, {
-			q(71361),	-- Draconium Blacksmith's Hammer
+			-- Smelting --
+			q(),	-- Frostfire Alloy
+			q(),	-- Infurious Alloy
+			q(),	-- Obsidian Seared Alloy
+			q(),	-- Primal Molten Alloy
+			-- Finishing Reagent
+			q(),	-- Illustrious Insight
+			-- Optional Reagent
+			q(),	--  Armor Spikes
+			-- Armor
+			q(),	-- Allied Chestplate of Generosity
+			q(),	-- Allied Wristguard of Companionship
+			q(),	-- Crimson Combatant's Draconium Armguards
+			q(),	-- Crimson Combatant's Draconium Breastplate
+			q(),	-- Crimson Combatant's Draconium Gauntlets
+			q(),	-- Crimson Combatant's Draconium Greaves
+			q(),	-- Crimson Combatant's Draconium Helm
+			q(),	-- Crimson Combatant's Draconium Pauldrons
+			q(),	-- Crimson Combatant's Draconium Sabatons
+			q(),	-- Crimson Combatant's Draconium Waistguard
+			q(),	-- Explorer's Expert Clasp
+			q(),	-- Explorer's Expert Gauntlets
+			q(),	-- Explorer's Expert Greaves
+			q(),	-- Explorer's Expert Helm
+			q(),	-- Explorer's Expert Spaulders
+			q(),	-- Explorer's Plate Boots
 			q(71315),	-- Explorer's Plate Bracers
+			q(),	-- Explorer's Plate Chestguard
+			q(),	-- Frostfire Legguards of Preparation
+			q(),	-- Infurious Helm of Vegeance
+			q(),	-- Infurious Warboots of Impunity
+			q(),	-- Primal Molten Breastplate
+			q(),	-- Primal Molten Gauntlets
+			q(),	-- Primal Molten Greatbelt
+			q(),	-- Primal Molten Helm
+			q(),	-- Primal Molten Legplates
+			q(),	-- Primal Molten Pauldrons
+			q(),	-- Primal Molten Sabatons
+			q(),	-- Primal Molten Vambraces
+			q(),	-- Unstable Frostfire Belt
+			-- Shields
+			q(),	-- Draconium Defender
+			q(),	-- Shield of the Hearth
+			q(),	-- Primal Molten Defender
+			-- Weapons
+			q(),	-- Draconium Axe
+			q(),	-- Draconium Dirk
+			q(),	-- Draconium Great Axe
+			q(),	-- Draconium Great Mace
+			q(),	-- Draconium Knuckles
+			q(),	-- Draconium Stiletto
+			q(),	-- Draconium Sword
+			q(),	-- Obsidian Seared Claymore
+			q(),	-- Obsidian Seared Crusher
+			q(),	-- Obsidian Seared Facesmasher
+			q(),	-- Obsidian Seared Halberd
+			q(),	-- Obsidian Seared Hexsword
+			q(),	-- Obsidian Seared Invoker
+			q(),	-- Obsidian Seared Runeaxe
+			q(),	-- Obsidian Seared Slicer
+			q(),	-- Primal Molten Greataxe
+			q(),	-- Primal Molten Longsword
+			q(),	-- Primal Molten Mace
+			q(),	-- Primal Molten Shortblade
+			q(),	-- Primal Molten Spellblade
+			q(),	-- Primal Molten Warglaive
+			-- Profession Tools and Accessories
+			q(),	-- Black Dragon Touched Hammer
+			q(71361),	-- Draconium Blacksmith's Hammer
+			q(),	-- Draconium Blacksmith's Toolbox
+			q(),	-- Draconium Leatherworker's Knife
+			q(),	-- Draconium Leatherworker's Toolset
+			q(),	-- Draconium Needle Set
+			q(),	-- Draconium Pickaxe
+			q(),	-- Draconium Sickle
+			q(),	-- Draconium Skinning Knife
+			q(),	-- Khaz'gorite Blacksmith's Hammer
+			q(),	-- Khaz'gorite Blacksmith's Toolbox
+			q(),	-- Khaz'gorite Leatherworker's Knife
+			q(),	-- Khaz'gorite Leatherworker's Toolset
+			q(),	-- Khaz'gorite Needle Set
+			q(),	-- Khaz'gorite Pickaxe
+			q(),	-- Khaz'gorite Sickle
+			q(),	-- Khaz'gorite Skinning Knife
+			-- Consumable Tools
+			q(),	-- Master's Hammer
+			q(),	-- Serevite Repair Hammer
+			q(),	-- Serevite Skeleton Key
+			q(),	-- Sturdy Expedition Shovel
+			-- Stonework
+			q(),	-- Primal Razorstone
+			q(),	-- Primal Weightstone
+			q(),	-- Primal Whetstone
+			-- Pets
+			q(),	-- Alvin The Anvil
+			-- Dragon Ridning
+			q(),	-- Prototype Explorer's Barding Framework
+			q(),	-- Prototype Regal Barding Framework
 		}),
+		--]]
 		prof(ENGINEERING, {
 			-- Recrafting --
 			--q(),	-- Recraft Equipment
