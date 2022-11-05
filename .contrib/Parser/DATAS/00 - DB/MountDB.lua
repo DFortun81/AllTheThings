@@ -1499,6 +1499,14 @@ i(192557, 334482);	-- Restoration Deathwalker
 i(0, 315132);		-- Gargantuan Grrloc
 i(0, 381529);		-- Telix the Stormhorn
 
+
+-- SOURCED
+i(202086, 377071);	-- Crimson Gladiator's Drake
+
+
+
+
+
 -- NOT SOURCED YET
 
 i(194106, 360954);	-- Highland Drake
@@ -1535,7 +1543,7 @@ i(201704, 394218);	-- Sapphire Vorquin
 i(201720, 394219);	-- Bronze Vorquin
 i(201719, 394220);	-- Obsidian Vorquin
 -- PvP
-i(0, 377071);	-- Crimson Gladiator's Drake
+
 -- Suspiciously
 i(0, 372995);	-- Swift Spectral Drake [Hmmm Legacy?]
 i(0, 373646);	-- Dracthyr Flight Test / Soar
@@ -1591,9 +1599,14 @@ i(194722, 377849);	-- Carrier Yeti
 ------------------
 -- PATCH 10.0.2 --
 ------------------
-i(199412, 387231);	-- Hailstorm Armoredon
+
+
+-- SOURCED
 i(201789, 394737);	-- Vicious Sabertooth [A]
 i(201788, 394738);	-- Vicious Sabertooth [H]
+--
+i(199412, 387231);	-- Hailstorm Armoredon
+
 
 
 -- #if ANYCLASSIC

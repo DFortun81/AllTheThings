@@ -18,6 +18,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(194835),	-- Windborne Velocidrake Manuscript: Spined Crest
 		i(194834),	-- Windborne Velocidrake Manuscript: Windswept
 		--]]
+		pvp(i(201792)),	-- Highland Drake: Embodiment of the Crimson Gladiator
 		-- Obtainable?
 		i(196961),	-- Cliffside Wylderdrake: Armor
 		i(196991),	-- Cliffside Wylderdrake: Black Horns

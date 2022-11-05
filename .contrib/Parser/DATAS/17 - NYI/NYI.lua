@@ -3393,70 +3393,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201089),	-- Craft Creche Crowler
 		i(201090),	-- Bivigosa's Blood Sausages
 		i(201092),	-- Lava Spices
-		i(201093),	-- Crimson Aspirant's Plate Helm
-		i(201094),	-- Crimson Aspirant's Silk Tunic
-		i(201095),	-- Crimson Aspirant's Plate Chestplate
-		i(201096),	-- Crimson Aspirant's Chain Vest
-		i(201097),	-- Crimson Aspirant's Leather Vest
-		i(201098),	-- Crimson Aspirant's Plate Warboots
-		i(201099),	-- Crimson Aspirant's Silk Treads
-		i(201100),	-- Crimson Aspirant's Chain Sabatons
-		i(201101),	-- Crimson Aspirant's Leather Boots
-		i(201102),	-- Crimson Aspirant's Leather Gloves
-		i(201103),	-- Crimson Aspirant's Plate Gauntlets
-		i(201104),	-- Crimson Aspirant's Silk Gloves
-		i(201105),	-- Crimson Aspirant's Chain Gauntlets
-		i(201106),	-- Crimson Aspirant's Silk Hood
-		i(201107),	-- Crimson Aspirant's Chain Helm
-		i(201108),	-- Crimson Aspirant's Leather Helm
-		i(201109),	-- Crimson Aspirant's Plate Legguards
-		i(201110),	-- Crimson Aspirant's Silk Leggings
-		i(201111),	-- Crimson Aspirant's Chain Leggings
-		i(201112),	-- Crimson Aspirant's Leather Breeches
-		i(201113),	-- Crimson Aspirant's Leather Spaulders
-		i(201114),	-- Crimson Aspirant's Plate Shoulders
-		i(201115),	-- Crimson Aspirant's Silk Mantle
-		i(201116),	-- Crimson Aspirant's Chain Spaulders
-		i(201117),	-- Crimson Aspirant's Plate Girdle
-		i(201118),	-- Crimson Aspirant's Silk Cord
-		i(201119),	-- Crimson Aspirant's Chain Belt
-		i(201120),	-- Crimson Aspirant's Leather Belt
-		i(201121),	-- Crimson Aspirant's Silk Wristwraps
-		i(201122),	-- Crimson Aspirant's Plate Cuffs
-		i(201123),	-- Crimson Aspirant's Chain Wristwraps
-		i(201124),	-- Crimson Aspirant's Leather Wristwraps
-		i(201125),	-- Crimson Aspirant's Plate Headguard
-		i(201126),	-- Crimson Aspirant's Silk Vest
-		i(201127),	-- Crimson Aspirant's Plate Armor
-		i(201128),	-- Crimson Aspirant's Chain Tunic
-		i(201129),	-- Crimson Aspirant's Leather Tunic
-		i(201130),	-- Crimson Aspirant's Plate Stompers
-		i(201131),	-- Crimson Aspirant's Silk Footwraps
-		i(201132),	-- Crimson Aspirant's Chain Stompers
-		i(201133),	-- Crimson Aspirant's Leather Footpads
-		i(201135),	-- Crimson Aspirant's Leather Grips
-		i(201136),	-- Crimson Aspirant's Plate Handguards
-		i(201137),	-- Crimson Aspirant's Silk Handwraps
-		i(201138),	-- Crimson Aspirant's Chain Handguards
-		i(201139),	-- Crimson Aspirant's Silk Cover
-		i(201140),	-- Crimson Aspirant's Chain Headguard
-		i(201141),	-- Crimson Aspirant's Leather Mask
-		i(201142),	-- Crimson Aspirant's Plate Wargreaves
-		i(201143),	-- Crimson Aspirant's Silk Legwraps
-		i(201144),	-- Crimson Aspirant's Chain Wargreaves
-		i(201145),	-- Crimson Aspirant's Leather Leggings
-		i(201146),	-- Crimson Aspirant's Leather Mantle
-		i(201147),	-- Crimson Aspirant's Plate Pauldrons
-		i(201148),	-- Crimson Aspirant's Silk Shawl
-		i(201149),	-- Crimson Aspirant's Chain Shoulderguards
-		i(201150),	-- Crimson Aspirant's Plate Greatbelt
-		i(201151),	-- Crimson Aspirant's Silk Belt
-		i(201152),	-- Crimson Aspirant's Chain Clasp
-		i(201153),	-- Crimson Aspirant's Leather Cord
-		i(201154),	-- Crimson Aspirant's Silk Bindings
-		i(201155),	-- Crimson Aspirant's Plate Armguards
-		i(201156),	-- Crimson Aspirant's Chain Bracer
-		i(201157),	-- Crimson Aspirant's Leather Armguards
 		i(201158),	-- Scepter of Spectacle: Order
 		i(201160),	-- Scepter of Spectacle: Earth
 		i(201161),	-- Scepter of Spectacle: Air
@@ -3668,11 +3604,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201446),	-- Primalist Tomorrow's Firewall
 		i(201447),	-- Primalist Tomorrow's Breezeblade
 		i(201448),	-- Primalist Tomorrow's Windwall
-		i(201449),	-- Crimson Aspirant's Badge of Ferocity
-		i(201450),	-- Crimson Aspirant's Medallion
-		i(201451),	-- Crimson Aspirant's Insignia of Alacrity
-		i(201452),	-- Crimson Aspirant's Emblem
-		i(201453),	-- Crimson Aspirant's Sigil of Adaptation
 		i(201454),	-- Temperamental Skyclaw
 		i(201455),	-- Tyrhold Broadsword
 		i(201456),	-- Tyrhold Carbine
@@ -3688,219 +3619,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201467),	-- Emerald Bloom
 		i(201468),	-- Verdant Swirl
 		i(201469),	-- Emerald Green Apple
-		i(201472),	-- Crimson Gladiator's Silk Tunic
-		i(201473),	-- Crimson Gladiator's Silk Blouse
-		i(201474),	-- Crimson Gladiator's Silk Slippers
-		i(201475),	-- Crimson Gladiator's Silk Treads
-		i(201476),	-- Crimson Gladiator's Silk Gloves
-		i(201477),	-- Crimson Gladiator's Silk Handwraps
-		i(201478),	-- Crimson Gladiator's Silk Hood
-		i(201479),	-- Crimson Gladiator's Silk Guise
-		i(201480),	-- Crimson Gladiator's Silk Leggings
-		i(201481),	-- Crimson Gladiator's Silk Trousers
-		i(201482),	-- Crimson Gladiator's Silk Mantle
-		i(201483),	-- Crimson Gladiator's Silk Amice
-		i(201484),	-- Crimson Gladiator's Silk Cord
-		i(201485),	-- Crimson Gladiator's Silk Belt
-		i(201486),	-- Crimson Gladiator's Silk Wristwraps
-		i(201487),	-- Crimson Gladiator's Silk Armbands
-		i(201504),	-- Crimson Gladiator's Chain Vest
-		i(201505),	-- Crimson Gladiator's Chain Tunic
-		i(201506),	-- Crimson Gladiator's Chain Sabatons
-		i(201507),	-- Crimson Gladiator's Chain Boots
-		i(201508),	-- Crimson Gladiator's Chain Gauntlets
-		i(201509),	-- Crimson Gladiator's Chain Handguards
-		i(201510),	-- Crimson Gladiator's Chain Helm
-		i(201511),	-- Crimson Gladiator's Chain Faceguard
-		i(201512),	-- Crimson Gladiator's Chain Leggings
-		i(201513),	-- Crimson Gladiator's Chain Breeches
-		i(201514),	-- Crimson Gladiator's Chain Monnion
-		i(201515),	-- Crimson Gladiator's Chain Shoulderguard
-		i(201516),	-- Crimson Gladiator's Chain Belt
-		i(201517),	-- Crimson Gladiator's Chain Girdle
-		i(201518),	-- Crimson Gladiator's Chain Wristguards
-		i(201519),	-- Crimson Gladiator's Chain Bracers
-		i(201520),	-- Crimson Gladiator's Plate Chestguard
-		i(201521),	-- Crimson Gladiator's Plate Chestplate
-		i(201522),	-- Crimson Gladiator's Plate Warboots
-		i(201523),	-- Crimson Gladiator's Plate Stompers
-		i(201524),	-- Crimson Gladiator's Plate Gauntlets
-		i(201525),	-- Crimson Gladiator's Plate Handguards
-		i(201526),	-- Crimson Gladiator's Plate Helm
-		i(201527),	-- Crimson Gladiator's Plate Helmet
-		i(201528),	-- Crimson Gladiator's Plate Legguards
-		i(201529),	-- Crimson Gladiator's Plate Wargreaves
-		i(201530),	-- Crimson Gladiator's Plate Shoulders
-		i(201531),	-- Crimson Gladiator's Plate Pauldrons
-		i(201532),	-- Crimson Gladiator's Plate Girdle
-		i(201533),	-- Crimson Gladiator's Plate Greatbelt
-		i(201534),	-- Crimson Gladiator's Plate Wristguards
-		i(201535),	-- Crimson Gladiator's Plate Vambraces
-		i(201536),	-- Crimson Gladiator's Silk Robe
-		i(201537),	-- Crimson Gladiator's Silk Vestments
-		i(201538),	-- Crimson Gladiator's Silk Slippers
-		i(201539),	-- Crimson Gladiator's Silk Treads
-		i(201540),	-- Crimson Gladiator's Silk Gloves
-		i(201541),	-- Crimson Gladiator's Silk Handwraps
-		i(201542),	-- Crimson Gladiator's Silk Hood
-		i(201543),	-- Crimson Gladiator's Silk Guise
-		i(201544),	-- Crimson Gladiator's Silk Leggings
-		i(201545),	-- Crimson Gladiator's Silk Trousers
-		i(201546),	-- Crimson Gladiator's Silk Mantle
-		i(201547),	-- Crimson Gladiator's Silk Amice
-		i(201548),	-- Crimson Gladiator's Silk Cord
-		i(201549),	-- Crimson Gladiator's Silk Belt
-		i(201550),	-- Crimson Gladiator's Silk Wristwraps
-		i(201551),	-- Crimson Gladiator's Silk Armbands
-		i(201552),	-- Crimson Gladiator's Silk Robe
-		i(201553),	-- Crimson Gladiator's Silk Vestments
-		i(201554),	-- Crimson Gladiator's Silk Slippers
-		i(201555),	-- Crimson Gladiator's Silk Treads
-		i(201556),	-- Crimson Gladiator's Silk Gloves
-		i(201557),	-- Crimson Gladiator's Silk Handwraps
-		i(201558),	-- Crimson Gladiator's Silk Hood
-		i(201559),	-- Crimson Gladiator's Silk Guise
-		i(201560),	-- Crimson Gladiator's Silk Leggings
-		i(201561),	-- Crimson Gladiator's Silk Trousers
-		i(201562),	-- Crimson Gladiator's Silk Mantle
-		i(201563),	-- Crimson Gladiator's Silk Amice
-		i(201564),	-- Crimson Gladiator's Silk Cord
-		i(201565),	-- Crimson Gladiator's Silk Belt
-		i(201566),	-- Crimson Gladiator's Silk Wristwraps
-		i(201567),	-- Crimson Gladiator's Silk Armbands
-		i(201568),	-- Crimson Gladiator's Leather Vest
-		i(201569),	-- Crimson Gladiator's Leather Jerkin
-		i(201570),	-- Crimson Gladiator's Leather Boots
-		i(201571),	-- Crimson Gladiator's Leather Treads
-		i(201572),	-- Crimson Gladiator's Leather Gloves
-		i(201573),	-- Crimson Gladiator's Leather Grips
-		i(201574),	-- Crimson Gladiator's Leather Helm
-		i(201575),	-- Crimson Gladiator's Leather Mask
-		i(201576),	-- Crimson Gladiator's Leather Breeches
-		i(201577),	-- Crimson Gladiator's Leather Legwraps
-		i(201578),	-- Crimson Gladiator's Leather Spaulders
-		i(201579),	-- Crimson Gladiator's Leather Shoulderpads
-		i(201580),	-- Crimson Gladiator's Leather Belt
-		i(201581),	-- Crimson Gladiator's Leather Strap
-		i(201582),	-- Crimson Gladiator's Leather Wristwraps
-		i(201583),	-- Crimson Gladiator's Leather Wristguards
 		i(201584),	-- Serevite Rod
-		i(201585),	-- Crimson Gladiator's Leather Vest
-		i(201586),	-- Crimson Gladiator's Leather Jerkin
-		i(201587),	-- Crimson Gladiator's Leather Boots
-		i(201588),	-- Crimson Gladiator's Leather Treads
-		i(201589),	-- Crimson Gladiator's Leather Gloves
-		i(201590),	-- Crimson Gladiator's Leather Grips
-		i(201591),	-- Crimson Gladiator's Leather Helm
-		i(201592),	-- Crimson Gladiator's Leather Mask
-		i(201593),	-- Crimson Gladiator's Leather Breeches
-		i(201594),	-- Crimson Gladiator's Leather Legwraps
-		i(201595),	-- Crimson Gladiator's Leather Spaulders
-		i(201596),	-- Crimson Gladiator's Leather Shoulderpads
-		i(201597),	-- Crimson Gladiator's Leather Belt
-		i(201598),	-- Crimson Gladiator's Leather Strap
-		i(201599),	-- Crimson Gladiator's Leather Wristwraps
-		i(201600),	-- Crimson Gladiator's Leather Wristguards
 		i(201601),	-- Runed Serevite Rod
-		i(201602),	-- Crimson Gladiator's Leather Vest
-		i(201603),	-- Crimson Gladiator's Leather Jerkin
-		i(201604),	-- Crimson Gladiator's Leather Boots
-		i(201605),	-- Crimson Gladiator's Leather Treads
-		i(201606),	-- Crimson Gladiator's Leather Gloves
-		i(201607),	-- Crimson Gladiator's Leather Grips
-		i(201608),	-- Crimson Gladiator's Leather Helm
-		i(201609),	-- Crimson Gladiator's Leather Mask
-		i(201610),	-- Crimson Gladiator's Leather Breeches
-		i(201611),	-- Crimson Gladiator's Leather Legwraps
-		i(201612),	-- Crimson Gladiator's Leather Spaulders
-		i(201613),	-- Crimson Gladiator's Leather Shoulderpads
-		i(201614),	-- Crimson Gladiator's Leather Belt
-		i(201615),	-- Crimson Gladiator's Leather Strap
-		i(201616),	-- Crimson Gladiator's Leather Wristwraps
-		i(201617),	-- Crimson Gladiator's Leather Wristguards
-		i(201618),	-- Crimson Gladiator's Leather Vest
-		i(201619),	-- Crimson Gladiator's Leather Jerkin
-		i(201620),	-- Crimson Gladiator's Leather Boots
-		i(201621),	-- Crimson Gladiator's Leather Treads
-		i(201622),	-- Crimson Gladiator's Leather Gloves
-		i(201623),	-- Crimson Gladiator's Leather Grips
-		i(201624),	-- Crimson Gladiator's Leather Helm
-		i(201625),	-- Crimson Gladiator's Leather Mask
-		i(201626),	-- Crimson Gladiator's Leather Breeches
-		i(201627),	-- Crimson Gladiator's Leather Legwraps
-		i(201628),	-- Crimson Gladiator's Leather Spaulders
-		i(201629),	-- Crimson Gladiator's Leather Shoulderpads
-		i(201630),	-- Crimson Gladiator's Leather Belt
-		i(201631),	-- Crimson Gladiator's Leather Strap
-		i(201632),	-- Crimson Gladiator's Leather Wristwraps
-		i(201633),	-- Crimson Gladiator's Leather Wristguards
-		i(201634),	-- Crimson Gladiator's Chain Vest
-		i(201635),	-- Crimson Gladiator's Chain Tunic
-		i(201636),	-- Crimson Gladiator's Chain Sabatons
-		i(201637),	-- Crimson Gladiator's Chain Boots
-		i(201638),	-- Crimson Gladiator's Chain Gauntlets
-		i(201639),	-- Crimson Gladiator's Chain Handguards
-		i(201640),	-- Crimson Gladiator's Chain Helm
-		i(201641),	-- Crimson Gladiator's Chain Faceguard
-		i(201642),	-- Crimson Gladiator's Chain Leggings
-		i(201643),	-- Crimson Gladiator's Chain Breeches
-		i(201644),	-- Crimson Gladiator's Chain Monnion
-		i(201645),	-- Crimson Gladiator's Chain Shoulderguard
-		i(201646),	-- Crimson Gladiator's Chain Belt
-		i(201647),	-- Crimson Gladiator's Chain Girdle
-		i(201648),	-- Crimson Gladiator's Chain Wristguards
-		i(201649),	-- Crimson Gladiator's Chain Bracers
-		i(201650),	-- Crimson Gladiator's Chain Vest
-		i(201651),	-- Crimson Gladiator's Chain Tunic
-		i(201652),	-- Crimson Gladiator's Chain Sabatons
-		i(201653),	-- Crimson Gladiator's Chain Boots
-		i(201654),	-- Crimson Gladiator's Chain Gauntlets
-		i(201655),	-- Crimson Gladiator's Chain Handguards
-		i(201656),	-- Crimson Gladiator's Chain Helm
-		i(201657),	-- Crimson Gladiator's Chain Faceguard
-		i(201658),	-- Crimson Gladiator's Chain Leggings
-		i(201659),	-- Crimson Gladiator's Chain Breeches
-		i(201660),	-- Crimson Gladiator's Chain Monnion
-		i(201661),	-- Crimson Gladiator's Chain Shoulderguard
-		i(201662),	-- Crimson Gladiator's Chain Belt
-		i(201663),	-- Crimson Gladiator's Chain Girdle
-		i(201664),	-- Crimson Gladiator's Chain Wristguards
-		i(201665),	-- Crimson Gladiator's Plate Chestguard
-		i(201666),	-- Crimson Gladiator's Plate Chestplate
-		i(201667),	-- Crimson Gladiator's Plate Warboots
-		i(201668),	-- Crimson Gladiator's Plate Stompers
-		i(201669),	-- Crimson Gladiator's Plate Gauntlets
-		i(201670),	-- Crimson Gladiator's Plate Handguards
-		i(201671),	-- Crimson Gladiator's Plate Helm
-		i(201672),	-- Crimson Gladiator's Plate Helmet
-		i(201673),	-- Crimson Gladiator's Plate Legguards
-		i(201674),	-- Crimson Gladiator's Plate Wargreaves
-		i(201675),	-- Crimson Gladiator's Plate Shoulders
-		i(201676),	-- Crimson Gladiator's Plate Pauldrons
-		i(201677),	-- Crimson Gladiator's Plate Girdle
-		i(201678),	-- Crimson Gladiator's Plate Greatbelt
-		i(201679),	-- Crimson Gladiator's Plate Wristguards
-		i(201680),	-- Crimson Gladiator's Plate Vambraces
-		i(201681),	-- Crimson Gladiator's Plate Chestguard
-		i(201682),	-- Crimson Gladiator's Plate Chestplate
-		i(201683),	-- Crimson Gladiator's Plate Warboots
-		i(201684),	-- Crimson Gladiator's Plate Stompers
-		i(201685),	-- Crimson Gladiator's Plate Gauntlets
-		i(201686),	-- Crimson Gladiator's Plate Handguards
-		i(201687),	-- Crimson Gladiator's Plate Helm
-		i(201688),	-- Crimson Gladiator's Plate Helmet
-		i(201689),	-- Crimson Gladiator's Plate Legguards
-		i(201690),	-- Crimson Gladiator's Plate Wargreaves
-		i(201691),	-- Crimson Gladiator's Plate Shoulders
-		i(201692),	-- Crimson Gladiator's Plate Pauldrons
-		i(201693),	-- Crimson Gladiator's Plate Girdle
-		i(201694),	-- Crimson Gladiator's Plate Greatbelt
-		i(201695),	-- Crimson Gladiator's Plate Wristguards
-		i(201696),	-- Crimson Gladiator's Plate Vambraces
 		i(201697),	-- Coldarra Coldbrew
 		i(201698),	-- Black Dragon Red Eye
 		i(201700),	-- Notebook of Crafting Knowledge
-		i(201701),	-- Crimson Gladiator's Chain Bracers
 		i(201702),	-- Crimson Vorquin
 		i(201703),	-- Pinkie
 		i(201704),	-- Sapphire Vorquin
@@ -3941,37 +3664,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201741),	-- Technique: Renewed Proto-Drake: Bovine Horns
 		i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor
 		i(201743),	-- Technique: Windborne Velocidrake: Silver and Blue Armor
-		i(201744),	-- Crimson Aspirant's Ring
-		i(201745),	-- Crimson Aspirant's Band
-		i(201746),	-- Crimson Aspirant's Signet
-		i(201747),	-- Crimson Aspirant's Necklace
-		i(201748),	-- Crimson Aspirant's Choker
-		i(201749),	-- Crimson Aspirant's Pendant
-		i(201750),	-- Crimson Aspirant's Cloak
-		i(201751),	-- Crimson Aspirant's Drape
-		i(201752),	-- Crimson Aspirant's Cape
-		i(201753),	-- Crimson Aspirant's Greatcloak
 		i(201754),	-- Obsidian Forgemaster's Cache
 		i(201755),	-- Obsidian Forgemaster's Strongbox
 		i(201756),	-- Bulging Coin Purse
 		i(201757),	-- Plundered Supplies
-
-		i(201760),	-- Crimson Aspirant's Battleaxe
-		i(201761),	-- Crimson Aspirant's Dagger
-		i(201762),	-- Crimson Aspirant's Mace
-		i(201763),	-- Crimson Aspirant's Polearm
-		i(201764),	-- Crimson Aspirant's Staff
-		i(201765),	-- Crimson Aspirant's Greatsword
-		i(201766),	-- Crimson Aspirant's Torch
-		i(201767),	-- Crimson Aspirant's Warglaive
-		i(201768),	-- Crimson Aspirant's Gavel
-		i(201769),	-- Crimson Aspirant's Shield
-		i(201770),	-- Crimson Aspirant's Ripper
-		i(201771),	-- Crimson Aspirant's Recurve
-		i(201772),	-- Crimson Aspirant's Longspear
-		i(201773),	-- Crimson Aspirant's Hammer
-		i(201774),	-- Crimson Aspirant's Knife
-		i(201775),	-- Crimson Aspirant's Wand
 		i(201779),	-- Merithra's Blessing
 		i(201781),	-- Memory of Tyr
 		i(201782),	-- Tyr's Blessing
@@ -3984,24 +3680,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201789),	-- Vicious Sabertooth
 		i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater
 		i(201791),	-- How to Train a Dragonkin
-		i(201792),	-- Highland Drake: Embodiment of the Crimson Gladiator
 		i(201793),	-- Resplendent Gemstone
 		i(201795),	-- Valdrakken Guard's Claw
 		i(201796),	-- Valdrakken Drakonid's Claw
-		i(201797),	-- Crimson Gladiator's Cloak
-		i(201798),	-- Crimson Gladiator's Drape
-		i(201799),	-- Crimson Gladiator's Shawl
-		i(201801),	-- Crimson Gladiator's Ring
-		i(201802),	-- Crimson Gladiator's Band
-		i(201803),	-- Crimson Gladiator's Signet
-		i(201804),	-- Crimson Gladiator's Necklace
-		i(201805),	-- Crimson Gladiator's Pendant
-		i(201806),	-- Crimson Gladiator's Amulet
-		i(201807),	-- Crimson Gladiator's Badge of Ferocity
-		i(201808),	-- Crimson Gladiator's Insignia of Alacrity
-		i(201809),	-- Crimson Gladiator's Emblem
-		i(201810),	-- Crimson Gladiator's Medallion
-		i(201811),	-- Crimson Gladiator's Sigil of Adaptation
 		i(201813),	-- Spoiled Firewine
 		i(201815),	-- Cloak of Many Faces
 		i(201816),	-- Springy Horns
@@ -4066,42 +3747,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201881),	-- Arsenal: Sinful Gladiator's Bastion Weapons
 		i(201882),	-- Arsenal: Sinful Gladiator's Ardenweald Weapons
 		i(201883),	-- Empty Magma Shell
-		i(201884),	-- Crimson Gladiator's Cloak
-		i(201885),	-- Crimson Gladiator's Drape
-		i(201886),	-- Crimson Gladiator's Shawl
-		i(201887),	-- Crimson Gladiator's Cloak
-		i(201888),	-- Crimson Gladiator's Drape
-		i(201889),	-- Crimson Gladiator's Shawl
-		i(201890),	-- Crimson Gladiator's Cloak
-		i(201891),	-- Crimson Gladiator's Drape
-		i(201892),	-- Crimson Gladiator's Shawl
-		i(201893),	-- Crimson Gladiator's Cloak
-		i(201894),	-- Crimson Gladiator's Drape
-		i(201895),	-- Crimson Gladiator's Shawl
-		i(201896),	-- Crimson Gladiator's Cloak
-		i(201897),	-- Crimson Gladiator's Drape
-		i(201898),	-- Crimson Gladiator's Shawl
-		i(201899),	-- Crimson Gladiator's Cloak
-		i(201900),	-- Crimson Gladiator's Drape
-		i(201901),	-- Crimson Gladiator's Shawl
-		i(201902),	-- Crimson Gladiator's Cloak
-		i(201903),	-- Crimson Gladiator's Drape
-		i(201904),	-- Crimson Gladiator's Shawl
-		i(201905),	-- Crimson Gladiator's Cloak
-		i(201906),	-- Crimson Gladiator's Drape
-		i(201907),	-- Crimson Gladiator's Shawl
-		i(201908),	-- Crimson Gladiator's Cloak
-		i(201909),	-- Crimson Gladiator's Drape
-		i(201910),	-- Crimson Gladiator's Shawl
-		i(201911),	-- Crimson Gladiator's Cloak
-		i(201912),	-- Crimson Gladiator's Drape
-		i(201913),	-- Crimson Gladiator's Shawl
-		i(201914),	-- Crimson Gladiator's Cloak
-		i(201915),	-- Crimson Gladiator's Drape
-		i(201916),	-- Crimson Gladiator's Shawl
-		i(201917),	-- Crimson Gladiator's Cloak
-		i(201918),	-- Crimson Gladiator's Drape
-		i(201919),	-- Crimson Gladiator's Shawl
 		i(201921),	-- Dragonscale Expedition Insignia
 		i(201922),	-- Iskaara Tuskarr Insignia
 		i(201923),	-- Maruuk Centaur Insignia
@@ -4109,10 +3754,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201925),	-- Obsidian Genealogy
 		i(201926),	-- Crushing
 		i(201927),	-- Assorted Arcanocrystals
-
 		i(201933),	-- Black Dragon's Challenge Dummy
 		i(201934),	-- Nokuhd Whittling Knife
-
 		i(201941),	-- Pioneer's Practiced Cowl
 		i(201942),	-- Pioneer's Practiced Shoulderpads
 		i(201943),	-- Pioneer's Practiced Gloves
@@ -4128,29 +3771,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201953),	-- Explorer's Expert Gauntlets
 		i(201954),	-- Explorer's Expert Greaves
 		i(201955),	-- Explorer's Expert Clasp
-		i(201963),	-- Crimson Aspirant's Sword
-		i(201964),	-- Crimson Aspirant's Pulverizer
-		i(201965),	-- Crimson Aspirant's Blade
 		i(201967),	-- Autographed Skull
 		i(201968),	-- Enormous Grain of Salt
 		i(201969),	-- Threatening Note
 		i(201970),	-- Stolen Illidari Blindfold
 		i(201971),	-- Threatening Note
-		i(201972),	-- Crimson Gladiator's Splitter
-		i(201973),	-- Crimson Gladiator's Dagger
-		i(201974),	-- Crimson Gladiator's Warglaive
-		i(201975),	-- Crimson Gladiator's Spear
-		i(201976),	-- Crimson Gladiator's Staff
-		i(201977),	-- Crimson Gladiator's Hand Cannon
-		i(201978),	-- Crimson Gladiator's Greatsword
-		i(201979),	-- Crimson Gladiator's Gavel
-		i(201980),	-- Crimson Gladiator's Horn
-		i(201981),	-- Crimson Gladiator's Shield
-		i(201982),	-- Crimson Gladiator's Wand
-		i(201983),	-- Crimson Gladiator's Axe
-		i(201984),	-- Crimson Gladiator's Knife
-		i(201985),	-- Crimson Gladiator's Mace
-		i(201987),	-- Crimson Gladiator's Polearm
 		i(201989),	-- Twisted Heart
 		i(201991),	-- Sargha's Signet
 		i(201992),	-- [PH] BoE Ring
@@ -4263,7 +3888,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(202080),	-- Cache of Vault Treasures
 		i(202081),	-- Dragon Isles Supply Bag
 		i(202085),	-- Bugbiter Tortoise
-		i(202086),	-- Crimson Gladiator's Drake
 		i(202087),	-- Tinker Removal Kit
 		i(202091),	-- Dragonscale Expedition Insignia
 		i(202092),	-- Iskaara Tuskarr Insignia
@@ -4283,23 +3907,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(202118),	-- Assembly Guardian's Ring
 		i(202119),	-- Assembly Scholar's Loop
 		i(202122),	-- Primal Chaos Cluster
-		i(202123),	-- Crimson Gladiator's Greatbow
-		i(202124),	-- Crimson Gladiator's Crossbow
-		i(202125),	-- Crimson Gladiator's Greatstaff
-		i(202126),	-- Crimson Gladiator's Spellblade
-		i(202127),	-- Crimson Gladiator's Censer
-		i(202128),	-- Crimson Gladiator's Rod
-		i(202129),	-- Crimson Gladiator's Barrier
-		i(202130),	-- Crimson Gladiator's Bulwark
-		i(202131),	-- Crimson Gladiator's Sword
-		i(202132),	-- Crimson Gladiator's Warhammer
-		i(202133),	-- Crimson Gladiator's Blade
-		i(202134),	-- Crimson Gladiator's Glaive
-		i(202135),	-- Crimson Gladiator's Poleaxe
-		i(202136),	-- Crimson Gladiator's Quarterstaff
-		i(202137),	-- Crimson Gladiator's Greataxe
-		i(202138),	-- Crimson Gladiator's Greatmace
-		i(202140),	-- Crimson Gladiator's Claw
 		i(202142),	-- Dragonbane Strongbox
 		i(202143),	-- Woven Stone Bracelets
 		i(202144),	-- Greathelm of Horned Fury

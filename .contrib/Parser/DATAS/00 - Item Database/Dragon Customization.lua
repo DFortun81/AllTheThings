@@ -5,6 +5,10 @@ local i = function(itemID, questID)
 	Items[itemID] = { ["questID"] = questID };
 end
 
+-- Special
+i(201792, 72371);	-- Highland Drake: Embodiment of the Crimson Gladiator
+
+
 -- These might be NYI? Two Versions exists
 i(194839, 0);	-- Cliffside Wylderdrake Manuscript: Conical Head
 i(194840, 0);	-- Cliffside Wylderdrake Manuscript: Triple Head Horns
