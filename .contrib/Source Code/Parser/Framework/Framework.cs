@@ -978,6 +978,15 @@ namespace ATT
             if (!CheckTimeline(data))
                 return false;
 
+            // certain types with empty groups shouldn't be included
+            if (data.TryGetValue("achievementCategoryID", out _))
+            {
+                if (!data.TryGetValue("g", out List<object> g) || g.Count == 0)
+                {
+                    return false;
+                }
+            }
+
             // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
             // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
             TryFindRecipeID(data);
