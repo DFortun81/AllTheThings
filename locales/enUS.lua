@@ -691,6 +691,7 @@ app.L = {
 
 	-- Filter Text
 	["ACHIEVEMENT_ID"] = "Achievement ID";
+	["ACHIEVEMENT_CATEGORY_ID"] = "Achievement Category ID";
 	["ARTIFACT_ID"] = "Artifact ID";
 	["AZERITE_ESSENCE_ID"] = "Azerite Essence ID";
 	["CREATURE_ID"] = "Creature ID";
@@ -700,6 +701,7 @@ app.L = {
 	["EXPANSION_ID"] = "Expansion ID";
 	["FILTER_ID"] = "Filter ID";
 	["FOLLOWER_ID"] = "Follower ID";
+	["HEADER_ID"] = "Header ID";
 	["ILLUSION_ID"] = "Illusion ID";
 	["INSTANCE_ID"] = "Instance ID";
 	["ITEM_ID"] = "Item ID";

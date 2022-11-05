@@ -16557,6 +16557,7 @@ RowOnEnter = function (self)
 		if reference.requireSkill and app.Settings:GetTooltipSetting("Enabled") and app.Settings:GetTooltipSetting("ProfessionRequirements") then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(reference.requireSkill))); end
 		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f])); end
 		if reference.achievementID and app.Settings:GetTooltipSetting("achievementID") then GameTooltip:AddDoubleLine(L["ACHIEVEMENT_ID"], tostring(reference.achievementID)); end
+		if reference.achievementCategoryID and app.Settings:GetTooltipSetting("achievementCategoryID") then GameTooltip:AddDoubleLine(L["ACHIEVEMENT_CATEGORY_ID"], tostring(reference.achievementCategoryID)); end
 		if reference.artifactID and app.Settings:GetTooltipSetting("artifactID") then GameTooltip:AddDoubleLine(L["ARTIFACT_ID"], tostring(reference.artifactID)); end
 		if reference.s and not reference.link and app.Settings:GetTooltipSetting("sourceID") then GameTooltip:AddDoubleLine(L["SOURCE_ID"], tostring(reference.s)); end
 		if reference.azeriteEssenceID then
@@ -16584,10 +16585,9 @@ RowOnEnter = function (self)
 				end
 			end
 		end
-		if reference.encounterID then
-			if app.Settings:GetTooltipSetting("encounterID") then GameTooltip:AddDoubleLine(L["ENCOUNTER_ID"], tostring(reference.encounterID)); end
-		end
+		if reference.encounterID and app.Settings:GetTooltipSetting("encounterID") then GameTooltip:AddDoubleLine(L["ENCOUNTER_ID"], tostring(reference.encounterID)); end
 		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
+		if reference.headerID and app.Settings:GetTooltipSetting("headerID") then GameTooltip:AddDoubleLine(L["HEADER_ID"], tostring(reference.headerID)); end
 		if reference.minReputation and not reference.maxReputation then
 			local standingId, offset = app.GetReputationStanding(reference.minReputation)
 			local factionID = reference.minReputation[1];
@@ -16832,6 +16832,17 @@ RowOnEnter = function (self)
 				GameTooltipTextRight1:Show();
 			end
 		end
+
+		-- Various Settings IDs/Raw Values
+		-- TODO: maybe eventually a nice clean way of doing this instead of having to manually add every ID to tooltip
+		-- local settings = app.Settings;
+		-- local val;
+		-- for key,name in pairs(app.Settings.DataKeys) do
+		-- 	val = reference[key];
+		-- 	if val and type(val) ~= "table" and settings:GetTooltipSetting(key) then
+		-- 		GameTooltip:AddDoubleLine(name, val);
+		-- 	end
+		-- end
 
 		-- Additional information (search will insert this information if found in search)
 		if GameTooltip.AttachComplete == nil then

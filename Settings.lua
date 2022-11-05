@@ -3955,7 +3955,9 @@ AdditionalLabel:SetText(L["ADDITIONAL_LABEL"]);
 AdditionalLabel:Show();
 table.insert(settings.MostRecentTab.objects, AdditionalLabel);
 
-local ids = {["achievementID"] = "Achievement ID",
+local ids = {
+	["achievementID"] = "Achievement ID",
+	["achievementCategoryID"] = "Achievement Category ID",
 	["artifactID"] = "Artifact ID",
 	["azeriteEssenceID"] = "Azerite Essence ID",
 	["bonusID"] = "Bonus ID",
@@ -3969,6 +3971,7 @@ local ids = {["achievementID"] = "Achievement ID",
 	["filterID"] = "Filter ID",
 	["flightPathID"] = "Flight Path ID",
 	["followerID"] = "Follower ID",
+	["headerID"] = "Header ID",
 	["iconPath"] = "Icon Path",
 	["illusionID"] = "Illusion ID",
 	["instanceID"] = "Instance ID",
@@ -3987,7 +3990,7 @@ local ids = {["achievementID"] = "Achievement ID",
 	["visualID"] = "Visual ID",
 };
 local last = nil;
-for _,id in pairs({"achievementID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","filterID","flightPathID","followerID","iconPath"}) do
+for _,id in pairs({"achievementID","achievementCategoryID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","filterID","flightPathID","followerID","headerID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
@@ -4004,7 +4007,7 @@ for _,id in pairs({"achievementID","artifactID","azeriteEssenceID","bonusID","cr
 	last = filter;
 end
 last = nil;
-for _,id in pairs({"illusionID","instanceID","itemID","itemString", "mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
+for _,id in pairs({"iconPath","illusionID","instanceID","itemID","itemString","mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
