@@ -4307,7 +4307,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				n(FISHING, {
+				prof(FISHING, {
 					i(45328, {	-- Bloated Slippery Eel
 						i(45323),	-- Severed Arm
 					}),
