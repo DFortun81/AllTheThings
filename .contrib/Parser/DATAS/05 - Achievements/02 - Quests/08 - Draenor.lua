@@ -222,12 +222,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(5),		-- Taking from the Taker
 			crit(6),		-- The Crystal Reborn
 		})),
-		ach(9654),		-- Mean and Green (Everbloom Wilds)
 		a(ach(9528)),	-- On the Shadow's Trail (Alliance) (Shadowmoon Valley)
 		h(ach(9529)),	-- On the Shadow's Trail (Horde) (Frostfire Ridge)
 		ach(9434),		-- One of Us! One of Us! (Shadowmoon Enclave)
-		ach(9663),		-- Picky Palate (Everbloom Wilds)
-		ach(9658),		-- Pillars of Draenor (Everbloom Wilds)
 		ach(9711),		-- Planned to Fail (Iron Siegeworks)
 		ach(9710),		-- Poisoning the Well (Iron Siegeworks)
 		ach(9637),		-- Poor Communication (Shattrath City)

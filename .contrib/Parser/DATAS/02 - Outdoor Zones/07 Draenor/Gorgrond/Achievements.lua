@@ -78,8 +78,20 @@ _.Zones =
 					}),
 				}),
 				ach(9654),		-- Mean and Green (Everbloom Wilds)
-				ach(9663),		-- Picky Palate (Everbloom Wilds)
-				ach(9658),		-- Pillars of Draenor (Everbloom Wilds)
+				ach(9663, {	-- Picky Palate (Everbloom Wilds)
+					["coords"] = {
+						{ 70.90, 42.20, GORGROND },	-- Coconut
+						{ 72.21, 41.53, GORGROND },	-- Guava
+						{ 73.16, 37.94, GORGROND },	-- Berry
+					},
+				}),
+				ach(9658, {	-- Pillars of Draenor (Everbloom Wilds)
+					["coords"] = {
+						{ 70.7, 36.5, GORGROND },	-- Pillar of Rejuvenation
+						{ 73.6, 42.8, GORGROND },	-- Pillar of Life
+						{ 69.8, 43.9, GORGROND },	-- Pillar of Creation
+					},
+				}),
 				ach(9402,  {	-- Prove Your Strength
 					crit(1, {	-- Ancient Branch
 						["sourceQuests"] = { 36092, 36094 },	-- Proof of Strength: (A/H)
