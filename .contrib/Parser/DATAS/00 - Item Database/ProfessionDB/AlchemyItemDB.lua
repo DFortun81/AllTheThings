@@ -557,7 +557,7 @@ i(0, 370561);	-- Potion of Shocking Disclosure
 i(0, 370556);	-- Potion of the Hushed Zephyr
 i(0, 370528);	-- Potion of Withering Vitality
 i(0, 370533);	-- Residual Neural Channeling Agent
--- SPECIALiZATION --
+-- SPECIALIZATION --
 i(0, 370747);	-- Advanced Phial Experimentation
 i(0, 370745);	-- Advanced Potion Experimentation
 i(0, 370730);	-- Brood Salt

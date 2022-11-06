@@ -48,7 +48,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL 
 				r(377981,{["u"]=15}),	-- Heart in a Bottle (BLACKSMITHING)
 				r(377983,{["u"]=15}),	-- Heart in a Bottle (ENGINEERING)
 				r(377915,{["u"]=15}),	-- Heart in a Bottle (JEWELCRAFTING)
+				r(377989,{["u"]=15}),	-- Heart in a Bottle (LEATHERWORKING)
 				r(377987,{["u"]=15}),	-- Heart in a Bottle (MINING)
+				r(377988,{["u"]=15}),	-- Heart in a Bottle (SKINNING)
 				r(377986,{["u"]=15}),	-- Heart in a Bottle (TAILORING)
 			},
 		}),
@@ -62,7 +64,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL 
 			["g"] = {
 				i(193487),	-- Alchemist's Hat
 				i(193615),	-- Jeweler's Tool Apron
-				i(193486),	-- Leatherworker's Smock
+				i(193486),	-- Resilient Smock
 				i(193482),	-- Skinner's Cap
 				i(193534),	-- Wildercloth Chef's Hat
 				i(193529),	-- Wildercloth Fishing Cap
@@ -337,6 +339,33 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL 
 			}),
 		}),
 		prof(LEATHERWORKING, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(375125),	-- Bow of the Dragon Hunters
+					r(375159),	-- Fang Adornments
+					r(375123),	-- Flame-Touched Chain
+					r(375117),	-- Flame-Touched Chainmail
+					r(375124),	-- Flame-Touched Cuffs
+					r(375119),	-- Flame-Touched Handguards
+					r(375120),	-- Flame-Touched Helmet
+					r(375121),	-- Flame-Touched Legguards
+					r(375122),	-- Flame-Touched Spaulders
+					r(375118),	-- Flame-Touched Treads
+					r(375197),	-- Flaring Cowl
+					r(375166),	-- Illustrious Insight
+					r(375115),	-- Life-Bound Belt
+					r(375116),	-- Life-Bound Bindings
+					r(375110),	-- Life-Bound Boots
+					r(375112),	-- Life-Bound Cap
+					r(375109),	-- Life-Bound Chestpiece
+					r(375111),	-- Life-Bound Gloves
+					r(375114),	-- Life-Bound Shoulderpads
+					r(375113),	-- Life-Bound Trousers
+					r(375160),	-- Toxified Armor Patch
+					r(375199),	-- Witherrot Tome
+				},
+			}),
 			q(70363, {    -- To the Dragon Isles: Leatherworking
 				--["sourceQuests"] = {  },	-- Unknown
 				["provider"] = { "n", 192048 },    -- Deirdre Flemmin
@@ -387,6 +416,29 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL 
 			}),
 		}),
 		prof(SKINNING, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(383090),	-- Aileron Seamoth Lure
+					r(383128),	-- Bottled Pheromones
+					r(375787),	-- Cerulean Spinefish Lure
+					r(383132),	-- Elusive Creature Bait
+					r(385984),	-- Infusion: Decay
+					r(385982),	-- Infusion: Earth
+					r(385972),	-- Infusion: Frost
+					r(385985),	-- Infusion: Titan
+					r(383094),	-- Islefin Dorado Lure
+					r(375731),	-- Refine Hides++
+					r(375763),	-- Refine Hides+++
+					r(376611),	-- Refine Leather++
+					r(376612),	-- Refine Leather+++
+					r(376613),	-- Refine Scales++
+					r(376614),	-- Refine Scales+++
+					r(375773),	-- Scalebelly Mackerel Lure
+					r(375786),	-- Temporal Dragonhead Lure
+					r(375782),	-- Thousandbite Piranha Lure
+				},
+			}),
 			q(70363, {	-- To the Dragon Isles: Skinning
 				--["sourceQuests"] = {  },	-- Unknown
 				["provider"] = { "n", 192558 },    -- Toninaar

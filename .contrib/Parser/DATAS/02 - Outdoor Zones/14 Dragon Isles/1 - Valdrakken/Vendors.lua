@@ -186,6 +186,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					i(200974),	-- Dusty Alchemist's Illustrations
 					i(198615),	-- Pentagold Seal
 					i(198618),	-- Pattern: Artisan's Sign (RECIPE!)
+
 					i(198598),	-- Technique: Scroll of Sales (RECIPE!)
 					i(198802),	-- Artisan's Consortium Tabard
 					i(194293),	-- Pattern: Vibrant Polishing Cloth (RECIPE!)

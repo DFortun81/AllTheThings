@@ -171,7 +171,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		},
 	}),
-	tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
+	tier(DF_TIER, {
 		n(ARMOR, {
 				-- Evoker Set --
 			i(187651),	-- Evoker Tunic
@@ -472,18 +472,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193908),	-- Sapphire Crystalspine
 		}),
 		n(CRAFTABLES, {
-			i(193261),	-- Bite-Sized Morsel
-			i(193262),	-- Exceptional Morsel
 			i(193361),	-- zzOldIncomplete Hunting Necklace
 			i(193053),	-- Contoured Fowlfeather
 			i(190318),	-- Perception!
 			i(190319),	-- Resourceful!
 			i(190332),	-- Sparking Catalyst
 			i(190452),	-- Primal Flux
-			i(190453),	-- Spark of Ingenuity
-			i(190454),	-- Primal Chaos
-			i(190455),	-- Concentrated Primal Focus
-			i(190456),	-- Artisan's Mettle
+
+
+
+
 			i(191231),	-- Alchemist's Brilliant Mixing Rod
 			i(191232),	-- Chef's Splendid Rolling Pin
 			i(191233),	-- Chef's Smooth Rolling Pin
@@ -537,168 +535,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(193370),	-- Silken Gemdust+++
 			}),
 			prof(LEATHERWORKING, {
-				i(194311),	-- Pattern: Tuskarr Bean Bag
-				i(194312),	-- Pattern: Gnoll Tent
-				i(193208),	-- Resilient Leather+
 				i(193209),	-- Quality Bone
-				i(193210),	-- Resilient Leather++
-				i(193211),	-- Resilient Leather+++
-				i(193213),	-- Adamant Scales+
-				i(193214),	-- Adamant Scales++
-				i(193215),	-- Adamant Scales+++
-				i(193216),	-- Dense Hide+
-				i(193217),	-- Dense Hide++
-				i(193218),	-- Dense Hide+++
-				i(193222),	-- Lustrous Scaled Hide+
-				i(193223),	-- Lustrous Scaled Hide++
-				i(193224),	-- Lustrous Scaled Hide+++
-				i(193226),	-- Stonecrust Hide+
-				i(193227),	-- Stonecrust Hide++
-				i(193228),	-- Stonecrust Hide+++
-				i(193229),	-- Mireslush Hide+
-				i(193230),	-- Mireslush Hide++
-				i(193231),	-- Mireslush Hide+++
-				i(193232),	-- Deathchill Hide+
-				i(193233),	-- Deathchill Hide++
-				i(193234),	-- Deathchill Hide+++
-				i(193236),	-- Infurious Hide+
-				i(193237),	-- Infurious Hide++
-				i(193238),	-- Infurious Hide+++
-				i(193239),	-- Drygrate Scales+
-				i(193240),	-- Drygrate Scales++
-				i(193241),	-- Drygrate Scales+++
-				i(193242),	-- Earthshine Scales+
-				i(193243),	-- Earthshine Scales++
-				i(193244),	-- Earthshine Scales+++
-				i(193245),	-- Frostbite Scales+
-				i(193246),	-- Frostbite Scales++
-				i(193247),	-- Frostbite Scales+++
-				i(193248),	-- Infurious Scales+
-				i(193249),	-- Infurious Scales++
-				i(193250),	-- Infurious Scales+++
-				i(193251),	-- Crystalspine Fur
-				i(193252),	-- Salamanther Scales
-				i(193253),	-- Cacophonous Thunderscale
-				i(193254),	-- Rockfang Leather
-				i(193255),	-- Pristine Vorquin Horn
-				i(193256),	-- Windsong Plumage
-				i(193258),	-- Fire-Infused Hide
-				i(193259),	-- Flawless Proto Dragon Scale
-				i(193383),	-- Bonewrought Crossbow
-				i(193386),	-- Pioneer's Leather Boots
-				i(193388),	-- Pioneer's Leather Wristguards
-				i(193390),	-- Pioneer's Leather Tunic
-				i(193392),	-- Trailblazer's Scale Boots
-				i(193393),	-- Trailblazer's Scale Bracers
-				i(193394),	-- Trailblazer's Scale Vest
-				i(193398),	-- Life-Bound Boots
-				i(193399),	-- Life-Bound Chestpiece
-				i(193400),	-- Life-Bound Cap
-				i(193406),	-- Life-Bound Shoulderpads
-				i(193407),	-- Life-Bound Belt
-				i(193408),	-- Life-Bound Trousers
-				i(193418),	-- Life-Bound Gloves
-				i(193419),	-- Life-Bound Bindings
-				i(193421),	-- Flame-Touched Treads
-				i(193422),	-- Flame-Touched Chainmail
-				i(193423),	-- Flame-Touched Helmet
-				i(193424),	-- Flame-Touched Spaulders
-				i(193425),	-- Flame-Touched Chain
-				i(193426),	-- Flame-Touched Legguards
-				i(193427),	-- Flame-Touched Handguards
-				i(193428),	-- Flame-Touched Cuffs
-
-				i(193430),	-- Crimson Combatant's Resilient Boots
-				i(193431),	-- Crimson Combatant's Resilient Chestpiece
-				i(193432),	-- Crimson Combatant's Resilient Mask
-				i(193433),	-- Crimson Combatant's Resilient Shoulderpads
-				i(193434),	-- Crimson Combatant's Resilient Belt
-				i(193435),	-- Crimson Combatant's Resilient Trousers
-				i(193436),	-- Crimson Combatant's Resilient Gloves
-				i(193437),	-- Crimson Combatant's Resilient Wristwraps
-				i(193439),	-- Crimson Combatant's Adamant Treads
-				i(193440),	-- Crimson Combatant's Adamant Chainmail
-				i(193441),	-- Crimson Combatant's Adamant Cowl
-				i(193442),	-- Crimson Combatant's Adamant Epaulettes
-				i(193443),	-- Crimson Combatant's Adamant Girdle
-				i(193444),	-- Crimson Combatant's Adamant Leggings
-				i(193445),	-- Crimson Combatant's Adamant Gauntlets
-				i(193446),	-- Crimson Combatant's Adamant Cuffs
-				i(193449),	-- Bow of the Dragon Hunters
-				i(193451),	-- Slimy Expulsion Boots
-				i(193452),	-- Toxic Thorn Footwraps
-				i(193453),	-- Allied Heartwarming Fur Coat
-				i(193454),	-- Old Spirit's Wristwraps
-				i(193455),	-- Tuskarr Snowshoes
-				i(193456),	-- Elder Spirit's Hood
-				i(193457),	-- String of Spiritual Knick-Knacks
-				i(193458),	-- Snowball Makers
-				i(193459),	-- Ancestor's Dew Kickers
-				i(193460),	-- Venom-Steeped Stompers
-				i(193461),	-- Spirit Eagle's Crown
-				i(193462),	-- Basran's Protectors
-				i(193463),	-- Wind Spirit's Lasso
-				i(193464),	-- Allied Legguards of Sansok Khan
-				i(193465),	-- Scale Rein Grips
-				i(193466),	-- Acidic Hailstone Treads
-				i(193468),	-- Fang Adornments+
-				i(193469),	-- Toxified Armor Patch+
-				i(193470),	-- Feral Hide Drums
-				i(193475),	-- Masterwork Riding Crop
-
 				i(193477),	-- Battle Scarred Scale
-
-				i(193479),	-- Floral Basket
-				i(193480),	-- Durable Pack
-
-
-
-
-				i(193485),	-- Protective Gloves
-
-				i(193488),	-- Lavish Floral Pack
-				i(193489),	-- Reinforced Pack
-				i(193490),	-- Expert Skinner's Cap
-				i(193491),	-- Shockproof Gloves
-				i(193492),	-- Masterwork Smock
-				i(193493),	-- Expert Alchemist's Hat
-				i(193494),	-- Flaring Cowl
-				i(193495),	-- Savage Bow
-				i(193496),	-- Witherrot Tome
-
-				i(193551),	-- Fang Adornments++
-				i(193552),	-- Toxified Armor Patch++
-				i(193554),	-- Fang Adornments+++
-				i(193555),	-- Toxified Armor Patch+++
-				i(193556),	-- Frosted Armor Kit+
-				i(193557),	-- Fierce Armor Kit+
-				i(193559),	-- Reinforced Armor Kit+
-				i(193560),	-- Frosted Armor Kit++
-				i(193561),	-- Fierce Armor Kit++
-				i(193563),	-- Reinforced Armor Kit++
-				i(193564),	-- Frosted Armor Kit+++
-				i(193565),	-- Fierce Armor Kit+++
-				i(193567),	-- Reinforced Armor Kit+++
-				i(193612),	-- Smithing Apron
-				i(193613),	-- Flameproof Apron
-				i(193615),	-- Jeweler's Cover
-				i(193616),	-- Resplendent Cover
-				i(193868),	-- Pattern: Slimy Expulsion Boots
-				i(193869),	-- Pattern: Toxic Thorn Footwraps
-				i(193870),	-- Pattern: Allied Legguards of Sansok Khan
-				i(193871),	-- Pattern: Elder Spirit's Hood
-				i(193872),	-- Pattern: String of Spiritual Knick-Knacks
-				i(193873),	-- Pattern: Old Spirit's Wristwraps
-				i(193875),	-- Pattern: Allied Heartwarming Fur Coat
-				i(193876),	-- Pattern: Snowball Makers
-				i(193877),	-- Pattern: Spirit Eagle's Crown
-				i(193878),	-- Pattern: Ancestor's Dew Kickers
-				i(193879),	-- Pattern: Tuskarr Snowshoes
-				i(193880),	-- Pattern: Wind Spirit's Lasso
-				i(193881),	-- Pattern: Scale Rein Grips
-				i(193882),	-- Pattern: Acidic Hailstone Treads
-				i(193883),	-- Pattern: Venom-Steeped Stompers
-				i(193884),	-- Pattern: Basran's Protectors
 			}),
 		}),
 		filter(MISC, {
@@ -767,10 +605,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192131),	-- Valdrakken Weapon Chain
 			i(192132),	-- Draconium Blade Sharpener
 			i(193891),	-- Experimental Substance
-			i(193893),	-- Scalebelly Mackerel Lure
-			i(193894),	-- Thousandbite Piranha Lure
-			i(193895),	-- Temporal Dragonhead Lure
-			i(193896),	-- Cerulean Spinefish Lure
+
+
 			i(193897),	-- Reawakened Catalyst
 			i(193898),	-- Umbral Bone Needle
 			i(193899),	-- Primalweave Spindle
@@ -780,7 +616,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193903),	-- Watcher Power Core
 			i(193904),	-- Phoenix Feather Quill
 			i(193905),	-- Iskaaran Trading Ledger
-			i(193906),	-- Elusive Creature Bait
+
 			i(193907),	-- Chipped Tyrstone
 			i(193909),	-- Ancient Gem Fragments
 			i(193910),	-- Molted Dragon Scales
@@ -1276,7 +1112,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194727),	-- Fiery Spirit+
 		i(194728),	-- Fiery Spirit++
 		i(194729),	-- Fiery Spirit+++
-		i(194730),	-- Scalebelly Mackerel
 		i(194731),	-- Illusion Parchment: Magma Missile
 		i(194732),	-- Illusion Parchment: Love Charm
 		i(194733),	-- Illusion Parchment: Aqua Torrent
@@ -1385,14 +1220,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194898),	-- Illuminating Pillar of the Isles
 		i(194902),	-- Ooey-Gooey Chocolate
 		i(194903),	-- Pocket Chocolate
-
 		i(194964),	-- Recipe: Thrice-Spiced Mammoth Kabob
 		i(194965),	-- Recipe: Yusa's Hearty Stew
-		i(194966),	-- Thousandbite Piranha
-		i(194967),	-- Aileron Seamoth
-		i(194968),	-- Cerulean Spinefish
-		i(194969),	-- Temporal Dragonhead
-		i(194970),	-- Islefin Dorado
 		-- Thaldraszus
 		i(195177),	-- Moment's Notice
 		i(195178),	-- Swirling Sand Fists
@@ -1670,8 +1499,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197701),	-- Ohn'ahran Greatsword
 		i(197718),	-- Scroll of Sales
 		i(197725),	-- Deathrip's Curled Claw
-		i(197735),	-- Finished Prototype Explorer's Barding
-		i(197736),	-- Finished Prototype Regal Barding
+
 		-- Crafting cooking
 		i(197741),	-- Maybe Meat
 		i(197742),	-- Ribbed Mollusk Meat
@@ -1772,37 +1600,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197956),	-- Empowered Shortsword of Insight
 		i(197957),	-- Timeless Watcher's Saber
 		i(197960),	-- Bag of Biscuits
-		i(197964),	-- Pattern: Crimson Combatant's Resilient Mask
-		i(197965),	-- Pattern: Crimson Combatant's Resilient Chestpiece
-		i(197966),	-- Pattern: Crimson Combatant's Resilient Trousers
-		i(197967),	-- Pattern: Crimson Combatant's Resilient Shoulderpads
-		i(197968),	-- Pattern: Crimson Combatant's Resilient Boots
-		i(197969),	-- Pattern: Crimson Combatant's Resilient Gloves
-		i(197970),	-- Pattern: Crimson Combatant's Resilient Wristwraps
-		i(197971),	-- Pattern: Crimson Combatant's Resilient Belt
-		i(197972),	-- Pattern: Crimson Combatant's Adamant Cowl
-		i(197973),	-- Pattern: Crimson Combatant's Adamant Chainmail
-		i(197974),	-- Pattern: Crimson Combatant's Adamant Leggings
-		i(197975),	-- Pattern: Crimson Combatant's Adamant Epaulettes
-		i(197976),	-- Pattern: Crimson Combatant's Adamant Treads
-		i(197977),	-- Pattern: Crimson Combatant's Adamant Gauntlets
-		i(197978),	-- Pattern: Crimson Combatant's Adamant Cuffs
-		i(197979),	-- Pattern: Crimson Combatant's Adamant Girdle
-		i(197981),	-- Pattern: Finished Prototype Regal Barding
-		i(197982),	-- Pattern: Finished Prototype Explorer's Barding
-		i(197984),	-- Pattern: Wisp of Tyr
-		i(197985),	-- Pattern: Essence of Tyr
 		i(198002),	-- Draconic Compendium
 		i(198005),	-- Sleek Obsidian Kris
 		i(198006),	-- Sharpened Silver Sword
 		i(198007),	-- Large Brass Cleaver
 		i(198009),	-- Gleaming Bronze Blade
 		i(198035),	-- Archer's Decorated Bow
-		i(198046),	-- Concentrated Primal Infusion
-		i(198048),	-- Titan Training Matrix I
-		i(198056),	-- Titan Training Matrix II
-		i(198058),	-- Titan Training Matrix III
-		i(198059),	-- Titan Training Matrix IV
+
+
 		i(198070),	-- Tattered Seavine
 		i(198071),	-- Flamecarved Bone
 		i(198072),	-- Gold-banded Dragon Tooth
@@ -1881,9 +1686,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198396),	-- Ribbed Mollusk Meat
 		i(198397),	-- Rainbow Pearl
 		i(198400),	-- Lucky Horseshoe
-		i(198401),	-- Aileron Seamoth Lure
-		i(198403),	-- Islefin Dorado Lure
-		i(198404),	-- Bottled Pheromones
+
+
+
 		i(198407),	-- Azure Arcanic Amplifier
 		i(198411),	-- Claw of Preparedness
 		i(198412),	-- Serene Pigment+
@@ -1915,14 +1720,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198452),	-- Prototype F
 		i(198453),	-- Unstable Azerite Grenade
 		i(198454),	-- Draconic Treatise on Blacksmithing
-		i(198457),	-- Pattern: Masterwork Smock
-		i(198458),	-- Pattern: Resplendent Cover
-		i(198459),	-- Pattern: Lavish Floral Pack
-		i(198461),	-- Pattern: Shockproof Gloves
-		i(198462),	-- Pattern: Flameproof Apron
-		i(198463),	-- Pattern: Expert Alchemist's Hat
-		i(198464),	-- Pattern: Reinforced Pack
-		i(198465),	-- Pattern: Expert Skinner's Cap
+
+
+
+
+
+
+
+
 		i(198474),	-- Artist's Easel
 		i(198475),	-- Broken Banding
 		i(198476),	-- Painting of Introduction
@@ -1995,7 +1800,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198615),	-- Pentagold Seal
 		i(198616),	-- Scroll of Sales
 		i(198617),	-- Scroll of Sales
-		i(198618),	-- Pattern: Artisan's Sign
+
 		i(198622),	-- Spyragos
 		i(198626),	-- Dislodged Dragoneye
 		i(198646),	-- Ornate Dragon Statue
@@ -2060,10 +1865,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198798),	-- Flashfrozen Scroll
 		i(198799),	-- Forgotten Arcane Tome
 		i(198800),	-- Fractured Titanic Sphere
-		i(198804),	-- Frost-Infused Creature Bait
-		i(198805),	-- Earth-Infused Creature Bait
-		i(198806),	-- Decay-Infused Creature Bait
-		i(198807),	-- Titan-Infused Creature Bait
+
 		i(198808),	-- [PH] Black Vorquin
 		i(198809),	-- Armored Vorquin Leystrider
 		i(198810),	-- Swift Armored Vorquin
@@ -2246,9 +2048,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199212),	-- Clubfish
 		i(199213),	-- Lakkamuk Blenny
 		i(199219),	-- Element-Infused Blood
-		i(199344),	-- Magma Thresher
-		i(199345),	-- Rimefin Tuna
-		i(199346),	-- Rotten Rimefin Tuna
 		i(199412),	-- Hailstorm Armoredon
 		i(199472),	-- Overflowing Dragon Expedition Supply Pack
 		i(199473),	-- Overflowing Iskaaran Supply Pack
@@ -2455,7 +2254,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200057),	-- Enchant Weapon - Frozen Writ+++
 		i(200058),	-- Enchant Weapon - Wafting Devotion+++
 		i(200059),	-- Enchant Weapon - Wafting Writ+++
-		i(200061),	-- Prismatic Leaper
+
 
 
 		i(200069),	-- Obsidian Cache
@@ -2463,7 +2262,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200071),	-- Sacred Tuskarr Totem
 		i(200072),	-- Dragonbane Strongbox
 		i(200073),	-- Valdrakken Treasures
-		i(200074),	-- Frosted Rimefin Tuna
+
 		i(200075),	-- Flying Fish Bones
 		i(200076),	-- Harpoon Head
 		i(200077),	-- Wooden Pole
@@ -2482,8 +2281,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200095),	-- Supply Laden Soup Pot
 
 
-		i(200103),	-- Pattern: Infurious Hide
-		i(200104),	-- Pattern: Infurious Scales
+
+
 
 		i(200113),	-- Resonant Crystal
 		i(200114),	-- Stormie
@@ -2878,7 +2677,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200683),	-- Legguards of the Deep Strata
 		i(200684),	-- Emerald Tailbone
 		i(200685),	-- Enchanted Compass
-		i(200686),	-- Primal Focus
+
 		i(200687),	-- Stormshale Cuffs
 		i(200688),	-- Tights of Twisting Winds
 		i(200689),	-- Rimetalon Band
@@ -3261,9 +3060,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201254),	-- Medal of Honor
 		i(201255),	-- Medal of Honor
 
-		i(201257),	-- Bloodstained Pattern: Infurious Hide
-		i(201258),	-- Bloodstained Pattern: Infurious Wildercloth Bolt
-		i(201259),	-- Bloodstained Pattern: Infurious Scales
+
+
+
 		i(201260),	-- Dust Spirit
 		i(201261),	-- Blaze Spirit
 		i(201262),	-- Gale Spirit
@@ -3397,14 +3196,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201395),	-- Wingcrest Scimitar
 		i(201396),	-- Hidepiercing Claw Extensions
 		i(201398),	-- Mogu Mozzarella
-		i(201399),	-- Primal Bear Spine
-		i(201400),	-- Aquatic Maw
-		i(201401),	-- Iridescent Plume
-		i(201402),	-- Large Sturdy Femur
-		i(201403),	-- Mastodon Tusk
-		i(201404),	-- Tallstrider Sinew
-		i(201405),	-- Tuft of Primal Wool
-		i(201406),	-- Glowing Titan Orb
+
+
+
+
+
+
+
+
 
 		i(201410),	-- Powerful Purple Thing
 		i(201411),	-- Ancient Vault Artifact
@@ -3451,7 +3250,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201459),	-- Tyrhold Shortsword
 		i(201460),	-- Gavel of Tyrhold
 		i(201461),	-- Tyrhold Pinnacle
-		i(201462),	-- Curiously-Shaped Stomach
+
 		i(201463),	-- Cubbly
 		i(201464),	-- Flesh Parachute
 		i(201466),	-- Mote of Dreams
@@ -3491,8 +3290,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201729),	-- Spiked Horseshoe
 		i(201730),	-- Nokhud Centaur Spear
 		i(201731),	-- Nokhud Centaur Staff
-		i(201732),	-- Pattern: Fierce Armor Kit
-		i(201733),	-- Pattern: Frosted Armor Kit
+
+
 		i(201734),	-- Technique: Cliffside Wylderdrake: Silver and Blue Armor
 		i(201735),	-- Technique: Highland Drake: Silver and Blue Armor
 		i(201736),	-- Technique: Cliffside Wylderdrake: Steel and Yellow Armor
@@ -3535,7 +3334,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201826),	-- Tempest Armaments
 		i(201828),	-- Spiked Leaves
 		i(201829),	-- Pungent Gem
-		i(201832),	-- Smudged Lens
+
 		i(201834),	-- Add Keystone Affix: Thundering
 		i(201835),	-- Draconic Scroll
 		i(201836),	-- Valdrakken Token of Merit
@@ -3595,16 +3394,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201927),	-- Assorted Arcanocrystals
 		i(201933),	-- Black Dragon's Challenge Dummy
 		i(201934),	-- Nokuhd Whittling Knife
-		i(201941),	-- Pioneer's Practiced Cowl
-		i(201942),	-- Pioneer's Practiced Shoulderpads
-		i(201943),	-- Pioneer's Practiced Gloves
-		i(201944),	-- Pioneer's Practiced Leggings
-		i(201945),	-- Pioneer's Practiced Belt
-		i(201946),	-- Trailblazer's Toughened Coif
-		i(201947),	-- Trailblazer's Toughened Spikes
-		i(201948),	-- Trailblazer's Toughened Grips
-		i(201949),	-- Trailblazer's Toughened Legguards
-		i(201950),	-- Trailblazer's Toughened Chainbelt
+
+
+
+
+
+
+
+
+
+
 
 		i(201967),	-- Autographed Skull
 		i(201968),	-- Enormous Grain of Salt
@@ -3630,23 +3429,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(202010),	-- [PH] BoE Plate Wrist
 		i(191857),	-- Warmwater Riverfish
 		i(193049),	-- Earth Key [DNT/UNUSED]
-		i(193455),	-- Infurious Footwraps of Indemnity
-		i(193456),	-- Infurious Spirit's Hood
-		i(193459),	-- Ancestor's Dew Drippers
-		i(193461),	-- Infurious Boots of Reprieve
-		i(193462),	-- Infurious Chainhelm Protector
-		i(193478),	-- Tuskarr Beanbag
-
-		i(193871),	-- Pattern: Infurious Spirit's Hood
-		i(193877),	-- Pattern: Infurious Boots of Reprieve
-		i(193878),	-- Pattern: Ancestor's Dew Drippers
-		i(193879),	-- Pattern: Infurious Footwraps of Indemnity
-		i(193884),	-- Pattern: Infurious Chainhelm Protector
-
-		i(194257),	-- Pattern: Infurious Binding of Gesticulation
-		i(194259),	-- Pattern: Allied Wristguards of Time Dilation
-
-		i(194311),	-- Pattern: Tuskarr Beanbag
 		i(198701),	-- Inert Vessel
 		i(198870),	-- Otto
 		i(199757),	-- Magic Nibbler
@@ -4034,8 +3816,31 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194113),	-- Straddling Illimited Diamond
 			i(194114),	-- Straddling Illimited Diamond
 		}),
+		prof(LEATHERWORKING, {
+			r(375175);	-- Deathchill Hide
+			r(375177);	-- Drygrate Scales
+			r(375170);	-- Masterwork Riding Crop
+			r(382585);	-- Opening
+			r(375198);	-- Savage Bow
+			--
+			i(197984),	-- Pattern: Wisp of Tyr (RECIPE!)
+			--
+			i(197985),	-- Pattern: Illustrious Insight / Essence of Tyr
+			--
+			i(193232),	-- Deathchill Hide+
+			i(193233),	-- Deathchill Hide++
+			i(193234),	-- Deathchill Hide+++
+			i(193239),	-- Drygrate Scales+
+			i(193240),	-- Drygrate Scales++
+			i(193241),	-- Drygrate Scales+++
+			i(193475),	-- Masterwork Riding Crop
+			i(193495),	-- Savage Bow
+		}),
 		prof(MINING, {
 			r(382586),	-- Opening
+		}),
+		prof(SKINNING, {
+			r(382587),	-- Opening
 		}),
 		prof(TAILORING, {
 			-- Probably not NYI?
@@ -4148,9 +3953,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192495),	-- Malfunctioning Stealthman 54
 
 
-			i(193478),	-- Tuskarr Bean Bag
-			i(193476),	-- Gnoll Tent
-			i(197719),	-- Artisan's Sign
+
+
+
 			i(197961),	-- Whelps on Strings
 			i(198409),	-- Personal Shell
 		}),
@@ -4205,7 +4010,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192807, 374278);	-- PH Lava Mammoth Yellow
 		}),
 		--]]
-	})),
+	}),
 	tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
 		i(191425),	-- Choral Amice
 		--

@@ -103,6 +103,97 @@ root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 					},
 				}),
 			})),
+			prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHING }, {
+				n(185359, {	-- Toklo <Fishing Trainer>
+					["coord"] = { 44.6, 74.6, VALDRAKKEN },
+					["g"] = {
+						r(366253),	-- Dragon Isles Fishing
+						r(393061),	-- Aileron Seamoth School
+						r(393060),	-- Cerulean Spinefish School
+						r(393064),	-- Islefin Dorado Pool
+						r(393067),	-- Magma Thresher Pool
+						r(393068),	-- Prismatic Leaper School
+						r(393066),	-- Rimefin Tuna Pool
+						r(393063),	-- Scalebelly Mackerel
+						r(393065),	-- Shimmering Treasure Pool
+						r(393062),	-- Temporal Dragonhead School
+						r(393059),	-- Thousandbite Pirahna Swarm
+					},
+				}),
+			})),
+			prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] = LEATHERWORKING }, {
+				n(185551, {	-- Hideshaper Koruz <Leatherworking Trainer>
+					["coord"] = { 28.8, 61.6, VALDRAKKEN },
+					["g"] = {
+						r(366249),	-- Dragon Isles Leatherworking
+						r(375188),	-- Alchemist's Hat
+						r(375102),	-- Bonewrought Crossbow
+						r(375182),	-- Durable Pack
+						r(375178),	-- Earthshine Scales
+						r(375168),	-- Feral Hide Drums
+						r(375181),	-- Floral Basket
+						r(375179),	-- Frostbite Scales
+						r(375184),	-- Jeweler's Cover
+						r(375174),	-- Mireslush Hide
+						r(375103),	-- Pioneer's Leather Boots
+						r(375104),	-- Pioneer's Leather Wristguards
+						r(375105),	-- Pioneer's Leather Tunic
+						r(395863),	-- Pioneer's Practiced Belt
+						r(395864),	-- Pioneer's Practiced Cowl
+						r(395865),	-- Pioneer's Practiced Gloves
+						r(395867),	-- Pioneer's Practiced Leggings
+						r(395868),	-- Pioneer's Practiced Shoulderpads
+						r(375185),	-- Protective Gloves
+						r(389195),	-- Recraft Equipment
+						r(375164),	-- Reinforced Armor Kit
+						r(375186),	-- Resilient Smock
+						r(375183),	-- Skinner's Cap
+						r(375187),	-- Smithing Apron
+						r(375173),	-- Stonecrust Hide
+						r(375106),	-- Trailblazer's Scale Boots
+						r(375107),	-- Trailblazer's Scale Bracers
+						r(375108),	-- Trailblazer's Scale Vest
+						r(395839),	-- Trailblazer's Toughened Coif
+						r(395844),	-- Trailblazer's Toughened Chainbelt
+						r(395845),	-- Trailblazer's Toughened Grips
+						r(395847),	-- Trailblazer's Toughened Legguards
+						r(395851),	-- Trailblazer's Toughened Spikes
+					},
+				}),
+			})),
+			prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = JEWELCRAFTING }, {
+				n(190094, {	-- Tuluradormi <Jewelcrafting Trainer>
+					["coord"] = { 40.6, 61.2, VALDRAKKEN },
+					["g"] = {
+						r(366250),	-- Dragon Isles Jewelcrafting
+						r(374627),	-- Dragon Isles Prospecting
+						r(395696),	-- Dragon Isles Crushing
+						r(376233),	-- Band of New Beginnings
+						r(374530),	-- Bold-Print Bifocals
+						r(374537),	-- Chromatic Focus
+						r(374437),	-- Crafty Queen's Ruby
+						r(374477),	-- Draconic Vial
+						r(374553),	-- Elemental Harmony
+						r(374439),	-- Energized Vibrant Emerald
+						r(374461),	-- Forceful Nozdorite
+						r(374478),	-- Frameless Lens
+						r(374480),	-- Glossy Stone
+						r(374460),	-- Jagged Nozdorite
+						r(374531),	-- Left-Handed Magnifying Glass
+						r(374494),	-- Pendant of Impending Perils
+						r(374462),	-- Puissant Nozdorite
+						r(389194),	-- Recraft Equipment
+						r(374506),	-- Revitalizing Red Carving
+						r(374440),	-- Sensei's Sundered Onyx
+						r(374475),	-- Shimmering Clasp
+						r(374441),	-- Solid Eternity Amber
+						r(374463),	-- Steady Nozdorite
+						r(374532),	-- Sundered Onyx Loupes
+						r(374550),	-- Timewatcher's Patience
+						r(374438),	-- Zen Mystic Sapphire
+					},
+				}),
+			})),
 			--[[
 			prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING }, {
 				n(, {	--
@@ -114,6 +205,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 						r(395269),	-- Iridescent Ore
 						r(396162),	-- Khaz'gorite
 						r(384692),	-- Serevite Deposit
+					},
+				}),
+			}),
+			prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINNING }, {
+				n(, {	--
+					["coord"] = { X, Y VALDRAKKEN },
+					["g"] = {
+						r(366259),	-- Skinning
+						r(395282),	-- Curious Hide
+						r(395706),	-- Dense Hide
+						r(392440),	-- Leather Skinning
+						r(395700),	-- Lustrous Scaled Hide
+						r(396173),	-- Saturated Bone
+						r(392445),	-- Scale Skinning
 					},
 				}),
 			}),

@@ -25,6 +25,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 			i(194097),	-- Hunter's Fabulous Treasure
 			i(194099),	-- Shikaar Hunting Horn
 			i(194108),	-- Mighty Hunter's Horn
+
+
+			i(193360),	-- Centaur's Trophy Necklace
+			i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)
 		}),
 	}),
 })));

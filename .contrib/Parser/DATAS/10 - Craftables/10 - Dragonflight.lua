@@ -2,46 +2,29 @@
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
 root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
+	i(190456),	-- Artisan's Mettle
+	-- Optional
+	i(190455),	-- Concentrated Primal Focus
+	i(198046),	-- Concentrated Primal Infusion
+	i(198048),	-- Titan Training Matrix I
+	i(198056),	-- Titan Training Matrix II
+	i(198058),	-- Titan Training Matrix III
+	i(198059),	-- Titan Training Matrix IV
+	i(190454),	-- Primal Chaos
+	i(200686),	-- Primal Focus
+	i(197921),	-- Primal Infusion
+	-- VENDORS
+	i(201832),	-- Smudged Lens
+	-- Weekly Quest
+	i(190453),	-- Spark of Ingenuity
 	-- Crafting
 	i(191529),	-- Illustrious Insight
 	i(191526),	-- Lesser Illustrious Insight
-	i(194746),	-- Thomas's Empty Bottle
-
-	i(190456),	-- Artisan's Mettle
-	i(190453),	-- Spark of Ingenuity
-	i(197921),	-- Primal Infusion
-	i(190454),	-- Primal Chaos
-	i(193053),	-- Dragon Isles Duck Feather
-	i(193360),	-- Centaur's Trophy Necklace
-	i(194110),	-- [PH] Dragon Rider's Honor
 	-- Souls
 	i(193921),	-- Airy Soul
 	i(193920),	-- Earthen Soul
 	i(193362),	-- Fiery Soul
 	i(193919),	-- Icy Soul
-
-	-- Awakened
-	i(190327),	-- Awakened Air
-	i(190331),	-- Awakened Decay
-	i(190316),	-- Awakened Earth
-	i(190321),	-- Awakened Fire
-	i(190329),	-- Awakened Frost
-	i(190450),	-- Awakened Ire
-	i(190324),	-- Awakened Order
-	-- Rousing
-	i(190326),	-- Rousing Air
-	i(190330),	-- Rousing Decay
-	i(190315),	-- Rousing Earth
-	i(190320),	-- Rousing Fire
-	i(190328),	-- Rousing Frost
-	i(190451),	-- Rousing Ire
-	i(190322),	-- Rousing Order
-	-- Cloth
-	i(193050),	-- Tattered Wildercloth
-	i(193922),	-- Wildercloth
-	i(193923),	-- Decayed Wildercloth
-	i(193924),	-- Frostbitten Wildercloth
-	i(193925),	-- Singed Wildercloth
 	prof(ALCHEMY, {
 		spell(370747, {	-- Advanced Phial Experimentation
 			r(370472),	-- Aerated Phial of Deftness
@@ -660,14 +643,18 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(199236),	-- Schematic: D.U.C.K.O.Y. (RECIPE!)
 			i(199228),	-- Schematic: Grease Grenade (RECIPE!)
 		}),
-		i(199338),	-- Copper Coin of the Isles
-		i(199339),	-- Silver Coin of the Isles
-		i(199340),	-- Gold Coin of the Isles
-
 		i(194967),	-- Aileron Seamoth
 		i(194968),	-- Cerulean Spinefish
+		i(199338),	-- Copper Coin of the Isles
+		i(200074),	-- Frosted Rimefin Tuna
+		i(199340),	-- Gold Coin of the Isles
 		i(194970),	-- Islefin Dorado
+		i(199344),	-- Magma Thresher
+		i(200061),	-- Prismatic Leaper
+		i(199345),	-- Rimefin Tuna
+		i(199346),	-- Rotten Rimefin Tuna
 		i(194730),	-- Scalebelly Mackeral
+		i(199339),	-- Silver Coin of the Isles
 		i(194969),	-- Temporal Dragonhead
 		i(194966),	-- Thousandbite Piranha
 	}),
@@ -929,7 +916,159 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(192963),	-- Zen Neltharite++
 		i(192964),	-- Zen Neltharite+++
 	}),
+	prof(LEATHERWORKING, {
+		n(ARMOR, {
+			i(193466),	-- Acidic Hailstone Treads
+			i(193453),	-- Allied Heartwarming Fur Coat
+			i(193464),	-- Allied Legguards of Sansok Khan
+			i(193459),	-- Ancestor's Dew Drippers
+			i(193440),	-- Crimson Combatant's Adamant Chainmail
+			i(193441),	-- Crimson Combatant's Adamant Cowl
+			i(193446),	-- Crimson Combatant's Adamant Cuffs
+			i(193442),	-- Crimson Combatant's Adamant Epaulettes
+			i(193445),	-- Crimson Combatant's Adamant Gauntlets
+			i(193443),	-- Crimson Combatant's Adamant Girdle
+			i(193444),	-- Crimson Combatant's Adamant Leggings
+			i(193439),	-- Crimson Combatant's Adamant Treads
+			i(193434),	-- Crimson Combatant's Resilient Belt
+			i(193430),	-- Crimson Combatant's Resilient Boots
+			i(193431),	-- Crimson Combatant's Resilient Chestpiece
+			i(193436),	-- Crimson Combatant's Resilient Gloves
+			i(193432),	-- Crimson Combatant's Resilient Mask
+			i(193433),	-- Crimson Combatant's Resilient Shoulderpads
+			i(193435),	-- Crimson Combatant's Resilient Trousers
+			i(193437),	-- Crimson Combatant's Resilient Wristwraps
+			i(193425),	-- Flame-Touched Chain
+			i(193422),	-- Flame-Touched Chainmail
+			i(193428),	-- Flame-Touched Cuffs
+			i(193427),	-- Flame-Touched Handguards
+			i(193423),	-- Flame-Touched Helmet
+			i(193426),	-- Flame-Touched Legguards
+			i(193424),	-- Flame-Touched Spaulders
+			i(193421),	-- Flame-Touched Treads
+			i(193494),	-- Flaring Cowl
+			i(193461),	-- Infurious Boots of Reprieve
+			i(193462),	-- Infurious Chainhelm Protector
+			i(193455),	-- Infurious Footwraps of Indemnity
+			i(193456),	-- Infurious Spirit's Hood
+			i(193407),	-- Life-Bound Belt
+			i(193419),	-- Life-Bound Bindings
+			i(193398),	-- Life-Bound Boots
+			i(193400),	-- Life-Bound Cap
+			i(193399),	-- Life-Bound Chestpiece
+			i(193418),	-- Life-Bound Gloves
+			i(193406),	-- Life-Bound Shoulderpads
+			i(193408),	-- Life-Bound Trousers
+			i(193454),	-- Old Spirit's Wristwraps
+			i(193386),	-- Pioneer's Leather Boots
+			i(193388),	-- Pioneer's Leather Wristguards
+			i(193390),	-- Pioneer's Leather Tunic
+			i(201945),	-- Pioneer's Practiced Belt
+			i(201941),	-- Pioneer's Practiced Cowl
+			i(201943),	-- Pioneer's Practiced Gloves
+			i(201944),	-- Pioneer's Practiced Leggings
+			i(201942),	-- Pioneer's Practiced Shoulderpads
+			i(193465),	-- Scale Rein Grips
+			i(193451),	-- Slimy Expulsion Boots
+			i(193458),	-- Snowball Makers
+			i(193457),	-- String of Spiritual Knick-Knacks
+			i(193452),	-- Toxic Thorn Footwraps
+			i(193392),	-- Trailblazer's Scale Boots
+			i(193393),	-- Trailblazer's Scale Bracers
+			i(193394),	-- Trailblazer's Scale Vest
+			i(201946),	-- Trailblazer's Toughened Coif
+			i(201950),	-- Trailblazer's Toughened Chainbelt
+			i(201948),	-- Trailblazer's Toughened Grips
+			i(201949),	-- Trailblazer's Toughened Legguards
+			i(201947),	-- Trailblazer's Toughened Spikes
+			i(193460),	-- Venom-Steeped Stompers
+			i(193463),	-- Wind Spirit's Lasso
+			-- Tools
+			i(193487),	-- Alchemist's Hat
+			i(193493),	-- Expert Alchemist's Hat
+			i(193490),	-- Expert Skinner's Cap
+			i(193480),	-- Durable Pack
+			i(193613),	-- Flameproof Apron
+			i(193479),	-- Floral Basket
+			i(193615),	-- Jeweler's Cover
+			i(193488),	-- Lavish Floral Pack
+			i(193492),	-- Masterwork Smock
+			i(193485),	-- Protective Gloves
+			i(193489),	-- Reinforced Pack
+			i(193616),	-- Resplendent Cover
+			i(193486),	-- Resilient Smock
+			i(193491),	-- Shockproof Gloves
+			i(193482),	-- Skinner's Cap
+			i(193612),	-- Smithing Apron
+		}),
+		filter(MISC, {
+			i(193468),	-- Fang Adornments+
+			i(193551),	-- Fang Adornments++
+			i(193554),	-- Fang Adornments+++
+			i(193470),	-- Feral Hide Drums
+			i(193557),	-- Fierce Armor Kit+
+			i(193561),	-- Fierce Armor Kit++
+			i(193565),	-- Fierce Armor Kit+++
+			i(193556),	-- Frosted Armor Kit+
+			i(193560),	-- Frosted Armor Kit++
+			i(193564),	-- Frosted Armor Kit+++
+			i(193559),	-- Reinforced Armor Kit+
+			i(193563),	-- Reinforced Armor Kit++
+			i(193567),	-- Reinforced Armor Kit+++
+			i(193469),	-- Toxified Armor Patch+
+			i(193552),	-- Toxified Armor Patch++
+			i(193555),	-- Toxified Armor Patch+++
+		}),
+		filter(56, {	-- Reagents
+			i(193242),	-- Earthshine Scales+
+			i(193243),	-- Earthshine Scales++
+			i(193244),	-- Earthshine Scales+++
+			i(197735),	-- Finished Prototype Explorer's Barding
+			i(197736),	-- Finished Prototype Regal Barding
+			i(193245),	-- Frostbite Scales+
+			i(193246),	-- Frostbite Scales++
+			i(193247),	-- Frostbite Scales+++
+			i(193236),	-- Infurious Hide+
+			i(193237),	-- Infurious Hide++
+			i(193238),	-- Infurious Hide+++
+			i(193248),	-- Infurious Scales+
+			i(193249),	-- Infurious Scales++
+			i(193250),	-- Infurious Scales+++
+			i(193229),	-- Mireslush Hide+
+			i(193230),	-- Mireslush Hide++
+			i(193231),	-- Mireslush Hide+++
+			i(193226),	-- Stonecrust Hide+
+			i(193227),	-- Stonecrust Hide++
+			i(193228),	-- Stonecrust Hide+++
+		}),
+		filter(TOYS, {
+			i(197719),	-- Artisan's Sign (TOY!)
+			i(193476),	-- Gnoll Tent (TOY!)
+			i(193478),	-- Tuskarr Bean Bag (TOY!)
+		}),
+		n(-386, {	-- Trinkets
+			i(193496),	-- Witherrot Tome
+		}),
+		n(WEAPONS, {
+			i(193449),	-- Bow of the Dragon Hunters
+			i(193383),	-- Bonewrought Crossbow
+		}),
+	}),
 	prof(MINING, {
+		spell(366260, {	-- Mining
+			i(189143),	-- Draconium Ore+
+			i(188658),	-- Draconium Ore++
+			i(190311),	-- Draconium Ore+++
+			i(201301),	-- Iridescent Ore
+			i(201300),	-- Iridescent Ore Fragments
+			i(190312),	-- Khaz'gorite Ore+
+			i(190313),	-- Khaz'gorite Ore++
+			i(190314),	-- Khaz'gorite Ore+++
+			i(197754),	-- Salt Deposit
+			i(190395),	-- Serevite Ore+
+			i(190396),	-- Serevite Ore++
+			i(190394),	-- Serevite Ore+++
+		}),
 		n(DISCOVERY, {
 			r(389701),	-- Overload Hardened Node
 			r(389704),	-- Overload Infurious Node
@@ -943,27 +1082,44 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			r(383649),	-- Refine Serevite++
 			r(383792),	-- Refine Serevite+++
 		}),
-		i(189143),	-- Draconium Ore+
-		i(188658),	-- Draconium Ore++
-		i(190311),	-- Draconium Ore+++
-		i(201301),	-- Iridescent Ore
-		i(201300),	-- Iridescent Ore Fragments
-		i(190312),	-- Khaz'gorite Ore+
-		i(190313),	-- Khaz'gorite Ore++
-		i(190314),	-- Khaz'gorite Ore+++
-		i(197754),	-- Salt Deposit
-		i(190395),	-- Serevite Ore+
-		i(190396),	-- Serevite Ore++
-		i(190394),	-- Serevite Ore+++
 	}),
 	prof(SKINNING, {
+		spell(366259, {	-- Skinning
+			i(193213),	-- Adamant Scales+
+			i(193214),	-- Adamant Scales++
+			i(193215),	-- Adamant Scales+++
+			i(193261),	-- Bite-Sized Morsel
+			i(193253),	-- Cacophonous Thunderscale
+			i(193251),	-- Crystalspine Fur
+			i(193216),	-- Dense Hide+
+			i(193217),	-- Dense Hide++
+			i(193218),	-- Dense Hide+++
+			i(193262),	-- Exceptional Morsel
+			i(193258),	-- Fire-Infused Hide
+			i(193259),	-- Flawless Proto Dragon Scale
+			i(193222),	-- Lustrous Scaled Hide+
+			i(193223),	-- Lustrous Scaled Hide++
+			i(193224),	-- Lustrous Scaled Hide+++
+			i(193255),	-- Pristine Vorquin Horn
+			i(193208),	-- Resilient Leather+
+			i(193210),	-- Resilient Leather++
+			i(193211),	-- Resilient Leather+++
+			i(193254),	-- Rockfang Leather
+			i(193252),	-- Salamanther Scales
+			i(193256),	-- Windsong Plumage
+		}),
 		i(198401),	-- Aileron Seamoth Lure
+		i(198404),	-- Bottled Pheromones
 		i(193896),	-- Cerulean Spinefish Lure
+		i(201462),	-- Curiously-Shaped Stomach
+		i(198806),	-- Decay-Infused Creature Bait
+		i(198805),	-- Earth-Infused Creature Bait
 		i(193906),	-- Elusive Creature Bait
+		i(198804),	-- Frost-Infused Creature Bait
 		i(198403),	-- Islefin Dorado Lure
-		i(198404),	-- Pheromone Emitter
 		i(193893),	-- Scalebelly Mackerel Lure
 		i(193895),	-- Temporal Dragonhead Lure
+		i(198807),	-- Titan-Infused Creature Bait
 		i(193894),	-- Thousandbite Piranha Lure
 	}),
 	prof(TAILORING, {
@@ -1493,6 +1649,125 @@ root("HiddenQuestTriggers", {
 			q(),	-- Timewatcher's Patience
 		}),
 		--]]
+		prof(LEATHERWORKING, {
+			-- Recraft
+			q(),	-- Recraft Equipment
+			-- Leather Armor
+			q(),	-- Life-Bound Belt
+			q(),	-- Life-Bound Binding
+			q(),	-- Life-Bound Boots
+			q(),	-- Life-Bound Cap
+			q(),	-- Life-Bound Chestpiece
+			q(),	-- Life-Bound Gloves
+			q(),	-- Life-Bound Shoulderpads
+			q(),	-- Life-Bound Trousers
+			q(),	-- Pioneer's Leather Boots
+			q(),	-- Pioneer's Leather Tunic
+			q(),	-- Pioneer's Leather Wristguard
+			q(),	-- Pioneer's Practiced Belt
+			q(),	-- Pioneer's Practiced Cowl
+			q(),	-- Pioneer's Practiced Gloves
+			q(),	-- Pioneer's Practiced Leggings
+			q(),	-- Pioneer's Practiced Shoulderpads
+			-- Mail Armor
+			q(),	-- Flame-Touched Chain
+			q(),	-- Flame-Touched Chainmail
+			q(),	-- Flame-Touched Cuffs
+			q(),	-- Flame-Touched Handguards
+			q(),	-- Flame-Touched Helmet
+			q(),	-- Flame-Touched Legguards
+			q(),	-- Flame-Touched Spaulders
+			q(),	-- Flame-Touched Treads
+			q(),	-- Trailblazer's Scale Boots
+			q(),	-- Trailblazer's Scale Bracers
+			q(),	-- Trailblazer's Scale Vest
+			q(),	-- Trailblazer's Toughened Chainbelt
+			q(),	-- Trailblazer's Toughened Coif
+			q(),	-- Trailblazer's Toughened Grips
+			q(),	-- Trailblazer's Toughened Legguards
+			q(),	-- Trailblazer's Toughened Spikes
+			-- Profession Equipment
+			q(),	-- Alchemist's Hat
+			q(),	-- Durable Pack
+			q(),	-- Expert Alchemist's Hat
+			q(),	-- Expert Skinner's Cap
+			q(),	-- Flameproof Apron
+			q(),	-- Floral Basket
+			q(),	-- Jeweler's Cover
+			q(),	-- Lavish Floral Pack
+			q(),	-- Masterwork Smock
+			q(),	-- Protective Gloves
+			q(),	-- Reinforced Pack
+			q(),	-- Resilient Smock
+			q(),	-- Resplendent Cover
+			q(),	-- Shockproof Gloves
+			q(),	-- Skinner's Cap
+			q(),	-- Smithing Apron
+			-- Weapons
+			q(),	-- Bonewrought Crossbow
+			-- Elemental Patterns
+			q(),	-- Ancestor's Dew Drippers
+			q(),	-- Flaring Cowl
+			q(),	-- Old Spirit's Wristwraps
+			q(),	-- Scale Rein Grips
+			q(),	-- Snowball Makers
+			q(),	-- String of Spiritual Knick-Knacks
+			q(),	-- Wind Spirit's Lasso
+			-- Bestial Patterns
+			q(),	-- Allied Heartwarming Fur Coat
+			q(),	-- Allied Legguards of Sansok Khan
+			q(),	-- Bow of the Dragon Hunters
+			q(),	-- Crimson Combatant's Adamant Chainmail
+			q(),	-- Crimson Combatant's Adamant Cowl
+			q(),	-- Crimson Combatant's Adamant Cuffs
+			q(),	-- Crimson Combatant's Adamant Eqpaulettes
+			q(),	-- Crimson Combatant's Adamant Gauntlets
+			q(),	-- Crimson Combatant's Adamant Girdle
+			q(),	-- Crimson Combatant's Adamant Leggings
+			q(),	-- Crimson Combatant's Adamant Treads
+			q(),	-- Crimson Combatant's Resilient Belt
+			q(),	-- Crimson Combatant's Resilient Boots
+			q(),	-- Crimson Combatant's Resilient Chestpiece
+			q(),	-- Crimson Combatant's Resilient Gloves
+			q(),	-- Crimson Combatant's Resilient Mask
+			q(),	-- Crimson Combatant's Resilient Shoulderpads
+			q(),	-- Crimson Combatant's Resilient Trousers
+			q(),	-- Crimson Combatant's Resilient Wristwraps
+			q(),	-- Infurious Boots of Reprieve
+			q(),	-- Infurious Chainhelm Protector
+			q(),	-- Infurious Footwraps of Indemnity
+			q(),	-- Infurious Spirit's Hood
+			-- Decayed Patter
+			q(),	-- Acidic Hailstone Treads
+			q(),	-- Silmy Expulsion Boots
+			q(),	-- Toxic Thorn Footwraps
+			q(),	-- Venom-Steeped Stompers
+			q(),	-- Witherrot Tome
+			-- Reagents
+			q(),	-- Finished Prototype Explorer's Barding
+			q(),	-- Finished Prototype Regal Barding
+			q(),	-- Earthshine Scale
+			q(),	-- Frostbite Scale
+			q(),	-- Infurious Hide
+			q(),	-- Infurious Scales
+			q(),	-- Mireslush Hide
+			q(),	-- Stonecrust Hide
+			-- Optional Reagents
+			q(),	-- Fang Adornments
+			q(),	-- Toxified Armor Patch
+			-- Finishing Reagents
+			q(),	-- Illustrious Insight
+			-- Armor Kits
+			q(),	-- Fierce Armor Kit
+			q(),	-- Frosted Armor Kit
+			q(),	-- Reinforced Armor Kit
+			-- Drums
+			q(),	-- Feral Hide Drums
+			-- Toys
+			q(),	-- Artisan's Sign
+			q(),	-- Gnoll Tent
+			q(),	-- Tuskarr Bean Bag
+		}),
 		prof(MINING, {
 			q(72160),	-- Iridescent Ore Fragments
 			--q(71950),

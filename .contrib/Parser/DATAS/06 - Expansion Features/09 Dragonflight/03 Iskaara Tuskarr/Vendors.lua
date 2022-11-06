@@ -127,9 +127,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 						-- RENOWN 15 --
 					i(194634),	-- Design: Idol of the Dreamer (RECIPE!)
 					i(194633),	-- Design: Idol of the Spell-Weaver (RECIPE!)
+					i(193875),	-- Pattern: Allied Heartwarming Fur Coat (RECIPE!)
+					i(193876),	-- Pattern: Snowball Makers (RECIPE!)
 						-- RENOWN 18 --
 					i(194660),	-- Design: Fine-Print Trifocals (RECIPE!)
 					i(194663),	-- Design: Resonant Focus (RECIPE!)
+					i(198465),	-- Pattern: Expert Skinner's Cap (RECIPE!)
+					i(198459),	-- Pattern: Lavish Floral Pack (RECIPE!)
+					i(198458),	-- Pattern: Resplendent Cover (RECIPE!)
+					i(198461),	-- Pattern: Shockproof Gloves (RECIPE!)
+					-- Renown 23
+					i(194311),	-- Pattern: Tuskarr Bean Bag (RECIPE!)
+					-- Renown 29 --
+					i(197981),	-- Pattern: Finished Prototype Regal Barding (RECIPE!)
 				},
 			}),
 			n(187680, {	-- Scaps

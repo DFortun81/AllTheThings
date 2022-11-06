@@ -28,14 +28,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					i(197569),	-- Windborne Velocidrake: Horned Jaw
 					i(197610),	-- Windborne Velocidrake: Yellow Horns
 					-- RENOWN 13 --
+					i(193870),	-- Pattern: Allied Legguards of Sansok Khan (RECIPE!)
+					i(193878),	-- Pattern: Ancestor's Dew Drippers (RECIPE!)
 					i(194478),	-- Plans: Obsidian Seared Facesmasher (RECIPE!)
 					i(194480),	-- Plans: Obsidian Halberd (RECIPE!)
 					i(194477),	-- Plans: Obsidian Seared Runeaxe (RECIPE!)
 					i(191547),	-- Recipe: Alacritous Alchemist Stone (RECIPE!)
 					-- Renown 18 --
+					i(198463),	-- Pattern: Expert Alchemist's Hat (RECIPE!)
+					i(198462),	-- Pattern: Flameproof Apron (RECIPE!)
+					i(198457),	-- Pattern: Masterwork Smock (RECIPE!)
+					i(198464),	-- Pattern: Reinforced Pack (RECIPE!)
 					i(194499),	-- Plans: Khaz'gorite Leatherworker's Knife (RECIPE!)
 					i(194497),	-- Plans: Khaz'gorite Skinning Knife (RECIPE!)
 					-- RENOWN 22 --
+					i(197982),	-- Pattern: Finished Prototype Explorer's Barding (RECIPE!)
 					i(198713),	-- Plans: Prototype Explorer's Barding Framework (RECIPE!)
 					i(191588),	-- Recipe: Exultant Incense (RECIPE!)
 				},

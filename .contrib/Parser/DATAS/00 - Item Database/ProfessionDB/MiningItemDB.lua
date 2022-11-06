@@ -48,7 +48,7 @@ i(0, 389460);	-- Rich Serevite Deposit
 i(0, 389465);	-- Serevite Seam
 i(0, 389406);	-- Titan-Touched Draconium Deposit
 i(0, 389461);	-- Titan-Touched Serevite Deposit
--- SPECIALiZATION --
+-- SPECIALIZATION --
 i(0, 389701);	-- Overload Hardened Node
 i(0, 389704);	-- Overload Infurious Node
 i(0, 389700);	-- Overload Molten Node
