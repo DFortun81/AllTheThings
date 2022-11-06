@@ -14,7 +14,7 @@ root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM
 	}),
 })));
 
--- Yearly Anniversary Content -- TODO verify this after 18th anniversary starts
+-- Yearly Anniversary Content -- also used for 18th anniversary
 root("WorldEvents", n(SEVENTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVERSARY, }, {
 	n(QUESTS, {
 		q(60215, {	-- Doomwalkin' Has Come Knockin'

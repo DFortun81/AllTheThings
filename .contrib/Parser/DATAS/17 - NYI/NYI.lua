@@ -4231,7 +4231,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(65152),	-- A Hardened Bond (This is Soulbind Quest for Necrolords new one might cross complete?? /Braghe)
 			q(64649),	-- A Mountain of Work to Do
 		}),
-		i(187710),	-- Anniversary Gift (Probably for 18th Ani)
 		i(189561),	-- Tame Prime: Orixal
 		i(189572),	-- Tame Prime: Hadeon the Stonebreaker
 		i(189573),	-- Tame Prime: Garudeon
