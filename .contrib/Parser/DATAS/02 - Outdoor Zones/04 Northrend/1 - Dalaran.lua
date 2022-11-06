@@ -4420,6 +4420,14 @@ root("Zones", {
 									{ "i", 43138, 6 },	-- Half Full Dalaran Wine Glass
 								},
 							}),
+							-- #if ANYCLASSIC
+							i(43137, {	-- Aged Dalaran Limburger
+								["provider"] = { "o", 192825 },	-- Aged Dalaran Limburger
+							}),
+							i(43138, {	-- Half Full Dalaran Wine Glass
+								["provider"] = { "o", 192824 },	-- Half Full Glass of Wine
+							}),
+							-- #endif
 							i(44113),	-- Small Spice Bag
 							currency(81),	-- Epicurean's Award
 						},
@@ -4455,7 +4463,10 @@ root("Zones", {
 								["provider"] = { "i", 34747 },	-- Northern Stew
 							}),
 							objective(2, {	-- 0/1 Jug of Wine
-								["provider"] = { "i", 43128 },	-- Jug of Wine
+								["providers"] = {
+									{ "i", 43128 },	-- Jug of Wine
+									{ "o", 192823 },	-- Full Jug of Wine
+								},
 							}),
 							i(44113),	-- Small Spice Bag
 							currency(81),	-- Epicurean's Award
