@@ -788,7 +788,7 @@ local TIER_TEN_HEROIC_GROUPS = {
 				{ "i", 51126, 1 },	-- Sanctified Scourgelord Legplates
 			},
 		}),
-		
+
 		-- Tank
 		i(51306, {	-- Sanctified Scourgelord Faceguard (H)
 			["cost"] = {
@@ -853,7 +853,7 @@ local TIER_TEN_HEROIC_GROUPS = {
 				{ "i", 51146, 1 },	-- Sanctified Lasherweave Trousers
 			},
 		}),
-		
+
 		-- Feral
 		i(51296, {	-- Sanctified Lasherweave Headguard (H)
 			["cost"] = {
@@ -885,7 +885,7 @@ local TIER_TEN_HEROIC_GROUPS = {
 				{ "i", 51142, 1 },	-- Sanctified Lasherweave Legguards
 			},
 		}),
-		
+
 		-- Restoration
 		i(51302, {	-- Sanctified Lasherweave Helmet (H)
 			["cost"] = {
@@ -1014,7 +1014,7 @@ local TIER_TEN_HEROIC_GROUPS = {
 				{ "i", 51168, 1 },	-- Sanctified Lightsworn Greaves
 			},
 		}),
-		
+
 		-- Protection
 		i(51266, {	-- Sanctified Lightsworn Faceguard (H)
 			["cost"] = {
@@ -1046,7 +1046,7 @@ local TIER_TEN_HEROIC_GROUPS = {
 				{ "i", 51171, 1 },	-- Sanctified Lightsworn Legguards
 			},
 		}),
-		
+
 		-- Retribution
 		i(51277, {	-- Sanctified Lightsworn Helmet (H)
 			["cost"] = {
@@ -1111,7 +1111,7 @@ local TIER_TEN_HEROIC_GROUPS = {
 				{ "i", 51177, 1 },	-- Sanctified Crimson Acolyte Leggings
 			},
 		}),
-		
+
 		-- Shadow
 		i(51255, {	-- Sanctified Crimson Acolyte Cowl (H)
 			["cost"] = {
@@ -1208,7 +1208,7 @@ local TIER_TEN_HEROIC_GROUPS = {
 				{ "i", 51203, 1 },	-- Sanctified Frost Witch's Kilt
 			},
 		}),
-		
+
 		-- Enhancement
 		i(51242, {	-- Sanctified Frost Witch's Faceguard (H)
 			["cost"] = {
@@ -1240,7 +1240,7 @@ local TIER_TEN_HEROIC_GROUPS = {
 				{ "i", 51198, 1 },	-- Sanctified Frost Witch's War-Kilt
 			},
 		}),
-		
+
 		-- Restoration
 		i(51247, {	-- Sanctified Frost Witch's Headpiece (H)
 			["cost"] = {
@@ -1337,7 +1337,7 @@ local TIER_TEN_HEROIC_GROUPS = {
 				{ "i", 51211, 1 },	-- Sanctified Ymirjar Lord's Legplates
 			},
 		}),
-		
+
 		-- Tank
 		i(51221, {	-- Sanctified Ymirjar Lord's Greathelm (H)
 			["cost"] = {
@@ -1408,7 +1408,7 @@ local TIER_TEN_NORMAL_GROUPS = {
 				{ "i", 50097, 1 },	-- Scourgelord Legplates
 			},
 		}),
-		
+
 		-- Tank
 		i(51133, {	-- Sanctified Scourgelord Faceguard (N)
 			["cost"] = {
@@ -1473,7 +1473,7 @@ local TIER_TEN_NORMAL_GROUPS = {
 				{ "i", 50820, 1 },	-- Lasherweave Trousers
 			},
 		}),
-		
+
 		-- Feral
 		i(51143, {	-- Sanctified Lasherweave Headguard (N)
 			["cost"] = {
@@ -1505,7 +1505,7 @@ local TIER_TEN_NORMAL_GROUPS = {
 				{ "i", 50825, 1 },	-- Lasherweave Legguards
 			},
 		}),
-		
+
 		-- Restoration
 		i(51137, {	-- Sanctified Lasherweave Helmet (N)
 			["cost"] = {
@@ -1634,7 +1634,7 @@ local TIER_TEN_NORMAL_GROUPS = {
 				{ "i", 50869, 1 },	-- Lightsworn Tunic
 			},
 		}),
-		
+
 		-- Protection
 		i(51173, {	-- Sanctified Lightsworn Faceguard (N)
 			["cost"] = {
@@ -1666,7 +1666,7 @@ local TIER_TEN_NORMAL_GROUPS = {
 				{ "i", 50861, 1 },	-- Lightsworn Legguards
 			},
 		}),
-		
+
 		-- Retribution
 		i(51162, {	-- Sanctified Lightsworn Helmet (N)
 			["cost"] = {
@@ -1731,7 +1731,7 @@ local TIER_TEN_NORMAL_GROUPS = {
 				{ "i", 50769, 1 },	-- Crimson Acolyte Leggings
 			},
 		}),
-		
+
 		-- Shadow
 		i(51184, {	-- Sanctified Crimson Acolyte Cowl (N)
 			["cost"] = {
@@ -1828,7 +1828,7 @@ local TIER_TEN_NORMAL_GROUPS = {
 				{ "i", 50844, 1 },	-- Frost Witch's Kilt
 			},
 		}),
-		
+
 		-- Enhancement
 		i(51197, {	-- Sanctified Frost Witch's Faceguard (N)
 			["cost"] = {
@@ -1860,7 +1860,7 @@ local TIER_TEN_NORMAL_GROUPS = {
 				{ "i", 50833, 1 },	-- Frost Witch's War-Kilt
 			},
 		}),
-		
+
 		-- Restoration
 		i(51192, {	-- Sanctified Frost Witch's Headpiece (N)
 			["cost"] = {
@@ -1957,7 +1957,7 @@ local TIER_TEN_NORMAL_GROUPS = {
 				{ "i", 50081, 1 },	-- Ymirjar Lord's Legplates
 			},
 		}),
-		
+
 		-- Tank
 		i(51218, {	-- Sanctified Ymirjar Lord's Greathelm (N)
 			["cost"] = {
@@ -2003,7 +2003,7 @@ local TIER_TEN_GROUPS = {
 		emof(60, i(50095)),	-- Scourgelord Gauntlets
 		emof(95, i(50094)),	-- Scourgelord Battleplate
 		emof(95, i(50097)),	-- Scourgelord Legplates
-		
+
 		-- Tank
 		emof(95, i(50855)),	-- Scourgelord Faceguard
 		emof(60, i(50853)),	-- Scourgelord Pauldrons
@@ -2018,14 +2018,14 @@ local TIER_TEN_GROUPS = {
 		emof(60, i(50822)),	-- Lasherweave Gloves
 		emof(95, i(50823)),	-- Lasherweave Vestment
 		emof(95, i(50820)),	-- Lasherweave Trousers
-		
+
 		-- Feral
 		emof(95, i(50826)),	-- Lasherweave Headguard
 		emof(60, i(50824)),	-- Lasherweave Shoulderpads
 		emof(60, i(50827)),	-- Lasherweave Handgrips
 		emof(95, i(50828)),	-- Lasherweave Raiment
 		emof(95, i(50825)),	-- Lasherweave Legguards
-		
+
 		-- Restoration
 		emof(95, i(50108)),	-- Lasherweave Helmet
 		emof(60, i(50113)),	-- Lasherweave Pauldrons
@@ -2054,14 +2054,14 @@ local TIER_TEN_GROUPS = {
 		emof(60, i(50868)),	-- Lightsworn Gloves
 		emof(95, i(50869)),	-- Lightsworn Tunic
 		emof(95, i(50866)),	-- Lightsworn Greaves
-		
+
 		-- Protection
 		emof(95, i(50862)),	-- Lightsworn Faceguard
 		emof(60, i(50860)),	-- Lightsworn Shoulderguards
 		emof(60, i(50863)),	-- Lightsworn Handguards
 		emof(95, i(50864)),	-- Lightsworn Chestguard
 		emof(95, i(50861)),	-- Lightsworn Legguards
-		
+
 		-- Retribution
 		emof(95, i(50326)),	-- Lightsworn Helmet
 		emof(60, i(50324)),	-- Lightsworn Shoulderplates
@@ -2076,7 +2076,7 @@ local TIER_TEN_GROUPS = {
 		emof(60, i(50766)),	-- Crimson Acolyte Gloves
 		emof(95, i(50768)),	-- Crimson Acolyte Robe
 		emof(95, i(50769)),	-- Crimson Acolyte Leggings
-		
+
 		-- Shadow
 		emof(95, i(50392)),	-- Crimson Acolyte Cowl
 		emof(60, i(50396)),	-- Crimson Acolyte Mantle
@@ -2098,14 +2098,14 @@ local TIER_TEN_GROUPS = {
 		emof(60, i(50842)),	-- Frost Witch's Gloves
 		emof(95, i(50841)),	-- Frost Witch's Hauberk
 		emof(95, i(50844)),	-- Frost Witch's Kilt
-		
+
 		-- Enhancement
 		emof(95, i(50832)),	-- Frost Witch's Faceguard
 		emof(60, i(50834)),	-- Frost Witch's Shoulderguards
 		emof(60, i(50831)),	-- Frost Witch's Grips
 		emof(95, i(50830)),	-- Frost Witch's Chestguard
 		emof(95, i(50833)),	-- Frost Witch's War-Kilt
-		
+
 		-- Restoration
 		emof(95, i(50837)),	-- Frost Witch's Headpiece
 		emof(60, i(50839)),	-- Frost Witch's Spaulders
@@ -2127,7 +2127,7 @@ local TIER_TEN_GROUPS = {
 		emof(60, i(50079)),	-- Ymirjar Lord's Gauntlets
 		emof(95, i(50078)),	-- Ymirjar Lord's Battleplate
 		emof(95, i(50081)),	-- Ymirjar Lord's Legplates
-		
+
 		-- Tank
 		emof(95, i(50848)),	-- Ymirjar Lord's Greathelm
 		emof(60, i(50846)),	-- Ymirjar Lord's Pauldrons
@@ -2149,7 +2149,7 @@ local TIER_NINE_GROUPS = {
 		emot(30, a(i(48480))),	-- Thassarian's Gauntlets of Conquest
 		emot(50, a(i(48474))),	-- Thassarian's Battleplate of Conquest
 		emot(50, a(i(48476))),	-- Thassarian's Legplates of Conquest
-		
+
 		-- Tank
 		emot(50, a(i(48529))),	-- Thassarian's Faceguard of Conquest
 		emot(30, a(i(48535))),	-- Thassarian's Pauldrons of Conquest
@@ -2164,7 +2164,7 @@ local TIER_NINE_GROUPS = {
 		emot(30, h(i(48502))),	-- Koltira's Gauntlets of Conquest
 		emot(50, h(i(48501))),	-- Koltira's Battleplate of Conquest
 		emot(50, h(i(48504))),	-- Koltira's Legplates of Conquest
-		
+
 		-- Tank
 		emot(50, h(i(48560))),	-- Koltira's Faceguard of Conquest
 		emot(30, h(i(48562))),	-- Koltira's Pauldrons of Conquest
@@ -2180,21 +2180,21 @@ local TIER_NINE_GROUPS = {
 		emot(30, a(i(48162))),	-- Malfurion's Gloves of Conquest
 		emot(50, a(i(48159))),	-- Malfurion's Vestments of Conquest
 		emot(50, a(i(48160))),	-- Malfurion's Trousers of Conquest
-		
+
 		-- Feral
 		emot(50, a(i(48214))),	-- Malfurion's Headguard of Conquest
 		emot(30, a(i(48217))),	-- Malfurion's Shoulderpads of Conquest
 		emot(30, a(i(48213))),	-- Malfurion's Handgrips of Conquest
 		emot(50, a(i(48216))),	-- Malfurion's Raiments of Conquest
 		emot(50, a(i(48215))),	-- Malfurion's Legguards of Conquest
-		
+
 		-- Restoration
 		emot(50, a(i(48102))),	-- Malfurion's Headpiece of Conquest
 		emot(30, a(i(48131))),	-- Malfurion's Spaulders of Conquest
 		emot(30, a(i(48132))),	-- Malfurion's Handguards of Conquest
 		emot(50, a(i(48129))),	-- Malfurion's Robe of Conquest
 		emot(50, a(i(48130))),	-- Malfurion's Leggings of Conquest
-		
+
 		-- Horde
 		-- Boomkin
 		emot(50, h(i(48184))),	-- Runetotem's Cover of Conquest
@@ -2202,14 +2202,14 @@ local TIER_NINE_GROUPS = {
 		emot(30, h(i(48183))),	-- Runetotem's Gloves of Conquest
 		emot(50, h(i(48186))),	-- Runetotem's Vestments of Conquest
 		emot(50, h(i(48185))),	-- Runetotem's Trousers of Conquest
-		
+
 		-- Feral
 		emot(50, h(i(48188))),	-- Runetotem's Headguard of Conquest
 		emot(30, h(i(48191))),	-- Runetotem's Shoulderpads of Conquest
 		emot(30, h(i(48192))),	-- Runetotem's Handgrips of Conquest
 		emot(50, h(i(48189))),	-- Runetotem's Raiments of Conquest
 		emot(50, h(i(48190))),	-- Runetotem's Legguards of Conquest
-		
+
 		-- Restoration
 		emot(50, h(i(48154))),	-- Runetotem's Headpiece of Conquest
 		emot(30, h(i(48157))),	-- Runetotem's Spaulders of Conquest
@@ -2223,7 +2223,7 @@ local TIER_NINE_GROUPS = {
 		emot(30, a(i(48254))),	-- Windrunner's Handguards of Conquest (A)
 		emot(50, a(i(48251))),	-- Windrunner's Tunic of Conquest (A)
 		emot(50, a(i(48252))),	-- Windrunner's Legguards of Conquest (A)
-		
+
 		emot(50, h(i(48277))),	-- Windrunner's Headpiece of Conquest (H)
 		emot(30, h(i(48279))),	-- Windrunner's Spaulders of Conquest (H)
 		emot(30, h(i(48276))),	-- Windrunner's Handguards of Conquest (H)
@@ -2236,7 +2236,7 @@ local TIER_NINE_GROUPS = {
 		emot(30, a(i(47752))),	-- Khadgar's Gauntlets of Conquest
 		emot(50, a(i(47749))),	-- Khadgar's Robe of Conquest
 		emot(50, a(i(47750))),	-- Khadgar's Leggings of Conquest
-		
+
 		emot(50, h(i(47774))),	-- Sunstrider's Hood of Conquest
 		emot(30, h(i(47777))),	-- Sunstrider's Shoulderpads of Conquest
 		emot(30, h(i(47773))),	-- Sunstrider's Gauntlets of Conquest
@@ -2250,14 +2250,14 @@ local TIER_NINE_GROUPS = {
 		emot(30, a(i(48574))),	-- Turalyon's Gloves of Conquest
 		emot(50, a(i(48566))),	-- Turalyon's Tunic of Conquest
 		emot(50, a(i(48568))),	-- Turalyon's Greaves of Conquest
-		
+
 		-- Protection
 		emot(50, a(i(48634))),	-- Turalyon's Faceguard of Conquest
 		emot(30, a(i(48636))),	-- Turalyon's Shoulderguards of Conquest
 		emot(30, a(i(48633))),	-- Turalyon's Handguards of Conquest
 		emot(50, a(i(48632))),	-- Turalyon's Breastplate of Conquest
 		emot(50, a(i(48635))),	-- Turalyon's Legguards of Conquest
-		
+
 		-- Retribution
 		emot(50, a(i(48604))),	-- Turalyon's Helm of Conquest
 		emot(30, a(i(48606))),	-- Turalyon's Shoulderplates of Conquest
@@ -2272,14 +2272,14 @@ local TIER_NINE_GROUPS = {
 		emot(30, h(i(48598))),	-- Liadrin's Gloves of Conquest
 		emot(50, h(i(48599))),	-- Liadrin's Tunic of Conquest
 		emot(50, h(i(48596))),	-- Liadrin's Greaves of Conquest
-		
+
 		-- Protection
 		emot(50, h(i(48654))),	-- Liadrin's Faceguard of Conquest
 		emot(30, h(i(48656))),	-- Liadrin's Shoulderguards of Conquest
 		emot(30, h(i(48653))),	-- Liadrin's Handguards of Conquest
 		emot(50, h(i(48652))),	-- Liadrin's Breastplate of Conquest
 		emot(50, h(i(48655))),	-- Liadrin's Legguards of Conquest
-		
+
 		-- Retribution
 		emot(50, h(i(48629))),	-- Liadrin's Helm of Conquest
 		emot(30, h(i(48627))),	-- Liadrin's Shoulderplates of Conquest
@@ -2295,14 +2295,14 @@ local TIER_NINE_GROUPS = {
 		emot(30, a(i(47982))),	-- Velen's Gloves of Conquest
 		emot(50, a(i(47936))),	-- Velen's Robe of Conquest
 		emot(50, a(i(47980))),	-- Velen's Leggings of Conquest
-		
+
 		-- Shadow
 		emot(50, a(i(48073))),	-- Velen's Circlet of Conquest
 		emot(30, a(i(48076))),	-- Velen's Mantle of Conquest
 		emot(30, a(i(48072))),	-- Velen's Handwraps of Conquest
 		emot(50, a(i(48075))),	-- Velen's Raiments of Conquest
 		emot(50, a(i(48074))),	-- Velen's Pants of Conquest
-		
+
 		-- Horde
 		-- Holy/Disc
 		emot(50, h(i(48068))),	-- Zabra's Cowl of Conquest
@@ -2310,7 +2310,7 @@ local TIER_NINE_GROUPS = {
 		emot(30, h(i(48067))),	-- Zabra's Gloves of Conquest
 		emot(50, h(i(48070))),	-- Zabra's Robe of Conquest
 		emot(50, h(i(48069))),	-- Zabra's Leggings of Conquest
-		
+
 		-- Shadow
 		emot(50, h(i(48098))),	-- Zabra's Circlet of Conquest
 		emot(30, h(i(48101))),	-- Zabra's Mantle of Conquest
@@ -2324,7 +2324,7 @@ local TIER_NINE_GROUPS = {
 		emot(30, h(i(48244))),	-- Garona's Gauntlets of Conquest
 		emot(50, h(i(48243))),	-- Garona's Breastplate of Conquest
 		emot(50, h(i(48246))),	-- Garona's Legplates of Conquest
-		
+
 		emot(50, a(i(48218))),	-- VanCleef's Helmet of Conquest
 		emot(30, a(i(48221))),	-- VanCleef's Pauldrons of Conquest
 		emot(30, a(i(48222))),	-- VanCleef's Gauntlets of Conquest
@@ -2339,21 +2339,21 @@ local TIER_NINE_GROUPS = {
 		emot(30, a(i(48312))),	-- Nobundo's Gloves of Conquest
 		emot(50, a(i(48310))),	-- Nobundo's Hauberk of Conquest
 		emot(50, a(i(48314))),	-- Nobundo's Kilt of Conquest
-		
+
 		-- Enhancement
 		emot(50, a(i(48343))),	-- Nobundo's Faceguard of Conquest
 		emot(30, a(i(48345))),	-- Nobundo's Shoulderguards of Conquest
 		emot(30, a(i(48342))),	-- Nobundo's Grips of Conquest
 		emot(50, a(i(48341))),	-- Nobundo's Chestguard of Conquest
 		emot(50, a(i(48344))),	-- Nobundo's War-Kilt of Conquest
-		
+
 		-- Restoration
 		emot(50, a(i(48280))),	-- Nobundo's Headpiece of Conquest
 		emot(30, a(i(48283))),	-- Nobundo's Spaulders of Conquest
 		emot(30, a(i(48284))),	-- Nobundo's Handguards of Conquest
 		emot(50, a(i(48281))),	-- Nobundo's Tunic of Conquest
 		emot(50, a(i(48282))),	-- Nobundo's Legguards of Conquest
-		
+
 		-- Horde
 		-- Elemental
 		emot(50, h(i(48338))),	-- Thrall's Helm of Conquest
@@ -2361,14 +2361,14 @@ local TIER_NINE_GROUPS = {
 		emot(30, h(i(48337))),	-- Thrall's Gloves of Conquest
 		emot(50, h(i(48336))),	-- Thrall's Hauberk of Conquest
 		emot(50, h(i(48339))),	-- Thrall's Kilt of Conquest
-		
+
 		-- Enhancement
 		emot(50, h(i(48368))),	-- Thrall's Faceguard of Conquest
 		emot(30, h(i(48370))),	-- Thrall's Shoulderguards of Conquest
 		emot(30, h(i(48367))),	-- Thrall's Grips of Conquest
 		emot(50, h(i(48366))),	-- Thrall's Chestguard of Conquest
 		emot(50, h(i(48369))),	-- Thrall's War-Kilt of Conquest
-		
+
 		-- Restoration
 		emot(50, h(i(48297))),	-- Thrall's Headpiece of Conquest
 		emot(30, h(i(48299))),	-- Thrall's Spaulders of Conquest
@@ -2382,7 +2382,7 @@ local TIER_NINE_GROUPS = {
 		emot(30, h(i(47802))),	-- Gul'dan's Gloves of Conquest
 		emot(50, h(i(47799))),	-- Gul'dan's Robe of Conquest
 		emot(50, h(i(47800))),	-- Gul'dan's Leggings of Conquest
-		
+
 		emot(50, a(i(47784))),	-- Kel'Thuzad's Hood of Conquest
 		emot(30, a(i(47787))),	-- Kel'Thuzad's Shoulderpads of Conquest
 		emot(30, a(i(47783))),	-- Kel'Thuzad's Gloves of Conquest
@@ -2396,7 +2396,7 @@ local TIER_NINE_GROUPS = {
 		emot(30, a(i(48375))),	-- Wrynn's Gauntlets of Conquest
 		emot(50, a(i(48372))),	-- Wrynn's Battleplate of Conquest
 		emot(50, a(i(48373))),	-- Wrynn's Legplates of Conquest
-		
+
 		-- Tank
 		emot(50, a(i(48429))),	-- Wrynn's Greathelm of Conquest
 		emot(30, a(i(48448))),	-- Wrynn's Pauldrons of Conquest
@@ -2411,7 +2411,7 @@ local TIER_NINE_GROUPS = {
 		emot(30, h(i(48387))),	-- Hellscream's Gauntlets of Conquest
 		emot(50, h(i(48386))),	-- Hellscream's Battleplate of Conquest
 		emot(50, h(i(48389))),	-- Hellscream's Legplates of Conquest
-		
+
 		-- Tank
 		emot(50, h(i(48458))),	-- Hellscream's Greathelm of Conquest
 		emot(30, h(i(48460))),	-- Hellscream's Pauldrons of Conquest
@@ -2442,7 +2442,7 @@ local TIER_EIGHT_HEROIC_GROUPS = {
 		i(46116, {	-- Conqueror's Darkruned Legplates
 			["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
 		}),
-		
+
 		-- Tank
 		i(46120, {	-- Conqueror's Darkruned Faceguard
 			["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
@@ -2477,7 +2477,7 @@ local TIER_EIGHT_HEROIC_GROUPS = {
 		i(46192, {	-- Conqueror's Nightsong Trousers
 			["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
 		}),
-		
+
 		-- Feral
 		i(46161, {	-- Conqueror's Nightsong Headguard
 			["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
@@ -2494,7 +2494,7 @@ local TIER_EIGHT_HEROIC_GROUPS = {
 		i(46160, {	-- Conqueror's Nightsong Legguards
 			["cost"] = { { "i", 45655, 1 }, },	-- Legplates of the Wayward Vanquisher
 		}),
-		
+
 		-- Restoration
 		i(46184, {	-- Conqueror's Nightsong Headpiece
 			["cost"] = { { "i", 45640, 1 }, },	-- Crown of the Wayward Vanquisher
@@ -2563,7 +2563,7 @@ local TIER_EIGHT_HEROIC_GROUPS = {
 		i(46181, {	-- Conqueror's Aegis Greaves
 			["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
 		}),
-		
+
 		-- Protection
 		i(46175, {	-- Conqueror's Aegis Faceguard
 			["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
@@ -2580,7 +2580,7 @@ local TIER_EIGHT_HEROIC_GROUPS = {
 		i(46176, {	-- Conqueror's Aegis Legguards
 			["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
 		}),
-		
+
 		-- Retribution
 		i(46156, {	-- Conqueror's Aegis Helm
 			["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
@@ -2615,7 +2615,7 @@ local TIER_EIGHT_HEROIC_GROUPS = {
 		i(46195, {	-- Conqueror's Leggings of Sanctification
 			["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
 		}),
-		
+
 		-- Shadow
 		i(46172, {	-- Conqueror's Circlet of Sanctification
 			["cost"] = { { "i", 45638, 1 }, },	-- Crown of the Wayward Conqueror
@@ -2667,7 +2667,7 @@ local TIER_EIGHT_HEROIC_GROUPS = {
 		i(46210, {	-- Conqueror's Worldbreaker Kilt
 			["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
 		}),
-		
+
 		-- Enhancement
 		i(46212, {	-- Conqueror's Worldbreaker Faceguard
 			["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
@@ -2684,7 +2684,7 @@ local TIER_EIGHT_HEROIC_GROUPS = {
 		i(46208, {	-- Conqueror's Worldbreaker War-Kilt
 			["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
 		}),
-		
+
 		-- Restoration
 		i(46201, {	-- Conqueror's Worldbreaker Headpiece
 			["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
@@ -2736,7 +2736,7 @@ local TIER_EIGHT_HEROIC_GROUPS = {
 		i(46150, {	-- Conqueror's Siegebreaker Legplates
 			["cost"] = { { "i", 45654, 1 }, },	-- Legplates of the Wayward Protector
 		}),
-		
+
 		-- Tank
 		i(46166, {	-- Conqueror's Siegebreaker Greathelm
 			["cost"] = { { "i", 45639, 1 }, },	-- Crown of the Wayward Protector
@@ -2777,7 +2777,7 @@ local TIER_EIGHT_GROUPS = {
 		i(45343, {	-- Valorous Darkruned Legplates
 			["cost"] = { { "i", 45652, 1 }, },	-- Leggings
 		}),
-		
+
 		-- Tank
 		i(45336, {	-- Valorous Darkruned Faceguard
 			["cost"] = { { "i", 45649, 1 }, },	-- Helm
@@ -2812,7 +2812,7 @@ local TIER_EIGHT_GROUPS = {
 		i(45353, {	-- Valorous Nightsong Trousers
 			["cost"] = { { "i", 45652, 1 }, },	-- Leggings of the Wayward Vanquisher
 		}),
-		
+
 		-- Feral
 		i(45356, {	-- Valorous Nightsong Headguard
 			["cost"] = { { "i", 45649, 1 }, },	-- Helm of the Wayward Vanquisher
@@ -2829,7 +2829,7 @@ local TIER_EIGHT_GROUPS = {
 		i(45357, {	-- Valorous Nightsong Legguards
 			["cost"] = { { "i", 45652, 1 }, },	-- Leggings of the Wayward Vanquisher
 		}),
-		
+
 		-- Restoration
 		i(45346, {	-- Valorous Nightsong Headpiece
 			["cost"] = { { "i", 45649, 1 }, },	-- Helm of the Wayward Vanquisher
@@ -2898,7 +2898,7 @@ local TIER_EIGHT_GROUPS = {
 		i(45371, {	-- Valorous Aegis Greaves
 			["cost"] = { { "i", 45650, 1 }, },	-- Leggings of the Wayward Conqueror
 		}),
-		
+
 		-- Protection
 		i(45382, {	-- Valorous Aegis Faceguard
 			["cost"] = { { "i", 45647, 1 }, },	-- Helm of the Wayward Conqueror
@@ -2915,7 +2915,7 @@ local TIER_EIGHT_GROUPS = {
 		i(45384, {	-- Valorous Aegis Legguards
 			["cost"] = { { "i", 45650, 1 }, },	-- Leggings of the Wayward Conqueror
 		}),
-		
+
 		-- Retribution
 		i(45377, {	-- Valorous Aegis Helm
 			["cost"] = { { "i", 45647, 1 }, },	-- Helm of the Wayward Conqueror
@@ -2950,7 +2950,7 @@ local TIER_EIGHT_GROUPS = {
 		i(45388, {	-- Valorous Leggings of Sanctification
 			["cost"] = { { "i", 45650, 1 }, },	-- Leggings of the Wayward Conqueror
 		}),
-		
+
 		-- Shadow
 		i(45391, {	-- Valorous Circlet of Sanctification
 			["cost"] = { { "i", 45647, 1 }, },	-- Helm of the Wayward Conqueror
@@ -3002,7 +3002,7 @@ local TIER_EIGHT_GROUPS = {
 		i(45409, {	-- Valorous Worldbreaker Kilt
 			["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
 		}),
-		
+
 		-- Enhancement
 		i(45412, {	-- Valorous Worldbreaker Faceguard
 			["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
@@ -3019,7 +3019,7 @@ local TIER_EIGHT_GROUPS = {
 		i(45416, {	-- Valorous Worldbreaker War-Kilt
 			["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
 		}),
-		
+
 		-- Restoration
 		i(45402, {	-- Valorous Worldbreaker Headpiece
 			["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
@@ -3071,7 +3071,7 @@ local TIER_EIGHT_GROUPS = {
 		i(45432, {	-- Valorous Siegebreaker Legplates
 			["cost"] = { { "i", 45651, 1 }, },	-- Leggings of the Wayward Protector
 		}),
-		
+
 		-- Tank
 		i(45425, {	-- Valorous Siegebreaker Greathelm
 			["cost"] = { { "i", 45648, 1 }, },	-- Helm of the Wayward Protector
@@ -3112,7 +3112,7 @@ local TIER_SEVEN_HEROIC_GROUPS = {
 		i(40556, {	-- Valorous Scourgeborne Legplates
 			["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
 		}),
-		
+
 		-- Tank
 		i(40565, {	-- Valorous Scourgeborne Faceguard
 			["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
@@ -3147,7 +3147,7 @@ local TIER_SEVEN_HEROIC_GROUPS = {
 		i(40468, {	-- Valorous Dreamwalker Trousers
 			["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
 		}),
-		
+
 		-- Feral
 		i(40473, {	-- Valorous Dreamwalker Headguard
 			["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
@@ -3164,7 +3164,7 @@ local TIER_SEVEN_HEROIC_GROUPS = {
 		i(40493, {	-- Valorous Dreamwalker Legguards
 			["cost"] = { { "i", 40636, 1 }, },	-- Legplates of the Lost Vanquisher
 		}),
-		
+
 		-- Restoration
 		i(40461, {	-- Valorous Dreamwalker Headpiece
 			["cost"] = { { "i", 40633, 1 }, },	-- Crown of the Lost Vanquisher
@@ -3233,7 +3233,7 @@ local TIER_SEVEN_HEROIC_GROUPS = {
 		i(40572, {	-- Valorous Redemption Greaves
 			["cost"] = { { "i", 40634, 1 }, },	-- Legplates of the Lost Conqueror
 		}),
-		
+
 		-- Protection
 		i(40581, {	-- Valorous Redemption Faceguard
 			["cost"] = { { "i", 40631, 1 }, },	-- Crown of the Lost Conqueror
@@ -3250,7 +3250,7 @@ local TIER_SEVEN_HEROIC_GROUPS = {
 		i(40583, {	-- Valorous Redemption Legguards
 			["cost"] = { { "i", 40634, 1 }, },	-- Legplates of the Lost Conqueror
 		}),
-		
+
 		-- Retribution
 		i(40576, {	-- Valorous Redemption Helm
 			["cost"] = { { "i", 40631, 1 }, },	-- Crown of the Lost Conqueror
@@ -3285,7 +3285,7 @@ local TIER_SEVEN_HEROIC_GROUPS = {
 		i(40448, {	-- Valorous Leggings of Faith
 			["cost"] = { { "i", 40634, 1 }, },	-- Legplates of the Lost Conqueror
 		}),
-		
+
 		-- Shadow
 		i(40456, {	-- Valorous Circlet of Faith
 			["cost"] = { { "i", 40631, 1 }, },	-- Crown of the Lost Conqueror
@@ -3337,7 +3337,7 @@ local TIER_SEVEN_HEROIC_GROUPS = {
 		i(40517, {	-- Valorous Earthshatter Kilt
 			["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
 		}),
-		
+
 		-- Enhancement
 		i(40521, {	-- Valorous Earthshatter Faceguard
 			["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
@@ -3354,7 +3354,7 @@ local TIER_SEVEN_HEROIC_GROUPS = {
 		i(40522, {	-- Valorous Earthshatter War-Kilt
 			["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
 		}),
-		
+
 		-- Restoration
 		i(40510, {	-- Valorous Earthshatter Headpiece
 			["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
@@ -3406,7 +3406,7 @@ local TIER_SEVEN_HEROIC_GROUPS = {
 		i(40529, {	-- Valorous Dreadnaught Legplates
 			["cost"] = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector
 		}),
-		
+
 		-- Tank
 		i(40546, {	-- Valorous Dreadnaught Greathelm
 			["cost"] = { { "i", 40632, 1 }, },	-- Crown of the Lost Protector
@@ -3447,7 +3447,7 @@ local TIER_SEVEN_GROUPS = {
 		i(39620, {	-- Heroes' Scourgeborne Legplates
 			["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
 		}),
-		
+
 		-- Tank
 		i(39625, {	-- Heroes' Scourgeborne Faceguard
 			["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
@@ -3482,7 +3482,7 @@ local TIER_SEVEN_GROUPS = {
 		i(39546, {	-- Heroes' Dreamwalker Trousers
 			["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
 		}),
-		
+
 		-- Feral
 		i(39553, {	-- Heroes' Dreamwalker Headguard
 			["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
@@ -3499,7 +3499,7 @@ local TIER_SEVEN_GROUPS = {
 		i(39555, {	-- Heroes' Dreamwalker Legguards
 			["cost"] = { { "i", 40621, 1 }, },	-- Leggings of the Lost Vanquisher
 		}),
-		
+
 		-- Restoration
 		i(39531, {	-- Heroes' Dreamwalker Headpiece
 			["cost"] = { { "i", 40618, 1 }, },	-- Helm of the Lost Vanquisher
@@ -3568,7 +3568,7 @@ local TIER_SEVEN_GROUPS = {
 		i(39630, {	-- Heroes' Redemption Greaves
 			["cost"] = { { "i", 40619, 1 }, },	-- Leggings of the Lost Conqueror
 		}),
-		
+
 		-- Protection
 		i(39640, {	-- Heroes' Redemption Faceguard
 			["cost"] = { { "i", 40616, 1 }, },	-- Helm of the Lost Conqueror
@@ -3585,7 +3585,7 @@ local TIER_SEVEN_GROUPS = {
 		i(39641, {	-- Heroes' Redemption Legguards
 			["cost"] = { { "i", 40619, 1 }, },	-- Leggings of the Lost Conqueror
 		}),
-		
+
 		-- Retribution
 		i(39635, {	-- Heroes' Redemption Helm
 			["cost"] = { { "i", 40616, 1 }, },	-- Helm of the Lost Conqueror
@@ -3620,7 +3620,7 @@ local TIER_SEVEN_GROUPS = {
 		i(39517, {	-- Heroes' Leggings of Faith
 			["cost"] = { { "i", 40619, 1 }, },	-- Leggings of the Lost Conqueror
 		}),
-		
+
 		-- Shadow
 		i(39521, {	-- Heroes' Circlet of Faith
 			["cost"] = { { "i", 40616, 1 }, },	-- Helm of the Lost Conqueror
@@ -3672,7 +3672,7 @@ local TIER_SEVEN_GROUPS = {
 		i(39595, {	-- Heroes' Earthshatter Kilt
 			["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
 		}),
-		
+
 		-- Enhancement
 		i(39602, {	-- Heroes' Earthshatter Faceguard
 			["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
@@ -3689,7 +3689,7 @@ local TIER_SEVEN_GROUPS = {
 		i(39603, {	-- Heroes' Earthshatter War-Kilt
 			["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
 		}),
-		
+
 		-- Restoration
 		i(39583, {	-- Heroes' Earthshatter Headpiece
 			["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
@@ -3741,7 +3741,7 @@ local TIER_SEVEN_GROUPS = {
 		i(39607, {	-- Heroes' Dreadnaught Legplates
 			["cost"] = { { "i", 40620, 1 }, },	-- Leggings of the Lost Protector
 		}),
-		
+
 		-- Tank
 		i(39610, {	-- Heroes' Dreadnaught Greathelm
 			["cost"] = { { "i", 40617, 1 }, },	-- Helm of the Lost Protector
@@ -5744,16 +5744,22 @@ root("Zones", {
 						["coord"] = { 36.3, 33.4, NORTHREND_DALARAN },
 						["requireSkill"] = TAILORING,
 						["groups"] = {
-							-- TODO: Maybe convert the sym into an OnTooltip?
 							recipe(56017, {	-- Deathchill Cloak
 								["description"] = "In order to learn this recipe, you must have the Loremaster of Northrend achievement completed.",
-								["sym"] = {{ "select", "achievementID", 41, 1360 },{ "pop" }},	-- Loremaster of Northrend
 								["requireSkill"] = TAILORING,
+								["sym"] = {
+									-- #IF ANYCLASSIC
+									{ "select", "achievementID", 1360 },	-- Loremaster of Northrend
+									-- #ELSE
+									{ "select", "achievementID", 41 },	-- Loremaster of Northrend
+									-- #ENDIF
+									{ "pop" }
+								},
 							}),
 							recipe(56016, {	-- Wispcloak
 								["description"] = "In order to learn this recipe, you must have the Northrend Dungeonmaster achievement completed.",
-								["sym"] = {{ "select", "achievementID", 1288 },{ "pop" }},	-- Northrend Dungeonmaster
 								["requireSkill"] = TAILORING,
+								["sym"] = {{ "select", "achievementID", 1288 },{ "pop" }},	-- Northrend Dungeonmaster
 							}),
 						},
 					}),
