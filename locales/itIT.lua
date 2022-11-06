@@ -998,6 +998,7 @@ for key,value in pairs({
 	[19023] = "|cFFFFFFFFStep 7:|r Pagina 2.351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "Santuario Nascosto",	-- Hidden Shrine
 	[19030] = "Mucchio di Terra",	-- Mound of Dirt
+	[19877] = "Baule di Velinde",	-- Velinde's Locker
 	[20805] = "Rizzle's Unguarded Plans",	-- Rizzle's Unguarded Plans	--TODO: This was taken from classic Wowhead
 	[20985] = "Terra Smossa",	-- Loose Dirt
 	[20992] = "Scudo Nero",	-- Black Shield
@@ -1094,6 +1095,7 @@ for key,value in pairs({
 	[179499] = "Cestello di Colorante Ogre",	-- Ogre Tannin Basket
 	[179501] = "Knot Thimblejack's Cache",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
 	[179564] = "Tributo dei Gordok",	-- Gordok Tribute Chest
+	[179565] = "Reliquiario Polveroso",	-- Dusty Reliquary
 	[179697] = "Cassa del Tesoro dell'Arena",	-- Arena Treasure Chest
 	[179827] = "Wanted/Missing/Lost & Found",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	[179832] = "Cuscino Decorato di Pillaclencher",	-- Pillaclencher's Ornate Pillow
@@ -3224,6 +3226,7 @@ for key,value in pairs({
 	--TODO: [381701] = "WANTED: Mara'nar the Thunderous",	-- WANTED: Mara'nar the Thunderous
 	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
+	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	[9962198] = "Pozza di Fango Improvvisata dell'Esiliato",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

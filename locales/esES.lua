@@ -1009,6 +1009,7 @@ for key,value in pairs({
 	[19023] = "|cFFFFFFFFStep 7:|r Página 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "Santuario Oculto",	-- Hidden Shrine
 	[19030] = "Túmulo de barro",	-- Mound of Dirt
+	[19877] = "Armario de Velinde",	-- Velinde's Locker
 	[20805] = "Planes sin vigilancia de Rizzle",	-- Rizzle's Unguarded Plans
 	[20985] = "Tierra esparcida",	-- Loose Dirt
 	[20992] = "Escudo negro",	-- Black Shield
@@ -1105,6 +1106,7 @@ for key,value in pairs({
 	[179499] = "Cesta de tanino de ogro",	-- Ogre Tannin Basket
 	[179501] = "Alijo de Knot Thimblejack",	-- Knot Thimblejack's Cache
 	[179564] = "Tributo a Gordok",	-- Gordok Tribute Chest
+	[179565] = "Relicario polvoriento",	-- Dusty Reliquary
 	[179697] = "Arqueta de la arena",	-- Arena Treasure Chest
 	[179827] = "Se busca/Desaparecido/Objetos perdidos",	-- Wanted/Missing/Lost & Found
 	[179832] = "Almohada ornamentada de Pilaprieta",	-- Pillaclencher's Ornate Pillow
@@ -3235,6 +3237,7 @@ for key,value in pairs({
 	--TODO: [381701] = "WANTED: Mara'nar the Thunderous",	-- WANTED: Mara'nar the Thunderous
 	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
+	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	[9962198] = "Charco mugroso improvisado de desterrado",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
