@@ -1648,7 +1648,6 @@ root("HiddenQuestTriggers", {
 			q(),	-- Queen's Gift
 			q(),	-- Timewatcher's Patience
 		}),
-		--]]
 		prof(LEATHERWORKING, {
 			-- Recraft
 			q(),	-- Recraft Equipment
@@ -1768,6 +1767,7 @@ root("HiddenQuestTriggers", {
 			q(),	-- Gnoll Tent
 			q(),	-- Tuskarr Bean Bag
 		}),
+		--]]
 		prof(MINING, {
 			q(72160),	-- Iridescent Ore Fragments
 			--q(71950),
