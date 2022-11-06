@@ -13,7 +13,11 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 		["isRaid"] = true,
 		["lvl"] = lvlsquish(68, 30, 68),	-- Level 68s could zone in without any attunements. TODO: Check this.
 		["groups"] = {
-			n(ZONE_DROPS, {
+			n(ZONE_DROPS, bubbleDown({
+			-- #IF AFTER 10.0
+				["_drop"] = { "classes", "c" },
+			-- #ENDIF
+			},{
 				i(35202),	-- Design: Amulet of Flowing Life
 				i(35200),	-- Design: Hard Khorium Band
 				i(35203),	-- Design: Hard Khorium Choker
@@ -98,7 +102,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				i(32231),	-- Pyrestone
 				i(32230),	-- Shadowsong Amethyst
 				i(32249),	-- Seaspray Emerald
-			}),
+			})),
 			n(COMMON_BOSS_DROPS, {
 				i(34664, {	-- Sunmote
 					["crs"] = {

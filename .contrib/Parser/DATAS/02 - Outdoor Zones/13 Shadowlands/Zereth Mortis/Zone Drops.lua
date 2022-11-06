@@ -12,6 +12,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			-- Schematic
 			i(189468, {	-- Schematic: Goldplate Bufonid
 				["cr"] = 178803,	-- Accelerated Bufonid
+				["coords"] = {
+					{ 49.8, 72.6, ZERETH_MORTIS },
+					{ 51.8, 75.8, ZERETH_MORTIS },
+					{ 76.8, 45.2, ZERETH_MORTIS },
+					{ 74.4, 60.6, ZERETH_MORTIS },
+					{ 77.2, 52.8, ZERETH_MORTIS },
+					{ 80.6, 46.8, ZERETH_MORTIS },
+					{ 80.2, 59.4, ZERETH_MORTIS },
+				},
 			}),
 			i(190585, {	-- Schematic: Heartbond Lupine
 				["cr"] = 179939,	-- Maw-Frenzied Lupine
@@ -234,7 +243,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					181110,	-- Scavenging Mite
 					182213,	-- Sentient Overgrowth
 				},
-			}),	
+			}),
 			i(189165, {	-- Glimmer of Predation
 				["crs"] = {
 					181116,	-- Dematerializing Worldeater

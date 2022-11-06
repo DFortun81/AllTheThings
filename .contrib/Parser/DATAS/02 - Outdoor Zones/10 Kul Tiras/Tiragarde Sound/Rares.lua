@@ -193,6 +193,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 65.2, 64.5, TIRAGARDE_SOUND },
 				["g"] = {
 					i(161599),	-- Mechano-Cat Claw
+					i(168152),	-- Miniaturized Power Core
 					crit(17, {	-- P4-N73R4
 						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
 					}),

@@ -275,11 +275,8 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			n(139328, {	-- Sabertron
 				["questID"] = 51956,
 				["coord"] = { 34.6, 32.4, STORMSONG_VALLEY },
+				["description"] = "Red is the default color when a WQ isn't active. To get credit for killing all the different colors, wait for the 'Sabertron' world quests to pop up!",
 				["g"] = {
-					crit(1, {	-- Red Sabertron
-						["achievementID"] = 13054,	-- Sabertron Assemble
-						["description"] = "Red is the default color when a WQ isn't active.  To get credit for killing all the different colors, wait for the 'Sabertron' world quests to pop up!",
-					}),
 					i(154664),	-- Lionsight Omensword
 				},
 			}),

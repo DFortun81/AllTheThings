@@ -574,6 +574,7 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 				["provider"] = { "i", 115281 },	-- Enchanted Highmaul Bracer
 				["timeline"] = { "added 6.0.1.18522" },
 				["races"] = ALLIANCE_ONLY,
+				["altQuests"] = { 36255 },	-- Enchanted Highmaul Bracer (H)
 				["maps"] = {
 					FROSTFIRE_RIDGE,
 					GORGROND,
@@ -588,6 +589,7 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 				["provider"] = { "i", 115008 },	-- Enchanted Highmaul Bracer
 				["timeline"] = { "added 6.0.1.18522" },
 				["races"] = HORDE_ONLY,
+				["altQuests"] = { 36308 },	-- Enchanted Highmaul Bracer (A)
 				["maps"] = {
 					FROSTFIRE_RIDGE,
 					GORGROND,

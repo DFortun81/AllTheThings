@@ -214,11 +214,26 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				}),
 			}),
 			ach(13054, {	-- Sabertron Assemble
-				crit(1),		-- Red Sabertron slain
-				crit(2),		-- Yellow Sabertron slain
-				crit(3),		-- Orange Sabertron slain
-				crit(4),		-- Green Sabertron slain
-				crit(5),		-- Copper Sabertron slain
+				crit(1, { -- Red Sabertron slain
+					["_quests"] = { 51947, 51956 },	-- Sabertron (RED) / Default Sabertron
+					["crs"] = { 139328 },
+				}),
+				crit(2, { -- Yellow Sabertron slain
+					["_quests"] = { 51977 },	-- Sabertron (YELLOW)
+					["crs"] = { 139335 },
+				}),
+				crit(3, { -- Orange Sabertron slain
+					["_quests"] = { 51978 },	-- Sabertron (ORANGE)
+					["crs"] = { 139356 },
+				}),
+				crit(4, { -- Green Sabertron slain
+					["_quests"] = { 51976 },	-- Sabertron (GREEN)
+					["crs"] = { 139336 },
+				}),
+				crit(5, { -- Copper Sabertron slain
+					["_quests"] = { 51974 },	-- Sabertron (COPPER)
+					["crs"] = { 139359 },
+				}),
 			}),
 			ach(12496, {	-- Stormsong and Dance
 				["races"] = ALLIANCE_ONLY,

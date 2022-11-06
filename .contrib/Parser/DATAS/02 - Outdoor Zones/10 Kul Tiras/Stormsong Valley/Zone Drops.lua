@@ -32,6 +32,17 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					138340,	-- Tidesage Ritualist
 				},
 			}),
+			i(168152, {	-- Miniaturized Power Core
+				["coord"] = { 34.2, 32.0, STORMSONG_VALLEY },
+				["crs"] = {
+					-- All Sabertron colors
+					139356,
+					139328,
+					139359,
+					139335,
+					139336,
+				},
+			}),
 		}),
 		n(ZONE_DROPS, bubbleDown({["bonusID"] = 4796, }, {
 			i(159217),	-- Sagehold Circlet

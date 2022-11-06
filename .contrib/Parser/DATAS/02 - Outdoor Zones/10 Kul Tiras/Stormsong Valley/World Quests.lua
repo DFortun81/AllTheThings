@@ -317,41 +317,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			q(52164, {	-- Rum- Paaaage!
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(51974, {	-- Sabertron (COPPER)
-				["g"] = {
-					crit(5, {	-- Copper Sabertron
-						["achievementID"] = 13054,	-- Sabertron Assemble
-					}),
-				},
-			}),
-			q(51976, {	-- Sabertron (GREEN)
-				["g"] = {
-					crit(4, {	-- Green Sabertron
-						["achievementID"] = 13054,	-- Sabertron Assemble
-					}),
-				},
-			}),
-			q(51978, {	-- Sabertron (ORANGE)
-				["g"] = {
-					crit(3, {	--  Sabertron
-						["achievementID"] = 13054,	-- Sabertron Assemble
-					}),
-				},
-			}),
-			q(51947, {	-- Sabertron (RED)
-				["g"] = {
-					crit(1, {	-- Red Sabertron
-						["achievementID"] = 13054,	-- Sabertron Assemble
-					}),
-				},
-			}),
-			q(51977, {	-- Sabertron (YELLOW)
-				["g"] = {
-					crit(2, {	-- Yellow Sabertron
-						["achievementID"] = 13054,	-- Sabertron Assemble
-					}),
-				},
-			}),
+			q(51974),	-- Sabertron (COPPER)
+			q(51976),	-- Sabertron (GREEN)
+			q(51978),	-- Sabertron (ORANGE)
+			q(51947),	-- Sabertron (RED)
+			q(51977),	-- Sabertron (YELLOW)
 			q(53008, {	-- Sage Wisdom
 				["races"] = HORDE_ONLY,
 			}),

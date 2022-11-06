@@ -21619,6 +21619,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 		self:RegisterEvent("TRADE_SKILL_SHOW");
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 		self:RegisterEvent("TRADE_SKILL_CLOSE");
+		self:RegisterEvent("GARRISON_TRADESKILL_NPC_CLOSED");
 		self:RegisterEvent("NEW_RECIPE_LEARNED");
 		self:SetData({
 			['text'] = L["PROFESSION_LIST"],
@@ -21915,7 +21916,8 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						wipe(searchCache);
 					end
 				end
-			elseif e == "TRADE_SKILL_CLOSE" then
+			elseif e == "TRADE_SKILL_CLOSE"
+				or e == "GARRISON_TRADESKILL_NPC_CLOSED" then
 				self:SetVisible(false);
 			end
 		end);
