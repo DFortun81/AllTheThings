@@ -5071,8 +5071,9 @@ app.BuildCostTable = function(collectibles, costID)
 	-- if app.DEBUG_PRINT then app.PrintTable(costAmounts) end
 	return costAmounts;
 end
+
 -- Auto-Expansion logic
-(function()
+do
 local included = {};
 local knownSkills, isInWindow;
 -- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
@@ -5217,6 +5218,32 @@ local function DetermineSymlinkGroups(group)
 		end
 	end
 end
+local NPCExpandHeaders = {
+	[-1] = true,	-- COMMON_BOSS_DROPS
+};
+-- Pulls in Common drop content for specific NPCs if any exists (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
+local function DetermineNPCDrops(group)
+	local npcID = group.npcID or group.creatureID;
+	if npcID then
+		-- app.PrintDebug("Found NPC Group",group.hash)
+		-- search for groups of this NPC
+		local npcGroups = app.SearchForField("npcID", npcID);
+		if npcGroups then
+			local headerID, groups;
+			for _,npcGroup in pairs(npcGroups) do
+				headerID = npcGroup.headerID;
+				-- where headerID is allowed
+				if headerID and NPCExpandHeaders[headerID] then
+					-- copy the header under the NPC groups
+					-- app.PrintDebug("Fill under",group.hash)
+					if groups then tinsert(groups, CreateObject(npcGroup))
+					else groups = { CreateObject(npcGroup) }; end
+				end
+			end
+			return groups;
+		end
+	end
+end
 local function FillGroupsRecursive(group, depth)
 	-- do not fill 'saved' groups in ATT windows
 	-- or groups directly under saved groups unless in Acct or Debug mode
@@ -5235,7 +5262,8 @@ local function FillGroupsRecursive(group, depth)
 	groups = app.ArrayAppend(groups,
 		DeterminePurchaseGroups(group, depth),
 		DetermineCraftedGroups(group),
-		DetermineSymlinkGroups(group));
+		DetermineSymlinkGroups(group),
+		DetermineNPCDrops(group));
 
 	-- app.PrintDebug("MergeResults",group.hash,groups and #groups)
 	-- Adding the groups normally based on available-source priority
@@ -5272,7 +5300,7 @@ app.FillGroups = function(group)
 	-- if app.DEBUG_PRINT then app.PrintTable(included) end
 	-- app.PrintDebug("FillGroups Complete",group.hash,group.__type)
 end
-end)();
+end	-- Auto-Expansion Logic
 
 -- build a 'Cost' group which matches the "cost" tag of this group
 app.BuildCost = function(group)
