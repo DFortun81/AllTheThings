@@ -1261,13 +1261,13 @@ root("HiddenQuestTriggers", {
 		prof(ALCHEMY, {
 			-- FIRST CRAFT
 			q(71251),	-- Advanced Phial Alchemical Experimentation
-			--q(),	-- Advanced Potion Alchemical Experimentation
-			--q(),	-- Basic Phial Alchemical Experimentation
-			--q(),	-- Basic Potion Alchemical Experimentation
+			q(71253),	-- Advanced Potion Alchemical Experimentation
+			q(71250),	-- Basic Phial Alchemical Experimentation
+			q(71252),	-- Basic Potion Alchemical Experimentation
 			--q(),	-- Reclaim Concoctions
 			--q(),	-- Recraft Equipment
 			-- Reagents
-			q(71258),	-- Omnium Draconis
+			q(71248),	-- Omnium Draconis
 			q(71249),	-- Primal Convergent
 			-- Air Potions
 			q(71287),	-- Aerated Mana Potion
@@ -1308,18 +1308,18 @@ root("HiddenQuestTriggers", {
 			q(71275),	-- Steaming Phial of Finesse
 			-- Transmutations
 			q(71297),	-- Transmute: Awakened Air
-			--q(),	-- Transmute: Awakened Earth
-			--q(),	-- Transmute: Awakened Fire
-			--q(),	-- Transmute: Awakened Frost
+			q(71298),	-- Transmute: Awakened Earth
+			q(71299),	-- Transmute: Awakened Fire
+			q(71300),	-- Transmute: Awakened Frost
 			q(71301),	-- Transmute: Decay to Elements
-			--q(),	-- Transmute: Order to Elements
+			q(71302),	-- Transmute: Order to Elements
 			-- Optional Reagents
 			q(71263),	-- Potion Absorption Inhibitor
 			-- Finishing Reagents
 			q(71257),	-- Agitating Potion Augmentation
 			q(71255),	-- Brood Salt
 			--q(),	-- Illustrious Insight
-			--q(),	-- Reactive Phial Embellishment
+			q(71258),	-- Reactive Phial Embellishment
 			q(71254),	-- Stable Fluidic Draconium
 			q(71256),	-- Writhefire Oil
 			-- Incense
@@ -1334,108 +1334,106 @@ root("HiddenQuestTriggers", {
 			q(71948),	-- Maxxed Out Transmutation
 
 		}),
-		--[[
 		prof(BLACKSMITHING, {
 			-- Smelting --
-			q(),	-- Frostfire Alloy
-			q(),	-- Infurious Alloy
-			q(),	-- Obsidian Seared Alloy
-			q(),	-- Primal Molten Alloy
+			q(71353),	-- Frostfire Alloy
+			q(71355),	-- Infurious Alloy
+			q(71354),	-- Obsidian Seared Alloy
+			q(71352),	-- Primal Molten Alloy
 			-- Finishing Reagent
-			q(),	-- Illustrious Insight
+			--q(),	-- Illustrious Insight
 			-- Optional Reagent
-			q(),	--  Armor Spikes
+			--q(),	--  Armor Spikes
 			-- Armor
-			q(),	-- Allied Chestplate of Generosity
-			q(),	-- Allied Wristguard of Companionship
-			q(),	-- Crimson Combatant's Draconium Armguards
-			q(),	-- Crimson Combatant's Draconium Breastplate
-			q(),	-- Crimson Combatant's Draconium Gauntlets
-			q(),	-- Crimson Combatant's Draconium Greaves
-			q(),	-- Crimson Combatant's Draconium Helm
-			q(),	-- Crimson Combatant's Draconium Pauldrons
-			q(),	-- Crimson Combatant's Draconium Sabatons
-			q(),	-- Crimson Combatant's Draconium Waistguard
-			q(),	-- Explorer's Expert Clasp
-			q(),	-- Explorer's Expert Gauntlets
-			q(),	-- Explorer's Expert Greaves
-			q(),	-- Explorer's Expert Helm
-			q(),	-- Explorer's Expert Spaulders
-			q(),	-- Explorer's Plate Boots
+			q(71309),	-- Allied Chestplate of Generosity
+			q(71310),	-- Allied Wristguard of Companionship
+			q(71331),	-- Crimson Combatant's Draconium Armguards
+			q(71324),	-- Crimson Combatant's Draconium Breastplate
+			q(71326),	-- Crimson Combatant's Draconium Gauntlets
+			q(71328),	-- Crimson Combatant's Draconium Greaves
+			q(71327),	-- Crimson Combatant's Draconium Helm
+			q(71329),	-- Crimson Combatant's Draconium Pauldrons
+			q(71325),	-- Crimson Combatant's Draconium Sabatons
+			q(71330),	-- Crimson Combatant's Draconium Waistguard
+			q(72489),	-- Explorer's Expert Clasp
+			q(72562),	-- Explorer's Expert Gauntlets
+			q(72494),	-- Explorer's Expert Greaves
+			q(72490),	-- Explorer's Expert Helm
+			q(72568),	-- Explorer's Expert Spaulders
+			q(71314),	-- Explorer's Plate Boots
 			q(71315),	-- Explorer's Plate Bracers
-			q(),	-- Explorer's Plate Chestguard
-			q(),	-- Frostfire Legguards of Preparation
-			q(),	-- Infurious Helm of Vegeance
-			q(),	-- Infurious Warboots of Impunity
-			q(),	-- Primal Molten Breastplate
-			q(),	-- Primal Molten Gauntlets
-			q(),	-- Primal Molten Greatbelt
-			q(),	-- Primal Molten Helm
-			q(),	-- Primal Molten Legplates
-			q(),	-- Primal Molten Pauldrons
-			q(),	-- Primal Molten Sabatons
-			q(),	-- Primal Molten Vambraces
-			q(),	-- Unstable Frostfire Belt
+			q(71313),	-- Explorer's Plate Chestguard
+			q(71305),	-- Frostfire Legguards of Preparation
+			q(71308),	-- Infurious Helm of Vegeance
+			--q(),	-- Infurious Warboots of Impunity
+			q(71316),	-- Primal Molten Breastplate
+			q(71318),	-- Primal Molten Gauntlets
+			q(71322),	-- Primal Molten Greatbelt
+			q(71319),	-- Primal Molten Helm
+			q(71320),	-- Primal Molten Legplates
+			q(71321),	-- Primal Molten Pauldrons
+			q(71317),	-- Primal Molten Sabatons
+			q(71323),	-- Primal Molten Vambraces
+			q(71306),	-- Unstable Frostfire Belt
 			-- Shields
-			q(),	-- Draconium Defender
-			q(),	-- Shield of the Hearth
-			q(),	-- Primal Molten Defender
+			q(72183),	-- Draconium Defender
+			--q(),	-- Shield of the Hearth
+			q(71304),	-- Primal Molten Defender
 			-- Weapons
-			q(),	-- Draconium Axe
-			q(),	-- Draconium Dirk
-			q(),	-- Draconium Great Axe
-			q(),	-- Draconium Great Mace
-			q(),	-- Draconium Knuckles
-			q(),	-- Draconium Stiletto
-			q(),	-- Draconium Sword
-			q(),	-- Obsidian Seared Claymore
-			q(),	-- Obsidian Seared Crusher
-			q(),	-- Obsidian Seared Facesmasher
-			q(),	-- Obsidian Seared Halberd
-			q(),	-- Obsidian Seared Hexsword
-			q(),	-- Obsidian Seared Invoker
-			q(),	-- Obsidian Seared Runeaxe
-			q(),	-- Obsidian Seared Slicer
-			q(),	-- Primal Molten Greataxe
-			q(),	-- Primal Molten Longsword
-			q(),	-- Primal Molten Mace
-			q(),	-- Primal Molten Shortblade
-			q(),	-- Primal Molten Spellblade
-			q(),	-- Primal Molten Warglaive
+			q(71332),	-- Draconium Axe
+			q(71336),	-- Draconium Dirk
+			q(72186),	-- Draconium Great Axe
+			q(71334),	-- Draconium Great Mace
+			q(71337),	-- Draconium Knuckles
+			q(71335),	-- Draconium Stiletto
+			q(71333),	-- Draconium Sword
+			q(71381),	-- Obsidian Seared Claymore
+			q(71377),	-- Obsidian Seared Crusher
+			q(71378),	-- Obsidian Seared Facesmasher
+			q(71379),	-- Obsidian Seared Halberd
+			q(71380),	-- Obsidian Seared Hexsword
+			q(71376),	-- Obsidian Seared Invoker
+			q(71374),	-- Obsidian Seared Runeaxe
+			q(71375),	-- Obsidian Seared Slicer
+			q(71384),	-- Primal Molten Greataxe
+			q(71383),	-- Primal Molten Longsword
+			q(71382),	-- Primal Molten Mace
+			q(71386),	-- Primal Molten Shortblade
+			q(71385),	-- Primal Molten Spellblade
+			q(71387),	-- Primal Molten Warglaive
 			-- Profession Tools and Accessories
-			q(),	-- Black Dragon Touched Hammer
+			q(71360),	-- Black Dragon Touched Hammer
 			q(71361),	-- Draconium Blacksmith's Hammer
-			q(),	-- Draconium Blacksmith's Toolbox
-			q(),	-- Draconium Leatherworker's Knife
-			q(),	-- Draconium Leatherworker's Toolset
-			q(),	-- Draconium Needle Set
-			q(),	-- Draconium Pickaxe
-			q(),	-- Draconium Sickle
-			q(),	-- Draconium Skinning Knife
-			q(),	-- Khaz'gorite Blacksmith's Hammer
-			q(),	-- Khaz'gorite Blacksmith's Toolbox
-			q(),	-- Khaz'gorite Leatherworker's Knife
-			q(),	-- Khaz'gorite Leatherworker's Toolset
-			q(),	-- Khaz'gorite Needle Set
-			q(),	-- Khaz'gorite Pickaxe
-			q(),	-- Khaz'gorite Sickle
-			q(),	-- Khaz'gorite Skinning Knife
+			q(71345),	-- Draconium Blacksmith's Toolbox
+			q(71365),	-- Draconium Leatherworker's Knife
+			q(71347),	-- Draconium Leatherworker's Toolset
+			q(71349),	-- Draconium Needle Set
+			q(71367),	-- Draconium Pickaxe
+			q(71363),	-- Draconium Sickle
+			q(71369),	-- Draconium Skinning Knife
+			q(71362),	-- Khaz'gorite Blacksmith's Hammer
+			q(71346),	-- Khaz'gorite Blacksmith's Toolbox
+			q(71366),	-- Khaz'gorite Leatherworker's Knife
+			q(71348),	-- Khaz'gorite Leatherworker's Toolset
+			q(71350),	-- Khaz'gorite Needle Set
+			q(71368),	-- Khaz'gorite Pickaxe
+			q(71364),	-- Khaz'gorite Sickle
+			q(71370),	-- Khaz'gorite Skinning Knife
 			-- Consumable Tools
-			q(),	-- Master's Hammer
-			q(),	-- Serevite Repair Hammer
-			q(),	-- Serevite Skeleton Key
-			q(),	-- Sturdy Expedition Shovel
+			--q(),	-- Master's Hammer
+			q(71357),	-- Serevite Repair Hammer
+			q(71344),	-- Serevite Skeleton Key
+			--q(),	-- Sturdy Expedition Shovel
 			-- Stonework
-			q(),	-- Primal Razorstone
-			q(),	-- Primal Weightstone
-			q(),	-- Primal Whetstone
+			q(71338),	-- Primal Razorstone
+			q(71340),	-- Primal Weightstone
+			q(71341),	-- Primal Whetstone
 			-- Pets
-			q(),	-- Alvin The Anvil
+			q(71351),	-- Alvin The Anvil
 			-- Dragon Ridning
-			q(),	-- Prototype Explorer's Barding Framework
-			q(),	-- Prototype Regal Barding Framework
+			--q(),	-- Prototype Explorer's Barding Framework
+			--q(),	-- Prototype Regal Barding Framework
 		}),
-		--]]
 		prof(ENGINEERING, {
 			-- Recrafting --
 			--q(),	-- Recraft Equipment
