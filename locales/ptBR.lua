@@ -1005,6 +1005,7 @@ for key,value in pairs({
 	[19023] = "|cFFFFFFFFStep 7:|r Página 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "Santuário Escondido",	-- Hidden Shrine
 	[19030] = "Monturo de Terra",	-- Mound of Dirt
+	[19877] = "Armário de Velinde",	-- Velinde's Locker
 	[20805] = "Projeto Desprotegido do Rebu",	-- Rizzle's Unguarded Plans	--TODO: This was taken from classic Wowhead
 	[20985] = "Terra Solta",	-- Loose Dirt
 	[20992] = "Escudo Negro",	-- Black Shield
@@ -1101,6 +1102,7 @@ for key,value in pairs({
 	[179499] = "Cesta de Tanino Ôgrico",	-- Ogre Tannin Basket
 	[179501] = "Tesouro do Fiapo Agulhacerta",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
 	[179564] = "Homenagem a Gordok",	-- Gordok Tribute Chest
+	[179565] = "Relicário Empoeirado",	-- Dusty Reliquary
 	[179697] = "Baú do Tesouro da Arena",	-- Arena Treasure Chest
 	[179827] = "Procurados/Desaparecidos/Achados e Perdidos",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	[179832] = "Travesseiro Ornado da Alma Fada",	-- Pillaclencher's Ornate Pillow
@@ -3231,6 +3233,7 @@ for key,value in pairs({
 	--TODO: [381701] = "WANTED: Mara'nar the Thunderous",	-- WANTED: Mara'nar the Thunderous
 	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
+	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	[9962198] = "Poça de Lodo Improvisada do Proscrito",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

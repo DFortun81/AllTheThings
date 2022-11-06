@@ -1005,6 +1005,7 @@ for key,value in pairs({
 	[19023] = "|cFFFFFFFFStep 7:|r 2351쪽",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "숨겨진 제단",	-- Hidden Shrine
 	[19030] = "흙무더기",	-- Mound of Dirt
+	[19877] = "벨린데의 사물함",	-- Velinde's Locker
 	[20805] = "아무도 지키지 않는 리즐의 설계도",	-- Rizzle's Unguarded Plans	--TODO: This was taken from classic Wowhead
 	[20985] = "푸석푸석한 흙더미",	-- Loose Dirt
 	[20992] = "검은 방패",	-- Black Shield
@@ -1101,6 +1102,7 @@ for key,value in pairs({
 	[179499] = "오우거 타닌 광주리",	-- Ogre Tannin Basket
 	[179501] = "노트 팀블잭의 은닉품",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
 	[179564] = "고르독 공물",	-- Gordok Tribute Chest
+	[179565] = "더러운 성물함",	-- Dusty Reliquary
 	[179697] = "투기장 보물상자",	-- Arena Treasure Chest
 	[179827] = "구인광고/분실물센터/지명수배",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	[179832] = "하녀 필라클렌처의 화려한 베개",	-- Pillaclencher's Ornate Pillow
@@ -3231,6 +3233,7 @@ for key,value in pairs({
 	--TODO: [381701] = "WANTED: Mara'nar the Thunderous",	-- WANTED: Mara'nar the Thunderous
 	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
+	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	[9962198] = "추방자의 급조한 진흙 웅덩이",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
