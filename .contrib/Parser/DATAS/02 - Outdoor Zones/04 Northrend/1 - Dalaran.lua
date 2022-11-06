@@ -6375,14 +6375,6 @@ root("Zones", {
 					-- #endif
 					n(29478, {	-- Jepetto Joybuzz <Toymaker>
 						["coord"] = { 44.5, 45.7, NORTHREND_DALARAN },
-						["timeline"] = { "removed 7.0.3.22290" },
-						-- #if BEFORE 7.0.3.22290
-						["sym"] = {{"sub", "common_vendor", 29716}},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
-						-- #endif
-					}),
-					n(96483, {	-- Jepetto Joybuzz <Toymaker>
-						["coord"] = { 44.5, 45.7, NORTHREND_DALARAN },
-						["timeline"] = { "added 7.0.3.22290" },
 						["sym"] = {{"sub", "common_vendor", 29716}},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
 					}),
 					n(29491, {	-- Karandonna <Clothier>

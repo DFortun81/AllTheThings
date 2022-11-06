@@ -3113,9 +3113,8 @@ _.Zones =
 				}),
 				n(96483,  {	-- Jepetto Joybuzz <Toymaker>
 					["coord"] = { 43.6, 45.6, LEGION_DALARAN },
-					["sym"] = {
-						{"sub", "common_vendor", 29716},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
-					},
+					["timeline"] = { "added 7.0.3.22290" },
+					["sym"] = {{"sub", "common_vendor", 29716}},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
 					["g"] = {
 						i(129057),	-- Dalaran Disc (TOY!)
 					},
