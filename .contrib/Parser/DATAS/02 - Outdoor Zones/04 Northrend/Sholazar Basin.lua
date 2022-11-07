@@ -434,12 +434,27 @@ root("Zones", {
 						["isDaily"] = true,
 					}),
 					q(12704, {	-- Appeasing the Great Rain Stone
-						["qg"] = 28027,	-- High-Oracle Soo-say
+						["providers"] = {
+							{ "n", 28027 },	-- High-Oracle Soo-say
+							{ "i", 38622 },	-- Lafoo's Bug Bag
+						},
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 						["coord"] = { 54.6, 56.3, SHOLAZAR_BASIN },
 						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
 						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/6 Shiny Treasures
+								["providers"] = {
+									{ "i",  38575 },	-- Shiny Treasures
+									{ "o", 190560 },	-- Glinting Armor
+									{ "o", 190561 },	-- Glowing Gem
+									{ "o", 190562 },	-- Polished Platter
+									{ "o", 190558 },	-- Shining Crystal
+									{ "o", 190563 },	-- Sparkling Treasure
+								},
+							}),
+						},
 					}),
 					q(12689, {	-- Hand of the Oracles
 						["qg"] = 28667,	-- Jaloot
