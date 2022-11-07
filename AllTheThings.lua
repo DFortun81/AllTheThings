@@ -11771,14 +11771,18 @@ local function default_link(t)
 	-- need to 'create' a valid accurate link for this item
 	local itemLink = t.itemID;
 	if itemLink then
-		local bonusID = t.bonusID;
-		local modID = t.modID;
+		local modID, bonusID;
+		-- sometimes the raw itemID is actually a modItemID, so try splitting that here as a final adjustment
+		itemLink, modID, bonusID = GetItemIDAndModID(itemLink);
+		bonusID = t.bonusID or bonusID;
+		modID = t.modID or modID;
 		if not bonusID or bonusID < 1 then
 			bonusID = nil;
 		end
 		if not modID or modID < 1 then
 			modID = nil;
 		end
+		-- app.PrintDebug("Create default_link",itemLink,modID,bonusID)
 		if bonusID and modID then
 			itemLink = sformat("item:%d:::::::::::%d:1:%d:", itemLink, modID, bonusID);
 		elseif bonusID then
