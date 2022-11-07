@@ -1651,7 +1651,7 @@ root("HiddenQuestTriggers", {
 			q(),	-- Recraft Equipment
 			-- Leather Armor
 			q(),	-- Life-Bound Belt
-			q(),	-- Life-Bound Binding
+			q(71713),	-- Life-Bound Binding
 			q(),	-- Life-Bound Boots
 			q(),	-- Life-Bound Cap
 			q(),	-- Life-Bound Chestpiece
@@ -1659,12 +1659,12 @@ root("HiddenQuestTriggers", {
 			q(),	-- Life-Bound Shoulderpads
 			q(),	-- Life-Bound Trousers
 			q(),	-- Pioneer's Leather Boots
-			q(),	-- Pioneer's Leather Tunic
-			q(),	-- Pioneer's Leather Wristguard
-			q(),	-- Pioneer's Practiced Belt
+			q(71703),	-- Pioneer's Leather Tunic
+			q(72569),	-- Pioneer's Leather Wristguard
+			q(72495),	-- Pioneer's Practiced Belt
 			q(),	-- Pioneer's Practiced Cowl
-			q(),	-- Pioneer's Practiced Gloves
-			q(),	-- Pioneer's Practiced Leggings
+			q(72496),	-- Pioneer's Practiced Gloves
+			q(72497),	-- Pioneer's Practiced Leggings
 			q(),	-- Pioneer's Practiced Shoulderpads
 			-- Mail Armor
 			q(),	-- Flame-Touched Chain
@@ -1684,8 +1684,8 @@ root("HiddenQuestTriggers", {
 			q(),	-- Trailblazer's Toughened Legguards
 			q(),	-- Trailblazer's Toughened Spikes
 			-- Profession Equipment
-			q(),	-- Alchemist's Hat
-			q(),	-- Durable Pack
+			q(71683),	-- Alchemist's Hat
+			q(71767),	-- Durable Pack
 			q(),	-- Expert Alchemist's Hat
 			q(),	-- Expert Skinner's Cap
 			q(),	-- Flameproof Apron
@@ -1743,7 +1743,7 @@ root("HiddenQuestTriggers", {
 			-- Reagents
 			q(),	-- Finished Prototype Explorer's Barding
 			q(),	-- Finished Prototype Regal Barding
-			q(),	-- Earthshine Scale
+			q(71764),	-- Earthshine Scale
 			q(),	-- Frostbite Scale
 			q(),	-- Infurious Hide
 			q(),	-- Infurious Scales
@@ -1763,7 +1763,7 @@ root("HiddenQuestTriggers", {
 			-- Toys
 			q(),	-- Artisan's Sign
 			q(),	-- Gnoll Tent
-			q(),	-- Tuskarr Bean Bag
+			q(71773),	-- Tuskarr Bean Bag
 		}),
 		--]]
 		prof(MINING, {
