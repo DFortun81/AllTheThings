@@ -125,6 +125,13 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				q(1100, {	-- Lonebrow's Journal
+					["provider"] = { "i", 5790 },	-- Lonebrow's Journal
+					["coord"] = { 30, 24, THOUSAND_NEEDLES },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 29,
+				}),
 				q(1142, {	-- Mortality Wanes
 					["qg"] = 4510,	-- Heralath Fallowbrook
 					["coord"] = { 69.4, 67.6, DARNASSUS },

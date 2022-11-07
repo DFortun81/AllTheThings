@@ -77,7 +77,6 @@ q(1001),	-- Buzzbox 411,		TBC: Buzzbox 411,		CLASSIC: Buzzbox 411
 q(1002),	-- Buzzbox 323,		TBC: Buzzbox 323,		CLASSIC: Buzzbox 323
 q(1003),	-- Buzzbox 525,		TBC: Buzzbox 525,		CLASSIC: Buzzbox 525
 q(1052),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
-q(1100),	-- Lonebrow's Journal,		TBC: Lonebrow's Journal,		CLASSIC: Lonebrow's Journal
 q(1132),	-- Fiora Longears,		TBC: Fiora Longears,		CLASSIC: Fiora Longears
 q(1141),	-- The Family and the Fishing Pole,		TBC: The Family and the Fishing Pole,		CLASSIC: The Family and the Fishing Pole
 q(1143),	-- The Tower of Althalaxx,		TBC: The Tower of Althalaxx,		CLASSIC: The Tower of Althalaxx
@@ -88,7 +87,6 @@ q(1158),	-- <NYI> <TXT> speak to rabine saturna,		TBC: <NYI> <TXT> speak to rabi
 q(1161),	-- <NYI> <TXT> gossip shade of ambermoon,		TBC: <NYI> <TXT> gossip shade of ambermoon,		CLASSIC: <NYI> <TXT> gossip shade of ambermoon
 q(1162),	-- <NYI> <TXT> speak to hamuul runetotem,		TBC: <NYI> <TXT> speak to hamuul runetotem,		CLASSIC: <NYI> <TXT> speak to hamuul runetotem
 q(1163),	-- <NYI> <TXT> speak to tyrande whisperwind,		TBC: <NYI> <TXT> speak to tyrande whisperwind,		CLASSIC: <NYI> <TXT> speak to tyrande whisperwind
-q(1179),	-- The Brassbolts Brothers,		TBC: The Brassbolts Brothers,		CLASSIC: The Brassbolts Brothers
 q(1219),	-- [DEPRECATED]The Orc Report,		TBC: The Orc Report,		CLASSIC: The Orc Report
 q(1220),	-- [DEPRECATED]Captain Vimes,		TBC: Captain Vimes,		CLASSIC: Captain Vimes
 q(1252),	-- [DEPRECATED]Lieutenant Paval Reethe,		TBC: Lieutenant Paval Reethe,		CLASSIC: Lieutenant Paval Reethe
@@ -216,7 +214,6 @@ q(2460),	-- The Shattered Salute,		TBC: The Shattered Salute,		CLASSIC: The Shat
 q(2478),	-- Mission: Possible But Not Probable,		TBC: Mission: Possible But Not Probable,		CLASSIC: Mission: Possible But Not Probable
 q(2479),	-- Hinott's Assistance,		TBC: Hinott's Assistance,		CLASSIC: Hinott's Assistance
 q(2498),	-- Return to Denalan,		TBC: Return to Denalan,		CLASSIC: Return to Denalan
-q(2769),	-- The Brassbolts Brothers,		TBC: The Brassbolts Brothers,		CLASSIC: The Brassbolts Brothers
 q(2821),	-- The Mark of Quality,		TBC: The Mark of Quality,		CLASSIC: The Mark of Quality
 q(2844),	-- The Giant Guardian,		TBC: The Giant Guardian,		CLASSIC: The Giant Guardian
 q(2866),	-- The Ruins of Solarsal,		TBC: The Ruins of Solarsal,		CLASSIC: The Ruins of Solarsal

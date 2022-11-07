@@ -153,6 +153,14 @@ root("Instances", tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 40,
 				}),
+				q(2769, {	-- The Brassbolts Brothers
+					["qg"] = 6169,	-- Klockmort Spannerspan
+					["coord"] = { 68.2, 46.2, IRONFORGE },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 40,
+				}),
 				q(3527, {	-- The Prophecy of Mosh'aru
 					["qg"] = 8579,	-- Yeh'kinya
 					["sourceQuest"] = 3520,	-- Screecher Spirits
