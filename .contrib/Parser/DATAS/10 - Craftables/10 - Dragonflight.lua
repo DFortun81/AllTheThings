@@ -1554,11 +1554,11 @@ root("HiddenQuestTriggers", {
 			q(),	-- Draconic Vial
 			q(),	-- Elemental Harmony
 			q(),	-- Empty Soul Cage
-			q(),	-- Frameless Lens
+			q(71675),	-- Frameless Lens
 			q(),	-- Glossy Stone
 			q(),	-- Illustrious Insight
 			q(),	-- Pounce
-			q(),	-- Shimmering Clasp
+			q(71672),	-- Shimmering Clasp
 			-- Rudimentary Gems
 			q(),	-- Crafty Queen's Ruby
 			q(),	-- Energized Vibrant Emerald
@@ -1568,34 +1568,34 @@ root("HiddenQuestTriggers", {
 			-- Air Gems
 			q(),	-- Crafty Alexstraszite
 			q(),	-- Energized Malygite
-			q(),	-- Forceful Nozdorite
+			q(71627),	-- Forceful Nozdorite
 			q(),	-- Keen Neltharite
 			q(),	-- Quick Ysemerald
 			-- Earth Gems
 			q(),	-- Fractured Neltharite
 			q(),	-- Keen Ysemerald
-			q(),	-- Puissant Nozdorite
+			q(71628),	-- Puissant Nozdorite
 			q(),	-- Sensei's Alexstraszite
 			q(),	-- Zen Malygite
 			-- Fire Gems
 			q(),	-- Crafty Ysemerald
 			q(),	-- Deadly Alexstraszite
-			q(),	-- Jagged Nozdorite
+			q(71629),	-- Jagged Nozdorite
 			q(),	-- Radiant Malygite
 			q(),	-- Sensei's Neltharite
 			-- Frost Gems
 			q(),	-- Energized Ysemerald
 			q(),	-- Radiant Alexstraszite
-			q(),	-- Steady Nozdorite
+			q(71630),	-- Steady Nozdorite
 			q(),	-- Stormy Malygite
 			q(),	-- Zen Neltharite
 			-- Primalist Gems
 			q(),	-- Fierce Illimited Diamond
-			q(),	-- Inscribed Illimited Diamond
+			q(71619),	-- Inscribed Illimited Diamond
 			q(),	-- Resplendent Illimited Diamond
 			q(),	-- Skillful Illimited Diamond
 			-- Misc
-			q(),	-- Tiered Medallion Setting
+			q(71657),	-- Tiered Medallion Setting
 			-- Trinkets
 			q(),	-- Idol of the Earth Warder
 			q(),	-- Idol of the Dreamer
@@ -1607,7 +1607,7 @@ root("HiddenQuestTriggers", {
 			q(),	-- Crimson Combatant's Jeweled Amulet
 			q(),	-- Crimson Combatant's Jeweled Signet
 			q(),	-- Elemental Lariat
-			q(),	-- Pendent of Impending Perils
+			q(71602),	-- Pendant of Impending Perils
 			q(),	-- Ring-Bound Hourglass
 			q(),	-- Signet of Titanic Insight
 			q(),	-- Torc of Passed Time
@@ -1615,7 +1615,7 @@ root("HiddenQuestTriggers", {
 			q(),	-- Djaradin's "Pinata"
 			q(),	-- Kalu'ak Figurine
 			q(),	-- Narcissist's Sculpture
-			q(),	-- Revitalizing Red Carving
+			q(71612),	-- Revitalizing Red Carving
 			q(),	-- Statue of Tyr's Herald
 			-- Battle Pets
 			q(),	-- Jeweled Amber Whelpling
@@ -1637,14 +1637,14 @@ root("HiddenQuestTriggers", {
 			q(),	-- Left-Handed Magnifying Glass
 			q(),	-- Magnificent Margin Magnifier
 			q(),	-- Resonant Focus
-			q(),	-- Sundered Onyx Loupes
+			q(71665),	-- Sundered Onyx Loupes
 			-- Extravagant Glasswares
 			q(),	-- Dreamer's Vision
 			q(),	-- Earthwarden's Prize
-			q(),	-- Jeweled Dragon's Heart
+			q(71654),	-- Jeweled Dragon's Heart
 			q(),	-- Keeper's Glory
 			q(),	-- Queen's Gift
-			q(),	-- Timewatcher's Patience
+			q(71653),	-- Timewatcher's Patience
 		}),
 		prof(LEATHERWORKING, {
 			-- Recraft
