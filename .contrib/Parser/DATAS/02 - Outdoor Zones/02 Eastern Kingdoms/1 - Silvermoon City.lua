@@ -470,7 +470,10 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						i(25549),	-- Blood Knight Tabard
-						mount(34767),	-- Thalassian Charger (MOUNT!)
+						mount(34767, {	-- Thalassian Charger (MOUNT!)
+							["classes"] = { PALADIN },
+							["races"] = { BLOODELF },
+						}),
 					},
 				}),
 			}),

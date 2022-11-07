@@ -84,6 +84,7 @@ _.ObjectNames = {
 	[20725] = "The Legacy of the Aspects",
 	[20727] = "Gizmorium Shipping Crate",
 	[20805] = "Rizzle's Unguarded Plans",
+	[20807] = "Ancient Brazier",
 	[20985] = "Loose Dirt",
 	[20992] = "Black Shield",
 	[21015] = "Hoofprints",

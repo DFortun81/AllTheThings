@@ -412,6 +412,15 @@ root("Zones", m(KALIMDOR, {
 					["groups"] = {
 						i(6973, {	-- Fire hardened Leggings
 							["timeline"] = { "removed 4.0.3" },
+							-- #if ANYCLASSIC
+							["OnUpdate"] = [[function(t)
+								if _.Level >= 40 then
+									t.f = ]] .. PLATE .. [[;
+								else
+									t.f = ]] .. MAIL .. [[;
+								end
+							end]],
+							-- #endif
 						}),
 					},
 				}),
@@ -747,6 +756,7 @@ root("Zones", m(KALIMDOR, {
 					},
 					["coord"] = { 35.2, 9.0, DARNASSUS },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { UNGORO_CRATER },
 					["cost"] = {{ "i", 11018, 20 }},	-- Un'Goro Soil
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
@@ -1016,7 +1026,7 @@ root("Zones", m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(45579, {	-- Darnassus Tabard
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { "added 3.1.0.9626" },
 						}),
 						i(64887, {	-- Cape of Darnassus
 							["timeline"] = { "added 4.0.3.13277" },

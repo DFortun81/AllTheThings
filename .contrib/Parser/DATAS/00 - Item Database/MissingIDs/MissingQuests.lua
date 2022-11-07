@@ -37,7 +37,6 @@ q(820),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(839),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(854),	-- Journey to the Crossroads,		TBC: Journey to the Crossroads,		CLASSIC: Journey to the Crossroads
 q(856),	-- <UNUSED>,		CLASSIC: <UNUSED>
-q(860),	-- Sergra Darkthorn,		TBC: Sergra Darkthorn,		CLASSIC: Sergra Darkthorn
 q(886),	-- The Barrens Oases,		TBC: The Barrens Oases,		CLASSIC: The Barrens Oases
 q(897),	-- The Harvester,		TBC: The Harvester,		CLASSIC: The Harvester
 q(916),	-- Webwood Corruption,		TBC: Webwood Venom,		CLASSIC: Webwood Venom
