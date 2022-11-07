@@ -9012,6 +9012,7 @@ local function RefreshQuestCompletionState(questID)
 		-- end
 		UpdateRawIDs("questID", UpdateQuestIDs);
 		wipe(UpdateQuestIDs);
+		wipe(searchCache);
 	end
 	-- re-register the criteria update event
 	app:RegisterEvent("CRITERIA_UPDATE");
