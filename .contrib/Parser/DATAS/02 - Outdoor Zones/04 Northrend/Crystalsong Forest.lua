@@ -52,6 +52,11 @@ root("Zones", {
 					exploration(4559),	-- Windrunner's Overlook
 				}),
 				-- #endif
+				prof(COOKING, {
+					i(43148, {	-- Crystalsong Carrot
+						["provider"] = { "o", 192828 },	-- Crystalsong Carrot
+					}),
+				}),
 				prof(FISHING, {
 					ach(1517, {	-- Northrend Angler
 						["criteriaID"] = 5283,	-- Glassfin Minnow School
