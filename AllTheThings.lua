@@ -4611,9 +4611,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 	end
 
-	-- Create an unlinked version of the object.
+	-- Create clones of the search results
 	if not group.g then
-
 		-- Clone all the groups so that things don't get modified in the Source
 		local cloned = {};
 		local clearSourceParent = #group > 1;
@@ -4799,6 +4798,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			BuildGroups(group, group.g);
 			app.TopLevelUpdateGroup(group);
 		end
+	-- delete sub-groups if there are none
+	elseif #group.g == 0 then
+		group.g = nil;
 	end
 
 	if topLevelSearch then
@@ -4839,22 +4841,16 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], color = app.Colors.SourceIgnored });
 			end
 		end
-	end
 
-	-- delete sub-groups if there are none
-	if group.g and #group.g == 0 then
-		group.g = nil;
-	end
-
-	if topLevelSearch and group.g then
-		if app.Settings:GetTooltipSetting("SummarizeThings") then
+		if group.g and app.Settings:GetTooltipSetting("SummarizeThings") then
 			-- app.PrintDebug("SummarizeThings",group.hash,group.g and #group.g)
-			local entries, left, right = {};
+			local entries = {};
 			-- app.DEBUG_PRINT = "CONTAINS-"..group.hash;
 			BuildContainsInfo(group, entries, "  ", app.noDepth and 99 or 1);
 			-- app.DEBUG_PRINT = nil;
 			-- app.PrintDebug(entries and #entries,"contains entries")
 			if #entries > 0 then
+				local left, right;
 				local tooltipSourceFields = app.TooltipSourceFields;
 				tinsert(info, { left = L["CONTAINS"] });
 				local containCount, item, entry = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
@@ -4878,6 +4874,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if specs and #specs > 0 then
 						right = GetSpecsString(specs, false, false) .. right;
 					end
+
 					-- If this entry has customCollect requirements, list them for clarity
 					if entry.customCollect then
 						for i,c in ipairs(entry.customCollect) do
@@ -4889,15 +4886,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							end
 						end
 					end
+
 					-- If this entry is an Item, show additional Source information for that Item (since it needs to be acquired in a specific location most-likely)
 					if entry.itemID and paramA ~= "npcID" and paramA ~= "encounterID" then
 						-- Add the Zone name
 						local field, id;
 						for _,v in ipairs(tooltipSourceFields) do
-							if not field then
-								id = RecursiveParentField(entry, v, true);
-								-- print("check",v,id)
-								if id then field = v; end
+							id = RecursiveParentField(entry, v, true);
+							-- print("check",v,id)
+							if id then
+								field = v;
+								break;
 							end
 						end
 						local locationGroup, locationName;
@@ -4944,6 +4943,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							-- print("No Location name for item",entry.itemID,id,field)
 						end
 					end
+
 					-- If this entry is an Achievement Criteria (whose raw parent is not the Achievement) then show the Achievement
 					if entry.criteriaID and entry.achievementID then
 						local rawParent = rawget(entry, "parent");
@@ -4952,11 +4952,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							left = left .. " > " .. critAch.text;
 						end
 					end
+
 					tinsert(info, { left = item.prefix .. left, right = right });
 				end
+
 				if #entries - containCount > 0 then
 					tinsert(info, { left = L["AND_"] .. (#entries - containCount) .. L["_MORE"] .. "..." });
 				end
+
 				if app.Settings:GetTooltipSetting("Currencies") then
 					-- app.PrintDebug("Currencies",group.hash,#entries)
 					local costCollectibles = group.costCollectibles;
@@ -4981,10 +4984,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 		end
-	end
-
-	-- Check if finally leaving the top-level search
-	if topLevelSearch then
 
 		-- If the item is a recipe, then show which characters know this recipe.
 		-- app.PrintDebug(topLevelSearch,group.spellID,group.filterID,group.collectible)
@@ -5077,7 +5076,7 @@ do
 local included = {};
 local knownSkills, isInWindow;
 -- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
-app.SkipPurchases = {
+local SkipPurchases = {
 	[-1] = 0,	-- Whether to skip certain cost items
 	[137642] = 2,	-- Mark of Honor
 	[21100] = 1,	-- Coin of Ancestry
@@ -5088,18 +5087,18 @@ app.SkipPurchases = {
 app.SetSkipPurchases = function(level)
 	if level then
 		-- print("SkipPurchases exclusion",level)
-		app.SkipPurchases[-1] = level;
+		SkipPurchases[-1] = level;
 	else
-		return app.SkipPurchases[-1];
+		return SkipPurchases[-1];
 	end
 end
 -- Determines searches required for costs using this group
 local function DeterminePurchaseGroups(group, depth)
 	-- do not fill purchases on certain items, can skip the skip though based on a level
 	local itemID = group.itemID;
-	local reqSkipLevel = itemID and app.SkipPurchases[itemID];
+	local reqSkipLevel = itemID and SkipPurchases[itemID];
 	if reqSkipLevel then
-		local curSkipLevel = app.SkipPurchases[-1];
+		local curSkipLevel = SkipPurchases[-1];
 		if curSkipLevel and curSkipLevel < reqSkipLevel then return; end;
 	end
 
