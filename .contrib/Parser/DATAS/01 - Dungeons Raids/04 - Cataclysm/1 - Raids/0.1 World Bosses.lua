@@ -41,11 +41,6 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			n(50063, {	-- Akma'hat
 				["coord"] = { 38.0, 60.6, ULDUM },
-				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
-					{"select","tierID",CATA_TIER},{"pop"},
-					{"where","headerID",WORLD_BOSSES},{"pop"},
-					{"where","headerID",COMMON_BOSS_DROPS},
-				},
 				["g"] = {
 					i(69877),	-- Belt of a Thousand Gaping Mouths
 					un(REMOVED_FROM_GAME, i(67240)),	-- Belt of A Thousand Mouths [Replaced with 69877]
@@ -55,11 +50,6 @@ _.Instances = { tier(CATA_TIER, {
 				["coords"] = {
 					{ 37.6, 73.4, MOUNT_HYJAL },
 					{ 40.4, 81.8, MOUNT_HYJAL },
-				},
-				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
-					{"select","tierID",CATA_TIER},{"pop"},
-					{"where","headerID",WORLD_BOSSES},{"pop"},
-					{"where","headerID",COMMON_BOSS_DROPS},
 				},
 				["g"] = {
 					i(69842),	-- Garr's Reinforced Girdle of Memories
@@ -74,11 +64,6 @@ _.Instances = { tier(CATA_TIER, {
 					{ 57.2, 7.8, TWILIGHT_HIGHLANDS },
 					{ 59.8, 6.8, TWILIGHT_HIGHLANDS },
 				},
-				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
-					{"select","tierID",CATA_TIER},{"pop"},
-					{"where","headerID",WORLD_BOSSES},{"pop"},
-					{"where","headerID",COMMON_BOSS_DROPS},
-				},
 				["g"] = {
 					i(69844),	-- Vitreous Beak of Julak-Doom
 					un(REMOVED_FROM_GAME, i(67246)),	-- Beak of Julak-Doom [Replaced with 69844]
@@ -92,11 +77,6 @@ _.Instances = { tier(CATA_TIER, {
 					{ 75.6, 36.6, 204 },
 					{ 77.0, 25.4, 204 },
 				},
-				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
-					{"select","tierID",CATA_TIER},{"pop"},
-					{"where","headerID",WORLD_BOSSES},{"pop"},
-					{"where","headerID",COMMON_BOSS_DROPS},
-				},
 				["g"] = {
 					i(69843),	-- Mobus's Dripping Halberd
 					un(REMOVED_FROM_GAME, i(67153)),	-- Mobus's Vile Halberd [Replaced with 69843]
@@ -109,11 +89,6 @@ _.Instances = { tier(CATA_TIER, {
 					{ 45.4, 63.8, DEEPHOLM },
 					{ 56.6, 42.6, DEEPHOLM },
 					{ 57.2, 59.0, DEEPHOLM },
-				},
-				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
-					{"select","tierID",CATA_TIER},{"pop"},
-					{"where","headerID",WORLD_BOSSES},{"pop"},
-					{"where","headerID",COMMON_BOSS_DROPS},
 				},
 				["g"] = {
 					i(69876),	-- Xariona's Spectral Gauntlets

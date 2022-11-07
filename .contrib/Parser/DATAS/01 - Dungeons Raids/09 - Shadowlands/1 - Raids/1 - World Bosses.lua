@@ -147,11 +147,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				["questID"] = 62810,
 				["coord"] = { 32.1, 67.3, MALDRAXXUS },
 				["creatureID"] = 167525,	-- Mortanis
-				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
-					{"select","tierID",SL_TIER},{"pop"},
-					{"where","headerID",WORLD_BOSSES},{"pop"},
-					{"where","headerID",COMMON_BOSS_DROPS},
-				},
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183341),	-- Memory of a Guile Charm
 					i(183386),	-- Memory of Fujieda
@@ -180,11 +175,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				["questID"] = 62812,
 				["coord"] = { 27.2, 14.9, REVENDRETH },
 				["creatureID"] = 167526,	-- Nurgash Muckformed
-				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
-					{"select","tierID",SL_TIER},{"pop"},
-					{"where","headerID",WORLD_BOSSES},{"pop"},
-					{"where","headerID",COMMON_BOSS_DROPS},
-				},
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(182638),	-- Memory of a Frenzied Monstrosity
 					i(183215),	-- Memory of an Erratic Fel Core
@@ -213,11 +203,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				["questID"] = 62811,
 				["coord"] = { 20.2, 63.6, ARDENWEALD },
 				["creatureID"] = 167527,	-- Oranomonos the Everbranching
-				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
-					{"select","tierID",SL_TIER},{"pop"},
-					{"where","headerID",WORLD_BOSSES},{"pop"},
-					{"where","headerID",COMMON_BOSS_DROPS},
-				},
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183274),	-- Memory of a Fevered Incantation
 					i(183261),	-- Memory of Surging Shots
@@ -246,11 +231,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				["questID"] = 62809,
 				["coord"] = { 26.3, 22.4, BASTION },
 				["creatureID"] = 167524,	-- Valinor, the Light of Eons
-				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
-					{"select","tierID",SL_TIER},{"pop"},
-					{"where","headerID",WORLD_BOSSES},{"pop"},
-					{"where","headerID",COMMON_BOSS_DROPS},
-				},
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(183325),	-- Memory of Archbishop Benedictus
 					i(183311),	-- Memory of the Final Verdict
