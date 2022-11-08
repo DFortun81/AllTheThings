@@ -675,6 +675,7 @@ _.Zones =
 				q(44547, {	-- Isle Hopping
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is automatically offered after you find your second Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
+					["sourceQuestNumRequired"] = 2,
 					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
 						43349,	-- The Aegis of Aggramar
@@ -763,6 +764,7 @@ _.Zones =
 				q(44549, {	-- Master of the Isles
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is automatically offered after you find your fourth Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
+					["sourceQuestNumRequired"] = 4,
 					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
 						43349,	-- The Aegis of Aggramar
@@ -834,6 +836,7 @@ _.Zones =
 				q(44545, {	-- Pressing the Assault
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is automatically offered after you find your first Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
+					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
 						43349,	-- The Aegis of Aggramar
@@ -932,6 +935,7 @@ _.Zones =
 				q(44548, {	-- Scouring What Remains
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is automatically offered after you find your third Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
+					["sourceQuestNumRequired"] = 3,
 					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
 						43349,	-- The Aegis of Aggramar

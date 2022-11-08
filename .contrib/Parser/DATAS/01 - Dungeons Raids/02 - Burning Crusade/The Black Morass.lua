@@ -38,8 +38,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 20130,	-- Andormu
 					-- #if BEFORE 4.3.0.14732
 					["sourceQuest"] = 10285,	-- Return to Andormu
-					-- #else
-					["sourceQuest"] = 29599,	-- Escape from Durnholde
 					-- #endif
 					["coord"] = { 41.5, 38.5, CAVERNS_OF_TIME },
 					["lvl"] = lvlsquish(66, 25, 66),

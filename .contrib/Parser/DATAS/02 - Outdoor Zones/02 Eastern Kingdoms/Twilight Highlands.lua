@@ -2398,6 +2398,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
 						{"select", "itemID", 67312},	-- Formula: Magic Lamp (RECIPE!)
 						{"exclude","itemID",6343},	-- Formula: Enchant Chest - Lesser Mana
+						{"exclude","itemID",67308},	-- Formula: Enchanted Lantern
 					},
 				}),
 				n(50172, {	-- Threm Blackscalp <Hide & Leather Trader>

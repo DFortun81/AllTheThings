@@ -231,12 +231,13 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 48.9, 49.1, 702 },
 					}),
 					q(44100, {	-- Proper Introductions
+						["sourceQuests"] = { 41019 },	-- Actions on Azeroth
 						["classes"] = { PRIEST },	-- Priest
 						["provider"] = { "n", 112695 },	-- Hooded Priest
 						["isBreadcrumb"] = true,
 					}),
 					q(43270, {	-- Rise, Champions
-						["sourceQuests"] = { 41019 },	-- Actions on Azeroth
+						["sourceQuests"] = { 44100 },	-- Proper Introductions
 						["coord"] = { 51.1, 48.2, 702 },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),

@@ -37,7 +37,7 @@ root("WorldEvents", n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIV
 			["provider"] = { "n", 110034 },		-- Historian Llore
 			["isDaily"] = true,
 			["races"] = ALLIANCE_ONLY,
-			["coord"] = { 84.61, 25.01, STORMWIND_CITY },
+			["coord"] = { 51.5, 38.7, CAVERNS_OF_TIME },
 			["sym"] = {{"select","npcID",
 				121818,	-- Lord Kazzak [Blasted Lands - Always up]
 				121820,	-- Azuregos [Azshara - Always Up]
@@ -51,7 +51,7 @@ root("WorldEvents", n(THIRTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIV
 			["provider"] = { "n", 110035 },		-- Historian Jupa
 			["isDaily"] = true,
 			["races"] = HORDE_ONLY,
-			["coord"] = { 36.6, 74.6, ORGRIMMAR },
+			["coord"] = { 51.5, 38.7, CAVERNS_OF_TIME },
 			["sym"] = {{"select","npcID",
 				121818,	-- Lord Kazzak [Blasted Lands - Always up]
 				121820,	-- Azuregos [Azshara - Always Up]

@@ -520,9 +520,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(25331, {	-- Grandma's Cat (NYI - duplicate)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(14399, {	-- Grandma's Lost It Alright
 					["provider"] = { "n", 36458 },	-- Grandma Wahl
 					["sourceQuest"] = 14398,	-- Grandma Wahl
@@ -951,6 +948,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 }));
 
 -- #if AFTER CATA
+root("HiddenQuestTriggers", m(EASTERN_KINGDOMS, {
+	m(179, {	-- Gilneas
+		q(25331),	-- Grandma's Cat (when completing 14401)
+	}),
+}));
+
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(14319),	-- BETA Further Treatment

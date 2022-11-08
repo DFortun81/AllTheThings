@@ -1230,10 +1230,12 @@ root("Zones", {
 								["coord"] = { 64.3, 30.9, HELLFIRE_PENINSULA },
 								["cr"] = 20798,	-- Razorsaw
 							}),
+							-- #IF ANYCLASSIC
 							i(29934),	-- Helm of Affinity
 							i(29930),	-- Nature-Stitched Kilt
 							i(29941),	-- Scale Brand Breastplate
 							i(29928),	-- Wanderer's Stitched Trousers
+							-- #ENDIF
 						},
 					}),
 					q(10124, {	-- Forward Base: Reaver's Fall

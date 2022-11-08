@@ -83,7 +83,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				q(26894, {	-- Blackfathom Deeps [Horde]
+				q(26894, {	-- Blackfathom Deeps (H)
 					["qg"] = 34122,	-- Commander Grimfang
 					["coord"] = { 12.1, 33.8, ASHENVALE },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -91,7 +91,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(22, 10, 22),
 				}),
-				q(26897, {	-- Blackfathom Deeps [Alliance]
+				q(26897, {	-- Blackfathom Deeps (A)
 					["qg"] = 3845,	-- Shindrell Swiftfire
 					["coord"] = { 18.2, 20.4, ASHENVALE },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -99,15 +99,15 @@ root("Instances", tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(22, 10, 22),
 				}),
-				q(26898, {	-- Blackfathom Deeps [Alliance, removed.]
+				q(26898, {	-- Blackfathom Deeps (A)
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["coord"] = { 36.6, 49.6, ASHENVALE },
-					["timeline"] = { "added 4.0.3.13277", "removed 6.0.2" },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(22, 10, 22),
 				}),
-				q(1200, {	-- Blackfathom Villainy [Alliance]
+				q(1200, {	-- Blackfathom Villainy (A)
 					["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
 					["sourceQuest"] = 1198,	-- In Search of Thaelrid
 					["timeline"] = { "removed 4.0.3" },
@@ -126,7 +126,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				q(26882, {	-- Blackfathom Villainy [Alliance] [CATA]
+				q(26882, {	-- Blackfathom Villainy (A) [CATA]
 					["qg"] = 4787,	-- Scout Thaelrid
 					["sourceQuest"] = 26881,	-- In Search of Thaelrid
 					["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
@@ -144,7 +144,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						-- #endif
 					},
 				}),
-				q(6561, {	-- Blackfathom Villainy [Horde]
+				q(6561, {	-- Blackfathom Villainy (H)
 					["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
@@ -234,7 +234,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				q(26888, {	-- Nightmare of the Deeps [Horde] [CATA]
+				q(26888, {	-- Nightmare of the Deeps (H) [CATA]
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
 					["races"] = HORDE_ONLY,
@@ -322,7 +322,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
 				}),
-				q(26899, {	-- The Enemy of My Enemy [Horde] [CATA]
+				q(26899, {	-- The Enemy of My Enemy (H) [CATA]
 					["qg"] = 44387,	-- Flaming Eradicator
 					["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
 					["races"] = HORDE_ONLY,
@@ -346,7 +346,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				q(34672, {	-- The Rise of Aku'mai [Alliance]
+				q(34672, {	-- The Rise of Aku'mai (A)
 					["qg"] = 75606,	-- Sentinel Aluwyn
 					["timeline"] = { "added 6.0.1.18322" },
 					["races"] = ALLIANCE_ONLY,
@@ -364,7 +364,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				q(34673, {	-- The Rise of Aku'mai [Horde]
+				q(34673, {	-- The Rise of Aku'mai (H)
 					["qg"] = 74409,	-- Zeya
 					["timeline"] = { "added 6.0.1.18322" },
 					["races"] = HORDE_ONLY,

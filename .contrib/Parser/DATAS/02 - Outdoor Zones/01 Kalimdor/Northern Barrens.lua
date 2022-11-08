@@ -1501,6 +1501,12 @@ root("Zones", m(KALIMDOR, {
 	}),
 }));
 
+root("HiddenQuestTriggers", m(KALIMDOR, {
+	m(NORTHERN_BARRENS, {
+		q(26879),	-- Disciples of Naralex (compelted with 26878)
+	}),
+}));
+
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(29091),	-- Freedom Movement

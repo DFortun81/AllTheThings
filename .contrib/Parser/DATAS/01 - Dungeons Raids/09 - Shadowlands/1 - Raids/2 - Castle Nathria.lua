@@ -2,6 +2,18 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+local MYTHIC = 92;
+local HEROIC = 91;
+local NORMAL = 89;
+local LFR = 90;
+-- Creates a 'Fated' Version of the specified Exact ItemID, which has the given ModID in game
+local function FatedItem(modItemID, modID)
+	local item = i(math.floor(modItemID));
+	item.modID = modID;
+	item.sym = {{"select","itemID",modItemID}};	-- Base Version
+	return item;
+end
+
 root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	inst(1190, {	-- Castle Nathria
 		["isRaid"] = true,
@@ -423,6 +435,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
 						i(183892),	-- Mystic Anima Spherule
+						FatedItem(183892.04, LFR),	-- Mystic Anima Spherule (Fated)
 						i(183040),	-- Charm of Eternal Winter
 						i(182988),	-- Master Huntsman's Bandolier
 						i(182996),	-- Grim Pursuant's Maille
@@ -438,6 +451,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
 						i(183891),	-- Venerated Anima Spherule
+						FatedItem(183891.04, LFR),	-- Venerated Anima Spherule (Fated)
 						i(183001),	-- Helm of Insatiable Appetite
 						i(182994),	-- Epaulettes of Overwhelming Force
 						i(183000),	-- Consumptive Chainmail Carapace
@@ -456,6 +470,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
 						i(183889),	-- Thaumaturgic Anima Bead
+						FatedItem(183889.04, LFR),	-- Thaumaturgic Anima Bead (Fated)
 						i(183021),	-- Confidant's Favored Cap
 						i(183026),	-- Gloves of Phantom Shadows
 						i(183015),	-- Binding of Warped Desires
@@ -475,6 +490,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
 						i(183893),	-- Abominable Anima Spherule
+						FatedItem(183893.04, LFR),	-- Abominable Anima Spherule (Fated)
 						i(183033),	-- Mantle of Manifest Sins
 						i(182986),	-- High Torturer's Smock
 						i(182977),	-- Bangles of Errant Pride
@@ -492,6 +508,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
 						i(183888),	-- Apogee Anima Bead
+						FatedItem(183888.04, LFR),	-- Apogee Anima Bead (Fated)
 						i(183960),	-- Portable Pocket Dimension (BAG!)
 						i(182987),	-- Breastplate of Cautious Calculation
 						i(183019),	-- Precisely Calibrated Chronometer
@@ -512,6 +529,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
 						i(183890),	-- Zenith Anima Spherule
+						FatedItem(183890.04, LFR),	-- Zenith Anima Spherule (Fated)
 						i(183039),	-- Noble's Birthstone Pendant
 						i(182989),	-- Corset of the Deft Duelist
 						i(183014),	-- Castellan's Chainlink Grips
@@ -564,9 +582,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						i(183895, {	-- Apogee Anima Bead
 							["modID"] = 83,
 						}),
+						FatedItem(183895.83, LFR),	-- Apogee Anima Bead (Fated)
 						i(183894, {	-- Thaumaturgic Anima Bead
 							["modID"] = 83,
 						}),
+						FatedItem(183894.83, LFR),	-- Thaumaturgic Anima Bead (Fated)
 						i(183029),	-- Wicked Flanker's Gorget
 						i(183032),	-- Crest of the Legionnaire General
 						i(182998),	-- Robes of the Cursed Commando
@@ -589,15 +609,19 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 83,
 						}),
+						FatedItem(183896.83, LFR),	-- Abominable Anima Spherule (Fated)
 						i(183897, {	-- Mystic Anima Spherule
 							["modID"] = 83,
 						}),
+						FatedItem(183897.83, LFR),	-- Mystic Anima Spherule (Fated)
 						i(183898, {	-- Venerated Anima Spherule
 							["modID"] = 83,
 						}),
+						FatedItem(183898.83, LFR),	-- Venerated Anima Spherule (Fated)
 						i(183899, {	-- Zenith Anima Spherule
 							["modID"] = 83,
 						}),
+						FatedItem(183899.83, LFR),	-- Zenith Anima Spherule (Fated)
 						i(182997),	-- Diadem of Imperious Desire
 						i(182980),	-- Sadist's Sinister Mask
 						i(183003),	-- Pauldrons of Fatal Finality
@@ -661,6 +685,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						}),
 						ach(14523),	-- Taking Care of Business
 						i(183892),	-- Mystic Anima Spherule
+						FatedItem(183892.03, NORMAL),	-- Mystic Anima Spherule (Fated)
 						i(183040),	-- Charm of Eternal Winter
 						i(182988),	-- Master Huntsman's Bandolier
 						i(182996),	-- Grim Pursuant's Maille
@@ -681,6 +706,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						}),
 						ach(14608),	-- Burning Bright
 						i(183893),	-- Abominable Anima Spherule
+						FatedItem(183893.03, NORMAL),	-- Abominable Anima Spherule (Fated)
 						i(183033),	-- Mantle of Manifest Sins
 						i(182986),	-- High Torturer's Smock
 						i(182977),	-- Bangles of Errant Pride
@@ -699,6 +725,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						}),
 						ach(14617),	-- Private Stock
 						i(183888),	-- Apogee Anima Bead
+						FatedItem(183888.03, NORMAL),	-- Apogee Anima Bead (Fated)
 						i(183960),	-- Portable Pocket Dimension (BAG!)
 						i(182987),	-- Breastplate of Cautious Calculation
 						i(183019),	-- Precisely Calibrated Chronometer
@@ -716,6 +743,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						}),
 						ach(14376),	-- Feed the Beast
 						i(183891),	-- Venerated Anima Spherule
+						FatedItem(183891.03, NORMAL),	-- Venerated Anima Spherule (Fated)
 						i(183001),	-- Helm of Insatiable Appetite
 						i(182994),	-- Epaulettes of Overwhelming Force
 						i(183000),	-- Consumptive Chainmail Carapace
@@ -735,6 +763,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						}),
 						ach(14524),	-- I Don't Know What I Expected
 						i(183889),	-- Thaumaturgic Anima Bead
+						FatedItem(183889.03, NORMAL),	-- Thaumaturgic Anima Bead (Fated)
 						i(183021),	-- Confidant's Favored Cap
 						i(183026),	-- Gloves of Phantom Shadows
 						i(183015),	-- Binding of Warped Desires
@@ -755,6 +784,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						}),
 						ach(14619),	-- Pour Decision Making
 						i(183890),	-- Zenith Anima Spherule
+						FatedItem(183890.03, NORMAL),	-- Zenith Anima Spherule (Fated)
 						i(183039),	-- Noble's Birthstone Pendant
 						i(182989),	-- Corset of the Deft Duelist
 						i(183014),	-- Castellan's Chainlink Grips
@@ -795,9 +825,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						i(183895, {	-- Apogee Anima Bead
 							["modID"] = 82,
 						}),
+						FatedItem(183895.82, NORMAL),	-- Apogee Anima Bead (Fated)
 						i(183894, {	-- Thaumaturgic Anima Bead
 							["modID"] = 82,
 						}),
+						FatedItem(183894.82, NORMAL),	-- Thaumaturgic Anima Bead (Fated)
 						i(183029),	-- Wicked Flanker's Gorget
 						i(183032),	-- Crest of the Legionnaire General
 						i(182998),	-- Robes of the Cursed Commando
@@ -821,15 +853,19 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 82,
 						}),
+						FatedItem(183896.82, NORMAL),	-- Abominable Anima Spherule (Fated)
 						i(183897, {	-- Mystic Anima Spherule
 							["modID"] = 82,
 						}),
+						FatedItem(183897.82, NORMAL),	-- Mystic Anima Spherule (Fated)
 						i(183898, {	-- Venerated Anima Spherule
 							["modID"] = 82,
 						}),
+						FatedItem(183898.82, NORMAL),	-- Venerated Anima Spherule (Fated)
 						i(183899, {	-- Zenith Anima Spherule
 							["modID"] = 82,
 						}),
+						FatedItem(183899.82, NORMAL),	-- Zenith Anima Spherule (Fated)
 						i(182997),	-- Diadem of Imperious Desire
 						i(182980),	-- Sadist's Sinister Mask
 						i(183003),	-- Pauldrons of Fatal Finality
@@ -901,6 +937,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						}),
 						ach(14523),	-- Taking Care of Business
 						i(183892),	-- Mystic Anima Spherule
+						FatedItem(183892.05, HEROIC),	-- Mystic Anima Spherule (Fated)
 						i(183040),	-- Charm of Eternal Winter
 						i(182988),	-- Master Huntsman's Bandolier
 						i(182996),	-- Grim Pursuant's Maille
@@ -924,6 +961,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						}),
 						ach(14608),	-- Burning Bright
 						i(183893),	-- Abominable Anima Spherule
+						FatedItem(183893.05, HEROIC),	-- Abominable Anima Spherule (Fated)
 						i(183033),	-- Mantle of Manifest Sins
 						i(182986),	-- High Torturer's Smock
 						i(182977),	-- Bangles of Errant Pride
@@ -945,6 +983,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						}),
 						ach(14617),	-- Private Stock
 						i(183888),	-- Apogee Anima Bead
+						FatedItem(183888.05, HEROIC),	-- Apogee Anima Bead (Fated)
 						i(183960),	-- Portable Pocket Dimension (BAG!)
 						i(182987),	-- Breastplate of Cautious Calculation
 						i(183019),	-- Precisely Calibrated Chronometer
@@ -965,6 +1004,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						}),
 						ach(14376),	-- Feed the Beast
 						i(183891),	-- Venerated Anima Spherule
+						FatedItem(183891.05, HEROIC),	-- Venerated Anima Spherule (Fated)
 						i(183001),	-- Helm of Insatiable Appetite
 						i(182994),	-- Epaulettes of Overwhelming Force
 						i(183000),	-- Consumptive Chainmail Carapace
@@ -987,6 +1027,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						}),
 						ach(14524),	-- I Don't Know What I Expected
 						i(183889),	-- Thaumaturgic Anima Bead
+						FatedItem(183889.05, HEROIC),	-- Thaumaturgic Anima Bead (Fated)
 						i(183021),	-- Confidant's Favored Cap
 						i(183026),	-- Gloves of Phantom Shadows
 						i(183015),	-- Binding of Warped Desires
@@ -1010,6 +1051,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						}),
 						ach(14619),	-- Pour Decision Making
 						i(183890),	-- Zenith Anima Spherule
+						FatedItem(183890.05, HEROIC),	-- Zenith Anima Spherule (Fated)
 						i(183039),	-- Noble's Birthstone Pendant
 						i(182989),	-- Corset of the Deft Duelist
 						i(183014),	-- Castellan's Chainlink Grips
@@ -1056,9 +1098,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						i(183895, {	-- Apogee Anima Bead
 							["modID"] = 84,
 						}),
+						FatedItem(183895.84, HEROIC),	-- Apogee Anima Bead (Fated)
 						i(183894, {	-- Thaumaturgic Anima Bead
 							["modID"] = 84,
 						}),
+						FatedItem(183894.84, HEROIC),	-- Thaumaturgic Anima Bead (Fated)
 						i(183029),	-- Wicked Flanker's Gorget
 						i(183032),	-- Crest of the Legionnaire General
 						i(182998),	-- Robes of the Cursed Commando
@@ -1089,15 +1133,19 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 84,
 						}),
+						FatedItem(183896.84, HEROIC),	-- Abominable Anima Spherule (Fated)
 						i(183897, {	-- Mystic Anima Spherule
 							["modID"] = 84,
 						}),
+						FatedItem(183897.84, HEROIC),	-- Mystic Anima Spherule (Fated)
 						i(183898, {	-- Venerated Anima Spherule
 							["modID"] = 84,
 						}),
+						FatedItem(183898.84, HEROIC),	-- Venerated Anima Spherule (Fated)
 						i(183899, {	-- Zenith Anima Spherule
 							["modID"] = 84,
 						}),
+						FatedItem(183899.84, HEROIC),	-- Zenith Anima Spherule (Fated)
 						i(182997),	-- Diadem of Imperious Desire
 						i(182980),	-- Sadist's Sinister Mask
 						i(183003),	-- Pauldrons of Fatal Finality
@@ -1183,6 +1231,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						ach(14357),	-- Mythic: Huntsman Altimor
 						ach(14523),	-- Taking Care of Business
 						i(183892),	-- Mystic Anima Spherule
+						FatedItem(183892.06, MYTHIC),	-- Mystic Anima Spherule (Fated)
 						i(183040),	-- Charm of Eternal Winter
 						i(182988),	-- Master Huntsman's Bandolier
 						i(182996),	-- Grim Pursuant's Maille
@@ -1207,6 +1256,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						ach(14360),	-- Mythic: Sun King's Salvation
 						ach(14608),	-- Burning Bright
 						i(183893),	-- Abominable Anima Spherule
+						FatedItem(183893.06, MYTHIC),	-- Abominable Anima Spherule (Fated)
 						i(183033),	-- Mantle of Manifest Sins
 						i(182986),	-- High Torturer's Smock
 						i(182977),	-- Bangles of Errant Pride
@@ -1229,6 +1279,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						ach(14359),	-- Mythic: Artificer Xy'mox
 						ach(14617),	-- Private Stock
 						i(183888),	-- Apogee Anima Bead
+						FatedItem(183888.06, MYTHIC),	-- Apogee Anima Bead (Fated)
 						i(183960),	-- Portable Pocket Dimension (BAG!)
 						i(182987),	-- Breastplate of Cautious Calculation
 						i(183019),	-- Precisely Calibrated Chronometer
@@ -1250,6 +1301,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						ach(14358),	-- Mythic: Hungering Destroyer
 						ach(14376),	-- Feed the Beast
 						i(183891),	-- Venerated Anima Spherule
+						FatedItem(183891.06, MYTHIC),	-- Venerated Anima Spherule (Fated)
 						i(183001),	-- Helm of Insatiable Appetite
 						i(182994),	-- Epaulettes of Overwhelming Force
 						i(183000),	-- Consumptive Chainmail Carapace
@@ -1273,6 +1325,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						ach(14361),	-- Mythic: Lady Inerva Darkvein
 						ach(14524),	-- I Don't Know What I Expected
 						i(183889),	-- Thaumaturgic Anima Bead
+						FatedItem(183889.06, MYTHIC),	-- Thaumaturgic Anima Bead (Fated)
 						i(183021),	-- Confidant's Favored Cap
 						i(183026),	-- Gloves of Phantom Shadows
 						i(183015),	-- Binding of Warped Desires
@@ -1297,6 +1350,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						ach(14362),	-- Mythic: The Council of Blood
 						ach(14619),	-- Pour Decision Making
 						i(183890),	-- Zenith Anima Spherule
+						FatedItem(183890.06, MYTHIC),	-- Zenith Anima Spherule (Fated)
 						i(183039),	-- Noble's Birthstone Pendant
 						i(182989),	-- Corset of the Deft Duelist
 						i(183014),	-- Castellan's Chainlink Grips
@@ -1345,9 +1399,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						i(183895, {	-- Apogee Anima Bead
 							["modID"] = 85,
 						}),
+						FatedItem(183895.85, MYTHIC),	-- Apogee Anima Bead (Fated)
 						i(183894, {	-- Thaumaturgic Anima Bead
 							["modID"] = 85,
 						}),
+						FatedItem(183894.85, MYTHIC),	-- Thaumaturgic Anima Bead (Fated)
 						i(183029),	-- Wicked Flanker's Gorget
 						i(183032),	-- Crest of the Legionnaire General
 						i(182998),	-- Robes of the Cursed Commando
@@ -1396,15 +1452,19 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 85,
 						}),
+						FatedItem(183896.85, MYTHIC),	-- Abominable Anima Spherule (Fated)
 						i(183897, {	-- Mystic Anima Spherule
 							["modID"] = 85,
 						}),
+						FatedItem(183897.85, MYTHIC),	-- Mystic Anima Spherule (Fated)
 						i(183898, {	-- Venerated Anima Spherule
 							["modID"] = 85,
 						}),
+						FatedItem(183898.85, MYTHIC),	-- Venerated Anima Spherule (Fated)
 						i(183899, {	-- Zenith Anima Spherule
 							["modID"] = 85,
 						}),
+						FatedItem(183899.85, MYTHIC),	-- Zenith Anima Spherule (Fated)
 						i(182997),	-- Diadem of Imperious Desire
 						i(182980),	-- Sadist's Sinister Mask
 						i(183003),	-- Pauldrons of Fatal Finality

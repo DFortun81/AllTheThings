@@ -994,9 +994,6 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSel
 			applyclassicphase(TBC_PHASE_THREE, i(32397)),	-- Waistguard of Shackled Souls
 		}),
 		category(936, {	-- Pants
-			-- #if AFTER CATA
-			applyclassicphase(TBC_PHASE_ONE, i(29964)),	-- Blackstorm Leggings
-			-- #endif
 			i(29498),	-- Blastguard Pants
 			i(29495),	-- Enchanted Clefthoof Leggings
 			i(29489),	-- Enchanted Felscale Leggings
@@ -1010,9 +1007,6 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSel
 			i(25662),	-- Scaled Draenic Pants
 			i(25670),	-- Thick Draenic Pants
 			i(25675),	-- Wild Draenish Leggings
-			-- #if AFTER CATA
-			applyclassicphase(TBC_PHASE_ONE, i(29970)),	-- Wildfeather Leggings
-			-- #endif
 		}),
 		category(937, {	-- Boots
 			i(29499),	-- Blastguard Boots

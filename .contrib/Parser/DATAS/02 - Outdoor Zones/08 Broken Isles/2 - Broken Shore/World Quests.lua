@@ -127,7 +127,9 @@ _.Zones =
 				q(45973),	-- Unchecked Power
 				q(45791),	-- War Materiel
 				q(45930),	-- We Didn't Start the Fire
-				q(45977),	-- Where There is a Whip...
+				q(45977, {	-- Where There is a Whip...
+					["sym"] = {{"select","npcID",118403}},	-- Syaith (special NPC for Inscription Recipe)
+				}),
 				q(44748),	-- Winged Terrors
 			})),
 		}),

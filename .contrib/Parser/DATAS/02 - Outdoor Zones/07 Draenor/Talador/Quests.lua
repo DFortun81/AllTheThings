@@ -1323,6 +1323,7 @@ _.Zones =
 				q(33920, {	-- The Heart of Auchindoun
 					["provider"] = { "n", 78519 },	-- Soulbinder Nyami
 					["coord"] = { 56.5, 67.1, TALADOR },
+					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						34711,	-- Due Cause to Celebrate (alliance, arcane sanctum)
 						34712,	-- Due Cause to Celebrate (horde, arcane sanctum)

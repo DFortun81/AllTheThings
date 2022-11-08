@@ -228,12 +228,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
-						q(31148, {	-- Novice Elreth [Monk?]
-							["timeline"] = { "created 5.0.1.15640" },
-							["classes"] = { MONK },
-							["races"] = { UNDEAD },
-							["isBreadcrumb"] = true,
-						}),
 						q(24966, {	-- Of Light and Shadows
 							["qg"] = 2123,	-- Dark Cleric Duesten
 							["sourceQuest"] = 3097,	-- Hallowed Scroll
@@ -2357,13 +2351,22 @@ root("Zones", m(EASTERN_KINGDOMS, {
 	}),
 }));
 
+root("HiddenQuestTriggers", m(EASTERN_KINGDOMS, {
+	m(TIRISFAL_GLADES, { m(DEATHKNELL, {
+		q(25033, {	-- The Red Messenger (when completing 24971)
+			["timeline"] = { "added 4.0.3.13277" },
+			["races"] = HORDE_ONLY,
+		}),
+		q(31148, {	-- Novice Elreth (when completing 28651)
+			["timeline"] = { "added 5.0.1.15640" },
+			["races"] = { UNDEAD },
+		}),
+	})}),
+}));
+
 -- #if AFTER CATA
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		q(25033, {	-- The Red Messenger
-			["timeline"] = { "created 4.0.3.13277" },
-			["races"] = HORDE_ONLY,
-		}),
 		-- #if AFTER BFA
 		-- TODO: These were implemented with BFA, might be coming out in 10.0? Keep an eye here!
 		q(57377),	-- A Hand Offered

@@ -2097,6 +2097,9 @@ root("Craftables", tier(CLASSIC_TIER, {
 			category(257, {	-- Pants
 				i(5963),	-- Barbaric Leggings
 				i(8202),	-- Big Voodoo Pants
+				-- #if AFTER CATA
+				applyclassicphase(TBC_PHASE_ONE, i(29964)),	-- Blackstorm Leggings
+				-- #endif
 				-- #if AFTER TBC
 				i(15072),	-- Chimeric Leggings
 				-- #endif
@@ -2137,6 +2140,9 @@ root("Craftables", tier(CLASSIC_TIER, {
 				i(8212, {	-- Wild Leather Leggings
 					["timeline"] = { "removed 4.0.3" },
 				}),
+				-- #if AFTER CATA
+				applyclassicphase(TBC_PHASE_ONE, i(29970)),	-- Wildfeather Leggings
+				-- #endif
 			}),
 			category(258, {	-- Boots
 				applyclassicphase(PHASE_FIVE_CATCH_UP, i(22760)),	-- Bramblewood Boots

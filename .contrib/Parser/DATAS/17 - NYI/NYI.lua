@@ -46,7 +46,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(10149),	-- Mission: End All, Be All [Alliance]
 				q(10841),	-- BETA The Vengeful Harbringer
 				-- 4.0.3
-				q(26879),	-- Disciples of Naralex
 				-- 5.0.1
 				q(30549),	-- [DNT] Rearm, Reuse, Recycle TRACKER
 				q(30982),	-- Animal Control
