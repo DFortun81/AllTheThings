@@ -1503,7 +1503,7 @@ root("Zones", m(KALIMDOR, {
 
 root("HiddenQuestTriggers", m(KALIMDOR, {
 	m(NORTHERN_BARRENS, {
-		q(26879),	-- Disciples of Naralex (compelted with 26878)
+		q(26879),	-- Disciples of Naralex (completed with 26878)
 	}),
 }));
 

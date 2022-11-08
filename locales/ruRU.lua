@@ -423,7 +423,6 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вам нравится видеть в подсказке оригинальный источник среди списка Общих Обликов.";
 		L.ONLY_RELEVANT_CHECKBOX = "Только Уместные";
 		L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть только те общие облики, которые Ваш персонаж может открыть.\n\nПримечание: Мы рекомендуем оставить эту опцию выключенной, поскольку знание требований для разблокирования может быть полезным для понимания, почему предмет считается Не Собранным.";
-		L.PROFESSION_CHECKBOX = "Профессии";
 		L.PROFESSION_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке требуемые профессии.";
 		L.LEVELREQ_CHECKBOX = "Уровни";
 		L.LEVELREQ_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке требования к уровню.";
@@ -526,7 +525,6 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.ADD_LINKED_CHARACTER_ACCOUNT = "Прикрепить Персонажа / Аккаунт";
 		L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Нажмите, чтобы прикрепить персонажа или учётную запись к Вашей учётной записи.";
 		L.ADD_LINKED_POPUP = "Пожалуйста, введите имя персонажа или учётную запись BNET для прикрепления.";
-		L.CHARACTERS = "Персонажи";
 		L.SYNC_CHARACTERS_TOOLTIP = "Здесь отображаются все персонажи на Вашей учётной записи.";
 		L.NO_CHARACTERS_FOUND = "Персонажей не найдено.";
 		L.LINKED_ACCOUNTS = "Прикреплённые Аккаунты";
@@ -664,8 +662,8 @@ for key,value in pairs({
 		[-41] = "Тайник Безумия",
 	-- World Events
 		[-53] = "Огненный Солнцеворот",							-- Midsummer Fire Festival
-		[-55] = "День пирата",
-		[-59] = "День мертвых",
+		[-55] = "День пирата",									-- Pirates' Day
+		[-59] = "День мертвых",									-- Day of the Dead
 		[-62] = "Рыбомания Тернистой долины",					-- Stranglethorn Fishing Extravaganza
 	-- Zul'Aman
 		[-78] = "Временное Событие",

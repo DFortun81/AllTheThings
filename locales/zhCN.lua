@@ -421,7 +421,6 @@ local L = app.L;
 		L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "如果你真的喜欢在鼠标提示中的共享外观列表中看到原始来源信息，请启用此选项。";
 		L.ONLY_RELEVANT_CHECKBOX = "仅相关";
 		L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "如果你只想看到你的角色可以解锁的共享外观，请启用此选项。\n\n注意：我们建议你保持这个关闭，因为了解一个物品的解锁要求可以帮助识别为什么一个物品没有被收藏。";
-		L.PROFESSION_CHECKBOX = "专业";
 		L.PROFESSION_CHECKBOX_TOOLTIP = "如果您想在鼠标提示中查看专业要求，请启用此选项。";
 		L.LEVELREQ_CHECKBOX = "等级";
 		L.LEVELREQ_CHECKBOX_TOOLTIP = "如果您想在鼠标提示中查看等级要求，请启用此选项。";
@@ -524,7 +523,6 @@ local L = app.L;
 		L.ADD_LINKED_CHARACTER_ACCOUNT = "添加关联角色/帐号";
 		L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "单击此处将角色或帐号链接到您的帐号。";
 		L.ADD_LINKED_POPUP = "请输入要链接的角色或暴雪战网帐号的名称。";
-		L.CHARACTERS = "角色";
 		L.SYNC_CHARACTERS_TOOLTIP = "这会显示您帐号中的所有角色。";
 		L.NO_CHARACTERS_FOUND = "未找到角色。";
 		L.LINKED_ACCOUNTS = "链接帐号";
@@ -689,8 +687,8 @@ for key,value in pairs({
 	-- World Events
 		[-53] = "仲夏火焰节",											-- Midsummer Fire Festival
 		[-55] = "海盗日",												-- Pirates' Day
-		[-59] = "亡灵节",												-- Day of the Dead
-		[-62] = "荆棘谷钓鱼大赛",									-- Stranglethorn Fishing Extravaganza
+		[-59] = "悼念日",												-- Day of the Dead
+		[-62] = "荆棘谷钓鱼大赛",											-- Stranglethorn Fishing Extravaganza
 	-- Zul'Aman
 		[-78] = "限时事件",												-- Timed Event
 		[-79] = "一箱",												-- First Chest
