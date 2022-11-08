@@ -528,10 +528,16 @@ root("Zones", {
 					}),
 					q(13424, {	-- Back to the Pit
 						["qg"] = 29796,	-- Gretta the Arbiter
+						["sourceQuest"] = 13061,	-- Into the Pit
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["isDaily"] = true,
-						["sourceQuest"] = 13061,	-- Into the Pit
 						["groups"] = {
+							objective(1, {	-- 0/6 Hyldsmeet Warbear slain
+								["providers"] = {
+									{ "i", 42499 },	-- Reins of the Warbear Matriarch
+									{ "n", 30174 },	-- Hyldsmeet Warbear
+								},
+							}),
 							i(44751),	-- Hyldnir Spoils
 						},
 					}),
@@ -844,10 +850,16 @@ root("Zones", {
 					}),
 					q(13422, {	-- Maintaining Discipline
 						["qg"] = 29796,	-- Gretta the Arbiter
+						["sourceQuest"] = 12906,	-- Discipline
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["isDaily"] = true,
-						["sourceQuest"] = 12906,	-- Discipline
 						["groups"] = {
+							objective(1, {	-- 0/6 Exhausted Vrykul disciplined
+								["providers"] = {
+									{ "i", 42837 },	-- Disciplining Rod
+									{ "n", 30146 },	-- Exhausted Vrykul
+								},
+							}),
 							i(44751),	-- Hyldnir Spoils
 						},
 					}),

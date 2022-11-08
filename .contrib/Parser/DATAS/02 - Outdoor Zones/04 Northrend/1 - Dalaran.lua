@@ -3783,6 +3783,11 @@ root("Zones", {
 							["requireSkill"] = FISHING,
 						}),
 					}),
+					prof(COOKING, {
+						i(43100, {	-- Infused Mushroom
+							["provider"] = { "o", 192818 },	-- Infused Mushroom
+						}),
+					}),
 					prof(FISHING, {
 						i(45903),	-- Corroded Jewelry
 						i(43698),	-- Giant Sewer Rat
