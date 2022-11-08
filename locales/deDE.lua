@@ -630,7 +630,6 @@ for key,value in pairs({
 		--TODO: ["Emissary Quests"] = "Emissary",
 		--TODO: [TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
 		["WoW Geburtstag"] = "Geburtstag",
-		["Pakt:"] = "Pakt:",
 })
 do a[key] = value; end
 
@@ -666,21 +665,21 @@ for key,value in pairs({
 		--TODO: [-12] = DUNGEON_FLOOR_DIREMAUL5.." [East - Demons]",-- Warpwood Quarter [East - Demon]
 		--TODO: [-13] = DUNGEON_FLOOR_DIREMAUL1.." [North - Ogres]",-- Gordok Commons [North - Ogres]
 		--TODO: [-14] = DUNGEON_FLOOR_DIREMAUL2.." [West - Elves]",	-- Capital Gardens [West - Elves]
-		[-15] = "Erkundung",								-- Exploration
-		[-19] = "Drachen des Alptraums",						-- Dragons of Nightmare
+		[-15] = "Erkundung",										-- Exploration
+		[-19] = "Drachen des Alptraums",							-- Dragons of Nightmare
 		--TODO: [-20] = "Common Vendor Items",						-- Common Vendor Items
 		--TODO: [-21] = "Captains",									-- Captains
-		[-22] = "Rätsel",									-- Secrets
+		[-22] = "Rätsel",											-- Secrets
 		--TODO: [-23] = "Common Dungeon Drop",						-- WoD Common Dungeon Drop
 		--TODO: [-26] = "Drops",									-- Drops
 		--TODO: [-27] = "Lower",									-- Lower (Blackrock Spire)
 		--TODO: [-28] = "Upper",									-- Upper (Blackrock Spire)
 		--TODO: [-41] = "Cache of Madness",
 	-- World Events
-		[-53] = "Sonnenwendfest",					-- Midsummer Fire Festival
-		[-55] = "Piratentag",
-		[-59] = "Tag der Toten",
-		[-62] = "Anglerwettbewerb im Schlingendorntal",		-- Stranglethorn Fishing Extravaganza
+		[-53] = "Sonnenwendfest",									-- Midsummer Fire Festival
+		[-55] = "Piratentag",										-- Pirates' Day
+		[-59] = "Tag der Toten",									-- Day of the Dead
+		[-62] = "Anglerwettbewerb im Schlingendorntal",				-- Stranglethorn Fishing Extravaganza
 	-- Zul'Aman
 		--TODO: [-78] = "Timed Event",
 		--TODO: [-79] = "First Chest",
@@ -693,7 +692,7 @@ for key,value in pairs({
 		--TODO: [-87] = "Armory",
 		--TODO: [-88] = "Cathedral",
 	-- Garrisons
-		[-99] = "Gebäude",
+		[-99] = "Gebäude",											-- Buildings
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
 		--TODO: [-130] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137),	-- Duskwood Active
 		--TODO: [-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),	-- The Hinterlands Active
@@ -711,12 +710,12 @@ for key,value in pairs({
 		--TODO: [-211] = NEW.." "..CHARACTER,						-- New Character
 		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
 	-- Fishing
-		[-217] = "Köder",									-- Lures (for Fishing)
+		[-217] = "Köder",											-- Lures (for Fishing)
 		--TODO: [-218] = "Coastal",									-- Coastal (for Fishing)
 	--TODO: [-219] = "Sourceless",									-- Sourceless
 	-- PvP
-		[-242] = "Ungewertet",									-- Unrated
-		[-243] = "Kopfgeld",									-- Bounty
+		[-242] = "Ungewertet",										-- Unrated
+		[-243] = "Kopfgeld",										-- Bounty
 	-- Allied Races
 		[-254] = "Verbündete Völker & Traditionsrüstung",			-- Allied Races & Heritage
 	-- First Questline Draenor
@@ -726,7 +725,7 @@ for key,value in pairs({
 	-- Legendaries
 		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
 	-- Operation: Mechagon
-		[-379] = "Schrottplatz",								-- Junkyard
+		[-379] = "Schrottplatz",									-- Junkyard
 	-- Icecrown Citadel
 		--TODO: [-393] = "Storming the Citadel",					-- Storming the Citadel
 		--TODO: [-394] = "The Plagueworks",							-- The Plagueworks
@@ -745,7 +744,7 @@ for key,value in pairs({
 	-- Misc
 		--TODO: [-493] = "Broken Mission Loot",						-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
-		[-519] = "Weltereignisse",							-- World Events
+		[-519] = "Weltereignisse",									-- World Events
 		--TODO: [-520] = "Expansion Pre-Launch",					-- Expansion Pre-Launch
 		--TODO: [-522] = "Zalazane's Fall",												-- Zalazane's Fall
 		--TODO: [-523] = "Elemental Unrest",						-- Elemental Unrest
@@ -756,7 +755,7 @@ for key,value in pairs({
 		--TODO: [-533] = "Hearthstone",								-- Hearthstone
 		--TODO: [-534] = "Collector's Edition",						-- Collector's Edition
 		[-536] = "Hearthstone Söldner",								-- Hearthstone Mercenaries
-		[-537] = "20. Geburtstag von Diablo",					-- Diablo 20th Anniversary
+		[-537] = "20. Geburtstag von Diablo",						-- Diablo 20th Anniversary
 		--TODO: [-538] = "The Ahn'Qiraj War Effort",				-- The Ahn'Qiraj War Effort
 		[-539] = "Das Szepter der Sandstürme",						-- The Scepter of the Shifting Sands
 		--TODO: [-540] = "The Scourge Invasion",					-- The Scourge Invasion
@@ -798,7 +797,7 @@ for key,value in pairs({
 			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
 			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
 	-- Pets
-		[-795] = "Haustierkampf Instanzen",						-- Pet Battle Dungeons
+		[-795] = "Haustierkampf Instanzen",							-- Pet Battle Dungeons
 	-- Secret Header
 		[-806] = "Zeitvergoldung",									-- Waist of Time
 	-- Chests
@@ -852,7 +851,7 @@ for key,value in pairs({
 		[-1010] = "Gladiator Alternative",							-- TODO: Gladiator Alternative
 		[-1011] = "Elite Alternative",								-- TODO: Elite Alternative
 	-- Temp
-		[-1098] = "Nebenquests",							-- Side Quests
+		[-1098] = "Nebenquests",									-- Side Quests
 	-- Dragonflight
 		--TODO: [-1100] = "Dragon Customization",					-- Dragon Customization
 		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
