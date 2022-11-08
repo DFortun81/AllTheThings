@@ -144,7 +144,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										},
 									}),
 									n(-970, {	-- Set C
-										-- ["description"] = "Wowhead: |cffffffffGroup #|r",
+										["description"] = "Wowhead: |cffffffffGroup 1|r",
 										["g"] = {
 											n(-1433957, {	-- Broken Mirror C-1
 												["description"] = "Not up on the ramparts, but at the bottom level inside a crumbled wall.  There is an elite spider in the room.",
@@ -187,7 +187,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										},
 									}),
 									n(-971, {	-- Set D
-										-- ["description"] = "Wowhead: |cffffffffGroup #|r",
+										["description"] = "Wowhead: |cffffffffGroup 4|r",
 										["g"] = {
 											n(-1433960, {	-- Broken Mirror D-1
 												["questID"] = 59236,
