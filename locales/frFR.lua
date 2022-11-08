@@ -721,7 +721,7 @@ for key,value in pairs({
 	-- Legendaries
 		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
 	-- Operation: Mechagon
-		--TODO: [-379] = "Junkyard",								-- Junkyard
+		[-379] = "La casse",										-- Junkyard
 	-- Icecrown Citadel
 		[-393] = "La prise de la citadelle",						-- Storming the Citadel
 		[-394] = "La Pesterie",										-- The Plagueworks
