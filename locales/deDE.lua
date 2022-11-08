@@ -121,7 +121,7 @@ local L = app.L;
 	--TODO: L.OPEN_AUTOMATICALLY_DESC = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs.";
 	--TODO: L.TWO_CLOAKS = "|cffFF0000These two cloaks have very limited confirmed drops if any and are presumed broken!|r";
 	--TODO: L.OGOM_THE_MANGLER_DESC = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assualt on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r";
-	--TODO: L.HOLYDAY_DESC = "A specific holiday may need to be active for you to complete the referenced Things within this section.";
+	L.HOLYDAY_DESC = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.";
 	L.DIFF_COMPLETED_1 = "Ihr habt alles von dieser Schwierigkeit erhalten. Wechselt zu ";
 	L.DIFF_COMPLETED_2 = " stattdessen.";
 	L.MINI_LIST = "Mini Liste";
@@ -160,11 +160,11 @@ local L = app.L;
 	--TODO: L.APPLY_SEARCH_FILTER = "Apply a Search Filter";
 	--TODO: L.APPLY_SEARCH_FILTER_DESC = "Please select a search filter option.";
 	L.SEARCH_EVERYTHING_BUTTON_OF_DOOM = "Klick diesen Knopf, um alles zu suchen... ALLES.";
-	--TODO: L.ACHIEVEMENT_DESC = "Click this button to select a random achievement based on what you're missing.";
-	--TODO: L.ITEM_DESC = "Click this button to select a random item based on what you're missing.";
-	--TODO: L.INSTANCE_DESC = "Click this button to select a random instance based on what you're missing.";
-	--TODO: L.DUNGEON_DESC = "Click this button to select a random dungeon based on what you're missing.";
-	--TODO: L.RAID_DESC = "Click this button to select a random raid based on what you're missing.";
+	L.ACHIEVEMENT_DESC = "Klick diesen Knopf um einen zufälligen Erfolg auszuwählen, der Euch noch fehlt.";
+	L.ITEM_DESC = "Klick diesen Knopf um einen zufälligen Gegenstand auszuwählen, der Euch noch fehlt.";
+	L.INSTANCE_DESC = "Klick diesen Knopf um eine zufällige Instanz auszuwählen, die Euch noch fehlt.";
+	L.DUNGEON_DESC = "Klick diesen Knopf um eine zufällige Instanz auszuwählen, die Euch noch fehlt.";
+	L.RAID_DESC = "Klick diesen Knopf um einen zufälligen Schlachtzug auszuwählen, der Euch noch fehlt.";
 	--TODO: L.MOUNT_DESC = "Click this button to select a random mount based on what you're missing.";
 	--TODO: L.PET_DESC = "Click this button to select a random pet based on what you're missing.";
 	--TODO: L.QUEST_DESC = "Click this button to select a random quest based on what you're missing.";
@@ -380,13 +380,13 @@ local L = app.L;
 		--TODO: L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Unobtainables tab
-		--TODO: L.UNOBTAINABLES_TAB = "Unobtainables";
-		--TODO: L.SEASONAL_LABEL = "Seasonal";
-		--TODO: L.SEASONAL_ALL = "|cffECBC21Show All Seasonal";
-		--TODO: L.UNOBTAINABLE_LABEL = "Unobtainable";
-		--TODO: L.UNOBTAINABLE_ALL = "|cffECBC21Show All Unobtainable";
-		--TODO: L.NO_CHANCE_ALL = "|cffECBC21Show All \"No Chance\"";
-		--TODO: L.HIGH_CHANCE_ALL = "|cffECBC21Show All \"High Chance\"";
+		L.UNOBTAINABLES_TAB = "Unerreichbares";
+		L.SEASONAL_LABEL = "Saisonal";
+		L.SEASONAL_ALL = "|cffECBC21Zeige Alle Saisons";
+		L.UNOBTAINABLE_LABEL = "Unerreichbar";
+		L.UNOBTAINABLE_ALL = "|cffECBC21Zeige alles Unerreichbares";
+		L.NO_CHANCE_ALL = "|cffECBC21Zeige Alle \"Keine Chance\"";
+		L.HIGH_CHANCE_ALL = "|cffECBC21Zeige Alle \"Hohe Chance\"";
 
 	-- Interface tab
 		--TODO: L.TOOLTIP_LABEL = "Tooltips";
@@ -400,9 +400,9 @@ local L = app.L;
 		--TODO: L.SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.";
 		--TODO: L.ICON_ONLY_CHECKBOX = "Icon Only";
 		--TODO: L.ICON_ONLY_CHECKBOX_TOOLTIP = "Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips...";
-		--TODO: L.COORDINATES_CHECKBOX = "Coordinates";
+		L.COORDINATES_CHECKBOX = "Koordinaten";
 		--TODO: L.COORDINATES_CHECKBOX_TOOLTIP = "Enable this option if you want to see coordinates in the tooltip when hovering over an entry in the mini list.";
-		--TODO: L.DESCRIPTIONS_CHECKBOX = "Descriptions";
+		L.DESCRIPTIONS_CHECKBOX = "Beschreibungen";
 		--TODO: L.DESCRIPTIONS_CHECKBOX_TOOLTIP = "Enable this option to show descriptions within the tooltip. This may include the descriptive text added by a Contributor that felt some additional information was necessary.\n\nYou might want to keep this turned on.";
 		L.LORE_CHECKBOX = "Geschichte";
 		--TODO: L.LORE_CHECKBOX_TOOLTIP = "Enable this option to show lore within the tooltip. This may include the descriptive text supplied by the Dungeon Journal or for flavor by a Contributor.";
@@ -410,7 +410,7 @@ local L = app.L;
 		--TODO: L.KNOWN_BY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of characters on all servers that know the Recipe in the tooltip.";
 		--TODO: L.COMPLETED_BY_CHECKBOX = "Completed By";
 		--TODO: L.COMPLETED_BY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of characters on all servers that have completed the Quest in the tooltip.";
-		--TODO: L.SHOW_MODELS_CHECKBOX = "Model Preview";
+		L.SHOW_MODELS_CHECKBOX = "Modell Vorschau";
 		--TODO: L.SHOW_MODELS_CHECKBOX_TOOLTIP = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.";
 		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Currency calculation";
 		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Enable this option to show the estimated amount of Items/Currency required to collect Things.\n\nFor Containers which do not reward all of their available content at once, the estimate will thus be lower than actually required.";
@@ -420,10 +420,10 @@ local L = app.L;
 		--TODO: L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.";
 		--TODO: L.ONLY_RELEVANT_CHECKBOX = "Only Relevant";
 		--TODO: L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
-		--TODO: L.PROFESSION_CHECKBOX = "Professions";
-		--TODO: L.PROFESSION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the profession requirements in the tooltip.";
-		--TODO: L.LEVELREQ_CHECKBOX = "Levels";
-		--TODO: L.LEVELREQ_CHECKBOX_TOOLTIP = "Enable this option if you want to see the level requirements in the tooltip.";
+		L.PROFESSION_CHECKBOX = "Berufe";
+		L.PROFESSION_CHECKBOX_TOOLTIP = "Aktiviere diese Option um die Berufsanforderungen im Tooltip zu sehen.";
+		L.LEVELREQ_CHECKBOX = "Stufe";
+		L.LEVELREQ_CHECKBOX_TOOLTIP = "Aktiviere diese Option um die Stufenanforderungen im Tooltip zu sehen.";
 		L.CLASSES_CHECKBOX = "Klassen";
 		--TODO: L.CLASSES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of class requirements in the tooltip.";
 		L.RACES_CHECKBOX = "Rassen";
@@ -440,11 +440,11 @@ local L = app.L;
 		--TODO: L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.";
 		--TODO: L.DROP_CHANCES_CHECKBOX = "Drop Chances";
 		--TODO: L.DROP_CHANCES_CHECKBOX_TOOLTIP = "Enable this option to calculate various drop chance information in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.";
-		--TODO: L.FOR_CREATURES_CHECKBOX = "For Creatures";
+		L.FOR_CREATURES_CHECKBOX = "Für Kreaturen";
 		--TODO: L.FOR_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Creatures.";
-		--TODO: L.FOR_THINGS_CHECKBOX = "For Things";
+		L.FOR_THINGS_CHECKBOX = "Für Dinge";
 		--TODO: L.FOR_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Things.";
-		--TODO: L.FOR_UNSORTED_CHECKBOX = "For Unsorted";
+		L.FOR_UNSORTED_CHECKBOX = "Für Unsortiert";
 		--TODO: L.FOR_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
 		--TODO: L.WITH_WRAPPING_CHECKBOX = "Allow Wrapping",
 		--TODO: L.WITH_WRAPPING_CHECKBOX_TOOLTIP = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.",
@@ -460,7 +460,7 @@ local L = app.L;
 		--TODO: L.MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
 		--TODO: L.MINI_LIST_SLIDER_LABEL = "Mini Lists Scale";
 		--TODO: L.MINI_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
-		--TODO: L.ADDITIONAL_LABEL = "Additional Information";
+		L.ADDITIONAL_LABEL = "Zusätzliche Information";
 
 	-- Features tab
 		--TODO: L.MINIMAP_LABEL = "Minimap Button";
@@ -486,31 +486,31 @@ local L = app.L;
 		--TODO: L.CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP = "Enable this option if you want to allow Items/Currencies which are used to purchase collectible Things to be considered collectible and show under dynamically-populated Quests.";
 		--TODO: L.AUCTION_TAB_CHECKBOX = "Show the Auction House Module Tab";
 		--TODO: L.AUCTION_TAB_CHECKBOX_TOOLTIP = "Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.";
-		--TODO: L.SORT_BY_PROGRESS_CHECKBOX = "Sort By Progress";
+		L.SORT_BY_PROGRESS_CHECKBOX = "Nach Fortschritt sortieren";
 		--TODO: L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' operation ("..SHIFT_KEY_TEXT.." + Right Click) to sort by the total progress of each group (instead of by Name)";
 		--TODO: L.QUEST_CHAIN_NESTED_CHECKBOX = "Show Nested Quest Chains";
 		--TODO: L.QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP = "Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.";
 		--TODO: L.CELEBRATIONS_LABEL = "Celebrations & Sound Effects";
 		--TODO: L.MASTER_AUDIO_CHECKBOX = "Use the Master Audio Channel";
 		--TODO: L.MASTER_AUDIO_CHECKBOX_TOOLTIP = "Enable this option if you want the celebrations and other ATT sound effects to play on the 'MASTER' audio channel.\n\nDefault: Yes\n\nA lot of people play with sound effects off, so this option allows the ATT sounds to bypass that should it be desired.";
-		--TODO: L.CELEBRATE_COLLECTED_CHECKBOX = "Collected Things Trigger a Celebration";
+		L.CELEBRATE_COLLECTED_CHECKBOX = "Gesammelte Dinge lösen eine Feierlichkeit aus";
 		--TODO: L.CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.";
-		--TODO: L.WARN_REMOVED_CHECKBOX = "Removed Things Trigger a Warning";
+		L.WARN_REMOVED_CHECKBOX = "Entfernte Dinge lösen eine Warnung aus";
 		--TODO: L.WARN_REMOVED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
-		--TODO: L.SCREENSHOT_COLLECTED_CHECKBOX = "Collected Things Trigger a Screenshot";
+		L.SCREENSHOT_COLLECTED_CHECKBOX = "Gesammelte Dinge lösen einen Screenshot aus";
 		--TODO: L.SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to take a screenshot for every Thing you collect.";
-		--TODO: L.CHAT_COMMANDS_LABEL = "Chat Commands";
+		L.CHAT_COMMANDS_LABEL = "Chat Befehle";
 		--TODO: L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
 
 	-- Profiles tab
-		--TODO: L.PROFILES_TAB = "Profiles";
-		--TODO: L.PROFILE = "Profile";
-		--TODO: L.PROFILE_INITIALIZE = "Initialize Profiles";
+		L.PROFILES_TAB = "Profile";
+		L.PROFILE = "Profil";
+		L.PROFILE_INITIALIZE = "Initialisiere Profile";
 		--TODO: L.PROFILE_INITIALIZE_TOOLTIP = "This will enable your Saved Variables for ATT to support and contain Profile data. Your current Settings and Window information will be copied into the '"..DEFAULT.."' Profile, which cannot be deleted, but may be modified and will be used as the initial Profile for all characters.\n\nPlease be sure to report any unusual behavior or bugs with Profiles to the ATT Discord!";
 		--TODO: L.PROFILE_INITIALIZE_CONFIRM = "Are you sure you want to enable Profile support?";
 		--TODO: L.PROFILE_NEW_TOOLTIP = "Create a blank Profile to be used by the current Character";
-		--TODO: L.PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
-		--TODO: L.PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
+		L.PROFILE_COPY_TOOLTIP = "Kopieren des ausgewählten Profils in das aktuell ausgewählte Profil";
+		L.PROFILE_DELETE_TOOLTIP = "Lösche das ausgewählte Profil";
 		--TODO: L.PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.."-Clicked to Switch to it";
 
 	-- Sync tab
@@ -523,17 +523,17 @@ local L = app.L;
 		--TODO: L.ADD_LINKED_CHARACTER_ACCOUNT = "Add Linked Character / Account";
 		--TODO: L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Click here to link a character or account to your account.";
 		--TODO: L.ADD_LINKED_POPUP = "Please type the name of the character or BNET account to link to.";
-		--TODO: L.CHARACTERS = "Characters";
-		--TODO: L.SYNC_CHARACTERS_TOOLTIP = "This shows all of the characters on your account.";
-		--TODO: L.NO_CHARACTERS_FOUND = "No characters found.";
-		--TODO: L.LINKED_ACCOUNTS = "Linked Accounts";
+		L.CHARACTERS = "Charaktere";
+		L.SYNC_CHARACTERS_TOOLTIP = "Dies zeigt alle Charaktere auf diesem Account.";
+		L.NO_CHARACTERS_FOUND = "Keine Charaktere gefunden.";
+		L.LINKED_ACCOUNTS = "Verknüpfte Accounts";
 		--TODO: L.LINKED_ACCOUNTS_TOOLTIP = "This shows all of the linked accounts you have defined so far.";
-		--TODO: L.NO_LINKED_ACCOUNTS = "No linked accounts found.";
+		L.NO_LINKED_ACCOUNTS = "Keine verknüpften Accounts gefunden.";
 		--TODO: L.LINKED_ACCOUNT_TOOLTIP = "This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.";
 		--TODO: L.DELETE_LINKED_CHARACTER = "Right Click to Delete this Linked Character";
 		--TODO: L.DELETE_LINKED_ACCOUNT = "Right Click to Delete this Linked Account";
-		--TODO: L.DELETE_CHARACTER = "Right Click to Delete this Character";
-		--TODO: L.CONFIRM_DELETE = "\n \nAre you sure you want to delete this?";
+		L.DELETE_CHARACTER = "Rechtsklick um diesen Charakter zu löschen";
+		L.CONFIRM_DELETE = "\n \nBist Du sicher, dass Du dies löschen möchtest?";
 
 	-- About tab
 		L.ABOUT = "Über";
@@ -542,11 +542,11 @@ local L = app.L;
 		--TODO: L.ABOUT_3 = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
 
 	-- Binding Localizations
-		--TODO: L.TOGGLE_ACCOUNT_MODE = "Toggle Account Mode";
-		--TODO: L.TOGGLE_COMPLETIONIST_MODE = "Toggle Completionist Mode";
-		--TODO: L.TOGGLE_DEBUG_MODE = "Toggle Debug Mode";
-		--TODO: L.TOGGLE_FACTION_MODE = "Toggle Faction Mode";
-		--TODO: L.PREFERENCES = "Preferences";
+		L.TOGGLE_ACCOUNT_MODE = "Account Modus ein/aus";
+		L.TOGGLE_COMPLETIONIST_MODE = "Completionist Modus ein/aus";
+		L.TOGGLE_DEBUG_MODE = "Debug Modus ein/aus";
+		L.TOGGLE_FACTION_MODE = "Fraktions Modus ein/aus";
+		L.PREFERENCES = "Präferenzen";
 		--TODO: L.TOGGLE_COMPLETEDTHINGS = "Toggle Completed Things (Both)";
 		--TODO: L.TOGGLE_COMPLETEDGROUPS = "Toggle Completed Groups";
 		--TODO: L.TOGGLE_COLLECTEDTHINGS = "Toggle Collected Things";
@@ -562,13 +562,13 @@ local L = app.L;
 		--TODO: L.REROLL_RANDOM = "Reroll the Random Selection";
 
 	-- Event Text
-		--TODO: L.ITEM_ID_ADDED = "%s (%d) was added to your collection.";
-		--TODO: L.ITEM_ID_ADDED_RANK = "%s (%d) [Rank %d] was added to your collection.";
-		--TODO: L.ITEM_ID_ADDED_MISSING = "%s (%d) was added to your collection. Not found in the database. Please report to the ATT Discord!";
-		--TODO: L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] were added to your collection.";
-		--TODO: L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] were added to your collection. Not found in the database. Please report to the ATT Discord!";
-		--TODO: L.ITEM_ID_REMOVED = "%s (%d) was removed from your collection.";
-		--TODO: L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] were removed from your collection.";
+		L.ITEM_ID_ADDED = "%s (%d) wurde deiner Sammlung hinzugefügt.";
+		L.ITEM_ID_ADDED_RANK = "%s (%d) [Rank %d] wurde deiner Sammlung hinzugefügt.";
+		L.ITEM_ID_ADDED_MISSING = "%s (%d) wurde deiner Sammlung hinzugefügt. Nicht in der Datenbank gefunden. Bitte melde es an das ATT Discord!";
+		L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] wurden deiner Sammlung hinzugefügt.";
+		L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] wurde deiner Sammlung hinzugefügt. Nicht in der Datenbank gefunden. Bitte melde es an das ATT Discord!";
+		L.ITEM_ID_REMOVED = "%s (%d) wurde aus deiner Sammlung entfernt.";
+		L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] wurden aus deiner Sammlung entfernt.";
 
 	-- Tooltip Text
 		--TODO: L.DROP_RATE = "Drop Rate";
@@ -605,17 +605,17 @@ for key,value in pairs({
 		--TODO: ["Expansion Pre"] = "Pre",
 		--TODO: ["Expansion Features"] = "EF",
 		[GROUP_FINDER] = "D&S",	-- ["Dungeons & Raids"] = "D&R"
-		--TODO: ["The Burning Crusade"] = "BC",
-		--TODO: ["Burning Crusade"] = "BC",
-		--TODO: ["The BC"] = "BC",
-		--TODO: ["Wrath of the Lich King"] = "WotLK",
-		--TODO: ["Cataclysm"] = "Cata",
-		--TODO: ["Mists of Pandaria"] = "MoP",
-		--TODO: ["Warlords of Draenor"] = "WoD",
-		--TODO: ["Battle for Azeroth"] = "BFA",
-		--TODO: ["The Shadowlands"] = "SL",
-		--TODO: ["Shadowlands"] = "SL",
-		--TODO: ["Player vs Player"] = "PvP",
+		["The Burning Crusade"] = "TBC",
+		["Burning Crusade"] = "TBC",
+		["The BC"] = "TBC",
+		["Wrath of the Lich King"] = "WotLK",
+		["Cataclysm"] = "Cata",
+		["Mists of Pandaria"] = "MoP",
+		["Warlords of Draenor"] = "WoD",
+		["Battle for Azeroth"] = "BFA",
+		["The Shadowlands"] = "SL",
+		["Shadowlands"] = "SL",
+		["Spieler gegen Spieler"] = "PvP",
 		["Schlachtzugbrowser"] = "LFR",
 		["Schlachtzugbrowser"] = "LFR",
 		["Normal"] = "N",
@@ -629,8 +629,8 @@ for key,value in pairs({
 		["25 Spieler (Heroisch)"] = "25M (H)",
 		--TODO: ["Emissary Quests"] = "Emissary",
 		--TODO: [TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
-		["WoW Geburtstag"] = "Anniversary",
-		["Pakt:"] = "Cov:",
+		["WoW Geburtstag"] = "Geburtstag",
+		["Pakt:"] = "Pakt:",
 })
 do a[key] = value; end
 
@@ -649,7 +649,7 @@ for key,value in pairs({
 	--TODO: [59] = "Class Books";									-- Class Books (Classic Spells, Ashran Books, etc)
 
 	-- "Non-Equipment Types"
-		--TODO: [103] = "Illusions";								-- Illusions
+		[103] = "Waffenverzauberungen";								-- Illusions
 		--TODO: [107] = "Vignettes";								-- Vignettes
 
 	--TODO: [999] = "Event Item";									-- Event Item
@@ -666,21 +666,21 @@ for key,value in pairs({
 		--TODO: [-12] = DUNGEON_FLOOR_DIREMAUL5.." [East - Demons]",-- Warpwood Quarter [East - Demon]
 		--TODO: [-13] = DUNGEON_FLOOR_DIREMAUL1.." [North - Ogres]",-- Gordok Commons [North - Ogres]
 		--TODO: [-14] = DUNGEON_FLOOR_DIREMAUL2.." [West - Elves]",	-- Capital Gardens [West - Elves]
-		--TODO: [-15] = "Exploration",								-- Exploration
-		--TODO: [-19] = "Dragons of Nightmare",						-- Dragons of Nightmare
+		[-15] = "Erkundung",								-- Exploration
+		[-19] = "Drachen des Alptraums",						-- Dragons of Nightmare
 		--TODO: [-20] = "Common Vendor Items",						-- Common Vendor Items
 		--TODO: [-21] = "Captains",									-- Captains
-		--TODO: [-22] = "Secrets",									-- Secrets
+		[-22] = "Rätsel",									-- Secrets
 		--TODO: [-23] = "Common Dungeon Drop",						-- WoD Common Dungeon Drop
 		--TODO: [-26] = "Drops",									-- Drops
 		--TODO: [-27] = "Lower",									-- Lower (Blackrock Spire)
 		--TODO: [-28] = "Upper",									-- Upper (Blackrock Spire)
 		--TODO: [-41] = "Cache of Madness",
 	-- World Events
-		--TODO: [-53] = "Midsummer Fire Festival",					-- Midsummer Fire Festival
-		--TODO: [-55] = "Pirates' Day",
-		--TODO: [-59] = "Day of the Dead",
-		--TODO: [-62] = "Stranglethorn Fishing Extravaganza",		-- Stranglethorn Fishing Extravaganza
+		[-53] = "Sonnenwendfest",					-- Midsummer Fire Festival
+		[-55] = "Piratentag",
+		[-59] = "Tag der Toten",
+		[-62] = "Anglerwettbewerb im Schlingendorntal",		-- Stranglethorn Fishing Extravaganza
 	-- Zul'Aman
 		--TODO: [-78] = "Timed Event",
 		--TODO: [-79] = "First Chest",
@@ -693,7 +693,7 @@ for key,value in pairs({
 		--TODO: [-87] = "Armory",
 		--TODO: [-88] = "Cathedral",
 	-- Garrisons
-		--TODO: [-99] = "Buildings",
+		[-99] = "Gebäude",
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
 		--TODO: [-130] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137),	-- Duskwood Active
 		--TODO: [-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),	-- The Hinterlands Active
@@ -711,12 +711,12 @@ for key,value in pairs({
 		--TODO: [-211] = NEW.." "..CHARACTER,						-- New Character
 		--TODO: [-212] = GetSpellInfo(225652).." "..GetSpellInfo(168498),-- Treasure Chest
 	-- Fishing
-		--TODO: [-217] = "Lures",									-- Lures (for Fishing)
+		[-217] = "Köder",									-- Lures (for Fishing)
 		--TODO: [-218] = "Coastal",									-- Coastal (for Fishing)
 	--TODO: [-219] = "Sourceless",									-- Sourceless
 	-- PvP
-		--TODO: [-242] = "Unrated",									-- Unrated
-		--TODO: [-243] = "Bounty",									-- Bounty
+		[-242] = "Ungewertet",									-- Unrated
+		[-243] = "Kopfgeld",									-- Bounty
 	-- Allied Races
 		[-254] = "Verbündete Völker & Traditionsrüstung",			-- Allied Races & Heritage
 	-- First Questline Draenor
@@ -726,7 +726,7 @@ for key,value in pairs({
 	-- Legendaries
 		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
 	-- Operation: Mechagon
-		--TODO: [-379] = "Junkyard",								-- Junkyard
+		[-379] = "Schrottplatz",								-- Junkyard
 	-- Icecrown Citadel
 		--TODO: [-393] = "Storming the Citadel",					-- Storming the Citadel
 		--TODO: [-394] = "The Plagueworks",							-- The Plagueworks
@@ -745,7 +745,7 @@ for key,value in pairs({
 	-- Misc
 		--TODO: [-493] = "Broken Mission Loot",						-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
-		--TODO: [-519] = "World Events",							-- World Events
+		[-519] = "Weltereignisse",							-- World Events
 		--TODO: [-520] = "Expansion Pre-Launch",					-- Expansion Pre-Launch
 		--TODO: [-522] = "Zalazane's Fall",												-- Zalazane's Fall
 		--TODO: [-523] = "Elemental Unrest",						-- Elemental Unrest
@@ -756,7 +756,7 @@ for key,value in pairs({
 		--TODO: [-533] = "Hearthstone",								-- Hearthstone
 		--TODO: [-534] = "Collector's Edition",						-- Collector's Edition
 		[-536] = "Hearthstone Söldner",								-- Hearthstone Mercenaries
-		--TODO: [-537] = "Diablo 20th Anniversary",					-- Diablo 20th Anniversary
+		[-537] = "20. Geburtstag von Diablo",					-- Diablo 20th Anniversary
 		--TODO: [-538] = "The Ahn'Qiraj War Effort",				-- The Ahn'Qiraj War Effort
 		[-539] = "Das Szepter der Sandstürme",						-- The Scepter of the Shifting Sands
 		--TODO: [-540] = "The Scourge Invasion",					-- The Scourge Invasion
@@ -798,7 +798,7 @@ for key,value in pairs({
 			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
 			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
 	-- Pets
-		--TODO: [-795] = "Pet Battle Dungeons",						-- Pet Battle Dungeons
+		[-795] = "Haustierkampf Instanzen",						-- Pet Battle Dungeons
 	-- Secret Header
 		[-806] = "Zeitvergoldung",									-- Waist of Time
 	-- Chests
@@ -852,7 +852,7 @@ for key,value in pairs({
 		[-1010] = "Gladiator Alternative",							-- TODO: Gladiator Alternative
 		[-1011] = "Elite Alternative",								-- TODO: Elite Alternative
 	-- Temp
-		--TODO: [-1098] = "Side Quests",							-- Side Quests
+		[-1098] = "Nebenquests",							-- Side Quests
 	-- Dragonflight
 		--TODO: [-1100] = "Dragon Customization",					-- Dragon Customization
 		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
