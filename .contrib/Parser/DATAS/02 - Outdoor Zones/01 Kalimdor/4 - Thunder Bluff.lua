@@ -495,6 +495,15 @@ root("Zones", m(KALIMDOR, {
 					["races"] = { TAUREN },
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
+				q(27292, {	-- Return to Krog
+					["providers"] = {
+						{ "n", 4943 },	-- Mosarn
+					},
+					["sourceQuest"] = 27258,	-- The Black Shield
+					["coord"] = { 54.3, 80.3, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { "added 4.0.3.13277" },
+				}),
 				q(6362, {	-- Ride to Thunder Bluff
 					["providers"] = {
 						-- #if AFTER CATA
