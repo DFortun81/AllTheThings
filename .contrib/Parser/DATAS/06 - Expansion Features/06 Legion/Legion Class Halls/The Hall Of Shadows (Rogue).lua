@@ -106,6 +106,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								44034,	-- Another Worthy Blade
 								44375,	-- The Final Blade
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 							["coord"] = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
 						}),

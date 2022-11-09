@@ -8,6 +8,17 @@ _.ExpansionFeatures =
 		n(-10057, {	-- War Effort
 			n(-233, {	-- War Front: The Battle for Stromgarde
 				n(REWARDS, {
+					-- 1 SourceIDs: Weapons
+					-- 3 SourceIDs: Cloaks, Armor (3) (5) (6/23)
+					-- 2 VisualIDs: Armor (3/5) (6/23)
+					-- 3 VisualIDs: Cloaks (3) (5) (6/23)
+					-- Sources:
+					-- Normal Warfront Victory (3)
+					-- Honorbound Emissary Equipment Box (5)
+					-- Incursion Equipment Box (5)
+					-- Rares/Treasures (5)
+					-- Normal Quest (6)
+					-- Heroic Quest (23)
 					["description"] = "These are obtained by winning the warfront and can be awarded multiple times a week.",
 					["modID"] = 3,
 					["groups"] = {
