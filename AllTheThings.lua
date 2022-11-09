@@ -6445,6 +6445,7 @@ local function SearchForLink(link)
 		end
 		if id then id = tonumber(select(1, strsplit("|[", id)) or id); end
 		--print(string.gsub(string.gsub(link, "|c", "c"), "|h", "h"));
+		-- app.PrintDebug("SEARCH FOR FIELD",kind,id)
 		if kind == "itemid" or kind == "i" then
 			return SearchForField("itemID", id);
 		elseif kind == "sourceid" or kind == "s" then
@@ -11784,7 +11785,7 @@ local function default_link(t)
 		if not modID or modID < 1 then
 			modID = nil;
 		end
-		-- app.PrintDebug("Create default_link",itemLink,modID,bonusID)
+		-- app.PrintDebug("default_link",itemLink,modID,bonusID)
 		if bonusID and modID then
 			itemLink = sformat("item:%d:::::::::::%d:1:%d:", itemLink, modID, bonusID);
 		elseif bonusID then
