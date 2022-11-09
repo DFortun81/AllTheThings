@@ -4391,7 +4391,10 @@ root("Zones", {
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/5 Bloodtooth Frenzy
-								["provider"] = { "i", 45905 },	-- Bloodtooth Frenzy
+								["providers"] = {
+									{ "i", 45905 },	-- Bloodtooth Frenzy
+									{ "o", 194479 },	-- Pool of Blood
+								},
 							}),
 							i(46007),	-- Bag of Fishing Treasures
 						},
