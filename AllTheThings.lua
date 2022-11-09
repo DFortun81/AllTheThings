@@ -6418,18 +6418,18 @@ local function SearchForLink(link)
 				itemID = tonumber(itemID) or 0;
 				-- Don't use SourceID for artifact searches since they contain many SourceIDs
 				local sourceID = select(3, GetItemInfo(link)) ~= 6 and GetSourceID(link);
-				local exactItemID = GetGroupItemIDWithModID(nil, itemID, modID, (tonumber(bonusCount) or 0) > 0 and bonusID1);
-				local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
 				if sourceID then
 					-- Search for the Source ID. (an appearance)
 					_ = SearchForField("s", sourceID);
-					-- print("SEARCHING FOR ITEM LINK WITH S ", link, itemID, sourceID, _ and #_);
+					-- app.PrintDebug("SEARCHING FOR ITEM LINK WITH S", link, itemID, sourceID, _ and #_);
 				else
+					local exactItemID = GetGroupItemIDWithModID(nil, itemID, modID, (tonumber(bonusCount) or 0) > 0 and bonusID1);
+					local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
 					-- Search for the Item ID. (an item without an appearance)
 					_ = ((exactItemID ~= itemID) and SearchForField("itemID", exactItemID)) or
 						((modItemID ~= itemID) and SearchForField("itemID", modItemID)) or
 						SearchForField("itemID", itemID);
-					-- print("SEARCHING FOR ITEM LINK ", link, exactItemID, modItemID, itemID, _ and #_);
+					-- app.PrintDebug("SEARCHING FOR ITEM LINK", link, exactItemID, modItemID, itemID, _ and #_);
 				end
 				return _;
 			end
