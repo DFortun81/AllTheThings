@@ -1895,8 +1895,17 @@ root("HiddenQuestTriggers", {
 		q(46176),	-- The Archmage Accosted - completed with quest 44924
 		q(49059),	-- The Bones of Xibala - completed with quest 47257
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
+		q(27419, {	-- Army of the Black Dragon - completed with quest 1168
+			["provider"] = { "n", 4502 },	-- Tharg
+			["coord"] = { 37.3, 31.3, DUSTWALLOW_MARSH },
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				i(10702),	-- Enormous Ogre Boots
+				i(9706),	-- Tharg's Disk
+			},
+		}),
 	}),
-	
+
 	-------------------
 	--      MOP      --
 	-------------------

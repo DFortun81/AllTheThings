@@ -1714,14 +1714,5 @@ root("Zones", m(KALIMDOR, {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(27289),	-- Vimes's Report
-		q(27419, {	-- Army of the Black Dragon (Removed or never added in Cata? Cross-completes with its equivalent)
-			["provider"] = { "n", 4502 },	-- Tharg
-			["coord"] = { 37.3, 31.3, DUSTWALLOW_MARSH },
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				i(10702),	-- Enormous Ogre Boots
-				i(9706),	-- Tharg's Disk
-			},
-		}),
 	}),
 }));
