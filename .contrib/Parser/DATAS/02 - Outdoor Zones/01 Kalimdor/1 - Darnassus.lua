@@ -183,8 +183,11 @@ root("Zones", m(KALIMDOR, {
 				}),
 				-- #if AFTER CATA
 				q(6342, {	-- An Unexpected Gift [CATA+] / Flight to Auberdine
-					["qg"] = 7316,	-- Sister Aquinne
-					["sourceQuest"] = 6341,	-- To Darnassus
+					["providers"] = {
+						{ "n", 7316 },	-- Sister Aquinne
+						{ "i", 16262 },	-- Sister Aquinne's Note
+					},
+					["sourceQuest"] = 6341,	-- To Darnassus [CATA+] / The Bounty of Teldrassil
 					["coord"] = { 36.0, 53.4, DARNASSUS },
 					["races"] = { NIGHTELF },
 				}),
@@ -482,14 +485,15 @@ root("Zones", m(KALIMDOR, {
 						i(11887),	-- Cenarion Circle Cache
 					},
 				}),
-				q(6344, {	-- Nessa Shadowsong
+				-- #if BEFORE CATA
+				q(6344, {	-- Nessa Shadowsong / Reminders of Home [CATA+]
 					["qg"] = 4241,	-- Mydrannul
 					["coord"] = { 70.6, 45.3, DARNASSUS },
-					["timeline"] = { "removed 4.0.3" },
 					["races"] = { NIGHTELF },
 					["isBreadcrumb"] = true,
 					["lvl"] = 10,
 				}),
+				-- #endif
 				q(7672, {	-- Nightsaber Replacement
 					["qg"] = 4730,	-- Lelanai
 					-- #if AFTER CATA

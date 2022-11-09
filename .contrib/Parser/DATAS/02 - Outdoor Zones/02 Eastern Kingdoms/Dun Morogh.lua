@@ -2044,9 +2044,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(6064, {	-- Taming the Beast (1/3)
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
 					["sourceQuests"] = {
-						6074,	-- The Hunter's Path
-						6075,	-- The Hunter's Path
-						6076,	-- The Hunter's Path
+						6074,	-- The Hunter's Path [Ironforge]
+						6075,	-- The Hunter's Path [Dun Morogh]
+						6076,	-- The Hunter's Path [Stormwind City]
 					},
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
 					["timeline"] = { "removed 4.0.3" },
@@ -2109,7 +2109,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
-				q(6074, {	-- The Hunter's Path
+				q(6074, {	-- The Hunter's Path [Ironforge]
 					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>
 					["coord"] = { 70, 84.6, IRONFORGE },
 					["timeline"] = { "removed 4.0.3" },
@@ -2118,7 +2118,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 10,
 				}),
-				q(6075, {	-- The Hunter's Path
+				q(6075, {	-- The Hunter's Path [Dun Morogh]
 					["qg"] = 11807,	-- Tristane Shadowstone
 					["coord"] = { 30.6, 45.4, DUN_MOROGH },
 					["timeline"] = { "removed 4.0.3" },
@@ -2127,7 +2127,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 10,
 				}),
-				q(6076, {	-- The Hunter's Path
+				q(6076, {	-- The Hunter's Path [Stormwind City]
 					["qg"] = 5515,	-- Einris Brightspear <Hunter Trainer>
 					["coord"] = { 61.6, 15.4, STORMWIND_CITY },
 					["timeline"] = { "removed 4.0.3" },
