@@ -338,6 +338,7 @@ root("Zones", m(KALIMDOR, {
 					["maps"] = { FELWOOD },
 				}),
 				faction(589, {	-- Wintersaber Trainers
+					["icon"] = icon("ability_mount_pinktiger"),
 					-- #if ANYCLASSIC
 					["OnTooltip"] = OnTooltipForWintersaberTrainers,
 					-- #endif
