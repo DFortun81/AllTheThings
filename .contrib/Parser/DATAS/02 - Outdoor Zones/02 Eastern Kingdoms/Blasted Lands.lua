@@ -254,6 +254,22 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(28857, {	-- Blasted Lands: The Other Side of the World
+					["qg"] = 11118,	-- Innkeeper Vizzie
+					["altQuests"] = { 28673 },	-- Hero's Call: Blasted Lands!
+					["coord"] = { 59.8, 51.1, WINTERSPRING },
+					["timeline"] = { "added 4.0.3.13329" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(28858, {	-- Blasted Lands: The Other Side of the World
+					["qg"] = 11118,	-- Innkeeper Vizzie
+					["altQuests"] = { 28671 },	-- Warchief's Command: Blasted Lands!
+					["coord"] = { 59.8, 51.1, WINTERSPRING },
+					["timeline"] = { "added 4.0.3.13329" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(26160, {	-- Blood Ritual
 					["qg"] = 42298,	-- Kasim Sharim
 					["sourceQuest"] = 26159,	-- The First Step

@@ -504,6 +504,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Robe of Winter Night",
+					["timeline"] = { "removed 4.0.3", "added 8.1.5" },
 					["recipeID"] = 18436
 				},
 				{

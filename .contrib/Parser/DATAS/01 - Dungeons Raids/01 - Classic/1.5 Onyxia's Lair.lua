@@ -95,19 +95,9 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 14526,	-- Hastat the Ancient
 					["sourceQuest"] = 7633,	-- An Introduction
 					["coord"] = { 47, 24.48, FELWOOD },
+					["maps"] = { WINTERSPRING },
 					["classes"] = { HUNTER },
-					["crs"] = {
-						6109,	-- Azuregos
-						7435,	-- Cobalt Wyrmkin
-						7436,	-- Cobalt Scalebane
-						7437,	-- Cobalt Mageweaver
-						10196,	-- General Colbatann
-						10663,	-- Manaclaw
-						10664,	-- Scryer
-					},
-					["cost"] = {
-						{ "i", 18704, 1 },	-- Mature Blue Dragon Sinew
-					},
+					["cost"] = { { "i", 18704, 1 } },	-- Mature Blue Dragon Sinew
 					["lvl"] = lvlsquish(60, 30, 60),
 					["groups"] = {
 						i(18714),	-- Ancient Sinew Wrapped Lamina

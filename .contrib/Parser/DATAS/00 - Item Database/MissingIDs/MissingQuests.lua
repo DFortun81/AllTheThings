@@ -302,9 +302,6 @@ q(4783),	-- Components for the Enchanted Gold Bloodrobe,		TBC: Components for th
 q(4784),	-- Components for the Enchanted Gold Bloodrobe,		TBC: Components for the Enchanted Gold Bloodrobe,		CLASSIC: Components for the Enchanted Gold Bloodrobe
 q(4811),	-- The Red Crystal,		TBC: The Red Crystal,		CLASSIC: The Red Crystal
 q(4812),	-- As Water Cascades,		TBC: As Water Cascades,		CLASSIC: As Water Cascades
-q(4861),	-- Enraged Wildkin,		TBC: Enraged Wildkin,		CLASSIC: Enraged Wildkin
-q(4863),	-- Enraged Wildkin,		TBC: Enraged Wildkin,		CLASSIC: Enraged Wildkin
-q(4864),	-- Enraged Wildkin,		TBC: Enraged Wildkin,		CLASSIC: Enraged Wildkin
 q(4905),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(4961),	-- Cleansing of the Orb of Orahil,		TBC: Cleansing of the Orb of Orahil,		CLASSIC: Cleansing of the Orb of Orahil
 q(4962),	-- Shard of a Felhound,		TBC: Shard of a Felhound,		CLASSIC: Shard of a Felhound
@@ -320,9 +317,6 @@ q(5205),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(5207),	-- <NYI> <TXT> The True Summoner,		TBC: <NYI> <TXT> The True Summoner,		CLASSIC: <NYI> <TXT> The True Summoner
 q(5208),	-- <NYI> <TXT> The Blessing of Evil,		TBC: <NYI> <TXT> The Blessing of Evil,		CLASSIC: <NYI> <TXT> The Blessing of Evil
 q(5209),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(5244),	-- [DEPRECATED]The Ruins of Kel'Theril,		TBC: The Ruins of Kel'Theril,		CLASSIC: The Ruins of Kel'Theril
-q(5245),	-- [DEPRECATED]Troubled Spirits of Kel'Theril,		TBC: Troubled Spirits of Kel'Theril,		CLASSIC: Troubled Spirits of Kel'Theril
-q(5249),	-- [DEPRECATED]To Winterspring!,		TBC: To Winterspring!,		CLASSIC: To Winterspring!
 q(5303),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5304),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5506),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -386,8 +380,6 @@ q(5710),	-- <NYI> <TXT> Troll Priest Robe,		CLASSIC: <NYI> <TXT> Troll Priest Ro
 q(5711),	-- <NYI> The Lost Ways,		CLASSIC: <NYI> The Lost Ways
 q(5712),	-- <NYI> The Lost Ways,		CLASSIC: <NYI> The Lost Ways
 q(6003),	-- <nyi> <txt> Green With Envy,		CLASSIC: <nyi> <txt> Green With Envy
-q(6026),	-- That's Asking A Lot,		TBC: That's Asking A Lot,		CLASSIC: That's Asking A Lot
-q(6028),	-- The Everlook Report,		TBC: The Everlook Report,		CLASSIC: The Everlook Report
 q(6061),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
 q(6065),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
 q(6066),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
@@ -401,9 +393,6 @@ q(6141),	-- Brother Anton,		TBC: Brother Anton,		CLASSIC: Brother Anton
 q(6165),	-- <NYI> <TXT> Archmage Timolain's Remains,		TBC: <NYI> <TXT> Archmage Timolain's Remains,		CLASSIC: <NYI> <TXT> Archmage Timolain's Remains
 q(6201),	-- <UNUSED> The Legacy of the Ashbringer,		TBC: <UNUSED> The Legacy of the Ashbringer,		CLASSIC: <UNUSED> The Legacy of the Ashbringer
 q(6202),	-- <UNUSED> Good and Evil,		CLASSIC: <UNUSED> Good and Evil
-q(6603),	-- Trouble in Winterspring!,		TBC: Trouble in Winterspring!,		CLASSIC: Trouble in Winterspring!
-q(6604),	-- Enraged Wildkin,		TBC: Enraged Wildkin,		CLASSIC: Enraged Wildkin
-q(6605),	-- A Strange One,		TBC: A Strange One,		CLASSIC: A Strange One
 q(6606),	-- A Little Luck,		TBC: A Little Luck,		CLASSIC: A Little Luck
 q(6702),	-- [DEPRECATED] <TXT> SF, RFK, GNOMER, BF,		CLASSIC: [DEPRECATED] <TXT> SF, RFK, GNOMER, BF
 q(6704),	-- [DEPRECATED] <TXT> SM, RFD, ULD,		CLASSIC: [DEPRECATED] <TXT> SM, RFD, ULD
@@ -984,12 +973,7 @@ q(28095),	-- Breadcrumb Out
 q(28110),	-- Breadcrumb Out
 q(28371),	-- [DND] ORKUS QUEST FLAG [DO NOT LOCALIZE]
 q(28412),	-- Blessing of the Family
-q(28462),	-- Winterfall Firewater
-q(28481),	-- Troubled Spirits of Kel'Theril
-q(28541),	-- Cache of Mau'ari
-q(28546),	-- Winterfall E'ko
 q(28585),	-- Polished
-q(28642),	-- Shy-Rotam
 q(28648),	-- Frak's Wild Ride
 q(28739),	-- Night Elf Class Skill Tracker Quest
 q(28754),	-- Battle of Life and Death

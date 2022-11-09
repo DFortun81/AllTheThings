@@ -2253,7 +2253,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ 48.4, 34.6, WESTERN_PLAGUELANDS },
 					},
 					["groups"] = {
-						i(12836),	-- Plans: Frostguard
+						i(12836),	-- Plans: Frostguard (RECIPE!)
 					},
 				}),
 				-- #endif
