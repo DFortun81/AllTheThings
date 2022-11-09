@@ -1832,8 +1832,9 @@ app.MergeSkipFields = {
 	["progress"] = true,
 	["total"] = true,
 	["visible"] = true,
+	["modItemID"] = true,
+	["rawlink"] = true,
 	-- 1 -> only when cloning
-	["modItemID"] = 1,
 	["u"] = 1,
 	["pvp"] = 1,
 	["pb"] = 1,
@@ -12322,6 +12323,7 @@ app.CacheHeirlooms = function()
 		for _,token in ipairs(cachedTokenGroups) do
 			-- ensure the tokens do not have a modID attached
 			token.modID = nil;
+			token.modItemID = nil;
 			if not token.sym then
 				for _,heirloom in ipairs(item.g) do
 					NestObject(token, heirloom, true);
@@ -12335,6 +12337,7 @@ app.CacheHeirlooms = function()
 		for _,token in ipairs(cachedTokenGroups) do
 			-- ensure the tokens do not have a modID attached
 			token.modID = nil;
+			token.modItemID = nil;
 			if not token.sym then
 				for _,heirloom in ipairs(item.g) do
 					NestObject(token, heirloom, true);
