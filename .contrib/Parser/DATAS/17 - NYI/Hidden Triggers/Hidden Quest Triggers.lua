@@ -1674,7 +1674,6 @@ root("HiddenQuestTriggers", {
 		-- q(59682),	-- triggered when using "Crown of Honor"
 		q(59684),	-- Using 'Bounding Shroom Seeds' (177233)
 		q(59694),	-- Using 'Night Fae Arsenal' (177244)
-		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
 		q(59686),	-- triggered when using Tubbins's Lucky Teapot
 		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)	— incremental power/ability boosts each time you complete the WQ

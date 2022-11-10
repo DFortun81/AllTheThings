@@ -60,7 +60,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 58.0, 27.5, REVENDRETH },
 				["g"] = {
 					i(180917),	-- Soulbreaker's Ebony Leggings
-				--	TODO: confirm non-cloth rewards (they aren't linked on wowhead)
 					i(180919),	-- Ebony Death Shroud Breeches
 					i(180918),	-- Fearstalker's Ebony Leggings
 					i(180916),	-- Dread Sentinel's Ebony Legguards
@@ -138,7 +137,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 50.2, 18.6, SINFALL_REACHES },
 			}),
 			q(58424, {	-- An Eye for an Amulet
-				["sourceQuests"] = { 58372 },	-- Lead the Way
+				["sourceQuests"] = {
+					58372,	-- Lead the Way
+					58337,	-- Break Out
+					58326,	-- Combing the Catacombs
+				},
 				["provider"] = { "n", 160956 },	-- Watcher Emil
 				["coord"] = { 72.6, 37.5, REVENDRETH },
 			}),
@@ -232,7 +235,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 50.1, 20.5, BASTION },
 			}),
 			q(58428, {	-- Crypt Crashers
-				["sourceQuests"] = { 58372 },	-- Lead the Way
+				["sourceQuests"] = {
+					58372,	-- Lead the Way
+					58337,	-- Break Out
+					58326,	-- Combing the Catacombs
+				},
 				["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 				["coord"] = { 72.7, 37.6, REVENDRETH },
 			}),
@@ -269,7 +276,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["g"] = {
 					i(180903),	-- Fearstalker's Ebony Hauberk
 					i(180901),	-- Soulbreaker's Ebony Vestments
-					-- TODO: verify leather/plate
 					i(180904),	-- Ebony Death Shroud Vest
 					i(180902),	-- Dread Sentinel's Ebony Chestplate
 				},
@@ -323,9 +329,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 55.3, 27.4, SINFALL_REACHES },
 			}),
 			q(61050, {	-- How to Wear Seven Medallions
-				["sourceQuests"] = {
-					58444,	-- Return to Sinfall
-				},
+				["sourceQuests"] = { 58444 },	-- Return to Sinfall
 				["description"] = "Requires Renown 13.",
 				["provider"] = { "n", 158653 },	-- Prince Renathal
 				["coord"] = { 51.3, 38.0, SINFALL_REACHES },
@@ -396,16 +400,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				-- no coords, is your 'pet'
 			}),
 			q(58372, {	-- Lead the Way
-				["sourceQuests"] = {
-					58325,	-- Watcher Emil
-					58337,	-- Break Out
-					58326,	-- Combing the Catacombs
-				},
+				["sourceQuests"] = { 58325 },	-- Watcher Emil
 				["provider"] = { "n", 160956 },	-- Watcher Emil
 				["coord"] = { 65.9, 28.8, REVENDRETH },
 				["g"] = {
 					i(180925),	-- Soulbreaker's Ebony Sash
-				--	TODO: verify non-cloth pieces
 					i(180927),	-- Ebony Death Shroud Belt
 					i(180926),	-- Fearstalker's Ebony Belt
 					i(180924),	-- Dread Sentinel's Ebony Girdle
@@ -434,12 +433,13 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				},
 			}),
 			q(60935, {	-- Medallion of Avarice
+				["sourceQuest"] = 57893,	-- Neither Enemy nor Ally
 				["description"] = "Requires Renown 11.",
 				["provider"] = { "o", 353949 },	-- Medallion of Avarice
 				["coord"] = { 54.9, 30.9, SINFALL_REACHES },
 			}),
 			q(60904, {	-- Medallion of Desire
-				-- ["sourceQuests"] = { 59343 },	-- Kindred Spirits
+				["sourceQuests"] = { 59719 },	-- The Court
 				["description"] = "Requires Renown 8.",
 				["provider"] = { "o", 353948 },	-- Medallion of Desire
 				["coord"] = { 53.6, 32.9, SINFALL_REACHES },
@@ -546,7 +546,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["g"] = {
 					i(180937),	-- Fearstalker's Ebony Cloak
 					i(180934),	-- Soulbreaker's Ebony Drape
-				--	TODO: confirm all non-cloth set items (not linked on wowhead/via API)
 					i(180938),	-- Dread Sentinel's Ebony Cloak
 					i(180936),	-- Ebony Death Shroud Cloak
 				},
@@ -597,7 +596,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 40.0, 68.3, ORIBOS },
 				["g"] = {
-				--	TODO: verify mail reward.  Fearstalker's Ebony Gauntlets is not recorded in API as a reward, but it'd be weird if it wasn't one and all the other armor types got a piece from the quest
 					i(180909),	-- Ebony Death Shroud Gloves
 					i(180910),	-- Dread Sentinel's Ebony Grips
 					i(180911),	-- Soulbreaker's Ebony Handwraps
@@ -606,7 +604,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				},
 			}),
 			q(58421, {	-- Special Access
-				["sourceQuests"] = { 58372 },	-- Lead the Way
+				["sourceQuests"] = {
+					58372,	-- Lead the Way
+					58337,	-- Break Out
+					58326,	-- Combing the Catacombs
+				},
 				["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 				["coord"] = { 72.7, 37.6, REVENDRETH },
 			}),
@@ -658,7 +660,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 41.0, 54.7, REVENDRETH },
 				["g"] = {
 					i(180928),	-- Soulbreaker's Ebony Wraps
-				--	TODO: verify non-cloth rewards.  API doesn't pick up rewards for this quest, but it gave me cloth wrists on my priest
 					i(180931),	-- Ebony Death Shroud Bindings
 					i(180930),	-- Fearstalker's Ebony Bracers
 					i(180929),	-- Dread Sentinel's Ebony Vambraces
@@ -710,7 +711,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["g"] = {
 					i(180907),	-- Fearstalker's Ebony Sabatons
 					i(180906),	-- Soulbreaker's Ebony Slippers
-				--	TODO: verify non-cloth rewards
 					i(180908),	-- Ebony Death Shroud Boots
 					i(180905),	-- Dread Sentinel's Ebony Greatboots
 				},
@@ -738,7 +738,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["g"] = {
 					i(180923),	-- Fearstalker's Ebony Monnion
 					i(180922),	-- Soulbreaker's Ebony Mantle
-					-- TODO: verify Leather/Plate
 					i(180920),	-- Ebony Death Shroud Spaulders
 					i(180921),	-- Dread Sentinel's Ebony Spaulders
 				},
@@ -749,7 +748,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 77.5, 39.2, REVENDRETH },
 				["g"] = {
 					i(180913),	-- Soulbreaker's Ebony Hood
-				--	TODO: verify non-cloth rewards
 					i(180915),	-- Ebony Death Shroud Hood
 					i(180914),	-- Fearstalker's Ebony Helm
 					i(180900),	-- Dread Sentinel's Ebony Headgear
@@ -847,16 +845,19 @@ for _,g in ipairs({CONDUIT_GROUP,LFR_WEAPON_GROUP}) do
 	end
 end
 
-root("HiddenQuestTriggers", {
-	q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
-	q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
-	q(63001),	-- triggers when choosing to skip the Venthyr sanctum intro quests
-	q(63023),	-- triggers when choosing to skip the Venthyr sanctum intro quests
-	q(63425),	-- triggers when choosing to skip the Venthyr sanctum intro quests
-	q(63429),	-- triggers when choosing to skip the Venthyr sanctum intro quests
-	q(59316),	-- turning in quest #62918, "Binding Power"
-	q(59317),	-- triggered when turning in #62919, "Strengthening the Bond"
-});
+root("HiddenQuestTriggers", tier(SL_TIER, {
+	n(VENTHYR, {
+		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
+		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
+		q(63001),	-- triggers when choosing to skip the Venthyr sanctum intro quests
+		q(63023),	-- triggers when choosing to skip the Venthyr sanctum intro quests
+		q(63425),	-- triggers when choosing to skip the Venthyr sanctum intro quests
+		q(63429),	-- triggers when choosing to skip the Venthyr sanctum intro quests
+		q(59316),	-- turning in quest #62918, "Binding Power"
+		q(59317),	-- triggered when turning in #62919, "Strengthening the Bond"
+		q(61546),	-- when looting 'Almost Empty Amontillado Cask' (181781) while on quest 'Crypt Crashers' (58428)
+	}),
+}));
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
