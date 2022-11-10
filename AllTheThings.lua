@@ -5231,24 +5231,44 @@ local NPCExpandHeaders = {
 };
 -- Pulls in Common drop content for specific NPCs if any exists (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
 local function DetermineNPCDrops(group)
+	-- TODO: account for multi-NPC encounters
 	local npcID = group.npcID or group.creatureID;
 	if npcID then
 		-- app.PrintDebug("Found NPC Group",group.hash)
 		-- search for groups of this NPC
 		local npcGroups = app.SearchForField("npcID", npcID);
 		if npcGroups then
-			local headerID, groups;
-			for _,npcGroup in pairs(npcGroups) do
-				headerID = npcGroup.headerID;
-				-- where headerID is allowed
-				if headerID and NPCExpandHeaders[headerID] then
-					-- copy the header under the NPC groups
-					-- app.PrintDebug("Fill under",group.hash)
-					if groups then tinsert(groups, CreateObject(npcGroup))
-					else groups = { CreateObject(npcGroup) }; end
+			-- see if there's a difficulty wrapping the fill group
+			local difficultyID = app.RecursiveFirstParentWithField(group, "difficultyID");
+			if difficultyID then
+				-- app.PrintDebug("FillNPC.difficultyID",group.hash,difficultyID)
+				-- can only fill npc groups for the npc which match the difficultyID
+				local headerID, groups;
+				for _,npcGroup in pairs(npcGroups) do
+					headerID = npcGroup.headerID;
+					-- where headerID is allowed and the nested difficultyID matches
+					if headerID and NPCExpandHeaders[headerID] and app.RecursiveFirstParentWithFieldValue(npcGroup, "difficultyID", difficultyID) then
+						-- copy the header under the NPC groups
+						-- app.PrintDebug("Fill under",headerID)
+						if groups then tinsert(groups, CreateObject(npcGroup))
+						else groups = { CreateObject(npcGroup) }; end
+					end
 				end
+				return groups;
+			else
+				local headerID, groups;
+				for _,npcGroup in pairs(npcGroups) do
+					headerID = npcGroup.headerID;
+					-- where headerID is allowed
+					if headerID and NPCExpandHeaders[headerID] then
+						-- copy the header under the NPC groups
+						-- app.PrintDebug("Fill under",group.hash)
+						if groups then tinsert(groups, CreateObject(npcGroup))
+						else groups = { CreateObject(npcGroup) }; end
+					end
+				end
+				return groups;
 			end
-			return groups;
 		end
 	end
 end
