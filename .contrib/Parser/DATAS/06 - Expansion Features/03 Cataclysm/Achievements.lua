@@ -289,5 +289,8 @@ root("ExpansionFeatures", tier(CATA_TIER, {
 				["crs"] = { 48683 },	-- Yellow-Bellied Marmot
 			}),
 		}),
+		ach(5749, {	-- Vial of the Sands (Alchemy / Archeaology)
+			["provider"] = { "i", 65891 },	-- Vial of the Sands
+		}),
 	}),
 }));

@@ -3,8 +3,112 @@
 ---------------------------------------------
 
 root("Secrets", n(86470, {	-- Pepe
-	["cost"] = { { "i", 122293, 1 } },	-- Trans-Dimensional Bird Whistle
 	["g"] = {
+		n(ACHIEVEMENTS, {
+			ach(10053, {	-- I Found Pepe! (Various Draenor see criteria)
+				crit(1, {	-- Pirate Pepe
+					["cost"] = { { "i", 127870, 1 } },	-- A Tiny Pirate Hat
+				}),
+				crit(2, {	-- Viking Pepe
+					["cost"] = { { "i", 127865, 1 } },	-- A Tiny Viking Helmet
+				}),
+				crit(3, {	-- Knight Pepe
+					["cost"] = { { "i", 127869, 1 } },	-- A Tiny Plated Helm
+				}),
+				crit(4, {	-- Ninja Pepe
+					["cost"] = { { "i", 127867, 1 } },	-- A Tiny Ninja Shroud
+				}),
+			}),
+			ach(10770),		-- The Tangerine Traveler (Dalaran - NR / See murphymurph's post on wowhead for coords)
+			ach(9838, {		-- What A Strange, Interdimensional Trip It's Been (various dungeons & raids)
+				i(122293),		-- Trans-Dimensional Bird Whistle (TOY!)
+				-- TODO: fill out these encounters and delete from their current spammy locations
+				crit(1, { -- Gug'rokk (Bloodmaul Slag Mines)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(2, { -- Skulloc, Son of Gruul (Iron Docks)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(3, { -- Warlord Zaela (Upper Blackrock Spire)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(4, { -- Yalnu (The Everbloom)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(5, { -- Skylord Tovra (Grimrail Depot)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(6, { -- High Sage Viryx (Skyreach)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(7, { -- Ner'zhul (Shadowmoon Burial Grounds)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(8, { -- Teron'gor (Auchindoun)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(9, { -- Kargath Bladefist (Highmaul)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(10, { -- The Butcher (Highmaul)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(11, { -- Brackenspore (Highmaul)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(12, { -- Tectus, The Living Mountain (Highmaul)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(13, { -- Twin Ogron (Highmaul)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(14, { -- Ko'ragh (Highmaul)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(15, { -- Imperator Mar'gok (Highmaul)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(16, { -- Oregorger the Devourer (Blackrock Foundry)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(17, { -- Gruul (Blackrock Foundry)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(18, { -- Hans'gar & Franzok (Blackrock Foundry)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(19, { -- Flamebender Ka'graz (Blackrock Foundry)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(20, { -- Beastlord Darmac (Blackrock Foundry)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(21, { -- Operator Thogar (Blackrock Foundry)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(22, { -- Blast Furnace (Blackrock Foundry)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(23, { -- Kromog, Legend of the Mountain (Blackrock Foundry)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(24, { -- The Iron Maidens (Blackrock Foundry)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(25, { -- Blackhand (Blackrock Foundry)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(26, { -- Tarlna the Ageless (World Boss - Gorgrond)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(27, { -- Drov the Ruiner (World Boss - Gorgrond)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+				crit(28, { -- Rukhmar (World Boss - Spires of Arak)
+					-- ["_encounter"] = { ENCOUNTER, DIFFID },
+				}),
+			}),
+		}),
 		i(170151, {	-- A Tiny Clockwork Key
 			["questID"] = 56911,	-- Pepe can be sometimes be summoned with this mask
 			["coord"] = { 68.5, 47.9, MECHAGON },	-- Pepe Location

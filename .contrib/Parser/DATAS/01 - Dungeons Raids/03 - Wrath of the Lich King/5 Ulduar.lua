@@ -125,6 +125,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						}),
 					},
 				}),
+				ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
+					["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
+					["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
+				}),
 				ach(12312, {	-- Dwarfageddon
 					["timeline"] = { "added 7.3.5.25727" },
 					["crs"] = {
@@ -1963,7 +1967,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							}),
 						},
 					}),
-					
+
 					q(13818, {	-- Heroic: Algalon
 						["providers"] = {
 							{ "n", 33957 },	-- Prospector Loren

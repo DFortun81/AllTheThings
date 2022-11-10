@@ -42,20 +42,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							n(98100, {	-- Taoshi
 								["coord"] = { 40.8, 76.8, THE_HALL_OF_SHADOWS },
 								["cost"] = { { "i", 94222, 1} },	-- 1x Key to the Palace of Lei Shen
-								["maps"] = { 518 },	-- Thunder King's Citadel
-								["g"] = {
-									i(95497, {	-- Burial Trove Key
-										["description"] = "Used to open the Lei Shen's Burial Troves at the rest area after completing the scenario. These chests have a chance to contain  Tome of Otherworldly Venoms, which unlocks the hidden appearance!",
-										["g"] = {
-											i(139571, {	-- Tome of Otherwordly Venoms
-												artifact(891),	-- Fangs of the Devourer [Main Hand]
-												-- artifact(891),	-- Fangs of the Devourer [Off-Hand]
-											}),
-										},
-									}),
-								},
+								["sym"] = {{"select","mapID",518}},	-- Thunder King's Citadel
 							}),
-
 						}),
 					}),
 				}),

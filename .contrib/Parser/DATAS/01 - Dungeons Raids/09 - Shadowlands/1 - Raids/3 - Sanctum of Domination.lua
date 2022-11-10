@@ -496,7 +496,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 			}),
 			d(14, {	-- Normal
 				ach(15126, {	-- Sanctum of Domination
-					-- TODO: _encounters support
+					-- TODO: _encounter support
 					-- crit(1),	-- The Tarragrue
 					-- crit(2),	-- The Eye of the Jailer
 					-- crit(3),	-- The Nine
@@ -770,7 +770,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 			}),
 			d(15, {	-- Heroic
 				ach(15127, {	-- Heroic: Sanctum of Domination
-					-- TODO: _encounters support
+					-- TODO: _encounter support
 					-- crit(1),	-- The Tarragrue
 					-- crit(2),	-- The Eye of the Jailer
 					-- crit(3),	-- The Nine

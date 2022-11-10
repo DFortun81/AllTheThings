@@ -17,7 +17,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(9016, {	-- Breaker of the Black Harvest
 			un(REMOVED_FROM_GAME, title(256)),	-- of the Black Harvest
 		})),
-		ach(4496),	-- It's Over Nine Thousand!
 		un(REMOVED_FROM_GAME, ach(14140, {	-- Mad World
 			un(REMOVED_FROM_GAME, title(419)),	-- %s, the Faceless One
 			un(REMOVED_FROM_GAME, ach(14141)),	-- Solo Nightmares - Stormwind

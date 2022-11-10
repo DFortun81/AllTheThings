@@ -3,9 +3,16 @@
 -----------------------------------------------------
 
 root("GearSets", n(HEIRLOOMS, {
-	filter(MOUNTS, {
-		i(120968),	-- Summon Chauffeur (MOUNT!)
-		i(122703),	-- Summon Chauffeur (MOUNT!)
+	n(ACHIEVEMENTS, {
+		ach(9909, {	-- Heirloom Hoarder (35)
+			i(122718, {	-- Clinking Present
+				i(120968),	-- Chauffered Chopper (H)
+				i(122703),	-- Chauffered Chopper (A)
+			}),
+		}),
+		ach(9908),	-- Ready for Powerleveling (15)
+		ach(9906),	-- Alt-ernative Lifestyle (5)
+		ach(9911),	-- Where's the Mailbox? (1)
 	}),
 	n(WEAPONS, {
 		un(REMOVED_FROM_GAME, i(42944)),	-- Balanced Heartseeker

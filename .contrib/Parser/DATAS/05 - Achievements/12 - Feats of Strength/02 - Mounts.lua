@@ -4,7 +4,6 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 	achcat(ACHIEVEMENT_CATEGORY_MOUNTS_FOS, {
-		un(BLACK_MARKET, ach(14183)),			-- Conspicuous Consumption
 		un(REMOVED_FROM_GAME, ach(4832)),	-- Friends In Even Higher Places
 		un(REMOVED_FROM_GAME, ach(1436)),	-- Friends In High Places
 		un(REMOVED_FROM_GAME, ach(8794)),	-- Friends In Places Even Higher Than That
@@ -28,9 +27,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				{ "i", 8586 },	-- Whistle of the Mottled Red Raptor
 			},
 			["timeline"] = { "removed 1.4.0" },
-		}),
-		ach(5767, {			-- Scourer of the Eternal Sands
-			title(143),		-- the Camel-Hoarder
 		}),
 	}),
 }));

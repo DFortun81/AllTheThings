@@ -3,8 +3,7 @@
 ---------------------------------------------
 
 -- These are Quests which have no restriction on the Quest itself but requires some Profession-made Thing to start the Quest
-_.Craftables =
-{
+root(ROOTS.Craftables, {
 	tier(MOP_TIER, {
         n(QUESTS, {
             q(31752, { -- Blingtron 4000
@@ -12,16 +11,20 @@ _.Craftables =
                 ["isDaily"] = true,
                 ["g"] = {
                     i(86623, {	-- Blingtron 4000 Gift Package
-                        i(87250),	-- Depleted-Kyparium Rocket (MOUNT!)
-                        i(87251),	-- Geosynchronous World Spinner (MOUNT!)
-                        i(41508),	-- Mechano-Hog (MOUNT!)
-                        i(44413),	-- Mekgineer's Chopper (MOUNT!)
-                        i(103670),	-- Lil' Bling Pet
-                        i(15996),	-- Lifelike Mechanical Toad Pet
-                        i(11826),	-- Lil' Smoky Pet
-                        i(4401),	-- Mechanical Squirrel Box Pet
-                        i(11825),	-- Pet Bombling
-                        i(21277),	-- Tranquil Mechanical Yeti Pet
+						["sym"] = {{"select","itemID",
+							87250,	-- Depleted-Kyparium Rocket (MOUNT!)
+							87251,	-- Geosynchronous World Spinner (MOUNT!)
+							41508,	-- Mechano-Hog (MOUNT!)
+							44413,	-- Mekgineer's Chopper (MOUNT!)
+							15996,	-- Lifelike Mechanical Toad Pet
+							11826,	-- Lil' Smoky Pet
+							4401,	-- Mechanical Squirrel Box Pet
+							11825,	-- Pet Bombling
+							21277,	-- Tranquil Mechanical Yeti Pet
+						}},
+						["g"] = {
+							i(103670),	-- Lil' Bling Pet
+						},
                     }),
                 },
             }),
@@ -34,19 +37,10 @@ _.Craftables =
                 ["isDaily"] = true,
                 ["g"] = {
                     i(113258, {	-- Blingtron 5000 Gift Package
-                        i(87250),	-- Depleted-Kyparium Rocket (MOUNT!)
-                        i(87251),	-- Geosynchronous World Spinner (MOUNT!)
-                        i(41508),	-- Mechano-Hog (MOUNT!)
-                        i(44413),	-- Mekgineer's Chopper (MOUNT!)
-                        i(103670),	-- Lil'Bling Pet
-                        i(15996),	-- Lifelike Mechanical Toad Pet
-                        i(11826),	-- Lil' Smoky Pet
-                        i(118741),	-- Mechanical Scorpid
-                        i(4401),	-- Mechanical Squirrel Box Pet
-                        i(11825),	-- Pet Bombling
-                        i(115483),	-- Sky-Bo Pet
-                        i(21277),	-- Tranquil Mechanical Yeti Pet
-                        i(123851),	-- Photo B.O.M.B. (TOY!)
+						["sym"] = {{"select","itemID",86623},{"pop"}},	-- Blingtron 4000 Gift Package
+						["g"] = {
+                        	i(123851),	-- Photo B.O.M.B. (TOY!)
+						},
                     }),
                 },
             }),
@@ -59,23 +53,16 @@ _.Craftables =
                 ["isDaily"] = true,
                 ["g"] = {
                     i(132892, {	-- Blingtron 6000 Gift Package
-                        i(87250),	-- Depleted-Kyparium Rocket (MOUNT!)
-                        i(87251),	-- Geosynchronous World Spinner (MOUNT!)
-                        i(41508),	-- Mechano-Hog (MOUNT!)
-                        i(44413),	-- Mekgineer's Chopper (MOUNT!)
-                        i(136911),	-- Knockoff Blingtron
-                        i(103670),	-- Lil'Bling Pet
-                        i(15996),	-- Lifelike Mechanical Toad Pet
-                        i(11826),	-- Lil' Smoky Pet
-                        i(4401),	-- Mechanical Squirrel Box Pet
-                        i(11825),	-- Pet Bombling
-                        i(115483),	-- Sky-Bo Pet
-                        i(21277),	-- Tranquil Mechanical Yeti Pet
-                        i(123851),	-- Photo B.O.M.B. (TOY!)
-                        i(136631),	-- Surface-to-Infernal Rocket Launcher
-                        i(136630),	-- "Twirling Bottom" Repeaater"
-                        i(136629),	-- Felgibber Shotgun
-                        i(136632),	-- Chaos Blaster
+						["sym"] = {{"select","itemID",113258},{"pop"},	-- Blingtron 5000 Gift Package
+							{"select","itemID",
+								136631,	-- Surface-to-Infernal Rocket Launcher
+								136630,	-- "Twirling Bottom" Repeaater"
+								136629,	-- Felgibber Shotgun
+								136632,	-- Chaos Blaster
+						}},
+						["g"] = {
+							i(115483),	-- Sky-Bo Pet
+						},
                     }),
                 },
             }),
@@ -88,18 +75,13 @@ _.Craftables =
                 ["isDaily"] = true,
                 ["g"] = {
                     i(168740, {	-- Blingtron 7000 Gift Package
-                        i(87250),	-- Depleted-Kyparium Rocket (MOUNT!)
-                        i(87251),	-- Geosynchronous World Spinner (MOUNT!)
-                        i(112057),	-- Lifelike Mechanical Frostboar Pet
-                        i(136911),	-- Knockoff Blingtron -- https://www.wowhead.com/item=168740/blingtron-7000-gift-package#comments:id=3210510
-                        i(103670),	-- Lil' Bling Pet
-                        i(41508),	-- Mechano-Hog (MOUNT!)
-                        i(44413),	-- Mekgineer's Chopper (MOUNT!)
-                        --i(115483),	-- Sky-Bo Pet -- one random report with no screenshot
-                        i(21277),	-- Tranquil Mechanical Yeti Pet (confirmed 9.0.1)
+						["sym"] = {{"select","itemID",132892},{"pop"}},	-- Blingtron 6000 Gift Package
+						["g"] = {
+                        	i(136911),	-- Knockoff Blingtron -- https://www.wowhead.com/item=168740/blingtron-7000-gift-package#comments:id=3210510
+						},
                     }),
                 },
             }),
         }),
     }),
-};
+});

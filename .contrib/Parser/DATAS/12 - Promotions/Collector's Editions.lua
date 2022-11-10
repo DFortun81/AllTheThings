@@ -257,6 +257,9 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		["description"] = "These rewards are available to anyone who purchases Shadowlands Heroic Edition.",
 		["timeline"] = { "added 9.0.1" },
 		["groups"] = {
+			ach(14283, { -- Heroic Edition: Ensorcelled Everwyrm
+				-- ["provider"] = { "s", }	-- TODO maybe have a spell provider?
+			}),
 			mount(307932),	-- Ensorcelled Everwyrm (MOUNT!)
 			n(QUESTS, {
 				q(57686, {	-- The Eternal Traveler

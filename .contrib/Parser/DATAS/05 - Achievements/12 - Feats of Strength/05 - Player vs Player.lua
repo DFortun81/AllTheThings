@@ -34,9 +34,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(12567, {							-- The Horde Slayer
 			["races"] = ALLIANCE_ONLY,
 		}),
-		ach(9725, {								-- The Last of Us
-			title_gendered(302, 303),	-- Lord of War / Lady of War
-		}),
 		un(REMOVED_FROM_GAME, ach(8392, {		-- Tournament Glory 2013
 			un(REMOVED_FROM_GAME, title(128)),		-- Vanquisher
 		})),

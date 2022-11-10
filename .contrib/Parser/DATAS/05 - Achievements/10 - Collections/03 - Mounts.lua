@@ -107,24 +107,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		}),
 		ach(2142),		-- Filling Up The Barn (25 mounts)
 		ach(2141),		-- Stable Keeper (10 mounts)
-		ach(2076),		-- Armored Brown Bear
-		ach(9713,  {	-- Awake the Drakes
-			i(118676),		-- Emerald Drake (MOUNT!)
-			crit(1),		-- Azure Drake
-			crit(2),		-- Bronze Drake
-			crit(3),		-- Black Drake
-			crit(4),		-- Blazing Drake
-			crit(5),		-- Blue Drake
-			crit(6),		-- Onyxian Drake
-			crit(7),		-- Purple Netherwing Drake
-			crit(8),		-- Red Drake
-			crit(9),		-- Twilight Drake
-		}),
-		ach(2097),		-- Get to the Choppa! (Engineering)
-		ach(7386),		-- Grand Expedition Yak (Kun-Lai Summit)
-		ach(4888),		-- One Hump or Two? (Uldum)
-		ach(2078),		-- Traveler's Tundra Mammoth (Dalaran - NR)
-		ach(5749),		-- Vial of the Sands (Alchemy / Archeaology)
-		ach(2077),		-- Wooly Mammoth (Dalaran - NR)
 	}),
 }));

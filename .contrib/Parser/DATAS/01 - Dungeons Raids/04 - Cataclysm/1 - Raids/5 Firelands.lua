@@ -84,6 +84,11 @@ root("Instances", tier(CATA_TIER, {
 				["lvl"] = 85,
 				-- TODO: coords for all these quests
 				["g"] = sharedData({["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID }},{
+					-- the achieve is a little out of place but FL is structured quite differently with the legendary quest line so eh....
+					ach(5839, {	-- Dragonwrath, Tarecgosa's Rest
+						["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, MONK, DRUID },
+						["provider"] = { "i", 71086 },	-- Dragonwrath, Tarecgosa's Rest
+					}),
 					a(q(29453, {	-- Your Time Has Come [A]
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
 						["provider"] = { "n", 53115 },	-- Molten Lord

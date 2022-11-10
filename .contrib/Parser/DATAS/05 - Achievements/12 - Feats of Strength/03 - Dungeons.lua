@@ -157,86 +157,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(9627, {		-- Challenge Master: Upper Blackrock Spire
 			un(REMOVED_FROM_GAME, title_gendered(296, 297)),	-- Lord of Blackrock / Lady of Blackrock
 		})),
-		un(REMOVED_FROM_GAME, ach(13789)),		-- Hertz Locker
 		un(REMOVED_FROM_GAME, ach(8903, {		-- Mistwalker
 			un(REMOVED_FROM_GAME, title(255)),	-- Mistwalker
-		})),
-		ach(14938, {	-- Shadowlands Keystone Explorer: Season One
-			-- There's no criteria here because it's messed up in-game as of 9.0.5 (only 2-6 work, the others are blank or give error msgs).  Blame Blizz.
-		}),
-		ach(14531, {	-- Shadowlands Keystone Conqueror: Season One
-			title(431),	-- 'the Proud'
-			crit(1),	-- Necrotic Wake
-			crit(2),	-- Plaguefall
-			crit(3),	-- Mists of Tirna Scithe
-			crit(4),	-- Halls of Atonement
-			crit(5),	-- Spires of Ascension
-			crit(6),	-- Theater of Pain
-			crit(7),	-- De Other Side
-			crit(8),	-- Sanguine Depths
-		}),
-		ach(14532, {	-- Shadowlands Keystone Master: Season One
-			i(182717),	-- Sintouched Deathwalker (MOUNT!)
-			crit(1),	-- Necrotic Wake
-			crit(2),	-- Plaguefall
-			crit(3),	-- Mists of Tirna Scithe
-			crit(4),	-- Halls of Atonement
-			crit(5),	-- Spires of Ascension
-			crit(6),	-- Theater of Pain
-			crit(7),	-- De Other Side
-			crit(8),	-- Sanguine Depths
-		}),
-		ach(15051),		-- Keystone Hero: De Other Side
-		ach(15695, {["timeline"] = { ADDED_SLS4, REMOVED_DFREL }}),	-- Keystone Hero: Grimrail Depot
-		ach(15048),		-- Keystone Hero: Halls of Atonement
-		ach(15694, {["timeline"] = { ADDED_SLS4, REMOVED_DFREL }}),	-- Keystone Hero: Iron Docks
-		ach(15047),		-- Keystone Hero: Mists of Tirna Scithe
-		ach(15693, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFREL } }, {	-- Keystone Hero: Operation: Mechagon
-			crit(1),	-- Operation: Mechagon - Junkyard
-			crit(2),	-- Operation: Mechagon - Workshop
-		})),
-		ach(15046),		-- Keystone Hero: Plaguefall
-		ach(15692, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFREL } }, {	-- Keystone Hero: Return to Karazhan
-			crit(1),	-- Return to Karazhan: Lower
-			crit(2),	-- Return to Karazhan: Upper
-		})),
-		ach(15052),		-- Keystone Hero: Sanguine Depths
-		ach(15049),		-- Keystone Hero: Spires of Ascension
-		ach(15045),		-- Keystone Hero: The Necrotic Wake
-		ach(15050),		-- Keystone Hero: Theater of Pain
-		ach(15073, {	-- Shadowlands Keystone Explorer: Season Two
-		}),
-		ach(15077, {	-- Shadowlands Keystone Conqueror: Season Two
-			title(446),	-- The Tormented
-		}),
-		ach(15078, {	-- Shadowlands Keystone Master: Season Two
-			i(187525),	-- Soultwisted Deathwalker (MOUNT!)
-		}),
-		ach(15327, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {	-- Tormented Hero: Shadowlands Season 2
-			title(451),	-- <Name>, the Tormented Hero (TITLE!)
-		})),
-		ach(15496, {	-- Shadowlands Keystone Explorer: Season Three
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15498, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Shadowlands Keystone Conqueror: Season Three
-			title(457),	-- <Name> the Cryptic
-		})),
-		ach(15499, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Shadowlands Keystone Master: Season Three
-			i(187682),	-- Wastewarped Deathwalker (MOUNT!)
-		})),
-		ach(15506, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } })),	-- Shadowlands Keystone Hero: Season Three
-		ach(15688, {["timeline"] = { ADDED_SLS4, REMOVED_DFREL }}),	-- Shadowlands Keystone Explorer: Season Four
-		ach(15689, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFREL } }, {	-- Shadowlands Keystone Conqueror: Season Four
-			title(465),	-- <Name> the Shrouded
-		})),
-		ach(15690, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFREL } }, {	-- Shadowlands Keystone Master: Season Four
-			i(192557),	-- Restoration Deathwalker (MOUNT!)
-		})),
-		ach(15691, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {	-- Cryptic Hero: Shadowlands Season 3
-			title(458),	-- <Name>, the Cryptic Hero
-		})),
-		ach(15756, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFPRE } }, {	-- Shrouded Hero: Shadowlands Season 4
-			title(466),	-- <Name>, the Shrouded Hero
 		})),
 	}),
 }));

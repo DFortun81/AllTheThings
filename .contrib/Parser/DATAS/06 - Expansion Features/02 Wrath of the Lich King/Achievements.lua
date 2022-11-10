@@ -75,6 +75,16 @@ root("ExpansionFeatures", tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "added 
 				["_npcs"] = { 32487 },
 			}),
 		}),
+		ach(2097, {	-- Get to the Choppa! (Engineering)
+			["providers"] = {
+				{ "i", 44413 },	-- Mekgineer's Chopper
+				{ "i", 41508 },	-- Mechano-Hog
+			},
+		}),
+		ach(2336, {			-- Insane in the Membrane
+			title(112),			-- the Insane
+		}),
+		ach(4496),	-- It's Over Nine Thousand!
 		ach(2256, {	-- Northern Exposure
 			-- identical criteria as full achievement
 			["sym"] = {{"select","achievementID",2257}},	-- Frostbitten

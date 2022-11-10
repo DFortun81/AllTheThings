@@ -9,6 +9,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 			ach(13701),	-- Battlefield Brawler
 			ach(13702),	-- Battlefield Tactician
 		}),
+		un(BLACK_MARKET, ach(14183, {	-- Conspicuous Consumption
+			["provider"] = { "i", 163042 },	-- Mighty Caravan Brutosaur
+		})),
 		pvp(ach(13623, {	-- Fighting on Two Fronts
 			crit(1, {	-- Acquire Nazjatar Battle Commendations
 				["cost"] = { { "i", 168802, 25 } },

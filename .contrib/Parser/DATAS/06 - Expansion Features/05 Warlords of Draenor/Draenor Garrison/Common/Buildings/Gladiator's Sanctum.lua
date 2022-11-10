@@ -15,6 +15,9 @@ _.ExpansionFeatures =
 								i(111981),		-- Gladiator's Sanctum, Level 3 [Blueprints]
 							},
 						}),
+						ach(9725, {	-- The Last of Us
+							title_gendered(302, 303),	-- Lord of War / Lady of War
+						}),
 						ach(9738, {	-- Warlord of Draenor (Alliance) achievements used instead of criteria as criteria are behaving strangely with debug mode on
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {

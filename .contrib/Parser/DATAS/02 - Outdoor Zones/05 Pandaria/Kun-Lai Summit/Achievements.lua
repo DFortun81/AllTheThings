@@ -47,6 +47,9 @@ _.Zones =
 					crit(10),	-- Healiss
 					crit(11),	-- Tankiss
 				}),
+				ach(7386, {	-- Grand Expedition Yak
+					["provider"] = { "i", 84101 },	-- Grand Expedition Yak
+				}),
 				ach(7284, {	-- Is Another Man's Treasure
 					["collectible"] = false,
 					["g"] = {

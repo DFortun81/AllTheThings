@@ -45,14 +45,12 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				i(141002),			-- Replica Staff of Gul'dan
 			},
 		})),
-		ach(10657),				-- Fledgling Hero of Warcraft
 		un(REMOVED_FROM_GAME, ach(9763)),		-- Grommloc
 		ach(8345, {				-- Hearthstoned
 			i(98618),			-- Hearthsteed (MOUNT!)
 		}),
 		un(REMOVED_FROM_GAME, ach(11425)),		-- Herald of Flames
 		ach(9926),				-- Hero of the Storm
-		ach(14283),				-- Heroic Edition: Ensorcelled Everwyrm
 		un(REMOVED_FROM_GAME, ach(3636)),		-- Jade Tiger (China only)
 		ach(13196, bubbleDownSelf({			-- Meat Marauder
 			["u"] = REMOVED_FROM_GAME,}, {

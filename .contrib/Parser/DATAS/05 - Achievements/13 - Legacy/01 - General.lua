@@ -89,16 +89,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		un(REMOVED_FROM_GAME, ach(7943)),		-- I'm Your Number One Fan (Season 2) **Can't find any commentary on whether this is still available in Legion season or not.**
 		un(REMOVED_FROM_GAME, a(ach(8336))),	-- I've Got the Biggest Brawls of Them All (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
 		un(REMOVED_FROM_GAME, h(ach(8338))),	-- I've Got the Biggest Brawls of Them All (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
-		ach(8106, {				-- In the Hall of the Thunder King
-			["maps"] = { 518 },	-- Thunder King's Citadel -- TODO: move this to the map file itself (which doesn't exist yet)
-			["groups"] = {
-				crit(1),			-- Obtain a Handful of Stolen Gems from the Treasure Saurok
-				crit(2),			-- Loot 10 Golden Treasure Chests in one run
-				crit(3),			-- Slay God-Hulk Gulkan
-				crit(4),			-- Reach Tenwu of the Red Smoke
-			},
-			-- removed 'classes' since I've found no evidence this is restricted to Rogues...
-		}),
 		un(REMOVED_FROM_GAME, ach(11572)),		-- I Am Thrall's Complete Lack Of Surprise(Legion)
 		un(REMOVED_FROM_GAME, a(ach(11565, {	-- King of the Guild (Alliance)(Legion)
 			un(REMOVED_FROM_GAME, ach(11563)),		-- The Second Rule of Brawler's Guild(Legion)

@@ -682,6 +682,29 @@ _.Zones =
 				}),
 				q(32296, {	-- Treasures of the Thunder King
 					["isWeekly"] = true,
+					["cost"] = { { "i", 94222, 1} },	-- 1x Key to the Palace of Lei Shen
+					["g"] = {
+						m(518, {	-- Thunder King's Citadel
+							ach(8106, {				-- In the Hall of the Thunder King
+								["groups"] = {
+									crit(1),			-- Obtain a Handful of Stolen Gems from the Treasure Saurok
+									crit(2),			-- Loot 10 Golden Treasure Chests in one run
+									crit(3),			-- Slay God-Hulk Gulkan
+									crit(4),			-- Reach Tenwu of the Red Smoke
+								},
+								-- removed 'classes' since I've found no evidence this is restricted to Rogues...
+							}),
+							i(95497, {	-- Burial Trove Key
+								["description"] = "Used to open the Lei Shen's Burial Troves at the rest area after completing the scenario. These chests have a chance to contain  Tome of Otherworldly Venoms, which unlocks the hidden appearance!",
+								["g"] = {
+									i(139571, {	-- Tome of Otherwordly Venoms
+										artifact(891),	-- Fangs of the Devourer [Main Hand]
+										-- artifact(891),	-- Fangs of the Devourer [Off-Hand]
+									}),
+								},
+							}),
+						}),
+					},
 				}),
 				q(32233, {	-- Very Disarming
 					["isDaily"] = true,
