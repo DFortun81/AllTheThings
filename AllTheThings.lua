@@ -3139,7 +3139,7 @@ end
 (function()
 local select, tremove, unpack =
 	  select, tremove, unpack;
-local FinalizeModID;
+local FinalizeModID, PruneFinalized;
 local ArrayAppend = app.ArrayAppend;
 -- Checks if any of the provided arguments can be found within the first array object
 local function ContainsAnyValue(arr, ...)
@@ -3456,6 +3456,7 @@ local ResolveFunctions = {
 			local s = searchResults[k];
 			if s.criteriaID then tremove(searchResults, k); end
 		end
+		PruneFinalized = true;
 	end,
 	-- Instruction to include only search results where an item is of a specific relic type
 	["relictype"] = function(finalized, searchResults, o, cmd, ...)
@@ -3957,6 +3958,7 @@ ResolveSymbolicLink = function(o)
 	end
 	if o and o.sym then
 		FinalizeModID = nil;
+		PruneFinalized = nil;
 		-- app.PrintDebug("Fresh Resolve:",o.hash)
 		local searchResults, finalized = {}, {};
 		local cmd, cmdFunc;
@@ -3996,6 +3998,9 @@ ResolveSymbolicLink = function(o)
 					-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
 					s.sourceParent = nil;
 					s.parent = nil;
+					if PruneFinalized then
+						s.g = nil;
+					end
 					-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
 					if s.hash and s.hash == o.hash then
 						print("Symlink group pulled itself into finalized results!",o.hash)
@@ -4008,6 +4013,9 @@ ResolveSymbolicLink = function(o)
 					-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
 					s.sourceParent = nil;
 					s.parent = nil;
+					if PruneFinalized then
+						s.g = nil;
+					end
 					-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
 					if s.hash and s.hash == o.hash then
 						print("Symlink group pulled itself into finalized results!",o.hash)
@@ -5371,6 +5379,27 @@ local SpecificSources = {
 		[-1] = true,	-- COMMON_BOSS_DROPS
 	},
 };
+local tremove = tremove;
+local function CleanTop(top, keephash)
+	if top and top.hash == keephash then
+		return true;
+	end
+	if top then
+		local g = top.g;
+		if g then
+			local count, gi, cleaned = #g;
+			for i=count,1,-1 do
+				gi = g[i];
+				if CleanTop(gi, keephash) then
+					cleaned = true;
+				else
+					tremove(g, i);
+				end
+			end
+			return cleaned;
+		end
+	end
+end
 -- Builds a 'Source' group from the parent of the group (or other listings of this group) and lists it under the group itself for
 app.BuildSourceParent = function(group)
 	-- only show sources for Things or specific of other types
@@ -5410,8 +5439,8 @@ app.BuildSourceParent = function(group)
 						if thingKeys[parentKey] or parent.npcID or parent.creatureID then
 							-- keep the Criteria nested for Achievements, to show proper completion tracking under various Sources
 							if isAchievement then
-								-- app.PrintDebug("isAchieve:keepSource",keyValue)
-								parent._keepSource = keyValue;
+								-- app.PrintDebug("isAchieve:keepSource",thing.hash)
+								parent._keepSource = thing.hash;
 							end
 							-- add the parent for display later
 							if parents then tinsert(parents, parent);
@@ -5461,6 +5490,15 @@ app.BuildSourceParent = function(group)
 						end
 					end
 				end
+				-- Things tagged with 'sourceQuests' should show the quests as a Source (if the Thing itself is not a raw Quest)
+				-- if thing.sourceQuests and groupKey ~= "questID" then
+				-- 	local questRef;
+				-- 	for _,sq in ipairs(thing.sourceQuests) do
+				-- 		questRef = app.SearchForObject("questID", sq) or {["questID"] = sq};
+				-- 		if parents then tinsert(parents, questRef);
+				-- 		else parents = { questRef }; end
+				-- 	end
+				-- end
 			end
 		end
 		-- if there are valid parent groups for sources, merge them into a 'Source(s)' group
@@ -5482,15 +5520,8 @@ app.BuildSourceParent = function(group)
 				-- if keepSource then print("Keeping Criteria under",parent.hash) end
 				clonedParent = keepSource and CreateObject(parent) or CreateObject(parent, true);
 				clonedParent.collectible = false;
-				if keepSource and clonedParent.g then
-					local replace = {};
-					for _,o in ipairs(clonedParent.g) do
-						if o[groupKey] == keepSource then
-							-- print("keep Criteria",o.hash,"under",clonedParent.hash)
-							tinsert(replace, o);
-						end
-					end
-					clonedParent.g = replace;
+				if keepSource then
+					CleanTop(clonedParent, keepSource);
 				else
 					clonedParent.OnUpdate = app.AlwaysShowUpdate;	-- TODO: filter actual unobtainable sources...
 				end
@@ -6320,9 +6351,12 @@ end
 app.SearchForField = SearchForField;
 -- This method performs the SearchForField logic, but then verifies that ONLY a specific matching, filtered-priority object is returned
 app.SearchForObject = function(field, id)
-	local fcache = SearchForField(field, id);
+	local fcache = app.CleanSourceIgnoredGroups(SearchForField(field, id));
 	if fcache then
 		local count = #fcache;
+		if count == 0 then
+			return;
+		end
 		-- quick escape for single cache results! hooray!
 		if count == 1 then
 			return fcache[1];
@@ -6356,8 +6390,16 @@ end
 -- This method performs the SearchForField logic and returns a single version of the specific object by merging together all sources of the object
 -- NOTE: Don't use this for Items, because modIDs and bonusIDs are stupid
 app.SearchForMergedObject = function(field, id)
-	local fcache = SearchForField(field, id);
-	if fcache and #fcache > 0 then
+	local fcache = app.CleanSourceIgnoredGroups(SearchForField(field, id));
+	if fcache then
+		local count = #fcache;
+		if count == 0 then
+			return;
+		end
+		-- quick escape for single cache results! hooray!
+		if count == 1 then
+			return fcache[1];
+		end
 		-- find a filter-match object first
 		local fcacheObj, merged;
 		for i=1,#fcache,1 do
