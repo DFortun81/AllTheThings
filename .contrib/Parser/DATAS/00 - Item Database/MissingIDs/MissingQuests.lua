@@ -35,7 +35,6 @@ q(854),	-- Journey to the Crossroads,		TBC: Journey to the Crossroads,		CLASSIC:
 q(856),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(886),	-- The Barrens Oases,		TBC: The Barrens Oases,		CLASSIC: The Barrens Oases
 q(897),	-- The Harvester,		TBC: The Harvester,		CLASSIC: The Harvester
-q(939),	-- [DEPRECATED]Flute of Xavaric,		TBC: Flute of Xavaric,		CLASSIC: Flute of Xavaric
 q(944),	-- The Master's Glaive,		TBC: The Master's Glaive,		CLASSIC: The Master's Glaive
 q(945),	-- Therylune's Escape,		TBC: Therylune's Escape,		CLASSIC: Therylune's Escape
 q(946),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -258,7 +257,6 @@ q(3787),	-- Jonespyre's Request,		TBC: Jonespyre's Request,		CLASSIC: Jonespyre'
 q(3788),	-- Jonespyre's Request,		TBC: Jonespyre's Request,		CLASSIC: Jonespyre's Request
 q(3885),	-- <NYI> <TXT> The Gadgetzan Run,		TBC: <NYI> <TXT> The Gadgetzan Run,		CLASSIC: <NYI> <TXT> The Gadgetzan Run
 q(3910),	-- <NYI> <TXT> The Un'Goro Run,		CLASSIC: <NYI> <TXT> The Un'Goro Run
-q(4101),	-- [DEPRECATED]Cleansing Felwood,		TBC: Cleansing Felwood,		CLASSIC: Cleansing Felwood
 q(4124),	-- The Missing Courier,		TBC: The Missing Courier,		CLASSIC: The Missing Courier
 q(4125),	-- The Missing Courier,		TBC: The Missing Courier,		CLASSIC: The Missing Courier
 q(4127),	-- Boat Wreckage,		TBC: Boat Wreckage,		CLASSIC: Boat Wreckage
@@ -273,9 +271,6 @@ q(4265),	-- Freed from the Hive,		TBC: Freed from the Hive,		CLASSIC: Freed from
 q(4281),	-- Thalanaar Delivery,		TBC: Thalanaar Delivery,		CLASSIC: Thalanaar Delivery
 q(4299),	-- <NYI> <TXT>The Tomb of the Seven,		TBC: <NYI> <TXT>The Tomb of the Seven,		CLASSIC: <NYI> <TXT>The Tomb of the Seven
 q(4323),	-- <NYI> <TXT> Get those Hyenas!!!,		TBC: <NYI> <TXT> Get those Hyenas!!!,		CLASSIC: <NYI> <TXT> Get those Hyenas!!!
-q(4421),	-- [DEPRECATED]The Corruption of the Jadefire,		TBC: The Corruption of the Jadefire,		CLASSIC: The Corruption of the Jadefire
-q(4441),	-- [DEPRECATED]Felbound Ancients,		TBC: Felbound Ancients,		CLASSIC: Felbound Ancients
-q(4442),	-- [DEPRECATED]Purified!,		TBC: Purified!,		CLASSIC: Purified!
 q(4487),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
 q(4488),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
 q(4489),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
@@ -312,7 +307,6 @@ q(4968),	-- Knowledge of the Orb of Orahil,		TBC: Knowledge of the Orb of Orahil
 q(4969),	-- Knowledge of the Orb of Orahil,		TBC: Knowledge of the Orb of Orahil,		CLASSIC: Knowledge of the Orb of Orahil
 q(4976),	-- Returning the Cleansed Orb,		TBC: Returning the Cleansed Orb,		CLASSIC: Returning the Cleansed Orb
 q(5101),	-- Lee's Ultimate Test Quest... of Doom!,		TBC: Lee's Ultimate Test Quest... of Doom!,		CLASSIC: Lee's Ultimate Test Quest... of Doom!
-q(5157),	-- [DEPRECATED]Collection of the Corrupt Water,		TBC: Collection of the Corrupt Water,		CLASSIC: Collection of the Corrupt Water
 q(5205),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(5207),	-- <NYI> <TXT> The True Summoner,		TBC: <NYI> <TXT> The True Summoner,		CLASSIC: <NYI> <TXT> The True Summoner
 q(5208),	-- <NYI> <TXT> The Blessing of Evil,		TBC: <NYI> <TXT> The Blessing of Evil,		CLASSIC: <NYI> <TXT> The Blessing of Evil
@@ -406,11 +400,7 @@ q(7487),	-- Attunement to the Core,		TBC: Attunement to the Core,		CLASSIC: Attu
 q(7521),	-- Thunderaan the Windseeker,		CLASSIC: Thunderaan the Windseeker
 q(7522),	-- Examine the Vessel,		CLASSIC: Examine the Vessel
 q(7561),	-- Rise, Thunderfury!,		CLASSIC: Rise, Thunderfury!
-q(7601),	-- What Niby Commands,		TBC: What Niby Commands,		CLASSIC: What Niby Commands
-q(7602),	-- Flawless Fel Essence,		TBC: Flawless Fel Essence,		CLASSIC: Flawless Fel Essence
 q(7621),	-- A Warning,		TBC: A Warning,		CLASSIC: A Warning
-q(7624),	-- Ulathek the Traitor,		TBC: Ulathek the Traitor,		CLASSIC: Ulathek the Traitor
-q(7625),	-- Xorothian Stardust,		TBC: Xorothian Stardust,		CLASSIC: Xorothian Stardust
 q(7637),	-- Emphasis on Sacrifice,		TBC: Emphasis on Sacrifice,		CLASSIC: Emphasis on Sacrifice
 q(7638),	-- Lord Grayson Shadowbreaker,		TBC: Lord Grayson Shadowbreaker,		CLASSIC: Lord Grayson Shadowbreaker
 q(7639),	-- To Show Due Judgment,		TBC: To Show Due Judgment,		CLASSIC: To Show Due Judgment
@@ -466,13 +456,9 @@ q(8344),	-- Windows to the Source,		TBC: Windows to the Source,		CLASSIC: Window
 q(8371),	-- Concerted Efforts,		TBC: Concerted Efforts,		CLASSIC: Concerted Efforts
 q(8410),	-- Elemental Mastery,		TBC: Elemental Mastery,		CLASSIC: Elemental Mastery
 q(8411),	-- [DEPRECATED] Mastering the Elements,		TBC: Mastering the Elements,		CLASSIC: Mastering the Elements
-q(8419),	-- An Imp's Request,		TBC: An Imp's Request,		CLASSIC: An Imp's Request
-q(8420),	-- Hot and Itchy,		TBC: Hot and Itchy,		CLASSIC: Hot and Itchy
-q(8421),	-- The Wrong Stuff,		TBC: The Wrong Stuff,		CLASSIC: The Wrong Stuff
 q(8444),	-- <NYI> <TXT> gossip shade of ambermoon,		TBC: <NYI> <TXT> gossip shade of ambermoon,		CLASSIC: <NYI> <TXT> gossip shade of ambermoon
 q(8445),	-- <NYI> <TXT> gossip shade of ambermoon,		TBC: <NYI> <TXT> gossip shade of ambermoon,		CLASSIC: <NYI> <TXT> gossip shade of ambermoon
 q(8459),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(8484),	-- The Brokering of Peace,		TBC: The Brokering of Peace,		CLASSIC: The Brokering of Peace
 q(8530),	-- The Alliance Needs Singed Corestones!,		TBC: The Alliance Needs Singed Corestones!,		CLASSIC: The Alliance Needs Singed Corestones!
 q(8617),	-- The Horde Needs Singed Corestones!,		TBC: The Horde Needs Singed Corestones!,		CLASSIC: The Horde Needs Singed Corestones!
 q(8869),	-- Sweet Serenity,		TBC: Sweet Serenity,		CLASSIC: Sweet Serenity

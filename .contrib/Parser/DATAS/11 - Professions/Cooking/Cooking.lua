@@ -2412,11 +2412,8 @@ profession(COOKING, {
 				["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
 			})),
 			un(REMOVED_FROM_GAME, i(5485)),		-- Recipe: Fillet of Frenzy
-			un(REMOVED_FROM_GAME, i(3736)),		-- Recipe: Tasty Lion Steak
 			un(REMOVED_FROM_GAME, i(13939)),	-- Recipe: Spotted Yellowtail
 			un(REMOVED_FROM_GAME, i(13942)),	-- Recipe: Grilled Squid
-			un(REMOVED_FROM_GAME, i(35564)),	-- Recipe: Charred Bear Kabobs
-			un(REMOVED_FROM_GAME, i(35566)),	-- Recipe: Juicy Bear Burger
 			un(REMOVED_FROM_GAME, i(13945)),	-- Recipe: Nightfin Soup
 			un(REMOVED_FROM_GAME, i(13946)),	-- Recipe: Poached Sunscale Salmon
 		}),

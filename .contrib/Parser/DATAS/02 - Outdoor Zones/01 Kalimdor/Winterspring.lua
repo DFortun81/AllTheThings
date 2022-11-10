@@ -19,8 +19,6 @@ local OnTooltipForEverlook = [[function(t)
 		GameTooltip:AddLine(" * PROTIP: Ratchet is faster.", 1, 1, 1);
 	end
 end]];
--- #if ANYCLASSIC
--- Crieve NOTE: I'm not sure if this is the same in Retail as it is in Classic, so gonna write a Retail version when I get a chance.
 local OnTooltipForTimbermawHold = [[function(t)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -58,6 +56,8 @@ local OnTooltipForTimbermawHold = [[function(t)
 		-- #endif
 		-- #if AFTER CATA
 		local repPerTurnIn = isHuman and 2200 or 2000;
+		-- #elseif AFTER WRATH
+		local repPerTurnIn = isHuman and 330 or 300;
 		-- #elseif AFTER TBC
 		local repPerTurnIn = isHuman and 165 or 150;
 		-- #else
@@ -77,6 +77,8 @@ local OnTooltipForTimbermawHold = [[function(t)
 		-- #endif
 	end
 end]];
+-- #if BEFORE CATA
+-- Crieve NOTE: This is done by completing the 'They Grow Up So Fast' quest for Cata+.
 local OnTooltipForWintersaberTrainers = [[function(t)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -332,14 +334,12 @@ root("Zones", m(KALIMDOR, {
 					["maps"] = { TANARIS, THE_BARRENS },
 				}),
 				faction(576, {	-- Timbermaw Hold
-					-- #if ANYCLASSIC
 					["OnTooltip"] = OnTooltipForTimbermawHold,
-					-- #endif
 					["maps"] = { FELWOOD },
 				}),
 				faction(589, {	-- Wintersaber Trainers
 					["icon"] = icon("ability_mount_pinktiger"),
-					-- #if ANYCLASSIC
+					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForWintersaberTrainers,
 					-- #endif
 					["races"] = ALLIANCE_ONLY,

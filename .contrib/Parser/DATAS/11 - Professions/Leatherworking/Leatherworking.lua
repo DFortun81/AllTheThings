@@ -7885,6 +7885,7 @@ itemrecipe("Pattern: Core Armor Kit", 18252, 22727);
 itemrecipe("Pattern: Heavy Leather Ball", 18731, 23190);
 itemrecipe("Pattern: Barbaric Bracers", 18949, 23399);
 itemrecipe("Pattern: Warbear Harness", 20253, 19068);
+itemrecipe("Pattern: Warbear Woolies", 15754, 19080);
 itemrecipe("Pattern: Warbear Woolies", 20254, 19080);
 itemrecipe("Pattern: Black Whelp Tunic", 20576, 24940);
 itemrecipe("Pattern: Stormshroud Gloves", 21548, 26279);
@@ -8174,7 +8175,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		itemrecipe("Deprecated Pattern: Trogg Vest", 2600),
 		itemrecipe("Deprecated Pattern: Feathered Robe", 2602),
 		itemrecipe("Pattern: Double-stitched Leather Gloves OLD", 4295),
-		itemrecipe("Pattern: Warbear Woolies", 15754, 19080),
 		itemrecipe("Pattern: Nightscape Cloak", 8388, 10550),
 		itemrecipe("Pattern: Onyxia Scale Breastplate", 15780, 19106);
 		

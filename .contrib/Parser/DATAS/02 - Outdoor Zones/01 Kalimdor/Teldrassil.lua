@@ -775,15 +775,6 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(979, {	-- Find Ranshalla
-					["qg"] = 7916,	-- Erelas Ambersky
-					["sourceQuest"] = 978,	-- Moontouched Wildkin
-					["coord"] = { 55.5, 92.1, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { WINTERSPRING },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 52,
-				}),
 				-- #if BEFORE CATA
 				q(6342, {	-- Flight to Auberdine / An Unexpected Gift [CATA+]
 					["providers"] = {
@@ -855,23 +846,6 @@ root("Zones", m(KALIMDOR, {
 							["description"] = "This gets completely removed. To be safe, keep this in your bank on an alt forever.",
 							-- #endif
 							["timeline"] = { "removed 4.0.3" },
-						}),
-					},
-				}),
-				q(978, {	-- Moontouched Wildkin
-					["qg"] = 7916,	-- Erelas Ambersky
-					["sourceQuest"] = 3661,	-- Favored of Elune?
-					["coord"] = { 55.5, 92.1, TELDRASSIL },
-					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { WINTERSPRING },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 52,
-					["groups"] = {
-						objective(1, {	-- 0/10 Moontouched Feather
-							["providers"] = {
-								{ "i", 12383 },	-- Moontouched Feather
-								{ "o", 175407 },	-- Moontouched Feather
-							},
 						}),
 					},
 				}),
