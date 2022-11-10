@@ -34,6 +34,22 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				q(65419, {	-- Protoform Synthesis
 					["description"] = "Require Dealic Understanding.",
 					["provider"] = { "n", 181059 },	-- Pocopoc
+					["g"] = {
+						recipe(364571),	-- Archetype of Animation
+						recipe(364580),	-- Archetype of Cunning
+						recipe(363894),	-- Archetype of Discovery
+						recipe(364572),	-- Archetype of Focus
+						recipe(364585),	-- Archetype of Malice
+						recipe(364549),	-- Archetype of Metamorphosis
+						recipe(364568),	-- Archetype of Motion
+						recipe(364576),	-- Archetype of Multiplicity
+						recipe(364581),	-- Archetype of Predation
+						recipe(364573),	-- Archetype of Renewal
+						recipe(364570),	-- Archetype of Satisfaction
+						recipe(364584),	-- Archetype of Serenity
+						recipe(364551),	-- Archetype of Survival
+						recipe(364578),	-- Archetype of Vigilance
+					},
 				}),
 				-- Unlock Mount Forge Available with Sopranian Understanding
 				q(64829, {	-- Finding Tahli
@@ -107,176 +123,287 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189418 },	-- Schematic: Ambystan Darter
 					["coord"] = { 78.1, 53.1, ZERETH_MORTIS },
+					["g"] = {
+						recipe(364527),	-- Ambystan Darter
+					},
 				}),
 				q(65332, {	-- Schematic Reassimilation: Fierce Scarabid
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189434 },	-- Schematic: Fierce Scarabid
 					["coord"] = { 61.2, 42.6, ZERETH_MORTIS },
+					["g"] = {
+						recipe(364665),	-- Fierce Scarabid
+					},
 				}),
 				q(65357, {	-- Schematic Reassimilation: Leaping Leporid
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189444 },	-- Schematic: Leaping Leporid
 					["coord"] = { 58.3, 74.3, ZERETH_MORTIS },
+					["g"] = {
+						recipe(364703),	-- Leaping Leporid
+					},
 				}),
 				q(65358, {	-- Schematic Reassimilation: Microlicid
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189445 },	-- Schematic: Microlicid
 					["coord"] = { 28.1, 50, ZERETH_MORTIS },
+					["g"] = {
+						recipe(364697),	-- Microlicid
+					},
 				}),
 				q(65333, {	-- Schematic Reassimilation: Multichicken
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189435 },	-- Schematic: Multichicken
 					["coord"] = { 53.8, 72.5, ZERETH_MORTIS },
+					["g"] = {
+						recipe(364679),	-- Multichicken
+					},
 				}),
 				q(65348, {	-- Schematic Reassimilation: Omnipotential Core
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189440 },	-- Schematic: Omnipotential Core
 					["coord"] = { 42.8, 40.6, 2029 },
+					["g"] = {
+						recipe(364689),	-- Omnipotential Core
+					},
 				}),
 				q(65354, {	-- Schematic Reassimilation: Prototickles
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189442 },	-- Schematic: Prototickles
 					["coord"] = { 52.3, 75.4, ZERETH_MORTIS },
+					["g"] = {
+						recipe(364691),	-- Prototickles
+					},
 				}),
 				q(65351, {	-- Schematic Reassimilation: Resonant Echo
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189441 },	-- Schematic: Resonant Echo
+					["g"] = {
+						recipe(364690),	-- Resonant Echo
+					},
 				}),
 				q(65359, {	-- Schematic Reassimilation: Shelly
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189446 },	-- Schematic: Shelly
 					["coord"] = { 57.9, 78, ZERETH_MORTIS },
+					["g"] = {
+						recipe(364698),	-- Shelly
+					},
 				}),
 				q(65336, {	-- Schematic Reassimilation: Stabilized Geomental
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189437 },	-- Schematic: Stabilized Geomental
+					["g"] = {
+						recipe(364688),	-- Stabilized Geomental
+					},
 				}),
 				q(65355, {	-- Schematic Reassimilation: Terror Jelly
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189443 },	-- Schematic: Terror Jelly
 					["coord"] = { 67.2, 32.6, ZERETH_MORTIS },
+					["g"] = {
+						recipe(364695),	-- Terror Jelly
+					},
 				}),
 				q(65361, {	-- Schematic Reassimilation: Tunneling Vombata
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189448 },	-- Schematic: Tunneling Vombata
 					["coord"] = { 74.7, 50.5, 2028 },
+					["g"] = {
+						recipe(364700),	-- Tunneling Vombata
+					},
 				}),
 				q(65334, {	-- Schematic Reassimilation: Violent Poultrid
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189436 },	-- Schematic: Violent Poultrid
+					["g"] = {
+						recipe(364687),	-- Violent Poultrid
+					},
 				}),
 				q(65360, {	-- Schematic Reassimilation: Viperid Menace
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189447 },	-- Schematic: Viperid Menace
 					["coord"] = { 58.9, 77, ZERETH_MORTIS },
+					["g"] = {
+						recipe(364699),	-- Viperid Menace
+					},
 				}),
 				-- Mounts
 				q(65401, {	-- Schematic Reassimilation: Adorned Vombata
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189478 },	-- Schematic: Adorned Vombata
 					["coord"] = { 37.2, 78.2, ZERETH_MORTIS },
+					["g"] = {
+						recipe(365068),	-- Adorned Vombata
+					},
 				}),
 				q(65385, {	-- Schematic Reassimilation: Bronze Helicid
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189462 },	-- Schematic: Bronze Helicid
+					["g"] = {
+						recipe(365073),	-- Bronze Helicid
+					},
 				}),
 				q(65396, {	-- Schematic Reassimilation: Bronzewing Vespoid
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189473 },	-- Schematic: Bronzewing Vespoid
 					["coord"] = { 48.8, 40.3, ZERETH_MORTIS },
+					["g"] = {
+						recipe(365047),	-- Bronzewing Vespoid
+					},
 				}),
 				q(65397, {	-- Schematic Reassimilation: Buzz
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189474 },	-- Schematic: Buzz
+					["g"] = {
+						recipe(365048),	-- Buzz
+					},
 				}),
 				q(65399, {	-- Schematic Reassimilation: Curious Crystalsniffer
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189476 },	-- Schematic: Curious Crystalsniffer
+					["g"] = {
+						recipe(365064),	-- Curious Crystalsniffer
+					},
 				}),
 				q(65400, {	-- Schematic Reassimilation: Darkened Vombata
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189477 },	-- Schematic: Darkened Vombata
 					["coord"] = { 64.2, 35.6, ZERETH_MORTIS },
+					["g"] = {
+						recipe(365065),	-- Darkened Vombata
+					},
 				}),
 				q(65380, {	-- Schematic Reassimilation: Deathrunner
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189457 },	-- Schematic: Deathrunner
 					["coord"] = { 70.2, 28.6, ZERETH_MORTIS },
+					["g"] = {
+						recipe(365045),	-- Deathrunner
+					},
 				}),
 				q(65381, {	-- Schematic Reassimilation: Desertwing Hunter
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189458 },	-- Schematic: Desertwing Hunter
 					["coord"] = { 62, 43.5, ZERETH_MORTIS },
+					["g"] = {
+						recipe(365050),	-- Desertwing Hunter
+					},
 				}),
 				q(65398, {	-- Schematic Reassimilation: Forged Spiteflyer
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189475 },	-- Schematic: Forged Spiteflyer
 					["coord"] = { 53.3, 25.7, ZERETH_MORTIS },
+					["g"] = {
+						recipe(365049),	-- Forged Spiteflyer
+					},
 				}),
 				q(65388, {	-- Schematic Reassimilation: Genesis Crawler
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189465 },	-- Schematic: Genesis Crawler
 					["coord"] = { 31.5, 50.3, ZERETH_MORTIS },
+					["g"] = {
+						recipe(365055),	-- Genesis Crawler
+					},
 				}),
 				q(65391, {	-- Schematic Reassimilation: Goldplate Bufonid
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189468 },	-- Schematic: Goldplate Bufonid
+					["g"] = {
+						recipe(365058),	-- Goldplate Bufonid
+					},
 				}),
 				q(65680, {	-- Schematic Reassimilation: Heartbond Lupine
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 190585 },	-- Schematic: Heartbond Lupine
 					["coord"] = { 52.8, 63.6, ZERETH_MORTIS },
+					["g"] = {
+						recipe(367704),	-- Heartbond Lupine
+					},
 				}),
 				q(65390, {	-- Schematic Reassimilation: Ineffable Skitterer
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189467 },	-- Schematic: Ineffable Skitterer
+					["g"] = {
+						recipe(365057),	-- Ineffable Skitterer
+					},
 				}),
 				q(65382, {	-- Schematic Reassimilation: Mawdapted Raptora
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189459 },	-- Schematic: Mawdapted Raptora
+					["g"] = {
+						recipe(365051),	-- Mawdapted Raptora
+					},
 				}),
 				q(65393, {	-- Schematic Reassimilation: Prototype Leaper
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189469 },	-- Schematic: Prototype Leaper
 					["coord"] = { 67, 69.4, ZERETH_MORTIS },
+					["g"] = {
+						recipe(365062),	-- Prototype Leaper
+					},
 				}),
 				q(65383, {	-- Schematic Reassimilation: Raptora Swooper
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189460 },	-- Schematic: Raptora Swooper
 					["coord"] = { 67.4, 40.2, ZERETH_MORTIS },
+					["g"] = {
+						recipe(365052),	-- Raptora Swooper
+					},
 				}),
 				q(65394, {	-- Schematic Reassimilation: Russet Bufonid
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189471 },	-- Schematic: Russet Bufonid
+					["g"] = {
+						recipe(365063),	-- Russet Bufonid
+					},
 				}),
 				q(65387, {	-- Schematic Reassimilation: Scarlet Helicid
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189464 },	-- Schematic: Scarlet Helicid
 					["coord"] = { 47.7, 9.6, ZERETH_MORTIS },
+					["g"] = {
+						recipe(365076),	-- Scarlet Helicid
+					},
 				}),
 				q(65384	, {	-- Schematic Reassimilation: Serenade
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189461 },	-- Schematic: Serenade
+					["g"] = {
+						recipe(365072),	-- Serenade
+					},
 				}),
 				q(65379, {	-- Schematic Reassimilation: Sundered Zerethsteed
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189456 },	-- Schematic: Sundered Zerethsteed
 					["coord"] = { 60.6, 30.5, ZERETH_MORTIS },
+					["g"] = {
+						recipe(365042),	-- Sundered Zerethsteed
+					},
 				}),
 				q(65389, {	-- Schematic Reassimilation: Tarachnid Creeper
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189466 },	-- Schematic: Tarachnid Creeper
 					["coord"] = { 62.9, 22, ZERETH_MORTIS },
+					["g"] = {
+						recipe(365056),	-- Tarachnid Creeper
+					},
 				}),
 				q(65386	, {	-- Schematic Reassimilation: Unsuccessful Prototype Fleetpod
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189463 },	-- Schematic: Unsuccessful Prototype Fleetpod
 					--["coord"] = { , , ZERETH_MORTIS },
+					["g"] = {
+						recipe(365074),	-- Unsuccessful Prototype Fleetpod
+					},
 				}),
 				q(65395, {	-- Schematic Reassimilation: Vespoid Flutterer
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189472 },	-- Schematic: Vespoid Flutterer
 					["coord"] = { 50.3, 27.1, ZERETH_MORTIS },
+					["g"] = {
+						recipe(365046),	-- Vespoid Flutterer
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -432,66 +559,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["g"] = {
 						i(189463),	-- Schematic: Unsuccessful Prototype Fleetpod
 					},
-				}),
-			}),
-			filter(RECIPES, {
-				filter(BATTLE_PETS, {
-					recipe(364527),	-- Ambystan Darter
-					recipe(364571),	-- Archetype of Animation
-					recipe(364580),	-- Archetype of Cunning
-					recipe(363894),	-- Archetype of Discovery
-					recipe(364572),	-- Archetype of Focus
-					recipe(364585),	-- Archetype of Malice
-					recipe(364549),	-- Archetype of Metamorphosis
-					recipe(364568),	-- Archetype of Motion
-					recipe(364576),	-- Archetype of Multiplicity
-					recipe(364581),	-- Archetype of Predation
-					recipe(364573),	-- Archetype of Renewal
-					recipe(364570),	-- Archetype of Satisfaction
-					recipe(364584),	-- Archetype of Serenity
-					recipe(364551),	-- Archetype of Survival
-					recipe(364578),	-- Archetype of Vigilance
-					recipe(364665),	-- Fierce Scarabid
-					recipe(364703),	-- Leaping Leporid
-					recipe(364697),	-- Microlicid
-					recipe(364679),	-- Multichicken
-					recipe(364689),	-- Omnipotential Core
-					recipe(364689),	-- Omnipotential Core
-					recipe(364691),	-- Prototickles
-					recipe(364690),	-- Resonant Echo
-					recipe(364698),	-- Shelly
-					recipe(364688),	-- Stabilized Geomental
-					recipe(364695),	-- Terror Jelly
-					recipe(364700),	-- Tunneling Vombata
-					recipe(364687),	-- Violent Poultrid
-					recipe(364699),	-- Viperid Menace
-				}),
-				filter(MOUNTS, {
-					recipe(365068),	-- Adorned Vombata
-					recipe(365073),	-- Bronze Helicid
-					recipe(365047),	-- Bronzewing Vespoid
-					recipe(365048),	-- Buzz
-					recipe(365064),	-- Curious Crystalsniffer
-					recipe(365065),	-- Darkened Vombata
-					recipe(365045),	-- Deathrunner
-					recipe(365050),	-- Desertwing Hunter
-					recipe(365049),	-- Forged Spiteflyer
-					recipe(365055),	-- Genesis Crawler
-					recipe(365058),	-- Goldplate Bufonid
-					recipe(367704),	-- Heartbond Lupine
-					recipe(365057),	-- Ineffable Skitterer
-					recipe(365051),	-- Mawdapted Raptora
-					recipe(365040),	-- Pale Regal Cervid
-					recipe(365062),	-- Prototype Leaper
-					recipe(365052),	-- Raptora Swooper
-					recipe(365063),	-- Russet Bufonid
-					recipe(365076),	-- Scarlet Helicid
-					recipe(365042),	-- Sundered Zerethsteed
-					recipe(365072),	-- Serenade
-					recipe(365056),	-- Tarachnid Creeper
-					recipe(365074),	-- Unsuccessful Prototype Fleetpod
-					recipe(365046),	-- Vespoid Flutterer
-
 				}),
 			}),
 			n(CRAFTABLES, {

@@ -80,9 +80,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(2),		-- Purified Blessing of Power
 			crit(3),		-- Purified Blessing of Fortitude
 		}),
-		ach(15402, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cyphers of the First Ones
-			recipe(365040),	-- Pale Regal Cervid
-		})),
 		ach(15392, {	-- Dune Dominance
 			["timeline"] = { "added 9.2.0" },
 		}),
