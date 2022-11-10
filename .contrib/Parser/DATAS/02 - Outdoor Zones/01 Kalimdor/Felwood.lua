@@ -178,7 +178,9 @@ root("Zones", m(KALIMDOR, {
 									applyclassicphase(PHASE_THREE, i(19202)),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
 									applyclassicphase(PHASE_THREE, i(19204)),	-- Plans: Heavy Timbermaw Boots (RECIPE!)
 									i(13484),	-- Recipe: Transmute Earth to Water
-									i(66888),	-- Stave of Fur and Claw Toy (TOY!)
+									i(66888, {	-- Stave of Fur and Claw Toy (TOY!)
+										["minReputation"] = { 576, EXALTED },
+									}),
 								},
 							}),
 						}),
