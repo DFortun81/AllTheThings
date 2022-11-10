@@ -495,18 +495,41 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				}),
 			}),
 			d(14, {	-- Normal
+				ach(15191, {	-- Rae'shalare, Death's Whisper
+					["provider"] = { "i", 186414 },
+					["classes"] = { HUNTER },
+				}),
 				ach(15126, {	-- Sanctum of Domination
-					-- TODO: _encounter support
-					-- crit(1),	-- The Tarragrue
-					-- crit(2),	-- The Eye of the Jailer
-					-- crit(3),	-- The Nine
-					-- crit(4),	-- Remnant of Ner'zhul
-					-- crit(5),	-- Soulrender Dormazain
-					-- crit(6),	-- Painsmith Raznal
-					-- crit(7),	-- Guardian of the First Ones
-					-- crit(8),	-- Fatescribe Roh-Kalo
-					-- crit(9),	-- Kel'Thuzad
-					-- crit(10),	-- Sylvanas Windrunner
+					crit(1, { -- The Tarragrue
+						["_encounter"] = { 2435, 14 },
+					}),
+					crit(2, { -- The Eye of the Jailer
+						["_encounter"] = { 2442, 14 },
+					}),
+					crit(3, { -- The Nine
+						["_encounter"] = { 2439, 14 },
+					}),
+					crit(4, { -- Remnant of Ner'zhul
+						["_encounter"] = { 2444, 14 },
+					}),
+					crit(5, { -- Soulrender Dormazain
+						["_encounter"] = { 2445, 14 },
+					}),
+					crit(6, { -- Painsmith Raznal
+						["_encounter"] = { 2443, 14 },
+					}),
+					crit(7, { -- Guardian of the First Ones
+						["_encounter"] = { 2446, 14 },
+					}),
+					crit(8, { -- Fatescribe Roh-Kalo
+						["_encounter"] = { 2447, 14 },
+					}),
+					crit(9, { -- Kel'Thuzad
+						["_encounter"] = { 2440, 14 },
+					}),
+					crit(10, {-- Sylvanas Windrunner
+						["_encounter"] = { 2441, 14 },
+					}),
 				}),
 				n(QUESTS, {
 					q(64597, {	-- Sanctum of Domination - Damned If You Don't [N]
@@ -529,9 +552,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2435, {	-- The Tarragrue
 					["crs"] = { 175611 },	-- The Tarragrue
 					["g"] = {
-						crit(1, {	-- The Tarragrue
-							["achievementID"] = 15126,	-- Sanctum of Domination
-						}),
 						ach(14998),	-- Name A Better Duo, I'll Wait
 						i(186381),	-- Elethium-Bladed Glaive
 						i(186415),	-- Moriaz's Spare Targe
@@ -553,9 +573,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						176531,	-- Deathseeker Eye
 					},
 					["g"] = {
-						crit(2, {	-- The Eye of the Jailer
-							["achievementID"] = 15126,	-- Sanctum of Domination
-						}),
 						ach(15065, {	-- Eye Wish You Were Here
 							crit(1),	-- All players have Photoflash!
 							crit(2),	-- Eye of the Jailer has Photoflash!
@@ -588,9 +605,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						177098,	-- Arthura
 					},
 					["g"] = {
-						crit(3, {	-- The Nine
-							["achievementID"] = 15126,	-- Sanctum of Domination
-						}),
 						ach(15003),	-- To the Nines
 						i(186656),	-- Sanctum Gloomcharger (MOUNT!)
 						i(186404),	-- Jotungeirr, Destiny's Call
@@ -610,9 +624,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2444, {	-- Remnant of Ner'zhul
 					["crs"] = { 175729 },	-- Remnant of Ner'zhul
 					["g"] = {
-						crit(4, {	-- Remnant of Ner'zhul
-							["achievementID"] = 15126,	-- Sanctum of Domination
-						}),
 						ach(15058),	-- I Used to Bullseye Deeprun Rats Back Home
 						i(186405),	-- Gnarled Staff of the Elder Shaman
 						i(186386),	-- Betrayer's Shadowspike
@@ -630,9 +641,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2445, {	-- Soulrender Dormazain
 					["crs"] = { 175727 },	-- Soulrender Dormazain 175728 Garrosh Hellscream
 					["g"] = {
-						crit(5, {	-- Soulrender Dormazain
-							["achievementID"] = 15126,	-- Sanctum of Domination
-						}),
 						ach(15105),	-- Tormentor's Tango
 						i(186558),	-- Irongrasp (PET!)
 						i(186407),	-- Hellscream's Requiem
@@ -652,9 +660,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2443, {	-- Painsmith Raznal
 					["crs"] = { 176523 },	-- Painsmith Raznal
 					["g"] = {
-						crit(6, {	-- Painsmith Raznal
-							["achievementID"] = 15126,	-- Sanctum of Domination
-						}),
 						ach(15131),	-- Whack-A-Soul
 						i(186388),	-- Cruciform Veinripper
 						i(186392),	-- Exacting Mindslicer
@@ -673,9 +678,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2446, {	-- Guardian of the First Ones
 					["crs"] = { 175731 },	-- Guardian of the First Ones
 					["g"] = {
-						crit(7, {	-- Guardian of the First Ones
-							["achievementID"] = 15126,	-- Sanctum of Domination
-						}),
 						ach(15132),	-- Knowledge is Power
 						i(186409),	-- Pylon of the Great Purge
 						i(186393),	-- Torch of Eternal Knowledge
@@ -695,9 +697,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2447, {	-- Fatescribe Roh-Kalo
 					["crs"] = { 175730 },	-- Fatescribe Roh-Kalo
 					["g"] = {
-						crit(8, {	-- Fatescribe Roh-Kalo
-							["achievementID"] = 15126,	-- Sanctum of Domination
-						}),
 						ach(15040),	-- Flawless Fate
 						i(186419),	-- Record of Collapsing Realities
 						i(186330),	-- Cowl of Haunting Precognition
@@ -716,9 +715,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2440, {	-- Kel'Thuzad
 					["crs"] = { 175559 },	-- Kel'Thuzad
 					["g"] = {
-						crit(9, {	-- Kel'Thuzad
-							["achievementID"] = 15126,	-- Sanctum of Domination
-						}),
 						ach(15108),	-- Together Forever
 						i(186550),	-- Mawsworn Minion (PET!)
 						i(187542),	-- Jaithys, the Prison Blade
@@ -746,14 +742,9 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2441, {	-- Sylvanas Windrunner
 					["crs"] = { 175732 },	-- Sylvanas Windrunner
 					["g"] = {
-						crit(10, {	-- Sylvanas Windrunner
-							["achievementID"] = 15126,	-- Sanctum of Domination
-						}),
 						ach(15133),	-- This World is a Prism
 						i(186398),	-- Edge of Night
-						i(186414, {	-- Rae'shalare, Death's Whisper
-							ach(15191),	-- Rae'shalare, Death's Whisper
-						}),
+						i(186414),	-- Rae'shalare, Death's Whisper
 						i(186417),	-- Guard of the Sundered Defender
 						i(186325),	-- Veil of the Banshee Queen
 						i(186342),	-- Epaulettes of the Master Ranger
@@ -770,17 +761,36 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 			}),
 			d(15, {	-- Heroic
 				ach(15127, {	-- Heroic: Sanctum of Domination
-					-- TODO: _encounter support
-					-- crit(1),	-- The Tarragrue
-					-- crit(2),	-- The Eye of the Jailer
-					-- crit(3),	-- The Nine
-					-- crit(4),	-- Soulrender Dormazain
-					-- crit(5),	-- Remnant of Ner'zhul
-					-- crit(6),	-- Painsmith Raznal
-					-- crit(7),	-- Guardian of the First Ones
-					-- crit(8),	-- Fatescribe Roh-Kalo
-					-- crit(9),	-- Kel'Thuzad
-					-- crit(10),	-- Sylvanas Windrunner
+					crit(1, { -- The Tarragrue
+						["_encounter"] = { 2435, 16 },
+					}),
+					crit(2, { -- The Eye of the Jailer
+						["_encounter"] = { 2442, 16 },
+					}),
+					crit(3, { -- The Nine
+						["_encounter"] = { 2439, 16 },
+					}),
+					crit(4, { -- Remnant of Ner'zhul
+						["_encounter"] = { 2444, 16 },
+					}),
+					crit(5, { -- Soulrender Dormazain
+						["_encounter"] = { 2445, 16 },
+					}),
+					crit(6, { -- Painsmith Raznal
+						["_encounter"] = { 2443, 16 },
+					}),
+					crit(7, { -- Guardian of the First Ones
+						["_encounter"] = { 2446, 16 },
+					}),
+					crit(8, { -- Fatescribe Roh-Kalo
+						["_encounter"] = { 2447, 16 },
+					}),
+					crit(9, { -- Kel'Thuzad
+						["_encounter"] = { 2440, 16 },
+					}),
+					crit(10, {-- Sylvanas Windrunner
+						["_encounter"] = { 2441, 16 },
+					}),
 				}),
 				n(QUESTS, {
 					q(64598, {	-- Sanctum of Domination - Damned If You Don't [H]
@@ -803,9 +813,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2435, {	-- The Tarragrue
 					["crs"] = { 175611 },	-- The Tarragrue
 					["g"] = {
-						crit(1, {	-- The Tarragrue
-							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
-						}),
 						ach(14998),	-- Name A Better Duo, I'll Wait
 						i(186381),	-- Elethium-Bladed Glaive
 						i(186415),	-- Moriaz's Spare Targe
@@ -827,9 +834,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						176531,	-- Deathseeker Eye
 					},
 					["g"] = {
-						crit(2, {	-- The Eye of the Jailer
-							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
-						}),
 						ach(15065, {	-- Eye Wish You Were Here
 							crit(1),	-- All players have Photoflash!
 							crit(2),	-- Eye of the Jailer has Photoflash!
@@ -862,9 +866,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						177098,	-- Arthura
 					},
 					["g"] = {
-						crit(3, {	-- The Nine
-							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
-						}),
 						ach(15003),	-- To the Nines
 						i(186656),	-- Sanctum Gloomcharger (MOUNT!)
 						i(186404),	-- Jotungeirr, Destiny's Call
@@ -884,9 +885,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2444, {	-- Remnant of Ner'zhul
 					["crs"] = { 175729 },	-- Remnant of Ner'zhul
 					["g"] = {
-						crit(5, {	-- Remnant of Ner'zhul
-							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
-						}),
 						ach(15058),	-- I Used to Bullseye Deeprun Rats Back Home
 						i(186405),	-- Gnarled Staff of the Elder Shaman
 						i(186386),	-- Betrayer's Shadowspike
@@ -904,9 +902,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2445, {	-- Soulrender Dormazain
 					["crs"] = { 175727 },	-- Soulrender Dormazain 175728 Garrosh Hellscream
 					["g"] = {
-						crit(4, {	-- Soulrender Dormazain
-							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
-						}),
 						ach(15105),	-- Tormentor's Tango
 						i(186558),	-- Irongrasp (PET!)
 						i(186407),	-- Hellscream's Requiem
@@ -926,9 +921,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2443, {	-- Painsmith Raznal
 					["crs"] = { 176523 },	-- Painsmith Raznal
 					["g"] = {
-						crit(6, {	-- Painsmith Raznal
-							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
-						}),
 						ach(15131),	-- Whack-A-Soul
 						i(186388),	-- Cruciform Veinripper
 						i(186392),	-- Exacting Mindslicer
@@ -947,9 +939,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2446, {	-- Guardian of the First Ones
 					["crs"] = { 175731 },	-- Guardian of the First Ones
 					["g"] = {
-						crit(7, {	-- Guardian of the First Ones
-							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
-						}),
 						ach(15132),	-- Knowledge is Power
 						i(186409),	-- Pylon of the Great Purge
 						i(186393),	-- Torch of Eternal Knowledge
@@ -969,9 +958,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2447, {	-- Fatescribe Roh-Kalo
 					["crs"] = { 175730 },	-- Fatescribe Roh-Kalo
 					["g"] = {
-						crit(8, {	-- Fatescribe Roh-Kalo
-							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
-						}),
 						ach(15040),	-- Flawless Fate
 						i(186419),	-- Record of Collapsing Realities
 						i(186330),	-- Cowl of Haunting Precognition
@@ -990,9 +976,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2440, {	-- Kel'Thuzad
 					["crs"] = { 175559 },	-- Kel'Thuzad
 					["g"] = {
-						crit(9, {	-- Kel'Thuzad
-							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
-						}),
 						ach(15108),	-- Together Forever
 						i(186550),	-- Mawsworn Minion (PET!)
 						i(187542),	-- Jaithys, the Prison Blade
@@ -1020,17 +1003,12 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2441, {	-- Sylvanas Windrunner
 					["crs"] = { 175732 },	-- Sylvanas Windrunner
 					["g"] = {
-						crit(10, {	-- Sylvanas Windrunner
-							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
-						}),
 						ach(15134, {	-- Ahead of the Curve: Sylvanas Windrunner
 							["timeline"] = { "added 9.1.0", "removed 9.2.0" },
 						}),
 						ach(15133),	-- This World is a Prism
 						i(186398),	-- Edge of Night
-						i(186414, {	-- Rae'shalare, Death's Whisper
-							ach(15191),	-- Rae'shalare, Death's Whisper
-						}),
+						i(186414),	-- Rae'shalare, Death's Whisper
 						i(186417),	-- Guard of the Sundered Defender
 						i(186325),	-- Veil of the Banshee Queen
 						i(186342),	-- Epaulettes of the Master Ranger
@@ -1308,9 +1286,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						ach(15133),	-- This World is a Prism
 						i(186642),	-- Vengeance (MOUNT!)
 						i(186398),	-- Edge of Night
-						i(186414, {	-- Rae'shalare, Death's Whisper
-							ach(15191),	-- Rae'shalare, Death's Whisper
-						}),
+						i(186414),	-- Rae'shalare, Death's Whisper
 						i(186417),	-- Guard of the Sundered Defender
 						i(186325),	-- Veil of the Banshee Queen
 						i(186342),	-- Epaulettes of the Master Ranger
@@ -1348,159 +1324,161 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 }));
 
-root("HiddenQuestTriggers", {
-	--q(63074),	-- Stygian ember loot >-- seems a too low number for this.
-	q(64604),	-- Stygian Ember from Bonesteel [] (Normal / Heroic)
-	q(64616),	-- Stygian Ember from Bonesteel (Normal / Heroic)
-	q(64674),	-- 1x Styigan Ember from Bonesteel (LFR)
-	q(64683),	-- Stygian Ember from Bonesteel (Normal)
-	q(64617),	-- Stygian Ember from Bonesteel (Heroic)
-	q(64684),	-- Stygian Ember from Bonesteel (Heroic)
-	q(64618),	-- Bonesteel (Mythic)
-	q(64685),	-- Bonesteel (Mythic)
-	q(70491),	-- Bonesteel - Fated - Rep/Flux
-	q(70492),	-- Bonesteel - Fated - Rep/Flux
-	q(70725),	-- Bonesteel - Fated - ?
+root("HiddenQuestTriggers",  tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
+	inst(1193, {	-- Sanctum of Domination
+		--q(63074),	-- Stygian ember loot >-- seems a too low number for this.
+		q(64604),	-- Stygian Ember from Bonesteel [] (Normal / Heroic)
+		q(64616),	-- Stygian Ember from Bonesteel (Normal / Heroic)
+		q(64674),	-- 1x Styigan Ember from Bonesteel (LFR)
+		q(64683),	-- Stygian Ember from Bonesteel (Normal)
+		q(64617),	-- Stygian Ember from Bonesteel (Heroic)
+		q(64684),	-- Stygian Ember from Bonesteel (Heroic)
+		q(64618),	-- Bonesteel (Mythic)
+		q(64685),	-- Bonesteel (Mythic)
+		q(70491),	-- Bonesteel - Fated - Rep/Flux
+		q(70492),	-- Bonesteel - Fated - Rep/Flux
+		q(70725),	-- Bonesteel - Fated - ?
 
-	q(64603),	-- Stygian Ember from Soulember [176940] (Normal / Heroic)
-	q(64613),	-- Stygian Ember from Soulember (Normal / Heroic)
-	q(64673),	-- 1x Styigan Ember from Soulember (LFR)
-	q(64680),	-- Stygian Ember from Soulember (Normal)
-	q(64614),	-- Stygian Ember from Soulember (Heroic)
-	q(64681),	-- Stygian Ember from Soulember (Heroic)
-	q(64615),	-- Soulember (Mythic)
-	q(64682),	-- Soulember (Mythic)
-	q(70499),	-- Soulember - Fated - Rep/Flux
-	q(70500),	-- Soulember - Fated - Rep/Flux
-	q(70729),	-- Soulember - Fated - ?
+		q(64603),	-- Stygian Ember from Soulember [176940] (Normal / Heroic)
+		q(64613),	-- Stygian Ember from Soulember (Normal / Heroic)
+		q(64673),	-- 1x Styigan Ember from Soulember (LFR)
+		q(64680),	-- Stygian Ember from Soulember (Normal)
+		q(64614),	-- Stygian Ember from Soulember (Heroic)
+		q(64681),	-- Stygian Ember from Soulember (Heroic)
+		q(64615),	-- Soulember (Mythic)
+		q(64682),	-- Soulember (Mythic)
+		q(70499),	-- Soulember - Fated - Rep/Flux
+		q(70500),	-- Soulember - Fated - Rep/Flux
+		q(70729),	-- Soulember - Fated - ?
 
-	q(64602),	-- Stygian Ember from Hollowsoul [176879] (Normal / Heroic)
-	q(64610),	-- Stygian Ember from Hollowsoul (Normal / Heroic)
-	q(64677),	-- Stygian Ember from Hollowsoul (Normal)
-	q(64611),	-- Stygian Ember from Hollowsoul (Heroic)
-	q(64678),	-- Stygian Ember from Hollowsoul (Heroic)
-	q(64612),	-- Hollowsoul (Mythic)
-	q(64679),	-- Hollowsoul (Mythic)
-	q(70495),	-- Hollowsoul - Fated - Rep/Flux
-	q(70496),	-- Hollowsoul - Fated - Rep/Flux
-	q(70727),	-- Hollowsoul - Fated - ?
+		q(64602),	-- Stygian Ember from Hollowsoul [176879] (Normal / Heroic)
+		q(64610),	-- Stygian Ember from Hollowsoul (Normal / Heroic)
+		q(64677),	-- Stygian Ember from Hollowsoul (Normal)
+		q(64611),	-- Stygian Ember from Hollowsoul (Heroic)
+		q(64678),	-- Stygian Ember from Hollowsoul (Heroic)
+		q(64612),	-- Hollowsoul (Mythic)
+		q(64679),	-- Hollowsoul (Mythic)
+		q(70495),	-- Hollowsoul - Fated - Rep/Flux
+		q(70496),	-- Hollowsoul - Fated - Rep/Flux
+		q(70727),	-- Hollowsoul - Fated - ?
 
-	q(64676),	-- Borr-Gahn (LFR)
-	q(64606),	-- Stygian Ember from Borr-Gahn [178824] (Heroic)
-	q(64622),	-- Stygian Ember from Borr-Gahn (Heroic)
-	q(64623),	-- Stygian Ember from Borr-Gahn (Heroic)
-	q(64689),	-- Stygian Ember from Borr-Gahn (Normal)
-	q(64690),	-- Stygian Ember from Borr-Gahn (Heroic)
-	q(64624),	-- Borr-Gahn (Mythic)
-	q(64691),	-- Borr-Gahn (Mythic)
-	q(70493),	-- Borr-Gahn - Fated - Rep/Flux
-	q(70494),	-- Borr-Gahn - Fated - Rep/Flux
-	q(70726),	-- Borr-Gahn - Fated - ?
+		q(64676),	-- Borr-Gahn (LFR)
+		q(64606),	-- Stygian Ember from Borr-Gahn [178824] (Heroic)
+		q(64622),	-- Stygian Ember from Borr-Gahn (Heroic)
+		q(64623),	-- Stygian Ember from Borr-Gahn (Heroic)
+		q(64689),	-- Stygian Ember from Borr-Gahn (Normal)
+		q(64690),	-- Stygian Ember from Borr-Gahn (Heroic)
+		q(64624),	-- Borr-Gahn (Mythic)
+		q(64691),	-- Borr-Gahn (Mythic)
+		q(70493),	-- Borr-Gahn - Fated - Rep/Flux
+		q(70494),	-- Borr-Gahn - Fated - Rep/Flux
+		q(70726),	-- Borr-Gahn - Fated - ?
 
-	q(64675),	-- Stygian Ember from Screamspike (LFR)
-	q(64605),	-- Stygian Ember from Screamspike (Normal / Heroic)
-	q(64619),	-- Stygian Ember from Screamspike (Normal / Heroic)
-	q(64686),	-- Stygian Ember from Screamspike (Normal)
-	q(64620),	-- Stygian Ember from Screamspike (Heroic)
-	q(64687),	-- Stygian Ember from Screamspike (Heroic)
-	q(64621),	-- Screamspike (Mythic)
-	q(64688),	-- Screamspike (Mythic)
-	q(70497),	-- Screamspike - Fated - Rep/Flux
-	q(70498),	-- Screamspike - Fated - Rep/Flux
-	q(70728),	-- Screamspike - Fated - ?
+		q(64675),	-- Stygian Ember from Screamspike (LFR)
+		q(64605),	-- Stygian Ember from Screamspike (Normal / Heroic)
+		q(64619),	-- Stygian Ember from Screamspike (Normal / Heroic)
+		q(64686),	-- Stygian Ember from Screamspike (Normal)
+		q(64620),	-- Stygian Ember from Screamspike (Heroic)
+		q(64687),	-- Stygian Ember from Screamspike (Heroic)
+		q(64621),	-- Screamspike (Mythic)
+		q(64688),	-- Screamspike (Mythic)
+		q(70497),	-- Screamspike - Fated - Rep/Flux
+		q(70498),	-- Screamspike - Fated - Rep/Flux
+		q(70728),	-- Screamspike - Fated - ?
 
-	q(64326),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
-	q(64327),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
-	q(64328),	-- The Tarragrue (Heroic) (Heroic-Week 2)
-	q(64629),	-- The Tarragrue (Heroic-Week 2)
-	q(64653),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
-	q(64329),	-- The Tarragrue (Mythic)
-	q(70471),	-- The Tarragrue - Fated - Rep/Flux
-	q(70472),	-- The Tarragrue - Fated - Rep/Flux
+		q(64326),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
+		q(64327),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
+		q(64328),	-- The Tarragrue (Heroic) (Heroic-Week 2)
+		q(64629),	-- The Tarragrue (Heroic-Week 2)
+		q(64653),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
+		q(64329),	-- The Tarragrue (Mythic)
+		q(70471),	-- The Tarragrue - Fated - Rep/Flux
+		q(70472),	-- The Tarragrue - Fated - Rep/Flux
 
-	q(64330),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
-	q(64331),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
-	q(64332),	-- Eye of the Jailer (Heroic-Week 2)
-	q(64333),	-- Eye of the Jailer (Mythic)
-	q(64630),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
-	q(64657),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
-	q(70473),	-- Eye of the Jailer - Fated - Rep/Flux
-	q(70474),	-- Eye of the Jailer - Fated - Rep/Flux
+		q(64330),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
+		q(64331),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
+		q(64332),	-- Eye of the Jailer (Heroic-Week 2)
+		q(64333),	-- Eye of the Jailer (Mythic)
+		q(64630),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
+		q(64657),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
+		q(70473),	-- Eye of the Jailer - Fated - Rep/Flux
+		q(70474),	-- Eye of the Jailer - Fated - Rep/Flux
 
-	q(64334),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
-	q(64474),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
-	q(64475),	-- The Nine (Heroic) (Heroic-Week 2)
-	q(64631),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
-	q(64658),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
-	q(64476),	-- The Nine (Mythic)
-	q(70475),	-- The Nine - Fated - Rep/Flux
-	q(70476),	-- The Nine - Fated - Rep/Flux
+		q(64334),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
+		q(64474),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
+		q(64475),	-- The Nine (Heroic) (Heroic-Week 2)
+		q(64631),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
+		q(64658),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
+		q(64476),	-- The Nine (Mythic)
+		q(70475),	-- The Nine - Fated - Rep/Flux
+		q(70476),	-- The Nine - Fated - Rep/Flux
 
-	q(64481),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
-	q(64482),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
-	q(64483), 	-- Soulrender Dormazain (Heroic) (Heroic-Week 2)
-	q(64633),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
-	q(64660),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
-	q(64484),	-- Soulrender Dormazain (Mythic)
-	q(70479),	-- Soulrender Dormazain - Fated - Rep/Flux
-	q(70480),	-- Soulrender Dormazain - Fated - Rep/Flux
+		q(64481),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
+		q(64482),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
+		q(64483), 	-- Soulrender Dormazain (Heroic) (Heroic-Week 2)
+		q(64633),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
+		q(64660),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
+		q(64484),	-- Soulrender Dormazain (Mythic)
+		q(70479),	-- Soulrender Dormazain - Fated - Rep/Flux
+		q(70480),	-- Soulrender Dormazain - Fated - Rep/Flux
 
-	q(64608),	-- Garrosh cinematic (Normal / Heroic)
+		q(64608),	-- Garrosh cinematic (Normal / Heroic)
 
-	q(64477),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
-	q(64478),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
-	q(64479),	-- Remnant of Ner'zhul (Heroic) (Heroic-Week 2)
-	q(64632),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
-	q(64659),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
-	q(64480),	-- Remnant of Ner'zhul (Mythic)
-	q(70477),	-- Remnant of Ner'zhul - Fated - Rep/Flux
-	q(70478),	-- Remnant of Ner'zhul - Fated - Rep/Flux
+		q(64477),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
+		q(64478),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
+		q(64479),	-- Remnant of Ner'zhul (Heroic) (Heroic-Week 2)
+		q(64632),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
+		q(64659),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
+		q(64480),	-- Remnant of Ner'zhul (Mythic)
+		q(70477),	-- Remnant of Ner'zhul - Fated - Rep/Flux
+		q(70478),	-- Remnant of Ner'zhul - Fated - Rep/Flux
 
-	q(64672),	-- Painsmith Raznal (LFR)/LFR Wing 2 Completed
-	q(64485),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
-	q(64486),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
-	q(64487),	-- Painsmith Raznal (Heroic) (Heroic-Week 2)
-	q(64634),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
-	q(64661),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
-	q(64488),	-- Painsmith Raznal (Mythic)
-	q(70481),	-- Painsmith Raznal - Fated - Rep/Flux
-	q(70482),	-- Painsmith Raznal - Fated - Rep/Flux
+		q(64672),	-- Painsmith Raznal (LFR)/LFR Wing 2 Completed
+		q(64485),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
+		q(64486),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
+		q(64487),	-- Painsmith Raznal (Heroic) (Heroic-Week 2)
+		q(64634),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
+		q(64661),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
+		q(64488),	-- Painsmith Raznal (Mythic)
+		q(70481),	-- Painsmith Raznal - Fated - Rep/Flux
+		q(70482),	-- Painsmith Raznal - Fated - Rep/Flux
 
-	q(64489),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
-	q(64490),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
-	q(64491),	-- Guardian of the First Ones (Heroic) (Heroic-Week 2)
-	q(64635),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
-	q(64662),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
-	q(64492),	-- Guardian of the First Ones (Mythic)
-	q(70483),	-- Guardian of the First Ones - Fated - Rep/Flux
-	q(70484),	-- Guardian of the First Ones - Fated - Rep/Flux
+		q(64489),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
+		q(64490),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
+		q(64491),	-- Guardian of the First Ones (Heroic) (Heroic-Week 2)
+		q(64635),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
+		q(64662),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
+		q(64492),	-- Guardian of the First Ones (Mythic)
+		q(70483),	-- Guardian of the First Ones - Fated - Rep/Flux
+		q(70484),	-- Guardian of the First Ones - Fated - Rep/Flux
 
-	q(64493),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
-	q(64494),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
-	q(64495),	-- Fatescribe Roh-Kalo (Heroic)
-	q(64496),	-- Fatescribe Roh-Kalo (Mythic)
-	q(64636),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
-	q(64663),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
-	q(70485),	-- Fatescribe Roh-Kalo - Fated - Rep/Flux
-	q(70486),	-- Fatescribe Roh-Kalo - Fated - Rep/Flux
+		q(64493),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
+		q(64494),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
+		q(64495),	-- Fatescribe Roh-Kalo (Heroic)
+		q(64496),	-- Fatescribe Roh-Kalo (Mythic)
+		q(64636),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
+		q(64663),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
+		q(70485),	-- Fatescribe Roh-Kalo - Fated - Rep/Flux
+		q(70486),	-- Fatescribe Roh-Kalo - Fated - Rep/Flux
 
-	q(64497),	-- Kel'Thuzad (Normal)?
-	q(64498),	-- Kel'Thuzad (Normal)?
-	q(64499),	-- Kel'Thuzad (Heroic)
-	q(64637),	-- Kel'Thuzad (Normal)?
-	q(64664),	-- Kel'Thuzad (Normal)?
-	q(64500),	-- Kel'Thuzad (Mythic)
-	q(70487),	-- Kel'Thuzad - Fated - Rep/Flux
-	q(70488),	-- Kel'Thuzad - Fated - Rep/Flux
+		q(64497),	-- Kel'Thuzad (Normal)?
+		q(64498),	-- Kel'Thuzad (Normal)?
+		q(64499),	-- Kel'Thuzad (Heroic)
+		q(64637),	-- Kel'Thuzad (Normal)?
+		q(64664),	-- Kel'Thuzad (Normal)?
+		q(64500),	-- Kel'Thuzad (Mythic)
+		q(70487),	-- Kel'Thuzad - Fated - Rep/Flux
+		q(70488),	-- Kel'Thuzad - Fated - Rep/Flux
 
-	q(64501),	-- Sylvanas Windrunner (Normal)?
-	q(64502),	-- Sylvanas Windrunner (Normal)?
-	q(64638),	-- Sylvanas Windrunner (Normal)?
-	q(64665),	-- Sylvanas Windrunner (Normal)?
-	q(64503),	-- Sylvanas Windrunner (Heroic)
-	q(64504),	-- Sylvanas Windrunner (Mythic)
-	q(70489),	-- Sylvanas Windrunner - Fated - Rep/Flux
-	q(70490),	-- Sylvanas Windrunner - Fated - Rep/Flux
+		q(64501),	-- Sylvanas Windrunner (Normal)?
+		q(64502),	-- Sylvanas Windrunner (Normal)?
+		q(64638),	-- Sylvanas Windrunner (Normal)?
+		q(64665),	-- Sylvanas Windrunner (Normal)?
+		q(64503),	-- Sylvanas Windrunner (Heroic)
+		q(64504),	-- Sylvanas Windrunner (Mythic)
+		q(70489),	-- Sylvanas Windrunner - Fated - Rep/Flux
+		q(70490),	-- Sylvanas Windrunner - Fated - Rep/Flux
 
-	q(64707),	-- Sylvanas Windrunner Cinematic?
-});
+		q(64707),	-- Sylvanas Windrunner Cinematic?
+	}),
+})));
