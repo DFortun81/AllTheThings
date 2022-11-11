@@ -1146,9 +1146,11 @@ DF_PHASE_ONE = 100;
 ADDED_SLS4 = "added 9.2.5.44908";
 REMOVED_SLS4 = "removed 9.2.5.44908";
 ADDED_DFPRE = "added 10.0.0";
-ADDED_DFREL = { "created 10.0.0", "added 10.0.2.99999" };
 REMOVED_DFPRE = "removed 10.0";
-REMOVED_DFREL = "removed 10.0.2";
+ADDED_DFPRE2 = "added 10.0.2";	-- Second phase of Dragonflight pre-patch on November 15th, 2022
+REMOVED_DFPRE2 = "removed 10.0.2";
+ADDED_DFREL = { "created 10.0.0", "added 10.0.2.99999" };
+REMOVED_DFREL = "removed 10.0.2.99999";
 
 -- Holiday Filters
 BREWFEST = 1000;
