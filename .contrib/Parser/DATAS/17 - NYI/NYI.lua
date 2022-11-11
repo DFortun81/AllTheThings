@@ -182,6 +182,23 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(187657),	-- Evoker Belt
 			i(187658),	-- Evoker Armbands
 			i(187650),	-- Staff of Draconic Energies
+
+				-- Evoker Set --
+			i(194522),	-- Blue Winglord's Staff
+			i(194523),	-- Blue Winglord's Chain
+			i(194524),	-- Blue Winglord's Boots
+			i(194525),	-- Blue Winglord's Bracers
+			i(194526),	-- Blue Winglord's Hauberk
+			i(194527),	-- Blue Winglord's Grips
+			i(194528),	-- Blue Winglord's Coif
+			i(194529),	-- Blue Winglord's Greaves
+			i(194530),	-- Blue Winglord's Shoulders
+			i(194531),	-- Claw-Carved Figurine
+			i(194532),	-- Blue Winglord's Insignia
+			i(194533),	-- Blue Winglord's Ring
+			i(194534),	-- Blue Winglord's Loop
+			i(194535),	-- Cobalt Winglord's Cloak
+			i(194536),	-- Blue Winglord's Amulet
 				-- Evoker Set --
 			i(188812),	-- Emerald Winglord's Ring
 			i(188813),	-- Emerald Winglord's Loop
@@ -501,6 +518,225 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192552),	-- Draconic Missive of the Fireflash+++
 			i(192553),	-- Draconic Missive of the Fireflash+
 			i(192554),	-- Draconic Missive of the Fireflash++
+			i(194566),	-- Draconic Missive of the Feverflare+++
+			i(194567),	-- Draconic Missive of the Feverflare+
+			i(194568),	-- Draconic Missive of the Feverflare++
+			i(194569),	-- Draconic Missive of the Aurora+++
+			i(194570),	-- Draconic Missive of the Aurora+
+			i(194571),	-- Draconic Missive of the Aurora++
+			i(194572),	-- Draconic Missive of the Quickblade+++
+			i(194573),	-- Draconic Missive of the Quickblade+
+			i(194574),	-- Draconic Missive of the Quickblade++
+			i(194575),	-- Draconic Missive of the Harmonious+++
+			i(194576),	-- Draconic Missive of the Harmonious+
+			i(194577),	-- Draconic Missive of the Harmonious++
+			i(194578),	-- Draconic Missive of the Peerless+++
+			i(194579),	-- Draconic Missive of the Peerless+
+			i(194580),	-- Draconic Missive of the Peerless++
+			i(194639),	-- Design: Marvelous Mood Ring
+			i(194697),	-- Draconic Treatise on Alchemy
+			i(194698),	-- Draconic Treatise on Tailoring
+			i(194699),	-- Draconic Treatise on Inscription
+			i(194700),	-- Draconic Treatise on Leatherworking
+			i(194702),	-- Draconic Treatise on Enchanting
+			i(194703),	-- Draconic Treatise on Jewelcrafting
+			i(194704),	-- Draconic Treatise on Herbalism
+			i(194708),	-- Draconic Treatise on Mining
+			i(194727),	-- Fiery Spirit+
+			i(194728),	-- Fiery Spirit++
+			i(194729),	-- Fiery Spirit+++
+			i(194731),	-- Illusion Parchment: Magma Missile
+			i(194732),	-- Illusion Parchment: Love Charm
+			i(194733),	-- Illusion Parchment: Aqua Torrent
+			i(194734),	-- Illusion Parchment: Whirling Breeze
+			i(194735),	-- Illusion Parchment: Arcane Burst
+			i(194736),	-- Illusion Parchment: Chilling Wind
+			i(194737),	-- Illusion Parchment: Spell Shield
+			i(194738),	-- Illusion Parchment: Shadow Orb
+			i(194494),	-- Plans: Reinforced Plating
+			i(194751),	-- Blazing Ink+
+			i(194752),	-- Blazing Ink++
+			i(194754),	-- Cosmic Ink+
+			i(194755),	-- Cosmic Ink++
+			i(194756),	-- Cosmic Ink+++
+			i(194758),	-- Flourishing Ink++
+			i(194760),	-- Burnished Ink+
+			i(194761),	-- Burnished Ink++
+			i(194767),	-- Chilled Rune++
+			i(194768),	-- Chilled Rune+++
+			i(194784),	-- Glittering Parchment
+			i(194785),	-- Ace of Fire
+			i(194786),	-- Two of Fire
+			i(194787),	-- Three of Fire
+			i(194788),	-- Four of Fire
+			i(194789),	-- Five of Fire
+			i(194790),	-- Six of Fire
+			i(194791),	-- Seven of Frost
+			i(194792),	-- Eight of Fire
+			i(194793),	-- Ace of Frost
+			i(194794),	-- Two of Frost
+			i(194795),	-- Three of Frost
+			i(194796),	-- Four of Frost
+			i(194797),	-- Five of Frost
+			i(194798),	-- Six of Frost
+			i(194799),	-- Seven of Fire
+			i(194800),	-- Eight of Frost
+			i(194801),	-- Ace of Air
+			i(194802),	-- Two of Air
+			i(194803),	-- Three of Air
+			i(194804),	-- Four of Air
+			i(194805),	-- Five of Air
+			i(194806),	-- Six of Air
+			i(194807),	-- Seven of Air
+			i(194808),	-- Eight of Air
+			i(194809),	-- Ace of Earth
+			i(194810),	-- Two of Earth
+			i(194811),	-- Three of Earth
+			i(194812),	-- Four of Earth
+			i(194813),	-- Five of Earth
+			i(194814),	-- Six of Earth
+			i(194815),	-- Seven of Earth
+			i(194816),	-- Eight of Earth
+			i(194817),	-- Howling Rune+
+			i(194819),	-- Howling Rune++
+			i(194820),	-- Howling Rune+++
+			i(194821),	-- Buzzing Rune+
+			i(194822),	-- Buzzing Rune++
+			i(194823),	-- Buzzing Rune+++
+			i(194824),	-- Chirping Rune+
+			i(194825),	-- Chirping Rune++
+			i(194826),	-- Chirping Rune+++
+			i(194827),	-- Bundle O' Cards: Dragon Isles
+			i(194828),	-- Stacked Deck of Darkmoon Mysteries
+			i(194829),	-- Fated Fortune Card
+			i(194846),	-- Blazing Ink+++
+			i(194850),	-- Flourishing Ink+
+			i(194852),	-- Flourishing Ink+++
+			i(194855),	-- Burnished Ink+++
+			i(194856),	-- Serene Ink+
+			i(194857),	-- Serene Ink++
+			i(194858),	-- Serene Ink+++
+			i(194859),	-- Chilled Rune+
+			i(194862),	-- Runed Writhebark+
+			i(194863),	-- Runed Writhebark++
+			i(194864),	-- Runed Writhebark+++
+			i(194868),	-- Emberscale Sigil+
+			i(194869),	-- Sagescale Sigil+
+			i(194870),	-- Bronzescale Sigil+
+			i(194871),	-- Azurescale Sigil+
+			i(194872),	-- Darkmoon Deck Box: Inferno
+			i(194873),	-- Apprentice's Fluffed Quill
+			i(194874),	-- Scribe's Fastened Quill
+			i(194875),	-- Scribe's Resplendent Quill
+			i(194877),	-- Core Explorer's Compendium
+			i(194879),	-- Crackling Codex of the Isles
+			i(194885),	-- Ohuna Perch
+			i(194888),	-- Dracthyr's Inscribed Blade
+			i(194892),	-- Pioneer's Writhebark Stave
+			i(194893),	-- Overseer's Writhebark Stave
+			i(194894),	-- Weathered Explorer's Stave
+			i(194897),	-- Kinetic Pillar of the Isles
+			i(194898),	-- Illuminating Pillar of the Isles
+			i(194902),	-- Ooey-Gooey Chocolate
+			i(194903),	-- Pocket Chocolate
+			i(194964),	-- Recipe: Thrice-Spiced Mammoth Kabob
+			i(194965),	-- Recipe: Yusa's Hearty Stew
+			i(195881),	-- Recipe: Charred Hornswog Steaks
+			i(197741),	-- Maybe Meat
+			i(197742),	-- Ribbed Mollusk Meat
+			i(197743),	-- Waterfowl Filet
+			i(197744),	-- Hornswog Hunk
+			i(197745),	-- Basilisk Eggs
+			i(197746),	-- Bruffalon Flank
+			i(197747),	-- Mighty Mammoth Ribs
+			i(197748),	-- Burly Bear Haunch
+			i(197749),	-- Ohn'ahran Potato
+			i(197750),	-- Three-Cheese Blend
+			i(197751),	-- Pastry Packets
+			i(197752),	-- Conveniently Packaged Ingredients
+			i(197753),	-- Thaldraszian Cocoa Powder
+			--
+			i(197755),	-- Lava Beetle
+			i(197756),	-- Pebbled Rock Salts
+			i(197757),	-- Assorted Exotic Spices
+			i(197758),	-- Twice-Baked Potato
+			i(197759),	-- Cheese and Quackers
+			i(197760),	-- Mackerel Snackerel
+			i(197761),	-- Probably Protein
+			i(197762),	-- Sweet and Sour Clam Chowder
+			i(197763),	-- Breakfast of Draconic Champions
+			i(197764),	-- Salad on the Side
+			i(197765),	-- Impossibly Sharp Cutting Knife
+			i(197766),	-- Snow in a Cone
+			i(197767),	-- Blubbery Muffin
+			i(197768),	-- Celebratory Cake
+			i(197769),	-- Tasty Hatchling's Treat
+			i(197770),	-- Zesty Water
+			i(197771),	-- Delicious Dragon Spittle
+			i(197772),	-- Churnbelly Tea
+			i(197774),	-- Charred Hornswog Steaks
+			i(197775),	-- Scrambled Basilisk Eggs
+			i(197776),	-- Thrice-Spiced Mammoth Kabob
+			i(197777),	-- Hopefully Healthy
+			i(197778),	-- Timely Demise
+			i(197779),	-- Filet of Fangs
+			i(197780),	-- Seamoth Surprise
+			i(197781),	-- Salt-Baked Fishcake
+			i(197782),	-- Feisty Fish Sticks
+			i(197783),	-- Aromatic Seafood Platter
+			i(197784),	-- Sizzling Seafood Medley
+			i(197785),	-- Revengei(197786),	-- Thousandbone Tongueslicer
+			i(197787),	-- Great Cerulean Sea
+			i(197788),	-- Braised Bruffalon Brisket
+			i(197789),	-- Riverside Picnic
+			i(197790),	-- Roast Duck Delight
+			i(197791),	-- Salted Meat Mash
+			i(197792),	-- Fated Fortune Cookie
+			i(197793),	-- Yusa's Hearty Stew
+			i(197794),	-- Grand Banquet of the Kalu'ak
+			i(197795),	-- Hoard of Draconic Delicacies
+			i(198086),	-- Darkmoon Deck: Inferno
+			i(198087),	-- Darkmoon Deck: Rime
+			i(198088),	-- Darkmoon Deck: Dance
+			i(198089),	-- Darkmoon Deck: Watcher
+			i(198092),	-- Recipe: Twice-Baked Potato
+			i(198093),	-- Recipe: Cheese and Quackers
+			i(198094),	-- Recipe: Mackerel Snackerel
+			i(198095),	-- Recipe: Probably Protein
+			i(198096),	-- Recipe: Sweet and Sour Clam Chowder
+			i(198097),	-- Recipe: Hungry Whelpling Breakfast
+			i(198098),	-- Recipe: Ooey-Gooey Chocolate
+			i(198099),	-- Recipe: Pebbled Rock Salts
+			i(198100),	-- Recipe: Assorted Exotic Spices
+			i(198101),	-- Recipe: Salad on the Side
+			i(198102),	-- Recipe: Impossibly Sharp Cutting Knife
+			i(198103),	-- Recipe: Snow in a Cone
+			i(198104),	-- Recipe: Blubbery Muffin
+			i(198105),	-- Recipe: Celebratory Cake
+			i(198106),	-- Recipe: Tasty Hatchling's Treat
+			i(198107),	-- Recipe: Zesty Water
+			i(198108),	-- Recipe: Delicious Dragon Spittle
+			i(198109),	-- Recipe: Churnbelly Tea
+			i(198111),	-- Recipe: Scrambled Basilisk Eggs
+			i(198112),	-- Recipe: Hopefully Healthy
+			i(198113),	-- Recipe: Timely Demise
+			i(198114),	-- Recipe: Filet of Fangs
+			i(198115),	-- Recipe: Seamoth Surprise
+			i(198116),	-- Recipe: Salt-Baked Fishcake
+			i(198117),	-- Recipe: Feisty Fish Sticks
+			i(198118),	-- Recipe: Aromatic Seafood Platter
+			i(198119),	-- Recipe: Sizzling Seafood Medley
+			i(198120),	-- Recipe: Revengei(198121),	-- Recipe: Thousandbone Tongueslicer
+			i(198122),	-- Recipe: Great Cerulean Sea
+			i(198123),	-- Recipe: Braised Bruffalon Brisket
+			i(198124),	-- Recipe: Riverside Picnic
+			i(198125),	-- Recipe: Roast Duck Delight
+			i(198126),	-- Recipe: Salted Meat Mash
+			i(198127),	-- Recipe: Fated Fortune Cookie
+			i(198129),	-- Recipe: Gral's Reverence
+			i(198130),	-- Recipe: Gral's Veneration
+			i(198131),	-- Recipe: Gral's Devotion
+			i(198132),	-- Recipe: Hoard of Draconic Delicacies
 			prof(HERBALISM, {
 				i(191460),	-- Hochenblume+
 				i(191461),	-- Hochenblume++
@@ -519,10 +755,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(191917),	-- Suspiciously Fuzzy Drink+
 				i(191918),	-- Suspiciously Fuzzy Drink++
 				i(191919),	-- Suspiciously Fuzzy Drink+++
-			}),
-			prof(ENCHANTING, {
-				i(194123),	-- Chromatic Dust
-				i(194124),	-- Vibrant Shard
 			}),
 			prof(JEWELCRAFTING, {
 				i(192809),	-- Temporal Residue
@@ -599,6 +831,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192111),	-- Renewed Proto-Drake: Red Scales
 			i(192523),	-- Renewed Proto-Drake: Green Scales
 			i(194106),	-- Highland Drake
+			i(194722),	-- Carrier Yeti
 		}),
 		n(PROFESSIONS, {
 			i(192131),	-- Valdrakken Weapon Chain
@@ -660,7 +893,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193600),	-- Lost Battlepack
 			i(193611),	-- Ancient Horn Ring
 		}),
-		n(TREASURE, {
+		n(TREASURES, {
 			i(191058),	-- Dilapidated Parchment: Bottom Half
 			i(191087),	-- Treasure Map: Ohn'ahran Plains
 			i(191185),	-- Worn Parchment
@@ -674,10 +907,59 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194028),	-- Ancient Parchment: Bottom Half
 			i(194029),	-- Treasure Map: Thaldraszus
 			i(194442),	-- Activity Map: Apex Canopy
+			i(194540),	-- Nokhud Armorer's Notes
+			i(195453),	-- Ludo's Stash Map
 		}),
 		n(WEAPONS, {
 			i(189055),	-- Ghendish's Backup Talisman
 			i(194073),	-- Distinguished Dracthyr's Implement
+			-- WQ?
+			i(197922),	-- Cavalry's Charging Lance
+			i(197923),	-- Bloodcharger's Skewer
+			i(197924),	-- Wyrm Poacher's Emberblade
+			i(197925),	-- Burning Club of the Wallclimbers
+			i(197926),	-- Billowing Magmathrower's Cudgel
+			i(197927),	-- Djaradin Bludgeoning Hammer
+			--
+			i(197931),	-- Waking Shores Cleaver
+			i(197932),	-- Chipped Reef Hacker
+			i(197933),	-- Lutokk's Wedding Ring
+			i(197934),	-- Ancestral Protector's Stone
+			i(197935),	-- Seafarer's Hatchet
+			i(197936),	-- Serrated Deboning Knife
+			i(197937),	-- Intricate Scaling Knife
+			i(197938),	-- Uktulut Whaling Spear
+			i(197939),	-- Razortooth Harpoon
+			i(197940),	-- Hefty Iskaaran Anchor
+			i(197941),	-- Iskaaran Mystic's Tideshear
+			i(197942),	-- Tuskarr Navigator's Staff
+			i(197943),	-- Elder's Bioluminous Quarterstaff
+			i(197944),	-- Deepsea Hunter's Crossbow
+			i(197945),	-- Gnarled Thorn Bow
+			i(197948),	-- Stone Sentinel's Greatsword
+			i(197953),	-- Ancient Protector's Broadsword
+			i(197954),	-- Stonewatcher's Buckler
+			i(197955),	-- Sword of the Eternal Guard
+			i(197956),	-- Empowered Shortsword of Insight
+			i(197957),	-- Timeless Watcher's Saber
+			i(197960),	-- Bag of Biscuits
+			i(198002),	-- Draconic Compendium
+			i(198005),	-- Sleek Obsidian Kris
+			i(198006),	-- Sharpened Silver Sword
+			i(198007),	-- Large Brass Cleaver
+			i(198009),	-- Gleaming Bronze Blade
+			i(198035),	-- Archer's Decorated Bow
+				-- Thaldraszus
+			i(195177),	-- Moment's Notice
+			i(195178),	-- Swirling Sand Fists
+			i(195179),	-- Timeways Baton
+			i(195180),	-- Time-Woven Blade
+			i(195181),	-- Rapid Fire
+			i(195182),	-- Inexorable Separation
+			i(195183),	-- Reach of Years
+			i(195184),	-- Bronze Tower
+			i(195185),	-- Annihilation Warder's Cloak
+		--
 		}),
 		------------- PROBABLY NYI ---------------------
 		n(ARMOR, {
@@ -1049,6 +1331,17 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(189557),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Gray
 			i(189558),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Dark
 			i(189559),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Light
+
+			i(197796),	-- 10.0 Rare Reward TBD - Mace2H - Str - 2 Hand
+			i(197806),	-- 10.0 Rare Reward TBD - Staff_2H_Titan_C_01 - Staff - Int
+			i(197910),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
+			i(197911),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
+			i(197912),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
+			i(197913),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
+			i(197914),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
+			i(197915),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
+			i(197916),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
+			i(197917),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
 		}),
 		------------------------------------------------
 		n(SOURCELESS, {	-- Unsure..
@@ -1059,122 +1352,18 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193201),	-- Key Framing
 			i(194337),	-- Liquid Courage
 		}),
-		i(194494),	-- Reinforced Plating
-		i(194510),	-- Iskaaran Harpoon
-		i(194522),	-- Blue Winglord's Staff
-		i(194523),	-- Blue Winglord's Chain
-		i(194524),	-- Blue Winglord's Boots
-		i(194525),	-- Blue Winglord's Bracers
-		i(194526),	-- Blue Winglord's Hauberk
-		i(194527),	-- Blue Winglord's Grips
-		i(194528),	-- Blue Winglord's Coif
-		i(194529),	-- Blue Winglord's Greaves
-		i(194530),	-- Blue Winglord's Shoulders
-		i(194531),	-- Claw-Carved Figurine
-		i(194532),	-- Blue Winglord's Insignia
-		i(194533),	-- Blue Winglord's Ring
-		i(194534),	-- Blue Winglord's Loop
-		i(194535),	-- Cobalt Winglord's Cloak
-		i(194536),	-- Blue Winglord's Amulet
-		i(194537),	-- Fiddle with Draconium Fabric Cutters
-		i(194538),	-- Fiddle with Khaz'gorite Fabric Cutters
-		i(194540),	-- Nokhud Armorer's Notes
 
-		i(194566),	-- Draconic Missive of the Feverflare+++
-		i(194567),	-- Draconic Missive of the Feverflare+
-		i(194568),	-- Draconic Missive of the Feverflare++
-		i(194569),	-- Draconic Missive of the Aurora+++
-		i(194570),	-- Draconic Missive of the Aurora+
-		i(194571),	-- Draconic Missive of the Aurora++
-		i(194572),	-- Draconic Missive of the Quickblade+++
-		i(194573),	-- Draconic Missive of the Quickblade+
-		i(194574),	-- Draconic Missive of the Quickblade++
-		i(194575),	-- Draconic Missive of the Harmonious+++
-		i(194576),	-- Draconic Missive of the Harmonious+
-		i(194577),	-- Draconic Missive of the Harmonious++
-		i(194578),	-- Draconic Missive of the Peerless+++
-		i(194579),	-- Draconic Missive of the Peerless+
-		i(194580),	-- Draconic Missive of the Peerless++
-		i(194639),	-- Design: Marvelous Mood Ring
+		i(194510),	-- Iskaaran Harpoon
+
+
+
+
+
 		i(194690),	-- Horn o' Mead
-		i(194697),	-- Draconic Treatise on Alchemy
-		i(194698),	-- Draconic Treatise on Tailoring
-		i(194699),	-- Draconic Treatise on Inscription
-		i(194700),	-- Draconic Treatise on Leatherworking
-		i(194702),	-- Draconic Treatise on Enchanting
-		i(194703),	-- Draconic Treatise on Jewelcrafting
-		i(194704),	-- Draconic Treatise on Herbalism
-		i(194705),	-- Highland Drake
-		i(194708),	-- Draconic Treatise on Mining
-		i(194715),	-- Gatherer's Pouch
-		i(194722),	-- Carrier Yeti
-		i(194727),	-- Fiery Spirit+
-		i(194728),	-- Fiery Spirit++
-		i(194729),	-- Fiery Spirit+++
-		i(194731),	-- Illusion Parchment: Magma Missile
-		i(194732),	-- Illusion Parchment: Love Charm
-		i(194733),	-- Illusion Parchment: Aqua Torrent
-		i(194734),	-- Illusion Parchment: Whirling Breeze
-		i(194735),	-- Illusion Parchment: Arcane Burst
-		i(194736),	-- Illusion Parchment: Chilling Wind
-		i(194737),	-- Illusion Parchment: Spell Shield
-		i(194738),	-- Illusion Parchment: Shadow Orb
-		i(194750),	-- Professional Equipment
-		i(194751),	-- Blazing Ink+
-		i(194752),	-- Blazing Ink++
-		i(194754),	-- Cosmic Ink+
-		i(194755),	-- Cosmic Ink++
-		i(194756),	-- Cosmic Ink+++
-		i(194758),	-- Flourishing Ink++
-		i(194760),	-- Burnished Ink+
-		i(194761),	-- Burnished Ink++
-		i(194767),	-- Chilled Rune++
-		i(194768),	-- Chilled Rune+++
-		i(194784),	-- Glittering Parchment
-		i(194785),	-- Ace of Fire
-		i(194786),	-- Two of Fire
-		i(194787),	-- Three of Fire
-		i(194788),	-- Four of Fire
-		i(194789),	-- Five of Fire
-		i(194790),	-- Six of Fire
-		i(194791),	-- Seven of Frost
-		i(194792),	-- Eight of Fire
-		i(194793),	-- Ace of Frost
-		i(194794),	-- Two of Frost
-		i(194795),	-- Three of Frost
-		i(194796),	-- Four of Frost
-		i(194797),	-- Five of Frost
-		i(194798),	-- Six of Frost
-		i(194799),	-- Seven of Fire
-		i(194800),	-- Eight of Frost
-		i(194801),	-- Ace of Air
-		i(194802),	-- Two of Air
-		i(194803),	-- Three of Air
-		i(194804),	-- Four of Air
-		i(194805),	-- Five of Air
-		i(194806),	-- Six of Air
-		i(194807),	-- Seven of Air
-		i(194808),	-- Eight of Air
-		i(194809),	-- Ace of Earth
-		i(194810),	-- Two of Earth
-		i(194811),	-- Three of Earth
-		i(194812),	-- Four of Earth
-		i(194813),	-- Five of Earth
-		i(194814),	-- Six of Earth
-		i(194815),	-- Seven of Earth
-		i(194816),	-- Eight of Earth
-		i(194817),	-- Howling Rune+
-		i(194819),	-- Howling Rune++
-		i(194820),	-- Howling Rune+++
-		i(194821),	-- Buzzing Rune+
-		i(194822),	-- Buzzing Rune++
-		i(194823),	-- Buzzing Rune+++
-		i(194824),	-- Chirping Rune+
-		i(194825),	-- Chirping Rune++
-		i(194826),	-- Chirping Rune+++
-		i(194827),	-- Bundle O' Cards: Dragon Isles
-		i(194828),	-- Stacked Deck of Darkmoon Mysteries
-		i(194829),	-- Fated Fortune Card
+
+
+
+
 		i(194830),	-- Renewed Proto Drake Manuscript: Red Hair
 		i(194831),	-- Renewed Proto Drake Manuscript: Predator Pattern
 		i(194832),	-- Renewed Proto Drake Manuscript: Spined Crest
@@ -1189,53 +1378,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194841),	-- Cliffside Wylderdrake Manuscript: Red Mane
 		i(194842),	-- Regal Barding Manuscript
 		i(194843),	-- Explorer's Barding Manuscript
-		i(194846),	-- Blazing Ink+++
-		i(194850),	-- Flourishing Ink+
-		i(194852),	-- Flourishing Ink+++
-		i(194855),	-- Burnished Ink+++
-		i(194856),	-- Serene Ink+
-		i(194857),	-- Serene Ink++
-		i(194858),	-- Serene Ink+++
-		i(194859),	-- Chilled Rune+
-		i(194862),	-- Runed Writhebark+
-		i(194863),	-- Runed Writhebark++
-		i(194864),	-- Runed Writhebark+++
-		i(194868),	-- Emberscale Sigil+
-		i(194869),	-- Sagescale Sigil+
-		i(194870),	-- Bronzescale Sigil+
-		i(194871),	-- Azurescale Sigil+
-		i(194872),	-- Darkmoon Deck Box: Inferno
-		i(194873),	-- Apprentice's Fluffed Quill
-		i(194874),	-- Scribe's Fastened Quill
-		i(194875),	-- Scribe's Resplendent Quill
-		i(194877),	-- Core Explorer's Compendium
-		i(194879),	-- Crackling Codex of the Isles
-		i(194885),	-- Ohuna Perch
-		i(194888),	-- Dracthyr's Inscribed Blade
-		i(194892),	-- Pioneer's Writhebark Stave
-		i(194893),	-- Overseer's Writhebark Stave
-		i(194894),	-- Weathered Explorer's Stave
-		i(194897),	-- Kinetic Pillar of the Isles
-		i(194898),	-- Illuminating Pillar of the Isles
-		i(194902),	-- Ooey-Gooey Chocolate
-		i(194903),	-- Pocket Chocolate
-		i(194964),	-- Recipe: Thrice-Spiced Mammoth Kabob
-		i(194965),	-- Recipe: Yusa's Hearty Stew
-		-- Thaldraszus
-		i(195177),	-- Moment's Notice
-		i(195178),	-- Swirling Sand Fists
-		i(195179),	-- Timeways Baton
-		i(195180),	-- Time-Woven Blade
-		i(195181),	-- Rapid Fire
-		i(195182),	-- Inexorable Separation
-		i(195183),	-- Reach of Years
-		i(195184),	-- Bronze Tower
-		i(195185),	-- Annihilation Warder's Cloak
-		--
-		i(195453),	-- Ludo's Stash Map
+
+
+
+
 		i(195467),	-- zzOld(DNT) Test Belt of Molten Metallic Awesomeness
 		i(195580),	-- Suspicious Bottle
-		i(195881),	-- Recipe: Charred Hornswog Steaks
+
 		i(195885),	-- Black Dragon's Scale Cloak
 		i(196961),	-- Cliffside Wylderdrake: Armor
 		i(196962),	-- Cliffside Wylderdrake: Silver and Purple Armor
@@ -1486,125 +1635,25 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197634),	-- Windborne Velocidrake: Windswept Pattern
 		i(197635),	-- Windborne Velocidrake: Reaver Pattern
 		i(197636),	-- Windborne Velocidrake: Shrieker Pattern
-		i(197674),	-- Drakefire Shield
+
+
 		i(197677),	-- Plainswalking Stick
-		i(197680),	-- Centaur Cavalry Saber
+
 		i(197684),	-- Argali Shearing Blade
-		i(197685),	-- Nokhud Reaver Skullguard
+
 		i(197692),	-- Shikaar Fishing Bow
 		i(197693),	-- Shikaar Hunter's Crossbow
 		i(197698),	-- Mystic's Windblade
-		i(197699),	-- Nokhud Skullcrusher
-		i(197701),	-- Ohn'ahran Greatsword
+		i(197904),	-- Shikaar Hunting Knife
+		i(197905),	-- Salamanther Slicer
+
 		i(197718),	-- Scroll of Sales
 		i(197725),	-- Deathrip's Curled Claw
 
-		-- Crafting cooking
-		i(197741),	-- Maybe Meat
-		i(197742),	-- Ribbed Mollusk Meat
-		i(197743),	-- Waterfowl Filet
-		i(197744),	-- Hornswog Hunk
-		i(197745),	-- Basilisk Eggs
-		i(197746),	-- Bruffalon Flank
-		i(197747),	-- Mighty Mammoth Ribs
-		i(197748),	-- Burly Bear Haunch
-		i(197749),	-- Ohn'ahran Potato
-		i(197750),	-- Three-Cheese Blend
-		i(197751),	-- Pastry Packets
-		i(197752),	-- Conveniently Packaged Ingredients
-		i(197753),	-- Thaldraszian Cocoa Powder
-		--
-		i(197755),	-- Lava Beetle
-		i(197756),	-- Pebbled Rock Salts
-		i(197757),	-- Assorted Exotic Spices
-		i(197758),	-- Twice-Baked Potato
-		i(197759),	-- Cheese and Quackers
-		i(197760),	-- Mackerel Snackerel
-		i(197761),	-- Probably Protein
-		i(197762),	-- Sweet and Sour Clam Chowder
-		i(197763),	-- Breakfast of Draconic Champions
-		i(197764),	-- Salad on the Side
-		i(197765),	-- Impossibly Sharp Cutting Knife
-		i(197766),	-- Snow in a Cone
-		i(197767),	-- Blubbery Muffin
-		i(197768),	-- Celebratory Cake
-		i(197769),	-- Tasty Hatchling's Treat
-		i(197770),	-- Zesty Water
-		i(197771),	-- Delicious Dragon Spittle
-		i(197772),	-- Churnbelly Tea
-		i(197774),	-- Charred Hornswog Steaks
-		i(197775),	-- Scrambled Basilisk Eggs
-		i(197776),	-- Thrice-Spiced Mammoth Kabob
-		i(197777),	-- Hopefully Healthy
-		i(197778),	-- Timely Demise
-		i(197779),	-- Filet of Fangs
-		i(197780),	-- Seamoth Surprise
-		i(197781),	-- Salt-Baked Fishcake
-		i(197782),	-- Feisty Fish Sticks
-		i(197783),	-- Aromatic Seafood Platter
-		i(197784),	-- Sizzling Seafood Medley
-		i(197785),	-- Revengei(197786),	-- Thousandbone Tongueslicer
-		i(197787),	-- Great Cerulean Sea
-		i(197788),	-- Braised Bruffalon Brisket
-		i(197789),	-- Riverside Picnic
-		i(197790),	-- Roast Duck Delight
-		i(197791),	-- Salted Meat Mash
-		i(197792),	-- Fated Fortune Cookie
-		i(197793),	-- Yusa's Hearty Stew
-		i(197794),	-- Grand Banquet of the Kalu'ak
-		i(197795),	-- Hoard of Draconic Delicacies
-		---
-		i(197796),	-- 10.0 Rare Reward TBD - Mace2H - Str - 2 Hand
-		i(197802),	-- zzDog Bone (DNT - Reward PH)
-		i(197806),	-- 10.0 Rare Reward TBD - Staff_2H_Titan_C_01 - Staff - Int
-		i(197903),	-- Waterback Culling Axe
-		i(197904),	-- Shikaar Hunting Knife
-		i(197905),	-- Salamanther Slicer
-		i(197910),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
-		i(197911),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
-		i(197912),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
-		i(197913),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
-		i(197914),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
-		i(197915),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
-		i(197916),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
-		i(197917),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
-		i(197921),	-- Primal Infusion
-		-- WQ?
-		i(197922),	-- Cavalry's Charging Lance
-		i(197923),	-- Bloodcharger's Skewer
-		i(197924),	-- Wyrm Poacher's Emberblade
-		i(197925),	-- Burning Club of the Wallclimbers
-		i(197926),	-- Billowing Magmathrower's Cudgel
-		i(197927),	-- Djaradin Bludgeoning Hammer
-		--
-		i(197931),	-- Waking Shores Cleaver
-		i(197932),	-- Chipped Reef Hacker
-		i(197933),	-- Lutokk's Wedding Ring
-		i(197934),	-- Ancestral Protector's Stone
-		i(197935),	-- Seafarer's Hatchet
-		i(197936),	-- Serrated Deboning Knife
-		i(197937),	-- Intricate Scaling Knife
-		i(197938),	-- Uktulut Whaling Spear
-		i(197939),	-- Razortooth Harpoon
-		i(197940),	-- Hefty Iskaaran Anchor
-		i(197941),	-- Iskaaran Mystic's Tideshear
-		i(197942),	-- Tuskarr Navigator's Staff
-		i(197943),	-- Elder's Bioluminous Quarterstaff
-		i(197944),	-- Deepsea Hunter's Crossbow
-		i(197945),	-- Gnarled Thorn Bow
-		i(197948),	-- Stone Sentinel's Greatsword
-		i(197953),	-- Ancient Protector's Broadsword
-		i(197954),	-- Stonewatcher's Buckler
-		i(197955),	-- Sword of the Eternal Guard
-		i(197956),	-- Empowered Shortsword of Insight
-		i(197957),	-- Timeless Watcher's Saber
-		i(197960),	-- Bag of Biscuits
-		i(198002),	-- Draconic Compendium
-		i(198005),	-- Sleek Obsidian Kris
-		i(198006),	-- Sharpened Silver Sword
-		i(198007),	-- Large Brass Cleaver
-		i(198009),	-- Gleaming Bronze Blade
-		i(198035),	-- Archer's Decorated Bow
+
+
+
+
 
 
 		i(198070),	-- Tattered Seavine
@@ -1615,48 +1664,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198082),	-- Pre-Sentient Rock Cluster
 		i(198084),	-- Miguel's Gift
 		i(198085),	-- Lost Obsidian Cache Key
-		i(198086),	-- Darkmoon Deck: Inferno
-		i(198087),	-- Darkmoon Deck: Rime
-		i(198088),	-- Darkmoon Deck: Dance
-		i(198089),	-- Darkmoon Deck: Watcher
-		i(198092),	-- Recipe: Twice-Baked Potato
-		i(198093),	-- Recipe: Cheese and Quackers
-		i(198094),	-- Recipe: Mackerel Snackerel
-		i(198095),	-- Recipe: Probably Protein
-		i(198096),	-- Recipe: Sweet and Sour Clam Chowder
-		i(198097),	-- Recipe: Hungry Whelpling Breakfast
-		i(198098),	-- Recipe: Ooey-Gooey Chocolate
-		i(198099),	-- Recipe: Pebbled Rock Salts
-		i(198100),	-- Recipe: Assorted Exotic Spices
-		i(198101),	-- Recipe: Salad on the Side
-		i(198102),	-- Recipe: Impossibly Sharp Cutting Knife
-		i(198103),	-- Recipe: Snow in a Cone
-		i(198104),	-- Recipe: Blubbery Muffin
-		i(198105),	-- Recipe: Celebratory Cake
-		i(198106),	-- Recipe: Tasty Hatchling's Treat
-		i(198107),	-- Recipe: Zesty Water
-		i(198108),	-- Recipe: Delicious Dragon Spittle
-		i(198109),	-- Recipe: Churnbelly Tea
-		i(198111),	-- Recipe: Scrambled Basilisk Eggs
-		i(198112),	-- Recipe: Hopefully Healthy
-		i(198113),	-- Recipe: Timely Demise
-		i(198114),	-- Recipe: Filet of Fangs
-		i(198115),	-- Recipe: Seamoth Surprise
-		i(198116),	-- Recipe: Salt-Baked Fishcake
-		i(198117),	-- Recipe: Feisty Fish Sticks
-		i(198118),	-- Recipe: Aromatic Seafood Platter
-		i(198119),	-- Recipe: Sizzling Seafood Medley
-		i(198120),	-- Recipe: Revengei(198121),	-- Recipe: Thousandbone Tongueslicer
-		i(198122),	-- Recipe: Great Cerulean Sea
-		i(198123),	-- Recipe: Braised Bruffalon Brisket
-		i(198124),	-- Recipe: Riverside Picnic
-		i(198125),	-- Recipe: Roast Duck Delight
-		i(198126),	-- Recipe: Salted Meat Mash
-		i(198127),	-- Recipe: Fated Fortune Cookie
-		i(198129),	-- Recipe: Gral's Reverence
-		i(198130),	-- Recipe: Gral's Veneration
-		i(198131),	-- Recipe: Gral's Devotion
-		i(198132),	-- Recipe: Hoard of Draconic Delicacies
+
 		i(198133),	-- Golden Expedition Compass
 		i(198134),	-- Shiny Surveyor Scope
 		i(198135),	-- Jeb's Supply Pack
@@ -1845,8 +1853,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198710),	-- Canteen of Suspicious Water
 		i(198711),	-- Poacher's Pack
 		i(198712),	-- Firewater Powder Sample
-		i(198715),	-- Runed Draconium Rod
-		i(198716),	-- Runed Khaz'gorite Rod
+
 
 		i(198723),	-- Expedition Binoculars (NYI)
 		i(198724),	-- Expedition Telescope (NYI)
@@ -1854,7 +1861,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198731),	-- Iskaara Tuskarr Tabard
 		i(198732),	-- Valdrakken Accord Tabard
 		i(198733),	-- Wayfinderr's Compass (NYI)
-		i(198779),	-- Formula: Crystal Magical Lockpick
 		i(198786),	-- Technique: Wrathion Darkmoon Deckbox
 		i(198787),	-- Technique: Red Haired Renewed Proto-Drake Manuscript
 		i(198788),	-- Technique: Contract: Dragonscale Expedition
@@ -2081,18 +2087,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199750),	-- Primal Fire Core
 		i(199757),	-- Magic Nipper
 		i(199758),	-- Crimson Proto-Whelp
-		i(199802),	-- Formula: Enchant Tool - Draconic Finesse
-		i(199803),	-- Formula: Enchant Tool - Draconic Perception
-		i(199804),	-- Formula: Enchant Tool - Draconic Deftness
+
 		i(199806),	-- Valdrakken Drakeclaw Barrier
-		i(199811),	-- Formula: Enchant Cloak - Graceful Avoidance
-		i(199812),	-- Formula: Enchant Boots - Rider's Reassurance
-		i(199813),	-- Formula: Enchant Chest - Sustained Strength
-		i(199814),	-- Formula: Enchant Boots - Plainsrunner's Breeze
-		i(199815),	-- Formula: Enchant Cloak - Regenerative Leech
-		i(199816),	-- Formula: Enchant Chest - Accelerated Agility
-		i(199817),	-- Formula: Enchant Cloak - Homebound Speed
-		i(199818),	-- Formula: Enchant Boots - Watcher's Loam
+
+
 		i(199831),	-- Forgotten Dragon Crest
 		i(199832),	-- Smoked Seaviper
 		i(199833),	-- Dragonhead Eel
@@ -2127,134 +2125,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199927),	-- Sheet Music: The Lazy Turnip
 		i(199932),	-- 10.0 Enchanting - Weapon - Wand 1
 		i(199933),	-- 10.0 Enchanting - Weapon - Wand 2
-		i(199934),	-- Enchant Boots - Plainsrunner's Breeze+
-		i(199935),	-- Enchant Boots - Rider's Reassurance+
-		i(199936),	-- Enchant Boots - Watcher's Loam+
-		i(199937),	-- Enchant Bracer - Devotion of Avoidance+
-		i(199938),	-- Enchant Bracer - Devotion of Leech+
-		i(199939),	-- Enchant Bracer - Devotion of Speed+
-		i(199940),	-- Enchant Bracer - Writ of Avoidance+
-		i(199941),	-- Enchant Bracer - Writ of Leech+
-		i(199942),	-- Enchant Bracer - Writ of Speed+
-		i(199943),	-- Enchant Chest - Accelerated Agility+
-		i(199944),	-- Enchant Chest - Reserve of Intellect+
-		i(199945),	-- Enchant Chest - Sustained Strength+
-		i(199946),	-- Enchant Chest - Waking Stats+
-		i(199947),	-- Enchant Cloak - Graceful Avoidance+
-		i(199948),	-- Enchant Cloak - Homebound Speed+
-		i(199949),	-- Enchant Cloak - Regenerative Leech+
-		i(199950),	-- Enchant Cloak - Writ of Avoidance+
-		i(199951),	-- Enchant Cloak - Writ of Leech+
-		i(199952),	-- Enchant Cloak - Writ of Speed+
-		i(199953),	-- Enchant Ring - Devotion of Critical Strike+
-		i(199954),	-- Enchant Ring - Devotion of Haste+
-		i(199955),	-- Enchant Ring - Devotion of Mastery+
-		i(199956),	-- Enchant Ring - Devotion of Versatility+
-		i(199957),	-- Enchant Ring - Writ of Critical Strike+
-		i(199958),	-- Enchant Ring - Writ of Haste+
-		i(199959),	-- Enchant Ring - Writ of Mastery+
-		i(199960),	-- Enchant Ring - Writ of Versatility+
-		i(199961),	-- Enchant Tool - Draconic Deftness+
-		i(199962),	-- Enchant Tool - Draconic Finesse+
-		i(199963),	-- Enchant Tool - Draconic Inspiration+
-		i(199964),	-- Enchant Tool - Draconic Perception+
-		i(199965),	-- Enchant Tool - Draconic Resourcefulness+
-		i(199966),	-- Enchant Weapon - Burning Devotion+
-		i(199967),	-- Enchant Weapon - Burning Writ+
-		i(199968),	-- Enchant Weapon - Earthen Devotion+
-		i(199969),	-- Enchant Weapon - Earthen Writ+
-		i(199970),	-- Enchant Weapon - Titanic Devotion+
-		i(199971),	-- Enchant Weapon - Titanic Writ+
-		i(199972),	-- Enchant Weapon - Frozen Devotion+
-		i(199973),	-- Enchant Weapon - Frozen Writ+
-		i(199974),	-- Enchant Weapon - Wafting Devotion+
-		i(199975),	-- Enchant Weapon - Wafting Writ+
-		i(199976),	-- Enchant Boots - Plainsrunner's Breeze++
-		i(199977),	-- Enchant Boots - Rider's Reassurance++
-		i(199978),	-- Enchant Boots - Watcher's Loam++
-		i(199979),	-- Enchant Bracer - Devotion of Avoidance++
-		i(199980),	-- Enchant Bracer - Devotion of Leech++
-		i(199981),	-- Enchant Bracer - Devotion of Speed++
-		i(199982),	-- Enchant Bracer - Writ of Avoidance++
-		i(199983),	-- Enchant Bracer - Writ of Leech++
-		i(199984),	-- Enchant Bracer - Writ of Speed++
-		i(199985),	-- Enchant Chest - Accelerated Agility++
-		i(199986),	-- Enchant Chest - Reserve of Intellect++
-		i(199987),	-- Enchant Chest - Sustained Strength++
-		i(199988),	-- Enchant Chest - Waking Stats++
-		i(199989),	-- Enchant Cloak - Graceful Avoidance++
-		i(199990),	-- Enchant Cloak - Homebound Speed++
-		i(199991),	-- Enchant Cloak - Regenerative Leech++
-		i(199992),	-- Enchant Cloak - Writ of Avoidance++
-		i(199993),	-- Enchant Cloak - Writ of Leech++
-		i(199994),	-- Enchant Cloak - Writ of Speed++
-		i(199995),	-- Enchant Ring - Devotion of Critical Strike++
-		i(199996),	-- Enchant Ring - Devotion of Haste++
-		i(199997),	-- Enchant Ring - Devotion of Mastery++
-		i(199998),	-- Enchant Ring - Devotion of Versatility++
-		i(199999),	-- Enchant Ring - Writ of Critical Strike++
-		i(200000),	-- Enchant Ring - Writ of Haste++
-		i(200001),	-- Enchant Ring - Writ of Mastery++
-		i(200002),	-- Enchant Ring - Writ of Versatility++
-		i(200003),	-- Enchant Tool - Draconic Deftness++
-		i(200004),	-- Enchant Tool - Draconic Finesse++
-		i(200005),	-- Enchant Tool - Draconic Inspiration++
-		i(200006),	-- Enchant Tool - Draconic Perception++
-		i(200007),	-- Enchant Tool - Draconic Resourcefulness++
-		i(200008),	-- Enchant Weapon - Burning Devotion++
-		i(200009),	-- Enchant Weapon - Burning Writ++
-		i(200010),	-- Enchant Weapon - Earthen Devotion++
-		i(200011),	-- Enchant Weapon - Earthen Writ++
-		i(200012),	-- Enchant Weapon - Titanic Devotion++
-		i(200013),	-- Enchant Weapon - Titanic Writ++
-		i(200014),	-- Enchant Weapon - Frozen Devotion++
-		i(200015),	-- Enchant Weapon - Frozen Writ++
-		i(200016),	-- Enchant Weapon - Wafting Devotion++
-		i(200017),	-- Enchant Weapon - Wafting Writ++
-		i(200018),	-- Enchant Boots - Plainsrunner's Breeze+++
-		i(200019),	-- Enchant Boots - Rider's Reassurance+++
-		i(200020),	-- Enchant Boots - Watcher's Loam+++
-		i(200021),	-- Enchant Bracer - Devotion of Avoidance+++
-		i(200022),	-- Enchant Bracer - Devotion of Leech+++
-		i(200023),	-- Enchant Bracer - Devotion of Speed+++
-		i(200024),	-- Enchant Bracer - Writ of Avoidance+++
-		i(200025),	-- Enchant Bracer - Writ of Leech+++
-		i(200026),	-- Enchant Bracer - Writ of Speed+++
-		i(200027),	-- Enchant Chest - Accelerated Agility+++
-		i(200028),	-- Enchant Chest - Reserve of Intellect+++
-		i(200029),	-- Enchant Chest - Sustained Strength+++
-		i(200030),	-- Enchant Chest - Waking Stats+++
-		i(200031),	-- Enchant Cloak - Graceful Avoidance+++
-		i(200032),	-- Enchant Cloak - Homebound Speed+++
-		i(200033),	-- Enchant Cloak - Regenerative Leech+++
-		i(200034),	-- Enchant Cloak - Writ of Avoidance+++
-		i(200035),	-- Enchant Cloak - Writ of Leech+++
-		i(200036),	-- Enchant Cloak - Writ of Speed+++
-		i(200037),	-- Enchant Ring - Devotion of Critical Strike+++
-		i(200038),	-- Enchant Ring - Devotion of Haste+++
-		i(200039),	-- Enchant Ring - Devotion of Mastery+++
-		i(200040),	-- Enchant Ring - Devotion of Versatility+++
-		i(200041),	-- Enchant Ring - Writ of Critical Strike+++
-		i(200042),	-- Enchant Ring - Writ of Haste+++
-		i(200043),	-- Enchant Ring - Writ of Mastery+++
-		i(200044),	-- Enchant Ring - Writ of Versatility+++
-		i(200045),	-- Enchant Tool - Draconic Deftness+++
-		i(200046),	-- Enchant Tool - Draconic Finesse+++
-		i(200047),	-- Enchant Tool - Draconic Inspiration+++
-		i(200048),	-- Enchant Tool - Draconic Perception+++
-		i(200049),	-- Enchant Tool - Draconic Resourcefulness+++
-		i(200050),	-- Enchant Weapon - Burning Devotion+++
-		i(200051),	-- Enchant Weapon - Burning Writ+++
-		i(200052),	-- Enchant Weapon - Earthen Devotion+++
-		i(200053),	-- Enchant Weapon - Earthen Writ+++
-		i(200054),	-- Enchant Weapon - Titanic Devotion+++
-		i(200055),	-- Enchant Weapon - Titanic Writ+++
-		i(200056),	-- Enchant Weapon - Frozen Devotion+++
-		i(200057),	-- Enchant Weapon - Frozen Writ+++
-		i(200058),	-- Enchant Weapon - Wafting Devotion+++
-		i(200059),	-- Enchant Weapon - Wafting Writ+++
-
-
 
 		i(200069),	-- Obsidian Cache
 		i(200070),	-- Obsidian Strongbox
@@ -2283,7 +2153,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 
 
-		i(200113),	-- Resonant Crystal
+
 		i(200114),	-- Stormie
 		i(200116),	-- Everlasting Horn of Lavaswimming
 
@@ -2493,10 +2363,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200466),	-- Maruuk Scout's Vest
 		i(200467),	-- Maruuk Spiritual Vestments
 		i(200468),	-- Maruuk Hunt Spoils
-		i(200469),	-- Khadgar's Disenchanting Rod
-		i(200470),	-- Illusion: Primal Mastery
+
+
 		i(200471),	-- Magnetized Splinter
-		i(200472),	-- Scepter of Spectacle: Fire
+
 		i(200473),	-- Agitated Fragment
 		i(200474),	-- Tarasek Pillaged Piece
 		i(200476),	-- Fallingwater Overlook VIP Entry Pass
@@ -2553,7 +2423,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200529),	-- Constructed Arcana
 		i(200530),	-- Sweet Steamed Meat
 		i(200534),	-- Toghus Poleaxe
-		i(200535),	-- Scepter of Spectacle: Frost
+
 		i(200536),	-- Tamed Eagle
 		i(200537),	-- Bundle of Primalist Orders
 		i(200539),	-- Khansguard Shield
@@ -2623,10 +2493,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200610),	-- Dragon Racing Purse - Second Place
 		i(200611),	-- Dragon Racing Purse - Third Place
 		i(200613),	-- Aylaag Windstone Fragment
-		i(200614),	-- Illusory Adornment: Fire
-		i(200615),	-- Illusory Adornment: Fire
-		i(200616),	-- Illusory Adornment: Fire
-		i(200618),	-- Primal Invocation Extract
+
+
 		i(200619),	-- Scaralesh's Special
 		i(200620),	-- Inflaming Incense
 		i(200621),	-- Soothing Incense
@@ -2635,16 +2503,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200628),	-- Somewhat-Stabilized Arcana
 		i(200630),	-- Ohn'ir Windsage's Hearthstone
 		i(200631),	-- Happy Tuskarr Palooza
-		i(200633),	-- Primal Invocation Extract
-		i(200634),	-- Primal Invocation Extract
+
 		i(200635),	-- Refine Dragon Isles Herbs
 		i(200636),	-- Primal Invocation Quintessence
 		i(200637),	-- Talisman of the Maruuk
 		i(200638),	-- Bubblefilled Flounder
 		i(200639),	-- Talisman of Ohn'ahra
 		i(200640),	-- Obsidian Egg Clutch
-		i(200641),	-- Enchanted Writhebark Wand
-		i(200642),	-- Torch of Primal Awakening
+
+
 		i(200646),	-- Gruff Fisher's Net
 		i(200647),	-- Crystalline Shatter
 		i(200648),	-- Elemental Shatter
@@ -2845,7 +2712,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200879),	-- Zenet Egg
 		i(200880),	-- Wind-Sealed Mana Capsule
 		i(200882),	-- Big Kinook's Spare Ladle
-		i(200883),	-- Illusion: Primal Air
+
 		i(200885),	-- Cinna-Cinderbloom Tea
 		i(200886),	-- Lemon Silverleaf Tea
 		i(200887),	-- Charred Porter
@@ -2866,14 +2733,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200902),	-- Ravenberry Panacotta Delight
 		i(200903),	-- Moira's Choice Espresso
 		i(200904),	-- Picante Pomfruit Cake
-		i(200905),	-- Illusion: Primal Earth
-		i(200906),	-- Illusion: Primal Fire
-		i(200907),	-- Illusion: Primal Frost
-		i(200911),	-- Formula: Illusion: Primal Air
-		i(200912),	-- Formula: Illusion: Primal Earth
-		i(200913),	-- Formula: Illusion: Primal Fire
-		i(200914),	-- Formula: Illusion: Primal Frost
-		i(200916),	-- Formula: Illusion: Primal Mastery
+
+
+
 		i(200926),	-- Compendium of Love
 		i(200927),	-- Petal
 		i(200929),	-- Everglow Nectar
@@ -3030,9 +2892,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201089),	-- Craft Creche Crowler
 		i(201090),	-- Bivigosa's Blood Sausages
 		i(201092),	-- Lava Spices
-		i(201158),	-- Scepter of Spectacle: Order
-		i(201160),	-- Scepter of Spectacle: Earth
-		i(201161),	-- Scepter of Spectacle: Air
+
 		i(201231),	-- Bident of Hallucinations
 		i(201232),	-- Bonedust Spreader
 		i(201233),	-- Verdant Drakespine Glaive
@@ -3110,18 +2970,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201307),	-- Raider's Lost Spire
 		i(201308),	-- Scorpion Slicer
 		i(201309),	-- Tomb Raider's Shank
-		i(201310),	-- Illusory Adornment: Frost
-		i(201311),	-- Illusory Adornment: Frost
-		i(201312),	-- Illusory Adornment: Frost
-		i(201313),	-- Illusory Adornment: Earth
-		i(201314),	-- Illusory Adornment: Earth
-		i(201315),	-- Illusory Adornment: Earth
-		i(201316),	-- Illusory Adornment: Air
-		i(201317),	-- Illusory Adornment: Air
-		i(201318),	-- Illusory Adornment: Air
-		i(201319),	-- Illusory Adornment: Order
-		i(201320),	-- Illusory Adornment: Order
-		i(201321),	-- Illusory Adornment: Order
+
 
 		i(201323),	-- Essence of Awakening
 
@@ -3257,7 +3106,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201468),	-- Verdant Swirl
 		i(201469),	-- Emerald Green Apple
 		i(201584),	-- Serevite Rod
-		i(201601),	-- Runed Serevite Rod
+
 		i(201697),	-- Coldarra Coldbrew
 		i(201698),	-- Black Dragon Red Eye
 		i(201700),	-- Notebook of Crafting Knowledge
@@ -3444,7 +3293,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200109),	-- Medicative Potion
 		i(200129),	-- Kolgar's Pack
 		i(200221),	-- Gorloc Crystals
-		i(200479),	-- Sophic Amalgamation
+
 		i(201024),	-- Nokhudon Mantle
 		i(201025),	-- Nokhudon Harness
 		i(201027),	-- Nokhudon Breeches
@@ -3542,7 +3391,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194120),	-- Decorated Teapot
 		i(194121),	-- Handcrafted Boat
 
-		i(194715),	-- Gatherer's Reagent Pouch
+
 		i(194838),	-- Highland Drake Manuscript: Spined Head
 		i(198072),	-- Gold-Banded Dragon Tooth
 		i(198895),	-- Technique: Highland Drake: Spined Head
@@ -3667,6 +3516,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191885),	-- Draconium Repair Hammer
 			i(190520),	-- zzOldPauldrons of the Dragon
 			i(190521),	-- zzOldTraitorous Primal Gauntlets of the Dragon
+		}),
+		prof(ENCHANTING, {
+			i(198779),	-- Formula: Crystal Magical Lockpick (RECIPE!)
+			r(382580),	-- Opening
+			r(391200),	-- Wisp of Tyr
+			r(383736),	-- Unknown
 		}),
 		prof(ENGINEERING, {
 			r(382581),	-- Opening

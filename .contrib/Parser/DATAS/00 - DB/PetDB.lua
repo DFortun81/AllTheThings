@@ -1121,6 +1121,7 @@ pet(193484, 3302);	-- Pilot
 pet(193572, 3306);	-- Quack-E
 pet(191936, 3263);	-- Secretive Frogduck
 pet(198353, 3368);	-- Shiverweb Broodling
+pet(200479, 3390);	-- Sophic Amalgamation
 pet(191932, 3262);	-- Violet Violence
 pet(193619, 3319);	-- Yipper
 
@@ -1245,7 +1246,6 @@ pet(0, 3386);	-- Faceripper
 pet(0, 3387);	-- Bloodbiter
 pet(0, 3388);	-- Tina
 pet(0, 3389);	-- The Quackcestor
-pet(0, 3390);	-- Titan-Touched Elemental
 pet(0, 3391);	-- Phantus
 pet(0, 3392);	-- Skritches
 pet(0, 3393);	-- Anubisath Idol

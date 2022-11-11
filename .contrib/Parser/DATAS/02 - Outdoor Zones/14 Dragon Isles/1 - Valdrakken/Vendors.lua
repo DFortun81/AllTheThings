@@ -206,6 +206,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					i(194662),	-- Design: Alexstraszite Loupes (RECIPE!)
 					i(194493),	-- Plans: Armor Spikes (RECIPE!)
 					i(194506),	-- Plans: Primal Razorstone (RECIPE!)
+					i(199802),	-- Formula: Enchant Tool - Draconic Finesse (RECIPE!)
+					i(199803),	-- Formula: Enchant Tool - Draconic Perception (RECIPE!)
+					i(199804),	-- Formula: Enchant Tool - Draconic Deftness (RECIPE!)
 				},
 			}),
 			n(196598, {	-- Rethelshi

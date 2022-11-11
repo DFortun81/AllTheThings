@@ -120,7 +120,7 @@ i(0, 382317);	-- Overengineered Sleeve Extenders
 i(0, 382362);	-- Rapidly Ticking Gear
 i(0, 382361);	-- Razor-Sharp Gear
 i(0, 384491);	-- Spring-Loaded Capacitor Casing
--- SPECIALiZATION --
+-- SPECIALIZATION --
 i(0, 382345);	-- Assorted Safety Fuses
 i(0, 382408);	-- Cartomancy Cannon
 i(0, 382368);	-- Centralized Precipitation Emitter

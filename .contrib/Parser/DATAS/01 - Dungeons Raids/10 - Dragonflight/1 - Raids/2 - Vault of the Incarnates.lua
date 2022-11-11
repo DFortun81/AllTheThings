@@ -230,6 +230,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(195513),	-- Scripture of Primal Devotion
 						i(195516),	-- Surging-Song Conductors
 						i(195514),	-- Treacherous Totem Wraps
+						i(200916),	-- Formula: Illusion: Primal Mastery (RECIPE!)
 					},
 				}),
 				e(2614, {	-- Broodkeeper Diurna
@@ -466,6 +467,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(195513),	-- Scripture of Primal Devotion
 						i(195516),	-- Surging-Song Conductors
 						i(195514),	-- Treacherous Totem Wraps
+						i(200916),	-- Formula: Illusion: Primal Mastery (RECIPE!)
 					},
 				}),
 				e(2614, {	-- Broodkeeper Diurna
@@ -716,6 +718,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(195513),	-- Scripture of Primal Devotion
 						i(195516),	-- Surging-Song Conductors
 						i(195514),	-- Treacherous Totem Wraps
+						i(200916),	-- Formula: Illusion: Primal Mastery (RECIPE!)
 					},
 				}),
 				e(2614, {	-- Broodkeeper Diurna
@@ -958,6 +961,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(195513),	-- Scripture of Primal Devotion
 						i(195516),	-- Surging-Song Conductors
 						i(195514),	-- Treacherous Totem Wraps
+						i(200916),	-- Formula: Illusion: Primal Mastery (RECIPE!)
 					},
 				}),
 				e(2614, {	-- Broodkeeper Diurna

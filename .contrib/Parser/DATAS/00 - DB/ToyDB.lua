@@ -1075,6 +1075,7 @@ i(193476);	-- Gnoll Tent
 i(199771);	-- Green Dragon Banner
 i(198090);	-- Jar of Excess Slime
 i(193032);	-- Jeweled Offering
+i(200469);	-- Khadgar's Disenchanting Rod
 i(200597);	-- Lover's Bouquet
 i(198857);	-- Lucky Duck
 i(194059);	-- Market Tent
@@ -1113,7 +1114,6 @@ i(200160);	-- Notfar's Favorite Food
 i(200178);	-- Infected Ichor
 i(200198);	-- Primalist Prison
 i(200249);	-- Mage's Chewed Wand
-i(200469);	-- Khadgar's Disenchanting Rod
 i(200116);	-- Everlasting Horn of Lavaswimming
 i(200628);	-- Somewhat-Stabilized Arcana
 i(200630);	-- Ohn'ir Windsage's Hearthstone

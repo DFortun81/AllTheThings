@@ -439,10 +439,10 @@ _.IllusionDB = {
 		["text"] = "Transcendent Soul",
 		["questID"] = 62395,
 	},
-	{	-- Illusion: Dreadflame
+	{	-- Illusion: Sinful Flame
 	--	["itemID"] = ,
-		["illusionID"] = 6096,
-		["text"] = "Dreadflame",
+		["illusionID"] = 6266,
+		["text"] = "Sinful Flame",
 	--	["questID"] = ,
 	},
 	{	-- Illusion: Unchained Fury
@@ -451,16 +451,46 @@ _.IllusionDB = {
 		["text"] = "Unchained Fury",
 	--	["questID"] = ,
 	},
-	{	-- Illusion: Unchained Fury
+	{	-- Illusion: Cosmic Flow
 	--	["itemID"] = ,
 		["illusionID"] = 6351,
 		["text"] = "Cosmic Flow",
 	--	["questID"] = ,
 	},
-	{	-- Illusion: Unchained Fury
+	{	-- Illusion: Eternal Flux
 	--	["itemID"] = ,
 		["illusionID"] = 6378,
 		["text"] = "Eternal Flux",
+	--	["questID"] = ,
+	},
+	{	-- Illusion: Primal Mastery
+		["itemID"] = 200470,
+		["illusionID"] = 6672,
+		["text"] = "Primal Mastery",
+	--	["questID"] = ,
+	},
+	{	-- Illusion: Primal Air
+		["itemID"] = 200883,
+		["illusionID"] = 6675,
+		["text"] = "Primal Air",
+	--	["questID"] = ,
+	},
+	{	-- Illusion: Primal Earth
+		["itemID"] = 200905,
+		["illusionID"] = 6676,
+		["text"] = "Primal Earth",
+	--	["questID"] = ,
+	},
+	{	-- Illusion: Primal Fire
+		["itemID"] = 200906,
+		["illusionID"] = 6677,
+		["text"] = "Primal Fire",
+	--	["questID"] = ,
+	},
+	{	-- Illusion: Primal Frost
+		["itemID"] = 200907,
+		["illusionID"] = 6678,
+		["text"] = "Primal Frost",
 	--	["questID"] = ,
 	},
 };

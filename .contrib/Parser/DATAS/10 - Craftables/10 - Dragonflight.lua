@@ -395,9 +395,192 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(197765),	-- Impossibly Sharp Cutting Knife
 	}),
 	prof(ENCHANTING, {
-		-- Wierd --
-		--i(),	-- Opening
-		--i(),	-- Heart in a Bottle
+		n(DISCOVERY, {
+			r(391185),	-- Primal Invocation Extract
+		}),
+		spell(392888, {	-- Disenchant
+			i(194123),	-- Chromatic Dust
+			i(200113),	-- Resonant Crystal
+			i(194124),	-- Vibrant Shard
+		}),
+		cat(657, {	-- Armor Enchantments
+			i(199934),	-- Enchant Boots - Plainsrunner's Breeze+
+			i(199976),	-- Enchant Boots - Plainsrunner's Breeze++
+			i(200018),	-- Enchant Boots - Plainsrunner's Breeze+++
+			i(199935),	-- Enchant Boots - Rider's Reassurance+
+			i(199977),	-- Enchant Boots - Rider's Reassurance++
+			i(200019),	-- Enchant Boots - Rider's Reassurance+++
+			i(199936),	-- Enchant Boots - Watcher's Loam+
+			i(199978),	-- Enchant Boots - Watcher's Loam++
+			i(200020),	-- Enchant Boots - Watcher's Loam+++
+			i(199937),	-- Enchant Bracer - Devotion of Avoidance+
+			i(199979),	-- Enchant Bracer - Devotion of Avoidance++
+			i(200021),	-- Enchant Bracer - Devotion of Avoidance+++
+			i(199938),	-- Enchant Bracer - Devotion of Leech+
+			i(199980),	-- Enchant Bracer - Devotion of Leech++
+			i(200022),	-- Enchant Bracer - Devotion of Leech+++
+			i(199939),	-- Enchant Bracer - Devotion of Speed+
+			i(199981),	-- Enchant Bracer - Devotion of Speed++
+			i(200023),	-- Enchant Bracer - Devotion of Speed+++
+			i(199940),	-- Enchant Bracer - Writ of Avoidance+
+			i(199982),	-- Enchant Bracer - Writ of Avoidance++
+			i(200024),	-- Enchant Bracer - Writ of Avoidance+++
+			i(199941),	-- Enchant Bracer - Writ of Leech+
+			i(199983),	-- Enchant Bracer - Writ of Leech++
+			i(200025),	-- Enchant Bracer - Writ of Leech+++
+			i(199942),	-- Enchant Bracer - Writ of Speed+
+			i(199984),	-- Enchant Bracer - Writ of Speed++
+			i(200026),	-- Enchant Bracer - Writ of Speed+++
+			i(199943),	-- Enchant Chest - Accelerated Agility+
+			i(199985),	-- Enchant Chest - Accelerated Agility++
+			i(200027),	-- Enchant Chest - Accelerated Agility+++
+			i(199944),	-- Enchant Chest - Reserve of Intellect+
+			i(199986),	-- Enchant Chest - Reserve of Intellect++
+			i(200028),	-- Enchant Chest - Reserve of Intellect+++
+			i(199945),	-- Enchant Chest - Sustained Strength+
+			i(199987),	-- Enchant Chest - Sustained Strength++
+			i(200029),	-- Enchant Chest - Sustained Strength+++
+			i(199946),	-- Enchant Chest - Waking Stats+
+			i(199988),	-- Enchant Chest - Waking Stats++
+			i(200030),	-- Enchant Chest - Waking Stats+++
+			i(199947),	-- Enchant Cloak - Graceful Avoidance+
+			i(199989),	-- Enchant Cloak - Graceful Avoidance++
+			i(200031),	-- Enchant Cloak - Graceful Avoidance+++
+			i(199948),	-- Enchant Cloak - Homebound Speed+
+			i(199990),	-- Enchant Cloak - Homebound Speed++
+			i(200032),	-- Enchant Cloak - Homebound Speed+++
+			i(199949),	-- Enchant Cloak - Regenerative Leech+
+			i(199991),	-- Enchant Cloak - Regenerative Leech++
+			i(200033),	-- Enchant Cloak - Regenerative Leech+++
+			i(199950),	-- Enchant Cloak - Writ of Avoidance+
+			i(199992),	-- Enchant Cloak - Writ of Avoidance++
+			i(200034),	-- Enchant Cloak - Writ of Avoidance+++
+			i(199951),	-- Enchant Cloak - Writ of Leech+
+			i(199993),	-- Enchant Cloak - Writ of Leech++
+			i(200035),	-- Enchant Cloak - Writ of Leech+++
+			i(199952),	-- Enchant Cloak - Writ of Speed+
+			i(199994),	-- Enchant Cloak - Writ of Speed++
+			i(200036),	-- Enchant Cloak - Writ of Speed+++
+			i(199953),	-- Enchant Ring - Devotion of Critical Strike+
+			i(199995),	-- Enchant Ring - Devotion of Critical Strike++
+			i(200037),	-- Enchant Ring - Devotion of Critical Strike+++
+			i(199954),	-- Enchant Ring - Devotion of Haste+
+			i(199996),	-- Enchant Ring - Devotion of Haste++
+			i(200038),	-- Enchant Ring - Devotion of Haste+++
+			i(199955),	-- Enchant Ring - Devotion of Mastery+
+			i(199997),	-- Enchant Ring - Devotion of Mastery++
+			i(200039),	-- Enchant Ring - Devotion of Mastery+++
+			i(199956),	-- Enchant Ring - Devotion of Versatility+
+			i(199998),	-- Enchant Ring - Devotion of Versatility++
+			i(200040),	-- Enchant Ring - Devotion of Versatility+++
+			i(199957),	-- Enchant Ring - Writ of Critical Strike+
+			i(199999),	-- Enchant Ring - Writ of Critical Strike++
+			i(200041),	-- Enchant Ring - Writ of Critical Strike+++
+			i(199958),	-- Enchant Ring - Writ of Haste+
+			i(200000),	-- Enchant Ring - Writ of Haste++
+			i(200042),	-- Enchant Ring - Writ of Haste+++
+			i(199959),	-- Enchant Ring - Writ of Mastery+
+			i(200001),	-- Enchant Ring - Writ of Mastery++
+			i(200043),	-- Enchant Ring - Writ of Mastery+++
+			i(199960),	-- Enchant Ring - Writ of Versatility+
+			i(200002),	-- Enchant Ring - Writ of Versatility++
+			i(200044),	-- Enchant Ring - Writ of Versatility+++
+		}),
+		cat(658, {	-- Weapon Enchantments
+			i(199961),	-- Enchant Tool - Draconic Deftness+
+			i(200003),	-- Enchant Tool - Draconic Deftness++
+			i(200045),	-- Enchant Tool - Draconic Deftness+++
+			i(199962),	-- Enchant Tool - Draconic Finesse+
+			i(200004),	-- Enchant Tool - Draconic Finesse++
+			i(200046),	-- Enchant Tool - Draconic Finesse+++
+			i(199963),	-- Enchant Tool - Draconic Inspiration+
+			i(200005),	-- Enchant Tool - Draconic Inspiration++
+			i(200047),	-- Enchant Tool - Draconic Inspiration+++
+			i(199964),	-- Enchant Tool - Draconic Perception+
+			i(200006),	-- Enchant Tool - Draconic Perception++
+			i(200048),	-- Enchant Tool - Draconic Perception+++
+			i(199965),	-- Enchant Tool - Draconic Resourcefulness+
+			i(200007),	-- Enchant Tool - Draconic Resourcefulness++
+			i(200049),	-- Enchant Tool - Draconic Resourcefulness+++
+			i(199966),	-- Enchant Weapon - Burning Devotion+
+			i(200008),	-- Enchant Weapon - Burning Devotion++
+			i(200050),	-- Enchant Weapon - Burning Devotion+++
+			i(199967),	-- Enchant Weapon - Burning Writ+
+			i(200009),	-- Enchant Weapon - Burning Writ++
+			i(200051),	-- Enchant Weapon - Burning Writ+++
+			i(199968),	-- Enchant Weapon - Earthen Devotion+
+			i(200010),	-- Enchant Weapon - Earthen Devotion++
+			i(200052),	-- Enchant Weapon - Earthen Devotion+++
+			i(199969),	-- Enchant Weapon - Earthen Writ+
+			i(200011),	-- Enchant Weapon - Earthen Writ++
+			i(200053),	-- Enchant Weapon - Earthen Writ+++
+			i(199972),	-- Enchant Weapon - Frozen Devotion+
+			i(200014),	-- Enchant Weapon - Frozen Devotion++
+			i(200056),	-- Enchant Weapon - Frozen Devotion+++
+			i(199973),	-- Enchant Weapon - Frozen Writ+
+			i(200015),	-- Enchant Weapon - Frozen Writ++
+			i(200057),	-- Enchant Weapon - Frozen Writ+++
+			i(199970),	-- Enchant Weapon - Sophic Devotion+
+			i(200012),	-- Enchant Weapon - Sophic Devotion++
+			i(200054),	-- Enchant Weapon - Sophic Devotion+++
+			i(199971),	-- Enchant Weapon - Sophic Writ+
+			i(200013),	-- Enchant Weapon - Sophic Writ++
+			i(200055),	-- Enchant Weapon - Sophic Writ+++
+			i(199974),	-- Enchant Weapon - Wafting Devotion+
+			i(200016),	-- Enchant Weapon - Wafting Devotion++
+			i(200058),	-- Enchant Weapon - Wafting Devotion+++
+			i(199975),	-- Enchant Weapon - Wafting Writ+
+			i(200017),	-- Enchant Weapon - Wafting Writ++
+			i(200059),	-- Enchant Weapon - Wafting Writ+++
+		}),
+		filter(BATTLE_PETS, {
+			i(200479),	-- Sophic Amalgamation (PET!)
+		}),
+		filter(ILLUSIONS, {
+			i(200883),	-- Illusion: Primal Air
+			i(200905),	-- Illusion: Primal Earth
+			i(200906),	-- Illusion: Primal Fire
+			i(200907),	-- Illusion: Primal Frost
+			i(200470),	-- Illusion: Primal Mastery
+		}),
+		filter(MISC, {
+			i(201318),	-- Illusory Adornment: Air+
+			i(201317),	-- Illusory Adornment: Air++
+			i(201316),	-- Illusory Adornment: Air+++
+			i(201315),	-- Illusory Adornment: Earth+
+			i(201314),	-- Illusory Adornment: Earth++
+			i(201313),	-- Illusory Adornment: Earth+++
+			i(200614),	-- Illusory Adornment: Fire+
+			i(200615),	-- Illusory Adornment: Fire++
+			i(200616),	-- Illusory Adornment: Fire+++
+			i(201312),	-- Illusory Adornment: Frost+
+			i(201311),	-- Illusory Adornment: Frost++
+			i(201310),	-- Illusory Adornment: Frost+++
+			i(201321),	-- Illusory Adornment: Order+
+			i(201320),	-- Illusory Adornment: Order++
+			i(201319),	-- Illusory Adornment: Order+++
+			i(201161),	-- Scepter of Spectacle: Air
+			i(201160),	-- Scepter of Spectacle: Earth
+			i(200472),	-- Scepter of Spectacle: Fire
+			i(200535),	-- Scepter of Spectacle: Frost
+			i(201158),	-- Scepter of Spectacle: Order
+		}),
+		filter(56, {
+			i(200618),	-- Primal Invocation Extract+
+			i(200633),	-- Primal Invocation Extract++
+			i(200634),	-- Primal Invocation Extract+++
+		}),
+		filter(TOYS, {
+			i(200469),	-- Khadgar's Disenchanting Rod (TOY!)
+		}),
+		n(WEAPONS, {
+			i(200641),	-- Enchanted Writhebark Wand
+			i(200642),	-- Torch of Primal Awakening
+			-- Tools
+			i(198715),	-- Runed Draconium Rod
+			i(198716),	-- Runed Khaz'gorite Rod
+			i(201601),	-- Runed Serevite Rod
+		}),
 	}),
 	prof(ENGINEERING, {
 		n(DISCOVERY, {
@@ -1433,6 +1616,90 @@ root("HiddenQuestTriggers", {
 			-- Dragon Ridning
 			--q(),	-- Prototype Explorer's Barding Framework
 			--q(),	-- Prototype Regal Barding Framework
+		}),
+		prof(ENCHANTING, {
+			-- Recrafting --
+			q(),	-- Recraft Equipment
+			-- Fishing Reagents --
+			q(),	-- Illustrations Insight
+			-- Cloak Enchantments
+			q(),	-- Graceful Avoidance
+			q(),	-- Homebound Avoidance
+			q(),	-- Renegenerative Leech
+			q(),	-- Writ of Avoidance
+			q(),	-- Writ of Leech
+			q(),	-- Writ of Speed
+			-- Chest Enchantments
+			q(),	-- Accelerated Agility
+			q(),	-- Reserved Intellect
+			q(),	-- Sustained Strength
+			q(),	-- Waking Stats
+			-- Bracer Enchantments
+			q(),	-- Devotion of Avoidance
+			q(),	-- Devotion of Leech
+			q(),	-- Devotion of Speed
+			q(),	-- Writ of Avoidance
+			q(),	-- Writ of Leech
+			q(),	-- Writ of Speed
+			-- Boot Enchantments
+			q(),	-- Plainsrunner's Breeze
+			q(),	-- Rider's Reassurance
+			q(),	-- Watcher's Loam
+			-- Ring Enchantments
+			q(),	-- Devotion of Critical Strike
+			q(),	-- Devotion of Haste
+			q(),	-- Devotion of Mastery
+			q(),	-- Devotion of Versatility
+			q(),	-- Writ of Critical Strike
+			q(),	-- Writ of Haste
+			q(),	-- Writ of Mastery
+			q(),	-- Writ of Versatility
+			-- Weapon Enchantments
+			q(),	-- Burning Devotion
+			q(),	-- Burning Writ
+			q(),	-- Earthen Devotion
+			q(),	-- Earthen Writ
+			q(),	-- Frozen Devotion
+			q(),	-- Frozen Writ
+			q(),	-- Sophic Devotion
+			q(),	-- Sophic Writ
+			q(),	-- Wafting Devotion
+			q(),	-- Wafting Writ
+			-- Profession Tool Enchantments
+			q(),	-- Draconic Detness
+			q(),	-- Draconic Finess
+			q(),	-- Draconic Inspiration
+			q(),	-- Draconic Perception
+			q(),	-- Draconic Resourcefulness
+			-- Rods and Wands
+			q(),	-- Enchanted Writhebark Rod
+			q(),	-- Runed Draconium Rod
+			q(),	-- Runed Khaz'gorite
+			q(),	-- Runed Serevite Rod
+			q(),	-- Torch of Primal Awakening
+			-- Illusory Goods
+			q(),	-- Illusion: Primal Air
+			q(),	-- Illusion: Primal Earth
+			q(),	-- Illusion: Primal Fire
+			q(),	-- Illusion: Primal Frost
+			q(),	-- Illusion: Primal Mastery
+			q(),	-- Illusory Adornment: Air
+			q(),	-- Illusory Adornment: Earth
+			q(),	-- Illusory Adornment: Fire
+			q(),	-- Illusory Adornment: Frost
+			q(),	-- Illusory Adornment: Order
+			q(),	-- Khadgar's Disenchanting Rod
+			q(),	-- Primal Invocation Extract
+			q(),	-- Scepter of Spectacle: Air
+			q(),	-- Scepter of Spectacle: Earth
+			q(),	-- Scepter of Spectacle: Fire
+			q(),	-- Scepter of Spectacle: Frost
+			q(),	-- Scepter of Spectacle: Order
+			-- Shatters --
+			q(),	-- Crystalline Shatter
+			q(),	-- Elemental Shatter
+			-- Magical Merchandise
+			q(),	-- Sophic Amalgamation
 		}),
 		prof(ENGINEERING, {
 			-- Recrafting --

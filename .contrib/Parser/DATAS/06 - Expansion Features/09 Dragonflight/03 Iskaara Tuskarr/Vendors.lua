@@ -124,6 +124,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					i(194610),	-- Design: Keen Ysemerald (RECIPE!)
 					i(194603),	-- Design: Radiant Alexstraszite (RECIPE!)
 					i(194602),	-- Design: Sensei's Alexstraszite (RECIPE!)
+					i(199816),	-- Formula: Enchant Chest - Accelerated Agility (RECIPE!)
+					i(199815),	-- Formula: Enchant Cloak - Regenerative Leech (RECIPE!)
 						-- RENOWN 15 --
 					i(194634),	-- Design: Idol of the Dreamer (RECIPE!)
 					i(194633),	-- Design: Idol of the Spell-Weaver (RECIPE!)

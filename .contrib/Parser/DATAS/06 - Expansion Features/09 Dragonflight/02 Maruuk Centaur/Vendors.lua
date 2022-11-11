@@ -27,6 +27,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					-- RENOWN 5 --
 					i(197569),	-- Windborne Velocidrake: Horned Jaw
 					i(197610),	-- Windborne Velocidrake: Yellow Horns
+					-- RENOWN 8 --
+					i(199814),	-- Formula: Enchant Boots - Plainsrunner's Breeze (RECIPE!)
+					i(199813),	-- Formula: Enchant Chest - Sustained Strength (RECIPE!)
 					-- RENOWN 13 --
 					i(193870),	-- Pattern: Allied Legguards of Sansok Khan (RECIPE!)
 					i(193878),	-- Pattern: Ancestor's Dew Drippers (RECIPE!)

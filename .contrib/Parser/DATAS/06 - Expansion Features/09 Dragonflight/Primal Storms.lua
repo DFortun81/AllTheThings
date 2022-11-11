@@ -51,6 +51,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		}),
 		n(REWARDS, {
 			i(194641),	-- Design: Elemental Lariat (RECIPE!)
+			i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
+			i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
+			i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
+			i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
 		}),
 	}),
 })));

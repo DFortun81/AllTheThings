@@ -46,6 +46,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL 
 				-- Recipes
 				r(377978,{["u"]=15}),	-- Heart in a Bottle (ALCHEMY)
 				r(377981,{["u"]=15}),	-- Heart in a Bottle (BLACKSMITHING)
+				r(377982,{["u"]=15}),	-- Heart in a Bottle (ENCHANTING)
 				r(377983,{["u"]=15}),	-- Heart in a Bottle (ENGINEERING)
 				r(377915,{["u"]=15}),	-- Heart in a Bottle (JEWELCRAFTING)
 				r(377989,{["u"]=15}),	-- Heart in a Bottle (LEATHERWORKING)
@@ -244,6 +245,34 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL 
 				--["sourceQuests"] = {  },	--
 				["provider"] = { "n", 198094 },	-- Head Chef Stacks
 				["coord"] = { 76.4, 35.7, THE_WAKING_SHORES },
+			}),
+		}),
+		prof(ENCHANTING, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(389547),	-- Burning Devotion
+					r(391302),	-- Crystalline Shatter
+					r(389301),	-- Devotion of Avoidance
+					r(389303),	-- Devotion of Leech
+					r(389304),	-- Devotion of Speed
+					r(389519),	-- Draconic Inspiration
+					r(389530),	-- Draconic Resourcefulness
+					r(389549),	-- Earthen Devotion
+					r(391304),	-- Elemental Shatter
+					r(389551),	-- Frozen Devotion
+					r(391812),	-- Illusory Adornment: Order
+					r(391202),	-- Illustrious Insight
+					r(390855),	-- Khadgar's Disenchanting Rod
+					r(389417),	-- Reserve of Intellect
+					r(390825),	-- Runed Khaz'gorite Rod
+					r(391808),	-- Scepter of Spectacle: Order
+					r(390831),	-- Sophic Amalgamation
+					r(389550),	-- Sophic Devotion
+					r(391179),	-- Torch of Primal Awakening
+					r(389558),	-- Wafting Devotion
+					r(389410),	-- Waking Stats
+				},
 			}),
 		}),
 		prof(ENGINEERING, {
