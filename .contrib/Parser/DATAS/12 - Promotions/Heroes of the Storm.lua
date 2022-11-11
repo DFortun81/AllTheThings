@@ -2,7 +2,10 @@
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
 root("Promotions", n(-532, {	-- Heroes of the Storm
-	ach(10657),	-- Fledgling Hero of Warcraft
+	ach(10657, {	-- Fledgling Hero of Warcraft
+		["description"] = "Cross-Game Reward: Lady Liadrin Paladin Hero in Hearthstone.",
+		["timeline"] = { "added 7.0.3.21384" },
+	}),
 	n(REWARDS, bubbleDown({
 		["u"] = BLIZZARD_BALANCE,
 		["description"] = "Obtained by playing Heroes of the Storm and reaching level 20.",
