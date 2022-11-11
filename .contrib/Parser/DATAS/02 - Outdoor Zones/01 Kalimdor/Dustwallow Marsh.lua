@@ -1292,7 +1292,6 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 1240,	-- The Troll Witchdoctor
 					["coord"] = { 32.2, 27.7, STRANGLETHORN_VALE },
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
