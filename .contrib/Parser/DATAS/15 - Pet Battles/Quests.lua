@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 -- Various simplified rewards
 local SACK_OF_PET_SUPPLIES =
 i(89125, {	-- Sack of Pet Supplies
@@ -15,7 +14,6 @@ local SHINY_PET_CHARM =
 i(116415, {	-- Shiny Pet Charm
 	["sym"] = {{ "fill" }},
 });
-
 root("PetBattles", petbattle({
 	n(QUESTS, {
 		q(44767, {	-- A Celestial Invitation
@@ -27,7 +25,7 @@ root("PetBattles", petbattle({
 		}),
 		-- Battle Pet Tamers Quests
 		q(31902, {	-- Battle Pet Tamers: Eastern Kingdoms (A)
-			["altQuests"] = { 31903 },	-- Battle Pet Tamers: Eastern Kingdoms (Horde version, since only one can be completed per account and Blizz doesn't check it off, apparently)
+			-- ["altQuests"] = { 31903 },	-- Battle Pet Tamers: Eastern Kingdoms (Horde version, since only one can be completed per account and Blizz doesn't check it off, apparently)
 			["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -37,7 +35,7 @@ root("PetBattles", petbattle({
 			},
 		}),
 		q(31903, {	-- Battle Pet Tamers: Eastern Kingdoms (H)
-			["altQuests"] = { 31902 },	-- Battle Pet Tamers: Eastern Kingdoms (Alliance version, since only one can be completed per account and Blizz doesn't check it off, apparently)
+			-- ["altQuests"] = { 31902 },	-- Battle Pet Tamers: Eastern Kingdoms (Alliance version, since only one can be completed per account and Blizz doesn't check it off, apparently)
 			["provider"] = { "n", 63626 },	-- Varzok
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -46,7 +44,7 @@ root("PetBattles", petbattle({
 			},
 		}),
 		q(31889, {	-- Battle Pet Tamers: Kalimdor (A)
-			["altQuests"] = { 31891 },
+			-- ["altQuests"] = { 31891 },
 			["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -55,7 +53,7 @@ root("PetBattles", petbattle({
 			},
 		}),
 		q(31891, {	-- Battle Pet Tamers: Kalimdor (H)
-			["altQuests"] = { 31889 },
+			-- ["altQuests"] = { 31889 },
 			["provider"] = { "n", 63626 },	-- Varzok
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -64,7 +62,7 @@ root("PetBattles", petbattle({
 			},
 		}),
 		q(31919, {	-- Battle Pet Tamers: Outland (A)
-			["altQuests"] = { 31921 },
+			-- ["altQuests"] = { 31921 },
 			["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -77,7 +75,7 @@ root("PetBattles", petbattle({
 			},
 		}),
 		q(31921, {	-- Battle Pet Tamers: Outland (H)
-			["altQuests"] = { 31919 },
+			-- ["altQuests"] = { 31919 },
 			["provider"] = { "n", 63626 },	-- Varzok
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -90,7 +88,7 @@ root("PetBattles", petbattle({
 			},
 		}),
 		q(31927, {	-- Battle Pet Tamers: Northrend (A)
-			["altQuests"] = { 31929 },
+			-- ["altQuests"] = { 31929 },
 			["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -100,7 +98,7 @@ root("PetBattles", petbattle({
 			},
 		}),
 		q(31929, {	-- Battle Pet Tamers: Northrend (H)
-			["altQuests"] = { 31927 },
+			-- ["altQuests"] = { 31927 },
 			["provider"] = { "n", 63626 },	-- Varzok
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -110,7 +108,7 @@ root("PetBattles", petbattle({
 			},
 		}),
 		q(31966, {	-- Battle Pet Tamers: Cataclysm (A)
-			["altQuests"] = { 31967 },
+			-- ["altQuests"] = { 31967 },
 			["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -120,7 +118,7 @@ root("PetBattles", petbattle({
 			},
 		}),
 		q(31967, {	-- Battle Pet Tamers: Cataclysm (H)
-			["altQuests"] = { 31966 },
+			-- ["altQuests"] = { 31966 },
 			["provider"] = { "n", 63626 },	-- Varzok
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -130,7 +128,7 @@ root("PetBattles", petbattle({
 			},
 		}),
 		q(31930, {	-- Battle Pet Tamers: Pandaria (A)
-			["altQuests"] = { 31952 },
+			-- ["altQuests"] = { 31952 },
 			["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -140,7 +138,7 @@ root("PetBattles", petbattle({
 			},
 		}),
 		q(31952, {	-- Battle Pet Tamers: Pandaria (H)
-			["altQuests"] = { 31930 },
+			-- ["altQuests"] = { 31930 },
 			["provider"] = { "n", 63626 },	-- Varzok
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -591,6 +589,7 @@ root("PetBattles", petbattle({
 			["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31728,	-- Bill Buckler
+			["altQuests"] = { 31918 },	-- A Tamer's Homecoming (H)
 		}),
 		-- Horde Questline
 		q(31812, {	-- Zunta, The Pet Tramer
@@ -654,6 +653,7 @@ root("PetBattles", petbattle({
 			["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
 			["races"] = HORDE_ONLY,
 			["sourceQuests"] = { 31870 },	--  Cassandra Kaboom
+			["altQuests"] = { 31917 },	-- A Tamer's Homecoming (A)
 		}),
 		-- Grand Master
 		q(31915, {	-- Grand Master Lydia Accoste
@@ -830,7 +830,11 @@ root("PetBattles", petbattle({
 				i(90173),	-- Pandaren Water Spirit
 			},
 		}),
-		-- Dragonflight
+	}),
+	-- Dragonflight
+	n(QUESTS, bubbleDown({
+		["timeline"] = ADDED_DFREL,
+	},{
 		-- PET QUESTS?!
 		q(70647, {	-- Oh Where, Oh Where Can He Be?
 			["description"] = "Account-Wide Quest.",
@@ -902,18 +906,20 @@ root("PetBattles", petbattle({
 				ach(16399),	-- Lovin' Lubbins
 			},
 		}),
-		-- Daily Quests
+	})),
+	-- Daily Quests
+	n(QUESTS, sharedData({
+		["isDaily"] = true,
+	},{
 		q(31854, {	-- Analynn
 			["provider"] = { "n", 66136 },	-- Analynn
 			["coord"] = { 20.2, 29.5, ASHENVALE },
 			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
 			["sourceQuests"] = { 31814 },	-- Analynn
 		}),
 		q(47895, {	-- Bert's Bots
 			["provider"] = { "n", 124617 },	-- Environeer Bert
 			["coord"] = { 42.9, 74.2, NEW_TINKERTOWN_LOWER },
-			["isDaily"] = true,
 			["description"] = "This pet has a chance of dropping after defeating Environeer Bert.  He is also located in Gnomeregan.",
 			["g"] = {
 				i(151638, {	-- Leprous Sack of Pet Supplies
@@ -925,20 +931,17 @@ root("PetBattles", petbattle({
 			["provider"] = { "n", 65656 },	-- Bill Buckler
 			["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
 			["sourceQuests"] = { 31728 },	-- Bill Buckler
 		}),
 		q(31904, {	-- Cassandra Kaboom
 			["provider"] = { "n", 66422 },	-- Cassandra Kaboom
 			["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
 			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
 			["sourceQuests"] = { 31870 },	-- Cassandra Kaboom
 		}),
 		q(45083, {	-- Crysa's Flyers
 			["provider"] = { "n", 115286 },	-- Crysa
 			["coord"] = { 63.6, 35.8, NORTHERN_BARRENS },
-			["isDaily"] = true,
 			["groups"] = {
 				i(142447, {	-- Torn Sack of Pet Supplies
 					i(142448),	-- Albino Buzzard
@@ -950,50 +953,42 @@ root("PetBattles", petbattle({
 			["provider"] = { "n", 66135 },	-- Dagra the Fierce
 			["coord"] = { 58.6, 53.0, NORTHERN_BARRENS },
 			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
 			["sourceQuests"] = { 31813 },	-- Dagra the Fierce
 		}),
 		q(31910, {	-- David Kosse
 			["provider"] = { "n", 66478 },	-- David Kosse
 			["coord"] = { 62.9, 54.5, THE_HINTERLANDS },
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
 		}),
 		q(31911, {	-- Deiza Plaguehorn
 			["provider"] = { "n", 66512 },	-- Deiza Plaguehorn
 			["coord"] = { 67.0, 52.4, EASTERN_PLAGUELANDS },
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
 		}),
 		q(31914, {	-- Durin Darkhammer
 			["provider"] = { "n", 66520 },	-- Durin Darkhammer
 			["coord"] = { 25.5, 47.4, BURNING_STEPPES },
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
 		}),
 		q(31908, {	-- Elena Flutterfly
 			["provider"] = { "n", 66412 },	-- Elena Flutterfly
 			["coord"] = { 46.0, 60.4, MOONGLADE },
 			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
 		}),
 		q(31850, {	-- Eric Davidson
 			["provider"] = { "n", 65655 },	-- Eric Davidson
 			["coord"] = { 19.8, 44.6, DUSKWOOD },
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
 			["sourceQuests"] = { 31726 },	-- Eric Davidson
 		}),
 		q(31913, {	-- Everessa
 			["provider"] = { "n", 66518 },	-- Everessa
 			["coord"] = { 76.8, 41.4, SWAMP_OF_SORROWS },
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
 		}),
 		q(31916, {	-- Grand Master Lydia Accoste
 			["provider"] = { "n", 66522 },	-- Lydia Accoste
 			["coord"] = { 40.0, 76.4, DEADWIND_PASS },
-			["isDaily"] = true,
 			["sourceQuest"] = 31915,	-- Grand Master Lydia Accoste
 			["g"] = {
 				SACK_OF_PET_SUPPLIES
@@ -1002,7 +997,6 @@ root("PetBattles", petbattle({
 		q(31909, {	-- Grand Master Trixxy
 			["provider"] = { "n", 66466 },	-- Grand Master Trixxy
 			["coord"] = { 65.6, 64.5, WINTERSPRING },
-			["isDaily"] = true,
 			["sourceQuests"] = { 31897 },	-- Grand Master Trixxy
 			["g"] = {
 				SACK_OF_PET_SUPPLIES
@@ -1011,94 +1005,79 @@ root("PetBattles", petbattle({
 		q(31905, {	-- Grazzle the Great
 			["provider"] = { "n", 66436 },	-- Grazzle the Great
 			["coord"] = { 53.8, 74.8, DUSTWALLOW_MARSH },
-			["isDaily"] = true,
 		}),
 		q(31693, {	-- Julia Stevens
 			["provider"] = { "n", 64330 },	-- Julia Stevens
 			["coord"] = { 41.6, 83.6, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
 			["sourceQuests"] = { 31316 },	-- Julia, The Pet Tamer
 		}),
 		q(31906, {	-- Kela Grimtotem
 			["provider"] = { "n", 66452 },	-- Kela Grimtotem
 			["coord"] = { 31.8, 32.8, THOUSAND_NEEDLES },
 			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
 		}),
 		q(31912, {	-- Kortas Darkhammer
 			["provider"] = { "n", 66515 },	-- Kortas Darkhammer
 			["coord"] = { 35.2, 27.7, SEARING_GORGE },
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
 		}),
 		q(31781, {	-- Lindsay
 			["provider"] = { "n", 65651 },	-- Lindsay
 			["coord"] = { 33.2, 52.5, REDRIDGE_MOUNTAINS },
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
 			["sourceQuests"] = { 31725 },	-- Lindsay
 		}),
 		q(31872, {	-- Merda Stronghoof
 			["provider"] = { "n", 66372 },	-- Merda Stronghoof
 			["coord"] = { 57.2, 45.8, DESOLACE },
 			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
 			["sourceQuests"] = { 31817 },	-- Merda Stronghoof
 		}),
 		q(31780, {	-- Old MacDonald
 			["provider"] = { "n", 65648 },	-- Old MacDonald
 			["coord"] = { 80.6, 18.4, WESTFALL },
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
 			["sourceQuests"] = { 31724 },	-- Old MacDonald
 		}),
 		q(31852, {	-- Steven Lisbane
 			["provider"] = { "n", 63194 },	-- Steven Lisbane
 			["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
 		}),
 		q(31871, {	-- Traitor Gluk
 			["provider"] = { "n", 66352 },	-- Traitor Gluk
 			["coord"] = { 59.6, 49.6, FERALAS },
 			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
 		}),
 		q(31862, {	-- Zonya the Sadist
 			["provider"] = { "n", 66137 },	-- Zonya the Sadist
 			["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
 			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
 			["sourceQuests"] = { 31815 },	-- Zonya the Sadist
 		}),
 		q(31907, {	-- Zoltan
 			["provider"] = { "n", 66442 },	-- Zoltan
 			["coord"] = { 40.0, 56.6, FELWOOD },
 			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
 		}),
 		q(31818, {	-- Zunta
 			["provider"] = { "n", 66126 },	-- Zunta
 			["coord"] = { 43.9, 28.9, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
 			["sourceQuests"] = { 31812 },	-- Zunta, The Pet Tramer
 		}),
 		-- TBC
 		q(31922, {	-- Nicki Tinytech
 			["qg"] = 66550,	-- Nicki Tinytech
 			["coord"] = { 64.3, 49.3, HELLFIRE_PENINSULA },
-			["isDaily"] = true,
 		}),
 		q(31924, {	-- Narrok
-			["isDaily"] = true,
 			["coord"] = { 61.0, 49.4, NAGRAND },
 			["provider"] = { "n", 66552 },	-- Narrok <Master Pet Tamer>
 		}),
 		q(31926, {	-- Grand Master Antari
 			["sourceQuests"] = { 31920 },	-- Grand Master Antari
-			["isDaily"] = true,
 			["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 			["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
 			["g"] = {
@@ -1106,25 +1085,21 @@ root("PetBattles", petbattle({
 			},
 		}),
 		q(31923, {	-- Ras'an
-			["isDaily"] = true,
 			["coord"] = { 17.2, 50.5, ZANGARMARSH },
 			["provider"] = { "n", 66551 },	-- Ras'an <Master Pet Tamer>
 		}),
 		q(31925, {	-- Morulu The Elder
-			["isDaily"] = true,
 			["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
 			["provider"] = { "n", 66553 },	-- Morulu The Elder
 		}),
 		-- Wrath
 		q(31932, {	-- Nearly Headless Jacob
 			["provider"] = { "n", 66636 },	-- Nearly Headless Jacob
-			["isDaily"] = true,
 			["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
 		}),
 		q(31933, {	-- Okrut Dragonwaste
 			["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
 			["provider"] = { "n", 66638 },	-- Okrut Dragonwaste
-			["isDaily"] = true,
 		}),
 		q(31931, {	-- Beegle Blastfuse
 			["provider"] = { "n", 66635 },	-- Beegle Blastfuse
@@ -1135,32 +1110,27 @@ root("PetBattles", petbattle({
 			["sourceQuests"] = { 31928 },	-- Grand Master Payne
 			["coord"] = { 77.4, 19.6, ICECROWN },
 			["provider"] = { "n", 66675 },	-- Major Payne
-			["isDaily"] = true,
 			["g"] = {
 				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31934, {	-- Gutretch
 			["coord"] = { 13.2, 66.7, ZULDRAK },
-			["isDaily"] = true,
 			["provider"] = { "n", 66639 },
 		}),
 		-- Cata
 		q(31972, {	-- Brok
 			["provider"] = { "n", 66819 },	-- Brok
 			["coord"] = { 61.4, 32.7, MOUNT_HYJAL },
-			["isDaily"] = true,
 		}),
 		q(31974, {	-- Goz Banefury
 			["provider"] = { "n", 66822 },	-- Goz Banefury
 			["coord"] = { 56.5, 56.7, TWILIGHT_HIGHLANDS },
-			["isDaily"] = true,
 		}),
 		q(31971, {	-- Grand Master Obalis
 			["sourceQuests"] = { 31970 },	-- Grand Master Obalis
 			["provider"] = { "n", 66824 },	-- Obalis
 			["coord"] = { 56.6, 41.8, ULDUM },
-			["isDaily"] = true,
 			["g"] = {
 				SACK_OF_PET_SUPPLIES
 			},
@@ -1173,7 +1143,6 @@ root("PetBattles", petbattle({
 		-- MoP
 		q(31957, {	-- Grand Master Shu
 			["coord"] = { 55.1, 37.6, DREAD_WASTES },
-			["isDaily"] = true,
 			["provider"] = { "n", 66739 },	-- Wastewalker Shu
 			["g"] = {
 				SACK_OF_PET_SUPPLIES
@@ -1181,7 +1150,6 @@ root("PetBattles", petbattle({
 		}),
 		q(32439, {	-- Flowing Pandaren Spirit
 			["coord"] = { 61.1, 87.5, DREAD_WASTES },
-			["isDaily"] = true,
 			["provider"] = { "n", 68462 },	-- Flowing Pandaren Spirit
 			["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
 			["sym"] = {
@@ -1198,14 +1166,12 @@ root("PetBattles", petbattle({
 		q(31954, {	-- Grand Master Mo'ruk
 			["coord"] = { 62.6, 45.8, KRASARANG_WILDS },
 			["provider"] = { "n", 66733 },
-			["isDaily"] = true,
 			["g"] = {
 				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31956, {	-- Grand Master Yon
 			["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
-			["isDaily"] = true,
 			["provider"] = { "n", 66738 },	-- Courageous Yon
 			["g"] = {
 				SACK_OF_PET_SUPPLIES
@@ -1214,7 +1180,6 @@ root("PetBattles", petbattle({
 		q(63435, {	-- Temple Throwdown
 			["timeline"] = { "added 9.1.0.39226" },
 			["provider"] = { "n", 176655 },	-- Anthea <Carefree Pet Tamer>
-			["isDaily"] = true,
 			["coord"] = { 70.4, 51.4, KUN_LAI_SUMMIT },
 			["g"] = {
 				i(184866, {	-- Grummlepouch
@@ -1225,7 +1190,6 @@ root("PetBattles", petbattle({
 		}),
 		q(32441, {	-- Thundering Pandaren Spirit
 			["coord"] = { 64.9, 93.8, KUN_LAI_SUMMIT },
-			["isDaily"] = true,
 			["provider"] = { "n", 68465 },	-- Thundering Pandaren Spirit
 			["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
 			["sym"] = {
@@ -1240,7 +1204,6 @@ root("PetBattles", petbattle({
 			},
 		}),
 		q(31953, {	-- Grand Master Hyuna
-			["isDaily"] = true,
 			["coord"] = { 47.9, 54.1, THE_JADE_FOREST },
 			["provider"] = { "n", 66730 },	-- Hyuna of the Shrines
 			["g"] = {
@@ -1249,7 +1212,6 @@ root("PetBattles", petbattle({
 		}),
 		q(32440, {	-- Whispering Pandaren Spirit
 			["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
-			["isDaily"] = true,
 			["provider"] = { "n", 68464 },	-- Whispering Pandaren Spirit
 			["coord"] = { 28.9, 36.0, THE_JADE_FOREST },
 			["sym"] = {
@@ -1265,7 +1227,6 @@ root("PetBattles", petbattle({
 		}),
 		q(31991, {	-- Grand Master Zusshi
 			["coord"] = { 36.3, 52.2, TOWNLONG_STEPPES },
-			["isDaily"] = true,
 			["provider"] = { "n", 66918 },	-- Seeker Zusshi
 			["g"] = {
 				SACK_OF_PET_SUPPLIES
@@ -1273,7 +1234,6 @@ root("PetBattles", petbattle({
 		}),
 		q(32434, {	-- Burning Pandaren Spirit
 			["coord"] = { 57.2, 42.1, TOWNLONG_STEPPES },
-			["isDaily"] = true,
 			["provider"] = { "n", 68463 },
 			["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
 			["sym"] = {
@@ -1289,7 +1249,6 @@ root("PetBattles", petbattle({
 		}),
 		q(32604, {	-- Beasts of Fable Book I
 			["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
-			["isDaily"] = true,
 			["sourceQuests"] = { 32603 },	-- Beasts of Fable
 			["providers"] = {
 				{ "n", 64572 },	-- Sara Finkleswitch
@@ -1305,7 +1264,6 @@ root("PetBattles", petbattle({
 		}),
 		q(32868, {	-- Beasts of Fable Book II
 			["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
-			["isDaily"] = true,
 			["sourceQuests"] = { 32603 },	-- Beasts of Fable
 			["providers"] = {
 				{ "n", 64572 },	-- Sara Finkleswitch
@@ -1321,7 +1279,6 @@ root("PetBattles", petbattle({
 		}),
 		q(32869, {	-- Beasts of Fable Book III
 			["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
-			["isDaily"] = true,
 			["sourceQuests"] = { 32603 },	-- Beasts of Fable
 			["providers"] = {
 				{ "n", 64572 },	-- Sara Finkleswitch
@@ -1339,13 +1296,11 @@ root("PetBattles", petbattle({
 			["sourceQuests"] = { 31951 },	-- Grand Master Aki
 			["provider"] = { "n", 66741 },	-- Aki the Chosen
 			["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
-			["isDaily"] = true,
 			["g"] = {
 				SACK_OF_PET_SUPPLIES
 			},
 		}),
 		q(31955, {	-- Grand Master Nishi
-			["isDaily"] = true,
 			["provider"] = { "n", 66734 },	-- Farmer Nishi
 			["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
 			["g"] = {
@@ -1354,7 +1309,6 @@ root("PetBattles", petbattle({
 		}),
 		-- WoD
 		q(37205, {	-- Gargra
-			["isDaily"] = true,
 			["coord"] = { 68.5, 64.7, FROSTFIRE_RIDGE },
 			["provider"] = { "n", 87122 },	-- Gargra
 			["g"] = {
@@ -1362,7 +1316,6 @@ root("PetBattles", petbattle({
 			},
 		}),
 		q(37201, {	-- Cymre Brightblade
-			["isDaily"] = true,
 			["coord"] = { 51.1, 70.6, GORGROND },
 			["provider"] = { "n", 83837 },	-- Cymre Brightblade
 			["g"] = {
@@ -1372,13 +1325,11 @@ root("PetBattles", petbattle({
 		q(37206, {	-- Tarr the Terrible
 			["provider"] = { "n", 87110 },	-- Tar the Terrible
 			["coord"] = { 56.2, 9.8, DRAENOR_NAGRAND },
-			["isDaily"] = true,
 			["g"] = {
 				SHINY_PET_CHARM
 			},
 		}),
 		q(37203, {	-- Ashlei
-			["isDaily"] = true,
 			["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
 			["provider"] = { "n", 87124 },	-- Ashlei
 			["g"] = {
@@ -1388,25 +1339,30 @@ root("PetBattles", petbattle({
 		q(37207, {	-- Vesharr
 			["provider"] = { "n", 87123 },	-- Vesharr
 			["coord"] = { 46.2, 45.3, SPIRES_OF_ARAK },
-			["isDaily"] = true,
 			["g"] = {
 				SHINY_PET_CHARM
 			},
 		}),
 		q(37208, {	-- Taralune
-			["isDaily"] = true,
 			["coord"] = { 49.0, 80.3, TALADOR },
 			["provider"] = { "n", 87125 },	-- Taralune
 			["g"] = {
 				SHINY_PET_CHARM
 			},
 		}),
+	})),
+	-- Weeklies
+	n(QUESTS, sharedData({
+		["isWeekly"] = true,
+	},{
 		-- Legion
 		q(40310, {	-- Shipwrecked Captive
 			["description"] = "Weekly Account-Wide Pet Battle Quest. You need the toy Sternfathom's Pet Journal to summon this npc.",
-			["provider"] = { "n", 98489 },	-- Shipwrecked Captive
+			["providers"] = {
+				{ "n", 98489 },	-- Shipwrecked Captive
+				{ "i", 122681 },	-- Sternfathom's Pet Journal
+			},
 			["coord"] = { 49.3, 45.4, AZSUNA },
-			["isWeekly"] = true,
 			["g"] = {
 				SHINY_PET_CHARM
 			},
@@ -1414,7 +1370,6 @@ root("PetBattles", petbattle({
 		-- PvP Weekly
 		pvp(q(32863, {	-- What We've Been Training For
 			["description"] = "Account-Wide Weekly Quest.|r",
-			["isWeekly"] = true,
 			["providers"] = {
 				{ "n", 63596 },	-- Audrey Burnhelp
 				{ "n", 63626 },	-- Varzok
@@ -1433,5 +1388,5 @@ root("PetBattles", petbattle({
 				}),
 			},
 		})),
-	}),
+	})),
 }));

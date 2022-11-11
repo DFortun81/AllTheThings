@@ -238,6 +238,38 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				}),
 			}),
 			d(17, {	-- LFR
+				ach(15126, {	-- Sanctum of Domination
+					crit(1, { -- The Tarragrue
+						["_encounter"] = { 2435, 17 },
+					}),
+					crit(2, { -- The Eye of the Jailer
+						["_encounter"] = { 2442, 17 },
+					}),
+					crit(3, { -- The Nine
+						["_encounter"] = { 2439, 17 },
+					}),
+					crit(4, { -- Remnant of Ner'zhul
+						["_encounter"] = { 2444, 17 },
+					}),
+					crit(5, { -- Soulrender Dormazain
+						["_encounter"] = { 2445, 17 },
+					}),
+					crit(6, { -- Painsmith Raznal
+						["_encounter"] = { 2443, 17 },
+					}),
+					crit(7, { -- Guardian of the First Ones
+						["_encounter"] = { 2446, 17 },
+					}),
+					crit(8, { -- Fatescribe Roh-Kalo
+						["_encounter"] = { 2447, 17 },
+					}),
+					crit(9, { -- Kel'Thuzad
+						["_encounter"] = { 2440, 17 },
+					}),
+					crit(10, {-- Sylvanas Windrunner
+						["_encounter"] = { 2441, 17 },
+					}),
+				}),
 				n(ZONE_DROPS, {
 					i(186371),	-- Ancient Brokensoul Bands
 					i(186362),	-- Bindings of the Subjugated
@@ -254,9 +286,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						e(2435, {	-- The Tarragrue
 							["crs"] = { 175611 },	-- The Tarragrue
 							["g"] = {
-								crit(1, {	-- The Tarragrue
-									["achievementID"] = 15126,	-- Sanctum of Domination
-								}),
 								i(186381),	-- Elethium-Bladed Glaive
 								i(186415),	-- Moriaz's Spare Targe
 								i(186291),	-- Periapt of Pristine Preservation
@@ -277,9 +306,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 								176531,	-- Deathseeker Eye
 							},
 							["g"] = {
-								crit(2, {	-- The Eye of the Jailer
-									["achievementID"] = 15126,	-- Sanctum of Domination
-								}),
 								i(186554),	-- Eye of Allseeing (PET!)
 								i(186403),	-- Stygian Lance of Passage
 								i(186383),	-- Gazepiercer
@@ -308,9 +334,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 								177098,	-- Arthura
 							},
 							["g"] = {
-								crit(3, {	-- The Nine
-									["achievementID"] = 15126,	-- Sanctum of Domination
-								}),
 								i(186656),	-- Sanctum Gloomcharger (MOUNT!)
 								i(186404),	-- Jotungeirr, Destiny's Call
 								i(186385),	-- Signe's Sonorous Scramaseax
@@ -334,9 +357,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						e(2444, {	-- Remnant of Ner'zhul
 							["crs"] = { 175729 },	-- Remnant of Ner'zhul
 							["g"] = {
-								crit(4, {	-- Remnant of Ner'zhul
-									["achievementID"] = 15126,	-- Sanctum of Domination
-								}),
 								i(186405),	-- Gnarled Staff of the Elder Shaman
 								i(186386),	-- Betrayer's Shadowspike
 								i(186292),	-- Cap of Writhing Malevolence
@@ -353,9 +373,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						e(2445, {	-- Soulrender Dormazain
 							["crs"] = { 175727 },	-- Soulrender Dormazain 175728 Garrosh Hellscream
 							["g"] = {
-								crit(5, {	-- Soulrender Dormazain
-									["achievementID"] = 15126,	-- Sanctum of Domination
-								}),
 								i(186558),	-- Irongrasp (PET!)
 								i(186407),	-- Hellscream's Requiem
 								i(186387),	-- Dormazain's Tenderizer
@@ -374,9 +391,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						e(2443, {	-- Painsmith Raznal
 							["crs"] = { 176523 },	-- Painsmith Raznal
 							["g"] = {
-								crit(6, {	-- Painsmith Raznal
-									["achievementID"] = 15126,	-- Sanctum of Domination
-								}),
 								i(186388),	-- Cruciform Veinripper
 								i(186392),	-- Exacting Mindslicer
 								i(186391),	-- Shadowsteel Demoralizer
@@ -399,9 +413,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						e(2446, {	-- Guardian of the First Ones
 							["crs"] = { 175731 },	-- Guardian of the First Ones
 							["g"] = {
-								crit(7, {	-- Guardian of the First Ones
-									["achievementID"] = 15126,	-- Sanctum of Domination
-								}),
 								i(186409),	-- Pylon of the Great Purge
 								i(186393),	-- Torch of Eternal Knowledge
 								i(186413),	-- Directional Meltdown Projector
@@ -420,9 +431,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						e(2447, {	-- Fatescribe Roh-Kalo
 							["crs"] = { 175730 },	-- Fatescribe Roh-Kalo
 							["g"] = {
-								crit(8, {	-- Fatescribe Roh-Kalo
-									["achievementID"] = 15126,	-- Sanctum of Domination
-								}),
 								i(186419),	-- Record of Collapsing Realities
 								i(186330),	-- Cowl of Haunting Precognition
 								i(186340),	-- Conjunction-Forged Chainmail
@@ -440,9 +448,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						e(2440, {	-- Kel'Thuzad
 							["crs"] = { 175559 },	-- Kel'Thuzad
 							["g"] = {
-								crit(9, {	-- Kel'Thuzad
-									["achievementID"] = 15126,	-- Sanctum of Domination
-								}),
 								i(186550),	-- Mawsworn Minion (PET!)
 								i(187542),	-- Jaithys, the Prison Blade
 								i(186410),	-- Jaithys, the Prison Blade
@@ -474,9 +479,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						e(2441, {	-- Sylvanas Windrunner
 							["crs"] = { 175732 },	-- Sylvanas Windrunner
 							["g"] = {
-								crit(10, {	-- Sylvanas Windrunner
-									["achievementID"] = 15126,	-- Sanctum of Domination
-								}),
 								i(186398),	-- Edge of Night
 								i(186417),	-- Guard of the Sundered Defender
 								i(186325),	-- Veil of the Banshee Queen
@@ -498,38 +500,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				ach(15191, {	-- Rae'shalare, Death's Whisper
 					["provider"] = { "i", 186414 },
 					["classes"] = { HUNTER },
-				}),
-				ach(15126, {	-- Sanctum of Domination
-					crit(1, { -- The Tarragrue
-						["_encounter"] = { 2435, 14 },
-					}),
-					crit(2, { -- The Eye of the Jailer
-						["_encounter"] = { 2442, 14 },
-					}),
-					crit(3, { -- The Nine
-						["_encounter"] = { 2439, 14 },
-					}),
-					crit(4, { -- Remnant of Ner'zhul
-						["_encounter"] = { 2444, 14 },
-					}),
-					crit(5, { -- Soulrender Dormazain
-						["_encounter"] = { 2445, 14 },
-					}),
-					crit(6, { -- Painsmith Raznal
-						["_encounter"] = { 2443, 14 },
-					}),
-					crit(7, { -- Guardian of the First Ones
-						["_encounter"] = { 2446, 14 },
-					}),
-					crit(8, { -- Fatescribe Roh-Kalo
-						["_encounter"] = { 2447, 14 },
-					}),
-					crit(9, { -- Kel'Thuzad
-						["_encounter"] = { 2440, 14 },
-					}),
-					crit(10, {-- Sylvanas Windrunner
-						["_encounter"] = { 2441, 14 },
-					}),
 				}),
 				n(QUESTS, {
 					q(64597, {	-- Sanctum of Domination - Damned If You Don't [N]
