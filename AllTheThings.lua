@@ -18235,24 +18235,6 @@ function app:GetDataCache()
 	end
 
 	--[[
-	-- Never Implemented
-	if app.Categories.NeverImplemented then
-		db = {};
-		db.expanded = false;
-		db.g = app.Categories.NeverImplemented;
-		db.text = "Never Implemented";
-		tinsert(g, db);
-	end
-
-	-- Unsorted
-	if app.Categories.Unsorted then
-		db = {};
-		db.g = app.Categories.Unsorted;
-		db.expanded = false;
-		db.text = "Unsorted";
-		tinsert(g, db);
-	end
-
 	-- Models (Dynamic)
 	db = app.CreateAchievement(9924, (function()
 		local cache = GetTempDataMember("MODEL_CACHE");
@@ -18270,66 +18252,7 @@ function app:GetDataCache()
 	tinsert(g, db);
 	--]]
 
-	-- Items (Dynamic)
 	--[[
-	db = {};
-	db.g = (function()
-		local cache = GetTempDataMember("ITEM_CACHE");
-		if not cache then
-			cache = {};
-			SetTempDataMember("ITEM_CACHE", cache);
-			for i=166000,1,-1 do
-				tinsert(cache, app.CreateItem(i));
-			end
-		end
-		return cache;
-	end)();
-	db.expanded = false;
-	db.text = "All Items (Dynamic)";
-	tinsert(g, db);
-	]]--
-
-	--[[
-	-- SUPER SECRETTTT!
-	-- Artifacts (Dynamic)
-	db = app.CreateAchievement(11171, (function()
-		local cache = GetTempDataMember("ARTIFACT_CACHE");
-		if not cache then
-			cache = {};
-			SetTempDataMember("ARTIFACT_CACHE", cache);
-			for i=1,10000,1 do
-				if C_ArtifactUI_GetAppearanceInfoByID(i) then
-					tinsert(cache, app.CreateArtifact(i));
-				end
-			end
-		end
-		return cache;
-	end)());
-	db.expanded = false;
-	db.text = "Artifacts (Dynamic)";
-	tinsert(g, db);
-
-	-- Factions (Dynamic)
-	db = app.CreateAchievement(11177, (function()
-		local cache = GetTempDataMember("FACTION_CACHE");
-		if not cache then
-			cache = {};
-			SetTempDataMember("FACTION_CACHE", cache);
-			for i=1,5000,1 do
-				tinsert(cache, app.CreateFaction(i));
-			end
-		end
-		return cache;
-	end)());
-	db.expanded = false;
-	db.text = "Factions (Dynamic)";
-	tinsert(g, db);
-	--]]
-
-
-
-	--[[
-
 	-- Gear Sets
 	function SortGearSetInformation(a,b)
 		local first = a.uiOrder - b.uiOrder;
@@ -18430,15 +18353,6 @@ function app:GetDataCache()
 		return db;
 	end)());
 	--]]
-
-
-	-- Achievements (Dynamic!)
-	--[[
-	local achievementsCategory = app.CreateNPC(-4, {});
-	achievementsCategory.expanded = false;
-	achievementsCategory.achievements = {};
-	table.insert(g, achievementsCategory);
-	]]--
 
 	-- Track Deaths!
 	tinsert(g, app:CreateDeathClass());
@@ -18836,89 +18750,6 @@ function app:GetDataCache()
 	end
 	achievementsCategory:OnUpdate();
 	]]--
-
-	-- Update Faction data.
-	--[[
-	-- TODO: Make a dynamic Factions section. It works, but we have one already, so we don't need it.
-	factionsCategory.OnUpdate = function(self)
-		for i,_ in pairs(fieldCache["factionID"]) do
-			if not self.factions[i] then
-				local faction = app.CreateFaction(tonumber(i));
-				for j,o in ipairs(_) do
-					if o.key == "factionID" then
-						for key,value in pairs(o) do rawset(faction, key, value); end
-					end
-				end
-				faction.progress = nil;
-				faction.total = nil;
-				faction.g = nil;
-				self.factions[i] = faction;
-				if not faction.u or faction.u ~= 1 then
-					faction.parent = self;
-					tinsert(self.g, faction);
-				end
-				CacheFields(faction);
-			end
-		end
-		app.Sort(self.g);
-	end
-	factionsCategory:OnUpdate();
-	]]--
-
-	-- Update Flight Path data.
-	-- if flightPathsCategory and dynamicSetting > 0 then
-	-- 	flightPathsCategory.OnUpdate = function(self)
-	-- 		-- no longer need to run this logic once the dynamic group has been filled
-	-- 		self.OnUpdate = nil;
-	-- 		for i,_ in pairs(fieldCache["flightPathID"]) do
-	-- 			if not self.fps[i] then
-	-- 				local fp = app.CreateFlightPath(tonumber(i));
-	-- 				for j,o in ipairs(_) do
-	-- 					for key,value in pairs(o) do rawset(fp, key, value); end
-	-- 				end
-	-- 				self.fps[i] = fp;
-	-- 				fp.g = nil;
-	-- 				fp.maps = nil;
-	-- 				if not fp.u or fp.u ~= 1 then
-	-- 					fp.parent = self;
-	-- 					tinsert(self.g, fp);
-	-- 				else
-	-- 					fp.parent = flightPathsCategory_NYI;
-	-- 					tinsert(flightPathsCategory_NYI.g, fp);
-	-- 				end
-	-- 				-- Make sure the sourced FP data exists in the cache DB so it doesn't show *NEW*
-	-- 				if not app.FlightPathDB[i] then app.FlightPathDB[i] = _; end
-	-- 			end
-	-- 		end
-	-- 		-- will only run once per session and return true the first time it is called
-	-- 		if app.CacheFlightPathData() then
-	-- 			for i,_ in pairs(app.FlightPathDB) do
-	-- 				if not self.fps[i] then
-	-- 					local fp = app.CreateFlightPath(tonumber(i));
-	-- 					self.fps[i] = fp;
-	-- 					if not fp.u or fp.u ~= 1 then
-	-- 						app.print("Flight Path needs Source!",i,fp.name)
-	-- 						fp.parent = self;
-	-- 						tinsert(self.g, fp);
-	-- 					else
-	-- 						fp.parent = flightPathsCategory_NYI;
-	-- 						tinsert(flightPathsCategory_NYI.g, fp);
-	-- 					end
-	-- 				end
-	-- 			end
-	-- 		end
-	-- 		-- reset indents and such
-	-- 		BuildGroups(flightPathsCategory, flightPathsCategory.g);
-	-- 		-- delay-sort the top level groups
-	-- 		flightPathsCategory.sort = true;
-	-- 		app.SortGroupDelayed(flightPathsCategory, "name");
-	-- 		flightPathsCategory.sort = nil;
-	-- 		-- dynamic groups are ignored for the source tooltips
-	-- 		flightPathsCategory.sourceIgnored = true;
-	-- 		-- make sure these things are cached so they can be updated when collected
-	-- 		CacheFields(flightPathsCategory);
-	-- 	end;
-	-- end
 
 	-- Perform Heirloom caching/upgrade generation
 	app.CacheHeirlooms();
