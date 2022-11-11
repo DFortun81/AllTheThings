@@ -182,7 +182,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(187657),	-- Evoker Belt
 			i(187658),	-- Evoker Armbands
 			i(187650),	-- Staff of Draconic Energies
-
 				-- Evoker Set --
 			i(194522),	-- Blue Winglord's Staff
 			i(194523),	-- Blue Winglord's Chain
@@ -240,7 +239,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191826),	-- Obsidian Dracthyr Battlegear Belt
 			i(191827),	-- Obsidian Dracthyr Battlegear Bracers
 			i(191828),	-- Obsidian Dracthyr Battlegear Cover
-
 				-- GREYS -- DARKAL!?!
 			i(188704),	-- Rotten Leather Cinch
 			i(188705),	-- Rotten Leather Footwraps
@@ -274,11 +272,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(188733),	-- Timeworn Chain Gauntlets
 			i(188734),	-- Timeworn Chain Helm
 			i(188735),	-- Timeworn Chain Clasp
-
 			-- NON SET THINGS
 			i(192797),	-- Gral's Discarded Tooth
 			i(191942),	-- Belloc's Hat
-
 			-- Waking Shore Quest Rewards?
 			i(194372),	-- Vault Guardian's Missive
 			i(194374),	-- Explorer's League Rifle
@@ -297,8 +293,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194417),	-- Vault Guard's Talon
 			i(194419),	-- Life Pool Herb Pouch
 			i(194420),	-- Blacktalon Blade
-
-
 			filter(COSMETIC, {
 				i(193069),	-- Climber's Pack
 				i(191647),	-- Tuskarr Fishing Pole
@@ -494,10 +488,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(190319),	-- Resourceful!
 			i(190332),	-- Sparking Catalyst
 			i(190452),	-- Primal Flux
-
-
-
-
 			i(191231),	-- Alchemist's Brilliant Mixing Rod
 			i(191232),	-- Chef's Splendid Rolling Pin
 			i(191233),	-- Chef's Smooth Rolling Pin
@@ -737,20 +727,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198130),	-- Recipe: Gral's Veneration
 			i(198131),	-- Recipe: Gral's Devotion
 			i(198132),	-- Recipe: Hoard of Draconic Delicacies
-			prof(HERBALISM, {
-				i(191460),	-- Hochenblume+
-				i(191461),	-- Hochenblume++
-				i(191462),	-- Hochenblume+++
-				i(191464),	-- Saxifrage+
-				i(191465),	-- Saxifrage++
-				i(191466),	-- Saxifrage+++
-				i(191467),	-- Bubble Poppy+
-				i(191468),	-- Bubble Poppy++
-				i(191469),	-- Bubble Poppy+++
-				i(191470),	-- Writhebark+
-				i(191471),	-- Writhebark++
-				i(191472),	-- Writhebark+++
-			}),
 			prof(COOKING, {
 				i(191917),	-- Suspiciously Fuzzy Drink+
 				i(191918),	-- Suspiciously Fuzzy Drink++
@@ -837,8 +813,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192131),	-- Valdrakken Weapon Chain
 			i(192132),	-- Draconium Blade Sharpener
 			i(193891),	-- Experimental Substance
-
-
 			i(193897),	-- Reawakened Catalyst
 			i(193898),	-- Umbral Bone Needle
 			i(193899),	-- Primalweave Spindle
@@ -848,7 +822,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193903),	-- Watcher Power Core
 			i(193904),	-- Phoenix Feather Quill
 			i(193905),	-- Iskaaran Trading Ledger
-
 			i(193907),	-- Chipped Tyrstone
 			i(193909),	-- Ancient Gem Fragments
 			i(193910),	-- Molted Dragon Scales
@@ -1331,7 +1304,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(189557),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Gray
 			i(189558),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Dark
 			i(189559),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Light
-
 			i(197796),	-- 10.0 Rare Reward TBD - Mace2H - Str - 2 Hand
 			i(197806),	-- 10.0 Rare Reward TBD - Staff_2H_Titan_C_01 - Staff - Int
 			i(197910),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
@@ -1352,18 +1324,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193201),	-- Key Framing
 			i(194337),	-- Liquid Courage
 		}),
-
 		i(194510),	-- Iskaaran Harpoon
-
-
-
-
-
 		i(194690),	-- Horn o' Mead
-
-
-
-
 		i(194830),	-- Renewed Proto Drake Manuscript: Red Hair
 		i(194831),	-- Renewed Proto Drake Manuscript: Predator Pattern
 		i(194832),	-- Renewed Proto Drake Manuscript: Spined Crest
@@ -1378,13 +1340,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194841),	-- Cliffside Wylderdrake Manuscript: Red Mane
 		i(194842),	-- Regal Barding Manuscript
 		i(194843),	-- Explorer's Barding Manuscript
-
-
-
-
 		i(195467),	-- zzOld(DNT) Test Belt of Molten Metallic Awesomeness
 		i(195580),	-- Suspicious Bottle
-
 		i(195885),	-- Black Dragon's Scale Cloak
 		i(196961),	-- Cliffside Wylderdrake: Armor
 		i(196962),	-- Cliffside Wylderdrake: Silver and Purple Armor
@@ -1635,27 +1592,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197634),	-- Windborne Velocidrake: Windswept Pattern
 		i(197635),	-- Windborne Velocidrake: Reaver Pattern
 		i(197636),	-- Windborne Velocidrake: Shrieker Pattern
-
-
 		i(197677),	-- Plainswalking Stick
-
 		i(197684),	-- Argali Shearing Blade
-
 		i(197692),	-- Shikaar Fishing Bow
 		i(197693),	-- Shikaar Hunter's Crossbow
 		i(197698),	-- Mystic's Windblade
 		i(197904),	-- Shikaar Hunting Knife
 		i(197905),	-- Salamanther Slicer
-
 		i(197718),	-- Scroll of Sales
 		i(197725),	-- Deathrip's Curled Claw
-
-
-
-
-
-
-
 		i(198070),	-- Tattered Seavine
 		i(198071),	-- Flamecarved Bone
 		i(198072),	-- Gold-banded Dragon Tooth
@@ -1664,7 +1609,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198082),	-- Pre-Sentient Rock Cluster
 		i(198084),	-- Miguel's Gift
 		i(198085),	-- Lost Obsidian Cache Key
-
 		i(198133),	-- Golden Expedition Compass
 		i(198134),	-- Shiny Surveyor Scope
 		i(198135),	-- Jeb's Supply Pack
@@ -1693,9 +1637,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198396),	-- Ribbed Mollusk Meat
 		i(198397),	-- Rainbow Pearl
 		i(198400),	-- Lucky Horseshoe
-
-
-
 		i(198407),	-- Azure Arcanic Amplifier
 		i(198411),	-- Claw of Preparedness
 		i(198412),	-- Serene Pigment+
@@ -1727,14 +1668,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198452),	-- Prototype F
 		i(198453),	-- Unstable Azerite Grenade
 		i(198454),	-- Draconic Treatise on Blacksmithing
-
-
-
-
-
-
-
-
 		i(198474),	-- Artist's Easel
 		i(198475),	-- Broken Banding
 		i(198476),	-- Painting of Introduction
@@ -1807,7 +1740,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198615),	-- Pentagold Seal
 		i(198616),	-- Scroll of Sales
 		i(198617),	-- Scroll of Sales
-
 		i(198622),	-- Spyragos
 		i(198626),	-- Dislodged Dragoneye
 		i(198646),	-- Ornate Dragon Statue
@@ -1853,8 +1785,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198710),	-- Canteen of Suspicious Water
 		i(198711),	-- Poacher's Pack
 		i(198712),	-- Firewater Powder Sample
-
-
 		i(198723),	-- Expedition Binoculars (NYI)
 		i(198724),	-- Expedition Telescope (NYI)
 		i(198730),	-- Dragonscale Expedition Tabard
@@ -1870,7 +1800,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198798),	-- Flashfrozen Scroll
 		i(198799),	-- Forgotten Arcane Tome
 		i(198800),	-- Fractured Titanic Sphere
-
 		i(198808),	-- [PH] Black Vorquin
 		i(198809),	-- Armored Vorquin Leystrider
 		i(198810),	-- Swift Armored Vorquin
@@ -2087,10 +2016,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199750),	-- Primal Fire Core
 		i(199757),	-- Magic Nipper
 		i(199758),	-- Crimson Proto-Whelp
-
 		i(199806),	-- Valdrakken Drakeclaw Barrier
-
-
 		i(199831),	-- Forgotten Dragon Crest
 		i(199832),	-- Smoked Seaviper
 		i(199833),	-- Dragonhead Eel
@@ -2125,13 +2051,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199927),	-- Sheet Music: The Lazy Turnip
 		i(199932),	-- 10.0 Enchanting - Weapon - Wand 1
 		i(199933),	-- 10.0 Enchanting - Weapon - Wand 2
-
 		i(200069),	-- Obsidian Cache
 		i(200070),	-- Obsidian Strongbox
 		i(200071),	-- Sacred Tuskarr Totem
 		i(200072),	-- Dragonbane Strongbox
 		i(200073),	-- Valdrakken Treasures
-
 		i(200075),	-- Flying Fish Bones
 		i(200076),	-- Harpoon Head
 		i(200077),	-- Wooden Pole
@@ -2144,21 +2068,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200084),	-- Salinated Serevite
 		i(200085),	-- Khaz'gorite Wire
 		i(200086),	-- Khaz'gorite-infused Resin
-
 		i(200093),	-- Centaur Hunting Trophy
 		i(200094),	-- Aylaag Strongbox
 		i(200095),	-- Supply Laden Soup Pot
-
-
-
-
-
-
 		i(200114),	-- Stormie
 		i(200116),	-- Everlasting Horn of Lavaswimming
-
 		i(200118),	-- Yellow Scouting Ottuk
-
 		i(200126),	-- Mantle of Copious Chronologies
 		i(200127),	-- Gold-Alloy Blade
 		i(200128),	-- Zephyr's Razor
@@ -2166,26 +2081,21 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200131),	-- Reclaimed Survivalist's Dagger
 		i(200132),	-- Skewer's Snout
 		i(200133),	-- Volcanic Chakram
-
 		i(200135),	-- Corroded Greatsword
 		i(200136),	-- Monsoonic Armguards
 		i(200137),	-- Chitin Dreadbringer
 		i(200138),	-- Ancient Dancer's Longspear
 		i(200139),	-- Tempest Arc
-
 		i(200141),	-- Wind Generating Band
 		i(200142),	-- Generous Goblin Grenade
-
 		i(200144),	-- Band of the Unscalable
 		i(200145),	-- Hilted Monolith
 		i(200146),	-- Phenran's Discordant Smasher
 		i(200147),	-- Web-Woven Robe
 		i(200148),	-- A Collection Of Me
-
 		i(200150),	-- Infernum's Furnace
 		i(200151),	-- Seamist Blade
 		i(200152),	-- Gleaming Blade of Insight
-
 		i(200154),	-- Rubyscale Band
 		i(200155),	-- Haphazardly Welded Protector
 		i(200156),	-- Amethyzarite Geode
@@ -2194,7 +2104,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200159),	-- Blaze Ring
 		i(200160),	-- Notfar's Favorite Food
 		i(200161),	-- Razorwind Talisman
-
 		i(200163),	-- Ring of Embers
 		i(200164),	-- Iceloop
 		i(200165),	-- Aegis of Scales
@@ -2210,7 +2119,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200175),	-- Repurposed Anvil
 		i(200176),	-- Missingway Hand Cannon
 		i(200178),	-- Infected Ichor
-
 		i(200180),	-- Crystallized Lightning Staff
 		i(200181),	-- Blade of Blazing Torment
 		i(200182),	-- Riveted Drape
@@ -2228,7 +2136,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200197),	-- Armoredon Herding Crook
 		i(200198),	-- Primalist Prison
 		i(200199),	-- Elements' Burden
-
 		i(200201),	-- Nokhud Battlegear
 		i(200202),	-- Tomorrow's Chains
 		i(200203),	-- Repurposed Giant's Thimble
@@ -2248,9 +2155,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200217),	-- Blazing Essence
 		i(200218),	-- Charred Fishing Pole
 		i(200219),	-- Dangerous Drapery
-
 		i(200224),	-- Mark of Sargha
-
 		i(200228),	-- Protoscale Pauldrons
 		i(200229),	-- Slightly Digested Leggings
 		i(200230),	-- Terrorclaw Shoulderplates
@@ -2267,7 +2172,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200245),	-- Leviathan Lure
 		i(200246),	-- Lost Delving Lamp
 		i(200247),	-- Inextinguishable Gavel
-
 		i(200249),	-- Mage's Chewed Wand
 		i(200250),	-- Frost Tipped Glaive
 		i(200251),	-- Medallion of the Ancestors
@@ -2277,21 +2181,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200255),	-- Echo of the Inferno
 		i(200256),	-- Darkmaul Soul Horn
 		i(200257),	-- Decay Infused Branch
-
 		i(200259),	-- Forest Dweller's Shield
 		i(200260),	-- Echo of the Depths
 		i(200261),	-- White Chitin Bands
 		i(200262),	-- Do-It-Yourself Part Building Kit
 		i(200263),	-- Echo of the Heights
 		i(200264),	-- A Steamy Romance Novel: The Lusty Draconian Mage
-
 		i(200266),	-- Gnollish Chewtoy Launcher
 		i(200267),	-- Reinforced Garden Tenders
-
-
 		i(200276),	-- Ohuna Companion
-
-
 		i(200279),	-- Competitive Throwing Gauntlets
 		i(200280),	-- Decaying Ghostly Band
 		i(200281),	-- Gorjo's Riding Crop
@@ -2308,7 +2206,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200292),	-- Cragforge Pauldrons
 		i(200293),	-- Primal Scion's Twinblade
 		i(200294),	-- Primal Chain Hauberk
-
 		i(200296),	-- Mammoth Tusk Wraps
 		i(200297),	-- Hastily Cobbled Maul
 		i(200298),	-- Stoneshaped Greatbelt
@@ -2317,7 +2214,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200301),	-- Reclaimed Tuskarr Harpoon
 		i(200302),	-- Magmaforged Scimitar
 		i(200303),	-- Dreamweaver Acolyte's Staff
-
 		i(200306),	-- Tempest Shawl
 		i(200307),	-- Viciously Hooked Cleaver
 		i(200308),	-- Rellen's Legacy
@@ -2326,7 +2222,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200311),	-- Bonespike Mallet
 		i(200313),	-- Earthen Protoscale Drape
 		i(200314),	-- Skyspeaker's Envelope
-
 		i(200432),	-- Rotguard Cowl
 		i(200433),	-- Footwraps of Subjugation
 		i(200434),	-- Anund's Mana-Singed Amice
@@ -2363,10 +2258,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200466),	-- Maruuk Scout's Vest
 		i(200467),	-- Maruuk Spiritual Vestments
 		i(200468),	-- Maruuk Hunt Spoils
-
-
 		i(200471),	-- Magnetized Splinter
-
 		i(200473),	-- Agitated Fragment
 		i(200474),	-- Tarasek Pillaged Piece
 		i(200476),	-- Fallingwater Overlook VIP Entry Pass
@@ -2423,7 +2315,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200529),	-- Constructed Arcana
 		i(200530),	-- Sweet Steamed Meat
 		i(200534),	-- Toghus Poleaxe
-
 		i(200536),	-- Tamed Eagle
 		i(200537),	-- Bundle of Primalist Orders
 		i(200539),	-- Khansguard Shield
@@ -2493,8 +2384,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200610),	-- Dragon Racing Purse - Second Place
 		i(200611),	-- Dragon Racing Purse - Third Place
 		i(200613),	-- Aylaag Windstone Fragment
-
-
 		i(200619),	-- Scaralesh's Special
 		i(200620),	-- Inflaming Incense
 		i(200621),	-- Soothing Incense
@@ -2503,15 +2392,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200628),	-- Somewhat-Stabilized Arcana
 		i(200630),	-- Ohn'ir Windsage's Hearthstone
 		i(200631),	-- Happy Tuskarr Palooza
-
 		i(200635),	-- Refine Dragon Isles Herbs
 		i(200636),	-- Primal Invocation Quintessence
 		i(200637),	-- Talisman of the Maruuk
 		i(200638),	-- Bubblefilled Flounder
 		i(200639),	-- Talisman of Ohn'ahra
 		i(200640),	-- Obsidian Egg Clutch
-
-
 		i(200646),	-- Gruff Fisher's Net
 		i(200647),	-- Crystalline Shatter
 		i(200648),	-- Elemental Shatter
@@ -2543,7 +2429,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200683),	-- Legguards of the Deep Strata
 		i(200684),	-- Emerald Tailbone
 		i(200685),	-- Enchanted Compass
-
 		i(200687),	-- Stormshale Cuffs
 		i(200688),	-- Tights of Twisting Winds
 		i(200689),	-- Rimetalon Band
@@ -2712,7 +2597,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200879),	-- Zenet Egg
 		i(200880),	-- Wind-Sealed Mana Capsule
 		i(200882),	-- Big Kinook's Spare Ladle
-
 		i(200885),	-- Cinna-Cinderbloom Tea
 		i(200886),	-- Lemon Silverleaf Tea
 		i(200887),	-- Charred Porter
@@ -2733,9 +2617,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200902),	-- Ravenberry Panacotta Delight
 		i(200903),	-- Moira's Choice Espresso
 		i(200904),	-- Picante Pomfruit Cake
-
-
-
 		i(200926),	-- Compendium of Love
 		i(200927),	-- Petal
 		i(200929),	-- Everglow Nectar
@@ -2745,7 +2626,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200934),	-- Encaged Frosty Soul
 		i(200935),	-- Large Egg Shell
 		i(200936),	-- Encaged Earthen Soul
-
 		i(200939),	-- Chromatic Pocketwatch
 		i(200940),	-- Everflowing Inkwell
 		i(200941),	-- Seal of Order
@@ -2892,7 +2772,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201089),	-- Craft Creche Crowler
 		i(201090),	-- Bivigosa's Blood Sausages
 		i(201092),	-- Lava Spices
-
 		i(201231),	-- Bident of Hallucinations
 		i(201232),	-- Bonedust Spreader
 		i(201233),	-- Verdant Drakespine Glaive
@@ -2918,10 +2797,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201253),	-- Competitor's Edge
 		i(201254),	-- Medal of Honor
 		i(201255),	-- Medal of Honor
-
-
-
-
 		i(201260),	-- Dust Spirit
 		i(201261),	-- Blaze Spirit
 		i(201262),	-- Gale Spirit
@@ -2961,7 +2836,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201297),	-- Docile Earthen Soul
 		i(201298),	-- Docile Fiery Soul
 		i(201299),	-- Docile Frosty Soul
-
 		i(201302),	-- Scarab Blaster
 		i(201303),	-- Beheader's Poleaxe
 		i(201304),	-- Dunesplitter
@@ -2970,10 +2844,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201307),	-- Raider's Lost Spire
 		i(201308),	-- Scorpion Slicer
 		i(201309),	-- Tomb Raider's Shank
-
-
 		i(201323),	-- Essence of Awakening
-
 		i(201325),	-- Draconic Augment Rune
 		i(201326),	-- Draconic Satchel of Cooperation
 		i(201327),	-- Emerald Dreamtime
@@ -3014,7 +2885,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201362),	-- Fated Equipment Chest
 		i(201363),	-- Brackenhide Hollow Maul
 		i(201365),	-- Brackenhide Gnoll Guard
-
 		i(201367),	-- Hollow Hunter's Sticker
 		i(201368),	-- Brackenhide Hollow Barbslinger
 		i(201369),	-- Hollow Greatwood Pestilence
@@ -3044,15 +2914,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201395),	-- Wingcrest Scimitar
 		i(201396),	-- Hidepiercing Claw Extensions
 		i(201398),	-- Mogu Mozzarella
-
-
-
-
-
-
-
-
-
 		i(201410),	-- Powerful Purple Thing
 		i(201411),	-- Ancient Vault Artifact
 		i(201412),	-- Ancient Vault Artifact
@@ -3098,7 +2959,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201459),	-- Tyrhold Shortsword
 		i(201460),	-- Gavel of Tyrhold
 		i(201461),	-- Tyrhold Pinnacle
-
 		i(201463),	-- Cubbly
 		i(201464),	-- Flesh Parachute
 		i(201466),	-- Mote of Dreams
@@ -3106,7 +2966,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201468),	-- Verdant Swirl
 		i(201469),	-- Emerald Green Apple
 		i(201584),	-- Serevite Rod
-
 		i(201697),	-- Coldarra Coldbrew
 		i(201698),	-- Black Dragon Red Eye
 		i(201700),	-- Notebook of Crafting Knowledge
@@ -3138,8 +2997,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201729),	-- Spiked Horseshoe
 		i(201730),	-- Nokhud Centaur Spear
 		i(201731),	-- Nokhud Centaur Staff
-
-
 		i(201734),	-- Technique: Cliffside Wylderdrake: Silver and Blue Armor
 		i(201735),	-- Technique: Highland Drake: Silver and Blue Armor
 		i(201736),	-- Technique: Cliffside Wylderdrake: Steel and Yellow Armor
@@ -3182,7 +3039,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201826),	-- Tempest Armaments
 		i(201828),	-- Spiked Leaves
 		i(201829),	-- Pungent Gem
-
 		i(201834),	-- Add Keystone Affix: Thundering
 		i(201835),	-- Draconic Scroll
 		i(201836),	-- Valdrakken Token of Merit
@@ -3242,17 +3098,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201927),	-- Assorted Arcanocrystals
 		i(201933),	-- Black Dragon's Challenge Dummy
 		i(201934),	-- Nokuhd Whittling Knife
-
-
-
-
-
-
-
-
-
-
-
 		i(201967),	-- Autographed Skull
 		i(201968),	-- Enormous Grain of Salt
 		i(201969),	-- Threatening Note
@@ -3282,18 +3127,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199757),	-- Magic Nibbler
 		i(199894),	-- Fisherman's Folly
 		i(199897),	-- Blue-Covered Beanbag
-		i(199970),	-- Enchant Weapon - Sophic Devotion
-		i(199971),	-- Enchant Weapon - Sophic Writ
-		i(200012),	-- Enchant Weapon - Sophic Devotion
-		i(200013),	-- Enchant Weapon - Sophic Writ
-		i(200054),	-- Enchant Weapon - Sophic Devotion
-		i(200055),	-- Enchant Weapon - Sophic Writ
 		i(200081),	-- Strong Seavine
 		i(200095),	-- Supply-Laden Soup Pot
 		i(200109),	-- Medicative Potion
 		i(200129),	-- Kolgar's Pack
 		i(200221),	-- Gorloc Crystals
-
 		i(201024),	-- Nokhudon Mantle
 		i(201025),	-- Nokhudon Harness
 		i(201027),	-- Nokhudon Breeches
@@ -3390,8 +3228,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194119),	-- Ornamented Shield
 		i(194120),	-- Decorated Teapot
 		i(194121),	-- Handcrafted Boat
-
-
 		i(194838),	-- Highland Drake Manuscript: Spined Head
 		i(198072),	-- Gold-Banded Dragon Tooth
 		i(198895),	-- Technique: Highland Drake: Spined Head
@@ -3610,6 +3446,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198287),	-- Tinker Removal Kit++
 			i(198288),	-- Tinker Removal Kit+++
 		}),
+		prof(HERBALISM, {
+			r(382582),	-- Opening
+		}),
 		prof(JEWELCRAFTING, {
 			i(194674),	-- Design: Soul Drainer/Elemental Soul Cage (RECIPE!)
 			i(194655),	-- Design: Ludicrously Luxurious Lucky Loop (RECIPE!)
@@ -3805,11 +3644,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		filter(TOYS, {
 			i(192495),	-- Malfunctioning Stealthman 54
-
-
-
-
-
 			i(197961),	-- Whelps on Strings
 			i(198409),	-- Personal Shell
 		}),

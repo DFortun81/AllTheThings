@@ -161,6 +161,19 @@ root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 					},
 				}),
 			})),
+			--[[
+			prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERBALISM }, {
+				n(, {	--
+					["coord"] = { X, Y VALDRAKKEN },
+					["g"] = {
+						r(366252),	-- Herb Gathering
+						r(395275),	-- Dreambloom
+						r(391406),	-- Hochenblume
+						r(396171),	-- Infused Pollen
+					},
+				}),
+			})),
+			--]]
 			prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] = LEATHERWORKING }, {
 				n(185551, {	-- Hideshaper Koruz <Leatherworking Trainer>
 					["coord"] = { 28.8, 61.6, VALDRAKKEN },

@@ -842,19 +842,54 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(194966),	-- Thousandbite Piranha
 	}),
 	prof(HERBALISM, {
-		i(191467),	-- Bubble Poppy
-		i(191468),	-- Bubble Poppy
-		i(191469),	-- Bubble Poppy
-		i(191460),	-- Common Herb
-		i(191461),	-- Common Herb
-		i(191462),	-- Common Herb
-		i(197755),	-- Lava Beetle
-		i(191464),	-- Saxifrage
-		i(191465),	-- Saxifrage
-		i(191466),	-- Saxifrage
-		i(191470),	-- Writhebark
-		i(191471),	-- Writhebark
-		i(191472),	-- Writhebark
+		spell(366252, {	-- Herb Gathering
+			i(191467),	-- Bubble Poppy+
+			i(191468),	-- Bubble Poppy++
+			i(191469),	-- Bubble Poppy+++
+			i(191460),	-- Hochenblume+
+			i(191461),	-- Hochenblume++
+			i(191462),	-- Hochenblume+++
+			i(191464),	-- Saxifrage+
+			i(191465),	-- Saxifrage++
+			i(191466),	-- Saxifrage+++
+			i(191470),	-- Writhebark+
+			i(191471),	-- Writhebark++
+			i(191472),	-- Writhebark+++
+		}),
+		n(DISCOVERY, {
+			r(391444),	-- Bubble Poppy
+			r(391507),	-- Decayed Bubble Poppy
+			r(391492),	-- Decayed Hochenblume
+			r(391500),	-- Decayed Saxifrage
+			r(391508),	-- Decayed Writhebark
+			r(391509),	-- Frigid Bubble Poppy
+			r(391460),	-- Frigid Hochenblume
+			r(391501),	-- Frigid Saxifrage
+			r(391510),	-- Frigid Writhebark
+			r(391505),	-- Infurious Bubble Poppy
+			r(391498),	-- Infurious Hochenblume
+			r(391499),	-- Infurious Saxifrage
+			r(391506),	-- Infurious Writhebark
+			r(391511),	-- Lush Bubble Poppy
+			r(391415),	-- Lush Hochenblume
+			r(391502),	-- Lush Saxifrage
+			r(391512),	-- Lush Writhebark
+			r(391557),	-- Overload Titan-Touched Herb
+			r(391558),	-- Overload Infurious Herb
+			r(391560),	-- Overload Windswept Herb
+			r(391562),	-- Overload Frigid Herb
+			r(391564),	-- Overload Decayed Herb
+			r(391441),	-- Saxifrage
+			r(391513),	-- Titan-Touched Bubble Poppy
+			r(391496),	-- Titan-Touched Hochenblume
+			r(391503),	-- Titan-Touched Saxifrage
+			r(391514),	-- Titan-Touched Writhebark
+			r(391515),	-- Windswept Bubble Poppy
+			r(391431),	-- Windswept Hochenblume
+			r(391504),	-- Windswept Saxifrage
+			r(391516),	-- Windswept Writhebark
+			r(391447),	-- Writhebark
+		}),
 	}),
 	prof(INSCRIPTION, {
 		i(191234),	-- Mixing Rod I (WIP)
@@ -862,9 +897,6 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(191233),	-- Rolling Pin I (WIP)
 		i(191232),	-- Rolling Pin II (WIP)
 		i(197718),	-- Scroll of Sales
-
-		--i(0, 377985);	-- Heart in a Bottle
-		--i(0, 382583);	-- Opening
 	}),
 	prof(JEWELCRAFTING, {
 		spell(374627, {	-- Dragon Isles Prospecting
@@ -1617,6 +1649,9 @@ root("HiddenQuestTriggers", {
 			--q(),	-- Prototype Explorer's Barding Framework
 			--q(),	-- Prototype Regal Barding Framework
 		}),
+		--[[
+		prof(COOKING, {
+		}),
 		prof(ENCHANTING, {
 			-- Recrafting --
 			q(),	-- Recraft Equipment
@@ -1701,6 +1736,7 @@ root("HiddenQuestTriggers", {
 			-- Magical Merchandise
 			q(),	-- Sophic Amalgamation
 		}),
+		--]]
 		prof(ENGINEERING, {
 			-- Recrafting --
 			--q(),	-- Recraft Equipment
@@ -1812,6 +1848,12 @@ root("HiddenQuestTriggers", {
 			--q(),	-- Quack-E
 		}),
 		--[[
+		prof(FISHING, {
+		}),
+		prof(HERBALISM, {
+		}),
+		prof(INSCRIPTION, {
+		}),
 		prof(JEWELCRAFTING, {
 			-- Jewelcrafting Essentials
 			q(),	-- Dragon Isles Crushing
@@ -2037,6 +2079,10 @@ root("HiddenQuestTriggers", {
 			q(72160),	-- Iridescent Ore Fragments
 			--q(71950),
 		}),
+		--[[
+		prof(SKINNING, {
+		}),
+		--]]
 		prof(TAILORING, {
 			-- FIRST CRAFT
 				-- Tailoring Essentials --
