@@ -216,7 +216,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 51.0, 38.0, SINFALL_REACHES },
 			}),
 			q(61077, {	-- Confronting Sin
-				-- ["sourceQuests"] = {  },	--
+				["sourceQuests"] = { 59233 },	-- The Prince's New Crown
 				["description"] = "Requires Renown 17.",
 				["provider"] = { "n", 158653 },	-- Prince Renathal
 				["coord"] = { 52.0, 37.6, SINFALL_REACHES },
@@ -451,7 +451,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			}),
 			q(58406, {	-- Mirror to Maldraxxus
 				["description"] = "Requires Renown 22.",
-				-- ["sourceQuests"] = {  },	--
+				["sourceQuests"] = { 57646 },	-- The Tithelord
 				["provider"] = { "n", 158653 },	-- Prince Renethal
 				["coord"] = { 51.8, 37.5, SINFALL_REACHES },
 			}),
@@ -614,7 +614,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			}),
 			q(57727, {	-- Stonevigil Unrest
 				["description"] = "Requires Renown 20.",
-				-- ["sourceQuests"] = {  },	--
+				["sourceQuests"] = { 58395 },	-- Enough Vengeance For One Day
 				["provider"] = { "n", 158653 },	-- Prince Renethal
 				["coord"] = { 51.8, 37.5, SINFALL_REACHES },
 			}),
