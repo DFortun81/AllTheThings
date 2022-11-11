@@ -859,7 +859,7 @@ for key,value in pairs({
 		--TODO: [-1098] = "Side Quests",							-- Side Quests
 	-- Dragonflight
 		--TODO: [-1100] = "Dragon Customization",					-- Dragon Customization
-		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
+		[-1101] = "原始风暴",											-- Primal Storms
 		[-1110] = "龙鳞探险队",											-- Dragonscale Expedition
 		--TODO: [-1111] = "Climbing",								-- Climbing
 		[-1120] = "马鲁克半人马",											-- Maruuk Centaur
@@ -921,6 +921,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 if GetLocale() == "zhTW" then
+	a[-1101] = "洪荒風暴",												-- Primal Storms
 	a[-1110] = "龍鱗遠征隊";												-- Dragonscale Expedition
 	a[-1120] = "莫魯克半人馬";											-- Maruuk Centaur
 	a[-1130] = "伊斯凱拉巨牙海民";										-- Iskaara Tuskarr

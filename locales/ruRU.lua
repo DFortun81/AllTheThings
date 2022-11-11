@@ -839,7 +839,7 @@ for key,value in pairs({
 		[-1098] = "Побочные Задания",								-- Side Quests
 	-- Dragonflight
 		[-1100] = "Кастомизации Драконов",							-- Dragon Customization
-		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
+		[-1101] = "Изначальные Бури",								-- Primal Storms
 		[-1110] = "Драконья экспедиция",							-- Dragonscale Expedition
 		--TODO: [-1111] = "Climbing",								-- Climbing
 		[-1120] = "Кентавры Маруук",								-- Maruuk Centaur
