@@ -6371,7 +6371,7 @@ end
 app.SearchForField = SearchForField;
 -- This method performs the SearchForField logic, but then verifies that ONLY a specific matching, filtered-priority object is returned
 app.SearchForObject = function(field, id)
-	local fcache = app.CleanSourceIgnoredGroups(SearchForField(field, id));
+	local fcache = SearchForField(field, id);
 	if fcache then
 		local count = #fcache;
 		if count == 0 then
@@ -6410,7 +6410,7 @@ end
 -- This method performs the SearchForField logic and returns a single version of the specific object by merging together all sources of the object
 -- NOTE: Don't use this for Items, because modIDs and bonusIDs are stupid
 app.SearchForMergedObject = function(field, id)
-	local fcache = app.CleanSourceIgnoredGroups(SearchForField(field, id));
+	local fcache = SearchForField(field, id);
 	if fcache then
 		local count = #fcache;
 		if count == 0 then
