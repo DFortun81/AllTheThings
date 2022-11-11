@@ -1254,6 +1254,14 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["groups"] = {
 						objective(1, {	-- 0/20 Bloodkelp
 							["provider"] = { "i", 22094 },	-- Bloodkelp
+							["crs"] = {
+								4368,	-- Strashaz Myrmidon
+								4366,	-- Strashaz Serpent Guard
+								4371,	-- Strashaz Siren
+								4370,	-- Strashaz Sorceress
+								4364,	-- Strashaz Warrior
+								16072,	-- Tidelord Rrurgaz
+							},
 						}),
 					},
 				}),

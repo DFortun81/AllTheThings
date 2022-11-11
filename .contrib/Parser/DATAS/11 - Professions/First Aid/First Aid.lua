@@ -55,12 +55,18 @@ profession(FIRST_AID, {
 		recipe(212067),	-- Treat Burns
 		recipe(211353),	-- Treat Fever
 	})),
-	-- #if NOT ANYCLASSIC
+	-- #if AFTER CATA
 	n(VENDORS, {
-		-- TODO: Add the associated vendors.
-		i(16084),	-- Expert First Aid - Under Wraps
-		i(16112),	-- Manual: Heavy Silk Bandage
-		i(16113)	-- Manual: Mageweave Bandage
+		i(16084, {	-- Expert First Aid - Under Wraps
+			["timeline"] = { "removed 3.1.0" },
+			["rank"] = 3,
+		}),
+		i(16112, {	-- Manual: Heavy Silk Bandage
+			["timeline"] = { "removed 3.1.0" },
+		}),
+		i(16113, {	-- Manual: Mageweave Bandage
+			["timeline"] = { "removed 3.1.0" },
+		}),
 	}),
 	-- #endif
 });

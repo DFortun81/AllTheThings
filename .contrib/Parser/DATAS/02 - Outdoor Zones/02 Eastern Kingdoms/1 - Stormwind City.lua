@@ -1992,13 +1992,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(1271, {	-- Feast at the Blue Recluse
-					["qg"] = 1141,	-- Angus Stern
-					["sourceQuest"] = 1222,	-- Stinky's Escape
-					["coord"] = { 51.7, 93.6, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { "added 1.11.1.10772" },
-				}),
 				q(26177, {	-- Feeling Crabby?
 					["qg"] = 42288,	-- Robby Flay
 					["coord"] = { 50.6, 71.6, STORMWIND_CITY },

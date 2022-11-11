@@ -3,18 +3,19 @@
 ---------------------------------------------------
 root("Zones", m(KALIMDOR, {
 	m(DUSTWALLOW_MARSH, {
-		["lore"] = "Dustwallow Marsh is a swamp in central Kalimdor, with Theramore Isle as its main port city. While Theramore Isle is a large Alliance settlement, it is surrounded by Horde territory. Quests in this zone remain mostly unchanged from pre-Cataclysm, with discontent in Theramore, skirmishes against ogres, and the threat of the black dragonflight.",
-		["achievementID"] = 850,
-		["maps"] = {
-			416,	-- Dustwallow Marsh
-		},
+		["lore"] = "A hot, fetid swampland, underground springs feed Dustwallow Marsh and keep it eternally wet and muddy. Mosquitoes buzz in the air. Trees dip fronds into the waters. The climate is home to a variety of predators, including alligators and murlocs.\n\nBlack dragons dwell in the southern end of the swamp, and the creatures lair in such profusion that the area garners the name \"Wyrmbog.\" Dustwallow Marsh abuts the ocean on its east side, and the mixing of the waters makes a wide swath brackish. Off the coast is a rocky island, on which is perched the Alliance stronghold-city of Theramore.",
+		-- #if AFTER WRATH
+		["icon"] = "Interface\\Icons\\achievement_zone_dustwallowmarsh",
+		-- #endif
+		["maps"] = { 416 },	-- Dustwallow Marsh
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4929, {	-- Dustwallow Marsh Quests (Alliance)
+					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(1, {	--	Disgrace the Defectors
-							["sourceQuests"] = { 27213 },	-- The End of the Deserters
+							["sourceQuest"] = 27213,	-- The End of the Deserters
 						}),
 						crit(2, {	-- "Swamp Eye" Story
 							["sourceQuests"] = {
@@ -25,26 +26,27 @@ root("Zones", m(KALIMDOR, {
 							},
 						}),
 						crit(3, {	-- The Terror of Theramore
-							["sourceQuests"] = { 27222 },	-- Take Down Tethyr!
+							["sourceQuest"] = 27222,	-- Take Down Tethyr!
 						}),
 						crit(4, {	-- Defias in Dustwallow
-							["sourceQuests"] = { 27241 },	-- Return to Jaina
+							["sourceQuest"] = 27241,	-- Return to Jaina
 						}),
 						crit(5, {	-- Prisoners of the Grimtotem
 						--	may also require 27243, "Unleash the Raptors," turned in first but at the same time
-							["sourceQuests"] = { 27245 },	-- Prisoners of the Grimtotems
+							["sourceQuest"] = 27245,	-- Prisoners of the Grimtotems
 						}),
 						crit(6, {	-- The Hyal Family
-							["sourceQuests"] = { 27291 },	-- Peace at Last
+							["sourceQuest"] = 27291,	-- Peace at Last
 						}),
 						crit(7, {	-- The Challenge of the Stonemaul
-							["sourceQuests"] = { 27411 },	-- Challenge to the Black Flight
+							["sourceQuest"] = 27411,	-- Challenge to the Black Flight
 						}),
 					},
 				}),
 				ach(4978, {	-- Dustwallow Marsh Quests (Horde)
+					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(1, {	-- Wild Threats
 							["sourceQuests"] = {
 								26682,	-- A Shambling Threat
@@ -68,17 +70,16 @@ root("Zones", m(KALIMDOR, {
 						}),
 						crit(4, {	-- Connection to the Grimtotem
 							["sourceQuests"] = {
-								--20992,	-- Black Shield
 								27297,	-- Justice Dispensed
-								27257,	-- The Black Shield (#4)
-								27258,	-- The Black Shield
+								27257,	-- The Black Shield (4/5) [H]
+								27258,	-- The Black Shield (5/5) [H]
 							},
 						}),
 						crit(5, {	-- Onyxia's Brood
 							["sourceQuests"] = {
 								27419,	-- Army of the Black Dragon
-								27417,	-- The Brood of Onyxia (#2)
-								27415,	-- The Brood of Onyxia (#3)
+								27417,	-- The Brood of Onyxia (2/3)
+								27415,	-- The Brood of Onyxia (3/3)
 							},
 						}),
 						crit(6, {	-- Challenging the Overlord
@@ -88,6 +89,11 @@ root("Zones", m(KALIMDOR, {
 							["sourceQuest"] = 27411,	-- Challenge to the Black Dragonflight
 						}),
 					},
+				}),
+				explorationAch(850, {	-- Explore Dustwallow Marsh
+					-- #if BEFORE WRATH
+					["description"] = "Explore Dustwallow Marsh, revealing the covered areas of the world map.",
+					-- #endif
 				}),
 			}),
 			-- #if AFTER MOP
@@ -113,55 +119,143 @@ root("Zones", m(KALIMDOR, {
 				}),
 			})),
 			-- #endif
+			-- #if ANYCLASSIC
+			n(EXPLORATION, {
+				exploration(2079, "200:195:660:21"),	-- Alcaz Island
+				applyclassicphase(TBC_PHASE_ONE, exploration(512, {		-- Blackhoof Village
+					["coord"] = { 41.8, 13.7, DUSTWALLOW_MARSH },
+				})),
+				applyclassicphase(TBC_PHASE_ONE, exploration(498, {		-- Bloodfen Burrow
+					["coord"] = { 32.6, 65.9, DUSTWALLOW_MARSH },
+				})),
+				exploration(496, "280:270:230:0"),		-- Brackenwall Village
+				exploration(509, "255:250:257:313"),	-- The Den of Flame
+				exploration(2302, "400:255:239:189"),	-- The Quagmire
+				exploration(513, "230:205:534:224"),	-- Theramore Isle
+				exploration(502, "250:315:422:0"),		-- Witch Hill
+				exploration(511, "285:240:367:381"),	-- Wyrmbog
+				--[[
+				[403] = 1,                               -- Shady Rest Inn
+				[497] = 3,                               -- Swamplight Manor
+				[499] = 5,                               -- Darkmist Cavern
+				[500] = 6,                               -- Moggle Point
+				[501] = 7,                               -- Beezil's Wreck
+				[503] = 9,                               -- Sentry Point
+				[504] = 10,                              -- North Point Tower
+				[505] = 11,                              -- West Point Tower
+				[506] = 12,                              -- Lost Point
+				[507] = 13,                              -- Bluefen
+				[508] = 14,                              -- Stonemaul Ruins
+				[510] = 16,                              -- The Dragonmurk
+				[514] = 20,                              -- Foothold Citadel
+				[515] = 21,                              -- Ironclad Prison
+				[516] = 22,                              -- Dustwallow Bay
+				[517] = 23,                              -- Tidefury Cove
+				[518] = 24,                              -- Dreadmurk Shore
+				[2158] = 26,                             -- Emberstrife's Den
+				[2318] = 28,                             -- The Great Sea
+				]]--
+			}),
+			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(55, {	-- Brackenwall Village, Dustwallow Marsh
+					["cr"] = 11899,	-- Shardi <Wind Rider Master>
 					["coord"] = { 35.6, 31.8, DUSTWALLOW_MARSH },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(179, {	-- Mudsprocket, Dustwallow Marsh
+					-- #if AFTER CATA
+					["cr"] = 40358,	-- Dyslix Silvergrub <Flight Master>
+					-- #else
+					["cr"] = 23612,	-- Dyslix Silvergrub <Flight Master>
+					-- #endif
 					["coord"] = { 42.8, 72.4, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0.7382" },
 				}),
 				fp(32, {	-- Theramore, Dustwallow Marsh
+					["cr"] = 4321,	-- Baldruc <Gryphon Master>
 					["coord"] = { 67.4, 51.2, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 			n(QUESTS, {
 				q(1258, {	-- ... and Bugs
-					["provider"] = { "n", 4794 },	-- Morgan Stern
-					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4794,	-- Morgan Stern
 					["sourceQuest"] = 1204,	-- Mudrock Soup and Bugs
-					["g"] = {
-						i(57843),	-- Baroque Shield
-						i(57844),	-- Crawling Wand
-						un(REMOVED_FROM_GAME, i(6801)),	-- Baroque Apron
+					["coord"] = { 66.4, 45.4, DUSTWALLOW_MARSH },
+					["maps"] = { SWAMP_OF_SORROWS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(33, 33, 15),
+					["groups"] = {
+						objective(1, {	-- 0/12 Pristine Crawler Leg
+							["provider"] = { "i", 5938 },	-- Pristine Crawler Leg
+							["crs"] = {
+								-- #if AFTER 4.0.3.13277
+								44390,	-- Spiny Rock Crab
+								-- #endif
+								1088,	-- Monstrous Crawler
+								922,	-- Silt Crawler
+							},
+						}),
+						i(57843, {	-- Baroque Shield
+							["timeline"] = { "added 4.0.3.13287" },
+						}),
+						i(57844, {	-- Crawling Wand
+							["timeline"] = { "added 4.0.3.13287" },
+						}),
+						i(6801, {	-- Baroque Apron
+							-- #if ANYCLASSIC
+							["description"] = "This gets completely removed. To be safe, keep this in your bank on an alt forever.",
+							-- #endif
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(27214, {	-- A Disturbing Development
-					["provider"] = { "n", 23951 },	-- Lieutenant Aden
+					["qg"] = 23951,	-- Lieutenant Aden
+					["sourceQuest"] = 27213,	-- The End of the Deserters
 					["coord"] = { 65.1, 47.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["sourceQuest"] = 27213,	-- The End of the Deserters
+				}),
+				q(11136, {	-- A Disturbing Development
+					["qg"] = 23951,	-- Lieutenant Aden
+					["sourceQuest"] = 11134,	-- The End of the Deserters
+					["coord"] = { 65.1, 47.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 32,
 				}),
 				q(27425, {	-- A Grim Connection
-					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
-					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4944,	-- Captain Garran Vimes
 					["sourceQuests"] = {
-						27288,	-- The Deserters
-						27262,	-- Suspicious Hoofprints
-						27285,	-- The Black Shield
+						27288,	-- The Deserters (2/2)
+						27262,	-- Suspicious Hoofprints [A]
+						27285,	-- The Black Shield (3/3) [A]
 					},
+					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(11143, {	-- A Grim Connection
+					["qg"] = 4944,	-- Captain Garran Vimes
+					["sourceQuest"] = 1287,	-- The Deserters (2/2)
+					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(26682, {	-- A Shambling Threat
-					["provider"] = { "n", 4926 },	-- Krog
-					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
+					["qg"] = 4926,	-- Krog
 					["sourceQuests"] = {
 						26701,	-- Flight to Brackenwall
 						28554,	-- Warchief's Command: Dustwallow Marsh!
 					},
+					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(6625, {	-- Alliance Trauma
 					["qg"] = 5150,	-- Nissa Firestone
@@ -178,1033 +272,2370 @@ root("Zones", m(KALIMDOR, {
 					["lvl"] = lvlsquish(35, 10, 35),
 				}),
 				q(27427, {	-- Arms of the Grimtotems
-					["provider"] = { "n", 23568 },	-- Captain Darill
-					["coord"] = { 46.6, 24.6, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 23568,	-- Captain Darill
 					["sourceQuest"] = 27425,	-- A Grim Connection
-					["g"] = {
-						i(33264),	-- Glowing Tourmaline Ring
-						i(33268),	-- Bone Dirk
-						i(57837),	-- Biting Greataxe
+					["coord"] = { 46.6, 24.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57837, {	-- Biting Greataxe
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(33268, {	-- Bone Dirk
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33264, {	-- Glowing Tourmaline Ring
+							["timeline"] = { "added 2.3.0" },
+						}),
 					},
 				}),
 				q(11148, {	-- Arms of the Grimtotems
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 23568,	-- Captain Darill
+					["sourceQuest"] = 11143,	-- A Grim Connection
+					["coord"] = { 46.6, 24.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(33272)),	-- Biting Axe
-						i(33268),	-- Bone Dirk NOTE: Item is still available from new version of quest
-						i(33264),	-- Glowing Tourmaline Ring NOTE: Item is still available from new version of quest
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- 0/7 Blackhoof Armaments
+							["providers"] = {
+								{ "i",  33071 },	-- Blackhoof Armaments
+								{ "o", 186301 },	-- Blackhoof Armaments
+							},
+						}),
+						i(33272, {	-- Biting Axe
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
+						i(33268, {	-- Bone Dirk
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33264, {	-- Glowing Tourmaline Ring
+							["timeline"] = { "added 2.3.0" },
+						}),
 					},
 				}),
 				q(1168, {	-- Army of the Black Dragon
-					["provider"] = { "n", 4502 },	-- Tharg
-					["coord"] = { 37.3, 31.3, DUSTWALLOW_MARSH },
+					["qg"] = 4502,	-- Tharg
+					["coord"] = { 37.2, 31.4, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(9705)),	-- Tharg's Shoelace
-						i(10702),	-- Enormous Ogre Boots
+					["lvl"] = lvlsquish(37, 37, 15),
+					["groups"] = {
+						objective(1, {	-- 0/15 Firemane Scout slain
+							["provider"] = { "n", 4329 },	-- Firemane Scout
+						}),
+						objective(2, {	-- 0/10 Firemane Ash Tail slain
+							["provider"] = { "n", 4331 },	-- Firemane Ash Tail
+						}),
+						objective(3, {	-- 0/5 Firemane Scalebane slain
+							["provider"] = { "n", 4328 },	-- Firemane Scalebane
+						}),
 						i(9706),	-- Tharg's Disk
+						-- #if AFTER CATA
+						i(10702),	-- Enormous Ogre Boots
+						-- #endif
+						i(9705, {	-- Tharg's Shoelace
+							["timeline"] = { "removed 4.0.1" },
+						}),
 					},
 				}),
-				q(11160, {	-- [DEPRECATED]Banner of the Stonemaul
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 23579 },	-- Brogg
-					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
-				}),
 				q(27408, {	-- Banner of the Stonemaul
-					["provider"] = { "n", 23579 },	-- Brogg
-					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
+					["qg"] = 23579,	-- Brogg
 					["sourceQuest"] = 27407,	-- Bloodfen Feathers
-				}),
-				q(11158, {	-- [DEPRECATED]Bloodfen Feathers
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 23579 },	-- Brogg
 					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+				}),
+				q(11160, {	-- Banner of the Stonemaul
+					["qg"] = 23579,	-- Brogg <Stonemaul Survivor>
+					["sourceQuest"] = 11158,	-- Bloodfen Feathers
+					["coord"] = { 41.9, 74.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- 0/1 Stonemaul Banner
+							["providers"] = {
+								{ "i",  33086 },	-- Stonemaul Banner
+								{ "o", 186329 },	-- Stonemaul Clan Banner
+							},
+							["coord"] = { 38.1, 69.4, DUSTWALLOW_MARSH },
+						}),
+					},
 				}),
 				q(27407, {	-- Bloodfen Feathers
-					["provider"] = { "n", 23579 },	-- Brogg
+					["qg"] = 23579,	-- Brogg
 					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+				}),
+				q(11158, {	-- Bloodfen Feathers
+					["qg"] = 23579,	-- Brogg <Stonemaul Survivor>
+					["coord"] = { 41.9, 74.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- 0/5 Bloodfen Feather
+							["provider"] = { "i", 33085 },	-- Bloodfen Feather
+							["crs"] = {
+								4356,	-- Bloodfen Razormaw
+								4357,	-- Bloodfen Lashtail
+								23873,	-- Goreclaw the Ravenous
+							},
+						}),
+					},
 				}),
 				q(27247, {	-- Captain Vimes
-					["provider"] = { "n", 23951 },	-- Lieutenant Aden
-					["coord"] = { 65.0, 47.0, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 23951,	-- Lieutenant Aden
 					["sourceQuest"] = 27246,	-- The Orc Report
+					["coord"] = { 65.0, 47.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				q(11217, {	-- [DEPRECATED]Catch a Dragon by the Tail
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 23570 },	-- Gizzix Grimegurgle
-					["coord"] = { 41.5, 72.9, DUSTWALLOW_MARSH },
+				q(1220, {	-- Captain Vimes
+					["providers"] = {
+						{ "n", 4947 },	-- Theramore Lieutenant
+						{ "i", 5917 },	-- Spy's Report
+					},
+					["sourceQuest"] = 1219,	-- The Orc Report
+					["coords"] = {
+						{ 68.1, 48.2, DUSTWALLOW_MARSH },
+						{ 67.2, 51.0, DUSTWALLOW_MARSH },
+						{ 65.1, 47.1, DUSTWALLOW_MARSH },
+					},
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(27413, {	-- Catch a Dragon by the Tail
-					["provider"] = { "n", 23570 },	-- Gizzix Grimegurgle
+					["qg"] = 23570,	-- Gizzix Grimegurgle
 					["coord"] = { 41.5, 72.9, DUSTWALLOW_MARSH },
-					["g"] = {
-						i(33235),	-- Journeyman's Epaulets
-						i(33241),	-- Oiled Leather Leggings
-						i(131672),	-- Chain Linked Leggings
+					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						i(33235, {	-- Journeyman's Epaulets
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33241, {	-- Oiled Leather Leggings
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(131672, {	-- Chain Linked Leggings
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
+				q(11217, {	-- Catch a Dragon by the Tail
+					["qg"] = 23570,	-- Gizzix Grimegurgle
+					["coord"] = { 41.6, 73.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["lvl"] = 37,
+					["groups"] = {
+						objective(1, {	-- 0/8 Wyrmtail
+							["providers"] = {
+								{ "i",  33175 },	-- Wyrmtail
+								{ "o", 186463 },	-- Wyrmtail
+							},
+						}),
+						i(33271, {	-- Battlecaster's Edge
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33235, {	-- Journeyman's Epaulets
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33241, {	-- Oiled Leather Leggings
+							["timeline"] = { "added 2.3.0" },
+						}),
 					},
 				}),
 				q(1958, {	-- Celestial Power
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 6546 },	-- Tabetha
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 1957,	-- Mana Surges
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { MAGE },
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(7515)),	-- Celestial Orb
-						un(REMOVED_FROM_GAME, i(9517)),	-- Celestial Stave
-					},
-				}),
-				q(1173, {	-- Challenge Overlord Mok'Morokk
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
-					["coord"] = { 36.2, 31.5, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(10704)),	-- Chillnail Splinter
-						un(REMOVED_FROM_GAME, i(10703)),	-- Fiendish Skiv
+					["lvl"] = 35,
+					["groups"] = {
+						i(7515, {	-- Celestial Orb
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(9517, {	-- Celestial Stave
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(27418, {	-- Challenge Overlord Mok'Morokk
-					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
+					["qg"] = 4500,	-- Overlord Mok'Morokk
+					["sourceQuest"] = 27415,	-- The Brood of Onyxia (3/3)
 					["coord"] = { 36.2, 31.5, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27415,	-- The Brood of Onyxia (#3)
-					["g"] = {
-						i(57846),	-- Overlord's Trophy Shoulders
-						i(57847),	-- Mok'Morokk's Beat Stick
-						i(57850),	-- Dustwallow Impaler
-						i(131675),	-- Overlord's Trophy Pauldrons
-						i(156999),	-- Mok'Morokk's Headcracker
+					["groups"] = {
+						i(57846, {	-- Overlord's Trophy Shoulders
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57847, {	-- Mok'Morokk's Beat Stick
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57850, {	-- Dustwallow Impaler
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131675, {	-- Overlord's Trophy Pauldrons
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(156999, {	-- Mok'Morokk's Headcracker
+							["timeline"] = { "added 7.3.5.25716" },
+						}),
 					},
 				}),
-				q(11162, {	-- Challenge to the Black Dragonflight
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 23579 },	-- Brogg
-					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
+				q(1173, {	-- Challenge Overlord Mok'Morokk
+					["qg"] = 4500,	-- Overlord Mok'Morokk
+					["sourceQuest"] = 1172,	-- The Brood of Onyxia (3/3)
+					["coord"] = { 36.2, 31.4, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(33237)),	-- Brogg's Battle Harness
+					["lvl"] = 38,
+					["groups"] = {
+						i(10704, {	-- Chillnail Splinter
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(10703, {	-- Fiendish Skiv
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(27411, {	-- Challenge to the Black Dragonflight
-					["provider"] = { "n", 23579 },	-- Brogg
-					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
+					["qg"] = 23579,	-- Brogg
 					["sourceQuest"] = 27410,	-- Spirits of Stonemaul Hold
-					["g"] = {
-						i(33231),	-- Oversized Stonemaul Hood
-						i(57828),	-- Brogg's Better Battle Harness
-						i(33256),	-- Refitted Bruiser Gauntlets
+					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						i(33231, {	-- Oversized Stonemaul Hood
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(57828, {	-- Brogg's Better Battle Harness
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(33256, {	-- Refitted Bruiser Gauntlets
+							["timeline"] = { "added 2.3.0" },
+						}),
+					},
+				}),
+				q(11162, {	-- Challenge to the Black Flight
+					["qg"] = 23579,	-- Brogg <Stonemaul Survivor>
+					["sourceQuest"] = 11159,	-- Spirits of Stonemaul Hold
+					["coord"] = { 41.9, 74.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- Stonemaul Clan Avenged
+							["provider"] = { "i", 33095 },	-- Stonemaul Banner
+							["coord"] = { 52, 75.8, DUSTWALLOW_MARSH },
+							["cr"] = 23789,	-- Smolderwing
+						}),
+						i(33231, {	-- Oversized Stonemaul Hood
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33237, {	-- Brogg's Battle Harness
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
+						i(33256, {	-- Refitted Bruiser Gauntlets
+							["timeline"] = { "added 2.3.0" },
+						}),
 					},
 				}),
 				q(11213, {	-- Check Up on Tabetha
-					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
+					["qg"] = 4791,	-- Nazeer Bloodpike
 					["coord"] = { 35.2, 30.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0" },
 					["races"] = HORDE_ONLY,
-				}),
-				q(11183, {	-- Cleansing Witch Hill
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 23843 },	-- Mordant Grimsby
-					["coord"] = { 55.5, 26.1, DUSTWALLOW_MARSH },
+					["lvl"] = lvlsquish(37, 37, 15),
 				}),
 				q(27190, {	-- Cleansing Witch Hill
-					["provider"] = { "n", 23843 },	-- Mordant Grimsby
-					["coord"] = { 55.5, 26.1, DUSTWALLOW_MARSH },
+					["qg"] = 23843,	-- Mordant Grimsby
 					["sourceQuest"] = 27189,	-- The Witch's Bane
-					["g"] = {
-						i(33229),	-- Mordant's Travel Tunic
-						i(33257),	-- Scaled Marshwalkers
-						i(33245),	-- Grimsby's Gaudy Girdle
-						i(131650),	-- Grimsby's Chain Cinch
+					["coord"] = { 55.5, 26.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						i(33229, {	-- Mordant's Travel Tunic
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33257, {	-- Scaled Marshwalkers
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33245, {	-- Grimsby's Gaudy Girdle
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(131650, {	-- Grimsby's Chain Cinch
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
-				q(11144, {	-- [DEPRECATED]Confirming the Suspicion
-					["provider"] = { "n", 23568 },	-- Captain Darill
-					["coord"] = { 46.6, 24.6, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+				q(11183, {	-- Cleansing Witch Hill
+					["qg"] = 23843,	-- Mordant Grimsby
+					["sourceQuest"] = 11181,	-- The Witch's Bane
+					["coord"] = { 55.6, 26.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- Witch Hill Cleansed
+							["provider"] = { "i", 33113 },	-- Witchbane Torch
+							["cr"] = 23864,	-- Zelfrax
+						}),
+						i(33229, {	-- Mordant's Travel Tunic
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33257, {	-- Scaled Marshwalkers
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33245, {	-- Grimsby's Gaudy Girdle
+							["timeline"] = { "added 2.3.0" },
+						}),
+					},
 				}),
 				q(27426, {	-- Confirming the Suspicion
-					["provider"] = { "n", 23568 },	-- Captain Darill
-					["coord"] = { 46.6, 24.6, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 23568,	-- Captain Darill
 					["sourceQuest"] = 27425,	-- A Grim Connection
+					["coord"] = { 46.6, 24.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				q(11174, {	-- [DEPRECATED]Corrosion Prevention
-					["provider"] = { "n", 23797 },	-- Moxie Steelgrille
-					["coord"] = { 53.5, 56.9, DUSTWALLOW_MARSH },
-					["u"] = REMOVED_FROM_GAME,
+				q(11144, {	-- Confirming the Suspicion
+					["qg"] = 23568,	-- Captain Darill
+					["sourceQuest"] = 11143,	-- A Grim Connection
+					["coord"] = { 46.6, 24.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 33,
+					["groups"] = {
+						objective(1, {	-- 0/1 Grimtotem Battle Plan
+							["provider"] = { "i", 33051 },	-- Grimtotem Battle Plan
+							["cost"] = {{ "i", 33050, 4 }},	-- Grimtotem Note
+							["cr"] = 23714,	-- Grimtotem Elder
+						}),
+					},
 				}),
 				q(27347, {	-- Corrosion Prevention
-					["provider"] = { "n", 23797 },	-- Moxie Steelgrille
+					["qg"] = 23797,	-- Moxie Steelgrille
 					["coord"] = { 53.5, 56.9, DUSTWALLOW_MARSH },
-					["g"] = {
-						i(33233),	-- Cobalt-Threaded Gloves
-						i(33239),	-- Marshwarden's Tunic
-						i(33255),	-- Rustproof Waistguard
-						i(57840),	-- Corroded Helmet
-						i(131666),	-- Marshwarden's Vest
+					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						i(33233, {	-- Cobalt-threaded Gloves
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33239, {	-- Marshwarden's Tunic
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33255, {	-- Rustproof Waistguard
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(57840, {	-- Corroded Helmet
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131666, {	-- Marshwarden's Vest
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
+				q(11174, {	-- Corrosion Prevention
+					["qg"] = 23797,	-- Moxie Steelgrille
+					["sourceQuest"] = 11172,	-- The Zeppelin Crash
+					["coord"] = { 53.6, 56.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- 0/10 Oozes Dissolved
+							["provider"] = { "i", 33108 },	-- Ooze Buster
+							["crs"] = {
+								4393,	-- Acidic Swamp Ooze
+								4394,	-- Bubbling Swamp Ooze
+							},
+						}),
+						i(33233, {	-- Cobalt-threaded Gloves
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33239, {	-- Marshwarden's Tunic
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33255, {	-- Rustproof Waistguard
+							["timeline"] = { "added 2.3.0" },
+						}),
 					},
 				}),
 				q(27286, {	-- Daelin's Men
-					["provider"] = { "n", 4948 },	-- Adjutant Tesoran
+					["qg"] = 4948,	-- Adjutant Tesoran
+					["sourceQuest"] = 27264,	-- Lieutenant Paval Reethe (2/2) [A]
 					["coord"] = { 67.9, 48.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 27264,	-- Lieutenant Paval Reethe
+				}),
+				q(1285, {	-- Daelin's Men
+					["qg"] = 4948,	-- Adjutant Tesoran
+					["sourceQuest"] = 1259,	-- Lieutenant Paval Reethe (2/2) [A]
+					["coord"] = { 68.0, 48.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(25051, {	-- Darkmist Extermination
-					["provider"] = { "n", 4926 },	-- Krog
+					["qg"] = 4926,	-- Krog
 					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27218, {	-- Dastardly Denizens of the Deep
-					["provider"] = { "n", 23892 },	-- Babs Fizzletorque
-					["coord"] = { 72.1, 47.1, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 23892,	-- Babs Fizzletorque
 					["sourceQuest"] = 27217,	-- Thresher Oil
+					["coord"] = { 72.1, 47.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(11193, {	-- Dastardly Denizens of the Deep
+					["providers"] = {
+						{ "n", 23892 },	-- Babs Fizzletorque
+						{ "i", 33127 },	-- Dastardly Denizens of the Deep
+					},
+					["sourceQuest"] = 11192,	-- Thresher Oil
+					["coord"] = { 72.1, 47.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(27234, {	-- Defias in Dustwallow?
-					["provider"] = { "n", 5086 },	-- Captain Wymor
+					["qg"] = 5086,	-- Captain Wymor
+					["sourceQuest"] = 27214,	-- A Disturbing Development
 					["coord"] = { 59.7, 41.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 27214,
+				}),
+				q(11137, {	-- Defias in Dustwallow?
+					["qg"] = 5086,	-- Captain Wymor
+					["sourceQuest"] = 11136,	-- A Disturbing Development
+					["coord"] = { 59.7, 41.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 32,
+					["groups"] = {
+						objective(1, {	-- 0/1 Defias Orders
+							["provider"] = { "i", 33037 },	-- Defias Orders
+							["coord"] = { 64.9, 27.3, DUSTWALLOW_MARSH },
+							["cr"] = 23679,	-- Garn Mathers
+						}),
+					},
 				}),
 				q(11208, {	-- Delivery for Drazzit
-					["provider"] = { "n", 23797 },	-- Moxie Steelgrille
-					["coord"] = { 53.5, 56.9, DUSTWALLOW_MARSH },
+					["providers"] = {
+						{ "n", 23797 },	-- Moxie Steelgrille
+						{ "i", 33163 },	-- Zeppelin Cargo
+					},
+					-- #if AFTER CATA
 					["sourceQuests"] = {
 						27347,	-- Corrosion Prevention
 						27348,	-- Secure the Cargo!
 					},
-				}),
-				q(11156, {	-- [DEPRECATED]Direhorn Raiders
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 23600 },	-- Apprentice Morlann
-					["coord"] = { 46.0, 57.4, DUSTWALLOW_MARSH },
-					["g"] = {
-						i(33240),	-- Grimtotem Earthbinder's Tunic
-						un(REMOVED_FROM_GAME, i(33262)),	-- Morlann's Seal
-						i(57827),	-- Morlann's Other Seal
-						i(33261),	-- Destroyer's Cloak
-						i(57831),	-- Direhorn Cinch
-					},
+					-- #else
+					["sourceQuest"] = 11207,	-- Secure the Cargo!
+					-- #endif
+					["coord"] = { 53.6, 56.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0" },
+					["lvl"] = lvlsquish(35, 35, 15),
 				}),
 				q(27340, {	-- Direhorn Raiders
-					["provider"] = { "n", 23600 },	-- Apprentice Morlann
+					["qg"] = 23600,	-- Apprentice Morlann
 					["coord"] = { 46.0, 57.4, DUSTWALLOW_MARSH },
-					["g"] = {
-						i(33240),	-- Grimtotem Earthbinder's Tunic
-						un(REMOVED_FROM_GAME, i(33262)),	-- Morlann's Seal
-						i(57827),	-- Morlann's Other Seal
-						i(33261),	-- Destroyer's Cloak
-						i(57831),	-- Direhorn Cinch
-						i(131664),	-- Grimtotem Earthbinder's Vest
+					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						i(33240, {	-- Grimtotem Earthbinder's Tunic
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(131664, {	-- Grimtotem Earthbinder's Vest
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(57831, {	-- Direhorn Cinch
+							["timeline"] = { "added 4.0.3.13287" },
+						}),
+						i(33261, {	-- Destroyer's Cloak
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(57827, {	-- Morlann's Other Seal
+							["timeline"] = { "added 4.0.3.13287" },
+						}),
+					},
+				}),
+				q(11156, {	-- Direhorn Raiders
+					["qg"] = 23600,	-- Apprentice Morlann <Tabetha's Apprentice>
+					["coord"] = { 46.1, 57.4, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["lvl"] = 35,
+					["groups"] = {
+						i(33240, {	-- Grimtotem Earthbinder's Tunic
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33261, {	-- Destroyer's Cloak
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33262, {	-- Morlann's Seal
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(27212, {	-- Discrediting the Deserters
-					["provider"] = { "n", 23566 },	-- Calia Hastings
-					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 23566,	-- Calia Hastings
 					["sourceQuest"] = 27211,	-- Propaganda War
+					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				q(1177, {	-- Hungry!
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4503 },	-- Mudcrush Durtfeet
+				q(11133, {	-- Discrediting the Deserters
+					["qg"] = 23566,	-- Calia Hastings <SI:7>
+					["sourceQuest"] = 11128,	-- Propaganda War
+					["coord"] = { 68.3, 51.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 32,
+					["groups"] = {
+						objective(1, {	-- 0/6 Leaflets Distributed
+							["providers"] = {
+								{ "i", 33015 },	-- Altered Leaflets
+								{ "n", 4979 },	-- Theramore Guard
+							},
+						}),
+					},
 				}),
-				q(11211, {	-- Help for Mudsprocket
-					["provider"] = { "n", 6546 },	-- Tabetha
-					["coord"] = { 46.0, 57.1, DUSTWALLOW_MARSH },
+				q(1271, {	-- Feast at the Blue Recluse
+					["qg"] = 1141,	-- Angus Stern
+					["sourceQuests"] = {
+						1258,	-- ... and Bugs
+						1222,	-- Stinky's Escape
+					},
+					["description"] = "Don't forget to loot all the food and drinks off the tables.",
+					-- #if AFTER WRATH
+					["coord"] = { 51.8, 93.7, STORMWIND_CITY },
+					-- #else
+					["coord"] = { 41.4, 89.2, STORMWIND_CITY },
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(30, 30, 15),
+					["groups"] = {
+						i(5951),	-- Moist Towelette
+					},
+				}),
+				-- #if BEFORE TBC
+				q(1132, {	-- Fiora Longears
+					-- This quest was moved to Darkshore after TBC Prepatch.
+					["qg"] = 4455,	-- Red Jack Flint
+					["coord"] = { 9.9, 57.9, WETLANDS },
+					["timeline"] = { "removed 3.3.0" },
+					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = 18,
+				}),
+				-- #endif
+				q(11211, {	-- Help for Mudsprocket
+					["qg"] = 6546,	-- Tabetha
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0" },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(38, 38, 15),
 				}),
 				q(11215, {	-- Help Mudsprocket
-					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
+					["qg"] = 4791,	-- Nazeer Bloodpike
 					["coord"] = { 35.2, 30.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0" },
 					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(38, 38, 15),
 				}),
 				q(1949, {	-- Hidden Secrets
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 1947,	-- Journey to the Marsh
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { MAGE },
+					["lvl"] = 30,
 				}),
+				-- #if BEFORE TBC
 				q(1135, {	-- Highperch Venom
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4456 },	-- Fiora Longears
+					-- This quest was moved to Darkshore after TBC Prepatch.
+					["qg"] = 4456,	-- Fiora Longears
+					["coord"] = { 66.5, 45.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 2.3.0" },
+					["maps"] = { THOUSAND_NEEDLES },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(6719)),	-- Windborne Belt
+					["lvl"] = 25,
+					["groups"] = {
+						objective(1, {	-- 0/10 Highperch Venom Sac
+							["provider"] = { "i", 5809 },	-- Highperch Venom Sac
+							["crs"] = {
+								5934,	-- Heartrazor
+								4109,	-- Highperch Consort
+								4110,	-- Highperch Patriarch
+								4107,	-- Highperch Wyvern
+							},
+						}),
+						i(6719, {	-- Windborne Belt
+							["timeline"] = { "removed 2.3.0" },
+						}),
+					},
+				}),
+				-- #endif
+				q(1177, {	-- Hungry!
+					["qg"] = 4503,	-- Mudcrush Durtfeet
+					["coord"] = { 35.2, 38.3, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["lvl"] = 32,
+					["groups"] = {
+						objective(1, {	-- 0/12 Mirefin Head
+							["provider"] = { "i", 5847 },	-- Mirefin Head
+							["crs"] = {
+								14230,	-- Burgle Eye
+								4362,	-- Mirefin Coastrunner
+								4361,	-- Mirefin Muckdweller
+								4359,	-- Mirefin Murloc
+								4363,	-- Mirefin Oracle
+								4358,	-- Mirefin Puddlejumper
+								4360,	-- Mirefin Warrior
+							},
+						}),
+						i(9518),	-- Mud's Crushers
+						i(9519),	-- Durtfeet Stompers
 					},
 				}),
 				q(27191, {	-- Hungry as an Ogre!
-					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
-					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
+					["qg"] = 4792,	-- "Swamp Eye" Jarl
 					["sourceQuest"] = 27184,	-- Jarl Needs Eyes
-					["g"] = {
+					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
 						i(9518),	-- Mud's Crushers
 						i(9519),	-- Durtfeet Stompers
-						i(131651),	-- Mud's Chain Boots
-					},
-				}),
-				q(1169, {	-- Identifying the Brood
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4501 },	-- Draz'Zilb
-					["coord"] = { 37.1, 33.0, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(9703)),	-- Scorched Cape
-						un(REMOVED_FROM_GAME, i(9704)),	-- Rustler Gloves
+						i(131651, {	-- Mud's Chain Boots
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(27414, {	-- Identifying the Brood
-					["provider"] = { "n", 4501 },	-- Draz'Zilb
+					["qg"] = 4501,	-- Draz'Zilb
 					["coord"] = { 37.1, 33.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(57833),	-- Brooding Mask
-						i(57838),	-- Searing Dagger
-						i(57839),	-- Whelp Slaying Axe
-						i(131673),	-- Brooding Collar
+					["groups"] = {
+						i(57833, {	-- Brooding Mask
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57838, {	-- Searing Dagger
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57839, {	-- Whelp Slaying Axe
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131673, {	-- Brooding Collar
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
-				q(27249, {	-- Inspecting the Ruins
-					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
-					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+				q(1169, {	-- Identifying the Brood
+					["qg"] = 4501,	-- Draz'Zilb
+					["coord"] = { 37, 33, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 38,
+					["groups"] = {
+						objective(1, {	-- 0/15 Searing Tongue
+							["provider"] = { "i", 5840 },	-- Searing Tongue
+							["crs"] = {
+								4323,	-- Searing Hatchling
+								4324,	-- Searing Whelp
+							},
+						}),
+						objective(2, {	-- 0/15 Searing Heart
+							["provider"] = { "i", 5841 },	-- Searing Heart
+							["crs"] = {
+								4323,	-- Searing Hatchling
+								4324,	-- Searing Whelp
+							},
+						}),
+						i(9703, {	-- Scorched Cape
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(9704, {	-- Rustler Gloves
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(27249, {	-- Inspecting the Ruins [A]
+					["qg"] = 4944,	-- Captain Garran Vimes
 					["sourceQuest"] = 27251,	-- The Call Him Smiling Jim
-				}),
-				q(11123, {	-- [DEPRECATED]Inspecting the Ruins
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
 					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				q(11124, {	-- [DEPRECATED]Inspecting the Ruins
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4926 },	-- Krog
-					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
+				q(11123, {	-- Inspecting the Ruins [A]
+					["qg"] = 4944,	-- Captain Garran Vimes
+					["sourceQuest"] = 1282,	-- They Call Him Smiling Jim
+					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
-				q(27253, {	-- Inspecting the Ruins (marked as critical on map but not needed for criteria)
-					["provider"] = { "n", 4926 },	-- Krog
+				q(27253, {	-- Inspecting the Ruins [H]
+					["qg"] = 4926,	-- Krog
 					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+				}),
+				q(11124, {	-- Inspecting the Ruins [H]
+					["qg"] = 4926,	-- Krog
+					["coord"] = { 36.4, 31.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(27219, {	-- Is it Real?
-					["provider"] = { "n", 23896 },	-- "Dirty" Michael Crowe
+					["qg"] = 23896,	-- "Dirty" Michael Crowe
+					["sourceQuest"] = 27218,	-- Dastardly Denizens of the Deep
 					["coord"] = { 69.3, 51.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 27218 },	-- Dastardly Denizens of the Deep
+				}),
+				q(11194, {	-- Is it Real?
+					["qg"] = 23896,	-- "Dirty" Michael Crowe <Fish Merchant>
+					["sourceQuest"] = 11193,	-- Dastardly Denizens of the Deep
+					["coord"] = { 69.2, 51.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1948, {	-- Items of Power
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["providers"] = {
+						{ "n", 6546 },	-- Tabetha
+						{ "i", 7516 },	-- Tabetha's Instructions
+					},
+					["sourceQuest"] = 1951,	-- Rituals of Power
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { ARATHI_HIGHLANDS },
+					["cost"] = { { "i", 1529, 1 } },	-- Jade
 					["classes"] = { MAGE },
+					["lvl"] = 30,
+					["groups"] = {
+						objective(2, {	-- 0/1 Bolt Charged Bramble
+							["provider"] = { "i", 7272 },	-- Bolt Charged Bramble
+							["coord"] = { 52, 51, ARATHI_HIGHLANDS },
+							["cost"] = { { "i", 7273, 10 } },	-- Witherbark Totem Stick
+							["crs"] = {
+								2554,	-- Witherbark Axe Thrower
+								2558,	-- Witherbark Berserker
+								2556,	-- Witherbark Headhunter
+								2557,	-- Witherbark Shadow Hunter
+								2553,	-- Witherbark Shadowcaster
+								2552,	-- Witherbark Troll
+								2555,	-- Witherbark Witch Doctor
+								2605,	-- Zalas Witherbark <Warband Leader>
+							},
+						}),
+					},
 				}),
 				q(27238, {	-- Jaina Must Know
-					["provider"] = { "n", 23569 },	-- Renn McGill
+					["qg"] = 23569,	-- Renn McGill
+					["sourceQuest"] = 27237,	-- Recover the Cargo
 					["coord"] = { 63.8, 16.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 27237 },	-- Recover the Cargo
 				}),
-				q(1203, {	-- Jarl Needs a Blade
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
-					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
-					["sourceQuest"] = 1206,	-- Jarl Needs Eyes
+				q(11141, {	-- Jaina Must Know
+					["qg"] = 23569,	-- Renn McGill <SI:7 Salvage Diver>
+					["sourceQuest"] = 11140,	-- Recover the Cargo!
+					["coord"] = { 63.7, 17.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 33,
+				}),
+				q(1301, {	-- James Hyal (1/2)
+					["qg"] = 5081,	-- Connor Rivers
+					["coord"] = { 40.4, 91.6, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 30,
+				}),
+				q(1302, {	-- James Hyal (2/2)
+					["qg"] = 5082,	-- Vincent Hyal
+					["sourceQuest"] = 1301,	-- James Hyal (1/2)
+					["altQuests"] = { 1282 },	-- They Call Him Smiling Jim
+					["coord"] = { 10.8, 60.4, WETLANDS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(27186, {	-- Jarl Needs a Blade
-					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
-					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
+					["qg"] = 4792,	-- "Swamp Eye" Jarl
 					["sourceQuest"] = 27184,	-- Jarl Needs Eyes
-					["g"] = {
+					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						i(57835, {	-- "Swamp Eye" Belt
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131649, {	-- "Swamp Eye" Chain Sash
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 						i(5016),	-- Artisan's Trousers
-						i(57835),	-- "Swamp Eye" Belt
 						i(9622),	-- Reedknot Ring
-						i(131649),	-- "Swamp Eye" Chain Sash
 					},
 				}),
-				q(1206, {	-- Jarl Needs Eyes
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
+				q(1203, {	-- Jarl Needs a Blade
+					["qg"] = 4792,	-- "Swamp Eye" Jarl
+					["sourceQuest"] = 1206,	-- Jarl Needs Eyes
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
-					["sourceQuest"] = 1218,	-- Soothing Spices
+					["timeline"] = { "removed 4.0.3" },
+					-- #if BEFORE TBC
+					["cost"] = {{ "i", 3853, 1 }},	-- Moonsteel Broadsword
+					-- #endif
+					["lvl"] = 30,
+					["groups"] = {
+						-- #if AFTER TBC
+						objective(1, {	-- Razorspine's Sword
+							["provider"] = { "i", 33110 },	-- Razorspine's Sword
+							["cr"] = 23841,	-- Razorspine
+						}),
+						-- #endif
+						i(5016),	-- Artisan's Trousers
+						i(9622),	-- Reedknot Ring
+					},
 				}),
 				q(27184, {	-- Jarl Needs Eyes
-					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
-					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
+					["qg"] = 4792,	-- "Swamp Eye" Jarl
 					["sourceQuest"] = 27183,	-- Marsh Frog Legs
+					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(1133, {	-- Journey to Astranaar
-					["provider"] = { "n", 4456 },	-- Fiora Longears
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(11206, {	-- Justice Dispensed
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 6546 },	-- Tabetha
-					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(33230)),	-- Leggings of the Long Road
-						un(REMOVED_FROM_GAME, i(33243)),	-- Skirmisher's Cover
-						un(REMOVED_FROM_GAME, i(33251)),	-- Steel-banded Hauberk
+				q(1206, {	-- Jarl Needs Eyes
+					["qg"] = 4792,	-- "Swamp Eye" Jarl
+					["sourceQuest"] = 1218,	-- Marsh Frog Legs (TBC+) / Soothing Spices (Classic)
+					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- 0/40 Unpopped Darkmist Eye
+							["provider"] = { "i", 5884 },	-- Unpopped Darkmist Eye
+							["crs"] = {
+								4377,	-- Darkmist Lurker
+								4378,	-- Darkmist Recluse
+								4379,	-- Darkmist Silkspinner
+								4376,	-- Darkmist Spider
+								4380,	-- Darkmist Widow
+							},
+						}),
 					},
 				}),
+				-- #if BEFORE TBC
+				q(1133, {	-- Journey to Astranaar
+					-- This quest was moved to Darkshore after TBC Prepatch.
+					["qg"] = 4456,	-- Fiora Longears
+					["sourceQuest"] = 1132,	-- Fiora Longears
+					["coord"] = { 66.4, 45.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 3.3.0" },
+					["maps"] = { ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
+				}),
+				-- #endif
+				q(1947, {	-- Journey to the Marsh
+					["qgs"] = {
+						5885,	-- Deino <Mage Trainer>
+						5144,	-- Bink <Mage Trainer>
+						5497,	-- Jennea Cannon <Mage Trainer>
+						3048,	-- Ursyn Ghull <Mage Trainer>
+						4568,	-- Anastasia Hartwell <Mage Trainer>
+					},
+					["coords"] = {
+						{ 38.4, 86, ORGRIMMAR },
+						{ 27, 8.2, IRONFORGE },
+						{ 38.6, 79.4, STORMWIND_CITY },
+						{ 25.8, 14.4, THUNDER_BLUFF },
+						{ 85, 10.2, UNDERCITY },
+					},
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { MAGE },
+					["isBreadcrumb"] = true,
+					["lvl"] = 30,
+				}),
 				q(27297, {	-- Justice Dispensed
-					["provider"] = { "n", 6546 },	-- Tabetha
-					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 27296,	-- Raze Direhorn Post! [H]
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27296,	-- Raze Direhorn Post!
-					["g"] = {
-						i(33271),	-- Battlecaster's Edge
-						i(57829),	-- Steel-Backed Hauberk
-						i(156976),	-- Staff of Memory
+					["groups"] = {
+						i(33271, {	-- Battlecaster's Edge
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(57829, {	-- Steel-Backed Hauberk
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(156976, {	-- Staff of Memory
+							["timeline"] = { "added 7.3.5.25716" },
+						}),
+					},
+				}),
+				q(11206, {	-- Justice Dispensed
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 11205,	-- Raze Direhorn Post! [H]
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
+					["groups"] = {
+						i(33230, {	-- Leggings of the Long Road
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
+						i(33243, {	-- Skirmisher's Cover
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
+						i(33251, {	-- Steel-banded Hauberk
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(27430, {	-- Justice for the Hyals
-					["provider"] = { "n", 6546 },	-- Tabetha
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 27429,	-- Raze Direhorn Post! [A]
 					["coord"] = { 45.9, 57.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 27429,	-- Raze Direhorn Post!
 				}),
-				q(1269, {	-- Lieutenant Paval Reethe
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
+				q(11151, {	-- Justice for the Hyals
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 11150,	-- Raze Direhorn Post! [A]
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 35,
+				}),
+				q(27263, {	-- Lieutenant Paval Reethe (1/2) [A]
 					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
-					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
-				}),
-				q(27264, {	-- Lieutenant Paval Reethe
-					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
-					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 27263,	-- Lieutenant Paval Reethe
-				}),
-				q(27263, {	-- Lieutenant Paval Reethe (A)
+					["sourceQuest"] = 27249,	-- Inspecting the Ruins [A]
 					["coord"] = { 29.8, 48.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
-					["sourceQuest"] = 27249,	-- Inspecting the Ruins
 				}),
-				q(27260, {	-- Lieutenant Paval Reethe (H)
+				q(27264, {	-- Lieutenant Paval Reethe (2/2) [A]
+					["qg"] = 4944,	-- Captain Garran Vimes
+					["sourceQuest"] = 27263,	-- Lieutenant Paval Reethe (1/2) [A]
+					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(1252, {	-- Lieutenant Paval Reethe (1/2) [A]
+					["providers"] = {
+						{ "o", 21042 },	-- Theramore Guard Badge
+						{ "i", 5950 },	-- Reethe's Badge
+					},
 					["coord"] = { 29.8, 48.2, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(1259, {	-- Lieutenant Paval Reethe (2/2) [A]
+					["qg"] = 4944,	-- Captain Garran Vimes
+					["sourceQuest"] = 1252,	-- Lieutenant Paval Reethe (1/2) [A]
+					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(27260, {	-- Lieutenant Paval Reethe [H]
 					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
+					["coord"] = { 29.8, 48.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(1269, {	-- Lieutenant Paval Reethe [H]
+					["providers"] = {
+						{ "o", 21042 },	-- Theramore Guard Badge
+						{ "i", 5950 },	-- Reethe's Badge
+					},
+					["coord"] = { 29.8, 48.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1952, {	-- Mage's Wand
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 6546 },	-- Tabetha
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 1948,	-- Items of Power
+					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { MAGE },
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(7514)),	-- Icefury Wand
-						un(REMOVED_FROM_GAME, i(11263)),	-- Nether Force Wand
-						un(REMOVED_FROM_GAME, i(7513)),	-- Ragefire Wand
+					["lvl"] = 30,
+					["groups"] = {
+						i(7514, {	-- Icefury Wand
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(11263, {	-- Nether Force Wand
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(7513, {	-- Ragefire Wand
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(1957, {	-- Mana Surges
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 1956,	-- Power in Uldaman
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { MAGE },
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- 0/12 Mana Surge slain
+							["provider"] = { "n", 6550 },	-- Mana Surge
+						}),
+					},
 				}),
 				q(1261, {	-- Marg Speaks
 					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["sourceQuest"] = 1240,	-- The Troll Witchdoctor
+					["coord"] = { 32.2, 27.7, STRANGLETHORN_VALE },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- 0/1 Jeweled Pendant
+							["provider"] = { "i", 5942 },	-- Jeweled Pendant
+							["crs"] = {
+								14236,	-- Lord Angler
+								4401,	-- Muckshell Clacker
+								4403,	-- Muckshell Pincer
+								4405,	-- Muckshell Razorclaw
+								4404,	-- Muckshell Scrabbler
+								4402,	-- Muckshell Snapclaw
+							},
+						}),
+					},
 				}),
 				q(27183, {	-- Marsh Frog Legs
-					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
-					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
+					["qg"] = 4792,	-- "Swamp Eye" Jarl
 					["sourceQuests"] = {
-						27215,	-- The Hermit of Swamplight Manor (A)
-						27182,	-- Witch Hill (H)
+						27215,	-- The Hermit of Swamplight Manor [A]
+						27182,	-- Witch Hill [H]
 					},
-					["g"] = {
-						i(57834),	-- Frog Boots
-						i(57845),	-- Swamp Splints
-						i(131648),	-- Frog Stompers
+					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						i(57834, {	-- Frog Boots
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57845, {	-- Swamp Splints
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131648, {	-- Frog Stompers
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
-				q(11214, {	-- [DEPRECATED]Mission to Mudsprocket
-					["provider"] = { "n", 23951 },	-- Lieutenant Aden
-					["coord"] = { 65.0, 47.0, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+				-- #if AFTER TBC
+				q(1218, {	-- Marsh Frog Legs (TBC+) / Soothing Spices (Classic)
+					["qg"] = 4792,	-- "Swamp Eye" Jarl
+					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- 0/10 Marsh Frog Leg
+							["provider"] = { "i", 33202 },	-- Marsh Frog Leg
+							["cr"] = 23979,	-- Giant Marsh Frog
+						}),
+						i(6807),	-- Frog Leg Stew
+					},
 				}),
+				-- #endif
 				q(27248, {	-- Mission to Mudsprocket
-					["provider"] = { "n", 23951 },	-- Lieutenant Aden
+					["qg"] = 23951,	-- Lieutenant Aden
 					["coord"] = { 65.0, 47.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(11200, {	-- More than Coincidence
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4926 },	-- Krog
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(33272)),	-- Biting Axe
-						i(33268),	-- Bone Dirk NOTE: Item is still available from new version of quest
-						i(33264),	-- Glowing Tourmaline Ring NOTE: Item is still available from new version of quest
-					},
+				q(11214, {	-- Mission to Mudsprocket
+					["qg"] = 23951,	-- Lieutenant Aden
+					["coord"] = { 65.1, 47.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 39,
 				}),
 				q(27294, {	-- More than Coincidence
-					["provider"] = { "n", 4926 },	-- Krog
-					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
+					["qg"] = 4926,	-- Krog
 					["sourceQuest"] = 27259,	-- Suspicious Hoofprint
-					["g"] = {
-						i(57852),	-- Grimtotem Cloak
+					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(57852, {	-- Grimtotem Cloak
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 					},
+				}),
+				q(11200, {	-- More than Coincidence
+					["qg"] = 4926,	-- Krog
+					["sourceQuest"] = 11204,	-- Return to Krog
+					["coord"] = { 36.4, 31.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 33,
+					["groups"] = {
+						objective(1, {	-- 0/7 Blackhoof Armaments
+							["providers"] = {
+								{ "i",  33071 },	-- Blackhoof Armaments
+								{ "o", 186301 },	-- Blackhoof Armaments
+							},
+						}),
+						i(33272, {	-- Biting Axe
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
+						i(33268, {	-- Bone Dirk
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33264, {	-- Glowing Tourmaline Ring
+							["timeline"] = { "added 2.3.0" },
+						}),
+					},
+				}),
+				q(1260, {	-- Morgan Stern
+					["qg"] = 1141,	-- Angus Stern
+					-- #if AFTER WRATH
+					["coord"] = { 51.8, 93.7, STORMWIND_CITY },
+					-- #else
+					["coord"] = { 41.4, 89.2, STORMWIND_CITY },
+					-- #endif
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 33,
 				}),
 				q(1204, {	-- Mudrock Soup and Bugs
-					["provider"] = { "n", 4794 },	-- Morgan Stern
+					["qg"] = 4794,	-- Morgan Stern
+					["sourceQuest"] = 1260,	-- Morgan Stern
+					-- #if AFTER CATA
 					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
+					-- #else
+					["coord"] = { 66.4, 45.4, DUSTWALLOW_MARSH },
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(6607, {	-- Nat Pagle, Angler Extreme
-					["provider"] = { "n", 12919 },	-- Nat Pagle
-					["coord"] = { 58.6, 60.2, DUSTWALLOW_MARSH },
-					["requireSkill"] = FISHING,
-					["g"] = {
-						i(45858)	-- Nat's Lucky Fishing Pole
-					},
-				}),
-				q(13826, {	-- Nat Pagle, Angler Extreme
-					["provider"] = { "n", 12919 },	-- Nat Pagle
-					["coord"] = { 58.6, 60.2, DUSTWALLOW_MARSH },
-					["description"] = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
-					["requireSkill"] = FISHING,
-					["g"] = {
-						i(45858),	-- Nat's Lucky Fishing Pole
+					["lvl"] = lvlsquish(33, 33, 15),
+					["groups"] = {
+						objective(1, {	-- 0/8 Forked Mudrock Tongue
+							["provider"] = { "i", 5883 },	-- Forked Mudrock Tongue
+							["crs"] = {
+								4399,	-- Mudrock Borer
+								4398,	-- Mudrock Burrower
+								4400,	-- Mudrock Snapjaw
+								4397,	-- Mudrock Spikeshell
+								4396,	-- Mudrock Tortoise
+							},
+						}),
 					},
 				}),
 				q(27220, {	-- Nat's Bargain
-					["provider"] = { "n", 12919 },	-- Nat Pagle
-					["coord"] = { 58.6, 60.2, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 12919,	-- Nat Pagle
 					["sourceQuest"] = 27219,	-- Is it Real?
+					["coord"] = { 58.6, 60.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(11209, {	-- Nat's Bargain
+					["qg"] = 12919,	-- Nat Pagle
+					["sourceQuest"] = 11194,	-- Is it Real?
+					["coord"] = { 58.8, 60.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- Fish Paste Tested
+							["provider"] = { "i", 33166 },	-- Pagle's Fish Paste, Extra Strength
+						}),
+						i(19221),	-- Darkmoon Special Reserve
+					},
+				}),
+				q(13826, {	-- Nat Pagle, Angler Extreme
+					["qg"] = 12919,	-- Nat Pagle
+					["coord"] = { 58.6, 60.2, DUSTWALLOW_MARSH },
+					["description"] = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
+					["timeline"] = { "added 3.1.0.9637" },
+					["requireSkill"] = FISHING,
+					["lvl"] = 35,
+					["groups"] = {
+						i(45858, {	-- Nat's Lucky Fishing Pole
+							["timeline"] = { "added 3.1.0.9637" },
+						}),
+					},
+				}),
+				q(6607, {	-- Nat Pagle, Angler Extreme
+					["qg"] = 12919,	-- Nat Pagle
+					["sourceQuests"] = {
+						6609,	-- I Got Nothin' Left!
+						6608,	-- You Too Good.
+					},
+					-- #if AFTER 3.1.0.9637
+					["altQuests"] = { 13826 },	-- Nat Pagle, Angler Extreme
+					-- #endif
+					["coord"] = { 58.6, 60.0, DUSTWALLOW_MARSH },
+					["description"] = "Requires 225 Fishing to start this quest.",
+					["maps"] = { FERALAS, SWAMP_OF_SORROWS, DESOLACE, STRANGLETHORN_VALE },
+					["requireSkill"] = FISHING,
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- 0/1 Feralas Ahi
+							["provider"] = { "i", 16967 },	-- Feralas Ahi
+							["coord"] = { 63.5, 53.6, FERALAS },
+						}),
+						objective(2, {	-- 0/1 Misty Reed Mahi Mahi
+							["provider"] = { "i", 16970 },	-- Misty Reed Mahi Mahi
+							["coord"] = { 94.1, 39.7, SWAMP_OF_SORROWS },
+						}),
+						objective(3, {	-- 0/1 Sar'theris Striker
+							["provider"] = { "i", 16968 },	-- Sar'theris Striker
+							["coords"] = {
+								{ 36.2, 32.9, DESOLACE },
+								{ 26.0, 80.1, DESOLACE },
+							},
+						}),
+						objective(4, {	-- 0/1 Savage Coast Blue Sailfin
+							["provider"] = { "i", 16969 },	-- Savage Coast Blue Sailfin
+							["coord"] = { 26.3, 67.8, STRANGLETHORN_VALE },
+						}),
+						-- #if BEFORE CATA
+						recipe(18248, {	-- Fishing (Artisan)
+							["rank"] = 4,
+						}),
+						-- #endif
+						i(45858, {	-- Nat's Lucky Fishing Pole
+							["timeline"] = { "added 3.1.0.9637" },
+						}),
+					},
 				}),
 				q(27221, {	-- Oh, It's Real
-					["provider"] = { "n", 12919 },	-- Nat Pagle
-					["coord"] = { 58.6, 60.2, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 12919,	-- Nat Pagle
 					["sourceQuest"] = 27220,	-- Nat's Bargain
+					["coord"] = { 58.6, 60.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				q(1166, {	-- Overlord Mok'Morokk's Concern
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
-					["g"] = {
-						i(10702),	-- Enormous Ogre Boots -- NOTE: these are still available
-					},
+				q(11210, {	-- Oh, It's Real
+					["qg"] = 12919,	-- Nat Pagle
+					["sourceQuest"] = 11209,	-- Nat's Bargain
+					["coord"] = { 58.8, 60.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(27424, {	-- Overlord Mok'Morokk's Concern
-					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
+					["qg"] = 4500,	-- Overlord Mok'Morokk
 					["coord"] = { 36.2, 31.3, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(57848),	-- Mok'Morokk's Grog Bottle
-						i(57854),	-- Stonemaul Gloves
-						i(131676),	-- Stonemaul Gauntlets
+					["groups"] = {
+						i(57848, {	-- Mok'Morokk's Grog Bottle
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57854, {	-- Stonemaul Gloves
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131676, {	-- Stonemaul Gauntlets
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
-				q(11152, {	-- Peace at Last
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(33230)),	-- Leggings of the Long Road
-						un(REMOVED_FROM_GAME, i(33243)),	-- Skirmisher's Cover
-						un(REMOVED_FROM_GAME, i(33251)),	-- Steel-banded Hauberk
+				q(1166, {	-- Overlord Mok'Morokk's Concern
+					["qg"] = 4500,	-- Overlord Mok'Morokk
+					["coord"] = { 36.2, 31.4, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 38,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mok'Morokk's Snuff
+							["provider"] = { "i", 5834 },	-- Mok'Morokk's Snuff
+							["coord"] = { 44.4, 66, DUSTWALLOW_MARSH },
+						}),
+						objective(2, {	-- 0/1 Mok'Morokk's Grog
+							["provider"] = { "i", 5835 },	-- Mok'Morokk's Grog
+							["coord"] = { 38.6, 65.4, DUSTWALLOW_MARSH },
+						}),
+						objective(3, {	-- 0/1 Mok'Morokk's Strongbox
+							["provider"] = { "i", 5836 },	-- Mok'Morokk's Strongbox
+							["coord"] = { 36.6, 69.4, DUSTWALLOW_MARSH },
+						}),
+						i(10702),	-- Enormous Ogre Boots
 					},
 				}),
 				q(27291, {	-- Peace at Last
-					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
-					["coord"] = { 68.2, 48.4, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4944,	-- Captain Garran Vimes
 					["sourceQuest"] = 27430,	-- Justice for the Hyals
-					["g"] = {
-						i(33271),	-- Battlecaster's Edge
-						i(57829),	-- Steel-Backed Hauberk
-						i(156976),	-- Staff of Memory
+					["coord"] = { 68.2, 48.4, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(33271, {	-- Battlecaster's Edge
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(57829, {	-- Steel-Backed Hauberk
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(156976, {	-- Staff of Memory
+							["timeline"] = { "added 7.3.5.25716" },
+						}),
+					},
+				}),
+				q(11152, {	-- Peace at Last
+					["qg"] = 4944,	-- Captain Garran Vimes
+					["sourceQuest"] = 11151,	-- Justice for the Hyals
+					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- Wreath Laid at Hyal Monument
+							["providers"] = {
+								{ "i",  33082 },	-- Wreath
+								{ "o", 186322 },	-- Hyal Family Monument
+							},
+							["coord"] = { 63.7, 42.9, DUSTWALLOW_MARSH },
+							["cr"] = 23768,	-- Lynn Hyal
+						}),
+						i(33230, {	-- Leggings of the Long Road
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
+						i(33243, {	-- Skirmisher's Cover
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
+						i(33251, {	-- Steel-banded Hauberk
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(27245, {	-- Prisoners of the Grimtotems (awarded "Prisoners of the Grimtotem" criteria)
-					["provider"] = { "n", 23723 },	-- Sergeant Lukas
-					["coord"] = { 46.5, 22.9, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 23723,	-- Sergeant Lukas
 					["sourceQuest"] = 27242,	-- Raptor Captor
+					["coord"] = { 46.5, 22.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(11145, {	-- Prisoners of the Grimtotems
+					["qg"] = 23723,	-- Sergeant Lukas
+					["sourceQuest"] = 11146,	-- Raptor Captor
+					["coord"] = { 46.7, 23.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 33,
+					["groups"] = {
+						objective(1, {	-- 0/5 Theramore Prisoners Freed
+							["provider"] = { "n", 23720 },	-- Theramore Prisoner
+							["cost"] = { { "i", 33061, 1 } },	-- Grimtotem Key
+							["crs"] = {
+								23592,	-- Grimtotem Breaker
+								23714,	-- Grimtotem Elder
+								23593,	-- Grimtotem Spirit-Shifter
+							},
+						}),
+					},
 				}),
 				q(27240, {	-- Proof of Treachery
-					["provider"] = { "n", 4968 },	-- Lady Jaina Proudmoore
-					["coord"] = { 66.3, 49.1, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4968,	-- Lady Jaina Proudmoore
 					["sourceQuest"] = 27239,	-- Survey Alcaz Island
-				}),
-				q(27211, {	-- Propaganda War
-					["provider"] = { "n", 23566 },	-- Calia Hastings
-					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
+					["coord"] = { 66.3, 49.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 27210,	-- Traitors Among Us
 				}),
-				q(1273, {	-- Questioning Reethe
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4983 },	-- Ogron
-					["sourceQuest"] = 1269,	-- Lieutenant Paval Reethe
+				-- #if AFTER WRATH
+				q(11222, {	-- Proof of Treachery [WRATH+] / Warn Bolvar!
+					["qg"] = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
+					["sourceQuest"] = 11142,	-- Survey Alcaz Island
+					["coord"] = { 66.3, 49.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 33,
+				}),
+				-- #endif
+				q(27211, {	-- Propaganda War
+					["qg"] = 23566,	-- Calia Hastings
+					["sourceQuest"] = 27210,	-- Traitors Among Us
+					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(11128, {	-- Propaganda War
+					["qg"] = 23566,	-- Calia Hastings <SI:7>
+					["sourceQuest"] = 11126,	-- Traitors Among Us
+					["coord"] = { 68.3, 51.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 32,
+					["groups"] = {
+						objective(1, {	-- Deserter Propaganda
+							["provider"] = { "i", 33008 },	-- Deserter Propaganda
+							["coord"] = { 67.9, 58.7, DUSTWALLOW_MARSH },
+						}),
+					},
 				}),
 				q(27261, {	-- Questioning Reethe
-					["provider"] = { "n", 4983 },	-- Ogron
-					["coord"] = { 40.9, 36.6, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
+					["qg"] = 4983,	-- Ogron
 					["sourceQuest"] = 27306,	-- Talk to Ogron
-					["g"] = {
+					["coord"] = { 40.9, 36.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(6797),	-- Eyepoker
+						i(6798),	-- Blasting Hackbut
+					},
+				}),
+				q(1273, {	-- Questioning Reethe
+					["qg"] = 4983,	-- Ogron
+					["sourceQuest"] = 1269,	-- Lieutenant Paval Reethe
+					["coord"] = { 40.8, 36.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+					["groups"] = {
 						i(6797),	-- Eyepoker
 						i(6798),	-- Blasting Hackbut
 					},
 				}),
 				q(27242, {	-- Raptor Captor
-					["provider"] = { "n", 23723 },	-- Sergeant Lukas
+					["qg"] = 23723,	-- Sergeant Lukas
 					["coord"] = { 46.5, 22.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(11150, {	-- [DEPRECATED]Raze Direhorn Post!
-					["u"] = REMOVED_FROM_GAME,
+				q(11146, {	-- Raptor Captor
+					["qg"] = 23723,	-- Sergeant Lukas
+					["coord"] = { 46.7, 23.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 6546 },	-- Tabetha
+					["lvl"] = 33,
+					["groups"] = {
+						objective(1, {	-- 0/6 Raptors Captured
+							["provider"] = { "i", 33069 },	-- Sturdy Rope
+							["crs"] = {
+								4351,	-- Bloodfen Raptor
+								4352,	-- Bloodfen Screecher
+							},
+						}),
+					},
 				}),
-				q(11205, {	-- [DEPRECATED]Raze Direhorn Post!
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 6546 },	-- Tabetha
-				}),
-				q(27429, {	-- Raze Direhorn Post! (A)
-					["provider"] = { "n", 6546 },	-- Tabetha
-					["coord"] = { 45.9, 57.1, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+				q(27429, {	-- Raze Direhorn Post! [A]
+					["qg"] = 6546,	-- Tabetha
 					["sourceQuest"] = 27428,	-- Tabetha's Assistance
+					["coord"] = { 45.9, 57.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				q(27296, {	-- Raze Direhorn Post! (H)
-					["provider"] = { "n", 6546 },	-- Tabetha
-					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
+				q(11150, {	-- Raze Direhorn Post! [A]
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 11149,	-- Tabetha's Assistance
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- North Tent Burned
+							["provider"] = { "i", 33072 },	-- Tabetha's Torch
+							["coord"] = { 46.6, 45.9, DUSTWALLOW_MARSH },
+							["cr"] = 23751,	-- North Tent
+						}),
+						objective(2, {	-- Northeast Tent Burned
+							["provider"] = { "i", 33072 },	-- Tabetha's Torch
+							["coord"] = { 47.3, 46.5, DUSTWALLOW_MARSH },
+							["cr"] = 23752,	-- Northeast Tent
+						}),
+						objective(3, {	-- East Tent Burned
+							["provider"] = { "i", 33072 },	-- Tabetha's Torch
+							["coord"] = { 47.5, 47.6, DUSTWALLOW_MARSH },
+							["cr"] = 23753,	-- East Tent
+						}),
+					},
+				}),
+				q(27296, {	-- Raze Direhorn Post! [H]
+					["qg"] = 6546,	-- Tabetha
 					["sourceQuest"] = 27295,	-- Seek Out Tabetha
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(11205, {	-- Raze Direhorn Post! [H]
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 11203,	-- Seek Out Tabetha
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- North Tent Burned
+							["provider"] = { "i", 33072 },	-- Tabetha's Torch
+							["coord"] = { 46.6, 45.9, DUSTWALLOW_MARSH },
+							["cr"] = 23751,	-- North Tent
+						}),
+						objective(2, {	-- Northeast Tent Burned
+							["provider"] = { "i", 33072 },	-- Tabetha's Torch
+							["coord"] = { 47.3, 46.5, DUSTWALLOW_MARSH },
+							["cr"] = 23752,	-- Northeast Tent
+						}),
+						objective(3, {	-- East Tent Burned
+							["provider"] = { "i", 33072 },	-- Tabetha's Torch
+							["coord"] = { 47.5, 47.6, DUSTWALLOW_MARSH },
+							["cr"] = 23753,	-- East Tent
+						}),
+					},
 				}),
 				q(27237, {	-- Recover the Cargo!
-					["provider"] = { "n", 23569 },	-- Renn McGill
-					["coord"] = { 63.8, 16.9, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 23569,	-- Renn McGill
 					["sourceQuest"] = 27236,	-- Secondhand Diving Gear
-					["g"] = {
-						i(33267),	-- Fleshripper
-						i(33259),	-- Crimson Barbut
-						i(156977),	-- Serrated Gladius
+					["coord"] = { 63.8, 16.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(33267, {	-- Fleshripper
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33259, {	-- Crimson Barbut
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(156977, {	-- Serrated Gladius
+							["timeline"] = { "added 7.3.5.25716" },
+						}),
+					},
+				}),
+				q(11140, {	-- Recover the Cargo!
+					["qg"] = 23569,	-- Renn McGill <SI:7 Salvage Diver>
+					["sourceQuest"] = 11139,	-- Secondhand Diving Gear
+					["coord"] = { 63.7, 17.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 32,
+					["groups"] = {
+						objective(1, {	-- 0/6 Salvaged Strongbox
+							["providers"] = {
+								{ "i", 33041 },	-- Salvaged Strongbox
+								{ "o", 186278 },	-- Burning Wreckage
+								{ "i", 33045 },	-- Renn's Supplies
+								{ "i", 33040 },	-- Repaired Diving Gear
+								{ "i", 33044 },	-- Salvage Kit
+							},
+						}),
+						i(33267, {	-- Fleshripper
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33270, {	-- Mariner's Sword
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
+						i(33259, {	-- Crimson Barbut
+							["timeline"] = { "added 2.3.0" },
+						}),
 					},
 				}),
 				q(27235, {	-- Renn McGill
-					["provider"] = { "n", 5086 },	-- Captain Wymor
-					["coord"] = { 59.7, 41.0, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5086,	-- Captain Wymor
 					["sourceQuest"] = 27234,	-- Defias in Dustwallow?
+					["coord"] = { 59.7, 41.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(11138, {	-- Renn McGill
+					["providers"] = {
+						{ "n", 5086 },	-- Captain Wymor
+						{ "i", 33037 },	-- Defias Orders
+					},
+					["sourceQuest"] = 11137,	-- Defias in Dustwallow?
+					["coord"] = { 59.7, 41.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 32,
 				}),
 				q(1262, {	-- Report to Zor
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
-					["sourceQuest"] = 1261,	-- Marg Speaks
-				}),
-				q(11223, {	-- Return to Jaina
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(33250),	-- Archer's Wristguard NOTE: This is now available from Survey Alcaz Island or Twilight of the Dawn Runner
-						un(REMOVED_FROM_GAME, i(33269)),	-- Bejeweled Dagger
-						un(REMOVED_FROM_GAME, i(33252)),	-- Gleaming Scale Breastplate
+					["providers"] = {
+						{ "n", 4791 },	-- Nazeer Bloodpike
+						{ "i", 5942 },	-- Jeweled Pendant
 					},
+					["sourceQuest"] = 1261,	-- Marg Speaks
+					["coord"] = { 35.2, 30.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(27241, {	-- Return to Jaina
 					["qg"] = 1750,	-- Grand Admiral Jes-Tereth
 					["sourceQuest"] = 27240,	-- Proof of Treachery
 					["coord"] = { 85.6, 32.9, STORMWIND_CITY },
-					["timeline"] = { "added 3.0.2" },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(11204, {	-- Return to Krog
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4943 },	-- Mosarn
+				q(11223, {	-- Return to Jaina
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["sourceQuest"] = 11222,	-- Warn Bolvar! / Proof of Treachery [WRATH+]
+					-- #if AFTER WRATH
+					["coord"] = { 38.6, 44.8, STORMWIND_CITY },
+					-- #else
+					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
+					-- #endif
+					["timeline"] = { "added 2.0.1", "removed 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 33,
+					["groups"] = {
+						i(33269, {	-- Bejeweled Dagger
+							["timeline"] = { "added 2.0.1", "removed 4.0.3.13277" },
+						}),
+						i(33252, {	-- Gleaming Scale Breastplate
+							["timeline"] = { "added 2.0.1", "removed 4.0.3.13277" },
+						}),
+						i(33250, {	-- Archer's Wristguard
+							["timeline"] = { "added 2.0.1" },	-- Moved to "Survey Alcaz Island" with Cata
+						}),
+					},
+				}),
+				q(27292, {	-- Return to Krog
+					["qg"] = 4943,    -- Mosarn
+					["sourceQuest"] = 27258,    -- The Black Shield (5/5) [H]
+					["coord"] = { 54.3, 80.3, THUNDER_BLUFF },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(33259),	-- Crimson Barbut NOTE: This item is now available from Recover the Cargo or the new version of Return to Krog
-						i(33267),	-- Fleshripper NOTE: This item is now available from Recover the Cargo or the new version of Return to Krog
-						un(REMOVED_FROM_GAME, i(33270)),	-- Mariner's Sword
+				}),
+				q(11204, {	-- Return to Krog
+					["qg"] = 4943,	-- Mosarn
+					["sourceQuest"] = 1276,	-- The Black Shield (5/5) [H]
+					["coord"] = { 54.0, 80.8, THUNDER_BLUFF },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 33,
+					["groups"] = {
+						i(33267, {	-- Fleshripper
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33270, {	-- Mariner's Sword
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
+						i(33259, {	-- Crimson Barbut
+							["timeline"] = { "added 2.3.0" },
+						}),
 					},
 				}),
 				q(1953, {	-- Return to the Marsh
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["qgs"] = {
+						5885,	-- Deino <Mage Trainer>
+						5144,	-- Bink <Mage Trainer>
+						5497,	-- Jennea Cannon <Mage Trainer>
+						3048,	-- Ursyn Ghull <Mage Trainer>
+						4568,	-- Anastasia Hartwell <Mage Trainer>
+					},
+					["coords"] = {
+						{ 38.4, 86, ORGRIMMAR },
+						{ 27, 8.2, IRONFORGE },
+						{ 38.6, 79.4, STORMWIND_CITY },
+						{ 25.8, 14.4, THUNDER_BLUFF },
+						{ 85, 10.2, UNDERCITY },
+					},
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { MAGE },
+					["isBreadcrumb"] = true,
+					["lvl"] = 35,
 				}),
 				q(27236, {	-- Secondhand Diving Gear
-					["provider"] = { "n", 23569 },	-- Renn McGill
-					["coord"] = { 63.8, 16.9, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 23569,	-- Renn McGill
 					["sourceQuest"] = 27235,	-- Renn McGill
+					["coord"] = { 63.8, 16.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				q(11207, {	-- Secure the Cargo!
-					["u"] = REMOVED_FROM_GAME,
+				q(11139, {	-- Secondhand Diving Gear
+					["qg"] = 23569,	-- Renn McGill <SI:7 Salvage Diver>
+					["sourceQuest"] = 11138,	-- Renn McGill
+					["coord"] = { 63.7, 17.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 32,
+					["groups"] = {
+						objective(1, {	-- 0/1 Damaged Diving Gear
+							["provider"] = { "i", 33038 },	-- Damaged Diving Gear
+							["coord"] = { 61.68, 18.16, DUSTWALLOW_MARSH },
+						}),
+						objective(2, {	-- 0/1 Tool Kit
+							["provider"] = { "i", 33039 },	-- Tool Kit
+							["coord"] = { 62.9, 18.80, DUSTWALLOW_MARSH },
+						}),
+					},
 				}),
 				q(27348, {	-- Secure the Cargo!
-					["provider"] = { "n", 23797 },	-- Moxie Steelgrille
-					["coord"] = { 53.5, 56.9, DUSTWALLOW_MARSH },
+					["qg"] = 23797,	-- Moxie Steelgrille
 					["sourceQuest"] = 27346,	-- The Zeppelin Crash
+					["coord"] = { 53.5, 56.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(11203, {	-- [DEPRECATED]Seek Out Tabetha
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4926 },	-- Krog
+				q(11207, {	-- Secure the Cargo!
+					["qg"] = 23797,	-- Moxie Steelgrille
+					["coord"] = { 53.6, 56.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- 0/8 Zeppelin Cargo
+							["providers"] = {
+								{ "i",  33163 },	-- Zeppelin Cargo
+								{ "o", 186450 },	-- Zeppelin Cargo
+							},
+						}),
+					},
 				}),
 				q(27295, {	-- Seek Out Tabetha
-					["provider"] = { "n", 4926 },	-- Krog
-					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
+					["qg"] = 4926,	-- Krog
 					["sourceQuests"] = {
 						27294,	-- More Than Coincidence
 						27293,	-- The Grimtotem Plot
 					},
+					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(11203, {	-- Seek Out Tabetha
+					["qg"] = 4926,	-- Krog
+					["sourceQuest"] = 11201,	-- The Grimtotem Plot
+					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
 				}),
 				q(7541, {	-- Service to the Horde
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4047 },	-- Zor Lonetree
+					["qg"] = 4047,	-- Zor Lonetree
+					["sourceQuest"] = 1262,	-- Report to Zor
+					["coord"] = { 39, 38, ORGRIMMAR },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(18585)),	-- Band of Allegiance
-						un(REMOVED_FROM_GAME, i(18586)),	-- Lonetree's Circle
+					["lvl"] = 30,
+					["groups"] = {
+						i(18585, {	-- Band of Allegiance
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(18586, {	-- Lonetree's Circle
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
-				q(27229, {	-- SMASH BROODQUEEN
-					["coord"] = { 37.4, 31.5, DUSTWALLOW_MARSH },
+				q(11186, {	-- Signs of Treachery?
+					["provider"] = { "i", 33115 },	-- Sealed Letter
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["cr"] = 23881,	-- Apothecary Cylla
 					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
+				}),
+				q(27229, {	-- SMASH BROODQUEEN
 					["provider"] = { "o", 205332 },	-- Wanted Poster (Broodqueen)
-				}),
-				q(1218, {	-- Soothing Spices
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
-				}),
-				q(11159, {	-- [DEPRECATED]Spirits of Stonemaul Hold
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 23579 },	-- Brogg
+					["coord"] = { 37.4, 31.5, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(27410, {	-- Spirits of Stonemaul Hold
-					["provider"] = { "n", 23579 },	-- Brogg
-					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
+					["qg"] = 23579,	-- Brogg
 					["sourceQuests"] = {
 						27408,	-- Banner of the Stonemaul
 						27409,	-- The Essence of Enmity
 					},
+					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(1222, {	-- Stinky's Escape
-					["provider"] = { "n", 4880 },	-- "Stinky" Ignatz
-					["coord"] = { 46.9, 17.5, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(1270, {	-- Stinky's Escape
-					["provider"] = { "n", 4880 },	-- "Stinky" Ignatz
-					["coord"] = { 46.8, 17.5, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
-				}),
-				q(27239, {	-- Survey Alcaz Island
-					["provider"] = { "n", 4968 },	-- Lady Jaina Proudmoore
-					["coord"] = { 66.3, 49.0, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 27238,	-- Jaina Must Know
-					["g"] = {
-						i(57851),	-- Swamp Gas Gauntlets
-						i(33250),	-- Archer's Wristguard
-						i(131253),	-- Archer's Chain Bracer
+				q(11159, {	-- Spirits of Stonemaul Hold
+					["qg"] = 23579,	-- Brogg <Stonemaul Survivor>
+					["sourceQuest"] = 11161,	-- The Essence of Enmity
+					["coord"] = { 41.9, 74.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- Stonemaul Spirits laid to rest
+							["provider"] = { "i", 33091 },	-- Energized Totem
+							["cr"] = 23786,	-- Stonemaul Spirit
+						}),
 					},
 				}),
-				q(1268, {	-- Suspicious Hoofprints
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 21015 },	-- Hoofprints
+				-- #if BEFORE TBC
+				q(1218, {	-- Soothing Spices (Classic) / Marsh Frog Legs (TBC+)
+					["qg"] = 4792,	-- "Swamp Eye" Jarl
+					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["cost"] = {{ "i", 3713, 3 }},	-- Soothing Spices
+					["lvl"] = 30,
+					["groups"] = {
+						i(6807),	-- Frog Leg Stew
+					},
 				}),
-				q(27262, {	-- Suspicious Hoofprints (A)
-					["coord"] = { 29.6, 47.6, DUSTWALLOW_MARSH },
+				-- #endif
+				{	-- Stinky's Escape
+					["allianceQuestData"] = q(1222),	-- Stinky's Escape [A]
+					["hordeQuestData"] = q(1270),	-- Stinky's Escape [H]
+					["qg"] = 4880,	-- "Stinky" Ignatz
+					["coord"] = { 46.9, 17.5, DUSTWALLOW_MARSH },
+					["lvl"] = lvlsquish(30, 30, 15),
+					["groups"] = {
+						i(3825),	-- Elixir of Fortitude
+					},
+				},
+				q(27239, {	-- Survey Alcaz Island
+					["qg"] = 4968,	-- Lady Jaina Proudmoore
+					["sourceQuest"] = 27238,	-- Jaina Must Know
+					["coord"] = { 66.3, 49.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 187273 },	-- Suspicious Hoofprint
-					["sourceQuest"] = 27249,	-- Inspecting the Ruins
+					["groups"] = {
+						i(57851, {	-- Swamp Gas Gauntlets
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(33250, {	-- Archer's Wristguard
+							["timeline"] = { "added 2.0.1" },
+						}),
+						i(131253, {	-- Archer's Chain Bracer
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
 				}),
-				q(27259, {	-- Suspicious Hoofprints (H)
-					["coord"] = { 29.6, 47.6, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
+				q(11142, {	-- Survey Alcaz Island
+					["qg"] = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
+					["sourceQuest"] = 11141,	-- Jaina Must Know
+					["coord"] = { 66.3, 49.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 33,
+				}),
+				q(27262, {	-- Suspicious Hoofprints [A]
 					["provider"] = { "o", 187273 },	-- Suspicious Hoofprint
+					["sourceQuest"] = 27249,	-- Inspecting the Ruins [A]
+					["coord"] = { 29.6, 47.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(1284, {	-- Suspicious Hoofprints [A]
+					["providers"] = {
+						{ "o", 21015 },	-- Hoofprints
+						{ "o", 21016 },	-- Hoofprints
+					},
+					["coord"] = { 29.7, 47.7, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(27259, {	-- Suspicious Hoofprints [H]
+					["provider"] = { "o", 187273 },	-- Suspicious Hoofprint
+					["coord"] = { 29.6, 47.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(1268, {	-- Suspicious Hoofprints [H]
+					["providers"] = {
+						{ "o", 21015 },	-- Hoofprints
+						{ "o", 21016 },	-- Hoofprints
+					},
+					["coord"] = { 29.7, 47.7, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(27428, {	-- Tabetha's Assistance
-					["provider"] = { "n", 23568 },	-- Captain Darill
-					["coord"] = { 46.6, 24.6, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 23568,	-- Captain Darill
 					["sourceQuests"] = {
 						27427,	-- Arms of the Grimtotems
 						27426,	-- Confirming the Suspicion
 					},
+					["coord"] = { 46.6, 24.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(11149, {	-- Tabetha's Assistance
+					["qg"] = 23568,	-- Captain Darill
+					["sourceQuest"] = 11148,	-- Arms of the Grimtotems
+					["coord"] = { 46.6, 24.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 35,
 				}),
 				q(11212, {	-- Tabetha's Farm
-					["provider"] = { "n", 4921 },	-- Guard Byron
-					["coord"] = { 66.2, 46.0, DUSTWALLOW_MARSH },
+					["qg"] = 4921,	-- Guard Byron
+					["coord"] = { 66.2, 46.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(11198, {	-- Take Down Tethyr!
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 23905 },	-- Major Mills
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(33228)),	-- Crimson Tunic
-						i(33247),	-- Swift Wind Spaulders (moved to new version of quest)
-						un(REMOVED_FROM_GAME, i(33253)),	-- Golden Helm
-					},
+					["lvl"] = lvlsquish(37, 37, 15),
 				}),
 				q(27222, {	-- Take Down Tethyr!
-					["provider"] = { "n", 23905 },	-- Major Mills
-					["coord"] = { 69.6, 51.8, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 23905,	-- Major Mills
 					["sourceQuest"] = 27221,	-- Oh, It's Real
-					["g"] = {
-						i(57842),	-- Tower of Theramore
-						i(33247),	-- Swift Wind Spaulder
-						i(57849),	-- Seamonster Harpoon
-						i(131659),	-- Swift Wind Shoulders
+					["coord"] = { 69.6, 51.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57842, {	-- Tower of Theramore
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(33247, {	-- Swift Wind Spaulders
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(131659, {	-- Swift Wind Shoulders
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(57849, {	-- Seamonster Harpoon
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+					},
+				}),
+				q(11198, {	-- Take Down Tethyr!
+					["qg"] = 23905,	-- Major Mills
+					["sourceQuest"] = 11210,	-- Oh, It's Real
+					["coord"] = { 69.7, 51.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- Defend Theramore Docks from Tethyr
+							["provider"] = { "n", 23899 },	-- Tethyr
+						}),
+						i(33228, {	-- Crimson Tunic
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
+						i(33253, {	-- Golden Helm
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
+						i(33247, {	-- Swift Wind Spaulders
+							["timeline"] = { "added 2.3.0" },
+						}),
 					},
 				}),
 				q(27306, {	-- Talk to Ogron
-					["provider"] = { "n", 4926 },	-- Krog
+					["qg"] = 4926,	-- Krog
+					["sourceQuest"] = 27260,	-- Lieutenant Paval Reethe [H]
 					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27260,	-- Lieutenant Paval Reethe
 				}),
-				q(1251, {	-- The Black Shield
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 20992 },	-- Black Shield
-				}),
-				q(1321, {	-- The Black Shield
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4926 },	-- Krog
-					["sourceQuest"] = 1251,	-- Black Shield
-				}),
-				q(1322, {	-- The Black Shield
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 5087 },	-- Do'gol
-					["sourceQuest"] = 1321,	-- Black Shield
-				}),
-				q(1323, {	-- The Black Shield
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 5087 },	-- Do'gol
-					["sourceQuest"] = 1322,	-- Black Shield
-				}),
-				q(1276, {	-- The Black Shield
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4926 },	-- Krog
-					["sourceQuest"] = 1323,	-- The Black Shield
-				}),
-				q(27258, {	-- The Black Shield (offshoot)
-					["provider"] = { "n", 4926 },	-- Krog
-					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27261,	-- Questioning Reethe
-				}),
-				q(27252, {	-- The Black Shield (#1, A)
-					["coord"] = { 29.6, 48.5, DUSTWALLOW_MARSH },
+				q(11185, {	-- The Apothecary's Letter
+					["provider"] = { "i", 33114 },	-- Sealed Letter
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 20992 },	-- Black Shield
-					["sourceQuest"] = 27249,	-- Inspecting the Ruins
+					["cr"] = 23881,	-- Apothecary Cylla
+					["lvl"] = 35,
 				}),
-				q(27254, {	-- The Black Shield (#1, H)
+				q(27252, {	-- The Black Shield (1/3) [A]
+					["provider"] = { "o", 20992 },	-- Black Shield
+					["sourceQuest"] = 27249,	-- Inspecting the Ruins [A]
 					["coord"] = { 29.6, 48.5, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 20992 },	-- Black Shield
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				q(27284, {	-- The Black Shield (#2, A)
-					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
+				q(27284, {	-- The Black Shield (2/3) [A]
+					["qg"] = 4944,	-- Captain Garran Vimes
+					["sourceQuest"] = 27252,	-- The Black Shield (1/3) [A]
 					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 27252,	-- The Black Shield (#1)
 				}),
-				q(27255, {	-- The Black Shield (#2, H)
-					["provider"] = { "n", 4926 },	-- Krog
-					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27254,	-- The Black Shield (#1)
-				}),
-				q(27285, {	-- The Black Shield (#3)
-					["provider"] = { "n", 4941 },	-- Caz Twosprocket
+				q(27285, {	-- The Black Shield (3/3) [A]
+					["qg"] = 4941,	-- Caz Twosprocket
+					["sourceQuest"] = 27284,	-- The Black Shield (2/3) [A]
 					["coord"] = { 64.7, 50.3, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 27284,	-- The Black Shield (#2)
 				}),
-				q(27256, {	-- The Black Shield (#3)
-					["provider"] = { "n", 5087 },	-- Do'gol
+				q(1253, {	-- The Black Shield (1/3) [A]
+					["providers"] = {
+						{ "o", 20992 },	-- Black Shield
+						{ "i", 5919 },	-- Blackened Iron Shield
+					},
+					["coord"] = { 29.6, 48.5, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(1319, {	-- The Black Shield (2/3) [A]
+					["providers"] = {
+						{ "n", 4944 },	-- Captain Garran Vimes
+						{ "i", 5919 },	-- Blackened Iron Shield
+					},
+					["sourceQuest"] = 1253,	-- The Black Shield (1/3) [A]
+					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(1320, {	-- The Black Shield (3/3) [A]
+					["qg"] = 4941,	-- Caz Twosprocket
+					["sourceQuest"] = 1319,	-- The Black Shield (2/3) [A]
+					["coord"] = { 64.6, 50.4, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(27254, {	-- The Black Shield (1/5) [H]
+					["provider"] = { "o", 20992 },	-- Black Shield
+					["coord"] = { 29.6, 48.5, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(27255, {	-- The Black Shield (2/5) [H]
+					["qg"] = 4926,	-- Krog
+					["sourceQuest"] = 27254,	-- The Black Shield (1/5) [H]
+					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(27256, {	-- The Black Shield (3/5) [H]
+					["qg"] = 5087,	-- Do'gol
+					["sourceQuest"] = 27255,	-- The Black Shield (2/5) [H]
 					["coord"] = { 36.5, 30.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27255,	-- The Black Shield (#2)
 				}),
-				q(27257, {	-- The Black Shield (#4)
-					["provider"] = { "n", 5087 },	-- Do'gol
+				q(27257, {	-- The Black Shield (4/5) [H]
+					["qg"] = 5087,	-- Do'gol
+					["sourceQuest"] = 27256,	-- The Black Shield (3/5) [H]
 					["coord"] = { 36.5, 30.7, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27256,	-- The Black Shield (#3)
 				}),
-				q(1170, {	-- The Brood of Onyxia
-					["u"] = REMOVED_FROM_GAME,
+				q(27258, {	-- The Black Shield (5/5) [H]
+					["qg"] = 4926,	-- Krog
+					["sourceQuest"] = 27261,	-- Questioning Reethe
+					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4501 },	-- Draz'Zilb
-					["sourceQuest"] = 1169,	-- Identifying the Brood
 				}),
-				q(1171, {	-- The Brood of Onyxia
-					["u"] = REMOVED_FROM_GAME,
+				q(1251, {	-- The Black Shield (1/5) [H]
+					["providers"] = {
+						{ "o", 20992 },	-- Black Shield
+						{ "i", 5919 },	-- Blackened Iron Shield
+					},
+					["coord"] = { 29.6, 48.5, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
-					["sourceQuest"] = 1170,	-- The Brood of Onyxia
+					["lvl"] = 30,
 				}),
-				q(1172, {	-- The Brood of Onyxia
-					["u"] = REMOVED_FROM_GAME,
+				q(1321, {	-- The Black Shield (2/5) [H]
+					["providers"] = {
+						{ "n", 4926 },	-- Krog
+						{ "i", 5919 },	-- Blackened Iron Shield
+					},
+					["sourceQuest"] = 1251,	-- The Black Shield (1/5) [H]
+					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4501 },	-- Draz'Zilb
-					["sourceQuest"] = 1171,	-- The Brood of Onyxia
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(10700)),	-- Encarmine Boots
-						un(REMOVED_FROM_GAME, i(10701)),	-- Boots of Zua'tec
+					["lvl"] = 30,
+				}),
+				q(1322, {	-- The Black Shield (3/5) [H]
+					["qg"] = 5087,	-- Do'gol
+					["sourceQuest"] = 1321,	-- The Black Shield (2/5) [H]
+					["coord"] = { 36.4, 30.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- 0/6 Acidic Venom Sac
+							["provider"] = { "i", 5959 },	-- Acidic Venom Sac
+							["crs"] = {
+								4412,	-- Darkfang Creeper
+								4411,	-- Darkfang Lurker
+								4413,	-- Darkfang Spider
+								4414,	-- Darkfang Venomspitter
+								4415,	-- Giant Darkfang Spider
+							},
+						}),
 					},
 				}),
-				q(27416, {	-- The Brood of Onyxia (#1)
-					["provider"] = { "n", 4501 },	-- Draz'Zilb
-					["coord"] = { 37.1, 33.1, DUSTWALLOW_MARSH },
+				q(1323, {	-- The Black Shield (4/5) [H]
+					["qg"] = 5087,	-- Do'gol
+					["sourceQuest"] = 1322,	-- The Black Shield (3/5) [H]
+					["coord"] = { 36.4, 30.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(1276, {	-- The Black Shield (5/5) [H]
+					["providers"] = {
+						{ "n", 4926 },	-- Krog
+						{ "i", 5919 },	-- Blackened Iron Shield
+					},
+					["sourceQuest"] = 1323,	-- The Black Shield (4/5) [H]
+					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(27416, {	-- The Brood of Onyxia (1/3)
+					["qg"] = 4501,	-- Draz'Zilb
 					["sourceQuest"] = 27414,	-- Identifying the Brood
+					["coord"] = { 37.1, 33.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
-				q(27417, {	-- The Brood of Onyxia (#2)
-					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
+				q(27417, {	-- The Brood of Onyxia (2/3)
+					["qg"] = 4500,	-- Overlord Mok'Morokk
+					["sourceQuest"] = 27416,	-- The Brood of Onyxia (1/3)
 					["coord"] = { 36.2, 31.4, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27416,	-- The Brood of Onyxia (#1)
 				}),
-				q(27415, {	-- The Brood of Onyxia (#3)
-					["provider"] = { "n", 4501 },	-- Draz'Zilb
+				q(27415, {	-- The Brood of Onyxia (3/3)
+					["qg"] = 4501,	-- Draz'Zilb
+					["sourceQuest"] = 27417,	-- The Brood of Onyxia (2/3)
 					["coord"] = { 37.1, 33.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27417,	-- The Brood of Onyxia (#2)
-					["g"] = {
-						i(57836),	-- Encarmine Spaulders
-						i(57841),	-- Wyrmbog Amulet
-						i(131674),	-- Encarmine Pauldrons
+					["groups"] = {
+						i(57836, {	-- Encarmine Spaulders
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57841, {	-- Wyrmbog Amulet
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131674, {	-- Encarmine Pauldrons
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
-				q(27287, {	-- The Deserters (#1)
-					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
-					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+				q(1170, {	-- The Brood of Onyxia (1/3)
+					["qg"] = 4501,	-- Draz'Zilb
+					["sourceQuest"] = 1169,	-- Identifying the Brood
+					["coord"] = { 37, 33, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 38,
+				}),
+				q(1171, {	-- The Brood of Onyxia (2/3)
+					["qg"] = 4500,	-- Overlord Mok'Morokk
+					["sourceQuest"] = 1170,	-- The Brood of Onyxia (1/3)
+					["coord"] = { 36.2, 31.4, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 38,
+				}),
+				q(1172, {	-- The Brood of Onyxia (3/3)
+					["qg"] = 4501,	-- Draz'Zilb
+					["sourceQuest"] = 1171,	-- The Brood of Onyxia (2/3)
+					["coord"] = { 37, 33, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 38,
+					["groups"] = {
+						objective(1, {	-- 0/5 Egg of Onyxia destroyed
+							["provider"] = { "o", 20359 },	-- Egg of Onyxia
+						}),
+						i(10700, {	-- Encarmine Boots
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(10701, {	-- Boots of Zua'tec
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(27287, {	-- The Deserters (1/2)
+					["qg"] = 4944,	-- Captain Garran Vimes
 					["sourceQuest"] = 27286,	-- Daelin's Men
+					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				q(27288, {	-- The Deserters (#2)
-					["provider"] = { "n", 5089 },	-- Balos Jacken
+				q(27288, {	-- The Deserters (2/2)
+					["qg"] = 5089,	-- Balos Jacken
+					["sourceQuest"] = 27287,	-- The Deserters (1/2)
 					["coord"] = { 36.1, 54.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 27287,	-- The Deserters
 				}),
-				q(11134, {	-- The End of the Deserters
-					["u"] = REMOVED_FROM_GAME,
+				q(1286, {	-- The Deserters (1/2)
+					["qg"] = 4944,	-- Captain Garran Vimes
+					["sourceQuest"] = 1285,	-- Daelin's Men
+					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(33249),	-- Boots of the Skirmisher NOTE: This is still available from the new verison of the quest
-						un(REMOVED_FROM_GAME, i(33232)),	-- Journeyman's Cowl
-						un(REMOVED_FROM_GAME, i(33274)),	-- Mercenary's Crossbow
-					},
+					["lvl"] = 30,
+				}),
+				q(1287, {	-- The Deserters (2/2)
+					["qg"] = 5089,	-- Balos Jacken
+					["sourceQuest"] = 1286,	-- The Deserters (1/2)
+					["coord"] = { 36, 54.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(27213, {	-- The End of the Deserters
-					["provider"] = { "n", 23566 },	-- Calia Hastings
-					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 23566,	-- Calia Hastings
 					["sourceQuest"] = 27212,	-- Discrediting the Deserters
-					["g"] = {
-						i(57832),	-- Journeyman's Helm
-						i(33249),	-- Boots of the Skirmisher
-						i(57853),	-- Proudmoore Cloak
-						i(131657),	-- Journeyman's Headguard
-						i(131658),	-- Treads of the Skirmisher
+					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57832, {	-- Journeyman's Helm
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131657, {	-- Journeyman's Headguard
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(57853, {	-- Proudmoore Cloak
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(33249, {	-- Boots of the Skirmisher
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(131658, {	-- Treads of the Skirmisher
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
-				q(11161, {	-- [DEPRECATED]The Essence of Enmity
-					["u"] = REMOVED_FROM_GAME,
+				q(11134, {	-- The End of the Deserters
+					["qg"] = 23566,	-- Calia Hastings <SI:7>
+					["sourceQuest"] = 11133,	-- Discrediting the Deserters
+					["coord"] = { 68.3, 51.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 23579 },	-- Brogg
+					["lvl"] = 32,
+					["groups"] = {
+						objective(1, {	-- Gavis Greyshield Captured
+							["provider"] = { "n", 23941 },	-- Gavis Greyshield
+							["coord"] = { 76.4, 56.8, DUSTWALLOW_MARSH },
+						}),
+						i(33274, {	-- Mercenary's Crossbow
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
+						i(33232, {	-- Journeyman's Cowl
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
+						i(33249, {	-- Boots of the Skirmisher
+							["timeline"] = { "added 2.3.0" },
+						}),
+					},
 				}),
 				q(27409, {	-- The Essence of Enmity
-					["provider"] = { "n", 23579 },	-- Brogg
-					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
+					["qg"] = 23579,	-- Brogg
 					["sourceQuest"] = 27407,	-- Bloodfen Feathers
+					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+				}),
+				q(11161, {	-- The Essence of Enmity
+					["qg"] = 23579,	-- Brogg <Stonemaul Survivor>
+					["sourceQuest"] = 11158,	-- Bloodfen Feathers
+					["coord"] = { 41.9, 74.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- 0/10 Black Dragonkin Essence
+							["providers"] = {
+								{ "i", 33087 },	-- Black Dragonkin Essence
+								{ "i", 33088 },	-- Brogg's Totem
+							},
+							["crs"] = {
+								4331,	-- Firemane Ash Tail
+								4329,	-- Firemane Scout
+								4328,	-- Firemane Scalebane
+							},
+						}),
+					},
 				}),
 				q(1955, {	-- The Exorcism
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 1954,	-- The Infernal Orb
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { MAGE },
-				}),
-				q(11201, {	-- [DEPRECATED]The Grimtotem Plot
-					["provider"] = { "n", 4926 },	-- Krog
-					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- 0/1 Demon of the Orb slain
+							["provider"] = { "n", 6549 },	-- Demon of the Orb
+						}),
+					},
 				}),
 				q(27293, {	-- The Grimtotem Plot
-					["provider"] = { "n", 4926 },	-- Krog
-					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
+					["qg"] = 4926,	-- Krog
 					["sourceQuest"] = 27292,	-- Return to Krog
+					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
 				}),
-				q(11169, {	-- [DEPRECATED]The Grimtotem Weapon
-					["provider"] = { "n", 23601 },	-- Apprentice Garion
-					["coord"] = { 46.0, 57.2, DUSTWALLOW_MARSH },
-					["u"] = REMOVED_FROM_GAME,
+				q(11201, {	-- The Grimtotem Plot
+					["qg"] = 4926,	-- Krog
+					["sourceQuest"] = 11204,	-- Return to Krog
+					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 33,
+					["groups"] = {
+						objective(1, {	-- 0/1 Grimtotem Battle Plan
+							["provider"] = { "i", 33051 },	-- Grimtotem Battle Plan
+							["cost"] = {{ "i", 33050, 4 }},	-- Grimtotem Note
+							["cr"] = 23714,	-- Grimtotem Elder
+						}),
+					},
 				}),
 				q(27336, {	-- The Grimtotem Weapon
-					["provider"] = { "n", 23601 },	-- Apprentice Garion
+					["qg"] = 23601,	-- Apprentice Garion
 					["coord"] = { 46.0, 57.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+				}),
+				q(11169, {	-- The Grimtotem Weapon
+					["qg"] = 23601,	-- Apprentice Garion <Tabetha's Apprentice>
+					["coord"] = { 46.0, 57.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- Totem Tests Performed (10)
+							["provider"] = { "i", 33101 },	-- Captured Totem
+							["cr"] = 23811,	-- Captured Totem
+						}),
+					},
 				}),
 				q(27215, {	-- The Hermit of Swamplight Manor
-					["provider"] = { "n", 23835 },	-- Sergeant Amelyn
-					["coord"] = { 68.3, 51.9, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 23835,	-- Sergeant Amelyn
 					["sourceQuest"] = 27213,	-- The End of the Deserters
+					["coord"] = { 68.3, 51.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(11225, {	-- The Hermit of Witch Hill
-					["provider"] = { "n", 4501 },	-- Draz'Zilb
-					["coord"] = { 37.1, 33.0, DUSTWALLOW_MARSH },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+				q(11177, {	-- The Hermit of Swamplight Manor
+					["qg"] = 23835,	-- Sergeant Amelyn
+					["sourceQuest"] = 11134,	-- The End of the Deserters
+					["coord"] = { 68.3, 51.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 30,
 				}),
 				q(27182, {	-- The Hermit of Witch Hill
-					["provider"] = { "n", 4501 },	-- Draz'Zilb
+					["qg"] = 4501,	-- Draz'Zilb
 					["coord"] = { 37.1, 33.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,	-- for "Marsh Frog Legs"
 				}),
-				q(1954, {	-- The Infernal Orb
+				q(11225, {	-- The Hermit of Witch Hill
+					["qg"] = 4501,	-- Draz'Zilb
+					["coord"] = { 37.1, 33.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["classes"] = { MAGE },
+					["isBreadcrumb"] = true,
+					["lvl"] = 30,
 				}),
-				q(1238, {	-- The Lost Report
-					["coord"] = { 55.4, 25.9, DUSTWALLOW_MARSH },
-					["provider"] = { "o", 20985 },	-- Loose Dirt
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+				q(1954, {	-- The Infernal Orb
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 1953,	-- Return to the Marsh
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DESOLACE },
+					["classes"] = { MAGE },
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- 0/1 Infernal Orb
+							["provider"] = { "i", 7291 },	-- Infernal Orb
+							["coord"] = { 55.0, 77.8, DESOLACE },
+							["cr"] = 4668,	-- Burning Blade Summoner
+						}),
+					},
 				}),
 				q(27244, {	-- The Lost Report
-					["coord"] = { 55.4, 25.9, DUSTWALLOW_MARSH },
 					["provider"] = { "o", 20985 },	-- Loose Dirt
+					["coord"] = { 55.4, 25.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+				}),
+				q(1238, {	-- The Lost Report
+					["providers"] = {
+						{ "o", 20985 },	-- Loose Dirt
+						{ "i", 5917 },	-- Spy's Report
+					},
+					["coord"] = { 55.4, 26, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1265, {	-- The Missing Diplomat (14/17)
 					["qg"] = 4964,	-- Commander Samaul
@@ -1244,120 +2675,245 @@ root("Zones", m(KALIMDOR, {
 					},
 				}),
 				q(27246, {	-- The Orc Report
-					["coord"] = { 55.4, 25.9, DUSTWALLOW_MARSH },
 					["provider"] = { "o", 20985 },	-- Loose Dirt
+					["coord"] = { 55.4, 25.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(11173, {	-- [DEPRECATED]The Reagent Thief
-					["provider"] = { "n", 23601 },	-- Apprentice Garion
-					["coord"] = { 46.0, 57.2, DUSTWALLOW_MARSH },
-					["u"] = REMOVED_FROM_GAME,
+				q(1219, {	-- The Orc Report
+					["providers"] = {
+						{ "o", 20985 },	-- Loose Dirt
+						{ "i", 5917 },	-- Spy's Report
+					},
+					["coord"] = { 55.4, 26, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(27339, {	-- The Reagent Thief
-					["provider"] = { "n", 23601 },	-- Apprentice Garion
+					["qg"] = 23601,	-- Apprentice Garion
 					["coord"] = { 46.0, 57.2, DUSTWALLOW_MARSH },
-					["g"] = {
-						i(33260),	-- Spellbound Cloak
-						i(33273),	-- Seasoned Marshwood Bow
-						i(33244),	-- The Wanderer's Cover
-						i(131663),	-- The Explorer's Coif
+					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						i(33273, {	-- Seasoned Marshwood Bow
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33260, {	-- Spellbound Cloak
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33244, {	-- The Wanderer's Cover
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(131663, {	-- The Explorer's Coif
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
+				q(11173, {	-- The Reagent Thief
+					["qg"] = 23601,	-- Apprentice Garion <Tabetha's Apprentice>
+					["coord"] = { 46.0, 57.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- 0/6 Marsh Venom
+							["provider"] = { "i", 33103 },	-- Marsh Venom
+							["crs"] = {
+								4412,	-- Darkfang Creeper
+								4348,	-- Noxious Shredder
+							},
+						}),
+						i(33273, {	-- Seasoned Marshwood Bow
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33260, {	-- Spellbound Cloak
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33244, {	-- The Wanderer's Cover
+							["timeline"] = { "added 2.3.0" },
+						}),
 					},
 				}),
 				q(1239, {	-- The Severed Head
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 20985 },	-- Loose Dirt
+					["providers"] = {
+						{ "o", 20985 },	-- Loose Dirt
+						{ "i", 5918 },	-- Defiant Orc Head
+					},
 					["sourceQuest"] = 1238,	-- The Lost Report
+					["coord"] = { 55.4, 26, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1202, {	-- The Theramore Docks
-					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
+					["qg"] = 4791,	-- Nazeer Bloodpike
+					["sourceQuest"] = 1201,	-- Theramore Spies
 					["coord"] = { 35.2, 30.6, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 1201,	-- Theramore Spies
+					["lvl"] = lvlsquish(30, 30, 15),
+					["groups"] = {
+						objective(1, {	-- 0/1 Captain's Documents
+							["provider"] = { "i", 5882 },	-- Captain's Documents
+							["coord"] = { 71.5, 51.1, DUSTWALLOW_MARSH },
+						}),
+					},
 				}),
 				q(1240, {	-- The Troll Witchdoctor
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
+					["providers"] = {
+						{ "n", 4791 },	-- Nazeer Bloodpike
+						{ "i", 5918 },	-- Defiant Orc Head
+					},
 					["sourceQuest"] = 1239,	-- The Severed Head
-				}),
-				q(11181, {	-- The Witch's Bane
-					["u"] = REMOVED_FROM_GAME,
+					["coord"] = { 35.2, 30.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 23843 },	-- Mordant Grimsby
+					["lvl"] = 30,
 				}),
 				q(27189, {	-- The Witch's Bane
-					["provider"] = { "n", 23843 },	-- Mordant Grimsby
-					["coord"] = { 55.5, 26.1, DUSTWALLOW_MARSH },
+					["qg"] = 23843,	-- Mordant Grimsby
 					["sourceQuest"] = 27188,	-- What's Haunting Witch Hill?
+					["coord"] = { 55.5, 26.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(11172, {	-- [DEPRECATED]The Zeppelin Crash
-					["provider"] = { "n", 23600 },	-- Apprentice Morlann
-					["coord"] = { 46.0, 57.4, DUSTWALLOW_MARSH },
-					["u"] = REMOVED_FROM_GAME,
+				q(11181, {	-- The Witch's Bane
+					["qg"] = 23843,	-- Mordant Grimsby
+					["sourceQuest"] = 11180,	-- What's Haunting Witch Hill?
+					["coord"] = { 55.6, 26.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- 0/9 Witchbane
+							["providers"] = {
+								{ "i",  33112 },	-- Witchbane
+								{ "o", 186423 },	-- Witchbane
+							},
+						}),
+					},
 				}),
 				q(27346, {	-- The Zeppelin Crash
-					["provider"] = { "n", 23600 },	-- Apprentice Morlann
+					["qg"] = 23600,	-- Apprentice Morlann
 					["coord"] = { 46.0, 57.4, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["isBreadcrumb"] = true,
 				}),
-				q(27251, {	-- They Call Him Smiling Jim
-					["provider"] = { "n", 4921 },	-- Guard Byron
-					["coord"] = { 66.0, 46.0, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+				q(11172, {	-- The Zeppelin Crash
+					["qg"] = 23600,	-- Apprentice Morlann <Tabetha's Apprentice>
+					["coord"] = { 46.1, 57.4, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
 					["isBreadcrumb"] = true,
-				}),
-				q(27216, {	-- This Old Lighthouse
-					["provider"] = { "n", 23835 },	-- Sergeant Amelyn
-					["coord"] = { 68.3, 51.9, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 35,
 				}),
 				q(1201, {	-- Theramore Spies
-					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
+					["qg"] = 4791,	-- Nazeer Bloodpike
 					["coord"] = { 35.2, 30.6, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(30, 30, 15),
+					["groups"] = {
+						objective(1, {	-- 0/9 Theramore Infiltrator slain
+							["provider"] = { "n", 4834 },	-- Theramore Infiltrator
+						}),
+					},
 				}),
-				q(27217, {	-- Thresher Oil
-					["provider"] = { "n", 23892 },	-- Babs Fizzletorque
-					["coord"] = { 72.1, 47.1, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 27216,	-- This Old Lighthouse
-				}),
-				q(25479, {	-- To New Thalanaar
-					["provider"] = { "n", 40345 },	-- Thyssiana
-					["coord"] = { 41.8, 73.8, DUSTWALLOW_MARSH },
+				q(27251, {	-- They Call Him Smiling Jim
+					["qg"] = 4921,	-- Guard Byron
+					["coord"] = { 66.0, 46.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+				}),
+				q(1282, {	-- They Call Him Smiling Jim
+					["qg"] = 4921,	-- Guard Byron
+					["coord"] = { 66, 46, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 30,
+				}),
+				q(27216, {	-- This Old Lighthouse
+					["qg"] = 23835,	-- Sergeant Amelyn
+					["coord"] = { 68.3, 51.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(11191, {	-- This Old Lighthouse
+					["qg"] = 23835,	-- Sergeant Amelyn
+					["coord"] = { 68.3, 51.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(27217, {	-- Thresher Oil
+					["qg"] = 23892,	-- Babs Fizzletorque
+					["sourceQuest"] = 27216,	-- This Old Lighthouse
+					["coord"] = { 72.1, 47.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(11192, {	-- Thresher Oil
+					["qg"] = 23892,	-- Babs Fizzletorque
+					["sourceQuest"] = 11191,	-- This Old Lighthouse
+					["coord"] = { 72.1, 47.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- 0/4 Thresher Oil
+							["provider"] = { "i", 33126 },	-- Thresher Oil
+							["cr"] = 4388,	-- Young Murk Thresher
+						}),
+					},
+				}),
+				q(25479, {	-- To New Thalanaar
+					["qg"] = 40345,	-- Thyssiana
 					["altQuests"] = {
 						28503,	-- Hero's Call: Thousand Needles!
 						-- 25479,	-- To New Thalanaar
 						25481,	-- To New Thalanaar
 					},
+					["coord"] = { 41.8, 73.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(25478, {	-- To the Summit
-					["provider"] = { "n", 40344 },	-- Nyse
+					["qg"] = 40344,	-- Nyse
+					["sourceQuest"] = 28504,	-- Warchief's Command: Thousand Needles!
 					["coord"] = { 41.8, 73.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,	-- for "The Grimtotem are Coming"
-					["sourceQuest"] = 28504,	-- Warchief's Command: Thousand Needles!
 				}),
 				q(27210, {	-- Traitors Among Us
-					["provider"] = { "n", 23566 },	-- Calia Hastings
-					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 23566,	-- Calia Hastings
 					["sourceQuests"] = {
 						28552,	-- Hero's Call: Dustwallow Marsh
 						26702,	-- Flight to Theramore
 					},
+					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				q(6624, {	-- Triage (A)
+				q(11126, {	-- Traitors Among Us
+					["qg"] = 23566,	-- Calia Hastings <SI:7>
+					["coord"] = { 68.3, 51.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 32,
+					["groups"] = {
+						objective(1, {	-- 0/5 Deserter Agitator Exposed
+							["provider"] = { "n", 23602 },	-- Deserter Agitator
+						}),
+					},
+				}),
+				q(6624, {	-- Triage [A]
 					["qg"] = 12939,	-- Doctor Gustaf VanHowzen
 					["sourceQuest"] = 6625,	-- Alliance Trauma
 					["coord"] = { 67.7, 48.9, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER BFA
+					["description"] = "Needs a minimum of 225 skill in Tailoring.",
 					["requireSkill"] = TAILORING,
 					-- #else
+					["description"] = "Needs a minimum of 225 skill in First Aid.",
 					["requireSkill"] = FIRST_AID,
 					-- #endif
 					["lvl"] = lvlsquish(35, 15, 35),
@@ -1379,82 +2935,194 @@ root("Zones", m(KALIMDOR, {
 					},
 				}),
 				q(9437, {	-- Twilight of the Dawn Runner
-					["provider"] = { "n", 17095 },	-- Balandar Brightstar
-					["coord"] = { 35.8, 31.7, DUSTWALLOW_MARSH },
+					["qg"] = 17095,	-- Balandar Brightstar
+					["coord"] = { 35.9, 31.7, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0" },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(33250),	-- Archer's Wristguard
-						i(57851),	-- Swamp Gas Gauntlets
-						i(131253),	-- Archer's Chain Bracer
-						un(REMOVED_FROM_GAME, i(33269)),	-- Bejeweled Dagger
-						un(REMOVED_FROM_GAME, i(33252)),	-- Gleaming Scale Breastplate
+					["lvl"] = lvlsquish(33, 33, 15),
+					["groups"] = {
+						objective(1, {	-- Rescue Ithania from North Point Tower
+							["qg"] = 17119,	-- Ithania
+							["coord"] = { 46.6, 24.5, DUSTWALLOW_MARSH },
+						}),
+						objective(2, {	-- 0/1 Dawn Runner Cargo
+							["provider"] = { "i", 23657 },	-- Dawn Runner Cargo
+							["coord"] = { 46.6, 24.3, DUSTWALLOW_MARSH },
+						}),
+						i(33269, {	-- Bejeweled Dagger
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
+						i(33252, {	-- Gleaming Scale Breastplate
+							["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+						}),
+						i(33250, {	-- Archer's Wristguard
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(57851, {	-- Swamp Gas Gauntlets
+							["timeline"] = { "added 4.0.3.13287" },
+						}),
+						i(131253, {	-- Archer's Chain Bracer
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
-				}),
-				q(11147, {	-- [DEPRECATED]Unleash the Raptors
-					["provider"] = { "n", 23723 },	-- Sergeant Lukas
-					["coord"] = { 46.5, 22.9, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27243, {	-- Unleash the Raptors
-					["provider"] = { "n", 23723 },	-- Sergeant Lukas
-					["coord"] = { 46.5, 22.9, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 23723,	-- Sergeant Lukas
 					["sourceQuest"] = 27242,	-- Raptor Captor
-					["g"] = {
-						i(33266),	-- Book of the Adept
-						i(33248),	-- Crested Shoulderguard
-						i(33265),	-- Pendant of Ferocity
-						i(131662),	-- Crested Chain Epaulets
+					["coord"] = { 46.5, 22.9, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(33266, {	-- Book of the Adept
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33248, {	-- Crested Shoulderpads
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33265, {	-- Pendant of Ferocity
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(131662, {	-- Crested Chain Epaulets
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
-				q(11184, {	-- [DEPRECATED]WANTED: Goreclaw the Ravenous
-					["provider"] = { "o", 186426 },	-- Wanted Poster (Goreclaw)
-					["coord"] = { 41.7, 73.1, DUSTWALLOW_MARSH },
-					["u"] = REMOVED_FROM_GAME,
+				q(11147, {	-- Unleash the Raptors
+					["qg"] = 23723,	-- Sergeant Lukas
+					["sourceQuest"] = 11146,	-- Raptor Captor
+					["coord"] = { 46.7, 23.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 33,
+					["groups"] = {
+						objective(1, {	-- Raptors Released
+							["provider"] = { "i", 33070 },	-- Raptor Bait
+							["coord"] = { 41, 11, DUSTWALLOW_MARSH },
+						}),
+						i(33266, {	-- Book of the Adept
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33248, {	-- Crested Shoulderpads
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33265, {	-- Pendant of Ferocity
+							["timeline"] = { "added 2.3.0" },
+						}),
+					},
 				}),
 				q(27412, {	-- WANTED: Goreclaw the Ravenous
 					["provider"] = { "o", 186426 },	-- Wanted Poster (Goreclaw)
 					["coord"] = { 41.7, 73.1, DUSTWALLOW_MARSH },
-					["g"] = {
-						i(33258),	-- Protective Engineer's Leggings
-						i(33263),	-- Raptor Eye Ring
-						i(33242),	-- Raptorhide Legguards
-						i(131671),	-- Raptorhide Chain Leggings
+					["timeline"] = { "added 4.0.3.13277" },
+					["groups"] = {
+						i(33258, {	-- Protective Engineer's Leggings
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(131671, {	-- Raptorhide Chain Leggings
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(33242, {	-- Raptorhide Legguards
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33263, {	-- Raptor Eye Ring
+							["timeline"] = { "added 2.3.0" },
+						}),
 					},
 				}),
-				q(11180, {	-- What's Haunting Witch Hill?
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 23843 },	-- Mordant Grimsby
-					["coord"] = { 55.5, 26.1, DUSTWALLOW_MARSH },
+				q(11184, {	-- WANTED: Goreclaw the Ravenous
+					["provider"] = { "o", 186426 },	-- Wanted Poster
+					["coord"] = { 41.8, 73.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["lvl"] = 35,
+					["groups"] = {
+						objective(1, {	-- Goreclaw the Ravenous slain
+							["provider"] = { "n", 23873 },	-- Goreclaw the Ravenous
+							["coord"] = { 32.2, 65.7, DUSTWALLOW_MARSH },
+						}),
+						i(33258, {	-- Protective Engineer's Leggings
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33242, {	-- Raptorhide Legguards
+							["timeline"] = { "added 2.3.0" },
+						}),
+						i(33263, {	-- Raptor Eye Ring
+							["timeline"] = { "added 2.3.0" },
+						}),
+					},
 				}),
+				-- #if BEFORE WRATH
+				q(11222, {	-- Warn Bolvar! / Proof of Treachery [WRATH+]
+					["qg"] = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
+					["sourceQuest"] = 11142,	-- Survey Alcaz Island
+					["coord"] = { 66.3, 49.0, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 33,
+				}),
+				-- #endif
 				q(27188, {	-- What's Haunting Witch Hill?
-					["provider"] = { "n", 23843 },	-- Mordant Grimsby
+					["qg"] = 23843,	-- Mordant Grimsby
 					["coord"] = { 55.5, 26.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.0.3.13277" },
+				}),
+				q(11180, {	-- What's Haunting Witch Hill?
+					["qg"] = 23843,	-- Mordant Grimsby
+					["coord"] = { 55.6, 26.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- Information Gathered
+							["provider"] = { "n", 23861 },	-- Restless Apparition
+						}),
+					},
 				}),
 			}),
 			n(RARES, {
 				n(50784, {	-- Anith
 					["coord"] = { 32.6, 30.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 5.2.0.16650" },
 				}),
 				n(50735, {	-- Blinkeye the Rattler
 					["coord"] = { 51.6, 16.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 5.1.0.16309" },
 				}),
-				n(4339,   {	-- Brimgore
+				n(4339, {	-- Brimgore
+					-- #if AFTER CATA
 					["coord"] = { 50.2, 75.8, DUSTWALLOW_MARSH },
+					-- #else
+					["coords"] = {
+						{ 41.2, 75.2, DUSTWALLOW_MARSH },
+						{ 43.6, 77.4, DUSTWALLOW_MARSH },
+						{ 45.2, 81.8, DUSTWALLOW_MARSH },
+					},
+					-- #endif
 				}),
 				n(14230, {	-- Burgle Eye
+					-- #if AFTER CATA
 					["coords"] = {
 						{ 57.8, 16.2, DUSTWALLOW_MARSH },
 						{ 59.0, 8.4, DUSTWALLOW_MARSH },
 						{ 62.8, 7.8, DUSTWALLOW_MARSH },
 					},
+					-- #else
+					["coords"] = {
+						{ 63.0, 7.2, DUSTWALLOW_MARSH },
+						{ 59.6, 10.6, DUSTWALLOW_MARSH },
+						{ 57.6, 17.6, DUSTWALLOW_MARSH },
+						{ 62.8, 18.4, DUSTWALLOW_MARSH },
+						{ 64.4, 28.6, DUSTWALLOW_MARSH },
+					},
+					-- #endif
 				}),
-				n(4380,   {	-- Darkmist Widow
+				n(4380, {	-- Darkmist Widow
+					-- #if AFTER CATA
 					["coord"] = { 33.6, 22.8, DUSTWALLOW_MARSH },
+					-- #else
+					["coord"] = { 31.0, 20.6, DUSTWALLOW_MARSH },
+					-- #endif
 				}),
 				n(14232, {	-- Dart
+					-- #if AFTER CATA
 					["coords"] = {
 						{ 48.2, 14.2, DUSTWALLOW_MARSH },
 						{ 47.4, 16.2, DUSTWALLOW_MARSH },
@@ -1463,68 +3131,115 @@ root("Zones", m(KALIMDOR, {
 						{ 49.0, 18.4, DUSTWALLOW_MARSH },
 						{ 49.0, 17.2, DUSTWALLOW_MARSH },
 					},
+					-- #else
+					["coord"] = { 47.6, 18.6, DUSTWALLOW_MARSH },
+					-- #endif
 				}),
 				o(202080, {	-- Dart's Nest
-					["model"] = 199226,
-					["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",
 					["coords"] = {
 						{ 47.9, 19.0, DUSTWALLOW_MARSH },
 						{ 49.1, 17.5, DUSTWALLOW_MARSH },
 						{ 48.0, 14.5, DUSTWALLOW_MARSH },
 						{ 46.5, 17.2, DUSTWALLOW_MARSH },
 					},
-					["g"] = {
-						i(48112),	-- Darting Hatchling
+					["timeline"] = { "added 3.3.0.10958" },
+					["groups"] = {
+						i(48112, {	-- Darting Hatchling (PET!)
+							["timeline"] = { "added 3.2.0.10072" },
+						}),
 					},
 				}),
+				-- #if AFTER 7.1.0.22731
 				n(15552, {	-- Dr. Weavil
 					["coord"] = { 77.6, 17.2, DUSTWALLOW_MARSH },
-					["lvl"] = 110,
-					["g"] = {
-						i(142265),	-- Big Red Raygun (TOY!)
+					["groups"] = {
+						i(142265, {	-- Big Red Raygun (TOY!)
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
+						i(142262, {	-- Electrified Key
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
 					},
 				}),
+				-- #endif
 				n(14231, {	-- Drogoth the Roamer
+					-- #if AFTER CATA
 					["coords"] = {
 						{ 39.8, 19.8, DUSTWALLOW_MARSH },
 						{ 38.8, 19.8, DUSTWALLOW_MARSH },
 						{ 39.6, 19.4, DUSTWALLOW_MARSH },
 					},
+					-- #else
+					["coords"] = {
+						{ 36.2, 13.6, DUSTWALLOW_MARSH },
+						{ 39.4, 14.4, DUSTWALLOW_MARSH },
+						{ 39.6, 21.2, DUSTWALLOW_MARSH },
+						{ 42.2, 18.8, DUSTWALLOW_MARSH },
+						{ 42.8, 22.0, DUSTWALLOW_MARSH },
+					},
+					-- #endif
 				}),
 				n(14234, {	-- Hayoc
+					-- #if AFTER CATA
 					["coords"] = {
 						{ 48.0, 62.6, DUSTWALLOW_MARSH },
 						{ 47.6, 61.6, DUSTWALLOW_MARSH },
 						{ 48.8, 60.0, DUSTWALLOW_MARSH },
 						{ 49.0, 61.6, DUSTWALLOW_MARSH },
 					},
+					-- #else
+					["coords"] = {
+						{ 54.8, 60.0, DUSTWALLOW_MARSH },
+						{ 52.0, 63.6, DUSTWALLOW_MARSH },
+						{ 52.0, 65.4, DUSTWALLOW_MARSH },
+						{ 53.6, 66.2, DUSTWALLOW_MARSH },
+						{ 55.6, 67.8, DUSTWALLOW_MARSH },
+					},
+					-- #endif
 				}),
 				n(50342, {	-- Heronis
 					["coords"] = {
 						{ 39.4, 28.6, DUSTWALLOW_MARSH },
 						{ 40.2, 28.6, DUSTWALLOW_MARSH },
 					},
+					["timeline"] = { "added 5.2.0.16650" },
 				}),
 				n(50957, {	-- Hugeclaw
 					["coord"] = { 54.0, 43.8, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 5.2.0.16650" },
 				}),
 				n(14236, {	-- Lord Angler
+					-- #if AFTER CATA
 					["coords"] = {
 						{ 56.6, 62.2, DUSTWALLOW_MARSH },
 						{ 56.6, 63.6, DUSTWALLOW_MARSH },
 						{ 55.4, 63.6, DUSTWALLOW_MARSH },
 					},
+					-- #else
+					["coord"] = { 55.8, 64.6, DUSTWALLOW_MARSH },
+					-- #endif
 				}),
 				n(50875, {	-- Nychus
 					["coord"] = { 34.3, 70.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				n(14237, {	-- Oozeworm
+					-- #if AFTER CATA
 					["coord"] = { 37.0, 62.6, DUSTWALLOW_MARSH },
+					-- #else
+					["coords"] = {
+						{ 39.8, 62.6, DUSTWALLOW_MARSH },
+						{ 36.6, 62.6, DUSTWALLOW_MARSH },
+						{ 36.0, 68.4, DUSTWALLOW_MARSH },
+					},
+					-- #endif
 				}),
 				n(50764, {	-- Paraliss
 					["coord"] = { 38.6, 74.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				n(14233, {	-- Ripscale
+					-- #if AFTER CATA
 					["coords"] = {
 						{ 37.8, 50.4, DUSTWALLOW_MARSH },
 						{ 43.8, 50.0, DUSTWALLOW_MARSH },
@@ -1532,50 +3247,90 @@ root("Zones", m(KALIMDOR, {
 						{ 47.6, 55.8, DUSTWALLOW_MARSH },
 						{ 49.2, 57.2, DUSTWALLOW_MARSH },
 					},
+					-- #else
+					["coords"] = {
+						{ 37.8, 50.4, DUSTWALLOW_MARSH },
+						{ 43.8, 50.2, DUSTWALLOW_MARSH },
+						{ 42.6, 55.4, DUSTWALLOW_MARSH },
+						{ 47.6, 54.8, DUSTWALLOW_MARSH },
+						{ 50.0, 57.6, DUSTWALLOW_MARSH },
+					},
+					-- #endif
 				}),
 				n(51061, {	-- Roth-Salam
 					["coord"] = { 50.2, 84.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 5.1.0.16297" },
 				}),
 				n(51069, {	-- Scintillex
 					["coord"] = { 55.8, 85.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 5.2.0.16591" },
 				}),
 				n(50945, {	-- Scruff
 					["coords"] = {
 						{ 29.4, 43.4, DUSTWALLOW_MARSH },
 						{ 29.6, 44.8, DUSTWALLOW_MARSH },
 					},
+					["timeline"] = { "added 5.2.0.16650" },
 				}),
-				n(4368, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Strashaz Myrmidon
-					i(12718),	-- Plans: Runic Breastplate (RECIPE!)
-				})),
 				n(50901, {	-- Teromak
 					["coords"] = {
 						{ 41.8, 43.2, DUSTWALLOW_MARSH },
 						{ 42.0, 42.0, DUSTWALLOW_MARSH },
 						{ 41.4, 41.8, DUSTWALLOW_MARSH },
 					},
+					["timeline"] = { "added 5.2.0.16650" },
 				}),
 				n(14235, {	-- The Rot
+					-- #if AFTER CATA
 					["coords"] = {
 						{ 51.6, 59.4, DUSTWALLOW_MARSH },
 						{ 51.6, 60.0, DUSTWALLOW_MARSH },
 						{ 51.6, 61.0, DUSTWALLOW_MARSH },
 					},
+					-- #else
+					["coords"] = {
+						{ 51.2, 50.8, DUSTWALLOW_MARSH },
+						{ 52.6, 51.6, DUSTWALLOW_MARSH },
+						{ 53.6, 54.2, DUSTWALLOW_MARSH },
+						{ 52.2, 57.4, DUSTWALLOW_MARSH },
+						{ 52.0, 60.4, DUSTWALLOW_MARSH },
+					},
+					-- #endif
 				}),
 			}),
 			n(VENDORS, {
-				n(4894, {	-- Craig Nollward <Cooking Trainer>
+				-- #if BEFORE CATA
+				n(13476, {	-- Balai Lok'Wein <Potions, Scrolls and Reagents>
+					["coord"] = { 36.4, 30.4, DUSTWALLOW_MARSH, },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(16084, {	-- Expert First Aid - Under Wraps
+							["timeline"] = { "removed 3.1.0" },
+							["rank"] = 3,
+						}),
+						i(16112, {	-- Manual: Heavy Silk Bandage
+							["timeline"] = { "removed 3.1.0" },
+						}),
+						i(16113, {	-- Manual: Mageweave Bandage
+							["timeline"] = { "removed 3.1.0" },
+						}),
+					},
+				}),
+				-- #endif
+				-- #if AFTER CATA
+				n(4894, {	-- Craig Nollward <Cooking Trainer> [CATA+] / <Cook>
 					["coord"] = { 66.8, 45.2, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
+				-- #endif
 				n(6567, {	-- Ghok'kah <Tailoring Supplies>
-					["coord"] = { 35.2, 30.8, DUSTWALLOW_MARSH },
+					["coord"] = { 35.2, 30.8, DUSTWALLOW_MARSH, },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(4355, {	-- Pattern: Icy Cloak
 							["isLimited"] = true,
 						}),
@@ -1584,19 +3339,19 @@ root("Zones", m(KALIMDOR, {
 				n(4885, {	-- Gregor MacVince <Horse Breeder>
 					["coord"] = { 65.2, 51.4, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(18777),	-- Swift Brown Steed (MOUNT!)
-						i(18776),	-- Swift Palomino (MOUNT!)
-						i(18778),	-- Swift White Steed (MOUNT!)
+					["groups"] = {
 						i(5656),	-- Brown Horse (MOUNT!)
 						i(5655),	-- Chestnut Mare (MOUNT!)
 						i(2414),	-- Pinto (MOUNT!)
+						i(18777),	-- Swift Brown Steed (MOUNT!)
+						i(18776),	-- Swift Palomino (MOUNT!)
+						i(18778),	-- Swift White Steed (MOUNT!)
 					},
 				}),
 				n(4886, {	-- Hans Weston <Armorer & Weaponsmith>
 					["coord"] = { 64.6, 50.4, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(12248, {	-- Daring Dirk
 							["isLimited"] = true,
 						}),
@@ -1608,11 +3363,13 @@ root("Zones", m(KALIMDOR, {
 				n(4897, {	-- Helenia Olden <Trade Supplies>
 					["coord"] = { 66.4, 51.4, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(21941, {	-- Design: Black Pearl Panther
+							["timeline"] = { "added 2.0.1.6180" },
 							["isLimited"] = true,
 						}),
 						i(21943, {	-- Design: Truesilver Crab
+							["timeline"] = { "added 2.0.1.6180" },
 							["isLimited"] = true,
 						}),
 						i(5789, {	-- Pattern: Murloc Scale Bracers
@@ -1623,10 +3380,10 @@ root("Zones", m(KALIMDOR, {
 						i(12228),	-- Recipe: Roast Raptor
 					},
 				}),
-				n(4892, {	-- Jensen Farran <Hunter Trainer & Bowyer>
+				n(4892, {	-- Jensen Farran <Hunter Trainer & Bowyer> [CATA+] / <Bowyer>
 					["coord"] = { 67.8, 49.8, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(11305, {	-- Dense Shortbow
 							["isLimited"] = true,
 						}),
@@ -1634,18 +3391,41 @@ root("Zones", m(KALIMDOR, {
 				}),
 				n(53410, {	-- Lissah Spellwick <Enchanting Trainer & Supplies>
 					["coord"] = { 66.0, 49.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "added 4.2.0.14313" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
+				-- #if BEFORE CATA
+				n(4888, {	-- Marie Holdston <Weaponsmith> / <Blacksmithing Trainer> [CATA+]
+					["coord"] = { 64.6, 50.0, DUSTWALLOW_MARSH, },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(12248, {	-- Daring Dirk
+							["isLimited"] = true,
+						}),
+						i(12250, {	-- Midnight Axe
+							["isLimited"] = true,
+						}),
+					},
+				}),
+				n(12919, {	-- Nat Pagle
+					["sourceQuest"] = 8227,	-- Nat's Measuring Tape
+					["coord"] = { 58.6, 60.1, DUSTWALLOW_MARSH },
+					["description"] = "He will only sell you the Mudskunk Lures once you have turned in Nat's Measuring Tape.",
+					["groups"] = {
+						i(19974),	-- Mudskunk Lure
+					},
+				}),
+				-- #endif
 				n(4879, {	-- Ogg'marr <Butcher>
 					["coord"] = { 36.6, 31.0, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(12232),	-- Recipe: Carrion Surprise
 						i(12239),	-- Recipe: Dragonbreath Chili
 						i(20075),	-- Recipe: Heavy Crocolisk Stew
@@ -1655,7 +3435,7 @@ root("Zones", m(KALIMDOR, {
 				n(4890, {	-- Piter Verance <Weaponsmith & Armorer>
 					["coord"] = { 67.4, 47.8, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(4817, {	-- Blessed Claymore
 							["isLimited"] = true,
 						}),
@@ -1680,12 +3460,29 @@ root("Zones", m(KALIMDOR, {
 						i(4831, {	-- Stalking Pants
 							["isLimited"] = true,
 						}),
+						-- #if BEFORE 4.0.3
+						i(4833, {	-- Glorious Shoulders
+							["isLimited"] = true,
+						}),
+						i(4835, {	-- Elite Shoulders
+							["isLimited"] = true,
+						}),
+						-- #endif
+					},
+				}),
+				n(9552, {	-- Zanara <Bowyer>
+					["coord"] = { 35.6, 30.2, DUSTWALLOW_MARSH, },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(11305, {	-- Dense Shortbow
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(4884, {	-- Zulrg <Weaponsmith>
-					["coord"] = { 36.2, 31.6, DUSTWALLOW_MARSH },
+					["coord"] = { 36.2, 31.6, DUSTWALLOW_MARSH, },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(12251, {	-- Big Stick
 							["isLimited"] = true,
 						}),
@@ -1698,21 +3495,50 @@ root("Zones", m(KALIMDOR, {
 			n(ZONE_DROPS, {
 				i(10822, {	-- Dark Whelpling
 					["crs"] = {
+						-- #if AFTER MOP
 						4323,	-- Searing Hatchling
+						-- #endif
 						4324,	-- Searing Whelp
 					},
+				}),
+				i(4639, {	-- Enchanted Sea Kelp
+					["cr"] = 4363,	-- Mirefin Oracle
 				}),
 				i(5775, {	-- Pattern: Black Silk Pack
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 4834,	-- Theramore Infiltrator
+				}),
+				i(12718, {	-- Plans: Runic Breastplate (RECIPE!)
+					["timeline"] = { "removed 4.0.3" },
+					["crs"] = {
+						4368,	-- Strashaz Myrmidon
+						16072,	-- Tidelord Rrurgaz
+					},
+				}),
+				-- #if BEFORE 4.3.0
+				i(12714, {	-- Plans: Runic Plate Helm (RECIPE!)
+					["cr"] = 4364,	-- Strashaz Warrior
+				}),
+				i(12706, {	-- Plans: Runic Plate Shoulders (RECIPE!)
+					["cr"] = 4366,	-- Strashaz Serpent Guard
+				}),
+				-- #endif
+				i(20766, {	-- Slimy Bag
+					["crs"] = {
+						4393,	-- Acidic Swamp Ooze
+						4392,	-- Corrosive Swamp Ooze
+						4391,	-- Swamp Ooze
+					},
 				}),
 			}),
 		},
 	}),
 }));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", {
 	n(QUESTS, {
-		q(27289),	-- Vimes's Report
+		q(27289, {	-- Vimes's Report
+			["timeline"] = { "created 4.0.3.13277" },
+		}),
 	}),
-}));
+});

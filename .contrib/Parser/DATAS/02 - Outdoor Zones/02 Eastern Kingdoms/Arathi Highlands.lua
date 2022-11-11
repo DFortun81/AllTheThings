@@ -1848,9 +1848,16 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 27.0, 58.8, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(16084, { ["rank"] = 3 }),	-- Expert First Aid - Under Wraps
-						i(16112),	-- Manual: Heavy Silk Bandage
-						i(16113),	-- Manual: Mageweave Bandage
+						i(16084, {	-- Expert First Aid - Under Wraps
+							["timeline"] = { "removed 3.1.0" },
+							["rank"] = 3,
+						}),
+						i(16112, {	-- Manual: Heavy Silk Bandage
+							["timeline"] = { "removed 3.1.0" },
+						}),
+						i(16113, {	-- Manual: Mageweave Bandage
+							["timeline"] = { "removed 3.1.0" },
+						}),
 					},
 				}),
 				-- #endif

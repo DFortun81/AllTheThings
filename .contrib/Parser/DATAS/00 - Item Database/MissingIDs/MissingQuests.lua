@@ -72,21 +72,10 @@ q(1158),	-- <NYI> <TXT> speak to rabine saturna,		TBC: <NYI> <TXT> speak to rabi
 q(1161),	-- <NYI> <TXT> gossip shade of ambermoon,		TBC: <NYI> <TXT> gossip shade of ambermoon,		CLASSIC: <NYI> <TXT> gossip shade of ambermoon
 q(1162),	-- <NYI> <TXT> speak to hamuul runetotem,		TBC: <NYI> <TXT> speak to hamuul runetotem,		CLASSIC: <NYI> <TXT> speak to hamuul runetotem
 q(1163),	-- <NYI> <TXT> speak to tyrande whisperwind,		TBC: <NYI> <TXT> speak to tyrande whisperwind,		CLASSIC: <NYI> <TXT> speak to tyrande whisperwind
-q(1219),	-- [DEPRECATED]The Orc Report,		TBC: The Orc Report,		CLASSIC: The Orc Report
-q(1220),	-- [DEPRECATED]Captain Vimes,		TBC: Captain Vimes,		CLASSIC: Captain Vimes
-q(1252),	-- [DEPRECATED]Lieutenant Paval Reethe,		TBC: Lieutenant Paval Reethe,		CLASSIC: Lieutenant Paval Reethe
-q(1253),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The Black Shield
-q(1259),	-- [DEPRECATED]Lieutenant Paval Reethe,		TBC: Lieutenant Paval Reethe,		CLASSIC: Lieutenant Paval Reethe
-q(1260),	-- [DEPRECATED]Morgan Stern,		TBC: Morgan Stern,		CLASSIC: Morgan Stern
 q(1277),	-- <nyi> <TXT> The Centaur Hoofprints,		TBC: <nyi> <TXT> The Centaur Hoofprints,		CLASSIC: <nyi> <TXT> The Centaur Hoofprints
 q(1278),	-- <nyi> <TXT> The Grim Totem Clan,		TBC: <nyi> <TXT> The Grim Totem Clan,		CLASSIC: <nyi> <TXT> The Grim Totem Clan
 q(1279),	-- <nyi> <TXT>The Centaur Hoofprints,		TBC: <nyi> <TXT>The Centaur Hoofprints,		CLASSIC: <nyi> <TXT>The Centaur Hoofprints
 q(1280),	-- <nyi> <TXT>The Centaur Hoofprints,		TBC: <nyi> <TXT>The Centaur Hoofprints,		CLASSIC: <nyi> <TXT>The Centaur Hoofprints
-q(1282),	-- [DEPRECATED]They Call Him Smiling Jim,		TBC: They Call Him Smiling Jim,		CLASSIC: They Call Him Smiling Jim
-q(1284),	-- [DEPRECATED]Suspicious Hoofprints,		TBC: Suspicious Hoofprints,		CLASSIC: Suspicious Hoofprints
-q(1285),	-- [DEPRECATED]Daelin's Men,		TBC: Daelin's Men,		CLASSIC: Daelin's Men
-q(1286),	-- [DEPRECATED]The Deserters,		TBC: The Deserters,		CLASSIC: The Deserters
-q(1287),	-- [DEPRECATED]The Deserters,		TBC: The Deserters,		CLASSIC: The Deserters
 q(1288),	-- Vimes's Report,		TBC: Vimes's Report,		CLASSIC: Vimes's Report
 q(1289),	-- <nyi> Vimes's Report,		CLASSIC: <nyi> Vimes's Report
 q(1290),	-- <nyi> Investigating Mosarn,		CLASSIC: <nyi> Investigating Mosarn
@@ -100,10 +89,6 @@ q(1297),	-- <nyi> <TXT> Course of Action,		TBC: <nyi> <TXT> Course of Action,		C
 q(1298),	-- <nyi> <TXT> Thrall's Dirty Work,		CLASSIC: <nyi> <TXT> Thrall's Dirty Work
 q(1299),	-- <nyi> <TXT> Thrall's Dirty Work,		TBC: <nyi> <TXT> Thrall's Dirty Work,		CLASSIC: <nyi> <TXT> Thrall's Dirty Work
 q(1300),	-- <nyi> <TXT> Lorn Grim Totem,		TBC: <nyi> <TXT> Lorn Grim Totem,		CLASSIC: <nyi> <TXT> Lorn Grim Totem
-q(1301),	-- [DEPRECATED]James Hyal,		TBC: James Hyal,		CLASSIC: James Hyal
-q(1302),	-- [DEPRECATED]James Hyal,		TBC: James Hyal,		CLASSIC: James Hyal
-q(1319),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The Black Shield
-q(1320),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The Black Shield
 q(1367),	-- Magram Alliance,		TBC: Magram Alliance,		CLASSIC: Magram Alliance
 q(1369),	-- Broken Tears,		TBC: Broken Tears,		CLASSIC: Broken Tears
 q(1371),	-- Gizmo for Warug,		TBC: Gizmo for Warug,		CLASSIC: Gizmo for Warug
@@ -593,34 +578,9 @@ q(10934),	-- Return to Silvermoon,		TBC: Return to Silvermoon
 q(10999),	-- One Shot, One Kill,		TBC: One Shot, One Kill
 q(11121),	-- DAILY TEST QUEST (RAID),		TBC: DAILY TEST QUEST (RAID)
 q(11125),	-- [PH] New Hinterlands Quest,		TBC: [PH] New Hinterlands Quest
-q(11126),	-- Traitors Among Us,		TBC: Traitors Among Us
 q(11127),	-- <NYI>Thunderbrew Secrets,		TBC: <NYI>Thunderbrew Secrets
-q(11128),	-- Propaganda War,		TBC: Propaganda War
-q(11133),	-- Discrediting the Deserters,		TBC: Discrediting the Deserters
-q(11136),	-- A Disturbing Development,		TBC: A Disturbing Development
-q(11137),	-- [DEPRECATED]Defias in Dustwallow?,		TBC: Defias in Dustwallow?
-q(11138),	-- [DEPRECATED]Renn McGill,		TBC: Renn McGill
-q(11139),	-- [DEPRECATED]Secondhand Diving Gear,		TBC: Secondhand Diving Gear
-q(11140),	-- [DEPRECATED]Recover the Cargo!,		TBC: Recover the Cargo!
-q(11141),	-- [DEPRECATED]Jaina Must Know,		TBC: Jaina Must Know
-q(11142),	-- [DEPRECATED]Survey Alcaz Island,		TBC: Survey Alcaz Island
-q(11143),	-- [DEPRECATED]A Grim Connection,		TBC: A Grim Connection
-q(11145),	-- [DEPRECATED]Prisoners of the Grimtotems,		TBC: Prisoners of the Grimtotems
-q(11146),	-- [DEPRECATED]Raptor Captor,		TBC: Raptor Captor
-q(11149),	-- [DEPRECATED]Tabetha's Assistance,		TBC: Tabetha's Assistance
-q(11151),	-- [DEPRECATED]Justice for the Hyals,		TBC: Justice for the Hyals
-q(11177),	-- [DEPRECATED]The Hermit of Swamplight Manor,		TBC: The Hermit of Swamplight Manor
-q(11185),	-- [DEPRECATED]The Apothecary's Letter,		TBC: The Apothecary's Letter
-q(11186),	-- [DEPRECATED]Signs of Treachery?,		TBC: Signs of Treachery?
 q(11189),	-- One Last Time
-q(11191),	-- [DEPRECATED]This Old Lighthouse,		TBC: This Old Lighthouse
-q(11192),	-- [DEPRECATED]Thresher Oil,		TBC: Thresher Oil
-q(11193),	-- [DEPRECATED]Dastardly Denizens of the Deep,		TBC: Dastardly Denizens of the Deep
-q(11194),	-- [DEPRECATED]Is it Real?,		TBC: Is it Real?
 q(11197),	-- ZZOLD Upper Deck Promo - Ghost Wolf Mount OLD
-q(11209),	-- [DEPRECATED]Nat's Bargain,		TBC: Nat's Bargain
-q(11210),	-- [DEPRECATED]Oh, It's Real,		TBC: Oh, It's Real
-q(11222),	-- [DEPRECATED]Proof of Treachery,		TBC: Warn Bolvar!
 q(11226),	-- Upper Deck Promo - Spectral Tiger Mount
 q(11335),	-- Call to Arms: Arathi Basin,		TBC: Call to Arms: Arathi Basin
 q(11336),	-- Call to Arms: Alterac Valley,		TBC: Call to Arms: Alterac Valley
