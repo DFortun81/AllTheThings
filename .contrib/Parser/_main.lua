@@ -32,11 +32,12 @@ ROOTS = {
 };
 
 -- Custom Header Constants (verify against AllTheThings.lua::CustomTypeAbbreviations)
-HEADER = {
-	ACHIEVEMENT = "a",
-	ITEM = "i",
-	QUEST = "q",
-	SPELL = "s",
+HEADERS = {
+	Achievement = "a",
+	Item = "i",
+	Quest = "q",
+	Spell = "s",
+	AchCategory = "c",
 };
 
 -- Map Constants for quick and easy replacement when we can get mapIDs on live!

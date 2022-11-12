@@ -263,7 +263,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									}),
 								}),
 								o(350978, {	-- Queen's Conservatory Cache
-									n(DUTIFUL, {
+									header(HEADERS.Item, 178881, {	-- Dutiful Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[1] },T2_DUTIFUL_GROUP),
 									}),
@@ -285,7 +285,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									}),
 								}),
 								o(350978, {	-- Queen's Conservatory Cache
-									n(DUTIFUL, {
+									header(HEADERS.Item, 178880, {	-- Greater Dutiful Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[2] },T3_DUTIFUL_GROUP),
 									}),
@@ -437,7 +437,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							["icon"] = "Interface\\Icons\\Ability_ardenweald_paladin_winter",
 							["g"] = {
 								o(350978, {	-- Queen's Conservatory Cache
-									n(DUTIFUL, {
+									header(HEADERS.Item, 178879, {	-- Divine Dutiful Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[3] },T5_DUTIFUL_GROUP),
 									}),

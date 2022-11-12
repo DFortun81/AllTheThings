@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDown({ ["timeline"] = { "added 3.2.0" } }, {
-	n(-363, {	-- The Argent Tournament
+	header(HEADERS.AchCategory, 14941, {	-- The Argent Tournament
 		["maps"] = { ICECROWN },
 		["g"] = {
 			n(ACHIEVEMENTS, {

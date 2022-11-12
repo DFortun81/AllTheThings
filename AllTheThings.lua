@@ -13358,41 +13358,65 @@ fields.repeatable = npcFields.repeatableAsQuest;
 fields.saved = fields.savedAsQuest;
 app.BaseNPCWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseNPCWithAchievementAndQuest");
 
+
+-- Header Lib
 local CustomTypeAbbreviations = {
 	["a"] = "achievementID",
-	-- ["c"] = "categoryID",	-- replace with GetCategoryInfo data instead of ATT object search?
 	["i"] = "itemID",
 	["q"] = "questID",
 	["s"] = "spellID",
 };
-local function FillCustomData(t, returnField)
+-- Alternate functions to attach data into a table based on an id for a given type code
+local AlternateDataTypes = {
+	["c"] = function(t, id)
+		local name = GetCategoryInfo(id);
+		t.name = name;
+	end,
+};
+local cache = app.CreateCache("headerCode");
+local function CacheInfo(t, field)
 	local type = t.type;
 	if not type then return; end
-	local obj = app.SearchForObject(CustomTypeAbbreviations[type] or type, t.headerID);
-	if obj then
-		local name = obj.name;
-		local icon = obj.icon;
-		if name then rawset(t, "name", name); end
-		if icon then rawset(t, "icon", icon); end
+	local id = t.headerID;
+	local _t = cache.GetCached(t);
+	local altFunc = AlternateDataTypes[type];
+	if altFunc then
+		altFunc(_t, id);
 	else
-		app.print("Failed finding object for custom header",type,t.headerID);
+		local obj = app.SearchForObject(CustomTypeAbbreviations[type] or type, id) or CreateObject({[CustomTypeAbbreviations[type] or type]=id});
+		if obj then
+			_t.name = obj.name or obj.link;
+			_t.icon = obj.icon;
+		else
+			app.print("Failed finding object/function for custom header",t.headerCode);
+		end
 	end
-	return returnField and t[returnField] or nil;
+	if field then return _t[field]; end
 end
 
--- Header Lib
 local headerFields = {
 	["key"] = function(t)
 		return "headerID";
 	end,
+	["headerCode"] = function(t)
+		if t.type then
+			return t.type..t.headerID;
+		else
+			return t.headerID;
+		end
+	end,
 	["name"] = function(t)
 		return L["HEADER_NAMES"][t.headerID];
 	end,
-	["nameAsCustom"] = function(t) FillCustomData(t, "name"); end,
+	["nameAsCustom"] = function(t)
+		return cache.GetCachedField(t, "name", CacheInfo);
+	end,
 	["icon"] = function(t)
 		return L["HEADER_ICONS"][t.headerID];
 	end,
-	["iconAsCustom"] = function(t) FillCustomData(t, "icon"); end,
+	["iconAsCustom"] = function(t)
+		return cache.GetCachedField(t, "icon", CacheInfo) or 4555017;
+	end,
 	["description"] = function(t)
 		return L["HEADER_DESCRIPTIONS"][t.headerID];
 	end,
