@@ -17752,7 +17752,7 @@ local DynamicCategory_Simple = function(self)
 			local dynamicValueCache, thingKeys = dynamicCache[dynamicValue], app.ThingKeys;
 			if dynamicValueCache then
 				-- app.PrintDebug("Build Dynamic Group",self.dynamic,self.dynamic_value)
-				for _,source in pairs(dynamicValueCache) do
+				for _,source in pairs(app.CleanSourceIgnoredGroups(dynamicValueCache)) do
 					-- only pull in actual 'Things' to the simple dynamic group
 					if thingKeys[source.key] then
 						-- find the top-level parent of the Thing
@@ -17779,7 +17779,7 @@ local DynamicCategory_Simple = function(self)
 			else app.print("Failed to build Simple Dynamic Category: No data cached for key & value",self.dynamic,self.dynamic_value); end
 		else
 			for id,sources in pairs(dynamicCache) do
-				for _,source in pairs(sources) do
+				for _,source in pairs(app.CleanSourceIgnoredGroups(sources)) do
 					-- find the top-level parent of the Thing
 					top = RecursiveParentMapper(source, "parent", rootATT);
 					-- create/match the expected top header
@@ -18832,28 +18832,30 @@ local function BuildSearchResponseByField(groups, field, clear)
 	if groups then
 		local t, response, clone;
 		for _,group in ipairs(groups) do
-			if group[field] then
-				-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
-				if IncludeUnavailableRecipes or not group.spellID or IgnoreBoEFilter(group) then
-					clone = clear and CreateObject(group, true) or CreateObject(group);
-					if t then tinsert(t, clone);
-					else t = { clone }; end
-				end
-			else
-				response = BuildSearchResponseByField(group.g, field, clear);
-				if response then
-					local groupCopy = {};
-					-- copy direct group values only
-					MergeProperties(groupCopy, group);
-					-- no need to clone response, since it is already cloned above
-					groupCopy.g = response;
-					-- the group itself does not meet the field/value expectation, so force it to be uncollectible
-					groupCopy.collectible = false;
-					-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
-					groupCopy.sym = nil;
-					groupCopy.sourceParent = nil;
-					if t then tinsert(t, groupCopy);
-					else t = { groupCopy }; end
+			if not group.sourceIgnored then
+				if group[field] then
+					-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
+					if IncludeUnavailableRecipes or not group.spellID or IgnoreBoEFilter(group) then
+						clone = clear and CreateObject(group, true) or CreateObject(group);
+						if t then tinsert(t, clone);
+						else t = { clone }; end
+					end
+				else
+					response = BuildSearchResponseByField(group.g, field, clear);
+					if response then
+						local groupCopy = {};
+						-- copy direct group values only
+						MergeProperties(groupCopy, group);
+						-- no need to clone response, since it is already cloned above
+						groupCopy.g = response;
+						-- the group itself does not meet the field/value expectation, so force it to be uncollectible
+						groupCopy.collectible = false;
+						-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
+						groupCopy.sym = nil;
+						groupCopy.sourceParent = nil;
+						if t then tinsert(t, groupCopy);
+						else t = { groupCopy }; end
+					end
 				end
 			end
 		end
@@ -18865,30 +18867,32 @@ local function BuildSearchResponseByFieldValue(groups, field, value, clear)
 	if groups then
 		local t, response, v, clone;
 		for _,group in ipairs(groups) do
-			v = group[field];
-			if v and (v == value or
-					(field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
-				-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
-				if IncludeUnavailableRecipes or not group.spellID or IgnoreBoEFilter(group) then
-					clone = clear and CreateObject(group, true) or CreateObject(group);
-					if t then tinsert(t, clone);
-					else t = { clone }; end
-				end
-			else
-				response = BuildSearchResponseByFieldValue(group.g, field, value, clear);
-				if response then
-					local groupCopy = {};
-					-- copy direct group values only
-					MergeProperties(groupCopy, group);
-					-- no need to clone response, since it is already cloned above
-					groupCopy.g = response;
-					-- the group itself does not meet the field/value expectation, so force it to be uncollectible
-					groupCopy.collectible = false;
-					-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
-					groupCopy.sym = nil;
-					groupCopy.sourceParent = nil;
-					if t then tinsert(t, groupCopy);
-					else t = { groupCopy }; end
+			if not group.sourceIgnored then
+				v = group[field];
+				if v and (v == value or
+						(field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
+					-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
+					if IncludeUnavailableRecipes or not group.spellID or IgnoreBoEFilter(group) then
+						clone = clear and CreateObject(group, true) or CreateObject(group);
+						if t then tinsert(t, clone);
+						else t = { clone }; end
+					end
+				else
+					response = BuildSearchResponseByFieldValue(group.g, field, value, clear);
+					if response then
+						local groupCopy = {};
+						-- copy direct group values only
+						MergeProperties(groupCopy, group);
+						-- no need to clone response, since it is already cloned above
+						groupCopy.g = response;
+						-- the group itself does not meet the field/value expectation, so force it to be uncollectible
+						groupCopy.collectible = false;
+						-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
+						groupCopy.sym = nil;
+						groupCopy.sourceParent = nil;
+						if t then tinsert(t, groupCopy);
+						else t = { groupCopy }; end
+					end
 				end
 			end
 		end
@@ -18949,7 +18953,7 @@ local function BuildSearchResponseViaCachedGroups(cacheContainer, field, value, 
 		wipe(ClonedHierarachyMapping);
 		local parent, thing;
 		if value then
-			local sources = cacheContainer[value];
+			local sources = app.CleanSourceIgnoredGroups(cacheContainer[value]);
 			if not sources then return ClonedHierarchyGroups; end
 			-- for each source of each Thing with the value
 			for _,source in ipairs(sources) do
@@ -18970,7 +18974,7 @@ local function BuildSearchResponseViaCachedGroups(cacheContainer, field, value, 
 		else
 			for id,sources in pairs(cacheContainer) do
 				-- for each source of each Thing
-				for _,source in ipairs(sources) do
+				for _,source in ipairs(app.CleanSourceIgnoredGroups(sources)) do
 					-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
 					if IncludeUnavailableRecipes or not source.spellID or IgnoreBoEFilter(source) then
 						-- find/clone the expected parent group in hierachy
