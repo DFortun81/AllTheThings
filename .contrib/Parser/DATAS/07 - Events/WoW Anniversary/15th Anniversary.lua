@@ -713,7 +713,7 @@ root("WorldEvents", n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVE
 				}),
 				q(63953, {	-- Korrak's Revenge
 					["timeline"] = { "added 9.1.5" },
-					["repeatable"] = true,	-- presumably
+					["isYearly"] = true,	-- presumably
 				}),
 				q(57320, {	-- Launch the Attack!
 					["repeatable"] = true,	-- presumably
