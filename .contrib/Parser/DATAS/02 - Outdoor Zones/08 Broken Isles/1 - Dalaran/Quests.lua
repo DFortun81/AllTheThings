@@ -674,7 +674,7 @@ _.Zones =
 				}),
 				q(44547, {	-- Isle Hopping
 					["isBreadcrumb"] = true,
-					["description"] = "This quest is automatically offered after you find your second Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
+					["description"] = "This quest is offered after placing your 2nd Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the ones you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
 					["sourceQuestNumRequired"] = 2,
 					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
@@ -763,7 +763,7 @@ _.Zones =
 				}),
 				q(44549, {	-- Master of the Isles
 					["isBreadcrumb"] = true,
-					["description"] = "This quest is automatically offered after you find your fourth Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
+					["description"] = "This quest is offered after placing your 4th Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the ones you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
 					["sourceQuestNumRequired"] = 4,
 					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
@@ -835,7 +835,7 @@ _.Zones =
 				}),
 				q(44545, {	-- Pressing the Assault
 					["isBreadcrumb"] = true,
-					["description"] = "This quest is automatically offered after you find your first Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
+					["description"] = "This quest is offered after placing your 1st Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the one you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
 					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
@@ -934,7 +934,7 @@ _.Zones =
 				}),
 				q(44548, {	-- Scouring What Remains
 					["isBreadcrumb"] = true,
-					["description"] = "This quest is automatically offered after you find your third Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
+					["description"] = "This quest is offered after placing your 3rd Pillar of Creation in Dalaran after the NPC dialogue has finished, if you have not quested in Legion zones other than the ones you've chosen previously.\n\nIf your Scouting Map is gone and/or you cannot complete this quest, you can Party Sync to pick up the quest 'Stormheim' from Archmage Landon at 30,40 in Stormheim to fulfil the quest requirements.",
 					["sourceQuestNumRequired"] = 3,
 					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
