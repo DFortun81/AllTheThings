@@ -377,7 +377,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					i(190627),	-- Subversive Lord's Leggings
 					i(190631),	-- Vandalized Ephemera Mitts
 				}),
-				ach(15493, {	-- Ephemeral Plains
+				header(HEADER.ACHIEVEMENT, 15493, {	-- Ephemeral Plains
 					["g"] = {
 						e(2458, {	-- Vigilant Guardian
 							["crs"] = {
@@ -484,7 +484,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				ach(15492, {	-- Cornerstone of Creation
+				header(HEADER.ACHIEVEMENT, 15492, {	-- Cornerstone of Creation
 					["g"] = {
 						e(2459, {	-- Dausegne, the Fallen Oracle
 							["crs"] = { 181224 },	-- Dausegne
@@ -572,7 +572,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				ach(15416, {	-- Domination's Grasp
+				header(HEADER.ACHIEVEMENT, 15416, {	-- Domination's Grasp
 					["g"] = {
 						e(2469, {	-- Anduin Wrynn
 							["crs"] = { 181954 },	-- Anduin Wrynn
@@ -691,7 +691,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						}),
 					},
 				}),
-				ach(15418, {	-- The Grand Design
+				header(HEADER.ACHIEVEMENT, 15418, {	-- The Grand Design
 					["g"] = {
 						e(2464, {	-- The Jailer
 							["crs"] = { 185421 },	-- Zovaal <The Jailer>

@@ -183,63 +183,61 @@ root("Instances", tier(LEGION_TIER, {
 						}),
 					},
 				}),
-				ach(11394, {	-- Trial of Valor
-					cr(114263, e(1819, {	-- Odyn
-						i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
-						i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
-						i(142540),	-- Mantle of the Victorious Dead
-						i(142431),	-- Gleaming Val'kyr Cuirass
-						i(142410),	-- Robes of Celestial Adornment
-						i(142419),	-- Sky-Valiant's Wristguards
-						i(142430),	-- Gloves of Issued Challenge
-						i(142411),	-- Cinch of Light
-						i(142425),	-- Goldrune Legplates
-						i(142421),	-- Leggings of the Undaunted
-						i(142422),	-- Radiant Soul Sabatons
-						i(142520),	-- Ring of Ascended Glory
-						i(142508),	-- Chains of the Valorous
-						i(142519),	-- Favor of the Prime Designate
-						i(142514),	-- Ravens' Sight
-						i(142511),	-- Unforged Titansteel
-					})),
-					cr(114323, e(1830, {	-- Guarm
-						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
-						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
-						i(142412),	-- Windwhipped Sailcloth
-						i(142432),	-- Helbeast Skin Tunic
-						i(142423),	-- Bite-Resistant Wristclamps
-						i(142415),	-- Helhound Hair Bracers
-						i(142434),	-- Kvaldir Exult's Grips
-						i(142435),	-- Reinforced Hound-Handler's Gauntlets
-						i(142413),	-- Leggings of the Lower Planes
-						i(142426),	-- Lead-Soled Seabed Striders
-						i(142417),	-- Moccasins of Silent Passage
-						i(142512),	-- Accursed Cuspid
-						i(142515),	-- Chilled Incisor
-						i(142506),	-- Eye of Guarm
-						i(142516),	-- Sizzling Fang
-					})),
-					cr(114537, e(1829, {	-- Helya
-						i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
-						i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
-						i(142428),	-- Sea Fan Pendant
-						i(142521),	-- Drape of the Unworthy
-						i(142433),	-- Corroded Val'kyr Chainmail
-						i(142427),	-- Calcareous Wristclamps
-						i(142429),	-- Oiled Rigger's Handwraps
-						i(142420),	-- Anchor Chain Waistguard
-						i(142424),	-- Krakenbone Waistplate
-						i(142416),	-- Strand of Whelk Shells
-						i(142418),	-- Sucker-Scarred Leggings
-						i(142414),	-- Treads of the Drowned
-						i(142507),	-- Brinewater Slime in a Bottle
-						i(142518),	-- Fury of the Sea
-						i(142510),	-- Phylactery of Unwilling Servitude
-						i(142517),	-- Swell of the Tides
-						i(142513),	-- Token of the Lightning Keeper
-						i(146706),	-- Frostveined Shale (Blacksmithing QI)
-					})),
-				}),
+				cr(114263, e(1819, {	-- Odyn
+					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
+					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
+					i(142540),	-- Mantle of the Victorious Dead
+					i(142431),	-- Gleaming Val'kyr Cuirass
+					i(142410),	-- Robes of Celestial Adornment
+					i(142419),	-- Sky-Valiant's Wristguards
+					i(142430),	-- Gloves of Issued Challenge
+					i(142411),	-- Cinch of Light
+					i(142425),	-- Goldrune Legplates
+					i(142421),	-- Leggings of the Undaunted
+					i(142422),	-- Radiant Soul Sabatons
+					i(142520),	-- Ring of Ascended Glory
+					i(142508),	-- Chains of the Valorous
+					i(142519),	-- Favor of the Prime Designate
+					i(142514),	-- Ravens' Sight
+					i(142511),	-- Unforged Titansteel
+				})),
+				cr(114323, e(1830, {	-- Guarm
+					i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
+					i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
+					i(142412),	-- Windwhipped Sailcloth
+					i(142432),	-- Helbeast Skin Tunic
+					i(142423),	-- Bite-Resistant Wristclamps
+					i(142415),	-- Helhound Hair Bracers
+					i(142434),	-- Kvaldir Exult's Grips
+					i(142435),	-- Reinforced Hound-Handler's Gauntlets
+					i(142413),	-- Leggings of the Lower Planes
+					i(142426),	-- Lead-Soled Seabed Striders
+					i(142417),	-- Moccasins of Silent Passage
+					i(142512),	-- Accursed Cuspid
+					i(142515),	-- Chilled Incisor
+					i(142506),	-- Eye of Guarm
+					i(142516),	-- Sizzling Fang
+				})),
+				cr(114537, e(1829, {	-- Helya
+					i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
+					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
+					i(142428),	-- Sea Fan Pendant
+					i(142521),	-- Drape of the Unworthy
+					i(142433),	-- Corroded Val'kyr Chainmail
+					i(142427),	-- Calcareous Wristclamps
+					i(142429),	-- Oiled Rigger's Handwraps
+					i(142420),	-- Anchor Chain Waistguard
+					i(142424),	-- Krakenbone Waistplate
+					i(142416),	-- Strand of Whelk Shells
+					i(142418),	-- Sucker-Scarred Leggings
+					i(142414),	-- Treads of the Drowned
+					i(142507),	-- Brinewater Slime in a Bottle
+					i(142518),	-- Fury of the Sea
+					i(142510),	-- Phylactery of Unwilling Servitude
+					i(142517),	-- Swell of the Tides
+					i(142513),	-- Token of the Lightning Keeper
+					i(146706),	-- Frostveined Shale (Blacksmithing QI)
+				})),
 			}),
 			d(14,  {	-- Normal
 				n(ZONE_DROPS, {
