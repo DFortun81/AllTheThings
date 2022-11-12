@@ -979,7 +979,8 @@ namespace ATT
                 return false;
 
             // certain types with empty groups shouldn't be included
-            if (data.TryGetValue("achievementCategoryID", out _))
+            if (data.TryGetValue("achievementCategoryID", out _) ||
+                data.TryGetValue("achievementID", out _))
             {
                 if (!data.TryGetValue("g", out List<object> g) || g.Count == 0)
                 {

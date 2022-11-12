@@ -1610,7 +1610,7 @@ namespace ATT
                     // String/Integer Data Type Fields
                     case "icon":
                         {
-                            if (value is String)
+                            if (value is string)
                             {
                                 item[field] = ATT.Export.ToString(value).Replace("\\\\", "\\").Replace("\\\\", "\\").Replace("\\", "\\\\");
                             }
@@ -1626,6 +1626,7 @@ namespace ATT
                         }
                     case "lore":
                     case "name":
+                    case "type":
                     case "description":
                     case "title":
                     case "order":
@@ -1665,6 +1666,7 @@ namespace ATT
                     case "runeforgePowerID":
                     case "raceID":
                     case "conduitID":
+                    case "headerID":
                     case "f":
                     case "u":
                     case "b":

@@ -76,7 +76,8 @@ namespace ATT
             ObjectData.Create("tierID",             "t",            "_.CreateTier", "f");
             ObjectData.Create("professionID",       "prof",         "_.CreateProfession", "requireSkill", "modID");
             ObjectData.Create("vignetteID",         "v",            "_.CreateVignette", "f");
-            ObjectData.Create<NPCData>("creatureID", "n",           "_.CreateNPC", "f");
+            ObjectData.Create<NPCData>("creatureID","n",            "_.CreateNPC", "f");
+            ObjectData.Create("headerID",           "h",            "_.CreateHeader", "f");
             ObjectData.Create("f",                  "flt",          "_.CreateFilter");
         }
 
