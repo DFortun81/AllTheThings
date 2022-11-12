@@ -9909,12 +9909,16 @@ end)();
 
 -- Azerite Essence Lib
 (function()
+local GetInfo, GetLink =
+	C_AzeriteEssence.GetEssenceInfo, C_AzeriteEssence.GetEssenceHyperlink;
 local fields = {
 	["key"] = function(t)
 		return "azeriteEssenceID";
 	end,
 	["info"] = function(t)
-		return C_AzeriteEssence.GetEssenceInfo(t.azeriteEssenceID) or {};
+		local info = GetInfo(t.azeriteEssenceID) or app.EmptyTable;
+		rawset(t, "info", info);
+		return info;
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleAzeriteEssences;
@@ -9955,7 +9959,9 @@ local fields = {
 		return t.info.name;
 	end,
 	["link"] = function(t)
-		return C_AzeriteEssence.GetEssenceHyperlink(t.azeriteEssenceID, t.rank);
+		local link = GetLink(t.azeriteEssenceID, t.rank);
+		rawset(t, "link", link);
+		return link;
 	end,
 	["rank"] = function(t)
 		return t.info.rank or 0;
@@ -10476,7 +10482,8 @@ local fields = {
 		return "difficultyID";
 	end,
 	["text"] = function(t)
-		local text = L["CUSTOM_DIFFICULTIES"][t.difficultyID] or GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
+		local difficultyID = t.difficultyID;
+		local text = L["CUSTOM_DIFFICULTIES"][difficultyID] or GetDifficultyInfo(difficultyID) or "Unknown Difficulty";
 		-- don't follow sourceParent
 		local parent = rawget(t, "parent");
 		local parentInstance = parent and parent.instanceID;
