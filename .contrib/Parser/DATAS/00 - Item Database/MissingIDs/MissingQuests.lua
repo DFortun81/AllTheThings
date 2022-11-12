@@ -249,9 +249,6 @@ q(4129),	-- The Knife Revealed,		TBC: The Knife Revealed,		CLASSIC: The Knife Re
 q(4130),	-- Psychometric Reading,		TBC: Psychometric Reading,		CLASSIC: Psychometric Reading
 q(4131),	-- The Woodpaw Gnolls,		TBC: The Woodpaw Gnolls,		CLASSIC: The Woodpaw Gnolls
 q(4135),	-- The Writhing Deep,		TBC: The Writhing Deep,		CLASSIC: The Writhing Deep
-q(4141),	-- Muigin and Larion,		TBC: Muigin and Larion,		CLASSIC: Muigin and Larion
-q(4142),	-- A Visit to Gregan,		TBC: A Visit to Gregan,		CLASSIC: A Visit to Gregan
-q(4144),	-- Bloodpetal Sprouts,		TBC: Bloodpetal Sprouts,		CLASSIC: Bloodpetal Sprouts
 q(4265),	-- Freed from the Hive,		TBC: Freed from the Hive,		CLASSIC: Freed from the Hive
 q(4281),	-- Thalanaar Delivery,		TBC: Thalanaar Delivery,		CLASSIC: Thalanaar Delivery
 q(4299),	-- <NYI> <TXT>The Tomb of the Seven,		TBC: <NYI> <TXT>The Tomb of the Seven,		CLASSIC: <NYI> <TXT>The Tomb of the Seven
@@ -449,9 +446,6 @@ q(8617),	-- The Horde Needs Singed Corestones!,		TBC: The Horde Needs Singed Cor
 q(8869),	-- Sweet Serenity,		TBC: Sweet Serenity,		CLASSIC: Sweet Serenity
 q(8973),	-- REUSE,		TBC: REUSE,		CLASSIC: REUSE
 q(9031),	-- <TXT>Anthion's Parting Words,		CLASSIC: <TXT>Anthion's Parting Words
-q(9051),	-- Toxic Test,		TBC: Toxic Test,		CLASSIC: Toxic Test
-q(9052),	-- Bloodpetal Poison,		TBC: Bloodpetal Poison,		CLASSIC: Bloodpetal Poison
-q(9063),	-- Torwa Pathfinder,		TBC: Torwa Pathfinder,		CLASSIC: Torwa Pathfinder
 q(9168),	-- Heart of Deatholme,		TBC: Heart of Deatholme
 q(9306),	-- <DEPRECATED>Speak with Vindicator Aldar
 q(9307),	-- <DEPRECATED>Compassion
@@ -669,7 +663,6 @@ q(13649),	-- Justin's Fun Test
 q(13802),	-- The Goblin with Two Brains
 q(13804),	-- To Catch a Fish-Thing
 q(13894),	-- Marking the Kills (DEPRECATED)
-q(13908),	-- Gearing Up To Ride
 q(13939),	-- Fel Moss Corruption
 q(13941),	-- Vile Touch
 q(13972),	-- Among Humans Again
