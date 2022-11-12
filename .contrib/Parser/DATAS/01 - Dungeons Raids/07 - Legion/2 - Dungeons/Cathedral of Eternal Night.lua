@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(LEGION_TIER, {
+root("Instances", tier(LEGION_TIER, {
 	inst(900, {	-- Cathedral of Eternal Night
 		["coord"] = { 64.7, 16.6, BROKEN_SHORE },
 		["maps"] = { 845, 846, 847, 848, 849 },
@@ -29,61 +29,31 @@ _.Instances = { tier(LEGION_TIER, {
 					["isWorldQuest"] = true,
 				}),
 			}),
-			d(2,	{	-- Heroic
-				n(ZONE_DROPS, {
-					i(147514, {	-- Felguard Destroyer's Legplates
-						["bonusID"] = 1812,
-						["crs"] = {
-							118704,	-- Dul'zak
-							118723,	-- Gazerax
-							118705,	-- Nal'asha
-							120713,	-- Wa'glur
-							120716,	-- Dreadspeaker Serilis
-							120715,	-- Raga'yut
-							120717,	-- Mistress Dominix
-						},
-					}),
-					i(147515, {	-- Hellblaze Invader's Greaves
-						["bonusID"] = 1812,
-						["crs"] = {
-							118704,	-- Dul'zak
-							118723,	-- Gazerax
-							118705,	-- Nal'asha
-							120713,	-- Wa'glur
-							120716,	-- Dreadspeaker Serilis
-							120715,	-- Raga'yut
-							120717,	-- Mistress Dominix
-						},
-					}),
-					i(147517, {	-- Inquisitor's Battle Cowl
-						["bonusID"] = 1812,
-						["crs"] = {
-							118704,	-- Dul'zak
-							118723,	-- Gazerax
-							118705,	-- Nal'asha
-							120713,	-- Wa'glur
-							120716,	-- Dreadspeaker Serilis
-							120715,	-- Raga'yut
-							120717,	-- Mistress Dominix
-						},
-					}),
-					i(147516, {	-- Legion Stalker's Hood
-						["bonusID"] = 1812,
-						["crs"] = {
-							118704,	-- Dul'zak
-							118723,	-- Gazerax
-							118705,	-- Nal'asha
-							120713,	-- Wa'glur
-							120716,	-- Dreadspeaker Serilis
-							120715,	-- Raga'yut
-							120717,	-- Mistress Dominix
-						},
-					}),
-					i(147117, {	-- Orb of the Fel Temptress
-						["cr"] = 118714,  -- Hellblaze Temptress
-						["classes"] = { WARLOCK },
-					}),
+			n(ZONE_DROPS, {
+				["crs"] = {
+					118704,	-- Dul'zak
+					118723,	-- Gazerax
+					118705,	-- Nal'asha
+					120713,	-- Wa'glur
+					120716,	-- Dreadspeaker Serilis
+					120715,	-- Raga'yut
+					120717,	-- Mistress Dominix
+				},
+				["g"] = sharedData({
+					["bonusID"] = 1812,
+				},{
+					i(147514),	-- Felguard Destroyer's Legplates
+					i(147515),	-- Hellblaze Invader's Greaves
+					i(147517),	-- Inquisitor's Battle Cowl
+					i(147516),	-- Legion Stalker's Hood
 				}),
+			}),
+			n(118714, {	-- Hellblaze Temptress
+				ig(147117, {	-- Orb of the Fel Temptress
+					["classes"] = { WARLOCK },
+				}),
+			}),
+			d(2, {	-- Heroic
 				cr(117193, e(1905, {	-- Agronox
 					i(144469),	-- Caretaker's Budding Mantle
 					i(144491),	-- Choking Vine Bindings
@@ -141,61 +111,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(144463),	-- Shard of Kaldorei Stained Glass
 				})),
 			}),
-			d(23,	{	-- Mythic
-				n(ZONE_DROPS, {
-					i(147514, {	-- Felguard Destroyer's Legplates
-						["bonusID"] = 1812,
-						["crs"] = {
-							118704,	-- Dul'zak
-							118723,	-- Gazerax
-							118705,	-- Nal'asha
-							120713,	-- Wa'glur
-							120716,	-- Dreadspeaker Serilis
-							120715,	-- Raga'yut
-							120717,	-- Mistress Dominix
-						},
-					}),
-					i(147515, {	-- Hellblaze Invader's Greaves
-						["bonusID"] = 1812,
-						["crs"] = {
-							118704,	-- Dul'zak
-							118723,	-- Gazerax
-							118705,	-- Nal'asha
-							120713,	-- Wa'glur
-							120716,	-- Dreadspeaker Serilis
-							120715,	-- Raga'yut
-							120717,	-- Mistress Dominix
-						},
-					}),
-					i(147517, {	-- Inquisitor's Battle Cowl
-						["bonusID"] = 1812,
-						["crs"] = {
-							118704,	-- Dul'zak
-							118723,	-- Gazerax
-							118705,	-- Nal'asha
-							120713,	-- Wa'glur
-							120716,	-- Dreadspeaker Serilis
-							120715,	-- Raga'yut
-							120717,	-- Mistress Dominix
-						},
-					}),
-					i(147516, {	-- Legion Stalker's Hood
-						["bonusID"] = 1812,
-						["crs"] = {
-							118704,	-- Dul'zak
-							118723,	-- Gazerax
-							118705,	-- Nal'asha
-							120713,	-- Wa'glur
-							120716,	-- Dreadspeaker Serilis
-							120715,	-- Raga'yut
-							120717,	-- Mistress Dominix
-						},
-					}),
-					i(147117, {	-- Orb of the Fel Temptress
-						["cr"] = 120366,  -- Hellblaze Temptress
-						["classes"] = { WARLOCK },
-					}),
-				}),
+			d(23, {	-- Mythic
 				cr(117193, e(1905, {	-- Agronox
 					ach(11768),	-- Boom Bloom
 					i(144469),	-- Caretaker's Budding Mantle
@@ -257,4 +173,17 @@ _.Instances = { tier(LEGION_TIER, {
 			}),
 		},
 	}),
-})};
+}));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	tier(LEGION_TIER, {
+		inst(900, {	-- Cathedral of Eternal Night
+			d(2, {	-- Heroic
+				i(147514),	-- Felguard Destroyer's Legplates
+				i(147515),	-- Hellblaze Invader's Greaves
+				i(147517),	-- Inquisitor's Battle Cowl
+				i(147516),	-- Legion Stalker's Hood
+			}),
+		}),
+	}),
+}));

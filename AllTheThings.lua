@@ -5014,7 +5014,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- If the result has a QuestID, then show which characters have this QuestID.
 		-- app.PrintDebug(topLevelSearch,group.spellID,group.filterID,group.collectible)
 		local groupQuestID = group.questID;
-		if groupQuestID and app.Settings:GetTooltipSetting("CompletedBy") then
+		if groupQuestID and not group.illusionID and app.Settings:GetTooltipSetting("CompletedBy") then
 			local knownBy = {};
 			local charQuests;
 			for guid,character in pairs(ATTCharacterData) do
