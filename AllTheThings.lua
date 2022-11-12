@@ -20,7 +20,6 @@ end
 
 -- Performance Cache
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
-local C_ArtifactUI_GetAppearanceInfoByID = C_ArtifactUI.GetAppearanceInfoByID;
 local C_Item_IsDressableItemByID = C_Item.IsDressableItemByID;
 local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
 local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
@@ -41,7 +40,6 @@ local GetFactionInfoByID = _G["GetFactionInfoByID"];
 local GetItemInfo = _G["GetItemInfo"];
 local GetItemInfoInstant = _G["GetItemInfoInstant"];
 local GetItemSpecInfo = _G["GetItemSpecInfo"];
-local GetTitleName = _G["GetTitleName"];
 local PlayerHasToy = _G["PlayerHasToy"];
 local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
@@ -9775,6 +9773,7 @@ end)();
 
 -- Artifact Lib
 (function()
+local C_ArtifactUI_GetAppearanceInfoByID = C_ArtifactUI.GetAppearanceInfoByID;
 local artifactItemIDs = {
 	[841] = 133755, -- Underlight Angler [Base Skin]
 	[988] = 133755, -- Underlight Angler [Fisherfriend of the Isles]
@@ -9804,7 +9803,7 @@ local fields = {
 	["collected"] = function(t)
 		if ATTAccountWideData.Artifacts[t.artifactID] then return 1; end
 		-- This artifact is listed for the current class
-		if not GetRelativeField(t, "nmc", true) and select(5, C_ArtifactUI_GetAppearanceInfoByID(t.artifactID)) then
+		if not GetRelativeField(t, "nmc", true) and t.artifactinfo[5] then
 			ATTAccountWideData.Artifacts[t.artifactID] = 1;
 			return 1;
 		end
@@ -14044,6 +14043,8 @@ end -- Tier Lib
 
 -- Title Lib
 (function()
+local GetTitleName, UnitName =
+	  GetTitleName, UnitName;
 local function StylizePlayerTitle(title, style, me)
 	if style == 0 then
 		-- Prefix
