@@ -6065,7 +6065,7 @@ fieldConverters = {
 	end,
 	["headerID"] = function(group, value)
 		-- WARNING: DEV ONLY START
-		if not L["HEADER_NAMES"][value] then
+		if not group.type and not L["HEADER_NAMES"][value] then
 			print("Header Missing Name ", value);
 			L["HEADER_NAMES"][value] = "Header #" .. value;
 		end
@@ -13358,6 +13358,28 @@ fields.repeatable = npcFields.repeatableAsQuest;
 fields.saved = fields.savedAsQuest;
 app.BaseNPCWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseNPCWithAchievementAndQuest");
 
+local CustomTypeAbbreviations = {
+	["a"] = "achievementID",
+	-- ["c"] = "categoryID",	-- replace with GetCategoryInfo data instead of ATT object search?
+	["i"] = "itemID",
+	["q"] = "questID",
+	["s"] = "spellID",
+};
+local function FillCustomData(t, returnField)
+	local type = t.type;
+	if not type then return; end
+	local obj = app.SearchForObject(CustomTypeAbbreviations[type] or type, t.headerID);
+	if obj then
+		local name = obj.name;
+		local icon = obj.icon;
+		if name then rawset(t, "name", name); end
+		if icon then rawset(t, "icon", icon); end
+	else
+		app.print("Failed finding object for custom header",type,t.headerID);
+	end
+	return returnField and t[returnField] or nil;
+end
+
 -- Header Lib
 local headerFields = {
 	["key"] = function(t)
@@ -13366,9 +13388,11 @@ local headerFields = {
 	["name"] = function(t)
 		return L["HEADER_NAMES"][t.headerID];
 	end,
+	["nameAsCustom"] = function(t) FillCustomData(t, "name"); end,
 	["icon"] = function(t)
 		return L["HEADER_ICONS"][t.headerID];
 	end,
+	["iconAsCustom"] = function(t) FillCustomData(t, "icon"); end,
 	["description"] = function(t)
 		return L["HEADER_DESCRIPTIONS"][t.headerID];
 	end,
@@ -13403,6 +13427,14 @@ fields.icon = headerFields.iconAsAchievement;
 fields.saved = headerFields.savedAsQuest;
 fields.trackable = headerFields.trackableAsQuest;
 app.BaseHeaderWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseHeaderWithAchievementAndQuest");
+local fields = RawCloneData(headerFields);
+fields.name = headerFields.nameAsCustom;
+fields.icon = headerFields.iconAsCustom;
+fields.description = nil;
+app.BaseHeaderCustom = app.BaseObjectFields(fields, "BaseHeaderCustom");
+app.CreateHeader = function(id, t)
+	return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderCustom);
+end
 app.CreateNPC = function(id, t)
 	if t then
 		-- TEMP: clean MoH tagging from random Vendors
