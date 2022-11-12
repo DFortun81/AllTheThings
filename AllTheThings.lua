@@ -24,7 +24,6 @@ local C_ArtifactUI_GetAppearanceInfoByID = C_ArtifactUI.GetAppearanceInfoByID;
 local C_Item_IsDressableItemByID = C_Item.IsDressableItemByID;
 local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
 local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
-local C_TransmogCollection_GetIllusionSourceInfo = C_TransmogCollection.GetIllusionSourceInfo;
 local C_TransmogCollection_GetItemInfo = C_TransmogCollection.GetItemInfo;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
@@ -7398,8 +7397,9 @@ local function AttachTooltip(self)
 	end
 
 	if CanAttachTooltips() then
+		local link, target, spellID;
 		-- check what this tooltip is currently displaying, and keep that reference
-		local link, target, spellID = select(2, self:GetItem());
+		link = select(2, self:GetItem());
 		if link and not link:find("%[]") then
 			if self.AllTheThingsProcessing and self.AllTheThingsProcessing == link then
 				return true;
@@ -11670,6 +11670,8 @@ end)();
 -- Illusion Lib
 -- TODO: add caching for consistency/move to sub-item lib?
 (function()
+local GetIllusionLink = C_TransmogCollection.GetIllusionSourceInfo;
+local GetIllusionLink1002 = C_TransmogCollection.GetIllusionStrings;
 local fields = {
 	["key"] = function(t)
 		return "illusionID";
@@ -11715,11 +11717,13 @@ local fields = {
 		return ATTAccountWideData.Illusions[t.illusionID];
 	end,
 	["silentLink"] = function(t)
-		--[[ 9.1 TEST
-		local _, hyperlink = C_TransmogCollection.GetIllusionStrings(t.illusionID);
-		return hyperlink;
-		--]]
-		return select(3, C_TransmogCollection_GetIllusionSourceInfo(t.illusionID));
+		local link;
+		if GetIllusionLink1002 then
+			link = select(2, GetIllusionLink1002(t.illusionID));
+		else
+			link = select(3, GetIllusionLink(t.illusionID));
+		end
+		return link;
 	end,
 };
 app.BaseIllusion = app.BaseObjectFields(fields, "BaseIllusion");
@@ -22836,6 +22840,8 @@ app.LoadDebugger = function()
 	end
 end	-- app.LoadDebugger
 
+-- Tooltip Hooks
+do
 hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
 	if CanAttachTooltips() then
 		local link = C_ToyBox.GetToyLink(itemID);
@@ -22854,23 +22860,41 @@ hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, recipeID, rea
 		end
 	end
 end)
--- GameTooltip:HookScript("OnUpdate", CheckAttachTooltip);
-GameTooltip:HookScript("OnShow", AttachTooltip);
-GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
-GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
-GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
+
+-- 10.0.2
+-- https://wowpedia.fandom.com/wiki/Patch_10.0.2/API_changes#Tooltip_Changes
+if TooltipDataProcessor then
+	-- TODO: maybe in future refine this to specific tooltip datas that we actually can utilize...
+	local function OnTooltipAll(tooltip, data)
+		-- app.PrintDebug("OnTooltipAll", tooltip, data)
+		-- app.PrintTable(data)
+		AttachTooltip(tooltip);
+	end
+	-- app.PrintDebug("Tooltip Attach Process")
+	TooltipDataProcessor.AddTooltipPostCall(TooltipDataProcessor.AllTypes, OnTooltipAll)
+	-- TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, OnTooltipSetItem)
+	-- TooltipDataProcessor.AddTooltipPostCall(TooltipDataProcessor.AllTypes, AttachTooltip)
+else
+	GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+	GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+	GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
+	ItemRefTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+	ItemRefTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+	ItemRefShoppingTooltip1:HookScript("OnTooltipSetQuest", AttachTooltip);
+	ItemRefShoppingTooltip1:HookScript("OnTooltipSetItem", AttachTooltip);
+	ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
+	ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
+
+	-- GameTooltip:HookScript("OnUpdate", CheckAttachTooltip);
+	GameTooltip:HookScript("OnShow", AttachTooltip);
+	ItemRefTooltip:HookScript("OnShow", AttachTooltip);
+	ItemRefShoppingTooltip1:HookScript("OnShow", AttachTooltip);
+	ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
+end
+
 GameTooltip:HookScript("OnTooltipCleared", ClearTooltip);
-ItemRefTooltip:HookScript("OnShow", AttachTooltip);
-ItemRefTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
-ItemRefTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 ItemRefTooltip:HookScript("OnTooltipCleared", ClearTooltip);
-ItemRefShoppingTooltip1:HookScript("OnShow", AttachTooltip);
-ItemRefShoppingTooltip1:HookScript("OnTooltipSetQuest", AttachTooltip);
-ItemRefShoppingTooltip1:HookScript("OnTooltipSetItem", AttachTooltip);
 ItemRefShoppingTooltip1:HookScript("OnTooltipCleared", ClearTooltip);
-ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
-ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
-ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
 
 --[[
@@ -22890,6 +22914,7 @@ hooksecurefunc("EmbeddedItemTooltip_SetItemByQuestReward", function(self, ...)
 	self.Tooltip:Show();
 end);
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
+end -- Tooltip Hooks
 
 -- Auction House Lib
 (function()

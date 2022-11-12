@@ -921,7 +921,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 if GetLocale() == "zhTW" then
-	a[-1101] = "洪荒風暴",												-- Primal Storms
+	a[-1101] = "洪荒風暴";												-- Primal Storms
 	a[-1110] = "龍鱗遠征隊";												-- Dragonscale Expedition
 	a[-1120] = "莫魯克半人馬";											-- Maruuk Centaur
 	a[-1130] = "伊斯凱拉巨牙海民";										-- Iskaara Tuskarr
