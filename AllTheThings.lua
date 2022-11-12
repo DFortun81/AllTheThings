@@ -13398,24 +13398,11 @@ local headerFields = {
 	["key"] = function(t)
 		return "headerID";
 	end,
-	["headerCode"] = function(t)
-		if t.type then
-			return t.type..t.headerID;
-		else
-			return t.headerID;
-		end
-	end,
 	["name"] = function(t)
 		return L["HEADER_NAMES"][t.headerID];
 	end,
-	["nameAsCustom"] = function(t)
-		return cache.GetCachedField(t, "name", CacheInfo);
-	end,
 	["icon"] = function(t)
 		return L["HEADER_ICONS"][t.headerID];
-	end,
-	["iconAsCustom"] = function(t)
-		return cache.GetCachedField(t, "icon", CacheInfo) or 4555017;
 	end,
 	["description"] = function(t)
 		return L["HEADER_DESCRIPTIONS"][t.headerID];
@@ -13451,9 +13438,22 @@ fields.icon = headerFields.iconAsAchievement;
 fields.saved = headerFields.savedAsQuest;
 fields.trackable = headerFields.trackableAsQuest;
 app.BaseHeaderWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseHeaderWithAchievementAndQuest");
-local fields = RawCloneData(headerFields);
-fields.name = headerFields.nameAsCustom;
-fields.icon = headerFields.iconAsCustom;
+-- Custom Type Header
+local fields = RawCloneData(headerFields, {
+	["headerCode"] = function(t)
+		if t.type then
+			return t.type..t.headerID;
+		else
+			return t.headerID;
+		end
+	end,
+	["name"] = function(t)
+		return cache.GetCachedField(t, "name", CacheInfo);
+	end,
+	["icon"] = function(t)
+		return cache.GetCachedField(t, "icon", CacheInfo) or 4555017;
+	end,
+});
 fields.description = nil;
 app.BaseHeaderCustom = app.BaseObjectFields(fields, "BaseHeaderCustom");
 app.CreateHeader = function(id, t)
