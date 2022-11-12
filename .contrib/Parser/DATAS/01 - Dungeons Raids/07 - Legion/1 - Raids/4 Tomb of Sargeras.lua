@@ -1096,7 +1096,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						}),
 						q(47727, {	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
 							["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Mythic difficulty each week.\n",
-							["altQuests"] = { 47727 },	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
 							["provider"] = { "n", 119723 },	-- Image of Aegwynn
 						}),
 						i(147508, {	-- Wailing Soul (Mythic)
