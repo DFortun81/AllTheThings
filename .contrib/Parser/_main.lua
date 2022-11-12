@@ -31,6 +31,14 @@ ROOTS = {
 	["Holidays"] = "Holidays",
 };
 
+-- Custom Header Constants (verify against AllTheThings.lua::CustomTypeAbbreviations)
+HEADER = {
+	ACHIEVEMENT = "a",
+	ITEM = "i",
+	QUEST = "q",
+	SPELL = "s",
+};
+
 -- Map Constants for quick and easy replacement when we can get mapIDs on live!
 -- Raids (Classic)
 BLACKWING_LAIR = 287;
@@ -1956,6 +1964,11 @@ gsh = function(id, t)									-- Create a GEAR SET HEADER Object (IE: "Season 1"
 end
 gssh = function(id, t)									-- Create a GEAR SET SUB HEADER Object (IE: "Gladiator")
 	return struct("setSubHeaderID", id, t);
+end
+header = function(type, id, t)							-- Create a custom Header which will use the plain Text of the specified in-game object based on Type-ID combination
+	t = struct("headerID", id, t);
+	t.type = type;
+	return t;
 end
 heir = function(id, t)									-- Create an HEIRLOOM Object(NOTE: You should only use this if not an appearance)
 	return struct("itemID", id, t);
