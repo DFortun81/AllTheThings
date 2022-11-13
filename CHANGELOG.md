@@ -1,40 +1,32 @@
 # AllTheThings
 
-## [DF-3.0.3](https://github.com/DFortun81/AllTheThings/tree/DF-3.0.3) (2022-11-06)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.0.2...DF-3.0.3) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.0.4](https://github.com/DFortun81/AllTheThings/tree/DF-3.0.4) (2022-11-13)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.0.3...DF-3.0.4) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
 ### Functional changes
 
-- Added 'Cmd' Modifier key for Mac users.
-- Quests/Items with Quests which are directly marked as 'repeatable' (meaning they are never permanently captured by Blizzard as 'complete') will no longer be considered 'trackable' by ATT (i.e. tooltips will no longer show 'Incomplete' for situations where the Thing cannot actually be Completed for some duration of time).
-- Added Settings tooltip ID toggles for 'Achievement Category' and 'Header'.
+- Popout "Source(s)" will now be much better about including all Criteria for Achievements in the popout.
+- Some preparation for patch 10.0.2 next week, hopefully no more ghouls from ATT again.
 
 ### Logic fixes
 
-- Fixed various invisible Settings buttons. Most notable is the button to switch Profiles.
-- Fixed Instances not being automatically reset when using the Raid Assistant to auto-reset them.
-- Added some further looping quest chain protection with a report message if it is encountered. This is to not break your game when we accidentally create loops in questchains.
-- Things considered Locked due to character Level will no longer be automatically be marked as disabled in party sync (caused old Bonus Objectives to not show when tracking Locked Quests, when in fact they can be completed in the proper Party Sync scenarios).
-- Hidden Achievements will no longer be erroneously pulled into the general Achievements structure.
-- Fixed Protoform Synthesis not automatically closing ATT tradeskill window.
+- Fixed a subtle logic issue where a raw command search for an item using condensed form (i.e. `/att i:###.###`) would not properly create the proper item link for the search result.
+- Fixed a very subtle and nuanced bug where an Item tooltip within an ATT list would use the Link from an alternate variant of the same Item, even though the raw data of the Item group may differ (i.e. certain situations where viewing a Normal Item, then subsequently viewing the Heroic version of the same Item within a popout or minilist could show the Normal Item Link instead).
+- Changes in quest status will now wipe the tooltip search cache. (i.e killing a rare or turning in a quest will now show the updated tooltip with proper quest completion indicated).
+- Illusion tooltips no longer show literally every character you've ever logged into with the 'Completed By' option.
+- Fixed a Lua bug where once-per-account quest is linked to a character which was deleted or now has a different UID.
+- Fixed Dynamic Categories/Profession ATT lists from pulling extra content.
 
 
 ### Data fixes
 
-- Added WoW 18th Anniversary event. Another year has gone by! 🎉
-- More fixes to some obscure quests in BfA and Legion (mostly Bonus Objectives).
-- Added [Twitch drops](https://worldofwarcraft.com/en-us/news/23873861/updated-nov-1-dragonflight-twitch-drops-earn-rewards-watching-and-supporting-creators).
-- Added new [12-Month subscription](https://worldofwarcraft.com/en-us/news/23874312/upgrade-to-a-12-month-world-of-warcraft-subscription-and-get-more) mounts.
-- Fixed an error on login about missing unobtaiable tag.
-- Updated Darnassus, Moonglade, Stonetalon Mountains, WotLK Dalaran.
-- Updated Netherstorm PVP Vendors.
-- Moved the Molten Front to Expansion Features for Cataclysm.
-- Profession updates. This is not yet finished.
-- Updates to Dragonflight content (visible in Debug mode for now).
-- Added Dragonflight pre-patch event (visible in Debug mode for now).
-- Updated Pilgrim's Bounty achievements.
-- Added Soulshape Toy.
-- Some adjustments in Mechagon content.
-- Removed class constraints from Sunwell Recipe Items (you can get all of them on one character since patch 10.0!)
+- Updated deDE localization thanks to @Nelythia!
+- Updated zones to include legacy information: Thousand Needles, Thunder Bluff, Teldrassil, Winterspring, Felwood, Dustwallow Marsh, Un'Goro Crater.
+- Cleanup/de-duplication/re-structuring of BFA Darkshore/Warfront content.
+- Various Achievement cleanups.
+- Huge clean up and revision to The Tillers content to hopefully make it far more useful.
+- Marked more Dragonflight pre-patch phase 2 content: Uldaman: Legacy of Tyr, The Forbidden Reach, Primal Storms (pre-patch event). We will have a new release on weekly reset.
+- Further preparation for Dragonflight profession additions.
+- Marked Threads of Fate quests as going away this coming weekly reset with Dragonflight pre-patch phase 2 (opposed to the expansion launch like the were marked before). Your last chance to get into the system to complete those quests!
 - Other fixes.
