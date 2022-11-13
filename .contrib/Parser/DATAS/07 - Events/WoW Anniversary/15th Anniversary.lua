@@ -584,13 +584,7 @@ root("WorldEvents", n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVE
 			ach(13928, {	-- Alterac Valley of Olde (A)
 				["races"] = ALLIANCE_ONLY,
 			}),
-			i(172022, {	-- Stormpike Battle Ram (MOUNT!)
-				["races"] = ALLIANCE_ONLY,
-			}),
 			ach(13930, {	-- Alterac Valley of Olde (H)
-				["races"] = HORDE_ONLY,
-			}),
-			i(172023, {	-- Frostwolf Snarler (MOUNT!)
 				["races"] = HORDE_ONLY,
 			}),
 			n(QUESTS, {
@@ -714,6 +708,14 @@ root("WorldEvents", n(FIFTEENTH_ANNIVERSARY, bubbleDownSelf({ ["u"] = WOW_ANNIVE
 				q(63953, {	-- Korrak's Revenge
 					["timeline"] = { "added 9.1.5" },
 					["isYearly"] = true,	-- presumably
+					["groups"] = {
+						i(172022, {	-- Stormpike Battle Ram (MOUNT!)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(172023, {	-- Frostwolf Snarler (MOUNT!)
+							["races"] = HORDE_ONLY,
+						}),
+					},
 				}),
 				q(57320, {	-- Launch the Attack!
 					["repeatable"] = true,	-- presumably
