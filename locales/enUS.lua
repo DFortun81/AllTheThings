@@ -1087,7 +1087,7 @@ app.L = {
 		[-157] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Activated
 		[-158] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Activated
 	-- Class Trial
-		[-160] = 236568,																	-- Level 60 Class Trial
+		[-160] = 236567,																	-- Level 60 Class Trial
 	-- Junkboxes
 		[-165] = "Interface\\Icons\\inv_box_01",											-- Junkboxes
 	-- Emissary

@@ -87,6 +87,22 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170607),	-- Springrain Idol of Rage
 						i(170610),	-- Springrain Stone of Rage
 					}),
+					cl(DRUID, RESTORATION, {
+						i(170611),	-- Springrain Stave
+						i(170794),	-- Springrain Hood
+						i(170796),	-- Springrain Shoulders
+						i(170618),	-- Springrain Cloak of Wisdom
+						i(170791),	-- Springrain Jerkin
+						i(170798),	-- Springrain Bindings
+						i(170793),	-- Springrain Gloves
+						i(170797),	-- Springrain Waistband
+						i(170795),	-- Springrain Britches
+						i(170792),	-- Springrain Boots
+						i(170621),	-- Springrain Band of Wisdom
+						i(170622),	-- Springrain Ring of Wisdom
+						i(170620),	-- Springrain Idol of Wisdom
+						i(170623),	-- Springrain Stone of Wisdom
+					}),
 				}),
 				cl(HUNTER, {
 					i(171988, {	-- Adventurer's Footlocker
@@ -150,6 +166,22 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170659),	-- Mistdancer Staff
 						i(170660),	-- Mistdancer Sword
 					}),
+					cl(MONK, MISTWEAVER, {
+						i(170659),	-- Mistdancer Staff
+						i(170825),	-- Mistdancer Hood
+						i(170827),	-- Mistdancer Shoulders
+						i(170653),	-- Mistdancer Cloak of Wisdom
+						i(170830),	-- Mistdancer Jerkin
+						i(170829),	-- Mistdancer Bindings
+						i(170824),	-- Mistdancer Gloves
+						i(170828),	-- Mistdancer Waistband
+						i(170826),	-- Mistdancer Britches
+						i(170823),	-- Mistdancer Boots
+						i(170657),	-- Mistdancer Band of Wisdom
+						i(170656),	-- Mistdancer Ring of Wisdom
+						i(170654),	-- Mistdancer Idol of Wisdom
+						i(170658),	-- Mistdancer Stone of Wisdom
+					}),
 					cl(MONK, WINDWALKER, {
 						i(170660),	-- Mistdancer Sword
 						i(170818),	-- Mistdancer Helm
@@ -173,6 +205,40 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170673),	-- Sunsoul Scepter
 						i(170675),	-- Sunsoul Sword
 						i(170677),	-- Sunsoul Warmaul
+					}),
+					cl(PALADIN, HOLY, {
+						i(170676),	-- Sunsoul Bulwark
+						i(170675),	-- Sunsoul Sword
+						i(170842),	-- Sunsoul Headpiece
+						i(170844),	-- Sunsoul Spaulders
+						i(170667),	-- Sunsoul Cloak of Wisdom
+						i(170839),	-- Sunsoul Breastplate
+						i(170846),	-- Sunsoul Armplates
+						i(170841),	-- Sunsoul Gloves
+						i(170853),	-- Sunsoul Waistband
+						i(170843),	-- Sunsoul Leggings
+						i(170840),	-- Sunsoul Boots
+						i(170671),	-- Sunsoul Band of Wisdom
+						i(170670),	-- Sunsoul Ring of Wisdom
+						i(170669),	-- Sunsoul Idol of Wisdom
+						i(170672),	-- Sunsoul Stone of Wisdom
+					}),
+					cl(PALADIN, PROTECTION, {
+						i(170676),	-- Sunsoul Bulwark
+						i(170675),	-- Sunsoul Sword
+						i(170850),	-- Sunsoul Faceguard
+						i(170852),	-- Sunsoul Shoulderguards
+						i(170684),	-- Sunsoul Cloak of Stoicism
+						i(170847),	-- Sunsoul Chestguard
+						i(170854),	-- Sunsoul Armguards
+						i(170849),	-- Sunsoul Handguards
+						i(170845),	-- Sunsoul Belt
+						i(170851),	-- Sunsoul Legguards
+						i(170848),	-- Sunsoul Greaves
+						i(170688),	-- Sunsoul Band of Stoicism
+						i(170687),	-- Sunsoul Ring of Stoicism
+						i(170686),	-- Sunsoul Defender Idol
+						i(170689),	-- Sunsoul Defender Stone
 					}),
 					cl(PALADIN, RETRIBUTION, {
 						i(170677),	-- Sunsoul Warmaul
@@ -272,6 +338,23 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170715),	-- Streamtalker Idol of Rage
 						i(170718),	-- Streamtalker Stone of Rage
 					}),
+					cl(SHAMAN, RESTORATION, {
+						i(170725),	-- Streamtalker Aegis
+						i(170724),	-- Streamtalker Claws
+						i(170898),	-- Streamtalker Cowl
+						i(170902),	-- Streamtalker Bracers
+						i(170895),	-- Streamtalker Vest
+						i(170727),	-- Streamtalker Cloak of Wisdom
+						i(170900),	-- Streamtalker Spaulders
+						i(170896),	-- Streamtalker Sabatons
+						i(170899),	-- Streamtalker Leggings
+						i(170901),	-- Streamtalker Girdle
+						i(170897),	-- Streamtalker Grips
+						i(170731),	-- Streamtalker Band of Wisdom
+						i(170730),	-- Streamtalker Ring of Wisdom
+						i(170729),	-- Streamtalker Idol of Wisdom
+						i(170732),	-- Streamtalker Stone of Wisdom
+					}),
 				}),
 				cl(WARLOCK, {	-- Level 50 Boost provides the Level 48 items. Confirmed by Timum 24.09.2021
 					cl(WARLOCK, AFFLICTION, {
@@ -299,20 +382,22 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170744),	-- Oathsworn Headchopper
 						i(170746),	-- Oathsworn Bulwark
 					}),
-					i(170743),	-- Oathsworn Greataxe
-					i(170914),	-- Oathsworn Helm
-					i(170916),	-- Oathsworn Pauldrons
-					i(170758),	-- Oathsworn Cloak of Battle
-					i(170911),	-- Oathsworn Breastplate
-					i(170918),	-- Oathsworn Vambraces
-					i(170913),	-- Oathsworn Gauntlets
-					i(170917),	-- Oathsworn Girdle
-					i(170915),	-- Oathsworn Legplates
-					i(170912),	-- Oathsworn Sabatons
-					i(170754),	-- Oathsworn Band of Might
-					i(170753),	-- Oathsworn Ring of Might
-					i(170755),	-- Oathsworn Idol of Battle
-					i(170756),	-- Oathsworn Stone of Battle
+					cl(WARRIOR, ARMS, {
+						i(170743),	-- Oathsworn Greataxe
+						i(170914),	-- Oathsworn Helm
+						i(170916),	-- Oathsworn Pauldrons
+						i(170758),	-- Oathsworn Cloak of Battle
+						i(170911),	-- Oathsworn Breastplate
+						i(170918),	-- Oathsworn Vambraces
+						i(170913),	-- Oathsworn Gauntlets
+						i(170917),	-- Oathsworn Girdle
+						i(170915),	-- Oathsworn Legplates
+						i(170912),	-- Oathsworn Sabatons
+						i(170754),	-- Oathsworn Band of Might
+						i(170753),	-- Oathsworn Ring of Might
+						i(170755),	-- Oathsworn Idol of Battle
+						i(170756),	-- Oathsworn Stone of Battle
+					}),
 				}),
 			},
 		}),
@@ -326,6 +411,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(170593),	-- Heart-Lesion Pendant
 				}),
 				cl(DEATHKNIGHT, BLOOD, {
+					-- this might be obtainable, but need confirmation
 					i(170590),	-- Heart-Lesion Greatsword
 					i(170770),	-- Heart-Lesion Faceguard
 					i(170599),	-- Heart-Lesion Amulet
@@ -384,21 +470,8 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(170631),	-- Springrain Stone of Durability
 				}),
 				cl(DRUID, RESTORATION, {
-					i(170625),	-- Springrain Staff
-					i(170794),	-- Springrain Hood
+					i(170625),	-- Springrain Staff -- not granted with boost
 					i(170612),	-- Springrain Medallion
-					i(170796),	-- Springrain Shoulders
-					i(170618),	-- Springrain Cloak of Wisdom
-					i(170791),	-- Springrain Jerkin
-					i(170798),	-- Springrain Bindings
-					i(170793),	-- Springrain Gloves
-					i(170797),	-- Springrain Waistband
-					i(170795),	-- Springrain Britches
-					i(170792),	-- Springrain Boots
-					i(170621),	-- Springrain Band of Wisdom
-					i(170622),	-- Springrain Ring of Wisdom
-					i(170620),	-- Springrain Idol of Wisdom
-					i(170623),	-- Springrain Stone of Wisdom
 				}),
 			}),
 			cl(HUNTER, {
@@ -420,20 +493,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(170650),	-- Mistdancer Defender Stone
 				}),
 				cl(MONK, MISTWEAVER, {
-					i(170825),	-- Mistdancer Hood
 					i(170655),	-- Mistdancer Necklace
-					i(170827),	-- Mistdancer Shoulders
-					i(170653),	-- Mistdancer Cloak of Wisdom
-					i(170830),	-- Mistdancer Jerkin
-					i(170829),	-- Mistdancer Bindings
-					i(170824),	-- Mistdancer Gloves
-					i(170828),	-- Mistdancer Waistband
-					i(170826),	-- Mistdancer Britches
-					i(170823),	-- Mistdancer Boots
-					i(170657),	-- Mistdancer Band of Wisdom
-					i(170656),	-- Mistdancer Ring of Wisdom
-					i(170654),	-- Mistdancer Idol of Wisdom
-					i(170658),	-- Mistdancer Stone of Wisdom
 				}),
 				cl(MONK, WINDWALKER, {
 					i(170662),	-- Mistdancer Choker
@@ -441,37 +501,11 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 			cl(PALADIN, {
 				cl(PALADIN, HOLY, {
-					i(170674),	-- Sunsoul Shield
-					i(170842),	-- Sunsoul Headpiece
+					i(170674),	-- Sunsoul Shield -- not granted with boost
 					i(170668),	-- Sunsoul Necklace
-					i(170844),	-- Sunsoul Spaulders
-					i(170667),	-- Sunsoul Cloak of Wisdom
-					i(170839),	-- Sunsoul Breastplate
-					i(170846),	-- Sunsoul Armplates
-					i(170841),	-- Sunsoul Gloves
-					i(170853),	-- Sunsoul Waistband
-					i(170843),	-- Sunsoul Leggings
-					i(170840),	-- Sunsoul Boots
-					i(170671),	-- Sunsoul Band of Wisdom
-					i(170670),	-- Sunsoul Ring of Wisdom
-					i(170669),	-- Sunsoul Idol of Wisdom
-					i(170672),	-- Sunsoul Stone of Wisdom
 				}),
 				cl(PALADIN, PROTECTION, {
-					i(170850),	-- Sunsoul Faceguard
 					i(170685),	-- Sunsoul Amulet
-					i(170852),	-- Sunsoul Shoulderguards
-					i(170684),	-- Sunsoul Cloak of Stoicism
-					i(170847),	-- Sunsoul Chestguard
-					i(170854),	-- Sunsoul Armguards
-					i(170849),	-- Sunsoul Handguards
-					i(170845),	-- Sunsoul Belt
-					i(170851),	-- Sunsoul Legguards
-					i(170848),	-- Sunsoul Greaves
-					i(170688),	-- Sunsoul Band of Stoicism
-					i(170687),	-- Sunsoul Ring of Stoicism
-					i(170686),	-- Sunsoul Defender Idol
-					i(170689),	-- Sunsoul Defender Stone
 				}),
 				cl(PALADIN, RETRIBUTION, {
 					i(170679),	-- Sunsoul Pendant
@@ -482,6 +516,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(170696),	-- Communal Necklace
 				}),
 				cl(PRIEST, SHADOW, {
+					-- this might be obtainable, but need confirmation
 					i(170703),	-- Communal Stave
 					i(170865),	-- Communal Cowl
 					i(170690),	-- Communal Medallion
@@ -512,22 +547,9 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(170714),	-- Streamtalker Choker
 				}),
 				cl(SHAMAN, RESTORATION, {
-					i(170734),	-- Streamtalker Slicers
-					i(170735),	-- Streamtalker Shield
-					i(170898),	-- Streamtalker Cowl
+					i(170734),	-- Streamtalker Slicers -- not granted with boost
+					i(170735),	-- Streamtalker Shield -- not granted with boost
 					i(170728),	-- Streamtalker Necklace
-					i(170902),	-- Streamtalker Bracers
-					i(170895),	-- Streamtalker Streamtalt
-					i(170727),	-- Streamtalker Cloak of Wisdom
-					i(170900),	-- Streamtalker Spaulders
-					i(170896),	-- Streamtalker Sabatons
-					i(170899),	-- Streamtalker Leggings
-					i(170901),	-- Streamtalker Girdle
-					i(170897),	-- Streamtalker Grips
-					i(170731),	-- Streamtalker Band of Wisdom
-					i(170730),	-- Streamtalker Ring of Wisdom
-					i(170729),	-- Streamtalker Idol of Wisdom
-					i(170732),	-- Streamtalker Stone of Wisdom
 				}),
 			}),
 			cl(WARLOCK, {
@@ -540,6 +562,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(170757),	-- Oathsworn Pendant
 				}),
 				cl(WARRIOR, PROTECTION, {
+					-- this might be obtainable, but need confirmation
 					i(170922),	-- Oathsworn Faceguard
 					i(170748),	-- Oathsworn Amulet
 					i(170924),	-- Oathsworn Shoulderguards
