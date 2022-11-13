@@ -1474,13 +1474,11 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 root("HiddenQuestTriggers", {
 	tier(DF_TIER, {
 		prof(ALCHEMY, {
-			-- FIRST CRAFT
+			-- Alchemy Essentials
 			q(71251),	-- Advanced Phial Alchemical Experimentation
 			q(71253),	-- Advanced Potion Alchemical Experimentation
 			q(71250),	-- Basic Phial Alchemical Experimentation
 			q(71252),	-- Basic Potion Alchemical Experimentation
-			--q(),	-- Reclaim Concoctions
-			--q(),	-- Recraft Equipment
 			-- Reagents
 			q(71248),	-- Omnium Draconis
 			q(71249),	-- Primal Convergent
@@ -1533,7 +1531,6 @@ root("HiddenQuestTriggers", {
 			-- Finishing Reagents
 			q(71257),	-- Agitating Potion Augmentation
 			q(71255),	-- Brood Salt
-			--q(),	-- Illustrious Insight
 			q(71258),	-- Reactive Phial Embellishment
 			q(71254),	-- Stable Fluidic Draconium
 			q(71256),	-- Writhefire Oil
@@ -1555,10 +1552,8 @@ root("HiddenQuestTriggers", {
 			q(71355),	-- Infurious Alloy
 			q(71354),	-- Obsidian Seared Alloy
 			q(71352),	-- Primal Molten Alloy
-			-- Finishing Reagent
-			--q(),	-- Illustrious Insight
 			-- Optional Reagent
-			--q(),	--  Armor Spikes
+			q(71358),	--  Armor Spikes
 			-- Armor
 			q(71309),	-- Allied Chestplate of Generosity
 			q(71310),	-- Allied Wristguard of Companionship
@@ -1580,7 +1575,7 @@ root("HiddenQuestTriggers", {
 			q(71313),	-- Explorer's Plate Chestguard
 			q(71305),	-- Frostfire Legguards of Preparation
 			q(71308),	-- Infurious Helm of Vegeance
-			--q(),	-- Infurious Warboots of Impunity
+			q(71307),	-- Infurious Warboots of Impunity
 			q(71316),	-- Primal Molten Breastplate
 			q(71318),	-- Primal Molten Gauntlets
 			q(71322),	-- Primal Molten Greatbelt
@@ -1592,7 +1587,7 @@ root("HiddenQuestTriggers", {
 			q(71306),	-- Unstable Frostfire Belt
 			-- Shields
 			q(72183),	-- Draconium Defender
-			--q(),	-- Shield of the Hearth
+			q(71303),	-- Shield of the Hearth
 			q(71304),	-- Primal Molten Defender
 			-- Weapons
 			q(71332),	-- Draconium Axe
@@ -1635,7 +1630,7 @@ root("HiddenQuestTriggers", {
 			q(71364),	-- Khaz'gorite Sickle
 			q(71370),	-- Khaz'gorite Skinning Knife
 			-- Consumable Tools
-			--q(),	-- Master's Hammer
+			q(72262),	-- Master's Hammer
 			q(71357),	-- Serevite Repair Hammer
 			q(71344),	-- Serevite Skeleton Key
 			--q(),	-- Sturdy Expedition Shovel
@@ -1646,97 +1641,90 @@ root("HiddenQuestTriggers", {
 			-- Pets
 			q(71351),	-- Alvin The Anvil
 			-- Dragon Ridning
-			--q(),	-- Prototype Explorer's Barding Framework
-			--q(),	-- Prototype Regal Barding Framework
+			q(71342),	-- Prototype Explorer's Barding Framework
+			q(71343),	-- Prototype Regal Barding Framework
 		}),
 		--[[
 		prof(COOKING, {
 		}),
-		prof(ENCHANTING, {
-			-- Recrafting --
-			q(),	-- Recraft Equipment
-			-- Fishing Reagents --
-			q(),	-- Illustrations Insight
-			-- Cloak Enchantments
-			q(),	-- Graceful Avoidance
-			q(),	-- Homebound Avoidance
-			q(),	-- Renegenerative Leech
-			q(),	-- Writ of Avoidance
-			q(),	-- Writ of Leech
-			q(),	-- Writ of Speed
-			-- Chest Enchantments
-			q(),	-- Accelerated Agility
-			q(),	-- Reserved Intellect
-			q(),	-- Sustained Strength
-			q(),	-- Waking Stats
-			-- Bracer Enchantments
-			q(),	-- Devotion of Avoidance
-			q(),	-- Devotion of Leech
-			q(),	-- Devotion of Speed
-			q(),	-- Writ of Avoidance
-			q(),	-- Writ of Leech
-			q(),	-- Writ of Speed
-			-- Boot Enchantments
-			q(),	-- Plainsrunner's Breeze
-			q(),	-- Rider's Reassurance
-			q(),	-- Watcher's Loam
-			-- Ring Enchantments
-			q(),	-- Devotion of Critical Strike
-			q(),	-- Devotion of Haste
-			q(),	-- Devotion of Mastery
-			q(),	-- Devotion of Versatility
-			q(),	-- Writ of Critical Strike
-			q(),	-- Writ of Haste
-			q(),	-- Writ of Mastery
-			q(),	-- Writ of Versatility
-			-- Weapon Enchantments
-			q(),	-- Burning Devotion
-			q(),	-- Burning Writ
-			q(),	-- Earthen Devotion
-			q(),	-- Earthen Writ
-			q(),	-- Frozen Devotion
-			q(),	-- Frozen Writ
-			q(),	-- Sophic Devotion
-			q(),	-- Sophic Writ
-			q(),	-- Wafting Devotion
-			q(),	-- Wafting Writ
-			-- Profession Tool Enchantments
-			q(),	-- Draconic Detness
-			q(),	-- Draconic Finess
-			q(),	-- Draconic Inspiration
-			q(),	-- Draconic Perception
-			q(),	-- Draconic Resourcefulness
-			-- Rods and Wands
-			q(),	-- Enchanted Writhebark Rod
-			q(),	-- Runed Draconium Rod
-			q(),	-- Runed Khaz'gorite
-			q(),	-- Runed Serevite Rod
-			q(),	-- Torch of Primal Awakening
-			-- Illusory Goods
-			q(),	-- Illusion: Primal Air
-			q(),	-- Illusion: Primal Earth
-			q(),	-- Illusion: Primal Fire
-			q(),	-- Illusion: Primal Frost
-			q(),	-- Illusion: Primal Mastery
-			q(),	-- Illusory Adornment: Air
-			q(),	-- Illusory Adornment: Earth
-			q(),	-- Illusory Adornment: Fire
-			q(),	-- Illusory Adornment: Frost
-			q(),	-- Illusory Adornment: Order
-			q(),	-- Khadgar's Disenchanting Rod
-			q(),	-- Primal Invocation Extract
-			q(),	-- Scepter of Spectacle: Air
-			q(),	-- Scepter of Spectacle: Earth
-			q(),	-- Scepter of Spectacle: Fire
-			q(),	-- Scepter of Spectacle: Frost
-			q(),	-- Scepter of Spectacle: Order
-			-- Shatters --
-			q(),	-- Crystalline Shatter
-			q(),	-- Elemental Shatter
-			-- Magical Merchandise
-			q(),	-- Sophic Amalgamation
-		}),
 		--]]
+		prof(ENCHANTING, {
+			-- Cloak Enchantments
+			q(71403),	-- Graceful Avoidance
+			q(71407),	-- Homebound Avoidance
+			q(71405),	-- Renegenerative Leech
+			q(71402),	-- Writ of Avoidance
+			q(71404),	-- Writ of Leech
+			q(71406),	-- Writ of Speed
+			-- Chest Enchantments
+			q(71398),	-- Accelerated Agility
+			q(71399),	-- Reserved Intellect
+			q(71401),	-- Sustained Strength
+			q(71400),	-- Waking Stats
+			-- Bracer Enchantments
+			q(71393),	-- Devotion of Avoidance
+			q(71395),	-- Devotion of Leech
+			q(71397),	-- Devotion of Speed
+			q(71392),	-- Writ of Avoidance
+			q(71394),	-- Writ of Leech
+			q(71396),	-- Writ of Speed
+			-- Boot Enchantments
+			q(71390),	-- Plainsrunner's Breeze
+			q(71389),	-- Rider's Reassurance
+			q(71391),	-- Watcher's Loam
+			-- Ring Enchantments
+			q(71409),	-- Devotion of Critical Strike
+			q(71411),	-- Devotion of Haste
+			q(71413),	-- Devotion of Mastery
+			q(71415),	-- Devotion of Versatility
+			q(71408),	-- Writ of Critical Strike
+			q(71410),	-- Writ of Haste
+			q(71412),	-- Writ of Mastery
+			q(71414),	-- Writ of Versatility
+			-- Weapon Enchantments
+			q(71426),	-- Burning Devotion
+			q(71425),	-- Burning Writ
+			q(71424),	-- Earthen Devotion
+			q(71423),	-- Earthen Writ
+			q(71428),	-- Frozen Devotion
+			q(71427),	-- Frozen Writ
+			q(71430),	-- Sophic Devotion
+			q(71429),	-- Sophic Writ
+			q(71422),	-- Wafting Devotion
+			q(71421),	-- Wafting Writ
+			-- Profession Tool Enchantments
+			q(71416),	-- Draconic Detness
+			q(71417),	-- Draconic Finess
+			q(71418),	-- Draconic Inspiration
+			q(71419),	-- Draconic Perception
+			q(71420),	-- Draconic Resourcefulness
+			-- Rods and Wands
+			q(71435),	-- Enchanted Writhebark Rod
+			q(71433),	-- Runed Draconium Rod
+			q(71434),	-- Runed Khaz'gorite
+			q(71945),	-- Runed Serevite Rod
+			q(71436),	-- Torch of Primal Awakening
+			-- Illusory Goods
+			q(71875),	-- Illusion: Primal Air
+			q(71874),	-- Illusion: Primal Earth
+			q(71873),	-- Illusion: Primal Fire
+			q(71871),	-- Illusion: Primal Frost
+			q(71870),	-- Illusion: Primal Mastery
+			q(71931),	-- Illusory Adornment: Air
+			q(71932),	-- Illusory Adornment: Earth
+			q(71432),	-- Illusory Adornment: Fire
+			q(71930),	-- Illusory Adornment: Frost
+			q(71933),	-- Illusory Adornment: Order
+			q(71876),	-- Khadgar's Disenchanting Rod
+			--q(),	-- Primal Invocation Extract
+			q(71886),	-- Scepter of Spectacle: Air
+			q(71884),	-- Scepter of Spectacle: Earth
+			q(71883),	-- Scepter of Spectacle: Fire
+			q(71881),	-- Scepter of Spectacle: Frost
+			q(71880),	-- Scepter of Spectacle: Order
+			-- Magical Merchandise
+			q(71878),	-- Sophic Amalgamation
+		}),
 		prof(ENGINEERING, {
 			-- Recrafting --
 			--q(),	-- Recraft Equipment
