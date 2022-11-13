@@ -8,19 +8,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 			["races"] = HORDE_ONLY,
 		}),
 		ach(8715),		-- Emperor Shaohao
-		ach(6552, {		-- Friends on the Farm
-			crit(1),		-- Farmer Fung
-			crit(2),		-- Jogu the Drunk
-			crit(3),		-- Chee Chee
-			crit(4),		-- Sho
-			crit(5),		-- Ella
-			crit(6),		-- Tina Mudclaw
-			crit(7),		-- Old Hillpaw
-			crit(8),		-- Haohan Mudclaw
-			crit(9),		-- Fish Fellreed
-			crit(10),		-- Gina Mudclaw
-			ach(6551),		-- Friend on the Farm
-		}),
 		ach(8208, {		-- Kirin Tor Offensive
 			["races"] = ALLIANCE_ONLY,
 		}),

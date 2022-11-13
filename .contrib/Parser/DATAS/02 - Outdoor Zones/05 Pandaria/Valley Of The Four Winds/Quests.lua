@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 _.Zones =
 {
 	m(PANDARIA, {
@@ -262,29 +261,6 @@ _.Zones =
 						}),
 					},
 				}),
-				q(31329, {	-- A Beautiful Brooch
-					["description"] = "Requires reputation level of \"Good Friend\" or better with Tina Mudclaw to drop.",
-					["provider"] = { "i", 86436 },	-- Beautiful Brooch
-					["crs"] = {
-						59120,	-- Kunzen Rockflinger
-						59126,	-- Jokka-Jokka
-						59128,	-- Jim-Jim
-						59130,	-- Teeku
-						59127,	-- Kon-Kon
-						59129,	-- Maaka
-						59125,	-- Kunzen Soupmaster
-						59123,	-- Kunzen Ritualist
-						59134,	-- Yammo
-						59121,	-- Kunzen Hunter
-						59133,	-- Buk-Buk
-						59131,	-- Lor-Lor
-						59135,	-- Bimba
-						59124,	-- Kunzen Collector
-						59132,	-- Rit-Rit
-						59119,	-- Kunzen Ravager
-						59122,	-- Kunzen Herdskeeper
-					},
-				}),
 				q(30275, {	-- A Crocolisk Tale
 					["description"] = "Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",
 					["provider"] = { "i", 79238 },	-- Enormous Crocolisk Tail
@@ -293,149 +269,6 @@ _.Zones =
 						58754,	-- Manglemaw
 						58755,	-- Manglemaw's Mother
 					},
-				}),
-				q(30402, {	-- A Dish for Chee Chee
-					["isDaily"] = true,
-					["provider"] = { "n", 58709 },	-- Chee Chee
-				}),
-				q(30386, {	-- A Dish for Ella
-					["isDaily"] = true,
-					["provider"] = { "n", 58647 },	-- Ella
-				}),
-				q(30421, {	-- A Dish for Farmer Fung
-					["isDaily"] = true,
-					["provider"] = { "n", 57298 },	-- Farmer Fung
-				}),
-				q(30427, {	-- A Dish for Fish
-					["isDaily"] = true,
-					["provider"] = { "n", 58705 },	-- Fish
-				}),
-				q(30390, {	-- A Dish for Gina
-					["isDaily"] = true,
-					["provider"] = { "n", 58706 },	-- Gina
-				}),
-				q(30414, {	-- A Dish for Haohan
-					["isDaily"] = true,
-					["provider"] = { "n", 57402 },	-- Haohan
-				}),
-				q(30439, {	-- A Dish for Jogu
-					["isDaily"] = true,
-					["provider"] = { "n", 58710 },	-- Jogu
-				}),
-				q(30396, {	-- A Dish for Old Hillpaw
-					["isDaily"] = true,
-					["provider"] = { "n", 58707 },	-- Old Hillpaw
-				}),
-				q(30408, {	-- A Dish for Sho
-					["isDaily"] = true,
-					["provider"] = { "n", 58708 },	-- Sho
-				}),
-				q(30433, {	-- A Dish for Tina
-					["isDaily"] = true,
-					["provider"] = { "n", 58761 },	-- Tina Mudclaw
-				}),
-				q(31328, {	-- An Exquisite Earring
-					["description"] = "Requires reputation level of \"Friend\" or better with Tina Mudclaw to drop.",
-					["provider"] = { "i", 86435 },	-- Exquisite Earring
-					["crs"] = {
-						59120,	-- Kunzen Rockflinger
-						59126,	-- Jokka-Jokka
-						59128,	-- Jim-Jim
-						59130,	-- Teeku
-						59127,	-- Kon-Kon
-						59129,	-- Maaka
-						59125,	-- Kunzen Soupmaster
-						59123,	-- Kunzen Ritualist
-						59134,	-- Yammo
-						59121,	-- Kunzen Hunter
-						59133,	-- Buk-Buk
-						59131,	-- Lor-Lor
-						59135,	-- Bimba
-						59124,	-- Kunzen Collector
-						59132,	-- Rit-Rit
-						59119,	-- Kunzen Ravager
-						59122,	-- Kunzen Herdskeeper
-					},
-				}),
-				q(30471, {	-- A Gift For Chee Chee
-					["isDaily"] = true,
-					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 64464 },	-- Andi
-				}),
-				q(30473, {	-- A Gift For Fish
-					["isDaily"] = true,
-					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 64464 },	-- Andi
-				}),
-				q(30475, {	-- A Gift For Fung
-					["isDaily"] = true,
-					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 64464 },	-- Andi
-				}),
-				q(30479, {	-- A Gift For Gina
-					["isDaily"] = true,
-					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 64464 },	-- Andi
-				}),
-				q(30478, {	-- A Gift For Jogu
-					["isDaily"] = true,
-					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 64464 },	-- Andi
-				}),
-				q(30476, {	-- A Gift For Old Hillpaw
-					["isDaily"] = true,
-					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 64464 },	-- Andi
-				}),
-				q(30472, {	-- A Gift For Sho
-					["isDaily"] = true,
-					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 64464 },	-- Andi
-				}),
-				q(30470, {	-- A Gift For Tina
-					["isDaily"] = true,
-					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 64464 },	-- Andi
-				}),
-				q(30399, {	-- A Jade Cat for Chee Chee
-					["provider"] = { "n", 58709 },	-- Chee Chee
-					["repeatable"] = true,
-				}),
-				q(30381, {	-- A Jade Cat for Ella
-					["provider"] = { "n", 58647 },	-- Ella
-					["repeatable"] = true,
-				}),
-				q(30418, {	-- A Jade Cat for Farmer Fung
-					["provider"] = { "n", 57298 },	-- Farmer Fung
-					["repeatable"] = true,
-				}),
-				q(30424, {	-- A Jade Cat for Fish
-					["provider"] = { "n", 58705 },	-- Fish Fellreed
-					["repeatable"] = true,
-				}),
-				q(30387, {	-- A Jade Cat for Gina
-					["provider"] = { "n", 58706 },	-- Gina Mudclaw
-					["repeatable"] = true,
-				}),
-				q(30411, {	-- A Jade Cat for Haohan
-					["provider"] = { "n", 57402 },	-- Haohan Mudclaw
-					["repeatable"] = true,
-				}),
-				q(30436, {	-- A Jade Cat for Jogu
-					["provider"] = { "n", 58710 },	-- Jogu the Drunk
-					["repeatable"] = true,
-				}),
-				q(30393, {	-- A Jade Cat for Old Hillpaw
-					["provider"] = { "n", 58707 },	-- Old Hillpaw
-					["repeatable"] = true,
-				}),
-				q(30405, {	-- A Jade Cat for Sho
-					["provider"] = { "n", 58708 },	-- Sho
-					["repeatable"] = true,
-				}),
-				q(30430, {	-- A Jade Cat for Tina
-					["provider"] = { "n", 58761 },	-- Tina Mudclaw
-					["repeatable"] = true,
 				}),
 				q(29918, {	-- A Lesson in Bravery
 					["sourceQuests"] = {
@@ -451,86 +284,6 @@ _.Zones =
 						i(81827),	-- Band of Bravery
 						i(81828),	-- Ring of Courage
 					},
-				}),
-				q(30398, {	-- A Lovely Apple for Chee Chee
-					["provider"] = { "n", 58709 },	-- Chee Chee
-					["repeatable"] = true,
-				}),
-				q(30189, {	-- A Lovely Apple for Ella
-					["provider"] = { "n", 58647 },	-- Ella
-					["repeatable"] = true,
-				}),
-				q(30417, {	-- A Lovely Apple for Farmer Fung
-					["provider"] = { "n", 57298 },	-- Farmer Fung
-					["repeatable"] = true,
-				}),
-				q(30423, {	-- A Lovely Apple for Fish
-					["provider"] = { "n", 58705 },	-- Fish Fellreed
-					["repeatable"] = true,
-				}),
-				q(30380, {	-- A Lovely Apple for Gina
-					["provider"] = { "n", 58706 },	-- Gina Mudclaw
-					["repeatable"] = true,
-				}),
-				q(30410, {	-- A Lovely Apple for Haohan
-					["provider"] = { "n", 57402 },	-- Haohan Mudclaw
-					["repeatable"] = true,
-				}),
-				q(30435, {	-- A Lovely Apple for Jogu
-					["provider"] = { "n", 58710 },	-- Jogu the Drunk
-					["repeatable"] = true,
-				}),
-				q(30392, {	-- A Lovely Apple for Old Hillpaw
-					["provider"] = { "n", 58707 },	-- Old Hillpaw
-					["repeatable"] = true,
-				}),
-				q(30404, {	-- A Lovely Apple for Sho
-					["provider"] = { "n", 58708 },	-- Sho
-					["repeatable"] = true,
-				}),
-				q(30429, {	-- A Lovely Apple for Tina
-					["provider"] = { "n", 58761 },	-- Tina Mudclaw
-					["repeatable"] = true,
-				}),
-				q(30401, {	-- A Marsh Lily for Chee Chee
-					["provider"] = { "n", 58709 },	-- Chee Chee
-					["repeatable"] = true,
-				}),
-				q(30383, {	-- A Marsh Lily for Ella
-					["provider"] = { "n", 58647 },	-- Ella
-					["repeatable"] = true,
-				}),
-				q(30420, {	-- A Marsh Lily for Farmer Fung
-					["provider"] = { "n", 57298 },	-- Farmer Fung
-					["repeatable"] = true,
-				}),
-				q(30426, {	-- A Marsh Lily for Fish
-					["provider"] = { "n", 58705 },	-- Fish Fellreed
-					["repeatable"] = true,
-				}),
-				q(30389, {	-- A Marsh Lily for Gina
-					["provider"] = { "n", 58706 },	-- Gina Mudclaw
-					["repeatable"] = true,
-				}),
-				q(30413, {	-- A Marsh Lily for Haohan
-					["provider"] = { "n", 57402 },	-- Haohan Mudclaw
-					["repeatable"] = true,
-				}),
-				q(30438, {	-- A Marsh Lily for Jogu
-					["provider"] = { "n", 58710 },	-- Jogu the Drunk
-					["repeatable"] = true,
-				}),
-				q(30395, {	-- A Marsh Lily for Old Hillpaw
-					["provider"] = { "n", 58707 },	-- Old Hillpaw
-					["repeatable"] = true,
-				}),
-				q(30407, {	-- A Marsh Lily for Sho
-					["provider"] = { "n", 58708 },	-- Sho
-					["repeatable"] = true,
-				}),
-				q(30432, {	-- A Marsh Lily for Tina
-					["provider"] = { "n", 58761 },	-- Tina Mudclaw
-					["repeatable"] = true,
 				}),
 				q(29915, {	-- A Neighbor's Duty
 					["sourceQuests"] = {
@@ -549,46 +302,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
-				q(30397, {	-- A Ruby Shard for Chee Chee
-					["provider"] = { "n", 58709 },	-- Chee Chee
-					["repeatable"] = true,
-				}),
-				q(30160, {	-- A Ruby Shard for Ella
-					["provider"] = { "n", 58647 },	-- Ella
-					["repeatable"] = true,
-				}),
-				q(30416, {	-- A Ruby Shard for Farmer Fung
-					["provider"] = { "n", 57298 },	-- Farmer Fung
-					["repeatable"] = true,
-				}),
-				q(30422, {	-- A Ruby Shard for Fish
-					["provider"] = { "n", 58705 },	-- Fish Fellreed
-					["repeatable"] = true,
-				}),
-				q(30379, {	-- A Ruby Shard for Gina
-					["provider"] = { "n", 58706 },	-- Gina Mudclaw
-					["repeatable"] = true,
-				}),
-				q(30409, {	-- A Ruby Shard for Haohan
-					["provider"] = { "n", 57402 },	-- Haohan Mudclaw
-					["repeatable"] = true,
-				}),
-				q(30434, {	-- A Ruby Shard for Jogu
-					["provider"] = { "n", 58710 },	-- Jogu the Drunk
-					["repeatable"] = true,
-				}),
-				q(30391, {	-- A Ruby Shard for Old Hillpaw
-					["provider"] = { "n", 58707 },	-- Old Hillpaw
-					["repeatable"] = true,
-				}),
-				q(30403, {	-- A Ruby Shard for Sho
-					["provider"] = { "n", 58708 },	-- Sho
-					["repeatable"] = true,
-				}),
-				q(30428, {	-- A Ruby Shard for Tina
-					["provider"] = { "n", 58761 },	-- Tina Mudclaw
-					["repeatable"] = true,
 				}),
 				q(30534, {	-- A Second Hand
 					["coord"] = { 52.1, 49.0, VALLEY_OF_THE_FOUR_WINDS },
@@ -615,37 +328,6 @@ _.Zones =
 					["sourceQuests"] = { 29987 },	-- Unyielding Fists: Trial of Wood
 					["coord"] = { 18.3, 31.3, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56714 },	-- Master Bruised Paw
-				}),
-				q(31325, {	-- A Very Nice Necklace
-					["description"] = "Requires reputation level of \"Acquaintance\" or better with Tina Mudclaw to drop.",
-					["provider"] = { "i", 86433 },	-- Nice Necklace
-					["crs"] = {
-						59120,	-- Kunzen Rockflinger
-						59126,	-- Jokka-Jokka
-						59128,	-- Jim-Jim
-						59130,	-- Teeku
-						59127,	-- Kon-Kon
-						59129,	-- Maaka
-						59125,	-- Kunzen Soupmaster
-						59123,	-- Kunzen Ritualist
-						59134,	-- Yammo
-						59121,	-- Kunzen Hunter
-						59133,	-- Buk-Buk
-						59131,	-- Lor-Lor
-						59135,	-- Bimba
-						59124,	-- Kunzen Collector
-						59132,	-- Rit-Rit
-						59119,	-- Kunzen Ravager
-						59122,	-- Kunzen Herdskeeper
-					},
-				}),
-				q(31341, {	-- A Wolf In Sheep's Clothing
-					["sourceQuests"] = { 31340 },	-- Oh Sheepie....
-					["provider"] = { "n", 58709 },	-- Chee Chee
-				}),
-				q(31538, {	-- A Worthy Brew
-					["description"] = "Requires reputation level of \"Good Friend\" or better with Ella.",
-					["provider"] = { "n", 58647 },	-- Ella
 				}),
 				q(29577, {	-- Ashyo's Vision
 					["sourceQuests"] = { 29871 },	-- Clever Ashyo
@@ -677,31 +359,6 @@ _.Zones =
 					["sourceQuests"] = { 29950 },	-- Li Li's Day Off
 					["coord"] = { 68.8, 43.4, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56133 },	-- Chen Stormstout
-				}),
-				q(31323, {	-- Buy A Fish A Brewery?
-					["description"] = "Requires reputation level of \"Good Friend\" or better with Jogu the Drunk.",
-					["coord"] = { 53.6, 52.6, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58710 },	-- Jogu the Drunk
-				}),
-				q(31320, {	-- Buy A Fish A Drink?
-					["description"] = "Requires reputation level of \"Acquaintance\" or better with Jogu the Drunk.",
-					["coord"] = { 53.6, 52.6, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58710 },	-- Jogu the Drunk
-				}),
-				q(31322, {	-- Buy A Fish A Keg?
-					["description"] = "Requires reputation level of \"Friend\" or better with Jogu the Drunk.",
-					["coord"] = { 53.6, 52.6, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58710 },	-- Jogu the Drunk
-				}),
-				q(31321, {	-- Buy A Fish A Round?
-					["description"] = "Requires reputation level of \"Buddy\" or better with Jogu the Drunk.",
-					["coord"] = { 53.6, 52.6, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58710 },	-- Jogu the Drunk
-				}),
-				q(30318, {	-- Chasing the Chicken
-					["isDaily"] = true,
-					["coord"] = { 53.1, 51.9, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58707 },	-- Old Hillpaw
 				}),
 				q(29907, {	-- Chen and Li Li
 					["sourceQuests"] = {
@@ -775,11 +432,6 @@ _.Zones =
 					["sourceQuests"] = { 30046 },	-- Chen's Resolution
 					["coord"] = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56133 },	-- Chen Stormstout
-				}),
-				q(31537, {	-- Ella's Taste Test
-					["description"] = "Requires reputation level of \"Friend\" or better.",
-					["coord"] = { 53.0, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58647 },	-- Ella
 				}),
 				q(30054, {	-- Enough is Ookin' Enough
 					["sourceQuests"] = { 30046 },	-- Chen's Resolution
@@ -856,40 +508,10 @@ _.Zones =
 					["coord"] = { 75.3, 35.5, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56133 },	-- Chen Stormsout
 				}),
-				q(30529, {	-- Growing the Farm III: The Mossy Boulder
-					["description"] = "Must be Exalted with The Tillers with all Tillers votes collected to start this quest.",
-					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
 				q(29758, {	-- Guess Whose Back
 					["coord"] = { 64.5, 25.7, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "i", 83767 },	-- Krosh's Back
 					["crs"] = { 56833 },	-- Krosh
-				}),
-				q(30521, {	-- Haohan's Vote I: Bungalow Break-In
-					["description"] = "Must be revered with at least 16,800 reputation with The Tillers.",
-					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
-				q(30522, {	-- Haohan's Vote II: The Real Culprits
-					["sourceQuests"] = { 30521 },	-- Haohan's Vote I: Bungalow Break-In
-					["coord"] = { 44.7, 34.1, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 57402 },	-- Haohan Mudclaw
-				}),
-				q(30525, {	-- Haohan's Vote III: Pure Poison
-					["sourceQuests"] = { 30522 },	-- Haohan's Vote II: The Real Culprits
-					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
-				q(30527, {	-- Haohan's Vote IV: Melons For Felons
-					["sourceQuests"] = { 30525 },	-- Haohan's Vote III: Pure Poison
-					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
-				q(30528, {	-- Haohan's Vote V: Chief Yip-Yip
-					["sourceQuests"] = { 30527 },	-- Haohan's Vote IV: Melons For Felons
-					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
 				}),
 				q(30053, {	-- Hop Hunting
 					["sourceQuests"] = { 30046 },	-- Chen's Resolution
@@ -917,10 +539,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
-				q(31313, {	-- Just A Folk Story
-					["sourceQuests"] = { 31312 },	-- The Old Map
-					["provider"] = { "n", 58705 },	-- Fish Fellreed
 				}),
 				q(29874, {	-- Kang Bramblestaff (A)
 					["races"] = ALLIANCE_ONLY,
@@ -980,16 +598,6 @@ _.Zones =
 					["coord"] = { 42.4, 50.2, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 59533 },	-- Lost Dog
 				}),
-				q(31338, {	-- Lost Sheepie
-					["description"] = "Requires reputation level of \"Acquaintance\" with Chee Chee.",
-					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58709 },	-- Chee Chee
-				}),
-				q(31339, {	-- Lost Sheepie... Again
-					["description"] = "Requires reputation level of \"Friend\" with Chee Chee.",
-					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58709 },	-- Chee Chee
-				}),
 				q(29909, {	-- Low Turnip Turnout
 					["sourceQuests"] = {
 						29877,	-- A Poor Grasp of the Basics
@@ -1002,26 +610,6 @@ _.Zones =
 					["sourceQuests"] = { 29915 },	-- A Neighbor's Duty
 					["coord"] = { 78.2, 32.9, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56208 },	-- Francis the Shepherd Boy
-				}),
-				q(31531, {	-- Mission: Aerial Threat
-					["description"] = "Must be at least 4200/8400 into \"Friend\" with Sho to start this quest.",
-					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58708 },	-- Sho
-				}),
-				q(31529, {	-- Mission: Culling The Vermin
-					["description"] = "Must be at least \"Buddy\" with Sho to start this quest.",
-					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58708 },	-- Sho
-				}),
-				q(31532, {	-- Mission: Predator of the Cliffs
-					["description"] = "Must be at least 4200 into \"Good Friend\" with Sho to start this quest.",
-					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58708 },	-- Sho
-				}),
-				q(30322, {	-- Money Matters
-					["isDaily"] = true,
-					["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58706 },	-- Gina Mudclaw
 				}),
 				q(30058, {	-- Mothallus!
 					["sourceQuests"] = {
@@ -1074,29 +662,6 @@ _.Zones =
 						i(90542),	-- Safari Journal
 						i(90545),	-- Safari Lantern
 					},
-				}),
-				q(30519, {	-- Nana's Vote I: Nana's Secret Recipe
-					["description"] = "Must be revered with at least 8400 reputation with The Tillers.",
-					["coord"] = { 52.3, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
-				q(31948, {	-- Nana's Vote II: The Sacred Springs
-					["sourceQuests"] = { 30519 },	-- Nana's Vote I: Nana's Secret Recipe
-					["coord"] = { 54.7, 47.0, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 64597 },	-- Nana Mudclaw
-				}),
-				q(31949, {	-- Nana's Vote III: Witchberry Julep
-					["sourceQuests"] = { 31948 },	-- Nana's Vote II: The Sacred Springs
-					["coord"] = { 54.7, 47.0, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 64597 },	-- Nana Mudclaw
-				}),
-				q(31340, {	-- Oh Sheepie...
-					["description"] = "Requires reputation level of \"Good Friend\" or better with Chee Chee",
-					["provider"] = { "n", 58709 },	-- Chee Chee
-				}),
-				q(31314, {	-- Old Man Thistle's Treasure
-					["sourceQuests"] = { 31313 },	-- Just a Folk Story
-					["provider"] = { "n", 58705 },	-- Fish Fellreed
 				}),
 				q(30030, {	-- Out of Sprite
 					["sourceQuests"] = { 30048 },	-- Li Li and the Grain
@@ -1266,11 +831,6 @@ _.Zones =
 					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 58646 },	-- Farmer Yoon
 				}),
-				q(31534, {	-- The Beginner's Brew
-					["description"] = "Requires reputation level of \"Buddy\" or better with Ella.",
-					["coord"] = { 53.0, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58647 },	-- Ella
-				}),
 				q(31669, {	-- The Cabbage Test
 					["isDaily"] = true,
 					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
@@ -1360,14 +920,6 @@ _.Zones =
 					["sourceQuests"] = { 30516 },	-- Growing the Farm I: A Little Problem
 					["provider"] = { "i", 89812 },	-- "Jinyu Princess" Irrigation System
 					["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-				}),
-				q(30326, {	-- The Kunzen Legend-Chief
-					["isDaily"] = true,
-					["coord"] = { 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-					["providers"] = {
-						{ "n", 58705 },	-- Fish Fellreed
-						{ "n", 59517 },	-- Fish Fellreed
-					},
 				}),
 				q(30333, {	-- The Lesser of Two Evils
 					["isDaily"] = true,
@@ -1461,11 +1013,6 @@ _.Zones =
 					["coord"] = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 56133 },	-- Chen Stormstout
 				}),
-				q(30323, {	-- They Don't Even Wear Them
-					["isDaily"] = true,
-					["coord"] = { 53.0, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-					["provider"] = { "n", 58761 },	-- Tina Mudclaw
-				}),
 				q(29985, {	-- They Will Be Mist
 					["sourceQuests"] = { 29984 },	-- Unyielding Fists: Trial of Bamboo
 					["coord"] = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
@@ -1483,29 +1030,6 @@ _.Zones =
 					["sourceQuests"] = { 30523 },	-- Growing the Farm II: The Broken Wagon
 					["provider"] = { "i", 89813 },	-- "Thunder King" Pest Repellers
 					["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-				}),
-				q(31326, {	-- Tina's Tasteful Tiara
-					["description"] = "Requires reputation level of \"Buddy\" or better with Tina Mudclaw to drop.",
-					["provider"] = { "i", 86434 },	-- Tasteful Tiara
-					["crs"] = {
-						59120,	-- Kunzen Rockflinger
-						59126,	-- Jokka-Jokka
-						59128,	-- Jim-Jim
-						59130,	-- Teeku
-						59127,	-- Kon-Kon
-						59129,	-- Maaka
-						59125,	-- Kunzen Soupmaster
-						59123,	-- Kunzen Ritualist
-						59134,	-- Yammo
-						59121,	-- Kunzen Hunter
-						59133,	-- Buk-Buk
-						59131,	-- Lor-Lor
-						59135,	-- Bimba
-						59124,	-- Kunzen Collector
-						59132,	-- Rit-Rit
-						59119,	-- Kunzen Ravager
-						59122,	-- Kunzen Herdskeeper
-					},
 				}),
 				q(30185, {	-- Tortoise Mastery
 					["sourceQuests"] = {
@@ -1589,110 +1113,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
-				q(32642, {	-- Work Order: Dominance Offensive I
-					["sourceQuests"] = { 32682 },	-- Inherit the Earth
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32643, {	-- Work Order: Dominance Offensive II
-					["sourceQuests"] = { 32642 },	-- Work Order: Dominance Offensive I
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32944, {	-- Work Order: Kirin Tor Offensive I
-					["sourceQuests"] = { 32682 },	-- Inherit the Earth
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32945, {	-- Work Order: Kirin Tor Offensive II
-					["sourceQuests"] = { 32944 },	-- Work Order: Kirin Tor Offensive I
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32647, {	-- Work Order: Golden Lotus I
-					["sourceQuests"] = { 32682 },	-- Inherit the Earth
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["isDaily"] = true,
-				}),
-				q(32648, {	-- Work Order: Golden Lotus II
-					["sourceQuests"] = { 32647 },	-- Work Order: Golden Lotus I
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["isDaily"] = true,
-				}),
-				q(32645, {	-- Work Order: Operation: Shieldwall I
-					["sourceQuests"] = { 32682 },	-- Inherit the Earth
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32646, {	-- Work Order: Operation: Shieldwall II
-					["sourceQuests"] = { 32645 },	-- Work Order: Operation: Shieldwall I
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32649, {	-- Work Order: Shado-Pan I
-					["sourceQuests"] = { 32682 },	-- Inherit the Earth
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["isDaily"] = true,
-				}),
-				q(32650, {	-- Work Order: Shado-Pan II
-					["sourceQuests"] = { 32649 },	-- Work Order: Shado-Pan I
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["isDaily"] = true,
-				}),
-				q(32942, {	-- Work Order: Sunreaver Onslaught I
-					["sourceQuests"] = { 32682 },	-- Inherit the Earth
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32943, {	-- Work Order: Sunreaver Onslaught II
-					["sourceQuests"] = { 32942 },	-- Work Order: Sunreaver Onslaught I
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-				}),
-				q(32653, {	-- Work Order: The August Celestials I
-					["sourceQuests"] = { 32682 },	-- Inherit the Earth
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["isDaily"] = true,
-				}),
-				q(32657, {	-- Work Order: The August Celestials II
-					["sourceQuests"] = { 32653 },	-- Work Order: The August Celestials I
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["isDaily"] = true,
-				}),
-				q(32658, {	-- Work Order: The Klaxxi I
-					["sourceQuests"] = { 32682 },	-- Inherit the Earth
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["isDaily"] = true,
-				}),
-				q(32659, {	-- Work Order: The Klaxxi II
-					["sourceQuests"] = { 32658 },	-- Work Order: The Klaxxi I
-					["provider"] = { "o", 218750 },	-- Work Orders
-					["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-					["isDaily"] = true,
 				}),
 				q(29945, {	-- Yellow and Red Make Orange
 					["sourceQuests"] = { 29919 },	-- Great Minds Drink Alike

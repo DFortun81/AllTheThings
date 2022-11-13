@@ -179,18 +179,6 @@ _.Factions =
 		faction(1359),	-- The Black Prince
 		faction(1337),	-- The Klaxxi
 		faction(1345),	-- The Lorewalkers
-		faction(1272, {	-- The Tillers
-			faction(1277),	-- Chee Chee
-			faction(1275),	-- Ella
-			faction(1283),	-- Farmer Fung
-			faction(1282),	-- Fish Fellreed
-			faction(1281),	-- Gina Mudclaw
-			faction(1279),	-- Haohan Mudclaw
-			faction(1273),	-- Jogu the Drunk
-			faction(1276),	-- Old Hillpaw
-			faction(1278),	-- Sho
-			faction(1280),	-- Tina Mudclaw
-		}),
 	}),
 	tier(WOD_TIER, {
 		faction(1515),	-- Arakkoa Outcasts
