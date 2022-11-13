@@ -28,5 +28,5 @@
 - Huge clean up and revision to The Tillers content to hopefully make it far more useful.
 - Marked more Dragonflight pre-patch phase 2 content: Uldaman: Legacy of Tyr, The Forbidden Reach, Primal Storms (pre-patch event). We will have a new release on weekly reset.
 - Further preparation for Dragonflight profession additions.
-- Marked Threads of Fate quests as going away this coming weekly reset with Dragonflight pre-patch phase 2 (opposed to the expansion launch like the were marked before). Your last chance to get into the system to complete those quests!
+- Marked Threads of Fate quests as going away this coming weekly reset with Dragonflight pre-patch phase 2 (opposed to the expansion launch like they were marked before). Your last chance to get into the system to complete those quests!
 - Other fixes.
