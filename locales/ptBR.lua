@@ -1102,7 +1102,7 @@ for key,value in pairs({
 	[174596] = "Flor da Canção Corrompida",	-- Corrupted Songflower	--TODO: This was taken from classic Wowhead
 	[174597] = "Flor da Canção Corrompida",	-- Corrupted Songflower	--TODO: This was taken from classic Wowhead
 	[174598] = "Flor da Canção Corrompida",	-- Corrupted Songflower	--TODO: This was taken from classic Wowhead
-	--TODO: [174599] = "Corrupted Windblossom",	-- Corrupted Windblossom
+	[174599] = "Botão Selvagem Corrompido",	-- Corrupted Windblossom	--TODO: this was manually translated
 	[174600] = "Botão Selvagem Corrompido",	-- Corrupted Windblossom	--TODO: This was taken from classic Wowhead
 	[174601] = "Botão Selvagem Corrompido",	-- Corrupted Windblossom	--TODO: This was taken from classic Wowhead
 	[174602] = "Botão Selvagem Corrompido",	-- Corrupted Windblossom	--TODO: This was taken from classic Wowhead
