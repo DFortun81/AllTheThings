@@ -1072,6 +1072,7 @@ i(199894);	-- Fisherman's Folly Rack
 i(194052);	-- Forlorn Funeral Pall
 i(198227);	-- Giggle Goggles
 i(193476);	-- Gnoll Tent
+i(202019);	-- Golden Dragon Goblet
 i(199771);	-- Green Dragon Banner
 i(198090);	-- Jar of Excess Slime
 i(193032);	-- Jeweled Offering
@@ -1094,6 +1095,7 @@ i(198720);	-- Soft Purple Pillow
 i(193478);	-- Tuskarr Bean Bag
 i(198428);	-- Tuskarr Dinghy
 i(199892);	-- Tuskarr Traveling Soup Pot
+i(202022);	-- Yennu's Kite
 i(200550);	-- Very Comfortable Pelt
 i(199650);	-- Whale Bone Tea Set
 i(198156);	-- Wyrmhole Generator

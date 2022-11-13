@@ -222,7 +222,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					i(199736),	-- Amber Dragonflame Blade
 					i(199737),	-- Cobalt Dragonflame Blade
 					i(199739),	-- Emerald Dragonflame Blade
-					i(199740),	-- Onyx Dragonflame Blade
+					--i(199740),	-- Onyx Dragonflame Blade [Changed Place?]
 					i(199738),	-- Ruby Dragonflame Blade
 				},
 			}),

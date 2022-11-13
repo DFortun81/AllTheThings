@@ -4,7 +4,7 @@
 
 root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 	inst(1198, {	-- The Nokhud Offensive
-		["coord"] = { 62.0, 42.5, OHNAHRAN_PLAINS },
+		["coord"] = { 60.9, 39.1, OHNAHRAN_PLAINS },
 		["maps"] = { 2093 },	-- The Nokhud Offensive
 		["g"] = {
 			n(MYTHIC_PLUS, {

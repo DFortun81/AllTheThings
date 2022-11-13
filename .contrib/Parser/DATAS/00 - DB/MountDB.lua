@@ -1501,8 +1501,17 @@ i(0, 381529);		-- Telix the Stormhorn
 
 
 -- SOURCED
+i(192762, 374034);	-- Azure Skitterfly
 i(202086, 377071);	-- Crimson Gladiator's Drake
+i(192761, 374032);	-- Tamed Skitterfly
 
+
+
+
+-- UNCLEAR?
+i(192601, 373859);	-- Loyal Magmammoth
+i(201837, 373859);	-- Loyal Magmammoth
+--
 
 
 
@@ -1517,8 +1526,8 @@ i(194521, 368901);	-- Cliffside Wylderdrake
 i(0, 359408);	-- Divine Kiss of Ohn'ahra
 i(0, 359409);	-- Iskaara Trader's Ottuk
 i(0, 359622);	-- Liberated Slyvern
-i(192761, 374032);	-- Tamed Skitterfly
-i(192762, 374034);	-- Azure Skitterfly
+
+
 i(192764, 374048);	-- Verdant Skitterfly
 i(0, 376912);	-- Otterworldly Ottuk Carrier
 i(0, 376873);	-- Splish-Splash
@@ -1532,7 +1541,7 @@ i(198811, 385134);	-- Swift Armored Vorquin
 i(198825, 385266);	-- Zenet Hatchling
 i(192800, 352926);	-- Skyskin Hornstrider
 i(0, 368893);	-- Winding Slitherdrake
-i(192601, 373859);	-- Loyal Magmammoth
+
 i(192775, 374098);	-- Stormhide Salamanther
 i(192779, 374138);	-- Scorchpath
 i(192791, 374196);	-- Plainswalker Bearer

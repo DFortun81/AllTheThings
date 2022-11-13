@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
-	n(DRAGON_CUSTOMIZATION, {
+	n(DRAKEWATCHER_MANUSCRIPTS, {
 		--[[
 		-- These might be NYI? Two Versions exists
 		i(194839),	-- Cliffside Wylderdrake Manuscript: Conical Head
@@ -23,14 +23,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(196961),	-- Cliffside Wylderdrake: Armor
 		i(196991),	-- Cliffside Wylderdrake: Black Horns
 		i(196986),	-- Cliffside Wylderdrake: Black Mane
-		i(197013),	-- Cliffside Wylderdrake: Black Scales
+		i(197013),	-- Cliffside Wylderdrake: Black Scales (DM!)
 		i(196987),	-- Cliffside Wylderdrake: Blonde Mane
 		i(197012),	-- Cliffside Wylderdrake: Blue Scales
 		i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail
 		i(196996),	-- Cliffside Wylderdrake: Branched Horns
 		i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor
 		i(197000),	-- Cliffside Wylderdrake: Coiled Horns
-		i(196981),	-- Cliffside Wylderdrake: Conical Head
+		i(196981),	-- Cliffside Wylderdrake: Conical Head (DM!)
 		i(196962),	-- Cliffside Wylderdrake: Copper and Gray Armor
 		i(196979),	-- Cliffside Wylderdrake: Curled Head Horns
 		i(197015),	-- Cliffside Wylderdrake: Dark Skin Variation
@@ -43,7 +43,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(197018),	-- Cliffside Wylderdrake: Finned Tail
 		i(197002),	-- Cliffside Wylderdrake: Flared Cheek
 		i(196974),	-- Cliffside Wylderdrake: Four Horned Chin
-		i(196964),	-- Cliffside Wylderdrake: Gold and Black Armor
+		i(196964),	-- Cliffside Wylderdrake: Gold and Black Armor (DM!)
 		i(196966),	-- Cliffside Wylderdrake: Gold and Orange Armor
 		i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
 		i(197011),	-- Cliffside Wylderdrake: Green Scales
@@ -61,10 +61,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(197008),	-- Cliffside Wylderdrake: Narrow Stripes Pattern
 		i(196972),	-- Cliffside Wylderdrake: Plated Brow
 		i(197006),	-- Cliffside Wylderdrake: Plated Nose
-		i(196988),	-- Cliffside Wylderdrake: Red Mane
+		i(196988),	-- Cliffside Wylderdrake: Red Mane (DM!)
 		i(197009),	-- Cliffside Wylderdrake: Scaled Pattern
 		i(196994),	-- Cliffside Wylderdrake: Short Horns
-		i(196963),	-- Cliffside Wylderdrake: Silver and Blue Armor
+		i(196963),	-- Cliffside Wylderdrake: Silver and Blue Armor (DM!)
 		i(196993),	-- Cliffside Wylderdrake: Sleek Horns
 		i(196978),	-- Cliffside Wylderdrake: Small Head Spikes
 		i(197020),	-- Cliffside Wylderdrake: Spear Tail
@@ -76,16 +76,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(197004),	-- Cliffside Wylderdrake: Spiked Legs
 		i(196977),	-- Cliffside Wylderdrake: Split Head Horns
 		i(196997),	-- Cliffside Wylderdrake: Split Horns
-		i(196968),	-- Cliffside Wylderdrake: Steel and Yellow Armor
+		i(196968),	-- Cliffside Wylderdrake: Steel and Yellow Armor (DM!)
 		i(196999),	-- Cliffside Wylderdrake: Swept Horns
-		i(196980),	-- Cliffside Wylderdrake: Triple Head Horns
+		i(196980),	-- Cliffside Wylderdrake: Triple Head Horns (DM!)
 		i(196989),	-- Cliffside Wylderdrake: White Mane
 		i(197014),	-- Cliffside Wylderdrake: White Scales
 		i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern
-		i(197010),	-- Cliffside Wylderdrake: Red Scales
+		i(197010),	-- Cliffside Wylderdrake: Red Scales (DM!)
 		i(197099),	-- Highland Drake: Armor
-		i(197117),	-- Highland Drake: Black Hair
-		i(197142),	-- Highland Drake: Black Scales
+		i(197117),	-- Highland Drake: Black Hair (DM!)
+		i(197142),	-- Highland Drake: Black Scales (DM!)
 		i(197153),	-- Highland Drake: Bladed Tail
 		i(197145),	-- Highland Drake: Bronze Scales
 		i(197118),	-- Highland Drake: Brown Hair
@@ -98,7 +98,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(197098),	-- Highland Drake: Finned Back
 		i(197106),	-- Highland Drake: Finned Head
 		i(197155),	-- Highland Drake: Finned Neck
-		i(197090),	-- Highland Drake: Gold and Black Armor
+		i(197090),	-- Highland Drake: Gold and Black Armor (DM!)
 		i(197156),	-- Highland Drake: Gold and Green Armor
 		i(197094),	-- Highland Drake: Gold and Red Armor
 		i(197095),	-- Highland Drake: Gold and White Armor
@@ -120,8 +120,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(197140),	-- Highland Drake: Pattern 3
 		i(197141),	-- Highland Drake: Pattern 4
 		i(197110),	-- Highland Drake: Plated Head
-		i(197144),	-- Highland Drake: Red Scales
-		i(197091),	-- Highland Drake: Silver and Blue Armor
+		i(197144),	-- Highland Drake: Red Scales (DM!)
+		i(197091),	-- Highland Drake: Silver and Blue Armor (DM!)
 		i(197093),	-- Highland Drake: Silver and Purple Armor
 		i(197112),	-- Highland Drake: Single Horned Head
 		i(197129),	-- Highland Drake: Sleek Horns
@@ -133,11 +133,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(197097),	-- Highland Drake: Spined Back
 		i(197133),	-- Highland Drake: Spined Cheek
 		i(197105),	-- Highland Drake: Spined Chin
-		i(197108),	-- Highland Drake: Spined Head
-		i(197154),	-- Highland Drake: Spined Neck
+		i(197108),	-- Highland Drake: Spined Head (DM!)
+		i(197154),	-- Highland Drake: Spined Neck (DM!)
 		i(197137),	-- Highland Drake: Spined Nose
 		i(197130),	-- Highland Drake: Stag Horns
-		i(197096),	-- Highland Drake: Steel and Yellow Armor
+		i(197096),	-- Highland Drake: Steel and Yellow Armor (DM!)
 		i(197124),	-- Highland Drake: Swept Horns
 		i(197113),	-- Highland Drake: Swept Spiked Head
 		i(197121),	-- Highland Drake: Tan Horns
@@ -152,10 +152,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(197357),	-- Renewed Proto-Drake: Armor
 		i(197401),	-- Renewed Proto-Drake: Beaked Snout
 		i(197348),	-- Renewed Proto-Drake: Black and Red Armor
-		i(197392),	-- Renewed Proto-Drake: Black Scales
+		i(197392),	-- Renewed Proto-Drake: Black Scales (DM!)
 		i(197368),	-- Renewed Proto-Drake: Blue Hair
 		i(197390),	-- Renewed Proto-Drake: Blue Scales
-		i(197377),	-- Renewed Proto-Drake: Bovine Horns
+		i(197377),	-- Renewed Proto-Drake: Bovine Horns (DM!)
 		i(197391),	-- Renewed Proto-Drake: Bronze Scales
 		i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor
 		i(197369),	-- Renewed Proto-Drake: Brown Hair
@@ -170,7 +170,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(197388),	-- Renewed Proto-Drake: Finned Jaw
 		i(197404),	-- Renewed Proto-Drake: Finned Tail
 		i(197408),	-- Renewed Proto-Drake: Finned Throat
-		i(197346),	-- Renewed Proto-Drake: Gold and Black Armor
+		i(197346),	-- Renewed Proto-Drake: Gold and Black Armor (DM!)
 		i(197351),	-- Renewed Proto-Drake: Gold and Red Armor
 		i(197349),	-- Renewed Proto-Drake: Gold and White Armor
 		i(197381),	-- Renewed Proto-Drake: Gradiant Horns
@@ -179,43 +179,43 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(197389),	-- Renewed Proto-Drake: Green Scales
 		i(197356),	-- Renewed Proto-Drake: Hairy Back
 		i(197359),	-- Renewed Proto-Drake: Hairy Brow
-		i(197395),	-- Renewed Proto-Drake: Harrier Pattern
+		i(197395),	-- Renewed Proto-Drake: Harrier Pattern (DM!)
 		i(197383),	-- Renewed Proto-Drake: Heavy Horns
 		i(197397),	-- Renewed Proto-Drake: Heavy Scales
 		i(197373),	-- Renewed Proto-Drake: Helm
 		i(197354),	-- Renewed Proto-Drake: Horned Back
 		i(197385),	-- Renewed Proto-Drake: Horned Jaw
 		i(197379),	-- Renewed Proto-Drake: Impaler Horns
-		i(197363),	-- Renewed Proto-Drake: Maned Crest
+		i(197363),	-- Renewed Proto-Drake: Maned Crest (DM!)
 		i(197405),	-- Renewed Proto-Drake: Maned Tail
-		i(197394),	-- Renewed Proto-Drake: Predator Pattern
+		i(197394),	-- Renewed Proto-Drake: Predator Pattern (DM!)
 		i(197372),	-- Renewed Proto-Drake: Purple Hair
 		i(197399),	-- Renewed Proto-Drake: Razor Snout
 		i(197370),	-- Renewed Proto-Drake: Red Hair
 		i(197400),	-- Renewed Proto-Drake: Shark Snout
 		i(197364),	-- Renewed Proto-Drake: Short Spiked Crest
-		i(197347),	-- Renewed Proto-Drake: Silver and Blue Armor
+		i(197347),	-- Renewed Proto-Drake: Silver and Blue Armor (DM!)
 		i(197350),	-- Renewed Proto-Drake: Silver and Purple Armor
 		i(197396),	-- Renewed Proto-Drake: Skyterror Pattern
 		i(197398),	-- Renewed Proto-Drake: Snub Snout
-		i(197402),	-- Renewed Proto-Drake: Spiked Club Tail
+		i(197402),	-- Renewed Proto-Drake: Spiked Club Tail (DM!)
 		i(197361),	-- Renewed Proto-Drake: Spiked Crest
-		i(197386),	-- Renewed Proto-Drake: Spiked Jaw
+		i(197386),	-- Renewed Proto-Drake: Spiked Jaw (DM!)
 		i(197407),	-- Renewed Proto-Drake: Spiked Throat
-		i(197360),	-- Renewed Proto-Drake: Spined Brow
-		i(197362),	-- Renewed Proto-Drake: Spined Crest
+		i(197360),	-- Renewed Proto-Drake: Spined Brow (DM!)
+		i(197362),	-- Renewed Proto-Drake: Spined Crest (DM!)
 		i(197406),	-- Renewed Proto-Drake: Spined Tail
-		i(197352),	-- Renewed Proto-Drake: Steel and Yellow Armor
+		i(197352),	-- Renewed Proto-Drake: Steel and Yellow Armor (DM!)
 		i(197378),	-- Renewed Proto-Drake: Subtle Horns
-		i(197374),	-- Renewed Proto-Drake: Swept Horns
+		i(197374),	-- Renewed Proto-Drake: Swept Horns (DM!)
 		i(197384),	-- Renewed Proto-Drake: Thick Spined Jaw
 		i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw
 		i(197382),	-- Renewed Proto-Drake: White Horns
 		i(197393),	-- Renewed Proto-Drake: White Scales
 		i(197588),	-- Windborne Velocidrake: Armor
 		i(197620),	-- Windborne Velocidrake: Beaked Snout
-		i(197597),	-- Windborne Velocidrake: Black Fur
-		i(197611),	-- Windborne Velocidrake: Black Scales
+		i(197597),	-- Windborne Velocidrake: Black Fur (DM!)
+		i(197611),	-- Windborne Velocidrake: Black Scales (DM!)
 		i(197612),	-- Windborne Velocidrake: Blue Scales
 		i(197613),	-- Windborne Velocidrake: Bronze Scales
 		i(197624),	-- Windborne Velocidrake: Club Tail
@@ -249,25 +249,25 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(197628),	-- Windborne Velocidrake: Plated Neck
 		i(197635),	-- Windborne Velocidrake: Reaver Pattern
 		i(197599),	-- Windborne Velocidrake: Red Fur
-		i(197614),	-- Windborne Velocidrake: Red Scales
+		i(197614),	-- Windborne Velocidrake: Red Scales (DM!)
 		i(197636),	-- Windborne Velocidrake: Shrieker Pattern
-		i(197578),	-- Windborne Velocidrake: Silver and Blue Armor
+		i(197578),	-- Windborne Velocidrake: Silver and Blue Armor (DM!)
 		i(197581),	-- Windborne Velocidrake: Silver and Purple Armor
 		i(197594),	-- Windborne Velocidrake: Small Ears
 		i(197590),	-- Windborne Velocidrake: Small Head Fin
 		i(197586),	-- Windborne Velocidrake: Spiked Back
 		i(197629),	-- Windborne Velocidrake: Spiked Neck
 		i(197623),	-- Windborne Velocidrake: Spiked Tail
-		i(197592),	-- Windborne Velocidrake: Spined Head
+		i(197592),	-- Windborne Velocidrake: Spined Head (DM!)
 		i(197607),	-- Windborne Velocidrake: Split Horns
-		i(197579),	-- Windborne Velocidrake: Steel and Orange Armor
+		i(197579),	-- Windborne Velocidrake: Steel and Orange Armor (DM!)
 		i(197606),	-- Windborne Velocidrake: Swept Horns
 		i(197615),	-- Windborne Velocidrake: Teal Scales
 		i(197601),	-- Windborne Velocidrake: Wavy Horns
 		i(197609),	-- Windborne Velocidrake: White Horns
 		i(197616),	-- Windborne Velocidrake: White Scales
 		i(197582),	-- Windborne Velocidrake: White and Pink Armor
-		i(197634),	-- Windborne Velocidrake: Windswept Pattern
+		i(197634),	-- Windborne Velocidrake: Windswept Pattern (DM!)
 		i(197610),	-- Windborne Velocidrake: Yellow Horns
 	}),
 })));

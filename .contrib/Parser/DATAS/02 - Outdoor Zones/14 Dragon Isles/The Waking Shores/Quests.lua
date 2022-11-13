@@ -1374,29 +1374,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					}),
 				},
 			}),
-				-- Dailys at the Throne --
-			q(66856, {	-- Ashen Black and the Seven Gnomes
-				["sourceQuests"] = { 66133 },	-- Keys of Loyalty
-				["provider"] = { "n", 191014 },	-- Ashen Black
-				["coord"] = { 26.5, 62.5, THE_WAKING_SHORES },
-				["isDaily"] = true,
-				["g"] = {
-					i(197939),	-- Razortooth Harpoon
-				},
-			}),
-			q(65842, {	-- Disarming Behavior
-				["sourceQuests"] = { 66133 },	-- Keys of Loyalty
-				["provider"] = { "n", 190899 },	-- Talonstalker Kavia
-				["coord"] = { 26.6, 62.5, THE_WAKING_SHORES },
-				["isDaily"] = true,
-			}),
-			q(66130, {	-- Unlocking our Past?
-				["sourceQuests"] = { 66133 },	-- Keys of Loyalty
-				["provider"] = { "n", 187284 },	-- Wrathion
-				["coord"] = { 26.8, 62.5, THE_WAKING_SHORES },
-				["cost"] = { { "i", 191264, 1 }, },	-- 1xRestored Obsidian Key
-				["isDaily"] = true,
-			}),
 		}),
 	}),
 })));

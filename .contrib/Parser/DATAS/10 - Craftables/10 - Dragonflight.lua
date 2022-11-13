@@ -338,7 +338,6 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			r(381400),	-- Thousandbone Tongueslicer
 		}),
 		-- Unknown
-		i(194691),	-- Artisanal Berry Juice
 		i(194690),	-- Horn o' Mead
 		i(194683),	-- Buttermilk
 		--
@@ -834,6 +833,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(194970),	-- Islefin Dorado
 		i(199344),	-- Magma Thresher
 		i(200061),	-- Prismatic Leaper
+		i(198397),	-- Rainbow Pearl
 		i(199345),	-- Rimefin Tuna
 		i(199346),	-- Rotten Rimefin Tuna
 		i(194730),	-- Scalebelly Mackeral
@@ -919,27 +919,27 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			r(392944),	-- Draconic Treatise on Skinning
 			r(383520),	-- Draconic Treatise on Tailoring
 		}),
-		n(DRAGON_CUSTOMIZATION, {
-			i(196981),	-- Cliffside Wylderdrake: Conical Head
-			i(196988),	-- Cliffside Wylderdrake: Red Hair
-			i(196963),	-- Cliffside Wylderdrake: Silver and Blue Armor
-			i(196968),	-- Cliffside Wylderdrake: Steel and Yellow Armor
-			i(196980),	-- Cliffside Wylderdrake: Triple Head Horns
-			i(197117),	-- Highland Drake: Black Hair
-			i(197091),	-- Highland Drake: Silver and Blue Armor
-			i(197108),	-- Highland Drake: Spined Crest
-			i(197154),	-- Highland Drake: Spined Neck
-			i(197096),	-- Highland Drake: Steel and Yellow Armor
-			i(197377),	-- Renewed Proto-Drake: Bovine Horns
-			i(197394),	-- Renewed Proto-Drake: Predator Pattern
-			i(197347),	-- Renewed Proto-Drake: Silver and Blue Armor
-			i(197362),	-- Renewed Proto-Drake: Spined Crest
-			i(197352),	-- Renewed Proto-Drake: Steel and Yellow Armor
-			i(194833),	-- Windborne Velocidrake: Black Fur
-			i(197592),	-- Windborne Velocidrake: Spined Head
-			i(197578),	-- Windborne Velocidrake: Silver and Blue Armor
-			i(197579),	-- Windborne Velocidrake: Steel and Orange Armor
-			i(197634),	-- Windborne Velocidrake: Windswept Pattern
+		n(DRAKEWATCHER_MANUSCRIPTS, {
+			i(196981),	-- Cliffside Wylderdrake: Conical Head (DM!)
+			i(196988),	-- Cliffside Wylderdrake: Red Hair (DM!)
+			i(196963),	-- Cliffside Wylderdrake: Silver and Blue Armor (DM!)
+			i(196968),	-- Cliffside Wylderdrake: Steel and Yellow Armor (DM!)
+			i(196980),	-- Cliffside Wylderdrake: Triple Head Horns (DM!)
+			i(197117),	-- Highland Drake: Black Hair (DM!)
+			i(197091),	-- Highland Drake: Silver and Blue Armor (DM!)
+			i(197108),	-- Highland Drake: Spined Head (DM!)
+			i(197154),	-- Highland Drake: Spined Neck (DM!)
+			i(197096),	-- Highland Drake: Steel and Yellow Armor (DM!)
+			i(197377),	-- Renewed Proto-Drake: Bovine Horns (DM!)
+			i(197394),	-- Renewed Proto-Drake: Predator Pattern (DM!)
+			i(197347),	-- Renewed Proto-Drake: Silver and Blue Armor (DM!)
+			i(197362),	-- Renewed Proto-Drake: Spined Crest (DM!)
+			i(197352),	-- Renewed Proto-Drake: Steel and Yellow Armor (DM!)
+			i(197597),	-- Windborne Velocidrake: Black Fur (DM!)
+			i(197592),	-- Windborne Velocidrake: Spined Head (DM!)
+			i(197578),	-- Windborne Velocidrake: Silver and Blue Armor (DM!)
+			i(197579),	-- Windborne Velocidrake: Steel and Orange Armor (DM!)
+			i(197634),	-- Windborne Velocidrake: Windswept Pattern (DM!)
 		}),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)

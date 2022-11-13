@@ -27,6 +27,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 			i(194483, {	-- Plans: Obsidian Seared Slicer (RECIPE!)
 				["description"] = "Drops Around Obsidian Citadel.",
 			}),
+			i(198357),	-- Rock of Aegis
 			i(201741),	-- Technique: Renewed Proto-Drake: Bovine Horns (RECIPE!)
 		}),
 	}),

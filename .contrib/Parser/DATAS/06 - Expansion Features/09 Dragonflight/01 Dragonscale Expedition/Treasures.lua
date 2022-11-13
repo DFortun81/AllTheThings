@@ -6,9 +6,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		n(TREASURES, {
 			o_repeated({	-- Disturbed Dirt
 				-- Contains
-				i(190454),	-- Primal Chaos
 				i(192055),	-- Dragon Isles Artifact
 				currency(2003),	-- Dragon Isles Supplies
+				i(190454),	-- Primal Chaos
+				--
+				i(199061, {	-- A Guide to Rare Fish
+					["questID"] = 70527,
+				}),
+				i(199062, {	-- Ruby Gem Cluster Map
+					["questID"] = 70528,
+				}),
 				-- Objects
 				o(376386, {	-- Disturbed Dirt
 					["coords"] = {
@@ -24,19 +31,44 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					["coords"] = {
 						{ 79.2, 20.6, OHNAHRAN_PLAINS },
 						{ 81.0, 22.6, OHNAHRAN_PLAINS },
+						{ 31.2, 54.4, THE_WAKING_SHORES },
 					},
 					["cost"] = { { "i", 191294, 1 }, },	-- 1xSmall Expedition Shovel
 				}),
-				-- Dirt 31.2, 54.4, Waking
 			}),
 			o_repeated({	-- Expedition Scout's Pack
 				-- Contains
-				i(190454),	-- Primal Chaos
 				i(192055),	-- Dragon Isles Artifact
 				currency(2003),	-- Dragon Isles Supplies
-				i(201393),	-- Dracthyr Sorcerer's Focus
-				i(201386),	-- Dracthyr Soldier's Pike
-				i(201395),	-- Dragon Wingcrest Scimitar
+				i(190454),	-- Primal Chaos
+				--
+				i(199061, {	-- A Guide to Rare Fish
+					["questID"] = 70527,
+				}),
+				i(199062, {	-- Ruby Gem Cluster Map
+					["questID"] = 70528,
+				}),
+				i(201390),	-- Devastating Drakonid Waraxe
+				i(201393),	-- Dragonspawn Spellweaver's Focus
+				i(201388),	-- Dragonspawn Wingtipped Staff
+				i(201386),	-- Drakonid Defender's Pike
+				i(201391),	-- Drakonid Enforcer's Hidesplitter
+				i(201387),	-- Drakonid Stalker's Halberd
+				i(201392),	-- Drakonid Striker's Cutlass
+				i(201394),	-- Drakonid's Jade Bulwark
+				i(201396),	-- Hidepiercing Claw Extensions
+				i(201389),	-- Wingcrest Battle Staff
+				i(201395),	-- Wingcrest Scimitar
+				--
+				i(193902),	-- Eroded Titan Gizmo
+				i(193891),	-- Experimental Substance
+				i(193910),	-- Molted Dragon Scales
+				i(193904),	-- Phoenix Feather Quill
+				i(193913),	-- Preserved Animal Parts
+				i(193897),	-- Reawakened Catalyst
+				i(193898),	-- Umbral Bone Needle
+				i(192131),	-- Valdrakken Weapon Chain
+				i(193903),	-- Watcher Power Core
 				-- Objects
 				o(376587, {	-- Expedition Scout's Pack
 					["coords"] = {
@@ -54,6 +86,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 						{ 81.9, 31.7, OHNAHRAN_PLAINS },
 						{ 78.3, 21.3, OHNAHRAN_PLAINS },
 					},
+				}),
+			}),
+			o(376426, {	-- Magic-Bound Chest
+				i(199062, {	-- Ruby Gem Cluster Map
+					["questID"] = 70528,
 				}),
 			}),
 		}),

@@ -1102,6 +1102,7 @@ pet(0, 3249, {			-- Lil' Ursoc
 ------------------
 -- SOURCED
 pet(191886, 3274);	-- Alvin the Anvil
+pet(193852, 3269);	-- Azure Frillfish
 pet(198726, 3380);	-- Black Skitterbug
 pet(199688, 3279);	-- Bronze Racing Enthusiast
 pet(199326, 3376);	-- Chip
@@ -1117,6 +1118,7 @@ pet(199175, 3316);	-- Lubbins
 
 pet(191946, 3265);	-- Mister Muskoxeles
 pet(200519, 3286);	-- Mister Toots
+pet(200930, 3414);	-- Obsidian Proto-Whelp
 pet(193484, 3302);	-- Pilot
 pet(193572, 3306);	-- Quack-E
 pet(191936, 3263);	-- Secretive Frogduck
@@ -1145,7 +1147,7 @@ pet(191930, 3261);	-- Blue Phoenix Hatchling
 pet(0, 3266);	-- Black Slyvern Pup
 pet(193620, 3267);	-- Time-Lost Slyvern
 pet(0, 3268);	-- Swog
-pet(193852, 3269);	-- Azure Frillfish
+
 pet(192459, 3270);	-- Jean's Lucky Fish
 pet(193066, 3275);	-- Chestnut
 pet(193068, 3277);	-- Time-Lost Treeflitter
@@ -1267,7 +1269,6 @@ pet(0, 3409);	-- Tide Spirit
 pet(0, 3410);	-- Dust Spirit
 pet(0, 3411);	-- Blaze Spirit
 pet(0, 3412);	-- Gale Spirit
-pet(0, 3414);	-- Obsidian Proto-Whelp
 pet(0, 3415);	-- Cubbly
 pet(0, 3416);	-- Troubled Tome
 pet(0, 3417);	-- Pinkie

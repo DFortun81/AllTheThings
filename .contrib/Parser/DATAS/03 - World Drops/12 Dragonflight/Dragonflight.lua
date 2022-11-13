@@ -45,13 +45,14 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, 
 		i(199029),	-- Stonewatcher's Toe
 	}),
 	filter(56, {	-- Reagents
-	--
 		i(201400),	-- Aquatic Maw
 		i(193053),	-- Contoured Fowlfeather
+		i(199219),	-- Element-Infused Blood
 		i(201406),	-- Glowing Titan Orb
 		i(201401),	-- Iridescent Plume
 		i(201402),	-- Large Sturdy Femur
 		i(201403),	-- Mastodon Tusk
+		i(198082),	-- Pre-Sentient Rock Cluster
 		i(201399),	-- Primal Bear Spine
 		i(201404),	-- Tallstrider Sinew
 		i(201405),	-- Tuft of Primal Wool
