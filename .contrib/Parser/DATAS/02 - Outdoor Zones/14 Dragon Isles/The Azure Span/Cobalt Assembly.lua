@@ -13,6 +13,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(201733),	-- Pattern: Frosted Armor Kit (RECIPE!)
 						i(194261),	-- Pattern: Frozen Spellthread (RECIPE!)
 						i(191579),	-- Recipe: Transmute: Awakened Frost (RECIPE!)
+						i(198895),	-- Technique: Highland Drake: Spined Crest (RECIPE!)
 					},
 				}),
 			}),

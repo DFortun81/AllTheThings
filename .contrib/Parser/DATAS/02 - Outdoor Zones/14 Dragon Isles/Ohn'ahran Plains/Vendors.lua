@@ -21,12 +21,27 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 			n(191608, {	-- The Great Swog
 				["coord"] = { 82.2, 73.2, OHNAHRAN_PLAINS },
 				["g"] = {
-					i(199234, {	-- Schematic: Khaz'gorite Fisherfriend (RECIPE!)
-						["cost"] = { { "i", 199340, 1}, },	-- 1xGold Coin of the Isles
+					i(199339, {	-- Silver Coin of the Isles
+						["cost"] = { { "i", 199338, 15}, },	-- 15xCopper Coin of the Isles
 					}),
-					i(199341),	-- Regurgitated Sac of Swog Treasures
-					i(199342),	-- Weighted Sac of Swog Treasures
-					i(199343),	-- Immaculate Sac of Swog Treasures
+					i(199340, {	-- Gold Coin of the Isles
+						["cost"] = { { "i", 199339, 5}, },	-- 5xSilver Coin of the Isles
+					}),
+					i(199341, {	-- Regurgitated Sac of Swog Treasures
+						["cost"] = { { "i", 199338, 1}, },	-- 1xCopper Coin of the Isles
+					}),
+					i(199342, {	-- Weighted Sac of Swog Treasures
+						["cost"] = { { "i", 199339, 1}, },	-- 1xSilver Coin of the Isles
+					}),
+					i(202102, {	-- Immaculate Sac of Swog Treasures
+						["cost"] = { { "i", 199340, 1}, },	-- 1xGold Coin of the Isles
+						["g"] = {
+							i(199234),	-- Schematic: Khaz'gorite Fisherfriend (RECIPE!)
+							i(201739),	-- Technique: Windborne Velocidrake: Steel and Orange Armor (RECIPE!)
+							i(201737),	-- Technique: Highland Drake: Steel and Yellow Armor (RECIPE!)
+							i(201736),	-- Technique: Cliffside Wylderdrake: Steel and Yellow Armor (RECIPE!)
+						},
+					}),
 				},
 			}),
 			-- Doogies
@@ -47,6 +62,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 			}),
 			n(189278, {	-- Pesca
 				["coord"] = { 84.2, 27.1, OHNAHRAN_PLAINS },
+			}),
+			n(192818, {	-- Elder Yusa
+				["description"] = "Need to discover this npc. Please report to ATT-Discord.",
+				["g"] = {
+					i(194965),	-- Recipe: Yusa's Hearty Stew (RECIPE!)
+				},
 			}),
 		}),
 	}),

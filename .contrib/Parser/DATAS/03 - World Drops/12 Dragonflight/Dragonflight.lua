@@ -45,6 +45,7 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, 
 		i(199029),	-- Stonewatcher's Toe
 	}),
 	filter(56, {	-- Reagents
+	--
 		i(201400),	-- Aquatic Maw
 		i(193053),	-- Contoured Fowlfeather
 		i(201406),	-- Glowing Titan Orb
@@ -76,6 +77,15 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, 
 		i(193923),	-- Decayed Wildercloth
 		i(193924),	-- Frostbitten Wildercloth
 		i(193925),	-- Singed Wildercloth
+		-- Meat
+		i(197745),	-- Basilisk Eggs
+		i(197746),	-- Bruffalon Flank
+		i(197748),	-- Burly Bear Meat
+		i(197744),	-- Hornswog Hunk
+		i(197741),	-- Maybe Meat
+		i(197747),	-- Mighty Mammoth Ribs
+		i(197742),	-- Ribbed Mollusk Meat
+		i(197743),	-- Waterfowl Filet
 	}),
 	filter(RECIPES, {
 		i(194298, {	-- Pattern: Forlorn Funeral Pall (RECIPE!)
@@ -88,6 +98,7 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, 
 		i(191578, {	-- Recipe: Transmute: Awakened Fire (RECIPE!)
 			["description"] = "Drops from Fiery World Creatures.",
 		}),
+		i(198876),	-- Technique: Weathered Explorer's Stave (RECIPE!)
 	}),
 	n(WEAPONS, {
 		i(199020),	-- Drake Racing Starter Pistol

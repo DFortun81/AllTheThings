@@ -9,6 +9,9 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({
 			2094,	-- Ruby Overlook
 		},
 		["g"] = {
+			n(MYTHIC_PLUS, {
+				i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor (RECIPE!)
+			}),
 			n(QUESTS, {
 				q(66119, {	-- Defend the Life Pools!
 					["sourceQuests"] = { 66118 },	-- Basalt Assault

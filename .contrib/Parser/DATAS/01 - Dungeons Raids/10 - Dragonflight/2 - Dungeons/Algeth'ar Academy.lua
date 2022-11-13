@@ -16,6 +16,10 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["coord"] = { 61.7, 36.2, VALDRAKKEN },
 				}),
 			}),
+			n(TREAURES, {
+				-- Not seen this treasure Deliquent Notes
+				i(198908),	-- Technique: Illusion Parchment: Love Charm (RECIPE!)
+			}),
 			n(ZONE_DROPS, {
 				i(194255),	-- Pattern: Amice of the Blue (RECIPE!)
 				i(194256),	-- Pattern: Hood of Surging Time (RECIPE!)
@@ -71,6 +75,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 
 						i(197147),	-- Highland Drake: Heavy Scales
 						i(197112),	-- Highland Drake: Single Horned Head
+
+						i(198910),	-- Technique: Illusion Parchment: Shadow Orb (RECIPE!)
 					},
 				}),
 			}),
@@ -123,6 +129,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 
 						i(197147),	-- Highland Drake: Heavy Scales
 						i(197112),	-- Highland Drake: Single Horned Head
+
+						i(198910),	-- Technique: Illusion Parchment: Shadow Orb (RECIPE!)
 					},
 				}),
 			}),
@@ -178,6 +186,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 
 						i(197147),	-- Highland Drake: Heavy Scales
 						i(197112),	-- Highland Drake: Single Horned Head
+
+						i(198910),	-- Technique: Illusion Parchment: Shadow Orb (RECIPE!)
 					},
 				}),
 			}),

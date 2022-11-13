@@ -1338,21 +1338,132 @@ i(187806, 359890);	-- Vantus Rune: Sepulcher of the First Ones
 ------------------
 -- PATCH 10.0.0 --
 ------------------
-i(0, 366251);	-- Dragon Isles Inscription
-i(0, 382989);	-- Cataclysm Milling
-i(0, 382994);	-- Classic Milling
-i(0, 382987);	-- Draenor Milling
-i(0, 382981);	-- Dragon Isles Milling
-i(0, 377985);	-- Heart in a Bottle
+-- LATER --
+i(0, 382982);	-- Shadowlands Milling
 i(0, 382984);	-- Kul Tiras and Zandalar Milling
 i(0, 382986);	-- Legion Milling
-i(0, 371340);	-- Mixing Rod I
-i(0, 371376);	-- Mixing Rod II
-i(0, 382990);	-- Northrend Milling
-i(0, 382583);	-- Opening
-i(0, 382991);	-- Outland Milling
+i(0, 382987);	-- Draenor Milling
 i(0, 382988);	-- Pandaria Milling
-i(0, 371341);	-- Rolling Pin I
-i(0, 371375);	-- Rolling Pin II
-i(0, 381545);	-- Scroll of Sales
-i(0, 382982);	-- Shadowlands Milling
+i(0, 382989);	-- Cataclysm Milling
+i(0, 382990);	-- Northrend Milling
+i(0, 382991);	-- Outland Milling
+i(0, 382994);	-- Classic Milling
+-- TRAINER --
+i(0, 366251);	-- Dragon Isles Inscription
+i(0, 382981);	-- Dragon Isles Milling
+i(0, 383549);	-- Alchemist's Sturdy Mixing Rod
+i(0, 383563);	-- Blazing Fortune
+i(0, 383786);	-- Blazing Ink
+i(0, 383791);	-- Burnished Ink
+i(0, 383527);	-- Buzzing Rune
+i(0, 383551);	-- Chef's Smooth Rolling Pin
+i(0, 383531);	-- Chilled Rune
+i(0, 383525);	-- Chirping Rune
+i(0, 383539);	-- Core Explorer's Compendium
+i(0, 383790);	-- Cosmic Ink
+i(0, 383554);	-- Draconic Missive of the Aurora
+i(0, 383555);	-- Draconic Missive of the Feverflare
+i(0, 383556);	-- Draconic Missive of the Fireflash
+i(0, 383560);	-- Draconic Missive of the Harmonious
+i(0, 383561);	-- Draconic Missive of the Peerless
+i(0, 383562);	-- Draconic Missive of the Quickblade
+i(0, 384948);	-- Flourishing Fortune
+i(0, 383787);	-- Flourishing Ink
+i(0, 383529);	-- Howling Rune
+i(0, 383572);	-- Illusion Parchment: Spell Shield
+i(0, 383543);	-- Overseer's Writhebark Stave
+i(0, 383544);	-- Pioneer's Writhebark Stave
+i(0, 389193);	-- Recraft Equipment
+i(0, 383530);	-- Runed Writhebark
+i(0, 383547);	-- Scribe's Fastened Quill
+i(0, 384949);	-- Serene Fortune
+i(0, 383788);	-- Serene Ink
+i(0, 383546);	-- Vantus Rune: Vault of the Incarnates
+-- ITEMS --
+i(198943, 383550);	-- Alchemist's Brilliant Mixing Rod
+i(198947, 383552);	-- Chef's Splendid Rolling Pin
+i(198891, 383574);	-- Cliffside Wylderdrake: Conical Head
+i(198892, 383575);	-- Cliffside Wylderdrake: Red Hair
+i(201734, 391836);	-- Cliffside Wylderdrake: Silver and Blue Armor
+i(201736, 391846);	-- Cliffside Wylderdrake: Steel and Yellow Armor
+i(198893, 383576);	-- Cliffside Wylderdrake: Triple Head Horns
+i(198938, 383592);	-- Contract: Artisan's Consortium
+i(198788, 383593);	-- Contract: Dragonscale Expedition
+i(198940, 383588);	-- Contract: Iskaara Tuskarr
+i(198937, 383591);	-- Contract: Maruuk Centaur
+i(198941, 383590);	-- Contract: Valdrakken Accord
+i(200602, 390850);	-- Draconic Missive of Crafting Speed
+i(200605, 390853);	-- Draconic Missive of Deftness
+i(200603, 390851);	-- Draconic Missive of Finesse
+i(200599, 390847);	-- Draconic Missive of Inspiration
+i(200601, 390849);	-- Draconic Missive of Multicraft
+i(200604, 390852);	-- Draconic Missive of Perception
+i(200600, 390848);	-- Draconic Missive of Resourcefulness
+i(198894, 383577);	-- Highland Drake: Black Hair
+i(201735, 391834);	-- Highland Drake: Silver and Blue Armor
+i(198895, 383578);	-- Highland Drake: Spined Crest
+i(198896, 383579);	-- Highland Drake: Spined Throat
+i(201737, 391845);	-- Highland Drake: Steel and Yellow Armor
+i(198905, 383567);	-- Illusion Parchment: Aqua Torrent
+i(198906, 383570);	-- Illusion Parchment: Arcane Burst
+i(198907, 383571);	-- Illusion Parchment: Chilling Wind
+i(198908, 384869);	-- Illusion Parchment: Love Charm
+i(198909, 383565);	-- Illusion Parchment: Magma Missile
+i(198910, 383573);	-- Illusion Parchment: Shadow Orb
+i(198912, 383569);	-- Illusion Parchment: Whirling Breeze
+i(201741, 383581);	-- Renewed Proto Drake: Bovine Horns
+i(198899, 383580);	-- Renewed Proto-Drake: Predator Pattern
+i(201742, 383586);	-- Renewed Proto-Drake: Silver and Blue Armor
+i(198901, 383582);	-- Renewed Proto-Drake: Spined Crest
+i(201738, 383587);	-- Renewed Proto-Drake: Steel and Yellow Armor
+i(198598, 385197);	-- Scroll of Sales
+i(198876, 383545);	-- Weathered Explorer's Stave
+i(198902, 383583);	-- Windborne Velocidrake: Black Fur
+i(198903, 383584);	-- Windborne Velocidrake: Spined Head
+i(201743, 391832);	-- Windborne Velocidrake: Silver and Blue Armor
+i(201739, 391848);	-- Windborne Velocidrake: Steel and Orange Armor
+i(198904, 383585);	-- Windborne Velocidrake: Windswept Pattern
+-- DISCOVERY --
+i(0, 383522);	-- Draconic Treatise on Alchemy
+i(0, 383517);	-- Draconic Treatise on Blacksmithing
+i(0, 383523);	-- Draconic Treatise on Enchanting
+i(0, 383844);	-- Draconic Treatise on Engineering
+i(0, 383515);	-- Draconic Treatise on Herbalism
+i(0, 383524);	-- Draconic Treatise on Jewelcrafting
+i(0, 383519);	-- Draconic Treatise on Leatherworking
+i(0, 383516);	-- Draconic Treatise on Mining
+i(0, 392944);	-- Draconic Treatise on Skinning
+i(0, 383520);	-- Draconic Treatise on Tailoring
+-- SPECIALIZATION --
+i(0, 383533);	-- Azurescale Sigil
+i(0, 383536);	-- Bronzescale Sigil
+i(0, 383512);	-- Bundle O' Cards: Dragon Isles
+i(0, 383540);	-- Cracking Codex of the Isles
+i(0, 383770);	-- Darkmoon Deck Box: Dance
+i(0, 383325);	-- Darkmoon Deck Box: Inferno
+i(0, 383767);	-- Darkmoon Deck Box: Rime
+i(0, 383772);	-- Darkmoon Deck Box: Watcher
+i(0, 383759);	-- Draconic Treatise on Inscription
+i(0, 383535);	-- Emberscale Sigil
+i(0, 388282);	-- Extraction: Awakened Air
+i(0, 388281);	-- Extraction: Awakened Earth
+i(0, 388274);	-- Extraction: Awakened Fire
+i(0, 388280);	-- Extraction: Awakened Frost
+i(0, 383541);	-- Illuminating Pillar of the Isles
+i(0, 391781);	-- Illustrious Insight
+i(0, 383538);	-- Jetscale Sigil
+i(0, 383542);	-- Kinetic Pillar of the Isles
+i(0, 383534);	-- Sagescale Sigil
+i(0, 383548);	-- Scribe's Resplendent Quill
+-- QUEST --
+i(0, 377985);	-- Heart in a Bottle
+-- NYI --
+i(198944, 371340);	-- Mixing Rod I
+i(198945, 371376);	-- Mixing Rod II
+i(198948, 371341);	-- Rolling Pin I
+i(198949, 371375);	-- Rolling Pin II
+i(198890, 381545);	-- to change \\ Scroll of Sales
+i(0, 382583);	-- Opening
+i(0, 391783);	-- Wisp of Tyr
+i(0, 388458);	-- Unknown
+i(198939, 0);	-- Contract: Dragonscale Expedition

@@ -12,6 +12,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					i(198658),	-- Decay-Infused Tanning Oil
 				},
 			}),
+			-- Snow Covered Scroll??
+			i(198103),	-- Recipe: Snow in a Cone (RECIPE!)
 		}),
 	}),
 })));

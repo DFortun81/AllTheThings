@@ -126,11 +126,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					i(194602),	-- Design: Sensei's Alexstraszite (RECIPE!)
 					i(199816),	-- Formula: Enchant Chest - Accelerated Agility (RECIPE!)
 					i(199815),	-- Formula: Enchant Cloak - Regenerative Leech (RECIPE!)
+					-- RENOWN 13 --
+					i(198894),	-- Technique: Highland Drake: Black Hair
 						-- RENOWN 15 --
 					i(194634),	-- Design: Idol of the Dreamer (RECIPE!)
 					i(194633),	-- Design: Idol of the Spell-Weaver (RECIPE!)
 					i(193875),	-- Pattern: Allied Heartwarming Fur Coat (RECIPE!)
 					i(193876),	-- Pattern: Snowball Makers (RECIPE!)
+					i(198102),	-- Recipe: Impossibly Sharp Cutting Knife (RECIPE!)
 						-- RENOWN 18 --
 					i(194660),	-- Design: Fine-Print Trifocals (RECIPE!)
 					i(194663),	-- Design: Resonant Focus (RECIPE!)
@@ -140,6 +143,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					i(198461),	-- Pattern: Shockproof Gloves (RECIPE!)
 					-- Renown 23
 					i(194311),	-- Pattern: Tuskarr Bean Bag (RECIPE!)
+					-- RENOWN 25--
+					i(198940),	-- Technique: Contract: Iskaara Tuskarr (RECIPE!)
 					-- Renown 29 --
 					i(197981),	-- Pattern: Finished Prototype Regal Barding (RECIPE!)
 				},

@@ -47,7 +47,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					i(194280),	-- Pattern: Chronocloth Sash (RECIPE!)
 					i(194279),	-- Pattern: Azureweave Slippers (RECIPE!)
 						-- RENOWN 15 --
-					i(198892),	-- Technique Cliffside Wylderdrake Manuscript: Red Mane (RECIPE!)
+					i(198892),	-- Technique: Cliffside Wylderdrake: Red Hair (RECIPE!)
 						-- RENOWN 19 --
 					i(194500),	-- Plans: Khaz'gorite Leatherworker's Toolset (RECIPE!)
 					i(194498),	-- Plans: Khaz'gorite Needle Set (RECIPE!)
@@ -60,6 +60,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 						-- RENOWN 23 --
 					i(198941),	-- Technique: Contract: Valdrakken Accord (RECIPE!)
 					i(194287),	-- Pattern: Chronocloth Reagent Bag (RECIPE!)
+					i(198941),	-- Technique: Contract: Valdrakken Accord (RECIPE!)
 						-- RENOWN 28 --
 					i(198912),	-- Technique: Illusion Parchment: Whirling Breeze (RECIPE!)
 					i(194282),	-- Pattern: Cushion of Time Travel (RECIPE!)

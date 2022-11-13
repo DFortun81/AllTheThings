@@ -149,7 +149,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					["provider"] = { "n", 186941 },	-- Qariin Dotur
 					["coord"] = { 59.1, 37.6, OHNAHRAN_PLAINS },
 					["g"] = {
-						i(194964),	-- Recipe: Thrice-Spiced Mammoth Kabob
+						i(194964),	-- Recipe: Thrice-Spiced Mammoth Kabob (RECIPE!)
 					},
 				}),
 				q(66969, {	-- Clans of the Plains

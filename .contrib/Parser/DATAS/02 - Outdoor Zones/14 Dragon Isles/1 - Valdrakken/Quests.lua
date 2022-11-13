@@ -86,6 +86,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 			}),
 
 
+			-- Last week of Ruby Feast
+			i(198132),	-- Recipe: Hoard of Draconic Delicacies (RECIPE!)
+
 			-- SIDE 3
 			q(70846, {	-- Dragonscale Expedition: Help Needed!
 				["provider"] = { "n", 196448 },	-- Aspiring Goblin Enginner

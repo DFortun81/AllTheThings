@@ -487,11 +487,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(190318),	-- Perception!
 			i(190319),	-- Resourceful!
 			i(190332),	-- Sparking Catalyst
-			i(190452),	-- Primal Flux
-			i(191231),	-- Alchemist's Brilliant Mixing Rod
-			i(191232),	-- Chef's Splendid Rolling Pin
-			i(191233),	-- Chef's Smooth Rolling Pin
-			i(191234),	-- Alchemist's Sturdy Mixing Rod
 			i(191252),	-- Reinforced Plating+
 			i(191874),	-- Reinforced Plating++
 			i(191875),	-- Reinforced Plating+++
@@ -505,228 +500,21 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192096),	-- Spool of Wilderthread++
 			i(192097),	-- Spool of Wilderthread+++
 			i(192078),	-- Bottled Putrescence
-			i(192552),	-- Draconic Missive of the Fireflash+++
-			i(192553),	-- Draconic Missive of the Fireflash+
-			i(192554),	-- Draconic Missive of the Fireflash++
-			i(194566),	-- Draconic Missive of the Feverflare+++
-			i(194567),	-- Draconic Missive of the Feverflare+
-			i(194568),	-- Draconic Missive of the Feverflare++
-			i(194569),	-- Draconic Missive of the Aurora+++
-			i(194570),	-- Draconic Missive of the Aurora+
-			i(194571),	-- Draconic Missive of the Aurora++
-			i(194572),	-- Draconic Missive of the Quickblade+++
-			i(194573),	-- Draconic Missive of the Quickblade+
-			i(194574),	-- Draconic Missive of the Quickblade++
-			i(194575),	-- Draconic Missive of the Harmonious+++
-			i(194576),	-- Draconic Missive of the Harmonious+
-			i(194577),	-- Draconic Missive of the Harmonious++
-			i(194578),	-- Draconic Missive of the Peerless+++
-			i(194579),	-- Draconic Missive of the Peerless+
-			i(194580),	-- Draconic Missive of the Peerless++
 			i(194639),	-- Design: Marvelous Mood Ring
-			i(194697),	-- Draconic Treatise on Alchemy
-			i(194698),	-- Draconic Treatise on Tailoring
-			i(194699),	-- Draconic Treatise on Inscription
-			i(194700),	-- Draconic Treatise on Leatherworking
-			i(194702),	-- Draconic Treatise on Enchanting
-			i(194703),	-- Draconic Treatise on Jewelcrafting
-			i(194704),	-- Draconic Treatise on Herbalism
-			i(194708),	-- Draconic Treatise on Mining
 			i(194727),	-- Fiery Spirit+
 			i(194728),	-- Fiery Spirit++
 			i(194729),	-- Fiery Spirit+++
-			i(194731),	-- Illusion Parchment: Magma Missile
-			i(194732),	-- Illusion Parchment: Love Charm
-			i(194733),	-- Illusion Parchment: Aqua Torrent
-			i(194734),	-- Illusion Parchment: Whirling Breeze
-			i(194735),	-- Illusion Parchment: Arcane Burst
-			i(194736),	-- Illusion Parchment: Chilling Wind
-			i(194737),	-- Illusion Parchment: Spell Shield
-			i(194738),	-- Illusion Parchment: Shadow Orb
 			i(194494),	-- Plans: Reinforced Plating
-			i(194751),	-- Blazing Ink+
-			i(194752),	-- Blazing Ink++
-			i(194754),	-- Cosmic Ink+
-			i(194755),	-- Cosmic Ink++
-			i(194756),	-- Cosmic Ink+++
-			i(194758),	-- Flourishing Ink++
-			i(194760),	-- Burnished Ink+
-			i(194761),	-- Burnished Ink++
-			i(194767),	-- Chilled Rune++
-			i(194768),	-- Chilled Rune+++
-			i(194784),	-- Glittering Parchment
-			i(194785),	-- Ace of Fire
-			i(194786),	-- Two of Fire
-			i(194787),	-- Three of Fire
-			i(194788),	-- Four of Fire
-			i(194789),	-- Five of Fire
-			i(194790),	-- Six of Fire
-			i(194791),	-- Seven of Frost
-			i(194792),	-- Eight of Fire
-			i(194793),	-- Ace of Frost
-			i(194794),	-- Two of Frost
-			i(194795),	-- Three of Frost
-			i(194796),	-- Four of Frost
-			i(194797),	-- Five of Frost
-			i(194798),	-- Six of Frost
-			i(194799),	-- Seven of Fire
-			i(194800),	-- Eight of Frost
-			i(194801),	-- Ace of Air
-			i(194802),	-- Two of Air
-			i(194803),	-- Three of Air
-			i(194804),	-- Four of Air
-			i(194805),	-- Five of Air
-			i(194806),	-- Six of Air
-			i(194807),	-- Seven of Air
-			i(194808),	-- Eight of Air
-			i(194809),	-- Ace of Earth
-			i(194810),	-- Two of Earth
-			i(194811),	-- Three of Earth
-			i(194812),	-- Four of Earth
-			i(194813),	-- Five of Earth
-			i(194814),	-- Six of Earth
-			i(194815),	-- Seven of Earth
-			i(194816),	-- Eight of Earth
-			i(194817),	-- Howling Rune+
-			i(194819),	-- Howling Rune++
-			i(194820),	-- Howling Rune+++
-			i(194821),	-- Buzzing Rune+
-			i(194822),	-- Buzzing Rune++
-			i(194823),	-- Buzzing Rune+++
-			i(194824),	-- Chirping Rune+
-			i(194825),	-- Chirping Rune++
-			i(194826),	-- Chirping Rune+++
-			i(194827),	-- Bundle O' Cards: Dragon Isles
 			i(194828),	-- Stacked Deck of Darkmoon Mysteries
-			i(194829),	-- Fated Fortune Card
-			i(194846),	-- Blazing Ink+++
-			i(194850),	-- Flourishing Ink+
-			i(194852),	-- Flourishing Ink+++
-			i(194855),	-- Burnished Ink+++
-			i(194856),	-- Serene Ink+
-			i(194857),	-- Serene Ink++
-			i(194858),	-- Serene Ink+++
-			i(194859),	-- Chilled Rune+
-			i(194862),	-- Runed Writhebark+
-			i(194863),	-- Runed Writhebark++
-			i(194864),	-- Runed Writhebark+++
-			i(194868),	-- Emberscale Sigil+
-			i(194869),	-- Sagescale Sigil+
-			i(194870),	-- Bronzescale Sigil+
-			i(194871),	-- Azurescale Sigil+
-			i(194872),	-- Darkmoon Deck Box: Inferno
 			i(194873),	-- Apprentice's Fluffed Quill
-			i(194874),	-- Scribe's Fastened Quill
-			i(194875),	-- Scribe's Resplendent Quill
-			i(194877),	-- Core Explorer's Compendium
-			i(194879),	-- Crackling Codex of the Isles
 			i(194885),	-- Ohuna Perch
 			i(194888),	-- Dracthyr's Inscribed Blade
-			i(194892),	-- Pioneer's Writhebark Stave
-			i(194893),	-- Overseer's Writhebark Stave
-			i(194894),	-- Weathered Explorer's Stave
-			i(194897),	-- Kinetic Pillar of the Isles
-			i(194898),	-- Illuminating Pillar of the Isles
-			i(194902),	-- Ooey-Gooey Chocolate
 			i(194903),	-- Pocket Chocolate
-			i(194964),	-- Recipe: Thrice-Spiced Mammoth Kabob
-			i(194965),	-- Recipe: Yusa's Hearty Stew
-			i(195881),	-- Recipe: Charred Hornswog Steaks
-			i(197741),	-- Maybe Meat
-			i(197742),	-- Ribbed Mollusk Meat
-			i(197743),	-- Waterfowl Filet
-			i(197744),	-- Hornswog Hunk
-			i(197745),	-- Basilisk Eggs
-			i(197746),	-- Bruffalon Flank
-			i(197747),	-- Mighty Mammoth Ribs
-			i(197748),	-- Burly Bear Haunch
-			i(197749),	-- Ohn'ahran Potato
-			i(197750),	-- Three-Cheese Blend
-			i(197751),	-- Pastry Packets
-			i(197752),	-- Conveniently Packaged Ingredients
-			i(197753),	-- Thaldraszian Cocoa Powder
 			--
-			i(197755),	-- Lava Beetle
-			i(197756),	-- Pebbled Rock Salts
-			i(197757),	-- Assorted Exotic Spices
-			i(197758),	-- Twice-Baked Potato
-			i(197759),	-- Cheese and Quackers
-			i(197760),	-- Mackerel Snackerel
-			i(197761),	-- Probably Protein
-			i(197762),	-- Sweet and Sour Clam Chowder
-			i(197763),	-- Breakfast of Draconic Champions
-			i(197764),	-- Salad on the Side
-			i(197765),	-- Impossibly Sharp Cutting Knife
-			i(197766),	-- Snow in a Cone
-			i(197767),	-- Blubbery Muffin
-			i(197768),	-- Celebratory Cake
-			i(197769),	-- Tasty Hatchling's Treat
-			i(197770),	-- Zesty Water
-			i(197771),	-- Delicious Dragon Spittle
-			i(197772),	-- Churnbelly Tea
-			i(197774),	-- Charred Hornswog Steaks
-			i(197775),	-- Scrambled Basilisk Eggs
-			i(197776),	-- Thrice-Spiced Mammoth Kabob
-			i(197777),	-- Hopefully Healthy
-			i(197778),	-- Timely Demise
-			i(197779),	-- Filet of Fangs
-			i(197780),	-- Seamoth Surprise
-			i(197781),	-- Salt-Baked Fishcake
-			i(197782),	-- Feisty Fish Sticks
-			i(197783),	-- Aromatic Seafood Platter
-			i(197784),	-- Sizzling Seafood Medley
-			i(197785),	-- Revengei(197786),	-- Thousandbone Tongueslicer
-			i(197787),	-- Great Cerulean Sea
-			i(197788),	-- Braised Bruffalon Brisket
-			i(197789),	-- Riverside Picnic
-			i(197790),	-- Roast Duck Delight
-			i(197791),	-- Salted Meat Mash
-			i(197792),	-- Fated Fortune Cookie
-			i(197793),	-- Yusa's Hearty Stew
-			i(197794),	-- Grand Banquet of the Kalu'ak
-			i(197795),	-- Hoard of Draconic Delicacies
 			i(198086),	-- Darkmoon Deck: Inferno
 			i(198087),	-- Darkmoon Deck: Rime
 			i(198088),	-- Darkmoon Deck: Dance
 			i(198089),	-- Darkmoon Deck: Watcher
-			i(198092),	-- Recipe: Twice-Baked Potato
-			i(198093),	-- Recipe: Cheese and Quackers
-			i(198094),	-- Recipe: Mackerel Snackerel
-			i(198095),	-- Recipe: Probably Protein
-			i(198096),	-- Recipe: Sweet and Sour Clam Chowder
-			i(198097),	-- Recipe: Hungry Whelpling Breakfast
-			i(198098),	-- Recipe: Ooey-Gooey Chocolate
-			i(198099),	-- Recipe: Pebbled Rock Salts
-			i(198100),	-- Recipe: Assorted Exotic Spices
-			i(198101),	-- Recipe: Salad on the Side
-			i(198102),	-- Recipe: Impossibly Sharp Cutting Knife
-			i(198103),	-- Recipe: Snow in a Cone
-			i(198104),	-- Recipe: Blubbery Muffin
-			i(198105),	-- Recipe: Celebratory Cake
-			i(198106),	-- Recipe: Tasty Hatchling's Treat
-			i(198107),	-- Recipe: Zesty Water
-			i(198108),	-- Recipe: Delicious Dragon Spittle
-			i(198109),	-- Recipe: Churnbelly Tea
-			i(198111),	-- Recipe: Scrambled Basilisk Eggs
-			i(198112),	-- Recipe: Hopefully Healthy
-			i(198113),	-- Recipe: Timely Demise
-			i(198114),	-- Recipe: Filet of Fangs
-			i(198115),	-- Recipe: Seamoth Surprise
-			i(198116),	-- Recipe: Salt-Baked Fishcake
-			i(198117),	-- Recipe: Feisty Fish Sticks
-			i(198118),	-- Recipe: Aromatic Seafood Platter
-			i(198119),	-- Recipe: Sizzling Seafood Medley
-			i(198120),	-- Recipe: Revengei(198121),	-- Recipe: Thousandbone Tongueslicer
-			i(198122),	-- Recipe: Great Cerulean Sea
-			i(198123),	-- Recipe: Braised Bruffalon Brisket
-			i(198124),	-- Recipe: Riverside Picnic
-			i(198125),	-- Recipe: Roast Duck Delight
-			i(198126),	-- Recipe: Salted Meat Mash
-			i(198127),	-- Recipe: Fated Fortune Cookie
-			i(198129),	-- Recipe: Gral's Reverence
-			i(198130),	-- Recipe: Gral's Veneration
-			i(198131),	-- Recipe: Gral's Devotion
-			i(198132),	-- Recipe: Hoard of Draconic Delicacies
 			prof(COOKING, {
 				i(191917),	-- Suspiciously Fuzzy Drink+
 				i(191918),	-- Suspiciously Fuzzy Drink++
@@ -734,12 +522,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			prof(JEWELCRAFTING, {
 				i(192809),	-- Temporal Residue
-				i(192833),	-- Misshapen Filigree
 				i(192872),	-- Fractured Glass
 				i(192880),	-- Crumbled Stone
-				i(193368),	-- Silken Gemdust+
-				i(193369),	-- Silken Gemdust++
-				i(193370),	-- Silken Gemdust+++
 			}),
 			prof(LEATHERWORKING, {
 				i(193209),	-- Quality Bone
@@ -1329,7 +1113,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194830),	-- Renewed Proto Drake Manuscript: Red Hair
 		i(194831),	-- Renewed Proto Drake Manuscript: Predator Pattern
 		i(194832),	-- Renewed Proto Drake Manuscript: Spined Crest
-		i(194833),	-- Windborne Velocidrake Manuscript: Black Fur
 		i(194834),	-- Windborne Velocidrake Manuscript: Windswept
 		i(194835),	-- Windborne Velocidrake Manuscript: Spined Crest
 		i(194836),	-- Highland Drake Manuscript: Spined Throat
@@ -1345,12 +1128,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(195885),	-- Black Dragon's Scale Cloak
 		i(196961),	-- Cliffside Wylderdrake: Armor
 		i(196962),	-- Cliffside Wylderdrake: Silver and Purple Armor
-		i(196963),	-- Cliffside Wylderdrake: Silver and Blue Armor
 		i(196964),	-- Cliffside Wylderdrake: Gold and Black Armor
 		i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor
 		i(196966),	-- Cliffside Wylderdrake: Gold and Orange Armor
 		i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
-		i(196968),	-- Cliffside Wylderdrake: Steel and Yellow Armor
 		i(196969),	-- Cliffside Wylderdrake: Finned Back
 		i(196970),	-- Cliffside Wylderdrake: Spiked Back
 		i(196971),	-- Cliffside Wylderdrake: Spiked Brow
@@ -1362,15 +1143,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(196977),	-- Cliffside Wylderdrake: Split Head Horns
 		i(196978),	-- Cliffside Wylderdrake: Small Head Spikes
 		i(196979),	-- Cliffside Wylderdrake: Curled Head Horns
-		i(196980),	-- Cliffside Wylderdrake: Triple Head Horns
-		i(196981),	-- Cliffside Wylderdrake: Conical Head
 		i(196982),	-- Cliffside Wylderdrake: Ears
 		i(196983),	-- Cliffside Wylderdrake: Maned Jaw
 		i(196984),	-- Cliffside Wylderdrake: Finned Jaw
 		i(196985),	-- Cliffside Wylderdrake: Horned Jaw
 		i(196986),	-- Cliffside Wylderdrake: Black Hair
 		i(196987),	-- Cliffside Wylderdrake: Blonde Hair
-		i(196988),	-- Cliffside Wylderdrake: Red Hair
 		i(196989),	-- Cliffside Wylderdrake: White Hair
 		i(196990),	-- Cliffside Wylderdrake: Helm
 		i(196991),	-- Cliffside Wylderdrake: Black Horns
@@ -1407,11 +1185,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197022),	-- Cliffside Wylderdrake: Finned Neck
 		i(197023),	-- Cliffside Wylderdrake: Maned Neck
 		i(197090),	-- Highland Drake: Gold and Black Armor
-		i(197091),	-- Highland Drake: Silver and Blue Armor
 		i(197093),	-- Highland Drake: Silver and Purple Armor
 		i(197094),	-- Highland Drake: Gold and Red Armor
 		i(197095),	-- Highland Drake: Gold and White Armor
-		i(197096),	-- Highland Drake: Steel and Yellow Armor
 		i(197097),	-- Highland Drake: Spined Back
 		i(197098),	-- Highland Drake: Finned Back
 		i(197099),	-- Highland Drake: Armor
@@ -1423,7 +1199,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197105),	-- Highland Drake: Spined Chin
 		i(197106),	-- Highland Drake: Finned Head
 		i(197107),	-- Highland Drake: Triple Finned Head
-		i(197108),	-- Highland Drake: Spined Head
 		i(197109),	-- Highland Drake: Spiked Head
 		i(197110),	-- Highland Drake: Plated Head
 		i(197111),	-- Highland Drake: Maned Head
@@ -1432,7 +1207,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197114),	-- Highland Drake: Multi-Horned Head
 		i(197115),	-- Highland Drake: Thorned Jaw
 		i(197116),	-- Highland Drake: Ears
-		i(197117),	-- Highland Drake: Black Hair
 		i(197118),	-- Highland Drake: Brown Hair
 		i(197119),	-- Highland Drake: Helm
 		i(197120),	-- Highland Drake: Ornate Helm
@@ -1469,16 +1243,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197151),	-- Highland Drake: Spiked Tail
 		i(197152),	-- Highland Drake: Hooked Tail
 		i(197153),	-- Highland Drake: Bladed Tail
-		i(197154),	-- Highland Drake: Spined Neck
 		i(197155),	-- Highland Drake: Finned Neck
 		i(197156),	-- Highland Drake: Bronze and Green Armor
 		i(197346),	-- Renewed Proto-Drake: Gold and Black Armor
-		i(197347),	-- Renewed Proto-Drake: Silver and Blue Armor
 		i(197348),	-- Renewed Proto-Drake: Black and Red Armor
 		i(197349),	-- Renewed Proto-Drake: Gold and White Armor
 		i(197350),	-- Renewed Proto-Drake: Silver and Purple Armor
 		i(197351),	-- Renewed Proto-Drake: Gold and Red Armor
-		i(197352),	-- Renewed Proto-Drake: Steel and Yellow Armor
 		i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor
 		i(197354),	-- Renewed Proto-Drake: Horned Back
 		i(197355),	-- Renewed Proto-Drake: Thick Spined Jaw
@@ -1488,7 +1259,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197359),	-- Renewed Proto-Drake: Hairy Brow
 		i(197360),	-- Renewed Proto-Drake: Spined Brow
 		i(197361),	-- Renewed Proto-Drake: Spiked Crest
-		i(197362),	-- Renewed Proto-Drake: Spined Crest
 		i(197363),	-- Renewed Proto-Drake: Maned Crest
 		i(197364),	-- Renewed Proto-Drake: Short Spiked Crest
 		i(197365),	-- Renewed Proto-Drake: Finned Crest
@@ -1503,7 +1273,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197374),	-- Renewed Proto-Drake: Swept Horns
 		i(197375),	-- Renewed Proto-Drake: Curled Horns
 		i(197376),	-- Renewed Proto-Drake: Ears
-		i(197377),	-- Renewed Proto-Drake: Bovine Horns
 		i(197378),	-- Renewed Proto-Drake: Subtle Horns
 		i(197379),	-- Renewed Proto-Drake: Impaler Horns
 		i(197380),	-- Renewed Proto-Drake: Curved Horns
@@ -1520,7 +1289,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197391),	-- Renewed Proto-Drake: Bronze Scales
 		i(197392),	-- Renewed Proto-Drake: Black Scales
 		i(197393),	-- Renewed Proto-Drake: White Scales
-		i(197394),	-- Renewed Proto-Drake: Predator Pattern
 		i(197395),	-- Renewed Proto-Drake: Harrier Pattern
 		i(197396),	-- Renewed Proto-Drake: Skyterror Pattern
 		i(197397),	-- Renewed Proto-Drake: Heavy Scales
@@ -1536,8 +1304,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197407),	-- Renewed Proto-Drake: Spiked Throat
 		i(197408),	-- Renewed Proto-Drake: Finned Throat
 		i(197577),	-- Windborne Velocidrake: Bronze and Green Armor
-		i(197578),	-- Windborne Velocidrake: Silver and Blue Armor
-		i(197579),	-- Windborne Velocidrake: Steel and Orange Armor
 		i(197580),	-- Windborne Velocidrake: Gold and Red Armor
 		i(197581),	-- Windborne Velocidrake: Silver and Purple Armor
 		i(197582),	-- Windborne Velocidrake: White and Pink Armor
@@ -1550,7 +1316,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197589),	-- Windborne Velocidrake: Large Head Fin
 		i(197590),	-- Windborne Velocidrake: Small Head Fin
 		i(197591),	-- Windborne Velocidrake: Hairy Head
-		i(197592),	-- Windborne Velocidrake: Spined Head
 		i(197593),	-- Windborne Velocidrake: Feathery Head
 		i(197594),	-- Windborne Velocidrake: Small Ears
 		i(197595),	-- Windborne Velocidrake: Finned Ears
@@ -1589,7 +1354,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197628),	-- Windborne Velocidrake: Plated Neck
 		i(197629),	-- Windborne Velocidrake: Spiked Neck
 		i(197630),	-- Windborne Velocidrake: Feathered Neck
-		i(197634),	-- Windborne Velocidrake: Windswept Pattern
 		i(197635),	-- Windborne Velocidrake: Reaver Pattern
 		i(197636),	-- Windborne Velocidrake: Shrieker Pattern
 		i(197677),	-- Plainswalking Stick
@@ -1599,7 +1363,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197698),	-- Mystic's Windblade
 		i(197904),	-- Shikaar Hunting Knife
 		i(197905),	-- Salamanther Slicer
-		i(197718),	-- Scroll of Sales
 		i(197725),	-- Deathrip's Curled Claw
 		i(198070),	-- Tattered Seavine
 		i(198071),	-- Flamecarved Bone
@@ -1634,27 +1397,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198393),	-- zzOldDarkmoon Binding: Refreshing Dance
 		i(198394),	-- zzOldDarkmoon Binding: Watcher
 		i(198395),	-- Dull Spined Clam
-		i(198396),	-- Ribbed Mollusk Meat
 		i(198397),	-- Rainbow Pearl
 		i(198400),	-- Lucky Horseshoe
 		i(198407),	-- Azure Arcanic Amplifier
 		i(198411),	-- Claw of Preparedness
-		i(198412),	-- Serene Pigment+
-		i(198413),	-- Serene Pigment++
-		i(198414),	-- Serene Pigment+++
-		i(198415),	-- Flourishing Pigment+
-		i(198416),	-- Flourishing Pigment++
-		i(198417),	-- Flourishing Pigment+++
-		i(198418),	-- Blazing Pigment+
-		i(198419),	-- Blazing Pigment++
-		i(198420),	-- Blazing Pigment+++
-		i(198421),	-- Shimmering Pigment+
-		i(198422),	-- Shimmering Pigment++
-		i(198423),	-- Shimmering Pigment+++
 		i(198424),	-- Refine Dragon Isles Hides
 		i(198425),	-- Refine Dragon Isles Leather
 		i(198426),	-- Refine Dragon Isles Scales
-		i(198431),	-- Jetscale Sigil+
 		i(198433),	-- zzOldDarkmoon Deckbox: Awakened Chill
 		i(198434),	-- zzOldDarkmoon Deckbox: Refreshing Dance
 		i(198435),	-- zzOldDarkmoon Deckbox: Watcher
@@ -1667,39 +1416,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198451),	-- Lifeflame Ampoule
 		i(198452),	-- Prototype F
 		i(198453),	-- Unstable Azerite Grenade
-		i(198454),	-- Draconic Treatise on Blacksmithing
 		i(198474),	-- Artist's Easel
 		i(198475),	-- Broken Banding
 		i(198476),	-- Painting of Introduction
-		i(198477),	-- Darkmoon Deck Box: Rime
-		i(198478),	-- Darkmoon Deck Box: Dance
 		i(198479),	-- Gale Rider
 		i(198480),	-- The Resplendent Pools
-		i(198481),	-- Darkmoon Deck Box: Watcher
 		i(198482),	-- The Spiral of the Kurgans
 		i(198483),	-- jrz 10.0 enchanting test [DNT]
 		i(198484),	-- Brackenhide's Decay
 		i(198486),	-- Windscale Rider
-		i(198487),	-- Iridescent Water
-		i(198491),	-- Vantus Rune: Vault of the Incarnates+
-		i(198492),	-- Vantus Rune: Vault of the Incarnates++
-		i(198493),	-- Vantus Rune: Vault of the Incarnates+++
-		i(198494),	-- Contract: Iskaara Tuskarr+
-		i(198495),	-- Contract: Iskaara Tuskarr++
-		i(198496),	-- Contract: Iskaara Tuskarr+++
-		i(198497),	-- Contract: Valdrakken Accord+
-		i(198498),	-- Contract: Valdrakken Accord++
-		i(198499),	-- Contract: Valdrakken Accord+++
-		i(198500),	-- Contract: Maruuk Centaur+
-		i(198501),	-- Contract: Maruuk Centaur++
-		i(198502),	-- Contract: Maruuk Centaur+++
-		i(198503),	-- Contract: Artisan's Consortium+
-		i(198504),	-- Contract: Artisan's Consortium++
-		i(198505),	-- Contract: Artisan's Consortium+++
-		i(198506),	-- Contract: Dragonscale Expedition+
-		i(198507),	-- Contract: Dragonscale Expedition++
-		i(198508),	-- Contract: Dragonscale Expedition+++
-		i(198510),	-- Draconic Treatise on Engineering
+
 		i(198518),	-- Professor Instructaur's Top Secret Guide to Blacksmithing
 		i(198519),	-- Professor Instructaur's Top Secret Guide to Alchemy
 		i(198520),	-- Professor Instructaur's Top Secret Guide to Enchanting
@@ -1723,7 +1449,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198540),	-- Golden Claw
 		i(198543),	-- Tail Fragments
 		i(198563),	-- Arcane Spark
-		i(198598),	-- Technique: Scroll of Sales
 		i(198599),	-- Experimental Decay Sample
 		i(198603),	-- Arcane Rune
 		i(198604),	-- Arcane Gem
@@ -1738,8 +1463,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198613),	-- Leatherworking Designs
 		i(198614),	-- Soggy Clump of Darkmoon Cards
 		i(198615),	-- Pentagold Seal
-		i(198616),	-- Scroll of Sales
-		i(198617),	-- Scroll of Sales
 		i(198622),	-- Spyragos
 		i(198626),	-- Dislodged Dragoneye
 		i(198646),	-- Ornate Dragon Statue
@@ -1838,7 +1561,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198873),	-- Ivory Trader's Ottuk
 		i(198874),	-- Technique: Kinetic Pillar of the Isles
 		i(198875),	-- Technique: Illuminating Pillar of the Isles
-		i(198876),	-- Technique: Weathered Explorer's Stave
 		i(198877),	-- Technique: Pioneer's Writhebark Stave
 		i(198878),	-- Technique: Overseer's Writhebark Stave
 		i(198879),	-- Technique: Draconic Treatise on Alchemy
@@ -1853,28 +1575,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198888),	-- Technique: Draconic Treatise on Mining
 		i(198889),	-- Technique: Draconic Treatise on Tailoring
 		i(198890),	-- Technique: Scroll of Sales
-		i(198891),	-- Technique: Cliffside Wylderdrake: Conical Head
-		i(198892),	-- Technique: Cliffside Wylderdrake: Red Hair
-		i(198893),	-- Technique: Cliffside Wylderdrake: Triple Head Horns
-		i(198894),	-- Technique: Highland Drake: Black Hair
-		i(198895),	-- Technique: Highland Drake: Spined Crest
-		i(198896),	-- Technique: Highland Drake: Spined Throat
 		i(198897),	-- Technique: Regal Barding Manuscript
 		i(198898),	-- Technique: Explorer's Barding Manuscript
-		i(198899),	-- Technique: Renewed Proto-Drake: Predator Pattern
 		i(198900),	-- Technique: Renewed Proto Drake Manuscript: Red Hair
-		i(198901),	-- Technique: Renewed Proto-Drake: Spined Hair
-		i(198902),	-- Technique: Windborne Velocidrake: Black Fur
-		i(198903),	-- Technique: Windborne Velocidrake: Spined Crest
-		i(198904),	-- Technique: Windborne Velocidrake: Windswept Pattern
-		i(198905),	-- Technique: Illusion Parchment: Aqua Torrent
-		i(198906),	-- Technique: Illusion Parchment: Arcane Burst
-		i(198907),	-- Technique: Illusion Parchment: Chilling Wind
-		i(198908),	-- Technique: Illusion Parchment: Love Charm
-		i(198909),	-- Technique: Illusion Parchment: Magma Missile
-		i(198910),	-- Technique: Illusion Parchment: Shadow Orb
 		i(198911),	-- Technique: Illusion Parchment: Spell Shield
-		i(198912),	-- Technique: Illusion Parchment: Whirling Breeze
 		i(198913),	-- Technique: Chilled Rune
 		i(198914),	-- Technique: Flourishing Fortune
 		i(198915),	-- Technique: Blazing Fortune
@@ -1899,19 +1603,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198934),	-- Technique: Blazing Ink
 		i(198935),	-- Technique: Flourishing Ink
 		i(198936),	-- Technique: Serene Ink
-		i(198937),	-- Technique: Contract: Maruuk Centaur
-		i(198938),	-- Technique: Contract: Artisan's Consortium
-		i(198939),	-- Technique: Contract: Dragonscale Expedition
-		i(198940),	-- Technique: Contract: Iskaara Tuskarr
-		i(198941),	-- Technique: Contract: Valdrakken Accord
 		i(198942),	-- Technique: Alchemist's Sturdy Mixing Rod
-		i(198943),	-- Technique: Alchemist's Brilliant Mixing Rod
-		i(198944),	-- Technique: Mixing Rod I
-		i(198945),	-- Technique: Mixing Rod II
 		i(198946),	-- Technique: Chef's Smooth Rolling Pin
-		i(198947),	-- Technique: Chef's Splendid Rolling Pin
-		i(198948),	-- Technique: Rolling Pin I
-		i(198949),	-- Technique: Rolling Pin II
 		i(198950),	-- Technique: Scribe's Fastened Quill
 		i(198951),	-- Technique: Scribe's Resplendent Quill
 		i(198952),	-- Technique: Darkmoon Deck Box: Dance
@@ -1942,16 +1635,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198977),	-- Ohn'arhan Weave
 		i(198978),	-- Stupidly Effective Stitchery
 		i(198979),	-- Time Capsule Letter
-		i(199051),	-- Azurescale Sigil++
-		i(199052),	-- Azurescale Sigil+++
-		i(199053),	-- Bronzescale Sigil++
-		i(199054),	-- Bronzescale Sigil+++
-		i(199055),	-- Emberscale Sigil++
-		i(199056),	-- Emberscale Sigil+++
-		i(199057),	-- Jetscale Sigil++
-		i(199058),	-- Jetscale Sigil+++
-		i(199059),	-- Sagescale Sigil++
-		i(199060),	-- Sagescale Sigil+++
 		i(199061),	-- A Guide to Rare Fish
 		i(199062),	-- Ruby Gem Cluster Map
 		i(199063),	-- Salted Fish Scraps
@@ -2341,24 +2024,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200560),	-- Enchanted Arcana Vessel
 		i(200561),	-- Deepwater Lure
 		i(200563),	-- Primal Ritual Shell
-		i(200565),	-- Draconic Missive of Resourcefulness
-		i(200566),	-- Draconic Missive of Resourcefulness
-		i(200567),	-- Draconic Missive of Resourcefulness
-		i(200568),	-- Draconic Missive of Multicraft
-		i(200569),	-- Draconic Missive of Multicraft
-		i(200570),	-- Draconic Missive of Multicraft
-		i(200571),	-- Draconic Missive of Crafting Speed
-		i(200572),	-- Draconic Missive of Crafting Speed
-		i(200573),	-- Draconic Missive of Crafting Speed
-		i(200574),	-- Draconic Missive of Finesse
-		i(200575),	-- Draconic Missive of Finesse
-		i(200576),	-- Draconic Missive of Finesse
-		i(200577),	-- Draconic Missive of Perception
-		i(200578),	-- Draconic Missive of Perception
-		i(200579),	-- Draconic Missive of Perception
-		i(200580),	-- Draconic Missive of Deftness
-		i(200581),	-- Draconic Missive of Deftness
-		i(200582),	-- Draconic Missive of Deftness
 		i(200586),	-- Derelict Sunglasses
 		i(200587),	-- Leatherbound Expedition Note
 		i(200588),	-- Meaty Stem
@@ -2371,13 +2036,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200596),	-- Letter from Thaelin Darkanvil
 		i(200597),	-- Lover's Bouquet
 		i(200598),	-- Meluun's Green Curry
-		i(200599),	-- Technique: Draconic Missive of Inspiration
-		i(200600),	-- Technique: Draconic Missive of Resourcefulness
-		i(200601),	-- Technique: Draconic Missive of Multicraft
-		i(200602),	-- Technique: Draconic Missive of Crafting Speed
-		i(200603),	-- Technique: Draconic Missive of Finesse
-		i(200604),	-- Technique: Draconic Missive of Perception
-		i(200605),	-- Technique: Draconic Missive of Deftness
 		i(200606),	-- Previously Owned Map
 		i(200607),	-- Half-Eaten Banana
 		i(200609),	-- Dragon Racing Purse - First Place
@@ -2571,12 +2229,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200852),	-- Nourishing Fertilizer
 		i(200853),	-- How to Grow a Tree in 10 Days
 		i(200854),	-- Cooked Caviar
-		i(200855),	-- Tuskarr Port Wine
 		i(200856),	-- Sideboat
 		i(200857),	-- Talisman of Sargha
 		i(200858),	-- Plume of the Forgotten
 		i(200859),	-- Seasoned Hunter's Trophy
-		i(200860),	-- Draconic Stopper
 		i(200861),	-- Stolen Shikaar Warspear
 		i(200862),	-- Experimental Duck Feed
 		i(200863),	-- Glimmering Nozdorite Cluster
@@ -2704,7 +2360,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201018),	-- Well-Danced Drum
 		i(201019),	-- Ancient Dragonweave Bolt
 		i(201020),	-- Silky Surprise
-		i(201023),	-- Draconic Treatise on Skinning
 		i(201024),	-- Nokuhd Centaur Mantle
 		i(201025),	-- Nokuhd Centaur Harness
 		i(201026),	-- Technique: Draconic Treatise on Skinning
@@ -2965,7 +2620,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201467),	-- Emerald Bloom
 		i(201468),	-- Verdant Swirl
 		i(201469),	-- Emerald Green Apple
-		i(201584),	-- Serevite Rod
 		i(201697),	-- Coldarra Coldbrew
 		i(201698),	-- Black Dragon Red Eye
 		i(201700),	-- Notebook of Crafting Knowledge
@@ -2997,16 +2651,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201729),	-- Spiked Horseshoe
 		i(201730),	-- Nokhud Centaur Spear
 		i(201731),	-- Nokhud Centaur Staff
-		i(201734),	-- Technique: Cliffside Wylderdrake: Silver and Blue Armor
-		i(201735),	-- Technique: Highland Drake: Silver and Blue Armor
-		i(201736),	-- Technique: Cliffside Wylderdrake: Steel and Yellow Armor
-		i(201737),	-- Technique: Highland Drake: Steel and Yellow Armor
-		i(201738),	-- Technique: Renewed Proto-Drake: Steel and Yellow Armor
-		i(201739),	-- Technique: Windborne Velocidrake: Steel and Yellow Armor
 		i(201740),	-- Elemental Codex of Ultimate Power
-		i(201741),	-- Technique: Renewed Proto-Drake: Bovine Horns
-		i(201742),	-- Technique: Renewed Proto-Drake: Silver and Blue Armor
-		i(201743),	-- Technique: Windborne Velocidrake: Silver and Blue Armor
 		i(201754),	-- Obsidian Forgemaster's Cache
 		i(201755),	-- Obsidian Forgemaster's Strongbox
 		i(201756),	-- Bulging Coin Purse
@@ -3232,8 +2877,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198072),	-- Gold-Banded Dragon Tooth
 		i(198895),	-- Technique: Highland Drake: Spined Head
 		i(198896),	-- Technique: Highland Drake: Spined Neck
-		i(198901),	-- Technique: Renewed Proto-Drake: Spined Crest
-		i(198903),	-- Technique: Windborne Velocidrake: Spined Head
 		i(200072),	-- Dragonbane Keep Strongbox
 		i(200094),	-- Caravan Strongbox
 		i(200468),	-- Grand Hunt Spoils
@@ -3352,6 +2995,33 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191885),	-- Draconium Repair Hammer
 			i(190520),	-- zzOldPauldrons of the Dragon
 			i(190521),	-- zzOldTraitorous Primal Gauntlets of the Dragon
+		}),
+		prof(COOKING, {
+			i(198118),	-- Recipe: Aromatic Seafood Platter (RECIPE!)
+			i(198100),	-- Recipe: Assorted Exotic Spices (RECIPE!)
+			i(198123),	-- Recipe: Braised Bruffalon Brisket (RECIPE!)
+			i(198097),	-- Recipe: Breakfast of Draconic Champions (RECIPE!)
+			i(195881),	-- Recipe: Charred Hornswog Steaks (RECIPE!)
+			i(198093),	-- Recipe: Cheese and Quackers (RECIPE!)
+			i(198108),	-- Recipe: Delicious Dragon Spittle (RECIPE!)
+			i(198117),	-- Recipe: Feisty Fish Sticks (RECIPE!)
+			i(198122),	-- Recipe: Great Cerulean Sea (RECIPE!)
+			i(198112),	-- Recipe: Hopefully Healthy (RECIPE!)
+			i(198094),	-- Recipe: Mackerel Snackerel (RECIPE!)
+			i(198099),	-- Recipe: Pebbled Rock Salts (RECIPE!)
+			i(198095),	-- Recipe: Probably Protein (RECIPE!)
+			i(198120),	-- Recipe: Revenge, Served Cold (RECIPE!)
+			i(198124),	-- Recipe: Riverside Picnic (RECIPE!)
+			i(198125),	-- Recipe: Roast Duck Delight (RECIPE!)
+			i(198126),	-- Recipe: Salted Meat Mash (RECIPE!)
+			i(198111),	-- Recipe: Scrambled Basilisk Eggs (RECIPE!)
+			i(198119),	-- Recipe: Sizzling Seafood Medley (RECIPE!)
+			i(198096),	-- Recipe: Sweet and Sour Clam Chowder (RECIPE!)
+			i(198121),	-- Recipe: Thousandbone Tongueslicer (RECIPE!)
+			i(198092),	-- Recipe: Twice-Baked Potato (RECIPE!)
+			i(198107),	-- Recipe: Zesty Water (RECIPE!)
+			--
+			i(198396),	-- Ribbed Mollusk Meat
 		}),
 		prof(ENCHANTING, {
 			i(198779),	-- Formula: Crystal Magical Lockpick (RECIPE!)
@@ -3552,50 +3222,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194051),	-- Wildercloth Weapon Upholstery
 		}),
 		--[[
-		prof(COOKING, {
-			i(198118),	-- Recipe: Aromatic Seafood Platter (RECIPE!)
-			i(198100),	-- Recipe: Assorted Exotic Spices (RECIPE!)
-			i(198123),	-- Recipe: Braised Bruffalon Brisket (RECIPE!)
-			i(198104),	-- Recipe: Blubbery Muffin (RECIPE!)
-			i(198105),	-- Recipe: Celebratory Cake (RECIPE!)
-			i(195881),	-- Recipe: Charred Hornswog Steaks (RECIPE!)
-			i(198093),	-- Recipe: Cheese and Quackers (RECIPE!)
-			i(198109),	-- Recipe: Churnbelly Tea (RECIPE!)
-			i(198108),	-- Recipe: Delicious Dragon Spittle (RECIPE!)
-			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)
-			i(198117),	-- Recipe: Feisty Fish Sticks (RECIPE!)
-			i(198114),	-- Recipe: Filet of Fangs (RECIPE!)
-			i(198131),	-- Recipe: Gral's Devotion (RECIPE!)
-			i(198129),	-- Recipe: Gral's Reverence (RECIPE!)
-			i(198130),	-- Recipe: Gral's Veneration (RECIPE!)
-			i(198122),	-- Recipe: Great Cerulean Sea (RECIPE!)
-			i(198132),	-- Recipe: Hoard of Draconic Delicacies (RECIPE!)
-			i(198112),	-- Recipe: Hopefully Healthy (RECIPE!)
-			i(198097),	-- Recipe: Hungry Whelpling Breakfast (RECIPE!)
-			i(198102),	-- Recipe: Impossibly Sharp Cutting Knife (RECIPE!)
-			i(198094),	-- Recipe: Mackeral Snackeral (RECIPE!)
-			i(198098),	-- Recipe: Ooey-Gooey Chocolate (RECIPE!)
-			i(198099),	-- Recipe: Pebbled Rock Salts (RECIPE!)
-			i(198095),	-- Recipe: Probably Protein (RECIPE!)
-			i(198120),	-- Recipe: Revenge, Served Cold (RECIPE!)
-			i(198124),	-- Recipe: Riverside Picnic (RECIPE!)
-			i(198125),	-- Recipe: Roast Duck Delight (RECIPE!)
-			i(198101),	-- Recipe: Salad on the Side (RECIPE!)
-			i(198116),	-- Recipe: Salt-Baked Fishcake (RECIPE!)
-			i(198126),	-- Recipe: Salted Meat Mash (RECIPE!)
-			i(198111),	-- Recipe: Scrambled Basilisk Eggs (RECIPE!)
-			i(198115),	-- Recipe: Seamoth Surprise (RECIPE!)
-			i(198119),	-- Recipe: Sizzling Seafood Medley (RECIPE!)
-			i(198103),	-- Recipe: Snow in a Cone (RECIPE!)
-			i(198096),	-- Recipe: Sweet and Sour Clam Chowder (RECIPE!)
-			i(198106),	-- Recipe: Tasty Hatchling's Treat (RECIPE!)
-			i(198121),	-- Recipe: Thousandbone Tongueslicer (RECIPE!)
-			i(194964),	-- Recipe: Thrice-Spiced Mammoth Kabob (RECIPE!)
-			i(198113),	-- Recipe: Timely Demise (RECIPE!)
-			i(198092),	-- Recipe: Twice-Baked Potato (RECIPE!)
-			i(194965),	-- Recipe: Yusa's Hearty Stew (RECIPE!)
-			i(198107),	-- Recipe: Zesty Water (RECIPE!)
-		}),
 		filter(PETS, {
 
 			i(191126),	-- Obsidian Whelpling

@@ -13,6 +13,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 				["cr"] = 191541,	-- Craggy Stag
 				["coord"] = { 82.9, 63.5, OHNAHRAN_PLAINS },
 			}),
+			i(198904),	-- Technique: Windborne Velocidrake: Windswept Pattern (RECIPE!)
 		}),
 	}),
 })));

@@ -64,6 +64,27 @@ root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 					},
 				}),
 			})),
+			prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKING }, {
+				n(185556, {	-- Erugosa <Cooking Trainer>
+					["coord"] = { 46.6, 46.6, VALDRAKKEN },
+					["g"] = {
+						r(366256),	-- Dragon Isles Cooking
+						r(381364),	-- Assorted Exotic Spices
+						r(381371),	-- Breakfast of Draconic Champions
+						r(381367),	-- Cheese and Quackers
+						r(381382),	-- Delicious Dragon Spittle
+						r(381389),	-- Hopefully Healthy
+						r(381368),	-- Mackerel Snackerel
+						r(381363),	-- Pebbled Rock Salts
+						r(381369),	-- Probably Protein
+						r(381411),	-- Salted Meat Mash
+						r(381386),	-- Scrambled Basilisk Eggs
+						r(381370),	-- Sweet and Sour Clam Chowder
+						r(381365),	-- Twice-Baked Potato
+						r(381381),	-- Zesty Water
+					},
+				}),
+			}));
 			prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 				n(193744, {	-- Soragosa <Enchanting Trainer>
 					["coord"] = { 30.8, 61.4, VALDRAKKEN },
@@ -161,10 +182,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 					},
 				}),
 			})),
-			--[[
 			prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERBALISM }, {
-				n(, {	--
-					["coord"] = { X, Y VALDRAKKEN },
+				n(185549, {	-- Agrikus <Herbalism Trainer>
+					["coord"] = { 38.0, 68.6, VALDRAKKEN },
 					["g"] = {
 						r(366252),	-- Herb Gathering
 						r(395275),	-- Dreambloom
@@ -173,7 +193,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 					},
 				}),
 			})),
-			--]]
 			prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] = LEATHERWORKING }, {
 				n(185551, {	-- Hideshaper Koruz <Leatherworking Trainer>
 					["coord"] = { 28.8, 61.6, VALDRAKKEN },
@@ -214,6 +233,43 @@ root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 					},
 				}),
 			})),
+			prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRIPTION }, {
+				n(185540, {	-- Talendara <Inscription Trainer>
+					["coord"] = { 38.8, 72.4, VALDRAKKEN },
+					["g"] = {
+						r(366251),	-- Dragon Isles Inscription
+						r(382981),	-- Dragon Isles Milling
+						r(383549),	-- Alchemist's Sturdy Mixing Rod
+						r(383563),	-- Blazing Fortune
+						r(383786),	-- Blazing Ink
+						r(383791),	-- Burnished Ink
+						r(383527),	-- Buzzing Rune
+						r(383551),	-- Chef's Smooth Rolling Pin
+						r(383531),	-- Chilled Rune
+						r(383525),	-- Chirping Rune
+						r(383539),	-- Core Explorer's Compendium
+						r(383790),	-- Cosmic Ink
+						r(383554),	-- Draconic Missive of the Aurora
+						r(383555),	-- Draconic Missive of the Feverflare
+						r(383556),	-- Draconic Missive of the Fireflash
+						r(383560),	-- Draconic Missive of the Harmonious
+						r(383561),	-- Draconic Missive of the Peerless
+						r(383562),	-- Draconic Missive of the Quickblade
+						r(384948),	-- Flourishing Fortune
+						r(383787),	-- Flourishing Ink
+						r(383529),	-- Howling Rune
+						r(383572),	-- Illusion Parchment: Spell Shield
+						r(383543),	-- Overseer's Writhebark Stave
+						r(383544),	-- Pioneer's Writhebark Stave
+						r(389193),	-- Recraft Equipment
+						r(383530),	-- Runed Writhebark
+						r(383547),	-- Scribe's Fastened Quill
+						r(384949),	-- Serene Fortune
+						r(383788),	-- Serene Ink
+						r(383546),	-- Vantus Rune: Vault of the Incarnates
+					},
+				}),
+			})),
 			prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = JEWELCRAFTING }, {
 				n(190094, {	-- Tuluradormi <Jewelcrafting Trainer>
 					["coord"] = { 40.6, 61.2, VALDRAKKEN },
@@ -247,10 +303,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 					},
 				}),
 			})),
-			--[[
 			prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING }, {
-				n(, {	--
-					["coord"] = { X, Y VALDRAKKEN },
+				n(185553, {	-- Sekita the Burrower <Mining Trainer>
+					["coord"] = { 39.0, 51.8, VALDRAKKEN },
 					["g"] = {
 						r(366264),	-- Dragon Isles Mining
 						r(366260),	-- Mining
@@ -260,10 +315,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 						r(384692),	-- Serevite Deposit
 					},
 				}),
-			}),
+			})),
 			prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINNING }, {
-				n(, {	--
-					["coord"] = { X, Y VALDRAKKEN },
+				n(193846, {	-- Ralathor the Rugged <Skinning Trainer>
+					["coord"] = { 28.6, 60.4, VALDRAKKEN },
 					["g"] = {
 						r(366259),	-- Skinning
 						r(395282),	-- Curious Hide
@@ -274,8 +329,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 						r(392445),	-- Scale Skinning
 					},
 				}),
-			}),
-			--]]
+			})),
 			prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAILORING }, {
 				n(193649, {	-- Threadfinder Fulafong <Tailoring Trainer>
 					["coord"] = { 31.8, 68.2, VALDRAKKEN },

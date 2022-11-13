@@ -49,6 +49,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL 
 				r(377982,{["u"]=15}),	-- Heart in a Bottle (ENCHANTING)
 				r(377983,{["u"]=15}),	-- Heart in a Bottle (ENGINEERING)
 				r(377984,{["u"]=15}),	-- Heart in a Bottle (HERBALISM)
+				r(377985,{["u"]=15}),	-- Heart in a Bottle (INSCRIPTION)
 				r(377915,{["u"]=15}),	-- Heart in a Bottle (JEWELCRAFTING)
 				r(377989,{["u"]=15}),	-- Heart in a Bottle (LEATHERWORKING)
 				r(377987,{["u"]=15}),	-- Heart in a Bottle (MINING)
@@ -323,6 +324,33 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL 
 				["g"] = {
 					r(391088),	-- Refine Herbs++
 					r(391089),	-- Refine Herbs+++
+				},
+			}),
+		}),
+		prof(INSCRIPTION, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(383533),	-- Azurescale Sigil
+					r(383536),	-- Bronzescale Sigil
+					r(383512),	-- Bundle O' Cards: Dragon Isles
+					r(383540),	-- Cracking Codex of the Isles
+					r(383770),	-- Darkmoon Deck Box: Dance
+					r(383325),	-- Darkmoon Deck Box: Inferno
+					r(383767),	-- Darkmoon Deck Box: Rime
+					r(383772),	-- Darkmoon Deck Box: Watcher
+					r(383759),	-- Draconic Treatise on Inscription
+					r(383535),	-- Emberscale Sigil
+					r(388282),	-- Extraction: Awakened Air
+					r(388281),	-- Extraction: Awakened Earth
+					r(388274),	-- Extraction: Awakened Fire
+					r(388280),	-- Extraction: Awakened Frost
+					r(383541),	-- Illuminating Pillar of the Isles
+					r(391781),	-- Illustrious Insight
+					r(383538),	-- Jetscale Sigil
+					r(383542),	-- Kinetic Pillar of the Isles
+					r(383534),	-- Sagescale Sigil
+					r(383548),	-- Scribe's Resplendent Quill
 				},
 			}),
 		}),

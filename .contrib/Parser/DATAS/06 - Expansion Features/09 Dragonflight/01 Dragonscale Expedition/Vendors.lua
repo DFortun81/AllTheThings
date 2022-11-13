@@ -31,7 +31,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					i(194289),	-- Pattern: Master's Wildercloth Chef's Hat (RECIPE!)
 					i(194295),	-- Pattern: Explorer's Banner of Dragon Isles Geology (RECIPE!)
 					i(194294),	-- Pattern: Explorer's Banner of Dragon Isles Flora (RECIPE!)
-					i(198901),	-- Technique: Renewed Proto-Drake Manuscript: Spined Hair (RECIPE!)
+					i(198901),	-- Technique: Renewed Proto-Drake Manuscript: Spined Crest (RECIPE!)
 						-- RENOWN 16 --
 					i(198779),	-- Formula: Crystal Magical Lockpick (RECIPE!)
 						-- RENOWN 17 --
@@ -44,6 +44,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					i(198785),	-- Schematic: Quack-E (RECIPE!)
 					i(198780),	-- Schematic: Expedition Multi-Toolbox (RECIPE!)
 					i(194283),	-- Pattern: Duck Stuffed Duck Lovie (RECIPE!)
+					i(198909),	-- Technique: Illusion Parchment: Magma Missile (RECIPE!)
 				},
 			}),
 			n(189226, {	-- Cataloger Jakes

@@ -6,6 +6,29 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 	m(VALDRAKKEN, {
 		n(VENDORS, {
 			-- TODO: COSTS
+			n(198587, {	-- Andoris <Enchanting Supplies>
+				["coord"] = { 30.8, 60.8, VALDRAKKEN },
+				["g"] = {
+					i(201584),	-- Serevite Rod
+				},
+			}),
+			n(195783, {	-- Clerk Nemora <General Goods>
+				["coord"] = { 31.2, 69.2, VALDRAKKEN },
+				["g"] = {
+					i(197752),	-- Conveniently Packaged Ingredients
+					i(200860),	-- Draconic Stopper
+					i(191474),	-- Draconic Vial+
+					i(194784),	-- Glittering Parchment
+					i(198487),	-- Iridescent Water
+					i(192833),	-- Misshapen Filigree
+					i(197749),	-- Ohn'ahran Potato
+					i(197751),	-- Pastry Packets
+					i(190452),	-- Primal Flux
+					i(197753),	-- Thaldraszian Cocoa Powder
+					i(197750),	-- Three-Cheese Blend
+					i(188152),	-- Gateway Control Shard
+				},
+			}),
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
 				["g"] = {
@@ -81,7 +104,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					}),
 				},
 			}),
-			n(196191, {
+			n(196191, {	-- Malicia <Scourge of the Flightless>
 				["coord"] = { 43.4, 42.5, VALDRAKKEN },
 				["sym"] = {
 					{"select", "npcID", 197553 },	-- Select Fieldmaster Emberath
@@ -209,6 +232,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					i(199802),	-- Formula: Enchant Tool - Draconic Finesse (RECIPE!)
 					i(199803),	-- Formula: Enchant Tool - Draconic Perception (RECIPE!)
 					i(199804),	-- Formula: Enchant Tool - Draconic Deftness (RECIPE!)
+					i(200599),	-- Technique: Draconic Missive of Inspiration (RECIPE!)
+					i(200600),	-- Technique: Draconic Missive of Resourcefulness (RECIPE!)
+					i(200601),	-- Technique: Draconic Missive of Multicraft (RECIPE!)
+					i(200602),	-- Technique: Draconic Missive of Crafting Speed (RECIPE!)
+					i(200603),	-- Technique: Draconic Missive of Finesse (RECIPE!)
+					i(200604),	-- Technique: Draconic Missive of Perception (RECIPE!)
+					i(200605),	-- Technique: Draconic Missive of Deftness (RECIPE!)
+					i(198943),	-- Technique: Alchemist's Brilliant Mixing Rod (RECIPE!)
+					i(198947),	-- Technique: Chef's Splendid Rolling Pin (RECIPE!)
+					i(198938),	-- Technique: Contract: Artisan's Consortium (RECIPE!)
+					i(198098),	-- Recipe: Ooey-Gooey Chocolate (RECIPE!)
 				},
 			}),
 			n(196598, {	-- Rethelshi
@@ -218,6 +252,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					{"pop"},
 					{"not", "itemID", 192775 },		-- Not Stormhide Salamanther (MOUNT!)
 					{"modID", 74}
+				},
+			}),
+			n(196975, {	-- Zinfandormu <Sommelier>
+				["coord"] = { 30.8, 60.8, VALDRAKKEN },
+				["g"] = {
+					i(197849),	-- Ancient Firewine
+					i(194684),	-- Azure Leywine
+					i(180409),	-- Crimson Altar Wine
+					i(178219),	-- Mulled Faewine
+					i(178221),	-- Torchberry Wine
+					i(200855),	-- Tuskarr Port Wine
 				},
 			}),
 		}),

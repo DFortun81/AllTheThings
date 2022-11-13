@@ -20,6 +20,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					},
 				}),
 			}),
+			n(REWARDS, {
+				i(198131),	-- Recipe: Gral's Devotion (RECIPE!)
+				i(198129),	-- Recipe: Gral's Reverence (RECIPE!)
+				i(198130),	-- Recipe: Gral's Veneration (RECIPE!)
+			}),
 		})
 	}),
 })));

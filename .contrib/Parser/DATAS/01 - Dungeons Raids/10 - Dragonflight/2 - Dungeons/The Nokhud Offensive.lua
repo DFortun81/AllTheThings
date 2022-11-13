@@ -7,6 +7,9 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 		["coord"] = { 62.0, 42.5, OHNAHRAN_PLAINS },
 		["maps"] = { 2093 },	-- The Nokhud Offensive
 		["g"] = {
+			n(MYTHIC_PLUS, {
+				i(201743),	-- Technique: Windborne Velocidrake: Silver and Blue Armor (RECIPE!)
+			}),
 			n(QUESTS, {
 				q(66690, {	-- The Final Ancestor
 					["sourceQuests"] = {

@@ -37,6 +37,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					i(194480),	-- Plans: Obsidian Halberd (RECIPE!)
 					i(194477),	-- Plans: Obsidian Seared Runeaxe (RECIPE!)
 					i(191547),	-- Recipe: Alacritous Alchemist Stone (RECIPE!)
+					-- RENOWN  15 ---
+					i(198902),	-- Technique: Windborne Velocidrake: Black Fur
 					-- Renown 18 --
 					i(198463),	-- Pattern: Expert Alchemist's Hat (RECIPE!)
 					i(198462),	-- Pattern: Flameproof Apron (RECIPE!)
@@ -48,6 +50,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					i(197982),	-- Pattern: Finished Prototype Explorer's Barding (RECIPE!)
 					i(198713),	-- Plans: Prototype Explorer's Barding Framework (RECIPE!)
 					i(191588),	-- Recipe: Exultant Incense (RECIPE!)
+					i(198937),	-- Technique: Contract: Maruuk Centaur (RECIPE!)
 				},
 			}),
 		}),
