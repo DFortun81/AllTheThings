@@ -7,45 +7,6 @@ _.Zones =
 	m(PANDARIA, {
 		m(ISLE_OF_THUNDER, {
 			n(VENDORS, {
-				n(68000, {	-- Hiren Loresong <Kirin Tor Offensive Quartermaster>
-					["coord"] = { 64.6, 74.6, ISLE_OF_THUNDER },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(97191),	-- Ancient Overlord's Onyx Band
-						i(97189),	-- Ancient Primalist's Seal
-						i(95532),	-- Belt of Loa Charms
-						i(80433),	-- Blood Spiritcaller
-						i(95530),	-- Cinch of the Dead Forest's Vigil
-						i(97207),	-- Cloak of the Immortal Guardian
-						i(95529),	-- Girdle of Shan'ze Glory
-						i(95545),	-- Grand Commendation of the Kirin Tor Offensive
-						i(95491, {	-- Tattered Historical Parchments
-							["description"] = "These parchments are inside chests in the solo scenario, which is accessible after getting a Key to the Palace of Lei Shen.\n\nMight only be obtainable by Rogues through their class hall...",
-							["g"] = {
-								i(95490),	-- Greater Kirin Tor Offensive Insignia
-								i(95489),	-- Kirin Tor Offensive Insignia
-							},
-						}),
-						i(95567),	-- Kirin Tor Beacon (TOY!)
-						i(95591),	-- Kirin Tor Offensive Tabard
-						i(95527),	-- Pain-Binder Girdle
-						i(97187),	-- Refurbished Band of Jin
-						i(97190),	-- Refurbished Seal of Jin
-						i(95564, {	-- Golden Primal Direhorn (MOUNT!)
-							["cost"] = 30000000,	-- 3,000g
-						}),
-						i(97188),	-- Restored Hexxer's Signet
-						i(95531),	-- Rotting Bog Cinch
-						i(97205),	-- Shan'ze Gravetender Cloak
-						i(97206),	-- Shan'ze Partisan's Greatcloak
-						i(95526),	-- Shan'ze Scholar's Girdle
-						i(95534),	-- Skumblade Ritualist Links
-						i(95528),	-- Skumblade-Tooth Girdle
-						i(97204),	-- Static-Collecting Cloak
-						i(95533),	-- Thunder Caressed Waistguard
-						i(97203),	-- Thunder-Chaser Cloak
-					},
-				}),
 				n(70535, {	-- Teng of the Flying Daggers <Shado-Pan Assault Quartermaster>
 					["coord"] = { 51.6, 46.6, ISLE_OF_THUNDER },
 					["g"] = {
@@ -1208,45 +1169,6 @@ _.Zones =
 						i(95122, {	-- Wisp-Weave Pantaloons
 							["cost"] = 5179700,	-- 517g 97s
 						}),
-					},
-				}),
-				n(67672, {	-- Vasarin Redmorn <Sunreaver Onslaught Quartermaster>
-					["coord"] = { 33.4, 32.4, ISLE_OF_THUNDER },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(97196),	-- Ancient Overlord's Onyx Band
-						i(97194),	-- Ancient Primalist's Seal
-						i(95523),	-- Belt of Loa Charms
-						i(80433),	-- Blood Spirit
-						i(95521),	-- Cinch of the Dead Forest's Vigil
-						i(97212),	-- Cloak of the Immortal Guardian
-						i(95520),	-- Girdle of Shan'ze Glory
-						i(95548),	-- Grand Commendation of the Sunreaver Onslaught
-						i(95491, {	-- Tattered Historical Parchments
-							["description"] = "These parchments are inside chests in the solo scenario, which is accessible after getting a Key to the Palace of Lei Shen.\n\nMight only be obtainable by Rogues through their class hall...",
-							["g"] = {
-								i(95488),	-- Greater Sunreaver Onslaught Insignia
-								i(95487),	-- Sunreaver Onslaught Insignia
-							},
-						}),
-						i(95518),	-- Pain-Binder Girdle
-						i(97192),	-- Refurbished Band of Jin
-						i(97195),	-- Refurbished Seal of Jin
-						i(95565, {	-- Crimson Primal Direhorn (MOUNT!)
-							["cost"] = 30000000,	-- 3,000g
-						}),
-						i(97193),	-- Restored Hexxer's Signet
-						i(95522),	-- Rotting Bog Cinch
-						i(97210),	-- Shan'ze Gravetender Cloak
-						i(97211),	-- Shan'ze Partisan's Greatcloak
-						i(95517),	-- Shan'ze Scholar's Girdle
-						i(95525),	-- Skumblade Ritualist Links
-						i(95519),	-- Skumblade-Tooth Girdle
-						i(97209),	-- Static-Collecting Cloak
-						i(95568),	-- Sunreaver Beacon (TOY!)
-						i(95592),	-- Sunreaver Onslaught Tabard
-						i(95524),	-- Thunder Caressed Waistguard
-						i(97208),	-- Thunder-Chaser Cloak
 					},
 				}),
 			}),

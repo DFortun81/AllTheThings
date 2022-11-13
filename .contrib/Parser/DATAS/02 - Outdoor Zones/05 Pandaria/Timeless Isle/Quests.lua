@@ -190,7 +190,7 @@ _.Zones =
 	}),
 };
 root("HiddenQuestTriggers",{
-	tier(MOP_TIER, {		
+	tier(MOP_TIER, {
 		-- RARES
 		q(44696),	-- Tracking Quest - Daily - Watcher Osu — alternate Watcher Osu
 		q(33288),	-- Tracking Quest - First - Archiereus of Flame
@@ -236,6 +236,5 @@ root("HiddenQuestTriggers",{
 		q(33221),	-- One-Time Chest - T3, secondary trigger
 		-- VARIOUS
 		q(33348),	-- "Tom" Bone Apart - Intro Tracking Quest — approaching Zarhym inside the cavern of lost spirits
-		q(32962),	-- "Tom" Bone Apart - Tracking Quest — looting first chest after speaking with Zarhym.  second chest didn't have a quest, but didn't finish so not sure if there are other quests
 	}),
 });

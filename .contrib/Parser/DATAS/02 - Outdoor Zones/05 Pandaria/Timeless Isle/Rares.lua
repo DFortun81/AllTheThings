@@ -502,6 +502,15 @@ _.Zones =
 						}),
 					},
 				}),
+				n(71876, {	-- Zarhym
+					["questID"] = 32962,
+					["isDaily"] = true,
+					["coord"] = { 53.5, 56.4, 555 },	-- Cavern of Lost Spirits
+					["description"] = "Daily Lockout\nTraverse the cave to the skeleton at the end within 5 minutes without touching any ghosts.",
+					["g"] = {
+						ach(8743),	-- Zarhym Altogether
+					},
+				}),
 				n(72245,  {	-- Zesqua
 					["questID"] = 33316,
 					["isDaily"] = true,

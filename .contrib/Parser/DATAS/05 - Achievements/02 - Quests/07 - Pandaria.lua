@@ -286,7 +286,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				ach(8100),		-- Pay to Slay
 			}),
 			ach(8104),		-- Thunder Plunder
-			ach(8105),		-- The Crumble Bundle
 			ach(8107),		-- Ready for RAAAAIIIIDDD?!?ing
 			ach(8108, {		-- When in Ihgaluk, Do as the Skumblade Do
 				crit(1),		-- Kroshik Egg
@@ -312,13 +311,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				crit(2),		-- No blessings active
 			}),
 			ach(8120),		-- Direhorn in a China Shop
-			ach(8212, {		-- Zandalari Library Card
-				crit(1),		-- Iron-Bound Zandalari Journal
-				crit(2),		-- Blood-Spattered Zandalari Journal
-				crit(3),		-- Torn Zandalari Journal
-				crit(4),		-- Frayed Zandalari Journal
-				crit(5),		-- Waterlogged Zandalari Journal
-			}),
 		}),
 		ach(7314),		-- Test Drive (Dread Wastes)
 		ach(7293),		-- Till the Break of Dawn (Halfhill)

@@ -40,7 +40,6 @@ _.Factions =
 			faction(1174),	-- Wildhammer Clan
 		})),
 		tier(MOP_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
-			faction(1387),	-- Kirin Tor Offensive
 			faction(1376),	-- Operation: Shieldwall
 			faction(1242),	-- Pearlfin Jinyu
 		})),
@@ -93,7 +92,6 @@ _.Factions =
 		tier(MOP_TIER, sharedData({["races"] = HORDE_ONLY,}, {
 			faction(1375),	-- Dominance Offensive
 			faction(1228),	-- Forest Hozen
-			faction(1388),	-- Sunreaver Onslaught
 		})),
 		tier(WOD_TIER, sharedData({["races"] = HORDE_ONLY,}, {
 			faction(1445),	-- Frostwolf Orcs

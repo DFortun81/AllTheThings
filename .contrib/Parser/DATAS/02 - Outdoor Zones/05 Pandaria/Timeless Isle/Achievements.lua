@@ -231,9 +231,6 @@ _.Zones =
 					crit(5),	-- 2/2 Smoldering Chests
 				}),
 				ach(8727),	-- Where There's Pirates, There's Booty
-				ach(8743, {	-- Zarhym Altogether
-					["coord"] = { 53.5, 56.4, 555 },	-- Cavern of Lost Spirits
-				}),
 			}),
 		}),
 	}),
