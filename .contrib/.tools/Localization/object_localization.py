@@ -36,9 +36,9 @@ class LangCode(Enum):
 
 class GameFlavor(Enum):
     RETAIL = ""
-    CLASSIC = "classic"
-    # TBC = "tbc"  # no live TBC realms anymore
     WOTLK = "wotlk"
+    # TBC = "tbc"  # no live TBC realms anymore
+    CLASSIC = "classic"
 
 
 async def get_localized_obj_name_flavor(
