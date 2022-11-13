@@ -21580,17 +21580,23 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 
 		-- Adds the pertinent information about a given recipeID to the reagentcache
 		local function CacheRecipeSchematic(recipeID, skipcaching, reagentCache)
+			-- TODO: this can be called successfilly without tradeskillUI open... potentially use function runner
 			local schematic = C_TradeSkillUI_GetRecipeSchematic(recipeID, false);
 			local craftedItemID = schematic.outputItemID;
 			-- app.PrintDebug("Recipe",recipeID,"==>",craftedItemID)
-			local reagentItem, reagentCount;
+			local reagentItem, reagentCount, reagentItemID;
 			-- Recipes now have Slots for available Regeants...
+			-- TODO: schematic.reagentSlotSchematics is often EMPTY on first query??
+			if #schematic.reagentSlotSchematics == 0 then
+				app.PrintDebug("EMPTY SCHEMATICS",recipeID)
+			end
 			for _,reagentSlot in ipairs(schematic.reagentSlotSchematics) do
 				-- reagentType: 1 = required, 0 = optional
 				if reagentSlot.reagentType == 1 then
 					reagentCount = reagentSlot.quantityRequired;
 					-- Each available Reagent for the Slot can be associated to the Recipe/Output Item
-					for _,reagentItemID in ipairs(reagentSlot.reagents) do
+					for _,reagentSlotSchematic in ipairs(reagentSlot.reagents) do
+						reagentItemID = reagentSlotSchematic.itemID;
 						-- Make sure a cache table exists for this item.
 						-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
 						-- Index 2: The Crafted Item IDs => reagentCount
@@ -21609,6 +21615,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 									reagentItem = { {}, {} };
 									reagentCache[reagentItemID] = reagentItem;
 								end
+								-- app.PrintDebug("reagentItemID",reagentItemID,"craft",craftedItemID,"using",reagentCount,"via",recipeID)
 								reagentItem[1][recipeID] = { craftedItemID, reagentCount };
 								reagentItem[2][craftedItemID] = reagentCount;
 							end
