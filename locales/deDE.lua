@@ -104,7 +104,7 @@ local L = app.L;
 	L.BREADCRUMB_PARTYSYNC_3 = "Dies kann, mit einem Charakter der diese Quest annehmen kann, in der Gruppensynchronisation erhalten werden.";
 	L.BREADCRUMB_PARTYSYNC_4 = "Bitte teilt euer Ergebnis in unserem Discord, wenn Ihr versucht diese Quest in der Gruppensynchronisation zu erhalten!";
 	L.DISABLE_PARTYSYNC = "Dies ist vermutlich nicht abschließbar, selbst mit aktiver Gruppensynchronisation. Sollte es dennoch abschließbar sein, melde Dich im Discord!";
-	--TODO: L.UNAVAILABLE_WARNING_FORMAT = "|c%sBecomes unavailable if %d of the following are met:|r";
+	L.UNAVAILABLE_WARNING_FORMAT = "|c%sWird unerreichbar wenn %d der folgenden erfüllt sind:|r";
 	L.NO_ENTRIES = "Es wurden keine Einträge gefunden, die Euren Sucheinstellungen entsprechen.";
 	--TODO: L.NO_ENTRIES_DESC = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.";
 	--TODO: L.DEBUG_LOGIN = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
@@ -462,24 +462,24 @@ local L = app.L;
 		L.ADDITIONAL_LABEL = "Zusätzliche Information";
 
 	-- Features tab
-		--TODO: L.MINIMAP_LABEL = "Minimap Button";
+		L.MINIMAP_LABEL = "Minimap Knopf";
 		--TODO: L.MODULES_LABEL = "Modules & Mini Lists";
 		--TODO: L.REPORTING_LABEL = "Reporting";
 		--TODO: L.ADHOC_UPDATES_CHECKBOX = "Ad-Hoc Window Updates";
 		--TODO: L.ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
-		--TODO: L.SKIP_CUTSCENES_CHECKBOX = "Automatically Skip Cutscenes";
-		--TODO: L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf.";
-		--TODO: L.AUTO_BOUNTY_CHECKBOX = "Automatically Open the Bounty List";
+		L.SKIP_CUTSCENES_CHECKBOX = "Zwischensequenzen automatisch überspringen";
+		L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Aktiviere diese Option, wenn ATT automatisch alle Zwischensequenzen für Euch überspringen soll.";
+		L.AUTO_BOUNTY_CHECKBOX = "Preisgeld Liste automatisch öffnen";
 		--TODO: L.AUTO_BOUNTY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty";
-		--TODO: L.AUTO_MAIN_LIST_CHECKBOX = "Automatically Open the Main List";
-		--TODO: L.AUTO_MAIN_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want to automatically open the Main List when you login.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\n\nShortcut Command: /att";
-		--TODO: L.AUTO_MINI_LIST_CHECKBOX = "Automatically Open the Mini List";
-		--TODO: L.AUTO_MINI_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones. Some people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List\n\nShortcut Command: /att mini";
-		--TODO: L.AUTO_PROF_LIST_CHECKBOX = "Automatically Open the Profession List";
+		L.AUTO_MAIN_LIST_CHECKBOX = "Hauptliste automatisch öffnen";
+		L.AUTO_MAIN_LIST_CHECKBOX_TOOLTIP = "Aktiviere diese Option, um die Hauptliste automatisch beim Login zu öffnen.\n\nIhr könnt diese Einstellung auch auf der Tastatur belegen:\n\nTastaturbelegung -> Addons -> ALL THE THINGS -> Hauptliste ein/aus\n\nShortcut Command: /att";
+		L.AUTO_MINI_LIST_CHECKBOX = "Mini Liste automatisch öffnen";
+		L.AUTO_MINI_LIST_CHECKBOX_TOOLTIP = "Aktiviere diese Option, um alles zu sehen was Ihr in eurer derzeitigen Zone sammeln könnt. Die Liste ändert sich automatisch, wenn Ihr die Zone wechselt. Einige Leute mögen diese Funktion nicht, aber wenn Ihr alleine sammelt, ist sie äußerst nützlich.\n\nIhr könnt diese Einstellung auch auf der Tastatur belegen.\n\nTastaturbelegung -> Addons -> ALL THE THINGS -> Mini Liste ein/aus\n\nShortcut Command: /att mini";
+		L.AUTO_PROF_LIST_CHECKBOX = "Berufs Liste automatisch öffnen";
 		--TODO: L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List";
-		--TODO: L.AUTO_RAID_ASSISTANT_CHECKBOX = "Automatically Open the Raid Assistant";
+		L.AUTO_RAID_ASSISTANT_CHECKBOX = "Raid Assistent automatisch öffnen";
 		--TODO: L.AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP = "Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra";
-		--TODO: L.AUTO_WQ_LIST_CHECKBOX = "Automatically Open the World Quests List";
+		L.AUTO_WQ_LIST_CHECKBOX = "Welt Quests Liste automatisch öffnen";
 		--TODO: L.AUTO_WQ_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List\n\nShortcut Command: /attwq";
 		--TODO: L.CURRENCIES_IN_WQ_CHECKBOX = "Show Collectible Cost Groups";
 		--TODO: L.CURRENCIES_IN_WQ_CHECKBOX_TOOLTIP = "Enable this option if you want to allow Items/Currencies which are used to purchase collectible Things to be considered collectible and show under dynamically-populated Quests.";
@@ -489,7 +489,7 @@ local L = app.L;
 		--TODO: L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' operation ("..SHIFT_KEY_TEXT.." + Right Click) to sort by the total progress of each group (instead of by Name)";
 		--TODO: L.QUEST_CHAIN_NESTED_CHECKBOX = "Show Nested Quest Chains";
 		--TODO: L.QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP = "Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.";
-		--TODO: L.CELEBRATIONS_LABEL = "Celebrations & Sound Effects";
+		L.CELEBRATIONS_LABEL = "Feierlichkeiten & Sound Effekte";
 		--TODO: L.MASTER_AUDIO_CHECKBOX = "Use the Master Audio Channel";
 		--TODO: L.MASTER_AUDIO_CHECKBOX_TOOLTIP = "Enable this option if you want the celebrations and other ATT sound effects to play on the 'MASTER' audio channel.\n\nDefault: Yes\n\nA lot of people play with sound effects off, so this option allows the ATT sounds to bypass that should it be desired.";
 		L.CELEBRATE_COLLECTED_CHECKBOX = "Gesammelte Dinge lösen eine Feierlichkeit aus";
@@ -497,7 +497,7 @@ local L = app.L;
 		L.WARN_REMOVED_CHECKBOX = "Entfernte Dinge lösen eine Warnung aus";
 		--TODO: L.WARN_REMOVED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
 		L.SCREENSHOT_COLLECTED_CHECKBOX = "Gesammelte Dinge lösen einen Screenshot aus";
-		--TODO: L.SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to take a screenshot for every Thing you collect.";
+		L.SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Aktiviere diese Option, um bei gesammelten Dingen automatisch einen Screenshot zu erstellen.";
 		L.CHAT_COMMANDS_LABEL = "Chat Befehle";
 		--TODO: L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
 
@@ -506,30 +506,30 @@ local L = app.L;
 		L.PROFILE = "Profil";
 		L.PROFILE_INITIALIZE = "Initialisiere Profil";
 		--TODO: L.PROFILE_INITIALIZE_TOOLTIP = "This will enable your Saved Variables for ATT to support and contain Profile data. Your current Settings and Window information will be copied into the '"..DEFAULT.."' Profile, which cannot be deleted, but may be modified and will be used as the initial Profile for all characters.\n\nPlease be sure to report any unusual behavior or bugs with Profiles to the ATT Discord!";
-		--TODO: L.PROFILE_INITIALIZE_CONFIRM = "Are you sure you want to enable Profile support?";
-		--TODO: L.PROFILE_NEW_TOOLTIP = "Create a blank Profile to be used by the current Character";
-		L.PROFILE_COPY_TOOLTIP = "Kopieren des ausgewählten Profils in das derzeitige aktive Profil";
+		L.PROFILE_INITIALIZE_CONFIRM = "Möchten Sie die Profilunterstützung wirklich aktivieren?";
+		L.PROFILE_NEW_TOOLTIP = "Erstelle ein leeres Profil, das vom aktuellen Charakter verwendet werden soll";
+		L.PROFILE_COPY_TOOLTIP = "Kopieren des ausgewählten Profils in das derzeitig aktive Profil";
 		L.PROFILE_DELETE_TOOLTIP = "Lösche das ausgewählte Profil";
-		--TODO: L.PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.."-Clicked to Switch to it";
+		L.PROFILE_SWITCH_TOOLTIP = "Setzt das ausgewählte Profil als das derzeitig aktive Profil\n\nEin Profil kann auch mit "..SHIFT_KEY_TEXT.."-geklickt werden, um dazu zu wechseln";
 
 	-- Sync tab
-		--TODO: L.SYNC = "Sync";
-		--TODO: L.ACCOUNT_SYNCHRONIZATION = "Account Synchronization";
-		--TODO: L.AUTO_SYNC_ACC_DATA_CHECKBOX = "Automatically Sync Account Data";
-		--TODO: L.AUTO_SYNC_ACC_DATA_TOOLTIP = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
-		--TODO: L.ACCOUNT_MANAGEMENT = "Account Management";
-		--TODO: L.ACCOUNT_MANAGEMENT_TOOLTIP = "This list shows you all of the functionality related to syncing account data.";
-		--TODO: L.ADD_LINKED_CHARACTER_ACCOUNT = "Add Linked Character / Account";
-		--TODO: L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Click here to link a character or account to your account.";
-		--TODO: L.ADD_LINKED_POPUP = "Please type the name of the character or BNET account to link to.";
+		L.SYNC = "Sync";
+		L.ACCOUNT_SYNCHRONIZATION = "Account Synchronisierung";
+		L.AUTO_SYNC_ACC_DATA_CHECKBOX = "Automatische Synchronisierung vom Account";
+		L.AUTO_SYNC_ACC_DATA_TOOLTIP = "Aktiviere diese Option, wenn ATT automatisch versuchen soll die Daten zwischen verknüpften Accounts zu synchronisieren, falls Ihr einloggt oder das Interface neu geladen wird.";
+		L.ACCOUNT_MANAGEMENT = "Accountverwaltung";
+		L.ACCOUNT_MANAGEMENT_TOOLTIP = "Diese Liste zeigt alle Funktionen, die mit der Synchronisierung von Accounts zusammenhängen.";
+		L.ADD_LINKED_CHARACTER_ACCOUNT = "Verknüpften Charakter / Account hinzufügen";
+		L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Klick hier, um einen Charakter oder Account mit Eurem Account zu verknüpfen.";
+		L.ADD_LINKED_POPUP = "Bitte geben Sie den Namen des Charakters oder Bnet Kontos ein, zu dem Sie eine Verknüpfung erstellen möchten.";
 		L.SYNC_CHARACTERS_TOOLTIP = "Dies zeigt alle Charaktere auf diesem Account.";
 		L.NO_CHARACTERS_FOUND = "Keine Charaktere gefunden.";
 		L.LINKED_ACCOUNTS = "Verknüpfte Accounts";
-		--TODO: L.LINKED_ACCOUNTS_TOOLTIP = "This shows all of the linked accounts you have defined so far.";
+		L.LINKED_ACCOUNTS_TOOLTIP = "Hier werden alle Eure verknüpften Accounts angezeigt, die Ihr definiert habt.";
 		L.NO_LINKED_ACCOUNTS = "Keine verknüpften Accounts gefunden.";
 		--TODO: L.LINKED_ACCOUNT_TOOLTIP = "This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.";
-		--TODO: L.DELETE_LINKED_CHARACTER = "Right Click to Delete this Linked Character";
-		--TODO: L.DELETE_LINKED_ACCOUNT = "Right Click to Delete this Linked Account";
+		L.DELETE_LINKED_CHARACTER = "Rechtsklick zum Löschen dieses verknüpften Charakters";
+		L.DELETE_LINKED_ACCOUNT = "Rechtsklick zum Löschen dieses verknüpften Accounts";
 		L.DELETE_CHARACTER = "Rechtsklick um diesen Charakter zu löschen";
 		L.CONFIRM_DELETE = "\n \nBist Du sicher, dass Du dies löschen möchtest?";
 
@@ -545,19 +545,19 @@ local L = app.L;
 		L.TOGGLE_DEBUG_MODE = "Debug Modus ein/aus";
 		L.TOGGLE_FACTION_MODE = "Fraktions Modus ein/aus";
 		L.PREFERENCES = "Präferenzen";
-		--TODO: L.TOGGLE_COMPLETEDTHINGS = "Toggle Completed Things (Both)";
-		--TODO: L.TOGGLE_COMPLETEDGROUPS = "Toggle Completed Groups";
-		--TODO: L.TOGGLE_COLLECTEDTHINGS = "Toggle Collected Things";
-		--TODO: L.TOGGLE_BOEITEMS = "Toggle BoE/BoA Items";
-		--TODO: L.TOGGLE_SOURCETEXT = "Toggle Source Locations";
+		L.TOGGLE_COMPLETEDTHINGS = "Erledigte Dinge ein/aus (Beides)";
+		L.TOGGLE_COMPLETEDGROUPS = "Abgeschlossene Gruppen ein/aus";
+		L.TOGGLE_COLLECTEDTHINGS = "Gesammelte Dinge ein/aus";
+		L.TOGGLE_BOEITEMS = "BoE/BoA Gegenstände ein/aus";
+		L.TOGGLE_SOURCETEXT = "Quellen ein/aus";
 		--TODO: L.MODULES = "Modules";
-		--TODO: L.TOGGLE_MAINLIST = "Toggle ATT Main List";
-		--TODO: L.TOGGLE_MINILIST = "Toggle ATT Mini List";
-		--TODO: L.TOGGLE_PROFESSION_LIST = "Toggle ATT Profession List";
-		--TODO: L.TOGGLE_WORLD_QUESTS_LIST = "Toggle ATT World Quests";
-		--TODO: L.TOGGLE_RAID_ASSISTANT = "Toggle ATT Raid Assistant";
-		--TODO: L.TOGGLE_RANDOM = "Toggle ATT Random";
-		--TODO: L.REROLL_RANDOM = "Reroll the Random Selection";
+		L.TOGGLE_MAINLIST = "ATT Hauptliste ein/aus";
+		L.TOGGLE_MINILIST = "ATT Mini Liste ein/aus";
+		L.TOGGLE_PROFESSION_LIST = "ATT Berufs Liste ein/aus";
+		L.TOGGLE_WORLD_QUESTS_LIST = "ATT Welt Quests ein/aus";
+		L.TOGGLE_RAID_ASSISTANT = "ATT Raid Assistent ein/aus";
+		L.TOGGLE_RANDOM = "ATT Zufall ein/aus";
+		L.REROLL_RANDOM = "Zufallsauswahl erneut würfeln";
 
 	-- Event Text
 		L.ITEM_ID_ADDED = "%s (%d) wurde deiner Sammlung hinzugefügt.";
@@ -569,16 +569,16 @@ local L = app.L;
 		L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] wurden aus deiner Sammlung entfernt.";
 
 	-- Tooltip Text
-		--TODO: L.DROP_RATE = "Drop Rate";
+		L.DROP_RATE = "Drop Rate";
 		L.QUEST_GIVER = "Questgeber";
-		--TODO: L.LOCKOUT = "Lockout";
+		L.LOCKOUT = "Sperre";
 		L.SHARED = "Geteilt";
-		--TODO: L.SPLIT = "Per Difficulty";
-		--TODO: L.REQUIRES_LEVEL = "Requires Level";
+		L.SPLIT = "Pro Schwierigkeitsgrad";
+		L.REQUIRES_LEVEL = "Benötigt Stufe";
 		L.SECRETS_HEADER = "Geheimnisse";
-		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
-		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
-		--TODO: L.REMOVED_WITH_PATCH_FORMAT = "This gets removed in patch %s";
+		L.LIMITED_QUANTITY = "Dies hat eine begrenzte Menge und ist nicht immer beim Händler verfügbar.";
+		L.SOURCE_ID_MISSING = "Bitte meldet diesen Gegenstand und wo er erhalten wurde an das ATT Discord in #retail-errors!";
+		L.REMOVED_WITH_PATCH_FORMAT = "Dies wird entfernt mit Patch %s";
 
 	-- Artifact Relic Completion
 		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
@@ -639,7 +639,7 @@ L.CUSTOM_DIFFICULTIES[-4] = "Heroisch (5.4)";
 local a = L.FILTER_ID_TYPES;
 for key,value in pairs({
 	-- "Armor Types"
-		--TODO: [11] = "Artifacts";									-- Artifacts
+		[11] = "Artefakte";									-- Artifacts
 
 	-- PADDING for extra types, if necessary
 	--TODO: [55] = "Consumables";									-- Consumable (Artifact Power, etc)
@@ -685,10 +685,10 @@ for key,value in pairs({
 		--TODO: [-81] = "Third Chest",
 		--TODO: [-82] = "Final Chest",
 	-- SM
-		--TODO: [-85] = "Graveyard",
-		--TODO: [-86] = "Library",
-		--TODO: [-87] = "Armory",
-		--TODO: [-88] = "Cathedral",
+		[-85] = "Friedhof", 									-- Graveyard
+		[-86] = "Bibliothek",									-- Library
+		[-87] = "Waffenkammer",								-- Armory
+		[-88] = "Kathedrale",									-- Cathedral
 	-- Garrisons
 		[-99] = "Gebäude",											-- Buildings
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
@@ -697,7 +697,7 @@ for key,value in pairs({
 		--TODO: [-132] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137),	-- Feralas Active
 		--TODO: [-133] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741),	-- Duskwood Activated
 	-- Garrison
-		--TODO: [-152] = "Garrison Campaign",						-- Garrison Campaign
+		[-152] = "Garnisonskampagne",						-- Garrison Campaign
 	-- Druid Feral Druid Hidden Artifact Appearance
 		--TODO: [-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),	-- The Hinterlands Activated
 		--TODO: [-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),	-- Feralas Activated
@@ -713,11 +713,11 @@ for key,value in pairs({
 	--TODO: [-219] = "Sourceless",									-- Sourceless
 	-- PvP
 		[-242] = "Ungewertet",										-- Unrated
-		[-243] = "Kopfgeld",										-- Bounty
+		[-243] = "Preisgeld",										-- Bounty
 	-- Allied Races
 		[-254] = "Verbündete Völker & Traditionsrüstung",			-- Allied Races & Heritage
 	-- First Questline Draenor
-		--TODO: [-356] = "Assault on the Dark Portal",				-- Assault on the Dark Portal
+		[-356] = "Angriff auf das Dunkle Portal",				-- Assault on the Dark Portal
 	-- Outposts in Draenor
 		--TODO: [-361] = GetSpellInfo(182108).." Tower",			-- Artillery Tower
 	-- Legendaries
@@ -725,10 +725,10 @@ for key,value in pairs({
 	-- Operation: Mechagon
 		[-379] = "Schrottplatz",									-- Junkyard
 	-- Icecrown Citadel
-		--TODO: [-393] = "Storming the Citadel",					-- Storming the Citadel
-		--TODO: [-394] = "The Plagueworks",							-- The Plagueworks
+		[-393] = "Sturm auf die Zitadelle",					-- Storming the Citadel
+		[-394] = "Die Seuchenwerke",							-- The Plagueworks
 	-- BFA Outposts
-		--TODO: [-397] = "Outposts",								-- Outposts
+		[-397] = "Außenposten",								-- Outposts
 	-- 5.3
 		[-398] = "Schlachtfeld: Brachland",							-- Battlefield: Barrens
 	-- T0.5 & Classic
@@ -749,8 +749,8 @@ for key,value in pairs({
 		--TODO: [-525] = EXPANSION_NAME5..": Iron Horde Incursion",	-- Warlords of Draenor: Iron Horde Incursion
 		--TODO: [-526] = EXPANSION_NAME6..": Legion Invasion",		-- Legion: Legion Invasion
 		--TODO: [-527] = EXPANSION_NAME7..": War of the Thorns",	-- Battle for Azeroth: War of the Thorns
-		--TODO: [-532] = "Heroes of the Storm",						-- Heroes of the Storm
-		--TODO: [-533] = "Hearthstone",								-- Hearthstone
+		[-532] = "Heroes of the Storm",						-- Heroes of the Storm
+		[-533] = "Hearthstone",								-- Hearthstone
 		--TODO: [-534] = "Collector's Edition",						-- Collector's Edition
 		[-536] = "Hearthstone Söldner",								-- Hearthstone Mercenaries
 		[-537] = "20. Geburtstag von Diablo",						-- Diablo 20th Anniversary
@@ -767,10 +767,10 @@ for key,value in pairs({
 		--TODO: [-583] = "WotLK Classic Northrend Epic Upgrade",	-- WotLK Classic Northrend Epic Upgrade
 	-- PvP Header
 		-- PvP Set Names
-			--TODO: [-659] = "Aspirant Gear",						-- Aspirant PvP Gear (WoD, BfA)
-			--TODO: [-660] = "Combatant Gear",						-- Combatant PvP Gear (WoD, Legion)
-			--TODO: [-661] = "Gladiator Gear",						-- Gladiator PvP Gear
-			--TODO: [-662] = "Elite Gear",							-- Elite PvP Gear
+			[-659] = "Aspiranten Rüstung",						-- Aspirant PvP Gear (WoD, BfA)
+			[-660] = "Kämpfer Rüstung",						-- Combatant PvP Gear (WoD, Legion)
+			[-661] = "Gladiatoren Rüstung",						-- Gladiator PvP Gear
+			[-662] = "Elite Rüstung",							-- Elite PvP Gear
 		-- The Burning Crusade PvP Seasons
 			--TODO: [-664] = select(2, GetAchievementInfo(2091))..": Season 1",-- Gladiator: Season 1
 			--TODO: [-665] = select(2, GetAchievementInfo(418))..": Season 2",-- Merciless Gladiator: Season 2
@@ -801,15 +801,15 @@ for key,value in pairs({
 	-- Chests
 		[-851] = "Truhe des Schwarzen Imperiums",					-- Black Empire Cache
 	-- Heart of Azeroth
-		--TODO: [-853] = "All Roles",								-- All Roles
-		--TODO: [-854] = "DPS",										-- DPS
-		--TODO: [-855] = "Healers",									-- Healers
-		--TODO: [-856] = "Tanks",									-- Tanks
-		--TODO: [-857] = "Mythic+",									-- Mythic+
-		--TODO: [-858] = "Rank 1",									-- Rank 1
-		--TODO: [-859] = "Rank 2",									-- Rank 2
-		--TODO: [-860] = "Rank 3",									-- Rank 3
-		--TODO: [-861] = "Rank 4",									-- Rank 4
+		[-853] = "Alle Rollen",								-- All Roles
+		[-854] = "DDs",										-- DPS
+		[-855] = "Heiler",									-- Healers
+		[-856] = "Tanks",									-- Tanks
+		[-857] = "Mythic+",									-- Mythic+
+		[-858] = "Rang 1",									-- Rank 1
+		[-859] = "Rang 2",									-- Rank 2
+		[-860] = "Rang 3",									-- Rank 3
+		[-861] = "Rang 4",									-- Rank 4
 	-- Shadowlands Header
 		--TODO: [-903] = "Zone Rewards",							-- Zone Rewards
 		[-907] = "Tote Graumähne",									-- Dead Blanchy
@@ -823,19 +823,19 @@ for key,value in pairs({
 		[-921] = "Sanktumaufwertungen",								-- Sanctum Upgrades
 		[-924] = "Reisenetzwerk",									-- Transport Network
 		-- SL Ardenweald/Night Fae
-			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
+			[-936] = "Seelengestalt Formen",						-- Soulshape Forms (Night Fae)
 			[-1002] = "Pflichtbewusster Geist",						-- Dutiful Spirit
 			[-1003] = "Kämpferischer Geist",						-- Martial Spirit
 			[-1004] = "Stolzer Geist",								-- Prideful Spirit
 			[-1005] = "Ungezähmter Geist",							-- Untamed Spirit
 		-- SL Bastion/Kyrian
 			[-940] = "Rat der Aufgestiegenen",						-- Ascended Counil
-			--TODO: [-973] = "Loyalty",								-- Loyalty
-			--TODO: [-975] = "Humility",							-- Humility
+			[-973] = "Loyalität",								-- Loyalty
+			[-975] = "Demut",							-- Humility
 		-- SL Revendreth/Venthyr
-			--TODO: [-954] = "Inquisitors",							-- Inquisitors
-			--TODO: [-955] = "High Inquisitors",					-- High Inquisitors
-			--TODO: [-956] = "Grand Inquisitors",					-- Grand Inquisitors
+			[-954] = "Inquisitor",							-- Inquisitors
+			[-955] = "Hochinquisitor ",					-- High Inquisitors
+			[-956] = "Großinquisitor",					-- Grand Inquisitors
 			[-967] = "Spiegelwiederherstellung",					-- "Mirror Restoration",
 			--TODO: [-968] = "Set A",								-- Set A
 			--TODO: [-969] = "Set B",								-- Set B
@@ -878,7 +878,7 @@ for key,value in pairs({
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			--TODO: [-5200] = "Base Appearance",
-			--TODO: [-5201] = "Class Hall Campaign",
+			[-5201] = "Ordenskampagne",
 			[-5202] = "Gleichgewicht der Kräfte",					-- Balance of Power
 			--TODO: [-5203] = "Prestige Rewards",
 			--TODO: [-5204] = "Challenge Appearance",
@@ -886,9 +886,9 @@ for key,value in pairs({
 		-- Class Sets
 			--TODO: [-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER.." Item Sets",	-- Class Trial Item Sets
 
-		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
+		[-7776] = "Winterfeiernder",						-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------
-		--TODO: [-10071] = "Visions of N'Zoth",
+		[-10071] = "Visionen von N'Zoth",
 		--TODO: [-10072] = "N'Zoth Assault",
 		[-10075] = "Angriff: Vorstoß der Amathet",					-- Assault: Amathet Advance
 		[-10076] = "Angriff: Das Schwarze Imperium",				-- Assault: The Black Empire
@@ -899,7 +899,7 @@ for key,value in pairs({
 		--TODO: [-10082] = "Lost Area",
 		-- Shadowlands Achievement Headers
 			-- 9.1
-				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults
+				[-10083] = "Paktangriffe",				-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Zerbrochener Spiegel A-1",			-- Broken Mirror
 				[-1433952] = "Zerbrochener Spiegel A-2",			-- Broken Mirror
@@ -1004,7 +1004,7 @@ for key,value in pairs({
 	[6751] = "Sonderbare fruchtbeladene Pflanze",	-- Strange Fruited Plant
 	[6752] = "Sonderbare wedelbestückte Pflanze",	-- Strange Fronded Plant
 	[7510] = "Sprießender Wedel",	-- Sprouted Frond
-	--TODO: [12564] = "Assassination Notice",	-- Assassination Notice
+	[12564] = "Auftragsmordnotiz",	-- Assassination Notice
 	[15084] = "Der Funkelmat 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
 	[15085] = "Der Funkelmat 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
 	[19022] = "Abgenutzte Truhe",	-- Worn Chest
@@ -1120,7 +1120,7 @@ for key,value in pairs({
 	[174709] = "Verderbte Windblüte",	-- Corrupted Windblossom
 	[174712] = "Verderbte Liedblume",	-- Corrupted Songflower
 	[174713] = "Verderbte Liedblume",	-- Corrupted Songflower
-	--TODO: [174793] = "Gorishi Hive Hatchery",	-- Gorishi Hive Hatchery
+	[174793] = "Brutstätte der Gorishi",	-- Gorishi Hive Hatchery
 	[175320] = "GESUCHT: Gurgelbacke!",	-- WANTED: Murkdeep!
 	[175324] = "Frosthagelsplitter",	-- Frostmaul Shards
 	[175384] = "Ei eines Steilhangflügeldrachen",	-- Highperch Wyvern Egg
@@ -1162,7 +1162,7 @@ for key,value in pairs({
 	[177289] = "Geißelkessel",	-- Scourge Cauldron
 	[177491] = "Termitenfass",	-- Termite Barrel
 	[177667] = "Zerrissene Rolle",	-- Torn Scroll
-	--TODO: [177684] = "Stone of Shy-Rotam",	-- Stone of Shy-Rotam
+	[177684] = "Stein von Shy-Rotam",	-- Stone of Shy-Rotam
 	[177787] = "Rackmores Logbuch",	-- Rackmore's Log
 	[177904] = "Steckbrief: Besseleth",	-- Wanted Poster: Besseleth
 	[177964] = "Tiefenstein",	-- Fathom Stone
@@ -1180,7 +1180,7 @@ for key,value in pairs({
 	[179913] = "Zu den Waffen!",	-- Call to Arms!
 	[180229] = "Verwunschener Hoodoohaufen",	-- Jinxed Hoodoo Pile
 	[180248] = "Ein Schwarm Leckerfische",	-- School of Tastyfish
-	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
+	[180327] = "Kohlenpfanne des Wahnsinns",	-- Brazier of Madness
 	[180366] = "Ramponierter Ausrüstungskasten",	-- Battered Tackle Box
 	[180368] = "Schrifttafel des Wahnsinns",	-- Tablet of Madness
 	[180448] = "Steckbrief: Totenstachel",	-- Wanted Poster: Deathclasp
@@ -1245,9 +1245,9 @@ for key,value in pairs({
 	[185166] = "Steckbrief",	-- Wanted Poster
 	[185168] = "Verstärkte Teufelseisentruhe",	-- Reinforced Fel Iron Chest
 	[186267] = "Kürbisschrein",	-- Pumpkin Shrine
-	--TODO: [186278] = "Burning Wreckage",	-- Burning Wreckage
+	[186278] = "Brennendes Wrack",	-- Burning Wreckage
 	[186301] = "Waffen der Schwarzhufe",	-- Blackhoof Armaments
-	--TODO: [186322] = "Hyal Family Monument",	-- Hyal Family Monument
+	[186322] = "Monument der Familie Hyal",	-- Hyal Family Monument
 	[186329] = "Klanbanner der Steinbrecher",	-- Stonemaul Clan Banner
 	[186423] = "Hexenfluch",	-- Witchbane
 	[186426] = "Steckbrief",	-- Wanted Poster
@@ -1348,7 +1348,7 @@ for key,value in pairs({
 	[190768] = "Verwitterte Kiste",	-- Timeworn Coffer
 	[190917] = "Liegengelassene Post",	-- Abandoned Mail
 	[190936] = "Seuchenkessel",	-- Plague Cauldron
-	--TODO: [191136] = "Soaked Fertile Dirt",	-- Soaked Fertile Dirt
+	[191136] = "Durchtränkter Mutterboden",	-- Soaked Fertile Dirt
 	[191209] = "Verteidigung des funkenberührten Kristalls",	-- Sparktouched Crystal Defenses
 	[191728] = "GESUCHT!",	-- Wanted!
 	[191760] = "Konsole der Bibliothek des Erfinders",	-- Inventor's Library Console
@@ -1516,7 +1516,7 @@ for key,value in pairs({
 	[210565] = "Dunkle Erde",	-- Dark Soil
 	[211424] = "Alchemieschriftrolle",	-- Alchemy Scroll
 	[211754] = "Seltsamer Text",	-- Curious Text
-	--TODO: [211807] = "Mogu Chest",	-- Mogu Chest
+	[211807] = "Mogutruhe",	-- Mogu Chest
 	[212181] = "Uralte Statue",	-- Ancient Statute
 	[212389] = "Rolle der Vorzeichen",	-- Scroll of Auspice
 	[213362] = "Schiffstruhe",	-- Ship's Locker
@@ -3427,28 +3427,27 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
---TODO:
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
 	-- Seasonal Filters
-		[1000] = {4, "|CFF00FFDEThis requires the Brewfest Holiday to be Active.|r", "Braufest"},
-		[1001] = {4, "|CFF00FFDEThis requires the Children's Week Holiday to be Active.|r", "Kinderwoche"},
-		[1012] = {4, "|CFF00FFDEThis requires the Darkmoon Faire Holiday to be Active.|r", "Dunkelmond-Jahrmarkt" },
-		[1002] = {4, "|CFF00FFDEThis requires the Day of the Dead Holiday to be Active.|r", "Tag der Toten"},
-		[1003] = {4, "|CFF00FFDEThis requires the Feast of Winter Veil Holiday to be Active.|r", "Winterhauchfest"},
-		[1009] = {4, "|CFF00FFDEThis requires the Fireworks Celebration Holiday to be Active.|r", "Feuerwerksfestival" },
-		[1004] = {4, "|CFF00FFDEThis requires the Hallow's End Holiday to be Active.|r", "Schlotternächte"},
-		[1005] = {4, "|CFF00FFDEThis requires the Harvest Festival Holiday to be Active.|r", "Erntedankfest"},
-		[1006] = {4, "|CFF00FFDEThis requires the Love is in the Air Holiday to be Active.|r", "Liebe liegt in der Luft"},
-		[1007] = {4, "|CFF00FFDEThis requires the Lunar Festival Holiday to be Active.|r", "Mondfest"},
-		[1014] = {4, "|CFF00FFDEThis requires a Specific Micro Holiday to be Active.|r", "Micro Holiday"},
-		[1008] = {4, "|CFF00FFDEThis requires the Midsummer Fire Festival Holiday to be Active.|r", "Sonnenwendfest"},
-		[1010] = {4, "|CFF00FFDEThis requires the Noblegarden Holiday to be Active.|r", "Nobelgartenfest"},
-		[1013] = {4, "|CFF00FFDEThis requires the Pilgrim's Bounty Holiday to be Active.|r", "Pilgerfreudenfest"},
-		[1011] = {4, "|CFF00FFDEThis requires the Pirates' Day Holiday to be Active.|r", "Piratentag"},
-		[1015] = {4, "|CFF00FFDEThis requires the Stranglethorn Fishing Extravaganza to be active.|r", "Anglerwettbewerb im Schlingendorntal"},
-		[1016] = {4, "|CFF00FFDEThis requires the Timewalking Event to be active.|r", "Zeitwanderung"},
-		[1017] = {4, "|CFF00FFDEThis requires the WoW's Anniversary Event to be active.|r", "Geburtstag von WoW"},
+		[1000] = {4, "|CFF00FFDEDies benötigt, dass das Braufest aktiv ist.|r", "Braufest"},
+		[1001] = {4, "|CFF00FFDEDies benötigt, dass die Kinderwoche aktiv ist.|r", "Kinderwoche"},
+		[1012] = {4, "|CFF00FFDEDies benötigt, dass der Duneklmond-Jahrmarkt aktiv ist.|r", "Dunkelmond-Jahrmarkt" },
+		[1002] = {4, "|CFF00FFDEDies benötigt, dass der Tag der Toten aktiv ist.|r", "Tag der Toten"},
+		[1003] = {4, "|CFF00FFDEDies benötigt, dass das Winterhauchfest aktiv ist.|r", "Winterhauchfest"},
+		[1009] = {4, "|CFF00FFDEDies benötigt, dass das Feuerwerksfestival aktiv ist.|r", "Feuerwerksfestival" },
+		[1004] = {4, "|CFF00FFDEDies benötigt, dass die Schlotternächte aktiv ist.|r", "Schlotternächte"},
+		[1005] = {4, "|CFF00FFDEDies benötigt, dass das Erntedankfest aktiv ist.|r", "Erntedankfest"},
+		[1006] = {4, "|CFF00FFDEDies benötigt, dass der Liebe liegt in der Luft Feiertag aktiv ist.|r", "Liebe liegt in der Luft"},
+		[1007] = {4, "|CFF00FFDEDies benötigt, dass das Mondfest aktiv ist.|r", "Mondfest"},
+		[1014] = {4, "|CFF00FFDEDies benötigt, dass ein bestimmter Mini-Feiertag aktiv ist.|r", "Micro Holiday"},
+		[1008] = {4, "|CFF00FFDEDies benötigt, dass das Sonnenwendfest aktiv ist.|r", "Sonnenwendfest"},
+		[1010] = {4, "|CFF00FFDEDies benötigt, dass das Nobelgartenfest aktiv ist.|r", "Nobelgartenfest"},
+		[1013] = {4, "|CFF00FFDEDies benötigt, dass das Pilgerfreudenfest aktiv ist.|r", "Pilgerfreudenfest"},
+		[1011] = {4, "|CFF00FFDEDies benötigt, dass der Piratentag aktiv ist.|r", "Piratentag"},
+		[1015] = {4, "|CFF00FFDEDies benötigt, dass der Anglerwettbewerb im Schlingendorntal aktiv ist.|r", "Anglerwettbewerb im Schlingendorntal"},
+		[1016] = {4, "|CFF00FFDEDies benötigt, dass die Zeitwanderung aktiv ist.|r", "Zeitwanderung"},
+		[1017] = {4, "|CFF00FFDEDies benötigt, dass der Geburtstag von WoW aktiv ist.|r", "Geburtstag von WoW"},
 })
 do a[key] = value; end
 
