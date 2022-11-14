@@ -165,43 +165,9 @@ root(ROOTS.Zones, m(PANDARIA, {
 			i(95411),	-- Torn Zandalari Journal
 			i(95412),	-- Frayed Zandalari Journal
 			i(95408),	-- Waterlogged Zandalari Journal
-			i(94566, {	-- Fortuitous Coffer
-				["sym"] = {{"select","itemID",
-					95409,	-- Iron-Bound Zandalari Journal
-					95410,	-- Blood-Spattered Zandalari Journal
-					95411,	-- Torn Zandalari Journal
-					95412,	-- Frayed Zandalari Journal
-					95408,	-- Waterlogged Zandalari Journal
-				}},
-				["g"] = {
-					currency(697),	-- Elder Charm of Good Fortune
-				},
-			}),
 			i(97961, {	-- Half-Empty Food Container (Filthling Pet)
 				["crs"] = { 69251 },	-- Quivering Filth
 			}),
 		}),
-		-- Rare Drops
-		n(ZONE_DROPS, sharedData({
-			["crs"] = {
-				70000,	-- Al'tabim the All-Seeing
-				70001,	-- Backbreaker Uru
-				69999,	-- God-Hulk Ramuk
-				69998,	-- Goda
-				50358,	-- Haywire Sunreaver Construct
-				69996,	-- Ku'lai the Skyclaw
-				70002,	-- Lu-Ban
-				70003,	-- Molthor
-				69664,	-- Mumta
-				69997,	-- Progenitus
-			},
-		},{
-			i(94233),	-- Incantation of Deng
-			i(94130),	-- Incantation of Haqin
-			i(95350),	-- Incantation of Vu
-			i(94221, {	-- Shan'ze Ritual Stone
-				["description"] = "You will need 3 stones to summon special rares at their specific spawn points.",
-			}),
-		})),
 	}),
 }));

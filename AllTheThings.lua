@@ -21588,6 +21588,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			-- Recipes now have Slots for available Regeants...
 			-- TODO: schematic.reagentSlotSchematics is often EMPTY on first query??
 			if #schematic.reagentSlotSchematics == 0 then
+				-- Milling Recipes...
 				app.PrintDebug("EMPTY SCHEMATICS",recipeID)
 			end
 			for _,reagentSlot in ipairs(schematic.reagentSlotSchematics) do
@@ -21715,9 +21716,10 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 					end
 				end
 				-- If something new was "learned", then refresh the data.
+				-- app.PrintDebug("Done. learned",#learned)
 				UpdateRawIDs("spellID", learned);
 				if #learned > 0 then
-					app:PlayRareFindSound();
+					app:PlayFanfare();
 					app:TakeScreenShot("Recipes");
 					self.force = true;
 				end
@@ -21744,22 +21746,26 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			self:Update(self.force);
 		end
 		-- Can trigger multiple times quickly, but will only run once per profession in a row
-		self.RefreshRecipes = function(self)
-			-- app.PrintDebug("RefreshRecipes")
+		self.RefreshRecipes = function(self, doUpdate)
+			-- If it's not yours, don't take credit for it.
+			if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then return; end
+
 			if app.CollectibleRecipes then
+				-- app.PrintDebug("RefreshRecipes")
 				-- Cache Learned Spells
 				local skillCache = fieldCache["spellID"];
 				if not skillCache then return; end
 
 				local tradeSkillID = app.GetTradeSkillLine();
-				if not tradeSkillID or tradeSkillID == self.lastTradeSkillID then return; end
-
-				-- If it's not yours, don't take credit for it.
-				if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then return; end
-
 				self.lastTradeSkillID = tradeSkillID;
 				local updates = self.SkillsInit[tradeSkillID] or {};
 				self.SkillsInit[tradeSkillID] = updates;
+
+				if doUpdate then
+					-- allow re-scanning learned Recipes
+					-- app.PrintDebug("Allow Rescan of Recipes")
+					updates["Recipes"] = nil;
+				end
 
 				app.FunctionRunner.SetPerFrame(1);
 				app.FunctionRunner.Run(UpdateLocalizedCategories, self, updates);
@@ -21848,7 +21854,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						self:SetVisible(true);
 					end
 				end
-				self:RefreshRecipes();
+				self:RefreshRecipes(true);
 			elseif e == "NEW_RECIPE_LEARNED" then
 				-- spellID, rank, previousSpellID
 				local spellID = ...;
