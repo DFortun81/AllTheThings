@@ -39,6 +39,7 @@ root(ROOTS.Craftables, {
                     i(113258, {	-- Blingtron 5000 Gift Package
 						["sym"] = {{"select","itemID",86623},{"pop"}},	-- Blingtron 4000 Gift Package
 						["g"] = {
+							i(115483),	-- Sky-Bo Pet
                         	i(123851),	-- Photo B.O.M.B. (TOY!)
 						},
                     }),
@@ -61,7 +62,7 @@ root(ROOTS.Craftables, {
 								136632,	-- Chaos Blaster
 						}},
 						["g"] = {
-							i(115483),	-- Sky-Bo Pet
+                        	i(136911),	-- Knockoff Blingtron -- https://www.wowhead.com/item=168740/blingtron-7000-gift-package#comments:id=3210510
 						},
                     }),
                 },
@@ -77,7 +78,7 @@ root(ROOTS.Craftables, {
                     i(168740, {	-- Blingtron 7000 Gift Package
 						["sym"] = {{"select","itemID",132892},{"pop"}},	-- Blingtron 6000 Gift Package
 						["g"] = {
-                        	i(136911),	-- Knockoff Blingtron -- https://www.wowhead.com/item=168740/blingtron-7000-gift-package#comments:id=3210510
+							-- TODO does the 7000 have any special unique drop?
 						},
                     }),
                 },
