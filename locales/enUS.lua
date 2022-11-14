@@ -1414,6 +1414,7 @@ app.L = {
 	-- Dragonflight
 		[-1100] = "Interface\\Icons\\ability_dragonriding_glyph01",									-- Dragon Customization
 		[-1101] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_trinket_1ragingelement_air",	-- Primal Storms
+		[-1102] = "Interface\\Icons\\ability_evoker_dragonrage2",									-- Wrathion & Sabellian
 		[-1110] = "Interface\\Icons\\ui_majorfaction_expedition",									-- Dragonscale Expedition
 		[-1111] = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",							-- Climbing
 		[-1112] = "Interface\\Icons\\inv_misc_-selfiecamera_01",									-- Cataloging
@@ -1988,6 +1989,7 @@ app.L = {
 	-- Dragonflight
 		[-1100] = "Dragon Customization",											-- Dragon Customization
 		[-1101] = "Primal Storms",													-- Primal Storms
+		[-1102] = "Wrathion & Sabellian",											-- Wrathion & Sabellian
 		[-1110] = "Dragonscale Expedition",											-- Dragonscale Expedition
 		[-1111] = "Climbing",														-- Climbing
 		[-1112] = "Cataloging",														-- Cataloging
