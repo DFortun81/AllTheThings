@@ -196,11 +196,6 @@ root("Zones", m(KALIMDOR, {
 				}),
 			}),
 			n(QUESTS, {
-				q(6361, {	-- A Bundle of Hides
-					["provider"] = { "n", 3079 },	-- Varg Windwhisper
-					["coord"] = { 46.0, 58.2, MULGORE },
-					["races"] = { TAUREN },
-				}),
 				q(833,   {	-- A Sacred Burial
 					["provider"] = { "n", 3233 },	-- Lorekeeper Raintotem
 					["coord"] = { 49.4, 17.2, MULGORE },
@@ -345,12 +340,6 @@ root("Zones", m(KALIMDOR, {
 						i(57236),	-- Plainstrider Leg Armor
 						i(131212),	-- Plainstrider Handguards
 					},
-				}),
-				q(6362, {	-- Ride to Thunder Bluff
-					["provider"] = { "n", 40809 },	-- Tak
-					["coord"] = { 47.4, 58.6, MULGORE },
-					["races"] = { TAUREN },
-					["sourceQuest"] = 6361,	-- A Bundle of Hides
 				}),
 				q(767,   {	-- Rite of Vision
 					["u"] = REMOVED_FROM_GAME,

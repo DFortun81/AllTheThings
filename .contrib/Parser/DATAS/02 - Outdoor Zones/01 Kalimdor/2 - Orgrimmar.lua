@@ -876,11 +876,6 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1947, {	-- Journey to the Marsh
-					["classes"] = { MAGE },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(1945, {	-- Laughing Sisters
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
@@ -1360,11 +1355,6 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 146630 },
 					["coord"] = { 48.4, 71.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-				}),
-				q(1018, {	-- The New Frontier
-					["provider"] = { "n", 10880 },	-- Warcaller Gorlach
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(28458, {	-- The Pyromancer's Grimoire
 					-- ["sourceQuests"] = { 28300 },	-- Meet with Ureda

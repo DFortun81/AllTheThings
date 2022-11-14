@@ -283,11 +283,6 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(3913, {	-- A Grave Situation
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 9299 },	-- Gaeriyan
-					["sourceQuest"] = 3912,	-- Meet at the Grave
-				}),
 				q(24951, {	-- A Great Idea
 					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
 					["sourceQuest"] = 24933,	-- Chicken of the Desert
@@ -964,15 +959,6 @@ root("Zones", m(KALIMDOR, {
 						i(56864),	-- Dud Bomb
 						i(56865),	-- Salvaged Steamwheedle Helm
 						i(56866),	-- Failed Liferocket Prototype
-					},
-				}),
-				q(1189, {	-- Safety First
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4708 },	-- Shreev
-					["sourceQuest"] = 1188,	-- Safety First
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(6726)),	-- Razzeric's Customized Seatbelt
-						un(REMOVED_FROM_GAME, i(6727)),	-- Razzeric's Racing Grips
 					},
 				}),
 				q(25001, {	-- Sandscraper

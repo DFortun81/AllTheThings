@@ -35,11 +35,6 @@ _.Zones = {
 					["provider"] = { "n", 3292 },	-- Brewmaster Drohn
 					["sourceQuest"] = 821,	-- Chen's Empty Keg
 				}),
-				q(5159, {	-- Cleansed Water Returns to Felwood
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 5901 },	-- Islen Waterseer
-					["sourceQuest"] = 5158,	-- Seeking Spiritual Aid
-				}),
 				q(1069, {	-- Deepmoss Spider Eggs
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3446 },	-- Mebok Mizzyrix
@@ -142,12 +137,6 @@ _.Zones = {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
-				q(1062, {	-- Goblin Invaders
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4049 },	-- Seereth Stonebreak
-					["sourceQuest"] = 1061,	-- The Spirits of Stonetalon
-				}),
 				q(882,   {	-- Ishamuhale
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -159,18 +148,6 @@ _.Zones = {
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3338 },	-- Sergra Darkthorn
 					["sourceQuest"] = 905,	-- The Angry Scytheclaws
-				}),
-				q(6401, {	-- Kaya's Alive
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 11857 },	-- Makaba Flathoof
-					["sourceQuest"] = 6523,	-- Protect Kaya
-				}),
-				q(6629, {	-- Kill Grundig Darkcloud
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 11857 },	-- Makaba Flathoof
-					["sourceQuest"] = 6548,	-- Avenge My Village
 				}),
 				q(1060, {	-- Letter to Jin'Zil
 					["u"] = REMOVED_FROM_GAME,
@@ -188,11 +165,6 @@ _.Zones = {
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3387 },	-- Jorn Skyseer
 					["sourceQuest"] = 913,	-- Cry of the Thunderhawk
-				}),
-				q(1130, {	-- Melor Sends Word
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3387 },	-- Jorn Skyseer
 				}),
 				q(896,   {	-- Miner's Fortune
 					["u"] = REMOVED_FROM_GAME,
@@ -253,22 +225,10 @@ _.Zones = {
 					["isBreadcrumb"] = true,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1068, {	-- Shredding Machines
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4049 },	-- Seereth Stonebreak
-					["sourceQuest"] = 1062,	-- Goblin Invaders
-				}),
 				q(6382, {	-- The Ashenvale Hunt
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3387 },	-- Jorn Skyseer
-				}),
-				q(1063, {	-- The Elder Crone
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4049 },	-- Seereth Stonebreak
-					["sourceQuest"] = 1062,	-- Goblin Invaders
 				}),
 				q(1362, {	-- The Kolkar of Desolace
 					["u"] = REMOVED_FROM_GAME,
@@ -322,10 +282,6 @@ _.Zones = {
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3665 },	-- Crane Operator Bigglefuzz
 				}),
-				q(4502, {	-- Volcanic Activity
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 8496 },	-- Liv Rizzlefix
-				}),
 				q(3921, {	-- Wenikee Boltbucket
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -336,10 +292,6 @@ _.Zones = {
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3390 },	-- Apothecary Helbrim
-				}),
-				q(1483, {	-- Ziz Fizziks
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3442 },	-- Sputtervalve
 				}),
 			}),
 		}),

@@ -1043,15 +1043,6 @@ root("Zones", m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(1070, {	-- On Guard in Stonetalon
-					["qg"] = 4079,	-- Sentinel Thenysil
-					["coord"] = { 34.9, 49.8, ASHENVALE },
-					["maps"] = { STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = 17,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
-				}),
 				q(1020, {	-- Orendil's Cure
 					["qg"] = 3847,	-- Orendil Broadleaf
 					["sourceQuest"] = 1010,	-- Bathran's Hair

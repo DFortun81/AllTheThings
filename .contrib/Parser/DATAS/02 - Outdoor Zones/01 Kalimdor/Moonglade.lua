@@ -515,7 +515,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 				q(1000, {	-- The New Frontier [Thunder Bluff]
 					["qg"] = 10881,	-- Bluff Runner Windstrider
-					["sourceQuests"] = {
+					["altQuests"] = {
 						1018,	-- The New Frontier [Orgrimmar]
 						1004,   -- The New Frontier [Undercity]
 					},
@@ -526,7 +526,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 				q(1004, {	-- The New Frontier [Undercity]
 					["qg"] = 10879,	-- Harbinger Balthazad
-					["sourceQuests"] = {
+					["altQuests"] = {
 						1018,	-- The New Frontier [Orgrimmar]
 						1000,   -- The New Frontier [Thunder Bluff]
 					},
@@ -537,7 +537,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 				q(1018, {	-- The New Frontier [Orgrimmar]
 					["qg"] = 10880,	-- Warcaller Gorlach
-					["sourceQuests"] = {
+					["altQuests"] = {
 						1000,   -- The New Frontier [Thunder Bluff]
 						1004,   -- The New Frontier [Undercity]
 					},
