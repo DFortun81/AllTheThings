@@ -952,11 +952,6 @@ _.Zones =
 					["coord"] = { 63.5, 58.4, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 57424 },	-- Journeyman Chu
 				}),
-				q(31312, {	-- The Old Map
-					["crs"] = { 59639 },	-- Enormous Cattail Grouper
-					["provider"] = { "i", 86404 },	-- Old Map
-					["description"] = "Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",
-				}),
 				q(31674, {	-- The Pink Turnip Challenge
 					["isDaily"] = true,
 					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },

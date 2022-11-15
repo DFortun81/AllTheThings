@@ -229,33 +229,11 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(166500, {	-- Crimson Octopode (PET!)
 						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
 					}),
-					i(163616, {	-- Dented Coin
+					i(163616, {	-- Dented Coin (A)
 						["description"] = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
-						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
-						["g"] = {
-							q(53118, {	-- Dented Coin
-								["repeatable"] = true,
-								["provider"] = { "n", 122370 },	-- Cyrus Crestfall <Harbormaster>
-								["races"] = ALLIANCE_ONLY,
-								["g"] = {
-									i(174504),	-- Proudmoore War Copper
-								},
-							}),
-						},
 					}),
-					i(163614, {	-- Exotic Spices
+					i(163614, {	-- Exotic Spices (A)
 						["description"] = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
-						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
-						["g"] = {
-							q(53120, {	-- Exotic Spices
-								["repeatable"] = true,
-								["provider"] = { "n", 136269 },	-- Xun Xun Sweetflower <Exotic Food & Spices>
-								["races"] = ALLIANCE_ONLY,
-								["g"] = {
-									i(174503),	-- Exotically Spiced Carrot
-								},
-							}),
-						},
 					}),
 					i(166461, {	-- Gnarlwood Waveboard (TOY!)
 						["cost"] = { { "c", 1710, 300 }, },	-- 300x Seaferer's Dubloon
@@ -292,19 +270,8 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(167853, {	-- Island Expedition Legwear
 						["cost"] = { { "c", 1710, 35 }, },	-- 35x Seaferer's Dubloon
 					}),
-					i(163615, {	-- Lost Sea Scroll
+					i(163615, {	-- Lost Sea Scroll (A)
 						["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
-						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
-						["g"] = {
-							q(53119, {	-- Lost Sea Scroll
-								["repeatable"] = true,
-								["provider"] = { "n", 130576 },	-- Brother Pike
-								["races"] = ALLIANCE_ONLY,
-								["g"] = {
-									i(174505),	-- Tide-Speaker's Tome
-								},
-							}),
-						},
 					}),
 					i(166749, {	-- Lyrics: Song of the Sea
 						["questID"] = 54859,
@@ -322,21 +289,10 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(166501, {	-- Soggy Page
 						["description"] = "|CFFFF0000Turn in to Collector Kojo in Stormsong Valley (Alliance) or Zuldazar (Horde) for Tortollan Seekers rep.|r",
 						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
-						["g"] = {
-							q(54751, {	-- Soggy Page
-								["repeatable"] = true,
-								["providers"] = {
-									{ "n", 135793 },	-- Collector Kojo (A)
-									{ "n", 134345 },	-- Collector Kojo (H)
-								},
-								["g"] = {
-									i(174519),	-- Verdant Hills of Chokingvine - Page 17
-								},
-							}),
-						},
 					}),
 				},
 			}),
+			-- TODO: symlink
 			n(161091, {	-- Captain Nightrunner
 				["description"] = "We've compiled these lists from Wowhead, personal experience, and reports from ATT users, but they are incomplete (there isn't much to go on, and we can only collect so many Seafarer's Dubloons ourselves).\n\nIf you get an item from a box it's not listed under, please report it to the ATT Discord in the #errors or #bounty channel.  Thanks!\n",
 				["coord"] = { 66.2, 32.1, BORALUS },
@@ -372,97 +328,27 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 							i(166495),	-- Tonguelasher
 						}),
 						n(FACTIONS, {
-							i(163217, {	-- Azeroth's Tear
+							i(163217, {	-- Azeroth's Tear [Both]
 								["description"] = "|CFFFF0000Turn in to Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
-								["coord"] = { 42.2, 44.2, SILITHUS },
-								["g"] = {
-									q(53112, {	-- Azeroth's Tear
-										["repeatable"] = true,
-										["provider"] = { "n", 130216 },	-- Magni Bronzebeard <The Speaker>
-										["g"] = {
-											i(174502),	-- Tear of Azeroth
-										},
-									}),
-								},
 							}),
-							i(163616, {	-- Dented Coin
+							i(163616, {	-- Dented Coin (A)
 								["description"] = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
-								["coord"] = { 68.0, 22.0, BORALUS },
-								["g"] = {
-									q(53118, {	-- Dented Coin
-										["repeatable"] = true,
-										["provider"] = { "n", 122370 },	-- Cyrus Crestfall <Harbormaster>
-										["races"] = ALLIANCE_ONLY,
-										["g"] = {
-											i(174504),	-- Proudmoore War Copper
-										},
-									}),
-								},
-							}),
-							i(163614, {	-- Exotic Spices
-								["description"] = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
-								["coord"] = { 20.6, 45.6, DRUSTVAR },
-								["g"] = {
-									q(53120, {	-- Exotic Spices
-										["repeatable"] = true,
-										["provider"] = { "n", 136269 },	-- Xun Xun Sweetflower <Exotic Food & Spices>
-										["races"] = ALLIANCE_ONLY,
-										["g"] = {
-											i(174503),	-- Exotically Spiced Carrot
-										},
-									}),
-								},
-							}),
-							i(173947, {	-- Glittering Abyssal Conch
 								["races"] = ALLIANCE_ONLY,
 							}),
-							i(173736),	-- Layered Information Kernel of E-steam (looted on Alliance -- is there one for each faction, or just two of the same rep token?)
-							i(163615, {	-- Lost Sea Scroll
-								["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
-								["coord"] = { 59.2, 68.6, STORMSONG_VALLEY },
-								["g"] = {
-									q(53119, {	-- Lost Sea Scroll
-										["repeatable"] = true,
-										["provider"] = { "n", 130576 },	-- Brother Pike
-										["races"] = ALLIANCE_ONLY,
-										["g"] = {
-											i(174505),	-- Tide-Speaker's Tome
-										},
-									}),
-								},
+							i(163614, {	-- Exotic Spices (A)
+								["description"] = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
+								["races"] = ALLIANCE_ONLY,
 							}),
-							i(163617, {	-- Rusted Alliance Insignia
+							i(163615, {	-- Lost Sea Scroll (A)
+								["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(163617, {	-- Rusted Alliance Insignia (A)
 								["description"] = "|CFFFF0000Turn in to Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
-								["coord"] = { 69.2, 25.0, BORALUS },
-								["g"] = {
-									q(53117, {	-- Rusted Alliance Insignia
-										["repeatable"] = true,
-										["provider"] = { "n", 135446 },	-- Vindicator Jaelaana <7th Legion Emissary>
-										["races"] = ALLIANCE_ONLY,
-										["g"] = {
-											i(174507),	-- Fallen Soldier's Insignia
-										},
-									}),
-								},
+								["races"] = ALLIANCE_ONLY,
 							}),
 							i(166501, {	-- Soggy Page
 								["description"] = "|CFFFF0000Turn in to Collector Kojo in Stormsong Valley (Alliance) or Zuldazar (Horde) for Tortollan Seekers rep.|r",
-								["g"] = {
-									q(54751, {	-- Soggy Page
-										["repeatable"] = true,
-										["providers"] = {
-											{ "n", 135793 },	-- Collector Kojo (A)
-											{ "n", 134345 },	-- Collector Kojo (H)
-										},
-										["g"] = {
-											i(174519),	-- Verdant Hills of Chokingvine - Page 17
-										},
-									}),
-								},
-							}),
-							i(174521),	-- Transferable Kernel of E-steam
-							i(174522, {	-- Waveswept Abyssal Conch
-								["races"] = ALLIANCE_ONLY,
 							}),
 						}),
 					}),

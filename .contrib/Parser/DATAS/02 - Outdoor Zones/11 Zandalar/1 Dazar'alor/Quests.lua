@@ -623,15 +623,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(179384),	-- Chain of Exemption (Added in SL)
 				},
 			}),
-			i(163621, {	-- Rusted Horde Insignia
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					q(53116, {	-- Rusted Horde Insignia
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-					}),
-				},
-			}),
 			q(49940, {	-- Sandscar Breach
 				["sourceQuests"] = { 49426 },	-- The King's Gambit
 				["isBreadcrumb"] = true,

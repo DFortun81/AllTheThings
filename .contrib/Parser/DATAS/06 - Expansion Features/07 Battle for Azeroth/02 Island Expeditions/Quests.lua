@@ -1,7 +1,6 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-
 root("ExpansionFeatures", tier(BFA_TIER, {
 	n(ISLAND_EXPEDITIONS, {
 		n(AZERITE_ESSENCES, {
@@ -127,974 +126,480 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					}),
 				},
 			}),
-			-- Item drop quests
-			-- reformat:
-			-- q(53160, {	-- Ancient Crypt Key
-			-- 	["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
-			-- 	["provider"] = { "i", 163470 },	-- Ancient Crypt Key
-			-- }),
-			-- move Items to 'Island Exps > Rewards'
-			i(163470, {	-- Ancient Crypt Key
+		}),
+		-- One-Time Item Drop Quests
+		n(QUESTS, {
+			q(53160, {	-- Ancient Crypt Key
 				["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
-				["g"] = {
-					q(53160, {	-- Ancient Crypt Key
-						["provider"] = { "n", 61962 },	-- Lorewalker Cho
-					}),
-					crit(19, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 61962 },	-- Lorewalker Cho
+					{ "i", 163470 },	-- Ancient Crypt Key
 				},
 			}),
-			i(163478, {	-- Battered Twilight Scale
+			q(53171, {	-- Battered Twilight Scale
 				["coord"] = { 20.2, 54.6, TWILIGHT_HIGHLANDS },
-				["g"] = {
-					q(53171, {	-- Battered Twilight Scale
-						["provider"] = { "n", 132888 },	-- Eryna
-					}),
-					crit(11, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 132888 },	-- Eryna
+					{ "i", 163478 },	-- Battered Twilight Scale
 				},
 			}),
-			i(163472, {	-- Bloodwake Drinking Horn
+			q(53163, {	-- Bloodwake Drinking Horn
 				["coord"] = { 68.4, 54.2, STORMHEIM },
-				["g"] = {
-					q(53163, {	-- Bloodwake Drinking Horn
-						["provider"] = { "n", 93231 },	-- Vydhar
-						["modelScale"] = 1.3,
-					}),
-					crit(17, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 93231 },	-- Vydhar
+					{ "i", 163472 },	-- Bloodwake Drinking Horn
 				},
 			}),
-			i(163482, {	-- Broken Compass
+			q(53177, {	-- Broken Compass
 				["coord"] = { 42.0, 74.6, THE_CAPE_OF_STRANGLETHORN },
-				["g"] = {
-					q(53177, {	-- Broken Compass
-						["provider"] = { "n", 908 },	-- Flora Silverwind <Herbalism Trainer>
-					}),
-					crit(7, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 908 },	-- Flora Silverwind
+					{ "i", 163482 },	-- Broken Compass
 				},
 			}),
-			i(163485, {	-- Druidic Fur
+			q(53181, {	-- Druidic Fur
 				["coord"] = { 52.6, 40.6, MOONGLADE },
-				["g"] = {
-					q(53181, {	-- Druidic Fur
-						["provider"] = { "n", 12042 },	-- Loganaar <Druid Trainer>
-					}),
-					crit(4, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 12042 },	-- Loganaar
+					{ "i", 163485 },	-- Druidic Fur
 				},
 			}),
-			i(163476, {	-- Elemental Core
-				["coord"] = { 92.7, 42.0, AZSHARA },	-- Verify Coords/npcid
-				["g"] = {
-					q(53169, {	-- Elemental Core
-						["provider"] = { "n", 13278 },	-- Duke Hydraxis
-					}),
-					crit(13, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+			q(53169, {	-- Elemental Core
+				["coord"] = { 92.7, 42.0, AZSHARA },	-- TODO: Verify Coords/npcid
+				["providers"] = {
+					{ "n", 13278 },	-- Duke Hydraxis
+					{ "i", 163476 },	-- Elemental Core
 				},
 			}),
-			i(163481, {	-- Glittering Scarab
+			q(53176, {	-- Glittering Scarab
 				["coord"] = { 58.8, 46.2, ULDUM },
-				["g"] = {
-					q(53176, {	-- Glittering Scarab
-						["provider"] = { "n", 46134 },	-- High Commander Kamses
-					}),
-					crit(8, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 46134 },	-- High Commander Kamses
+					{ "i", 163481 },	-- Glittering Scarab
 				},
 			}),
-			i(163474, {	-- Icetusk Fur Cloak
+			q(53167, {	-- Icetusk Fur Cloak
 				["coord"] = { 48.0, 76.0, DRAGONBLIGHT },
-				["g"] = {
-					q(53167, {	-- Icetusk Fur Cloak
-						["provider"] = { "n", 26245 },	-- Tua'kea
-					}),
-					crit(15, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 26245 },	-- Tua'kea
+					{ "i", 163474 },	-- Icetusk Fur Cloak
 				},
 			}),
-			i(163475, {	-- Magical Spyglass
+			q(53168, {	-- Magical Spyglass
 				["coord"] = { 41.0, 73.0, THE_CAPE_OF_STRANGLETHORN },
-				["g"] = {
-					q(53168, {	-- Magical Spyglass
-						["provider"] = { "n", 2496 },	-- Baron Revilgaz
-					}),
-					crit(14, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 2496 },	-- Baron Revilgaz
+					{ "i", 163475 },	-- Magical Spyglass
 				},
 			}),
-			i(163480, {	-- Murloc Eye
+			q(53174, {	-- Murloc Eye
 				["coords"] = {
 					{ 42.6, 10.8, HIGHMOUNTAIN },
 					{ 49.6, 15.8, HIGHMOUNTAIN },
 				},
-				["g"] = {
-					q(53174, {	-- Murloc Eye
-						["provider"] = { "n", 98067 },	-- King Mrgl-Mrgl <D.E.H.T.A.>
-					}),
-					crit(9, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 98067 },	-- King Mrgl-Mrgl
+					{ "i", 163480 },	-- Murloc Eye
 				},
 			}),
-			i(163466, {	-- Notched Coin
+			q(53155, {	-- Notched Coin
 				["coord"] = { 55.2, 19.2, THE_JADE_FOREST },
-				["g"] = {
-					q(53155, {	-- Notched Coin
-						["provider"] = { "n", 64365 },	-- Mili Wanderbrew <Apprentice Brewmaster>
-					}),
-					crit(20, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 64365 },	-- Mili Wanderbrew
+					{ "i", 163466 },	-- Notched Coin
 				},
 			}),
-			i(163483, {	-- Razorfin Hunting Spear
+			q(53178, {	-- Razorfin Hunting Spear
 				["coord"] = { 29.6, 39.0, KRASARANG_WILDS },
-				["g"] = {
-					q(53178, {	-- Razorfin Hunting Spear
-						["provider"] = { "n", 58278 },	-- Tired Shushen <Waterspeaker>
-					}),
-					crit(6, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 58278 },	-- Tired Shushen
+					{ "i", 163483 },	-- Razorfin Hunting Spear
 				},
 			}),
-			i(163471, {	-- Ring of the Reefs
+			q(53161, {	-- Ring of the Reefs
 				["coord"] = { 60.2, 51.2, STORMHEIM },
-				["g"] = {
-					q(53161, {	-- Ring of the Reefs
-						["provider"] = { "n", 106904 },	-- Valdemar Stormseeker <Valarjar Emissary>
-					}),
-					crit(18, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 106904 },	-- Valdemar Stormseeker
+					{ "i", 163471 },	-- Ring of the Reefs
 				},
 			}),
-			i(163473, {	-- Sonic Stone
+			q(53164, {	-- Sonic Stone
 				["coord"] = { 39.4, 62.0, TOWNLONG_STEPPES },
-				["g"] = {
-					q(53164, {	-- Sonic Stone
-						["provider"] = { "n", 61584 },	-- Sentinel Commander Qipan
-					}),
-					crit(16, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 61584 },	-- Sentinel Commander Qipan
+					{ "i", 163473 },	-- Sonic Stone
 				},
 			}),
-			i(163486, {	-- Strangling Root
+			q(53182, {	-- Strangling Root
 				["coord"] = { 36.2, 41.8, MOONGLADE },
-				["g"] = {
-					q(53182, {	-- Strangling Root
-						["provider"] = { "n", 11832 },	-- Keeper Remulos
-					}),
-					crit(3, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 11832 },	-- Keeper Remulos
+					{ "i", 163486 },	-- Strangling Root
 				},
 			}),
-			i(163477, {	-- Unscarred Black Scale
-				["coord"] = { 47.8, 68.8, BURNING_STEPPES },	-- Verify map/npc id
-				["g"] = {
-					q(53170, {	-- Unscarred Black Scale
-						["provider"] = { "n", 66306 },	-- Blacktalon Agent <Servant of the Black Prince>
-					}),
-					crit(12, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+			q(53170, {	-- Unscarred Black Scale
+				["coord"] = { 47.8, 68.8, BURNING_STEPPES },	-- TODO: Verify map/npc id
+				["providers"] = {
+					{ "n", 66306 },	-- Blacktalon Agent
+					{ "i", 163477 },	-- Unscarred Black Scale
 				},
 			}),
-			i(163479, {	-- Venture Co. Business Plan
+			q(53172, {	-- Venture Co. Business Plan
 				["coords"] = {
 					{ 50.2, 59.2, NORTHERN_BARRENS },
 					{ 66.8, 72.6, NORTHERN_BARRENS },
 				},
-				["g"] = {
-					q(53172, {	-- Venture Co. Business Plan
-						["description"] = "Pats along the road between The Crossroads and Ratchet.",
-						["provider"] = { "n", 3658 },	-- Lizzarik <Weapon Dealer>
-					}),
-					crit(10, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["description"] = "Pats along the road between The Crossroads and Ratchet.",
+				["providers"] = {
+					{ "n", 3658 },	-- Lizzarik
+					{ "i", 163479 },	-- Venture Co. Business Plan
 				},
 			}),
-			i(163484, {	-- Vorus'arak's Carapace
+			q(53180, {	-- Vorus'arak's Carapace
 				["coord"] = { 26.2, 50.6, DRAGONBLIGHT },
-				["cr"] = 139889,	-- Vorus'arak
-				["g"] = {
-					q(53180, {	-- Vorus'arak's Carapace
-						["provider"] = { "n", 26653 },	-- Kilix the Unraveler
-					}),
-					crit(5, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 26653 },	-- Kilix the Unraveler
+					{ "i", 163484 },	-- Vorus'arak's Carapace
 				},
 			}),
-			i(163488, {	-- Weathered Pamphlet
+			q(53184, {	-- Weathered Pamphlet
 				["coord"] = { 52.0, 30.0, TANARIS },
-				["g"] = {
-					q(53184, {	-- Weathered Pamphlet
-						["provider"] = { "n", 132832 },	-- Jordle Flangebender
-					}),
-					crit(1, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 132832 },	-- Jordle Flangebender
+					{ "i", 163488 },	-- Weathered Pamphlet
 				},
 			}),
-			i(163487, {	-- Wriggling Mass
-				["description"] = "Can be turned in at old or new Silithus.",
+			q(53183, {	-- Wriggling Mass
 				["coord"] = { 40.0, 76.6, SILITHUS },
-				["g"] = {
-					q(53183, {	-- Wriggling Mass
-						["provider"] = { "n", 132886 },	-- Twilight Hermit
-					}),
-					crit(2, {
-						["achievementID"] = 13127,	-- Tell Me A Tale
-					}),
+				["providers"] = {
+					{ "n", 132886 },	-- Twilight Hermit
+					{ "i", 163487 },	-- Wriggling Mass
 				},
-			}),
-			-- Rep Items
-			i(163217, {	-- Azeroth's Tear [Both]
-				["description"] = "|CFFFF0000Turn in to Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
-				["coord"] = { 42.2, 44.2, SILITHUS },
-				["g"] = {
-					q(53112, {	-- Azeroth's Tear
-						["repeatable"] = true,
-						["provider"] = { "n", 130216 },	-- Magni Bronzebeard <The Speaker>
-						["g"] = {
-							i(174502),	-- Tear of Azeroth
-						},
-					}),
-				},
-			}),
-			i(163616, {	-- Dented Coin [Alliance]
-				["description"] = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
-				["coord"] = { 68.0, 22.0, BORALUS },
-				["g"] = {
-					q(53118, {	-- Dented Coin
-						["repeatable"] = true,
-						["provider"] = { "n", 122370 },	-- Cyrus Crestfall <Harbormaster>
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(174504),	-- Proudmoore War Copper
-						},
-					}),
-				},
-			}),
-			i(163614, {	-- Exotic Spices [Alliance]
-				["description"] = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
-				["coord"] = { 20.6, 45.6, DRUSTVAR },
-				["g"] = {
-					q(53120, {	-- Exotic Spices
-						["repeatable"] = true,
-						["provider"] = { "n", 136269 },	-- Xun Xun Sweetflower <Exotic Food & Spices>
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(174503),	-- Exotically Spiced Carrot
-						},
-					}),
-				},
-			}),
-			i(163619, {	-- Golden Beetle [Horde]
-				["description"] = "|CFFFF0000Turn in to Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
-				["coord"] = { 75.6, 56.6, NAZMIR },
-				["g"] = {
-					q(53114, {	-- Golden Beetle
-						["repeatable"] = true,
-						["provider"] = { "n", 120551 },	-- Krag'wa the Huge
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(174506),	-- Golden Insect Wings
-						},
-					}),
-				},
-			}),
-			i(163620, {	-- Island Flotsam [Horde]
-				["description"] = "|CFFFF0000Turn in to Jani in Dazar'alor for Zandalari Empire rep.|r",
-				["coord"] = { 35.4, 7.8, THE_GREAT_SEAL },
-				["g"] = {
-					q(53115, {	-- Island Flotsam
-						["description"] = "Must have unlocked Jani by doing the quest \"Pests\".",
-						["repeatable"] = true,
-						["provider"] = { "n", 126334 },	-- Jani <Loa of Scavengers>
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(174518),	-- Jani Figurine
-						},
-					}),
-				},
-			}),
-			i(163615, {	-- Lost Sea Scroll [Alliance]
-				["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
-				["coord"] = { 59.2, 68.6, STORMSONG_VALLEY },
-				["g"] = {
-					q(53119, {	-- Lost Sea Scroll
-						["repeatable"] = true,
-						["provider"] = { "n", 130576 },	-- Brother Pike
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(174505),	-- Tide-Speaker's Tome
-						},
-					}),
-				},
-			}),
-			i(163617, {	-- Rusted Alliance Insignia
-				["description"] = "|CFFFF0000Turn in to Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
-				["coord"] = { 69.2, 25.0, BORALUS },
-				["g"] = {
-					q(53117, {	-- Rusted Alliance Insignia [Alliance]
-						["repeatable"] = true,
-						["provider"] = { "n", 135446 },	-- Vindicator Jaelaana <7th Legion Emissary>
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(174507),	-- Fallen Soldier's Insignia
-						},
-					}),
-				},
-			}),
-			i(163621, {	-- Rusted Horde Insignia
-				["description"] = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
-				["coord"] = { 58.0, 62.6, ZULDAZAR },
-				["g"] = {
-					q(53116, {	-- Rusted Horde Insignia
-						["repeatable"] = true,
-						["provider"] = { "n", 135447 },	-- Ransa Greyfeather
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(174508),	-- Fallen Soldier's Insignia
-						},
-					}),
-				},
-			}),
-			i(163618, {	-- Shimmering Shell [Horde]
-				["description"] = "|CFFFF0000Turn in to Hoarder Jena in Vol'dun for Voldunai rep.|r",
-				["coord"] = { 56.7, 49.8, VOLDUN },
-				["g"] = {
-					q(53113, {	-- Shimmering Shell
-						["repeatable"] = true,
-						["provider"] = { "n", 135804 },	-- Hoarder Jena
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(174501),	-- Ornate Voldunai Jewelry
-						},
-					}),
-				},
-			}),
-			-- repeatable "_____ needs help!" quests
-			q(52559, {	-- Aerin Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52558, {	-- Aerin Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52557, {	-- Aerin Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52555, {	-- Aerin Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52556, {	-- Aerin Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52554, {	-- Aerin Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52553, {	-- Aerin Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52560, {	-- Aerin Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52575, {	-- Arwan Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52574, {	-- Arwan Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52573, {	-- Arwan Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52571, {	-- Arwan Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52572, {	-- Arwan Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52570, {	-- Arwan Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52569, {	-- Arwan Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52576, {	-- Arwan Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52583, {	-- Brunold Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52582, {	-- Brunold Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52581, {	-- Brunold Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52579, {	-- Brunold Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52580, {	-- Brunold Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52578, {	-- Brunold Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52577, {	-- Brunold Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52584, {	-- Brunold Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52591, {	-- Burgle Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52590, {	-- Burgle Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52589, {	-- Burgle Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52587, {	-- Burgle Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52588, {	-- Burgle Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52586, {	-- Burgle Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52585, {	-- Burgle Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52592, {	-- Burgle Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52736, {	-- Deshi Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52735, {	-- Deshi Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52734, {	-- Deshi Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52732, {	-- Deshi Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52733, {	-- Deshi Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52731, {	-- Deshi Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52730, {	-- Deshi Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52737, {	-- Deshi Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52599, {	-- Flickerwick Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52598, {	-- Flickerwick Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52597, {	-- Flickerwick Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52595, {	-- Flickerwick Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52596, {	-- Flickerwick Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52594, {	-- Flickerwick Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52593, {	-- Flickerwick Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52600, {	-- Flickerwick Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52615, {	-- Frankie Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52614, {	-- Frankie Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52613, {	-- Frankie Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52611, {	-- Frankie Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52612, {	-- Frankie Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52610, {	-- Frankie Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52609, {	-- Frankie Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52616, {	-- Frankie Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52607, {	-- Gimzy Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52606, {	-- Gimzy Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52605, {	-- Gimzy Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52603, {	-- Gimzy Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52604, {	-- Gimzy Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52602, {	-- Gimzy Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52601, {	-- Gimzy Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52608, {	-- Gimzy Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52623, {	-- Gregg Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52622, {	-- Gregg Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52621, {	-- Gregg Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52619, {	-- Gregg Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52620, {	-- Gregg Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52618, {	-- Gregg Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52617, {	-- Gregg Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52624, {	-- Gregg Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52631, {	-- Grubby Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52630, {	-- Grubby Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52629, {	-- Grubby Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52627, {	-- Grubby Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52628, {	-- Grubby Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52626, {	-- Grubby Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52625, {	-- Grubby Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52632, {	-- Grubby Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52567, {	-- Karyn Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52566, {	-- Karyn Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52565, {	-- Karyn Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52563, {	-- Karyn Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52564, {	-- Karyn Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52562, {	-- Karyn Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52561, {	-- Karyn Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52568, {	-- Karyn Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52639, {	-- Longpaws Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52638, {	-- Longpaws Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52637, {	-- Longpaws Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52635, {	-- Longpaws Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52636, {	-- Longpaws Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52634, {	-- Longpaws Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52633, {	-- Longpaws Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52640, {	-- Longpaws Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52647, {	-- Manape Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52646, {	-- Manape Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52645, {	-- Manape Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52643, {	-- Manape Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52644, {	-- Manape Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52642, {	-- Manape Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52641, {	-- Manape Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52648, {	-- Manape Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52656, {	-- Nizhoni Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52655, {	-- Nizhoni Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52653, {	-- Nizhoni Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52651, {	-- Nizhoni Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52652, {	-- Nizhoni Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52650, {	-- Nizhoni Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52649, {	-- Nizhoni Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52657, {	-- Nizhoni Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52664, {	-- Old Li Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52663, {	-- Old Li Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52662, {	-- Old Li Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52660, {	-- Old Li Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52661, {	-- Old Li Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52659, {	-- Old Li Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52658, {	-- Old Li Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52665, {	-- Old Li Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52545, {	-- Royston Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52547, {	-- Royston Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52548, {	-- Royston Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52550, {	-- Royston Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52549, {	-- Royston Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52551, {	-- Royston Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52552, {	-- Royston Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52546, {	-- Royston Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52672, {	-- Spooner Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52671, {	-- Spooner Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52670, {	-- Spooner Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52668, {	-- Spooner Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52669, {	-- Spooner Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52667, {	-- Spooner Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52666, {	-- Spooner Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52673, {	-- Spooner Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52680, {	-- Sylvester Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52679, {	-- Sylvester Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52678, {	-- Sylvester Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52676, {	-- Sylvester Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52677, {	-- Sylvester Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52675, {	-- Sylvester Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52674, {	-- Sylvester Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52681, {	-- Sylvester Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52688, {	-- Taz'anga Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52687, {	-- Taz'anga Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52686, {	-- Taz'anga Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52684, {	-- Taz'anga Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52685, {	-- Taz'anga Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52683, {	-- Taz'anga Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52682, {	-- Taz'anga Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52689, {	-- Taz'anga Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52696, {	-- Tinny Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52695, {	-- Tinny Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52694, {	-- Tinny Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52692, {	-- Tinny Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52693, {	-- Tinny Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52691, {	-- Tinny Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52690, {	-- Tinny Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52697, {	-- Tinny Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52704, {	-- Tweets Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52703, {	-- Tweets Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52702, {	-- Tweets Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52700, {	-- Tweets Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52701, {	-- Tweets Needs Help! (Sharpened Knife)
-				["repeatable"] = true,
-			}),
-			q(52699, {	-- Tweets Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52698, {	-- Tweets Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52705, {	-- Tweets Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52712, {	-- Two-Socks Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52711, {	-- Two-Socks Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52709, {	-- Two-Socks Needs Help! (Knife)
-				["repeatable"] = true,
-			}),
-			q(52710, {	-- Two-Socks Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52708, {	-- Two-Socks Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52707, {	-- Two-Socks Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52706, {	-- Two-Socks Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52713, {	-- Two-Socks Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52720, {	-- Valero Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52719, {	-- Valero Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52717, {	-- Valero Needs Help! (Knife)
-				["repeatable"] = true,
-			}),
-			q(52718, {	-- Valero Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52716, {	-- Valero Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52715, {	-- Valero Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52714, {	-- Valero Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52721, {	-- Valero Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52728, {	-- Vizio Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52727, {	-- Vizio Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52725, {	-- Vizio Needs Help! (Knife)
-				["repeatable"] = true,
-			}),
-			q(52726, {	-- Vizio Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52724, {	-- Vizio Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52723, {	-- Vizio Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52722, {	-- Vizio Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52729, {	-- Vizio Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
-			}),
-			q(52744, {	-- Yuke Needs Help! (no item)
-				["repeatable"] = true,
-			}),
-			q(52743, {	-- Yuke Needs Help! (Key)
-				["repeatable"] = true,
-			}),
-			q(52741, {	-- Yuke Needs Help! (Knife)
-				["repeatable"] = true,
-			}),
-			q(52742, {	-- Yuke Needs Help! (Pickaxe)
-				["repeatable"] = true,
-			}),
-			q(52740, {	-- Yuke Needs Help! (Runestone)
-				["repeatable"] = true,
-			}),
-			q(52739, {	-- Yuke Needs Help! (Shovel)
-				["repeatable"] = true,
-			}),
-			q(52738, {	-- Yuke Needs Help! (Torch)
-				["repeatable"] = true,
-			}),
-			q(52745, {	-- Yuke Needs Help! (Volatile Cure-All)
-				["repeatable"] = true,
 			}),
 		}),
+		-- Rep Item Quests
+		n(QUESTS, sharedData({
+			["repeatable"] = true,
+		},{
+			q(53112, {	-- Azeroth's Tear
+				["coord"] = { 42.2, 44.2, SILITHUS },
+				["providers"] = {
+					{ "n", 130216 },	-- Magni Bronzebeard
+					{ "i", 163217 },	-- Azeroth's Tear
+				},
+				["g"] = {
+					i(174502),	-- Tear of Azeroth
+				},
+			}),
+			q(53118, {	-- Dented Coin (A)
+				["coord"] = { 68.0, 22.0, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["providers"] = {
+					{ "n", 122370 },	-- Cyrus Crestfall
+					{ "i", 163616 },	-- Dented Coin (A)
+				},
+				["g"] = {
+					i(174504),	-- Proudmoore War Copper
+				},
+			}),
+			q(53120, {	-- Exotic Spices (A)
+				["coord"] = { 20.6, 45.6, DRUSTVAR },
+				["races"] = ALLIANCE_ONLY,
+				["providers"] = {
+					{ "n", 136269 },	-- Xun Xun Sweetflower
+					{ "i", 163614 },	-- Exotic Spices (A)
+				},
+				["g"] = {
+					i(174503),	-- Exotically Spiced Carrot
+				},
+			}),
+			q(53114, {	-- Golden Beetle (H)
+				["coord"] = { 75.6, 56.6, NAZMIR },
+				["races"] = HORDE_ONLY,
+				["providers"] = {
+					{ "n", 120551 },	-- Krag'wa the Huge
+					{ "i", 163619 },	-- Golden Beetle (H)
+				},
+				["g"] = {
+					i(174506),	-- Golden Insect Wings
+				},
+			}),
+			q(53115, {	-- Island Flotsam (H)
+				["coord"] = { 35.4, 7.8, THE_GREAT_SEAL },
+				["races"] = HORDE_ONLY,
+				["sourceQuests"] = { 51142 },	-- Pests
+				["providers"] = {
+					{ "n", 126334 },	-- Jani
+					{ "i", 163620 },	-- Island Flotsam (H)
+				},
+				["g"] = {
+					i(174518),	-- Jani Figurine
+				},
+			}),
+			q(53119, {	-- Lost Sea Scroll (A)
+				["coord"] = { 59.2, 68.6, STORMSONG_VALLEY },
+				["races"] = ALLIANCE_ONLY,
+				["providers"] = {
+					{ "n", 130576 },	-- Brother Pike
+					{ "i", 163615 },	-- Lost Sea Scroll (A)
+				},
+				["g"] = {
+					i(174505),	-- Tide-Speaker's Tome
+				},
+			}),
+			q(53117, {	-- Rusted Alliance Insignia (A)
+				["coord"] = { 69.2, 25.0, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["providers"] = {
+					{ "n", 135446 },	-- Vindicator Jaelaana
+					{ "i", 163617 },	-- Rusted Alliance Insignia
+				},
+				["g"] = {
+					i(174507),	-- Fallen Soldier's Insignia
+				},
+			}),
+			q(53116, {	-- Rusted Horde Insignia (H)
+				["coord"] = { 58.0, 62.6, ZULDAZAR },
+				["races"] = HORDE_ONLY,
+				["providers"] = {
+					{ "n", 135447 },	-- Ransa Greyfeather
+					{ "i", 163621 },	-- Rusted Horde Insignia (H)
+				},
+				["g"] = {
+					i(174508),	-- Fallen Soldier's Insignia
+				},
+			}),
+			q(53113, {	-- Shimmering Shell (H)
+				["coord"] = { 56.7, 49.8, VOLDUN },
+				["races"] = HORDE_ONLY,
+				["providers"] = {
+					{ "n", 135804 },	-- Hoarder Jena
+					{ "i", 163618 },	-- Shimmering Shell (H)
+				},
+				["g"] = {
+					i(174501),	-- Ornate Voldunai Jewelry
+				},
+			}),
+			q(54751, {	-- Soggy Page
+				["providers"] = {
+					{ "n", 135793 },	-- Collector Kojo (A)
+					{ "n", 134345 },	-- Collector Kojo (H)
+					{ "i", 166501 },	-- Soggy Page
+				},
+				["g"] = {
+					i(174519),	-- Verdant Hills of Chokingvine - Page 17
+				},
+			}),
+		})),
+		-- Island 'Help NPC' Quests
+		n(QUESTS, sharedData({
+			["repeatable"] = true,
+		},{
+			q(52559),	-- Aerin Needs Help! (no item)
+			q(52558),	-- Aerin Needs Help! (Key)
+			q(52557),	-- Aerin Needs Help! (Pickaxe)
+			q(52555),	-- Aerin Needs Help! (Runestone)
+			q(52556),	-- Aerin Needs Help! (Sharpened Knife)
+			q(52554),	-- Aerin Needs Help! (Shovel)
+			q(52553),	-- Aerin Needs Help! (Torch)
+			q(52560),	-- Aerin Needs Help! (Volatile Cure-All)
+			q(52575),	-- Arwan Needs Help! (no item)
+			q(52574),	-- Arwan Needs Help! (Key)
+			q(52573),	-- Arwan Needs Help! (Pickaxe)
+			q(52571),	-- Arwan Needs Help! (Runestone)
+			q(52572),	-- Arwan Needs Help! (Sharpened Knife)
+			q(52570),	-- Arwan Needs Help! (Shovel)
+			q(52569),	-- Arwan Needs Help! (Torch)
+			q(52576),	-- Arwan Needs Help! (Volatile Cure-All)
+			q(52583),	-- Brunold Needs Help! (no item)
+			q(52582),	-- Brunold Needs Help! (Key)
+			q(52581),	-- Brunold Needs Help! (Pickaxe)
+			q(52579),	-- Brunold Needs Help! (Runestone)
+			q(52580),	-- Brunold Needs Help! (Sharpened Knife)
+			q(52578),	-- Brunold Needs Help! (Shovel)
+			q(52577),	-- Brunold Needs Help! (Torch)
+			q(52584),	-- Brunold Needs Help! (Volatile Cure-All)
+			q(52591),	-- Burgle Needs Help! (no item)
+			q(52590),	-- Burgle Needs Help! (Key)
+			q(52589),	-- Burgle Needs Help! (Pickaxe)
+			q(52587),	-- Burgle Needs Help! (Runestone)
+			q(52588),	-- Burgle Needs Help! (Sharpened Knife)
+			q(52586),	-- Burgle Needs Help! (Shovel)
+			q(52585),	-- Burgle Needs Help! (Torch)
+			q(52592),	-- Burgle Needs Help! (Volatile Cure-All)
+			q(52736),	-- Deshi Needs Help! (no item)
+			q(52735),	-- Deshi Needs Help! (Key)
+			q(52734),	-- Deshi Needs Help! (Pickaxe)
+			q(52732),	-- Deshi Needs Help! (Runestone)
+			q(52733),	-- Deshi Needs Help! (Sharpened Knife)
+			q(52731),	-- Deshi Needs Help! (Shovel)
+			q(52730),	-- Deshi Needs Help! (Torch)
+			q(52737),	-- Deshi Needs Help! (Volatile Cure-All)
+			q(52599),	-- Flickerwick Needs Help! (no item)
+			q(52598),	-- Flickerwick Needs Help! (Key)
+			q(52597),	-- Flickerwick Needs Help! (Pickaxe)
+			q(52595),	-- Flickerwick Needs Help! (Runestone)
+			q(52596),	-- Flickerwick Needs Help! (Sharpened Knife)
+			q(52594),	-- Flickerwick Needs Help! (Shovel)
+			q(52593),	-- Flickerwick Needs Help! (Torch)
+			q(52600),	-- Flickerwick Needs Help! (Volatile Cure-All)
+			q(52615),	-- Frankie Needs Help! (no item)
+			q(52614),	-- Frankie Needs Help! (Key)
+			q(52613),	-- Frankie Needs Help! (Pickaxe)
+			q(52611),	-- Frankie Needs Help! (Runestone)
+			q(52612),	-- Frankie Needs Help! (Sharpened Knife)
+			q(52610),	-- Frankie Needs Help! (Shovel)
+			q(52609),	-- Frankie Needs Help! (Torch)
+			q(52616),	-- Frankie Needs Help! (Volatile Cure-All)
+			q(52607),	-- Gimzy Needs Help! (no item)
+			q(52606),	-- Gimzy Needs Help! (Key)
+			q(52605),	-- Gimzy Needs Help! (Pickaxe)
+			q(52603),	-- Gimzy Needs Help! (Runestone)
+			q(52604),	-- Gimzy Needs Help! (Sharpened Knife)
+			q(52602),	-- Gimzy Needs Help! (Shovel)
+			q(52601),	-- Gimzy Needs Help! (Torch)
+			q(52608),	-- Gimzy Needs Help! (Volatile Cure-All)
+			q(52623),	-- Gregg Needs Help! (no item)
+			q(52622),	-- Gregg Needs Help! (Key)
+			q(52621),	-- Gregg Needs Help! (Pickaxe)
+			q(52619),	-- Gregg Needs Help! (Runestone)
+			q(52620),	-- Gregg Needs Help! (Sharpened Knife)
+			q(52618),	-- Gregg Needs Help! (Shovel)
+			q(52617),	-- Gregg Needs Help! (Torch)
+			q(52624),	-- Gregg Needs Help! (Volatile Cure-All)
+			q(52631),	-- Grubby Needs Help! (no item)
+			q(52630),	-- Grubby Needs Help! (Key)
+			q(52629),	-- Grubby Needs Help! (Pickaxe)
+			q(52627),	-- Grubby Needs Help! (Runestone)
+			q(52628),	-- Grubby Needs Help! (Sharpened Knife)
+			q(52626),	-- Grubby Needs Help! (Shovel)
+			q(52625),	-- Grubby Needs Help! (Torch)
+			q(52632),	-- Grubby Needs Help! (Volatile Cure-All)
+			q(52567),	-- Karyn Needs Help! (no item)
+			q(52566),	-- Karyn Needs Help! (Key)
+			q(52565),	-- Karyn Needs Help! (Pickaxe)
+			q(52563),	-- Karyn Needs Help! (Runestone)
+			q(52564),	-- Karyn Needs Help! (Sharpened Knife)
+			q(52562),	-- Karyn Needs Help! (Shovel)
+			q(52561),	-- Karyn Needs Help! (Torch)
+			q(52568),	-- Karyn Needs Help! (Volatile Cure-All)
+			q(52639),	-- Longpaws Needs Help! (no item)
+			q(52638),	-- Longpaws Needs Help! (Key)
+			q(52637),	-- Longpaws Needs Help! (Pickaxe)
+			q(52635),	-- Longpaws Needs Help! (Runestone)
+			q(52636),	-- Longpaws Needs Help! (Sharpened Knife)
+			q(52634),	-- Longpaws Needs Help! (Shovel)
+			q(52633),	-- Longpaws Needs Help! (Torch)
+			q(52640),	-- Longpaws Needs Help! (Volatile Cure-All)
+			q(52647),	-- Manape Needs Help! (no item)
+			q(52646),	-- Manape Needs Help! (Key)
+			q(52645),	-- Manape Needs Help! (Pickaxe)
+			q(52643),	-- Manape Needs Help! (Runestone)
+			q(52644),	-- Manape Needs Help! (Sharpened Knife)
+			q(52642),	-- Manape Needs Help! (Shovel)
+			q(52641),	-- Manape Needs Help! (Torch)
+			q(52648),	-- Manape Needs Help! (Volatile Cure-All)
+			q(52656),	-- Nizhoni Needs Help! (no item)
+			q(52655),	-- Nizhoni Needs Help! (Key)
+			q(52653),	-- Nizhoni Needs Help! (Pickaxe)
+			q(52651),	-- Nizhoni Needs Help! (Runestone)
+			q(52652),	-- Nizhoni Needs Help! (Sharpened Knife)
+			q(52650),	-- Nizhoni Needs Help! (Shovel)
+			q(52649),	-- Nizhoni Needs Help! (Torch)
+			q(52657),	-- Nizhoni Needs Help! (Volatile Cure-All)
+			q(52664),	-- Old Li Needs Help! (no item)
+			q(52663),	-- Old Li Needs Help! (Key)
+			q(52662),	-- Old Li Needs Help! (Pickaxe)
+			q(52660),	-- Old Li Needs Help! (Runestone)
+			q(52661),	-- Old Li Needs Help! (Sharpened Knife)
+			q(52659),	-- Old Li Needs Help! (Shovel)
+			q(52658),	-- Old Li Needs Help! (Torch)
+			q(52665),	-- Old Li Needs Help! (Volatile Cure-All)
+			q(52545),	-- Royston Needs Help! (no item)
+			q(52547),	-- Royston Needs Help! (Key)
+			q(52548),	-- Royston Needs Help! (Pickaxe)
+			q(52550),	-- Royston Needs Help! (Runestone)
+			q(52549),	-- Royston Needs Help! (Sharpened Knife)
+			q(52551),	-- Royston Needs Help! (Shovel)
+			q(52552),	-- Royston Needs Help! (Torch)
+			q(52546),	-- Royston Needs Help! (Volatile Cure-All)
+			q(52672),	-- Spooner Needs Help! (no item)
+			q(52671),	-- Spooner Needs Help! (Key)
+			q(52670),	-- Spooner Needs Help! (Pickaxe)
+			q(52668),	-- Spooner Needs Help! (Runestone)
+			q(52669),	-- Spooner Needs Help! (Sharpened Knife)
+			q(52667),	-- Spooner Needs Help! (Shovel)
+			q(52666),	-- Spooner Needs Help! (Torch)
+			q(52673),	-- Spooner Needs Help! (Volatile Cure-All)
+			q(52680),	-- Sylvester Needs Help! (no item)
+			q(52679),	-- Sylvester Needs Help! (Key)
+			q(52678),	-- Sylvester Needs Help! (Pickaxe)
+			q(52676),	-- Sylvester Needs Help! (Runestone)
+			q(52677),	-- Sylvester Needs Help! (Sharpened Knife)
+			q(52675),	-- Sylvester Needs Help! (Shovel)
+			q(52674),	-- Sylvester Needs Help! (Torch)
+			q(52681),	-- Sylvester Needs Help! (Volatile Cure-All)
+			q(52688),	-- Taz'anga Needs Help! (no item)
+			q(52687),	-- Taz'anga Needs Help! (Key)
+			q(52686),	-- Taz'anga Needs Help! (Pickaxe)
+			q(52684),	-- Taz'anga Needs Help! (Runestone)
+			q(52685),	-- Taz'anga Needs Help! (Sharpened Knife)
+			q(52683),	-- Taz'anga Needs Help! (Shovel)
+			q(52682),	-- Taz'anga Needs Help! (Torch)
+			q(52689),	-- Taz'anga Needs Help! (Volatile Cure-All)
+			q(52696),	-- Tinny Needs Help! (no item)
+			q(52695),	-- Tinny Needs Help! (Key)
+			q(52694),	-- Tinny Needs Help! (Pickaxe)
+			q(52692),	-- Tinny Needs Help! (Runestone)
+			q(52693),	-- Tinny Needs Help! (Sharpened Knife)
+			q(52691),	-- Tinny Needs Help! (Shovel)
+			q(52690),	-- Tinny Needs Help! (Torch)
+			q(52697),	-- Tinny Needs Help! (Volatile Cure-All)
+			q(52704),	-- Tweets Needs Help! (no item)
+			q(52703),	-- Tweets Needs Help! (Key)
+			q(52702),	-- Tweets Needs Help! (Pickaxe)
+			q(52700),	-- Tweets Needs Help! (Runestone)
+			q(52701),	-- Tweets Needs Help! (Sharpened Knife)
+			q(52699),	-- Tweets Needs Help! (Shovel)
+			q(52698),	-- Tweets Needs Help! (Torch)
+			q(52705),	-- Tweets Needs Help! (Volatile Cure-All)
+			q(52712),	-- Two-Socks Needs Help! (no item)
+			q(52711),	-- Two-Socks Needs Help! (Key)
+			q(52709),	-- Two-Socks Needs Help! (Knife)
+			q(52710),	-- Two-Socks Needs Help! (Pickaxe)
+			q(52708),	-- Two-Socks Needs Help! (Runestone)
+			q(52707),	-- Two-Socks Needs Help! (Shovel)
+			q(52706),	-- Two-Socks Needs Help! (Torch)
+			q(52713),	-- Two-Socks Needs Help! (Volatile Cure-All)
+			q(52720),	-- Valero Needs Help! (no item)
+			q(52719),	-- Valero Needs Help! (Key)
+			q(52717),	-- Valero Needs Help! (Knife)
+			q(52718),	-- Valero Needs Help! (Pickaxe)
+			q(52716),	-- Valero Needs Help! (Runestone)
+			q(52715),	-- Valero Needs Help! (Shovel)
+			q(52714),	-- Valero Needs Help! (Torch)
+			q(52721),	-- Valero Needs Help! (Volatile Cure-All)
+			q(52728),	-- Vizio Needs Help! (no item)
+			q(52727),	-- Vizio Needs Help! (Key)
+			q(52725),	-- Vizio Needs Help! (Knife)
+			q(52726),	-- Vizio Needs Help! (Pickaxe)
+			q(52724),	-- Vizio Needs Help! (Runestone)
+			q(52723),	-- Vizio Needs Help! (Shovel)
+			q(52722),	-- Vizio Needs Help! (Torch)
+			q(52729),	-- Vizio Needs Help! (Volatile Cure-All)
+			q(52744),	-- Yuke Needs Help! (no item)
+			q(52743),	-- Yuke Needs Help! (Key)
+			q(52741),	-- Yuke Needs Help! (Knife)
+			q(52742),	-- Yuke Needs Help! (Pickaxe)
+			q(52740),	-- Yuke Needs Help! (Runestone)
+			q(52739),	-- Yuke Needs Help! (Shovel)
+			q(52738),	-- Yuke Needs Help! (Torch)
+			q(52745),	-- Yuke Needs Help! (Volatile Cure-All)
+		})),
 	}),
 }));
-root("HiddenQuestTriggers", {
-	q(55591),	-- Expedition Demolisher
-});
+root("HiddenQuestTriggers", tier(BFA_TIER, {
+	n(ISLAND_EXPEDITIONS, {
+		q(55591),	-- Expedition Demolisher
+	}),
+}));

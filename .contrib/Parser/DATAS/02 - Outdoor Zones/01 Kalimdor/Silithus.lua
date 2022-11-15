@@ -842,10 +842,6 @@ root("Zones", m(KALIMDOR, {
 				["lvl"] = 110,
 				["g"] = {
 					n(QUESTS, {
-						q(53112, {	-- Azeroth's Tear
-							["repeatable"] = true,
-							["lvl"] = 120,
-						}),
 						q(54938, {	-- A Brother's Help
 							-- This was removed during BfA in 8.2 but is now appearing again for characters leveling up during Shadowlands
 							["sourceQuests"] = { 53406 },	-- The Chamber of Heart

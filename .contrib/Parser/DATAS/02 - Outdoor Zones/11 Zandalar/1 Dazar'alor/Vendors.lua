@@ -37,11 +37,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = { { "c", 1710, 300 }, },	-- 300x Seaferer's Dubloon
 					}),
 					i(163619, {	-- Golden Beetle
-						--["questID"] = 53114,	-- Golden Beetle
-						-- Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
-						["repeatable"] = true,
-						["description"] = "Cost: 100 Seafarer's Dubloons",
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
 					}),
 					i(160289, {	-- Grey Tricorne Hat
@@ -77,11 +72,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = { { "c", 1710, 35 }, },	-- 35x Seaferer's Dubloon
 					}),
 					i(163620, {	-- Island Flotsam
-						--["questID"] = 53115,	-- Island Flotsam
-						-- Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
-						["repeatable"] = true,
-						["description"] = "Cost: 100 Seafarer's Dubloons",
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
 					}),
 					i(166749, {	-- Lyrics: Song of the Sea
@@ -95,23 +85,17 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["cost"] = { { "c", 1710, 500 }, },	-- 500x Seaferer's Dubloon
 					}),
 					i(163618, {	-- Shimmering Shell
-						--["questID"] = 53113,	-- Shimminering Shell
-						-- Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
-						["repeatable"] = true,
-						["description"] = "Cost: 100 Seafarer's Dubloons",
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
 					}),
 					i(166745, {	-- Siltwing Albatross (MOUNT!)
 						["cost"] = { { "c", 1710, 1000 }, },	-- 1,000x Seaferer's Dubloon
 					}),
 					i(166501, {	-- Soggy Page
-						["description"] = "Grants 250 reputation with Tortollan Seekers.",
-						["repeatable"] = true,
 						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
 					}),
 				},
 			}),
+			-- TODO: symlink
 			n(161067, {	-- Captain Kitt
 				["description"] = "We've compiled these lists from Wowhead, personal experience, and reports from ATT users, but they are incomplete (there isn't much to go on, and we can only collect so many Seafarer's Dubloons ourselves).\n\nIf you get an item from a box it's not listed under, please report it to the ATT Discord in the #errors or #bounty channel.  Thanks!\n",
 				["coord"] = { 44.4, 94.3, DAZARALOR },
@@ -147,98 +131,27 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 							i(166495),	-- Tonguelasher
 						}),
 						n(FACTIONS, {
-							i(163217, {	-- Azeroth's Tear
+							i(163217, {	-- Azeroth's Tear [Both]
 								["description"] = "|CFFFF0000Turn in to Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
-								["coord"] = { 42.2, 44.2, SILITHUS },
-								["g"] = {
-									q(53112, {	-- Azeroth's Tear
-										["repeatable"] = true,
-										["provider"] = { "n", 130216 },	-- Magni Bronzebeard <The Speaker>
-										["g"] = {
-											i(174502),	-- Tear of Azeroth
-										},
-									}),
-								},
 							}),
-							i(173948, {	-- Glittering Abyssal Conch
+							i(163619, {	-- Golden Beetle (H)
+								["description"] = "|CFFFF0000Turn in to Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
 								["races"] = HORDE_ONLY,
 							}),
-							i(163619, {	-- Golden Beetle
-								["description"] = "|CFFFF0000Turn in to Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
-								["coord"] = { 75.6, 56.6, NAZMIR },
-								["g"] = {
-									q(53114, {	-- Golden Beetle
-										["repeatable"] = true,
-										["provider"] = { "n", 120551 },	-- Krag'wa the Huge
-										["races"] = HORDE_ONLY,
-										["g"] = {
-											i(174506),	-- Golden Insect Wings
-										},
-									}),
-								},
-							}),
-							i(163620, {	-- Island Flotsam
+							i(163620, {	-- Island Flotsam (H)
 								["description"] = "|CFFFF0000Turn in to Jani in Dazar'alor for Zandalari Empire rep.|r",
-								["coord"] = { 35.4, 7.8, THE_GREAT_SEAL },
-								["g"] = {
-									q(53115, {	-- Island Flotsam
-										["description"] = "Must have unlocked Jani by doing the quest \"Pests\".",
-										["repeatable"] = true,
-										["provider"] = { "n", 126334 },	-- Jani <Loa of Scavengers>
-										["races"] = HORDE_ONLY,
-										["g"] = {
-											i(174518),	-- Jani Figurine
-										},
-									}),
-								},
+								["races"] = HORDE_ONLY,
 							}),
-							i(173736),	-- Layered Information Kernel of E-steam (looted on Alliance -- is there one for each faction, or just two of the same rep token?)
-							i(163621, {	-- Rusted Horde Insignia
+							i(163621, {	-- Rusted Horde Insignia (H)
 								["description"] = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
-								["coord"] = { 58.0, 62.6, ZULDAZAR },
-								["g"] = {
-									q(53116, {	-- Rusted Horde Insignia
-										["repeatable"] = true,
-										["provider"] = { "n", 135447 },	-- Ransa Greyfeather
-										["races"] = HORDE_ONLY,
-										["g"] = {
-											i(174508),	-- Fallen Soldier's Insignia
-										},
-									}),
-								},
+								["races"] = HORDE_ONLY,
 							}),
-							i(163618, {	-- Shimmering Shell
+							i(163618, {	-- Shimmering Shell (H)
 								["description"] = "|CFFFF0000Turn in to Hoarder Jena in Vol'dun for Voldunai rep.|r",
-								["coord"] = { 56.7, 49.8, VOLDUN },
-								["g"] = {
-									q(53113, {	-- Shimmering Shell
-										["repeatable"] = true,
-										["provider"] = { "n", 135804 },	-- Hoarder Jena
-										["races"] = HORDE_ONLY,
-										["g"] = {
-											i(174501),	-- Ornate Voldunai Jewelry
-										},
-									}),
-								},
+								["races"] = HORDE_ONLY,
 							}),
 							i(166501, {	-- Soggy Page
 								["description"] = "|CFFFF0000Turn in to Collector Kojo in Stormsong Valley (Alliance) or Zuldazar (Horde) for Tortollan Seekers rep.|r",
-								["g"] = {
-									q(54751, {	-- Soggy Page
-										["repeatable"] = true,
-										["providers"] = {
-											{ "n", 135793 },	-- Collector Kojo (A)
-											{ "n", 134345 },	-- Collector Kojo (H)
-										},
-										["g"] = {
-											i(174519),	-- Verdant Hills of Chokingvine - Page 17
-										},
-									}),
-								},
-							}),
-							i(174521),	-- Transferable Kernel of E-steam
-							i(174523, {	-- Waveswept Abyssal Conch
-								["races"] = HORDE_ONLY,
 							}),
 						}),
 					}),

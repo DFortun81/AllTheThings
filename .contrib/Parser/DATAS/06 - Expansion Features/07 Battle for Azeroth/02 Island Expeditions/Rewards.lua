@@ -242,12 +242,84 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 				filter(MISC, {
 					i(163611, {	-- Seafarer's Coin Pouch
 						["description"] = "Contains roughly 1-4 dubloons, more if you have the research.",
+						["g"] = {
+							currency(1710),	-- Seafarer's Dubloon
+						},
 					}),
 					i(163612, {	-- Wayfinder's Satchel
 						["description"] = "Contains roughly 5-8 dubloons, more if you have the research.",
+						["g"] = {
+							currency(1710),	-- Seafarer's Dubloon
+						},
 					}),
 					i(163613, {	-- Sack of Plunder
 						["description"] = "Contains roughly 9-12 dubloons, more if you have the research.",
+						["g"] = {
+							currency(1710),	-- Seafarer's Dubloon
+						},
+					}),
+					-- TODO: verify all these items reward in Islands Expeditions
+					i(163217, {	-- Azeroth's Tear [Both]
+						["description"] = "|CFFFF0000Turn in to Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
+					}),
+					i(163616, {	-- Dented Coin (A)
+						["description"] = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(163614, {	-- Exotic Spices (A)
+						["description"] = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(163619, {	-- Golden Beetle (H)
+						["description"] = "|CFFFF0000Turn in to Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
+						["races"] = HORDE_ONLY,
+					}),
+					i(163620, {	-- Island Flotsam (H)
+						["description"] = "|CFFFF0000Turn in to Jani in Dazar'alor for Zandalari Empire rep.|r",
+						["races"] = HORDE_ONLY,
+					}),
+					i(163615, {	-- Lost Sea Scroll (A)
+						["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(163617, {	-- Rusted Alliance Insignia (A)
+						["description"] = "|CFFFF0000Turn in to Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(163621, {	-- Rusted Horde Insignia (H)
+						["description"] = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
+						["races"] = HORDE_ONLY,
+					}),
+					i(163618, {	-- Shimmering Shell (H)
+						["description"] = "|CFFFF0000Turn in to Hoarder Jena in Vol'dun for Voldunai rep.|r",
+						["races"] = HORDE_ONLY,
+					}),
+					i(166501, {	-- Soggy Page
+						["description"] = "|CFFFF0000Turn in to Collector Kojo in Stormsong Valley (Alliance) or Zuldazar (Horde) for Tortollan Seekers rep.|r",
+					}),
+					i(163470),	-- Ancient Crypt Key
+					i(163478),	-- Battered Twilight Scale
+					i(163472),	-- Bloodwake Drinking Horn
+					i(163482),	-- Broken Compass
+					i(163485),	-- Druidic Fur
+					i(163476),	-- Elemental Core
+					i(163481),	-- Glittering Scarab
+					i(163474),	-- Icetusk Fur Cloak
+					i(163475),	-- Magical Spyglass
+					i(163480),	-- Murloc Eye
+					i(163466),	-- Notched Coin
+					i(163483),	-- Razorfin Hunting Spear
+					i(163471),	-- Ring of the Reefs
+					i(163473),	-- Sonic Stone
+					i(163486),	-- Strangling Root
+					i(163477),	-- Unscarred Black Scale
+					i(163479),	-- Venture Co. Business Plan
+					i(163484, {	-- Vorus'arak's Carapace
+						["cr"] = 139889,	-- Vorus'arak
+					}),
+					i(163488),	-- Weathered Pamphlet
+					i(163487, {	-- Wriggling Mass
+						["description"] = "Can be turned in at old or new Silithus.",
 					}),
 				}),
 				filter(MOUNTS, {

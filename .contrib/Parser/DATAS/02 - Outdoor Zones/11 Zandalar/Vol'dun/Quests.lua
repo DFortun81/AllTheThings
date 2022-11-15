@@ -1031,12 +1031,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(161274),	-- Exiled Veteran's Bindings
 				},
 			}),
-			q(53113, {	-- Shimmering Shell
-				["repeatable"] = true,
-				["provider"] = { "n", 135804 },	-- Hoarder Jena
-				["coord"] = { 56.6, 49.7, VOLDUN },
-				["races"] = HORDE_ONLY,
-			}),
 			q(48331, {	-- Siphoning Souls
 				["sourceQuests"] = {
 					49001,	-- Inconvenient Spirits
