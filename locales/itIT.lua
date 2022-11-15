@@ -1508,7 +1508,7 @@ for key,value in pairs({
 	[210565] = "Terreno Smosso",	-- Dark Soil
 	--TODO: [211424] = "Alchemy Scroll",	-- Alchemy Scroll
 	[211754] = "Testo Bizzarro",	-- Curious Text
-	--TODO: [211807] = "Mogu Chest",	-- Mogu Chest
+	[211807] = "Cassa dei Mogu",	-- Mogu Chest	--TODO: This was manually translated
 	[212181] = "Statua Antica",	-- Ancient Statute
 	[212389] = "Pergamena del Presagio",	-- Scroll of Auspice
 	[213362] = "Baule della Nave",	-- Ship's Locker

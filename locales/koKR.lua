@@ -1515,7 +1515,7 @@ for key,value in pairs({
 	[210565] = "검은 토양",	-- Dark Soil
 	--TODO: [211424] = "Alchemy Scroll",	-- Alchemy Scroll
 	[211754] = "수수께끼의 문서",	-- Curious Text
-	--TODO: [211807] = "Mogu Chest",	-- Mogu Chest
+	[211807] = "모구 궤짝",	-- Mogu Chest	--TODO: This was manually translated
 	[212181] = "고대 석상",	-- Ancient Statute
 	[212389] = "점괘 두루마리",	-- Scroll of Auspice
 	[213362] = "배의 보관함",	-- Ship's Locker

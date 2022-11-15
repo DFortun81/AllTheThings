@@ -1506,7 +1506,7 @@ for key,value in pairs({
 	[210565] = "Темная земля",	-- Dark Soil
 	[211424] = "Алхимический свиток",	-- Alchemy Scroll
 	[211754] = "Любопытный текст",	-- Curious Text
-	[211807] = "Добыча могу",	-- Mogu Chest	--TODO: This was manually translated
+	[211807] = "Сундук могу",	-- Mogu Chest	--TODO: This was manually translated
 	[212181] = "Древняя статуя",	-- Ancient Statute
 	[212389] = "Свиток с предсказанием",	-- Scroll of Auspice
 	[213362] = "Корабельный сейф",	-- Ship's Locker

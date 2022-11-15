@@ -1528,7 +1528,7 @@ for key, value in pairs({
 	[210565] = "黑色泥土",	-- Dark Soil
 	--TODO: [211424] = "Alchemy Scroll",	-- Alchemy Scroll
 	[211754] = "奇怪的文字",	-- Curious Text
-	--TODO: [211807] = "Mogu Chest",	-- Mogu Chest
+	[211807] = "魔古箱子",	-- Mogu Chest	--TODO: This was manually translated
 	[212181] = "古代雕像",	-- Ancient Statute
 	[212389] = "预言之卷",	-- Scroll of Auspice	--TODO: This was manually translated
 	[213362] = "船载储物箱",	-- Ship's Locker
