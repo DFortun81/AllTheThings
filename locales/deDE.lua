@@ -1120,7 +1120,7 @@ for key,value in pairs({
 	[174709] = "Verderbte Windblüte",	-- Corrupted Windblossom
 	[174712] = "Verderbte Liedblume",	-- Corrupted Songflower
 	[174713] = "Verderbte Liedblume",	-- Corrupted Songflower
-	[174793] = "Brutstätte der Gorishi",	-- Gorishi Hive Hatchery	--TODO: This was manually translated
+	[174793] = "Schwarmbrutstätte der Gorishi",	-- Gorishi Hive Hatchery	--TODO: This was manually translated
 	[175320] = "GESUCHT: Gurgelbacke!",	-- WANTED: Murkdeep!
 	[175324] = "Frosthagelsplitter",	-- Frostmaul Shards
 	[175384] = "Ei eines Steilhangflügeldrachen",	-- Highperch Wyvern Egg

@@ -1110,7 +1110,7 @@ for key,value in pairs({
 	[174709] = "Оскверненный ветроцвет",	-- Corrupted Windblossom
 	[174712] = "Оскверненный песнецвет",	-- Corrupted Songflower
 	[174713] = "Оскверненный песнецвет",	-- Corrupted Songflower
-	--TODO: [174793] = "Gorishi Hive Hatchery",	-- Gorishi Hive Hatchery
+	[174793] = "Инкубатор Улья Гориши",	-- Gorishi Hive Hatchery	--TODO: This was manually translated
 	[175320] = "Разыскивается: Глубомрак!",	-- WANTED: Murkdeep!
 	[175324] = "Кристаллы великанов Ледяного Молота",	-- Frostmaul Shards
 	[175384] = "Яйцо виверны Скального гнездовья",	-- Highperch Wyvern Egg
@@ -1152,7 +1152,7 @@ for key,value in pairs({
 	[177289] = "Котел Плети",	-- Scourge Cauldron
 	[177491] = "Термитная бочка",	-- Termite Barrel
 	[177667] = "Разорванный свиток",	-- Torn Scroll
-	--TODO: [177684] = "Stone of Shy-Rotam",	-- Stone of Shy-Rotam
+	[177684] = "Камень Ши-Ротам",	-- Stone of Shy-Rotam	--TODO: This was manually translated
 	[177787] = "Записи Ракмора",	-- Rackmore's Log
 	[177904] = "Плакат: \"Разыскивается\": Бесселет",	-- Wanted Poster: Besseleth
 	[177964] = "Глубинный Камень",	-- Fathom Stone
@@ -1237,7 +1237,7 @@ for key,value in pairs({
 	[186267] = "Святилище Тыквы",	-- Pumpkin Shrine
 	--TODO: [186278] = "Burning Wreckage",	-- Burning Wreckage
 	[186301] = "Оружие Черного Копыта",	-- Blackhoof Armaments
-	--TODO: [186322] = "Hyal Family Monument",	-- Hyal Family Monument
+	[186322] = "Памятник семейства Хьяль",	-- Hyal Family Monument	--TODO: This was manually translated
 	[186329] = "Знамя клана Каменный Молот",	-- Stonemaul Clan Banner
 	[186423] = "Ведьмина погибель",	-- Witchbane
 	[186426] = "Плакат \"Разыскивается\"",	-- Wanted Poster
