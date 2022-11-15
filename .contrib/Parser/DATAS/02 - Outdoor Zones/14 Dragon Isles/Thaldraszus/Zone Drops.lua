@@ -5,6 +5,7 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 	m(THALDRASZUS, {
 		n(ZONE_DROPS, {
+			i(194562),	-- Occasional Sand
 			i(194262),	-- Pattern: Temporal Spellthread (RECIPE!)
 			i(198906),	-- Technique: Illusion Parchment: Arcane Burst (RECIPE!)
 			i(189361, {	-- Screechflight Scroll
