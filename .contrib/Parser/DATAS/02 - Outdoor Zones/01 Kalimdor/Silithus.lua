@@ -13,7 +13,7 @@ root("Zones", m(KALIMDOR, {
 			m(AHNQIRAJ_THE_FALLEN_KINGDOM, {
 				["description"] = "This is an outdoor zone, a non-instanced version of Temple of Ahn'Qiraj and Ruins of Ahn'Qiraj. There are no mobs or entrances to the interior of the Ahn'Qiraj temple.",
 				["icon"] = "Interface\\Icons\\achievement_zone_silithus_01",
-				["g"] = {
+				["groups"] = {
 					petbattle(filter(BATTLE_PETS, {
 						p(513, {	-- Qiraji Guardling
 							["crs"] = { 62526 },	-- Qiraji Guardling
@@ -90,23 +90,23 @@ root("Zones", m(KALIMDOR, {
 			n(QUESTS, {
 				q(9248, {	-- A Humble Offering
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
-					["g"] = {
+					["qg"] = 15282,	-- Aurel Goldleaf
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(22725)),	-- Band of Cenarius
 					},
 				}),
 				q(8287, {	-- A Terrible Purpose
-					["provider"] = { "n", 15194 },	-- Hermit Ortell
+					["qg"] = 15194,	-- Hermit Ortell
 					["coord"] = { 68.6, 63.0, SILITHUS },
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
-					["g"] = {
+					["groups"] = {
 						i(20645),	-- Nature's Whisper (arrives in mail)
 					},
 				}),
 				q(8361, {	-- Abyssal Contacts
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15306 },	-- Bor Wildmane
-					["g"] = {
+					["qg"] = 15306,	-- Bor Wildmane
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20603, {	-- Bag of Spoils
 							un(REMOVED_FROM_GAME, i(20694)),	-- Glowing Black Orb
 							un(REMOVED_FROM_GAME, i(20693)),	-- Weighted Cloak
@@ -116,70 +116,70 @@ root("Zones", m(KALIMDOR, {
 				}),
 				q(8316, {	-- Armaments of War (Warrior)
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15183 },	-- Geologist Larksbane
+					["qg"] = 15183,	-- Geologist Larksbane
 					["classes"] = { WARRIOR },
 					["sourceQuest"] = 8315,	-- The Calling
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20699)),	-- Cenarion Reservist's Legplates
 						un(REMOVED_FROM_GAME, i(20710)),	-- Crystal Encrusted Greaves
 					},
 				}),
 				q(8376, {	-- Armaments of War (Paladin)
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15183 },	-- Geologist Larksbane
+					["qg"] = 15183,	-- Geologist Larksbane
 					["classes"] = { PALADIN },
 					["sourceQuest"] = 8315,	-- The Calling
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20700)),	-- Cenarion Reservist's Legplates
 						un(REMOVED_FROM_GAME, i(20711)),	-- Crystal Lined Greaves
 					},
 				}),
 				q(8377, {	-- Armaments of War (Hunter)
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15183 },	-- Geologist Larksbane
+					["qg"] = 15183,	-- Geologist Larksbane
 					["classes"] = { HUNTER },
 					["sourceQuest"] = 8315,	-- The Calling
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20702)),	-- Cenarion Reservist's Legguards
 						un(REMOVED_FROM_GAME, i(20713)),	-- Desertstalkers' Gauntlets
 					},
 				}),
 				q(8378, {	-- Armaments of War (Rogue)
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15183 },	-- Geologist Larksbane
+					["qg"] = 15183,	-- Geologist Larksbane
 					["classes"] = { ROGUE },
 					["sourceQuest"] = 8315,	-- The Calling
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20703)),	-- Cenarion Reservist's Leggings
 						un(REMOVED_FROM_GAME, i(20715)),	-- Dunestalker's Boots
 					},
 				}),
 				q(8379, {	-- Armaments of War (Priest)
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15183 },	-- Geologist Larksbane
+					["qg"] = 15183,	-- Geologist Larksbane
 					["classes"] = { PRIEST },
 					["sourceQuest"] = 8315,	-- The Calling
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20707)),	-- Cenarion Reservist's Pants
 						un(REMOVED_FROM_GAME, i(20717)),	-- Desert Bloom Gloves
 					},
 				}),
 				q(8380, {	-- Armaments of War (Shaman)
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15183 },	-- Geologist Larksbane
+					["qg"] = 15183,	-- Geologist Larksbane
 					["classes"] = { SHAMAN },
 					["sourceQuest"] = 8315,	-- The Calling
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20701)),	-- Cenarion Reservist's Legguards
 						un(REMOVED_FROM_GAME, i(20712)),	-- Wastewalker's Gauntlets
 					},
 				}),
 				q(8381, {	-- Armaments of War (Mage, Warlock)
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15183 },	-- Geologist Larksbane
+					["qg"] = 15183,	-- Geologist Larksbane
 					["classes"] = { MAGE, WARLOCK },
 					["sourceQuest"] = 8315,	-- The Calling
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20705)),	-- Cenarion Reservist's Pants
 						un(REMOVED_FROM_GAME, i(20706)),	-- Cenarion Reservist's Pants
 						un(REMOVED_FROM_GAME, i(20716)),	-- Sandworm Skin Gloves
@@ -187,10 +187,10 @@ root("Zones", m(KALIMDOR, {
 				}),
 				q(8382, {	-- Armaments of War (Druid)
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15183 },	-- Geologist Larksbane
+					["qg"] = 15183,	-- Geologist Larksbane
 					["classes"] = { DRUID },
 					["sourceQuest"] = 8315,	-- The Calling
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20704)),	-- Cenarion Reservist's Leggings
 						un(REMOVED_FROM_GAME, i(20714)),	-- Sandstorm Boots
 					},
@@ -219,7 +219,7 @@ root("Zones", m(KALIMDOR, {
 						11729,	-- Hive'Zora Hive Sister
 						11726,	-- Hive'Zora Tunneler
 					},
-					["g"] = {
+					["groups"] = {
 						i(20723),	-- Brann's Trusty Pick
 					},
 				}),
@@ -230,15 +230,15 @@ root("Zones", m(KALIMDOR, {
 				q(8351, {	-- Bor Wishes to Speak
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
+					["qg"] = 15282,	-- Aurel Goldleaf
 				}),
 				q(8310, {	-- Breaking the Code
-					["provider"] = { "n", 15171 },	-- Frankal Stonebridge
+					["qg"] = 15171,	-- Frankal Stonebridge
 					["coord"] = { 46.0, 79.4, SILITHUS },
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 				}),
 				q(28865, {	-- Call of the Warmatron
-					["provider"] = { "n", 50587 },	-- Okril'on Mage
+					["qg"] = 50587,	-- Okril'on Mage
 					["coord"] = { 53.2, 33.4, SILITHUS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -246,23 +246,23 @@ root("Zones", m(KALIMDOR, {
 				q(8800, {	-- Cenarion Battlegear
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 15540 },	-- Windcaller Kaldon
+					["qg"] = 15540,	-- Windcaller Kaldon
 				}),
 				q(8573, {	-- Champion's Battlegear
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15176 },	-- Vargus
-					["g"] = {
+					["qg"] = 15176,	-- Vargus
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(21180)),	-- Earthstrike
 						un(REMOVED_FROM_GAME, i(21188)),	-- Fist of Cenarius
 						un(REMOVED_FROM_GAME, i(21190)),	-- Wrath of Cenarius
 					},
 				}),
 				q(8277, {	-- Deadly Desert Venom
-					["provider"] = { "n", 15189 },	-- Beetix Ficklespragg
+					["qg"] = 15189,	-- Beetix Ficklespragg
 					["coord"] = { 55.2, 36.3, SILITHUS },
 				}),
 				q(8304, {	-- Dearest Natalia
-					["provider"] = { "n", 15181 },	-- Commander Mar'alith
+					["qg"] = 15181,	-- Commander Mar'alith
 					["coord"] = { 53.2, 32.5, SILITHUS },
 					["sourceQuest"] = 8321,	-- Vyral the Vile
 				}),
@@ -281,14 +281,14 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 8331,	-- Aurel Goldleaf
 				}),
 				q(8319, {	-- Encrypted Twilight Texts
-					["provider"] = { "n", 15306 },		-- Bor Wildmane
+					["qg"] = 15306,	-- Bor Wildmane
 					["repeatable"] = true,
 					["coord"] = { 53.15, 35.12, SILITHUS },
 					["sourceQuest"] = 8318,	-- Secret Communication
 					["cost"] = { { "i", 20404, 10 } },	-- 10x Encrypted Twilight Text
 				}),
 				q(8309, {	-- Glyph Chasing
-					["provider"] = { "n", 15170 },	-- Rutgar Glyphshaper
+					["qg"] = 15170,	-- Rutgar Glyphshaper
 					["coord"] = { 46.4, 79.0, SILITHUS },
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 				}),
@@ -297,13 +297,13 @@ root("Zones", m(KALIMDOR, {
 				}),
 				q(1126, {	-- Hive in the Tower
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 13220 },	-- Layo Starstrike
+					["qg"] = 13220,	-- Layo Starstrike
 					["sourceQuest"] = 1125,	-- The Spirits of Southwind
 				}),
 				q(8306, {	-- Into The Maw of Madness
 					["coord"] = { 53.2, 32.5, SILITHUS },
 					["sourceQuest"] = 8304,	-- Dearest Natalia
-					["g"] = {
+					["groups"] = {
 						i(20724),	-- Corrupted Blackwood Staff
 					},
 				}),
@@ -323,31 +323,31 @@ root("Zones", m(KALIMDOR, {
 				}),
 				q(8341, {	-- Lords of the Council
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
-					["g"] = {
+					["qg"] = 15282,	-- Aurel Goldleaf
+					["groups"] = {
 						i(20451),	-- Twilight Cultist Ring of Lordship
 					},
 				}),
 				q(28867, {	-- Nethergarde Needs You!
-					["provider"] = { "n", 50588 },	-- Nethergarde Mage
+					["qg"] = 50588,	-- Nethergarde Mage
 					["coord"] = { 53.4, 33.4, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(8278, {	-- Noggle's Last Hope
-					["provider"] = { "n", 15189 },	-- Beetix Ficklespragg
+					["qg"] = 15189,	-- Beetix Ficklespragg
 					["coord"] = { 55.3, 36.3, SILITHUS },
 					["sourceQuest"] = 8277,	-- Deadly Desert Venom
 				}),
 				q(8282, {	-- Noggle's Lost Satchel
-					["provider"] = { "n", 15190 },	-- Noggle Ficklespragg
+					["qg"] = 15190,	-- Noggle Ficklespragg
 					["coord"] = { 55.2, 36.1, SILITHUS },
 					["sourceQuest"] = 8278,	-- Noggle's Last Hope
 				}),
 				q(8352, {	-- Scepter of the Council
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15306 },	-- Bor Wildmane
-					["g"] = {
+					["qg"] = 15306,	-- Bor Wildmane
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20602, {	-- Chest of Spoils
 							un(REMOVED_FROM_GAME, i(20721)),	-- Band of the Cultist
 							un(REMOVED_FROM_GAME, i(20722)),	-- Crystal Slugthrower
@@ -356,33 +356,33 @@ root("Zones", m(KALIMDOR, {
 					},
 				}),
 				q(8318, {	-- Secret Communication
-					["provider"] = { "n", 15306 },		-- Bor Wildmane
+					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 53.15, 35.12, SILITHUS },
 					["cost"] = { { "i", 20404, 10 } },	-- 10x Encrypted Twilight Text
 				}),
 				q(8857, {	-- Secrets of the Colossus - Ashi - Was only possible during the 10 hours of AQ opening
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15798 },	-- Colossus Researcher Nestor
-					["g"] = {
+					["qg"] = 15798,	-- Colossus Researcher Nestor
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(21528)),	-- Colossal Bag of Loot
 					},
 				}),
 				q(8858, {	-- Secrets of the Colossus - Regal - Was only possible during the 10 hours of AQ opening
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15799 },	-- Colossus Researcher Eazel
-					["g"] = {
+					["qg"] = 15799,	-- Colossus Researcher Eazel
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(21528)),	-- Colossal Bag of Loot
 					},
 				}),
 				q(8859, {	-- Secrets of the Colossus - Zora - Was only possible during the 10 hours of AQ opening
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15797 },	-- Colossus Researcher Sophia
-					["g"] = {
+					["qg"] = 15797,	-- Colossus Researcher Sophia
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(21528)),	-- Colossal Bag of Loot
 					},
 				}),
 				q(8280, {	-- Securing the Supply Lines
-					["provider"] = { "n", 15191 },	-- Windcaller Proudhorn
+					["qg"] = 15191,	-- Windcaller Proudhorn
 					["coord"] = { 54.9, 36.0, SILITHUS },
 					["sourceQuests"] = {
 						28528,	-- Hero's Call: Silithus!
@@ -410,8 +410,8 @@ root("Zones", m(KALIMDOR, {
 				}),
 				q(8348, {	-- Signet of the Dukes
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15306 },	-- Bor Wildmane
-					["g"] = {
+					["qg"] = 15306,	-- Bor Wildmane
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20601, {	-- Sack of Spoils
 							un(REMOVED_FROM_GAME, i(20695)),	-- Abyssal War Beads
 							un(REMOVED_FROM_GAME, i(20696)),	-- Crystal Spiked Maul
@@ -422,8 +422,8 @@ root("Zones", m(KALIMDOR, {
 				}),
 				q(8574, {	-- Stalwart's Battlegear
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15176 },	-- Vargus
-					["g"] = {
+					["qg"] = 15176,	-- Vargus
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(21184)),	-- Deeprock Bracers
 						un(REMOVED_FROM_GAME, i(21185)),	-- Earthcalm Orb
 						un(REMOVED_FROM_GAME, i(21189)),	-- Might of Cenarius
@@ -431,18 +431,18 @@ root("Zones", m(KALIMDOR, {
 					},
 				}),
 				q(8281, {	-- Stepping Up Security
-					["provider"] = { "n", 15191 },	-- Windcaller Proudhorn
+					["qg"] = 15191,	-- Windcaller Proudhorn
 					["coord"] = { 54.8, 36.0, SILITHUS },
 					["sourceQuest"] = 8280,	-- Securing the Suppy Lines
 				}),
 				q(8324, {	-- Still Believing
-					["provider"] = { "n", 15194 },	-- Hermit Ortell
+					["qg"] = 15194,	-- Hermit Ortell
 					["repeatable"] = true,
 					["coord"] = { 68.66, 63.03, SILITHUS },
 					["sourceQuest"] = 8323,	-- True Believers
 					["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in.",
 					["cost"] = { { "i", 20404, 10 } },	-- 10x Encrypted Twilight Text
-					["g"] = {
+					["groups"] = {
 						i(20469, {	-- Decoded True Believer Clippings
 							i(20547),	-- Pattern: Runed Stygian Boots
 							i(20548),	-- Pattern: Runed Stygian Belt
@@ -526,18 +526,25 @@ root("Zones", m(KALIMDOR, {
 				}),
 				q(8315, {	-- The Calling
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15183 },	-- Geologist Larksbane
+					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8314,	-- Unraveling the Mystery
 				}),
 				q(8285, {	-- The Deserter
-					["provider"] = { "n", 15183 },	-- Geologist Larksbane
+					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 53.6, 35.3, SILITHUS },
 					["sourceQuest"] = 8284,	-- The Twilight Mystery
 				}),
+				q(28859, {	-- The Dunes of Silithus
+					["qg"] = 38269,	-- Zen'Aliri
+					["sourceQuest"] = 24695,	-- Ever Watching From Above
+					["coord"] = { 55.7, 60.6, UNGORO_CRATER },
+					["timeline"] = { "added 4.0.3.13277" },
+					["isBreadcrumb"] = true,
+				}),
 				q(9023, {	-- The Perfect Poison
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 16091 },	-- Dirk Thunderwood
-					["g"] = {
+					["qg"] = 16091,	-- Dirk Thunderwood
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(22348)),	-- Doomulus Prime
 						un(REMOVED_FROM_GAME, i(22347)),	-- Fahrad's Reloading Repeater
 						un(REMOVED_FROM_GAME, i(22378)),	-- Ravenholdt Slicer
@@ -546,38 +553,44 @@ root("Zones", m(KALIMDOR, {
 						un(REMOVED_FROM_GAME, i(22377)),	-- The Thunderwood Poker
 					},
 				}),
+				q(28856, {	-- The Sands of Silithus
+					["qg"] = 11118,	-- Innkeeper Vizzie
+					["coord"] = { 59.8, 51.1, WINTERSPRING },
+					["timeline"] = { "added 4.0.3.13277" },
+					["isBreadcrumb"] = true,
+				}),
 				q(1125, {	-- The Spirits of Southwind
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 13220 },	-- Layo Starstrike
+					["qg"] = 13220,	-- Layo Starstrike
 					["sourceQuest"] = 1124,	-- Wasteland
 				}),
 				q(8279, {	-- The Twilight Lexicon
-					["provider"] = { "n", 15194 },	-- Hermit Ortell
+					["qg"] = 15194,	-- Hermit Ortell
 					["coord"] = { 68.6, 63.0, SILITHUS },
 					["sourceQuest"] = 8285,	-- The Deserter
 				}),
 				q(8284, {	-- The Twilight Mystery
-					["provider"] = { "n", 15183 },	-- Geologist Larksbane
+					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 53.6, 35.3, SILITHUS },
 					["sourceQuest"] = 8321,	-- Vyral the Vile
 				}),
 				q(8323, {	-- True Believers
-					["provider"] = { "n", 15194 },	-- Hermit Ortell
+					["qg"] = 15194,	-- Hermit Ortell
 					["coord"] = { 68.7, 63.0, SILITHUS },
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
 					["cost"] = { { "i", 20404, 10 } },	-- 10x Encrypted Twilight Text
 				}),
 				q(8320, {	-- Twilight Geolords
-					["provider"] = { "n", 15270 },	-- Huum Wildmane
+					["qg"] = 15270,	-- Huum Wildmane
 					["coord"] = { 53.2, 35.1, SILITHUS },
 				}),
 				q(6844, {	-- Umber, Archivist
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 13220 },	-- Layo Starstrike
+					["qg"] = 13220,	-- Layo Starstrike
 					["sourceQuest"] = 1126,	-- Hive in the Tower
 				}),
 				q(8314, {	-- Unraveling the Mystery
-					["provider"] = { "n", 15170 },	-- Rutgar Glyphshaper
+					["qg"] = 15170,	-- Rutgar Glyphshaper
 					["coord"] = { 46.4, 79.0, SILITHUS },
 					["sourceQuests"] = {
 						8310,	-- Breaking the Code
@@ -586,8 +599,8 @@ root("Zones", m(KALIMDOR, {
 				}),
 				q(8572, {	-- Veteran's Battlegear
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15176 },	-- Vargus
-					["g"] = {
+					["qg"] = 15176,	-- Vargus
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(21182)),	-- Band of Earthen Might
 						un(REMOVED_FROM_GAME, i(21183)),	-- Earthpower Vest
 						un(REMOVED_FROM_GAME, i(21181)),	-- Grace of Earth
@@ -595,18 +608,18 @@ root("Zones", m(KALIMDOR, {
 				}),
 				q(8548, {	-- Volunteer's Battlegear
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 15176 },	-- Vargus
-					["g"] = {
+					["qg"] = 15176,	-- Vargus
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(21179)),	-- Band of Earthen Wrath
 						un(REMOVED_FROM_GAME, i(21187)),	-- Earthweave Cloak
 						un(REMOVED_FROM_GAME, i(21178)),	-- Gloves of Earthen Power
 					},
 				}),
 				q(8321, {	-- Vyral the Vile
-					["provider"] = { "n", 15270 },	-- Huum Wildmane
+					["qg"] = 15270,	-- Huum Wildmane
 					["coord"] = { 53.2, 35.1, SILITHUS },
 					["sourceQuest"] = 8320,	-- Twilight Geolords
-					["g"] = {
+					["groups"] = {
 						i(20650),	-- Desert Wind Gauntlets
 						i(20649),	-- Sunprism Pendant
 					},
@@ -614,7 +627,7 @@ root("Zones", m(KALIMDOR, {
 				q(8283, {	-- Wanted - Deathclasp, Terror of the Sands
 					["coord"] = { 55.0, 35.9, SILITHUS },
 					["provider"] = { "o", 180448 },	-- Wanted Poster: Deathclasp
-					["g"] = {
+					["groups"] = {
 						i(20646),	-- Sandstrider's Mark
 						i(20647),	-- Black Crystal Dagger
 					},
@@ -627,7 +640,7 @@ root("Zones", m(KALIMDOR, {
 				n(15211, {	-- Azure Templar
 					["description"] = "The Azure Templar is a level 60 named water elemental summoned in Silithus from a Lesser Wind Stone. The summoning ritual requires a Twilight Trappings set. To guarantee that the specific Abyssal Templar is summoned, an Object of Beckoning can be used.",
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20652)),	-- Abyssal Cloth Slippers
 						un(REMOVED_FROM_GAME, i(20653)),	-- Abyssal Plate Gauntlets
 						un(REMOVED_FROM_GAME, i(20654)),	-- Amethyst War Staff
@@ -636,7 +649,7 @@ root("Zones", m(KALIMDOR, {
 				n(15205, {	-- Baron Kazum
 					["description"] = "Summoning Baron Kazum requires a full Twilight Trappings set, a Twilight Cultist Medallion of Station, and a Twilight Cultist Ring of Lordship.",
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20686)),	-- Abyssal Cloth Amice
 						un(REMOVED_FROM_GAME, i(20687)),	-- Abyssal Plate Vambraces
 						un(REMOVED_FROM_GAME, i(20688)),	-- Earthen Guard
@@ -648,7 +661,7 @@ root("Zones", m(KALIMDOR, {
 				n(15209, {	-- Crimson Templar
 					["description"] = "The Crimson Templar is a level 60 fire elemental summoned in Silithus from a Lesser Wind Stone. The summoning ritual requires a Twilight Trappings set. To guarantee that the specific Abyssal Templar is summoned, an Object of Beckoning can be used.",
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20655)),	-- Abyssal Cloth Handwraps
 						un(REMOVED_FROM_GAME, i(20656)),	-- Abyssal Mail Sabatons
 						un(REMOVED_FROM_GAME, i(20657)),	-- Crystal Tipped Stiletto
@@ -657,7 +670,7 @@ root("Zones", m(KALIMDOR, {
 				n(15307, {	-- Earthen Templar
 					["description"] = "The Earthen Templar is a level 60 earth elemental summoned in Silithus from a Lesser Wind Stone. The summoning ritual requires a Twilight Trappings set. To guarantee that the specific Abyssal Templar is summoned, an Object of Beckoning can be used. ",
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20661)),	-- Abyssal Leather Gloves
 						un(REMOVED_FROM_GAME, i(20662)),	-- Abyssal Plate Greaves
 						un(REMOVED_FROM_GAME, i(20663)),	-- Deep Strike Bow
@@ -685,7 +698,7 @@ root("Zones", m(KALIMDOR, {
 				n(15204, {	-- High Marshal Whirlaxis
 					["description"] = "This was a summonable elite.",
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20690)),	-- Abyssal Cloth Wristbands
 						un(REMOVED_FROM_GAME, i(20689)),	-- Abyssal Leather Shoulders
 						un(REMOVED_FROM_GAME, i(20691)),	-- Windshear Cape
@@ -694,7 +707,7 @@ root("Zones", m(KALIMDOR, {
 				n(15212, {	-- Hoary Templar
 					["description"] = "The Hoary Templar is a level 60 air elemental summoned in Silithus from a Lesser Wind Stone. The summoning ritual requires a Twilight Trappings set. To guarantee that the specific Abyssal Templar is summoned, an Object of Beckoning can be used.",
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20658)),	-- Abyssal Leather Boots
 						un(REMOVED_FROM_GAME, i(20659)),	-- Abyssal Mail Handguards
 						un(REMOVED_FROM_GAME, i(20660)),	-- Stonecutting Glaive
@@ -737,7 +750,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 				n(15305, {	-- Lord Skwol <Abyssal High Council>
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20683)),	-- Abyssal Plate Epaulets
 						un(REMOVED_FROM_GAME, i(20684)),	-- Abyssal Mail Armguards
 						un(REMOVED_FROM_GAME, i(20685)),	-- Wavefront Necklace
@@ -751,7 +764,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 				n(15203, {	-- Prince Skaldrenox <Abyssal High Council>
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20680)),	-- Abyssal Mail Pauldrons
 						un(REMOVED_FROM_GAME, i(20681)),	-- Abyssal Leather Bracers
 						un(REMOVED_FROM_GAME, i(20682)),	-- Elemental Focus Band
@@ -776,7 +789,7 @@ root("Zones", m(KALIMDOR, {
 				n(15206, {	-- The Duke of Cynders
 					["description"] = "The Duke of Cynders does not appear normally in the standard plane of existence but must be summoned. There are two ways of summoning the Duke:\n 1. Acquire a set of Twilight Trappings and a  [Twilight Cultist Medallion of Station]. This will make you appear to be a middle-ranked leader of the Twilight's Hammer. Travel to a Wind stone and use it to summon a Duke. You have a 1 in 4 chance of summoning the Duke of Cynders.\n 2. Turn in Encrypted Twilight Texts to Hermit Ortell. He will then mail you a random item. If you get a Scroll: Create Signet of Beckoning (Fire), you can combine that with a  [Dark Rune] and 5  [Firebloom] to create a  [Signet of Beckoning: Fire]. This signet can be used to specifically summon the Duke of Cynders.",
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20664)),	-- Abyssal Cloth Sash
 						un(REMOVED_FROM_GAME, i(20665)),	-- Abyssal Leather Leggings
 						un(REMOVED_FROM_GAME, i(20666)),	-- Hardened Steel Warhammer
@@ -785,7 +798,7 @@ root("Zones", m(KALIMDOR, {
 				n(15207, {	-- The Duke of Fathoms
 					["description"] = "The Duke of Fathoms does not appear normally in the standard plane of existence but must be summoned. There are two ways of summoning the Duke: \n 1. Acquire a set of Twilight Trappings and a Twilight Cultist Medallion of Station. This will make you appear to be a middle-ranked leader of the Twilight's Hammer. Travel to a Wind stone and use it to summon a Duke. You have a 1 in 4 chance of summoning the Duke of Fathoms. \n 2. Turn in Encrypted Twilight Texts to Hermit Ortell. He will then mail you a random item. If you get a Scroll: Create Signet of Beckoning (Water), you can combine that with a Dark Rune and 5 Enchanted Water to create a Signet of Beckoning: Water. This signet can be used to specifically summon the Duke of Fathoms.",
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20667)),	-- Abyssal Leather Belt
 						un(REMOVED_FROM_GAME, i(20668)),	-- Abyssal Mail Legguards
 						un(REMOVED_FROM_GAME, i(20669)),	-- Darkstone Claymore
@@ -794,7 +807,7 @@ root("Zones", m(KALIMDOR, {
 				n(15208, {	-- The Duke of Shards
 					["description"] = "The Duke of Shards does not appear normally in the standard plane of existence but must be summoned. There are two ways of summoning the Duke: \n1. Acquire a set of Twilight Trappings and a Twilight Cultist Medallion of Station. This will make you appear to be a middle-ranked leader of the Twilight's Hammer. Travel to a Wind stone and use it to summon a Duke. You have a 1 in 4 chance of summoning the Duke of Shards. \n2. Turn in Encrypted Twilight Texts to Hermit Ortell. He will then mail you a random item. If you get a Scroll: Create Signet of Beckoning (Earth), you can combine that with a Dark Rune and 5 Dense Stone to create a Signet of Beckoning: Stone. This signet can be used to specifically summon the Duke of Shards.",
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20670)),	-- Abyssal Mail Clutch
 						un(REMOVED_FROM_GAME, i(20671)),	-- Abyssal Plate Legguards
 						un(REMOVED_FROM_GAME, i(20672)),	-- Sparkling Crystal Wand
@@ -803,7 +816,7 @@ root("Zones", m(KALIMDOR, {
 				n(15220, {	-- The Duke of Zephyrs
 					["description"] = "The Duke of Zephyrs does not appear normally in the standard plane of existence but must be summoned. There are two ways of summoning the Duke: \n1. Acquire a set of Twilight Trappings and a Twilight Cultist Medallion of Station. This will make you appear to be a middle-ranked leader of the Twilight's Hammer. Travel to a Wind stone and use it to summon a Duke. You have a 1 in 4 chance of summoning the Duke of Zephyrs. \n2. Turn in Encrypted Twilight Texts to Hermit Ortell. He will then mail you a random item. If you get a Scroll: Create Signet of Beckoning (Thunder), you can combine that with a Dark Rune and 5 Elemental Air to create a Signet of Beckoning: Thunder. This signet can be used to specifically summon the Duke of Zephyrs.",
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(20674)),	-- Abyssal Cloth Pants
 						un(REMOVED_FROM_GAME, i(20673)),	-- Abyssal Plate Girdle
 						un(REMOVED_FROM_GAME, i(20675)),	-- Soulrender
@@ -812,7 +825,7 @@ root("Zones", m(KALIMDOR, {
 				n(14454, {	-- The Windreaver
 					["description"] = "This rare was only available during the Elemental Invasions.",
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						i(21548, {	-- Pattern: Stormshroud Gloves
 							["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },
 						}),
@@ -840,20 +853,20 @@ root("Zones", m(KALIMDOR, {
 			}),
 			n(-93, {	-- Silithus (The Wound)
 				["lvl"] = 110,
-				["g"] = {
+				["groups"] = {
 					n(QUESTS, {
 						q(54938, {	-- A Brother's Help
 							-- This was removed during BfA in 8.2 but is now appearing again for characters leveling up during Shadowlands
-							["sourceQuests"] = { 53406 },	-- The Chamber of Heart
+							["sourceQuest"] = 53406,	-- The Chamber of Heart
 							["description"] = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",
 							["coord"] = { 42.1, 44.3, SILITHUS },
-							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
+							["qg"] = 130216,	-- Magni Bronzebeard
 						}),
 						q(50373, {	-- A Recent Arrival
 							["sourceQuest"] = 50228,	-- The Twilight Survivor
 							["races"] = ALLIANCE_ONLY,
 							["coord"] = { 69.4, 17.6, SILITHUS },
-							["provider"] = { "n", 131963 },	-- Nolan Speed
+							["qg"] = 131963,	-- Nolan Speed
 						}),
 						q(50229, {	-- A Wee Bit O' Cloth
 							["sourceQuests"] = {
@@ -869,72 +882,72 @@ root("Zones", m(KALIMDOR, {
 							},
 							["coord"] = { 69.4, 17.6, SILITHUS },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 131963 },	-- Nolan Speed
+							["qg"] = 131963,	-- Nolan Speed
 						}),
 						q(50358, {	-- Desert Research
 							["sourceQuest"] = 50053,	-- Lazy Prospectors
 							["coord"] = { 65.9, 54.7, SILITHUS },
 							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 132147 },	-- Grol Warblade
+							["qg"] = 132147,	-- Grol Warblade
 						}),
 						q(50047, {	-- Free Samples
 							["sourceQuest"] = 49981,	-- Witness to the Wound
 							["races"] = ALLIANCE_ONLY,
 							["coord"] = { 69.4, 17.6, SILITHUS },
-							["provider"] = { "n", 131963 },	-- Nolan Speed
+							["qg"] = 131963,	-- Nolan Speed
 						}),
 						q(50046, {	-- It's a Sabotage
 							["sourceQuest"] = 49981,	-- Witness to the Wound
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 130030 },	-- Kelsey Steelspark
+							["qg"] = 130030,	-- Kelsey Steelspark
 						}),
 						q(50360, {	-- Khadgar's Request
 							["sourceQuest"] = 50232,	-- The Twilight Survivor
 							["coord"] = { 65.9, 54.7, SILITHUS },
 							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 132147 },	-- Grol Warblade
+							["qg"] = 132147,	-- Grol Warblade
 						}),
 						q(50227, {	-- Larvae By The Dozen
 							["sourceQuest"] = 50372,	-- Desert Research
 							["coord"] = { 69.4, 19.0, SILITHUS },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 132606 },	-- Tammy Tinkspinner
+							["qg"] = 132606,	-- Tammy Tinkspinner
 						}),
 						q(50231, {	-- Larvae By The Dozen
 							["sourceQuest"] = 50358,	-- Desert Research
 							["coord"] = { 66.9, 56.5, SILITHUS },
 							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 132040 },	-- Pixni Rustbomb
+							["qg"] = 132040,	-- Pixni Rustbomb
 						}),
 						q(50053, {	-- Lazy Prospectors
 							["sourceQuest"] = 49982,	-- Witness to the Wound
 							["coord"] = { 65.9, 54.7, SILITHUS },
 							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 132147 },	-- Grol Warblade
+							["qg"] = 132147,	-- Grol Warblade
 						}),
 						q(50052, {	-- No Spies Allowed
 							["sourceQuest"] = 49982,	-- Witness to the Wound
 							["coord"] = { 66.9, 56.5, SILITHUS },
 							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 132045 },	-- Gizmax Greasebolt
+							["qg"] = 132045,	-- Gizmax Greasebolt
 						}),
 						q(50374, {	-- The Blood of Azeroth
 							["sourceQuest"] = 50049,	-- The Speaker's Perspective
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
+							["qg"] = 130216,	-- Magni Bronzebeard
 						}),
 						q(50364, {	-- The Blood of Azeroth
 							["sourceQuest"] = 50055,	-- The Speaker's Perspective
 							["coord"] = { 42.5, 44.2, SILITHUS },
 							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 130216 },	-- Magni Bronzebear
+							["qg"] = 130216,	-- Magni Bronzebear
 						}),
 						q(53406, {	-- The Chamber of Heart (third HoA upgrade)
-							["sourceQuests"] = { 53405 },	-- Unlocking the Heart's Potential
+							["sourceQuest"] = 53405,	-- Unlocking the Heart's Potential
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Revered with Champions of Azeroth.",
 							["coord"] = { 42.1, 44.3, SILITHUS },
 							["lvl"] = 120,
-							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
+							["qg"] = 130216,	-- Magni Bronzebeard
 							["u"] = REMOVED_FROM_GAME,	-- Retired with the implementation of 8.2
 						}),
 						q(51211, {	-- The Heart of Azeroth
@@ -942,9 +955,9 @@ root("Zones", m(KALIMDOR, {
 								52946,	-- A Dying World
 								53028,	-- A Dying World
 							},
-							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
+							["qg"] = 130216,	-- Magni Bronzebeard
 							["coord"] = { 42.2, 44.2, SILITHUS },
-							["g"] = {
+							["groups"] = {
 								i(158075),	-- Heart of Azeroth
 							},
 						}),
@@ -952,7 +965,7 @@ root("Zones", m(KALIMDOR, {
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Friendly with Champions of Azeroth.",
 							["coord"] = { 42.1, 44.3, SILITHUS },
 							["lvl"] = 120,
-							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
+							["qg"] = 130216,	-- Magni Bronzebeard
 							["u"] = REMOVED_FROM_GAME,	-- Retired with the implementation of 8.2
 						}),
 						q(50057, {	-- The Power in Our Hands
@@ -960,9 +973,9 @@ root("Zones", m(KALIMDOR, {
 								50300,	-- The Speaker's Call
 								50056,	-- The Speaker's Call
 							},
-							["provider"] = { "n", 133388 },	-- Magni Bronzebeard
+							["qg"] = 133388,	-- Magni Bronzebeard
 							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
+							["groups"] = {
 								ach(12071, {	-- Crucible's Promise
 									["u"] = REMOVED_FROM_GAME,
 								}),
@@ -982,37 +995,37 @@ root("Zones", m(KALIMDOR, {
 							["sourceQuest"] = 50372,	-- Desert Research
 							["coord"] = { 69.4, 19.0, SILITHUS },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 132606 },	-- Tammy Tinkspinner
+							["qg"] = 132606,	-- Tammy Tinkspinner
 						}),
 						q(50230, {	-- The Source of Power
 							["sourceQuest"] = 50358,	-- Desert Research
 							["coord"] = { 66.9, 56.5, SILITHUS },
 							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 132040 },	-- Pixni Rustbomb
+							["qg"] = 132040,	-- Pixni Rustbomb
 						}),
 						q(50056, {	-- The Speaker's Call
 							["sourceQuest"] = 50374,	-- The Blood of Azeroth
 							["coord"] = { 69.4, 17.6, SILITHUS },
-							["provider"] = { "n", 131963 },	-- Nolan Speed
+							["qg"] = 131963,	-- Nolan Speed
 							["races"] = ALLIANCE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(50300, {	-- The Speaker's Call
 							["sourceQuest"] = 50364,	-- The Blood of Azeroth
 							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 132147 },	-- Grol Warblade
+							["qg"] = 132147,	-- Grol Warblade
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(50049, {	-- The Speaker's Perspective
 							["sourceQuest"] = 50373,	-- A Recent Arrival
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 130032 },	-- Archmage Khadgar
+							["qg"] = 130032,	-- Archmage Khadgar
 						}),
 						q(50055, {	-- The Speaker's Perspective
 							["sourceQuest"] = 50360,	-- Khadgar's Request
 							["coord"] = { 66.4, 56.8, SILITHUS },
 							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 130033 },	-- Archmage Khadgar
+							["qg"] = 130033,	-- Archmage Khadgar
 						}),
 						q(50228, {	-- The Twilight Survivor
 							["sourceQuests"] = {
@@ -1021,20 +1034,20 @@ root("Zones", m(KALIMDOR, {
 							},
 							["races"] = ALLIANCE_ONLY,
 							["coord"] = { 69.4, 17.6, SILITHUS },
-							["provider"] = { "n", 131963 },	-- Nolan Speed
+							["qg"] = 131963,	-- Nolan Speed
 						}),
 						q(50232, {	-- The Twilight Survivor
 							["sourceQuest"] = 50053,	-- Lazy Prospectors
 							["coord"] = { 65.9, 54.7, SILITHUS },
 							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 132147 },	-- Grol Warblade
+							["qg"] = 132147,	-- Grol Warblade
 						}),
 						q(53405, {	-- Unlocking the Heart's Potential (second HoA upgrade)
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Honored with Champions of Azeroth.",
-							["sourceQuests"] = { 50973 },	-- The Heart's Power
+							["sourceQuest"] = 50973,	-- The Heart's Power
 							["coord"] = { 42.1, 44.3, SILITHUS },
 							["lvl"] = 120,
-							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
+							["qg"] = 130216,	-- Magni Bronzebeard
 							["u"] = REMOVED_FROM_GAME,	-- Retired with the implementation of 8.2
 						}),
 					}),
@@ -1042,7 +1055,7 @@ root("Zones", m(KALIMDOR, {
 						n(132591, {	-- Ogmot the Mad
 							["questID"] = 50334,
 							["coord"] = { 28.9, 74.6, SILITHUS },
-							["g"] = {
+							["groups"] = {
 								i(156852),	-- Ogmot's Dream Journal
 							},
 						}),
@@ -1050,7 +1063,7 @@ root("Zones", m(KALIMDOR, {
 							["questID"] = 50255,
 							["isDaily"] = true,
 							["coord"] = { 59.3, 11.4, SILITHUS },
-							["g"] = {
+							["groups"] = {
 								i(156851),	-- Silithid Mini-Tank
 							},
 						}),
@@ -1058,7 +1071,7 @@ root("Zones", m(KALIMDOR, {
 							["questID"] = 50223,
 							["isDaily"] = true,
 							["coord"] = { 54.5, 79.8, SILITHUS },
-							["g"] = {
+							["groups"] = {
 								i(156851),	-- Silithid Mini-Tank
 							},
 						}),
@@ -1066,7 +1079,7 @@ root("Zones", m(KALIMDOR, {
 							["questID"] = 50224,
 							["isDaily"] = true,
 							["coord"] = { 29.5, 35.0, SILITHUS },
-							["g"] = {
+							["groups"] = {
 								i(156851),	-- Silithid Mini-Tank
 							},
 						}),
@@ -1076,7 +1089,7 @@ root("Zones", m(KALIMDOR, {
 			n(VENDORS, {
 				n(15293, {	-- Aendel Windspear
 					["coord"] = { 64.6, 45.8, SILITHUS },
-					["g"] = {
+					["groups"] = {
 						i(22769),	-- Pattern: Bramblewood Belt
 						i(22770),	-- Pattern: Bramblewood Boots
 						i(22771),	-- Pattern: Bramblewood Helm
@@ -1117,7 +1130,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 				n(15419, {	-- Kania <Enchanting Supplies>
 					["coord"] = { 55.6, 37.2, SILITHUS },
-					["g"] = {
+					["groups"] = {
 						applyclassicphase(PHASE_FIVE, i(20732, {	-- Formula: Enchant Cloak - Greater Fire Resistance
 							["timeline"] = { "removed 5.0.4" },
 						})),
@@ -1135,7 +1148,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 				n(15179, {	-- Mishta <Trade Supplies>
 					["coord"] = { 53.8, 34.4, SILITHUS },
-					["g"] = {
+					["groups"] = {
 						i(21952, {	-- Design: Emerald Crown of Destruction
 							["isLimited"] = true,
 						}),
@@ -1149,7 +1162,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 				n(15176, {	-- Vargus <Blacksmith>
 					["coord"] = { 55.0, 36.5, SILITHUS },
-					["g"] = {
+					["groups"] = {
 						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22766)),	-- Plans: Ironvine Breastplate (RECIPE!)
 						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22767)),	-- Plans: Ironvine Gloves (RECIPE!)
 						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22768)),	-- Plans: Ironvine Belt (RECIPE!)
@@ -1159,7 +1172,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 				n(12956, {	-- Zannok Hidepiercer <Leatherworking Supplies>
 					["coord"] = { 81.2, 18.6, SILITHUS },
-					["g"] = {
+					["groups"] = {
 						i(15724, {	-- Pattern: Heavy Scorpid Bracers
 							["isLimited"] = true,
 						}),

@@ -30,12 +30,12 @@ root("Zones", m(KALIMDOR, {
 					n(QUESTS, {
 						q(752,   {	-- A Humble Task
 							["u"] = REMOVED_FROM_GAME,
-							["provider"] = { "n", 2981 },	-- Chief Hawkwind
+							["qg"] = 2981,	-- Chief Hawkwind
 							["races"] = HORDE_ONLY,
 						}),
 						q(753,   {	-- A Humble Task
 							["u"] = REMOVED_FROM_GAME,
-							["provider"] = { "n", 2991 },	-- Greatmother Hawkwind
+							["qg"] = 2991,	-- Greatmother Hawkwind
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 752,	-- A Humble Task
 						}),
@@ -46,17 +46,17 @@ root("Zones", m(KALIMDOR, {
 						q(3376, {	-- Break Sharptusk!
 							["u"] = REMOVED_FROM_GAME,
 							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 3209 },	-- Brave Windfeather
+							["qg"] = 3209,	-- Brave Windfeather
 						}),
 						q(31165, {	-- Calligraphed Note
-							["provider"] = { "n", 44927 },	-- Rohaku Stonehoof
+							["qg"] = 44927,	-- Rohaku Stonehoof
 							["coord"] = { 34.0, 54.0, 462 },
 							["races"] = { TAUREN },
 							["classes"] = { MONK },
 							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 						}),
 						q(14461, {	-- Feed of Evil
-							["provider"] = { "n", 36694 },	-- Adana Thunderhorn
+							["qg"] = 36694,	-- Adana Thunderhorn
 							["coord"] = { 31.0, 50.6, 462 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
@@ -65,70 +65,79 @@ root("Zones", m(KALIMDOR, {
 							},
 						}),
 						q(14458, {	-- Go to Adana
-							["provider"] = { "n", 2980 },	-- Grull Hawkwind
+							["qg"] = 2980,	-- Grull Hawkwind
 							["coord"] = { 39.4, 37.0, 462 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 24852,	-- Our Tribe, Imprisoned
 						}),
 						q(24861, {	-- Last Rites, First Rites
-							["provider"] = { "n", 2981 },	-- Chief Hawkwind
+							["qg"] = 2981,	-- Chief Hawkwind
 							["coord"] = { 27.6, 28.4, 462 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 14460,	-- Rite of Honor
 						}),
 						q(24852, {	-- Our Tribe, Imprisoned
-							["provider"] = { "n", 2980 },	-- Grull Hawkwind
+							["qg"] = 2980,	-- Grull Hawkwind
 							["coord"] = { 39.4, 37.0, 462 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 14452,	-- Rite of Strength
 						}),
 						q(14456, {	-- Rite of Courage
-							["provider"] = { "n", 36694 },	-- Adana Thunderhorn
+							["qg"] = 36694,	-- Adana Thunderhorn
 							["coord"] = { 31.0, 50.6, 462 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 14458,	-- Go To Adana
 						}),
 						q(14460, {	-- Rite of Honor
-							["provider"] = { "n", 36694 },	-- Adana Thunderhorn
+							["qg"] = 36694,	-- Adana Thunderhorn
 							["coord"] = { 31.0, 50.6, 462 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
 								14461,	-- Feed of Evil
 								14459,	-- The Battleboars
 							},
-							["g"] = {
+							["groups"] = {
 								i(57792),	-- Bag of Thorns
 							},
 						}),
 						q(757,   {	-- Rite of Strength
 							["u"] = REMOVED_FROM_GAME,
-							["provider"] = { "n", 2982 },	-- Seer Graytongue
+							["qg"] = 2982,	-- Seer Graytongue
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 755,	-- Rites of the Earthmother
 						}),
 						q(14452, {	-- Rite of Strength
-							["provider"] = { "n", 2980 },	-- Grull Hawkwind
+							["qg"] = 2980,	-- Grull Hawkwind
 							["coord"] = { 39.4, 37.0, 462 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 14449,	-- The First Step
 						}),
 						q(24215, {	-- Rite of the Winds
-							["provider"] = { "n", 36803 },	-- Rite of the Winds
+							["qg"] = 36803,	-- Rite of the Winds
 							["coord"] = { 15.4, 30.4, 462 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 23733,	-- Rites of the Earthmother
 						}),
 						q(755,   {	-- Rites of the Earthmother
 							["u"] = REMOVED_FROM_GAME,
-							["provider"] = { "n", 2981 },	-- Chief Hawkwind
+							["qg"] = 2981,	-- Chief Hawkwind
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 753,	-- A Humble Task
 						}),
 						q(763,   {	-- Rites of the Earthmother
 							["u"] = REMOVED_FROM_GAME,
-							["provider"] = { "n", 2981 },	-- Chief Hawkwind
+							["qg"] = 2981,	-- Chief Hawkwind
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 757,	-- Rite of Strength
+						}),
+						q(776, {	-- Rites of the Earthmother
+							["qg"] = 3057,	-- Cairne Bloodhoof
+							["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
+							["races"] = HORDE_ONLY,
+							["u"] = REMOVED_FROM_GAME,
+							["groups"] = {
+								un(REMOVED_FROM_GAME, i(4909)),	-- Kodo Hunter's Leggings
+							},
 						}),
 						q(14437, {	-- Rites of the Earthmother
 							["u"] = REMOVED_FROM_GAME,
@@ -139,19 +148,19 @@ root("Zones", m(KALIMDOR, {
 							["races"] = HORDE_ONLY,
 						}),
 						q(23733, {	-- Rites of the Earthmother
-							["provider"] = { "n", 2981 },	-- Chief Hawkwind
+							["qg"] = 2981,	-- Chief Hawkwind
 							["coord"] = { 27.6, 28.4, 462 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 24861,	-- Last Rites, First Rites
 						}),
 						q(14455, {	-- Stop the Thorncallers
-							["provider"] = { "n", 36694 },	-- Adana Thunderhorn
+							["qg"] = 36694,	-- Adana Thunderhorn
 							["coord"] = { 31.0, 50.6, 462 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 14458,	-- Go To Adana
 						}),
 						q(14459, {	-- The Battleboars
-							["provider"] = { "n", 36694 },	-- Adana Thunderhorn
+							["qg"] = 36694,	-- Adana Thunderhorn
 							["coord"] = { 31.0, 50.6, 462 },
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
@@ -160,12 +169,12 @@ root("Zones", m(KALIMDOR, {
 							},
 						}),
 						q(14449, {	-- The First Step
-							["provider"] = { "n", 2981 },	-- Chief Hawkwind
+							["qg"] = 2981,	-- Chief Hawkwind
 							["coord"] = { 27.7, 28.5, 462 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(31166, {	-- Tiger Palm
-							["provider"] = { "n", 63327 },	-- Shoyu
+							["qg"] = 63327,	-- Shoyu
 							["coord"] = { 27.8, 28.6, 462 },
 							["races"] = { TAUREN },
 							["classes"] = { MONK },
@@ -197,10 +206,10 @@ root("Zones", m(KALIMDOR, {
 			}),
 			n(QUESTS, {
 				q(833,   {	-- A Sacred Burial
-					["provider"] = { "n", 3233 },	-- Lorekeeper Raintotem
+					["qg"] = 3233,	-- Lorekeeper Raintotem
 					["coord"] = { 49.4, 17.2, MULGORE },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(57237),	-- Cairne's First Breastplate
 						i(57228),	-- Cord of Tragic Memory
 						i(57212),	-- Slippers of Mourning
@@ -210,17 +219,17 @@ root("Zones", m(KALIMDOR, {
 				q(1656, {	-- A Task Unfinished
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 6775 },	-- Antur Fallow
+					["qg"] = 6775,	-- Antur Fallow
 				}),
 				q(743,   {	-- Dangers of the Windfury
-					["provider"] = { "n", 2985 },	-- Ruul Eagletalon
+					["qg"] = 2985,	-- Ruul Eagletalon
 					["coord"] = { 47.5, 61.3, MULGORE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(746,   {	-- Dwarven Digging
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 2993 },	-- Baine Bloodhoof
+					["qg"] = 2993,	-- Baine Bloodhoof
 				}),
 				q(14436, {	-- Dwarven Digging
 					["u"] = REMOVED_FROM_GAME,
@@ -229,20 +238,20 @@ root("Zones", m(KALIMDOR, {
 				q(775,   {	-- Journey into Thunder Bluff
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 2994 },	-- Ancestral Spirit
+					["qg"] = 2994,	-- Ancestral Spirit
 				}),
 				q(14439, {	-- Journey into Thunder Bluff
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(24550, {	-- Journey into Thunder Bluff
-					["provider"] = { "n", 37024 },	-- Una Wildmane
+					["qg"] = 37024,	-- Una Wildmane
 					["coord"] = { 49.4, 17.4, MULGORE },
 					["races"] = { TAUREN },
 					["sourceQuest"] = 24524,	-- Wildmane Cleansing
 				}),
 				q(11129, {	-- Kyle's Gond Missing!
-					["provider"] = { "n", 23618 },	-- Ahab Wheathoof
+					["qg"] = 23618,	-- Ahab Wheathoof
 					["coord"] = { 48.3, 53.1, MULGORE },
 					["races"] = HORDE_ONLY,
 				}),
@@ -277,15 +286,15 @@ root("Zones", m(KALIMDOR, {
 				q(766,   {	-- Mazzranache
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3055 },	-- Maur Raincaller
+					["qg"] = 3055,	-- Maur Raincaller
 				}),
 				q(26188, {	-- Mazzranache
-					["provider"] = { "n", 3055 },	-- Maur Raincaller
+					["qg"] = 3055,	-- Maur Raincaller
 					["coord"] = { 47.1, 56.6, MULGORE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24459, {	-- Morin Cloudstalker
-					["provider"] = { "n", 36644 },	-- Ahmo Thunderhorn
+					["qg"] = 36644,	-- Ahmo Thunderhorn
 					["coord"] = { 47.6, 59.5, MULGORE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -321,20 +330,20 @@ root("Zones", m(KALIMDOR, {
 					["_drop"] = { "g" },
 				}),
 				q(20440, {	-- Poison Water
-					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["qg"] = 2948,	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.5, MULGORE },
 					["races"] = { TAUREN },
 				}),
 				q(748,   {	-- Poison Water
-					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["qg"] = 2948,	-- Mull Thunderhorn
 					["races"] = { TAUREN },
 					["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the current version found above
 				}),
 				q(744,   {	-- Preparation for Ceremony
-					["provider"] = { "n", 2987 },	-- Eyahn Eagletalon
+					["qg"] = 2987,	-- Eyahn Eagletalon
 					["coord"] = { 49.6, 17.4, MULGORE },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(57211),	-- Leggings of Brown Grass
 						i(57227),	-- Hewn Kodo Gloves
 						i(57236),	-- Plainstrider Leg Armor
@@ -344,73 +353,73 @@ root("Zones", m(KALIMDOR, {
 				q(767,   {	-- Rite of Vision
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 2993 },	-- Baine Bloodhoof
+					["qg"] = 2993,	-- Baine Bloodhoof
 					["sourceQuest"] = 763,	-- Rites of the Earthmother
 				}),
 				q(771,   {	-- Rite of Vision
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3054 },	-- Zarlman Two-Moons
+					["qg"] = 3054,	-- Zarlman Two-Moons
 					["sourceQuest"] = 767,	-- Rite of Vision
 				}),
 				q(772,   {	-- Rite of Vision
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3054 },	-- Zarlman Two-Moons
+					["qg"] = 3054,	-- Zarlman Two-Moons
 					["sourceQuest"] = 771,	-- Rite of Vision
 				}),
 				q(24457, {	-- Rite of Vision
-					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["qg"] = 2948,	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.8, MULGORE },
 					["races"] = { TAUREN },
 					["sourceQuest"] = 24456,	-- Thunderhorn Cleansing
 					["isBreadcrumb"] = true,
 				}),
 				q(20441, {	-- Rite of Vision
-					["provider"] = { "n", 3054 },	-- Zarlman Two-Moons
+					["qg"] = 3054,	-- Zarlman Two-Moons
 					["coord"] = { 47.8, 57.2, MULGORE },
 					["races"] = { TAUREN },
 					["sourceQuest"] = 24457,	-- Rite of Vision
 				}),
 				q(773,   {	-- Rite of Wisdom
-					["provider"] = { "n", 3233 },	-- Lorekeeper Raintotem
+					["qg"] = 3233,	-- Lorekeeper Raintotem
 					["coord"] = { 49.4, 17.2, MULGORE },
 					["races"] = { TAUREN },
 				}),
 				q(745,   {	-- Sharing the Land
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 2993 },	-- Baine Bloodhoof
+					["qg"] = 2993,	-- Baine Bloodhoof
 				}),
 				q(14438, {	-- Sharing the Land
-					["provider"] = { "n", 36644 },	-- Ahmo Thunderhorn
+					["qg"] = 36644,	-- Ahmo Thunderhorn
 					["coord"] = { 47.6, 59.5, MULGORE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(765,   {	-- Supervisor Fizsprocket
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 2988 },	-- Morin Cloudstalker
+					["qg"] = 2988,	-- Morin Cloudstalker
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(4974)),	-- Compact Fighting Knife
 						un(REMOVED_FROM_GAME, i(4964)),	-- Goblin Smasher
 					},
 				}),
 				q(26180, {	-- Supervisor Fizsprocket
-					["provider"] = { "n", 2988 },	-- Morin Cloudstalker
+					["qg"] = 2988,	-- Morin Cloudstalker
 					["coord"] = { 57.0, 60.4, MULGORE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 751,	-- The Ravaged Caravan
 				}),
 				q(761,   {	-- Swoop Hunting
-					["provider"] = { "n", 2947 },	-- Harken Windtotem
+					["qg"] = 2947,	-- Harken Windtotem
 					["coord"] = { 48.7, 58.7, MULGORE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(780,   {	-- The Battleboars
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 2980 },	-- Grull Hawkwind
+					["qg"] = 2980,	-- Grull Hawkwind
 					["sourceQuest"] = 750,	-- The Hunt Continues
 				}),
 				q(770,   {	-- The Demon Scarred Cloak
@@ -425,7 +434,7 @@ root("Zones", m(KALIMDOR, {
 						{ 44.81, 16.41, MULGORE },
 						{ 44.01, 17.61, MULGORE },
 					},
-					["g"] = {
+					["groups"] = {
 						i(4971),	-- Skorn's Hammer
 						i(3079),	-- Skorn's Rifle
 					},
@@ -433,22 +442,22 @@ root("Zones", m(KALIMDOR, {
 				q(747,   {	-- The Hunt Begins
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 2980 },	-- Grull Hawkwind
+					["qg"] = 2980,	-- Grull Hawkwind
 				}),
 				q(750,   {	-- The Hunt Continues
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 2980 },	-- Grull Hawkwind
+					["qg"] = 2980,	-- Grull Hawkwind
 					["sourceQuest"] = 747,	-- The Hunt Begins
 				}),
 				q(861,   {	-- The Hunter's Way
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3052 },	-- Skorn Whitecloud
+					["qg"] = 3052,	-- Skorn Whitecloud
 					["coord"] = { 49.6, 17.2, MULGORE },
 					["races"] = { TAUREN, TROLL, BLOODELF },
 				}),
 				q(749,   {	-- The Ravaged Caravan
-					["provider"] = { "n", 2988 },	-- Morin Cloudstalker
+					["qg"] = 2988,	-- Morin Cloudstalker
 					["coord"] = { 57.0, 60.4, MULGORE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24459,	-- Morin Cloudstalker
@@ -460,51 +469,51 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 749,	-- The Ravaged Caravan
 				}),
 				q(14491, {	-- The Restless Earth
-					["provider"] = { "n", 36644 },	-- Ahmo Thunderhorn
+					["qg"] = 36644,	-- Ahmo Thunderhorn
 					["coord"] = { 47.6, 59.6, MULGORE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14438,	-- Sharing the Land
 				}),
 				q(764,   {	-- The Venture Co.
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 2988 },	-- Morin Cloudstalker
+					["qg"] = 2988,	-- Morin Cloudstalker
 					["coord"] = { 57.2, 61.2, MULGORE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26179, {	-- The Venture Co.
-					["provider"] = { "n", 2988 },	-- Morin Cloudstalker
+					["qg"] = 2988,	-- Morin Cloudstalker
 					["coord"] = { 57.0, 60.4, MULGORE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 751,	-- The Ravaged Caravan
 				}),
 				q(24456, {	-- Thunderhorn Cleansing
-					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["qg"] = 2948,	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.8, MULGORE },
 					["races"] = { TAUREN },
 					["sourceQuest"] = 24441,	-- Thunderhorn Totem
 				}),
 				q(758, {	-- Thunderhorn Cleansing
-					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["qg"] = 2948,	-- Mull Thunderhorn
 					["races"] = { TAUREN },
 					["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the current version found above
 				}),
 				q(24441, {	-- Thunderhorn Totem
-					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["qg"] = 2948,	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.8, MULGORE },
 					["races"] = { TAUREN },
 					["sourceQuest"] = 24440,	-- Winterhoof Cleansing
 				}),
 				q(756, {	-- Thunderhorn Totem
-					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["qg"] = 2948,	-- Mull Thunderhorn
 					["races"] = { TAUREN },
 					["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the current version found above
 				}),
 				q(24524, {	-- Wildmane Cleansing
-					["provider"] = { "n", 37024 },	-- Una Wildmane
+					["qg"] = 37024,	-- Una Wildmane
 					["coord"] = { 49.4, 17.4, MULGORE },
 					["races"] = { TAUREN },
 					["sourceQuest"] = 24523,	-- Wildmane Totem
-					["g"] = {
+					["groups"] = {
 						i(57238),	-- Cliff Running Boots
 						i(57229),	-- Duskwatcher's Leggings
 						i(57240),	-- Hawkeye Rifle
@@ -513,19 +522,19 @@ root("Zones", m(KALIMDOR, {
 					},
 				}),
 				q(24523, {	-- Wildmane Totem
-					["provider"] = { "n", 37024 },	-- Una Wildmane
+					["qg"] = 37024,	-- Una Wildmane
 					["coord"] = { 49.4, 17.4, MULGORE },
 					["races"] = { TAUREN },
 					["sourceQuest"] = 20441,	-- Rite of Vision
 				}),
 				q(24440, {	-- Winterhoof Cleansing
-					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["qg"] = 2948,	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.8, MULGORE },
 					["races"] = { TAUREN },
 					["sourceQuest"] = 20440,	-- Poison Water
 				}),
 				q(754, {	-- Winterhoof Cleansing
-					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
+					["qg"] = 2948,	-- Mull Thunderhorn
 					["races"] = { TAUREN },
 					["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the current version found above
 				}),
@@ -536,7 +545,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 				n(3068, {	-- Mazzranache
 					["coord"] = { 50.4, 42.6, MULGORE },
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(4861)),	-- Sleek Feathered Tunic
 					},
 				}),
@@ -560,7 +569,7 @@ root("Zones", m(KALIMDOR, {
 						{ 54.4, 20.2, MULGORE },
 						{ 49.6, 22.8, MULGORE },
 					},
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(17922)),	-- Lionfur Armor
 					},
 				}),
@@ -573,7 +582,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 47.6, 58.4, MULGORE },
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(15277),	-- Gray Kodo (MOUNT!)
 						i(15290),	-- Brown Kodo (MOUNT!)
 						i(18793),	-- Great White Kodo (MOUNT!)
@@ -591,7 +600,7 @@ root("Zones", m(KALIMDOR, {
 				n(5940, {	-- Harn Longcast <Fishing Supplies>
 					["coord"] = { 47.6, 54.8, MULGORE },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish
 						i(6328),	-- Recipe: Longjaw Mud Snapper
 					},
@@ -599,7 +608,7 @@ root("Zones", m(KALIMDOR, {
 				n(3081, {	-- Wunna Darkmane <Trade Goods>
 					["coord"] = { 46.4, 57.8, MULGORE },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(5484),	-- Recipe: Roasted Kodo Meat
 					},
 				}),

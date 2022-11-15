@@ -6,16 +6,22 @@ _.Zones = {
 	m(KALIMDOR, {
 		m(NORTHERN_BARRENS, {	-- NOTE:: using this map for legacy barrens quests since they reused the mapID
 			n(QUESTS, {
+				q(1153, {	-- A New Ore Sample
+					["qg"] = 3433,	-- Tatternack Steelforge
+					["sourceQuest"] = 893,	-- Weapons of Choice
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(879,   {	-- Betrayal from Within
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3430 },	-- Mangletooth
+					["qg"] = 3430,	-- Mangletooth
 					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
 				}),
 				q(5052, {	-- Blood Shards of Agamaggan
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3430 },	-- Mangletooth
+					["qg"] = 3430,	-- Mangletooth
 					["sourceQuest"] = 878,	-- Tribes at War
 				}),
 				q(819,   {	-- Chen's Empty Keg
@@ -26,18 +32,18 @@ _.Zones = {
 				q(821,   {	-- Chen's Empty Keg
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3292 },	-- Brewmaster Drohn
+					["qg"] = 3292,	-- Brewmaster Drohn
 					["sourceQuest"] = 819,	-- Chen's Empty Keg
 				}),
 				q(822,   {	-- Chen's Empty Keg
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3292 },	-- Brewmaster Drohn
+					["qg"] = 3292,	-- Brewmaster Drohn
 					["sourceQuest"] = 821,	-- Chen's Empty Keg
 				}),
 				q(1069, {	-- Deepmoss Spider Eggs
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3446 },	-- Mebok Mizzyrix
+					["qg"] = 3446,	-- Mebok Mizzyrix
 				}),
 				q(862, {	-- Dig Rat Stew
 					["qg"] = 3443,	-- Grub
@@ -60,13 +66,13 @@ _.Zones = {
 				q(907,   {	-- Enraged Thunder Lizards
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3387 },	-- Jorn Skyseer
+					["qg"] = 3387,	-- Jorn Skyseer
 					["sourceQuest"] = 882,	-- Ishamuhale
 				}),
 				q(843,   {	-- Gann's Reclamation
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3341 },	-- Gann Stonespire
+					["qg"] = 3341,	-- Gann Stonespire
 				}),
 				q(3634, {	-- Gnome Engineering
 					["providers"] = {
@@ -140,41 +146,41 @@ _.Zones = {
 				q(882,   {	-- Ishamuhale
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3387 },	-- Jorn Skyseer
+					["qg"] = 3387,	-- Jorn Skyseer
 					["sourceQuest"] = 3261,	-- Jorn Skyseer
 				}),
 				q(3261, {	-- Jorn Skyseer
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3338 },	-- Sergra Darkthorn
+					["qg"] = 3338,	-- Sergra Darkthorn
 					["sourceQuest"] = 905,	-- The Angry Scytheclaws
 				}),
 				q(1060, {	-- Letter to Jin'Zil
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3449 },	-- Darsok Swiftdagger
+					["qg"] = 3449,	-- Darsok Swiftdagger
 					["sourceQuest"] = 876,	-- Serena Bloodfeather
 				}),
 				q(4921, {	-- Lost in Battle
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3432 },	-- Mankrik
+					["qg"] = 3432,	-- Mankrik
 				}),
 				q(874,   {	-- Mahren Skyseer
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3387 },	-- Jorn Skyseer
+					["qg"] = 3387,	-- Jorn Skyseer
 					["sourceQuest"] = 913,	-- Cry of the Thunderhawk
 				}),
 				q(896,   {	-- Miner's Fortune
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3453 },	-- Wharfmaster Dizzywig
+					["qg"] = 3453,	-- Wharfmaster Dizzywig
 				}),
 				q(3922, {	-- Nugget Slugs
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 9316 },	-- Wenikee Boltbucket
+					["qg"] = 9316,	-- Wenikee Boltbucket
 					["sourceQuest"] = 3921,	-- Wenikee Boltbucket
 				}),
 				q(884,   {	-- Owatanka
@@ -183,27 +189,38 @@ _.Zones = {
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 5102 },	-- Owatanka's Tailspike
 				}),
-				q(6541, {	-- Report to Kadrak
-					["u"] = REMOVED_FROM_GAME,
+				q(6541, {	-- Report to Kadrak (The Barrens)
+					["qg"] = 3429,	-- Thork
+					["coord"] = { 51.50, 30.86, THE_BARRENS },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3429 },	-- Thork
+					["isBreadcrumb"] = true,
+					["lvl"] = 17,
+				}),
+				q(6542, {	-- Report to Kadrak (Stonetalon Mountains)
+					["qg"] = 11821,	-- Darn Talongrip
+					["coord"] = { 73.23, 94.91, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 17,
 				}),
 				q(846,   {	-- Revenge of Gann
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3341 },	-- Gann Stonespire
+					["qg"] = 3341,	-- Gann Stonespire
 					["sourceQuest"] = 843,	-- Bann's Reclamation
 				}),
 				q(3923, {	-- Rilli Greasygob
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 9316 },	-- Wenikee Boltbucket
+					["qg"] = 9316,	-- Wenikee Boltbucket
 					["sourceQuest"] = 3922,	-- Nugget Slugs
 				}),
 				q(894,   {	-- Samophlange
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3442 },	-- Sputtervalve
+					["qg"] = 3442,	-- Sputtervalve
 				}),
 				q(900,   {	-- Samophlange
 					["u"] = REMOVED_FROM_GAME,
@@ -225,27 +242,22 @@ _.Zones = {
 					["isBreadcrumb"] = true,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(6382, {	-- The Ashenvale Hunt
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3387 },	-- Jorn Skyseer
-				}),
 				q(1362, {	-- The Kolkar of Desolace
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3389 },	-- Regthar Deathgate
+					["qg"] = 3389,	-- Regthar Deathgate
 					["sourceQuest"] = 1361,	-- Regthar Deathgate
 				}),
 				q(890,   {	-- The Missing Shipment
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3391 },	-- Gazlowe
+					["qg"] = 3391,	-- Gazlowe
 					["sourceQuest"] = 887,	-- Southsea Freebooters
 				}),
 				q(892,   {	-- The Missing Shipment
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3453 },	-- Wharfmaster Dizzywig
+					["qg"] = 3453,	-- Wharfmaster Dizzywig
 					["sourceQuest"] = 890,	-- The Missing Shipment
 				}),
 				q(3513, {	-- The Rune Scroll
@@ -256,17 +268,17 @@ _.Zones = {
 				q(1145, {	-- The Swarm Grows
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3428 },	-- Korran
+					["qg"] = 3428,	-- Korran
 				}),
 				q(857,   {	-- The Tear of the Moons
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3421 },	-- Feegly the Exiled
+					["qg"] = 3421,	-- Feegly the Exiled
 				}),
 				q(6543, {	-- The Warsong Reports
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 8582 },	-- Kadrak
+					["qg"] = 8582,	-- Kadrak
 					["sourceQuests"] = {
 						6541,	-- Report to Kadrak (Barrens)
 						6542,	-- Report to Kadrak (Stonetalon)
@@ -275,23 +287,23 @@ _.Zones = {
 				q(878,   {	-- Tribes at War
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3430 },	-- Mangletooth
+					["qg"] = 3430,	-- Mangletooth
 				}),
 				q(959,   {	-- Trouble at the Docks
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3665 },	-- Crane Operator Bigglefuzz
+					["qg"] = 3665,	-- Crane Operator Bigglefuzz
 				}),
 				q(3921, {	-- Wenikee Boltbucket
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3442 },	-- Sputtervalve
+					["qg"] = 3442,	-- Sputtervalve
 					["sourceQuest"] = 902,	-- Samophlange
 				}),
 				q(1492, {	-- Wharfmaster Dizzywig
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3390 },	-- Apothecary Helbrim
+					["qg"] = 3390,	-- Apothecary Helbrim
 				}),
 			}),
 		}),

@@ -16,7 +16,7 @@ root("Zones", m(KALIMDOR, {
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
-					["g"] = {
+					["groups"] = {
 						crit(29, {	-- Obalis
 							["coord"] = { 56.6, 41.8, ULDUM },
 							["cr"] = 66824,	-- Obalis <Grand Master Pet Tamer>
@@ -112,7 +112,7 @@ root("Zones", m(KALIMDOR, {
 				prof(ARCHAEOLOGY, bubbleDown({["requireSkill"] = ALCHEMY},{
 					i(64657, {	-- Canopic Jar
 						["description"] = "Alchemy is not required to get the recipe.\n\nNOTE TO BLUES: Why isn't this item BoA? You have the technology!\n  - Crieve",
-						["g"] = {
+						["groups"] = {
 							i(67538),	-- Recipe: Vial of the Sands
 						},
 					}),
@@ -120,7 +120,7 @@ root("Zones", m(KALIMDOR, {
 				prof(FISHING, {
 					o(202779, {	-- Blackbelly Mudfish School
 						["model"] = 219405,
-						["g"] = {
+						["groups"] = {
 							i(22739, {	-- Tome of Polymorph: Turtle
 								["classes"] = { MAGE },
 								["f"] = RECIPES,
@@ -129,7 +129,7 @@ root("Zones", m(KALIMDOR, {
 					}),
 					o(202780, {	-- Fathom Eel Swarm
 						["model"] = 219405,
-						["g"] = {
+						["groups"] = {
 							i(22739, {	-- Tome of Polymorph: Turtle
 								["classes"] = { MAGE },
 								["f"] = RECIPES,
@@ -139,7 +139,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 				prof(MINING, {
 					["description"] = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",
-					["g"] = {
+					["groups"] = {
 						i(67282),	-- Elementium Geode (PET!)
 					},
 				}),
@@ -150,7 +150,7 @@ root("Zones", m(KALIMDOR, {
 					["model"] = 201023,
 					["provider"] = { "o", 206293 },	-- A.I.D.A. Terminal
 					["sourceQuest"] = 27760,	-- Artificial Intelligence
-					["g"] = {
+					["groups"] = {
 						i(65843),	-- Brainrot Grips
 						i(65842),	-- Treads of the Starry Obelisk
 						i(65841),	-- Tomb-Curse Chestplate
@@ -160,7 +160,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 47670 },	-- Belloc Brightblade
 					["coord"] = { 24.3, 64.5, ULDUM },
 					["sourceQuest"] = 27926,	-- Eastern Hospitality
-					["g"] = {
+					["groups"] = {
 						i(65867),	-- Pristine Coyote Spaulders
 						i(65866),	-- Flenser's Leggings
 						i(65865),	-- Ankh-Inscribed Bracers
@@ -180,7 +180,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 46134 },	-- High Commander Kamses
 					["coord"] = { 58.8, 46.1, ULDUM },
 					["sourceQuest"] = 28201,	-- Ploughshares to Swords
-					["g"] = {
+					["groups"] = {
 						i(65836),	-- Stolen Neferset Waistguard
 						i(65835),	-- Chestguard of the Bleak Scarab
 						i(65834),	-- Weaponseeker Bracers
@@ -210,7 +210,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 47159 },	-- Commander Schnottz
 					["coord"] = { 24.4, 64.0, ULDUM },
 					["sourceQuest"] = 28002,	-- Crisis Management
-					["g"] = {
+					["groups"] = {
 						i(65854),	-- Substitute Gunner's Leggings
 						i(65853),	-- Tank Director's Treads
 						i(65852),	-- Gauntlets of Delicate Aim
@@ -222,7 +222,7 @@ root("Zones", m(KALIMDOR, {
 					["model"] = 200066,
 					["sourceQuest"] = 27196,	-- On to Something
 					["description"] = "This quest can be accepted from a Decrepit Skeleton or from a Piece of Rope, looted from a Tormented Tomb-Robber. This version of the quest can be picked up as soon as you enter the Chamber of the Stars.",
-					["g"] = {
+					["groups"] = {
 						i(65886),	-- Rope-Grip Gloves
 						i(65872),	-- Helm of Broken Bones
 						i(65884),	-- Femurbreak Stompers
@@ -233,7 +233,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 64.5, 28.0, ULDUM },
 					["sourceQuest"] = 27196,	-- On to Something
 					["description"] = "This version of the quest will be offered if you have completed Lessons From the Past.",
-					["g"] = {
+					["groups"] = {
 						i(65886),	-- Rope-Grip Gloves
 						i(65872),	-- Helm of Broken Bones
 						i(65884),	-- Femurbreak Stompers
@@ -290,7 +290,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 45296 },	-- Harrison Jones
 					["coord"] = { 64.5, 28.0, ULDUM },
 					["sourceQuest"] = 27624,	-- After the Fall
-					["g"] = {
+					["groups"] = {
 						i(65863),	-- Chain Reaction Hood
 						i(65862),	-- Crashing Idol Headguard
 						i(65861),	-- Statue Climbers
@@ -329,7 +329,7 @@ root("Zones", m(KALIMDOR, {
 						27924,	-- Budd's Plan
 						28105,	-- Kavem the Callous
 					},
-					["g"] = {
+					["groups"] = {
 						i(64492, {	-- Ramkahen Badge of Valor
 							["collectible"] = false,
 						}),
@@ -339,7 +339,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 47670 },	-- Belloc Brightblade
 					["coord"] = { 24.3,64.5, ULDUM },
 					["sourceQuest"] = 27928,	-- A Favor for the Furrier
-					["g"] = {
+					["groups"] = {
 						i(65860),	-- Impeccable Uniform Gauntlets
 						i(65859),	-- Waistguard of Fallen Hearts
 						i(65858),	-- Bullet-Pierced Chestplate
@@ -357,7 +357,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 48698 },	-- Harrison Jones
 					["coord"] = { 41.3, 5.5, ULDUM },
 					["sourceQuest"] = 28482,	-- Sullah's Gift
-					["g"] = {
+					["groups"] = {
 						ach(5317),	-- Help the Bombardier! I'm the Bombardier!
 						i(65870),	-- Confiscated Dog Tags
 						i(65869),	-- Powderburned Spaulders
@@ -369,7 +369,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 41.3, 5.5, ULDUM },
 					["isDaily"] = true,
 					["sourceQuest"] = 28497,	-- Fire From the Sky
-					["g"] = {
+					["groups"] = {
 						ach(5317),	-- Help the Bombardier! I'm the Bombardier!
 					},
 				}),
@@ -385,7 +385,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 47158 },	-- Harrison Jones
 					["coord"] = { 36.1, 15.7, ULDUM },
 					["sourceQuest"] = 28613,	-- See You on the Other Side!
-					["g"] = {
+					["groups"] = {
 						i(65786),	-- Colossus Smasher Breastplate
 						i(65788),	-- Arrowspike Launcher
 						i(65787),	-- Harrison's Climbing Hook
@@ -400,7 +400,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 46750 },	-- Fusion Core
 					["coord"] = { 77.2, 63.2, ULDUM },
 					["sourceQuest"] = 27778,	-- Hacking the Wibson
-					["g"] = {
+					["groups"] = {
 						i(65776),	-- Kata-Mary Crown
 						i(65775),	-- Spaulders of Rolling Incineration
 						i(65774),	-- Fireball Treads
@@ -429,7 +429,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 49151 },	-- Harrison Jones
 					["coord"] = { 33.3, 19.6, ULDUM },
 					["sourceQuest"] = 27748,	-- Fortune and Glory
-					["g"] = {
+					["groups"] = {
 						ach(4961),	-- In a Thousand Years Even You Might be Worth Something
 						i(65833),	-- Leggings of Promise
 						i(65832),	-- Girlde of the Ancient One
@@ -440,7 +440,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 48558 },	-- Harrison Jones
 					["coord"] = { 38.9, 23.2, ULDUM },
 					["sourceQuest"] = 28403,	-- Bad Datas
-					["g"] = {
+					["groups"] = {
 						i(65873),	-- Titanic Treads
 						i(65885),	-- Gauntlets of Ahmtul
 						i(65871),	-- Guardian-Killer Waistplate
@@ -500,7 +500,7 @@ root("Zones", m(KALIMDOR, {
 						28112,	-- Escape From the Lost City
 						27141,	-- Exploding Through
 					},
-					["g"] = {
+					["groups"] = {
 						i(65889),	-- Shardfinder Hood
 						i(65888),	-- Splinterproof Bracers
 						i(65887),	-- Staffseeker Shoulderplates
@@ -510,7 +510,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 46872 },	-- Prince Nadun
 					["coord"] = { 59.5, 72.0, ULDUM },
 					["sourceQuest"] = 27922,	-- Traitors!
-					["g"] = {
+					["groups"] = {
 						i(65820),	-- Keythief Handwraps
 						i(65819),	-- Kavem's Trimmed Chestguard
 						i(65821),	-- Pearl-Handled Long Gun
@@ -525,7 +525,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 48564 },	-- King Phaoris
 					["coord"] = { 52.0, 65.4, ULDUM },
 					["sourceQuest"] = 28623,	-- The Push Westward
-					["g"] = {
+					["groups"] = {
 						i(65813),	-- Scarab-Inlaid Crossbow
 						i(65814),	-- Sekhemet's Seal
 					},
@@ -539,7 +539,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 47159 },	-- Commander Schnottz
 					["coord"] = { 24.4, 64.0, ULDUM },
 					["sourceQuest"] = 27950,	-- Gobbles!
-					["g"] = {
+					["groups"] = {
 						i(65857),	-- Shoulders of the Obelisk
 						i(65856),	-- Chestguard of Vigorous Motivation
 						i(65855),	-- Mongoose-Hide Waistguard
@@ -573,7 +573,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 45799 },	-- Prince Nadun
 					["coord"] = { 45.2, 37.9, ULDUM },
 					["sourceQuest"] = 28135,	-- Al'Akir's Vengeance
-					["g"] = {
+					["groups"] = {
 						i(65810),	-- Asp-Clasp Bracers
 						i(65809),	-- Gloves of the Stela
 						i(65811),	-- Cenotaph Choker
@@ -626,7 +626,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 48501 },	-- Sun Prophet Tumet
 					["coord"] = { 67.3, 42.7, ULDUM },
 					["sourceQuest"] = 28561,	-- Nahom Must Hold
-					["g"] = {
+					["groups"] = {
 						i(65818),	-- Leggings of the Unforgiving Tomb
 						i(65817),	-- Grave Protector Shoulderplates
 						i(65816),	-- Ramkahen Ceremonial Hammer
@@ -659,7 +659,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 48237 },	-- Salhet
 					["coord"] = { 56.9, 62.4, ULDUM },
 					["sourceQuest"] = 28276,	-- Salhet's Secret
-					["g"] = {
+					["groups"] = {
 						i(65829),	-- Leggings of Feline Command
 						i(65828),	-- Great General's Crown
 						i(65830),	-- Salhet's Ornate Dagger
@@ -704,7 +704,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 48431 },	-- Sullah
 					["coord"] = { 29.6, 21.8, ULDUM },
 					["sourceQuest"] = 28363,	-- Stirred the Hornet's Nest
-					["g"] = {
+					["groups"] = {
 						i(65876),	-- Leggings of the Vir'naal
 						i(65875),	-- Powderkeg Bracers
 						i(65874),	-- Rediscovered Delta Walkers
@@ -740,7 +740,7 @@ root("Zones", m(KALIMDOR, {
 						27900,	-- I've Got This Guy
 						27903,	-- Ignition
 					},
-					["g"] = {
+					["groups"] = {
 						i(65883),	-- Tailgunner's Flight Suit
 						i(65882),	-- Reinforced Seatbelt
 						i(65881),	-- Aeronaut's Helm
@@ -756,7 +756,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 46136 },	-- Vizier Tanotep
 					["coord"] = { 56.6, 53.5, ULDUM },
 					["sourceQuest"] = 27629,	-- The Vizier's Vote
-					["g"] = {
+					["groups"] = {
 						i(65794),	-- Marshseeker Gloves
 						i(65793),	-- Hamatep Legguards
 						i(65795),	-- Vir'naal Guardsman's Axe
@@ -773,7 +773,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 47715 },	-- Sun Priest Asaris
 					["coord"] = { 53.0, 27.7, ULDUM },
 					["sourceQuest"] = 28141,	-- Relics of the Sun King
-					["g"] = {
+					["groups"] = {
 						i(65798),	-- Bandit Scourge Bracers
 						i(65797),	-- Heptu Headguard
 						i(65796),	-- Qebnet Greaves
@@ -789,7 +789,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 48501 },	-- Sun Prophet Tumet
 					["coord"] = { 67.3, 42.7, ULDUM },
 					["sourceQuest"] = 28501,	-- The Defense of Nahom
-					["g"] = {
+					["groups"] = {
 						i(65847),	-- Robes of Khintaset
 						i(65846),	-- Bracers of the Verdant Cradle
 						i(65845),	-- Misappropriated Girdle of Khartut
@@ -827,7 +827,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 48012 },	-- Sergeant Mehat
 					["coord"] = { 58.9, 46.1, ULDUM },
 					["sourceQuest"] = 27631,	-- The High Commander's Vote
-					["g"] = {
+					["groups"] = {
 						i(65839),	-- Sarcophagus Bracers
 						i(65838),	-- Cartouche-Inscribed Spaulders
 						i(65837),	-- Legplates of Heilopolis
@@ -842,7 +842,7 @@ root("Zones", m(KALIMDOR, {
 						28483,	-- Bleeding the Enemy
 						28486,	-- Salhet's Gambit
 					},
-					["g"] = {
+					["groups"] = {
 						i(65741),	-- Wrap of the Fallen City
 						i(65740),	-- Fallen Brotherhood Gauntlets
 						i(65742),	-- Drape of Neferset Destruction
@@ -853,7 +853,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 47967 },	-- Prolific Writer
 					["coord"] = { 21.8, 64.0, ULDUM },
 					["sourceQuest"] = 28187,	-- Missed Me By Zhat Much!
-					["g"] = {
+					["groups"] = {
 						i(65850),	-- Mirror-Polished Boots
 						i(65849),	-- Gauntlets of the Obelisk
 						i(65848),	-- False-Face Mask
@@ -896,7 +896,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 46136 },	-- Vizier Tanotep
 					["coord"] = { 71.2, 73.7, ULDUM },
 					["sourceQuest"] = 27707,	-- Neferset Prison
-					["g"] = {
+					["groups"] = {
 						i(65792),	-- Girdle of the Rescuer
 						i(65790),	-- Pit Heart Bracers
 						i(65789),	-- Caimas' Spaulders
@@ -922,7 +922,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 46135 },	-- High Priest Amet
 					["coord"] = { 54.1, 41.8, ULDUM },
 					["sourceQuest"] = 28611,	-- The Defiler's Ritual
-					["g"] = {
+					["groups"] = {
 						i(65823),	-- Scales of the Scalemother
 						i(65822),	-- Hevna's Eye Socket
 						i(65824),	-- Corrupted Eggshell Drape
@@ -933,7 +933,7 @@ root("Zones", m(KALIMDOR, {
 					["model"] = 199989,
 					["provider"] = { "o", 205874 },	-- Sand-Covered Hieroglyphs
 					["sourceQuest"] = 27623,	-- Colossal Guardians
-					["g"] = {
+					["groups"] = {
 						i(65807),	-- Hood of the Scorpion
 						i(65806),	-- Sunwatcher's Legplates
 						i(65808),	-- Orsis Polearm
@@ -988,7 +988,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 46135 },	-- High Priest Amet
 					["coord"] = { 54.1, 41.8, ULDUM },
 					["sourceQuest"] = 27630,	-- The High Priest's Vote
-					["g"] = {
+					["groups"] = {
 						i(65827),	-- Vir'naal Spaulders
 						i(65826),	-- Sandals of Corrupted Water
 						i(65825),	-- Helm of the Siltwater Slayer
@@ -1013,7 +1013,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 47715 },	-- Sun Priest Asaris
 					["coord"] = { 52.9, 27.7, ULDUM },
 					["sourceQuest"] = 28112,	-- Escape From the Lost City
-					["g"] = {
+					["groups"] = {
 						i(65801),	-- Mar'at Belt
 						i(65800),	-- Bracers of the Dark Pyramid
 						i(65802),	-- Shining Scorpid Eye
@@ -1023,7 +1023,7 @@ root("Zones", m(KALIMDOR, {
 			n(RARES, {
 				n(50065, {	-- Armagedillo
 					["coord"] = { 45.0, 42.5, ULDUM },
-					["g"] = {
+					["groups"] = {
 						i(67243),	-- Armagedillo's Tail
 					},
 				}),
@@ -1034,7 +1034,7 @@ root("Zones", m(KALIMDOR, {
 						{ 66.6, 68.2, ULDUM },
 						{ 70.8, 74.2, ULDUM },
 					},
-					["g"] = {
+					["groups"] = {
 						i(67242),	-- Tol'Vir Hereditary Girdle
 					},
 				}),
@@ -1108,7 +1108,7 @@ root("Zones", m(KALIMDOR, {
 						{ 72.02, 43.88, ULDUM },
 						{ 73.44, 73.61, ULDUM },
 					},
-					["g"] = {
+					["groups"] = {
 						i(63046, {	-- Grey Riding Camel (MOUNT!)
 							["crs"] = { 50245 },	-- Dormus the Camel Hoarder
 						}),
@@ -1118,7 +1118,7 @@ root("Zones", m(KALIMDOR, {
 			n(VENDORS, {
 				n(48617, {	-- Blacksmith Abasi <Ramkahen Quartermaster>
 					["coord"] = { 54.0, 33.2, ULDUM },
-					["g"] = {
+					["groups"] = {
 						i(63044),	-- Brown Riding Camel (MOUNT!)
 						i(63045),	-- Tan Riding Camel (MOUNT!)
 						i(62436),	-- Ammunae's Blessing
