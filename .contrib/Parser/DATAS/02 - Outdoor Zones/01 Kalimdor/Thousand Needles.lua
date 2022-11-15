@@ -258,7 +258,7 @@ root("Zones", m(KALIMDOR, {
 					},
 				}),
 				q(4881, {	-- Assassination Plot
-					["provider"] = { "o", 12564 },	-- Assassination Note
+					["provider"] = { "i", 12564 },	-- Assassination Note
 					["description"] = "The item that starts this quest is dropped by Galak Messengers.",
 					["coord"] = { 21.2, 32, THOUSAND_NEEDLES },
 					["timeline"] = { "removed 4.0.3" },
@@ -1994,7 +1994,7 @@ root("Zones", m(KALIMDOR, {
 						}),
 						i(63653, {-- Heartrazor's Gift
 							["timeline"] = { "added 4.0.3.13277" },
-						}),	
+						}),
 						i(63654, {	-- Skymaster's Pants
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
