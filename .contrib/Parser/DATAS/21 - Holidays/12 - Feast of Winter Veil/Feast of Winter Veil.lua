@@ -1718,6 +1718,16 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			}),
 			-- #ENDIF
 		}),
+		n(RARES, {
+			i(174865, {	-- A Tiny Winter Hat (Pepe)
+				["questID"] = 58901,
+				["coords"] = {
+					{ 33.9, 68.1, IRONFORGE },
+					{ 52.9, 77.4, ORGRIMMAR },
+				},
+				["timeline"] = { "created 8.3.0", "added 9.0.1" },
+			}),
+		}),
 		n(REWARDS, {
 			i(17727, HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK),	-- Smokywood Pastures Gift Pack
 			i(17685, {	-- Smokywood Pastures Sampler

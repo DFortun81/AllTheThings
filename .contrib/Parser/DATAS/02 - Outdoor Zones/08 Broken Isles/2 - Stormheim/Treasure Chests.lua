@@ -184,6 +184,15 @@ _.Zones =
 					["coord"] = { 50.3, 41, STORMHEIM },
 					["description"] = "Inside the cave.",
 				}),
+				n(107840, {	-- Stormforged Grapple Launcher
+					["questID"] = 39775,
+					["coord"] = { 36.9, 31.8, STORMHEIM },
+					["g"] = {
+						i(138111, {	-- Stormforged Grapple Launcher
+							["description"] = "This item can be safely deleted and you'll still be able to interact with the hooks.",
+						}),
+					},
+				}),
 				o(241146, {	-- Treasure Chest
 					["questID"] = 38474,
 					["coord"] = { 42.6, 65.8, STORMHEIM },

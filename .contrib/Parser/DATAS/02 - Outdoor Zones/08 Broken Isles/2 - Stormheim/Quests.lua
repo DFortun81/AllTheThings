@@ -648,12 +648,6 @@ _.Zones =
 					["sourceQuests"] = { 39154 },	-- To Skold-Ashil
 					["coord"] = { 58.5, 64.2, STORMHEIM },
 				}),
-				q(39775, {	-- Stormforged Grapple Launcher
-					["description"] = "This item can be safely deleted and you'll still be able to interact with the hooks.",
-					["provider"] = { "n", 107840 },	-- Stormforged Grapple Launcher
-					["itemID"] = 138111,	-- Stormforged Grapple Launcher
-					["coord"] = { 36.9, 31.8, STORMHEIM },
-				}),
 				q(44700, {	-- Stormheim (A)
 					["lvl"] = 98,
 					["races"] = ALLIANCE_ONLY,

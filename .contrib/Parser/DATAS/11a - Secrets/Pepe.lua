@@ -3,6 +3,11 @@
 ---------------------------------------------
 
 root("Secrets", n(86470, {	-- Pepe
+	-- some unlocks are referenced within different sections, so link them here for popouts
+	["sym"] = {{"select","itemID",
+		128874,	-- A Tiny Scarecrow Costume (Hallow's End)
+		174865,	-- A Tiny Winter Hat (Feast of Winter Veil)
+	}},
 	["g"] = {
 		n(ACHIEVEMENTS, {
 			ach(10053, {	-- I Found Pepe! (Various Draenor see criteria)
@@ -148,15 +153,6 @@ root("Secrets", n(86470, {	-- Pepe
 			["questID"] = 39266,	-- Pepe can be sometimes be summoned with this mask
 			["coord"] = { 51.01, 63.31, TALADOR },
 		}),
-		i(128874, {	-- A Tiny Scarecrow Costume
-			["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
-			["coords"] = {
-				{ 70.71, 90.21, FROSTWALL },	-- Pepe Location [Horde]
-				{ 40.12, 70.06, LUNARFALL },	-- Pepe Location [Alliance]
-			},
-			["description"] = "You need Tier 3 garrison for this.",
-			["u"] = HALLOWS_END,
-		}),
 		i(147537, {	-- A Tiny Set of Warglaives (TOY!)
 			["classes"] = { DEMONHUNTER },
 		}),
@@ -178,15 +174,6 @@ root("Secrets", n(86470, {	-- Pepe
 			["questID"] = 52269,	-- Pepe can be sometimes be summoned with this mask
 			["coord"] = { 38.98, 15.80, DAZARALOR },
 			["description"] = "Located inside the |cFFFFD700Hot House|r.",
-		}),
-		i(174865, {	-- A Tiny Winter Hat (Pepe)
-			["questID"] = 58901,
-			["coords"] = {
-				{ 33.9, 68.1, IRONFORGE },
-				{ 52.9, 77.4, ORGRIMMAR },
-			},
-			["timeline"] = { "created 8.3.0", "added 9.0.1" },
-			["u"] = FEAST_OF_WINTER_VEIL,
 		}),
 		i(186473, {	-- A Tiny Winter Staff
 			["description"] = "Requires Renown 56.",

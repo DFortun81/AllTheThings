@@ -16,7 +16,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(24889),	-- Classic Random 5-15 (Nth)
 			q(24882),	-- LFGDungeons - Classic - Random - 1st
 			q(24890),	-- LFGDungeons - Classic - Random - Nth
-			q(42461),	-- Vanilla 10-19
 		}),
 		tier(TBC_TIER, { -- These Quests might be ingame, very unlikely however.
 			q(24922),	-- LFGDungeons - Burning Crusade - Heroic Random - 1st

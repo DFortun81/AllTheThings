@@ -109,6 +109,7 @@ root("Instances", tier(WOD_TIER, {
 					cr(90284, e(1425, {	-- Iron Reaver
 						i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 							["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
+							["description"] = "Drops in all difficulties.",
 						}),
 						i(128094),	-- Spiked Torque Wrench
 						i(128118),	-- Demonhorn Buckler
@@ -380,9 +381,6 @@ root("Instances", tier(WOD_TIER, {
 					i(124231),	-- Flickering Felspark
 				})),
 				cr(90284, e(1425, {	-- Iron Reaver
-					i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-						["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-					}),
 					i(124373),	-- Iron Skullcrusher
 					i(124354),	-- Felforged Aegis
 					i(124213),	-- Voltage Regulation Diode
@@ -915,9 +913,6 @@ root("Instances", tier(WOD_TIER, {
 					i(124231),	-- Flickering Felspark
 				})),
 				cr(90284, e(1425, {	-- Iron Reaver
-					i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-						["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-					}),
 					i(124373),	-- Iron Skullcrusher
 					i(124354),	-- Felforged Aegis
 					i(124213),	-- Voltage Regulation Diode
@@ -1437,9 +1432,6 @@ root("Instances", tier(WOD_TIER, {
 				})),
 				cr(90284, e(1425, {	-- Iron Reaver
 					ach(10032),	-- Mythic: Iron Reaver
-					i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-						["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-					}),
 					i(124373),	-- Iron Skullcrusher
 					i(124354),	-- Felforged Aegis
 					i(124213),	-- Voltage Regulation Diode
