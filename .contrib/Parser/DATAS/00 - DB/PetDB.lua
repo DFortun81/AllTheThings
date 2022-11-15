@@ -1108,6 +1108,7 @@ pet(199688, 3279);	-- Bronze Racing Enthusiast
 pet(199326, 3376);	-- Chip
 pet(191941, 3264);	-- Crystalline Mini-Monster
 pet(198725, 3381);	-- Gray Marmoni
+pet(193618, 3317);	-- Hoofhelper
 pet(193885, 3345);	-- Jeweled Amber Whelpling
 pet(193888, 3347);	-- Jeweled Emerald Whelpling
 pet(193889, 3256);	-- Jeweled Onyx Whelpling
@@ -1120,6 +1121,7 @@ pet(191946, 3265);	-- Mister Muskoxeles
 pet(200519, 3286);	-- Mister Toots
 pet(200930, 3414);	-- Obsidian Proto-Whelp
 pet(193484, 3302);	-- Pilot
+pet(199109, 3348);	-- Primal Stormling
 pet(193572, 3306);	-- Quack-E
 pet(191936, 3263);	-- Secretive Frogduck
 pet(198353, 3368);	-- Shiverweb Broodling
@@ -1180,7 +1182,6 @@ pet(0, 3311);	-- Ohuna Companion
 pet(193587, 3312);	-- Time-Lost Duck
 pet(0, 3313);	-- Grassland Stomper
 pet(193614, 3314);	-- Groundshaker
-pet(193618, 3317);	-- Hoofhelper
 pet(0, 3318);	-- Thunderfoot Calf
 pet(0, 3320);	-- Whitewhisker
 pet(193834, 3321);	-- Blackfeather Nester
@@ -1205,7 +1206,7 @@ pet(0, 3341);	-- Red Dragon Whelp
 pet(0, 3342);	-- Spyragos
 pet(0, 3343);	-- Bronze Dragon Whelp
 
-pet(0, 3348);	-- Primal Stormling
+
 pet(0, 3351);	-- Grizzlefur Cub
 pet(0, 3352);	-- Razortooth Bear Cub
 pet(0, 3354);	-- Storm-Touched Ottuk

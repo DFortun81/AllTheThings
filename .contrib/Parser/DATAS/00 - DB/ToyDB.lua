@@ -1083,6 +1083,7 @@ i(194059);	-- Market Tent
 i(198402);	-- Maruuk Cooking Pot
 i(197986);	-- Murglasses
 i(200640);	-- Obsidian Egg Clutch
+i(200630);	-- Ohn'ir Windsage's Hearthstone
 i(191891);	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise
 i(199767);	-- Red Dragon Banner
 i(198729);	-- Reliquary Banner
@@ -1118,7 +1119,6 @@ i(200198);	-- Primalist Prison
 i(200249);	-- Mage's Chewed Wand
 i(200116);	-- Everlasting Horn of Lavaswimming
 i(200628);	-- Somewhat-Stabilized Arcana
-i(200630);	-- Ohn'ir Windsage's Hearthstone
 i(200631);	-- Happy Tuskarr Palooza
 i(200636);	-- Primal Invocation Quintessence
 i(200857);	-- Talisman of Sargha

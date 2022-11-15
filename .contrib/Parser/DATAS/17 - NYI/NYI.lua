@@ -476,7 +476,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193862),	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
 			i(193863),	-- zzOld - [PH] Dark Baby Vorquin (REUSE)
 			i(193614),	-- Groundshaker
-			i(193618),	-- Hoofhelper
+
 			i(193620),	-- Time-Lost Slyvern
 			i(193908),	-- Sapphire Crystalspine
 		}),
@@ -1160,7 +1160,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197008),	-- Cliffside Wylderdrake: Narrow Stripes Pattern
 		i(197009),	-- Cliffside Wylderdrake: Scaled Pattern
 
-		i(197011),	-- Cliffside Wylderdrake: Green Scales
+
 		i(197012),	-- Cliffside Wylderdrake: Blue Scales
 
 		i(197014),	-- Cliffside Wylderdrake: White Scales
@@ -1221,7 +1221,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197140),	-- Highland Drake: Small Spotted Pattern
 		i(197141),	-- Highland Drake: Scaled Pattern
 
-		i(197143),	-- Highland Drake: Green Scales
+
 		i(197145),	-- Highland Drake: Bronze Scales
 		i(197146),	-- Highland Drake: White Scales
 		i(197147),	-- Highland Drake: Heavy Scales
@@ -1306,7 +1306,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197593),	-- Windborne Velocidrake: Feathery Head
 		i(197594),	-- Windborne Velocidrake: Small Ears
 		i(197595),	-- Windborne Velocidrake: Finned Ears
-		i(197596),	-- Windborne Velocidrake: Horned Jaw
+
 
 		i(197598),	-- Windborne Velocidrake: Gray Hair
 		i(197599),	-- Windborne Velocidrake: Red Hair
@@ -1320,19 +1320,19 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197607),	-- Windborne Velocidrake: Split Horns
 		i(197608),	-- Windborne Velocidrake: Gray Horns
 		i(197609),	-- Windborne Velocidrake: White Horns
-		i(197610),	-- Windborne Velocidrake: Yellow Horns
+
 
 		i(197612),	-- Windborne Velocidrake: Blue Scales
 		i(197613),	-- Windborne Velocidrake: Bronze Scales
 		i(197615),	-- Windborne Velocidrake: Teal Scales
 		i(197616),	-- Windborne Velocidrake: White Scales
 		i(197617),	-- Windborne Velocidrake: Heavy Scales
-		i(197618),	-- Windborne Velocidrake: Long Snout
+
 		i(197619),	-- Windborne Velocidrake: Hooked Snout
 		i(197620),	-- Windborne Velocidrake: Beaked Snout
 		i(197621),	-- Windborne Velocidrake: Exposed Finned Tail
 		i(197622),	-- Windborne Velocidrake: Finned Tail
-		i(197623),	-- Windborne Velocidrake: Spiked Tail
+
 		i(197624),	-- Windborne Velocidrake: Club Tail
 		i(197625),	-- Windborne Velocidrake: Feathery Tail
 		i(197626),	-- Windborne Velocidrake: Exposed Finned Neck
@@ -1636,7 +1636,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199104),	-- Piping-Hot Orca Milk
 		i(199105),	-- Ancheevy
 		i(199106),	-- Tiny Leviathan Bone
-		i(199109),	-- Primal Stormling
 		i(199110),	-- Mechanical Maestro Duck
 		i(199111),	-- Maestro Duck's Orchestrion
 		i(199115),	-- Herbalism Field Notes
@@ -1690,10 +1689,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199833),	-- Dragonhead Eel
 		i(199834),	-- Pulpy Seagrass
 		i(199835),	-- Torga's Braid
-		i(199836),	-- Dimmed Primeval Fire
-		i(199837),	-- Dimmed Primeval Earth
-		i(199838),	-- Dimmed Primeval Storm
-		i(199839),	-- Dimmed Primeval Water
 		i(199840),	-- Wrapped Gold Band
 		i(199841),	-- Finely Carved Wing
 		i(199842),	-- Stone Dragontooth
@@ -1914,17 +1909,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200454),	-- Maruuk Centaur Insignia
 		i(200455),	-- Valdrakken Accord Insignia
 		i(200456),	-- Valdrakken Armor Opener
-		i(200457),	-- Ohn'ahran Plainswalker Boots
-		i(200458),	-- Ohn'ahran Plainswalker Greaves
-		i(200459),	-- Ohn'ahran Plainswalker Slippers
-		i(200460),	-- Ohn'ahran Plainswalker Moccasins
 		i(200461),	-- Mistyvale Map: Training Grounds
 		i(200462),	-- Mistyvale Map: Butterfly Garden
 		i(200463),	-- Mistyvale Map: Black Market Auction House
-		i(200464),	-- Maruuk Warrior's Chestplate
-		i(200465),	-- Maruuk Harrier's Hauberk
-		i(200466),	-- Maruuk Scout's Vest
-		i(200467),	-- Maruuk Spiritual Vestments
+
 		i(200468),	-- Maruuk Hunt Spoils
 		i(200471),	-- Magnetized Splinter
 		i(200473),	-- Agitated Fragment
@@ -1932,118 +1920,61 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200476),	-- Fallingwater Overlook VIP Entry Pass
 		i(200477),	-- Stack of VIP Passes
 		i(200478),	-- Far-Flung Fragment
-		i(200479),	-- Titan-Touched Elemental
 		i(200480),	-- Half Swallowed Sliver
-		i(200481),	-- Ohn'ir Midnight Helm
-		i(200482),	-- Shikaar Harrier's Visor
-		i(200483),	-- Nokhud Battle Helm
-		i(200484),	-- Ohn'ir Dawnlight Hat
-		i(200485),	-- Ohn'ir Dusklight Cap
-		i(200486),	-- Ohn'ir Daylight Visor
-		i(200487),	-- Shikaar Hunter's Visor
-		i(200488),	-- Shikaar Huntmaster's Visor
-		i(200489),	-- Shikaar Scout's Visor
-		i(200490),	-- Nokhud Reaver's Helm
-		i(200491),	-- Nokhud Champion's Helm
-		i(200492),	-- Nokhud Warlord's Helm
-		i(200493),	-- Ohn'ir Daylight Shoulderpads
-		i(200494),	-- Shikaar Scout's Shoulderpads
-		i(200495),	-- Nokhud Warlord's Shoulderpads
-		i(200496),	-- Shikaar Huntmaster's Shoulderpads
-		i(200497),	-- Shikaar Hunter's Shoulderpads
-		i(200498),	-- Shikaar Harrier's Shoulderpads
-		i(200499),	-- Nokhud Battle Shoulderpads
-		i(200500),	-- Nokhud Champion's Shoulderpads
-		i(200501),	-- Nokhud Reaver's Shoulderpads
-		i(200502),	-- Ohn'ir Midnight Shoulderpads
-		i(200503),	-- Ohn'ir Dusklight Shoulderpads
-		i(200504),	-- Ohn'ir Dawnlight Shoulderpads
+
+
 		i(200506),	-- Roused Seedling
 		i(200507),	-- Decayed Roused Seedling
 		i(200508),	-- Propagating Roused Seedling
 		i(200509),	-- Agitated Roused Seedling
-		i(200510),	-- Huntstrider Spear
-		i(200511),	-- Stonework Greatspear
-		i(200512),	-- Teerai Warspear
+
 		i(200513),	-- Maruuk Hunt Spoils
-		i(200514),	-- Salve-Soaked Bandages
 		i(200515),	-- Maruuk Hunt Spoils
 		i(200516),	-- Maruuk Hunt Spoils
-		i(200517),	-- Nokhud Warspear
-		i(200518),	-- Nokhud Goliath's Spear
+
 		i(200519),	-- Mister Toots
-		i(200520),	-- Mammothbone Knife
-		i(200521),	-- Maruuk Boneblade
-		i(200522),	-- Maruukai Smith's Tongs
-		i(200523),	-- Smith's Stoneworked Mallet
-		i(200524),	-- Nokhud Warhammer
-		i(200525),	-- Massive Stone Sledgehammer
+
 		i(200527),	-- Enchanted Arcana Vessel
 		i(200528),	-- Glowing Arcane Jewel
 		i(200529),	-- Constructed Arcana
 		i(200530),	-- Sweet Steamed Meat
-		i(200534),	-- Toghus Poleaxe
+
 		i(200536),	-- Tamed Eagle
 		i(200537),	-- Bundle of Primalist Orders
-		i(200539),	-- Khansguard Shield
-		i(200540),	-- Improvised Maruuk Barrier
-		i(200541),	-- Fur-Lined Safeguard
+
 		i(200542),	-- Breezy Companion
-		i(200543),	-- Clan Teerai Pennant
+
 		i(200544),	-- Mistvale Map: Illegible
-		i(200545),	-- Clan Shikaar Pennant
-		i(200546),	-- Clan Nokhud Pennant
-		i(200547),	-- Clan Ohn'ir Pennant
+
 		i(200548),	-- Maldra's Manacles Key
 		i(200549),	-- Restored Titan Artifact
-		i(200550),	-- Very Comfortable Pelt
-		i(200551),	-- Comfortable Pile of Pelts
+
+
 		i(200552),	-- Torrent Caller's Shell
-		i(200553),	-- Panthis Nectar
-		i(200554),	-- Dropcap Head
-		i(200555),	-- Inferno Seeds
-		i(200556),	-- Enchanted Arcana Vessel
-		i(200557),	-- Enchanted Arcana Vessel
-		i(200558),	-- Enchanted Arcana Vessel
 		i(200559),	-- Cobalt Duelist's Saber
-		i(200560),	-- Enchanted Arcana Vessel
-		i(200561),	-- Deepwater Lure
+
+
 		i(200563),	-- Primal Ritual Shell
 		i(200586),	-- Derelict Sunglasses
-		i(200587),	-- Leatherbound Expedition Note
-		i(200588),	-- Meaty Stem
-		i(200589),	-- Hydro Life Seed
-		i(200590),	-- Carefully Rolled Message
-		i(200592),	-- Dirty Old Satchel
-		i(200593),	-- Sealed Expedition Note
-		i(200594),	-- Thaelin's Second Favorite Comb
-		i(200595),	-- Odorous Parchment
-		i(200596),	-- Letter from Thaelin Darkanvil
-		i(200597),	-- Lover's Bouquet
-		i(200598),	-- Meluun's Green Curry
-		i(200606),	-- Previously Owned Map
-		i(200607),	-- Half-Eaten Banana
+
+
+
 		i(200609),	-- Dragon Racing Purse - First Place
 		i(200610),	-- Dragon Racing Purse - Second Place
 		i(200611),	-- Dragon Racing Purse - Third Place
 		i(200613),	-- Aylaag Windstone Fragment
-		i(200619),	-- Scaralesh's Special
-		i(200620),	-- Inflaming Incense
-		i(200621),	-- Soothing Incense
-		i(200622),	-- Focusing Incense
-		i(200623),	-- Wind-Grown Grass
-		i(200628),	-- Somewhat-Stabilized Arcana
-		i(200630),	-- Ohn'ir Windsage's Hearthstone
-		i(200631),	-- Happy Tuskarr Palooza
-		i(200635),	-- Refine Dragon Isles Herbs
-		i(200636),	-- Primal Invocation Quintessence
-		i(200637),	-- Talisman of the Maruuk
-		i(200638),	-- Bubblefilled Flounder
-		i(200639),	-- Talisman of Ohn'ahra
 
-		i(200646),	-- Gruff Fisher's Net
-		i(200647),	-- Crystalline Shatter
-		i(200648),	-- Elemental Shatter
+
+		i(200628),	-- Somewhat-Stabilized Arcana
+
+		i(200631),	-- Happy Tuskarr Palooza
+
+		i(200636),	-- Primal Invocation Quintessence
+
+		i(200638),	-- Bubblefilled Flounder
+
+
+
 		i(200652),	-- Alchemical Flavor Pocket
 		i(200653),	-- Azure Staff of Arcana
 		i(200654),	-- Magmatic Vestments
@@ -2075,22 +2006,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200687),	-- Stormshale Cuffs
 		i(200688),	-- Tights of Twisting Winds
 		i(200689),	-- Rimetalon Band
-		i(200690),	-- Ritherem Petals
-		i(200691),	-- Claw Thistle Barbs
-		i(200692),	-- Gift of the Grove
-		i(200693),	-- Terata Leaves
-		i(200694),	-- River Bell Bulbs
-		i(200695),	-- Fangtooth Petals
-		i(200696),	-- Winter Berries
-		i(200697),	-- Blightshroom
-		i(200698),	-- Ley Orb
-		i(200699),	-- Milkweed Fibers
-		i(200700),	-- Cuppressa Berries
-		i(200701),	-- Titian Extract
-		i(200702),	-- Magenta Titian Extract
-		i(200703),	-- Vine Flower Fibers
-		i(200704),	-- Gratona Seed
-		i(200705),	-- Thaldraszus Root
+
 		i(200708),	-- Polymorphic Cloak of Absorption
 		i(200710),	-- Ashjra'kamas
 		i(200733),	-- Storm Chaser's Waistguard
@@ -2122,96 +2038,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200761),	-- Smoldering Sulfuron Signet
 		i(200762),	-- Earthspeaker's Brooch
 		i(200763),	-- Frosted Scale Drape
-		i(200764),	-- Slimy Shinies
-		i(200765),	-- Reed Sculpture
-		i(200766),	-- Bakar Fangs
-		i(200767),	-- Energized Crystal
-		i(200768),	-- Assorted Salamanther Lures
-		i(200769),	-- Ceramic Shards
-		i(200770),	-- A Brief History of Azeroth
-		i(200771),	-- Projected Starmap
-		i(200772),	-- Knowledge Discs
-		i(200773),	-- Otherworldly Artifact
-		i(200774),	-- Contained Void Sample
-		i(200775),	-- Self-Luminous Orb
-		i(200776),	-- Igneous Rock Sculpture
-		i(200777),	-- Obsidian Shards
-		i(200778),	-- Lava Blowing for Dummies
-		i(200779),	-- Lava Jars
-		i(200780),	-- Dragon Horns
-		i(200781),	-- Rejuvenating Ashes
-		i(200782),	-- Bejeweled Horseshoes
-		i(200783),	-- Adorned Ohunan Jess
-		i(200784),	-- Hunting Trophies
-		i(200785),	-- Argali Wool Rug
-		i(200786),	-- Marbled Broadhoof Brisket
-		i(200787),	-- Strong Exotic Spices
-		i(200788),	-- Mantacorn Horns
-		i(200789),	-- Beckoning Kite
-		i(200790),	-- Pungent Soup Spices
-		i(200791),	-- Braided Ottuk Hair Fishing Line
-		i(200792),	-- Taxidermied Catch
-		i(200793),	-- Decorative Sail
-		i(200794),	-- Fresh Critter Carcass
-		i(200795),	-- Sickly Egg Sacs
-		i(200796),	-- Rotting Wood Totem
-		i(200797),	-- Repulsive Perfume
-		i(200798),	-- Bottled Diseased Parasites
-		i(200799),	-- Decaying Pelt Bolt
-		i(200800),	-- Fool's Gold
-		i(200801),	-- Gilded Statuette
-		i(200802),	-- Signet of the Dragonflights
-		i(200803),	-- Through the Stained-Glass
-		i(200804),	-- Ancestor's Scales
-		i(200805),	-- Fallen Watcher Remains
-		i(200806),	-- Woodcarving Stone
-		i(200807),	-- Wooden Ursine Figure
-		i(200808),	-- Runestone Shards
-		i(200809),	-- Trinket-Packed Collar
-		i(200810),	-- Wooden Stonegrabber Figurine
-		i(200811),	-- Congealed Sap Droplet
-		i(200812),	-- Unmelting Crystalline Structure
-		i(200813),	-- Assorted Fractals
-		i(200814),	-- Congealing Shard
-		i(200815),	-- Deposited
-		i(200816),	-- Partially Damp Measuring Stick
-		i(200817),	-- Azure Splinters
-		i(200818),	-- Eternal Flame
-		i(200819),	-- Volatile Sparks
-		i(200820),	-- Dry Wood Log
-		i(200821),	-- Celsius 232
-		i(200822),	-- Jar of Ashes
-		i(200823),	-- 300x Magnifying Glass
-		i(200824),	-- Bottled Lightning
-		i(200825),	-- Assorted Debris
-		i(200826),	-- Stored Humid Air
-		i(200827),	-- Weathered Sculpture
-		i(200828),	-- Pocketed Clouds
-		i(200829),	-- Pareidolic Image
-		i(200830),	-- Instantly Drying Clay
-		i(200831),	-- Opalescent Figure
-		i(200832),	-- Geode Splinters
-		i(200833),	-- Titan Watcher Replica
-		i(200834),	-- Can You Smell It?
-		i(200835),	-- Sand Pouch
-		i(200836),	-- Arcane Infused Crystals
-		i(200837),	-- So You Think You Can Rune?
-		i(200838),	-- Insignia of the Kirin Tor
-		i(200839),	-- Magical Cleaning Broom
-		i(200840),	-- Encyclopaedia Draeconica Set
-		i(200841),	-- Miniature Prismatic Disc
-		i(200842),	-- Power Depleted Staff
-		i(200843),	-- Severely Chipped Broadsword
-		i(200844),	-- Overly Bent Bow
-		i(200845),	-- Heavily Deformed Mace
-		i(200846),	-- Fletching-less Arrows
-		i(200847),	-- Frail Shield
-		i(200848),	-- Decorative Bouquet
-		i(200849),	-- Tear of the Dreamer
-		i(200850),	-- Dream-Infused Seed
-		i(200851),	-- Self-Trimming Bonsai
-		i(200852),	-- Nourishing Fertilizer
-		i(200853),	-- How to Grow a Tree in 10 Days
 		i(200854),	-- Cooked Caviar
 		i(200856),	-- Sideboat
 		i(200857),	-- Talisman of Sargha
@@ -2222,7 +2048,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200863),	-- Glimmering Nozdorite Cluster
 		i(200865),	-- Glimmering Ysemerald Cluster
 		i(200866),	-- Glimmering Malygite Cluster
-		i(200867),	-- Glimmering Neltharite Cluster
 		i(200868),	-- Integrated Primal Fire
 		i(200869),	-- Ohn Lite Branded Horn
 		i(200870),	-- Vorquin Essence
@@ -2235,7 +2060,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200878),	-- Wheeled Floaty Boaty Controller
 		i(200879),	-- Zenet Egg
 		i(200880),	-- Wind-Sealed Mana Capsule
-		i(200882),	-- Big Kinook's Spare Ladle
 		i(200885),	-- Cinna-Cinderbloom Tea
 		i(200886),	-- Lemon Silverleaf Tea
 		i(200887),	-- Charred Porter
@@ -2468,7 +2292,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201307),	-- Raider's Lost Spire
 		i(201308),	-- Scorpion Slicer
 		i(201309),	-- Tomb Raider's Shank
-		i(201323),	-- Essence of Awakening
+
 		i(201325),	-- Draconic Augment Rune
 		i(201326),	-- Draconic Satchel of Cooperation
 		i(201327),	-- Emerald Dreamtime
@@ -3198,7 +3022,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193572),	-- [PH] Mech Baby Duck
 			i(193587),	-- [PH] Yellow Duck
 			i(193614),	-- [PH] Blue Baby Thunder Lizard
-			i(193618),	-- [PH] Green Baby Thunder Lizard
+
 			i(193834),	-- [PH] Black Woodpecker
 			i(193835),	-- [PH] Red Woodpecker
 			i(193837),	-- [PH] Blue Baby Primal Beaver

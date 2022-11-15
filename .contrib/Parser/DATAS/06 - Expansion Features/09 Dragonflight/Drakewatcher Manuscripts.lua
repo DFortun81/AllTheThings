@@ -46,7 +46,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(196964),	-- Cliffside Wylderdrake: Gold and Black Armor (DM!)
 		i(196966),	-- Cliffside Wylderdrake: Gold and Orange Armor
 		i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
-		i(197011),	-- Cliffside Wylderdrake: Green Scales
+		i(197011),	-- Cliffside Wylderdrake: Green Scales (DM!)
 		i(196975),	-- Cliffside Wylderdrake: Head Fin
 		i(196976),	-- Cliffside Wylderdrake: Head Mane
 		i(196992),	-- Cliffside Wylderdrake: Heavy Horns
@@ -103,7 +103,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(197094),	-- Highland Drake: Gold and Red Armor
 		i(197095),	-- Highland Drake: Gold and White Armor
 		i(197127),	-- Highland Drake: Grand Thorn Horns
-		i(197143),	-- Highland Drake: Green Scales
+		i(197143),	-- Highland Drake: Green Scales (DM!)
 		i(197131),	-- Highland Drake: Hairy Cheek
 		i(197122),	-- Highland Drake: Heavy Horns
 		i(197147),	-- Highland Drake: Heavy Scales
@@ -241,9 +241,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(197617),	-- Windborne Velocidrake: Heavy Scales
 		i(197600),	-- Windborne Velocidrake: Helm
 		i(197619),	-- Windborne Velocidrake: Hooked Snout
-		i(197596),	-- Windborne Velocidrake: Horned Jaw
+		i(197596),	-- Windborne Velocidrake: Horned Jaw (DM!)
 		i(197589),	-- Windborne Velocidrake: Large Head Fin
-		i(197618),	-- Windborne Velocidrake: Long Snout
+		i(197618),	-- Windborne Velocidrake: Long Snout (DM!)
 		i(197585),	-- Windborne Velocidrake: Maned Back
 		i(197604),	-- Windborne Velocidrake: Ox Horns
 		i(197628),	-- Windborne Velocidrake: Plated Neck
@@ -257,7 +257,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(197590),	-- Windborne Velocidrake: Small Head Fin
 		i(197586),	-- Windborne Velocidrake: Spiked Back
 		i(197629),	-- Windborne Velocidrake: Spiked Neck
-		i(197623),	-- Windborne Velocidrake: Spiked Tail
+		i(197623),	-- Windborne Velocidrake: Spiked Tail (DM!)
 		i(197592),	-- Windborne Velocidrake: Spined Head (DM!)
 		i(197607),	-- Windborne Velocidrake: Split Horns
 		i(197579),	-- Windborne Velocidrake: Steel and Orange Armor (DM!)
@@ -268,6 +268,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 		i(197616),	-- Windborne Velocidrake: White Scales
 		i(197582),	-- Windborne Velocidrake: White and Pink Armor
 		i(197634),	-- Windborne Velocidrake: Windswept Pattern (DM!)
-		i(197610),	-- Windborne Velocidrake: Yellow Horns
+		i(197610),	-- Windborne Velocidrake: Yellow Horns (DM!)
 	}),
 })));

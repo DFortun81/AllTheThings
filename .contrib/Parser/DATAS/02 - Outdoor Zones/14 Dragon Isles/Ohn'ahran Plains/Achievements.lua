@@ -42,57 +42,60 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 				["coord"] = { 61.6, 64.4, OHNAHRAN_PLAINS },
 			}),
 			ach(16423, {	-- Honor Our Ancestors
-				i(200630),	-- Ohn'ir Windsage's Hearthstone (TOY!)
-				crit(1, {	-- Maruukai Ancestor
-					["crs"] = { 197048 },	-- Mariq Dotur
-					["coord"] = { 59.7, 37.7, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 197776, 1}, },	-- 1xThrice-Spiced Mammoth Kabob
-				}),
-				crit(2, {	-- Timberstep Outpost Ancestor
-					["crs"] = { 197050 },	-- Muqur Swiftshot
-					["coord"] = { 84.9, 23.4, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 200018, 1}, },	-- 1xEnchant Boots - Plainsrunner's Breeze
-				}),
-				crit(3, {	-- Horn of Drusahl Ancestor
-					["crs"] = { 197051 },	-- Deritetsin the Carver
-					["coord"] = { 75.9, 42.1, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 194690, 1}, },	-- 1xHorn o' Mead
-				}),
-				crit(4, {	-- Toghusuq Village Ancestor
-					["crs"] = { 197052 },	-- Faraqseng Khan
-					["coord"] = { 73.0, 55.0, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 192648, 1}, },	-- 1xPristine Beast Fur
-				}),
-				crit(5, {	-- Shikaar Highlands Ancestor
-					["crs"] = { 197053 },	-- Shikari Khan
-					["coord"] = { 84.6, 48.4, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 193470, 1}, },	-- 1xFeral Hide Drums
-				}),
-				crit(6, {	-- The Carving Winds Ancestor
-					["crs"] = { 197054 },	-- Himia, the Blessed
-					["coord"] = { 74.7, 69.8, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 190327, 1}, },	-- 1xAwakened Air
-				}),
-				crit(7, {	-- Sylvan Glade Ancestor
-					["crs"] = { 197055 },	-- Talis
-					["coord"] = { 63.3, 57.3, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 197788, 2}, },	-- 2xBraised Bruffalon Brisket
-				}),
-				crit(8, {	-- Ohn'iri Springs Ancestor
-					["crs"] = { 197056 },	-- Ohn Kanosung
-					["coord"] = { 54.7, 78.4, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 192644, 1}, },	-- 1xAeriform Speck
-				}),
-				crit(9, {	-- Teerakai Ancestor
-					["crs"] = { 197057 },	-- Jhakan Khan
-					["coord"] = { 41.6, 56.7, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 190501, 1}, },	-- 1xPrimal Molten Greatbelt
-				}),
-				crit(10, {	-- The Eternal Kurgans Ancestor
-					["crs"] = { 197058 },	-- Dihar the Unyielding
-					["coord"] = { 32.8, 70.3, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 191470, 5}, },	-- 5xWrithebark
-				}),
+				["cost"] = { { "i", 201323, 1 }, }, 	-- 1xEssence of Awakening
+				["g"] = {
+					i(200630),	-- Ohn'ir Windsage's Hearthstone (TOY!)
+					crit(1, {	-- Maruukai Ancestor
+						["crs"] = { 197048 },	-- Mariq Dotur
+						["coord"] = { 59.7, 37.7, OHNAHRAN_PLAINS },
+						["cost"] = { { "i", 197776, 1}, },	-- 1xThrice-Spiced Mammoth Kabob
+					}),
+					crit(2, {	-- Timberstep Outpost Ancestor
+						["crs"] = { 197050 },	-- Muqur Swiftshot
+						["coord"] = { 84.9, 23.4, OHNAHRAN_PLAINS },
+						["cost"] = { { "i", 200018, 1}, },	-- 1xEnchant Boots - Plainsrunner's Breeze
+					}),
+					crit(3, {	-- Horn of Drusahl Ancestor
+						["crs"] = { 197051 },	-- Deritetsin the Carver
+						["coord"] = { 75.9, 42.1, OHNAHRAN_PLAINS },
+						["cost"] = { { "i", 194690, 1}, },	-- 1xHorn o' Mead
+					}),
+					crit(4, {	-- Toghusuq Village Ancestor
+						["crs"] = { 197052 },	-- Faraqseng Khan
+						["coord"] = { 73.0, 55.0, OHNAHRAN_PLAINS },
+						["cost"] = { { "i", 192648, 1}, },	-- 1xPristine Beast Fur
+					}),
+					crit(5, {	-- Shikaar Highlands Ancestor
+						["crs"] = { 197053 },	-- Shikari Khan
+						["coord"] = { 84.6, 48.4, OHNAHRAN_PLAINS },
+						["cost"] = { { "i", 193470, 1}, },	-- 1xFeral Hide Drums
+					}),
+					crit(6, {	-- The Carving Winds Ancestor
+						["crs"] = { 197054 },	-- Himia, the Blessed
+						["coord"] = { 74.7, 69.8, OHNAHRAN_PLAINS },
+						["cost"] = { { "i", 190327, 1}, },	-- 1xAwakened Air
+					}),
+					crit(7, {	-- Sylvan Glade Ancestor
+						["crs"] = { 197055 },	-- Talis
+						["coord"] = { 63.3, 57.3, OHNAHRAN_PLAINS },
+						["cost"] = { { "i", 197788, 2}, },	-- 2xBraised Bruffalon Brisket
+					}),
+					crit(8, {	-- Ohn'iri Springs Ancestor
+						["crs"] = { 197056 },	-- Ohn Kanosung
+						["coord"] = { 54.7, 78.4, OHNAHRAN_PLAINS },
+						["cost"] = { { "i", 192644, 1}, },	-- 1xAeriform Speck
+					}),
+					crit(9, {	-- Teerakai Ancestor
+						["crs"] = { 197057 },	-- Jhakan Khan
+						["coord"] = { 41.6, 56.7, OHNAHRAN_PLAINS },
+						["cost"] = { { "i", 190501, 1}, },	-- 1xPrimal Molten Greatbelt
+					}),
+					crit(10, {	-- The Eternal Kurgans Ancestor
+						["crs"] = { 197058 },	-- Dihar the Unyielding
+						["coord"] = { 32.8, 70.3, OHNAHRAN_PLAINS },
+						["cost"] = { { "i", 191470, 5}, },	-- 5xWrithebark
+					}),
+				},
 			}),
 			ach(16576, {	-- Ohn'ahran Plains Glyph Hunter
 				-- Meta Achievement
