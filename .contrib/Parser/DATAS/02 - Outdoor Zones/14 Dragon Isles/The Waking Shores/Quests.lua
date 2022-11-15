@@ -1071,7 +1071,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 				["coord"] = { 75.8, 33., THE_WAKING_SHORES },
 			}),
 			q(66998, {	-- Fighting Fire with... Water
-				["sourceQuests"] = { 65996 },	-- Veteran Reinforcements, -- TODO: Might not be correct SQ
+				["sourceQuests"] = { 65995 },	-- The Obsidian Citadel
 				["provider"] = { "n", 188297 },	-- Caretaker Ventraz
 				["coord"] = { 59.1, 34.8, THE_WAKING_SHORES },
 				["g"] = {
