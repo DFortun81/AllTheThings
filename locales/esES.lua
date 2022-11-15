@@ -839,7 +839,7 @@ for key,value in pairs({
 			--TODO: [-954] = "Inquisitors",							-- Inquisitors
 			--TODO: [-955] = "High Inquisitors",					-- High Inquisitors
 			--TODO: [-956] = "Grand Inquisitors",					-- Grand Inquisitors
-			[-967] = "Restauración del espejo",						-- "Mirror Restoration",
+			[-967] = "Restauración del espejo",						-- Mirror Restoration
 			--TODO: [-968] = "Set A",								-- Set A
 			--TODO: [-969] = "Set B",								-- Set B
 			--TODO: [-970] = "Set C",								-- Set C
@@ -880,26 +880,26 @@ for key,value in pairs({
 		--TODO: [-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-			--TODO: [-5200] = "Base Appearance",
-			--TODO: [-5201] = "Class Hall Campaign",
+			--TODO: [-5200] = "Base Appearance",					-- Base Appearance
+			--TODO: [-5201] = "Class Hall Campaign",				-- Class Hall Campaign
 			[-5202] = "Equilibrio de poderes",						-- Balance of Power
-			--TODO: [-5203] = "Prestige Rewards",
-			--TODO: [-5204] = "Challenge Appearance",
-			--TODO: [-5205] = "Hidden Appearance",
+			--TODO: [-5203] = "Prestige Rewards",					-- Prestige Rewards
+			--TODO: [-5204] = "Challenge Appearance",				-- Challenge Appearance
+			--TODO: [-5205] = "Hidden Appearance",					-- Hidden Appearance
 		-- Class Sets
 			--TODO: [-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER.." Item Sets",	-- Class Trial Item Sets
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------
-		--TODO: [-10071] = "Visions of N'Zoth",
-		--TODO: [-10072] = "N'Zoth Assault",
+		--TODO: [-10071] = "Visions of N'Zoth",						-- Visions of N'Zoth
+		--TODO: [-10072] = "N'Zoth Assault",						-- N'Zoth Assault
 		[-10075] = "Asalto: Avance amathet",						-- Assault: Amathet Advance
 		[-10076] = "Asalto: El Imperio Negro",						-- Assault: The Black Empire
 		[-10077] = "Asalto: Clanes enfrentados",					-- Assault: The Warring Clans
 		[-10078] = "Asalto: El enjambre interminable",				-- Assault: The Endless Swarm
 		[-10079] = "Asalto: Aqir desenterrados",					-- Assault: Aqir Unearthed
-		--TODO: [-10081] = "Corrupted Area",
-		--TODO: [-10082] = "Lost Area",
+		--TODO: [-10081] = "Corrupted Area",						-- Corrupted Area
+		--TODO: [-10082] = "Lost Area",								-- Lost Area
 		-- Shadowlands Achievement Headers
 			-- 9.1
 				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults

@@ -685,10 +685,10 @@ for key,value in pairs({
 		--TODO: [-81] = "Third Chest",
 		--TODO: [-82] = "Final Chest",
 	-- SM
-		[-85] = "Friedhof", 									-- Graveyard
-		[-86] = "Bibliothek",									-- Library
-		[-87] = "Waffenkammer",								-- Armory
-		[-88] = "Kathedrale",									-- Cathedral
+		[-85] = "Friedhof", 										-- Graveyard
+		[-86] = "Bibliothek",										-- Library
+		[-87] = "Waffenkammer",										-- Armory
+		[-88] = "Kathedrale",										-- Cathedral
 	-- Garrisons
 		[-99] = "Gebäude",											-- Buildings
 	-- Alliance [Swaps based on faction ONLY after a reloadui]
@@ -697,7 +697,7 @@ for key,value in pairs({
 		--TODO: [-132] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137),	-- Feralas Active
 		--TODO: [-133] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741),	-- Duskwood Activated
 	-- Garrison
-		[-152] = "Garnisonskampagne",						-- Garrison Campaign
+		[-152] = "Garnisonskampagne",								-- Garrison Campaign
 	-- Druid Feral Druid Hidden Artifact Appearance
 		--TODO: [-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),	-- The Hinterlands Activated
 		--TODO: [-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),	-- Feralas Activated
@@ -717,7 +717,7 @@ for key,value in pairs({
 	-- Allied Races
 		[-254] = "Verbündete Völker & Traditionsrüstung",			-- Allied Races & Heritage
 	-- First Questline Draenor
-		[-356] = "Angriff auf das Dunkle Portal",				-- Assault on the Dark Portal
+		[-356] = "Angriff auf das Dunkle Portal",					-- Assault on the Dark Portal
 	-- Outposts in Draenor
 		--TODO: [-361] = GetSpellInfo(182108).." Tower",			-- Artillery Tower
 	-- Legendaries
@@ -725,10 +725,10 @@ for key,value in pairs({
 	-- Operation: Mechagon
 		[-379] = "Schrottplatz",									-- Junkyard
 	-- Icecrown Citadel
-		[-393] = "Sturm auf die Zitadelle",					-- Storming the Citadel
-		[-394] = "Die Seuchenwerke",							-- The Plagueworks
+		[-393] = "Sturm auf die Zitadelle",							-- Storming the Citadel
+		[-394] = "Die Seuchenwerke",								-- The Plagueworks
 	-- BFA Outposts
-		[-397] = "Außenposten",								-- Outposts
+		[-397] = "Außenposten",										-- Outposts
 	-- 5.3
 		[-398] = "Schlachtfeld: Brachland",							-- Battlefield: Barrens
 	-- T0.5 & Classic
@@ -749,8 +749,8 @@ for key,value in pairs({
 		--TODO: [-525] = EXPANSION_NAME5..": Iron Horde Incursion",	-- Warlords of Draenor: Iron Horde Incursion
 		--TODO: [-526] = EXPANSION_NAME6..": Legion Invasion",		-- Legion: Legion Invasion
 		--TODO: [-527] = EXPANSION_NAME7..": War of the Thorns",	-- Battle for Azeroth: War of the Thorns
-		[-532] = "Heroes of the Storm",						-- Heroes of the Storm
-		[-533] = "Hearthstone",								-- Hearthstone
+		[-532] = "Heroes of the Storm",								-- Heroes of the Storm
+		[-533] = "Hearthstone",										-- Hearthstone
 		--TODO: [-534] = "Collector's Edition",						-- Collector's Edition
 		[-536] = "Hearthstone Söldner",								-- Hearthstone Mercenaries
 		[-537] = "20. Geburtstag von Diablo",						-- Diablo 20th Anniversary
@@ -767,10 +767,10 @@ for key,value in pairs({
 		--TODO: [-583] = "WotLK Classic Northrend Epic Upgrade",	-- WotLK Classic Northrend Epic Upgrade
 	-- PvP Header
 		-- PvP Set Names
-			[-659] = "Aspiranten Rüstung",						-- Aspirant PvP Gear (WoD, BfA)
-			[-660] = "Kämpfer Rüstung",						-- Combatant PvP Gear (WoD, Legion)
-			[-661] = "Gladiatoren Rüstung",						-- Gladiator PvP Gear
-			[-662] = "Elite Rüstung",							-- Elite PvP Gear
+			[-659] = "Aspiranten Rüstung",							-- Aspirant PvP Gear (WoD, BfA)
+			[-660] = "Kämpfer Rüstung",								-- Combatant PvP Gear (WoD, Legion)
+			[-661] = "Gladiatoren Rüstung",							-- Gladiator PvP Gear
+			[-662] = "Elite Rüstung",								-- Elite PvP Gear
 		-- The Burning Crusade PvP Seasons
 			--TODO: [-664] = select(2, GetAchievementInfo(2091))..": Season 1",-- Gladiator: Season 1
 			--TODO: [-665] = select(2, GetAchievementInfo(418))..": Season 2",-- Merciless Gladiator: Season 2
@@ -801,15 +801,15 @@ for key,value in pairs({
 	-- Chests
 		[-851] = "Truhe des Schwarzen Imperiums",					-- Black Empire Cache
 	-- Heart of Azeroth
-		[-853] = "Alle Rollen",								-- All Roles
-		[-854] = "DDs",										-- DPS
-		[-855] = "Heiler",									-- Healers
-		[-856] = "Tanks",									-- Tanks
-		[-857] = "Mythic+",									-- Mythic+
-		[-858] = "Rang 1",									-- Rank 1
-		[-859] = "Rang 2",									-- Rank 2
-		[-860] = "Rang 3",									-- Rank 3
-		[-861] = "Rang 4",									-- Rank 4
+		[-853] = "Alle Rollen",										-- All Roles
+		[-854] = "DDs",												-- DPS
+		[-855] = "Heiler",											-- Healers
+		[-856] = "Tanks",											-- Tanks
+		[-857] = "Mythic+",											-- Mythic+
+		[-858] = "Rang 1",											-- Rank 1
+		[-859] = "Rang 2",											-- Rank 2
+		[-860] = "Rang 3",											-- Rank 3
+		[-861] = "Rang 4",											-- Rank 4
 	-- Shadowlands Header
 		--TODO: [-903] = "Zone Rewards",							-- Zone Rewards
 		[-907] = "Tote Graumähne",									-- Dead Blanchy
@@ -830,13 +830,13 @@ for key,value in pairs({
 			[-1005] = "Ungezähmter Geist",							-- Untamed Spirit
 		-- SL Bastion/Kyrian
 			[-940] = "Rat der Aufgestiegenen",						-- Ascended Counil
-			[-973] = "Loyalität",								-- Loyalty
-			[-975] = "Demut",							-- Humility
+			[-973] = "Loyalität",									-- Loyalty
+			[-975] = "Demut",										-- Humility
 		-- SL Revendreth/Venthyr
-			[-954] = "Inquisitor",							-- Inquisitors
-			[-955] = "Hochinquisitor ",					-- High Inquisitors
-			[-956] = "Großinquisitor",					-- Grand Inquisitors
-			[-967] = "Spiegelwiederherstellung",					-- "Mirror Restoration",
+			[-954] = "Inquisitor",									-- Inquisitors
+			[-955] = "Hochinquisitor",								-- High Inquisitors
+			[-956] = "Großinquisitor",								-- Grand Inquisitors
+			[-967] = "Spiegelwiederherstellung",					-- Mirror Restoration
 			--TODO: [-968] = "Set A",								-- Set A
 			--TODO: [-969] = "Set B",								-- Set B
 			--TODO: [-970] = "Set C",								-- Set C
@@ -878,28 +878,28 @@ for key,value in pairs({
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			--TODO: [-5200] = "Base Appearance",
-			[-5201] = "Ordenskampagne",
+			[-5201] = "Ordenskampagne",								-- Class Hall Campaign
 			[-5202] = "Gleichgewicht der Kräfte",					-- Balance of Power
-			--TODO: [-5203] = "Prestige Rewards",
-			--TODO: [-5204] = "Challenge Appearance",
-			--TODO: [-5205] = "Hidden Appearance",
+			--TODO: [-5203] = "Prestige Rewards",					-- Prestige Rewards
+			--TODO: [-5204] = "Challenge Appearance",				-- Challenge Appearance
+			--TODO: [-5205] = "Hidden Appearance",					-- Hidden Appearance
 		-- Class Sets
 			--TODO: [-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER.." Item Sets",	-- Class Trial Item Sets
 
-		[-7776] = "Winterfeiernder",						-- Winter Revelers (for Winter Veil)
+		[-7776] = "Winterfeiernder",								-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------
-		[-10071] = "Visionen von N'Zoth",
-		--TODO: [-10072] = "N'Zoth Assault",
+		[-10071] = "Visionen von N'Zoth",							-- Visions of N'Zoth
+		--TODO: [-10072] = "N'Zoth Assault",						-- N'Zoth Assault
 		[-10075] = "Angriff: Vorstoß der Amathet",					-- Assault: Amathet Advance
 		[-10076] = "Angriff: Das Schwarze Imperium",				-- Assault: The Black Empire
 		[-10077] = "Angriff: Die verfeindeten Klans",				-- Assault: The Warring Clans
 		[-10078] = "Angriff: Der unendliche Schwarm",				-- Assault: The Endless Swarm
 		[-10079] = "Angriff: Ausgegrabene Aqir",					-- Assault: Aqir Unearthed
-		--TODO: [-10081] = "Corrupted Area",
-		--TODO: [-10082] = "Lost Area",
+		--TODO: [-10081] = "Corrupted Area",						-- Corrupted Area
+		--TODO: [-10082] = "Lost Area",								-- Lost Area
 		-- Shadowlands Achievement Headers
 			-- 9.1
-				[-10083] = "Paktangriffe",				-- Covenant Assaults
+				[-10083] = "Paktangriffe",							-- Covenant Assaults
 			--	hopefully temp objects, these currently do not have accessible object data on wowhead
 				[-1433951] = "Zerbrochener Spiegel A-1",			-- Broken Mirror
 				[-1433952] = "Zerbrochener Spiegel A-2",			-- Broken Mirror
@@ -1004,7 +1004,7 @@ for key,value in pairs({
 	[6751] = "Sonderbare fruchtbeladene Pflanze",	-- Strange Fruited Plant
 	[6752] = "Sonderbare wedelbestückte Pflanze",	-- Strange Fronded Plant
 	[7510] = "Sprießender Wedel",	-- Sprouted Frond
-	[12564] = "Auftragsmordnotiz",	-- Assassination Notice
+	[12564] = "Auftragsmordnotiz",	-- Assassination Notice	--TODO: This was manually translated
 	[15084] = "Der Funkelmat 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
 	[15085] = "Der Funkelmat 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
 	[19022] = "Abgenutzte Truhe",	-- Worn Chest
@@ -1120,7 +1120,7 @@ for key,value in pairs({
 	[174709] = "Verderbte Windblüte",	-- Corrupted Windblossom
 	[174712] = "Verderbte Liedblume",	-- Corrupted Songflower
 	[174713] = "Verderbte Liedblume",	-- Corrupted Songflower
-	[174793] = "Brutstätte der Gorishi",	-- Gorishi Hive Hatchery
+	[174793] = "Brutstätte der Gorishi",	-- Gorishi Hive Hatchery	--TODO: This was manually translated
 	[175320] = "GESUCHT: Gurgelbacke!",	-- WANTED: Murkdeep!
 	[175324] = "Frosthagelsplitter",	-- Frostmaul Shards
 	[175384] = "Ei eines Steilhangflügeldrachen",	-- Highperch Wyvern Egg
@@ -1162,7 +1162,7 @@ for key,value in pairs({
 	[177289] = "Geißelkessel",	-- Scourge Cauldron
 	[177491] = "Termitenfass",	-- Termite Barrel
 	[177667] = "Zerrissene Rolle",	-- Torn Scroll
-	[177684] = "Stein von Shy-Rotam",	-- Stone of Shy-Rotam
+	[177684] = "Stein von Shy-Rotam",	-- Stone of Shy-Rotam	--TODO: This was manually translated
 	[177787] = "Rackmores Logbuch",	-- Rackmore's Log
 	[177904] = "Steckbrief: Besseleth",	-- Wanted Poster: Besseleth
 	[177964] = "Tiefenstein",	-- Fathom Stone
@@ -1180,7 +1180,7 @@ for key,value in pairs({
 	[179913] = "Zu den Waffen!",	-- Call to Arms!
 	[180229] = "Verwunschener Hoodoohaufen",	-- Jinxed Hoodoo Pile
 	[180248] = "Ein Schwarm Leckerfische",	-- School of Tastyfish
-	[180327] = "Kohlenpfanne des Wahnsinns",	-- Brazier of Madness
+	[180327] = "Kohlenpfanne des Wahnsinns",	-- Brazier of Madness	--TODO: This was manually translated
 	[180366] = "Ramponierter Ausrüstungskasten",	-- Battered Tackle Box
 	[180368] = "Schrifttafel des Wahnsinns",	-- Tablet of Madness
 	[180448] = "Steckbrief: Totenstachel",	-- Wanted Poster: Deathclasp
@@ -1245,9 +1245,9 @@ for key,value in pairs({
 	[185166] = "Steckbrief",	-- Wanted Poster
 	[185168] = "Verstärkte Teufelseisentruhe",	-- Reinforced Fel Iron Chest
 	[186267] = "Kürbisschrein",	-- Pumpkin Shrine
-	[186278] = "Brennendes Wrack",	-- Burning Wreckage
+	[186278] = "Brennendes Wrack",	-- Burning Wreckage	--TODO: This was manually translated
 	[186301] = "Waffen der Schwarzhufe",	-- Blackhoof Armaments
-	[186322] = "Monument der Familie Hyal",	-- Hyal Family Monument
+	[186322] = "Monument der Familie Hyal",	-- Hyal Family Monument	--TODO: This was manually translated
 	[186329] = "Klanbanner der Steinbrecher",	-- Stonemaul Clan Banner
 	[186423] = "Hexenfluch",	-- Witchbane
 	[186426] = "Steckbrief",	-- Wanted Poster
@@ -1348,7 +1348,7 @@ for key,value in pairs({
 	[190768] = "Verwitterte Kiste",	-- Timeworn Coffer
 	[190917] = "Liegengelassene Post",	-- Abandoned Mail
 	[190936] = "Seuchenkessel",	-- Plague Cauldron
-	[191136] = "Durchtränkter Mutterboden",	-- Soaked Fertile Dirt
+	[191136] = "Durchtränkter Mutterboden",	-- Soaked Fertile Dirt	--TODO: This was manually translated
 	[191209] = "Verteidigung des funkenberührten Kristalls",	-- Sparktouched Crystal Defenses
 	[191728] = "GESUCHT!",	-- Wanted!
 	[191760] = "Konsole der Bibliothek des Erfinders",	-- Inventor's Library Console
@@ -1516,7 +1516,7 @@ for key,value in pairs({
 	[210565] = "Dunkle Erde",	-- Dark Soil
 	[211424] = "Alchemieschriftrolle",	-- Alchemy Scroll
 	[211754] = "Seltsamer Text",	-- Curious Text
-	[211807] = "Mogutruhe",	-- Mogu Chest
+	[211807] = "Mogutruhe",	-- Mogu Chest	--TODO: This was manually translated
 	[212181] = "Uralte Statue",	-- Ancient Statute
 	[212389] = "Rolle der Vorzeichen",	-- Scroll of Auspice
 	[213362] = "Schiffstruhe",	-- Ship's Locker

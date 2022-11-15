@@ -1957,7 +1957,7 @@ app.L = {
 		[-955] = "High Inquisitors",											-- High Inquisitors
 		[-956] = "Grand Inquisitors",											-- Grand Inquisitors
 		[-960] = COVENANT_SANCTUM_FEATURE_VENTHYR,								-- The Ember Court
-		[-967] = "Mirror Restoration",											-- "Mirror Restoration",
+		[-967] = "Mirror Restoration",											-- Mirror Restoration
 		[-968] = "Set A",														-- Set A
 		[-969] = "Set B",														-- Set B
 		[-970] = "Set C",														-- Set C
@@ -2023,12 +2023,12 @@ app.L = {
 		[-4191] = ITEM_TOURNAMENT_GEAR,											-- Tournament Gear
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-		[-5200] = "Base Appearance",
-		[-5201] = "Class Hall Campaign",
-		[-5202] = "Balance of Power",
-		[-5203] = "Prestige Rewards",
-		[-5204] = "Challenge Appearance",
-		[-5205] = "Hidden Appearance",
+		[-5200] = "Base Appearance",											-- Base Appearance
+		[-5201] = "Class Hall Campaign",										-- Class Hall Campaign
+		[-5202] = "Balance of Power",											-- Balance of Power
+		[-5203] = "Prestige Rewards",											-- Prestige Rewards
+		[-5204] = "Challenge Appearance",										-- Challenge Appearance
+		[-5205] = "Hidden Appearance",											-- Hidden Appearance
 		-- Class Sets
 		[-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER.." Item Sets",		-- Class Trial Item Sets
 		-- Note!! We are localizing them here so when we filter the achievement we don't filter the entire section which is bad!

@@ -843,7 +843,7 @@ for key,value in pairs({
 			[-954] = "审判官",											-- Inquisitors
 			[-955] = "高阶审判官",										-- High Inquisitors
 			[-956] = "大审判官",										-- Grand Inquisitors
-			[-967] = "破镜重圆",										-- "Mirror Restoration",
+			[-967] = "破镜重圆",										-- Mirror Restoration
 			[-968] = "组 A",											-- Set A
 			[-969] = "组 B",											-- Set B
 			[-970] = "组 C",											-- Set C
