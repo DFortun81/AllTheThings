@@ -1203,7 +1203,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						["provider"] = { "n", 188915 },	-- Supply Portal
 						["coord"] = { 46.0, 38.8, THE_AZURE_SPAN },
 						["g"] = {
-							i(197107),	-- Highland Drake: Triple Finned Head
+							i(197107),	-- Highland Drake: Triple Finned Head (DM!)
 							crit(4, {	-- Send It!
 								["achievementID"] = 16580,	-- Lend a Helping Span
 							}),

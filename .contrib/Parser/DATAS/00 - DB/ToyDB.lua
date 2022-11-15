@@ -1054,8 +1054,8 @@ i(191925);	-- Falling Star Flinger
 i(197719);	-- Artisan's Sign
 i(199337);	-- Bag of Furious Winds
 i(199768);	-- Black Dragon Banner
-i(199897);	-- Blue Cover Bean Bag
 i(199769);	-- Blue Dragon Banner
+i(199897);	-- Blue-Covered Beanbag
 i(199770);	-- Bronze Dragon Banner
 i(198264);	-- Centralized Precipitation Emitter
 i(194058);	-- Cold Cushion
@@ -1074,11 +1074,13 @@ i(198227);	-- Giggle Goggles
 i(193476);	-- Gnoll Tent
 i(202019);	-- Golden Dragon Goblet
 i(199771);	-- Green Dragon Banner
+i(199899);	-- Iskaara Tug Sled
 i(198090);	-- Jar of Excess Slime
 i(193032);	-- Jeweled Offering
 i(200469);	-- Khadgar's Disenchanting Rod
 i(200597);	-- Lover's Bouquet
 i(198857);	-- Lucky Duck
+i(198827);	-- Magical Snow Sled
 i(194059);	-- Market Tent
 i(198402);	-- Maruuk Cooking Pot
 i(197986);	-- Murglasses
@@ -1107,7 +1109,6 @@ i(198409);	-- Personal Shell
 i(198474);	-- Artist's Easel
 i(198537);	-- Taivan's Trumpet
 i(198646);	-- Ornate Dragon Statue
-i(198827);	-- Magical Snow Sled
 i(199111);	-- Maestro Duck's Orchestrion
 i(199554);	-- S.E.A.T.
 i(199926);	-- Portable J.A.M.
@@ -1125,7 +1126,6 @@ i(200857);	-- Talisman of Sargha
 i(200869);	-- Ohn Lite Branded Horn
 i(200878);	-- Wheeled Floaty Boaty Controller
 i(200999);	-- The Super Shellkhan Gang
-i(199899);	-- Iskaara Tug Sled
 i(199902);	-- Wayfinder's Compass
 i(201435);	-- Swinging Sands
 

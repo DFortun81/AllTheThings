@@ -97,7 +97,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(193685),	-- Lightning-Charged Striders
 						i(193686),	-- Nokhud Traditionalist's Pauldrons
 						i(193688),	-- Stormslash
-						i(197625),	-- Windborne Velocidrake: Feathery Tail
+						i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
 					},
 				}),
 			}),
@@ -148,7 +148,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(193685),	-- Lightning-Charged Striders
 						i(193686),	-- Nokhud Traditionalist's Pauldrons
 						i(193688),	-- Stormslash
-						i(197625),	-- Windborne Velocidrake: Feathery Tail
+						i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
 					},
 				}),
 			}),
@@ -205,7 +205,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(193685),	-- Lightning-Charged Striders
 						i(193686),	-- Nokhud Traditionalist's Pauldrons
 						i(193688),	-- Stormslash
-						i(197625),	-- Windborne Velocidrake: Feathery Tail
+						i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
 					},
 				}),
 			}),

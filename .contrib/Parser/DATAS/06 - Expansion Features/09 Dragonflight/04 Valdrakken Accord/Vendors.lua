@@ -220,7 +220,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 					i(199732),	-- Valdrakken Wing Glaive
 					i(199707),	-- Valdrakken Wingguard Polearm
 					i(199736),	-- Amber Dragonflame Blade
-					i(199737),	-- Cobalt Dragonflame Blade
+					--i(199737),	-- Cobalt Dragonflame Blade [Changed Place?]
 					i(199739),	-- Emerald Dragonflame Blade
 					--i(199740),	-- Onyx Dragonflame Blade [Changed Place?]
 					i(199738),	-- Ruby Dragonflame Blade

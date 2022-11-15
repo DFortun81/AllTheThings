@@ -1035,6 +1035,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(195533),	-- Shackles of Titanic Failure
 						i(194309),	-- Spiteful Storm
 						i(195529),	-- Stormlash's Last Resort
+						i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 					},
 				}),
 			}),

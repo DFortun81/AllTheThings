@@ -812,7 +812,7 @@ root("PVP", pvp(tier(DF_TIER, {
 		})),
 		filter(MOUNTS, {
 			i(202086),	-- Crimson Gladiator's Drake (MOUNT!)
-			i(201792),	-- Highland Drake: Embodiment of the Crimson Gladiator (DC!)
+			i(201792),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
 			i(201789, {	-- Vicious Sabertooth [A] (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
 			}),

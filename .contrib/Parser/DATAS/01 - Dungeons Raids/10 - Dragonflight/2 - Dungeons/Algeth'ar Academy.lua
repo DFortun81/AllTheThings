@@ -72,10 +72,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(193703),	-- Organized Pontificator's Cap
 						i(193704),	-- Scaled Commencement Spaulders
 						i(193706),	-- Venerated Professor's Greaves
-
-						i(197147),	-- Highland Drake: Heavy Scales
-						i(197112),	-- Highland Drake: Single Horned Head
-
+						i(197147),	-- Highland Drake: Heavy Scales (DM!)
+						i(197112),	-- Highland Drake: Single Horned Head (DM!)
 						i(198910),	-- Technique: Illusion Parchment: Shadow Orb (RECIPE!)
 					},
 				}),
@@ -126,10 +124,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(193703),	-- Organized Pontificator's Cap
 						i(193704),	-- Scaled Commencement Spaulders
 						i(193706),	-- Venerated Professor's Greaves
-
-						i(197147),	-- Highland Drake: Heavy Scales
-						i(197112),	-- Highland Drake: Single Horned Head
-
+						i(197147),	-- Highland Drake: Heavy Scales (DM!)
+						i(197112),	-- Highland Drake: Single Horned Head (DM!)
 						i(198910),	-- Technique: Illusion Parchment: Shadow Orb (RECIPE!)
 					},
 				}),
@@ -183,10 +179,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(193703),	-- Organized Pontificator's Cap
 						i(193704),	-- Scaled Commencement Spaulders
 						i(193706),	-- Venerated Professor's Greaves
-
-						i(197147),	-- Highland Drake: Heavy Scales
-						i(197112),	-- Highland Drake: Single Horned Head
-
+						i(197147),	-- Highland Drake: Heavy Scales (DM!)
+						i(197112),	-- Highland Drake: Single Horned Head (DM!)
 						i(198910),	-- Technique: Illusion Parchment: Shadow Orb (RECIPE!)
 					},
 				}),

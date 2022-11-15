@@ -5,7 +5,6 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 	m(VALDRAKKEN, {
 		n(QUESTS, {
-			-- SIDE 1
 			-- SIDE 2
 			q(67094, {	-- A Dryad's Work Is Never Done
 				["sourceQuests"] = { 66244 },	-- To Valdrakken
@@ -17,21 +16,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
 			}),
-			-- SIDE 3
-
-			-- SIDE 4
-
-			-- SIDE 5
-
-
-
-
-
-
-
-
-
-
 
 
 			-- LEVEL 70

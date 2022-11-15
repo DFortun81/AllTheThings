@@ -67,9 +67,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(193646),	-- Refraction's Edge
 						i(193643),	-- Stasis Freed Leggings
 						i(193639),	-- Umbrelskul's Fractured Heart
-
-						i(197140),	-- Highland Drake: Small Spotted Pattern
-						i(197127),	-- Highland Drake: Grand Thorn Horns
+						i(197127),	-- Highland Drake: Grand Thorn Horns (DM!)
+						i(197140),	-- Highland Drake: Small Spotted Pattern (DM!)
 					},
 				}),
 			}),
@@ -116,9 +115,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(193646),	-- Refraction's Edge
 						i(193643),	-- Stasis Freed Leggings
 						i(193639),	-- Umbrelskul's Fractured Heart
-
-						i(197140),	-- Highland Drake: Small Spotted Pattern
-						i(197127),	-- Highland Drake: Grand Thorn Horns
+						i(197127),	-- Highland Drake: Grand Thorn Horns (DM!)
+						i(197140),	-- Highland Drake: Small Spotted Pattern (DM!)
 					},
 				}),
 			}),
@@ -168,9 +166,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(193646),	-- Refraction's Edge
 						i(193643),	-- Stasis Freed Leggings
 						i(193639),	-- Umbrelskul's Fractured Heart
-
-						i(197140),	-- Highland Drake: Small Spotted Pattern
-						i(197127),	-- Highland Drake: Grand Thorn Horns
+						i(197127),	-- Highland Drake: Grand Thorn Horns (DM!)
+						i(197140),	-- Highland Drake: Small Spotted Pattern (DM!)
 					},
 				}),
 			}),

@@ -1502,10 +1502,15 @@ i(0, 381529);		-- Telix the Stormhorn
 
 -- SOURCED
 i(192762, 374034);	-- Azure Skitterfly
+i(198872, 376875);	-- Brown Scouting Ottuk
+i(201426, 376910);	-- Brown War Ottuk
 i(202086, 377071);	-- Crimson Gladiator's Drake
+i(198871, 359409);	-- Iskaara Trader's Ottuk
+i(198873, 376879);	-- Ivory Trader's Ottuk
+i(192784, 374155);	-- Shellack
 i(192761, 374032);	-- Tamed Skitterfly
-
-
+i(200118, 376880);	-- Yellow Scouting Ottuk
+i(201425, 376913);	-- Yellow War Ottuk
 
 
 -- UNCLEAR?
@@ -1524,15 +1529,14 @@ i(194034, 368896);	-- Renewed Proto-Drake
 i(194549, 368899);	-- Windborne Velocidrake
 i(194521, 368901);	-- Cliffside Wylderdrake
 i(0, 359408);	-- Divine Kiss of Ohn'ahra
-i(0, 359409);	-- Iskaara Trader's Ottuk
 i(0, 359622);	-- Liberated Slyvern
 
 
 i(192764, 374048);	-- Verdant Skitterfly
 i(0, 376912);	-- Otterworldly Ottuk Carrier
 i(0, 376873);	-- Splish-Splash
-i(0, 376875);	-- Brown Scouting Ottuk
-i(0, 376879);	-- Ivory Trader's Ottuk
+
+
 i(192770, 349935);	-- Noble Elderhorn
 i(192777, 350219);	-- Magmashell
 i(198810, 385115);	-- Majestic Armored Vorquin
@@ -1575,7 +1579,6 @@ i(192773, 374093);	-- [PH] Water Salamander Orange
 i(192774, 374097);	-- [PH] Water Salamander Pink
 i(192781, 374140);	-- PH Lava Slug Blue
 i(192782, 374142);	-- PH Lava Slug Yellow
-i(192784, 374155);	-- PH Lava Snail Red
 i(192785, 374157);	-- PH Lava Snail Blue
 i(192786, 374162);	-- PH Lava Snail Yellow
 i(192789, 374172);	-- [PH] Mammoth V2 Gray
@@ -1589,11 +1592,11 @@ i(192802, 374258);	-- PH Primal Tallstrider Black
 i(192803, 374259);	-- PH Primal Tallstrider Red
 i(192806, 374275);	-- PH Lava Mammoth Red
 i(192807, 374278);	-- PH Lava Mammoth Yellow
-i(0, 376880);	-- [PH] Yellow River Otter
+
 i(0, 376898);	-- [PH] Black Armored River Otter
 i(0, 376909);	-- [PH] Blue Armored River Otter
-i(0, 376910);	-- [PH] Brown Armored River Otter
-i(0, 376913);	-- [PH] Yellow Armored River Otter
+
+
 i(0, 385738);	-- PH Red Slyvern
 i(0, 385767);	-- PH White Slyvern
 i(0, 385771);	-- PH Yellow Slyvern
@@ -1611,10 +1614,9 @@ i(194722, 377849);	-- Carrier Yeti
 
 
 -- SOURCED
+i(199412, 387231);	-- Hailstorm Armoredon
 i(201789, 394737);	-- Vicious Sabertooth [A]
 i(201788, 394738);	-- Vicious Sabertooth [H]
---
-i(199412, 387231);	-- Hailstorm Armoredon
 
 
 

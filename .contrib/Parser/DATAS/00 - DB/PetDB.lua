@@ -1103,6 +1103,7 @@ pet(0, 3249, {			-- Lil' Ursoc
 -- SOURCED
 pet(191886, 3274);	-- Alvin the Anvil
 pet(193852, 3269);	-- Azure Frillfish
+pet(193837, 3326);	-- Backswimmer Timbertooth
 pet(198726, 3380);	-- Black Skitterbug
 pet(199688, 3279);	-- Bronze Racing Enthusiast
 pet(199326, 3376);	-- Chip
@@ -1120,6 +1121,7 @@ pet(199175, 3316);	-- Lubbins
 pet(191946, 3265);	-- Mister Muskoxeles
 pet(200519, 3286);	-- Mister Toots
 pet(200930, 3414);	-- Obsidian Proto-Whelp
+pet(200927, 3408);	-- Petal
 pet(193484, 3302);	-- Pilot
 pet(199109, 3348);	-- Primal Stormling
 pet(193572, 3306);	-- Quack-E
@@ -1127,6 +1129,7 @@ pet(191936, 3263);	-- Secretive Frogduck
 pet(198353, 3368);	-- Shiverweb Broodling
 pet(200479, 3390);	-- Sophic Amalgamation
 pet(191932, 3262);	-- Violet Violence
+pet(193225, 3284);	-- Whiskuk
 pet(193619, 3319);	-- Yipper
 
 pet(0, 3367);	-- Emberling
@@ -1157,7 +1160,7 @@ pet(193071, 3278);	-- Pistachio
 pet(0, 3280);	-- Shyfly
 pet(0, 3281);	-- Scruffy Ottuk
 pet(0, 3283);	-- Snowlemental
-pet(193225, 3284);	-- Whiskuk
+
 pet(193235, 3285);	-- Scarlet Ottuk Pup
 pet(0, 3287);	-- Ghostflame
 pet(0, 3288);	-- Trunkalumpf
@@ -1188,7 +1191,7 @@ pet(193834, 3321);	-- Blackfeather Nester
 pet(0, 3322);	-- Woodbiter Piculet
 pet(193835, 3323);	-- Brightfeather
 pet(0, 3325);	-- Bakar Companion
-pet(193837, 3326);	-- Backswimmer Timbertooth
+
 pet(0, 3327);	-- Dusky Timbertooth
 pet(0, 3328);	-- Tiny Timbertooth
 pet(0, 3329);	-- Storm-Touched Timbertooth
@@ -1265,7 +1268,6 @@ pet(0, 3404);	-- Polliswog
 pet(0, 3405);	-- Living Mud Mask
 pet(0, 3406);	-- Lady Feathersworth
 pet(0, 3407);	-- Scout
-pet(0, 3408);	-- Petal
 pet(0, 3409);	-- Tide Spirit
 pet(0, 3410);	-- Dust Spirit
 pet(0, 3411);	-- Blaze Spirit

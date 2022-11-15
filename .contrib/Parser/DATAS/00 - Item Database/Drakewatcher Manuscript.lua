@@ -7,7 +7,7 @@ end
 
 -- Special
 i(201792, 72371);	-- Highland Drake: Embodiment of the Crimson Gladiator
-
+i(201790, 72367);	-- Renewed Proto-Drake: Embodiment of the Storm-Eater
 
 -- These might be NYI? Two Versions exists
 i(194839, 0);	-- Cliffside Wylderdrake Manuscript: Conical Head

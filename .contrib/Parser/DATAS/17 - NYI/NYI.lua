@@ -433,15 +433,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(190885),	-- Wanderer's Snowy Scarf
 				i(190909),	-- Ruby Felfire Splitblade
 				i(190910),	-- Ruby Felfire Bulwark
-				-- Cobalt Guardian's Set
-				i(191829),	-- Cobalt Guardian's Hauberk
-				i(191830),	-- Cobalt Guardian's Grips
-				i(191831),	-- Cobalt Guardian's Helm
-				i(191832),	-- Cobalt Guardian's Leggings
-				i(191833),	-- Cobalt Guardian's Pauldron
-				i(191834),	-- Cobalt Guardian's Belt
-				i(191835),	-- Cobalt Guardian's Bracers
-				i(191836),	-- Cobalt Guardian's Cover
 			})
 		}),
 		filter(BATTLE_PETS, {
@@ -456,7 +447,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193066),	-- Chestnut
 			i(193068),	-- Time-Lost Treeflitter
 			i(193071),	-- Pistachio
-			i(193225),	-- Whiskuk
 			i(193235),	-- Scarlet Ottuk Pup
 			i(193363),	-- Auburntusk Calf
 			i(193364),	-- Time-Lost Baby Mammoth
@@ -467,7 +457,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193429),	-- Time-Lost Salamanther
 			i(193834),	-- Blackfeather Nester
 			i(193835),	-- Brightfeather
-			i(193837),	-- Backswimmer Timbertooth
 			i(193850),	-- Time-Lost Timbertooth
 			i(193851),	-- Purple Frillfish
 			i(193853),	-- Emerald Frillfish
@@ -476,7 +465,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193862),	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
 			i(193863),	-- zzOld - [PH] Dark Baby Vorquin (REUSE)
 			i(193614),	-- Groundshaker
-
 			i(193620),	-- Time-Lost Slyvern
 			i(193908),	-- Sapphire Crystalspine
 		}),
@@ -567,7 +555,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192780),	-- [PH] Lava Snail Orange
 			i(192781),	-- [PH] Lava Slug Blue
 			i(192782),	-- [PH] Lava Slug Yellow
-			i(192784),	-- Shellack
 			i(192785),	-- [PH] Lava Snail Blue
 			i(192786),	-- [PH] Lava Snail Yellow
 			i(192787),	-- [PH] Mammoth V2 Dark
@@ -1121,7 +1108,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor
 		i(196966),	-- Cliffside Wylderdrake: Gold and Orange Armor
 		i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
-		i(196969),	-- Cliffside Wylderdrake: Finned Back
 		i(196970),	-- Cliffside Wylderdrake: Spiked Back
 		i(196971),	-- Cliffside Wylderdrake: Spiked Brow
 		i(196972),	-- Cliffside Wylderdrake: Plated Brow
@@ -1159,21 +1145,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern
 		i(197008),	-- Cliffside Wylderdrake: Narrow Stripes Pattern
 		i(197009),	-- Cliffside Wylderdrake: Scaled Pattern
-
-
-		i(197012),	-- Cliffside Wylderdrake: Blue Scales
-
 		i(197014),	-- Cliffside Wylderdrake: White Scales
 		i(197015),	-- Cliffside Wylderdrake: Dark Skin Variation
 		i(197016),	-- Cliffside Wylderdrake: Maned Tail
 		i(197017),	-- Cliffside Wylderdrake: Large Tail Spikes
-		i(197018),	-- Cliffside Wylderdrake: Finned Tail
 		i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail
 		i(197020),	-- Cliffside Wylderdrake: Spear Tail
 		i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail
 		i(197022),	-- Cliffside Wylderdrake: Finned Neck
 		i(197023),	-- Cliffside Wylderdrake: Maned Neck
-
 		i(197093),	-- Highland Drake: Silver and Purple Armor
 		i(197094),	-- Highland Drake: Gold and Red Armor
 		i(197095),	-- Highland Drake: Gold and White Armor
@@ -1181,19 +1161,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197098),	-- Highland Drake: Finned Back
 		i(197099),	-- Highland Drake: Armor
 		i(197100),	-- Highland Drake: Crested Brow
-		i(197101),	-- Highland Drake: Bushy Brow
 		i(197102),	-- Highland Drake: Horned Chin
 		i(197103),	-- Highland Drake: Maned Chin
 		i(197104),	-- Highland Drake: Tapered Chin
 		i(197105),	-- Highland Drake: Spined Chin
 		i(197106),	-- Highland Drake: Finned Head
-		i(197107),	-- Highland Drake: Triple Finned Head
 		i(197109),	-- Highland Drake: Spiked Head
 		i(197110),	-- Highland Drake: Plated Head
 		i(197111),	-- Highland Drake: Maned Head
-		i(197112),	-- Highland Drake: Single Horned Head
 		i(197113),	-- Highland Drake: Swept Spiked Head
-		i(197114),	-- Highland Drake: Multi-Horned Head
 		i(197115),	-- Highland Drake: Thorned Jaw
 		i(197116),	-- Highland Drake: Ears
 		i(197118),	-- Highland Drake: Brown Hair
@@ -1201,36 +1177,26 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197120),	-- Highland Drake: Ornate Helm
 		i(197121),	-- Highland Drake: Tan Horns
 		i(197122),	-- Highland Drake: Heavy Horns
-		i(197123),	-- Highland Drake: Thorn Horns
 		i(197124),	-- Highland Drake: Swept Horns
 		i(197125),	-- Highland Drake: Coiled Horns
 		i(197126),	-- Highland Drake: Hooked Horns
-		i(197127),	-- Highland Drake: Grand Thorn Horns
 		i(197128),	-- Highland Drake: Curled Back Horns
 		i(197129),	-- Highland Drake: Sleek Horns
 		i(197130),	-- Highland Drake: Stag Horns
 		i(197131),	-- Highland Drake: Hairy Cheek
-		i(197132),	-- Highland Drake: Spiked Cheek
 		i(197133),	-- Highland Drake: Spined Cheek
 		i(197134),	-- Highland Drake: Spiked Legs
 		i(197135),	-- Highland Drake: Toothy Mouth
 		i(197136),	-- Highland Drake: Taperered Nose
 		i(197137),	-- Highland Drake: Spined Nose
 		i(197138),	-- Highland Drake: Striped Pattern
-		i(197139),	-- Highland Drake: Large Spotted Pattern
-		i(197140),	-- Highland Drake: Small Spotted Pattern
 		i(197141),	-- Highland Drake: Scaled Pattern
-
-
 		i(197145),	-- Highland Drake: Bronze Scales
 		i(197146),	-- Highland Drake: White Scales
-		i(197147),	-- Highland Drake: Heavy Scales
-		i(197148),	-- Highland Drake: Vertical Finned Tail
 		i(197149),	-- Highland Drake: Club Tail
 		i(197150),	-- Highland Drake: Spiked Club Tail
 		i(197151),	-- Highland Drake: Spiked Tail
 		i(197152),	-- Highland Drake: Hooked Tail
-		i(197153),	-- Highland Drake: Bladed Tail
 		i(197155),	-- Highland Drake: Finned Neck
 		i(197156),	-- Highland Drake: Bronze and Green Armor
 		i(197348),	-- Renewed Proto-Drake: Black and Red Armor
@@ -1239,27 +1205,21 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197351),	-- Renewed Proto-Drake: Gold and Red Armor
 		i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor
 		i(197354),	-- Renewed Proto-Drake: Horned Back
-		i(197355),	-- Renewed Proto-Drake: Thick Spined Jaw
 		i(197356),	-- Renewed Proto-Drake: Hairy Back
 		i(197357),	-- Renewed Proto-Drake: Armor
 		i(197358),	-- Renewed Proto-Drake: Curved Spiked Brow
 		i(197359),	-- Renewed Proto-Drake: Hairy Brow
-
 		i(197361),	-- Renewed Proto-Drake: Spiked Crest
-
 		i(197364),	-- Renewed Proto-Drake: Short Spiked Crest
 		i(197365),	-- Renewed Proto-Drake: Finned Crest
 		i(197366),	-- Renewed Proto-Drake: Dual Horned Crest
 		i(197367),	-- Renewed Proto-Drake: Gray Hair
-		i(197368),	-- Renewed Proto-Drake: Blue Hair
 		i(197369),	-- Renewed Proto-Drake: Brown Hair
 		i(197370),	-- Renewed Proto-Drake: Red Hair
 		i(197371),	-- Renewed Proto-Drake: Green Hair
 		i(197372),	-- Renewed Proto-Drake: Purple Hair
 		i(197373),	-- Renewed Proto-Drake: Helm
-
 		i(197375),	-- Renewed Proto-Drake: Curled Horns
-		i(197376),	-- Renewed Proto-Drake: Ears
 		i(197378),	-- Renewed Proto-Drake: Subtle Horns
 		i(197379),	-- Renewed Proto-Drake: Impaler Horns
 		i(197380),	-- Renewed Proto-Drake: Curved Horns
@@ -1268,22 +1228,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197383),	-- Renewed Proto-Drake: Heavy Horns
 		i(197384),	-- Renewed Proto-Drake: Thick Spined Jaw
 		i(197385),	-- Renewed Proto-Drake: Horned Jaw
-
 		i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw
 		i(197388),	-- Renewed Proto-Drake: Finned Jaw
 		i(197389),	-- Renewed Proto-Drake: Green Scales
-		i(197390),	-- Renewed Proto-Drake: Blue Scales
 		i(197391),	-- Renewed Proto-Drake: Bronze Scales
-
 		i(197393),	-- Renewed Proto-Drake: White Scales
-
 		i(197396),	-- Renewed Proto-Drake: Skyterror Pattern
 		i(197397),	-- Renewed Proto-Drake: Heavy Scales
 		i(197398),	-- Renewed Proto-Drake: Snub Snout
 		i(197399),	-- Renewed Proto-Drake: Razor Snout
 		i(197400),	-- Renewed Proto-Drake: Shark Snout
-		i(197401),	-- Renewed Proto-Drake: Beaked Snout
-
 		i(197403),	-- Renewed Proto-Drake: Club Tail
 		i(197404),	-- Renewed Proto-Drake: Finned Tail
 		i(197405),	-- Renewed Proto-Drake: Maned Tail
@@ -1295,7 +1249,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197581),	-- Windborne Velocidrake: Silver and Purple Armor
 		i(197582),	-- Windborne Velocidrake: White and Pink Armor
 		i(197583),	-- Windborne Velocidrake: Exposed Finned Back
-		i(197584),	-- Windborne Velocidrake: Finned Back
 		i(197585),	-- Windborne Velocidrake: Maned Back
 		i(197586),	-- Windborne Velocidrake: Spiked Back
 		i(197587),	-- Windborne Velocidrake: Feathered Back
@@ -1306,12 +1259,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197593),	-- Windborne Velocidrake: Feathery Head
 		i(197594),	-- Windborne Velocidrake: Small Ears
 		i(197595),	-- Windborne Velocidrake: Finned Ears
-
-
 		i(197598),	-- Windborne Velocidrake: Gray Hair
 		i(197599),	-- Windborne Velocidrake: Red Hair
 		i(197600),	-- Windborne Velocidrake: Helm
-		i(197601),	-- Windborne Velocidrake: Wavy Horns
 		i(197602),	-- Windborne Velocidrake: Cluster Horns
 		i(197603),	-- Windborne Velocidrake: Curved Horns
 		i(197604),	-- Windborne Velocidrake: Ox Horns
@@ -1320,21 +1270,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197607),	-- Windborne Velocidrake: Split Horns
 		i(197608),	-- Windborne Velocidrake: Gray Horns
 		i(197609),	-- Windborne Velocidrake: White Horns
-
-
-		i(197612),	-- Windborne Velocidrake: Blue Scales
 		i(197613),	-- Windborne Velocidrake: Bronze Scales
 		i(197615),	-- Windborne Velocidrake: Teal Scales
 		i(197616),	-- Windborne Velocidrake: White Scales
 		i(197617),	-- Windborne Velocidrake: Heavy Scales
-
 		i(197619),	-- Windborne Velocidrake: Hooked Snout
-		i(197620),	-- Windborne Velocidrake: Beaked Snout
 		i(197621),	-- Windborne Velocidrake: Exposed Finned Tail
 		i(197622),	-- Windborne Velocidrake: Finned Tail
-
 		i(197624),	-- Windborne Velocidrake: Club Tail
-		i(197625),	-- Windborne Velocidrake: Feathery Tail
 		i(197626),	-- Windborne Velocidrake: Exposed Finned Neck
 		i(197627),	-- Windborne Velocidrake: Finned Neck
 		i(197628),	-- Windborne Velocidrake: Plated Neck
@@ -1355,7 +1298,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198072),	-- Gold-banded Dragon Tooth
 		i(198080),	-- Sigil of Storms
 		i(198081),	-- Caregiver's Charm
-
 		i(198084),	-- Miguel's Gift
 		i(198085),	-- Lost Obsidian Cache Key
 		i(198133),	-- Golden Expedition Compass
@@ -1374,7 +1316,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198151),	-- Cracked Heart in a Bottle
 		i(198342),	-- Tuskarr Expedition Pack
 		i(198352),	-- Sigil of Storms
-
 		i(198385),	-- Draconian Garden Pick
 		i(198386),	-- Gardener's Tilling Spork
 		i(198390),	-- Milling
@@ -1383,7 +1324,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198393),	-- zzOldDarkmoon Binding: Refreshing Dance
 		i(198394),	-- zzOldDarkmoon Binding: Watcher
 		i(198395),	-- Dull Spined Clam
-
 		i(198400),	-- Lucky Horseshoe
 		i(198407),	-- Azure Arcanic Amplifier
 		i(198411),	-- Claw of Preparedness
@@ -1411,7 +1351,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198483),	-- jrz 10.0 enchanting test [DNT]
 		i(198484),	-- Brackenhide's Decay
 		i(198486),	-- Windscale Rider
-
 		i(198518),	-- Professor Instructaur's Top Secret Guide to Blacksmithing
 		i(198519),	-- Professor Instructaur's Top Secret Guide to Alchemy
 		i(198520),	-- Professor Instructaur's Top Secret Guide to Enchanting
@@ -1518,7 +1457,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198823),	-- [PH] Brown Wind Eagle
 		i(198824),	-- [PH] Dark Wind Eagle
 		i(198825),	-- Zenet Hatchling
-		i(198827),	-- Magical Snow Sled
 		i(198830),	-- Conjured Tasty Hatchling's Treat
 		i(198831),	-- Conjured Snow in a Cone
 		i(198832),	-- Conjured Blubbery Muffin
@@ -1542,9 +1480,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198868),	-- Small Valdrakken Accord Supply Pack
 		i(198869),	-- Large Valdrakken Accord Supply Pack
 		i(198870),	-- Splish-Splash
-		i(198871),	-- Iskaara Trader's Ottuk
-		i(198872),	-- Brown Scouting Ottuk
-		i(198873),	-- Ivory Trader's Ottuk
 		i(198874),	-- Technique: Kinetic Pillar of the Isles
 		i(198875),	-- Technique: Illuminating Pillar of the Isles
 		i(198877),	-- Technique: Pioneer's Writhebark Stave
@@ -1649,7 +1584,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199212),	-- Clubfish
 		i(199213),	-- Lakkamuk Blenny
 
-		i(199412),	-- Hailstorm Armoredon
 		i(199472),	-- Overflowing Dragon Expedition Supply Pack
 		i(199473),	-- Overflowing Iskaaran Supply Pack
 		i(199474),	-- Overflowing Maruuk Centaur Supply Satchel
@@ -1669,15 +1603,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199696),	-- Iskaaran Ice Axe
 		i(199697),	-- Polished Basalt Bracelet
 		i(199698),	-- Irontree Harpoon Handle
-		i(199701),	-- Cobalt Dragonwing Decapitator
-		i(199703),	-- Steadfast Cobalt Bulwark
-		i(199706),	-- Cobalt Stalker's Lancet
-		i(199708),	-- Cobalt Wingguard's Polearm
-		i(199727),	-- Cobalt Essence Weaver's Scepter
-		i(199729),	-- Cobalt Essence Weaver's Staff
-		i(199731),	-- Cobalt Bladewing Staff
-		i(199733),	-- Cobalt Defender's Wingglaive
-		i(199735),	-- Cobalt Guardian's Cutlass
 		i(199748),	-- Primal Water Core
 		i(199749),	-- Primal Air Core
 		i(199750),	-- Primal Fire Core
@@ -1704,7 +1629,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199893),	-- Precious Stone Fragments
 		i(199895),	-- Chunk of Sculpture
 		i(199898),	-- Iskaara Fishing Pole
-		i(199899),	-- Iskaara Tug Sled
 		i(199902),	-- Wayfinder's Compass
 		i(199906),	-- Titan Relic
 		i(199915),	-- Ancient Obsidian Charm
@@ -1736,7 +1660,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200095),	-- Supply Laden Soup Pot
 		i(200114),	-- Stormie
 		i(200116),	-- Everlasting Horn of Lavaswimming
-		i(200118),	-- Yellow Scouting Ottuk
 		i(200126),	-- Mantle of Copious Chronologies
 		i(200127),	-- Gold-Alloy Blade
 		i(200128),	-- Zephyr's Razor
@@ -1912,7 +1835,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200461),	-- Mistyvale Map: Training Grounds
 		i(200462),	-- Mistyvale Map: Butterfly Garden
 		i(200463),	-- Mistyvale Map: Black Market Auction House
-
 		i(200468),	-- Maruuk Hunt Spoils
 		i(200471),	-- Magnetized Splinter
 		i(200473),	-- Agitated Fragment
@@ -1921,60 +1843,35 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200477),	-- Stack of VIP Passes
 		i(200478),	-- Far-Flung Fragment
 		i(200480),	-- Half Swallowed Sliver
-
-
 		i(200506),	-- Roused Seedling
 		i(200507),	-- Decayed Roused Seedling
 		i(200508),	-- Propagating Roused Seedling
 		i(200509),	-- Agitated Roused Seedling
-
 		i(200513),	-- Maruuk Hunt Spoils
 		i(200515),	-- Maruuk Hunt Spoils
 		i(200516),	-- Maruuk Hunt Spoils
-
 		i(200519),	-- Mister Toots
-
 		i(200527),	-- Enchanted Arcana Vessel
 		i(200528),	-- Glowing Arcane Jewel
 		i(200529),	-- Constructed Arcana
 		i(200530),	-- Sweet Steamed Meat
-
 		i(200536),	-- Tamed Eagle
 		i(200537),	-- Bundle of Primalist Orders
-
 		i(200542),	-- Breezy Companion
-
 		i(200544),	-- Mistvale Map: Illegible
-
 		i(200548),	-- Maldra's Manacles Key
 		i(200549),	-- Restored Titan Artifact
-
-
 		i(200552),	-- Torrent Caller's Shell
-		i(200559),	-- Cobalt Duelist's Saber
-
-
 		i(200563),	-- Primal Ritual Shell
 		i(200586),	-- Derelict Sunglasses
-
-
-
 		i(200609),	-- Dragon Racing Purse - First Place
 		i(200610),	-- Dragon Racing Purse - Second Place
 		i(200611),	-- Dragon Racing Purse - Third Place
 		i(200613),	-- Aylaag Windstone Fragment
-
-
 		i(200628),	-- Somewhat-Stabilized Arcana
-
 		i(200631),	-- Happy Tuskarr Palooza
-
 		i(200636),	-- Primal Invocation Quintessence
-
 		i(200638),	-- Bubblefilled Flounder
-
-
-
 		i(200652),	-- Alchemical Flavor Pocket
 		i(200653),	-- Azure Staff of Arcana
 		i(200654),	-- Magmatic Vestments
@@ -2006,7 +1903,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200687),	-- Stormshale Cuffs
 		i(200688),	-- Tights of Twisting Winds
 		i(200689),	-- Rimetalon Band
-
 		i(200708),	-- Polymorphic Cloak of Absorption
 		i(200710),	-- Ashjra'kamas
 		i(200733),	-- Storm Chaser's Waistguard
@@ -2023,8 +1919,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200745),	-- Horns of the Futurebane
 		i(200746),	-- Icebound Girdle
 		i(200747),	-- Zikkori's Water Siphoning Device
-		i(200748),	-- Tuskarr Ulu Knife
-		i(200749),	-- Tuskarr Clobbering Board
 		i(200751),	-- Simple Silver Dragon Goblet
 		i(200752),	-- Jeweled Silver Dragon Goblet
 		i(200753),	-- Simple Gold Dragon Goblet
@@ -2081,7 +1975,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200903),	-- Moira's Choice Espresso
 		i(200904),	-- Picante Pomfruit Cake
 		i(200926),	-- Compendium of Love
-		i(200927),	-- Petal
 		i(200929),	-- Everglow Nectar
 		i(200931),	-- Encaged Fiery Soul
 		i(200932),	-- Encaged Airy Soul
@@ -2119,22 +2012,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200980),	-- Dusty Herbalist's Notes
 		i(200981),	-- Dusty Miner's Notes
 		i(200982),	-- Dusty Skinner's Notes
-
 		i(200984),	-- Elemental Shatter: Earth
-
-
-
-
 		i(200989),	-- Elemental Shatter: Fire
-
 		i(200991),	-- Elemental Shatter: Frost
-
-
 		i(200994),	-- Elemental Shatter: Order
-
-
 		i(200995),	-- Obsidian Soldier's Cutlass [COMMENT: THIS IS PROBABLY NYI. REMOVED FROM SABE/WRATH QUATERMASTERS]
-
 		i(200999),	-- The Super Shellkhan Gang
 		i(201003),	-- Furry Gloop
 		i(201004),	-- Ancient Spear Shards
@@ -2292,7 +2174,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201307),	-- Raider's Lost Spire
 		i(201308),	-- Scorpion Slicer
 		i(201309),	-- Tomb Raider's Shank
-
 		i(201325),	-- Draconic Augment Rune
 		i(201326),	-- Draconic Satchel of Cooperation
 		i(201327),	-- Emerald Dreamtime
@@ -2337,7 +2218,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201368),	-- Brackenhide Hollow Barbslinger
 		i(201369),	-- Hollow Greatwood Pestilence
 		i(201370),	-- Brackenhide Skullcracker
-		i(201371),	-- Cobalt Defender's Shredder
 		i(201372),	-- Imbu Tuskarr Axe
 		i(201374),	-- Tuskarr Fishing Pike
 		i(201375),	-- Imbu Warrior's Club
@@ -2363,8 +2243,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201422),	-- Flash Frozen Meat
 		i(201423),	-- Hallowed Helm
 		i(201424),	-- Unusable Plant Matter
-		i(201425),	-- Yellow War Ottuk
-		i(201426),	-- Brown War Ottuk
 		i(201427),	-- Fleeting Sands
 		i(201428),	-- Quicksilver Sands
 		i(201429),	-- Obsidian Fist
@@ -2447,7 +2325,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201787),	-- Recipe: Filet of Fangs
 		i(201788),	-- Vicious Sabertooth
 		i(201789),	-- Vicious Sabertooth
-		i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater
 		i(201791),	-- How to Train a Dragonkin
 		i(201793),	-- Resplendent Gemstone
 		i(201795),	-- Valdrakken Guard's Claw
@@ -2548,8 +2425,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198701),	-- Inert Vessel
 		i(198870),	-- Otto
 		i(199757),	-- Magic Nibbler
-		i(199894),	-- Fisherman's Folly
-		i(199897),	-- Blue-Covered Beanbag
 		i(200081),	-- Strong Seavine
 		i(200095),	-- Supply-Laden Soup Pot
 		i(200109),	-- Medicative Potion
@@ -2651,7 +2526,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194121),	-- Handcrafted Boat
 		i(194838),	-- Highland Drake Manuscript: Spined Head
 		i(198072),	-- Gold-Banded Dragon Tooth
-		i(198895),	-- Technique: Highland Drake: Spined Head
 		i(198896),	-- Technique: Highland Drake: Spined Neck
 		i(200072),	-- Dragonbane Keep Strongbox
 		i(200094),	-- Caravan Strongbox
@@ -2663,7 +2537,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(202171),	-- Dragon Purse
 		i(202184),	-- Trophy of Strife
 		i(202188),	-- Storm-Battered Reagent Bag
-
 		i(202194),	-- Misty Satchel
 		i(202198),	-- Salt Crystal Ring
 		i(202199),	-- Frozen Shard Ring
@@ -3009,7 +2882,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193066),	-- [PH] Chestnut Flying Squirrel
 			i(193068),	-- [PH] Gold Flying Squirrel
 			i(193071),	-- [PH] Pistachio Flying Squirrel
-			i(193225),	-- [PH] Purple Baby River Otter
+
 			i(193235),	-- [PH] Red Baby River Otter
 			i(193363),	-- [PH] Orange Baby Mammoth
 			i(193364),	-- [PH] Yellow Baby Mammoth
@@ -3025,7 +2898,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			i(193834),	-- [PH] Black Woodpecker
 			i(193835),	-- [PH] Red Woodpecker
-			i(193837),	-- [PH] Blue Baby Primal Beaver
+
 			i(193850),	-- [PH] Yellow Baby Primal Beaver
 			i(193853),	-- [PH] Green Lionfish
 			i(193851),	-- [PH] Purple Lionfish
@@ -3076,7 +2949,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192779),	-- [PH] Lava Slug Red
 			i(192781),	-- [PH] Lava Slug Blue
 			i(192782),	-- [PH] Lava Slug Yellow
-			i(192784),	-- [PH] Lava Snail Red
+
 			i(192785),	-- [PH] Lava Snail Blue
 			i(192786),	-- [PH] Lava Snail Yellow
 			i(192789, 374172);	-- [PH] Mammoth V2 Gray

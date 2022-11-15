@@ -56,7 +56,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({
 						i(193691),	-- Sky Saddle Cord
 						i(193756),	-- Skyferno Rondel
 						i(193750),	-- Wind Soarer's Breeches
-						i(197401),	-- Renewed Proto-Drake: Beaked Snout
+						i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
 					},
 				}),
 			}),
@@ -97,8 +97,8 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({
 						i(193691),	-- Sky Saddle Cord
 						i(193756),	-- Skyferno Rondel
 						i(193750),	-- Wind Soarer's Breeches
-						i(197401),	-- Renewed Proto-Drake: Beaked Snout
-						i(197601),	-- Windborne Velocidrake: Wavy Horns (H+ only?)
+						i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
+						i(197601),	-- Windborne Velocidrake: Wavy Horns (DM!)
 					},
 				}),
 			}),
@@ -142,8 +142,8 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({
 						i(193691),	-- Sky Saddle Cord
 						i(193756),	-- Skyferno Rondel
 						i(193750),	-- Wind Soarer's Breeches
-						i(197401),	-- Renewed Proto-Drake: Beaked Snout
-						i(197601),	-- Windborne Velocidrake: Wavy Horns (H+ only?)
+						i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
+						i(197601),	-- Windborne Velocidrake: Wavy Horns (DM!)
 					},
 				}),
 			}),

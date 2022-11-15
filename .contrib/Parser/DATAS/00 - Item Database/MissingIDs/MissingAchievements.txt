@@ -2924,7 +2924,6 @@ ach(16393),	-- Broodkeeper Diurna kills (Mythic Vault of the Incarnates)
 ach(16394),	-- Raszageth kills (Mythic Vault of the Incarnates)
 10.0.0.45335
 ach(16425),	-- I'm a Template Character [DNT]
-ach(16431),	-- Against the Elements
 10.0.0.45454
 ach(16464),	-- Battle on the Dragon Isles
 ach(16493),	-- Grand Theft Mammoth

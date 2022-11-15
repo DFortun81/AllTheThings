@@ -61,7 +61,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(193779),	-- Sargha's Smasher
 						i(193773),	-- Spoils of Neltharus
 						i(193775),	-- Warlord's Cindermitts
-						i(197376),	-- Renewed Proto-Drake: Ears
+						i(197376),	-- Renewed Proto-Drake: Ears (DM!)
 					},
 				}),
 			}),
@@ -107,7 +107,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(193779),	-- Sargha's Smasher
 						i(193773),	-- Spoils of Neltharus
 						i(193775),	-- Warlord's Cindermitts
-						i(197376),	-- Renewed Proto-Drake: Ears
+						i(197376),	-- Renewed Proto-Drake: Ears (DM!)
 					},
 				}),
 			}),
@@ -156,7 +156,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 						i(193779),	-- Sargha's Smasher
 						i(193773),	-- Spoils of Neltharus
 						i(193775),	-- Warlord's Cindermitts
-						i(197376),	-- Renewed Proto-Drake: Ears
+						i(197376),	-- Renewed Proto-Drake: Ears (DM!)
 					},
 				}),
 			}),
