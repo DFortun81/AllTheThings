@@ -119,7 +119,7 @@ local L = app.L;
 	--TODO: L.OPEN_AUTOMATICALLY = "Open Automatically";
 	--TODO: L.OPEN_AUTOMATICALLY_DESC = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs.";
 	--TODO: L.TWO_CLOAKS = "|cffFF0000These two cloaks have very limited confirmed drops if any and are presumed broken!|r";
-	--TODO: L.OGOM_THE_MANGLER_DESC = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assualt on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r";
+	--TODO: L.OGOM_THE_MANGLER_DESC = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r";
 	--TODO: L.HOLYDAY_DESC = "A specific holiday may need to be active for you to complete the referenced Things within this section.";
 	--TODO: L.DIFF_COMPLETED_1 = "You have collected everything from this difficulty. Switch to ";
 	--TODO: L.DIFF_COMPLETED_2 = " instead.";
@@ -834,7 +834,7 @@ for key,value in pairs({
 			--TODO: [-954] = "Inquisitors",							-- Inquisitors
 			--TODO: [-955] = "High Inquisitors",					-- High Inquisitors
 			--TODO: [-956] = "Grand Inquisitors",					-- Grand Inquisitors
-			[-967] = "Restauration de miroir",						-- "Mirror Restoration",
+			[-967] = "Restauration de miroir",						-- Mirror Restoration
 			--TODO: [-968] = "Set A",								-- Set A
 			--TODO: [-969] = "Set B",								-- Set B
 			--TODO: [-970] = "Set C",								-- Set C
@@ -875,10 +875,10 @@ for key,value in pairs({
 		--TODO: [-3179] = string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-			--TODO: [-5200] = "Base Appearance",
-			--TODO: [-5201] = "Class Hall Campaign",
+			--TODO: [-5200] = "Base Appearance",					-- Base Appearance
+			--TODO: [-5201] = "Class Hall Campaign",				-- Class Hall Campaign
 			[-5202] = "L’équilibre de la puissance",				-- Balance of Power
-			--TODO: [-5203] = "Prestige Rewards",
+			--TODO: [-5203] = "Prestige Rewards",					-- Prestige Rewards
 			[-5204] = "Apparence de Challenge",						-- Challenge Appearance
 			[-5205] = "Apparence Cachée",							-- Hidden Appearance
 		-- Class Sets
@@ -893,8 +893,8 @@ for key,value in pairs({
 		[-10077] = "Assaut : La guerre des clans",					-- Assault: The Warring Clans
 		[-10078] = "Assaut : L’essaim infini",						-- Assault: The Endless Swarm
 		[-10079] = "Assaut : Aqir exhumés",							-- Assault: Aqir Unearthed
-		--TODO: [-10081] = "Corrupted Area",
-		--TODO: [-10082] = "Lost Area",
+		--TODO: [-10081] = "Corrupted Area",						-- Corrupted Area
+		--TODO: [-10082] = "Lost Area",								-- Lost Area
 		-- Shadowlands Achievement Headers
 			-- 9.1
 				--TODO: [-10083] = "Covenant Assaults",				-- Covenant Assaults

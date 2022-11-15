@@ -823,7 +823,7 @@ for key,value in pairs({
 			[-954] = "Инквизиторы",									-- Inquisitors
 			[-955] = "Старшие Инквизиторы",							-- High Inquisitors
 			[-956] = "Великие Инквизиторы",							-- Grand Inquisitors
-			[-967] = "Восстановление зеркала",						-- "Mirror Restoration",
+			[-967] = "Восстановление зеркала",						-- Mirror Restoration
 			[-968] = "Набор A",										-- Set A
 			[-969] = "Набор B",										-- Set B
 			[-970] = "Набор C",										-- Set C
@@ -864,12 +864,12 @@ for key,value in pairs({
 		[-3179] = "Комплект 3-го уровня",							--string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3),
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-			[-5200] = "Основной облик",
-			[-5201] = "Кампания оплота",
+			[-5200] = "Основной облик",								-- Base Appearance
+			[-5201] = "Кампания оплота",							-- Class Hall Campaign
 			[-5202] = "Баланс Сил",									-- Balance of Power
-			[-5203] = "Награды за Престиж",
-			[-5204] = "Облик Испытаний",
-			[-5205] = "Скрытый облик",
+			[-5203] = "Награды за Престиж",							-- Prestige Rewards
+			[-5204] = "Облик Испытаний",							-- Challenge Appearance
+			[-5205] = "Скрытый облик",								-- Hidden Appearance
 		-- Class Sets
 			[-5350] = "Комплекты Пробных персонажей",				-- Class Trial
 
@@ -878,15 +878,15 @@ for key,value in pairs({
 		[-9951] = GetSpellInfo(148462).." и "..GetSpellInfo(137031),	-- Discipline / Holy Priest Spec
 		[-9952] = GetSpellInfo(234890).." и "..GetSpellInfo(137011), 	-- Guardian / Feral Druid Spec
 	------ ACHIEVEMENT HEADERS SECTION ------
-		[-10071] = "Видения Н'Зота",
-		[-10072] = "Нападение Н'Зота",
-		[-10075] = "Нападение: наступление аматетов",
-		[-10076] = "Нападение: Темная Империя",
-		[-10077] = "Нападение: враждебные кланы",
-		[-10078] = "Нападение: нескончаемый рой",
-		[-10079] = "Нападение: появление акиров",
-		[-10081] = "Заражённая область",
-		[-10082] = "Захваченная область",
+		[-10071] = "Видения Н'Зота",								-- Visions of N'Zoth
+		[-10072] = "Нападение Н'Зота",								-- N'Zoth Assault
+		[-10075] = "Нападение: наступление аматетов",				-- Assault: Amathet Advance
+		[-10076] = "Нападение: Темная Империя",						-- Assault: The Black Empire
+		[-10077] = "Нападение: враждебные кланы",					-- Assault: The Warring Clans
+		[-10078] = "Нападение: нескончаемый рой",					-- Assault: The Endless Swarm
+		[-10079] = "Нападение: появление акиров",					-- Assault: Aqir Unearthed
+		[-10081] = "Заражённая область",							-- Corrupted Area
+		[-10082] = "Захваченная область",							-- Lost Area
 		-- Shadowlands Achievement Headers
 			-- 9.1
 				[-10083] = "Нападения Ковенантов",					-- Covenant Assaults

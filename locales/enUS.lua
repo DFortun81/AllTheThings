@@ -126,7 +126,7 @@ app.L = {
 	["OPEN_AUTOMATICALLY"] = "Open Automatically";
 	["OPEN_AUTOMATICALLY_DESC"] = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs.";
 	["TWO_CLOAKS"] = "|cffFF0000These two cloaks have very limited confirmed drops if any and are presumed broken!|r";
-	["OGOM_THE_MANGLER_DESC"] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assualt on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r";
+	["OGOM_THE_MANGLER_DESC"] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r";
 	["HOLYDAY_DESC"] = "A specific holiday may need to be active for you to complete the referenced Things within this section.";
 	["DIFF_COMPLETED_1"] = "You have collected everything from this difficulty. Switch to ";
 	["DIFF_COMPLETED_2"] = " instead.";
@@ -1957,7 +1957,7 @@ app.L = {
 		[-955] = "High Inquisitors",											-- High Inquisitors
 		[-956] = "Grand Inquisitors",											-- Grand Inquisitors
 		[-960] = COVENANT_SANCTUM_FEATURE_VENTHYR,								-- The Ember Court
-		[-967] = "Mirror Restoration",											-- "Mirror Restoration",
+		[-967] = "Mirror Restoration",											-- Mirror Restoration
 		[-968] = "Set A",														-- Set A
 		[-969] = "Set B",														-- Set B
 		[-970] = "Set C",														-- Set C
@@ -2023,12 +2023,12 @@ app.L = {
 		[-4191] = ITEM_TOURNAMENT_GEAR,											-- Tournament Gear
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-		[-5200] = "Base Appearance",
-		[-5201] = "Class Hall Campaign",
-		[-5202] = "Balance of Power",
-		[-5203] = "Prestige Rewards",
-		[-5204] = "Challenge Appearance",
-		[-5205] = "Hidden Appearance",
+		[-5200] = "Base Appearance",											-- Base Appearance
+		[-5201] = "Class Hall Campaign",										-- Class Hall Campaign
+		[-5202] = "Balance of Power",											-- Balance of Power
+		[-5203] = "Prestige Rewards",											-- Prestige Rewards
+		[-5204] = "Challenge Appearance",										-- Challenge Appearance
+		[-5205] = "Hidden Appearance",											-- Hidden Appearance
 		-- Class Sets
 		[-5350] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER.." Item Sets",		-- Class Trial Item Sets
 		-- Note!! We are localizing them here so when we filter the achievement we don't filter the entire section which is bad!
