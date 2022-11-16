@@ -1011,7 +1011,7 @@ for key,value in pairs({
 	[20985] = "Рыхлая земля",	-- Loose Dirt
 	[20992] = "Черный щит",	-- Black Shield
 	[21015] = "Следы копыт",	-- Hoofprints
-	[21016] = "Следы копыт",	-- Hoofprints	--TODO: This was taken from classic Wowhead
+	[21016] = "Следы копыт",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21042] = "Кокарда Тераморской стражи",	-- Theramore Guard Badge
 	[35251] = "Сундук Карнитола",	-- Karnitol's Chest
 	[37099] = "Табличка племени Атал'ай",	-- Atal'ai Tablet

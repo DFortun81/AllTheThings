@@ -960,8 +960,8 @@ for key,value in pairs({
 	[1609] = "Catapulta Faucedraco",	-- Dragonmaw Catapult
 	[1627] = "Cajón de Dalaran",	-- Dalaran Crate
 	[1673] = "Bellota vil",	-- Fel Cone
-	[1738] = "Documentos de Hermandad",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
-	[1739] = "Documentos del Sindicato",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1738] = "Documentos de Hermandad",	-- Syndicate Documents	--TODO: This was taken from wotlk Wowhead
+	[1739] = "Documentos del Sindicato",	-- Syndicate Documents	--TODO: This was taken from wotlk Wowhead
 	[1740] = "Documentos de la Hermandad",	-- Syndicate Documents
 	[1761] = "Proclamación de Trabalomas",	-- Hillsbrad Proclamation
 	[1763] = "SE BUSCA",	-- WANTED
@@ -1023,8 +1023,8 @@ for key,value in pairs({
 	[20807] = "Blandón antiguo",	-- Ancient Brazier
 	[20985] = "Tierra esparcida",	-- Loose Dirt
 	[20992] = "Escudo negro",	-- Black Shield
-	[21015] = "Huellas pezuñales",	-- Hoofprints	--TODO: This was taken from classic Wowhead
-	[21016] = "Huellas pezuñales",	-- Hoofprints	--TODO: This was taken from classic Wowhead
+	[21015] = "Huellas pezuñales",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
+	[21016] = "Huellas pezuñales",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21042] = "Identificación de guardia de Theramore",	-- Theramore Guard Badge
 	[35251] = "Cofre de Karnitol",	-- Karnitol's Chest
 	[37099] = "Tablilla Atal'ai",	-- Atal'ai Tablet
@@ -1150,7 +1150,7 @@ for key,value in pairs({
 	[176160] = "Blandón del Sufrimiento",	-- Brazier of Suffering
 	[176161] = "Blandón del Odio",	-- Brazier of Hatred
 	[176192] = "Catálogo del Díscolo",	-- Catalogue of the Wayward
-	[176344] = "Cofre de documentos n.º 1",	-- Document Chest
+	[176344] = "Cofre de documentos",	-- Document Chest	-- #1 manually dropped from the name
 	[176361] = "Caldera de la Plaga",	-- Scourge Cauldron
 	[176392] = "Caldera de la Plaga",	-- Scourge Cauldron
 	[176393] = "Caldera de la Plaga",	-- Scourge Cauldron
@@ -1206,7 +1206,7 @@ for key,value in pairs({
 	[180918] = "Se busca: Thaelis el Hambriento",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Diario del magister Ocaso Marchito",	-- Magister Duskwither's Journal
 	[181073] = "Caldera apetitosa",	-- Fragrant Cauldron
-	[181074] = "Botín de la arena",	-- Arena Spoils	--TODO: This was taken from classic Wowhead
+	[181074] = "Botín de la arena",	-- Arena Spoils	--TODO: This was taken from wotlk Wowhead
 	--TODO: [181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms
 	[181147] = "Cartel de Se busca",	-- Wanted Poster
 	[181150] = "Diario polvoriento",	-- Dusty Journal

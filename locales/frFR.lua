@@ -955,8 +955,8 @@ for key,value in pairs({
 	[1609] = "Catapulte des Gueules-de-dragon",	-- Dragonmaw Catapult
 	[1627] = "Caisse de Dalaran",	-- Dalaran Crate
 	[1673] = "Gangrenoix",	-- Fel Cone
-	[1738] = "Documents du Syndicat",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
-	[1739] = "Documents du Syndicat",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1738] = "Documents du Syndicat",	-- Syndicate Documents	--TODO: This was taken from wotlk Wowhead
+	[1739] = "Documents du Syndicat",	-- Syndicate Documents	--TODO: This was taken from wotlk Wowhead
 	[1740] = "Documents du Syndicat",	-- Syndicate Documents
 	[1761] = "Proclamation de Hautebrande",	-- Hillsbrad Proclamation
 	[1763] = "AVIS DE RECHERCHE",	-- WANTED
@@ -1018,8 +1018,8 @@ for key,value in pairs({
 	[20807] = "Brasero antique",	-- Ancient Brazier
 	[20985] = "Poussière flottante",	-- Loose Dirt
 	[20992] = "Bouclier noir",	-- Black Shield
-	[21015] = "Traces de sabot",	-- Hoofprints	--TODO: This was taken from classic Wowhead
-	[21016] = "Traces de sabot",	-- Hoofprints	--TODO: This was taken from classic Wowhead
+	[21015] = "Traces de sabot",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
+	[21016] = "Traces de sabot",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21042] = "Ecusson de la garde de Theramore",	-- Theramore Guard Badge
 	[35251] = "Coffre de Karnitol",	-- Karnitol's Chest
 	[37099] = "Tablette atal'ai",	-- Atal'ai Tablet
@@ -1145,7 +1145,7 @@ for key,value in pairs({
 	[176160] = "Brasero de la Souffrance",	-- Brazier of Suffering
 	[176161] = "Brasero de la Haine",	-- Brazier of Hatred
 	[176192] = "Catalogue de l'Indocile",	-- Catalogue of the Wayward
-	[176344] = "Coffre de documents n°1",	-- Document Chest
+	[176344] = "Coffre de documents",	-- Document Chest	-- #1 manually dropped from the name
 	[176361] = "Chaudron du Fléau",	-- Scourge Cauldron
 	[176392] = "Chaudron du Fléau",	-- Scourge Cauldron
 	[176393] = "Chaudron du Fléau",	-- Scourge Cauldron
@@ -1191,7 +1191,7 @@ for key,value in pairs({
 	[180652] = "Terre fraîchement remuée",	-- Freshly Dug Dirt
 	[180690] = "Grand coffre de scarabées",	-- Large Scarab Coffer
 	[180691] = "Coffre de scarabées",	-- Scarab Coffer
-	[180717] = "Le gong du Scarabée",	-- The Scarab Gong	--TODO: This was taken from classic Wowhead
+	[180717] = "Le gong du Scarabée",	-- The Scarab Gong	--TODO: This was taken from wotlk Wowhead
 	[180743] = "Cadeau soigneusement emballé",	-- Carefully Wrapped Present
 	[180746] = "Cadeau secoué doucement",	-- Gently Shaken Gift
 	[180747] = "Cadeau à l'emballage multicolore",	-- Gaily Wrapped Present
@@ -1202,7 +1202,7 @@ for key,value in pairs({
 	[181011] = "Journal du magistère Ternesoir",	-- Magister Duskwither's Journal
 	[181073] = "Chaudron parfumé",	-- Fragrant Cauldron
 	[181074] = "Butin de l'arène",	-- Arena Spoils
-	[181083] = "Possessions de Sothos et Jarien",	-- Sothos and Jarien's Heirlooms	--TODO: This was taken from classic Wowhead
+	[181083] = "Possessions de Sothos et Jarien",	-- Sothos and Jarien's Heirlooms	--TODO: This was taken from wotlk Wowhead
 	[181147] = "Avis de recherche",	-- Wanted Poster
 	[181150] = "Journal poussiéreux",	-- Dusty Journal
 	[181153] = "Avis de recherche : Kel'gash le Malfaisant",	-- Wanted Poster: Kel'gash the Wicked
