@@ -729,12 +729,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["collectible"] = false,
 				["g"] = {
 					q(65951, {	-- Sole Supplier
-						["sourceQuests"] = { 70174 },	-- The Shikaar
+						["sourceQuests"] = { 65783 },	-- Welcome at Our Fire
 						["provider"] = { "n", 186653 },	-- Apprentice Ehri
 						["coord"] = { 84.4, 25.0, OHNAHRAN_PLAINS },
 					}),
 					q(65950, {	-- Thieving Gorlocs
-						["sourceQuests"] = { 70174 },	-- The Shikaar
+						["sourceQuests"] = { 65783 },	-- Welcome at Our Fire
 						["provider"] = { "n", 186650 },	-- Farrier Roscha
 						["coord"] = { 84.4, 25.0, OHNAHRAN_PLAINS },
 					}),
@@ -946,7 +946,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 
 				-- MISC --
 			q(70319, {	-- Nergazurai
-				["sourceQuests"] = { 70174 },	-- The Shikaar
+				["sourceQuests"] = { 65783 },	-- Welcome at Our Fire
 				["provider"] = { "n", 194904 },	-- Muqur Rain-Touched
 				["coord"] = { 84.5, 25.3, OHNAHRAN_PLAINS },
 			}),
