@@ -1004,7 +1004,6 @@ for key,value in pairs({
 	[6751] = "Sonderbare fruchtbeladene Pflanze",	-- Strange Fruited Plant
 	[6752] = "Sonderbare wedelbestückte Pflanze",	-- Strange Fronded Plant
 	[7510] = "Sprießender Wedel",	-- Sprouted Frond
-	[12564] = "Auftragsmordnotiz",	-- Assassination Notice	--TODO: This was manually translated
 	[15084] = "Der Funkelmat 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
 	[15085] = "Der Funkelmat 5200",	-- The Sparklematic 5200	--TODO: This was manually translated
 	[19022] = "Abgenutzte Truhe",	-- Worn Chest
@@ -3299,6 +3298,7 @@ for key,value in pairs({
 	--TODO: [376175] = "Fullsails Supply Chest",	-- Fullsails Supply Chest
 	--TODO: [376213] = "Mysterious Wand",	-- Mysterious Wand
 	--TODO: [376386] = "Disturbed Dirt",	-- Disturbed Dirt
+	--TODO: [376426] = "Magic-Bound Chest",	-- Magic-Bound Chest
 	--TODO: [376451] = "Bronze Stopwatch",	-- Bronze Stopwatch
 	--TODO: [376587] = "Expedition Scout's Pack",	-- Expedition Scout's Pack
 	--TODO: [376757] = "WANTED: Frigellus",	-- WANTED: Frigellus
@@ -3308,8 +3308,12 @@ for key,value in pairs({
 	--TODO: [379290] = "Ornamented Statue",	-- Ornamented Statue
 	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
 	--TODO: [380547] = "Decay-Infused Tanning Oil",	-- Decay-Infused Tanning Oil
+	--TODO: [380653] = "Yennu's Kite",	-- Yennu's Kite
+	--TODO: [380654] = "Dead Man's Chestplate",	-- Dead Man's Chestplate
+	--TODO: [380840] = "Torn Riding Pack",	-- Torn Riding Pack
 	--TODO: [380902] = "Fields of Ferocity",	-- Fields of Ferocity
 	--TODO: [381045] = "Replica Dragon Goblet",	-- Replica Dragon Goblet
+	--TODO: [381153] = "Ruby Gem Cluster",	-- Ruby Gem Cluster
 	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
 	--TODO: [381297] = "Misplaced Luggage",	-- Misplaced Luggage
 	--TODO: [381650] = "Archivist's Request",	-- Archivist's Request
@@ -3324,6 +3328,7 @@ for key,value in pairs({
 	--TODO: [381701] = "WANTED: Mara'nar the Thunderous",	-- WANTED: Mara'nar the Thunderous
 	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
+	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	[9962198] = "Behelfsmäßige Schlammlache des Ausgestoßenen",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
