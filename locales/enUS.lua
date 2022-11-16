@@ -1972,7 +1972,7 @@ app.L = {
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
 		-- 9.2
 		[-988] = select(2, GetAchievementInfo(15402)),							-- Cypher of the First Ones
-		[-999] = "Hidden Quest Triggers",										-- Hidden Quest Triggers
+	[-999] = MINIMAP_TRACKING_HIDDEN_QUESTS,								-- Hidden Quests, note that it's different from HIDDEN_QUEST_TRIGGERS
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		--[-1002] = "Dutiful Spirit",												-- Dutiful Spirit

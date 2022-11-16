@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
-	n(HIDDEN_QUEST_TRIGGERS, {
+	n(HIDDEN_QUESTS, {
 		q(72285, {	-- Stay awhile and listen: Scalecommander Azurathel
 			["name"] = "Stay awhile and listen: Scalecommander Azurathel",
 			["coord"] = { 25.4, 55.2, STORMWIND_CITY },
