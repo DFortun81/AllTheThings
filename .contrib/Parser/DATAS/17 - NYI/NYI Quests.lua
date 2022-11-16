@@ -7835,7 +7835,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69918),	--
 			q(69919),	-- A Craft in Need
 			q(69920),	--
-			q(69923),	--
 			q(69924),	--
 			q(69926),	--
 			q(69927),	--

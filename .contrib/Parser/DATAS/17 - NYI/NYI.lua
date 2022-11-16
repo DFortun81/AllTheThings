@@ -1581,16 +1581,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199208),	-- Grungle
 		i(199212),	-- Clubfish
 		i(199213),	-- Lakkamuk Blenny
-
 		i(199472),	-- Overflowing Dragon Expedition Supply Pack
 		i(199473),	-- Overflowing Iskaaran Supply Pack
 		i(199474),	-- Overflowing Maruuk Centaur Supply Satchel
 		i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 		i(199553),	-- Memory of Unity
 		i(199554),	-- S.E.A.T.
-		i(199555),	-- Versatile Storm Lure
 		i(199641),	-- Reinforced Irontree Harpoon Handle
-		i(199645),	-- Storm Hunter's Insignia
 		i(199665),	-- Spiked Obsidian Spaulders
 		i(199666),	-- Spiked Azure Spaulders
 		i(199667),	-- Spiked Bronze Spaulders
@@ -2164,14 +2161,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201297),	-- Docile Earthen Soul
 		i(201298),	-- Docile Fiery Soul
 		i(201299),	-- Docile Frosty Soul
-		i(201302),	-- Scarab Blaster
-		i(201303),	-- Beheader's Poleaxe
-		i(201304),	-- Dunesplitter
-		i(201305),	-- Fist of the Treasure Seeker
-		i(201306),	-- Knowledge Seeker's Cudgel
-		i(201307),	-- Raider's Lost Spire
-		i(201308),	-- Scorpion Slicer
-		i(201309),	-- Tomb Raider's Shank
 		i(201325),	-- Draconic Augment Rune
 		i(201326),	-- Draconic Satchel of Cooperation
 		i(201327),	-- Emerald Dreamtime

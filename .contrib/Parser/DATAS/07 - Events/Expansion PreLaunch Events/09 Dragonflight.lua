@@ -32,31 +32,31 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {	-- 
 			}),
 		}),
 		n(QUESTS, {
-			q(70050, {    -- Chasing Storms [A]
-				["sourceQuest"] = 66596,	-- Whispers in the Winds [A]
-				-- ["qg"] = TODO,	-- TODO
-				-- ["coord"] = TODO,
+			q(70050, {	-- Chasing Storms [A]
+				["sourceQuests"] = { 66596 },	--  Whispers in the Winds [A]
+				["provider"] = { "n", 189077 },	-- Toddy Whiskers
+				["coord"] = { 22.8, 55.8, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(69944, {	-- Chasing Storms [H]
-				["sourceQuest"] = 65439,	-- Whispers in the Winds [H]
-				["qg"] = 197279,	-- Naleidea Rivergleam
+				["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
+				["provider"] = { "n", 197279 },	-- Naleidea Rivergleam
 				["coord"] = { 55.8, 12.6, DUROTAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(70048, {	-- A Primal Threat (A)
-				["sourceQuest"] = 66596,	-- Whispers in the Winds [A]
-				-- ["qg"] = TODO,	-- TODO
-				-- ["coord"] = TODO,
+			q(70048, {	-- A Primal Threat [A]
+				["sourceQuests"] = { 70050 },	-- Whispers in the Winds [A]
+				["provider"] = { "n", 193450 },	-- Archmage Khadgar
+				["coord"] = { 23.0, 56.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(199109),	-- Primal Stormling (PET!)
 					i(199211),	-- Primeval Essence
 				},
 			}),
-			q(69923, {	-- A Primal Threat (H)
-				["sourceQuest"] = 65439,	-- Whispers in the Winds [H]
-				["qg"] = 193450,	-- Archmage Khadgar
+			q(69923, {	-- A Primal Threat [H]
+				["sourceQuests"] = { 69944 },	-- Chasing Storms [H]
+				["provider"] = { "n", 193450 },	-- Archmage Khadgar
 				["coord"] = { 55.9, 12.6, DUROTAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -64,27 +64,33 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {	-- 
 					i(199211),	-- Primeval Essence
 				},
 			}),
-			q(70055, {	-- Sigil of Storms (A)
-				["provider"] = { "i", 198352 },	-- Sigil of Storms
-				["sourceQuests"] = 69944,	-- Chasing Storms (H)
+			q(70055, {	-- Sigil of Storms [A]
+				["sourceQuests"] = { 70050 },	-- Chasing Storms [A]
+				["provider"] = { "i", 198352 },	-- Sigil of Storms [A]
+				["g"] = {
+					i(199211),	-- Primeval Essence
+				},
 			}),
-			q(69992, {	-- Sigil of Storms (H)
-				["provider"] = { "i", 198080 },	-- Sigil of Storms
-				["sourceQuests"] = 69944,	-- Chasing Storms (H)
+			q(69992, {	-- Sigil of Storms [H]
+				["sourceQuests"] = { 69944 },	-- Chasing Storms [H]
+				["provider"] = { "i", 198080 },	-- Sigil of Storms [H]
+				["g"] = {
+					i(199211),	-- Primeval Essence
+				},
 			}),
-			q(70049, {	-- Calming the Storms (A)
-				-- ["qg"] = TODO,	-- TODO
-				-- ["coord"] = TODO,
+			q(70049, {	-- Calming the Storms [H]
+				["sourceQuests"] = { 70048 },	-- A Primal Threat [A]
+				["provider"] = { "n", 193450 },	-- Archmage Khadgar
+				["coord"] = { 23.0, 56.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 70048,	-- A Primal Threat (A)
 			}),
-			q(69925, {	-- Calming the Storms (H)
-				["qg"] = 193450,	-- Archmage Khadgar
+			q(69925, {	-- Calming the Storms [H]
+				["sourceQuests"] = { 69923 },	-- A Primal Threat [H]
+				["provider"] = { "n", 193450 },	-- Archmage Khadgar
 				["coord"] = { 55.9, 12.6, DUROTAR },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 69923,	-- A Primal Threat (H)
 			}),
 		}),
 		n(VENDORS, {
@@ -215,8 +221,14 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {	-- 
 					i(199381, {	-- Seal of Elemental Disasters
 						["cost"] = {{ "i", PRIMEVAL_ESSENCE, 25 }}
 					}),
+					i(199645, {	-- Storm Hunter's Insignia
+						["cost"] = {{ "i", PRIMEVAL_ESSENCE, 45 }}
+					}),
 					i(199383, {	-- Torc of Calamities
 						["cost"] = {{ "i", PRIMEVAL_ESSENCE, 25 }}
+					}),
+					i(199555, {	-- Versatile Storm Lure
+						["cost"] = {{ "i", PRIMEVAL_ESSENCE, 45 }}
 					}),
 				}),
 				n(WEAPONS, {
@@ -269,8 +281,8 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {	-- 
 			["g"] = {
 				n(COMMON_BOSS_DROPS, {
 					i(199211),	-- Primeval Essence
-					i(198352),	-- Sigil of Storms (A)
-					i(198080),	-- Sigil of Storms (H)
+					i(198352),	-- Sigil of Storms [A]
+					i(198080),	-- Sigil of Storms [H]
 				}),
 				n(189933, {	-- Glacial Ice Lord
 					["g"] = {

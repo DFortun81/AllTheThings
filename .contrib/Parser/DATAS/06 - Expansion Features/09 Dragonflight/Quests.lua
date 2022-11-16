@@ -2,6 +2,40 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
+	n(HIDDEN_QUEST_TRIGGERS, {
+		q(72285, {	-- Stay a While and Listen: Scalecommander Azurathel
+			["name"] = "Stay a While and Listen: Scalecommander Azurathel",
+			["coord"] = { 25.4, 55.2, STORMWIND_CITY },
+			["races"] = ALLIANCE_ONLY,
+		}),
+		q(72288, {	-- Stay a While and Listen: Baine and Mayla
+			["name"] = "Stay a While and Listen: Baine and Mayla",
+			["coord"] = { 55.9, 12.1, ORGRIMMAR },
+			["races"] = HORDE_ONLY,
+		}),
+		q(72290, {	-- Stay a While and Listen: Cindrethresh and Emberthal
+			["name"] = "Stay a While and Listen: Cindrethresh and Emberthal",
+			["provider"] = { "n", 184858 },	-- Cindrethresh
+			["coord"] = { 55.6, 12.3, ORGRIMMAR },
+			["races"] = HORDE_ONLY,
+		}),
+		q(72285, {	-- Stay a While and Listen: Genn Greymane
+			["name"] = "Stay a While and Listen: Genn Greymane",
+			["coord"] = { 27.1, 53.8, STORMWIND_CITY },
+			["races"] = ALLIANCE_ONLY,
+		}),
+		q(72287, {	-- Stay a While and Listen: High Exarch Turalyon
+			["name"] = "Stay a While and Listen: High Exarch Turalyon",
+			["coord"] = { 27.1, 53.8, STORMWIND_CITY },
+			["races"] = ALLIANCE_ONLY,
+		}),
+		q(72289, {	-- Stay a While and Listen: Lor'themar and Thalyssra
+			["name"] = "Stay a While and Listen: Lor'themar and Thalyssra",
+			["provider"] = { "n", 184665 },	-- Lor'themar Theron
+			["coord"] = { 55.7, 12.2, ORGRIMMAR },
+			["races"] = HORDE_ONLY,
+		}),
+	}),
 	n(QUESTS, {
 		q(65436, {	-- The Dragon Isles Await [A]
 			["maps"] = { STORMWIND_CITY },
@@ -52,7 +86,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFP
 				65101,	-- An Iconic, Draconic, Look [A]
 				66577,	-- Aspectral Invitation [A]
 			},
-			["timeline"] = TIMELINE_DFREL,
 			["provider"] = { "n", 189603 },	-- Scalecommander Azurathel
 			["coord"] = { 79.9, 27.1, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -62,7 +95,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFP
 				65613,	-- An Iconic, Draconic, Look [H]
 				65437,	-- Aspectral Invitation [H]
 			},
-			["timeline"] = TIMELINE_DFREL,
 			["provider"] = { "n", 184786 },	-- Scalecommander Cindrethresh
 			["coord"] = { 44.0, 38.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -89,57 +121,76 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFP
             ["sourceQuests"] = { 66596 },	-- Whispers on the Winds [A]
             ["provider"] = { "n", 193890 },	-- Dervishian
             ["coord"] = { 23.1, 56.2, STORMWIND_CITY },
-			["timeline"] = TIMELINE_DFREL,
             ["races"] = ALLIANCE_ONLY,
+			["timeline"] = TIMELINE_DFREL,
 		}),
 		q(70045, {	-- Truths and Revelations [H]
 			["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
 			["provider"] = { "n", 193889 },	-- Kodethi
 			["coord"] = { 55.9, 12.7, DUROTAR },
-			["timeline"] = TIMELINE_DFREL,
 			["races"] = HORDE_ONLY,
+			["timeline"] = TIMELINE_DFREL,
 		}),
 		q(70053, {    -- Lessons From Our Past [A]
             ["sourceQuests"] = { 70044 },	-- Truths and Revelations [A]
             ["provider"] = { "n", 193924 },	-- Scalecommander Emberthal
             ["coord"] = { 40.6, 49.7, STORMWIND_CITY },
-			["timeline"] = TIMELINE_DFREL,
             ["races"] = ALLIANCE_ONLY,
+			["timeline"] = TIMELINE_DFREL,
 		}),
 		q(70054, {	-- Lessons From Our Past [H]
 			["sourceQuests"] = { 70045 },	-- Truths and Revelations [H]
 			["provider"] = { "n", 193924 },	-- Scalecommander Emberthal
 			["coord"] = { 49.2, 73.8, ORGRIMMAR },
-			["timeline"] = TIMELINE_DFREL,
 			["races"] = HORDE_ONLY,
+			["timeline"] = TIMELINE_DFREL,
 		}),
 		q(67700, {    -- To The Dragon Isles! [A]
             ["sourceQuests"] = { 70050 },	--  The Expedition Gathers [A]
            -- TODO: ["provider"] = { "n", 189602 },	-- Toddy Whiskers (not sure) // I fked and miss npc, need to redo
             ["coord"] = { 40.4, 50.1, STORMWIND_CITY },
-			["timeline"] = TIMELINE_DFREL,
             ["races"] = ALLIANCE_ONLY,
+			["timeline"] = TIMELINE_DFREL,
 		}),
 		q(65444, {	-- To the Dragon Isles! [H]
 			["sourceQuests"] = { 69944 },	-- The Expedition Gathers [H]
 			["provider"] = { "n", 197279 },	-- Naleidea Rivergleam
 			["coord"] = { 55.8, 12.7, DUROTAR },
-			["timeline"] = TIMELINE_DFREL,
 			["races"] = HORDE_ONLY,
+			["timeline"] = TIMELINE_DFREL,
 		}),
 		q(66458, {	-- Legacy of Tyr: Secrets of the Past [A]
-			-- ["qg"] = ,	--
-			-- ["coord"] = ,
-			["sourceQuest"] = 66596,	-- Whispers in the Winds [A]
+			["sourceQuests"] = { 66596 },	-- Whispers in the Winds [A]
+			["provider"] = { "n", 189569 },	-- Wrathion <The Black Prince>
+			-- ["coord"] = { X, Y, STORMWIND_CITY },
+			["g"] = {
+				i(201303),	-- Beheader's Poleaxe
+				i(201304),	-- Dunesplitter
+				i(201305),	-- Fist of the Treasure Seeker
+				i(201306),	-- Knowledge Seeker's Cudgel
+				i(201307),	-- Raider's Lost Spire
+				i(201302),	-- Scarab Blaster
+				i(201308),	-- Scorpion Slicer
+				i(201309),	-- Tomb Raider's Shank
+			},
 		}),
 		q(66586, {	-- Legacy of Tyr: Secrets of the Past [H]
-			["qg"] = 190239,	-- Ebyssian
+			["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
+			["provider"] = { "n", 190239 },	-- Ebyssian
 			["coord"] = { 55.8, 12.1, DUROTAR },
-			["sourceQuest"] = 65439,	-- Whispers in the Winds [H]
+			["g"] = {
+				i(201303),	-- Beheader's Poleaxe
+				i(201304),	-- Dunesplitter
+				i(201305),	-- Fist of the Treasure Seeker
+				i(201306),	-- Knowledge Seeker's Cudgel
+				i(201307),	-- Raider's Lost Spire
+				i(201302),	-- Scarab Blaster
+				i(201308),	-- Scorpion Slicer
+				i(201309),	-- Tomb Raider's Shank
+			},
 		}),
-		q(71093, {	-- Legacy of Tyr: Secrets of the Past [auto-accepted]
-			-- TODO: is this an alternate version if you skip picking up the above?
-			["timeline"] = TIMELINE_DFREL,
-		}),
+		--q(71093),	-- Legacy of Tyr: Secrets of the Past [auto-accepted] ??
 	}),
 })));
+
+

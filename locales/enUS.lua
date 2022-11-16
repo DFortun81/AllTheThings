@@ -1394,6 +1394,7 @@ app.L = {
 		[-987] = 2178509,																	-- The Upper Reaches
 		-- 9.2
 		[-988] = select(10, GetAchievementInfo(15402)),										-- Cypher of the First Ones
+		[-999] = "Interface\\Icons\\inv_misc_questionmark",									-- Sourceless
 		--
 	-- Sets
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
@@ -1971,6 +1972,7 @@ app.L = {
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
 		-- 9.2
 		[-988] = select(2, GetAchievementInfo(15402)),							-- Cypher of the First Ones
+		[-999] = "Hidden Quest Triggers",										-- Hidden Quest Triggers
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		--[-1002] = "Dutiful Spirit",												-- Dutiful Spirit
