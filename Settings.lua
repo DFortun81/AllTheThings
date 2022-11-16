@@ -47,23 +47,17 @@ do	-- Add the ATT Settings frame into the WoW Settings options
 	local toc = select(4, GetBuildInfo());
 	-- 10.0: new way to configure settings frame
 	if toc >= 100000 then
+		InterfaceOptions_AddCategory(settings);
+		settings.Open = function(self)
+			-- Open the Options menu.
+			InterfaceOptionsFrame_OpenToCategory(self.name);
+		end
+	else
 		local category = Settings.RegisterCanvasLayoutCategory(settings, settings.name)
 		Settings.RegisterAddOnCategory(category)
 		settings.Open = function(self)
 			-- Open the Options menu.
 			Settings.OpenToCategory(self.name);
-		end
-	else
-		InterfaceOptions_AddCategory(settings);
-		settings.Open = function(self)
-			-- Open the Options menu.
-			if InterfaceOptionsFrame:IsVisible() then
-				InterfaceOptionsFrame_Show();
-			else
-				Settings.OpenToCategory(category);
-				InterfaceOptionsFrame_OpenToCategory(self.name);
-				InterfaceOptionsFrame_OpenToCategory(self.name);
-			end
 		end
 	end
 end
