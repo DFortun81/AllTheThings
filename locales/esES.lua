@@ -1150,7 +1150,7 @@ for key,value in pairs({
 	[176160] = "Blandón del Sufrimiento",	-- Brazier of Suffering
 	[176161] = "Blandón del Odio",	-- Brazier of Hatred
 	[176192] = "Catálogo del Díscolo",	-- Catalogue of the Wayward
-	[176344] = "Cofre de documentos n.º 1",	-- Document Chest
+	[176344] = "Cofre de documentos",	-- Document Chest	-- #1 manually dropped from the name
 	[176361] = "Caldera de la Plaga",	-- Scourge Cauldron
 	[176392] = "Caldera de la Plaga",	-- Scourge Cauldron
 	[176393] = "Caldera de la Plaga",	-- Scourge Cauldron

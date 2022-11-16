@@ -1147,7 +1147,7 @@ for key,value in pairs({
 	[176160] = "Kohlenpfanne des Leidens",	-- Brazier of Suffering
 	[176161] = "Kohlenpfanne des Hasses",	-- Brazier of Hatred
 	[176192] = "Verzeichnis der Abtrünnigen",	-- Catalogue of the Wayward
-	[176344] = "Dokumententruhe #1",	-- Document Chest
+	[176344] = "Dokumententruhe",	-- Document Chest	-- #1 manually dropped from the name
 	[176361] = "Geißelkessel",	-- Scourge Cauldron
 	[176392] = "Geißelkessel",	-- Scourge Cauldron
 	[176393] = "Geißelkessel",	-- Scourge Cauldron

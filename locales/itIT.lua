@@ -1139,7 +1139,7 @@ for key,value in pairs({
 	[176160] = "Braciere della Sofferenza",	-- Brazier of Suffering
 	[176161] = "Braciere dell'Odio",	-- Brazier of Hatred
 	[176192] = "Catalogue of the Wayward",	-- Catalogue of the Wayward	--TODO: This was taken from wotlk Wowhead
-	[176344] = "Document Chest #1",	-- Document Chest #1	--TODO: This was taken from wotlk Wowhead
+	[176344] = "Document Chest",	-- Document Chest #1	--TODO: This was taken from wotlk Wowhead	-- #1 manually dropped from the name
 	[176361] = "Scourge Cauldron",	-- Scourge Cauldron	--TODO: This was taken from wotlk Wowhead
 	[176392] = "Calderone del Flagello",	-- Scourge Cauldron
 	[176393] = "Scourge Cauldron",	-- Scourge Cauldron	--TODO: This was taken from wotlk Wowhead
