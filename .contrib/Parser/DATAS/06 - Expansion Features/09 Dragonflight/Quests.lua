@@ -1,24 +1,21 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DFREL }, {
+root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 	n(QUESTS, {
 		q(65436, {	-- The Dragon Isles Await [A]
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
-			["timeline"] = TIMELINE_DFPRE2,
 		}),
 		q(65435, {	-- The Dragon Isles Await [H]
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
-			["timeline"] = TIMELINE_DFPRE2,
 		}),
 		q(66577, {	-- Aspectral Invitation [A]
 			["sourceQuests"] = {
 				66513,	-- Ground Leave [A]
 				65436,	-- The Dragon Isles Await [A]
 			},
-			["timeline"] = TIMELINE_DFPRE2,
 			["provider"] = { "n", 189569 },	-- Wrathion
 			["coord"] = { 79.8, 27.1, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -28,7 +25,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE
 				66534,	-- Ground Leave [H]
 				65435,	-- The Dragon Isles Await [H]
 			},
-			["timeline"] = TIMELINE_DFPRE2,
 			["provider"] = { "n", 190239 },	-- Ebyssian
 			["coord"] = { 44.1, 38.0, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -38,7 +34,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE
 				65101,	-- An Iconic, Draconic, Look [A]
 				66577,	-- Aspectral Invitation [A]
 			},
-			["timeline"] = TIMELINE_DFPRE2,
 			["provider"] = { "n", 189602 },	-- Toddy Whiskers
 			["coord"] = { 79.7, 27.3, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -48,7 +43,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE
 				65613,	-- An Iconic, Draconic, Look [H]
 				65437,	-- Aspectral Invitation [H]
 			},
-			["timeline"] = TIMELINE_DFPRE2,
 			["provider"] = { "n", 184793 },	-- Naleidea Rivergleam
 			["coord"] = { 44.2, 37.8, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -76,7 +70,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE
 				66589,	-- Expeditionary Coordination [A]
 				72240,	-- The Obsidian Warders [A]
 			},
-			["timeline"] = TIMELINE_DFPRE2,
 			["provider"] = { "n", 193450 },	-- Archmage Khadgar
 			["coord"] = { 23.0, 56.1, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -86,7 +79,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE
 				65443,	-- Expeditionary Coordination [H]
 				72256,	-- The Dark Talons [H]
 			},
-			["timeline"] = TIMELINE_DFPRE2,
 			["provider"] = { "n", 193450 },	-- Archmage Khadgar
 			["coord"] = { 55.9, 12.6, DUROTAR },
 			["races"] = HORDE_ONLY,
