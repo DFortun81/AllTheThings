@@ -7394,6 +7394,12 @@ local function AttachTooltip(self)
 		-- end
 	end
 
+	if not self.GetItem then
+		-- app.PrintDebug("missing GetItem")
+		-- app.PrintTable(self)
+		return;
+	end
+
 	if CanAttachTooltips() then
 		local link, target, spellID;
 		-- check what this tooltip is currently displaying, and keep that reference
