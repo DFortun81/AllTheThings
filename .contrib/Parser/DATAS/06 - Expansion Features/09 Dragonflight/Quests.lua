@@ -3,34 +3,34 @@
 -------------------------------------------------------------------
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 	n(HIDDEN_QUEST_TRIGGERS, {
-		q(72285, {	-- Stay a While and Listen: Scalecommander Azurathel
-			["name"] = "Stay a While and Listen: Scalecommander Azurathel",
+		q(72285, {	-- Stay awhile and listen: Scalecommander Azurathel
+			["name"] = "Stay awhile and listen: Scalecommander Azurathel",
 			["coord"] = { 25.4, 55.2, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 		}),
-		q(72288, {	-- Stay a While and Listen: Baine and Mayla
-			["name"] = "Stay a While and Listen: Baine and Mayla",
+		q(72288, {	-- Stay awhile and listen: Baine and Mayla
+			["name"] = "Stay awhile and listen: Baine and Mayla",
 			["coord"] = { 55.9, 12.1, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 		}),
-		q(72290, {	-- Stay a While and Listen: Cindrethresh and Emberthal
-			["name"] = "Stay a While and Listen: Cindrethresh and Emberthal",
+		q(72290, {	-- Stay awhile and listen: Cindrethresh and Emberthal
+			["name"] = "Stay awhile and listen: Cindrethresh and Emberthal",
 			["provider"] = { "n", 184858 },	-- Cindrethresh
 			["coord"] = { 55.6, 12.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 		}),
-		q(72286, {	-- Stay a While and Listen: Genn Greymane
-			["name"] = "Stay a While and Listen: Genn Greymane",
+		q(72286, {	-- Stay awhile and listen: Genn Greymane
+			["name"] = "Stay awhile and listen: Genn Greymane",
 			["coord"] = { 27.1, 53.8, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 		}),
-		q(72287, {	-- Stay a While and Listen: High Exarch Turalyon
-			["name"] = "Stay a While and Listen: High Exarch Turalyon",
+		q(72287, {	-- Stay awhile and listen: High Exarch Turalyon
+			["name"] = "Stay awhile and listen: High Exarch Turalyon",
 			["coord"] = { 27.1, 53.8, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 		}),
-		q(72289, {	-- Stay a While and Listen: Lor'themar and Thalyssra
-			["name"] = "Stay a While and Listen: Lor'themar and Thalyssra",
+		q(72289, {	-- Stay awhile and listen: Lor'themar and Thalyssra
+			["name"] = "Stay awhile and listen: Lor'themar and Thalyssra",
 			["provider"] = { "n", 184665 },	-- Lor'themar Theron
 			["coord"] = { 55.7, 12.2, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
