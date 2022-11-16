@@ -464,7 +464,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 					},
 				}),
 				q(66785, {	-- The Last Eggtender
-					["sourceQuests"] = { 66779 },	-- Black Wagon Flight
+					["sourceQuests"] = { 65793 },	-- Black Wagon Flight
 					["provider"] = { "n", 190740 },	-- Sabellian
 					["coord"] = { 58.0, 67.3, THE_WAKING_SHORES },
 				}),
@@ -635,7 +635,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 				["collectible"] = false,
 				["g"] = {
 					q(66963, {	-- Out For Delivery
-						["sourceQuests"] = { 66124 },	-- Exeunt, Triumphant
+						["sourceQuests"] = { 66123 },	-- Cut Off the Head
 						["provider"] = { "n", 191698 },	-- Hauler Bennet
 						["coord"] = { 48.5, 78.9, THE_WAKING_SHORES },
 						["isBreadcrumb"] = true,
