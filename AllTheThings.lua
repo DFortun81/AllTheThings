@@ -11394,20 +11394,7 @@ end)();
 -- Gear Set Lib
 (function()
 local C_TransmogSets_GetSetInfo = C_TransmogSets.GetSetInfo;
---[[ 9.1 TEST
-C_TransmogSets.GetSetSources = function(setID)
-	local setAppearances = C_TransmogSets.GetSetPrimaryAppearances(setID);
-	if not setAppearances then
-		return nil;
-	end
-	local lookupTable = { };
-	for i, appearanceInfo in ipairs(setAppearances) do
-		lookupTable[appearanceInfo.appearanceID] = appearanceInfo.collected;
-	end
-	return lookupTable;
-end
---]]
-local C_TransmogSets_GetSetSources = C_TransmogSets.GetSetSources;
+local C_TransmogSets_GetAllSourceIDs = C_TransmogSets.GetAllSourceIDs;
 local fields = {
 	["key"] = function(t)
 		return "setID";
@@ -11450,7 +11437,7 @@ local fields = {
 		return t.info.requiredFaction;
 	end,
 	["sources"] = function(t)
-		local sources = C_TransmogSets_GetSetSources(t.setID);
+		local sources = C_TransmogSets_GetAllSourceIDs(t.setID);
 		if sources then
 			rawset(t, "sources", sources);
 			return sources;
@@ -18305,7 +18292,7 @@ function app:GetDataCache()
 				if s then
 					local sources = {};
 					tinsert(gearSets, setmetatable({ ["setID"] = s.setID, ["uiOrder"] = s.uiOrder, ["g"] = sources }, app.BaseGearSet));
-					for sourceID, value in pairs(C_TransmogSets.GetSetSources(s.setID)) do
+					for sourceID, value in pairs(C_TransmogSets.GetAllSourceIDs(s.setID)) do
 						local _, appearanceID = C_TransmogCollection_GetAppearanceSourceInfo(sourceID);
 						if appearanceID then
 							for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(appearanceID)) do
