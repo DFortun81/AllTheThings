@@ -957,8 +957,8 @@ for key,value in pairs({
 	[1609] = "Katapult des Drachenmals",	-- Dragonmaw Catapult
 	[1627] = "Kiste aus Dalaran",	-- Dalaran Crate
 	[1673] = "Teufelszapfen",	-- Fel Cone
-	[1738] = "Dokumente des Syndikats",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
-	[1739] = "Dokumente des Syndikats",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1738] = "Dokumente des Syndikats",	-- Syndicate Documents	--TODO: This was taken from wotlk Wowhead
+	[1739] = "Dokumente des Syndikats",	-- Syndicate Documents	--TODO: This was taken from wotlk Wowhead
 	[1740] = "Dokumente des Syndikats",	-- Syndicate Documents
 	[1761] = "Proklamation des Hügellands",	-- Hillsbrad Proclamation
 	[1763] = "GESUCHT",	-- WANTED
@@ -1020,8 +1020,8 @@ for key,value in pairs({
 	[20807] = "Uralte Kohlenpfanne",	-- Ancient Brazier
 	[20985] = "Lockere Erde",	-- Loose Dirt
 	[20992] = "Schwarzer Schild",	-- Black Shield
-	[21015] = "Hufabdrücke",	-- Hoofprints	--TODO: This was taken from classic Wowhead
-	[21016] = "Hufabdrücke",	-- Hoofprints	--TODO: This was taken from classic Wowhead
+	[21015] = "Hufabdrücke",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
+	[21016] = "Hufabdrücke",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21042] = "Abzeichen der Wache von Theramore",	-- Theramore Guard Badge
 	[35251] = "Karnitols Truhe",	-- Karnitol's Chest
 	[37099] = "Schrifttafel der Atal'ai",	-- Atal'ai Tablet
@@ -1193,7 +1193,7 @@ for key,value in pairs({
 	[180652] = "Frisch aufgewühlter Dreck",	-- Freshly Dug Dirt
 	[180690] = "Großer Skarabäuskasten",	-- Large Scarab Coffer
 	[180691] = "Skarabäuskasten",	-- Scarab Coffer
-	[180717] = "Der Skarabäusgong",	-- The Scarab Gong	--TODO: This was taken from classic Wowhead
+	[180717] = "Der Skarabäusgong",	-- The Scarab Gong	--TODO: This was taken from wotlk Wowhead
 	[180743] = "Sorgfältig verpacktes Geschenk",	-- Carefully Wrapped Present
 	[180746] = "Leicht geschütteltes Geschenk",	-- Gently Shaken Gift
 	[180747] = "Fröhlich verpacktes Geschenk",	-- Gaily Wrapped Present
