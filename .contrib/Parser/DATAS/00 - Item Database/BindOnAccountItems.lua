@@ -12,6 +12,9 @@ end
 
 -- TODO: move more BoA items here, especially if they are 'cost' items or contain BoP items
 
+-- DF Currencies
+i(199211);	-- Primeval Essence
+
 -- BoA Cost Items
 i(137642);	-- Mark of Honor
 i(163036);	-- Polished Pet Charm

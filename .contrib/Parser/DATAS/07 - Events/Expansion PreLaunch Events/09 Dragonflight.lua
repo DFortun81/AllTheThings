@@ -32,11 +32,27 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {	-- 
 			}),
 		}),
 		n(QUESTS, {
+			q(70050, {    -- Chasing Storms [A]
+				["sourceQuest"] = 66596,	-- Whispers in the Winds [A]
+				-- ["qg"] = TODO,	-- TODO
+				-- ["coord"] = TODO,
+				["races"] = ALLIANCE_ONLY,
+			}),
 			q(69944, {	-- Chasing Storms [H]
 				["sourceQuest"] = 65439,	-- Whispers in the Winds [H]
 				["qg"] = 197279,	-- Naleidea Rivergleam
 				["coord"] = { 55.8, 12.6, DUROTAR },
 				["races"] = HORDE_ONLY,
+			}),
+			q(70048, {	-- A Primal Threat (A)
+				["sourceQuest"] = 66596,	-- Whispers in the Winds [A]
+				-- ["qg"] = TODO,	-- TODO
+				-- ["coord"] = TODO,
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(199109),	-- Primal Stormling (PET!)
+					i(199211),	-- Primeval Essence
+				},
 			}),
 			q(69923, {	-- A Primal Threat (H)
 				["sourceQuest"] = 65439,	-- Whispers in the Winds [H]
@@ -48,22 +64,27 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {	-- 
 					i(199211),	-- Primeval Essence
 				},
 			}),
-			q(69992, {	-- Sigil of Storms
-				["provider"] = { "i", 198080 },	-- Sigil of Storms
-				["sourceQuests"] = {
-					69944,	-- Chasing Storms (H)
-					-- Alliance Quest?
-				},
+			q(70055, {	-- Sigil of Storms (A)
+				["provider"] = { "i", 198352 },	-- Sigil of Storms
+				["sourceQuests"] = 69944,	-- Chasing Storms (H)
 			}),
-			q(69925, {	-- Calming the Storms
+			q(69992, {	-- Sigil of Storms (H)
+				["provider"] = { "i", 198080 },	-- Sigil of Storms
+				["sourceQuests"] = 69944,	-- Chasing Storms (H)
+			}),
+			q(70049, {	-- Calming the Storms (A)
+				-- ["qg"] = TODO,	-- TODO
+				-- ["coord"] = TODO,
+				["races"] = ALLIANCE_ONLY,
+				["isDaily"] = true,
+				["sourceQuest"] = 70048,	-- A Primal Threat (A)
+			}),
+			q(69925, {	-- Calming the Storms (H)
 				["qg"] = 193450,	-- Archmage Khadgar
 				["coord"] = { 55.9, 12.6, DUROTAR },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuests"] = {
-					69923,	-- A Primal Threat (H)
-					-- Alliance Quest?
-				},
+				["sourceQuest"] = 69923,	-- A Primal Threat (H)
 			}),
 		}),
 		n(VENDORS, {
@@ -248,7 +269,8 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {	-- 
 			["g"] = {
 				n(COMMON_BOSS_DROPS, {
 					i(199211),	-- Primeval Essence
-					i(198080),	-- Sigil of Storms
+					i(198352),	-- Sigil of Storms (A)
+					i(198080),	-- Sigil of Storms (H)
 				}),
 				n(189933, {	-- Glacial Ice Lord
 					["g"] = {

@@ -1296,7 +1296,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198070),	-- Tattered Seavine
 		i(198071),	-- Flamecarved Bone
 		i(198072),	-- Gold-banded Dragon Tooth
-		i(198080),	-- Sigil of Storms
 		i(198081),	-- Caregiver's Charm
 		i(198084),	-- Miguel's Gift
 		i(198085),	-- Lost Obsidian Cache Key
@@ -1315,7 +1314,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198150),	-- Copy Wrap of the druid name PH
 		i(198151),	-- Cracked Heart in a Bottle
 		i(198342),	-- Tuskarr Expedition Pack
-		i(198352),	-- Sigil of Storms
 		i(198385),	-- Draconian Garden Pick
 		i(198386),	-- Gardener's Tilling Spork
 		i(198390),	-- Milling

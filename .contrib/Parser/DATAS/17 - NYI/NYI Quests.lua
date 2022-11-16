@@ -7949,11 +7949,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70042),	--
 			q(70046),	--
 			q(70047),	--
-			q(70048),	--
-			q(70049),	--
 			q(70051),	-- Thaldraszus - Cliffside Circuit
 			q(70052),	-- Thaldraszus - Cliffside Circuit - Advanced
-			q(70055),	--
 			q(70056),	--
 			q(70057),	--
 			q(70058),	-- Friend on the Mend

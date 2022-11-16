@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({ ["timeline"] = TIMELINE_DFREL }, {
+root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	n(MYTHIC_PLUS, {
 		ach(16429, bubbleDownSelf({ ["timeline"] = { "added 10.0.2", "removed 10.1.0" } }, {	-- Thundering Hero: Dragonflight Season 1 [TEMP! Until we can use the new headers from Runaway]
 			["collectible"] = false,
