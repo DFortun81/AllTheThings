@@ -13,11 +13,9 @@ local RAINBOW_PEARL = 198397;
 local SEREVITE_ORE = 190396;
 local TALLSTRIDER_SINEW = 201404;
 local WILDERCLOTH = 193050;
-
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
-
 			n(QUESTS, {
 				q(66856, {	-- Ashen Black and the Seven Gnomes
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
