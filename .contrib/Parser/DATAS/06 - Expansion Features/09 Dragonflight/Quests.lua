@@ -19,7 +19,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFP
 			["coord"] = { 55.6, 12.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 		}),
-		q(72285, {	-- Stay a While and Listen: Genn Greymane
+		q(72286, {	-- Stay a While and Listen: Genn Greymane
 			["name"] = "Stay a While and Listen: Genn Greymane",
 			["coord"] = { 27.1, 53.8, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -190,6 +190,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFP
 			},
 		}),
 		--q(71093),	-- Legacy of Tyr: Secrets of the Past [auto-accepted] ??
+
+
+
+		-- Temp? Place??
+		q(72743, {	-- A Piece of Copper
+			["description"] = "If you are lucky. You will get this quest from your adventure guide.",
+		}),
+		q(72751, {	-- Adventure Guide: Copper Coin
+			["name"] = "Adventure Guide: Copper Coin",
+		}),
 	}),
 })));
 

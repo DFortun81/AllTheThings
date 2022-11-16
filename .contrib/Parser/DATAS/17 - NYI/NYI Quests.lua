@@ -6592,7 +6592,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(65041),	-- Memories of Scoroxia
 			q(65042),	-- Dragons!
 			q(65051),	-- Who We Were
-			q(65065),	-- The Tuskarr
 			q(65083),	--
 			q(65085),	-- Primalist Rage
 			q(65086),	-- Second Thoughts

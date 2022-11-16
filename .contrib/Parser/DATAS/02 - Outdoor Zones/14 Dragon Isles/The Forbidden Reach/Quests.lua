@@ -301,15 +301,21 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 				["coord"] = { 44.1, 38.0, ORGRIMMAR },
 				["races"] = { DRACTHYR_HORDE },
 				["g"] = {
-					i(194676),	-- Emboldened Dracthyr's Tabard
+					i(202197),	-- Emboldened Dracthyr's Tabard
 					crit(7, {	-- The Dark Talons
 						["achievementID"] = 15638,	-- Dracthyr, Awaken [H]
 					}),
 				},
 			}),
 			-- To'no Side-Quest
+			q(65065, {	-- The Tuskarr
+				--["sourceQuests"] = {  },	--
+				--["provider"] = { "n",  },	--
+				--["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				["isBreadcrumb"] = true,
+			}),
 			q(65071, {	-- Halp!
-				["sourceQuests"] = { 65063 },	-- Into the Hive [PROBABLY? Seems to be another BC before this from the parents /Braghe]
+				["sourceQuests"] = { 65065 },	-- The Tuskarr
 				["provider"] = { "n", 188692 },	-- To'no
 				["coord"] = { 33.5, 33.3, THE_FORBIDDEN_REACH },
 			}),

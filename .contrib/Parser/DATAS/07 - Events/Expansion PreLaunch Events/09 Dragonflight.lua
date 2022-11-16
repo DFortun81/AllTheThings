@@ -104,6 +104,9 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {	-- 
 			},
 			["groups"] = {
 				n(ARMOR, {
+					i(202188, {	-- Storm-Battered Reagent Bag
+						["cost"] = {{ "i", PRIMEVAL_ESSENCE, 5 }}
+					}),
 					i(199337, {	-- Bag of Furious Winds (TOY!)
 						["cost"] = {{ "i", PRIMEVAL_ESSENCE, 100 }}
 					}),

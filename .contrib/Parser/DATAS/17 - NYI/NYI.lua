@@ -2523,12 +2523,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(202142),	-- Dragonbane Keep Strongbox
 		i(202171),	-- Dragon Purse
 		i(202184),	-- Trophy of Strife
-		i(202188),	-- Storm-Battered Reagent Bag
 		i(202194),	-- Misty Satchel
 		i(202198),	-- Salt Crystal Ring
 		i(202199),	-- Frozen Shard Ring
 		i(202200),	-- Solemn Seashell String
 		i(202201),	-- Tuskarr Spirit Shawl
+
+
+		i(194676),	-- Emboldened Dracthyr's Tabard [Lol they changed model]
 		prof(ALCHEMY, {
 			r(371635),	-- Demonstration Item Recipe
 			r(370771),	-- Dragon Isles Alchemy Troubleshooting Test Recipe (DNT)
