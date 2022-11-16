@@ -14,7 +14,7 @@ local SEREVITE_ORE = 190396;
 local TALLSTRIDER_SINEW = 201404;
 local WILDERCLOTH = 193050;
 
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
+root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
 

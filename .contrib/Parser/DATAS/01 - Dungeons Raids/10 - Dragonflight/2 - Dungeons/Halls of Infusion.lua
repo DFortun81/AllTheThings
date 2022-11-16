@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
+root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	inst(1204, {	-- Halls of Infusion
 		["description"] = "The Entrance is located at the last layer inside the cyndrical building.",
 		["coord"] = { 59.2, 60.6, THALDRASZUS },

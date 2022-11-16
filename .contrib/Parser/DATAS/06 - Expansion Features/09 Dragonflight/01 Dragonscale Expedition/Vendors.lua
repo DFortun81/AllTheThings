@@ -14,7 +14,7 @@ local WILDERCLOTH = 193050;
 local WILDERTHREAD = 192096;
 
 
-root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
+root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DFREL }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		n(VENDORS, {
 			n(189065, {	-- Boss Magor

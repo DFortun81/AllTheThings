@@ -62,7 +62,7 @@ local SymPvP = function(ClassID, HeaderID)
 	return SymLinKPvP
 end
 --]]
-root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
+root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	o(500000, {	-- Inspiration Catalyst Console
 		["description"] = "Help us gather information of what is/isnt available via doing reports in ATT discord. Especially the alternative sets and if the pvp transmog is available somewhere else",
 		-- ["coord"] = { X, Y, MAP },

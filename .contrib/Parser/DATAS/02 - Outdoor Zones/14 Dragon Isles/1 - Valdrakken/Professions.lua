@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
+root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = TIMELINE_DFREL }, {
 	m(VALDRAKKEN, {
 		n(PROFESSIONS, {
 			prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEMY }, {

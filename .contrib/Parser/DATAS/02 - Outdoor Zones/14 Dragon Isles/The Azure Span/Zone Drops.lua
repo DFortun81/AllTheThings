@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
+root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	m(THE_AZURE_SPAN, {
 		n(ZONE_DROPS, {
 			i(193882, {	-- Pattern: Acidic Hailstone Treads (RECIPE!)

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFPRE2 }, {
+root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 	inst(1197, {	-- Uldaman: Legacy of Tyr
 		["coord"] = {41.2, 10.3, BADLANDS },
 		["maps"] = {

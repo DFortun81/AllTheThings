@@ -3,10 +3,23 @@
 -----------------------------------------------------
 local PRIMEVAL_ESSENCE = 199211;
 
-root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = ADDED_DFPRE2 }, {	-- Expansion Prelaunch Events
+root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {	-- Expansion Prelaunch Events
 	tier(DF_TIER, {
 		n(ACHIEVEMENTS, {
-			ach(16431),	-- Against the Elements
+			ach(16431, {	-- Against the Elements
+				crit(1, {
+					["_npcs"] = { 185784 },	-- Unbridled Storm Lord
+				}),
+				crit(2, {
+					["_npcs"] = { 189954 },	-- Rumbling Earth Lord
+				}),
+				crit(3, {
+					["_npcs"] = { 189955 },	-- Raging Fire Lord
+				}),
+				crit(4, {
+					["_npcs"] = { 189933 },	-- Glacial Ice Lord
+				}),
+			}),
 		}),
 		n(HEIRLOOMS, {
 			i(199686, {	-- Unstable Elemental Confluence
@@ -19,8 +32,38 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = ADDED_DFPRE2 }, {	-- Exp
 			}),
 		}),
 		n(QUESTS, {
-			q(69923, {	-- A Primal Threat
-				i(199109),	-- Primal Stormling (PET!)
+			q(69944, {	-- Chasing Storms [H]
+				["sourceQuest"] = 65439,	-- Whispers in the Winds [H]
+				["qg"] = 197279,	-- Naleidea Rivergleam
+				["coord"] = { 55.8, 12.6, DUROTAR },
+				["races"] = HORDE_ONLY,
+			}),
+			q(69923, {	-- A Primal Threat (H)
+				["sourceQuest"] = 65439,	-- Whispers in the Winds [H]
+				["qg"] = 193450,	-- Archmage Khadgar
+				["coord"] = { 55.9, 12.6, DUROTAR },
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(199109),	-- Primal Stormling (PET!)
+					i(199211),	-- Primeval Essence
+				},
+			}),
+			q(69992, {	-- Sigil of Storms
+				["provider"] = { "i", 198080 },	-- Sigil of Storms
+				["sourceQuests"] = {
+					69944,	-- Chasing Storms (H)
+					-- Alliance Quest?
+				},
+			}),
+			q(69925, {	-- Calming the Storms
+				["qg"] = 193450,	-- Archmage Khadgar
+				["coord"] = { 55.9, 12.6, DUROTAR },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
+				["sourceQuests"] = {
+					69923,	-- A Primal Threat (H)
+					-- Alliance Quest?
+				},
 			}),
 		}),
 		n(VENDORS, {
@@ -196,45 +239,38 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = ADDED_DFPRE2 }, {	-- Exp
 			},
 		}),
 		n(WORLD_BOSSES, {
-			n(COMMON_BOSS_DROPS, {
-				i(199211),	-- Primeval Essence
-			}),
-			n(189933, {	-- Glacial Ice Lord
-				["maps"] = { BADLANDS },
-				["g"] = {
-					i(199839),	-- Dimmed Primeval Water
-					crit(4, {	-- Glacial Ice Lord
-						["achievementID"] = 16431,	-- Against the Elements
-					}),
-				},
-			}),
-			n(189955, {	-- Raging Fire Lord
-				["maps"] = { TIRISFAL_GLADES },
-				["g"] = {
-					i(199836),	-- Dimmed Primeval Fire
-					crit(3, {	-- Raging Fire Lord
-						["achievementID"] = 16431,	-- Against the Elements
-					}),
-				},
-			}),
-			n(189954, {	-- Rumbling Earth Lord
-				["maps"] = { UNGORO_CRATER },
-				["g"] = {
-					i(199837),	-- Dimmed Primeval Earth
-					crit(2, {	-- Rumbling Earth Lord
-						["achievementID"] = 16431,	-- Against the Elements
-					}),
-				},
-			}),
-			n(185784, {	-- Unbridled Storm Lord
-				["maps"] = { NORTHERN_BARRENS },
-				["g"] = {
-					i(199838),	-- Dimmed Primeval Storm
-					crit(1, {	-- Unbridled Storm Lord
-						["achievementID"] = 16431,	-- Against the Elements
-					}),
-				},
-			}),
+			["maps"] = {
+				NORTHERN_BARRENS,
+				BADLANDS,
+				TIRISFAL_GLADES,
+				UNGORO_CRATER,
+			},
+			["g"] = {
+				n(COMMON_BOSS_DROPS, {
+					i(199211),	-- Primeval Essence
+					i(198080),	-- Sigil of Storms
+				}),
+				n(189933, {	-- Glacial Ice Lord
+					["g"] = {
+						i(199839),	-- Dimmed Primeval Water
+					},
+				}),
+				n(189955, {	-- Raging Fire Lord
+					["g"] = {
+						i(199836),	-- Dimmed Primeval Fire
+					},
+				}),
+				n(189954, {	-- Rumbling Earth Lord
+					["g"] = {
+						i(199837),	-- Dimmed Primeval Earth
+					},
+				}),
+				n(185784, {	-- Unbridled Storm Lord
+					["g"] = {
+						i(199838),	-- Dimmed Primeval Storm
+					},
+				}),
+			},
 		}),
 	}),
 })));

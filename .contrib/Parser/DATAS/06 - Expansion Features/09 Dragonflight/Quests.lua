@@ -1,21 +1,24 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
+root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DFREL }, {
 	n(QUESTS, {
 		q(65436, {	-- The Dragon Isles Await [A]
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
+			["timeline"] = TIMELINE_DFPRE2,
 		}),
 		q(65435, {	-- The Dragon Isles Await [H]
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
+			["timeline"] = TIMELINE_DFPRE2,
 		}),
 		q(66577, {	-- Aspectral Invitation [A]
 			["sourceQuests"] = {
 				66513,	-- Ground Leave [A]
 				65436,	-- The Dragon Isles Await [A]
 			},
+			["timeline"] = TIMELINE_DFPRE2,
 			["provider"] = { "n", 189569 },	-- Wrathion
 			["coord"] = { 79.8, 27.1, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -25,6 +28,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 				66534,	-- Ground Leave [H]
 				65435,	-- The Dragon Isles Await [H]
 			},
+			["timeline"] = TIMELINE_DFPRE2,
 			["provider"] = { "n", 190239 },	-- Ebyssian
 			["coord"] = { 44.1, 38.0, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -34,6 +38,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 				65101,	-- An Iconic, Draconic, Look [A]
 				66577,	-- Aspectral Invitation [A]
 			},
+			["timeline"] = TIMELINE_DFPRE2,
 			["provider"] = { "n", 189602 },	-- Toddy Whiskers
 			["coord"] = { 79.7, 27.3, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -43,6 +48,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 				65613,	-- An Iconic, Draconic, Look [H]
 				65437,	-- Aspectral Invitation [H]
 			},
+			["timeline"] = TIMELINE_DFPRE2,
 			["provider"] = { "n", 184793 },	-- Naleidea Rivergleam
 			["coord"] = { 44.2, 37.8, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -70,6 +76,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 				66589,	-- Expeditionary Coordination [A]
 				72240,	-- The Obsidian Warders [A]
 			},
+			["timeline"] = TIMELINE_DFPRE2,
 			["provider"] = { "n", 193450 },	-- Archmage Khadgar
 			["coord"] = { 23.0, 56.1, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -79,6 +86,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 				65443,	-- Expeditionary Coordination [H]
 				72256,	-- The Dark Talons [H]
 			},
+			["timeline"] = TIMELINE_DFPRE2,
 			["provider"] = { "n", 193450 },	-- Archmage Khadgar
 			["coord"] = { 55.9, 12.6, DUROTAR },
 			["races"] = HORDE_ONLY,
@@ -113,12 +121,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
             ["coord"] = { 40.4, 50.1, STORMWIND_CITY },
             ["races"] = ALLIANCE_ONLY,
 		}),
-		q(69944, {	-- The Expedition Gathers [H]
-			["sourceQuests"] = { 70054 },	-- Lessons From Our Past [H]
-			["provider"] = { "n", 184786 },	-- Scalecommander Cindrethresh
-			["coord"] = { 49.5, 73.6, ORGRIMMAR },
-			["races"] = HORDE_ONLY,
-		}),
 		q(67700, {    -- To The Dragon Isles! [A]
             ["sourceQuests"] = { 70050 },	--  The Expedition Gathers [A]
            -- TODO: ["provider"] = { "n", 189602 },	-- Toddy Whiskers (not sure) // I fked and miss npc, need to redo
@@ -132,8 +134,18 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DF
 			["races"] = HORDE_ONLY,
 		}),
 		-- TODO: I guess this will be added in pre-patch phase 2?
-		q(66458),	-- Legacy of Tyr: Secrets of the Past [A]
-		q(66586),	-- Legacy of Tyr: Secrets of the Past [H]
+		q(66458, {	-- Legacy of Tyr: Secrets of the Past [A]
+			-- ["qg"] = ,	--
+			-- ["coord"] = ,
+			["timeline"] = TIMELINE_DFPRE2,
+			["sourceQuest"] = 66596,	-- Whispers in the Winds [A]
+		}),
+		q(66586, {	-- Legacy of Tyr: Secrets of the Past [H]
+			["qg"] = 190239,	-- Ebyssian
+			["coord"] = { 55.8, 12.1, DUROTAR },
+			["timeline"] = TIMELINE_DFPRE2,
+			["sourceQuest"] = 65439,	-- Whispers in the Winds [H]
+		}),
 		q(71093),	-- Legacy of Tyr: Secrets of the Past [auto-accepted]
 	}),
 })));

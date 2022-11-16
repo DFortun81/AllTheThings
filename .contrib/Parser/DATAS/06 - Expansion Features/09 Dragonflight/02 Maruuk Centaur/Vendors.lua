@@ -8,7 +8,7 @@ local SEREVITE_ORE = 190396;
 local TUFT_OF_PRIMAL_WOOL = 201405;
 
 
-root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
+root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DFREL }, {
 	n(MARUUK_CENTAUR, {
 		n(VENDORS, {
 			n(195547, {	-- Farrier Rondare

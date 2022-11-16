@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
+root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({ ["timeline"] = TIMELINE_DFREL }, {
 	i(190456),	-- Artisan's Mettle
 	-- Optional
 	i(190455),	-- Concentrated Primal Focus
