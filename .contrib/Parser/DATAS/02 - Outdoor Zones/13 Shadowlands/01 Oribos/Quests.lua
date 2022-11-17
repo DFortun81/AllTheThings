@@ -688,7 +688,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 174871 },	-- Fatescribe Roh-Tahl
 				["coord"] = { 19.6, 50.2, ORIBOS },
 				["sourceQuests"] = { 59770 },	-- Stand as One
-				["timeline"] = { "added 9.0.2", REMOVED_DFPRE2 },
+				["timeline"] = { "added 9.0.2" },
 			}),
 			q(63771, {	-- Fate's Reminder
 				["description"] = "To get this Quest, you have to choose 'Replay Storyline' and pick 'Skip Storyline' right after.",
@@ -709,7 +709,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					{ 79.0, 49.2, ORIBOS },
 				},
 				["sourceQuests"] = { 62704 },	-- The Threads of Fate
-				["timeline"] = { "added 9.0.2", REMOVED_DFPRE2 },
+				["timeline"] = { "added 9.0.2" },
 			}),
 			q(62000, {	-- Choosing Your Purpose
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -719,7 +719,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
-				["timeline"] = { "added 9.0.2", REMOVED_DFPRE2 },
+				["timeline"] = { "added 9.0.2" },
 			}),
 
 			-- Zone Choice Quests
