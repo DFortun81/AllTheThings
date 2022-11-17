@@ -194,16 +194,16 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 				}),
 			}),
 			n(QUESTS, {
-				q(43298),	-- Defend (Azshara)
-				q(43291),	-- Defend (Dun Morogh)
-				q(43296),	-- Defend (Hillsbrad Foothills)
-				q(43289),	-- Defend (Northern Barrens)
-				q(43293),	-- Defend (Tanaris)
-				q(43299),	-- Demon Commander (Azshara)
-				q(43283),	-- Demon Commander (Dun Morogh)
-				q(43286),	-- Demon Commander (Hillsbrad Foothills)
+				q(43298, { ["isRepeatable"] = true, }),	-- Defend (Azshara)
+				q(43291, { ["isRepeatable"] = true, }),	-- Defend (Dun Morogh)
+				q(43296, { ["isRepeatable"] = true, }),	-- Defend (Hillsbrad Foothills)
+				q(43289, { ["isRepeatable"] = true, }),	-- Defend (Northern Barrens)
+				q(43293, { ["isRepeatable"] = true, }),	-- Defend (Tanaris)
+				q(43299, { ["isRepeatable"] = true, }),	-- Demon Commander (Azshara)
+				q(43283, { ["isRepeatable"] = true, }),	-- Demon Commander (Dun Morogh)
+				q(43286, { ["isRepeatable"] = true, }),	-- Demon Commander (Hillsbrad Foothills)
 				-- try to find ID for Demon Commander (Northern Barrens)
-				q(43243),	-- Demon Commander (Tanaris)
+				q(43243, { ["isRepeatable"] = true, }),	-- Demon Commander (Tanaris)
 				q(44184, {	-- In the Blink of an Eye
 					["provider"] = { "n", 114562 },	-- Khadgar's Upgraded Servant
 					["sourceQuests"] = { 44500 },	-- Author! Author!
@@ -217,24 +217,24 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 						i(143780),	-- Tome of the Tranquil Mind
 					},
 				}),
-				q(43301),	-- Invasion: Azshara
-				q(43284),	-- Invasion: Dun Morogh
-				q(42803),	-- Invasion: Dun Morogh
-				q(43285),	-- Invasion: Hillsbrad Foothills
-				q(42805),	-- Invasion: Hillsbrad Foothills
-				q(43282),	-- Invasion: Northern Barrens
-				q(42236),	-- Invasion: Northern Barrens
-				q(43244),	-- Invasion: Tanaris
-				q(42237),	-- Invasion: Tanaris
-				q(43245),	-- Invasion: Westfall
-				q(42235),	-- Invasion: Westfall
-				q(43287),	-- Defend (Westfall)
-				q(43300),	-- Repel (Azshara)
-				q(43292),	-- Repel (Dun Morogh)
-				q(43297),	-- Repel (Hillsbrad Foothills)
-				q(43290),	-- Repel (Northern Barrens)
-				q(43294),	-- Repel (Tanaris)
-				q(43242),	-- Demon Commander (Westfall)
+				q(43301, { ["isRepeatable"] = true, }),	-- Invasion: Azshara
+				q(43284, { ["isRepeatable"] = true, }),	-- Invasion: Dun Morogh
+				q(42803, { ["isRepeatable"] = true, }),	-- Invasion: Dun Morogh
+				q(43285, { ["isRepeatable"] = true, }),	-- Invasion: Hillsbrad Foothills
+				q(42805, { ["isRepeatable"] = true, }),	-- Invasion: Hillsbrad Foothills
+				q(43282, { ["isRepeatable"] = true, }),	-- Invasion: Northern Barrens
+				q(42236, { ["isRepeatable"] = true, }),	-- Invasion: Northern Barrens
+				q(43244, { ["isRepeatable"] = true, }),	-- Invasion: Tanaris
+				q(42237, { ["isRepeatable"] = true, }),	-- Invasion: Tanaris
+				q(43245, { ["isRepeatable"] = true, }),	-- Invasion: Westfall
+				q(42235, { ["isRepeatable"] = true, }),	-- Invasion: Westfall
+				q(43287, { ["isRepeatable"] = true, }),	-- Defend (Westfall)
+				q(43300, { ["isRepeatable"] = true, }),	-- Repel (Azshara)
+				q(43292, { ["isRepeatable"] = true, }),	-- Repel (Dun Morogh)
+				q(43297, { ["isRepeatable"] = true, }),	-- Repel (Hillsbrad Foothills)
+				q(43290, { ["isRepeatable"] = true, }),	-- Repel (Northern Barrens)
+				q(43294, { ["isRepeatable"] = true, }),	-- Repel (Tanaris)
+				q(43242, { ["isRepeatable"] = true, }),	-- Demon Commander (Westfall)
 			}),
 			n(RARES, {
 				n(112527, {	-- Doomsayer
