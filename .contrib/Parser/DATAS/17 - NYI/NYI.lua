@@ -199,19 +199,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194535),	-- Cobalt Winglord's Cloak
 			i(194536),	-- Blue Winglord's Amulet
 				-- Evoker Set --
-			i(188812),	-- Emerald Winglord's Ring
-			i(188813),	-- Emerald Winglord's Loop
-			i(188814),	-- Emerald Winglord's Amulet
-			i(188815),	-- Emerald Winglord's Cloak
-			i(188816),	-- Emerald Winglord's Insignia
 			i(188817),	-- Claw-Carved Figurine
-			i(188818),	-- Emerald Winglord's Shoulders
-			i(188819),	-- Emerald Winglord's Greaves
-			i(188820),	-- Emerald Winglord's Coif
-			i(188821),	-- Emerald Winglord's Grips
-			i(188822),	-- Emerald Winglord's Hauberk
-			i(188823),	-- Emerald Winglord's Bracers
-			i(188824),	-- Emerald Winglord's Boots
+			i(188818),	-- Emerald Winglord's Shoulderss
 			i(188825),	-- Emerald Winglord's Chain
 			i(188826),	-- Emerald Winglord's Staff
 				-- Evoker Sets --
@@ -1292,7 +1281,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197698),	-- Mystic's Windblade
 		i(197904),	-- Shikaar Hunting Knife
 		i(197905),	-- Salamanther Slicer
-		i(197725),	-- Deathrip's Curled Claw
 		i(198070),	-- Tattered Seavine
 		i(198071),	-- Flamecarved Bone
 		i(198072),	-- Gold-banded Dragon Tooth
@@ -1446,10 +1434,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(198798),	-- Flashfrozen Scroll
 		i(198799),	-- Forgotten Arcane Tome
 		i(198800),	-- Fractured Titanic Sphere
-		i(198808),	-- [PH] Black Vorquin
-		i(198809),	-- Armored Vorquin Leystrider
-		i(198810),	-- Swift Armored Vorquin
-		i(198811),	-- Majestic Armored Vorquin
 		i(198821),	-- Divine Kiss of Ohn'ahra
 		i(198822),	-- [PH] Sepia Wind Eagle
 		i(198823),	-- [PH] Brown Wind Eagle
@@ -2269,9 +2253,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201697),	-- Coldarra Coldbrew
 		i(201698),	-- Black Dragon Red Eye
 		i(201700),	-- Notebook of Crafting Knowledge
-		i(201702),	-- Crimson Vorquin
 		i(201703),	-- Pinkie
-		i(201704),	-- Sapphire Vorquin
 		i(201705),	-- Notebook of Crafting Knowledge
 		i(201706),	-- Notebook of Crafting Knowledge
 		i(201707),	-- Troubled Tome
@@ -2286,8 +2268,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201716),	-- Notebook of Crafting Knowledge
 		i(201717),	-- Notebook of Crafting Knowledge
 		i(201718),	-- Notebook of Crafting Knowledge
-		i(201719),	-- Obsidian Vorquin
-		i(201720),	-- Bronze Vorquin
 		i(201721),	-- Life Fire Latte
 		i(201722),	-- Edicts of the Prime Designate
 		i(201725),	-- Flappuccino

@@ -1501,13 +1501,21 @@ i(0, 381529);		-- Telix the Stormhorn
 
 
 -- SOURCED
+i(198809, 385131);	-- Armored Vorquin Leystrider
 i(192762, 374034);	-- Azure Skitterfly
+i(201720, 394219);	-- Bronze Vorquin
 i(198872, 376875);	-- Brown Scouting Ottuk
 i(201426, 376910);	-- Brown War Ottuk
 i(202086, 377071);	-- Crimson Gladiator's Drake
+i(201702, 394216);	-- Crimson Vorquin
+i(198808, 384963);	-- Guardian Vorquin
 i(198871, 359409);	-- Iskaara Trader's Ottuk
 i(198873, 376879);	-- Ivory Trader's Ottuk
+i(198811, 385115);	-- Majestic Armored Vorquin
+i(201719, 394220);	-- Obsidian Vorquin
+i(201704, 394218);	-- Sapphire Vorquin
 i(192784, 374155);	-- Shellack
+i(198810, 385134);	-- Swift Armored Vorquin
 i(192761, 374032);	-- Tamed Skitterfly
 i(200118, 376880);	-- Yellow Scouting Ottuk
 i(201425, 376913);	-- Yellow War Ottuk
@@ -1539,9 +1547,6 @@ i(0, 376873);	-- Splish-Splash
 
 i(192770, 349935);	-- Noble Elderhorn
 i(192777, 350219);	-- Magmashell
-i(198810, 385115);	-- Majestic Armored Vorquin
-i(198809, 385131);	-- Armored Vorquin Leystrider
-i(198811, 385134);	-- Swift Armored Vorquin
 i(198825, 385266);	-- Zenet Hatchling
 i(192800, 352926);	-- Skyskin Hornstrider
 i(0, 368893);	-- Winding Slitherdrake
@@ -1551,10 +1556,6 @@ i(192779, 374138);	-- Scorchpath
 i(192791, 374196);	-- Plainswalker Bearer
 i(192799, 374247);	-- Lizi, Thunderspine Tramper
 i(192804, 374263);	-- Restless Hornstrider
-i(201702, 394216);	-- Crimson Vorquin
-i(201704, 394218);	-- Sapphire Vorquin
-i(201720, 394219);	-- Bronze Vorquin
-i(201719, 394220);	-- Obsidian Vorquin
 -- PvP
 
 -- Suspiciously
@@ -1600,7 +1601,6 @@ i(0, 376909);	-- [PH] Blue Armored River Otter
 i(0, 385738);	-- PH Red Slyvern
 i(0, 385767);	-- PH White Slyvern
 i(0, 385771);	-- PH Yellow Slyvern
-i(0, 384963);	-- [PH] Black Vorquin
 i(0, 385253);	-- [PH] Brown Wind Eagle
 i(0, 385260);	-- [PH] Sepia Wind Eagle
 i(0, 385262);	-- [PH] Dark Wind Eagle

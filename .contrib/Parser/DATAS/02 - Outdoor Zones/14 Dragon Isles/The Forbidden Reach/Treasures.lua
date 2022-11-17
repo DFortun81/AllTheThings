@@ -13,9 +13,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 			}),
 			n(191992, {	-- Eviscerated Argali
 				["coord"] = { 41.7, 23.0, THE_FORBIDDEN_REACH },
-				-- ["questID"] = 67012, probably wrong
+				["questID"] = 67013,
 				["g"] = {
 					i(194511),	-- Living Ration
+				},
+			}),
+			o(377466, {	-- Lost Draconic Hourglass
+				["coord"] = { 30.5, 64.3, THE_FORBIDDEN_REACH },
+				["questID"] = 66974,
+				["g"] = {
+					i(194720),	-- Lost Draconic Hourglass
 				},
 			}),
 			o(376213, {	-- Mysterious Wand

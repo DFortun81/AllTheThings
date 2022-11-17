@@ -141,15 +141,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 				},
 			}),
 			-- Chapter 4
-			q(72263, {	-- Stormsunder Crater
+			q(72263, {	-- Cavalry Has Its Place
 				["sourceQuests"] = { 65075 },	-- The Healing Wings
 				["provider"] = { "n", 198429 },	-- Treysh
 				["coord"] = { 45.3, 61.3, THE_FORBIDDEN_REACH },
 				["g"] = {
-					i(201719),	-- Obsidian Vorquin (MOUINT!)
-					i(201704),	-- Sapphire Vorquin (MOUINT!)
 					i(201720),	-- Bronze Vorquin (MOUINT!)
 					i(201702),	-- Crimson Vorquin (MOUINT!)
+					i(201719),	-- Obsidian Vorquin (MOUINT!)
+					i(201704),	-- Sapphire Vorquin (MOUINT!)
 				},
 			}),
 			q(65045, {	-- Stormsunder Crater
@@ -309,14 +309,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 			}),
 			-- To'no Side-Quest
 			q(65065, {	-- The Tuskarr
-				--["sourceQuests"] = {  },	--
-				--["provider"] = { "n",  },	--
-				--["coord"] = { X, Y, THE_FORBIDDEN_REACH },
+				["sourceQuests"] = { 65052 },	-- The Ebon Scales
+				["provider"] = { "n", 184164 },	-- Explorer Ko'nali
+				["coord"] = { 15.6, 60.0, THE_FORBIDDEN_REACH },
 				["isBreadcrumb"] = true,
 			}),
 			q(65071, {	-- Halp!
 				["sourceQuests"] = { 65065 },	-- The Tuskarr
-				["provider"] = { "n", 188692 },	-- To'no
+				["provider"] = { "n", 184166 },	-- To'no
 				["coord"] = { 33.5, 33.3, THE_FORBIDDEN_REACH },
 			}),
 		}),

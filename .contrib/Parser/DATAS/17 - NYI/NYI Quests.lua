@@ -6587,7 +6587,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(64855),	--
 			q(64856),	--
 			q(64859),	--
-			q(64971),	--
 			q(64981),	--
 			q(65041),	-- Memories of Scoroxia
 			q(65042),	-- Dragons!
@@ -6759,7 +6758,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(65906),	--
 			q(65907),	--
 			q(65908),	--
-			q(65909),	--
 			q(65910),	--
 			q(65912),	--
 			q(65913),	-- Listen to the Land
@@ -6834,7 +6832,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66007),	-- Free Air
 			q(66008),	--
 			q(66009),	-- In Defense of Vakthros
-			q(66010),	--
 			q(66011),	--
 			q(66015),	-- The Blue Dragon Oathstone
 			q(66016),	--
@@ -7543,7 +7540,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66929),	-- Gotta Collect Them All
 			q(66930),	--
 			q(66931),	--
-			q(66932),	--
 			q(66933),	-- Ohn'ahran Plains - Mirror of Sky Dash
 			q(66934),	--
 			q(66935),	--
@@ -7575,16 +7571,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66963),	-- Out For Delivery
 			q(66964),	-- The Gallant Guide
 			q(66965),	--
-			q(66966),	--
-			q(66967),	--
 			q(66968),	-- Pruning The Pack
 			q(66969),	--
 			q(66970),	--
 			q(66971),	-- The Face of Death
 			q(66972),	-- Old Stonetusk
-			q(66973),	--
-			q(66974),	--
-			q(66975),	--
 			q(66976),	--
 			q(66977),	--
 			q(66978),	--
@@ -7616,7 +7607,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(67009),	--
 			q(67010),	--
 			q(67011),	--
-			q(67013),	--
 			q(67014),	--
 			q(67016),	--
 			q(67017),	-- [DNT] Training: Nothing Like a Strider Wing

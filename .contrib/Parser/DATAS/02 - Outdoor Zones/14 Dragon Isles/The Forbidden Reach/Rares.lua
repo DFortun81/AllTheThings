@@ -4,6 +4,13 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 	m(THE_FORBIDDEN_REACH, bubbleDownSelf({ ["classes"] = { EVOKER }, ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE } }, {
 		n(RARES, {
+			n(191729, {	-- Deathrip
+				["coord"] = { 32.9, 41.2, THE_FORBIDDEN_REACH },
+				["questID"] = 66966,
+				["g"] = {
+					i(197725),	-- Deathrip's Curled Claw
+				},
+			}),
 			n(191746, {	-- Ketess the Pilager
 				["coord"] = { 56.7, 65.6, THE_FORBIDDEN_REACH },
 				["questID"] = 66975,
@@ -27,7 +34,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 			}),
 			n(182280, {	-- Tazenrath
 				["coord"] = { 79.7, 74.3, THE_FORBIDDEN_REACH },
-				["questID"] = 64973,
+				["questID"] = 66973,
 				["g"] = {
 					i(194883),	-- Runic Wing
 				},

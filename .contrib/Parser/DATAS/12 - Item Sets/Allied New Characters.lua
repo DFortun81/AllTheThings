@@ -196,7 +196,7 @@ _.GearSets =
 					i(188822),	-- Emerald Winglord's Hauberk
 					i(188816),	-- Emerald Winglord's Insignia
 					i(188813),	-- Emerald Winglord's Loop
-					i(188812),	-- Emerald Winglord's Ringw
+					i(188812),	-- Emerald Winglord's Ring
 				},
 			})
 		},
