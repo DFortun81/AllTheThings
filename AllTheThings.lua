@@ -7569,7 +7569,8 @@ local function AttachTooltip(self)
 
 		-- Addons Menu?
 		if numLines == 2 then
-			local leftSide = _G[self:GetName() .. "TextLeft1"];
+			local tooltipName = self:GetName() or "";
+			local leftSide = _G[tooltipName.."TextLeft1"];
 			if leftSide and leftSide:GetText() == "AllTheThings" then
 				local reference = app:GetDataCache();
 				self:ClearLines();
