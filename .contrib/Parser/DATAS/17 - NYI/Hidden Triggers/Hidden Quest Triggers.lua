@@ -271,6 +271,7 @@ root("HiddenQuestTriggers", {
 		-- also triggered when looting the "Grimoire of the Other Side" as horde during "Spirits' belongings"
 		-- also triggers when repairing the mirror by Charred Ramparts for the Venthyr mirror repair dailies...
 		-- 58013 ALSO triggered after my first time killing Honey Smasher, but that also popped for me while doing the Alliance war campaign "This Ain't Mine."  so wtf lol
+		-- also triggered while killing mobs for Dog Bone's Bone in Maldraxxus (05/11/22)
 		q(51722),	-- triggers when completing "Uniting Kul Tiras" (Alliance WQ unlock).  Completing one triggers all 4 WQ unlock quests (main/alt quests for both Alliance and Horde)
 		q(52212),	-- Battle for Stormgarde - triggered after defeating Rokhan on Heroic difficulty
 		q(51973),	-- looting chest with resources after Lost Caravan event in Battle for Stormgarde

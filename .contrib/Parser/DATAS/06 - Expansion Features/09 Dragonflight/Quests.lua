@@ -10,13 +10,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFP
 		}),
 		q(72288, {	-- Stay awhile and listen: Baine and Mayla
 			["name"] = "Stay awhile and listen: Baine and Mayla",
-			["coord"] = { 55.9, 12.1, ORGRIMMAR },
+			["coord"] = { 55.9, 12.1, DUROTAR },
 			["races"] = HORDE_ONLY,
 		}),
 		q(72290, {	-- Stay awhile and listen: Cindrethresh and Emberthal
 			["name"] = "Stay awhile and listen: Cindrethresh and Emberthal",
 			["provider"] = { "n", 184858 },	-- Cindrethresh
-			["coord"] = { 55.6, 12.3, ORGRIMMAR },
+			["coord"] = { 55.6, 12.3, DUROTAR },
 			["races"] = HORDE_ONLY,
 		}),
 		q(72286, {	-- Stay awhile and listen: Genn Greymane
@@ -32,7 +32,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFP
 		q(72289, {	-- Stay awhile and listen: Lor'themar and Thalyssra
 			["name"] = "Stay awhile and listen: Lor'themar and Thalyssra",
 			["provider"] = { "n", 184665 },	-- Lor'themar Theron
-			["coord"] = { 55.7, 12.2, ORGRIMMAR },
+			["coord"] = { 55.7, 12.2, DUROTAR },
 			["races"] = HORDE_ONLY,
 		}),
 	}),
