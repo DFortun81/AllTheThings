@@ -4,6 +4,14 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 	m(THE_FORBIDDEN_REACH, bubbleDownSelf({ ["classes"] = { EVOKER }, ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE } }, {
 		n(TREASURES, {
+			o(377458, {	-- Abandoned Weapon Rack
+				["coord"] = { 46.2, 21.7, THE_FORBIDDEN_REACH },
+				["questID"] = 66965,
+				["g"] = {
+					i(194888),	-- Dracthyr's Inscribed Blade
+					i(194073),	-- Distinguished Dracthyr's Implement
+				},
+			}),
 			o(376124, {	-- Bag of Enchanted Wind
 				["coord"] = { 42.1, 34.4, THE_FORBIDDEN_REACH },
 				["questID"] = 65909,
@@ -37,6 +45,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 				["questID"] = 66010,
 				["g"] = {
 					i(193861),	-- Blue Magic Wand
+				},
+			}),
+			o(376123, {	-- Suspicious Bottle
+				["coord"] = { 62.2, 43.1, THE_FORBIDDEN_REACH },
+				["questID"] = 65908,
+				["g"] = {
+					i(195580),	-- Suspicious Bottle
 				},
 			}),
 			o(377317, {	-- Treasure Hoard

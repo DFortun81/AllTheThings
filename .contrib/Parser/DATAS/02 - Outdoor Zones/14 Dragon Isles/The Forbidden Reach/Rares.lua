@@ -32,11 +32,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 					i(194074),	-- Gilded Key
 				},
 			}),
+			n(181427, {	-- Stormspine
+				["coord"] = { 54.9, 43.1, THE_FORBIDDEN_REACH },
+				["questID"] = 64859,
+				["g"] = {
+					i(194883),	-- Runic Wing
+				},
+			}),
 			n(182280, {	-- Tazenrath
 				["coord"] = { 79.7, 74.3, THE_FORBIDDEN_REACH },
 				["questID"] = 66973,
 				["g"] = {
-					i(194883),	-- Runic Wing
+					i(194084),	-- Charged Storm Crystal
+				},
+			}),
+			n(186355, {	-- Tripletath the Lost
+				["description"] = "Cave entrance is at 59.9, 59.0.",
+				["coord"] = { 57.4, 60.2, THE_FORBIDDEN_REACH },
+				["questID"] = 65910,
+				["g"] = {
+					i(197727),	-- Mystical Water Vial
 				},
 			}),
 		}),
