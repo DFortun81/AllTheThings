@@ -6586,7 +6586,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(64768),	--
 			q(64855),	--
 			q(64856),	--
-			q(64859),	--
 			q(64981),	--
 			q(65041),	-- Memories of Scoroxia
 			q(65042),	-- Dragons!
@@ -6757,8 +6756,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(65905),	--
 			q(65906),	--
 			q(65907),	--
-			q(65908),	--
-			q(65910),	--
 			q(65912),	--
 			q(65913),	-- Listen to the Land
 			q(65914),	-- Mammoths Matter
@@ -7507,7 +7504,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66873),	--
 			q(66874),	--
 			q(66875),	--
-			q(66876),	--
 			q(66877),	-- Ohn'ahran Plains - Fen Flythrough
 			q(66878),	-- Ohn'ahran Plains - Fen Flythrough - Advanced
 			q(66879),	--
@@ -7570,7 +7566,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66962),	--
 			q(66963),	-- Out For Delivery
 			q(66964),	-- The Gallant Guide
-			q(66965),	--
 			q(66968),	-- Pruning The Pack
 			q(66969),	--
 			q(66970),	--
