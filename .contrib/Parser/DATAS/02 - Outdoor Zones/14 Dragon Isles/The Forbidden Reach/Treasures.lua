@@ -41,7 +41,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 				},
 			}),
 			o(376213, {	-- Mysterious Wand
-				["coord"] = { 42.1, 34.4, THE_FORBIDDEN_REACH },
+				["coord"] = { 32.1, 91.1, 2109 },
 				["questID"] = 66010,
 				["g"] = {
 					i(193861),	-- Blue Magic Wand
