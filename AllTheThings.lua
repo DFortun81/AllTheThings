@@ -7360,492 +7360,6 @@ function app.IsNPCQuestGiver(self, npcID)
 	end
 end
 
-local function AttachTooltip(self)
-	-- app.PrintDebug("AttachTooltip-Processing",self.AllTheThingsProcessing);
-	local numLines = self:NumLines();
-	-- app.PrintDebug("AttachTooltip",numLines,"i:",self:GetItem(),"u:",self:GetUnit(),"s:",self:GetSpell())
-	if numLines < 1 then
-		return false
-	end
-
-	-- Does the tooltip have an owner?
-	local owner = self:GetOwner();
-	if owner then
-		if owner.SpellHighlightTexture then
-			-- Actionbars, don't want that.
-			return true;
-		end
-		if owner.cooldownWrapper then
-			local parent = owner:GetParent();
-			if parent then
-				parent = parent:GetParent();
-				if parent and parent.fanfareToys then
-					-- Toy Box, don't want that.
-					return true;
-				end
-			end
-		end
-		-- this is already covered by a default in-game tooltip line:
-		-- AUCTION_HOUSE_BUCKET_VARIATION_EQUIPMENT_TOOLTIP = "Items in this group may vary in stats and appearance. Check the auction's tooltip before buying.";
-		-- if owner.useCircularIconBorder and not self.AllTheThingsProcessing then
-		-- 	-- print("AH General Item Tooltip")
-		-- 	-- Generalized tooltip hover of a selected Auction Item -- not always accurate to the actual Items for sale
-		-- 	self:AddLine(L["AUCTION_GENERALIZED_ITEM_WARNING"]);
-		-- end
-	end
-
-	if not self.GetItem then
-		-- app.PrintDebug("missing GetItem")
-		-- app.PrintTable(self)
-		return;
-	end
-
-	if CanAttachTooltips() then
-		local link, target, spellID;
-		-- check what this tooltip is currently displaying, and keep that reference
-		link = select(2, self:GetItem());
-		if link and not link:find("%[]") then
-			if self.AllTheThingsProcessing and self.AllTheThingsProcessing == link then
-				return true;
-			else
-				self.AllTheThingsProcessing = link;
-			end
-		else
-			target = select(2, self:GetUnit());
-			if target then
-				if self.AllTheThingsProcessing and self.AllTheThingsProcessing == target then
-					return true;
-				else
-					self.AllTheThingsProcessing = target;
-				end
-			else
-				spellID = select(2, self:GetSpell());
-				if spellID then
-					if self.AllTheThingsProcessing and self.AllTheThingsProcessing == spellID then
-						return true;
-					else
-						self.AllTheThingsProcessing = spellID;
-					end
-				end
-			end
-		end
-
-		--[[--]
-		-- Debug all of the available fields on the tooltip.
-		app.PrintDebug("Tooltip Data")
-		for i,j in pairs(self) do
-			app.PrintDebug(i,type(j),j);
-		end
-		-- self:Show();
-		-- self:AddDoubleLine("GetItem", tostring(select(2, self:GetItem()) or "nil"));
-		-- self:AddDoubleLine("GetSpell", tostring(select(2, self:GetSpell()) or "nil"));
-		-- self:AddDoubleLine("GetUnit", tostring(select(2, self:GetUnit()) or "nil"));
-		--]]--
-
-		-- Does the tooltip have a target?
-		if self.AllTheThingsProcessing and target then
-			-- Yes.
-			target = UnitGUID(target);
-			if target then
-				local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",target);
-				-- print(target, type, npc_id);
-				if type == "Player" then
-					if target == "Player-76-0895E23B" then
-						local leftSide = _G[self:GetName() .. "TextLeft1"];
-						if leftSide then
-							leftSide:SetText("|cffff8000" .. leftSide:GetText() .. "|r");
-						end
-						local rightSide = _G[self:GetName() .. "TextRight2"];
-						leftSide = _G[self:GetName() .. "TextLeft2"];
-						if leftSide and rightSide then
-							leftSide:SetText(L["TITLE"]);
-							leftSide:Show();
-							rightSide:SetText("Author");
-							rightSide:Show();
-						else
-							self:AddDoubleLine(L["TITLE"], "Author");
-						end
-					end
-				elseif type == "Creature" or type == "Vehicle" then
-					if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npc_id)); end
-					AttachTooltipSearchResults(self, 1, "creatureID:" .. npc_id, SearchForField, "creatureID", tonumber(npc_id));
-				end
-			end
-			return true;
-		end
-
-		-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
-		if self.AllTheThingsProcessing and spellID then
-			AttachTooltipSearchResults(self, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID);
-			return true;
-		end
-
-		-- Does the tooltip have an itemlink?
-		--local link = select(2, self:GetItem());
-		if self.AllTheThingsProcessing and link then
-			-- local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, reforging, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
-			-- local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
-			-- local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*)");
-			-- print(Ltype,Id);
-			--[[
-			local itemString = string.match(link, "item[%-?%d:]+");
-			-- mythic keystones have no itemID ... ?? so itemString is nil here
-			local itemID = GetItemInfoInstant(itemString);
-			if not AllTheThingsAuctionData then return end;
-			if AllTheThingsAuctionData[itemID] then
-				self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
-			end--]]
-			-- app.PrintDebug("Search Item",link);
-			local mohIndex = link:find("item:137642");
-			if mohIndex and mohIndex > 0 then -- skip Mark of Honor for now
-				AttachTooltipSearchResults(self, 1, link, app.EmptyFunction, "itemID", 137642);
-			else
-				AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
-			end
-			return true;
-		end
-
-		-- Does this tooltip have a 'shown Thing'
-		-- if self.shownThing then
-			-- -- local search, id = self.shownThing[1], self.shownThing[2];
-			-- -- print("shown Thing", search, id);
-			-- -- AttachTooltipSearchResults(self, 1, search .. ":" .. id, SearchForField, search, id);
-			-- self.AllTheThingsProcessing = nil;
-			-- self.shownThing = nil;
-		-- end
-
-		-- Does the tooltip have an owner?
-		if owner then
-			-- print("AttachTooltip-HasOwner");
-			-- If the owner has a ref, it's an ATT row. Ignore it.
-			if owner.ref then
-				-- print("owner-ATT-row");
-				return true; end
-
-			--[[--
-			-- Debug all of the available fields on the owner.
-			self:AddDoubleLine("GetOwner", tostring(owner:GetName()));
-			for i,j in pairs(owner) do
-				self:AddDoubleLine(tostring(i), tostring(j));
-			end
-			self:Show();
-			--]]--
-
-			local encounterID = owner.encounterID;
-			if encounterID and not owner.itemID then
-				if app.Settings:GetTooltipSetting("encounterID") then self:AddDoubleLine(L["ENCOUNTER_ID"], tostring(encounterID)); end
-				AttachTooltipSearchResults(self, 1, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
-				return true;
-			end
-
-			local gf;
-			if owner.lastNumMountsNeedingFanfare then
-				-- Collections
-				gf = app:GetWindow("Prime").data;
-			elseif owner.NewAdventureNotice then
-				-- Adventure Guide
-				gf = app:GetWindow("Prime").data.g[1];
-			elseif owner.tooltipText then
-				if type(owner.tooltipText) == "string" then
-					if owner.tooltipText == DUNGEONS_BUTTON then
-						-- Group Finder
-						gf = app:GetWindow("Prime").data.g[4];
-					elseif owner.tooltipText == BLIZZARD_STORE then
-						-- Shop
-						gf = app:GetWindow("Prime").data.g[16];
-					elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
-						-- Achievements
-						gf = app:GetWindow("Prime").data.g[5];
-					end
-				end
-			end
-			if gf then
-				app.noDepth = true;
-				AttachTooltipSearchResults(self, 1, owner:GetName(), (function() return gf; end), owner:GetName(), 1);
-				app.noDepth = nil;
-				self:Show();
-			end
-		end
-
-		-- Addons Menu?
-		if numLines == 2 then
-			local tooltipName = self:GetName() or "";
-			local leftSide = _G[tooltipName.."TextLeft1"];
-			if leftSide and leftSide:GetText() == "AllTheThings" then
-				local reference = app:GetDataCache();
-				self:ClearLines();
-				self:AddDoubleLine(L["TITLE"], GetProgressColorText(reference.progress, reference.total), 1, 1, 1);
-				self:AddDoubleLine(app.Settings:GetModeString(), app.GetNumberOfItemsUntilNextPercentage(reference.progress, reference.total), 1, 1, 1);
-				self:AddLine(reference.description, 0.4, 0.8, 1, 1);
-				return true;
-			end
-		end
-		-- print("AttachTooltip-Return");
-	end
-end
-local function AttachBattlePetTooltip(self, data, quantity, detail)
-	if not data or data.att or not data.speciesID then return end
-	data.att = 1;
-
-	-- GameTooltip_ShowCompareItem
-	local searchResults = SearchForField("speciesID", data.speciesID);
-	local owned = C_PetJournal.GetOwnedBattlePetString(data.speciesID);
-	self.Owned:SetText(owned);
-	if owned == nil then
-		if self.Delimiter then
-			-- if .Delimiter is present it requires special handling (FloatingBattlePetTooltip)
-			self:SetSize(260,150 + h)
-			self.Delimiter:ClearAllPoints()
-			self.Delimiter:SetPoint("TOPLEFT",self.SpeedTexture,"BOTTOMLEFT",-6,-5)
-		else
-			self:SetSize(260,122)
-		end
-	else
-		local h = self.Owned:GetHeight() or 0;
-		if self.Delimiter then
-			self:SetSize(260,150 + h)
-			self.Delimiter:ClearAllPoints()
-			self.Delimiter:SetPoint("TOPLEFT",self.SpeedTexture,"BOTTOMLEFT",-6,-(5 + h))
-		else
-			self:SetSize(260,122 + h)
-		end
-	end
-	self:Show()
-	return true;
-end
-local function ClearTooltip(self)
-	-- app.PrintDebug("Clear Tooltip");
-	self.AllTheThingsProcessing = nil;
-	self.AttachComplete = nil;
-	self.MiscFieldsComplete = nil;
-	self.UpdateTooltip = nil;
-end
-
--- Tooltip Hooks
-(function()
-	local C_CurrencyInfo_GetCurrencyListInfo = C_CurrencyInfo.GetCurrencyListInfo;
-	local C_CurrencyInfo_GetCurrencyInfo = C_CurrencyInfo.GetCurrencyInfo;
-	--[[
-	for name,func in pairs(getmetatable(GameTooltip).__index) do
-		print(name);
-		if type(func) == "function" and name ~= "IsOwned" and name ~= "GetOwner" then
-			(function(n,f) GameTooltip[n] = function(...)
-					print("GameTooltip", n, ...);
-					return f(...);
-				end
-			end)(name, func);
-		end
-	end
-	]]--
-	local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
-	GameTooltip.SetCurrencyByID = function(self, currencyID, count)
-		-- print("set currency tooltip", currencyID, count)
-		-- Make sure to call to base functionality
-		GameTooltip_SetCurrencyByID(self, currencyID, count);
-		if CanAttachTooltips() then
-			AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
-			if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
-			self:Show();
-		end
-	end
-	local GameTooltip_SetCurrencyToken = GameTooltip.SetCurrencyToken;
-	GameTooltip.SetCurrencyToken = function(self, tokenID)
-		-- app.PrintDebug("GameTooltip.SetCurrencyToken", tokenID)
-		-- this only runs once per tooltip show
-		-- Make sure to call to base functionality
-		GameTooltip_SetCurrencyToken(self, tokenID);
-		if CanAttachTooltips() then
-			-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
-			local info = C_CurrencyInfo_GetCurrencyListInfo(tokenID);
-			local name, isHeader = info.name, info.isHeader;
-			-- print(tokenID, name, isHeader);
-			-- app.PrintTable(info)
-			if not isHeader then
-				-- Determine which currencyID is the one that we're dealing with.
-				-- TODO: also need to check 'currencyIDAsCost'
-				local cache = SearchForFieldContainer("currencyID");
-				if cache then
-					-- We only care about currencies in the addon at the moment.
-					for currencyID,_ in pairs(cache) do
-						-- Compare the name of the currency vs the name of the token
-						local currencyInfo = C_CurrencyInfo_GetCurrencyInfo(currencyID);
-						if currencyInfo and currencyInfo.name == name then
-							-- self.shownThing = { "currencyID", currencyID };
-							-- make sure tooltip refreshes
-							self.AllTheThingsProcessing = nil;
-							AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
-							if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
-							self:Show();
-							return;
-						end
-					end
-				end
-				-- move on to currencyIDAsCost
-				cache = SearchForFieldContainer("currencyIDAsCost");
-				if cache then
-					-- We only care about currencies in the addon at the moment.
-					for currencyID,_ in pairs(cache) do
-						-- Compare the name of the currency vs the name of the token
-						local currencyInfo = C_CurrencyInfo_GetCurrencyInfo(currencyID);
-						if currencyInfo and currencyInfo.name == name then
-							-- self.shownThing = { "currencyID", currencyID };
-							-- make sure tooltip refreshes
-							self.AllTheThingsProcessing = nil;
-							AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
-							if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
-							self:Show();
-						return;
-						end
-					end
-				end
-			end
-		end
-	end
-	local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
-	GameTooltip.SetLFGDungeonReward = function(self, dungeonID, rewardID)
-		-- Only call to the base functionality if it is unknown.
-		GameTooltip_SetLFGDungeonReward(self, dungeonID, rewardID);
-		if CanAttachTooltips() then
-			local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonRewardInfo(dungeonID, rewardID);
-			if itemID then
-				if spec == "item" then
-					AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
-					self:Show();
-				elseif spec == "currency" then
-					AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
-					self:Show();
-				end
-			end
-		end
-	end
-	local GameTooltip_SetLFGDungeonShortageReward = GameTooltip.SetLFGDungeonShortageReward;
-	GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
-		-- Only call to the base functionality if it is unknown.
-		GameTooltip_SetLFGDungeonShortageReward(self, dungeonID, shortageSeverity, lootIndex);
-		if CanAttachTooltips() then
-			local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonShortageRewardInfo(dungeonID, shortageSeverity, lootIndex);
-			if itemID then
-				if spec == "item" then
-					AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
-					self:Show();
-				elseif spec == "currency" then
-					AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
-					self:Show();
-				end
-			end
-		end
-	end
-	--[[
-	local GameTooltip_SetToyByItemID = GameTooltip.SetToyByItemID;
-	GameTooltip.SetToyByItemID = function(self, itemID)
-		GameTooltip_SetToyByItemID(self, itemID);
-		if CanAttachTooltips() then
-			AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
-			self:Show();
-		end
-	end
-	]]--
-
-	-- Paragon Hook
-	-- local paragonCacheID = {
-		-- Paragon Cache Rewards
-		-- [QuestID] = [ItemCacheID"]	-- Faction // Quest Title
-		-- [54454] = 166300,	-- 7th Legion // Supplies from the 7th Legion
-		-- [48976] = 152922,	-- Argussian Reach // Paragon of the Argussian Reach
-		-- [46777] = 152108,	-- Armies of Legionfall // The Bounties of Legionfall
-		-- [48977] = 152923,	-- Army of the Light // Paragon of the Army of the Light
-		-- [54453] = 166298,	-- Champions of Azeroth // Supplies from Magni
-		-- [46745] = 152102,	-- Court of Farondis // Supplies from the Court
-		-- [46747] = 152103,	-- Dreamweavers // Supplies from the Dreamweavers
-		-- [46743] = 152104,	-- Highmountain Tribes // Supplies from Highmountain
-		-- [54455] = 166299,	-- Honorbound // Supplies from the Honorbound
-		-- [54456] = 166297,	-- Order of Embers // Supplies from the Order of Embers
-		-- [54458] = 166295,	-- Proudmoore Admiralty // Supplies from the Proudmoore Admiralty
-		-- [54457] = 166294,	-- Storm's Wake // Supplies from Storm's Wake
-		-- [54460] = 166282,	-- Talanji's Expedition // Supplies from Talanji's Expedition
-		-- [46748] = 152105,	-- The Nightfallen // Supplies from the Nightfallen
-		-- [46749] = 152107,	-- The Wardens // Supplies from the Wardens
-		-- [54451] = 166245,	-- Tortollan Seekers // Baubles from the Seekers
-		-- [46746] = 152106,	-- Valarjar // Supplies from the Valarjar
-		-- [54461] = 166290,	-- Voldunai // Supplies from the Voldunai
-		-- [54462] = 166292,	-- Zandalari Empire // Supplies from the Zandalari Empire
-		-- [55976] = 169939,	-- Waveblade Ankoan // Supplies From the Waveblade Ankoan
-		-- [53982] = 169940,	-- Unshackled // Supplies From The Unshackled
-		-- [55348] = 170061,	-- Rustbolt // Supplies from the Rustbolt Resistance
-		-- [58096] = 174483,	-- Rajani // Supplies from the Rajani
-		-- [58097] = 174484,	-- Uldum Accord // Supplies from the Uldum Accord
-		-- [61095] = 180646,	-- Undying Army // Supplies from The Undying Army
-		-- [61098] = 180649,	-- Wild Hunt // Supplies from The Wild Hunt
-		-- [61100] = 180648,	-- Court of Harvesters // Supplies from the Court of Harvesters
-		-- [61097] = 180647,	-- The Ascended // Supplies from The Ascended
-	-- };
-	-- hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
-		-- print("ReputationParagonFrame_SetupParagonTooltip")
-		-- Let's make sure the user isn't in combat and if they are do they have In Combat turned on.  Finally check to see if Tootltips are turned on.
-		-- if CanAttachTooltips() then
-			-- Source: //Interface//FrameXML//ReputationFrame.lua Line 360
-			-- Using hooksecurefunc because of how Blizzard coded the frame.  Couldn't get GameTooltip to work like the above ones.
-			-- //Interface//FrameXML//ReputationFrame.lua Segment code
-			--[[
-				function ReputationParagonFrame_SetupParagonTooltip(frame)
-					EmbeddedItemTooltip.owner = frame;
-					EmbeddedItemTooltip.factionID = frame.factionID;
-
-					local factionName, _, standingID = GetFactionInfoByID(frame.factionID);
-					local gender = UnitSex("player");
-					local factionStandingtext = GetText("FACTION_STANDING_LABEL"..standingID, gender);
-					local currentValue, threshold, rewardQuestID, hasRewardPending, tooLowLevelForParagon = C_Reputation.GetFactionParagonInfo(frame.factionID);
-
-					if ( tooLowLevelForParagon ) then
-						EmbeddedItemTooltip:SetText(PARAGON_REPUTATION_TOOLTIP_TEXT_LOW_LEVEL);
-					else
-						EmbeddedItemTooltip:SetText(factionStandingtext);
-						local description = PARAGON_REPUTATION_TOOLTIP_TEXT:format(factionName);
-						if ( hasRewardPending ) then
-							local questIndex = GetQuestLogIndexByID(rewardQuestID);
-							local text = GetQuestLogCompletionText(questIndex);
-							if ( text and text ~= "" ) then
-								description = text;
-							end
-						end
-						EmbeddedItemTooltip:AddLine(description, HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b, 1);
-						if ( not hasRewardPending ) then
-							local value = mod(currentValue, threshold);
-							-- show overflow if reward is pending
-							if ( hasRewardPending ) then
-								value = value + threshold;
-							end
-							GameTooltip_ShowProgressBar(EmbeddedItemTooltip, 0, threshold, value, REPUTATION_PROGRESS_FORMAT:format(value, threshold));
-						end
-						GameTooltip_AddQuestRewardsToTooltip(EmbeddedItemTooltip, rewardQuestID);
-					end
-					EmbeddedItemTooltip:Show();
-				end
-			--]]
-			-- local paragonQuestID = select(3, C_Reputation.GetFactionParagonInfo(frame.factionID));
-			-- print("info",frame.factionID,paragonQuestID,C_Reputation.GetFactionParagonInfo(frame.factionID))
-			-- if paragonQuestID then
-			-- 	local itemID = paragonCacheID[paragonQuestID];
-			-- 	print("itemID",itemID)
-			-- 	if itemID then
-			-- 		local link = select(2, GetItemInfo(itemID));
-			-- 		print("link",link)
-			-- 		if link then
-			-- 			-- Attach tooltip to the Paragon Frame
-			-- 			-- GameTooltip:SetOwner(EmbeddedItemTooltip, "ANCHOR_NONE")
-			-- 			-- GameTooltip:SetPoint("TOPLEFT", EmbeddedItemTooltip, "TOPRIGHT");
-			-- 			GameTooltip:SetHyperlink(link);
-			-- 		end
-			-- 	end
-			-- end
-	-- 	end
-	-- end);
-
-	-- Hide Paragon Tooltip when cleared
-	-- hooksecurefunc("ReputationParagonFrame_OnLeave",function(self)
-	-- 	GameTooltip:Hide();
-	-- end);
-end)();
 
 -- Lib Helpers
 (function()
@@ -16520,6 +16034,7 @@ RowOnEnter = function (self)
 	local reference = self.ref; -- NOTE: This is the good ref value, not the parasitic one.
 	if reference and GameTooltip then
 		local GameTooltip = GameTooltip;
+		local tooltipAnchor;
 		local initialBuild = not GameTooltip.IsRefreshing;
 		GameTooltip.IsRefreshing = true;
 
@@ -16533,14 +16048,16 @@ RowOnEnter = function (self)
 			GameTooltipModel:ClearAllPoints();
 
 			if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
-				GameTooltip:SetOwner(self, "ANCHOR_LEFT");
+				tooltipAnchor = "ANCHOR_LEFT";
 				GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
 				GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
 			else
-				GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+				tooltipAnchor = "ANCHOR_RIGHT";
 				GameTooltipIcon:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
 				GameTooltipModel:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
 			end
+			-- app.PrintDebug("OnRowEnter-GameTooltip:SetOwner");
+			GameTooltip:SetOwner(self, tooltipAnchor);
 		else
 			-- app.PrintDebug("RowOnEnter-IsRefreshing",GameTooltip.AttachComplete,GameTooltip.MiscFieldsComplete,GameTooltip:NumLines());
 			-- complete tooltip already exists and hasn't been cleared elsewhere, don't touch it
@@ -16553,16 +16070,21 @@ RowOnEnter = function (self)
 		end
 
 		local link = reference.link;
+		local _, linkAdded;
 		if link then
 			-- app.PrintDebug("OnRowEnter-SetDirectlink",link);
 			-- Safely attempt setting the tooltip link from the data
-			pcall(GameTooltip.SetHyperlink, GameTooltip, link);
+			_, linkAdded = pcall(GameTooltip.SetHyperlink, GameTooltip, link);
 		end
 
-		local doSearch;
+		local doSearch = linkAdded == false;
 		-- Nothing generated into tooltip based on the link, or no link exists
 		if GameTooltip:NumLines() < 1 then
 			-- Mark the tooltip as being complete, and insert the same text from the row itself
+			if doSearch then
+				GameTooltip:Hide();
+				GameTooltip:SetOwner(self, tooltipAnchor);
+			end
 			GameTooltip:AddLine(reference.text);
 			doSearch = true;
 		end
@@ -17402,8 +16924,8 @@ RowOnEnter = function (self)
 		GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
 		-- END DEBUGGING]]
 
-		-- app.PrintDebug("OnRowEnter-Show");
 		GameTooltip.MiscFieldsComplete = true;
+		-- app.PrintDebug("OnRowEnter-GameTooltip:Show");
 		GameTooltip:Show();
 		-- app.PrintDebug("OnRowEnter-Return");
 	end
@@ -22862,38 +22384,427 @@ end	-- app.LoadDebugger
 
 -- Tooltip Hooks
 do
-hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
-	if CanAttachTooltips() then
-		local link = C_ToyBox.GetToyLink(itemID);
-		if link then
-			AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
+
+-- many of these don't include an ID in-game so they don't attach results. maybe someday they will...
+local TooltipTypes = {
+	[Enum.TooltipDataType.Toy] = "itemID",
+	[Enum.TooltipDataType.Item] = "itemID",
+	[Enum.TooltipDataType.Spell] = "spellID",
+	-- [Enum.TooltipDataType.Mount] = "spellID",	-- need special conversion
+	[Enum.TooltipDataType.Achievement] = "achievementID",
+	[Enum.TooltipDataType.Quest] = "questID",
+	[Enum.TooltipDataType.QuestPartyProgress] = "questID",
+	[Enum.TooltipDataType.BattlePet] = "speciesID",
+	[Enum.TooltipDataType.CompanionPet] = "speciesID",
+	[Enum.TooltipDataType.Currency] = "currencyID",
+	[Enum.TooltipDataType.Object] = "objectID",
+	[Enum.TooltipDataType.InstanceLock] = "instanceID",
+};
+
+local function ClearTooltip(self)
+	-- app.PrintDebug("Clear Tooltip");
+	self.AllTheThingsProcessing = nil;
+	self.AttachComplete = nil;
+	self.MiscFieldsComplete = nil;
+	self.UpdateTooltip = nil;
+end
+local function AttachTooltip(self, ttdata)
+
+	if not CanAttachTooltips() then return; end
+
+	-- Does the tooltip have an owner?
+	local owner = self:GetOwner();
+	if owner then
+		if owner.SpellHighlightTexture then
+			-- Actionbars, don't want that.
+			return true;
+		end
+		-- this is already covered by a default in-game tooltip line:
+		-- AUCTION_HOUSE_BUCKET_VARIATION_EQUIPMENT_TOOLTIP = "Items in this group may vary in stats and appearance. Check the auction's tooltip before buying.";
+		-- if owner.useCircularIconBorder and not self.AllTheThingsProcessing then
+		-- 	-- print("AH General Item Tooltip")
+		-- 	-- Generalized tooltip hover of a selected Auction Item -- not always accurate to the actual Items for sale
+		-- 	self:AddLine(L["AUCTION_GENERALIZED_ITEM_WARNING"]);
+		-- end
+		-- print("AttachTooltip-HasOwner");
+
+		--[[--
+		-- Debug all of the available fields on the owner.
+		self:AddDoubleLine("GetOwner", tostring(owner:GetName()));
+		for i,j in pairs(owner) do
+			self:AddDoubleLine(tostring(i), tostring(j));
+		end
+		self:Show();
+		--]]--
+
+		local encounterID = owner.encounterID;
+		if encounterID and not owner.itemID then
+			if app.Settings:GetTooltipSetting("encounterID") then self:AddDoubleLine(L["ENCOUNTER_ID"], tostring(encounterID)); end
+			AttachTooltipSearchResults(self, 1, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
+			return true;
+		end
+
+		-- Micro Menu button tooltips
+		local gf;
+		if owner.lastNumMountsNeedingFanfare then
+			-- Collections
+			gf = app:GetWindow("Prime").data;
+		elseif owner.NewAdventureNotice then
+			-- Adventure Guide
+			gf = app:GetWindow("Prime").data.g[1];
+		elseif owner.tooltipText then
+			if type(owner.tooltipText) == "string" then
+				if owner.tooltipText == DUNGEONS_BUTTON then
+					-- Group Finder
+					gf = app:GetWindow("Prime").data.g[4];
+				elseif owner.tooltipText == BLIZZARD_STORE then
+					-- Shop
+					gf = app:GetWindow("Prime").data.g[16];
+				elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
+					-- Achievements
+					gf = app:GetWindow("Prime").data.g[5];
+				end
+			end
+		end
+		if gf then
+			-- app.PrintDebug("special tooltip")
+			app.noDepth = true;
+			AttachTooltipSearchResults(self, 1, owner:GetName(), (function() return gf; end), owner:GetName(), 1);
+			app.noDepth = nil;
 			self:Show();
 		end
 	end
-end)
-hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, recipeID, reagentID, ...)
-	if CanAttachTooltips() then
-		local link = C_TradeSkillUI.GetRecipeFixedReagentItemLink(recipeID, reagentID);
-		if link then
-			AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
-			self:Show();
+
+	local ttType, ttId = ttdata and ttdata.type;
+	if ttType then
+		ttId = ttdata.id;
+		-- app.PrintDebug("TT Type",ttType,ttId)
+	end
+
+	local link, target, spellID, id, _;
+	-- check what this tooltip is currently displaying, and keep that reference
+	-- name, link, id
+	_, link, id = TooltipUtil.GetDisplayedItem(self);
+	if link and not link:find("%[]") then
+		if self.AllTheThingsProcessing and self.AllTheThingsProcessing == link then
+			return true;
+		else
+			self.AllTheThingsProcessing = link;
+		end
+	else
+		-- name, type, UID
+		target, _, id = TooltipUtil.GetDisplayedUnit(self);
+		if target then
+			if self.AllTheThingsProcessing and self.AllTheThingsProcessing == target then
+				return true;
+			else
+				self.AllTheThingsProcessing = target;
+			end
+		else
+			-- name, spellID
+			_, spellID = TooltipUtil.GetDisplayedSpell(self);
+			if spellID then
+				if self.AllTheThingsProcessing and self.AllTheThingsProcessing == spellID then
+					return true;
+				else
+					self.AllTheThingsProcessing = spellID;
+				end
+			end
 		end
 	end
-end)
+
+	-- app.PrintDebug("TooltipContent",link, target, spellID, id)
+
+	--[[--]
+	-- Debug all of the available fields on the tooltip.
+	app.PrintDebug("Tooltip Data")
+	for i,j in pairs(self) do
+		app.PrintDebug(i,type(j),j);
+	end
+	-- self:Show();
+	--]]--
+
+	-- Does this tooltip have an OnClear attached for ATT since it can handle content which ATT will attach to?
+	if self.AllTheThingsProcessing and not self.AllTheThingsOnTooltipClearedHook then
+		-- app.PrintDebug("Hooking ClearTooltip",self:GetName())
+		pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip)
+		-- if pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip) then
+		-- 	app.PrintDebug("Hooked")
+		-- end
+		self.AllTheThingsOnTooltipClearedHook = true;
+	end
+
+	-- Does the tooltip have a target?
+	if self.AllTheThingsProcessing and target and id then
+		-- Yes.
+		local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",id);
+		-- print(target, type, npc_id);
+		if type == "Player" then
+			if id == "Player-76-0895E23B" then
+				local leftSide = _G[self:GetName() .. "TextLeft1"];
+				if leftSide then
+					leftSide:SetText("|cffff8000" .. leftSide:GetText() .. "|r");
+				end
+				local rightSide = _G[self:GetName() .. "TextRight2"];
+				leftSide = _G[self:GetName() .. "TextLeft2"];
+				if leftSide and rightSide then
+					leftSide:SetText(L["TITLE"]);
+					leftSide:Show();
+					rightSide:SetText("Author");
+					rightSide:Show();
+				else
+					self:AddDoubleLine(L["TITLE"], "Author");
+				end
+			end
+		elseif type == "Creature" or type == "Vehicle" then
+			if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npc_id)); end
+			AttachTooltipSearchResults(self, 1, "creatureID:" .. npc_id, SearchForField, "creatureID", tonumber(npc_id));
+		end
+		return true;
+	end
+
+	-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
+	if self.AllTheThingsProcessing and spellID then
+		AttachTooltipSearchResults(self, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID);
+		return true;
+	end
+
+	-- Does the tooltip have an itemlink?
+	if self.AllTheThingsProcessing and link then
+		-- local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, reforging, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
+		-- local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
+		-- local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*)");
+		-- print(Ltype,Id);
+		--[[
+		local itemString = string.match(link, "item[%-?%d:]+");
+		-- mythic keystones have no itemID ... ?? so itemString is nil here
+		if not AllTheThingsAuctionData then return end;
+		if AllTheThingsAuctionData[itemID] then
+			self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
+		end--]]
+		-- app.PrintDebug("Search Item",link,id,ttId);
+		if id == 137642 then -- skip Mark of Honor for now
+			AttachTooltipSearchResults(self, 1, link, app.EmptyFunction, "itemID", 137642);
+			return true;
+		else
+			local itemID = GetItemInfoInstant(link);
+			-- TODO: review if Blizzard ever fixes their tooltips returning the wrong Item link when using TooltipUtil.GetDisplayedItem
+			-- on Auction House tooltips (i.e. Recipes) where one Item is nested inside another Item
+			if itemID ~= ttId then
+				app.PrintDebug("Mismatch TT data!",link,itemID,ttId)
+				-- fallout to the generalized Item search below
+			else
+				AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
+				return true;
+			end
+		end
+	end
+
+	-- Check the extra data to see if there's an alternate search for the data
+	if ttType then
+		local knownSearchField = TooltipTypes[ttType];
+		if not knownSearchField then
+			-- other ways to search
+			if ttType == Enum.TooltipDataType.Mount then
+				knownSearchField = "spellID";
+				ttId = select(2, C_MountJournal.GetMountInfoByID(ttId));
+			end
+		end
+		if knownSearchField and ttId then
+			app.PrintDebug("TT Search",knownSearchField,id)
+			AttachTooltipSearchResults(self, 1, knownSearchField..":"..ttId, SearchForField, knownSearchField, tonumber(ttId));
+			return true;
+		end
+	end
+
+	-- Addons Menu?
+	local numLines = self:NumLines();
+	if numLines == 2 then
+		local tooltipName = self:GetName() or "";
+		local leftSide = _G[tooltipName.."TextLeft1"];
+		if leftSide and leftSide:GetText() == "AllTheThings" then
+			local reference = app:GetDataCache();
+			self:ClearLines();
+			self:AddDoubleLine(L["TITLE"], GetProgressColorText(reference.progress, reference.total), 1, 1, 1);
+			self:AddDoubleLine(app.Settings:GetModeString(), app.GetNumberOfItemsUntilNextPercentage(reference.progress, reference.total), 1, 1, 1);
+			self:AddLine(reference.description, 0.4, 0.8, 1, 1);
+			return true;
+		end
+	end
+	-- print("AttachTooltip-Return");
+end
+local function AttachBattlePetTooltip(self, data, quantity, detail)
+	if not data or data.att or not data.speciesID then return end
+	data.att = 1;
+
+	-- GameTooltip_ShowCompareItem
+	local searchResults = SearchForField("speciesID", data.speciesID);
+	local owned = C_PetJournal.GetOwnedBattlePetString(data.speciesID);
+	self.Owned:SetText(owned);
+	if owned == nil then
+		if self.Delimiter then
+			-- if .Delimiter is present it requires special handling (FloatingBattlePetTooltip)
+			self:SetSize(260,150 + h)
+			self.Delimiter:ClearAllPoints()
+			self.Delimiter:SetPoint("TOPLEFT",self.SpeedTexture,"BOTTOMLEFT",-6,-5)
+		else
+			self:SetSize(260,122)
+		end
+	else
+		local h = self.Owned:GetHeight() or 0;
+		if self.Delimiter then
+			self:SetSize(260,150 + h)
+			self.Delimiter:ClearAllPoints()
+			self.Delimiter:SetPoint("TOPLEFT",self.SpeedTexture,"BOTTOMLEFT",-6,-(5 + h))
+		else
+			self:SetSize(260,122 + h)
+		end
+	end
+	self:Show()
+	return true;
+end
+
+-- Raw Tooltip Hooks
+--[[
+for name,func in pairs(getmetatable(GameTooltip).__index) do
+	print(name);
+	if type(func) == "function" and name ~= "IsOwned" and name ~= "GetOwner" then
+		(function(n,f) GameTooltip[n] = function(...)
+				print("GameTooltip", n, ...);
+				return f(...);
+			end
+		end)(name, func);
+	end
+end
+]]--
+
+local GameTooltip_SetLFGDungeonShortageReward = GameTooltip.SetLFGDungeonShortageReward;
+GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
+	app.PrintDebug("GameTooltip.SetLFGDungeonShortageReward",dungeonID, shortageSeverity, lootIndex );
+	-- Only call to the base functionality if it is unknown.
+	GameTooltip_SetLFGDungeonShortageReward(self, dungeonID, shortageSeverity, lootIndex);
+	if CanAttachTooltips() then
+		local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonShortageRewardInfo(dungeonID, shortageSeverity, lootIndex);
+		if itemID then
+			if spec == "item" then
+				AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
+				self:Show();
+			elseif spec == "currency" then
+				AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
+				self:Show();
+			end
+		end
+	end
+end
+
+-- Paragon Hook
+-- local paragonCacheID = {
+	-- Paragon Cache Rewards
+	-- [QuestID] = [ItemCacheID"]	-- Faction // Quest Title
+	-- [54454] = 166300,	-- 7th Legion // Supplies from the 7th Legion
+	-- [48976] = 152922,	-- Argussian Reach // Paragon of the Argussian Reach
+	-- [46777] = 152108,	-- Armies of Legionfall // The Bounties of Legionfall
+	-- [48977] = 152923,	-- Army of the Light // Paragon of the Army of the Light
+	-- [54453] = 166298,	-- Champions of Azeroth // Supplies from Magni
+	-- [46745] = 152102,	-- Court of Farondis // Supplies from the Court
+	-- [46747] = 152103,	-- Dreamweavers // Supplies from the Dreamweavers
+	-- [46743] = 152104,	-- Highmountain Tribes // Supplies from Highmountain
+	-- [54455] = 166299,	-- Honorbound // Supplies from the Honorbound
+	-- [54456] = 166297,	-- Order of Embers // Supplies from the Order of Embers
+	-- [54458] = 166295,	-- Proudmoore Admiralty // Supplies from the Proudmoore Admiralty
+	-- [54457] = 166294,	-- Storm's Wake // Supplies from Storm's Wake
+	-- [54460] = 166282,	-- Talanji's Expedition // Supplies from Talanji's Expedition
+	-- [46748] = 152105,	-- The Nightfallen // Supplies from the Nightfallen
+	-- [46749] = 152107,	-- The Wardens // Supplies from the Wardens
+	-- [54451] = 166245,	-- Tortollan Seekers // Baubles from the Seekers
+	-- [46746] = 152106,	-- Valarjar // Supplies from the Valarjar
+	-- [54461] = 166290,	-- Voldunai // Supplies from the Voldunai
+	-- [54462] = 166292,	-- Zandalari Empire // Supplies from the Zandalari Empire
+	-- [55976] = 169939,	-- Waveblade Ankoan // Supplies From the Waveblade Ankoan
+	-- [53982] = 169940,	-- Unshackled // Supplies From The Unshackled
+	-- [55348] = 170061,	-- Rustbolt // Supplies from the Rustbolt Resistance
+	-- [58096] = 174483,	-- Rajani // Supplies from the Rajani
+	-- [58097] = 174484,	-- Uldum Accord // Supplies from the Uldum Accord
+	-- [61095] = 180646,	-- Undying Army // Supplies from The Undying Army
+	-- [61098] = 180649,	-- Wild Hunt // Supplies from The Wild Hunt
+	-- [61100] = 180648,	-- Court of Harvesters // Supplies from the Court of Harvesters
+	-- [61097] = 180647,	-- The Ascended // Supplies from The Ascended
+-- };
+-- hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
+	-- print("ReputationParagonFrame_SetupParagonTooltip")
+	-- Let's make sure the user isn't in combat and if they are do they have In Combat turned on.  Finally check to see if Tootltips are turned on.
+	-- if CanAttachTooltips() then
+		-- Source: //Interface//FrameXML//ReputationFrame.lua Line 360
+		-- Using hooksecurefunc because of how Blizzard coded the frame.  Couldn't get GameTooltip to work like the above ones.
+		-- //Interface//FrameXML//ReputationFrame.lua Segment code
+		--[[
+			function ReputationParagonFrame_SetupParagonTooltip(frame)
+				EmbeddedItemTooltip.owner = frame;
+				EmbeddedItemTooltip.factionID = frame.factionID;
+
+				local factionName, _, standingID = GetFactionInfoByID(frame.factionID);
+				local gender = UnitSex("player");
+				local factionStandingtext = GetText("FACTION_STANDING_LABEL"..standingID, gender);
+				local currentValue, threshold, rewardQuestID, hasRewardPending, tooLowLevelForParagon = C_Reputation.GetFactionParagonInfo(frame.factionID);
+
+				if ( tooLowLevelForParagon ) then
+					EmbeddedItemTooltip:SetText(PARAGON_REPUTATION_TOOLTIP_TEXT_LOW_LEVEL);
+				else
+					EmbeddedItemTooltip:SetText(factionStandingtext);
+					local description = PARAGON_REPUTATION_TOOLTIP_TEXT:format(factionName);
+					if ( hasRewardPending ) then
+						local questIndex = GetQuestLogIndexByID(rewardQuestID);
+						local text = GetQuestLogCompletionText(questIndex);
+						if ( text and text ~= "" ) then
+							description = text;
+						end
+					end
+					EmbeddedItemTooltip:AddLine(description, HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b, 1);
+					if ( not hasRewardPending ) then
+						local value = mod(currentValue, threshold);
+						-- show overflow if reward is pending
+						if ( hasRewardPending ) then
+							value = value + threshold;
+						end
+						GameTooltip_ShowProgressBar(EmbeddedItemTooltip, 0, threshold, value, REPUTATION_PROGRESS_FORMAT:format(value, threshold));
+					end
+					GameTooltip_AddQuestRewardsToTooltip(EmbeddedItemTooltip, rewardQuestID);
+				end
+				EmbeddedItemTooltip:Show();
+			end
+		--]]
+		-- local paragonQuestID = select(3, C_Reputation.GetFactionParagonInfo(frame.factionID));
+		-- print("info",frame.factionID,paragonQuestID,C_Reputation.GetFactionParagonInfo(frame.factionID))
+		-- if paragonQuestID then
+		-- 	local itemID = paragonCacheID[paragonQuestID];
+		-- 	print("itemID",itemID)
+		-- 	if itemID then
+		-- 		local link = select(2, GetItemInfo(itemID));
+		-- 		print("link",link)
+		-- 		if link then
+		-- 			-- Attach tooltip to the Paragon Frame
+		-- 			-- GameTooltip:SetOwner(EmbeddedItemTooltip, "ANCHOR_NONE")
+		-- 			-- GameTooltip:SetPoint("TOPLEFT", EmbeddedItemTooltip, "TOPRIGHT");
+		-- 			GameTooltip:SetHyperlink(link);
+		-- 		end
+		-- 	end
+		-- end
+-- 	end
+-- end);
+
+-- Hide Paragon Tooltip when cleared
+-- hooksecurefunc("ReputationParagonFrame_OnLeave",function(self)
+-- 	GameTooltip:Hide();
+-- end);
 
 -- 10.0.2
 -- https://wowpedia.fandom.com/wiki/Patch_10.0.2/API_changes#Tooltip_Changes
 if TooltipDataProcessor then
 	-- TODO: maybe in future refine this to specific tooltip datas that we actually can utilize...
-	local function OnTooltipAll(tooltip, data)
-		-- app.PrintDebug("OnTooltipAll", tooltip, data)
-		-- app.PrintTable(data)
-		AttachTooltip(tooltip);
-	end
+
 	-- app.PrintDebug("Tooltip Attach Process")
-	TooltipDataProcessor.AddTooltipPostCall(TooltipDataProcessor.AllTypes, OnTooltipAll)
+	TooltipDataProcessor.AddTooltipPostCall(TooltipDataProcessor.AllTypes, AttachTooltip)
 	-- TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, OnTooltipSetItem)
-	-- TooltipDataProcessor.AddTooltipPostCall(TooltipDataProcessor.AllTypes, AttachTooltip)
 else
 	GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 	GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
@@ -22905,34 +22816,12 @@ else
 	ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
 	ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
 
-	-- GameTooltip:HookScript("OnUpdate", CheckAttachTooltip);
 	GameTooltip:HookScript("OnShow", AttachTooltip);
 	ItemRefTooltip:HookScript("OnShow", AttachTooltip);
 	ItemRefShoppingTooltip1:HookScript("OnShow", AttachTooltip);
 	ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
 end
 
-GameTooltip:HookScript("OnTooltipCleared", ClearTooltip);
-ItemRefTooltip:HookScript("OnTooltipCleared", ClearTooltip);
-ItemRefShoppingTooltip1:HookScript("OnTooltipCleared", ClearTooltip);
-ItemRefShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
-
---[[
-hooksecurefunc("EmbeddedItemTooltip_SetCurrencyByID", function(self, id, ...)
-	print("EmbeddedItemTooltip_SetCurrencyByID", ...);
-	AttachTooltip(self.Tooltip);
-end);
-]]--
-hooksecurefunc("EmbeddedItemTooltip_SetItemByID", function(self, itemID, ...)
-	ClearTooltip(self.Tooltip);
-	AttachTooltip(self.Tooltip);
-	self.Tooltip:Show();
-end);
-hooksecurefunc("EmbeddedItemTooltip_SetItemByQuestReward", function(self, ...)
-	ClearTooltip(self.Tooltip);
-	AttachTooltip(self.Tooltip);
-	self.Tooltip:Show();
-end);
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 end -- Tooltip Hooks
 
