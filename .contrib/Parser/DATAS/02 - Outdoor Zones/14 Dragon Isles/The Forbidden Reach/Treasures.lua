@@ -18,6 +18,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 					i(194511),	-- Living Ration
 				},
 			}),
+			o(377233, {	-- Hessethiash's Poorly Hidden Treasure
+				["coord"] = { 35.6, 69.65, THE_FORBIDDEN_REACH },
+				["questID"] = 66876,
+				["g"] = {
+					i(195885),	-- Black Dragon's Scale Cloak
+				},
+			}),
 			o(377466, {	-- Lost Draconic Hourglass
 				["coord"] = { 30.5, 64.3, THE_FORBIDDEN_REACH },
 				["questID"] = 66974,
