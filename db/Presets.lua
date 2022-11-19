@@ -190,6 +190,58 @@ select(2, ...).Presets = {
 		[114] = true,
 		[999] = true,
 	},
+	["EVOKER"] = {
+		true, -- [1]
+		true, -- [2]
+		true, -- [3]
+		false, -- [4]
+		false, -- [5]
+		true, -- [6]
+		false, -- [7]
+		false, -- [8]
+		true, -- [9]
+		true, -- [10]
+		false, -- [11]
+		[20] = true,
+		[21] = true,
+		[22] = true,
+		[23] = true,
+		[24] = true,
+		[25] = true,
+		[26] = true,
+		[27] = false,
+		[28] = true,
+		[29] = true,
+		[31] = false,
+		[32] = false,
+		[33] = false,
+		[34] = true,
+		[35] = false,
+		[50] = true,
+		[57] = true,
+		[100] = true,
+		[101] = true,
+		[102] = true,
+		[103] = true,
+		[104] = true,
+		[105] = true,
+		[106] = true,
+		[200] = true,
+		-- Hidden Filter types (should always be allowed since User cannot show/hide)
+		[-1] = true,
+		[51] = true,
+		[52] = true,
+		[53] = true,
+		[54] = true,
+		[55] = true,
+		[56] = true,
+		[58] = true,
+		[59] = true,
+		[60] = true,
+		[113] = true,
+		[114] = true,
+		[999] = true,
+	},
 	["HUNTER"] = {
 		true, -- [1]
 		true, -- [2]
