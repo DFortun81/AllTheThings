@@ -4,6 +4,104 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	m(THE_WAKING_SHORES, {
 		n(ACHIEVEMENTS, {
+			ach(16676, {	-- Adventurer of The Waking Shores
+				crit(1, {
+					["_npcs"] = { 196056 },	-- Gushgut the Beaksinker
+				}),
+				crit(2, {
+					["_npcs"] = { 193256 },	-- Nulltheria the Void Gazer
+				}),
+				crit(3, {
+					["_npcs"] = { 187945 },	-- Anhydros the Tidetaker
+				}),
+				crit(4, {
+					["_npcs"] = { 193181 },	-- Skewersnout <Raypier of the Deep>
+				}),
+				crit(5, {
+					["_npcs"] = { 193263 },	-- Helmet Missingway
+				}),
+				crit(6, {
+					["_npcs"] = { 192738 },	-- Brundin the Dragonbane <Qalashi War Party>
+				}),
+				crit(7, {
+					["_npcs"] = { 193217 },	-- Drakewing
+				}),
+				crit(8, {
+					["_npcs"] = { 193148 },	-- Thunderous Matriarch
+				}),
+				crit(9, {
+					["_npcs"] = { 193135 },	-- Azra's Prized Peony
+				}),
+				crit(10, {
+					["_npcs"] = { 193228 },	-- Snappy
+				}),
+				crit(11, {
+					["_npcs"] = { 193118 },	-- O'nank Shorescour
+				}),
+				crit(12, {
+					["_npcs"] = { 193120 },	-- Smogswog the Firebreather
+				}),
+				crit(13, {
+					["_npcs"] = { 193132 },	-- Amethyzar the Glittering
+				}),
+				crit(14, {
+					["_npcs"] = { 186827 },	-- Magmaton
+				}),
+				crit(15, {
+					["_npcs"] = { 193152 },	-- Massive Magmashell
+				}),
+				crit(16, {
+					["_npcs"] = { 193154 },	-- Forgotten Gryphon
+				}),
+				crit(17, {
+					["_npcs"] = { 193134 },	-- Enkine the Voracious
+				}),
+				crit(18, {
+					["_npcs"] = { 193198 },	-- Captain Lancer
+				}),
+				crit(19, {
+					["_npcs"] = { 192362 },	-- Possessive Hornswog
+				}),
+				crit(20, {
+					["_npcs"] = { 186859 },	-- Worldcarver A'tir
+				}),
+				crit(21, {
+					["_npcs"] = { 190985 },	-- Death's Shadow
+				}),
+				crit(22, {
+					["_npcs"] = { 189822 },	-- Shas'ith
+				}),
+				crit(23, {
+					["_npcs"] = { 193266 },	-- Lepidoralia the Resplendent
+				}),
+				crit(24, {
+					["_npcs"] = { 186783 },	-- Cauldronbearer Blakor
+				}),
+				crit(25, {
+					["_npcs"] = { 187598 },	-- Rohzor Forgesmash <Djaradin Smithmaster>
+				}),
+				crit(26, {
+					["_npcs"] = { 187886 },	-- Turboris
+				}),
+				crit(27, {
+					["_npcs"] = { 190986 },	-- Battlehorn Pyrhus
+				}),
+				crit(28, {
+					["_npcs"] = { 190991 },	-- Char
+				}),
+				crit(29, {
+					["_npcs"] = { 193232 },	-- Rasnar the War Ender
+				}),
+				crit(30, {
+					["_npcs"] = { 187306 },	-- Morchok <Harbinger of Twilight>
+				}),
+				crit(31, {
+					["_npcs"] = { 193271 },	-- Shadeslash Trakken
+				}),
+				crit(32, {
+					["_npcs"] = { 193175 },	-- Slurpo, the Incredible Snail
+				}),
+			}),
 			ach(16406),	-- All Sides of the Story
 			ach(15991, {	-- Dragon Glyphs: Crumbling Life Archway
 				["coord"] = { 57.7, 55.0, THE_WAKING_SHORES },
@@ -60,6 +158,38 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			}),
 			ach(16409),	-- Let's Get Quacking
 			ach(16401),	-- Sojourner of the Waking Shores
+			ach(16584, {	-- Symbols of Hope
+				crit(1, {	-- Wingrest Embassy
+					["coord"] = { 73.2, 37.8, THE_WAKING_SHORES },
+				}),
+				crit(2, {	-- Skytop Observatory
+					["coord"] = { 73.0, 52.9, THE_WAKING_SHORES },
+				}),
+				crit(3, {	-- Crumbling Life Archway
+					["coord"] = { 56.8, 58.0, THE_WAKING_SHORES },
+				}),
+				crit(4, {	-- The Overflowing Spring
+					["coord"] = { 50.3, 55.6, THE_WAKING_SHORES },
+				}),
+				crit(5, {	-- Concord Observatory
+					["coord"] = { 57.2, 46.4, THE_WAKING_SHORES },
+				}),
+				crit(6, {	-- Life-Binder Conservatory
+					["coord"] = { 57.0, 20.0, THE_WAKING_SHORES },
+				}),
+				crit(7, {	-- Uktulut Backwater
+					["coord"] = { 48.9, 39.9, THE_WAKING_SHORES },
+				}),
+				crit(8, {	-- Obsidian Observatory
+					["coord"] = { 43.6, 63.8, THE_WAKING_SHORES },
+				}),
+				crit(9, {	-- Hatchery Observatory
+					["coord"] = { 61.7, 80.8, THE_WAKING_SHORES },
+				}),
+				crit(10, {	-- Apex Canopy
+					["coord"] = { 24.0, 89.9, THE_WAKING_SHORES },
+				}),
+			}),
 			ach(16297),	-- Treasures of The Waking Shores
 			ach(16334),	-- Waking Hope
 			ach(16575, {	-- Waking Shores Glyph Hunter
@@ -157,11 +287,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					15747,	-- Wingrest Roundabout Advanced: Gold
 				}},
 			}),
-
-			-- TODO: NOT COMPLETED YET!!!
-
-			ach(16676),	-- Adventurer of The Waking Shores
-			ach(16584),	-- Symbols of Hope
 		}),
 	}),
 })));

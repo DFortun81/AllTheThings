@@ -27,7 +27,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 		i(197013),	-- Cliffside Wylderdrake: Black Scales (DM!)
 		i(196987),	-- Cliffside Wylderdrake: Blonde Mane
 		i(197012),	-- Cliffside Wylderdrake: Blue Scales (DM!)
-		i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail
+		i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail (DM!)
 		i(196996),	-- Cliffside Wylderdrake: Branched Horns
 		i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor
 		i(197000),	-- Cliffside Wylderdrake: Coiled Horns
@@ -49,14 +49,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 		i(197011),	-- Cliffside Wylderdrake: Green Scales (DM!)
 		i(196975),	-- Cliffside Wylderdrake: Head Fin
 		i(196976),	-- Cliffside Wylderdrake: Head Mane
-		i(196992),	-- Cliffside Wylderdrake: Heavy Horns
+		i(196992),	-- Cliffside Wylderdrake: Heavy Horns (DM!)
 		i(196990),	-- Cliffside Wylderdrake: Helm
 		i(196998),	-- Cliffside Wylderdrake: Hook Horns (DM!)
 		i(196985),	-- Cliffside Wylderdrake: Horned Jaw
-		i(197005),	-- Cliffside Wylderdrake: Horned Nose
+		i(197005),	-- Cliffside Wylderdrake: Horned Nose (DM!)
 		i(197017),	-- Cliffside Wylderdrake: Large Tail Spikes
 		i(196983),	-- Cliffside Wylderdrake: Maned Jaw
-		i(197023),	-- Cliffside Wylderdrake: Maned Neck
+		i(197023),	-- Cliffside Wylderdrake: Maned Neck (DM!)
 		i(197016),	-- Cliffside Wylderdrake: Maned Tail
 		i(197008),	-- Cliffside Wylderdrake: Narrow Stripes Pattern
 		i(196972),	-- Cliffside Wylderdrake: Plated Brow (DM!)
@@ -114,7 +114,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 		i(197102),	-- Highland Drake: Horned Chin
 		i(197139),	-- Highland Drake: Large Spotted Pattern (DM!)
 		i(197103),	-- Highland Drake: Maned Chin
-		i(197111),	-- Highland Drake: Maned Head
+		i(197111),	-- Highland Drake: Maned Head (DM!)
 		i(197114),	-- Highland Drake: Multi-Horned Head (DM!)
 		i(197120),	-- Highland Drake: Ornate Helm
 		i(197138),	-- Highland Drake: Pattern 1
@@ -146,7 +146,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 		i(197123),	-- Highland Drake: Thorn Horns (DM!)
 		i(197115),	-- Highland Drake: Thorned Jaw
 		i(197107),	-- Highland Drake: Triple Finned Head (DM!)
-		i(197135),	-- Highland Drake: Toothy Mouth
+		i(197135),	-- Highland Drake: Toothy Mouth (DM!)
 		i(197136),	-- Highland Drake: Taperered Nose
 		i(197148),	-- Highland Drake: Vertical Finned Tail (DM!)
 		i(197146),	-- Highland Drake: White Scales
@@ -160,7 +160,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 		i(197391),	-- Renewed Proto-Drake: Bronze Scales (DM!)
 		i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor
 		i(197369),	-- Renewed Proto-Drake: Brown Hair
-		i(197403),	-- Renewed Proto-Drake: Club Tail
+		i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
 		i(197375),	-- Renewed Proto-Drake: Curled Horns
 		i(197380),	-- Renewed Proto-Drake: Curved Horns
 		i(197358),	-- Renewed Proto-Drake: Curved Spiked Brow
@@ -198,7 +198,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 		i(197347),	-- Renewed Proto-Drake: Silver and Blue Armor (DM!)
 		i(197350),	-- Renewed Proto-Drake: Silver and Purple Armor (DM!)
 		i(197396),	-- Renewed Proto-Drake: Skyterror Pattern
-		i(197398),	-- Renewed Proto-Drake: Snub Snout
+		i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
 		i(197402),	-- Renewed Proto-Drake: Spiked Club Tail (DM!)
 		i(197361),	-- Renewed Proto-Drake: Spiked Crest
 		i(197386),	-- Renewed Proto-Drake: Spiked Jaw (DM!)
@@ -243,7 +243,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 		i(197600),	-- Windborne Velocidrake: Helm
 		i(197619),	-- Windborne Velocidrake: Hooked Snout
 		i(197596),	-- Windborne Velocidrake: Horned Jaw (DM!)
-		i(197589),	-- Windborne Velocidrake: Large Head Fin
+		i(197589),	-- Windborne Velocidrake: Large Head Fin (DM!)
 		i(197618),	-- Windborne Velocidrake: Long Snout (DM!)
 		i(197585),	-- Windborne Velocidrake: Maned Back
 		i(197604),	-- Windborne Velocidrake: Ox Horns

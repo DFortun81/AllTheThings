@@ -4,6 +4,13 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	m(THE_WAKING_SHORES, {
 		n(TREASURES, {
+			o(381485, {	-- Adventurer's Lost Soap Bar
+				["coord"] = { 39.6, 84.7, THE_WAKING_SHORES },
+				--["questID"] = ,
+				["g"] = {
+					i(200065),	-- Adventurer's Lost Soap Bar
+				},
+			}),
 			n(195939, {	-- Bubble Drifter
 				["description"] = "Use nearby Fragrant Plant to attract Bubble Drifter.",
  				["questID"] = 705999,
@@ -39,6 +46,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["coord"] = { 43.1, 67.4, THE_WAKING_SHORES },
 				["questID"] = 65965,
 				["cost"] = { { "i", 191122, 1 }, },	--1xFullsails Supply Chest Key
+			}),
+			o(381483, {	-- Marmoni's Prize
+				["coord"] = { 47.7, 83.6, THE_WAKING_SHORES },
+				--["questID"] = ,
+				["g"] = {
+					i(200064),	-- Marmoni's Prize
+				},
 			}),
 			o(375668, {	-- Misty Treasure Chest
 				["description"] = "Please Report to ATT-Discord if you find this treasure.",
@@ -94,6 +108,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					crit(6, {	-- Torn Riding Pack
 						["achievementID"] = 16297,	-- Treasures of The Waking Shores
 					}),
+				},
+			}),
+			o(380653, {	-- Well-Preserved Bone
+				["coord"] = { 66.2, 55.3, THE_WAKING_SHORES },
+				--["questID"] = ,
+				["g"] = {
+					i(200066),	-- Well-Preserved Bone
 				},
 			}),
 			o(380653, {	-- Yennu's Kite

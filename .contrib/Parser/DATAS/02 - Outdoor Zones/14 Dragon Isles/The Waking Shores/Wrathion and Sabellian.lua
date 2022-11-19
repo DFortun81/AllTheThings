@@ -16,6 +16,22 @@ local WILDERCLOTH = 193050;
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
+			n(ACHIEVEMENTS, {
+				ach(16496, {	-- Obsidian Champion
+					crit(1, {
+						["_quests"] = { 67015 },	-- Forging the Answer
+					}),
+					crit(2, {
+						["_quests"] = { 67027 },	-- Death's Shadow
+					}),
+					crit(3, {
+						["_quests"] = { 66901 },	-- Breaking the World
+					}),
+					crit(4, {
+						["_quests"] = { 66903 },	-- Clearing the Vault
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(66856, {	-- Ashen Black and the Seven Gnomes
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
@@ -51,6 +67,107 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					["g"] = {
 						i(200070),	-- Obsidian Strongbox
 					},
+				}),
+				q(67015, {	-- Forging the Answer
+				}),
+
+				q(69984, {	-- Gold-Banded Dragon Tooth
+					-- ["sourceQuests"] = {  },
+					["provider"] = { "i", 198072 },	-- Gold-Banded Dragon Tooth
+				}),
+				q(69983, {	-- Flamecarved Bone
+					-- ["sourceQuests"] = {  },
+					["provider"] = { "n", 198071 },	-- Flamecarved Bone
+				}),
+			}),
+			n(RARES, {
+				n(190986, {	-- Battlehorn Pyrhus
+					["coord"] = { 28.6, 58.8, THE_WAKING_SHORES },
+					-- ["questID"] = ,
+					-- ["g"] = {
+
+					-- },
+				}),
+				n(190991, {	-- Char
+					["coord"] = { 29.3, 52.5, THE_WAKING_SHORES },
+					-- ["questID"] = ,
+					["g"] = {
+						i(197602),	-- Windborne Velocidrake: Cluster Horns
+					},
+				}),
+				n(186783, {	-- Cauldronbearer Blakor
+					["coord"] = { 31.1, 56.2, THE_WAKING_SHORES },
+					-- ["questID"] = ,
+					["g"] = {
+						i(201040),	-- Citadel Crusher's Gauntlets
+						i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail
+						i(197005),	-- Cliffside Wylderdrake: Horned Nose
+					},
+				}),
+				n(190985, {	-- Death's Shadow
+					["description"] = "Restore 20 Obsidian Keys to Sabellian.",
+					["coord"] = { 31.8, 54.4, THE_WAKING_SHORES },
+					-- ["questID"] = 67027,
+					["cost"] = { { "i", 191264, 20 }, },	-- 20xRestored Obsidian Key
+					-- ["g"] = {
+
+					-- },
+				}),
+				n(187306, {	-- Morchok <Harbinger of Twilight>
+					["description"] = "Restore 20 Obsidian Keys to Igys the Believer.",
+					-- ["coord"] = { 32.2, 51.9, THE_WAKING_SHORES },
+					-- ["questID"] = 66901,
+					["cost"] = { { "i", 191264, 20 }, },	-- 20xRestored Obsidian Key
+					["g"] = {
+						i(200207),	-- Petrified Fungal Spores
+					},
+				}),
+				n(189289, {	-- Penumbrus
+					["description"] = "Underground",
+					["coord"] = { 24.4, 54.5, THE_WAKING_SHORES },
+					-- ["questID"] = 70212,
+					-- ["g"] = {
+
+					-- },
+				}),
+				n(193232, {	-- Rasnar the War Ender
+					["coord"] = { 30.2, 60.4, THE_WAKING_SHORES },
+					-- ["questID"] = ,
+					-- ["g"] = {
+
+					-- },
+				}),
+				n(187598, {	-- Rohzor Forgesmash <Djaradin Smithmaster>
+					-- ["coord"] = { 25.3, 60.3, THE_WAKING_SHORES },
+					-- ["questID"] = ,
+					["g"] = {
+						i(194503),	-- Plans: Black Dragon Touched Hammer (RECIPE!)
+						i(200757),	-- Qalashi War-Helm
+					},
+				}),
+				n(190971, {	-- Shas'ith
+					["description"] = "Restore 20 Obsidian Keys to Wrathion. Underground",
+					["coord"] = { 24.5, 57.8, THE_WAKING_SHORES },
+					-- ["questID"] = 66903, --??
+					["cost"] = { { "i", 191264, 20 }, },	-- 20xRestored Obsidian Key
+					-- ["g"] = {
+
+					-- },
+				}),
+				n(187886, {	-- Turboris
+					["coord"] = { 33.6, 55.7, THE_WAKING_SHORES },
+					-- ["questID"] = ,
+					["g"] = {
+						i(200244),	-- Enchanted Muckstompers
+						i(200246),	-- Lost Delving Lamp
+					},
+				}),
+				n(186859, {	-- Worldcarver A'tir
+					-- ["coord"] = { X, Y, THE_WAKING_SHORES },
+					-- ["questID"] = 70763,
+					-- ["g"] = {
+
+					-- },
 				}),
 			}),
 			n(VENDORS, {
@@ -321,6 +438,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 							},
 						}),
 					},
+				}),
+			}),
+			n(ZONE_DROPS, {
+				i(198072, {	-- Gold-Banded Dragon Tooth
+					["cr"] = 187813,	-- Qalashi Wallcrasher
+				}),
+				i(198071, {	-- Flamecarved Bone
+					["cr"] = 196336,	-- Qalashi Flameslinger
 				}),
 			}),
 		}),

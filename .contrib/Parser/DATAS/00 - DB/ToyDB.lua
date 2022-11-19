@@ -1081,6 +1081,7 @@ i(193032);	-- Jeweled Offering
 i(200469);	-- Khadgar's Disenchanting Rod
 i(200597);	-- Lover's Bouquet
 i(198857);	-- Lucky Duck
+i(200249);	-- Mage's Chewed Wand
 i(198827);	-- Magical Snow Sled
 i(194059);	-- Market Tent
 i(198402);	-- Maruuk Cooking Pot
@@ -1088,6 +1089,7 @@ i(197986);	-- Murglasses
 i(200640);	-- Obsidian Egg Clutch
 i(200630);	-- Ohn'ir Windsage's Hearthstone
 i(198409);	-- Personal Shell
+i(200198);	-- Primalist Prison
 i(191891);	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise
 i(199767);	-- Red Dragon Banner
 i(198729);	-- Reliquary Banner
@@ -1097,6 +1099,7 @@ i(200960);	-- Seed of Renewed Souls
 i(198721);	-- Skinny Reliquary Pillow
 i(198722);	-- Small Triangular Pillow
 i(198720);	-- Soft Purple Pillow
+i(200857);	-- Talisman of Sargha
 i(193478);	-- Tuskarr Bean Bag
 i(198428);	-- Tuskarr Dinghy
 i(199892);	-- Tuskarr Traveling Soup Pot
@@ -1117,13 +1120,10 @@ i(200142);	-- Generous Goblin Grenade
 i(200148);	-- A Collection Of Me
 i(200160);	-- Notfar's Favorite Food
 i(200178);	-- Infected Ichor
-i(200198);	-- Primalist Prison
-i(200249);	-- Mage's Chewed Wand
 i(200116);	-- Everlasting Horn of Lavaswimming
 i(200628);	-- Somewhat-Stabilized Arcana
 i(200631);	-- Happy Tuskarr Palooza
 i(200636);	-- Primal Invocation Quintessence
-i(200857);	-- Talisman of Sargha
 i(200869);	-- Ohn Lite Branded Horn
 i(200878);	-- Wheeled Floaty Boaty Controller
 i(200999);	-- The Super Shellkhan Gang

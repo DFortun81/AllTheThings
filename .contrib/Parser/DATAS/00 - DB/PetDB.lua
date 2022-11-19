@@ -1127,6 +1127,7 @@ pet(200930, 3414);	-- Obsidian Proto-Whelp
 pet(200927, 3408);	-- Petal
 pet(193484, 3302);	-- Pilot
 pet(199109, 3348);	-- Primal Stormling
+pet(199916, 3365);	-- Roseate Hopper
 pet(193572, 3306);	-- Quack-E
 pet(191936, 3263);	-- Secretive Frogduck
 pet(198353, 3368);	-- Shiverweb Broodling
@@ -1226,7 +1227,7 @@ pet(0, 3361);	-- Diamond Crab
 pet(0, 3362);	-- Sapphire Crab
 pet(0, 3363);	-- Truesilver Crab
 pet(0, 3364);	-- Striped Snakebiter
-pet(0, 3365);	-- Roseate Hopper
+
 
 pet(193908);	-- [PH] Blue Crystal Porcupine
 

@@ -1110,7 +1110,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(196989),	-- Cliffside Wylderdrake: White Hair
 		i(196990),	-- Cliffside Wylderdrake: Helm
 		i(196991),	-- Cliffside Wylderdrake: Black Horns
-		i(196992),	-- Cliffside Wylderdrake: Heavy Horns
 		i(196993),	-- Cliffside Wylderdrake: Sleek Horns
 		i(196994),	-- Cliffside Wylderdrake: Short Horns
 		i(196995),	-- Cliffside Wylderdrake: Spiked Horns
@@ -1123,7 +1122,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197002),	-- Cliffside Wylderdrake: Flared Cheek
 
 		i(197004),	-- Cliffside Wylderdrake: Spiked Legs
-		i(197005),	-- Cliffside Wylderdrake: Horned Nose
+
 		i(197006),	-- Cliffside Wylderdrake: Plated Nose
 		i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern
 		i(197008),	-- Cliffside Wylderdrake: Narrow Stripes Pattern
@@ -1132,11 +1131,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197015),	-- Cliffside Wylderdrake: Dark Skin Variation
 		i(197016),	-- Cliffside Wylderdrake: Maned Tail
 		i(197017),	-- Cliffside Wylderdrake: Large Tail Spikes
-		i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail
+
 
 		i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail
 		i(197022),	-- Cliffside Wylderdrake: Finned Neck
-		i(197023),	-- Cliffside Wylderdrake: Maned Neck
+
 		i(197094),	-- Highland Drake: Gold and Red Armor
 		i(197095),	-- Highland Drake: Gold and White Armor
 		i(197097),	-- Highland Drake: Spined Back
@@ -1150,7 +1149,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197106),	-- Highland Drake: Finned Head
 		i(197109),	-- Highland Drake: Spiked Head
 		i(197110),	-- Highland Drake: Plated Head
-		i(197111),	-- Highland Drake: Maned Head
 		i(197113),	-- Highland Drake: Swept Spiked Head
 		i(197115),	-- Highland Drake: Thorned Jaw
 		i(197116),	-- Highland Drake: Ears
@@ -1168,7 +1166,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197131),	-- Highland Drake: Hairy Cheek
 		i(197133),	-- Highland Drake: Spined Cheek
 		i(197134),	-- Highland Drake: Spiked Legs
-		i(197135),	-- Highland Drake: Toothy Mouth
+
 		i(197136),	-- Highland Drake: Taperered Nose
 		i(197137),	-- Highland Drake: Spined Nose
 		i(197138),	-- Highland Drake: Striped Pattern
@@ -1216,10 +1214,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197393),	-- Renewed Proto-Drake: White Scales
 		i(197396),	-- Renewed Proto-Drake: Skyterror Pattern
 		i(197397),	-- Renewed Proto-Drake: Heavy Scales
-		i(197398),	-- Renewed Proto-Drake: Snub Snout
 		i(197399),	-- Renewed Proto-Drake: Razor Snout
 		i(197400),	-- Renewed Proto-Drake: Shark Snout
-		i(197403),	-- Renewed Proto-Drake: Club Tail
 		i(197404),	-- Renewed Proto-Drake: Finned Tail
 		i(197405),	-- Renewed Proto-Drake: Maned Tail
 		i(197406),	-- Renewed Proto-Drake: Spined Tail
@@ -1233,7 +1229,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197586),	-- Windborne Velocidrake: Spiked Back
 		i(197587),	-- Windborne Velocidrake: Feathered Back
 		i(197588),	-- Windborne Velocidrake: Armor
-		i(197589),	-- Windborne Velocidrake: Large Head Fin
+
 		i(197590),	-- Windborne Velocidrake: Small Head Fin
 		i(197591),	-- Windborne Velocidrake: Hairy Head
 		i(197593),	-- Windborne Velocidrake: Feathery Head
@@ -1272,8 +1268,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(197904),	-- Shikaar Hunting Knife
 		i(197905),	-- Salamanther Slicer
 		i(198070),	-- Tattered Seavine
-		i(198071),	-- Flamecarved Bone
-		i(198072),	-- Gold-banded Dragon Tooth
 		i(198081),	-- Caregiver's Charm
 		i(198084),	-- Miguel's Gift
 		i(198085),	-- Lost Obsidian Cache Key
@@ -1592,7 +1586,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199898),	-- Iskaara Fishing Pole
 		i(199902),	-- Wayfinder's Compass
 		i(199915),	-- Ancient Obsidian Charm
-		i(199916),	-- Roseate Hopper
 		i(199924),	-- Strong Sea Kelp
 		i(199925),	-- Stone With Hole
 		i(199927),	-- Sheet Music: The Lazy Turnip
@@ -1622,9 +1615,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200127),	-- Gold-Alloy Blade
 		i(200128),	-- Zephyr's Razor
 		i(200130),	-- Corpse Ripper
-		i(200131),	-- Reclaimed Survivalist's Dagger
-		i(200132),	-- Skewer's Snout
-		i(200133),	-- Volcanic Chakram
 		i(200135),	-- Corroded Greatsword
 		i(200136),	-- Monsoonic Armguards
 		i(200137),	-- Chitin Dreadbringer
@@ -1673,10 +1663,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200192),	-- Handheld Geyser
 		i(200193),	-- Manafrond Sandals
 		i(200194),	-- Nokhud Battle Tunic
-		i(200195),	-- Thunderscale Legguards
 		i(200196),	-- Nokhud Battle Barding
 		i(200197),	-- Armoredon Herding Crook
-		i(200198),	-- Primalist Prison
 		i(200199),	-- Elements' Burden
 		i(200201),	-- Nokhud Battlegear
 		i(200202),	-- Tomorrow's Chains
@@ -1684,9 +1672,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200204),	-- Sandshine Chestplate
 		i(200205),	-- Tome of Polymorph: Duck
 		i(200206),	-- Behemoth Slayer Greatbow
-		i(200207),	-- Petrified Fungal Spores
-		i(200208),	-- Cloud Coalescing Handwraps
-		i(200209),	-- Firebreather's Cowl
 		i(200210),	-- Amnesia
 		i(200211),	-- Snowman's Icy Gaze
 		i(200212),	-- Sand-Encrusted Greaves
@@ -1694,7 +1679,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200214),	-- Grasp of the Weeping Widow
 		i(200215),	-- Plumed Shoulderguards of the Hunt
 		i(200216),	-- Water Heating Cord
-		i(200217),	-- Blazing Essence
 		i(200218),	-- Charred Fishing Pole
 		i(200219),	-- Dangerous Drapery
 		i(200224),	-- Mark of Sargha
@@ -1710,11 +1694,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200241),	-- Stormcaller's Ritual Hatchet
 		i(200242),	-- Watcher's Lightning Rod
 		i(200243),	-- Titanic Scholar's Finery
-		i(200244),	-- Enchanted Muckstompers
+
 		i(200245),	-- Leviathan Lure
-		i(200246),	-- Lost Delving Lamp
+
 		i(200247),	-- Inextinguishable Gavel
-		i(200249),	-- Mage's Chewed Wand
 		i(200250),	-- Frost Tipped Glaive
 		i(200251),	-- Medallion of the Ancestors
 		i(200252),	-- Molten Flak Cannon
@@ -1774,10 +1757,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200439),	-- Earthpact Scepter
 		i(200440),	-- Helm of Feline Instinct
 		i(200441),	-- Jhakan's Horned Cowl
-		i(200442),	-- Basilisk Hide Jerkin
 		i(200443),	-- Dragon Isles Artifact
 		i(200444),	-- Mantle of the Gatekeeper
-		i(200445),	-- Lucky Hunting Charm
 		i(200446),	-- Crystalized Sigil
 		i(200447),	-- Centaur Hunting Trophy
 		i(200448),	-- Abyssal Ward
@@ -1816,8 +1797,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200544),	-- Mistvale Map: Illegible
 		i(200548),	-- Maldra's Manacles Key
 		i(200549),	-- Restored Titan Artifact
-		i(200552),	-- Torrent Caller's Shell
-		i(200563),	-- Primal Ritual Shell
+
+
 		i(200586),	-- Derelict Sunglasses
 		i(200609),	-- Dragon Racing Purse - First Place
 		i(200610),	-- Dragon Racing Purse - Second Place
@@ -1876,7 +1857,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200747),	-- Zikkori's Water Siphoning Device
 		i(200755),	-- Gruffy's Dented Horn
 		i(200756),	-- Frozen Steak
-		i(200757),	-- Qalashi War-Helm
 		i(200758),	-- Breastplate of Storied Antiquity
 		i(200759),	-- Aruunem Berrytart
 		i(200760),	-- Unstable Arcane Cell
@@ -1885,7 +1865,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200763),	-- Frosted Scale Drape
 		i(200854),	-- Cooked Caviar
 		i(200856),	-- Sideboat
-		i(200857),	-- Talisman of Sargha
 		i(200858),	-- Plume of the Forgotten
 		i(200859),	-- Seasoned Hunter's Trophy
 		i(200861),	-- Stolen Shikaar Warspear
@@ -2343,7 +2322,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201036),	-- Citadel Crusher's Chestplate
 		i(201038),	-- Citadel Crusher's Footwraps
 		i(201039),	-- Citadel Crusher's Helm
-		i(201040),	-- Citadel Crusher's Gauntlets
+
 		i(201041),	-- Citadel Crusher'sl Cloak
 		i(201042),	-- Obsidian Crusher's Bracers
 		i(201043),	-- Obsidian Crusher's Belt
@@ -2421,7 +2400,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194120),	-- Decorated Teapot
 		i(194121),	-- Handcrafted Boat
 		i(194838),	-- Highland Drake Manuscript: Spined Head
-		i(198072),	-- Gold-Banded Dragon Tooth
 		i(198896),	-- Technique: Highland Drake: Spined Neck
 		i(200094),	-- Caravan Strongbox
 		i(200468),	-- Grand Hunt Spoils

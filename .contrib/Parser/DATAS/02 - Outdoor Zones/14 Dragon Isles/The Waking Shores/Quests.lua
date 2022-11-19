@@ -1115,51 +1115,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["provider"] = { "i", 199841 },	-- Finely Carved Wing
 				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
 				["g"] = {
-					crit(6, {	-- Yennu's Kite
+					crit(6, {	-- Finely Carved Wing
 						["achievementID"] = 16323,	-- Fragments of History
 					}),
 				},
 			}),
 			n(BONUS_OBJECTIVES, {
-				q(65451, {	-- Practice Materials
-					["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
-					["coord"] = { 77.3, 22.1, THE_WAKING_SHORES },
-
-					-- npc 187111 rare??
-				}),
-				q(70648, {	-- Firava the Rekindler
-					["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
-					["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },
-
-					-- npc 195915 rare??
-				}),
-				q(66956, {	-- Dragonhunter Igordan
-					["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
-					["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
-
-					-- npc 191611 rare??
-				}),
-				q(70751, {	-- Terillod the Devout
-					["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
-
-					-- npc 193171 rare??
-					-- drop Cloud Coalescing Handwraps(200208)
-				}),
-				q(66960, {	-- Klozicc the Ascended
-					["sourceQuests"] = { 66118 },	-- Basalt Assault
-					["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
-
-					-- npc 187209 rare??
-				}),
-				q(69839, {	-- Azra's Prized Peony
-					["coord"] = { 54.7, 70.8, THE_WAKING_SHORES },
-
-					-- npc 193135 rare??
-				}),
-				q(66074, {	-- Azra's Prized Peony
-					["coord"] = { 81.2, 37.9, THE_WAKING_SHORES },
-
-					-- npc 184853 Primal Scythid Queen
+				q(66117, {	-- Clear the Battlefield
+					-- TODO: MIGHT NOT BE TRUE
+					["sourceQuests"] = { 66116 },	-- The Primary Threat
+					["coord"] = { 58.9, 76.6, THE_WAKING_SHORES },
 				}),
 				q(65994, {	-- Djaradin Djustice
 					["sourceQuests"] = {	-- TODO: MIGHT NOT BE TRUE
@@ -1168,17 +1133,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					},
 					["coord"] = { 67.6, 38.5, THE_WAKING_SHORES },
 				}),
-				q(66117, {	-- Clear the Battlefield
-					-- TODO: MIGHT NOT BE TRUE
-					["sourceQuests"] = { 66116 },	-- The Primary Threat
-					["coord"] = { 58.9, 76.6, THE_WAKING_SHORES },
-				}),
 				q(70196, {	-- Pruning the Preserve
 					--["sourceQuests"] = {  },	-- Unknown
 					["coord"] = { 44.4, 82.1, THE_WAKING_SHORES },
-				}),
-				q(66076, {	-- Ancient Hornswog
-					["coord"] = { 77.2, 22.1, THE_WAKING_SHORES },
 				}),
 			}),
 			ach(15941, {	-- Dragon Racing Completionist: Gold
