@@ -40,10 +40,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- Classic
 				q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
 				-- TBC
-				q(10386),	-- The Fel Reaver Slayer
-				q(10387),	-- The Fel Reaver Slayer
-				q(10401),	-- Mission: End All, Be All [Horde]
-				q(10149),	-- Mission: End All, Be All [Alliance]
 				q(10841),	-- BETA The Vengeful Harbringer
 				-- 4.0.3
 				-- 5.0.1

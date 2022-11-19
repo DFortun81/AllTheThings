@@ -1554,7 +1554,7 @@ root("Zones", {
 						["qg"] = 30944,	-- Vereth the Cunning
 						["sourceQuest"] = 13145,	-- The Vile Hold
 					}),
-					q(13260, {	-- Takes One to Know One -- triggered 14447 and 14448. possibly duplicates?
+					q(13260, {	-- Takes One to Know One
 						["races"] = HORDE_ONLY,
 						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
 						["description"] = "On Orgrim's Hammer.",
@@ -1562,12 +1562,6 @@ root("Zones", {
 							13230,	-- Avenge Me!
 							13228,	-- The Broken Front
 						},
-					}),
-					q(14447, {	-- Takes One to Know One (NYI)
-						["u"] = NEVER_IMPLEMENTED,
-					}),
-					q(14448, {	-- Takes One to Know One (NYI)
-						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(13288, {	-- That's Abominable! (A)
 						["races"] = ALLIANCE_ONLY,

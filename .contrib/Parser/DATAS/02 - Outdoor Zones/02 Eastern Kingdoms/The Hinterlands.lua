@@ -1966,9 +1966,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 -- #if AFTER CATA
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		q(26522, {	-- Faces of Evil (duplicate, NYI)
-			["timeline"] = { "created 4.0.3.13277" },
-		}),
 		q(26527, {	-- Gryphon Master Talonaxe
 			["timeline"] = { "created 4.0.3.13277" },
 		}),

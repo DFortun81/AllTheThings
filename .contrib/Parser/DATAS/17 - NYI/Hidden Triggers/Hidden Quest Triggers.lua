@@ -1769,18 +1769,26 @@ root("HiddenQuestTriggers", {
 	--------------------
 	-- NYI VERSIONS OF QUESTS WHICH ARE COMPLETED TOGETHER WITH IMPLEMENTED VERSION OF THESE QUESTS
 	-- TEMPORARY SOLUTION AS HQT FOR NOW
+	-- SORTED BY ID
 	n(SPECIAL, {
 		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
+		q(10149),	-- Mission: End All, Be All - completed with quest 10136 & 10400
+		q(10386),	-- The Fel Reaver Slayer - completed with quest 10382
+		q(10387),	-- The Fel Reaver Slayer - completed with quest 10382
+		q(10401),	-- Mission: End All, Be All - completed with quest 10136 & 10400
 		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
 		q(13053),	-- Looking for Survivors - completed with quest 12671
 		q(13052),	-- Aerial Surveillance - completed with quest 12696
 		q(14411),	-- The Wilds of Feralas - completed with quest 14410 & 26589
 		q(14414),	-- The Wilds of Feralas - completed with quest 14410 & 26589
+		q(14447),	-- Takes One to Know One - completed with quest 13260
+		q(14448),	-- Takes One to Know One - completed with quest 13260
 		q(14474),	-- Goblin Escape Pods - completed with quest 14001
 		q(25198),	-- Winnoa Pineforest - completed with quest 24807
 		q(25305),	-- Never Look Back- completed with quest 25304
 		q(26379),	-- In Aid of the Refugees - completed with quest 13601
 		q(26398),	-- Walk With The Earth Mother - completed with 26397
+		q(26522),	-- Faces of Evil - completed with 26357 & 26521
 		q(26893),	-- Blackfathom Deeps - completed with quest 26894
 		q(27309),	-- The Grimtotem Plot - completed with quest 27293
 		q(27861),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
