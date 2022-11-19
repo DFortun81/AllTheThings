@@ -309,7 +309,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 			}),
 			-- To'no Side-Quest
 			q(65065, {	-- The Tuskarr
-				["sourceQuests"] = { 65045 },	-- Stormsunder Crater
+				["sourceQuests"] = { 66324 },	-- Never Forgotten
 				["provider"] = { "n", 184164 },	-- Explorer Ko'nali
 				["coord"] = { 15.6, 60.0, THE_FORBIDDEN_REACH },
 				["isBreadcrumb"] = true,
