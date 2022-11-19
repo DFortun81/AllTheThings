@@ -1638,14 +1638,16 @@ root("Zones", m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if AFTER WRATH
 				q(11222, {	-- Proof of Treachery [WRATH+] / Warn Bolvar!
 					["qg"] = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
 					["sourceQuest"] = 11142,	-- Survey Alcaz Island
 					["coord"] = { 66.3, 49.0, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 3.0.2", "removed 4.0.3" },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 33,
 				}),
+				-- #endif
 				q(27211, {	-- Propaganda War
 					["qg"] = 23566,	-- Calia Hastings
 					["sourceQuest"] = 27210,	-- Traitors Among Us
@@ -3053,7 +3055,7 @@ root("Zones", m(KALIMDOR, {
 					["qg"] = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
 					["sourceQuest"] = 11142,	-- Survey Alcaz Island
 					["coord"] = { 66.3, 49.0, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 2.3.0" },
+					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 33,
 				}),
