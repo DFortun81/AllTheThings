@@ -45,7 +45,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {	-- 
 				["races"] = HORDE_ONLY,
 			}),
 			q(70048, {	-- A Primal Threat [A]
-				["sourceQuests"] = { 70050 },	-- Whispers in the Winds [A]
+				["sourceQuests"] = { 66596 },	-- Whispers in the Winds [A]
 				["provider"] = { "n", 193450 },	-- Archmage Khadgar
 				["coord"] = { 23.0, 56.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
