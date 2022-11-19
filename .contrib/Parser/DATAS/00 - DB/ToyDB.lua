@@ -1102,10 +1102,10 @@ i(202022);	-- Yennu's Kite
 i(200550);	-- Very Comfortable Pelt
 i(199650);	-- Whale Bone Tea Set
 i(198156);	-- Wyrmhole Generator
+i(198409);	-- Personal Shell
 -- NOT SOURCED YET
 i(192495);	-- Malfunctioning Stealthman 54
 i(197961);	-- Whelps on Strings
-i(198409);	-- Personal Shell
 i(198474);	-- Artist's Easel
 i(198537);	-- Taivan's Trumpet
 i(198646);	-- Ornate Dragon Statue

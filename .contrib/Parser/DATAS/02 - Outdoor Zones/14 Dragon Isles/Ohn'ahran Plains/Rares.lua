@@ -16,6 +16,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["crs"] = { 193166 },	-- Solethus's Gravestone
 				["coord"] = { 29.9, 41.1, OHNAHRAN_PLAINS },
 			}),
+			n(193133, {	-- Sunscale Behemoth
+				["coord"] = { 63.2, 48.6, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198409),	-- Personal Shell (Toy)
+				},
+			}),
 			n(194458, {	-- Rokzul
 				["coord"] = { 56.2, 51.5, OHNAHRAN_PLAINS },
 				--["questID"] = ,

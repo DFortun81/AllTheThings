@@ -2885,7 +2885,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		filter(TOYS, {
 			i(192495),	-- Malfunctioning Stealthman 54
 			i(197961),	-- Whelps on Strings
-			i(198409),	-- Personal Shell
 		}),
 		filter(MOUNTS, {
 			i(194106),	-- Highland Drake

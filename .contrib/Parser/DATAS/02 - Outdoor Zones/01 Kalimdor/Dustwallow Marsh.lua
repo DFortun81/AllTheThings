@@ -1638,7 +1638,6 @@ root("Zones", m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-
 				q(11222, {	-- Proof of Treachery [WRATH+] / Warn Bolvar!
 					["qg"] = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
 					["sourceQuest"] = 11142,	-- Survey Alcaz Island
