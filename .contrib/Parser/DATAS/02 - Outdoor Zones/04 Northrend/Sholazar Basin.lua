@@ -603,9 +603,6 @@ root("Zones", {
 						["qg"] = 28266,	-- Professor Calvert
 						["sourceQuest"] = 12523,	-- Have a Part, Give a Part
 					}),
-					q(13052, {	-- Aerial Surveillance (NYI - duplicate)
-						["u"] = NEVER_IMPLEMENTED,
-					}),
 					q(12699, {	-- An Embarrassing Incident
 						["coord"] = { 49.9, 61.5, SHOLAZAR_BASIN },
 						["qg"] = 28746,	-- Pilot Vic
@@ -837,9 +834,6 @@ root("Zones", {
 							i(39437),	-- Belt of Trapped Lightning
 							i(39457),	-- Zepik's Grounded Legplates
 						},
-					}),
-					q(13053, {	-- Looking for Survivors (NYI)
-						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(12571, {	-- Make the Bad Snake Go Away
 						["coord"] = { 54.5, 56.3, SHOLAZAR_BASIN },

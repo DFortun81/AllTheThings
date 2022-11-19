@@ -1772,6 +1772,8 @@ root("HiddenQuestTriggers", {
 	n(SPECIAL, {
 		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
 		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
+		q(13053),	-- Looking for Survivors - completed with quest 12671
+		q(13052),	-- Aerial Surveillance - completed with quest 12696
 		q(14411),	-- The Wilds of Feralas - completed with quest 14410 & 26589
 		q(14414),	-- The Wilds of Feralas - completed with quest 14410 & 26589
 		q(14474),	-- Goblin Escape Pods - completed with quest 14001
