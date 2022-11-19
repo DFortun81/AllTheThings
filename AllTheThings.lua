@@ -10217,6 +10217,7 @@ app.FACTION_RACES = {
 		32,	-- Kul Tiran
 		34,	-- Dark Iron
 		37,	-- Mechagnome
+		52, -- Dracthyr [Alliance]
 	},
 	[2] = {
 		2,	-- Orc
@@ -10231,6 +10232,7 @@ app.FACTION_RACES = {
 		31,	-- Zandalari
 		35,	-- Vulpera
 		36,	-- Mag'har
+		70, -- Dracthyr [Horde]
 	}
 };
 app.GetFactionIDByName = function(name)
