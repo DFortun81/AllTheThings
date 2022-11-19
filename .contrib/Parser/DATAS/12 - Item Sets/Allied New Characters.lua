@@ -197,6 +197,7 @@ _.GearSets =
 					i(188816),	-- Emerald Winglord's Insignia
 					i(188813),	-- Emerald Winglord's Loop
 					i(188812),	-- Emerald Winglord's Ring
+					i(188817),	-- Claw-Carved Figurine
 				},
 			})
 		},

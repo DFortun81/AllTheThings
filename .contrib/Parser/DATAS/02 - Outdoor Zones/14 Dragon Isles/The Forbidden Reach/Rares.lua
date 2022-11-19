@@ -36,14 +36,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 				["coord"] = { 54.9, 43.1, THE_FORBIDDEN_REACH },
 				["questID"] = 64859,
 				["g"] = {
-					i(194883),	-- Runic Wing
+					i(194084),	-- Charged Storm Crystal
 				},
 			}),
 			n(182280, {	-- Tazenrath
 				["coord"] = { 79.7, 74.3, THE_FORBIDDEN_REACH },
 				["questID"] = 66973,
 				["g"] = {
-					i(194084),	-- Charged Storm Crystal
+					i(194883),	-- Runic Wing
 				},
 			}),
 			n(186355, {	-- Tripletath the Lost

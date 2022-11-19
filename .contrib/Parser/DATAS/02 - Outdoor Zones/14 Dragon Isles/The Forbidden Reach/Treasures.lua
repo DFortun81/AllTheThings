@@ -60,6 +60,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 				["g"] = {
 					i(194037, {	-- Heavy Chest
 						["cost"] = { { "i", 194074, 1 }, },	-- 1xGilded Key
+						["g"] = {
+							i(194072),	-- Sack of Gold
+						},
 					}),
 				},
 			}),

@@ -199,7 +199,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194535),	-- Cobalt Winglord's Cloak
 			i(194536),	-- Blue Winglord's Amulet
 				-- Evoker Set --
-			i(188817),	-- Claw-Carved Figurine
 			i(188818),	-- Emerald Winglord's Shoulderss
 			i(188825),	-- Emerald Winglord's Chain
 			i(188826),	-- Emerald Winglord's Staff

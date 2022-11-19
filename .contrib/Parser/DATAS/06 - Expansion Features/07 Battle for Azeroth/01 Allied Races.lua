@@ -779,14 +779,14 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					q(49266, {	-- Forge of Aeons
 						["sourceQuests"] = { 49698 },	-- The Lightforged
 						["provider"] = { "n", 130549 },	-- Captain Fareeya
-						["coord"] = { 44.0, 28.0, 886 },
+						["coord"] = { 44.0, 28.0, 940 },
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = { 933 },	-- Forge of Aeons (Lightbound Draenei Scenario)
 					}),
 					q(50071, {	-- For the Light!
 						["sourceQuests"] = { 49266 },	-- Forge of Aeons
 						["provider"] = { "n", 130810 },	-- High Exarch Turalyon
-						["coord"] = { 48.6, 40.4, 886 },
+						["coord"] = { 48.6, 40.4, 940 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							ach(12243),	-- Allied Races: Lightforged Draenei
@@ -969,7 +969,10 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 							{ 52.6, 13.8, STORMWIND_CITY },
 							{ 74.0, 36.8, MECHAGON },
 						},
-						["sourceQuests"] = { 50239 },	-- A Choice of Allies (A)
+						["sourceQuests"] = {
+							50239,	-- A Choice of Allies (A)
+							55736,	-- Welcome to the Resistance
+						},
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(57486, {	-- Waning Energy
@@ -1028,7 +1031,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					q(57495, {	-- The Future of Mechagon
 						["sourceQuests"] = { 57496 },	-- Ascension
 						["provider"] = { "n", 162806 },	-- Gelbin Mekkatorque
-						["coord"] = { 58.1, 41.1, 1574 },
+						["coord"] = { 58.1, 41.1, 1573 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(57497, {	-- Propagate the News
@@ -1223,6 +1226,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 						["provider"] = { "n", 130919 },	-- High Elf Ranger
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = { 972 },	-- Telogrus Rift, Void Elf Scenario
+						["coord"] = { 79.6, 19.7, GHOSTLANDS },
 						["g"] = {
 							ach(12242),	-- Allied Races: Void Elf
 							i(156486),	-- Starcursed Voidstrider (MOUNT!)

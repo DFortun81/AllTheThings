@@ -55,7 +55,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {	-- 
 				},
 			}),
 			q(69923, {	-- A Primal Threat [H]
-				["sourceQuests"] = { 69944 },	-- Chasing Storms [H]
+				["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
 				["provider"] = { "n", 193450 },	-- Archmage Khadgar
 				["coord"] = { 55.9, 12.6, DUROTAR },
 				["races"] = HORDE_ONLY,
