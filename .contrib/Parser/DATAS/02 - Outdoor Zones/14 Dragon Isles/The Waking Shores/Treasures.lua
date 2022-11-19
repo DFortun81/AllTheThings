@@ -9,6 +9,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
  				["questID"] = 705999,
 				["cost"] = { { "i", 199061, 1 }, },	-- 1xA Guide to Rare Fish
 				["g"] = {
+					crit(2, {	-- Bubble Drifter
+						["achievementID"] = 16297,	-- Treasures of The Waking Shores
+					}),
 					i(193852),	-- Azure Frillfish (PET!)
 				},
 			}),
@@ -16,10 +19,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["coord"] = { 69.3, 46.5, THE_WAKING_SHORES },
 				--["questID"] = ,
 				["g"] = {
+					crit(5, {	-- Dead Man's Chestplate
+						["achievementID"] = 16297,	-- Treasures of The Waking Shores
+					}),
 					i(202191),	-- Dead Man's Breastplate
 					i(202190),	-- Dead Man's Chains
 					i(202192),	-- Dead Man's Leathers
 					i(202193),	-- Dead Man's Tunic
+				},
+			}),
+			o(381355, {	-- Finely Carved Wing
+				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
+				--["questID"] = ,
+				["g"] = {
+					i(199841),	-- Finely Carved Wing
 				},
 			}),
 			o(376175, {	-- Fullsails Supply Chest
@@ -27,11 +40,24 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["questID"] = 65965,
 				["cost"] = { { "i", 191122, 1 }, },	--1xFullsails Supply Chest Key
 			}),
+			o(375668, {	-- Misty Treasure Chest
+				["description"] = "Please Report to ATT-Discord if you find this treasure.",
+				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
+				-- ["questID"] = ,
+				["g"] = {
+					crit(7, {	-- Misty Treasure Chest
+						["achievementID"] = 16297,	-- Treasures of The Waking Shores
+					}),
+				},
+			}),
 			o(381045, {	-- Replica Dragon Goblet
 				["coord"] = { 48.9, 51.8, THE_WAKING_SHORES },
 				["questID"] = 70600,
 				["cost"] = { { "i", 198854, 1 }, },	-- 1xArcheologist Artifact Notes
 				["g"] = {
+					crit(1, {	-- Replica Dragon Goblet
+						["achievementID"] = 16297,	-- Treasures of The Waking Shores
+					}),
 					i(202019),	-- Golden Dragon Goblet (TOY!)
 				},
 			}),
@@ -40,6 +66,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["questID"] = 70598,
 				["cost"] = { { "i", 199062, 1 }, },	-- 1xRuby Gem Cluster Map
 				["g"] = {
+					crit(3, {	-- Ruby Gem Cluster
+						["achievementID"] = 16297,	-- Treasures of The Waking Shores
+					}),
 					i(194647),	-- Design: Jeweled Ruby Whelpling (RECIPE!)
 					i(200864),	-- Glimmering Alexstraszite Cluster
 				},
@@ -50,6 +79,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["questID"] = 72020,
 				["cost"] = { { "i", 200738, 1 }, },	-- 1xOnyx Gem Cluster Map
 				["g"] = {
+					crit(8, {	-- Onyx Gem Cluster
+						["achievementID"] = 16297,	-- Treasures of The Waking Shores
+					}),
 					i(194650),	-- Design: Jeweled Onyx Whelpling (RECIPE!)
 					i(200867),	-- Glimmering Neltharite Cluster
 				},
@@ -58,19 +90,22 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["description"] = "Cave Entrance at 29.4, 52.6",
 				["coord"] = { 48.5, 85.2, THE_WAKING_SHORES },
 				--["questID"] = ,
+				["g"] = {
+					crit(6, {	-- Torn Riding Pack
+						["achievementID"] = 16297,	-- Treasures of The Waking Shores
+					}),
+				},
 			}),
 			o(380653, {	-- Yennu's Kite
 				["coord"] = { 46.8, 31.2, THE_WAKING_SHORES },
 				--["questID"] = ,
 				["g"] = {
+					crit(4, {	-- Yennu's Kite
+						["achievementID"] = 16297,	-- Treasures of The Waking Shores
+					}),
 					i(202022),	-- Yennu's Kite (TOY!)
 				},
 			}),
-			i(199841, {	-- Finely Carved Wing [FORGOT OBJECTID...]
-				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
-			}),
-			-- In Djaradin Cache no ObjectID atm..
-			i(199230),	-- Schematic: Projectile Propulsion Pinion (RECIPE!)
 		}),
 	}),
 })));

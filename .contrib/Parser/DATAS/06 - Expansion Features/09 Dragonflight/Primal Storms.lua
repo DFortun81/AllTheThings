@@ -591,7 +591,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 								},
 							}),
 						}),
-						filter(PETS, {
+						filter(BATTLE_PETS, {
 							i(200173, {	-- Ghostflame (PET!)
 								["cost"] = {
 									{ "c", ELEMENTAL_OVERFLOW, 1000 },

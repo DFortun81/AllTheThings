@@ -1581,7 +1581,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199834),	-- Pulpy Seagrass
 		i(199835),	-- Torga's Braid
 		i(199840),	-- Wrapped Gold Band
-		i(199841),	-- Finely Carved Wing
 		i(199842),	-- Stone Dragontooth
 		i(199843),	-- Coldwashed Dragonclaw
 		i(199844),	-- Serevite Harpoon Head
@@ -1596,7 +1595,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199895),	-- Chunk of Sculpture
 		i(199898),	-- Iskaara Fishing Pole
 		i(199902),	-- Wayfinder's Compass
-		i(199906),	-- Titan Relic
 		i(199915),	-- Ancient Obsidian Charm
 		i(199916),	-- Roseate Hopper
 		i(199924),	-- Strong Sea Kelp
@@ -1607,7 +1605,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200069),	-- Obsidian Cache
 		i(200070),	-- Obsidian Strongbox
 		i(200071),	-- Sacred Tuskarr Totem
-		i(200072),	-- Dragonbane Strongbox
 		i(200073),	-- Valdrakken Treasures
 		i(200075),	-- Flying Fish Bones
 		i(200076),	-- Harpoon Head
@@ -1994,7 +1991,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201034),	-- Nokuhd Centaur Girdle
 		i(201035),	-- Obsidian Citadel Pauldrons
 		i(201036),	-- Obsidian Citadel Chestplate
-		i(201037),	-- Obsidian Citadel Legguards
 		i(201038),	-- Obsidian Citadel Footwraps
 		i(201039),	-- Obsidian Citadel Helm
 		i(201040),	-- Obsidian Citadel Gauntlets
@@ -2166,7 +2162,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201430),	-- Burning Mallet
 		i(201431),	-- Obsidian Tyrant's Mace
 		i(201432),	-- Obsidian Dragontooth
-		i(201433),	-- Citadel Warden's Mace
 		i(201434),	-- Obsidian Barrier
 		i(201435),	-- Swinging Sands
 		i(201436),	-- Temporally-Locked Sands
@@ -2350,7 +2345,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(201034),	-- Nokhudon Girdle
 		i(201035),	-- Citadel Crusher'sl Pauldrons
 		i(201036),	-- Citadel Crusher's Chestplate
-		i(201037),	-- Citadel Crusher's Legguards
 		i(201038),	-- Citadel Crusher's Footwraps
 		i(201039),	-- Citadel Crusher's Helm
 		i(201040),	-- Citadel Crusher's Gauntlets
@@ -2413,7 +2407,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(202118),	-- Assembly Guardian's Ring
 		i(202119),	-- Assembly Scholar's Loop
 		i(202122),	-- Primal Chaos Cluster
-		i(202142),	-- Dragonbane Strongbox
 		i(202143),	-- Woven Stone Bracelets
 		i(202144),	-- Greathelm of Horned Fury
 		i(202145),	-- Frozen Claw Mantle
@@ -2434,13 +2427,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194838),	-- Highland Drake Manuscript: Spined Head
 		i(198072),	-- Gold-Banded Dragon Tooth
 		i(198896),	-- Technique: Highland Drake: Spined Neck
-		i(200072),	-- Dragonbane Keep Strongbox
 		i(200094),	-- Caravan Strongbox
 		i(200468),	-- Grand Hunt Spoils
 		i(200513),	-- Grand Hunt Spoils
 		i(200515),	-- Grand Hunt Spoils
 		i(200516),	-- Grand Hunt Spoils
-		i(202142),	-- Dragonbane Keep Strongbox
 		i(202171),	-- Dragon Purse
 		i(202194),	-- Misty Satchel
 		i(202198),	-- Salt Crystal Ring

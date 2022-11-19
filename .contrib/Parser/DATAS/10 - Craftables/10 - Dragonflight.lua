@@ -8,7 +8,6 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 	i(198046),	-- Concentrated Primal Infusion
 	i(198048),	-- Titan Training Matrix I
 	i(198056),	-- Titan Training Matrix II
-	i(198058),	-- Titan Training Matrix III
 	i(198059),	-- Titan Training Matrix IV
 	i(190454),	-- Primal Chaos
 	i(200686),	-- Primal Focus

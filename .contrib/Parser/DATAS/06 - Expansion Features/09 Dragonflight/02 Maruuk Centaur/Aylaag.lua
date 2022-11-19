@@ -54,9 +54,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
 					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },	-- Close to Maruuk?
 					["isDaily"] = true,
-					["g"] = {
-						i(198627),	-- Blood of the Khansguard
-					},
 				}),
 				q(70701, {	-- Bakar Dream of Lost Argali
 					--["sourceQuests"] = {  },
@@ -77,7 +74,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 					["isDaily"] = true,
 					["g"] = {
 						i(198691),	-- Howling Heart
-						i(198542),	-- Shikaari Huntress' Arrowhead
 					},
 				}),
 
@@ -87,9 +83,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
 					["coord"] = { 71.2, 31.5, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
-					["g"] = {
-						i(197947),	-- Molten Pugilist's Fist
-					},
 				}),
 				q(65796, {	-- The Best Defense...
 					--["sourceQuests"] = {  },
@@ -114,9 +107,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 					["provider"] = { "n", 185880 },	-- Toluijin
 					["coord"] = { 71.1, 31.3, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
-					["g"] = {
-						i(193568),	-- Engraved Spearhead
-					},
 				}),
 			}),
 		}),

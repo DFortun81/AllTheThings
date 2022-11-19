@@ -1114,6 +1114,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				--["sourceQuests"] = {  },	-- Unknown
 				["provider"] = { "i", 199841 },	-- Finely Carved Wing
 				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
+				["g"] = {
+					crit(6, {	-- Yennu's Kite
+						["achievementID"] = 16323,	-- Fragments of History
+					}),
+				},
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(65451, {	-- Practice Materials

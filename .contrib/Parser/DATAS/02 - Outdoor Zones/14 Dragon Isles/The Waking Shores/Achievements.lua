@@ -60,6 +60,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			}),
 			ach(16409),	-- Let's Get Quacking
 			ach(16401),	-- Sojourner of the Waking Shores
+			ach(16297),	-- Treasures of The Waking Shores
 			ach(16334),	-- Waking Hope
 			ach(16575, {	-- Waking Shores Glyph Hunter
 				-- Meta Achievement
@@ -158,7 +159,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			}),
 
 			-- TODO: NOT COMPLETED YET!!!
-			ach(16297),	-- Treasures of The Waking Shores
+
 			ach(16676),	-- Adventurer of The Waking Shores
 			ach(16584),	-- Symbols of Hope
 		}),

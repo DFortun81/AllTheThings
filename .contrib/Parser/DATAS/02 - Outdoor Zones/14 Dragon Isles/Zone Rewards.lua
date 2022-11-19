@@ -3,14 +3,8 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	n(ZONE_REWARDS, {
-		i(198489),	-- Dreamscape Prism
 		i(198058),	-- Titan Training Matrix III
 		i(194701),	-- Ominous Conch (Something for fishing thingy)
-		i(192029),	-- Swift Dragonbone Mace
-
-		i(197923),	-- Bloodcharger's Skewer
-
-
 		filter(CLOTH, {
 			i(191989),	-- Cobalt Watcher's Cord
 			i(191987),	-- Cobalt Watcher's Cowl
@@ -52,39 +46,32 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			i(192010),	-- Wyrmforged Mantle
 			i(192007),	-- Wyrmforged Sabatons
 		}),
+		filter(TRINKET_F, {
+			i(198627),	-- Blood of the Khansguard
+			i(198489),	-- Dreamscape Prism
+			i(193568),	-- Engraved Spearhead
+			i(198542),	-- Shikaari Huntress' Arrowhead
+		}),
 		n(WEAPONS, {
+			i(197923),	-- Bloodcharger's Skewer
 			i(192019),	-- Calibrated Hand Cannon
 			i(192020),	-- Ceremonial Ohn'ir Dagger
+			i(192030),	-- Dexterous War Pole
 			i(192024),	-- Dragonflayer's Seething Shortsword
 			i(192016),	-- Drakescale Heater Shield
 			i(192023),	-- Lava-Forged Decapitator
+			i(192034),	-- Marauder's Singing Blade
+			i(192033),	-- Maruuk Battle Standard
+			i(192028),	-- Metalshaper's Obsidian Mace
+			i(197947),	-- Molten Pugilist's Fist
+			i(192031),	-- Nokuhd Impaling Halberd
 			i(192018),	-- Piercing Shikaar Thrust
 			i(192022),	-- Plumed Outrunner's Dirk
 			i(192021),	-- Qalashi Crustshaper's Greatmace
+			i(192032),	-- Searing Wyvern Brand
+			i(192029),	-- Swift Dragonbone Mace
 			i(192017),	-- Thrumming Celestial Arrangement
 			i(192025),	-- World Breaker's Maul
 		}),
-
-
-		i(192028),	-- Metalshaper's Obsidian Mace
-		i(192029),	-- Swift Dragonbone Mace
-		i(192030),	-- Dexterous War Pole
-		i(192031),	-- Nokuhd Impaling Halberd
-		i(192032),	-- Searing Wyvern Brand
-		i(192033),	-- Maruuk Battle Standard
-		i(192034),	-- Marauder's Singing Blade
-
-
-
-
-
-
-
-
-
-
-
-
-
 	}),
 })));
