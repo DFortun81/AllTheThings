@@ -1669,7 +1669,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200175),	-- Repurposed Anvil
 		i(200176),	-- Missingway Hand Cannon
 		i(200178),	-- Infected Ichor
-		i(200180),	-- Crystallized Lightning Staff
 		i(200181),	-- Blade of Blazing Torment
 		i(200182),	-- Riveted Drape
 		i(200183),	-- Echo of the Cave
