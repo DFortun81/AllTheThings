@@ -40,6 +40,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			ach(16063, {	-- Dragon Glyphs: Windsong Rise
 				["coord"] = { 61.6, 64.4, OHNAHRAN_PLAINS },
 			}),
+			ach(16457, {	-- Explore the Ohn'ahran Plains
+				crit(1),	-- Ancient Bough
+				crit(2),	-- Broadhoof Outpost
+				crit(3),	-- Emberwatch
+				crit(4),	-- Emerald Gardens
+				crit(5),	-- Forkriver Crossing
+				crit(6),	-- Maruukai
+				crit(7),	-- Nokhudon Hold
+				crit(8),	-- Horn of Drusahl
+				crit(9),	-- Rusza'thar Reach
+				crit(10),	-- Teerakai
+				crit(11),	-- Mirewood Fen
+				crit(12),	-- Windsong Rise
+			}),
 			ach(16423, {	-- Honor Our Ancestors
 				["cost"] = { { "i", 201323, 1 }, }, 	-- 1xEssence of Awakening
 				["g"] = {
@@ -179,7 +193,34 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				}},
 			}),
 			ach(15394),	-- Ohn'a'Roll
+			ach(16574, {	-- Sleeping on the Job
+				crit(1, {	-- Dreamguard Felyasra
+					["crs"] = { 198064 },	-- Dreamguard Felyasra
+					["coord"] = { 33.5, 53.2, OHNAHRAN_PLAINS },
+				}),
+				crit(2, {	-- Dreamguard Erezsra
+					["crs"] = { 198068 },	-- Dreamguard Erezsra
+					["coord"] = { 29.9, 62.2, OHNAHRAN_PLAINS },
+				}),
+				crit(3, {	-- Dreamguard Sayliasra
+					["crs"] = { 198069 },	-- Dreamguard Sayliasra
+					["coord"] = { 25.3, 65.4, OHNAHRAN_PLAINS },
+				}),
+				crit(4, {	-- Dreamguard Aiyelasra
+					["crs"] = { 198074 },	-- Dreamguard Aiyelasra
+					["coord"] = { 18.0, 53.8, OHNAHRAN_PLAINS },
+				}),
+				crit(5, {	-- Dreamguard Lucidra
+					["crs"] = { 198073 },	-- Dreamguard Lucidra
+					["coord"] = { 19.1, 82.9, OHNAHRAN_PLAINS },
+				}),
+				crit(6, {	-- Dreamguard Taelyasra
+					["crs"] = { 198075 },	-- Dreamguard Taelyasra
+					["coord"] = { 29.4, 41.5, OHNAHRAN_PLAINS },
+				}),
+			}),
 			ach(16405),	-- Sojourner of Ohn'ahran Plains
+			ach(16299),	-- Treasures of the Ohn'ahran Plains
 			ach(16424, {	-- Who's a Good Bakar?
 				crit(1, {	-- Alli
 					["crs"] = { 197569 },	-- Alli
@@ -273,11 +314,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				}),
 			}),
 			-- TODO: NOT COMPLETED YET!
-			ach(16299),	-- Treasures of the Ohn'ahran Plains
-			ach(16457),	-- Explore the Ohn'ahran Plains
 			ach(16677),	-- Adventurer of the Ohn'ahran Plains
 			ach(16583),	-- Knew You Nokhud Do It!
-			ach(16574),	-- Sleeping on the Job
 		}),
 	}),
 })));

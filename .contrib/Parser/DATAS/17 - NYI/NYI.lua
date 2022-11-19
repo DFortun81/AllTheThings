@@ -625,8 +625,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194028),	-- Ancient Parchment: Bottom Half
 			i(194029),	-- Treasure Map: Thaldraszus
 			i(194442),	-- Activity Map: Apex Canopy
-			i(194540),	-- Nokhud Armorer's Notes
-			i(195453),	-- Ludo's Stash Map
 		}),
 		n(WEAPONS, {
 			i(189055),	-- Ghendish's Backup Talisman
@@ -1538,8 +1536,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(199115),	-- Herbalism Field Notes
 		i(199122),	-- Mining Field Notes
 		i(199128),	-- Skinning Field Notes
-		i(199171),	-- Slightly Chewed Duck Egg
-		i(199172),	-- Viridescent Duck
 		i(199205),	-- Manasucker
 		i(199207),	-- Iceback Sculpin
 		i(199208),	-- Grungle
@@ -1867,21 +1863,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(200856),	-- Sideboat
 		i(200858),	-- Plume of the Forgotten
 		i(200859),	-- Seasoned Hunter's Trophy
-		i(200861),	-- Stolen Shikaar Warspear
 		i(200862),	-- Experimental Duck Feed
 		i(200863),	-- Glimmering Nozdorite Cluster
-		i(200865),	-- Glimmering Ysemerald Cluster
 		i(200866),	-- Glimmering Malygite Cluster
 		i(200868),	-- Integrated Primal Fire
-		i(200869),	-- Ohn Lite Branded Horn
 		i(200870),	-- Vorquin Essence
 		i(200871),	-- Steamed Scarab Steak
 		i(200872),	-- Living Mud Mask
 		i(200873),	-- Leftover Bread
 		i(200874),	-- Lady Feathersworth
 		i(200875),	-- Seeker's Bands
-		i(200876),	-- Yennu's Toy Boat
-		i(200878),	-- Wheeled Floaty Boaty Controller
 		i(200879),	-- Zenet Egg
 		i(200880),	-- Wind-Sealed Mana Capsule
 		i(200885),	-- Cinna-Cinderbloom Tea

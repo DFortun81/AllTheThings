@@ -1087,6 +1087,7 @@ i(194059);	-- Market Tent
 i(198402);	-- Maruuk Cooking Pot
 i(197986);	-- Murglasses
 i(200640);	-- Obsidian Egg Clutch
+i(200869);	-- Ohn Lite Branded Horn
 i(200630);	-- Ohn'ir Windsage's Hearthstone
 i(198409);	-- Personal Shell
 i(200198);	-- Primalist Prison
@@ -1106,6 +1107,7 @@ i(199892);	-- Tuskarr Traveling Soup Pot
 i(202022);	-- Yennu's Kite
 i(200550);	-- Very Comfortable Pelt
 i(199650);	-- Whale Bone Tea Set
+i(200878);	-- Wheeled Floaty Boaty Controller
 i(198156);	-- Wyrmhole Generator
 -- NOT SOURCED YET
 i(192495);	-- Malfunctioning Stealthman 54
@@ -1124,8 +1126,6 @@ i(200116);	-- Everlasting Horn of Lavaswimming
 i(200628);	-- Somewhat-Stabilized Arcana
 i(200631);	-- Happy Tuskarr Palooza
 i(200636);	-- Primal Invocation Quintessence
-i(200869);	-- Ohn Lite Branded Horn
-i(200878);	-- Wheeled Floaty Boaty Controller
 i(200999);	-- The Super Shellkhan Gang
 i(199902);	-- Wayfinder's Compass
 i(201435);	-- Swinging Sands

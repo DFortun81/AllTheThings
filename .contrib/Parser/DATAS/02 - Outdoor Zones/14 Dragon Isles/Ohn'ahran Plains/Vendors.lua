@@ -11,6 +11,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					i(199919),	-- Yak Milk Pudding
 				},
 			}),
+			n(192997, {
+				["description"] = "Pet!",
+				["coord"] = { 61.7, 41.0, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(195453, {	-- Ludo's Stash Map
+						["questID"] = 67718,
+					}),
+				},
+			}),
 			n(191397, {	-- Sondo
 				["coord"] = { 80.7, 58.7, OHNAHRAN_PLAINS },
 				["g"] = {

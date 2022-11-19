@@ -971,6 +971,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["provider"] = { "n", 195489 },	-- Scout Santuun
 				["coord"] = { 34.2, 54.0, OHNAHRAN_PLAINS },
 			}),
+			q(72063, {	-- Return Yennu's Toy Boat
+				-- ["sourceQuests"] = {  },	--
+				["provider"] = { "i", 200876 },	-- Yennu's Toy Boat
+				["coord"] = { 52.0, 58.3, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(200878),	-- Wheeled Floaty Boaty Controller (TOY!)
+				},
+			}),
 			n(BONUS_OBJECTIVES, {
 				q(69837, {	-- Sunscale Behemoth
 					-- npcid 193133

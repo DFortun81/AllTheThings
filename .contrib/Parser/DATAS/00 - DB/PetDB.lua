@@ -1134,6 +1134,7 @@ pet(198353, 3368);	-- Shiverweb Broodling
 pet(200479, 3390);	-- Sophic Amalgamation
 pet(200114, 3382);	-- Stormie
 pet(191932, 3262);	-- Violet Violence
+pet(199172, 3309);	-- Viridescent Duck
 pet(193225, 3284);	-- Whiskuk
 pet(193619, 3319);	-- Yipper
 
@@ -1183,7 +1184,6 @@ pet(0, 3299);	-- Echo of the Depths
 pet(0, 3301);	-- Wild Duckling
 pet(0, 3307);	-- Plucky Duckling
 pet(0, 3308);	-- Time-Lost Duckling
-pet(0, 3309);	-- Viridescent Duck
 pet(0, 3310);	-- Echo of the Heights
 pet(0, 3311);	-- Ohuna Companion
 pet(193587, 3312);	-- Time-Lost Duck

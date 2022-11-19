@@ -48,6 +48,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 				i(199062, {	-- Ruby Gem Cluster Map
 					["questID"] = 70528,
 				}),
+				i(194540, {	-- Nokhud Armorer's Notes
+					["questID"] = 67046,
+				}),
+				i(198843, {	-- Emerald Gardens Explorer's Notes
+					["questID"] = 70392,
+				}),
 				i(201390),	-- Devastating Drakonid Waraxe
 				i(201393),	-- Dragonspawn Spellweaver's Focus
 				i(201388),	-- Dragonspawn Wingtipped Staff
