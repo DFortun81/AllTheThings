@@ -19,7 +19,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			n(193133, {	-- Sunscale Behemoth
 				["coord"] = { 63.2, 48.6, OHNAHRAN_PLAINS },
 				["g"] = {
-					i(198409),	-- Personal Shell (Toy)
+					i(198409),	-- Personal Shell (TOY!)
 				},
 			}),
 			n(194458, {	-- Rokzul

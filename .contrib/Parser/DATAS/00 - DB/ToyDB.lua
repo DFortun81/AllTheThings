@@ -1056,6 +1056,7 @@ i(199337);	-- Bag of Furious Winds
 i(199768);	-- Black Dragon Banner
 i(199769);	-- Blue Dragon Banner
 i(199897);	-- Blue-Covered Beanbag
+i(202021);	-- Breaker's Flag of Victory
 i(199770);	-- Bronze Dragon Banner
 i(198264);	-- Centralized Precipitation Emitter
 i(194058);	-- Cold Cushion

@@ -3,6 +3,10 @@
 -----------------------------------------------
 
 root("PVP", pvp(n(-10058, {	-- World
+	tier(DF_TIER, {
+		currency(2123),	-- Bloody Tokens
+		i(202184),	-- Trophy of Strife
+	}),
 	n(QUESTS, {
 		q(58274, bubbleDownSelf({["timeline"] = { "added 8.3.0.33062", "removed 9.0.5" } },{	-- Servant of N'Zoth
 			["races"] = ALLIANCE_ONLY,

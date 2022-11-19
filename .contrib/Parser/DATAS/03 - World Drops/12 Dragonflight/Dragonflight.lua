@@ -61,7 +61,6 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, 
 		i(190316),	-- Awakened Earth
 		i(190321),	-- Awakened Fire
 		i(190329),	-- Awakened Frost
-		i(190450),	-- Awakened Ire
 		i(190324),	-- Awakened Order
 		-- Rousing
 		i(190326),	-- Rousing Air
@@ -69,7 +68,6 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, 
 		i(190315),	-- Rousing Earth
 		i(190320),	-- Rousing Fire
 		i(190328),	-- Rousing Frost
-		i(190451),	-- Rousing Ire
 		i(190322),	-- Rousing Order
 		-- Cloth
 		i(193050),	-- Tattered Wildercloth
@@ -86,6 +84,9 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, 
 		i(197747),	-- Mighty Mammoth Ribs
 		i(197742),	-- Ribbed Mollusk Meat
 		i(197743),	-- Waterfowl Filet
+		--
+		i(192644),	-- Aeriform Speck
+		i(192648),	-- Pristine Beast Fur
 	}),
 	filter(RECIPES, {
 		i(194298, {	-- Pattern: Forlorn Funeral Pall (RECIPE!)

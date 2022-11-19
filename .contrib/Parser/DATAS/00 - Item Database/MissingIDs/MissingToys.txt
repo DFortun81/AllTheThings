@@ -11,7 +11,6 @@ i(201933),	-- Black Dragon's Challenge Dummy
 10.0.2.46259
 i(200926),	-- Compendium of Love
 i(202019),	-- Golden Dragon Goblet
-i(202021),	-- Breaker's Flag of Victory
 i(202022),	-- Yennu's Kite
 i(202042),	-- Aquatic Shades
 
@@ -30,6 +29,6 @@ i(201927),	-- Assorted Arcanocrystals
 i(201933),	-- Black Dragon's Challenge Dummy
 10.0.2.46259
 i(200926),	-- Compendium of Love
-i(202021),	-- Breaker's Flag of Victory
+
 
 i(202042),	-- Aquatic Shades

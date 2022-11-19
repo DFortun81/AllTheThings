@@ -29,6 +29,10 @@ root("PVP", pvp(tier(DF_TIER, {
 			ach(15952),	-- Rival I: Dragonflight Season 1
 			ach(15953),	-- Rival II: Dragonflight Season 1
 		}),
+		filter(56, {
+			i(190450),	-- Awakened Ire
+			i(190451),	-- Rousing Ire
+		}),
 		filter(RECIPES, {
 			i(201257),	-- Bloodstained Pattern: Infurious Hide (RECIPE!) ???????
 			i(201259),	-- Bloodstained Pattern: Infurious Scales (RECIPE!) ???????

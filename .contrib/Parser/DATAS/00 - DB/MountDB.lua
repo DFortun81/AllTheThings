@@ -1515,6 +1515,7 @@ i(198811, 385115);	-- Majestic Armored Vorquin
 i(201719, 394220);	-- Obsidian Vorquin
 i(201704, 394218);	-- Sapphire Vorquin
 i(192784, 374155);	-- Shellack
+i(192775, 374098);	-- Stormhide Salamanther
 i(198810, 385134);	-- Swift Armored Vorquin
 i(192761, 374032);	-- Tamed Skitterfly
 i(200118, 376880);	-- Yellow Scouting Ottuk
@@ -1551,7 +1552,7 @@ i(198825, 385266);	-- Zenet Hatchling
 i(192800, 352926);	-- Skyskin Hornstrider
 i(0, 368893);	-- Winding Slitherdrake
 
-i(192775, 374098);	-- Stormhide Salamanther
+
 i(192779, 374138);	-- Scorchpath
 i(192791, 374196);	-- Plainswalker Bearer
 i(192799, 374247);	-- Lizi, Thunderspine Tramper

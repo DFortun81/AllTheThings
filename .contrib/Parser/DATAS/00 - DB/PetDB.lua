@@ -1107,7 +1107,9 @@ pet(193837, 3326);	-- Backswimmer Timbertooth
 pet(198726, 3380);	-- Black Skitterbug
 pet(199688, 3279);	-- Bronze Racing Enthusiast
 pet(199326, 3376);	-- Chip
+pet(199758, 3379);	-- Crimson Proto-Whelp
 pet(191941, 3264);	-- Crystalline Mini-Monster
+pet(200173, 3287);	-- Ghostflame
 pet(198725, 3381);	-- Gray Marmoni
 pet(193618, 3317);	-- Hoofhelper
 pet(193885, 3345);	-- Jeweled Amber Whelpling
@@ -1117,7 +1119,8 @@ pet(193887, 3346);	-- Jeweled Ruby Whelpling
 pet(193886, 3344);	-- Jeweled Sapphire Whelpling
 
 pet(199175, 3316);	-- Lubbins
-
+pet(199757, 3378);	-- Magic Nibbler
+pet(193571, 3303);	-- Mallard Duckling
 pet(191946, 3265);	-- Mister Muskoxeles
 pet(200519, 3286);	-- Mister Toots
 pet(200930, 3414);	-- Obsidian Proto-Whelp
@@ -1128,6 +1131,7 @@ pet(193572, 3306);	-- Quack-E
 pet(191936, 3263);	-- Secretive Frogduck
 pet(198353, 3368);	-- Shiverweb Broodling
 pet(200479, 3390);	-- Sophic Amalgamation
+pet(200114, 3382);	-- Stormie
 pet(191932, 3262);	-- Violet Violence
 pet(193225, 3284);	-- Whiskuk
 pet(193619, 3319);	-- Yipper
@@ -1162,7 +1166,7 @@ pet(0, 3281);	-- Scruffy Ottuk
 pet(0, 3283);	-- Snowlemental
 
 pet(193235, 3285);	-- Scarlet Ottuk Pup
-pet(0, 3287);	-- Ghostflame
+
 pet(0, 3288);	-- Trunkalumpf
 pet(0, 3289);	-- Echo of the Inferno
 pet(193363, 3290);	-- Auburntusk Calf
@@ -1176,7 +1180,6 @@ pet(193380, 3298);	-- Pink Salamanther
 pet(0, 3299);	-- Echo of the Depths
 
 pet(0, 3301);	-- Wild Duckling
-pet(193571, 3303);	-- [PH] Mallard Baby Duck
 pet(0, 3307);	-- Plucky Duckling
 pet(0, 3308);	-- Time-Lost Duckling
 pet(0, 3309);	-- Viridescent Duck
@@ -1241,11 +1244,11 @@ pet(191929);	-- zzOld - [PH] White Flying Squirrel (REUSE)
 
 
 pet(0, 3377);	-- Gwosh
-pet(0, 3378);	-- Magic Nibbler
-pet(0, 3379);	-- Crimson Proto-Whelp
 
 
-pet(0, 3382);	-- Stormie
+
+
+
 pet(0, 3384);	-- Storm-Touched Bluefeather
 pet(0, 3385);	-- Storm-Touched Stomper
 pet(0, 3386);	-- Faceripper

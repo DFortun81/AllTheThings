@@ -92,7 +92,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					crit(10, {	-- The Eternal Kurgans Ancestor
 						["crs"] = { 197058 },	-- Dihar the Unyielding
 						["coord"] = { 32.8, 70.3, OHNAHRAN_PLAINS },
-						["cost"] = { { "i", 191470, 5}, },	-- 5xWrithebark
+						["cost"] = { { "i", 191470, 5}, },	-- 5xWrithebark+
 					}),
 				},
 			}),

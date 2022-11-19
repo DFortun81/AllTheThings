@@ -35,7 +35,7 @@ i(196996, 69196);	-- Cliffside Wylderdrake: Branched Horns
 i(196965, 69165);	-- Cliffside Wylderdrake: Bronze and Teal Armor
 i(197000, 69200);	-- Cliffside Wylderdrake: Coiled Horns
 i(196981, 69181);	-- Cliffside Wylderdrake: Conical Head
-i(196962, 69162);	-- Cliffside Wylderdrake: Copper and Gray Armor
+i(196962, 69162);	-- Cliffside Wylderdrake: Silver and Purple Armor
 i(196979, 69179);	-- Cliffside Wylderdrake: Curled Head Horns
 i(197015, 69215);	-- Cliffside Wylderdrake: Dark Skin Variation
 i(196973, 69173);	-- Cliffside Wylderdrake: Dual Horned Chin
