@@ -1579,11 +1579,3 @@ root("Zones", m(EASTERN_KINGDOMS, {
 		},
 	}),
 }));
-
--- #if AFTER LEGION
-root("HiddenQuestTriggers", {
-	tier(LEGION_TIER, {
-		q(43288),	-- Repel --[[ CRIEVE NOTE: This might be related to the Legion Invasion since all of the other quests with this same name are in the zones the invasions occurred? ]]--
-	}),
-});
--- #endif

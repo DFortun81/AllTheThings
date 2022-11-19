@@ -1086,6 +1086,7 @@ i(198402);	-- Maruuk Cooking Pot
 i(197986);	-- Murglasses
 i(200640);	-- Obsidian Egg Clutch
 i(200630);	-- Ohn'ir Windsage's Hearthstone
+i(198409);	-- Personal Shell
 i(191891);	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise
 i(199767);	-- Red Dragon Banner
 i(198729);	-- Reliquary Banner
@@ -1102,7 +1103,6 @@ i(202022);	-- Yennu's Kite
 i(200550);	-- Very Comfortable Pelt
 i(199650);	-- Whale Bone Tea Set
 i(198156);	-- Wyrmhole Generator
-i(198409);	-- Personal Shell
 -- NOT SOURCED YET
 i(192495);	-- Malfunctioning Stealthman 54
 i(197961);	-- Whelps on Strings

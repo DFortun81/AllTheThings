@@ -1090,7 +1090,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194842),	-- Regal Barding Manuscript
 		i(194843),	-- Explorer's Barding Manuscript
 		i(195467),	-- zzOld(DNT) Test Belt of Molten Metallic Awesomeness
-		i(195580),	-- Suspicious Bottle
 		i(195885),	-- Black Dragon's Scale Cloak
 		i(196961),	-- Cliffside Wylderdrake: Armor
 		i(196962),	-- Cliffside Wylderdrake: Silver and Purple Armor
