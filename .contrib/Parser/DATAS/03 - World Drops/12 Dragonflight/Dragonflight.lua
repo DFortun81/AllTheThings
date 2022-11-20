@@ -86,7 +86,10 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, 
 		i(197743),	-- Waterfowl Filet
 		--
 		i(192644),	-- Aeriform Speck
+		i(192615),	-- Fluorescent Fluid
+		i(192658),	-- High-Fiber Leaf
 		i(192648),	-- Pristine Beast Fur
+		i(192636),	-- Woolly Mountain Pelt
 	}),
 	filter(RECIPES, {
 		i(194298, {	-- Pattern: Forlorn Funeral Pall (RECIPE!)

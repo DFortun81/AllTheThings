@@ -8,7 +8,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["coord"] = { 64.9, 69.6, THE_WAKING_SHORES },
 				["questID"] = 67048,
 				["g"] = {
-					i(199916),	-- Roseate Hopper
+					i(199916),	-- Roseate Hopper (PET!)
 				},
 			}),
 			i(200063, {	-- Observant Riddle "Treat"

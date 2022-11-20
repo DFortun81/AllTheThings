@@ -196,7 +196,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						i(197646),	-- Ohn'ir Initiate Hood
 						i(197647),	-- Shikaar Scout Helm
 						i(197648),	-- Teerai Watcher Hood
-						i(197405),	-- Renewed Proto-Drake: Maned Tail
+						i(197405),	-- Renewed Proto-Drake: Maned Tail (DM!)
 					},
 				}),
 				q(66025, {	-- The Nokhud Threat
@@ -344,7 +344,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					["g"] = {
 						i(194549),	-- Windborne Velocidrake (MOUNT!)
 						ach(15795),	-- Together in the Skies
-						},
+					},
 				}),
 				q(66331, {	-- The Primalist Front
 					["sourceQuests"] = { 70220 },	-- Shady Sanctuary
@@ -391,7 +391,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					["coord"] = { 22.1, 51.0, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197672),	-- Emerald Shroud of Loyalty
-						i(197375),	-- Renewed Proto-Drake: Curled Horns
+						i(197375),	-- Renewed Proto-Drake: Curled Horns (DM!)
 						crit(4, {	-- Bonds Renewed
 							["achievementID"] = 15394,	-- Ohn'a'Roll
 						}),
@@ -457,7 +457,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						["provider"] = { "n", 192621 },	-- Healer Selbekh
 						["coord"] = { 61.2, 40.0, OHNAHRAN_PLAINS },
 						["g"] = {
-							i(198537),	-- Taivan's Trumpet
+							i(198537),	-- Taivan's Trumpet (TOY!)
 							crit(1, {	-- Taivan's Purpose
 								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
 							}),
@@ -753,7 +753,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						["provider"] = { "n", 186649 },	-- Khasar
 						["coord"] = { 80.6, 30.7, OHNAHRAN_PLAINS },
 						["g"] = {
-							i(197690),	-- Bag of Biscuits
+							i(197960),	-- Bag of Biscuits
 						},
 					}),
 					q(65953, {	-- The Ora-cull
@@ -843,7 +843,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						["coord"] = { 66.3, 24.3, OHNAHRAN_PLAINS },
 						["g"] = {
 							i(200278),	-- Drake Archaeologist's Shawl
-							i(197407),	-- Renewed Proto-Drake: Spiked Throat
+							i(197407),	-- Renewed Proto-Drake: Spiked Throat (DM!)
 							crit(8, {	-- Nelthazan Ruins
 								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
 							}),
@@ -979,35 +979,75 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					i(200878),	-- Wheeled Floaty Boaty Controller (TOY!)
 				},
 			}),
+			q(72512, {	-- A Whispering Breeze
+				["description"] = "Require Renown 9 and Finish Initiate Questline. Speak to Godoloto to get the clues then gather the cost objects.",
+				["sourceQuests"] = { 66676 },	-- Sneaking In
+				["provider"] = { "n", 190022 },	-- Godoloto
+				["coord"] = { 56.5, 73.3, OHNAHRAN_PLAINS },
+				["cost"] = {
+					{ "i", 201929, 3 },	-- 3xStolen Breath of Ohn'ahra
+					{ "i", 201323, 1 },	-- 1xEssence of Awakening
+					{ "i", 191507, 1 },	-- 1xExultant Incense+++
+				},
+				["g"] = {
+					i(198821),	-- Divine Kiss of Ohn'ahra (MOUNT!)
+				},
+			}),
+			q(71196, {	-- To Tame A Thunderspine
+				["description"] = "Require Renown 9 and Finish Initiate Questline.",
+				["sourceQuests"] = { 66676 },	-- Sneaking In
+				["provider"] = { "n", 190014 },	-- Initiate Radiya
+				["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
+				["cost"] = {
+					{ "c", DRAGON_SUPPLIES, 150 },
+					{ "i", 192615, 20 },	-- 20xFluorescent Fluid
+				},
+			}),
+			q(71197, {	-- To Tame A Thunderspine
+				["sourceQuests"] = { 71196 },	-- To Tame A Thunderspine
+				["provider"] = { "n", 190014 },	-- Initiate Radiya
+				["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
+				["cost"] = {
+					{ "c", DRAGON_SUPPLIES, 150 },
+					{ "i", 192658, 20 },	-- 20xHigh-Fiber Leaf
+				},
+			}),
+			q(71198, {	-- To Tame A Thunderspine
+				["sourceQuests"] = { 71197 },	-- To Tame A Thunderspine
+				["provider"] = { "n", 190014 },	-- Initiate Radiya
+				["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
+				["cost"] = {
+					{ "c", DRAGON_SUPPLIES, 150 },
+					{ "i", 194966, 10 },	-- 10xThousandbite Piranha
+				},
+			}),
+			q(71199, {	-- To Tame A Thunderspine
+				["sourceQuests"] = { 71197 },	-- To Tame A Thunderspine
+				["provider"] = { "n", 190014 },	-- Initiate Radiya
+				["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
+				["cost"] = {
+					{ "c", DRAGON_SUPPLIES, 150 },
+					{ "i", 192636, 20 },	-- 10xWoolly Mountain Pelt
+				},
+			}),
+			q(71195, {	-- To Tame A Thunderspine
+				["sourceQuests"] = { 71199 },	-- To Tame A Thunderspine
+				["provider"] = { "n", 190014 },	-- Initiate Radiya
+				["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
+				["cost"] = {
+					{ "c", DRAGON_SUPPLIES, 150 },
+					{ "i", 200598, 1 },	-- 1xMeluun's Green Curry
+				},
+				["g"] = {
+					i(192799),	-- Lizi, Thunderspine Tramper (MOUNT!)
+				},
+			}),
 			n(BONUS_OBJECTIVES, {
-				q(69837, {	-- Sunscale Behemoth
-					-- npcid 193133
-					["coord"] = { 63.4, 48.6, OHNAHRAN_PLAINS },
-				}),
-				q(70783, {	-- Skaara
-					-- npcid 192949
-					-- dropped i(198411),	-- Claw of Preparedness
-					-- also Titan Training Matrix I 198048
-					["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
-				}),
-				q(69851, {	-- Ripsaw the Stalker
-					-- npcid 193153
-					-- also Titan Training Matrix I 198048
-					["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
-				}),
-				q(69852, {	-- Territorial Coastling
-					-- npcid 193163
-					-- Sand-Encrusted Graves(200212)
-					["coord"] = { 22.7, 67.6, OHNAHRAN_PLAINS },
-				}),
-				q(69968, {	-- Prozela Galeshot
-					-- npcid 193669
-					["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
-				}),
 				q(65892, {	-- The Sundered Asunder
+					-- ["sourceQuests"] = {  },	--
 					["coord"] = { 64.0, 17.8, OHNAHRAN_PLAINS },
 				}),
-				q(66421, {	-- Bonus Objective: The Storm Scar
+				q(66421, {	-- The Storm Scar
 					["sourceQuests"] = { 66331 },	-- The Primalist Front
 					["coord"] = { 25.7, 40.5, OHNAHRAN_PLAINS },
 				}),

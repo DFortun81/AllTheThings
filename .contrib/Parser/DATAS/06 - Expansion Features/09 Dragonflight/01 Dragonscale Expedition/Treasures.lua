@@ -54,6 +54,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 				i(198843, {	-- Emerald Gardens Explorer's Notes
 					["questID"] = 70392,
 				}),
+				i(199065, {	-- Sorrowful Letter
+					["questID"] = 70534,
+				}),
+				i(199066, {	-- Letter of Caution
+					["questID"] = 70535,
+				}),
+				i(199067, {	-- Precious Plans
+					["questID"] = 70536,
+				}),
 				i(201390),	-- Devastating Drakonid Waraxe
 				i(201393),	-- Dragonspawn Spellweaver's Focus
 				i(201388),	-- Dragonspawn Wingtipped Staff

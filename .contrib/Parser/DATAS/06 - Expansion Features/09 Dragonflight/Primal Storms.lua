@@ -129,7 +129,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 						["_npcs"] = { 193650 },	-- Emblazion <Progeny of Fire>
 					}),
 					crit(18, {
-						["_npcs"] = { 193654 },	-- Frozion <Progeny of Water>
+						["_npcs"] = { 193655 },	-- Frozion <Progeny of Water>
 					}),
 				}),
 				ach(16502),	-- Storming the Runway

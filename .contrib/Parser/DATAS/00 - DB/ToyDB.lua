@@ -1100,6 +1100,7 @@ i(200960);	-- Seed of Renewed Souls
 i(198721);	-- Skinny Reliquary Pillow
 i(198722);	-- Small Triangular Pillow
 i(198720);	-- Soft Purple Pillow
+i(198537);	-- Taivan's Trumpet
 i(200857);	-- Talisman of Sargha
 i(193478);	-- Tuskarr Bean Bag
 i(198428);	-- Tuskarr Dinghy
@@ -1113,7 +1114,6 @@ i(198156);	-- Wyrmhole Generator
 i(192495);	-- Malfunctioning Stealthman 54
 i(197961);	-- Whelps on Strings
 i(198474);	-- Artist's Easel
-i(198537);	-- Taivan's Trumpet
 i(198646);	-- Ornate Dragon Statue
 i(199111);	-- Maestro Duck's Orchestrion
 i(199554);	-- S.E.A.T.

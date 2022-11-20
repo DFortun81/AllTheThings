@@ -35,7 +35,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 		i(196979),	-- Cliffside Wylderdrake: Curled Head Horns
 		i(197015),	-- Cliffside Wylderdrake: Dark Skin Variation
 		i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin
-		i(196982),	-- Cliffside Wylderdrake: Ears
+		i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 		i(196969),	-- Cliffside Wylderdrake: Finned Back (DM!)
 		i(197001),	-- Cliffside Wylderdrake: Finned Cheek
 		i(196984),	-- Cliffside Wylderdrake: Finned Jaw
@@ -48,7 +48,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 		i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
 		i(197011),	-- Cliffside Wylderdrake: Green Scales (DM!)
 		i(196975),	-- Cliffside Wylderdrake: Head Fin
-		i(196976),	-- Cliffside Wylderdrake: Head Mane
+		i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
 		i(196992),	-- Cliffside Wylderdrake: Heavy Horns (DM!)
 		i(196990),	-- Cliffside Wylderdrake: Helm
 		i(196998),	-- Cliffside Wylderdrake: Hook Horns (DM!)
@@ -161,13 +161,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 		i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor
 		i(197369),	-- Renewed Proto-Drake: Brown Hair
 		i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
-		i(197375),	-- Renewed Proto-Drake: Curled Horns
-		i(197380),	-- Renewed Proto-Drake: Curved Horns
+		i(197375),	-- Renewed Proto-Drake: Curled Horns (DM!)
+		i(197380),	-- Renewed Proto-Drake: Curved Horns (DM!)
 		i(197358),	-- Renewed Proto-Drake: Curved Spiked Brow
 		i(197366),	-- Renewed Proto-Drake: Dual Horned Crest
 		i(197376),	-- Renewed Proto-Drake: Ears (DM!)
 		i(197355),	-- Renewed Proto-Drake: Finned Back (DM!)
-		i(197365),	-- Renewed Proto-Drake: Finned Crest
+		i(197365),	-- Renewed Proto-Drake: Finned Crest (DM!)
 		i(197388),	-- Renewed Proto-Drake: Finned Jaw
 		i(197404),	-- Renewed Proto-Drake: Finned Tail
 		i(197408),	-- Renewed Proto-Drake: Finned Throat
@@ -175,7 +175,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 		i(197351),	-- Renewed Proto-Drake: Gold and Red Armor
 		i(197349),	-- Renewed Proto-Drake: Gold and White Armor
 		i(197381),	-- Renewed Proto-Drake: Gradiant Horns
-		i(197367),	-- Renewed Proto-Drake: Gray Hair
+		i(197367),	-- Renewed Proto-Drake: Gray Hair (DM!)
 		i(197371),	-- Renewed Proto-Drake: Green Hair
 		i(197389),	-- Renewed Proto-Drake: Green Scales
 		i(197356),	-- Renewed Proto-Drake: Hairy Back
@@ -184,14 +184,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 		i(197383),	-- Renewed Proto-Drake: Heavy Horns
 		i(197397),	-- Renewed Proto-Drake: Heavy Scales
 		i(197373),	-- Renewed Proto-Drake: Helm
-		i(197354),	-- Renewed Proto-Drake: Horned Back
+		i(197354),	-- Renewed Proto-Drake: Horned Back (DM!)
 		i(197385),	-- Renewed Proto-Drake: Horned Jaw
 		i(197379),	-- Renewed Proto-Drake: Impaler Horns
 		i(197363),	-- Renewed Proto-Drake: Maned Crest (DM!)
-		i(197405),	-- Renewed Proto-Drake: Maned Tail
+		i(197405),	-- Renewed Proto-Drake: Maned Tail (DM!)
 		i(197394),	-- Renewed Proto-Drake: Predator Pattern (DM!)
-		i(197372),	-- Renewed Proto-Drake: Purple Hair
-		i(197399),	-- Renewed Proto-Drake: Razor Snout
+		i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
+		i(197399),	-- Renewed Proto-Drake: Razor Snout (DM!)
 		i(197370),	-- Renewed Proto-Drake: Red Hair
 		i(197400),	-- Renewed Proto-Drake: Shark Snout
 		i(197364),	-- Renewed Proto-Drake: Short Spiked Crest
@@ -200,12 +200,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 		i(197396),	-- Renewed Proto-Drake: Skyterror Pattern
 		i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
 		i(197402),	-- Renewed Proto-Drake: Spiked Club Tail (DM!)
-		i(197361),	-- Renewed Proto-Drake: Spiked Crest
+		i(197361),	-- Renewed Proto-Drake: Spiked Crest (DM!)
 		i(197386),	-- Renewed Proto-Drake: Spiked Jaw (DM!)
-		i(197407),	-- Renewed Proto-Drake: Spiked Throat
+		i(197407),	-- Renewed Proto-Drake: Spiked Throat (DM!)
 		i(197360),	-- Renewed Proto-Drake: Spined Brow (DM!)
 		i(197362),	-- Renewed Proto-Drake: Spined Crest (DM!)
-		i(197406),	-- Renewed Proto-Drake: Spined Tail
+		i(197406),	-- Renewed Proto-Drake: Spined Tail (DM!)
 		i(197352),	-- Renewed Proto-Drake: Steel and Yellow Armor (DM!)
 		i(197378),	-- Renewed Proto-Drake: Subtle Horns
 		i(197374),	-- Renewed Proto-Drake: Swept Horns (DM!)
@@ -220,7 +220,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 		i(197612),	-- Windborne Velocidrake: Blue Scales (DM!)
 		i(197613),	-- Windborne Velocidrake: Bronze Scales (DM!)
 		i(197624),	-- Windborne Velocidrake: Club Tail
-		i(197602),	-- Windborne Velocidrake: Cluster Horns
+		i(197602),	-- Windborne Velocidrake: Cluster Horns (DM!)
 		i(197605),	-- Windborne Velocidrake: Curled Horns
 		i(197603),	-- Windborne Velocidrake: Curved Horns
 		i(197583),	-- Windborne Velocidrake: Exposed Finned Back

@@ -241,7 +241,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					["provider"] = { "n", 193359 },	-- Lord Andestrasz
 					["coord"] = { 75.2, 55.0, THE_WAKING_SHORES },
 					["g"] = {
-						i(197380),	-- Renewed Proto-Drake: Curved Horns
+						i(197380),	-- Renewed Proto-Drake: Curved Horns (DM!)
 					},
 				}),
 				q(68798, {	-- Meet the Trainers
@@ -270,7 +270,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					["provider"] = { "n", 194174 },	-- Amella
 					["coord"] = { 62.2, 70.5, THE_WAKING_SHORES },
 					["g"] = {
-						i(197406),	-- Renewed Proto-Drake: Spined Tail
+						i(197406),	-- Renewed Proto-Drake: Spined Tail (DM!)
 					},
 				}),
 				q(66931, {	-- Who Brought the Ruckus?
@@ -330,7 +330,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					["provider"] = { "n", 191895 },	-- Majordomo Selistra
 					["coord"] = { 53.7, 80.2, THE_WAKING_SHORES },
 					["g"] = {
-						i(197354),	-- Renewed Proto-Drake: Horned Back
+						i(197354),	-- Renewed Proto-Drake: Horned Back (DM!)
 						crit(3, {	-- In Defense of Life
 							["achievementID"] = 16334,	-- Waking Hope
 						}),
@@ -729,7 +729,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						["provider"] = { "n", 191011 },	-- Keshki
 						["coord"] = { 65.3, 63.7, THE_WAKING_SHORES },
 						["g"] = {
-							i(197399),	-- Renewed Proto-Drake: Razor Snout
+							i(197399),	-- Renewed Proto-Drake: Razor Snout (DM!)
 						},
 					}),
 					q(66879, {	-- Hornstrider Havoc
@@ -858,7 +858,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						["coord"] = { 37.4, 46.7, THE_WAKING_SHORES },
 					}),
 					q(65687, {	-- Punching Up
-						--["sourceQuests"] = {  },	-- Unknown
+						["sourceQuests"] = { 65782 },	-- Under Lock and Key
 						["provider"] = { "n", 185627 },	-- Ingot
 						["coord"] = { 39.4, 48.3, THE_WAKING_SHORES },
 						["g"] = {
@@ -991,7 +991,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						["provider"] = { "n", 194076 },	-- Veritistrasz
 						["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 						["g"] = {
-							i(197361),	-- Renewed Proto-Drake: Spiked Crest
+							i(197361),	-- Renewed Proto-Drake: Spiked Crest (DM!)
 							crit(4, {	-- Veritistrasz
 								["achievementID"] = 16406,	-- All Sides of the Story
 							}),
@@ -1074,7 +1074,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["provider"] = { "n", 188297 },	-- Caretaker Ventraz
 				["coord"] = { 59.1, 34.8, THE_WAKING_SHORES },
 				["g"] = {
-					i(197365),	-- Renewed Proto-Drake: Finned Crest
+					i(197365),	-- Renewed Proto-Drake: Finned Crest (DM!)
 					i(194441),	-- Bottled Water Elemental
 				},
 			}),
@@ -1111,7 +1111,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["coord"] = { 58.9, 52.2, THE_WAKING_SHORES },
 			}),
 			q(70789, {	-- Finely Carved Wing
-				--["sourceQuests"] = {  },	-- Unknown
+				--["sourceQuests"] = {  },
 				["provider"] = { "i", 199841 },	-- Finely Carved Wing
 				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
 				["g"] = {
@@ -1127,14 +1127,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					["coord"] = { 58.9, 76.6, THE_WAKING_SHORES },
 				}),
 				q(65994, {	-- Djaradin Djustice
-					["sourceQuests"] = {	-- TODO: MIGHT NOT BE TRUE
+					-- TODO: MIGHT NOT BE TRUE
+					["sourceQuests"] = {
 						65990,	-- Deliver Whelps From Evil
 						65989,	-- Invader Djaradin
 					},
 					["coord"] = { 67.6, 38.5, THE_WAKING_SHORES },
 				}),
 				q(70196, {	-- Pruning the Preserve
-					--["sourceQuests"] = {  },	-- Unknown
+					--["sourceQuests"] = {  },
 					["coord"] = { 44.4, 82.1, THE_WAKING_SHORES },
 				}),
 			}),

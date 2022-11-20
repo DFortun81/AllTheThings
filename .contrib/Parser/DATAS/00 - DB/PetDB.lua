@@ -1105,6 +1105,7 @@ pet(191886, 3274);	-- Alvin the Anvil
 pet(193852, 3269);	-- Azure Frillfish
 pet(193837, 3326);	-- Backswimmer Timbertooth
 pet(198726, 3380);	-- Black Skitterbug
+pet(193834, 3321);	-- Blackfeather Nester
 pet(199688, 3279);	-- Bronze Racing Enthusiast
 pet(199326, 3376);	-- Chip
 pet(199758, 3379);	-- Crimson Proto-Whelp
@@ -1191,7 +1192,6 @@ pet(0, 3313);	-- Grassland Stomper
 pet(193614, 3314);	-- Groundshaker
 pet(0, 3318);	-- Thunderfoot Calf
 pet(0, 3320);	-- Whitewhisker
-pet(193834, 3321);	-- Blackfeather Nester
 pet(0, 3322);	-- Woodbiter Piculet
 pet(193835, 3323);	-- Brightfeather
 pet(0, 3325);	-- Bakar Companion

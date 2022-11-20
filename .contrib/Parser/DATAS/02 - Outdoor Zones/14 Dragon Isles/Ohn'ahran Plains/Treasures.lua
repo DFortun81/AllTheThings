@@ -14,6 +14,33 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					i(200869),	-- Ohn Lite Branded Horn (TOY!)
 				},
 			}),
+			o(376581, {	-- Clan Chest
+				["coords"] = {
+					{ 35.3, 37.0, OHNAHRAN_PLAINS },
+					{ 36.1, 41.8, OHNAHRAN_PLAINS },
+					{ 32.7, 37.1, OHNAHRAN_PLAINS },
+					{ 34.8, 37.1, OHNAHRAN_PLAINS },
+					{ 35.3, 36.9, OHNAHRAN_PLAINS },
+					{ 36.0, 41.1, OHNAHRAN_PLAINS },
+					{ 36.1, 41.7, OHNAHRAN_PLAINS },
+				},
+				-- ["questID"] = ,
+				["g"] = {
+					i(201028),	-- Nokhudon Boots
+					i(201027),	-- Nokhudon Breeches
+					i(201031),	-- Nokhudon Cloak
+					i(201034),	-- Nokhudon Girdle
+					i(201030),	-- Nokhudon Grips
+					i(201025),	-- Nokhudon Harness
+					i(201029),	-- Nokhudon Hood
+					i(201024),	-- Nokhudon Mantle
+					i(201032),	-- Nokhudon Wraps
+					-- Weps
+					i(201384),	-- Centaur Tracker's Javelin
+					i(201385),	-- Nokhud Centaur Warstaff
+					i(201383),	-- Nokhud Stalker's Spear
+				},
+			}),
 			o(380991, {	-- Dirt Mound
 				["coord"] = { 70.6, 35.4, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
@@ -43,7 +70,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["coord"] = { 82.3, 73.4, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
 				["g"] = {
-					crit(5, {	-- Nokhud Warspear
+					crit(5, {	-- Gold Coin
 						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
 					}),
 					i(199338),	-- Copper Coin of the Isles
@@ -64,7 +91,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["coord"] = { 52.0, 58.3, OHNAHRAN_PLAINS },
 				["questID"] = 70400,
 				["g"] = {
-					crit(6, {	-- Nokhud Warspear
+					crit(6, {	-- Tuskarr Toy Boat
 						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
 					}),
 					i(200876),	-- Yennu's Toy Boat

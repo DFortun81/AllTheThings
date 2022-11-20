@@ -88,6 +88,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				}},
 			}),
 			ach(16336),	-- Azure Spanner
+			ach(16474, {	-- Do You Wanna Build a Snowman?
+				["coord"] = { 50.7, 55.4, THE_AZURE_SPAN },
+			}),
 			ach(16065, {	-- Dragon Glyphs: Azure Archive
 				["coord"] = { 40.4, 66.5, THE_AZURE_SPAN },
 			}),
@@ -121,19 +124,50 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			ach(16071, {	-- Dragon Glyphs: Zelthrak Outpost
 				["coord"] = { 52.9, 49.0, THE_AZURE_SPAN },
 			}),
+			ach(16460, {	-- Explore the Azure Span
+				crit(1),	-- Camp Antonidas
+				crit(2),	-- Azure Archives
+				crit(3),	-- Big Tree Hills
+				crit(4),	-- Brackenhide Hollow
+				crit(5),	-- Camp Nowhere
+				crit(6),	-- Cobalt Assembly
+				crit(7),	-- Iskaara
+				crit(8),	-- Snowhide Den
+				crit(9),	-- Theron's Watch
+				crit(10),	-- Three-Falls Lookout
+				crit(11),	-- Vakthros
+			}),
 			ach(16580),	-- Lend a Helping Span
+			ach(16638, {	-- Ley Line in the Span
+				crit(1, {	-- Azure Archives
+					-- ["cr"] = ,
+					["coord"] = { 43.8, 61.9, THE_AZURE_SPAN },
+				}),
+				crit(2, {	-- Ancient Outlook
+					-- ["cr"] = ,
+					["coord"] = { 26.3, 36.4, THE_AZURE_SPAN },
+				}),
+				crit(3, {	-- Rustpine Den
+					-- ["cr"] = ,
+					["coord"] = { 66.2, 51.3, THE_AZURE_SPAN },
+				}),
+				crit(4, {	-- Ruins of Karnthar
+					-- ["cr"] = ,
+					["coord"] = { 66.8, 59.6, THE_AZURE_SPAN },
+				}),
+				crit(5, {	-- Slyvern Plunge
+					-- ["cr"] = ,
+					["coord"] = { 65.4, 28.4, THE_AZURE_SPAN },
+				}),
+			}),
 			ach(15889, {	-- River Rapids Wrangler
 				i(198428),	-- Tuskarr Dinghy (TOY!)
 			}),
 			ach(16581),	-- Seeing Blue
 			ach(16428),	-- Sojourner of Azure Span
-
-			-- TODO: NOT DONE YET
 			ach(16300),	-- Treasures of The Azure Span
-			ach(16474),	-- Do You Wanna Build a Snowman?
-			ach(16460),	-- Explore the Azure Span
+			-- TODO: NOT DONE YET
 			ach(16678),	-- Adventurer of The Azure Span
-			ach(16638),	-- Ley Line in the Span
 		}),
 	})
 })));

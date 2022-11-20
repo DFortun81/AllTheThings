@@ -4,6 +4,113 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	m(OHNAHRAN_PLAINS, {
 		n(ACHIEVEMENTS, {
+			ach(16677, {	-- Adventurer of the Ohn'ahran Plains
+				crit(1, {
+					["_npcs"] = { 193165 },	-- Sparkspitter Vrak
+				}),
+				crit(2, {
+					["_npcs"] = { 193136 },	-- Scav Notail
+				}),
+				crit(3, {
+					["_npcs"] = { 193142 },	-- Enraged Sapphire
+				}),
+				crit(4, {
+					["_npcs"] = { 193188 },	-- Seeker Teryx
+				}),
+				crit(5, {
+					["_npcs"] = { 193209 },	-- Zenet Avis <The Hard Wind>
+				}),
+				crit(6, {
+					["_npcs"] = { 197009 },	-- Liskheszaera
+				}),
+				crit(7, {
+					["_npcs"] = { 189652 },	-- Deadwaker Ghendish
+				}),
+				crit(8, {
+					["_npcs"] = { 196010 },	-- Researcher Sneakwing <The Sundered Flame>
+				}),
+				crit(9, {
+					["_npcs"] = { 193173 },	-- Mikrin of the Raging Winds
+				}),
+				crit(10, {
+					["_npcs"] = { 193227 },	-- Ronsak the Decimator
+				}),
+				crit(11, {
+					["_npcs"] = { 193123 },	-- Steamgill
+				}),
+				crit(12, {
+					["_npcs"] = { 193212 },	-- Malsegan
+				}),
+				crit(13, {
+					["_npcs"] = { 193235 },	-- Oshigol
+				}),
+				crit(14, {
+					["_npcs"] = { 193170 },	-- Fulgurb
+				}),
+				crit(15, {
+					["_npcs"] = { 192045 },	-- Windseeker Avash
+				}),
+				crit(16, {
+					["_npcs"] = { 192020 },	-- Eaglemaster Niraak
+				}),
+				crit(17, {
+					["_npcs"] = { 193140 },	-- Zarizz
+				}),
+				crit(18, {
+					["_npcs"] = { 193215 },	-- Scaleseeker Mezeri
+				}),
+				crit(19, {
+					["_npcs"] = { 187559 },	-- Shade of Grief
+				}),
+				crit(20, {
+					["_npcs"] = { 187219 },	-- Nokhud Warmaster
+				}),
+				crit(21, {
+					["_npcs"] = { 187781 },	-- Hamett <Rockfang Matriarch>
+				}),
+				crit(22, {
+					["_npcs"] = { 188095 },	-- Hunter of the Deep
+				}),
+				crit(23, {
+					["_npcs"] = { 188124 },	-- Irontree
+				}),
+				crit(24, {
+					["_npcs"] = { 188451 },	-- Zerimek <The Darkened Cloud>
+				}),
+				crit(25, {
+					["_npcs"] = { 191842 },	-- Sulfurion
+				}),
+				crit(26, {
+					["_npcs"] = { 191950 },	-- Porta the Overgrown
+				}),
+				crit(27, {
+					["_npcs"] = { 195204 },	-- The Jolly Giant
+				}),
+				crit(28, {
+					["_npcs"] = { 192364 },	-- Windscale the Stormborn
+				}),
+				crit(29, {
+					["_npcs"] = { 192453 },	-- Vaniik the Stormtouched <Corrupted Child of Ohn'ahra>
+				}),
+				crit(30, {
+					["_npcs"] = { 192557 },	-- Quackers the Terrible
+				}),
+				crit(31, {
+					["_npcs"] = { 195186 },	-- Cinta the Forgotten
+				}),
+				crit(32, {
+					["_npcs"] = { 195223 },	-- Rustlily <Nimblewing Matriarch>
+				}),
+				crit(33, {
+					["_npcs"] = { 195409 },	-- Makhra the Ashtouched <Corrupted Child of Ohn'ahra>
+				}),
+				crit(34, {
+					["_npcs"] = { 196334 },	-- The Great Enla <Scourge of the Plains>
+				}),
+				crit(35, {
+					["_npcs"] = { 196350 },	-- Old Stormhide
+				}),
+			}),
 			ach(16061, {	-- Dragon Glyphs: Dragonsprings Summit
 				["coord"] = { 84.1, 77.4, OHNAHRAN_PLAINS },
 			}),
@@ -314,7 +421,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				}),
 			}),
 			-- TODO: NOT COMPLETED YET!
-			ach(16677),	-- Adventurer of the Ohn'ahran Plains
 			ach(16583),	-- Knew You Nokhud Do It!
 		}),
 	}),

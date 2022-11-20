@@ -1508,18 +1508,23 @@ i(198872, 376875);	-- Brown Scouting Ottuk
 i(201426, 376910);	-- Brown War Ottuk
 i(202086, 377071);	-- Crimson Gladiator's Drake
 i(201702, 394216);	-- Crimson Vorquin
+i(198821, 359408);	-- Divine Kiss of Ohn'ahra
 i(198808, 384963);	-- Guardian Vorquin
 i(198871, 359409);	-- Iskaara Trader's Ottuk
 i(198873, 376879);	-- Ivory Trader's Ottuk
+i(192799, 374247);	-- Lizi, Thunderspine Tramper
 i(198811, 385115);	-- Majestic Armored Vorquin
 i(201719, 394220);	-- Obsidian Vorquin
+i(194034, 368896);	-- Renewed Proto-Drake
 i(201704, 394218);	-- Sapphire Vorquin
 i(192784, 374155);	-- Shellack
 i(192775, 374098);	-- Stormhide Salamanther
 i(198810, 385134);	-- Swift Armored Vorquin
 i(192761, 374032);	-- Tamed Skitterfly
+i(194549, 368899);	-- Windborne Velocidrake
 i(200118, 376880);	-- Yellow Scouting Ottuk
 i(201425, 376913);	-- Yellow War Ottuk
+i(198825, 385266);	-- Zenet Hatchling
 
 
 -- UNCLEAR?
@@ -1534,10 +1539,7 @@ i(201837, 373859);	-- Loyal Magmammoth
 
 i(194106, 360954);	-- Highland Drake
 i(194705, 360954);	-- Highland Drake
-i(194034, 368896);	-- Renewed Proto-Drake
-i(194549, 368899);	-- Windborne Velocidrake
 i(194521, 368901);	-- Cliffside Wylderdrake
-i(0, 359408);	-- Divine Kiss of Ohn'ahra
 i(0, 359622);	-- Liberated Slyvern
 
 
@@ -1548,14 +1550,13 @@ i(0, 376873);	-- Splish-Splash
 
 i(192770, 349935);	-- Noble Elderhorn
 i(192777, 350219);	-- Magmashell
-i(198825, 385266);	-- Zenet Hatchling
+
 i(192800, 352926);	-- Skyskin Hornstrider
 i(0, 368893);	-- Winding Slitherdrake
 
 
 i(192779, 374138);	-- Scorchpath
 i(192791, 374196);	-- Plainswalker Bearer
-i(192799, 374247);	-- Lizi, Thunderspine Tramper
 i(192804, 374263);	-- Restless Hornstrider
 -- PvP
 

@@ -8,6 +8,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 				["description"] = "Behind Rock Wall.",
 				["coord"] = { 66.1, 51.2, THE_AZURE_SPAN },
 			}),
+			n(194458, {	-- Rokzul
+				["coord"] = { 56.2, 51.5, OHNAHRAN_PLAINS },
+				-- ["questID"] = ,
+				["g"] = {
+					i(200246),	-- Lost Delving Lamp
+				},
+			}),
 		}),
 		n(REWARDS, {
 			i(194085),	-- Proof of Might

@@ -7,7 +7,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			i(193874, {	-- Qalashi Plans
 				["cr"] = 186777,	-- Meatgrinder Sotok
 			}),
-			i(191904, {	-- A Key Element
+			i(191904, {	-- Orb of Primal Stone
 				["cr"] = 189795,	-- Unsettled Rubble
 			}),
 			i(191122, {	-- Fullsails Supply Chest Key

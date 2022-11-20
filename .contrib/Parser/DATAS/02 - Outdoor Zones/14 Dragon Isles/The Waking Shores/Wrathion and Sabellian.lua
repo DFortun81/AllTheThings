@@ -92,7 +92,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					["coord"] = { 29.3, 52.5, THE_WAKING_SHORES },
 					-- ["questID"] = ,
 					["g"] = {
-						i(197602),	-- Windborne Velocidrake: Cluster Horns
+						i(197602),	-- Windborne Velocidrake: Cluster Horns (DM!)
 					},
 				}),
 				n(186783, {	-- Cauldronbearer Blakor
@@ -100,8 +100,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					-- ["questID"] = ,
 					["g"] = {
 						i(201040),	-- Citadel Crusher's Gauntlets
-						i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail
-						i(197005),	-- Cliffside Wylderdrake: Horned Nose
+						i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail (DM!)
+						i(197005),	-- Cliffside Wylderdrake: Horned Nose (DM!)
 					},
 				}),
 				n(190985, {	-- Death's Shadow
