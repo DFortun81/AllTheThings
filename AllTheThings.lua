@@ -49,33 +49,33 @@ local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, 
 	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, string.format;
 local ATTAccountWideData;
 local ALLIANCE_ONLY = {
-	1,
-	3,
-	4,
-	7,
-	11,
-	22,
-	25,
-	29,
-	30,
-	32,
-	34,
-	37,
+	1,	-- Human
+	3,	-- Dwarf
+	4,	-- Night Elf
+	7,	-- Gnome
+	11,	-- Draenei
+	22,	-- Worgen
+	25,	-- Pandaren (A)
+	29,	-- Void Elf
+	30,	-- Lightforged Draenei
+	32,	-- Kul Tiran
+	34,	-- Dark Iron Dwarf
+	37,	-- Mechagnome
 	52,	-- Dracthyr (A)
 };
 local HORDE_ONLY = {
-	2,
-	5,
-	6,
-	8,
-	9,
-	10,
-	26,
-	27,
-	28,
-	31,
-	35,
-	36,
+	2,	-- Orc
+	5,	-- Undead
+	6,	-- Tauren
+	8,	-- Troll
+	9,	-- Goblin
+	10,	-- Blood Elf
+	26,	-- Pandaren (H)
+	27,	-- Nightborne
+	28,	-- Highmountain Tauren
+	31,	-- Zandalari Troll
+	35,	-- Vulpera
+	36,	-- Mag'har Orc
 	70,	-- Dracthyr (H)
 };
 
