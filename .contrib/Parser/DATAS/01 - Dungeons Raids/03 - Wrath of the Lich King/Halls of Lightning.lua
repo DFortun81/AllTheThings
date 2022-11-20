@@ -9,7 +9,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		-- #endif
 		["mapID"] = HALLS_OF_LIGHTNING,
 		["coord"] = { 38.0, 14.7, THE_STORM_PEAKS },
-		["maps"] = { 139 },
+		["maps"] = { HALLS_OF_LIGHTNING_FLOOR2 },
 		["lvl"] = lvlsquish(75, 75, 20),
 		["groups"] = {
 			n(ACHIEVEMENTS, {

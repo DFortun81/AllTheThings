@@ -5,7 +5,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(274, {	-- Gundrak
 		["mapID"] = GUNDRAK,
 		["coord"] = { 28.6, 86.9, ZULDRAK },
-		["maps"] = { 154 },
+		["maps"] = { GUNDRAK_FLOOR2 },
 		["lvl"] = lvlsquish(71, 71, 20),
 		["groups"] = {
 			n(ACHIEVEMENTS, {

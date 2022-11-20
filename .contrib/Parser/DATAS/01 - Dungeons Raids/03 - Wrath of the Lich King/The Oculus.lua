@@ -5,7 +5,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(282, {	-- The Oculus
 		["mapID"] = THE_OCULUS,
 		["coord"] = { 28.1, 28.1, BOREAN_TUNDRA },
-		["maps"] = { 143, 144, 145, 146 },
+		["maps"] = { THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
 		["lvl"] = lvlsquish(77, 77, 20),
 		["groups"] = {
 			n(ACHIEVEMENTS, {

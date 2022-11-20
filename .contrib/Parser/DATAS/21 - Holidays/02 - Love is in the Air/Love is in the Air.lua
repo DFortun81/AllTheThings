@@ -379,7 +379,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					},
 				}),
 				inst(285, {	-- Utgarde Keep
-					["maps"] = { UTGARDE_KEEP, 134, 135 },
+					["maps"] = { UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
 					["groups"] = {
 						d(1, {	-- Normal
 							n(23953, {	-- Prince Keleseth

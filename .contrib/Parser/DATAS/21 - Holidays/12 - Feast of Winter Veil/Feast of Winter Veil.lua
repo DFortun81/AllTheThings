@@ -404,7 +404,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					SHADOWFANG_KEEP_LEVEL7,
 					-- #endif
 					-- #if AFTER WRATH
-					THE_OCULUS, 143, 144, 145, 146,	-- The Oculus
+					THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5,
 					-- #else
 					BLACKROCK_SPIRE,
 					DIRE_MAUL,

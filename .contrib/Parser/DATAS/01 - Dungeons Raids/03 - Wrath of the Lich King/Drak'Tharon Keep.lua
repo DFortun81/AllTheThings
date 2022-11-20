@@ -5,7 +5,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(273, {	-- Drak'Tharon Keep
 		["mapID"] = DRAKTHARON_KEEP,
 		["coord"] = { 28.6, 86.9, ZULDRAK },
-		["maps"] = { 161 },
+		["maps"] = { DRAKTHARON_KEEP_FLOOR2 },
 		["lvl"] = lvlsquish(69, 69, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {

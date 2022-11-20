@@ -5,7 +5,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(285, {	-- Utgarde Keep
 		["mapID"] = UTGARDE_KEEP,
 		["coord"] = { 58.2, 48.9, HOWLING_FJORD },
-		["maps"] = { 134, 135 },
+		["maps"] = { UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
 		["lvl"] = lvlsquish(67, 67, 10),
 		["groups"] = {
 			n(ACHIEVEMENTS, {

@@ -4747,7 +4747,7 @@ root("Zones", {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["timeline"] = { "removed 4.0.1" },
-						["maps"] = { AZJOL_NERUB },
+						["maps"] = { AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3 },
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 The Idle Crown of Anub'arak
@@ -4771,7 +4771,7 @@ root("Zones", {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["timeline"] = { "removed 4.0.1" },
-						["maps"] = { GUNDRAK },
+						["maps"] = { GUNDRAK, GUNDRAK_FLOOR2 },
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Mojo Remnant of Akali
@@ -4795,7 +4795,7 @@ root("Zones", {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["timeline"] = { "removed 4.0.1" },
-						["maps"] = { UTGARDE_KEEP },
+						["maps"] = { UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Axe of the Plunderer
@@ -4819,7 +4819,7 @@ root("Zones", {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["timeline"] = { "removed 4.0.1" },
-						["maps"] = { UTGARDE_PINNACLE },
+						["maps"] = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Locket of the Deceased Queen
@@ -4831,7 +4831,7 @@ root("Zones", {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["timeline"] = { "removed 4.0.1" },
-						["maps"] = { THE_OCULUS },
+						["maps"] = { THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Ley Line Tuner
@@ -4843,7 +4843,7 @@ root("Zones", {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["timeline"] = { "removed 4.0.1" },
-						["maps"] = { HALLS_OF_LIGHTNING },
+						["maps"] = { HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2 },
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Celestial Ruby Ring
@@ -4855,7 +4855,7 @@ root("Zones", {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["timeline"] = { "removed 4.0.1" },
-						["maps"] = { THE_CULLING_OF_STRATHOLME },
+						["maps"] = { THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2 },
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Artifact from the Nathrezim Homeworld
@@ -4891,7 +4891,7 @@ root("Zones", {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["timeline"] = { "removed 4.0.1" },
-						["maps"] = { DRAKTHARON_KEEP },
+						["maps"] = { DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2 },
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Prophet's Enchanted Tiki
@@ -5125,7 +5125,7 @@ root("Zones", {
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
 						["timeline"] = { "removed 4.0.1" },
-						["maps"] = { THE_OCULUS },
+						["maps"] = { THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
 						["isDaily"] = true,
 						["lvl"] = 78,
 						["groups"] = {
@@ -5153,7 +5153,7 @@ root("Zones", {
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
 						["timeline"] = { "removed 4.0.1" },
-						["maps"] = { THE_CULLING_OF_STRATHOLME },
+						["maps"] = { THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2 },
 						["isDaily"] = true,
 						["lvl"] = 78,
 						["groups"] = {
@@ -5181,7 +5181,7 @@ root("Zones", {
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
 						["timeline"] = { "removed 4.0.1" },
-						["maps"] = { HALLS_OF_LIGHTNING },
+						["maps"] = { HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2 },
 						["isDaily"] = true,
 						["lvl"] = 78,
 						["groups"] = {
@@ -5209,7 +5209,7 @@ root("Zones", {
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
 						["timeline"] = { "removed 4.0.1" },
-						["maps"] = { UTGARDE_PINNACLE },
+						["maps"] = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
 						["isDaily"] = true,
 						["lvl"] = 78,
 						["groups"] = {

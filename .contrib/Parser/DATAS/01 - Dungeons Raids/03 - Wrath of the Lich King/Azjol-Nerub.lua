@@ -5,7 +5,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(272, {	-- Azjol-Nerub
 		["mapID"] = AZJOL_NERUB,
 		["coord"] = { 26.0, 50.6, DRAGONBLIGHT },
-		["maps"] = { 158, 159 },
+		["maps"] = { AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3 },
 		["lvl"] = lvlsquish(67, 67, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {

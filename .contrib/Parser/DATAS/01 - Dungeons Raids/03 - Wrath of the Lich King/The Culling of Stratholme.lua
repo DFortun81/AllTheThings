@@ -5,7 +5,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(279, {	-- The Culling of Stratholme
 		["mapID"] = THE_CULLING_OF_STRATHOLME,
 		["coord"] = { 56.9, 82.4, CAVERNS_OF_TIME },
-		["maps"] = { 131 },
+		["maps"] = { THE_CULLING_OF_STRATHOLME_FLOOR2 },
 		["lvl"] = lvlsquish(75, 75, 25),
 		["groups"] = {
 			n(ACHIEVEMENTS, {

@@ -5,7 +5,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(286, {	-- Utgarde Pinnacle
 		["mapID"] = UTGARDE_PINNACLE,
 		["coord"] = { 57, 47, HOWLING_FJORD },
-		["maps"] = { 137 },
+		["maps"] = { UTGARDE_PINNACLE_FLOOR2 },
 		["lvl"] = lvlsquish(75, 75, 20),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
