@@ -11,18 +11,16 @@ _.Zones =
 						["coord"] = { 45.0, 23.2, 201 },
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = {
-							{ "select", "headerID", -573 },	-- Scroll of Resurrection
+							{ "select", "npcID", 71304 },	-- Iris Moondreamer <Quartermaster> },
 							{ "pop" },						-- Pop the Headers
-							{ "where", "key", "classID" },	-- Only grab class headers
 						},
 					}),
 					n(41618, {	-- Erunak Stonespeaker <The Earthen Ring>
 						["coord"] = { 38.8, 31.6, 201 },
 						["races"] = HORDE_ONLY,
 						["sym"] = {
-							{ "select", "headerID", -573 },	-- Scroll of Resurrection
+							{ "select", "npcID", 71304 },	-- Iris Moondreamer <Quartermaster> },
 							{ "pop" },						-- Pop the Headers
-							{ "where", "key", "classID" },	-- Only grab class headers
 						},
 					}),
 				}),

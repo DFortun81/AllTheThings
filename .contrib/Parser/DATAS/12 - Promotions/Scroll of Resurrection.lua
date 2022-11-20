@@ -3,15 +3,7 @@
 -----------------------------------------------------
 root("Promotions", n(-573, {	-- Scroll of Resurrection
 	["description"] = "The following item sets were implemented as boosted character rewards for recipients of the Scroll of Resurrection.\n\nThey were later added to vendors in Mount Hyjal and Vash'jir once the Scroll of Resurrection Service was retired.",
-	["timeline"] = { "added 4.3.0.15005" },
-	-- #IF AFTER 5.3
-	-- this allows right-clicking the group to show the vendors and allow plotting coords/etc.
-	["crs"] = {
-		36915,	-- Erunak Stonespeaker <The Earthen Ring> (A)
-		41618,	-- Erunak Stonespeaker <The Earthen Ring> (H)
-		71304,	-- Iris Moondreamer <Quartermaster>
-	},
-	-- #ENDIF
+	["timeline"] = { "added 4.3.0.15005", "removed 5.3.0.16781" },
 	["groups"] = {
 		cl(DEATHKNIGHT, {
 			i(72994),	-- Ebonsoul Blade
