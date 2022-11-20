@@ -734,7 +734,7 @@ for key,value in pairs({
 		[-519] = "Игровые события",									-- World Events
 		[-520] = "Препатч",											-- Expansion Pre-Launch
 		[-522] = "Падение Залазана",								-- Zalazane's Fall
-		[-523] = "Бейство элементалей",								-- Elemental Unrest
+		[-523] = "Буйство элементалей",								-- Elemental Unrest
 		[-525] = "Warlords of Draenor: Вторжение Железной Орды",	-- Warlords of Draenor: Iron Horde Incursion
 		[-526] = "Legion: Вторжение Легиона",						-- Legion: Legion Invasion
 		[-527] = "Battle for Azeroth: Война Шипов",					-- Battle for Azeroth: War of the Thorns
