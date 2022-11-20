@@ -4299,6 +4299,11 @@ root("Zones", {
 						},
 					}),
 				}),
+				prof(COOKING, {
+					i(43143, {	-- Wild Mustard
+						["provider"] = { "o", 192827 },	-- Wild Mustard
+					}),
+				}),
 				n(FACTIONS, {
 					faction(1090, {	-- Kirin Tor
 						["icon"] = "Interface\\Icons\\spell_holy_mindsooth",
