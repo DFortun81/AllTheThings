@@ -61,6 +61,7 @@ local ALLIANCE_ONLY = {
 	32,
 	34,
 	37,
+	52,	-- Dracthyr (A)
 };
 local HORDE_ONLY = {
 	2,
@@ -75,6 +76,7 @@ local HORDE_ONLY = {
 	31,
 	35,
 	36,
+	70,	-- Dracthyr (H)
 };
 
 -- Print/Debug/Testing Functions
@@ -23230,7 +23232,7 @@ app.Startup = function()
 	app.Class = class;
 	app.ClassIndex = classID;
 	app.Level = UnitLevel("player");
-	local raceIndex = app.RaceDB[race];
+	local raceIndex = app.RaceDB[race] or raceID;
 	if type(raceIndex) == "table" then
 		local factionGroup = UnitFactionGroup("player");
 		raceIndex = raceIndex[factionGroup];

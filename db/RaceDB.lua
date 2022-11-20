@@ -22,6 +22,10 @@ select(2, ...).RaceDB = {
 		["Alliance"] = 25,
 		["Horde"] = 26,
 	},
+	["Dracthyr"] = { -- NOTE: Faction Group dictates this.
+		["Alliance"] = 52,
+		["Horde"] = 70,
+	},
 	["Nightborne"] = 27,
 	["Highmountain Tauren"] = 28,
 	["HighmountainTauren"] = 28,
