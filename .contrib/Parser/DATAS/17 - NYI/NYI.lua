@@ -507,7 +507,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(190340),	-- Plainshunter's Supplies
 			i(191203),	-- Dragonscale Expedition Supplies
 
-			i(190954),	-- Serevite Lockbox
 			i(191296),	-- Enchanted Lockbox
 			-- Treasure Hunt?
 			i(191192),	-- Assorted Parts
