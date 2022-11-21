@@ -398,7 +398,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					i(190452),	-- Primal Flux
 					i(197753),	-- Thaldraszian Cocoa Powder
 					i(197750),	-- Three-Cheese Blend
-					i(188152),	-- Gateway Control Shard
 				},
 			}),
 			n(187783, {	-- Pakak
