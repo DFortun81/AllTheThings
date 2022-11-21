@@ -22404,9 +22404,22 @@ local TooltipTypes = {
 	[Enum.TooltipDataType.Object] = "objectID",
 	[Enum.TooltipDataType.InstanceLock] = "instanceID",
 };
+-- We need to whitelist the actual in-game tooltips that ATT is allowed to hook
+-- because all kinds of addons create their own tooltips and use them to do weird stuff behind the scenes
+-- and there's no reason for ATT to care when it's not even visible to a player
+local HookableTooltips = {
+	["GameTooltip"]=1,
+	["GameTooltipTooltip"]=1,
+	["EmbeddedItemTooltipTooltip"]=1,
+	["ItemRefTooltip"]=1,
+	["ShoppingTooltip1"]=1,
+	["ShoppingTooltip2"]=1,
+	-- other addons which create user-visible tooltips that ATT should attach into
+	["SilverDragonLootTooltip"]=1,
+};
 
 local function ClearTooltip(self)
-	-- app.PrintDebug("Clear Tooltip");
+	-- app.PrintDebug("Clear Tooltip",self:GetName());
 	self.AllTheThingsProcessing = nil;
 	self.AttachComplete = nil;
 	self.MiscFieldsComplete = nil;
@@ -22414,7 +22427,7 @@ local function ClearTooltip(self)
 end
 local function AttachTooltip(self, ttdata)
 
-	if not CanAttachTooltips() then return; end
+	if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
 
 	-- Does the tooltip have an owner?
 	local owner = self:GetOwner();
@@ -22517,7 +22530,7 @@ local function AttachTooltip(self, ttdata)
 		end
 	end
 
-	-- app.PrintDebug("TooltipContent",link, target, spellID, id)
+	-- app.PrintDebug("TooltipContent",link,target,spellID,id,ttType,ttId)
 
 	--[[--]
 	-- Debug all of the available fields on the tooltip.
@@ -22530,12 +22543,19 @@ local function AttachTooltip(self, ttdata)
 
 	-- Does this tooltip have an OnClear attached for ATT since it can handle content which ATT will attach to?
 	if self.AllTheThingsProcessing and not self.AllTheThingsOnTooltipClearedHook then
-		-- app.PrintDebug("Hooking ClearTooltip",self:GetName())
-		pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip)
-		-- if pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip) then
-		-- 	app.PrintDebug("Hooked")
-		-- end
-		self.AllTheThingsOnTooltipClearedHook = true;
+		local tooltipName = self:GetName();
+		if tooltipName and HookableTooltips[tooltipName] then
+			-- app.PrintDebug("Hooking ClearTooltip",tooltipName)
+			pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip)
+			-- if pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip) then
+			-- 	app.PrintDebug("Hooked")
+			-- end
+			self.AllTheThingsOnTooltipClearedHook = true;
+		else
+			-- app.PrintDebug("Ignoring Tooltip",tooltipName)
+			-- otherwise mark them as ignored so ATT doesn't process them
+			self.AllTheThingsIgnored = true;
+		end
 	end
 
 	-- Does the tooltip have a target?
@@ -22615,7 +22635,7 @@ local function AttachTooltip(self, ttdata)
 			end
 		end
 		if knownSearchField and ttId then
-			app.PrintDebug("TT Search",knownSearchField,id)
+			-- app.PrintDebug("TT Search",knownSearchField,id)
 			AttachTooltipSearchResults(self, 1, knownSearchField..":"..ttId, SearchForField, knownSearchField, tonumber(ttId));
 			return true;
 		end
