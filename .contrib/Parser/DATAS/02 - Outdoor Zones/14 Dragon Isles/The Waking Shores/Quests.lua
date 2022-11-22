@@ -1078,6 +1078,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					i(194441),	-- Bottled Water Elemental
 				},
 			}),
+			q(70042, {	-- Opportunities Abound
+				["sourceQuests"] = {
+					70125,	-- Where is Wrathion? (A)
+					69910,	-- Where is Wrathion? (H)
+				},
+				["provider"] = { "n", 193838 },	-- Vish the Sneak
+				["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
+				["sourceQuestNumRequired"] = 1,
+				["classes"] = { ROGUE },
+			}),
 			q(70179, {	-- A Two for One Deal
 				["sourceQuests"] = { 66001 },	-- A Last Hope, -- TODO: Wasnt available when picking up 65997, but available before 66001....
 				["provider"] = { "n", 194525 },	-- Apprentice Caretaker Zefren
