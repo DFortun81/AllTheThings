@@ -276,6 +276,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 					r(389410),	-- Waking Stats
 				},
 			}),
+			q(70360, {	-- Dragon Isles Enchanting
+				--["sourceQuests"] = { },	--
+				["provider"] = { "n", 192055 },	-- Veeno
+				["coord"] = { 75.8, 33.2, THE_WAKING_SHORES },
+			}),
 		}),
 		prof(ENGINEERING, {
 			filter(RECIPES, {
