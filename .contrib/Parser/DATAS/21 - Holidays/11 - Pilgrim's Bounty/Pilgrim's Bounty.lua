@@ -128,7 +128,12 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 			ach(3580, {	-- Pilgrim's Peril (A)
 				["timeline"] = { "added 3.2.2.10505" },
 				["sym"] = {{ "achievement_criteria" }},
-				["maps"] = ALLIANCE_PILGRIM_MAPS,
+				["maps"] = HORDE_PILGRIM_MAPS,
+				["cost"] = {
+					{ "i", 46800, 1 },	-- Pilgrim's Attire
+					{ "i", 44785, 1 },	-- Pilgrim's Dress
+					{ "i", 46824, 1 },	-- Pilgrim's Robe
+				},
 				["races"] = ALLIANCE_ONLY,
 				--[[
 				["groups"] = {
@@ -142,7 +147,12 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 			ach(3581, {	-- Pilgrim's Peril (H)
 				["timeline"] = { "added 3.2.2.10505" },
 				["sym"] = {{ "achievement_criteria" }},
-				["maps"] = HORDE_PILGRIM_MAPS,
+				["maps"] = ALLIANCE_PILGRIM_MAPS,
+				["cost"] = {
+					{ "i", 46800, 1 },	-- Pilgrim's Attire
+					{ "i", 44785, 1 },	-- Pilgrim's Dress
+					{ "i", 46824, 1 },	-- Pilgrim's Robe
+				},
 				["races"] = HORDE_ONLY,
 				--[[
 				["groups"] = {
