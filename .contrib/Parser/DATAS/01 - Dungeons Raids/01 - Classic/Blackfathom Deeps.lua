@@ -181,7 +181,11 @@ root("Instances", tier(CLASSIC_TIER, {
 				q(1198, {	-- In Search of Thaelrid
 					["qg"] = 4786,	-- Dawnwatcher Shaedlass <The Argent Dawn>
 					["coord"] = { 28.7, 52.1, DARNASSUS },
+					-- #if AFTER TBC
+					["races"] = ALLIANCE_ONLY,
+					-- #else
 					["description"] = "This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["isBreadcrumb"] = true,
 					["lvl"] = 18,
