@@ -797,7 +797,6 @@ for key,value in pairs({
 		--TODO: [-854] = "DPS",										-- DPS
 		--TODO: [-855] = "Healers",									-- Healers
 		--TODO: [-856] = "Tanks",									-- Tanks
-		--TODO: [-857] = "Mythic+",									-- Mythic+
 		--TODO: [-858] = "Rank 1",									-- Rank 1
 		--TODO: [-859] = "Rank 2",									-- Rank 2
 		--TODO: [-860] = "Rank 3",									-- Rank 3

@@ -816,7 +816,6 @@ for key,value in pairs({
 		[-854] = "输出",												-- DPS
 		[-855] = "治疗",												-- Healers
 		[-856] = "坦克",												-- Tanks
-		[-857] = "史诗钥石",											-- Mythic+
 	-- Shadowlands Header
 		[-903] = "区域奖励",											-- Zone Rewards
 		[-907] = "死掉的布兰契",										-- Dead Blanchy

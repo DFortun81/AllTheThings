@@ -10,10 +10,6 @@
 --				This script is called directly after the Core.lua file. 	  --
 --------------------------------------------------------------------------------
 
--- Globals that Blizzard broke/removed in 10.0
-CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER = "Class Trial";
-CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "Character Boost";
-
 local name, app = ...;
 app.L = {
 	["TAB_SPACING"] = -10;	-- This is to control spacing between tab names in Settings
@@ -1898,7 +1894,7 @@ app.L = {
 		[-854] = "DPS",															-- DPS
 		[-855] = "Healers",														-- Healers
 		[-856] = "Tanks",														-- Tanks
-		[-857] = "Mythic+",														-- Mythic+
+		[-857] = PLAYER_DIFFICULTY_MYTHIC_PLUS,									-- Mythic+
 		[-858] = string.format(AZERITE_ESSENCE_RANK, 1),						-- Rank 1
 		[-859] = string.format(AZERITE_ESSENCE_RANK, 2),						-- Rank 2
 		[-860] = string.format(AZERITE_ESSENCE_RANK, 3),						-- Rank 3
