@@ -1021,14 +1021,14 @@ for key, value in pairs({
 	[19023] = "|cFFFFFFFF第7步:|r 第2351页",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "隐蔽的神龛",	-- Hidden Shrine
 	[19030] = "一堆泥土",	-- Mound of Dirt
-	[19869] = "火箭车碎片",	-- 	--TODO: This was taken from wotlk Wowhead
+	[19869] = "火箭车碎片",	-- [Deprecated for 4.x]Rocket Car Rubble	--TODO: This was taken from wotlk Wowhead
 	[19877] = "维琳德的柜子",	-- Velinde's Locker
 	[20359] = "奥妮克希亚的蛋",	-- Egg of Onyxia
 	[20691] = "考兹尔的箱子",	-- Cozzle's Footlocker
 	[20725] = "巨龙的遗产",	-- The Legacy of the Aspects	--TODO: This was taken from wotlk Wowhead
 	[20727] = "基兹莫瑞货箱",	-- Gizmorium Shipping Crate
 	[20805] = "瑞兹尔的计划",	-- Rizzle's Unguarded Plans	--TODO: This was taken from wotlk Wowhead
-	[20807] = "古代火盆",	-- 	--TODO: This was taken from wotlk Wowhead
+	[20807] = "古代火盆",	-- [Deprecated for 4.x]Ancient Brazier	--TODO: This was taken from wotlk Wowhead
 	[20985] = "松软的泥土",	-- Loose Dirt
 	[20992] = "黑色盾牌",	-- Black Shield
 	[21015] = "蹄印",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead

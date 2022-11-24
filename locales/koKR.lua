@@ -1008,14 +1008,14 @@ for key,value in pairs({
 	[19023] = "|cFFFFFFFFStep 7:|r 2351쪽",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "숨겨진 제단",	-- Hidden Shrine
 	[19030] = "흙무더기",	-- Mound of Dirt
-	[19869] = "로켓 자동차 파편",	-- 	--TODO: This was taken from wotlk Wowhead
+	[19869] = "로켓 자동차 파편",	-- [Deprecated for 4.x]Rocket Car Rubble	--TODO: This was taken from wotlk Wowhead
 	[19877] = "벨린데의 사물함",	-- Velinde's Locker
 	[20359] = "오닉시아의 알",	-- Egg of Onyxia
 	[20691] = "코즐의 사물함",	-- Cozzle's Footlocker
 	[20725] = "고대의 유산",	-- The Legacy of the Aspects
 	[20727] = "기즈모리움 화물 상자",	-- Gizmorium Shipping Crate
 	[20805] = "아무도 지키지 않는 리즐의 설계도",	-- Rizzle's Unguarded Plans	--TODO: This was taken from wotlk Wowhead
-	[20807] = "고대 화톳불",	-- 	--TODO: This was taken from wotlk Wowhead
+	[20807] = "고대 화톳불",	-- [Deprecated for 4.x]Ancient Brazier	--TODO: This was taken from wotlk Wowhead
 	[20985] = "푸석푸석한 흙더미",	-- Loose Dirt
 	[20992] = "검은 방패",	-- Black Shield
 	[21015] = "발굽 자국",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
@@ -1061,7 +1061,7 @@ for key,value in pairs({
 	[148504] = "눈에 띄는 묘비",	-- A Conspicuous Gravestone
 	[149036] = "마본의 궤짝",	-- Marvon's Chest
 	[149502] = "검은용군단의 보물",	-- Hoard of the Black Dragonflight	--TODO: This was taken from wotlk Wowhead
-	[151286] = "나이트 엘프 소환의 고서",	-- Kaldorei Tome of Summoning	--TODO: This was taken from wotlk Wowhead
+	[151286] = "칼도레이 소환의 고서",	-- Kaldorei Tome of Summoning	--TODO: This was taken from wotlk Wowhead
 	[152095] = "달봉우리 백합",	-- Moonpetal Lily	--TODO: This was taken from wotlk Wowhead
 	[160836] = "유물 금고",	-- Relic Coffer
 	[161495] = "비밀 금고",	-- Secret Safe
@@ -1366,7 +1366,7 @@ for key,value in pairs({
 	[192833] = "브라이든브래드의 물건 상자",	-- Bridenbrad's Possessions
 	[193051] = "네루비안 스컬지 알",	-- Nerubian Scourge Egg
 	[193195] = "고동치는 수정",	-- Pulsing Crystal
-	--TODO: [193400] = "Saronite Bomb Stack",	-- Saronite Bomb Stack
+	[193400] = "사로나이트 폭탄 더미",	-- Saronite Bomb Stack	--TODO: This was taken from wotlk Wowhead
 	[194032] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[194033] = "호드 화톳불",	-- Horde Bonfire
 	[194034] = "호드 화톳불",	-- Horde Bonfire

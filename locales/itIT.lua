@@ -1001,14 +1001,14 @@ for key,value in pairs({
 	[19023] = "|cFFFFFFFFStep 7:|r Pagina 2.351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "Santuario Nascosto",	-- Hidden Shrine
 	[19030] = "Mucchio di Terra",	-- Mound of Dirt
-	[19869] = "Rocket Car Rubble",	-- 	--TODO: This was taken from wotlk Wowhead
+	[19869] = "Rocket Car Rubble",	-- [Deprecated for 4.x]Rocket Car Rubble	--TODO: This was taken from wotlk Wowhead
 	[19877] = "Baule di Velinde",	-- Velinde's Locker
 	[20359] = "Uovo di Onyxia",	-- Egg of Onyxia
 	[20691] = "Scrigno di Chiavearmata",	-- Cozzle's Footlocker
 	[20725] = "Eredità degli Aspetti",	-- The Legacy of the Aspects
 	[20727] = "Cassa per Spedizioni di Gizmorium",	-- Gizmorium Shipping Crate
 	[20805] = "Rizzle's Unguarded Plans",	-- Rizzle's Unguarded Plans	--TODO: This was taken from wotlk Wowhead
-	[20807] = "Ancient Brazier",	-- 	--TODO: This was taken from wotlk Wowhead
+	[20807] = "Ancient Brazier",	-- [Deprecated for 4.x]Ancient Brazier	--TODO: This was taken from wotlk Wowhead
 	[20985] = "Terra Smossa",	-- Loose Dirt
 	[20992] = "Scudo Nero",	-- Black Shield
 	[21015] = "Hoofprints",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
