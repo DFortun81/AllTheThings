@@ -1008,14 +1008,14 @@ for key,value in pairs({
 	[19023] = "|cFFFFFFFFStep 7:|r Página 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "Santuário Escondido",	-- Hidden Shrine
 	[19030] = "Monturo de Terra",	-- Mound of Dirt
-	[19869] = "Destroços de Carro-foguete",	-- 	--TODO: This was taken from wotlk Wowhead
+	[19869] = "Destroços de Carro-foguete",	-- [Deprecated for 4.x]Rocket Car Rubble	--TODO: This was taken from wotlk Wowhead
 	[19877] = "Armário de Velinde",	-- Velinde's Locker
 	[20359] = "Ovo de Onyxia",	-- Egg of Onyxia
 	[20691] = "Maleta do Cosella",	-- Cozzle's Footlocker
 	[20725] = "O Legado dos Aspectos",	-- The Legacy of the Aspects
 	[20727] = "Caixote de Embarque da Pinacotreca",	-- Gizmorium Shipping Crate
 	[20805] = "Projeto Desprotegido do Rebu",	-- Rizzle's Unguarded Plans	--TODO: This was taken from wotlk Wowhead
-	[20807] = "Braseiro Antigo",	-- 	--TODO: This was taken from wotlk Wowhead
+	[20807] = "Braseiro Antigo",	-- [Deprecated for 4.x]Ancient Brazier	--TODO: This was taken from wotlk Wowhead
 	[20985] = "Terra Solta",	-- Loose Dirt
 	[20992] = "Escudo Negro",	-- Black Shield
 	[21015] = "Pegadas de casco",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
