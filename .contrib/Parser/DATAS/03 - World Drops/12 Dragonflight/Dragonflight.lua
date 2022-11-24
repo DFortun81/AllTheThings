@@ -2,11 +2,10 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
-	i(199018),	-- Bejeweled Stonewatcher's Pendant
-	i(199005),	-- Horn Strider's Bracers (Weird?)
 	i(201470),	-- Story of a Memorable Victory
 	n(ARMOR, {
 		i(199019),	-- Aerodynamic Cape
+		i(199018),	-- Bejeweled Stonewatcher's Pendant
 		i(199017),	-- Claw-Marked Signet
 		i(198990),	-- Drakewatcher's Cord
 		i(198987),	-- Drakewatcher's Handwraps
@@ -17,6 +16,7 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, 
 		i(198985),	-- Drakewatcher's Vestment
 		i(198991),	-- Drakewatcher's Wristwraps
 		i(198999),	-- Hornstrider's Boots
+		i(199005),	-- Hornstrider's Bracers
 		i(198998),	-- Hornstrider's Chainmail
 		i(199004),	-- Hornstrider's Cinch
 		i(199000),	-- Hornstrider's Gloves
