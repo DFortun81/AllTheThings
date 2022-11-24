@@ -111,10 +111,22 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 
 
 
-
-
-
-
+			-- TODO: These need some sorting
+			q(72406, {	-- Orientation: Valdrakken
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+			}),
+			q(72671, {	-- Renown Supplies
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack (contains Dragon Isles Supplies)
+				},
+			}),
+			q(72585, {	-- Open Orientation
+				["provider"] = { "n", 196499 },	-- Therazal
+				["coord"] = { 50.2, 55.9, VALDRAKKEN },
+			}),
 
 
 
