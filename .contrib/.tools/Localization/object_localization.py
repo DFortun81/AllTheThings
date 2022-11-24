@@ -76,7 +76,8 @@ async def get_localized_obj_name_flavor(
                 return ""
             text = heading.text
             # not localized names look like [en_obj_name] on Wowhead
-            if text.startswith("["):
+            # at the same time keep enUS names because sometimes deprecated names start with brackets
+            if text.startswith("[") and lang_code != LangCode.ENGLISH:
                 logging.info(f"No localization for {obj_id}: {text}")
                 return ""
             if '"' in text:
