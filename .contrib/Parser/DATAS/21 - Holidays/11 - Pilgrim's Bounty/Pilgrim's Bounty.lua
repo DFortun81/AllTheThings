@@ -38,6 +38,7 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
 					{"meta_achievement",
+						-- #if AFTER MOP
 						3579,				-- "FOOD FIGHT!"
 						3576,				-- Now We're Cookin' (A)
 						3577,				-- Now We're Cookin' (H)
@@ -51,9 +52,23 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 						3582,				-- Terokkar Turkey Time
 						3578,				-- The Turkinator
 						3559,				-- Turkey Lurkey
+						-- #else
+						3579,				-- "FOOD FIGHT!"
+						3576,				-- Now We're Cookin' (A)
+						3556,				-- Pilgrim's Paunch (A)
+						3580,				-- Pilgrim's Peril (A)
+						3596,				-- Pilgrim's Progress (A)
+						3558,				-- Sharing is Caring
+						3582,				-- Terokkar Turkey Time
+						3578,				-- The Turkinator
+						3559,				-- Turkey Lurkey
+						-- #endif
 					},
 				},
 				["timeline"] = { "added 3.2.2.10505" },
+				-- #if BEFORE MOP
+				["races"] = ALLIANCE_ONLY,
+				-- #endif
 				["groups"] = {
 					title(133, {	-- <Name> the Pilgrim [NOTE: WoWHead's ID is incorrect, don't look at this and freak out like I did. - Crieve]
 						["timeline"] = { "added 3.2.2.10505" },
@@ -63,6 +78,34 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 					}),
 				},
 			}),
+			-- #if BEFORE MOP
+			ach(3656, {	-- Pilgrim
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["sym"] = {
+					{"meta_achievement",
+						3579,				-- "FOOD FIGHT!"
+						3577,				-- Now We're Cookin' (H)
+						3557,				-- Pilgrim's Paunch (H)
+						3581,				-- Pilgrim's Peril (H)
+						3597,				-- Pilgrim's Progress (H)
+						3558,				-- Sharing is Caring
+						3582,				-- Terokkar Turkey Time
+						3578,				-- The Turkinator
+						3559,				-- Turkey Lurkey
+					},
+				},
+				["timeline"] = { "added 3.2.2.10505", "deleted 5.0.1" },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					title(133, {	-- <Name> the Pilgrim [NOTE: WoWHead's ID is incorrect, don't look at this and freak out like I did. - Crieve]
+						["timeline"] = { "added 3.2.2.10505" },
+					}),
+					i(44810, {	-- Turkey Cage (PET!)
+						["timeline"] = { "added 3.2.2.10505" },
+					}),
+				},
+			}),
+			-- #endif
 			ach(3579, {	-- "FOOD FIGHT!"
 				["timeline"] = { "added 3.2.2.10505" },
 				["maps"] = ALL_PILGIM_MAPS,
