@@ -1377,6 +1377,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
+				q(62250, {	-- A New Adventure Awaits
+					["description"] = "This quest is automatically offered to Alliance players upon reaching the specified level.",
+					["timeline"] = { "created 9.0.2", "added 10.0.2" },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(47202, {	-- A Personal Message
 					["qg"] = 119357,	-- Anduin Wrynn
 					["sourceQuest"] = 46275,	-- A Kingdom's Heart

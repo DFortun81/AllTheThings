@@ -564,6 +564,11 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(62265, {	-- A New Adventure Awaits
+					["description"] = "This quest is automatically offered to Alliance players upon reaching the specified level.",
+					["timeline"] = { "created 9.0.2", "added 10.0.2" },
+					["races"] = HORDE_ONLY,
+				}),
 				q(50341, {	-- A Recent Discovery
 					["sourceQuest"] = 49977,	-- Summons to Orgrimmar
 					["qg"] = 132254,	-- Nathanos Blightcaller
