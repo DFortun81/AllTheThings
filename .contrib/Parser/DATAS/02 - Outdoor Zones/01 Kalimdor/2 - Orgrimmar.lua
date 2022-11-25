@@ -565,7 +565,7 @@ root("Zones", m(KALIMDOR, {
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(62265, {	-- A New Adventure Awaits
-					["description"] = "This quest is automatically offered to Alliance players upon reaching the specified level.",
+					["description"] = "This quest is automatically offered upon reaching the specified level.",
 					["timeline"] = { "created 9.0.2", "added 10.0.2" },
 					["races"] = HORDE_ONLY,
 				}),

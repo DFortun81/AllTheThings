@@ -655,7 +655,5 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		q(62250),	-- A New Adventure Awaits
-		q(62265),	-- A New Adventure Awaits
 	}),
 });
