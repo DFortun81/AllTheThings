@@ -9,12 +9,12 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 			race(BLOODELF, {
 				["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 60 Blood Elf|r with a standing of |cFFFFFFFFExalted|r with Silvermoon City.",
 				["races"] = { BLOODELF },
-				["g"] = bubbleDown({ ["races"] = { BLOODELF } }, {
+				["g"] = bubbleDown({ ["races"] = { BLOODELF }, ["minReputation"] = { 911, EXALTED } }, {
 					q(65652, {	-- Summons from the Matriarch (non-Paladin)
 						-- ["sourceQuests"] = { },
 						["provider"] = { "n", 176789 },	-- Lady Liadrin
 						["coord"] = { 25.4, 52.1, ORIBOS },
-						["classes"] = exclude({DRUID, PALADIN, SHAMAN}, ALL_CLASSES),
+						["classes"] = exclude({PALADIN}, ALL_CLASSES),
 					}),
 					q(63479, {	-- Summons from the Matriarch (Paladin)
 						-- ["sourceQuests"] = { },
@@ -23,7 +23,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 						["classes"] = { PALADIN },
 					}),
 					q(63480, {	-- Briefing
-						["sourceQuests"] = { 65652 },	-- Summons from the Matriarch
+						["sourceQuests"] = { 65652, 63479 },	-- Summons from the Matriarch
 						["provider"] = { "n", 176796 },	-- Lady Liadrin
 						["coord"] = { 90.0, 37.5, SILVERMOON_CITY },
 					}),
