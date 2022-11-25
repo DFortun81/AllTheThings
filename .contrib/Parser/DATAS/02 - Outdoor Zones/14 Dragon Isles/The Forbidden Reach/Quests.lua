@@ -260,20 +260,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
 			-- Stormwind
 			q(65286, {	-- Draconic Connections
 				["sourceQuests"] = { 65100 },	-- Final Orders
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
+				["provider"] = { "n", 189322 },	-- Wrathion
+				["coord"] = { 32.2, 49.6, ELWYNN_FOREST },
 				["races"] = { DRACTHYR_ALLIANCE },
 			}),
 			q(66513, {	-- Ground Leave [A]
 				["sourceQuests"] = { 65286 },	-- Draconic Connections
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
+				["provider"] = { "n", 189324 },	-- Scalecommander Azurathel
+				["coord"] = { 32.2, 49.6, ELWYNN_FOREST },
 				["races"] = { DRACTHYR_ALLIANCE },
 			}),
 			q(65101, {	-- An Iconic, Draconic, Look [A]
 				["sourceQuests"] = { 66577 },	-- Alexstrasza's Invitation [A]
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
+				["provider"] = { "n", 189569 },	-- Wrathion
+				["coord"] = { 82.6, 24.0, STORMWIND_CITY },
 				["races"] = { DRACTHYR_ALLIANCE },
 				["g"] = {
 					i(194675),	-- Gilded Dracthyr's Tabard
