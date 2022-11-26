@@ -1264,6 +1264,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 44.8, 68.9, ORIBOS },
 				["lvl"] = { 60 },
 			}),
+			q(62801, {	-- The Call of Fate
+				-- TODO: confirm whether you HAVE to hit 60 on that exact quest
+				-- ["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
+				["sourceQuests"] = { 59770 },	-- Stand as One
+				["isBreadcrumb"] = true,
+				["lockCriteria"] = { 1, "lvl", 61 },
+				["description"] = "In order to guarantee this quest is offered, the safest way is this: Level a character to approximately 59.7 (meaning Level 59, about 70% experience gained). From there, start the Shadowlands intro (SKIPPING THE MAW), and complete quests in Oribos until you create portals back to Orgrimmar and Stormwind. You should have hit level 60- from there, return to your Capital City, log out and back in, and the quest should pop up.",
+			}),
 		}),
 	}),
 })));
@@ -1359,15 +1367,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(179617),	-- Oribos Quest Leather Cloak
 				i(179618),	-- Oribos Quest Mail Cloak
 				i(179619),	-- Oribos Quest Plate Cloak
-			}),
-		}),
-		n(QUESTS, {
-			q(62801, {	-- The Call of Fate
-				-- TODO: how does this even get completed? maybe someone will report it
-				-- ["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
-				["sourceQuests"] = { 59770 },	-- Stand as One
-				["isBreadcrumb"] = true,
-				["lockCriteria"] = { 1, "lvl", 60 },
 			}),
 		}),
 	}),
