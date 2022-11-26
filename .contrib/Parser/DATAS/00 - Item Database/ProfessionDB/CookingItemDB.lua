@@ -39,7 +39,7 @@ i(0, 381386);	-- Scrambled Basilisk Eggs
 i(0, 381370);	-- Sweet and Sour Clam Chowder
 i(0, 381365);	-- Twice-Baked Potato
 i(0, 381381);	-- Zesty Water
--- ITEMS --
+-- ITEM --
 i(198104, 381377);	-- Blubbery Muffin
 i(198105, 381378);	-- Celebratory Cake
 i(198109, 381383);	-- Churnbelly Tea

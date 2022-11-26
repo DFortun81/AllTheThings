@@ -14,7 +14,7 @@ i(194839, 0);	-- Cliffside Wylderdrake Manuscript: Conical Head
 i(194840, 0);	-- Cliffside Wylderdrake Manuscript: Triple Head Horns
 i(194841, 0);	-- Cliffside Wylderdrake Manuscript: Red Mane
 i(194837, 0);	-- Highland Drake Manuscript: Black Hair
-i(194838, 0);	-- Highland Drake Manuscript: Spined Crest
+i(194838, 0);	-- Highland Drake Manuscript: Spined Head
 i(194836, 0);	-- Highland Drake Manuscript: Spined Throat
 i(194831, 0);	-- Renewed Proto Drake Manuscript: Predator Pattern
 i(194830, 0);	-- Renewed Proto Drake Manuscript: Red Hair

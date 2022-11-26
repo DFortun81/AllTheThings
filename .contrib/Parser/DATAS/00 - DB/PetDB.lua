@@ -1107,6 +1107,7 @@ pet(193837, 3326);	-- Backswimmer Timbertooth
 pet(198726, 3380);	-- Black Skitterbug
 pet(193834, 3321);	-- Blackfeather Nester
 pet(199688, 3279);	-- Bronze Racing Enthusiast
+pet(193066, 3275);	-- Chestnut
 pet(199326, 3376);	-- Chip
 pet(199758, 3379);	-- Crimson Proto-Whelp
 pet(191941, 3264);	-- Crystalline Mini-Monster
@@ -1118,7 +1119,7 @@ pet(193888, 3347);	-- Jeweled Emerald Whelpling
 pet(193889, 3256);	-- Jeweled Onyx Whelpling
 pet(193887, 3346);	-- Jeweled Ruby Whelpling
 pet(193886, 3344);	-- Jeweled Sapphire Whelpling
-
+pet(194098, 3350);	-- Lord Basilton
 pet(199175, 3316);	-- Lubbins
 pet(199757, 3378);	-- Magic Nibbler
 pet(193571, 3303);	-- Mallard Duckling
@@ -1161,7 +1162,7 @@ pet(193620, 3267);	-- Time-Lost Slyvern
 pet(0, 3268);	-- Swog
 
 pet(192459, 3270);	-- Jean's Lucky Fish
-pet(193066, 3275);	-- Chestnut
+
 pet(193068, 3277);	-- Time-Lost Treeflitter
 pet(193071, 3278);	-- Pistachio
 pet(0, 3280);	-- Shyfly

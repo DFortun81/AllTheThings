@@ -1135,7 +1135,7 @@ i(0, 389136);	-- Writ of Mastery
 i(0, 389300);	-- Writ of Speed [Bracers]
 i(0, 389400);	-- Writ of Speed [Cloak]
 i(0, 389151);	-- Writ of Versatility
--- ITEMS --
+-- ITEM --
 i(199816, 389416);	-- Accelerated Agility
 i(199804, 389508);	-- Draconic Deftness
 i(199802, 389513);	-- Draconic Finesse
@@ -1179,7 +1179,7 @@ i(0, 389410);	-- Waking Stats
 -- QUEST --
 i(0, 377982);	-- Heart in a Bottle
 -- NYI --
-i(198779, 392407);	-- Crystal Magical Lockpick
 i(0, 382580);	-- Opening
 i(0, 391200);	-- Wisp of Tyr
 i(0, 383736);	-- Unknown
+i(198779, 392407);	-- Crystal Magical Lockpick

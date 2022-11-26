@@ -1379,7 +1379,7 @@ i(0, 383547);	-- Scribe's Fastened Quill
 i(0, 384949);	-- Serene Fortune
 i(0, 383788);	-- Serene Ink
 i(0, 383546);	-- Vantus Rune: Vault of the Incarnates
--- ITEMS --
+-- ITEM --
 i(198943, 383550);	-- Alchemist's Brilliant Mixing Rod
 i(198947, 383552);	-- Chef's Splendid Rolling Pin
 i(198891, 383574);	-- Cliffside Wylderdrake: Conical Head
@@ -1458,12 +1458,69 @@ i(0, 383548);	-- Scribe's Resplendent Quill
 -- QUEST --
 i(0, 377985);	-- Heart in a Bottle
 -- NYI --
+i(0, 382583);	-- Opening
+i(0, 391783);	-- Wisp of Tyr
+i(0, 388458);	-- Unknown
 i(198944, 371340);	-- Mixing Rod I
 i(198945, 371376);	-- Mixing Rod II
 i(198948, 371341);	-- Rolling Pin I
 i(198949, 371375);	-- Rolling Pin II
 i(198890, 381545);	-- to change \\ Scroll of Sales
-i(0, 382583);	-- Opening
-i(0, 391783);	-- Wisp of Tyr
-i(0, 388458);	-- Unknown
+i(198942, 0);	-- Alchemist's Sturdy Mixing Rod
+i(198922, 0);	-- Azurescale Sigil
+i(198915, 0);	-- Blazing Fortune
+i(198934, 0);	-- Blazing Ink
+i(198925, 0);	-- Bronzescale Sigil
+i(198882, 0);	-- Bundle O' Cards: Dragon Isles
+i(198932, 0);	-- Burnished Ink
+i(198917, 0);	-- Buzzing Rune
+i(198946, 0);	-- Chef's Smooth Rolling Pin
+i(198913, 0);	-- Chilled Rune
+i(198919, 0);	-- Chirping Rune
 i(198939, 0);	-- Contract: Dragonscale Expedition
+i(198958, 0);	-- Core Explorer's Compendium
+i(198933, 0);	-- Cosmic Ink
+i(198957, 0);	-- Cracking Codex of the Isles
+i(198952, 0);	-- Darkmoon Deck Box: Dance
+i(198955, 0);	-- Darkmoon Deck Box: Inferno
+i(198954, 0);	-- Darkmoon Deck Box: Rime
+i(198953, 0);	-- Darkmoon Deck Box: Watcher
+i(198928, 0);	-- Draconic Missive of the Aurora
+i(198931, 0);	-- Draconic Missive of the Feverflare
+i(198920, 0);	-- Draconic Missive of the Fireflash
+i(198929, 0);	-- Draconic Missive of the Harmonious
+i(198921, 0);	-- Draconic Missive of the Peerless
+i(198927, 0);	-- Draconic Missive of the Quickblade
+i(198879, 0);	-- Draconic Treatise on Alchemy
+i(198881, 0);	-- Draconic Treatise on Blacksmithing
+i(198883, 0);	-- Draconic Treatise on Enchanting
+i(198880, 0);	-- Draconic Treatise on Engineering
+i(198884, 0);	-- Draconic Treatise on Herbalism
+i(198885, 0);	-- Draconic Treatise on Inscription
+i(198886, 0);	-- Draconic Treatise on Jewelcrafting
+i(198887, 0);	-- Draconic Treatise on Leatherworking
+i(198888, 0);	-- Draconic Treatise on Mining
+i(201026, 0);	-- Draconic Treatise on Skinning
+i(198889, 0);	-- Draconic Treatise on Tailoring
+i(198924, 0);	-- Emberscale Sigil
+i(198898, 0);	-- Explorer's Barding Manuscript
+i(198914, 0);	-- Flourishing Fortune
+i(198935, 0);	-- Flourishing Ink
+i(198918, 0);	-- Howling Rune
+i(198875, 0);	-- Illuminating Pillar of the Isles
+i(198911, 0);	-- Illusion Parchment: Spell Shield
+i(198926, 0);	-- Jetscale Sigil
+i(198874, 0);	-- Kinetic Pillar of the Isles
+i(198878, 0);	-- Overseer's Writhebark Stave
+i(198877, 0);	-- Pioneer's Writhebark Stave
+i(198787, 0);	-- Red Haired Renewed Proto-Drake Manuscript
+i(198897, 0);	-- Regal Barding Manuscript
+i(198900, 0);	-- Renewed Proto Drake Manuscript: Red Hair
+i(198930, 0);	-- Runed Writhebark
+i(198923, 0);	-- Sagescale Sigil
+i(198950, 0);	-- Scribe's Fastened Quill
+i(198951, 0);	-- Scribe's Resplendent Quill
+i(198916, 0);	-- Serene Fortune
+i(198936, 0);	-- Serene Ink
+i(198956, 0);	-- Vantus Rune: Vault of the Incarnates
+i(198786, 0);	-- Wrathion Darkmoon Deckbox

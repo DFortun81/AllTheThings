@@ -1506,10 +1506,12 @@ i(192762, 374034);	-- Azure Skitterfly
 i(201720, 394219);	-- Bronze Vorquin
 i(198872, 376875);	-- Brown Scouting Ottuk
 i(201426, 376910);	-- Brown War Ottuk
+i(194521, 368901);	-- Cliffside Wylderdrake
 i(202086, 377071);	-- Crimson Gladiator's Drake
 i(201702, 394216);	-- Crimson Vorquin
 i(198821, 359408);	-- Divine Kiss of Ohn'ahra
 i(198808, 384963);	-- Guardian Vorquin
+i(194705, 360954);	-- Highland Drake
 i(198871, 359409);	-- Iskaara Trader's Ottuk
 i(198873, 376879);	-- Ivory Trader's Ottuk
 i(192799, 374247);	-- Lizi, Thunderspine Tramper
@@ -1532,14 +1534,14 @@ i(192601, 373859);	-- Loyal Magmammoth
 i(201837, 373859);	-- Loyal Magmammoth
 --
 
-
+-- NYI
+i(194106, 0);	-- Highland Drake
 
 
 -- NOT SOURCED YET
 
-i(194106, 360954);	-- Highland Drake
-i(194705, 360954);	-- Highland Drake
-i(194521, 368901);	-- Cliffside Wylderdrake
+
+
 i(0, 359622);	-- Liberated Slyvern
 
 

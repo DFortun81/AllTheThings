@@ -1075,6 +1075,7 @@ i(198227);	-- Giggle Goggles
 i(193476);	-- Gnoll Tent
 i(202019);	-- Golden Dragon Goblet
 i(199771);	-- Green Dragon Banner
+i(200631);	-- Happy Tuskarr Palooza
 i(199899);	-- Iskaara Tug Sled
 i(198090);	-- Jar of Excess Slime
 i(193032);	-- Jeweled Offering
@@ -1086,6 +1087,7 @@ i(198827);	-- Magical Snow Sled
 i(194059);	-- Market Tent
 i(198402);	-- Maruuk Cooking Pot
 i(197986);	-- Murglasses
+i(200160);	-- Notfar's Favorite Food
 i(200640);	-- Obsidian Egg Clutch
 i(200869);	-- Ohn Lite Branded Horn
 i(200630);	-- Ohn'ir Windsage's Hearthstone
@@ -1102,6 +1104,7 @@ i(198722);	-- Small Triangular Pillow
 i(198720);	-- Soft Purple Pillow
 i(198537);	-- Taivan's Trumpet
 i(200857);	-- Talisman of Sargha
+i(200999);	-- The Super Shellkhan Gang
 i(193478);	-- Tuskarr Bean Bag
 i(198428);	-- Tuskarr Dinghy
 i(199892);	-- Tuskarr Traveling Soup Pot
@@ -1110,7 +1113,7 @@ i(200550);	-- Very Comfortable Pelt
 i(199650);	-- Whale Bone Tea Set
 i(200878);	-- Wheeled Floaty Boaty Controller
 i(198156);	-- Wyrmhole Generator
--- NOT SOURCED YET
+-- NYI
 i(192495);	-- Malfunctioning Stealthman 54
 i(197961);	-- Whelps on Strings
 i(198474);	-- Artist's Easel
@@ -1120,20 +1123,16 @@ i(199554);	-- S.E.A.T.
 i(199926);	-- Portable J.A.M.
 i(200142);	-- Generous Goblin Grenade
 i(200148);	-- A Collection Of Me
-i(200160);	-- Notfar's Favorite Food
 i(200178);	-- Infected Ichor
 i(200116);	-- Everlasting Horn of Lavaswimming
 i(200628);	-- Somewhat-Stabilized Arcana
-i(200631);	-- Happy Tuskarr Palooza
 i(200636);	-- Primal Invocation Quintessence
-i(200999);	-- The Super Shellkhan Gang
 i(199902);	-- Wayfinder's Compass
 i(201435);	-- Swinging Sands
-
-
-------------------
--- PATCH 10.0.2 --
-------------------
+i(201927);	-- Assorted Arcanocrystals
+i(201933);	-- Black Dragon's Challenge Dummy
+i(200926);	-- Compendium of Love
+i(202042);	-- Aquatic Shades
 i(194885);	-- Ohuna Perch
 i(201815);	-- Cloak of Many Faces
 

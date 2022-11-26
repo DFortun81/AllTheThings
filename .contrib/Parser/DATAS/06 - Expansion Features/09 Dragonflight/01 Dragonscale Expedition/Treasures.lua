@@ -63,6 +63,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 				i(199067, {	-- Precious Plans
 					["questID"] = 70536,
 				}),
+				i(199068, {	-- Time-Lost Memo
+					["questID"] = 70537,
+				}),
+				i(198852, {	-- Bear Termination Orders
+					["questID"] = 70407,
+				}),
 				i(201390),	-- Devastating Drakonid Waraxe
 				i(201393),	-- Dragonspawn Spellweaver's Focus
 				i(201388),	-- Dragonspawn Wingtipped Staff

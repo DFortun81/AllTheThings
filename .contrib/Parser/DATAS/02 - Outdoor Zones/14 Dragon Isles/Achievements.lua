@@ -3,6 +3,15 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	n(ACHIEVEMENTS, {
+		ach(16761, {	-- Dragon Isles Explorer
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				16400,	-- Explore the Waking Shores
+				16457,	-- Explore the Ohn'ahran Plains
+				16460,	-- Explore the Azure Span
+				16518,	-- Explore Thaldraszus
+			}},
+		}),
 		ach(15939, {	-- Dragon Racing Completionist
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",

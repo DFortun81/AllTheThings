@@ -48,7 +48,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					["provider"] = { "n", 190180 },	-- Guardian Velomir
 					["coord"] = { 35.8, 82.6, THALDRASZUS },
 					["g"] = {
-						i(197110),	-- Highland Drake: Plated Head
+						i(197110),	-- Highland Drake: Plated Head (DM!)
 					},
 				}),
 				q(66246, {	-- The Fog of Battle
@@ -92,7 +92,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					["provider"] = { "n", 190180 },	-- Guardian Velomir
 					["coord"] = { 37.6, 83.1, THALDRASZUS },
 					["g"] = {
-						i(197126),	-- Highland Drake: Hooked Horns
+						i(197126),	-- Highland Drake: Hooked Horns (DM!)
 					},
 				}),
 				q(66250, {	-- Where's The Chief?
@@ -207,7 +207,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					["provider"] = { "n", 186711 },	-- Chromie
 					["coord"] = { 59.6, 81.7, THALDRASZUS },
 					["g"] = {
-						i(197151),	-- Highland Drake: Spiked Tail
+						i(197151),	-- Highland Drake: Spiked Tail (DM!)
 					},
 				}),
 				q(66646, {	-- Quelling Causalities
@@ -441,7 +441,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						["coord"] = { 52.7, 67.3, THALDRASZUS },
 						["g"] ={
 							i(192795),	-- Rejuvenating Draught
-							i(197097),	-- Highland Drake: Spined Back
+							i(197097),	-- Highland Drake: Spined Back (DM!)
 						},
 					}),
 					q(66471, {	-- Prime Planning
@@ -462,7 +462,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						["provider"] = { "n", 189188 },	-- Sharnax
 						["coord"] = { 54.8, 64.3, THALDRASZUS },
 						["g"] = {
-							i(197103),	--	Highland Drake: Maned Chin
+							i(197103),	--	Highland Drake: Maned Chin (DM!)
 						},
 					}),
 					q(66472, {	-- Primal List
@@ -554,7 +554,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						["provider"] = { "n", 187289 },	-- Waywatcher Alvi
 						["coord"] = { 57.0, 67.7, THALDRASZUS },
 						["g"] = {
-							i(197122),	-- Highland Drake: Heavy Horns
+							i(197122),	-- Highland Drake: Heavy Horns (DM!)
 						},
 					}),
 				},
@@ -667,7 +667,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
 						["coord"] = { 43.5, 72.1, THALDRASZUS },
 						["g"] = {
-							i(197133),	-- Highland Drake: Spined Cheek
+							i(197133),	-- Highland Drake: Spined Cheek (DM!)
 							i(191891),	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise (TOY!)
 							i(191763),	-- Im-PECK-able Screechflight Disguise v2
 							crit(3, {	-- The Screetchflight Scramble
@@ -984,37 +984,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
 				["provider"] = { "n", 192543 },	-- Archivist Arenial
 				["coord"] = { 60.3, 81.9, THALDRASZUS },
-			}),
-			n(BONUS_OBJECTIVES, {
-				q(72114, {	-- Acrosoth
-					-- npc 193243
-					["coord"] = { 40.5, 78.3, THALDRASZUS },
-				}),
-				q(72116, {	-- Liskron the Dazzling
-					-- npc 193273
-					["coord"] = { 36.7, 72.8, THALDRASZUS },
-				}),
-				q(69967, {	-- Lookout Mordren
-					-- npc 193668
-					-- item 200182
-					["coord"] = { 36.8, 85.6, THALDRASZUS },
-				}),
-				q(70986, {	-- Private Shikzar
-					-- npc 193127
-					["coord"] = { 37.6, 84.7, THALDRASZUS },
-				}),
-				q(69873, {	-- Henlare
-					-- npc 193229
-					["coord"] = { 55.6, 77.4, THALDRASZUS },
-				}),
-				q(69962, {	-- Corrupted Proto-Dragon
-					-- npc 193658
-					["coord"] = { 44.9, 69.0, THALDRASZUS },
-				}),
-				q(69964, {	-- Craggravated Elemental
-					-- npc 193663
-					["coord"] = { 52.8, 67.5, THALDRASZUS },
-				}),
 			}),
 			ach(15941, {	-- Dragon Racing Completionist: Gold
 				["collectible"] = false,

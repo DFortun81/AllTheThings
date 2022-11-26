@@ -70,7 +70,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					["coord"] = { 40.7, 59.0, THE_AZURE_SPAN },
 					["g"] = {
 						i(198037),	-- Brimming Arcanocrystal
-						i(197622),	-- Windborne Velocidrake: Finned Tail
+						i(197622),	-- Windborne Velocidrake: Finned Tail (DM!)
 					},
 				}),
 				q(65852, {	-- Straight to the Top
@@ -140,7 +140,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						i(198030),	-- Sleet Shined Legplates
 						i(198015),	-- Twisted Leather Breeches
 						i(197998),	-- Windswept Leggings
-						i(197388),	-- Renewed Proto-Drake: Finned Jaw
+						i(197388),	-- Renewed Proto-Drake: Finned Jaw (DM!)
 					},
 				}),
 				q(65866, {	-- Snap the Traps
@@ -242,7 +242,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					["g"] = {
 						i(191928),	-- Brena's Totem
 						i(198001),	-- Tuskarr Spirit Shawl
-						i(197408),	-- Renewed Proto-Drake: Finned Throat
+						i(197408),	-- Renewed Proto-Drake: Finned Throat (DM!)
 					},
 				}),
 				q(65846, {	-- Ley Litter
@@ -383,7 +383,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						i(198031),	-- Sleet Shined Crushers
 						i(198014),	-- Twisted Leather Gloves
 						i(198000),	-- Windswept Gloves
-						i(197603),	-- Windborne Velocidrake: Curved Horns
+						i(197603),	-- Windborne Velocidrake: Curved Horns (DM!)
 					},
 				}),
 				q(70041, {	-- The Storm-Eater's Fury
@@ -529,7 +529,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						["provider"] = { "n", 188030 },	-- Aelnara
 						["coord"] = { 10.8, 41.2, THE_AZURE_SPAN },
 						["g"] = {
-							i(197381),	-- Renewed Proto-Drake: Gradient Horns
+							i(197381),	-- Renewed Proto-Drake: Gradient Horns (DM!)
 						},
 					}),
 					q(66559, {	-- Back To Camp
@@ -731,7 +731,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						["g"] = {
 							i(198432),	-- Crude Wind Charm
 							i(198036),	-- Spineripper's Fang
-							i(197385),	-- Renewned Proto-Drake: Horned Jaw
+							i(197385),	-- Renewned Proto-Drake: Horned Jaw (DM!)
 							crit(5, {	-- Brackenhide Water Hole
 								["achievementID"] = 16428,	-- Sojourner of Azure Span
 							}),
@@ -889,7 +889,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 							i(199826),	-- Tuskarr Puddle Steppers
 							i(199829),	-- Tuskarr Wading Boots
 							i(199827),	-- Tuskarr Water Kickers
-							i(197607),	-- Windborne Velocidrake: Split Horns
+							i(197607),	-- Windborne Velocidrake: Split Horns (DM!)
 							crit(8, {	-- Kauriq Gleamlet
 								["achievementID"] = 16428,	-- Sojourner of Azure Span
 							}),
@@ -1137,7 +1137,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
 						["g"] = {
 							i(197988),	-- Frozen Shard Ring
-							i(197627),	-- Windborne Velocidrake: Finned Neck
+							i(197627),	-- Windborne Velocidrake: Finned Neck (DM!)
 							crit(12, {	-- Winterpelt Hollow
 								["achievementID"] = 16428,	-- Sojourner of Azure Span
 							}),
@@ -1146,7 +1146,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(1, {	-- WANTED: Frigellus
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(66488, {	-- WANTED: Frigellus
@@ -1162,7 +1162,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(2, {	-- Tending the Forge
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(66523, {	-- Tending the Forge
@@ -1178,7 +1178,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(3, {	-- Setting the Defense
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(66489, {	-- Setting the Defense
@@ -1195,7 +1195,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(4, {	-- Send It!
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(66493, {	-- Send It!
@@ -1212,7 +1212,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(5, {	-- For The Love of Others
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(69904, {	-- Suspiciously Quiet
@@ -1241,7 +1241,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(6, {	--Fishing: Aileron Seamoth
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(66212, {	-- Fishing: Aileron Seamoth
@@ -1259,7 +1259,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(7, {	-- The Weave of a Tale
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(66213, {	-- The Weave of a Tale
@@ -1275,7 +1275,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(8, {	-- WANTED: Krojek the Shoreprowler
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(66217, {	-- WANTED: Krojek the Shoreprowler
@@ -1291,7 +1291,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(9, {	-- Can We Keep It?
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(66218, {	-- Scampering Scamps
@@ -1316,7 +1316,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(10, {	-- Toejam the Terrible
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(66558, {	-- Rowie
@@ -1337,7 +1337,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(11, {	-- Nothing for Breakfast
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(71233, {	-- Falling Water
@@ -1359,7 +1359,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(12, {	-- It's Cold Up Here
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(66838, {	-- It's Cold Up Here
@@ -1375,7 +1375,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(13, {	-- It's Brew Time
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(66839, {	-- It's Brew Time
@@ -1391,7 +1391,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(14, {	-- Out of Lukh
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(66843, {	-- Out of Lukh
@@ -1407,7 +1407,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(15, {	-- The Great Shokhari
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(66844, {	-- The Great Shokhari
@@ -1424,7 +1424,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				},
 			}),
 			crit(16, {	-- The Heart of the Deck
-				["achievementID"] = 16428,	-- Sojourner of Azure Span
+				["achievementID"] = 16580,	-- Lend a Helping Span
 				["collectible"] = false,
 				["g"] = {
 					q(66841, {	-- A Shard of the Past
@@ -1535,214 +1535,195 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["provider"] = { "n", 194425 },	-- Ranpiata
 				["coord"] = { 7.9, 53.5, THE_AZURE_SPAN },
 			}),
-			q(67741, {	-- Archive Ambit
-				["sourceQuests"] = { 68795 },	-- Dragonriding
-				["provider"] = { "n", 193027 },	-- Bronze Timekeeper
-				["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
-				["repeatable"] = true,
-				["g"] = {
-					i(191140),	-- Bronze Timepiece
-					ach(15847),	-- Archive Ambit: Bronze
-					ach(15848),	-- Archive Ambit: Silver
-					ach(15849),	-- Archive Ambit: Gold
-				},
-			}),
-			q(67742, {	-- Archive Ambit - Advanced
-				["sourceQuests"] = { 68795 },	-- Dragonriding
-				["provider"] = { "n", 193027 },	-- Bronze Timekeeper
-				["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
-				["repeatable"] = true,
-				["g"] = {
-					i(191140),	-- Bronze Timepiece
-					ach(15850),	-- Archive Ambit Advanced: Bronze
-					ach(15851),	-- Archive Ambit Advanced: Silver
-					ach(15852),	-- Archive Ambit Advanced: Gold
-				},
-			}),
-			q(67002, {	-- Azure Span Slalom
-				["sourceQuests"] = { 68795 },	-- Dragonriding
-				["provider"] = { "n", 191947 },	-- Bronze Timekeeper
-				["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
-				["repeatable"] = true,
-				["g"] = {
-					i(191140),	-- Bronze Timepiece
-					ach(15799),	-- The Azure Span Slalom: Bronze
-					ach(15800),	-- The Azure Span Slalom: Silver
-					ach(15801),	-- The Azure Span Slalom: Gold
-				},
-			}),
-			q(67003, {	-- Azure Span Slalom - Advanced
-				["sourceQuests"] = { 68795 },	-- Dragonriding
-				["provider"] = { "n", 191947 },	-- Bronze Timekeeper
-				["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
-				["repeatable"] = true,
-				["g"] = {
-					i(191140),	-- Bronze Timepiece
-					ach(15802),	-- The Azure Span Slalom Advanced: Bronze
-					ach(15803),	-- The Azure Span Slalom Advanced: Silver
-					ach(15804),	-- The Azure Span Slalom Advanced: Gold
-				},
-			}),
-			q(66946, {	-- Azure Span Sprint
-				["sourceQuests"] = { 68795 },	-- Dragonriding
-				["provider"] = { "n", 191572 },	-- Bronze Timekeeper
-				["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
-				["repeatable"] = true,
-				["g"] = {
-					i(191140),	-- Bronze Timepiece
-					ach(15788),	-- The Azure Span Sprint: Bronze
-					ach(15789),	-- The Azure Span Sprint: Silver
-					ach(15790),	-- The Azure Span Sprint: Gold
-				},
-			}),
-			q(66947, {	-- Azure Span Sprint - Advanced
-				["sourceQuests"] = { 68795 },	-- Dragonriding
-				["provider"] = { "n", 191572 },	-- Bronze Timekeeper
-				["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
-				["repeatable"] = true,
-				["g"] = {
-					i(191140),	-- Bronze Timepiece
-					ach(15791),	-- The Azure Span Sprint Advanced: Bronze
-					ach(15792),	-- The Azure Span Sprint Advanced: Silver
-					ach(15793),	-- The Azure Span Sprint Advanced: Gold
-				},
-			}),
-			q(67565, {	-- Frostland Flyover
-				["sourceQuests"] = { 68795 },	-- Dragonriding
-				["provider"] = { "n", 192945 },	-- Bronze Timekeeper
-				["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
-				["repeatable"] = true,
-				["g"] = {
-					i(191140),	-- Bronze Timepiece
-					ach(15841),	-- Frostland Flyover: Bronze
-					ach(15842),	-- Frostland Flyover: Silver
-					ach(15843),	-- Frostland Flyover: Gold
-				},
-			}),
-			q(67566, {	-- Frostland Flyover - Advanced
-				["sourceQuests"] = { 68795 },	-- Dragonriding
-				["provider"] = { "n", 192945 },	-- Bronze Timekeeper
-				["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
-				["repeatable"] = true,
-				["g"] = {
-					i(191140),	-- Bronze Timepiece
-					ach(15844),	-- Frostland Flyover Advanced: Bronze
-					ach(15845),	-- Frostland Flyover Advanced: Silver
-					ach(15846),	-- Frostland Flyover Advanced: Gold
-				},
-			}),
-			q(67296, {	-- Iskaara Tour
-				["sourceQuests"] = { 68795 },	-- Dragonriding
-				["provider"] = { "n", 192886 },	-- Bronze Timekeeper
-				["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
-				["repeatable"] = true,
-				["g"] = {
-					i(191140),	-- Bronze Timepiece
-					ach(15835),	-- Iskaara Tour: Bronze
-					ach(15836),	-- Iskaara Tour: Silver
-					ach(15837),	-- Iskaara Tour: Gold
-				},
-			}),
-			q(67297, {	-- Iskaara Tour - Advanced
-				["sourceQuests"] = { 68795 },	-- Dragonriding
-				["provider"] = { "n", 192886 },	-- Bronze Timekeeper
-				["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
-				["repeatable"] = true,
-				["g"] = {
-					i(191140),	-- Bronze Timepiece
-					ach(15838),	-- Iskaara Tour Advanced: Bronze
-					ach(15839),	-- Iskaara Tour Advanced: Silver
-					ach(15840),	-- Iskaara Tour Advanced: Gold
-				},
-			}),
-			q(67031, {	-- Vakthros Ascent
-				["sourceQuests"] = { 68795 },	-- Dragonriding
-				["provider"] = { "n", 192115 },	-- Bronze Timekeeper
-				["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
-				["repeatable"] = true,
-				["g"] = {
-					i(191140),	-- Bronze Timepiece
-					ach(15818),	-- The Vakthros Ascent: Bronze
-					ach(15819),	-- The Vakthros Ascent: Silver
-					ach(15820),	-- The Vakthros Ascent: Gold
-				},
-			}),
-			q(67032, {	-- Vakthros Ascent - Advanced
-				["sourceQuests"] = { 68795 },	-- Dragonriding
-				["provider"] = { "n", 192115 },	-- Bronze Timekeeper
-				["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
-				["repeatable"] = true,
-				["g"] = {
-					i(191140),	-- Bronze Timepiece
-					ach(15821),	-- The Vakthros Ascent Advanced: Bronze
-					ach(15822),	-- The Vakthros Ascent Advanced: Silver
-					ach(15823),	-- The Vakthros Ascent Advanced: Gold
-				},
-			}),
 			n(BONUS_OBJECTIVIES, {
-				q(69895, {	-- Summoned Destroyer
-					-- id 193288
-					["coord"] = { 70.1, 33.2, THE_AZURE_SPAN },
-				}),
-				q(69864, {	-- Forgotten Creation
-					-- id 193214
-					["coord"] = { 38.2, 59.0, THE_AZURE_SPAN },
-				}),
-				q(69872, {	-- Vakril, The Strongest Tuskarr
-					-- id 193223
-					["coord"] = { 17.0, 41.3, THE_AZURE_SPAN },
-				}),
-				--q(, {	-- Cascade
-				--	-- id 186962
-				--	["coord"] = { 23.7, 33.7, THE_AZURE_SPAN },
-				--}),
-				q(67173, {	-- Thieving Gnolls
-					-- 192749
-					["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },
+				q(66718, {	-- Gnolls Must Die
+					["sourceQuests"] = { 66709 },	-- Field Medic 101
+					["coord"] = { 58.1, 42.3, THE_AZURE_SPAN },
 				}),
 				q(65841, {	-- Stop the Spread
 					["sourceQuests"] = { 66026 },	-- Urgent Action Required
 					["coord"] = { 19.1, 36.2, THE_AZURE_SPAN },
 				}),
-				q(66718, {	-- Gnolls Must Die
-					["sourceQuests"] = { 66709 },	-- Field Medic 101
-					["coord"] = { 58.1, 42.3, THE_AZURE_SPAN },
-				}),
+			}),
+			n(HIDDEN_QUESTS, {
+				-- During The Weave of a Tale (66213)
+				-- First Question
+				q(66563, { ["name"] = "The Weave of a Tale: Rarest Fish", }),	-- "Rarest Fish"
+				q(66562, { ["name"] = "The Weave of a Tale: Slaying", }),	-- "Slaying"
+				q(66561, { ["name"] = "The Weave of a Tale: Handstand", }),	-- "Handstand"
+				-- Second Question
+				q(66566, { ["name"] = "The Weave of a Tale: Average", }),	-- "Average"
+				q(66565, { ["name"] = "The Weave of a Tale: Biggest", }),	-- "Biggest"
+				q(66564, { ["name"] = "The Weave of a Tale: Half Squid", }),	-- "Half Squid"
+				-- Third Question
+				q(66569, { ["name"] = "The Weave of a Tale: Slipped", }),	-- "Slipped"
+				q(66568, { ["name"] = "The Weave of a Tale: Sword", }),	-- "Sword"
+				q(66567, { ["name"] = "The Weave of a Tale: Whisper", }),	-- "Whisper"
+				-- Fourth Question
+				q(66571, { ["name"] = "The Weave of a Tale: Ate", }),	-- "Ate"
+				q(66570, { ["name"] = "The Weave of a Tale: Threw", }),	-- "Threw"
+				-- During The Heart of the Deck (66846)
+				-- First Question
+				q(66992, { ["name"] = "The Heart of the Deck: Draconic Form", }),	-- "Draconic Form"
+				q(66993, { ["name"] = "The Heart of the Deck: My Form", }),	-- "My Form"
+				-- Second Question
+				q(66984, { ["name"] = "The Heart of the Deck: Destroyer", }),	-- "Destroyer"
+				q(66985, { ["name"] = "The Heart of the Deck: Guardian", }),	-- "Guardian"
+				q(66983, { ["name"] = "The Heart of the Deck: Life-Giver", }),	-- "Life-Giver"
+				-- Third Question
+				q(66994, { ["name"] = "The Heart of the Deck: Motivation", }),	-- "Motivation"
+				q(66995, { ["name"] = "The Heart of the Deck: Adaptation", }),	-- "Adaptation"
+				q(66996, { ["name"] = "The Heart of the Deck: Reaction", }),	-- "Reaction"
+			}),
+			ach(15941, {	-- Dragon Racing Completionist: Gold
+				["collectible"] = false,
+				["g"] = {
+					q(67741, {	-- Archive Ambit
+						["sourceQuests"] = { 68795 },	-- Dragonriding
+						["provider"] = { "n", 193027 },	-- Bronze Timekeeper
+						["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
+						["repeatable"] = true,
+						["g"] = {
+							i(191140),	-- Bronze Timepiece
+							ach(15847),	-- Archive Ambit: Bronze
+							ach(15848),	-- Archive Ambit: Silver
+							ach(15849),	-- Archive Ambit: Gold
+						},
+					}),
+					q(67742, {	-- Archive Ambit - Advanced
+						["sourceQuests"] = { 68795 },	-- Dragonriding
+						["provider"] = { "n", 193027 },	-- Bronze Timekeeper
+						["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
+						["repeatable"] = true,
+						["g"] = {
+							i(191140),	-- Bronze Timepiece
+							ach(15850),	-- Archive Ambit Advanced: Bronze
+							ach(15851),	-- Archive Ambit Advanced: Silver
+							ach(15852),	-- Archive Ambit Advanced: Gold
+						},
+					}),
+					q(67002, {	-- Azure Span Slalom
+						["sourceQuests"] = { 68795 },	-- Dragonriding
+						["provider"] = { "n", 191947 },	-- Bronze Timekeeper
+						["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
+						["repeatable"] = true,
+						["g"] = {
+							i(191140),	-- Bronze Timepiece
+							ach(15799),	-- The Azure Span Slalom: Bronze
+							ach(15800),	-- The Azure Span Slalom: Silver
+							ach(15801),	-- The Azure Span Slalom: Gold
+						},
+					}),
+					q(67003, {	-- Azure Span Slalom - Advanced
+						["sourceQuests"] = { 68795 },	-- Dragonriding
+						["provider"] = { "n", 191947 },	-- Bronze Timekeeper
+						["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
+						["repeatable"] = true,
+						["g"] = {
+							i(191140),	-- Bronze Timepiece
+							ach(15802),	-- The Azure Span Slalom Advanced: Bronze
+							ach(15803),	-- The Azure Span Slalom Advanced: Silver
+							ach(15804),	-- The Azure Span Slalom Advanced: Gold
+						},
+					}),
+					q(66946, {	-- Azure Span Sprint
+						["sourceQuests"] = { 68795 },	-- Dragonriding
+						["provider"] = { "n", 191572 },	-- Bronze Timekeeper
+						["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
+						["repeatable"] = true,
+						["g"] = {
+							i(191140),	-- Bronze Timepiece
+							ach(15788),	-- The Azure Span Sprint: Bronze
+							ach(15789),	-- The Azure Span Sprint: Silver
+							ach(15790),	-- The Azure Span Sprint: Gold
+						},
+					}),
+					q(66947, {	-- Azure Span Sprint - Advanced
+						["sourceQuests"] = { 68795 },	-- Dragonriding
+						["provider"] = { "n", 191572 },	-- Bronze Timekeeper
+						["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
+						["repeatable"] = true,
+						["g"] = {
+							i(191140),	-- Bronze Timepiece
+							ach(15791),	-- The Azure Span Sprint Advanced: Bronze
+							ach(15792),	-- The Azure Span Sprint Advanced: Silver
+							ach(15793),	-- The Azure Span Sprint Advanced: Gold
+						},
+					}),
+					q(67565, {	-- Frostland Flyover
+						["sourceQuests"] = { 68795 },	-- Dragonriding
+						["provider"] = { "n", 192945 },	-- Bronze Timekeeper
+						["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
+						["repeatable"] = true,
+						["g"] = {
+							i(191140),	-- Bronze Timepiece
+							ach(15841),	-- Frostland Flyover: Bronze
+							ach(15842),	-- Frostland Flyover: Silver
+							ach(15843),	-- Frostland Flyover: Gold
+						},
+					}),
+					q(67566, {	-- Frostland Flyover - Advanced
+						["sourceQuests"] = { 68795 },	-- Dragonriding
+						["provider"] = { "n", 192945 },	-- Bronze Timekeeper
+						["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
+						["repeatable"] = true,
+						["g"] = {
+							i(191140),	-- Bronze Timepiece
+							ach(15844),	-- Frostland Flyover Advanced: Bronze
+							ach(15845),	-- Frostland Flyover Advanced: Silver
+							ach(15846),	-- Frostland Flyover Advanced: Gold
+						},
+					}),
+					q(67296, {	-- Iskaara Tour
+						["sourceQuests"] = { 68795 },	-- Dragonriding
+						["provider"] = { "n", 192886 },	-- Bronze Timekeeper
+						["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
+						["repeatable"] = true,
+						["g"] = {
+							i(191140),	-- Bronze Timepiece
+							ach(15835),	-- Iskaara Tour: Bronze
+							ach(15836),	-- Iskaara Tour: Silver
+							ach(15837),	-- Iskaara Tour: Gold
+						},
+					}),
+					q(67297, {	-- Iskaara Tour - Advanced
+						["sourceQuests"] = { 68795 },	-- Dragonriding
+						["provider"] = { "n", 192886 },	-- Bronze Timekeeper
+						["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
+						["repeatable"] = true,
+						["g"] = {
+							i(191140),	-- Bronze Timepiece
+							ach(15838),	-- Iskaara Tour Advanced: Bronze
+							ach(15839),	-- Iskaara Tour Advanced: Silver
+							ach(15840),	-- Iskaara Tour Advanced: Gold
+						},
+					}),
+					q(67031, {	-- Vakthros Ascent
+						["sourceQuests"] = { 68795 },	-- Dragonriding
+						["provider"] = { "n", 192115 },	-- Bronze Timekeeper
+						["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
+						["repeatable"] = true,
+						["g"] = {
+							i(191140),	-- Bronze Timepiece
+							ach(15818),	-- The Vakthros Ascent: Bronze
+							ach(15819),	-- The Vakthros Ascent: Silver
+							ach(15820),	-- The Vakthros Ascent: Gold
+						},
+					}),
+					q(67032, {	-- Vakthros Ascent - Advanced
+						["sourceQuests"] = { 68795 },	-- Dragonriding
+						["provider"] = { "n", 192115 },	-- Bronze Timekeeper
+						["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
+						["repeatable"] = true,
+						["g"] = {
+							i(191140),	-- Bronze Timepiece
+							ach(15821),	-- The Vakthros Ascent Advanced: Bronze
+							ach(15822),	-- The Vakthros Ascent Advanced: Silver
+							ach(15823),	-- The Vakthros Ascent Advanced: Gold
+						},
+					}),
+				},
 			}),
 		}),
 	}),
 })));
-
-root("HiddenQuestTriggers", m(DRAGON_ISLES, {
-	m(THE_AZURE_SPAN, {
-		-- During The Weave of a Tale (66213)
-		-- First Question
-		q(66563),	-- "Rarest Fish"
-		q(66562),	-- "Slaying"
-		q(66561),	-- "Handstand"
-		-- Second Question
-		q(66566),	-- "Average"
-		q(66565),	-- "Biggest"
-		q(66564),	-- "Half Squid"
-		-- Third Question
-		q(66569),	-- "Slipped"
-		q(66568),	-- "Sword"
-		q(66567),	-- "Whisper"
-		-- Fourth Question
-		q(66571),	-- "Ate"
-		q(66570),	-- "Threw"
-
-		-- During The Heart of the Deck (66846)
-		-- First Question
-		q(66992),	-- "Draconic Form"
-		q(66993),	-- "My Form"
-		-- Second Question
-		q(66984),	-- "Destroyer"
-		q(66985),	-- "Guardian"
-		q(66983),	-- "Life-Giver"
-		-- Third Question
-		q(66994),	-- "Motivation"
-		q(66995),	-- "Adaptation"
-		q(66996),	-- "Reaction"
-	}),
-}));

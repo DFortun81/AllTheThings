@@ -4,6 +4,13 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	m(THE_AZURE_SPAN, {
 		n(TREASURES, {
+			o(383625, {	-- Case of Fresh Gleamfish
+				["coord"] = { 38.4, 68.2, THE_AZURE_SPAN },
+				-- ["questID"] = ,
+				["g"] = {
+					i(200949),	-- Case of Fresh Gleamfish
+				},
+			}),
 			o(380547, {	-- Decay-Infused Tanning Oil
 				["coord"] = { 16.7, 38.7, THE_AZURE_SPAN },
 				["questID"] = 70266,

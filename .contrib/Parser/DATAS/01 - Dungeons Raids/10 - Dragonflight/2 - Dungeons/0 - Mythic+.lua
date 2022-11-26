@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	n(MYTHIC_PLUS, {
-		ach(16429, bubbleDownSelf({ ["timeline"] = { "added 10.0.2", "removed 10.1.0" } }, {	-- Thundering Hero: Dragonflight Season 1 [TEMP! Until we can use the new headers from Runaway]
+		ach(16429, bubbleDownSelf({ ["timeline"] = { ADDED_DFREL, REMOVED_DFS2 } }, {	-- Thundering Hero: Dragonflight Season 1 [TEMP! Until we can use the new headers from Runaway]
 			["collectible"] = false,
 			["g"] = {
 				ach(16647),		-- Dragonflight Keystone Explorer: Season One

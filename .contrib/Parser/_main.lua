@@ -1158,14 +1158,19 @@ DF_PHASE_ONE = 100;
 -- #endif
 
 -- Timelines
-ADDED_SLS4 = "added 9.2.5.44908";
-REMOVED_SLS4 = "removed 9.2.5.44908";
-ADDED_DFPRE = "added 10.0.0";
-REMOVED_DFPRE = "removed 10.0";
-TIMELINE_DFPRE2 = { "created 10.0.0", "added 10.0.2" };	-- Second phase of Dragonflight pre-patch on November 15th, 2022
-REMOVED_DFPRE2 = "removed 10.0.2";
-TIMELINE_DFREL = { "created 10.0.0", "added 10.0.2.99999" };
-REMOVED_DFREL = "removed 10.0.2.99999";
+ADDED_SLS4 = "added 9.2.5.44908";						-- SL Season 4 Start on
+REMOVED_SLS4 = "removed 9.2.5.44908";					-- SL Season 4 Start on
+CREATED_DFPRE = "created 10.0.0";						-- First phase of Dragonflight pre-patch on October 25th, 2022
+ADDED_DFPRE = "added 10.0.0";							-- First phase of Dragonflight pre-patch on October 25th, 2022
+REMOVED_DFPRE = "removed 10.0.0";						-- First phase of Dragonflight pre-patch on October 25th, 2022
+ADDED_DFPRE2 = "added 10.0.2"							-- Second phase of Dragonflight pre-patch on November 15th, 2022
+TIMELINE_DFPRE2 = { CREATED_DFPRE, ADDED_DFPRE2 };	-- Second phase of Dragonflight pre-patch on November 15th, 2022
+REMOVED_DFPRE2 = "removed 10.0.2";						-- Second phase of Dragonflight pre-patch on November 15th, 2022
+ADDED_DFREL = "added 10.0.2";							-- Dragonflight Launch on November 28th, 2022
+TIMELINE_DFREL = { CREATED_DFPRE, ADDED_DFREL };		-- Dragonflight Launch on November 28th, 2022
+REMOVED_DFREL = "removed 10.0.2";						-- Dragonflight Launch on November 28th, 2022
+ADDED_DFS2 = "added 10.1.0";							-- DF Season 2 Start on
+REMOVED_DFS2 = "removed 10.1.0";						-- DF Season 2 Start on
 
 -- Holiday Filters
 BREWFEST = 1000;

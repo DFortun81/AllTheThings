@@ -9,6 +9,11 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			2106,	-- Den of Decay
 		},
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(16762, {	-- The Vegetarian Diet
+					i(200631),	-- Happy Tuskarr Palooza (TOY!)
+				}),
+			}),
 			n(QUESTS, {
 				q(66211, {	-- Brackenhide Hollow: To the Source
 					["sourceQuests"] = { 65849 },	-- To Iskaara

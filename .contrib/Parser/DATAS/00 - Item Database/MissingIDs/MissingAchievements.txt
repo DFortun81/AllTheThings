@@ -3026,8 +3026,6 @@ ach(16756),	-- Tailoring Crafting Orders Fulfilled
 ach(16759),	-- <Hidden> Adventure Mode - Reached Dragon Isles
 ach(16760),	-- The Obsidian Bloodline
 10.0.2.46259
-ach(16761),	-- Dragon Isles Explorer
-ach(16762),	-- The Vegetarian Diet
 ach(16764),	-- Crimson Carpet Fashion
 ach(16765),	-- <DNT> Expedition Supplies: Climbing Gear
 ach(16766),	-- <DNT> Expedition Supplies: Cataloging Gear

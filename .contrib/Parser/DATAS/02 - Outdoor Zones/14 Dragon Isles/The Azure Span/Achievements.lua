@@ -4,6 +4,113 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	m(THE_AZURE_SPAN, {
 		n(ACHIEVEMENTS, {
+			ach(16678, {	-- Adventurer of The Azure Span
+				crit(1, {
+					["_npcs"] = { 193632 },	-- Wilrive
+				}),
+				crit(2, {
+					["_npcs"] = { 193157 },	-- Dragonhunter Gorund
+				}),
+				crit(3, {
+					["_npcs"] = { 194270 },	-- Arcane Devourer
+				}),
+				crit(4, {
+					["_npcs"] = { 198004 },	-- Mange the Outcast
+				}),
+				crit(5, {
+					["_npcs"] = { 191356 },	-- Frostpaw
+				}),
+				crit(6, {
+					["_npcs"] = { 193201 },	-- Mucka the Raker
+				}),
+				crit(7, {
+					["_npcs"] = { 194392 },	-- Brackle
+				}),
+				crit(8, {
+					["_npcs"] = { 193698 },	-- Frigidpelt Den Mother
+				}),
+				crit(9, {
+					["_npcs"] = { 194210 },	-- Azure Pathfinder
+				}),
+				crit(10, {
+					["_npcs"] = { 193116 },	-- Beogoka
+				}),
+				crit(11, {
+					["_npcs"] = { 193225 },	-- Notfar the Unbearable
+				}),
+				crit(12, {
+					["_npcs"] = { 193259 },	-- Blue Terror
+				}),
+				crit(13, {
+					["_npcs"] = { 190244 },	-- Mahg the Trampler
+				}),
+				crit(14, {
+					["_npcs"] = { 193149 },	-- Skag the Thrower
+				}),
+				crit(15, {
+					["_npcs"] = { 193251 },	-- Gruffy
+				}),
+				crit(16, {
+					["_npcs"] = { 193269 },	-- Grumbletrunk
+				}),
+				crit(17, {
+					["_npcs"] = { 193693 },	-- Rusthide
+				}),
+				crit(18, {
+					["_npcs"] = { 193196 },	-- Trilvarus Loreweaver
+				}),
+				crit(19, {
+					["_npcs"] = { 193691 },	-- Fisherman Tinnak <Angered Ghost>
+				}),
+				crit(20, {
+					["_npcs"] = { 193706 },	-- Snufflegust <Lunker>
+				}),
+				crit(21, {
+					["_npcs"] = { 193708 },	-- Skald the Impaler <Lunker>
+				}),
+				crit(22, {
+					["_npcs"] = { 193710 },	-- Seereel, the Spring <Lunker>
+				}),
+				crit(23, {
+					["_npcs"] = { 193735 },	-- Moth'go Deeploom <Lunker>
+				}),
+				crit(24, {
+					["_npcs"] = { 193634 },	-- Swog'ranka <Lunker>
+				}),
+				crit(25, {
+					["_npcs"] = { 193167 },	-- Swagraal the Swollen
+				}),
+				crit(26, {
+					["_npcs"] = { 197557 },	-- Bisquius <The Feast Beast>
+				}),
+				crit(27, {
+					["_npcs"] = { 193178 },	-- Blightfur
+				}),
+				crit(28, {
+					["_npcs"] = { 193255 },	-- Archmage Cleary
+				}),
+				crit(29, {
+					["_npcs"] = { 193238 },	-- Spellwrought Snowman
+				}),
+				crit(30, {
+					["_npcs"] = { 197344 },	-- Snarglebone
+				}),
+				crit(31, {
+					["_npcs"] = { 197353 },	-- Blisterhide <The Infested>
+				}),
+				crit(32, {
+					["_npcs"] = { 197354 },	-- Gnarls
+				}),
+				crit(33, {
+					["_npcs"] = { 197356 },	-- High Shaman Rotknuckle
+				}),
+				crit(34, {
+					["_npcs"] = { 197371 },	-- Ravenous Tundra Bear <Lunker>
+				}),
+				crit(35, {
+					["_npcs"] = { 197411 },	-- Astray Splasher <Lunker>
+				}),
+			}),
 			ach(16577, {	-- Azure Span Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -166,8 +273,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			ach(16581),	-- Seeing Blue
 			ach(16428),	-- Sojourner of Azure Span
 			ach(16300),	-- Treasures of The Azure Span
-			-- TODO: NOT DONE YET
-			ach(16678),	-- Adventurer of The Azure Span
 		}),
 	})
 })));

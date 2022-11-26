@@ -111,9 +111,9 @@ i(194663, 374543);	-- Resonant Focus
 i(194640, 374498);	-- Ring-Bound Hourglass
 i(194602, 374443);	-- Sensei's Alexstraszite
 i(194613, 374456);	-- Sensei's Neltharite
--- QUESTS --
+-- QUEST --
 i(0, 377915);	-- Heart in a Bottle
--- Specc
+-- SPECIALIZATION --
 i(0, 374483);	-- Blotting Sand
 i(0, 374442);	-- Crafty Alexstraszite
 i(0, 374450);	-- Crafty Ysemerald
@@ -144,11 +144,11 @@ i(0, 394621);	-- Torc of Passed Time
 i(0, 374448);	-- Zen Malygite
 i(0, 374458);	-- Zen Neltharite
 -- NYI --
+i(0, 382584);	-- Opening
+i(0, 391784);	-- Wisp of Tyr
 i(194674, 376878);	-- Soul Drainer/Elemental Soul Cage
 i(194655, 374528);	-- Ludicrously Luxurious Lucky Loop
 i(194673, 376582);	-- Straddling Illimited Diamond
-i(0, 382584);	-- Opening
-i(0, 391784);	-- Wisp of Tyr
 i(194672, 0);	-- Band of New Beginnings
 i(194630, 0);	-- Blotting Sand
 i(194656, 0);	-- Bold-Print Bifocals
@@ -173,6 +173,7 @@ i(194669, 0);	-- Jeweled Dragon's Heart
 i(194653, 0);	-- Jeweled Offering
 i(194666, 0);	-- Keeper's Glory
 i(194657, 0);	-- Left-Handed Magnifying Glass
+i(194639, 0);	-- Design: Marvelous Mood Ring
 i(194643, 0);	-- Narcissist's Sculpture
 i(194636, 0);	-- Pendant of Impending Perils
 i(194631, 0);	-- Pounce

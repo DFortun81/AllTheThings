@@ -4,6 +4,74 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	m(THALDRASZUS, {
 		n(ACHIEVEMENTS, {
+			ach(16679, {	-- Adventurer of Thaldraszus
+				crit(1, {
+					["_npcs"] = { 193143 },	-- Razk'vex the Untamed
+				}),
+				crit(2, {
+					["_npcs"] = { 193126 },	-- Innumerable Ruination
+				}),
+				crit(3, {
+					["_npcs"] = { 193128 },	-- Blightpaw the Depraved
+				}),
+				crit(4, {
+					["_npcs"] = { 193130 },	-- Pleasant Alpha
+				}),
+				crit(5, {
+					["_npcs"] = { 193125 },	-- Goremaul the Gluttonous
+				}),
+				crit(6, {
+					["_npcs"] = { 193688 },	-- Phenran
+				}),
+				crit(7, {
+					["_npcs"] = { 193246 },	-- Matriarch Remalla <Temple Menace>
+				}),
+				crit(8, {
+					["_npcs"] = { 193210 },	-- Phleep <Time-Lost, Mind-Lost>
+				}),
+				crit(9, {
+					["_npcs"] = { 193258 },	-- Tempestrian <Stormbringer>
+				}),
+				crit(10, {
+					["_npcs"] = { 193146 },	-- Treasure-Mad Trambladd
+				}),
+				crit(11, {
+					["_npcs"] = { 193234 },	-- Eldoren the Reborn <Jewel of the Skies>
+				}),
+				crit(12, {
+					["_npcs"] = { 193240 },	-- Riverwalker Tamopo <Terror of the Shallows>
+				}),
+				crit(13, {
+					["_npcs"] = { 193220 },	-- Broodweaver Araznae <Mother of Spiders>
+				}),
+				crit(14, {
+					["_npcs"] = { 193176 },	-- Sandana the Tempest <Timesand Thief>
+				}),
+				crit(15, {
+					["_npcs"] = { 193666 },	-- Rokmur
+				}),
+				crit(16, {
+					["_npcs"] = { 193161 },	-- Woolfang
+				}),
+				crit(17, {
+					["_npcs"] = { 183984 },	-- The Weeping Vilomah
+				}),
+				crit(18, {
+					["_npcs"] = { 193663 },	-- Craggravated Elemental
+				}),
+				crit(19, {
+					["_npcs"] = { 191305 },	-- The Great Shellkhan
+				}),
+				crit(20, {
+					["_npcs"] = { 193658 },	-- Corrupted Proto-Dragon
+				}),
+				crit(21, {
+					["_npcs"] = { 193241 },	-- Lord Epochbrgl <Time-Lost>
+				}),
+				crit(22, {
+					["_npcs"] = { 193664 },	-- Ancient Protector
+				}),
+			}),
 			ach(16104, {	-- Dragon Glyphs: Algeth'ar Academy
 				["coord"] = { 62.4, 40.4, THALDRASZUS },
 			}),
@@ -36,6 +104,29 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			}),
 			ach(16105, {	-- Dragon Glyphs: Veiled Ossuary
 				["coord"] = { 67.1, 11.8, THALDRASZUS },
+			}),
+			ach(16518, {	-- Explore Thaldraszus
+				crit(1),	-- Valdrakken
+				crit(2),	-- Tyrhold
+				crit(3),	-- Gelikyr Post
+				crit(4),	-- South Hold Gate
+				crit(5),	-- Temporal Conflux
+				crit(6),	-- Algeth'ar Academy
+				crit(7),	-- Vault of the Incarnates
+				crit(8),	-- Veiled Ossuary
+			}),
+			ach(16634, {	-- Framing a New Perspective
+				crit(1),	-- The Seat of the Aspects
+				crit(2),	-- The Cascades
+				crit(3),	-- Passage of Time
+				crit(4),	-- Vault of the Incarnates
+				crit(5),	-- Tyrhold
+				crit(6),	-- Algeth'era Court
+				crit(7),	-- Veiled Ossuary
+				crit(8),	-- Serene Dreams Spa
+				crit(9),	-- Shadow Ledge
+				crit(10),	-- Valdrakken's Portal Room
+				crit(11),	-- Tyrhold Reservoir
 			}),
 			ach(16363),	-- Just Don't Ask Me to Spell It
 			ach(16398),	-- Sojourner of Thaldraszus
@@ -125,9 +216,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 
 			-- TODO: NOT COMPLETED YET
 			ach(16301),	-- Treasures of Thaldraszus
-			ach(16518),	-- Explore Thaldraszus
-			ach(16679),	-- Adventurer of Thaldraszus
-			ach(16634),	-- Framing a New Perspective
 		}),
 	}),
 })));

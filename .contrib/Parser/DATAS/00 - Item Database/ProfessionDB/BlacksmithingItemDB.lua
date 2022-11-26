@@ -2038,4 +2038,5 @@ i(194467, 0);	-- Primal Molten Vambraces
 i(194473, 0);	-- Primal Molten Warglaive
 i(194505, 0);	-- Primal Weightstone
 i(194504, 0);	-- Primal Whetstone
+i(194494, 0);	-- Reinforced Plating
 i(194507, 0);	-- Serevite Skeleton Key
