@@ -108,7 +108,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			}),
 
 
-
+			-- Valdrakken Accord Renown
+			q(70839, {	-- The Search for Titan Relics
+				["provider"] = { "n", 195768 },	-- Sorotis
+				["coord"] = { 26, 40, VALDRAKKEN },
+				["g"] = {
+					sp(388303),	-- Titan Relics
+				},
+			}),
+			q(72282, {	-- Renown Supplies
+				["sourceQuest"] = 70839,	-- The Search for Titan Relics
+				["coord"] = { 26, 40, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack (contains Dragon Isles Supplies)
+				},
+			}),
+			q(70841, {	-- More Titan Relics
+				["sourceQuest"] = 70839,	-- The Search for Titan Relics
+				["provider"] = { "n", 195768 },	-- Sorotis
+				["coord"] = { 26, 40, VALDRAKKEN },
+			}),
 
 
 			-- TODO: These need some sorting
@@ -127,9 +146,27 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["provider"] = { "n", 196499 },	-- Therazal
 				["coord"] = { 50.2, 55.9, VALDRAKKEN },
 			}),
+			q(72783, {	-- Crafting Orders
+				["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
+				["coord"] = { 84.9, 54.4, VALDRAKKEN },
+			}),
 
 
-
+			-- Profession weekly marks
+			q(66951, {	-- Population Control
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["coord"] = { 36.7, 62.4, VALDRAKKEN },
+				["g"] = {
+					i(198613),	-- Leatherworking Designs
+				},
+			}),
+			q(72158, {	-- A Dense Delivery
+				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
+				["coord"] = { 28.6, 60.4, VALDRAKKEN },
+				["g"] = {
+					i(199128),	-- Skinning Field Notes
+				},
+			}),
 
 
 			-- Weekly
