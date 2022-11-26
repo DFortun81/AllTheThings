@@ -135,7 +135,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			-- Alchemist Stones
 			q(71246, { ["name"] = "First Craft: Alacritous Alchemist Stone", }),	-- Alacritous Alchemist Stone
 			q(71245, { ["name"] = "First Craft: Sustaining Alchemist Stone", }),	-- Sustaining Alchemist Stone
-		}),	
+		}),
 		filter(MISC, {
 			i(191520),	-- Agitating Potion Augmentation+
 			i(191521),	-- Agitating Potion Augmentation++
@@ -408,7 +408,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			-- Dragon Ridning
 			q(71342, { ["name"] = "First Craft: Prototype Explorer's Barding Framework", }),	-- Prototype Explorer's Barding Framework
 			q(71343, { ["name"] = "First Craft: Prototype Regal Barding Framework", }),	-- Prototype Regal Barding Framework
-		}),	
+		}),
 		filter(MISC, {
 			i(191250),	-- Armor Spikes+
 			i(191872),	-- Armor Spikes++
@@ -768,7 +768,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			q(71880, { ["name"] = "First Craft: Scepter of Spectacle: Order", }),	-- Scepter of Spectacle: Order
 			-- Magical Merchandise
 			q(71878, { ["name"] = "First Craft: Sophic Amalgamation", }),	-- Sophic Amalgamation
-		}),	
+		}),
 		filter(ILLUSIONS, {
 			i(200883),	-- Illusion: Primal Air
 			i(200905),	-- Illusion: Primal Earth
@@ -1004,7 +1004,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			-- Robotics
 			q(71458, { ["name"] = "First Craft: D.U.C.K.O.Y", }),	-- D.U.C.K.O.Y
 			--q(, { ["name"] = "First Craft: Quack-E", }),	-- Quack-E
-		}),	
+		}),
 		filter(MISC, {
 			i(198549),	-- Black Fireflight
 			i(198222),	-- Blue Fireflight
@@ -2365,10 +2365,10 @@ root("HiddenQuestTriggers", {
 			q(71703),	-- Pioneer's Leather Tunic
 			q(72569),	-- Pioneer's Leather Wristguard
 			q(72495),	-- Pioneer's Practiced Belt
-			q(),	-- Pioneer's Practiced Cowl
+			q(72505),	-- Pioneer's Practiced Cowl
 			q(72496),	-- Pioneer's Practiced Gloves
 			q(72497),	-- Pioneer's Practiced Leggings
-			q(),	-- Pioneer's Practiced Shoulderpads
+			q(72498),	-- Pioneer's Practiced Shoulderpads
 			-- Mail Armor
 			q(),	-- Flame-Touched Chain
 			q(),	-- Flame-Touched Chainmail
@@ -2378,14 +2378,14 @@ root("HiddenQuestTriggers", {
 			q(),	-- Flame-Touched Legguards
 			q(),	-- Flame-Touched Spaulders
 			q(),	-- Flame-Touched Treads
-			q(),	-- Trailblazer's Scale Boots
+			q(71730),	-- Trailblazer's Scale Boots
 			q(),	-- Trailblazer's Scale Bracers
 			q(),	-- Trailblazer's Scale Vest
 			q(),	-- Trailblazer's Toughened Chainbelt
 			q(),	-- Trailblazer's Toughened Coif
-			q(),	-- Trailblazer's Toughened Grips
+			q(72500),	-- Trailblazer's Toughened Grips
 			q(),	-- Trailblazer's Toughened Legguards
-			q(),	-- Trailblazer's Toughened Spikes
+			q(72503),	-- Trailblazer's Toughened Spikes
 			-- Profession Equipment
 			q(71683),	-- Alchemist's Hat
 			q(71767),	-- Durable Pack
@@ -2396,13 +2396,13 @@ root("HiddenQuestTriggers", {
 			q(),	-- Jeweler's Cover
 			q(),	-- Lavish Floral Pack
 			q(),	-- Masterwork Smock
-			q(),	-- Protective Gloves
+			q(71749),	-- Protective Gloves
 			q(),	-- Reinforced Pack
-			q(),	-- Resilient Smock
+			q(71755),	-- Resilient Smock
 			q(),	-- Resplendent Cover
 			q(),	-- Shockproof Gloves
-			q(),	-- Skinner's Cap
-			q(),	-- Smithing Apron
+			q(71769),	-- Skinner's Cap
+			q(71744),	-- Smithing Apron
 			-- Weapons
 			q(),	-- Bonewrought Crossbow
 			-- Elemental Patterns
@@ -2450,7 +2450,7 @@ root("HiddenQuestTriggers", {
 			q(),	-- Frostbite Scale
 			q(),	-- Infurious Hide
 			q(),	-- Infurious Scales
-			q(),	-- Mireslush Hide
+			q(71760),	-- Mireslush Hide
 			q(),	-- Stonecrust Hide
 			-- Optional Reagents
 			q(),	-- Fang Adornments
@@ -2460,9 +2460,9 @@ root("HiddenQuestTriggers", {
 			-- Armor Kits
 			q(),	-- Fierce Armor Kit
 			q(),	-- Frosted Armor Kit
-			q(),	-- Reinforced Armor Kit
+			q(71743),	-- Reinforced Armor Kit
 			-- Drums
-			q(),	-- Feral Hide Drums
+			q(71746),	-- Feral Hide Drums
 			-- Toys
 			q(),	-- Artisan's Sign
 			q(),	-- Gnoll Tent

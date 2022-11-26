@@ -4,6 +4,27 @@
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	n(VALDRAKKEN_ACCORD, {
 		n(QUESTS, {
+				-- RENOWN 2 --
+			q(70839, {	-- The Search for Titan Relics
+				["provider"] = { "n", 195768 },	-- Sorotis
+				["coord"] = { 26, 40, VALDRAKKEN },
+				["g"] = {
+					sp(388303),	-- Titan Relics
+				},
+			}),
+			q(72282, {	-- Renown Supplies
+				["sourceQuest"] = 70839,	-- The Search for Titan Relics
+				["coord"] = { 26, 40, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack (contains Dragon Isles Supplies)
+				},
+			}),
+			q(70841, {	-- More Titan Relics
+				["sourceQuest"] = 70839,	-- The Search for Titan Relics
+				["provider"] = { "n", 195768 },	-- Sorotis
+				["coord"] = { 26, 40, VALDRAKKEN },
+			}),
+
 				-- RENOWN 3 --
 			q(70880, {	-- To Cook With Finery
 				["description"] = "Requires Renown 3.",
