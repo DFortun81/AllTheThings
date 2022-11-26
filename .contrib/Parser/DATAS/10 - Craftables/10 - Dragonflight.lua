@@ -2359,7 +2359,7 @@ root("HiddenQuestTriggers", {
 			q(),	-- Life-Bound Cap
 			q(),	-- Life-Bound Chestpiece
 			q(),	-- Life-Bound Gloves
-			q(),	-- Life-Bound Shoulderpads
+			q(71711),	-- Life-Bound Shoulderpads
 			q(),	-- Life-Bound Trousers
 			q(),	-- Pioneer's Leather Boots
 			q(71703),	-- Pioneer's Leather Tunic
