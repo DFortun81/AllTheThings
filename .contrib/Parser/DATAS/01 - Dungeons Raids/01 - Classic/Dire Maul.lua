@@ -640,6 +640,20 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						}),
 					},
 				}),
+				q(27129, {	-- Saving Warpwood [A]
+					["qg"] = 40032,	-- Telaron Windflight
+					["coord"] = { 50.7, 17.2, FERALAS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(27130, {	-- Saving Warpwood [H]
+					["qg"] = 7875,	-- Hadoken Swiftstrider
+					["coord"] = { 74.9, 42.4, FERALAS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(27103, {	-- Shards of the Felvine
 					["qg"] = 44969,	-- Furgus Warpwood
 					["timeline"] = { "added 4.0.3" },
@@ -814,6 +828,20 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
+				}),
+				q(27131, {	-- The Highborne [A]
+					["qg"] = 40032,	-- Telaron Windflight
+					["coord"] = { 50.7, 17.2, FERALAS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(27132, {	-- The Highborne [H]
+					["qg"] = 7875,	-- Hadoken Swiftstrider
+					["coord"] = { 74.9, 42.4, FERALAS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(7501, {	-- The Light and How To Swing It
 					["providers"] = {

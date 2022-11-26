@@ -1150,12 +1150,6 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
-				q(3122, {	-- Return to Witch Doctor Uzer'i
-					["sourceQuest"] = 3121,	-- A Strange Request
-					["qg"] = 3216,	-- Neeru Fireblade
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(3924, {	-- Samophlange Manual
 					["qg"] = 9317,	-- Rilli Greasygob
 					["coord"] = { 56.8, 56.4, ORGRIMMAR },

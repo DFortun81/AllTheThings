@@ -182,20 +182,9 @@ q(2458),	-- Deep Cover,		TBC: Deep Cover,		CLASSIC: Deep Cover
 q(2460),	-- The Shattered Salute,		TBC: The Shattered Salute,		CLASSIC: The Shattered Salute
 q(2478),	-- Mission: Possible But Not Probable,		TBC: Mission: Possible But Not Probable,		CLASSIC: Mission: Possible But Not Probable
 q(2479),	-- Hinott's Assistance,		TBC: Hinott's Assistance,		CLASSIC: Hinott's Assistance
-q(2821),	-- The Mark of Quality,		TBC: The Mark of Quality,		CLASSIC: The Mark of Quality
-q(2844),	-- The Giant Guardian,		TBC: The Giant Guardian,		CLASSIC: The Giant Guardian
-q(2866),	-- The Ruins of Solarsal,		TBC: The Ruins of Solarsal,		CLASSIC: The Ruins of Solarsal
-q(2867),	-- Return to Feathermoon Stronghold,		TBC: Return to Feathermoon Stronghold,		CLASSIC: Return to Feathermoon Stronghold
 q(2868),	-- <TXT> The Shriveled Heart,		TBC: <TXT> The Shriveled Heart,		CLASSIC: <TXT> The Shriveled Heart
-q(2869),	-- Against the Hatecrest,		TBC: Against the Hatecrest,		CLASSIC: Against the Hatecrest
-q(2870),	-- Against Lord Shalzaru,		TBC: Against Lord Shalzaru,		CLASSIC: Against Lord Shalzaru
-q(2879),	-- The Stave of Equinex,		TBC: The Stave of Equinex,		CLASSIC: The Stave of Equinex
-q(2939),	-- In Search of Knowledge,		TBC: In Search of Knowledge,		CLASSIC: In Search of Knowledge
 q(2944),	-- The Super Snapper FX,		TBC: The Super Snapper FX,		CLASSIC: The Super Snapper FX
-q(2969),	-- Freedom for All Creatures,		TBC: Freedom for All Creatures,		CLASSIC: Freedom for All Creatures
-q(2970),	-- Doling Justice,		TBC: Doling Justice,		CLASSIC: Doling Justice
 q(2971),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(2982),	-- The High Wilderness,		TBC: The High Wilderness,		CLASSIC: The High Wilderness
 q(2983),	-- Call of Fire,		TBC: Call of Fire,		CLASSIC: Call of Fire
 q(2984),	-- Call of Fire,		TBC: Call of Fire,		CLASSIC: Call of Fire
 q(2985),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
@@ -213,8 +202,6 @@ q(3092),	-- Etched Note,		TBC: Etched Note,		CLASSIC: Etched Note
 q(3093),	-- Rune-Inscribed Note,		TBC: Rune-Inscribed Note,		CLASSIC: Rune-Inscribed Note
 q(3094),	-- Verdant Note,		TBC: Verdant Note,		CLASSIC: Verdant Note
 q(3111),	-- <UNUSED> [DEPRECATED],		CLASSIC: <UNUSED> [DEPRECATED]
-q(3124),	-- Hippogryph Muisek,		TBC: Hippogryph Muisek,		CLASSIC: Hippogryph Muisek
-q(3130),	-- Against the Hatecrest,		TBC: Against the Hatecrest,		CLASSIC: Against the Hatecrest
 q(3241),	-- <NYI> <TXT><redux> Dreadmist Peak,		TBC: <NYI> <TXT><redux> Dreadmist Peak,		CLASSIC: <NYI> <TXT><redux> Dreadmist Peak
 q(3383),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3384),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -238,19 +225,8 @@ q(3623),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(3624),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(3631),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
 q(3681),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
-q(3787),	-- Jonespyre's Request,		TBC: Jonespyre's Request,		CLASSIC: Jonespyre's Request
-q(3788),	-- Jonespyre's Request,		TBC: Jonespyre's Request,		CLASSIC: Jonespyre's Request
 q(3885),	-- <NYI> <TXT> The Gadgetzan Run,		TBC: <NYI> <TXT> The Gadgetzan Run,		CLASSIC: <NYI> <TXT> The Gadgetzan Run
 q(3910),	-- <NYI> <TXT> The Un'Goro Run,		CLASSIC: <NYI> <TXT> The Un'Goro Run
-q(4124),	-- The Missing Courier,		TBC: The Missing Courier,		CLASSIC: The Missing Courier
-q(4125),	-- The Missing Courier,		TBC: The Missing Courier,		CLASSIC: The Missing Courier
-q(4127),	-- Boat Wreckage,		TBC: Boat Wreckage,		CLASSIC: Boat Wreckage
-q(4129),	-- The Knife Revealed,		TBC: The Knife Revealed,		CLASSIC: The Knife Revealed
-q(4130),	-- Psychometric Reading,		TBC: Psychometric Reading,		CLASSIC: Psychometric Reading
-q(4131),	-- The Woodpaw Gnolls,		TBC: The Woodpaw Gnolls,		CLASSIC: The Woodpaw Gnolls
-q(4135),	-- The Writhing Deep,		TBC: The Writhing Deep,		CLASSIC: The Writhing Deep
-q(4265),	-- Freed from the Hive,		TBC: Freed from the Hive,		CLASSIC: Freed from the Hive
-q(4281),	-- Thalanaar Delivery,		TBC: Thalanaar Delivery,		CLASSIC: Thalanaar Delivery
 q(4299),	-- <NYI> <TXT>The Tomb of the Seven,		TBC: <NYI> <TXT>The Tomb of the Seven,		CLASSIC: <NYI> <TXT>The Tomb of the Seven
 q(4323),	-- <NYI> <TXT> Get those Hyenas!!!,		TBC: <NYI> <TXT> Get those Hyenas!!!,		CLASSIC: <NYI> <TXT> Get those Hyenas!!!
 q(4487),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
