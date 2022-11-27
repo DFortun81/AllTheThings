@@ -2477,6 +2477,7 @@ _.ObjectNames = {
 	[378010] = "Forgotten Dragon Treasure",
 	[380533] = "Snow Covered Scroll",
 	[380547] = "Decay-Infused Tanning Oil",
+	[380587] = "Crate of Treated Hides",
 	[380653] = "Yennu's Kite",
 	[380654] = "Dead Man's Chestplate",
 	[380840] = "Torn Riding Pack",
