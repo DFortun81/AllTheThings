@@ -167,7 +167,6 @@ namespace ATT
                 // Write back the lines to the file.
                 File.WriteAllLines(tocFile.FullName, lines);
                 GitAddChange(tocFile.Name);
-                break;
             }
 
             // Attempt to Commit the TOC change to the Git

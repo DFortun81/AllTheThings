@@ -3454,267 +3454,286 @@ namespace ATT
         /// </summary>
         public static void Export()
         {
+#if ANYCLASSIC
+#if PTR
+            // We want PTR builds of ATT to build the database to the AllTheThings PTR folder.
+            string addonRootFolder = "../../../../../../_classic_ptr_/Interface/AddOns/AllTheThings";
+#else
+            // We want Classic WRATH, TBC, and Classic builds of ATT to build the database to the ATT-Classic folder.
+            string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";
+#endif
+
+#if DRAGONFLIGHT
+            string dbRootFolder = "Dragonflight/";
+#elif SHADOWLANDS
+            string dbRootFolder = "Shadowlands/";
+#elif BFA
+            string dbRootFolder = "BFA/";
+#elif LEGION
+            string dbRootFolder = "Legion/";
+#elif WOD
+            string dbRootFolder = "WOD/";
+#elif MOP
+            string dbRootFolder = "MOP/";
+#elif CATA
+            string dbRootFolder = "Cata/";
+#elif WRATH
+            string dbRootFolder = "Wrath/";
+#elif TBC
+            string dbRootFolder = "TBC/";
+#else
+            string dbRootFolder = "Classic/";
+#endif
+#else
 #if PTR
             // We want PTR builds of ATT to build the database to the AllTheThings PTR folder.
             string addonRootFolder = "../../../../../../_ptr_/Interface/AddOns/AllTheThings";
-#elif CLASSICPTR
-            // We want Classic PTR builds of ATT to build the database to the ATT-Classic Classic PTR folder.
-            string addonRootFolder = "../../../../../../_classic_ptr_/Interface/AddOns/ATT-Classic";
-#elif CLASSICBETA
-            // NOTE: WRATH currently points to this in the config.
-            // We want Classic Beta builds of ATT to build the database to the ATT-Classic Classic Beta folder.
-            string addonRootFolder = "../../../../../../_classic_beta_/Interface/AddOns/ATT-Classic";
-#elif WRATH
-            // We want Classic WRATH builds of ATT to build the database to the ATT-Classic Classic WRATH folder.
-            string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";
-#elif TBC
-            // We want Classic TBC builds of ATT to build the database to the ATT-Classic Classic TBC folder.
-            string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";
-#elif CLASSIC
-            // We want Classic builds of ATT to build the database to the ATT-Classic Classic folder.
-            string addonRootFolder = "../../../../../../_classic_era_/Interface/AddOns/ATT-Classic";
 #else
             // Default is relative to where the executable is. (.contrib/Parser)
             string addonRootFolder = "../..";
 #endif
-            // DEBUGGING: Output Parsed Data
-            if (DebugMode)
+			string dbRootFolder = "../..";
+#endif
+
+            // Setup the output folder (/db)
+            var outputFolder = Directory.CreateDirectory($"{addonRootFolder}/db/{dbRootFolder}");
+            if (outputFolder.Exists)
             {
-                ATT.Export.DebugMode = true;
-                var debugFolder = Directory.CreateDirectory($"{addonRootFolder}/.contrib/Debugging");
-                if (debugFolder.Exists)
+
+                // DEBUGGING: Output Parsed Data
+                if (DebugMode)
                 {
-                    // Export various debug information to the Debugging folder.
-                    Items.ExportDebug(debugFolder.FullName);
-                    Objects.ExportDebug(debugFolder.FullName);
-                    Objects.ExportDB(debugFolder.FullName);
-
-                    // Export custom Debug DB data to the Debugging folder. (as JSON for simplicity)
-                    foreach (KeyValuePair<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> dbKeyDatas in DebugDBs)
+                    ATT.Export.DebugMode = true;
+                    var debugFolder = Directory.CreateDirectory($"{addonRootFolder}/.contrib/Debugging");
+                    if (debugFolder.Exists)
                     {
-                        File.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"), MiniJSON.Json.Serialize(dbKeyDatas.Value));
+                        // Export various debug information to the Debugging folder.
+                        Items.ExportDebug(debugFolder.FullName);
+                        Objects.ExportDebug(debugFolder.FullName);
+                        Objects.ExportDB(debugFolder.FullName);
+
+                        // Export custom Debug DB data to the Debugging folder. (as JSON for simplicity)
+                        foreach (KeyValuePair<string, SortedDictionary<decimal, List<Dictionary<string, object>>>> dbKeyDatas in DebugDBs)
+                        {
+                            File.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"), MiniJSON.Json.Serialize(dbKeyDatas.Value));
+                        }
+
+                        // Export the Category DB file.
+                        if (CATEGORY_NAMES.Any())
+                        {
+                            var builder = new StringBuilder("---------------------------------------------------------\n--   C A T E G O R Y   D A T A B A S E   M O D U L E   --\n---------------------------------------------------------\n");
+                            var keys = CATEGORY_NAMES.Keys.ToList();
+                            keys.Sort();
+                            builder.Append("_.CategoryNames = {").AppendLine();
+                            foreach (var key in keys)
+                            {
+                                var name = CATEGORY_NAMES[key];
+                                builder.Append("\t[").Append(key).Append("] = ");
+                                if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
+                                {
+                                    builder.Append("[[").Append(name).Append("]],").AppendLine();
+                                }
+                                else builder.Append("\"").Append(name).Append("\",").AppendLine();
+                            }
+                            builder.AppendLine("};");
+                            builder.Append("_.CategoryIcons = {").AppendLine();
+                            foreach (var key in keys)
+                            {
+                                if (CATEGORY_ICONS.TryGetValue(key, out string icon))
+                                {
+                                    builder.Append("\t[").Append(key).Append("] = \"").Append(icon).Append("\",");
+                                    if (CATEGORY_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
+                                    builder.AppendLine();
+                                }
+                                else
+                                {
+                                    builder.Append("\t-- [").Append(key).Append("] = \"\",");
+                                    if (CATEGORY_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
+                                    builder.AppendLine();
+                                }
+                            }
+                            keys = CATEGORY_ICONS.Keys.ToList();
+                            keys.Sort();
+                            foreach (var key in keys)
+                            {
+                                if (!CATEGORY_NAMES.ContainsKey(key))
+                                {
+                                    builder.Append("\t[").Append(key).Append("] = \"").Append(CATEGORY_ICONS[key]).Append("\",").AppendLine();
+                                }
+                            }
+                            builder.AppendLine("};");
+                            File.WriteAllText(Path.Combine(debugFolder.FullName, "CategoryDB.lua"), builder.ToString());
+                        }
+
+                        // Export the Object DB file.
+                        if (OBJECT_NAMES.Any())
+                        {
+                            var builder = new StringBuilder("-----------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
+                            var keys = OBJECT_NAMES.Keys.ToList();
+                            keys.Sort();
+                            builder.Append("_.ObjectNames = {").AppendLine();
+                            foreach (var key in keys)
+                            {
+                                var name = OBJECT_NAMES[key];
+                                builder.Append("\t[").Append(key).Append("] = ");
+                                if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
+                                {
+                                    builder.Append("[[").Append(name).Append("]],").AppendLine();
+                                }
+                                else builder.Append("\"").Append(name).Append("\",").AppendLine();
+                            }
+                            builder.AppendLine("};");
+                            keys = OBJECT_ICONS.Keys.ToList();
+                            keys.Sort();
+                            builder.Append("_.ObjectIcons = {").AppendLine();
+                            foreach (var key in keys)
+                            {
+                                builder.Append("\t[").Append(key).Append("] = \"").Append(OBJECT_ICONS[key]).Append("\",");
+                                if (OBJECT_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
+                                builder.AppendLine();
+                            }
+                            builder.AppendLine("};");
+                            keys = OBJECT_MODELS.Keys.ToList();
+                            keys.Sort();
+                            builder.Append("_.ObjectModels = {").AppendLine();
+                            foreach (var key in keys)
+                            {
+                                builder.Append("\t[").Append(key).Append("] = ").Append(OBJECT_MODELS[key]).Append(",");
+                                if (OBJECT_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
+                                builder.AppendLine();
+                            }
+                            builder.AppendLine("};");
+                            File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB.lua"), builder.ToString());
+                        }
+
+                        // Export the Mount DB file.
+                        var mounts = Framework.Items.AllIDs;
+                        if (mounts.Any())
+                        {
+                            var builder = new StringBuilder("-----------------------------------------------------\n--   M O U N T   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
+                            var keys = mounts.ToList();
+                            keys.Sort();
+                            foreach (var itemID in keys)
+                            {
+                                var item = Framework.Items.GetNull(itemID);
+                                if (item != null)
+                                {
+                                    if (item.TryGetValue("mountID", out long spellID))
+                                    {
+                                        builder.Append("i(").Append(itemID).Append(", ").Append(spellID).Append(");");
+                                        if (item != null && item.TryGetValue("name", out string name)) builder.Append("\t-- ").Append(name);
+                                        builder.AppendLine();
+                                    }
+                                    else if (item.TryGetValue("f", out long f) && f == 100)
+                                    {
+                                        builder.Append("i(").Append(itemID);
+                                        if (item.TryGetValue("spellID", out spellID)) builder.Append(", ").Append(spellID);
+                                        builder.Append(");");
+                                        if (item != null && item.TryGetValue("name", out string name)) builder.Append("\t-- ").Append(name);
+                                        builder.AppendLine();
+                                    }
+                                }
+                            }
+                            File.WriteAllText(Path.Combine(debugFolder.FullName, "RawMountDB.lua"), builder.ToString());
+                        }
                     }
+                }
 
-                    // Export the Category DB file.
-                    if (CATEGORY_NAMES.Any())
+                // Export the Category DB file, but only Categories that have references in the addon.
+                if (CATEGORY_NAMES.Any())
+                {
+                    var builder = new StringBuilder("---------------------------------------------------------\n--   C A T E G O R Y   D A T A B A S E   M O D U L E   --\n---------------------------------------------------------\n");
+                    var keys = CATEGORY_NAMES.Keys.ToList();
+                    keys.Sort();
+                    builder.Append("select(2, ...).CategoryNames = {").AppendLine();
+                    foreach (var key in keys)
                     {
-                        var builder = new StringBuilder("---------------------------------------------------------\n--   C A T E G O R Y   D A T A B A S E   M O D U L E   --\n---------------------------------------------------------\n");
-                        var keys = CATEGORY_NAMES.Keys.ToList();
-                        keys.Sort();
-                        builder.Append("_.CategoryNames = {").AppendLine();
-                        foreach (var key in keys)
+                        if (CATEGORY_WITH_REFERENCES.ContainsKey(key))
                         {
                             var name = CATEGORY_NAMES[key];
                             builder.Append("\t[").Append(key).Append("] = ");
                             if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
                             {
-                                builder.Append("[[").Append(name).Append("]],").AppendLine();
+                                builder.Append(name).Append(",").AppendLine();
                             }
                             else builder.Append("\"").Append(name).Append("\",").AppendLine();
                         }
-                        builder.AppendLine("};");
-                        builder.Append("_.CategoryIcons = {").AppendLine();
-                        foreach (var key in keys)
-                        {
-                            if (CATEGORY_ICONS.TryGetValue(key, out string icon))
-                            {
-                                builder.Append("\t[").Append(key).Append("] = \"").Append(icon).Append("\",");
-                                if (CATEGORY_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
-                                builder.AppendLine();
-                            }
-                            else
-                            {
-                                builder.Append("\t-- [").Append(key).Append("] = \"\",");
-                                if (CATEGORY_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
-                                builder.AppendLine();
-                            }
-                        }
-                        keys = CATEGORY_ICONS.Keys.ToList();
-                        keys.Sort();
-                        foreach (var key in keys)
-                        {
-                            if (!CATEGORY_NAMES.ContainsKey(key))
-                            {
-                                builder.Append("\t[").Append(key).Append("] = \"").Append(CATEGORY_ICONS[key]).Append("\",").AppendLine();
-                            }
-                        }
-                        builder.AppendLine("};");
-                        File.WriteAllText(Path.Combine(debugFolder.FullName, "CategoryDB.lua"), builder.ToString());
                     }
-
-                    // Export the Object DB file.
-                    if (OBJECT_NAMES.Any())
+                    builder.AppendLine("};");
+                    keys = CATEGORY_ICONS.Keys.ToList();
+                    keys.Sort();
+                    builder.Append("select(2, ...).CategoryIcons = {").AppendLine();
+                    foreach (var key in keys)
                     {
-                        var builder = new StringBuilder("-----------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
-                        var keys = OBJECT_NAMES.Keys.ToList();
-                        keys.Sort();
-                        builder.Append("_.ObjectNames = {").AppendLine();
-                        foreach (var key in keys)
+                        if (CATEGORY_WITH_REFERENCES.ContainsKey(key))
+                        {
+                            builder.Append("\t[").Append(key).Append("] = \"").Append(CATEGORY_ICONS[key]).Append("\",").AppendLine();
+                        }
+                    }
+                    builder.AppendLine("};");
+
+                    // Check to make sure the content is different since Diff tools are dumb as hell.
+                    var filename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}CategoryDB.lua");
+                    var content = builder.ToString().Replace("\r\n", "\n").Trim();
+                    if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
+                }
+
+                // Export the Object DB file.
+                if (OBJECT_NAMES.Any())
+                {
+                    var builder = new StringBuilder("-------------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-------------------------------------------------------\n");
+                    var keys = OBJECT_NAMES.Keys.ToList();
+                    keys.Sort();
+                    builder.AppendLine("local _ = select(2, ...);").Append("_.ObjectNames = {").AppendLine();
+                    foreach (var key in keys)
+                    {
+                        if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
                         {
                             var name = OBJECT_NAMES[key];
                             builder.Append("\t[").Append(key).Append("] = ");
-                            if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
+                            if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~") || name.StartsWith("_."))
                             {
-                                builder.Append("[[").Append(name).Append("]],").AppendLine();
+                                builder.Append(name).Append(",").AppendLine();
                             }
                             else builder.Append("\"").Append(name).Append("\",").AppendLine();
                         }
-                        builder.AppendLine("};");
-                        keys = OBJECT_ICONS.Keys.ToList();
-                        keys.Sort();
-                        builder.Append("_.ObjectIcons = {").AppendLine();
-                        foreach (var key in keys)
-                        {
-                            builder.Append("\t[").Append(key).Append("] = \"").Append(OBJECT_ICONS[key]).Append("\",");
-                            if (OBJECT_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
-                            builder.AppendLine();
-                        }
-                        builder.AppendLine("};");
-                        keys = OBJECT_MODELS.Keys.ToList();
-                        keys.Sort();
-                        builder.Append("_.ObjectModels = {").AppendLine();
-                        foreach (var key in keys)
-                        {
-                            builder.Append("\t[").Append(key).Append("] = ").Append(OBJECT_MODELS[key]).Append(",");
-                            if (OBJECT_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
-                            builder.AppendLine();
-                        }
-                        builder.AppendLine("};");
-                        File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB.lua"), builder.ToString());
                     }
-
-                    // Export the Mount DB file.
-                    var mounts = Framework.Items.AllIDs;
-                    if (mounts.Any())
+                    builder.AppendLine("};");
+                    keys = OBJECT_ICONS.Keys.ToList();
+                    keys.Sort();
+                    builder.Append("_.ObjectIcons = {").AppendLine();
+                    foreach (var key in keys)
                     {
-                        var builder = new StringBuilder("-----------------------------------------------------\n--   M O U N T   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
-                        var keys = mounts.ToList();
-                        keys.Sort();
-                        foreach (var itemID in keys)
+                        if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
                         {
-                            var item = Framework.Items.GetNull(itemID);
-                            if (item != null)
+                            var icon = OBJECT_ICONS[key];
+                            builder.Append("\t[").Append(key).Append("] = ");
+                            if (icon.StartsWith("GetSpellInfo") || icon.StartsWith("GetItem") || icon.StartsWith("select(") || icon.StartsWith("~") || icon.StartsWith("_."))
                             {
-                                if (item.TryGetValue("mountID", out long spellID))
-                                {
-                                    builder.Append("i(").Append(itemID).Append(", ").Append(spellID).Append(");");
-                                    if (item != null && item.TryGetValue("name", out string name)) builder.Append("\t-- ").Append(name);
-                                    builder.AppendLine();
-                                }
-                                else if (item.TryGetValue("f", out long f) && f == 100)
-                                {
-                                    builder.Append("i(").Append(itemID);
-                                    if (item.TryGetValue("spellID", out spellID)) builder.Append(", ").Append(spellID);
-                                    builder.Append(");");
-                                    if (item != null && item.TryGetValue("name", out string name)) builder.Append("\t-- ").Append(name);
-                                    builder.AppendLine();
-                                }
+                                builder.Append(icon).Append(",").AppendLine();
                             }
+                            else builder.Append("\"").Append(icon).Append("\",").AppendLine();
                         }
-                        File.WriteAllText(Path.Combine(debugFolder.FullName, "RawMountDB.lua"), builder.ToString());
                     }
-                }
-            }
-
-            // Export the Category DB file, but only Categories that have references in the addon.
-            if (CATEGORY_NAMES.Any())
-            {
-                var builder = new StringBuilder("---------------------------------------------------------\n--   C A T E G O R Y   D A T A B A S E   M O D U L E   --\n---------------------------------------------------------\n");
-                var keys = CATEGORY_NAMES.Keys.ToList();
-                keys.Sort();
-                builder.Append("select(2, ...).CategoryNames = {").AppendLine();
-                foreach (var key in keys)
-                {
-                    if (CATEGORY_WITH_REFERENCES.ContainsKey(key))
+                    builder.AppendLine("};");
+                    keys = OBJECT_MODELS.Keys.ToList();
+                    keys.Sort();
+                    builder.Append("_.ObjectModels = {").AppendLine();
+                    foreach (var key in keys)
                     {
-                        var name = CATEGORY_NAMES[key];
-                        builder.Append("\t[").Append(key).Append("] = ");
-                        if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
+                        if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
                         {
-                            builder.Append(name).Append(",").AppendLine();
+                            builder.Append("\t[").Append(key).Append("] = ").Append(OBJECT_MODELS[key]).Append(",").AppendLine();
                         }
-                        else builder.Append("\"").Append(name).Append("\",").AppendLine();
                     }
-                }
-                builder.AppendLine("};");
-                keys = CATEGORY_ICONS.Keys.ToList();
-                keys.Sort();
-                builder.Append("select(2, ...).CategoryIcons = {").AppendLine();
-                foreach (var key in keys)
-                {
-                    if (CATEGORY_WITH_REFERENCES.ContainsKey(key))
-                    {
-                        builder.Append("\t[").Append(key).Append("] = \"").Append(CATEGORY_ICONS[key]).Append("\",").AppendLine();
-                    }
-                }
-                builder.AppendLine("};");
+                    builder.AppendLine("};");
 
-                // Check to make sure the content is different since Diff tools are dumb as hell.
-                var filename = Path.Combine(addonRootFolder, "db/CategoryDB.lua");
-                var content = builder.ToString().Replace("\r\n", "\n").Trim();
-                if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
-            }
-
-            // Export the Object DB file.
-            if (OBJECT_NAMES.Any())
-            {
-                var builder = new StringBuilder("-------------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-------------------------------------------------------\n");
-                var keys = OBJECT_NAMES.Keys.ToList();
-                keys.Sort();
-                builder.AppendLine("local _ = select(2, ...);").Append("_.ObjectNames = {").AppendLine();
-                foreach (var key in keys)
-                {
-                    if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
-                    {
-                        var name = OBJECT_NAMES[key];
-                        builder.Append("\t[").Append(key).Append("] = ");
-                        if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~") || name.StartsWith("_."))
-                        {
-                            builder.Append(name).Append(",").AppendLine();
-                        }
-                        else builder.Append("\"").Append(name).Append("\",").AppendLine();
-                    }
+                    // Check to make sure the content is different since Diff tools are dumb as hell.
+                    var filename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}ObjectDB.lua");
+                    var content = builder.ToString().Replace("\r\n", "\n").Trim();
+                    if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
                 }
-                builder.AppendLine("};");
-                keys = OBJECT_ICONS.Keys.ToList();
-                keys.Sort();
-                builder.Append("_.ObjectIcons = {").AppendLine();
-                foreach (var key in keys)
-                {
-                    if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
-                    {
-                        var icon = OBJECT_ICONS[key];
-                        builder.Append("\t[").Append(key).Append("] = ");
-                        if (icon.StartsWith("GetSpellInfo") || icon.StartsWith("GetItem") || icon.StartsWith("select(") || icon.StartsWith("~") || icon.StartsWith("_."))
-                        {
-                            builder.Append(icon).Append(",").AppendLine();
-                        }
-                        else builder.Append("\"").Append(icon).Append("\",").AppendLine();
-                    }
-                }
-                builder.AppendLine("};");
-                keys = OBJECT_MODELS.Keys.ToList();
-                keys.Sort();
-                builder.Append("_.ObjectModels = {").AppendLine();
-                foreach (var key in keys)
-                {
-                    if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
-                    {
-                        builder.Append("\t[").Append(key).Append("] = ").Append(OBJECT_MODELS[key]).Append(",").AppendLine();
-                    }
-                }
-                builder.AppendLine("};");
 
-                // Check to make sure the content is different since Diff tools are dumb as hell.
-                var filename = Path.Combine(addonRootFolder, "db/ObjectDB.lua");
-                var content = builder.ToString().Replace("\r\n", "\n").Trim();
-                if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
-            }
-
-            // Setup the output folder (/db)
-            var outputFolder = Directory.CreateDirectory($"{addonRootFolder}/db");
-            if (outputFolder.Exists)
-            {
                 // Export various debug information to the output folder.
                 ATT.Export.IncludeRawNewlines = false;
                 Objects.Export(outputFolder.FullName);

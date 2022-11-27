@@ -361,20 +361,14 @@ namespace ATT
 #else
                         return false;
 #endif
+                    case "BETA":
+#if BETA
+                        return true;
+#else
+                        return false;
+#endif
                     case "PTR":
 #if PTR
-                        return true;
-#else
-                        return false;
-#endif
-                    case "CLASSICPTR":
-#if CLASSICPTR
-                        return true;
-#else
-                        return false;
-#endif
-                    case "CLASSICBETA":
-#if CLASSICBETA
                         return true;
 #else
                         return false;
