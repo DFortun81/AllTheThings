@@ -2399,6 +2399,11 @@ root("Zones", m(KALIMDOR, {
 							["isLimited"] = true,
 							-- #endif
 						}),
+						i(201794, {	-- Schematic: Tranquil Mechanical Yeti
+							["timeline"] = { "added 10.0.2" },
+							["description"] = "Available for purchase after you complete |cFFFFD700Yetiphobia|r quest.",
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(14742, {	-- Zap Farflinger <Unbalanced Engineer>

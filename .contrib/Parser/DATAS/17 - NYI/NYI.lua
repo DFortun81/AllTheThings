@@ -2385,7 +2385,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(199253),	-- Schematic: Suspiciously Ticking Crate (RECIPE!)
 				i(199287),	-- Schematic: Tinker: Plane Displacer (RECIPE!)
 				i(199258),	-- Schematic: Tinker: Supercollide-O-Tron (RECIPE!)
-				i(201794),	-- Schematic: Tranquil Mechanical Yeti (RECIPE!)
 				i(199265),	-- Schematic: Wyrmhole Generator (RECIPE!)
 				i(199415),	-- Schematic: Zapthrottle Soul Inhaler (RECIPE!)
 				-- Items

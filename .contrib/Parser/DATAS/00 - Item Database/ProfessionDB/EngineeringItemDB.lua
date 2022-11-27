@@ -104,6 +104,7 @@ i(199239, 382334);	-- Tinker: Alarm-O-Turret
 i(199229, 382324);	-- Tinker: Breath of Neltharion
 i(199246, 382344);	-- Tinker: Grounded Circuitry
 i(199299, 386667);	-- Tinker: Polarity Amplifier
+i(201794, 26011);	-- Tranquil Mechanical Yeti
 -- DISCOVERY --
 i(0, 382350);	-- Calibrated Safety Switch
 i(0, 382319);	-- Complicated Cuffs
@@ -205,6 +206,5 @@ i(199257, 0);	-- Suspiciously Silent Crate
 i(199253, 0);	-- Suspiciously Ticking Crate
 i(199287, 0);	-- Tinker: Plane Displacer
 i(199258, 0);	-- Tinker: Supercollide-O-Tron
-i(201794, 0);	-- Tranquil Mechanical Yeti
 i(199265, 0);	-- Wyrmhole Generator
 i(199415, 0);	-- Zapthrottle Soul Inhaler
