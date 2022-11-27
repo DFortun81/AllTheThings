@@ -1040,6 +1040,7 @@ for key,value in pairs({
 	[142122] = "Avis de recherche",	-- Wanted Poster
 	[142127] = "Secret de Rin'ji",	-- Rin'ji's Secret
 	[142151] = "Tonneau scellé",	-- Sealed Barrel
+	[142179] = "Belvédère de Solarsal",	-- Solarsal Gazebo
 	[142184] = "Coffre du capitaine",	-- Captain's Chest
 	[142195] = "Plan de bataille des Griffebois",	-- Woodpaw Battle Map
 	[142343] = "Piédestal d'Uldum",	-- Uldum Pedestal
@@ -1051,7 +1052,9 @@ for key,value in pairs({
 	[142696] = "Matrice d'encodage 3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "Bouteille de venin",	-- Venom Bottle
 	[142958] = "Féralas : une histoire",	-- Feralas: A History
+	[143980] = "Parchemin gordunni",	-- Gordunni Scroll
 	[144063] = "Monolithe d'Equinex",	-- Equinex Monolith
+	[144064] = "Monticule de poussière de Gordunni",	-- Gordunni Dirt Mound
 	[144066] = "Première cage de Fanécorce",	-- First Witherbark Cage
 	[144067] = "Deuxième cage de Fanécorce",	-- Second Witherbark Cage
 	[144068] = "Troisième cage de Fanécorce",	-- Third Witherbark Cage
@@ -1080,7 +1083,10 @@ for key,value in pairs({
 	[164886] = "Fleur-de-chant corrompue",	-- Corrupted Songflower
 	[164887] = "Fleur-de-vent corrompue",	-- Corrupted Windblossom
 	[164888] = "Navetille corrompue",	-- Corrupted Whipper Root
+	[164909] = "Épave de barque",	-- Wrecked Row Boat
 	[164910] = "Coffre orné",	-- Ornate Chest
+	[164953] = "Grands sacs à dos en cuir",	-- Large Leather Backpacks
+	[164954] = "Alvéole de Zukk'ash",	-- Zukk'ash Pod
 	[164955] = "Pylône de cristal nord",	-- Northern Crystal Pylon
 	[164956] = "Pylône de cristal ouest",	-- Western Crystal Pylon
 	[164957] = "Pylône de cristal est",	-- Eastern Crystal Pylon
@@ -3317,6 +3323,8 @@ for key,value in pairs({
 	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
 	--TODO: [380533] = "Snow Covered Scroll",	-- Snow Covered Scroll
 	--TODO: [380547] = "Decay-Infused Tanning Oil",	-- Decay-Infused Tanning Oil
+	--TODO: [380587] = "Crate of Treated Hides",	-- Crate of Treated Hides
+	--TODO: [380602] = "Wind-Blessed Hide",	-- Wind-Blessed Hide
 	--TODO: [380653] = "Yennu's Kite",	-- Yennu's Kite
 	--TODO: [380654] = "Dead Man's Chestplate",	-- Dead Man's Chestplate
 	--TODO: [380840] = "Torn Riding Pack",	-- Torn Riding Pack
@@ -3328,11 +3336,16 @@ for key,value in pairs({
 	--TODO: [380902] = "Fields of Ferocity",	-- Fields of Ferocity
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	--TODO: [381045] = "Replica Dragon Goblet",	-- Replica Dragon Goblet
+	--TODO: [381094] = "Elegant Canvas Brush",	-- Elegant Canvas Brush
+	--TODO: [381107] = "Sand Pile",	-- Sand Pile
+	--TODO: [381108] = "Yennu's Map",	-- Yennu's Map
 	--TODO: [381110] = "Forgotten Jewel Box",	-- Forgotten Jewel Box
 	--TODO: [381153] = "Ruby Gem Cluster",	-- Ruby Gem Cluster
 	--TODO: [381157] = "Sapphire Gem Cluster",	-- Sapphire Gem Cluster
 	--TODO: [381158] = "Gnoll Fiend Flail",	-- Gnoll Fiend Flail
 	--TODO: [381160] = "Lost Compass",	-- Lost Compass
+	--TODO: [381216] = "Surveyor's Magnifying Glass",	-- Surveyor's Magnifying Glass
+	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
 	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
 	--TODO: [381297] = "Misplaced Luggage",	-- Misplaced Luggage
 	--TODO: [381355] = "Finely Carved Wing",	-- Finely Carved Wing
@@ -3354,7 +3367,9 @@ for key,value in pairs({
 	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	--TODO: [383625] = "Case of Fresh Gleamfish",	-- Case of Fresh Gleamfish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
+	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "Tourbière de fortune de paria",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	[9999891] = "Objectic principal uniquement",	-- Main Objective Only
