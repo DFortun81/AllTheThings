@@ -31,6 +31,7 @@ local f = root("PoorQualityItems", {
 				i(143675),	-- Potentate's Threadbare Headdress
 				i(106306),	-- Scraggly Hat
 				i(90744),	-- Scruffy Cloth Hat
+				i(188725),	-- Singed Cloth Hood
 				i(62133),	-- Sodden Cloth Hat
 				i(176431),	-- Stained Cloth Hood
 				i(121364),	-- Sunbleached Cowl
@@ -62,6 +63,7 @@ local f = root("PoorQualityItems", {
 				i(121398),	-- Realm of Companions
 				i(106284),	-- Scraggly Cloth Shoulderpads
 				i(90767),	-- Scruffy Cloth Shoulderpads
+				i(188727),	-- Singed Cloth Mantle
 				i(62110),	-- Sodden Cloth Shoulderpads
 				i(176433),	-- Stained Cloth Mantle
 				i(121356),	-- Sunbleached Armice
@@ -103,6 +105,7 @@ local f = root("PoorQualityItems", {
 				i(134061),	-- Prisoner's Shirt
 				i(106312),	-- Scraggly Cloth Vest
 				i(90768),	-- Scruffy Cloth Vest
+				i(188721),	-- Singed Cloth Vestments
 				i(62109),	-- Sodden Cloth Vest
 				i(176427),	-- Stained Cloth Tunic
 				i(121368),	-- Sunbleached Shirt
@@ -138,6 +141,7 @@ local f = root("PoorQualityItems", {
 				i(62084),	-- Pockmarked Cloth Bracers
 				i(106290),	-- Scraggly Cloth Bracers
 				i(90759),	-- Scruffy Cloth Bracers
+				i(188720),	-- Singed Cloth Armbands
 				i(62118),	-- Sodden Cloth Bracers
 				i(176426),	-- Stained Cloth Armbands
 				i(121348),	-- Sunbleached Wristwraps
@@ -173,6 +177,7 @@ local f = root("PoorQualityItems", {
 				i(106304),	-- Scraggly Cloth Gloves
 				i(90760),	-- Scruffy Cloth Gloves
 				i(121400),	-- Shandris's Fingerless Gloves
+				i(188724),	-- Singed Cloth Grips
 				i(62117),	-- Sodden Cloth Gloves
 				i(176430),	-- Stained Cloth Grips
 				i(121358),	-- Sunbleached Handwraps
@@ -208,6 +213,7 @@ local f = root("PoorQualityItems", {
 				i(62100),	-- Pockmarked Cloth Belt
 				i(106287),	-- Scraggly Cloth Belt
 				i(90757),	-- Scruffy Cloth Belt
+				i(188726),	-- Singed Cloth Cincture
 				i(62120),	-- Sodden Cloth Belt
 				i(176432),	-- Stained Cloth Cincture
 				i(121344),	-- Sunbleached Cord
@@ -244,6 +250,7 @@ local f = root("PoorQualityItems", {
 				i(15794),	-- Ripped Ogre Loincloth
 				i(106296),	-- Scraggly Cloth Pants
 				i(90761),	-- Scruffy Cloth Pants
+				i(188723),	-- Singed Cloth Legwraps
 				i(62116),	-- Sodden Cloth Pants
 				i(176429),	-- Stained Cloth Legwraps
 				i(121351),	-- Sunbleached Pants
@@ -280,6 +287,7 @@ local f = root("PoorQualityItems", {
 				i(132154),	-- Sandankles
 				i(106314),	-- Scraggly Cloth Boots
 				i(90758),	-- Scruffy Cloth Boots
+				i(188722),	-- Singed Cloth Footpads
 				i(62119),	-- Sodden Cloth Boots
 				i(39205),	-- Sole-Less Boots
 				i(176428),	-- Stained Cloth Slippers
@@ -310,6 +318,7 @@ local f = root("PoorQualityItems", {
 				i(175690),	-- Oribos Quest Leather Head
 				i(106345),	-- Overstretched Leather Helmet
 				i(176932),	-- Putrefied Leather Guise
+				i(188707),	-- Rotten Leather Guise
 				i(153075),	-- Ruined Krokul Hood
 				i(90742),	-- Shabby Leather Helmet
 				i(62135),	-- Singed Leather Helmet
@@ -341,6 +350,7 @@ local f = root("PoorQualityItems", {
 				i(1793),	-- Patched Leather Shoulderpads
 				i(176934),	-- Putrefied Leather Shoulderpads
 				i(1801),	-- Rawhide Shoulderpads
+				i(188709),	-- Rotten Leather Shoulderpads
 				i(153077),	-- Ruined Krokul Shoulders
 				i(143671),	-- Sagging Shoulderpads of the Merciless
 				i(90766),	-- Shabby Shoulderpads
@@ -377,6 +387,7 @@ local f = root("PoorQualityItems", {
 				i(176935),	-- Putrefied Leather Jerkin
 				i(1364),	-- Ragged Leather Vest
 				i(1802),	-- Rawhide Tunic
+				i(188710),	-- Rotten Leather Jerkin
 				i(153078),	-- Ruined Krokul Vest
 				i(21014),	-- Scraggy Leather Vest
 				i(90769),	-- Shabby Armor
@@ -413,6 +424,7 @@ local f = root("PoorQualityItems", {
 				i(176936),	-- Putrefied Leather Bracers
 				i(1370),	-- Ragged Leather Bracers
 				i(1797),	-- Rawhide Bracers
+				i(188711),	-- Rotten Leather Bracers
 				i(153079),	-- Ruined Krokul Wristguards
 				i(21011),	-- Scraggy Leather Bracers
 				i(90763),	-- Shabby Bracers
@@ -448,6 +460,7 @@ local f = root("PoorQualityItems", {
 				i(176931),	-- Putrefied Leather Handwraps
 				i(1368),	-- Ragged Leather Gloves
 				i(1799),	-- Rawhide Gloves
+				i(188706),	-- Rotten Leather Handwraps
 				i(153074),	-- Ruined Krokul Gloves
 				i(21012),	-- Scraggy Leather Gloves
 				i(90764),	-- Shabby Gloves
@@ -486,6 +499,7 @@ local f = root("PoorQualityItems", {
 				i(1369),	-- Ragged Leather Belt
 				i(1795),	-- Rawhide Belt
 				i(4982),	-- Ripped Prospector Belt
+				i(188704),	-- Rotten Leather Cinch
 				i(153072),	-- Ruined Krokul Belt
 				i(21009),	-- Scraggy Leather Belt
 				i(90770),	-- Shabby Belt
@@ -521,6 +535,7 @@ local f = root("PoorQualityItems", {
 				i(176933),	-- Putrefied Leather Leggings
 				i(1366),	-- Ragged Leather Pants
 				i(1800),	-- Rawhide Pants
+				i(188708),	-- Rotten Leather Leggings
 				i(153076),	-- Ruined Krokul Pants
 				i(21013),	-- Scraggy Leather Pants
 				i(90765),	-- Shabby Pants
@@ -558,6 +573,7 @@ local f = root("PoorQualityItems", {
 				i(176930),	-- Putrefied Leather Footwraps
 				i(1367),	-- Ragged Leather Boots
 				i(1796),	-- Rawhide Boots
+				i(188705),	-- Rotten Leather Footwraps
 				i(153073),	-- Ruined Krokul Boots
 				i(21010),	-- Scraggy Leather Boots
 				i(90762),	-- Shabby Boots
@@ -605,6 +621,7 @@ local f = root("PoorQualityItems", {
 				i(121361),	-- Rust-Encrusted Coif
 				i(153104),	-- Soggy Mo'arg Eyepatch
 				i(62136),	-- Sooty Mail Circlet
+				i(188734),	-- Timeworn Chain Helm
 				i(121403),	-- Unintended Lightning Rod
 			}),
 			n(SHOULDER, {
@@ -641,6 +658,7 @@ local f = root("PoorQualityItems", {
 				i(106283),	-- Ripped Mail Shoulderpads
 				i(121354),	-- Rust-Encrusted Spaulders
 				i(62121),	-- Sooty Mail Shoulderpads
+				i(188729),	-- Timeworn Chain Spaulders
 			}),
 			n(CHEST, {
 				i(181869),	-- Ardenweald Covenant Mail D_02 Chest
@@ -681,6 +699,7 @@ local f = root("PoorQualityItems", {
 				i(121366),	-- Rust-Encrusted Hauberk
 				i(21016),	-- Shoddy Chain Vest
 				i(62132),	-- Sooty Mail Armor
+				i(188732),	-- Timeworn Chain Vest
 				i(1737),	-- Worn Mail Vest
 			}),
 			n(WRIST, {
@@ -720,6 +739,7 @@ local f = root("PoorQualityItems", {
 				i(121347),	-- Rust-Encrusted Wristguards
 				i(21019),	-- Shoddy Chain Bracers
 				i(62124),	-- Sooty Mail Bracers
+				i(188728),	-- Timeworn Chain Armguards
 				i(1732),	-- Worn Mail Bracers
 			}),
 			n(HANDS, {
@@ -758,6 +778,7 @@ local f = root("PoorQualityItems", {
 				i(121357),	-- Rust-Encrusted Gloves
 				i(21018),	-- Shoddy Chain Gloves
 				i(62123),	-- Sooty Mail Gloves
+				i(188733),	-- Timeworn Chain Gauntlets
 				i(1734),	-- Worn Mail Gloves
 			}),
 			n(WAIST, {
@@ -797,6 +818,7 @@ local f = root("PoorQualityItems", {
 				i(21015),	-- Shoddy Chain Belt
 				i(172280),	-- Sinscale Waistguard
 				i(62131),	-- Sooty Mail Belt
+				i(188735),	-- Timeworn Chain Clasp
 				i(1730),	-- Worn Mail Belt
 			}),
 			n(LEGS, {
@@ -836,6 +858,7 @@ local f = root("PoorQualityItems", {
 				i(121350),	-- Rust-Encrusted Leggings
 				i(21017),	-- Shoddy Chain Pants
 				i(62122),	-- Sooty Mail Pants
+				i(188731),	-- Timeworn Chain Breeches
 				i(1735),	-- Worn Mail Pants
 			}),
 			n(FEET, {
@@ -875,6 +898,7 @@ local f = root("PoorQualityItems", {
 				i(21020),	-- Shoddy Chain Boots
 				i(62125),	-- Sooty Mail Boots
 				i(143670),	-- Thin-Soled Fiend Slayer Boots
+				i(188730),	-- Timeworn Chain Footguards
 				i(121413),	-- Two-Toed Warboots
 				i(1731),	-- Worn Mail Boots
 			}),
@@ -889,6 +913,7 @@ local f = root("PoorQualityItems", {
 				i(121404),	-- Badly Rolled Helmet
 				i(153084),	-- Bile-Scoured Helmet
 				i(62134),	-- Bleached Plate Helmet
+				i(188716),	-- Corroded Plate Faceguard
 				i(177736),	-- Crumbling Plate Faceguard
 				i(121405),	-- Damaged Berserker's Plate Helm
 				i(25394),	-- Deteriorating Plate Helmet
@@ -915,6 +940,7 @@ local f = root("PoorQualityItems", {
 				i(179873),	-- Ardenweald Covenant Plate Shoulder
 				i(153082),	-- Bile-Scoured Pauldrons
 				i(62127),	-- Bleached Plate Shoulderpads
+				i(188714),	-- Corroded Plate Shoulderguards
 				i(177734),	-- Crumbling Plate Shoulderguards
 				i(25396),	-- Deteriorating Plate Shoulderpads
 				i(90750),	-- Dingy Plate Shoulderpads
@@ -940,6 +966,7 @@ local f = root("PoorQualityItems", {
 				i(179886),	-- Ardenweald Covenant Plate Chest
 				i(153086),	-- Bile-Scoured Breastplate
 				i(62126),	-- Bleached Plate Chestpiece
+				i(188718),	-- Corroded Plate Chestpiece
 				i(177738),	-- Crumbling Plate Chestpiece
 				i(25392),	-- Deteriorating Plate Chestpiece
 				i(90751),	-- Dingy Plate Chestpiece
@@ -966,6 +993,7 @@ local f = root("PoorQualityItems", {
 				i(179879),	-- Ardenweald Covenant Plate Wrist
 				i(153080),	-- Bile-Scoured Vambraces
 				i(62128),	-- Bleached Plate Bracers
+				i(188712),	-- Corroded Plate Vambraces
 				i(177732),	-- Crumbling Plate Vambraces
 				i(25391),	-- Deteriorating Plate Bracers
 				i(90749),	-- Dingy Plate Bracers
@@ -993,6 +1021,7 @@ local f = root("PoorQualityItems", {
 				i(179876),	-- Ardenweald Covenant Plate Hand
 				i(153085),	-- Bile-Scoured Gauntlets
 				i(62106),	-- Bleached Plate Gloves
+				i(188717),	-- Corroded Plate Gloves
 				i(177737),	-- Crumbling Plate Gloves
 				i(25393),	-- Deteriorating Plate Gloves
 				i(90771),	-- Dingy Plate Gloves
@@ -1019,6 +1048,7 @@ local f = root("PoorQualityItems", {
 				i(179880),	-- Ardenweald Covenant Plate Waist
 				i(153087),	-- Bile-Scoured Belt
 				i(62130),	-- Bleached Plate Belt
+				i(188719),	-- Corroded Plate Greatbelt
 				i(177739),	-- Crumbling Plate Greatbelt
 				i(25389),	-- Deteriorating Plate Belt
 				i(90747),	-- Dingy Plate Belt
@@ -1044,6 +1074,7 @@ local f = root("PoorQualityItems", {
 				i(179882),	-- Ardenweald Covenant Plate Legs
 				i(153083),	-- Bile-Scoured Leggings
 				i(62105),	-- Bleached Plate Pants
+				i(188715),	-- Corroded Plate Legguards
 				i(143674),	-- Creaking Legplates of the Innocent
 				i(177735),	-- Crumbling Plate Legguards
 				i(25395),	-- Deteriorating Plate Pants
@@ -1071,6 +1102,7 @@ local f = root("PoorQualityItems", {
 				i(175580),	-- Ardenweald Covenant Plate Feet
 				i(153081),	-- Bile-Scoured Stompers
 				i(62129),	-- Bleached Plate Boots
+				i(188713),	-- Corroded Plate Warboots
 				i(177733),	-- Crumbling Plate Warboots
 				i(25390),	-- Deteriorating Plate Boots
 				i(90748),	-- Dingy Plate Boots

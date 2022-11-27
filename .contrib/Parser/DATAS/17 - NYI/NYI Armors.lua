@@ -1474,6 +1474,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 						["modID"] = 6,
 					}),
 				}),
+				tier(SL_TIER, 2.5, {
+					i(191425),	-- Choral Amice
+				}),
 			}),
 			filter(LEATHER, {
 				tier(SL_TIER, 0.1, {

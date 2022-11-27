@@ -223,39 +223,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191826),	-- Obsidian Dracthyr Battlegear Belt
 			i(191827),	-- Obsidian Dracthyr Battlegear Bracers
 			i(191828),	-- Obsidian Dracthyr Battlegear Cover
-				-- GREYS -- DARKAL!?!
-			i(188704),	-- Rotten Leather Cinch
-			i(188705),	-- Rotten Leather Footwraps
-			i(188706),	-- Rotten Leather Handwraps
-			i(188707),	-- Rotten Leather Guise
-			i(188708),	-- Rotten Leather Leggings
-			i(188709),	-- Rotten Leather Shoulderpads
-			i(188710),	-- Rotten Leather Jerkin
-			i(188711),	-- Rotten Leather Bracers
-			i(188712),	-- Corroded Plate Vambraces
-			i(188713),	-- Corroded Plate Warboots
-			i(188714),	-- Corroded Plate Shoulderguards
-			i(188715),	-- Corroded Plate Legguards
-			i(188716),	-- Corroded Plate Faceguard
-			i(188717),	-- Corroded Plate Gloves
-			i(188718),	-- Corroded Plate Chestpiece
-			i(188719),	-- Corroded Plate Greatbelt
-			i(188720),	-- Singed Cloth Armbands
-			i(188721),	-- Singed Cloth Vestments
-			i(188722),	-- Singed Cloth Footpads
-			i(188723),	-- Singed Cloth Legwraps
-			i(188724),	-- Singed Cloth Grips
-			i(188725),	-- Singed Cloth Hood
-			i(188726),	-- Singed Cloth Cincture
-			i(188727),	-- Singed Cloth Mantle
-			i(188728),	-- Timeworn Chain Armguards
-			i(188729),	-- Timeworn Chain Spaulders
-			i(188730),	-- Timeworn Chain Footguards
-			i(188731),	-- Timeworn Chain Breeches
-			i(188732),	-- Timeworn Chain Vest
-			i(188733),	-- Timeworn Chain Gauntlets
-			i(188734),	-- Timeworn Chain Helm
-			i(188735),	-- Timeworn Chain Clasp
 			-- NON SET THINGS
 			i(192797),	-- Gral's Discarded Tooth
 			i(191942),	-- Belloc's Hat
@@ -974,7 +941,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		n(WEAPONS, {
 			i(189055),	-- Ghendish's Backup Talisman
-			i(194073),	-- Distinguished Dracthyr's Implement
 			-- WQ?
 			i(197922),	-- Cavalry's Charging Lance
 			i(197923),	-- Bloodcharger's Skewer
@@ -2484,17 +2450,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		--]]
 	}),
 	tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
-		i(191425),	-- Choral Amice
-		--
-		i(191217),	-- [Daon Test]Beast Battle-Training Stone
-		i(191219),	-- [Daon Test]Immaculate Elemental Battle-Stone
-		i(191200),	-- [Daon Test]Ultimate Battle-Training Stone
-		i(193263),	-- Add Keystone Affix: Shrouded
-
-		i(192441),	-- Rhapsodic Pulverizer
-
-		i(168895),	-- Mel'nalore, Javelin of Suramar (Readded back now? Suppose to be drop in Eternal Palace? /Queen Azshara)
-
 		-- Winter Veil 2022
 		ach(15645),	-- To Catch Falling Stars
 		ach(15653),	-- The More You Know*
@@ -2502,16 +2457,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(191925),	-- Falling Star Flinger (TOY!)
 		q(66507),	-- A Winter Veil Gift
 		q(66508),	-- A Gently Shaken Gift
-	})),
-	tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
-		n(QUESTS, {	-- Darkal Sort?
-			q(65152),	-- A Hardened Bond (This is Soulbind Quest for Necrolords new one might cross complete?? /Braghe)
-			q(64649),	-- A Mountain of Work to Do
-		}),
-		i(189561),	-- Tame Prime: Orixal
-		i(189572),	-- Tame Prime: Hadeon the Stonebreaker
-		i(189573),	-- Tame Prime: Garudeon
-
 	})),
 	tier(CLASSIC_TIER, {
 		filter(BAGS, {
@@ -3174,7 +3119,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(190383),	-- Progenitor Essentia Lattice
 				i(189546),	-- Set Keystone Map: Tazavesh: So'leah's Gambit
 				i(189545),	-- Set Keystone Map: Tazavesh: Streets of Wonder
+				i(189573),	-- Tame Prime: Garudeon
+				i(189572),	-- Tame Prime: Hadeon the Stonebreaker
+				i(189561),	-- Tame Prime: Orixal
 				-- i(190172),	-- Title Reward: Gauntlet Runner
+			}),
+			tier(SL_TIER, 2.5, {
+				i(193263),	-- Add Keystone Affix: Shrouded
+				i(191217),	-- [Daon Test]Beast Battle-Training Stone
+				i(191219),	-- [Daon Test]Immaculate Elemental Battle-Stone
+				i(191200),	-- [Daon Test]Ultimate Battle-Training Stone
 			}),
 			n(P9xx, {
 				i(173774),	-- Wilderbew Special

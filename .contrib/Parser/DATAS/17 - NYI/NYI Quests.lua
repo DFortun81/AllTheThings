@@ -6342,6 +6342,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 9.2.0
 			tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 9.2.0" } }, {
+				q(65152, { ["name"] = "A Hardened Bond", }),	-- A Hardened Bond
+				q(64649, { ["name"] = "A Mountain of Work to Do", }),	-- A Mountain of Work to Do
 				-- Quest from Unsorted
 				q(64006, { ["name"] = "Nav Test: Zereth Mortis", }),	-- Nav Test: Zereth Mortis
 				q(65703, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
