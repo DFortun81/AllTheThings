@@ -95,9 +95,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["crs"] = { 193228 },	-- Snappy
 				["coord"] = { 78.6, 50.0, THE_WAKING_SHORES },
 				-- ["questID"] = 69874,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200281),	-- Gorjo's Riding Crop
+				},
 			}),
 			n(196056, {	-- Gushgut the Beaksinker
 				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
@@ -165,9 +165,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			n(193256, {	-- Nulltheria the Void Gazer
 				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
 				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200236),	-- Memory of Nulltheria
+				},
 			}),
 			n(193118, {	-- O'nank Shorescour
 				["coord"] = { 82.2, 49.4, THE_WAKING_SHORES },

@@ -201,9 +201,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 				n(193648, {	-- Infernum
 					["coord"] = { 58.8, 68.4, THE_AZURE_SPAN },
 					-- ["questID"] = ,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200150),	-- Infernum's Furnace
+					},
 				}),
 				n(193675, {	-- Kain Firebrand
 					["coord"] = { 64.0, 72.2, THE_WAKING_SHORES },

@@ -1401,6 +1401,9 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(194576),	-- Draconic Missive of the Harmonious+
 			i(194577),	-- Draconic Missive of the Harmonious++
 			i(194575),	-- Draconic Missive of the Harmonious+++
+			i(198534),	-- Draconic Missive of Inspiration+
+			i(198535),	-- Draconic Missive of Inspiration++
+			i(198536),	-- Draconic Missive of Inspiration+++
 			i(200568),	-- Draconic Missive of Multicraft+
 			i(200569),	-- Draconic Missive of Multicraft++
 			i(200570),	-- Draconic Missive of Multicraft+++

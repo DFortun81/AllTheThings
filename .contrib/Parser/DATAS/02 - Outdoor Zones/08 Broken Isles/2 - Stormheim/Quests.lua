@@ -704,6 +704,11 @@ _.Zones =
 					["sourceQuests"] = { 39594 },	-- A Trial of Might
 					["provider"] = { "n", 96258 },	-- Yotnar
 					["g"] = {
+						i(200666, {	-- Storm-Imbued Pole
+							["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+							["classes"] = { EVOKER },
+							["timeline"] = ADDED_DFPRE2,
+						}),
 						i(132781),	-- Archived Record of Might
 						i(132786),	-- Archived Record of Valor
 						i(132791),	-- Archived Record of Will

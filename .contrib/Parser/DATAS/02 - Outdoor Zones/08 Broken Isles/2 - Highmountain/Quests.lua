@@ -118,6 +118,11 @@ _.Zones =
 					["coord"] = { 45.1, 32.4, HIGHMOUNTAIN },
 					["provider"] = { "n", 95421 },	-- Navarrogg
 					["g"] = {
+						i(200664, {	-- Bloodgem of Greed
+							["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+							["classes"] = { EVOKER },
+							["timeline"] = ADDED_DFPRE2,
+						}),
 						i(133115),	-- Stonedark Focus
 						i(133116),	-- Bloodsinger Essence
 						i(133117),	-- Torok's Heart
@@ -188,6 +193,11 @@ _.Zones =
 					},
 					["provider"] = { "n", 96038 },	-- Jale Rivermane
 					["g"] = {
+						i(200662, {	-- Encrusted Blade of the Mountains
+							["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+							["classes"] = { EVOKER },
+							["timeline"] = ADDED_DFPRE2,
+						}),
 						i(133070),	-- Empowered Lifespring Crystal
 						i(133081),	-- Manathirster Focus
 						i(133071),	-- Rivermanes' Sacrifice

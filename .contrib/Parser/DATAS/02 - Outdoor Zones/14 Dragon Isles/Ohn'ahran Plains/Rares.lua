@@ -204,9 +204,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			n(193165, {	-- Sparkspitter Vrak
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200234),	-- Vrak's Embossed Aegis
+				},
 			}),
 			n(193123, {	-- Steamgill
 				["coord"] = { 53.6, 72.8, OHNAHRAN_PLAINS },

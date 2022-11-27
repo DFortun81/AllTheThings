@@ -107,9 +107,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			n(193688, {	-- Phenran
 				-- ["coord"] = { X, Y, THALDRASZUS },
 				-- ["questID"] = 69976,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200146),	-- Phenran's Discordant Smasher
+				},
 			}),
 			n(193210, {	-- Phleep <Time-Lost, Mind-Lost>
 				["coord"] = { 57.2, 84.2, THALDRASZUS },

@@ -9,6 +9,11 @@ root("Zones", m(BROKEN_ISLES, {
 				["coord"] = { 50.2, 61.0, AZSUNA },
 				["provider"] = { "n", 88863 },	-- Seska Seafang
 				["g"] = {
+					i(200665, {	-- Seaweed Trimming Blade
+						["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+						["classes"] = { EVOKER },
+						["timeline"] = ADDED_DFPRE2,
+					}),
 					i(133039),	-- Breath of Al'Akir
 					i(133037),	-- Zandalari Voodoo Totem
 					i(133036),	-- Ravenous Seed
@@ -267,6 +272,11 @@ root("Zones", m(BROKEN_ISLES, {
 				["coord"] = { 48.2, 22.7, AZSUNA },
 				["provider"] = { "n", 91131 },	-- Runas the Shamed
 				["g"] = {
+					i(200653, {	-- Azure Staff of Arcana
+						["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+						["classes"] = { EVOKER },
+						["timeline"] = ADDED_DFPRE2,
+					}),
 					i(133016),	-- Azurewing Guile
 					i(133014),	-- Senegos' Despair
 					i(133013),	-- Reinvigorating Crystal

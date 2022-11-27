@@ -66,6 +66,7 @@ i(181645);	-- Engorged Monstrosity's Heart
 i(184294);	-- Ethereal Ambrosia
 i(184286);	-- Extinguished Soul Anima
 i(184378);	-- Faeweald Amber
+i(202034);	-- Flame of Remembrance
 i(181744);	-- Forgelite Ember
 i(181745);	-- Forgesmith's Coal
 i(184385);	-- Fossilized Heartwood
