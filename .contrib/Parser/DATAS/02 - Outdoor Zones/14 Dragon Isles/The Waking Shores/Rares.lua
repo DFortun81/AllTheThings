@@ -127,7 +127,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			}),
 			n(187209, {	-- Klozicc the Ascended
 				["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
-				-- ["questID"] = 66960,
+				["questID"] = 72841,
 				["g"] = {
 					i(197023),	-- Cliffside Wylderdrake: Maned Neck (DM!)
 					i(200246),	-- Lost Delving Lamp

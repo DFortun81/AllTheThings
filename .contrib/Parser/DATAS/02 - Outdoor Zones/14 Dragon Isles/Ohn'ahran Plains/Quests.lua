@@ -1226,6 +1226,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(66889),	-- 	Choose Eagle Feather (Renewal of Vows 66783)
 		q(66888),	-- 	Choose Blood (Renewal of Vows 66783)
 
+		q(72847),	-- Probably because in loot there was i196976 (Cliffside Wylderdrake: Head Mane) (loot from 192949 / Skaara?)
 
 		-- Has to do with the Chest Event In the South
 		--q(70511),	-- complete??

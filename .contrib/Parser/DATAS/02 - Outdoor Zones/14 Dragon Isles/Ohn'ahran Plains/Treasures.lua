@@ -97,6 +97,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					i(200876),	-- Yennu's Toy Boat
 				},
 			}),
+			o(380602, {	-- Wind-Blessed Hide
+				["coord"] = { 86.2, 53.6, OHNAHRAN_PLAINS },
+				["questID"] = 70300,
+				["g"] = {
+					i(198696),	-- Wind-Blessed Hide
+				}
+			}),
 			---
 			n(191861, {	-- Lever Locked Chest
 				-- Gave nothing.. Had to do a puzzle

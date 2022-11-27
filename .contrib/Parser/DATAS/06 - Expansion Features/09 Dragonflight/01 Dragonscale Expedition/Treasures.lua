@@ -90,6 +90,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 				i(193898),	-- Umbral Bone Needle
 				i(192131),	-- Valdrakken Weapon Chain
 				i(193903),	-- Watcher Power Core
+
+				i(191384),	-- Aerated Mana Potion +
+				i(191393),	-- Potion of the Hushed Zephyr +
 				-- Objects
 				o(376587, {	-- Expedition Scout's Pack
 					["coords"] = {

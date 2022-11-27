@@ -28,13 +28,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			q(70646, {	-- Pressure Valve
 				["coord"] = { 79.2, 76.1, OHNAHRAN_PLAINS }
 			}),
+			q(70638, {	-- Wind Breaker
+				["coord"] = { 75.1, 70.2, OHNAHRAN_PLAINS }
+			}),
 			q(69990, {	-- The Fields of Ferocity Redux: Lord of Decay!
 				["coord"] = { 53.1, 37.2, OHNAHRAN_PLAINS }
 			}),
 			q(69993, {	-- The Fields of Ferocity Redux: Lost in the Dream!
 				["coord"] = { 53.1, 37.2, OHNAHRAN_PLAINS }
 			}),
-
+			q(70176, {	-- Web Victims
+				["coord"] = { 44.6, 47.4, OHNAHRAN_PLAINS }
+			}),
 
 
 			-- Pet

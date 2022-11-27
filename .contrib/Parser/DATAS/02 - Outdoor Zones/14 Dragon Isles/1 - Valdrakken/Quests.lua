@@ -131,6 +131,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 
 
 			-- Profession daily marks
+			q(70594, {	-- Leatherworking Services Requested
+				["provider"] = { "n", 194026 },	-- Azley
+				["coord"] = { 35.4, 58.7, VALDRAKKEN },
+				["isDaily"] = true,
+				["g"] = {
+					i(198613),	-- Leatherworking Designs
+				},
+			}),
 			q(66951, {	-- Population Control
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.7, 62.4, VALDRAKKEN },
@@ -256,5 +264,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 
 		q(72596),	-- After Open Orientation
 		q(72892),	-- After "Aiding the Accord" series
+		q(72673),	-- After turning in [71227]
 	}),
 }));

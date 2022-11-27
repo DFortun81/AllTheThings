@@ -191,7 +191,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			}),
 			n(192949, {	-- Skaara
 				["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
-				-- ["questID"] = 70783,
+				["questID"] = 70783,
 				["g"] = {
 					i(200186),	-- Amberquill Shroud
 					i(200442),	-- Basilisk Hide Jerkin

@@ -802,7 +802,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198610),	-- Enchanter's Script
 			i(198611),	-- Engineering Details
 			i(198612),	-- Jeweler's Cuts
-			i(198613),	-- Leatherworking Designs
 			i(198599),	-- Experimental Decay Sample
 			i(198653),	-- PH Profession Drop
 			i(198659),	-- Forgetful Apprentice's Tome
@@ -826,7 +825,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198692),	-- Noteworthy Scrap of Carpet
 			i(198693),	-- Dusty Darkmoon Card
 			i(198694),	-- Enriched Earthen Shard
-			i(198696),	-- Wind-Blessed Hide
 			i(198697),	-- Contraband Concoction
 			i(198699),	-- Mysterious Banner
 			i(198702),	-- Itinerant Singed Fabric
@@ -989,7 +987,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197931),	-- Waking Shores Cleaver
 			i(197932),	-- Chipped Reef Hacker
 			i(197933),	-- Lutokk's Wedding Ring
-			i(197934),	-- Ancestral Protector's Stone
 			i(197935),	-- Seafarer's Hatchet
 			i(197936),	-- Serrated Deboning Knife
 			i(197937),	-- Intricate Scaling Knife
