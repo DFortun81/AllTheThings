@@ -204,3 +204,42 @@ i(122341);	-- Timeworn Heirloom Scabbard
 i(151615);	-- Weathered Heirloom Scabbard
 i(167732);	-- Battle-Hardened Heirloom Scabbard
 i(187998);	-- Eternal Heirloom Scabbard
+
+-- Old Heirlooms prior to proper BoA implementation
+i(44102);	-- Aged Pauldrons of The Five Thunders
+i(44096);	-- Battleworn Thrash Blade
+i(44103);	-- Exceptional Stormshroud Shoulders
+i(44107);	-- Exquisite Sunderseer Mantle
+i(44098);	-- Inherited Insignia of the Alliance
+i(44097);	-- Inherited Insignia of the Horde
+i(44095);	-- Grand Staff of Jordan
+i(44105);	-- Lasting Feralheart Spaulders
+i(44100);	-- Pristine Lightforge Spaulders
+i(44101);	-- Prized Beastmaster's Mantle
+i(44092);	-- Reforged Truesilver Champion
+i(44091);	-- Sharpened Scarlet Kris
+i(44099);	-- Strengthened Stockade Pauldrons
+i(44094);	-- The Blessed Hammer of Grace
+i(44093);	-- Unpgraded Dwarven Hand Cannon
+i(42944);	-- Balanced Heartseeker
+i(42943);	-- Bloodied Arcanite Reaper
+i(42950);	-- Champion Herod's Shoulder
+i(48677);	-- Champion's Deathdealer Breastplate
+i(42946);	-- Charmed Ancient Bone Bow
+i(42948);	-- Devout Aurastone Hammer
+i(42947);	-- Dignified Headmaster's Charge
+i(42992);	-- Discerning Eye of the Beast
+i(42951);	-- Mystical Pauldrons of Elements
+i(48683);	-- Mystical Vest of Elements
+i(48685);	-- Polished Breastplate of Valor
+i(42949);	-- Polished Spaulders of Valor
+i(48687);	-- Preened Ironfeather Breastplate
+i(42984);	-- Preened Ironfeather Shoulders
+i(48718);	-- Repurposed Lava Dredger
+i(42952);	-- Stained Shadowcraft Spaulders
+i(48689);	-- Stained Shadowcraft Tunic
+i(42991);	-- Swift Hand of Justice
+i(42985);	-- Tattered Dreadmist Mantle
+i(48691);	-- Tattered Dreadmist Robe
+i(42945);	-- Venerable Dal'Rend's Sacred Charge
+i(48716);	-- Venerable Mass of McGowan
