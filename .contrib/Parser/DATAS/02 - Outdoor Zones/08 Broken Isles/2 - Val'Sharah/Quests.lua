@@ -314,7 +314,6 @@ _.Zones =
 					["provider"] = { "n", 93027 },	-- Maiev Shadowsong
 					["groups"] = {
 						i(200668, {	-- Ravencourt Field Sickle
-							["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 							["classes"] = { EVOKER },
 							["timeline"] = ADDED_DFPRE2,
 						}),
@@ -558,7 +557,6 @@ _.Zones =
 					["provider"] = { "n", 91109 },	-- Malfurion Stormrage
 					["groups"] = {
 						i(200669, {	-- Emerald Mace of Dreams
-							["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 							["classes"] = { EVOKER },
 							["timeline"] = ADDED_DFPRE2,
 						}),

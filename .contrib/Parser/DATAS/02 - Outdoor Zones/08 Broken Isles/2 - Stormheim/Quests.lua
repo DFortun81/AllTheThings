@@ -705,7 +705,6 @@ _.Zones =
 					["provider"] = { "n", 96258 },	-- Yotnar
 					["g"] = {
 						i(200666, {	-- Storm-Imbued Pole
-							["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 							["classes"] = { EVOKER },
 							["timeline"] = ADDED_DFPRE2,
 						}),
