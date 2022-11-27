@@ -3,16 +3,6 @@ i(163017),	-- Pitch-Soaked Torch
 i(163073),	-- Conch of Wa'mundi
 9.0.1.35679
 i(177665),	-- Spectral Handkerchief \\ Spectral Hankerchief
-10.0.0.45141
-i(199926),	--
-10.0.2.46091
-i(201927),	-- Assorted Arcanocrystals
-i(201933),	-- Black Dragon's Challenge Dummy
-10.0.2.46259
-i(200926),	-- Compendium of Love
-i(202019),	-- Golden Dragon Goblet
-i(202022),	-- Yennu's Kite
-i(202042),	-- Aquatic Shades
 
 
 
@@ -24,11 +14,3 @@ i(163213),	-- Ghostly Explorer's Skull
 8.0.1.26788
 i(163017),	-- Pitch-Soaked Torch
 i(163073),	-- Conch of Wa'mundi
-10.0.2.46091
-i(201927),	-- Assorted Arcanocrystals
-i(201933),	-- Black Dragon's Challenge Dummy
-10.0.2.46259
-i(200926),	-- Compendium of Love
-
-
-i(202042),	-- Aquatic Shades

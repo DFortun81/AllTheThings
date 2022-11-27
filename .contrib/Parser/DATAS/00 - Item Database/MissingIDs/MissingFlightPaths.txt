@@ -13,7 +13,6 @@ fp(57),	-- Fishing Village, Teldrassil \\ FIshing Village, Teldrassil \\ FIshing
 0.9.0.3807
 fp(46),	-- Transport, Southshore \\ Southshore Ferry, Hillsbrad
 fp(47),	-- Transport, Grom'gol \\ Transport, Grom'gol - Orgrimmar \\ Stranglethorn, Grom'Gol to Orgrimmar Zeppelin \\ Stranglethorn - Grom'Gol to Orgrimmar Zeppelin
-fp(48),	-- Bloodvenom Post, Felwood [DISABLED in 4.x] \\ Bloodvenom Post, Felwood \\ Bloodvenom River, Felwood
 1.0.0.3980
 fp(50),	-- Transport, Menethil Harbor \\ Transport, Menethil Ships \\ Menethil to Theramore Boat Path
 fp(51),	-- Transport, Auberdine \\ Transport, Rut'theran - Auberdine \\ Rut'theran to Auberdine Boat

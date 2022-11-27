@@ -607,7 +607,6 @@ p(3268),	-- Swog
 p(3280),	-- Shyfly \\ Dragonshy \\ [PH] Walnut Flying Squirrel
 p(3281),	-- Scruffy Ottuk
 p(3283),	-- Snowlemental
-p(3287),	-- Ghostflame \\ Grey Baby Mammoth \\ [PH] Grey Baby Mammoth
 p(3288),	-- Trunkalumpf \\ [PH] Dark Baby Mammoth
 p(3289),	-- Echo of the Inferno \\ Green Baby Mammoth \\ [PH] Green Baby Mammoth
 p(3295),	-- Igneoid
@@ -615,7 +614,6 @@ p(3299),	-- Echo of the Depths \\ Purple Baby Salamanther \\ [PH] Purple Baby Sa
 p(3301),	-- Wild Duckling
 p(3307),	-- Plucky Duckling \\ [PH] White Baby Duck
 p(3308),	-- Time-Lost Duckling \\ [PH] Yellow Baby Duck
-p(3309),	-- Viridescent Duck \\ [PH] Green Duck
 p(3310),	-- Echo of the Heights \\ Brown Duck \\ [PH] Brown Duck
 p(3311),	-- Ohuna Companion \\ White Duck \\ [PH] White Duck
 p(3313),	-- Grassland Stomper \\ Armoredon Calf \\ [PH] Black Baby Thunder Lizard
@@ -634,8 +632,6 @@ p(3340),	-- Blue Dragon Whelp \\ [PH] Blue Dragon Whelp
 p(3341),	-- Red Dragon Whelp \\ [PH] Red Dragon Whelp
 p(3342),	-- Spyragos
 p(3343),	-- Bronze Dragon Whelp \\ [PH] Bronze Dragon Whelp
-p(3348),	-- Primal Stormling \\ [PH] Black Gem Dragon Whelp
-p(3350),	-- Lord Basilton
 p(3351),	-- Grizzlefur Cub \\ Grizzlefur Cub \\ Grizzlefury Cub \\ Grizzlefury Cub \\ [PH] Black Primal Bear Cub
 p(3352),	-- Razortooth Bear Cub \\ [PH] Red Primal Bear Cub
 p(3354),	-- Storm-Touched Ottuk \\ Green Baby Turtle \\ [PH]Green Baby Turtle
@@ -649,14 +645,8 @@ p(3361),	-- Diamond Crab \\ [PH] Bling Crab (Diamond)
 p(3362),	-- Sapphire Crab \\ [PH] Bling Crab (Sapphire)
 p(3363),	-- Truesilver Crab \\ [PH] Bling Crab (Truesilver)
 p(3364),	-- Striped Snakebiter \\ [PH] Striped Light Ferret
-p(3365),	-- Roseate Hopper \\ [PH] Pink Frog
 10.0.0.44999
-p(3376),	-- Chip
 p(3377),	-- Gwosh
-p(3378),	-- Magic Nibbler
-p(3379),	-- Crimson Proto-Whelp
-10.0.0.45141
-p(3382),	-- Stormie
 10.0.0.45232
 p(3384),	-- Storm-Touched Bluefeather \\ Orange Baby Turtle \\ [PH] Orange Baby Turtle
 p(3385),	-- Storm-Touched Stomper \\ Green Baby Mammoth \\ [PH] Green Baby Mammoth
@@ -664,7 +654,6 @@ p(3386),	-- Faceripper \\ Brown Duck \\ [PH] Brown Duck
 p(3387),	-- Bloodbiter \\ REUSE ME \\ [PH] Brown Baby Thunder Lizard
 p(3388),	-- Tina \\ [PH] White Shaggy Rabbit
 p(3389),	-- The Quackcestor \\ Duck Spirit
-p(3390),	-- Sophic Amalgamation \\ Titan-Touched Elemental \\ Order Elemental
 p(3391),	-- Phantus
 p(3392),	-- Skritches
 p(3393),	-- Anubisath Idol
@@ -684,16 +673,16 @@ p(3405),	-- Living Mud Mask
 p(3406),	-- Lady Feathersworth
 10.0.0.45570
 p(3407),	-- Scout \\ REUSE ME \\ White Woodpecker \\ [PH] White Woodpecker
-p(3408),	-- Petal
 10.0.0.45661
 p(3409),	-- Tide Spirit
 p(3410),	-- Dust Spirit
 p(3411),	-- Blaze Spirit
 p(3412),	-- Gale Spirit
-p(3414),	-- Obsidian Proto-Whelp
 p(3415),	-- Cubbly
 p(3416),	-- Troubled Tome
 p(3417),	-- Pinkie
+10.0.2.46781
+p(3248),	-- Ichabod
 
 
 
@@ -1941,5 +1930,3 @@ p(3218),	-- Enraged Poultrid
 p(3219),	-- Predatory Helicid \\ Predatory Gastropod
 9.2.0.41726
 p(3246),	-- Tezpet
-10.0.0.44649
-p(3350),	-- Lord Basilton

@@ -1570,3 +1570,5 @@
 10.0.2.46420
 315132@@@Gargantuan Grrloc
 381529@@@Telix the Stormhorn
+10.0.2.46781
+384963@@@Guardian Vorquin

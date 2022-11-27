@@ -11187,3 +11187,5 @@
 10.0.2.46479
 17209@@@<Hidden> Chromie Time - Hit 59 While In Chromie Time (copy)
 17210@@@<Hidden> Chromie Time - Hit 60 While In Chromie Time (copy)
+10.0.2.46781
+17314@@@Heroic Edition: Tangled Dreamweaver

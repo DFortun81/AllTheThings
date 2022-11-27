@@ -107,9 +107,7 @@ mount(373646),	-- Dracthyr Flight Test
 mount(374071),	-- [PH] Dragonfly Yellow
 mount(376898),	-- [PH] Black Armored River Otter
 mount(376909),	-- [PH] Blue Armored River Otter
-mount(377071),	-- Crimson Gladiator's Drake \\ [PH] Gladiator Drake
 10.0.0.44795
-mount(384963),	-- [PH] Black Vorquin
 mount(385253),	-- [PH] Brown Wind Eagle
 mount(385260),	-- [PH] Sepia Wind Eagle
 mount(385262),	-- [PH] Dark Wind Eagle

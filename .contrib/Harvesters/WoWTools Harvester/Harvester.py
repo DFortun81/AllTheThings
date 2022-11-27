@@ -45,13 +45,14 @@ def get_thing_table(thing: type[Thing], build: str) -> list[str]:
 def get_thing_data(thing: type[Thing], build: str) -> list[str]:
     """Get the IDs (and some thing specific data) of a thing from a build."""
     thing_list = list[str]()
-    reader = csv.DictReader(get_thing_table(thing, build))
-    for row in reader:
-        try:
-            thing_list.append(thing.extract_table_info(row, build) + "\n")
-        except KeyError as error:
-            print(f"Cursed build: {build}\nKeyError: {error}")
-    return thing_list
+    with open(Path("Latest", f"{thing.table()}.csv")) as csv_file:
+        reader = csv.DictReader(csv_file)
+        for row in reader:
+            try:
+                thing_list.append(thing.extract_table_info(row, build) + "\n")
+            except KeyError as error:
+                print(f"Cursed build: {build}\nKeyError: {error}")
+        return thing_list
 
 
 def get_existing_ids(thing: type[Thing]) -> list[str]:

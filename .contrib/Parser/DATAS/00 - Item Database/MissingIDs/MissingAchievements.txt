@@ -2861,67 +2861,6 @@ ach(15592),	-- <Hidden> 9.2 ZM - Cypher System - Talent Research Started - Treba
 ach(15593),	-- <Hidden> 9.2 ZM - Cypher System - Talent Research Started - Sopranian (copy)
 9.2.5.42850
 ach(15596),	-- Return to Lordaeron (Hidden Character Achievement)
-10.0.0.44795
-ach(16074),	-- Decatriarch Wratheye kills (Normal Brackenhide Hollow)
-ach(16075),	-- Decatriarch Wratheye kills (Heroic Brackenhide Hollow)
-ach(16076),	-- Decatriarch Wratheye kills (Mythic Brackenhide Hollow)
-ach(16077),	-- Primal Tsunami kills (Normal Halls of Infusion)
-ach(16078),	-- Primal Tsunami kills (Heroic Halls of Infusion)
-ach(16079),	-- Primal Tsunami kills (Mythic Halls of Infusion)
-ach(16080),	-- Warlord Sargha kills (Normal Neltharus)
-ach(16081),	-- Warlord Sargha kills (Heroic Neltharus)
-ach(16082),	-- Warlord Sargha kills (Mythic Neltharus)
-ach(16083),	-- Kyrakka and Erkhart Stormvein kills (Normal Ruby Life Pools)
-ach(16084),	-- Kyrakka and Erkhart Stormvein kills (Heroic Ruby Life Pools)
-ach(16085),	-- Kyrakka and Erkhart Stormvein kills (Mythic Ruby Life Pools)
-ach(16086),	-- Echo of Doragosa kills (Normal Algeth'ar Academy) \\ Echo of Headteacher Doragosa kills (Normal Algeth'ar Academy) \\ Echo of Headteacher Doragosa kills (Normal Taz'algeth Academy) \\ Headmaster Doragosa kills (Normal Taz'algeth Academy)
-ach(16087),	-- Echo of Doragosa kills (Heroic Algeth'ar Academy) \\ Echo of Headteacher Doragosa kills (Heroic Algeth'ar Academy) \\ Echo of Headteacher Doragosa kills (Heroic Taz'algeth Academy) \\ Headmaster Doragosa kills (Heroic Taz'algeth Academy)
-ach(16088),	-- Echo of Doragosa kills (Mythic Algeth'ar Academy) \\ Echo of Headteacher Doragosa kills (Mythic Algeth'ar Academy) \\ Echo of Headteacher Doragosa kills (Mythic Taz'algeth Academy) \\ Headmaster Doragosa kills (Mythic Taz'algeth Academy)
-ach(16089),	-- Umbrelskel kills (Normal The Azure Vault)
-ach(16090),	-- Umbrelskel kills (Heroic The Azure Vault)
-ach(16091),	-- Umbrelskel kills (Mythic The Azure Vault)
-ach(16092),	-- Balakar Khan kills (Normal The Nokhud Offensive)
-ach(16093),	-- Balakar Khan kills (Heroic The Nokhud Offensive)
-ach(16094),	-- Balakar Khan kills (Mythic The Nokhud Offensive)
-ach(16095),	-- Chrono-Lord Deios kills (Normal Uldaman: Legacy of Tyr)
-ach(16096),	-- Chrono-Lord Deios kills (Heroic Uldaman: Legacy of Tyr)
-ach(16097),	-- Chrono-Lord Deios kills (Mythic Uldaman: Legacy of Tyr)
-10.0.0.45141
-ach(16324),	-- Nokhudon Proving Grounds matches
-ach(16325),	-- Nokhudon Proving Grounds victories
-10.0.0.45232
-ach(16359),	-- Eranog kills (Raid Finder Vault of the Incarnates)
-ach(16361),	-- Terros kills (Raid Finder Vault of the Incarnates)
-ach(16362),	-- The Primal Council kills (Raid Finder Vault of the Incarnates)
-ach(16366),	-- Sennarth, The Cold Breath kills (Raid Finder Vault of the Incarnates)
-ach(16367),	-- Dathea, Ascended kills (Raid Finder Vault of the Incarnates)
-ach(16368),	-- Kurog Grimtotem kills (Raid Finder Vault of the Incarnates)
-ach(16369),	-- Broodkeeper Diurna kills (Raid Finder Vault of the Incarnates)
-ach(16370),	-- Raszageth kills (Raid Finder Vault of the Incarnates)
-ach(16371),	-- Eranog kills (Normal Vault of the Incarnates)
-ach(16372),	-- Terros kills (Normal Vault of the Incarnates)
-ach(16373),	-- The Primal Council kills (Normal Vault of the Incarnates)
-ach(16374),	-- Sennarth, The Cold Breath kills (Normal Vault of the Incarnates)
-ach(16375),	-- Dathea, Ascended kills (Normal Vault of the Incarnates)
-ach(16376),	-- Kurog Grimtotem kills (Normal Vault of the Incarnates)
-ach(16377),	-- Broodkeeper Diurna kills (Normal Vault of the Incarnates)
-ach(16378),	-- Raszageth kills (Normal Vault of the Incarnates)
-ach(16379),	-- Eranog kills (Heroic Vault of the Incarnates)
-ach(16380),	-- Terros kills (Heroic Vault of the Incarnates)
-ach(16381),	-- The Primal Council kills (Heroic Vault of the Incarnates)
-ach(16382),	-- Sennarth, The Cold Breath kills (Heroic Vault of the Incarnates)
-ach(16383),	-- Dathea, Ascended kills (Heroic Vault of the Incarnates)
-ach(16384),	-- Kurog Grimtotem kills (Heroic Vault of the Incarnates)
-ach(16385),	-- Broodkeeper Diurna kills (Heroic Vault of the Incarnates)
-ach(16386),	-- Raszageth kills (Heroic Vault of the Incarnates)
-ach(16387),	-- Eranog kills (Mythic Vault of the Incarnates)
-ach(16388),	-- Terros kills (Mythic Vault of the Incarnates)
-ach(16389),	-- The Primal Council kills (Mythic Vault of the Incarnates)
-ach(16390),	-- Sennarth, The Cold Breath kills (Mythic Vault of the Incarnates)
-ach(16391),	-- Dathea, Ascended kills (Mythic Vault of the Incarnates)
-ach(16392),	-- Kurog Grimtotem kills (Mythic Vault of the Incarnates)
-ach(16393),	-- Broodkeeper Diurna kills (Mythic Vault of the Incarnates)
-ach(16394),	-- Raszageth kills (Mythic Vault of the Incarnates)
 10.0.0.45335
 ach(16425),	-- I'm a Template Character [DNT]
 10.0.0.45454
@@ -3008,21 +2947,8 @@ ach(16729),	-- To All the Squirrels Hidden Til Now \\ To All the Squirrels Hidde
 ach(16730),	-- Crimson Gladiator's Drake
 ach(16731),	-- Court is Now in Session
 10.0.2.45969
-ach(16734),	-- Crimson Soloist: Dragonflight Season 1
 ach(16736),	-- Grand Theft Mammoth
 10.0.2.46091
-ach(16745),	-- Total Crafting Orders Fulfilled
-ach(16746),	-- Public Crafting Orders Fulfilled
-ach(16747),	-- Guild Crafting Orders Fulfilled
-ach(16748),	-- Personal Crafting Orders Fulfilled \\ Private Crafting Orders Fulfilled
-ach(16749),	-- Alchemy Crafting Orders Fulfilled
-ach(16750),	-- Blacksmithing Crafting Orders Fulfilled
-ach(16751),	-- Enchanting Crafting Orders Fulfilled
-ach(16752),	-- Engineering Crafting Orders Fulfilled
-ach(16753),	-- Inscription Crafting Orders Fulfilled
-ach(16754),	-- Jewelcrafting Crafting Orders Fulfilled
-ach(16755),	-- Leatherworking Crafting Orders Fulfilled
-ach(16756),	-- Tailoring Crafting Orders Fulfilled
 ach(16759),	-- <Hidden> Adventure Mode - Reached Dragon Isles
 ach(16760),	-- The Obsidian Bloodline
 10.0.2.46259
@@ -3325,3 +3251,8 @@ ach(17112),	-- Fury of the Storm
 ach(17116),	-- Hall of Fame: Raszageth the Storm-Eater (Alliance)
 ach(17118),	-- Hall of Fame: Raszageth the Storm-Eater (Horde)
 ach(17119),	-- Deep Cuts From the Vault
+10.0.2.46479
+ach(17209),	-- <Hidden> Chromie Time - Hit 59 While In Chromie Time (copy)
+ach(17210),	-- <Hidden> Chromie Time - Hit 60 While In Chromie Time (copy)
+10.0.2.46781
+ach(17314),	-- Heroic Edition: Tangled Dreamweaver
