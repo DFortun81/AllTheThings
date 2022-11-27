@@ -4284,7 +4284,7 @@ ID,Name_lang,HordeName_lang,Duration,EffectArg[0],EffectArg[1],EffectArg[2],Effe
 6393,+$k1 Critical Strike and +$k2 Haste |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,36,32,0,0.04852942,0.04852942,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,0,-7,0,0,0,70
 6394,+$k1 Critical Strike and +$k2 Haste |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,36,32,0,0.05735295,0.05735295,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,0,-7,0,0,0,70
 6395,+$k1 Critical Strike and +$k2 Haste |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,32,36,374783,0.10808825,0.050735302,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6396,+$k1 Critical Strike and +$k2 Haste |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,32,36,374783,0.13455884,0.061764713,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6396,+$k1 Critical Strike and +$k2 Haste |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,32,36,374783,0.1325,0.0617647,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6397,+$k1 Critical Strike and +$k2 Haste |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,32,36,374783,0.15441178,0.07279413,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6398,+$k1 Primary Stat and +$k2 Haste |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,71,36,374783,0.11691177,0.1014706,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6399,+$k1 Primary Stat and +$k2 Haste |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,71,36,374783,0.14117649,0.12352943,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
@@ -4298,66 +4298,66 @@ ID,Name_lang,HordeName_lang,Duration,EffectArg[0],EffectArg[1],EffectArg[2],Effe
 6407,+$k1 Mastery and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,49,32,0,0.039705887,0.039705887,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,0,-7,0,0,0,70
 6408,+$k1 Mastery and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,49,32,0,0.04852942,0.04852942,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,0,-7,0,0,0,70
 6409,+$k1 Mastery and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,49,32,0,0.05735295,0.05735295,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,0,-7,0,0,0,70
-6410,+$k1 Stamina |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,7,0,0,0.050735302,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,0,-7,0,0,0,70
-6411,+$k1 Stamina |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,7,0,0,0.063970596,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,0,-7,0,0,0,70
-6412,+$k1 Stamina |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,7,0,0,0.07279413,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,0,-7,0,0,0,70
+6410,+$k1 Stamina |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,7,0,0,0.1165,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,0,-7,0,0,0,70
+6411,+$k1 Stamina |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,7,0,0,0.1405,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,0,-7,0,0,0,70
+6412,+$k1 Stamina |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,7,0,0,0.1655,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,0,-7,0,0,0,70
 6413,+$k1 Critical Strike and +$k2 Mastery |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,32,49,374783,0.10808825,0.050735302,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6414,+$k1 Critical Strike and +$k2 Mastery |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,32,49,374783,0.13455884,0.061764713,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6414,+$k1 Critical Strike and +$k2 Mastery |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,32,49,374783,0.1325,0.0617647,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6415,+$k1 Critical Strike and +$k2 Mastery |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,32,49,374783,0.15441178,0.07279413,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6416,+$k1 Critical Strike and +$k2 Versatility |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,32,40,374783,0.10808825,0.050735302,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6417,+$k1 Critical Strike and +$k2 Versatility |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,32,40,374783,0.13455884,0.061764713,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6417,+$k1 Critical Strike and +$k2 Versatility |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,32,40,374783,0.1325,0.0617647,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6418,+$k1 Critical Strike and +$k2 Versatility |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,32,40,374783,0.15441178,0.07279413,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6419,+$k1 Critical Strike |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,32,0,374783,0.13676472,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,3,-7,0,0,0,70
 6420,+$k1 Critical Strike |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,32,0,374783,0.16544119,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,3,-7,0,0,0,70
 6421,+$k1 Critical Strike |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,32,0,374783,0.19411768,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,3,-7,0,0,0,70
 6422,+$k1 Versatility and +$k2 Haste |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,40,36,374783,0.10808825,0.050735302,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6423,+$k1 Versatility and +$k2 Haste |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,40,36,374783,0.13455884,0.061764713,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6423,+$k1 Versatility and +$k2 Haste |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,40,36,374783,0.1325,0.0617647,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6424,+$k1 Versatility and +$k2 Haste |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,40,36,374783,0.15441178,0.07279413,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6425,+$k1 Versatility and +$k2 Mastery |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,40,49,374783,0.10808825,0.050735302,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6426,+$k1 Versatility and +$k2 Mastery |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,40,49,374783,0.13455884,0.061764713,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6426,+$k1 Versatility and +$k2 Mastery |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,40,49,374783,0.1325,0.0617647,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6427,+$k1 Versatility and +$k2 Mastery |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,40,49,374783,0.15441178,0.07279413,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6428,+$k1 Versatility and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,40,32,374783,0.10808825,0.050735302,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6429,+$k1 Versatility and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,40,32,374783,0.13455884,0.061764713,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6429,+$k1 Versatility and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,40,32,374783,0.1325,0.0617647,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6430,+$k1 Versatility and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,40,32,374783,0.15441178,0.07279413,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6431,+$k1 Versatility |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,40,0,374783,0.13676472,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,3,-7,0,0,0,70
 6432,+$k1 Versatility |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,40,0,374783,0.16544119,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,3,-7,0,0,0,70
 6433,+$k1 Versatility |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,40,0,374783,0.19411768,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,3,-7,0,0,0,70
 6434,+$k1 Haste and +$k2 Versatility |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,36,40,374783,0.10808825,0.050735302,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6435,+$k1 Haste and +$k2 Versatility |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,36,40,374783,0.13455884,0.061764713,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6435,+$k1 Haste and +$k2 Versatility |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,36,40,374783,0.1325,0.0617647,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6436,+$k1 Haste and +$k2 Versatility |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,36,40,374783,0.15441178,0.07279413,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6437,+$k1 Haste and +$k2 Mastery |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,36,49,374783,0.10808825,0.050735302,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6438,+$k1 Haste and +$k2 Mastery |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,36,49,374783,0.13455884,0.061764713,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6438,+$k1 Haste and +$k2 Mastery |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,36,49,374783,0.1325,0.0617647,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6439,+$k1 Haste and +$k2 Mastery |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,36,49,374783,0.15441178,0.07279413,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6440,+$k1 Haste and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,36,32,374783,0.10808825,0.050735302,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6441,+$k1 Haste and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,36,32,374783,0.13455884,0.061764713,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6441,+$k1 Haste and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,36,32,374783,0.1325,0.0617647,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6442,+$k1 Haste and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,36,32,374783,0.15441178,0.07279413,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6443,+$k1 Haste |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,36,0,374783,0.13676472,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,3,-7,0,0,0,70
 6444,+$k1 Haste |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,36,0,374783,0.16544119,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,3,-7,0,0,0,70
 6445,+$k1 Haste |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,36,0,374783,0.19411768,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,3,-7,0,0,0,70
 6446,+$k1 Mastery and +$k2 Versatility |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,49,40,374783,0.10808825,0.050735302,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6447,+$k1 Mastery and +$k2 Versatility |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,49,40,374783,0.13455884,0.061764713,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6447,+$k1 Mastery and +$k2 Versatility |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,49,40,374783,0.1325,0.0617647,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6448,+$k1 Mastery and +$k2 Versatility |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,49,40,374783,0.15441178,0.07279413,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6449,+$k1 Mastery and +$k2 Haste |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,49,36,374783,0.10808825,0.050735302,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6450,+$k1 Mastery and +$k2 Haste |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,49,36,374783,0.13455884,0.061764713,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6450,+$k1 Mastery and +$k2 Haste |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,49,36,374783,0.1325,0.0617647,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6451,+$k1 Mastery and +$k2 Haste |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,49,36,374783,0.15441178,0.07279413,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6452,+$k1 Mastery and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,49,32,374783,0.10808825,0.050735302,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6453,+$k1 Mastery and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,49,32,374783,0.13455884,0.061764713,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6453,+$k1 Mastery and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,49,32,374783,0.1325,0.0617647,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6454,+$k1 Mastery and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,49,32,374783,0.15441178,0.07279413,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6455,+$k1 Mastery |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,49,0,374783,0.13676472,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,3,-7,0,0,0,70
 6456,+$k1 Mastery |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,49,0,374783,0.16544119,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,3,-7,0,0,0,70
 6457,+$k1 Mastery |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,49,0,374783,0.19411768,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,3,-7,0,0,0,70
-6458,+$k1 Stamina and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,7,32,374783,0.11691177,0.1014706,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6459,+$k1 Stamina and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,7,32,374783,0.14117649,0.12352943,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6460,+$k1 Stamina and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,7,32,374783,0.16544119,0.14558826,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6461,+$k1 Stamina and +$k2 Haste |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,7,36,374783,0.11691177,0.1014706,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6462,+$k1 Stamina and +$k2 Haste |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,7,36,374783,0.14117649,0.12352943,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6463,+$k1 Stamina and +$k2 Haste |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,7,36,374783,0.16544119,0.14558826,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6464,+$k1 Stamina and +$k2 Mastery |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,7,49,374783,0.11691177,0.1014706,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6465,+$k1 Stamina and +$k2 Mastery |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,7,49,374783,0.14117649,0.12352943,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6466,+$k1 Stamina and +$k2 Mastery |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,7,49,374783,0.16544119,0.14558826,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6467,+$k1 Stamina and +$k2 Versatility |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,7,40,374783,0.11691177,0.1014706,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6468,+$k1 Stamina and +$k2 Versatility |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,7,40,374783,0.14117649,0.12352943,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
-6469,+$k1 Stamina and +$k2 Versatility |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,7,40,374783,0.16544119,0.14558826,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6458,+$k1 Stamina and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,7,32,374783,0.1565,0.0505,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6459,+$k1 Stamina and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,7,32,374783,0.1915,0.0615,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6460,+$k1 Stamina and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,7,32,374783,0.2245,0.0725,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6461,+$k1 Stamina and +$k2 Haste |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,7,36,374783,0.1565,0.0505,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6462,+$k1 Stamina and +$k2 Haste |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,7,36,374783,0.1915,0.0615,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6463,+$k1 Stamina and +$k2 Haste |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,7,36,374783,0.2245,0.0725,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6464,+$k1 Stamina and +$k2 Mastery |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,7,49,374783,0.1565,0.0505,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6465,+$k1 Stamina and +$k2 Mastery |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,7,49,374783,0.1915,0.0615,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6466,+$k1 Stamina and +$k2 Mastery |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,7,49,374783,0.2245,0.0725,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6467,+$k1 Stamina and +$k2 Versatility |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,7,40,374783,0.1565,0.0505,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6468,+$k1 Stamina and +$k2 Versatility |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,7,40,374783,0.1915,0.0615,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
+6469,+$k1 Stamina and +$k2 Versatility |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,7,40,374783,0.2245,0.0725,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6470,+$k1 Primary Stat and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,71,32,374783,0.11691177,0.1014706,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6471,+$k1 Primary Stat and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,71,32,374783,0.14117649,0.12352943,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
 6472,+$k1 Primary Stat and +$k2 Critical Strike |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,71,32,374783,0.16544119,0.14558826,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,5,3,-7,0,0,0,70
@@ -4370,9 +4370,9 @@ ID,Name_lang,HordeName_lang,Duration,EffectArg[0],EffectArg[1],EffectArg[2],Effe
 6485,Speed increased by $k1 |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,61,0,0,3,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,0,-4,0,0,60,70
 6486,Speed increased by $k1 |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,61,0,0,3.75,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,0,-4,0,0,60,70
 6487,Speed increased by $k1 |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,61,0,0,4.5,0,0,0,200,0,0,0,0,0,0,0,160,0,0,1,0,5,0,0,-4,0,0,60,70
-6488,Fierce Armor Kit |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,7,72,0,0.2051471,0.27352944,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
-6489,Fierce Armor Kit |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,7,72,0,0.24926475,0.33308828,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
-6490,Fierce Armor Kit |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,7,72,0,0.2933824,0.39044124,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
+6488,Fierce Armor Kit |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,7,72,0,0.1635,0.273529,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
+6489,Fierce Armor Kit |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,7,72,0,0.1965,0.333088,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
+6490,Fierce Armor Kit |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,7,72,0,0.2315,0.390441,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
 6491,Reinforced Armor Kit |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,72,0,0,0.16323532,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,0,0,-7,0,0,61,70
 6492,Reinforced Armor Kit |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,72,0,0,0.19852944,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,0,0,-7,0,0,61,70
 6493,Reinforced Armor Kit |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,72,0,0,0.23382354,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,0,0,-7,0,0,61,70
@@ -4418,9 +4418,9 @@ ID,Name_lang,HordeName_lang,Duration,EffectArg[0],EffectArg[1],EffectArg[2],Effe
 6536,+$k1 Intellect |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,5,0,0,0.16323532,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,0,0,-7,0,0,61,70
 6537,+$k1 Intellect |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,5,0,0,0.19852944,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,0,0,-7,0,0,61,70
 6538,+$k1 Intellect |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,5,0,0,0.23382354,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,0,0,-7,0,0,61,70
-6539,+$k1 Intellect & +$k2 Stamina |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,5,7,0,0.27352944,0.2051471,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
-6540,+$k1 Intellect & +$k2 Stamina |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,5,7,0,0.33308828,0.24926475,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
-6541,+$k1 Intellect & +$k2 Stamina |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,5,7,0,0.39044124,0.2933824,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
+6539,+$k1 Intellect & +$k2 Stamina |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,5,7,0,0.273529,0.1635,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
+6540,+$k1 Intellect & +$k2 Stamina |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,5,7,0,0.333088,0.1965,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
+6541,+$k1 Intellect & +$k2 Stamina |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,5,7,0,0.390441,0.2315,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,5,0,-7,0,0,61,70
 6542,+$k1 Intellect & +$387302s1% Mana |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,5,387302,0,0.27352944,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,3,0,-7,0,0,61,70
 6543,+$k1 Intellect & +$387303s1% Mana |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,5,387303,0,0.33308828,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,3,0,-7,0,0,61,70
 6544,+$k1 Intellect & +$387306s1% Mana |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,5,387306,0,0.39044124,0,0,0,200,0,0,0,0,0,0,0,33,0,0,55,0,5,3,0,-7,0,0,61,70
@@ -4490,18 +4490,18 @@ ID,Name_lang,HordeName_lang,Duration,EffectArg[0],EffectArg[1],EffectArg[2],Effe
 6608,Rider's Reassurance |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,390102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,3,0,0,0,0,0,60,70
 6609,Rider's Reassurance |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,390103,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,3,0,0,0,0,0,60,70
 6610,Rider's Reassurance |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,390104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,3,0,0,0,0,0,60,70
-6611,Watcher's Loam |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,7,0,0,0.30882356,0,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,0,0,-7,0,0,60,70
-6612,Watcher's Loam |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,7,0,0,0.3750001,0,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,0,0,-7,0,0,60,70
-6613,Watcher's Loam |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,7,0,0,0.44117653,0,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,0,0,-7,0,0,60,70
+6611,Watcher's Loam |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,7,0,0,0.1635,0,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,0,0,-7,0,0,60,70
+6612,Watcher's Loam |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,7,0,0,0.1965,0,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,0,0,-7,0,0,60,70
+6613,Watcher's Loam |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,7,0,0,0.2315,0,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,0,0,-7,0,0,60,70
 6614,Accelerated Agility |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,3,61,0,0.16985296,0.44117653,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,5,0,-7,0,0,60,70
 6615,Accelerated Agility |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,3,61,0,0.20735297,0.4963236,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,5,0,-7,0,0,60,70
 6616,Accelerated Agility |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,3,61,0,0.24485298,0.55147064,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,5,0,-7,0,0,60,70
 6617,Reserve of Intellect |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,5,390116,0,0.16985296,0,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,3,0,-7,0,0,60,70
 6618,Reserve of Intellect |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,5,390117,0,0.20735297,0,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,3,0,-7,0,0,60,70
 6619,Reserve of Intellect |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,5,390119,0,0.24485298,0,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,3,0,-7,0,0,60,70
-6620,Sustained Strength |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,4,7,0,0.16985296,0.2051471,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,5,0,-7,0,0,60,70
-6621,Sustained Strength |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,4,7,0,0.20735297,0.24926475,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,5,0,-7,0,0,60,70
-6622,Sustained Strength |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,4,7,0,0.24485298,0.2933824,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,5,0,-7,0,0,60,70
+6620,Sustained Strength |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,4,7,0,0.169853,0.4625,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,5,0,-7,0,0,60,70
+6621,Sustained Strength |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,4,7,0,0.207353,0.5625,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,5,0,-7,0,0,60,70
+6622,Sustained Strength |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,4,7,0,0.244853,0.6615,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,5,0,-7,0,0,60,70
 6623,Waking Stats |A:Professions-Icon-Quality-Tier1-Small:20:20|a,,0,71,0,0,0.23161766,0,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,0,0,-7,0,0,60,70
 6624,Waking Stats |A:Professions-Icon-Quality-Tier2-Small:20:20|a,,0,71,0,0,0.2801471,0,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,0,0,-7,0,0,60,70
 6625,Waking Stats |A:Professions-Icon-Quality-Tier3-Small:20:20|a,,0,71,0,0,0.33088237,0,0,0,0,0,0,0,0,0,0,0,32,0,0,1,0,5,0,0,-7,0,0,60,70

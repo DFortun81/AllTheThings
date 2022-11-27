@@ -3,6 +3,8 @@ i(163017),	-- Pitch-Soaked Torch
 i(163073),	-- Conch of Wa'mundi
 9.0.1.35679
 i(177665),	-- Spectral Handkerchief \\ Spectral Hankerchief
+10.0.2.46801
+i(202711),	-- Lost Compass
 
 
 
@@ -14,3 +16,5 @@ i(163213),	-- Ghostly Explorer's Skull
 8.0.1.26788
 i(163017),	-- Pitch-Soaked Torch
 i(163073),	-- Conch of Wa'mundi
+10.0.2.46801
+i(202711),	-- Lost Compass

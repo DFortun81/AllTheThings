@@ -2861,8 +2861,24 @@ ach(15592),	-- <Hidden> 9.2 ZM - Cypher System - Talent Research Started - Treba
 ach(15593),	-- <Hidden> 9.2 ZM - Cypher System - Talent Research Started - Sopranian (copy)
 9.2.5.42850
 ach(15596),	-- Return to Lordaeron (Hidden Character Achievement)
+10.0.0.44707
+ach(15942),	-- Crimson Combatant
+ach(15943),	-- Crimson Combatant
+ach(15951),	-- Crimson Gladiator: Dragonflight Season 1
+ach(15952),	-- Rival I: Dragonflight Season 1
+ach(15953),	-- Rival II: Dragonflight Season 1
+ach(15954),	-- Duelist: Dragonflight Season 1
+ach(15955),	-- Challenger I: Dragonflight Season 1
+ach(15956),	-- Challenger II: Dragonflight Season 1
+ach(15957),	-- Gladiator: Dragonflight Season 1
+ach(15958),	-- Hero of the Horde: Crimson
+ach(15959),	-- Hero of the Alliance: Crimson
+ach(15960),	-- Combatant I: Dragonflight Season 1 \\ Combatant I: Shadowlands Dragonflight Season 1
+ach(15961),	-- Combatant II: Dragonflight Season 1
+ach(15984),	-- Elite: Dragonflight Season 1
 10.0.0.45335
 ach(16425),	-- I'm a Template Character [DNT]
+ach(16429),	-- Thundering Hero: Dragonflight Season 1 \\ [PH] Hero: Dragonflight Season 1
 10.0.0.45454
 ach(16464),	-- Battle on the Dragon Isles
 ach(16493),	-- Grand Theft Mammoth
@@ -2929,6 +2945,18 @@ ach(16631),	-- Dragon Isles Cook
 ach(16632),	-- Dragon Isles Fisherman
 10.0.0.45661
 ach(16633),	-- <DNT> Maruuk Centaur Rank 25 + Title Quest
+ach(16640),	-- Keystone Hero: Ruby Life Pools
+ach(16641),	-- Keystone Hero: The Nokhud Offensive
+ach(16643),	-- Keystone Hero: Algeth'ar Academy
+ach(16645),	-- Keystone Hero: The Azure Vault
+ach(16647),	-- Dragonflight Keystone Explorer: Season One
+ach(16648),	-- Dragonflight Keystone Conqueror: Season One
+ach(16649),	-- Dragonflight Keystone Master: Season One
+ach(16650),	-- Dragonflight Keystone Hero: Season One
+ach(16658),	-- Keystone Hero: Court of Stars
+ach(16659),	-- Keystone Hero: Halls of Valor
+ach(16660),	-- Keystone Hero: Shadowmoon Burial Grounds
+ach(16661),	-- Keystone Hero: Temple of the Jade Serpent
 ach(16681),	-- 10.0 Dragonflight - Expansion Quest Launch (Return to Docks)
 ach(16683),	-- In Tyr's Footsteps
 10.0.2.45779
@@ -2947,6 +2975,7 @@ ach(16729),	-- To All the Squirrels Hidden Til Now \\ To All the Squirrels Hidde
 ach(16730),	-- Crimson Gladiator's Drake
 ach(16731),	-- Court is Now in Session
 10.0.2.45969
+ach(16734),	-- Crimson Soloist: Dragonflight Season 1
 ach(16736),	-- Grand Theft Mammoth
 10.0.2.46091
 ach(16759),	-- <Hidden> Adventure Mode - Reached Dragon Isles
