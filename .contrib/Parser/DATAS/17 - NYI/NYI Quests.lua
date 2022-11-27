@@ -6200,7 +6200,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.1.0.38511
 				-- 9.1.0.38524
 				-- 9.1.0.38549
-				q(64277),	--
 				q(64301),	--
 				q(64302),	--
 				q(64309),	--
@@ -7032,7 +7031,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66305),	--
 			q(66306),	--
 			q(66307),	--
-			q(66308),	--
 			q(66310),	--
 			q(66311),	--
 			q(66312),	--
@@ -7110,7 +7108,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66407),	--
 			q(66408),	--
 			q(66412),	--
-			q(66419),	--
 			q(66421),	--
 			q(66422),	-- The Expedition Continues!
 			q(66423),	-- Worries and Validations
@@ -7281,7 +7278,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66630),	--
 			q(66631),	--
 			q(66632),	--
-			q(66633),	--
 			q(66634),	--
 			q(66636),	--
 			q(66637),	--
