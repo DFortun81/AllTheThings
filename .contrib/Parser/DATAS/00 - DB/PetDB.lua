@@ -1114,6 +1114,7 @@ pet(191941, 3264);	-- Crystalline Mini-Monster
 pet(200173, 3287);	-- Ghostflame
 pet(198725, 3381);	-- Gray Marmoni
 pet(193618, 3317);	-- Hoofhelper
+pet(190583, 3248); 	-- Ichabod
 pet(193885, 3345);	-- Jeweled Amber Whelpling
 pet(193888, 3347);	-- Jeweled Emerald Whelpling
 pet(193889, 3256);	-- Jeweled Onyx Whelpling
