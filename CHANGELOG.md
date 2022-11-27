@@ -9,11 +9,6 @@
 - Added a list of acceptable tooltips to which ATT is allowed to 'hook' information. This should fix some bad interaction with other addons that led to some extremely stuttery/laggy siutations. In the future, if we notice situations where tooltips do not receive ATT data, they will need to be manually added to the hookable list.
 
 
-### Logic fixes
-
--
-
-
 ### Data fixes
 
 - Additions for Alliance Dracthyr questline.
