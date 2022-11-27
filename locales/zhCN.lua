@@ -1054,6 +1054,7 @@ for key, value in pairs({
 	[142122] = "通缉：卡利夫·斯科比斯汀",	-- Wanted Poster	--TODO: This was taken from wotlk Wowhead
 	[142127] = "林吉的秘密",	-- Rin'ji's Secret	--TODO: This was taken from wotlk Wowhead
 	[142151] = "密封的桶",	-- Sealed Barrel
+	[142179] = "索兰萨尔瞭望台",	-- Solarsal Gazebo	--TODO: This was taken from wotlk Wowhead
 	[142184] = "船长的箱子",	-- Captain's Chest
 	[142195] = "木爪作战地图",	-- Woodpaw Battle Map
 	[142343] = "奥丹姆石座",	-- Uldum Pedestal
@@ -1065,7 +1066,9 @@ for key, value in pairs({
 	[142696] = "矩阵式打孔计算机3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "毒液瓶",	-- Venom Bottle	--TODO: This was taken from wotlk Wowhead
 	[142958] = "菲拉斯的历史",	-- Feralas: A History	--TODO: This was taken from wotlk Wowhead
+	[143980] = "戈杜尼卷轴",	-- Gordunni Scroll
 	[144063] = "艾奎尼克斯石碑",	-- Equinex Monolith
+	[144064] = "戈杜尼土堆",	-- Gordunni Dirt Mound	--TODO: This was taken from wotlk Wowhead
 	[144066] = "第一只枯木牢笼",	-- First Witherbark Cage
 	[144067] = "第二只枯木牢笼",	-- Second Witherbark Cage
 	[144068] = "第三个枯木牢笼",	-- Third Witherbark Cage
@@ -1094,7 +1097,10 @@ for key, value in pairs({
 	[164886] = "被腐化的轻歌花",	-- Corrupted Songflower	--TODO: This was taken from wotlk Wowhead
 	[164887] = "被腐化的迎风花",	-- Corrupted Windblossom	--TODO: This was taken from wotlk Wowhead
 	[164888] = "被腐化的鞭根草",	-- Corrupted Whipper Root	--TODO: This was taken from wotlk Wowhead
+	[164909] = "破损的独木舟",	-- Wrecked Row Boat	--TODO: This was taken from wotlk Wowhead
 	[164910] = "华丽的箱子",	-- Ornate Chest
+	[164953] = "大皮包",	-- Large Leather Backpacks
+	[164954] = "祖卡什虫茧",	-- Zukk'ash Pod	--TODO: This was taken from wotlk Wowhead
 	[164955] = "北部水晶塔",	-- Northern Crystal Pylon
 	[164956] = "西部水晶塔",	-- Western Crystal Pylon
 	[164957] = "东部水晶塔",	-- Eastern Crystal Pylon
@@ -3331,6 +3337,8 @@ for key, value in pairs({
 	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
 	--TODO: [380533] = "Snow Covered Scroll",	-- Snow Covered Scroll
 	--TODO: [380547] = "Decay-Infused Tanning Oil",	-- Decay-Infused Tanning Oil
+	--TODO: [380587] = "Crate of Treated Hides",	-- Crate of Treated Hides
+	--TODO: [380602] = "Wind-Blessed Hide",	-- Wind-Blessed Hide
 	--TODO: [380653] = "Yennu's Kite",	-- Yennu's Kite
 	--TODO: [380654] = "Dead Man's Chestplate",	-- Dead Man's Chestplate
 	--TODO: [380840] = "Torn Riding Pack",	-- Torn Riding Pack
@@ -3342,11 +3350,16 @@ for key, value in pairs({
 	--TODO: [380902] = "Fields of Ferocity",	-- Fields of Ferocity
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	--TODO: [381045] = "Replica Dragon Goblet",	-- Replica Dragon Goblet
+	--TODO: [381094] = "Elegant Canvas Brush",	-- Elegant Canvas Brush
+	--TODO: [381107] = "Sand Pile",	-- Sand Pile
+	--TODO: [381108] = "Yennu's Map",	-- Yennu's Map
 	--TODO: [381110] = "Forgotten Jewel Box",	-- Forgotten Jewel Box
 	--TODO: [381153] = "Ruby Gem Cluster",	-- Ruby Gem Cluster
 	--TODO: [381157] = "Sapphire Gem Cluster",	-- Sapphire Gem Cluster
 	--TODO: [381158] = "Gnoll Fiend Flail",	-- Gnoll Fiend Flail
 	--TODO: [381160] = "Lost Compass",	-- Lost Compass
+	--TODO: [381216] = "Surveyor's Magnifying Glass",	-- Surveyor's Magnifying Glass
+	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
 	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
 	--TODO: [381297] = "Misplaced Luggage",	-- Misplaced Luggage
 	--TODO: [381355] = "Finely Carved Wing",	-- Finely Carved Wing
@@ -3368,7 +3381,9 @@ for key, value in pairs({
 	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	--TODO: [383625] = "Case of Fresh Gleamfish",	-- Case of Fresh Gleamfish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
+	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "流亡者的简易泥池",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

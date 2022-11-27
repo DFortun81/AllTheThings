@@ -1041,6 +1041,7 @@ for key,value in pairs({
 	[142122] = "현상 수배 전단",	-- Wanted Poster
 	[142127] = "린지의 비밀",	-- Rin'ji's Secret	--TODO: This was taken from wotlk Wowhead
 	[142151] = "봉인된 통",	-- Sealed Barrel
+	[142179] = "솔라살 전망대",	-- Solarsal Gazebo
 	[142184] = "선장의 상자",	-- Captain's Chest
 	[142195] = "덩굴발 작전도",	-- Woodpaw Battle Map
 	[142343] = "울둠 대좌",	-- Uldum Pedestal
@@ -1052,7 +1053,9 @@ for key,value in pairs({
 	[142696] = "행렬 천공기록기 3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "독약병",	-- Venom Bottle
 	[142958] = "페랄라스의 역사",	-- Feralas: A History
+	[143980] = "골두니 두루마리",	-- Gordunni Scroll
 	[144063] = "에퀴넥스 비석탑",	-- Equinex Monolith
+	[144064] = "골두니 흙더미",	-- Gordunni Dirt Mound	--TODO: This was taken from wotlk Wowhead
 	[144066] = "첫번째 마른나무껍질 우리",	-- First Witherbark Cage
 	[144067] = "두번째 마른나무껍질 우리",	-- Second Witherbark Cage
 	[144068] = "세번째 마른나무껍질 우리",	-- Third Witherbark Cage
@@ -1081,7 +1084,10 @@ for key,value in pairs({
 	[164886] = "오염된 노래꽃",	-- Corrupted Songflower
 	[164887] = "오염된 바람꽃",	-- Corrupted Windblossom	--TODO: This was taken from wotlk Wowhead
 	[164888] = "오염된 채찍뿌리",	-- Corrupted Whipper Root	--TODO: This was taken from wotlk Wowhead
+	[164909] = "난파된 나룻배",	-- Wrecked Row Boat	--TODO: This was taken from wotlk Wowhead
 	[164910] = "화려한 궤짝",	-- Ornate Chest
+	[164953] = "큰 가죽 배낭",	-- Large Leather Backpacks
+	[164954] = "주크애쉬 고치",	-- Zukk'ash Pod
 	[164955] = "북쪽 수정탑",	-- Northern Crystal Pylon
 	[164956] = "서쪽 수정탑",	-- Western Crystal Pylon
 	[164957] = "동쪽 수정탑",	-- Eastern Crystal Pylon
@@ -3318,6 +3324,8 @@ for key,value in pairs({
 	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
 	--TODO: [380533] = "Snow Covered Scroll",	-- Snow Covered Scroll
 	--TODO: [380547] = "Decay-Infused Tanning Oil",	-- Decay-Infused Tanning Oil
+	--TODO: [380587] = "Crate of Treated Hides",	-- Crate of Treated Hides
+	--TODO: [380602] = "Wind-Blessed Hide",	-- Wind-Blessed Hide
 	--TODO: [380653] = "Yennu's Kite",	-- Yennu's Kite
 	--TODO: [380654] = "Dead Man's Chestplate",	-- Dead Man's Chestplate
 	--TODO: [380840] = "Torn Riding Pack",	-- Torn Riding Pack
@@ -3329,11 +3337,16 @@ for key,value in pairs({
 	--TODO: [380902] = "Fields of Ferocity",	-- Fields of Ferocity
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	--TODO: [381045] = "Replica Dragon Goblet",	-- Replica Dragon Goblet
+	--TODO: [381094] = "Elegant Canvas Brush",	-- Elegant Canvas Brush
+	--TODO: [381107] = "Sand Pile",	-- Sand Pile
+	--TODO: [381108] = "Yennu's Map",	-- Yennu's Map
 	--TODO: [381110] = "Forgotten Jewel Box",	-- Forgotten Jewel Box
 	--TODO: [381153] = "Ruby Gem Cluster",	-- Ruby Gem Cluster
 	--TODO: [381157] = "Sapphire Gem Cluster",	-- Sapphire Gem Cluster
 	--TODO: [381158] = "Gnoll Fiend Flail",	-- Gnoll Fiend Flail
 	--TODO: [381160] = "Lost Compass",	-- Lost Compass
+	--TODO: [381216] = "Surveyor's Magnifying Glass",	-- Surveyor's Magnifying Glass
+	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
 	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
 	--TODO: [381297] = "Misplaced Luggage",	-- Misplaced Luggage
 	--TODO: [381355] = "Finely Carved Wing",	-- Finely Carved Wing
@@ -3355,7 +3368,9 @@ for key,value in pairs({
 	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
+	--TODO: [383625] = "Case of Fresh Gleamfish",	-- Case of Fresh Gleamfish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
+	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "추방자의 급조한 진흙 웅덩이",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
