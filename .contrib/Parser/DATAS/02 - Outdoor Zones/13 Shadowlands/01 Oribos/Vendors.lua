@@ -216,7 +216,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			n(188391, {	-- Ko'ropo <Sire Supplier>
 				["coord"] = { 66.7, 31.6, ORIBOS },
-				["timeline"] = { ADDED_SLS4 },
+				["timeline"] = { ADDED_SLS4, REMOVED_DFREL },
 				["sym"] = {
 					{"select", "instanceID", 1190},			-- Castle Nathria
 					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -342,7 +342,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			n(188377, {	-- So'turu <Fence of the First Ones>
 				["coord"] = { 67.0, 32.2, ORIBOS },
-				["timeline"] = { ADDED_SLS4 },
+				["timeline"] = { ADDED_SLS4, REMOVED_DFREL },
 				["sym"] = {
 					{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -356,7 +356,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			n(188386, {	-- Ta'choso <Domination Dealer>
 				["coord"] = { 67.3, 32.7, ORIBOS },
-				["timeline"] = { ADDED_SLS4 },
+				["timeline"] = { ADDED_SLS4, REMOVED_DFREL },
 				["sym"] = {
 					{"select", "instanceID", 1193},			-- Sanctum of Domination
 					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
