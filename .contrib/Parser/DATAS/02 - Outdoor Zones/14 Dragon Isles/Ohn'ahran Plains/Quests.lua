@@ -1042,6 +1042,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					i(192799),	-- Lizi, Thunderspine Tramper (MOUNT!)
 				},
 			}),
+			q(72429, {	-- Orientation: Maruukai
+				["provider"] = { "n", 195543 },	-- Sansok Khan
+				["coord"] = { 63.3, 41.3, OHNAHRAN_PLAINS },
+			}),
 			n(BONUS_OBJECTIVES, {
 				q(65892, {	-- The Sundered Asunder
 					-- ["sourceQuests"] = {  },	--

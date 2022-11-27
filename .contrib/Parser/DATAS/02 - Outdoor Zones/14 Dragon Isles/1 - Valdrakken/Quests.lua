@@ -225,5 +225,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 
 		q(72369),	-- Unknown popped when HS to valdrakken
 		q(72366),	-- Also Unknown
+
+		q(72596),	-- After Open Orientation
 	}),
 }));

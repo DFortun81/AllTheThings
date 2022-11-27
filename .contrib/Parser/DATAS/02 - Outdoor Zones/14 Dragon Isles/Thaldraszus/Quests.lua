@@ -784,6 +784,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 						["provider"] = { "n", 189045 },	-- Mara
 						["coord"] = { 49.6, 58.8, THALDRASZUS },
 					}),
+					q(65920, {	-- For the Ward!
+						["sourceQuests"] = {
+							65921,	-- Refti Retribution
+							65916,	-- We Don't Negotiate with Primalists
+						},
+						["provider"] = { "n", 189045 },	-- Mara
+						["coord"] = { 49.6, 58.7, THALDRASZUS },
+						["g"] = {
+							i(195191),	-- Sister's Embrace
+						},
+					}),
 					q(70139, {	-- Where There's a Ward, There's a Way
 						["sourceQuests"] = {
 							65921,	-- Refti Retribution
@@ -985,6 +996,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["provider"] = { "n", 192543 },	-- Archivist Arenial
 				["coord"] = { 60.3, 81.9, THALDRASZUS },
 			}),
+			q(72519, {	-- Temporal Two-ning
+				["sourceQuests"] = { 67154 },	-- Entropic Remnants
+				["provider"] = { "n", 186931 },	-- Nozdormu
+				["coord"] = { 60, 82.4, THALDRASZUS },
+			}),
 			ach(15941, {	-- Dragon Racing Completionist: Gold
 				["collectible"] = false,
 				["g"] = {
@@ -1143,5 +1159,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72084),	-- Popped during Quest at South Gate?
 		q(67030),	-- WQ Available?
 		q(70511),	-- Popped when doing quest and lootning 198964 Elementious Splinter from mobs?
+		q(72672),	-- Pop when I completed [70883] and choose 'Dragon Garden Shovel'.
 	}),
 }));

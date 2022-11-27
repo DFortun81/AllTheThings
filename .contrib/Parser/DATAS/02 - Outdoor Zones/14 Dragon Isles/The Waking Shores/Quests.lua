@@ -1035,6 +1035,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["provider"] = { "n", 187261 },	-- Grun Ashbeard
 				["coord"] = { 76.4, 34.6, THE_WAKING_SHORES },
 			}),
+			q(72337, {	-- Greater Obsidian Key
+				["provider"] = { "n", 187284 },	-- Wrathion
+				["coord"] = { 26.8, 62.5, THE_WAKING_SHORES },
+			}),
 			q(66003, {	-- Rings To Bind Them
 				-- ["sourceQuests"] = {} Unknown
 				["provider"] = { "n", 187609 },	-- Earthcaller Yevaa

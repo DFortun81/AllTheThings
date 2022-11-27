@@ -112,7 +112,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFR
 
 
 
-			q(72397, {	-- Welcome to the Basecamp
+			q(72397, {	-- Welcome to the Basecamp (new name: Orientation: Dragonscale Basecamp?)
 				["description"] = "Requires Renown 7.",
 				["sourceQuests"] = { 69855 },	-- A Climber's Calling
 				["provider"] = { "n", 186869 },	-- Naleidea Rivergleam

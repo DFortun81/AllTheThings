@@ -6764,7 +6764,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(65917),	--
 			q(65918),	--
 			q(65919),	--
-			q(65920),	--
 			q(65921),	--
 			q(65922),	--
 			q(65923),	--
@@ -7659,7 +7658,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(67090),	--
 			q(67091),	--
 			q(67092),	--
-			q(67093),	-- Anomaly of Aman'thul
 			q(67094),	-- A Dryad's Work Is Never Done
 			q(67095),	-- Thaldraszus - The Flowing Forest Flight
 			q(67096),	-- Thaldraszus - The Flowing Forest Flight - Advanced
