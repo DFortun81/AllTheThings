@@ -10,7 +10,6 @@ root("Zones", m(BROKEN_ISLES, {
 				["provider"] = { "n", 88863 },	-- Seska Seafang
 				["g"] = {
 					i(200665, {	-- Seaweed Trimming Blade
-						["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 						["classes"] = { EVOKER },
 						["timeline"] = ADDED_DFPRE2,
 					}),
@@ -273,7 +272,6 @@ root("Zones", m(BROKEN_ISLES, {
 				["provider"] = { "n", 91131 },	-- Runas the Shamed
 				["g"] = {
 					i(200653, {	-- Azure Staff of Arcana
-						["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 						["classes"] = { EVOKER },
 						["timeline"] = ADDED_DFPRE2,
 					}),

@@ -119,7 +119,6 @@ _.Zones =
 					["provider"] = { "n", 95421 },	-- Navarrogg
 					["g"] = {
 						i(200664, {	-- Bloodgem of Greed
-							["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 							["classes"] = { EVOKER },
 							["timeline"] = ADDED_DFPRE2,
 						}),
@@ -194,7 +193,6 @@ _.Zones =
 					["provider"] = { "n", 96038 },	-- Jale Rivermane
 					["g"] = {
 						i(200662, {	-- Encrusted Blade of the Mountains
-							["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 							["classes"] = { EVOKER },
 							["timeline"] = ADDED_DFPRE2,
 						}),
