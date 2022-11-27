@@ -63,6 +63,8 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 				}),
 			},
 		})),
+		pvp(ach(13568)),	-- For Nazjatar!
+		pvp(ach(13720)),	-- Supplying the Assassins
 		pvp(ach(13569)),	-- Tour of Duty: Nazjatar
 		ach(13638, {	-- Undersea Usurper
 			i(169194),		-- Snapback Scuttler (MOUNT!)

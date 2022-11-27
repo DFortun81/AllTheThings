@@ -89,6 +89,9 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 				i(44224, {	-- Black War Bear (H) (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
+				ach(14815, {	-- Executing the Exarch
+					["races"] = HORDE_ONLY,
+				}),
 				ach(616, {	-- Overthrow the Council
 					["races"] = HORDE_ONLY,
 				}),

@@ -63,7 +63,7 @@ _.PVP =
 					["races"] = HORDE_ONLY,
 				}),
 				ach(11016),	-- Rival: Legion Season 1
-				ach(11036, {	-- Soldier of the Alliance: Legion Season 1
+				ach(11024, {	-- Soldier of the Alliance: Legion Season 1
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						title(311, {	-- <Name> Soldier of the Alliance

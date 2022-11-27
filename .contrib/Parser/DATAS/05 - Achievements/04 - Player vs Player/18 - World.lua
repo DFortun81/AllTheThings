@@ -52,20 +52,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			crit(3),	-- Necrolord
 			crit(4),	-- Kyrian
 		}),
-		--[[ commenting this out for now, because this meta does not exist atm on live (as of 12/13/20)
-		ach(14520, {	-- Deathbringer
-			title(424),	-- Deathbringer <Name>
-			ach(14519),	-- Covenant Combat
-			ach(14518, {	-- The Many Trials of Zo'Sorg
-				ach(14517),	-- First Trial, First Try
-			}),
-			ach(14516),	-- Impressing Zo'Sorg
-			ach(14514),	-- Tour of Duty: Bastion
-			ach(14513),	-- Tour of Duty: Maldraxxus
-			ach(14512),	-- Tour of Duty: Revendreth
-			ach(14511),	-- Tour of Duty: Ardenweald
-		}),
-		--]]
+		
 		ach(11474, {	-- Free For All, More For Me
 			a(i(129280)),	-- Prestigious War Steed (MOUNT!)
 			h(i(143864)),	-- Prestigious War Wolf (MOUNT!)
@@ -130,6 +117,9 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 				["_quests"] = { 60231 },	-- State of Decay
 			}),
 		}),
+		a(ach(13402)),		-- Frontline Slayer
+		h(ach(13403)),		-- Frontline Slayer
+		ach(13317),		-- Supplied and Ready
 		ach(14511),		-- Tour of Duty: Ardenweald
 		ach(14514),		-- Tour of Duty: Bastion
 		ach(14513),		-- Tour of Duty: Maldraxxus

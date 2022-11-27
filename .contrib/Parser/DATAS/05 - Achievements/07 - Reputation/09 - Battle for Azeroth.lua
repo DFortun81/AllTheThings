@@ -36,7 +36,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		ach(12952, {	-- Order of Embers
 			["races"] = ALLIANCE_ONLY,
 		}),
-		ach(12956, {	-- Proudmoore Admiralty
+		ach(12951, {	-- Proudmoore Admiralty
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(13557),		-- Rustbolt Rebellion

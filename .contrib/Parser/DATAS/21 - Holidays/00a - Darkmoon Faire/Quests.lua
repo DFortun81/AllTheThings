@@ -552,6 +552,8 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["isMonthly"] = true,
 			["coord"] = { 48.3, 71.3, 407 },
 			["g"] = {
+				ach(9250),	-- Flying High
+				ach(9251),	-- Ringmaster
 				ach(9252, {	-- Brood of Alysrazor
 					i(116115),	-- Blazing Wings (TOY!)
 				}),

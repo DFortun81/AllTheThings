@@ -158,7 +158,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					e(2405, {	-- Tred'ova
 						["crs"] = { 164517 },	--	Tred'ova
 						["g"] = {
-							ach(14371),	-- Mists of Tirna Scithe
+							ach(14412),	-- Heroic: Mists of Tirna Scithe
 							i(178714),	-- Lakali's Spire of Knowledge
 							i(178711),	-- Axe of the Deadgrove
 							i(178712),	-- Acidslough Bulwark

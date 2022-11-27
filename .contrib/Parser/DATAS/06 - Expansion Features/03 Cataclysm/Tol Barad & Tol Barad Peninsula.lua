@@ -656,6 +656,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 						ach(5487),	-- Tol Barad Saboteur
 						a(ach(5417)),	-- Tol Barad Veteran
 						h(ach(5418)), -- Tol Barad Veteran
+						ach(5412),	-- Tol Barad Victory
 						ach(5488),	-- Towers of Power
 						ach(5415),	-- Tower Plower
 					})),
