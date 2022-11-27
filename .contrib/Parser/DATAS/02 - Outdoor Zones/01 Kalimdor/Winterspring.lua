@@ -94,7 +94,7 @@ local OnTooltipForWintersaberTrainers = [[function(t)
 		else
 			local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(42000 / repPerKill);
 			GameTooltip:AddDoubleLine("Complete Winterfall Intrusion", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			
+
 			if reputation >= ]] .. HONORED .. [[ then
 				-- #if AFTER TBC
 				repPerKill = isHuman and 385 or 350;
@@ -2403,6 +2403,7 @@ root("Zones", m(KALIMDOR, {
 							["timeline"] = { "added 10.0.2" },
 							["description"] = "Available for purchase after you complete |cFFFFD700Yetiphobia|r quest.",
 							["isLimited"] = true,
+							["sourceQuest"] = 28722,	-- Yetiphobia
 						}),
 					},
 				}),
