@@ -1502,28 +1502,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["provider"] = { "n", 186755 },	-- Tyrnokos Sunstrike
 				["coord"] = { 65.6, 16.2, THE_AZURE_SPAN },
 			}),
-			q(72358, {	-- Cascade
-				["provider"] = { "n", 186962 },	-- Cascade
-				["coord"] = { 23.8, 32.6, THE_AZURE_SPAN },
-				["g"] = {
-					i(200135),	-- Corroded Greatsword
-				},
-			}),
-			q(69885, {	-- Gruffy
-				["provider"] = { "n", 193251 },	-- Gruffy
-				["coord"] = { 32.7, 29.2, THE_AZURE_SPAN },
-				["g"] = {
-					i(200755),	-- Gruffy's Dented Horn
-				},
-			}),
-			q(72435, {	-- Welcome to the Assembly
-				["provider"] = { "n", 194680 },	-- Venthi
-				["coord"] = { 49, 23.1, THE_AZURE_SPAN },
-			}),
-			q(70550, {	-- Orientation: Iskaara
-				["provider"] = { "n", 193006 },	-- Murik
-				["coord"] = { 13.1, 49.2, THE_AZURE_SPAN },
-			}),
 				-- Hemet Nesingwary --
 			q(66972, {	-- Old Stonetusk
 				["sourceQuests"] = { 65686 },	-- To the Azure Span

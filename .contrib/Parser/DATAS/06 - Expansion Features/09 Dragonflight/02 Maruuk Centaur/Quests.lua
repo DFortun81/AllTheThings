@@ -4,6 +4,10 @@
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	n(MARUUK_CENTAUR, {
 		n(QUESTS, {
+			q(72429, {	-- Orientation: Maruukai
+				["provider"] = { "n", 195543 },	-- Sansok Khan
+				["coord"] = { 63.3, 41.3, OHNAHRAN_PLAINS },
+			}),
 				-- RENOWN 2	--
 			q(70928, {	-- Hunting Trophy
 				["description"] = "Requires Renown 2.",

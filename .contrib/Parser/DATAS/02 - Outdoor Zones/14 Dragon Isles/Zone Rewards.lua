@@ -68,6 +68,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			i(192018),	-- Piercing Shikaar Thrust
 			i(192022),	-- Plumed Outrunner's Dirk
 			i(192021),	-- Qalashi Crustshaper's Greatmace
+			i(197939),	-- Razortooth Harpoon
 			i(192032),	-- Searing Wyvern Brand
 			i(192029),	-- Swift Dragonbone Mace
 			i(192017),	-- Thrumming Celestial Arrangement

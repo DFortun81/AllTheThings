@@ -69,7 +69,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			}),
 			o(381157, {	-- Sapphire Gem Cluster
 				["coord"] = { 40.5, 41.4, THE_AZURE_SPAN },
-				["questID"] = 70605,
+				-- ["questID"] = 70605,
 				["cost"] = { { "i", 199067, 1 }, },	--1xPrecious Plans
 				["g"] = {
 					crit(3, {	-- Sapphire Gem Cluster
@@ -81,14 +81,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			}),
 			o(380533, {	-- Snow Covered Scroll
 				["coord"] = { 58.0, 42.0, THE_AZURE_SPAN },
-				["questID"] = 70237,
+				-- ["questID"] = 70237,
 				["g"] = {
 					i(198103),	-- Recipe: Snow in a Cone (RECIPE!)
 				},
 			}),
 			o(380587, {	-- Crate of Treated Hides
 				["coord"] = { 57.5, 41.3, THE_AZURE_SPAN },
-				["questID"] = 70286,
+				-- ["questID"] = 70286,
 				["g"] = {
 					i(198683),	-- Treated Hides
 				},

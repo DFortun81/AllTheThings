@@ -12,6 +12,12 @@ local TALLSTRIDER_SINEW = 201404;
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	m(THE_AZURE_SPAN, {
 		faction(2550, {	-- Cobalt Assembly
+			n(QUESTS, {
+				q(72435, {	-- Welcome to the Assembly
+					["provider"] = { "n", 194680 },	-- Venthi
+					["coord"] = { 49, 23.1, THE_AZURE_SPAN },
+				}),
+			}),
 			n(VENDORS, {
 				n(194832, {	-- Steiz <Quartermaster>
 					["coord"] = { 49.4, 22.6, THE_AZURE_SPAN },

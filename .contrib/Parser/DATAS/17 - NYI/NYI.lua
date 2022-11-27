@@ -508,7 +508,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200744),	-- Glacial Bindings
 			i(200745),	-- Horns of the Futurebane
 			i(200746),	-- Icebound Girdle
-			i(200755),	-- Gruffy's Dented Horn
 			i(200758),	-- Breastplate of Storied Antiquity
 			i(200760),	-- Unstable Arcane Cell
 			i(200761),	-- Smoldering Sulfuron Signet
@@ -991,7 +990,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197936),	-- Serrated Deboning Knife
 			i(197937),	-- Intricate Scaling Knife
 			i(197938),	-- Uktulut Whaling Spear
-			i(197939),	-- Razortooth Harpoon
 			i(197940),	-- Hefty Iskaaran Anchor
 			i(197941),	-- Iskaaran Mystic's Tideshear
 			i(197942),	-- Tuskarr Navigator's Staff

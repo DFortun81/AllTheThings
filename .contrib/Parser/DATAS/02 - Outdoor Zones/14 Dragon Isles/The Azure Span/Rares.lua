@@ -86,7 +86,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			n(193691, {	-- Fisherman Tinnak <Angered Ghost>
 				["description"] = "Collect the nearby items; Broken Fishing Pole, Torn Fishing Net and Old Harpoon.",
 				["coord"] = { 49.5, 36.1, THE_AZURE_SPAN },
-				["questID"] = 72254,
+				-- ["questID"] = 72254,
 				["g"] = {
 					i(196985),	-- Cliffside Wylderdrake: Horned Jaw (DM!)
 					i(198070),	-- Tattered Seavine
@@ -123,9 +123,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			n(193251, {	-- Gruffy
 				["coord"] = { 32.7, 29.2, THE_AZURE_SPAN },
 				-- ["questID"] = 69885,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200755),	-- Gruffy's Dented Horn
+				},
 			}),
 			n(193269, {	-- Grumbletrunk
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },

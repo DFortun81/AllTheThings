@@ -33,14 +33,35 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				}),
 			}),
 			n(QUESTS, {
+				q(72456, {	-- Tomes Of Trust
+					["provider"] = { "n", 188344 },	-- Chydrass
+					["coord"] = { 25, 56.1, THE_WAKING_SHORES },
+				}),
+				q(66103, {	-- Eager to Please
+					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
+					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
+				}),
+				q(66308, {	-- Feeding the Fire
+					["provider"] = { "n", 188179 },	-- Stoker Volrax
+					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
+				}),
+				q(66633, {	-- Make a Statement
+					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
+					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
+				}),
+				q(72448, {	-- Securing Our Legacy
+					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
+					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
+				}),
 				q(66856, {	-- Ashen Black and the Seven Gnomes
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 					["provider"] = { "n", 191014 },	-- Ashen Black
 					["coord"] = { 26.5, 62.5, THE_WAKING_SHORES },
 					["isDaily"] = true,
-					["g"] = {
-						i(197939),	-- Razortooth Harpoon
-					},
+				}),
+				q(72337, {	-- Greater Obsidian Key
+					["provider"] = { "n", 187284 },	-- Wrathion
+					["coord"] = { 26.8, 62.5, THE_WAKING_SHORES },
 				}),
 				q(65842, {	-- Disarming Behavior
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty

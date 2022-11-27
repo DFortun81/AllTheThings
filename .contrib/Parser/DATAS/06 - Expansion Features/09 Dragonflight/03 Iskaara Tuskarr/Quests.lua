@@ -4,6 +4,10 @@
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 	n(ISKAARA_TUSKARR, {
 		n(QUESTS, {
+			q(70550, {	-- Orientation: Iskaara
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.2, THE_AZURE_SPAN },
+			}),
 				-- RENOWN 1 --
 			q(70936, {	-- Stolen Tuskaar Totems
 				["sourceQuests"] = { 65849 },	-- To Iskaara
