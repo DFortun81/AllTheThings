@@ -164,6 +164,34 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 				["coord"] = { 50.7, 58.0, THALDRASZUS },
 				["isWeekly"] = true,
 			}),
+			q(72068, {	-- Aiding the Accord: A Feast For All
+				["sourceQuests"] = { 70750 },	-- Making a Name
+				["coord"] = { 50.7, 58.0, VALDRAKKEN },
+				["g"] = {
+					i(200073),	-- Valdrakken Treasures
+				},
+			}),
+			q(72373, {	-- Aiding the Accord: The Hunt is On
+				["sourceQuests"] = { 70750 },	-- Making a Name
+				["coord"] = { 50.7, 58.0, VALDRAKKEN },
+				["g"] = {
+					i(200073),	-- Valdrakken Treasures
+				},
+			}),
+			q(72374, {	-- Aiding the Accord: Dragonbane Keep
+				["sourceQuests"] = { 70750 },	-- Making a Name
+				["coord"] = { 50.7, 58.0, VALDRAKKEN },
+				["g"] = {
+					i(200073),	-- Valdrakken Treasures
+				},
+			}),
+			q(72375, {	-- Aiding the Accord: The Isles Call
+				["sourceQuests"] = { 70750 },	-- Making a Name
+				["coord"] = { 50.7, 58.0, VALDRAKKEN },
+				["g"] = {
+					i(200073),	-- Valdrakken Treasures
+				},
+			}),
 			q(66867, {	-- Relic Recovery: Algeth'ar Academy
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 191957 },	-- Theldren
@@ -227,5 +255,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72366),	-- Also Unknown
 
 		q(72596),	-- After Open Orientation
+		q(72892),	-- After "Aiding the Accord" series
 	}),
 }));

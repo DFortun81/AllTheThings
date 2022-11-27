@@ -81,9 +81,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			}),
 			o(380533, {	-- Snow Covered Scroll
 				["coord"] = { 58.0, 42.0, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 70237,
 				["g"] = {
 					i(198103),	-- Recipe: Snow in a Cone (RECIPE!)
+				},
+			}),
+			o(380587, {	-- Crate of Treated Hides
+				["coord"] = { 57.5, 41.3, THE_AZURE_SPAN },
+				["questID"] = 70286,
+				["g"] = {
+					i(198683),	-- Treated Hides
 				},
 			}),
 		}),

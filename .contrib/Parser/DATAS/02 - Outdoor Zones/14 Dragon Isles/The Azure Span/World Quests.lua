@@ -10,6 +10,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 			q(70529, {	-- Bring Them Home
 				["coord"] = { 33.8, 46.7, THE_AZURE_SPAN }
 			}),
+			q(70068, {	-- Cobalt Catastrophe
+				["coord"] = { 49.3, 23.5, THE_AZURE_SPAN }
+			}),
 			q(70037, {	-- Unpowered Tools [Cobalt]
 				["coord"] = { 47.4, 24.6, THE_AZURE_SPAN }
 			}),

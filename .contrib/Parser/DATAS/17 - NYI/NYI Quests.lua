@@ -7787,7 +7787,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69881),	--
 			q(69882),	-- Lord Epochbrgl
 			q(69883),	--
-			q(69885),	--
 			q(69886),	--
 			q(69887),	-- Hanmuk
 			q(69891),	--

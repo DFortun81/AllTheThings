@@ -19,6 +19,11 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
 					["sourceQuests"] = { 65849 },	-- To Iskaara
 					["provider"] = { "n", 186480 },	-- Brena
 					["coord"] = { 13.2, 49.6, THE_AZURE_SPAN },
+					["g"] = {
+						i(193661),	-- Blightweaver's Clutches
+						i(193671),	-- Bloodied Wedding Ring
+						i(193666),	-- Tuskarr Bone Necklace
+					},
 				}),
 			}),
 			d(1, {	-- Normal
