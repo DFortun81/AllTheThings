@@ -1698,7 +1698,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 				q(4129, {	-- The Knife Revealed
 					["providers"] = {
-						{ "o", 7880 },	-- Ginro Hearthkindle
+						{ "n", 7880 },	-- Ginro Hearthkindle
 						{ "i", 11462 },	-- Discarded Knife
 					},
 					["sourceQuest"] = 4127,	-- Boat Wreckage
