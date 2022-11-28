@@ -160,9 +160,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			["timeline"] = TIMELINE_DF_REL,
 		}),
 		q(66458, {	-- Legacy of Tyr: Secrets of the Past [A]
-			["sourceQuests"] = { 66596 },	-- Whispers in the Winds [A]
+			["sourceQuests"] = { 66596 },	-- Whispers on the Winds [A]
 			["provider"] = { "n", 189569 },	-- Wrathion <The Black Prince>
-			-- ["coord"] = { X, Y, STORMWIND_CITY },
+			["coord"] = { 22.9, 56.0, STORMWIND_CITY },
 			["g"] = {
 				i(201303),	-- Beheader's Poleaxe
 				i(201304),	-- Dunesplitter
