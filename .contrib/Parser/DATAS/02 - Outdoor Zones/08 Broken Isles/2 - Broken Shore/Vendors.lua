@@ -312,3 +312,8 @@ _.Zones =
 		}),
 	}),
 };
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(47256),	-- learning Arsenal: Armaments of the Silver Hand
+	}),
+});
