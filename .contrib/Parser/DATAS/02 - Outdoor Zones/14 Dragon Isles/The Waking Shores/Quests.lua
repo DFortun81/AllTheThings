@@ -1350,6 +1350,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	}),
 })));
 
+--[[
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THE_WAKING_SHORES, {
 		q(70709),	-- Promising to Save Wu'de Prepfoot during The Shadow of His Wings(65691)
@@ -1378,3 +1379,4 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72096),	-- Release Kite at Wingrest Embassy
 	}),
 }));
+--]]

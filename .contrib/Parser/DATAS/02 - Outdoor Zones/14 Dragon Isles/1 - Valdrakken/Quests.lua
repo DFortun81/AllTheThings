@@ -246,6 +246,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	}),
 })));
 
+--[[
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
 		q(70570),	-- Talked with Watcher Koranos
@@ -267,3 +268,4 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72673),	-- After turning in [71227]
 	}),
 }));
+--]]

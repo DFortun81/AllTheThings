@@ -12,6 +12,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 			}),
 			n(QUESTS, {
+				--[[
 				q(67039, {	-- An Amazing Journey
 					--["sourceQuests"] = {  },
 					["provider"] = { "n", 185881 },	-- Toluiqi
@@ -108,6 +109,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 71.1, 31.3, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
 				}),
+				--]]
 			}),
 		}),
 	}),

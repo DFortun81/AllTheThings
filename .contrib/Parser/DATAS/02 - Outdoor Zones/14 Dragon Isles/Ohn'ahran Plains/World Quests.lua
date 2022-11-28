@@ -4,6 +4,7 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
+			--[[
 			q(70067, {	-- A Massage to the Nokhud
 				["coord"] = { 35.7, 39.2, OHNAHRAN_PLAINS }
 			}),
@@ -46,6 +47,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(71140, {	-- Two and Two Together
 				["coord"] = { 62.0, 41.6, OHNAHRAN_PLAINS }
 			}),
+			--]]
 		})),
 	}),
 })));

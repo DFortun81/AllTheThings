@@ -6,7 +6,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		n(SPECIAL, {
 			o(377899, {	-- Hidden Hornswog Hostage
 				["coord"] = { 64.9, 69.6, THE_WAKING_SHORES },
-				["questID"] = 67048,
+				-- ["questID"] = 67048,
 				["g"] = {
 					i(199916),	-- Roseate Hopper (PET!)
 				},
@@ -20,7 +20,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(192362, {	-- Possessive Hornswog
 				["coord"] = { 64.9, 69.6, THE_WAKING_SHORES },
-				["questID"] = 70864,
+				-- ["questID"] = 70864,
 				["cost"] = { { "i", 200063, 1 }, },	-- 1xObservant Riddle "Treat"
 			}),
 		}),

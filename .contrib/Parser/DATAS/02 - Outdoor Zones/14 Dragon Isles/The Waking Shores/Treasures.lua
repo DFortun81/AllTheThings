@@ -66,7 +66,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(381045, {	-- Replica Dragon Goblet
 				["coord"] = { 48.9, 51.8, THE_WAKING_SHORES },
-				["questID"] = 70600,
+				-- ["questID"] = 70600,
 				["cost"] = { { "i", 198854, 1 }, },	-- 1xArcheologist Artifact Notes
 				["g"] = {
 					crit(1, {	-- Replica Dragon Goblet
@@ -77,7 +77,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(381153, {	-- Ruby Gem Cluster
 				["coord"] = { 61.3, 70.8, THE_WAKING_SHORES },
-				["questID"] = 70598,
+				-- ["questID"] = 70598,
 				["cost"] = { { "i", 199062, 1 }, },	-- 1xRuby Gem Cluster Map
 				["g"] = {
 					crit(3, {	-- Ruby Gem Cluster
@@ -90,7 +90,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			o(382325, {	-- Onyx Gem Cluster
 				["description"] = "Cave Entrance at 29.4, 52.6",
 				["coord"] = { 29.4, 47.0, THE_WAKING_SHORES },
-				["questID"] = 72020,
+				-- ["questID"] = 72020,
 				["cost"] = { { "i", 200738, 1 }, },	-- 1xOnyx Gem Cluster Map
 				["g"] = {
 					crit(8, {	-- Onyx Gem Cluster

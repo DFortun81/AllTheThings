@@ -1154,6 +1154,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	}),
 })));
 
+--[[
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THALDRASZUS, {
 		q(72084),	-- Popped during Quest at South Gate?
@@ -1162,3 +1163,4 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72672),	-- Pop when I completed [70883] and choose 'Dragon Garden Shovel'.
 	}),
 }));
+--]]

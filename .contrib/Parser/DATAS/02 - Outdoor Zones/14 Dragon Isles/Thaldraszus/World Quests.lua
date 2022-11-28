@@ -4,6 +4,7 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THALDRASZUS, {
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
+			--[[
 			q(72090, {	-- Disrupting the Primalist Plan
 				["coord"] = { 61.5, 50.0, PRIMALIST_TOMORROW }
 			}),
@@ -19,6 +20,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(70057, {	-- Thieving Tarasek
 				["coord"] = { 56.2, 68.7, THALDRASZUS }
 			}),
+			-- ]]
 		})),
 	}),
 })));

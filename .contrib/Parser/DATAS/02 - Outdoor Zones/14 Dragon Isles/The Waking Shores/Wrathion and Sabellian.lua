@@ -33,6 +33,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			n(QUESTS, {
+				--[[
 				q(72456, {	-- Tomes Of Trust
 					["provider"] = { "n", 188344 },	-- Chydrass
 					["coord"] = { 25, 56.1, THE_WAKING_SHORES },
@@ -100,6 +101,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					-- ["sourceQuests"] = {  },
 					["provider"] = { "n", 198071 },	-- Flamecarved Bone
 				}),
+				--]]
 			}),
 			n(RARES, {
 				n(190986, {	-- Battlehorn Pyrhus

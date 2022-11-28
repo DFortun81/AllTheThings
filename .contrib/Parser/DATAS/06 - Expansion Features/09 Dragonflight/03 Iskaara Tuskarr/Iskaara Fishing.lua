@@ -24,14 +24,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16553),	-- Taking From Nature
 			}),
 			n(QUESTS, {
-				q(70438, {	-- Flying Fish
-					["provider"] = { "n", 195338 },	-- Fisherman Pasqaa
-					["coord"] = { 63.8, 76.6, THE_WAKING_SHORES },
-					["repeatable"] = true,
-					["g"] = {
-						i(198855),	-- Throw Net
-					},
-				}),
+				--q(70438, {	-- Flying Fish
+				--	["provider"] = { "n", 195338 },	-- Fisherman Pasqaa
+				--	["coord"] = { 63.8, 76.6, THE_WAKING_SHORES },
+				--	["repeatable"] = true,
+				--	["g"] = {
+				--		i(198855),	-- Throw Net
+				--	},
+				--}),
 			}),
 			prof(TUSKARR_FISHING_GEAR, {
 				["crs"] = { 195935 },

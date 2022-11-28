@@ -56,7 +56,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(380847, {	-- Emerald Gem Cluster
 				["coord"] = { 33.2, 55.3, OHNAHRAN_PLAINS },
-				["questID"] = 70391,
+				-- ["questID"] = 70391,
 				["cost"] = { { "i", 198843, 1 }, },	--1xEmerald Gardens Explorer's Notes
 				["g"] = {
 					crit(3, {	-- Emerald Gem Cluster
@@ -89,7 +89,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(380859, {	-- Tuskarr Toy Boat
 				["coord"] = { 52.0, 58.3, OHNAHRAN_PLAINS },
-				["questID"] = 70400,
+				-- ["questID"] = 70400,
 				["g"] = {
 					crit(6, {	-- Tuskarr Toy Boat
 						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
@@ -99,7 +99,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(380602, {	-- Wind-Blessed Hide
 				["coord"] = { 86.2, 53.6, OHNAHRAN_PLAINS },
-				["questID"] = 70300,
+				-- ["questID"] = 70300,
 				["g"] = {
 					i(198696),	-- Wind-Blessed Hide
 				}

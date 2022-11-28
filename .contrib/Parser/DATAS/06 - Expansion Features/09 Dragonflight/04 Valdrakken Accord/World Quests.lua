@@ -6,13 +6,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		n(WORLD_QUESTS, {
 			n(QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
 				-- Waking Shores
-				q(70417, {	-- Dragonrider Racing - Wingrest Roundabout
-					["coord"] = { 73.2, 33.9, THE_WAKING_SHORES },
-				}),
+				--q(70417, {	-- Dragonrider Racing - Wingrest Roundabout
+				--	["coord"] = { 73.2, 33.9, THE_WAKING_SHORES },
+				--}),
 				-- Ohn
-				q(70423, {	-- Dragonrider Racing - Maruukai Dash
-					["coord"] = { 60.0, 35.5, OHNAHRAN_PLAINS },
-				}),
+				--q(70423, {	-- Dragonrider Racing - Maruukai Dash
+				--	["coord"] = { 60.0, 35.5, OHNAHRAN_PLAINS },
+				--}),
 			})),
 			n(REWARDS, {
 

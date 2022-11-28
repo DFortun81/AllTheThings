@@ -159,6 +159,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAGONSCALE_EXPEDITION, {
-		q(70824),	-- Highest/Tallest Peak WingRest Embassy
+		-- q(70824),	-- Highest/Tallest Peak WingRest Embassy
 	}),
 })));

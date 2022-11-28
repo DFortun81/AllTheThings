@@ -1205,6 +1205,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	}),
 })));
 
+--[[
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(OHNAHRAN_PLAINS, {
 		--
@@ -1229,3 +1230,4 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		--q(71033),	-- Loot? Object (381981)
 	}),
 }));
+--]]

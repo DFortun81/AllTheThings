@@ -17,7 +17,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(999111, {	-- Amber Gem Cluster	-- PH
 				["coord"] = { 52.6, 76.7, THALDRASZUS },
-				["questID"] = 70408,
+				-- ["questID"] = 70408,
 				["cost"] = { { "i", 198852, 1 }, },	--1xYennu's Map
 				["g"] = {
 					crit(3, {	-- Amber Gem Cluster
