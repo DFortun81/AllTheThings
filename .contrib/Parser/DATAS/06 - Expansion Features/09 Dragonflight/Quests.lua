@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {
+root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
 	n(HIDDEN_QUESTS, {
 		q(72285, {	-- Stay awhile and listen: Scalecommander Azurathel
 			["name"] = "Stay awhile and listen: Scalecommander Azurathel",
@@ -122,42 +122,42 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFP
             ["provider"] = { "n", 193890 },	-- Dervishian
             ["coord"] = { 23.1, 56.2, STORMWIND_CITY },
             ["races"] = ALLIANCE_ONLY,
-			["timeline"] = TIMELINE_DFREL,
+			["timeline"] = TIMELINE_DF_REL,
 		}),
 		q(70045, {	-- Truths and Revelations [H]
 			["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
 			["provider"] = { "n", 193889 },	-- Kodethi
 			["coord"] = { 55.9, 12.7, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["timeline"] = TIMELINE_DFREL,
+			["timeline"] = TIMELINE_DF_REL,
 		}),
 		q(70053, {    -- Lessons From Our Past [A]
             ["sourceQuests"] = { 70044 },	-- Truths and Revelations [A]
             ["provider"] = { "n", 193924 },	-- Scalecommander Emberthal
             ["coord"] = { 40.6, 49.7, STORMWIND_CITY },
             ["races"] = ALLIANCE_ONLY,
-			["timeline"] = TIMELINE_DFREL,
+			["timeline"] = TIMELINE_DF_REL,
 		}),
 		q(70054, {	-- Lessons From Our Past [H]
 			["sourceQuests"] = { 70045 },	-- Truths and Revelations [H]
 			["provider"] = { "n", 193924 },	-- Scalecommander Emberthal
 			["coord"] = { 49.2, 73.8, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
-			["timeline"] = TIMELINE_DFREL,
+			["timeline"] = TIMELINE_DF_REL,
 		}),
 		q(67700, {    -- To The Dragon Isles! [A]
             ["sourceQuests"] = { 70050 },	--  The Expedition Gathers [A]
            -- TODO: ["provider"] = { "n", 189602 },	-- Toddy Whiskers (not sure) // I fked and miss npc, need to redo
             ["coord"] = { 40.4, 50.1, STORMWIND_CITY },
             ["races"] = ALLIANCE_ONLY,
-			["timeline"] = TIMELINE_DFREL,
+			["timeline"] = TIMELINE_DF_REL,
 		}),
 		q(65444, {	-- To the Dragon Isles! [H]
 			["sourceQuests"] = { 69944 },	-- The Expedition Gathers [H]
 			["provider"] = { "n", 197279 },	-- Naleidea Rivergleam
 			["coord"] = { 55.8, 12.7, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["timeline"] = TIMELINE_DFREL,
+			["timeline"] = TIMELINE_DF_REL,
 		}),
 		q(66458, {	-- Legacy of Tyr: Secrets of the Past [A]
 			["sourceQuests"] = { 66596 },	-- Whispers in the Winds [A]

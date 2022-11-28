@@ -36,7 +36,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 59.7, 70.6, ORIBOS },
 				["g"] = {
 					i(194118, {	-- Cosmic Equipment Chest
-						["timeline"] = { "added 9.2.5", REMOVED_SLS4 },
+						["timeline"] = { "added 9.2.5", REMOVED_SL_S4 },
 						["cost"] = {
 							{ "c", 1602, 375 },	-- 375xConquest
 						},
@@ -50,7 +50,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 					}),
 					i(194334, {	-- Encrypted Equipment Chest
-					["timeline"] = { "added 9.2.5", REMOVED_SLS4 },
+					["timeline"] = { "added 9.2.5", REMOVED_SL_S4 },
 						["cost"] = {
 							{ "c", 1191, 500 },	-- 500xValor
 						},
@@ -216,7 +216,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			n(188391, {	-- Ko'ropo <Sire Supplier>
 				["coord"] = { 66.7, 31.6, ORIBOS },
-				["timeline"] = { ADDED_SLS4, REMOVED_DFREL },
+				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
 				["sym"] = {
 					{"select", "instanceID", 1190},			-- Castle Nathria
 					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -262,11 +262,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					})),
 					i(191297, {	-- Ephemera-Infused Mesh
 						["cost"] = { { "i", 187219, 6 } },	-- 6x Attendant's Token of Merit
-						["timeline"] = { "added 9.2.0", REMOVED_SLS4 },
+						["timeline"] = { "added 9.2.0", REMOVED_SL_S4 },
 					}),
 					i(199112, {	-- Fated Matter Fractalizer
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
-						["timeline"] = { ADDED_SLS4 },
+						["timeline"] = { ADDED_SL_S4 },
 					}),
 					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Korthite Crystal Geode
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
@@ -342,7 +342,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			n(188377, {	-- So'turu <Fence of the First Ones>
 				["coord"] = { 67.0, 32.2, ORIBOS },
-				["timeline"] = { ADDED_SLS4, REMOVED_DFREL },
+				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
 				["sym"] = {
 					{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -356,7 +356,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			n(188386, {	-- Ta'choso <Domination Dealer>
 				["coord"] = { 67.3, 32.7, ORIBOS },
-				["timeline"] = { ADDED_SLS4, REMOVED_DFREL },
+				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
 				["sym"] = {
 					{"select", "instanceID", 1193},			-- Sanctum of Domination
 					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -469,7 +469,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								["classes"] = { DRUID },
 							}),
 						}),
-						n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {
+						n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {
 							n(WEAPONS, {
 								i(192405, {	-- Eternal Aspirant's Barrier
 									["cost"] = { { "c", 1792, 450 } },
@@ -780,7 +780,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								}),
 							}),
 						})),
-						n(SEASON_COSMIC, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {
+						n(SEASON_COSMIC, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SL_S4 } }, {
 							n(WEAPONS, {
 								i(186959, {	-- Cosmic Aspirant's Barrier
 									["cost"] = { { "c", 1792, 450 } },
@@ -1662,7 +1662,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							i(182465),	-- Truth's Wake
 							i(182681),	-- Vengeful Shock
 						})),
-						n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {
+						n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {
 							n(WEAPONS, {
 								i(192292, {	-- Eternal Gladiator's Ballista
 									["cost"] = { { "c", 1602, 1800 } },
@@ -1993,7 +1993,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								}),
 							}),
 						})),
-						n(SEASON_COSMIC, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {
+						n(SEASON_COSMIC, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SL_S4 } }, {
 							n(WEAPONS, {
 								i(186863, {	-- Cosmic Gladiator's Ballista
 									["cost"] = { { "c", 1602, 1800 } },

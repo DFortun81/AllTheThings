@@ -998,7 +998,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["g"] = {
 						i(181334),	-- Essence Extractor
 					},
-					["timeline"] = { "added 9.0.2", REMOVED_DFPRE2 },
+					["timeline"] = { "added 9.0.2", REMOVED_DF_PRE2 },
 				}),
 				q(62784, {	-- Charlatans (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -1006,7 +1006,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["g"] = {
 						i(181185),	-- Soulstalker Breeches
 					},
-					["timeline"] = { "added 9.0.2", REMOVED_DFPRE2 },
+					["timeline"] = { "added 9.0.2", REMOVED_DF_PRE2 },
 				}),
 				q(59211, {	-- Forgotten Village
 					["sourceQuests"] = { 60313 },	-- Dredhollow
@@ -1020,7 +1020,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["g"] = {
 						i(181183),	-- Soulstalker Grips
 					},
-					["timeline"] = { "added 9.0.2", REMOVED_DFPRE2 },
+					["timeline"] = { "added 9.0.2", REMOVED_DF_PRE2 },
 				}),
 				q(62783, {	-- Stalking Fear (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -1028,7 +1028,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["g"] = {
 						i(181187),	-- Soulstalker Bindings
 					},
-					["timeline"] = { "added 9.0.2", REMOVED_DFPRE2 },
+					["timeline"] = { "added 9.0.2", REMOVED_DF_PRE2 },
 				}),
 				q(62782, {	-- The Banewood (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -1036,7 +1036,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["g"] = {
 						i(181184),	-- Soulstalker Helm
 					},
-					["timeline"] = { "added 9.0.2", REMOVED_DFPRE2 },
+					["timeline"] = { "added 9.0.2", REMOVED_DF_PRE2 },
 				}),
 			}),
 		}),

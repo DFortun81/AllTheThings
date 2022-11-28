@@ -910,8 +910,8 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 		}),
 	})),
-	n(SEASON_COSMIC, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {
+	n(SEASON_COSMIC, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SL_S4 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SL_S4 } }, {
 			ach(15349),		-- Challenger I: Shadowlands Season 3
 			ach(15379),		-- Challenger II: Shadowlands Season 3
 			ach(15348, {	-- Combatant I: Shadowlands Season 3
@@ -1495,7 +1495,7 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 		}),
 	})),
-	n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFPRE } }, {
+	n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
 		n(ACHIEVEMENTS, {
 			ach(15600),		-- Challenger I: Shadowlands Season 4
 			ach(15601),		-- Challenger II: Shadowlands Season 4

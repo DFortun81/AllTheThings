@@ -5,7 +5,7 @@
 root(ROOTS.Instances, tier(SL_TIER, {
 	n(ACHIEVEMENTS, {
 		ach(15684, bubbleDownSelf({	-- Fates of the Shadowlands Raids
-				["timeline"] = { ADDED_SLS4, REMOVED_DFREL },
+				["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
 				["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
 			}, {
 			i(190170),	-- Jigglesworth Sr. (MOUNT!)
@@ -48,7 +48,7 @@ root(ROOTS.Instances, tier(SL_TIER, {
 			}),
 		})),
 		ach(15685, bubbleDownSelf({	-- Heroic: Fates of the Shadowlands Raids
-			["timeline"] = { ADDED_SLS4, REMOVED_DFREL },
+			["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
 			["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
 		}, {
 			title(464),	-- <Name>, Hero of Fate
@@ -91,7 +91,7 @@ root(ROOTS.Instances, tier(SL_TIER, {
 			}),
 		})),
 		ach(15687, bubbleDownSelf({	-- Mythic: Fates of the Shadowlands Raids
-			["timeline"] = { ADDED_SLS4, REMOVED_DFREL },
+			["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
 			["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
 		}, {
 			ach(15665, {	-- Mythic: Fate of Nathria
@@ -136,7 +136,7 @@ root(ROOTS.Instances, tier(SL_TIER, {
 			-- },
 		})),
 	}),
-	n(COMMON_BOSS_DROPS, sharedData({["timeline"] = { ADDED_SLS4 },},{
+	n(COMMON_BOSS_DROPS, sharedData({["timeline"] = { ADDED_SL_S4 },},{
 		d(15, {	-- Heroic
 			i(191910, {	-- Confounding Antique Cypher
 				["description"] = "Drops from Fated Heroic Shadowlands Raid bosses.",
@@ -154,7 +154,7 @@ root(ROOTS.Instances, tier(SL_TIER, {
 			}),
 		}),
 	})),
-	n(QUESTS, sharedData({["timeline"] = { ADDED_SLS4 },},{
+	n(QUESTS, sharedData({["timeline"] = { ADDED_SL_S4 },},{
 		q(66648, {	-- Crossing Fate
 			["description"] = "Auto-accepted by entering any 'Fated' Shadowlands Raid.",
 			["maps"] = {
@@ -258,7 +258,7 @@ root(ROOTS.Instances, tier(SL_TIER, {
 			},
 		}),
 		q(66696, {	-- Tempting Fate: Fate of the Shadowlands
-			["timeline"] = { "created 9.2.7", ADDED_DFPRE },
+			["timeline"] = { "created 9.2.7", ADDED_DF_PRE },
 			["isWorldQuest"] = true,
 			["maps"] = {
 				-- Castle Nathria

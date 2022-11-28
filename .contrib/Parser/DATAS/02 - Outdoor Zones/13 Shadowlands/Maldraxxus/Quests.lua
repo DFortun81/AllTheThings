@@ -785,12 +785,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["g"] = {
 						i(181638),	-- Gorewrought Drape
 					},
-					["timeline"] = { "added 9.0.2", REMOVED_DFPRE2 },
+					["timeline"] = { "added 9.0.2", REMOVED_DF_PRE2 },
 				}),
 				q(62741, {	-- Choice of Action (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["timeline"] = { "added 9.0.2", REMOVED_DFPRE2 },
+					["timeline"] = { "added 9.0.2", REMOVED_DF_PRE2 },
 				}),
 				q(62743, {	-- Decaying Situation (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -801,7 +801,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						i(181665),	-- Fleshscale Coif
 						i(181651),	-- Steelcore Helmet
 					},
-					["timeline"] = { "added 9.0.2", REMOVED_DFPRE2 },
+					["timeline"] = { "added 9.0.2", REMOVED_DF_PRE2 },
 				}),
 				q(62721, {	-- Deconstructing The Problem (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -812,7 +812,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						i(181681),	-- Fleshscale Wristwraps
 						i(181680),	-- Steelcore Wristwraps
 					},
-					["timeline"] = { "added 9.0.2", REMOVED_DFPRE2 },
+					["timeline"] = { "added 9.0.2", REMOVED_DF_PRE2 },
 				}),
 				q(62712, {	-- War of Attrition (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -823,7 +823,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						i(181677),	-- Fleshscale Belt
 						i(181675),	-- Steelcore Girdle
 					},
-					["timeline"] = { "added 9.0.2", REMOVED_DFPRE2 },
+					["timeline"] = { "added 9.0.2", REMOVED_DF_PRE2 },
 				}),
 			}),
 		}),

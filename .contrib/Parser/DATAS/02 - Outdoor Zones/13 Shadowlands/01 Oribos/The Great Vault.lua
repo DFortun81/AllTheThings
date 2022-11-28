@@ -8,13 +8,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			["coord"] = { 64.3, 32.1, ORIBOS },
 			["g"] = {
 				i(187219, {	-- Attendant's Token of Merit
-					["timeline"] = { REMOVED_SLS4 },
+					["timeline"] = { REMOVED_SL_S4 },
 				}),
 				i(199202, {	-- Attendant's Token of Merit
-					["timeline"] = { ADDED_SLS4 },
+					["timeline"] = { ADDED_SL_S4 },
 				}),
 				inst(1190, {	-- Castle Nathria
-					["timeline"] = { "added 9.0.2", "removed 9.1.0", ADDED_SLS4 },
+					["timeline"] = { "added 9.0.2", "removed 9.1.0", ADDED_SL_S4 },
 					["sym"] = {
 						{"select", "tierID", SL_TIER},			-- Select Shadowlands
 						{"pop"},								-- Discard the Shadowland Headers and acquire all of their children.
@@ -29,7 +29,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					},
 				}),
 				inst(1193, {	-- Sanctum of Domination
-					["timeline"] = { "added 9.1.0", "removed 9.2.0", ADDED_SLS4 },
+					["timeline"] = { "added 9.1.0", "removed 9.2.0", ADDED_SL_S4 },
 					["sym"] = {
 						{"select", "tierID", SL_TIER},			-- Select Shadowlands
 						{"pop"},								-- Discard the Shadowland Headers and acquire all of their children.

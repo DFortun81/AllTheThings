@@ -4,7 +4,7 @@
 local ARTISANS_METTLE = 190456;
 local BLOODY_TOKENS = 2123;
 local ROUSING_IRE = 190451;
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
+root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(VALDRAKKEN, {
 		n(VENDORS, {
 			pvp(n(PVP, {

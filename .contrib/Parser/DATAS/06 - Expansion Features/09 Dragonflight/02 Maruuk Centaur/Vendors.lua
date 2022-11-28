@@ -6,7 +6,7 @@ local IRIDESCENT_PLUME = 201401;
 local OCASSIONAL_SAND = 194562;
 local SEREVITE_ORE = 190396;
 local TUFT_OF_PRIMAL_WOOL = 201405;
-root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
+root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(MARUUK_CENTAUR, {
 		n(VENDORS, {
 			n(195547, {	-- Farrier Rondare

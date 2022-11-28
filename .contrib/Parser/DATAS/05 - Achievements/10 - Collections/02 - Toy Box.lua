@@ -4,7 +4,7 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 	achcat(ACHIEVEMENT_CATEGORY_TOY_BOX, {
-		ach(15781, bubbleDownSelf({ ["timeline"] = { ADDED_DFPRE } }, {	-- The Joy of Toy (500)
+		ach(15781, bubbleDownSelf({ ["timeline"] = { ADDED_DF_PRE } }, {	-- The Joy of Toy (500)
 			i(197986),	-- Murglasses (TOY!)
 		})),
 		ach(12996, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- Toybox Tycoon (400)

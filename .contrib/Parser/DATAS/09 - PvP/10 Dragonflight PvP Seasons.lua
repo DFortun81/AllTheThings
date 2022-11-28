@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 root("PVP", pvp(tier(DF_TIER, {
-	n(SEASON_CRIMSON, bubbleDownSelf({ ["timeline"] = { ADDED_DFREL, REMOVED_DFS2 } }, {
+	n(SEASON_CRIMSON, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 } }, {
 		n(ACHIEVEMENTS, {
 			ach(15955),	-- Challenger I: Dragonflight Season 1
 			ach(15956),	-- Challenger II: Dragonflight Season 1

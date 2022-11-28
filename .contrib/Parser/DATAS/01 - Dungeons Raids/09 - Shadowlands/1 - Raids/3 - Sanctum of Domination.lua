@@ -234,7 +234,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 			n(WORLD_QUESTS, {
 				q(66694, {	-- Tempting Fate: Sanctum of Domination
 					["isWorldQuest"] = true,
-					["timeline"] = { ADDED_SLS4 },
+					["timeline"] = { ADDED_SL_S4 },
 				}),
 			}),
 			d(17, {	-- LFR

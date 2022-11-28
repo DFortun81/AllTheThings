@@ -1,9 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = TIMELINE_DFREL }, {
+root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(MYTHIC_PLUS, {
-		ach(16429, bubbleDownSelf({ ["timeline"] = { ADDED_DFREL, REMOVED_DFS2 } }, {	-- Thundering Hero: Dragonflight Season 1 [TEMP! Until we can use the new headers from Runaway]
+		ach(16429, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 } }, {	-- Thundering Hero: Dragonflight Season 1 [TEMP! Until we can use the new headers from Runaway]
 			["collectible"] = false,
 			["g"] = {
 				ach(16647),		-- Dragonflight Keystone Explorer: Season One

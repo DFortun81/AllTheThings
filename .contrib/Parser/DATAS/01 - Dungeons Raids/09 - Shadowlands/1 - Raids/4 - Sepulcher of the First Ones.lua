@@ -362,7 +362,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 			n(WORLD_QUESTS, {
 				q(66695, {	-- Tempting Fate: Sepchuler of the First Ones
 					["isWorldQuest"] = true,
-					["timeline"] = { ADDED_SLS4 },
+					["timeline"] = { ADDED_SL_S4 },
 				}),
 			}),
 			d(17, {	-- LFR
@@ -1076,7 +1076,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 			d(15, {	-- Heroic
 				n(QUESTS, {
 					q(65717, bubbleDownSelf({	-- Final Shape
-						["timeline"] = { "added 9.2.0", REMOVED_DFREL },
+						["timeline"] = { "added 9.2.0", REMOVED_DF_REL },
 						["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
 					},{
 						["provider"] = { "i", 190773 },	-- Carcinized Protoform
@@ -1378,7 +1378,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						crit(10, {	-- Rygelon
 							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
 						}),
-						ach(15468, {["timeline"] = { "added 9.2.7", REMOVED_DFREL }}),	-- We Are All Made of Stars [Heroic]
+						ach(15468, {["timeline"] = { "added 9.2.7", REMOVED_DF_REL }}),	-- We Are All Made of Stars [Heroic]
 						i(189852),	-- Antumbra, Shadow of the Cosmos
 						i(189853),	-- Astral Verdict
 						i(189851),	-- Devastated Worldshard
@@ -1417,7 +1417,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						crit(11, {	-- The Jailer
 							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
 						}),
-						ach(15470, {["timeline"] = { "added 9.2.0", REMOVED_SLS4 }}),	-- Ahead of the Curve: The Jailer
+						ach(15470, {["timeline"] = { "added 9.2.0", REMOVED_SL_S4 }}),	-- Ahead of the Curve: The Jailer
 						i(189855),	-- Bindings of the Banished One
 						i(188252),	-- Chains of Domination
 						i(189818),	-- Domination's Deliverance
@@ -1429,7 +1429,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188253),	-- Scars of Fraternal Strife
 						i(189859),	-- Worldkiller Iris
 						i(189861),	-- Zovastrum, the Unmaking
-						i(190773, {["timeline"] = { "added 9.2.0", REMOVED_DFREL }}),	-- Carcinized Protoform (MOUNT! - QUEST)
+						i(190773, {["timeline"] = { "added 9.2.0", REMOVED_DF_REL }}),	-- Carcinized Protoform (MOUNT! - QUEST)
 						i(189982),	-- Silithid Soul
 					},
 				}),
@@ -1710,7 +1710,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					["crs"] = { 182777 },	-- Rygelon
 					["g"] = {
 						ach(15488),	-- Mythic: Rygelon
-						ach(15469, {["timeline"] = { "added 9.2.7", REMOVED_DFREL }}),	-- We Are All Made of Stars [Mythic]
+						ach(15469, {["timeline"] = { "added 9.2.7", REMOVED_DF_REL }}),	-- We Are All Made of Stars [Mythic]
 						i(189852),	-- Antumbra, Shadow of the Cosmos
 						i(189853),	-- Astral Verdict
 						i(189851),	-- Devastated Worldshard
@@ -1747,19 +1747,19 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					["crs"] = { 185421 },	-- Zovaal <The Jailer>
 					["g"] = {
 						ach(15489),	-- Mythic: The Jailer
-						ach(15476, bubbleDownSelf({["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {	-- Hall of Fame: The Jailer (A)
+						ach(15476, bubbleDownSelf({["timeline"] = { "added 9.2.0", REMOVED_SL_S4 } }, {	-- Hall of Fame: The Jailer (A)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(454),	-- <Name>, Famed Slayer of The Banished One
 							},
 						})),
-						ach(15475, bubbleDownSelf({["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {	-- Hall of Fame: The Jailer (H)
+						ach(15475, bubbleDownSelf({["timeline"] = { "added 9.2.0", REMOVED_SL_S4 } }, {	-- Hall of Fame: The Jailer (H)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(454),	-- <Name>, Famed Slayer of The Banished One
 							},
 						})),
-						ach(15471, {["timeline"] = { "added 9.2.0", REMOVED_SLS4 }}),	-- Cutting Edge: The Jailer
+						ach(15471, {["timeline"] = { "added 9.2.0", REMOVED_SL_S4 }}),	-- Cutting Edge: The Jailer
 						i(189855),	-- Bindings of the Banished One
 						i(188252),	-- Chains of Domination
 						i(189818),	-- Domination's Deliverance

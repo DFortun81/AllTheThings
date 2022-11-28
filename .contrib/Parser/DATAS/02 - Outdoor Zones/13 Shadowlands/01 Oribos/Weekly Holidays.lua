@@ -119,7 +119,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 				}),
 				i(192437, {	-- Cache of Fated Treasures (Normal)
-					["timeline"] = { ADDED_SLS4 },
+					["timeline"] = { ADDED_SL_S4 },
 					["modID"] = 11,
 					["bonusID"] = 8157,
 					["sym"] = {
@@ -145,7 +145,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 				}),
 				i(192438, {	-- Cache of Fated Treasures (Heroic)
-					["timeline"] = { ADDED_SLS4 },
+					["timeline"] = { ADDED_SL_S4 },
 					["modID"] = 11,
 					["bonusID"] = 8157,
 					["sym"] = {

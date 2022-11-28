@@ -217,16 +217,16 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(20),		-- Un'Goro Crater
 			crit(21),		-- Winterspring
 		})),
-		petbattle(ach(15644, bubbleDownSelf({ ["timeline"] = { ADDED_DFPRE } }, {	-- Good Things Come in Small Packages (2000)
+		petbattle(ach(15644, bubbleDownSelf({ ["timeline"] = { ADDED_DF_PRE } }, {	-- Good Things Come in Small Packages (2000)
 			i(191946),	-- Mister Muskoxeles (PET!)
 		}))),
-		petbattle(ach(15643,  bubbleDownSelf({ ["timeline"] = { ADDED_DFPRE } }, {	-- What Can I Say? They Love Me. (1750)
+		petbattle(ach(15643,  bubbleDownSelf({ ["timeline"] = { ADDED_DF_PRE } }, {	-- What Can I Say? They Love Me. (1750)
 			i(191932),	-- Violet Violence (PET!)
 		}))),
-		petbattle(ach(15642,  bubbleDownSelf({ ["timeline"] = { ADDED_DFPRE } }, {	-- Proven Pet Parent (1500)
+		petbattle(ach(15642,  bubbleDownSelf({ ["timeline"] = { ADDED_DF_PRE } }, {	-- Proven Pet Parent (1500)
 			i(191936),	-- Secretive Frogduck (PET!)
 		}))),
-		petbattle(ach(15641,  bubbleDownSelf({ ["timeline"] = { ADDED_DFPRE } }, {	-- Many More Mini Minions (1250)
+		petbattle(ach(15641,  bubbleDownSelf({ ["timeline"] = { ADDED_DF_PRE } }, {	-- Many More Mini Minions (1250)
 			i(191941),	-- Crystalline Mini-Monster (PET!)
 		}))),
 		petbattle(ach(12958, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- Master of Minions (1000)

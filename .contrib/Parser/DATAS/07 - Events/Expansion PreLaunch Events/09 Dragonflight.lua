@@ -3,7 +3,7 @@
 -----------------------------------------------------
 local PRIMEVAL_ESSENCE = 199211;
 
-root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = TIMELINE_DFPRE2 }, {	-- Expansion Prelaunch Events
+root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {	-- Expansion Prelaunch Events
 	tier(DF_TIER, {
 		n(ACHIEVEMENTS, {
 			ach(16431, {	-- Against the Elements
