@@ -362,7 +362,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 			n(WORLD_QUESTS, {
 				q(66695, {	-- Tempting Fate: Sepchuler of the First Ones
 					["isWorldQuest"] = true,
-					["timeline"] = { ADDED_SL_S4 },
+					["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
 				}),
 			}),
 			d(17, {	-- LFR

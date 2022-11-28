@@ -2,9 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Zones", m(SHADOWLANDS, {
 	m(ORIBOS, {
-		o(353484, {	-- The Great Vault
+		o(353484, bubbleDown({ ["timeline"] = { "added 9.0.2", REMOVED_DF_REL } }, {	-- The Great Vault
 			["coord"] = { 64.3, 32.1, ORIBOS },
 			["g"] = {
 				i(187219, {	-- Attendant's Token of Merit
@@ -133,6 +133,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 				})),
 			},
-		}),
+		})),
 	}),
-})))
+}))
