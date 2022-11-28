@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 root("PVP", pvp(tier(SL_TIER, {
-	n(SEASON_SINFUL, bubbleDownSelf({ ["timeline"] = { "added 9.0.2", "removed 9.1.0" } }, {
+	n(SEASON_SINFUL, bubbleDownSelf({ ["timeline"] = { "added 9.0.2", "removed 9.1.0", ADDED_DF_REL } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 9.0.2", "removed 9.1.0" } }, {
 			ach(14686),		-- Challenger: Shadowlands Season 1
 			ach(14685, {	-- Combatant: Shadowlands Season 1
@@ -283,7 +283,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				})),
 			}),
 		}),
-		n(PVP_ELITE, bubbleDown({["modID"] = 45}, {	-- Elite Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { "added 9.0.2", "removed 9.1.0" }, ["modID"] = 45 }, {	-- Elite Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
 			n(WEAPONS, {
 				n(KYRIAN, sharedData({["customCollect"] = { "SL_COV_KYR" }}, {
 					i(177851),	-- Sinful Gladiator's Ceremonial Sword
@@ -456,7 +456,7 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 		}),
 	})),
-	n(SEASON_UNCHAINED, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {
+	n(SEASON_UNCHAINED, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0", ADDED_DF_REL } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {
 			ach(14969),		-- Challenger I: Shadowlands Season 2
 			ach(15233, {	-- Challenger II: Shadowlands Season 2
@@ -756,7 +756,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				i(185315),	-- Unchained Gladiator's Xiphos
 			}),
 		}),
-		n(PVP_ELITE, bubbleDown({["modID"] = 14, ["bonusID"] = 7309}, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" }, ["modID"] = 14, ["bonusID"] = 7309 }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
 			n(BACK, {
 				i(185164),	-- Unchained Gladiator's Cloak
 				i(185245),	-- Unchained Gladiator's Drape
@@ -910,7 +910,7 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 		}),
 	})),
-	n(SEASON_COSMIC, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SL_S4 } }, {
+	n(SEASON_COSMIC, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SL_S4, ADDED_DF_REL } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SL_S4 } }, {
 			ach(15349),		-- Challenger I: Shadowlands Season 3
 			ach(15379),		-- Challenger II: Shadowlands Season 3
@@ -1285,7 +1285,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				}),
 			}),
 		}),
-		n(PVP_ELITE, bubbleDown({["modID"] = 14, ["bonusID"] = 7551}, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SL_S4 }, ["modID"] = 14, ["bonusID"] = 7551 }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
 			n(BACK, {
 				i(186780),	-- Cosmic Gladiator's Cloak
 				i(186781),	-- Cosmic Gladiator's Drape
@@ -1495,8 +1495,8 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 		}),
 	})),
-	n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
-		n(ACHIEVEMENTS, {
+	n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE, ADDED_DF_REL } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
 			ach(15600),		-- Challenger I: Shadowlands Season 4
 			ach(15601),		-- Challenger II: Shadowlands Season 4
 			ach(15609, {	-- Combatant I: Shadowlands Season 4
@@ -1536,7 +1536,7 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 			ach(15602),	-- Rival I: Shadowlands Season 4
 			ach(15603),	-- Rival II: Shadowlands Season 4
-		}),
+		})),
 		n(PVP_ASPIRANT, {
 			n(BACK, {
 				i(192390),	-- Eternal Aspirant's Cape
@@ -1870,7 +1870,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				}),
 			}),
 		}),
-		n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
+		n(PVP_ELITE, bubbleDown({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE }, ["bonusID"] = 7532 }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
 			n(BACK, {
 				i(192209),	-- Eternal Gladiator's Cloak
 				i(192210),	-- Eternal Gladiator's Drape
