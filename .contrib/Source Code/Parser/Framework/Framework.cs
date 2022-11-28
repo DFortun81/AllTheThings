@@ -3492,7 +3492,7 @@ namespace ATT
             // Default is relative to where the executable is. (.contrib/Parser)
             string addonRootFolder = "../..";
 #endif
-			string dbRootFolder = "../..";
+			string dbRootFolder = "";
 #endif
 
             // Setup the output folder (/db)
