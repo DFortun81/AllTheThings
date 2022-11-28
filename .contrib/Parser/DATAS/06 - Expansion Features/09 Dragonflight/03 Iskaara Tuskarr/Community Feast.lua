@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(ISKAARA_TUSKARR, {
-		n(ISKAARA_COOKING, {
+		n(COMMUNITY_FEAST, {
 			n(ACHIEVEMENTS, {
 				ach(16443, {	-- Soupervisor
 					title(471),	-- Soupervisor <Name>

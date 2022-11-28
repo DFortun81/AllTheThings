@@ -220,6 +220,8 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 	L.LOCK_CRITERIA_FACTION_LABEL = "Репутация";
 	L.LOCK_CRITERIA_FACTION_FORMAT = "%s с %s (Текущее: %s)";
 	L.FORCE_REFRESH_REQUIRED = "Может потребоваться Полное Обновление коллекции ("..SHIFT_KEY_TEXT.."+Клик).";
+	L.FUTURE_UNOBTAINABLE = "Будущие Недоступные!";
+	L.FUTURE_UNOBTAINABLE_TOOLTIP = "Это контент, который точно или очень вероятно будет недоступен в будущем патче.";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";
@@ -581,6 +583,7 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.SECRETS_HEADER = "Секреты";
 		L.LIMITED_QUANTITY = "Предмет имеется в ограниченном количестве и может не всегда быть доступен у торговца.";
 		L.SOURCE_ID_MISSING = "Пожалуйста, сообщите в канале #retail-errors на нашем сервере Discord, где Вы нашли эту вещь!";
+		L.ADDED_WITH_PATCH_FORMAT = "Это будет добавлено в патче %s";
 		L.REMOVED_WITH_PATCH_FORMAT = "Это исчезнет в патче %s";
 
 	-- Icons and Collection Text
@@ -665,6 +668,7 @@ for key,value in pairs({
 		[-55] = "День пирата",									-- Pirates' Day
 		[-59] = "День мертвых",									-- Day of the Dead
 		[-62] = "Рыбомания Тернистой долины",					-- Stranglethorn Fishing Extravaganza
+		[-63] = "Калуакское рыбоборье",							-- Kalu'ak Fishing Derby
 	-- Zul'Aman
 		[-78] = "Временное Событие",
 		[-79] = "Первый Сундук",
@@ -752,6 +756,7 @@ for key,value in pairs({
 		[-581] = "TBC Classic Deluxe",								-- TBC Classic Deluxe Edition
 		[-582] = "WotLK Classic Heroic",							-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		[-583] = "WotLK Classic Epic",								-- WotLK Classic Northrend Epic Upgrade
+		[-584] = "Промо Dragonflight",								-- Dragonflight Seasonal Promotions
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "Доспехи Претендента",							-- Aspirant PvP Gear (WoD, BfA)
@@ -834,18 +839,18 @@ for key,value in pairs({
 		[-1009] = "Эпохальный Реколор",								-- Mythic Alternative
 		[-1010] = "Гладиатор Реколор",								-- Gladiator Alternative
 		[-1011] = "Ветеран Реколор",								-- Elite Alternative
-	-- Temp
-		[-1098] = "Побочные Задания",								-- Side Quests
 	-- Dragonflight
-		[-1100] = "Кастомизации Драконов",							-- Dragon Customization
+		[-1100] = "Манускрипты наблюдений за драконами",			-- Drakewatcher Manuscripts
 		[-1101] = "Изначальные Бури",								-- Primal Storms
+		[-1102] = "Гневион и Сабеллиан",							-- Wrathion & Sabellian
 		[-1110] = "Драконья экспедиция",							-- Dragonscale Expedition
-		--TODO: [-1111] = "Climbing",								-- Climbing
 		[-1120] = "Кентавры Маруук",								-- Maruuk Centaur
 		[-1121] = "Клан Айлааг",									-- Clan Aylaag
-		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
+		[-1122] = "Великая охота",									-- Grand Hunts
 		[-1130] = "Искарские клыкарры",								-- Iskaara Tuskarr
+		[-1131] = "Искарское рыболовство",							-- Iskaara Fishing
 		[-1140] = "Союз Вальдраккена",								-- Valdrakken Accord
+		--TODO: [-1142] = "Aerial Challenges",						-- Aerial Challenges
 	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",
 		[-2201] = "Странник и змей",
@@ -3459,7 +3464,7 @@ for key,value in pairs({
 		-- #if BEFORE BFA
 		-- [41] = {1, "|CFFFF0000Это доступно только игрокам, которые завершили соответствующие испытания артефактов Башни магов и получили базовый внешний вид.|r", "Появления в Башне Магов"},
 		-- #endif
-		[45] = {1, "|CFFFF0000Изменения добычи Blizzard сломали несколько предметов и сделали их недоступными. Накидка Дома Дворян / Теплый плащ Империи Гурубаши (обе награды Эмиссара BfA), Огом Манглер, награды с миссий WoD и Комплекты Пробных персонажей в настоящее время сломаны, и их необходимо починить.|r", "Сломанная добыча"},
+		[45] = {1, "|CFFFF0000Изменения добычи Blizzard сломали несколько предметов и сделали их недоступными. Накидка Дома Дворян / Теплый плащ Империи Гурубаши (обе награды Эмиссара BfA), Огом Манглер, награды с миссий WoD и некоторый лут с Героического Режима Ульдуара в настоящее время сломаны, и их необходимо починить.|r", "Сломанная добыча"},
 
 	-- Seasonal Filters
 		[1000] = {4, "|CFF00FFDEДля этого требуется Хмельной фестиваль.|r", "Хмельной фестиваль"},

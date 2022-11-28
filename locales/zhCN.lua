@@ -220,6 +220,8 @@ local L = app.L;
 	L.LOCK_CRITERIA_FACTION_LABEL = "阵营声望";
 	L.LOCK_CRITERIA_FACTION_FORMAT = "%s 和 %s（当前：%s）";
 	L.FORCE_REFRESH_REQUIRED = "这可能需要强制刷新（"..SHIFT_KEY_TEXT.."-点击）正确已收集。";
+	--TODO: L.FUTURE_UNOBTAINABLE = "Future Unobtainable!";
+	--TODO: L.FUTURE_UNOBTAINABLE_TOOLTIP = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "物品过滤";
@@ -579,9 +581,11 @@ local L = app.L;
 		L.SECRETS_HEADER = "解密";
 		L.LIMITED_QUANTITY = "此物品有数量限制，在商人处并非总是可见。";
 		L.SOURCE_ID_MISSING = "请在 #retail-errors 中向 ATT Discord 报告此物品及其获取地点！";
+		--TODO: L.ADDED_WITH_PATCH_FORMAT = "This gets added in patch %s";
 		L.REMOVED_WITH_PATCH_FORMAT = "这在补丁 %s 中被删除";
 
 	-- Filter Text
+		--TODO: L.ACHIEVEMENT_ID = "Achievement ID";
 		L.ACHIEVEMENT_ID = "成就 ID";
 		L.ARTIFACT_ID = "神器 ID";
 		L.AZERITE_ESSENCE_ID = "艾泽里特精华 ID";
@@ -592,6 +596,7 @@ local L = app.L;
 		L.EXPANSION_ID = "资料片 ID";
 		L.FILTER_ID = "滤镜 ID";
 		L.FOLLOWER_ID = "追随者 ID";
+		--TODO: L.HEADER_ID = "Header ID";
 		L.ILLUSION_ID = "幻象 ID";
 		L.INSTANCE_ID = "副本 ID";
 		L.ITEM_ID = "物品 ID";
@@ -689,6 +694,7 @@ for key,value in pairs({
 		[-55] = "海盗日",												-- Pirates' Day
 		[-59] = "悼念日",												-- Day of the Dead
 		[-62] = "荆棘谷钓鱼大赛",											-- Stranglethorn Fishing Extravaganza
+		[-63] = "卡鲁亚克钓鱼大赛",											-- Kalu'ak Fishing Derby
 	-- Zul'Aman
 		[-78] = "限时事件",												-- Timed Event
 		[-79] = "一箱",												-- First Chest
@@ -776,6 +782,7 @@ for key,value in pairs({
 		[-581] = "燃烧的远征经典怀旧服典藏包",				-- TBC Classic Deluxe Edition
 		[-582] = "巫妖王之怒经典怀旧服诺森德英雄礼包",			-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		[-583] = "巫妖王之怒经典怀旧服诺森德史诗礼包",			-- WotLK Classic Northrend Epic Upgrade
+		--TODO: [-584] = "Dragonflight Seasonal Promotions",		-- Dragonflight Seasonal Promotions
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
@@ -854,18 +861,18 @@ for key,value in pairs({
 		[-1009] = "史诗备选",											-- Mythic Alternative
 		[-1010] = "角斗士备选",											-- Gladiator Alternative
 		[-1011] = "精锐备选",											-- Elite Alternative
-	-- Temp
-		--TODO: [-1098] = "Side Quests",							-- Side Quests
 	-- Dragonflight
-		--TODO: [-1100] = "Dragon Customization",					-- Dragon Customization
+		[-1100] = "观龙者手稿",											-- Drakewatcher Manuscripts	--TODO: plural
 		[-1101] = "原始风暴",											-- Primal Storms
+		[-1102] = "拉希奥和萨贝里安",										-- Wrathion & Sabellian
 		[-1110] = "龙鳞探险队",											-- Dragonscale Expedition
-		--TODO: [-1111] = "Climbing",								-- Climbing
 		[-1120] = "马鲁克半人马",											-- Maruuk Centaur
 		[-1121] = "艾拉格氏族",											-- Clan Aylaag
 		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
 		[-1130] = "伊斯卡拉海象人",										-- Iskaara Tuskarr
+		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "瓦德拉肯联军",											-- Valdrakken Accord
+		--TODO: [-1142] = "Aerial Challenges",						-- Aerial Challenges
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
@@ -3474,7 +3481,7 @@ for key,value in pairs({
 		[15] = {1, "|CFFFF0000这不能永久学习或用于幻化。|r", "不可学"},
 		[35] = {3, "|CFFFF0000这被锁定在付费墙后面，例如游戏内商店、另一个暴雪产品或战友招募服务。|r", "暴雪礼品卡"},
 		[38] = {1, "|CFFFF0000这仅适用于在《熊猫人之谜》或通过黑市拍卖行完成传奇披风任务链的玩家。|r", "斡耳朵斯 - 传奇披风"},
-		[45] = {1, "|CFFFF0000暴雪的战利品更改损坏了几件物品，使其无法获得。\n贵族披风/古拉巴什帝国大氅（同为《争霸艾泽拉斯》使者奖励），“绞肉机”奥戈姆，《德拉诺之王》任务拾取战利品和经典试玩目前已损坏，需要修复。|r", "战利品损坏"},
+		[45] = {1, "|CFFFF0000暴雪的战利品更改损坏了几件物品，使其无法获得。\n贵族披风/古拉巴什帝国大氅（同为《争霸艾泽拉斯》使者奖励），“绞肉机”奥戈姆，《德拉诺之王》任务拾取战利品和经典试玩目前已损坏，需要修复。|r", "战利品损坏"},	-- TODO: |CFFFF0000Blizzard's Loot changes broke several Items and made them Unobtainable.\nHouse of Nobles Cape/Gurubashi Empire Greatcloak (both BFA Emissary Rewards), Ogom the Mangler, WoD Mission Loot & some Ulduar HM items are currently broken and need to be fixed.|r
 
 	-- Seasonal Filters
 		[1000] = {4, "|CFF00FFDE这要求美酒节处于激活状态。|r", "美酒节"},

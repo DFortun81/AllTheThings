@@ -218,6 +218,8 @@ local L = app.L;
 	--TODO: L.LOCK_CRITERIA_FACTION_LABEL = "Faction Reputation";
 	--TODO: L.LOCK_CRITERIA_FACTION_FORMAT = "%s with %s (Current: %s)";
 	--TODO: L.FORCE_REFRESH_REQUIRED = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.."-Click) to properly be collected.";
+	--TODO: L.FUTURE_UNOBTAINABLE = "Future Unobtainable!";
+	--TODO: L.FUTURE_UNOBTAINABLE_TOOLTIP = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -576,6 +578,7 @@ local L = app.L;
 		--TODO: L.SECRETS_HEADER = "Secrets";
 		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
 		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
+		--TODO: L.ADDED_WITH_PATCH_FORMAT = "This gets added in patch %s";
 		--TODO: L.REMOVED_WITH_PATCH_FORMAT = "This gets removed in patch %s";
 
 	-- Artifact Relic Completion
@@ -677,6 +680,7 @@ for key,value in pairs({
 		[-55] = "Dia dos Piratas",									-- Pirates' Day
 		[-59] = "Dia dos Mortos",									-- Day of the Dead
 		[-62] = "Festerê de Pesca da Selva do Espinhaço",			-- Stranglethorn Fishing Extravaganza
+		[-63] = "Campeonato de Pesca dos Kalu'ak",					-- Kalu'ak Fishing Derby
 	-- Zul'Aman
 		--TODO: [-78] = "Timed Event",
 		--TODO: [-79] = "First Chest",
@@ -764,6 +768,7 @@ for key,value in pairs({
 		--TODO: [-581] = "TBC Classic Deluxe Edition",				-- TBC Classic Deluxe Edition
 		--TODO: [-582] = "WotLK Classic Northrend Heroic Upgrade",	-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		--TODO: [-583] = "WotLK Classic Northrend Epic Upgrade",	-- WotLK Classic Northrend Epic Upgrade
+		--TODO: [-584] = "Dragonflight Seasonal Promotions",		-- Dragonflight Seasonal Promotions
 	-- PvP Header
 		-- PvP Set Names
 			--TODO: [-659] = "Aspirant Gear",						-- Aspirant PvP Gear (WoD, BfA)
@@ -846,18 +851,18 @@ for key,value in pairs({
 		[-1009] = "Mítico Alternative",								-- TODO: Mythic Alternative
 		[-1010] = "Gladiador Alternative",							-- TODO: Gladiator Alternative
 		[-1011] = "Elite Alternative",								-- TODO: Elite Alternative
-	-- Temp
-		--TODO: [-1098] = "Side Quests",							-- Side Quests
 	-- Dragonflight
-		--TODO: [-1100] = "Dragon Customization",					-- Dragon Customization
+		[-1100] = "Manuscrito de Vigia-dracos",						-- Drakewatcher Manuscripts	--TODO: plural
 		[-1101] = "Tempestades Primevas",							-- Primal Storms
+		[-1102] = "Wrathion e Sabellian",							-- Wrathion & Sabellian
 		[-1110] = "Expedição Escama de Dragão",						-- Dragonscale Expedition
-		--TODO: [-1111] = "Climbing",								-- Climbing
 		[-1120] = "Centauro Maruuk",								-- Maruuk Centaur
 		[-1121] = "Clã Aylaag",										-- Clan Aylaag
 		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
 		[-1130] = "Morsanos de Iskaara",							-- Iskaara Tuskarr
+		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Acordo de Valdrakken",							-- Valdrakken Accord
+		--TODO: [-1142] = "Aerial Challenges",						-- Aerial Challenges
 	-- Warrior order hall lore items
 		[-2200] = "O Grande Odyn e o Senhor do Fogo",				-- Great Odyn and the Firelord
 		[-2201] = "O Andarilho e a Serpente",						-- The Wanderer and the Serpent

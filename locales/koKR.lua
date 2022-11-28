@@ -218,6 +218,8 @@ local L = app.L;
 	--TODO: L.LOCK_CRITERIA_FACTION_LABEL = "Faction Reputation";
 	--TODO: L.LOCK_CRITERIA_FACTION_FORMAT = "%s with %s (Current: %s)";
 	--TODO: L.FORCE_REFRESH_REQUIRED = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.."-Click) to properly be collected.";
+	--TODO: L.FUTURE_UNOBTAINABLE = "Future Unobtainable!";
+	--TODO: L.FUTURE_UNOBTAINABLE_TOOLTIP = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -576,6 +578,7 @@ local L = app.L;
 		--TODO: L.SECRETS_HEADER = "Secrets";
 		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
 		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
+		--TODO: L.ADDED_WITH_PATCH_FORMAT = "This gets added in patch %s";
 		--TODO: L.REMOVED_WITH_PATCH_FORMAT = "This gets removed in patch %s";
 
 	-- Artifact Relic Completion
@@ -677,6 +680,7 @@ for key,value in pairs({
 		[-55] = "해적의 날",											-- Pirates' Day
 		[-59] = "망자의 날",											-- Day of the Dead
 		[-62] = "가시덤불 골짜기 낚시왕 선발대회",								-- Stranglethorn Fishing Extravaganza
+		[-63] = "칼루아크 낚시 대회",										-- Kalu'ak Fishing Derby
 	-- Zul'Aman
 		--TODO: [-78] = "Timed Event",
 		--TODO: [-79] = "First Chest",
@@ -764,6 +768,7 @@ for key,value in pairs({
 		--TODO: [-581] = "TBC Classic Deluxe Edition",				-- TBC Classic Deluxe Edition
 		--TODO: [-582] = "WotLK Classic Northrend Heroic Upgrade",	-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		--TODO: [-583] = "WotLK Classic Northrend Epic Upgrade",	-- WotLK Classic Northrend Epic Upgrade
+		--TODO: [-584] = "Dragonflight Seasonal Promotions",		-- Dragonflight Seasonal Promotions
 	-- PvP Header
 		-- PvP Set Names
 			--TODO: [-659] = "Aspirant Gear",						-- Aspirant PvP Gear (WoD, BfA)
@@ -846,18 +851,18 @@ for key,value in pairs({
 		[-1009] = "신화 Alternative",									-- TODO: Mythic Alternative
 		[-1010] = "검투사 Alternative",								-- TODO: Gladiator Alternative
 		[-1011] = "정예병 Alternative",								-- TODO: Elite Alternative
-	-- Temp
-		--TODO: [-1098] = "Side Quests",							-- Side Quests
 	-- Dragonflight
-		--TODO: [-1100] = "Dragon Customization",					-- Dragon Customization
+		[-1100] = "비룡감시자 필사본",										-- Drakewatcher Manuscripts	--TODO: plural
 		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
+		[-1102] = "래시온과 사벨리안",										-- Wrathion & Sabellian
 		[-1110] = "용비늘 원정대",										-- Dragonscale Expedition
-		--TODO: [-1111] = "Climbing",								-- Climbing
 		[-1120] = "마루크 켄타우로스",										-- Maruuk Centaur
 		[-1121] = "아일라그 부족",										-- Clan Aylaag
 		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
 		[-1130] = "이스카라 투스카르",										-- Iskaara Tuskarr
+		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "발드라켄 협의회",										-- Valdrakken Accord
+		--TODO: [-1142] = "Aerial Challenges",						-- Aerial Challenges
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",

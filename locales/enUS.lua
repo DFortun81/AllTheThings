@@ -1424,7 +1424,7 @@ app.L = {
 		[-1122] = "Interface\\Icons\\inv_scroll_11",												-- Grand Hunts
 		[-1130] = "Interface\\Icons\\ui_majorfaction_tuskarr",										-- Iskaara Tuskarr
 		[-1131] = "Interface\\Icons\\inv_polearm_2h_kultirasharpoon_a_01",							-- Iskaara Fishing
-		[-1132] = "Interface\\Icons\\inv_tradeskill_cooking_stonesouppot01",						-- Iskaara Cooking
+		[-1132] = "Interface\\Icons\\inv_tradeskill_cooking_stonesouppot01",						-- Community Feast
 		[-1140] = "Interface\\Icons\\ui_majorfaction_valdrakken",									-- Valdrakken Accord
 		[-1141] = "Interface\\Icons\\inv_artifact_dragonscales",									-- Siege on Dragonbane Keep
 		[-1142] = "Interface\\Icons\\inv_checkered_flag",											-- Aerial Challenges
@@ -1500,8 +1500,6 @@ app.L = {
 	-- Shadowlands Achievement Headers
 	-- 9.1
 		[-10083] = "236373",														-- Covenant Assaults
-	-- DF Temp
-		[-11000] = "4191335",														-- Dragonflight
 	--	hopefully temp custom NPCs, these objects do not have data on wowhead atm
 		[-1433951] = "3854020",															-- Broken Mirror
 		[-1433952] = "3854020",															-- Broken Mirror
@@ -1575,7 +1573,7 @@ app.L = {
 		[-60] = select(1,GetCategoryInfo(14981)),								-- Pilgrim's Bounty
 		[-61] = GetSpellInfo(21953),											-- The Feast of Winter Veil
 		[-62] = "Stranglethorn Fishing Extravaganza",							-- Stranglethorn Fishing Extravaganza
-		[-63] = "Kalu'ak Fishing Derby",
+		[-63] = "Kalu'ak Fishing Derby",										-- Kalu'ak Fishing Derby
 
 		[-69] = GetSpellInfo(21127),											-- Maraudon Portal
 		[-70] = DUNGEON_FLOOR_DESOLACE22.." - "..GetSpellInfo(251097),			-- Foulspore Cavern [Orange]
@@ -1770,7 +1768,7 @@ app.L = {
 		[-520] = "Expansion Pre-Launch",										-- Expansion Pre-Launch
 		[-522] = "Zalazane's Fall",												-- Zalazane's Fall
 		[-523] = "Elemental Unrest",											-- Elemental Unrest
-		[-524] = "Operation: Gnomeregan",										-- Operation: Gnomeregan
+		[-524] = select(2, GetAchievementInfo(4786)),							-- Operation: Gnomeregan
 		[-525] = EXPANSION_NAME5..": Iron Horde Incursion",						-- Warlords of Draenor: Iron Horde Incursion
 		[-526] = EXPANSION_NAME6..": Legion Invasion",							-- Legion: Legion Invasion
 		[-527] = EXPANSION_NAME7..": War of the Thorns",						-- Battle for Azeroth: War of the Thorns
@@ -1993,16 +1991,16 @@ app.L = {
 		[-1101] = "Primal Storms",													-- Primal Storms
 		[-1102] = "Wrathion & Sabellian",											-- Wrathion & Sabellian
 		[-1110] = "Dragonscale Expedition",											-- Dragonscale Expedition
-		[-1111] = "Climbing",														-- Climbing
-		[-1112] = "Cataloging",														-- Cataloging
+		[-1111] = GetSpellInfo(365311),												-- Rock Climbing
+		[-1112] = GetSpellInfo(381284),												-- Cataloging
  		[-1120] = "Maruuk Centaur",													-- Maruuk Centaur
 		[-1121] = "Clan Aylaag",													-- Clan Aylaag
 		[-1122] = "Grand Hunts",													-- Grand Hunts
 		[-1130] = "Iskaara Tuskarr",												-- Iskaara Tuskarr
 		[-1131] = "Iskaara Fishing",												-- Iskaara Fishing
-		[-1132] = "Iskaara Cooking",												-- Iskaara Cooking
+		[-1132] = GetSpellInfo(386441),												-- Community Feast
 		[-1140] = "Valdrakken Accord",												-- Valdrakken Accord
-		[-1141] = "Siege On Dragonbane Keep",										-- Siege on Dragonbane Keep
+		[-1141] = GetSpellInfo(388945),												-- Siege on Dragonbane Keep
 		[-1142] = "Aerial Challenges",												-- Aerial Challenges
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
@@ -2086,7 +2084,6 @@ app.L = {
 	-- Shadowlands Achievement Headers
 	-- 9.1
 		[-10083] = "Covenant Assaults",											-- Covenant Assaults
-		[-11000] = "Dragonflight",												-- Dragonflight
 	--	hopefully temp objects, these currently do not have accessible object data on wowhead
 		[-1433951] = "Broken Mirror A-1",										-- Broken Mirror
 		[-1433952] = "Broken Mirror A-2",										-- Broken Mirror

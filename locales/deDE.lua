@@ -218,6 +218,8 @@ local L = app.L;
 	L.LOCK_CRITERIA_FACTION_LABEL = "Fraktion Ruf";
 	L.LOCK_CRITERIA_FACTION_FORMAT = "%s mit %s (Current: %s)";
 	L.FORCE_REFRESH_REQUIRED = "Dies benötigt möglicherweise eine erzwungene Aktualisierung ("..SHIFT_KEY_TEXT.."-Click) um ordnungsgemäß als gesammelt zu zählen.";
+	--TODO: L.FUTURE_UNOBTAINABLE = "Future Unobtainable!";
+	--TODO: L.FUTURE_UNOBTAINABLE_TOOLTIP = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Gegenstandsfilter";
@@ -578,6 +580,7 @@ local L = app.L;
 		L.SECRETS_HEADER = "Geheimnisse";
 		L.LIMITED_QUANTITY = "Dies hat eine begrenzte Menge und ist nicht immer beim Händler verfügbar.";
 		L.SOURCE_ID_MISSING = "Bitte meldet diesen Gegenstand und wo er erhalten wurde an das ATT Discord in #retail-errors!";
+		--TODO: L.ADDED_WITH_PATCH_FORMAT = "This gets added in patch %s";
 		L.REMOVED_WITH_PATCH_FORMAT = "Dies wird entfernt mit Patch %s";
 
 	-- Artifact Relic Completion
@@ -678,6 +681,7 @@ for key,value in pairs({
 		[-55] = "Piratentag",										-- Pirates' Day
 		[-59] = "Tag der Toten",									-- Day of the Dead
 		[-62] = "Anglerwettbewerb im Schlingendorntal",				-- Stranglethorn Fishing Extravaganza
+		[-63] = "Angelwettstreit der Kalu'ak",						-- Kalu'ak Fishing Derby
 	-- Zul'Aman
 		--TODO: [-78] = "Timed Event",
 		--TODO: [-79] = "First Chest",
@@ -744,7 +748,7 @@ for key,value in pairs({
 	-- Blizzard Events and Anniversaries
 		[-519] = "Weltereignisse",									-- World Events
 		--TODO: [-520] = "Expansion Pre-Launch",					-- Expansion Pre-Launch
-		--TODO: [-522] = "Zalazane's Fall",												-- Zalazane's Fall
+		--TODO: [-522] = "Zalazane's Fall",							-- Zalazane's Fall
 		--TODO: [-523] = "Elemental Unrest",						-- Elemental Unrest
 		--TODO: [-525] = EXPANSION_NAME5..": Iron Horde Incursion",	-- Warlords of Draenor: Iron Horde Incursion
 		--TODO: [-526] = EXPANSION_NAME6..": Legion Invasion",		-- Legion: Legion Invasion
@@ -765,6 +769,7 @@ for key,value in pairs({
 		--TODO: [-581] = "TBC Classic Deluxe Edition",				-- TBC Classic Deluxe Edition
 		--TODO: [-582] = "WotLK Classic Northrend Heroic Upgrade",	-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		--TODO: [-583] = "WotLK Classic Northrend Epic Upgrade",	-- WotLK Classic Northrend Epic Upgrade
+		--TODO: [-584] = "Dragonflight Seasonal Promotions",		-- Dragonflight Seasonal Promotions
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "Aspiranten Rüstung",							-- Aspirant PvP Gear (WoD, BfA)
@@ -847,18 +852,18 @@ for key,value in pairs({
 		[-1009] = "Mythisch Alternative",							-- TODO: Mythic Alternative
 		[-1010] = "Gladiator Alternative",							-- TODO: Gladiator Alternative
 		[-1011] = "Elite Alternative",								-- TODO: Elite Alternative
-	-- Temp
-		[-1098] = "Nebenquests",									-- Side Quests
 	-- Dragonflight
-		--TODO: [-1100] = "Dragon Customization",					-- Dragon Customization
+		[-1100] = "Drachenwächtermanuskript",						-- Drakewatcher Manuscripts	--TODO: plural
 		[-1101] = "Urstürme",										-- Primal Storms
+		[-1102] = "Furorion und Sabellian",							-- Wrathion & Sabellian
 		[-1110] = "Drachenschuppenexpedition",						-- Dragonscale Expedition
-		--TODO: [-1111] = "Climbing",								-- Climbing
 		[-1120] = "Zentauren der Maruuk",							-- Maruuk Centaur
 		[-1121] = "Klan Aylaag",									-- Clan Aylaag
 		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
 		[-1130] = "Tuskarr von Iskaara",							-- Iskaara Tuskarr
+		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Valdrakkenabkommen",								-- Valdrakken Accord
+		--TODO: [-1142] = "Aerial Challenges",						-- Aerial Challenges
 	-- Warrior order hall lore items
 		[-2200] = "Der große Odyn und der Feuerlord",				-- Great Odyn and the Firelord
 		[-2201] = "Der Wanderer und die Schlange",					-- The Wanderer and the Serpent
