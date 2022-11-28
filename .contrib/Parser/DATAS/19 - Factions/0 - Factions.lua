@@ -207,8 +207,4 @@ _.Factions =
 		faction(2163),	-- Tortollan Seekers
 		faction(2417),	-- Uldum Accord
 	}),
-	tier(SL_TIER, {
-		--faction(2480),	-- Automa (NYI)
-		-- faction(2414),	-- Shadowlands (idk what this is)
-	}),
 };
