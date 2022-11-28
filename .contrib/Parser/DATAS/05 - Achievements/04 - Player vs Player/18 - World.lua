@@ -52,7 +52,6 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			crit(3),	-- Necrolord
 			crit(4),	-- Kyrian
 		}),
-		
 		ach(11474, {	-- Free For All, More For Me
 			a(i(129280)),	-- Prestigious War Steed (MOUNT!)
 			h(i(143864)),	-- Prestigious War Wolf (MOUNT!)
