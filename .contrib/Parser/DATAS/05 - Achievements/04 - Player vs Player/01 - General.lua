@@ -171,6 +171,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			crit(10),		-- Shaman
 			crit(11),		-- Warlock
 			crit(12),		-- Warrior
+			crit(13),		-- Evoker
 		}),
 		ach(714,  {	-- The Conqueror
 			["races"] = HORDE_ONLY,
