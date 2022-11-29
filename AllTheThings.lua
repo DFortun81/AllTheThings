@@ -21103,6 +21103,8 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			-- TODO: this can be called successfilly without tradeskillUI open... potentially use function runner
 			local schematic = C_TradeSkillUI_GetRecipeSchematic(recipeID, false);
 			local craftedItemID = schematic.outputItemID;
+			-- Tag's attempt to fix an error when opening Enchanting
+			if craftedItemID == nil then return end
 			-- app.PrintDebug("Recipe",recipeID,"==>",craftedItemID)
 			local reagentItem, reagentCount, reagentItemID;
 			-- Recipes now have Slots for available Regeants...
