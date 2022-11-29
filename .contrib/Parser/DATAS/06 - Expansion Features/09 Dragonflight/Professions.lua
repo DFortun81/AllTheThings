@@ -308,6 +308,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(387246),	-- Zapthrottle Soul Inhaler
 				},
 			}),
+			q(72242, {	-- Dragon Isles Engineering
+				--["sourceQuests"] = { },	--
+				["provider"] = { "n", 190535 },	-- Quizla Blastcaps
+				["coord"] = { 75.9, 33.2, THE_WAKING_SHORES },
+			}),
 		}),
 		prof(FISHING, {
 			q(72252, {	-- Dragon Isles Fishing [A]
@@ -330,6 +335,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(391088),	-- Refine Herbs++
 					r(391089),	-- Refine Herbs+++
 				},
+			}),
+			q(70360, {	-- Dragon Isles Herbalism
+				--["sourceQuests"] = { },	--
+				["provider"] = { "n", 192549 },	-- Feilin Kuan
+				["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
 			}),
 		}),
 		prof(INSCRIPTION, {
@@ -357,6 +367,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(383534),	-- Sagescale Sigil
 					r(383548),	-- Scribe's Resplendent Quill
 				},
+			}),
+			q(72244, {	-- Dragon Isles Inscription
+				--["sourceQuests"] = { },	--
+				["provider"] = { "n", 198380 },	-- Journalist Jessamine Spitz
+				["coord"] = { 76.1, 35.5, THE_WAKING_SHORES },
 			}),
 		}),
 		prof(JEWELCRAFTING, {
@@ -437,6 +452,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(375160),	-- Toxified Armor Patch
 					r(375199),	-- Witherrot Tome
 				},
+			}),
+			q(70362, {	-- Dragon Isles Leatherworking
+				--["sourceQuests"] = { },	--
+				["provider"] = { "n", 192048 },	-- Deidre Flemmin
+				["coord"] = { 76.6, 34.7, THE_WAKING_SHORES },
 			}),
 			q(70363, {    -- To the Dragon Isles: Leatherworking
 				--["sourceQuests"] = {  },	-- Unknown
@@ -546,8 +566,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(376516),	-- Vibrant Wildercloth Shoulderspikes
 					r(376517),	-- Vibrant Wildercloth Girdle
 					r(376518),	-- Vibrant Wildercloth Wristwraps
-				}
-			})
+				},
+			}),
+			q(72249, {	-- Dragon Isles Tailoring
+				--["sourceQuests"] = { },	--
+				["provider"] = { "n", 192565 },	-- Zayn Starmaker
+				["coord"] = { 75.8, 33.2, THE_WAKING_SHORES },
+			}),
 		}),
 	}),
 })));

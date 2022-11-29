@@ -2128,7 +2128,9 @@ root("HiddenQuestTriggers", {
 				prof(MINING, {
 			q(71950),	-- First Rich Serevite Deposit
 			q(71951),	-- First Draconium Deposit
+			q(71952),	-- First Rich Draconium Deposit
 			q(71953),	-- First Molten Serevite Deposit
+			q(71956),	-- First Mardened Draconium Deposit
 			q(71957),	-- First Titan-touched Serevite Deposit
 			q(72160),	-- Iridescent Ore Fragments
 		}),
