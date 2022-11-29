@@ -2116,6 +2116,22 @@ root("HiddenQuestTriggers", {
 		prof(ALCHEMY, {
 			q(71948),	-- Maxxed Out Transmutation
 		}),
+		prof(HERBALISM, {
+			q(71969),	-- First Lush Hochenblume Harvest
+			q(71972),	-- First Bubble Poppy Harvest
+			q(71974),	-- First Saxifrage Harvest
+			q(71976),	-- First Windswept Hochenblume Harvest
+			q(71979),	-- First Windswept Saxifrage Harvest
+			q(71980),	-- First Frigid Hochenblume Harvest
+			q(71984),	-- First Titan-touched Hochenblume Harvest
+		}),
+				prof(MINING, {
+			q(71950),	-- First Rich Serevite Deposit
+			q(71951),	-- First Draconium Deposit
+			q(71953),	-- First Molten Serevite Deposit
+			q(71957),	-- First Titan-touched Serevite Deposit
+			q(72160),	-- Iridescent Ore Fragments
+		}),
 		--[[
 		prof(BLACKSMITHING, {
 		}),
@@ -2126,8 +2142,6 @@ root("HiddenQuestTriggers", {
 		prof(ENGINEERING, {
 		}),
 		prof(FISHING, {
-		}),
-		prof(HERBALISM, {
 		}),
 		prof(INSCRIPTION, {
 			-- Inscription Essentials
@@ -2472,10 +2486,6 @@ root("HiddenQuestTriggers", {
 			q(71773),	-- Tuskarr Bean Bag
 		}),
 		--]]
-		prof(MINING, {
-			q(72160),	-- Iridescent Ore Fragments
-			--q(71950),
-		}),
 		--[[
 		prof(SKINNING, {
 		}),
