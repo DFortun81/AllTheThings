@@ -127,9 +127,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 66.4, 35.0, THE_WAKING_SHORES },
 					["g"] = {
 						i(194389),	-- Brush Clearing Axe
+						i(194392),	-- Expedition Defender's Blade
+						i(194373),	-- Field Explorer's Stave
 						i(194377),	-- Reliquary Dissection Knife
 						i(198488),	-- Staff of Discovery
-						i(194373),	-- Field Explorer's Stave
 					},
 				}),
 				q(65995, {	-- The Obsidian Citadel
@@ -242,9 +243,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 75.2, 55.0, THE_WAKING_SHORES },
 					["g"] = {
 						i(197380),	-- Renewed Proto-Drake: Curved Horns (DM!)
+						i(197365),	-- Renewed Proto-Drake: Finned Crest (DM!)
 					},
 				}),
-				q(68798, {	-- Meet the Trainers
+				q(68798, {	-- Dragon Glyphs and You
 					["sourceQuests"] = { 68797 },	-- A New Set of Horns
 					["provider"] = { "n", 193359 },	-- Lord Andestrasz
 					["coord"] = { 75.2, 55.0, THE_WAKING_SHORES },
@@ -330,7 +332,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 191895 },	-- Majordomo Selistra
 					["coord"] = { 53.7, 80.2, THE_WAKING_SHORES },
 					["g"] = {
-						i(197354),	-- Renewed Proto-Drake: Horned Back (DM!)
+						-- i(197354),	-- Renewed Proto-Drake: Horned Back (DM!)
 						crit(3, {	-- In Defense of Life
 							["achievementID"] = 16334,	-- Waking Hope
 						}),
@@ -571,10 +573,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 66.4, 55.7, THE_WAKING_SHORES },
 						["g"] = {
 							i(194393),	-- Expedition Guard's Cudgel
-							i(194376),	-- Vault Guardian's Poleaxe
-							i(194416),	-- Titan Lightning Generator
 							i(194371),	-- Expedition Guard's Shield
 							i(194386),	-- League Mercenary's Mace
+							i(194416),	-- Titan Lightning Generator
+							i(194372),	-- Vault Guardian's Missive
+							i(194376),	-- Vault Guardian's Poleaxe
 							crit(1, {	-- Beyond the Barrier
 								["achievementID"] = 16401,	-- Sojourner of the Waking Shores
 							}),
@@ -793,7 +796,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["collectible"] = false,
 				["g"] = {
 					q(72122, {	-- Erstwhile Ecologists
-						["sourceQuests"] = { 69914 },	-- The Djaradin Have Awoken
+						["sourceQuests"] = {
+							65990,	-- Deliver Whelps From Evil
+							65989,	-- Invader Djaradin
+						},
 						["provider"] = { "n", 195303 },	-- Mender Eskros
 						["coord"] = { 71.2, 40.5, THE_WAKING_SHORES },
 						["isBreadcrumb"] = true, -- Prob?
@@ -1074,7 +1080,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "n", 188297 },	-- Caretaker Ventraz
 				["coord"] = { 59.1, 34.8, THE_WAKING_SHORES },
 				["g"] = {
-					i(197365),	-- Renewed Proto-Drake: Finned Crest (DM!)
 					i(194441),	-- Bottled Water Elemental
 				},
 			}),
@@ -1109,6 +1114,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200747),	-- Zikkori's Water Siphoning Device
 				},
 			}),
+			q(72481, {	-- The Waking Shore Tour
+				["sourceQuests"] = { 68798 },	-- Dragon Glyphs and You
+				["provider"] = { "n", 193411 },	-- Celormu
+				["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
+			}),
 				-- Kinda Weird? Just nothing more --
 			q(71141, {	-- Gills with Gall
 				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
@@ -1130,23 +1140,118 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
+			q(72708, {	-- Dragon Isles Supplies
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "i", 202081 },	-- Dragon Isles Supply Bag
+			}),
 			n(BONUS_OBJECTIVES, {
+				q(66076, {	-- Ancient Hornswog
+					["provider"] = { "n", 187111 },	-- Ancient Hornswog
+					["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
+				}),
 				q(66117, {	-- Clear the Battlefield
-					-- TODO: MIGHT NOT BE TRUE
 					["sourceQuests"] = { 66116 },	-- The Primary Threat
 					["coord"] = { 58.9, 76.6, THE_WAKING_SHORES },
 				}),
 				q(65994, {	-- Djaradin Djustice
-					-- TODO: MIGHT NOT BE TRUE
 					["sourceQuests"] = {
 						65990,	-- Deliver Whelps From Evil
 						65989,	-- Invader Djaradin
 					},
 					["coord"] = { 67.6, 38.5, THE_WAKING_SHORES },
 				}),
+				q(66956, {	-- Dragonhunter Igordan
+					["provider"] = { "n", 191611 },	-- Dragonhunter Igordan
+					["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
+				}),
+				q(70648, {	-- Firava the Rekindler
+					["provider"] = { "n", 195915 },	-- Firava the Rekindler
+					["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },
+				}),
+				q(66960, {	-- Klozicc the Ascended
+					["provider"] = { "n", 187209 },	-- Klozicc the Ascended
+					["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
+				}),
+				q(66074, {	-- Primal Scythid Queen
+					["provider"] = { "n", 184853 },	-- Primal Scythid Queen
+					["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
+				}),
 				q(70196, {	-- Pruning the Preserve
-					--["sourceQuests"] = {  },
+					["sourceQuests"] = { 66079 },	-- Wrathion Awaits
 					["coord"] = { 44.4, 82.1, THE_WAKING_SHORES },
+				}),
+				q(70751, {	-- Terillod the Devout
+					["provider"] = { "n", 193171 },	-- Terillod the Devout
+					["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
+				}),
+			}),
+			n(HIDDEN_QUESTS, {
+				q(72089, {	-- To Skytop Observatory
+					["provider"] = { "n", 193287 },	-- Lord Andestrasz
+					["coord"] = { 57.7, 66.9, THE_WAKING_SHORES },
+				}),
+				q(72059, {	-- Stay awhile and listen: Commander Lethanak
+					["name"] = "Stay awhile and listen: Commander Lethanak",
+					["sourceQuests"] = { 66788 },	-- Eggcited for the Future
+					["provider"] = { "n", 195212 },	-- Commander Lethanak
+					["coord"] = { 62.7, 72.2, THE_WAKING_SHORES },
+				}),
+				q(70206, {	-- Stay awhile and listen: Veritistrasz: 1
+					["name"] = "Stay awhile and listen: Veritistrasz: 1",
+					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["provider"] = { "n", 194076 },	-- Veritistrasz
+					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
+				}),
+				q(70543, {	-- Stay awhile and listen: Veritistrasz: 2
+					["name"] = "Stay awhile and listen: Veritistrasz: 2",
+					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["provider"] = { "n", 194076 },	-- Veritistrasz
+					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
+				}),
+				q(70544, {	-- Stay awhile and listen: Veritistrasz: 3
+					["name"] = "Stay awhile and listen: Veritistrasz: 3",
+					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["provider"] = { "n", 194076 },	-- Veritistrasz
+					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
+				}),
+				q(70217, {	-- Stay awhile and listen: Veritistrasz: 4
+					["name"] = "Stay awhile and listen: Veritistrasz: 4",
+					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["provider"] = { "n", 194076 },	-- Veritistrasz
+					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
+				}),
+				q(70546, {	-- Stay awhile and listen: Veritistrasz: 5
+					["name"] = "Stay awhile and listen: Veritistrasz: 5",
+					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["provider"] = { "n", 194076 },	-- Veritistrasz
+					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
+				}),
+				q(70547, {	-- Stay awhile and listen: Veritistrasz: 6
+					["name"] = "Stay awhile and listen: Veritistrasz: 6",
+					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["provider"] = { "n", 194076 },	-- Veritistrasz
+					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
+				}),
+				q(70219, {	-- Stay awhile and listen: Veritistrasz: 7
+					["name"] = "Stay awhile and listen: Veritistrasz: 7",
+					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["provider"] = { "n", 194076 },	-- Veritistrasz
+					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
+				}),
+				q(70548, {	-- Stay awhile and listen: Veritistrasz: 8
+					["name"] = "Stay awhile and listen: Veritistrasz: 8",
+					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["provider"] = { "n", 194076 },	-- Veritistrasz
+					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
+				}),
+				q(70223, {	-- Stay awhile and listen: Veritistrasz: 9
+					["name"] = "Stay awhile and listen: Veritistrasz: 9",
+					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["provider"] = { "n", 194076 },	-- Veritistrasz
+					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 				}),
 			}),
 			ach(15941, {	-- Dragon Racing Completionist: Gold
@@ -1354,19 +1459,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THE_WAKING_SHORES, {
 		q(70709),	-- Promising to Save Wu'de Prepfoot during The Shadow of His Wings(65691)
-		q(72059),	-- Gossip with Commander Lethanak at 62.7, 72.2 unclear when
 		q(70872),	-- Popped After A Sledgehammer of a Solution(66108A) and Don't Be So Shellfish (66106)
 		q(70872),	-- After completing A Quack In Time and the other quests quakc
-		-- Popped During Stay a While (70132)
-		q(70206),	-- 1
-		q(70543),	-- 2
-		q(70544),	-- 3
-		q(70217),	-- 4
-		q(70546),	-- 5
-		q(70547),	-- 6
-		q(70219),	-- 7
-		q(70548),	-- 8
-		q(70223),	-- 9
 		q(70231),	-- Gossip with Emilia Bellocq 75.4, 33.9 193915
 		-- Namning the Proto-Welp during [WIP] Theory in Practice (69902)
 		q(72176),	-- Toughscale

@@ -4,6 +4,14 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
 		n(ZONE_DROPS, {
+			i(202081, {	-- Dragon Isles Supply Bag
+				["crs"] = {
+					190056,	-- Primal Proto-Drake
+					184869,	-- Primal Proto-Drake
+					193806,	-- Primal Proto-Drake
+					195241,	-- Primal Proto-Drake
+				},
+			}),
 			i(193874, {	-- Qalashi Plans
 				["cr"] = 186777,	-- Meatgrinder Sotok
 			}),

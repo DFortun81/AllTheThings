@@ -12,8 +12,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(187111, {	-- Ancient Hornswog
-				-- ["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
-				-- ["questID"] = 66076,
+				["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
+				["questID"] = 72835,
 				["g"] = {
 					i(200442),	-- Basilisk Hide Jerkin
 					i(196992),	-- Cliffside Wylderdrake: Heavy Horns (DM!)
@@ -53,7 +53,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(191611, {	-- Dragonhunter Igordan
 				["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
-				-- ["questID"] = 66956,
+				["questID"] = 72838,
 				["g"] = {
 					i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail (DM!)
 					i(197005),	-- Cliffside Wylderdrake: Horned Nose (DM!)
@@ -76,10 +76,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(195915, {	-- Firava the Rekindler
 				["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },
-				-- ["questID"] = 70648,
+				["questID"] = 72839,
 				["g"] = {
 					i(200217),	-- Blazing Essence
 					i(197135),	-- Highland Drake: Toothy Mouth (DM!)
+					i(200247),	-- Inextinguishable Gavel
 					i(200563),	-- Primal Ritual Shell
 					i(200133),	-- Volcanic Chakram
 				},
@@ -127,7 +128,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(187209, {	-- Klozicc the Ascended
 				["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
-				-- ["questID"] = 72841,
+				["questID"] = 72841,
 				["g"] = {
 					i(197023),	-- Cliffside Wylderdrake: Maned Neck (DM!)
 					i(200246),	-- Lost Delving Lamp
@@ -177,10 +178,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(184853, {	-- Primal Scythid Queen
-				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
-				-- ["questID"] = 66074,
+				["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
+				["questID"] = 72843,
 				["g"] = {
 					i(200445),	-- Lucky Hunting Charm
+					i(200193),	-- Manafrond Sandals
 					i(200563),	-- Primal Ritual Shell
 					i(200195),	-- Thunderscale Legguards
 				},
@@ -218,7 +220,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193171, {	-- Terillod the Devout
 				["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
-				-- ["questID"] = 70751,
+				["questID"] = 72850,
 				["g"] = {
 					i(200208),	-- Cloud Coalescing Handwraps
 				},

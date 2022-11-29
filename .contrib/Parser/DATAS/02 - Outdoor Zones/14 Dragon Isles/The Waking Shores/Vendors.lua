@@ -7,9 +7,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193915, {	-- Emilia Bellocq
 				["coord"] = { 75.4, 34.0, THE_WAKING_SHORES },
 				["g"] = {
-					i(198854, {	-- Archeologist Artifact Notes
-						["questID"] = 70409,
-					}),
 					i(199900),	-- Secondhand Survery Tools
 				},
 			}),

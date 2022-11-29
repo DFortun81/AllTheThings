@@ -227,13 +227,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192797),	-- Gral's Discarded Tooth
 			i(191942),	-- Belloc's Hat
 			-- Waking Shore Quest Rewards?
-			i(194372),	-- Vault Guardian's Missive
 			i(194374),	-- Explorer's League Rifle
 			i(194378),	-- Explorer's Belt Knife
 			i(194379),	-- Field Scout's Longblade
 			i(194387),	-- Obsidian Watcher's Crossbow
 			i(194388),	-- Obsidian Guardian's Cleaver
-			i(194392),	-- Expedition Defender's Blade
 			i(194395),	-- Doomsayer's Greatsword
 			i(194397),	-- Darkscale Twinblade
 			i(194398),	-- Crumbling Watcher's Stone (NYI)
@@ -634,9 +632,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192096),	-- Spool of Wilderthread++
 			i(192097),	-- Spool of Wilderthread+++
 			i(192078),	-- Bottled Putrescence
-			i(194727),	-- Fiery Spirit+
-			i(194728),	-- Fiery Spirit++
-			i(194729),	-- Fiery Spirit+++
 			i(194828),	-- Stacked Deck of Darkmoon Mysteries
 			i(194873),	-- Apprentice's Fluffed Quill
 			i(194888),	-- Dracthyr's Inscribed Blade
@@ -920,7 +915,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200586),	-- Derelict Sunglasses
 			i(201411),	-- Ancient Vault Artifact
 			i(201412),	-- Ancient Vault Artifact
-			i(202081),	-- Dragon Isles Supply Bag
 			i(202105),	-- Rusted Coin of the Isles
 		}),
 		n(TREASURES, {
@@ -1017,7 +1011,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200241),	-- Stormcaller's Ritual Hatchet
 			i(200242),	-- Watcher's Lightning Rod
 			i(200245),	-- Leviathan Lure
-			i(200247),	-- Inextinguishable Gavel
 			i(200250),	-- Frost Tipped Glaive
 			i(200252),	-- Molten Flak Cannon
 			i(200253),	-- Snowspring Incanter's Knife
@@ -1355,11 +1348,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(202092),	-- Iskaara Tuskarr Insignia
 			i(202093),	-- Valdrakken Accord Insignia
 			i(202094),	-- Maruuk Centaur Insignia
-			i(202097),	-- Bulging Box of Skins and Scales
-			i(202098),	-- Crowded Crate of Mined Materials
-			i(202099),	-- Stocked Sack of Hale Herbs
-			i(202100),	-- Populous Pack of Castoff Cloth
-			i(202101),	-- Topped Trunk of Disenchanted Detritus
 			i(202171),	-- Dragon Purse
 			i(202079),	-- Cache of Vault Treasures
 			i(202080),	-- Cache of Vault Treasures

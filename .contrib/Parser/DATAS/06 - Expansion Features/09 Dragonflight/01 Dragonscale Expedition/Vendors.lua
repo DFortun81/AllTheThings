@@ -64,6 +64,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			n(189226, {	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["g"] = {
+					i(198854, {	-- Archeologist Artifact Notes
+						["questID"] = 70409,
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 10 },
+						},
+					}),
 						-- RENOWN 19 --
 					i(198728, {	-- Explorer's League Banner (TOY!)
 						["cost"] = {

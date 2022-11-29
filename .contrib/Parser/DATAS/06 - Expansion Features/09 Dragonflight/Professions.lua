@@ -6,7 +6,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 	n(PROFESSIONS, {
 		-- GENERAL PROFESSION
 		q(67564, {	-- Artisan's Courier
-			-- TODO: Might be BC
 			["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 			["provider"] = { "n", 192498 },	-- Haephesta
 			["coord"] = { 57.9, 68.2, THE_WAKING_SHORES },
@@ -35,13 +34,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				{ 71.7, 81.2, OHNAHRAN_PLAINS },
 			},
 			["g"] = {
+				i(202097),	-- Bulging Box of Skins and Scales
+				i(202098),	-- Crowded Crate of Mined Materials
+				i(202100),	-- Populous Pack of Castoff Clothes
+				i(202099),	-- Stocked Sack of Hale Herbs
+				i(202101),	-- Topped Trunk of Disenchanted Detritus
+				--
 				i(194746),	-- Thomas's Empty Bottle
-				i(191461),	-- Hochenblume++
-				i(190396),	-- Tyrivite Ore++
-				i(193210),	-- Resilient Leather++
-				i(193214),	-- Adamant Scales++
-				i(193922),	-- Wildercloth
-				i(194123),	-- Chromatic Dust
 				i(194714),	-- Miguel's Gift
 				-- Recipes
 				r(377978,{["u"]=15}),	-- Heart in a Bottle (ALCHEMY)
@@ -73,6 +72,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(193529),	-- Wildercloth Fishing Cap
 				i(193612),	-- Smithing Apron
 				i(198243),	-- Draconium Delver's Helmet
+				i(191239),	-- Draconium Needle Set
 			},
 		}),
 		q(70126, {	-- A Finishing Touch
@@ -193,6 +193,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 191893 },	-- Zherrak
 				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
 			}),
+			q(72245, {	-- To the Dragon Isles: Alchemy
+				["sourceQuests"] = {
+					70122,	-- Explorers in Peril [A]
+					65452,	-- Explorers in Peril [H]
+				},
+				["provider"] = { "n", 198392 },	-- An'timon
+				["coord"] = { 76.2, 35.8, THE_WAKING_SHORES },
+			}),
 			q(67080, {	-- Artisan's Supply: Dragon's Alchemical Solution
 				-- TODO: Available at 64?
 				["sourceQuests"] = { 70355 },	-- To the Dragon Isles: Alchemy
@@ -244,7 +252,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 		prof(COOKING, {
 			q(72250, {	-- Dragon Isles Cooking
-				--["sourceQuests"] = {  },	--
+				["sourceQuests"] = {
+					70122,	-- Explorers in Peril [A]
+					65452,	-- Explorers in Peril [H]
+				},
 				["provider"] = { "n", 198094 },	-- Head Chef Stacks
 				["coord"] = { 76.4, 35.7, THE_WAKING_SHORES },
 			}),
@@ -413,6 +424,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["sourceQuests"] = { 66057 },	-- Restoring the Faith
 				["provider"] = { "n", 192121 },	-- Falron Greygold
 				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
+			}),
+			q(72247, {	-- To the Dragon Isles: Jewelcrafting
+				["sourceQuests"] = {
+					70122,	-- Explorers in Peril [A]
+					65452,	-- Explorers in Peril [H]
+				},
+				["provider"] = { "n", 198398 },	-- Misty Catseye
+				["coord"] = { 76.2, 33.6, THE_WAKING_SHORES },
 			}),
 			q(70032, {	-- Artisan's Supply: Jeweler's Specs
 				-- TODO: Available 64??

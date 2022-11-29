@@ -24,7 +24,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(380654, {	-- Dead Man's Chestplate
 				["coord"] = { 69.3, 46.5, THE_WAKING_SHORES },
-				--["questID"] = ,
+				["questID"] = 70346,
 				["g"] = {
 					crit(5, {	-- Dead Man's Chestplate
 						["achievementID"] = 16297,	-- Treasures of The Waking Shores
@@ -119,7 +119,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(380653, {	-- Yennu's Kite
 				["coord"] = { 46.8, 31.2, THE_WAKING_SHORES },
-				--["questID"] = ,
+				["questID"] = 70345,
 				["g"] = {
 					crit(4, {	-- Yennu's Kite
 						["achievementID"] = 16297,	-- Treasures of The Waking Shores

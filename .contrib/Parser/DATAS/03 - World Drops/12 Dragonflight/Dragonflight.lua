@@ -55,6 +55,9 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 },
 		i(201399),	-- Primal Bear Spine
 		i(201404),	-- Tallstrider Sinew
 		i(201405),	-- Tuft of Primal Wool
+		i(194727),	-- Fiery Spirit+
+		i(194728),	-- Fiery Spirit++
+		i(194729),	-- Fiery Spirit+++
 		-- Awakened
 		i(190327),	-- Awakened Air
 		i(190331),	-- Awakened Decay

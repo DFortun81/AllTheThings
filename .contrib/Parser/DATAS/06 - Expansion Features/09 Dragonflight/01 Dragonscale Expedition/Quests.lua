@@ -17,6 +17,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["repeatable"] = true,
 				["cost"] = { { "i", 192055, 5 }, }, 	-- 5x Dragon Isles Artifact
 			}),
+			q(72397, {	-- Orientation: Dragonscale Basecamp
+				["description"] = "Requires Renown 1.",
+				["provider"] = { "n", 186869 },	-- Naleidea Rivergleam
+				["coord"] = { 47.9, 82.4, THE_WAKING_SHORES },
+			}),
 				-- RENOWN 2 --
 			q(70822, {	-- Lost Expedition Scouts
 				["description"] = "Requires Renown 2.",
@@ -112,12 +117,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 
 
-			q(72397, {	-- Welcome to the Basecamp (new name: Orientation: Dragonscale Basecamp?)
-				["description"] = "Requires Renown 7.",
-				["sourceQuests"] = { 69855 },	-- A Climber's Calling
-				["provider"] = { "n", 186869 },	-- Naleidea Rivergleam
-				["coord"] = { 47.9, 82.4, THE_WAKING_SHORES },
-			}),
+
 				-- RENOWN 1 --
 			q(71008, {	-- Wanted: Stoneheart's Stone Heart
 				["provider"] = { "o", 381670 },	-- Archivist's Request
