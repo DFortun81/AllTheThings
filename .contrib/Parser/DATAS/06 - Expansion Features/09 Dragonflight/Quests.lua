@@ -145,15 +145,25 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			["races"] = HORDE_ONLY,
 			["timeline"] = TIMELINE_DF_REL,
 		}),
-		q(67700, {    -- To The Dragon Isles! [A]
-            ["sourceQuests"] = { 70050 },	--  The Expedition Gathers [A]
-           -- TODO: ["provider"] = { "n", 189602 },	-- Toddy Whiskers (not sure) // I fked and miss npc, need to redo
-            ["coord"] = { 40.4, 50.1, STORMWIND_CITY },
-            ["races"] = ALLIANCE_ONLY,
+		q(70197, {	-- The Call of the Isles [A]
+			["maps"] = { STORMWIND_CITY },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = TIMELINE_DF_REL,
+		}),
+		q(70198, {	-- The Call of the Isles [H]
+			["maps"] = { ORGRIMMAR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = TIMELINE_DF_REL,
+		}),
+		q(67700, {	-- To The Dragon Isles! [A]
+			["sourceQuests"] = { 70197 },	--  The Call of the Isles [A]
+			["provider"] = { "n", 189077 },	-- Toddy Whiskers
+			["coord"] = { 22.7, 55.6, STORMWIND_CITY },
+			["races"] = ALLIANCE_ONLY,
 			["timeline"] = TIMELINE_DF_REL,
 		}),
 		q(65444, {	-- To the Dragon Isles! [H]
-			["sourceQuests"] = { 69944 },	-- The Expedition Gathers [H]
+			["sourceQuests"] = { 70198 },	-- The Call of the Isles [H]
 			["provider"] = { "n", 197279 },	-- Naleidea Rivergleam
 			["coord"] = { 55.8, 12.7, DUROTAR },
 			["races"] = HORDE_ONLY,
@@ -202,5 +212,3 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 	}),
 })));
-
-
