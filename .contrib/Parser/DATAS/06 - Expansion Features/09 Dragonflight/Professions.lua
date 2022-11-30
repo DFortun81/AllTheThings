@@ -477,11 +477,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 192048 },	-- Deidre Flemmin
 				["coord"] = { 76.6, 34.7, THE_WAKING_SHORES },
 			}),
-			q(70363, {    -- To the Dragon Isles: Leatherworking
-				--["sourceQuests"] = {  },	-- Unknown
-				["provider"] = { "n", 192048 },    -- Deirdre Flemmin
-				["coord"] = { 76.6, 34.9, THE_WAKING_SHORES },
+			--[[
+			q(, {    -- To the Dragon Isles: Leatherworking
+			--	--["sourceQuests"] = {  },	-- Unknown
+			--	["provider"] = { "n", 192048 },    -- Deirdre Flemmin
+			--	["coord"] = { 76.6, 34.9, THE_WAKING_SHORES },
 			}),
+			--]]
 			q(69979, { -- A Worthy Hunt
 				["sourceQuests"] = { 69946 },	-- The Master of Their Craft
 				["provider"] = { "n", 193110 },	-- Khadin
@@ -552,6 +554,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(70363, {	-- To the Dragon Isles: Skinning
 				--["sourceQuests"] = {  },	-- Unknown
+				["isBreadcrumb"] = true,
 				["provider"] = { "n", 192558 },    -- Toninaar
 				["coord"] = { 76.7, 34.8, THE_WAKING_SHORES },
 			}),
