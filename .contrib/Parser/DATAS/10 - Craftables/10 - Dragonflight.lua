@@ -2117,12 +2117,20 @@ root("HiddenQuestTriggers", {
 			q(71948),	-- Maxxed Out Transmutation
 		}),
 		prof(HERBALISM, {
+			q(71857),	-- First Windswept Saxifrage
 			q(71969),	-- First Lush Hochenblume Harvest
+			q(71970),	-- First Writhebark Harvest
+			q(71971),	-- First Lush Writhebark Harvest
 			q(71972),	-- First Bubble Poppy Harvest
+			q(71973),	-- First Lush Bubble Poppy Harvest
 			q(71974),	-- First Saxifrage Harvest
+			q(71975),	-- First Lush Saxifrage Harvest
 			q(71976),	-- First Windswept Hochenblume Harvest
+			q(71978),	-- First Windswept Bubble Poppy Harvest
 			q(71979),	-- First Windswept Saxifrage Harvest
 			q(71980),	-- First Frigid Hochenblume Harvest
+			q(71981),	-- First Frigid Writhebark Harvest
+			q(71982),	-- First Frigid Bubble Poppy Harvest
 			q(71984),	-- First Titan-touched Hochenblume Harvest
 		}),
 				prof(MINING, {
@@ -2130,8 +2138,13 @@ root("HiddenQuestTriggers", {
 			q(71951),	-- First Draconium Deposit
 			q(71952),	-- First Rich Draconium Deposit
 			q(71953),	-- First Molten Serevite Deposit
+			q(71954),	-- First Molten Draconium Deposit
+			q(71955),	-- First Hardened Serevite Deposit
 			q(71956),	-- First Mardened Draconium Deposit
 			q(71957),	-- First Titan-touched Serevite Deposit
+			q(71958),	-- First Titan-touched Draconium Deposit
+			q(71959),	-- First Primal Serevite Deposit
+			q(71960),	-- First Primal Draconium Deposit
 			q(72160),	-- Iridescent Ore Fragments
 		}),
 		--[[
