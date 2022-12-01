@@ -993,7 +993,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 57.8, 66.8, THE_WAKING_SHORES },
 					}),
 					q(70134, {	-- Memories
-						["sourceQuests"] = { 70132 },	-- Stay a While
+						["sourceQuests"] = { 70223 },	-- Stay a While [Post-RP #9]
 						["provider"] = { "n", 194076 },	-- Veritistrasz
 						["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 						["g"] = {
@@ -1115,7 +1115,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			q(72481, {	-- The Waking Shore Tour
-				["sourceQuests"] = { 68798 },	-- Dragon Glyphs and You
+				["sourceQuests"] = { 68796 },	-- The Skytop Observatory
 				["provider"] = { "n", 193411 },	-- Celormu
 				["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
 			}),

@@ -16,6 +16,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 72835,
 				["g"] = {
 					i(200442),	-- Basilisk Hide Jerkin
+					i(200165),	-- Aegis of Scales
 					i(196992),	-- Cliffside Wylderdrake: Heavy Horns (DM!)
 					i(200249),	-- Mage's Chewed Wand (TOY!)
 					i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
@@ -23,7 +24,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(187945, {	-- Anhydros the Tidetaker
 				["coord"] = { 58.7, 40.3, THE_WAKING_SHORES },
-				-- ["questID"] = ,
+				["questID"] = 73865,
 				["g"] = {
 					i(200563),	-- Primal Ritual Shell
 				},

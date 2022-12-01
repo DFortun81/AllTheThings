@@ -993,7 +993,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200147),	-- Web-Woven Robe
 			i(200151),	-- Seamist Blade
 			i(200152),	-- Gleaming Blade of Insight
-			i(200165),	-- Aegis of Scales
 			i(200167),	-- Regurgitated Stone Handaxe
 			i(200170),	-- Stormbringer Bow
 			i(200171),	-- Grymheart Blade
@@ -1825,7 +1824,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197916),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
 			i(197917),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
 		}),
-		n(PROFESSION, {
+		n(PROFESSIONS, {
 			i(198483),	-- jrz 10.0 enchanting test [DNT]
 			i(198518),	-- Professor Instructaur's Top Secret Guide to Blacksmithing
 			i(198519),	-- Professor Instructaur's Top Secret Guide to Alchemy
