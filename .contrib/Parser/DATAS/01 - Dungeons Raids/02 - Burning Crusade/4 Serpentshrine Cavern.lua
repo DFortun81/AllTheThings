@@ -71,7 +71,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				i(30022),	-- Pendant of the Perilous
 				-- #if BEFORE MOP
 				i(30025, {	-- Serpentshrine Shuriken
-					["timeline"] = { "removed 5.0.4.10000" },
+					["timeline"] = { "removed 5.0.4" },
 				}),
 				-- #endif
 				i(30027),	-- Boots of Courage Unending
@@ -81,7 +81,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				i(32897),	-- Mark of the Illidari
 				-- #if BEFORE MOP
 				i(30023, {	-- Totem of the Maelstrom
-					["timeline"] = { "removed 5.0.4.10000" },
+					["timeline"] = { "removed 5.0.4" },
 				}),
 				-- #endif
 			}),
@@ -112,7 +112,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					i(30629),	-- Scarab of Displacement
 					i(30051, {	-- Idol of the Crescent Goddess
 						["classes"] = { DRUID },
-						["timeline"] = { "removed 5.0.4.10000" },
+						["timeline"] = { "removed 5.0.4" },
 					}),
 				},
 			}),
@@ -139,7 +139,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 						["classes"] = { PRIEST },
 					}),
 					i(30063, {	-- Libram of Absolute Truth
-						["timeline"] = { "removed 5.0.4.10000" },
+						["timeline"] = { "removed 5.0.4" },
 						["classes"] = { PALADIN },
 					}),
 				},
@@ -243,7 +243,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					i(30109),	-- Ring of Endless Coils
 					i(30621),	-- Prism of Inner Calm
 					i(32895, {	-- Scroll of the Maelstrom
-						["timeline"] = { "removed 4.0.3.10000" },	-- TODO: Determine exactly when to remove this.
+						["timeline"] = { "removed 4.0.3" },	-- TODO: Determine exactly when to remove this.
 						["groups"] = {
 							i(32897),	-- Mark of the Illidari
 						},

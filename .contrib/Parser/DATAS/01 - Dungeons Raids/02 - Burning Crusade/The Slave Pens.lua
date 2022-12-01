@@ -167,7 +167,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 						i(24359),	-- Princely Reign Leggings
 						i(29674, {	-- Pattern: Nature Armor Kit
-							["timeline"] = { "removed 5.0.4.10000" },
+							["timeline"] = { "removed 5.0.4" },
 						}),
 					},
 				}),
@@ -284,11 +284,11 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							-- #if BEFORE MOP
 							i(27544, {	-- Totem of Spontaneous Regrowth
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 							i(29674, {	-- Pattern: Nature Armor Kit
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 						},
 					}),

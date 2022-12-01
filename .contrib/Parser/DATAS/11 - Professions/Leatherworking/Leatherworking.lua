@@ -1616,7 +1616,7 @@ profession(LEATHERWORKING, {
 			["groups"] = {
 				{
 					["name"] = "Arcane Armor Kit",
-					["timeline"] = { "deleted 5.0.4.10000" },
+					["timeline"] = { "deleted 5.0.4" },
 					["recipeID"] = 35524,
 				},
 				{
@@ -1633,12 +1633,12 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Flame Armor Kit",
-					["timeline"] = { "deleted 5.0.4.10000" },
+					["timeline"] = { "deleted 5.0.4" },
 					["recipeID"] = 35521,
 				},
 				{
 					["name"] = "Frost Armor Kit",
-					["timeline"] = { "deleted 5.0.4.10000" },
+					["timeline"] = { "deleted 5.0.4" },
 					["recipeID"] = 35522,
 				},
 				{
@@ -1660,7 +1660,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Nature Armor Kit",
-					["timeline"] = { "deleted 5.0.4.10000" },
+					["timeline"] = { "deleted 5.0.4" },
 					["recipeID"] = 35523,
 				},
 				{
@@ -1673,7 +1673,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Shadow Armor Kit",
-					["timeline"] = { "deleted 5.0.4.10000" },
+					["timeline"] = { "deleted 5.0.4" },
 					["recipeID"] = 35520,
 				},
 				{
@@ -1693,12 +1693,12 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(TBC_PHASE_FOUR, {
 					["name"] = "Knothide Ammo Pouch",
-					["timeline"] = { "deleted 4.0.1.10000" },
+					["timeline"] = { "deleted 4.0.1" },
 					["recipeID"] = 44343,
 				}),
 				applyclassicphase(TBC_PHASE_FOUR, {
 					["name"] = "Knothide Quiver",
-					["timeline"] = { "deleted 4.0.1.10000" },
+					["timeline"] = { "deleted 4.0.1" },
 					["recipeID"] = 44344,
 				}),
 				{
@@ -1707,12 +1707,12 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Netherscale Ammo Pouch",
-					["timeline"] = { "deleted 4.0.1.10000" },
+					["timeline"] = { "deleted 4.0.1" },
 					["recipeID"] = 44768,
 				}),
 				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Quiver of a Thousand Feathers",
-					["timeline"] = { "deleted 4.0.1.10000" },
+					["timeline"] = { "deleted 4.0.1" },
 					["recipeID"] = 44359,
 				}),
 				{
@@ -7866,7 +7866,7 @@ itemrecipe("Pattern: Blue Dragonscale Shoulders", 15763, 19089);
 itemrecipe("Pattern: Stormshroud Shoulders", 15764, 19090);
 itemrecipe("Pattern: Runic Leather Pants", 15765, 19091);
 itemrecipe("Pattern: Wicked Leather Belt", 15768, 19092);
-itemrecipe("Pattern: Onyxia Scale Cloak", 15769, 19093, "removed 3.2.2.10000");
+itemrecipe("Pattern: Onyxia Scale Cloak", 15769, 19093, "removed 3.2.2");
 itemrecipe("Pattern: Black Dragonscale Shoulders", 15770, 19094);
 itemrecipe("Pattern: Living Breastplate", 15771, 19095);
 itemrecipe("Pattern: Devilsaur Leggings", 15772, 19097);
@@ -7932,7 +7932,7 @@ itemrecipe("Pattern: Icy Scale Bracers", 22698, 28224, PHASE_SIX);
 
 -- #if AFTER TBC
 -- TBC Recipes
-itemrecipe("Pattern: Heavy Knothide Leather", 25720, 32455, TBC_PHASE_ONE, "removed 3.2.0.10000");
+itemrecipe("Pattern: Heavy Knothide Leather", 25720, 32455, TBC_PHASE_ONE, "removed 3.2.0");
 itemrecipe("Pattern: Vindicator's Armor Kit", 25721, 32457, TBC_PHASE_ONE);
 itemrecipe("Pattern: Magister's Armor Kit", 25722, 32458, TBC_PHASE_ONE);
 itemrecipe("Pattern: Riding Crop", 25725, 32461, TBC_PHASE_ONE);
@@ -7960,11 +7960,11 @@ itemrecipe("Pattern: Netherfury Belt", 29217, 32501, TBC_PHASE_ONE);
 itemrecipe("Pattern: Netherfury Boots", 29218, 32503, TBC_PHASE_ONE);
 itemrecipe("Pattern: Netherfury Leggings", 29219, 32502, TBC_PHASE_ONE);
 itemrecipe("Pattern: Reinforced Mining Bag", 29664, 35530, TBC_PHASE_ONE);
-itemrecipe("Pattern: Shadow Armor Kit", 29669, 35520, TBC_PHASE_ONE, "removed 5.0.4.10000");
-itemrecipe("Pattern: Flame Armor Kit", 29672, 35521, TBC_PHASE_ONE, "removed 5.0.4.10000");
-itemrecipe("Pattern: Frost Armor Kit", 29673, 35522, TBC_PHASE_ONE, "removed 5.0.4.10000");
-itemrecipe("Pattern: Nature Armor Kit", 29674, 35523, TBC_PHASE_ONE, "removed 5.0.4.10000");
-itemrecipe("Pattern: Arcane Armor Kit", 29675, 35524, TBC_PHASE_ONE, "removed 5.0.4.10000");
+itemrecipe("Pattern: Shadow Armor Kit", 29669, 35520, TBC_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Pattern: Flame Armor Kit", 29672, 35521, TBC_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Pattern: Frost Armor Kit", 29673, 35522, TBC_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Pattern: Nature Armor Kit", 29674, 35523, TBC_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Pattern: Arcane Armor Kit", 29675, 35524, TBC_PHASE_ONE, "removed 5.0.4");
 itemrecipe("Pattern: Enchanted Felscale Leggings", 29677, 35525, TBC_PHASE_ONE);
 itemrecipe("Pattern: Enchanted Felscale Gloves", 29682, 35526, TBC_PHASE_ONE);
 itemrecipe("Pattern: Enchanted Felscale Boots", 29684, 35527, TBC_PHASE_ONE);
@@ -8016,9 +8016,9 @@ itemrecipe("Pattern: Boots of Utter Darkness", 30306, 36357, TBC_PHASE_TWO);
 itemrecipe("Pattern: Boots of the Crimson Hawk", 30307, 36358, TBC_PHASE_TWO);
 itemrecipe("Pattern: Hurricane Boots", 30308, 36359, TBC_PHASE_TWO);
 
-itemrecipe("Pattern: Netherscale Ammo Pouch", 34201, 44768, TBC_PHASE_THREE, "removed 4.0.1.10000");
-itemrecipe("Pattern: Netherscale Ammo Pouch", 34218, 44768, TBC_PHASE_THREE, "removed 4.0.1.10000");
-itemrecipe("Pattern: Quiver of a Thousand Feathers", 34200, 44359, TBC_PHASE_THREE, "removed 4.0.1.10000");
+itemrecipe("Pattern: Netherscale Ammo Pouch", 34201, 44768, TBC_PHASE_THREE, "removed 4.0.1");
+itemrecipe("Pattern: Netherscale Ammo Pouch", 34218, 44768, TBC_PHASE_THREE, "removed 4.0.1");
+itemrecipe("Pattern: Quiver of a Thousand Feathers", 34200, 44359, TBC_PHASE_THREE, "removed 4.0.1");
 itemrecipe("Pattern: Cloak of Darkness", 33124, 42546, TBC_PHASE_THREE);
 itemrecipe("Pattern: Shadowprowler's Chestguard", 33205, 42731, TBC_PHASE_THREE);
 

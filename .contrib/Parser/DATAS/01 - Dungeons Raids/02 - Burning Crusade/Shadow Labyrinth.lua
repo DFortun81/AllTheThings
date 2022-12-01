@@ -197,7 +197,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27884),	-- Ornate Boots of the Sanctified
 						-- #if BEFORE MOP
 						i(27886, {	-- Idol of the Emerald Queen
-							["timeline"] = { "removed 5.0.4.10000" },
+							["timeline"] = { "removed 5.0.4" },
 						}),
 						-- #endif
 					},
@@ -297,7 +297,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27884),	-- Ornate Boots of the Sanctified
 							-- #if BEFORE MOP
 							i(27886, {	-- Idol of the Emerald Queen
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 						},

@@ -84,7 +84,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 							["races"] = { DRAENEI },
 							["classes"] = { SHAMAN },
 							["lvl"] = lvlsquish(4, 1, 4),
@@ -97,7 +97,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 71.3, 39.1, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 							["races"] = { DRAENEI },
 							["classes"] = { SHAMAN },
 							["lvl"] = lvlsquish(4, 1, 4),
@@ -108,26 +108,29 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(9451, {	-- Call of Earth (3/3)
-							["qg"] = 17087,	-- Spirit of the Vale
+							["providers"] = {
+								{ "n", 17087 },	-- Spirit of the Vale
+								{ "i", 23671 },	-- Earth Crystal
+							},
 							["sourceQuest"] = 9450,	-- Call of Earth (2/3)
 							-- #if AFTER MOP
 							["coord"] = { 33.6, 23.8, AMMEN_VALE },
 							-- #else
 							["coord"] = { 71.3, 39.1, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "removed 4.0.3.10000" },
-							["cost"] = {
-								{ "i", 23671, 1 },	-- Earth Crystal
-							},
+							["timeline"] = { "removed 4.0.3" },
 							["races"] = { DRAENEI },
 							["classes"] = { SHAMAN },
-							["lvl"] = lvlsquish(4, 1, 4),
+							["lvl"] = 4,
+							-- #if BEFORE 4.0.3
 							["groups"] = {
 								recipe(8071),	-- Stoneskin Totem
 								i(5175, {	-- Earth Totem
 									["description"] = "You must keep this in your bags forever.",
+									["timeline"] = { "removed 4.0.3" },
 								}),
 							},
+							-- #endif
 						}),
 						q(26968, {	-- Frost Nova
 							["qg"] = 16500,	-- Valaatu
@@ -136,7 +139,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.6, 48.8, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "added 4.0.3.10000", "removed 7.0.3.10000" },
+							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
 							["classes"] = { MAGE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
@@ -169,7 +172,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.9, 49.7, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 							["races"] = { DRAENEI },
 							["classes"] = { HUNTER },
 							["lvl"] = lvlsquish(3, 1, 3),
@@ -218,7 +221,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 80.1, 48.9, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "added 4.0.3.10000", "removed 7.0.3.10000" },
+							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
 							["classes"] = { PRIEST },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
@@ -230,7 +233,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.6, 48.8, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 							["races"] = { DRAENEI },
 							["classes"] = { MAGE },
 							["lvl"] = lvlsquish(3, 1, 3),
@@ -247,7 +250,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.7, 48.2, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 							["races"] = { DRAENEI },
 							["classes"] = { PALADIN },
 							["lvl"] = lvlsquish(3, 1, 3),
@@ -259,7 +262,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 80.1, 48.9, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 							["races"] = { DRAENEI },
 							["classes"] = { PRIEST },
 							["lvl"] = lvlsquish(3, 1, 3),
@@ -271,7 +274,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "added 4.0.3.10000", "removed 7.0.3.10000" },
+							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
 							["classes"] = { SHAMAN },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
@@ -345,7 +348,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 							["races"] = { DRAENEI },
 							["classes"] = { SHAMAN },
 							["lvl"] = lvlsquish(3, 1, 3),
@@ -406,7 +409,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.9, 49.7, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "added 4.0.3.10000", "removed 7.0.3.10000" },
+							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
 							["classes"] = { HUNTER },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
@@ -456,7 +459,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.7, 48.2, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "added 4.0.3.10000", "removed 7.0.3.10000" },
+							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
 							["classes"] = { PALADIN },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
@@ -475,7 +478,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(31173, {	-- The Tiger Palm
 							["qg"] = 63335,	-- Mojo Stormstout
 							["coord"] = { 50.6, 48.6, AMMEN_VALE },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3.10000" },
+							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 							["classes"] = { MONK },
 							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 1, 3),
@@ -549,7 +552,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.6, 49.5, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 							["races"] = { DRAENEI },
 							["classes"] = { WARRIOR },
 							["lvl"] = lvlsquish(3, 1, 3),
@@ -587,7 +590,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.6, 49.5, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { "added 4.0.3.10000", "removed 7.0.3.10000" },
+							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
 							["classes"] = { WARRIOR },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
@@ -774,14 +777,14 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9675, {	-- Beast Training
 					["qg"] = 17614,	-- Huntress Kella Nightbow
 					["coord"] = { 24.2, 54.4, AZUREMYST_ISLE },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { THE_EXODAR },
 					["classes"] = { HUNTER },
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(10, 1, 10),
 					["groups"] = {
 						i(24138, {	-- Silver Crossbow
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 						}),
 						-- #if BEFORE CATA
 						recipe(6991),		-- Feed Pet
@@ -837,7 +840,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9462, {	-- Call of Fire (1/7)
 					["qg"] = 17219,	-- Sulaa <Shaman Trainer>
 					["coord"] = { 32.3, 23.9, THE_EXODAR },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
 					["isBreadcrumb"] = true,
@@ -847,7 +850,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17212,	-- Tuluun <Shaman Trainer>
 					["sourceQuest"] = 9462,	-- Call of Fire (1/4)
 					["coord"] = { 48.0, 50.4, AZUREMYST_ISLE },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(10, 1, 10),
@@ -856,7 +859,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17205,	-- Temper
 					["sourceQuest"] = 9464,	-- Call of Fire (2/4)
 					["coord"] = { 59.5, 18.1, AZUREMYST_ISLE },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(10, 1, 10),
@@ -871,7 +874,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17205,	-- Temper
 					["sourceQuest"] = 9465,	-- Call of Fire (3/4)
 					["coord"] = { 59.5, 18.1, AZUREMYST_ISLE },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(10, 1, 10),
@@ -892,7 +895,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17205,	-- Temper
 					["sourceQuest"] = 9467,	-- Call of Fire (4/4)
 					["coord"] = { 59.5, 18.1, AZUREMYST_ISLE },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["cost"] = { { "i", 23688, 1 } },	-- Hauteur's Ashes
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
@@ -902,7 +905,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17212,	-- Tuluun <Shaman Trainer>
 					["sourceQuest"] = 9468,	-- Call of Fire (5/4)
 					["coord"] = { 48.0, 50.4, AZUREMYST_ISLE },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(10, 1, 10),
@@ -911,7 +914,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17468,	-- Prophet Velen
 					["sourceQuest"] = 9461,	-- Call of Fire (6/4)
 					["coord"] = { 32.9, 54.5, THE_EXODAR },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(10, 1, 10),
@@ -956,7 +959,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- wowhead also doesn't have provider data for it, leading me to believe it has been culled/not seen in a long time
 					["qg"] = 17481,	-- Semid
 					["coord"] = { 49.9, 50.0, AZUREMYST_ISLE },
-					["timeline"] = { "removed 4.0.3.10000" },	-- NOTE: Possibly added back the same time as the Ghostlands Mage quest was.
+					["timeline"] = { "removed 4.0.3" },	-- NOTE: Possibly added back the same time as the Ghostlands Mage quest was.
 					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 1, 10),
@@ -1031,7 +1034,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9586, {	-- Help Tavara
 					["qg"] = 17482,	-- Guvan
 					["coord"] = { 56.2, 48.4, AZUREMYST_ISLE },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 1, 5),
@@ -1042,7 +1045,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["cr"] = 17551,	-- Tavara
 						}),
 						i(23931, {	-- Azure Watch Robes
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),

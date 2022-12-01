@@ -1,7 +1,7 @@
 -- Reassign the pointer to the recipe function to automatically mark the removal date.
 local recipe = function(recipeID, t)
 	local o = recipe(recipeID, t);
-	o.timeline = { "removed 8.0.1.10000" };
+	o.timeline = { "removed 8.0.1" };
 	return o;
 end
 

@@ -833,46 +833,46 @@ root("WorldDrops", applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		-- #if BEFORE MOP
 		filter(THROWN, {
 			i(28535, {	-- Amani Throwing Axe
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(28540, {	-- Arakkoa Talon-Axe
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(28544, {	-- Assassin's Shuriken
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(28531, {	-- Barbed Shrike
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(28543, {	-- Dreghood Throwing Axe
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(28534, {	-- Fel Tipped Dart
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(28538, {	-- Forked Shuriken
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(28542, {	-- Heartseeker Knives
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(28536, {	-- Jagged Guillotine
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(28539, {	-- Razor-Edged Boomerang
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(28541, {	-- Sawshrike
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(28532, {	-- Silver Throwing Knifes
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(28537, {	-- Wildhammer Throwing Axe
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(28533, {	-- Wooden Boomerang
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 		}),
 		-- #endif

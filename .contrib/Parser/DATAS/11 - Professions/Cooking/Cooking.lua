@@ -22,7 +22,7 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Big Bear Steak",
-					["timeline"] = { "removed 4.0.3.10000", "timewalking 9.1" },
+					["timeline"] = { "removed 4.0.3", "timewalking 9.1" },
 					["recipeID"] = 3397
 				},
 				{
@@ -60,7 +60,7 @@ profession(COOKING, {
 				},
 				applyclassicphase(WRATH_PHASE_ONE, {
 					["name"] = "Clamlette Magnifique",
-					["timeline"] = { "added 3.1.0.10000" },
+					["timeline"] = { "added 3.1.0" },
 					["recipeID"] = 64054
 				}),
 				{
@@ -159,7 +159,7 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Goldthorn Tea",
-					["timeline"] = { "removed 6.0.1.10000" },
+					["timeline"] = { "removed 6.0.1" },
 					["recipeID"] = 13028
 				},
 				{
@@ -213,12 +213,12 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Lean Venison",
-					["timeline"] = { "removed 4.0.3.10000", "timewalking 9.1" },
+					["timeline"] = { "removed 4.0.3", "timewalking 9.1" },
 					["recipeID"] = 6419
 				},
 				{
 					["name"] = "Lean Wolf Steak",
-					["timeline"] = { "removed 5.0.4.10000", "timewalking 9.1" },
+					["timeline"] = { "removed 5.0.4", "timewalking 9.1" },
 					["recipeID"] = 15853
 				},
 				-- #if AFTER WOD
@@ -386,7 +386,7 @@ profession(COOKING, {
 				},
 				applyclassicphase(CATA_PHASE_ONE, {
 					["name"] = "Venison Jerky",
-					["timeline"] = { "added 4.0.1.10000" },
+					["timeline"] = { "added 4.0.1" },
 					["recipeID"] = 93741
 				}),
 				{
@@ -486,12 +486,12 @@ profession(COOKING, {
 			["groups"] = {
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Captain Rumsey's Lager",
-					["timeline"] = { "added 2.4.0.10000" },
+					["timeline"] = { "added 2.4.0" },
 					["recipeID"] = 45695
 				}),
 				applyclassicphase(PHASE_FIVE, {
 					["name"] = "Dirge's Kickin' Chimaerok Chops",
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["recipeID"] = 25659,
 				}),
 				{
@@ -596,7 +596,7 @@ profession(COOKING, {
 		},
 		{
 			["name"] = "Sporeling Snack",
-			["timeline"] = { "removed 4.2.0.10000" },
+			["timeline"] = { "removed 4.2.0" },
 			["recipeID"] = 33285
 		},
 		applyclassicphase(TBC_PHASE_TWO, {
@@ -2569,12 +2569,12 @@ un(REMOVED_FROM_GAME, itemrecipe("Recipe: Thistle Tea", 7678, 9513));
 -- #if AFTER TBC
 -- TBC Recipes
 itemrecipe("Recipe: Bat Bites", 27687, 33278, TBC_PHASE_ONE, "added 2.0.1.6180");
-itemrecipe("Recipe: Charred Bear Kabobs", 35564, 46684, TBC_PHASE_ONE, "removed 4.1.0.10000");
+itemrecipe("Recipe: Charred Bear Kabobs", 35564, 46684, TBC_PHASE_ONE, "removed 4.1.0");
 itemrecipe("Recipe: Crunchy Spider Surprise", 22647, 28267, TBC_PHASE_ONE, "added 2.0.1.6180");
-itemrecipe("Recipe: Juicy Bear Burger", 35566, 46688, TBC_PHASE_ONE, "removed 4.1.0.10000");
+itemrecipe("Recipe: Juicy Bear Burger", 35566, 46688, TBC_PHASE_ONE, "removed 4.1.0");
 itemrecipe("Recipe: Lynx Steak", 27685, 33276, TBC_PHASE_ONE, "added 2.0.1.6180");
 itemrecipe("Recipe: Roasted Moongraze Tenderloin", 27686, 33277, TBC_PHASE_ONE, "added 2.0.1.6180");
-itemrecipe("Recipe: Sporeling Snack", 27689, 33285, TBC_PHASE_ONE, "removed 4.2.0.10000");
+itemrecipe("Recipe: Sporeling Snack", 27689, 33285, TBC_PHASE_ONE, "removed 4.2.0");
 applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Hot Apple Cider", 34413, 45022, true, "added 2.3.0.7501"));
 
 itemrecipe("Recipe: Buzzard Bites", 27684, 33279, TBC_PHASE_ONE);

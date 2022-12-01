@@ -583,7 +583,7 @@ root("Zones", m(KALIMDOR, {
 								-- #endif
 							},
 							["classes"] = { MAGE },
-							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3.10000" },
+							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 						}),
 						q(31162, {	-- The Arts of a Monk
 							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
@@ -1030,7 +1030,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 			}))),
 			-- #endif
-			n(FLIGHT_PATHS, bubbleDown({ ["timeline"] = { "added 4.0.3.10000" } }, {
+			n(FLIGHT_PATHS, bubbleDown({ ["timeline"] = { "added 4.0.3" } }, {
 				fp(537, {	-- Razor Hill
 					["coord"] = { 53.0, 43.6, DUROTAR },
 				}),
@@ -1044,14 +1044,14 @@ root("Zones", m(KALIMDOR, {
 					["qg"] = 6786,	-- Ukor
 					["coord"] = { 52.05, 68.31, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Ukor's Burden
 							["provider"] = { "i", 7629 },
 						}),
 					},
 				}),
-				q(818, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- A Solvent Spirit
+				q(818, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3" } }, {	-- A Solvent Spirit
 					["qg"] = 3304,	-- Master Vornal
 					["coord"] = { 55.95, 74.39, DUROTAR },
 					["races"] = HORDE_ONLY,
@@ -1106,7 +1106,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 49.6, 50.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3" },
 				}),
 				q(25648, {	-- Beyond Durotar
 					["qg"] = 39379,	-- Gor the Enforcer
@@ -1126,7 +1126,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 51.11, 42.45, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/3 Taillasher Egg
 							["provider"] = { "i", 4890 },	-- Taillasher Egg
@@ -1154,7 +1154,7 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(1843, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Brutal Gauntlets
+				q(1843, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Brutal Gauntlets
 					["qg"] = 6408,	-- Ula'elek
 					["sourceQuest"] = 1842,	-- Satyr Hooves
 					["coord"] = { 56.2, 74.4, DUROTAR },
@@ -1165,7 +1165,7 @@ root("Zones", m(KALIMDOR, {
 						i(7129),	-- Brutal Gauntlets
 					},
 				})),
-				q(794, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Burning Blade Medallion
+				q(794, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Burning Blade Medallion
 					["qg"] = 3145,	-- Zureetha Fargaze
 					["sourceQuests"] = {
 						792,	-- Vile Familiars
@@ -1191,7 +1191,7 @@ root("Zones", m(KALIMDOR, {
 					["cr"] = 3204,	-- Gazz'uz
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Eye of Burning Shadow
 							["provider"] = { "i", 4903 },	-- Eye of Burning Shadow
@@ -1217,7 +1217,7 @@ root("Zones", m(KALIMDOR, {
 						1519, -- Call to Earth (1/3 Mulgore)
 					},
 					["lvl"] = 4,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/2 Felstalker Hoof
 							["provider"] = { "i", 6640, 2 },	-- Felstalker Hoof
@@ -1235,14 +1235,14 @@ root("Zones", m(KALIMDOR, {
 						1520, -- Call to Earth (2/3 Mulgore)
 					},
 					["lvl"] = 4,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Earth Sapta
 							["provider"] = { "i", 6635, 1 },	-- Earth Sapta
 						}),
 					},
 				}),
-				q(1518, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Call of Earth (3/3)
+				q(1518, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Call of Earth (3/3)
 					["qg"] = 5891,	-- Minor Manifestation of Earth
 					["sourceQuest"] = 1517,	-- Call of Earth (2/3)
 					["coord"] = { 44.0, 76.0, DUROTAR },
@@ -1262,7 +1262,7 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				})),
-				q(791, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Carry Your Weight
+				q(791, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Carry Your Weight
 					["qg"] = 3147,	-- Furl Scornbrow
 					["coord"] = { 49.8, 40.4, DUROTAR },
 					["races"] = HORDE_ONLY,
@@ -1270,7 +1270,7 @@ root("Zones", m(KALIMDOR, {
 						{ "i", 4870, 8 },	-- Canvas Scraps
 					},
 					["lvl"] = 4,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/8 Canvas Scraps
 							["provider"] = { "i", 4870, 8 },	-- Canvas Scraps
@@ -1327,14 +1327,14 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 62.26, 19.37, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Signed Recruitment Letter
 							["provider"] = { "i", 4995 },	-- Signed Recruitment Letter
 						}),
 					},
 				}),
-				q(788, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10676", "removed 4.0.3.10000" } }, {	-- Cutting Teeth
+				q(788, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10676", "removed 4.0.3" } }, {	-- Cutting Teeth
 					["qg"] = 3143,	-- Gornek
 					["sourceQuest"] = 4641,	-- Your Place In The World
 					["coord"] = { 42.06, 68.33, DUROTAR },
@@ -1347,7 +1347,7 @@ root("Zones", m(KALIMDOR, {
 						i(4914),	-- Battleworn Leather Gloves
 					},
 				})),
-				q(806, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Dark Storms
+				q(806, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Dark Storms
 					["qg"] = 3142,	-- Orgnil Soulscar
 					["sourceQuest"] = 823,	-- Report to Orgnil
 					["coord"] = { 52.2, 43.2, DUROTAR },
@@ -1386,7 +1386,7 @@ root("Zones", m(KALIMDOR, {
 						i(129104),	-- Brand of the Banshee Queen
 					},
 				})),
-				q(1463, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Earth Sapta
+				q(1463, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Earth Sapta
 					["qg"] = 5887,	-- Canaga Earthcaller
 					["sourceQuest"] = 1516,	-- Call of Earth (1/3)
 					["coord"] = { 42.4, 69.0, DUROTAR },
@@ -1414,7 +1414,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 52, 43.4, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/4 Razormane Quilboar
 							["cr"] = 3111,	-- Razormane Quilboar
@@ -1436,7 +1436,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 42.06, 68.33, DUROTAR },
 					["races"] = { ORC },
 					["classes"] = { ROGUE },
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Encrypted Parchment
 							["provider"] = { "i", 9560, 1 },	-- Encrypted Parchment
@@ -1449,7 +1449,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 42.06, 68.33, DUROTAR },
 					["races"] = { TROLL },
 					["classes"] = { ROGUE },
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Encrypted Tablet
 							["provider"] = { "i", 9554, 1 },	-- Encrypted Tablet
@@ -1462,7 +1462,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 42.06, 68.33, DUROTAR },
 					["races"] = { ORC },
 					["classes"] = { HUNTER },
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Etched Parchment
 							["provider"] = { "i", 9553, 1 },	-- Etched Parchment
@@ -1475,7 +1475,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 42.06, 68.33, DUROTAR },
 					["races"] = { TROLL },
 					["classes"] = { HUNTER },
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Etched Tablet
 							["provider"] = { "i", 9564, 1 },	-- Etched Tablet
@@ -1497,7 +1497,7 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 40518,	-- The Battle for Broken Shore
 					["timeline"] = { "added 7.0.3.21655" },
 				}),
-				q(813, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Finding the Antidote
+				q(813, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3" } }, {	-- Finding the Antidote
 					["qg"] = 3189,	-- Kor'ghan
 					["coord"] = { 47, 53.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
@@ -1529,7 +1529,7 @@ root("Zones", m(KALIMDOR, {
 						i(131413),	-- Gor's Re-Inforced Gloves
 					},
 				})),
-				q(926, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Flawed Power Stone
+				q(926, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Flawed Power Stone
 					["provider"] = { "o", 5620 },	-- Flawed Power Stones
 					["coord"] = { 62.4, 20, THE_BARRENS },
 					["races"] = HORDE_ONLY,
@@ -1558,7 +1558,7 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(825, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- From The Wreckage....
+				q(825, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- From The Wreckage....
 					["qg"] = 3139,	-- Gar'Thok
 					["sourceQuest"] = 784,	-- Vanquish the Betrayers
 					["coord"] = { 52, 43.4, DUROTAR },
@@ -1578,7 +1578,7 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 788,	-- Cutting Teeth
 					["coord"] = { 42.73, 67.23, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/10 Cactus Apple
 							["provider"] = { "i", 11583, },	-- Cactus Apple
@@ -1594,9 +1594,9 @@ root("Zones", m(KALIMDOR, {
 						1478,	-- Halgar's Summons
 					},
 					["lvl"] = 10,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
-				q(5648, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Garments of Spirituality
+				q(5648, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Garments of Spirituality
 					["qg"] = 3706,	-- Tai'jin
 					["sourceQuest"] = 5649,	-- In Favor of Spirituality
 					["coord"] = { 54.2, 42.8, DUROTAR },
@@ -1637,7 +1637,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 42.0, 68.4, DUROTAR },
 					["classes"] = { MAGE },
 					["races"] = { TROLL },
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Glyphic Tablet
 							["provider"] = { "i", 9575, },	-- Glyphic Tablet
@@ -1662,7 +1662,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 42.0, 68.4, DUROTAR },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Hallowed Tablet
 							["provider"] = { "i", 9561, },	-- Hallowed Tablet
@@ -1700,7 +1700,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 42.4, 68.8, DUROTAR },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
 				q(7664, {	-- Ivory Raptor Replacement
 					["qg"] = 7952,	-- Zjolnir
@@ -1719,7 +1719,7 @@ root("Zones", m(KALIMDOR, {
 					["races"] = { PANDAREN_NEUTRAL },
 					["timeline"] = { "added 5.0.1.15589" },
 				}),
-				q(1884, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Ju-Ju Heaps
+				q(1884, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Ju-Ju Heaps
 					["qg"] = 5880,	-- Un'Thuwa <Mage Trainer>
 					["sourceQuests"] = {
 						1881,	-- Speak with Anastasia
@@ -1749,7 +1749,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 44.62, 68.65, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/5 Peons Awoken
 							["provider"] = { "i", 16114 },	-- Foreman's Blackjack
@@ -1775,7 +1775,7 @@ root("Zones", m(KALIMDOR, {
 				q(14088, {	-- Learn to Ride in Durotar
 					["provider"] = { "i", 46883 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Trolls in their Mailbox upon reaching the specified level.",
-					["timeline"] = { "added 3.3.0.10958", "removed 4.0.1.10000" },
+					["timeline"] = { "added 3.3.0.10958", "removed 4.0.1" },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1793,12 +1793,12 @@ root("Zones", m(KALIMDOR, {
 					["description"] = "Talk to an Injured Razor Hill Grunt on the beach.",
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(816, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Lost But Not Forgotten
+				q(816, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3" } }, {	-- Lost But Not Forgotten
 					["qg"] = 3193,	-- Misha Tor'kren
 					["coord"] = { 43.10, 30.24, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 8,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Kron's Amulet
 							["provider"] = { "i", 4891 },	-- Kron's Amulet
@@ -1847,7 +1847,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 52.2, 43.2, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
 				q(25261, {	-- Margoz
 					["qg"] = 39379,	-- Gor the Enforcer
@@ -1878,29 +1878,29 @@ root("Zones", m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(67154, {	-- Staff of the Unwelcome (CATA)
-							["timeline"] = { "added 4.0.3.13277", "removed 6.0.2.10000" },
+							["timeline"] = { "added 4.0.3.13277", "removed 6.0.2" },
 						}),
 						i(67157, {	-- Harness of Binding (CATA)
-							["timeline"] = { "added 4.0.3.13277", "removed 6.0.2.10000" },
+							["timeline"] = { "added 4.0.3.13277", "removed 6.0.2" },
 						}),
 						i(67156, {	-- Girdle of Servitude (CATA)
-							["timeline"] = { "added 4.0.3.13277", "removed 6.0.2.10000" },
+							["timeline"] = { "added 4.0.3.13277", "removed 6.0.2" },
 						}),
 						i(118217, {	-- Staff of Dubious Pacts (WOD)
-							["timeline"] = { "added 6.0.2.10000" },
+							["timeline"] = { "added 6.0.2" },
 						}),
 						i(118219, {	-- Harness of Forward Directions (WOD)
-							["timeline"] = { "added 6.0.2.10000" },
+							["timeline"] = { "added 6.0.2" },
 						}),
 						i(118218, {	-- Girdle of Common Causes (WOD)
-							["timeline"] = { "added 6.0.2.10000" },
+							["timeline"] = { "added 6.0.2" },
 						}),
 						i(131898, {	-- Chestguard of Forward Directions (LEGION)
-							["timeline"] = { "added 7.0.3.10000" },
+							["timeline"] = { "added 7.0.3" },
 						}),
 					},
 				}),
-				q(808, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Minshina's Skull
+				q(808, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3" } }, {	-- Minshina's Skull
 					["qg"] = 3188,	-- Master Gadrin
 					["sourceQuest"] = 805,	-- Report to Sen'jin Village
 					["coord"] = { 55.95, 74.72, DUROTAR },
@@ -1914,7 +1914,7 @@ root("Zones", m(KALIMDOR, {
 						i(4945),	-- Faintly Glowing Skull
 					},
 				})),
-				q(812, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Need for a Cure
+				q(812, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Need for a Cure
 					["qg"] = 3190,	-- Rhinag
 					["coord"] = { 41.54, 18.61, DUROTAR },
 					["races"] = HORDE_ONLY,
@@ -1933,7 +1933,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 56.41, 20.05, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Example Collar
 							["provider"] = { "i", 6658 },	-- Example Collar
@@ -1958,7 +1958,7 @@ root("Zones", m(KALIMDOR, {
 					["cr"] = 3121,	-- Durotar Tiger
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/4 Durotar Tiger Fur
 							["provider"] = { "i", 4892 },	-- Durotar Tiger Fur
@@ -2028,7 +2028,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 56, 74.6, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
 				q(26806, {	-- Reports to Orgrimmar
 					["qg"] = 3139,	-- Gar'Thok
@@ -2054,7 +2054,7 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 794,	-- Burning Blade Medallion
 					["coord"] = { 42.8, 69, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
 				q(25171, {	-- Riding On
 					["qg"] = 3188,	-- Master Gadrin
@@ -2087,7 +2087,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 42.06, 68.33, DUROTAR },
 					["races"] = { ORC },
 					["classes"] = { SHAMAN },
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Rune-Inscribed Parchment
 							["provider"] = { "i", 9568 },	-- Rune-Inscribed Parchment
@@ -2100,7 +2100,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 42.06, 68.33, DUROTAR },
 					["races"] = { TROLL },
 					["classes"] = { SHAMAN },
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Rune-Inscribed Tablet
 							["provider"] = { "i", 9562 },	-- Rune-Inscribed Tablet
@@ -2111,7 +2111,7 @@ root("Zones", m(KALIMDOR, {
 					["qg"] = 3287,	-- Hana'zua
 					["coord"] = { 40.60, 62.60, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Sarkoth's Mangled Claw
 							["provider"] = { "i", 4905 },	-- Sarkoth's Mangled Claw
@@ -2125,7 +2125,7 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 790,	-- Sarkoth (1/2)
 					["coord"] = { 40.60, 62.60, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
 				q(1842, {	-- Satyr Hooves
 					["qg"] = 6408,	-- Ula'elek
@@ -2135,7 +2135,7 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/7 Uncloven Satyr Hoof
 							["provider"] = { "i", 7128 },	-- Uncloven Satyr Hoof
@@ -2207,7 +2207,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 42.06, 68.33, DUROTAR },
 					["races"] = { ORC },
 					["classes"] = { WARRIOR },
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Simple Parchment
 							["provider"] = { "i", 12635 },	-- Simple Parchment
@@ -2220,7 +2220,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 42.06, 68.33, DUROTAR },
 					["races"] = { TROLL },
 					["classes"] = { WARRIOR },
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Simple Tablet
 							["provider"] = { "i", 6488 },	-- Simple Tablet
@@ -2242,13 +2242,13 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(827, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Skull Rock
+				q(827, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Skull Rock
 					["qg"] = 3208,	-- Margoz
 					["sourceQuest"] = 828,	-- Margoz
 					["coord"] = { 56.41, 20.05, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/6 Searing Collar
 							["provider"] = { "i", 4871 },	-- Searing Collar
@@ -2302,9 +2302,9 @@ root("Zones", m(KALIMDOR, {
 					["altQuests"] = { 1881 },	-- Speak with Anastasia
 					["lvl"] = 10,
 					["isBreadcrumb"] = true,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
-				q(789, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Sting of the Scorpid
+				q(789, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Sting of the Scorpid
 					["qg"] = 3143,	-- Gornek
 					["sourceQuest"] = 788,	-- Cutting Teeth
 					["coord"] = { 42.06, 68.33, DUROTAR },
@@ -2342,7 +2342,7 @@ root("Zones", m(KALIMDOR, {
 					["cost"] = {
 						{ "i", 9579, 1 },	-- Tainted Parchment
 					},
-					["timeline"] = { "added 1.11.1.10772", "removed 7.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 7.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Tainted Parchment
 							["provider"] = { "i", 9579 },	-- Tainted Parchment
@@ -2360,7 +2360,7 @@ root("Zones", m(KALIMDOR, {
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.1.10000" },
+					["timeline"] = { "added 1.11.1.10958", "removed 4.0.1" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Taming Rod
 							["provider"] = { "i", 15917 },	-- Taming Rod
@@ -2374,7 +2374,7 @@ root("Zones", m(KALIMDOR, {
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.1.10000" },
+					["timeline"] = { "added 1.11.1.10958", "removed 4.0.1" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Taming Rod
 							["provider"] = { "i", 15917 },	-- Taming Rod
@@ -2388,7 +2388,7 @@ root("Zones", m(KALIMDOR, {
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Taming Rod
 							["provider"] = { "i", 15920 },	-- Taming Rod
@@ -2416,7 +2416,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 44.62, 68.65, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Thazz'ril's Pick
 							["provider"] = { "i", 16332},
@@ -2428,7 +2428,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "i", 4881 },	-- Aged Envelope
 					["coord"] = { 59.26, 57.65, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Admiral Proudmoore's Orders
 							["provider"] = { "i", 4883 },	-- Admiral Proudmoore's Orders
@@ -2440,7 +2440,7 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 830,	-- The Admiral's Orders
 					["coord"] = { 52, 43.4, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/1 Admiral Proudmoore's Orders
 							["provider"] = { "i", 4883 },	-- Admiral Proudmoore's Orders
@@ -2485,7 +2485,7 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(924, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.1.0.10000" } }, {	-- The Demon Seed
+				q(924, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.1.0" } }, {	-- The Demon Seed
 					["qg"] = 3521,	-- Ak'Zeloth
 					["sourceQuest"] = 809,	-- Ak'Zeloth
 					["coord"] = { 62.4, 20, THE_BARRENS },
@@ -2513,7 +2513,7 @@ root("Zones", m(KALIMDOR, {
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
 					["lvl"] = 10,
-					["timeline"] = { "added 1.11.1.11159", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.11159", "removed 4.0.3" },
 				}),
 				q(6069, {	-- The Hunter's Path [Durotar]
 					["qg"] = 11814,	-- Kali Remik
@@ -2522,7 +2522,7 @@ root("Zones", m(KALIMDOR, {
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
 					["lvl"] = 10,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3" },
 				}),
 				q(6070, {	-- The Hunter's Path [Thunder Bluff]
 					["qg"] = 3038,	-- Kary Thunderhorn <Hunter Trainer>
@@ -2531,7 +2531,7 @@ root("Zones", m(KALIMDOR, {
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
 					["lvl"] = 10,
-					["timeline"] = { "added 1.11.1.11159", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.11159", "removed 4.0.3" },
 				}),
 				q(1859, {	-- Therzok
 					["qg"] = 3170,	-- Kaplak
@@ -2540,7 +2540,7 @@ root("Zones", m(KALIMDOR, {
 					["classes"] = { ROGUE },
 					["isBreadcrumb"] = true,
 					["lvl"] = 10,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
 				q(39801, bubbleDownSelf({ ["timeline"] = { "added 7.0.1.20756" } }, {	-- The Splintered Fleet
 					["sourceQuest"] = 39698,	-- Making the Rounds
@@ -2587,7 +2587,7 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 25196,	-- The Dranosh'ar Blockade
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(786, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" } }, {	-- Thwarting Kolkar Aggression
+				q(786, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3" } }, {	-- Thwarting Kolkar Aggression
 					["qg"] = 3140,	-- Lar Prowltusk
 					--["sourceQuest"] = 785,	-- A Strategic Alliance [didn't make it into Classic]
 					["coord"] = { 54.52, 75.20, DUROTAR },
@@ -2627,7 +2627,7 @@ root("Zones", m(KALIMDOR, {
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3" },
 					["groups"] = {
 						recipe(6991),		-- Feed Pet
 						recipe(982),		-- Revive Pet
@@ -2640,7 +2640,7 @@ root("Zones", m(KALIMDOR, {
 					["classes"] = { ROGUE },
 					["isBreadcrumb"] = true,
 					["lvl"] = 16,
-					["timeline"] = { "added 1.12.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.12.1.10772", "removed 4.0.3" },
 				}),
 				q(47867, {	-- Two If By Sea
 					["qg"] = 122065,	-- Lady Liadrin
@@ -2664,7 +2664,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 52, 43.4, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/10 Kul Tiras Sailor
 							["cr"] = 3128,	-- Kul Tiras Sailor
@@ -2677,13 +2677,13 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(792, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Vile Familiars
+				q(792, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Vile Familiars
 					["qg"] = 3145,	-- Zureetha Fargaze
 					["coord"] = { 42.85, 69.14, DUROTAR },
 					["classes"] = exclude(WARLOCK, ALL_CLASSES),
 					["races"] = HORDE_ONLY,
 					["lvl"] = 2,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/12 Vile Familiar
 							["cr"] = 3101,	-- Vile Familiar
@@ -2694,12 +2694,12 @@ root("Zones", m(KALIMDOR, {
 						i(5778),	-- Primitive Walking Stick
 					},
 				})),
-				q(1485, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" } }, {	-- Vile Familiars (Part 1 - Warlocks only!)
+				q(1485, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Vile Familiars (Part 1 - Warlocks only!)
 					["qg"] = 5765,	-- Ruzan
 					["coord"] = { 42.6, 69.0, DUROTAR },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 					["groups"] = {
 						objective(1, {	-- 0/8 Vile Familiar Head
 							["provider"] = { "i", 6487 },	-- Vile Familiar Head
@@ -2714,7 +2714,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 42.6, 69.0, DUROTAR },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
 				q(25188, {	-- Watershed Patrol
 					["qg"] = 39323,	-- Gail Nozzywig
@@ -2749,9 +2749,9 @@ root("Zones", m(KALIMDOR, {
 					["altQuests"] = { 787 },	-- The New Horde
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
 				}),
-				q(826, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.1.10000" } }, {	-- Zalazane
+				q(826, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.1" } }, {	-- Zalazane
 					["qg"] = 3188,	-- Master Gadrin
 					["sourceQuest"] = 805,	-- Report to Sen'jin Village
 					["coord"] = { 55.95, 74.72, DUROTAR },
@@ -2817,7 +2817,7 @@ root("Zones", m(KALIMDOR, {
 						{ 48.2, 78.2, DUROTAR },
 						{ 49.6, 80.6, DUROTAR },
 					},
-					["timeline"] = { "added 1.11.1.7272", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.7272", "removed 4.0.3" },
 				}),
 				n(5809, {	-- Watch Commander Zalaphil
 					["coord"] = { 59.6, 59.0, DUROTAR },

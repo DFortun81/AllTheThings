@@ -85,7 +85,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 						-- #if BEFORE MOP
 						i(28296, {	-- Libram of the Lightbringer
-							["timeline"] = { "removed 5.0.4.10000" },
+							["timeline"] = { "removed 5.0.4" },
 						}),
 						-- #endif
 						i(28769),	-- The Keystone
@@ -216,7 +216,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							-- #if BEFORE MOP
 							i(28296, {	-- Libram of the Lightbringer
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 							i(28769),	-- The Keystone

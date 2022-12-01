@@ -25,7 +25,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			n(QUESTS, {
 				q(27355, {	-- A Boon for the Powerful
 					["sourceQuest"] = 27272,	-- Demisette Sends Word [CATA] / A Message From Evelyn Thorn [SL+]
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 8, 20),
@@ -93,7 +93,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 79.4, 69.0, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 8, 20),
@@ -123,7 +123,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					-- #else
 					["coord"] = { 73.8, 45.6, ORGRIMMAR },
 					-- #endif
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 8, 20),
@@ -190,7 +190,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				q(27272, {	-- A Message From Evelyn Thorn [SL+] / Demisette Sends Word [CATA]
 					["qg"] = 5173,	-- Alexander Calder
 					["coord"] = { 50.2, 6.8, IRONFORGE },
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -394,7 +394,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 43.8, 78.8, DARNASSUS },
 						{ 55.0, 30.2, IRONFORGE },
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -422,7 +422,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				q(27920, {	-- Armored to the Teeth
 					["qg"] = 47006,	-- Packleader Ivar Bloodfang
 					["sourceQuest"] = 27917,	-- Sniffing Them Out
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(16, 8, 16),
 					["groups"] = {
@@ -480,7 +480,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 				q(27353, {	-- Blessings of the Elements
 					["sourceQuest"] = 27270,	-- An Audience with the Farseer [CATA] / An Audience with Mulric [SL+]
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 8, 20),
@@ -545,7 +545,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["isBreadcrumb"] = true,
@@ -568,7 +568,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				q(27272, {	-- Demisette Sends Word [CATA] / A Message From Evelyn Thorn [SL+]
 					["qg"] = 5173,	-- Alexander Calder
 					["coord"] = { 50.2, 6.8, IRONFORGE },
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -634,7 +634,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 7999,	-- Tyrande Whisperwind
 					["sourceQuest"] = 27269,	-- The Temple of the Moon
 					["coord"] = { 43.0, 77.8, DARNASSUS },
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
 					["lvl"] = lvlsquish(20, 8, 20),
@@ -663,7 +663,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					-- #else
 					["coord"] = { 49.6, 44.8, STORMWIND_CITY },
 					-- #endif
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(20, 8, 20),
@@ -683,7 +683,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				q(27921, {	-- Fighting Tooth and Claw
 					["qg"] = 47006,	-- Packleader Ivar Bloodfang
 					["sourceQuest"] = 27920,	-- Armored to the Teeth
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(16, 8, 16),
 					["groups"] = {
@@ -702,7 +702,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 63.2, 79.8, THUNDER_BLUFF },	-- Aponi Brightmane
 						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
@@ -735,7 +735,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				q(27968, {	-- Fury of the Pack
 					["qg"] = 47006,	-- Packleader Ivar Bloodfang
 					["sourceQuest"] = 27921,	-- Fighting Tooth and Claw
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(16, 8, 16),
 					["groups"] = {
@@ -859,7 +859,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { BLOODELF },
 					["isBreadcrumb"] = true,
@@ -879,7 +879,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
@@ -898,7 +898,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
@@ -917,7 +917,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["isBreadcrumb"] = true,
@@ -936,7 +936,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["isBreadcrumb"] = true,
@@ -1103,7 +1103,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 63.2, 79.8, THUNDER_BLUFF },	-- Aponi Brightmane
 						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
@@ -1113,7 +1113,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				q(27996, {	-- Orders Are For the Living
 					["qg"] = 47293,	-- Deathstalker Commander Belmont
 					["sourceQuest"] = 27988,	-- Plague...Plague Everywhere!
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(16, 8, 16),
 					["groups"] = {
@@ -1161,7 +1161,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				q(27988, {	-- Plague...Plague Everywhere!
 					["qg"] = 47293,	-- Deathstalker Commander Belmont
 					["sourceQuests"] = { 27974 },	-- This Land is Our Land
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(16, 8, 16),
 					["groups"] = {
@@ -1187,7 +1187,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
@@ -1205,7 +1205,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 63.2, 79.8, THUNDER_BLUFF },	-- Aponi Brightmane
 						{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["isBreadcrumb"] = true,
@@ -1225,7 +1225,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["isBreadcrumb"] = true,
@@ -1234,7 +1234,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				-- #endif
 				q(27917, {	-- Sniffing Them Out
 					["qg"] = 47006,	-- Packleader Ivar Bloodfang
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(16, 8, 16),
 					["groups"] = {
@@ -1274,7 +1274,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				q(27998, {	-- Sweet, Merciless Revenge
 					["qg"] = 47293,	-- Deathstalker Commander Belmont
 					["sourceQuest"] = 27988,	-- Plague...Plague Everywhere!
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(16, 8, 16),
 					["groups"] = {
@@ -1489,7 +1489,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 22.2, 19.0, THUNDER_BLUFF },
 						{ 22.0, 18.8, THUNDER_BLUFF },
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1507,7 +1507,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 22.2, 19.0, THUNDER_BLUFF },
 						{ 22.0, 18.8, THUNDER_BLUFF },
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1584,7 +1584,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 22.2, 19.0, THUNDER_BLUFF },
 						{ 22.0, 18.8, THUNDER_BLUFF },
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1605,7 +1605,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
@@ -1657,7 +1657,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 43.4, 79.2, DARNASSUS },	-- Priestess Alathea
 						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { NIGHTELF },
 					["isBreadcrumb"] = true,
@@ -1665,7 +1665,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 				q(27974, {	-- This Land is Our Land
 					["qg"] = 47293,	-- Deathstalker Commander Belmont
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(16, 8, 16),
 					["groups"] = {
@@ -1690,7 +1690,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					-- #else
 					["coord"] = { 53.5, 49.6, ORGRIMMAR },
 					-- #endif
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(20, 8, 20),
@@ -1838,10 +1838,10 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				o(182011, {	-- Crate of Ingots
-					["timeline"] = { "added 2.2.0.7272", "removed 4.0.3.10000" },
+					["timeline"] = { "added 2.2.0.7272", "removed 4.0.3" },
 					["groups"] = {
 						i(24224, {	-- Crate of Bloodforged Ingots
-							["timeline"] = { "added 2.2.0.7272", "removed 4.0.3.10000" },
+							["timeline"] = { "added 2.2.0.7272", "removed 4.0.3" },
 						}),
 					},
 				}),

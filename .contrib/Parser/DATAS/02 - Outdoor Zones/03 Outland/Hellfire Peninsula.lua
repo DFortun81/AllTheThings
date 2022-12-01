@@ -45,23 +45,23 @@ local JEWELCRAFTING_PATTERNS = {
 local VENDOR_GEMS = {
 	i(28458),	-- Bold Tourmaline (Both)
 	i(28462, {	-- Bright Tourmaline (TBC) / Delicate Tourmaline (Cata+)
-		["timeline"] = { "removed 4.0.1.10000" },
+		["timeline"] = { "removed 4.0.1" },
 	}),
 	i(28459),	-- Delicate Tourmaline (Both)
 	i(28461),	-- Runed Tourmaline (TBC) / Brilliant Tourmaline (Cata+)
 	i(28460, {	-- Teardrop Tourmaline (TBC) / Brilliant Tourmaline (Cata+)
-		["timeline"] = { "removed 4.0.1.10000" },
+		["timeline"] = { "removed 4.0.1" },
 	}),
 	i(28465, {	-- Lustrous Zircon (TBC) / Sparkling Zircon (Cata+)
-		["timeline"] = { "removed 4.0.1.10000" },
+		["timeline"] = { "removed 4.0.1" },
 	}),
 	i(28463),	-- Solid Zircon (Both)
 	i(28464),	-- Sparkling Zircon (Both)
 	i(28466, {	-- Brilliant Amber (TBC) / Brilliant Tourmaline (Cata+)
-		["timeline"] = { "removed 4.0.1.10000" },
+		["timeline"] = { "removed 4.0.1" },
 	}),
 	i(28469, {	-- Gleaming Amber (TBC) / Smooth Amber (Cata+)
-		["timeline"] = { "removed 4.0.1.10000" },
+		["timeline"] = { "removed 4.0.1" },
 	}),
 	i(28468),	-- Rigid Amber (Both)
 	i(28467),	-- Smooth Amber (Both)
@@ -418,7 +418,7 @@ root("Zones", {
 					q(9442, {	-- A Debilitating Sickness
 						["qg"] = 17123,	-- Earthcaller Ryga
 						["sourceQuest"] = 9441,	-- Envoy to the Mag'har
-						["timeline"] = { "removed 4.0.3.10000" },
+						["timeline"] = { "removed 4.0.3" },
 						["cost"] = {
 							{ "i", 23753, 1 },	-- Drycap Mushroom
 						},
@@ -502,7 +502,7 @@ root("Zones", {
 							}),
 						},
 					}),
-					q(9447, bubbleDown({ ["timeline"] = { "removed 4.0.3.10000" } }, {	-- Administering the Salve
+					q(9447, bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {	-- Administering the Salve
 						["qg"] = 17123,	-- Earthcaller Ryga
 						["sourceQuest"] = 9442,	-- A Debilitating Sickness
 						["coord"] = { 32.1, 28.4, HELLFIRE_PENINSULA },
@@ -867,13 +867,13 @@ root("Zones", {
 							i(28063),	-- Survivalist's Wand
 							-- #if BEFORE MOP
 							i(28064, {	-- Idol of the Wild
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(28065, {	-- Libram of Wracking
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(28066, {	-- Totem of Lightning
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 						},
@@ -1087,10 +1087,10 @@ root("Zones", {
 						["qg"] = 4949,	-- Thrall
 						["sourceQuest"] = 9438,	-- Messenger to Thrall
 						["coord"] = { 31.6, 37.8, ORGRIMMAR },
-						["timeline"] = { "removed 4.0.3.10000" },
+						["timeline"] = { "removed 4.0.3" },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 10, 60),
-						-- #if BEFORE 4.0.3.10000
+						-- #if BEFORE 4.0.3
 						["groups"] = {
 							i(25510),	-- Ceremonial Robes
 							i(25512),	-- Tribal Hauberk
@@ -1840,7 +1840,7 @@ root("Zones", {
 						["qg"] = 3230,	-- Nazgrel
 						["sourceQuest"] = 9406,	-- The Mag'har
 						["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
-						["timeline"] = { "removed 4.0.3.10000" },
+						["timeline"] = { "removed 4.0.3" },
 						["cost"] = {
 							{ "i", 23662, 1 },	-- Letter from Nazgrel
 						},
@@ -2461,7 +2461,7 @@ root("Zones", {
 						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 10, 60),
-						-- #if AFTER 4.0.3.10000
+						-- #if AFTER 4.0.3
 						["groups"] = {
 							i(25510),	-- Ceremonial Robes
 							i(25512),	-- Tribal Hauberk
@@ -2627,7 +2627,7 @@ root("Zones", {
 					q(10119, {	-- Through the Dark Portal [Alliance]
 						["qg"] = 16841,	-- Watch Commander Relthorn Netherwane
 						["coord"] = { 54.7, 50.5, BLASTED_LANDS },
-						["timeline"] = { "removed 6.0.3.10000" },
+						["timeline"] = { "removed 6.0.3" },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 10, 58),
@@ -2635,7 +2635,7 @@ root("Zones", {
 					q(9407, {	-- Through the Dark Portal [Horde]
 						["qg"] = 19254,	-- Warlord Dar'toon
 						["coord"] = { 54.4, 50.5, BLASTED_LANDS },
-						["timeline"] = { "removed 6.0.3.10000" },
+						["timeline"] = { "removed 6.0.3" },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 10, 58),
@@ -3128,7 +3128,7 @@ root("Zones", {
 						["groups"] = {
 							i(23999),	-- Honor Hold Tabard
 							i(30622, {	-- Flamewrought Key
-								["timeline"] = { "removed 4.2.0.10000" },
+								["timeline"] = { "removed 4.2.0" },
 								["races"] = ALLIANCE_ONLY,
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
@@ -3154,7 +3154,7 @@ root("Zones", {
 								-- #endif
 							}),
 							i(32883, {	-- Felbane Slugs
-								["timeline"] = { "removed 4.0.1.10000" },
+								["timeline"] = { "removed 4.0.1" },
 							}),
 							i(29196, {	-- Glyph of Fire Warding
 								["timeline"] = { "removed 5.0.4" },
@@ -3200,7 +3200,7 @@ root("Zones", {
 								["requireSkill"] = LEATHERWORKING,
 							}),
 							applyclassicphase(TBC_PHASE_THREE, i(34218, {	-- Pattern: Netherscale Ammo Pouch
-								["timeline"] = { "removed 4.0.1.10000" },
+								["timeline"] = { "removed 4.0.1" },
 							})),
 							i(23619),	-- Plans: Felsteel Shield Spike (RECIPE!)
 							i(22905),	-- Recipe: Elixir of Major Agility
@@ -3242,7 +3242,7 @@ root("Zones", {
 						["groups"] = {
 							i(24004),	-- Thrallmar Tabard
 							i(30637, {	-- Flamewrought Key
-								["timeline"] = { "removed 4.2.0.10000" },
+								["timeline"] = { "removed 4.2.0" },
 								["races"] = HORDE_ONLY,
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
@@ -3274,7 +3274,7 @@ root("Zones", {
 								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(32882, {	-- Hellfire Shot
-								["timeline"] = { "removed 4.0.1.10000" },
+								["timeline"] = { "removed 4.0.1" },
 							}),
 							i(29168),	-- Ancestral Band
 							i(29167),	-- Blackened Spear
@@ -3315,7 +3315,7 @@ root("Zones", {
 								["requireSkill"] = LEATHERWORKING,
 							}),
 							applyclassicphase(TBC_PHASE_THREE, i(34201, {	-- Pattern: Netherscale Ammo Pouch
-								["timeline"] = { "removed 4.0.1.10000" },
+								["timeline"] = { "removed 4.0.1" },
 							})),
 							i(24002),	-- Plans: Felsteel Shield Spike (RECIPE!)
 							i(24001),	-- Recipe: Elixir of Major Agility

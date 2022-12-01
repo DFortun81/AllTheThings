@@ -752,7 +752,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					i(28528),	-- Moroes' Lucky Pocket Watch
 					-- #if BEFORE MOP
 					i(28568, {	-- Idol of the Avian Heart
-						["timeline"] = { "removed 5.0.4.10000" },
+						["timeline"] = { "removed 5.0.4" },
 					}),
 					-- #endif
 				},
@@ -773,7 +773,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					i(28517),	-- Boots of Foretelling
 					-- #if BEFORE MOP
 					i(28523, {	-- Totem of Healing Rains
-						["timeline"] = { "removed 5.0.4.10000" },
+						["timeline"] = { "removed 5.0.4" },
 					}),
 					-- #endif
 				},
@@ -809,7 +809,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(28590),	-- Ribbon of Sacrifice
 							-- #if BEFORE MOP
 							i(28592, {	-- Libram of Souls Redeemed
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 						},
@@ -939,7 +939,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					i(28785),	-- The Lightning Capacitor
 					-- #if BEFORE MOP
 					i(28659, {	-- Xavian Stiletto
-						["timeline"] = { "removed 5.0.4.10000" },
+						["timeline"] = { "removed 5.0.4" },
 					}),
 					-- #endif
 				},

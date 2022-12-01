@@ -126,7 +126,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						-- #if BEFORE MOP
 						i(27631, {	-- Needle Shrike
-							["timeline"] = { "removed 5.0.4.10000" },
+							["timeline"] = { "removed 5.0.4" },
 						}),
 						-- #endif
 						-- #if AFTER 7.3.5
@@ -145,7 +145,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 						-- #if BEFORE MOP
 						i(24413, {	-- Totem of the Thunderhead
-							["timeline"] = { "removed 5.0.4.10000" },
+							["timeline"] = { "removed 5.0.4" },
 						}),
 						-- #endif
 					},
@@ -282,7 +282,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27748),	-- Cassock of the Loyal
 							-- #if BEFORE MOP
 							i(27744, {	-- Idol of Ursoc
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 						},

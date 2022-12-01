@@ -130,7 +130,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				i(29672, {	-- Pattern: Flame Armor Kit
 					["cr"] = 20898,	-- Gargantuan Abyssal
-					["timeline"] = { "removed 5.0.4.10000" },
+					["timeline"] = { "removed 5.0.4" },
 				}),
 				i(23606, {	-- Plans: Felsteel Leggings
 					["cr"] = 20900,	-- Unchained Doombringer
@@ -156,7 +156,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(28384),	-- Outland Striders (7.3.5 - Also added to Dalliah, stayed on Zereketh as well.)
 						-- #if BEFORE MOP
 						i(28372, {	-- Idol of Feral Shadows
-							["timeline"] = { "removed 5.0.4.10000" },
+							["timeline"] = { "removed 5.0.4" },
 						}),
 						-- #endif
 					},
@@ -283,7 +283,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(28384),	-- Outland Striders (7.3.5 - Also added to Dalliah, stayed on Zereketh as well.)
 							-- #if BEFORE MOP
 							i(28372, {	-- Idol of Feral Shadows
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 						},

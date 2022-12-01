@@ -90,7 +90,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					i(28250),	-- Vestia's Pauldrons of Inner
 					-- #if BEFORE MOP
 					i(28248, {	-- Totem of the Void
-						["timeline"] = { "removed 5.0.4.10000" },
+						["timeline"] = { "removed 5.0.4" },
 					}),
 					-- #endif
 					i(72663, {	-- Blinding Fury
@@ -125,7 +125,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(28263),	-- Stellaris
 						-- #if BEFORE MOP
 						i(28258, {	-- Nethershrike
-							["timeline"] = { "removed 5.0.4.10000" },
+							["timeline"] = { "removed 5.0.4" },
 						}),
 						-- #endif
 						i(22920),	-- Recipe: Major Fire Protection Potion
@@ -223,7 +223,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(28263),	-- Stellaris
 							-- #if BEFORE MOP
 							i(28258, {	-- Nethershrike
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 							i(22920),	-- Recipe: Major Fire Protection Potion

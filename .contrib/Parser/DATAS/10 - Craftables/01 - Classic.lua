@@ -38,7 +38,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			applyclassicphase(PHASE_FOUR, i(20007)),	-- Mageblood Potion
 			-- #if BEFORE 5.0.4.10000
 			i(9036, {	-- Magic Resistance Potion
-				["timeline"] = { "removed 5.0.4.10000" },
+				["timeline"] = { "removed 5.0.4" },
 			}),
 			-- #endif
 			i(13446),	-- Major Healing Potion
@@ -53,7 +53,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(2456),	-- Minor Rejuvenation Potion
 			-- #if BEFORE 5.0.4.10000
 			i(3384, {	-- Minor Magic Resistance Potion
-				["timeline"] = { "removed 5.0.4.10000" },
+				["timeline"] = { "removed 5.0.4" },
 			}),
 			-- #endif
 			i(6052),	-- Nature Protection Potion
@@ -111,7 +111,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 		category(640, {	-- Flasks
 			-- #if BEFORE 5.0.4.10000
 			i(13513, {	-- Flask of Chromatic Resistance
-				["timeline"] = { "removed 5.0.4.10000" },
+				["timeline"] = { "removed 5.0.4" },
 			}),
 			-- #endif
 			i(13511),	-- Flask of Distilled Wisdom
@@ -541,7 +541,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(6038),	-- Giant Clam Scorcho
 			i(5527),	-- Goblin Deviled Clams
 			i(10841, {	-- Goldthorn Tea
-				["timeline"] = { "removed 6.0.1.10000" },
+				["timeline"] = { "removed 6.0.1" },
 			}),
 			i(3666),	-- Gooey Spider Cake
 			i(724),		-- Goretusk Liver Pie
@@ -556,10 +556,10 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(12212),	-- Jungle Stew
 			i(5472),	-- Kaldorei Spider Kabob
 			i(5480, {	-- Lean Venison
-				["timeline"] = { "removed 4.0.3.10000", "added 9.1" },
+				["timeline"] = { "removed 4.0.3", "added 9.1" },
 			}),
 			i(12209, {	-- Lean Wolf Steak
-				["timeline"] = { "removed 5.0.4.10000", "added 9.1" },
+				["timeline"] = { "removed 5.0.4", "added 9.1" },
 			}),
 			-- #if AFTER WOD
 			applyclassicphase(WOD_PHASE_ONE, i(126934)),	-- Lemon Herb Filet

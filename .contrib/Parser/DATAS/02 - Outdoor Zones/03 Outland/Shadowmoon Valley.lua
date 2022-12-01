@@ -1089,13 +1089,13 @@ root("Zones", {
 							i(30924),	-- Gloves of the High Magus
 							-- #if BEFORE MOP
 							i(31025, {	-- Idol of the Avenger
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(31033, {	-- Libram of Righteous Power
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(31031, {	-- Stormfury Totem
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 						},
@@ -2101,7 +2101,7 @@ root("Zones", {
 						["crs"] = { 19826 },  -- Dark Conclave Shadowmancer
 					}),
 					i(28276, {	-- Formula: Enchant Cloak - Greater Arcane Resistance (RECIPE!)
-						["timeline"] = { "added 2.0.1", "removed 5.0.4.10000" },
+						["timeline"] = { "added 2.0.1", "removed 5.0.4" },
 						["cr"] = 19796,	-- Eclipsion Archmage
 					}),
 					i(30756, {	-- Illidari Bane-Shard (A)

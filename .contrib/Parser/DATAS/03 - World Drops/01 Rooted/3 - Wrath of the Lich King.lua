@@ -821,46 +821,46 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		-- #if BEFORE MOP
 		filter(THROWN, {
 			i(36723, {	-- Clawed Shuriken
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(36721, {	-- Dragon's Teeth
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(36720, {	-- Flying Knives
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(36711, {	-- Forsaken Edge
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(36724, {	-- Frozen Throwing Blades
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(36712, {	-- Howling Throwing Knives
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(36719, {	-- Hunter's Scout
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(36718, {	-- Nexus Shrike
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(36722, {	-- Pyramid Throwing Star
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(36713, {	-- Reaching Star
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(36715, {	-- Runed Shuriken (TODO: May have never been implemented according to wowpedia)
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(36716, {	-- Threatening Darts
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(36714, {	-- Tuskarr's Piercers
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 			i(36717, {	-- Venture Co. Throwing Axe
-				["timeline"] = { "removed 5.0.4.10000", },
+				["timeline"] = { "removed 5.0.4", },
 			}),
 		}),
 		-- #endif

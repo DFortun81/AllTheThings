@@ -188,7 +188,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16240,	-- Arcanist Janeda
 					["sourceQuest"] = 9220,	-- War on Deatholme
 					["coord"] = { 54.8, 48.4, GHOSTLANDS },
-					["timeline"] = { "removed 7.3.5.10000" },	-- TODO: This is a guess based on prereq quest modifications in 7.3.5.
+					["timeline"] = { "removed 7.3.5" },	-- TODO: This is a guess based on prereq quest modifications in 7.3.5.
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(17, 1, 17),
 				}),
@@ -396,7 +396,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER LEGION
 						i(131245),	-- Scourge Lieutenant Breeches
 						i(156942, {	-- Spiky Legbone [This one was added in 7.3.5.]
-							["timeline"] = { "added 7.3.5.10000" },
+							["timeline"] = { "added 7.3.5" },
 						}),
 						-- #endif
 					},
@@ -547,7 +547,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16268,	-- Eralan <Poison Supplies>
 					["sourceQuest"] = 10372,	-- A Discreet Inquiry
 					["coord"] = { 47.2, 34.3, GHOSTLANDS },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["cost"] = {
 						{ "i", 5060, 1 },	-- Thieves' Tools
 					},
@@ -558,11 +558,11 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Pitted Gold Band
 							["provider"] = { "i", 23717 },	-- Pitted Gold Band
 							["description"] = "Use your lockpicking skill to open the Burial Chests.",
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 							["coord"] = { 63.8, 28.9, GHOSTLANDS },
 						}),
 						i(23921, {	-- Bulging Sack of Silver
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),
@@ -920,7 +920,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16268,	-- Eralan <Poison Supplies>
 					["sourceQuest"] = 9491,	-- Greed
 					["coord"] = { 47.2, 34.3, GHOSTLANDS },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(16, 1, 16),
@@ -928,14 +928,14 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Archeologist's Shrunken Head
 							["provider"] = { "i", 30503 },	-- Archeologist's Shrunken Head
 							["description"] = "Use your lockpicking skill to open the Primitive Chests.",
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 							["coord"] = { 75.6, 43.7, GHOSTLANDS },
 						}),
 						i(30504, {	-- Leafblade-dagger
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(30505, {	-- Ghostclaw Tunic
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),
@@ -1202,7 +1202,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						-- #if BEFORE MOP
 						i(29584, {	-- Throat Piercers
-							["timeline"] = { "removed 5.0.4.10000" },
+							["timeline"] = { "removed 5.0.4" },
 						}),
 						-- #endif
 					},

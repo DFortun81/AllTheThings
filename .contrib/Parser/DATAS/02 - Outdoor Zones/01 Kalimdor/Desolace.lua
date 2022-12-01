@@ -851,7 +851,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 				q(1370, {	-- Stealing Supplies
 					["qg"] = 5397,	-- Uthek the Wise
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
 						un(REMOVED_FROM_GAME, i(3464)),	-- Feathered Arrow
 						un(REMOVED_FROM_GAME, i(3465)),	-- Exploding Shot
@@ -865,7 +865,7 @@ root("Zones", m(KALIMDOR, {
 						i(32378, {	-- Silver Star [TBC]
 							["timeline"] = {
 								"added 2.0.1.5678",
-								"removed 4.0.3.10000",
+								"removed 4.0.3",
 							},
 						}),
 						-- #endif

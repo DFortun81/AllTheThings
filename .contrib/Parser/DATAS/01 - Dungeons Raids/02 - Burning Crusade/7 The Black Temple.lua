@@ -301,7 +301,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 							i(32261),	-- Band of the Abyssal Lord
 							-- #if BEFORE MOP
 							i(32257, {	-- Idol of the White Stag
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 						},
@@ -332,7 +332,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 							i(32325),	-- Rifle of the Stoic Guardian
 							-- #if BEFORE MOP
 							i(32326, {	-- Twisted Blades of Zarak
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 							i(32329),	-- Cowl of Benevolence
@@ -345,7 +345,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 							i(32510),	-- Softstep Boots of Tracking
 							-- #if BEFORE MOP
 							i(32330, {	-- Totem of Ancestral Guidance
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 						},
@@ -411,7 +411,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 							i(32366),	-- Shadowmaster's Boots
 							-- #if BEFORE MOP
 							i(32368, {	-- Tome of the Lightbringer
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 						},

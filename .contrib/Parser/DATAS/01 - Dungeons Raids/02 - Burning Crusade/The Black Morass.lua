@@ -98,7 +98,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 						i(27996),	-- Ring of Spiritual Precision
 						i(29675, {	-- Pattern: Arcane Armor Kit
-							["timeline"] = { "removed 5.0.4.10000" },
+							["timeline"] = { "removed 5.0.4" },
 						}),
 					},
 				}),
@@ -195,7 +195,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							i(27996),	-- Ring of Spiritual Precision
 							i(29675, {	-- Pattern: Arcane Armor Kit
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 						},
 					}),

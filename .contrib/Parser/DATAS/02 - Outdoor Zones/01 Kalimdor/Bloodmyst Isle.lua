@@ -335,7 +335,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(120951),	-- Protective Field Grips
 						-- #endif
 						i(26034, {	-- Protective Field Gloves
-							["timeline"] = { "removed 6.1.0.10000" },
+							["timeline"] = { "removed 6.1.0" },
 						}),
 						i(26022),	-- Researcher's Gloves
 						i(26008),	-- Scholar's Gloves
@@ -1128,7 +1128,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17614,	-- Huntress Kella Nightbow
 					["sourceQuest"] = 9632,	-- Newfound Allies
 					["coord"] = { 54.6, 53.9, AZUREMYST_ISLE },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { DARKSHORE },
 					["cost"] = { { "i", 23937, 1 } },	-- Letter of Introduction
 					["races"] = ALLIANCE_ONLY,

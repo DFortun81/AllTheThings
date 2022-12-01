@@ -1245,7 +1245,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ 48.6, 35.6, DARNASSUS },
 						{ 78.8, 45.6, STORMWIND_CITY },
 					},
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = exclude(DRAENEI, ALLIANCE_ONLY),
 					["classes"] = { WARRIOR },
 					["isBreadcrumb"] = true,
@@ -1254,7 +1254,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				applyclassicphase(TBC_PHASE_ONE, q(10371, {	-- Yorus Barleybrew (Draenei)
 					["qg"] = 16771,	-- Ahonan
 					["coord"] = { 55.0, 83.4, THE_EXODAR },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = { DRAENEI },
 					["classes"] = { WARRIOR },
 					["isBreadcrumb"] = true,

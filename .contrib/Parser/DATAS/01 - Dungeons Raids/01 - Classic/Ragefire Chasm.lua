@@ -535,10 +535,10 @@ root("Instances", tier(CLASSIC_TIER, {
 				},
 			}),
 			n(17830, {	-- Zelemar the Wrathful
-				["timeline"] = { "added 2.2.0.7272", "removed 4.0.3.10000" },
+				["timeline"] = { "added 2.2.0.7272", "removed 4.0.3" },
 				["groups"] = {
 					i(24225, {	-- Blood of the Wrathful
-						["timeline"] = { "added 2.2.0.7272", "removed 4.0.3.10000" },
+						["timeline"] = { "added 2.2.0.7272", "removed 4.0.3" },
 						["classes"] = { PALADIN },
 						["races"] = { BLOODELF },
 					}),

@@ -404,7 +404,7 @@ _.GroupFinder =
 		i(89613, {	-- Cache of Treasures
 			["timeline"] = {
 				"added 5.0.3.15851",
-				"removed 5.1.0.10000",
+				"removed 5.1.0",
 			},
 			["sym"] = {{"select","itemID",98133},{"pop"}},
 			-- ["g"] = {

@@ -259,11 +259,11 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					i(29997),	-- Band of the Ranger-General
 					i(30320, {	-- Bundle of Nether Spikes
 						["description"] = "Contains 6 stacks of Nether Spike arrows.",
-						["timeline"] = { "removed 4.0.1.10000" },
+						["timeline"] = { "removed 4.0.1" },
 						["cr"] = 21268,	-- Netherstrand Longbow
 						["groups"] = {
 							i(30319, {	-- Nether Spike
-								["timeline"] = { "removed 4.0.1.10000" },
+								["timeline"] = { "removed 4.0.1" },
 							}),
 						},
 					}),
@@ -275,7 +275,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					legendary(30313, 21274),	-- Staff of Disintegration
 					legendary(30311, 21272),	-- Warp Slicer
 					i(32896, {	-- Scroll of the Sun
-						["timeline"] = { "removed 4.0.3.10000" },	-- TODO: Determine exactly when to remove this.
+						["timeline"] = { "removed 4.0.3" },	-- TODO: Determine exactly when to remove this.
 						["groups"] = {
 							i(32897),	-- Mark of the Illidari
 						},

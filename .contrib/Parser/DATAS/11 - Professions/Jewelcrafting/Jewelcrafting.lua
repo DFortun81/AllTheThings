@@ -1,4 +1,4 @@
-local REMOVED_WITH_CATA = "removed 4.0.1.10000";
+local REMOVED_WITH_CATA = "removed 4.0.1";
 applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 	tier(CLASSIC_TIER, {
 		filter(FINGER_F, {
@@ -4152,17 +4152,17 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			["groups"] = {
 				{
 					["name"] = "Mighty Taladite Amplifier",
-					["timeline"] = { "removed 9.0.1.10000" },
+					["timeline"] = { "removed 9.0.1" },
 					["recipeID"] = 187493,
 				},
 				{
 					["name"] = "Savage Taladite Amplifier",
-					["timeline"] = { "removed 9.0.1.10000" },
+					["timeline"] = { "removed 9.0.1" },
 					["recipeID"] = 187517,
 				},
 				{
 					["name"] = "Taladite Amplifier",
-					["timeline"] = { "removed 9.0.1.10000" },
+					["timeline"] = { "removed 9.0.1" },
 					["recipeID"] = 170702,
 				},
 				{

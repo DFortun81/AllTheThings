@@ -1751,7 +1751,7 @@ root("Zones", {
 							i(31781),	-- Sha'tar Tabard
 							applyclassicphase(TBC_PHASE_TWO, i(35380)),	-- Stalker's Chain Spaulders
 							i(30634, {	-- Warpforged Key
-								["timeline"] = { "removed 4.2.0.10000" },
+								["timeline"] = { "removed 4.2.0" },
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
@@ -1883,11 +1883,11 @@ root("Zones", {
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							i(32883, {	-- Felbane Slugs
-								["timeline"] = { "removed 4.0.1.10000" },
+								["timeline"] = { "removed 4.0.1" },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							i(32882, {	-- Hellfire Shot
-								["timeline"] = { "removed 4.0.1.10000" },
+								["timeline"] = { "removed 4.0.1" },
 								["races"] = HORDE_ONLY,
 							}),
 							applyclassicphase(TBC_PHASE_THREE, i(34581, {	-- Mysterious Arrow
@@ -1923,7 +1923,7 @@ root("Zones", {
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
 							i(25720, {	-- Pattern: Heavy Knothide Leather
-								["timeline"] = { "removed 3.2.0.10000"},
+								["timeline"] = { "removed 3.2.0"},
 								["requireSkill"] = LEATHERWORKING,
 								["isLimited"] = true,
 								["f"] = RECIPES,
@@ -2282,11 +2282,11 @@ root("Zones", {
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							i(32883, {	-- Felbane Slugs
-								["timeline"] = { "removed 4.0.1.10000" },
+								["timeline"] = { "removed 4.0.1" },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							i(32882, {	-- Hellfire Shot
-								["timeline"] = { "removed 4.0.1.10000" },
+								["timeline"] = { "removed 4.0.1" },
 								["races"] = HORDE_ONLY,
 							}),
 							applyclassicphase(TBC_PHASE_THREE, i(34581, {	-- Mysterious Arrow

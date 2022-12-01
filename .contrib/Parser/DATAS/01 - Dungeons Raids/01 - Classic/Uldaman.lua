@@ -26,21 +26,21 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 2916,	-- Historian Karnik
 					["sourceQuest"] = 2977,	-- Return to Ironforge
 					["coord"] = { 77.2, 11.8, IRONFORGE },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 					["groups"] = {
 						applyclassicphase(TBC_PHASE_ONE, i(34418, {	-- Scrying Wand
 							["timeline"] = {
-								"added 2.3.0.10000",
-								"removed 4.0.3.10000",
+								"added 2.3.0",
+								"removed 4.0.3",
 							},
 						})),
 						-- #if BEFORE MOP
 						applyclassicphase(TBC_PHASE_ONE, i(34419, {	-- Thorium Flight Blade
 							["timeline"] = {
-								"added 2.3.0.10000",
-								"removed 4.0.3.10000",
+								"added 2.3.0",
+								"removed 4.0.3",
 							},
 						})),
 						-- #endif
@@ -50,21 +50,21 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 3978,	-- Sage Truthseeker
 					["sourceQuest"] = 2967,	-- Return to Thunder Bluff
 					["coord"] = { 34.4, 46.9, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 					["groups"] = {
 						applyclassicphase(TBC_PHASE_ONE, i(34421, {	-- Cave Crawler's Mail Treads
 							["timeline"] = {
-								"added 2.3.0.10000",
-								"removed 4.0.3.10000",
+								"added 2.3.0",
+								"removed 4.0.3",
 							},
 						})),
 						-- #if BEFORE MOP
 						applyclassicphase(TBC_PHASE_ONE, i(34422, {	-- Tempered Thorium Boots
 							["timeline"] = {
-								"added 2.3.0.10000",
-								"removed 4.0.3.10000",
+								"added 2.3.0",
+								"removed 4.0.3",
 							},
 						})),
 						-- #endif
@@ -632,7 +632,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			o(123329, {	-- Baelog's Chest
 				i(7740, {	-- Gni'kiv Medallion
 					["description"] = "Use this item along with the Shaft of Tsol to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should ask whoever loots the Shaft of Tsol from Revelosh to trade it to you.",
-					["timeline"] = { "removed 4.1.0.10000" },
+					["timeline"] = { "removed 4.1.0" },
 				}),
 			}),
 			n(6912, {	-- Remains of a Paladin
@@ -647,11 +647,11 @@ root("Instances", tier(CLASSIC_TIER, {
 							{ "i", 7740, 1 },	-- Gni'kiv Medallion
 							{ "i", 7741, 1 },	-- The Shaft of Tsol
 						},
-						["timeline"] = { "removed 4.1.0.10000" },
+						["timeline"] = { "removed 4.1.0" },
 					}),
 					i(7741, {	-- The Shaft of Tsol
 						["description"] = "Use this item along with the Gni'kiv Medallion to create the Staff of Prehistoria required to open the door to Ironaya.\n\nYou should trade this to the person that looted the Gni'kiv Medallion.",
-						["timeline"] = { "removed 4.1.0.10000" },
+						["timeline"] = { "removed 4.1.0" },
 					}),
 					i(132736, {	-- Revelosh's Pauldrons
 						["timeline"] = { "added 7.0.3.22248"},

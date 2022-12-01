@@ -92,7 +92,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Gordok Ogre Suit",
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["recipeID"] = 22813
 				}),
 				{
@@ -136,7 +136,7 @@ profession(TAILORING, {
 				}),
 				{
 					["name"] = "Felcloth Bag",
-					["timeline"] = { "removed 4.0.1.10000" },
+					["timeline"] = { "removed 4.0.1" },
 					["recipeID"] = 26086,
 				},
 				{
@@ -347,7 +347,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Vest",
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["recipeID"] = 24091,
 				}),
 				{
@@ -428,7 +428,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Glacial Vest",
-					["timeline"] = { "removed 3.0.2.10000" },
+					["timeline"] = { "removed 3.0.2" },
 					["recipeID"] = 28207,
 				}),
 				{
@@ -496,7 +496,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Robe of the Void",
-					["timeline"] = { "removed 5.0.4.10000", "added 10.0.2.99999" }, -- TODO: change patch when DF launches
+					["timeline"] = { "removed 5.0.4", "added 10.0.2.99999" }, -- TODO: change patch when DF launches
 					["recipeID"] = 18458,
 					-- #if AFTER TBC
 					["classes"] = { WARLOCK },
@@ -571,7 +571,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Glacial Wrists",
-					["timeline"] = { "removed 3.0.2.10000" },
+					["timeline"] = { "removed 3.0.2" },
 					["recipeID"] = 28209,
 				}),
 				{
@@ -676,7 +676,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Glacial Gloves",
-					["timeline"] = { "removed 3.0.2.10000" },
+					["timeline"] = { "removed 3.0.2" },
 					["recipeID"] = 28205,
 				}),
 				{
@@ -743,7 +743,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Leggings",
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["recipeID"] = 24092,
 				}),
 				{
@@ -851,7 +851,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Boots",
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["recipeID"] = 24093,
 				}),
 				{
@@ -951,7 +951,7 @@ profession(TAILORING, {
 				}),
 				applyclassicphase(PHASE_SIX, {
 					["name"] = "Glacial Cloak",
-					["timeline"] = { "removed 3.0.2.10000" },
+					["timeline"] = { "removed 3.0.2" },
 					["recipeID"] = 28208,
 				}),
 				{
@@ -984,7 +984,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(WRATH_PHASE_ONE, {
 					["name"] = "Spidersilk Drape",
-					["timeline"] = { "added 3.1.0.10000" },
+					["timeline"] = { "added 3.1.0" },
 					["recipeID"] = 63742
 				}),
 				{
@@ -3362,17 +3362,17 @@ profession(TAILORING, {
 				{
 					["name"] = "Hexweave Essence",
 					["recipeID"] = 168855,
-					["timeline"] = { "removed 9.0.1.10000" },
+					["timeline"] = { "removed 9.0.1" },
 				},
 				{
 					["name"] = "Mighty Hexweave Essence",
 					["recipeID"] = 187492,
-					["timeline"] = { "removed 9.0.1.10000" },
+					["timeline"] = { "removed 9.0.1" },
 				},
 				{
 					["name"] = "Savage Hexweave Essence",
 					["recipeID"] = 187516,
-					["timeline"] = { "removed 9.0.1.10000" },
+					["timeline"] = { "removed 9.0.1" },
 				},
 			}
 		},
@@ -3615,7 +3615,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Imbued Silkweave Epaulets",	-- Rank 3
-					["timeline"] = { "removed 8.0.1.10000" },	-- rank 3 used to drop from RBG wins but not available after Legion
+					["timeline"] = { "removed 8.0.1" },	-- rank 3 used to drop from RBG wins but not available after Legion
 					["previousRecipeID"] = 185948,
 					["recipeID"] = 185956
 				},
@@ -5350,7 +5350,7 @@ profession(TAILORING, {
 			}
 		},
 	})),
-	n(QUESTS, bubbleDown({ ["timeline"] = { "removed 4.0.3.10000" } }, {
+	n(QUESTS, bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
 		applyclassicphase(TBC_PHASE_ONE, q(10831, {	-- Becoming a Mooncloth Tailor
 			["qg"] = 22208,	-- Nasmara Moonsong <Mooncloth Specialist>
 			["requireSkill"] = TAILORING,
@@ -5590,7 +5590,7 @@ itemrecipe("Pattern: Tuxedo Shirt", 10321, 12085);
 itemrecipe("Pattern: Tuxedo Pants", 10323, 12089);
 itemrecipe("Pattern: White Wedding Dress", 10325, 12091);
 itemrecipe("Pattern: Tuxedo Jacket", 10326, 12093);
-itemrecipe("Pattern: Shadoweave Mask", 10463, 12086, "removed 4.0.3.10000");
+itemrecipe("Pattern: Shadoweave Mask", 10463, 12086, "removed 4.0.3");
 itemrecipe("Pattern: Black Swashbuckler's Shirt", 10728, 3873);
 itemrecipe("Pattern: Frostweave Tunic", 14466, 18403);
 itemrecipe("Pattern: Frostweave Robe", 14467, 18404);

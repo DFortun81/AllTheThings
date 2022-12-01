@@ -2283,7 +2283,7 @@ root("Zones", {
 						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
 					}),
 					i(44559, {	-- Pattern: Fur Lining - Fire Resist
-						["timeline"] = { "removed 5.0.4.10000" },
+						["timeline"] = { "removed 5.0.4" },
 						["spellID"] = 0,
 						["crs"] = {
 							31321,	-- Skeletal Runesmith

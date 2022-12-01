@@ -15,20 +15,20 @@ root("PVP", pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Prest
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				i(138992, {	-- Grand Marshal's Medal of Valor
-					["timeline"] = { "removed 8.0.1.10000" },
+					["timeline"] = { "removed 8.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42978, {	-- A Royal Audience [Alliance]
 					["provider"] = { "i", 138992 },	-- Grand Marshal's Medal of Valor
 					["description"] = "You get this quest when you reach Prestige Rank 2.",
-					["timeline"] = { "removed 8.0.1.10000" },
+					["timeline"] = { "removed 8.0.1" },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42982, {	-- The Victor's Spoils [Alliance]
 					["qg"] = 109466,	-- Anduin Wrynn <King of Stormwind>
 					["sourceQuest"] = 42978,	-- A Royal Audience [Alliance]
-					["timeline"] = { "removed 8.0.1.10000" },
+					["timeline"] = { "removed 8.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(10749, {	-- Fighting with Style: War-torn (Alliance)
@@ -55,13 +55,13 @@ root("PVP", pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Prest
 			["races"] = HORDE_ONLY,
 			["g"] = {
 				i(138996, {	-- High Warlord's Medal of Valor
-					["timeline"] = { "removed 8.0.1.10000" },
+					["timeline"] = { "removed 8.0.1" },
 					["races"] = HORDE_ONLY,
 				}),
 				q(42985, {	-- A Royal Audience [Horde]
 					["provider"] = { "i", 138996 },	-- High Warlord's Medal of Valor
 					["description"] = "You get this quest when you reach Prestige Rank 2.",
-					["timeline"] = { "removed 8.0.1.10000" },
+					["timeline"] = { "removed 8.0.1" },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
@@ -69,7 +69,7 @@ root("PVP", pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Prest
 					["qg"] = 109471,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 42985,	-- A Royal Audience
 					["coord"] = { 57.8, 91.6, UNDERCITY },
-					["timeline"] = { "removed 8.0.1.10000" },
+					["timeline"] = { "removed 8.0.1" },
 					["races"] = HORDE_ONLY,
 				}),
 			},

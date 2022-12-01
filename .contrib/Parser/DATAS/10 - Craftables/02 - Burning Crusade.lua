@@ -862,28 +862,28 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSel
 		}),
 		category(928, {	-- Armor Kits
 			i(29488, {	-- Arcane Armor Kit
-				["timeline"] = { "removed 5.0.4.10000" },
+				["timeline"] = { "removed 5.0.4" },
 			}),
 			i(29534),	-- Clefthide Leg Armor
 			i(29533),	-- Cobrahide Leg Armor
 			i(25679),	-- Comfortable Insoles
 			i(29485, {	-- Flame Armor Kit
-				["timeline"] = { "removed 5.0.4.10000" },
+				["timeline"] = { "removed 5.0.4" },
 			}),
 			i(29486, {	-- Frost Armor Kit
-				["timeline"] = { "removed 5.0.4.10000" },
+				["timeline"] = { "removed 5.0.4" },
 			}),
 			i(34207),	-- Glove Reinforcements
 			i(34330),	-- Heavy Knothide Armor Kit
 			i(25650),	-- Knothide Armor Kit
 			i(25652),	-- Magister's Armor Kit
 			i(29487, {	-- Nature Armor Kit
-				["timeline"] = { "removed 5.0.4.10000" },
+				["timeline"] = { "removed 5.0.4" },
 			}),
 			i(29536),	-- Nethercleft Leg Armor
 			i(29535),	-- Nethercobra Leg Armor
 			i(29483, {	-- Shadow Armor Kit
-				["timeline"] = { "removed 5.0.4.10000" },
+				["timeline"] = { "removed 5.0.4" },
 			}),
 			i(25651),	-- Vindicator's Armor Kit
 		}),

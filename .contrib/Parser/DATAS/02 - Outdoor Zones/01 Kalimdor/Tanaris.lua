@@ -79,7 +79,7 @@ root("Zones", m(KALIMDOR, {
 								i(35346),	-- Evoker's Silk Raiment
 								i(31777),	-- Keepers of Time Tabard
 								i(30635, {	-- Key of Time
-									["timeline"] = { "removed 4.2.0.10000" },
+									["timeline"] = { "removed 4.2.0" },
 									-- #if BEFORE 4.2.0
 									-- #if ANYCLASSIC
 									-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.

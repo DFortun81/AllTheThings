@@ -188,7 +188,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 						-- #endif
 						-- #if BEFORE MOP
 						i(34783, {	-- Nightstrike
-							["timeline"] = { "removed 5.0.4.10000" },
+							["timeline"] = { "removed 5.0.4" },
 						}),
 						-- #endif
 					},
@@ -270,7 +270,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 							i(34701),	-- Leggings of the Betrayed
 							-- #if BEFORE MOP
 							i(34603, {	-- Distracting Blades
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 						},
@@ -308,7 +308,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 							i(34471),	-- Vial of the Sunwell
 							-- #if BEFORE MOP
 							i(34783, {	-- Nightstrike
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 						},

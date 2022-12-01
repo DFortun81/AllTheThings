@@ -1227,8 +1227,8 @@ profession(BLACKSMITHING, {
 				applyclassicphase(TBC_PHASE_ONE, {
 					["recipeID"] = 34982,	-- Enchanted Thorium Blades
 					["timeline"] = {
-						"added 2.0.1.10000",
-						"deleted 5.0.4.10000"
+						"added 2.0.1",
+						"deleted 5.0.4"
 					},
 				}),
 				{
@@ -1400,8 +1400,8 @@ profession(BLACKSMITHING, {
 				applyclassicphase(TBC_PHASE_ONE, {
 					["recipeID"] = 34979,	-- Thick Bronze Darts
 					["timeline"] = {
-						"added 2.0.1.10000",
-						"deleted 5.0.4.10000"
+						"added 2.0.1",
+						"deleted 5.0.4"
 					},
 				}),
 				{
@@ -1428,8 +1428,8 @@ profession(BLACKSMITHING, {
 				applyclassicphase(TBC_PHASE_ONE, {
 					["recipeID"] = 34981,	-- Whirling Steel Axes
 					["timeline"] = {
-						"added 2.0.1.10000",
-						"deleted 5.0.4.10000"
+						"added 2.0.1",
+						"deleted 5.0.4"
 					},
 				}),
 				{
@@ -6499,8 +6499,8 @@ itemrecipe("Plans: Lesser Ward of Shielding", 23638, 29728, TBC_PHASE_ONE);
 itemrecipe("Plans: Greater Ward of Shielding", 23639, 29729, TBC_PHASE_ONE);
 itemrecipe("Plans: Felsteel Shield Spike", 24002, 29657, TBC_PHASE_ONE);
 itemrecipe("Plans: Greater Rune of Warding", 25526, 32285, TBC_PHASE_ONE);
-itemrecipe("Plans: Adamantite Rod", 25846, 32656, TBC_PHASE_ONE, "removed 5.0.4.10000");
-itemrecipe("Plans: Eternium Rod", 25847, 32657, TBC_PHASE_ONE, "removed 5.0.4.10000");
+itemrecipe("Plans: Adamantite Rod", 25846, 32656, TBC_PHASE_ONE, "removed 5.0.4");
+itemrecipe("Plans: Eternium Rod", 25847, 32657, TBC_PHASE_ONE, "removed 5.0.4");
 itemrecipe("Plans: Adamantite Weightstone", 28632, 34608, TBC_PHASE_ONE);
 itemrecipe("Plans: Wildguard Breastplate", 31390, 38473, TBC_PHASE_ONE);
 itemrecipe("Plans: Wildguard Leggings", 31391, 38475, TBC_PHASE_ONE);

@@ -333,7 +333,7 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 						i(12056),	-- Ring Of The Heavens
 						-- #if BEFORE MOP
 						i(34622, {	-- Spinesever
-							["timeline"] = { "removed 5.0.4.10000" },
+							["timeline"] = { "removed 5.0.4" },
 						}),
 						-- #endif
 						i(12045),	-- Swamp Pendant

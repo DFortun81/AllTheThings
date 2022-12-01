@@ -559,7 +559,7 @@ root("Zones", {
 							i(32831),	-- Jeweled Rod
 							-- #if BEFORE MOP
 							i(32832, {	-- Scout's Throwing Knives
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 							i(32830),	-- Severin's Cane
@@ -1055,7 +1055,7 @@ root("Zones", {
 						["sourceQuest"] = 10880,	-- Cabal Orders
 						["groups"] = {
 							i(31730, {	-- Heirloom Signet of Convalescence
-								["timeline"] = { "removed 3.2.0.10000" },
+								["timeline"] = { "removed 3.2.0" },
 							}),
 							i(31729),	-- Heirloom Signet of Valor
 							i(31728),	-- Heirloom Signet of Willpower

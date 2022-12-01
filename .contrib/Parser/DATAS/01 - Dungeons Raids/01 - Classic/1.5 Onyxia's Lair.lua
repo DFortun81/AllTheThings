@@ -1,9 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local ADDED_WITH_RERELEASE = { "added 3.2.2.10000" };
-local REMOVED_WITH_RERELEASE = { "added 1.0.1.10000", "removed 3.2.2.10000" };
-local REMOVED_WITH_CATA = { "added 1.0.1.10000", "removed 4.0.3.10000" };
+local ADDED_WITH_RERELEASE = { "added 3.2.2" };
+local REMOVED_WITH_RERELEASE = { "added 1.0.1", "removed 3.2.2" };
+local REMOVED_WITH_CATA = { "added 1.0.1", "removed 4.0.3" };
 
 -- Helms were moved to Nefarian with 3.2.2
 local BLOODFANG_HOOD = i(16908);	-- Bloodfang Hood

@@ -1404,15 +1404,15 @@ root("Zones", {
 							-- #if BEFORE MOP
 							i(27929, {	-- Terminal Edge
 								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(27990, {	-- Idol of Savagery
 								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(27983, {	-- Libram of Zeal
 								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 							i(27921, {	-- Mark of Conquest
@@ -1427,7 +1427,7 @@ root("Zones", {
 							-- #if BEFORE MOP
 							i(27984, {	-- Totem of Impact
 								["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 						},
@@ -1584,15 +1584,15 @@ root("Zones", {
 							-- #if BEFORE MOP
 							i(27928, {	-- Terminal Edge
 								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(27989, {	-- Idol of Savagery
 								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(27949, {	-- Libram of Zeal
 								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 							i(27920, {	-- Mark of Conquest
@@ -1607,7 +1607,7 @@ root("Zones", {
 							-- #if BEFORE MOP
 							i(27947, {	-- Totem of Impact
 								["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 						},

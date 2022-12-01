@@ -64,7 +64,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9723,	-- A Gesture of Commitment
 					["coord"] = { 92.0, 38.8, SILVERMOON_CITY },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },
@@ -83,7 +83,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				q(10372, {	-- A Discreet Inquiry
 					["qg"] = 16684,	-- Zelanis <Rogue Trainer>
 					["coord"] = { 79.7, 52.2, SILVERMOON_CITY },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { GHOSTLANDS },
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
@@ -94,7 +94,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 20612,	-- Sorim Lightsong
 					["coord"] = { 56.6, 52.5, SILVERMOON_CITY },
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
-					["timeline"] = { "removed 4.0.3.10000"},
+					["timeline"] = { "removed 4.0.3"},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -102,7 +102,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 20612,	-- Sorim Lightsong
 					["coord"] = { 56.6, 52.5, SILVERMOON_CITY },
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
-					["timeline"] = { "removed 4.0.3.10000"},
+					["timeline"] = { "removed 4.0.3"},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -110,7 +110,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 20612,	-- Sorim Lightsong
 					["coord"] = { 56.6, 52.5, SILVERMOON_CITY },
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
-					["timeline"] = { "removed 4.0.3.10000"},
+					["timeline"] = { "removed 4.0.3"},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
 				}),
@@ -118,7 +118,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 20612,	-- Sorim Lightsong
 					["coord"] = { 56.6, 52.5, SILVERMOON_CITY },
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
-					["timeline"] = { "removed 4.0.3.10000"},
+					["timeline"] = { "removed 4.0.3"},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -126,7 +126,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9722,	-- The Master's Path
 					["coord"] = { 92.0, 38.8, SILVERMOON_CITY },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["cost"] = {
 						{ "i", 24277, 1 },	-- Items for Magister Astalor Bloodsworn
 						{ "i", 14047, 40 },	-- Runecloth
@@ -142,7 +142,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9678,	-- The First Trial
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(12, 1, 12),
@@ -150,7 +150,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				q(9721, {	-- A Summons from Lord Solanar
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(60, 1, 60),
@@ -160,7 +160,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10362,	-- A Donation of Runecloth
 					["coord"] = { 56.6, 52.5, SILVERMOON_CITY },
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
-					["timeline"] = { "removed 4.0.3.10000"},
+					["timeline"] = { "removed 4.0.3"},
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -183,7 +183,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(15, 1, 15),
 				}),
-				q(9684, bubbleDown({ ["timeline"] = { "removed 4.0.3.10000" } }, {	-- Claiming the Light
+				q(9684, bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {	-- Claiming the Light
 					["qg"] = 17718,	-- Magister Astalor Bloodsworn
 					["sourceQuest"] = 9681,	-- A Study in Power
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
@@ -228,7 +228,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["cost"] = {
 						{ "i", 24239, 1 },	-- Crate of Materials
 					},
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 1, 20),
@@ -259,7 +259,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9684,	-- Claiming the Light
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(12, 1, 12),
@@ -283,7 +283,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ 48.2, 45.3, ORGRIMMAR },	-- Gan'rul Bloodeye
 						{ 85.1, 26.0, UNDERCITY },	-- Carendin Halgar
 					},
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = { BLOODELF },
 					["classes"] = { WARLOCK },
 					["isBreadcrumb"] = true,
@@ -319,13 +319,13 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16669,	-- Bemarrin
 					["sourceQuest"] = 9707,	-- Forging the Weapon
 					["coord"] = { 79.4, 38.6, SILVERMOON_CITY },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 1, 20),
 					["groups"] = {
 						i(25464, {	-- Blood-Tempered Ranseur
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),
@@ -333,7 +333,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9677,	-- Summons from Knight-Lord Bloodvalor
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { GHOSTLANDS },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
@@ -349,7 +349,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9721,	-- A Summons from Lord Solanar
 					["coord"] = { 92.0, 38.8, SILVERMOON_CITY },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(60, 1, 60),
@@ -360,7 +360,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
 					["maps"] = { GHOSTLANDS, BLACKFATHOM_DEEPS, RAGEFIRE_CHASM, SHADOWFANG_KEEP },
 					["cost"] = { { "i", 24223, 1 } },	-- Bloodvalor's Notes
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 1, 20),
@@ -385,7 +385,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["provider"] = { "o", 181698 },	-- Voidstone
 					["sourceQuest"] = 9529,	-- The Stone
 					["coord"] = { 42.6, 15.7, GHOSTLANDS },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = { BLOODELF },
 					["classes"] = { WARLOCK },
 					["lvl"] = lvlsquish(10, 1, 10),
@@ -403,7 +403,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				q(9690, {	-- The Second Trial (1/2)
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 1, 20),
@@ -412,7 +412,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16647,	-- Talionia <Warlock Trainer>
 					["sourceQuest"] = 10788,	-- Return to Talionia
 					["coord"] = { 74.4, 47.2, SILVERMOON_CITY },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { GHOSTLANDS },
 					["races"] = { BLOODELF },
 					["classes"] = { WARLOCK },
@@ -422,7 +422,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9725,	-- A Demonstration of Loyalty
 					["coord"] = { 92.0, 38.8, SILVERMOON_CITY },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
@@ -438,7 +438,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9735,	-- True Masters of the Light (1/3)
 					["coord"] = { 92.0, 38.8, SILVERMOON_CITY },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["cost"] = {
 						{ "i", 24286, 1 },	-- Arcane Catalyst
 						{ "i", 24285, 1 },	-- Crepuscular Powder
@@ -453,7 +453,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9736,	-- True Masters of the Light (2/3)
 					["coord"] = { 92.0, 38.8, SILVERMOON_CITY },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { STRATHOLME },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
@@ -646,7 +646,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["f"] = RECIPES,
 						}),
 						i(25720, {	-- Pattern: Heavy Knothide Leather
-							["timeline"] = { "removed 3.2.0.10000"},
+							["timeline"] = { "removed 3.2.0"},
 							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
 							["f"] = RECIPES,

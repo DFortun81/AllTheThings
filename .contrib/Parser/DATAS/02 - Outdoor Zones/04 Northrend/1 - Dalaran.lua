@@ -6366,11 +6366,11 @@ root("Zones", {
 								["timeline"] = { "removed 5.0.4" },
 							})),
 							i(32883, {	-- Felbane Slugs
-								["timeline"] = { "removed 4.0.1.10000" },
+								["timeline"] = { "removed 4.0.1" },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							i(32882, {	-- Hellfire Shot
-								["timeline"] = { "removed 4.0.1.10000" },
+								["timeline"] = { "removed 4.0.1" },
 								["races"] = HORDE_ONLY,
 							}),
 							emoh(15, i(40716, {	-- Lillehoff's Winged Blades

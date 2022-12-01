@@ -374,7 +374,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(146651, {	-- Arsenal: Gladiator's Weapons
 					["timeline"] = { -- combined with Season 2
 						"added 7.2.0.23436",
-						"removed 7.2.5.10000",
+						"removed 7.2.5",
 					},
 					["sym"] = {
 						{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR },

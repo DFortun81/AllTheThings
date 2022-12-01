@@ -1409,16 +1409,16 @@ root("Zones", {
 							i(25639),	-- Hemet's Elekk Gun
 							-- #if BEFORE MOP
 							i(29211, {	-- Fitz's Throwing Axe
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(25644, {	-- Blessed Book of Nagrand
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(25643, {	-- Harold's Rejuvenating Broach
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(25645, {	-- Totem of the Plains
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 						},
@@ -1645,7 +1645,7 @@ root("Zones", {
 							}),
 							-- #if BEFORE MOP
 							i(30599, {	-- Avenging Blades
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 							i(30597, {	-- Halaani Claymore
@@ -1671,10 +1671,10 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(30612, {	-- Halaani Grimshot
-								["timeline"] = { "removed 4.0.1.10000" },
+								["timeline"] = { "removed 4.0.1" },
 							}),
 							i(30611, {	-- Halaani Razorshaft
-								["timeline"] = { "removed 4.0.1.10000" },
+								["timeline"] = { "removed 4.0.1" },
 							}),
 						},
 					}),
@@ -1707,7 +1707,7 @@ root("Zones", {
 							}),
 							-- #if BEFORE MOP
 							i(30568, {	-- The Sharp Cookie
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 							i(28915, {	-- Dark Riding Talbuk (MOUNT!)
@@ -2072,10 +2072,10 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(30612, {	-- Halaani Grimshot
-								["timeline"] = { "removed 4.0.1.10000" },
+								["timeline"] = { "removed 4.0.1" },
 							}),
 							i(30611, {	-- Halaani Razorshaft
-								["timeline"] = { "removed 4.0.1.10000" },
+								["timeline"] = { "removed 4.0.1" },
 							}),
 						},
 					}),

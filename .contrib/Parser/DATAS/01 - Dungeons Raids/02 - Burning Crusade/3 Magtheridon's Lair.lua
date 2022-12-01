@@ -47,7 +47,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(31746),	-- Phoenix-Fire Band
 						i(31704, {	-- The Tempest Key
 							-- #if AFTER WRATH
-							["timeline"] = { "removed 2.3.0.10000" },
+							["timeline"] = { "removed 2.3.0" },
 							-- #endif
 						}),
 						classicAch(432, {	-- Champion of the Naaru (Achievement)

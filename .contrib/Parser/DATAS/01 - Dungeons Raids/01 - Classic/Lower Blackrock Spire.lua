@@ -1312,7 +1312,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(28972, {	-- Flightblade Throwing Axe [TBC]
 							["timeline"] = {
 								"added 2.0.1.5678",
-								"removed 5.0.4.10000"
+								"removed 5.0.4"
 							},
 						}),
 						i(13173, {	-- Flightblade Throwing Axe [Classic] / Broken Flightblade Throwing Axe [TBC]

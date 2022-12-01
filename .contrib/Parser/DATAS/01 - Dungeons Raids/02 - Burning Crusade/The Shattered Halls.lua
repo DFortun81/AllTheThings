@@ -406,7 +406,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 						-- #if BEFORE MOP
 						i(27518, {	-- Ivory Idol of the Moongoddess
-							["timeline"] = { "removed 5.0.4.10000" },
+							["timeline"] = { "removed 5.0.4" },
 						}),
 						-- #endif
 						i(24312),	-- Pattern: Spellstrike Hood
@@ -522,7 +522,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							-- #if BEFORE MOP
 							i(27518, {	-- Ivory Idol of the Moongoddess
-								["timeline"] = { "removed 5.0.4.10000" },
+								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
 							i(24312),	-- Pattern: Spellstrike Hood

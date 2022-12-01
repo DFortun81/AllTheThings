@@ -798,7 +798,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(3379, {	-- Shadoweaver
 					["qg"] = 8439,	-- Nilith Lokrav
 					["coord"] = { 41.0, 75.0, SEARING_GORGE },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = TAILORING,
 					["lvl"] = 40,
 					["groups"] = {
@@ -806,7 +806,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 8442 },	-- Shadowsilk Poacher
 						}),
 						i(10461, {	-- Shadowy Bracers
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),
@@ -991,7 +991,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["qg"] = 8439,	-- Nilith Lokrav
 					["sourceQuest"] = 3379,	-- Shadoweaver
 					["coord"] = { 41.0, 75.0, SEARING_GORGE },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = TAILORING,
 					["lvl"] = 40,
 					["groups"] = {
@@ -1009,10 +1009,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["cr"] = 8444,	-- Trade Master Kovic <The Undermarket>
 						}),
 						i(10479, {	-- Kovic's Trading Satchel
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(10462, {	-- Shadowy Belt
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),
@@ -1020,13 +1020,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["qg"] = 8439,	-- Nilith Lokrav
 					["sourceQuest"] = 3385,	-- The Undermarket (1/2)
 					["coord"] = { 41.0, 75.0, SEARING_GORGE },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["requireSkill"] = TAILORING,
 					["lvl"] = 40,
 					-- #if BEFORE 7.3.0
 					["groups"] = {
 						i(10463, {	-- Pattern: Shadoweave Mask
-							["timeline"] = { "removed 4.0.3.10000", "added 7.3.0" },
+							["timeline"] = { "removed 4.0.3", "added 7.3.0" },
 						}),
 					},
 					-- #endif
@@ -1070,14 +1070,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 149502 },	-- Hoard of the Black Dragonflight
 					["sourceQuest"] = 3463,	-- Set Them Ablaze!
 					["coord"] = { 39.0, 38.9, SEARING_GORGE },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 40,
 					["groups"] = {
 						i(10569, {	-- Hoard of the Black Dragonflight
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 							["groups"] = {
 								i(10575, {	-- Black Dragonflight Molt
-									["timeline"] = { "removed 4.0.3.10000" },
+									["timeline"] = { "removed 4.0.3" },
 								}),
 							},
 						}),
@@ -1090,18 +1090,18 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						27977,	-- Recon Essentials
 					},
 					["coord"] = { 36.0, 28.4, SEARING_GORGE },
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 				}),
 				q(28060, {	-- Twisted Twilight Ties
 					["qg"] = 14626,	-- Taskmaster Scrange
 					["sourceQuest"] = 28057,	-- Kill 'em With Sleep Deprivation
 					["coord"] = { 42.3, 34.5, SEARING_GORGE },
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 				}),
 				q(7701, {	-- WANTED: Overseer Maltorius
 					["provider"] = { "o", 179827 },	-- Wanted/Missing/Lost & Found
 					["coord"] = { 37.7, 26.5, SEARING_GORGE },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Overseer Maltorius
@@ -1110,10 +1110,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["cr"] = 14621,	-- Overseer Maltorius
 						}),
 						i(19128, {	-- Seared Mail Vest
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(19127, {	-- Charred Leather Tunic
-							["timeline"] = { "removed 4.0.3.10000" },
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),
@@ -1121,23 +1121,23 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["qg"] = 14625,	-- Overseer Oilfist <The Thorium Brotherhood>
 					["sourceQuest"] = 28062,	-- From Whence He Came
 					["coord"] = { 38.2, 27.0, SEARING_GORGE },
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["groups"] = {
 						i(63244, {	-- Pauldrons of the Thorium Brotherhood
-							["timeline"] = { "added 4.0.3.10000" },
+							["timeline"] = { "added 4.0.3" },
 						}),
 						i(63243, {	-- Hammer of the Thorium Brotherhood
-							["timeline"] = { "added 4.0.3.10000" },
+							["timeline"] = { "added 4.0.3" },
 						}),
 						i(63242, {	-- Amulet of the Thorium Brotherhood
-							["timeline"] = { "added 4.0.3.10000" },
+							["timeline"] = { "added 4.0.3" },
 						}),
 					},
 				}),
 				q(7722, {	-- What the Flux?
 					["qg"] = 14624,	-- Master Smith Burninate
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/1 Secret Plans: Fiery Flux
@@ -1338,7 +1338,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(11818, {	-- Grimesilt Outhouse Key
-					["timeline"] = { "removed 4.0.3.10000" },
+					["timeline"] = { "removed 4.0.3" },
 					["crs"] = {
 						15692,	-- Dark Iron Kidnapper
 						8566,	-- Dark Iron Lookout
@@ -1382,7 +1382,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				-- #if AFTER 7.3.0
 				i(10463, {	-- Pattern: Shadoweave Mask
 					["description"] = "As of 7.3, Dark Iron Steamsmiths drop |cff3399ffPattern: Shadoweave Mask|r, which is required for the |cff3399ffLucid Nightmare|r mount.",
-					["timeline"] = { "removed 4.0.3.10000", "added 7.3.0" },
+					["timeline"] = { "removed 4.0.3", "added 7.3.0" },
 					["cr"] = 5840,	-- Dark Iron Steamsmith
 				}),
 				-- #endif

@@ -86,7 +86,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				i(35273),	-- Study of Advanced Smelting
 				-- #if BEFORE MOP
 				i(34349, {	-- Blade of Life's Inevitability
-					["timeline"] = { "removed 5.0.4.10000" },
+					["timeline"] = { "removed 5.0.4" },
 				}),
 				-- #endif
 				i(34350),	-- Gauntlets of the Ancient Shadowmoon

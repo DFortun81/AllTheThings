@@ -6,7 +6,7 @@ profession(MINING, {
 		-- #endif
 		{
 			["name"] = "Enchanted Thorium Bar",
-			["timeline"] = { "added 3.3.0.10000" },
+			["timeline"] = { "added 3.3.0" },
 			["recipeID"] = 70524
 		},
 		{

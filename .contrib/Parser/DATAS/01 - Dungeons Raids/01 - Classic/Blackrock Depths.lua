@@ -1369,7 +1369,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["isBreadcrumb"] = true,
@@ -1388,7 +1388,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { BLOODELF },
 					["isBreadcrumb"] = true,
@@ -1407,7 +1407,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
@@ -1426,7 +1426,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["isBreadcrumb"] = true,
@@ -1445,7 +1445,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
@@ -1466,7 +1466,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
@@ -1485,7 +1485,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["isBreadcrumb"] = true,
@@ -1557,7 +1557,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
@@ -1576,7 +1576,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["isBreadcrumb"] = true,
@@ -1614,7 +1614,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						{ 75.4, 28.0, THUNDER_BLUFF },	-- Seer Beryl <Priest Trainer>
 						{ 49.3, 17.1, UNDERCITY },	-- Aelthalyste <Priest Trainer>
 					},
-					["timeline"] = { "added 4.0.3.10000" },
+					["timeline"] = { "added 4.0.3" },
 					["classes"] = { PRIEST },
 					["races"] = { BLOODELF },
 					["isBreadcrumb"] = true,
