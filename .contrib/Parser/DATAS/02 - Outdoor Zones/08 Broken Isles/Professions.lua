@@ -1232,7 +1232,6 @@ _.Zones =
 					}),
 					q(39602, {	-- Where's Lyndras: Sewer Sleuthing
 						["sourceQuests"] = { 38964 },	-- Where's Lyndras Now?
-						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 93542 },	-- Tanithria
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
 					}),

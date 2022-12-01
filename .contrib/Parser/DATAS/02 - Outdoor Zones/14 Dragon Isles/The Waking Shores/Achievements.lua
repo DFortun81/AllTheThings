@@ -168,26 +168,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				crit(3, {	-- Crumbling Life Archway
 					["coord"] = { 56.8, 58.0, THE_WAKING_SHORES },
 				}),
-				crit(4, {	-- The Overflowing Spring
-					["coord"] = { 50.3, 55.6, THE_WAKING_SHORES },
-				}),
-				crit(5, {	-- Concord Observatory
-					["coord"] = { 57.2, 46.4, THE_WAKING_SHORES },
-				}),
-				crit(6, {	-- Life-Binder Conservatory
-					["coord"] = { 57.0, 20.0, THE_WAKING_SHORES },
-				}),
-				crit(7, {	-- Uktulut Backwater
-					["coord"] = { 48.9, 39.9, THE_WAKING_SHORES },
-				}),
-				crit(8, {	-- Obsidian Observatory
-					["coord"] = { 43.6, 63.8, THE_WAKING_SHORES },
-				}),
-				crit(9, {	-- Hatchery Observatory
+				crit(4, {	-- Hatchery Observatory
 					["coord"] = { 61.7, 80.8, THE_WAKING_SHORES },
 				}),
-				crit(10, {	-- Apex Canopy
+				crit(5, {	-- Obsidian Observatory
+					["coord"] = { 43.6, 63.8, THE_WAKING_SHORES },
+				}),
+				crit(6, {	-- Apex Canopy
 					["coord"] = { 24.0, 89.9, THE_WAKING_SHORES },
+				}),
+				crit(7, {	-- Concord Observatory
+					["coord"] = { 57.2, 46.4, THE_WAKING_SHORES },
+				}),
+				crit(8, {	-- The Overflowing Spring
+					["coord"] = { 50.3, 55.6, THE_WAKING_SHORES },
+				}),
+				crit(9, {	-- Uktulut Backwater
+					["coord"] = { 48.9, 39.9, THE_WAKING_SHORES },
+				}),
+				crit(10, {	-- Life-Binder Conservatory
+					["coord"] = { 57.0, 20.0, THE_WAKING_SHORES },
 				}),
 			}),
 			ach(16297),	-- Treasures of The Waking Shores
