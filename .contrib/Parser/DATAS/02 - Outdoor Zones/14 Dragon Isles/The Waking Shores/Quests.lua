@@ -1002,11 +1002,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 					q(70268, {	-- Memories Revived
 						["sourceQuests"] = { 70134 },	-- Memories
-						["provider"] = { "i", 198661 },	--
+						["provider"] = { "i", 198661 },	-- Partially Destroyed Diary
 						["coord"] = { 23, 60, THE_WAKING_SHORES },
 						["description"] = "To obtain this quest, you must enter the vault located at 27, 61. Once inside, head down the stairs and take a left, and then another left into the room. This room will have a bookshelf on it with the item to start this quest.",
 						["g"] = {
-							crit(4, {						-- Veritistrasz
+							crit(4, {	-- Veritistrasz
 								["achievementID"] = 16406,	-- All Sides of the Story
 							}),
 						},
