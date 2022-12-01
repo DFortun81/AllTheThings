@@ -165,11 +165,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 187877 },	-- Andantenormu
 					["coord"] = { 57.5, 78.7, THALDRASZUS },
 				}),
-				q(66083, {	-- Feels Like the First Time
-					["sourceQuests"] = { 66083 },	-- Feels Like the First Time
-					["provider"] = { "n", 187877 },	-- Andantenormu
-					["coord"] = { 57.5, 78.8, THALDRASZUS },
-				}),
 				q(66084, {	-- Times Like These
 					["sourceQuests"] = { 66083 },	-- Feels Like the First Time
 					["provider"] = { "n", 187877 },	-- Andantenormu
