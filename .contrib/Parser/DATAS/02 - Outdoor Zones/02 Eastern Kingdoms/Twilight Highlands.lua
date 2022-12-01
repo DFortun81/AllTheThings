@@ -848,8 +848,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27576,	-- Patchwork Command
 				}),
 				q(26538, {	-- Emergency Aid
-					["sourceQuest"] = 26388,	-- Twilight Skies
 					["provider"] = { "n", 43193 },	-- Warlord Krogg
+					["sourceQuest"] = 26388,	-- Twilight Skies (2/2)
 					["coord"] = { 82.4, 49.8, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1837,9 +1837,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(26539, {	-- Stalled Negotiations
 					["provider"] = { "n", 42978 },	-- Admiral Stonefist
+					["sourceQuest"] = 26388,	-- Twilight Skies (2/2)
 					["coord"] = { 82.4, 49.8, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 26388,	-- Twilight Skies
 				}),
 				q(27808, {	-- Stubborn as a Doyle
 					["sourceQuests"] = { 27806 },	-- Honorable Bearing

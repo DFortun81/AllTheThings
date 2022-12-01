@@ -6205,6 +6205,15 @@ _.Zones =
 						}),
 					},
 				}),
+				n(97529, {	-- The Amazing Zanzo
+					["description"] = "Wanders around the city.",
+					["groups"] = {
+						{
+							["recipeID"] = 28272,	-- Polymorph (Pig)
+							["classes"] = { MAGE },
+						},
+					},
+				}),
 				n(108468, {	-- The Mad Merchant
 					["description"] = "This vendor is not always present.",
 					["coord"] = { 43.2, 46.6, LEGION_DALARAN },

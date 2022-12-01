@@ -650,12 +650,6 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 48.3, 71.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
-				q(3504, {	-- Betrayed
-					["qg"] = 4485,	-- Belgrom Rockmaul
-					["coord"] = { 75.0, 34.0, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(29401, {	-- Blown Away
 					["qg"] = 54004,	-- Jaga
 					["coord"] = { 48.1, 46.8, ORGRIMMAR },
@@ -874,13 +868,6 @@ root("Zones", m(KALIMDOR, {
 						i(191682),	-- Explosive Pie
 					},
 				})),
-				q(3563, {	-- Jes'rimon's Payment to Jediga
-					["sourceQuest"] = 3541,	-- Delivery to Jes'rimon
-					["qg"] = 8659,	-- Jes'rimon
-					["coord"] = { 55.5, 34.1, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(1945, {	-- Laughing Sisters
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,

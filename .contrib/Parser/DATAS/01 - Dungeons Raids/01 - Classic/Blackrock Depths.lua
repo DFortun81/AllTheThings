@@ -997,6 +997,11 @@ root("Instances", tier(CLASSIC_TIER, {
 						objective(2, {	-- 0/10 Giant Silver Vein
 							["provider"] = { "i", 11405 },	-- Giant Silver Vein
 							["coord"] = { 68, 17, AZSHARA },
+							["crs"] = {
+								6146,	-- Cliff Breaker
+								6147,	-- Cliff Thunderer
+								6148,	-- Cliff Walker
+							},
 						}),
 						objective(3, {	-- 0/1 Nagmara's Filled Vial
 							["provider"] = { "i", 11413 },	-- Nagmara's Filled Vial

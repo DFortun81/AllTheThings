@@ -1731,7 +1731,9 @@ root("Craftables", tier(CLASSIC_TIER, {
 					i(15059, {	-- Living Breastplate
 						["timeline"] = { "removed 4.0.3" },
 					}),
-					i(15056),	-- Stormshroud Armor
+					i(15056, {	-- Stormshroud Armor
+						["timeline"] = { "removed 4.0.3", "timewalking 9.1" },
+					}),
 					i(15053),	-- Volcanic Breastplate
 				}),
 				category(255, {	-- Gloves
@@ -1984,7 +1986,9 @@ root("Craftables", tier(CLASSIC_TIER, {
 				},
 				i(15090),	-- Runic Leather Armor (Trainable now, old Pattern id 15776 used to teach this.)
 				-- #if AFTER TBC
-				i(15056),	-- Stormshroud Armor
+				i(15056, {	-- Stormshroud Armor
+					["timeline"] = { "removed 4.0.3", "timewalking 9.1" },
+				}),
 				-- #endif
 				i(5782),	-- Thick Murloc Armor
 				i(2314),	-- Toughened Leather Armor

@@ -6824,6 +6824,17 @@ root("Zones", {
 							emov(40, i(40750)),	-- Xintor's Expeditionary Boots
 						},
 					}),
+					-- #if AFTER CATA
+					n(32712, {	-- The Amazing Zanzo
+						["description"] = "Wanders around the commerce and alliance bank sections.",
+						["groups"] = {
+							{
+								["recipeID"] = 28272,	-- Polymorph (Pig)
+								["classes"] = { MAGE },
+							},
+						},
+					}),
+					-- #endif
 					n(28721, {	-- Tiffany Cartier <Jewelcrafting Supplies>
 						["coord"] = { 40.4, 34.6, NORTHREND_DALARAN },
 						["groups"] = {
