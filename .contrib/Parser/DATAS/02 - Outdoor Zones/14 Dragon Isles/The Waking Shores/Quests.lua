@@ -998,11 +998,19 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 						["g"] = {
 							i(197361),	-- Renewed Proto-Drake: Spiked Crest (DM!)
-							crit(4, {	-- Veritistrasz
+							},
+					}),
+					q(70268, {	-- Memories Revived
+						["sourceQuests"] = { 70134 },	-- Memories
+						["provider"] = { "i", 198661 },	-- 
+						["coord"] = { 23, 60, THE_WAKING_SHORES },
+						["description"] = "To obtain this quest, you must enter the vault located at 27, 61. Once inside, head down the stairs and take a left, and then another left into the room. This room will have a bookshelf on it with the item to start this quest.",
+						["g"] = {
+							crit(4, {						-- Veritistrasz
 								["achievementID"] = 16406,	-- All Sides of the Story
 							}),
-						},
-					}),
+						}, 
+					}), 
 				},
 			}),
 			ach(16409, {	-- Let's Get Quacking
