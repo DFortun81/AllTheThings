@@ -4,6 +4,9 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_AZURE_SPAN, {
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
+			q(70622, {	-- Resupply Three-Falls
+				-- TODO: ["coord"] = { }
+			}),
 			--[[
 			q(70629, {	-- Assaulting the Shore
 				["coord"] = { 9.6, 42.4, THE_AZURE_SPAN }

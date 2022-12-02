@@ -4,6 +4,12 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
+			q(70423, {	-- Dragonrider Racing - Maruukai Dash
+				["coord"] = { 60.0, 35.5, OHNAHRAN_PLAINS },
+			}),
+			q(70549, {	-- Low Hanging Fruit
+				["coord"] = { 62.4, 57.8, OHNAHRAN_PLAINS }
+			}),
 			--[[
 			q(70067, {	-- A Massage to the Nokhud
 				["coord"] = { 35.7, 39.2, OHNAHRAN_PLAINS }
@@ -19,9 +25,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			q(70634, {	-- Lashed Out
 				["coord"] = { 32.1, 52.0, OHNAHRAN_PLAINS }
-			}),
-			q(70549, {	-- Low Hanging Fruit
-				["coord"] = { 62.4, 57.8, OHNAHRAN_PLAINS }
 			}),
 			q(70074, {	-- Plunder the Sundered
 				["coord"] = { 46.2, 65.2, OHNAHRAN_PLAINS }
