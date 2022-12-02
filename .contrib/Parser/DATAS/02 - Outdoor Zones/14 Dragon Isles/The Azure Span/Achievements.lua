@@ -197,6 +197,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			ach(16336),	-- Azure Spanner
 			ach(16474, {	-- Do You Wanna Build a Snowman?
 				["coord"] = { 50.7, 55.4, THE_AZURE_SPAN },
+				-- ["questID"] = { 72031 },
 			}),
 			ach(16065, {	-- Dragon Glyphs: Azure Archive
 				["coord"] = { 40.4, 66.5, THE_AZURE_SPAN },

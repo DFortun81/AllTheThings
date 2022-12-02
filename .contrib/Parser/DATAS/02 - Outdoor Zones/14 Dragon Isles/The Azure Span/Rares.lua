@@ -48,7 +48,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(197353, {	-- Blisterhide <The Infested>
 				["coord"] = { 14.5, 31.1, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 73985,
 				-- ["g"] = {
 
 				-- },
@@ -115,10 +115,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(197354, {	-- Gnarls
 				["coord"] = { 14.1, 37.5, THE_AZURE_SPAN },
-				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
+				["questID"] = 73996,
+				["g"] = {
+					i(197398),	-- Renewed Proto-Drake: Snub Snout
+				},
 			}),
 			n(193251, {	-- Gruffy
 				["coord"] = { 32.7, 29.2, THE_AZURE_SPAN },
@@ -143,7 +143,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(190244, {	-- Mahg the Trampler
 				["coord"] = { 36.8, 35.8, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 73883,
 				["g"] = {
 					i(200157),	-- Pathmaker
 				},

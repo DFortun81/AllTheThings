@@ -58,17 +58,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(381160, {	-- Lost Compass
 				["coord"] = { 74.9, 55.0, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 70606,
 				["g"] = {
 					crit(4, {	-- Lost Compass
 						["achievementID"] = 16300,	-- Treasures of The Azure Span
 					}),
+					i(202711),	-- Lost Compasseww
 				},
 			}),
 			n(195373, {	-- Pepper Hammer
 				["description"] = "Use nearby Stick and Tree Sap to lure the bird.",
 				["coord"] = { 26.5, 46.3, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 70441,
 				["g"] = {
 					crit(6, {	-- Pepper Hammer
 						["achievementID"] = 16300,	-- Treasures of The Azure Span
@@ -78,7 +79,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(380843, {	-- Rubber Fish
 				["coord"] = { 54.6, 29.3, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 73985,
 				["g"] = {
 					crit(5, {	-- Rubber Fish
 						["achievementID"] = 16300,	-- Treasures of The Azure Span
@@ -99,7 +100,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(380533, {	-- Snow Covered Scroll
 				["coord"] = { 58.0, 42.0, THE_AZURE_SPAN },
-				-- ["questID"] = 70237,
+				["questID"] = 70237,
 				["g"] = {
 					i(198103),	-- Recipe: Snow in a Cone (RECIPE!)
 				},
