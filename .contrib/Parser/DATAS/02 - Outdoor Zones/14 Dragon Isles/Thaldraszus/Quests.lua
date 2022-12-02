@@ -996,6 +996,27 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "n", 186931 },	-- Nozdormu
 				["coord"] = { 60, 82.4, THALDRASZUS },
 			}),
+			-- Fragment of History --
+			q(70204, {	-- Golden Claw
+				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
+				["provider"] = { "i", 198540 },	-- Golden Claw
+				["coord"] = { 38.8, 45.01, THALDRASZUS },
+				["g"] = {
+					crit(7, {	-- Golden Claw
+						["achievementID"] = 16323,	-- Fragments of History
+					}),
+				},
+			}),
+			q(70805, {	-- Precious Stone Fragment
+				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
+				["provider"] = { "i", 199893 },	-- Precious Stone Fragment
+				["coord"] = { 57.1, 64.6, THALDRASZUS },
+				["g"] = {
+					crit(8, {	-- Precious Stone Fragment
+						["achievementID"] = 16323,	-- Fragments of History
+					}),
+				},
+			}),
 			ach(15941, {	-- Dragon Racing Completionist: Gold
 				["collectible"] = false,
 				["g"] = {

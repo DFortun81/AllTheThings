@@ -1132,19 +1132,44 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(71141, {	-- Gills with Gall
 				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 				["provider"] = { "n", 193304 },	-- Ru'Kroszk
-				["coord"] = { 59.1, 52.4, THE_WAKING_SHORES },
+				["coord"] = { 59.7, 51.2, THE_WAKING_SHORES },
 			}),
 			q(66612, {	-- Crabtender's Quandry
 				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 				["provider"] = { "n", 196827 },	-- Crabtender Kad'irsza
-				["coord"] = { 58.9, 52.2, THE_WAKING_SHORES },
+				["coord"] = { 59.7, 51.2, THE_WAKING_SHORES },
+			}),
+			q(70231, {	-- 
+				["description"] = "Talk to Emilia Bellocq and chose her dialogue option to complete this quest and unlock the objects required to complete achievement Fragments of History",
+				["provider"] = { "n", 193915 },	-- Emilia Bellocq
+				["coord"] = { 75.4, 34.0, THE_WAKING_SHORES },
+			}),
+			q(70175, {	-- Broken Banding
+				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
+				["provider"] = { "i", 198475 },	-- Broken Bankding
+				["coord"] = { 81.0, 30.4, THE_WAKING_SHORES },
+				["g"] = {
+					crit(3, {	-- Broken Banding
+						["achievementID"] = 16323,	-- Fragments of History
+					}),
+				},
 			}),
 			q(70789, {	-- Finely Carved Wing
-				--["sourceQuests"] = {  },
+				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 199841 },	-- Finely Carved Wing
 				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
 				["g"] = {
 					crit(6, {	-- Finely Carved Wing
+						["achievementID"] = 16323,	-- Fragments of History
+					}),
+				},
+			}),
+			q(70207, {	-- Tail Fragment
+				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
+				["provider"] = { "i", 198543 },	-- Tail Fragment
+				["coord"] = { 58.2, 68.3, THE_WAKING_SHORES },
+				["g"] = {
+					crit(2, {	-- Broken Banding
 						["achievementID"] = 16323,	-- Fragments of History
 					}),
 				},

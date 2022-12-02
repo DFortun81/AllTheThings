@@ -11,11 +11,29 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200949),	-- Case of Fresh Gleamfish
 				},
 			}),
+			o(381362, {	-- Chunk of Sculpture
+				["coord"] = { 60.1, 60.1, THE_AZURE_SPAN },
+				["g"] = {
+					i(199895),	-- Chunk of Sculpture
+				},
+			}),
+			o(381356, {	-- Coldwashed Dragonclaw
+				["coord"] = { 47.1, 38.9, THE_AZURE_SPAN },
+				["g"] = {
+					i(199843),	-- Coldwashed Dragonclaw
+				},
+			}),
 			o(380547, {	-- Decay-Infused Tanning Oil
 				["coord"] = { 16.7, 38.7, THE_AZURE_SPAN },
 				-- ["questID"] = 70266,
 				["g"] = {
 					i(198658),	-- Decay-Infused Tanning Oil
+				},
+			}),
+			o(380518, {	-- Dislodged Dragoneye
+				["coord"] = { 60.5, 57.9, THE_AZURE_SPAN },
+				["g"] = {
+					i(198626),	-- Dislodged Dragoneye
 				},
 			}),
 			o(381158, {	-- Gnoll Fiend Flail
@@ -84,6 +102,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- ["questID"] = 70237,
 				["g"] = {
 					i(198103),	-- Recipe: Snow in a Cone (RECIPE!)
+				},
+			}),
+			o(381353, {	-- Stone Dragontooth
+				["coord"] = { 69.2, 47.6, THE_AZURE_SPAN },
+				["g"] = {
+					i(199842),	-- Stone Dragontooth
+				},
+			}),
+			o(381354, {	-- Wrapped Gold Band
+				["coord"] = { 47.3, 24.6, THE_AZURE_SPAN },
+				["g"] = {
+					i(199840),	-- Wrapped Gold Band
 				},
 			}),
 			o(380587, {	-- Crate of Treated Hides

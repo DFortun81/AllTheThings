@@ -11,6 +11,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200065),	-- Adventurer's Lost Soap Bar
 				},
 			}),
+			o(379296, {	-- Broken Banding
+				["coord"] = { 81.0, 30.4, THE_WAKING_SHORES },
+				["g"] = {
+					i(198475),	-- Broken Banding
+				},
+			}),
 			n(195939, {	-- Bubble Drifter
 				["description"] = "Use nearby Fragrant Plant to attract Bubble Drifter.",
  				["questID"] = 705999,
@@ -37,7 +43,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(381355, {	-- Finely Carved Wing
 				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
-				--["questID"] = ,
 				["g"] = {
 					i(199841),	-- Finely Carved Wing
 				},
@@ -98,6 +103,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 					i(194650),	-- Design: Jeweled Onyx Whelpling (RECIPE!)
 					i(200867),	-- Glimmering Neltharite Cluster
+				},
+			}),
+			o(380430, {	-- Tail Fragment
+				["coord"] = { 58.2, 68.3, THE_WAKING_SHORES },
+				["g"] = {
+					i(198543),	-- Tail Fragment
 				},
 			}),
 			o(380840, {	-- Torn Riding Pack

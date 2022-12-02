@@ -47,6 +47,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
+			o(380429, {	-- Golden Claw
+				["coord"] = { 38.8, 45.01, THALDRASZUS },
+				["g"] = {
+					i(198540),	-- Golden Claw
+				},
+			}),
+			o(381361, {	-- Precious Stone Fragment
+				["coord"] = { 57.1, 64.6, THALDRASZUS },
+				["g"] = {
+					i(199893),	-- Precious Stone Fragment
+				},
+			}),
 			o(381107, {	-- Sand Pile
 				["coord"] = { 58.2, 80.1, THALDRASZUS },
 				-- ["questID"] = ,
