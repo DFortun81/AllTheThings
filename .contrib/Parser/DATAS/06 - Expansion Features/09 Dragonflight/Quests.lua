@@ -210,9 +210,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		q(72751, {	-- Adventure Guide: Copper Coin
 			["name"] = "Adventure Guide: Copper Coin",
 		}),
-		q(72746, { -- A Piece of Silver
+		q(72746, {	-- A Piece of Silver
 			["description"] = "Available on the next reset after \"A Piece of Copper\", from the adventure guide.",
 		}),
-		-- TODO: Find adventure guide id of above
+		q(72747, {	-- A Piece of Gold
+			["description"] = "Available on the next reset after \"A Piece of Silver\", from the adventure guide.",
+		}),
 	}),
 })));
