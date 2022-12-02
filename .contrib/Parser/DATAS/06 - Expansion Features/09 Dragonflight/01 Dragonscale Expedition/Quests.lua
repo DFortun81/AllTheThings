@@ -120,37 +120,37 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 				-- RENOWN 1 --
 			q(71008, {	-- Wanted: Stoneheart's Stone Heart
-				["provider"] = { "o", 381670 },	-- Archivist's Request
+				["provider"] = { "o", 381670 },	-- Archivists' Request
 				["coord"] = { 47.8, 82.2, THE_WAKING_SHORES },
 			}),
 				-- RENOWN 2 --
 			q(71011, {	-- Wanted: Torrential Lily
-				["provider"] = { "o", 381672 },	-- Archivist's Request
+				["provider"] = { "o", 381672 },	-- Archivists' Request
 				["coord"] = { 48.0, 82.1, THE_WAKING_SHORES },
 			}),
 			q(70992, {	-- Wanted: Lost Tuskaar Kite
-				["provider"] = { "o", 381650 },	-- Archivist's Request
+				["provider"] = { "o", 381650 },	-- Archivists' Request
 				["coord"] = { 48.0, 82.2, THE_WAKING_SHORES },
 			}),
 			q(71005, {	-- Wanted: Fangfall
-				["provider"] = { "o", 381668 },	-- Archivist's Request
+				["provider"] = { "o", 381668 },	-- Archivists' Request
 				["coord"] = { 49.0, 82.7, THE_WAKING_SHORES },
 			}),
 
 
 			q(71004, {	-- Wanted: Ohuna Mass-Binding Totem
-				["provider"] = { "o", 381667 },	-- Archivist's Request
+				["provider"] = { "o", 381667 },	-- Archivists' Request
 				["coord"] = { 47.1, 82.8, THE_WAKING_SHORES },
 			}),
 			q(71007, {	-- Wanted: Disoriented Wishtail
-				["provider"] = { "o", 381669 },	-- Archivist's Request
+				["provider"] = { "o", 381669 },	-- Archivists' Request
 				["coord"] = { 47.0, 83.5, THE_WAKING_SHORES },
 				["g"] = {
 					i(198490),	-- Bushwhacker's Compass
 				},
 			}),
 			q(71010, {	-- Wanted: Temporal Spyglass
-				["provider"] = { "o", 381671 },	-- Archivist's Request
+				["provider"] = { "o", 381671 },	-- Archivists' Request
 				["coord"] = { 48.0, 83.7, THE_WAKING_SHORES },
 			}),
 		}),
