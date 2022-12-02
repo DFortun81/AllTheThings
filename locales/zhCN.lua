@@ -1081,10 +1081,16 @@ for key, value in pairs({
 	[148502] = "|cFFFFFFFF第1步:|r 第9页",	-- |cFFFFFFFFStep 1:|r Page 9
 	--TODO: [148503] = "Fire Plume Ridge Hot Spot",	-- Fire Plume Ridge Hot Spot
 	[148504] = "明显的墓碑",	-- A Conspicuous Gravestone
+	[148513] = "辛耶尔石板",	-- Tablet of Jin'yael	--TODO: This was taken from wotlk Wowhead
+	[148514] = "玛科里石板",	-- Tablet of Markri	--TODO: This was taken from wotlk Wowhead
+	[148515] = "塞尔哈石板",	-- Tablet of Sael'hai	--TODO: This was taken from wotlk Wowhead
+	[148516] = "贝萨玛拉石板",	-- Tablet of Beth'Amara	--TODO: This was taken from wotlk Wowhead
 	[149036] = "玛尔冯的箱子",	-- Marvon's Chest
 	[149502] = "黑龙的财宝",	-- Hoard of the Black Dragonflight	--TODO: This was taken from wotlk Wowhead
 	[151286] = "卡多雷召唤宝典",	-- Kaldorei Tome of Summoning	--TODO: This was taken from wotlk Wowhead
 	[152095] = "月牙百合花",	-- Moonpetal Lily	--TODO: This was taken from wotlk Wowhead
+	[152622] = "艾萨莱特晶体",	-- Azsharite Formation
+	[153123] = "基姆加尔的设备",	-- Kim'jael's Equipment	--TODO: This was taken from wotlk Wowhead
 	[160836] = "古物宝库",	-- Relic Coffer
 	[161495] = "秘密保险箱",	-- Secret Safe
 	[161504] = "小背包",	-- A Small Pack	--TODO: This was taken from wotlk Wowhead
