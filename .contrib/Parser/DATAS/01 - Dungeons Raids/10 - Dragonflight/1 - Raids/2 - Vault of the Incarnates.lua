@@ -41,6 +41,9 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						16442,	-- Incubation Extermination
 						16451,	-- The Ol Raszle Daszle
 					}},
+					["g"] = {
+						i(192806),	-- Raging Magmammoth
+					},
 				}),
 				ach(16395),	-- Vaulternative Fashion
 				-- Guild Achievements

@@ -1585,7 +1585,7 @@ i(192774, 374097);	-- [PH] Water Salamander Pink
 i(192781, 374140);	-- PH Lava Slug Blue
 i(192782, 374142);	-- PH Lava Slug Yellow
 i(192785, 374157);	-- PH Lava Snail Blue
-i(192786, 374162);	-- PH Lava Snail Yellow
+i(192786, 374162);	-- Scrappy Worldsnail
 i(192789, 374172);	-- [PH] Mammoth V2 Gray
 i(192788, 374181);	-- [PH] Mammoth V2 Blue
 i(192790, 374194);	-- [PH] Mammoth V2 Green
@@ -1595,7 +1595,7 @@ i(192796, 374204);	-- PH Thunder Lizard Light
 i(192801, 374255);	-- PH Primal Tallstrider White
 i(192802, 374258);	-- PH Primal Tallstrider Black
 i(192803, 374259);	-- PH Primal Tallstrider Red
-i(192806, 374275);	-- PH Lava Mammoth Red
+i(192806, 374275);	-- Raging Magmammoth
 i(192807, 374278);	-- PH Lava Mammoth Yellow
 
 i(0, 376898);	-- [PH] Black Armored River Otter

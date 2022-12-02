@@ -714,7 +714,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192802),	-- PH Primal Tallstrider Black
 			i(192803),	-- PH Primal Tallstrider Red
 			i(192804),	-- Restless Hornstrider
-			i(192806),	-- [PH] Lava Mammoth Red
 			i(192807),	-- PH Lava Mammoth Yellow
 			i(192111),	-- Renewed Proto-Drake: Red Scales
 			i(192523),	-- Renewed Proto-Drake: Green Scales
@@ -2423,7 +2422,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192802, 374258);	-- PH Primal Tallstrider Black
 			i(192803, 374259);	-- PH Primal Tallstrider Red
 			i(192804, 374263);	-- PH Primal Tallstrider Green
-			i(192806, 374275);	-- PH Lava Mammoth Red
 			i(192807, 374278);	-- PH Lava Mammoth Yellow
 		}),
 		--]]
