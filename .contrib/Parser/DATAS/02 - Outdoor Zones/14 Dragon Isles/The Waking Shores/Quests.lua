@@ -1195,6 +1195,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 66116 },	-- The Primary Threat
 					["coord"] = { 58.9, 76.6, THE_WAKING_SHORES },
 				}),
+				q(67027, {	-- Death's Shadow
+					["provider"] = { "n", 190985 },	-- Death's Shadow
+					["coord"] = { 29.6, 56.7, THE_WAKING_SHORES },
+				}),
 				q(65994, {	-- Djaradin Djustice
 					["sourceQuests"] = {
 						65990,	-- Deliver Whelps From Evil
@@ -1209,6 +1213,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(70648, {	-- Firava the Rekindler
 					["provider"] = { "n", 195915 },	-- Firava the Rekindler
 					["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },
+				}),
+				q(67015, {	-- Forging the Answer
+					["coord"] = { 27.4, 60.8, THE_WAKING_SHORES },
 				}),
 				q(72130, {	-- Forgotten Gryphon
 					["provider"] = { "n", 193154 },	-- Forgotten Gryphon
@@ -1498,9 +1505,19 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	}),
 })));
 
---[[
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THE_WAKING_SHORES, {
+		q(72096),	-- Release Kite at Wingrest Embassy
+		q(72097),	-- Release Kite at Skytop Observatory
+		q(72098),	-- Release Kite at Crumbling Life Archway
+		q(72099),	-- Release Kite at Hatchery Observatory
+		q(72100),	-- Release Kite at Obsidian Observatory
+		q(72101),	-- Release Kite at Apex Canopy
+		q(72102),	-- Release Kite at Concord Observatory
+		q(72103),	-- Release Kite at The Overflowing Spring
+		q(72104),	-- Release Kite at Uktulut Backwater
+		q(72105),	-- Release Kite at Life-Binder Conservatory
+--[[
 		q(70709),	-- Promising to Save Wu'de Prepfoot during The Shadow of His Wings(65691)
 		q(70872),	-- Popped After A Sledgehammer of a Solution(66108A) and Don't Be So Shellfish (66106)
 		q(70872),	-- After completing A Quack In Time and the other quests quakc
@@ -1511,9 +1528,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72177),	-- Mr.Nibbles
 		q(72179),	-- Lord Firegiggle
 		q(72178),	-- Baron von Swoopenbite
-
-
-		q(72096),	-- Release Kite at Wingrest Embassy
+--]]
 	}),
 }));
---]]
