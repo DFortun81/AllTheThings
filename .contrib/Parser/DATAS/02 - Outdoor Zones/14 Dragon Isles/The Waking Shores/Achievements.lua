@@ -156,6 +156,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				crit(11),	-- Wild Coast
 				crit(12),	-- Wild Preserve
 			}),
+			ach(16323, {	 -- Fragment of History
+				crit(2),	-- Tail Fragment
+				crit(3),	-- Broken Banding
+				crit(6),	-- Finely Carved Wing
+			}),
 			ach(16409),	-- Let's Get Quacking
 			ach(16401),	-- Sojourner of the Waking Shores
 			ach(16584, {	-- Symbols of Hope

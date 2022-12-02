@@ -1140,6 +1140,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 59.7, 51.2, THE_WAKING_SHORES },
 			}),
 			q(70231, {	-- 
+				["name"] = "Talk to Emilia Bellocq",
 				["description"] = "Talk to Emilia Bellocq and chose her dialogue option to complete this quest and unlock the objects required to complete achievement Fragments of History",
 				["provider"] = { "n", 193915 },	-- Emilia Bellocq
 				["coord"] = { 75.4, 34.0, THE_WAKING_SHORES },
