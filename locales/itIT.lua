@@ -1059,10 +1059,16 @@ for key,value in pairs({
 	[148502] = "|cFFFFFFFFStep 1:|r Pagina 9",	-- |cFFFFFFFFStep 1:|r Page 9
 	--TODO: [148503] = "Fire Plume Ridge Hot Spot",	-- Fire Plume Ridge Hot Spot
 	[148504] = "Lapide Notevole",	-- A Conspicuous Gravestone
+	[148513] = "Tablet of Jin'yael",	-- Tablet of Jin'yael	--TODO: This was taken from wotlk Wowhead
+	[148514] = "Tablet of Markri",	-- Tablet of Markri	--TODO: This was taken from wotlk Wowhead
+	[148515] = "Tablet of Sael'hai",	-- Tablet of Sael'hai	--TODO: This was taken from wotlk Wowhead
+	[148516] = "Tablet of Beth'Amara",	-- Tablet of Beth'Amara	--TODO: This was taken from wotlk Wowhead
 	[149036] = "Cassa di Marvon",	-- Marvon's Chest
 	[149502] = "Hoard of the Black Dragonflight",	-- Hoard of the Black Dragonflight	--TODO: This was taken from wotlk Wowhead
 	[151286] = "Kaldorei Tome of Summoning",	-- Kaldorei Tome of Summoning	--TODO: This was taken from wotlk Wowhead
 	[152095] = "Moonpetal Lily",	-- Moonpetal Lily	--TODO: This was taken from wotlk Wowhead
+	[152622] = "Formazione di Azsharite",	-- Azsharite Formation
+	[153123] = "Kim'jael's Equipment",	-- Kim'jael's Equipment	--TODO: This was taken from wotlk Wowhead
 	[160836] = "Reliquiario",	-- Relic Coffer
 	[161495] = "Cassaforte Segreta",	-- Secret Safe
 	[161504] = "A Small Pack",	-- A Small Pack	--TODO: This was taken from wotlk Wowhead

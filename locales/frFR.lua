@@ -1066,10 +1066,16 @@ for key,value in pairs({
 	[148502] = "|cFFFFFFFFÉtape 1:|r Page 9",	-- |cFFFFFFFFStep 1:|r Page 9
 	--TODO: [148503] = "Fire Plume Ridge Hot Spot",	-- Fire Plume Ridge Hot Spot
 	[148504] = "Une tombe ostentatoire",	-- A Conspicuous Gravestone
+	[148513] = "Tablette de Jin'yael",	-- Tablet of Jin'yael
+	[148514] = "Tablette de Markri",	-- Tablet of Markri
+	[148515] = "Tablette de Sael'hai",	-- Tablet of Sael'hai
+	[148516] = "Tablette de Beth'Amara",	-- Tablet of Beth'Amara
 	[149036] = "Coffre de Marvon",	-- Marvon's Chest
 	[149502] = "Trésor du Vol noir",	-- Hoard of the Black Dragonflight
 	[151286] = "Tome d'invocation kaldorei",	-- Kaldorei Tome of Summoning
 	[152095] = "Lys pétale de lune",	-- Moonpetal Lily
+	[152622] = "Formation d'azsharite",	-- Azsharite Formation
+	[153123] = "Equipement de Kim'jael",	-- Kim'jael's Equipment
 	[160836] = "Coffret à relique",	-- Relic Coffer
 	[161495] = "Coffre secret",	-- Secret Safe
 	[161504] = "Un petit paquet",	-- A Small Pack

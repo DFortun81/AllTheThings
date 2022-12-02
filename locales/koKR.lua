@@ -1067,10 +1067,16 @@ for key,value in pairs({
 	[148502] = "|cFFFFFFFFStep 1:|r 9쪽",	-- |cFFFFFFFFStep 1:|r Page 9
 	--TODO: [148503] = "Fire Plume Ridge Hot Spot",	-- Fire Plume Ridge Hot Spot
 	[148504] = "눈에 띄는 묘비",	-- A Conspicuous Gravestone
+	[148513] = "진야엘 서판",	-- Tablet of Jin'yael	--TODO: This was taken from wotlk Wowhead
+	[148514] = "마크리 서판",	-- Tablet of Markri	--TODO: This was taken from wotlk Wowhead
+	[148515] = "샤엘하이 서판",	-- Tablet of Sael'hai	--TODO: This was taken from wotlk Wowhead
+	[148516] = "베스아마라 서판",	-- Tablet of Beth'Amara	--TODO: This was taken from wotlk Wowhead
 	[149036] = "마본의 궤짝",	-- Marvon's Chest
 	[149502] = "검은용군단의 보물",	-- Hoard of the Black Dragonflight	--TODO: This was taken from wotlk Wowhead
 	[151286] = "칼도레이 소환의 고서",	-- Kaldorei Tome of Summoning	--TODO: This was taken from wotlk Wowhead
 	[152095] = "달봉우리 백합",	-- Moonpetal Lily	--TODO: This was taken from wotlk Wowhead
+	[152622] = "아즈샤리트 결정체",	-- Azsharite Formation
+	[153123] = "킴야엘의 장비",	-- Kim'jael's Equipment	--TODO: This was taken from wotlk Wowhead
 	[160836] = "유물 금고",	-- Relic Coffer
 	[161495] = "비밀 금고",	-- Secret Safe
 	[161504] = "작은 배낭",	-- A Small Pack	--TODO: This was taken from wotlk Wowhead
