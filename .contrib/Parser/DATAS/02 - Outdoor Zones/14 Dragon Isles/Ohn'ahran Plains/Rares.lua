@@ -119,7 +119,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193669, {	-- Prozela Galeshot
 				["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
-				-- ["questID"] = 69968,
+				["questID"] = 71240, -- also 72815 ?
 				["g"] = {
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 				},
@@ -191,7 +191,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(192949, {	-- Skaara
 				["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
-				-- ["questID"] = 70783,
+				["questID"] = 72847,
 				["g"] = {
 					i(200186),	-- Amberquill Shroud
 					i(200442),	-- Basilisk Hide Jerkin

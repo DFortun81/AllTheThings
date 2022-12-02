@@ -14,14 +14,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 				["repeatable"] = true,
-				["cost"] = { { "i", 200093, 1 }, }, 	-- 1xCentaur Hunting Trophy
+				["cost"] = { { "i", 200093, 1 }, }, 	-- 1x Centaur Hunting Trophy
 			}),
 			q(70929, {	-- More Hunting Trophies
 				["description"] = "Requires Renown 2.",
 				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 				["repeatable"] = true,
-				["cost"] = { { "i", 200093, 5 }, }, 	-- 5xCentaur Hunting Trophy
+				["cost"] = { { "i", 200093, 5 }, }, 	-- 5x Centaur Hunting Trophy
 			}),
 				-- RENOWN 3	--
 			q(72117, {	-- Cultural Exchange
@@ -50,12 +50,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(197610),	-- Windborne Velocidrake: Yellow Horns
 				},
 			}),
-				-- RENOWN 6	--
 			q(71231, {	-- Call of the Hunt
-				["description"] = "Requires Renown 6. Spawns Anywhere on Dragon Isles.",
+				["description"] = "Requires Renown 5. Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197627 },	-- Roki
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
+				-- RENOWN 6	--
 			q(70501, {	-- License to Hunt
 				["description"] = "Requires Renown 6.",
 				["sourceQuests"] = { 71231 },	-- Call of the Hunt

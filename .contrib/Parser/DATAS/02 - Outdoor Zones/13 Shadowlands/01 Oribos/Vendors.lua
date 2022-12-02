@@ -238,13 +238,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							currency(ANIMA),	-- Reservoir Anima
 						},
 					}),
-					i(191302, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Bottled Night Sky
+					i(191302, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_DF_REL } }, {	-- Bottled Night Sky
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
 							i(188957),	-- Genesis Mote
 						},
 					})),
-					i(187503, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Bundle of Archived Research
+					i(187503, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", REMOVED_DF_REL } }, {	-- Bundle of Archived Research
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
 							currency(1931),	-- Cataloged Research
@@ -254,7 +254,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["timeline"] = { "added 9.2.0" }
 					}),
-					i(191030, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cosmic Flux Parcel
+					i(191030, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_DF_REL } }, {	-- Cosmic Flux Parcel
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
 							currency(2009),	-- Cosmic Flux
@@ -268,7 +268,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
 						["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
 					}),
-					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Korthite Crystal Geode
+					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", REMOVED_DF_REL } }, {	-- Korthite Crystal Geode
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
 						["g"] = {
 							i(186017),	-- Korthite Crystal
@@ -282,54 +282,54 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					})),
 					i(191303, {	-- Overflowing Chest of Riches
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
-						["timeline"] = { "added 9.2.0" }
+						["timeline"] = { "added 9.2.0", REMOVED_DF_REL }
 					}),
 					i(187707, {	-- Progentior Essentia
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
-						["timeline"] = { "added 9.2.0" }
+						["timeline"] = { "added 9.2.0", REMOVED_DF_REL }
 					}),
 					i(185832, {	-- Shipment of Elethium Ore
 						["cost"] = { { "c", 1191, 750 } },	-- 750x Valor
-						["timeline"] = { "added 9.0.5" },
+						["timeline"] = { "added 9.0.5", REMOVED_DF_REL },
 						["g"] = {
 							i(171833),	-- Elethium Ore
 						},
 					}),
 					i(185765, {	-- Shipment of Heavy Callous Hide
 						["cost"] = { { "c", 1191, 750 } },	-- 750x Valor
-						["timeline"] = { "added 9.0.5" },
+						["timeline"] = { "added 9.0.5", REMOVED_DF_REL },
 						["g"] = {
 							i(172097),	-- Heavy Callous Hide
 						},
 					}),
 					i(185833, {	-- Shipment of Lightless Silk
 						["cost"] = { { "c", 1191, 750 } },	-- 750x Valor
-						["timeline"] = { "added 9.0.5" },
+						["timeline"] = { "added 9.0.5", REMOVED_DF_REL },
 						["g"] = {
 							i(173204),	-- Lightless Silk
 						},
 					}),
 					i(187221, {	-- Soul Ash Cache
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
-						["timeline"] = { "added 9.1.0" },
+						["timeline"] = { "added 9.1.0", REMOVED_DF_REL },
 						["g"] = {
 							currency(1828),	-- Soul Ash
 						},
 					}),
 					i(187222, {	-- Stygic Singularity
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
-						["timeline"] = { "added 9.1.0" },
+						["timeline"] = { "added 9.1.0", REMOVED_DF_REL },
 						["g"] = {
 							currency(1767),	-- Stygia
 						},
 					}),
-					i(191301, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Treatise on Patterns in the Purpose
+					i(191301, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_DF_REL } }, {	-- Treatise on Patterns in the Purpose
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
 							currency(1979),	-- Cyphers of the First Ones
 						},
 					})),
-					i(191299, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Tribute of the Enlightened
+					i(191299, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_DF_REL } }, {	-- Tribute of the Enlightened
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 					})),
 				},
@@ -469,7 +469,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								["classes"] = { DRUID },
 							}),
 						}),
-						n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {
+						n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL } }, {
 							n(WEAPONS, {
 								i(192405, {	-- Eternal Aspirant's Barrier
 									["cost"] = { { "c", 1792, 450 } },
@@ -1662,7 +1662,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							i(182465),	-- Truth's Wake
 							i(182681),	-- Vengeful Shock
 						})),
-						n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {
+						n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL } }, {
 							n(WEAPONS, {
 								i(192292, {	-- Eternal Gladiator's Ballista
 									["cost"] = { { "c", 1602, 1800 } },

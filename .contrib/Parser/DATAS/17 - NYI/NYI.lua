@@ -454,7 +454,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200676),	-- Static-Charged Scale
 			i(200679),	-- Essence of Somnikus's Shade
 			i(200682),	-- Hardened Scale Shoulderguards
-			i(200683),	-- Legguards of the Deep Strata
 			i(200687),	-- Stormshale Cuffs
 			i(200688),	-- Tights of Twisting Winds
 			i(200689),	-- Rimetalon Band
@@ -737,7 +736,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193905),	-- Iskaaran Trading Ledger
 			i(193907),	-- Chipped Tyrstone
 			i(193909),	-- Ancient Gem Fragments
-			i(194039),	-- Heated Ore Sample
 			i(194040),	-- Slateskin Hide
 			i(194041),	-- Driftbloom Sprout
 			i(194054),	-- Dredged Seedling
@@ -1262,7 +1260,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200070),	-- Obsidian Strongbox
 			i(200071),	-- Sacred Tuskarr Totem
 			i(200073),	-- Valdrakken Treasures
-			i(200093),	-- Centaur Hunting Trophy
 			i(200094),	-- Caravan Strongbox
 			i(200095),	-- Supply Laden Soup Pot
 			i(200184),	-- Nokhud Battle Helm

@@ -148,10 +148,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				n(189289, {	-- Penumbrus
 					["description"] = "Underground",
 					["coord"] = { 24.4, 54.5, THE_WAKING_SHORES },
-					-- ["questID"] = 70212,
-					-- ["g"] = {
-
-					-- },
+					["questID"] = 74019,
+					["g"] = {
+						i(200683),	-- Legguards of the Deep Strata
+					},
 				}),
 				n(193232, {	-- Rasnar the War Ender
 					["coord"] = { 30.2, 60.4, THE_WAKING_SHORES },

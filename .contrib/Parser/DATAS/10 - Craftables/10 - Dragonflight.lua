@@ -1914,6 +1914,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(189143),	-- Draconium Ore+
 			i(188658),	-- Draconium Ore++
 			i(190311),	-- Draconium Ore+++
+			i(194039),	-- Heated Ore Sample
 			i(201301),	-- Iridescent Ore
 			i(201300),	-- Iridescent Ore Fragments
 			i(190312),	-- Khaz'gorite Ore+

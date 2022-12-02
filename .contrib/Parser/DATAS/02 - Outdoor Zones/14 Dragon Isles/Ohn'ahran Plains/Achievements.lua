@@ -371,25 +371,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["crs"] = { 196650 },	-- Katei
 					["coord"] = { 64.0, 41.2, OHNAHRAN_PLAINS },
 				}),
-				crit(11, {	-- Nahma
-					["crs"] = { 192687 },	-- Nahma
-					["coord"] = { 61.0, 52.3, OHNAHRAN_PLAINS },
-				}),
-				crit(12, {	-- Redfur
+				crit(11, {	-- Laila
 					["crs"] = { 190043 },	-- Laila/Redfur
 					["coord"] = { 80.7, 58.9, OHNAHRAN_PLAINS },
+				}),
+				crit(12, {	-- Nahma
+					["crs"] = { 192687 },	-- Nahma
+					["coord"] = { 61.0, 52.3, OHNAHRAN_PLAINS },
 				}),
 				crit(13, {	-- Pesca
 					["crs"] = { 189278 },	-- Pesca
 					["coord"] = { 84.2, 27.1, OHNAHRAN_PLAINS },
-				}),
-				crit(14, {	-- Rotti
-					["crs"] = { 191405 },	-- Rotti
-					["coord"] = { 81.1, 58.4, OHNAHRAN_PLAINS },
-				}),
-				crit(14, {	-- Rotti
-					["crs"] = { 191405 },	-- Rotti
-					["coord"] = { 81.1, 58.4, OHNAHRAN_PLAINS },
 				}),
 				crit(14, {	-- Rotti
 					["crs"] = { 191405 },	-- Rotti

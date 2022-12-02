@@ -47,10 +47,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193198, {	-- Captain Lancer
 				["coord"] = { 26.9, 76.1, THE_WAKING_SHORES },
-				-- ["questID"] = 72127,
-				-- ["g"] = {
-
-				-- },
+				["questID"] = 73075,
+				["g"] = {
+					i(200757),	-- Qalashi War-Helm
+				},
 			}),
 			n(191611, {	-- Dragonhunter Igordan
 				["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
@@ -88,7 +88,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193154, {	-- Forgotten Gryphon
 				["coord"] = { 33.1, 76.3, THE_WAKING_SHORES },
-				-- ["questID"] = 72130,
+				["questID"] = 73073,
 				-- ["g"] = {
 
 				-- },
@@ -122,7 +122,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193263, {	-- Helmet Missingway
 				["coord"] = { 43.4, 73.6, THE_WAKING_SHORES },
-				-- ["questID"] = ,
+				["questID"] = 73880,
 				-- ["g"] = {
 
 				-- },

@@ -273,6 +273,16 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					i(9295),	-- Recipe: Invisibility Potion
 					i(3395),	-- Recipe: Limited Invulnerability Potion
 				}),
+				i(190954, {	-- Serevite Lockbox
+					["timeline"] = TIMELINE_DF_REL,
+					["sym"] = {{"select","itemID",
+						-- add notable Item IDs here
+						-- 12345,	-- Item name
+					}},
+					-- do not list raw content unless lockbox is only confirmed source
+					-- ["groups"] = {
+					-- },
+				}),
 				i(180533, {	-- Solenium Lockbox
 					["timeline"] = { "added 9.0.1.36216" },
 				}),

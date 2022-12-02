@@ -110,7 +110,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
-			o(380653, {	-- Well-Preserved Bone
+			o(381484, {	-- Well-Preserved Bone
 				["coord"] = { 66.2, 55.3, THE_WAKING_SHORES },
 				--["questID"] = ,
 				["g"] = {

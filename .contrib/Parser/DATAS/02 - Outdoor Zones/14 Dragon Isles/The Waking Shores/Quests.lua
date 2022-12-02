@@ -409,6 +409,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(194360),	-- Expedition Mercenary's Belt
 						i(194359),	-- Expedition Researcher's Sash
 						i(194361),	-- Field Scout's Belt
+						i(191131),	-- Oathstone Fragment
 					},
 				}),
 				q(66056, {	-- Forging A New Future
@@ -864,7 +865,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 37.4, 46.7, THE_WAKING_SHORES },
 					}),
 					q(65687, {	-- Punching Up
-						["sourceQuests"] = { 65782 },	-- Under Lock and Key
+						["sourceQuests"] = { 66079 },	-- Wrathion Awaits
 						["provider"] = { "n", 185627 },	-- Ingot
 						["coord"] = { 39.4, 48.3, THE_WAKING_SHORES },
 						["g"] = {
@@ -1160,6 +1161,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 187111 },	-- Ancient Hornswog
 					["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
 				}),
+				q(72127, {	-- Captain Lancer
+					["provider"] = { "n", 193198 },	-- Captain Lancer
+					["coord"] = { 27.3, 76.5, THE_WAKING_SHORES },
+				}),
 				q(66117, {	-- Clear the Battlefield
 					["sourceQuests"] = { 66116 },	-- The Primary Threat
 					["coord"] = { 58.9, 76.6, THE_WAKING_SHORES },
@@ -1178,6 +1183,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(70648, {	-- Firava the Rekindler
 					["provider"] = { "n", 195915 },	-- Firava the Rekindler
 					["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },
+				}),
+				q(72130, {	-- Forgotten Gryphon
+					["provider"] = { "n", 193154 },	-- Forgotten Gryphon
+					["coord"] = { 32.8, 75.9, THE_WAKING_SHORES },
 				}),
 				q(66960, {	-- Klozicc the Ascended
 					["provider"] = { "n", 187209 },	-- Klozicc the Ascended

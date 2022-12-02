@@ -6,9 +6,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		n(RARES, {
 			n(193243, {	-- Acrosoth
 				["coord"] = { 40.5, 78.3, THALDRASZUS },
-				-- ["questID"] = 72114,
+				["questID"] = 72834,
 				["g"] = {
 					i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
+					i(200228),	-- Protoscale Pauldrons
 				},
 			}),
 			n(193664, {	-- Ancient Protector
@@ -77,8 +78,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193273, {	-- Liskron the Dazzling
 				["coord"] = { 36.7, 72.8, THALDRASZUS },
-				-- ["questID"] = 72116,
+				["questID"] = 72842,
 				["g"] = {
+					i(200249),	-- Mage's Chewed Wand (maybe common drop?)
 					i(200195),	-- Thunderscale Legguards
 				},
 			}),

@@ -836,6 +836,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 65895 },	-- Competing Company
 						["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
 						["coord"] = { 62.1, 16.3, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(193601),	-- The Black Locus
+						},
 					}),
 					q(66700, {	-- The Black Lotus
 						["sourceQuests"] = { 65898 },	-- Proto Problems
@@ -847,6 +850,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							crit(8, {	-- Nelthazan Ruins
 								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
 							}),
+							i(198354),	-- The Black Locus
 						},
 					}),
 				},
@@ -1043,6 +1047,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(BONUS_OBJECTIVES, {
+				q(72114, {	-- Acrosoth
+					["provider"] = { "n", 193243 },	-- Acrosoth
+					["coord"] = { 40.5, 78.3, THALDRASZUS },
+				}),
+				q(69968, {	-- Prozela Galeshot
+					["provider"] = { "n", 193669 },	-- Prozela Galeshot
+					["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
+				}),
+				q(70783, {	-- Skaara
+					["provider"] = { "n", 192949 },	-- Skaara
+					["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
+				}),
 				q(65892, {	-- The Sundered Asunder
 					-- ["sourceQuests"] = {  },	--
 					["coord"] = { 64.0, 17.8, OHNAHRAN_PLAINS },
@@ -1222,8 +1238,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(66887),	-- 	Choose Trophy from First Hunt (Renewal of Vows 66783)
 		q(66889),	-- 	Choose Eagle Feather (Renewal of Vows 66783)
 		q(66888),	-- 	Choose Blood (Renewal of Vows 66783)
-
-		q(72847),	-- Probably because in loot there was i196976 (Cliffside Wylderdrake: Head Mane) (loot from 192949 / Skaara?)
 
 		-- Has to do with the Chest Event In the South
 		--q(70511),	-- complete??

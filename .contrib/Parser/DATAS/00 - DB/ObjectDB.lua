@@ -2515,6 +2515,7 @@ _.ObjectNames = {
 	[381358] = "Stone Tablet",
 	[381359] = "Stone Tablet",
 	[381483] = "Marmoni's Prize",
+	[381484] = "Well-Preserved Bone",
 	[381485] = "Adventurer's Lost Soap Bar",
 	[381650] = "Archivists' Request",
 	[381653] = "Fang Flap Fire Signups",

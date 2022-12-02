@@ -36,6 +36,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 			i(193360),	-- Centaur's Trophy Necklace
 			i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)
+
+			i(200093),	-- Centaur Hunting Trophy
 		}),
 	}),
 })));
