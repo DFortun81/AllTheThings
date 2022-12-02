@@ -166,35 +166,35 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 
 			-- Weekly
-			q(70750, {	-- Making a Name
+			q(70750, {	-- Aiding the Accord
 				["sourceQuests"] = { 71232 },	-- Renown of the Dragon Isles
 				["provider"] = { "n", 196499 },	-- Therazal
 				["coord"] = { 50.7, 58.0, THALDRASZUS },
 				["isWeekly"] = true,
 			}),
 			q(72068, {	-- Aiding the Accord: A Feast For All
-				["sourceQuests"] = { 70750 },	-- Making a Name
+				["sourceQuests"] = { 70750 },	-- Aiding the Accord
 				["coord"] = { 50.7, 58.0, VALDRAKKEN },
 				["g"] = {
 					i(200073),	-- Valdrakken Treasures
 				},
 			}),
 			q(72373, {	-- Aiding the Accord: The Hunt is On
-				["sourceQuests"] = { 70750 },	-- Making a Name
+				["sourceQuests"] = { 70750 },	-- Aiding the Accord
 				["coord"] = { 50.7, 58.0, VALDRAKKEN },
 				["g"] = {
 					i(200073),	-- Valdrakken Treasures
 				},
 			}),
 			q(72374, {	-- Aiding the Accord: Dragonbane Keep
-				["sourceQuests"] = { 70750 },	-- Making a Name
+				["sourceQuests"] = { 70750 },	-- Aiding the Accord
 				["coord"] = { 50.7, 58.0, VALDRAKKEN },
 				["g"] = {
 					i(200073),	-- Valdrakken Treasures
 				},
 			}),
 			q(72375, {	-- Aiding the Accord: The Isles Call
-				["sourceQuests"] = { 70750 },	-- Making a Name
+				["sourceQuests"] = { 70750 },	-- Aiding the Accord
 				["coord"] = { 50.7, 58.0, VALDRAKKEN },
 				["g"] = {
 					i(200073),	-- Valdrakken Treasures
