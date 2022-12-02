@@ -787,7 +787,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "n", 189045 },	-- Mara
 						["coord"] = { 49.6, 58.7, THALDRASZUS },
 						["g"] = {
+							i(195192),	-- Sister's Gift
+							i(195193),	-- Sister's Keeper
+							i(195190),	-- Sister's Token
 							i(195191),	-- Sister's Embrace
+							crit(5, {	-- Tyrhold Reservoir
+								["achievementID"] = 16398,	-- Sojourner of Thaldraszus
+							}),
 						},
 					}),
 					q(70139, {	-- Where There's a Ward, There's a Way
@@ -797,15 +803,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 						["provider"] = { "n", 189045 },	-- Mara
 						["coord"] = { 49.6, 58.8, THALDRASZUS },
-						["g"] = {
-							i(195192),	-- Wardkeeper's Hauberk
-							i(195193),	-- Wardkeeper's Heartguard
-							i(195190),	-- Wardkeeper's Robe
-							i(195191),	-- Wardkeeper's Vest
-							crit(5, {	-- Tyrhold Reservoir
-								["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-							}),
-						},
 					}),
 				},
 			}),
