@@ -862,7 +862,7 @@ for key,value in pairs({
 		[-1130] = "이스카라 투스카르",										-- Iskaara Tuskarr
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "발드라켄 협의회",										-- Valdrakken Accord
-		--TODO: [-1142] = "Aerial Challenges",						-- Aerial Challenges
+		[-1142] = "비행 도전",											-- Aerial Challenges
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",

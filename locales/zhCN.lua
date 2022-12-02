@@ -871,7 +871,7 @@ for key,value in pairs({
 		[-1130] = "伊斯卡拉海象人",										-- Iskaara Tuskarr
 		[-1131] = "伊斯卡拉渔具",										-- Iskaara Fishing
 		[-1140] = "瓦德拉肯联军",											-- Valdrakken Accord
-		[-1142] = "飞行挑战",											-- Aerial Challenges
+		[-1142] = "天际挑战",											-- Aerial Challenges
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
