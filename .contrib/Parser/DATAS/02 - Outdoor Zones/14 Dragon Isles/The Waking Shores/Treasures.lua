@@ -64,7 +64,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
-			o(381045, {	-- Replica Dragon Goblet
+			o(381045, {	-- Golden Dragon Goblet
 				["coord"] = { 48.9, 51.8, THE_WAKING_SHORES },
 				["questID"] = 70600,
 				["cost"] = { { "i", 198854, 1 }, },	-- 1xArcheologist Artifact Notes
