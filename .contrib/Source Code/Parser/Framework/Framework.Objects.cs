@@ -757,6 +757,7 @@ namespace ATT
                 {2542, 185},    // Legion Cooking [8.0.1]
                 {2541, 185},    // Kul Tiran Cooking [8.0.1]
                 {2752, 185},    // Shadowlands Cooking [9.0.1]
+                {2824, 185},    // Dragon Isles Cooking [10.0.0]
 
                 // Enchanting Skills
                 {333, 333},     // Enchanting [7.3.5]
