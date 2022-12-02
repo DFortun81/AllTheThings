@@ -21,9 +21,6 @@ q(612),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(636),	-- Legends of the Earth <NYI>,		TBC: Legends of the Earth <NYI>,		CLASSIC: Legends of the Earth <NYI>
 q(729),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
 q(731),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
-q(759),	-- Wildmane Totem,		TBC: Wildmane Totem,		CLASSIC: Wildmane Totem
-q(760),	-- Wildmane Cleansing,		TBC: Wildmane Cleansing,		CLASSIC: Wildmane Cleansing
-q(781),	-- Attack on Camp Narache,		TBC: Attack on Camp Narache,		CLASSIC: Attack on Camp Narache
 q(787),	-- The New Horde,		TBC: The New Horde,		CLASSIC: The New Horde
 q(807),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(810),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -117,9 +114,6 @@ q(1509),	-- News of Dogran,		TBC: News of Dogran,		CLASSIC: News of Dogran
 q(1510),	-- News of Dogran,		TBC: News of Dogran,		CLASSIC: News of Dogran
 q(1512),	-- Love's Gift,		TBC: Love's Gift,		CLASSIC: Love's Gift
 q(1515),	-- Dogran's Captivity,		TBC: Dogran's Captivity,		CLASSIC: Dogran's Captivity
-q(1519),	-- Call of Earth,		TBC: Call of Earth,		CLASSIC: Call of Earth
-q(1520),	-- Call of Earth,		TBC: Call of Earth,		CLASSIC: Call of Earth
-q(1521),	-- Call of Earth,		TBC: Call of Earth,		CLASSIC: Call of Earth
 q(1522),	-- Call of Fire,		TBC: Call of Fire,		CLASSIC: Call of Fire
 q(1523),	-- Call of Fire,		TBC: Call of Fire,		CLASSIC: Call of Fire
 q(1524),	-- Call of Fire,		TBC: Call of Fire,		CLASSIC: Call of Fire
@@ -197,10 +191,6 @@ q(3000),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
 q(3001),	-- Seeking Strahad,		TBC: Seeking Strahad,		CLASSIC: Seeking Strahad
 q(3022),	-- Handle With Care,		TBC: Handle With Care,		CLASSIC: Handle With Care
 q(3023),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(3091),	-- Simple Note,		TBC: Simple Note,		CLASSIC: Simple Note
-q(3092),	-- Etched Note,		TBC: Etched Note,		CLASSIC: Etched Note
-q(3093),	-- Rune-Inscribed Note,		TBC: Rune-Inscribed Note,		CLASSIC: Rune-Inscribed Note
-q(3094),	-- Verdant Note,		TBC: Verdant Note,		CLASSIC: Verdant Note
 q(3111),	-- <UNUSED> [DEPRECATED],		CLASSIC: <UNUSED> [DEPRECATED]
 q(3241),	-- <NYI> <TXT><redux> Dreadmist Peak,		TBC: <NYI> <TXT><redux> Dreadmist Peak,		CLASSIC: <NYI> <TXT><redux> Dreadmist Peak
 q(3383),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -332,13 +322,6 @@ q(5710),	-- <NYI> <TXT> Troll Priest Robe,		CLASSIC: <NYI> <TXT> Troll Priest Ro
 q(5711),	-- <NYI> The Lost Ways,		CLASSIC: <NYI> The Lost Ways
 q(5712),	-- <NYI> The Lost Ways,		CLASSIC: <NYI> The Lost Ways
 q(6003),	-- <nyi> <txt> Green With Envy,		CLASSIC: <nyi> <txt> Green With Envy
-q(6061),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
-q(6065),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
-q(6066),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
-q(6067),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
-q(6087),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
-q(6088),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
-q(6089),	-- Training the Beast,		TBC: Training the Beast,		CLASSIC: Training the Beast
 q(6123),	-- Gathering the Cure,		TBC: Gathering the Cure,		CLASSIC: Gathering the Cure
 q(6128),	-- Gathering the Cure,		TBC: Gathering the Cure,		CLASSIC: Gathering the Cure
 q(6141),	-- Brother Anton,		TBC: Brother Anton,		CLASSIC: Brother Anton
@@ -734,7 +717,6 @@ q(24766),	-- The Arts of a Druid
 q(24772),	-- The Arts of a Rogue
 q(24778),	-- The Arts of a Hunter
 q(24784),	-- Learnin' tha Word
-q(24857),	-- Attack on Camp Narache
 q(24860),	-- Profitable Preservation
 q(24867),	-- [NOT USED] Lumberjack Slam Placeholder
 q(24869),	-- Deprogramming
@@ -860,8 +842,6 @@ q(26945),	-- Learning New Techniques
 q(26946),	-- A Rogue's Advantage
 q(26947),	-- A Woodsman's Training
 q(26948),	-- Moonfire
-q(27014),	-- Hallowed Note
-q(27015),	-- Consecrated Note
 q(27020),	-- The First Lesson
 q(27021),	-- The Hunter's Path
 q(27022),	-- Extinguishing the Idol

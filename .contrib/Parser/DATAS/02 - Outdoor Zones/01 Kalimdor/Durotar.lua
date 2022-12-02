@@ -1390,13 +1390,10 @@ root("Zones", m(KALIMDOR, {
 					["qg"] = 5887,	-- Canaga Earthcaller
 					["sourceQuest"] = 1516,	-- Call of Earth (1/3)
 					["coord"] = { 42.4, 69.0, DUROTAR },
-					["lvl"] = 4,
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
 					["repeatable"] = true,
-					["altQuests"] = {
-						1462, -- Earth Sapta (Mulgore)
-					},
+					["lvl"] = 4,
 					["groups"] = {
 						i(6635),	-- Earth Sapta
 					},
