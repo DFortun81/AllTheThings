@@ -104,6 +104,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198863),	-- Small Dragon Expedition Supply Pack
 				},
 			}),
+				-- RENOWN 7 --
 			q(70807, {	-- Advanced Excavation Tools
 				["description"] = "Requires Renown 7.",
 				["provider"] = { "n", 188265 },	-- Rae'ana
@@ -115,11 +116,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 				-- RENOWN 8 --
-			q(69869, {	-- A Cataloger's Paradise
-				["description"] = "Requires Renown 8. Spawns Anywhere on Dragon Isles.",
-				["provider"] = { "n", 196643 },	-- Doc Nanners
-				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
-			}),
 			q(72032, {	-- Dragonscale Expedition Supplies
 				["description"] = "Requires Renown 8.",
 				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
@@ -192,5 +188,28 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		-- q(70824),	-- Highest/Tallest Peak WingRest Embassy
+		q(72033),	-- Triggeres together with 'Advanced Excavation Tools' (70807)
+		
+		-- Achievement Dragonscale Expedition: The Highest Peaks
+		q(70823),	-- Flag at 56.0, 45.3, THE_WAKING_SHORES
+		q(70824),	-- Flag at 73.4, 38.8, THE_WAKING_SHORES
+		q(70825),	-- Flag at 43.9, 62.9, THE_WAKING_SHORES
+		q(70826),	-- Flag at 28.7, 47.7, THE_WAKING_SHORES
+		q(71204),	-- Flag at 54.8, 74.1, THE_WAKING_SHORES
+		q(70827),	-- Flag at 57.8, 30.8, OHNAHRAN_PLAINS
+		q(71207),	-- Flag at 30.4, 36.4, OHNAHRAN_PLAINS
+		q(71200),	-- Flag at 28.3, 77.6, OHNAHRAN_PLAINS
+		q(71208),	-- Flag at 86.3, 39.3, OHNAHRAN_PLAINS
+		q(71218),	-- Flag at 46.1, 25.0, THE_AZURE_SPAN
+		q(71215),	-- Flag at 31.9, 27.0, THE_AZURE_SPAN
+		q(71216),	-- Flag at 37.5, 66.2, THE_AZURE_SPAN
+		q(71220),	-- Flag at 63.1, 48.7, THE_AZURE_SPAN
+		q(71217),	-- Flag at 77.4, 18.4, THE_AZURE_SPAN
+		q(71221),	-- Flag at 74.9, 43.2, THE_AZURE_SPAN
+		q(71222),	-- Flag at 34.0, 84.9, THALDRASZUS
+		q(70024),	-- Flag at 46.1, 74.0, THALDRASZUS
+		q(70039),	-- Flag at 50.2, 81.6, THALDRASZUS
+		q(71223),	-- Flag at 65.7, 75.0, THALDRASZUS
+		q(71224),	-- Flag at 64.6, 56.7, THALDRASZUS
 	}),
 })));

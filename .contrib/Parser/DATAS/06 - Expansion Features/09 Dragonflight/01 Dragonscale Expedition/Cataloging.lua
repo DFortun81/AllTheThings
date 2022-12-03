@@ -8,15 +8,40 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16570),	-- A Legendary Album
 				ach(16572),	-- Legendary Photograph
 				ach(16573),	-- Legendary Photographs
-				ach(16566),	-- Great Shot!
 				ach(16567),	-- A Lot of Great Shots!
+				ach(16566),	-- Great Shot!
 				ach(16568),	-- Great Shots Galore!
 				ach(16560),	-- Wildlife Photographer
-				ach(16758),	-- Ready, Aim, Catalog!
 			}),
 		}),
 		n(QUESTS, {
-
+				-- RENOWN 8 --
+			q(69869, {	-- A Cataloger's Paradise
+				["description"] = "Requires Renown 8. Spawns Anywhere on Dragon Isles.",
+				["provider"] = { "n", 196643 },	-- Doc Nanners
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+			}),
+			q(72525, {	-- Basic Cataloging Gear
+				["description"] = "Requires Renown 8.",
+				["sourceQuests"] = { 69869 },	-- A Cataloger's Paradise
+				["provider"] = { "n", 187707 },	-- Cataloger Coralie
+				["coord"] = { 48.5, 82.7, THE_WAKING_SHORES },
+			}),
+			q(69870, {	-- Pictures with Purpose
+				["description"] = "Requires Renown 8.",
+				["sourceQuests"] = { 72525 },	-- Basic Cataloging Gear
+				["provider"] = { "n", 187707 },	-- Cataloger Coralie
+				["coord"] = { 48.5, 82.7, THE_WAKING_SHORES },
+			}),
+			q(65486, {	-- Picture Perfect
+				["description"] = "Requires Renown 8.",
+				["sourceQuests"] = { 69870 },	-- Pictures with Purpose
+				["provider"] = { "n", 185651 },	-- Akunda the Cataloger
+				["coord"] = { 49.9, 68.4, THE_WAKING_SHORES },
+				["g"] = {
+					ach(16758),	-- Ready, Aim, Catalog!
+				},
+			}),
 		}),
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
 

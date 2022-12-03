@@ -1184,6 +1184,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
+			q(70236, {	-- Dislodged Dragoneye
+				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
+				["provider"] = { "i", 198626 },	-- Dislodged Dragoneye
+				["coord"] = { 60.5, 57.9, THE_WAKING_SHORES },
+				["g"] = {
+					crit(1, {	-- Dislodged Dragoneye
+						["achievementID"] = 16323,	-- Fragments of History
+					}),
+				},
+			}),
 			q(70789, {	-- Finely Carved Wing
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 199841 },	-- Finely Carved Wing
@@ -1216,10 +1226,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(66076, {	-- Ancient Hornswog
 					["provider"] = { "n", 187111 },	-- Ancient Hornswog
 					["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
+					["isDaily"] = true,
 				}),
 				q(72127, {	-- Captain Lancer
 					["provider"] = { "n", 193198 },	-- Captain Lancer
 					["coord"] = { 27.3, 76.5, THE_WAKING_SHORES },
+					["isDaily"] = true,
 				}),
 				q(66117, {	-- Clear the Battlefield
 					["sourceQuests"] = { 66116 },	-- The Primary Threat
@@ -1235,26 +1247,32 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(66956, {	-- Dragonhunter Igordan
 					["provider"] = { "n", 191611 },	-- Dragonhunter Igordan
 					["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
+					["isDaily"] = true,
 				}),
 				q(70648, {	-- Firava the Rekindler
 					["provider"] = { "n", 195915 },	-- Firava the Rekindler
 					["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },
+					["isDaily"] = true,
 				}),
 				q(72130, {	-- Forgotten Gryphon
 					["provider"] = { "n", 193154 },	-- Forgotten Gryphon
 					["coord"] = { 32.8, 75.9, THE_WAKING_SHORES },
+					["isDaily"] = true,
 				}),
 				q(66960, {	-- Klozicc the Ascended
 					["provider"] = { "n", 187209 },	-- Klozicc the Ascended
 					["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
+					["isDaily"] = true,
 				}),
 				q(70979, {	-- Magmaton
 					["provider"] = { "n", 186827 },	-- Magmaton
 					["coord"] = { 40.0, 64.5, THE_WAKING_SHORES },
+					["isDaily"] = true,
 				}),
 				q(66074, {	-- Primal Scythid Queen
 					["provider"] = { "n", 184853 },	-- Primal Scythid Queen
 					["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
+					["isDaily"] = true,
 				}),
 				q(70196, {	-- Pruning the Preserve
 					["sourceQuests"] = { 66079 },	-- Wrathion Awaits
@@ -1263,10 +1281,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(70719, {	-- Shadeslash Trakken
 					["provider"] = { "n", 193271 },	-- Shadeslash Trakken
 					["coord"] = { 47.2, 73.6, THE_WAKING_SHORES },
+					["isDaily"] = true,
 				}),
 				q(70751, {	-- Terillod the Devout
 					["provider"] = { "n", 193171 },	-- Terillod the Devout
 					["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
+					["isDaily"] = true,
 				}),
 			}),
 			n(HIDDEN_QUESTS, {

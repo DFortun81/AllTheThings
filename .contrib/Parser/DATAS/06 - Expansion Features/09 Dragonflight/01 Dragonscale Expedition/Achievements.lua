@@ -8,9 +8,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Require Renown 7 and Research Cartographer's Flag at Expedition Supply Kit.",
 				["coords"] = {
 					{ 73.4, 38.8, THE_WAKING_SHORES },
-					{ 56.5, 45.1, THE_WAKING_SHORES },
+					{ 56.0, 45.3, THE_WAKING_SHORES },
 					{ 43.9, 62.9, THE_WAKING_SHORES },
-					{ 23.8, 53.1, THE_WAKING_SHORES },
+					{ 28.7, 47.7, THE_WAKING_SHORES },
 					{ 54.8, 74.1, THE_WAKING_SHORES },
 					{ 86.3, 39.3, OHNAHRAN_PLAINS },
 					{ 57.8, 30.8, OHNAHRAN_PLAINS },
@@ -20,19 +20,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					{ 46.1, 25.0, THE_AZURE_SPAN },
 					{ 37.5, 66.2, THE_AZURE_SPAN },
 					{ 63.1, 48.7, THE_AZURE_SPAN },
-					{ 72.0, 61.6, THE_AZURE_SPAN },
+					{ 74.9, 43.2, THE_AZURE_SPAN },
 					{ 77.4, 18.4, THE_AZURE_SPAN },
 					{ 65.7, 75.0, THALDRASZUS },
-					{ 66.2, 53.8, THALDRASZUS },
+					{ 64.6, 56.7, THALDRASZUS },
 					{ 50.2, 81.6, THALDRASZUS },
 					{ 46.1, 74.0, THALDRASZUS },
 					{ 34.0, 84.9, THALDRASZUS },
 				}
 			}),
 			-- TODO: There is a questline for these... Not spawning for me :( To start these
-			ach(16291),	-- An Ancient Awakening
-			ach(16292),	-- Mastering the Waygates
-
 			ach(16571),	-- Well Supplied
 		}),
 	}),

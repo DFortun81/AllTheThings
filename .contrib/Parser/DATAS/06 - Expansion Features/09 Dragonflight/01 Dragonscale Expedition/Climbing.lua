@@ -13,22 +13,26 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16623),	-- Toe Tension
 			}),
 			n(QUESTS, {
-					-- RENOWN 7 --
+					-- RENOWN 6 --
 				q(69855, {	-- A Climber's Calling
-					["description"] = "Requires Renown 7. Spawns Anywhere on Dragon Isles.",
+					["description"] = "Requires Renown 6. Spawns Anywhere on Dragon Isles.",
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
-				q(66351, {	-- Smoke Over the Mountain
+				q(72524, {	-- Basic Climbing Gear
 					["sourceQuests"] = { 69855 },	-- A Climber's Calling
+					["provider"] = { "n", 187700 },	-- Pathfinder Jab
+					["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
+				}),
+				q(66351, {	-- Smoke Over the Mountain
+					["sourceQuests"] = { 72524 },	-- Basic Climbing Gear
 					["provider"] = { "n", 187700 },	-- Pathfinder Jab
 					["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
 				}),
 				q(65421, {	-- Climb Every Mountain
 					["sourceQuests"] = { 66351 },	-- Smoke Over the Mountain
-					-- Didn trigger for me
-					--["provider"] = { "n", 187700 },	-- Pathfinder Jab
-					--["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
+					["provider"] = { "n", 181039 },	-- Rocky Dustbeard
+					["coord"] = { 62.4, 50.5, THE_WAKING_SHORES },
 					["g"] = {
 						ach(16624),	-- Which Knot Was It Again?
 					},
@@ -65,3 +69,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 	}),
 })));
+root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+	m(THE_WAKING_SHORES, {
+		q(72560),	-- Triggered after completing Climb Every Mountain (questID 65421)
+	}),
+}));
