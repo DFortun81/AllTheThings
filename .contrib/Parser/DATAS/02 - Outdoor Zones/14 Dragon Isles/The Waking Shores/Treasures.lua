@@ -61,8 +61,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(375668, {	-- Misty Treasure Chest
 				["description"] = "Please Report to ATT-Discord if you find this treasure.",
-				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
-				-- ["questID"] = ,
+				["coord"] = { 58.6, 53.1, THE_WAKING_SHORES },
+				["questID"] = 65646,
 				["g"] = {
 					crit(7, {	-- Misty Treasure Chest
 						["achievementID"] = 16297,	-- Treasures of The Waking Shores
@@ -114,7 +114,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			o(380840, {	-- Torn Riding Pack
 				["description"] = "Cave Entrance at 29.4, 52.6",
 				["coord"] = { 48.5, 85.2, THE_WAKING_SHORES },
-				--["questID"] = ,
+				["questID"] = 70378,
 				["g"] = {
 					crit(6, {	-- Torn Riding Pack
 						["achievementID"] = 16297,	-- Treasures of The Waking Shores

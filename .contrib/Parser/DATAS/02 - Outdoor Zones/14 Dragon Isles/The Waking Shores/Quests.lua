@@ -1255,6 +1255,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 187209 },	-- Klozicc the Ascended
 					["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
 				}),
+				q(70979, {	-- Magmaton
+					["provider"] = { "n", 186827 },	-- Magmaton
+					["coord"] = { 40.0, 64.5, THE_WAKING_SHORES },
+				}),
 				q(66074, {	-- Primal Scythid Queen
 					["provider"] = { "n", 184853 },	-- Primal Scythid Queen
 					["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },

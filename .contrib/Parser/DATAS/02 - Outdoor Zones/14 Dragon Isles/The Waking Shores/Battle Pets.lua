@@ -16,6 +16,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			pet(3273, {	-- Magma Slug
 				["cr"] = 189094,
 			}),
+			pet(3296, {	-- Palamanther
+				["cr"] = 189122,
+			}),
 			pet(3272, {	-- Pricklefury Hare
 				["cr"] = 189093,
 			}),

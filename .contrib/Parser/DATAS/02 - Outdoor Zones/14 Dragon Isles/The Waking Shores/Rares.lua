@@ -39,7 +39,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(192738, {	-- Brundin the Dragonbane <Qalashi War Party>
 				["description"] = "Travelling.",
 				["coord"] = { 48.4, 66.1, THE_WAKING_SHORES },
-				-- ["questID"] = 70733,
+				["questID"] = 73890,
 				["g"] = {
 					i(197111),	-- Highland Drake: Maned Head (DM!)
 					i(200857),	-- Talisman of Sargha (TOY!)
@@ -64,9 +64,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193217, {	-- Drakewing
 				["coord"] = { 72.8, 47.0, THE_WAKING_SHORES },
 				-- ["questID"] = 70177, ??
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200219),	-- Dangerous Drapery
+				},
 			}),
 			n(193134, {	-- Enkine the Voracious
 				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
@@ -89,9 +89,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193154, {	-- Forgotten Gryphon
 				["coord"] = { 33.1, 76.3, THE_WAKING_SHORES },
 				["questID"] = 73073,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200858),	-- Plume of the Forgotten
+				},
 			}),
 			n(193226, {	-- Gorjo the Crab Shackler
 				["crs"] = { 193228 },	-- Snappy
@@ -134,6 +134,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(197023),	-- Cliffside Wylderdrake: Maned Neck (DM!)
 					i(200246),	-- Lost Delving Lamp
 					i(200198),	-- Primalist Prison (TOY!)
+					i(200254),	-- Totemic Cinch
 				},
 			}),
 			n(193266, {	-- Lepidoralia the Resplendent
@@ -145,10 +146,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(186827, {	-- Magmaton
 				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
-				-- ["questID"] = 70979,
-				-- ["g"] = {
-
-				-- },
+				-- ["questID"] = ,
+				["g"] = {
+					i(197149),	-- Highland Drake: Club Tail (DM!)
+				},
 			}),
 			n(193152, {	-- Massive Magmashell
 				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
@@ -225,6 +226,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 72850,
 				["g"] = {
 					i(200208),	-- Cloud Coalescing Handwraps
+					i(200172),	-- Zephyrdance Signet
 				},
 			}),
 			n(193148, {	-- Thunderous Matriarch

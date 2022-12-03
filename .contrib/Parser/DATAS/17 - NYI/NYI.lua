@@ -393,8 +393,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200161),	-- Razorwind Talisman
 			i(200163),	-- Ring of Embers
 			i(200164),	-- Iceloop
-			i(200168),	-- Gnoll Hide Belt
-			i(200172),	-- Zephyrdance Signet
 			i(200174),	-- Bonesigil Shoulderguards
 			i(200185),	-- Grips of the Everflowing Ocean
 			i(200189),	-- Hydroforged Shell Helm
@@ -407,13 +405,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200214),	-- Grasp of the Weeping Widow
 			i(200215),	-- Plumed Shoulderguards of the Hunt
 			i(200216),	-- Water Heating Cord
-			i(200219),	-- Dangerous Drapery
 			i(200228),	-- Protoscale Pauldrons
 			i(200229),	-- Slightly Digested Leggings
 			i(200230),	-- Terrorclaw Shoulderplates
 			i(200243),	-- Titanic Scholar's Finery
 			i(200251),	-- Medallion of the Ancestors
-			i(200254),	-- Totemic Cinch
 			i(200261),	-- White Chitin Bands
 			i(200267),	-- Reinforced Garden Tenders
 			i(200279),	-- Competitive Throwing Gauntlets
@@ -452,7 +448,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200741),	-- Pipspark's Prestigious Pendant of Protection
 			i(200758),	-- Breastplate of Storied Antiquity
 			i(200760),	-- Unstable Arcane Cell
-			i(200858),	-- Plume of the Forgotten
 			i(200859),	-- Seasoned Hunter's Trophy
 			i(200875),	-- Seeker's Bands
 			i(200880),	-- Wind-Sealed Mana Capsule
@@ -950,7 +945,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200138),	-- Ancient Dancer's Longspear
 			i(200139),	-- Tempest Arc
 			i(200141),	-- Wind Generating Band
-			i(200144),	-- Band of the Unscalable
 			i(200145),	-- Hilted Monolith
 			i(200147),	-- Web-Woven Robe
 			i(200151),	-- Seamist Blade
@@ -1117,7 +1111,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197138),	-- Highland Drake: Striped Pattern
 			i(197141),	-- Highland Drake: Scaled Pattern
 			i(197146),	-- Highland Drake: White Scales
-			i(197149),	-- Highland Drake: Club Tail
 			i(197150),	-- Highland Drake: Spiked Club Tail
 			i(197152),	-- Highland Drake: Hooked Tail
 			i(197155),	-- Highland Drake: Finned Neck

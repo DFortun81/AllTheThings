@@ -106,7 +106,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(RARES, {
 				n(190986, {	-- Battlehorn Pyrhus
 					["coord"] = { 28.6, 58.8, THE_WAKING_SHORES },
-					-- ["questID"] = ,
+					["questID"] = 74040,
 					-- ["g"] = {
 
 					-- },
@@ -130,7 +130,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				n(190985, {	-- Death's Shadow
 					["description"] = "Restore 20 Obsidian Keys to Sabellian.",
 					["coord"] = { 31.8, 54.4, THE_WAKING_SHORES },
-					-- ["questID"] = 67027,
+					["questID"] = 73074,
 					["cost"] = { { "i", 191264, 20 }, },	-- 20xRestored Obsidian Key
 					-- ["g"] = {
 
@@ -150,15 +150,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 24.4, 54.5, THE_WAKING_SHORES },
 					["questID"] = 74019,
 					["g"] = {
+						i(200144),	-- Band of the Unscalable
 						i(200683),	-- Legguards of the Deep Strata
 					},
 				}),
 				n(193232, {	-- Rasnar the War Ender
 					["coord"] = { 30.2, 60.4, THE_WAKING_SHORES },
 					-- ["questID"] = ,
-					-- ["g"] = {
-
-					-- },
+					["g"] = {
+						i(200757),	-- Qalashi War-Helm
+					},
 				}),
 				n(187598, {	-- Rohzor Forgesmash <Djaradin Smithmaster>
 					-- ["coord"] = { 25.3, 60.3, THE_WAKING_SHORES },

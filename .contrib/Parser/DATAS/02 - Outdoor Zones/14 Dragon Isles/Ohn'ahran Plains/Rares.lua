@@ -129,6 +129,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 71240, -- also 72815 ?
 				["g"] = {
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
+					i(200172),	-- Zephyrdance Signet
 				},
 			}),
 			n(192557, {	-- Quackers the Terrible
@@ -178,6 +179,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- ["questID"] = 69863,
 				["g"] = {
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
+					i(200168),	-- Gnoll Hide Belt
 					i(200266),	-- Gnollish Chewtoy Launcher
 				},
 			}),
@@ -265,6 +267,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 					i(198429),	-- Typhoon Bringer
+					i(200172),	-- Zephyrdance Signet
 				},
 			}),
 			n(191103, {	-- Uranto the Swift
@@ -308,6 +311,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200879, {	-- Zenet Egg
 						i(198825),	-- Zenet Hatchling (MOUNT!)
 					}),
+					i(200172),	-- Zephyrdance Signet
 				},
 			}),
 			n(188451, {	-- Zerimek <The Darkened Cloud>
