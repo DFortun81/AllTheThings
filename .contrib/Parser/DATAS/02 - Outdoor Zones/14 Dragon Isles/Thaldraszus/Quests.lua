@@ -478,7 +478,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["collectible"] = false,
 				["g"] = {
 					q(71219, {	-- The Wayward Waywatcher
-						["sourceQuests"] = { 66244 },	-- To Valdrakken
+						-- ["sourceQuests"] = {  },	--
 						["provider"] = { "n", 197533 },	-- Waywatcher Lorin
 						["coord"] = { 50.2, 62.4, VALDRAKKEN },
 						["isBreadcrumb"] = true,	-- Probably?
@@ -559,7 +559,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["collectible"] = false,
 				["g"] = {
 					q(71239, {	-- Lost to the Skies
-						["sourceQuests"] = { 66244 },	-- To Valdrakken
+						-- ["sourceQuests"] = {  },	--
 						["provider"] = { "n", 194578 },	-- Grimla Fizzlecrank
 						["coord"] = { 25.2, 66.1, VALDRAKKEN },
 						["isBreadcrumb"] = true,	-- Probably?
@@ -840,7 +840,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["collectible"] = false,
 				["g"] = {
 					q(72067, {	-- Relaxation Time!
-						["sourceQuests"] = { 66244 },	-- To Valdrakken
+						-- ["sourceQuests"] = {  },	--
 						["provider"] = { "n", 197986 },	-- Hot Springs Spa Promoter
 						["coord"] = { 48.1, 59.6, VALDRAKKEN },
 						["isBreadcrumb"] = true,	-- Probably?

@@ -2134,7 +2134,7 @@ root("HiddenQuestTriggers", {
 			q(71982),	-- First Frigid Bubble Poppy Harvest
 			q(71984),	-- First Titan-touched Hochenblume Harvest
 		}),
-				prof(MINING, {
+		prof(MINING, {
 			q(71950),	-- First Rich Serevite Deposit
 			q(71951),	-- First Draconium Deposit
 			q(71952),	-- First Rich Draconium Deposit
@@ -2146,7 +2146,12 @@ root("HiddenQuestTriggers", {
 			q(71958),	-- First Titan-touched Draconium Deposit
 			q(71959),	-- First Primal Serevite Deposit
 			q(71960),	-- First Primal Draconium Deposit
+			q(66936),	-- Heated Ore Sample
 			q(72160),	-- Iridescent Ore Fragments
+			q(72161),	-- Iridescent Ore Fragments
+			q(72162),	-- Iridescent Ore Fragments
+			q(72163),	-- Iridescent Ore Fragments
+			q(72164),	-- Iridescent Ore Fragments
 		}),
 		--[[
 		prof(BLACKSMITHING, {

@@ -70,7 +70,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(186962, {	-- Cascade
 				["coord"] = { 23.7, 33.7, THE_AZURE_SPAN },
-				-- ["questID"] = 72358,
+				["questID"] = 72836,
 				["g"] = {
 					i(200135),	-- Corroded Greatsword
 					i(197098),	-- Highland Drake: Finned Back (DM!)

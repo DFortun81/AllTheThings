@@ -12,7 +12,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		["g"] = {
 			n(QUESTS, {
 				q(72192, {	-- Halls of Infusion: Entropy to Order
-					["sourceQuests"] = { 66244 },	-- To Valdrakken
+					-- ["sourceQuests"] = {  },	--
 					["provider"] = { "n", 191369 },	-- Watcher Koranos
 					["coord"] = { 54.4, 40.9, VALDRAKKEN },
 				}),

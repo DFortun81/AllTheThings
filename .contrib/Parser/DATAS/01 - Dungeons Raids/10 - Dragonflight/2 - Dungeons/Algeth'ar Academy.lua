@@ -11,12 +11,12 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		["g"] = {
 			n(QUESTS, {
 				q(72193, {	-- The Algeth'ar Academy
-					["sourceQuests"] = { 66244 },	-- To Valdrakken
+					-- ["sourceQuests"] = {  },	--
 					["provider"] = { "n", 187676 },	-- Kalecgos
 					["coord"] = { 61.7, 36.2, VALDRAKKEN },
 				}),
 			}),
-			n(TREAURES, {
+			n(TREASURES, {
 				-- Not seen this treasure Deliquent Notes
 				i(198908),	-- Technique: Illusion Parchment: Love Charm (RECIPE!)
 			}),

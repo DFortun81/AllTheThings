@@ -1610,6 +1610,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(BONUS_OBJECTIVES, {
+				q(72358, {	-- Cascade
+					["provider"] = { "n", 186962 },	-- Cascade
+					["coord"] = { 23.7, 33.7, THE_AZURE_SPAN },
+				}),
 				q(66718, {	-- Gnolls Must Die
 					["sourceQuests"] = { 66709 },	-- Field Medic 101
 					["coord"] = { 58.1, 42.3, THE_AZURE_SPAN },

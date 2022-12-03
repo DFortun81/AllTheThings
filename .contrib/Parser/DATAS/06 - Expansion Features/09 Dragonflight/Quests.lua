@@ -216,5 +216,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		q(72747, {	-- A Piece of Gold
 			["description"] = "Available on the next reset after \"A Piece of Silver\", from the adventure guide.",
 		}),
+		q(66864, {	-- Relic Recovery: Brackenhide Hollow
+			-- maybe weekly? has a time limit for the current lockout
+			["description"] = "Accepted from Adventure Guide.",
+		}),
+		q(66868, {	-- Preserving the Past: Legacy of Tyr
+			-- maybe weekly? has a time limit for the current lockout
+			["description"] = "Accepted from Adventure Guide.",
+		}),
 	}),
 })));

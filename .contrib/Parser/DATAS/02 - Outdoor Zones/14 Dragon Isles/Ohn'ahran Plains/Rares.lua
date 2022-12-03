@@ -4,6 +4,13 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
 		n(RARES, {
+			n(190907, {	-- Blitztusk
+				["coord"] = { 77.0, 20.6, OHNAHRAN_PLAINS },
+				["questID"] = 73908,
+				["g"] = {
+					i(200296),	-- Mammoth Tusk Wraps
+				},
+			}),
 			n(195186, {	-- Cinta the Forgotten
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
@@ -260,6 +267,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(198429),	-- Typhoon Bringer
 				},
 			}),
+			n(191103, {	-- Uranto the Swift
+				["coords"] = {
+					{ 77.2, 21.0, OHNAHRAN_PLAINS },
+					{ 79.0, 22.2, OHNAHRAN_PLAINS },
+					{ 81.4, 21.4, OHNAHRAN_PLAINS },
+				},
+				["questID"] = 73943,
+				["g"] = {
+					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
+					i(198429),	-- Typhoon Bringer
+				},
+			}),
 			n(192453, {	-- Vaniik the Stormtouched <Corrupted Child of Ohn'ahra>
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
@@ -293,7 +312,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(188451, {	-- Zerimek <The Darkened Cloud>
 				["coord"] = { 72.2, 23.2, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["questID"] = 73980,
 				-- ["g"] = {
 
 				-- },

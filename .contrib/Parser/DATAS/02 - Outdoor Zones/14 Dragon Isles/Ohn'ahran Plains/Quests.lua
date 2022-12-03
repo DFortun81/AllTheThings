@@ -784,7 +784,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					q(66005, {	-- Medallion of a Fallen Friend
-						["sourceQuests"] = { 65952 },	-- A Chief of Legends
+						["sourceQuests"] = { 65950 },	-- Thieving Gorlocs
 						["provider"] = { "i", 191127 },	-- Medallion of a Fallen Friend
 						["coord"] = { 82.0, 31.4, OHNAHRAN_PLAINS },
 					}),
