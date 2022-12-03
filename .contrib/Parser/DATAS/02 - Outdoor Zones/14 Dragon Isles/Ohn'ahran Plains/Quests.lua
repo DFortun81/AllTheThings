@@ -1084,6 +1084,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 192949 },	-- Skaara
 					["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
 				}),
+				q(69837, {	-- Sunscale Behemoth
+					["provider"] = { "n", 193133 },	-- Sunscale Behemoth
+					["coord"] = { 63.2, 48.6, OHNAHRAN_PLAINS },
+				}),
 				q(65892, {	-- The Sundered Asunder
 					-- ["sourceQuests"] = {  },	--
 					["coord"] = { 64.0, 17.8, OHNAHRAN_PLAINS },

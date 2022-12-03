@@ -118,6 +118,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73996,
 				["g"] = {
 					i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
+					i(197121),	-- Highland Drake: Tan Horns
 				},
 			}),
 			n(193251, {	-- Gruffy

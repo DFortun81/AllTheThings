@@ -10,7 +10,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 1 --
 			q(70936, {	-- Stolen Tuskaar Totems
-				["sourceQuests"] = { 65849 },	-- To Iskaara
+				["sourceQuests"] = { 65848 },	-- Tome-ward Bound (likely not accurate but what I had up through the chain)
 				["provider"] = { "n", 186448 },	-- Elder Poa
 				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 			}),
@@ -65,8 +65,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 	}),
 })));
+
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
-		q(72387),	-- Triggeres together with Tuskarr Headwear (questID 70953)
+		q(72279),	-- Triggered with 'Stolen Tuskaar Totems' (70936)
+		q(72385),	-- Triggeres together with 'Cpmmunity Feasts' (70938)
+		q(72387),	-- Triggeres together with 'Tuskarr Headwear' (70953)
 	}),
 }));

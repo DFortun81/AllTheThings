@@ -233,8 +233,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193133, {	-- Sunscale Behemoth
 				["coord"] = { 63.2, 48.6, OHNAHRAN_PLAINS },
-				-- ["questID"] = 69837,
+				["questID"] = 72849,
 				["g"] = {
+					i(200186),	-- Amberquill Shroud
 					i(200445),	-- Lucky Hunting Charm
 					i(198409),	-- Personal Shell (TOY!)
 				},

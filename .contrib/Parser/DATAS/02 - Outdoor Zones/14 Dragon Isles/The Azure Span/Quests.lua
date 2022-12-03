@@ -1606,32 +1606,89 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(HIDDEN_QUESTS, {
 				-- During The Weave of a Tale (66213)
 				-- First Question
-				q(66563, { ["name"] = "The Weave of a Tale: Rarest Fish", }),	-- "Rarest Fish"
-				q(66562, { ["name"] = "The Weave of a Tale: Slaying", }),	-- "Slaying"
-				q(66561, { ["name"] = "The Weave of a Tale: Handstand", }),	-- "Handstand"
+				q(66563, { ["name"] = "The Weave of a Tale: Rarest Fish",
+					["sourceQuest"] = 66213,	-- The Weave of a Tale
+					["altQuests"] = { 66562, 66561 },	-- Slaying / Handstand
+				}),
+				q(66562, { ["name"] = "The Weave of a Tale: Slaying",
+					["sourceQuest"] = 66213,	-- The Weave of a Tale
+					["altQuests"] = { 66563, 66561 },	-- Rarest Fish / Handstand
+				}),	-- "Slaying"
+				q(66561, { ["name"] = "The Weave of a Tale: Handstand",
+					["sourceQuest"] = 66213,	-- The Weave of a Tale
+					["altQuests"] = { 66563, 66562 },	-- Rarest Fish / Slaying
+				}),	-- "Handstand"
 				-- Second Question
-				q(66566, { ["name"] = "The Weave of a Tale: Average", }),	-- "Average"
-				q(66565, { ["name"] = "The Weave of a Tale: Biggest", }),	-- "Biggest"
-				q(66564, { ["name"] = "The Weave of a Tale: Half Squid", }),	-- "Half Squid"
+				q(66566, { ["name"] = "The Weave of a Tale: Average",
+					["sourceQuest"] = 66213,	-- The Weave of a Tale
+					["altQuests"] = { 66565, 66564 },	-- Biggest / Half Squid
+				}),	-- "Average"
+				q(66565, { ["name"] = "The Weave of a Tale: Biggest",
+					["sourceQuest"] = 66213,	-- The Weave of a Tale
+					["altQuests"] = { 66566, 66564 },	-- Average / Half Squid
+				}),	-- "Biggest"
+				q(66564, { ["name"] = "The Weave of a Tale: Half Squid",
+					["sourceQuest"] = 66213,	-- The Weave of a Tale
+					["altQuests"] = { 66566, 66565 },	-- Average / Biggest
+				}),	-- "Half Squid"
 				-- Third Question
-				q(66569, { ["name"] = "The Weave of a Tale: Slipped", }),	-- "Slipped"
-				q(66568, { ["name"] = "The Weave of a Tale: Sword", }),	-- "Sword"
-				q(66567, { ["name"] = "The Weave of a Tale: Whisper", }),	-- "Whisper"
+				q(66569, { ["name"] = "The Weave of a Tale: Slipped",
+					["sourceQuest"] = 66213,	-- The Weave of a Tale
+					["altQuests"] = { 66568, 66567 },	-- Sword / Whisper
+				}),	-- "Slipped"
+				q(66568, { ["name"] = "The Weave of a Tale: Sword",
+					["sourceQuest"] = 66213,	-- The Weave of a Tale
+					["altQuests"] = { 66569, 66567 },	-- Slipped / Whisper
+				}),	-- "Sword"
+				q(66567, { ["name"] = "The Weave of a Tale: Whisper",
+					["sourceQuest"] = 66213,	-- The Weave of a Tale
+					["altQuests"] = { 66569, 66568 },	-- Slipped / Sword
+				}),	-- "Whisper"
 				-- Fourth Question
-				q(66571, { ["name"] = "The Weave of a Tale: Ate", }),	-- "Ate"
-				q(66570, { ["name"] = "The Weave of a Tale: Threw", }),	-- "Threw"
+				q(66571, { ["name"] = "The Weave of a Tale: Ate",
+					["sourceQuest"] = 66213,	-- The Weave of a Tale
+					["altQuests"] = { 66570 },	-- Threw
+				}),	-- "Ate"
+				q(66570, { ["name"] = "The Weave of a Tale: Threw",
+					["sourceQuest"] = 66213,	-- The Weave of a Tale
+					["altQuests"] = { 66571 },	-- Ate
+				}),	-- "Threw"
 				-- During The Heart of the Deck (66846)
 				-- First Question
-				q(66992, { ["name"] = "The Heart of the Deck: Draconic Form", }),	-- "Draconic Form"
-				q(66993, { ["name"] = "The Heart of the Deck: My Form", }),	-- "My Form"
+				q(66992, { ["name"] = "The Heart of the Deck: Draconic Form",
+					["sourceQuest"] = 66846,	-- The Heart of the Deck
+					["altQuests"] = { 66993 },	-- My Form
+				}),
+				q(66993, { ["name"] = "The Heart of the Deck: My Form",
+					["sourceQuest"] = 66846,	-- The Heart of the Deck
+					["altQuests"] = { 66992 },	-- Draconic Form
+				}),
 				-- Second Question
-				q(66984, { ["name"] = "The Heart of the Deck: Destroyer", }),	-- "Destroyer"
-				q(66985, { ["name"] = "The Heart of the Deck: Guardian", }),	-- "Guardian"
-				q(66983, { ["name"] = "The Heart of the Deck: Life-Giver", }),	-- "Life-Giver"
+				q(66984, { ["name"] = "The Heart of the Deck: Destroyer",
+					["sourceQuest"] = 66846,	-- The Heart of the Deck
+					["altQuests"] = { 66985, 66983 },	-- Guardian / Life-Giver
+				}),
+				q(66985, { ["name"] = "The Heart of the Deck: Guardian",
+					["sourceQuest"] = 66846,	-- The Heart of the Deck
+					["altQuests"] = { 66984, 66983 },	-- Destroyer / Life-Giver
+				}),
+				q(66983, { ["name"] = "The Heart of the Deck: Life-Giver",
+					["sourceQuest"] = 66846,	-- The Heart of the Deck
+					["altQuests"] = { 66985, 66984 },	-- Guardian / Destroyer
+				}),
 				-- Third Question
-				q(66994, { ["name"] = "The Heart of the Deck: Motivation", }),	-- "Motivation"
-				q(66995, { ["name"] = "The Heart of the Deck: Adaptation", }),	-- "Adaptation"
-				q(66996, { ["name"] = "The Heart of the Deck: Reaction", }),	-- "Reaction"
+				q(66994, { ["name"] = "The Heart of the Deck: Motivation",
+					["sourceQuest"] = 66846,	-- The Heart of the Deck
+					["altQuests"] = { 66995, 66996 },	-- Adaptation / Reaction
+					}),
+				q(66995, { ["name"] = "The Heart of the Deck: Adaptation",
+					["sourceQuest"] = 66846,	-- The Heart of the Deck
+					["altQuests"] = { 66994, 66996 },	-- Motivation / Reaction
+					}),
+				q(66996, { ["name"] = "The Heart of the Deck: Reaction",
+					["sourceQuest"] = 66846,	-- The Heart of the Deck
+					["altQuests"] = { 66995, 66994 },	-- Adaptation / Motivation
+					}),
 			}),
 			ach(15941, {	-- Dragon Racing Completionist: Gold
 				["collectible"] = false,
@@ -1791,7 +1848,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
 		q(72140),	-- Pop after touch 'Missaligned Ley Crystal' (objectID 378175), do mini-game to convert it into 'Aligned Ley Crystal' (npcID 198268).
 		q(66046),	-- Pop after killing/completing bonus objective (Cascade) ... or skinning knowledge proc possibly
-		q(72385),	-- After completion of [70938]
 		q(72779),	-- After completion of [70938]
 	}),
 }));
