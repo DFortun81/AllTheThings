@@ -835,8 +835,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
 						["coord"] = { 64.0, 18.3, OHNAHRAN_PLAINS },
 					}),
-					q(65898, {	-- Proto Problems
+					q(66719, {	-- One Step Backwards
 						["sourceQuests"] = { 65895 },	-- Competing Company
+						["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
+						["coord"] = { 62.1, 16.3, OHNAHRAN_PLAINS },
+						["classes"] = { EVOKER },
+					}),
+					q(65898, {	-- Proto Problems
+						["sourceQuests"] = {
+							65895,	-- Competing Company
+							66719,	-- One Step Backwards
+						},
 						["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
 						["coord"] = { 62.1, 16.3, OHNAHRAN_PLAINS },
 						["g"] = {
