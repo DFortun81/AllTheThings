@@ -1081,6 +1081,7 @@ i(199899);	-- Iskaara Tug Sled
 i(198090);	-- Jar of Excess Slime
 i(193032);	-- Jeweled Offering
 i(200469);	-- Khadgar's Disenchanting Rod
+i(202711);	-- Lost Compass
 i(200597);	-- Lover's Bouquet
 i(198857);	-- Lucky Duck
 i(200249);	-- Mage's Chewed Wand
@@ -1103,6 +1104,7 @@ i(200960);	-- Seed of Renewed Souls
 i(198721);	-- Skinny Reliquary Pillow
 i(198722);	-- Small Triangular Pillow
 i(198720);	-- Soft Purple Pillow
+i(200628);	-- Somewhat-Stabilized Arcana
 i(198537);	-- Taivan's Trumpet
 i(200857);	-- Talisman of Sargha
 i(200999);	-- The Super Shellkhan Gang
@@ -1126,7 +1128,6 @@ i(200142);	-- Generous Goblin Grenade
 i(200148);	-- A Collection Of Me
 i(200178);	-- Infected Ichor
 i(200116);	-- Everlasting Horn of Lavaswimming
-i(200628);	-- Somewhat-Stabilized Arcana
 i(200636);	-- Primal Invocation Quintessence
 i(199902);	-- Wayfinder's Compass
 i(201435);	-- Swinging Sands

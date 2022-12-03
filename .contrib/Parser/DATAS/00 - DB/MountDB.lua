@@ -1517,6 +1517,7 @@ i(198873, 376879);	-- Ivory Trader's Ottuk
 i(192799, 374247);	-- Lizi, Thunderspine Tramper
 i(198811, 385115);	-- Majestic Armored Vorquin
 i(201719, 394220);	-- Obsidian Vorquin
+i(198654, 376912);	-- Otterworldly Ottuk Carrier
 i(194034, 368896);	-- Renewed Proto-Drake
 i(201704, 394218);	-- Sapphire Vorquin
 i(192784, 374155);	-- Shellack
@@ -1546,7 +1547,7 @@ i(0, 359622);	-- Liberated Slyvern
 
 
 i(192764, 374048);	-- Verdant Skitterfly
-i(0, 376912);	-- Otterworldly Ottuk Carrier
+
 i(0, 376873);	-- Splish-Splash
 
 

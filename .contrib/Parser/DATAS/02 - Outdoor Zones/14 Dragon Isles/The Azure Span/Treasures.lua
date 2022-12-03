@@ -63,7 +63,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					crit(4, {	-- Lost Compass
 						["achievementID"] = 16300,	-- Treasures of The Azure Span
 					}),
-					i(202711),	-- Lost Compasseww
+					i(202711),	-- Lost Compass (TOY!)
 				},
 			}),
 			n(195373, {	-- Pepper Hammer

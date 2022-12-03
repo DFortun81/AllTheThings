@@ -42,7 +42,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						16451,	-- The Ol Raszle Daszle
 					}},
 					["g"] = {
-						i(192806),	-- Raging Magmammoth
+						i(192806),	-- Raging Magmammoth (MOUNT!)
 					},
 				}),
 				ach(16395),	-- Vaulternative Fashion

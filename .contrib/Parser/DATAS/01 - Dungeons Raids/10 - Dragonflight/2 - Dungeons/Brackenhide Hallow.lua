@@ -179,8 +179,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193662),	-- Densified Ooze Tassets
 						i(193660),	-- Idol of Pure Decay
 						i(193664),	-- Rot-Carved Totemic Shank
-						ig(197396),	-- Renewed Proto-Drake: Skyterror Pattern
-						ig(197598),	-- Windborne Velocidrake: Gray Hair
+						ig(197396),	-- Renewed Proto-Drake: Skyterror Pattern (DM!)
+						ig(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
 					},
 				}),
 			}),

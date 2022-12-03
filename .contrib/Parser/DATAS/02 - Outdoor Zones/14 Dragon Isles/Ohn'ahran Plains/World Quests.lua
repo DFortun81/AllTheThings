@@ -4,18 +4,15 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
-			q(70423, {	-- Dragonrider Racing - Maruukai Dash
-				["coord"] = { 60.0, 35.5, OHNAHRAN_PLAINS },
-			}),
 			q(70549, {	-- Low Hanging Fruit
 				["coord"] = { 62.4, 57.8, OHNAHRAN_PLAINS }
 			}),
-			
+
 			-- Pet Battle
 			q(71140, {	-- Two and Two Together
 				["coord"] = { 62.0, 41.6, OHNAHRAN_PLAINS }
 			}),
-			
+
 			--[[
 			q(70067, {	-- A Massage to the Nokhud
 				["coord"] = { 35.7, 39.2, OHNAHRAN_PLAINS }

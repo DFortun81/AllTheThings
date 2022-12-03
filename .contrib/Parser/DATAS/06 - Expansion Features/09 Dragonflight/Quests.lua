@@ -40,10 +40,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		q(65436, {	-- The Dragon Isles Await [A]
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
+			["isBreadcrumb"] = true,
 		}),
 		q(65435, {	-- The Dragon Isles Await [H]
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
+			["isBreadcrumb"] = true,
 		}),
 		q(66577, {	-- Aspectral Invitation [A]
 			["sourceQuests"] = {
@@ -207,8 +209,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		q(72743, {	-- A Piece of Copper
 			["description"] = "If you are lucky. You will get this quest from your adventure guide.",
 		}),
-		q(72751, {	-- Adventure Guide: Copper Coin
-			["name"] = "Adventure Guide: Copper Coin",
+		q(72751, {	-- Weekly Trigger?
+			["name"] = "Weekly Trigger?",
 		}),
 		q(72746, {	-- A Piece of Silver
 			["description"] = "Available on the next reset after \"A Piece of Copper\", from the adventure guide.",
@@ -216,6 +218,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		q(72747, {	-- A Piece of Gold
 			["description"] = "Available on the next reset after \"A Piece of Silver\", from the adventure guide.",
 		}),
+
+		-- These are usually from Valdrakken also? They were weeklies on beta
 		q(66864, {	-- Relic Recovery: Brackenhide Hollow
 			-- maybe weekly? has a time limit for the current lockout
 			["description"] = "Accepted from Adventure Guide.",

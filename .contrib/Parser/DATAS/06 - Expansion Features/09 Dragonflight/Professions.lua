@@ -190,14 +190,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(70355, {	-- To the Dragon Isles: Alchemy
-				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
 				["provider"] = { "n", 191893 },	-- Zherrak
 				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
 			}),
 			q(72245, {	-- To the Dragon Isles: Alchemy
 				["sourceQuests"] = {
-					70122,	-- Explorers in Peril [A]
-					65452,	-- Explorers in Peril [H]
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
 				},
 				["provider"] = { "n", 198392 },	-- An'timon
 				["coord"] = { 76.2, 35.8, THE_WAKING_SHORES },
@@ -239,7 +242,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(70358, {	-- Dragon Isles Blacksmithing
-				--["sourceQuests"] = {  },	--
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
 				["provider"] = { "n", 192563 },	-- Kholmar Sunrunner
 				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
@@ -255,8 +261,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		prof(COOKING, {
 			q(72250, {	-- Dragon Isles Cooking
 				["sourceQuests"] = {
-					70122,	-- Explorers in Peril [A]
-					65452,	-- Explorers in Peril [H]
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
 				},
 				["provider"] = { "n", 198094 },	-- Head Chef Stacks
 				["coord"] = { 76.4, 35.7, THE_WAKING_SHORES },
@@ -339,7 +345,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72242, {	-- Dragon Isles Engineering
-				--["sourceQuests"] = { },	--
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
 				["provider"] = { "n", 190535 },	-- Quizla Blastcaps
 				["coord"] = { 75.9, 33.2, THE_WAKING_SHORES },
 			}),
@@ -353,8 +362,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(72253, {	-- Dragon Isles Fishing [H]
 				["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
-				--["provider"] = { "n", 191150 },	-- Danielle Anglers
-				--["coord"] = { 81.3, 31.3, THE_WAKING_SHORES },
+				["provider"] = { "n", 190524 },	-- Mora Cloudwalker <Fishing Trainer>
+				["coord"] = { 81.0, 29.0, THE_WAKING_SHORES },
 				["races"] = HORDE_ONLY,
 			}),
 		}),
@@ -366,13 +375,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(391089),	-- Refine Herbs+++
 				},
 			}),
-			--[[
-			q(, {	-- Dragon Isles Herbalism
+			q(70360, {	-- Dragon Isles Herbalism
 				--["sourceQuests"] = { },	--
 				["provider"] = { "n", 192549 },	-- Feilin Kuan
 				["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
 			}),
-			]]--
 		}),
 		prof(INSCRIPTION, {
 			filter(RECIPES, {
@@ -401,7 +408,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72244, {	-- Dragon Isles Inscription
-				--["sourceQuests"] = { },	--
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
 				["provider"] = { "n", 198380 },	-- Journalist Jessamine Spitz
 				["coord"] = { 76.1, 35.5, THE_WAKING_SHORES },
 			}),
@@ -442,14 +452,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(70365, {	-- To the Dragon Isles: Jewelcrafting
-				["sourceQuests"] = { 66057 },	-- Restoring the Faith
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
 				["provider"] = { "n", 192121 },	-- Falron Greygold
 				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
 			}),
 			q(72247, {	-- To the Dragon Isles: Jewelcrafting
 				["sourceQuests"] = {
-					70122,	-- Explorers in Peril [A]
-					65452,	-- Explorers in Peril [H]
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
 				},
 				["provider"] = { "n", 198398 },	-- Misty Catseye
 				["coord"] = { 76.2, 33.6, THE_WAKING_SHORES },
@@ -494,17 +507,18 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(70362, {	-- Dragon Isles Leatherworking
-				--["sourceQuests"] = { },	--
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
 				["provider"] = { "n", 192048 },	-- Deidre Flemmin
 				["coord"] = { 76.6, 34.7, THE_WAKING_SHORES },
 			}),
-			--[[
-			q(, {    -- To the Dragon Isles: Leatherworking
-			--	--["sourceQuests"] = {  },	-- Unknown
-			--	["provider"] = { "n", 192048 },    -- Deirdre Flemmin
-			--	["coord"] = { 76.6, 34.9, THE_WAKING_SHORES },
+			q(70363, {    -- To the Dragon Isles: Leatherworking
+				--["sourceQuests"] = {  },	-- Unknown
+				["provider"] = { "n", 192048 },    -- Deirdre Flemmin
+				["coord"] = { 76.6, 34.9, THE_WAKING_SHORES },
 			}),
-			--]]
 			q(69979, { -- A Worthy Hunt
 				["sourceQuests"] = { 69946 },	-- The Master of Their Craft
 				["provider"] = { "n", 193110 },	-- Khadin
@@ -574,8 +588,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(70363, {	-- To the Dragon Isles: Skinning
-				--["sourceQuests"] = {  },	-- Unknown
-				["isBreadcrumb"] = true,
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
 				["provider"] = { "n", 192558 },    -- Toninaar
 				["coord"] = { 76.7, 34.8, THE_WAKING_SHORES },
 			}),

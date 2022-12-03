@@ -33,6 +33,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			n(QUESTS, {
+				n(BONUS_OBJECTIVES, {
+					q(67027, {	-- Death's Shadow
+						["provider"] = { "n", 190985 },	-- Death's Shadow
+						["coord"] = { 29.6, 56.7, THE_WAKING_SHORES },
+					}),
+					q(67015, {	-- Forging the Answer
+						["coord"] = { 27.4, 60.8, THE_WAKING_SHORES },
+					}),
+				}),
 				--[[
 				q(72456, {	-- Tomes Of Trust
 					["provider"] = { "n", 188344 },	-- Chydrass

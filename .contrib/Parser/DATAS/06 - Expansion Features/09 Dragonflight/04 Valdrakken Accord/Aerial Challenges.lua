@@ -15,6 +15,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70416, {	-- Dragonrider Racing - Uktulut Coaster
 					["coord"] = { 55.2, 40.9, THE_WAKING_SHORES },
 				}),
+				-- Ohn'ahran Plains
+				q(70423, {	-- Dragonrider Racing - Maruukai Dash
+					["coord"] = { 60.0, 35.5, OHNAHRAN_PLAINS },
+				}),
 			})),
 		}),
 	}),

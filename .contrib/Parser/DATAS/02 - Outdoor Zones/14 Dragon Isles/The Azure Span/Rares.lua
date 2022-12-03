@@ -117,7 +117,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 14.1, 37.5, THE_AZURE_SPAN },
 				["questID"] = 73996,
 				["g"] = {
-					i(197398),	-- Renewed Proto-Drake: Snub Snout
+					i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
 				},
 			}),
 			n(193251, {	-- Gruffy

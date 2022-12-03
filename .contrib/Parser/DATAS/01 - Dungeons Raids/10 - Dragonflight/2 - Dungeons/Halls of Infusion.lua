@@ -157,7 +157,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193739),	-- Treads of Restored Order
 						i(193742),	-- Undertow Tideblade
 						i(193736),	-- Water's Beating Heart
-						ig(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern
+						ig(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern (DM!)
 					},
 				}),
 			}),
