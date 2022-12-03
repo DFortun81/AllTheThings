@@ -530,7 +530,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(202198),	-- Salt Crystal Ring
 			i(202199),	-- Frozen Shard Ring
 			i(202200),	-- Solemn Seashell String
-			i(202201),	-- Tuskarr Spirit Shawl
 		}),
 		filter(BATTLE_PETS, {
 			i(191126),	-- Obsidian Whelpling

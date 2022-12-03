@@ -50,6 +50,23 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				--["description"] = "Requires Renown 5.",
 				["provider"] = { "i", 201470 },	-- Story of a Memorable Victory
 			}),
+				-- RENOWN 6 --
+			q(70953, {	-- Tuskarr Headwear
+				["description"] = "Requires Renown 6.",
+				["provider"] = { "n", 196018 },	-- Omapurita
+				["coord"] = { 14.0, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(199538),	-- Azure Ear Warmer
+					i(199535),	-- Crimson Ear Warmer
+					i(199537),	-- Forest Green Ear Warmer
+					i(199536),	-- Ocean Grey Ear Warmer
+				},
+			}),
 		}),
 	}),
 })));
+root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+	m(THE_AZURE_SPAN, {
+		q(72387),	-- Triggeres together with Tuskarr Headwear (questID 70953)
+	}),
+}));

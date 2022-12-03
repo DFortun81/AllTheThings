@@ -465,6 +465,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "n", 196812 },	-- Old Grimtusk
 						["coord"] = { 58.8, 34.9, THE_AZURE_SPAN },
 						["g"] = {
+							i(202201),	-- Tuskarr Spirit Shawl
 							crit(1, {	-- Grimtusk Hideaway
 								["achievementID"] = 16428,	-- Sojourner of Azure Span
 							}),

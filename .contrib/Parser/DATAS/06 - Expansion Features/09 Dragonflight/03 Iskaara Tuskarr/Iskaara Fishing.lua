@@ -24,6 +24,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16553),	-- Taking From Nature
 			}),
 			n(QUESTS, {
+				q(70942, {	-- Highland Fishing
+					["sourceQuests"] = { 72584 },	-- Setting Your Very Own Net
+					["description"] = "Requires Renown 6.",
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+				}),
 				q(70871, {	-- Iskaaran Fishing Net
 					["description"] = "Requires Renown 5.",
 					["provider"] = { "n", 195935 },	-- Tavio
@@ -36,7 +42,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						}),
 					},
 				}),
-				q(2584, {	-- Setting Your Very Own Net
+				q(72584, {	-- Setting Your Very Own Net
 					["sourceQuests"] = { 70871 },	-- Iskaaran Fishing Net
 					["description"] = "Requires Renown 5.",
 					["provider"] = { "n", 195935 },	-- Tavio
