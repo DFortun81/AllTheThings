@@ -1597,6 +1597,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 66026 },	-- Urgent Action Required
 					["coord"] = { 19.1, 36.2, THE_AZURE_SPAN },
 				}),
+				q(67173, {	-- Thieving Gnolls
+					["provider"] = { "n", 192749 },	-- Sharpfang
+					["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },
+				}),
 			}),
 			n(HIDDEN_QUESTS, {
 				-- During The Weave of a Tale (66213)

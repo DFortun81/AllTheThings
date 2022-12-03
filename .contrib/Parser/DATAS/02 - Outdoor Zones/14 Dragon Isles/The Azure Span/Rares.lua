@@ -200,7 +200,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(192749, {	-- Sharpfang
 				["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },
-				-- ["questID"] = 67173,
+				["questID"] = 72846,
 				["g"] = {
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 					i(200283),	-- Gnoll-Gnawed Breeches
