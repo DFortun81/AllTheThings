@@ -209,7 +209,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 45.8, 25.8, THE_AZURE_SPAN },
 			}),
 			ach(16069, {	-- Dragon Glyphs: Creektooth Den
-				["coord"] = { 22.2, 36.7, THE_AZURE_SPAN },
+				["coord"] = { 26.2, 31.7, THE_AZURE_SPAN },
 			}),
 			ach(16070, {	-- Dragon Glyphs: Imbu
 				["coord"] = { 60.6, 70.0, THE_AZURE_SPAN },

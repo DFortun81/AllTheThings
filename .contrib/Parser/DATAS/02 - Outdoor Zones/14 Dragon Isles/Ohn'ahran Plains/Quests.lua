@@ -1067,6 +1067,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 66331 },	-- The Primalist Front
 					["coord"] = { 25.7, 40.5, OHNAHRAN_PLAINS },
 				}),
+				q(66970, {	-- Ty'foon the Ascended
+					["provider"] = { "n", 191354 },	-- Ty'foon the Ascended
+					["coord"] = { 26.1, 34.2, OHNAHRAN_PLAINS },
+				}),
 			}),
 			ach(15941, {	-- Dragon Racing Completionist: Gold
 				["collectible"] = false,

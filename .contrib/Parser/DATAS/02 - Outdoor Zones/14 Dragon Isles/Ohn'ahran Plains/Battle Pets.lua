@@ -8,6 +8,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["cr"] = 189131,
 			}),
 			pet(3296, {	-- Palamanther
+				["coords"] = {
+					{ 74.6, 55.6, OHNAHRAN_PLAINS },
+				},
 				["cr"] = 189122,
 			}),
 			pet(3272, {	-- Pricklefury Hare

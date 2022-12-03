@@ -14,7 +14,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 				i(194256),	-- Pattern: Hood of Surging Time (RECIPE!)
 			}),
 			d(1, {	-- Normal
-				e(2555, {	-- The Lost Dwarves
+				e(2475, {	-- The Lost Dwarves
 					["crs"] = {
 						184581,	-- Baelog
 						184582,	-- Eric "The Swift"
@@ -29,7 +29,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 						i(193817),	-- Treads of the Swift
 					},
 				}),
-				e(2556, {	-- Bromach
+				e(2487, {	-- Bromach
 					["crs"] = { 184018 },	-- Bromach
 					["g"] = {
 						i(193809),	-- Bromach's Disentombed Locket
@@ -40,7 +40,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 						i(193814),	-- Unearthed Trogglodicer
 					},
 				}),
-				e(2557, {	-- Sentinel Talondras
+				e(2484, {	-- Sentinel Talondras
 					["crs"] = { 184124 },	-- Sentinel Talondras
 					["g"] = {
 						i(193806),	-- Ancient Crosswrapped Sandals
@@ -50,7 +50,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 						i(193807),	-- Shoulders of Animated Stone
 					},
 				}),
-				e(2558, {	-- Emberon
+				e(2476, {	-- Emberon
 					["crs"] = { 184422 },
 					["g"] = {
 						i(193792),	-- Animated Shackles
@@ -61,7 +61,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 						i(193796),	-- Vault Piercer
 					},
 				}),
-				e(2559, {	-- Chrono-Lord Deios
+				e(2479, {	-- Chrono-Lord Deios
 					["crs"] = { 184125 },	-- Chrono-Lord Deios
 					["g"] = {
 						ach(16278),	-- Uldaman: Legacy of Tyr
@@ -75,7 +75,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 				}),
 			}),
 			d(2, {	-- Heroic
-				e(2555, {	-- The Lost Dwarves
+				e(2475, {	-- The Lost Dwarves
 					["crs"] = {
 						184581,	-- Baelog
 						184582,	-- Eric "The Swift"
@@ -90,7 +90,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 						i(193817),	-- Treads of the Swift
 					},
 				}),
-				e(2556, {	-- Bromach
+				e(2487, {	-- Bromach
 					["crs"] = { 184018 },	-- Bromach
 					["g"] = {
 						i(193809),	-- Bromach's Disentombed Locket
@@ -101,7 +101,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 						i(193814),	-- Unearthed Trogglodicer
 					},
 				}),
-				e(2557, {	-- Sentinel Talondras
+				e(2484, {	-- Sentinel Talondras
 					["crs"] = { 184124 },	-- Sentinel Talondras
 					["g"] = {
 						i(193806),	-- Ancient Crosswrapped Sandals
@@ -111,7 +111,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 						i(193807),	-- Shoulders of Animated Stone
 					},
 				}),
-				e(2558, {	-- Emberon
+				e(2476, {	-- Emberon
 					["crs"] = { 184422 },
 					["g"] = {
 						i(193792),	-- Animated Shackles
@@ -122,7 +122,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 						i(193796),	-- Vault Piercer
 					},
 				}),
-				e(2559, {	-- Chrono-Lord Deios
+				e(2479, {	-- Chrono-Lord Deios
 					["crs"] = { 184125 },	-- Chrono-Lord Deios
 					["g"] = {
 						ach(16279),	-- Heroic: Uldaman: Legacy of Tyr
@@ -136,7 +136,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 				}),
 			}),
 			d(23, {	-- Mythic
-				e(2555, {	-- The Lost Dwarves
+				e(2475, {	-- The Lost Dwarves
 					["crs"] = {
 						184581,	-- Baelog
 						184582,	-- Eric "The Swift"
@@ -151,7 +151,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 						i(193817),	-- Treads of the Swift
 					},
 				}),
-				e(2556, {	-- Bromach
+				e(2487, {	-- Bromach
 					["crs"] = { 184018 },	-- Bromach
 					["g"] = {
 						ach(16337),	-- It's a Trogg Eat Trogg World
@@ -163,7 +163,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 						i(193814),	-- Unearthed Trogglodicer
 					},
 				}),
-				e(2557, {	-- Sentinel Talondras
+				e(2484, {	-- Sentinel Talondras
 					["crs"] = { 184124 },	-- Sentinel Talondras
 					["g"] = {
 						ach(16282),	-- No, You're Stunning!
@@ -174,7 +174,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 						i(193807),	-- Shoulders of Animated Stone
 					},
 				}),
-				e(2558, {	-- Emberon
+				e(2476, {	-- Emberon
 					["crs"] = { 184422 },
 					["g"] = {
 						i(193792),	-- Animated Shackles
@@ -185,7 +185,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 						i(193796),	-- Vault Piercer
 					},
 				}),
-				e(2559, {	-- Chrono-Lord Deios
+				e(2479, {	-- Chrono-Lord Deios
 					["crs"] = { 184125 },	-- Chrono-Lord Deios
 					["g"] = {
 						ach(16280),	-- Mythic: Uldaman: Legacy of Tyr

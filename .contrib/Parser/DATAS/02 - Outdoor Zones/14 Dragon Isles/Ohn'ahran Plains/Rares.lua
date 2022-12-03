@@ -254,7 +254,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(191354, {	-- Ty'foon the Ascended
 				["coord"] = { 26.1, 34.2, OHNAHRAN_PLAINS },
-				-- ["questID"] = 70143,
+				["questID"] = 72852,
 				["g"] = {
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 					i(198429),	-- Typhoon Bringer

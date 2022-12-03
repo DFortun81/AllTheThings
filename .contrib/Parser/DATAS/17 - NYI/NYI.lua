@@ -1112,7 +1112,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197002),	-- Cliffside Wylderdrake: Flared Cheek
 			i(197004),	-- Cliffside Wylderdrake: Spiked Legs
 			i(197006),	-- Cliffside Wylderdrake: Plated Nose
-			i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern
 			i(197008),	-- Cliffside Wylderdrake: Narrow Stripes Pattern
 			i(197014),	-- Cliffside Wylderdrake: White Scales
 			i(197015),	-- Cliffside Wylderdrake: Dark Skin Variation
@@ -1175,8 +1174,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw
 			i(197389),	-- Renewed Proto-Drake: Green Scales
 			i(197393),	-- Renewed Proto-Drake: White Scales
-			i(197396),	-- Renewed Proto-Drake: Skyterror Pattern
-			i(197397),	-- Renewed Proto-Drake: Heavy Scales
 			i(197400),	-- Renewed Proto-Drake: Shark Snout
 			i(197404),	-- Renewed Proto-Drake: Finned Tail
 			i(197577),	-- Windborne Velocidrake: Bronze and Green Armor
@@ -1191,7 +1188,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197591),	-- Windborne Velocidrake: Hairy Head
 			i(197593),	-- Windborne Velocidrake: Feathery Head
 			i(197594),	-- Windborne Velocidrake: Small Ears
-			i(197598),	-- Windborne Velocidrake: Gray Hair
 			i(197599),	-- Windborne Velocidrake: Red Hair
 			i(197600),	-- Windborne Velocidrake: Helm
 			i(197604),	-- Windborne Velocidrake: Ox Horns

@@ -236,7 +236,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197622),	-- Windborne Velocidrake: Finned Tail (DM!)
 		i(197577),	-- Windborne Velocidrake: Gold and Brown Armor
 		i(197580),	-- Windborne Velocidrake: Gold and Red Armor
-		i(197598),	-- Windborne Velocidrake: Gray Fur
+		i(197598),	-- Windborne Velocidrake: Gray Hair
 		i(197608),	-- Windborne Velocidrake: Gray Horns
 		i(197591),	-- Windborne Velocidrake: Hairy Head
 		i(197617),	-- Windborne Velocidrake: Heavy Scales

@@ -79,7 +79,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(380843, {	-- Rubber Fish
 				["coord"] = { 54.6, 29.3, THE_AZURE_SPAN },
-				["questID"] = 73985,
+				-- ["questID"] = ,
 				["g"] = {
 					crit(5, {	-- Rubber Fish
 						["achievementID"] = 16300,	-- Treasures of The Azure Span
