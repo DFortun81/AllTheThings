@@ -185,13 +185,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200445),	-- Lucky Hunting Charm
 					i(200193),	-- Manafrond Sandals
 					i(200563),	-- Primal Ritual Shell
+					i(200131),	-- Reclaimed Survivalist's Dagger
 					i(200195),	-- Thunderscale Legguards
 				},
 			}),
 			n(193271, {	-- Shadeslash Trakken
 				["description"] = "Cave Entrance: 48.6, 74.3. Have to touch Focus, Globe and Telescope to spawn.",
 				["coord"] = { 47.3, 73.9, THE_WAKING_SHORES },
-				-- ["questID"] = 70719,
+				["questID"] = 74076,
 				-- ["g"] = {
 
 				-- },

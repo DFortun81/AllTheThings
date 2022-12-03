@@ -184,7 +184,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197383),	-- Renewed Proto-Drake: Heavy Horns
 		i(197397),	-- Renewed Proto-Drake: Heavy Scales
 		i(197373),	-- Renewed Proto-Drake: Helm
-		i(197354),	-- Renewed Proto-Drake: Horned Back (DM!)
+		i(197354),	-- Renewed Proto-Drake: Horned Back
 		i(197385),	-- Renewed Proto-Drake: Horned Jaw (DM!)
 		i(197379),	-- Renewed Proto-Drake: Impaler Horns
 		i(197363),	-- Renewed Proto-Drake: Maned Crest (DM!)
@@ -207,7 +207,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197362),	-- Renewed Proto-Drake: Spined Crest (DM!)
 		i(197406),	-- Renewed Proto-Drake: Spined Tail (DM!)
 		i(197352),	-- Renewed Proto-Drake: Steel and Yellow Armor (DM!)
-		i(197378),	-- Renewed Proto-Drake: Subtle Horns
+		i(197378),	-- Renewed Proto-Drake: Subtle Horns (DM!)
 		i(197374),	-- Renewed Proto-Drake: Swept Horns (DM!)
 		i(197384),	-- Renewed Proto-Drake: Thick Spined Jaw
 		i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw

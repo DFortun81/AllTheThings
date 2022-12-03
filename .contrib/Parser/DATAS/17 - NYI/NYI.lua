@@ -224,16 +224,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191827),	-- Obsidian Dracthyr Battlegear Bracers
 			i(191828),	-- Obsidian Dracthyr Battlegear Cover
 			-- NON SET THINGS
-			i(192797),	-- Gral's Discarded Tooth
 			i(191942),	-- Belloc's Hat
 			-- Waking Shore Quest Rewards?
 			i(194374),	-- Explorer's League Rifle
 			i(194378),	-- Explorer's Belt Knife
 			i(194379),	-- Field Scout's Longblade
 			i(194387),	-- Obsidian Watcher's Crossbow
-			i(194388),	-- Obsidian Guardian's Cleaver
-			i(194395),	-- Doomsayer's Greatsword
-			i(194397),	-- Darkscale Twinblade
 			i(194398),	-- Crumbling Watcher's Stone (NYI)
 			i(194417),	-- Vault Guard's Talon
 			i(194419),	-- Life Pool Herb Pouch
@@ -379,7 +375,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(190909),	-- Ruby Felfire Splitblade
 				i(190910),	-- Ruby Felfire Bulwark
 			}),
-			i(198407),	-- Azure Arcanic Amplifier
 			i(198081),	-- Caregiver's Charm
 			i(198451),	-- Lifeflame Ampoule
 			i(198529),	-- Wayfarer's Iron Torch
@@ -613,7 +608,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194828),	-- Stacked Deck of Darkmoon Mysteries
 			i(194873),	-- Apprentice's Fluffed Quill
 			i(194903),	-- Pocket Chocolate
-			i(198084),	-- Miguel's Gift
 			i(198137),	-- Esoteric Dragon Shard of Knowledge
 			i(198151),	-- Cracked Heart in a Bottle
 			i(198395),	-- Dull Spined Clam
@@ -925,7 +919,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197943),	-- Elder's Bioluminous Quarterstaff
 			i(197944),	-- Deepsea Hunter's Crossbow
 			i(197945),	-- Gnarled Thorn Bow
-			i(197948),	-- Stone Sentinel's Greatsword
 			i(197953),	-- Ancient Protector's Broadsword
 			i(197954),	-- Stonewatcher's Buckler
 			i(197955),	-- Sword of the Eternal Guard
@@ -1143,7 +1136,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197370),	-- Renewed Proto-Drake: Red Hair
 			i(197371),	-- Renewed Proto-Drake: Green Hair
 			i(197373),	-- Renewed Proto-Drake: Helm
-			i(197378),	-- Renewed Proto-Drake: Subtle Horns
 			i(197379),	-- Renewed Proto-Drake: Impaler Horns
 			i(197382),	-- Renewed Proto-Drake: White Horns
 			i(197383),	-- Renewed Proto-Drake: Heavy Horns

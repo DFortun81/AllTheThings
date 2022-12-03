@@ -47,8 +47,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(192007),	-- Wyrmforged Sabatons
 		}),
 		filter(TRINKET_F, {
+			i(198407),	-- Azure Arcanic Amplifier
 			i(198627),	-- Blood of the Khansguard
+			i(198490),	-- Bushwhacker's Compass
 			i(198489),	-- Dreamscape Prism
+			i(192797),	-- Gral's Discarded Tooth
 			i(193568),	-- Engraved Spearhead
 			i(198542),	-- Shikaari Huntress' Arrowhead
 		}),
@@ -70,6 +73,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(192021),	-- Qalashi Crustshaper's Greatmace
 			i(197939),	-- Razortooth Harpoon
 			i(192032),	-- Searing Wyvern Brand
+			i(197948),	-- Stone Sentinel's Greatsword
 			i(192029),	-- Swift Dragonbone Mace
 			i(192017),	-- Thrumming Celestial Arrangement
 			i(192025),	-- World Breaker's Maul

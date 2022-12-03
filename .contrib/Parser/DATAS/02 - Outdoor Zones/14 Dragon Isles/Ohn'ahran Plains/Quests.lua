@@ -469,8 +469,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
 				["collectible"] = false,
 				["g"] = {
-					q(65901, {	-- Sneaking Out
+					q(65906, {	-- A Disgruntled Initiate
 						["sourceQuests"] = { 65779 },	-- Into the Plains
+						["provider"] = { "n", 195302 },	-- Windsage Ordven
+						["coord"] = { 63.1, 34.1, OHNAHRAN_PLAINS },
+						["isBreadcrumb"] = true,
+					}),
+					q(65901, {	-- Sneaking Out
+						["sourceQuests"] = { 65906 },	-- A Disgruntled Initiate
 						["provider"] = { "n", 190014 },	-- Initiate Radiya
 						["coord"] = { 56.3, 76.0, OHNAHRAN_PLAINS },
 					}),
@@ -587,11 +593,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
 				["collectible"] = false,
 				["g"] = {
+					q(65837, {	-- Trouble In The Pines
+						["sourceQuests"] = { 65779 },	-- Into the Plains
+						["provider"] = { "n", 195524 },	-- Beastmaster Tirren
+						["coord"] = { 62.0, 41.8, OHNAHRAN_PLAINS },
+						["isBreadcrumb"] = true,
+					}),
 					q(66680, {	-- Counting Sheep
-						["sourceQuests"] = {
-							65779,	-- Into the Plains
-							65837,	-- Trouble In The Pines
-						},
+						["sourceQuests"] = { 65837 },	-- Trouble In The Pines
 						["provider"] = { "n", 190025 },	-- Scout Watu
 						["coord"] = { 81.0, 58.9, OHNAHRAN_PLAINS },
 						["cost"] = { { "i", 193890, 1 }, },	-- Diced Meat
@@ -835,17 +844,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
 						["coord"] = { 64.0, 18.3, OHNAHRAN_PLAINS },
 					}),
-					q(66719, {	-- One Step Backwards
-						["sourceQuests"] = { 65895 },	-- Competing Company
-						["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
-						["coord"] = { 62.1, 16.3, OHNAHRAN_PLAINS },
-						["classes"] = { EVOKER },
-					}),
 					q(65898, {	-- Proto Problems
-						["sourceQuests"] = {
-							65895,	-- Competing Company
-							66719,	-- One Step Backwards
-						},
+						["sourceQuests"] = { 65895 },	-- Competing Company
 						["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
 						["coord"] = { 62.1, 16.3, OHNAHRAN_PLAINS },
 						["g"] = {
@@ -960,11 +960,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 
 				-- MISC --
-			q(70155, {	-- Look, Listen, and Breathe
-				["provider"] = { "n", 194282 },	-- Threshrak
-				["coord"] = { 34.1, 59.4, OHNAHRAN_PLAINS },
-				["classes"] = { EVOKER },
-			}),
 			q(70319, {	-- Nergazurai
 				["sourceQuests"] = { 65783 },	-- Welcome at Our Fire
 				["provider"] = { "n", 194904 },	-- Muqur Rain-Touched
@@ -1062,12 +1057,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(192799),	-- Lizi, Thunderspine Tramper (MOUNT!)
 				},
-			}),
-			q(65837, {	-- Trouble In The Pines
-				-- ["sourceQuests"] = {  },
-				["provider"] = { "n", 195524 },	-- Beastmaster Tirren
-				["coord"] = { 62.0, 41.8, OHNAHRAN_PLAINS },
-				["isBreadcrumb"] = true,
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(72114, {	-- Acrosoth

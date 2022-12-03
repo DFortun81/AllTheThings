@@ -332,7 +332,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 191895 },	-- Majordomo Selistra
 					["coord"] = { 53.7, 80.2, THE_WAKING_SHORES },
 					["g"] = {
-						-- i(197354),	-- Renewed Proto-Drake: Horned Back (DM!)
+						i(197378),	-- Renewed Proto-Drake: Subtle Horns (DM!)
 						crit(3, {	-- In Defense of Life
 							["achievementID"] = 16334,	-- Waking Hope
 						}),
@@ -496,6 +496,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							["achievementID"] = 16334,	-- Waking Hope
 						}),
 					},
+				}),
+				q(70641, {	-- A Waking Oath
+					["sourceQuests"] = { 65791 },	-- Life-Binder on Duty
+					["provider"] = { "n", 185905 },	-- Alexstrasza the Life-Binder
+					["coord"] = { 62.3, 73.0, THE_WAKING_SHORES },
+					["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+					["classes"] = { EVOKER },
 				}),
 			}),
 			crit(1, {	-- Beyond the Barrier
@@ -880,9 +887,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "n", 185628 },	-- Ayasanth
 						["coord"] = { 37.4, 46.6, THE_WAKING_SHORES },
 						["g"] = {
-							i(194385),	-- Neltharian Channeler's Rod
-							i(194390),	-- Obsidian Spellsplitter
 							i(194396),	-- Blacktalon Claw
+							i(194397),	-- Darkscale Twinblade
+							i(194395),	-- Doomsayer's Greatsword
+							i(194385),	-- Neltharian Channeler's Rod
+							i(194388),	-- Obsidian Guardian's Cleaver
+							i(194390),	-- Obsidian Spellsplitter
 							crit(6, {	-- The Shadow of His Wings
 								["achievementID"] = 16401,	-- Sojourner of the Waking Shores
 							}),
@@ -982,6 +992,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["achievementID"] = 16406,	-- All Sides of the Story
 				["collectible"] = false,
 				["g"] = {
+					q(70779, {	-- Tarjin's Tales
+						-- ["sourceQuests"] = {  },	--
+						["provider"] = { "n", 196214 },	-- Tarjin the Blind
+						["coord"] = { 16.1, 62.6, THE_WAKING_SHORES },
+						["isWeekly"] = true,
+						["g"] = {
+							i(200143),	-- Fenistrasza's Skull
+							crit(3, {	-- Tarjin the Blind
+								["achievementID"] = 16406,	-- All Sides of the Story
+							}),
+						},
+					}),
 				},
 			}),
 			crit(4, {	-- Veritistrasz
@@ -1123,8 +1145,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200747),	-- Zikkori's Water Siphoning Device
 				},
 			}),
+			-- Tour
 			q(72481, {	-- The Waking Shore Tour
 				["sourceQuests"] = { 68796 },	-- The Skytop Observatory
+				["provider"] = { "n", 193411 },	-- Celormu
+				["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
+			}),
+			q(72483, {	-- The Ohn'ahran Plains Tour
+				["sourceQuests"] = { 72481 },	-- The Waking Shore Tour
 				["provider"] = { "n", 193411 },	-- Celormu
 				["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
 			}),
@@ -1139,7 +1167,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "n", 196827 },	-- Crabtender Kad'irsza
 				["coord"] = { 59.7, 51.2, THE_WAKING_SHORES },
 			}),
-			q(70231, {	--
+			-- Fragments
+			q(70231, {	-- Talk to Emilia Bellocq
 				["name"] = "Talk to Emilia Bellocq",
 				["description"] = "Talk to Emilia Bellocq and chose her dialogue option to complete this quest and unlock the objects required to complete achievement Fragments of History",
 				["provider"] = { "n", 193915 },	-- Emilia Bellocq
@@ -1175,6 +1204,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
+			--
 			q(72708, {	-- Dragon Isles Supplies
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -1233,15 +1263,55 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 66079 },	-- Wrathion Awaits
 					["coord"] = { 44.4, 82.1, THE_WAKING_SHORES },
 				}),
+				q(70719, {	-- Shadeslash Trakken
+					["provider"] = { "n", 193271 },	-- Shadeslash Trakken
+					["coord"] = { 47.2, 73.6, THE_WAKING_SHORES },
+				}),
 				q(70751, {	-- Terillod the Devout
 					["provider"] = { "n", 193171 },	-- Terillod the Devout
 					["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
 				}),
 			}),
 			n(HIDDEN_QUESTS, {
-				q(72089, {	-- To Skytop Observatory
-					["provider"] = { "n", 193287 },	-- Lord Andestrasz
-					["coord"] = { 57.7, 66.9, THE_WAKING_SHORES },
+				q(72101, {	-- Release Kite: Apex Canopy
+					["name"] = "Release Kite: Apex Canopy",
+					["coord"] = { 24.0, 89.9, THE_WAKING_SHORES },
+				}),
+				q(72102, {	-- Release Kite: Concord Observatory
+					["name"] = "Release Kite: Concord Observatory",
+					["coord"] = { 57.2, 46.4, THE_WAKING_SHORES },
+				}),
+				q(72098, {	-- Release Kite: Crumbling Life Archway
+					["name"] = "Release Kite: Crumbling Life Archway",
+					["coord"] = { 56.8, 58.0, THE_WAKING_SHORES },
+				}),
+				q(72099, {	-- Release Kite: Hatchery Observatory
+					["name"] = "Release Kite: Hatchery Observatory",
+					["coord"] = { 61.7, 80.8, THE_WAKING_SHORES },
+				}),
+				q(72105, {	-- Release Kite: Life-Binder Conservatory
+					["name"] = "Release Kite: Life-Binder Conservatory",
+					["coord"] = { 57.0, 20.0, THE_WAKING_SHORES },
+				}),
+				q(72100, {	-- Release Kite: Obsidian Observatory
+					["name"] = "Release Kite: Obsidian Observatory",
+					["coord"] = { 43.6, 63.8, THE_WAKING_SHORES },
+				}),
+				q(72097, {	-- Release Kite: Skytop Observatory
+					["name"] = "Release Kite: Skytop Observatory",
+					["coord"] = { 73.0, 52.9, THE_WAKING_SHORES },
+				}),
+				q(72103, {	-- Release Kite: The Overflowing Spring
+					["name"] = "Release Kite: The Overflowing Spring",
+					["coord"] = { 50.3, 55.6, THE_WAKING_SHORES },
+				}),
+				q(72104, {	-- Release Kite: Uktulut Backwater
+					["name"] = "Release Kite: Uktulut Backwater",
+					["coord"] = { 48.9, 39.9, THE_WAKING_SHORES },
+				}),
+				q(72096, {	-- Release Kite: Wingrest Embassy
+					["name"] = "Release Kite: Wingrest Embassy",
+					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 				}),
 				q(72059, {	-- Stay awhile and listen: Commander Lethanak
 					["name"] = "Stay awhile and listen: Commander Lethanak",
@@ -1302,6 +1372,60 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 					["provider"] = { "n", 194076 },	-- Veritistrasz
 					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
+				}),
+				q(70709, {	-- Talk to: Wu'de Prepfoot
+					["name"] = "Talk to: Wu'de Prepfoot",
+					["coord"] = { 35.1, 47.2, THE_WAKING_SHORES },
+				}),
+				q(72178, {	-- Theory in Practice: Baron von Swoopenbite
+					["name"] = "Theory in Practice: Baron von Swoopenbite",
+					["sourceQuests"] = {
+						69901,	-- Bring In the Expert
+						69900,	-- Identifying the Source
+					},
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+				}),
+				q(72174, {	-- Theory in Practice: Bob
+					["name"] = "Theory in Practice: Bob",
+					["sourceQuests"] = {
+						69901,	-- Bring In the Expert
+						69900,	-- Identifying the Source
+					},
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+				}),
+				q(72179, {	-- Theory in Practice: Lord Firegiggle
+					["name"] = "Theory in Practice: Lord Firegiggle",
+					["sourceQuests"] = {
+						69901,	-- Bring In the Expert
+						69900,	-- Identifying the Source
+					},
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+				}),
+				q(72177, {	-- Theory in Practice: Mr.Nibbles
+					["name"] = "Theory in Practice: Mr.Nibbles",
+					["sourceQuests"] = {
+						69901,	-- Bring In the Expert
+						69900,	-- Identifying the Source
+					},
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+				}),
+				q(72176, {	-- Theory in Practice: Toughscale
+					["name"] = "Theory in Practice: Toughscale",
+					["sourceQuests"] = {
+						69901,	-- Bring In the Expert
+						69900,	-- Identifying the Source
+					},
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+				}),
+				q(72089, {	-- To Skytop Observatory
+					["name"] = "To Skytop Observatory",
+					["provider"] = { "n", 193287 },	-- Lord Andestrasz
+					["coord"] = { 57.7, 66.9, THE_WAKING_SHORES },
 				}),
 			}),
 			ach(15941, {	-- Dragon Racing Completionist: Gold
@@ -1507,27 +1631,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THE_WAKING_SHORES, {
-		q(72096),	-- Release Kite at Wingrest Embassy
-		q(72097),	-- Release Kite at Skytop Observatory
-		q(72098),	-- Release Kite at Crumbling Life Archway
-		q(72099),	-- Release Kite at Hatchery Observatory
-		q(72100),	-- Release Kite at Obsidian Observatory
-		q(72101),	-- Release Kite at Apex Canopy
-		q(72102),	-- Release Kite at Concord Observatory
-		q(72103),	-- Release Kite at The Overflowing Spring
-		q(72104),	-- Release Kite at Uktulut Backwater
-		q(72105),	-- Release Kite at Life-Binder Conservatory
---[[
-		q(70709),	-- Promising to Save Wu'de Prepfoot during The Shadow of His Wings(65691)
-		q(70872),	-- Popped After A Sledgehammer of a Solution(66108A) and Don't Be So Shellfish (66106)
-		q(70872),	-- After completing A Quack In Time and the other quests quakc
-		q(70231),	-- Gossip with Emilia Bellocq 75.4, 33.9 193915
-		-- Namning the Proto-Welp during [WIP] Theory in Practice (69902)
-		q(72176),	-- Toughscale
-		q(72174),	-- Bob
-		q(72177),	-- Mr.Nibbles
-		q(72179),	-- Lord Firegiggle
-		q(72178),	-- Baron von Swoopenbite
---]]
+		q(70872),	-- Quack Weekly Trigger
 	}),
 }));

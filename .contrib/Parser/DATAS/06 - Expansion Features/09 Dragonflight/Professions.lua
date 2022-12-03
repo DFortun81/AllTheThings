@@ -42,6 +42,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				--
 				i(194746),	-- Thomas's Empty Bottle
 				i(194714),	-- Miguel's Gift
+				i(198084),	-- Miguel's Gift
 				-- Recipes
 				r(377978,{["u"]=15}),	-- Heart in a Bottle (ALCHEMY)
 				r(377981,{["u"]=15}),	-- Heart in a Bottle (BLACKSMITHING)
@@ -289,9 +290,26 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(70360, {	-- Dragon Isles Enchanting
-				--["sourceQuests"] = { },	--
-				["provider"] = { "n", 192055 },	-- Veeno
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 192055 },	-- Veeno <Enchanting Trainer>
 				["coord"] = { 75.8, 33.2, THE_WAKING_SHORES },
+			}),
+			q(70029, {	-- Artisan's Supply: Runed Serevite Rods
+				["sourceQuests"] = { 70360 },	-- Dragon Isles Enchanting
+				["providers"] = {
+					{ "n", 192055 },	-- Veeno <Enchanting Trainer>
+					{ "n", 198903 },	-- Asarin <Enchanting Trainer & Supplies>
+					{ "n", 192116 },	-- Solonga <Enchanting Trainer & Supplies>
+				},
+				["coords"] = {
+					{ 75.8, 33.2, THE_WAKING_SHORES },
+					{ 41.4, 61.0, OHNAHRAN_PLAINS },
+					{ 56.8, 75.6, OHNAHRAN_PLAINS },
+				},
+				["cost"] = { { "i", 201601, 2 }, },	-- 2xRuned Serevite Rod
 			}),
 		}),
 		prof(ENGINEERING, {
@@ -594,9 +612,18 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72249, {	-- Dragon Isles Tailoring
-				--["sourceQuests"] = { },	--
-				["provider"] = { "n", 192565 },	-- Zayn Starmaker
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 192565 },	-- Zayn Starmaker <Tailoring Trainer>
 				["coord"] = { 75.8, 33.2, THE_WAKING_SHORES },
+			}),
+			q(70027, {	-- Artisan's Supply: Surveyor's Cloth Bands
+				["sourceQuests"] = { 72249 },	-- Dragon Isles Tailoring
+				["provider"] = { "n", 191894 },	-- Krillonn <Tailoring Trainer>
+				["coord"] = { 61.4, 70.0, THE_WAKING_SHORES },
+				["cost"] = { { "i", 193497, 1 }, },	-- 2xSurveyor's Cloth Bands
 			}),
 		}),
 	}),

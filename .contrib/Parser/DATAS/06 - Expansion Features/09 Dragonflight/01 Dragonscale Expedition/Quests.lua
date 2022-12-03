@@ -17,18 +17,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["repeatable"] = true,
 				["cost"] = { { "i", 192055, 5 }, }, 	-- 5x Dragon Isles Artifact
 			}),
+			q(72876, {	-- Multiple Dragon Isles Artifacts
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["cost"] = { { "i", 192055, 20 }, }, 	-- 20x Dragon Isles Artifact
+			}),
 			q(72397, {	-- Orientation: Dragonscale Basecamp
 				["description"] = "Requires Renown 1.",
 				["provider"] = { "n", 186869 },	-- Naleidea Rivergleam
 				["coord"] = { 47.9, 82.4, THE_WAKING_SHORES },
 			}),
 				-- RENOWN 2 --
-			q(70822, {	-- Lost Expedition Scouts
-				["description"] = "Requires Renown 2.",
-				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
-				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
-			}),
-			q(72023, {	-- Dragonscale Expedition Supplies
+			q(72023, {	-- Dragon Isles Supplies
 				["description"] = "Requires Renown 2.",
 				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
@@ -37,7 +38,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198863),	-- Small Dragon Expedition Supply Pack
 				},
 			}),
+			q(70822, {	-- Lost Expedition Scouts
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
+				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
+			}),
 				-- RENOWN 3 --
+			q(72024, {	-- Dragon Isles Supplies
+				["description"] = "Requires Renown 3.",
+				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
+				},
+			}),
 			q(70335, {	-- Simple Excavation Tools
 				["description"] = "Requires Renown 3.",
 				["provider"] = { "n", 188265 },	-- Rae'ana
@@ -50,6 +65,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 				-- RENOWN 4 --
+			q(72025, {	-- Dragon Isles Supplies
+				["description"] = "Requires Renown 4.",
+				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
+				},
+			}),
 			q(70812, {	-- Expedition Cloaks
 				["description"] = "Requires Renown 4.\n\nBuying the Renowned cloaks will remove this quest from being available!",
 				["provider"] = { "n", 187700 },	-- Pathfinder Jab
@@ -114,45 +138,52 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198863),	-- Small Dragon Expedition Supply Pack
 				},
 			}),
-
-
-
-
-
-				-- RENOWN 1 --
-			q(71008, {	-- Wanted: Stoneheart's Stone Heart
-				["provider"] = { "o", 381670 },	-- Archivists' Request
-				["coord"] = { 47.8, 82.2, THE_WAKING_SHORES },
+				-- Weeklies --
+			q(71007, {	-- Wanted: Disoriented Wishtail
+				["provider"] = { "o", 381669 },	-- Archivists' Request
+				["coord"] = { 47.0, 83.5, THE_WAKING_SHORES },
+				["isWeekly"] = true,
 			}),
-				-- RENOWN 2 --
-			q(71011, {	-- Wanted: Torrential Lily
-				["provider"] = { "o", 381672 },	-- Archivists' Request
-				["coord"] = { 48.0, 82.1, THE_WAKING_SHORES },
-			}),
-			q(70992, {	-- Wanted: Lost Tuskaar Kite
-				["provider"] = { "o", 381650 },	-- Archivists' Request
-				["coord"] = { 48.0, 82.2, THE_WAKING_SHORES },
+			q(71001, {	-- Wanted: Earthbound Primordial Core
+				["provider"] = { "o", 381661 },	-- Archivists' Request
+				["coord"] = { 46.7, 82.9, THE_WAKING_SHORES },
+				["isWeekly"] = true,
 			}),
 			q(71005, {	-- Wanted: Fangfall
 				["provider"] = { "o", 381668 },	-- Archivists' Request
 				["coord"] = { 49.0, 82.7, THE_WAKING_SHORES },
+				["isWeekly"] = true,
 			}),
-
-
+			q(70995, {	-- Wanted: Fenistrasza's Skull
+				["provider"] = { "o", 381664 },	-- Archivists' Request
+				["coord"] = { 47.6, 83.0, THE_WAKING_SHORES },
+				["cost"] = { { "i", 200143, 1 }, },	--1xFenistrasza's Skull
+				["isWeekly"] = true,
+			}),
+			q(70992, {	-- Wanted: Lost Tuskaar Kite
+				["provider"] = { "o", 381650 },	-- Archivists' Request
+				["coord"] = { 48.0, 82.2, THE_WAKING_SHORES },
+				["isWeekly"] = true,
+			}),
 			q(71004, {	-- Wanted: Ohuna Mass-Binding Totem
 				["provider"] = { "o", 381667 },	-- Archivists' Request
 				["coord"] = { 47.1, 82.8, THE_WAKING_SHORES },
+				["isWeekly"] = true,
 			}),
-			q(71007, {	-- Wanted: Disoriented Wishtail
-				["provider"] = { "o", 381669 },	-- Archivists' Request
-				["coord"] = { 47.0, 83.5, THE_WAKING_SHORES },
-				["g"] = {
-					i(198490),	-- Bushwhacker's Compass
-				},
+			q(71008, {	-- Wanted: Stoneheart's Stone Heart
+				["provider"] = { "o", 381670 },	-- Archivists' Request
+				["coord"] = { 47.8, 82.2, THE_WAKING_SHORES },
+				["isWeekly"] = true,
 			}),
 			q(71010, {	-- Wanted: Temporal Spyglass
 				["provider"] = { "o", 381671 },	-- Archivists' Request
 				["coord"] = { 48.0, 83.7, THE_WAKING_SHORES },
+				["isWeekly"] = true,
+			}),
+			q(71011, {	-- Wanted: Torrential Lily
+				["provider"] = { "o", 381672 },	-- Archivists' Request
+				["coord"] = { 48.0, 82.1, THE_WAKING_SHORES },
+				["isWeekly"] = true,
 			}),
 		}),
 	}),
