@@ -528,6 +528,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 10.8, 41.2, THE_AZURE_SPAN },
 						["g"] = {
 							i(197381),	-- Renewed Proto-Drake: Gradient Horns (DM!)
+							i(201294),	-- Salt Crystal Ring
 						},
 					}),
 					q(66559, {	-- Back To Camp

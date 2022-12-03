@@ -366,6 +366,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 81.0, 29.0, THE_WAKING_SHORES },
 				["races"] = HORDE_ONLY,
 			}),
+			q(72729, {	-- The Great Swog
+				-- ["sourceQuests"] = {  },	--
+				["provider"] = { "i", 202105 },	-- Rusted Coin of the Isles
+				["requireSkill"] = FISHING,
+			}),
 		}),
 		prof(HERBALISM, {
 			filter(RECIPES, {

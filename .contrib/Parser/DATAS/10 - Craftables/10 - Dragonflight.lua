@@ -1179,6 +1179,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(194967),	-- Aileron Seamoth
 		i(194968),	-- Cerulean Spinefish
 		i(199338),	-- Copper Coin of the Isles
+		i(198395),	-- Dull Spined Clam
 		i(200074),	-- Frosted Rimefin Tuna
 		i(199340),	-- Gold Coin of the Isles
 		i(194970),	-- Islefin Dorado
@@ -1187,6 +1188,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(198397),	-- Rainbow Pearl
 		i(199345),	-- Rimefin Tuna
 		i(199346),	-- Rotten Rimefin Tuna
+		i(202105),	-- Rusted Coin of the Isles
 		i(194730),	-- Scalebelly Mackeral
 		i(199339),	-- Silver Coin of the Isles
 		i(194969),	-- Temporal Dragonhead
@@ -2152,6 +2154,7 @@ root("HiddenQuestTriggers", {
 			q(72162),	-- Iridescent Ore Fragments
 			q(72163),	-- Iridescent Ore Fragments
 			q(72164),	-- Iridescent Ore Fragments
+			q(72165),	-- Iridescent Ore
 		}),
 		--[[
 		prof(BLACKSMITHING, {

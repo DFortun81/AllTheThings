@@ -391,7 +391,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200158),	-- Eerie Spectral Ring
 			i(200159),	-- Blaze Ring
 			i(200161),	-- Razorwind Talisman
-			i(200163),	-- Ring of Embers
 			i(200164),	-- Iceloop
 			i(200174),	-- Bonesigil Shoulderguards
 			i(200185),	-- Grips of the Everflowing Ocean
@@ -504,7 +503,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201291),	-- Twisted Leather Belt
 			i(201292),	-- Bramble Chain Belt
 			i(201293),	-- Sleet Shined Waistguard
-			i(201294),	-- Salt Crystal Ring
 			i(201992),	-- Emissary's Flamewrought Seal
 			i(202003),	-- Primal Seeker's Leggings
 			i(202004),	-- Brawler's Earthen Cuirass
@@ -604,7 +602,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194903),	-- Pocket Chocolate
 			i(198137),	-- Esoteric Dragon Shard of Knowledge
 			i(198151),	-- Cracked Heart in a Bottle
-			i(198395),	-- Dull Spined Clam
 			i(198400),	-- Lucky Horseshoe
 			--
 			i(198086),	-- Darkmoon Deck: Inferno
@@ -871,7 +868,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200586),	-- Derelict Sunglasses
 			i(201411),	-- Ancient Vault Artifact
 			i(201412),	-- Ancient Vault Artifact
-			i(202105),	-- Rusted Coin of the Isles
 		}),
 		n(TREASURES, {
 			i(191058),	-- Dilapidated Parchment: Bottom Half
@@ -1210,7 +1206,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200071),	-- Sacred Tuskarr Totem
 			i(200073),	-- Valdrakken Treasures
 			i(200094),	-- Caravan Strongbox
-			i(200095),	-- Supply Laden Soup Pot
 			i(200184),	-- Nokhud Battle Helm
 			i(200194),	-- Nokhud Battle Tunic
 			i(200196),	-- Nokhud Battle Barding
