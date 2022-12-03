@@ -51,9 +51,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 4 --
 			q(70812, {	-- Expedition Cloaks
-				["description"] = "Requires Renown 4.",
+				["description"] = "Requires Renown 4.\n\nBuying the Renowned cloaks will remove this quest from being available!",
 				["provider"] = { "n", 187700 },	-- Pathfinder Jab
 				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "questID", 72025 },
 				["g"] = {
 					i(199873),	-- Renowned Expeditioner's Cape
 					i(199874),	-- Renowned Expeditioner's Cloak

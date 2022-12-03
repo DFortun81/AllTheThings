@@ -51,7 +51,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			d(1, {	-- Normal
-				e(2637, {	-- Granyth
+				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
 						i(193753),	-- Breastplate of Soaring Terror
@@ -63,7 +63,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193692),	-- Stoneroot Headdress
 					},
 				}),
-				e(2636, {	-- The Raging Tempest
+				e(2497, {	-- The Raging Tempest
 					["crs"] = { 186615 },	-- The Raging Tempest
 					["g"] = {
 						i(193697),	-- Bottle of Spiraling Winds
@@ -73,7 +73,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193696),	-- Thunderous Downburst Ring
 					},
 				}),
-				e(2581, {	-- Teera and Maruuk
+				e(2478, {	-- Teera and Maruuk
 					["crs"] = {
 						186338,	-- Maruuk
 						186339,	-- Teera
@@ -87,7 +87,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193676),	-- Ukhel Ancestry Beads
 					},
 				}),
-				e(2580, {	-- Balakar Khan
+				e(2477, {	-- Balakar Khan
 					["crs"] = { 186151 },	-- Balakar Khan
 					["g"] = {
 						ach(16275),	-- The Nokhud Offensive
@@ -102,7 +102,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			d(2, {	-- Heroic
-				e(2637, {	-- Granyth
+				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
 						i(193753),	-- Breastplate of Soaring Terror
@@ -114,7 +114,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193692),	-- Stoneroot Headdress
 					},
 				}),
-				e(2636, {	-- The Raging Tempest
+				e(2497, {	-- The Raging Tempest
 					["crs"] = { 186615 },	-- The Raging Tempest
 					["g"] = {
 						i(193697),	-- Bottle of Spiraling Winds
@@ -124,7 +124,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193696),	-- Thunderous Downburst Ring
 					},
 				}),
-				e(2581, {	-- Teera and Maruuk
+				e(2478, {	-- Teera and Maruuk
 					["crs"] = {
 						186338,	-- Maruuk
 						186339,	-- Teera
@@ -138,7 +138,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193676),	-- Ukhel Ancestry Beads
 					},
 				}),
-				e(2580, {	-- Balakar Khan
+				e(2477, {	-- Balakar Khan
 					["crs"] = { 186151 },	-- Balakar Khan
 					["g"] = {
 						ach(16276),	-- Heroic: The Nokhud Offensive
@@ -157,7 +157,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				n(ACHIEVEMENTS, {
 					ach(16620),	-- Ohuna Incubation
 				}),
-				e(2637, {	-- Granyth
+				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
 						i(193753),	-- Breastplate of Soaring Terror
@@ -169,7 +169,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193692),	-- Stoneroot Headdress
 					},
 				}),
-				e(2636, {	-- The Raging Tempest
+				e(2497, {	-- The Raging Tempest
 					["crs"] = { 186615 },	-- The Raging Tempest
 					["g"] = {
 						ach(16447),	-- What Are The Chances...
@@ -180,7 +180,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193696),	-- Thunderous Downburst Ring
 					},
 				}),
-				e(2581, {	-- Teera and Maruuk
+				e(2478, {	-- Teera and Maruuk
 					["crs"] = {
 						186338,	-- Maruuk
 						186339,	-- Teera
@@ -195,7 +195,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193676),	-- Ukhel Ancestry Beads
 					},
 				}),
-				e(2580, {	-- Balakar Khan
+				e(2477, {	-- Balakar Khan
 					["crs"] = { 186151 },	-- Balakar Khan
 					["g"] = {
 						ach(16277),	-- Mythic: The Nokhud Offensive

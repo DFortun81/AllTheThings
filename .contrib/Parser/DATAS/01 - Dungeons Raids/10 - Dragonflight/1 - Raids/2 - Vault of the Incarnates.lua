@@ -66,7 +66,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
 			}),
 			d(17, {	-- LFR
-				e(2587, {	-- Eranog
+				e(2480, {	-- Eranog
 					["crs"] = { 184972 },
 					["g"] = {
 						crit(1, {	-- Eranog
@@ -83,7 +83,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195478),	-- Valdrakken Protector's Turncoat
 					},
 				}),
-				e(2639, {	-- Terros
+				e(2500, {	-- Terros
 					["crs"] = { 190496 },	-- Terros
 					["g"] = {
 						crit(4, {	-- Terros
@@ -100,7 +100,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195502),	-- Terros' Captive Core
 					},
 				}),
-				e(2590, {	-- The Primal Council
+				e(2486, {	-- The Primal Council
 					["crs"] = {
 						187771,	-- Kadros Icewrath
 						187768,	-- Dathea Stormlash
@@ -123,7 +123,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 					},
 				}),
-				e(2592, {	-- Sennarth, the Cold Breath
+				e(2482, {	-- Sennarth, the Cold Breath
 					["crs"] = { 187967 },
 					["g"] = {
 						crit(5, {	-- Sennarth, the Cold Breath
@@ -160,7 +160,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195507),	-- Unnatural Dripstone Cinch
 					},
 				}),
-				e(2635, {	-- Dathea, Ascended
+				e(2502, {	-- Dathea, Ascended
 					["crs"] = { 189813 },
 					["g"] = {
 						crit(3, {	-- Dathea, Ascended
@@ -197,7 +197,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195492),	-- Windborne Hatsuburi
 					},
 				}),
-				e(2605, {	-- Kurog Grimtotem
+				e(2491, {	-- Kurog Grimtotem
 					["crs"] = { 181378 },
 					["g"] = {
 						crit(6, {	-- Kurog Grimtotem
@@ -236,7 +236,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(200916),	-- Formula: Illusion: Primal Mastery (RECIPE!)
 					},
 				}),
-				e(2614, {	-- Broodkeeper Diurna
+				e(2493, {	-- Broodkeeper Diurna
 					["crs"] = { 190245 },
 					["g"] = {
 						crit(7, {	-- Broodkeeper Diurna
@@ -275,7 +275,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195522),	-- Tassets of the Tarasek Legion
 					},
 				}),
-				e(2607, {	-- Raszageth the Storm-Eater
+				e(2499, {	-- Raszageth the Storm-Eater
 					["crs"] = { 189492 },	-- Temp
 					["g"] = {
 						crit(8, {	-- Raszageth the Storm-Eater
@@ -315,7 +315,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			d(14, {	-- Normal
-				e(2587, {	-- Eranog
+				e(2480, {	-- Eranog
 					["crs"] = { 184972 },
 					["g"] = {
 						ach(16335),	-- What Frozen Things Do
@@ -330,7 +330,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195478),	-- Valdrakken Protector's Turncoat
 					},
 				}),
-				e(2639, {	-- Terros
+				e(2500, {	-- Terros
 					["crs"] = { 190496 },	-- Terros
 					["g"] = {
 						ach(16365),	-- Little Friends
@@ -345,7 +345,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195502),	-- Terros' Captive Core
 					},
 				}),
-				e(2590, {	-- The Primal Council
+				e(2486, {	-- The Primal Council
 					["crs"] = {
 						187771,	-- Kadros Icewrath
 						187768,	-- Dathea Stormlash
@@ -366,7 +366,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 					},
 				}),
-				e(2592, {	-- Sennarth, the Cold Breath
+				e(2482, {	-- Sennarth, the Cold Breath
 					["crs"] = { 187967 },
 					["g"] = {
 						ach(16419),	-- I Was Saving That For Later
@@ -401,7 +401,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195507),	-- Unnatural Dripstone Cinch
 					},
 				}),
-				e(2635, {	-- Dathea, Ascended
+				e(2502, {	-- Dathea, Ascended
 					["crs"] = { 189813 },
 					["g"] = {
 						ach(16458),	-- Nothing But Air
@@ -436,7 +436,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195492),	-- Windborne Hatsuburi
 					},
 				}),
-				e(2605, {	-- Kurog Grimtotem
+				e(2491, {	-- Kurog Grimtotem
 					["crs"] = { 181378 },
 					["g"] = {
 						ach(16450),	-- The Power is MINE!
@@ -473,7 +473,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(200916),	-- Formula: Illusion: Primal Mastery (RECIPE!)
 					},
 				}),
-				e(2614, {	-- Broodkeeper Diurna
+				e(2493, {	-- Broodkeeper Diurna
 					["crs"] = { 190245 },
 					["g"] = {
 						ach(16442),	-- Incubation Extermination
@@ -510,7 +510,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195522),	-- Tassets of the Tarasek Legion
 					},
 				}),
-				e(2607, {	-- Raszageth the Storm-Eater
+				e(2499, {	-- Raszageth the Storm-Eater
 					["crs"] = { 189492 },	-- Temp
 					["g"] = {
 						ach(16451),	-- The Ol Raszle Daszle
@@ -554,7 +554,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						r(370672),	-- Potion Cauldron of Ultimate Power (RECIPE!)
 					}),
 				}),
-				e(2587, {	-- Eranog
+				e(2480, {	-- Eranog
 					["crs"] = { 184972 },
 					["g"] = {
 						crit(1, {	-- Eranog
@@ -571,7 +571,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195478),	-- Valdrakken Protector's Turncoat
 					},
 				}),
-				e(2639, {	-- Terros
+				e(2500, {	-- Terros
 					["crs"] = { 190496 },	-- Terros
 					["g"] = {
 						crit(4, {	-- Terros
@@ -588,7 +588,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195502),	-- Terros' Captive Core
 					},
 				}),
-				e(2590, {	-- The Primal Council
+				e(2486, {	-- The Primal Council
 					["crs"] = {
 						187771,	-- Kadros Icewrath
 						187768,	-- Dathea Stormlash
@@ -611,7 +611,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 					},
 				}),
-				e(2592, {	-- Sennarth, the Cold Breath
+				e(2482, {	-- Sennarth, the Cold Breath
 					["crs"] = { 187967 },
 					["g"] = {
 						crit(5, {	-- Sennarth, the Cold Breath
@@ -648,7 +648,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195507),	-- Unnatural Dripstone Cinch
 					},
 				}),
-				e(2635, {	-- Dathea, Ascended
+				e(2502, {	-- Dathea, Ascended
 					["crs"] = { 189813 },
 					["g"] = {
 						crit(3, {	-- Dathea, Ascended
@@ -685,7 +685,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195492),	-- Windborne Hatsuburi
 					},
 				}),
-				e(2605, {	-- Kurog Grimtotem
+				e(2491, {	-- Kurog Grimtotem
 					["crs"] = { 181378 },
 					["g"] = {
 						crit(6, {	-- Kurog Grimtotem
@@ -724,7 +724,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(200916),	-- Formula: Illusion: Primal Mastery (RECIPE!)
 					},
 				}),
-				e(2614, {	-- Broodkeeper Diurna
+				e(2493, {	-- Broodkeeper Diurna
 					["crs"] = { 190245 },
 					["g"] = {
 						crit(7, {	-- Broodkeeper Diurna
@@ -763,7 +763,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195522),	-- Tassets of the Tarasek Legion
 					},
 				}),
-				e(2607, {	-- Raszageth the Storm-Eater
+				e(2499, {	-- Raszageth the Storm-Eater
 					["crs"] = { 189492 },	-- Temp
 					["g"] = {
 						crit(8, {	-- Raszageth the Storm-Eater
@@ -809,7 +809,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						r(370672),	-- Potion Cauldron of Ultimate Power (RECIPE!)
 					}),
 				}),
-				e(2587, {	-- Eranog
+				e(2480, {	-- Eranog
 					["crs"] = { 184972 },
 					["g"] = {
 						ach(16346),	-- Mythic: Eranog
@@ -824,7 +824,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195478),	-- Valdrakken Protector's Turncoat
 					},
 				}),
-				e(2639, {	-- Terros
+				e(2500, {	-- Terros
 					["crs"] = { 190496 },	-- Terros
 					["g"] = {
 						ach(16347),	-- Mythic: Terros
@@ -839,7 +839,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195502),	-- Terros' Captive Core
 					},
 				}),
-				e(2590, {	-- The Primal Council
+				e(2486, {	-- The Primal Council
 					["crs"] = {
 						187771,	-- Kadros Icewrath
 						187768,	-- Dathea Stormlash
@@ -860,7 +860,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 					},
 				}),
-				e(2592, {	-- Sennarth, the Cold Breath
+				e(2482, {	-- Sennarth, the Cold Breath
 					["crs"] = { 187967 },
 					["g"] = {
 						ach(16349),	-- Mythic: Sennarth, The Cold Breath
@@ -895,7 +895,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195507),	-- Unnatural Dripstone Cinch
 					},
 				}),
-				e(2635, {	-- Dathea, Ascended
+				e(2502, {	-- Dathea, Ascended
 					["crs"] = { 189813 },
 					["g"] = {
 						ach(16350),	-- Mythic: Dathea, Ascended
@@ -930,7 +930,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195492),	-- Windborne Hatsuburi
 					},
 				}),
-				e(2605, {	-- Kurog Grimtotem
+				e(2491, {	-- Kurog Grimtotem
 					["crs"] = { 181378 },
 					["g"] = {
 						ach(16351),	-- Mythic: Kurog Grimtotem
@@ -967,7 +967,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(200916),	-- Formula: Illusion: Primal Mastery (RECIPE!)
 					},
 				}),
-				e(2614, {	-- Broodkeeper Diurna
+				e(2493, {	-- Broodkeeper Diurna
 					["crs"] = { 190245 },
 					["g"] = {
 						ach(16352),	-- Mythic: Broodkeeper Diurna
@@ -1004,7 +1004,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195522),	-- Tassets of the Tarasek Legion
 					},
 				}),
-				e(2607, {	-- Raszageth the Storm-Eater
+				e(2499, {	-- Raszageth the Storm-Eater
 					["crs"] = { 189492 },	-- Temp
 					["g"] = {
 						ach(16353),	-- Mythic: Raszageth the Storm-Eater

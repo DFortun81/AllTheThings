@@ -27,7 +27,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			d(1, {	-- Normal
-				e(2570, {	-- Hackclaw's War-Band
+				e(2471, {	-- Hackclaw's War-Band
 					["crs"] = {
 						186124,	-- Gashtooth
 						186122,	-- Rira Hackclaw
@@ -41,7 +41,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193673),	-- Ravenous Pursuer's Footwraps
 					},
 				}),
-				e(2568, {	-- Treemouth
+				e(2473, {	-- Treemouth
 					["crs"] = { 186120 },	-- Treemouth
 					["g"] = {
 						i(193654),	-- Ancient Rot Walkers
@@ -53,7 +53,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193652),	-- Treemouth's Festering Splinter
 					},
 				}),
-				e(2567, {	-- Gutshot
+				e(2472, {	-- Gutshot
 					["crs"] = { 186116 },	-- Gutshot
 					["g"] = {
 						i(193667),	-- Boastful Stalker's Epaulets
@@ -63,7 +63,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193666),	-- Tuskarr Bone Necklace
 					},
 				}),
-				e(2569, {	-- Decatriarch Wratheye
+				e(2474, {	-- Decatriarch Wratheye
 					["crs"] = { 186121 },	-- Decatriarch Wratheye
 					["g"] = {
 						ach(16255),	-- Brackenhide Hollow
@@ -77,7 +77,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			d(2, {	-- Heroic
-				e(2570, {	-- Hackclaw's War-Band
+				e(2471, {	-- Hackclaw's War-Band
 					["crs"] = {
 						186124,	-- Gashtooth
 						186122,	-- Rira Hackclaw
@@ -91,7 +91,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193673),	-- Ravenous Pursuer's Footwraps
 					},
 				}),
-				e(2568, {	-- Treemouth
+				e(2473, {	-- Treemouth
 					["crs"] = { 186120 },	-- Treemouth
 					["g"] = {
 						i(193654),	-- Ancient Rot Walkers
@@ -103,7 +103,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193652),	-- Treemouth's Festering Splinter
 					},
 				}),
-				e(2567, {	-- Gutshot
+				e(2472, {	-- Gutshot
 					["crs"] = { 186116 },	-- Gutshot
 					["g"] = {
 						i(193667),	-- Boastful Stalker's Epaulets
@@ -113,7 +113,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193666),	-- Tuskarr Bone Necklace
 					},
 				}),
-				e(2569, {	-- Decatriarch Wratheye
+				e(2474, {	-- Decatriarch Wratheye
 					["crs"] = { 186121 },	-- Decatriarch Wratheye
 					["g"] = {
 						ach(16256),	-- Heroic: Brackenhide Hollow
@@ -130,7 +130,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				n(ACHIEVEMENTS, {
 					ach(16110),	-- Subscribed to Hyena Facts
 				}),
-				e(2570, {	-- Hackclaw's War-Band
+				e(2471, {	-- Hackclaw's War-Band
 					["crs"] = {
 						186124,	-- Gashtooth
 						186122,	-- Rira Hackclaw
@@ -145,7 +145,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193673),	-- Ravenous Pursuer's Footwraps
 					},
 				}),
-				e(2568, {	-- Treemouth
+				e(2473, {	-- Treemouth
 					["crs"] = { 186120 },	-- Treemouth
 					["g"] = {
 						ach(16430),	-- All Bark, All Bite
@@ -158,7 +158,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193652),	-- Treemouth's Festering Splinter
 					},
 				}),
-				e(2567, {	-- Gutshot
+				e(2472, {	-- Gutshot
 					["crs"] = { 186116 },	-- Gutshot
 					["g"] = {
 						i(193667),	-- Boastful Stalker's Epaulets
@@ -168,7 +168,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193666),	-- Tuskarr Bone Necklace
 					},
 				}),
-				e(2569, {	-- Decatriarch Wratheye
+				e(2474, {	-- Decatriarch Wratheye
 					["crs"] = { 186121 },	-- Decatriarch Wratheye
 					["g"] = {
 						ach(16257),	-- Mythic: Brackenhide Hollow

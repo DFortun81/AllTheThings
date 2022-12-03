@@ -20,7 +20,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				i(199229),	-- Schematic: Tinker: Breath of Neltharion (RECIPE!)
 			}),
 			d(1, {	-- Normal
-				e(2613, {	-- Chargath, Bane of Scales
+				e(2490, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales
 					["g"] = {
 						i(193772),	-- Dragonscale Ripper
@@ -30,7 +30,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193768),	-- Scalebane Signet
 					},
 				}),
-				e(2612, {	-- Forgemaster Gorek
+				e(2489, {	-- Forgemaster Gorek
 					["crs"] = { 189478 },	-- Forgemaster Gorek
 					["g"] = {
 						i(193782),	-- Emberguard Harness
@@ -41,7 +41,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193781),	-- Lavabearer Legwraps
 					},
 				}),
-				e(2610, {	-- Magmatusk
+				e(2494, {	-- Magmatusk
 					["crs"] = { 181861 },	-- Magmatusk
 					["g"] = {
 						i(193789),	-- Fural's Blazing Faulds
@@ -51,7 +51,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193790),	-- Searing Tusk Shard
 					},
 				}),
-				e(2611, {	-- Warlord Sargha
+				e(2501, {	-- Warlord Sargha
 					["crs"] = { 189901 },	-- Warlord Sargha
 					["g"] = {
 						ach(16263),	-- Neltharus
@@ -66,7 +66,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			d(2, {	-- Heroic
-				e(2613, {	-- Chargath, Bane of Scales
+				e(2490, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales
 					["g"] = {
 						i(193772),	-- Dragonscale Ripper
@@ -76,7 +76,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193768),	-- Scalebane Signet
 					},
 				}),
-				e(2612, {	-- Forgemaster Gorek
+				e(2489, {	-- Forgemaster Gorek
 					["crs"] = { 189478 },	-- Forgemaster Gorek
 					["g"] = {
 						i(193782),	-- Emberguard Harness
@@ -87,7 +87,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193781),	-- Lavabearer Legwraps
 					},
 				}),
-				e(2610, {	-- Magmatusk
+				e(2494, {	-- Magmatusk
 					["crs"] = { 181861 },	-- Magmatusk
 					["g"] = {
 						i(193789),	-- Fural's Blazing Faulds
@@ -97,7 +97,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193790),	-- Searing Tusk Shard
 					},
 				}),
-				e(2611, {	-- Warlord Sargha
+				e(2501, {	-- Warlord Sargha
 					["crs"] = { 189901 },	-- Warlord Sargha
 					["g"] = {
 						ach(16264),	-- Heroic: Neltharus
@@ -112,7 +112,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			d(23, {	-- Mythic
-				e(2613, {	-- Chargath, Bane of Scales
+				e(2490, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales
 					["g"] = {
 						ach(16438),	-- Knowledge is... Preserved?
@@ -123,7 +123,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193768),	-- Scalebane Signet
 					},
 				}),
-				e(2612, {	-- Forgemaster Gorek
+				e(2489, {	-- Forgemaster Gorek
 					["crs"] = { 189478 },	-- Forgemaster Gorek
 					["g"] = {
 						ach(16432),	-- Ready for Raiding VIII
@@ -135,7 +135,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193781),	-- Lavabearer Legwraps
 					},
 				}),
-				e(2610, {	-- Magmatusk
+				e(2494, {	-- Magmatusk
 					["crs"] = { 181861 },	-- Magmatusk
 					["g"] = {
 						ach(16453),	-- Liquid Hot Magma
@@ -146,7 +146,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193790),	-- Searing Tusk Shard
 					},
 				}),
-				e(2611, {	-- Warlord Sargha
+				e(2501, {	-- Warlord Sargha
 					["crs"] = { 189901 },	-- Warlord Sargha
 					["g"] = {
 						ach(16265),	-- Mythic: Neltharus

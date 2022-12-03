@@ -20,7 +20,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 				}),
 			}),
 			d(1, {	-- Normal
-				e(2609, {	-- Melidrussa Chillworn
+				e(2488, {	-- Melidrussa Chillworn
 					["crs"] = { 188252 },	-- Melidrussa Chillworn
 					["g"] = {
 						i(193761),	-- Chillworn's Infusion Staff
@@ -30,7 +30,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 						i(193758),	-- Subjugator's Chilling Grip
 					},
 				}),
-				e(2606, {	-- Kokia Blazehoof
+				e(2485, {	-- Kokia Blazehoof
 					["crs"] = { 189232 },	-- Kokia Blazehoof
 					["g"] = {
 						i(193762),	-- Blazebinder's Hoof
@@ -41,7 +41,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 						i(193766),	-- Kokia's Burnout Rod
 					},
 				}),
-				e(2569, {	-- Kyrakka and Erkhart Stormvein
+				e(2503, {	-- Kyrakka and Erkhart Stormvein
 					["crs"] = {
 						190484,	-- Kyrakka
 						190485,	-- Erkhart Stormvein
@@ -61,7 +61,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 				}),
 			}),
 			d(2, {	-- Heroic
-				e(2609, {	-- Melidrussa Chillworn
+				e(2488, {	-- Melidrussa Chillworn
 					["crs"] = { 188252 },	-- Melidrussa Chillworn
 					["g"] = {
 						i(193761),	-- Chillworn's Infusion Staff
@@ -71,7 +71,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 						i(193758),	-- Subjugator's Chilling Grip
 					},
 				}),
-				e(2606, {	-- Kokia Blazehoof
+				e(2485, {	-- Kokia Blazehoof
 					["crs"] = { 189232 },	-- Kokia Blazehoof
 					["g"] = {
 						i(193762),	-- Blazebinder's Hoof
@@ -82,7 +82,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 						i(193766),	-- Kokia's Burnout Rod
 					},
 				}),
-				e(2569, {	-- Kyrakka and Erkhart Stormvein
+				e(2503, {	-- Kyrakka and Erkhart Stormvein
 					["crs"] = {
 						190484,	-- Kyrakka
 						190485,	-- Erkhart Stormvein
@@ -103,7 +103,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 				}),
 			}),
 			d(23, {	-- Mythic
-				e(2609, {	-- Melidrussa Chillworn
+				e(2488, {	-- Melidrussa Chillworn
 					["crs"] = { 188252 },	-- Melidrussa Chillworn
 					["g"] = {
 						ach(16402),	-- Dragon Kill Points
@@ -114,7 +114,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 						i(193758),	-- Subjugator's Chilling Grip
 					},
 				}),
-				e(2606, {	-- Kokia Blazehoof
+				e(2485, {	-- Kokia Blazehoof
 					["crs"] = { 189232 },	-- Kokia Blazehoof
 					["g"] = {
 						ach(16320),	-- Does Steam Do Fire Damage?
@@ -126,7 +126,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 						i(193766),	-- Kokia's Burnout Rod
 					},
 				}),
-				e(2569, {	-- Kyrakka and Erkhart Stormvein
+				e(2503, {	-- Kyrakka and Erkhart Stormvein
 					["crs"] = {
 						190484,	-- Kyrakka
 						190485,	-- Erkhart Stormvein

@@ -447,36 +447,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200536),	-- Tamed Eagle
 			i(200542),	-- Breezy Companion
 			i(200549),	-- Restored Titan Artifact
-			i(200654),	-- Magmatic Vestments
-			i(200660),	-- Cinderfang Wrap
-			i(200661),	-- Basalt Brood Stompers
-			i(200663),	-- Shackles of the Dreaded Flame
-			i(200676),	-- Static-Charged Scale
 			i(200679),	-- Essence of Somnikus's Shade
 			i(200682),	-- Hardened Scale Shoulderguards
-			i(200687),	-- Stormshale Cuffs
-			i(200688),	-- Tights of Twisting Winds
 			i(200689),	-- Rimetalon Band
 			i(200708),	-- Polymorphic Cloak of Absorption
 			i(200710),	-- Ashjra'kamas
-			i(200733),	-- Storm Chaser's Waistguard
-			i(200734),	-- Striders of the Sky's Misery
 			i(200735),	-- Magically Magical Faerie Flower
-			i(200736),	-- Belt of Living Earth
 			i(200737),	-- Pauldrons of Infinite Darkness
-			i(200739),	-- Stony Cragwalkers
-			i(200740),	-- Petrified Bracelets
 			i(200741),	-- Pipspark's Prestigious Pendant of Protection
-			i(200742),	-- Hardened Shale Breastplate
-			i(200743),	-- Frozen Footwraps
-			i(200744),	-- Glacial Bindings
-			i(200745),	-- Horns of the Futurebane
-			i(200746),	-- Icebound Girdle
 			i(200758),	-- Breastplate of Storied Antiquity
 			i(200760),	-- Unstable Arcane Cell
-			i(200761),	-- Smoldering Sulfuron Signet
-			i(200762),	-- Earthspeaker's Brooch
-			i(200763),	-- Frosted Scale Drape
 			i(200858),	-- Plume of the Forgotten
 			i(200859),	-- Seasoned Hunter's Trophy
 			i(200875),	-- Seeker's Bands
@@ -2334,7 +2314,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200148),	-- A Collection Of Me (TOY!)
 			i(200178),	-- Infected Ichor (TOY!)
 			i(200116),	-- Everlasting Horn of Lavaswimming (TOY!)
-			i(200628),	-- Somewhat-Stabilized Arcana (TOY!)
 			i(200636),	-- Primal Invocation Quintessence (TOY!)
 			i(199902),	-- Wayfinder's Compass (TOY!)
 			i(201435),	-- Shuffling Sands (TOY!)

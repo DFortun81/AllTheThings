@@ -27,7 +27,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				i(194492),	-- Plans: Unstable Frostfire Belt (RECIPE!)
 			}),
 			d(1, {	-- Normal
-				e(2562, {	-- Vexamus
+				e(2509, {	-- Vexamus
 					["crs"] = {
 						189668,	-- Professor Madormu
 						195416,	-- Magic Book
@@ -40,7 +40,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193709),	-- Vexamus' Expulsion Rod
 					},
 				}),
-				e(2563, {	-- Overgrown Ancient
+				e(2512, {	-- Overgrown Ancient
 					["crs"] = { 196482 },	-- Overgrown Ancient
 					["g"] = {
 						i(193716),	-- Algeth'ar Hedgecleaver
@@ -51,7 +51,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193712),	-- Potion-Stained Cloak
 					},
 				}),
-				e(2564, {	-- Crawth
+				e(2495, {	-- Crawth
 					["crs"] = { 191736 },	-- Crawth
 					["g"] = {
 						i(193722),	-- Azure Belt of Competition
@@ -62,7 +62,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193721),	-- Ruby Contestant's Gloves
 					},
 				}),
-				e(2565, {	-- Echo of Doragosa
+				e(2514, {	-- Echo of Doragosa
 					["crs"] = { 190609 },	-- Echo of Doragosa
 					["g"] = {
 						ach(16269),	-- Algeth'ar Academy
@@ -79,7 +79,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			d(2, {	-- Heroic
-				e(2562, {	-- Vexamus
+				e(2509, {	-- Vexamus
 					["crs"] = {
 						189668,	-- Professor Madormu
 						195416,	-- Magic Book
@@ -92,7 +92,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193709),	-- Vexamus' Expulsion Rod
 					},
 				}),
-				e(2563, {	-- Overgrown Ancient
+				e(2512, {	-- Overgrown Ancient
 					["crs"] = { 196482 },	-- Overgrown Ancient
 					["g"] = {
 						i(193716),	-- Algeth'ar Hedgecleaver
@@ -103,7 +103,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193712),	-- Potion-Stained Cloak
 					},
 				}),
-				e(2564, {	-- Crawth
+				e(2495, {	-- Crawth
 					["crs"] = { 191736 },	-- Crawth
 					["g"] = {
 						i(193722),	-- Azure Belt of Competition
@@ -114,7 +114,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193721),	-- Ruby Contestant's Gloves
 					},
 				}),
-				e(2565, {	-- Echo of Doragosa
+				e(2514, {	-- Echo of Doragosa
 					["crs"] = { 190609 },	-- Echo of Doragosa
 					["g"] = {
 						ach(16270),	-- Heroic: Algeth'ar Academy
@@ -131,7 +131,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			d(23, {	-- Mythic
-				e(2562, {	-- Vexamus
+				e(2509, {	-- Vexamus
 					["crs"] = {
 						189668,	-- Professor Madormu
 						195416,	-- Magic Book
@@ -145,7 +145,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193709),	-- Vexamus' Expulsion Rod
 					},
 				}),
-				e(2563, {	-- Overgrown Ancient
+				e(2512, {	-- Overgrown Ancient
 					["crs"] = { 196482 },	-- Overgrown Ancient
 					["g"] = {
 						ach(16329),	-- Duck, Duck, Spruce!
@@ -157,7 +157,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193712),	-- Potion-Stained Cloak
 					},
 				}),
-				e(2564, {	-- Crawth
+				e(2495, {	-- Crawth
 					["crs"] = { 191736 },	-- Crawth
 					["g"] = {
 						ach(16441),	-- Squad Goals
@@ -169,7 +169,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193721),	-- Ruby Contestant's Gloves
 					},
 				}),
-				e(2565, {	-- Echo of Doragosa
+				e(2514, {	-- Echo of Doragosa
 					["crs"] = { 190609 },	-- Echo of Doragosa
 					["g"] = {
 						ach(16271),	-- Mythic: Algeth'ar Academy

@@ -25,7 +25,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				i(194492),	-- Plans: Unstable Frostfire Belt (RECIPE!)
 			}),
 			d(1, {	-- Normal
-				e(2582, {	-- Leymor
+				e(2492, {	-- Leymor
 					["crs"] = { 186644 },	-- Leymor
 					["g"] = {
 						i(193634),	-- Burgeoning Seed
@@ -36,7 +36,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193633),	-- Unstable Arcane Loop
 					},
 				}),
-				e(2585, {	-- Azureblade
+				e(2505, {	-- Azureblade
 					["crs"] = { 186739 },	-- Azureblade
 					["g"] = {
 						i(193629),	-- Cloak of Lost Devotion
@@ -46,7 +46,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193630),	-- Twenty-Two-League Striders
 					},
 				}),
-				e(2583, {	-- Telash Greywing
+				e(2483, {	-- Telash Greywing
 					["crs"] = { 186737 },	-- Telash Greywing
 					["g"] = {
 						i(193648),	-- Azureblade's Work Gloves
@@ -56,7 +56,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193649),	-- Mirage Bindings
 					},
 				}),
-				e(2584, {	-- Umbrelskul
+				e(2508, {	-- Umbrelskul
 					["crs"] = { 186738 },	-- Umbrelskul
 					["g"] = {
 						ach(16272),	-- The Azure Vault
@@ -73,7 +73,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			d(2, {	-- Heroic
-				e(2582, {	-- Leymor
+				e(2492, {	-- Leymor
 					["crs"] = { 186644 },	-- Leymor
 					["g"] = {
 						i(193634),	-- Burgeoning Seed
@@ -84,7 +84,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193633),	-- Unstable Arcane Loop
 					},
 				}),
-				e(2585, {	-- Azureblade
+				e(2505, {	-- Azureblade
 					["crs"] = { 186739 },	-- Azureblade
 					["g"] = {
 						i(193629),	-- Cloak of Lost Devotion
@@ -94,7 +94,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193630),	-- Twenty-Two-League Striders
 					},
 				}),
-				e(2583, {	-- Telash Greywing
+				e(2483, {	-- Telash Greywing
 					["crs"] = { 186737 },	-- Telash Greywing
 					["g"] = {
 						i(193648),	-- Azureblade's Work Gloves
@@ -104,7 +104,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193649),	-- Mirage Bindings
 					},
 				}),
-				e(2584, {	-- Umbrelskul
+				e(2508, {	-- Umbrelskul
 					["crs"] = { 186738 },	-- Umbrelskul
 					["g"] = {
 						ach(16273),	-- Heroic: The Azure Vault
@@ -121,7 +121,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			d(23, {	-- Mythic
-				e(2582, {	-- Leymor
+				e(2492, {	-- Leymor
 					["crs"] = { 186644 },	-- Leymor
 					["g"] = {
 						i(193634),	-- Burgeoning Seed
@@ -132,7 +132,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193633),	-- Unstable Arcane Loop
 					},
 				}),
-				e(2585, {	-- Azureblade
+				e(2505, {	-- Azureblade
 					["crs"] = { 186739 },	-- Azureblade
 					["g"] = {
 						i(193629),	-- Cloak of Lost Devotion
@@ -142,7 +142,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193630),	-- Twenty-Two-League Striders
 					},
 				}),
-				e(2583, {	-- Telash Greywing
+				e(2483, {	-- Telash Greywing
 					["crs"] = { 186737 },	-- Telash Greywing
 					["g"] = {
 						ach(16445),	-- Icy What You Did There
@@ -153,7 +153,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193649),	-- Mirage Bindings
 					},
 				}),
-				e(2584, {	-- Umbrelskul
+				e(2508, {	-- Umbrelskul
 					["crs"] = { 186738 },	-- Umbrelskul
 					["g"] = {
 						ach(16274),	-- Mythic: The Azure Vault

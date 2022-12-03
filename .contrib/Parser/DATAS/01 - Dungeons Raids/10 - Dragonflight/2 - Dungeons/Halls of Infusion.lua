@@ -18,7 +18,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			d(1, {	-- Normal
-				e(2615, {	-- Watcher Irideus
+				e(2504, {	-- Watcher Irideus
 					["crs"] = { 189719 },	-- Watcher Irideus
 					["g"] = {
 						i(193746),	-- Gauntlets of Incalculable Power
@@ -28,7 +28,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193744),	-- Watcher's Circlet of Purpose
 					},
 				}),
-				e(2616, {	-- Gulping Goliath
+				e(2507, {	-- Gulping Goliath
 					["crs"] = { 189722 },	-- Gulping Goliath
 					["g"] = {
 						i(193726),	-- Amphibian's Bellowing Crown
@@ -40,7 +40,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193729),	-- Tongue Hacker
 					},
 				}),
-				e(2617, {	-- Khajin the Unyielding
+				e(2510, {	-- Khajin the Unyielding
 					["crs"] = { 189727 },	-- Khajin the Unyielding
 					["g"] = {
 						i(193731),	-- Circle of Ascended Frost
@@ -50,7 +50,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193733),	-- Khajin's Hailstone Footwraps
 					},
 				}),
-				e(2618, {	-- Primal Tsunami
+				e(2511, {	-- Primal Tsunami
 					["crs"] = { 189729 },	-- Primal Tsunami
 					["g"] = {
 						ach(16260),	-- Halls of Infusion
@@ -64,7 +64,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			d(2, {	-- Heroic
-				e(2615, {	-- Watcher Irideus
+				e(2504, {	-- Watcher Irideus
 					["crs"] = { 189719 },	-- Watcher Irideus
 					["g"] = {
 						i(193746),	-- Gauntlets of Incalculable Power
@@ -74,7 +74,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193744),	-- Watcher's Circlet of Purpose
 					},
 				}),
-				e(2616, {	-- Gulping Goliath
+				e(2507, {	-- Gulping Goliath
 					["crs"] = { 189722 },	-- Gulping Goliath
 					["g"] = {
 						i(193726),	-- Amphibian's Bellowing Crown
@@ -86,7 +86,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193729),	-- Tongue Hacker
 					},
 				}),
-				e(2617, {	-- Khajin the Unyielding
+				e(2510, {	-- Khajin the Unyielding
 					["crs"] = { 189727 },	-- Khajin the Unyielding
 					["g"] = {
 						i(193731),	-- Circle of Ascended Frost
@@ -96,7 +96,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193733),	-- Khajin's Hailstone Footwraps
 					},
 				}),
-				e(2618, {	-- Primal Tsunami
+				e(2511, {	-- Primal Tsunami
 					["crs"] = { 189729 },	-- Primal Tsunami
 					["g"] = {
 						ach(16261),	-- Heroic: Halls of Infusion
@@ -113,7 +113,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				n(ACHIEVEMENTS, {
 					ach(16517),	-- Toxicity Strike Team
 				}),
-				e(2615, {	-- Watcher Irideus
+				e(2504, {	-- Watcher Irideus
 					["crs"] = { 189719 },	-- Watcher Irideus
 					["g"] = {
 						i(193746),	-- Gauntlets of Incalculable Power
@@ -123,7 +123,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193744),	-- Watcher's Circlet of Purpose
 					},
 				}),
-				e(2616, {	-- Gulping Goliath
+				e(2507, {	-- Gulping Goliath
 					["crs"] = { 189722 },	-- Gulping Goliath
 					["g"] = {
 						ach(16426),	-- Hungry Hungry Hornswog
@@ -136,7 +136,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193729),	-- Tongue Hacker
 					},
 				}),
-				e(2617, {	-- Khajin the Unyielding
+				e(2510, {	-- Khajin the Unyielding
 					["crs"] = { 189727 },	-- Khajin the Unyielding
 					["g"] = {
 						i(193731),	-- Circle of Ascended Frost
@@ -146,7 +146,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193733),	-- Khajin's Hailstone Footwraps
 					},
 				}),
-				e(2618, {	-- Primal Tsunami
+				e(2511, {	-- Primal Tsunami
 					["crs"] = { 189729 },	-- Primal Tsunami
 					["g"] = {
 						ach(16262),	-- Mythic: Halls of Infusion

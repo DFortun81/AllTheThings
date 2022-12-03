@@ -1586,7 +1586,30 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
-			n(BONUS_OBJECTIVIES, {
+			q(71094, {	-- Help Is Our Way!
+				-- ["sourceQuests"] = {  },	--
+				["provider"] = { "n", 197100 },	-- Heleth the Wise
+				["coord"] = { 46.4, 25.6, THE_AZURE_SPAN },
+			}),
+			q(71095, {	-- A Claw in Need
+				["sourceQuests"] = { 71094 },	-- Help Is Our Way!
+				["provider"] = { "n", 197100 },	-- Heleth the Wise
+				["coord"] = { 45.8, 25.9, THE_AZURE_SPAN },
+			}),
+			q(71096, {	-- Is A Claw Indeed
+				["sourceQuests"] = { 71095 },	-- A Claw in Need
+				["provider"] = { "n", 197201 },	-- Venderthvan
+				["coord"] = { 45.9, 25.9, THE_AZURE_SPAN },
+			}),
+			q(71097, {	-- A Helping Claw
+				["sourceQuests"] = { 71096 },	-- Is A Claw Indeed
+				["provider"] = { "n", 197201 },	-- Venderthvan
+				["coord"] = { 45.9, 25.9, THE_AZURE_SPAN },
+				["g"] = {
+					i(200628),	-- Somewhat-Stabilized Arcana (TOY!)
+				},
+			}),
+			n(BONUS_OBJECTIVES, {
 				q(66718, {	-- Gnolls Must Die
 					["sourceQuests"] = { 66709 },	-- Field Medic 101
 					["coord"] = { 58.1, 42.3, THE_AZURE_SPAN },
