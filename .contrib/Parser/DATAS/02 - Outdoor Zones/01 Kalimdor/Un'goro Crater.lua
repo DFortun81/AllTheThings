@@ -604,6 +604,7 @@ root("Zones", m(KALIMDOR, {
 				q(4284, {	-- Crystals of Power
 					["qg"] = 9117,	-- J.D. Collie
 					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
+					["timeline"] = { "removed 4.0.3" },
 					["cost"] = {
 						{ "i", 11184, 7 },	-- Blue Power Crystal
 						{ "i", 11185, 7 },	-- Green Power Crystal
