@@ -24,6 +24,24 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16553),	-- Taking From Nature
 			}),
 			n(QUESTS, {
+				q(70871, {	-- Iskaaran Fishing Net
+					["description"] = "Requires Renown 5.",
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+					["g"] = {
+						i(199925),	-- Stone With Hole
+						i(199924),	-- Strong Sea Kelp
+						crit(2, {	-- Iskaaran Fishing Net
+							["achievementID"] = 16321,	-- Cutting Tusk Equipment
+						}),
+					},
+				}),
+				q(2584, {	-- Setting Your Very Own Net
+					["sourceQuests"] = { 70871 },	-- Iskaaran Fishing Net
+					["description"] = "Requires Renown 5.",
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+				}),
 				--q(70438, {	-- Flying Fish
 				--	["provider"] = { "n", 195338 },	-- Fisherman Pasqaa
 				--	["coord"] = { 63.8, 76.6, THE_WAKING_SHORES },
@@ -57,3 +75,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		})
 	}),
 })));
+root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+	m(THE_AZURE_SPAN, {
+		q(70793),	-- Triggeres after crafting Iskaaran Fishing Net during Iskaaran Fishing Net (questID 70871)
+	}),
+}));

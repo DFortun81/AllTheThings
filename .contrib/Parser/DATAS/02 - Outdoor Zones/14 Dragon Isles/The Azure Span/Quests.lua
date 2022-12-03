@@ -421,10 +421,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 21.5, 35.5, THE_AZURE_SPAN },
 					}),
 					q(71013, {	-- No Vengeance on an Empty Stomach
-						["sourceQuests"] = {
-							66730,	-- True Survivors
-							71012,	-- Varsek Recruited [I searched these Grimtusk place... Finally.. Last Destination of Snowhide Camp Line]
-						},
+						["sourceQuests"] = { 66730 },	-- True Survivors
 						["provider"] = { "n", 196812 },	-- Old Grimtusk
 						["coord"] = { 58.8, 34.9, THE_AZURE_SPAN },
 						["requireSkill"] = FISHING,
@@ -1308,6 +1305,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 10.6, 46.9, THE_AZURE_SPAN },
 						["cost"] = { { "i", 192153, 7 }, },	--7xFrigidfish
 						["g"] = {
+							i(201295),	-- Neelo's Spare Blanket
 							crit(9, {	-- Can We Keep It?
 								["achievementID"] = 16580,	-- Lend a Helping Span
 							}),

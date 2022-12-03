@@ -27,12 +27,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
 			q(70939, {	-- Cooking Utensils
-				["description"] = "Requires Renown 5.",
+				["description"] = "Requires Renown 4.",
 				["provider"] = { "n", 186547 },	-- Lil Ki
 				["coord"] = { 13.5, 48.7, THE_AZURE_SPAN },
 				["g"] = {
-					i(199892),	-- Tuskarr Traveling Soup Pot (TOY!)
-					i(199650),	-- Whale Bone Tea Set (TOY!)
 					i(200749),	-- Tuskarr Clobbering Board
 					i(200748),	-- Tuskarr Ulu Knife
 				},

@@ -515,7 +515,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201292),	-- Bramble Chain Belt
 			i(201293),	-- Sleet Shined Waistguard
 			i(201294),	-- Salt Crystal Ring
-			i(201295),	-- Neelo's Spare Blanket
 			i(201992),	-- Emissary's Flamewrought Seal
 			i(202003),	-- Primal Seeker's Leggings
 			i(202004),	-- Brawler's Earthen Cuirass
@@ -613,7 +612,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192078),	-- Bottled Putrescence
 			i(194828),	-- Stacked Deck of Darkmoon Mysteries
 			i(194873),	-- Apprentice's Fluffed Quill
-			i(194888),	-- Dracthyr's Inscribed Blade
 			i(194903),	-- Pocket Chocolate
 			i(198084),	-- Miguel's Gift
 			i(198137),	-- Esoteric Dragon Shard of Knowledge
@@ -698,7 +696,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192111),	-- Renewed Proto-Drake: Red Scales
 			i(192523),	-- Renewed Proto-Drake: Green Scales
 			i(194722),	-- Carrier Yeti
-			i(198654),	-- Otterworldly Ottuk Carrier
 			i(198822),	-- [PH] Sepia Wind Eagle
 			i(198823),	-- [PH] Brown Wind Eagle
 			i(198824),	-- [PH] Dark Wind Eagle
@@ -1333,8 +1330,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199849),	-- Dense Draconium Net Weight
 			i(199850),	-- Imbu Knot
 			i(199851),	-- Double Imbu Knot
-			i(199924),	-- Strong Sea Kelp
-			i(199925),	-- Stone With Hole
 			i(200075),	-- Flying Fish Bones
 			i(200076),	-- Harpoon Head
 			i(200077),	-- Wooden Pole
