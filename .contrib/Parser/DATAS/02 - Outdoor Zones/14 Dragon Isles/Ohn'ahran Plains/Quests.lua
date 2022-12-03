@@ -588,7 +588,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["collectible"] = false,
 				["g"] = {
 					q(66680, {	-- Counting Sheep
-						["sourceQuests"] = { 65779 },	-- Into the Plains
+						["sourceQuests"] = {
+							65779,	-- Into the Plains
+							65837,	-- Trouble In The Pines
+						},
 						["provider"] = { "n", 190025 },	-- Scout Watu
 						["coord"] = { 81.0, 58.9, OHNAHRAN_PLAINS },
 						["cost"] = { { "i", 193890, 1 }, },	-- Diced Meat
@@ -1045,6 +1048,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(192799),	-- Lizi, Thunderspine Tramper (MOUNT!)
 				},
+			}),
+			q(65837, {	-- Trouble In The Pines
+				-- ["sourceQuests"] = {  },
+				["provider"] = { "n", 195524 },	-- Beastmaster Tirren
+				["coord"] = { 62.0, 41.8, OHNAHRAN_PLAINS },
+				["isBreadcrumb"] = true,
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(72114, {	-- Acrosoth
