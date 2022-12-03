@@ -960,6 +960,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 
 				-- MISC --
+			q(70155, {	-- Look, Listen, and Breathe
+				["provider"] = { "n", 194282 },	-- Threshrak
+				["coord"] = { 34.1, 59.4, OHNAHRAN_PLAINS },
+				["classes"] = { EVOKER },
+			}),
 			q(70319, {	-- Nergazurai
 				["sourceQuests"] = { 65783 },	-- Welcome at Our Fire
 				["provider"] = { "n", 194904 },	-- Muqur Rain-Touched
