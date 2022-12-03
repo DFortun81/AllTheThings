@@ -204,7 +204,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								{ "i", AWAKENED_EARTH, 4 },
 							},
 						}),
-						i(200707, {	-- Armoire of Cloaks
+						i(200707, {	-- Armoire of Endless Cloaks (TOY!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 								{ "i", WILDERCLOTH, 20 },

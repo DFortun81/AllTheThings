@@ -1051,6 +1051,7 @@ i(191925);	-- Falling Star Flinger
 -- PATCH 10.0.0 --
 ------------------
 -- SOURCED
+i(200707);	-- Armoire of Endless Cloaks
 i(197719);	-- Artisan's Sign
 i(199337);	-- Bag of Furious Winds
 i(199768);	-- Black Dragon Banner
