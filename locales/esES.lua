@@ -3343,7 +3343,7 @@ for key,value in pairs({
 	[377499] = "De los orígenes de las especies dracónicas",	-- On the Origin of Draconic Species
 	[377899] = "Rehén oculto de los cornisapos",	-- Hidden Hornswog Hostage
 	[377900] = "Lanza de guerra Nokhud",	-- Nokhud Warspear
-	--TODO: [378010] = "Forgotten Dragon Treasure",	-- Forgotten Dragon Treasure
+	[378010] = "Tesoro de dragón olvidado",	-- Forgotten Dragon Treasure
 	[379290] = "Estatua adornada",	-- Ornamented Statue
 	--TODO: [379296] = "Broken Banding",	-- Broken Banding
 	[379321] = "Huella de zarpa misteriosa",	-- Mysterious Paw Print
@@ -3352,7 +3352,7 @@ for key,value in pairs({
 	[380518] = "Ojo de dragón desprendido",	-- Dislodged Dragoneye
 	--TODO: [380533] = "Snow Covered Scroll",	-- Snow Covered Scroll
 	[380547] = "Aceite para curtir imbuido de decadencia",	-- Decay-Infused Tanning Oil
-	--TODO: [380587] = "Crate of Treated Hides",	-- Crate of Treated Hides
+	[380587] = "Cajón de pieles tratadas",	-- Crate of Treated Hides
 	[380602] = "Pellejo bendecido por el viento",	-- Wind-Blessed Hide
 	[380653] = "Cometa de Yennu",	-- Yennu's Kite
 	[380654] = "Peto de un hombre muerto",	-- Dead Man's Chestplate
