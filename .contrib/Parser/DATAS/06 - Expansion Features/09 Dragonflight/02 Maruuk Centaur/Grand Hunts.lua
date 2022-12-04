@@ -18,7 +18,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			n(REWARDS, {
 				i(194085),	-- Proof of Might
 				i(194086),	-- Proof of Cunning
-				i(193205),	-- Ohuna Companion Color: Brown
+				i(193205, {	-- Ohuna Companion Color: Brown
+					["questID"] = 71050,
+				}),
 				i(194087),	-- Ohuna Companion Color: Red
 				i(194088),	-- Ohuna Companion Color: Dark
 				i(194089),	-- Bakar Companion Color: Orange
@@ -35,8 +37,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(200468, {	-- Grant Hunt Spoils [Epic]
 					-- likely rewards various items from lower tiers as well, pls symlink until confirmed only source
 					["sym"] = {{"select","itemID",
+						194093,	-- Bakar Companion Color: Brown
 						194090,	-- Bakar Companion Color: White
 						193360,	-- Centaur's Trophy Necklace
+						193205,	-- Ohuna Companion Color: Brown
 					}},
 				}),
 				i(200516, {	-- Grant Hunt Spoils [White]
@@ -57,6 +61,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 })));
 
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
-	q(70908),	-- Quest to reward you with Reputation after each Stage
-	q(70907),	-- Hunt concluded/White Bag
+	q(70004),	-- First time?
+	q(70908),	-- Maruuk Hunts // HQ to reward you with Reputation after each Stage
+	q(70907),	-- Hunt concluded // White Bag
+	q(70906),	-- Hunt concluded // Epic Bag
 }));
