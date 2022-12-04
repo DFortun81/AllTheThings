@@ -406,12 +406,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 191150 },	-- Danielle Anglers
 				["coord"] = { 81.3, 31.3, THE_WAKING_SHORES },
 				["races"] = ALLIANCE_ONLY,
+				["lockCriteria"] = { 1, "spellID", 366253 },	-- Dragon Isles Fishing
 			}),
 			q(72253, {	-- Dragon Isles Fishing [H]
 				["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
 				["provider"] = { "n", 190524 },	-- Mora Cloudwalker <Fishing Trainer>
 				["coord"] = { 81.0, 29.0, THE_WAKING_SHORES },
 				["races"] = HORDE_ONLY,
+				["lockCriteria"] = { 1, "spellID", 366253 },	-- Dragon Isles Fishing
 			}),
 			q(72729, {	-- The Great Swog
 				-- ["sourceQuests"] = {  },	--
