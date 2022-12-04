@@ -21,7 +21,6 @@ q(612),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(636),	-- Legends of the Earth <NYI>,		TBC: Legends of the Earth <NYI>,		CLASSIC: Legends of the Earth <NYI>
 q(729),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
 q(731),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
-q(787),	-- The New Horde,		TBC: The New Horde,		CLASSIC: The New Horde
 q(807),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(810),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(811),	-- <UNUSED>,		CLASSIC: <UNUSED>
