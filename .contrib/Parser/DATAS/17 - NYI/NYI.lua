@@ -1219,7 +1219,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200468),	-- Grand Hunt Spoils
 			i(200513),	-- Grand Hunt Spoils
 			i(200515),	-- Grand Hunt Spoils
-			i(200516),	-- Grand Hunt Spoils
 			i(200609),	-- Dragon Racing Purse - First Place
 			i(200610),	-- Dragon Racing Purse - Second Place
 			i(200611),	-- Dragon Racing Purse - Third Place
