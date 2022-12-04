@@ -14,7 +14,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					-- RENOWN 7 --
 				q(66595, {	-- Dormant Discovery
 					["description"] = "Requires Renown 7.",
-					["provider"] = { "o", 198538 },	-- Magically Bound Message
+					["provider"] = { "i", 198538 },	-- Magically Bound Message
 				}),
 				q(66597, {	-- This Old Stone
 					["description"] = "Requires Renown 7.",

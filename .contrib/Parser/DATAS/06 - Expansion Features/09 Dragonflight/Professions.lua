@@ -260,7 +260,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			i(198454, {		-- Draconic Treatise on Blacksmith
 				["questID"] = 74109,
 			--	["provider"] = { "i", 198454 },		-- Draconic Treatise on Blacksmith
-				["timeline"] = { "added 10.0.2." },
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
@@ -268,7 +268,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			q(66381, {	-- Weekly Blacksmith Skillpoint #1
 				["name"] = "Weekly Blacksmith Skillpoint #1",
 				["provider"] = { "i", 192131 },		-- Valdrakken Weapon Chain
-				["timeline"] = { "added 10.0.2." },
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "1 out of 3 Weekly Blacksmith Knowledge Points.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
@@ -276,7 +276,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			q(66382, {	-- Weekly Blacksmith Skillpoint #2
 				["name"] = "Weekly Blacksmith Skillpoint #2",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
-				["timeline"] = { "added 10.0.2." },
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "1 out of 3 Weekly Blacksmith Knowledge Points.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
@@ -344,7 +344,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			i(194702, {		-- Draconic Treatise on Enchanting
 				["questID"] = 74110,
 				["provider"] = { "i", 194702 },		-- Draconic Treatise on Enchanting
-				["timeline"] = { "added 10.0.2." },
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
@@ -352,7 +352,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			q(70515, {	-- Weekly Enchanting Skillpoint #1
 				["name"] = "Weekly Enchanting Skillpoint #1",
 				["provider"] = { "i", 198968 },		-- Primalist Charm
-				["timeline"] = { "added 10.0.2." },
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "1 out of 3 Weekly Tailoring Knowledge Points.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
@@ -394,7 +394,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(74111, {	-- Draconic Treatise on Engineering
 				["provider"] = { "i", 198510 },		-- Draconic Treatise on Engineering
-				["timeline"] = { "added 10.0.2." },
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
@@ -437,7 +437,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			i(194704, {		-- Draconic Treatise on Herbalism
 				["questID"] = 74107,
 			--	["provider"] = { "i", 194704 },		-- Draconic Treatise on Herbalism
-				["timeline"] = { "added 10.0.2." },
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
@@ -480,7 +480,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			i(194699, {		-- Draconic Treatise on Inscription
 				["questID"] = 74105,
 			--	["provider"] = { "i", 194699 },		-- Draconic Treatise on Inscription
-				["timeline"] = { "added 10.0.2." },
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
@@ -549,7 +549,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			i(194703, {		-- Draconic Treatise on Jewelcrafting
 				["questID"] = 74112,
 			--	["provider"] = { "i", 194703 },		-- Draconic Treatise on Jewelcrafting
-				["timeline"] = { "added 10.0.2." },
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
@@ -615,7 +615,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			i(194700, {		-- Draconic Treatise on Leatherworking
 				["questID"] = 74113,
 			--	["provider"] = { "i", 194700 },		-- Draconic Treatise on Leatherworking
-				["timeline"] = { "added 10.0.2." },
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
@@ -650,7 +650,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			i(194708, {		-- Draconic Treatise on Mining
 				["questID"] = 74106,
 			--	["provider"] = { "i", 194708 },		-- Draconic Treatise on Mining
-				["timeline"] = { "added 10.0.2." },
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
@@ -737,7 +737,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			i(194698, {		-- Draconic Treatise on Tailoring
 				["questID"] = 74115,
 			--	["provider"] = { "i", 194698 },		-- Draconic Treatise on Tailoring
-				["timeline"] = { "added 10.0.2." },
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
@@ -745,7 +745,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			q(66386, {	-- Weekly Tailoring Skillpoint #1
 				["name"] = "Weekly Tailoring Skillpoint #1",
 				["provider"] = { "i", 193898 },		-- Umbral Bone Needle
-				["timeline"] = { "added 10.0.2." },
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "1 out of 3 Weekly Tailoring Knowledge Points.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
@@ -753,7 +753,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			q(66387, {	-- Weekly Tailoring Skillpoint #2
 				["name"] = "Weekly Tailoring Skillpoint #2",
 				["provider"] = { "i", 193899 },		-- Primalweave Spindle
-				["timeline"] = { "added 10.0.2." },
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "1 out of 3 Weekly Tailoring Knowledge Points.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
