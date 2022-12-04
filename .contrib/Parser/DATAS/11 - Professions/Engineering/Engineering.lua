@@ -3287,6 +3287,17 @@ profession(ENGINEERING, {
 			},
 		},
 	})),
+	applyclassicphase(DRAGONFLIGHT_PHASE_ONE, tier(DF_TIER, {
+		n(QUESTS, {
+			q(74111, {	-- Draconic Treatise on Engineering
+				["provider"] = { "i", 198510 },		-- Draconic Treatise on Engineering
+				["timeline"] = { "added 10.0.2." },
+				["isWeekly"] = true,
+				["description"] = "Requires a crafting order from inscription.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+		}),
+	})),
 	n(QUESTS, {
 		q(29477, {	-- Gnomish Engineering
 			["qgs"] = {

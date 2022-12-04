@@ -41,3 +41,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 	}),
 })));
+
+root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+	q(70908),	-- Quest to reward you with Reputation after each Stage
+}));
