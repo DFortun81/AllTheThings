@@ -38,6 +38,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
+			o(380618, {	-- Draconic Flux
+				["coord"] = { 52.2, 80.5, THALDRASZUS },
+				["requireSkill"] = BLACKSMITH,
+				["g"] = {
+					i(201006),	-- Draconic Flux
+				},
+			}),
 			o(381094, {	-- Elegant Canvas Brush
 				["coord"] = { 60.2, 41.6, THALDRASZUS },
 				-- ["questID"] = ,

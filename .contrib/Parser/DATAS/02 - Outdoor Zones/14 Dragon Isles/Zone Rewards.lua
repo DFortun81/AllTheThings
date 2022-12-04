@@ -8,12 +8,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		
 		-- Profession Weekly Items
 		-- Alchemy
-		-- Blacksmith 2/3
-		i(192131),	-- Valdrakken Weapon Chain
+		-- Blacksmith 3/3
 		i(102132),	-- Draconium Blade Sharpener
-		
-		-- Enchanting 1/3
+		i(198965),	-- Primeval Earth Fragment
+		i(192131),	-- Valdrakken Weapon Chain
+		-- Enchanting 3/3
+		i(193901),	-- Primal Dust
 		i(198968),	-- Primalist Charm
+		i(193900),	-- Prismatic Focusing Shard
+		-- Jewelcrafting 1/3
+		i(198973),	-- Incandescent Curio
 		
 		i(193902),	-- Eroded Titan Gizmo
 		i(193891),	-- Experimental Substance
@@ -21,7 +25,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		i(193904),	-- Phoenix Feather Quill
 		i(193913),	-- Preserved Animal Parts
 		i(193897),	-- Reawakened Catalyst
-		-- Tailor 2/3
+		-- Leatherworking 1/3
+		i(198976),	-- Exceedingly Soft Skin
+		-- Tailor 3/3
+		i(198977),	-- Ohn'arhan Weave
 		i(193899),	-- Primalweave Spindle
 		i(193898),	-- Umbral Bone Needle
 		
