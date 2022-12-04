@@ -3388,8 +3388,8 @@ for key,value in pairs({
 	[381485] = "Verlorenes Seifenstück eines Abenteurers",	-- Adventurer's Lost Soap Bar
 	[381650] = "Anfrage des Archivars",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Einschreibungen für Zahnflatterfeuer",	-- Fang Flap Fire Signups
-	--TODO: [381661] = "Archivists' Request",	-- Archivists' Request
-	--TODO: [381664] = "Archivists' Request",	-- Archivists' Request
+	[381661] = "Anfrage des Archivars",	-- Archivists' Request	--TODO: this was manually translated
+	[381664] = "Anfrage des Archivars",	-- Archivists' Request	--TODO: this was manually translated
 	[381667] = "Anfrage des Archivars",	-- Archivists' Request
 	[381668] = "Anfrage des Archivars",	-- Archivists' Request	--TODO: this was manually translated
 	[381669] = "Anfrage des Archivars",	-- Archivists' Request	--TODO: this was manually translated

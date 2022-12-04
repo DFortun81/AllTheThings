@@ -3401,8 +3401,8 @@ for key, value in pairs({
 	[381485] = "冒险者丢失的肥皂块",	-- Adventurer's Lost Soap Bar
 	[381650] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "“炽齿翅”报名处",	-- Fang Flap Fire Signups
-	--TODO: [381661] = "Archivists' Request",	-- Archivists' Request
-	--TODO: [381664] = "Archivists' Request",	-- Archivists' Request
+	[381661] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
+	[381664] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381667] = "档案员的请求",	-- Archivists' Request
 	[381668] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381669] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated

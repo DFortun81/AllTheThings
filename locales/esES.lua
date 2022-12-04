@@ -3391,8 +3391,8 @@ for key,value in pairs({
 	[381485] = "Pastilla de jabón para aventureros perdida",	-- Adventurer's Lost Soap Bar
 	[381650] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Inscripción a colmillo, ala o fuego",	-- Fang Flap Fire Signups
-	--TODO: [381661] = "Archivists' Request",	-- Archivists' Request
-	--TODO: [381664] = "Archivists' Request",	-- Archivists' Request
+	[381661] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381664] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381667] = "Petición de los archivistas",	-- Archivists' Request
 	[381668] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381669] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated

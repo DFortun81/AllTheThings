@@ -3387,8 +3387,8 @@ for key,value in pairs({
 	[381485] = "모험가의 잃어버린 비누",	-- Adventurer's Lost Soap Bar
 	[381650] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	--TODO: [381653] = "Fang Flap Fire Signups",	-- Fang Flap Fire Signups
-	--TODO: [381661] = "Archivists' Request",	-- Archivists' Request
-	--TODO: [381664] = "Archivists' Request",	-- Archivists' Request
+	[381661] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
+	[381664] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	[381667] = "기록관의 요청",	-- Archivists' Request
 	[381668] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	[381669] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
