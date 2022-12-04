@@ -1103,7 +1103,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
 				["isWeekly"] = true,
 				["g"] = {
-					i(200173),	-- Magmote
+					i(202173),	-- Magmote
 				},
 			}),
 			q(66129, {	-- Unlocking Our Past
@@ -1113,7 +1113,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(201818, {	-- Twilight Strongbox
 						i(199215),	-- Worldbreaker Membership
-						i(200173),	-- Magmote
+						i(202173),	-- Magmote
 					}),
 				},
 			}),

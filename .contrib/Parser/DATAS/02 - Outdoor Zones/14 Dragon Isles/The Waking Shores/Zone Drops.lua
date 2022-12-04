@@ -27,7 +27,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(200224, {	-- Mark of Sargha
 				["description"] = "Drops from mobs around the Obsidian Citadel.",
 			}),
-			i(200173, {	-- Magmote
+			i(202173, {	-- Magmote
 				["description"] = "Drops from mobs around the Obsidian Citadel after obtaining The Worldbreaker title.",
 			}),
 			i(191904, {	-- Orb of Primal Stone

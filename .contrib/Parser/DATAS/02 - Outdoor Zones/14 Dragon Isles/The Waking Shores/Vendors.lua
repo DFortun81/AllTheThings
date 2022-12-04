@@ -9,18 +9,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(201418, {	-- Orb of the Obsidian Scale
 						["cost"] = {
-							{ "i", 200173, 5 },		-- 5x Magmote
+							{ "i", 202173, 5 },		-- 5x Magmote
 						},
 					}),
 					i(192786, {	-- Slumbering Worldsnail Shell
 						["cost"] = {
-							{ "i", 200173, 1000 },		-- 1000x Magmote
+							{ "i", 202173, 1000 },		-- 1000x Magmote
 						},
 					}),
 					i(199215, {	-- Worldbreaker Membership
 						["description"] = "Can only be bought if you looted the Worldbreaker Membership once from the Twillight Cache before.",
 						["cost"] = {
-							{ "i", 200173, 20 },		-- 20x Magmote
+							{ "i", 202173, 20 },		-- 20x Magmote
 						},
 					}),
 				},
