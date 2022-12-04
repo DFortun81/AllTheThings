@@ -3364,7 +3364,7 @@ for key,value in pairs({
 	--TODO: [381216] = "Surveyor's Magnifying Glass",	-- Surveyor's Magnifying Glass
 	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
 	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
-	--TODO: [381297] = "Misplaced Luggage",	-- Misplaced Luggage
+	[381297] = "Bagaglio Smarrito",	-- Misplaced Luggage
 	--TODO: [381353] = "Stone Dragontooth",	-- Stone Dragontooth
 	--TODO: [381354] = "Wrapped Gold Band",	-- Wrapped Gold Band
 	--TODO: [381355] = "Finely Carved Wing",	-- Finely Carved Wing
@@ -3387,7 +3387,7 @@ for key,value in pairs({
 	[381670] = "Richiesta degli Archivisti",	-- Archivists' Request	--TODO: this was manually translated
 	[381671] = "Richiesta degli Archivisti",	-- Archivists' Request
 	[381672] = "Richiesta degli Archivisti",	-- Archivists' Request	--TODO: this was manually translated
-	--TODO: [381687] = "Discarded Note",	-- Discarded Note
+	[381687] = "Nota Scartata",	-- Discarded Note
 	[381701] = "RICERCATO: Mara'nar il Tonante",	-- WANTED: Mara'nar the Thunderous
 	[382029] = "Terra Smossa",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
