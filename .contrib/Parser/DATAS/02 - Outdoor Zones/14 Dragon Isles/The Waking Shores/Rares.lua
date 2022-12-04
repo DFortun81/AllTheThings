@@ -5,11 +5,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
 		n(RARES, {
 			n(193132, {	-- Amethyzar the Glittering
-				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
-				-- ["questID"] = 69838, ??
-				-- ["g"] = {
-
-				-- },
+				["coord"] = { 63.4, 54.8, THE_WAKING_SHORES },
+				["questID"] = 73981,
+				["g"] = {
+					i(200156),	-- Amethyzarite Geode
+				},
 			}),
 			n(187111, {	-- Ancient Hornswog
 				["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },

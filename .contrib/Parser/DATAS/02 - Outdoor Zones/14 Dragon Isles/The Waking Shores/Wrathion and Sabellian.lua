@@ -33,6 +33,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			n(QUESTS, {
+				q(65840, {	-- Same as the Old Boss
+					["description"] = "Visible only via The Worldbreaker title.",
+					["provider"] = { "n", 191310 },	-- Doventhal the Chosen
+					["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+					["g"] = {
+						i(202173),	-- Magmote
+					},
+				}),
+				q(66129, {	-- Unlocking Our Past
+					["provider"] = { "n", 187275 },	-- Igys the Believer
+					["coord"] = { 32.3,52.4, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(201818, {	-- Twilight Strongbox
+							i(199215),	-- Worldbreaker Membership
+							i(202173),	-- Magmote
+						}),
+					},
+				}),
 				n(BONUS_OBJECTIVES, {
 					q(67027, {	-- Death's Shadow
 						["provider"] = { "n", 190985 },	-- Death's Shadow
@@ -204,6 +224,27 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			n(VENDORS, {
+				n(193310, {	-- Dealer Vexil <Food and Drink>
+					["coord"] = { 34.8, 46.6, THE_WAKING_SHORES },
+					["g"] = {
+						i(201418, {	-- Orb of the Obsidian Scale
+							["cost"] = {
+								{ "i", 202173, 5 },		-- 5x Magmote
+							},
+						}),
+						i(192786, {	-- Slumbering Worldsnail Shell
+							["cost"] = {
+								{ "i", 202173, 1000 },		-- 1000x Magmote
+							},
+						}),
+						i(199215, {	-- Worldbreaker Membership
+							["description"] = "Can only be bought if you looted the Worldbreaker Membership once from the Twillight Cache before.",
+							["cost"] = {
+								{ "i", 202173, 20 },		-- 20x Magmote
+							},
+						}),
+					},
+				}),
 				n(188625, {	-- Lorena Belle
 					["coord"] = { 25.2, 55.8, THE_WAKING_SHORES },
 					["g"] = {

@@ -7696,18 +7696,6 @@ profession(LEATHERWORKING, {
 			},
 		},
 	})),
-	applyclassicphase(DRAGONFLIGHT_PHASE_ONE, tier(DF_TIER, {
-		n(QUESTS, {
-			i(194700, {		-- Draconic Treatise on Leatherworking
-				["questID"] = 74113,
-			--	["provider"] = { "i", 194700 },		-- Draconic Treatise on Leatherworking
-				["timeline"] = { "added 10.0.2." },
-				["isWeekly"] = true,
-				["description"] = "Requires a crafting order from inscription.",
-				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),
-		}),
-	})),
 });
 
 -- Leatherworking Item Database
@@ -7721,7 +7709,7 @@ local function cacheRecipes(g)
 		if g.g then cacheRecipes(g.g); end
 		local spellID = g.spellID or g.recipeID;
 		if spellID then
-			recipeCache[spellID] = true; 
+			recipeCache[spellID] = true;
 			if g.u then recipeCacheU[spellID] = g.u; end
 		end
 		for i,o in ipairs(g) do
@@ -7755,7 +7743,7 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 		o.name = name;
 	end
 	itemDB[itemID] = phase and applyclassicphase(phase, o) or o;
-	
+
 	-- Ensure that this recipe's spellID exists in the profession database.
 	if recipeCache and type(timeline) ~= "boolean" then
 		if recipeCache[o.spellID] then
@@ -8189,7 +8177,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		itemrecipe("Pattern: Double-stitched Leather Gloves OLD", 4295),
 		itemrecipe("Pattern: Nightscape Cloak", 8388, 10550),
 		itemrecipe("Pattern: Onyxia Scale Breastplate", 15780, 19106);
-		
+
 		-- #if AFTER TBC
 		itemrecipe("Pattern: Bindings of Lightning Reflexes", 35517),
 		itemrecipe("Pattern: Bracers of Renewed Life", 35519),

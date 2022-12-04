@@ -1097,26 +1097,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(191837),	-- Earthen Charm
 				},
 			}),
-			q(65840, {	-- Same as the Old Boss
-				["description"] = "Visible only via The Worldbreaker title.",
-				["provider"] = { "n", 191310 },	-- Doventhal the Chosen
-				["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
-				["isWeekly"] = true,
-				["g"] = {
-					i(202173),	-- Magmote
-				},
-			}),
-			q(66129, {	-- Unlocking Our Past
-				["provider"] = { "n", 187275 },	-- Igys the Believer
-				["coord"] = { 32.3,52.4, THE_WAKING_SHORES },
-				["repeatable"] = true,
-				["g"] = {
-					i(201818, {	-- Twilight Strongbox
-						i(199215),	-- Worldbreaker Membership
-						i(202173),	-- Magmote
-					}),
-				},
-			}),
 			q(66101, {	-- From Such Great Heights
 				["sourceQuests"] = {
 					65452,	-- Explorers in Peril
@@ -1243,6 +1223,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "i", 202081 },	-- Dragon Isles Supply Bag
 			}),
 			n(BONUS_OBJECTIVES, {
+				q(69838, {	-- Amethyzar the Glittering
+					["provider"] = { "n", 193132 },	-- Amethyzar the Glittering
+					["coord"] = { 63.4, 54.8, THE_WAKING_SHORES },
+				}),
 				q(66076, {	-- Ancient Hornswog
 					["provider"] = { "n", 187111 },	-- Ancient Hornswog
 					["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
@@ -1413,7 +1397,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(70709, {	-- Talk to: Wu'de Prepfoot
 					["name"] = "Talk to: Wu'de Prepfoot",
 					["sourceQuests"] = { 65691 },	-- The Shadow of His Wings
-					["cr"] = 196072,	-- Wu'de Prepfoot
+					["provider"] = { "n", 196072 },	-- Wu'de Prepfoot
 					["coord"] = { 35.1, 47.2, THE_WAKING_SHORES },
 				}),
 				q(72178, {	-- Theory in Practice: Baron von Swoopenbite
@@ -1627,8 +1611,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 					q(66725, {	-- Wild Preserve Circuit
 						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190473 },	-- Bronze Timekeeper
-						["coord"] = { 47.0, 85.6, THE_WAKING_SHORES },
+						["provider"] = { "n", 190503 },	-- Bronze Timekeeper
+						["coord"] = { 42.6, 94.5, THE_WAKING_SHORES },
 						["repeatable"] = true,
 						["g"] = {
 							i(191140),	-- Bronze Timepiece
@@ -1639,8 +1623,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 					q(66726, {	-- Wild Preserve Circuit - Advanced
 						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190473 },	-- Bronze Timekeeper
-						["coord"] = { 47.0, 85.6, THE_WAKING_SHORES },
+						["provider"] = { "n", 190503 },	-- Bronze Timekeeper
+						["coord"] = { 42.6, 94.5, THE_WAKING_SHORES },
 						["repeatable"] = true,
 						["g"] = {
 							i(191140),	-- Bronze Timepiece
@@ -1706,5 +1690,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
 		q(66898),	-- triggered during 'The Shadow of His Wings' (65691)
+		q(70872),	-- Quack Weekly Trigger
 	}),
 })));

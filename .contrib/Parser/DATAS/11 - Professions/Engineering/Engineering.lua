@@ -3287,17 +3287,6 @@ profession(ENGINEERING, {
 			},
 		},
 	})),
-	applyclassicphase(DRAGONFLIGHT_PHASE_ONE, tier(DF_TIER, {
-		n(QUESTS, {
-			q(74111, {	-- Draconic Treatise on Engineering
-				["provider"] = { "i", 198510 },		-- Draconic Treatise on Engineering
-				["timeline"] = { "added 10.0.2." },
-				["isWeekly"] = true,
-				["description"] = "Requires a crafting order from inscription.",
-				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),
-		}),
-	})),
 	n(QUESTS, {
 		q(29477, {	-- Gnomish Engineering
 			["qgs"] = {
@@ -3421,7 +3410,7 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 		o.name = name;
 	end
 	itemDB[itemID] = phase and applyclassicphase(phase, o) or o;
-	
+
 	-- Ensure that this recipe's spellID exists in the profession database.
 	if recipeCache and type(timeline) ~= "boolean" then
 		if recipeCache[o.spellID] then

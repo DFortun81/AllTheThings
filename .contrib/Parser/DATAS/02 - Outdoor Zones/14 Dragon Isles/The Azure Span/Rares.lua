@@ -89,19 +89,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 72254,
 				-- ["Daily"] = true,
 				["g"] = {
-					i(197001),	-- Cliffside Wylderdrake: Finned-cheek (DM!)
+					i(197001),	-- Cliffside Wylderdrake: Finned Cheek (DM!)
 					i(196985),	-- Cliffside Wylderdrake: Horned Jaw (DM!)
-					i(200256),	-- Darkmaul Soul-horn
-					i(191784),	-- Dragon Shard-of-knowledge
-					i(200158),	-- Eerie Spectral-ring
-					i(197098),	-- Highland Drake-finned-back
+					i(200256),	-- Darkmaul Soul Horn
+					i(200158),	-- Eerie Spectral Ring
+					i(197098),	-- Highland Drake: Finned Back (DM!)
 					i(200245),	-- Leviathan Lure
-					i(190454),	-- Primal Chaos
 					i(200563),	-- Primal Ritual-shell
-					i(197382),	-- Renewed Proto-Drake: White Horns
-					i(200187),	-- Rod of-glacial-force
-					i(200310),	-- Stole of-the-iron-phantom
-					i(198070),	-- Tattered Seavine
+					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
+					i(200187),	-- Rod of Glacial Force
+					i(200310),	-- Stole of the Iron Phantom
+					i(198070),	-- Tattered Seavine (IF!)
 					i(200552),	-- Torrent Callers-shell
 				},
 			}),
@@ -131,7 +129,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73996,
 				["g"] = {
 					i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
-					i(197121),	-- Highland Drake: Tan Horns
+					i(197121),	-- Highland Drake: Tan Horns (DM!)
 				},
 			}),
 			n(193251, {	-- Gruffy

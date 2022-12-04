@@ -6,7 +6,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		n(TREASURES, {
 			o(381485, {	-- Adventurer's Lost Soap Bar
 				["coord"] = { 39.6, 84.7, THE_WAKING_SHORES },
-				--["questID"] = ,
 				["g"] = {
 					i(200065),	-- Adventurer's Lost Soap Bar
 				},
@@ -54,7 +53,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(381483, {	-- Marmoni's Prize
 				["coord"] = { 47.7, 83.6, THE_WAKING_SHORES },
-				--["questID"] = ,
 				["g"] = {
 					i(200064),	-- Marmoni's Prize
 				},
@@ -64,13 +62,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 58.6, 53.1, THE_WAKING_SHORES },
 				["questID"] = 65646,
 				["g"] = {
+					i(202194),	-- Misty Satchel
 					crit(7, {	-- Misty Treasure Chest
 						["achievementID"] = 16297,	-- Treasures of The Waking Shores
 					}),
 				},
 			}),
 			o(381045, {	-- Golden Dragon Goblet
-				["coord"] = { 48.9, 51.8, THE_WAKING_SHORES },
+				["coord"] = { 65.8, 41.8, THE_WAKING_SHORES },
 				["questID"] = 70600,
 				["cost"] = { { "i", 198854, 1 }, },	-- 1xArcheologist Artifact Notes
 				["g"] = {
@@ -123,7 +122,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(381484, {	-- Well-Preserved Bone
 				["coord"] = { 66.2, 55.3, THE_WAKING_SHORES },
-				--["questID"] = ,
 				["g"] = {
 					i(200066),	-- Well-Preserved Bone
 				},

@@ -388,7 +388,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199667),	-- Spiked Bronze Spaulders
 			i(199668),	-- Spiked Emerald Spaulders
 			i(200154),	-- Rubyscale Band
-			i(200158),	-- Eerie Spectral Ring
 			i(200159),	-- Blaze Ring
 			i(200161),	-- Razorwind Talisman
 			i(200164),	-- Iceloop
@@ -420,7 +419,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200298),	-- Stoneshaped Greatbelt
 			i(200306),	-- Tempest Shawl
 			i(200309),	-- Rock Encrusted Chestguard
-			i(200310),	-- Stole of the Iron Phantom
 			i(200313),	-- Earthen Protoscale Drape
 			i(200314),	-- Skyspeaker's Envelope
 			i(200432),	-- Rotguard Cowl
@@ -454,7 +452,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201036),	-- Obsidian Citadel Chestplate
 			i(201038),	-- Obsidian Citadel Footwraps
 			i(201039),	-- Obsidian Citadel Helm
-			i(201041),	-- Obsidian Citadel Cloak
 			i(201042),	-- Obsidian Citadel Bracers
 			i(201043),	-- Obsidian Citadel Belt
 			i(201048),	-- Tyrhold Epaulets
@@ -777,7 +774,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199115),	-- Herbalism Field Notes
 			i(199122),	-- Mining Field Notes
 			i(199128),	-- Skinning Field Notes
-			i(200156),	-- Amethyzarite Geode
 			i(200506),	-- Roused Seedling
 			i(200507),	-- Decayed Roused Seedling
 			i(200508),	-- Propagating Roused Seedling
@@ -842,7 +838,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191282),	-- Scouting Job: Azure Spawn Expedition Site
 			i(191286),	-- Recovery Job: Hopaway Thieves
 			i(191255),	-- Greater Obsidian Key
-			i(191264),	-- Restored Obsidian Key
 			i(191785),	-- Overly Loud Pocketwatch
 			i(191786),	-- Elaborate Lace Cuff
 			i(191889),	-- Ancient Sword Design
@@ -948,7 +943,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200175),	-- Repurposed Anvil
 			i(200176),	-- Missingway Hand Cannon
 			i(200181),	-- Blade of Blazing Torment
-			i(200187),	-- Rod of Glacial Force
 			i(200192),	-- Handheld Geyser
 			i(200197),	-- Armoredon Herding Crook
 			i(200206),	-- Behemoth Slayer Greatbow
@@ -957,11 +951,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200237),	-- Burnished Lifewarder's Targe
 			i(200241),	-- Stormcaller's Ritual Hatchet
 			i(200242),	-- Watcher's Lightning Rod
-			i(200245),	-- Leviathan Lure
 			i(200250),	-- Frost Tipped Glaive
 			i(200252),	-- Molten Flak Cannon
 			i(200253),	-- Snowspring Incanter's Knife
-			i(200256),	-- Darkmaul Soul Horn
 			i(200257),	-- Decay Infused Branch
 			i(200259),	-- Forest Dweller's Shield
 			i(200286),	-- Dragonbane Lance
@@ -1064,7 +1056,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(196997),	-- Cliffside Wylderdrake: Split Horns
 			i(196999),	-- Cliffside Wylderdrake: Swept Horns
 			i(197000),	-- Cliffside Wylderdrake: Coiled Horns
-			i(197001),	-- Cliffside Wylderdrake: Finned Cheek
 			i(197002),	-- Cliffside Wylderdrake: Flared Cheek
 			i(197004),	-- Cliffside Wylderdrake: Spiked Legs
 			i(197006),	-- Cliffside Wylderdrake: Plated Nose
@@ -1117,11 +1108,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197364),	-- Renewed Proto-Drake: Short Spiked Crest
 			i(197366),	-- Renewed Proto-Drake: Dual Horned Crest
 			i(197369),	-- Renewed Proto-Drake: Brown Hair
-			i(197370),	-- Renewed Proto-Drake: Red Hair
 			i(197371),	-- Renewed Proto-Drake: Green Hair
 			i(197373),	-- Renewed Proto-Drake: Helm
 			i(197379),	-- Renewed Proto-Drake: Impaler Horns
-			i(197382),	-- Renewed Proto-Drake: White Horns
 			i(197384),	-- Renewed Proto-Drake: Thick Spined Jaw
 			i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw
 			i(197389),	-- Renewed Proto-Drake: Green Scales
@@ -1216,7 +1205,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200453),	-- Iskaara Tuskarr Insignia
 			i(200454),	-- Maruuk Centaur Insignia
 			i(200455),	-- Valdrakken Accord Insignia
-			i(200468),	-- Grand Hunt Spoils
 			i(200513),	-- Grand Hunt Spoils
 			i(200515),	-- Grand Hunt Spoils
 			i(200609),	-- Dragon Racing Purse - First Place
@@ -1232,7 +1220,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201756),	-- Bulging Coin Purse
 			i(201757),	-- Plundered Supplies
 			i(201817),	-- Twilight Cache
-			i(201818),	-- Twilight Strongbox
 			i(201836),	-- Valdrakken Token of Merit
 			i(201841),	-- Ensemble: Cosmic Aspirant's Plate Armor
 			i(201842),	-- Ensemble: Cosmic Aspirant's Mail Armor
@@ -1782,11 +1769,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193057),	-- 10.0 Placeholder Enchanting Crystal
 			i(193058),	-- Sherwood - Test Trinket
 			i(193067),	-- Acadia's Tools [DNT/Unused]
-			i(193201),	-- Key Framing
 			i(194337),	-- Liquid Courage
 			i(198441),	-- Thunderspine Tenders
 			i(198614),	-- Soggy Clump of Darkmoon Cards
-			i(200224),	-- Mark of Sargha
 			i(201250),	-- Victorious Contender's Strongbox
 			i(201251),	-- Pillaged Contender's Strongbox
 			i(201252),	-- 10.0 Bronze PvP Chest (DNT)
@@ -1855,17 +1840,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201725),	-- Flappuccino
 			i(201820),	-- Silithus Swiss
 			i(201989),	-- Twisted Heart
-			i(201991),	-- Sargha's Signet
 			i(202062),	-- Ash Feather
 			i(202072),	-- Frigid Floe Fish
 			i(202073),	-- Calamitous Carp
 			i(202074),	-- Kingfin, the Wise Whiskerfish
 			i(202107),	-- Shadowscrawled Coin
 			i(202122),	-- Primal Chaos Cluster
-			i(202173),	-- Magmote
 			i(202152),	-- Storm-Charged Manipulator
 			i(202172),	-- Overflowing Satchel of Coins
-			i(202194),	-- Misty Satchel
 		}),
 		-- Use this in a Cost.. Must find the source
 		i(194690),	-- Horn o' Mead

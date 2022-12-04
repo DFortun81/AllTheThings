@@ -1075,26 +1075,6 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(309623),	-- Sinful Revelation
 		}),
 	}))),
-	applyclassicphase(DRAGONFLIGHT_PHASE_ONE, tier(DF_TIER, {
-		n(QUESTS, {
-			i(194702, {		-- Draconic Treatise on Enchanting
-				["questID"] = 74110,
-				["provider"] = { "i", 194702 },		-- Draconic Treatise on Enchanting
-				["timeline"] = { "added 10.0.2." },
-				["isWeekly"] = true,
-				["description"] = "Requires a crafting order from inscription.",
-				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),
-			q(70515, {	-- Weekly Enchanting Skillpoint #1
-				["name"] = "Weekly Enchanting Skillpoint #1",
-				["provider"] = { "i", 198968 },		-- Primalist Charm
-				["timeline"] = { "added 10.0.2." },
-				["isWeekly"] = true,
-				["description"] = "1 out of 3 Weekly Tailoring Knowledge Points.",
-				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),
-		}),
-	})),
 }));
 
 -- Enchanting Item Database

@@ -37,7 +37,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin
 		i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 		i(196969),	-- Cliffside Wylderdrake: Finned Back (DM!)
-		i(197001),	-- Cliffside Wylderdrake: Finned Cheek
+		i(197001),	-- Cliffside Wylderdrake: Finned Cheek (DM!)
 		i(196984),	-- Cliffside Wylderdrake: Finned Jaw
 		i(197022),	-- Cliffside Wylderdrake: Finned Neck
 		i(197018),	-- Cliffside Wylderdrake: Finned Tail (DM!)
@@ -141,7 +141,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197096),	-- Highland Drake: Steel and Yellow Armor (DM!)
 		i(197124),	-- Highland Drake: Swept Horns
 		i(197113),	-- Highland Drake: Swept Spiked Head
-		i(197121),	-- Highland Drake: Tan Horns
+		i(197121),	-- Highland Drake: Tan Horns (DM!)
 		i(197104),	-- Highland Drake: Tapered Chin
 		i(197123),	-- Highland Drake: Thorn Horns (DM!)
 		i(197115),	-- Highland Drake: Thorned Jaw
@@ -192,7 +192,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197394),	-- Renewed Proto-Drake: Predator Pattern (DM!)
 		i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 		i(197399),	-- Renewed Proto-Drake: Razor Snout (DM!)
-		i(197370),	-- Renewed Proto-Drake: Red Hair
+		i(197370),	-- Renewed Proto-Drake: Red Hair (DM!)
 		i(197400),	-- Renewed Proto-Drake: Shark Snout
 		i(197364),	-- Renewed Proto-Drake: Short Spiked Crest
 		i(197347),	-- Renewed Proto-Drake: Silver and Blue Armor (DM!)
@@ -211,7 +211,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197374),	-- Renewed Proto-Drake: Swept Horns (DM!)
 		i(197384),	-- Renewed Proto-Drake: Thick Spined Jaw
 		i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw
-		i(197382),	-- Renewed Proto-Drake: White Horns
+		i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 		i(197393),	-- Renewed Proto-Drake: White Scales
 		i(197588),	-- Windborne Velocidrake: Armor
 		i(197620),	-- Windborne Velocidrake: Beaked Snout (DM!)

@@ -262,18 +262,6 @@ profession(MINING, {
 			["recipeID"] = 253347
 		}
 	})),
-	applyclassicphase(DRAGONFLIGHT_PHASE_ONE, tier(DF_TIER, {
-		n(QUESTS, {
-			i(194708, {		-- Draconic Treatise on Mining
-				["questID"] = 74106,
-			--	["provider"] = { "i", 194708 },		-- Draconic Treatise on Mining
-				["timeline"] = { "added 10.0.2." },
-				["isWeekly"] = true,
-				["description"] = "Requires a crafting order from inscription.",
-				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),
-		}),
-	})),
 	-- #if AFTER 6.0.1.18322
 	-- TODO: This stuff needs timelines!
 	n(DROPS, {

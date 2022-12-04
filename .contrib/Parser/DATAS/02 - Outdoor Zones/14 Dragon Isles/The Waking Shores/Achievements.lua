@@ -252,6 +252,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					15714,	-- Wild Preserve Slalom: Gold
 					15744,	-- Wingrest Roundabout: Gold
 				}},
+				["g"] = {
+					i(197370),	-- Renewed Proto-Drake: Red Hair
+				},
 			}),
 			ach(15927, {	-- Waking Shores Advanced: Bronze
 				-- Meta Achievement
