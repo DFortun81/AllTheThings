@@ -84,12 +84,25 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193691, {	-- Fisherman Tinnak <Angered Ghost>
-				["description"] = "Collect the nearby items; Broken Fishing Pole, Torn Fishing Net and Old Harpoon.",
+				["description"] = "Requires Renown 7 with Iskaara Tuskarr to see the nearby items.\n\nCollect the Broken Fishing Pole, Torn Fishing Net and Old Harpoon around to summon him.\n\nRewards you with 950 Reputation if you are summoner or 60 Reputation with a normal tag.",
 				["coord"] = { 49.5, 36.1, THE_AZURE_SPAN },
-				-- ["questID"] = 72254,
+				["questID"] = 72254,
+				-- ["Daily"] = true,
 				["g"] = {
+					i(197001),	-- Cliffside Wylderdrake: Finned-cheek (DM!)
 					i(196985),	-- Cliffside Wylderdrake: Horned Jaw (DM!)
+					i(200256),	-- Darkmaul Soul-horn
+					i(191784),	-- Dragon Shard-of-knowledge
+					i(200158),	-- Eerie Spectral-ring
+					i(197098),	-- Highland Drake-finned-back
+					i(200245),	-- Leviathan Lure
+					i(190454),	-- Primal Chaos
+					i(200563),	-- Primal Ritual-shell
+					i(197382),	-- Renewed Proto-Drake: White Horns
+					i(200187),	-- Rod of-glacial-force
+					i(200310),	-- Stole of-the-iron-phantom
 					i(198070),	-- Tattered Seavine
+					i(200552),	-- Torrent Callers-shell
 				},
 			}),
 			n(193214, {	-- Forgotten Creation
