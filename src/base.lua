@@ -260,7 +260,7 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick)
 
 		-- Resizable
 		f:SetResizable(true)
-		f:SetMinResize(150, 100)
+		f:SetResizeBounds(150, 100, 600, 600)
 
 		local rb = CreateFrame("Button", "ATTEditBoxResizeButton", ATTEditBox)
 		rb:SetPoint("BOTTOMRIGHT", -6, 7)
