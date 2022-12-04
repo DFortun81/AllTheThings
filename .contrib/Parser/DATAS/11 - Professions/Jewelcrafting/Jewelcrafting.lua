@@ -5714,6 +5714,17 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			}),
 		}),
 	})),
+	applyclassicphase(DRAGONFLIGHT_PHASE_ONE, tier(DF_TIER, {
+		n(QUESTS, {
+			q(74112, {	-- Draconic Treatise on Jewelcrafting
+				["provider"] = { "i", 194703 },		-- Draconic Treatise on Jewelcrafting
+				["timeline"] = { "added 10.0.2." },
+				["isWeekly"] = true,
+				["description"] = "Requires a crafting order from inscription.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+		}),
+	})),
 	-- #if AFTER CATA
 	n(QUESTS, applyclassicphase(CATA_PHASE_ONE, {
 		q(28778,  {	-- Broken Boar Figurine
