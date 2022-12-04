@@ -831,7 +831,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191108),	-- Tuskarr Offering
 			i(191282),	-- Scouting Job: Azure Spawn Expedition Site
 			i(191286),	-- Recovery Job: Hopaway Thieves
-			i(191255),	-- Greater Obsidian Key
 			i(191785),	-- Overly Loud Pocketwatch
 			i(191786),	-- Elaborate Lace Cuff
 			i(191889),	-- Ancient Sword Design
@@ -1176,9 +1175,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200287),	-- Iskaara Tuskarr Insignia
 			i(200288),	-- Maruuk Centaur Insignia
 			i(200289),	-- Valdrakken Accord Insignia
-			i(200069),	-- Obsidian Cache
 			i(200070),	-- Obsidian Strongbox
-			i(200073),	-- Valdrakken Treasures
 			i(200094),	-- Caravan Strongbox
 			i(200184),	-- Nokhud Battle Helm
 			i(200194),	-- Nokhud Battle Tunic

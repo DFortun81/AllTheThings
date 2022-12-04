@@ -48,6 +48,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193198, {	-- Captain Lancer
 				["coord"] = { 26.9, 76.1, THE_WAKING_SHORES },
 				["questID"] = 73075,
+				["isDaily"] = true,
 				["g"] = {
 					i(200757),	-- Qalashi War-Helm
 				},
@@ -166,8 +167,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(193256, {	-- Nulltheria the Void Gazer
-				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
-				-- ["questID"] = ,
+				["coord"] = { 56.7, 45.6, THE_WAKING_SHORES },
+				["questID"] = 73888,
 				["g"] = {
 					i(200236),	-- Memory of Nulltheria
 				},

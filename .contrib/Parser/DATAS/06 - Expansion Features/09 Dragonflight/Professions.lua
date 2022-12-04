@@ -251,8 +251,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
 			}),
 			q(67221, {	-- A Head For Metal
-			-- Dont know more info about this quest
-				["maps"] = {THE_WAKING_SHORES},
+				["coord"] = { 24.5, 60.9, THE_WAKING_SHORES },
+				["qg"] = 191194,	-- Weaponsmith Mida
+				-- ["isWeekly"] = true,
+				-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? lol
+				["sourceQuest"] = 66359,	-- First Completion of 'Unlocking our Past' (Forgemaster Bazentus)
 				["g"] = {
 					i(194963),	-- Plans: Black Dragon Seared Alloy
 				},
