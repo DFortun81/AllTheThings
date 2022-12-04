@@ -197,7 +197,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			ach(16336),	-- Azure Spanner
 			ach(16474, {	-- Do You Wanna Build a Snowman?
 				["coord"] = { 50.7, 55.4, THE_AZURE_SPAN },
-				-- ["questID"] = { 72031 },
 			}),
 			ach(16065, {	-- Dragon Glyphs: Azure Archive
 				["coord"] = { 40.4, 66.5, THE_AZURE_SPAN },
@@ -255,23 +254,23 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			ach(16580),	-- Lend a Helping Span
 			ach(16638, {	-- Ley Line in the Span
 				crit(1, {	-- Azure Archives
-					-- ["cr"] = ,
+					--["cr"] = 198260,	-- Misaligned Ley Crystal
 					["coord"] = { 43.8, 61.9, THE_AZURE_SPAN },
 				}),
 				crit(2, {	-- Ancient Outlook
-					-- ["cr"] = ,
+					--["cr"] = 198260,	-- Misaligned Ley Crystal
 					["coord"] = { 26.3, 36.4, THE_AZURE_SPAN },
 				}),
 				crit(3, {	-- Rustpine Den
-					-- ["cr"] = ,
+					--["cr"] = 198260,	-- Misaligned Ley Crystal
 					["coord"] = { 66.2, 51.3, THE_AZURE_SPAN },
 				}),
 				crit(4, {	-- Ruins of Karnthar
-					-- ["cr"] = ,
+					--["cr"] = 198260,	-- Misaligned Ley Crystal
 					["coord"] = { 66.8, 59.6, THE_AZURE_SPAN },
 				}),
 				crit(5, {	-- Slyvern Plunge
-					-- ["cr"] = ,
+					--["cr"] = 198260,	-- Misaligned Ley Crystal
 					["coord"] = { 65.4, 28.4, THE_AZURE_SPAN },
 				}),
 			}),
@@ -284,3 +283,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		}),
 	})
 })));
+root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+	m(THE_AZURE_SPAN, {
+		q(72095),	-- Triggers together with 'Seeing Blue' achievement (16581)
+		q(72031),	-- Triggers together with 'Do You Wanna Build a Snowman?' (16474)
+		q(72136),	-- Ley Line in the Span achievement - Rustpine Den - 66.2, 51.3, THE_AZURE_SPAN
+		q(72138),	-- Ley Line in the Span achievement - Azure Archives - 43.8, 61.9, THE_AZURE_SPAN
+		q(72139),	-- Ley Line in the Span achievement - Ancient Outlook - 26.3, 36.4, THE_AZURE_SPAN
+		q(72140),	-- Ley Line in the Span achievement - Slyvern Plunge - 65.4, 28.4, THE_AZURE_SPAN
+		q(72141),	-- Ley Line in the Span achievement - Ruins of Karnthar - 66.8, 59.6, THE_AZURE_SPAN
+	}),
+}));

@@ -46,9 +46,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		}),
 		ach(11754),	-- Glamour of Twilight (The Bastion of Twilight and Blackwing Descent)
 		ach(11755),	-- Hot Couture (Firelands)
-		un(REMOVED_FROM_GAME, ach(14831)),	-- I Live, I Die, I Queue Again (Shadowlands PvP Season 1)
+		ach(14831),	-- I Live, I Die, I Queue Again (Shadowlands PvP Season 1)
 		ach(11719),	-- It's Not Fashion Unless It Hurts (PvP Season 14)
-		pvp(ach(15102)),	-- It's Off the Chain!
+		ach(15102),	-- It's Off the Chain!
 		ach(11710),	-- Lethal Looks (PvP Season 5)
 		ach(11740),	-- Make it W-orc W-orc (Blackrock Foundry)
 		ach(11747),	-- Merely a Set (Serpentshrine Cavern and The Eye)

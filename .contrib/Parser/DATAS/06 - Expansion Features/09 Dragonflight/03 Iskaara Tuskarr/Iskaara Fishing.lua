@@ -45,11 +45,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 					-- RENOWN 6 --
 				q(70942, {	-- Highland Fishing
-					["sourceQuests"] = { 72584 },	-- Setting Your Very Own Net
+					--["sourceQuests"] = { 72584 },	-- Setting Your Very Own Net -- TODO: CONFIRM
 					["description"] = "Requires Renown 6.",
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
+					-- RENOWN 7 --
+				q(70943, {	-- Harpooning
+					--["sourceQuests"] = { 70942 },	-- Highland Fishing -- TODO: CONFIRM
+					["description"] = "Requires Renown 7.",
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+				}),
+				
 				--q(70438, {	-- Flying Fish
 				--	["provider"] = { "n", 195338 },	-- Fisherman Pasqaa
 				--	["coord"] = { 63.8, 76.6, THE_WAKING_SHORES },

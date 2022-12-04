@@ -4,7 +4,7 @@
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(ISKAARA_TUSKARR, {
 		n(QUESTS, {
-			q(70550, {	-- Orientation: Iskaara
+			q(72435, {	-- Orientation: Iskaara
 				["provider"] = { "n", 193006 },	-- Murik
 				["coord"] = { 13.1, 49.2, THE_AZURE_SPAN },
 			}),
@@ -70,6 +70,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199536),	-- Ocean Grey Ear Warmer
 				},
 			}),
+			-- RENOWN 7 --
+			q(70954, {	-- Mounting Curiosity
+				["description"] = "Requires Renown 7.",
+				["provider"] = { "n", 196544 },	-- Norukk
+				["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
+				["g"] = {
+					i(197132),	-- Highland Drake: Spiked Cheek (DM!)
+					i(197114),	-- Highland Drake: Multi-Horned Head (DM!)
+					i(197101),	-- Highland Drake: Bushy Brow (DM!)
+				},
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
@@ -83,5 +94,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72386),	-- Triggered with 'Cooking Utensils' (70939)
 		q(72387),	-- Triggered with 'Tuskarr Headwear' (70953)
 		q(72781),	-- Triggered with 'Tuskarr Fishing Gear' (71230)
+		q(72388),	-- Triggered with 'Mounting Curiosity' (70954)
 	}),
 }));

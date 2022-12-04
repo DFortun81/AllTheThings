@@ -595,7 +595,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 65.8, 25.3, THE_AZURE_SPAN },
 					}),
 					q(71235, {	-- Field Mages
-						["sourceQuests"] = { 67299 },	-- Drakes be Gone
 						["provider"] = { "n", 189751 },	-- Drok Scrollstabber
 						["coord"] = { 65.8, 25.3, THE_AZURE_SPAN },
 						["isBreadcrumb"] = true,
@@ -862,12 +861,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 45.5, 54.2, THE_AZURE_SPAN },
 					}),
 					q(65929, {	-- Ice Breakers
-						["sourceQuests"] = { 65724 },	-- The Gleamfisher
+						["sourceQuests"] = { 66724 },	-- The Gleamfisher
 						["provider"] = { "n", 186157 },	-- Ruriq
 						["coord"] = { 45.4, 54.2, THE_AZURE_SPAN },
 					}),
 					q(65928, {	-- Wayward Winds
-						["sourceQuests"] = { 65724 },	-- The Gleamfisher
+						["sourceQuests"] = { 66724 },	-- The Gleamfisher
 						["provider"] = { "n", 186386 },	-- Kauj
 						["coord"] = { 45.5, 54.2, THE_AZURE_SPAN },
 					}),
@@ -964,6 +963,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "n", 196520 },	-- Kattigat
 						["coord"] = { 67.3, 44.4, THE_AZURE_SPAN },
 						["g"] = {
+							i(201292),	-- Bramble Chain Belt
+							i(201293),	-- Sleet Shined Waistguard
+							i(201291),	-- Twisted Leather Belt
+							i(201290),	-- Windswept Sash
 							crit(9, {	-- Lost Ruins
 								["achievementID"] = 16428,	-- Sojourner of Azure Span
 							}),
@@ -1038,6 +1041,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "n", 189791 },	-- Rannan Korren
 						["coord"] = { 69.5, 60.4, THE_AZURE_SPAN },
 						["g"] = {
+							i(202199),	-- Frozen Shard Ring
+							i(202198),	-- Salt Crystal Ring
 							crit(10, {	-- Ruins of Karnthar
 								["achievementID"] = 16428,	-- Sojourner of Azure Span
 							}),
@@ -1085,8 +1090,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "n", 187616 },	-- Radza Thunderclaw
 						["coord"] = { 60.9, 50.5, THE_AZURE_SPAN },
 						["g"] = {
-							i(198034),	-- Rustic Barrier
+							i(198002),	-- Draconic Compendium
+							i(198009),	-- Gleaming Bronze Blade
 							i(198003),	-- Ornate Steel Cleaver
+							i(198034),	-- Rustic Barrier
+							i(198006),	-- Sharpened Silver Sword
+							i(198005),	-- Sleek Obsidian Kris
 							i(198004),	-- Steel Draconic Gavel
 						},
 					}),
@@ -1504,19 +1513,38 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(66972, {	-- Old Stonetusk
 				["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
-				["coord"] = { 45.0, 40.1, THE_AZURE_SPAN },	-- Moving around alot probably more coords
+				["coord"] = { 45.0, 40.1, THE_AZURE_SPAN },
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 			}),
 			q(66958, {	-- Protect And Herd
-			-- Had to wait one round..
-				["sourceQuests"] = { 66972 },	-- Old Stonetusk
+				["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
-				["coord"] = { 45.0, 40.1, THE_AZURE_SPAN },	-- Moving around alot probably more coords
+				["coord"] = { 18.8, 49.2, THE_AZURE_SPAN },
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 			}),
 			q(66968, {	-- Pruning The Pack
-			-- Had to wait one round..
-				["sourceQuests"] = { 66958 },	-- Protect And Herd
+				["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
-				["coord"] = { 45.0, 40.1, THE_AZURE_SPAN },	-- Moving around alot probably more coords
+				["coord"] = { 65.5, 25.9, THE_AZURE_SPAN },
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+			}),
+			q(66957, {	-- A Shadow In The Ice
+				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
+				["coord"] = { 46.7, 38.7, THE_AZURE_SPAN },
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+			}),
+			q(66939, {	-- Hunting the Huntmaster
+				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
+				["coord"] = { 62.7, 60.1, THE_AZURE_SPAN },
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+			}),
+			q(66971, {	-- The Face of Death
+				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
+				["coord"] = { 63.5, 15.6, THE_AZURE_SPAN },
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 			}),
 				-- Painting --
 			q(70166, {	-- The Joy of Painting

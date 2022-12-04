@@ -13,10 +13,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_AZURE_SPAN, {
 		faction(2550, {	-- Cobalt Assembly
 			n(QUESTS, {
-				q(72435, {	-- Welcome to the Assembly
-					["provider"] = { "n", 194680 },	-- Venthi
-					["coord"] = { 49, 23.1, THE_AZURE_SPAN },
-				}),
 				q(71094, {	-- Help Is Our Way!
 					["sourceQuests"] = { 72435 },	-- Welcome to the Assembly
 					["provider"] = { "n", 197100 },	-- Heleth the Wise
@@ -39,6 +35,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["g"] = {
 						i(200628),	-- Somewhat-Stabilized Arcana (TOY!)
 					},
+				}),
+				q(72784, {	-- Supporting the Cobalt Assembly
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 192222 },	-- Althanus
+					["coord"] = { 46.7, 40.1, THE_AZURE_SPAN },
+				}),
+				q(70550, {	-- Welcome to the Assembly
+					["sourceQuests"] = { 72784 },	-- Supporting the Cobalt Assembly
+					["provider"] = { "n", 194680 },	-- Venthi
+					["coord"] = { 49.0, 23.1, THE_AZURE_SPAN },
 				}),
 			}),
 			n(VENDORS, {

@@ -1073,6 +1073,7 @@ i(198728);	-- Explorer's League Banner
 i(199894);	-- Fisherman's Folly Rack
 i(194052);	-- Forlorn Funeral Pall
 i(198227);	-- Giggle Goggles
+i(201927);	-- Gleaming Arcanocrystal
 i(193476);	-- Gnoll Tent
 i(202019);	-- Golden Dragon Goblet
 i(199771);	-- Green Dragon Banner
@@ -1113,6 +1114,7 @@ i(198428);	-- Tuskarr Dinghy
 i(199892);	-- Tuskarr Traveling Soup Pot
 i(202022);	-- Yennu's Kite
 i(200550);	-- Very Comfortable Pelt
+i(199902);	-- Wayfinder's Compass
 i(199650);	-- Whale Bone Tea Set
 i(200878);	-- Wheeled Floaty Boaty Controller
 i(198156);	-- Wyrmhole Generator
@@ -1129,9 +1131,7 @@ i(200148);	-- A Collection Of Me
 i(200178);	-- Infected Ichor
 i(200116);	-- Everlasting Horn of Lavaswimming
 i(200636);	-- Primal Invocation Quintessence
-i(199902);	-- Wayfinder's Compass
 i(201435);	-- Swinging Sands
-i(201927);	-- Assorted Arcanocrystals
 i(201933);	-- Black Dragon's Challenge Dummy
 i(200926);	-- Compendium of Love
 i(202042);	-- Aquatic Shades

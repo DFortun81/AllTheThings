@@ -495,10 +495,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201086),	-- Slippers of the Verdant Wing
 			i(201087),	-- Emerald Scale Treads
 			i(201088),	-- Green Draketracker's Boots
-			i(201290),	-- Windswept Sash
-			i(201291),	-- Twisted Leather Belt
-			i(201292),	-- Bramble Chain Belt
-			i(201293),	-- Sleet Shined Waistguard
 			i(201992),	-- Emissary's Flamewrought Seal
 			i(202003),	-- Primal Seeker's Leggings
 			i(202004),	-- Brawler's Earthen Cuirass
@@ -521,8 +517,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(202117),	-- Assembly Preserver's Band
 			i(202118),	-- Assembly Guardian's Ring
 			i(202119),	-- Assembly Scholar's Loop
-			i(202198),	-- Salt Crystal Ring
-			i(202199),	-- Frozen Shard Ring
 			i(202200),	-- Solemn Seashell String
 		}),
 		filter(BATTLE_PETS, {
@@ -906,11 +900,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197955),	-- Sword of the Eternal Guard
 			i(197956),	-- Empowered Shortsword of Insight
 			i(197957),	-- Timeless Watcher's Saber
-			i(198002),	-- Draconic Compendium
-			i(198005),	-- Sleek Obsidian Kris
-			i(198006),	-- Sharpened Silver Sword
 			i(198007),	-- Large Brass Cleaver
-			i(198009),	-- Gleaming Bronze Blade
 			i(198035),	-- Archer's Decorated Bow
 				-- Thaldraszus
 			i(195177),	-- Moment's Notice
@@ -2264,14 +2254,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200178),	-- Infected Ichor (TOY!)
 			i(200116),	-- Everlasting Horn of Lavaswimming (TOY!)
 			i(200636),	-- Primal Invocation Quintessence (TOY!)
-			i(199902),	-- Wayfinder's Compass (TOY!)
 			i(201435),	-- Shuffling Sands (TOY!)
 			i(194885),	-- Ohuna Perch (TOY!)
 			i(201815),	-- Cloak of Many Faces (TOY!)
 			i(202042),	-- Aquatic Shades (TOY!)
 			i(200926),	-- Compendium of Love (TOY!)
 			i(201933),	-- Black Dragon's Challenge Dummy (TOY!)
-			i(201927),	-- Assorted Arcanocrystals (TOY!)
 		}),
 		--[[
 		filter(PETS, {

@@ -134,6 +134,25 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198863),	-- Small Dragon Expedition Supply Pack
 				},
 			}),
+				-- RENOWN 9 --
+			q(70828, {	-- Wayfinder's Compass
+				["description"] = "Requires Renown 9.",
+				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
+				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
+				["g"] = {
+					i(199902),	-- Wayfinder's Compass (TOY!)
+				},
+			}),
+			q(70808, {	-- Initial Mysteries of the Dragon Isles Drakes
+				["description"] = "Requires Renown 9.",
+				["provider"] = { "n", 188265 },	-- Rae'ana
+				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
+				["g"] = {
+					i(197363),	-- Renewed Proto-Drake: Maned Crest (DM!)
+					i(197360),	-- Renewed Proto-Drake: Spined Brow (DM!)
+					i(197386),	-- Renewed Proto-Drake: Spiked Jaw (DM!)
+				},
+			}),
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
 				["provider"] = { "o", 381669 },	-- Archivists' Request
@@ -187,7 +206,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAGONSCALE_EXPEDITION, {
-		q(72033),	-- triggered together with 'Advanced Excavation Tools' (70807)
+		q(72033),	-- Triggeres together with 'Advanced Excavation Tools' (70807)
 
 		-- Achievement Dragonscale Expedition: The Highest Peaks
 		q(70823),	-- Flag at 56.0, 45.3, THE_WAKING_SHORES

@@ -39,18 +39,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			o(381158, {	-- Gnoll Fiend Flail
 				["coord"] = { 54.0, 43.8, THE_AZURE_SPAN },
 				-- ["questID"] = ,
-				["cost"] = { { "i", 199066, 1 }, },	--1xLetter of Caution
+				["cost"] = { { "i", 199066, 1 }, },	--1x Letter of Caution
 				["g"] = {
+					i(202692),	-- Gnoll Fiend Flail
 					crit(2, {	-- Gnoll Fiend Flail
 						["achievementID"] = 16300,	-- Treasures of The Azure Span
 					}),
 				},
 			}),
 			o(381110, {	-- Forgotten Jewel Box
-				["coord"] = { 40.5, 41.4, THE_AZURE_SPAN },
+				["coord"] = { 45.1, 59.3, THE_AZURE_SPAN },
 				-- ["questID"] = ,
-				["cost"] = { { "i", 199065, 1 }, },	--1xSorrowful Letter
+				["cost"] = { { "i", 199065, 1 }, },	--1x Sorrowful Letter
 				["g"] = {
+					i(201927),	-- Gleaming Arcanocrystal (TOY!)
 					crit(1, {	-- Forgotten Jewel Box
 						["achievementID"] = 16300,	-- Treasures of The Azure Span
 					}),
@@ -79,7 +81,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(380843, {	-- Rubber Fish
 				["coord"] = { 54.6, 29.3, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 70380,
 				["g"] = {
 					crit(5, {	-- Rubber Fish
 						["achievementID"] = 16300,	-- Treasures of The Azure Span
@@ -89,7 +91,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			o(381157, {	-- Sapphire Gem Cluster
 				["coord"] = { 40.5, 41.4, THE_AZURE_SPAN },
 				-- ["questID"] = 70605,
-				["cost"] = { { "i", 199067, 1 }, },	--1xPrecious Plans
+				["cost"] = { { "i", 199067, 1 }, },	--1x Precious Plans
 				["g"] = {
 					crit(3, {	-- Sapphire Gem Cluster
 						["achievementID"] = 16300,	-- Treasures of The Azure Span
