@@ -1364,54 +1364,56 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				q(70543, {	-- Stay awhile and listen: Veritistrasz: 2
 					["name"] = "Stay awhile and listen: Veritistrasz: 2",
-					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["sourceQuests"] = { 70206 },	-- Veritistrasz: 1
 					["provider"] = { "n", 194076 },	-- Veritistrasz
 					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 				}),
 				q(70544, {	-- Stay awhile and listen: Veritistrasz: 3
 					["name"] = "Stay awhile and listen: Veritistrasz: 3",
-					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["sourceQuests"] = { 70543 },	-- Veritistrasz: 2
 					["provider"] = { "n", 194076 },	-- Veritistrasz
 					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 				}),
 				q(70217, {	-- Stay awhile and listen: Veritistrasz: 4
 					["name"] = "Stay awhile and listen: Veritistrasz: 4",
-					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["sourceQuests"] = { 70544 },	-- Veritistrasz: 3
 					["provider"] = { "n", 194076 },	-- Veritistrasz
 					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 				}),
 				q(70546, {	-- Stay awhile and listen: Veritistrasz: 5
 					["name"] = "Stay awhile and listen: Veritistrasz: 5",
-					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["sourceQuests"] = { 70217 },	-- Veritistrasz: 4
 					["provider"] = { "n", 194076 },	-- Veritistrasz
 					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 				}),
 				q(70547, {	-- Stay awhile and listen: Veritistrasz: 6
 					["name"] = "Stay awhile and listen: Veritistrasz: 6",
-					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["sourceQuests"] = { 70546 },	-- Veritistrasz: 5
 					["provider"] = { "n", 194076 },	-- Veritistrasz
 					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 				}),
 				q(70219, {	-- Stay awhile and listen: Veritistrasz: 7
 					["name"] = "Stay awhile and listen: Veritistrasz: 7",
-					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["sourceQuests"] = { 70547 },	-- Veritistrasz: 6
 					["provider"] = { "n", 194076 },	-- Veritistrasz
 					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 				}),
 				q(70548, {	-- Stay awhile and listen: Veritistrasz: 8
 					["name"] = "Stay awhile and listen: Veritistrasz: 8",
-					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["sourceQuests"] = { 70219 },	-- Veritistrasz: 7
 					["provider"] = { "n", 194076 },	-- Veritistrasz
 					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 				}),
 				q(70223, {	-- Stay awhile and listen: Veritistrasz: 9
 					["name"] = "Stay awhile and listen: Veritistrasz: 9",
-					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["sourceQuests"] = { 70548 },	-- Veritistrasz: 8
 					["provider"] = { "n", 194076 },	-- Veritistrasz
 					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 				}),
 				q(70709, {	-- Talk to: Wu'de Prepfoot
 					["name"] = "Talk to: Wu'de Prepfoot",
+					["sourceQuests"] = { 65691 },	-- The Shadow of His Wings
+					["cr"] = 196072,	-- Wu'de Prepfoot
 					["coord"] = { 35.1, 47.2, THE_WAKING_SHORES },
 				}),
 				q(72178, {	-- Theory in Practice: Baron von Swoopenbite
@@ -1422,6 +1424,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 					["provider"] = { "n", 192298 },	-- Tyrgon
 					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+					["altQuests"] = {
+						-- 72178,	-- Theory in Practice: Baron von Swoopenbite
+						72174,	-- Theory in Practice: Bob
+						72179,	-- Theory in Practice: Lord Firegiggle
+						72177,	-- Theory in Practice: Mr.Nibbles
+						72176,	-- Theory in Practice: Toughscale
+					},
 				}),
 				q(72174, {	-- Theory in Practice: Bob
 					["name"] = "Theory in Practice: Bob",
@@ -1431,6 +1440,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 					["provider"] = { "n", 192298 },	-- Tyrgon
 					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+					["altQuests"] = {
+						72178,	-- Theory in Practice: Baron von Swoopenbite
+						-- 72174,	-- Theory in Practice: Bob
+						72179,	-- Theory in Practice: Lord Firegiggle
+						72177,	-- Theory in Practice: Mr.Nibbles
+						72176,	-- Theory in Practice: Toughscale
+					},
 				}),
 				q(72179, {	-- Theory in Practice: Lord Firegiggle
 					["name"] = "Theory in Practice: Lord Firegiggle",
@@ -1440,6 +1456,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 					["provider"] = { "n", 192298 },	-- Tyrgon
 					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+					["altQuests"] = {
+						72178,	-- Theory in Practice: Baron von Swoopenbite
+						72174,	-- Theory in Practice: Bob
+						-- 72179,	-- Theory in Practice: Lord Firegiggle
+						72177,	-- Theory in Practice: Mr.Nibbles
+						72176,	-- Theory in Practice: Toughscale
+					},
 				}),
 				q(72177, {	-- Theory in Practice: Mr.Nibbles
 					["name"] = "Theory in Practice: Mr.Nibbles",
@@ -1449,6 +1472,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 					["provider"] = { "n", 192298 },	-- Tyrgon
 					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+					["altQuests"] = {
+						72178,	-- Theory in Practice: Baron von Swoopenbite
+						72174,	-- Theory in Practice: Bob
+						72179,	-- Theory in Practice: Lord Firegiggle
+						-- 72177,	-- Theory in Practice: Mr.Nibbles
+						72176,	-- Theory in Practice: Toughscale
+					},
 				}),
 				q(72176, {	-- Theory in Practice: Toughscale
 					["name"] = "Theory in Practice: Toughscale",
@@ -1458,6 +1488,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 					["provider"] = { "n", 192298 },	-- Tyrgon
 					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+					["altQuests"] = {
+						72178,	-- Theory in Practice: Baron von Swoopenbite
+						72174,	-- Theory in Practice: Bob
+						72179,	-- Theory in Practice: Lord Firegiggle
+						72177,	-- Theory in Practice: Mr.Nibbles
+						-- 72176,	-- Theory in Practice: Toughscale
+					},
 				}),
 				q(72089, {	-- To Skytop Observatory
 					["name"] = "To Skytop Observatory",
@@ -1666,8 +1703,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
-		q(70872),	-- Quack Weekly Trigger
+		q(66898),	-- triggered during 'The Shadow of His Wings' (65691)
 	}),
-}));
+})));

@@ -4,6 +4,36 @@
 
 root("PVP", pvp(n(-10058, {	-- World
 	tier(DF_TIER, {
+		n(ACHIEVEMENTS, {
+			ach(16590, {	-- A Champion's Tour: Dragon Isles
+				crit(1, {	-- How to Train a Proto-Drake
+					-- ["_quests"] = { QUEST },
+				}),
+				crit(2, {	-- Quacks and Attacks
+					-- ["_quests"] = { QUEST },
+				}),
+				crit(3, {	-- Wild Arcana
+					-- ["_quests"] = { QUEST },
+				}),
+				crit(4, {	-- Extermination
+					["_quests"] = { 69949 },
+				}),
+			}),
+			ach(16589, {	-- Malicia's Challenge
+				crit(1, {	-- How to Train a Proto-Drake
+					-- ["_quests"] = { QUEST },
+				}),
+				crit(2, {	-- Quacks and Attacks
+					-- ["_quests"] = { QUEST },
+				}),
+				crit(3, {	-- Wild Arcana
+					-- ["_quests"] = { QUEST },
+				}),
+				crit(4, {	-- Extermination
+					["_quests"] = { 69949 },
+				}),
+			}),
+		}),
 		currency(2123),	-- Bloody Tokens
 		i(202184),	-- Trophy of Strife
 	}),

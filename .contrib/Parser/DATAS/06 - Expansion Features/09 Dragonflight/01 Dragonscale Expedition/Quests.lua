@@ -187,9 +187,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAGONSCALE_EXPEDITION, {
-		-- q(70824),	-- Highest/Tallest Peak WingRest Embassy
-		q(72033),	-- Triggeres together with 'Advanced Excavation Tools' (70807)
-		
+		q(72033),	-- triggered together with 'Advanced Excavation Tools' (70807)
+
 		-- Achievement Dragonscale Expedition: The Highest Peaks
 		q(70823),	-- Flag at 56.0, 45.3, THE_WAKING_SHORES
 		q(70824),	-- Flag at 73.4, 38.8, THE_WAKING_SHORES

@@ -125,6 +125,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 })));
 root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAGONSCALE_EXPEDITION, {
-		q(71183)	-- Triggeres together with 'Continued Waygate Exploration' (70702)
+		q(71183),	-- triggered together with 'Continued Waygate Exploration' (70702)
+		q(73864),	-- triggered when accepting 'Dormant Discovery' (66595)
 	}),
 })));

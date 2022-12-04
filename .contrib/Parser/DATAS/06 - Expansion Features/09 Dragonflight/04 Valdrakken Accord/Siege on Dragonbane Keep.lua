@@ -13,7 +13,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				n(REWARDS, {
 					i(202142),	-- Dragonbane Keep Strongbox [RARE]
-					i(200072),	-- Dragonbane Keep Strongbox [EPIC]
+					i(200072, {	-- Dragonbane Keep Strongbox [EPIC]
+						i(197941),	-- Iskaaran Mystic's Tideshear
+					}),
 				}),
 				n(TREASURES, {
 					o(376580, {	-- Djaradin Cache

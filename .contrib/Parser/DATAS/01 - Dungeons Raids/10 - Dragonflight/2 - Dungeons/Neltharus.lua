@@ -164,3 +164,11 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		},
 	})
 })));
+
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	inst(1199, {	-- Neltharus
+		q(70724, {	-- first time entering dungeon as blacksmith
+			["requireSkill"] = BLACKSMITHING,	-- unconfirmed
+		}),
+	}),
+})));

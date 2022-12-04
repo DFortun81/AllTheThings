@@ -260,7 +260,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193288, {	-- Summoned Destroyer
 				["coord"] = { 70.1, 33.2, THE_AZURE_SPAN },
-				-- ["questID"] = 69895,
+				["questID"] = 72848,
 				["g"] = {
 					i(200868),	-- Integrated Primal Fire
 				},

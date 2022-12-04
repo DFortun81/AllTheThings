@@ -1583,6 +1583,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 66709 },	-- Field Medic 101
 					["coord"] = { 58.1, 42.3, THE_AZURE_SPAN },
 				}),
+				q(69895, {	-- Summoned Destroyer
+					["provider"] = { "n", 193288 },	-- Summoned Destroyer
+					["coord"] = { 70.1, 33.2, THE_AZURE_SPAN },
+				}),
 				q(65841, {	-- Stop the Spread
 					["sourceQuests"] = { 66026 },	-- Urgent Action Required
 					["coord"] = { 19.1, 36.2, THE_AZURE_SPAN },

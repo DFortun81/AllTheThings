@@ -1860,7 +1860,6 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 840,	-- Conscript of the Horde
 					["coord"] = { 62.26, 19.37, THE_BARRENS },
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
