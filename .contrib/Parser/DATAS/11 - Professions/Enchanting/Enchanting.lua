@@ -1075,6 +1075,17 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(309623),	-- Sinful Revelation
 		}),
 	}))),
+	applyclassicphase(DRAGONFLIGHT_PHASE_ONE, tier(DF_TIER, {
+		n(QUESTS, {
+			q(74110, {	-- Draconic Treatise on Enchanting
+				["provider"] = { "i", 194702 },		-- Draconic Treatise on Enchanting
+				["timeline"] = { "added 10.0.2." },
+				["isWeekly"] = true,
+				["description"] = "Requires a crafting order from inscription.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+		}),
+	})),
 }));
 
 -- Enchanting Item Database

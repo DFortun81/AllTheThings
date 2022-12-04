@@ -5350,6 +5350,17 @@ profession(TAILORING, {
 			}
 		},
 	})),
+	applyclassicphase(DRAGONFLIGHT_PHASE_ONE, tier(DF_TIER, {
+		n(QUESTS, {
+			q(74115, {	-- Draconic Treatise on Tailoring
+				["provider"] = { "i", 194698 },		-- Draconic Treatise on Tailoring
+				["timeline"] = { "added 10.0.2." },
+				["isWeekly"] = true,
+				["description"] = "Requires a crafting order from inscription.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+		}),
+	})),
 	n(QUESTS, bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
 		applyclassicphase(TBC_PHASE_ONE, q(10831, {	-- Becoming a Mooncloth Tailor
 			["qg"] = 22208,	-- Nasmara Moonsong <Mooncloth Specialist>

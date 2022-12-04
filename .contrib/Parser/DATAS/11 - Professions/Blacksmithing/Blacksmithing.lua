@@ -6239,6 +6239,17 @@ profession(BLACKSMITHING, {
 			},
 		},
 	}))),
+	applyclassicphase(DRAGONFLIGHT_PHASE_ONE, tier(DF_TIER, {
+		n(QUESTS, {
+			q(74109, {	-- Draconic Treatise on Blacksmith
+				["provider"] = { "i", 198454 },		-- Draconic Treatise on Tailoring
+				["timeline"] = { "added 10.0.2." },
+				["isWeekly"] = true,
+				["description"] = "Requires a crafting order from inscription.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+		}),
+	})),
 });
 
 -- Blacksmithing Item Database
