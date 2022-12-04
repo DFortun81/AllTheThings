@@ -83,13 +83,39 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 197478 },	-- Herald Flaps
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
+				-- RENOWN 9 --
+			q(70887, {	-- Feeling Freedom
+				["description"] = "Requires Renown 9.",
+				["provider"] = { "n", 185561 },	-- Kaestrasz
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(196972),	-- Cliffside Wylderdrake: Plated Brow (DM!)
+					i(197003),	-- Cliffside Wylderdrake: Spiked Cheek (DM!)
+					i(196977),	-- Cliffside Wylderdrake: Split Head Horns (DM!)
+				},
+			}),
+				-- RENOWN 10 --
+			q(70888, {	-- Rubbing Shoulders With The Best
+				["description"] = "Requires Renown 10.",
+				["provider"] = { "n", 195770 },	-- Armorsmith Terisk
+				["coord"] = { 36.0, 49.7, VALDRAKKEN },
+				["g"] = {
+					i(199655),	-- Black Dragonspawn Shoulderpads
+					i(199656),	-- Blue Dragonspawn Shoulderpads
+					i(199657),	-- Bronze Dragonspawn Shoulderpads
+					i(199658),	-- Green Dragonspawn Shoulderpads
+					i(199659),	-- Red Dragonspawn Shoulderpads
+				},
+			}),
 		}),
 	}),
 })));
-
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(VALDRAKKEN_ACCORD, {
 		q(72669),	-- triggered with 'To Cook With Finery' (70880)
 		q(72673),	-- triggered with 'Aerial Challenges' (71227)
+		q(72672),	-- triggered with 'A Hand In Cultivation' (70883)
+		q(72682),	-- triggered with 'Feeling Freedom' (70887)
+		q(72685),	-- triggered with 'Rubbing Shoulders With The Best' (70888)
 	}),
 })));

@@ -153,6 +153,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(197386),	-- Renewed Proto-Drake: Spiked Jaw (DM!)
 				},
 			}),
+				-- RENOWN 11 --
+			q(70820, {	-- The Basecamp 'Pets'
+				["description"] = "Requires Renown 11.",
+				["provider"] = { "n", 187408 },	-- Granpap Whiskers
+				["coord"] = { 47.7, 83.2, THE_WAKING_SHORES },
+				["g"] = {
+					i(198726),	-- Black Skitterbug (PET!)
+					i(198725),	-- Gray Marmoni (PET!)
+				},
+			}),
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
 				["provider"] = { "o", 381669 },	-- Archivists' Request
@@ -207,7 +217,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		q(72033),	-- Triggeres together with 'Advanced Excavation Tools' (70807)
-
+		q(72037),	-- Triggers together with 'The Basecamp 'Pets'' (70820)
 		-- Achievement Dragonscale Expedition: The Highest Peaks
 		q(70823),	-- Flag at 56.0, 45.3, THE_WAKING_SHORES
 		q(70824),	-- Flag at 73.4, 38.8, THE_WAKING_SHORES

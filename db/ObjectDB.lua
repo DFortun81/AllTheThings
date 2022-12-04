@@ -2449,6 +2449,7 @@ _.ObjectNames = {
 	[381160] = "Lost Compass",
 	[381216] = "Surveyor's Magnifying Glass",
 	[381223] = "Cracked Hourglass",
+	[381277] = "Barrel of Confiscated Treats",
 	[381296] = "Horrible Mess",
 	[381297] = "Misplaced Luggage",
 	[381353] = "Stone Dragontooth",

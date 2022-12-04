@@ -796,14 +796,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							}),
 						},
 					}),
-					q(70139, {	-- Where There's a Ward, There's a Way
-						["sourceQuests"] = {
-							65921,	-- Refti Retribution
-							65916,	-- We Don't Negotiate with Primalists
-						},
-						["provider"] = { "n", 189045 },	-- Mara
-						["coord"] = { 49.6, 58.8, THALDRASZUS },
-					}),
 				},
 			}),
 			crit(6, {	-- Bleeding Hearts
@@ -868,7 +860,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					q(70743, {	-- Precious Baby
 						["sourceQuests"] = {
 							70738,	-- Good Reviews
-							70741,	-- Some Favorite Things
 							70740,	-- Steam Cleaning
 						},
 						["provider"] = { "n", 194812 },	-- Cae'Ryn
@@ -939,28 +930,32 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "n", 196562 },	-- Maldra Flametongue
 						["coord"] = { 42.7, 78.8, THALDRASZUS },
 					}),
-					q(70874, {	-- Breaching the Fire Wall
+					q(70874, {	-- To Breach a Fire Wall
 						["sourceQuests"] = { 70873 },	-- Chasing Waterfalls
 						["provider"] = { "n", 196562 },	-- Maldra Flametongue
 						["coord"] = { 42.7, 78.8, THALDRASZUS },
 					}),
 					q(70876, {	-- Fracture Foci
-						["sourceQuests"] = { 70874 },	-- Breaching the Fire Wall
+						["sourceQuests"] = { 70874 },	-- To Breach a Fire Wall
 						["provider"] = { "n", 196566 },	-- Investigator Erima
 						["coord"] = { 42.4, 78.9, THALDRASZUS },
 					}),
 					q(70878, {	-- Ring of Fire
-						["sourceQuests"] = { 70874 },	-- Breaching the Fire Wall
+						["sourceQuests"] = { 70874 },	-- To Breach a Fire Wall
 						["provider"] = { "n", 196608 },	-- Maldra Flametongue
 						["coord"] = { 42.3, 78.9, THALDRASZUS },
 					}),
 					q(70875, {	-- Worst of the Worst
-						["sourceQuests"] = { 70874 },	-- Breaching the Fire Wall
+						["sourceQuests"] = { 70874 },	-- To Breach a Fire Wall
 						["provider"] = { "n", 196566 },	-- Investigator Erima
 						["coord"] = { 42.4, 78.9, THALDRASZUS },
 					}),
 					q(70879, {	-- Report on the Rebels
-						["sourceQuests"] = { 70874 },	-- Breaching the Fire Wall
+						["sourceQuests"] = {
+							70876,	-- Fracture Foci
+							70878,	-- Ring of Fire
+							70875,	-- Worst of the Worst
+						},
 						["provider"] = { "n", 196566 },	-- Investigator Erima
 						["coord"] = { 42.4, 78.9, THALDRASZUS },
 						["g"] = {
@@ -972,6 +967,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(BONUS_OBJECTIVES, {
+				q(69962, {	-- Corrupted Proto-Dragon
+					["provider"] = { "n", 193658 },	-- Corrupted Proto-Dragon
+					["coord"] = { 44.8, 69.0, THALDRASZUS },
+					-- ["isDaily"] = true,
+				}),
 				q(69873, {	-- Henlare
 					["provider"] = { "n", 193229 },	-- Henlare
 					["coord"] = { 55.6, 77.4, THALDRASZUS },

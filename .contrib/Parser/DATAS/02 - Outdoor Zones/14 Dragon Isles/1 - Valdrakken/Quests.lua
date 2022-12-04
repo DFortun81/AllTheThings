@@ -258,6 +258,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
 		q(72596),	-- After Open Orientation
+		q(69935),	-- triggered with 'A Dryadic Remedy' (67606)
 
 		-- q(70570),	-- Talked with Watcher Koranos
 		-- q(65041),	-- Memories of Scoroxia(On wowhead? Something you should return with??) / Talked with Scalecommanders Cindretresh and Azurathel

@@ -916,7 +916,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197904),	-- Shikaar Hunting Knife
 			i(197905),	-- Salamanther Slicer
 			i(200127),	-- Gold-Alloy Blade
-			i(200128),	-- Zephyr's Razor
 			i(200130),	-- Corpse Ripper
 			i(200136),	-- Monsoonic Armguards
 			i(200138),	-- Ancient Dancer's Longspear

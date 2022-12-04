@@ -19,6 +19,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				-- },
 			}),
+			n(193341, {	-- Angen
+				["coord"] = { 33.2, 72.4, THALDRASZUS },
+				--["questID"] = ,
+				["g"] = {
+					i(200128),	-- Zephyr's Razor
+				},
+			}),
 			n(193128, {	-- Blightpaw the Depraved
 				["coord"] = { 90.2, 40.2, THALDRASZUS },
 				-- ["questID"] = ,
@@ -36,7 +43,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193658, {	-- Corrupted Proto-Dragon
 				["coord"] = { 44.8, 69.0, THALDRASZUS },
-				-- ["questID"] = 69962,
+				["questID"] = 74060,
 				["g"] = {
 					i(200166),	-- Corrupted Drake Horn
 				},
