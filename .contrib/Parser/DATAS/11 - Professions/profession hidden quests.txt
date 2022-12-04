@@ -1,0 +1,10 @@
+talking to each npc master missing
+1 time treasures missing
+
+weekly inscription book
+Looking for alchemist, or skinner who used a treatise
+
+/script print(C_QuestLog.IsQuestFlaggedCompleted(74104))    -- ??
+/script print(C_QuestLog.IsQuestFlaggedCompleted(74106))    -- ??
+/script print(C_QuestLog.IsQuestFlaggedCompleted(74114))    -- ??
+/script print(C_QuestLog.IsQuestFlaggedCompleted(74116))    -- ??

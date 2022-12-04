@@ -1036,4 +1036,17 @@ profession(HERBALISM, {
 		})),
 	})),
 	-- #endif
+	-- #if AFTER DF
+	applyclassicphase(DRAGONFLIGHT_PHASE_ONE, tier(DF_TIER, {
+		n(QUESTS, {
+			q(74107, {	-- Draconic Treatise on Herbalism
+				["provider"] = { "i", 194704 },		-- Draconic Treatise on Herbalism
+				["timeline"] = { "added 10.0.2." },
+				["isWeekly"] = true,
+				["description"] = "Requires a crafting order from inscription.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+		}),
+	})),
+	-- #endif
 });

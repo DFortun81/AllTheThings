@@ -1605,6 +1605,16 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			})),
 		}),
 	}))),
+	applyclassicphase(DRAGONFLIGHT_PHASE_ONE, tier(DF_TIER, {
+		n(QUESTS, {
+			q(74105, {	-- Draconic Treatise on Inscription
+				["provider"] = { "i", 194699 },		-- Draconic Treatise on Inscription
+				["timeline"] = { "added 10.0.2." },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+		}),
+	})),
 	--[[
 	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
 		cat(1410, {	-- Contracts
