@@ -1097,6 +1097,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(191837),	-- Earthen Charm
 				},
 			}),
+			q(65840, {	-- Same as the Old Boss
+				["description"] = "Visible only via The Worldbreaker title.",
+				["provider"] = { "n", 191310 },	-- Doventhal the Chosen
+				["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
+				["isWeekly"] = true,
+				["g"] = {
+					i(200173),	-- Magmote
+				},
+			}),
+			q(66129, {	-- Unlocking Our Past
+				["provider"] = { "n", 187275 },	-- Igys the Believer
+				["coord"] = { 32.3,52.4, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["g"] = {
+					i(201818, {	-- Twilight Strongbox
+						i(199215),	-- Worldbreaker Membership
+						i(200173),	-- Magmote
+					}),
+				},
+			}),
 			q(66101, {	-- From Such Great Heights
 				["sourceQuests"] = {
 					65452,	-- Explorers in Peril

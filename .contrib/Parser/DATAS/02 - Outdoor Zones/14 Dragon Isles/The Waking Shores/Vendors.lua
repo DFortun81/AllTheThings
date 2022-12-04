@@ -4,6 +4,27 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
 		n(VENDORS, {
+			n(193310, {	-- Emilia Bellocq
+				["coord"] = { 34.8, 46.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(201418, {	-- Orb of the Obsidian Scale
+						["cost"] = {
+							{ "i", 200173, 5 },		-- 5x Magmote
+						},
+					}),
+					i(192786, {	-- Slumbering Worldsnail Shell
+						["cost"] = {
+							{ "i", 200173, 1000 },		-- 1000x Magmote
+						},
+					}),
+					i(199215, {	-- Worldbreaker Membership
+						["description"] = "Can only be bought if you looted the Worldbreaker Membership once from the Twillight Cache before.",
+						["cost"] = {
+							{ "i", 200173, 20 },		-- 20x Magmote
+						},
+					}),
+				},
+			}),
 			n(193915, {	-- Emilia Bellocq
 				["coord"] = { 75.4, 34.0, THE_WAKING_SHORES },
 				["g"] = {
