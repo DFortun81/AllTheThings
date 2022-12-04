@@ -253,7 +253,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					15744,	-- Wingrest Roundabout: Gold
 				}},
 				["g"] = {
-					i(197370),	-- Renewed Proto-Drake: Red Hair
+					i(197370),	-- Renewed Proto-Drake: Red Hair (DM!)
 				},
 			}),
 			ach(15927, {	-- Waking Shores Advanced: Bronze
