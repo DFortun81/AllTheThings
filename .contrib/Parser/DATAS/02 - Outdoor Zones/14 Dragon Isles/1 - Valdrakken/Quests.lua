@@ -74,12 +74,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 			-- SIDE 3
 			q(70846, {	-- Dragonscale Expedition: Help Needed!
+				-- not yet seen in DF ? what are requirements...
 				["provider"] = { "n", 196448 },	-- Aspiring Goblin Enginner
 				["coord"] = { 40.8, 48.3, VALDRAKKEN },
 				["isBreadcrumb"] = true,
 			}),
 			q(70180, {	-- Jump-Start? Jump-Starting!
-				["sourceQuests"] = { 70846 },	-- Dragonscale Expedition: Help Needed!
+				["sourceQuests"] = {
+					70846,	-- Dragonscale Expedition: Help Needed!
+					72773,	-- Learning Ingenuity
+				},
 				["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
 				["coord"] = { 84.2, 54.4, VALDRAKKEN },
 			}),
@@ -123,6 +127,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(72585, {	-- Open Orientation
 				["provider"] = { "n", 196499 },	-- Therazal
 				["coord"] = { 50.2, 55.9, VALDRAKKEN },
+			}),
+			q(72773, {	-- Learning Ingenuity
+				["provider"] = { "n", 196499 },	-- Therazal
+				["coord"] = { 50.2, 55.9, VALDRAKKEN },
+				["isBreadcrumb"] = true,	-- unconfirmed
 			}),
 			q(72783, {	-- Crafting Orders
 				["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
@@ -246,26 +255,25 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	}),
 })));
 
---[[
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
-		q(70570),	-- Talked with Watcher Koranos
-		q(65041),	-- Memories of Scoroxia(On wowhead? Something you should return with??) / Talked with Scalecommanders Cindretresh and Azurathel
-		q(72011),	-- Starting Ruby Feast
-		q(71243),	-- Weekly Quest?
-
-		q(67055),	-- Both These popped when doing Ruby Feast
-		q(72009),
-
-		q(72258),	-- Popped when completed Ruby Feast Quest 100000 years roast
-		q(67056),	-- ^^
-
-		q(72369),	-- Unknown popped when HS to valdrakken
-		q(72366),	-- Also Unknown
-
 		q(72596),	-- After Open Orientation
-		q(72892),	-- After "Aiding the Accord" series
-		q(72673),	-- After turning in [71227]
+
+		-- q(70570),	-- Talked with Watcher Koranos
+		-- q(65041),	-- Memories of Scoroxia(On wowhead? Something you should return with??) / Talked with Scalecommanders Cindretresh and Azurathel
+		-- q(72011),	-- Starting Ruby Feast
+		-- q(71243),	-- Weekly Quest?
+
+		-- q(67055),	-- Both These popped when doing Ruby Feast
+		-- q(72009),
+
+		-- q(72258),	-- Popped when completed Ruby Feast Quest 100000 years roast
+		-- q(67056),	-- ^^
+
+		-- q(72369),	-- Unknown popped when HS to valdrakken
+		-- q(72366),	-- Also Unknown
+
+		-- q(72892),	-- After "Aiding the Accord" series
+		-- q(72673),	-- After turning in [71227]
 	}),
 }));
---]]

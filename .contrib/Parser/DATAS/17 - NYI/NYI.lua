@@ -399,7 +399,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200202),	-- Tomorrow's Chains
 			i(200203),	-- Repurposed Giant's Thimble
 			i(200204),	-- Sandshine Chestplate
-			i(200211),	-- Snowman's Icy Gaze
 			i(200213),	-- Lava-Splattered Breastplate
 			i(200214),	-- Grasp of the Weeping Widow
 			i(200215),	-- Plumed Shoulderguards of the Hunt
@@ -1124,7 +1123,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197373),	-- Renewed Proto-Drake: Helm
 			i(197379),	-- Renewed Proto-Drake: Impaler Horns
 			i(197382),	-- Renewed Proto-Drake: White Horns
-			i(197383),	-- Renewed Proto-Drake: Heavy Horns
 			i(197384),	-- Renewed Proto-Drake: Thick Spined Jaw
 			i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw
 			i(197389),	-- Renewed Proto-Drake: Green Scales
@@ -1203,7 +1201,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200289),	-- Valdrakken Accord Insignia
 			i(200069),	-- Obsidian Cache
 			i(200070),	-- Obsidian Strongbox
-			i(200071),	-- Sacred Tuskarr Totem
 			i(200073),	-- Valdrakken Treasures
 			i(200094),	-- Caravan Strongbox
 			i(200184),	-- Nokhud Battle Helm

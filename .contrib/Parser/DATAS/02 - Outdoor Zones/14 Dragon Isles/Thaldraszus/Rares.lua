@@ -64,7 +64,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193229, {	-- Henlare
 				["coord"] = { 55.6, 77.4, THALDRASZUS },
-				-- ["questID"] = 69873,
+				["questID"] = 72814,
 				["g"] = {
 					i(200563),	-- Primal Ritual Shell
 				},
@@ -86,9 +86,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193668, {	-- Lookout Mordren
 				["coord"] = { 36.8, 85.6, THALDRASZUS },
-				-- ["questID"] = 69967,
+				["questID"] = 72813,
 				["g"] = {
 					i(200182),	-- Riveted Drape
+					i(197383),	-- Renewed Proto-Drake: Heavy Horns
 				},
 			}),
 			n(193241, {	-- Lord Epochbrgl <Time-Lost>

@@ -253,10 +253,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["description"] = "Click the Arcane Pedestal.",
 				["coord"] = { 55.0, 34.0, THE_AZURE_SPAN },
 				["cr"] = 193242,	-- Arcane Pedestal
-				-- ["questID"] = 69879,
-				-- ["g"] = {
-
-				-- },
+				["questID"] = 74082,
+				["g"] = {
+					i(200211),	-- Snowman's Icy Gaze
+				},
 			}),
 			n(193288, {	-- Summoned Destroyer
 				["coord"] = { 70.1, 33.2, THE_AZURE_SPAN },

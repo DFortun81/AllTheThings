@@ -80,3 +80,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	n(VALDRAKKEN_ACCORD, {
+		q(72669),	-- triggered with 'To Cook With Finery' (70880)
+	}),
+})));

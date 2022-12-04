@@ -415,7 +415,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 57.4, 59.1, THALDRASZUS },
 				}),
 				q(71232, {	-- Renown of the Dragon Isles
-					["sourceQuests"] = { 67073 },	-- Red Dawn
+					["sourceQuests"] = { 66221 },	-- Moving On
 					["provider"] = { "n", 190902 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 72.5, 56.2, THALDRASZUS },
 				}),
@@ -971,6 +971,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
+			n(BONUS_OBJECTIVES, {
+				q(69873, {	-- Henlare
+					["provider"] = { "n", 193229 },	-- Henlare
+					["coord"] = { 55.6, 77.4, THALDRASZUS },
+					-- ["isDaily"] = true,
+				}),
+				-- q(, {	-- Lookout Mordren
+				-- 	["provider"] = { "n", 193668 },	-- Lookout Mordren
+				-- 	["coord"] = { 36.8, 85.6, THALDRASZUS },
+				-- 	-- ["isDaily"] = true,
+				-- }),
+			}),
 				-- MISC --
 			q(67093, {	-- An Anomalous Shrine
 				["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
@@ -1167,13 +1179,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	}),
 })));
 
---[[
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THALDRASZUS, {
-		q(72084),	-- Popped during Quest at South Gate?
 		q(67030),	-- WQ Available?
-		q(70511),	-- Popped when doing quest and lootning 198964 Elementious Splinter from mobs?
-		q(72672),	-- Pop when I completed [70883] and choose 'Dragon Garden Shovel'.
+		q(72366),	-- triggered after completing 'Moving On' (66221)
+		q(72369),	-- triggered after completing 'Moving On' (66221)
+		-- q(72084),	-- Popped during Quest at South Gate?
+		-- q(70511),	-- Popped when doing quest and lootning 198964 Elementious Splinter from mobs?
+		-- q(72672),	-- Pop when I completed [70883] and choose 'Dragon Garden Shovel'.
 	}),
 }));
---]]

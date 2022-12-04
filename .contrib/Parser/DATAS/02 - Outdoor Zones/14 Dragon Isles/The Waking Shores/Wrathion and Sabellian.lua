@@ -42,6 +42,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 27.4, 60.8, THE_WAKING_SHORES },
 					}),
 				}),
+				q(66419, {	-- Allegiance To One
+					["coord"] = { 25.0, 56.2, THE_WAKING_SHORES },
+					["isWorldQuest"] = true,
+					["isWeekly"] = true,
+				}),
 				--[[
 				q(72456, {	-- Tomes Of Trust
 					["provider"] = { "n", 188344 },	-- Chydrass
@@ -85,11 +90,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 26.8, 62.5, THE_WAKING_SHORES },
 					["cost"] = { { "i", 191264, 1 }, },	-- 1xRestored Obsidian Key
 					["isDaily"] = true,
-				}),
-				q(66419, {	-- Allegiance To One
-					["coord"] = { 25.0, 56.2, THE_WAKING_SHORES },
-					["isWorldQuest"] = true,
-					["isWeekly"] = true,
 				}),
 				q(66133, {	-- Keys of Loyalty
 					["coord"] = { 27.9, 58.8, THE_WAKING_SHORES },

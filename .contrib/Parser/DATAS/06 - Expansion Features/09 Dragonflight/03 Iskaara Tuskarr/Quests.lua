@@ -14,6 +14,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 186448 },	-- Elder Poa
 				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 			}),
+			q(70940, {	-- Stolen Totems
+				["sourceQuests"] = { 70936 },	-- Stolen Tuskaar Totems
+				["provider"] = { "n", 186448 },	-- Elder Poa
+				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+				["cost"] = {{"i",200071,1}},	-- Sacred Tuskarr Totem
+				["repeatable"] = true,
+			}),
 				-- RENOWN 3 --
 			q(70938, {	-- Community Feasts
 				["description"] = "Requires Renown 3. Spawns Anywhere on Dragon Isles.",
@@ -48,6 +55,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(72291, {	-- Story of a Memorable Victory
 				--["description"] = "Requires Renown 5.",
+				["sourceQuests"] = { 70940 },	-- Tuskarr Champion's Tales
 				["provider"] = { "i", 201470 },	-- Story of a Memorable Victory
 			}),
 				-- RENOWN 6 --
@@ -63,6 +71,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 		}),
+		-- Maybe sub-header related items, maybe not
+		i(200071),	-- Sacred Tuskarr Totem
 	}),
 })));
 

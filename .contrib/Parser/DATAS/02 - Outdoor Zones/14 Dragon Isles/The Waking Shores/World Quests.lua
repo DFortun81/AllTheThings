@@ -4,6 +4,10 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
+
+			-- q(QUEST, {	-- NAME
+			-- 	-- ["coord"] = { XX, YY, THE_WAKING_SHORES }
+			-- }),
 			q(67062, {	-- Cascading Conflict
 				["coord"] = { 48.0, 52.2, THE_WAKING_SHORES },
 			}),
@@ -16,11 +20,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(70012, {	-- Protect the Nets!
 				["coord"] = { 55.6, 58.3, THE_WAKING_SHORES },
 			}),
+			q(70651, {	-- Stolen Luggage
+				["coord"] = { 61.6, 49.5, THE_WAKING_SHORES },
+			}),
 			petbattle(q(66588, {	-- Swog the Elder
 				["coord"] = { 25.6, 92.1, THE_WAKING_SHORES },
 			})),
 			q(69931, {	-- Swoop And Grab
 				["coord"] = { 53.4, 21.0, THE_WAKING_SHORES },
+			}),
+			q(67012, {	-- When Riverbeasts Fly
+				["coord"] = { 77.4, 48.4, THE_WAKING_SHORES },
 			}),
 			--[[
 			q(72030, {	-- Fishing Frenzy!
@@ -34,9 +44,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			q(70021, {	-- Tale of Tapionnuq
 				["coord"] = { 15.1, 91.3, THE_WAKING_SHORES },
-			}),
-			q(67012, {	-- When Riverbeasts Fly
-				["coord"] = { 77.4, 48.4, THE_WAKING_SHORES },
 			}),
 			--]]
 		})),

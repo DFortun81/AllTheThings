@@ -6799,7 +6799,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66405),	--
 			q(66407),	--
 			q(66408),	--
-			q(66419),	--
 			q(66424),	--
 			q(66433),	--
 			q(66434),	--
@@ -7040,7 +7039,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(67006),	--
 			q(67009),	--
 			q(67010),	--
-			q(67012),	--
 			q(67014),	--
 			q(67016),	--
 			q(67019),	--
@@ -7052,7 +7050,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(67026),	--
 			q(67028),	--
 			q(67029),	--
-			q(67030),	--
 			q(67037),	--
 			q(67040),	--
 			q(67042),	--
@@ -7204,7 +7201,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69987),	--
 			q(69988),	--
 			q(69989),	--
-			q(69990),	--
 			q(69991),	--
 			q(69993),	--
 			q(69994),	--
@@ -7243,15 +7239,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70047),	--
 			q(70056),	--
 			q(70057),	--
-			q(70064),	--
 			q(70065),	--
 			q(70066),	--
 			q(70067),	--
-			q(70068),	--
 			q(70071),	--
 			q(70072),	--
 			q(70073),	--
-			q(70074),	--
 			q(70075),	--
 			q(70076),	--
 			q(70077),	--
@@ -7309,7 +7302,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70145),	--
 			q(70146),	--
 			q(70147),	--
-			q(70149),	--
 			q(70150),	--
 			q(70151),	--
 			-- 10.0.0.44707
@@ -7319,7 +7311,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70160),	--
 			q(70165),	--
 			q(70172),	--
-			q(70176),	--
 			q(70177),	--
 			q(70205),	--
 			q(70208),	--
@@ -7453,7 +7444,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70428),	--
 			q(70429),	--
 			q(70430),	--
-			q(70431),	--
 			q(70432),	--
 			q(70433),	--
 			q(70434),	--
@@ -7525,7 +7515,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70610),	--
 			q(70611),	--
 			q(70612),	--
-			q(70623),	--
 			q(70625),	--
 			q(70626),	--
 			q(70628),	--
@@ -7541,9 +7530,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70639),	--
 			-- 10.0.0.44999
 			q(70645),	--
-			q(70646),	--
 			q(70649),	--
-			q(70651),	--
 			q(70652),	--
 			q(70653),	--
 			q(70654),	--
@@ -7557,7 +7544,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70662),	--
 			q(70698),	--
 			q(70699),	--
-			q(70712),	--
 			q(70718),	--
 			q(70720),	--
 			q(70724),	--
@@ -7646,7 +7632,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(71088),	--
 			q(71136),	--
 			q(71137),	--
-			q(71140),	--
 			q(71145),	--
 			-- 10.0.0.45335
 			q(70993),	--
@@ -7677,7 +7662,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(71201),	--
 			q(71202),	--
 			q(71203),	--
-			q(71205),	--
 			q(71206),	--
 			q(71212),	--
 			q(71214),	--
@@ -8086,7 +8070,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72018),	--
 			q(72019),	--
 			q(72020),	--
-			q(72022),	--
 			q(72028),	--
 			q(72029),	--
 			q(72030),	--
@@ -8286,7 +8269,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72580),	--
 			q(72583),	--
 			-- 10.0.2.46259
-			q(72596),	--
 			q(72612),	--
 			q(72613),	--
 			q(72614),	--
