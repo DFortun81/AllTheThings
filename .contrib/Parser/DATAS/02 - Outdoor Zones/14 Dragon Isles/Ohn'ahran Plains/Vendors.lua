@@ -59,10 +59,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(192818, {	-- Elder Yusa
-				["description"] = "Need to discover this npc. Please report to ATT-Discord.",
+				["description"] = "Target this NPC and /hungry emote. May have to do it twice- the first time she might emote back and not give you anything.",
 				["g"] = {
 					i(194965),	-- Recipe: Yusa's Hearty Stew (RECIPE!)
 				},
+				["coord"] = { 41.6, 62.2, OHNAHRAN_PLAINS },
 			}),
 		}),
 	}),
