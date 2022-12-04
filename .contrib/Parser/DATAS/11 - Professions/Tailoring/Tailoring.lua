@@ -5352,11 +5352,28 @@ profession(TAILORING, {
 	})),
 	applyclassicphase(DRAGONFLIGHT_PHASE_ONE, tier(DF_TIER, {
 		n(QUESTS, {
-			q(74115, {	-- Draconic Treatise on Tailoring
-				["provider"] = { "i", 194698 },		-- Draconic Treatise on Tailoring
+			i(194698, {		-- Draconic Treatise on Tailoring
+				["questID"] = 74115,
+			--	["provider"] = { "i", 194698 },		-- Draconic Treatise on Tailoring
 				["timeline"] = { "added 10.0.2." },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66386, {	-- Weekly Tailoring Skillpoint #1
+				["name"] = "Weekly Tailoring Skillpoint #1",
+				["provider"] = { "i", 193898 },		-- Umbral Bone Needle
+				["timeline"] = { "added 10.0.2." },
+				["isWeekly"] = true,
+				["description"] = "1 out of 3 Weekly Tailoring Knowledge Points.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66387, {	-- Weekly Tailoring Skillpoint #2
+				["name"] = "Weekly Tailoring Skillpoint #2",
+				["provider"] = { "i", 193899 },		-- Primalweave Spindle
+				["timeline"] = { "added 10.0.2." },
+				["isWeekly"] = true,
+				["description"] = "1 out of 3 Weekly Tailoring Knowledge Points.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
 		}),

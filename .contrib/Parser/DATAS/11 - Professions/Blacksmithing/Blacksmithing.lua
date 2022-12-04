@@ -6241,11 +6241,28 @@ profession(BLACKSMITHING, {
 	}))),
 	applyclassicphase(DRAGONFLIGHT_PHASE_ONE, tier(DF_TIER, {
 		n(QUESTS, {
-			q(74109, {	-- Draconic Treatise on Blacksmith
-				["provider"] = { "i", 198454 },		-- Draconic Treatise on Tailoring
+			i(198454, {		-- Draconic Treatise on Blacksmith
+				["questID"] = 74109,
+			--	["provider"] = { "i", 198454 },		-- Draconic Treatise on Blacksmith
 				["timeline"] = { "added 10.0.2." },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66381, {	-- Weekly Blacksmith Skillpoint #1
+				["name"] = "Weekly Blacksmith Skillpoint #1",
+				["provider"] = { "i", 192131 },		-- Valdrakken Weapon Chain
+				["timeline"] = { "added 10.0.2." },
+				["isWeekly"] = true,
+				["description"] = "1 out of 3 Weekly Blacksmith Knowledge Points.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66382, {	-- Weekly Blacksmith Skillpoint #2
+				["name"] = "Weekly Blacksmith Skillpoint #2",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { "added 10.0.2." },
+				["isWeekly"] = true,
+				["description"] = "1 out of 3 Weekly Blacksmith Knowledge Points.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
 		}),

@@ -80,16 +80,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(201396),	-- Hidepiercing Claw Extensions
 				i(201389),	-- Wingcrest Battle Staff
 				i(201395),	-- Wingcrest Scimitar
-				--
-				i(193902),	-- Eroded Titan Gizmo
-				i(193891),	-- Experimental Substance
-				i(193910),	-- Molted Dragon Scales
-				i(193904),	-- Phoenix Feather Quill
-				i(193913),	-- Preserved Animal Parts
-				i(193897),	-- Reawakened Catalyst
-				i(193898),	-- Umbral Bone Needle
-				i(192131),	-- Valdrakken Weapon Chain
-				i(193903),	-- Watcher Power Core
 
 				i(191384),	-- Aerated Mana Potion +
 				i(191393),	-- Potion of the Hushed Zephyr +

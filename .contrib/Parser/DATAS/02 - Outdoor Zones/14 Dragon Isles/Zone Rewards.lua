@@ -5,6 +5,28 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(ZONE_REWARDS, {
 		i(198058),	-- Titan Training Matrix III
 		i(194701),	-- Ominous Conch (Something for fishing thingy)
+		
+		-- Profession Weekly Items
+		-- Alchemy
+		-- Blacksmith 2/3
+		i(192131),	-- Valdrakken Weapon Chain
+		i(102132),	-- Draconium Blade Sharpener
+		
+		-- Enchanting 1/3
+		i(198968),	-- Primalist Charm
+		
+		i(193902),	-- Eroded Titan Gizmo
+		i(193891),	-- Experimental Substance
+		i(193910),	-- Molted Dragon Scales
+		i(193904),	-- Phoenix Feather Quill
+		i(193913),	-- Preserved Animal Parts
+		i(193897),	-- Reawakened Catalyst
+		-- Tailor 2/3
+		i(193899),	-- Primalweave Spindle
+		i(193898),	-- Umbral Bone Needle
+		
+		i(193903),	-- Watcher Power Core
+		
 		filter(CLOTH, {
 			i(191989),	-- Cobalt Watcher's Cord
 			i(191987),	-- Cobalt Watcher's Cowl

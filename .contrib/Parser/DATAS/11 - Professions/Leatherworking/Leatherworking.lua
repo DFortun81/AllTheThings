@@ -7698,8 +7698,9 @@ profession(LEATHERWORKING, {
 	})),
 	applyclassicphase(DRAGONFLIGHT_PHASE_ONE, tier(DF_TIER, {
 		n(QUESTS, {
-			q(74113, {	-- Draconic Treatise on Leatherworking
-				["provider"] = { "i", 194700 },		-- Draconic Treatise on Leatherworking
+			i(194700, {		-- Draconic Treatise on Leatherworking
+				["questID"] = 74113,
+			--	["provider"] = { "i", 194700 },		-- Draconic Treatise on Leatherworking
 				["timeline"] = { "added 10.0.2." },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
