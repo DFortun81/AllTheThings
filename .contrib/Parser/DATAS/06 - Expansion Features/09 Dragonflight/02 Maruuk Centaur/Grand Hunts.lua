@@ -32,6 +32,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(194099),	-- Shikaar Hunting Horn
 				i(194108),	-- Mighty Hunter's Horn
 
+				i(200468, {	-- Grant Hunt Spoils [Epic]
+					-- likely rewards various items from lower tiers as well, pls symlink until confirmed only source
+					["sym"] = {{"select","itemID",
+						194090,	-- Bakar Companion Color: White
+						193360,	-- Centaur's Trophy Necklace
+					}},
+				}),
+
 
 				i(193360),	-- Centaur's Trophy Necklace
 				i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)

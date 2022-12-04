@@ -12,6 +12,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					sp(388303),	-- Titan Relics
 				},
 			}),
+			q(70840, {	-- A Titan Relic
+				["provider"] = { "n", 195768 },	-- Sorotis
+				["coord"] = { 26, 40, VALDRAKKEN },
+				["cost"] = {{"i",199906,1}},	-- 1x Titan Relic
+				["repeatable"] = true,
+			}),
 			q(72282, {	-- Renown Supplies
 				["sourceQuest"] = 70839,	-- The Search for Titan Relics
 				["coord"] = { 26, 40, VALDRAKKEN },
@@ -84,5 +90,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(VALDRAKKEN_ACCORD, {
 		q(72669),	-- triggered with 'To Cook With Finery' (70880)
+		q(72673),	-- triggered with 'Aerial Challenges' (71227)
 	}),
 })));

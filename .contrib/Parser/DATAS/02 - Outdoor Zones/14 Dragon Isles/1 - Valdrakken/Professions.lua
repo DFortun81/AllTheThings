@@ -314,6 +314,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						r(384692),	-- Serevite Deposit
 					},
 				}),
+				q(72157, {	-- The Weight of Earth
+					["qg"] = 185553,	-- Sekita the Burrower
+					["coord"] = { 39.0, 51.8, VALDRAKKEN },
+					["cost"] = {{"i",190315,15}},	-- 15x Rousing Earth
+				}),
 			})),
 			prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINNING }, {
 				n(193846, {	-- Ralathor the Rugged <Skinning Trainer>

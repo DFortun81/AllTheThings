@@ -1254,27 +1254,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	}),
 })));
 
---[[
-root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
+		q(73701),	-- triggered during 'Unwelcome Outsider' (66021)
 		--
-		q(70141),	-- Triggered when killed Skaara
-		--
-		q(71240),	-- Triggered when killed Skaara/Prozela for Alex!!
-		--
-		q(69813),	-- Triggered when Prozela Killed
-		--
-		q(69834),	-- Triggered when Ripaw the Stalker is killed
-		--
-		q(70724),	-- Something to do with webbed Tuskaars 43.5 47.9?
+		-- q(70141),	-- Triggered when killed Skaara
+		-- --
+		-- q(71240),	-- Triggered when killed Skaara/Prozela for Alex!!
+		-- --
+		-- q(69813),	-- Triggered when Prozela Killed
+		-- --
+		-- q(69834),	-- Triggered when Ripaw the Stalker is killed
+		-- --
+		-- q(70724),	-- Something to do with webbed Tuskaars 43.5 47.9?
 
-		q(66887),	-- 	Choose Trophy from First Hunt (Renewal of Vows 66783)
-		q(66889),	-- 	Choose Eagle Feather (Renewal of Vows 66783)
-		q(66888),	-- 	Choose Blood (Renewal of Vows 66783)
+		-- q(66887),	-- 	Choose Trophy from First Hunt (Renewal of Vows 66783)
+		-- q(66889),	-- 	Choose Eagle Feather (Renewal of Vows 66783)
+		-- q(66888),	-- 	Choose Blood (Renewal of Vows 66783)
 
 		-- Has to do with the Chest Event In the South
 		--q(70511),	-- complete??
 		--q(71033),	-- Loot? Object (381981)
 	}),
-}));
---]]
+})))

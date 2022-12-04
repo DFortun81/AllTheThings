@@ -227,7 +227,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 56.7, 15.9, THE_AZURE_SPAN },
 			}),
 			ach(16073, {	-- Dragon Glyphs: Vakthros Range
-				["coord"] = { 77.6, 30.8, THE_AZURE_SPAN },
+				["coord"] = { 72.7, 39.1, THE_AZURE_SPAN },
 			}),
 			ach(16071, {	-- Dragon Glyphs: Zelthrak Outpost
 				["coord"] = { 52.9, 49.0, THE_AZURE_SPAN },

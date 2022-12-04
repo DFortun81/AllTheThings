@@ -902,7 +902,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197937),	-- Intricate Scaling Knife
 			i(197938),	-- Uktulut Whaling Spear
 			i(197940),	-- Hefty Iskaaran Anchor
-			i(197941),	-- Iskaaran Mystic's Tideshear
 			i(197942),	-- Tuskarr Navigator's Staff
 			i(197943),	-- Elder's Bioluminous Quarterstaff
 			i(197944),	-- Deepsea Hunter's Crossbow
