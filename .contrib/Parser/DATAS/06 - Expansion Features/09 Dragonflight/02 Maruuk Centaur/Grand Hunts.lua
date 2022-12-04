@@ -39,6 +39,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						193360,	-- Centaur's Trophy Necklace
 					}},
 				}),
+				i(200516, {	-- Grant Hunt Spoils [White]
+					-- likely rewards various items from lower tiers as well, pls symlink until confirmed only source
+					["sym"] = {{"select","itemID",
+					}},
+				}),
+				
 
 
 				i(193360),	-- Centaur's Trophy Necklace
@@ -52,4 +58,5 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	q(70908),	-- Quest to reward you with Reputation after each Stage
+	q(70907),	-- Hunt concluded/White Bag
 }));
