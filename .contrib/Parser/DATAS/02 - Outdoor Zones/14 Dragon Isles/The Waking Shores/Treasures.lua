@@ -30,6 +30,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			o(380654, {	-- Dead Man's Chestplate
 				["coord"] = { 69.3, 46.5, THE_WAKING_SHORES },
 				["questID"] = 70346,
+				["description"] = "This treasure will drop the corresponding chest piece for your armor class. Players will have to collect it four times total for all appearances.",
 				["g"] = {
 					crit(5, {	-- Dead Man's Chestplate
 						["achievementID"] = 16297,	-- Treasures of The Waking Shores
@@ -58,7 +59,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			o(375668, {	-- Misty Treasure Chest
-				["description"] = "Please Report to ATT-Discord if you find this treasure.",
+				["description"] = "Stand on the Handhold sticking out of the waterfall and walk forward to find this treasure (it's very hidden behind the water).",
 				["coord"] = { 58.6, 53.1, THE_WAKING_SHORES },
 				["questID"] = 65646,
 				["g"] = {
