@@ -1,18 +1,20 @@
 # AllTheThings
 
-## [DF-3.1.1](https://github.com/DFortun81/AllTheThings/tree/DF-3.1.1) (2022-12-02)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.1.0...DF-3.1.1) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.1.2](https://github.com/DFortun81/AllTheThings/tree/DF-3.1.2) (2022-12-04)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.1.1...DF-3.1.2) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
 ### Logic fixes
 
-- Fixed Lua error when opening Enchanting window.
+- Dragonflight content will be visible in `/attwq` now!
+- Fixed removed Lua function.
 
 ### Data fixes
 
-- Fixes to lots of Dragon Isles questlines.
-- Lots of profession fixes.
-- Readded Shadowlands PvP items that are now sold by vendors.
-- Updated Azshara.
-- Updated zhCN localization by @adavak.
+- Fixes to lots of Dragon Isles questlines, world quests, rares, treasures and achievements.
+- Lots of profession additions.
+- Fixes to Dragonflight dungeons/raid and added World Bosses.
+- Updates to many Faction/Renown specific activities (Grand Hunt, Iskaara fishing, etc).
+- Marked more Shadowlands content as removed.
+- Updated Mulgore, Durotar.
 - Other fixes.
