@@ -260,28 +260,26 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(194963),	-- Plans: Black Dragon Seared Alloy
 				},
 			}),
-			i(198454, {		-- Draconic Treatise on Blacksmith
-				["questID"] = 74109,
-			--	["provider"] = { "i", 198454 },		-- Draconic Treatise on Blacksmith
+			q(74109, {	-- Inscription-Order: Blacksmith
+				["name"] = "Inscription-Order: Blacksmith",
+				["provider"] = { "i", 198454 },		-- Draconic Treatise on Blacksmith
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(66381, {	-- Weekly Blacksmith Skillpoint #1
-				["name"] = "Weekly Blacksmith Skillpoint #1",
+			q(66381, {	-- Weekly Blacksmith Knowledgepoint #1
+				["name"] = "Weekly Blacksmith Knowledgepoint #1",
 				["provider"] = { "i", 192131 },		-- Valdrakken Weapon Chain
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["description"] = "1 out of 3 Weekly Blacksmith Knowledge Points.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Blacksmith Skillpoint #2
-				["name"] = "Weekly Blacksmith Skillpoint #2",
+			q(66382, {	-- Weekly Blacksmith Knowledgepoint #2
+				["name"] = "Weekly Blacksmith Knowledgepoint #2",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["description"] = "1 out of 3 Weekly Blacksmith Knowledge Points.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
 		}),
@@ -344,35 +342,33 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 				["cost"] = { { "i", 201601, 2 }, },	-- 2xRuned Serevite Rod
 			}),
-			q(74110, {		-- Draconic Treatise on Enchanting
+			q(74110, {	-- Inscription-Order: Enchanting
+				["name"] = "Inscription-Order: Enchanting",
 				["provider"] = { "i", 194702 },		-- Draconic Treatise on Enchanting
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(70515, {	-- Weekly Enchanting Skillpoint #1
-				["name"] = "Weekly Enchanting Skillpoint #1",
+			q(70515, {	-- Weekly Enchanting Knowledgepoint #1
+				["name"] = "Weekly Enchanting Knowledgepoint #1",
 				["provider"] = { "i", 198968 },		-- Primalist Charm
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["description"] = "1 out of 3 Weekly Tailoring Knowledge Points.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(66377, {	-- Weekly Enchanting Skillpoint #2
-				["name"] = "Weekly Enchanting Skillpoint #2",
+			q(66377, {	-- Weekly Enchanting Knowledgepoint #2
+				["name"] = "Weekly Enchanting Knowledgepoint #2",
 				["provider"] = { "i", 193900 },		-- Prismatic Focusing Shard
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["description"] = "1 out of 3 Weekly Tailoring Knowledge Points.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(66378, {	-- Weekly Enchanting Skillpoint #3
-				["name"] = "Weekly Enchanting Skillpoint #3",
+			q(66378, {	-- Weekly Enchanting Knowledgepoint #3
+				["name"] = "Weekly Enchanting Knowledgepoint #3",
 				["provider"] = { "i", 193901 },		-- Primal Dust
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["description"] = "1 out of 3 Weekly Tailoring Knowledge Points.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
 		}),
@@ -410,7 +406,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 190535 },	-- Quizla Blastcaps
 				["coord"] = { 75.9, 33.2, THE_WAKING_SHORES },
 			}),
-			q(74111, {	-- Draconic Treatise on Engineering
+			q(74111, {	-- Inscription-Order: Engineering
+				["name"] = "Inscription-Order: Engineering",
 				["provider"] = { "i", 198510 },		-- Draconic Treatise on Engineering
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
@@ -452,9 +449,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 192549 },	-- Feilin Kuan
 				["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
 			}),
-			i(194704, {		-- Draconic Treatise on Herbalism
-				["questID"] = 74107,
-			--	["provider"] = { "i", 194704 },		-- Draconic Treatise on Herbalism
+			q(74107, {	-- Inscription-Order: Herbalism
+				["name"] = "Inscription-Order: Engineering",
+				["provider"] = { "i", 194704 },		-- Draconic Treatise on Herbalism
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
@@ -495,9 +492,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 198380 },	-- Journalist Jessamine Spitz
 				["coord"] = { 76.1, 35.5, THE_WAKING_SHORES },
 			}),
-			i(194699, {		-- Draconic Treatise on Inscription
-				["questID"] = 74105,
-			--	["provider"] = { "i", 194699 },		-- Draconic Treatise on Inscription
+			q(74105, {	-- Inscription-Order: Inscription
+				["name"] = "Inscription-Order: Inscription",
+				["provider"] = { "i", 194699 },		-- Draconic Treatise on Inscription
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
@@ -564,15 +561,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(192845),	-- Vibrant Emerald+++
 				},
 			}),
-			q(74112, {	-- Draconic Treatise on Jewelcrafting
+			q(74112, {	-- Inscription-Order: Jewelcrafting
+				["name"] = "Inscription-Order: Jewelcrafting",
 				["provider"] = { "i", 194703 },		-- Draconic Treatise on Jewelcrafting
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(70520, {	-- Weekly Jewelcrafting Skillpoint #1
-				["name"] = "Weekly Jewelcrafting Skillpoint #1",
+			q(70520, {	-- Weekly Jewelcrafting Knowledgepoint #1
+				["name"] = "Weekly Jewelcrafting Knowledgepoint #1",
 				["provider"] = { "i", 198973 },		-- Incandescent Curio
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
@@ -637,12 +635,31 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			i(194700, {		-- Draconic Treatise on Leatherworking
-				["questID"] = 74113,
-			--	["provider"] = { "i", 194700 },		-- Draconic Treatise on Leatherworking
+			q(74113, {	-- Inscription-Order: Leatherworking
+				["name"] = "Inscription-Order: Leatherworking",
+				["provider"] = { "i", 194700 },		-- Draconic Treatise on Leatherworking
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(70308, {	-- Poachers Pack
+				["name"] = "Poachers Pack",
+				["provider"] = { "i", 198711 },		-- Poachers Pack
+				["timeline"] = { ADDED_DF_REL },
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(70523, {	-- Weekly Leatherworking Knowledgepoint #1
+				["name"] = "Weekly Leatherworking Knowledgepoint #1",
+				["provider"] = { "i", 198976 },		-- Exceedingly Soft Skin
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(70269, {	-- Well-Danced Drum
+				["name"] = "Well-Danced Drum",
+				["provider"] = { "i", 201018 },		-- Well-Danced Drum
+				["timeline"] = { ADDED_DF_REL },
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
 		}),
@@ -672,9 +689,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190394),	-- Tyrivite Ore+++
 				}
 			}),
-			i(194708, {		-- Draconic Treatise on Mining
-				["questID"] = 74106,
-			--	["provider"] = { "i", 194708 },		-- Draconic Treatise on Mining
+			q(74106, {		-- Inscription-Order: Mining
+				["name"] = "Inscription-Order: Mining",
+				["provider"] = { "i", 194708 },		-- Draconic Treatise on Mining
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
@@ -759,28 +776,41 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 61.4, 70.0, THE_WAKING_SHORES },
 				["cost"] = { { "i", 193497, 1 }, },	-- 2xSurveyor's Cloth Bands
 			}),
-			i(194698, {		-- Draconic Treatise on Tailoring
-				["questID"] = 74115,
-			--	["provider"] = { "i", 194698 },		-- Draconic Treatise on Tailoring
+			q(70260, {	-- Hidden Profession Master Tailoring
+				["name"] = "Hidden Profession Master: Tailoring",
+				["provider"] = { "n", 194845 },		-- Elysa Raywinder
+				["coord"] = { 27.9,45.6, VALDRAKKEN },
+				["timeline"] = { ADDED_DF_REL },
+				["description"] = "Above the Rostrum of Transformation, on a ledge.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(74115, {		-- Inscription-Order: Tailoring
+				["name"] = "Inscription-Order: Tailoring",
+				["provider"] = { "i", 194698 },		-- Draconic Treatise on Tailoring
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(66386, {	-- Weekly Tailoring Skillpoint #1
-				["name"] = "Weekly Tailoring Skillpoint #1",
+			q(66386, {	-- Weekly Tailoring Knowledgepoint #1
+				["name"] = "Weekly Tailoring Knowledgepoint #1",
 				["provider"] = { "i", 193898 },		-- Umbral Bone Needle
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["description"] = "1 out of 3 Weekly Tailoring Knowledge Points.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(66387, {	-- Weekly Tailoring Skillpoint #2
-				["name"] = "Weekly Tailoring Skillpoint #2",
+			q(66387, {	-- Weekly Tailoring Knowledgepoint #2
+				["name"] = "Weekly Tailoring Knowledgepoint #2",
 				["provider"] = { "i", 193899 },		-- Primalweave Spindle
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["description"] = "1 out of 3 Weekly Tailoring Knowledge Points.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(70524, {	-- Weekly Tailoring Knowledgepoint #3
+				["name"] = "Weekly Tailoring Knowledgepoint #3",
+				["provider"] = { "i", 198977 },		-- Ohn'arhan Weave
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
 		}),
