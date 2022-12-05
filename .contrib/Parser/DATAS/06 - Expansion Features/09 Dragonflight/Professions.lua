@@ -214,6 +214,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(191462),	-- Hochenblume+++
 				},
 			}),
+			--[[ Missing quest ID
+			q(70251, {	-- Hidden Profession Master Alchemy
+				["name"] = "Hidden Profession Master: Alchemy",
+				["provider"] = { "n", 194829 },		-- Grigori Vialtry
+				["coord"] = { 60.9, 75.8, THE_WAKING_SHORE },
+				["timeline"] = { ADDED_DF_REL },
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			--]]
 		}),
 		prof(BLACKSMITHING, {
 			filter(RECIPES, {
@@ -260,6 +269,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(194963),	-- Plans: Black Dragon Seared Alloy
 				},
 			}),
+			--[[ Missing quest ID
+			q(70251, {	-- Hidden Profession Master Blacksmith
+				["name"] = "Hidden Profession Master: Blacksmith",
+				["provider"] = { "n", 194836 },		-- Grekka Anvilsmash
+				["coord"] = { 43.2, 66.6, THE_WAKING_SHORE },
+				["timeline"] = { ADDED_DF_REL },
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			--]]
 			q(74109, {	-- Inscription-Order: Blacksmith
 				["name"] = "Inscription-Order: Blacksmith",
 				["provider"] = { "i", 198454 },		-- Draconic Treatise on Blacksmith
@@ -477,6 +495,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 192549 },	-- Feilin Kuan
 				["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
 			}),
+			--[[ Missing quest ID
+			q(70251, {	-- Hidden Profession Master Herbalism
+				["name"] = "Hidden Profession Master: Herbalism",
+				["provider"] = { "n", 194839 },		-- Hua Greenpaw
+				["coord"] = { 58.4, 50.0, OHNAHRAN_PLAINS },
+				["timeline"] = { ADDED_DF_REL },
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			--]]
 			q(74107, {	-- Inscription-Order: Herbalism
 				["name"] = "Inscription-Order: Engineering",
 				["provider"] = { "i", 194704 },		-- Draconic Treatise on Herbalism
@@ -520,6 +547,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 198380 },	-- Journalist Jessamine Spitz
 				["coord"] = { 76.1, 35.5, THE_WAKING_SHORES },
 			}),
+			--[[ Missing quest ID
+			q(70251, {	-- Hidden Profession Master Inscription
+				["name"] = "Hidden Profession Master: Inscription",
+				["provider"] = { "n", 194840 },		-- Lydiara Whisperfeather
+				["coord"] = { 40.2, 54.3, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_DF_REL },
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			--]]
 			q(74105, {	-- Inscription-Order: Inscription
 				["name"] = "Inscription-Order: Inscription",
 				["provider"] = { "i", 194699 },		-- Draconic Treatise on Inscription
@@ -603,6 +639,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(192845),	-- Vibrant Emerald+++
 				},
 			}),
+			--[[ Missing quest ID
+			q(70251, {	-- Hidden Profession Master Jewelcrafting
+				["name"] = "Hidden Profession Master: Jewelcrafting",
+				["provider"] = { "n", 194841 },		-- Pluutar
+				["coord"] = { 46.2, 40.8, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_DF_REL },
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			--]]
 			q(74112, {	-- Inscription-Order: Jewelcrafting
 				["name"] = "Inscription-Order: Jewelcrafting",
 				["provider"] = { "i", 194703 },		-- Draconic Treatise on Jewelcrafting
@@ -677,6 +722,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			--[[ Missing quest ID
+			q(70251, {	-- Hidden Profession Master Leatherworking
+				["name"] = "Hidden Profession Master: Leatherworking",
+				["provider"] = { "n", 194842 },		-- Erden
+				["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
+				["timeline"] = { ADDED_DF_REL },
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			--]]
 			q(74113, {	-- Inscription-Order: Leatherworking
 				["name"] = "Inscription-Order: Leatherworking",
 				["provider"] = { "i", 194700 },		-- Draconic Treatise on Leatherworking
@@ -731,6 +785,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190394),	-- Tyrivite Ore+++
 				}
 			}),
+			--[[ Missing quest ID
+			q(70251, {	-- Hidden Profession Master Mining
+				["name"] = "Hidden Profession Master: Mining",
+				["provider"] = { "n", 194843 },		-- Bridgette Holdug
+				["coord"] = { 61.4, 76.9, THALDRASZUS },
+				["timeline"] = { ADDED_DF_REL },
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			--]]
 			q(74106, {		-- Inscription-Order: Mining
 				["name"] = "Inscription-Order: Mining",
 				["provider"] = { "i", 194708 },		-- Draconic Treatise on Mining
@@ -775,11 +838,20 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			q(70193, { -- Specialized Secrets: Skinning
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["coord"] = { 51.7, 73.3, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			--[[ Missing quest ID
+			q(70251, {	-- Hidden Profession Master Skinning
+				["name"] = "Hidden Profession Master: Skinning",
+				["provider"] = { "n", 194844 },		-- Zenzi
+				["coord"] = { 73.3, 69.7, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_DF_REL },
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			--]]
 		}),
 		prof(TAILORING, {
 			filter(RECIPES, {
