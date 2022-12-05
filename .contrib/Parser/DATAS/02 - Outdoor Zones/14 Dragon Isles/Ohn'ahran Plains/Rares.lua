@@ -27,8 +27,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(192020, {	-- Eaglemaster Niraak
 				["coord"] = { 49.5, 67.0, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["questID"] = 74063,
 				["g"] = {
+					i(200536),	-- Tamed Eagle
 					i(197367),	-- Renewed Proto-Drake: Gray Hair (DM!)
 				},
 			}),
@@ -64,6 +65,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["description"] = "Cave Entrance: 79.2, 36.6.",
 				["coord"] = { 80.5, 37.8, OHNAHRAN_PLAINS },
 				-- ["questID"] = 66356,
+				-- ["g"] = {
+
+				-- },
+			}),
+			n(194438, {	-- Khomuur
+				["coord"] = { 50.6, 50.0, OHNAHRAN_PLAINS },
+				["questID"] = 73921,
 				-- ["g"] = {
 
 				-- },
@@ -155,9 +163,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193153, {	-- Ripsaw the Stalker
 				["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
-				-- ["questID"] = 69851,
+				["questID"] = 72845,
 				["g"] = {
 					i(200137),	-- Chitin Dreadbringer
+					i(197111),	-- Highland Drake: Maned Head (DM!)
 				},
 			}),
 			n(195223, {	-- Rustlily <Nimblewing Matriarch>
@@ -166,6 +175,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- ["g"] = {
 
 				-- },
+			}),
+			n(190161, {	-- Sarana
+				["coord"] = { 85.4, 15.6, OHNAHRAN_PLAINS },
+				["questID"] = 73932,
+				["g"] = {
+					i(200440),	-- Helm of Feline Instinct
+				},
 			}),
 			n(193215, {	-- Scaleseeker Mezeri
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
@@ -242,7 +258,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193163, {	-- Territorial Coastling
 				["coord"] = { 22.7, 67.6, OHNAHRAN_PLAINS },
-				-- ["questID"] = 69852,
+				["questID"] = 72851,
 				["g"] = {
 					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
 					i(200212),	-- Sand-Encrusted Graves
@@ -299,10 +315,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(192045, {	-- Windseeker Avash
 				["coord"] = { 58.6, 68.2, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
+				["questID"] = 74088,
+				["g"] = {
+					i(200141),	-- Wind Generating Band
+				},
 			}),
 			n(193209, {	-- Zenet Avis <The Hard Wind>
 				["coord"] = { 31.5, 64.0, OHNAHRAN_PLAINS },

@@ -2483,6 +2483,7 @@ _.ObjectNames = {
 	[377458] = "Abandoned Weapon Rack",
 	[377466] = "Lost Draconic Hourglass",
 	[377499] = "On the Origin of Draconic Species",
+	[377534] = "Delivered Vault",
 	[377899] = "Hidden Hornswog Hostage",
 	[377900] = "Nokhud Warspear",
 	[379290] = "Ornamented Statue",

@@ -996,7 +996,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			--]]]]
+			--]]
 			--[[q(66382, {	-- Weekly Skinning Knowledgepoint #1
 				["name"] = "Weekly Skinning Knowledgepoint #1",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener

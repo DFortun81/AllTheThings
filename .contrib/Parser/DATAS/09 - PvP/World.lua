@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 root("PVP", pvp(n(-10058, {	-- World
-	tier(DF_TIER, {
+	tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		n(ACHIEVEMENTS, {
 			ach(16590, {	-- A Champion's Tour: Dragon Isles
 				crit(1, {	-- How to Train a Proto-Drake
@@ -35,8 +35,9 @@ root("PVP", pvp(n(-10058, {	-- World
 			}),
 		}),
 		currency(2123),	-- Bloody Tokens
+		i(201756),	-- Bulging Coin Purse
 		i(202184),	-- Trophy of Strife
-	}),
+	})),
 	n(QUESTS, {
 		q(58274, bubbleDownSelf({["timeline"] = { "added 8.3.0.33062", "removed 9.0.5" } },{	-- Servant of N'Zoth
 			["races"] = ALLIANCE_ONLY,
@@ -81,4 +82,11 @@ root("PVP", pvp(n(-10058, {	-- World
 	n(-488,	{	-- War Chest
 		["description"] = "Contains Dread Aspirant Gear if you are Level 10-49 and Sinister Aspirant Gear at Level 50.",
 	}),
+})));
+
+root("PVP", pvp(n(-10058, {	-- World
+	tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+		q(72376),	-- looting first War Crate of the day (Waking Shores)
+		q(72377),	-- looting first War Crate of the day (Waking Shores)
+	})),
 })));

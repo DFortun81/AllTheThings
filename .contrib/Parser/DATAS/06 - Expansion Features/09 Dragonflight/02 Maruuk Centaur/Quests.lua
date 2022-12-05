@@ -94,6 +94,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
 			}),
+			-- RENOWN 10 --
+			q(71028, {	-- Hunting Tactics: Blessing of Ohn'ahra
+				["description"] = "Requires Renown 10.",
+				["provider"] = { "n", 192926 },	-- Trainer Frodrum
+				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
+			}),
+
 			-- RENOWN 11 --
 			q(71066, {	-- A Useful Curiosity
 				["description"] = "Requires Renown 11.",

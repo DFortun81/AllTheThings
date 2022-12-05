@@ -175,6 +175,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 
 			-- Weekly
+			-- 71243 / 72892 also likely possible weekly quests. completed with all of the other below
 			q(70750, {	-- Aiding the Accord
 				["sourceQuests"] = { 71232 },	-- Renown of the Dragon Isles
 				["provider"] = { "n", 196499 },	-- Therazal

@@ -89,11 +89,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(380859, {	-- Tuskarr Toy Boat
 				["coord"] = { 52.0, 58.3, OHNAHRAN_PLAINS },
-				-- ["questID"] = 70400,
+				["questID"] = 70400,
 				["g"] = {
-					crit(6, {	-- Tuskarr Toy Boat
-						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
-					}),
 					i(200876),	-- Yennu's Toy Boat
 				},
 			}),

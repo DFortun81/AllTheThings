@@ -53,6 +53,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200757),	-- Qalashi War-Helm
 				},
 			}),
+			n(194251, {	-- Degmakh
+				["coord"] = { 41.0, 84.6, THE_WAKING_SHORES },
+				["questID"] = 73911,
+			}),
 			n(191611, {	-- Dragonhunter Igordan
 				["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
 				["questID"] = 72838,
@@ -92,6 +96,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73073,
 				["g"] = {
 					i(200858),	-- Plume of the Forgotten
+				},
+			}),
+			n(194240, {	-- Gamgus
+				["coord"] = { 37.6, 76.8, THE_WAKING_SHORES },
+				["questID"] = 73917,
+				["g"] = {
+					i(200858),	-- Plume of the Forgotten
+					i(200247),	-- Inextinguishable Gavel
 				},
 			}),
 			n(193226, {	-- Gorjo the Crab Shackler

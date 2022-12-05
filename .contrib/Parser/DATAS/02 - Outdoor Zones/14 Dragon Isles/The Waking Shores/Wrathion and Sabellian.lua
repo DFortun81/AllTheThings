@@ -34,6 +34,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(QUESTS, {
 				q(66133, {	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["coord"] = { 27.9, 58.8, THE_WAKING_SHORES },
 					["isWorldQuest"] = true,
 					["isWeekly"] = true,
@@ -46,47 +47,39 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 187284 },	-- Wrathion
 					["coord"] = { 26.8, 62.5, THE_WAKING_SHORES },
 					["cost"] = { { "i", 191255, 1 }, },	-- 1x Greater Obsidian Key
-				}),
-				q(65840, {	-- Same as the Old Boss
-					["description"] = "Visible only via The Worldbreaker title.",
-					["provider"] = { "n", 191310 },	-- Doventhal the Chosen
-					["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
 					["isWeekly"] = true,
-					["g"] = {
-						i(202173),	-- Magmote
-					},
 				}),
 				q(66126, {	-- Unlocking Our Past
 					["provider"] = { "n", 187272 },	-- Forgemaster Bazentus
 					["coord"] = { 24.9, 61.0, THE_WAKING_SHORES },
+					["cost"] = { { "i", 191264, 1 }, },	-- 1x Restored Obsidian Key
 					["repeatable"] = true,
 					["g"] = {
-						i(201818, {	-- Twilight Strongbox
-							i(199215),	-- Worldbreaker Membership
-							i(202173),	-- Magmote
-						}),
-						i(200069, {	-- Obsidian Cache
-						}),
+						i(201755),	-- Obsidian Forgemaster's Strongbox
+						i(201754),	-- Obsidian Forgemaster's Cache
 					},
 				}),
 				q(66129, {	-- Unlocking Our Past
 					["provider"] = { "n", 187275 },	-- Igys the Believer
 					["coord"] = { 32.3,52.4, THE_WAKING_SHORES },
+					["cost"] = { { "i", 191264, 1 }, },	-- 1x Restored Obsidian Key
 					["repeatable"] = true,
 					["g"] = {
 						i(201818, {	-- Twilight Strongbox
 							i(199215),	-- Worldbreaker Membership
 							i(202173),	-- Magmote
 						}),
-						i(200069, {	-- Obsidian Cache
+						i(201817, {	-- Twilight Cache
+							i(199215),	-- Worldbreaker Membership
+							i(202173),	-- Magmote
 						}),
 					},
 				}),
 				q(66130, {	-- Unlocking our Past
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuests"] = { 72337 },	-- Greater Obsidian Key
 					["provider"] = { "n", 187284 },	-- Wrathion
 					["coord"] = { 26.8, 62.5, THE_WAKING_SHORES },
-					["cost"] = { { "i", 191264, 1 }, },	-- 1xRestored Obsidian Key
+					["cost"] = { { "i", 191264, 1 }, },	-- 1x Restored Obsidian Key
 					["repeatable"] = true,
 					["g"] = {
 						i(200069, {	-- Obsidian Cache
@@ -96,7 +89,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(66131, {	-- Unlocking Our Past
 					["provider"] = { "n", 187447 },	-- Sabellian
 					["coord"] = { 27.6, 56.5, THE_WAKING_SHORES },
-					["cost"] = { { "i", 191264, 1 }, },	-- 1xRestored Obsidian Key
+					["cost"] = { { "i", 191264, 1 }, },	-- 1x Restored Obsidian Key
 					["repeatable"] = true,
 					["g"] = {
 						i(200069, {	-- Obsidian Cache
@@ -125,6 +118,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(66103, {	-- Eager to Please
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+					-- sym zone rewards?
 				}),
 				q(69983, {	-- Flamecarved Bone
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
@@ -145,12 +140,21 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 188179 },	-- Stoker Volrax
 					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
 					["isDaily"] = true,
-					["sourceQuest"] = 66359,
+					["sourceQuest"] = 66359,	-- First Completion of 'Unlocking our Past' (Forgemaster Bazentus)
 				}),
 				q(66882, {	-- Lost Battlepack
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 					["provider"] = { "i", 193600 },	-- Lost Battlepack
 					["isDaily"] = true,
+				}),
+				q(65840, {	-- Same as the Old Boss
+					["sourceQuest"] = 66362,	-- First Completion of 'Unlocking our Past' (Igys the Believer)
+					["provider"] = { "n", 191310 },	-- Doventhal the Chosen
+					["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+					["g"] = {
+						i(202173),	-- Magmote
+					},
 				}),
 				q(72456, {	-- Tomes Of Trust
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
@@ -182,9 +186,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 26.6, 62.5, THE_WAKING_SHORES },
 					["isDaily"] = true,
 				}),
-				q(67015, {	-- Forging the Answer
-				}),
-
 				--]]
 				n(HIDDEN_QUESTS, {
 					q(66362, { ["name"] = "First Completion of 'Unlocking our Past' (Igys the Believer)",
@@ -193,6 +194,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					q(66359, { ["name"] = "First Completion of 'Unlocking our Past' (Forgemaster Bazentus)",
 						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 					}),
+					-- not sure if HQT these or Hidden Quests, maybe after knowing better what they represent
+					-- 64277 - accepted Keys of Loyalty after choosing Wrathion
+					-- 66802 - accepted Keys of Loyalty after choosing Wrathion
 				}),
 			}),
 			n(RARES, {
@@ -255,20 +259,21 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				n(187598, {	-- Rohzor Forgesmash <Djaradin Smithmaster>
 					-- ["coord"] = { 25.3, 60.3, THE_WAKING_SHORES },
-					-- ["questID"] = ,
+					["questID"] = 74052,
 					["g"] = {
 						i(194503),	-- Plans: Black Dragon Touched Hammer (RECIPE!)
+						i(200169),	-- Protector's Molten Cudgel
 						i(200757),	-- Qalashi War-Helm
 					},
 				}),
 				n(190971, {	-- Shas'ith
 					["description"] = "Restore 20 Obsidian Keys to Wrathion. Underground",
 					["coord"] = { 24.5, 57.8, THE_WAKING_SHORES },
-					-- ["questID"] = 66903, --??
+					["questID"] = 74077,
 					["cost"] = { { "i", 191264, 20 }, },	-- 20xRestored Obsidian Key
-					-- ["g"] = {
-
-					-- },
+					["g"] = {
+						i(200195),	-- Thunderscale Legguards
+					},
 				}),
 				n(187886, {	-- Turboris
 					["coord"] = { 33.6, 55.7, THE_WAKING_SHORES },
@@ -284,6 +289,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					-- ["g"] = {
 
 					-- },
+				}),
+			}),
+			n(TREASURES, {
+				o(377534, {	-- Delivered Vault
+					["questID"] = 73223,
+					["coord"] = { 24.8, 60.5, THE_WAKING_SHORES },
 				}),
 			}),
 			n(VENDORS, {
@@ -594,6 +605,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					-- ["cr"] = creature,	-- name
 				}),
 				i(191255, {	-- Greater Obsidian Key
+					["description"] = "This Item will be deleted immediately if leaving the area!",
+					["cost"] = {
+						{"i",191251,30},	-- 30x Key Fragment
+						{"i",193201, 3},	-- 3x Key Framing
+					},
+				}),
+				i(191264, {	-- Restored Obsidian Key
+					["description"] = "This Item will be deleted immediately if leaving the area!",
 					["cost"] = {
 						{"i",191251,30},	-- 30x Key Fragment
 						{"i",193201, 3},	-- 3x Key Framing

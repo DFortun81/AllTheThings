@@ -676,8 +676,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["achievementID"] = 16398,	-- Sojourner of Thaldraszus
 				["collectible"] = false,
 				["g"] = {
+					q(72189, {	-- Garden Variety
+						-- ["sourceQuests"] = {  },	--
+						["provider"] = { "n", 189364 },	-- Tender Xina
+						["coord"] = { 77.4, 67.3, VALDRAKKEN },
+						["isBreadcrumb"] = true,	-- unconfirmed
+					}),
 					q(66134, {	-- Azeroth Pest Control
-						--["sourceQuests"] = {},
+						["sourceQuests"] = { 72189 },	-- Garden Variety
 						["provider"] = { "n", 187300 },	-- Gryrmpech
 						["coord"] = { 37.9, 75.4, THALDRASZUS },
 					}),
@@ -747,6 +753,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 66244 },	-- To Valdrakken
 						["provider"] = { "n", 198349 },	-- Talikka
 						["coord"] = { 25.5, 40.9, VALDRAKKEN },
+						["isBreadcrumb"] = true,	-- unconfirmed
 					}),
 					q(65913, {	-- Wotcher, Watcher?
 						["sourceQuests"] = { 72190 },	-- Reservoir Reservations

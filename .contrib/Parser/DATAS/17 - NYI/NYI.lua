@@ -407,8 +407,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200230),	-- Terrorclaw Shoulderplates
 			i(200243),	-- Titanic Scholar's Finery
 			i(200251),	-- Medallion of the Ancestors
-			i(200261),	-- White Chitin Bands
-			i(200267),	-- Reinforced Garden Tenders
+			i(200261),	-- White Chitin Bandages
 			i(200279),	-- Competitive Throwing Gauntlets
 			i(200280),	-- Decaying Ghostly Band
 			i(200284),	-- Phoenix Feather Pendant
@@ -426,12 +425,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200435),	-- Brackish Breeches
 			i(200436),	-- Gorestained Hauberk
 			i(200438),	-- Surcoat of the Chastigator
-			i(200440),	-- Helm of Feline Instinct
 			i(200441),	-- Jhakan's Horned Cowl
 			i(200444),	-- Mantle of the Gatekeeper
 			i(200446),	-- Crystalized Sigil
 			i(200448),	-- Abyssal Ward
-			i(200536),	-- Tamed Eagle
 			i(200542),	-- Breezy Companion
 			i(200549),	-- Restored Titan Artifact
 			i(200679),	-- Essence of Somnikus's Shade
@@ -892,7 +889,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197944),	-- Deepsea Hunter's Crossbow
 			i(197945),	-- Gnarled Thorn Bow
 			i(197953),	-- Ancient Protector's Broadsword
-			i(197954),	-- Stonewatcher's Buckler
 			i(197955),	-- Sword of the Eternal Guard
 			i(197956),	-- Empowered Shortsword of Insight
 			i(197957),	-- Timeless Watcher's Saber
@@ -916,7 +912,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200136),	-- Monsoonic Armguards
 			i(200138),	-- Ancient Dancer's Longspear
 			i(200139),	-- Tempest Arc
-			i(200141),	-- Wind Generating Band
 			i(200145),	-- Hilted Monolith
 			i(200147),	-- Web-Woven Robe
 			i(200151),	-- Seamist Blade
@@ -1172,7 +1167,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200287),	-- Iskaara Tuskarr Insignia
 			i(200288),	-- Maruuk Centaur Insignia
 			i(200289),	-- Valdrakken Accord Insignia
-			i(200070),	-- Obsidian Strongbox
 			i(200094),	-- Caravan Strongbox
 			i(200184),	-- Nokhud Battle Helm
 			i(200194),	-- Nokhud Battle Tunic
@@ -1188,8 +1182,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200453),	-- Iskaara Tuskarr Insignia
 			i(200454),	-- Maruuk Centaur Insignia
 			i(200455),	-- Valdrakken Accord Insignia
-			i(200513),	-- Grand Hunt Spoils
-			i(200515),	-- Grand Hunt Spoils
 			i(200609),	-- Dragon Racing Purse - First Place
 			i(200610),	-- Dragon Racing Purse - Second Place
 			i(200611),	-- Dragon Racing Purse - Third Place
@@ -1198,11 +1190,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201362),	-- Fated Equipment Chest
 			i(201439),	-- Renewed Dream
 			i(201728),	-- Vakril's Strongbox
-			i(201754),	-- Obsidian Forgemaster's Cache
-			i(201755),	-- Obsidian Forgemaster's Strongbox
-			i(201756),	-- Bulging Coin Purse
 			i(201757),	-- Plundered Supplies
-			i(201817),	-- Twilight Cache
 			i(201836),	-- Valdrakken Token of Merit
 			i(201841),	-- Ensemble: Cosmic Aspirant's Plate Armor
 			i(201842),	-- Ensemble: Cosmic Aspirant's Mail Armor

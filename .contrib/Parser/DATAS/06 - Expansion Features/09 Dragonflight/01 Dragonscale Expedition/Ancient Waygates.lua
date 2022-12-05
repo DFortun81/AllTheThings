@@ -57,6 +57,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 48.6, 30.3, THE_AZURE_SPAN },
 					["g"] = {
 						ach(16291),	-- An Ancient Awakening
+						i(198858),	-- Energized Arcana Vessel
 					},
 				}),
 					-- RENOWN 8 --

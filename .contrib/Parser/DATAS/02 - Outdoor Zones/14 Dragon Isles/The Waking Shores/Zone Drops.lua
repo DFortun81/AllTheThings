@@ -48,12 +48,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(193874, {	-- Qalashi Plans
 				["cr"] = 186777,	-- Meatgrinder Sotok
 			}),
-			i(191264, {	-- Restored Obsidian Key
-				["cost"] = {
-					{ "i", 193201, 3 },		-- 3xKey Framing
-					{ "i", 191251, 30 },	-- 30xKey Fragments
-				},
-			}),
 			i(198357),	-- Rock of Aegis
 			i(201991, {	-- Sargh's Signet
 				["description"] = "Drops from mobs around the Obsidian Citadel.",

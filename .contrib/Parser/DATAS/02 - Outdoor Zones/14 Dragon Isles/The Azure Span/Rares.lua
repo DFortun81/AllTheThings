@@ -49,6 +49,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(197353, {	-- Blisterhide <The Infested>
 				["coord"] = { 14.5, 31.1, THE_AZURE_SPAN },
 				["questID"] = 73985,
+				["isDaily"] = true,
 				-- ["g"] = {
 
 				-- },
@@ -127,7 +128,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(197354, {	-- Gnarls
 				["coord"] = { 14.1, 37.5, THE_AZURE_SPAN },
 				["questID"] = 73996,
+				["isDaily"] = true,
 				["g"] = {
+					i(200267),	-- Reinforced Garden Tenders
 					i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
 					i(197121),	-- Highland Drake: Tan Horns (DM!)
 				},
@@ -148,10 +151,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(197356, {	-- High Shaman Rotknuckle
 				["coord"] = { 16.2, 33.6, THE_AZURE_SPAN },
-				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
+				["questID"] = 74004,
+				["g"] = {
+					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
+				},
 			}),
 			n(190244, {	-- Mahg the Trampler
 				["coord"] = { 36.8, 35.8, THE_AZURE_SPAN },
@@ -235,7 +238,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(197344, {	-- Snarglebone
 				["coord"] = { 11.1, 32.2, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 74032,
 				["g"] = {
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 				},

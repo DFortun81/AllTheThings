@@ -90,7 +90,17 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 },
 		--
 		i(192644),	-- Aeriform Speck
 		i(192615),	-- Fluorescent Fluid
-		i(192658),	-- High-Fiber Leaf
+		i(192658, {	-- High-Fiber Leaf
+			["crs"] = {
+				194588,	-- Giant Lasher
+				187545,	-- Vigorous Lasher
+				190198,	-- Vigorous Lasher
+				187546,	-- Sprouting Lasher
+			},
+			["coords"] = {
+				{ 29.7, 52.6, OHNAHRAN_PLAINS },
+			},
+		}),
 		i(192648),	-- Pristine Beast Fur
 		i(192636),	-- Woolly Mountain Pelt
 	}),
@@ -128,6 +138,7 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 },
 		i(199037),	-- Shorebreaker's Poleaxe
 		i(199021),	-- Shorebreaker's Sword
 		i(199043),	-- Skullsplitting Axe
+		i(197954),	-- Stonewatcher's Buckler
 		i(199024),	-- Talon Sharpening Axe
 		i(199047),	-- Wind-Blessed Claw
 		i(199040),	-- Wind-Blessed Hammer

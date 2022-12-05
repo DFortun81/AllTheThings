@@ -34,21 +34,50 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(194099),	-- Shikaar Hunting Horn
 				i(194108),	-- Mighty Hunter's Horn
 
+
+				-- TODO: higher tiers than 'Common' appear to be from quest-specific lockouts. maybe group them eventually by the quest trigger
+				-- 70002 / 71136 for Rare Hunt completion
+				-- 70001 / 71137 for Uncommon Hunt completion
+				-- 70000 for Common Hunt completion
+
 				i(200468, {	-- Grant Hunt Spoils [Epic]
-					-- likely rewards various items from lower tiers as well, pls symlink until confirmed only source
-					["sym"] = {{"select","itemID",
+					-- likely rewards various items from lower tiers as well, pls symlink at lowest level received until confirmed only source
+					["sym"] = {
+						{"select","itemID", 200513},{"pop"},	-- Grand Hunt Spoils [Rare]
+						{"select","itemID",
+						-- confirmed items here
+						193360,	-- Centaur's Trophy Necklace
 						194093,	-- Bakar Companion Color: Brown
 						194090,	-- Bakar Companion Color: White
-						193360,	-- Centaur's Trophy Necklace
 						193205,	-- Ohuna Companion Color: Brown
 					}},
 				}),
-				i(200516, {	-- Grant Hunt Spoils [White]
-					-- likely rewards various items from lower tiers as well, pls symlink until confirmed only source
-					["sym"] = {{"select","itemID",
+				i(200513, {	-- Grand Hunt Spoils [Rare]
+					-- likely rewards various items from lower tiers as well, pls symlink at lowest level received until confirmed only source
+					["sym"] = {
+						{"select","itemID", 200515},{"pop"},	-- Grand Hunt Spoils [Uncommon]
+						{"select","itemID",
+						-- confirmed items here
+						-- zone rewards?, received 198542
+						194087,	-- Ohuna Companion Color: Red
 					}},
 				}),
-				
+				i(200515, {	-- Grand Hunt Spoils [Uncommon]
+					-- likely rewards various items from lower tiers as well, pls symlink at lowest level received until confirmed only source
+					["sym"] = {
+						{"select","itemID", 200516},{"pop"},	-- Grand Hunt Spoils [Common]
+						{"select","itemID",
+						-- confirmed items here
+					}},
+				}),
+				i(200516, {	-- Grant Hunt Spoils [Common]
+					-- likely rewards various items from lower tiers as well, pls symlink at lowest level received until confirmed only source
+					["sym"] = {{"select","itemID",
+						-- confirmed items here
+						200093,	-- Centaur Hunting Trophy
+					}},
+				}),
+
 
 
 				i(193360),	-- Centaur's Trophy Necklace

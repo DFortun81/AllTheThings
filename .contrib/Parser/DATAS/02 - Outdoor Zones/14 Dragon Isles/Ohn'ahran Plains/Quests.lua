@@ -1005,6 +1005,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "i", 200876 },	-- Yennu's Toy Boat
 				["coord"] = { 52.0, 58.3, OHNAHRAN_PLAINS },
 				["g"] = {
+					crit(6, {	-- Tuskarr Toy Boat
+						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
+					}),
 					i(200878),	-- Wheeled Floaty Boaty Controller (TOY!)
 				},
 			}),
@@ -1072,6 +1075,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(BONUS_OBJECTIVES, {
+				-- q(quest, {	-- npc
+				-- 	["provider"] = { "n", npcid },	-- npc
+				-- 	["coord"] = { XX, YY, OHNAHRAN_PLAINS },
+				-- }),
 				q(72114, {	-- Acrosoth
 					["provider"] = { "n", 193243 },	-- Acrosoth
 					["coord"] = { 40.5, 78.3, THALDRASZUS },
@@ -1080,6 +1087,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 193669 },	-- Prozela Galeshot
 					["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
 				}),
+				q(69851, {	-- Ripsaw the Stalker
+					["provider"] = { "n", 193153 },	-- Ripsaw the Stalker
+					["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
+				}),
 				q(70783, {	-- Skaara
 					["provider"] = { "n", 192949 },	-- Skaara
 					["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
@@ -1087,6 +1098,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(69837, {	-- Sunscale Behemoth
 					["provider"] = { "n", 193133 },	-- Sunscale Behemoth
 					["coord"] = { 63.2, 48.6, OHNAHRAN_PLAINS },
+				}),
+				q(69852, {	-- Territorial Coastling
+					["provider"] = { "n", 193163 },	-- Territorial Coastling
+					["coord"] = { 22.7, 67.6, OHNAHRAN_PLAINS },
 				}),
 				q(65892, {	-- The Sundered Asunder
 					-- ["sourceQuests"] = {  },	--
@@ -1257,6 +1272,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
 		q(73701),	-- triggered during 'Unwelcome Outsider' (66021)
+		q(71203),	-- daily lockout for 'To Tame A Thunderspine' series
 		--
 		-- q(70141),	-- Triggered when killed Skaara
 		-- --
