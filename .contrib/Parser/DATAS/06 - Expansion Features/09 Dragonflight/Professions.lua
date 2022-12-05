@@ -222,7 +222,36 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["timeline"] = { ADDED_DF_REL },
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			--]]
+			Missing quest ID
+			q(74115, {		-- Inscription-Order: Alchemy
+				["name"] = "Inscription-Order: Alchemy",
+				["provider"] = { "i", 194697 },		-- Draconic Treatise on Alchemy
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["description"] = "Requires a crafting order from inscription.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),--]]
+			--[[q(66382, {	-- Weekly Alchemy Knowledgepoint #1
+				["name"] = "Weekly Alchemy Knowledgepoint #1",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66382, {	-- Weekly Alchemy Knowledgepoint #2
+				["name"] = "Weekly Alchemy Knowledgepoint #2",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66382, {	-- Weekly Alchemy Knowledgepoint #3
+				["name"] = "Weekly Alchemy Knowledgepoint #3",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),--]]
 		}),
 		prof(BLACKSMITHING, {
 			filter(RECIPES, {
@@ -300,6 +329,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
+			--[[q(66382, {	-- Weekly Blacksmith Knowledgepoint #3
+				["name"] = "Weekly Blacksmith Knowledgepoint #3",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),--]]
 		}),
 		prof(COOKING, {
 			q(72250, {	-- Dragon Isles Cooking
@@ -460,6 +496,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
+			--[[q(66382, {	-- Weekly Engineering Knowledgepoint #3
+				["name"] = "Weekly Engineering Knowledgepoint #3",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),--]]
 		}),
 		prof(FISHING, {
 			q(72252, {	-- Dragon Isles Fishing [A]
@@ -512,6 +555,27 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
+			--[[q(66382, {	-- Weekly Herbalism Knowledgepoint #1
+				["name"] = "Weekly Herbalism Knowledgepoint #1",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66382, {	-- Weekly Herbalism Knowledgepoint #2
+				["name"] = "Weekly Herbalism Knowledgepoint #2",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66382, {	-- Weekly Herbalism Knowledgepoint #3
+				["name"] = "Weekly Herbalism Knowledgepoint #3",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),--]]
 		}),
 		prof(INSCRIPTION, {
 			filter(RECIPES, {
@@ -577,6 +641,27 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
+			--[[q(66382, {	-- Weekly Inscription Knowledgepoint #1
+				["name"] = "Weekly Inscription Knowledgepoint #1",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66382, {	-- Weekly Inscription Knowledgepoint #2
+				["name"] = "Weekly Inscription Knowledgepoint #2",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66382, {	-- Weekly Inscription Knowledgepoint #3
+				["name"] = "Weekly Inscription Knowledgepoint #3",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),--]]
 		}),
 		prof(JEWELCRAFTING, {
 			filter(RECIPES, {
@@ -664,6 +749,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "1 out of 3 Weekly Jewelcrafting Knowledge Points.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
+			--[[
+			q(66382, {	-- Weekly Jewelcrafting Knowledgepoint #2
+				["name"] = "Weekly Jewelcrafting Knowledgepoint #2",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66382, {	-- Weekly Jewelcrafting Knowledgepoint #3
+				["name"] = "Weekly Jewelcrafting Knowledgepoint #3",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),--]]
 		}),
 		prof(LEATHERWORKING, {
 			filter(RECIPES, {
@@ -752,6 +852,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
+			--[[
+			q(66382, {	-- Weekly Leatherworking Knowledgepoint #2
+				["name"] = "Weekly Leatherworking Knowledgepoint #2",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66382, {	-- Weekly Leatherworking Knowledgepoint #3
+				["name"] = "Weekly Leatherworking Knowledgepoint #3",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),--]]
 			q(70269, {	-- Well-Danced Drum
 				["name"] = "Well-Danced Drum",
 				["provider"] = { "i", 201018 },		-- Well-Danced Drum
@@ -802,6 +917,27 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
+			--[[q(66382, {	-- Weekly Mining Knowledgepoint #1
+				["name"] = "Weekly Mining Knowledgepoint #1",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66382, {	-- Weekly Mining Knowledgepoint #2
+				["name"] = "Weekly Mining Knowledgepoint #2",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66382, {	-- Weekly Mining Knowledgepoint #3
+				["name"] = "Weekly Mining Knowledgepoint #3",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),--]]
 		}),
 		prof(SKINNING, {
 			filter(RECIPES, {
@@ -851,7 +987,37 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["timeline"] = { ADDED_DF_REL },
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			--]]
+			--[[ Missing quest ID
+			q(74115, {		-- Inscription-Order: Skinning
+				["name"] = "Inscription-Order: Skinning",
+				["provider"] = { "i", 201023 },		-- Draconic Treatise on Skinning
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["description"] = "Requires a crafting order from inscription.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			--]]]]
+			--[[q(66382, {	-- Weekly Skinning Knowledgepoint #1
+				["name"] = "Weekly Skinning Knowledgepoint #1",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66382, {	-- Weekly Skinning Knowledgepoint #2
+				["name"] = "Weekly Skinning Knowledgepoint #2",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66382, {	-- Weekly Skinning Knowledgepoint #3
+				["name"] = "Weekly Skinning Knowledgepoint #3",
+				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),--]]
 		}),
 		prof(TAILORING, {
 			filter(RECIPES, {
