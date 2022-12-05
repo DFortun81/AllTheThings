@@ -1214,6 +1214,40 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
+			-- Alt quests
+			q(72293, {	-- Adventuring in the Dragon Isles
+				["sourceQuests"] = {
+					70125,	-- Where is Wrathion? (A)
+					69910,	-- Where is Wrathion? (H)
+				},
+				["provider"] = { "n", 193362 },	-- Sendrax
+				["coord"] = { 76.6, 33.7, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "questID", 69911 },	-- Excuse the Mess
+			}),
+			q(72266, {	-- The Waking Shores
+				["sourceQuests"] = { 72293 },	-- Adventuring in the Dragon Isles
+				["provider"] = { "n", 198386 },	-- Scouting Map
+				["coord"] = { 76.5, 34.2, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "questID", 69911 },	-- Excuse the Mess
+			}),
+			q(72267, {	-- Ohn'ahran Plains
+				["sourceQuests"] = { 72293 },	-- Adventuring in the Dragon Isles
+				["provider"] = { "n", 198386 },	-- Scouting Map
+				["coord"] = { 76.5, 34.2, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "questID", 65779 },	-- Into the Plains
+			}),
+			q(72268, {	-- Azure Span
+				["sourceQuests"] = { 72293 },	-- Adventuring in the Dragon Isles
+				["provider"] = { "n", 198386 },	-- Scouting Map
+				["coord"] = { 76.5, 34.2, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "questID", 65686 },	-- To the Azure Span
+			}),
+			q(72269, {	-- Thaldraszsus
+				["sourceQuests"] = { 72293 },	-- Adventuring in the Dragon Isles
+				["provider"] = { "n", 198386 },	-- Scouting Map
+				["coord"] = { 76.5, 34.2, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "questID", 66244 },	-- To Valdrakken
+			}),
 			--
 			q(72708, {	-- Dragon Isles Supplies
 				["sourceQuests"] = {
@@ -1691,5 +1725,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 	m(THE_WAKING_SHORES, {
 		q(66898),	-- triggered during 'The Shadow of His Wings' (65691)
 		q(70872),	-- Quack Weekly Trigger
+		q(72353),	-- triggeres during 'Adventuring in the Dragon Isles' (72293) when any zone is chosen by player
 	}),
 })));
