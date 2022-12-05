@@ -217,7 +217,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			q(70247, {	-- Hidden Profession Master Alchemy
 				["name"] = "Hidden Profession Master: Alchemy",
 				["provider"] = { "n", 194829 },		-- Grigori Vialtry
-				["coord"] = { 60.9, 75.8, THE_WAKING_SHORE },
+				["coord"] = { 60.9, 75.8, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_DF_REL },
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
@@ -295,11 +295,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(194963),	-- Plans: Black Dragon Seared Alloy
 				},
-			}),	
+			}),
 			q(70250, {	-- Hidden Profession Master Blacksmith	-- bugged
 				["name"] = "Hidden Profession Master: Blacksmith",
 				["provider"] = { "n", 194836 },		-- Grekka Anvilsmash
-				["coord"] = { 43.2, 66.6, THE_WAKING_SHORE },
+				["coord"] = { 43.2, 66.6, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_DF_REL },
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
