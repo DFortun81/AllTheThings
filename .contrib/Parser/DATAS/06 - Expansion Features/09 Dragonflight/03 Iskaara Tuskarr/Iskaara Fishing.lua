@@ -57,15 +57,23 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
-				
-				--q(70438, {	-- Flying Fish
-				--	["provider"] = { "n", 195338 },	-- Fisherman Pasqaa
-				--	["coord"] = { 63.8, 76.6, THE_WAKING_SHORES },
-				--	["repeatable"] = true,
-				--	["g"] = {
-				--		i(198855),	-- Throw Net
-				--	},
-				--}),
+
+					-- Dailies --
+				q(70438, {	-- Flying Fish
+					["provider"] = { "n", 195338 },	-- Fisherman Pasqaa
+					["coord"] = { 63.7, 76.5, THE_WAKING_SHORES },
+					["isDaily"] = true,
+					["description"] = "Requires Renown 4.",
+					["g"] = {
+						i(198855),	-- Throw Net
+					},
+				}),
+				q(70450, {	-- Otter Devastation
+					["provider"] = { "n", 195444 },	-- Brix Rocketcast
+					["coord"] = { 63.6, 75, THE_WAKING_SHORES },
+					["description"] = "Requires Renown 4.",
+					["isDaily"] = true,
+				}),
 			}),
 			prof(TUSKARR_FISHING_GEAR, {
 				["crs"] = { 195935 },
