@@ -87,3 +87,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		ach(16446),	-- That's Pretty Neat!
 	}),
 })));
+root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+	q(73863),	-- triggers when learning 'Spiked Crimson Spaulders' with completing 'Dragon Racing Completionist' achievement (15939)
+}));

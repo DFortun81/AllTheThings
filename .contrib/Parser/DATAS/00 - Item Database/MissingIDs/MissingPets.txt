@@ -669,7 +669,6 @@ p(3402),	-- Stormamu
 p(3403),	-- Blue Dasher
 p(3404),	-- Polliswog
 10.0.0.45454
-p(3405),	-- Living Mud Mask
 p(3406),	-- Lady Feathersworth
 10.0.0.45570
 p(3407),	-- Scout \\ REUSE ME \\ White Woodpecker \\ [PH] White Woodpecker

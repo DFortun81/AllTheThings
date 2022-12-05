@@ -809,13 +809,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["achievementID"] = 16398,	-- Sojourner of Thaldraszus
 				["collectible"] = false,
 				["g"] = {
+					q(72399, {	-- The Hermit's Garden
+						["provider"] = { "n", 198507 },	-- Agues
+						["coord"] = { 52.6, 69.9, THALDRASZUS },
+						["isBreadcrumb"] = true,
+					}),
 					q(69933, {	-- Curiosity's Price
-						--["sourceQuests"] = {},
 						["provider"] = { "n", 193538 },	-- Szareth
 						["coord"] = { 50.3, 67.7, THALDRASZUS },
 					}),
 					q(69932, {	-- Every Life Counts
-						--["sourceQuests"] = {},
+						["sourceQuests"] = { 72399 }, -- The Hermit's Garden
 						["provider"] = { "n", 193538 },	-- Szareth
 						["coord"] = { 50.3, 67.7, THALDRASZUS },
 					}),
@@ -977,7 +981,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(69962, {	-- Corrupted Proto-Dragon
 					["provider"] = { "n", 193658 },	-- Corrupted Proto-Dragon
 					["coord"] = { 44.8, 69.0, THALDRASZUS },
-					-- ["isDaily"] = true,
+					["isDaily"] = true,
 				}),
 				q(69873, {	-- Henlare
 					["provider"] = { "n", 193229 },	-- Henlare
@@ -989,6 +993,39 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- 	["coord"] = { 36.8, 85.6, THALDRASZUS },
 				-- 	-- ["isDaily"] = true,
 				-- }),
+			}),
+			n(SPECIAL, {
+				q(70377, {	-- Derelict Fashion
+					["provider"] = { "i", 200586 },	-- Derelict Sunglasses
+					["coord"] = { 40.6, 45.4, THALDRASZUS },
+					["description"] = "Drops from Mudgatu.",
+				}),
+				q(72270, {	-- HQT for talking to Zeldis after 'Derelict Fashion' (70377)
+					["sourceQuests"] = { 70377 },	-- Derelict Fashion
+					["provider"] = { "n", 198062 },	-- Zeldis
+					["coord"] = { 39.6, 48.4, THALDRASZUS },
+					["name"] = "Talk to Zeldis",
+				}),
+				q(72351, {	-- HQT for talking to Zeldis again (70377)
+					["sourceQuests"] = { 72270 },	-- HQT for talking to Zeldis after 'Derelict Fashion' (70377)
+					["provider"] = { "n", 198062 },	-- Zeldis
+					["coord"] = { 39.3, 46.8, THALDRASZUS },
+					["name"] = "Talk to Zeldis again",
+				}),
+				q(72352, {	-- HQT for moving closer to Sneaky Mud Mask npc
+					["sourceQuests"] = { 72351 },	-- HQT for talking to Zeldis again (70377)
+					["provider"] = { "n", 198590 },	-- Sneaky Mud Mask
+					["coord"] = { 38.6, 46.4, THALDRASZUS },
+					["name"] = "Move closer to Sneaky Mud Mask",
+				}),
+				q(72060, {	-- Special Treatment
+					["sourceQuests"] = { 72352 },	-- HQT for moving closer to Sneaky Mud Mask npc
+					["provider"] = { "n", 198590 },	-- Sneaky Mud Mask
+					["coord"] = { 38.6, 46.4, THALDRASZUS },
+					["g"] = {
+						i(200872),	-- Living Mud Mask
+					},
+				}),
 			}),
 				-- MISC --
 			q(67093, {	-- An Anomalous Shrine
@@ -1007,10 +1044,24 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "n", 192543 },	-- Archivist Arenial
 				["coord"] = { 60.3, 81.9, THALDRASZUS },
 			}),
+			q(66929, {	-- Gotta Collect Them All
+				["provider"] = { "n", 191414 },	-- Yumadormu
+				["coord"] = { 59.7, 43.6, THALDRASZUS },
+			}),
+			q(67167, {	-- It's Time To Duel!
+				["sourceQuests"] = { 66929 },	-- Gotta Collect Them All
+				["provider"] = { "n", 191414 },	-- Yumadormu
+				["coord"] = { 60.7, 43.3, THALDRASZUS },
+			}),
 			q(72519, {	-- Temporal Two-ning
 				["sourceQuests"] = { 67154 },	-- Entropic Remnants
 				["provider"] = { "n", 186931 },	-- Nozdormu
 				["coord"] = { 60, 82.4, THALDRASZUS },
+			}),
+			q(67178, {	-- White Eyes, Blue Dragon
+				["sourceQuests"] = { 67167 },	-- It's Time To Duel!
+				["provider"] = { "n", 192733 },	-- Professor Dromokdormi
+				["coord"] = { 58.1, 40.4, THALDRASZUS },
 			}),
 			-- Fragment of History --
 			q(70204, {	-- Golden Claw

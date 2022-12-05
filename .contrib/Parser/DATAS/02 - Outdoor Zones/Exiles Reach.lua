@@ -13,10 +13,6 @@ _.Zones =
 			1727,	-- North Sea (Horde)
 		},
 		["g"] = {
-			--[[
-			Remaining things TODO:
-				* Some class-specific quests are missing providers. Search "TODO" for which ones are needed
-			]]--
 			m(1609, {	-- Darkmaul Citadel
 				["customCollect"] = "NPE",
 				["icon"] = 3759927,
@@ -61,10 +57,10 @@ _.Zones =
 								55639,	-- Who Lurks in the Pit [A]
 							},
 						}),
-						q(59951, {	-- A Druid's Form (H) -- TODO: needs provider
+						q(59951, {	-- A Druid's Form (H)
 							["coord"] = { 52.0, 55.2, 1409 },
 							["races"] = HORDE_ONLY,
-							--["provider"] = { "n",  },	--
+							["provider"] = { "n", 166575 },	-- Crenna Earth-Daughter
 							["sourceQuests"] = {
 								59949,	-- Who Lurks in the Pit [H]
 							},
@@ -109,25 +105,25 @@ _.Zones =
 							["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
 							["sourceQuest"] = 59935,	-- Northbound
 						}),
-						q(59952, {	-- A Hunter's Trap (H) -- TODO: need provider
+						q(59952, {	-- A Hunter's Trap (H)
 							["coord"] = { 52.4, 55.2, 1409 },
 							["races"] = HORDE_ONLY,
-							--["provider"] = { "n",  },	--
+							["provider"] = { "n", 167215 },	-- Mithdran Dawntracker
 							["sourceQuests"] = {
 								59947,	-- Message to Base [H]
 								59949,	-- Who Lurks in the Pit [H]
 							},
 						}),
-						q(59953, {	-- Hunting the Stalker (H) -- TODO: need provider
+						q(59953, {	-- Hunting the Stalker (H)
 							["coord"] = { 52.4, 55.2, 1409 },
 							["races"] = HORDE_ONLY,
-							--["provider"] = { "n",  },	--
+							["provider"] = { "n", 167215 },	-- Mithdran Dawntracker
 							["sourceQuest"] = 59952,	-- A Hunter's Trap
 						}),
-						q(60162, {	-- The Art of Taming (H)	-- TODO: need provider
+						q(60162, {	-- The Art of Taming (H)
 							["coord"] = { 52.4, 55.2, 1409 },
 							["races"] = HORDE_ONLY,
-							--["provider"] = { "n",  },	--
+							["provider"] = { "n", 167215 },	-- Mithdran Dawntracker
 							["sourceQuest"] = 59953,	-- Hunting the Stalker
 						}),
 					}),
@@ -161,10 +157,10 @@ _.Zones =
 								-- 59949,	-- Who Lurks in the Pit [H] -- TODO: confirm
 							},
 						}),
-						q(59955, {	-- The Best Way to Use Sheep (H) -- TODO: need provider
+						q(59955, {	-- The Best Way to Use Sheep (H)
 							["coord"] = { 52.2, 55.4, 1409 },
 							["races"] = HORDE_ONLY,
-							--["provider"] = { "n",  },	--
+							["provider"] = { "n", 167309 },	-- Herbert Gloomburst
 							["sourceQuest"] = 59954,	-- A Mage's Knowledge
 						}),
 					}),
@@ -201,19 +197,19 @@ _.Zones =
 							["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
 							["sourceQuest"] = 59932,	-- Cooking Meat
 						}),
-						q(59956, {	-- A Monk's Focus (H) -- TODO: needs provider
+						q(59956, {	-- A Monk's Focus (H)
 							["coord"] = { 52.0, 55.2, 1409 },
 							["races"] = HORDE_ONLY,
-							--["provider"] = { "n",  },	--
+							["provider"] = { "n", 167308 },	-- Bo
 							["sourceQuests"] = {
 								59947,	-- Message to Base [H]
 								59949,	-- Who Lurks in the Pit [H]
 							},
 						}),
-						q(59957, {	-- One Last Spar (H) -- TODO: need provider
+						q(59957, {	-- One Last Spar (H)
 							["coord"] = { 52.6, 49.4, 1409 },
 							["races"] = HORDE_ONLY,
-							--["provider"] = { "n",  },	--
+							["provider"] = { "n", 167537 },	-- Bo
 							["sourceQuest"] = 59956,	-- A Monk's Focus
 						}),
 					}),
@@ -273,10 +269,10 @@ _.Zones =
 							["provider"] = { "n", 167216 },	-- Grunt Throg
 							["sourceQuest"] = 59950,	-- Stocking Up on Supplies
 						}),
-						q(59965, {	-- Resurrecting the Recruits (H) -- TODO: need provider
+						q(59965, {	-- Resurrecting the Recruits (H)
 							["coord"] = { 56.1, 53.6, 1409 },
 							["races"] = HORDE_ONLY,
-							--["provider"] = { "n",  },	--
+							["provider"] = { "n", 167188 },	-- Sha'zul
 							["sourceQuest"] = 59961,	-- A Priest's End
 						}),
 					}),
@@ -304,10 +300,10 @@ _.Zones =
 							["provider"] = { "n", 167216 },	-- Grunt Throg
 							["sourceQuest"] = 59950,	-- Stocking Up on Supplies
 						}),
-						q(59968, {	-- The Deadliest of Poisons (H) -- TODO: need provider
+						q(59968, {	-- The Deadliest of Poisons (H)
 							["coord"] = { 45.6, 56.1, 1409 },
 							["races"] = HORDE_ONLY,
-							--["provider"] = { "n",  },	--
+							["provider"] = { "n", 167586 },	-- Drizza Sidestabber
 							["sourceQuest"] = 59967,	-- A Rogue's End
 						}),
 					}),
@@ -368,10 +364,10 @@ _.Zones =
 							["provider"] = { "n", 167216 },	-- Grunt Throg
 							["sourceQuest"] = 59950,	-- Stocking Up on Supplies
 						}),
-						q(59972, {	-- Hjalmar's Final Execution (H) -- TODO: need provider
+						q(59972, {	-- Hjalmar's Final Execution (H)
 							["coord"] = { 51.5, 47.8, 1409 },
 							["races"] = HORDE_ONLY,
-							--["provider"] = { "n",  },	--
+							["provider"] = { "n", 162943 },	-- Hjalmar the Undying
 							["sourceQuest"] = 59971,	-- A Warrior's End
 						}),
 					}),

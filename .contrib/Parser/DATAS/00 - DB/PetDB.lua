@@ -1120,6 +1120,7 @@ pet(193888, 3347);	-- Jeweled Emerald Whelpling
 pet(193889, 3256);	-- Jeweled Onyx Whelpling
 pet(193887, 3346);	-- Jeweled Ruby Whelpling
 pet(193886, 3344);	-- Jeweled Sapphire Whelpling
+pet(200872, 3405);	-- Living Mud Mask
 pet(194098, 3350);	-- Lord Basilton
 pet(199175, 3316);	-- Lubbins
 pet(199757, 3378);	-- Magic Nibbler
@@ -1271,7 +1272,6 @@ pet(0, 3401);	-- Arcantus
 pet(0, 3402);	-- Stormamu
 pet(0, 3403);	-- Blue Dasher
 pet(0, 3404);	-- Polliswog
-pet(0, 3405);	-- Living Mud Mask
 pet(0, 3406);	-- Lady Feathersworth
 pet(0, 3407);	-- Scout
 pet(0, 3409);	-- Tide Spirit

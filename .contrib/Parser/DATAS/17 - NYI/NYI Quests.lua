@@ -8122,7 +8122,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72258),	--
 			q(72264),	--
 			q(72265),	--
-			q(72270),	--
 			q(72271),	--
 			q(72272),	--
 			q(72273),	--
@@ -8174,8 +8173,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72348),	--
 			q(72349),	--
 			q(72350),	--
-			q(72351),	--
-			q(72352),	--
 			q(72353),	--
 			q(72354),	--
 			q(72355),	--
@@ -8208,7 +8205,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72395),	--
 			q(72396),	--
 			q(72398),	--
-			q(72399),	-- The Hermit's Garden
 			q(72400),	--
 			q(72401),	--
 			q(72402),	--

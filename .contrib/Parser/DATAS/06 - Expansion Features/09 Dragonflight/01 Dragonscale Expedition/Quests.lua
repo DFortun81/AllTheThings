@@ -163,6 +163,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198725),	-- Gray Marmoni (PET!)
 				},
 			}),
+				-- RENOWN 12 --
+			q(70817, {	-- New Dragonscale Equipment
+				["description"] = "Requires Renown 12.",
+				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
+				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
+			}),
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
 				["provider"] = { "o", 381669 },	-- Archivists' Request

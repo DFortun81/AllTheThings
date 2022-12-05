@@ -553,7 +553,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200263),	-- Echo of the Heights
 			i(200276),	-- Ohuna Companion
 			i(200290),	-- Bakar Companion
-			i(200872),	-- Living Mud Mask
 			i(200874),	-- Lady Feathersworth
 			i(201260),	-- Dust Spirit
 			i(201261),	-- Blaze Spirit
@@ -845,7 +844,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199895),	-- Chunk of Sculpture
 			i(199915),	-- Ancient Obsidian Charm
 			i(200528),	-- Glowing Arcane Jewel
-			i(200586),	-- Derelict Sunglasses
 			i(201411),	-- Ancient Vault Artifact
 			i(201412),	-- Ancient Vault Artifact
 		}),
