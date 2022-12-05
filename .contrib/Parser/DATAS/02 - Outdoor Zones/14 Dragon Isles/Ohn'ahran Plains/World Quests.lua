@@ -29,8 +29,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 53.1, 37.2, OHNAHRAN_PLAINS }
 			}),
 			-- Pet Battle
-			petbattle(q(71140, {	-- Two and Two Together
-				["coord"] = { 62.0, 41.6, OHNAHRAN_PLAINS }
+			petbattle(filter(BATTLE_PETS, {
+				q(71140, {	-- Two and Two Together
+					["coord"] = { 62.0, 41.6, OHNAHRAN_PLAINS }
+				}),
+				q(71206, {	-- Eye of the Stormling
+					["coord"] = { 24.8, 42.7, OHNAHRAN_PLAINS }
+				}),
 			})),
 			q(70176, {	-- Web Victims
 				["coord"] = { 44.6, 47.4, OHNAHRAN_PLAINS }
