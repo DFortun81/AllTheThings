@@ -214,15 +214,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(191462),	-- Hochenblume+++
 				},
 			}),
-			--[[ Missing quest ID
-			q(70251, {	-- Hidden Profession Master Alchemy
+			q(70247, {	-- Hidden Profession Master Alchemy
 				["name"] = "Hidden Profession Master: Alchemy",
 				["provider"] = { "n", 194829 },		-- Grigori Vialtry
 				["coord"] = { 60.9, 75.8, THE_WAKING_SHORE },
 				["timeline"] = { ADDED_DF_REL },
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			Missing quest ID
 			q(74115, {		-- Inscription-Order: Alchemy
 				["name"] = "Inscription-Order: Alchemy",
 				["provider"] = { "i", 194697 },		-- Draconic Treatise on Alchemy
@@ -230,7 +228,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),--]]
+			}),
 			--[[q(66382, {	-- Weekly Alchemy Knowledgepoint #1
 				["name"] = "Weekly Alchemy Knowledgepoint #1",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
@@ -538,15 +536,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 192549 },	-- Feilin Kuan
 				["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
 			}),
-			--[[ Missing quest ID
-			q(70251, {	-- Hidden Profession Master Herbalism
+			q(70253, {	-- Hidden Profession Master Herbalism
 				["name"] = "Hidden Profession Master: Herbalism",
 				["provider"] = { "n", 194839 },		-- Hua Greenpaw
 				["coord"] = { 58.4, 50.0, OHNAHRAN_PLAINS },
 				["timeline"] = { ADDED_DF_REL },
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			--]]
 			q(74107, {	-- Inscription-Order: Herbalism
 				["name"] = "Inscription-Order: Engineering",
 				["provider"] = { "i", 194704 },		-- Draconic Treatise on Herbalism
