@@ -888,7 +888,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190394),	-- Tyrivite Ore+++
 				}
 			}),
-			q(70257, {	-- Hidden Profession Master Mining
+			q(70258, {	-- Hidden Profession Master Mining
 				["name"] = "Hidden Profession Master: Mining",
 				["provider"] = { "n", 194843 },		-- Bridgette Holdug
 				["coord"] = { 61.4, 76.9, THALDRASZUS },
