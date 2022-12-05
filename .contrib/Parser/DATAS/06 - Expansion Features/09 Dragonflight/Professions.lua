@@ -344,8 +344,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 				["cost"] = { { "i", 201601, 2 }, },	-- 2xRuned Serevite Rod
 			}),
-			i(194702, {		-- Draconic Treatise on Enchanting
-				["questID"] = 74110,
+			q(74110, {		-- Draconic Treatise on Enchanting
 				["provider"] = { "i", 194702 },		-- Draconic Treatise on Enchanting
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
@@ -355,6 +354,22 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			q(70515, {	-- Weekly Enchanting Skillpoint #1
 				["name"] = "Weekly Enchanting Skillpoint #1",
 				["provider"] = { "i", 198968 },		-- Primalist Charm
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["description"] = "1 out of 3 Weekly Tailoring Knowledge Points.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66377, {	-- Weekly Enchanting Skillpoint #2
+				["name"] = "Weekly Enchanting Skillpoint #2",
+				["provider"] = { "i", 193900 },		-- Prismatic Focusing Shard
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["description"] = "1 out of 3 Weekly Tailoring Knowledge Points.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66378, {	-- Weekly Enchanting Skillpoint #3
+				["name"] = "Weekly Enchanting Skillpoint #3",
+				["provider"] = { "i", 193901 },		-- Primal Dust
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "1 out of 3 Weekly Tailoring Knowledge Points.",
@@ -549,12 +564,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(192845),	-- Vibrant Emerald+++
 				},
 			}),
-			i(194703, {		-- Draconic Treatise on Jewelcrafting
-				["questID"] = 74112,
-			--	["provider"] = { "i", 194703 },		-- Draconic Treatise on Jewelcrafting
+			q(74112, {	-- Draconic Treatise on Jewelcrafting
+				["provider"] = { "i", 194703 },		-- Draconic Treatise on Jewelcrafting
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(70520, {	-- Weekly Jewelcrafting Skillpoint #1
+				["name"] = "Weekly Jewelcrafting Skillpoint #1",
+				["provider"] = { "i", 198973 },		-- Incandescent Curio
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["description"] = "1 out of 3 Weekly Jewelcrafting Knowledge Points.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
 		}),
