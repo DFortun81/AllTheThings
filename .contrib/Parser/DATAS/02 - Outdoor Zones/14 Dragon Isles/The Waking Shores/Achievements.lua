@@ -157,6 +157,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				crit(12),	-- Wild Preserve
 			}),
 			ach(16323, {	 -- Fragment of History
+				crit(1),	-- Dislodged Dragoneye
 				crit(2),	-- Tail Fragment
 				crit(3),	-- Broken Banding
 				crit(6),	-- Finely Carved Wing

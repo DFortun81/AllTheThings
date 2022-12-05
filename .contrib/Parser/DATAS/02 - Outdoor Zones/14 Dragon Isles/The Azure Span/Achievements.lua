@@ -245,7 +245,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				crit(11),	-- Vakthros
 			}),
 			ach(16323, {	 -- Fragment of History
-				crit(1),	-- Dislodged Dragoneye
 				crit(4),	-- Chunk of Sculpture
 				crit(5),	-- Coldwashed Dragonclaw
 				crit(9),	-- Stone Dragontooth
