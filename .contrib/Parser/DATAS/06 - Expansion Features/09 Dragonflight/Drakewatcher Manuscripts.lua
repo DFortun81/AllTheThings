@@ -118,9 +118,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197114),	-- Highland Drake: Multi-Horned Head (DM!)
 		i(197120),	-- Highland Drake: Ornate Helm
 		i(197138),	-- Highland Drake: Pattern 1
-		i(197141),	-- Highland Drake: Pattern 4
 		i(197110),	-- Highland Drake: Plated Head (DM!)
 		i(197144),	-- Highland Drake: Red Scales (DM!)
+		i(197141),	-- Highland Drake: Scaled Pattern (DM!)
 		i(197091),	-- Highland Drake: Silver and Blue Armor (DM!)
 		i(197093),	-- Highland Drake: Silver and Purple Armor (DM!)
 		i(197112),	-- Highland Drake: Single Horned Head (DM!)
@@ -136,7 +136,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197105),	-- Highland Drake: Spined Chin
 		i(197108),	-- Highland Drake: Spined Head (DM!)
 		i(197154),	-- Highland Drake: Spined Neck (DM!)
-		i(197137),	-- Highland Drake: Spined Nose
+		i(197137),	-- Highland Drake: Spined Nose (DM!)
 		i(197130),	-- Highland Drake: Stag Horns
 		i(197096),	-- Highland Drake: Steel and Yellow Armor (DM!)
 		i(197124),	-- Highland Drake: Swept Horns

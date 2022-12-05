@@ -2539,6 +2539,7 @@ _.ObjectNames = {
 	[381650] = "Archivists' Request",
 	[381653] = "Fang Flap Fire Signups",
 	[381661] = "Archivists' Request",
+	[381663] = "Manastorming For Beginners",
 	[381664] = "Archivists' Request",
 	[381667] = "Archivists' Request",
 	[381668] = "Archivists' Request",

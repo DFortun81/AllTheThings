@@ -20,14 +20,33 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 65686 },	-- To the Azure Span
 					["provider"] = { "n", 185603 },	-- Glania of the Blessed Ones
 					["coord"] = { 41.4, 35.6, THE_AZURE_SPAN },
+					["classes"] = exclude(EVOKER, ALL_CLASSES),
+				}),
+				q(70746, {	-- Shades of Blue
+					["sourceQuests"] = { 65686 },	-- To the Azure Span
+					["provider"] = { "n", 197023 },	-- Scalecommander Emberthal
+					["coord"] = { 41.5, 35.9, THE_AZURE_SPAN },
+					["classes"] = { EVOKER },
+				}),
+				q(70747, {	-- The Azure Wizard
+					["sourceQuests"] = { 70746 },	-- Shades of Blue
+					["provider"] = { "n", 197025 },	-- Telash Greywing
+					["coord"] = { 45.7, 41.3, THE_AZURE_SPAN },
+					["classes"] = { EVOKER },
 				}),
 				q(67033, {	-- Assemble the Defenses
-					["sourceQuests"] = { 66228 },	-- Camp Antonidas
+					["sourceQuests"] = {
+						66228,	-- Camp Antonidas
+						70747,	-- The Azure Wizard
+					},
 					["provider"] = { "n", 183543 },	-- Noriko the All-Remembering
 					["coord"] = { 46.6, 39.7, THE_AZURE_SPAN },
 				}),
 				q(67035, {	-- Preservation of Knowledge
-					["sourceQuests"] = { 66228 },	-- Camp Antonidas
+					["sourceQuests"] = {
+						66228,	-- Camp Antonidas
+						70747,	-- The Azure Wizard
+					},
 					["provider"] = { "n", 192222 },	-- Althanus
 					["coord"] = { 46.7, 39.7, THE_AZURE_SPAN },
 				}),
@@ -1054,6 +1073,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["achievementID"] = 16428,	-- Sojourner of Azure Span
 				["collectible"] = false,
 				["g"] = {
+					q(66557, {	-- Academic Aquaintances
+						["sourceQuests"] = { 66556 },	-- Ice Cave Ya Got There
+						["provider"] = { "n", 189401 },	-- Sonova Snowden
+						["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
+						["isBreadcrumb"] = true,
+					}),
 					q(66671, {	-- Path to Nowhere
 						["sourceQuests"] = { 67036 },	-- Wrath of the Kirin Tor
 						["provider"] = { "n", 190001 },	-- Caddy Scattershot
@@ -1061,7 +1086,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["isBreadcrumb"] = true,
 					}),
 					q(66141, {	-- Broken Traditions, Broken Bodies
-						["sourceQuests"] = { 66671 },	-- Path to Nowhere
+						["sourceQuests"] = {
+							66671,	-- Path to Nowhere
+							66557,	-- Academic Aquaintances
+						},
 						["provider"] = { "n", 187301 },	-- Garz
 						["coord"] = { 63.2, 58.6, THE_AZURE_SPAN },
 						["isBreadcrumb"] = true,
@@ -1561,6 +1589,24 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "n", 194425 },	-- Ranpiata
 				["coord"] = { 7.9, 53.5, THE_AZURE_SPAN },
 			}),
+			q(70169, {	-- Even Trees Need Friends
+				["sourceQuests"] = { 70168 },	-- Sad Little Accidents
+				["provider"] = { "n", 194323 },	-- Hudson
+				["coord"] = { 7.8, 53.4, THE_AZURE_SPAN },
+			}),
+			q(70170, {	-- Beat the Demons Out of It
+				["sourceQuests"] = { 70168 },	-- Sad Little Accidents
+				["provider"] = { "n", 194425 },	-- Ranpiata
+				["coord"] = { 7.8, 53.4, THE_AZURE_SPAN },
+			}),
+			q(70171, {	-- Happy Little Accidents
+				["sourceQuests"] = {
+					70169,	-- Even Trees Need Friends
+					70170,	-- Beat the Demons Out of It
+				},
+				["provider"] = { "n", 194425 },	-- Ranpiata
+				["coord"] = { 7.8, 53.4, THE_AZURE_SPAN },
+			}),
 				-- Fragment of History --
 			q(70806, {	-- Chunk of Sculpture
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
@@ -1601,6 +1647,55 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["achievementID"] = 16323,	-- Fragments of History
 					}),
 				},
+			}),
+				-- MAGE POLYMORPH --
+			q(71002, {	-- Best Spell Ever
+				["provider"] = { "o", 381663 },	-- Manastorming For Beginners
+				["coord"] = { 66.4, 33.3, THE_AZURE_SPAN },
+				["classes"] = { MAGE },
+				["description"] = "Use Blink ability to enter the cave.",
+				["g"] = {
+					i(200205),	-- Tome of Polymorph: Duck
+				},
+			}),
+				-- CAPTAIN HAAB --
+			q(72083, {	-- Me Lucky Lure
+				["provider"] = { "n", 197979 },	-- Captain Haab
+				["coord"] = { 81.1, 57.3, THE_AZURE_SPAN },
+			}),
+			q(72071, {	-- Round Two, Fish!
+				["sourceQuests"] = { 72083 },	-- Me Lucky Lure
+				["provider"] = { "n", 197979 },	-- Captain Haab
+				["coord"] = { 81.1, 57.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(202200),	-- Solemn Seashell String
+				},
+			}),
+				-- EVOKER SIDE QUESTS
+			q(71182, {	-- Wayward Archivists
+				["sourceQuests"] = { 65854 },	-- Reclaiming the Oathstone
+				["provider"] = { "n", 186188 },	-- Sindragosa
+				["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
+				["classes"] = { EVOKER },
+			}),
+			q(70748, {	-- For Blue Eyes Only
+				["sourceQuests"] = { 71182 },	-- Wayward Archivists
+				["provider"] = { "n", 197378 },	-- Sindragosa
+				["coord"] = { 42.4, 63.8, THE_AZURE_SPAN },
+				["classes"] = { EVOKER },
+			}),
+				-- OTHER --
+			q(71139, {	-- Glowing Arcane Jewel
+				["provider"] = { "i", 200528 },	-- Glowing Arcane Jewel
+				["coord"] = { 75.8, 24.2, THE_AZURE_SPAN },
+				["description"] = "Requires 4 players. Kill the Lost Elemental, then each player needs to click on a different Lava Orb to open a nearby cave. Kill the Stranded Soul inside the cave and loot the quest item.",
+				["g"] = {
+					i(197137),	-- Highland Drake: Spined Nose (DM!)
+					i(197141),	-- Highland Drake: Scaled Pattern (DM!)
+				},
+				-- Lost Elemental ID 196900
+				-- Lava Orb ID 196901
+				-- Stranded Soul ID 197183
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(72358, {	-- Cascade

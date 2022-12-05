@@ -514,7 +514,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(202117),	-- Assembly Preserver's Band
 			i(202118),	-- Assembly Guardian's Ring
 			i(202119),	-- Assembly Scholar's Loop
-			i(202200),	-- Solemn Seashell String
 		}),
 		filter(BATTLE_PETS, {
 			i(191126),	-- Obsidian Whelpling
@@ -843,7 +842,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199842),	-- Stone Dragontooth
 			i(199895),	-- Chunk of Sculpture
 			i(199915),	-- Ancient Obsidian Charm
-			i(200528),	-- Glowing Arcane Jewel
 			i(201411),	-- Ancient Vault Artifact
 			i(201412),	-- Ancient Vault Artifact
 		}),
@@ -1066,9 +1064,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197131),	-- Highland Drake: Hairy Cheek
 			i(197134),	-- Highland Drake: Spiked Legs
 			i(197136),	-- Highland Drake: Taperered Nose
-			i(197137),	-- Highland Drake: Spined Nose
 			i(197138),	-- Highland Drake: Striped Pattern
-			i(197141),	-- Highland Drake: Scaled Pattern
 			i(197146),	-- Highland Drake: White Scales
 			i(197150),	-- Highland Drake: Spiked Club Tail
 			i(197152),	-- Highland Drake: Hooked Tail
@@ -1169,7 +1165,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200194),	-- Nokhud Battle Tunic
 			i(200196),	-- Nokhud Battle Barding
 			i(200201),	-- Nokhud Battlegear
-			i(200205),	-- Tome of Polymorph: Duck
 			i(200218),	-- Charred Fishing Pole
 			i(200443),	-- Dragon Isles Artifact
 			i(200447),	-- Centaur Hunting Trophy

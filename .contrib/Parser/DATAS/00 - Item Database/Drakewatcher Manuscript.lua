@@ -122,9 +122,9 @@ i(197120, 69321);	-- Highland Drake: Ornate Helm
 i(197138, 69339);	-- Highland Drake: Pattern 1
 i(197139, 69340);	-- Highland Drake: Pattern 2
 i(197140, 69341);	-- Highland Drake: Pattern 3
-i(197141, 69342);	-- Highland Drake: Pattern 4
 i(197110, 69311);	-- Highland Drake: Plated Head
 i(197144, 69345);	-- Highland Drake: Red Scales
+i(197141, 69342);	-- Highland Drake: Scaled Pattern
 i(197091, 69291);	-- Highland Drake: Silver and Blue Armor
 i(197093, 69294);	-- Highland Drake: Silver and Purple Armor
 i(197112, 69313);	-- Highland Drake: Single Horned Head
