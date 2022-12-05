@@ -835,7 +835,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198133),	-- Golden Expedition Compass
 			i(198134),	-- Shiny Surveyor Scope
 			i(198135),	-- Jeb's Supply Pack
-			i(198626),	-- Dislodged Dragoneye
 			i(199691),	-- Primal Earth Core
 			i(199748),	-- Primal Water Core
 			i(199749),	-- Primal Air Core

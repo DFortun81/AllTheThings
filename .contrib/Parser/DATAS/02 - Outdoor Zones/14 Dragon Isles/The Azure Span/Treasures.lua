@@ -30,12 +30,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(198658),	-- Decay-Infused Tanning Oil
 				},
 			}),
-			o(380518, {	-- Dislodged Dragoneye
-				["coord"] = { 60.5, 57.9, THE_AZURE_SPAN },
-				["g"] = {
-					i(198626),	-- Dislodged Dragoneye
-				},
-			}),
 			o(381158, {	-- Gnoll Fiend Flail
 				["coord"] = { 54.0, 43.8, THE_AZURE_SPAN },
 				-- ["questID"] = ,
