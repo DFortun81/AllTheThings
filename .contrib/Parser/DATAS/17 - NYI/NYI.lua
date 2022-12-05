@@ -680,8 +680,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201883),	-- Empty Magma Shell
 		}),
 		n(PROFESSIONS, {
-			i(192132),	-- Draconium Blade Sharpener
-			i(193899),	-- Primalweave Spindle
 			i(193900),	-- Prismatic Focusing Shard
 			i(193901),	-- Primal Dust
 			i(193905),	-- Iskaaran Trading Ledger
@@ -751,7 +749,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198841),	-- Large Sample of Curious Hide
 			i(198963),	-- Decaying Phlegm
 			i(198964),	-- Elementious Splinter
-			i(198965),	-- Primeval Earth Fragment
 			i(198966),	-- Molten Globule
 			i(198967),	-- Primordial Aether
 			i(198968),	-- Primalist Charm

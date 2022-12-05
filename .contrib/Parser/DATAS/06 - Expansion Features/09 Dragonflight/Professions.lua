@@ -342,6 +342,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 				["cost"] = { { "i", 201601, 2 }, },	-- 2xRuned Serevite Rod
 			}),
+			q(70251, {	-- Hidden Profession Master Enchanting
+				["name"] = "Hidden Profession Master: Enchanting",
+				["provider"] = { "n", 194837 },		-- Shalasar Glimmerdusk
+				["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
+				["timeline"] = { ADDED_DF_REL },
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
 			q(74110, {	-- Inscription-Order: Enchanting
 				["name"] = "Inscription-Order: Enchanting",
 				["provider"] = { "i", 194702 },		-- Draconic Treatise on Enchanting
@@ -406,12 +413,33 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 190535 },	-- Quizla Blastcaps
 				["coord"] = { 75.9, 33.2, THE_WAKING_SHORES },
 			}),
+			q(70252, {	-- Hidden Profession Master Engineering
+				["name"] = "Hidden Profession Master: Engineering",
+				["provider"] = { "n", 194838 },		-- Frizz Buzzcrank
+				["coord"] = { 17.7, 21.6, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_DF_REL },
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
 			q(74111, {	-- Inscription-Order: Engineering
 				["name"] = "Inscription-Order: Engineering",
 				["provider"] = { "i", 198510 },		-- Draconic Treatise on Engineering
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66379, {	-- Weekly Engineering Knowledgepoint #1
+				["name"] = "Weekly Engineering Knowledgepoint #1",
+				["provider"] = { "i", 193902 },		-- Eroded Titan Gizmo
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66380, {	-- Weekly Engineering Knowledgepoint #2
+				["name"] = "Weekly Engineering Knowledgepoint #2",
+				["provider"] = { "i", 193903 },		-- Watcher Power Core
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
 		}),
@@ -495,6 +523,20 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			q(74105, {	-- Inscription-Order: Inscription
 				["name"] = "Inscription-Order: Inscription",
 				["provider"] = { "i", 194699 },		-- Draconic Treatise on Inscription
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(66944, {	-- Weekly Inscription Knowledgepoint #1
+				["name"] = "Weekly Inscription Knowledgepoint #1",
+			--	["provider"] = { "i", 198968 },		-- Primalist Charm
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
+			q(70592, {	-- Weekly Inscription Knowledgepoint #2
+				["name"] = "Weekly Inscription Knowledgepoint #2",
+			--	["provider"] = { "i", 193900 },		-- Prismatic Focusing Shard
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
