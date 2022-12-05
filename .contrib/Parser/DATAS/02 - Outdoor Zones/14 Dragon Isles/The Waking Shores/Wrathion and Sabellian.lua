@@ -97,6 +97,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				n(BONUS_OBJECTIVES, {
+					q(66903, {	-- Clearing the Vault
+						["coord"] = { 26.7, 62.2, THE_WAKING_SHORES },
+						["repeatable"] = true,
+						-- Sometimes double triggers, rewarding you twice with the rep
+					}),
 					q(67027, {	-- Death's Shadow
 						["provider"] = { "n", 190985 },	-- Death's Shadow
 						["coord"] = { 29.6, 56.7, THE_WAKING_SHORES },
