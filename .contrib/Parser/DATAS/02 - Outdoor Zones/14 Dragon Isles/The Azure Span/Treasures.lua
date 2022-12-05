@@ -113,6 +113,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(199842),	-- Stone Dragontooth
 				},
 			}),
+			o(380554, {	-- Well-Danced Drum
+				["coord"] = { 12.5, 49.4, THE_AZURE_SPAN },
+				["requireSkill"] = LEATHERWORKING,
+				["g"] = {
+					i(201018),	-- Well-Danced Drum
+				},
+			}),
 			o(381354, {	-- Wrapped Gold Band
 				["coord"] = { 47.3, 24.6, THE_AZURE_SPAN },
 				["g"] = {
