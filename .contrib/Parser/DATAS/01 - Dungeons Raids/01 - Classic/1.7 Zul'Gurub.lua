@@ -1200,6 +1200,11 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					},
 				}),
 			}),
+			prof(FISHING, {
+				i(19975, {	-- Zulian Mudskunk
+					["provider"] = { "o", 180369 },	-- Muddy Churning Waters
+				}),
+			}),
 			prof(HERBALISM, {
 				i(19726, {	-- Bloodvine
 					["cost"] = {
