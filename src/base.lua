@@ -215,7 +215,7 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 	StaticPopup_Hide ("ALL_THE_THINGS_EDITBOX");
 	StaticPopup_Show ("ALL_THE_THINGS_EDITBOX");
 end
-function app:ShowPopupDialogWithMultiLineEditBox(text, onclick)
+function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 	if not ATTEditBox then
 		local f = CreateFrame("Frame", "ATTEditBox", UIParent, "DialogBoxFrame")
 		f:SetPoint("CENTER")
@@ -236,11 +236,17 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick)
 		end)
 		f:SetScript("OnMouseUp", f.StopMovingOrSizing)
 
+		-- Label
+		local l = f:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+		l:SetPoint("TOP", f, "TOP", 0, -3);
+		l:SetJustifyH("CENTER");
+		f.Label = l;
+
 		-- ScrollFrame
 		local sf = CreateFrame("ScrollFrame", "ATTEditBoxScrollFrame", ATTEditBox, "UIPanelScrollFrameTemplate")
 		sf:SetPoint("LEFT", 16, 0)
 		sf:SetPoint("RIGHT", -32, 0)
-		sf:SetPoint("TOP", 0, -16)
+		sf:SetPoint("TOP", l, "BOTTOM", 0, -5)
 		sf:SetPoint("BOTTOM", ATTEditBoxButton, "TOP", 0, 0)
 
 		-- EditBox
@@ -289,8 +295,9 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick)
 		ATTEditBoxEditBox:HighlightText();
 		ATTEditBoxEditBox:SetFocus();
 	end
+	ATTEditBox.Label:SetText(label or "");
 	ATTEditBox:Show()
 end
 function app:ShowPopupDialogToReport(reportReason, text)
-	app:ShowPopupDialogWithEditBox((reportReason or "Missing Data").."\n"..app.L["PLEASE_REPORT_MESSAGE"]..app.L["REPORT_TIP"], text);
+	app:ShowPopupDialogWithMultiLineEditBox(text, nil, (reportReason or "Missing Data").."\n"..app.L["PLEASE_REPORT_MESSAGE"]..app.L["REPORT_TIP"]);
 end

@@ -87,7 +87,7 @@ app.report = function(...)
 	if ... then
 		app.print(...);
 	end
-	app.print(app.Version .. L["PLEASE_REPORT_MESSAGE"]);
+	app.print(app.Version..": "..L["PLEASE_REPORT_MESSAGE"]);
 end
 app.PrintGroup = function(group,depth)
 	depth = depth or 0;
