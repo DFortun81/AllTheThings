@@ -94,4 +94,5 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	q(70908),	-- Maruuk Hunts // HQ to reward you with Reputation after each Stage
 	q(70907),	-- Hunt concluded // White Bag
 	q(70906),	-- Hunt concluded // Epic Bag
+	q(73942),	-- Tsokorg killed in Thaldraszus
 }));

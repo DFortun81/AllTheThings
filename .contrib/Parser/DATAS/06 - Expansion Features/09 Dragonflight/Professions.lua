@@ -965,7 +965,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			q(70258, {	-- Hidden Profession Master Skinning
+			q(70259, {	-- Hidden Profession Master Skinning
 				["name"] = "Hidden Profession Master: Skinning",
 				["provider"] = { "n", 194844 },		-- Zenzi
 				["coord"] = { 73.3, 69.7, THE_WAKING_SHORES },
