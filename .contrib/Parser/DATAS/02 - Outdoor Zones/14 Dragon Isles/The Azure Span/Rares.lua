@@ -34,7 +34,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193116, {	-- Beogoka
 				["coord"] = { 73.0, 26.6, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 73868,
 				["g"] = {
 					i(200673),	-- Beogoka's Tooth and Claw
 				},

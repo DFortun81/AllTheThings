@@ -10,6 +10,26 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					-- ["questID"] = ,
 					["g"] = {
 						i(200246),	-- Lost Delving Lamp
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+			}),
+			m(THALDRASZUS, {
+				n(195431, {	-- Diluu
+					["coord"] = { 50.8, 46.6, THALDRASZUS },
+					["questID"] = 73912,
+					["isDaily"] = true, 
+					["g"] = {
+						i(196983),	-- Cliffside Wylderdrake: Maned Jaw
+						i(197125),	-- Highland Drake: Coiled Horns
+					},
+				}),
+				n(195417, {	-- Tsokorg
+					["coord"] = { 50.0, 47.8, THALDRASZUS },
+					["questID"] = 73942,
+					["isDaily"] = true, 
+					["g"] = {
+						-- is part of the DF>Global Rare Loottable
 					},
 				}),
 			}),
@@ -46,6 +66,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["questID"] = 73938,
 					["isDaily"] = true, 
 					["g"] = {
+						i(200684),	-- Emerald Tailbone
 						-- is part of the DF>Global Rare Loottable
 					},
 				}),
@@ -70,6 +91,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["questID"] = 73947,
 					["isDaily"] = true, 
 					["coord"] = { 66.1, 51.2, THE_AZURE_SPAN },
+					["g"] = {
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+				n(194760, {	-- Uurhilt
+					["questID"] = 73944,
+					["isDaily"] = true, 
+					["coord"] = { 36.3, 36.9, THE_AZURE_SPAN },
 					["g"] = {
 						-- is part of the DF>Global Rare Loottable
 					},
@@ -153,6 +182,4 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	q(70908),	-- Maruuk Hunts // HQ to reward you with Reputation after each Stage
 	q(70907),	-- Hunt concluded // White Bag
 	q(70906),	-- Hunt concluded // Epic Bag
-	q(73942),	-- Tsokorg killed in Thaldraszus
-	q(73912),	-- Diluu killed in Thaldraszus
 }));

@@ -50,10 +50,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				194601,	-- Zagdech
 				194608,	-- Kholdeg
 				194624,	-- Zumakh
-				195417,	-- Tsokorg
 				197009,	-- Liskheszaera
 				197353,	-- Blisterhide
-				-- The Hunt Mobs
+				-- The Hunt Mobs -- Thaldraszus
+				195417,	-- Tsokorg
+				-- The Hunt Mobs -- The Azure
 				194761,	-- Khuumog
 				194763,	-- Tenmod
 				195132, -- Tevgai
