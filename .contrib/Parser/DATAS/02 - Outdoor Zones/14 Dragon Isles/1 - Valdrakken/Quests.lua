@@ -261,22 +261,21 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
 		q(72596),	-- After Open Orientation
 		q(69935),	-- triggered with 'A Dryadic Remedy' (67606)
+		q(72011),	-- triggeres when accepting 'The Ruby Feast!' (71238)
+		q(72258),	-- triggered with 'A Dryadic Remedy' (71238) and with '10,000 Years of Roasting' (67063)
+		q(67055),	-- triggered with 'Warm Away These Shivers' (67047)
+		q(72009),	-- triggered with 'Warm Away These Shivers' (67047)
 
 		-- q(70570),	-- Talked with Watcher Koranos
 		-- q(65041),	-- Memories of Scoroxia(On wowhead? Something you should return with??) / Talked with Scalecommanders Cindretresh and Azurathel
-		-- q(72011),	-- Starting Ruby Feast
+		
 		-- q(71243),	-- Weekly Quest?
 
-		-- q(67055),	-- Both These popped when doing Ruby Feast
-		-- q(72009),
-
-		-- q(72258),	-- Popped when completed Ruby Feast Quest 100000 years roast
-		-- q(67056),	-- ^^
+		-- q(67056),	-- popped when doing Ruby Feast
 
 		-- q(72369),	-- Unknown popped when HS to valdrakken
 		-- q(72366),	-- Also Unknown
 
 		-- q(72892),	-- After "Aiding the Accord" series
-		-- q(72673),	-- After turning in [71227]
 	}),
 }));

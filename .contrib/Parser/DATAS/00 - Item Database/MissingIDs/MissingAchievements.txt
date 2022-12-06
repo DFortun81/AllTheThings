@@ -2920,7 +2920,6 @@ ach(16548),	-- It Takes a Tuskarr Buddy \\ It takes a (Tuskarr) village.
 ach(16549),	-- Popular Around the Isles
 10.0.0.45570
 ach(16556),	-- Great Gourmand of The Ruby Feast
-ach(16569),	-- Cobalt Enthusiast
 ach(16589),	-- Malicia's Challenge
 ach(16590),	-- A Champion's Tour: Dragon Isles
 ach(16592),	-- Tour of Duty: The Waking Shores

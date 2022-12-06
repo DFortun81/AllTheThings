@@ -696,7 +696,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194079),	-- Pure Serevite Nugget
 			i(194080),	-- Peculiar Bud
 			i(194081),	-- Mutated Root
-			i(198606),	-- Blacksmith's Writ
 			i(198607),	-- Scribe's Glyphs
 			i(198608),	-- Alchemy Notes
 			i(198609),	-- Tailoring Examples
@@ -1747,7 +1746,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199553),	-- Memory of Unity
 			i(200680),	-- Maruukai Mule
 			i(200681),	-- Ohn Lite
-			i(200759),	-- Aruunem Berrytart
 			i(200854),	-- Cooked Caviar
 			i(200856),	-- Sideboat
 			i(200862),	-- Experimental Duck Feed
@@ -1756,8 +1754,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200965),	-- Horde Dueling Flag
 			i(201090),	-- Bivigosa's Blood Sausages
 			i(201092),	-- Lava Spices
-			i(200885),	-- Cinna-Cinderbloom Tea
-			i(200886),	-- Lemon Silverleaf Tea
 			i(200887),	-- Charred Porter
 			i(200888),	-- Coal-Fired Rib Rack
 			i(200889),	-- Highly-Spiced Haunch

@@ -12,6 +12,9 @@ local TALLSTRIDER_SINEW = 201404;
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_AZURE_SPAN, {
 		faction(2550, {	-- Cobalt Assembly
+			n(ACHIEVEMENTS, {
+				ach(16569),	-- Cobalt Enthusiast
+			}),
 			n(QUESTS, {
 				q(71094, {	-- Help Is Our Way!
 					["sourceQuests"] = { 72435 },	-- Welcome to the Assembly
@@ -260,3 +263,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		}),
 	}),
 })));
+root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+	m(THE_AZURE_SPAN, {
+		q(72091),	-- triggers with 'Cobalt Enthusiast' achievement (16569)
+	}),
+}));

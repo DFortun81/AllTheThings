@@ -107,6 +107,80 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199659),	-- Red Dragonspawn Shoulderpads
 				},
 			}),
+				-- RENOWN 12 --
+			q(68794, {	-- Ally of Dragons
+				["description"] = "Requires Renown 12. Spawns Anywhere on Dragon Isles.",
+				["provider"] = { "n", 197478 },	-- Herald Flaps
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+			}),
+				-- RENOWN 13 --
+			q(70903, {	-- Wielding Titanic Might
+				["description"] = "Requires Renown 13.",
+				["provider"] = { "n", 195768 },	-- Sorotis
+				["coord"] = { 26.1, 40.0, VALDRAKKEN },
+				["g"] = {
+					i(199772),	-- Titan Gatekeeper's Shield
+					i(199773),	-- Titan Watcher's Scepter
+				},
+			}),
+				-- STORY LINE CHAPTER 2
+			q(67074, {	-- The Gift of Silver
+				["sourceQuest"] = 68794,	-- Ally of Dragons
+				["description"] = "Requires Renown 12.",
+				["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
+				["coord"] = { 58.5, 35.7, VALDRAKKEN },
+			}),
+			q(70703, {	-- The Legacy of Tyrhold
+				["sourceQuest"] = 67074,	-- The Gift of Silver
+				["description"] = "Requires Renown 12.",
+				["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
+				["coord"] = { 58.5, 35.7, VALDRAKKEN },
+			}),
+			q(67075, {	-- The Magic Within
+				["sourceQuest"] = 70703,	-- The Legacy of Tyrhold
+				["description"] = "Requires Renown 12.",
+				["provider"] = { "n", 192480 },	-- Watcher Koranos
+				["coord"] = { 58.2, 58.8, THALDRASZUS },
+			}),
+			q(67076, {	-- A Spark of Discovery
+				["sourceQuest"] = 67075,	-- The Magic Within
+				["description"] = "Requires Renown 12.",
+				["provider"] = { "n", 192480 },	-- Watcher Koranos
+				["coord"] = { 58.2, 58.8, THALDRASZUS },
+			}),
+			q(67077, {	-- Memories of the Past
+				["sourceQuest"] = 67076,	-- A Spark of Discovery
+				["description"] = "Requires Renown 12.",
+				["provider"] = { "n", 192573 },	-- Alexstrasza the Life-Binder
+				["coord"] = { 62.1, 59.3, THALDRASZUS },
+			}),
+			q(67078, {	-- Parting Instructions
+				["sourceQuest"] = 67077,	-- Memories of the Past
+				["description"] = "Requires Renown 12.",
+				["provider"] = { "n", 192496 },	-- Keeper Tyr
+				["coord"] = { 62.2, 59.2, THALDRASZUS },
+			}),
+			q(67079, {	-- Hard Lock Life
+				["sourceQuest"] = 67078,	-- Parting Instructions
+				["description"] = "Requires Renown 12.",
+				["provider"] = { "n", 192480 },	-- Watcher Karanos
+				["coord"] = { 60.4, 58.9, THALDRASZUS },
+			}),
+			q(67081, {	-- An Infusion of Materials
+				["sourceQuest"] = 67079,	-- Hard Lock Life
+				["description"] = "Requires Renown 12.",
+				["provider"] = { "n", 192496 },	-- Keeper Tyr
+				["coord"] = { 60.5, 58.6, THALDRASZUS },
+			}),
+			q(67084, {	-- The Silver Purpose
+				["sourceQuest"] = 67081,	-- An Infusion of Materials
+				["description"] = "Requires Renown 12.",
+				["provider"] = { "n", 192496 },	-- Keeper Tyr
+				["coord"] = { 60.5, 58.6, THALDRASZUS },
+				["g"] = {
+					i(201781),	-- Memory of Tyr
+				},
+			}),
 		}),
 	}),
 })));
@@ -117,5 +191,11 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(72672),	-- triggered with 'A Hand In Cultivation' (70883)
 		q(72682),	-- triggered with 'Feeling Freedom' (70887)
 		q(72685),	-- triggered with 'Rubbing Shoulders With The Best' (70888)
+		q(72403),	-- triggered when reaching renown 12 with Valdrakken Accord
+		q(72688),	-- triggered with 'All of Dragons' (68794)
+		q(72776),	-- triggered with 'All of Dragons' (68794)
+		q(70974),	-- triggers right after 'Hard Lock Life' (67079)
+		q(72757),	-- triggered with 'The Silver Purpose' (67084)
+		q(72694),	-- triggered with 'Wielding Titanic Might' (70903)
 	}),
 })));

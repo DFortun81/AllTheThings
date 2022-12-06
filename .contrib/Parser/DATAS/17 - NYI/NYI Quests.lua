@@ -7057,7 +7057,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(67049),	--
 			q(67052),	--
 			q(67054),	--
-			q(67055),	--
 			q(67056),	--
 			q(67057),	--
 			q(67058),	--
@@ -7178,7 +7177,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69959),	--
 			q(69960),	--
 			q(69961),	--
-			q(69963),	--
 			q(69964),	--
 			q(69966),	--
 			q(69967),	--
@@ -8044,9 +8042,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72006),	--
 			q(72007),	--
 			q(72008),	--
-			q(72009),	--
 			q(72010),	--
-			q(72011),	--
 			q(72012),	--
 			q(72013),	--
 			q(72014),	--
@@ -8076,7 +8072,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72084),	--
 			q(72090),	--
 			-- 10.0.0.45570
-			q(72091),	--
 			q(72093),	--
 			q(72094),	--
 			q(72106),	--
@@ -8116,7 +8111,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72254),	--
 			q(72255),	--
 			q(72257),	--
-			q(72258),	--
 			q(72264),	--
 			q(72265),	--
 			q(72271),	--
@@ -8204,7 +8198,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72400),	--
 			q(72401),	--
 			q(72402),	--
-			q(72403),	--
 			q(72404),	--
 			q(72407),	--
 			q(72410),	--
@@ -8274,22 +8267,17 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72647),	--
 			q(72648),	--
 			q(72649),	--
-			q(72669),	--
-			q(72672),	--
-			q(72673),	--
 			q(72676),	--
 			q(72683),	--
 			q(72684),	--
 			q(72685),	--
 			q(72686),	--
 			q(72687),	--
-			q(72688),	--
 			q(72689),	--
 			q(72690),	--
 			q(72691),	--
 			q(72692),	--
 			q(72693),	--
-			q(72694),	--
 			q(72695),	--
 			q(72696),	--
 			q(72697),	--
@@ -8322,7 +8310,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72752),	--
 			q(72753),	--
 			q(72756),	--
-			q(72757),	--
 			q(72758),	--
 			q(72759),	--
 			q(72761),	--
@@ -8336,10 +8323,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72770),	--
 			q(72771),	--
 			q(72772),	--
-			q(72773),	--
 			q(72774),	--
 			q(72775),	--
-			q(72776),	--
 			q(72777),	--
 			q(72778),	--
 			q(72779),	--

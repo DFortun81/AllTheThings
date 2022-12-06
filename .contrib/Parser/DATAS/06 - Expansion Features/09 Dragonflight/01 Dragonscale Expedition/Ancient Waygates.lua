@@ -58,6 +58,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["g"] = {
 						ach(16291),	-- An Ancient Awakening
 						i(198858),	-- Energized Arcana Vessel
+						crit(2, {	-- Cobalt Assembly
+							["achievementID"] = 16292,	-- Mastering the Waygates
+						}),
+						crit(3, {	-- Rubyscale Outpost
+							["achievementID"] = 16292,	-- Mastering the Waygates
+						}),
 					},
 				}),
 					-- RENOWN 8 --
@@ -73,6 +79,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 					["g"] = {
 						i(200527),	-- Enchanted Arcana Vessel
+						crit(7, {	-- Rusza'thar Reach
+							["achievementID"] = 16292,	-- Mastering the Waygates
+						}),
 					},
 				}),
 				q(71157, {	-- Waygate: Skytop Observatory
@@ -82,6 +91,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 					["g"] = {
 						i(200556),	-- Enchanted Arcana Vessel
+						crit(8, {	-- Skytop Observatory
+							["achievementID"] = 16292,	-- Mastering the Waygates
+						}),
 					},
 				}),
 				q(71161, {	-- Waygate: Vakthros
@@ -91,6 +103,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 					["g"] = {
 						i(200557),	-- Enchanted Arcana Vessel
+						crit(6, {	-- Vakthros
+							["achievementID"] = 16292,	-- Mastering the Waygates
+						}),
 					},
 				}),
 				q(71162, {	-- Waygate: Algeth'era
@@ -100,6 +115,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 					["g"] = {
 						i(200558),	-- Enchanted Arcana Vessel
+						crit(1, {	-- Algeth'era
+							["achievementID"] = 16292,	-- Mastering the Waygates
+						}),
 					},
 				}),
 				q(71165, {	-- Waygate: Eon's Fringe
@@ -109,6 +127,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 					["g"] = {
 						i(200560),	-- Enchanted Arcana Vessel
+						crit(5, {	-- Eon's Fringe
+							["achievementID"] = 16292,	-- Mastering the Waygates
+						}),
 					},
 				}),
 				q(71178, {	-- Waygate: Shady Sanctuary
@@ -118,6 +139,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 					["g"] = {
 						i(199556),	-- Enchanted Arcana Vessel
+						crit(4, {	-- Shady Sanctuary
+							["achievementID"] = 16292,	-- Mastering the Waygates
+						}),
 					},
 				}),
 					-- RENOWN 10 --

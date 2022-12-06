@@ -321,6 +321,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(194963),	-- Plans: Black Dragon Seared Alloy
 				},
 			}),
+			q(66517, { -- A New Source of Weapons
+				--["sourceQuests"] = {  },	-- Unknown
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["coord"] = { 36.8, 63.6, VALDRAKKEN },
+				["g"] = {
+					i(198606),	-- Blacksmith's Writ
+				},
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
 			q(70250, {	-- Hidden Profession Master Blacksmith	-- bugged
 				["name"] = "Hidden Profession Master: Blacksmith",
 				["provider"] = { "n", 194836 },		-- Grekka Anvilsmash

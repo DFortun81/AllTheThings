@@ -14,7 +14,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193664, {	-- Ancient Protector
 				["coord"] = { 59.5, 59.2, THALDRASZUS },
-				-- ["questID"] = 69963,
+				["questID"] = 74055,
 				-- ["g"] = {
 
 				-- },

@@ -978,6 +978,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(BONUS_OBJECTIVES, {
+				q(69963, {	-- Ancient Protector
+					["provider"] = { "n", 193664 },	-- Ancient Protector
+					["coord"] = { 59.0, 58.8, THALDRASZUS },
+					["isDaily"] = true,
+				}),
 				q(69962, {	-- Corrupted Proto-Dragon
 					["provider"] = { "n", 193658 },	-- Corrupted Proto-Dragon
 					["coord"] = { 44.8, 69.0, THALDRASZUS },
@@ -1249,6 +1254,5 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72369),	-- triggered after completing 'Moving On' (66221)
 		-- q(72084),	-- Popped during Quest at South Gate?
 		-- q(70511),	-- Popped when doing quest and lootning 198964 Elementious Splinter from mobs?
-		-- q(72672),	-- Pop when I completed [70883] and choose 'Dragon Garden Shovel'.
 	}),
 }));

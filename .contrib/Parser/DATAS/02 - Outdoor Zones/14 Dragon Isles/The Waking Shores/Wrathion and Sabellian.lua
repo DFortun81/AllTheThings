@@ -623,6 +623,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						{"i",193201, 3},	-- 3x Key Framing
 					},
 				}),
+				i(200857),	-- Talisman of Sargha (TOY!)
 			}),
 		}),
 	}),
