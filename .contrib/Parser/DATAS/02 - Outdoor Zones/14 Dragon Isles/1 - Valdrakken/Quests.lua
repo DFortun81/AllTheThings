@@ -262,7 +262,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72596),	-- After Open Orientation
 		q(69935),	-- triggered with 'A Dryadic Remedy' (67606)
 		q(72011),	-- triggeres when accepting 'The Ruby Feast!' (71238)
-		q(72258),	-- triggered with 'A Dryadic Remedy' (71238) and with '10,000 Years of Roasting' (67063)
+		q(72258),	-- triggered with 'A Dryadic Remedy' (71238) and with '10,000 Years of Roasting' (67063) - triggers off a line of text from Coulisa, the steward at the door - spell ID 393805
 		q(67055),	-- triggered with 'Warm Away These Shivers' (67047)
 		q(72009),	-- triggered with 'Warm Away These Shivers' (67047)
 

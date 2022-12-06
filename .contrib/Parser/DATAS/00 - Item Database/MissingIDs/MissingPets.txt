@@ -604,41 +604,28 @@ p(3257),	-- Test Beetle
 p(3260),	-- Snowy Treeflitter \\ [PH] White Flying Squirrel
 p(3266),	-- Black Slyvern Pup \\ [PH] Black Baby Slyvern
 p(3268),	-- Swog
-p(3280),	-- Shyfly \\ Dragonshy \\ [PH] Walnut Flying Squirrel
-p(3281),	-- Scruffy Ottuk
-p(3283),	-- Snowlemental
-p(3288),	-- Trunkalumpf \\ [PH] Dark Baby Mammoth
 p(3289),	-- Echo of the Inferno \\ Green Baby Mammoth \\ [PH] Green Baby Mammoth
-p(3295),	-- Igneoid
 p(3299),	-- Echo of the Depths \\ Purple Baby Salamanther \\ [PH] Purple Baby Salamanther
-p(3301),	-- Wild Duckling
 p(3307),	-- Plucky Duckling \\ [PH] White Baby Duck
 p(3308),	-- Time-Lost Duckling \\ [PH] Yellow Baby Duck
 p(3310),	-- Echo of the Heights \\ Brown Duck \\ [PH] Brown Duck
 p(3311),	-- Ohuna Companion \\ White Duck \\ [PH] White Duck
-p(3313),	-- Grassland Stomper \\ Armoredon Calf \\ [PH] Black Baby Thunder Lizard
 p(3318),	-- Thunderfoot Calf \\ [PH] Light Baby Thunder Lizard
 p(3320),	-- Whitewhisker \\ [PH] White Baby Slyvern
-p(3322),	-- Woodbiter Piculet \\ Woodland Piculet \\ [PH] Blue Woodpecker
 p(3325),	-- Bakar Companion \\ White Woodpecker \\ [PH] White Woodpecker
 p(3327),	-- Dusky Timbertooth \\ [PH] Brown Baby Timbertooth
-p(3328),	-- Tiny Timbertooth \\ [PH] Dark Baby Timbertooth
 p(3329),	-- Storm-Touched Timbertooth \\ Light Baby Timbertooth \\ [PH] Light Baby Timbertooth
 p(3335),	-- Pale Baby Vorquin \\ [PH] Pale Baby Vorquin
-p(3336),	-- Vorquin Runt
 p(3338),	-- Sapphire Crystalspine \\ [PH] Blue Crystalspine
 p(3339),	-- Black Dragon Whelp \\ [PH] Black Dragon Whelp
 p(3340),	-- Blue Dragon Whelp \\ [PH] Blue Dragon Whelp
 p(3341),	-- Red Dragon Whelp \\ [PH] Red Dragon Whelp
 p(3342),	-- Spyragos
 p(3343),	-- Bronze Dragon Whelp \\ [PH] Bronze Dragon Whelp
-p(3351),	-- Grizzlefur Cub \\ Grizzlefur Cub \\ Grizzlefury Cub \\ Grizzlefury Cub \\ [PH] Black Primal Bear Cub
 p(3352),	-- Razortooth Bear Cub \\ [PH] Red Primal Bear Cub
 p(3354),	-- Storm-Touched Ottuk \\ Green Baby Turtle \\ [PH]Green Baby Turtle
 p(3355),	-- Echo of the Cave \\ Orange Baby Turtle \\ [PH] Orange Baby Turtle
 p(3356),	-- Chalkshell Turtle \\ [PH] White Baby Turtle
-p(3357),	-- Azure Crystalspine \\ [PH] Navy Blue Crystalspine
-p(3358),	-- Crimsonspine \\ [PH] Red Crystalspine
 p(3359),	-- Snowclaw Cub \\ [PH] White Primal Bear Cub
 p(3360),	-- Bugbiter Tortoise \\ [PH] Teal Baby Turtle
 p(3361),	-- Diamond Crab \\ [PH] Bling Crab (Diamond)
@@ -666,8 +653,6 @@ p(3398),	-- Cat
 p(3400),	-- Chicken
 p(3401),	-- Arcantus
 p(3402),	-- Stormamu
-p(3403),	-- Blue Dasher
-p(3404),	-- Polliswog
 10.0.0.45454
 p(3406),	-- Lady Feathersworth
 10.0.0.45570
