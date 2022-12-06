@@ -359,13 +359,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			--[[q(66382, {	-- Weekly Blacksmith Knowledgepoint #3
+			q(70513, {	-- Weekly Blacksmith Knowledgepoint #3
 				["name"] = "Weekly Blacksmith Knowledgepoint #3",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["provider"] = { "i", 198966 },		-- Molten Globule
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),--]]
+			}),
 		}),
 		prof(COOKING, {
 			q(72250, {	-- Dragon Isles Cooking

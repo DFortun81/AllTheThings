@@ -12,6 +12,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		i(192132),	-- Draconium Blade Sharpener
 		i(198965),	-- Primeval Earth Fragment
 		i(192131),	-- Valdrakken Weapon Chain
+		i(198966),	-- Molten Globule
 		-- Enchanting 3/3
 		i(198967),	-- Primordial Aeather
 		i(193901),	-- Primal Dust
