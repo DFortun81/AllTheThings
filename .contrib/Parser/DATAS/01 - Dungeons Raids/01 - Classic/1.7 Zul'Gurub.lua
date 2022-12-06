@@ -1231,116 +1231,17 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				["description"] = "These can randomly mind control a nearby player. Be careful.\n\nAlso don't kill them! (Looking at you, Diz!)",
 				["groups"] = {
 					i(19727, {	-- Blood Scythe
-						["requireSkill"] = SKINNING,
+						["requireSkill"] = HERBALISM,
 					}),
-					{
-						["itemID"] = 19821,	-- Punctured Voodoo Doll [Druid]
-						["cost"] = {
-							{ "i", 19939, 1 },	-- Gri'lek's Blood
-							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-							{ "i", 19940, 1 },	-- Renataki's Tooth
-							{ "i", 19941, 1 },	-- Wushoolay's Mane
-						},
-						["groups"] = {
-							i(19955),	-- Wushoolay's Charm of Nature [Druid]
-						},
-					},
-					{
-						["itemID"] = 19814,	-- Punctured Voodoo Doll [Rogue]
-						["cost"] = {
-							{ "i", 19939, 1 },	-- Gri'lek's Blood
-							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-							{ "i", 19940, 1 },	-- Renataki's Tooth
-							{ "i", 19941, 1 },	-- Wushoolay's Mane
-						},
-						["groups"] = {
-							i(19954),	-- Renataki's Charm of Trickery [Rogue]
-						},
-					},
-					{
-						["itemID"] = 19816,	-- Punctured Voodoo Doll [Hunter]
-						["cost"] = {
-							{ "i", 19939, 1 },	-- Gri'lek's Blood
-							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-							{ "i", 19940, 1 },	-- Renataki's Tooth
-							{ "i", 19941, 1 },	-- Wushoolay's Mane
-						},
-						["groups"] = {
-							i(19953),	-- Renataki's Charm of Beasts [Hunter]
-						},
-					},
-					{
-						["itemID"] = 19819,	-- Punctured Voodoo Doll [Warlock]
-						["cost"] = {
-							{ "i", 19939, 1 },	-- Gri'lek's Blood
-							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-							{ "i", 19940, 1 },	-- Renataki's Tooth
-							{ "i", 19941, 1 },	-- Wushoolay's Mane
-						},
-						["groups"] = {
-							i(19957),	-- Hazza'rah's Charm of Destruction [Warlock]
-						},
-					},
-					{
-						["itemID"] = 19813,	-- Punctured Voodoo Doll [Warrior]
-						["cost"] = {
-							{ "i", 19939, 1 },	-- Gri'lek's Blood
-							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-							{ "i", 19940, 1 },	-- Renataki's Tooth
-							{ "i", 19941, 1 },	-- Wushoolay's Mane
-						},
-						["groups"] = {
-							i(19951),	-- Gri'lek's Charm of Might [Warrior]
-						},
-					},
-					{
-						["itemID"] = 19818,	-- Punctured Voodoo Doll [Mage]
-						["cost"] = {
-							{ "i", 19939, 1 },	-- Gri'lek's Blood
-							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-							{ "i", 19940, 1 },	-- Renataki's Tooth
-							{ "i", 19941, 1 },	-- Wushoolay's Mane
-						},
-						["groups"] = {
-							i(19959),	-- Hazza'rah's Charm of Magic [Mage]
-						},
-					},
-					{
-						["itemID"] = 19820,	-- Punctured Voodoo Doll [Priest]
-						["cost"] = {
-							{ "i", 19939, 1 },	-- Gri'lek's Blood
-							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-							{ "i", 19940, 1 },	-- Renataki's Tooth
-							{ "i", 19941, 1 },	-- Wushoolay's Mane
-						},
-						["groups"] = {
-							i(19958),	-- Hazza'rah's Charm of Healing [Priest]
-						},
-					},
-					{
-						["itemID"] = 19815,	-- Punctured Voodoo Doll [Paladin]
-						["cost"] = {
-							{ "i", 19939, 1 },	-- Gri'lek's Blood
-							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-							{ "i", 19940, 1 },	-- Renataki's Tooth
-							{ "i", 19941, 1 },	-- Wushoolay's Mane
-						},
-						["groups"] = {
-							i(19952),	-- Gri'lek's Charm of Valor [Paladin]
-						},
-					},
-					{
-						["itemID"] = 19817,	-- Punctured Voodoo Doll [Shaman]
-						["cost"] = {
-							{ "i", 19939, 1 },	-- Gri'lek's Blood
-							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-							{ "i", 19940, 1 },	-- Renataki's Tooth
-							{ "i", 19941, 1 },	-- Wushoolay's Mane
-						},
-						["groups"] = {
-							i(19956),	-- Wushoolay's Charm of Spirits [Shaman]
-						},
-					},
+					i(19821),	-- Punctured Voodoo Doll [Druid]
+					i(19816),	-- Punctured Voodoo Doll [Hunter]
+					i(19818),	-- Punctured Voodoo Doll [Mage]
+					i(19815),	-- Punctured Voodoo Doll [Paladin]
+					i(19820),	-- Punctured Voodoo Doll [Priest]
+					i(19814),	-- Punctured Voodoo Doll [Rogue]
+					i(19817),	-- Punctured Voodoo Doll [Shaman]
+					i(19819),	-- Punctured Voodoo Doll [Warlock]
+					i(19813),	-- Punctured Voodoo Doll [Warrior]
 				},
 			}),
 			n(14517, {	-- High Priestess Jeklik
@@ -1409,6 +1310,92 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					{ "i", 19931, 1 },	-- Gurubashi Mojo Madness
 				},
 				["groups"] = {
+					filter(TRINKET_F, {
+						["description"] = "The following trinkets can be crafted by using a class-specific Punctured Voodoo Doll and one of each of the named reagents that drop from the madness bosses.",
+						["groups"] = {
+							i(19951, {	-- Gri'lek's Charm of Might [Warrior]
+								["cost"] = {
+									{ "i", 19813, 1 },	-- Punctured Voodoo Doll [Warrior]
+									{ "i", 19939, 1 },	-- Gri'lek's Blood
+									{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+									{ "i", 19940, 1 },	-- Renataki's Tooth
+									{ "i", 19941, 1 },	-- Wushoolay's Mane
+								},
+							}),
+							i(19952, {	-- Gri'lek's Charm of Valor [Paladin]
+								["cost"] = {
+									{ "i", 19815, 1 },	-- Punctured Voodoo Doll [Paladin]
+									{ "i", 19939, 1 },	-- Gri'lek's Blood
+									{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+									{ "i", 19940, 1 },	-- Renataki's Tooth
+									{ "i", 19941, 1 },	-- Wushoolay's Mane
+								},
+							}),
+							i(19953, {	-- Renataki's Charm of Beasts [Hunter]
+								["cost"] = {
+									{ "i", 19816, 1 },	-- Punctured Voodoo Doll [Hunter]
+									{ "i", 19939, 1 },	-- Gri'lek's Blood
+									{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+									{ "i", 19940, 1 },	-- Renataki's Tooth
+									{ "i", 19941, 1 },	-- Wushoolay's Mane
+								},
+							}),
+							i(19954, {	-- Renataki's Charm of Trickery [Rogue]
+								["cost"] = {
+									{ "i", 19814, 1 },	-- Punctured Voodoo Doll [Rogue]
+									{ "i", 19939, 1 },	-- Gri'lek's Blood
+									{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+									{ "i", 19940, 1 },	-- Renataki's Tooth
+									{ "i", 19941, 1 },	-- Wushoolay's Mane
+								},
+							}),
+							i(19957, {	-- Hazza'rah's Charm of Destruction [Warlock]
+								["cost"] = {
+									{ "i", 19819, 1 },	-- Punctured Voodoo Doll [Warlock]
+									{ "i", 19939, 1 },	-- Gri'lek's Blood
+									{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+									{ "i", 19940, 1 },	-- Renataki's Tooth
+									{ "i", 19941, 1 },	-- Wushoolay's Mane
+								},
+							}),
+							i(19958, {	-- Hazza'rah's Charm of Healing [Priest]
+								["cost"] = {
+									{ "i", 19820, 1 },	-- Punctured Voodoo Doll [Priest]
+									{ "i", 19939, 1 },	-- Gri'lek's Blood
+									{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+									{ "i", 19940, 1 },	-- Renataki's Tooth
+									{ "i", 19941, 1 },	-- Wushoolay's Mane
+								},
+							}),
+							i(19959, {	-- Hazza'rah's Charm of Magic [Mage]
+								["cost"] = {
+									{ "i", 19818, 1 },	-- Punctured Voodoo Doll [Mage]
+									{ "i", 19939, 1 },	-- Gri'lek's Blood
+									{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+									{ "i", 19940, 1 },	-- Renataki's Tooth
+									{ "i", 19941, 1 },	-- Wushoolay's Mane
+								},
+							}),
+							i(19955, {	-- Wushoolay's Charm of Nature [Druid]
+								["cost"] = {
+									{ "i", 19821, 1 },	-- Punctured Voodoo Doll [Druid]
+									{ "i", 19939, 1 },	-- Gri'lek's Blood
+									{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+									{ "i", 19940, 1 },	-- Renataki's Tooth
+									{ "i", 19941, 1 },	-- Wushoolay's Mane
+								},
+							}),
+							i(19956, {	-- Wushoolay's Charm of Spirits [Shaman]
+								["cost"] = {
+									{ "i", 19817, 1 },	-- Punctured Voodoo Doll [Shaman]
+									{ "i", 19939, 1 },	-- Gri'lek's Blood
+									{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+									{ "i", 19940, 1 },	-- Renataki's Tooth
+									{ "i", 19941, 1 },	-- Wushoolay's Mane
+								},
+							}),
+						},
+					}),
 					n(15082, {	-- Gri'lek
 						i(19939),	-- Gri'lek's Blood
 						i(19961),	-- Gri'lek's Grinder
