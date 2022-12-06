@@ -166,7 +166,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 72845,
 				["g"] = {
 					i(200137),	-- Chitin Dreadbringer
-					-- Rest is under shared Lv70 Elite Rare Drops
+					--[[ Rest is under shared Lv70 Elite Rare Drops
+					i(200186),	-- Amberquill Shroud
+					i(200442),	-- Basilisk Hide Jerkin
+					i(200174),	-- Bonesigil Shoulderguards
+					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
+					i(197111),	-- Highland Drake: Maned Head
+					i(200445),	-- Lucky Hunting Charm
+					i(200249),	-- Mage's Chewed Wand
+					i(200193),	-- Manafrond Sandals
+					i(200232),	-- Raptor Talonglaive
+					i(200131),	-- Reclaimed Survivalist's Dagger
+					i(200859),	-- Seasoned Hunter's Trophy
+					i(200563),	-- Primal Ritual-shell
+					i(200195),	-- Thunderscale Legguards --]]
 				},
 			}),
 			n(195223, {	-- Rustlily <Nimblewing Matriarch>
@@ -218,7 +231,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
 				["questID"] = 72847,
 				["g"] = {
-					-- Rest is under shared Lv70 Elite Rare Drops
+					--[[ Rest is under shared Lv70 Elite Rare Drops
+					i(200186),	-- Amberquill Shroud
+					i(200442),	-- Basilisk Hide Jerkin
+					i(200174),	-- Bonesigil Shoulderguards
+					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
+					i(197111),	-- Highland Drake: Maned Head
+					i(200445),	-- Lucky Hunting Charm
+					i(200249),	-- Mage's Chewed Wand
+					i(200193),	-- Manafrond Sandals
+					i(200232),	-- Raptor Talonglaive
+					i(200131),	-- Reclaimed Survivalist's Dagger
+					i(200859),	-- Seasoned Hunter's Trophy
+					i(200563),	-- Primal Ritual-shell
+					i(200195),	-- Thunderscale Legguards --]]
 				},
 			}),
 			n(193165, {	-- Sparkspitter Vrak
@@ -232,7 +258,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 53.6, 72.8, OHNAHRAN_PLAINS },
 				-- ["questID"] = 69667,
 				["g"] = {
-					-- Rest is under shared Lv70 Elite Rare Drops
+					--[[ Rest is under shared Lv70 Elite Rare Drops
+					i(200186),	-- Amberquill Shroud
+					i(200442),	-- Basilisk Hide Jerkin
+					i(200174),	-- Bonesigil Shoulderguards
+					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
+					i(197111),	-- Highland Drake: Maned Head
+					i(200445),	-- Lucky Hunting Charm
+					i(200249),	-- Mage's Chewed Wand
+					i(200193),	-- Manafrond Sandals
+					i(200232),	-- Raptor Talonglaive
+					i(200131),	-- Reclaimed Survivalist's Dagger
+					i(200859),	-- Seasoned Hunter's Trophy
+					i(200563),	-- Primal Ritual-shell
+					i(200195),	-- Thunderscale Legguards --]]
 				},
 			}),
 			n(191842, {	-- Sulfurion
@@ -246,8 +285,21 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 63.2, 48.6, OHNAHRAN_PLAINS },
 				["questID"] = 72849,
 				["g"] = {
-					-- Shared Lv70 Elite Rare Drops
 					i(198409),	-- Personal Shell (TOY!)
+					--[[ Rest is under shared Lv70 Elite Rare Drops
+					i(200186),	-- Amberquill Shroud
+					i(200442),	-- Basilisk Hide Jerkin
+					i(200174),	-- Bonesigil Shoulderguards
+					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
+					i(197111),	-- Highland Drake: Maned Head
+					i(200445),	-- Lucky Hunting Charm
+					i(200249),	-- Mage's Chewed Wand
+					i(200193),	-- Manafrond Sandals
+					i(200232),	-- Raptor Talonglaive
+					i(200131),	-- Reclaimed Survivalist's Dagger
+					i(200859),	-- Seasoned Hunter's Trophy
+					i(200563),	-- Primal Ritual-shell
+					i(200195),	-- Thunderscale Legguards --]]
 				},
 			}),
 			n(193163, {	-- Territorial Coastling
@@ -255,7 +307,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 72851,
 				["g"] = {
 					i(200212),	-- Sand-Encrusted Graves
-					-- Rest is under shared Lv70 Elite Rare Drops
+					--[[ Rest is under shared Lv70 Elite Rare Drops
+					i(200186),	-- Amberquill Shroud
+					i(200442),	-- Basilisk Hide Jerkin
+					i(200174),	-- Bonesigil Shoulderguards
+					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
+					i(197111),	-- Highland Drake: Maned Head
+					i(200445),	-- Lucky Hunting Charm
+					i(200249),	-- Mage's Chewed Wand
+					i(200193),	-- Manafrond Sandals
+					i(200232),	-- Raptor Talonglaive
+					i(200131),	-- Reclaimed Survivalist's Dagger
+					i(200859),	-- Seasoned Hunter's Trophy
+					i(200563),	-- Primal Ritual-shell
+					i(200195),	-- Thunderscale Legguards --]]
 				},
 			}),
 			n(196334, {	-- The Great Enla <Scourge of the Plains>
@@ -322,7 +387,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(198825),	-- Zenet Hatchling (MOUNT!)
 					}),
 					i(200172),	-- Zephyrdance Signet
-					-- Rest is under shared Lv70 Elite Rare Drops
+					--[[ Rest is under shared Lv70 Elite Rare Drops
+					i(200186),	-- Amberquill Shroud
+					i(200442),	-- Basilisk Hide Jerkin
+					i(200174),	-- Bonesigil Shoulderguards
+					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
+					i(197111),	-- Highland Drake: Maned Head
+					i(200445),	-- Lucky Hunting Charm
+					i(200249),	-- Mage's Chewed Wand
+					i(200193),	-- Manafrond Sandals
+					i(200232),	-- Raptor Talonglaive
+					i(200131),	-- Reclaimed Survivalist's Dagger
+					i(200859),	-- Seasoned Hunter's Trophy
+					i(200563),	-- Primal Ritual-shell
+					i(200195),	-- Thunderscale Legguards --]]
 				},
 			}),
 			n(188451, {	-- Zerimek <The Darkened Cloud>
