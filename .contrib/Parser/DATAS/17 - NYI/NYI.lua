@@ -745,8 +745,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198963),	-- Decaying Phlegm
 			i(198964),	-- Elementious Splinter
 			i(198966),	-- Molten Globule
-			i(198967),	-- Primordial Aether
-			i(198968),	-- Primalist Charm
 			i(198969),	-- Keeper's Mark
 			i(198970),	-- Infinitely Attachable Pair o' Docks
 			i(198971),	-- Curious Djaradin Rune
