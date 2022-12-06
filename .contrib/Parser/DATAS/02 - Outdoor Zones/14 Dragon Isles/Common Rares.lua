@@ -50,12 +50,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				194601,	-- zagdech
 				194608,	-- kholdeg
 				194624,	-- zumakh
-				194760,	-- uurhilt
-				194761,	-- khuumog
-				195101,	-- yaankhi
 				195417,	-- tsokorg
 				197009,	-- liskheszaera
 				197353,	-- blisterhide
+				-- The Hunt Mobs
+				194761,	-- khuumog
+				194763,	-- Tenmod
+				195132, -- Tevgai
+				194760,	-- Uurhilt
+				195101,	-- Yaankhi
+				195283,	-- Yamakh
 			},
 			["g"] = {
 				i(200186),	-- Amberquill Shroud

@@ -4,16 +4,76 @@
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(MARUUK_CENTAUR, {
 		n(GRAND_HUNTS, {
-			n(195283, {	-- Yamakh
-				["description"] = "Behind Rock Wall.",
-				["coord"] = { 66.1, 51.2, THE_AZURE_SPAN },
+			m(OHNAHRAN_PLAINS, {
+				n(195286, {	-- Rokzul
+					["coord"] = { 56.2, 51.5, OHNAHRAN_PLAINS },
+					-- ["questID"] = ,
+					["g"] = {
+						i(200246),	-- Lost Delving Lamp
+					},
+				}),
 			}),
-			n(194458, {	-- Rokzul
-				["coord"] = { 56.2, 51.5, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
-				["g"] = {
-					i(200246),	-- Lost Delving Lamp
-				},
+			m(THE_AZURE_SPAN, {
+				n(195300, {	-- Arkhuu
+					["coord"] = { 66.4, 59.5, THE_AZURE_SPAN },
+					["questID"] = 73907,
+					["isDaily"] = true, 
+					["g"] = {
+						i(200303),	-- Dreamweaver Acolytes Staff
+						i(197100),	-- Highland Drake: Crested Brow
+						i(200299),	-- Strange Clockwork Gladius
+						
+					},
+				}),
+				n(194761, {	-- Khuumog
+					["coord"] = { 38.7, 43.5, THE_AZURE_SPAN },
+					["questID"] = 73922,
+					["isDaily"] = true, 
+					["g"] = {
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+				n(195286, {	-- Mantai
+					["coord"] = { 67.4, 55.5, THE_AZURE_SPAN },
+					["questID"] = 73923,
+					["isDaily"] = true, 
+					["g"] = {
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+				n(194763, {	-- Tenmod
+					["coord"] = { 33.2, 40.3, THE_AZURE_SPAN },
+					["questID"] = 73938,
+					["isDaily"] = true, 
+					["g"] = {
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+				n(195132, {	-- Tevgai
+					["coord"] = { 72.8, 27.2, THE_AZURE_SPAN },
+					["questID"] = 73939,
+					["isDaily"] = true, 
+					["g"] = {
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+				n(195101, {	-- Yaankhi
+					["questID"] = 73946,
+					["isDaily"] = true, 
+					["coord"] = { 68.6, 26.3, THE_AZURE_SPAN },
+					["g"] = {
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+				n(195283, {	-- Yamakh
+					["description"] = "Behind Rock Wall.",
+					["questID"] = 73947,
+					["isDaily"] = true, 
+					["coord"] = { 66.1, 51.2, THE_AZURE_SPAN },
+					["g"] = {
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
 			}),
 			n(REWARDS, {
 				i(194085),	-- Proof of Might
@@ -80,12 +140,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						194095,	-- Ohuna Companion Color: Sepia
 					}},
 				}),
-
-
-
 				i(193360),	-- Centaur's Trophy Necklace
 				i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)
-
 				i(200093),	-- Centaur Hunting Trophy
 			}),
 		}),

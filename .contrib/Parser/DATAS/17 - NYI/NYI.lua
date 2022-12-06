@@ -928,10 +928,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200286),	-- Dragonbane Lance
 			i(200293),	-- Primal Scion's Twinblade
 			i(200297),	-- Hastily Cobbled Maul
-			i(200299),	-- Strange Clockwork Gladius
 			i(200301),	-- Reclaimed Tuskarr Harpoon
 			i(200302),	-- Magmaforged Scimitar
-			i(200303),	-- Dreamweaver Acolyte's Staff
 			i(200307),	-- Viciously Hooked Cleaver
 			i(200308),	-- Rellen's Legacy
 			i(200311),	-- Bonespike Mallet
