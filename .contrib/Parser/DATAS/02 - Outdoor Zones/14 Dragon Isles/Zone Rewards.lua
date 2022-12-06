@@ -13,28 +13,37 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		i(198965),	-- Primeval Earth Fragment
 		i(192131),	-- Valdrakken Weapon Chain
 		-- Enchanting 3/3
+		i(198967),	-- Primordial Aeather
 		i(193901),	-- Primal Dust
 		i(198968),	-- Primalist Charm
 		i(193900),	-- Prismatic Focusing Shard
-		-- Jewelcrafting 1/3
-		i(198973),	-- Incandescent Curio
 		-- Engineering 2/3
 		i(193902),	-- Eroded Titan Gizmo
 		i(193903),	-- Watcher Power Core
+		
+		-- herb
+		-- inscription
+		-- Jewelcrafting 1/3
+		i(198973),	-- Incandescent Curio
+		
+		-- Leatherworking 1/3
+		i(198976),	-- Exceedingly Soft Skin
+		
+		
+		-- Mining 1/3
+		i(202011),	-- Elementally-Charged Stone
+		
 		
 		i(193891),	-- Experimental Substance
 		i(193910),	-- Molted Dragon Scales
 		i(193904),	-- Phoenix Feather Quill
 		i(193913),	-- Preserved Animal Parts
 		i(193897),	-- Reawakened Catalyst
-		-- Leatherworking 1/3
-		i(198976),	-- Exceedingly Soft Skin
+		-- Skinning
 		-- Tailor 3/3
 		i(198977),	-- Ohn'arhan Weave
 		i(193899),	-- Primalweave Spindle
 		i(193898),	-- Umbral Bone Needle
-		
-		
 		filter(CLOTH, {
 			i(191989),	-- Cobalt Watcher's Cord
 			i(191987),	-- Cobalt Watcher's Cowl

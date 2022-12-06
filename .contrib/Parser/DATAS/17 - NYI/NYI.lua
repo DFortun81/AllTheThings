@@ -807,7 +807,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201716),	-- Notebook of Crafting Knowledge
 			i(201717),	-- Notebook of Crafting Knowledge
 			i(201718),	-- Notebook of Crafting Knowledge
-			i(202011),	-- Elementally-Charged Stone
 			i(202014),	-- Infused Pollen
 			i(202016),	-- Saturated Bone
 

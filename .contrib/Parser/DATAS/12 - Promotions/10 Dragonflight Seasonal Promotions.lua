@@ -31,7 +31,7 @@ root("Promotions", {
 					"added 10.0.2.99999",
 					-- "removed 10.0.2.XXXXX",	--
 				},
-				-- ["u"] = REMOVED_FROM_GAME,	-- After November 30th, 11:59 p.m. PST
+				["u"] = REMOVED_FROM_GAME,	-- After December 1st 2022
 			}),
 			i(190583, {	-- Ichabod	
 				["description"] = "Obtained by gifting an eligible creator’s channel two Twitch subscriptions between November 28th, 03:00 p.m. & December 12th, 11:59 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
