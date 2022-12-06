@@ -1176,6 +1176,9 @@ root("Instances", tier(CLASSIC_TIER, {
 					["groups"] = {
 						i(14514, {	-- Pattern: Robe of the Void
 							["timeline"] = { "removed 5.0.4" },
+							-- #if TBC
+							["classes"] = { WARLOCK },
+							-- #endif
 						}),
 						-- #if BEFORE 5.0.4
 						i(13501),	-- Recipe: Major Mana Potion

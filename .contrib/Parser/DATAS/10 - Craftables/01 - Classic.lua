@@ -2565,6 +2565,9 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(14152),	-- Robe of the Archmage
 			i(14153, {	-- Robe of the Void
 				["timeline"] = { "removed 5.0.4.15890" },
+				-- #if BEFORE WRATH
+				["classes"] = { WARLOCK },
+				-- #endif
 			}),
 			i(14136, {	-- Robe of Winter Night
 				["timeline"] = { "removed 4.0.3", "added 8.1.5" },

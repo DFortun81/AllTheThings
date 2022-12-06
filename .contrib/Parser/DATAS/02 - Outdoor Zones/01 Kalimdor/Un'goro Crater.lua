@@ -1856,6 +1856,10 @@ root("Zones", m(KALIMDOR, {
 				i(11186, {	-- Red Power Crystal
 					["provider"] = { "o", 164780 },	-- Red Power Crystal
 				}),
+				i(11018, {	-- Un'Goro Soil
+					["provider"] = { "o", 157936 },	-- Un'Goro Dirt Pile
+					["timeline"] = { "removed 4.0.3" },
+				}),
 				i(11188, {	-- Yellow Power Crystal
 					["provider"] = { "o", 164661 },	-- Yellow Power Crystal
 				}),
