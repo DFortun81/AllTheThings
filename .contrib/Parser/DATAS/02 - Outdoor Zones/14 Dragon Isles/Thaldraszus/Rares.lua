@@ -62,10 +62,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193663, {	-- Craggravated Elemental
 				["coord"] = { 52.8, 67.6, THALDRASZUS },
-				-- ["questID"] = 69964,
-				-- ["g"] = {
-
-				-- },
+				["questID"] = 74061,
+				["g"] = {
+					i(200298),	-- Stoneshaped Greatbelt
+				},
 			}),
 			n(193234, {	-- Eldoren the Reborn <Jewel of the Skies>
 				-- ["coord"] = { X, Y, THALDRASZUS },

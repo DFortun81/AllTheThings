@@ -388,7 +388,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199667),	-- Spiked Bronze Spaulders
 			i(199668),	-- Spiked Emerald Spaulders
 			i(200154),	-- Rubyscale Band
-			i(200159),	-- Blaze Ring
 			i(200161),	-- Razorwind Talisman
 			i(200164),	-- Iceloop
 			i(200185),	-- Grips of the Everflowing Ocean
@@ -397,7 +396,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200202),	-- Tomorrow's Chains
 			i(200203),	-- Repurposed Giant's Thimble
 			i(200204),	-- Sandshine Chestplate
-			i(200213),	-- Lava-Splattered Breastplate
 			i(200214),	-- Grasp of the Weeping Widow
 			i(200215),	-- Plumed Shoulderguards of the Hunt
 			i(200216),	-- Water Heating Cord
@@ -414,7 +412,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200292),	-- Cragforge Pauldrons
 			i(200294),	-- Primal Chain Hauberk
 			i(200296),	-- Mammoth Tusk Wraps
-			i(200298),	-- Stoneshaped Greatbelt
 			i(200306),	-- Tempest Shawl
 			i(200309),	-- Rock Encrusted Chestguard
 			i(200313),	-- Earthen Protoscale Drape
@@ -2203,7 +2200,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		filter(TOYS, {
 			i(192495),	-- Malfunctioning Stealthman 54 (TOY!)
 			i(197961),	-- Whelps on Strings (TOY!)
-			i(198474),	-- Artist's Easel (TOY!)
 			i(198646),	-- Ornate Dragon Statue (TOY!)
 			i(199111),	-- Maestro Duck's Orchestrion (TOY!)
 			i(199554),	-- S.E.A.T. (TOY!)

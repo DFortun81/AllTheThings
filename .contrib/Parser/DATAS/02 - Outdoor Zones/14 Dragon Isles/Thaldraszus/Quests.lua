@@ -562,10 +562,19 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						-- ["sourceQuests"] = {  },	--
 						["provider"] = { "n", 194578 },	-- Grimla Fizzlecrank
 						["coord"] = { 25.2, 66.1, VALDRAKKEN },
-						["isBreadcrumb"] = true,	-- Probably?
+						["isBreadcrumb"] = true,
+					}),
+					q(70781, {	-- Out of the Blue
+						-- ["sourceQuests"] = {  },	--
+						["provider"] = { "n", 196392 },	-- Lieutenant Conure
+						["coord"] = { 50.5, 67.4, VALDRAKKEN },
+						["isBreadcrumb"] = true,
 					}),
 					q(66071, {	-- Flying Rocs
-						["sourceQuests"] = { 71239 },	-- Lost to the Skies
+						["sourceQuests"] = {
+							71239,	-- Lost to the Skies
+							70781,	-- Out of the Blue
+						},
 						["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
 						["coord"] = { 50.0, 69.8, THALDRASZUS },
 						["g"] = {
@@ -986,6 +995,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(69962, {	-- Corrupted Proto-Dragon
 					["provider"] = { "n", 193658 },	-- Corrupted Proto-Dragon
 					["coord"] = { 44.8, 69.0, THALDRASZUS },
+					["isDaily"] = true,
+				}),
+				q(69964, {	-- Craggravated Elemental
+					["provider"] = { "n", 193663 },	-- Craggravated Elemental
+					["coord"] = { 45.4, 85.2, THALDRASZUS },
 					["isDaily"] = true,
 				}),
 				q(69873, {	-- Henlare

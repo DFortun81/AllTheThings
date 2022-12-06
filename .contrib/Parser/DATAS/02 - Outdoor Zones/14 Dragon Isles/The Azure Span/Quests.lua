@@ -1600,17 +1600,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 7.8, 53.4, THE_AZURE_SPAN },
 			}),
 			q(70170, {	-- Beat the Demons Out of It
-				["sourceQuests"] = { 70168 },	-- Sad Little Accidents
+				["sourceQuests"] = { 70169 },	-- Even Trees Need Friends
 				["provider"] = { "n", 194425 },	-- Ranpiata
 				["coord"] = { 7.8, 53.4, THE_AZURE_SPAN },
 			}),
 			q(70171, {	-- Happy Little Accidents
-				["sourceQuests"] = {
-					70169,	-- Even Trees Need Friends
-					70170,	-- Beat the Demons Out of It
-				},
+				["sourceQuests"] = { 70170 },	-- Beat the Demons Out of It
 				["provider"] = { "n", 194425 },	-- Ranpiata
-				["coord"] = { 7.8, 53.4, THE_AZURE_SPAN },
+				["coord"] = { 7.9, 53.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198474),	-- Artist's Easel (TOY!)
+				},
 			}),
 				-- Fragment of History --
 			q(70806, {	-- Chunk of Sculpture

@@ -97,7 +97,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				n(BONUS_OBJECTIVES, {
+					q(66901, {	-- Breaking the World
+						["provider"] = { "n", 187306 },	-- Morchok
+						["coord"] = { 32.8, 52.5, THE_WAKING_SHORES },
+						["repeatable"] = true,
+					}),
 					q(66903, {	-- Clearing the Vault
+						["provider"] = { "n", 189822 },	-- Shas'ith
 						["coord"] = { 26.7, 62.2, THE_WAKING_SHORES },
 						["repeatable"] = true,
 						-- Sometimes double triggers, rewarding you twice with the rep
@@ -105,9 +111,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					q(67027, {	-- Death's Shadow
 						["provider"] = { "n", 190985 },	-- Death's Shadow
 						["coord"] = { 29.6, 56.7, THE_WAKING_SHORES },
+						["repeatable"] = true,
 					}),
 					q(67015, {	-- Forging the Answer
+						--["provider"] = { "n",  },	-- 
 						["coord"] = { 27.4, 60.8, THE_WAKING_SHORES },
+						["repeatable"] = true,
+					}),
+					q(70763, {	-- Worldcarver A'tir
+						["provider"] = { "n", 186859 },	-- Worldcarver A'tir
+						["coord"] = { 30.0, 55.4, THE_WAKING_SHORES },
+						["repeatable"] = true,
 					}),
 				}),
 				q(66419, {	-- Allegiance To One
@@ -232,16 +246,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["description"] = "Restore 20 Obsidian Keys to Sabellian.",
 					["coord"] = { 31.8, 54.4, THE_WAKING_SHORES },
 					["questID"] = 73074,
-					["cost"] = { { "i", 191264, 20 }, },	-- 20xRestored Obsidian Key
-					-- ["g"] = {
-
-					-- },
+					["cost"] = { { "i", 191264, 20 }, },	-- 20x Restored Obsidian Key
+					["g"] = {
+						i(200159),	-- Blaze Ring
+					},
 				}),
 				n(187306, {	-- Morchok <Harbinger of Twilight>
 					["description"] = "Restore 20 Obsidian Keys to Igys the Believer.",
 					["coord"] = { 32.2, 51.9, THE_WAKING_SHORES },
 					["questID"] = 74067,
-					["cost"] = { { "i", 191264, 20 }, },	-- 20xRestored Obsidian Key
+					["cost"] = { { "i", 191264, 20 }, },	-- 20x Restored Obsidian Key
 					["g"] = {
 						i(200207),	-- Petrified Fungal Spores
 					},
@@ -263,7 +277,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				n(187598, {	-- Rohzor Forgesmash <Djaradin Smithmaster>
-					-- ["coord"] = { 25.3, 60.3, THE_WAKING_SHORES },
+					["coord"] = { 25.3, 60.3, THE_WAKING_SHORES },
 					["questID"] = 74052,
 					["g"] = {
 						i(194503),	-- Plans: Black Dragon Touched Hammer (RECIPE!)
@@ -282,7 +296,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				n(187886, {	-- Turboris
 					["coord"] = { 33.6, 55.7, THE_WAKING_SHORES },
-					-- ["questID"] = ,
+					["questID"] = 74054,
 					["g"] = {
 						i(200244),	-- Enchanted Muckstompers
 						i(200246),	-- Lost Delving Lamp
@@ -290,10 +304,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				n(186859, {	-- Worldcarver A'tir
 					-- ["coord"] = { X, Y, THE_WAKING_SHORES },
-					-- ["questID"] = 70763,
-					-- ["g"] = {
-
-					-- },
+					["questID"] = 74090,
+					["g"] = {
+						i(200213),	-- Lava-Splattered Breastplate
+					},
 				}),
 			}),
 			n(TREASURES, {

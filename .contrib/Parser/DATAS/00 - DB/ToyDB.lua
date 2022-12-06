@@ -1053,6 +1053,7 @@ i(191925);	-- Falling Star Flinger
 -- SOURCED
 i(200707);	-- Armoire of Endless Cloaks
 i(197719);	-- Artisan's Sign
+i(198474);	-- Artist's Easel
 i(199337);	-- Bag of Furious Winds
 i(199768);	-- Black Dragon Banner
 i(199769);	-- Blue Dragon Banner
@@ -1121,7 +1122,6 @@ i(198156);	-- Wyrmhole Generator
 -- NYI
 i(192495);	-- Malfunctioning Stealthman 54
 i(197961);	-- Whelps on Strings
-i(198474);	-- Artist's Easel
 i(198646);	-- Ornate Dragon Statue
 i(199111);	-- Maestro Duck's Orchestrion
 i(199554);	-- S.E.A.T.

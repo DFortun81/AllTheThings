@@ -8,7 +8,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["cr"] = 192265,	-- Azure Crystalspine
 			}),
 			pet(3358, {	-- Crimsonspine
-				["cr"] = 197629,	-- Crimsonspine
+				["cr"] = 192268,	-- Crimsonspine
 				["coords"] = {
 					{ 50.8, 64.6, THALDRASZUS, },
 					{ 60.6, 38.0, THE_AZURE_SPAN, },

@@ -74,6 +74,43 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["description"] = "Requires Renown 4.",
 					["isDaily"] = true,
 				}),
+					-- Repeatables --
+				q(70201, {	-- Catch and Release: Aileron Seamoth
+					["provider"] = { "n", 194584 },	-- Khuri
+					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
+					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
+					["isRepeatable"] = true,
+				}),
+				q(70202, {	-- Catch and Release: Cerulean Spinefish
+					["provider"] = { "n", 194584 },	-- Khuri
+					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
+					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
+					["isRepeatable"] = true,
+				}),
+				q(70935, {	-- Catch and Release: Islefin Dorado
+					["provider"] = { "n", 194584 },	-- Khuri
+					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
+					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
+					["isRepeatable"] = true,
+				}),
+				q(70199, {	-- Catch and Release: Scalebelly Mackerel
+					["provider"] = { "n", 194584 },	-- Khuri
+					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
+					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
+					["isRepeatable"] = true,
+				}),
+				q(70203, {	-- Catch and Release: Temporal Dragonhead
+					["provider"] = { "n", 194584 },	-- Khuri
+					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
+					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
+					["isRepeatable"] = true,
+				}),
+				q(70200, {	-- Catch and Release: Thousandbite Piranha
+					["provider"] = { "n", 194584 },	-- Khuri
+					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
+					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
+					["isRepeatable"] = true,
+				}),
 			}),
 			prof(TUSKARR_FISHING_GEAR, {
 				["crs"] = { 195935 },
