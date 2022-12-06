@@ -257,7 +257,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				n(193232, {	-- Rasnar the War Ender
 					["coord"] = { 30.2, 60.4, THE_WAKING_SHORES },
-					-- ["questID"] = ,
+					["questID"] = 74051,
 					["g"] = {
 						i(200757),	-- Qalashi War-Helm
 					},

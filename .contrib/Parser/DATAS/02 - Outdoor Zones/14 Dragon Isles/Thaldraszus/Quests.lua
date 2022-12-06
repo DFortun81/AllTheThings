@@ -859,7 +859,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 40.5, 48.9, THALDRASZUS },
 					}),
 					q(70741, {	-- Some Favorite Things
-						["sourceQuests"] = { 72246 },	-- Serene Dreams
+						-- ["sourceQuests"] = {  },	--
 						["provider"] = { "o", 381297 },	-- Misplaced Luggage
 						["coord"] = { 41.5, 47.5, THALDRASZUS },
 					}),
@@ -1026,6 +1026,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(200872),	-- Living Mud Mask
 					},
 				}),
+			}),
+			q(72484, {	-- The Waking Shores Advanced Tour
+				["sourceQuests"] = { 72487 },	-- The Thaldraszus Tour
+				["provider"] = { "n", 199120 },	-- Celormu
+				["coord"] = { 46.0, 63.0, THALDRASZUS },
 			}),
 				-- MISC --
 			q(67093, {	-- An Anomalous Shrine

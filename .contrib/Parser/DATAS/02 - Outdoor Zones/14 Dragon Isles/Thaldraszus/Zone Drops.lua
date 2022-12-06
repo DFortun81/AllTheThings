@@ -4,6 +4,10 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THALDRASZUS, {
 		n(ZONE_DROPS, {
+			i(200586, {	-- Derelict Sunglasses
+				["cr"] = 197346,	-- Mudgatu
+				["coord"] = { 40.6, 45.6, THALDRASZUS },
+			}),
 			i(194562),	-- Occasional Sand
 			i(194262),	-- Pattern: Temporal Spellthread (RECIPE!)
 			i(198906),	-- Technique: Illusion Parchment: Arcane Burst (RECIPE!)

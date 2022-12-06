@@ -17,6 +17,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["repeatable"] = true,
 				["cost"] = { { "i", 200093, 1 }, }, 	-- 1x Centaur Hunting Trophy
 			}),
+			q(72868, {	-- More Hunting Trophies
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
+				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
+				["repeatable"] = true,
+				["cost"] = { { "i", 200093, 20 }, }, 	-- 20x Centaur Hunting Trophy
+			}),
 			q(70929, {	-- More Hunting Trophies
 				["description"] = "Requires Renown 2.",
 				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku

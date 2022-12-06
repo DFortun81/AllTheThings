@@ -149,6 +149,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(193686),	-- Nokhud Traditionalist's Pauldrons
 						i(193688),	-- Stormslash
 						i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
+						i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
 						i(201929),	-- Stolen Breath of Ohn'ahra
 					},
 				}),

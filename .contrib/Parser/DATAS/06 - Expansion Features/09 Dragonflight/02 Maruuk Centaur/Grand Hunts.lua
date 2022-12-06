@@ -29,7 +29,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(194092),	-- Timbertooth Pelt
 				i(194093),	-- Bakar Companion Color: Brown
 				i(194094),	-- Bakar Companion Color: Black
-				i(194095),	-- Ohuna Companion Color: Sepia
+				i(194095, {	-- Ohuna Companion Color: Sepia
+					["questID"] = 71052,
+				}),
 				i(194097),	-- Hunter's Fabulous Treasure
 				i(194099),	-- Shikaar Hunting Horn
 				i(194108),	-- Mighty Hunter's Horn
@@ -75,6 +77,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["sym"] = {{"select","itemID",
 						-- confirmed items here
 						200093,	-- Centaur Hunting Trophy
+						194095,	-- Ohuna Companion Color: Sepia
 					}},
 				}),
 

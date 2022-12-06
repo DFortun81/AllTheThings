@@ -208,6 +208,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		-- Temp? Place??
 		q(72743, {	-- A Piece of Copper
 			["description"] = "If you are lucky. You will get this quest from your adventure guide.",
+			["g"] = {
+				ach(16789),	-- Lucky Penny
+			},
 		}),
 		q(72751, {	-- Weekly Trigger?
 			["name"] = "Weekly Trigger?",

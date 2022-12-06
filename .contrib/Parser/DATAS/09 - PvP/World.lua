@@ -88,5 +88,6 @@ root("PVP", pvp(n(-10058, {	-- World
 	tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		q(72376),	-- looting first War Crate of the day (Waking Shores)
 		q(72377),	-- looting first War Crate of the day (Waking Shores)
+		q(72362),	-- looting Alliance bounty in Oha'rahn plains
 	})),
 })));

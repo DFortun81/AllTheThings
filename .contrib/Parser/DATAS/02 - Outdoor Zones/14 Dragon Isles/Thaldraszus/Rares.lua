@@ -166,8 +166,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193130, {	-- Pleasant Alpha
-				-- ["coord"] = { X, Y, THALDRASZUS },
-				-- ["questID"] = 72806,
+				["coord"] = { 37.7, 78.7, THALDRASZUS },
+				["questID"] = 73889,
 				-- ["g"] = {
 
 				-- },

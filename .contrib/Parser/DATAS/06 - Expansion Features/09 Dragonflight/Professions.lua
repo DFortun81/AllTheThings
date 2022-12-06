@@ -4,6 +4,31 @@
 
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(PROFESSIONS, {
+		n(ACHIEVEMENTS, {
+			ach(16683, {	-- In Tyr's Footsteps
+				crit(1, {	-- Lock and Shock
+					["_quests"] = { 70180 },	-- Jump-Start? Jump-Starting!
+				}),
+				crit(2, {	-- First Challenge: Finesse
+					["_quests"] = { 70181 },	-- First Challenge of Tyr: Finesse
+				}),
+				crit(3, {	-- Second Challenge: Might
+					-- ["_quests"] = { QUEST },	-- Name
+				}),
+				crit(4, {	-- Third Challenge: Persistence
+					-- ["_quests"] = { QUEST },	-- Name
+				}),
+				crit(5, {	-- Fourth Challenge: Resourcefulness
+					-- ["_quests"] = { QUEST },	-- Name
+				}),
+				crit(6, {	-- Fifth Challenge: Ingenuity
+					-- ["_quests"] = { QUEST },	-- Name
+				}),
+				crit(7, {	-- Innovation Complete
+					-- ["_quests"] = { QUEST },	-- Name
+				}),
+			}),
+		}),
 		-- GENERAL PROFESSION
 		q(67564, {	-- Artisan's Courier
 			["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen

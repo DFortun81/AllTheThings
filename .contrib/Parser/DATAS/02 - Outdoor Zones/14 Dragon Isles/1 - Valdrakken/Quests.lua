@@ -74,9 +74,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 			-- SIDE 3
 			q(70846, {	-- Dragonscale Expedition: Help Needed!
-				-- not yet seen in DF ? what are requirements...
 				["provider"] = { "n", 196448 },	-- Aspiring Goblin Enginner
 				["coord"] = { 40.8, 48.3, VALDRAKKEN },
+				-- existed in Beta, marked obsolete by Blizzard
+				["timeline"] = { CREATED_DF_PRE },
 				["isBreadcrumb"] = true,
 			}),
 			q(70180, {	-- Jump-Start? Jump-Starting!

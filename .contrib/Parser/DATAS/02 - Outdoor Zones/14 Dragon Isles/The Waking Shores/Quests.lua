@@ -1156,7 +1156,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "n", 193411 },	-- Celormu
 				["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
 			}),
-				-- Kinda Weird? Just nothing more --
+			q(72485, {	-- The Azure Span Tour
+				["sourceQuests"] = { 72483 },	-- The Ohn'ahran Plains Tour
+				["provider"] = { "n", 193411 },	-- Celormu
+				["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
+			}),
 			q(71141, {	-- Gills with Gall
 				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 				["provider"] = { "n", 193304 },	-- Ru'Kroszk
@@ -1731,5 +1735,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		q(66898),	-- triggered during 'The Shadow of His Wings' (65691)
 		q(70872),	-- Quack Weekly Trigger
 		q(72353),	-- triggeres during 'Adventuring in the Dragon Isles' (72293) when any zone is chosen by player
+		q(70767),	-- triggers when 'Tale of the Outsider' becomes available for Tarjin the Blind
+		q(70768),	-- triggers when 'Tale of the Outsider' completes
 	}),
 })));

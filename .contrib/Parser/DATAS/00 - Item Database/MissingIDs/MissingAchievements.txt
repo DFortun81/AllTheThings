@@ -2958,7 +2958,6 @@ ach(16659),	-- Keystone Hero: Halls of Valor
 ach(16660),	-- Keystone Hero: Shadowmoon Burial Grounds
 ach(16661),	-- Keystone Hero: Temple of the Jade Serpent
 ach(16681),	-- 10.0 Dragonflight - Expansion Quest Launch (Return to Docks)
-ach(16683),	-- In Tyr's Footsteps
 10.0.2.45779
 ach(16703),	-- 10.0 Thal - Raid Intro Quest Launch [DNT]
 ach(16713),	-- <DNT> Wrathion - 1 - Trusted Champion
@@ -3005,7 +3004,6 @@ ach(16784),	-- <DNT> Cobalt Assembly Talent: Unhelpful Fireworks
 ach(16786),	-- <DNT> Dragonscale Expedition Rank 02 (Account)
 ach(16787),	-- <DNT> Maruuk Centaur Rank 03 (Account)
 ach(16788),	-- <DNT> Maruuk Centaur Rank 03 (Character)
-ach(16789),	-- Lucky Penny
 ach(16790),	-- Curious Coin
 ach(16791),	-- Merchant Artisan
 ach(16794),	-- Dragon Isles Crafting Order Apprentice

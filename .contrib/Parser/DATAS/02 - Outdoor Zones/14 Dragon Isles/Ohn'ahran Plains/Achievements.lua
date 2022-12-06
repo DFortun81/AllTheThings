@@ -256,6 +256,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					16303,	-- River Rapids Route: Silver
 					15758,	-- Sundapple Copse Circuit: Silver
 				}},
+				["g"] = {
+					i(197599),	-- Windborne Velocidrake: Red Hair (DM!)
+				},
 			}),
 			ach(15920, {	-- Ohn'ahran Plains: Gold
 				-- Meta Achievement

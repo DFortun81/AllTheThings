@@ -172,6 +172,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					15904,	-- Garden Gallivant: Silver
 					15856,	-- Tyrhold Trial: Silver
 				}},
+				["g"] = {
+					i(196987),	-- Cliffside Wylderdrake: Blonde Hair (DM!)
+				},
 			}),
 			ach(15926, {	-- Thaldraszus: Gold
 				-- Meta Achievement

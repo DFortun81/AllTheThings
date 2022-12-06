@@ -147,6 +147,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193154, {	-- Forgotten Gryphon
 				["coord"] = { 33.1, 76.3, THE_WAKING_SHORES },
 				["questID"] = 73073,
+				["isDaily"] = true,
 				["g"] = {
 					i(200858),	-- Plume of the Forgotten
 				},

@@ -1511,6 +1511,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			-- MISC --
+			q(72487, {	-- The Thaldraszus Tour
+				["sourceQuests"] = { 72485 },	-- The Azure Span Tour
+				["provider"] = { "n", 199119 },	-- Celormu
+				["coord"] = { 63.1, 13.6, THE_AZURE_SPAN },
+			}),
 			q(66227, {	-- Some Good Fishing
 				["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 185608 },	-- Khuri

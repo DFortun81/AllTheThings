@@ -1015,7 +1015,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(196983),	-- Cliffside Wylderdrake: Maned Jaw
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw
 			i(196986),	-- Cliffside Wylderdrake: Black Hair
-			i(196987),	-- Cliffside Wylderdrake: Blonde Hair
 			i(196989),	-- Cliffside Wylderdrake: White Hair
 			i(196990),	-- Cliffside Wylderdrake: Helm
 			i(196991),	-- Cliffside Wylderdrake: Black Horns
@@ -1097,7 +1096,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197591),	-- Windborne Velocidrake: Hairy Head
 			i(197593),	-- Windborne Velocidrake: Feathery Head
 			i(197594),	-- Windborne Velocidrake: Small Ears
-			i(197599),	-- Windborne Velocidrake: Red Hair
 			i(197600),	-- Windborne Velocidrake: Helm
 			i(197604),	-- Windborne Velocidrake: Ox Horns
 			i(197605),	-- Windborne Velocidrake: Curled Horns
@@ -1114,7 +1112,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197628),	-- Windborne Velocidrake: Plated Neck
 			i(197629),	-- Windborne Velocidrake: Spiked Neck
 			i(197630),	-- Windborne Velocidrake: Feathered Neck
-			i(197635),	-- Windborne Velocidrake: Reaver Pattern
 			i(197636),	-- Windborne Velocidrake: Shrieker Pattern'
 
 			--
