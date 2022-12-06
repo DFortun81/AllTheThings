@@ -10,13 +10,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				184853,	-- Primal Scythid Queen
 				187111,	-- Ancient Hornswog
 				189822,	-- Shas'ith
-				190161,	-- Sarana
-				190968,	-- Norbett
 				190985,	-- Death's Shadow
 				190986,	-- Battlehorn Pyrhus
 				191103,	-- Uranto the Swift
 				191305,	-- The Great Shellkhan
-				191450,	-- Boolk
 				192737,	-- Qalashi War Mammoth
 				192949,	-- Skaara
 				193133,	-- Sunscale Behemoth
@@ -34,7 +31,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				193240,	-- Riverwalker Tamopo
 				193259,	-- Blue Terror
 				193273,	-- Liskron the Dazzling
-				193311,	-- Melkhop
 				193341,	-- Angen
 				190986,	-- Battlehorn Pyrhus
 				193632,	-- Wilrive
@@ -45,14 +41,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				194251,	-- Degmakh
 				194392,	-- Brackle
 				194401,	-- Spellforged Horror
-				194409,	-- Ergburk
 				194438,	-- Khomuur
-				194601,	-- Zagdech
 				194608,	-- Kholdeg
-				194624,	-- Zumakh
 				197009,	-- Liskheszaera
 				197353,	-- Blisterhide
+				-- The Hunt Mobs -- Ohnahran Plains
+				191450,	-- Boolk
+				194409,	-- Ergburk
+				194608,	-- Kholdeg
+				190968,	-- Norbett
+				190161,	-- Sarana
+				194601,	-- Zagdech
+				194624,	-- Zumakh
 				-- The Hunt Mobs -- Thaldraszus
+				193311,	-- Melkhop
 				195417,	-- Tsokorg
 				-- The Hunt Mobs -- The Azure
 				194761,	-- Khuumog

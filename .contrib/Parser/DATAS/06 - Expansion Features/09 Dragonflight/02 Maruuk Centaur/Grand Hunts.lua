@@ -5,22 +5,123 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 	n(MARUUK_CENTAUR, {
 		n(GRAND_HUNTS, {
 			m(OHNAHRAN_PLAINS, {
-				n(195286, {	-- Rokzul
+				n(190907, {	-- Blitztusk	-- North Only
+					["coord"] = { 77.0, 20.6, OHNAHRAN_PLAINS },
+					["questID"] = 73908,
+					["g"] = {
+						i(200296),	-- Mammoth Tusk Wraps
+					},
+				}),
+				n(191450, {	-- Boolk
+					["coord"] = { 86.9, 18.1, OHNAHRAN_PLAINS },
+					["questID"] = 73909,
+					["g"] = {
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+				n(194409, {	-- Ergburk	-- West Only
+					["coord"] = { 57.2, 47.7, OHNAHRAN_PLAINS },
+					["questID"] = 73914,
+					["g"] = {
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+				n(194608, {	-- Kholdeg	-- East Only
+					["coord"] = { 79.7, 55.4, OHNAHRAN_PLAINS },
+					["questID"] = 73920,
+					["g"] = {
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+				n(190968, {	-- Norbett	-- North Only
+					["coord"] = { 83.1, 18.8, OHNAHRAN_PLAINS },
+					["questID"] = 73929,
+					["g"] = {
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+				n(194458, {	-- Rokzul -- West Only
 					["coord"] = { 56.2, 51.5, OHNAHRAN_PLAINS },
-					-- ["questID"] = ,
+					["questID"] = 73930,
+					["g"] = {
+						i(200693),	-- Legguards of the Deep Strata
+						i(200246),	-- Lost Delving Lamp
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+				n(190161, {	-- Sarana	-- North Only
+					["coord"] = { 85.4, 15.6, OHNAHRAN_PLAINS },
+					["questID"] = 73932,
+					["g"] = {
+						i(200440),	-- Helm of Feline Instinct
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+				n(191103, {	-- Uranto the Swift	-- North Only
+					["coords"] = {
+						{ 77.2, 21.0, OHNAHRAN_PLAINS },
+						{ 79.0, 22.2, OHNAHRAN_PLAINS },
+						{ 81.4, 21.4, OHNAHRAN_PLAINS },
+					},
+					["questID"] = 73943,
 					["g"] = {
 						i(200246),	-- Lost Delving Lamp
 						-- is part of the DF>Global Rare Loottable
 					},
 				}),
+				n(194624, {	-- Zagdech	-- East Only
+					["coord"] = { 76.7, 53.0, OHNAHRAN_PLAINS },
+					["questID"] = 73948,
+					["g"] = {
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+				n(194624, {	-- Zumakh
+					["coord"] = { 72.5, 45.7, OHNAHRAN_PLAINS },
+					["questID"] = 73949,
+					["g"] = {
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
 			}),
 			m(THALDRASZUS, {
+				n(193341, {	-- Angen
+					["coord"] = { 33.2, 72.4, THALDRASZUS },
+					["questID"] = 73906,
+					["g"] = {
+						i(200128),	-- Zephyr's Razor
+					},
+				}),
 				n(195431, {	-- Diluu
 					["coord"] = { 50.8, 46.6, THALDRASZUS },
 					["questID"] = 73912,
 					["isDaily"] = true, 
 					["g"] = {
 						i(196983),	-- Cliffside Wylderdrake: Maned Jaw
+						i(197125),	-- Highland Drake: Coiled Horns
+					},
+				}),
+				n(193330, {	-- Galzuda
+				--	["coord"] = { 50.8, 46.6, THALDRASZUS },
+				--	["questID"] = 73912,
+					["isDaily"] = true, 
+					["g"] = {
+						i(200261),	-- White Chitin Bands
+					},
+				}),
+				n(193311, {	-- Melkhop
+					["coord"] = { 33.2, 67.9, THALDRASZUS },
+					["questID"] = 73924,
+					["isDaily"] = true, 
+					["g"] = {
+						-- Not sure. Maybe "is part of the DF>Global Rare Loottable"
+					},
+				}),
+				n(195430, {	-- Molkeej
+					["coord"] = { 51.1, 49.3, THALDRASZUS },
+					["questID"] = 73925,
+					["isDaily"] = true, 
+					["g"] = {
 						i(197125),	-- Highland Drake: Coiled Horns
 					},
 				}),
@@ -182,4 +283,9 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	q(70908),	-- Maruuk Hunts // HQ to reward you with Reputation after each Stage
 	q(70907),	-- Hunt concluded // White Bag
 	q(70906),	-- Hunt concluded // Epic Bag
+	-- Each Unique Event can reward you with 1 trophy daily. 
+	-- Upon killing a mob that dropped a trophy, the quest is triggered.
+	q(73913),	-- Thaldraszus South - Dismay Flies Event
+	q(73933),	-- Thaldraszus South - Scythe Raid Event
+--	q(73913),	-- Thaldraszus South - Towering Fickleshells Event
 }));
