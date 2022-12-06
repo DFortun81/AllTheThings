@@ -2895,11 +2895,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(20973, {	-- Design: Blazing Citrine Ring
-							["timeline"] = { "removed 4.0.3" },	-- Learned by trainer
+							["timeline"] = { "added 2.0.1", "removed 4.0.3" },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
 						i(20971, {	-- Design: Heavy Iron Knuckles
-							["timeline"] = { "removed 4.0.3" },	-- Learned by trainer
+							["timeline"] = { "added 2.0.1", "removed 4.0.3" },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge / CLASSIC: Formula: Enchant Bracer - Lesser Deflection (RECIPE!)

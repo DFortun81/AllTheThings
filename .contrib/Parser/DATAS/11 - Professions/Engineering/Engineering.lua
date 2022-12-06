@@ -3587,7 +3587,9 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		-- #if AFTER TBC
 		itemrecipe("Schematic: Red Smoke Flare", 23812, 30342);
 		itemrecipe("Schematic: Blue Smoke Flare", 23813, 30343);
+		-- #if BEFORE WRATH
 		itemrecipe("Schematic: Khorium Toolbox", 23817, 30349);	-- Not implemented until Wrath, when it became a Titanium Toolbox
+		-- #endif
 		itemrecipe("Schematic: Critter Enlarger", 23882, 30549);
 		itemrecipe("Schematic: Remote Mail Terminal", 23885, 30555);
 		-- #endif
