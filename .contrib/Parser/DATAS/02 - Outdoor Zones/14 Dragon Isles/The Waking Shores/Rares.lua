@@ -15,25 +15,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
 				["questID"] = 72835,
 				["g"] = {
-					i(200442),	-- Basilisk Hide Jerkin
 					i(200165),	-- Aegis of Scales
 					i(196992),	-- Cliffside Wylderdrake: Heavy Horns (DM!)
-					i(200249),	-- Mage's Chewed Wand (TOY!)
 					i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(187945, {	-- Anhydros the Tidetaker
 				["coord"] = { 58.7, 40.3, THE_WAKING_SHORES },
 				["questID"] = 73865,
 				["g"] = {
-					i(200563),	-- Primal Ritual Shell
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(193135, {	-- Azra's Prized Peony
 				["coord"] = { 54.9, 71.1, THE_WAKING_SHORES },
 				-- ["questID"] = 69839,
 				["g"] = {
+					i(200259),	-- Forest Dweller's Shield
 					i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
+					i(197121),	-- Highland Drake: Tan Horns (DM!)
 				},
 			}),
 			n(192738, {	-- Brundin the Dragonbane <Qalashi War Party>
@@ -41,8 +42,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 48.4, 66.1, THE_WAKING_SHORES },
 				["questID"] = 73890,
 				["g"] = {
-					i(197111),	-- Highland Drake: Maned Head (DM!)
 					i(200857),	-- Talisman of Sargha (TOY!)
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(193198, {	-- Captain Lancer
@@ -87,8 +88,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200217),	-- Blazing Essence
 					i(197135),	-- Highland Drake: Toothy Mouth (DM!)
 					i(200247),	-- Inextinguishable Gavel
-					i(200563),	-- Primal Ritual Shell
 					i(200133),	-- Volcanic Chakram
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(193154, {	-- Forgotten Gryphon
@@ -196,11 +197,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
 				["questID"] = 72843,
 				["g"] = {
-					i(200445),	-- Lucky Hunting Charm
-					i(200193),	-- Manafrond Sandals
-					i(200563),	-- Primal Ritual Shell
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200195),	-- Thunderscale Legguards
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(193271, {	-- Shadeslash Trakken
@@ -246,7 +243,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 45.4, 35.6, THE_WAKING_SHORES },
 				-- ["questID"] = 69841,
 				["g"] = {
-					i(200131),	-- Reclaimed Survivalist's Dagger
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 		}),

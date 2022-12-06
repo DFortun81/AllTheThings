@@ -50,16 +50,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 14.5, 31.1, THE_AZURE_SPAN },
 				["questID"] = 73985,
 				["isDaily"] = true,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					-- Rest is under shared Lv70 Elite Rare Drops
+				},
 			}),
 			n(193259, {	-- Blue Terror
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
 				-- ["questID"] = ,
 				["g"] = {
-					i(197111),	-- Highland Drake: Maned Head (DM!)
 					i(197595),	-- Windborne Velocidrake: Finned Ears (DM!)
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(194392, {	-- Brackle
@@ -96,12 +96,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200158),	-- Eerie Spectral Ring
 					i(197098),	-- Highland Drake: Finned Back (DM!)
 					i(200245),	-- Leviathan Lure
-					i(200563),	-- Primal Ritual-shell
 					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 					i(200187),	-- Rod of Glacial Force
 					i(200310),	-- Stole of the Iron Phantom
 					i(198070),	-- Tattered Seavine (IF!)
 					i(200552),	-- Torrent Callers-shell
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(193214, {	-- Forgotten Creation
@@ -130,6 +130,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73996,
 				["isDaily"] = true,
 				["g"] = {
+					i(200259),	-- Forest Dweller's Shield
 					i(200267),	-- Reinforced Garden Tenders
 					i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
 					i(197121),	-- Highland Drake: Tan Horns (DM!)
@@ -182,7 +183,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
 				-- ["questID"] = ,
 				["g"] = {
-					i(200445),	-- Lucky Hunting Charm
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(193225, {	-- Notfar the Unbearable

@@ -209,7 +209,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 28.6, 58.8, THE_WAKING_SHORES },
 					["questID"] = 74040,
 					["g"] = {
-						i(200193),	-- Manafrond Sandals
+						-- Rest is under shared Lv70 Elite Rare Drops
 					},
 				}),
 				n(190991, {	-- Char
@@ -277,7 +277,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["questID"] = 74077,
 					["cost"] = { { "i", 191264, 20 }, },	-- 20xRestored Obsidian Key
 					["g"] = {
-						i(200195),	-- Thunderscale Legguards
+						-- Rest is under shared Lv70 Elite Rare Drops
 					},
 				}),
 				n(187886, {	-- Turboris

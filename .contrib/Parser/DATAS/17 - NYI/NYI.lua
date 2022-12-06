@@ -391,7 +391,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200159),	-- Blaze Ring
 			i(200161),	-- Razorwind Talisman
 			i(200164),	-- Iceloop
-			i(200174),	-- Bonesigil Shoulderguards
 			i(200185),	-- Grips of the Everflowing Ocean
 			i(200189),	-- Hydroforged Shell Helm
 			i(200199),	-- Elements' Burden
@@ -441,7 +440,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200741),	-- Pipspark's Prestigious Pendant of Protection
 			i(200758),	-- Breastplate of Storied Antiquity
 			i(200760),	-- Unstable Arcane Cell
-			i(200859),	-- Seasoned Hunter's Trophy
 			i(200875),	-- Seeker's Bands
 			i(200880),	-- Wind-Sealed Mana Capsule
 			i(200968),	-- Sandshaped Winglord's Drape

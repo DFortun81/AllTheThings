@@ -37,8 +37,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 59.6, 70.1, THALDRASZUS },
 				-- ["questID"] = 69868,
 				["g"] = {
-					i(197111),	-- Highland Drake: Maned Head (DM!)
-					i(200232),	-- Raptor Talonglaive
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(193658, {	-- Corrupted Proto-Dragon
@@ -73,7 +72,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 55.6, 77.4, THALDRASZUS },
 				["questID"] = 72814,
 				["g"] = {
-					i(200563),	-- Primal Ritual Shell
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(193126, {	-- Innumerable Ruination
@@ -87,8 +86,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 36.7, 72.8, THALDRASZUS },
 				["questID"] = 72842,
 				["g"] = {
-					i(200249),	-- Mage's Chewed Wand (maybe common drop?)
-					i(200195),	-- Thunderscale Legguards
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(193668, {	-- Lookout Mordren
@@ -176,8 +174,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- ["questID"] = 72121,
 				["cost"] = { { "i", 200949, 1 }, },	-- 1xCase of Fresh Gleamfish
 				["g"] = {
-					i(197111),	-- Highland Drake: Maned Head (DM!)
 					i(200999),	-- The Super Shellkhan Gang (TOY!)
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(183984, {	-- The Weeping Vilomah
@@ -205,8 +203,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 47.9, 49.8, THALDRASZUS },
 				-- ["questID"] = 69850,
 				["g"] = {
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200195),	-- Thunderscale Legguards
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 		}),

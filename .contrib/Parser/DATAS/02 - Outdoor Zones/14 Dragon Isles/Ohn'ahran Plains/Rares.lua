@@ -166,7 +166,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 72845,
 				["g"] = {
 					i(200137),	-- Chitin Dreadbringer
-					i(197111),	-- Highland Drake: Maned Head (DM!)
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(195223, {	-- Rustlily <Nimblewing Matriarch>
@@ -218,12 +218,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
 				["questID"] = 72847,
 				["g"] = {
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(198411),	-- Claw of Preparedness
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(200445),	-- Lucky Hunting Charm
-					i(200232),	-- Raptor Talonglaive
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(193165, {	-- Sparkspitter Vrak
@@ -237,7 +232,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 53.6, 72.8, OHNAHRAN_PLAINS },
 				-- ["questID"] = 69667,
 				["g"] = {
-					i(200193),	-- Manafrond Sandals
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(191842, {	-- Sulfurion
@@ -251,8 +246,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 63.2, 48.6, OHNAHRAN_PLAINS },
 				["questID"] = 72849,
 				["g"] = {
-					i(200186),	-- Amberquill Shroud
-					i(200445),	-- Lucky Hunting Charm
+					-- Shared Lv70 Elite Rare Drops
 					i(198409),	-- Personal Shell (TOY!)
 				},
 			}),
@@ -260,8 +254,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 22.7, 67.6, OHNAHRAN_PLAINS },
 				["questID"] = 72851,
 				["g"] = {
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
 					i(200212),	-- Sand-Encrusted Graves
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(196334, {	-- The Great Enla <Scourge of the Plains>
@@ -324,11 +318,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 31.5, 64.0, OHNAHRAN_PLAINS },
 				-- ["questID"] = 70177,
 				["g"] = {
-					i(200442),	-- Basilisk Hide Jerkin
 					i(200879, {	-- Zenet Egg
 						i(198825),	-- Zenet Hatchling (MOUNT!)
 					}),
 					i(200172),	-- Zephyrdance Signet
+					-- Rest is under shared Lv70 Elite Rare Drops
 				},
 			}),
 			n(188451, {	-- Zerimek <The Darkened Cloud>
