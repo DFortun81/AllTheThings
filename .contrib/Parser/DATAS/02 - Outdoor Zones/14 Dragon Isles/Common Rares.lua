@@ -7,54 +7,54 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			["description"] = "These items can drop from any Lv70 Elite Rare.",
 			["crs"] = {
 				193691, -- Fisherman Tinnak <Angered Ghost>
-				184853,	-- primal scythid queen
-				187111,	-- ancient hornswog
-				189822,	-- shasith	
-				190161,	-- sarana	
-				190968,	-- norbett
-				190985,	-- deaths shadow
-				190986,	-- battlehorn pyrhus
-				191103,	-- uranto the swift
-				191305,	-- the great shellkhan
-				191450,	-- boolk
-				192737,	-- qalashi war mammoth
-				192949,	-- skaara
-				193133,	-- sunscale behemoth
-				193143,	-- razkvex the untamed
-				193148,	-- thunderous matriarch
-				193153,	-- ripsaw the stalker
-				193154,	-- forgotten gryphon
-				193161,	-- woolfang
-				193163,	-- territorial coastling
-				193181,	-- skewersnout
-				193201,	-- mucka the raker
-				193209,	-- zenet avis
-				193217,	-- drakewing
-				193229,	-- henlare
-				193240,	-- riverwalker tamopo
-				193259,	-- blue terror
-				193273,	-- liskron the dazzling
-				193311,	-- melkhop
-				193341,	-- angen
+				184853,	-- Primal Scythid Queen
+				187111,	-- Ancient Hornswog
+				189822,	-- Shas'ith
+				190161,	-- Sarana
+				190968,	-- Norbett
+				190985,	-- Death's Shadow
 				190986,	-- Battlehorn Pyrhus
-				193632,	-- wilrive
+				191103,	-- Uranto the Swift
+				191305,	-- The Great Shellkhan
+				191450,	-- Boolk
+				192737,	-- Qalashi War Mammoth
+				192949,	-- Skaara
+				193133,	-- Sunscale Behemoth
+				193143,	-- Razk'vex the Untamed
+				193148,	-- Thunderous Matriarch
+				193153,	-- Ripsaw the Stalker
+				193154,	-- Forgotten Gryphon
+				193161,	-- Woolfang
+				193163,	-- Territorial Coastling
+				193181,	-- Skewersnout
+				193201,	-- Mucka the Raker
+				193209,	-- Zenet Avis
+				193217,	-- Drakewing
+				193229,	-- Henlare
+				193240,	-- Riverwalker Tamopo
+				193259,	-- Blue Terror
+				193273,	-- Liskron the Dazzling
+				193311,	-- Melkhop
+				193341,	-- Angen
+				190986,	-- Battlehorn Pyrhus
+				193632,	-- Wilrive
 				190971, -- Shas'ith
-				193666,	-- rokmur
-				193735,	-- mothgo deeploom
-				193885,	-- salkii
-				194251,	-- degmakh
-				194392,	-- brackle
-				194401,	-- spellforged horror
-				194409,	-- ergburk
-				194438,	-- khomuur
-				194601,	-- zagdech
-				194608,	-- kholdeg
-				194624,	-- zumakh
-				195417,	-- tsokorg
-				197009,	-- liskheszaera
-				197353,	-- blisterhide
+				193666,	-- Rokmur
+				193735,	-- Moth'go Deeploom
+				193885,	-- Salkii
+				194251,	-- Degmakh
+				194392,	-- Brackle
+				194401,	-- Spellforged Horror
+				194409,	-- Ergburk
+				194438,	-- Khomuur
+				194601,	-- Zagdech
+				194608,	-- Kholdeg
+				194624,	-- Zumakh
+				195417,	-- Tsokorg
+				197009,	-- Liskheszaera
+				197353,	-- Blisterhide
 				-- The Hunt Mobs
-				194761,	-- khuumog
+				194761,	-- Khuumog
 				194763,	-- Tenmod
 				195132, -- Tevgai
 				194760,	-- Uurhilt
