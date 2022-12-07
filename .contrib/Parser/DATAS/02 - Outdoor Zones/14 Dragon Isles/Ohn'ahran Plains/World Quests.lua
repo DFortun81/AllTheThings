@@ -11,7 +11,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- ["coord"] = { XX, YY, OHNAHRAN_PLAINS }
 			}),
 			q(70712, {	-- Dragonrider Racing - River Rapids Route
-				-- ["coord"] = { XX, YY, OHNAHRAN_PLAINS }
+				["coord"] = { 43.8, 66.9, OHNAHRAN_PLAINS }
 			}),
 			q(70149, {	-- Hope for the Highlands
 				["coord"] = { 85.3, 51.9, OHNAHRAN_PLAINS }
@@ -28,6 +28,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(69990, {	-- The Fields of Ferocity Redux: Lord of Decay!
 				["coord"] = { 53.1, 37.2, OHNAHRAN_PLAINS }
 			}),
+			q(69991, {	-- The Fields of Ferocity Redux: Foe from the Volcano!
+				["coord"] = { 53.8, 37.2, OHNAHRAN_PLAINS }
+			}),
 			q(70424, {	-- Dragonrider Racing - Mirror of the Sky Dash
 				["coord"] = { 47.4, 70.6, OHNAHRAN_PLAINS }
 			}),
@@ -36,6 +39,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			q(70652, {	-- Take One Down, Pass It Around
 				["coord"] = { 24.5, 34.7, OHNAHRAN_PLAINS }
+			}),
+			q(70079, {	-- Cataloging the Ohn'ahran Plains
+				["coord"] = { 52, 56.8, OHNAHRAN_PLAINS }
 			}),
 			-- Pet Battle
 			petbattle(filter(BATTLE_PETS, {
