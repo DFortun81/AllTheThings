@@ -1161,6 +1161,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "n", 193411 },	-- Celormu
 				["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
 			}),
+			q(72484, {	-- The Ohn'ahran Plains Advanced Tour
+				["sourceQuests"] = { 72482 },	-- The Waking Shores Advanced Tour
+				["provider"] = { "n", 193411 },	-- Celormu
+				["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
+			}),
 			q(71141, {	-- Gills with Gall
 				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 				["provider"] = { "n", 193304 },	-- Ru'Kroszk
