@@ -7510,7 +7510,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70630),	--
 			q(70631),	--
 			q(70632),	--
-			q(70634),	--
 			q(70635),	--
 			q(70636),	--
 			q(70637),	--
@@ -7519,7 +7518,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 10.0.0.44999
 			q(70645),	--
 			q(70649),	--
-			q(70652),	--
 			q(70653),	--
 			q(70654),	--
 			q(70655),	--

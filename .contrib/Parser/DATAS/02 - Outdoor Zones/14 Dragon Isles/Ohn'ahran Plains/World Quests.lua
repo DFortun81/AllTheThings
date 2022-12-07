@@ -31,6 +31,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(70424, {	-- Dragonrider Racing - Mirror of the Sky Dash
 				["coord"] = { 47.4, 70.6, OHNAHRAN_PLAINS }
 			}),
+			q(70634, {	-- Lashed Out
+				["coord"] = { 30.9, 52.7, OHNAHRAN_PLAINS }
+			}),
+			q(70652, {	-- Take One Down, Pass It Around
+				["coord"] = { 24.5, 34.7, OHNAHRAN_PLAINS }
+			}),
 			-- Pet Battle
 			petbattle(filter(BATTLE_PETS, {
 				q(71140, {	-- Two and Two Together
