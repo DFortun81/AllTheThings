@@ -40,6 +40,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					{ 43.6, 83.6, THALDRASZUS, },
 				},
 			}),
+			pet(3352, {	-- Razortooth Bear Cub
+				["cr"] = 192251,	-- Razortooth Bear Cub
+				["coords"] = {
+					{ 48.4, 56.0, THALDRASZUS, },
+				},
+			}),
 			pet(3336, {	-- Vorquin Runt
 				["cr"] = 191323,	-- Vorquin Runt
 			}),

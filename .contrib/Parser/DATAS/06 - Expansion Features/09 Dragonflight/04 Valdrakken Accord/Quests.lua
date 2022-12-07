@@ -123,6 +123,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199773),	-- Titan Watcher's Scepter
 				},
 			}),
+				-- RENOWN 14 --
+			q(72690, {	-- Renown Supplies
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack
+				},
+			}),
 				-- STORY LINE CHAPTER 2
 			q(67074, {	-- The Gift of Silver
 				["sourceQuest"] = 68794,	-- Ally of Dragons

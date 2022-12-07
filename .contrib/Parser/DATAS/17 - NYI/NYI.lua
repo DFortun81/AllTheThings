@@ -913,7 +913,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200241),	-- Stormcaller's Ritual Hatchet
 			i(200242),	-- Watcher's Lightning Rod
 			i(200250),	-- Frost Tipped Glaive
-			i(200252),	-- Molten Flak Cannon
 			i(200253),	-- Snowspring Incanter's Knife
 			i(200257),	-- Decay Infused Branch
 			i(200259),	-- Forest Dweller's Shield

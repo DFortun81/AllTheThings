@@ -33,6 +33,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			pet(3296, {	-- Palamanther
 				["cr"] = 189122,	-- Palamanther
 			}),
+			pet(3307, {	-- Plucky Duckling
+				["cr"] = 189144,	-- Plucky Duckling
+				["coords"] = {
+					{ 60.8, 57.2, VALDRAKKEN, },
+					{ 57.0, 71.0, THE_WAKING_SHORES, },
+				},
+			}),
 			pet(3272, {	-- Pricklefury Hare
 				["cr"] = 189093,	-- Pricklefury Hare
 			}),
@@ -53,6 +60,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			pet(3282, {	-- Swoglet
 				["cr"] = 189104,	-- Swoglet
+			}),
+			pet(3318, {	-- Thunderfoot Calf
+				["cr"] = 189155,	-- Thunderfoot Calf
+				["coords"] = {
+					{ 45.8, 35.2, THE_WAKING_SHORES, },
+				},
 			}),
 			pet(3336, {	-- Vorquin Runt
 				["cr"] = 191323,	-- Vorquin Runt
