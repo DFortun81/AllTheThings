@@ -239,6 +239,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				-- 70000 for Common Hunt completion
 
 				i(200468, {	-- Grant Hunt Spoils [Epic]
+					i(192791),	-- Plainswalker Bearer
 					-- likely rewards various items from lower tiers as well, pls symlink at lowest level received until confirmed only source
 					["sym"] = {
 						{"select","itemID", 200513},{"pop"},	-- Grand Hunt Spoils [Rare]
@@ -288,6 +289,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	q(70004),	-- First time?
 	q(70908),	-- Maruuk Hunts // HQ to reward you with Reputation after each Stage
 	q(70907),	-- Hunt concluded // White Bag
+	q(71136),	-- Hunter concluded // Blue Bag
 	q(70906),	-- Hunt concluded // Epic Bag
 	-- Each Unique Event can reward you with 1 trophy daily. 
 	-- Upon killing a mob that dropped a trophy, the quest is triggered.
