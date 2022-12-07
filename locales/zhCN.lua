@@ -868,6 +868,9 @@ for key,value in pairs({
 		[-1120] = "马鲁克半人马",											-- Maruuk Centaur
 		[-1121] = "艾拉格氏族",											-- Clan Aylaag
 		[-1122] = "洪荒狩猎",							                -- Grand Hunts
+		[-1123] = "北部洪荒狩猎",										-- Northern Grand Hunt
+		[-1124] = "东部洪荒狩猎",										-- Eastern Grand Hunt
+		[-1126] = "西部洪荒狩猎",										-- Western Grand Hunt
 		[-1130] = "伊斯卡拉海象人",										-- Iskaara Tuskarr
 		[-1131] = "伊斯卡拉渔具",										-- Iskaara Fishing
 		[-1140] = "瓦德拉肯联军",											-- Valdrakken Accord
