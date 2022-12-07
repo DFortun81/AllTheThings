@@ -16,6 +16,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(71205, {	-- Hydro Tuskarr
 				-- ["coord"] = { XX, YY, THALDRASZUS }
 			}),
+			q(70435, {	-- Dragonrider Racing - Garden Gallivant
+				["coord"] = { 39.4, 76, THALDRASZUS }
+			}),
 			-- q(72090, {	-- Disrupting the Primalist Plan
 			-- 	["coord"] = { 61.5, 50.0, PRIMALIST_TOMORROW }
 			-- }),
