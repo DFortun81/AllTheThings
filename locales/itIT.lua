@@ -1031,8 +1031,11 @@ for key,value in pairs({
 	[21015] = "Hoofprints",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21016] = "Hoofprints",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21042] = "Distintivo della Guardia di Theramore",	-- Theramore Guard Badge
+	[22245] = "Sacca di Carne",	-- Sack of Meat
+	[22246] = "Lacrima di Theradras",	-- Tear of Theradras
 	[35251] = "Cassa di Karnitol",	-- Karnitol's Chest
 	[37099] = "Tavoletta Atal'ai",	-- Atal'ai Tablet
+	[50961] = "Malem Chest",	-- Malem Chest	--TODO: This was taken from wotlk Wowhead
 	[51708] = "Eliza's Grave Dirt",	-- Eliza's Grave Dirt	--TODO: This was taken from wotlk Wowhead
 	[91138] = "Martello di Jordan",	-- Jordan's Hammer
 	[103821] = "Doan's Strongbox",	-- Doan's Strongbox	--TODO: This was taken from wotlk Wowhead
@@ -1082,6 +1085,7 @@ for key,value in pairs({
 	[152095] = "Moonpetal Lily",	-- Moonpetal Lily	--TODO: This was taken from wotlk Wowhead
 	[152622] = "Formazione di Azsharite",	-- Azsharite Formation
 	[153123] = "Kim'jael's Equipment",	-- Kim'jael's Equipment	--TODO: This was taken from wotlk Wowhead
+	[157936] = "Un'Goro Dirt Pile",	-- Un'Goro Dirt Pile	--TODO: This was taken from wotlk Wowhead
 	[160836] = "Reliquiario",	-- Relic Coffer
 	[161495] = "Cassaforte Segreta",	-- Secret Safe
 	[161504] = "A Small Pack",	-- A Small Pack	--TODO: This was taken from wotlk Wowhead
@@ -1110,6 +1114,7 @@ for key,value in pairs({
 	[164958] = "Germoglio Petalorosso",	-- Bloodpetal Sprout
 	[166863] = "Carcassa Fresca di Plesiosauro",	-- Fresh Threshadon Carcass
 	[169243] = "Cassa dei Sette",	-- Chest of The Seven
+	[171938] = "Cactus",	-- Cactus Apple
 	[171939] = "Corrupted Songflower",	-- Corrupted Songflower	--TODO: This was taken from wotlk Wowhead
 	[171942] = "Corrupted Songflower",	-- Corrupted Songflower	--TODO: This was taken from wotlk Wowhead
 	[173232] = "Progetti di Forgiatura",	-- Blacksmithing Plans
@@ -1177,10 +1182,14 @@ for key,value in pairs({
 	[176487] = "The Deed to Tarren Mill",	-- The Deed to Tarren Mill	--TODO: This was taken from wotlk Wowhead
 	[176544] = "Remains of Eva Sarkhoff",	-- Remains of Eva Sarkhoff	--TODO: This was taken from wotlk Wowhead
 	[176545] = "Remains of Lucien Sarkhoff",	-- Remains of Lucien Sarkhoff	--TODO: This was taken from wotlk Wowhead
+	[176582] = "Trappola per Crostacei",	-- Shellfish Trap
 	[176631] = "Dono di Menethil",	-- Menethil's Gift
+	[176751] = "Ossa di Kodo",	-- Kodo Bones
+	[177243] = "Portale Demoniaco",	-- Demon Portal
 	[177289] = "Scourge Cauldron",	-- Scourge Cauldron	--TODO: This was taken from wotlk Wowhead
 	[177491] = "Termite Barrel",	-- Termite Barrel	--TODO: This was taken from wotlk Wowhead
 	[177667] = "Pergamena Strappata",	-- Torn Scroll
+	--TODO: [177673] = "Serpent Statue",	-- Serpent Statue
 	--TODO: [177684] = "Stone of Shy-Rotam",	-- Stone of Shy-Rotam
 	[177787] = "Diario di Rackmore",	-- Rackmore's Log
 	[177904] = "Wanted Poster: Besseleth",	-- Wanted Poster: Besseleth	--TODO: This was taken from wotlk Wowhead
@@ -1202,6 +1211,7 @@ for key,value in pairs({
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "Battered Tackle Box",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "Tablet of Madness",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
+	[180369] = "Muddy Churning Waters",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
 	[180448] = "Manifesto dei Ricercati: Chelafunesta",	-- Wanted Poster: Deathclasp
 	[180456] = "Pietra del Vento Minore",	-- Lesser Wind Stone
 	[180461] = "Pietra del Vento",	-- Wind Stone
@@ -3333,6 +3343,7 @@ for key,value in pairs({
 	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
 	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
 	[377499] = "Sulle Origini delle Specie Draconiche",	-- On the Origin of Draconic Species
+	[377534] = "Scrigno Consegnato",	-- Delivered Vault
 	[377899] = "Ostaggio dei Drospi Cornuti Nascosto",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	[378010] = "Tesoro dei Draghi Dimenticato",	-- Forgotten Dragon Treasure
@@ -3341,11 +3352,13 @@ for key,value in pairs({
 	[379321] = "Impronte di Zampe Misteriose",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
-	--TODO: [380518] = "Dislodged Dragoneye",	-- Dislodged Dragoneye
 	[380533] = "Pergamena Ricoperta di Neve",	-- Snow Covered Scroll
 	[380547] = "Olio per Tannatura Infuso di Decadimento",	-- Decay-Infused Tanning Oil
+	--TODO: [380554] = "Well-Danced Drum",	-- Well-Danced Drum
 	[380587] = "Cassa di Pelli Trattate",	-- Crate of Treated Hides
 	[380602] = "Pelle Benedetta dal Vento",	-- Wind-Blessed Hide
+	[380615] = "Zaino del Bracconiere",	-- Poacher's Pack
+	[380618] = "Flusso Draconico",	-- Draconic Flux
 	[380653] = "Aquilone di Yennu",	-- Yennu's Kite
 	[380654] = "Cotta del Morto",	-- Dead Man's Chestplate
 	[380840] = "Zaino da Cavallo Rovinato",	-- Torn Riding Pack
@@ -3367,6 +3380,7 @@ for key,value in pairs({
 	--TODO: [381160] = "Lost Compass",	-- Lost Compass
 	--TODO: [381216] = "Surveyor's Magnifying Glass",	-- Surveyor's Magnifying Glass
 	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
+	[381277] = "Barile di Dolcetti Confiscati",	-- Barrel of Confiscated Treats
 	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
 	[381297] = "Bagaglio Smarrito",	-- Misplaced Luggage
 	--TODO: [381353] = "Stone Dragontooth",	-- Stone Dragontooth
@@ -3384,6 +3398,7 @@ for key,value in pairs({
 	[381650] = "Richiesta degli Archivisti",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Iscrizioni a Zanne Ali Fuoco.",	-- Fang Flap Fire Signups
 	[381661] = "Richiesta degli Archivisti",	-- Archivists' Request
+	[381663] = "Tempesta di Mana per Principianti",	-- Manastorming For Beginners
 	[381664] = "Richiesta degli Archivisti",	-- Archivists' Request
 	[381667] = "Richiesta degli Archivisti",	-- Archivists' Request
 	[381668] = "Richiesta degli Archivisti",	-- Archivists' Request	--TODO: this was manually translated

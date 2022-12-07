@@ -1053,8 +1053,11 @@ for key, value in pairs({
 	[21015] = "蹄印",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21016] = "蹄印",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21042] = "塞拉摩卫兵徽章",	-- Theramore Guard Badge
+	[22245] = "一袋肉",	-- Sack of Meat
+	[22246] = "瑟莱德丝之泪",	-- Tear of Theradras
 	[35251] = "卡尼托的箱子",	-- Karnitol's Chest	--TODO: This was taken from wotlk Wowhead
 	[37099] = "阿塔莱石板",	-- Atal'ai Tablet
+	[50961] = "玛雷姆的箱子",	-- Malem Chest	--TODO: This was taken from wotlk Wowhead
 	[51708] = "伊莉莎的坟墓",	-- Eliza's Grave Dirt	--TODO: This was taken from wotlk Wowhead
 	[91138] = "乔丹的铁锤",	-- Jordan's Hammer
 	[103821] = "杜安的保险箱",	-- Doan's Strongbox	--TODO: This was taken from wotlk Wowhead
@@ -1104,6 +1107,7 @@ for key, value in pairs({
 	[152095] = "月牙百合花",	-- Moonpetal Lily	--TODO: This was taken from wotlk Wowhead
 	[152622] = "艾萨莱特晶体",	-- Azsharite Formation
 	[153123] = "基姆加尔的设备",	-- Kim'jael's Equipment	--TODO: This was taken from wotlk Wowhead
+	[157936] = "安戈洛土堆",	-- Un'Goro Dirt Pile	--TODO: This was taken from wotlk Wowhead
 	[160836] = "古物宝库",	-- Relic Coffer
 	[161495] = "秘密保险箱",	-- Secret Safe
 	[161504] = "小背包",	-- A Small Pack	--TODO: This was taken from wotlk Wowhead
@@ -1132,6 +1136,7 @@ for key, value in pairs({
 	[164958] = "血瓣花苗",	-- Bloodpetal Sprout
 	[166863] = "新鲜的蛇颈龙肉",	-- Fresh Threshadon Carcass
 	[169243] = "七贤之箱",	-- Chest of The Seven
+	[171938] = "仙人掌果",	-- Cactus Apple
 	[171939] = "被腐化的轻歌花",	-- Corrupted Songflower	--TODO: This was taken from wotlk Wowhead
 	[171942] = "被腐化的轻歌花",	-- Corrupted Songflower	--TODO: This was taken from wotlk Wowhead
 	[173232] = "锻造设计图",	-- Blacksmithing Plans
@@ -1199,10 +1204,14 @@ for key, value in pairs({
 	[176487] = "塔伦米尔地契",	-- The Deed to Tarren Mill	--TODO: This was taken from wotlk Wowhead
 	[176544] = "艾瓦·萨克霍夫的遗体",	-- Remains of Eva Sarkhoff	--TODO: This was taken from wotlk Wowhead
 	[176545] = "卢森·萨克霍夫的遗体",	-- Remains of Lucien Sarkhoff	--TODO: This was taken from wotlk Wowhead
+	[176582] = "贝壳陷阱",	-- Shellfish Trap	--TODO: This was taken from wotlk Wowhead
 	[176631] = "米奈希尔的礼物",	-- Menethil's Gift
+	[176751] = "科多兽骨",	-- Kodo Bones
+	[177243] = "恶魔之门",	-- Demon Portal
 	[177289] = "瘟疫之锅",	-- Scourge Cauldron	--TODO: This was taken from wotlk Wowhead
 	[177491] = "白蚁桶",	-- Termite Barrel	--TODO: This was taken from wotlk Wowhead
 	[177667] = "破损的卷轴",	-- Torn Scroll
+	--TODO: [177673] = "Serpent Statue",	-- Serpent Statue
 	--TODO: [177684] = "Stone of Shy-Rotam",	-- Stone of Shy-Rotam
 	[177787] = "拉克摩尔的日志",	-- Rackmore's Log	--TODO: This was taken from wotlk Wowhead
 	[177904] = "通缉：贝瑟莱斯",	-- Wanted Poster: Besseleth	--TODO: This was taken from wotlk Wowhead
@@ -1224,6 +1233,7 @@ for key, value in pairs({
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "破碎的工具箱",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "疯狂石板",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
+	[180369] = "混浊的水",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
 	[180448] = "通缉布告：死亡弯钩",	-- Wanted Poster: Deathclasp
 	[180456] = "次级风石",	-- Lesser Wind Stone
 	[180461] = "风石",	-- Wind Stone
@@ -3355,6 +3365,7 @@ for key, value in pairs({
 	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
 	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
 	[377499] = "《龙族起源考》",	-- On the Origin of Draconic Species
+	--TODO: [377534] = "Delivered Vault",	-- Delivered Vault
 	[377899] = "隐藏的龙蛙人质",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	[378010] = "被遗忘的巨龙宝藏",	-- Forgotten Dragon Treasure
@@ -3363,11 +3374,13 @@ for key, value in pairs({
 	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
-	--TODO: [380518] = "Dislodged Dragoneye",	-- Dislodged Dragoneye
 	--TODO: [380533] = "Snow Covered Scroll",	-- Snow Covered Scroll
 	[380547] = "腐朽灌注的鞣革用油",	-- Decay-Infused Tanning Oil
+	--TODO: [380554] = "Well-Danced Drum",	-- Well-Danced Drum
 	--TODO: [380587] = "Crate of Treated Hides",	-- Crate of Treated Hides
 	[380602] = "风佑之皮",	-- Wind-Blessed Hide
+	[380615] = "偷猎者的背包",	-- Poacher's Pack
+	--TODO: [380618] = "Draconic Flux",	-- Draconic Flux
 	[380653] = "耶努的风筝",	-- Yennu's Kite
 	[380654] = "亡者胸甲",	-- Dead Man's Chestplate
 	[380840] = "破损的骑行背包",	-- Torn Riding Pack
@@ -3389,6 +3402,7 @@ for key, value in pairs({
 	--TODO: [381160] = "Lost Compass",	-- Lost Compass
 	[381216] = "勘测员的放大镜",	-- Surveyor's Magnifying Glass
 	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
+	[381277] = "一桶收缴的零食",	-- Barrel of Confiscated Treats
 	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
 	--TODO: [381297] = "Misplaced Luggage",	-- Misplaced Luggage
 	--TODO: [381353] = "Stone Dragontooth",	-- Stone Dragontooth
@@ -3406,6 +3420,7 @@ for key, value in pairs({
 	[381650] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "“炽齿翅”报名处",	-- Fang Flap Fire Signups
 	[381661] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
+	[381663] = "法力风暴初学指南",	-- Manastorming For Beginners
 	[381664] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381667] = "档案员的请求",	-- Archivists' Request
 	[381668] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated

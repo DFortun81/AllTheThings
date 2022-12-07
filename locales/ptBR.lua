@@ -1039,8 +1039,11 @@ for key,value in pairs({
 	[21015] = "Pegadas de casco",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21016] = "Pegadas de casco",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21042] = "Insígnia da Guarda de Theramore",	-- Theramore Guard Badge
+	[22245] = "Saco de Carne",	-- Sack of Meat
+	[22246] = "Lágrima de Theradras",	-- Tear of Theradras
 	[35251] = "Baú de Karnitol",	-- Karnitol's Chest
 	[37099] = "Tabuleta Atal'ai",	-- Atal'ai Tablet
+	[50961] = "Baú de Malem",	-- Malem Chest	--TODO: This was taken from wotlk Wowhead
 	[51708] = "Terra da Cova de Eliza",	-- Eliza's Grave Dirt	--TODO: This was taken from wotlk Wowhead
 	[91138] = "Martelo de Jardel",	-- Jordan's Hammer
 	[103821] = "Caixa-forte de Doan",	-- Doan's Strongbox	--TODO: This was taken from wotlk Wowhead
@@ -1090,6 +1093,7 @@ for key,value in pairs({
 	[152095] = "Lírio Lunapétala",	-- Moonpetal Lily	--TODO: This was taken from wotlk Wowhead
 	[152622] = "Formação de Azsharita",	-- Azsharite Formation
 	[153123] = "Equipamento de Kam'arawn",	-- Kim'jael's Equipment	--TODO: This was taken from wotlk Wowhead
+	[157936] = "Monte de Terra de Un'Goro",	-- Un'Goro Dirt Pile	--TODO: This was taken from wotlk Wowhead
 	[160836] = "Arca de Relíquia",	-- Relic Coffer
 	[161495] = "Cofre Secreto",	-- Secret Safe
 	[161504] = "Um Pacote Pequeno",	-- A Small Pack	--TODO: This was taken from wotlk Wowhead
@@ -1118,6 +1122,7 @@ for key,value in pairs({
 	[164958] = "Broto de Pétala Sangrenta",	-- Bloodpetal Sprout
 	[166863] = "Carcaça de Manguadonte Fresca",	-- Fresh Threshadon Carcass
 	[169243] = "Baú dos Sete",	-- Chest of The Seven
+	[171938] = "Sabra",	-- Cactus Apple
 	[171939] = "Flor da Canção Corrompida",	-- Corrupted Songflower	--TODO: This was taken from wotlk Wowhead
 	[171942] = "Flor da Canção Corrompida",	-- Corrupted Songflower	--TODO: This was taken from wotlk Wowhead
 	[173232] = "Instruções de Ferraria",	-- Blacksmithing Plans
@@ -1185,10 +1190,14 @@ for key,value in pairs({
 	[176487] = "A Escritura da Serraria Tarren",	-- The Deed to Tarren Mill
 	[176544] = "Restos Mortais de Eva Sarkhoff",	-- Remains of Eva Sarkhoff
 	[176545] = "Restos Mortais de Lucien Sarkhoff",	-- Remains of Lucien Sarkhoff
+	[176582] = "Armadilha de Lagostim",	-- Shellfish Trap
 	[176631] = "Dádiva de Menethil",	-- Menethil's Gift
+	[176751] = "Ossos de Kodo",	-- Kodo Bones
+	[177243] = "Portal Demoníaco",	-- Demon Portal
 	[177289] = "Caldeirão do Flagelo",	-- Scourge Cauldron	--TODO: This was taken from wotlk Wowhead
 	[177491] = "Barril de Cupins",	-- Termite Barrel	--TODO: This was taken from wotlk Wowhead
 	[177667] = "Pergaminho Rasgado",	-- Torn Scroll
+	--TODO: [177673] = "Serpent Statue",	-- Serpent Statue
 	--TODO: [177684] = "Stone of Shy-Rotam",	-- Stone of Shy-Rotam
 	[177787] = "Diário de Rodovalho",	-- Rackmore's Log
 	[177904] = "Pôster de Procura-se: Besseleth",	-- Wanted Poster: Besseleth	--TODO: This was taken from wotlk Wowhead
@@ -1210,6 +1219,7 @@ for key,value in pairs({
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "Caixa de Ferramentas Desgastada",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "Tabuleta da Loucura",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
+	[180369] = "Águas Revoltas Barrentas",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
 	[180448] = "Cartaz de Procura-se: Agarramata",	-- Wanted Poster: Deathclasp
 	[180456] = "Pedra Eólica Menor",	-- Lesser Wind Stone
 	[180461] = "Pedra Eólica",	-- Wind Stone
@@ -3341,6 +3351,7 @@ for key,value in pairs({
 	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
 	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
 	[377499] = "A Origem das Espécies Dracônicas",	-- On the Origin of Draconic Species
+	--TODO: [377534] = "Delivered Vault",	-- Delivered Vault
 	[377899] = "Refém Zapo-de-chifre Escondido",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	[378010] = "Tesouro do Dragão Esquecido",	-- Forgotten Dragon Treasure
@@ -3349,11 +3360,13 @@ for key,value in pairs({
 	[379321] = "Pegada Misteriosa",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
-	--TODO: [380518] = "Dislodged Dragoneye",	-- Dislodged Dragoneye
 	[380533] = "Pergaminho Coberto de Neve",	-- Snow Covered Scroll
 	[380547] = "Óleo Bronzeador Infuso em Decomposição",	-- Decay-Infused Tanning Oil
+	--TODO: [380554] = "Well-Danced Drum",	-- Well-Danced Drum
 	[380587] = "Caixote de Pelegos Tratados",	-- Crate of Treated Hides
 	[380602] = "Pelego Abençoado pelo Vento",	-- Wind-Blessed Hide
+	[380615] = "Bolsa de Larápio",	-- Poacher's Pack
+	--TODO: [380618] = "Draconic Flux",	-- Draconic Flux
 	[380653] = "Pipa de Yennu",	-- Yennu's Kite
 	[380654] = "Guarda-peito do Homem Morto",	-- Dead Man's Chestplate
 	[380840] = "Mochila de Cavalgada Rasgada",	-- Torn Riding Pack
@@ -3375,6 +3388,7 @@ for key,value in pairs({
 	--TODO: [381160] = "Lost Compass",	-- Lost Compass
 	[381216] = "Luneta do Topógrafo",	-- Surveyor's Magnifying Glass
 	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
+	--TODO: [381277] = "Barrel of Confiscated Treats",	-- Barrel of Confiscated Treats
 	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
 	[381297] = "Bagagem Extraviada",	-- Misplaced Luggage
 	--TODO: [381353] = "Stone Dragontooth",	-- Stone Dragontooth
@@ -3392,6 +3406,7 @@ for key,value in pairs({
 	[381650] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Inscrições Fogo, Asa, Presa",	-- Fang Flap Fire Signups
 	[381661] = "Pedido dos Arquivistas",	-- Archivists' Request
+	[381663] = "Manavento para Iniciantes",	-- Manastorming For Beginners
 	[381664] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381667] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381668] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
