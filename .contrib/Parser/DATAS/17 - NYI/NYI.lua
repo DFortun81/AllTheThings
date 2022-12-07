@@ -784,17 +784,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201359),	-- Glimmer of Earth
 			i(201360),	-- Glimmer of Order
 			i(201361),	-- Primal Inspiration
-			i(201700),	-- Notebook of Crafting Knowledge
 			i(201705),	-- Notebook of Crafting Knowledge
-			i(201706),	-- Notebook of Crafting Knowledge
-			i(201708),	-- Notebook of Crafting Knowledge
 			i(201709),	-- Notebook of Crafting Knowledge
-			i(201710),	-- Notebook of Crafting Knowledge
-			i(201711),	-- Notebook of Crafting Knowledge
 			i(201712),	-- Notebook of Crafting Knowledge
 			i(201713),	-- Notebook of Crafting Knowledge
 			i(201714),	-- Notebook of Crafting Knowledge
-			i(201715),	-- Notebook of Crafting Knowledge
 			i(201716),	-- Notebook of Crafting Knowledge
 			i(201717),	-- Notebook of Crafting Knowledge
 			i(201718),	-- Notebook of Crafting Knowledge

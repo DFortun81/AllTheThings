@@ -192,6 +192,60 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198868),	-- Small Valdrakken Accord Supply Pack
 				},
 			}),
+			q(70892, {	-- Crafting Your Start
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = ALCHEMY,
+				["g"] = {
+					i(201706),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72329, {	-- Crafting Your Start
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = BLACKSMITHING,
+				["g"] = {
+					i(201708),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72330, {	-- Crafting Your Start
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = ENGINEERING,
+				["g"] = {
+					i(201710),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72331, {	-- Crafting Your Start
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = INSCRIPTION,
+				["g"] = {
+					i(201711),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72332, {	-- Crafting Your Start
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = MINING,
+				["g"] = {
+					i(201700),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72333, {	-- Crafting Your Start
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = TAILORING,
+				["g"] = {
+					i(201715),	-- Notebook of Crafting Knowledge
+				},
+			}),
 		}),
 	}),
 })));
