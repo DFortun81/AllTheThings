@@ -1046,7 +1046,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			q(72484, {	-- The Waking Shores Advanced Tour
+			q(72482, {	-- The Waking Shores Advanced Tour
 				["sourceQuests"] = { 72487 },	-- The Thaldraszus Tour
 				["provider"] = { "n", 199120 },	-- Celormu
 				["coord"] = { 46.0, 63.0, THALDRASZUS },

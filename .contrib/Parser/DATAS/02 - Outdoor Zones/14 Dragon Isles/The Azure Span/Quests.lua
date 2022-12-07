@@ -1970,6 +1970,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72140),	-- Pop after touch 'Missaligned Ley Crystal' (objectID 378175), do mini-game to convert it into 'Aligned Ley Crystal' (npcID 198268).
 		q(66046),	-- Pop after killing/completing bonus objective (Cascade) ... or skinning knowledge proc possibly
 		q(72779),	-- After completion of [70938]
+		q(72516),	-- After completion of (72487)
 	}),
 }));
 --]]
