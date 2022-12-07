@@ -5,7 +5,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 	n(MARUUK_CENTAUR, {
 		n(GRAND_HUNTS, {
 			m(OHNAHRAN_PLAINS, {
-				n(-1123, {	-- Northern Grand Hunt
+				n(-1123, {	-- North
 					n(190907, {	-- Blitztusk	-- North Only
 						["coord"] = { 77.0, 20.6, OHNAHRAN_PLAINS },
 						["questID"] = 73908,
@@ -48,7 +48,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 				}),
-				n(-1124, {	-- Eastern Grand Hunt
+				n(-1124, {	-- East
 					n(194608, {	-- Kholdeg	-- East Only
 						["coord"] = { 79.7, 55.4, OHNAHRAN_PLAINS },
 						["questID"] = 73920,
@@ -64,7 +64,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 				}),
-				n(-1126, {	-- Western Grand Hunt
+				n(-1126, {	-- West
 					n(194409, {	-- Ergburk	-- West Only
 						["coord"] = { 57.2, 47.7, OHNAHRAN_PLAINS },
 						["questID"] = 73914,

@@ -859,6 +859,10 @@ for key,value in pairs({
 		[-1120] = "마루크 켄타우로스",										-- Maruuk Centaur
 		[-1121] = "아일라그 부족",										-- Clan Aylaag
 		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
+		--TODO: [-1123] = "North",									-- North
+		--TODO: [-1124] = "East",									-- East
+		--TODO: [-1125] = "South",									-- South
+		--TODO: [-1126] = "West",									-- West
 		[-1130] = "이스카라 투스카르",										-- Iskaara Tuskarr
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "발드라켄 협의회",										-- Valdrakken Accord

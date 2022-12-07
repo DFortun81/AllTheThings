@@ -847,6 +847,10 @@ for key,value in pairs({
 		[-1120] = "Кентавры Маруук",								-- Maruuk Centaur
 		[-1121] = "Клан Айлааг",									-- Clan Aylaag
 		[-1122] = "Великая охота",									-- Grand Hunts
+		[-1123] = "Север",											-- North
+		[-1124] = "Восток",											-- East
+		[-1125] = "Юг",												-- South
+		[-1126] = "Запад",											-- West
 		[-1130] = "Искарские клыкарры",								-- Iskaara Tuskarr
 		[-1131] = "Искарское рыболовство",							-- Iskaara Fishing
 		[-1140] = "Союз Вальдраккена",								-- Valdrakken Accord
