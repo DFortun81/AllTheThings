@@ -81,6 +81,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(197101),	-- Highland Drake: Bushy Brow (DM!)
 				},
 			}),
+			-- RENOWN 9 --
+			q(70959, {	-- Cute and Cuddly
+				["description"] = "Requires Renown 9. Runs around Iskaara.",
+				["provider"] = { "n", 186564 },	-- Jiq
+				["coord"] = { 13.5, 49.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(193837),	-- Backswimmer Timbertooth (PET!)
+					i(193225),	-- Whiskuk (PET!)
+				},
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
@@ -95,5 +105,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72387),	-- Triggered with 'Tuskarr Headwear' (70953)
 		q(72781),	-- Triggered with 'Tuskarr Fishing Gear' (71230)
 		q(72388),	-- Triggered with 'Mounting Curiosity' (70954)
+		q(72390),	-- Triggered with 'Cute and Cuddly' (70959)
 	}),
 }));

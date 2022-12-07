@@ -117,7 +117,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 				},
 			}),
-			n(186186, {	-- Jiq
+			n(186564, {	-- Jiq
 				["description"] = "Runs around in the village.",
 				["coord"] = { 13.5, 48.7, THE_AZURE_SPAN },
 				["g"] = {
