@@ -63,7 +63,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coords"] = {
 					{ 50.9, 54.8, THE_AZURE_SPAN, },
 				},
-				["description"] = "Talk to |cFFefc400Nuptuk|r to see the pet.",
+				["description"] = "Talk to |cFFefc400Nuptuk|r to see this pet.",
 			}),
 			pet(3322, {	-- Woodbiter Piculet
 				["cr"] = 189157,	-- Woodbiter Piculet
