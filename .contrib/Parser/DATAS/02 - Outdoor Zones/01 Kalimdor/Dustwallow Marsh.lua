@@ -1454,6 +1454,11 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 58.6, 60.2, DUSTWALLOW_MARSH },
 					["description"] = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
 					["timeline"] = { "added 3.1.0.9637" },
+					["OnUpdate"] = [[function(t)
+						if not t.collected and t.collectible then
+							t.collectible = GetItemCount(45858, true) == 0;
+						end
+					end]],
 					["requireSkill"] = FISHING,
 					["lvl"] = 35,
 					["groups"] = {

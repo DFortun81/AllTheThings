@@ -600,19 +600,6 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 48.6, 70.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
-				q(1431, {	-- Alliance Relations
-					["qg"] = 5639,	-- Craven Drok
-					["coord"] = { 52.4, 44.6, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(1432, {	-- Alliance Relations
-					["sourceQuest"] = 1431,	-- Alliance Relations
-					["qg"] = 5640,	-- Keldran
-					["coord"] = { 22.2, 53.8, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(27277, {	-- An Audience with Ureda
 					["qgs"] = {
 						3047,	-- Archmage Shymm <Mage Trainer>

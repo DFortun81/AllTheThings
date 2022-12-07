@@ -618,18 +618,6 @@ root("Zones", m(KALIMDOR, {
 						i(131371),  -- Steel-Patched Armbands
 					},
 				}),
-				q(1361, {	-- Regthar Deathgate
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["qgs"] = {
-						4485,	-- Belgrom Rockmaul
-						2229,	-- Krusk
-					},
-					["coords"] = {
-						{ 75.0, 34.2, ORGRIMMAR },
-						{ 63.2, 20.6, HILLSBRAD_FOOTHILLS },
-					},
-				}),
 				q(26687, {	-- Reinforcements From Theramore
 					["qg"] = 39119,	-- General Twinbraid
 					["coord"] = { 43.5, 78.3, SOUTHERN_BARRENS },

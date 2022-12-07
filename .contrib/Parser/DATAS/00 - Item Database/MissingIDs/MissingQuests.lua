@@ -9,7 +9,6 @@ q(220),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(242),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(259),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(260),	-- <UNUSED>,		CLASSIC: <UNUSED>
-q(261),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
 q(352),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(406),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(462),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -57,7 +56,6 @@ q(990),	-- Trek to Ashenvale,		TBC: Trek to Ashenvale,		CLASSIC: Trek to Ashenva
 q(1001),	-- Buzzbox 411,		TBC: Buzzbox 411,		CLASSIC: Buzzbox 411
 q(1002),	-- Buzzbox 323,		TBC: Buzzbox 323,		CLASSIC: Buzzbox 323
 q(1003),	-- Buzzbox 525,		TBC: Buzzbox 525,		CLASSIC: Buzzbox 525
-q(1052),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
 q(1132),	-- Fiora Longears,		TBC: Fiora Longears,		CLASSIC: Fiora Longears
 q(1141),	-- The Family and the Fishing Pole,		TBC: The Family and the Fishing Pole,		CLASSIC: The Family and the Fishing Pole
 q(1143),	-- The Tower of Althalaxx,		TBC: The Tower of Althalaxx,		CLASSIC: The Tower of Althalaxx
@@ -85,25 +83,12 @@ q(1297),	-- <nyi> <TXT> Course of Action,		TBC: <nyi> <TXT> Course of Action,		C
 q(1298),	-- <nyi> <TXT> Thrall's Dirty Work,		CLASSIC: <nyi> <TXT> Thrall's Dirty Work
 q(1299),	-- <nyi> <TXT> Thrall's Dirty Work,		TBC: <nyi> <TXT> Thrall's Dirty Work,		CLASSIC: <nyi> <TXT> Thrall's Dirty Work
 q(1300),	-- <nyi> <TXT> Lorn Grim Totem,		TBC: <nyi> <TXT> Lorn Grim Totem,		CLASSIC: <nyi> <TXT> Lorn Grim Totem
-q(1367),	-- Magram Alliance,		TBC: Magram Alliance,		CLASSIC: Magram Alliance
-q(1369),	-- Broken Tears,		TBC: Broken Tears,		CLASSIC: Broken Tears
-q(1371),	-- Gizmo for Warug,		TBC: Gizmo for Warug,		CLASSIC: Gizmo for Warug
-q(1375),	-- Khan Shaka,		TBC: Khan Shaka,		CLASSIC: Khan Shaka
-q(1385),	-- Brutal Politics,		TBC: Brutal Politics,		CLASSIC: Brutal Politics
-q(1386),	-- Assault on the Kolkar,		TBC: Assault on the Kolkar,		CLASSIC: Assault on the Kolkar
 q(1390),	-- <nyi> Oops, We Killed Them Again.,		CLASSIC: <nyi> Oops, We Killed Them Again.
 q(1397),	-- <nyi> Saved!,		CLASSIC: <nyi> Saved!
-q(1437),	-- Vahlarriel's Search,		TBC: Vahlarriel's Search,		CLASSIC: Vahlarriel's Search
-q(1438),	-- Vahlarriel's Search,		TBC: Vahlarriel's Search,		CLASSIC: Vahlarriel's Search
-q(1439),	-- Search for Tyranis,		TBC: Search for Tyranis,		CLASSIC: Search for Tyranis
 q(1441),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1443),	-- <nyi> The Shakedown,		CLASSIC: <nyi> The Shakedown
-q(1458),	-- Reagents for Reclaimers Inc.,		TBC: Reagents for Reclaimers Inc.,		CLASSIC: Reagents for Reclaimers Inc.
-q(1459),	-- Reagents for Reclaimers Inc.,		TBC: Reagents for Reclaimers Inc.,		CLASSIC: Reagents for Reclaimers Inc.
 q(1460),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1461),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(1465),	-- Vahlarriel's Search,		TBC: Vahlarriel's Search,		CLASSIC: Vahlarriel's Search
-q(1466),	-- Reagents for Reclaimers Inc.,		TBC: Reagents for Reclaimers Inc.,		CLASSIC: Reagents for Reclaimers Inc.
 q(1498),	-- Path of Defense,		TBC: Path of Defense,		CLASSIC: Path of Defense
 q(1502),	-- Thun'grim Firegaze,		TBC: Thun'grim Firegaze,		CLASSIC: Thun'grim Firegaze
 q(1505),	-- Veteran Uzzek,		TBC: Veteran Uzzek,		CLASSIC: Veteran Uzzek
@@ -323,7 +308,6 @@ q(5712),	-- <NYI> The Lost Ways,		CLASSIC: <NYI> The Lost Ways
 q(6003),	-- <nyi> <txt> Green With Envy,		CLASSIC: <nyi> <txt> Green With Envy
 q(6123),	-- Gathering the Cure,		TBC: Gathering the Cure,		CLASSIC: Gathering the Cure
 q(6128),	-- Gathering the Cure,		TBC: Gathering the Cure,		CLASSIC: Gathering the Cure
-q(6141),	-- Brother Anton,		TBC: Brother Anton,		CLASSIC: Brother Anton
 q(6165),	-- <NYI> <TXT> Archmage Timolain's Remains,		TBC: <NYI> <TXT> Archmage Timolain's Remains,		CLASSIC: <NYI> <TXT> Archmage Timolain's Remains
 q(6201),	-- <UNUSED> The Legacy of the Ashbringer,		TBC: <UNUSED> The Legacy of the Ashbringer,		CLASSIC: <UNUSED> The Legacy of the Ashbringer
 q(6202),	-- <UNUSED> Good and Evil,		CLASSIC: <UNUSED> Good and Evil

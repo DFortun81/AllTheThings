@@ -242,12 +242,6 @@ _.Zones = {
 					["isBreadcrumb"] = true,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1362, {	-- The Kolkar of Desolace
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["qg"] = 3389,	-- Regthar Deathgate
-					["sourceQuest"] = 1361,	-- Regthar Deathgate
-				}),
 				q(890,   {	-- The Missing Shipment
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
