@@ -19,6 +19,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(70435, {	-- Dragonrider Racing - Garden Gallivant
 				["coord"] = { 39.4, 76, THALDRASZUS }
 			}),
+			q(70699, {	-- Cataloging Thaldraszus
+				["coord"] = { 51, 42, THALDRASZUS }
+			}),
+			q(70160, {	-- Alchemical Thesis Defense
+				["coord"] = { 62.3, 36.9, THALDRASZUS }
+			}),
 			-- q(72090, {	-- Disrupting the Primalist Plan
 			-- 	["coord"] = { 61.5, 50.0, PRIMALIST_TOMORROW }
 			-- }),
