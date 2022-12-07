@@ -118,7 +118,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 			}),
-				-- RENOWN 12 -- 
+				-- RENOWN 12 --
 			q(71029, {	-- Hunting Tactics: Companion Training
 				["description"] = "Requires Renown 12.",
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum

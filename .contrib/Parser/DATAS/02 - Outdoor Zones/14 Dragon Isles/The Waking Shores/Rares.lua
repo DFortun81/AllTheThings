@@ -90,6 +90,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73075,
 				["isDaily"] = true,
 				["g"] = {
+					i(200286),	-- Dragonbane Lance
 					i(200757),	-- Qalashi War-Helm
 				},
 			}),

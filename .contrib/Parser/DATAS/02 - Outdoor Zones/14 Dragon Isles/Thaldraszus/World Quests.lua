@@ -7,17 +7,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			-- q(QUEST, {	-- NAME
 			-- 	-- ["coord"] = { XX, YY, THALDRASZUS }
 			-- }),
-			q(70431, {	-- Dragonrider Racing - Flowing Forst Flight
-				-- ["coord"] = { XX, YY, THALDRASZUS }
-			}),
 			q(69949, {	-- Extermination
 				["coord"] = { 61.5, 27.5, THALDRASZUS }
 			}),
 			q(71205, {	-- Hydro Tuskarr
 				-- ["coord"] = { XX, YY, THALDRASZUS }
-			}),
-			q(70435, {	-- Dragonrider Racing - Garden Gallivant
-				["coord"] = { 39.4, 76, THALDRASZUS }
 			}),
 			q(70699, {	-- Cataloging Thaldraszus
 				["coord"] = { 51, 42, THALDRASZUS }

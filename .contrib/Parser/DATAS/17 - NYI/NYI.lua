@@ -917,7 +917,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200253),	-- Snowspring Incanter's Knife
 			i(200257),	-- Decay Infused Branch
 			i(200259),	-- Forest Dweller's Shield
-			i(200286),	-- Dragonbane Lance
 			i(200293),	-- Primal Scion's Twinblade
 			i(200297),	-- Hastily Cobbled Maul
 			i(200301),	-- Reclaimed Tuskarr Harpoon

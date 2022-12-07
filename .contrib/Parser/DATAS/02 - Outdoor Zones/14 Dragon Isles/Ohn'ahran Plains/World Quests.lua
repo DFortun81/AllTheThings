@@ -10,9 +10,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(70623, {	-- Clearing the Skies
 				-- ["coord"] = { XX, YY, OHNAHRAN_PLAINS }
 			}),
-			q(70712, {	-- Dragonrider Racing - River Rapids Route
-				["coord"] = { 43.8, 66.9, OHNAHRAN_PLAINS }
-			}),
 			q(70149, {	-- Hope for the Highlands
 				["coord"] = { 85.3, 51.9, OHNAHRAN_PLAINS }
 			}),
@@ -30,9 +27,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			q(69991, {	-- The Fields of Ferocity Redux: Foe from the Volcano!
 				["coord"] = { 53.8, 37.2, OHNAHRAN_PLAINS }
-			}),
-			q(70424, {	-- Dragonrider Racing - Mirror of the Sky Dash
-				["coord"] = { 47.4, 70.6, OHNAHRAN_PLAINS }
 			}),
 			q(70634, {	-- Lashed Out
 				["coord"] = { 30.9, 52.7, OHNAHRAN_PLAINS }
