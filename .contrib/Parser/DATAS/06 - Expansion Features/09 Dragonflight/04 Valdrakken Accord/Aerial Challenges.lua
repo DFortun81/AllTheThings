@@ -11,6 +11,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
 					-- Waking Shores --
+				q(70413, {	-- Dragonrider Racing - Emberflow Flight
+					["coord"] = { 42.0, 67.2, THE_WAKING_SHORES }
+				}),
 				q(70382, {	-- Dragonrider Racing - Ruby Lifeshrine Loop
 					["coord"] = { 63.2, 70.8, THE_WAKING_SHORES },
 				}),
@@ -22,9 +25,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70415, {	-- Dragonrider Racing - Apex Canopy River Run
 					["coord"] = { 23.2, 84.2, THE_WAKING_SHORES }
 				}),
-				q(70413, {	-- Dragonrider Racing - Emberflow Flight
-					["coord"] = { 42.0, 67.2, THE_WAKING_SHORES }
-				}),
+				
 				q(70410, {	-- Dragonrider Racing - Flashfrost Flyover
 					["coord"] = { 62.8, 74.0, THE_WAKING_SHORES }
 				}),

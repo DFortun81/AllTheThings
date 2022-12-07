@@ -113,26 +113,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 197478 },	-- Herald Flaps
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
-				-- RENOWN 13 --
-			q(70903, {	-- Wielding Titanic Might
-				["description"] = "Requires Renown 13.",
-				["provider"] = { "n", 195768 },	-- Sorotis
-				["coord"] = { 26.1, 40.0, VALDRAKKEN },
-				["g"] = {
-					i(199772),	-- Titan Gatekeeper's Shield
-					i(199773),	-- Titan Watcher's Scepter
-				},
-			}),
-				-- RENOWN 14 --
-			q(72690, {	-- Renown Supplies
-				["description"] = "Requires Renown 14.",
-				["provider"] = { "n", 193015 },	-- Unatos
-				["coord"] = { 58.1, 35.2, VALDRAKKEN },
-				["g"] = {
-					i(198868),	-- Small Valdrakken Accord Supply Pack
-				},
-			}),
-				-- STORY LINE CHAPTER 2
 			q(67074, {	-- The Gift of Silver
 				["sourceQuest"] = 68794,	-- Ally of Dragons
 				["description"] = "Requires Renown 12.",
@@ -188,6 +168,28 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 60.5, 58.6, THALDRASZUS },
 				["g"] = {
 					i(201781),	-- Memory of Tyr
+					crit(5, {	-- The Silver Purpose
+						["achievementID"] = 16808,	-- Friends of the Dragon Isles
+					}),
+				},
+			}),
+				-- RENOWN 13 --
+			q(70903, {	-- Wielding Titanic Might
+				["description"] = "Requires Renown 13.",
+				["provider"] = { "n", 195768 },	-- Sorotis
+				["coord"] = { 26.1, 40.0, VALDRAKKEN },
+				["g"] = {
+					i(199772),	-- Titan Gatekeeper's Shield
+					i(199773),	-- Titan Watcher's Scepter
+				},
+			}),
+				-- RENOWN 14 --
+			q(72690, {	-- Renown Supplies
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack
 				},
 			}),
 		}),

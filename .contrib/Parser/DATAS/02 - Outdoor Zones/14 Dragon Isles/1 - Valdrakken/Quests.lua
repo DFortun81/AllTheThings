@@ -229,6 +229,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
+			q(66860, {	-- Relic Recovery: Legacy of Tyr
+				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 191958 },	-- Theldren
+				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				["isWeekly"] = true,
+			}),
 			q(66870, {	-- Preserving the Past: Ruby Life Pools
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 189973 },	-- Kemora

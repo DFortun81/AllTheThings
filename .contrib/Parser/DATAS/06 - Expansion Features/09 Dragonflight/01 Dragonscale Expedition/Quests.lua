@@ -169,6 +169,87 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
 				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
 			}),
+				-- RENOWN 13 --
+			q(69093, {	-- A New Mystery
+				["description"] = "Requires Renown 13. Spawns Anywhere on Dragon Isles.",
+				["provider"] = { "n", 196643 },	-- Doc Nanners
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+			}),
+			q(66012, {	-- The Sealed Door
+				["description"] = "Requires Renown 13.",
+				["sourceQuests"] = { 69093 },	-- A New Mystery
+				["provider"] = { "n", 186869 },	-- Naleidea Rivergleam
+				["coord"] = { 47.9, 82.4, THE_WAKING_SHORES },
+			}),
+			q(66013, {	-- Investigate the Door
+				["description"] = "Requires Renown 13.",
+				["sourceQuests"] = { 66012 },	-- The Sealed Door
+				["provider"] = { "n", 186870 },	-- Naleidea Rivergleam
+				["coord"] = { 54.5, 55.7, THALDRASZUS },
+			}),
+			q(66673, {	-- Speak to Koranos
+				["description"] = "Requires Renown 13.",
+				["sourceQuests"] = { 66013 },	-- Investigate the Door
+				["provider"] = { "n", 186870 },	-- Naleidea Rivergleam
+				["coord"] = { 54.5, 55.7, THALDRASZUS },
+			}),
+			q(66094, {	-- The Ruins of Szat Skeleth
+				["description"] = "Requires Renown 13.",
+				["sourceQuests"] = { 66673 },	-- Speak to Koranos
+				["provider"] = { "n", 186870 },	-- Naleidea Rivergleam
+				["coord"] = { 54.5, 55.7, THALDRASZUS },
+			}),
+			q(70784, {	-- The Abandoned Outpost
+				["description"] = "Requires Renown 13.",
+				["sourceQuests"] = { 66673 },	-- Speak to Koranos
+				["provider"] = { "n", 186870 },	-- Naleidea Rivergleam
+				["coord"] = { 54.5, 55.7, THALDRASZUS },
+			}),
+			q(70785, {	-- The City of the Dead
+				["description"] = "Requires Renown 13.",
+				["sourceQuests"] = { 66673 },	-- Speak to Koranos
+				["provider"] = { "n", 186870 },	-- Naleidea Rivergleam
+				["coord"] = { 54.5, 55.7, THALDRASZUS },
+			}),
+			q(70507, {	-- The Insight of Tyr
+				["description"] = "Requires Renown 13.",
+				["sourceQuests"] = { 66094 },	-- The Ruins of Szat Skeleth
+				["provider"] = { "n", 191159 },	-- Toddy Whiskers
+				["coord"] = { 40.0, 67.5, OHNAHRAN_PLAINS },
+			}),
+			q(70503, {	-- The Vigilance of Tyr
+				["description"] = "Requires Renown 13.",
+				["sourceQuests"] = { 70784 },	-- The Abandoned Outpost
+				["provider"] = { "n", 193350 },	-- Naleidea Rivergleam
+				["coord"] = { 53.9, 50.7, THE_AZURE_SPAN },
+			}),
+			q(66814, {	-- The Judgement of Tyr
+				["description"] = "Requires Renown 13.",
+				["sourceQuests"] = { 70785 },	-- The City of the Dead
+				["provider"] = { "n", 190855 },	-- Naleidea Rivergleam
+				["coord"] = { 62.2, 18.3, THALDRASZUS },
+			}),
+			q(66128, {	-- Next Steps
+				["description"] = "Requires Renown 13.",
+				["sourceQuests"] = {
+					70507,	-- The City of the Dead
+					70503,	-- The Vigilance of Tyr
+					66814,	-- The Judgement of Tyr
+				},	
+				["providers"] = {
+					{ "n", 191159 },	-- Toddy Whiskers
+					{ "n", 193350 },	-- Naleidea Rivergleam
+				},
+				["coords"] = { 
+					{ 40.0, 67.5, OHNAHRAN_PLAINS },
+					{ 53.9, 50.7, THE_AZURE_SPAN },
+				},
+				["g"] = {
+					crit(1, {	-- A Mystery, Sealed
+						["achievementID"] = 16808,	-- Friends of the Dragon Isles
+					}),
+				},
+			}),
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
 				["provider"] = { "o", 381669 },	-- Archivists' Request
@@ -224,6 +305,10 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 	n(DRAGONSCALE_EXPEDITION, {
 		q(72033),	-- Triggeres together with 'Advanced Excavation Tools' (70807)
 		q(72037),	-- Triggers together with 'The Basecamp 'Pets'' (70820)
+		q(72401),	-- Triggered immediately after reaching renown 13
+		q(72038),	-- Triggered with 'A New Mystery' (69093)
+		q(72756),	-- Triggered with 'Next Steps' (66128)
+
 		-- Achievement Dragonscale Expedition: The Highest Peaks
 		q(70823),	-- Flag at 56.0, 45.3, THE_WAKING_SHORES
 		q(70824),	-- Flag at 73.4, 38.8, THE_WAKING_SHORES
