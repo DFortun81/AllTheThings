@@ -5,7 +5,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(ZONE_REWARDS, {
 		i(198058),	-- Titan Training Matrix III
 		i(194701),	-- Ominous Conch (Something for fishing thingy)
-		
+
 		-- Profession Weekly Items
 		-- Alchemy
 		-- Blacksmith 3/3
@@ -21,20 +21,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		-- Engineering 2/3
 		i(193902),	-- Eroded Titan Gizmo
 		i(193903),	-- Watcher Power Core
-		
+
 		-- herb
 		-- inscription
 		-- Jewelcrafting 1/3
 		i(198973),	-- Incandescent Curio
-		
+
 		-- Leatherworking 1/3
 		i(198976),	-- Exceedingly Soft Skin
-		
-		
+
+
 		-- Mining 1/3
 		i(202011),	-- Elementally-Charged Stone
-		
-		
+
+
 		i(193891),	-- Experimental Substance
 		i(193910),	-- Molted Dragon Scales
 		i(193904),	-- Phoenix Feather Quill
@@ -104,6 +104,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(192030),	-- Dexterous War Pole
 			i(192024),	-- Dragonflayer's Seething Shortsword
 			i(192016),	-- Drakescale Heater Shield
+			i(197943),	-- Elder's Bioluminous Quarterstaff
 			i(192023),	-- Lava-Forged Decapitator
 			i(192034),	-- Marauder's Singing Blade
 			i(192033),	-- Maruuk Battle Standard

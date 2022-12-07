@@ -101,7 +101,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(195431, {	-- Diluu
 					["coord"] = { 50.8, 46.6, THALDRASZUS },
 					["questID"] = 73912,
-					["isDaily"] = true, 
+					["isDaily"] = true,
 					["g"] = {
 						i(196983),	-- Cliffside Wylderdrake: Maned Jaw
 						i(197125),	-- Highland Drake: Coiled Horns
@@ -110,7 +110,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(193330, {	-- Galzuda
 				--	["coord"] = { 50.8, 46.6, THALDRASZUS },
 				--	["questID"] = 73912,
-					["isDaily"] = true, 
+					["isDaily"] = true,
 					["g"] = {
 						i(200261),	-- White Chitin Bands
 					},
@@ -118,7 +118,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(193311, {	-- Melkhop
 					["coord"] = { 33.2, 67.9, THALDRASZUS },
 					["questID"] = 73924,
-					["isDaily"] = true, 
+					["isDaily"] = true,
 					["g"] = {
 						-- Not sure. Maybe "is part of the DF>Global Rare Loottable"
 					},
@@ -126,7 +126,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(195430, {	-- Molkeej
 					["coord"] = { 51.1, 49.3, THALDRASZUS },
 					["questID"] = 73925,
-					["isDaily"] = true, 
+					["isDaily"] = true,
 					["g"] = {
 						i(197125),	-- Highland Drake: Coiled Horns
 					},
@@ -134,7 +134,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(195417, {	-- Tsokorg
 					["coord"] = { 50.0, 47.8, THALDRASZUS },
 					["questID"] = 73942,
-					["isDaily"] = true, 
+					["isDaily"] = true,
 					["g"] = {
 						-- is part of the DF>Global Rare Loottable
 					},
@@ -144,18 +144,18 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(195300, {	-- Arkhuu
 					["coord"] = { 66.4, 59.5, THE_AZURE_SPAN },
 					["questID"] = 73907,
-					["isDaily"] = true, 
+					["isDaily"] = true,
 					["g"] = {
 						i(200303),	-- Dreamweaver Acolytes Staff
 						i(197100),	-- Highland Drake: Crested Brow
 						i(200299),	-- Strange Clockwork Gladius
-						
+
 					},
 				}),
 				n(194761, {	-- Khuumog
 					["coord"] = { 38.7, 43.5, THE_AZURE_SPAN },
 					["questID"] = 73922,
-					["isDaily"] = true, 
+					["isDaily"] = true,
 					["g"] = {
 						-- is part of the DF>Global Rare Loottable
 					},
@@ -163,7 +163,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(195286, {	-- Mantai
 					["coord"] = { 67.4, 55.5, THE_AZURE_SPAN },
 					["questID"] = 73923,
-					["isDaily"] = true, 
+					["isDaily"] = true,
 					["g"] = {
 						-- is part of the DF>Global Rare Loottable
 					},
@@ -171,7 +171,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(194763, {	-- Tenmod
 					["coord"] = { 33.2, 40.3, THE_AZURE_SPAN },
 					["questID"] = 73938,
-					["isDaily"] = true, 
+					["isDaily"] = true,
 					["g"] = {
 						i(200684),	-- Emerald Tailbone
 						-- is part of the DF>Global Rare Loottable
@@ -180,14 +180,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(195132, {	-- Tevgai
 					["coord"] = { 72.8, 27.2, THE_AZURE_SPAN },
 					["questID"] = 73939,
-					["isDaily"] = true, 
+					["isDaily"] = true,
 					["g"] = {
 						-- is part of the DF>Global Rare Loottable
 					},
 				}),
 				n(195101, {	-- Yaankhi
 					["questID"] = 73946,
-					["isDaily"] = true, 
+					["isDaily"] = true,
 					["coord"] = { 68.6, 26.3, THE_AZURE_SPAN },
 					["g"] = {
 						-- is part of the DF>Global Rare Loottable
@@ -196,7 +196,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(195283, {	-- Yamakh
 					["description"] = "Behind Rock Wall.",
 					["questID"] = 73947,
-					["isDaily"] = true, 
+					["isDaily"] = true,
 					["coord"] = { 66.1, 51.2, THE_AZURE_SPAN },
 					["g"] = {
 						-- is part of the DF>Global Rare Loottable
@@ -204,7 +204,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				n(194760, {	-- Uurhilt
 					["questID"] = 73944,
-					["isDaily"] = true, 
+					["isDaily"] = true,
 					["coord"] = { 36.3, 36.9, THE_AZURE_SPAN },
 					["g"] = {
 						-- is part of the DF>Global Rare Loottable
@@ -219,7 +219,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				i(194087),	-- Ohuna Companion Color: Red
 				i(194088),	-- Ohuna Companion Color: Dark
-				i(194089),	-- Bakar Companion Color: Orange
+				i(194089, {	-- Bakar Companion Color: Orange
+					["questID"] = 71046,
+				}),
 				i(194090),	-- Bakar Companion Color: White
 				i(194091),	-- Bakar Companion Color: Golden Brown
 				i(194092),	-- Timbertooth Pelt
@@ -232,52 +234,71 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(194099),	-- Shikaar Hunting Horn
 				i(194108),	-- Mighty Hunter's Horn
 
-
-				-- TODO: higher tiers than 'Common' appear to be from quest-specific lockouts. maybe group them eventually by the quest trigger
-				-- 70002 / 71136 for Rare Hunt completion
-				-- 70001 / 71137 for Uncommon Hunt completion
-				-- 70000 for Common Hunt completion
-
-				i(200468, {	-- Grant Hunt Spoils [Epic]
+				q(70906, { ["name"] = "1st Weekly Grand Hunt",
+					-- ["sourceQuests"] = { },
+					["isWeekly"] = true,
 					["g"] = {
-						i(192791),	-- Plainswalker Bearer
+						i(200468, {	-- Grant Hunt Spoils [Epic]
+							-- likely rewards various items from lower tiers as well, pls symlink at lowest level received until confirmed only source
+							["sym"] = {
+								{"select","itemID", 200513},{"pop"},	-- Grand Hunt Spoils [Rare]
+								{"select","itemID",
+								-- confirmed items here
+								193360,	-- Centaur's Trophy Necklace
+								194093,	-- Bakar Companion Color: Brown
+								194090,	-- Bakar Companion Color: White
+								193205,	-- Ohuna Companion Color: Brown
+							}},
+							["g"] = {
+								i(192791),	-- Plainswalker Bearer (Mount!)
+							},
+						}),
 					},
-					-- likely rewards various items from lower tiers as well, pls symlink at lowest level received until confirmed only source
-					["sym"] = {
-						{"select","itemID", 200513},{"pop"},	-- Grand Hunt Spoils [Rare]
-						{"select","itemID",
-						-- confirmed items here
-						193360,	-- Centaur's Trophy Necklace
-						194093,	-- Bakar Companion Color: Brown
-						194090,	-- Bakar Companion Color: White
-						193205,	-- Ohuna Companion Color: Brown
-					}},
 				}),
-				i(200513, {	-- Grand Hunt Spoils [Rare]
-					-- likely rewards various items from lower tiers as well, pls symlink at lowest level received until confirmed only source
-					["sym"] = {
-						{"select","itemID", 200515},{"pop"},	-- Grand Hunt Spoils [Uncommon]
-						{"select","itemID",
-						-- confirmed items here
-						-- zone rewards?, received 198542
-						194087,	-- Ohuna Companion Color: Red
-					}},
+				q(71136, { ["name"] = "2nd Weekly Grand Hunt",
+					["sourceQuests"] = { 70003 },	-- 1st Weekly Grand Hunt
+					["isWeekly"] = true,
+					["g"] = {
+						i(200513, {	-- Grand Hunt Spoils [Rare]
+							-- likely rewards various items from lower tiers as well, pls symlink at lowest level received until confirmed only source
+							["sym"] = {
+								{"select","itemID", 200515},{"pop"},	-- Grand Hunt Spoils [Uncommon]
+								{"select","itemID",
+								-- confirmed items here
+								-- zone rewards?, received 198542
+								194087,	-- Ohuna Companion Color: Red
+								194089,	-- Bakar Companion Color: Orange
+							}},
+						}),
+					},
 				}),
-				i(200515, {	-- Grand Hunt Spoils [Uncommon]
-					-- likely rewards various items from lower tiers as well, pls symlink at lowest level received until confirmed only source
-					["sym"] = {
-						{"select","itemID", 200516},{"pop"},	-- Grand Hunt Spoils [Common]
-						{"select","itemID",
-						-- confirmed items here
-					}},
+				q(71137, { ["name"] = "3rd Weekly Grand Hunt",
+					["sourceQuests"] = { 71136 },	-- 2nd Weekly Grand Hunt
+					["isWeekly"] = true,
+					["g"] = {
+						i(200515, {	-- Grand Hunt Spoils [Uncommon]
+							-- likely rewards various items from lower tiers as well, pls symlink at lowest level received until confirmed only source
+							["sym"] = {
+								{"select","itemID", 200516},{"pop"},	-- Grand Hunt Spoils [Common]
+								{"select","itemID",
+								-- confirmed items here
+							}},
+						}),
+					},
 				}),
-				i(200516, {	-- Grant Hunt Spoils [Common]
-					-- likely rewards various items from lower tiers as well, pls symlink at lowest level received until confirmed only source
-					["sym"] = {{"select","itemID",
-						-- confirmed items here
-						200093,	-- Centaur Hunting Trophy
-						194095,	-- Ohuna Companion Color: Sepia
-					}},
+				q(70907, { ["name"] = "4+ Weekly Grand Hunt",
+					["sourceQuests"] = { 71136 },	-- 2nd Weekly Grand Hunt
+					["repeatable"] = true,
+					["g"] = {
+						i(200516, {	-- Grant Hunt Spoils [Common]
+							-- likely rewards various items from lower tiers as well, pls symlink at lowest level received until confirmed only source
+							["sym"] = {{"select","itemID",
+								-- confirmed items here
+								200093,	-- Centaur Hunting Trophy
+								194095,	-- Ohuna Companion Color: Sepia
+							}},
+						}),
+					},
 				}),
 				i(193360),	-- Centaur's Trophy Necklace
 				i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)
@@ -289,11 +310,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	q(70004),	-- First time?
+	q(70003),	-- First time Epic Grand Hunt
+	q(70002),	-- First time Rare Grand Hunt
+	q(70001),	-- First time Uncommon Grand Hunt
+	q(70000),	-- First time Common Grand Hunt
 	q(70908),	-- Maruuk Hunts // HQ to reward you with Reputation after each Stage
-	q(70907),	-- Hunt concluded // White Bag
-	q(71136),	-- Hunter concluded // Blue Bag
-	q(70906),	-- Hunt concluded // Epic Bag
-	-- Each Unique Event can reward you with 1 trophy daily. 
+	-- Each Unique Event can reward you with 1 trophy daily.
 	-- Upon killing a mob that dropped a trophy, the quest is triggered.
 	q(73913),	-- Thaldraszus South - Dismay Flies Event
 	q(73933),	-- Thaldraszus South - Scythe Raid Event

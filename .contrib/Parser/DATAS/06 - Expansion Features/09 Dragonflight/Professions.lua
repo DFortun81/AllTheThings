@@ -443,7 +443,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
 			--[[q(70514, {	-- Weekly Enchanting Knowledgepoint #1
-				["altquests"] = { 70514 },
+				["altQuests"] = { 70514 },
 				["name"] = "Weekly Enchanting Knowledgepoint #1",
 				["provider"] = { "i", 198967 },		-- Primordial Aeather
 				["timeline"] = { ADDED_DF_REL },
@@ -451,7 +451,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),--]]
 			q(70515, {	-- Weekly Enchanting Knowledgepoint #1
-				["altquests"] = { 70514 },
+				["altQuests"] = { 70514 },
 				["name"] = "Weekly Enchanting Knowledgepoint #1",
 				["provider"] = { "i", 198968 },		-- Primalist Charm
 				["timeline"] = { ADDED_DF_REL },

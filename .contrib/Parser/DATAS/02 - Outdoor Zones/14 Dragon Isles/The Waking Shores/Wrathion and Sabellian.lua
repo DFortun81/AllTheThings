@@ -114,7 +114,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["repeatable"] = true,
 					}),
 					q(67015, {	-- Forging the Answer
-						--["provider"] = { "n",  },	-- 
+						--["provider"] = { "n",  },	--
 						["coord"] = { 27.4, 60.8, THE_WAKING_SHORES },
 						["repeatable"] = true,
 					}),
@@ -207,11 +207,25 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				--]]
 				n(HIDDEN_QUESTS, {
-					q(66362, { ["name"] = "First Completion of 'Unlocking our Past' (Igys the Believer)",
+					q(66362, { ["name"] = "First Weekly Completion of 'Unlocking our Past' (Igys the Believer)",
 						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+						["cr"] = 187275,	-- Igys the Believer
+						["isWeekly"] = true,
 					}),
-					q(66359, { ["name"] = "First Completion of 'Unlocking our Past' (Forgemaster Bazentus)",
+					q(66359, { ["name"] = "First Weekly Completion of 'Unlocking our Past' (Forgemaster Bazentus)",
 						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+						["cr"] = 187272,	-- Forgemaster Bazentus
+						["isWeekly"] = true,
+					}),
+					q(66360, { ["name"] = "First Weekly Completion of 'Unlocking our Past' (Sabellian)",
+						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+						["cr"] = 187447,	-- Sabellian
+						["isWeekly"] = true,
+					}),
+					q(66361, { ["name"] = "First Weekly Completion of 'Unlocking our Past' (Wrathion)",
+						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+						["cr"] = 187284,	-- Wrathion
+						["isWeekly"] = true,
 					}),
 					-- not sure if HQT these or Hidden Quests, maybe after knowing better what they represent
 					-- 64277 - accepted Keys of Loyalty after choosing Wrathion

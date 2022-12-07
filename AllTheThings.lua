@@ -2503,7 +2503,7 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 		local x,y = position:GetXY();
 		x = math.floor(x * 1000) / 10;
 		y = math.floor(y * 1000) / 10;
-		coord = x..","..y;
+		coord = x..", "..y;
 	end
 	return
 	{

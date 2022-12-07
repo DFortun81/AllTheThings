@@ -319,6 +319,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 39.0, 51.8, VALDRAKKEN },
 					["cost"] = {{"i",190315,15}},	-- 15x Rousing Earth
 				}),
+				q(70618, {	-- The Call of the Forge
+					["qg"] = 185553,	-- Sekita the Burrower
+					["coord"] = { 39.0, 51.8, VALDRAKKEN },
+					["cost"] = {{"i",190395,16}},	-- 16x Severite Ore
+				}),
 			})),
 			prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINNING }, {
 				n(193846, {	-- Ralathor the Rugged <Skinning Trainer>

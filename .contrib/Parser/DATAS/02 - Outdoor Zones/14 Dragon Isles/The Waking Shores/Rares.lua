@@ -270,9 +270,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["description"] = "Cave Entrance: 48.6, 74.3. Have to touch Focus, Globe and Telescope to spawn.",
 				["coord"] = { 47.3, 73.9, THE_WAKING_SHORES },
 				["questID"] = 74076,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200152),	-- Gleaming Blade of Insight
+				},
 			}),
 			n(193181, {	-- Skewersnout <Raypier of the Deep>
 				["coord"] = { 39.6, 41.2, THE_WAKING_SHORES },

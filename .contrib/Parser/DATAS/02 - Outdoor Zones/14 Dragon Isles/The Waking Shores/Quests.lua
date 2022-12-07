@@ -1742,5 +1742,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		q(72353),	-- triggeres during 'Adventuring in the Dragon Isles' (72293) when any zone is chosen by player
 		q(70767),	-- triggers when 'Tale of the Outsider' becomes available for Tarjin the Blind
 		q(70768),	-- triggers when 'Tale of the Outsider' completes
+		q(70770),	-- triggers when 'Tale of the Elders' becomes available for Tarjin the Blind
+		q(70769),	-- triggers when 'Tale of the Outsider' completes
 	}),
 })));

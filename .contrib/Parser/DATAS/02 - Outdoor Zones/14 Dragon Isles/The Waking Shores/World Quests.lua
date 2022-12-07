@@ -17,6 +17,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(66989, {	-- Helpful Harvest
 				["coord"] = { 58.2, 64.7, THE_WAKING_SHORES },
 			}),
+			pvp(q(67005, {	-- How to Train a Proto-Drake
+				-- ["coord"] = { XX, YY, THE_WAKING_SHORES }
+			})),
 			q(70012, {	-- Protect the Nets!
 				["coord"] = { 55.6, 58.3, THE_WAKING_SHORES },
 			}),
@@ -29,6 +32,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(69931, {	-- Swoop And Grab
 				["coord"] = { 53.4, 21.0, THE_WAKING_SHORES },
 			}),
+			petbattle(q(66551, {	-- The Terrible Three
+				["coord"] = { 39.0, 83.5, THE_WAKING_SHORES }
+			})),
 			q(67012, {	-- When Riverbeasts Fly
 				["coord"] = { 77.4, 48.4, THE_WAKING_SHORES },
 			}),

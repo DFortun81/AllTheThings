@@ -184,28 +184,28 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["isWeekly"] = true,
 			}),
 			q(72068, {	-- Aiding the Accord: A Feast For All
-				["sourceQuests"] = { 70750 },	-- Aiding the Accord
+				["sourceQuests"] = { 71232 },	-- Renown of the Dragon Isles
 				["coord"] = { 50.7, 58.0, VALDRAKKEN },
 				["g"] = {
 					i(200073),	-- Valdrakken Treasures
 				},
 			}),
 			q(72373, {	-- Aiding the Accord: The Hunt is On
-				["sourceQuests"] = { 70750 },	-- Aiding the Accord
+				["sourceQuests"] = { 71232 },	-- Renown of the Dragon Isles
 				["coord"] = { 50.7, 58.0, VALDRAKKEN },
 				["g"] = {
 					i(200073),	-- Valdrakken Treasures
 				},
 			}),
 			q(72374, {	-- Aiding the Accord: Dragonbane Keep
-				["sourceQuests"] = { 70750 },	-- Aiding the Accord
+				["sourceQuests"] = { 71232 },	-- Renown of the Dragon Isles
 				["coord"] = { 50.7, 58.0, VALDRAKKEN },
 				["g"] = {
 					i(200073),	-- Valdrakken Treasures
 				},
 			}),
 			q(72375, {	-- Aiding the Accord: The Isles Call
-				["sourceQuests"] = { 70750 },	-- Aiding the Accord
+				["sourceQuests"] = { 71232 },	-- Renown of the Dragon Isles
 				["coord"] = { 50.7, 58.0, VALDRAKKEN },
 				["g"] = {
 					i(200073),	-- Valdrakken Treasures
@@ -268,7 +268,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 
 		-- q(70570),	-- Talked with Watcher Koranos
 		-- q(65041),	-- Memories of Scoroxia(On wowhead? Something you should return with??) / Talked with Scalecommanders Cindretresh and Azurathel
-		
+
 		-- q(71243),	-- Weekly Quest?
 
 		-- q(67056),	-- popped when doing Ruby Feast

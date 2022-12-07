@@ -647,7 +647,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192788),	-- [PH] Mammoth V2 Blue
 			i(192789),	-- [PH] Mammoth V2 Gray
 			i(192790),	-- [PH] Mammoth V2 Green
-			i(192791),	-- Plainswalker Bearer
 			i(192792),	-- PH Thunder Lizard Green
 			i(192793),	-- PH Thunder Lizard Black
 			i(192794),	-- PH Thunder Lizard Blue
@@ -869,7 +868,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197938),	-- Uktulut Whaling Spear
 			i(197940),	-- Hefty Iskaaran Anchor
 			i(197942),	-- Tuskarr Navigator's Staff
-			i(197943),	-- Elder's Bioluminous Quarterstaff
 			i(197944),	-- Deepsea Hunter's Crossbow
 			i(197945),	-- Gnarled Thorn Bow
 			i(197953),	-- Ancient Protector's Broadsword
@@ -899,7 +897,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200145),	-- Hilted Monolith
 			i(200147),	-- Web-Woven Robe
 			i(200151),	-- Seamist Blade
-			i(200152),	-- Gleaming Blade of Insight
 			i(200167),	-- Regurgitated Stone Handaxe
 			i(200170),	-- Stormbringer Bow
 			i(200171),	-- Grymheart Blade
@@ -1036,7 +1033,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197105),	-- Highland Drake: Spined Chin
 			i(197106),	-- Highland Drake: Finned Head
 			i(197109),	-- Highland Drake: Spiked Head
-			i(197113),	-- Highland Drake: Swept Spiked Head
 			i(197115),	-- Highland Drake: Thorned Jaw
 			i(197116),	-- Highland Drake: Ears
 			i(197118),	-- Highland Drake: Brown Hair
@@ -1058,7 +1054,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197156),	-- Highland Drake: Bronze and Green Armor
 			i(197348),	-- Renewed Proto-Drake: Black and Red Armor
 			i(197349),	-- Renewed Proto-Drake: Gold and White Armor
-			i(197351),	-- Renewed Proto-Drake: Gold and Red Armor
 			i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor
 			i(197356),	-- Renewed Proto-Drake: Hairy Back
 			i(197357),	-- Renewed Proto-Drake: Armor
@@ -2279,7 +2274,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192789, 374172);	-- [PH] Mammoth V2 Gray
 			i(192788, 374181);	-- [PH] Mammoth V2 Blue
 			i(192790, 374194);	-- [PH] Mammoth V2 Green
-			i(192791, 374196);	-- [PH] Mammoth V2 Orange
 			i(192793, 374200);	-- PH Thunder Lizard Black
 			i(192794, 374201);	-- PH Thunder Lizard Blue
 			i(192796, 374204);	-- PH Thunder Lizard Light
