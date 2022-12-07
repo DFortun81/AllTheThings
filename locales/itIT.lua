@@ -3337,7 +3337,7 @@ for key,value in pairs({
 	[376581] = "Cassa del Clan",	-- Clan Chest
 	[376587] = "Zaino dell'Esploratore della Spedizione",	-- Expedition Scout's Pack
 	[376757] = "RICERCATO: Frigellus",	-- WANTED: Frigellus
-	--TODO: [377114] = "Coil of Heavy Rope",	-- Coil of Heavy Rope
+	[377114] = "Rotolo di Corda Pesante",	-- Coil of Heavy Rope
 	--TODO: [377233] = "Hessethiash's Poorly Hidden Treasure",	-- Hessethiash's Poorly Hidden Treasure
 	--TODO: [377317] = "Treasure Hoard",	-- Treasure Hoard
 	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
@@ -3381,7 +3381,7 @@ for key,value in pairs({
 	--TODO: [381216] = "Surveyor's Magnifying Glass",	-- Surveyor's Magnifying Glass
 	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
 	[381277] = "Barile di Dolcetti Confiscati",	-- Barrel of Confiscated Treats
-	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
+	[381296] = "Un disastro",	-- Horrible Mess
 	[381297] = "Bagaglio Smarrito",	-- Misplaced Luggage
 	--TODO: [381353] = "Stone Dragontooth",	-- Stone Dragontooth
 	--TODO: [381354] = "Wrapped Gold Band",	-- Wrapped Gold Band
