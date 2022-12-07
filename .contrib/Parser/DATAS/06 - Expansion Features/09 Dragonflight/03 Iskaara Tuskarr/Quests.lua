@@ -14,7 +14,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 186448 },	-- Elder Poa
 				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 			}),
-			q(70940, {	-- Stolen Totems
+			q(70926, {	-- Stolen Totems
 				["sourceQuests"] = { 70936 },	-- Stolen Tuskaar Totems
 				["provider"] = { "n", 186448 },	-- Elder Poa
 				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
