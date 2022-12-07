@@ -3364,7 +3364,7 @@ for key,value in pairs({
 	[379321] = "Huella de zarpa misteriosa",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	[380430] = "Trozo de cola",	-- Tail Fragment
-	--TODO: [380533] = "Snow Covered Scroll",	-- Snow Covered Scroll
+	[380533] = "Pergamino cubierto de nieve",	-- Snow Covered Scroll
 	[380547] = "Aceite para curtir imbuido de decadencia",	-- Decay-Infused Tanning Oil
 	[380554] = "Tambor ajado",	-- Well-Danced Drum
 	[380587] = "Cajón de pieles tratadas",	-- Crate of Treated Hides
@@ -3409,9 +3409,9 @@ for key,value in pairs({
 	[381485] = "Pastilla de jabón para aventureros perdida",	-- Adventurer's Lost Soap Bar
 	[381650] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Inscripción a colmillo, ala o fuego",	-- Fang Flap Fire Signups
-	[381661] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381661] = "Petición de los archivistas",	-- Archivists' Request
 	[381663] = "Tormentas de maná para principiantes",	-- Manastorming For Beginners
-	[381664] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381664] = "Petición de los archivistas",	-- Archivists' Request
 	[381667] = "Petición de los archivistas",	-- Archivists' Request
 	[381668] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381669] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
