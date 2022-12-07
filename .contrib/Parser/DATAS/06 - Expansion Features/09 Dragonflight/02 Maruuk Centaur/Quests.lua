@@ -89,26 +89,25 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 			}),
-			-- RENOWN 8 --
+				-- RENOWN 8 --
 			q(72137, {	-- Hatchling Plans
 				["description"] = "Requires Renown 8.",
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 			}),
-			-- RENOWN 9 --
+				-- RENOWN 9 --
 			q(70541, {	-- Hunting Tactics: Companion
 				["description"] = "Requires Renown 9.",
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
 			}),
-			-- RENOWN 10 --
+				-- RENOWN 10 --
 			q(71028, {	-- Hunting Tactics: Blessing of Ohn'ahra
 				["description"] = "Requires Renown 10.",
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
 			}),
-
-			-- RENOWN 11 --
+				-- RENOWN 11 --
 			q(71066, {	-- A Useful Curiosity
 				["description"] = "Requires Renown 11.",
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
@@ -118,6 +117,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires Renown 11.",
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+			}),
+				-- RENOWN 12 --
+			q(71028, {	-- Hunting Tactics: Companion Training
+				["description"] = "Requires Renown 12.",
+				["provider"] = { "n", 192926 },	-- Trainer Frodrum
+				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
 			}),
 		}),
 	}),

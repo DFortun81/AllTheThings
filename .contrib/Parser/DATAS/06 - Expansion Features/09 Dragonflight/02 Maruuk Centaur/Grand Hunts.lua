@@ -239,7 +239,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				-- 70000 for Common Hunt completion
 
 				i(200468, {	-- Grant Hunt Spoils [Epic]
-					i(192791),	-- Plainswalker Bearer
+					["g"] = {
+						i(192791),	-- Plainswalker Bearer
+					},
 					-- likely rewards various items from lower tiers as well, pls symlink at lowest level received until confirmed only source
 					["sym"] = {
 						{"select","itemID", 200513},{"pop"},	-- Grand Hunt Spoils [Rare]

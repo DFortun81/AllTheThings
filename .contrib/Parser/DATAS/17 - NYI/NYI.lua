@@ -858,12 +858,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197922),	-- Cavalry's Charging Lance
 			i(197923),	-- Bloodcharger's Skewer
 			i(197924),	-- Wyrm Poacher's Emberblade
-			i(197925),	-- Burning Club of the Wallclimbers
 			i(197926),	-- Billowing Magmathrower's Cudgel
 			i(197927),	-- Djaradin Bludgeoning Hammer
 			--
 			i(197931),	-- Waking Shores Cleaver
-			i(197932),	-- Chipped Reef Hacker
 			i(197933),	-- Lutokk's Wedding Ring
 			i(197935),	-- Seafarer's Hatchet
 			i(197936),	-- Serrated Deboning Knife

@@ -200,6 +200,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			["g"] = {
 				i(190456),	-- Artisan's Mettle
 			},
+			["isWeekly"] = true,
 		}),
 		prof(ALCHEMY, {
 			filter(RECIPES, {

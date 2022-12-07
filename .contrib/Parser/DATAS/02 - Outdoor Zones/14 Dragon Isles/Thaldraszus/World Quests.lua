@@ -25,6 +25,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(70160, {	-- Alchemical Thesis Defense
 				["coord"] = { 62.3, 36.9, THALDRASZUS }
 			}),
+			petbattle(q(71180, {	-- You Have to Start Somewhere
+				["coord"] = { 56.3, 49.2, THALDRASZUS },
+			})),
 			-- q(72090, {	-- Disrupting the Primalist Plan
 			-- 	["coord"] = { 61.5, 50.0, PRIMALIST_TOMORROW }
 			-- }),

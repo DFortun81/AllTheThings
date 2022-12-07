@@ -70,7 +70,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199536),	-- Ocean Grey Ear Warmer
 				},
 			}),
-			-- RENOWN 7 --
+				-- RENOWN 7 --
 			q(70954, {	-- Mounting Curiosity
 				["description"] = "Requires Renown 7.",
 				["provider"] = { "n", 196544 },	-- Norukk
@@ -81,7 +81,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(197101),	-- Highland Drake: Bushy Brow (DM!)
 				},
 			}),
-			-- RENOWN 9 --
+				-- RENOWN 9 --
 			q(70959, {	-- Cute and Cuddly
 				["description"] = "Requires Renown 9. Runs around Iskaara.",
 				["provider"] = { "n", 186564 },	-- Jiq

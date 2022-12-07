@@ -12,13 +12,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			2077,	-- Crystal Chambers
 		},
 		["g"] = {
-			n(QUESTS, {
-				q(71155, {	-- The Azure Vaults
-					--["sourceQuests"] = { },
-					["provider"] = { "n", 186188 },	-- Sindragosa
-					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
-				}),
-			}),
 			n(ZONE_DROPS, {
 				i(194255),	-- Pattern: Amice of the Blue (RECIPE!)
 				i(194491),	-- Plans: Frostfire Legguards of Preparation (RECIPE!)

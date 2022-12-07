@@ -97,8 +97,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		}),
 		n(WEAPONS, {
 			i(197923),	-- Bloodcharger's Skewer
+			i(197925),	-- Burning Club of the Wallclimbers
 			i(192019),	-- Calibrated Hand Cannon
 			i(192020),	-- Ceremonial Ohn'ir Dagger
+			i(197932),	-- Chipped Reef Hacker
 			i(192030),	-- Dexterous War Pole
 			i(192024),	-- Dragonflayer's Seething Shortsword
 			i(192016),	-- Drakescale Heater Shield
