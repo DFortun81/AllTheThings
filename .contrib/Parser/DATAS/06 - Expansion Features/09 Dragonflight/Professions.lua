@@ -600,14 +600,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			--[[
-			q(66382, {	-- Weekly Herbalism Knowledgepoint #2
+			q(71859, {	-- Weekly Herbalism Knowledgepoint #2
 				["name"] = "Weekly Herbalism Knowledgepoint #2",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["provider"] = { "i", 200677 },		-- Dreambloom Petal
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
+			--[[
 			q(66382, {	-- Weekly Herbalism Knowledgepoint #3
 				["name"] = "Weekly Herbalism Knowledgepoint #3",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
