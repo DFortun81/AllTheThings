@@ -124,7 +124,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 9.1.0.40725" },
 		}),
 		i(92724, {	-- Swift Windsteed (MOUNT!)
-			["timeline"] = { "added 5.1.0.16309" },
+			["timeline"] = { "added 5.1.0.16309", "removed 8.1.0.29088" },
 		}),
 		i(166776, {	-- Sylverian Dreamer (MOUNT!)
 			["timeline"] = { "added 8.2.0.30948" },
