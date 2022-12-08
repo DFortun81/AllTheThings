@@ -244,7 +244,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(194099),	-- Shikaar Hunting Horn
 				i(194108),	-- Mighty Hunter's Horn
 
-				q(70906, { ["name"] = "1st Weekly Grand Hunt",
+				q(70906, { 
+					["name"] = "1st Weekly Grand Hunt",
 					-- ["sourceQuests"] = { },
 					["isWeekly"] = true,
 					["g"] = {
@@ -271,7 +272,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						}),
 					},
 				}),
-				q(71136, { ["name"] = "2nd Weekly Grand Hunt",
+				q(71136, { 
+					["name"] = "2nd Weekly Grand Hunt",
 					["sourceQuests"] = { 70003 },	-- 1st Weekly Grand Hunt
 					["isWeekly"] = true,
 					["g"] = {
@@ -288,7 +290,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						}),
 					},
 				}),
-				q(71137, { ["name"] = "3rd Weekly Grand Hunt",
+				q(71137, { 
+					["name"] = "3rd Weekly Grand Hunt",
 					["sourceQuests"] = { 71136 },	-- 2nd Weekly Grand Hunt
 					["isWeekly"] = true,
 					["g"] = {
@@ -302,7 +305,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						}),
 					},
 				}),
-				q(70907, { ["name"] = "4+ Weekly Grand Hunt",
+				q(70907, { 
+					["name"] = "Repeatable Grand Hunt",
 					["sourceQuests"] = { 71136 },	-- 2nd Weekly Grand Hunt
 					["repeatable"] = true,
 					["g"] = {
@@ -335,5 +339,5 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	-- Upon killing a mob that dropped a trophy, the quest is triggered.
 	q(73913),	-- Thaldraszus South - Dismay Flies Event
 	q(73933),	-- Thaldraszus South - Scythe Raid Event
---	q(73913),	-- Thaldraszus South - Towering Fickleshells Event
+	q(73913),	-- Thaldraszus South - Towering Fickleshells Event
 }));
