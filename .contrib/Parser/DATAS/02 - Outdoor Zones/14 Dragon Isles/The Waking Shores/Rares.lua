@@ -115,11 +115,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193134, {	-- Enkine the Voracious
-				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
-				-- ["questID"] = 72128,
-				-- ["g"] = {
-
-				-- },
+				["coord"] = { 40.3, 64.9, THE_WAKING_SHORES },
+				["questID"] = 74010,
+				["isDaily"] = true,
+				["g"] = {
+					i(200217),	-- Blazing Essence
+					i(200247),	-- Inextinguishable Gavel
+					i(200252),	-- Molten Flak Cannon
+					i(200563),	-- Primal Ritual Shell
+					i(200167),	-- Regurgitated Stone Handaxe
+					i(200163),	-- Ring of Embers
+					i(200133),	-- Volcanic Chakram
+				},
 			}),
 			n(195915, {	-- Firava the Rekindler
 				["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },

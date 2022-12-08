@@ -545,6 +545,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),--]]
 		}),
 		prof(FISHING, {
+			i(194701),	-- Ominous Conch (Something for fishing thingy)
 			q(72252, {	-- Dragon Isles Fishing [A]
 				["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
 				["provider"] = { "n", 191150 },	-- Danielle Anglers
