@@ -4,6 +4,21 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
 		n(RARES, {
+			n(193128, {	-- Blightpaw the Depraved
+				["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
+				-- ["questID"] = ,
+				["g"] = {
+					i(200283),	-- Gnoll-Gnawed Breeches	-- Unconfirmed
+					i(200178),	-- Infected Ichor
+					i(196892),	-- Cliffside Wylderdrake: Ears
+					i(197150),	-- Highland Drake: Spiked Club Tail
+					i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin
+					i(200127),	-- Gold-Alloy Blade
+					i(196987),	-- Cliffside Wylderdrake: Black Hair
+					i(200432),	-- Rotguard Cowl
+					i(200266),	-- Gnollish Chewtoy Launcher
+				},
+			}),
 			n(195186, {	-- Cinta the Forgotten
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,

@@ -19,20 +19,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				-- },
 			}),
-			n(193341, {	-- Angen
-				["coord"] = { 33.2, 72.4, THALDRASZUS },
-				--["questID"] = ,
-				["g"] = {
-					i(200128),	-- Zephyr's Razor
-				},
-			}),
-			n(193128, {	-- Blightpaw the Depraved
-				["coord"] = { 90.2, 40.2, THALDRASZUS },
-				-- ["questID"] = ,
-				["g"] = {
-					i(200283),	-- Gnoll-Gnawed Breeches
-				},
-			}),
 			n(193220, {	-- Broodweaver Araznae <Mother of Spiders>
 				["coord"] = { 59.6, 70.1, THALDRASZUS },
 				-- ["questID"] = 69868,

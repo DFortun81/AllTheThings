@@ -2,9 +2,9 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
-	n(MARUUK_CENTAUR, {
+--	n(MARUUK_CENTAUR, {	-- While its useful as Contributor, extending the tooltip length to include the faction is not nessessary
 		n(GRAND_HUNTS, {
-			m(OHNAHRAN_PLAINS, {
+			m(OHNAHRAN_PLAINS, {	-- Should be finished
 				n(-1123, {	-- North
 					n(190907, {	-- Blitztusk	-- North Only
 						["coord"] = { 77.0, 20.6, OHNAHRAN_PLAINS },
@@ -91,66 +91,85 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 			}),
 			m(THALDRASZUS, {
-				n(193341, {	-- Angen
-					["coord"] = { 33.2, 72.4, THALDRASZUS },
-					["questID"] = 73906,
-					["g"] = {
-						i(200128),	-- Zephyr's Razor
-					},
+				n(-1123, {	-- North
+					n(195431, {	-- Diluu
+						["coord"] = { 50.8, 46.6, THALDRASZUS },
+						["questID"] = 73912,
+						["isDaily"] = true,
+						["g"] = {
+							i(196983),	-- Cliffside Wylderdrake: Maned Jaw
+							i(197125),	-- Highland Drake: Coiled Horns
+						},
+					}),
+					n(195430, {	-- Molkeej
+						["coord"] = { 51.1, 49.3, THALDRASZUS },
+						["questID"] = 73925,
+						["isDaily"] = true,
+						["g"] = {
+							i(197125),	-- Highland Drake: Coiled Horns
+						},
+					}),
+					n(195417, {	-- Tsokorg
+						["coord"] = { 50.0, 47.8, THALDRASZUS },
+						["questID"] = 73942,
+						["isDaily"] = true,
+						["g"] = {
+							-- is part of the DF>Global Rare Loottable
+						},
+					}),
 				}),
-				n(195431, {	-- Diluu
-					["coord"] = { 50.8, 46.6, THALDRASZUS },
-					["questID"] = 73912,
-					["isDaily"] = true,
-					["g"] = {
-						i(196983),	-- Cliffside Wylderdrake: Maned Jaw
-						i(197125),	-- Highland Drake: Coiled Horns
-					},
-				}),
-				n(193330, {	-- Galzuda
-				--	["coord"] = { 50.8, 46.6, THALDRASZUS },
-				--	["questID"] = 73912,
-					["isDaily"] = true,
-					["g"] = {
-						i(200261),	-- White Chitin Bands
-					},
-				}),
-				n(193311, {	-- Melkhop
-					["coord"] = { 33.2, 67.9, THALDRASZUS },
-					["questID"] = 73924,
-					["isDaily"] = true,
-					["g"] = {
-						-- Not sure. Maybe "is part of the DF>Global Rare Loottable"
-					},
-				}),
-				n(195430, {	-- Molkeej
-					["coord"] = { 51.1, 49.3, THALDRASZUS },
-					["questID"] = 73925,
-					["isDaily"] = true,
-					["g"] = {
-						i(197125),	-- Highland Drake: Coiled Horns
-					},
-				}),
-				n(195417, {	-- Tsokorg
-					["coord"] = { 50.0, 47.8, THALDRASZUS },
-					["questID"] = 73942,
-					["isDaily"] = true,
-					["g"] = {
-						-- is part of the DF>Global Rare Loottable
-					},
+				n(-1125, {	-- South
+					n(193341, {	-- Angen
+						["coord"] = { 33.2, 72.4, THALDRASZUS },
+						["questID"] = 73906,
+						["g"] = {
+							i(200128),	-- Zephyr's Razor
+						},
+					}),
+					n(193330, {	-- Galzuda
+						["coord"] = { 36.0, 68.6, THALDRASZUS },
+						["questID"] = 73916,
+						["isDaily"] = true,
+						["g"] = {
+							i(200261),	-- White Chitin Bands
+						},
+					}),
+					n(193311, {	-- Melkhop
+						["coord"] = { 33.2, 67.9, THALDRASZUS },
+						["questID"] = 73924,
+						["isDaily"] = true,
+						["g"] = {
+							-- Not sure. Maybe "is part of the DF>Global Rare Loottable"
+						},
+					}),
 				}),
 			}),
 			m(THE_AZURE_SPAN, {
-				n(195300, {	-- Arkhuu
-					["coord"] = { 66.4, 59.5, THE_AZURE_SPAN },
-					["questID"] = 73907,
-					["isDaily"] = true,
-					["g"] = {
-						i(200303),	-- Dreamweaver Acolytes Staff
-						i(197100),	-- Highland Drake: Crested Brow
-						i(200299),	-- Strange Clockwork Gladius
+				n(-1124, {	-- East
+				}),
+				n(-1125, {	-- South
+					n(195300, {	-- Arkhuu
+						["coord"] = { 66.4, 59.5, THE_AZURE_SPAN },
+						["questID"] = 73907,
+						["isDaily"] = true,
+						["g"] = {
+							i(200303),	-- Dreamweaver Acolytes Staff
+							i(197100),	-- Highland Drake: Crested Brow
+							i(200299),	-- Strange Clockwork Gladius
 
-					},
+						},
+					}),
+				}),
+				n(-1126, {	-- West
+					n(194763, {	-- Tenmod
+						["coord"] = { 33.2, 40.3, THE_AZURE_SPAN },
+						["questID"] = 73938,
+						["isDaily"] = true,
+						["g"] = {
+							i(200684),	-- Emerald Tailbone
+							-- is part of the DF>Global Rare Loottable
+						},
+					}),
 				}),
 				n(194761, {	-- Khuumog
 					["coord"] = { 38.7, 43.5, THE_AZURE_SPAN },
@@ -165,15 +184,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["questID"] = 73923,
 					["isDaily"] = true,
 					["g"] = {
-						-- is part of the DF>Global Rare Loottable
-					},
-				}),
-				n(194763, {	-- Tenmod
-					["coord"] = { 33.2, 40.3, THE_AZURE_SPAN },
-					["questID"] = 73938,
-					["isDaily"] = true,
-					["g"] = {
-						i(200684),	-- Emerald Tailbone
 						-- is part of the DF>Global Rare Loottable
 					},
 				}),
@@ -246,8 +256,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 								-- confirmed items here
 								193360,	-- Centaur's Trophy Necklace
 								194093,	-- Bakar Companion Color: Brown
+								194094,	-- Bakar Companion Color: Black
+								194091,	-- Bakar Companion Color: Golden Brown
+								194089,	-- Bakar Companion Color: Orange
 								194090,	-- Bakar Companion Color: White
 								193205,	-- Ohuna Companion Color: Brown
+								194088,	-- Ohuna Companion Color: Dark
+								194095,	-- Ohuna Companion Color: Sepia
+								194087,	-- Ohuna Companion Color: Red
 							}},
 							["g"] = {
 								i(192791),	-- Plainswalker Bearer (Mount!)
@@ -305,7 +321,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(200093),	-- Centaur Hunting Trophy
 			}),
 		}),
-	}),
+--	}),
 })));
 
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
