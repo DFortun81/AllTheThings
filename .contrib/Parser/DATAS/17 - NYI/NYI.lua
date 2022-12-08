@@ -784,17 +784,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201359),	-- Glimmer of Earth
 			i(201360),	-- Glimmer of Order
 			i(201361),	-- Primal Inspiration
-			i(201700),	-- Notebook of Crafting Knowledge
 			i(201705),	-- Notebook of Crafting Knowledge
-			i(201706),	-- Notebook of Crafting Knowledge
-			i(201708),	-- Notebook of Crafting Knowledge
 			i(201709),	-- Notebook of Crafting Knowledge
-			i(201710),	-- Notebook of Crafting Knowledge
-			i(201711),	-- Notebook of Crafting Knowledge
 			i(201712),	-- Notebook of Crafting Knowledge
 			i(201713),	-- Notebook of Crafting Knowledge
 			i(201714),	-- Notebook of Crafting Knowledge
-			i(201715),	-- Notebook of Crafting Knowledge
 			i(201716),	-- Notebook of Crafting Knowledge
 			i(201717),	-- Notebook of Crafting Knowledge
 			i(201718),	-- Notebook of Crafting Knowledge
@@ -913,11 +907,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200241),	-- Stormcaller's Ritual Hatchet
 			i(200242),	-- Watcher's Lightning Rod
 			i(200250),	-- Frost Tipped Glaive
-			i(200252),	-- Molten Flak Cannon
 			i(200253),	-- Snowspring Incanter's Knife
 			i(200257),	-- Decay Infused Branch
 			i(200259),	-- Forest Dweller's Shield
-			i(200286),	-- Dragonbane Lance
 			i(200293),	-- Primal Scion's Twinblade
 			i(200297),	-- Hastily Cobbled Maul
 			i(200301),	-- Reclaimed Tuskarr Harpoon

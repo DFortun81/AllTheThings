@@ -601,31 +601,22 @@ p(3158),	-- Missing1
 p(3188),	-- Trub'ul \\ Trouble
 10.0.0.44649
 p(3257),	-- Test Beetle
-p(3260),	-- Snowy Treeflitter \\ [PH] White Flying Squirrel
-p(3266),	-- Black Slyvern Pup \\ [PH] Black Baby Slyvern
 p(3268),	-- Swog
 p(3289),	-- Echo of the Inferno \\ Green Baby Mammoth \\ [PH] Green Baby Mammoth
 p(3299),	-- Echo of the Depths \\ Purple Baby Salamanther \\ [PH] Purple Baby Salamanther
-p(3307),	-- Plucky Duckling \\ [PH] White Baby Duck
 p(3308),	-- Time-Lost Duckling \\ [PH] Yellow Baby Duck
 p(3310),	-- Echo of the Heights \\ Brown Duck \\ [PH] Brown Duck
 p(3311),	-- Ohuna Companion \\ White Duck \\ [PH] White Duck
-p(3318),	-- Thunderfoot Calf \\ [PH] Light Baby Thunder Lizard
-p(3320),	-- Whitewhisker \\ [PH] White Baby Slyvern
 p(3325),	-- Bakar Companion \\ White Woodpecker \\ [PH] White Woodpecker
-p(3327),	-- Dusky Timbertooth \\ [PH] Brown Baby Timbertooth
 p(3329),	-- Storm-Touched Timbertooth \\ Light Baby Timbertooth \\ [PH] Light Baby Timbertooth
-p(3335),	-- Pale Baby Vorquin \\ [PH] Pale Baby Vorquin
 p(3338),	-- Sapphire Crystalspine \\ [PH] Blue Crystalspine
 p(3339),	-- Black Dragon Whelp \\ [PH] Black Dragon Whelp
 p(3340),	-- Blue Dragon Whelp \\ [PH] Blue Dragon Whelp
 p(3341),	-- Red Dragon Whelp \\ [PH] Red Dragon Whelp
 p(3342),	-- Spyragos
 p(3343),	-- Bronze Dragon Whelp \\ [PH] Bronze Dragon Whelp
-p(3352),	-- Razortooth Bear Cub \\ [PH] Red Primal Bear Cub
 p(3354),	-- Storm-Touched Ottuk \\ Green Baby Turtle \\ [PH]Green Baby Turtle
 p(3355),	-- Echo of the Cave \\ Orange Baby Turtle \\ [PH] Orange Baby Turtle
-p(3356),	-- Chalkshell Turtle \\ [PH] White Baby Turtle
 p(3359),	-- Snowclaw Cub \\ [PH] White Primal Bear Cub
 p(3360),	-- Bugbiter Tortoise \\ [PH] Teal Baby Turtle
 p(3361),	-- Diamond Crab \\ [PH] Bling Crab (Diamond)
@@ -640,7 +631,6 @@ p(3385),	-- Storm-Touched Stomper \\ Green Baby Mammoth \\ [PH] Green Baby Mammo
 p(3386),	-- Faceripper \\ Brown Duck \\ [PH] Brown Duck
 p(3387),	-- Bloodbiter \\ REUSE ME \\ [PH] Brown Baby Thunder Lizard
 p(3388),	-- Tina \\ [PH] White Shaggy Rabbit
-p(3389),	-- The Quackcestor \\ Duck Spirit
 p(3391),	-- Phantus
 p(3392),	-- Skritches
 p(3393),	-- Anubisath Idol

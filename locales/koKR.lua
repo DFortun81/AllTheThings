@@ -859,6 +859,10 @@ for key,value in pairs({
 		[-1120] = "마루크 켄타우로스",										-- Maruuk Centaur
 		[-1121] = "아일라그 부족",										-- Clan Aylaag
 		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
+		--TODO: [-1123] = "North",									-- North
+		--TODO: [-1124] = "East",									-- East
+		--TODO: [-1125] = "South",									-- South
+		--TODO: [-1126] = "West",									-- West
 		[-1130] = "이스카라 투스카르",										-- Iskaara Tuskarr
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "발드라켄 협의회",										-- Valdrakken Accord
@@ -1035,8 +1039,11 @@ for key,value in pairs({
 	[21015] = "발굽 자국",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21016] = "발굽 자국",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21042] = "테라모어 경비병 휘장",	-- Theramore Guard Badge
+	[22245] = "고기 부대",	-- Sack of Meat
+	[22246] = "테라드라스의 눈물",	-- Tear of Theradras
 	[35251] = "카니톨의 궤짝",	-- Karnitol's Chest
 	[37099] = "아탈라이 서판",	-- Atal'ai Tablet
+	[50961] = "말렘의 궤짝",	-- Malem Chest
 	[51708] = "엘리자의 무덤",	-- Eliza's Grave Dirt	--TODO: This was taken from wotlk Wowhead
 	[91138] = "조던의 망치",	-- Jordan's Hammer
 	[103821] = "도안의 금고",	-- Doan's Strongbox	--TODO: This was taken from wotlk Wowhead
@@ -1086,6 +1093,7 @@ for key,value in pairs({
 	[152095] = "달봉우리 백합",	-- Moonpetal Lily	--TODO: This was taken from wotlk Wowhead
 	[152622] = "아즈샤리트 결정체",	-- Azsharite Formation
 	[153123] = "킴야엘의 장비",	-- Kim'jael's Equipment	--TODO: This was taken from wotlk Wowhead
+	[157936] = "운고로 흙더미",	-- Un'Goro Dirt Pile	--TODO: This was taken from wotlk Wowhead
 	[160836] = "유물 금고",	-- Relic Coffer
 	[161495] = "비밀 금고",	-- Secret Safe
 	[161504] = "작은 배낭",	-- A Small Pack	--TODO: This was taken from wotlk Wowhead
@@ -1114,6 +1122,7 @@ for key,value in pairs({
 	[164958] = "붉은꽃잎덩굴손 씨눈",	-- Bloodpetal Sprout
 	[166863] = "방금 죽은 트레샤돈 시체",	-- Fresh Threshadon Carcass
 	[169243] = "일곱 현자의 궤짝",	-- Chest of The Seven
+	[171938] = "선인장 사과",	-- Cactus Apple
 	[171939] = "오염된 노래꽃",	-- Corrupted Songflower
 	[171942] = "오염된 노래꽃",	-- Corrupted Songflower
 	[173232] = "대장기술 도면",	-- Blacksmithing Plans
@@ -1181,10 +1190,14 @@ for key,value in pairs({
 	[176487] = "타렌 제분소 증서",	-- The Deed to Tarren Mill
 	[176544] = "에바 사크호프의 유해",	-- Remains of Eva Sarkhoff
 	[176545] = "루시앙 사크호프의 유해",	-- Remains of Lucien Sarkhoff
+	[176582] = "가재 통발",	-- Shellfish Trap
 	[176631] = "메네실의 선물",	-- Menethil's Gift
+	[176751] = "코도 뼈",	-- Kodo Bones
+	[177243] = "악마의 차원문",	-- Demon Portal
 	[177289] = "스컬지 가마솥",	-- Scourge Cauldron	--TODO: This was taken from wotlk Wowhead
 	[177491] = "흰개미 통",	-- Termite Barrel	--TODO: This was taken from wotlk Wowhead
 	[177667] = "찢어진 두루마리",	-- Torn Scroll
+	--TODO: [177673] = "Serpent Statue",	-- Serpent Statue
 	--TODO: [177684] = "Stone of Shy-Rotam",	-- Stone of Shy-Rotam
 	[177787] = "랙모어의 기록",	-- Rackmore's Log
 	[177904] = "현상 수배: 베스셀레스",	-- Wanted Poster: Besseleth
@@ -1206,6 +1219,7 @@ for key,value in pairs({
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
 	[180366] = "찌그러진 낚시상자",	-- Battered Tackle Box	--TODO: This was taken from wotlk Wowhead
 	[180368] = "광기의 서판",	-- Tablet of Madness	--TODO: This was taken from wotlk Wowhead
+	[180369] = "거품이는 진흙탕물",	-- Muddy Churning Waters	--TODO: This was taken from wotlk Wowhead
 	[180448] = "현상 수배: 죽음의 갈고리",	-- Wanted Poster: Deathclasp
 	[180456] = "하급 바람의 돌",	-- Lesser Wind Stone
 	[180461] = "바람의 돌",	-- Wind Stone
@@ -3337,6 +3351,7 @@ for key,value in pairs({
 	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
 	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
 	[377499] = "용족의 기원에 관하여",	-- On the Origin of Draconic Species
+	--TODO: [377534] = "Delivered Vault",	-- Delivered Vault
 	[377899] = "숨겨진 용뿔두꺼비 인질",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	--TODO: [378010] = "Forgotten Dragon Treasure",	-- Forgotten Dragon Treasure
@@ -3345,11 +3360,13 @@ for key,value in pairs({
 	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
-	--TODO: [380518] = "Dislodged Dragoneye",	-- Dislodged Dragoneye
 	--TODO: [380533] = "Snow Covered Scroll",	-- Snow Covered Scroll
 	--TODO: [380547] = "Decay-Infused Tanning Oil",	-- Decay-Infused Tanning Oil
+	--TODO: [380554] = "Well-Danced Drum",	-- Well-Danced Drum
 	--TODO: [380587] = "Crate of Treated Hides",	-- Crate of Treated Hides
 	--TODO: [380602] = "Wind-Blessed Hide",	-- Wind-Blessed Hide
+	[380615] = "밀렵꾼의 배낭",	-- Poacher's Pack
+	--TODO: [380618] = "Draconic Flux",	-- Draconic Flux
 	--TODO: [380653] = "Yennu's Kite",	-- Yennu's Kite
 	[380654] = "죽은 자의 가슴갑옷",	-- Dead Man's Chestplate
 	[380840] = "찢어진 탈것 배낭",	-- Torn Riding Pack
@@ -3371,6 +3388,7 @@ for key,value in pairs({
 	--TODO: [381160] = "Lost Compass",	-- Lost Compass
 	--TODO: [381216] = "Surveyor's Magnifying Glass",	-- Surveyor's Magnifying Glass
 	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
+	--TODO: [381277] = "Barrel of Confiscated Treats",	-- Barrel of Confiscated Treats
 	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
 	--TODO: [381297] = "Misplaced Luggage",	-- Misplaced Luggage
 	--TODO: [381353] = "Stone Dragontooth",	-- Stone Dragontooth
@@ -3388,6 +3406,7 @@ for key,value in pairs({
 	[381650] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	--TODO: [381653] = "Fang Flap Fire Signups",	-- Fang Flap Fire Signups
 	[381661] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
+	--TODO: [381663] = "Manastorming For Beginners",	-- Manastorming For Beginners
 	[381664] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	[381667] = "기록관의 요청",	-- Archivists' Request
 	[381668] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated

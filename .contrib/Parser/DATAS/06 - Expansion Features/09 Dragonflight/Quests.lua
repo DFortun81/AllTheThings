@@ -119,20 +119,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			["coord"] = { 55.9, 12.6, DUROTAR },
 			["races"] = HORDE_ONLY,
 		}),
-		q(70044, {    -- Truths and Revelations [A]
-            ["sourceQuests"] = { 66596 },	-- Whispers on the Winds [A]
-            ["provider"] = { "n", 193890 },	-- Dervishian
-            ["coord"] = { 23.1, 56.2, STORMWIND_CITY },
-            ["races"] = ALLIANCE_ONLY,
-			["timeline"] = TIMELINE_DF_REL,
-		}),
-		q(70045, {	-- Truths and Revelations [H]
-			["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
-			["provider"] = { "n", 193889 },	-- Kodethi
-			["coord"] = { 55.9, 12.7, DUROTAR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = TIMELINE_DF_REL,
-		}),
 		q(70053, {    -- Lessons From Our Past [A]
             ["sourceQuests"] = { 70044 },	-- Truths and Revelations [A]
             ["provider"] = { "n", 193924 },	-- Scalecommander Emberthal
@@ -151,21 +137,29 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = TIMELINE_DF_REL,
+			["isBreadcrumb"] = true,
 		}),
 		q(70198, {	-- The Call of the Isles [H]
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["timeline"] = TIMELINE_DF_REL,
+			["isBreadcrumb"] = true,
 		}),
 		q(67700, {	-- To The Dragon Isles! [A]
-			["sourceQuests"] = { 70197 },	--  The Call of the Isles [A]
+			["sourceQuests"] = { 
+				66596,	--  Whispers in the Winds [A]
+				70197,	--	The Call of the Isles [A]
+			},
 			["provider"] = { "n", 189077 },	-- Toddy Whiskers
 			["coord"] = { 22.7, 55.6, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = TIMELINE_DF_REL,
 		}),
 		q(65444, {	-- To the Dragon Isles! [H]
-			["sourceQuests"] = { 70198 },	-- The Call of the Isles [H]
+			["sourceQuests"] = { 
+				65439,	-- Whispers on the Winds [H]
+				70198,	-- The Call of the Isles [H]
+			},
 			["provider"] = { "n", 197279 },	-- Naleidea Rivergleam
 			["coord"] = { 55.8, 12.7, DUROTAR },
 			["races"] = HORDE_ONLY,
@@ -221,6 +215,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		q(72747, {	-- A Piece of Gold
 			["description"] = "Available on the next reset after \"A Piece of Silver\", from the adventure guide.",
 		}),
+		q(72748, {	-- A Bag of Gold
+			["description"] = "Available on the next reset after \"A Piece of Gold\", from the adventure guide.",
+		}),
 
 		-- These are usually from Valdrakken also? They were weeklies on beta
 		q(66864, {	-- Relic Recovery: Brackenhide Hollow
@@ -233,3 +230,22 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 	}),
 })));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(70045, {	-- Truths and Revelations [H]
+			["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
+			["provider"] = { "n", 193889 },	-- Kodethi
+			["coord"] = { 55.9, 12.7, DUROTAR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = TIMELINE_DF_REL,
+		}),
+		q(70044, {    -- Truths and Revelations [A]
+            ["sourceQuests"] = { 66596 },	-- Whispers on the Winds [A]
+            ["provider"] = { "n", 193890 },	-- Dervishian
+            ["coord"] = { 23.1, 56.2, STORMWIND_CITY },
+            ["races"] = ALLIANCE_ONLY,
+			["timeline"] = TIMELINE_DF_REL,
+		}),
+	}),
+}));

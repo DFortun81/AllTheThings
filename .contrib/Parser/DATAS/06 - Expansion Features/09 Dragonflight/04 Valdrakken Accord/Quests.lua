@@ -113,17 +113,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 197478 },	-- Herald Flaps
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
-				-- RENOWN 13 --
-			q(70903, {	-- Wielding Titanic Might
-				["description"] = "Requires Renown 13.",
-				["provider"] = { "n", 195768 },	-- Sorotis
-				["coord"] = { 26.1, 40.0, VALDRAKKEN },
-				["g"] = {
-					i(199772),	-- Titan Gatekeeper's Shield
-					i(199773),	-- Titan Watcher's Scepter
-				},
-			}),
-				-- STORY LINE CHAPTER 2
 			q(67074, {	-- The Gift of Silver
 				["sourceQuest"] = 68794,	-- Ally of Dragons
 				["description"] = "Requires Renown 12.",
@@ -179,6 +168,82 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 60.5, 58.6, THALDRASZUS },
 				["g"] = {
 					i(201781),	-- Memory of Tyr
+					crit(5, {	-- The Silver Purpose
+						["achievementID"] = 16808,	-- Friends of the Dragon Isles
+					}),
+				},
+			}),
+				-- RENOWN 13 --
+			q(70903, {	-- Wielding Titanic Might
+				["description"] = "Requires Renown 13.",
+				["provider"] = { "n", 195768 },	-- Sorotis
+				["coord"] = { 26.1, 40.0, VALDRAKKEN },
+				["g"] = {
+					i(199772),	-- Titan Gatekeeper's Shield
+					i(199773),	-- Titan Watcher's Scepter
+				},
+			}),
+				-- RENOWN 14 --
+			q(72690, {	-- Renown Supplies
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack
+				},
+			}),
+			q(70892, {	-- Crafting Your Start
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = ALCHEMY,
+				["g"] = {
+					i(201706),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72329, {	-- Crafting Your Start
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = BLACKSMITHING,
+				["g"] = {
+					i(201708),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72330, {	-- Crafting Your Start
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = ENGINEERING,
+				["g"] = {
+					i(201710),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72331, {	-- Crafting Your Start
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = INSCRIPTION,
+				["g"] = {
+					i(201711),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72332, {	-- Crafting Your Start
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = MINING,
+				["g"] = {
+					i(201700),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72333, {	-- Crafting Your Start
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = TAILORING,
+				["g"] = {
+					i(201715),	-- Notebook of Crafting Knowledge
 				},
 			}),
 		}),

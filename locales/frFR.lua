@@ -858,6 +858,10 @@ for key,value in pairs({
 		[-1120] = "Centaure maruuk",								-- Maruuk Centaur
 		[-1121] = "Clan des Aylaags",								-- Clan Aylaag
 		--TODO: [-1122] = "Grand Hunts",							-- Grand Hunts
+		--TODO: [-1123] = "North",									-- North
+		--TODO: [-1124] = "East",									-- East
+		--TODO: [-1125] = "South",									-- South
+		--TODO: [-1126] = "West",									-- West
 		[-1130] = "Rohart iskaarien",								-- Iskaara Tuskarr
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Concordat de Valdrakken",						-- Valdrakken Accord
@@ -1034,8 +1038,11 @@ for key,value in pairs({
 	[21015] = "Traces de sabot",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21016] = "Traces de sabot",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21042] = "Ecusson de la garde de Theramore",	-- Theramore Guard Badge
+	[22245] = "Sac de viande",	-- Sack of Meat
+	[22246] = "Larme de Theradras",	-- Tear of Theradras
 	[35251] = "Coffre de Karnitol",	-- Karnitol's Chest
 	[37099] = "Tablette atal'ai",	-- Atal'ai Tablet
+	[50961] = "Coffre de Malem",	-- Malem Chest
 	[51708] = "Boue du tombeau d'Eliza",	-- Eliza's Grave Dirt
 	[91138] = "Marteau de Jordan",	-- Jordan's Hammer
 	[103821] = "Coffre de Doan",	-- Doan's Strongbox
@@ -1085,6 +1092,7 @@ for key,value in pairs({
 	[152095] = "Lys pétale de lune",	-- Moonpetal Lily
 	[152622] = "Formation d'azsharite",	-- Azsharite Formation
 	[153123] = "Equipement de Kim'jael",	-- Kim'jael's Equipment
+	[157936] = "Tas de poussière d'Un'Goro",	-- Un'Goro Dirt Pile
 	[160836] = "Coffret à relique",	-- Relic Coffer
 	[161495] = "Coffre secret",	-- Secret Safe
 	[161504] = "Un petit paquet",	-- A Small Pack
@@ -1113,6 +1121,7 @@ for key,value in pairs({
 	[164958] = "Pousse de Pétale-de-sang",	-- Bloodpetal Sprout
 	[166863] = "Carcasse fraîche de battrodon",	-- Fresh Threshadon Carcass
 	[169243] = "Coffre des sept",	-- Chest of The Seven
+	[171938] = "Pomme de cactus",	-- Cactus Apple
 	[171939] = "Fleur-de-chant corrompue",	-- Corrupted Songflower
 	[171942] = "Fleur-de-chant corrompue",	-- Corrupted Songflower
 	[173232] = "Plans de forgeron",	-- Blacksmithing Plans
@@ -1180,10 +1189,14 @@ for key,value in pairs({
 	[176487] = "Titre de propriété de Moulin-de-Tarren",	-- The Deed to Tarren Mill
 	[176544] = "Cadavre d'Eva Sarkhoff",	-- Remains of Eva Sarkhoff
 	[176545] = "Cadavre de Lucien Sarkhoff",	-- Remains of Lucien Sarkhoff
+	[176582] = "Casier à crustacés",	-- Shellfish Trap
 	[176631] = "Don de Menethil",	-- Menethil's Gift
+	[176751] = "Os de kodo",	-- Kodo Bones
+	[177243] = "Portail démoniaque",	-- Demon Portal
 	[177289] = "Chaudron du Fléau",	-- Scourge Cauldron
 	[177491] = "Tonneau de termites",	-- Termite Barrel
 	[177667] = "Parchemin déchiré",	-- Torn Scroll
+	--TODO: [177673] = "Serpent Statue",	-- Serpent Statue
 	--TODO: [177684] = "Stone of Shy-Rotam",	-- Stone of Shy-Rotam
 	[177787] = "Journal de Rackmore",	-- Rackmore's Log
 	[177904] = "Avis de recherche : Besseleth",	-- Wanted Poster: Besseleth
@@ -1205,6 +1218,7 @@ for key,value in pairs({
 	[180327] = "Brasero de la Folie",	-- Brazier of Madness
 	[180366] = "Boîte d'appâts abîmée",	-- Battered Tackle Box
 	[180368] = "Tablette de la folie",	-- Tablet of Madness
+	[180369] = "Eaux troubles et agitées",	-- Muddy Churning Waters
 	[180448] = "Avis de recherche : Poigne-de-mort",	-- Wanted Poster: Deathclasp
 	[180456] = "Pierre des vents inférieure",	-- Lesser Wind Stone
 	[180461] = "Pierre du vent",	-- Wind Stone
@@ -3336,6 +3350,7 @@ for key,value in pairs({
 	[377458] = "Râtelier d’armes abandonné",	-- Abandoned Weapon Rack
 	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
 	[377499] = "De l’Origine des espèces draconiques",	-- On the Origin of Draconic Species
+	--TODO: [377534] = "Delivered Vault",	-- Delivered Vault
 	[377899] = "Otage bufflacien caché",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	[378010] = "Trésor draconique oublié",	-- Forgotten Dragon Treasure
@@ -3344,11 +3359,13 @@ for key,value in pairs({
 	[379321] = "Trace de patte mystérieuse",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	[380430] = "Fragment de queue",	-- Tail Fragment
-	[380518] = "Œil de dragon délogé",	-- Dislodged Dragoneye
 	[380533] = "Parchemin couvert de neige",	-- Snow Covered Scroll
 	[380547] = "Huile de tannage imprégnée de putréfaction",	-- Decay-Infused Tanning Oil
+	--TODO: [380554] = "Well-Danced Drum",	-- Well-Danced Drum
 	[380587] = "Caisse de peaux traitées",	-- Crate of Treated Hides
 	[380602] = "Peau bénie par le vent",	-- Wind-Blessed Hide
+	[380615] = "Sac de braconnage",	-- Poacher's Pack
+	[380618] = "Flux draconique",	-- Draconic Flux
 	[380653] = "Cerf-volant de Yennu",	-- Yennu's Kite
 	[380654] = "Pansière du Mort",	-- Dead Man's Chestplate
 	[380840] = "Sac de monte déchiré",	-- Torn Riding Pack
@@ -3370,6 +3387,7 @@ for key,value in pairs({
 	[381160] = "Boussole perdue",	-- Lost Compass
 	[381216] = "Loupe de géomètre",	-- Surveyor's Magnifying Glass
 	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
+	[381277] = "Tonneau de friandises confisquées",	-- Barrel of Confiscated Treats
 	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
 	[381297] = "Bagage égaré",	-- Misplaced Luggage
 	[381353] = "Dent draconique en pierre",	-- Stone Dragontooth
@@ -3387,6 +3405,7 @@ for key,value in pairs({
 	[381650] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Inscriptions à Croc-claque-crame",	-- Fang Flap Fire Signups
 	[381661] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
+	[381663] = "La tempête de mana pour les novices",	-- Manastorming For Beginners
 	[381664] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
 	[381667] = "Requête des archives",	-- Archivists' Request
 	[381668] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated

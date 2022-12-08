@@ -1273,6 +1273,18 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 	m(OHNAHRAN_PLAINS, {
 		q(73701),	-- triggered during 'Unwelcome Outsider' (66021)
 		q(71203),	-- daily lockout for 'To Tame A Thunderspine' series
+		
+		-- Achievement Honor Our Ancestors
+		q(71167),	-- Maruukai Ancestor
+		q(71168),	-- Timberstep Outpost Ancestor
+		q(71169),	-- Horn of Drusahl Ancestor
+		q(71170),	-- Toghusuq Village Ancestor
+		q(71171),	-- Shikaar Highlands Ancestor
+		q(71172),	-- The Carving Winds Ancestor
+		q(71173),	-- Sylvan Glade Ancestor
+		q(71174),	-- Ohn'iri Springs Ancestor
+		q(71175),	-- Teerakai Ancestor
+		q(71176),	-- The Eternal Kurgans Ancestor
 		--
 		-- q(70141),	-- Triggered when killed Skaara
 		-- --

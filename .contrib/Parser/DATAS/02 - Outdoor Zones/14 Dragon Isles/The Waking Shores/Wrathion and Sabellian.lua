@@ -263,6 +263,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["cost"] = { { "i", 191264, 20 }, },	-- 20x Restored Obsidian Key
 					["g"] = {
 						i(200159),	-- Blaze Ring
+						i(200252),	-- Molten Flak Cannon
 					},
 				}),
 				n(187306, {	-- Morchok <Harbinger of Twilight>

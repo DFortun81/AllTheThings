@@ -1143,8 +1143,11 @@ pet(193225, 3284);	-- Whiskuk
 pet(193619, 3319);	-- Yipper
 
 pet(0, 3357);	-- Azure Crystalspine
+pet(0, 3266);	-- Black Slyvern Pup
 pet(0, 3403);	-- Blue Dasher
+pet(0, 3356);	-- Chalkshell Turtle
 pet(0, 3358);	-- Crimsonspine
+pet(0, 3327);	-- Dusky Timbertooth
 pet(0, 3367);	-- Emberling
 pet(0, 3313);	-- Grassland Stomper
 pet(0, 3351);	-- Grizzlefur Cub
@@ -1153,17 +1156,24 @@ pet(0, 3300);	-- Ironbeak Duck
 pet(0, 3366);	-- Kindlet
 pet(0, 3273);	-- Magma Slug
 pet(0, 3296);	-- Palamanther
+pet(0, 3335);	-- Pale Baby Vorquin
+pet(0, 3307);	-- Plucky Duckling
 pet(0, 3404);	-- Polliswog
 pet(0, 3272);	-- Pricklefury Hare
+pet(0, 3352);	-- Razortooth Bear Cub
 pet(0, 3281);	-- Scruffy Ottuk
 pet(0, 3280);	-- Shyfly
 pet(0, 3283);	-- Snowlemental
+pet(0, 3260);	-- Snowy Treeflitter
 pet(0, 3353);	-- Stoneshell
 pet(0, 3282);	-- Swoglet
+pet(0, 3389);	-- The Quackcestor
+pet(0, 3318);	-- Thunderfoot Calf
 pet(0, 3328);	-- Tiny Timbertooth
 pet(0, 3276);	-- Treeflitter
 pet(0, 3288);	-- Trunkalumpf
 pet(0, 3336);	-- Vorquin Runt
+pet(0, 3320);	-- Whitewhisker
 pet(0, 3301);	-- Wild Duckling
 pet(0, 3322);	-- Woodbiter Piculet
 
@@ -1172,9 +1182,7 @@ pet(0, 3322);	-- Woodbiter Piculet
 pet(191126, 3256);	-- Jeweled Onyx Whelpling / Obsidian Whelpling
 pet(0, 3257);	-- Test Beetle
 pet(191915, 3259);	-- Time-Lost Feral Rabbit
-pet(0, 3260);	-- Snowy Treeflitter
 pet(191930, 3261);	-- Blue Phoenix Hatchling
-pet(0, 3266);	-- Black Slyvern Pup
 pet(193620, 3267);	-- Time-Lost Slyvern
 pet(0, 3268);	-- Swog
 
@@ -1197,26 +1205,21 @@ pet(193380, 3298);	-- Pink Salamanther
 pet(0, 3299);	-- Echo of the Depths
 
 
-pet(0, 3307);	-- Plucky Duckling
 pet(0, 3308);	-- Time-Lost Duckling
 pet(0, 3310);	-- Echo of the Heights
 pet(0, 3311);	-- Ohuna Companion
 pet(193587, 3312);	-- Time-Lost Duck
 
 pet(193614, 3314);	-- Groundshaker
-pet(0, 3318);	-- Thunderfoot Calf
-pet(0, 3320);	-- Whitewhisker
 pet(193835, 3323);	-- Brightfeather
 pet(0, 3325);	-- Bakar Companion
 
-pet(0, 3327);	-- Dusky Timbertooth
 pet(0, 3329);	-- Storm-Touched Timbertooth
 pet(193850, 3330);	-- Time-Lost Timbertooth
 pet(193853, 3331);	-- Emerald Frillfish
 pet(193851, 3332);	-- Purple Frillfish
 pet(193854, 3333);	-- Blue Vorquin Foal
 pet(193855, 3334);	-- Time-Lost Vorquin Foal
-pet(0, 3335);	-- Pale Baby Vorquin
 pet(0, 3338);	-- Sapphire Crystalspine
 pet(0, 3339);	-- Black Dragon Whelp
 pet(0, 3340);	-- Blue Dragon Whelp
@@ -1226,10 +1229,8 @@ pet(0, 3343);	-- Bronze Dragon Whelp
 
 
 
-pet(0, 3352);	-- Razortooth Bear Cub
 pet(0, 3354);	-- Storm-Touched Ottuk
 pet(0, 3355);	-- Echo of the Cave
-pet(0, 3356);	-- Chalkshell Turtle
 
 
 pet(0, 3359);	-- Snowclaw Cub
@@ -1266,7 +1267,6 @@ pet(0, 3385);	-- Storm-Touched Stomper
 pet(0, 3386);	-- Faceripper
 pet(0, 3387);	-- Bloodbiter
 pet(0, 3388);	-- Tina
-pet(0, 3389);	-- The Quackcestor
 pet(0, 3391);	-- Phantus
 pet(0, 3392);	-- Skritches
 pet(0, 3393);	-- Anubisath Idol

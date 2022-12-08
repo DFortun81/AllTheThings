@@ -847,6 +847,10 @@ for key,value in pairs({
 		[-1120] = "Кентавры Маруук",								-- Maruuk Centaur
 		[-1121] = "Клан Айлааг",									-- Clan Aylaag
 		[-1122] = "Великая охота",									-- Grand Hunts
+		[-1123] = "Север",											-- North
+		[-1124] = "Восток",											-- East
+		[-1125] = "Юг",												-- South
+		[-1126] = "Запад",											-- West
 		[-1130] = "Искарские клыкарры",								-- Iskaara Tuskarr
 		[-1131] = "Искарское рыболовство",							-- Iskaara Fishing
 		[-1140] = "Союз Вальдраккена",								-- Valdrakken Accord
@@ -1026,8 +1030,11 @@ for key,value in pairs({
 	[21015] = "Следы копыт",	-- Hoofprints
 	[21016] = "Следы копыт",	-- Hoofprints	--TODO: This was taken from wotlk Wowhead
 	[21042] = "Кокарда Тераморской стражи",	-- Theramore Guard Badge
+	[22245] = "Мешок мяса",	-- Sack of Meat
+	[22246] = "Слеза Терадрас",	-- Tear of Theradras
 	[35251] = "Сундук Карнитола",	-- Karnitol's Chest
 	[37099] = "Табличка племени Атал'ай",	-- Atal'ai Tablet
+	[50961] = "Сундук Малема",	-- Malem Chest
 	[51708] = "Земля с могилы Элизы",	-- Eliza's Grave Dirt
 	[91138] = "Молот Джордана",	-- Jordan's Hammer
 	[103821] = "Сейф Доана",	-- Doan's Strongbox
@@ -1077,6 +1084,7 @@ for key,value in pairs({
 	[152095] = "Лунная лилия",	-- Moonpetal Lily
 	[152622] = "Отложение азшарита",	-- Azsharite Formation
 	[153123] = "Оборудование Ким'джаеля",	-- Kim'jael's Equipment
+	[157936] = "Куча земли Ун'Горо",	-- Un'Goro Dirt Pile
 	[160836] = "Реликварий",	-- Relic Coffer
 	[161495] = "Потайной сейф",	-- Secret Safe
 	[161504] = "Небольшая сумка",	-- A Small Pack
@@ -1105,6 +1113,7 @@ for key,value in pairs({
 	[164958] = "Росток кровоцвета",	-- Bloodpetal Sprout
 	[166863] = "Свежий труп жесткозуба",	-- Fresh Threshadon Carcass
 	[169243] = "Сундук Семерых",	-- Chest of The Seven
+	[171938] = "Плод кактуса",	-- Cactus Apple
 	[171939] = "Оскверненный песнецвет",	-- Corrupted Songflower
 	[171942] = "Оскверненный песнецвет",	-- Corrupted Songflower
 	[173232] = "Чертежи кузнечного дела",	-- Blacksmithing Plans
@@ -1172,10 +1181,14 @@ for key,value in pairs({
 	[176487] = "Документы на Мельницу Таррен",	-- The Deed to Tarren Mill
 	[176544] = "Останки Евы Саркофф",	-- Remains of Eva Sarkhoff
 	[176545] = "Останки Люсьена Саркоффа",	-- Remains of Lucien Sarkhoff
+	[176582] = "Ловушка на моллюска",	-- Shellfish Trap
 	[176631] = "Дар Менетила",	-- Menethil's Gift
+	[176751] = "Кости кодо",	-- Kodo Bones
+	[177243] = "Портал демонов",	-- Demon Portal
 	[177289] = "Котел Плети",	-- Scourge Cauldron
 	[177491] = "Термитная бочка",	-- Termite Barrel
 	[177667] = "Разорванный свиток",	-- Torn Scroll
+	--TODO: [177673] = "Serpent Statue",	-- Serpent Statue
 	[177684] = "Камень Ши-Ротам",	-- Stone of Shy-Rotam	--TODO: This was manually translated
 	[177787] = "Записи Ракмора",	-- Rackmore's Log
 	[177904] = "Плакат: \"Разыскивается\": Бесселет",	-- Wanted Poster: Besseleth
@@ -1197,6 +1210,7 @@ for key,value in pairs({
 	[180327] = "Жаровня Безумия",	-- Brazier of Madness
 	[180366] = "Побитый ящик для рыболовных снастей",	-- Battered Tackle Box
 	[180368] = "Табличка Безумия",	-- Tablet of Madness
+	[180369] = "Грязный водоворот",	-- Muddy Churning Waters
 	[180448] = "Плакат: \"Разыскивается\": Смертехват",	-- Wanted Poster: Deathclasp
 	[180456] = "Меньший камень Ветров",	-- Lesser Wind Stone
 	[180461] = "Камень Ветров",	-- Wind Stone
@@ -3328,6 +3342,7 @@ for key,value in pairs({
 	[377458] = "Брошенная оружейная стойка",	-- Abandoned Weapon Rack
 	[377466] = "Потерянные песочные часы драконов",	-- Lost Draconic Hourglass
 	[377499] = "О происхождении видов драконов",	-- On the Origin of Draconic Species
+	[377534] = "Доставленный сундук",	-- Delivered Vault
 	[377899] = "Скрытый заложник рогоплава",	-- Hidden Hornswog Hostage
 	[377900] = "Боевое копье клана Нокхуд",	-- Nokhud Warspear
 	[378010] = "Забытое сокровище драконов",	-- Forgotten Dragon Treasure
@@ -3336,11 +3351,13 @@ for key,value in pairs({
 	[379321] = "Таинственный след лапы",	-- Mysterious Paw Print
 	[380429] = "Золотой коготь",	-- Golden Claw
 	[380430] = "Фрагмент хвоста",	-- Tail Fragment
-	[380518] = "Выбитый глаз дракона",	-- Dislodged Dragoneye
 	[380533] = "Занесенный снегом свиток",	-- Snow Covered Scroll
 	[380547] = "Насыщенное гнилью дубильное масло",	-- Decay-Infused Tanning Oil
+	--TODO: [380554] = "Well-Danced Drum",	-- Well-Danced Drum
 	[380587] = "Ящик с выделанными шкурами",	-- Crate of Treated Hides
 	[380602] = "Благословленная ветром шкура",	-- Wind-Blessed Hide
+	[380615] = "Сумка браконьера",	-- Poacher's Pack
+	[380618] = "Драконий плавень",	-- Draconic Flux
 	[380653] = "Воздушный змей Йенну",	-- Yennu's Kite
 	[380654] = "Бригантина мертвеца",	-- Dead Man's Chestplate
 	[380840] = "Порванная сумка наездника",	-- Torn Riding Pack
@@ -3362,6 +3379,7 @@ for key,value in pairs({
 	[381160] = "Затерянный компас",	-- Lost Compass
 	[381216] = "Увеличительное стекло геодезиста",	-- Surveyor's Magnifying Glass
 	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
+	[381277] = "Бочка с конфискованными лакомствами",	-- Barrel of Confiscated Treats
 	[381296] = "Кровища",	-- Horrible Mess
 	[381297] = "Пропавший багаж",	-- Misplaced Luggage
 	[381353] = "Каменный драконий зуб",	-- Stone Dragontooth
@@ -3379,6 +3397,7 @@ for key,value in pairs({
 	[381650] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Запись на игру в \"Клык, взмах, огонь\"",	-- Fang Flap Fire Signups
 	[381661] = "Просьба архивариуса",	-- Archivists' Request
+	[381663] = "\"Манаштормы для новичков\"",	-- Manastorming For Beginners
 	[381664] = "Просьба архивариуса",	-- Archivists' Request
 	[381667] = "Просьба архивариуса",	-- Archivists' Request
 	[381668] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated

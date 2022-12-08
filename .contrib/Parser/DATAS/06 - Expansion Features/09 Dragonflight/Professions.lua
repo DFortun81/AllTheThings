@@ -573,7 +573,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(391089),	-- Refine Herbs+++
 				},
 			}),
-			q(70360, {	-- Dragon Isles Herbalism
+			q(72243, {	-- Dragon Isles Herbalism
 				--["sourceQuests"] = { },	--
 				["provider"] = { "n", 192549 },	-- Feilin Kuan
 				["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },

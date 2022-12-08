@@ -90,6 +90,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73075,
 				["isDaily"] = true,
 				["g"] = {
+					i(200286),	-- Dragonbane Lance
 					i(200757),	-- Qalashi War-Helm
 				},
 			}),
@@ -307,7 +308,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193148, {	-- Thunderous Matriarch
 				["coord"] = { 45.4, 35.6, THE_WAKING_SHORES },
-				-- ["questID"] = 69841,
+				["questID"] = 73889,
 				["g"] = {
 					--[[ Rest is under shared Lv70 Elite Rare Drops
 					i(200186),	-- Amberquill Shroud
