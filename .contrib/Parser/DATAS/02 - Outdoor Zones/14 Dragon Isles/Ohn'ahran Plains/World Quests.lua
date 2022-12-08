@@ -37,6 +37,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(70079, {	-- Cataloging the Ohn'ahran Plains
 				["coord"] = { 52, 56.8, OHNAHRAN_PLAINS }
 			}),
+			q(70209, {
+				["coord"] = { 43.1, 34.8, OHNAHRAN_PLAINS },
+			}),
 			-- Pet Battle
 			petbattle(filter(BATTLE_PETS, {
 				q(71140, {	-- Two and Two Together
