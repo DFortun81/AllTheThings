@@ -757,7 +757,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200509),	-- Agitated Roused Seedling
 			i(200638),	-- Bubblefilled Flounder
 			i(200652),	-- Alchemical Flavor Pocket
-			i(200677),	-- Dreambloom Petal
 			i(200678),	-- Dreambloom
 			i(198656),	-- Painter's Pretty Jewel
 			i(201003),	-- Furry Gloop

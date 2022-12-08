@@ -593,13 +593,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			--[[q(66382, {	-- Weekly Herbalism Knowledgepoint #1
+			q(71858, {	-- Weekly Herbalism Knowledgepoint #1
 				["name"] = "Weekly Herbalism Knowledgepoint #1",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["provider"] = { "i", 200677 },		-- Dreambloom Petal
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
+			--[[
 			q(66382, {	-- Weekly Herbalism Knowledgepoint #2
 				["name"] = "Weekly Herbalism Knowledgepoint #2",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
