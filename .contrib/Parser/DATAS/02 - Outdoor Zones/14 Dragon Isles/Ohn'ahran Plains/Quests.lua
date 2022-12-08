@@ -1074,6 +1074,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(192799),	-- Lizi, Thunderspine Tramper (MOUNT!)
 				},
 			}),
+			q(72486, {	-- The Azure Span Advanced Tour
+				["sourceQuests"] = { 72484 },	-- The Ohn'ahran Plains Advanced Tour
+				["provider"] = { "n", 199118 },	-- Celormu
+				["coord"] = { 88, 36.2, OHNAHRAN_PLAINS },
+			}),
 			n(BONUS_OBJECTIVES, {
 				-- q(quest, {	-- npc
 				-- 	["provider"] = { "n", npcid },	-- npc
