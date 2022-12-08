@@ -868,7 +868,7 @@ for key,value in pairs({
 		[-1120] = "马鲁克半人马",											-- Maruuk Centaur
 		[-1121] = "艾拉格氏族",											-- Clan Aylaag
 		[-1122] = "洪荒狩猎",							                -- Grand Hunts
-    [-1123] = "北部", 							         		-- North
+  		[-1123] = "北部", 							         	-- North
 		[-1124] = "东部",						          			-- East
 		[-1125] = "南部",						           			-- South
 		[-1126] = "西部",							          		-- West
