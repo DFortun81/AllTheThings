@@ -87,7 +87,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			q(70887, {	-- Feeling Freedom
 				["description"] = "Requires Renown 9.",
 				["provider"] = { "n", 185561 },	-- Kaestrasz
-				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["coord"] = { 46.8, 78.8, VALDRAKKEN },
 				["g"] = {
 					i(196972),	-- Cliffside Wylderdrake: Plated Brow (DM!)
 					i(197003),	-- Cliffside Wylderdrake: Spiked Cheek (DM!)

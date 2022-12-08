@@ -7,7 +7,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(196172, {	-- Acorn Harvester
 				["description"] = "Bring nearby Acorn to Tree.",
 				["coord"] = { 49.4, 63.1, THALDRASZUS },
-				-- ["questID"] = ,
+				["questID"] = 70611,
 				["g"] = {
 					crit(6, {	-- Acorn Harvester
 						["achievementID"] = 16301,	-- Treasures of Thaldraszus
@@ -74,6 +74,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					crit(2, {	-- Sand Pile
 						["achievementID"] = 16301,	-- Treasures of Thaldraszus
 					}),
+				},
+			}),
+			n(198604, {	-- Strange Bear Cub
+				["coord"] = { 52.5, 83.6 , THALDRASZUS },
+				["questID"] = 72355,
+				["g"] = {
+					i(201463),	-- Cubbly
 				},
 			}),
 			o(381216, {	-- Surveyor's Magnifying Glass

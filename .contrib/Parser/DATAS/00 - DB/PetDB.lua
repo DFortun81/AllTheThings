@@ -1111,6 +1111,7 @@ pet(193066, 3275);	-- Chestnut
 pet(199326, 3376);	-- Chip
 pet(199758, 3379);	-- Crimson Proto-Whelp
 pet(191941, 3264);	-- Crystalline Mini-Monster
+pet(201463, 3415);	-- Cubbly
 pet(200173, 3287);	-- Ghostflame
 pet(198725, 3381);	-- Gray Marmoni
 pet(193618, 3317);	-- Hoofhelper
@@ -1286,7 +1287,6 @@ pet(0, 3409);	-- Tide Spirit
 pet(0, 3410);	-- Dust Spirit
 pet(0, 3411);	-- Blaze Spirit
 pet(0, 3412);	-- Gale Spirit
-pet(0, 3415);	-- Cubbly
 pet(0, 3416);	-- Troubled Tome
 pet(0, 3417);	-- Pinkie
 

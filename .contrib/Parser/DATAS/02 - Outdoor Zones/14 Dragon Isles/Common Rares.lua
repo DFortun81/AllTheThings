@@ -45,7 +45,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				194608,	-- Kholdeg
 				197009,	-- Liskheszaera
 				197353,	-- Blisterhide
-				-- The Hunt Mobs -- Ohnahran Plains
+				-- The Hunt Mobs -- Ohn'ahran Plains
 				191450,	-- Boolk
 				194409,	-- Ergburk
 				194608,	-- Kholdeg
@@ -56,13 +56,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- The Hunt Mobs -- Thaldraszus
 				193311,	-- Melkhop
 				195417,	-- Tsokorg
-				-- The Hunt Mobs -- The Azure
+				-- The Hunt Mobs -- The Azure Span
 				194761,	-- Khuumog
 				194763,	-- Tenmod
 				195132, -- Tevgai
 				194760,	-- Uurhilt
 				195101,	-- Yaankhi
 				195283,	-- Yamakh
+				-- The Hunt Mobs - The Waking Shores
+				194251,	-- Degmakh
+				194240,	-- Gamgus
+				194225,	-- Muugurv
 			},
 			["g"] = {
 				i(200186),	-- Amberquill Shroud

@@ -22,7 +22,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 		-- Obtainable?
 		i(196961),	-- Cliffside Wylderdrake: Armor
-		i(196991),	-- Cliffside Wylderdrake: Black Horns
+		i(196991),	-- Cliffside Wylderdrake: Black Horns (DM!)
 		i(196986),	-- Cliffside Wylderdrake: Black Mane
 		i(197013),	-- Cliffside Wylderdrake: Black Scales (DM!)
 		i(196987),	-- Cliffside Wylderdrake: Blonde Mane
@@ -219,7 +219,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197611),	-- Windborne Velocidrake: Black Scales (DM!)
 		i(197612),	-- Windborne Velocidrake: Blue Scales (DM!)
 		i(197613),	-- Windborne Velocidrake: Bronze Scales (DM!)
-		i(197624),	-- Windborne Velocidrake: Club Tail
+		i(197624),	-- Windborne Velocidrake: Club Tail (DM!)
 		i(197602),	-- Windborne Velocidrake: Cluster Horns (DM!)
 		i(197605),	-- Windborne Velocidrake: Curled Horns
 		i(197603),	-- Windborne Velocidrake: Curved Horns (DM!)
@@ -237,7 +237,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197577),	-- Windborne Velocidrake: Gold and Brown Armor
 		i(197580),	-- Windborne Velocidrake: Gold and Red Armor
 		i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
-		i(197608),	-- Windborne Velocidrake: Gray Horns
+		i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
 		i(197591),	-- Windborne Velocidrake: Hairy Head
 		i(197617),	-- Windborne Velocidrake: Heavy Scales
 		i(197600),	-- Windborne Velocidrake: Helm

@@ -77,13 +77,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				-- },
 			}),
-			n(194438, {	-- Khomuur
-				["coord"] = { 50.6, 50.0, OHNAHRAN_PLAINS },
-				["questID"] = 73921,
-				-- ["g"] = {
-
-				-- },
-			}),
 			n(197009, {	-- Liskheszaera
 				["coord"] = { 87.4, 61.4, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,

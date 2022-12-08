@@ -1007,6 +1007,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 55.6, 77.4, THALDRASZUS },
 					-- ["isDaily"] = true,
 				}),
+				q(69859, {	-- Sandana the Tempest
+					["provider"] = { "n", 193176 },	-- Sandana the Tempest
+					["coord"] = { 37.4, 77.9, THALDRASZUS },
+					["isDaily"] = true,
+				}),
 				-- q(, {	-- Lookout Mordren
 				-- 	["provider"] = { "n", 193668 },	-- Lookout Mordren
 				-- 	["coord"] = { 36.8, 85.6, THALDRASZUS },

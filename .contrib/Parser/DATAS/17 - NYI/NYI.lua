@@ -389,7 +389,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199668),	-- Spiked Emerald Spaulders
 			i(200154),	-- Rubyscale Band
 			i(200161),	-- Razorwind Talisman
-			i(200164),	-- Iceloop
 			i(200185),	-- Grips of the Everflowing Ocean
 			i(200189),	-- Hydroforged Shell Helm
 			i(200199),	-- Elements' Burden
@@ -428,7 +427,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200542),	-- Breezy Companion
 			i(200549),	-- Restored Titan Artifact
 			i(200679),	-- Essence of Somnikus's Shade
-			i(200682),	-- Hardened Scale Shoulderguards
 			i(200689),	-- Rimetalon Band
 			i(200708),	-- Polymorphic Cloak of Absorption
 			i(200710),	-- Ashjra'kamas
@@ -553,7 +551,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201262),	-- Gale Spirit
 			i(201265),	-- Tide Spirit
 			i(201441),	-- Scout
-			i(201463),	-- Cubbly
 			i(201703),	-- Pinkie
 			i(201707),	-- Troubled Tome
 			i(201838),	-- Snowclaw Cub
@@ -783,11 +780,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201359),	-- Glimmer of Earth
 			i(201360),	-- Glimmer of Order
 			i(201361),	-- Primal Inspiration
-			i(201705),	-- Notebook of Crafting Knowledge
 			i(201709),	-- Notebook of Crafting Knowledge
 			i(201712),	-- Notebook of Crafting Knowledge
-			i(201713),	-- Notebook of Crafting Knowledge
-			i(201714),	-- Notebook of Crafting Knowledge
 			i(201716),	-- Notebook of Crafting Knowledge
 			i(201717),	-- Notebook of Crafting Knowledge
 			i(201718),	-- Notebook of Crafting Knowledge
@@ -917,7 +911,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200311),	-- Bonespike Mallet
 			i(200437),	-- Dreamsong Censer
 			i(200439),	-- Earthpact Scepter
-			i(200684),	-- Emerald Tailbone
 			i(201231),	-- Bident of Hallucinations
 			i(201232),	-- Bonedust Spreader
 			i(201233),	-- Verdant Drakespine Glaive
@@ -996,7 +989,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(196986),	-- Cliffside Wylderdrake: Black Hair
 			i(196989),	-- Cliffside Wylderdrake: White Hair
 			i(196990),	-- Cliffside Wylderdrake: Helm
-			i(196991),	-- Cliffside Wylderdrake: Black Horns
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
 			i(196994),	-- Cliffside Wylderdrake: Short Horns
 			i(196995),	-- Cliffside Wylderdrake: Spiked Horns
@@ -1077,14 +1069,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197604),	-- Windborne Velocidrake: Ox Horns
 			i(197605),	-- Windborne Velocidrake: Curled Horns
 			i(197606),	-- Windborne Velocidrake: Swept Horns
-			i(197608),	-- Windborne Velocidrake: Gray Horns
 			i(197609),	-- Windborne Velocidrake: White Horns
 			i(197615),	-- Windborne Velocidrake: Teal Scales
 			i(197616),	-- Windborne Velocidrake: White Scales
 			i(197617),	-- Windborne Velocidrake: Heavy Scales
 			i(197619),	-- Windborne Velocidrake: Hooked Snout
 			i(197621),	-- Windborne Velocidrake: Exposed Finned Tail
-			i(197624),	-- Windborne Velocidrake: Club Tail
 			i(197626),	-- Windborne Velocidrake: Exposed Finned Neck
 			i(197628),	-- Windborne Velocidrake: Plated Neck
 			i(197629),	-- Windborne Velocidrake: Spiked Neck
@@ -2193,7 +2183,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200116),	-- Everlasting Horn of Lavaswimming (TOY!)
 			i(200636),	-- Primal Invocation Quintessence (TOY!)
 			i(201435),	-- Shuffling Sands (TOY!)
-			i(194885),	-- Ohuna Perch (TOY!)
 			i(201815),	-- Cloak of Many Faces (TOY!)
 			i(202042),	-- Aquatic Shades (TOY!)
 			i(200926),	-- Compendium of Love (TOY!)

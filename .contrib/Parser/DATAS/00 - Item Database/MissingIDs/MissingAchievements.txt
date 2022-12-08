@@ -2908,12 +2908,7 @@ ach(16533),	-- Lots of Lunkers \\ A Whole Lot of Lunkers
 ach(16536),	-- True Friends with Wrathion
 ach(16537),	-- Maximum Power!
 ach(16539),	-- In High Esteem
-ach(16540),	-- Hunt Master
-ach(16541),	-- Longhunter \\ <DNT>Complete X Hunt Steps
-ach(16542),	-- The Disgruntled Hunter
 ach(16543),	-- Tetrachromancer \\ <DNT>Collect all companion cosmetics
-ach(16544),	-- Grand Hunter \\ <DNT>Complete a hunt from start to finish
-ach(16545),	-- The Best at What I Do
 ach(16546),	-- What's Down There? \\ That's not a fish...
 ach(16547),	-- Pulled!
 ach(16548),	-- It Takes a Tuskarr Buddy \\ It takes a (Tuskarr) village.

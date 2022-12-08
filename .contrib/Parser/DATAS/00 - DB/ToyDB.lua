@@ -1095,6 +1095,7 @@ i(200160);	-- Notfar's Favorite Food
 i(200640);	-- Obsidian Egg Clutch
 i(200869);	-- Ohn Lite Branded Horn
 i(200630);	-- Ohn'ir Windsage's Hearthstone
+i(194885);	-- Ohuna Perch
 i(198409);	-- Personal Shell
 i(200198);	-- Primalist Prison
 i(191891);	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise
@@ -1135,7 +1136,6 @@ i(201435);	-- Swinging Sands
 i(201933);	-- Black Dragon's Challenge Dummy
 i(200926);	-- Compendium of Love
 i(202042);	-- Aquatic Shades
-i(194885);	-- Ohuna Perch
 i(201815);	-- Cloak of Many Faces
 
 

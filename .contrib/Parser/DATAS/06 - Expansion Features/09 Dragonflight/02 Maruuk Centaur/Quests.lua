@@ -124,6 +124,74 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
 			}),
+				-- RENOWN 13 --
+			q(71073, {	-- Mantle of Friendship
+				["description"] = "Requires Renown 13.",
+				["provider"] = { "n", 195547 },	-- Farrier Rondare
+				["coord"] = { 62.5, 42.5, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(200499),	-- Nokhud Battle Shoulderpads
+					i(200501),	-- Nokhud Reaver's Shoulderpads
+					i(200497),	-- Shikaar Hunter's Shoulderpads
+					i(200494),	-- Shikaar Scout's Shoulderpads
+					i(200493),	-- Ohn'ir Daylight Shoulderpads
+					i(200502),	-- Ohn'ir Midnight Shoulderpads
+				},
+			}),
+				-- RENOWN 14 --
+			q(71074, {	-- Befriending Wings and Wind
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(194885),	-- Ohuna Perch (TOY!)
+				},
+			}),
+			q(72296, {	-- A Gift of Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["requireSkill"] = LEATHERWORKING,
+				["g"] = {
+					i(201713),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72310, {	-- A Gift of Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["requireSkill"] = SKINNING,
+				["g"] = {
+					i(201714),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72311, {	-- A Gift of Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["requireSkill"] = ALCHEMY,
+				["g"] = {
+					i(201706),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72312, {	-- A Gift of Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["requireSkill"] = BLACKSMITHING,
+				["g"] = {
+					i(201708),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72313, {	-- A Gift of Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(201705),	-- Notebook of Crafting Knowledge
+				},
+			}),
 		}),
 	}),
 })));

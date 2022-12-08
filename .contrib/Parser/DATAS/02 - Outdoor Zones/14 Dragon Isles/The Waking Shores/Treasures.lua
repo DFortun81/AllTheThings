@@ -17,6 +17,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(195939, {	-- Bubble Drifter
+				["coord"] = { 40.6, 41.2, THE_WAKING_SHORES },
 				["description"] = "Use nearby Fragrant Plant to attract Bubble Drifter.",
  				["questID"] = 705999,
 				["cost"] = { { "i", 199061, 1 }, },	-- 1xA Guide to Rare Fish

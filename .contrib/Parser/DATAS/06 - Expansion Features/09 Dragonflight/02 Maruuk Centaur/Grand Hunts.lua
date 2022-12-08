@@ -4,11 +4,19 @@
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 --	n(MARUUK_CENTAUR, {	-- While its useful as Contributor, extending the tooltip length to include the faction is not nessessary
 		n(GRAND_HUNTS, {
+			n(ACHIEVEMENTS, {
+				ach(16544),	-- Grand Hunter
+				ach(16540),	-- Hunt Master
+				ach(16541),	-- Longhunter
+				ach(16545),	-- The Best at What I Do
+				ach(16542),	-- The Disgruntled Hunter
+			}),
 			m(OHNAHRAN_PLAINS, {	-- Should be finished
 				n(-1123, {	-- North
 					n(190907, {	-- Blitztusk	-- North Only
 						["coord"] = { 77.0, 20.6, OHNAHRAN_PLAINS },
 						["questID"] = 73908,
+						["isDaily"] = true,
 						["g"] = {
 							i(200296),	-- Mammoth Tusk Wraps
 						},
@@ -16,6 +24,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					n(191450, {	-- Boolk	-- North Only
 						["coord"] = { 86.9, 18.1, OHNAHRAN_PLAINS },
 						["questID"] = 73909,
+						["isDaily"] = true,
 						["g"] = {
 							-- is part of the DF>Global Rare Loottable
 						},
@@ -23,6 +32,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					n(190968, {	-- Norbett	-- North Only
 						["coord"] = { 83.1, 18.8, OHNAHRAN_PLAINS },
 						["questID"] = 73929,
+						["isDaily"] = true,
 						["g"] = {
 							-- is part of the DF>Global Rare Loottable
 						},
@@ -30,6 +40,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					n(190161, {	-- Sarana	-- North Only
 						["coord"] = { 85.4, 15.6, OHNAHRAN_PLAINS },
 						["questID"] = 73932,
+						["isDaily"] = true,
 						["g"] = {
 							i(200440),	-- Helm of Feline Instinct
 							-- is part of the DF>Global Rare Loottable
@@ -42,6 +53,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							{ 81.4, 21.4, OHNAHRAN_PLAINS },
 						},
 						["questID"] = 73943,
+						["isDaily"] = true,
 						["g"] = {
 							i(200246),	-- Lost Delving Lamp
 							-- is part of the DF>Global Rare Loottable
@@ -52,13 +64,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					n(194608, {	-- Kholdeg	-- East Only
 						["coord"] = { 79.7, 55.4, OHNAHRAN_PLAINS },
 						["questID"] = 73920,
+						["isDaily"] = true,
 						["g"] = {
 							-- is part of the DF>Global Rare Loottable
 						},
 					}),
-					n(194624, {	-- Zagdech	-- East Only
+					n(194601, {	-- Zagdech	-- East Only
 						["coord"] = { 76.7, 53.0, OHNAHRAN_PLAINS },
 						["questID"] = 73948,
+						["isDaily"] = true,
 						["g"] = {
 							-- is part of the DF>Global Rare Loottable
 						},
@@ -68,6 +82,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					n(194409, {	-- Ergburk	-- West Only
 						["coord"] = { 57.2, 47.7, OHNAHRAN_PLAINS },
 						["questID"] = 73914,
+						["isDaily"] = true,
+						["g"] = {
+							-- is part of the DF>Global Rare Loottable
+						},
+					}),
+					n(194438, {	-- Khomuur
+						["coord"] = { 50.6, 50.0, OHNAHRAN_PLAINS },
+						["questID"] = 73921,
+						["isDaily"] = true,
 						["g"] = {
 							-- is part of the DF>Global Rare Loottable
 						},
@@ -75,6 +98,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					n(194458, {	-- Rokzul -- West Only
 						["coord"] = { 56.2, 51.5, OHNAHRAN_PLAINS },
 						["questID"] = 73930,
+						["isDaily"] = true,
 						["g"] = {
 							i(200693),	-- Legguards of the Deep Strata
 							i(200246),	-- Lost Delving Lamp
@@ -84,6 +108,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					n(194624, {	-- Zumakh
 						["coord"] = { 72.5, 45.7, OHNAHRAN_PLAINS },
 						["questID"] = 73949,
+						["isDaily"] = true,
 						["g"] = {
 							-- is part of the DF>Global Rare Loottable
 						},
@@ -122,6 +147,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					n(193341, {	-- Angen
 						["coord"] = { 33.2, 72.4, THALDRASZUS },
 						["questID"] = 73906,
+						["isDaily"] = true,
 						["g"] = {
 							i(200128),	-- Zephyr's Razor
 						},
@@ -221,18 +247,112 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 			}),
+			m(THE_WAKING_SHORES, {
+				n(-1124, {	-- East
+					n(193896, {	-- Borzgas
+						["coord"] = { 69.2, 56.6, THE_WAKING_SHORES },
+						["questID"] = 73910,
+						["isDaily"] = true,
+						["g"] = {
+							i(197001),	-- Cliffside Wylderdrake: Finned Cheek (DM!)
+							i(197098),	-- Highland Drake: Finned Back (DM!)
+							i(200187),	-- Rod of Glacial Force
+							i(200552),	-- Torrent Caller's Shell
+						},
+					}),
+					n(193853, {	-- Galnmor
+						["coord"] = { 69.6, 64.8, THE_WAKING_SHORES },
+						["questID"] = 73915,
+						["isDaily"] = true,
+						["g"] = {
+							i(200252),	-- Molten Flak Cannon
+							i(200163),	-- Ring of Embers
+						},
+					}),
+				}),
+				n(-1123, {	-- North
+					n(194251, {	-- Degmakh
+						["coord"] = { 41.0, 84.6, THE_WAKING_SHORES },
+						["questID"] = 73911,
+						["isDaily"] = true,
+						["g"] = {
+							-- is part of the DF>Global Rare Loottable
+						},
+					}),
+					n(194240, {	-- Gamgus
+						["coord"] = { 37.6, 76.8, THE_WAKING_SHORES },
+						["questID"] = 73917,
+						["isDaily"] = true,
+						["g"] = {
+							-- is part of the DF>Global Rare Loottable
+						},
+					}),
+					n(194225, {	-- Muugurv
+						["coord"] = { 47.8, 77.0, THE_WAKING_SHORES },
+						["questID"] = 73927,
+						["isDaily"] = true,
+						["g"] = {
+							i(197098),	-- Highland Drake: Finned Back (DM!)
+							i(200164),	-- Iceloop
+							i(200187),	-- Rod of Glacial Force
+							i(200552),	-- Torrent Caller's Shell
+							-- is part of the DF>Global Rare Loottable
+						},
+					}),
+				}),
+				n(-1125, {	-- South
+					n(193704, {	-- Honmor
+						["coord"] = { 24.0, 96.6, THE_WAKING_SHORES },
+						["questID"] = 73918,
+						["isDaily"] = true,
+						["g"] = {
+							i(196991),	-- Cliffside Wylderdrake: Black Horns (DM!)
+							i(200684),	-- Emerald Tailbone
+							i(200246),	-- Lost Delving Lamp
+							i(197149),	-- Highland Drake: Club Tail (DM!)
+							i(197624),	-- Windborne Velocidrake: Club Tail (DM!)
+							i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
+						},
+					}),
+					n(193722, {	-- Tomnu
+						["coord"] = { 23.2, 89.4, THE_WAKING_SHORES },
+						["questID"] = 73940,
+						["isDaily"] = true,
+						["g"] = {
+							i(200682),	-- Hardened Scale Shoulderguards
+							i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
+						},
+					}),
+					n(193724, {	-- Uurtus
+						["coord"] = { 26.6, 88.6, THE_WAKING_SHORES },
+						["questID"] = 93945,
+						["isDaily"] = true,
+						["g"] = {
+							i(197001),	-- Cliffside Wylderdrake: Finned Cheek (DM!)
+							i(197098),	-- Highland Drake: Finned Back (DM!)
+							i(200164),	-- Iceloop
+							i(200187),	-- Rod of Glacial Force
+							i(200552),	-- Torrent Caller's Shell
+						},
+					}),
+				}),
+			}),
 			n(REWARDS, {
 				i(194085),	-- Proof of Might
 				i(194086),	-- Proof of Cunning
 				i(193205, {	-- Ohuna Companion Color: Brown
 					["questID"] = 71050,
 				}),
-				i(194087),	-- Ohuna Companion Color: Red
+				i(194087, {	-- Ohuna Companion Color: Red
+					["questID"] = 71051,
+				}),
 				i(194088),	-- Ohuna Companion Color: Dark
 				i(194089, {	-- Bakar Companion Color: Orange
 					["questID"] = 71046,
 				}),
-				i(194090),	-- Bakar Companion Color: White
+				i(194090, {	-- Bakar Companion Color: White
+					["questID"] = 71047,
+				}),
 				i(194091),	-- Bakar Companion Color: Golden Brown
 				i(194092),	-- Timbertooth Pelt
 				i(194093),	-- Bakar Companion Color: Brown
