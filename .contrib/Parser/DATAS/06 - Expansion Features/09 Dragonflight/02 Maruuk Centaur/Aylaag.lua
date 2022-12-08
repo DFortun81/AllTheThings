@@ -37,7 +37,31 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 70.5, 62.8, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
 				}),
-
+				-- I don't know what camp this is I'm sorry --
+				q(67605, {	-- Thundering Plains
+					--["sourceQuests"] = {  },
+					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
+					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },	-- Close to Maruuk?
+					["isDaily"] = true,
+				}),
+				q(71241, {	-- Duck, Duck, Trap
+					--["sourceQuests"] = {  },
+					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
+					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },	-- Close to Maruuk?
+					["isDaily"] = true,
+				}),
+				q(70210, {	-- Tradition Not Forgotten
+					--["sourceQuests"] = {	},
+					["provider"] = { "n", 185867 },	-- Barnak of the Reeds
+					["coord"] = { 55.8, 51.8, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+				}),
+				q(65798, {	-- An Opportunistic Approach
+					--["sourceQuests"] = {  },
+					["provider"] = { "n", 185853 },	-- Hadari Khan
+					["coord"] = { 55.8, 51.8, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+				}),
 				--[[
 				q(67039, {	-- An Amazing Journey
 					--["sourceQuests"] = {  },
@@ -64,19 +88,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 
 				-- Next Camp Sight
-				q(67605, {	-- Thundering Plains
-					--["sourceQuests"] = {  },
-					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
-					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },	-- Close to Maruuk?
-					["isDaily"] = true,
-				}),
 				q(70701, {	-- Bakar Dream of Lost Argali
-					--["sourceQuests"] = {  },
-					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
-					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },	-- Close to Maruuk?
-					["isDaily"] = true,
-				}),
-				q(71241, {	-- Duck, Duck, Trap
 					--["sourceQuests"] = {  },
 					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
 					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },	-- Close to Maruuk?
@@ -91,7 +103,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						i(198691),	-- Howling Heart
 					},
 				}),
-
 				--
 				q(66698, {	-- Counting Argali
 					--["sourceQuests"] = {  },
@@ -106,12 +117,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["isDaily"] = true,
 				}),
 				q(66711, {	-- Delicay in the Dark
-					--["sourceQuests"] = {  },
-					["provider"] = { "n", 185853 },	-- Hadari Khan
-					["coord"] = { 71.4, 31.0, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
-				}),
-				q(65798, {	-- An Opportunistic Approach
 					--["sourceQuests"] = {  },
 					["provider"] = { "n", 185853 },	-- Hadari Khan
 					["coord"] = { 71.4, 31.0, OHNAHRAN_PLAINS },
