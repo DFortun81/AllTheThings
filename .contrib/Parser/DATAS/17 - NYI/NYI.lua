@@ -890,7 +890,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200145),	-- Hilted Monolith
 			i(200147),	-- Web-Woven Robe
 			i(200151),	-- Seamist Blade
-			i(200167),	-- Regurgitated Stone Handaxe
 			i(200170),	-- Stormbringer Bow
 			i(200171),	-- Grymheart Blade
 			i(200155),	-- Haphazardly Welded Protector
