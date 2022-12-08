@@ -8880,6 +8880,11 @@ end
 local function GetParentAchievementInfo(t, key)
 	local achievement = app.SearchForObject("achievementID", t.achievementID);
 	if achievement then
+		-- sourced criteria of an un-sourced achievement... tsk tsk
+		if achievement.criteriaID then
+			DelayedCallback(app.report, 1, "Missing Referenced Achievement!",t.achievementID);
+			return;
+		end
 		rawset(t, "c", achievement["c"]);
 		rawset(t, "classID", achievement["classID"]);
 		rawset(t, "races", achievement["races"]);
