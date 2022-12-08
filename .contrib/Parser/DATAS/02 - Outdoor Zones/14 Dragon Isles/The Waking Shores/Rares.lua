@@ -115,7 +115,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193134, {	-- Enkine the Voracious
-				["coord"] = { 40.3, 64.9, THE_WAKING_SHORES },
+				["coords"] = { 
+					{ 40.3, 64.9, THE_WAKING_SHORES },	-- The Rare
+					{ 22.0, 64.9, THE_WAKING_SHORES },	-- Fishing Spot
+				},
+				["description"] = "Can only be summoned by fishing with the Lava Spices buff active at 22 65 in the Waking Shores. Lava Spices can be obtained by killing Restless Lava, Lavaslurpers and Basalt Shells along the lava river leading to the rare.",
 				["questID"] = 74010,
 				["isDaily"] = true,
 				["g"] = {
