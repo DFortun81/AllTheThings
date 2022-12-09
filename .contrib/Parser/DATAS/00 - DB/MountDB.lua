@@ -1619,6 +1619,7 @@ i(194722, 377849);	-- Carrier Yeti
 
 
 -- SOURCED
+i(191114, 369476);	-- Amalgam of Rage
 i(199412, 387231);	-- Hailstorm Armoredon
 i(201789, 394737);	-- Vicious Sabertooth [A]
 i(201788, 394738);	-- Vicious Sabertooth [H]

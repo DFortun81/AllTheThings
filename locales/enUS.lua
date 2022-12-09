@@ -1809,6 +1809,7 @@ app.L = {
 		[-582] = "WotLK Classic Northrend Heroic Upgrade",						-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
 		[-583] = "WotLK Classic Northrend Epic Upgrade",						-- WotLK Classic Northrend Epic Upgrade
 		[-584] = "Dragonflight Seasonal Promotions",							-- Dragonflight Seasonal Promotions
+		[-585] = "Diablo IV",													-- Diablo IV
 	-- PvP Header
 		-- Special Season Tags
 		--[-650] = "Rated Battleground",										-- Listed under Cata PvP Seasons
