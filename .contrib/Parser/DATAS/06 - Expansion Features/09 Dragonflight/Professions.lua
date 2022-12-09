@@ -567,6 +567,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 		}),
 		prof(HERBALISM, {
+			i(200678),	-- Dreambloom
+			i(200677),	-- Dreambloom Petal
+			i(200506),	-- Roused Seedling
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -594,34 +597,40 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires a crafting order from inscription.",
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(71858, {	-- Repeatable Herbalism Knowledgepoint #1
-				["name"] = "Repeatable Herbalism Knowledgepoint #1",
+			q(71858, {	-- Weekly Herbalism Knowledgepoint #1
+				["name"] = "Weekly Herbalism Knowledgepoint #1",
 				["provider"] = { "i", 200677 },		-- Dreambloom Petal
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(71859, {	-- Repeatable Herbalism Knowledgepoint #2
-				["name"] = "Repeatable Herbalism Knowledgepoint #2",
+			q(71859, {	-- Weekly Herbalism Knowledgepoint #2
+				["name"] = "Weekly Herbalism Knowledgepoint #2",
 				["provider"] = { "i", 200677 },		-- Dreambloom Petal
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(71860, {	-- Repeatable Herbalism Knowledgepoint #3
-				["name"] = "Repeatable Herbalism Knowledgepoint #3",
+			q(71860, {	-- Weekly Herbalism Knowledgepoint #3
+				["name"] = "Weekly Herbalism Knowledgepoint #3",
 				["provider"] = { "i", 200677 },		-- Dreambloom Petal
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(71861, {	-- Repeatable Herbalism Knowledgepoint #4
-				["name"] = "Repeatable Herbalism Knowledgepoint #4",
+			q(71861, {	-- Weekly Herbalism Knowledgepoint #4
+				["name"] = "Weekly Herbalism Knowledgepoint #4",
 				["provider"] = { "i", 200677 },		-- Dreambloom Petal
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
+			q(71864, {	-- Weekly Herbalism Knowledgepoint #4
+				["name"] = "Weekly Herbalism Knowledgepoint #4",
+				["provider"] = { "i", 200678 },		-- Dreambloom
+				["timeline"] = { ADDED_DF_REL },
+				["repeatable"] = true,
+			}),	
 		}),
 		prof(INSCRIPTION, {
 			filter(RECIPES, {
