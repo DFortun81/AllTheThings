@@ -208,6 +208,116 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
 			}),
+				-- RENOWN 17	--
+			q(71079, {	-- Getting to the Point
+				["description"] = "Requires Renown 17.",
+				["provider"] = { "n", 195529 },	-- Weaponmaster Aloom
+				["coord"] = { 62.4, 42.3, OHNAHRAN_PLAINS },
+			}),
+				-- RENOWN 19 --
+			q(71083, {	-- Understanding Their Grace
+				["description"] = "Requires Renown 19.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(197011),	-- Cliffside Wylderdrake: Green Scales (DM!)
+					i(197143),	-- Highland Drake: Green Scales (DM!)
+				},
+			}),
+				-- RENOWN 20 --
+			q(71031, {	-- Hunting Tactics: Proof of Prowess
+				["description"] = "Requires Renown 20.",
+				["provider"] = { "n", 192926 },	-- Trainer Frodrum
+				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
+			}),
+				-- RENOWN 21	--
+			q(71085, {	-- Representation Matters
+				["description"] = "Requires Renown 21.",
+				["provider"] = { "n", 195547 },	-- Farrier Rondare
+				["coord"] = { 62.5, 42.5, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(200546),	-- Clan Nokhud Pennant
+					i(200547),	-- Clan Ohn'ir Pennant
+					i(200545),	-- Clan Shikaar Pennant
+					i(200543),	-- Clan Teerai Pennant
+				},
+			}),
+				-- RENOWN 22 --
+			q(71032, {	-- Hunting Tactics: Apex Hunter
+				["description"] = "Requires Renown 22.",
+				["provider"] = { "n", 192926 },	-- Trainer Frodrum
+				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
+			}),
+				-- RENOWN 23 --
+			q(71089, {	-- Get on the Horn
+				["description"] = "Requires Renown 23.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(194099),	-- Shikaar Hunting Horn
+				},
+			}),
+				-- RENOWN 24 --
+			q(71090, {	-- From the Heart, For the Heart
+				["description"] = "Requires Renown 24.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+			}),
+			q(72297, {	-- A Gift of Secrets
+				["description"] = "Requires Renown 24.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["requireSkill"] = LEATHERWORKING,
+				["g"] = {
+					i(201713),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72314, {	-- A Gift of Secrets
+				["description"] = "Requires Renown 24.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["requireSkill"] = ALCHEMY,
+				["g"] = {
+					i(201706),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72315, {	-- A Gift of Secrets
+				["description"] = "Requires Renown 24.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["requireSkill"] = BLACKSMITHING,
+				["g"] = {
+					i(201708),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72316, {	-- A Gift of Secrets
+				["description"] = "Requires Renown 24.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(201717),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72317, {	-- A Gift of Secrets
+				["description"] = "Requires Renown 24.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["requireSkill"] = SKINNING,
+				["g"] = {
+					i(201718),	-- Notebook of Crafting Knowledge
+				},
+			}),
+				-- RENOWN 25 --
+			q(71091, {	-- The Highest Honor
+				["description"] = "Requires Renown 25.",
+				["provider"] = { "n", 181198 },	-- Khanam Matra Sarest
+				["coord"] = { 60.0, 37.5, OHNAHRAN_PLAINS },
+				["g"] = {
+					title(473),	-- Khansguard
+					i(197921),	-- Primal Infusion
+				},
+			}),
 		}),
 	}),
 })));

@@ -58,6 +58,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				195417,	-- Tsokorg
 				-- The Hunt Mobs -- The Azure Span
 				194761,	-- Khuumog
+				195093,	-- Moskhoi
 				194763,	-- Tenmod
 				195132, -- Tevgai
 				194760,	-- Uurhilt

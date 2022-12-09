@@ -349,7 +349,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				crit(4, {	-- Berrel
 					["crs"] = { 195669 },	-- Berrel
-					["coord"] = { 62.0, 42.8, OHNAHRAN_PLAINS },
+					["coord"] = { 60.6, 39.9, OHNAHRAN_PLAINS },
 				}),
 				crit(5, {	-- Elaichi
 					["crs"] = { 187840 },	-- Elaichi

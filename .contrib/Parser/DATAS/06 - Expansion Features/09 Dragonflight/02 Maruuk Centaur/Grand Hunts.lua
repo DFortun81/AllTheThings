@@ -173,6 +173,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			m(THE_AZURE_SPAN, {
 				n(-1124, {	-- East
+					n(195093, {	-- Moskhoi
+						["coord"] = { 67.6, 27.8, THE_AZURE_SPAN },
+						["questID"] = 73926,
+						["isDaily"] = true,
+						["g"] = {
+							-- is part of the DF>Global Rare Loottable
+						},
+					}),
 					n(195132, {	-- Tevgai
 						["coord"] = { 72.8, 27.2, THE_AZURE_SPAN },
 						["questID"] = 73939,
@@ -202,8 +210,33 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 						},
 					}),
+					n(195286, {	-- Mantai
+						["coord"] = { 67.4, 55.5, THE_AZURE_SPAN },
+						["questID"] = 73923,
+						["isDaily"] = true,
+						["g"] = {
+							-- is part of the DF>Global Rare Loottable
+						},
+					}),
+					n(195283, {	-- Yamakh
+						["description"] = "Behind Rock Wall.",
+						["questID"] = 73947,
+						["isDaily"] = true,
+						["coord"] = { 66.1, 51.2, THE_AZURE_SPAN },
+						["g"] = {
+							-- is part of the DF>Global Rare Loottable
+						},
+					}),
 				}),
 				n(-1126, {	-- West
+					n(194761, {	-- Khuumog
+						["coord"] = { 38.7, 43.5, THE_AZURE_SPAN },
+						["questID"] = 73922,
+						["isDaily"] = true,
+						["g"] = {
+							-- is part of the DF>Global Rare Loottable
+						},
+					}),
 					n(194763, {	-- Tenmod
 						["coord"] = { 33.2, 40.3, THE_AZURE_SPAN },
 						["questID"] = 73938,
@@ -221,31 +254,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							-- is part of the DF>Global Rare Loottable
 						},
 					}),
-				}),
-				n(194761, {	-- Khuumog
-					["coord"] = { 38.7, 43.5, THE_AZURE_SPAN },
-					["questID"] = 73922,
-					["isDaily"] = true,
-					["g"] = {
-						-- is part of the DF>Global Rare Loottable
-					},
-				}),
-				n(195286, {	-- Mantai
-					["coord"] = { 67.4, 55.5, THE_AZURE_SPAN },
-					["questID"] = 73923,
-					["isDaily"] = true,
-					["g"] = {
-						-- is part of the DF>Global Rare Loottable
-					},
-				}),
-				n(195283, {	-- Yamakh
-					["description"] = "Behind Rock Wall.",
-					["questID"] = 73947,
-					["isDaily"] = true,
-					["coord"] = { 66.1, 51.2, THE_AZURE_SPAN },
-					["g"] = {
-						-- is part of the DF>Global Rare Loottable
-					},
 				}),
 			}),
 			m(THE_WAKING_SHORES, {
@@ -334,7 +342,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 					n(193724, {	-- Uurtus
 						["coord"] = { 26.6, 88.6, THE_WAKING_SHORES },
-						["questID"] = 93945,
+						["questID"] = 73945,
 						["isDaily"] = true,
 						["g"] = {
 							i(197001),	-- Cliffside Wylderdrake: Finned Cheek (DM!)

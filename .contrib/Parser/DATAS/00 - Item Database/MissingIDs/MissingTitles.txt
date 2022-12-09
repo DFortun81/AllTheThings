@@ -33,7 +33,6 @@ title(469),	-- %s, the Worldbreaker \\ %s, The Worldbreaker \\ %s, Close and Per
 title(470),	-- %s the Thundering Hero \\ %s, the [PH] Hero
 title(472),	-- Birdwatcher %s
 10.0.0.45454
-title(473),	-- Khansguard %s
 title(474),	-- %s, Ally of Dragons
 title(475),	-- Intrepid Explorer %s
 title(476),	-- %s of Iskaara

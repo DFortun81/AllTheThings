@@ -987,9 +987,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(BONUS_OBJECTIVES, {
+				-- DAILY BONUS OBJECTIVES FOR RARES
+				qNYI(72114, {	-- Acrosoth
+					["provider"] = { "n", 193243 },	-- Acrosoth
+					["coord"] = { 39.0, 78.0, THALDRASZUS },
+					["isDaily"] = true,
+				}),
 				q(69963, {	-- Ancient Protector
 					["provider"] = { "n", 193664 },	-- Ancient Protector
-					["coord"] = { 59.0, 58.8, THALDRASZUS },
+					["coord"] = { 59.0, 58.6, THALDRASZUS },
+					["isDaily"] = true,
+				}),
+				q(69868, {	-- Broodweaver Araznae
+					["provider"] = { "n", 193220 },	-- Broodweaver Araznae
+					["coord"] = { 59.6, 70.1, THALDRASZUS },
 					["isDaily"] = true,
 				}),
 				q(69962, {	-- Corrupted Proto-Dragon
@@ -1002,27 +1013,91 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 45.4, 85.2, THALDRASZUS },
 					["isDaily"] = true,
 				}),
+				qNYI(69875, {	-- Eldoren the Reborn
+					["provider"] = { "n", 193234 },	-- Eldoren the Reborn
+					["coord"] = { 49.0, 51.0, THALDRASZUS },
+					["isDaily"] = true,
+				}),
 				q(69873, {	-- Henlare
 					["provider"] = { "n", 193229 },	-- Henlare
 					["coord"] = { 55.6, 77.4, THALDRASZUS },
-					-- ["isDaily"] = true,
+					["isDaily"] = true,
+				}),
+				qNYI(72116, {	-- Liskron the Dazzling
+					["provider"] = { "n", 193273 },	-- Liskron the Dazzling
+					["coord"] = { 36.4, 72.8, THALDRASZUS },
+					["isDaily"] = true,
+				}),
+				qNYI(69882, {	-- Lord Epochbrgl
+					["provider"] = { "n", 193241 },	-- Lord Epochbrgl
+					["coord"] = { 62.2, 81.8, THALDRASZUS },
+					["isDaily"] = true,
+				}),
+				qNYI(69883, {	-- Matriarch Remalla
+					["provider"] = { "n", 193246 },	-- Matriarch Remalla
+					["coord"] = { 52.8, 59.2, THALDRASZUS },
+					["isDaily"] = true,
+				}),
+				qNYI(69976, {	-- Phenran
+					["provider"] = { "n", 193688 },	-- Phenran
+					["coord"] = { 59.8, 61.0, THALDRASZUS },
+					["isDaily"] = true,
+				}),
+				qNYI(69866, {	-- Phleep
+					["provider"] = { "n", 193210 },	-- Phleep
+					["coord"] = { 57.2, 84.2, THALDRASZUS },
+					["isDaily"] = true,
+				}),
+				qNYI(69880, {	-- Riverwalker Tamopo
+					["provider"] = { "n", 193240 },	-- Riverwalker Tamopo
+					["coord"] = { 39.8, 70.0, THALDRASZUS },
+					["isDaily"] = true,
+				}),
+				qNYI(72806, {	-- Pleasant Alpha
+					["provider"] = { "n", 193130 },	-- Pleasant Alpha
+					["coord"] = { 37.8, 79.2, THALDRASZUS },
+					["isDaily"] = true,
+				}),
+				qNYI(69966, {	-- Rokmur
+					["provider"] = { "n", 193666 },	-- Rokmur
+					["coord"] = { 49.8, 51.4, THALDRASZUS },
+					["isDaily"] = true,
 				}),
 				q(69859, {	-- Sandana the Tempest
 					["provider"] = { "n", 193176 },	-- Sandana the Tempest
-					["coord"] = { 37.4, 77.9, THALDRASZUS },
+					["coord"] = { 37.6, 77.8, THALDRASZUS },
 					["isDaily"] = true,
 				}),
-				q(69868, {	-- Broodweaver Araznae
-					["provider"] = { "n", 193220 },	-- Broodweaver Araznae
-					["coord"] = { 59.6, 70.1, THALDRASZUS },
-					--["isDaily"] = true,
-					-- TODO: unsure if the rares that had bonus objectives are repeatable
+				qNYI(69886, {	-- Tempestrian
+					["provider"] = { "n", 193258 },	-- Tempestrian
+					["coord"] = { 49.2, 79.8, THALDRASZUS },
+					["isDaily"] = true,
 				}),
-				-- q(, {	-- Lookout Mordren
-				-- 	["provider"] = { "n", 193668 },	-- Lookout Mordren
-				-- 	["coord"] = { 36.8, 85.6, THALDRASZUS },
-				-- 	-- ["isDaily"] = true,
-				-- }),
+				qNYI(72121, {	-- The Great Shellkhan
+					["provider"] = { "n", 191305 },	-- The Great Shellkhan
+					["coord"] = { 38.4, 68.2, THALDRASZUS },
+					["isDaily"] = true,
+				}),
+				qNYI(70947, {	-- Treasure-Mad Trambladd
+					["provider"] = { "n", 193146 },	-- Treasure-Mad Trambladd
+					["coord"] = { 35.0, 69.8, THALDRASZUS },
+					["isDaily"] = true,
+				}),
+				qNYI(69850, {	-- Woolfang
+					["provider"] = { "n", 193161 },	-- Woolfang
+					["coord"] = { 47.8, 49.8, THALDRASZUS },
+					["isDaily"] = true,
+				}),
+
+				-- NO BONUS OBJECTIVE?
+				-- Blightpaw the Depraved
+				-- Enraged Sprout
+				-- Goremaul the Gluttonous
+				-- Innumerable Ruination
+				-- Private Shikzar
+				-- Razk'vex the Untamed
+				-- The Weeping Vilomah
+
 			}),
 			n(SPECIAL, {
 				q(70377, {	-- Derelict Fashion
