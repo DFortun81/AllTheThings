@@ -146,5 +146,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
 		q(70793),	-- Triggeres after crafting Iskaaran Fishing Net during Iskaaran Fishing Net (questID 70871)
 		q(72391),	-- Triggered with 'Ice Fishing' (70944)
+		q(67141),	-- Triggered after crafting Iskaaran Ice Axe after Ice Fishing (renown 10)
 	}),
 }));
