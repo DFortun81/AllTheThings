@@ -54,11 +54,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193234, {	-- Eldoren the Reborn <Jewel of the Skies>
-				-- ["coord"] = { X, Y, THALDRASZUS },
-				-- ["questID"] = 69875,
-				-- ["g"] = {
-
-				-- },
+				["coord"] = { 49.0, 51.0, THALDRASZUS },
+				["questID"] = 73990,
+				["g"] = {
+					i(200284),	-- Phoenix Feather Pendant
+				},
 			}),
 			n(193125, {	-- Goremaul the Gluttonous
 				["coord"] = { 53.4, 41.0, THALDRASZUS },
@@ -217,11 +217,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(183984, {	-- The Weeping Vilomah
-				-- ["coord"] = { X, Y, THALDRASZUS },
-				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
+				["coord"] = { 49.6, 72.8, THALDRASZUS },
+				["questID"] = 74086,
+				["g"] = {
+					i(200214),	-- Grasp of the Weeping Widow
+				},
 			}),
 			n(193258, {	-- Tempestrian <Stormbringer>
 				-- ["coord"] = { X, Y, THALDRASZUS },

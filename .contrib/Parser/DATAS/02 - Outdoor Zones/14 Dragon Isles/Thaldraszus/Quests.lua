@@ -988,7 +988,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(BONUS_OBJECTIVES, {
 				-- DAILY BONUS OBJECTIVES FOR RARES
-				qNYI(72114, {	-- Acrosoth
+				q(72114, {	-- Acrosoth
 					["provider"] = { "n", 193243 },	-- Acrosoth
 					["coord"] = { 39.0, 78.0, THALDRASZUS },
 					["isDaily"] = true,
@@ -1013,7 +1013,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 45.4, 85.2, THALDRASZUS },
 					["isDaily"] = true,
 				}),
-				qNYI(69875, {	-- Eldoren the Reborn
+				q(69875, {	-- Eldoren the Reborn
 					["provider"] = { "n", 193234 },	-- Eldoren the Reborn
 					["coord"] = { 49.0, 51.0, THALDRASZUS },
 					["isDaily"] = true,
@@ -1023,7 +1023,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 55.6, 77.4, THALDRASZUS },
 					["isDaily"] = true,
 				}),
-				qNYI(72116, {	-- Liskron the Dazzling
+				q(72116, {	-- Liskron the Dazzling
 					["provider"] = { "n", 193273 },	-- Liskron the Dazzling
 					["coord"] = { 36.4, 72.8, THALDRASZUS },
 					["isDaily"] = true,
@@ -1078,12 +1078,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 38.4, 68.2, THALDRASZUS },
 					["isDaily"] = true,
 				}),
-				qNYI(70947, {	-- Treasure-Mad Trambladd
+				q(70947, {	-- Treasure-Mad Trambladd
 					["provider"] = { "n", 193146 },	-- Treasure-Mad Trambladd
 					["coord"] = { 35.0, 69.8, THALDRASZUS },
 					["isDaily"] = true,
 				}),
-				qNYI(69850, {	-- Woolfang
+				q(69850, {	-- Woolfang
 					["provider"] = { "n", 193161 },	-- Woolfang
 					["coord"] = { 47.8, 49.8, THALDRASZUS },
 					["isDaily"] = true,

@@ -395,7 +395,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200202),	-- Tomorrow's Chains
 			i(200203),	-- Repurposed Giant's Thimble
 			i(200204),	-- Sandshine Chestplate
-			i(200214),	-- Grasp of the Weeping Widow
 			i(200215),	-- Plumed Shoulderguards of the Hunt
 			i(200216),	-- Water Heating Cord
 			i(200228),	-- Protoscale Pauldrons
@@ -406,7 +405,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200261),	-- White Chitin Bandages
 			i(200279),	-- Competitive Throwing Gauntlets
 			i(200280),	-- Decaying Ghostly Band
-			i(200284),	-- Phoenix Feather Pendant
 			i(200291),	-- Waterlogged Racing Grips
 			i(200292),	-- Cragforge Pauldrons
 			i(200294),	-- Primal Chain Hauberk
