@@ -1113,6 +1113,7 @@ i(200857);	-- Talisman of Sargha
 i(200999);	-- The Super Shellkhan Gang
 i(193478);	-- Tuskarr Bean Bag
 i(198428);	-- Tuskarr Dinghy
+i(199830);	-- Tuskarr Training Dummy
 i(199892);	-- Tuskarr Traveling Soup Pot
 i(202022);	-- Yennu's Kite
 i(200550);	-- Very Comfortable Pelt

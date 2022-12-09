@@ -6,7 +6,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		n(QUESTS, {
 			q(72435, {	-- Orientation: Iskaara
 				["provider"] = { "n", 193006 },	-- Murik
-				["coord"] = { 13.1, 49.2, THE_AZURE_SPAN },
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 			}),
 				-- RENOWN 1 --
 			q(70936, {	-- Stolen Tuskaar Totems
@@ -91,6 +91,107 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(193225),	-- Whiskuk (PET!)
 				},
 			}),
+				-- RENOWN 11 --
+			q(68863, {	-- A Lost Tribe
+				["description"] = "Requires Renown 11. Spawns Anywhere on Dragon Isles.",
+				["provider"] = { "n", 197631 },	-- Rowie
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+			}),
+			q(68640, {	-- Sudden Isolation
+				["description"] = "Requires Renown 11.",
+				["sourceQuests"] = { 68863 },	-- A Lost Tribe
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+			}),
+			q(66409, {	-- Pressing Matters
+				["description"] = "Requires Renown 11.",
+				["sourceQuests"] = { 68840 },	-- Sudden Isolation
+				["provider"] = { "n", 188301 },	-- Guard Hakota
+				["coord"] = { 55.1, 38.3, THE_WAKING_SHORES },
+			}),
+			q(66410, {	-- Worst Impressions
+				["description"] = "Requires Renown 11.",
+				["sourceQuests"] = { 66409 },	-- Pressing Matters
+				["provider"] = { "n", 188301 },	-- Guard Hakota
+				["coord"] = { 55.1, 38.3, THE_WAKING_SHORES },
+			}),
+			q(66411, {	-- Troubled Waters
+				["description"] = "Requires Renown 11.",
+				["sourceQuests"] = { 66410 },	-- Worst Impressions
+				["provider"] = { "n", 188283 },	-- Elder Unujaak
+				["coord"] = { 53.7, 37.9, THE_WAKING_SHORES },
+			}),
+			q(66417, {	-- Salvaging Supplies
+				["description"] = "Requires Renown 11.",
+				["sourceQuests"] = { 66410 },	-- Worst Impressions
+				["provider"] = { "n", 188285 },	-- Crafter Kuliqa
+				["coord"] = { 53.6, 38.0, THE_WAKING_SHORES },
+			}),
+			q(66413, {	-- Encroaching Heat
+				["description"] = "Requires Renown 11.",
+				["sourceQuests"] = { 66410 },	-- Worst Impressions
+				["provider"] = { "o", 384405 },	-- Half-Boiled Fish
+				["coord"] = { 53.1, 35.3, THE_WAKING_SHORES },
+				["g"] = {
+					i(201787),	-- Recipe: Filet of Fangs
+					i(201786),	-- Recipe: Salt-Baked Fishcake
+					i(201785),	-- Recipe: Seamoth Surprise
+					i(201784),	-- Recipe: Timely Demise
+				}
+			}),
+			q(66418, {	-- Testing the Tuskaprsenal
+				["description"] = "Requires Renown 11.",
+				["sourceQuests"] = { 
+					66411,	-- Troubled Waters
+					66417,	-- Salvaging Supplies
+				},
+				["provider"] = { "n", 188285 },	-- Crafter Kuliqa
+				["coord"] = { 54.3, 38.7, THE_WAKING_SHORES },
+				["g"] = {
+					i(199830),	-- Tuskarr Training Dummy (TOY!)
+				}
+			}),
+			q(66414, {	-- All But One
+				["description"] = "Requires Renown 11.",
+				["sourceQuests"] = { 66418 },	-- Testing the Tuskaprsenal
+				["provider"] = { "n", 187323 },	-- Tutaqan
+				["coord"] = { 53.7, 38.0, THE_WAKING_SHORES },
+			}),
+			q(66440, {	-- Closure
+				["description"] = "Requires Renown 11.",
+				["sourceQuests"] = { 66414 },	-- All But One
+				["provider"] = { "n", 188283 },	-- Elder Unujaak
+				["coord"] = { 55.0, 36.5, THE_WAKING_SHORES },
+			}),
+			q(66431, {	-- In Mourning
+				["description"] = "Requires Renown 11.",
+				["sourceQuests"] = { 66440 },	-- Closure
+				["provider"] = { "n", 188283 },	-- Elder Unujaak
+				["coord"] = { 53.6, 39.3, THE_WAKING_SHORES },
+			}),
+			q(66415, {	-- The Only Way Past Is Through
+				["description"] = "Requires Renown 11.",
+				["sourceQuests"] = { 66431 },	-- In Mourning
+				["provider"] = { "n", 187323 },	-- Tutaqan
+				["coord"] = { 53.9, 41.3, THE_WAKING_SHORES },
+			}),
+			q(66443, {	-- Calling the Hunting Party
+				["description"] = "Requires Renown 11. Automatically given after the previous quest.",
+				["sourceQuests"] = { 66415 },	-- The Only Way Past Is Through
+				["coord"] = { 53.9, 41.3, THE_WAKING_SHORES },
+			}),
+			q(66444, {	-- While the Iron Is Hot
+				["description"] = "Requires Renown 11.",
+				["sourceQuests"] = { 66443 },	-- Calling the Hunting Party
+				["provider"] = { "n", 187323 },	-- Tutaqan
+				["coord"] = { 53.9, 38.1, THE_WAKING_SHORES },
+				["g"] = {
+					i(201783),	-- Tutaqan's Commendation
+					crit(4, {	-- The Chieftain's Duty
+						["achievementID"] = 16808,	-- Friends of the Dragon Isles
+					}),
+				}
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
@@ -106,5 +207,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72781),	-- Triggered with 'Tuskarr Fishing Gear' (71230)
 		q(72388),	-- Triggered with 'Mounting Curiosity' (70954)
 		q(72390),	-- Triggered with 'Cute and Cuddly' (70959)
+		q(71184),	-- Triggered with 'While the Iron Is Hot' (66444)
+		q(72753),	-- Triggered with 'While the Iron Is Hot' (66444)
 	}),
 }));

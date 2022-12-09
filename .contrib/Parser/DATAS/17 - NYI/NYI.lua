@@ -659,7 +659,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198823),	-- [PH] Brown Wind Eagle
 			i(198824),	-- [PH] Dark Wind Eagle
 			i(198870),	-- Otto
-			i(201454),	-- Temperamental Skyclaw
 			i(201440),	-- Reins of the Liberated Slyvern
 			i(201883),	-- Empty Magma Shell
 		}),
@@ -1766,11 +1765,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(194690),	-- Horn o' Mead
 		-- Special Reward
 		i(202047),	-- Gleaming Incarnate Thunderstone
-		-- NEW RECIPES / IDS?
-		i(201784),	-- Recipe: Timely Demise
-		i(201785),	-- Recipe: Seamoth Surprise
-		i(201786),	-- Recipe: Salt-Baked Fishcake
-		i(201787),	-- Recipe: Filet of Fangs
 		n(PROFESSIONS, {
 			prof(ALCHEMY, {
 				r(371635),	-- Demonstration Item Recipe

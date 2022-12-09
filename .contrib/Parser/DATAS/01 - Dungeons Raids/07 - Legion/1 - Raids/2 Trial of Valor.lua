@@ -624,8 +624,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(45232),	-- Tracking Quest - Ensemble: Chains of the Chosen Dead (Mythic)
 		q(45233),	-- Tracking Quest - Ensemble: Chains of the Chosen Dead (LFR)
 		q(45234),	-- Tracking Quest - Ensemble: Funerary Plate of the Chosen Dead (Normal)
-		q(45235),	-- Tracking Quest - Ensemble:  Funerary Plate of the Chosen Dead (Heroic)
-		q(45236),	-- Tracking Quest - Ensemble:  Funerary Plate of the Chosen Dead (Mythic)
-		q(45237),	-- Tracking Quest - Ensemble:  Funerary Plate of the Chosen Dead (LFR)
+		q(45235),	-- Tracking Quest - Ensemble: Funerary Plate of the Chosen Dead (Heroic)
+		q(45236),	-- Tracking Quest - Ensemble: Funerary Plate of the Chosen Dead (Mythic)
+		q(45237),	-- Tracking Quest - Ensemble: Funerary Plate of the Chosen Dead (LFR)
 	}),
 });
