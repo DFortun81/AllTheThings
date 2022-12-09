@@ -6,6 +6,7 @@ local IRIDESCENT_PLUME = 201401;
 local OCASSIONAL_SAND = 194562;
 local SEREVITE_ORE = 190396;
 local TUFT_OF_PRIMAL_WOOL = 201405;
+local RESILIENT_LEATHER = 193210;
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(MARUUK_CENTAUR, {
 		n(VENDORS, {
@@ -98,24 +99,98 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 						-- RENOWN 13 --
-					-- TODO: COSTS!
-					i(200499),	-- Nokhud Battle Shoulderpads
-					i(200500),	-- Nokhud Champion's Shoulderpads
-					i(200501),	-- Nokhud Reaver's Shoulderpads
-					i(200495),	-- Nokhud Warlord's Shoulderpads
-					i(200498),	-- Shikaar Harrier's Shoulderpads
-					i(200497),	-- Shikaar Hunter's Shoulderpads
-					i(200496),	-- Shikaar Huntmaster's Shoulderpads
-					i(200494),	-- Shikaar Scout's Shoulderpads
-					i(200493),	-- Ohn'ir Daylight Shoulderpads
-					i(200504),	-- Ohn'ir Dawnlight Shoulderpads
-					i(200503),	-- Ohn'ir Dusklight Shoulderpads
-					i(200502),	-- Ohn'ir Midnight Shoulderpads
+					i(200499, {	-- Nokhud Battle Shoulderpads
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 250 },
+							{ "i", RESILIENT_LEATHER, 20 },
+							{ "i", TUFT_OF_PRIMAL_WOOL, 3 },
+						},
+					}),
+					i(200500, {	-- Nokhud Champion's Shoulderpads
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 250 },
+							{ "i", RESILIENT_LEATHER, 20 },
+							{ "i", TUFT_OF_PRIMAL_WOOL, 3 },
+						},
+					}),
+					i(200501, {	-- Nokhud Reaver's Shoulderpads
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 250 },
+							{ "i", RESILIENT_LEATHER, 20 },
+							{ "i", TUFT_OF_PRIMAL_WOOL, 3 },
+						},
+					}),
+					i(200495, {	-- Nokhud Warlord's Shoulderpads
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 250 },
+							{ "i", RESILIENT_LEATHER, 20 },
+							{ "i", TUFT_OF_PRIMAL_WOOL, 3 },
+						},
+					}),
+					i(200498, {	-- Shikaar Harrier's Shoulderpads
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 250 },
+							{ "i", RESILIENT_LEATHER, 20 },
+						},
+					}),
+					i(200497, {	-- Shikaar Hunter's Shoulderpads
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 250 },
+							{ "i", RESILIENT_LEATHER, 20 },
+						},
+					}),
+					i(200496, {	-- Shikaar Huntmaster's Shoulderpads
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 250 },
+							{ "i", RESILIENT_LEATHER, 20 },
+						},
+					}),
+					i(200494, {	-- Shikaar Scout's Shoulderpads
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 250 },
+							{ "i", RESILIENT_LEATHER, 20 },
+						},
+					}),
+					i(200493, {	-- Ohn'ir Daylight Shoulderpads
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 250 },
+							{ "i", RESILIENT_LEATHER, 20 },
+							{ "i", IRIDESCENT_PLUME, 2 },
+						},
+					}),
+					i(200504, {	-- Ohn'ir Dawnlight Shoulderpads
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 250 },
+							{ "i", RESILIENT_LEATHER, 20 },
+							{ "i", IRIDESCENT_PLUME, 2 },
+						},
+					}),
+					i(200503, {	-- Ohn'ir Dusklight Shoulderpads
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 250 },
+							{ "i", RESILIENT_LEATHER, 20 },
+							{ "i", IRIDESCENT_PLUME, 2 },
+						},
+					}),
+					i(200502, {	-- Ohn'ir Midnight Shoulderpads
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 250 },
+						
+						},
+					}),
 						-- RENOWN 21 --
-					i(200546),	-- Clan Nokhud Pennant
-					i(200547),	-- Clan Ohn'ir Pennant
-					i(200545),	-- Clan Shikaar Pennant
-					i(200543),	-- Clan Teerai Pennant
+					i(200546, {	-- Clan Nokhud Pennant
+						["cost"] = 45,	-- 45c
+					}),
+					i(200547, {	-- Clan Ohn'ir Pennant
+						["cost"] = 45,	-- 45c
+					}),
+					i(200545, {	-- Clan Shikaar Pennant
+						["cost"] = 45,	-- 45c
+					}),
+					i(200543, {	-- Clan Teerai Pennant
+						["cost"] = 45,	-- 45c
+					}),
 				},
 			}),
 			n(196707, {	-- Quartermaster Huseng
@@ -205,6 +280,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 62.4, 42.2, OHNAHRAN_PLAINS },
 				["g"] = {
 						-- RENOWN 17 --
+					-- TODO: COSTS!
 					i(200541),	-- Fur-Lined Safeguard
 					i(200540),	-- Improvised Maruuk Barrier
 					i(200539),	-- Khansguard Shield
