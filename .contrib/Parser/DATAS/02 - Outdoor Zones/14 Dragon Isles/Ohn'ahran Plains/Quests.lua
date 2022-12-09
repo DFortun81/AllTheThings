@@ -1065,11 +1065,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(71195, {	-- To Tame A Thunderspine
 				["sourceQuests"] = { 71199 },	-- To Tame A Thunderspine
 				["provider"] = { "n", 190014 },	-- Initiate Radiya
-				["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
+				["coord"] = { 57.7, 72.3, OHNAHRAN_PLAINS },
 				["cost"] = {
 					{ "c", DRAGON_SUPPLIES, 150 },
 					{ "i", 200598, 1 },	-- 1xMeluun's Green Curry
 				},
+			}),
+			q(71209, {	-- Beast of the Plains
+				["sourceQuests"] = { 71195 },	-- To Tame A Thunderspine
+				["provider"] = { "n", 190014 },	-- Initiate Radiya
+				["coord"] = { 57.7, 72.3, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(192799),	-- Lizi, Thunderspine Tramper (MOUNT!)
 				},

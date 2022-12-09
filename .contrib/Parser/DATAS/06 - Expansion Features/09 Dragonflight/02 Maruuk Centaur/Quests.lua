@@ -192,6 +192,22 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201705),	-- Notebook of Crafting Knowledge
 				},
 			}),
+				-- RENOWN 15 --
+			q(71075, {	-- Understanding Their Grace
+				["description"] = "Requires Renown 15.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(197618),	-- Windborne Velocidrake: Long Snout (DM!)
+					i(197623),	-- Windborne Velocidrake: Spiked Tail (DM!)
+				},
+			}),
+				-- RENOWN 16 --
+			q(71030, {	-- Hunting Tactics: Shikaar Mentorship
+				["description"] = "Requires Renown 16.",
+				["provider"] = { "n", 192926 },	-- Trainer Frodrum
+				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
+			}),
 		}),
 	}),
 })));

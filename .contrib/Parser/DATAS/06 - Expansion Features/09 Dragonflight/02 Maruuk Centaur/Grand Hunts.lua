@@ -8,6 +8,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16544),	-- Grand Hunter
 				ach(16540),	-- Hunt Master
 				ach(16541),	-- Longhunter
+				ach(16543),	-- Tetrachromancer
 				ach(16545),	-- The Best at What I Do
 				ach(16542),	-- The Disgruntled Hunter
 			}),
@@ -172,6 +173,22 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			m(THE_AZURE_SPAN, {
 				n(-1124, {	-- East
+					n(195132, {	-- Tevgai
+						["coord"] = { 72.8, 27.2, THE_AZURE_SPAN },
+						["questID"] = 73939,
+						["isDaily"] = true,
+						["g"] = {
+							-- is part of the DF>Global Rare Loottable
+						},
+					}),
+					n(195101, {	-- Yaankhi
+						["questID"] = 73946,
+						["isDaily"] = true,
+						["coord"] = { 68.6, 26.3, THE_AZURE_SPAN },
+						["g"] = {
+							-- is part of the DF>Global Rare Loottable
+						},
+					}),
 				}),
 				n(-1125, {	-- South
 					n(195300, {	-- Arkhuu
@@ -196,6 +213,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							-- is part of the DF>Global Rare Loottable
 						},
 					}),
+					n(194760, {	-- Uurhilt
+						["questID"] = 73944,
+						["isDaily"] = true,
+						["coord"] = { 36.3, 36.9, THE_AZURE_SPAN },
+						["g"] = {
+							-- is part of the DF>Global Rare Loottable
+						},
+					}),
 				}),
 				n(194761, {	-- Khuumog
 					["coord"] = { 38.7, 43.5, THE_AZURE_SPAN },
@@ -213,35 +238,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						-- is part of the DF>Global Rare Loottable
 					},
 				}),
-				n(195132, {	-- Tevgai
-					["coord"] = { 72.8, 27.2, THE_AZURE_SPAN },
-					["questID"] = 73939,
-					["isDaily"] = true,
-					["g"] = {
-						-- is part of the DF>Global Rare Loottable
-					},
-				}),
-				n(195101, {	-- Yaankhi
-					["questID"] = 73946,
-					["isDaily"] = true,
-					["coord"] = { 68.6, 26.3, THE_AZURE_SPAN },
-					["g"] = {
-						-- is part of the DF>Global Rare Loottable
-					},
-				}),
 				n(195283, {	-- Yamakh
 					["description"] = "Behind Rock Wall.",
 					["questID"] = 73947,
 					["isDaily"] = true,
 					["coord"] = { 66.1, 51.2, THE_AZURE_SPAN },
-					["g"] = {
-						-- is part of the DF>Global Rare Loottable
-					},
-				}),
-				n(194760, {	-- Uurhilt
-					["questID"] = 73944,
-					["isDaily"] = true,
-					["coord"] = { 36.3, 36.9, THE_AZURE_SPAN },
 					["g"] = {
 						-- is part of the DF>Global Rare Loottable
 					},
@@ -296,6 +297,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							i(200164),	-- Iceloop
 							i(200187),	-- Rod of Glacial Force
 							i(200552),	-- Torrent Caller's Shell
+							-- is part of the DF>Global Rare Loottable
+						},
+					}),
+					n(194225, {	-- Salkii
+						["coord"] = { 66.4, 65.2, THE_WAKING_SHORES },
+						["questID"] = 73931,
+						["isDaily"] = true,
+						["g"] = {
 							-- is part of the DF>Global Rare Loottable
 						},
 					}),
@@ -356,7 +365,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(194091),	-- Bakar Companion Color: Golden Brown
 				i(194092),	-- Timbertooth Pelt
 				i(194093),	-- Bakar Companion Color: Brown
-				i(194094),	-- Bakar Companion Color: Black
+				i(194094, {	-- Bakar Companion Color: Black
+					["questID"] = 71044,
+				}),
 				i(194095, {	-- Ohuna Companion Color: Sepia
 					["questID"] = 71052,
 				}),
