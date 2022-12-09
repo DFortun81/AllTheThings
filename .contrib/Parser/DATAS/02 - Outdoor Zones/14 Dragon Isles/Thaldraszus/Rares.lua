@@ -21,7 +21,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193220, {	-- Broodweaver Araznae <Mother of Spiders>
 				["coord"] = { 59.6, 70.1, THALDRASZUS },
-				-- ["questID"] = 69868,
+				["questID"] = 73987,
 				["g"] = {
 					--[[ Rest is under shared Lv70 Elite Rare Drops
 					i(200186),	-- Amberquill Shroud

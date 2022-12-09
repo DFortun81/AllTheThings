@@ -1012,6 +1012,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 37.4, 77.9, THALDRASZUS },
 					["isDaily"] = true,
 				}),
+				q(69868, {	-- Broodweaver Araznae
+					["provider"] = { "n", 193220 },	-- Broodweaver Araznae
+					["coord"] = { 59.6, 70.1, THALDRASZUS },
+					--["isDaily"] = true,
+					-- TODO: unsure if the rares that had bonus objectives are repeatable
+				}),
 				-- q(, {	-- Lookout Mordren
 				-- 	["provider"] = { "n", 193668 },	-- Lookout Mordren
 				-- 	["coord"] = { 36.8, 85.6, THALDRASZUS },
