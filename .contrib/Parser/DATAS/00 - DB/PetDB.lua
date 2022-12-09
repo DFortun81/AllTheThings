@@ -1116,6 +1116,7 @@ pet(200173, 3287);	-- Ghostflame
 pet(198725, 3381);	-- Gray Marmoni
 pet(193618, 3317);	-- Hoofhelper
 pet(190583, 3248); 	-- Ichabod
+pet(192459, 3270);	-- Jean's Lucky Fish
 pet(193885, 3345);	-- Jeweled Amber Whelpling
 pet(193888, 3347);	-- Jeweled Emerald Whelpling
 pet(193889, 3256);	-- Jeweled Onyx Whelpling
@@ -1131,13 +1132,17 @@ pet(200519, 3286);	-- Mister Toots
 pet(200930, 3414);	-- Obsidian Proto-Whelp
 pet(200927, 3408);	-- Petal
 pet(193484, 3302);	-- Pilot
+pet(201703, 3417);	-- Pinkie
+pet(193071, 3278);	-- Pistachio
 pet(199109, 3348);	-- Primal Stormling
 pet(199916, 3365);	-- Roseate Hopper
 pet(193572, 3306);	-- Quack-E
+pet(201441, 3407);	-- Scout
 pet(191936, 3263);	-- Secretive Frogduck
 pet(198353, 3368);	-- Shiverweb Broodling
 pet(200479, 3390);	-- Sophic Amalgamation
 pet(200114, 3382);	-- Stormie
+pet(201707, 3416);	-- Troubled Tome
 pet(191932, 3262);	-- Violet Violence
 pet(199172, 3309);	-- Viridescent Duck
 pet(193225, 3284);	-- Whiskuk
@@ -1187,10 +1192,8 @@ pet(191930, 3261);	-- Blue Phoenix Hatchling
 pet(193620, 3267);	-- Time-Lost Slyvern
 pet(0, 3268);	-- Swog
 
-pet(192459, 3270);	-- Jean's Lucky Fish
 
 pet(193068, 3277);	-- Time-Lost Treeflitter
-pet(193071, 3278);	-- Pistachio
 
 
 pet(193235, 3285);	-- Scarlet Ottuk Pup
@@ -1282,13 +1285,10 @@ pet(0, 3402);	-- Stormamu
 
 
 pet(0, 3406);	-- Lady Feathersworth
-pet(0, 3407);	-- Scout
 pet(0, 3409);	-- Tide Spirit
 pet(0, 3410);	-- Dust Spirit
 pet(0, 3411);	-- Blaze Spirit
 pet(0, 3412);	-- Gale Spirit
-pet(0, 3416);	-- Troubled Tome
-pet(0, 3417);	-- Pinkie
 
 
 -- #if ANYCLASSIC

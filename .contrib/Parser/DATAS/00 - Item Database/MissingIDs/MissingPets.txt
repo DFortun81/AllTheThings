@@ -645,15 +645,11 @@ p(3401),	-- Arcantus
 p(3402),	-- Stormamu
 10.0.0.45454
 p(3406),	-- Lady Feathersworth
-10.0.0.45570
-p(3407),	-- Scout \\ REUSE ME \\ White Woodpecker \\ [PH] White Woodpecker
 10.0.0.45661
 p(3409),	-- Tide Spirit
 p(3410),	-- Dust Spirit
 p(3411),	-- Blaze Spirit
 p(3412),	-- Gale Spirit
-p(3416),	-- Troubled Tome
-p(3417),	-- Pinkie
 10.0.2.46781
 p(3248),	-- Ichabod
 

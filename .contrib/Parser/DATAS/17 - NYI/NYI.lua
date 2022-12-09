@@ -512,11 +512,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191929),	-- zzOld - [PH] White Flying Squirrel (REUSE)
 			i(191930),	-- Blue Phoenix Hatchling
 			i(192050),	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
-			i(192459),	-- Jean's Lucky Fish
 			i(193587),	-- Time-Lost Duck
 			i(193063),	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
 			i(193068),	-- Time-Lost Treeflitter
-			i(193071),	-- Pistachio
 			i(193235),	-- Scarlet Ottuk Pup
 			i(193363),	-- Auburntusk Calf
 			i(193364),	-- Time-Lost Baby Mammoth
@@ -548,9 +546,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201261),	-- Blaze Spirit
 			i(201262),	-- Gale Spirit
 			i(201265),	-- Tide Spirit
-			i(201441),	-- Scout
-			i(201703),	-- Pinkie
-			i(201707),	-- Troubled Tome
 			i(201838),	-- Snowclaw Cub
 			i(202085),	-- Bugbiter Tortoise
 		}),
@@ -2186,9 +2181,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191941),	-- Crystalline Mini-Monster
 			i(191946),	-- Mister Muskoxeles
 			i(193620),	-- [PH] Yellow Baby Fox Wyvern
-			i(192459),	-- Jean's Lucky Fish
 			i(193068),	-- [PH] Gold Flying Squirrel
-			i(193071),	-- [PH] Pistachio Flying Squirrel
 			i(193235),	-- [PH] Red Baby River Otter
 			i(193363),	-- [PH] Orange Baby Mammoth
 			i(193364),	-- [PH] Yellow Baby Mammoth

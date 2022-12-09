@@ -192,6 +192,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 				}
 			}),
+			-- RENOWN 12 --
+			q(70960, {	-- Trader's Apparel
+				["description"] = "Requires Renown 12.",
+				["provider"] = { "n", 196016 },	-- Lontupit
+				["coord"] = { 14.0, 49.4, THE_AZURE_SPAN },
+				["g"] = {
+					i(199872),	-- Tuskarr Trader's Cloak
+				}
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
@@ -209,5 +218,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72390),	-- Triggered with 'Cute and Cuddly' (70959)
 		q(71184),	-- Triggered with 'While the Iron Is Hot' (66444)
 		q(72753),	-- Triggered with 'While the Iron Is Hot' (66444)
+		q(72393),	-- Triggered with 'Trader's Apparel' (70960)
 	}),
 }));
