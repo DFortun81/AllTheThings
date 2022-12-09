@@ -72,8 +72,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 	}),
 })));
-root("HiddenQuestTriggers", m(DRAGON_ISLES, {
-	m(THE_WAKING_SHORES, {
+
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	n(DRAGONSCALE_EXPEDITION, {
 		q(72560),	-- Triggered after completing Climb Every Mountain (questID 65421)
+		q(72002),	-- first daily looted bonus supplies (Enchanted Compass) while on climbing WQ
+		q(71999),	-- second daily looted bonus supplies (Enchanted Compass) while on climbing WQ (70652)
 	}),
-}));
+})));

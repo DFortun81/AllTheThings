@@ -182,6 +182,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					15839,	-- Iskaara Tour Advanced: Silver
 					15822,	-- The Vakthros Ascent Advanced: Silver
 				}},
+				["g"] = {
+					i(197094),	-- Highland Drake: Gold and Red Armor
+				},
 			}),
 			ach(15935, {	-- Azure Span Advanced: Gold
 				-- Meta Achievement

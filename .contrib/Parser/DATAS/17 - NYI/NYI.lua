@@ -975,7 +975,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		n(DRAKEWATCHER_MANUSCRIPTS, {
 			i(196961),	-- Cliffside Wylderdrake: Armor
 			i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor
-			i(196966),	-- Cliffside Wylderdrake: Gold and Orange Armor
 			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
 			i(196970),	-- Cliffside Wylderdrake: Spiked Back
 			i(196971),	-- Cliffside Wylderdrake: Spiked Brow
@@ -1006,7 +1005,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197017),	-- Cliffside Wylderdrake: Large Tail Spikes
 			i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail
 			i(197022),	-- Cliffside Wylderdrake: Finned Neck
-			i(197094),	-- Highland Drake: Gold and Red Armor
 			i(197095),	-- Highland Drake: Gold and White Armor
 			i(197099),	-- Highland Drake: Armor
 			i(197100),	-- Highland Drake: Crested Brow

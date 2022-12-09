@@ -208,6 +208,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					15907,	-- Garden Gallivant Advanced: Silver
 					15859,	-- Tyrhold Trial Advanced: Silver
 				}},
+				["g"] = {
+					i(196966),	-- Cliffside Wylderdrake: Gold and Orange Armor (DM!)
+				},
 			}),
 			ach(15938, {	-- Thaldraszus Advanced: Gold
 				-- Meta Achievement

@@ -263,11 +263,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193149, {	-- Skag the Thrower
-				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
-				-- ["questID"] = 72154,
-				-- ["g"] = {
-
-				-- },
+				["coord"] = { 26.7, 49.0, THE_AZURE_SPAN },
+				["questID"] = 74030,
+				["g"] = {
+					i(200279),	-- Competitive Throwing Gauntlets
+				},
 			}),
 			n(193708, {	-- Skald the Impaler <Lunker>
 				["coord"] = { 33.8, 64.4, THE_AZURE_SPAN },
