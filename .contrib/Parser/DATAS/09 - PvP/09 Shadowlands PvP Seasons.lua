@@ -2074,6 +2074,60 @@ root("PVP", pvp(tier(SL_TIER, {
 	})),
 })));
 
+root("HiddenQuestTriggers", {
+	tier(SL_TIER, {
+		n(SEASON_SINFUL, {
+			q(74241),	-- Sinful Gladiator's Vestment
+			q(74242),	-- Sinful Aspirant's Plate
+			q(74243),	-- Sinful Gladiator's Plate
+			q(74244),	-- Sinful Aspirant's Chain
+			q(74245),	-- Sinful Gladiator's Chain
+			q(74246),	-- Sinful Aspirant's Leathers
+			q(74247),	-- Sinful Gladiator's Leathers
+			q(74248),	-- Sinful Aspirant's Vestment
+			q(74277),	-- Sinful Gladiator's Revendreth Arsenal
+			q(74278),	-- Sinful Gladiator's Maldraxxus Arsenal
+			q(74279),	-- Sinful Gladiator's Bastion Arsenal
+			q(74280),	-- Sinful Gladiator's Ardenweald Arsenal
+			q(74281),	-- Sinful Aspirant's Arsenal
+		}),
+		n(SEASON_UNCHAINED, {
+			q(74249),	-- Unchained Aspirant's Plate
+			q(74250),	-- Unchained Gladiator's Plate
+			q(74251),	-- Unchained Aspirant's Chain
+			q(74252),	-- Unchained Gladiator's Chain
+			q(74253),	-- Unchained Aspirant's Leathers
+			q(74254),	-- Unchained Gladiator's Leathers
+			q(74255),	-- Unchained Aspirant's Vestment
+			q(74256),	-- Unchained Gladiator's Vestment
+			q(74275),	-- Unchained Gladiator's Arsenal
+			q(74276),	-- Unchained Aspirant's Arsenal
+		}),
+		n(SEASON_COSMIC, {
+			q(74273),	-- Cosmic Gladiator's Arsenal
+			q(74274),	-- Cosmic Aspirant's Arsenal
+		}),
+		n(SEASON_ETERNAL, {
+			q(74257),	-- Eternal Gladiator's Plate Armor
+			q(74258),	-- Eternal Gladiator's Felweave Armor
+			q(74259),	-- Eternal Gladiator's Ringmail Armor
+			q(74260),	-- Eternal Gladiator's Leather Armor
+			q(74261),	-- Eternal Gladiator's Satin Armor
+			q(74262),	-- Eternal Gladiator's Scaled Armor
+			q(74263),	-- Eternal Gladiator's Ironskin Armor
+			q(74264),	-- Eternal Gladiator's Silk Armor
+			q(74265),	-- Eternal Gladiator's Chain Armor
+			q(74266),	-- Eternal Gladiator's Dragonhide Armor
+			q(74267),	-- Eternal Gladiator's Felskin Armor
+			q(74268),	-- Eternal Gladiator's Dreadplate Armor
+			q(74269),	-- Eternal Aspirant's Plate
+			q(74270),	-- Eternal Aspirant's Chain
+			q(74271),	-- Eternal Aspirant's Leathers
+			q(74272),	-- Eternal Aspirant's Vestment
+		}),
+	}),
+});
+
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		n(SEASON_SINFUL, {
