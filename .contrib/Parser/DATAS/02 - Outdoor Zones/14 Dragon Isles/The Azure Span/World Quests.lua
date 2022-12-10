@@ -33,9 +33,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(70625, {	-- Spellforged Creations
 				["coord"] = { 49.1, 18.6, THE_AZURE_SPAN },
 			}),
-			q(72019, {	-- Seeing through the Enemy: Nezascar
+			pvp(q(72019, {	-- Seeing through the Enemy: Nezascar
 				["coord"] = { 29.7, 29.8, THE_AZURE_SPAN },
-			}),
+			})),
 			q(70720, {	-- Can't Have These
 				["coord"] = { 12.4, 42.4, THE_AZURE_SPAN },
 			}),

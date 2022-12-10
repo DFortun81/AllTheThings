@@ -21,7 +21,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 58.2, 64.7, THE_WAKING_SHORES },
 			}),
 			pvp(q(67005, {	-- How to Train a Proto-Drake
-				-- ["coord"] = { XX, YY, THE_WAKING_SHORES }
+				["coord"] = { 40, 89, THE_WAKING_SHORES }
 			})),
 			q(70172, {	-- Mountain Mysteries
 				-- ["coord"] = { 49.3, 53.4, THE_WAKING_SHORES }
