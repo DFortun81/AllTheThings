@@ -742,7 +742,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			q(70254, {	-- Hidden Profession Master Inscription
 				["name"] = "Hidden Profession Master: Inscription",
 				["provider"] = { "n", 194840 },	-- Lydiara Whisperfeather
-				["coord"] = { 40.2, 54.3, THE_AZURE_SPAN },
+				["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
 			q(74105, {	-- Inscription-Order: Inscription
@@ -767,13 +767,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			q(70592, {	-- Weekly Inscription Knowledgepoint #2
+			--[[q(70592, {	-- Weekly Inscription Knowledgepoint #2
 				["name"] = "Weekly Inscription Knowledgepoint #2",
 			--	["provider"] = { "i", 193900 },	-- Prismatic Focusing Shard
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[q(66382, {	-- Weekly Inscription Knowledgepoint #1
+			q(66382, {	-- Weekly Inscription Knowledgepoint #1
 				["name"] = "Weekly Inscription Knowledgepoint #1",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
