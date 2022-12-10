@@ -1355,5 +1355,18 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72369),	-- triggered after completing 'Moving On' (66221)
 		-- q(72084),	-- Popped during Quest at South Gate?
 		-- q(70511),	-- Popped when doing quest and lootning 198964 Elementious Splinter from mobs?
+
+		-- Achievement Framing a New Perspective
+		q(72142),	-- The Seat of the Aspects
+		q(72143),	-- The Cascades
+		q(72144),	-- Passage of Time
+		q(72145),	-- Vault of the Incarnates
+		q(72146),	-- Tryhold
+		q(72147),	-- Algeth'era Court
+		q(72148),	-- Veiled Ossuary
+		q(72149),	-- Serene Dreams Spa
+		q(72150),	-- Shadow Ledge
+		q(72151),	-- Valdrakken's Portal Room
+		q(72152),	-- Tryhold Reservoir
 	}),
 }));
