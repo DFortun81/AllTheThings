@@ -6,7 +6,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		n(AERIAL_CHALLENGES, {
 			n(REWARDS, {
 				i(199192, {	-- Dragon Racer's Purse
-					i(197113),	-- Highland Drake: Swept Spiked Head
+					i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
 				}),
 			}),
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {

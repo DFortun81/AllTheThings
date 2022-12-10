@@ -133,15 +133,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "o", 384405 },	-- Half-Boiled Fish
 				["coord"] = { 53.1, 35.3, THE_WAKING_SHORES },
 				["g"] = {
-					i(201787),	-- Recipe: Filet of Fangs
-					i(201786),	-- Recipe: Salt-Baked Fishcake
-					i(201785),	-- Recipe: Seamoth Surprise
-					i(201784),	-- Recipe: Timely Demise
+					i(201787),	-- Recipe: Filet of Fangs (RECIPE!)
+					i(201786),	-- Recipe: Salt-Baked Fishcake (RECIPE!)
+					i(201785),	-- Recipe: Seamoth Surprise (RECIPE!)
+					i(201784),	-- Recipe: Timely Demise (RECIPE!)
 				}
 			}),
 			q(66418, {	-- Testing the Tuskaprsenal
 				["description"] = "Requires Renown 11.",
-				["sourceQuests"] = { 
+				["sourceQuests"] = {
 					66411,	-- Troubled Waters
 					66417,	-- Salvaging Supplies
 				},

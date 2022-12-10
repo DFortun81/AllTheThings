@@ -44,7 +44,8 @@ i(198104, 381377);	-- Blubbery Muffin
 i(198105, 381378);	-- Celebratory Cake
 i(198109, 381383);	-- Churnbelly Tea
 i(198127, 381412);	-- Fated Fortune Cookie
-i(198114, 381392);	-- Filet of Fangs
+i(198114, 381392);	-- Filet of Fangs (FISHING?)
+i(201787, 381392);	-- Filet of Fangs (QUEST?)
 i(198131, 381418);	-- Gral's Devotion
 i(198129, 381415);	-- Gral's Reverence
 i(198130, 381417);	-- Gral's Veneration
@@ -52,12 +53,15 @@ i(198132, 381420);	-- Hoard of Draconic Delicacies
 i(198102, 381375);	-- Impossibly Sharp Cutting Knife
 i(198098, 378302);	-- Ooey-Gooey Chocolate
 i(198101, 381373);	-- Salad on the Side
-i(198116, 381395);	-- Salt-Baked Fishcake
-i(198115, 381393);	-- Seamoth Surprise
+i(198116, 381395);	-- Salt-Baked Fishcake (FISHING?)
+i(201786, 381395);	-- Salt-Baked Fishcake (QUEST?)
+i(198115, 381393);	-- Seamoth Surprise (FISHING?)
+i(201785, 381393);	-- Seamoth Surprise (QUEST?)
 i(198103, 381376);	-- Snow in a Cone
 i(198106, 381380);	-- Tasty Hatchling's Treat
 i(194964, 381388);	-- Thrice-Spiced Mammoth Kabob
-i(198113, 381391);	-- Timely Demise
+i(198113, 381391);	-- Timely Demise (FISHING?)
+i(201784, 381391);	-- Timely Demise (QUEST?)
 i(194965, 381413);	-- Yusa's Hearty Stew
 -- DISCOVERY --
 i(0, 381397);	-- Aromatic Seafood Platter

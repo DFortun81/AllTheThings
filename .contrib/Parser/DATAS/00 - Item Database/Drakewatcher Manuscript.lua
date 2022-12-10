@@ -26,9 +26,9 @@ i(194834, 0);	-- Windborne Velocidrake Manuscript: Windswept
 -- Obtainable?
 i(196961, 69161);	-- Cliffside Wylderdrake: Armor
 i(196991, 69191);	-- Cliffside Wylderdrake: Black Horns
-i(196986, 69186);	-- Cliffside Wylderdrake: Black Mane
+i(196986, 69186);	-- Cliffside Wylderdrake: Black Hair
 i(197013, 69213);	-- Cliffside Wylderdrake: Black Scales
-i(196987, 69187);	-- Cliffside Wylderdrake: Blonde Mane
+i(196987, 69187);	-- Cliffside Wylderdrake: Blonde Hair
 i(197012, 69212);	-- Cliffside Wylderdrake: Blue Scales
 i(197019, 69219);	-- Cliffside Wylderdrake: Blunt Spiked Tail
 i(196996, 69196);	-- Cliffside Wylderdrake: Branched Horns

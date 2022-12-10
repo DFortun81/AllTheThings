@@ -6,7 +6,7 @@ root("Promotions", {
 		["timeline"] = { "added 10.0.2.46999" },
 		["description"] = "Granted to owners of Diablo IV.",
 		["groups"] = {
-			i(191114, {	-- Amalgam of Rage
+			i(191114, {	-- Amalgam of Rage (MOUNT!)
 				["u"] = BLIZZARD_BALANCE,
 			}),
 		},

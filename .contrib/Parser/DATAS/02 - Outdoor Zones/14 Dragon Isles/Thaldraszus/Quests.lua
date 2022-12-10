@@ -1128,7 +1128,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 198590 },	-- Sneaky Mud Mask
 					["coord"] = { 38.6, 46.4, THALDRASZUS },
 					["g"] = {
-						i(200872),	-- Living Mud Mask
+						i(200872),	-- Living Mud Mask (PET!)
 					},
 				}),
 			}),

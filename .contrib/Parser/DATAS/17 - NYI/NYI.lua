@@ -403,17 +403,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200243),	-- Titanic Scholar's Finery
 			i(200251),	-- Medallion of the Ancestors
 			i(200261),	-- White Chitin Bandages
-			i(200279),	-- Competitive Throwing Gauntlets
 			i(200280),	-- Decaying Ghostly Band
 			i(200291),	-- Waterlogged Racing Grips
 			i(200292),	-- Cragforge Pauldrons
 			i(200294),	-- Primal Chain Hauberk
-			i(200296),	-- Mammoth Tusk Wraps
 			i(200306),	-- Tempest Shawl
 			i(200309),	-- Rock Encrusted Chestguard
 			i(200313),	-- Earthen Protoscale Drape
 			i(200314),	-- Skyspeaker's Envelope
-			i(200432),	-- Rotguard Cowl
 			i(200434),	-- Anund's Mana-Singed Amice
 			i(200435),	-- Brackish Breeches
 			i(200436),	-- Gorestained Hauberk
@@ -852,7 +849,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197698),	-- Mystic's Windblade
 			i(197904),	-- Shikaar Hunting Knife
 			i(197905),	-- Salamanther Slicer
-			i(200127),	-- Gold-Alloy Blade
 			i(200130),	-- Corpse Ripper
 			i(200136),	-- Monsoonic Armguards
 			i(200138),	-- Ancient Dancer's Longspear
@@ -954,14 +950,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
 			i(196970),	-- Cliffside Wylderdrake: Spiked Back
 			i(196971),	-- Cliffside Wylderdrake: Spiked Brow
-			i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin
 			i(196974),	-- Cliffside Wylderdrake: Four Horned Chin
 			i(196975),	-- Cliffside Wylderdrake: Head Fin
 			i(196978),	-- Cliffside Wylderdrake: Small Head Spikes
 			i(196979),	-- Cliffside Wylderdrake: Curled Head Horns
-			i(196983),	-- Cliffside Wylderdrake: Maned Jaw
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw
-			i(196986),	-- Cliffside Wylderdrake: Black Hair
 			i(196989),	-- Cliffside Wylderdrake: White Hair
 			i(196990),	-- Cliffside Wylderdrake: Helm
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
@@ -982,7 +975,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197022),	-- Cliffside Wylderdrake: Finned Neck
 			i(197095),	-- Highland Drake: Gold and White Armor
 			i(197099),	-- Highland Drake: Armor
-			i(197100),	-- Highland Drake: Crested Brow
 			i(197102),	-- Highland Drake: Horned Chin
 			i(197104),	-- Highland Drake: Tapered Chin
 			i(197105),	-- Highland Drake: Spined Chin
@@ -993,7 +985,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197119),	-- Highland Drake: Helm
 			i(197120),	-- Highland Drake: Ornate Helm
 			i(197124),	-- Highland Drake: Swept Horns
-			i(197125),	-- Highland Drake: Coiled Horns
 			i(197128),	-- Highland Drake: Curled Back Horns
 			i(197129),	-- Highland Drake: Sleek Horns
 			i(197130),	-- Highland Drake: Stag Horns
@@ -1002,7 +993,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197136),	-- Highland Drake: Taperered Nose
 			i(197138),	-- Highland Drake: Striped Pattern
 			i(197146),	-- Highland Drake: White Scales
-			i(197150),	-- Highland Drake: Spiked Club Tail
 			i(197152),	-- Highland Drake: Hooked Tail
 			i(197155),	-- Highland Drake: Finned Neck
 			i(197156),	-- Highland Drake: Bronze and Green Armor
@@ -1026,7 +1016,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197400),	-- Renewed Proto-Drake: Shark Snout
 			i(197404),	-- Renewed Proto-Drake: Finned Tail
 			i(197577),	-- Windborne Velocidrake: Bronze and Green Armor
-			i(197580),	-- Windborne Velocidrake: Gold and Red Armor
 			i(197582),	-- Windborne Velocidrake: White and Pink Armor
 			i(197583),	-- Windborne Velocidrake: Exposed Finned Back
 			i(197585),	-- Windborne Velocidrake: Maned Back
@@ -2140,7 +2129,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199926),	-- Portable J.A.M. (TOY!)
 			i(200142),	-- Generous Goblin Grenade (TOY!)
 			i(200148),	-- A Collection Of Me (TOY!)
-			i(200178),	-- Infected Ichor (TOY!)
 			i(200116),	-- Everlasting Horn of Lavaswimming (TOY!)
 			i(200636),	-- Primal Invocation Quintessence (TOY!)
 			i(201435),	-- Shuffling Sands (TOY!)

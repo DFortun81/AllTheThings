@@ -1079,6 +1079,7 @@ i(193476);	-- Gnoll Tent
 i(202019);	-- Golden Dragon Goblet
 i(199771);	-- Green Dragon Banner
 i(200631);	-- Happy Tuskarr Palooza
+i(200178);	-- Infected Ichor
 i(199899);	-- Iskaara Tug Sled
 i(198090);	-- Jar of Excess Slime
 i(193032);	-- Jeweled Offering
@@ -1130,7 +1131,6 @@ i(199554);	-- S.E.A.T.
 i(199926);	-- Portable J.A.M.
 i(200142);	-- Generous Goblin Grenade
 i(200148);	-- A Collection Of Me
-i(200178);	-- Infected Ichor
 i(200116);	-- Everlasting Horn of Lavaswimming
 i(200636);	-- Primal Invocation Quintessence
 i(201435);	-- Swinging Sands

@@ -80,7 +80,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 52.5, 83.6 , THALDRASZUS },
 				["questID"] = 72355,
 				["g"] = {
-					i(201463),	-- Cubbly
+					i(201463),	-- Cubbly (PET!)
 				},
 			}),
 			o(381216, {	-- Surveyor's Magnifying Glass

@@ -1707,11 +1707,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- Lava Orb ID 196901
 				-- Stranded Soul ID 197183
 			}),
-			q(71155, {	-- The Azure Vaults
-				--["sourceQuests"] = { }, -- TODO
-				["provider"] = { "n", 186188 },	-- Sindragosa
-				["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
-			}),
 			n(BONUS_OBJECTIVES, {
 				q(72358, {	-- Cascade
 					["provider"] = { "n", 186962 },	-- Cascade

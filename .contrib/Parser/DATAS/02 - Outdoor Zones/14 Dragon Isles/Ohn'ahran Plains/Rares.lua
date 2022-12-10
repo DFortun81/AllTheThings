@@ -8,15 +8,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
 				["g"] = {
-					i(200283),	-- Gnoll-Gnawed Breeches	-- Unconfirmed
-					i(200178),	-- Infected Ichor
-					i(196892),	-- Cliffside Wylderdrake: Ears
-					i(197150),	-- Highland Drake: Spiked Club Tail
-					i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin
+					i(196986),	-- Cliffside Wylderdrake: Black Hair (DM!)
+					i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
+					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 					i(200127),	-- Gold-Alloy Blade
-					i(196987),	-- Cliffside Wylderdrake: Black Hair
-					i(200432),	-- Rotguard Cowl
+					i(200283),	-- Gnoll-Gnawed Breeches
 					i(200266),	-- Gnollish Chewtoy Launcher
+					i(197150),	-- Highland Drake: Spiked Club Tail (DM!)
+					i(200178),	-- Infected Ichor (TOY!)
+					i(200432),	-- Rotguard Cowl
 				},
 			}),
 			n(195186, {	-- Cinta the Forgotten
@@ -215,8 +215,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 29.9, 41.1, OHNAHRAN_PLAINS },
 				["questID"] = 74075,
 				["g"] = {
-					i(196996),	-- Cliffside Wylderdrake: Branched Horns
-					i(197115),	-- Highland Drake: Thorned Jaw
+					i(196996),	-- Cliffside Wylderdrake: Branched Horns (DM!)
+					i(197115),	-- Highland Drake: Thorned Jaw (DM!)
 				},
 			}),
 			n(192949, {	-- Skaara

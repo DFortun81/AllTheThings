@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
---	n(MARUUK_CENTAUR, {	-- While its useful as Contributor, extending the tooltip length to include the faction is not nessessary
+	n(MARUUK_CENTAUR, {
 		n(GRAND_HUNTS, {
 			n(ACHIEVEMENTS, {
 				ach(16544),	-- Grand Hunter
@@ -123,8 +123,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						["questID"] = 73912,
 						["isDaily"] = true,
 						["g"] = {
-							i(196983),	-- Cliffside Wylderdrake: Maned Jaw
-							i(197125),	-- Highland Drake: Coiled Horns
+							i(196983),	-- Cliffside Wylderdrake: Maned Jaw (DM!)
+							i(197125),	-- Highland Drake: Coiled Horns (DM!)
 						},
 					}),
 					n(195430, {	-- Molkeej
@@ -132,7 +132,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						["questID"] = 73925,
 						["isDaily"] = true,
 						["g"] = {
-							i(197125),	-- Highland Drake: Coiled Horns
+							i(197125),	-- Highland Drake: Coiled Horns (DM!)
 						},
 					}),
 					n(195417, {	-- Tsokorg
@@ -205,7 +205,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						["isDaily"] = true,
 						["g"] = {
 							i(200303),	-- Dreamweaver Acolytes Staff
-							i(197100),	-- Highland Drake: Crested Brow
+							i(197100),	-- Highland Drake: Crested Brow (DM!)
 							i(200299),	-- Strange Clockwork Gladius
 
 						},
@@ -383,7 +383,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(194099),	-- Shikaar Hunting Horn
 				i(194108),	-- Mighty Hunter's Horn
 
-				q(70906, { 
+				q(70906, {
 					["name"] = "1st Weekly Grand Hunt",
 					-- ["sourceQuests"] = { },
 					["isWeekly"] = true,
@@ -411,7 +411,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						}),
 					},
 				}),
-				q(71136, { 
+				q(71136, {
 					["name"] = "2nd Weekly Grand Hunt",
 					["sourceQuests"] = { 70003 },	-- 1st Weekly Grand Hunt
 					["isWeekly"] = true,
@@ -429,7 +429,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						}),
 					},
 				}),
-				q(71137, { 
+				q(71137, {
 					["name"] = "3rd Weekly Grand Hunt",
 					["sourceQuests"] = { 71136 },	-- 2nd Weekly Grand Hunt
 					["isWeekly"] = true,
@@ -444,7 +444,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						}),
 					},
 				}),
-				q(70907, { 
+				q(70907, {
 					["name"] = "Repeatable Grand Hunt",
 					["sourceQuests"] = { 71136 },	-- 2nd Weekly Grand Hunt
 					["repeatable"] = true,
@@ -464,7 +464,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(200093),	-- Centaur Hunting Trophy
 			}),
 		}),
---	}),
+	}),
 })));
 
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
