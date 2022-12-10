@@ -658,8 +658,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201883),	-- Empty Magma Shell
 		}),
 		n(PROFESSIONS, {
-			i(193900),	-- Prismatic Focusing Shard
-			i(193901),	-- Primal Dust
 			i(193905),	-- Iskaaran Trading Ledger
 			i(193907),	-- Chipped Tyrstone
 			i(193909),	-- Ancient Gem Fragments
@@ -715,7 +713,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198703),	-- Sign Language Reference Sheet
 			i(198704),	-- Pulsing Earth Rune
 			i(198710),	-- Canteen of Suspicious Water
-			i(198711),	-- Poacher's Pack
 			i(198712),	-- Firewater Powder Sample
 			i(198789),	-- Intact Coil Capacitor
 			i(198791),	-- Glimmer of Blacksmithing Wisdom
@@ -725,16 +722,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198841),	-- Large Sample of Curious Hide
 			i(198963),	-- Decaying Phlegm
 			i(198964),	-- Elementious Splinter
-			i(198966),	-- Molten Globule
 			i(198969),	-- Keeper's Mark
 			i(198970),	-- Infinitely Attachable Pair o' Docks
 			i(198971),	-- Curious Djaradin Rune
 			i(198972),	-- Draconic Glamour
-			i(198973),	-- Incandescent Curio
 			i(198974),	-- Elegantly Engraved Embellishment
 			i(198975),	-- Ossified Hide
-			i(198976),	-- Exceedingly Soft Skin
-			i(198977),	-- Ohn'arhan Weave
 			i(198978),	-- Stupidly Effective Stitchery
 			i(199115),	-- Herbalism Field Notes
 			i(199122),	-- Mining Field Notes
@@ -745,7 +738,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200509),	-- Agitated Roused Seedling
 			i(200638),	-- Bubblefilled Flounder
 			i(200652),	-- Alchemical Flavor Pocket
-			i(200678),	-- Dreambloom
 			i(198656),	-- Painter's Pretty Jewel
 			i(201003),	-- Furry Gloop
 			i(201004),	-- Ancient Spear Shards
@@ -760,7 +752,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201015),	-- Counterfeit Darkmoon Deck
 			i(201016),	-- Harmonic Crystal Harmonizer
 			i(201017),	-- Igneous Gem
-			i(201018),	-- Well-Danced Drum
 			i(201019),	-- Ancient Dragonweave Bolt
 			i(201020),	-- Silky Surprise
 			i(201356),	-- Glimmer of Fire

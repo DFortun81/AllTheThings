@@ -1184,6 +1184,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(199340),	-- Gold Coin of the Isles
 		i(194970),	-- Islefin Dorado
 		i(199344),	-- Magma Thresher
+		i(194701),	-- Ominous Conch
 		i(200061),	-- Prismatic Leaper
 		i(198397),	-- Rainbow Pearl
 		i(199345),	-- Rimefin Tuna
@@ -1199,10 +1200,13 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(191467),	-- Bubble Poppy+
 			i(191468),	-- Bubble Poppy++
 			i(191469),	-- Bubble Poppy+++
+			i(200678),	-- Dreambloom
+			i(200677),	-- Dreambloom Petal
 			i(191460),	-- Hochenblume+
 			i(191461),	-- Hochenblume++
 			i(191462),	-- Hochenblume+++
 			i(197755),	-- Lava Beetle
+			i(200506),	-- Roused Seedling
 			i(191464),	-- Saxifrage+
 			i(191465),	-- Saxifrage++
 			i(191466),	-- Saxifrage+++
@@ -2406,7 +2410,7 @@ root("HiddenQuestTriggers", {
 			q(),	-- Life-Bound Gloves
 			q(71711),	-- Life-Bound Shoulderpads
 			q(),	-- Life-Bound Trousers
-			q(),	-- Pioneer's Leather Boots
+			q(71704),	-- Pioneer's Leather Boots
 			q(71703),	-- Pioneer's Leather Tunic
 			q(72569),	-- Pioneer's Leather Wristguard
 			q(72495),	-- Pioneer's Practiced Belt
@@ -2438,7 +2442,7 @@ root("HiddenQuestTriggers", {
 			q(),	-- Expert Skinner's Cap
 			q(),	-- Flameproof Apron
 			q(),	-- Floral Basket
-			q(),	-- Jeweler's Cover
+			q(71753),	-- Jeweler's Cover
 			q(),	-- Lavish Floral Pack
 			q(),	-- Masterwork Smock
 			q(71749),	-- Protective Gloves
