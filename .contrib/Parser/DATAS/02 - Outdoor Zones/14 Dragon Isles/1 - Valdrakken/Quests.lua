@@ -114,10 +114,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 
 			-- TODO: These need some sorting
-			q(72406, {	-- Orientation: Valdrakken
-				["provider"] = { "n", 193015 },	-- Unatos
-				["coord"] = { 58.1, 35.2, VALDRAKKEN },
-			}),
 			q(72671, {	-- Renown Supplies
 				["provider"] = { "n", 193015 },	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },

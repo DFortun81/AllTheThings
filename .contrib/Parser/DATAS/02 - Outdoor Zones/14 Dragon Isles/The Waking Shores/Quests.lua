@@ -1350,7 +1350,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["name"] = "Release Kite: Apex Canopy",
 					["coord"] = { 24.0, 89.9, THE_WAKING_SHORES },
 				}),
-				q(72102, {	-- Release Kite: Concord Observatory
+				q(72103, {	-- Release Kite: Concord Observatory
 					["name"] = "Release Kite: Concord Observatory",
 					["coord"] = { 57.2, 46.4, THE_WAKING_SHORES },
 				}),
@@ -1374,7 +1374,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["name"] = "Release Kite: Skytop Observatory",
 					["coord"] = { 73.0, 52.9, THE_WAKING_SHORES },
 				}),
-				q(72103, {	-- Release Kite: The Overflowing Spring
+				q(72102, {	-- Release Kite: The Overflowing Spring
 					["name"] = "Release Kite: The Overflowing Spring",
 					["coord"] = { 50.3, 55.6, THE_WAKING_SHORES },
 				}),

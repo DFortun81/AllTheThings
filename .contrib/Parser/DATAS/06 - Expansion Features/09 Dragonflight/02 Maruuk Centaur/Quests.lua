@@ -17,19 +17,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["repeatable"] = true,
 				["cost"] = { { "i", 200093, 1 }, }, 	-- 1x Centaur Hunting Trophy
 			}),
-			q(72868, {	-- More Hunting Trophies
-				["description"] = "Requires Renown 2.",
-				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
-				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
-				["repeatable"] = true,
-				["cost"] = { { "i", 200093, 20 }, }, 	-- 20x Centaur Hunting Trophy
-			}),
 			q(70929, {	-- More Hunting Trophies
 				["description"] = "Requires Renown 2.",
 				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 				["repeatable"] = true,
 				["cost"] = { { "i", 200093, 5 }, }, 	-- 5x Centaur Hunting Trophy
+			}),
+			q(72868, {	-- More Hunting Trophies
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
+				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
+				["repeatable"] = true,
+				["cost"] = { { "i", 200093, 20 }, }, 	-- 20x Centaur Hunting Trophy
 			}),
 				-- RENOWN 3	--
 			q(72117, {	-- Cultural Exchange
@@ -49,26 +49,26 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
 				-- RENOWN 5	--
-			q(71058, {	-- Observing the Wind
-				["description"] = "Requires Renown 5.",
-				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
-				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-				["g"] = {
-					i(197569),	-- Windborne Velocidrake: Horned Jaw
-					i(197610),	-- Windborne Velocidrake: Yellow Horns
-				},
-			}),
 			q(71231, {	-- Call of the Hunt
 				["description"] = "Requires Renown 5. Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197627 },	-- Roki
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
-				-- RENOWN 6	--
 			q(70501, {	-- License to Hunt
-				["description"] = "Requires Renown 6.",
+				["description"] = "Requires Renown 5.",
 				["sourceQuests"] = { 71231 },	-- Call of the Hunt
 				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
+			}),
+				-- RENOWN 6	--
+			q(71058, {	-- Observing the Wind
+				["description"] = "Requires Renown 6.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(197596),	-- Windborne Velocidrake: Horned Jaw (DM!)
+					i(197610),	-- Windborne Velocidrake: Yellow Horns (DM!)
+				},
 			}),
 				-- RENOWN 7	--
 			q(71060, {	-- To Adorn Your Head

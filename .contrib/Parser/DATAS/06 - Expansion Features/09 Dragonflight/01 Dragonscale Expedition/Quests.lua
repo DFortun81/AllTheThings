@@ -65,15 +65,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 				-- RENOWN 4 --
-			q(72025, {	-- Dragon Isles Supplies
-				["description"] = "Requires Renown 4.",
-				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
-				["provider"] = { "n", 189226 },	-- Cataloger Jakes
-				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-				["g"] = {
-					i(198863),	-- Small Dragon Expedition Supply Pack
-				},
-			}),
 			q(70812, {	-- Expedition Cloaks
 				["description"] = "Requires Renown 4.\n\nBuying the Renowned cloaks will remove this quest from being available!",
 				["provider"] = { "n", 187700 },	-- Pathfinder Jab
@@ -235,12 +226,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					70507,	-- The City of the Dead
 					70503,	-- The Vigilance of Tyr
 					66814,	-- The Judgement of Tyr
-				},	
+				},
 				["providers"] = {
 					{ "n", 191159 },	-- Toddy Whiskers
 					{ "n", 193350 },	-- Naleidea Rivergleam
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 40.0, 67.5, OHNAHRAN_PLAINS },
 					{ 53.9, 50.7, THE_AZURE_SPAN },
 				},
@@ -303,6 +294,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAGONSCALE_EXPEDITION, {
+		q(72025),	-- Triggeres together with 'Expedition Cloaks' (70812)
 		q(72033),	-- Triggeres together with 'Advanced Excavation Tools' (70807)
 		q(72037),	-- Triggers together with 'The Basecamp 'Pets'' (70820)
 		q(72401),	-- Triggered immediately after reaching renown 13

@@ -6,7 +6,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		n(TREASURES, {
 			o(380860, {	-- Centaur Horn
 				["coord"] = { 73.5, 56.2, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["questID"] = 70402,
 				["g"] = {
 					crit(4, {	-- Centaur Horn
 						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
@@ -73,7 +73,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(380842, {	-- Gold Coin
 				["coord"] = { 82.3, 73.4, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["questID"] = 70379,
 				["g"] = {
 					crit(5, {	-- Gold Coin
 						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
