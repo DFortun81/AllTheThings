@@ -1519,6 +1519,7 @@ i(198811, 385115);	-- Majestic Armored Vorquin
 i(201719, 394220);	-- Obsidian Vorquin
 i(198654, 376912);	-- Otterworldly Ottuk Carrier
 i(192791, 374196);	-- Plainswalker Bearer
+i(192806, 374275);	-- Raging Magmammoth
 i(194034, 368896);	-- Renewed Proto-Drake
 i(201704, 394218);	-- Sapphire Vorquin
 i(192784, 374155);	-- Shellack
@@ -1598,7 +1599,7 @@ i(192796, 374204);	-- PH Thunder Lizard Light
 i(192801, 374255);	-- PH Primal Tallstrider White
 i(192802, 374258);	-- PH Primal Tallstrider Black
 i(192803, 374259);	-- PH Primal Tallstrider Red
-i(192806, 374275);	-- Raging Magmammoth
+
 i(192807, 374278);	-- PH Lava Mammoth Yellow
 
 i(0, 376898);	-- [PH] Black Armored River Otter
