@@ -17,7 +17,7 @@ root("Promotions", {
 				["u"] = BLIZZARD_BALANCE,
 				["timeline"] = { "added 10.0.0.46366" },
 			}),
-			i(34493, {	-- Dragon Kite (TOY!)
+			i(34493, {	-- Dragon Kite (PET!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between November 15th, 03:00 p.m. & November 18th, 11:59 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = {
 					"added 10.0.2",

@@ -755,8 +755,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201359),	-- Glimmer of Earth
 			i(201360),	-- Glimmer of Order
 			i(201361),	-- Primal Inspiration
-			i(201709),	-- Notebook of Crafting Knowledge
-			i(201712),	-- Notebook of Crafting Knowledge
 			i(201716),	-- Notebook of Crafting Knowledge
 			i(202014),	-- Infused Pollen
 			i(202016),	-- Saturated Bone

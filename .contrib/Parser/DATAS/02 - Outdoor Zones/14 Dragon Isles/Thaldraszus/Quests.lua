@@ -987,7 +987,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(BONUS_OBJECTIVES, {
-				-- DAILY BONUS OBJECTIVES FOR RARES
+				-- OBJECTIVES FOR RARES
+				-- NOT ALL ARE DAILY?
 				q(72114, {	-- Acrosoth
 					["provider"] = { "n", 193243 },	-- Acrosoth
 					["coord"] = { 39.0, 78.0, THALDRASZUS },

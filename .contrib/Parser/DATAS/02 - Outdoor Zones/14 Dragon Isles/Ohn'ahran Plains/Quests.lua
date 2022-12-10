@@ -1089,10 +1089,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- 	["provider"] = { "n", npcid },	-- npc
 				-- 	["coord"] = { XX, YY, OHNAHRAN_PLAINS },
 				-- }),
-				q(72114, {	-- Acrosoth
-					["provider"] = { "n", 193243 },	-- Acrosoth
-					["coord"] = { 40.5, 78.3, THALDRASZUS },
-				}),
 				q(69968, {	-- Prozela Galeshot
 					["provider"] = { "n", 193669 },	-- Prozela Galeshot
 					["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },

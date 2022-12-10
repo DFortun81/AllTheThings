@@ -241,6 +241,69 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 				},
 			}),
+				-- RENOWN 14 --
+			q(70819, {	-- Renowned Explorer's Armor
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
+				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
+				["g"] = {
+					i(198777),	-- Ensemble: Renowned Expeditioner's Mail Armor
+				},
+			}),
+			q(72294, {	-- Expedition Crafting Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["requireSkill"] = INSCRIPTION,
+				["g"] = {
+					i(201711),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72299, {	-- Expedition Crafting Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["requireSkill"] = ENCHANTING,
+				["g"] = {
+					i(201709),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72300, {	-- Expedition Crafting Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["requireSkill"] = ENGINEERING,
+				["g"] = {
+					i(201710),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72301, {	-- Expedition Crafting Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["requireSkill"] = JEWELCRAFTING,
+				["g"] = {
+					i(201712),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72302, {	-- Expedition Crafting Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["requireSkill"] = MINING,
+				["g"] = {
+					i(201700),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72303, {	-- Expedition Crafting Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["requireSkill"] = TAILORING,
+				["g"] = {
+					i(201715),	-- Notebook of Crafting Knowledge
+				},
+			}),
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
 				["provider"] = { "o", 381669 },	-- Archivists' Request
@@ -300,6 +363,13 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(72401),	-- Triggered immediately after reaching renown 13
 		q(72038),	-- Triggered with 'A New Mystery' (69093)
 		q(72756),	-- Triggered with 'Next Steps' (66128)
+		q(72039),	-- Triggered with 'Renowned Explorer's Armor' (70819)
+
+		-- Ensembles
+		q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor
+		q(70316),	-- Ensemble: Renowned Expeditioner's Leather Armor
+		q(70317),	-- Ensemble: Renowned Expeditioner's Mail Armor
+		q(70318),	-- Ensemble: Renowned Expeditioner's Plate Armor
 
 		-- Achievement Dragonscale Expedition: The Highest Peaks
 		q(70823),	-- Flag at 56.0, 45.3, THE_WAKING_SHORES
