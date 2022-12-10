@@ -74,6 +74,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 	n(VALDRAKKEN_ACCORD, {
 		n(SIEGE_ON_DRAGONBANE_KEEP, {
 			q(70867),	-- Scalebane Keep (seems to indicate if the community event timer is shown perhaps? unflagged when the siege was completed)
+			q(74295),	-- triggered when completing Siege on Dragonbane Keep 2nd week
 		}),
 	}),
 })));

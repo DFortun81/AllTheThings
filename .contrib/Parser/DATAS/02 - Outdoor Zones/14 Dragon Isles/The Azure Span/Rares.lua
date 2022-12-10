@@ -113,8 +113,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193691, {	-- Fisherman Tinnak <Angered Ghost>
 				["description"] = "Requires Renown 7 with Iskaara Tuskarr to see the nearby items.\n\nCollect the Broken Fishing Pole, Torn Fishing Net and Old Harpoon around to summon him.\n\nRewards you with 950 Reputation if you are summoner or 60 Reputation with a normal tag.",
 				["coord"] = { 49.5, 36.1, THE_AZURE_SPAN },
-				["questID"] = 72254,
-				-- ["Daily"] = true,
+				["questID"] = 72730,
+				-- ["isDaily"] = true,
 				["g"] = {
 					i(197001),	-- Cliffside Wylderdrake: Finned Cheek (DM!)
 					i(196985),	-- Cliffside Wylderdrake: Horned Jaw (DM!)

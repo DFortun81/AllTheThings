@@ -572,7 +572,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194903),	-- Pocket Chocolate
 			i(198137),	-- Esoteric Dragon Shard of Knowledge
 			i(198151),	-- Cracked Heart in a Bottle
-			i(198400),	-- Lucky Horseshoe
 			--
 			i(198086),	-- Darkmoon Deck: Inferno
 			i(198087),	-- Darkmoon Deck: Rime
@@ -741,7 +740,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198656),	-- Painter's Pretty Jewel
 			i(201003),	-- Furry Gloop
 			i(201004),	-- Ancient Spear Shards
-			i(201005),	-- Curious Ingots
 			i(201006),	-- Draconic Flux
 			i(201007),	-- Ancient Monument
 			i(201009),	-- Falconer Gauntlet Drawings
@@ -1094,10 +1092,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200288),	-- Maruuk Centaur Insignia
 			i(200289),	-- Valdrakken Accord Insignia
 			i(200094),	-- Caravan Strongbox
-			i(200184),	-- Nokhud Battle Helm
-			i(200194),	-- Nokhud Battle Tunic
-			i(200196),	-- Nokhud Battle Barding
-			i(200201),	-- Nokhud Battlegear
 			i(200218),	-- Charred Fishing Pole
 			i(200443),	-- Dragon Isles Artifact
 			i(200447),	-- Centaur Hunting Trophy
@@ -1170,7 +1164,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(202079),	-- Cache of Vault Treasures
 			i(202080),	-- Cache of Vault Treasures
 			-- Fishing
-			i(194510),	-- Iskaaran Harpoon
 			i(199641),	-- Reinforced Irontree Harpoon Handle
 			i(199694),	-- Flying Fish Bone Charm
 			i(199695),	-- Iskaaran Fishing Net
@@ -1186,7 +1179,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199850),	-- Imbu Knot
 			i(199851),	-- Double Imbu Knot
 			i(200075),	-- Flying Fish Bones
-			i(200076),	-- Harpoon Head
 			i(200077),	-- Wooden Pole
 			i(200078),	-- Pickaxe Blade
 			i(200079),	-- Sea-Polished Basalt

@@ -134,11 +134,28 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 199915 },	-- Ancient Obsidian Charm
 					["isWeekly"] = true,
 				}),
+				q(65842, {	-- Disarming Behavior
+					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
+					["coord"] = { 26.6, 62.5, THE_WAKING_SHORES },
+					["isDaily"] = true,
+				}),
+				q(67099, {	-- Dragon Eyes
+					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["provider"] = { "n", 191193 },	-- Exadria
+					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+				}),
 				q(66103, {	-- Eager to Please
+					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
 					["isWeekly"] = true,
-					-- sym zone rewards?
+				}),
+				q(66308, {	-- Feeding the Fire
+					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["provider"] = { "n", 188179 },	-- Stoker Volrax
+					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
 				}),
 				q(69983, {	-- Flamecarved Bone
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
@@ -156,10 +173,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["isWeekly"] = true,
 				}),
 				q(67004, {	-- Good Things in Large Boxes
+					["sourceQuest"] = 66359,	-- First Completion of 'Unlocking our Past' (Forgemaster Bazentus)
 					["provider"] = { "n", 188179 },	-- Stoker Volrax
 					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
 					["isDaily"] = true,
-					["sourceQuest"] = 66359,	-- First Completion of 'Unlocking our Past' (Forgemaster Bazentus)
 				}),
 				q(66882, {	-- Lost Battlepack
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
@@ -184,21 +201,25 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(202173),	-- Magmote
 					},
 				}),
+				q(72448, {	-- Securing Our Legacy
+					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
+					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+				}),
+				q(69918, {	-- Shaking Our Foundations
+					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
+					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+				}),
 				q(72456, {	-- Tomes Of Trust
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 					["provider"] = { "n", 188344 },	-- Chydrass
 					["coord"] = { 25, 56.1, THE_WAKING_SHORES },
 				}),
 				--[[
-				q(66308, {	-- Feeding the Fire
-					["provider"] = { "n", 188179 },	-- Stoker Volrax
-					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
-				}),
 				q(66633, {	-- Make a Statement
-					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
-					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
-				}),
-				q(72448, {	-- Securing Our Legacy
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
 				}),
@@ -206,12 +227,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 					["provider"] = { "n", 191014 },	-- Ashen Black
 					["coord"] = { 26.5, 62.5, THE_WAKING_SHORES },
-					["isDaily"] = true,
-				}),
-				q(65842, {	-- Disarming Behavior
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
-					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
-					["coord"] = { 26.6, 62.5, THE_WAKING_SHORES },
 					["isDaily"] = true,
 				}),
 				--]]
@@ -237,8 +252,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["isWeekly"] = true,
 					}),
 					-- not sure if HQT these or Hidden Quests, maybe after knowing better what they represent
-					-- 64277 - accepted Keys of Loyalty after choosing Wrathion
-					-- 66802 - accepted Keys of Loyalty after choosing Wrathion
+					-- 64277 - weekly, accepted Keys of Loyalty after choosing Wrathion
+					-- 66802 - weekly, accepted Keys of Loyalty after choosing Wrathion
 				}),
 			}),
 			n(RARES, {
@@ -663,6 +678,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				i(200857),	-- Talisman of Sargha (TOY!)
 			}),
+		}),
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	m(THE_WAKING_SHORES, {
+		n(-1102, {	-- Wrathion & Sabellian
+			q(70984),	-- triggered first time entering Obsidian Citadel area with Wrathion chat message
 		}),
 	}),
 })));

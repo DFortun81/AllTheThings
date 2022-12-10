@@ -45,21 +45,27 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
 
-
-
-
-
 			--WS
 			--q(70075),	-- Cataloging the Waking Shores
-			--q(70632),	-- Cataloging the Waking Shores
+			q(70632, {	-- Cataloging the Waking Shores
+				["coord"] = { 55.9, 55.8, OHNAHRAN_PLAINS }
+			}),
 			--OP
-			--q(70079),	-- Cataloging the Ohn'ahran Plains
-			--q(70659),	-- Cataloging the Ohn'ahran Plains
+			q(70079, {	-- Cataloging the Ohn'ahran Plains
+				["coord"] = { 52.0, 56.8, OHNAHRAN_PLAINS }
+			}),
+			q(70659, {	-- Cataloging the Ohn'ahran Plains
+				["coord"] = { 72.9, 72.8, OHNAHRAN_PLAINS }
+			}),
 			--AS
 			--q(70100),	-- Cataloging the Azure Span
 			--T
-			--q(70110),	-- Cataloging Thaldraszus
-			--q(70699),	-- Cataloging Thaldraszus
+			q(70110, {	-- Cataloging Thaldraszus
+				["coord"] = { 51, 42, THALDRASZUS }
+			}),
+			q(70699, {	-- Cataloging Thaldraszus
+				["coord"] = { 51, 42, THALDRASZUS }
+			}),
 		})),
 	}),
 })));

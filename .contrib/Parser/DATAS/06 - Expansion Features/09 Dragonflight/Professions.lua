@@ -336,6 +336,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? lol
 				-- ["sourceQuest"] = ,
 			}),
+			o(380619, {	-- Curious Ingots
+				["questID"] = 70312,
+				["coord"] = { 65.6, 25.7, THE_WAKING_SHORES },
+				["g"] = {
+					i(201005),	-- Curious Ingots
+				},
+			}),
 			o(380598, {	-- Singed Chest
 				["questID"] = 70296,
 				["coord"] = { 35.6, 64.5, THE_WAKING_SHORES },

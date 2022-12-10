@@ -25,11 +25,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70415, {	-- Dragonrider Racing - Apex Canopy River Run
 					["coord"] = { 23.2, 84.2, THE_WAKING_SHORES }
 				}),
-				
 				q(70410, {	-- Dragonrider Racing - Flashfrost Flyover
 					["coord"] = { 62.8, 74.0, THE_WAKING_SHORES }
 				}),
-				
 				q(70418, {	-- Dragonrider Racing - Wild Preserve Circuit
 					["coord"] = { 42.6, 94.4, THE_WAKING_SHORES }
 				}),
@@ -51,6 +49,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70712, {	-- Dragonrider Racing - River Rapids Route
 					["coord"] = { 43.8, 66.8, OHNAHRAN_PLAINS }
 				}),
+				q(70419, {	-- Dragonrider Racing - Sundapple Copse Circuit
+					["coord"] = { 63.8, 30.4, OHNAHRAN_PLAINS }
+				}),
 				-- Unconfirmed
 				--[[
 				q(70422, {	-- Dragonrider Racing - Emerald Garden Ascent
@@ -62,10 +63,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70421, {	-- Dragonrider Racing - Ravine River Run
 					["coord"] = { 80.8, 72.0, OHNAHRAN_PLAINS }
 				}),
-				
-				q(70419, {	-- Dragonrider Racing - Sundapple Copse Circuit
-					["coord"] = { 63.8, 30.4, OHNAHRAN_PLAINS }
-				}),
 				--]]
 
 					-- The Azure Span --
@@ -75,14 +72,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70426, {	-- Dragonrider Racing - Azure Span Slalom
 					["coord"] = { 20.8, 22.6, THE_AZURE_SPAN },
 				}),
+				q(70429, {	-- Dragonrider Racing - Frostland Flyover
+					["coord"] = { 48.4, 35.8, THE_AZURE_SPAN }
+				}),
 				-- Unconfirmed
 				--[[
 				q(70430, {	-- Dragonrider Racing - Archive Ambit
 					["coord"] = { 42.2, 56.8, THE_AZURE_SPAN }
-				}),
-				
-				q(70429, {	-- Dragonrider Racing - Frostland Flyover
-					["coord"] = { 48.4, 35.8, THE_AZURE_SPAN }
 				}),
 				q(70428, {	-- Dragonrider Racing - Iskaara Tour
 					["coord"] = { 16.4, 49.4, THE_AZURE_SPAN }
@@ -99,18 +95,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70435, {	-- Dragonrider Racing - Garden Gallivant
 					["coord"] = { 39.4, 76.2, THALDRASZUS }
 				}),
-				-- Unconfirmed
-				--[[
 				q(70434, {	-- Dragonrider Racing - Academy Ascent
 					["coord"] = { 60.2, 41.8, THALDRASZUS }
 				}),
+				-- Unconfirmed
+				--[[
 				q(70436, {	-- Dragonrider Racing - Caverns Criss-Cross
 					["coord"] = { 58.0, 33.6, THALDRASZUS }
 				}),
 				q(70433, {	-- Dragonrider Racing - Cliffside Circuit
 					["coord"] = { 37.6, 49.0, THALDRASZUS }
 				}),
-				
 				q(70432, {	-- Dragonrider Racing - Passage Pathway
 					["coord"] = { 57.2, 66.8, THALDRASZUS }
 				}),

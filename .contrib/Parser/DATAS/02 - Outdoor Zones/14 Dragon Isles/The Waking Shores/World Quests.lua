@@ -23,6 +23,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			pvp(q(67005, {	-- How to Train a Proto-Drake
 				["coord"] = { 40, 89, THE_WAKING_SHORES }
 			})),
+			q(66833, {	-- Marmoni in Distress
+				["coord"] = { 78.1, 31.6, THE_WAKING_SHORES }
+			}),
 			q(70172, {	-- Mountain Mysteries
 				-- ["coord"] = { 49.3, 53.4, THE_WAKING_SHORES }
 			}),

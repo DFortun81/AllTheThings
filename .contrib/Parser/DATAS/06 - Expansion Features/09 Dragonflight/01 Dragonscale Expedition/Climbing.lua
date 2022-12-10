@@ -42,9 +42,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 			}),
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
-				--q(70655, {	-- Leaves from the Vine
-				--	["coord"] = { 82.9, 31.8, OHNAHRAN_PLAINS },
-				--}),
+				q(70655, {	-- Leaves from the Vine
+					["coord"] = { 82.9, 31.8, OHNAHRAN_PLAINS },
+				}),
 				--q(70656, {	-- Not Mushroom For Error
 				--	["coord"] = { 44.6, 50.1, THALDRASZUS },
 				--}),
@@ -76,7 +76,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		q(72560),	-- Triggered after completing Climb Every Mountain (questID 65421)
-		q(72002),	-- first daily looted bonus supplies (Enchanted Compass) while on climbing WQ
+		q(72002),	-- first daily looted bonus supplies (Enchanted Compass) while on climbing WQ (???)
 		q(71999),	-- second daily looted bonus supplies (Enchanted Compass) while on climbing WQ (70652)
+		q(72001),	-- first daily looted bonus supplies (Enchanted Compass) while on climbing WQ (70655)
 	}),
 })));

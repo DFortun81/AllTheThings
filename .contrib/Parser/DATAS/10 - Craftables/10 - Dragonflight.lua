@@ -1954,6 +1954,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(193261),	-- Bite-Sized Morsel
 			i(193253),	-- Cacophonous Thunderscale
 			i(193251),	-- Crystalspine Fur
+			i(198837),	-- Curious Hide Scraps
 			i(193216),	-- Dense Hide+
 			i(193217),	-- Dense Hide++
 			i(193218),	-- Dense Hide+++
@@ -2155,6 +2156,8 @@ root("HiddenQuestTriggers", {
 			q(71958),	-- First Titan-touched Draconium Deposit
 			q(71959),	-- First Primal Serevite Deposit
 			q(71960),	-- First Primal Draconium Deposit
+			q(71967),	-- First Overload Infurious Node
+			q(71964),	-- First Overload Hardened Node
 			-- TODO: these are weekly, perhaps track them normally
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
 			q(72160),	-- Iridescent Ore Fragments
@@ -2518,10 +2521,10 @@ root("HiddenQuestTriggers", {
 			q(71773),	-- Tuskarr Bean Bag
 		}),
 		--]]
-		--[[
 		prof(SKINNING, {
+			q(70381),	-- Curious Hide Scraps #1
+			q(70383),	-- Curious Hide Scraps #2
 		}),
-		--]]
 		prof(TAILORING, {
 				-- Woven Cloth	--
 			q(71842),	-- Azureweave Bolt

@@ -14,6 +14,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200869),	-- Ohn Lite Branded Horn (TOY!)
 				},
 			}),
+			o(381981, {	-- Chest of the Flood
+				["questID"] = 71033,
+				["coord"] = { 56.0, 78.7, OHNAHRAN_PLAINS },
+				["isWeekly"] = true,
+			}),
 			o(376581, {	-- Clan Chest
 				["coords"] = {
 					{ 35.3, 37.0, OHNAHRAN_PLAINS },

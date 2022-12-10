@@ -175,7 +175,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(200502, {	-- Ohn'ir Midnight Shoulderpads
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 250 },
-						
+
 						},
 					}),
 						-- RENOWN 21 --
@@ -191,6 +191,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(200543, {	-- Clan Teerai Pennant
 						["cost"] = 45,	-- 45c
 					}),
+				},
+			}),
+			n(186650, {	-- Farrier Roscha
+				["coord"] = { 84.4, 25.0, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198400),	-- Lucky Horseshoe
+					i(198436),	-- Hunting Horseshoe
+					i(198437),	-- Caravan Horseshoe
 				},
 			}),
 			n(196707, {	-- Quartermaster Huseng

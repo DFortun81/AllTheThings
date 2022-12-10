@@ -89,6 +89,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		filter(TRINKET_F, {
 			i(198407),	-- Azure Arcanic Amplifier
 			i(198627),	-- Blood of the Khansguard
+			i(198695),	-- Bottomless Reliquary Satchel
 			i(198490),	-- Bushwhacker's Compass
 			i(198489),	-- Dreamscape Prism
 			i(192797),	-- Gral's Discarded Tooth

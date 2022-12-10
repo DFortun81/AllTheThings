@@ -137,14 +137,30 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(388253),	-- Dense Draconium Net Weights
 					r(388254),	-- Imbu Knot
 					r(388255),	-- Double Imbu Knot
+					-- Not 100% decided on this structure...
+					n(CRAFTABLES, {
+						-- TODO: these shouldn't need cost if the Tuskaar Fishing profession is scanned by ATT
+						i(194510),	-- Iskaaran Harpoon
+					}),
+					n(TREASURES, {
+						o(381511, {	-- Harpoon Head
+							["description"] = "On the anvil in the Tuskaar area.",
+							["coord"] = { 12.9, 48.7, THE_AZURE_SPAN },
+							["g"] = {
+								i(200076),	-- Harpoon Head
+							},
+						}),
+					}),
 				},
 			}),
 		})
 	}),
 })));
+
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
-		q(70793),	-- Triggeres after crafting Iskaaran Fishing Net during Iskaaran Fishing Net (questID 70871)
+		q(70793),	-- Triggered after crafting Iskaaran Fishing Net during Iskaaran Fishing Net (questID 70871)
+		q(70792),	-- Triggered after crafting Iskaaran Harpoon
 		q(72391),	-- Triggered with 'Ice Fishing' (70944)
 		q(67141),	-- Triggered after crafting Iskaaran Ice Axe after Ice Fishing (renown 10)
 		q(67139),	-- Triggered after crafting Flying Fish Bone Charm

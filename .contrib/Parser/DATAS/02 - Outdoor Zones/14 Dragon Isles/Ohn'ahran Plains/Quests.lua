@@ -1283,7 +1283,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 	m(OHNAHRAN_PLAINS, {
 		q(73701),	-- triggered during 'Unwelcome Outsider' (66021)
 		q(71203),	-- daily lockout for 'To Tame A Thunderspine' series
-		
+
 		-- Achievement Honor Our Ancestors
 		q(71167),	-- Maruukai Ancestor
 		q(71168),	-- Timberstep Outpost Ancestor
@@ -1312,6 +1312,5 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 
 		-- Has to do with the Chest Event In the South
 		--q(70511),	-- complete??
-		--q(71033),	-- Loot? Object (381981)
 	}),
 })))

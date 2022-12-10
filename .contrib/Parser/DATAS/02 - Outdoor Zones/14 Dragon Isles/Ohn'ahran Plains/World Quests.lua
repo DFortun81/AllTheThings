@@ -4,9 +4,13 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
+
 			-- q(QUEST, {	-- NAME
-			-- 	-- ["coord"] = { XX, YY, OHNAHRAN_PLAINS }
+				-- ["coord"] = { XX, YY, OHNAHRAN_PLAINS }
 			-- }),
+			q(70067, {	-- A Massage to the Nokhud
+				["coord"] = { 35.7, 39.2, OHNAHRAN_PLAINS }
+			}),
 			q(70623, {	-- Clearing the Skies
 				-- ["coord"] = { XX, YY, OHNAHRAN_PLAINS }
 			}),
@@ -25,20 +29,23 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(70646, {	-- Pressure Valve
 				["coord"] = { 79.2, 76.1, OHNAHRAN_PLAINS }
 			}),
-			q(69990, {	-- The Fields of Ferocity Redux: Lord of Decay!
-				["coord"] = { 53.1, 37.2, OHNAHRAN_PLAINS }
+			q(71154, {	-- Talon Toss: Shooting 101
+				["coord"] = { 60.5, 25.7, OHNAHRAN_PLAINS }
 			}),
 			q(69991, {	-- The Fields of Ferocity Redux: Foe from the Volcano!
 				["coord"] = { 53.8, 37.2, OHNAHRAN_PLAINS }
+			}),
+			q(69990, {	-- The Fields of Ferocity Redux: Lord of Decay!
+				["coord"] = { 53.1, 37.2, OHNAHRAN_PLAINS }
+			}),
+			q(69993, {	-- The Fields of Ferocity Redux: Lost in the Dream!
+				["coord"] = { 53.1, 37.2, OHNAHRAN_PLAINS }
 			}),
 			q(70634, {	-- Lashed Out
 				["coord"] = { 30.9, 52.7, OHNAHRAN_PLAINS }
 			}),
 			q(70652, {	-- Take One Down, Pass It Around
 				["coord"] = { 24.5, 34.7, OHNAHRAN_PLAINS }
-			}),
-			q(70079, {	-- Cataloging the Ohn'ahran Plains
-				["coord"] = { 52, 56.8, OHNAHRAN_PLAINS }
 			}),
 			pvp(q(70209, {	-- Quacks and Attacks
 				["coord"] = { 43.1, 34.8, OHNAHRAN_PLAINS }
@@ -55,22 +62,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(70176, {	-- Web Victims
 				["coord"] = { 44.6, 47.4, OHNAHRAN_PLAINS }
 			}),
+			q(70638, {	-- Wind Breaker
+				["coord"] = { 75.1, 70.2, OHNAHRAN_PLAINS }
+			}),
 
 			--[[
-			q(70067, {	-- A Massage to the Nokhud
-				["coord"] = { 35.7, 39.2, OHNAHRAN_PLAINS }
-			}),
 			q(69988, {	-- Flashy Rocks
 				["coord"] = { 53.2, 50.0, OHNAHRAN_PLAINS }
 			}),
 			q(70634, {	-- Lashed Out
 				["coord"] = { 32.1, 52.0, OHNAHRAN_PLAINS }
-			}),
-			q(70638, {	-- Wind Breaker
-				["coord"] = { 75.1, 70.2, OHNAHRAN_PLAINS }
-			}),
-			q(69993, {	-- The Fields of Ferocity Redux: Lost in the Dream!
-				["coord"] = { 53.1, 37.2, OHNAHRAN_PLAINS }
 			}),
 			--]]
 		})),

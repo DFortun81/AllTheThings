@@ -8,6 +8,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["cr"] = 186678,	-- Chief Grrlgilmesh
 				["coord"] = { 82.0, 31.4, OHNAHRAN_PLAINS },
 			}),
+			i(200196),	-- Nokhud Battle Barding
+			i(200184),	-- Nokhud Battle Helm
+			i(200194),	-- Nokhud Battle Tunic
+			i(200201, {	-- Nokhud Battlegear
+				["cost"] = {
+					{"i",200196,1},	-- 1x Nokhud Battle Barding
+					{"i",200184,1},	-- 1x Nokhud Battle Helm
+					{"i",200194,1},	-- 1x Nokhud Battle Tunic
+				},
+			}),
 			i(194031, {	-- Stormtouched Shards
 				["cr"] = 191541,	-- Craggy Stag
 				["coord"] = { 82.9, 63.5, OHNAHRAN_PLAINS },
