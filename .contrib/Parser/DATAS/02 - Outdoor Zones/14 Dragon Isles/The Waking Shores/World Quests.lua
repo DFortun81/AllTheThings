@@ -14,6 +14,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(69938, {	-- Fishing Frenzy!
 				["coord"] = { 68.8, 71.4, THE_WAKING_SHORES },
 			}),
+			q(72030, {	-- Fishing Frenzy!
+				["coord"] = { 33.6, 63.2, THE_WAKING_SHORES },
+			}),
 			q(66989, {	-- Helpful Harvest
 				["coord"] = { 58.2, 64.7, THE_WAKING_SHORES },
 			}),
@@ -45,9 +48,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 43.2, 58, THE_WAKING_SHORES },
 			})),
 			--[[
-			q(72030, {	-- Fishing Frenzy!
-				["coord"] = { 33.6, 63.2, THE_WAKING_SHORES },
-			}),
 			q(67014, {	-- Gorlocs No More-locs
 				["coord"] = { 80, 39.6, THE_WAKING_SHORES },
 			}),

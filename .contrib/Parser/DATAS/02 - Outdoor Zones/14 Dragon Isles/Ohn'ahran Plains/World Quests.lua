@@ -10,6 +10,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(70623, {	-- Clearing the Skies
 				-- ["coord"] = { XX, YY, OHNAHRAN_PLAINS }
 			}),
+			q(70146, {	-- Highlands Rebuttal
+				["coord"] = { 81.6, 51.3, OHNAHRAN_PLAINS }
+			}),
 			q(70149, {	-- Hope for the Highlands
 				["coord"] = { 85.3, 51.9, OHNAHRAN_PLAINS }
 			}),
@@ -59,9 +62,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			q(69988, {	-- Flashy Rocks
 				["coord"] = { 53.2, 50.0, OHNAHRAN_PLAINS }
-			}),
-			q(70146, {	-- Highlands Rebuttal
-				["coord"] = { 81.6, 51.3, OHNAHRAN_PLAINS }
 			}),
 			q(70634, {	-- Lashed Out
 				["coord"] = { 32.1, 52.0, OHNAHRAN_PLAINS }

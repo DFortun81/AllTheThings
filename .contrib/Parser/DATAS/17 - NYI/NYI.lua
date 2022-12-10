@@ -668,7 +668,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194054),	-- Dredged Seedling
 			i(194055),	-- Primordial Soil
 			i(194061),	-- Suffocating Spores
-			i(194062),	-- Unyielding Stone Chunk
 			i(194063),	-- Glowing Fragment
 			i(194064),	-- Intricate Geode
 			i(194066),	-- Frigid Frostfur Pelt
@@ -753,9 +752,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201005),	-- Curious Ingots
 			i(201006),	-- Draconic Flux
 			i(201007),	-- Ancient Monument
-			i(201008),	-- Molten Ingot
 			i(201009),	-- Falconer Gauntlet Drawings
-			i(201010),	-- Qalashi Weapon Diagram
 			i(201011),	-- Spelltouched Tongs
 			i(201012),	-- Enchanted Debris
 			i(201013),	-- Faintly Enchanted Remains
@@ -981,7 +978,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
 			i(196994),	-- Cliffside Wylderdrake: Short Horns
 			i(196995),	-- Cliffside Wylderdrake: Spiked Horns
-			i(196996),	-- Cliffside Wylderdrake: Branched Horns
 			i(196997),	-- Cliffside Wylderdrake: Split Horns
 			i(196999),	-- Cliffside Wylderdrake: Swept Horns
 			i(197000),	-- Cliffside Wylderdrake: Coiled Horns
@@ -1003,7 +999,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197105),	-- Highland Drake: Spined Chin
 			i(197106),	-- Highland Drake: Finned Head
 			i(197109),	-- Highland Drake: Spiked Head
-			i(197115),	-- Highland Drake: Thorned Jaw
 			i(197116),	-- Highland Drake: Ears
 			i(197118),	-- Highland Drake: Brown Hair
 			i(197119),	-- Highland Drake: Helm

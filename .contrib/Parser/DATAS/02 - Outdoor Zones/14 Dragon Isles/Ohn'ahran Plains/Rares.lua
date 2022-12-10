@@ -213,10 +213,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(187559, {	-- Shade of Grief
 				["crs"] = { 193166 },	-- Solethus's Gravestone
 				["coord"] = { 29.9, 41.1, OHNAHRAN_PLAINS },
-				-- ["questID"] = 69854,
-				-- ["g"] = {
-
-				-- },
+				["questID"] = 74075,
+				["g"] = {
+					i(196996),	-- Cliffside Wylderdrake: Branched Horns
+					i(197115),	-- Highland Drake: Thorned Jaw
+				},
 			}),
 			n(192949, {	-- Skaara
 				["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },

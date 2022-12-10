@@ -1926,6 +1926,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(190395),	-- Serevite Ore+
 			i(190396),	-- Serevite Ore++
 			i(190394),	-- Serevite Ore+++
+			i(194062),	-- Unyielding Stone Chunk
 		}),
 		n(DISCOVERY, {
 			r(389701),	-- Overload Hardened Node
@@ -2137,9 +2138,11 @@ root("HiddenQuestTriggers", {
 			q(71984),	-- First Titan-touched Hochenblume Harvest
 		}),
 		prof(MINING, {
-			q(71950),	-- First Rich Serevite Deposit
 			q(71951),	-- First Draconium Deposit
+			q(71950),	-- First Rich Serevite Deposit
 			q(71952),	-- First Rich Draconium Deposit
+			q(71961),	-- First Infurious Serevite Deposit
+			-- q(TODO),	-- First Infurious Draconium Deposit
 			q(71953),	-- First Molten Serevite Deposit
 			q(71954),	-- First Molten Draconium Deposit
 			q(71955),	-- First Hardened Serevite Deposit
@@ -2148,7 +2151,8 @@ root("HiddenQuestTriggers", {
 			q(71958),	-- First Titan-touched Draconium Deposit
 			q(71959),	-- First Primal Serevite Deposit
 			q(71960),	-- First Primal Draconium Deposit
-			q(66936),	-- Heated Ore Sample
+			-- TODO: these are weekly, perhaps track them normally
+			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
 			q(72160),	-- Iridescent Ore Fragments
 			q(72161),	-- Iridescent Ore Fragments
 			q(72162),	-- Iridescent Ore Fragments

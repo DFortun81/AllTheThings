@@ -15,6 +15,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193664, {	-- Ancient Protector
 				["coord"] = { 59.5, 59.2, THALDRASZUS },
 				["questID"] = 74055,
+				["cost"] = {{"i",197733,4}},	-- 4x Unsustainable Containment Core
 				-- ["g"] = {
 
 				-- },

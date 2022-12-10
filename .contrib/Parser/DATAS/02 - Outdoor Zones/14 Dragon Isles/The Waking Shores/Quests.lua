@@ -1301,6 +1301,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
 					["isDaily"] = true,
 				}),
+				q(72128, {	-- Enkine the Voracious
+					["provider"] = { "n", 193134 },	-- Enkine the Voracious
+					["coord"] = { 40.3, 64.9, THE_WAKING_SHORES },
+					["isDaily"] = true,
+				}),
 				q(70648, {	-- Firava the Rekindler
 					["provider"] = { "n", 195915 },	-- Firava the Rekindler
 					["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },
@@ -1739,6 +1744,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 	m(THE_WAKING_SHORES, {
 		q(66898),	-- triggered during 'The Shadow of His Wings' (65691)
 		q(70872),	-- Quack Weekly Trigger
+		q(70262),	-- triggered with 'Memories Revived' (70268)
 		q(72353),	-- triggeres during 'Adventuring in the Dragon Isles' (72293) when any zone is chosen by player
 		q(70767),	-- triggers when 'Tale of the Outsider' becomes available for Tarjin the Blind
 		q(70768),	-- triggers when 'Tale of the Outsider' completes

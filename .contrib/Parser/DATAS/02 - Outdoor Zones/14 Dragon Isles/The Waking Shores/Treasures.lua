@@ -93,6 +93,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200864),	-- Glimmering Alexstraszite Cluster
 				},
 			}),
+			o(380648, {	-- Odd Book
+				["description"] = "Underneath the Obsidian Citadel.",
+				["coord"] = { 23.2, 60.5, THE_WAKING_SHORES },
+				["g"] = {
+					i(198661),	-- Partially Destroyed Diary
+				},
+			}),
 			o(382325, {	-- Onyx Gem Cluster
 				["description"] = "Cave Entrance at 29.4, 52.6",
 				["coord"] = { 29.4, 47.0, THE_WAKING_SHORES },

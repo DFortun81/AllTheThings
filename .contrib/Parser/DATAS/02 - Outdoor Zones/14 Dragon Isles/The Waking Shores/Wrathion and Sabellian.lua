@@ -175,6 +175,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(202173),	-- Magmote
 					},
 				}),
+				q(66894, {	-- Same as the Old Boss
+					["sourceQuest"] = 66362,	-- First Completion of 'Unlocking our Past' (Igys the Believer)
+					["provider"] = { "n", 191310 },	-- Doventhal the Chosen
+					["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+					["g"] = {
+						i(202173),	-- Magmote
+					},
+				}),
 				q(72456, {	-- Tomes Of Trust
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 					["provider"] = { "n", 188344 },	-- Chydrass
