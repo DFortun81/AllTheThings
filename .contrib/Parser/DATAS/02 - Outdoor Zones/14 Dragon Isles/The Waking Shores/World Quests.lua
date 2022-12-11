@@ -50,6 +50,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			pvp(q(72008, {	-- Overcoming a Mountain: Krolkoth
 				["coord"] = { 43.2, 58, THE_WAKING_SHORES },
 			})),
+			q(70410, {	-- Dragonrider Racing: Flashfrost Flyover
+				["coord"] = { 62.9, 73.5, THE_WAKING_SHORES },
+			}),
+			q(67006, {	-- Quenching the Flame
+				["coord"] = { 67.5, 31.8, THE_WAKING_SHORES },
+			}),
 			--[[
 			q(67014, {	-- Gorlocs No More-locs
 				["coord"] = { 80, 39.6, THE_WAKING_SHORES },
