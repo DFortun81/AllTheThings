@@ -47,9 +47,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			petbattle(q(71145, {	-- The Grand Master
 				["coord"] = { 13.5, 50.0, THE_AZURE_SPAN },
 			})),
-			q(70439, {	-- Wild Arcana [Cobalt]
+			pvp(q(70439, {	-- Wild Arcana [Cobalt]
 				["coord"] = { 51.3, 24.6, THE_AZURE_SPAN },
-			}),
+			})),
 			--[[
 			q(70629, {	-- Assaulting the Shore
 				["coord"] = { 9.6, 42.4, THE_AZURE_SPAN },
