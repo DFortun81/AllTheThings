@@ -2500,6 +2500,7 @@ _.ObjectNames = {
 	[382166] = "The Ruby Feast!",
 	[382325] = "Onyx Gem Cluster",
 	[383625] = "Case of Fresh Gleamfish",
+	[384405] = "Half-Boiled Fish",
 	[500000] = "Inspiration Catalyst Console",
 	[999111] = "Amber Gem Cluster",
 	[9962198] = "Outcast's Makeshift Muckpool",
