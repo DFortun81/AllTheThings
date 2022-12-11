@@ -219,5 +219,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(71184),	-- Triggered with 'While the Iron Is Hot' (66444)
 		q(72753),	-- Triggered with 'While the Iron Is Hot' (66444)
 		q(72393),	-- Triggered with 'Trader's Apparel' (70960)
+		q(72400),	-- Triggered when hitting Renown 11
 	}),
 }));
