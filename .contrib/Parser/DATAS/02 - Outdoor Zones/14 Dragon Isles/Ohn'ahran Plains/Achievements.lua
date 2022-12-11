@@ -183,7 +183,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					crit(4, {	-- Toghusuq Village Ancestor
 						["crs"] = { 197052 },	-- Faraqseng Khan
 						["coord"] = { 73.0, 55.0, OHNAHRAN_PLAINS },
-						["cost"] = { { "i", 192648, 1}, },	-- 1x Pristine Beast Fur
+						["cost"] = { { "i", 202070, 1}, },	-- 1x Exceptional Pelt
 					}),
 					crit(5, {	-- Shikaar Highlands Ancestor
 						["crs"] = { 197053 },	-- Shikari Khan
@@ -203,7 +203,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					crit(8, {	-- Ohn'iri Springs Ancestor
 						["crs"] = { 197056 },	-- Ohn Kanosung
 						["coord"] = { 54.7, 78.4, OHNAHRAN_PLAINS },
-						["cost"] = { { "i", 192644, 1}, },	-- 1x Aeriform Speck
+						["cost"] = { { "i", 202071, 1}, },	-- 1x Elemental Mote
 					}),
 					crit(9, {	-- Teerakai Ancestor
 						["crs"] = { 197057 },	-- Jhakan Khan
