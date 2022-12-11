@@ -62,6 +62,31 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 55.8, 51.8, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
 				}),
+				-- Northmost Camp --
+				q(66698, {	-- Counting Argali
+					--["sourceQuests"] = {  },
+					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
+					["coord"] = { 71.2, 31.5, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+				}),
+				q(65792, {	-- Teeth for a Tooth
+					--["sourceQuests"] = {  },
+					["provider"] = { "n", 185880 },	-- Toluijin
+					["coord"] = { 71.1, 31.3, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+				}),
+				q(65796, {	-- The Best Defense...
+					--["sourceQuests"] = {  },
+					["provider"] = { "n", 185853 },	-- Hadari Khan
+					["coord"] = { 71.4, 31.0, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+				}),
+				q(66711, {	-- Delicay in the Dark
+					--["sourceQuests"] = {  },
+					["provider"] = { "n", 185853 },	-- Hadari Khan
+					["coord"] = { 71.4, 31.0, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+				}),
 				--[[
 				q(67039, {	-- An Amazing Journey
 					--["sourceQuests"] = {  },
@@ -84,9 +109,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 71.4, 31.0, OHNAHRAN_PLAINS },	-- River Camp?
 					["isDaily"] = true,
 				}),
-
-
-
 				-- Next Camp Sight
 				q(70701, {	-- Bakar Dream of Lost Argali
 					--["sourceQuests"] = {  },
@@ -102,32 +124,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["g"] = {
 						i(198691),	-- Howling Heart
 					},
-				}),
-				--
-				q(66698, {	-- Counting Argali
-					--["sourceQuests"] = {  },
-					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
-					["coord"] = { 71.2, 31.5, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
-				}),
-				q(65796, {	-- The Best Defense...
-					--["sourceQuests"] = {  },
-					["provider"] = { "n", 185853 },	-- Hadari Khan
-					["coord"] = { 71.4, 31.0, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
-				}),
-				q(66711, {	-- Delicay in the Dark
-					--["sourceQuests"] = {  },
-					["provider"] = { "n", 185853 },	-- Hadari Khan
-					["coord"] = { 71.4, 31.0, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
-				}),
-				q(65792, {	-- Teeth for a Tooth
-					--["sourceQuests"] = {  },
-					["provider"] = { "n", 185880 },	-- Toluijin
-					["coord"] = { 71.1, 31.3, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
-				}),
+				}),			
 				--]]
 			}),
 		}),
