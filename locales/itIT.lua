@@ -3418,6 +3418,7 @@ for key,value in pairs({
 	[382166] = "Banchetto di Rubino!",	-- The Ruby Feast!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Cassa di Pescilume Freschi",	-- Case of Fresh Gleamfish
+	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "Pozza di Fango Improvvisata dell'Esiliato",	-- Outcast's Makeshift Muckpool

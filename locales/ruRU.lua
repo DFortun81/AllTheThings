@@ -3417,6 +3417,7 @@ for key,value in pairs({
 	[382166] = "Рубиновый Пир!",	-- The Ruby Feast!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Ящик свежих блескорыбок",	-- Case of Fresh Gleamfish
+	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "Самодельная лужа жижи изгоя",	-- Outcast's Makeshift Muckpool

@@ -3427,6 +3427,7 @@ for key,value in pairs({
 	[382166] = "Das Rubinfestmahl!",	-- The Ruby Feast!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Kiste mit frischem Leuchtfisch",	-- Case of Fresh Gleamfish
+	[384405] = "Halbgarer Fisch",	-- Half-Boiled Fish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "Behelfsmäßige Schlammlache des Ausgestoßenen",	-- Outcast's Makeshift Muckpool

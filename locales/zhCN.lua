@@ -3440,6 +3440,7 @@ for key, value in pairs({
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "一箱新鲜的冰湖鱼",	-- Case of Fresh Gleamfish
+	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "流亡者的简易泥池",	-- Outcast's Makeshift Muckpool
