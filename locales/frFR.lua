@@ -3337,7 +3337,7 @@ for key,value in pairs({
 	[376124] = "Sac de vents enchantés",	-- Bag of Enchanted Wind
 	[376175] = "Coffre de fournitures des Gréements",	-- Fullsails Supply Chest
 	[376213] = "Baguette mystérieuse",	-- Mysterious Wand
-	--TODO: [376386] = "Disturbed Dirt",	-- Disturbed Dirt
+	[376386] = "Terre retournée",	-- Disturbed Dirt	--TODO: this was manually translated
 	--TODO: [376426] = "Magic-Bound Chest",	-- Magic-Bound Chest
 	[376451] = "Chronomètre de bronze",	-- Bronze Stopwatch
 	[376580] = "Cache djaradine",	-- Djaradin Cache
@@ -3392,7 +3392,7 @@ for key,value in pairs({
 	[381216] = "Loupe de géomètre",	-- Surveyor's Magnifying Glass
 	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
 	[381277] = "Tonneau de friandises confisquées",	-- Barrel of Confiscated Treats
-	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
+	[381296] = "Désordre horrible",	-- Horrible Mess
 	[381297] = "Bagage égaré",	-- Misplaced Luggage
 	[381353] = "Dent draconique en pierre",	-- Stone Dragontooth
 	[381354] = "Bague en or enveloppée",	-- Wrapped Gold Band
@@ -3409,9 +3409,9 @@ for key,value in pairs({
 	[381511] = "Tête de harpon",	-- Harpoon Head
 	[381650] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Inscriptions à Croc-claque-crame",	-- Fang Flap Fire Signups
-	[381661] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
+	[381661] = "Requête des archives",	-- Archivists' Request
 	[381663] = "La tempête de mana pour les novices",	-- Manastorming For Beginners
-	[381664] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
+	[381664] = "Requête des archives",	-- Archivists' Request
 	[381667] = "Requête des archives",	-- Archivists' Request
 	[381668] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
 	[381669] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
@@ -3422,7 +3422,7 @@ for key,value in pairs({
 	[381701] = "ON RECHERCHE : Mara’nar l’Orageux",	-- WANTED: Mara'nar the Thunderous
 	[381981] = "Coffre du déluge",	-- Chest of the Flood
 	[382029] = "Terre retournée",	-- Disturbed Dirt
-	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
+	[382166] = "Au Festin rubis !",	-- The Ruby Feast!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Caisse de loupiotes fraîches",	-- Case of Fresh Gleamfish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console

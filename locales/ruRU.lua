@@ -3414,7 +3414,7 @@ for key,value in pairs({
 	[381701] = "Разыскивается: Мара'нар Громогласный",	-- WANTED: Mara'nar the Thunderous
 	[381981] = "Сундук Прилива",	-- Chest of the Flood
 	[382029] = "Потревоженная почва",	-- Disturbed Dirt
-	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
+	[382166] = "Рубиновый Пир!",	-- The Ruby Feast!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Ящик свежих блескорыбок",	-- Case of Fresh Gleamfish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console

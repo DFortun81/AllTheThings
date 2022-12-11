@@ -3415,7 +3415,7 @@ for key,value in pairs({
 	[381701] = "RICERCATO: Mara'nar il Tonante",	-- WANTED: Mara'nar the Thunderous
 	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
 	[382029] = "Terra Smossa",	-- Disturbed Dirt
-	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
+	[382166] = "Banchetto di Rubino!",	-- The Ruby Feast!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Cassa di Pescilume Freschi",	-- Case of Fresh Gleamfish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console

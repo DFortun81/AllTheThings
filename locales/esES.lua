@@ -3355,7 +3355,7 @@ for key,value in pairs({
 	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
 	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
 	[377499] = "De los orígenes de las especies dracónicas",	-- On the Origin of Draconic Species
-	--TODO: [377534] = "Delivered Vault",	-- Delivered Vault
+	[377534] = "Cofre entregado",	-- Delivered Vault
 	[377899] = "Rehén oculto de los cornisapos",	-- Hidden Hornswog Hostage
 	[377900] = "Lanza de guerra Nokhud",	-- Nokhud Warspear
 	[378010] = "Tesoro de dragón olvidado",	-- Forgotten Dragon Treasure
@@ -3427,7 +3427,7 @@ for key,value in pairs({
 	[381701] = "SE BUSCA: Mara'nar el Atronador",	-- WANTED: Mara'nar the Thunderous
 	[381981] = "Cofre de la inundación",	-- Chest of the Flood
 	[382029] = "Tierra revuelta",	-- Disturbed Dirt
-	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
+	[382166] = "¡El Festín Rubí!",	-- The Ruby Feast!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Caja de brillopeces frescos",	-- Case of Fresh Gleamfish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
