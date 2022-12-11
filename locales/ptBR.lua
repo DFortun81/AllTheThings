@@ -3338,7 +3338,7 @@ for key,value in pairs({
 	--TODO: [376124] = "Bag of Enchanted Wind",	-- Bag of Enchanted Wind
 	[376175] = "Baú de Suprimentos de Velaplena",	-- Fullsails Supply Chest
 	--TODO: [376213] = "Mysterious Wand",	-- Mysterious Wand
-	--TODO: [376386] = "Disturbed Dirt",	-- Disturbed Dirt
+	[376386] = "Poeira Revolvida",	-- Disturbed Dirt
 	--TODO: [376426] = "Magic-Bound Chest",	-- Magic-Bound Chest
 	[376451] = "Cronômetro de Bronze",	-- Bronze Stopwatch
 	[376580] = "Baú de Djaradin",	-- Djaradin Cache
@@ -3351,7 +3351,7 @@ for key,value in pairs({
 	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
 	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
 	[377499] = "A Origem das Espécies Dracônicas",	-- On the Origin of Draconic Species
-	--TODO: [377534] = "Delivered Vault",	-- Delivered Vault
+	[377534] = "Cofre Entregue",	-- Delivered Vault
 	[377899] = "Refém Zapo-de-chifre Escondido",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	[378010] = "Tesouro do Dragão Esquecido",	-- Forgotten Dragon Treasure
@@ -3392,7 +3392,7 @@ for key,value in pairs({
 	--TODO: [381160] = "Lost Compass",	-- Lost Compass
 	[381216] = "Luneta do Topógrafo",	-- Surveyor's Magnifying Glass
 	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
-	--TODO: [381277] = "Barrel of Confiscated Treats",	-- Barrel of Confiscated Treats
+	[381277] = "Barril de Gostosuras Confiscadas",	-- Barrel of Confiscated Treats
 	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
 	[381297] = "Bagagem Extraviada",	-- Misplaced Luggage
 	--TODO: [381353] = "Stone Dragontooth",	-- Stone Dragontooth
@@ -3401,7 +3401,7 @@ for key,value in pairs({
 	--TODO: [381356] = "Coldwashed Dragonclaw",	-- Coldwashed Dragonclaw
 	[381357] = "Tabuleta de Pedra",	-- Stone Tablet
 	[381358] = "Tabuleta de Pedra",	-- Stone Tablet
-	--TODO: [381359] = "Stone Tablet",	-- Stone Tablet
+	[381359] = "Tabuleta de Pedra",	-- Stone Tablet
 	--TODO: [381361] = "Precious Stone Fragment",	-- Precious Stone Fragment
 	--TODO: [381362] = "Chunk of Sculpture",	-- Chunk of Sculpture
 	[381483] = "Prêmio de Saguiri",	-- Marmoni's Prize
@@ -3416,14 +3416,14 @@ for key,value in pairs({
 	[381667] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381668] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381669] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
-	[381670] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381670] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381671] = "Pedido dos Arquivistas",	-- Archivists' Request
-	[381672] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381672] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381687] = "Nota Descartada",	-- Discarded Note
 	[381701] = "PROCURA-SE: Mara'nar, o Trovejante",	-- WANTED: Mara'nar the Thunderous
 	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
-	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
-	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
+	[382029] = "Poeira Revolvida",	-- Disturbed Dirt
+	[382166] = "Banquete Rubi!",	-- The Ruby Feast!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Caixa de Peixe-brilho Fresco",	-- Case of Fresh Gleamfish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
