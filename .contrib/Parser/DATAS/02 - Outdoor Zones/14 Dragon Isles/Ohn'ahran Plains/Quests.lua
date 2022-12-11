@@ -1314,5 +1314,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 
 		-- Has to do with the Chest Event In the South
 		--q(70511),	-- complete??
+		q(70922),	-- Caravan Stages swapping
 	}),
 })))
