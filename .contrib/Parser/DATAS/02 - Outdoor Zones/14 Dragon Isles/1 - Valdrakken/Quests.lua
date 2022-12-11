@@ -27,8 +27,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 
 			-- SIDE 2
-			q(71238, {	-- The Ruby Fest!
-				["provider"] = { "o", 382166 },	-- The Ruby Fest!
+			q(71238, {	-- The Ruby Feast!
+				["provider"] = { "o", 382166 },	-- The Ruby Feast!
 				["coords"] = {
 					{ 47.8, 46.6, VALDRAKKEN },
 					{ 29.2, 67.9, VALDRAKKEN },
@@ -37,7 +37,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["isBreadcrumb"] = true,
 			}),
 			q(70930, {	-- All Tea, No Shadeleaf
-				["sourceQuests"] = { 71238 },	-- The Ruby Fest!
+				["sourceQuests"] = { 71238 },	-- The Ruby Feast!
 				["provider"] = { "n", 189479 },	-- Rumiastrasza
 				["coord"] = { 61.5, 11.8, VALDRAKKEN },
 			}),

@@ -3437,7 +3437,7 @@ for key, value in pairs({
 	[381701] = "通缉：雷鸣者玛拉纳尔",	-- WANTED: Mara'nar the Thunderous
 	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
 	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
-	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
+	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "一箱新鲜的冰湖鱼",	-- Case of Fresh Gleamfish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console

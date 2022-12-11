@@ -3337,7 +3337,7 @@ for key,value in pairs({
 	[376124] = "Sac de vents enchantés",	-- Bag of Enchanted Wind
 	[376175] = "Coffre de fournitures des Gréements",	-- Fullsails Supply Chest
 	[376213] = "Baguette mystérieuse",	-- Mysterious Wand
-	--TODO: [376386] = "Disturbed Dirt",	-- Disturbed Dirt
+	[376386] = "Terre retournée",	-- Disturbed Dirt	--TODO: this was manually translated
 	--TODO: [376426] = "Magic-Bound Chest",	-- Magic-Bound Chest
 	[376451] = "Chronomètre de bronze",	-- Bronze Stopwatch
 	[376580] = "Cache djaradine",	-- Djaradin Cache
