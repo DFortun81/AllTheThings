@@ -23,11 +23,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(70160, {	-- Alchemical Thesis Defense
 				["coord"] = { 62.3, 36.9, THALDRASZUS }
 			}),
-			q(71225, {	-- Blown Through Wind: Rhuzast
+			pvp(q(71225, {	-- Blown Through Wind: Rhuzast
 				["coord"] = { 53, 40.2, THALDRASZUS },
-			}),
+			})),
 			petbattle(q(71180, {	-- You Have to Start Somewhere
 				["coord"] = { 56.3, 49.2, THALDRASZUS }
+			})),
+			petbattle(q(71166, {	-- The Oldest Dragonfly
+				["coord"] = { 39.6, 73.4, THALDRASZUS }
 			})),
 			-- q(72090, {	-- Disrupting the Primalist Plan
 			-- 	["coord"] = { 61.5, 50.0, PRIMALIST_TOMORROW }
