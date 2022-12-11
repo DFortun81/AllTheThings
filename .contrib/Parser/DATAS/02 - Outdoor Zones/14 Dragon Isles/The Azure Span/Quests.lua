@@ -1715,6 +1715,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(72254, {	-- Fisherman Tinnak's Ghost
 					["provider"] = { "n", 193691 },	-- Fisherman Tinnak <Angered Ghost>
 					["coord"] = { 49.5, 36.1, THE_AZURE_SPAN },
+					["repeatable"] = true,
 				}),
 				q(66718, {	-- Gnolls Must Die
 					["sourceQuests"] = { 66709 },	-- Field Medic 101
