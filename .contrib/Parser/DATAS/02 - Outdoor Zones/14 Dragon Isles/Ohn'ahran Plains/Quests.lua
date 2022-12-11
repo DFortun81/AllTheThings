@@ -1084,6 +1084,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "n", 199118 },	-- Celormu
 				["coord"] = { 88, 36.2, OHNAHRAN_PLAINS },
 			}),
+			q(70766, {	-- The Fractured Flame
+				["sourceQuests"] = { 70507 },	-- The Insight of Tyr
+				["provider"] = { "i", 199790 },	-- Makko's Journal Cover
+				["coord"] = { 44, 66, OHNAHRAN_PLAINS },
+				["description"] = "Drops from entrhalled Murlocs during |cffffff00The Insight of Tyr|r.",
+			}),
 			n(BONUS_OBJECTIVES, {
 				-- q(quest, {	-- npc
 				-- 	["provider"] = { "n", npcid },	-- npc
