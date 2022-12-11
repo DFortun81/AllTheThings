@@ -3355,9 +3355,13 @@ for key,value in pairs({
 	[380547] = "Насыщенное гнилью дубильное масло",	-- Decay-Infused Tanning Oil
 	--TODO: [380554] = "Well-Danced Drum",	-- Well-Danced Drum
 	[380587] = "Ящик с выделанными шкурами",	-- Crate of Treated Hides
+	--TODO: [380598] = "Singed Chest",	-- Singed Chest
 	[380602] = "Благословленная ветром шкура",	-- Wind-Blessed Hide
 	[380615] = "Сумка браконьера",	-- Poacher's Pack
+	[380617] = "Диаграмма оружия куалаши",	-- Qalashi Weapon Diagram
 	[380618] = "Драконий плавень",	-- Draconic Flux
+	[380619] = "Любопытные слитки",	-- Curious Ingots
+	[380648] = "Странная книга",	-- Odd Book
 	[380653] = "Воздушный змей Йенну",	-- Yennu's Kite
 	[380654] = "Бригантина мертвеца",	-- Dead Man's Chestplate
 	[380840] = "Порванная сумка наездника",	-- Torn Riding Pack
@@ -3394,6 +3398,7 @@ for key,value in pairs({
 	[381483] = "Трофей мармони",	-- Marmoni's Prize
 	[381484] = "Хорошо сохранившаяся кость",	-- Well-Preserved Bone
 	[381485] = "Потерянное мыло путешественника",	-- Adventurer's Lost Soap Bar
+	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
 	[381650] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Запись на игру в \"Клык, взмах, огонь\"",	-- Fang Flap Fire Signups
 	[381661] = "Просьба архивариуса",	-- Archivists' Request
@@ -3407,6 +3412,7 @@ for key,value in pairs({
 	[381672] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
 	[381687] = "Выброшенная записка",	-- Discarded Note
 	[381701] = "Разыскивается: Мара'нар Громогласный",	-- WANTED: Mara'nar the Thunderous
+	[381981] = "Сундук Прилива",	-- Chest of the Flood
 	[382029] = "Потревоженная почва",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster

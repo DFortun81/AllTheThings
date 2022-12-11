@@ -3363,9 +3363,13 @@ for key,value in pairs({
 	[380547] = "Huile de tannage imprégnée de putréfaction",	-- Decay-Infused Tanning Oil
 	--TODO: [380554] = "Well-Danced Drum",	-- Well-Danced Drum
 	[380587] = "Caisse de peaux traitées",	-- Crate of Treated Hides
+	[380598] = "Coffre roussi",	-- Singed Chest
 	[380602] = "Peau bénie par le vent",	-- Wind-Blessed Hide
 	[380615] = "Sac de braconnage",	-- Poacher's Pack
+	[380617] = "Diagramme d’arme qalashi",	-- Qalashi Weapon Diagram
 	[380618] = "Flux draconique",	-- Draconic Flux
+	[380619] = "Lingots étranges",	-- Curious Ingots
+	[380648] = "Livre étrange",	-- Odd Book
 	[380653] = "Cerf-volant de Yennu",	-- Yennu's Kite
 	[380654] = "Pansière du Mort",	-- Dead Man's Chestplate
 	[380840] = "Sac de monte déchiré",	-- Torn Riding Pack
@@ -3402,6 +3406,7 @@ for key,value in pairs({
 	[381483] = "Trésor de marmoni",	-- Marmoni's Prize
 	[381484] = "Os bien conservé",	-- Well-Preserved Bone
 	[381485] = "Barre de savon égarée",	-- Adventurer's Lost Soap Bar
+	[381511] = "Tête de harpon",	-- Harpoon Head
 	[381650] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Inscriptions à Croc-claque-crame",	-- Fang Flap Fire Signups
 	[381661] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
@@ -3415,6 +3420,7 @@ for key,value in pairs({
 	[381672] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
 	[381687] = "Note abandonnée",	-- Discarded Note
 	[381701] = "ON RECHERCHE : Mara’nar l’Orageux",	-- WANTED: Mara'nar the Thunderous
+	[381981] = "Coffre du déluge",	-- Chest of the Flood
 	[382029] = "Terre retournée",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster

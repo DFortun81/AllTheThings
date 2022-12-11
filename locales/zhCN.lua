@@ -3378,9 +3378,13 @@ for key, value in pairs({
 	[380547] = "腐朽灌注的鞣革用油",	-- Decay-Infused Tanning Oil
 	--TODO: [380554] = "Well-Danced Drum",	-- Well-Danced Drum
 	--TODO: [380587] = "Crate of Treated Hides",	-- Crate of Treated Hides
+	--TODO: [380598] = "Singed Chest",	-- Singed Chest
 	[380602] = "风佑之皮",	-- Wind-Blessed Hide
 	[380615] = "偷猎者的背包",	-- Poacher's Pack
+	[380617] = "卡拉希武器图表",	-- Qalashi Weapon Diagram
 	--TODO: [380618] = "Draconic Flux",	-- Draconic Flux
+	[380619] = "奇特的金属锭",	-- Curious Ingots
+	--TODO: [380648] = "Odd Book",	-- Odd Book
 	[380653] = "耶努的风筝",	-- Yennu's Kite
 	[380654] = "亡者胸甲",	-- Dead Man's Chestplate
 	[380840] = "破损的骑行背包",	-- Torn Riding Pack
@@ -3417,6 +3421,7 @@ for key, value in pairs({
 	[381483] = "狨猴的奖品",	-- Marmoni's Prize
 	[381484] = "保存完好的骨头",	-- Well-Preserved Bone
 	[381485] = "冒险者丢失的肥皂块",	-- Adventurer's Lost Soap Bar
+	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
 	[381650] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "“炽齿翅”报名处",	-- Fang Flap Fire Signups
 	[381661] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
@@ -3430,6 +3435,7 @@ for key, value in pairs({
 	[381672] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381687] = "被丢弃的笔记",	-- Discarded Note
 	[381701] = "通缉：雷鸣者玛拉纳尔",	-- WANTED: Mara'nar the Thunderous
+	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
 	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
