@@ -220,5 +220,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72753),	-- Triggered with 'While the Iron Is Hot' (66444)
 		q(72393),	-- Triggered with 'Trader's Apparel' (70960)
 		q(72400),	-- Triggered when hitting Renown 11
+		q(72782),	-- Triggered with 'A Lost Tribe' (68863)
 	}),
 }));
