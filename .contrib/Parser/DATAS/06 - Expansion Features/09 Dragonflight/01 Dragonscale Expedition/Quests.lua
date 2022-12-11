@@ -237,7 +237,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 				["g"] = {
 					crit(1, {	-- A Mystery, Sealed
-						["achievementID"] = 16808,	-- Friends of the Dragon Isles
+						["achievementID"] = 16808,	-- Friend of the Dragon Isles
 					}),
 				},
 			}),

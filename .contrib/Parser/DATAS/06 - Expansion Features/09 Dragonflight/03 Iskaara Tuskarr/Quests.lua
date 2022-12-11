@@ -188,7 +188,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(201783),	-- Tutaqan's Commendation
 					crit(4, {	-- The Chieftain's Duty
-						["achievementID"] = 16808,	-- Friends of the Dragon Isles
+						["achievementID"] = 16808,	-- Friend of the Dragon Isles
 					}),
 				}
 			}),

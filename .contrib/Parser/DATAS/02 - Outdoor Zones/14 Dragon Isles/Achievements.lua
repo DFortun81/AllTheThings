@@ -82,6 +82,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				16301,	-- Treasures of Thaldraszus
 			}},
 		}),
+		ach(16808),	-- Friend of the Dragon Isles
 		-- TODO: NOT COMPLETED YET!!
 		ach(16323),	-- Fragments of History
 		ach(16446),	-- That's Pretty Neat!
