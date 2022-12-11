@@ -392,5 +392,8 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(70039),	-- Flag at 50.2, 81.6, THALDRASZUS
 		q(71223),	-- Flag at 65.7, 75.0, THALDRASZUS
 		q(71224),	-- Flag at 64.6, 56.7, THALDRASZUS
+
+		-- Quest sequences
+		q(70570),	-- triggered when speaking with Watcher Koranos during 'Speak with Koranos' (66673)
 	}),
 })));

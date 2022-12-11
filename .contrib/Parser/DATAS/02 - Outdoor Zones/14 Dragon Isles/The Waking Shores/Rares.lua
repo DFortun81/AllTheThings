@@ -116,7 +116,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					{ 22.0, 64.9, THE_WAKING_SHORES },	-- Fishing Spot
 				},
 				["description"] = "Can only be summoned by fishing with the Lava Spices buff active at 22 65 in the Waking Shores. Lava Spices can be obtained by killing Restless Lava, Lavaslurpers and Basalt Shells along the lava river leading to the rare.",
-				["questID"] = 73072,	-- is 74010 alliance?
+				["questID"] = 73072,
 				["isDaily"] = true,
 				["g"] = {
 					i(200217),	-- Blazing Essence
@@ -212,8 +212,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(186827, {	-- Magmaton
-				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
-				-- ["questID"] = ,
+				["coord"] = { 40.0, 64.5, THE_WAKING_SHORES },
+				["questID"] = 74010,
 				["g"] = {
 					i(197149),	-- Highland Drake: Club Tail (DM!)
 				},

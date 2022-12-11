@@ -56,7 +56,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["repeatable"] = true,
 					["g"] = {
 						i(201755),	-- Obsidian Forgemaster's Strongbox
-						i(201754),	-- Obsidian Forgemaster's Cache
+						i(201754, {	-- Obsidian Forgemaster's Cache
+							["sym"] = {{"select","itemID",
+								-- notable drops
+								194483,	-- Plans: Obsidian Seared Slicer (RECIPE!)
+							}},
+						}),
 					},
 				}),
 				q(66129, {	-- Unlocking Our Past
@@ -647,8 +652,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(198072, {	-- Gold-Banded Dragon Tooth
-					["cr"] = 187813,	-- Qalashi Wallcrasher
+				i(199915, {	-- Ancient Obsidian Charm
+					-- ["cr"] = creature,	-- name
+				}),
+				i(201041, {	-- Citadel Crusher's Cloak
+					["description"] = "Drops from mobs around the Obsidian Citadel.",
 				}),
 				i(198071, {	-- Flamecarved Bone
 					["cr"] = 196336,	-- Qalashi Flameslinger
@@ -656,12 +664,40 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				i(199831, {	-- Forgotten Dragon Crest
 					-- ["cr"] = creature,	-- name
 				}),
+				i(198072, {	-- Gold-Banded Dragon Tooth
+					["cr"] = 187813,	-- Qalashi Wallcrasher
+				}),
+				i(191251, {	-- Key Fragments
+					["description"] = "Drops from mobs around the Obsidian Citadel.",
+				}),
+				i(193201, {	-- Key Framing
+					["description"] = "Drops from mobs around the Obsidian Citadel.",
+				}),
 				i(193600, {	-- Lost Battlepack
 					-- ["cr"] = creature,	-- name
 				}),
-				i(199915, {	-- Ancient Obsidian Charm
-					-- ["cr"] = creature,	-- name
+				i(200224, {	-- Mark of Sargha
+					["description"] = "Drops from mobs around the Obsidian Citadel.",
 				}),
+				i(202173, {	-- Magmote
+					["description"] = "Drops from mobs around the Obsidian Citadel after obtaining The Worldbreaker title.",
+				}),
+				i(194508, {	-- Plans: Alvin the Anvil (RECIPE!)
+					["description"] = "Drops Around Obsidian Citadel from Powerful Blacksmiths.",
+				}),
+				i(194481, {	-- Plans: Obsidian Seared Crusher (RECIPE!)
+					["description"] = "Drops Around Obsidian Citadel.",
+				}),
+				i(194476, {	-- Plans: Obsidian Seared Hexsword (RECIPE!)
+					["description"] = "Drops Around Obsidian Citadel.",
+				}),
+				i(194483, {	-- Plans: Obsidian Seared Slicer (RECIPE!)
+					["description"] = "Drops Around Obsidian Citadel.",
+				}),
+				i(201991, {	-- Sargh's Signet
+					["description"] = "Drops from mobs around the Obsidian Citadel.",
+				}),
+				i(200857),	-- Talisman of Sargha (TOY!)
 				i(191255, {	-- Greater Obsidian Key
 					["description"] = "This Item will be deleted immediately if leaving the area!",
 					["cost"] = {
@@ -676,7 +712,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						{"i",193201, 3},	-- 3x Key Framing
 					},
 				}),
-				i(200857),	-- Talisman of Sargha (TOY!)
 			}),
 		}),
 	}),

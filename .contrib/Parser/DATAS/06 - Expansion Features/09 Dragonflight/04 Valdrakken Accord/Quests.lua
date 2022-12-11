@@ -252,6 +252,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201715),	-- Notebook of Crafting Knowledge
 				},
 			}),
+				-- RENOWN 15 --
+			q(70895, {	-- Soaring in Style
+				["description"] = "Requires Renown 15.",
+				["provider"] = { "n", 185561 },	-- Kaestrasz
+				["coord"] = { 46.8, 78.8, VALDRAKKEN },
+				["g"] = {
+					i(196998),	-- Cliffside Wylderdrake: Hook Horns (DM!)
+					i(197009),	-- Cliffside Wylderdrake: Scaled Pattern (DM!)
+					i(197020),	-- Cliffside Wylderdrake: Spear Tail (DM!)
+				},
+			}),
 		}),
 	}),
 })));
@@ -268,5 +279,6 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(70974),	-- triggers right after 'Hard Lock Life' (67079)
 		q(72757),	-- triggered with 'The Silver Purpose' (67084)
 		q(72694),	-- triggered with 'Wielding Titanic Might' (70903)
+		q(72283),	-- triggered with 'Soaring in Style' (70895)
 	}),
 })));

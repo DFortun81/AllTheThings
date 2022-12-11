@@ -1206,7 +1206,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 27.9,45.6, VALDRAKKEN },
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			q(74115, {		-- Inscription-Order: Tailoring
+			q(74115, {	-- Inscription-Order: Tailoring
 				["name"] = "Inscription-Order: Tailoring",
 				["description"] = "Requires a crafting order from inscription.",
 				["provider"] = { "i", 194698 },	-- Draconic Treatise on Tailoring

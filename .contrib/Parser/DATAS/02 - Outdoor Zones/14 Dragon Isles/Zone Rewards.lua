@@ -32,7 +32,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 
 		-- Mining 1/3
-		i(202011),	-- Elementally-Charged Stone
 
 
 		i(193891),	-- Experimental Substance
