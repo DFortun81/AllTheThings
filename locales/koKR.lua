@@ -3364,9 +3364,13 @@ for key,value in pairs({
 	--TODO: [380547] = "Decay-Infused Tanning Oil",	-- Decay-Infused Tanning Oil
 	--TODO: [380554] = "Well-Danced Drum",	-- Well-Danced Drum
 	--TODO: [380587] = "Crate of Treated Hides",	-- Crate of Treated Hides
+	--TODO: [380598] = "Singed Chest",	-- Singed Chest
 	--TODO: [380602] = "Wind-Blessed Hide",	-- Wind-Blessed Hide
 	[380615] = "밀렵꾼의 배낭",	-- Poacher's Pack
+	[380617] = "칼라시 무기 일람표",	-- Qalashi Weapon Diagram
 	--TODO: [380618] = "Draconic Flux",	-- Draconic Flux
+	[380619] = "독특한 주괴",	-- Curious Ingots
+	--TODO: [380648] = "Odd Book",	-- Odd Book
 	--TODO: [380653] = "Yennu's Kite",	-- Yennu's Kite
 	[380654] = "죽은 자의 가슴갑옷",	-- Dead Man's Chestplate
 	[380840] = "찢어진 탈것 배낭",	-- Torn Riding Pack
@@ -3403,6 +3407,7 @@ for key,value in pairs({
 	[381483] = "마르모니의 보상",	-- Marmoni's Prize
 	[381484] = "잘 보존된 뼈",	-- Well-Preserved Bone
 	[381485] = "모험가의 잃어버린 비누",	-- Adventurer's Lost Soap Bar
+	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
 	[381650] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	--TODO: [381653] = "Fang Flap Fire Signups",	-- Fang Flap Fire Signups
 	[381661] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
@@ -3416,6 +3421,7 @@ for key,value in pairs({
 	[381672] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	--TODO: [381687] = "Discarded Note",	-- Discarded Note
 	--TODO: [381701] = "WANTED: Mara'nar the Thunderous",	-- WANTED: Mara'nar the Thunderous
+	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
 	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
