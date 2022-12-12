@@ -24,20 +24,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 59.6, 70.1, THALDRASZUS },
 				["questID"] = 73987,
 				["g"] = {
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
+					-- is part of the DF>Global Rare Loottable
 				},
 			}),
 			n(193658, {	-- Corrupted Proto-Dragon
@@ -72,20 +59,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 55.6, 77.4, THALDRASZUS },
 				["questID"] = 72814,
 				["g"] = {
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
+					-- is part of the DF>Global Rare Loottable
 				},
 			}),
 			n(193126, {	-- Innumerable Ruination
@@ -99,20 +73,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 36.7, 72.8, THALDRASZUS },
 				["questID"] = 72842,
 				["g"] = {
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
+					-- is part of the DF>Global Rare Loottable
 				},
 			}),
 			n(193668, {	-- Lookout Mordren
@@ -202,20 +163,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["cost"] = { { "i", 200949, 1 }, },	-- 1xCase of Fresh Gleamfish
 				["g"] = {
 					i(200999),	-- The Super Shellkhan Gang (TOY!)
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
+					-- is part of the DF>Global Rare Loottable
 				},
 			}),
 			n(183984, {	-- The Weeping Vilomah
@@ -243,20 +191,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 47.9, 49.8, THALDRASZUS },
 				-- ["questID"] = 69850,
 				["g"] = {
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
+					-- is part of the DF>Global Rare Loottable
 				},
 			}),
 		}),

@@ -144,20 +144,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(197135),	-- Highland Drake: Toothy Mouth (DM!)
 					i(200247),	-- Inextinguishable Gavel
 					i(200133),	-- Volcanic Chakram
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
+					-- is part of the DF>Global Rare Loottable
 				},
 			}),
 			n(193154, {	-- Forgotten Gryphon
@@ -258,20 +245,23 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
 				["questID"] = 72843,
 				["g"] = {
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
+					-- is part of the DF>Global Rare Loottable
+				},
+			}),
+			n(193710, {	-- Seereel, the Spring <Lunker>
+				["coord"] = { 66.0, 74.8, THE_WAKING_SHORES },
+				["description"] = "Chance to spawn after using 5 Ominous Conches at the Lurker Sighting.",
+			--	["questID"] = 72850,
+				["isDaily"] = true,
+				["g"] = {
+					i(197001),	-- Cliffside Wylderdrake: Finned Cheek
+					i(197098),	-- Highland Drake: Finned Back
+					i(200164),	-- iceloop
+					i(200086),	-- Khaz'gorite-infused Resin
+					i(200245),	-- leviathan-lure
+					i(200563),	-- Primal Ritual Shell
+					i(200187),	-- Rod of Glacial Force
+					i(200552),	-- Torrent Caller's Shell
 				},
 			}),
 			n(193271, {	-- Shadeslash Trakken
@@ -305,6 +295,21 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200209),	-- Firebreather's Cowl
 				},
 			}),
+			n(193634, {	-- Swog'ranka <Lunker>
+				["coord"] = { 66.0, 74.8, THE_WAKING_SHORES },
+				["description"] = "Chance to spawn after using 5 Ominous Conches at the Lurker Sighting.",
+				["questID"] = 74084,
+				["isDaily"] = true,
+				["g"] = {
+					i(197001),	-- Cliffside Wylderdrake: Finned Cheek
+					i(200086),	-- Khaz'gorite-infused Resin
+					i(200552),	-- Torrent Caller's Shell
+					i(200448),	-- Abyssal Ward
+					i(200151),	-- Seamist Blade
+					i(197589),	-- Windborne Velocidrake: Large Head Fin
+					-- is part of the DF>Global Rare Loottable
+				},
+			}),
 			n(193171, {	-- Terillod the Devout
 				["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
 				["questID"] = 72850,
@@ -317,20 +322,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 45.4, 35.6, THE_WAKING_SHORES },
 				-- ["questID"] = 73889, -- confirm
 				["g"] = {
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
+					-- is part of the DF>Global Rare Loottable
 				},
 			}),
 		}),

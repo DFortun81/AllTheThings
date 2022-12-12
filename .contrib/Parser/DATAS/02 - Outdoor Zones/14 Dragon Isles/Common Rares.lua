@@ -9,8 +9,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				193691, -- Fisherman Tinnak <Angered Ghost>
 				184853,	-- Primal Scythid Queen
 				187111,	-- Ancient Hornswog
-				189822,	-- Shas'ith
-				190985,	-- Death's Shadow
 				190986,	-- Battlehorn Pyrhus
 				191103,	-- Uranto the Swift
 				191305,	-- The Great Shellkhan
@@ -32,9 +30,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				193259,	-- Blue Terror
 				193273,	-- Liskron the Dazzling
 				193341,	-- Angen
-				190986,	-- Battlehorn Pyrhus
 				193632,	-- Wilrive
-				190971, -- Shas'ith
 				193666,	-- Rokmur
 				193735,	-- Moth'go Deeploom
 				193885,	-- Salkii
@@ -45,6 +41,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				194608,	-- Kholdeg
 				197009,	-- Liskheszaera
 				197353,	-- Blisterhide
+				-- The Waking Shores
+				190986,	-- Battlehorn Pyrhus
+				190985,	-- Death's Shadow
+				189822,	-- Shas'ith
+				190971, -- Shas'ith (Pre Combat Version?)
+				-- Lunker (Fishing)
+				193634,	-- Swog'ranka <Lunker>
 				-- The Hunt Mobs -- Ohn'ahran Plains
 				191450,	-- Boolk
 				194409,	-- Ergburk
