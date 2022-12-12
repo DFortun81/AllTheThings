@@ -15,6 +15,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(191122, {	-- Fullsails Supply Chest Key
 				-- npc 187971/187320
 			}),
+			i(201092, {	-- Lava Spices
+				["crs"] = {
+					193139,	-- Basalt Shell
+					193138,	-- Lavaslurper
+					193137,	-- Restless Lava
+				},
+			}),
 			i(191904, {	-- Orb of Primal Stone
 				["cr"] = 189795,	-- Unsettled Rubble
 			}),

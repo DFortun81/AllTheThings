@@ -141,15 +141,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					n(CRAFTABLES, {
 						-- TODO: these shouldn't need cost if the Tuskaar Fishing profession is scanned by ATT
 						i(194510),	-- Iskaaran Harpoon
-					}),
-					n(TREASURES, {
-						o(381511, {	-- Harpoon Head
-							["description"] = "On the anvil in the Tuskaar area.",
-							["coord"] = { 12.9, 48.7, THE_AZURE_SPAN },
-							["g"] = {
-								i(200076),	-- Harpoon Head
-							},
-						}),
+						i(199694),	-- Flying Fish Bone Charm
 					}),
 				},
 			}),

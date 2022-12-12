@@ -23,22 +23,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(199843),	-- Coldwashed Dragonclaw
 				},
 			}),
+			o(380587, {	-- Crate of Treated Hides
+				["coord"] = { 57.5, 41.3, THE_AZURE_SPAN },
+				-- ["questID"] = 70286,
+				["g"] = {
+					i(198683),	-- Treated Hides
+				},
+			}),
 			o(380547, {	-- Decay-Infused Tanning Oil
 				["coord"] = { 16.7, 38.7, THE_AZURE_SPAN },
 				-- ["questID"] = 70266,
 				["g"] = {
 					i(198658),	-- Decay-Infused Tanning Oil
-				},
-			}),
-			o(381158, {	-- Gnoll Fiend Flail
-				["coord"] = { 54.0, 43.8, THE_AZURE_SPAN },
-				-- ["questID"] = ,
-				["cost"] = { { "i", 199066, 1 }, },	--1x Letter of Caution
-				["g"] = {
-					i(202692),	-- Gnoll Fiend Flail
-					crit(2, {	-- Gnoll Fiend Flail
-						["achievementID"] = 16300,	-- Treasures of The Azure Span
-					}),
 				},
 			}),
 			o(381110, {	-- Forgotten Jewel Box
@@ -52,6 +48,30 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
+			o(381510, {	-- Flying Fish Bones
+				["coord"] = { 12.5, 50.0, THE_AZURE_SPAN },
+				["g"] = {
+					i(200075),	-- Flying Fish Bones
+				},
+			}),
+			o(381158, {	-- Gnoll Fiend Flail
+				["coord"] = { 54.0, 43.8, THE_AZURE_SPAN },
+				-- ["questID"] = ,
+				["cost"] = { { "i", 199066, 1 }, },	--1x Letter of Caution
+				["g"] = {
+					i(202692),	-- Gnoll Fiend Flail
+					crit(2, {	-- Gnoll Fiend Flail
+						["achievementID"] = 16300,	-- Treasures of The Azure Span
+					}),
+				},
+			}),
+			o(381511, {	-- Harpoon Head
+				["description"] = "On the anvil in the Tuskaar area.",
+				["coord"] = { 12.9, 48.7, THE_AZURE_SPAN },
+				["g"] = {
+					i(200076),	-- Harpoon Head
+				},
+			}),
 			o(381160, {	-- Lost Compass
 				["coord"] = { 74.9, 55.0, THE_AZURE_SPAN },
 				["questID"] = 70606,
@@ -60,6 +80,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["achievementID"] = 16300,	-- Treasures of The Azure Span
 					}),
 					i(202711),	-- Lost Compass (TOY!)
+				},
+			}),
+			o(381513, {	-- Old Pickaxe
+				["description"] = "Visible when reaching 50 Fishing Skill (including Equipment Bonuses).",
+				["coord"] = { 18.9, 24.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(200078),	-- Pickaxe Blade
 				},
 			}),
 			n(195373, {	-- Pepper Hammer
@@ -118,13 +145,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 47.3, 24.6, THE_AZURE_SPAN },
 				["g"] = {
 					i(199840),	-- Wrapped Gold Band
-				},
-			}),
-			o(380587, {	-- Crate of Treated Hides
-				["coord"] = { 57.5, 41.3, THE_AZURE_SPAN },
-				-- ["questID"] = 70286,
-				["g"] = {
-					i(198683),	-- Treated Hides
 				},
 			}),
 		}),

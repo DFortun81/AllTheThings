@@ -90,7 +90,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193126, {	-- Innumerable Ruination
 				["coord"] = { 57.8, 83.8, THALDRASZUS },
-				-- ["questID"] = ,
+				["questID"] = 73881,
 				-- ["g"] = {
 
 				-- },
@@ -155,7 +155,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193130, {	-- Pleasant Alpha
 				["coord"] = { 37.7, 78.7, THALDRASZUS },
-				["questID"] = 73889,
+				-- ["questID"] = 73889, -- confirm
 				-- ["g"] = {
 
 				-- },

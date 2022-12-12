@@ -338,6 +338,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						r(392445),	-- Scale Skinning
 					},
 				}),
+				q(72159, {	-- Scaling Down
+					["qg"] = 193846,	-- Ralathor the Rugged
+					["coord"] = { 28.6, 60.4, VALDRAKKEN },
+				}),
 			})),
 			prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAILORING }, {
 				n(193649, {	-- Threadfinder Fulafong <Tailoring Trainer>

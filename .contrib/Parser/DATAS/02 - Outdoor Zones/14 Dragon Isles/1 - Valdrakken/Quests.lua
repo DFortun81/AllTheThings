@@ -288,15 +288,11 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(67055),	-- triggered with 'Warm Away These Shivers' (67047)
 		q(72009),	-- triggered with 'Warm Away These Shivers' (67047)
 
-		-- q(70570),	-- Talked with Watcher Koranos
 		-- q(65041),	-- Memories of Scoroxia(On wowhead? Something you should return with??) / Talked with Scalecommanders Cindretresh and Azurathel
 
 		-- q(71243),	-- Weekly Quest?
 
 		-- q(67056),	-- popped when doing Ruby Feast
-
-		-- q(72369),	-- Unknown popped when HS to valdrakken
-		-- q(72366),	-- Also Unknown
 
 		-- q(72892),	-- After "Aiding the Accord" series
 	}),

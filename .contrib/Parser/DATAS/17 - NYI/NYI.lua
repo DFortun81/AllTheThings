@@ -736,7 +736,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200652),	-- Alchemical Flavor Pocket
 			i(198656),	-- Painter's Pretty Jewel
 			i(201003),	-- Furry Gloop
-			i(201004),	-- Ancient Spear Shards
 			i(201006),	-- Draconic Flux
 			i(201007),	-- Ancient Monument
 			i(201009),	-- Falconer Gauntlet Drawings
@@ -756,8 +755,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201360),	-- Glimmer of Order
 			i(201361),	-- Primal Inspiration
 			i(201716),	-- Notebook of Crafting Knowledge
-			i(202014),	-- Infused Pollen
-			i(202016),	-- Saturated Bone
 
 			i(198853),	-- Tinker: Always Malfunction
 		}),
@@ -860,7 +857,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200175),	-- Repurposed Anvil
 			i(200176),	-- Missingway Hand Cannon
 			i(200181),	-- Blade of Blazing Torment
-			i(200192),	-- Handheld Geyser
 			i(200197),	-- Armoredon Herding Crook
 			i(200206),	-- Behemoth Slayer Greatbow
 			i(200231),	-- Flaming Stonescale Bulwark
@@ -1152,7 +1148,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(202080),	-- Cache of Vault Treasures
 			-- Fishing
 			i(199641),	-- Reinforced Irontree Harpoon Handle
-			i(199694),	-- Flying Fish Bone Charm
 			i(199695),	-- Iskaaran Fishing Net
 			i(199696),	-- Iskaaran Ice Axe
 			i(199697),	-- Polished Basalt Bracelet
@@ -1165,9 +1160,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199849),	-- Dense Draconium Net Weight
 			i(199850),	-- Imbu Knot
 			i(199851),	-- Double Imbu Knot
-			i(200075),	-- Flying Fish Bones
 			i(200077),	-- Wooden Pole
-			i(200078),	-- Pickaxe Blade
 			i(200079),	-- Sea-Polished Basalt
 			i(200080),	-- Draconium Nugget
 			i(200081),	-- Hardened Seavine
@@ -1674,7 +1667,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200964),	-- Alliance Dueling Flag
 			i(200965),	-- Horde Dueling Flag
 			i(201090),	-- Bivigosa's Blood Sausages
-			i(201092),	-- Lava Spices
 			i(200887),	-- Charred Porter
 			i(200888),	-- Coal-Fired Rib Rack
 			i(200889),	-- Highly-Spiced Haunch

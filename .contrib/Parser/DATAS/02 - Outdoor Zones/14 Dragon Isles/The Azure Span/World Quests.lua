@@ -8,9 +8,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			-- q(QUEST, {	-- NAME
 				-- ["coord"] = { XX, YY, THE_AZURE_SPAN },
 			-- }),
-			q(70662, {	-- A Bone to Pickaxe
-				["coord"] = { 27.7, 44.1, THE_AZURE_SPAN },
-			}),
 			q(71212, {	-- Attackin' the Brackenhide
 				["coord"] = { 12.0, 33.4, THE_AZURE_SPAN },
 			}),

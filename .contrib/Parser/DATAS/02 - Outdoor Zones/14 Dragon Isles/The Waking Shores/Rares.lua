@@ -63,6 +63,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(197121),	-- Highland Drake: Tan Horns (DM!)
 				},
 			}),
+			n(193177, {	-- Beakers
+				["questID"] = 73902,
+				["coords"] = {
+					{ 27.8, 78.8, THE_WAKING_SHORES },
+					{ 30.2, 78.2, THE_WAKING_SHORES },
+				},
+			}),
 			n(192738, {	-- Brundin the Dragonbane <Qalashi War Party>
 				["description"] = "Travelling.",
 				["coord"] = { 48.4, 66.1, THE_WAKING_SHORES },
@@ -116,6 +123,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					{ 22.0, 64.9, THE_WAKING_SHORES },	-- Fishing Spot
 				},
 				["description"] = "Can only be summoned by fishing with the Lava Spices buff active at 22 65 in the Waking Shores. Lava Spices can be obtained by killing Restless Lava, Lavaslurpers and Basalt Shells along the lava river leading to the rare.",
+				["cost"] = {{"i",201092,1}},	-- Lava Spices
 				["questID"] = 73072,
 				["isDaily"] = true,
 				["g"] = {
@@ -219,11 +227,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193152, {	-- Massive Magmashell
-				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
-				-- ["questID"] = 69848,
-				-- ["g"] = {
-
-				-- },
+				["coord"] = { 21.7, 76.2, THE_WAKING_SHORES },
+				["questID"] = 74012,
+				["g"] = {
+					i(200192),	-- Handheld Geyser
+				},
 			}),
 			n(190718, {	-- Monsoo, The Boiling Rage
 				["coord"] = { 46.8, 57.3, THE_WAKING_SHORES },
@@ -307,7 +315,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193148, {	-- Thunderous Matriarch
 				["coord"] = { 45.4, 35.6, THE_WAKING_SHORES },
-				["questID"] = 73889,
+				-- ["questID"] = 73889, -- confirm
 				["g"] = {
 					--[[ Rest is under shared Lv70 Elite Rare Drops
 					i(200186),	-- Amberquill Shroud

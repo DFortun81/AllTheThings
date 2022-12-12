@@ -11,11 +11,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			pet(3327, {	-- Dusky Timbertooth
+				["description"] = "You have to click on the |cFFefc400Beaver Dam|r before you can battle this pet.",
 				["cr"] = 189657,	-- Dusky Timbertooth
 				["coords"] = {
 					{ 71.6, 74.0, OHNAHRAN_PLAINS, },
 				},
-				["description"] = "You have to click on the |cFFefc400Beaver Dam|r before you can battle this pet.",
 			}),
 			pet(3313, {	-- Grassland Stomper
 				["cr"] = 189153,	-- Grassland Stomper
@@ -58,11 +58,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 
 			pet(3389, {	-- The Quackcestor
+				["description"] = "Requires renown 7 with |cFFefc400Maruuk Centaur|r. Buy the |cFFefc400Essence of Awakening|r from |cFFefc400Quartermaster Huseng|r and use it to be able to see this pet.",
 				["cr"] = 197063,	-- The Quackcestor
 				["coords"] = {
-					{ 43.0, 46.0, OHNAHRAN_PLAINS, },
+					{ 41.6, 45.2, OHNAHRAN_PLAINS },
+					{ 41.8, 44.0, OHNAHRAN_PLAINS },
+					{ 42.4, 47.8, OHNAHRAN_PLAINS },
+					{ 43.0, 43.6, OHNAHRAN_PLAINS },
 				},
-				["description"] = "Requires renown 7 with |cFFefc400Maruuk Centaur|r. Buy the |cFFefc400Essence of Awakening|r from |cFFefc400Quartermaster Huseng|r and use it to be able to see this pet.",
 			}),
 		})),
 	}),

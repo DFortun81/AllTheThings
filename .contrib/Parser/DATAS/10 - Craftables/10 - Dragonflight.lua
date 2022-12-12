@@ -398,7 +398,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			q(72262, { ["name"] = "First Craft: Master's Hammer", }),	-- Master's Hammer
 			q(71357, { ["name"] = "First Craft: Serevite Repair Hammer", }),	-- Serevite Repair Hammer
 			q(71344, { ["name"] = "First Craft: Serevite Skeleton Key", }),	-- Serevite Skeleton Key
-			--q(, { ["name"] = "First Craft: Sturdy Expedition Shovel", }),	-- Sturdy Expedition Shovel
+			q(71388, { ["name"] = "First Craft: Sturdy Expedition Shovel", }),	-- Sturdy Expedition Shovel
 			-- Stonework
 			q(71338, { ["name"] = "First Craft: Primal Razorstone", }),	-- Primal Razorstone
 			q(71340, { ["name"] = "First Craft: Primal Weightstone", }),	-- Primal Weightstone
@@ -1205,6 +1205,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(191460),	-- Hochenblume+
 			i(191461),	-- Hochenblume++
 			i(191462),	-- Hochenblume+++
+			i(202014),	-- Infused Pollen
 			i(197755),	-- Lava Beetle
 			i(200506),	-- Roused Seedling
 			i(191464),	-- Saxifrage+
@@ -1971,6 +1972,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(193211),	-- Resilient Leather+++
 			i(193254),	-- Rockfang Leather
 			i(193252),	-- Salamanther Scales
+			i(202016),	-- Saturated Bone
 			i(193256),	-- Windsong Plumage
 		}),
 		i(198401),	-- Aileron Seamoth Lure
@@ -2159,6 +2161,9 @@ root("HiddenQuestTriggers", {
 			q(71960),	-- First Primal Draconium Deposit
 			q(71967),	-- First Overload Infurious Node
 			q(71964),	-- First Overload Hardened Node
+			q(71965),	-- First Overload Titan Node
+			q(71963),	-- First Overload Molten Node
+			q(71966),	-- First Overload Primal Node
 			-- TODO: these are weekly, perhaps track them normally
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
 			q(72160),	-- Iridescent Ore Fragments
@@ -2168,9 +2173,10 @@ root("HiddenQuestTriggers", {
 			q(72164),	-- Iridescent Ore Fragments
 			q(72165),	-- Iridescent Ore
 		}),
-		--[[
 		prof(BLACKSMITHING, {
+			q(70512),	-- Primeval Earth Fragment Drop (maybe weekly tracking?)
 		}),
+		--[[
 		prof(COOKING, {
 		}),
 		prof(ENCHANTING, {
@@ -2525,6 +2531,7 @@ root("HiddenQuestTriggers", {
 		prof(SKINNING, {
 			q(70381),	-- Curious Hide Scraps #1
 			q(70383),	-- Curious Hide Scraps #2
+			q(70384),	-- Curious Hide Scraps #3
 			q(74206),	-- Skinning Corrupted Proto-Dragon Rare
 		}),
 		prof(TAILORING, {

@@ -1144,6 +1144,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200747),	-- Zikkori's Water Siphoning Device
 				},
 			}),
+			q(70414, {	-- Shaky Grounds
+				["qg"] = 195234,	-- Earthmender Govrum
+				["coord"] = { 37.0, 55.8, THE_WAKING_SHORES },
+			}),
 			-- Tour
 			q(72481, {	-- The Waking Shore Tour
 				["sourceQuests"] = { 68796 },	-- The Skytop Observatory
@@ -1323,6 +1327,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(70979, {	-- Magmaton
 					["provider"] = { "n", 186827 },	-- Magmaton
 					["coord"] = { 40.0, 64.5, THE_WAKING_SHORES },
+					["isDaily"] = true,
+				}),
+				q(69848, {	-- Massive Magmashell
+					["provider"] = { "n", 193152 },	-- Massive Magmashell
+					["coord"] = { 21.7, 76.2, THE_WAKING_SHORES },
 					["isDaily"] = true,
 				}),
 				q(66074, {	-- Primal Scythid Queen

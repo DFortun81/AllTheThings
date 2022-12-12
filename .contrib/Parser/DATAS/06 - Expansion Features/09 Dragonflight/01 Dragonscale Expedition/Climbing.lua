@@ -42,6 +42,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 			}),
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
+				q(70662, {	-- A Bone to Pickaxe
+					["coord"] = { 27.7, 44.1, THE_AZURE_SPAN },
+				}),
 				q(70655, {	-- Leaves from the Vine
 					["coord"] = { 82.9, 31.8, OHNAHRAN_PLAINS },
 				}),
@@ -64,7 +67,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				AS
 				q(70653),	-- Cold Hard Science
 				q(70658),	-- Artifact or Fiction
-				q(70662),	-- A Bone to Pickaxe
 				T
 				q(70654),	-- Are You Kitten Me?
 				--]]

@@ -336,6 +336,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? lol
 				-- ["sourceQuest"] = ,
 			}),
+			o(380620, {	-- Ancient Spear Shards
+				["questID"] = 70313,
+				["coord"] = { 81.1, 37.9, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(201004),	-- Ancient Spear Shards
+				},
+			}),
 			o(380619, {	-- Curious Ingots
 				["questID"] = 70312,
 				["coord"] = { 65.6, 25.7, THE_WAKING_SHORES },
@@ -938,11 +945,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 192048 },	-- Deidre Flemmin
 				["coord"] = { 76.6, 34.7, THE_WAKING_SHORES },
 			}),
-			q(70363, {    -- To the Dragon Isles: Leatherworking
-				--["sourceQuests"] = {  },	-- Unknown
-				["provider"] = { "n", 192048 },    -- Deirdre Flemmin
-				["coord"] = { 76.6, 34.9, THE_WAKING_SHORES },
-			}),
+			-- q(TODO, {    -- Dragon Isles Leatherworking
+			-- 	--["sourceQuests"] = {  },	-- Unknown
+			-- 	["provider"] = { "n", 192048 },    -- Deirdre Flemmin
+			-- 	["coord"] = { 76.6, 34.9, THE_WAKING_SHORES },
+			-- }),
 			q(69979, { -- A Worthy Hunt
 				["sourceQuests"] = { 69946 },	-- The Master of Their Craft
 				["provider"] = { "n", 193110 },	-- Khadin
@@ -1055,12 +1062,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			q(71957, {	-- Weekly Mining Knowledgepoint #1
-				["name"] = "Weekly Mining Knowledgepoint #1",
-				["provider"] = { "i", 202011 },	-- Elementally Charged Stone
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--[[
+			-- TODO: weekly tracking
+			-- 5 weekly for 'Iridescent Ore Fragments'
+			-- 1 weekly for 'Iridescent Ore'
+			-- 1 weekly for 'Heated Ore Sample / Unyielding Stone Chunk'
+			-- q(TODO, {	-- Weekly Mining Knowledgepoint #1
+			-- 	["name"] = "Weekly Mining Knowledgepoint #1",
+			-- 	["provider"] = { "i", 202011 },	-- Elementally Charged Stone
+			-- 	["isWeekly"] = true,
+			-- 	["collectible"] = true,	-- Dont remove until we have proper tracking
+			-- }),
+			--[[
 			q(66382, {	-- Weekly Mining Knowledgepoint #2
 				["name"] = "Weekly Mining Knowledgepoint #2",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
@@ -1106,7 +1118,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 76.6, 34.8, THE_WAKING_SHORES },
 				["cost"] = { { "i", 193252, 4 }, },	-- 3xSalamanther Scales
 			}),
-			q(70363, {	-- To the Dragon Isles: Skinning
+			q(70363, {	-- Dragon Isles Skinning
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
 					65444,	-- To the Dragon Isles! [H]

@@ -6,6 +6,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		petbattle(filter(BATTLE_PETS, {
 			pet(3403, {	-- Blue Dasher
 				["cr"] = 197629,	-- Blue Dasher
+				["coords"] = {
+					{ 37.8, 79.8, THALDRASZUS },
+				},
 			}),
 			pet(3358, {	-- Crimsonspine
 				["cr"] = 192268,	-- Crimsonspine
@@ -41,6 +44,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			pet(3352, {	-- Razortooth Bear Cub
+				["description"] = "Rare spawn in place of 'Grizzlefur Cub'.",
 				["cr"] = 192251,	-- Razortooth Bear Cub
 				["coords"] = {
 					{ 48.4, 56.0, THALDRASZUS, },
@@ -48,6 +52,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			pet(3336, {	-- Vorquin Runt
 				["cr"] = 191323,	-- Vorquin Runt
+				["coords"] = {
+					{ 48.2, 64.8, THALDRASZUS },
+				},
 			}),
 		})),
 	}),

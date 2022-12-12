@@ -1310,8 +1310,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		-- --
 		-- q(69834),	-- Triggered when Ripaw the Stalker is killed
 		-- --
-		-- q(70724),	-- Something to do with webbed Tuskaars 43.5 47.9?
-
 		-- q(66887),	-- 	Choose Trophy from First Hunt (Renewal of Vows 66783)
 		-- q(66889),	-- 	Choose Eagle Feather (Renewal of Vows 66783)
 		-- q(66888),	-- 	Choose Blood (Renewal of Vows 66783)
