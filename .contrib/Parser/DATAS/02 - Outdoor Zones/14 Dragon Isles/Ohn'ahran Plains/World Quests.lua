@@ -50,6 +50,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			pvp(q(70209, {	-- Quacks and Attacks
 				["coord"] = { 43.1, 34.8, OHNAHRAN_PLAINS }
 			})),
+			pvp(q(72058, {	-- What Hoof We Here: Tarolekk
+				["coord"] = { 34.9, 39.1, OHNAHRAN_PLAINS }
+			})),
 			-- Pet Battle
 			petbattle(filter(BATTLE_PETS, {
 				q(71140, {	-- Two and Two Together
