@@ -414,7 +414,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(194057, {	-- Rabul
-				["coord"] = { 38.1, 37.7, VALDRAKKEN },
+				["coord"] = { 35.4, 59.1, VALDRAKKEN },
 				["g"] = {
 					i(198802),	-- Artisan's Consortium Tabard
 					i(198615),	-- Pentagold Seal
