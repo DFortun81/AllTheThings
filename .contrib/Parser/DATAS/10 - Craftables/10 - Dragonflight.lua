@@ -2525,6 +2525,7 @@ root("HiddenQuestTriggers", {
 		prof(SKINNING, {
 			q(70381),	-- Curious Hide Scraps #1
 			q(70383),	-- Curious Hide Scraps #2
+			q(74206),	-- Skinning Corrupted Proto-Dragon Rare
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--
