@@ -147,9 +147,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193210, {	-- Phleep <Time-Lost, Mind-Lost>
 				["coord"] = { 57.2, 84.2, THALDRASZUS },
-				-- ["questID"] = 69866,
+				["questID"] = 74021,
 				["g"] = {
 					i(200126),	-- Mantle of Copious Chronologies
+					i(200148),	-- A Collection of Me (TOY!)
 				},
 			}),
 			n(193130, {	-- Pleasant Alpha

@@ -1044,7 +1044,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 59.8, 61.0, THALDRASZUS },
 					["isDaily"] = true,
 				}),
-				qNYI(69866, {	-- Phleep
+				q(69866, {	-- Phleep
 					["provider"] = { "n", 193210 },	-- Phleep
 					["coord"] = { 57.2, 84.2, THALDRASZUS },
 					["isDaily"] = true,
