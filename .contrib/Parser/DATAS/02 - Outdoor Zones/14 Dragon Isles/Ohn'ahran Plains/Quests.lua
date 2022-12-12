@@ -1127,6 +1127,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 191354 },	-- Ty'foon the Ascended
 					["coord"] = { 26.1, 34.2, OHNAHRAN_PLAINS },
 				}),
+				q(69857, {	-- Mikrin of the Raging Winds
+					["provider"] = { "n", 193173 },	-- Mikrin of the Raging Winds
+					["coord"] = { 62.8, 79.8, OHNAHRAN_PLAINS },
+				}),
 			}),
 			ach(15941, {	-- Dragon Racing Completionist: Gold
 				["collectible"] = false,

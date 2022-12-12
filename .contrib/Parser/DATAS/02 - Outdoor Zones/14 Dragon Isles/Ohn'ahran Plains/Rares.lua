@@ -99,8 +99,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(193173, {	-- Mikrin of the Raging Winds
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
-				-- ["questID"] = 69857,
+				["coord"] = { 62.8, 79.8, OHNAHRAN_PLAINS },
+				["questID"] = 74015,
 				-- ["g"] = {
 
 				-- },
