@@ -4,6 +4,7 @@
 root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 	bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, n(-420, {	-- Tier 0.5 Sets
 		["lore"] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
+		["classes"] = { DRUID, HUNTER, MAGE, PALADIN, PRIEST, ROGUE, SHAMAN, WARLOCK, WARRIOR },
 		["groups"] = {
 			cl(DRUID, {
 				{	-- An Earnest Proposition
@@ -47,7 +48,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = {
+						STRATHOLME,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { DRUID },
 					["cost"] = {
 						{ "i", 16715, 1 },	-- Wildheart Boots
@@ -72,7 +82,17 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
+					["maps"] = {
+						SCHOLOMANCE,
+						STRATHOLME,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { DRUID },
 					["cost"] = {
 						{ "i", 16716, 1 },	-- Wildheart Belt
@@ -95,7 +115,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = {
+						SCHOLOMANCE,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { DRUID },
 					["cost"] = {
 						{ "i", 16720, 1 },	-- Wildheart Cowl
@@ -150,7 +179,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = {
+						STRATHOLME,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { HUNTER },
 					["cost"] = {
 						{ "i", 16675, 1 },	-- Beaststalker's Boots
@@ -175,7 +213,15 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE },
+					["maps"] = {
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { HUNTER },
 					["cost"] = {
 						{ "i", 16680, 1 },	-- Beaststalker's Belt
@@ -198,7 +244,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = {
+						SCHOLOMANCE,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { HUNTER },
 					["cost"] = {
 						{ "i", 16677, 1 },	-- Beaststalker's Cap
@@ -278,7 +333,17 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
+					["maps"] = {
+						SCHOLOMANCE,
+						STRATHOLME,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { MAGE },
 					["cost"] = {
 						{ "i", 16685, 1 },	-- Magister's Belt
@@ -301,7 +366,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = {
+						SCHOLOMANCE,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { MAGE },
 					["cost"] = {
 						{ "i", 16686, 1 },	-- Magister's Crown
@@ -356,7 +430,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = {
+						STRATHOLME,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { PALADIN },
 					["cost"] = {
 						{ "i", 16725, 1 },	-- Lightforge Boots
@@ -404,7 +487,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = {
+						SCHOLOMANCE,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { PALADIN },
 					["cost"] = {
 						{ "i", 16727, 1 },	-- Lightforge Helm
@@ -459,7 +551,17 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
+					["maps"] = {
+						SCHOLOMANCE,
+						STRATHOLME,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { PRIEST },
 					["cost"] = {
 						{ "i", 16691, 1 },	-- Devout Sandals
@@ -485,7 +587,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = {
+						STRATHOLME,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { PRIEST },
 					["cost"] = {
 						{ "i", 16696, 1 },	-- Devout Belt
@@ -508,7 +619,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = {
+						SCHOLOMANCE,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { PRIEST },
 					["cost"] = {
 						{ "i", 16693, 1 },	-- Devout Crown
@@ -589,7 +709,15 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE },
+					["maps"] = {
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { ROGUE },
 					["cost"] = {
 						{ "i", 16713, 1 },	-- Shadowcraft Belt
@@ -612,7 +740,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = {
+						SCHOLOMANCE,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { ROGUE },
 					["cost"] = {
 						{ "i", 16707, 1 },	-- Shadowcraft Cap
@@ -667,7 +804,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = {
+						STRATHOLME,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { SHAMAN },
 					["cost"] = {
 						{ "i", 16670, 1 },	-- Boots of Elements
@@ -692,7 +838,15 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE },
+					["maps"] = {
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { SHAMAN },
 					["cost"] = {
 						{ "i", 16673, 1 },	-- Cord of Elements
@@ -715,7 +869,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = {
+						SCHOLOMANCE,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { SHAMAN },
 					["cost"] = {
 						{ "i", 16667, 1 },	-- Coif of Elements
@@ -818,7 +981,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = {
+						SCHOLOMANCE,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 16698, 1 },	-- Dreadmist Mask
@@ -873,7 +1045,17 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME  },
+					["maps"] = {
+						SCHOLOMANCE,
+						STRATHOLME,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { WARRIOR },
 					["cost"] = {
 						{ "i", 16734, 1 },	-- Boots of Valor
@@ -899,7 +1081,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8978,	-- Return to Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE, STRATHOLME },
+					["maps"] = {
+						STRATHOLME,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { WARRIOR },
 					["cost"] = {
 						{ "i", 16736, 1 },	-- Belt of Valor
@@ -922,7 +1113,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
+					["maps"] = {
+						SCHOLOMANCE,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["cost"] = {
 						{ "i", 16731, 1 },	-- Helm of Valor
 						{ "i", 16730, 1 },	-- Breastplate of Valor
@@ -1083,7 +1283,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						},
 						["coord"] = { 34.95, 38.29, ORGRIMMAR },
 					}),
-					["maps"] = { BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
+					["maps"] = {
+						BLACKROCK_MOUNTAIN,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["description"] = "Bodley is standing right outside the entrance to Blackrock Spire.",
 					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["lvl"] = 58,
@@ -1169,7 +1378,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				q(8949, {	-- Falrin's Vendetta
 					["qg"] = 16032,	-- Falrin Treeshaper
 					["sourceQuest"] = 8948,	-- Anthion's Old Friend
-					["maps"] = { DIRE_MAUL, BLACKROCK_SPIRE },
+					["maps"] = {
+						DIRE_MAUL,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/25 Ogre Warbeads
@@ -1187,7 +1405,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						8991,	-- The Right Piece of Lord Valthalak's Amulet [PRIEST, MAGE]
 						8992,	-- The Right Piece of Lord Valthalak's Amulet [HUNTER, WARLOCK]
 					},
-					["maps"] = { BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
+					["maps"] = {
+						BLACKROCK_MOUNTAIN,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["cost"] = {
 						{ "i", 22048, 1 },	-- Lord Valthalak's Amulet
 						{ "i", 13512, 1 },	-- Flask of Supreme Power
@@ -1306,7 +1533,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				q(8995, {	-- Mea Culpa, Lord Valthalak
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8994,	-- Final Preparations
-					["maps"] = { BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
+					["maps"] = {
+						BLACKROCK_MOUNTAIN,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["cr"] = 16042,	-- Lord Valthalak
 					["cost"] = {
 						{ "i", 22048, 1 },	-- Lord Valthalak's Amulet
@@ -1404,7 +1640,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				q(8996, {	-- Return to Bodley
 					["qg"] = 16073,	-- Spirit of Lord Valthalak
 					["sourceQuest"] = 8995,	-- Mea Culpa, Lord Valthalak
-					["maps"] = { BLACKROCK_SPIRE, BLACKROCK_MOUNTAIN },
+					["maps"] = {
+						BLACKROCK_MOUNTAIN,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["cost"] = {
 						{ "i", 22056, 1 },	-- Brazier of Beckoning [Lord Valthalak]
 					},
@@ -1486,7 +1731,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				q(8966, {	-- The Left Piece of Lord Valthalak's Amulet [WARRIOR, MAGE]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8962,	-- Components of Importance [WARRIOR, MAGE]
-					["maps"] = { BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
+					["maps"] = {
+						BLACKROCK_MOUNTAIN,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { WARRIOR, MAGE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1584,7 +1838,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				q(8989, {	-- The Right Piece of Lord Valthalak's Amulet [DRUID, PALADIN, SHAMAN]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8986,	-- More Components of Importance [DRUID, PALADIN, SHAMAN]
-					["maps"] = { BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
+					["maps"] = {
+						BLACKROCK_MOUNTAIN,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+					},
 					["classes"] = { DRUID, PALADIN, SHAMAN },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1647,7 +1910,21 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						8960,	-- Bodley's Unfortunate Fate [ALLIANCE]
 						9032,	-- Bodley's Unfortunate Fate [HORDE]
 					},
-					["maps"] = { BLACKROCK_MOUNTAIN, BLACKROCK_DEPTHS, BLACKROCK_SPIRE, EASTERN_PLAGUELANDS, SILITHUS, WESTERN_PLAGUELANDS, TIRISFAL_GLADES },
+					["maps"] = {
+						BLACKROCK_MOUNTAIN,
+						BLACKROCK_DEPTHS,
+						BLACKROCK_SPIRE,
+						LBRS_TAZZALOR,
+						LBRS_SKITTERWEB_TUNNELS,
+						LBRS_HORDEMAR_CITY,
+						LBRS_HALL_OF_BLACKHAND,
+						LBRS_HALYCONS_LAIR,
+						LBRS_CHAMBER_OF_BATTLE,
+						EASTERN_PLAGUELANDS,
+						SILITHUS,
+						WESTERN_PLAGUELANDS,
+						TIRISFAL_GLADES,
+					},
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 					},
