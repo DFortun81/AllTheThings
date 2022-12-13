@@ -101,6 +101,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(199197),	-- Bottled Essence
 				},
 			}),
+			q(70339, {	-- In Tyr's Footsteps: The Ohn'ahran Plains
+				["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
+				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+				["coord"] = { 84.3, 53.5, VALDRAKKEN },
+			}),
 			q(70182, {	-- The Sweet Taste of Victory
 				["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
 				["provider"] = { "n", 195827 },	-- Maiden of Inspiration
@@ -275,6 +280,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["isWeekly"] = true,
 				}),
 				q(72166, {	-- Proving in Battle
+					["provider"] = { "n", 196191 },	-- Malicia
+					["coord"] = { 43.4, 42.5, VALDRAKKEN },
+					["isWeekly"] = true,
+				}),
+				q(72171, {	-- Proving Solo
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
