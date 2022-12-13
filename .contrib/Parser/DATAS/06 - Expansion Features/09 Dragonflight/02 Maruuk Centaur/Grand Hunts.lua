@@ -479,4 +479,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	q(73913),	-- Thaldraszus South - Dismay Flies Event
 	q(73933),	-- Thaldraszus South - Scythe Raid Event
 	q(73913),	-- Thaldraszus South - Towering Fickleshells Event
+	q(70007),	-- Thaldraszus South - Killing Angen
+	q(70009),	-- Thaldraszuz North - Culling Wildlife
+	q(73941),	-- Thaldraszus South - Part 1 Towering Fickleshells
 }));
