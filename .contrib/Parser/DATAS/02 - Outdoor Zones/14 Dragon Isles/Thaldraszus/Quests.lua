@@ -419,6 +419,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 190902 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 72.5, 56.2, THALDRASZUS },
 				}),
+				q(66847, {	-- Vault of the Incarnates: Fury of the Storm-Eater
+					["sourceQuests"] = { 67073 },	-- Red Dawn
+					["provider"] = { "n", 190902 },	-- Alexstrasza the Life-Binder
+					["coord"] = { 72.4, 56.1, THALDRASZUS },
+					["g"] = {
+						i(197921),	-- Primal Infusion
+						i(190454),	-- Primal Chaos
+					},
+				}),
 			}),
 			crit(1, {	-- Gelikyr Overlook
 				["achievementID"] = 16398,	-- Sojourner of Thaldraszus
