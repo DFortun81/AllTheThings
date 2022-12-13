@@ -2544,6 +2544,7 @@ root("HiddenQuestTriggers", {
 			q(74156),	-- Skinning Uurhilt on a Grand Hunt
 			q(74157),	-- Skinning Moskhoi on a Grand Hunt
 			q(74159),	-- Skinning Tevgai on a Grand Hunt
+			q(74196),	-- Skinning Rokmur rare
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--

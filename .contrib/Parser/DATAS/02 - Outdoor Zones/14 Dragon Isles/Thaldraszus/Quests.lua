@@ -1059,7 +1059,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 37.8, 79.2, THALDRASZUS },
 					["isDaily"] = true,
 				}),
-				qNYI(69966, {	-- Rokmur
+				q(69966, {	-- Rokmur
 					["provider"] = { "n", 193666 },	-- Rokmur
 					["coord"] = { 49.8, 51.4, THALDRASZUS },
 					["isDaily"] = true,
