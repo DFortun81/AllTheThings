@@ -1389,6 +1389,7 @@ root("Zones", m(KALIMDOR, {
 							["qg"] = 3143,	-- Gornek
 							["sourceQuest"] = 788,	-- Cutting Teeth
 							["coord"] = { 42, 68.4, DUROTAR },
+							["timeline"] = { "removed 4.0.3" },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/10 Scorpid Worker Tail
