@@ -120,17 +120,39 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				crit(8),	-- Precious Stone Fragment
 			}),
 			ach(16634, {	-- Framing a New Perspective
-				crit(1),	-- The Seat of the Aspects
-				crit(2),	-- The Cascades
-				crit(3),	-- Passage of Time
-				crit(4),	-- Vault of the Incarnates
-				crit(5),	-- Tyrhold
-				crit(6),	-- Algeth'era Court
-				crit(7),	-- Veiled Ossuary
-				crit(8),	-- Serene Dreams Spa
-				crit(9),	-- Shadow Ledge
-				crit(10),	-- Valdrakken's Portal Room
-				crit(11),	-- Tyrhold Reservoir
+				crit(1, {	-- The Seat of the Aspects
+					["coord"] = { 56.1, 44.4, VALDRAKKEN },
+				}),
+				crit(2, {	-- The Cascades
+					["coord"] = { 39.0, 70.4, THALDRASZUS },
+				}),
+				crit(3, {	-- Passage of Time
+					["coord"] = { 55.7, 73.2, THALDRASZUS },
+				}),
+				crit(4, {	-- Vault of the Incarnates
+					["coord"] = { 68.3, 58.3, THALDRASZUS },
+				}),
+				crit(5, {	-- Tyrhold
+					["coord"] = { 57.1, 58.7, THALDRASZUS },
+				}),
+				crit(6, {	-- Algeth'era Court
+					["coord"] = { 50.2, 40.3, THALDRASZUS },
+				}),
+				crit(7, {	-- Veiled Ossuary
+					["coord"] = { 63.4, 13.4, THALDRASZUS },
+				}),
+				crit(8, {	-- Serene Dreams Spa
+					["coord"] = { 39.4, 49.9, THALDRASZUS },
+				}),
+				crit(9, {	-- Shadow Ledge
+					["coord"] = { 48.3, 66.8, THALDRASZUS },
+				}),
+				crit(10, {	-- Valdrakken's Portal Room
+					["coord"] = { 56.6, 43.4, VALDRAKKEN },
+				}),
+				crit(11, {	-- Tyrhold Reservoir
+					["coord"] = { 47.0, 59.5, THALDRASZUS },
+				}),
 			}),
 			ach(16363),	-- Just Don't Ask Me to Spell It
 			ach(16398),	-- Sojourner of Thaldraszus
