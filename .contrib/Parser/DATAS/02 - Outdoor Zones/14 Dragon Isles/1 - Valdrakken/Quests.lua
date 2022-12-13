@@ -134,6 +134,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
 				["coord"] = { 84.9, 54.4, VALDRAKKEN },
 			}),
+			q(72354, {	-- The Great Vault
+				["provider"] = { "n", 196499 },	-- Therazal
+				["coord"] = { 49.9, 56, VALDRAKKEN },
+				["isBreadcrumb"] = true,	-- unconfirmed
+			}),
 
 
 			-- Profession daily marks
