@@ -2541,7 +2541,8 @@ root("HiddenQuestTriggers", {
 			q(74163),	-- Skinning Molkeej on a Grand Hunt
 			q(74161),	-- Skinning Melkhop on a Grand Hunt
 			q(74164),	-- Skinning Diluu on a Grand Hunt
-			q(74156)	-- Skinning Uurhilt on a Grand Hunt
+			q(74156),	-- Skinning Uurhilt on a Grand Hunt
+			q(74157),	-- Skinning Moskhoi on a Grand Hunt
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--
