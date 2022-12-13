@@ -144,7 +144,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 49.9, 56, VALDRAKKEN },
 				["isBreadcrumb"] = true,	-- unconfirmed
 			}),
-
+			q(72686, {	-- Storm Surge
+				["provider"] = { "n", 196598 },	-- Rethelshi
+				["coord"] = { 38.2, 37, VALDRAKKEN },
+				["isBreadcrumb"] = true,	-- unconfirmed
+			}),
 
 			-- Profession daily marks
 			q(70594, {	-- Leatherworking Services Requested
@@ -273,6 +277,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
+			q(66875, {	-- Preserving the Past: Algeth'ar Academy
+				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 189973 },	-- Kemora
+				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+				["isWeekly"] = true,
+			}),	
 			pvp(n(PVP, {
 				q(72167, {	-- Proving in War
 					["provider"] = { "n", 196191 },	-- Malicia
@@ -288,6 +298,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
+				}),
+				q(72648, {	-- Sparks of Life: The Azure Span
+					["provider"] = { "n", 199393 },	-- Keenu
+					["coord"] = { 42.2, 40.7, VALDRAKKEN },
+					["isWeekly"] = true,	-- unconfirmed but assumed
 				}),
 			})),
 		}),
