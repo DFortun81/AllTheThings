@@ -371,6 +371,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["questID"] = 71047,
 				}),
 				i(194091),	-- Bakar Companion Color: Golden Brown
+					["questID"] = 71048,
 				i(194092),	-- Timbertooth Pelt
 				i(194093),	-- Bakar Companion Color: Brown
 				i(194094, {	-- Bakar Companion Color: Black
@@ -455,6 +456,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 								-- confirmed items here
 								200093,	-- Centaur Hunting Trophy
 								194095,	-- Ohuna Companion Color: Sepia
+								194091,	-- Bakar Companion Color: Golden Brown
+								
 							}},
 						}),
 					},
@@ -482,4 +485,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	q(70007),	-- Thaldraszus South - Killing Angen
 	q(70009),	-- Thaldraszuz North - Culling Wildlife
 	q(73941),	-- Thaldraszus South - Part 1 Towering Fickleshells
+	q(70005),	-- Azure Span East - Completing the Hunt
+	q(70006),	-- Azure Span South - Completing the Hunt
 }));

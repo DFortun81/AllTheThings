@@ -2543,6 +2543,7 @@ root("HiddenQuestTriggers", {
 			q(74164),	-- Skinning Diluu on a Grand Hunt
 			q(74156),	-- Skinning Uurhilt on a Grand Hunt
 			q(74157),	-- Skinning Moskhoi on a Grand Hunt
+			q(74159),	-- Skinning Tevgai on a Grand Hunt
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--
