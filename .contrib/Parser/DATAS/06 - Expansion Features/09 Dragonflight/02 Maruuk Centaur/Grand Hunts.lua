@@ -370,8 +370,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(194090, {	-- Bakar Companion Color: White
 					["questID"] = 71047,
 				}),
-				i(194091),	-- Bakar Companion Color: Golden Brown
+				i(194091, {	-- Bakar Companion Color: Golden Brown
 					["questID"] = 71048,
+				}),
 				i(194092),	-- Timbertooth Pelt
 				i(194093),	-- Bakar Companion Color: Brown
 				i(194094, {	-- Bakar Companion Color: Black
