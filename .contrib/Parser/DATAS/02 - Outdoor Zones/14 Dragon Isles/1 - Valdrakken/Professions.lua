@@ -191,6 +191,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						r(396171),	-- Infused Pollen
 					},
 				}),
+				q(70613, {	-- Get Their Bark Before They Bite
+					["coord"] = { 37.7, 66.9, VALDRAKKEN },
+					["qg"] = 185549,	-- Agrikus
+					["isWeekly"] = true,
+				}),
 			})),
 			prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] = LEATHERWORKING }, {
 				n(185551, {	-- Hideshaper Koruz <Leatherworking Trainer>
@@ -341,6 +346,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(72159, {	-- Scaling Down
 					["qg"] = 193846,	-- Ralathor the Rugged
 					["coord"] = { 28.6, 60.4, VALDRAKKEN },
+					["isWeekly"] = true,
+				}),
+				q(70620, {	-- Scaling Up
+					["qg"] = 193846,	-- Ralathor the Rugged
+					["coord"] = { 28.6, 60.4, VALDRAKKEN },
+					["isWeekly"] = true,
 				}),
 			})),
 			prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAILORING }, {
