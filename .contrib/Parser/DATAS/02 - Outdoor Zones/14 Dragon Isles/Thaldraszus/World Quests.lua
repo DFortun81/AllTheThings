@@ -20,8 +20,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(71205, {	-- Hydro Tuskarr
 				-- ["coord"] = { XX, YY, THALDRASZUS }
 			}),
-			q(70160, {	-- Alchemical Thesis Defense
-				["coord"] = { 62.3, 36.9, THALDRASZUS }
+			q(70433, {	-- Dragonrider Racing - Cliffside Circuit
+				["coord"] = { 37.7, 49, THALDRASZUS },
 			}),
 			pvp(q(71225, {	-- Blown Through Wind: Rhuzast
 				["coord"] = { 53, 40.2, THALDRASZUS },
