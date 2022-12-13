@@ -308,7 +308,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							-- is part of the DF>Global Rare Loottable
 						},
 					}),
-					n(194225, {	-- Salkii
+					n(198335, {	-- Salkii
 						["coord"] = { 66.4, 65.2, THE_WAKING_SHORES },
 						["questID"] = 73931,
 						["isDaily"] = true,
