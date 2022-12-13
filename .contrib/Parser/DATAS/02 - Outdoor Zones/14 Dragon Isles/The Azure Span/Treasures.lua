@@ -56,7 +56,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(381158, {	-- Gnoll Fiend Flail
 				["coord"] = { 54.0, 43.8, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 70604,
 				["cost"] = { { "i", 199066, 1 }, },	--1x Letter of Caution
 				["g"] = {
 					i(202692),	-- Gnoll Fiend Flail
