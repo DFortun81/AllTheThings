@@ -2533,6 +2533,8 @@ root("HiddenQuestTriggers", {
 			q(70383),	-- Curious Hide Scraps #2
 			q(70384),	-- Curious Hide Scraps #3
 			q(74206),	-- Skinning Corrupted Proto-Dragon Rare
+			q(74154),	-- Skinning Muugurv during a Grand Hunt
+			q(74153),	-- Skinning Degmakh during a Grant Hunt
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--
