@@ -3441,6 +3441,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			n(ZONE_DROPS, {
 				-- #if BEFORE 4.0.3
 				i(12938, {	-- Blood of Heroes
+					["provider"] = { "o", 176213 },	-- Blood of Heroes
 					["description"] = "This item can be found sporatically on the ground in the Plaguelands.",
 					["coords"] = {
 						-- Plaguewood
