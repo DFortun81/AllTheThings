@@ -2539,6 +2539,7 @@ root("HiddenQuestTriggers", {
 			q(74153),	-- Skinning Degmakh during a Grant Hunt
 			q(74162),	-- Skinning Angen during a Grand Hunt
 			q(74163),	-- Skinning Molkeej on a Grand Hunt
+			q(74161),	-- Skinning Melkhop on a Grand Hunt
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--
