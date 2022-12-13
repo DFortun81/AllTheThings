@@ -1646,22 +1646,31 @@ root("Instances", tier(CLASSIC_TIER, {
 							})),
 						},
 					}),
+					i(12358, {	-- Darkstone Tablet
+						["provider"] = { "o", 175385 },	-- Darkstone Tablet
+						-- #if BEFORE 4.0.3
+						["description"] = "This is the white tablet leaning up against the wall in the Whelp Room.",
+						-- #endif
+					}),
+					i(12352, {	-- Doomrigger's Clasp
+						["provider"] = { "o", 175382 },	-- Doomrigger's Coffer
+						-- #if BEFORE 4.0.3
+						["description"] = "Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",
+						-- #endif
+					}),
+					i(13371, {	-- Father Flame
+						["provider"] = { "o", 175245 },	-- Father Flame
+						-- #if BEFORE 6.0.2
+						["description"] = "Opening this will spawn 8 waves of drake adds in the Leeroy Jenkins room along with Solakar Flamewreath.",
+						-- #endif
+						["timeline"] = { "removed 6.0.2" },
+					}),
 					n(10264, { 	-- Solakar Flamewreath
 						-- #if BEFORE 6.0.2
 						["description"] = "This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",
 						-- #endif
 						["timeline"] = { "removed 6.0.2" },
 						["groups"] = {
-							i(12358, {	-- Darkstone Tablet
-								-- #if BEFORE 4.0.3
-								["description"] = "This is the white tablet leaning up against the wall in the Whelp Room.",
-								-- #endif
-							}),
-							i(12352, {	-- Doomrigger's Clasp
-								-- #if BEFORE 4.0.3
-								["description"] = "Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",
-								-- #endif
-							}),
 							i(18657, {	-- Schematic: Hyper-Radiant Flame Reflector
 								["timeline"] = { "removed 6.0.2" },
 							}),
@@ -1678,9 +1687,6 @@ root("Instances", tier(CLASSIC_TIER, {
 								["timeline"] = { "removed 6.0.2" },
 							}),
 							i(12589, {	-- Dustfeather Sash
-								["timeline"] = { "removed 6.0.2" },
-							}),
-							i(13371, {	-- Father Flame
 								["timeline"] = { "removed 6.0.2" },
 							}),
 						},
