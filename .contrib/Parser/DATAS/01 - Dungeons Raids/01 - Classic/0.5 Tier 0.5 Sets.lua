@@ -1253,7 +1253,10 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/20 Bloodkelp
-							["provider"] = { "i", 22094 },	-- Bloodkelp
+							["providers"] = {
+								{ "i",  22094 },	-- Bloodkelp
+								{ "o", 181053 },	-- Basket of Bloodkelp
+							},
 							["crs"] = {
 								4368,	-- Strashaz Myrmidon
 								4366,	-- Strashaz Serpent Guard
