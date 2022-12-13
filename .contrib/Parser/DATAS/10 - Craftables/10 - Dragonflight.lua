@@ -1957,6 +1957,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(193253),	-- Cacophonous Thunderscale
 			i(193251),	-- Crystalspine Fur
 			i(198837),	-- Curious Hide Scraps
+			i(198841),	-- Large Sample of Curious Hide
 			i(193216),	-- Dense Hide+
 			i(193217),	-- Dense Hide++
 			i(193218),	-- Dense Hide+++
@@ -2532,6 +2533,7 @@ root("HiddenQuestTriggers", {
 			q(70381),	-- Curious Hide Scraps #1
 			q(70383),	-- Curious Hide Scraps #2
 			q(70384),	-- Curious Hide Scraps #3
+			q(70389),	-- Large Sample of Curious Hide
 			q(74206),	-- Skinning Corrupted Proto-Dragon Rare
 			q(74154),	-- Skinning Muugurv during a Grand Hunt
 			q(74153),	-- Skinning Degmakh during a Grant Hunt

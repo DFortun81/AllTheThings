@@ -715,7 +715,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198798),	-- Flashfrozen Scroll
 			i(198799),	-- Forgotten Arcane Tome
 			i(198800),	-- Fractured Titanic Sphere
-			i(198841),	-- Large Sample of Curious Hide
 			i(198963),	-- Decaying Phlegm
 			i(198964),	-- Elementious Splinter
 			i(198969),	-- Keeper's Mark
