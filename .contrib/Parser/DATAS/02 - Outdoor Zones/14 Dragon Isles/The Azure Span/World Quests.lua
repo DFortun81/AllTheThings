@@ -38,11 +38,29 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(70625, {	-- Spellforged Creations
 				["coord"] = { 49.1, 18.6, THE_AZURE_SPAN },
 			}),
+			q(70428, {	-- Dragonrider Racing - Iskaara Tour
+				["coord"] = { 16.3, 49.4, THE_AZURE_SPAN }
+			}),
+			q(70100, {	-- Cataloging the Azure Span
+				["coord"] = { 44.1, 60, THE_AZURE_SPAN }
+			}),
+			q(70035, {	-- Ruriq's River Rapids Ride
+				["coord"] = { 44.55, 54.7, THE_AZURE_SPAN }
+			}),
+			q(70112, {	-- Furbolg Threat
+				["coord"] = { 60.2, 52.8, THE_AZURE_SPAN }
+			}),
+			q(70047, {	-- Icy Prisons
+				["coord"] = { 58.6, 43.7, THE_AZURE_SPAN }
+			}),
 			pvp(q(72019, {	-- Seeing through the Enemy: Nezascar
 				["coord"] = { 29.7, 29.8, THE_AZURE_SPAN },
 			})),
 			petbattle(q(71145, {	-- The Grand Master
 				["coord"] = { 13.5, 50.0, THE_AZURE_SPAN },
+			})),
+			petbattle(q(71202, {	-- Mini Manafeind Melee
+				["coord"] = { 40.6, 59.1, THE_AZURE_SPAN }
 			})),
 			pvp(q(70439, {	-- Wild Arcana [Cobalt]
 				["coord"] = { 51.3, 24.6, THE_AZURE_SPAN },
