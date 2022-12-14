@@ -263,6 +263,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(197020),	-- Cliffside Wylderdrake: Spear Tail (DM!)
 				},
 			}),
+				-- RENOWN 16 --
+			q(70896, {	-- Waist Not, Want Not
+				["description"] = "Requires Renown 16.",
+				["provider"] = { "n", 193659 },	-- Provisioner Thom
+				["coord"] = { 36.5, 50.6, VALDRAKKEN },
+			}),
 		}),
 	}),
 })));

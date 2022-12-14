@@ -363,7 +363,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(194087, {	-- Ohuna Companion Color: Red
 					["questID"] = 71051,
 				}),
-				i(194088),	-- Ohuna Companion Color: Dark
+				i(194088, {	-- Ohuna Companion Color: Dark
+					["questID"] = 71049,
+				}),
 				i(194089, {	-- Bakar Companion Color: Orange
 					["questID"] = 71046,
 				}),
