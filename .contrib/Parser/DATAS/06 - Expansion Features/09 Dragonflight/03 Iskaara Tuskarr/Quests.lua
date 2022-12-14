@@ -137,7 +137,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201786),	-- Recipe: Salt-Baked Fishcake (RECIPE!)
 					i(201785),	-- Recipe: Seamoth Surprise (RECIPE!)
 					i(201784),	-- Recipe: Timely Demise (RECIPE!)
-				}
+				},
 			}),
 			q(66418, {	-- Testing the Tuskaprsenal
 				["description"] = "Requires Renown 11.",
@@ -149,7 +149,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 54.3, 38.7, THE_WAKING_SHORES },
 				["g"] = {
 					i(199830),	-- Tuskarr Training Dummy (TOY!)
-				}
+				},
 			}),
 			q(66414, {	-- All But One
 				["description"] = "Requires Renown 11.",
@@ -190,7 +190,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					crit(4, {	-- The Chieftain's Duty
 						["achievementID"] = 16808,	-- Friend of the Dragon Isles
 					}),
-				}
+				},
 			}),
 				-- RENOWN 12 --
 			q(70960, {	-- Trader's Apparel
@@ -199,7 +199,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 14.0, 49.4, THE_AZURE_SPAN },
 				["g"] = {
 					i(199872),	-- Tuskarr Trader's Cloak
-				}
+				},
 			}),
 				-- RENOWN 13 --
 			q(70955, {	-- Fascinating Fliers
@@ -210,6 +210,62 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(197153),	-- Highland Drake: Bladed Tail (DM!)
 					i(197139),	-- Highland Drake: Large Spotted Pattern (DM!)
 					i(197123),	-- Highland Drake: Thorn Horns (DM!)
+				},
+			}),
+				-- RENOWN 14 --
+			q(70963, {	-- Wrist Support
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 186449 },	-- Arvik
+				["coord"] = { 12.9, 48.8, THE_AZURE_SPAN },
+				["g"] = {
+					i(197153),	-- Highland Drake: Bladed Tail (DM!)
+					i(197139),	-- Highland Drake: Large Spotted Pattern (DM!)
+					i(197123),	-- Highland Drake: Thorn Horns (DM!)
+				},
+			}),
+			q(72318, {	-- Iskaaran Crafter's Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 194059 },	-- Rokkutuk
+				["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
+				["requireSkill"] = ENCHANTING,
+				["g"] = {
+					i(201709),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72319, {	-- Iskaaran Crafter's Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 194059 },	-- Rokkutuk
+				["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
+				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(201705),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72320, {	-- Iskaaran Crafter's Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 194059 },	-- Rokkutuk
+				["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
+				["requireSkill"] = JEWELCRAFTING,
+				["g"] = {
+					i(201712),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72321, {	-- Iskaaran Crafter's Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 194059 },	-- Rokkutuk
+				["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
+				["requireSkill"] = LEATHERWORKING,
+				["g"] = {
+					i(201713),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72322, {	-- Iskaaran Crafter's Knowledge
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 194059 },	-- Rokkutuk
+				["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
+				["requireSkill"] = SKINNING,
+				["g"] = {
+					i(201714),	-- Notebook of Crafting Knowledge
 				},
 			}),
 		}),

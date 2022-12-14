@@ -211,15 +211,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 		q(72746, {	-- A Piece of Silver
 			["description"] = "Available on the next reset after \"A Piece of Copper\", from the adventure guide.",
+			["sourceQuests"] = { 72743 },	-- A Piece of Copper
 		}),
 		q(72747, {	-- A Piece of Gold
 			["description"] = "Available on the next reset after \"A Piece of Silver\", from the adventure guide.",
+			["sourceQuests"] = { 72746 },	-- A Piece of Silver
 		}),
 		q(72748, {	-- A Bag of Gold
 			["description"] = "Available on the next reset after \"A Piece of Gold\", from the adventure guide.",
+			["sourceQuests"] = { 72747 },	-- A Piece of Gold
 		}),
 		q(72749, {	-- A Curious Coin
-			["description"] = "Available on the next reset after \"A Piece of Gold\", from the adventure guide.",
+			["description"] = "Available on the next reset after \"A Bag of Gold\", from the adventure guide.",
+			["sourceQuests"] = { 72748 },	-- A Bag of Gold
 			["g"] = {
 				ach(16790),	-- Curious Coin
 			},
