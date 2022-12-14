@@ -681,32 +681,38 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			q(71858, {	-- Weekly Herbalism Knowledgepoint #1
+			q(71857, {	-- Weekly Herbalism Knowledgepoint #1
 				["name"] = "Weekly Herbalism Knowledgepoint #1",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(71859, {	-- Weekly Herbalism Knowledgepoint #2
+			q(71858, {	-- Weekly Herbalism Knowledgepoint #2
 				["name"] = "Weekly Herbalism Knowledgepoint #2",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			q(71860, {	-- Weekly Herbalism Knowledgepoint #3
+			q(71859, {	-- Weekly Herbalism Knowledgepoint #3
 				["name"] = "Weekly Herbalism Knowledgepoint #3",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			q(71861, {	-- Weekly Herbalism Knowledgepoint #4
+			q(71860, {	-- Weekly Herbalism Knowledgepoint #4
 				["name"] = "Weekly Herbalism Knowledgepoint #4",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			q(71864, {	-- Weekly Herbalism Knowledgepoint #4
-				["name"] = "Weekly Herbalism Knowledgepoint #4",
+			q(71861, {	-- Weekly Herbalism Knowledgepoint #5
+				["name"] = "Weekly Herbalism Knowledgepoint #5",
+				["provider"] = { "i", 200677 },	-- Dreambloom Petal
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Dont remove until we have proper tracking
+			}),
+			q(71864, {	-- Weekly Herbalism Knowledgepoint #6
+				["name"] = "Weekly Herbalism Knowledgepoint #6",
 				["provider"] = { "i", 200678 },	-- Dreambloom
 				["repeatable"] = true,
 				["collectible"] = true,	-- Dont remove until we have proper tracking
