@@ -192,7 +192,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 				}
 			}),
-			-- RENOWN 12 --
+				-- RENOWN 12 --
 			q(70960, {	-- Trader's Apparel
 				["description"] = "Requires Renown 12.",
 				["provider"] = { "n", 196016 },	-- Lontupit
@@ -200,6 +200,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(199872),	-- Tuskarr Trader's Cloak
 				}
+			}),
+				-- RENOWN 13 --
+			q(70955, {	-- Fascinating Fliers
+				["description"] = "Requires Renown 13.",
+				["provider"] = { "n", 196544 },	-- Norukk
+				["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
+				["g"] = {
+					i(197153),	-- Highland Drake: Bladed Tail (DM!)
+					i(197139),	-- Highland Drake: Large Spotted Pattern (DM!)
+					i(197123),	-- Highland Drake: Thorn Horns (DM!)
+				},
 			}),
 		}),
 		-- Maybe sub-header related items, maybe not

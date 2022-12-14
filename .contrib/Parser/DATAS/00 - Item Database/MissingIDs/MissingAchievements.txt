@@ -959,7 +959,6 @@ ach(16736),	-- Grand Theft Mammoth
 ach(16760),	-- The Obsidian Bloodline
 10.0.2.46259
 ach(16764),	-- Crimson Carpet Fashion
-ach(16790),	-- Curious Coin
 ach(16791),	-- Merchant Artisan
 ach(16794),	-- Dragon Isles Crafting Order Apprentice
 ach(16795),	-- Dragon Isles Crafting Order Journeyman

@@ -64,6 +64,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
+					-- RENOWN 13 --
+				q(70945, {	-- Netting More
+					--["sourceQuests"] = { 70942 },	-- Highland Fishing -- TODO: CONFIRM
+					["description"] = "Requires Renown 13.",
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+				}),
 					-- Dailies --
 				q(70438, {	-- Flying Fish
 					["provider"] = { "n", 195338 },	-- Fisherman Pasqaa
@@ -154,6 +161,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(70793),	-- Triggered after crafting Iskaaran Fishing Net during Iskaaran Fishing Net (questID 70871)
 		q(70792),	-- Triggered after crafting Iskaaran Harpoon
 		q(72391),	-- Triggered with 'Ice Fishing' (70944)
+		q(72394),	-- Triggered with 'Fascinating Fliers' (70955)
 		q(67141),	-- Triggered after crafting Iskaaran Ice Axe after Ice Fishing (renown 10)
 		q(67139),	-- Triggered after crafting Flying Fish Bone Charm
 		--

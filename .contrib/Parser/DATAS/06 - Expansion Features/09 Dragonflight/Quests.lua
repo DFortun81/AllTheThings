@@ -218,6 +218,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		q(72748, {	-- A Bag of Gold
 			["description"] = "Available on the next reset after \"A Piece of Gold\", from the adventure guide.",
 		}),
+		q(72749, {	-- A Curious Coin
+			["description"] = "Available on the next reset after \"A Piece of Gold\", from the adventure guide.",
+			["g"] = {
+				ach(16790),	-- Curious Coin
+			},
+		}),
 
 		-- These are usually from Valdrakken also? They were weeklies on beta
 		q(66864, {	-- Relic Recovery: Brackenhide Hollow
