@@ -2130,7 +2130,7 @@ root("HiddenQuestTriggers", {
 			q(71948),	-- Maxxed Out Transmutation
 		}),
 		prof(HERBALISM, {
-			q(71857),	-- First Windswept Saxifrage
+			q(71857),	-- First Dreambloom Petal of the week
 			q(71969),	-- First Lush Hochenblume Harvest
 			q(71970),	-- First Writhebark Harvest
 			q(71971),	-- First Lush Writhebark Harvest
