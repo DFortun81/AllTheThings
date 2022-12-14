@@ -53,9 +53,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(72028, {	-- Fishing Frenzy!
 				["coord"] = { 76.9, 73.5, OHNAHRAN_PLAINS }
 			}),
-			q(70421, {	-- Dragonrider Racing - Ravine River Runtime:addEventListener()
-				["coord"] = { 80.5, 72.3, OHNAHRAN_PLAINS }
-			}),
 			q(70780, {	-- Ohn'ahran Banners
 				["coord"] = { 85.3, 45.3, OHNAHRAN_PLAINS }
 			}),

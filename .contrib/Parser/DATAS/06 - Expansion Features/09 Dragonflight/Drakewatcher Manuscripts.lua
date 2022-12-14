@@ -164,7 +164,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197375),	-- Renewed Proto-Drake: Curled Horns (DM!)
 		i(197380),	-- Renewed Proto-Drake: Curved Horns (DM!)
 		i(197358),	-- Renewed Proto-Drake: Curved Spiked Brow
-		i(197366),	-- Renewed Proto-Drake: Dual Horned Crest
+		i(197366),	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
 		i(197376),	-- Renewed Proto-Drake: Ears (DM!)
 		i(197355),	-- Renewed Proto-Drake: Finned Back (DM!)
 		i(197365),	-- Renewed Proto-Drake: Finned Crest (DM!)

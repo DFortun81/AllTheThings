@@ -38,12 +38,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(70625, {	-- Spellforged Creations
 				["coord"] = { 49.1, 18.6, THE_AZURE_SPAN },
 			}),
-			q(70428, {	-- Dragonrider Racing - Iskaara Tour
-				["coord"] = { 16.3, 49.4, THE_AZURE_SPAN }
-			}),
-			q(70100, {	-- Cataloging the Azure Span
-				["coord"] = { 44.1, 60, THE_AZURE_SPAN }
-			}),
 			q(70035, {	-- Ruriq's River Rapids Ride
 				["coord"] = { 44.55, 54.7, THE_AZURE_SPAN }
 			}),

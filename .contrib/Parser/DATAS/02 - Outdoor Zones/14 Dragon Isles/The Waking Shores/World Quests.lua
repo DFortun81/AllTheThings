@@ -56,9 +56,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(67006, {	-- Quenching the Flame
 				["coord"] = { 67.5, 31.8, THE_WAKING_SHORES },
 			}),
-			q(70417, {	-- Dragonrider Racing - Wingrest Roundabout
-				["coord"] = { 73.3, 34.1, THE_WAKING_SHORES },
-			}),
 			q(66934, {	-- Break the Breaker
 				["coord"] = { 66.3, 26.2, THE_WAKING_SHORES },
 			}),

@@ -997,7 +997,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197358),	-- Renewed Proto-Drake: Curved Spiked Brow
 			i(197359),	-- Renewed Proto-Drake: Hairy Brow
 			i(197364),	-- Renewed Proto-Drake: Short Spiked Crest
-			i(197366),	-- Renewed Proto-Drake: Dual Horned Crest
 			i(197369),	-- Renewed Proto-Drake: Brown Hair
 			i(197371),	-- Renewed Proto-Drake: Green Hair
 			i(197373),	-- Renewed Proto-Drake: Helm
@@ -1076,7 +1075,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200094),	-- Caravan Strongbox
 			i(200218),	-- Charred Fishing Pole
 			i(200443),	-- Dragon Isles Artifact
-			i(200447),	-- Centaur Hunting Trophy
 			i(200449),	-- Sacred Tuskarr Totem
 			i(200450),	-- Titan Relic
 			i(200452),	-- Dragonscale Expedition Insignia

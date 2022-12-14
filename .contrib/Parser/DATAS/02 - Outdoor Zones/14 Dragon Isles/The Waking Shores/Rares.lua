@@ -112,7 +112,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193217, {	-- Drakewing
 				["coord"] = { 72.8, 47.0, THE_WAKING_SHORES },
-				-- ["questID"] = 70177, ??
+				["questID"] = 73874,
 				["g"] = {
 					i(200219),	-- Dangerous Drapery
 				},

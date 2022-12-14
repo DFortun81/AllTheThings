@@ -156,5 +156,12 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72391),	-- Triggered with 'Ice Fishing' (70944)
 		q(67141),	-- Triggered after crafting Iskaaran Ice Axe after Ice Fishing (renown 10)
 		q(67139),	-- Triggered after crafting Flying Fish Bone Charm
+		--
+		q(72828),	-- First daily completion of 'Catch and Release: Scalebell Mackerel' (70199)
+		q(72827),	-- First daily completion of 'Catch and Release: Thousandbite Piranha' (70200)
+		q(72826),	-- First daily completion of 'Catch and Release: Aileron Seamoth' (70201)
+		q(72825),	-- First daily completion of 'Catch and Release: Cerulean Spinefish' (70202)
+		q(72824),	-- First daily completion of 'Catch and Release: Temporal Dragonhead' (70203)
+		q(72823),	-- First daily completion of 'Catch and Release: Islefin Dorado' (70935)
 	}),
 }));

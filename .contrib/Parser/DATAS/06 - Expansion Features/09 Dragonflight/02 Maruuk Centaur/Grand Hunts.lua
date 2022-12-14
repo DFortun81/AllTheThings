@@ -456,6 +456,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							["sym"] = {{"select","itemID",
 								-- confirmed items here
 								200093,	-- Centaur Hunting Trophy
+								200447,	-- Centaur Hunting Trophy
 								194095,	-- Ohuna Companion Color: Sepia
 								194091,	-- Bakar Companion Color: Golden Brown
 								
@@ -466,6 +467,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(193360),	-- Centaur's Trophy Necklace
 				i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)
 				i(200093),	-- Centaur Hunting Trophy
+				i(200447),	-- Centaur Hunting Trophy
 			}),
 		}),
 	}),

@@ -7,6 +7,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			n(REWARDS, {
 				i(199192, {	-- Dragon Racer's Purse
 					i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
+					i(197366),	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
 				}),
 			}),
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
@@ -19,6 +20,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				q(70416, {	-- Dragonrider Racing - Uktulut Coaster
 					["coord"] = { 55.4, 41.2, THE_WAKING_SHORES },
+				}),
+				q(70417, {	-- Dragonrider Racing - Wingrest Roundabout
+					["coord"] = { 73.2, 34.0, THE_WAKING_SHORES }
 				}),
 				-- Unconfirmed
 				--[[
@@ -34,9 +38,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70412, {	-- Dragonrider Racing - Wild Preserve Slalom
 					["coord"] = { 47.0, 85.6, THE_WAKING_SHORES }
 				}),
-				q(70417, {	-- Dragonrider Racing - Wingrest Roundabout
-					["coord"] = { 73.2, 34.0, THE_WAKING_SHORES }
-				}),
 				--]]
 
 					-- Ohn'ahran Plains --
@@ -49,6 +50,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70712, {	-- Dragonrider Racing - River Rapids Route
 					["coord"] = { 43.8, 66.8, OHNAHRAN_PLAINS }
 				}),
+				q(70421, {	-- Dragonrider Racing - Ravine River Run
+					["coord"] = { 80.8, 72.0, OHNAHRAN_PLAINS }
+				}),
 				q(70419, {	-- Dragonrider Racing - Sundapple Copse Circuit
 					["coord"] = { 63.8, 30.4, OHNAHRAN_PLAINS }
 				}),
@@ -59,9 +63,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				q(70420, {	-- Dragonrider Racing - Fen Flythrough
 					["coord"] = { 86.2, 35.8, OHNAHRAN_PLAINS }
-				}),
-				q(70421, {	-- Dragonrider Racing - Ravine River Run
-					["coord"] = { 80.8, 72.0, OHNAHRAN_PLAINS }
 				}),
 				--]]
 
@@ -75,13 +76,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70429, {	-- Dragonrider Racing - Frostland Flyover
 					["coord"] = { 48.4, 35.8, THE_AZURE_SPAN }
 				}),
+				q(70428, {	-- Dragonrider Racing - Iskaara Tour
+					["coord"] = { 16.4, 49.4, THE_AZURE_SPAN }
+				}),
 				-- Unconfirmed
 				--[[
 				q(70430, {	-- Dragonrider Racing - Archive Ambit
 					["coord"] = { 42.2, 56.8, THE_AZURE_SPAN }
-				}),
-				q(70428, {	-- Dragonrider Racing - Iskaara Tour
-					["coord"] = { 16.4, 49.4, THE_AZURE_SPAN }
 				}),
 				q(70427, {	-- Dragonrider Racing - Vakthros Ascent
 					["coord"] = { 71.2, 24.6, THE_AZURE_SPAN }
@@ -89,6 +90,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				--]]
 
 					-- Thaldraszus --
+				q(70433, {	-- Dragonrider Racing - Cliffside Circuit
+					["coord"] = { 37.6, 49.0, THALDRASZUS }
+				}),
 				q(70431, {	-- Dragonrider Racing - Flowing Forst Flight
 					["coord"] = { 57.8, 75.0, THALDRASZUS }
 				}),
@@ -102,9 +106,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				--[[
 				q(70436, {	-- Dragonrider Racing - Caverns Criss-Cross
 					["coord"] = { 58.0, 33.6, THALDRASZUS }
-				}),
-				q(70433, {	-- Dragonrider Racing - Cliffside Circuit
-					["coord"] = { 37.6, 49.0, THALDRASZUS }
 				}),
 				q(70432, {	-- Dragonrider Racing - Passage Pathway
 					["coord"] = { 57.2, 66.8, THALDRASZUS }

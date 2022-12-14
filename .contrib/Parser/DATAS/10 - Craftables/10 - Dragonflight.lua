@@ -2587,7 +2587,7 @@ root("HiddenQuestTriggers", {
 			q(72504),	-- Surveyor's Seasoned Cord
 			q(72506),	-- Surveyor's Seasoned Gloves
 			q(72507),	-- Surveyor's Seasoned Hood
-			q(72505),	-- Surveyor's Seasoned Pants
+			q(72508),	-- Surveyor's Seasoned Pants
 			q(72509),	-- Surveyor's Seasoned Shoulders
 			q(71792),	-- Surveyor's Tailored Cloak
 				-- Azureweave Garments --
