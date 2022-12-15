@@ -1153,9 +1153,12 @@ for key,value in pairs({
 	[174712] = "오염된 노래꽃",	-- Corrupted Songflower
 	[174713] = "오염된 노래꽃",	-- Corrupted Songflower
 	--TODO: [174793] = "Gorishi Hive Hatchery",	-- Gorishi Hive Hatchery
+	[175245] = "태초의 불꽃",	-- Father Flame
 	[175320] = "현상 수배: 먹구렁!",	-- WANTED: Murkdeep!
 	[175324] = "서리망치거인 조각",	-- Frostmaul Shards
+	[175382] = "파멸의 궤",	-- Doomrigger's Coffer
 	[175384] = "마루둥지 와이번 알",	-- Highperch Wyvern Egg	--TODO: This was taken from wotlk Wowhead
+	[175385] = "다크스톤 서판",	-- Darkstone Tablet
 	[175407] = "달빛 깃든 깃털",	-- Moontouched Feather
 	[175524] = "신비한 붉은 수정",	-- Mysterious Red Crystal	--TODO: This was taken from wotlk Wowhead
 	[175565] = "괴상한 알",	-- Alien Egg
@@ -1240,6 +1243,7 @@ for key,value in pairs({
 	[180794] = "잔다이스 바로브의 일지",	-- Journal of Jandice Barov
 	[180918] = "현상 수배: 욕망의 탤리스",	-- Wanted: Thaelis the Hungerer
 	[181011] = "마법학자 더스크위더의 일지",	-- Magister Duskwither's Journal
+	[181053] = "붉은물풀 광주리",	-- Basket of Bloodkelp
 	[181073] = "맛있는 향기의 가마솥",	-- Fragrant Cauldron
 	[181074] = "투기장 전리품",	-- Arena Spoils	--TODO: This was taken from wotlk Wowhead
 	--TODO: [181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms
@@ -3370,6 +3374,7 @@ for key,value in pairs({
 	[380617] = "칼라시 무기 일람표",	-- Qalashi Weapon Diagram
 	--TODO: [380618] = "Draconic Flux",	-- Draconic Flux
 	[380619] = "독특한 주괴",	-- Curious Ingots
+	[380620] = "고대의 창 파편",	-- Ancient Spear Shards
 	--TODO: [380648] = "Odd Book",	-- Odd Book
 	[380653] = "옌누의 연",	-- Yennu's Kite
 	[380654] = "죽은 자의 가슴갑옷",	-- Dead Man's Chestplate
@@ -3407,7 +3412,9 @@ for key,value in pairs({
 	[381483] = "마르모니의 보상",	-- Marmoni's Prize
 	[381484] = "잘 보존된 뼈",	-- Well-Preserved Bone
 	[381485] = "모험가의 잃어버린 비누",	-- Adventurer's Lost Soap Bar
+	[381510] = "날치 뼈",	-- Flying Fish Bones
 	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
+	[381513] = "오래된 곡괭이",	-- Old Pickaxe
 	[381650] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "송곳니, 날개, 불 등록",	-- Fang Flap Fire Signups
 	[381661] = "기록관의 요청",	-- Archivists' Request

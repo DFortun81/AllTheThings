@@ -1157,9 +1157,12 @@ for key,value in pairs({
 	[174712] = "Melodía corrupta",	-- Corrupted Songflower
 	[174713] = "Melodía corrupta",	-- Corrupted Songflower
 	--TODO: [174793] = "Gorishi Hive Hatchery",	-- Gorishi Hive Hatchery
+	[175245] = "Llama paternal",	-- Father Flame
 	[175320] = "SE BUSCA: ¡Viscoso!",	-- WANTED: Murkdeep!
 	[175324] = "Esquirlas de Machacahielo",	-- Frostmaul Shards
+	[175382] = "Arca de Equipasino",	-- Doomrigger's Coffer
 	[175384] = "Huevo de dracoleón Nido Alto",	-- Highperch Wyvern Egg
+	[175385] = "Tablilla de Rocanegra",	-- Darkstone Tablet
 	[175407] = "Pluma Lunadón",	-- Moontouched Feather
 	[175524] = "Cristal rojo misterioso",	-- Mysterious Red Crystal
 	[175565] = "Huevo extraño",	-- Alien Egg
@@ -1244,6 +1247,7 @@ for key,value in pairs({
 	[180794] = "Diario de Jandice Barov",	-- Journal of Jandice Barov
 	[180918] = "Se busca: Thaelis el Hambriento",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Diario del magister Ocaso Marchito",	-- Magister Duskwither's Journal
+	[181053] = "Cesta de algas de sangre",	-- Basket of Bloodkelp
 	[181073] = "Caldera apetitosa",	-- Fragrant Cauldron
 	[181074] = "Botín de la arena",	-- Arena Spoils	--TODO: This was taken from wotlk Wowhead
 	--TODO: [181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms
@@ -3374,6 +3378,7 @@ for key,value in pairs({
 	[380617] = "Diagrama de arma qalashi",	-- Qalashi Weapon Diagram
 	[380618] = "Flujo dracónico",	-- Draconic Flux
 	[380619] = "Lingotes curiosos",	-- Curious Ingots
+	[380620] = "Fragmentos de lanza ancestral",	-- Ancient Spear Shards
 	[380648] = "Libro extraño",	-- Odd Book
 	[380653] = "Cometa de Yennu",	-- Yennu's Kite
 	[380654] = "Peto de un hombre muerto",	-- Dead Man's Chestplate
@@ -3411,7 +3416,9 @@ for key,value in pairs({
 	[381483] = "Premio de marmoni",	-- Marmoni's Prize
 	[381484] = "Hueso bien conservado",	-- Well-Preserved Bone
 	[381485] = "Pastilla de jabón para aventureros perdida",	-- Adventurer's Lost Soap Bar
+	[381510] = "Raspas de pez volador",	-- Flying Fish Bones
 	[381511] = "Punta de arpón",	-- Harpoon Head
+	[381513] = "Piqueta vieja",	-- Old Pickaxe
 	[381650] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Inscripción a colmillo, ala o fuego",	-- Fang Flap Fire Signups
 	[381661] = "Petición de los archivistas",	-- Archivists' Request

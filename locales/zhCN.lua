@@ -1167,9 +1167,12 @@ for key, value in pairs({
 	[174712] = "被腐化的轻歌花",	-- Corrupted Songflower	--TODO: This was taken from wotlk Wowhead
 	[174713] = "被腐化的轻歌花",	-- Corrupted Songflower	--TODO: This was taken from wotlk Wowhead
 	--TODO: [174793] = "Gorishi Hive Hatchery",	-- Gorishi Hive Hatchery
+	[175245] = "烈焰之父",	-- Father Flame
 	[175320] = "通缉：莫克迪普！",	-- WANTED: Murkdeep!	--TODO: This was taken from wotlk Wowhead
 	[175324] = "霜槌碎片",	-- Frostmaul Shards
+	[175382] = "末日扣环之箱",	-- Doomrigger's Coffer
 	[175384] = "风巢双足飞龙的蛋",	-- Highperch Wyvern Egg	--TODO: This was taken from wotlk Wowhead
+	[175385] = "黑暗石板",	-- Darkstone Tablet
 	[175407] = "月光羽毛",	-- Moontouched Feather	--TODO: This was taken from wotlk Wowhead
 	[175524] = "神秘的红色水晶",	-- Mysterious Red Crystal	--TODO: This was taken from wotlk Wowhead
 	[175565] = "异型蛋",	-- Alien Egg	--TODO: This was taken from wotlk Wowhead
@@ -1254,6 +1257,7 @@ for key, value in pairs({
 	[180794] = "詹迪斯·巴罗夫的日记",	-- Journal of Jandice Barov	--TODO: This was taken from wotlk Wowhead
 	[180918] = "通缉：饥饿者泰里斯",	-- Wanted: Thaelis the Hungerer
 	[181011] = "魔导师达斯维瑟的日记",	-- Magister Duskwither's Journal	--TODO: This was taken from wotlk Wowhead
+	[181053] = "一篮血藻",	-- Basket of Bloodkelp
 	[181073] = "薰炉",	-- Fragrant Cauldron	--TODO: This was taken from wotlk Wowhead
 	[181074] = "竞技场的泥土",	-- Arena Spoils	--TODO: This was taken from wotlk Wowhead
 	--TODO: [181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms
@@ -3384,6 +3388,7 @@ for key, value in pairs({
 	[380617] = "卡拉希武器图表",	-- Qalashi Weapon Diagram
 	--TODO: [380618] = "Draconic Flux",	-- Draconic Flux
 	[380619] = "奇特的金属锭",	-- Curious Ingots
+	[380620] = "上古之矛碎片",	-- Ancient Spear Shards
 	--TODO: [380648] = "Odd Book",	-- Odd Book
 	[380653] = "耶努的风筝",	-- Yennu's Kite
 	[380654] = "亡者胸甲",	-- Dead Man's Chestplate
@@ -3421,7 +3426,9 @@ for key, value in pairs({
 	[381483] = "狨猴的奖品",	-- Marmoni's Prize
 	[381484] = "保存完好的骨头",	-- Well-Preserved Bone
 	[381485] = "冒险者丢失的肥皂块",	-- Adventurer's Lost Soap Bar
+	--TODO: [381510] = "Flying Fish Bones",	-- Flying Fish Bones
 	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
+	[381513] = "旧镐",	-- Old Pickaxe
 	[381650] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "“炽齿翅”报名处",	-- Fang Flap Fire Signups
 	[381661] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated

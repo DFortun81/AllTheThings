@@ -1154,9 +1154,12 @@ for key,value in pairs({
 	[174712] = "Verderbte Liedblume",	-- Corrupted Songflower
 	[174713] = "Verderbte Liedblume",	-- Corrupted Songflower
 	[174793] = "Schwarmbrutstätte der Gorishi",	-- Gorishi Hive Hatchery	--TODO: This was manually translated
+	[175245] = "Vater Flamme",	-- Father Flame
 	[175320] = "GESUCHT: Gurgelbacke!",	-- WANTED: Murkdeep!
 	[175324] = "Frosthagelsplitter",	-- Frostmaul Shards
+	[175382] = "Doomriggers Kasten",	-- Doomrigger's Coffer
 	[175384] = "Ei eines Steilhangflügeldrachen",	-- Highperch Wyvern Egg
+	[175385] = "Dunkelsteinschrifttafel",	-- Darkstone Tablet
 	[175407] = "Mondbestrahlte Feder",	-- Moontouched Feather
 	[175524] = "Geheimnisvoller roter Kristall",	-- Mysterious Red Crystal
 	[175565] = "Fremdartiges Ei",	-- Alien Egg
@@ -1241,6 +1244,7 @@ for key,value in pairs({
 	[180794] = "Tagebuch von Jandice Barov",	-- Journal of Jandice Barov
 	[180918] = "GESUCHT: Thaelis der Manadurstige",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Magister Nachtschimmers Tagebuch",	-- Magister Duskwither's Journal
+	[181053] = "Korb voller Bluttang",	-- Basket of Bloodkelp
 	[181073] = "Duftender Kessel",	-- Fragrant Cauldron
 	[181074] = "Arenabeute",	-- Arena Spoils
 	[181083] = "Sothos' und Jariens Erbstücke",	-- Sothos and Jarien's Heirlooms
@@ -3371,6 +3375,7 @@ for key,value in pairs({
 	[380617] = "Waffendiagramm der Qalashi",	-- Qalashi Weapon Diagram
 	[380618] = "Drakonischer Flux",	-- Draconic Flux
 	[380619] = "Eigentümliche Barren",	-- Curious Ingots
+	[380620] = "Uralte Speersplitter",	-- Ancient Spear Shards
 	[380648] = "Seltsames Buch",	-- Odd Book
 	[380653] = "Yennus Drachen",	-- Yennu's Kite
 	[380654] = "Brustplatte des toten Mannes",	-- Dead Man's Chestplate
@@ -3408,7 +3413,9 @@ for key,value in pairs({
 	[381483] = "Preis der Marmoni",	-- Marmoni's Prize
 	[381484] = "Gut erhaltener Knochen",	-- Well-Preserved Bone
 	[381485] = "Verlorenes Seifenstück eines Abenteurers",	-- Adventurer's Lost Soap Bar
+	[381510] = "Knochen fliegender Fische",	-- Flying Fish Bones
 	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
+	--TODO: [381513] = "Old Pickaxe",	-- Old Pickaxe
 	[381650] = "Anfrage des Archivars",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Einschreibungen für Zahnflatterfeuer",	-- Fang Flap Fire Signups
 	[381661] = "Anfrage des Archivars",	-- Archivists' Request

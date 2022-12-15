@@ -1145,9 +1145,12 @@ for key,value in pairs({
 	[174712] = "Corrupted Songflower",	-- Corrupted Songflower	--TODO: This was taken from wotlk Wowhead
 	[174713] = "Corrupted Songflower",	-- Corrupted Songflower	--TODO: This was taken from wotlk Wowhead
 	--TODO: [174793] = "Gorishi Hive Hatchery",	-- Gorishi Hive Hatchery
+	[175245] = "Padre Fiamma",	-- Father Flame
 	[175320] = "WANTED: Murkdeep!",	-- WANTED: Murkdeep!	--TODO: This was taken from wotlk Wowhead
 	[175324] = "Frammento di Magliofreddo",	-- Frostmaul Shards
+	[175382] = "Scrigno del Portarovina",	-- Doomrigger's Coffer
 	[175384] = "Highperch Wyvern Egg",	-- Highperch Wyvern Egg	--TODO: This was taken from wotlk Wowhead
+	[175385] = "Tavoletta di Pietra Nera",	-- Darkstone Tablet
 	[175407] = "Moontouched Feather",	-- Moontouched Feather	--TODO: This was taken from wotlk Wowhead
 	[175524] = "Mysterious Red Crystal",	-- Mysterious Red Crystal	--TODO: This was taken from wotlk Wowhead
 	[175565] = "Alien Egg",	-- Alien Egg	--TODO: This was taken from wotlk Wowhead
@@ -1232,6 +1235,7 @@ for key,value in pairs({
 	[180794] = "Journal of Jandice Barov",	-- Journal of Jandice Barov	--TODO: This was taken from wotlk Wowhead
 	[180918] = "Ricercato: Thaelis il Famelico",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Diario del Magistro Lungovespro",	-- Magister Duskwither's Journal
+	[181053] = "Cesto di Algasangue",	-- Basket of Bloodkelp
 	[181073] = "Calderone Profumato",	-- Fragrant Cauldron
 	[181074] = "Arena Spoils",	-- Arena Spoils	--TODO: This was taken from wotlk Wowhead
 	[181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms	--TODO: This was taken from wotlk Wowhead
@@ -3362,6 +3366,7 @@ for key,value in pairs({
 	[380617] = "Schema delle armi dei Qalashi",	-- Qalashi Weapon Diagram
 	[380618] = "Flusso Draconico",	-- Draconic Flux
 	[380619] = "Lingotti bizzarri",	-- Curious Ingots
+	[380620] = "Scheggia di Lancia Antica",	-- Ancient Spear Shards
 	[380648] = "Libro Bizzarro",	-- Odd Book
 	[380653] = "Aquilone di Yennu",	-- Yennu's Kite
 	[380654] = "Cotta del Morto",	-- Dead Man's Chestplate
@@ -3399,7 +3404,9 @@ for key,value in pairs({
 	[381483] = "Premio della Marmosona",	-- Marmoni's Prize
 	[381484] = "Osso Ben Conservato",	-- Well-Preserved Bone
 	[381485] = "Saponetta Perduta dell'Avventuriero",	-- Adventurer's Lost Soap Bar
+	[381510] = "Lische di Pesce Volanti",	-- Flying Fish Bones
 	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
+	--TODO: [381513] = "Old Pickaxe",	-- Old Pickaxe
 	[381650] = "Richiesta degli Archivisti",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Iscrizioni a Zanne Ali Fuoco.",	-- Fang Flap Fire Signups
 	[381661] = "Richiesta degli Archivisti",	-- Archivists' Request

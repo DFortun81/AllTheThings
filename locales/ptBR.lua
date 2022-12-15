@@ -1153,9 +1153,12 @@ for key,value in pairs({
 	[174712] = "Flor da Canção Corrompida",	-- Corrupted Songflower	--TODO: This was taken from wotlk Wowhead
 	[174713] = "Flor da Canção Corrompida",	-- Corrupted Songflower	--TODO: This was taken from wotlk Wowhead
 	--TODO: [174793] = "Gorishi Hive Hatchery",	-- Gorishi Hive Hatchery
+	[175245] = "Chama Paternal",	-- Father Flame
 	[175320] = "PROCURA-SE: Lodofundo!",	-- WANTED: Murkdeep!	--TODO: This was taken from wotlk Wowhead
 	[175324] = "Lascas de Friomalho",	-- Frostmaul Shards
+	[175382] = "Cofre do Finitudo",	-- Doomrigger's Coffer
 	[175384] = "Ovo de Mantícora de Alcândora",	-- Highperch Wyvern Egg	--TODO: This was taken from wotlk Wowhead
+	[175385] = "Tabuleta de Pedranegra",	-- Darkstone Tablet
 	[175407] = "Pena Lunamarca",	-- Moontouched Feather	--TODO: This was taken from wotlk Wowhead
 	[175524] = "Cristal Vermelho Misterioso",	-- Mysterious Red Crystal	--TODO: This was taken from wotlk Wowhead
 	[175565] = "Ovo Alienígena",	-- Alien Egg	--TODO: This was taken from wotlk Wowhead
@@ -1240,6 +1243,7 @@ for key,value in pairs({
 	[180794] = "Diário de Janice Barov",	-- Journal of Jandice Barov
 	[180918] = "Procura-se: Thaelis, o Famélico",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Diário do Magíster Ocaso",	-- Magister Duskwither's Journal
+	[181053] = "Cesta de Algassangue",	-- Basket of Bloodkelp
 	[181073] = "Caldeirão Cheiroso",	-- Fragrant Cauldron
 	--TODO: [181074] = "Arena Spoils",	-- Arena Spoils
 	--TODO: [181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms
@@ -3370,6 +3374,7 @@ for key,value in pairs({
 	[380617] = "Diagrama de Arma Qalashi",	-- Qalashi Weapon Diagram
 	--TODO: [380618] = "Draconic Flux",	-- Draconic Flux
 	[380619] = "Lingotes Curiosos",	-- Curious Ingots
+	[380620] = "Estilhaços de Lança Anciente",	-- Ancient Spear Shards
 	[380648] = "Livro Estranho",	-- Odd Book
 	[380653] = "Pipa de Yennu",	-- Yennu's Kite
 	[380654] = "Guarda-peito do Homem Morto",	-- Dead Man's Chestplate
@@ -3407,7 +3412,9 @@ for key,value in pairs({
 	[381483] = "Prêmio de Saguiri",	-- Marmoni's Prize
 	[381484] = "Osso Bem Preservado",	-- Well-Preserved Bone
 	[381485] = "Sabonete Perdido do Aventureiro",	-- Adventurer's Lost Soap Bar
+	[381510] = "Ossos de Peixe Voador",	-- Flying Fish Bones
 	[381511] = "Cabeça de Arpão",	-- Harpoon Head
+	--TODO: [381513] = "Old Pickaxe",	-- Old Pickaxe
 	[381650] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Inscrições Fogo, Asa, Presa",	-- Fang Flap Fire Signups
 	[381661] = "Pedido dos Arquivistas",	-- Archivists' Request
