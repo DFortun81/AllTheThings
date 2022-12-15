@@ -1148,6 +1148,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			q(70381, {	-- Weekly Skinning Knowledgepoint #1
+				["name"] = "Weekly Skinning Knowledgepoint #1",
+				["provider"] = { "i", 198837 },		-- Curious Hide Scraps
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,		-- Dont remove until we have proper tracking
+			}),
 			--[[ Missing quest ID
 			q(74115, {		-- Inscription-Order: Skinning
 				["name"] = "Inscription-Order: Skinning",
