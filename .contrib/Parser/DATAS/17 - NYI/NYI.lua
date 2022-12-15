@@ -1635,7 +1635,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193067),	-- Acadia's Tools [DNT/Unused]
 			i(194337),	-- Liquid Courage
 			i(198441),	-- Thunderspine Tenders
-			i(198614),	-- Soggy Clump of Darkmoon Cards
 			i(201250),	-- Victorious Contender's Strongbox
 			i(201251),	-- Pillaged Contender's Strongbox
 			i(201252),	-- 10.0 Bronze PvP Chest (DNT)

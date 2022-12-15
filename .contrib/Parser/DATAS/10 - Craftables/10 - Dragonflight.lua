@@ -1192,6 +1192,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(202105),	-- Rusted Coin of the Isles
 		i(194730),	-- Scalebelly Mackeral
 		i(199339),	-- Silver Coin of the Isles
+		i(198614),	-- Soggy Clump of Darkmoon Cards
 		i(194969),	-- Temporal Dragonhead
 		i(194966),	-- Thousandbite Piranha
 	}),

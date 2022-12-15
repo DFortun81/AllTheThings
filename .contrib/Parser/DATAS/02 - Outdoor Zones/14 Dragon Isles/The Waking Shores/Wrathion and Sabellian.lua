@@ -236,25 +236,25 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				--]]
 				n(HIDDEN_QUESTS, {
-					q(66362, { ["name"] = "First Weekly Completion of 'Unlocking our Past' (Igys the Believer)",
+					q(66362, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Igys the Believer)",
 						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 						["cr"] = 187275,	-- Igys the Believer
-						["isWeekly"] = true,
+						["isDaily"] = true,
 					}),
-					q(66359, { ["name"] = "First Weekly Completion of 'Unlocking our Past' (Forgemaster Bazentus)",
+					q(66359, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Forgemaster Bazentus)",
 						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 						["cr"] = 187272,	-- Forgemaster Bazentus
-						["isWeekly"] = true,
+						["isDaily"] = true,
 					}),
-					q(66360, { ["name"] = "First Weekly Completion of 'Unlocking our Past' (Sabellian)",
+					q(66360, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Sabellian)",
 						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 						["cr"] = 187447,	-- Sabellian
-						["isWeekly"] = true,
+						["isDaily"] = true,
 					}),
-					q(66361, { ["name"] = "First Weekly Completion of 'Unlocking our Past' (Wrathion)",
+					q(66361, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Wrathion)",
 						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 						["cr"] = 187284,	-- Wrathion
-						["isWeekly"] = true,
+						["isDaily"] = true,
 					}),
 					-- not sure if HQT these or Hidden Quests, maybe after knowing better what they represent
 					-- 64277 - weekly, accepted Keys of Loyalty after choosing Wrathion

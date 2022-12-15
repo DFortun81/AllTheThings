@@ -217,11 +217,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires Renown 14.",
 				["provider"] = { "n", 186449 },	-- Arvik
 				["coord"] = { 12.9, 48.8, THE_AZURE_SPAN },
-				["g"] = {
-					i(197153),	-- Highland Drake: Bladed Tail (DM!)
-					i(197139),	-- Highland Drake: Large Spotted Pattern (DM!)
-					i(197123),	-- Highland Drake: Thorn Horns (DM!)
-				},
 			}),
 			q(72318, {	-- Iskaaran Crafter's Knowledge
 				["description"] = "Requires Renown 14.",
