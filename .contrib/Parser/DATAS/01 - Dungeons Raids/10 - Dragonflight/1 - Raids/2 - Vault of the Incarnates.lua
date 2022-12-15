@@ -9,8 +9,12 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		["order"] = "01",
 		["maps"] = {
 			2119,	-- The Primal Bulwark
+			2120,	--
+			2121,	--
 			2122,	-- The Vault Approach
+			2123,	-- Iceskitter Hollow
 			2124,	-- The Primal Convergence
+			2126,	--
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -1043,5 +1047,39 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 		},
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	inst(1200, {	-- Vault of the Incarnates
+		q(70076),	-- Eranog (N)
+		q(70085),	-- Eranog (N)
+		q(72265),	-- Eranog (N)
+		q(70093),	-- Eranog (H)
+		q(72613),	-- Braekkas (trash)
+		q(72614),	-- Primal Council (trash)
+		q(70080),	-- Terros (N)
+		q(70088),	-- Terros (N)
+		q(72273),	-- Terros (N)
+		q(70096),	-- Terros (H)
+		q(70077),	-- The Primal Council (N)
+		q(70086),	-- The Primal Council (N)
+		q(72271),	-- The Primal Council (N)
+		q(72615),	-- Thondrozus (trash)
+		q(70078),	-- Dathea (N)
+		q(70087),	-- Dathea (N)
+		q(72272),	-- Dathea (N)
+		q(72616),	-- Iskakx (trash)
+		q(72617),	-- Kaurdyth (trash)
+		q(70081),	-- Sennarth (N)
+		q(70089),	-- Sennarth (N)
+		q(72274),	-- Sennarth (N)
+		q(70082),	-- Kurog Grimtotem (N)
+		q(70090),	-- Kurog Grimtotem (N)
+		q(72275),	-- Kurog Grimtotem (N)
+		q(72618),	-- Broodguardian Ziruss (trash)
+		q(70083),	-- Broodkeeper Diurna (N)
+		q(70091),	-- Broodkeeper Diurna (N)
+		q(72276),	-- Broodkeeper Diurna (N)
 	}),
 })));
