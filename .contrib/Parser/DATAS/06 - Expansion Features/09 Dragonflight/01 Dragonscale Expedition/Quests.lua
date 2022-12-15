@@ -304,6 +304,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201715),	-- Notebook of Crafting Knowledge
 				},
 			}),
+				-- RENOWN 15 --
+			q(70809, {	-- Deeper Mysteries of the Dragon Isles Drakes
+				["description"] = "Requires Renown 15.",
+				["provider"] = { "n", 188265 },	-- Rae'ana
+				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
+				["g"] = {
+					i(197395),	-- Renewed Proto-Drake: Harrier Pattern (DM!)
+					i(197402),	-- Renewed Proto-Drake: Spiked Club Tail (DM!)
+					i(197374),	-- Renewed Proto-Drake: Swept Horns (DM!)
+				},
+			}),
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
 				["provider"] = { "o", 381669 },	-- Archivists' Request
@@ -364,6 +375,7 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(72038),	-- Triggered with 'A New Mystery' (69093)
 		q(72756),	-- Triggered with 'Next Steps' (66128)
 		q(72039),	-- Triggered with 'Renowned Explorer's Armor' (70819)
+		q(72040),	-- Triggered with 'Deeper Mysteries of the Dragon Isles Drakes' (70809)
 
 		-- Ensembles
 		q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor

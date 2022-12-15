@@ -17,6 +17,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
 			n(ACHIEVEMENTS, {
+				ach(16494),	-- Loyalty to the Prince
 				ach(16496, {	-- Obsidian Champion
 					crit(1, {
 						["_quests"] = { 67015 },	-- Forging the Answer
@@ -31,9 +32,19 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["_quests"] = { 66903 },	-- Clearing the Vault
 					}),
 				}),
+				ach(16760),	-- The Obsidian Bloodline
 			}),
 			n(QUESTS, {
 				q(66133, {	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
+					["coord"] = { 27.9, 58.8, THE_WAKING_SHORES },
+					["isWorldQuest"] = true,
+					["isWeekly"] = true,
+					["g"] = {
+						i(200070),	-- Obsidian Strongbox
+					},
+				}),
+				q(66805, {	-- Keys of Loyalty
 					["sourceQuest"] = 66419,	-- Allegiance To One
 					["coord"] = { 27.9, 58.8, THE_WAKING_SHORES },
 					["isWorldQuest"] = true,
@@ -101,34 +112,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						}),
 					},
 				}),
-				n(BONUS_OBJECTIVES, {
-					q(66901, {	-- Breaking the World
-						["provider"] = { "n", 187306 },	-- Morchok
-						["coord"] = { 32.8, 52.5, THE_WAKING_SHORES },
-						["repeatable"] = true,
-					}),
-					q(66903, {	-- Clearing the Vault
-						["provider"] = { "n", 189822 },	-- Shas'ith
-						["coord"] = { 26.7, 62.2, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						-- Sometimes double triggers, rewarding you twice with the rep
-					}),
-					q(67027, {	-- Death's Shadow
-						["provider"] = { "n", 190985 },	-- Death's Shadow
-						["coord"] = { 29.6, 56.7, THE_WAKING_SHORES },
-						["repeatable"] = true,
-					}),
-					q(67015, {	-- Forging the Answer
-						--["provider"] = { "n",  },	--
-						["coord"] = { 27.4, 60.8, THE_WAKING_SHORES },
-						["repeatable"] = true,
-					}),
-					q(70763, {	-- Worldcarver A'tir
-						["provider"] = { "n", 186859 },	-- Worldcarver A'tir
-						["coord"] = { 30.0, 55.4, THE_WAKING_SHORES },
-						["repeatable"] = true,
-					}),
-				}),
 				q(66419, {	-- Allegiance To One
 					["coord"] = { 25.0, 56.2, THE_WAKING_SHORES },
 					["isWorldQuest"] = true,
@@ -183,6 +166,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
 					["isDaily"] = true,
 				}),
+				q(72447, {	-- Greatest of Threads
+					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["provider"] = { "n", 191193 },	-- Exadria
+					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+				}),
+				q(66445, {	-- Honor Our Fallen
+					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["provider"] = { "n", 191193 },	-- Exadria
+					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+				}),
 				q(66882, {	-- Lost Battlepack
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 					["provider"] = { "i", 193600 },	-- Lost Battlepack
@@ -218,10 +213,22 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
+				q(66326, {	-- The Tools of One's Trade
+					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["provider"] = { "n", 188179 },	-- Stoker Volrax
+					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+				}),
 				q(72456, {	-- Tomes Of Trust
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 					["provider"] = { "n", 188344 },	-- Chydrass
 					["coord"] = { 25, 56.1, THE_WAKING_SHORES },
+				}),
+				q(67142, {	-- Wyrm Food
+					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["provider"] = { "n", 196518 },	-- Voraxian
+					["coord"] = { 27.6,56.7, THE_WAKING_SHORES },
+					["isDaily"] = true,
 				}),
 				--[[
 				q(66633, {	-- Make a Statement
@@ -235,6 +242,34 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["isDaily"] = true,
 				}),
 				--]]
+				n(BONUS_OBJECTIVES, {
+					q(66901, {	-- Breaking the World
+						["provider"] = { "n", 187306 },	-- Morchok
+						["coord"] = { 32.8, 52.5, THE_WAKING_SHORES },
+						["repeatable"] = true,
+					}),
+					q(66903, {	-- Clearing the Vault
+						["provider"] = { "n", 189822 },	-- Shas'ith
+						["coord"] = { 26.7, 62.2, THE_WAKING_SHORES },
+						["repeatable"] = true,
+						-- Sometimes double triggers, rewarding you twice with the rep
+					}),
+					q(67027, {	-- Death's Shadow
+						["provider"] = { "n", 190985 },	-- Death's Shadow
+						["coord"] = { 29.6, 56.7, THE_WAKING_SHORES },
+						["repeatable"] = true,
+					}),
+					q(67015, {	-- Forging the Answer
+						--["provider"] = { "n",  },	--
+						["coord"] = { 27.4, 60.8, THE_WAKING_SHORES },
+						["repeatable"] = true,
+					}),
+					q(70763, {	-- Worldcarver A'tir
+						["provider"] = { "n", 186859 },	-- Worldcarver A'tir
+						["coord"] = { 30.0, 55.4, THE_WAKING_SHORES },
+						["repeatable"] = true,
+					}),
+				}),
 				n(HIDDEN_QUESTS, {
 					q(66362, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Igys the Believer)",
 						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
@@ -265,6 +300,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				n(190986, {	-- Battlehorn Pyrhus
 					["coord"] = { 28.6, 58.8, THE_WAKING_SHORES },
 					["questID"] = 74040,
+					["isDaily"] = true,
 					["g"] = {
 						-- Rest is under shared Lv70 Elite Rare Drops
 					},
@@ -272,6 +308,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				n(190991, {	-- Char
 					["coord"] = { 29.3, 52.5, THE_WAKING_SHORES },
 					["questID"] = 74043,
+					["isDaily"] = true,
 					["g"] = {
 						i(197602),	-- Windborne Velocidrake: Cluster Horns (DM!)
 					},
@@ -279,6 +316,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				n(186783, {	-- Cauldronbearer Blakor
 					["coord"] = { 31.1, 56.2, THE_WAKING_SHORES },
 					["questID"] = 74042,
+					["isDaily"] = true,
 					["g"] = {
 						i(201040),	-- Citadel Crusher's Gauntlets
 						i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail (DM!)
@@ -289,6 +327,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["description"] = "Restore 20 Obsidian Keys to Sabellian.",
 					["coord"] = { 31.8, 54.4, THE_WAKING_SHORES },
 					["questID"] = 73074,
+					["isDaily"] = true,
 					["cost"] = { { "i", 191264, 20 }, },	-- 20x Restored Obsidian Key
 					["g"] = {
 						i(200159),	-- Blaze Ring
@@ -299,6 +338,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["description"] = "Restore 20 Obsidian Keys to Igys the Believer.",
 					["coord"] = { 32.2, 51.9, THE_WAKING_SHORES },
 					["questID"] = 74067,
+					["isDaily"] = true,
 					["cost"] = { { "i", 191264, 20 }, },	-- 20x Restored Obsidian Key
 					["g"] = {
 						i(200207),	-- Petrified Fungal Spores
@@ -308,6 +348,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["description"] = "Underground",
 					["coord"] = { 24.4, 54.5, THE_WAKING_SHORES },
 					["questID"] = 74019,
+					["isDaily"] = true,
 					["g"] = {
 						i(200144),	-- Band of the Unscalable
 						i(200683),	-- Legguards of the Deep Strata
@@ -316,6 +357,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				n(193232, {	-- Rasnar the War Ender
 					["coord"] = { 30.2, 60.4, THE_WAKING_SHORES },
 					["questID"] = 74051,
+					["isDaily"] = true,
 					["g"] = {
 						i(200757),	-- Qalashi War-Helm
 					},
@@ -323,6 +365,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				n(187598, {	-- Rohzor Forgesmash <Djaradin Smithmaster>
 					["coord"] = { 25.3, 60.3, THE_WAKING_SHORES },
 					["questID"] = 74052,
+					["isDaily"] = true,
 					["g"] = {
 						i(194503),	-- Plans: Black Dragon Touched Hammer (RECIPE!)
 						i(200169),	-- Protector's Molten Cudgel
@@ -333,6 +376,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["description"] = "Restore 20 Obsidian Keys to Wrathion. Underground",
 					["coord"] = { 24.5, 57.8, THE_WAKING_SHORES },
 					["questID"] = 74077,
+					["isDaily"] = true,
 					["cost"] = { { "i", 191264, 20 }, },	-- 20xRestored Obsidian Key
 					["g"] = {
 						-- Rest is under shared Lv70 Elite Rare Drops
@@ -341,14 +385,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				n(187886, {	-- Turboris
 					["coord"] = { 33.6, 55.7, THE_WAKING_SHORES },
 					["questID"] = 74054,
+					["isDaily"] = true,
 					["g"] = {
 						i(200244),	-- Enchanted Muckstompers
 						i(200246),	-- Lost Delving Lamp
 					},
 				}),
 				n(186859, {	-- Worldcarver A'tir
-					-- ["coord"] = { X, Y, THE_WAKING_SHORES },
+					["coord"] = { 30.0, 55.6, THE_WAKING_SHORES },
 					["questID"] = 74090,
+					["isDaily"] = true,
 					["g"] = {
 						i(200213),	-- Lava-Splattered Breastplate
 					},
@@ -721,6 +767,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
 			q(70984),	-- triggered first time entering Obsidian Citadel area with Wrathion chat message
+			q(64277),	-- chosing Seballian for the current week
 		}),
 	}),
 })));

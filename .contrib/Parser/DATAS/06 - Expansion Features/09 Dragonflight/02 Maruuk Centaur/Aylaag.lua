@@ -13,6 +13,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			n(QUESTS, {
 				-- River camp --
+				q(67039, {	-- An Amazing Journey
+					--["sourceQuests"] = {  },
+					["provider"] = { "n", 185881 },	-- Toluiqi
+					["coord"] = { 70.7, 62.9, OHNAHRAN_PLAINS },	-- River Camp?
+					["isDaily"] = true,
+				}),
 				q(70279, {	-- Blood of Dragons
 					--["sourceQuests"] = {  },
 					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
@@ -24,6 +30,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["provider"] = { "n", 185853 },	-- Hadari Khan
 					["coord"] = { 70.9, 62.6, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
+				}),
+				q(70990, {	-- If There's Wool There's a Way
+					--["sourceQuests"] = {  },
+					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
+					["coord"] = { 70.7, 63.6, OHNAHRAN_PLAINS },	-- River Camp?
+					["isDaily"] = true,
+					["g"] = {
+						i(200153),	-- Aylaag Skinning Shear
+					},
 				}),
 				q(67034, {	-- Of Wind and Water
 					--["sourceQuests"] = {  },
@@ -88,21 +103,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["isDaily"] = true,
 				}),
 				--[[
-				q(67039, {	-- An Amazing Journey
-					--["sourceQuests"] = {  },
-					["provider"] = { "n", 185881 },	-- Toluiqi
-					["coord"] = { 70.7, 62.9, OHNAHRAN_PLAINS },	-- River Camp?
-					["isDaily"] = true,
-				}),
-				q(70990, {	-- If There's Wool There's a Way
-					--["sourceQuests"] = {  },
-					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
-					["coord"] = { 70.7, 63.6, OHNAHRAN_PLAINS },	-- River Camp?
-					["isDaily"] = true,
-					["g"] = {
-						i(200153),	-- Aylaag Skinning Shear
-					},
-				}),
 				q(65789, {	-- Where Rivers Sleep
 					--["sourceQuests"] = {  },
 					["provider"] = { "n", 185867 },	-- Barnak of the Reeds

@@ -896,7 +896,6 @@ ach(15557),	-- Murkastrasza
 ach(16425),	-- I'm a Template Character [DNT]
 10.0.0.45454
 ach(16464),	-- Battle on the Dragon Isles
-ach(16494),	-- Loyalty to the Prince \\ Backing the Throne
 ach(16495),	-- Obsidian Keymaster
 ach(16497),	-- I'm Playing All Sides \\ I'm Playing Both Sides
 ach(16501),	-- Aquatic Battler of the Dragon Isles
@@ -954,8 +953,6 @@ ach(16730),	-- Crimson Gladiator's Drake
 ach(16731),	-- Court is Now in Session
 10.0.2.45969
 ach(16736),	-- Grand Theft Mammoth
-10.0.2.46091
-ach(16760),	-- The Obsidian Bloodline
 10.0.2.46259
 ach(16764),	-- Crimson Carpet Fashion
 ach(16791),	-- Merchant Artisan
