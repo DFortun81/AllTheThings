@@ -1144,9 +1144,12 @@ for key,value in pairs({
 	[174712] = "Оскверненный песнецвет",	-- Corrupted Songflower
 	[174713] = "Оскверненный песнецвет",	-- Corrupted Songflower
 	[174793] = "Инкубатор Улья Гориши",	-- Gorishi Hive Hatchery	--TODO: This was manually translated
+	[175245] = "Огонь отцов",	-- Father Flame
 	[175320] = "Разыскивается: Глубомрак!",	-- WANTED: Murkdeep!
 	[175324] = "Кристаллы великанов Ледяного Молота",	-- Frostmaul Shards
+	[175382] = "Металлический ящик Рокового Зажима",	-- Doomrigger's Coffer
 	[175384] = "Яйцо виверны Скального гнездовья",	-- Highperch Wyvern Egg
+	[175385] = "Табличка Темного Камня",	-- Darkstone Tablet
 	[175407] = "Осененное луной перо",	-- Moontouched Feather
 	[175524] = "Таинственный красный кристалл",	-- Mysterious Red Crystal
 	[175565] = "Странное яйцо",	-- Alien Egg
@@ -1231,6 +1234,7 @@ for key,value in pairs({
 	[180794] = "Дневник Джандис Баровой",	-- Journal of Jandice Barov
 	[180918] = "Разыскивается: Таэлис Ненасытный",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Журнал магистра Блеклые Сумерки",	-- Magister Duskwither's Journal
+	[181053] = "Корзина ламинарии кровавой",	-- Basket of Bloodkelp
 	[181073] = "Котел Ароматов",	-- Fragrant Cauldron
 	[181074] = "Трофеи арены",	-- Arena Spoils
 	[181083] = "Наследие Сотоса и Джариена",	-- Sothos and Jarien's Heirlooms
@@ -3361,6 +3365,7 @@ for key,value in pairs({
 	[380617] = "Диаграмма оружия куалаши",	-- Qalashi Weapon Diagram
 	[380618] = "Драконий плавень",	-- Draconic Flux
 	[380619] = "Любопытные слитки",	-- Curious Ingots
+	[380620] = "Древние осколки копий",	-- Ancient Spear Shards
 	[380648] = "Странная книга",	-- Odd Book
 	[380653] = "Воздушный змей Йенну",	-- Yennu's Kite
 	[380654] = "Бригантина мертвеца",	-- Dead Man's Chestplate
@@ -3398,7 +3403,9 @@ for key,value in pairs({
 	[381483] = "Трофей мармони",	-- Marmoni's Prize
 	[381484] = "Хорошо сохранившаяся кость",	-- Well-Preserved Bone
 	[381485] = "Потерянное мыло путешественника",	-- Adventurer's Lost Soap Bar
+	[381510] = "Кости летающей рыбы",	-- Flying Fish Bones
 	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
+	[381513] = "Старая кирка",	-- Old Pickaxe
 	[381650] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Запись на игру в \"Клык, взмах, огонь\"",	-- Fang Flap Fire Signups
 	[381661] = "Просьба архивариуса",	-- Archivists' Request
