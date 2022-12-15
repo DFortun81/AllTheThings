@@ -9,8 +9,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			["isWeekly"] = true,
 		},{
 			e(2515, {	-- Strunraan, The Sky's Misery
-				-- ["crs"] = {  },
-				-- ["coord"] = {  },
+				["crs"] = { 193534 },
+				["coord"] = { 82.0, 76.0, OHNAHRAN_PLAINS },
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
@@ -22,8 +22,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			e(2506, {	-- Basrikron, The Shale Wing
-				-- ["crs"] = {  },
-				-- ["coord"] = {  },
+				["crs"] = { 193535 },
+				["coord"] = { 55.0, 77.7, THE_WAKING_SHORES },
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
@@ -35,8 +35,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			e(2517, {	-- Bazual, The Dreaded Flame
-				-- ["crs"] = {  },
-				-- ["coord"] = {  },
+				["crs"] = { 193532 },
+				-- ["coord"] = { , , THE_AZURE_SPAN },
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
@@ -48,8 +48,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			e(2518, {	-- Liskanoth, The Futurebane
-				-- ["crs"] = {  },
-				-- ["coord"] = {  },
+				["crs"] = { 193533 },
+				-- ["coord"] = { , , THALDRASZUS },
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
