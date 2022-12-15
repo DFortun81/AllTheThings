@@ -3372,7 +3372,7 @@ for key,value in pairs({
 	[380602] = "Pelego Abençoado pelo Vento",	-- Wind-Blessed Hide
 	[380615] = "Bolsa de Larápio",	-- Poacher's Pack
 	[380617] = "Diagrama de Arma Qalashi",	-- Qalashi Weapon Diagram
-	--TODO: [380618] = "Draconic Flux",	-- Draconic Flux
+	[380618] = "Fluxo Dracônico",	-- Draconic Flux
 	[380619] = "Lingotes Curiosos",	-- Curious Ingots
 	[380620] = "Estilhaços de Lança Anciente",	-- Ancient Spear Shards
 	[380648] = "Livro Estranho",	-- Odd Book
@@ -3385,7 +3385,7 @@ for key,value in pairs({
 	[380859] = "Barco de Brinquedo Morsano",	-- Tuskarr Toy Boat
 	[380860] = "Chifre de Centauro",	-- Centaur Horn
 	[380902] = "Arenas da Ferocidade",	-- Fields of Ferocity
-	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
+	[380991] = "Monturo de Terra",	-- Dirt Mound
 	[381045] = "Cálice do Dragão Dourado",	-- Golden Dragon Goblet
 	[381094] = "Pincel Elegante",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
