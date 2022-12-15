@@ -10,11 +10,11 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		["maps"] = {
 			2119,	-- The Primal Bulwark
 			2120,	-- The Elemental Conclave
-			2121,	--
+			2121,	-- Galewind Crag
 			2122,	-- The Vault Approach
 			2123,	-- Iceskitter Hollow
 			2124,	-- The Primal Convergence
-			2126,	--
+			2126,	-- The Clutchwarren
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
