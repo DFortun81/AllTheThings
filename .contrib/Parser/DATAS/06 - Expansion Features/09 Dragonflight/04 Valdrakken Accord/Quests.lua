@@ -269,6 +269,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 193659 },	-- Provisioner Thom
 				["coord"] = { 36.5, 50.6, VALDRAKKEN },
 			}),
+				-- RENOWN 17 --
+			q(70897, {	-- A Coming of Age
+				["description"] = "Requires Renown 17.",
+				["provider"] = { "n", 195770 },	-- Armorsmith Terisk
+				["coord"] = { 36.0, 49.7, VALDRAKKEN },
+				["g"] = {
+					i(199682),	-- Bronze Drakonid Helmet
+					i(199681),	-- Cobalt Drakonid Helmet
+					i(199684),	-- Crimson Drakonid Helmet
+					i(199680),	-- Obsidian Drakonid Helmet
+					i(199683),	-- Verdant Drakonid Helmet
+				},
+			}),
 		}),
 	}),
 })));
@@ -286,5 +299,6 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(72757),	-- triggered with 'The Silver Purpose' (67084)
 		q(72694),	-- triggered with 'Wielding Titanic Might' (70903)
 		q(72283),	-- triggered with 'Soaring in Style' (70895)
+		q(72691),	-- triggered with 'A Coming of Age' (70897)
 	}),
 })));

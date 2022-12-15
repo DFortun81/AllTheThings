@@ -106,6 +106,19 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 				["coord"] = { 84.3, 53.5, VALDRAKKEN },
 			}),
+			q(70376, {	-- Second Challenge of Tyr: Might
+				["sourceQuests"] = { 70339 },	-- In Tyr's Footsteps: The Ohn'ahran Plains
+				["provider"] = { "o", 380540 },	-- Ornamented Statue
+				["coord"] = { 66.2, 55.3, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(199197),	-- Bottled Essence
+				},
+			}),
+			q(70341, {	-- Well Earned Vicotry
+				["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
+				["provider"] = { "n", 195924 },	-- Maiden of Inspiration
+				["coord"] = { 66.3, 55.3, VALDRAKKEN },
+			}),
 			q(70182, {	-- The Sweet Taste of Victory
 				["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
 				["provider"] = { "n", 195827 },	-- Maiden of Inspiration
@@ -317,12 +330,11 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72258),	-- triggered with 'A Dryadic Remedy' (71238) and with '10,000 Years of Roasting' (67063) - triggers off a line of text from Coulisa, the steward at the door - spell ID 393805
 		q(67055),	-- triggered with 'Warm Away These Shivers' (67047)
 		q(72009),	-- triggered with 'Warm Away These Shivers' (67047)
+		q(67056),	-- triggered after '10,000 Years of Roasting' (67063)
 
 		-- q(65041),	-- Memories of Scoroxia(On wowhead? Something you should return with??) / Talked with Scalecommanders Cindretresh and Azurathel
 
 		-- q(71243),	-- Weekly Quest?
-
-		-- q(67056),	-- popped when doing Ruby Feast
 
 		-- q(72892),	-- After "Aiding the Accord" series
 	}),

@@ -117,9 +117,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["isWorldQuest"] = true,
 					["isWeekly"] = true,
 				}),
+				q(66883, {	-- Ancient Horn Ring
+					["sourceQuests"] = { 66805 },	-- Keys of Loyalty
+					["provider"] = { "i", 193611 },	-- Ancient Horn Ring
+					["isWeekly"] = true,
+				}),
 				q(70847, {	-- Ancient Obsidian Charm
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
-					["provider"] = { "n", 199915 },	-- Ancient Obsidian Charm
+					["provider"] = { "i", 199915 },	-- Ancient Obsidian Charm
 					["isWeekly"] = true,
 				}),
 				q(65842, {	-- Disarming Behavior
@@ -698,8 +703,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				i(193611, {	-- Ancient Horn Ring
+					["description"] = "Drops from mobs around the Obsidian Citadel.",
+				}),
 				i(199915, {	-- Ancient Obsidian Charm
-					-- ["cr"] = creature,	-- name
+					["description"] = "Drops from mobs around the Obsidian Citadel.",
 				}),
 				i(201041, {	-- Citadel Crusher's Cloak
 					["description"] = "Drops from mobs around the Obsidian Citadel.",

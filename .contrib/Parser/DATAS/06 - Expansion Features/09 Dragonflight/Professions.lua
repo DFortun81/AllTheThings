@@ -13,7 +13,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["_quests"] = { 70181 },	-- First Challenge of Tyr: Finesse
 				}),
 				crit(3, {	-- Second Challenge: Might
-					-- ["_quests"] = { QUEST },	-- Name
+					["_quests"] = { 70376 },	-- Second Challenge of Tyr: Might
 				}),
 				crit(4, {	-- Third Challenge: Persistence
 					-- ["_quests"] = { QUEST },	-- Name

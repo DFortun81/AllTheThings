@@ -57,6 +57,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				--["description"] = "Requires Renown 5.",
 				["sourceQuests"] = { 70940 },	-- Tuskarr Champion's Tales
 				["provider"] = { "i", 201470 },	-- Story of a Memorable Victory
+				["isWeekly"] = true,
 			}),
 				-- RENOWN 6 --
 			q(70953, {	-- Tuskarr Headwear
