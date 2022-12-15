@@ -620,7 +620,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192772),	-- [PH] Water Salamander Green
 			i(192773),	-- [PH] Water Salamander Orange
 			i(192774),	-- [PH] Water Salamander Pink
-			i(192777),	-- Magmashell
 			i(192778),	-- [PH] Lava Slug Orange
 			i(192779),	-- Scorchpath
 			i(192780),	-- [PH] Lava Snail Orange
@@ -650,7 +649,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198824),	-- [PH] Dark Wind Eagle
 			i(198870),	-- Otto
 			i(201440),	-- Reins of the Liberated Slyvern
-			i(201883),	-- Empty Magma Shell
 		}),
 		n(PROFESSIONS, {
 			i(193905),	-- Iskaaran Trading Ledger

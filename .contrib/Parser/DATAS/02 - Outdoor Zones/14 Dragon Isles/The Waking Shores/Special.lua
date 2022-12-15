@@ -23,6 +23,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 70864,
 				["cost"] = { { "i", 200063, 1 }, },	-- 1x Observant Riddle "Treat"
 			}),
+			i(201883, {	-- Empty Magma Shell
+				["g"] = {
+					i(192777),	-- Magmashell (MOUNT!)
+				},
+			}),
 		}),
 	}),
 })));
