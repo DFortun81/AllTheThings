@@ -2163,7 +2163,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192764),	-- [PH] Dragonfly Green
 			i(192765),	-- [PH] Dragonfly Yellow
 			i(192770),	-- [PH] Moose Bull Black
-			i(192777),	-- [PH] Lava Snail Orange
 			i(192780),	-- [PH] Lava Snail Orange
 			i(192778),	-- [PH] Lava Slug Orange
 			i(192787),	-- [PH] Mammoth V2 Dark

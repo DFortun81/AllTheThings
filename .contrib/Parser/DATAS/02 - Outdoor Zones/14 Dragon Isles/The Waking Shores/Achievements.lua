@@ -163,6 +163,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				crit(6),	-- Finely Carved Wing
 			}),
 			ach(16409),	-- Let's Get Quacking
+			ach(16493, {	-- Petty Theft Mammoth
+				["coords"] = {
+					{ 33.3, 72.2, THE_WAKING_SHORES },	-- Burning Ascent
+					{ 23.6, 71.5, THE_WAKING_SHORES },	-- Dragonbane Keep
+					{ 37.2, 44.5, THE_WAKING_SHORES },	-- Smoldering Perch
+					{ 66.3, 24.6, THE_WAKING_SHORES },	-- Scalecracker Keep
+				},
+			}),
 			ach(16401),	-- Sojourner of the Waking Shores
 			ach(16584, {	-- Symbols of Hope
 				crit(1, {	-- Wingrest Embassy

@@ -393,7 +393,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 
 					-- Chapter 4 --
-				--TODO: Gone on Beta?
 				q(70437, {	-- To Tyrhold
 					["sourceQuests"] = { 66221 },	-- Moving On
 					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder

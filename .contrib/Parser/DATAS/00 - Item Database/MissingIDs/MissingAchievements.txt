@@ -896,7 +896,6 @@ ach(15557),	-- Murkastrasza
 ach(16425),	-- I'm a Template Character [DNT]
 10.0.0.45454
 ach(16464),	-- Battle on the Dragon Isles
-ach(16493),	-- Grand Theft Mammoth
 ach(16494),	-- Loyalty to the Prince \\ Backing the Throne
 ach(16495),	-- Obsidian Keymaster
 ach(16497),	-- I'm Playing All Sides \\ I'm Playing Both Sides
