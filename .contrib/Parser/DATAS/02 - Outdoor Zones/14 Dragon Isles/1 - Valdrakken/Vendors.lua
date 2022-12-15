@@ -356,7 +356,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								},
 							}),
 						}),
-						filter(RECIPE, bubbleDown({
+						filter(RECIPES, bubbleDown({
 							["requireSkill"] = INSCRIPTION,
 							["cost"] = {
 								{ "i", 190450, 3 },	-- 3x Awakened Ire
