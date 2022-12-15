@@ -1461,86 +1461,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 196072 },	-- Wu'de Prepfoot
 					["coord"] = { 35.1, 47.2, THE_WAKING_SHORES },
 				}),
-				q(72178, {	-- Theory in Practice: Baron von Swoopenbite
-					["name"] = "Theory in Practice: Baron von Swoopenbite",
-					["sourceQuests"] = {
-						69901,	-- Bring In the Expert
-						69900,	-- Identifying the Source
-					},
-					["provider"] = { "n", 192298 },	-- Tyrgon
-					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
-					["altQuests"] = {
-						-- 72178,	-- Theory in Practice: Baron von Swoopenbite
-						72174,	-- Theory in Practice: Bob
-						72179,	-- Theory in Practice: Lord Firegiggle
-						72177,	-- Theory in Practice: Mr.Nibbles
-						72176,	-- Theory in Practice: Toughscale
-					},
-				}),
-				q(72174, {	-- Theory in Practice: Bob
-					["name"] = "Theory in Practice: Bob",
-					["sourceQuests"] = {
-						69901,	-- Bring In the Expert
-						69900,	-- Identifying the Source
-					},
-					["provider"] = { "n", 192298 },	-- Tyrgon
-					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
-					["altQuests"] = {
-						72178,	-- Theory in Practice: Baron von Swoopenbite
-						-- 72174,	-- Theory in Practice: Bob
-						72179,	-- Theory in Practice: Lord Firegiggle
-						72177,	-- Theory in Practice: Mr.Nibbles
-						72176,	-- Theory in Practice: Toughscale
-					},
-				}),
-				q(72179, {	-- Theory in Practice: Lord Firegiggle
-					["name"] = "Theory in Practice: Lord Firegiggle",
-					["sourceQuests"] = {
-						69901,	-- Bring In the Expert
-						69900,	-- Identifying the Source
-					},
-					["provider"] = { "n", 192298 },	-- Tyrgon
-					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
-					["altQuests"] = {
-						72178,	-- Theory in Practice: Baron von Swoopenbite
-						72174,	-- Theory in Practice: Bob
-						-- 72179,	-- Theory in Practice: Lord Firegiggle
-						72177,	-- Theory in Practice: Mr.Nibbles
-						72176,	-- Theory in Practice: Toughscale
-					},
-				}),
-				q(72177, {	-- Theory in Practice: Mr.Nibbles
-					["name"] = "Theory in Practice: Mr.Nibbles",
-					["sourceQuests"] = {
-						69901,	-- Bring In the Expert
-						69900,	-- Identifying the Source
-					},
-					["provider"] = { "n", 192298 },	-- Tyrgon
-					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
-					["altQuests"] = {
-						72178,	-- Theory in Practice: Baron von Swoopenbite
-						72174,	-- Theory in Practice: Bob
-						72179,	-- Theory in Practice: Lord Firegiggle
-						-- 72177,	-- Theory in Practice: Mr.Nibbles
-						72176,	-- Theory in Practice: Toughscale
-					},
-				}),
-				q(72176, {	-- Theory in Practice: Toughscale
-					["name"] = "Theory in Practice: Toughscale",
-					["sourceQuests"] = {
-						69901,	-- Bring In the Expert
-						69900,	-- Identifying the Source
-					},
-					["provider"] = { "n", 192298 },	-- Tyrgon
-					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
-					["altQuests"] = {
-						72178,	-- Theory in Practice: Baron von Swoopenbite
-						72174,	-- Theory in Practice: Bob
-						72179,	-- Theory in Practice: Lord Firegiggle
-						72177,	-- Theory in Practice: Mr.Nibbles
-						-- 72176,	-- Theory in Practice: Toughscale
-					},
-				}),
+				-- Theory In Practice moved temporarily to HQTs
 				q(72089, {	-- To Skytop Observatory
 					["name"] = "To Skytop Observatory",
 					["provider"] = { "n", 193287 },	-- Lord Andestrasz
@@ -1758,5 +1679,85 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		q(70768),	-- triggers when 'Tale of the Outsider' completes
 		q(70770),	-- triggers when 'Tale of the Elders' becomes available for Tarjin the Blind
 		q(70769),	-- triggers when 'Tale of the Outsider' completes
+		q(72178, {	-- Theory in Practice: Baron von Swoopenbite
+			["name"] = "Theory in Practice: Baron von Swoopenbite",
+			["sourceQuests"] = {
+				69901,	-- Bring In the Expert
+				69900,	-- Identifying the Source
+			},
+			["provider"] = { "n", 192298 },	-- Tyrgon
+			["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+			["altQuests"] = {
+				-- 72178,	-- Theory in Practice: Baron von Swoopenbite
+				72174,	-- Theory in Practice: Bob
+				72179,	-- Theory in Practice: Lord Firegiggle
+				72177,	-- Theory in Practice: Mr.Nibbles
+				72176,	-- Theory in Practice: Toughscale
+			},
+		}),
+		q(72174, {	-- Theory in Practice: Bob
+			["name"] = "Theory in Practice: Bob",
+			["sourceQuests"] = {
+				69901,	-- Bring In the Expert
+				69900,	-- Identifying the Source
+			},
+			["provider"] = { "n", 192298 },	-- Tyrgon
+			["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+			["altQuests"] = {
+				72178,	-- Theory in Practice: Baron von Swoopenbite
+				-- 72174,	-- Theory in Practice: Bob
+				72179,	-- Theory in Practice: Lord Firegiggle
+				72177,	-- Theory in Practice: Mr.Nibbles
+				72176,	-- Theory in Practice: Toughscale
+			},
+		}),
+		q(72179, {	-- Theory in Practice: Lord Firegiggle
+			["name"] = "Theory in Practice: Lord Firegiggle",
+			["sourceQuests"] = {
+				69901,	-- Bring In the Expert
+				69900,	-- Identifying the Source
+			},
+			["provider"] = { "n", 192298 },	-- Tyrgon
+			["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+			["altQuests"] = {
+				72178,	-- Theory in Practice: Baron von Swoopenbite
+				72174,	-- Theory in Practice: Bob
+				-- 72179,	-- Theory in Practice: Lord Firegiggle
+				72177,	-- Theory in Practice: Mr.Nibbles
+				72176,	-- Theory in Practice: Toughscale
+			},
+		}),
+		q(72177, {	-- Theory in Practice: Mr.Nibbles
+			["name"] = "Theory in Practice: Mr.Nibbles",
+			["sourceQuests"] = {
+				69901,	-- Bring In the Expert
+				69900,	-- Identifying the Source
+			},
+			["provider"] = { "n", 192298 },	-- Tyrgon
+			["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+			["altQuests"] = {
+				72178,	-- Theory in Practice: Baron von Swoopenbite
+				72174,	-- Theory in Practice: Bob
+				72179,	-- Theory in Practice: Lord Firegiggle
+				-- 72177,	-- Theory in Practice: Mr.Nibbles
+				72176,	-- Theory in Practice: Toughscale
+			},
+		}),
+		q(72176, {	-- Theory in Practice: Toughscale
+			["name"] = "Theory in Practice: Toughscale",
+			["sourceQuests"] = {
+				69901,	-- Bring In the Expert
+				69900,	-- Identifying the Source
+			},
+			["provider"] = { "n", 192298 },	-- Tyrgon
+			["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+			["altQuests"] = {
+				72178,	-- Theory in Practice: Baron von Swoopenbite
+				72174,	-- Theory in Practice: Bob
+				72179,	-- Theory in Practice: Lord Firegiggle
+				72177,	-- Theory in Practice: Mr.Nibbles
+				-- 72176,	-- Theory in Practice: Toughscale
+			},
+		}),
 	}),
 })));
