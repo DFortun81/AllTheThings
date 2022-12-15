@@ -488,7 +488,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(202007),	-- Woven Stone Bracelets
 			i(202008),	-- Galvanic Gaiters
 			i(202009),	-- Lavamancer's Ceremonial Waistguard
-			i(202010),	-- Primalist Warden's Bracers
 			i(202116),	-- Alacritous Alchemist Stone
 			i(202143),	-- Woven Stone Bracelets
 			i(202144),	-- Greathelm of Horned Fury

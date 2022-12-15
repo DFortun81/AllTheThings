@@ -9,7 +9,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		["order"] = "01",
 		["maps"] = {
 			2119,	-- The Primal Bulwark
-			2120,	--
+			2120,	-- The Elemental Conclave
 			2121,	--
 			2122,	-- The Vault Approach
 			2123,	-- Iceskitter Hollow
@@ -69,7 +69,19 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				i(191597),	-- Recipe: Potion Absorption Inhibitor (RECIPE!)
 				i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
 			}),
+			n(QUESTS, {
+				q(72261, {	-- More Than a Prison?
+					["provider"] = {"i",201412},	-- Ancient Vault Artifact
+				}),
+			}),
+			n(ZONE_DROPS, {
+				i(201412),	-- Ancient Vault Artifact (Quest)
+				i(201411),	-- Ancient Vault Artifact (Repeatable)
+			}),
 			d(17, {	-- LFR
+				n(ZONE_DROPS, {
+					i(202010),	-- Primalist Warden's Bracers
+				}),
 				e(2480, {	-- Eranog
 					["crs"] = { 184972 },
 					["g"] = {
@@ -319,6 +331,17 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			d(14, {	-- Normal
+				n(QUESTS, {
+					q(71018, {	-- Vault of the Incarnates: Break a Few Eggs (N)
+						["qg"] = 193460,	-- Kalecgos
+						["g"] = {
+							i(200225),	-- Shard of the Greatstaff
+						},
+					}),
+				}),
+				n(ZONE_DROPS, {
+					i(202010),	-- Primalist Warden's Bracers
+				}),
 				e(2480, {	-- Eranog
 					["crs"] = { 184972 },
 					["g"] = {
@@ -557,6 +580,17 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						r(370543),	-- Elemental Potion of Ultimate Power (RECIPE!)
 						r(370672),	-- Potion Cauldron of Ultimate Power (RECIPE!)
 					}),
+				}),
+				n(QUESTS, {
+					q(71019, {	-- Vault of the Incarnates: Break a Few Eggs (H)
+						["qg"] = 193460,	-- Kalecgos
+						["g"] = {
+							i(200226),	-- Shard of the Greatstaff
+						},
+					}),
+				}),
+				n(ZONE_DROPS, {
+					i(202010),	-- Primalist Warden's Bracers
 				}),
 				e(2480, {	-- Eranog
 					["crs"] = { 184972 },
@@ -813,6 +847,17 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						r(370672),	-- Potion Cauldron of Ultimate Power (RECIPE!)
 					}),
 				}),
+				n(QUESTS, {
+					q(71020, {	-- Vault of the Incarnates: Break a Few Eggs (M)
+						["qg"] = 193460,	-- Kalecgos
+						["g"] = {
+							i(200227),	-- Shard of the Greatstaff
+						},
+					}),
+				}),
+				n(ZONE_DROPS, {
+					i(202010),	-- Primalist Warden's Bracers
+				}),
 				e(2480, {	-- Eranog
 					["crs"] = { 184972 },
 					["g"] = {
@@ -1052,12 +1097,14 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	inst(1200, {	-- Vault of the Incarnates
+		q(72264),	-- 'Anicent Vault Artifact' first drop?
+		q(72612),	-- Volcanius (trash)
 		q(70076),	-- Eranog (N)
 		q(70085),	-- Eranog (N)
 		q(72265),	-- Eranog (N)
 		q(70093),	-- Eranog (H)
 		q(72613),	-- Braekkas (trash)
-		q(72614),	-- Primal Council (trash)
+		q(72614),	-- Council Gauntlet (trash)
 		q(70080),	-- Terros (N)
 		q(70088),	-- Terros (N)
 		q(72273),	-- Terros (N)
@@ -1065,6 +1112,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(70077),	-- The Primal Council (N)
 		q(70086),	-- The Primal Council (N)
 		q(72271),	-- The Primal Council (N)
+		q(70094),	-- The Primal Council (H)
 		q(72615),	-- Thondrozus (trash)
 		q(70078),	-- Dathea (N)
 		q(70087),	-- Dathea (N)
@@ -1074,6 +1122,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(70081),	-- Sennarth (N)
 		q(70089),	-- Sennarth (N)
 		q(72274),	-- Sennarth (N)
+		q(70097),	-- Sennarth (H)
 		q(70082),	-- Kurog Grimtotem (N)
 		q(70090),	-- Kurog Grimtotem (N)
 		q(72275),	-- Kurog Grimtotem (N)
