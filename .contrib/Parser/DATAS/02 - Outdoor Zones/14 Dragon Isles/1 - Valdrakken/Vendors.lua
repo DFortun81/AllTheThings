@@ -356,6 +356,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								},
 							}),
 						}),
+						filter(RECIPE, bubbleDown({
+							["requireSkill"] = INSCRIPTION,
+							["cost"] = {
+								{ "i", 190450, 3 },	-- 3x Awakened Ire
+							},
+						}, {
+							i(203378),	-- Technique: Crimson Combatant's Medallion
+							i(203379),	-- Technique: Crimson Combatant's Insignia of Alacrity
+							i(203380),	-- Technique: Crimson Combatant's Emblem
+						})),
 					},
 				}),
 				n(196191, {	-- Malicia <Scourge of the Flightless>
