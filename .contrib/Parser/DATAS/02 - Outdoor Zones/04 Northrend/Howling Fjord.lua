@@ -300,6 +300,16 @@ root("Zones", {
 					exploration(3982),	-- Wyrmskull Village
 				}),
 				-- #endif
+				n(FACTION, {
+					faction(1068, {	-- Explorer's League
+						["maps"] = { THE_STORM_PEAKS },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					faction(1067, {	-- The Hand of Vengeance
+						["maps"] = { DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
+					}),
+				}),
 				prof(FISHING, {
 					ach(1517, {	-- Northrend Angler
 						["criteriaID"] = 5279,	-- Deep Sea Monsterbelly School
@@ -1584,11 +1594,12 @@ root("Zones", {
 						},
 					}),
 					q(11391, {	-- Steel Gate Patrol
-						["coord"] = { 30.8, 28.5, HOWLING_FJORD },
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
 						["qg"] = 24399,	-- Steel Gate Chief Archaeologist
 						["sourceQuest"] = 11390,	-- I've Got a Flying Machine!
+						["coord"] = { 30.8, 28.5, HOWLING_FJORD },
+						["maxReputation"] = { 1068, EXALTED },	-- Explorer's League, Exalted.
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(11249, {	-- Stop the Ascension! (A) -- TODO: Verify if this drops all the time
 						["races"] = ALLIANCE_ONLY,

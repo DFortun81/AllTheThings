@@ -177,8 +177,12 @@ root("Zones", {
 				}),
 				-- #endif
 				n(FACTIONS, {
-					faction(1106),	-- Argent Crusade
-					faction(1098),	-- Knights of the Ebon Blade
+					faction(1106, {	-- Argent Crusade
+						["maps"] = { ZULDRAK },
+					}),
+					faction(1098, {	-- Knights of the Ebon Blade
+						["maps"] = { ZULDRAK },
+					}),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(335, {	-- Crusaders' Pinnacle
@@ -319,6 +323,7 @@ root("Zones", {
 						["qg"] = 31834,	-- Ground Commander Xutjja
 						["sourceQuest"] = 13340,	-- Joining the Assault
 						["coord"] = { 58.3, 45.9, ICECROWN },
+						["maxReputation"] = { 1085, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -331,11 +336,12 @@ root("Zones", {
 						["isDaily"] = true,
 					}),
 					q(13301, {	-- Assault by Ground (H)
-						["coord"] = { 58.3, 46.1, ICECROWN },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
 						["qg"] = 31833,	-- Kor'kron Squad Leader
 						["sourceQuest"] = 13340,	-- Joining the Assault
+						["coord"] = { 58.3, 46.1, ICECROWN },
+						["maxReputation"] = { 1085, EXALTED },	-- Warsong Offensive, Exalted.
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13230, {	-- Avenge Me!
 						["coord"] = { 68.3, 67.5, ICECROWN },
@@ -456,11 +462,12 @@ root("Zones", {
 						["isDaily"] = true,
 					}),
 					q(13330, {	-- Blood of the Chosen (H)
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
 						["qg"] = 32301,	-- Warbringer Davos Rioht
 						["sourceQuest"] = 13224,	-- Orgrim's Hammer
 						["description"] = "On Orgrim's Hammer.",
+						["maxReputation"] = { 1085, EXALTED },	-- Warsong Offensive, Exalted.
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13334, {	-- Bloodspattered Banners (A)
 						["races"] = ALLIANCE_ONLY,
@@ -766,10 +773,11 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 					}),
 					q(12813, {	-- From Their Corpses, Rise!
-						["coord"] = { 19.6, 48.3, ICECROWN },
-						["isDaily"] = true,
 						["qg"] = 29396,	-- Setaal Darkmender
 						["sourceQuest"] = 12807,	-- The Story Thus Far...
+						["coord"] = { 19.6, 48.3, ICECROWN },
+						["maxReputation"] = { 1098, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+						["isDaily"] = true,
 					}),
 					q(13171, {	-- From Whence They Came
 						["coord"] = { 44.0, 24.5, ICECROWN },
@@ -928,10 +936,11 @@ root("Zones", {
 						},
 					}),
 					q(12838, {	-- Intelligence Gathering
-						["coord"] = { 20.0, 47.9, ICECROWN },
-						["isDaily"] = true,
 						["qg"] = 29456,	-- Aurochs Grimbane
 						["sourceQuest"] = 12807,	-- The Story Thus Far...
+						["coord"] = { 20.0, 47.9, ICECROWN },
+						["maxReputation"] = { 1098, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+						["isDaily"] = true,
 					}),
 					q(13139, {	-- Into The Frozen Heart Of Northrend
 						["coord"] = { 82.8, 72.7, ICECROWN },
@@ -1000,11 +1009,12 @@ root("Zones", {
 						["isBreadcrumb"] = true,
 					}),
 					q(13331, {	-- Keeping the Alliance Blind
+						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
+						["sourceQuest"] = 13313,	-- Blinding the Eyes in the Sky
+						["description"] = "On Orgrim's Hammer.",
+						["maxReputation"] = { 1085, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
-						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
-						["description"] = "On Orgrim's Hammer.",
-						["sourceQuest"] = 13313,	-- Blinding the Eyes in the Sky
 					}),
 					q(13144, {	-- Killing Two Scourge With One Skeleton
 						["coord"] = { 35.3, 66.3, ICECROWN },
@@ -1034,11 +1044,12 @@ root("Zones", {
 						["isDaily"] = true,
 					}),
 					q(13283, {	-- King of the Mountain (H)
-						["coord"] = { 51.9, 57.5, ICECROWN },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
 						["qg"] = 31781,	-- Blast Thunderbomb
 						["sourceQuest"] = 13293,	-- Get to Ymirheim!
+						["coord"] = { 51.9, 57.5, ICECROWN },
+						["maxReputation"] = { 1085, EXALTED },	-- Warsong Offensive, Exalted.
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13401, {	-- Knowledge is a Terrible Burden (A)
 						["coord"] = { 49.1, 73.1, ICECROWN },
@@ -1058,10 +1069,11 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12995, {	-- Leave Our Mark
-						["coord"] = { 42.8, 25.0, ICECROWN },
-						["isDaily"] = true,
 						["qg"] = 29343,	-- Baron Sliver
 						["sourceQuest"] = 12951,	-- Let the Baron Know
+						["coord"] = { 42.8, 25.0, ICECROWN },
+						["maxReputation"] = { 1098, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+						["isDaily"] = true,
 					}),
 					q(12951, {	-- Let the Baron Know
 						["coord"] = { 41.0, 23.8, ICECROWN },
@@ -1159,10 +1171,11 @@ root("Zones", {
 						["sourceQuest"] = 13155,	-- Vereth the Cunning
 					}),
 					q(12815, {	-- No Fly Zone
-						["coord"] = { 19.6, 47.7, ICECROWN },
-						["isDaily"] = true,
 						["qg"] = 29405,	-- Uzo Deathcaller
 						["sourceQuest"] = 12814,	-- You'll Need a Gryphon
+						["coord"] = { 19.6, 47.7, ICECROWN },
+						["maxReputation"] = { 1098, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+						["isDaily"] = true,
 					}),
 					pvp(q(13233, {	-- No Mercy!
 						["races"] = ALLIANCE_ONLY,
@@ -1502,10 +1515,11 @@ root("Zones", {
 						["sourceQuest"] = 13329,	-- Before the Gate of Horror
 					}),
 					q(13069, {	-- Shoot 'Em Up
-						["coord"] = { 43.5, 25.1, ICECROWN },
-						["isDaily"] = true,
 						["qg"] = 30074,	-- The Leaper
 						["sourceQuest"] = 12982,	-- Ebon Blade Prisoners
+						["coord"] = { 43.5, 25.1, ICECROWN },
+						["maxReputation"] = { 1098, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+						["isDaily"] = true,
 					}),
 					q(13397, {	-- Sindragosa's Fall
 						["races"] = ALLIANCE_ONLY,
@@ -1521,18 +1535,20 @@ root("Zones", {
 						},
 					}),
 					q(13300, {	-- Slaves to Saronite (A)
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
 						["qg"] = 31259,	-- Absalan the Pious
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13225,	-- The Skybreaker
+						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13302, {	-- Slaves to Saronite (H)
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
 						["qg"] = 31261,	-- Brother Keltan
 						["sourceQuest"] = 13224,	-- Orgrim's Hammer
 						["description"] = "On Orgrim's Hammer.",
+						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13315, {	-- Sneak Preview (A)
 						["races"] = ALLIANCE_ONLY,
@@ -2080,10 +2096,11 @@ root("Zones", {
 						},
 					}),
 					q(13071, {	-- Vile Like Fire!
-						["coord"] = { 42.9, 25.5, ICECROWN },
-						["isDaily"] = true,
 						["qg"] = 30216,	-- Vile
 						["sourceQuest"] = 12992,	-- Crush Dem Vrykuls!
+						["coord"] = { 42.9, 25.5, ICECROWN },
+						["maxReputation"] = { 1098, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+						["isDaily"] = true,
 					}),
 					q(13239, {	-- Volatility
 						["races"] = HORDE_ONLY,

@@ -417,8 +417,13 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			ach(273, {	-- On Metzen!
 				["provider"] = { "n", 15664 },	-- Metzen the Reindeer
 				["sourceQuests"] = {
+					-- #if AFTER 4.3.0
 					7043,	-- You're a Mean One... [A]
 					6983,	-- You're a Mean One... [H]
+					-- #else
+					8762,	-- Metzen the Reindeer (Alliance)
+					8746,	-- Metzen the Reindeer (Horde)
+					-- #endif
 				},
 				["maps"] = {
 					-- #if AFTER CATA
@@ -1641,10 +1646,11 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				-- #else
 				["coord"] = { 33.4, 67, IRONFORGE },
 				-- #endif
+				["timeline"] = { "removed 4.0.4" },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
+				["maps"] = { ALTERAC_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 30,
-				["timeline"] = { "removed 4.0.4" },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
 			}),
 			q(6963, {	-- Stolen Winter Veil Treats (Horde)
 				["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
@@ -1653,10 +1659,11 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				-- #else
 				["coord"] = { 53.2, 66.6, ORGRIMMAR },
 				-- #endif
+				["timeline"] = { "removed 4.0.4" },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
+				["maps"] = { ALTERAC_MOUNTAINS },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 30,
-				["timeline"] = { "removed 4.0.4" },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
 			}),
 			q(7063, {	-- The Feast of Winter Veil (Alliance)
 				["providers"] = {
@@ -1664,6 +1671,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 17735 },	-- The Feast of Winter Veil
 				},
 				["sourceQuest"] = 7062,	-- The Reason for the Season (Alliance)
+				["coord"] = { 77.2, 11.8, IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 10,
@@ -1674,6 +1682,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 17735 },	-- The Feast of Winter Veil
 				},
 				["sourceQuest"] = 6964,	-- The Reason for the Season (Horde)
+				["coord"] = { 38.6, 36.2, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 10,
@@ -1724,12 +1733,14 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			}),
 			q(7062, {	-- The Reason for the Season (Alliance)
 				["qg"] = 1365,	-- Goli Krumn
+				["coord"] = { 30.2, 59.8, IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 10,
 			}),
 			q(6964, {	-- The Reason for the Season (Horde)
 				["qg"] = 9550,	-- Furmund
+				["coord"] = { 51, 65.4, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 				["lvl"] = 10,
@@ -1740,6 +1751,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					7022,	-- Greatfather Winter is Here! (Alliance)
 					7023,	-- Greatfather Winter is Here! (Alliance)
 				},
+				["coord"] = { 33.2, 65.8, IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 				["cost"] = {
 					{ "i", 17197, 5 },	-- Gingerbread Cookie
@@ -1758,7 +1770,12 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					7021,	-- Great-father Winter is Here! (Horde)
 					7024,	-- Great-father Winter is Here! (Horde)
 				},
+				["coord"] = { 52.4, 68.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
+				["cost"] = {
+					{ "i", 17197, 5 },	-- Gingerbread Cookie
+					{ "i", 1179, 1 },	-- Ice Cold Milk
+				},
 				["isYearly"] = true,
 				["lvl"] = 10,
 				["groups"] = {
@@ -1858,7 +1875,6 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["isBreadcrumb"] = true,
 				["isYearly"] = true,
 			}),
-			-- #IF BEFORE SHADOWLANDS
 			{	-- You're a Mean One...
 				["allianceQuestData"] = q(7043, {	-- You're a Mean One... [A]
 					["sourceQuest"] = 7042,	-- Stolen Winter Veil Treats (Alliance)
@@ -1871,6 +1887,8 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 						{ 33.2, 67.8, IRONFORGE },	-- Wulmort Jinglepocket (Alliance)
 						{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
 					},
+					-- #else
+					["maps"] = { IRONFORGE },
 					-- #endif
 				}),
 				["hordeQuestData"] = q(6983, {	-- You're a Mean One... [H]
@@ -1884,6 +1902,8 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 						{ 52.4, 77, ORGRIMMAR },	-- Kaymard Copperpinch (Horde)
 						{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
 					},
+					-- #else
+					["maps"] = { ORGRIMMAR },
 					-- #endif
 				}),
 				-- #if AFTER CATA
@@ -1923,78 +1943,6 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			},
-			-- #ELSE
-			q(7043, {	-- You're a Mean One... [A]
-				["sourceQuest"] = 7042,	-- Stolen Winter Veil Treats (Alliance)
-				["qgs"] = {
-					13433,	-- Wulmort Jinglepocket (Alliance)
-					13636,	-- Strange Snowman
-				},
-				["coords"] = {
-					{ 33.2, 67.8, IRONFORGE },	-- Wulmort Jinglepocket (Alliance)
-					{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
-				},
-				["isDaily"] = true,
-				["lvl"] = 30,
-				["groups"] = {
-					objective(1, {	-- 0/1 Stolen Treats
-						["provider"] = { "i", 17662 },	-- Stolen Treats
-						["cr"] = 13602,	-- The Abominable Greench
-					}),
-					i(149503, {	-- Stolen Gift
-						["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
-						["timeline"] = { "added 7.2.5.23910" },
-						["lvl"] = { 30, 59 },
-						["groups"] = HOLIDAY_NON_COLLECTIBLE_GROUPS,
-					}),
-					i(93626, {	-- Stolen Present
-						["timeline"] = { "added 5.1.0.16309", "removed 6.0.1.18594" },
-					}),
-					i(73792, {	-- Stolen Present
-						["timeline"] = { "added 4.3.0.15005", "removed 5.1.0.16309" },
-					}),
-					i(116762, {	-- Stolen Present
-						["timeline"] = { "added 6.0.1.18594" },
-						["sym"] = {{"fill"}},	-- fill with cached content
-					}),
-				},
-			}),
-			q(6983, {	-- You're a Mean One... [H]
-				["sourceQuest"] = 6963,	-- Stolen Winter Veil Treats (Horde)
-				["qgs"] = {
-					13418,	-- Kaymard Copperpinch (Horde)
-					13636,	-- Strange Snowman
-				},
-				["coords"] = {
-					{ 52.4, 77, ORGRIMMAR },	-- Kaymard Copperpinch (Horde)
-					{ 42.4, 41, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
-				},
-				["isDaily"] = true,
-				["lvl"] = 30,
-				["groups"] = {
-					objective(1, {	-- 0/1 Stolen Treats
-						["provider"] = { "i", 17662 },	-- Stolen Treats
-						["cr"] = 13602,	-- The Abominable Greench
-					}),
-					i(149503, {	-- Stolen Gift
-						["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
-						["timeline"] = { "added 7.2.5.23910" },
-						["lvl"] = { 30, 59 },
-						["groups"] = HOLIDAY_NON_COLLECTIBLE_GROUPS,
-					}),
-					i(93626, {	-- Stolen Present
-						["timeline"] = { "added 5.1.0.16309", "removed 6.0.1.18594" },
-					}),
-					i(73792, {	-- Stolen Present
-						["timeline"] = { "added 4.3.0.15005", "removed 5.1.0.16309" },
-					}),
-					i(116762, {	-- Stolen Present
-						["timeline"] = { "added 6.0.1.18594" },
-						["sym"] = {{"fill"}},	-- fill with cached content
-					}),
-				},
-			}),
-			-- #ENDIF
 		}),
 		-- #if AFTER 8.3.0
 		n(RARES, {

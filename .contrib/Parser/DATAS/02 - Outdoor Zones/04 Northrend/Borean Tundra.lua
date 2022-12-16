@@ -261,9 +261,15 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					faction(1052, {	-- Horde Expedition
+						["maps"] = { DRAGONBLIGHT, GRIZZLY_HILLS, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
+					}),
+					faction(1064, {	-- The Taunka
+						["maps"] = { DRAGONBLIGHT, GRIZZLY_HILLS, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 					}),
 					faction(1085, {	-- Warsong Offensive
+						["maps"] = { DRAGONBLIGHT, GRIZZLY_HILLS, ICECROWN, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
 					faction(1050, {	-- Valiance Expedition
@@ -434,9 +440,10 @@ root("Zones", {
 					}),
 					q(13414, {	-- Aces High!
 						["qg"] = 32548,	-- Corastrasza
-						["coord"] = { 29.4, 24.8, BOREAN_TUNDRA },
-						["isDaily"] = true,
 						["sourceQuest"] = 13413,	-- Aces High!
+						["coord"] = { 29.4, 24.8, BOREAN_TUNDRA },
+						["maxReputation"] = { 1091, EXALTED },	-- The Wyrmrest Accord, Exalted.
+						["isDaily"] = true,
 					}),
 					q(11930, {	-- Across Transborea
 						["qg"] = 26158,	-- Mother Tauranook
@@ -710,9 +717,10 @@ root("Zones", {
 					}),
 					q(11940, {	-- Drake Hunt
 						["qg"] = 26117,	-- Raelorasz
-						["coord"] = { 33.3, 34.5, BOREAN_TUNDRA },
-						["isDaily"] = true,
 						["sourceQuest"] = 11919,	-- Drake Hunt
+						["coord"] = { 33.3, 34.5, BOREAN_TUNDRA },
+						["maxReputation"] = { 1091, EXALTED },	-- The Wyrmrest Accord, Exalted.
+						["isDaily"] = true,
 					}),
 					q(11866, {	-- Ears of Our Enemies
 						["qg"] = 25809,	-- Archdruid Lathorius

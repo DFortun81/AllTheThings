@@ -4391,6 +4391,7 @@ root("Zones", {
 					q(13833, {	-- Blood Is Thicker
 						["qg"] = 28742,	-- Marcia Chase
 						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { BOREAN_TUNDRA },
 						["requireSkill"] = FISHING,
 						["isDaily"] = true,
@@ -4422,6 +4423,7 @@ root("Zones", {
 							["qg"] = 29631,	-- Awilo Longomba
 							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						}),
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["requireSkill"] = COOKING,
 						["isDaily"] = true,
 						["groups"] = {
@@ -4469,6 +4471,7 @@ root("Zones", {
 							["qg"] = 29631,	-- Awilo Longomba
 							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						}),
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["requireSkill"] = COOKING,
 						["isDaily"] = true,
 						["groups"] = {
@@ -4488,6 +4491,7 @@ root("Zones", {
 					q(13834, {	-- Dangerously Delicious
 						["qg"] = 28742,	-- Marcia Chase
 						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { WINTERGRASP },
 						["requireSkill"] = FISHING,
 						["isDaily"] = true,
@@ -4501,6 +4505,7 @@ root("Zones", {
 					q(13836, {	-- Disarmed!
 						["qg"] = 28742,	-- Marcia Chase
 						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["requireSkill"] = FISHING,
 						["isDaily"] = true,
 						["groups"] = {
@@ -4565,6 +4570,7 @@ root("Zones", {
 							["qg"] = 29631,	-- Awilo Longomba
 							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						}),
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { NORTHREND_THE_UNDERBELLY },
 						["requireSkill"] = COOKING,
 						["isDaily"] = true,
@@ -4595,6 +4601,7 @@ root("Zones", {
 					q(13832, {	-- Jewel Of The Sewers
 						["qg"] = 28742,	-- Marcia Chase
 						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { NORTHREND_THE_UNDERBELLY },
 						["requireSkill"] = FISHING,
 						["isDaily"] = true,
@@ -4670,6 +4677,7 @@ root("Zones", {
 							["qg"] = 29631,	-- Awilo Longomba
 							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						}),
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["requireSkill"] = COOKING,
 						["isDaily"] = true,
 						["groups"] = {
@@ -4746,6 +4754,7 @@ root("Zones", {
 					q(13254, {	-- Proof of Demise: Anub'arak
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3 },
 						["isDaily"] = true,
@@ -4758,6 +4767,7 @@ root("Zones", {
 					q(13256, {	-- Proof of Demise: Cyanigosa
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { THE_VIOLET_HOLD_WRATH },
 						["isDaily"] = true,
@@ -4770,6 +4780,7 @@ root("Zones", {
 					q(13250, {	-- Proof of Demise: Gal'darah
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { GUNDRAK, GUNDRAK_FLOOR2 },
 						["isDaily"] = true,
@@ -4782,6 +4793,7 @@ root("Zones", {
 					q(13255, {	-- Proof of Demise: Herald Volazj
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { AHNKAHET_THE_OLD_KINGDOM },
 						["isDaily"] = true,
@@ -4794,6 +4806,7 @@ root("Zones", {
 					q(13245, {	-- Proof of Demise: Ingvar the Plunderer
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
 						["isDaily"] = true,
@@ -4806,6 +4819,7 @@ root("Zones", {
 					q(13246, {	-- Proof of Demise: Keristrasza
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { THE_NEXUS },
 						["isDaily"] = true,
@@ -4818,6 +4832,7 @@ root("Zones", {
 					q(13248, {	-- Proof of Demise: King Ymiron
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
 						["isDaily"] = true,
@@ -4830,6 +4845,7 @@ root("Zones", {
 					q(13247, {	-- Proof of Demise: Ley-Guardian Eregos
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
 						["isDaily"] = true,
@@ -4842,6 +4858,7 @@ root("Zones", {
 					q(13253, {	-- Proof of Demise: Loken
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2 },
 						["isDaily"] = true,
@@ -4854,6 +4871,7 @@ root("Zones", {
 					q(13251, {	-- Proof of Demise: Mal'Ganis
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2 },
 						["isDaily"] = true,
@@ -4866,6 +4884,7 @@ root("Zones", {
 					q(13252, {	-- Proof of Demise: Sjonnir The Ironshaper
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { HALLS_OF_STONE },
 						["isDaily"] = true,
@@ -4878,6 +4897,7 @@ root("Zones", {
 					applyclassicphase(WRATH_PHASE_THREE, q(14199, {	-- Proof of Demise: The Black Knight
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { TRIAL_OF_THE_CHAMPION },
 						["isDaily"] = true,
@@ -4890,6 +4910,7 @@ root("Zones", {
 					q(13249, {	-- Proof of Demise: The Prophet Tharon'ja
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2 },
 						["isDaily"] = true,
@@ -4930,6 +4951,7 @@ root("Zones", {
 							["qg"] = 29631,	-- Awilo Longomba
 							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						}),
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { NORTHREND_THE_UNDERBELLY, CRYSTALSONG_FOREST },
 						["requireSkill"] = COOKING,
 						["isDaily"] = true,
@@ -4949,6 +4971,7 @@ root("Zones", {
 					q(12958, {	-- Shipment: Blood Jade Amulet
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { ICECROWN, THE_STORM_PEAKS, HOWLING_FJORD },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
@@ -4968,6 +4991,7 @@ root("Zones", {
 					q(12962, {	-- Shipment: Bright Armor Relic
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { DRAGONBLIGHT, THE_STORM_PEAKS },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
@@ -4987,6 +5011,7 @@ root("Zones", {
 					q(12959, {	-- Shipment: Glowing Ivory Figurine
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { DRAGONBLIGHT, SHOLAZAR_BASIN, THE_STORM_PEAKS },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
@@ -5006,6 +5031,7 @@ root("Zones", {
 					q(12961, {	-- Shipment: Intricate Bone Figurine
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { THE_STORM_PEAKS, SHOLAZAR_BASIN, HOWLING_FJORD },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
@@ -5025,6 +5051,7 @@ root("Zones", {
 					q(12963, {	-- Shipment: Shifting Sun Curio
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { ICECROWN, CRYSTALSONG_FOREST },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
@@ -5044,6 +5071,7 @@ root("Zones", {
 					q(12960, {	-- Shipment: Wicked Sun Brooch
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { THE_STORM_PEAKS, HOWLING_FJORD, GRIZZLY_HILLS },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
@@ -5069,6 +5097,7 @@ root("Zones", {
 					q(13830, {	-- The Ghostfish
 						["qg"] = 28742,	-- Marcia Chase
 						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { SHOLAZAR_BASIN },
 						["requireSkill"] = FISHING,
 						["isDaily"] = true,
@@ -5124,6 +5153,7 @@ root("Zones", {
 					q(13240, {	-- Timear Foresees Centrifuge Constructs in your Future!
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
 						["isDaily"] = true,
@@ -5152,6 +5182,7 @@ root("Zones", {
 					q(13243, {	-- Timear Foresees Infinite Agents in your Future!
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2 },
 						["isDaily"] = true,
@@ -5180,6 +5211,7 @@ root("Zones", {
 					q(13244, {	-- Timear Foresees Titanium Vanguards in your Future!
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2 },
 						["isDaily"] = true,
@@ -5208,6 +5240,7 @@ root("Zones", {
 					q(13241, {	-- Timear Foresees Ymirjar Berserkers in your Future!
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
 						["isDaily"] = true,

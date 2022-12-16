@@ -302,6 +302,9 @@ root("Zones", {
 				}),
 				-- #endif
 				n(FACTIONS, {
+					faction(1126, {	-- The Frostborn
+						["races"] = ALLIANCE_ONLY,
+					}),
 					faction(1119, {	-- The Sons of Hodir
 						["OnTooltip"] = OnTooltipForSonsOfHodir,
 					}),
@@ -1009,6 +1012,7 @@ root("Zones", {
 					q(12869, {	-- Pushed Too Far
 						["qg"] = 29732,	-- Fjorlin Frostbrow
 						["coord"] = { 29.8, 75.7, THE_STORM_PEAKS },
+						["maxReputation"] = { 1126, EXALTED },	-- The Frostborn, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						-- this quest appeared for me after turning in "the brother's bronzebeard," which was the last quest i did for its criteria + the overall zone.  i'm not sure if the quest itself is a prerequisite or if it's based on reputation, because i also hit friendly with alliance vanguard when turning it in.  some wowhead comments said it had different requirements, so i'm not sure what to put for SQ or a description.

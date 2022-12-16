@@ -412,6 +412,7 @@ root("Zones", {
 					pvp(q(12170, {	-- Blackriver Brawl
 						["qg"] = 27120,	-- Raider Captain Kronn
 						["coord"] = { 26.4, 65.8, GRIZZLY_HILLS },
+						["maxReputation"] = { 1052, EXALTED },	-- Horde Expedition, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						-- #if BEFORE CATA
@@ -752,6 +753,7 @@ root("Zones", {
 					pvp(q(12284, {	-- Keep 'Em on Their Heels
 						["qg"] = 27451,	-- Commander Bargok
 						["coord"] = { 34.4, 33.0, GRIZZLY_HILLS },
+						["maxReputation"] = { 1085, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					})),
@@ -827,6 +829,7 @@ root("Zones", {
 					pvp(q(12280, {	-- Making Repairs
 						["qg"] = 27422,	-- Lurz
 						["coord"] = { 34.4, 32.6, GRIZZLY_HILLS },
+						["maxReputation"] = { 1085, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					})),
@@ -905,6 +908,7 @@ root("Zones", {
 					pvp(q(12288, {	-- Overwhelmed!
 						["qg"] = 27464,	-- Aumana
 						["coord"] = { 33.8, 32.8, GRIZZLY_HILLS },
+						["maxReputation"] = { 1085, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					})),
@@ -1098,6 +1102,7 @@ root("Zones", {
 					pvp(q(12270, {	-- Shred the Alliance
 						["qg"] = 27423,	-- Grekk
 						["coord"] = { 34.4, 32.6, GRIZZLY_HILLS },
+						["maxReputation"] = { 1085, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					})),

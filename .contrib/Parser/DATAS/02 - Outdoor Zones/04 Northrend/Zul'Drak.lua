@@ -323,9 +323,10 @@ root("Zones", {
 					}),
 					q(12604, {	-- Congratulations!
 						-- TODO: based on speed completion of "Troll Patrol" daily. Determine condition and add as description
-						["coord"] = { 40.2, 66.6, ZULDRAK },
-						["isDaily"] = true,
 						["qg"] = 28039,	-- Commander Kunz
+						["coord"] = { 40.2, 66.6, ZULDRAK },
+						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
+						["isDaily"] = true,
 						["groups"] = {
 							i(43556, {	-- Patroller's Pack
 								["description"] = "Small chance to contain listed items.",
@@ -956,25 +957,28 @@ root("Zones", {
 					}),
 					q(12501, {	-- Troll Patrol
 						-- confirmed available 14.October.2019 by Pr3vention
-						["coord"] = { 40.2, 66.6, ZULDRAK },
-						["isDaily"] = true,
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12596,	-- Pa'Troll
+						["coord"] = { 40.2, 66.6, ZULDRAK },
+						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
+						["isDaily"] = true,
 					}),
 					q(12563, {	-- Troll Patrol
 						-- confirmed available 26.June.2021 by Darkal
-						["coord"] = { 40.2, 66.6, ZULDRAK },
-						["isDaily"] = true,
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12596,	-- Pa'Troll
+						["coord"] = { 40.2, 66.6, ZULDRAK },
+						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
+						["isDaily"] = true,
 					}),
 					q(12587, {	-- Troll Patrol
-						-- almost certainly the removed version
-						["u"] = REMOVED_FROM_GAME,
-						["coord"] = { 40.2, 66.6, ZULDRAK },
-						["isDaily"] = true,
+						-- almost certainly the removed version, will check in Wrath Classic
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12596,	-- Pa'Troll
+						["coord"] = { 40.2, 66.6, ZULDRAK },
+						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
+						["isDaily"] = true,
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(12588, {	-- Troll Patrol: Can You Dig It?
 						["coord"] = { 48.7, 78.8, ZULDRAK },

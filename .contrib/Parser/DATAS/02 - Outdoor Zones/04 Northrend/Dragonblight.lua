@@ -276,7 +276,9 @@ root("Zones", {
 						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },
 						["OnTooltip"] = OnTooltipForTheKaluak,
 					}),
-					faction(1091),	-- The Wyrmrest Accord
+					faction(1091, {	-- The Wyrmrest Accord
+						["maps"] = { BOREAN_TUNDRA },
+					}),
 				}),
 				prof(FISHING, {
 					ach(1517, {	-- Northrend Angler
@@ -647,6 +649,7 @@ root("Zones", {
 						["qg"] = 27575,	-- Lord Afrasastrasz
 						["sourceQuest"] = 12435,	-- Report to Lord Afrasastrasz
 						["coord"] = { 59.2, 54.3, DRAGONBLIGHT },
+						["maxReputation"] = { 1091, EXALTED },	-- The Wyrmrest Accord, Exalted.
 						["isDaily"] = true,
 						["groups"] = {
 							ach(1277),	-- Rapid Defense
