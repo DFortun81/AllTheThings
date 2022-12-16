@@ -441,9 +441,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						971,				-- Tricks and Treats of Azeroth (H)
 					},
 				},
-				-- #if BEFORE MOP
-				["races"] = ALLIANCE_ONLY,
-				-- #endif
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					title(92),	-- %s the Hallowed
 				},

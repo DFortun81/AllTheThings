@@ -58,6 +58,27 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. FEAST_OF_WINTER_VEIL .. [[, 12, 16, 1, 2); end]],
 	["groups"] = {
 		n(ACHIEVEMENTS, {
+			-- #if BEFORE MOP
+			ach(1692, {	-- Merrymaker (A)
+				["sym"] = {{"meta_achievement",
+					273,			-- On Metzen!
+					252,			-- With a Little Helper from My Friends
+					1255,			-- Scrooge (A)
+					1282,			-- Fa-la-la-la-Ogri'la
+					277,			-- 'Tis the Season
+					279,			-- Simply Abominable
+					1687,			-- Let It Snow
+					1686,			-- Bros. Before Ho Ho Ho's (A)
+					1688,			-- The Winter Veil Gourmet
+					1689,			-- He Knows If You've Been Naughty
+					1690,			-- A Frosty Shake
+				}},
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					title(102),				-- Merrymaker
+				},
+			}),
+			-- #endif
 			ach(1691, {	-- Merrymaker (H) / Merrymaker [MOP+]
 				["sym"] = {{"meta_achievement",
 					273,			-- On Metzen!
@@ -85,28 +106,22 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					title(102),				-- Merrymaker
 				},
 			}),
-			-- #if BEFORE MOP
-			ach(1692, {	-- Merrymaker (A)
-				["sym"] = {{"meta_achievement",
-					273,			-- On Metzen!
-					252,			-- With a Little Helper from My Friends
-					1255,			-- Scrooge (A)
-					1282,			-- Fa-la-la-la-Ogri'la
-					277,			-- 'Tis the Season
-					279,			-- Simply Abominable
-					1687,			-- Let It Snow
-					1686,			-- Bros. Before Ho Ho Ho's (A)
-					1688,			-- The Winter Veil Gourmet
-					1689,			-- He Knows If You've Been Naughty
-					1690,			-- A Frosty Shake
-				}},
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					title(102),				-- Merrymaker
+			ach(277, {	-- 'Tis the Season
+				["providers"] = {
+					{ "i", 21215 },		-- Graccu's Mince Meat Fruitcake
+					{ "i", 21525 },		-- Green Winter Hat
+					{ "i", 21524 },		-- Red Winter Hat
+					-- #if AFTER 7.2.5.24163
+					{ "i", 151792 },	-- Green Winter Clothes
+					{ "i", 151790 },	-- Red Winter Clothes
+					{ "i", 151791 },	-- Winter Boots
+					-- #else
+					{ "i", 34087 },		-- Green Winter Clothes
+					{ "i", 34085 },		-- Red Winter Clothes
+					{ "i", 34086 },		-- Winter Boots
+					-- #endif
 				},
 			}),
-			-- #endif
-			ach(277),	-- 'Tis the Season
 			ach(5853, {	-- A-Caroling We Will Go (A)
 				-- #if AFTER 9.1.5
 				["provider"] = { "i", 188680 },	-- Winter Veil Chorus Book
@@ -114,14 +129,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["provider"] = { "i", 70923 },	-- Gaudy Winter Veil Sweater
 				-- #endif
 				["timeline"] = { "added 4.3.0" },
+				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = { ORGRIMMAR, SILVERMOON_CITY, THUNDER_BLUFF, UNDERCITY },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
-					crit(1),	-- Orgrimmar
-					crit(2),	-- Silvermoon City
-					crit(3),	-- Thunder Bluff
-					crit(4),	-- Undercity
-				},
 			}),
 			ach(5854, {	-- A-Caroling We Will Go (H)
 				-- #if AFTER 9.1.5
@@ -130,34 +140,131 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["provider"] = { "i", 70923 },	-- Gaudy Winter Veil Sweater
 				-- #endif
 				["timeline"] = { "added 4.3.0" },
+				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = { DARNASSUS, THE_EXODAR, IRONFORGE, STORMWIND_CITY },
 				["races"] = HORDE_ONLY,
-				["groups"] = {
-					crit(1),	-- Darnassus
-					crit(2),	-- The Exodar
-					crit(3),	-- Ironforge
-					crit(4),	-- Stormwind City
-				},
 			}),
 			ach(1690, {	-- A Frosty Shake
+				["providers"] = {
+					{ "i", 17712 },	-- Winter Veil Disguise Kit
+					{ "i", 17202 },	-- Snowball
+				},
 				["maps"] = { NORTHREND_DALARAN },
 			}),
-			ach(4436, {	-- BB King (A)
+			applyclassicphase(WRATH_PHASE_FOUR, ach(4436, {	-- BB King (A)
+				["provider"] = { "i", 46725 },	-- Red Rider Air Rifle
+				["maps"] = {
+					ORGRIMMAR,
+					SILVERMOON_CITY,
+					UNDERCITY,
+					-- #if BEFORE 9.0.1
+					THUNDER_BLUFF,
+					-- #endif
+				},
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					crit(1),	-- Lady Sylvanas Windrunner
-					crit(2),	-- Lor'themar Theron
-					crit(3),	-- Eitrigg
+					crit(12661, {	-- Lady Sylvanas Windrunner
+						["provider"] = { "n", 10181 },	-- Lady Sylvanas Windrunner
+					}),
+					crit(12660, {	-- Lor'themar Theron
+						["provider"] = { "n", 16802 },	-- Lor'themar Theron
+					}),
+					-- #if BEFORE 4.0.3
+					-- Patch 4.0.3a (2010-11-23): Criteria updated to match new faction leaders: 
+					-- Cairne Bloodhoof changed to Baine Bloodhoof;
+					-- Thrall changed to Garrosh Hellscream;
+					-- Vol'jin removed.
+					crit(12662, {	-- Cairne Bloodhoof <High Chieftain>
+						["provider"] = { "n", 3057 },	-- Cairne Bloodhoof <High Chieftain>
+					}),
+					crit(12658, {	-- Thrall <Warchief>
+						["provider"] = { "n", 4949 },	-- Thrall <Warchief>
+					}),
+					crit(12659, {	-- Vol'jin
+						["provider"] = { "n", 10540 },	-- Vol'jin
+					}),
+					-- #else
+					-- #if BEFORE 9.0.1
+					-- Patch 9.0.1 (2020-10-13): Baine Bloodhoof removed from the criteria.
+					-- Patch 4.0.3a (2010-11-23): Cairne Bloodhoof changed to Baine Bloodhoof;
+					crit(12662, {	-- Baine Bloodhoof <High Chieftain>
+						["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
+					}),
+					-- #endif
+					
+					-- #if AFTER 8.2.5
+					-- Patch 8.2.5 (2019-09-24): Eitrigg has replaced High Overlord Saurfang. 
+					crit(35832, {	-- Eitrigg
+						["provider"] = { "n", 126066 },	-- Eitrigg
+					}),
+					-- #elseif AFTER 7.0.1
+					-- Legion Hotfix (2016-12-16): High Overlord Saurfang has replaced Vol'jin from the criteria.
+					crit(12659, {	-- High Overlord Saurfang
+						["provider"] = { "n", 14720 },	-- High Overlord Saurfang
+					}),
+					-- #elseif AFTER 6.0.2
+					-- Patch 6.0.2 (2014-10-14): Garrosh Hellscream changed to Vol'jin to reflect post-Siege of Orgrimmar events. 
+					crit(12659, {	-- Vol'jin
+						["provider"] = { "n", 10540 },	-- Vol'jin
+					}),
+					-- #else
+					-- Patch 4.0.3a (2010-11-23): Thrall changed to Garrosh Hellscream;
+					crit(12658, {	-- Garrosh Hellscream <Warchief>
+						["provider"] = { "n", 39605 },	-- Garrosh Hellscream <Warchief>
+					}),
+					-- #endif
+					-- #endif
 				},
-			}),
-			ach(4437, {	-- BB King (H)
+			})),
+			applyclassicphase(WRATH_PHASE_FOUR, ach(4437, {	-- BB King (H)
+				["provider"] = { "i", 46725 },	-- Red Rider Air Rifle
+				["maps"] = {
+					THE_EXODAR,
+					DARNASSUS,
+					IRONFORGE,
+					-- #if BEFORE 9.0.1
+					STORMWIND_CITY,
+					-- #endif
+				},
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					crit(1),	-- Muradin Bronzebeard
-					crit(2),	-- Prophet Velen
-					crit(3),	-- Tyrande Whisperwind
+					crit(12667, {	-- Prophet Velen
+						["provider"] = { "n", 17468 },	-- Prophet Velen
+					}),
+					crit(12666, {	-- Tyrande Whisperwind
+						["provider"] = { "n", 7999 },	-- Tyrande Whisperwind
+					}),
+					-- #if AFTER 4.0.3
+					-- Patch 4.0.3a (2010-11-23): Criteria updated to match new faction leaders: 
+					-- King Magni Bronzebeard changed to Muradin Bronzebeard;
+					-- High Tinker Mekkatorque removed. 
+					crit(12664, {	-- Muradin Bronzebeard
+						["provider"] = { "n", 42928 },	-- Muradin Bronzebeard
+					}),
+					-- #else
+					crit(12665, {	-- High Tinker Mekkatorque
+						["provider"] = { "n", 7937 },	-- High Tinker Mekkatorque
+					}),
+					crit(12664, {	-- King Magni Bronzebeard
+						["provider"] = { "n", 2784 },	-- King Magni Bronzebeard
+					}),
+					-- #endif
+					
+					-- #if BEFORE 9.0.1
+					-- Patch 9.0.1 (2020-10-13): Anduin Wrynn removed.
+					-- #if AFTER 7.0.1
+					-- Legion Hotfix (2016-12-16): Anduin Wrynn replaced King Varian Wrynn from the criteria. 
+					crit(12663, {	-- Anduin Wrynn <King of Stormwind>
+						["provider"] = { "n", 107574 },	-- Anduin Wrynn <King of Stormwind>
+					}),
+					-- #else
+					crit(12663, {	-- King Varian Wrynn
+						["provider"] = { "n", 29611 },	-- King Varian Wrynn
+					}),
+					-- #endif
+					-- #endif
 				},
-			}),
+			})),
 			ach(1295, {	-- Crashin' & Thrashin'
 				["providers"] = {
 					{ "i", 37710 },	-- Crashin' Thrashin' Racer Controller
@@ -165,50 +272,120 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				},
 			}),
 			ach(1282, {	-- Fa-la-la-la-Ogri'la
+				["providers"] = {
+					{ "i", 21212 },	-- Fresh Holly
+					{ "i", 21213 },	-- Preserved Holly
+				},
 				["maps"] = { BLADES_EDGE_MOUNTAINS },
 			}),
 			ach(1689),	-- He Knows If You've Been Naughty
 			ach(1686, {	-- Holiday Bromance (A)
+				["provider"] = { "i", 21519 },	-- Mistletoe
+				["maps"] = {
+					-- #if AFTER CATA
+					NORTHERN_STRANGLETHORN,
+					-- #else
+					STRANGLETHORN_VALE,
+					DESOLACE,
+					-- #endif
+					ELWYNN_FOREST,
+					DUSTWALLOW_MARSH,
+					STORMWIND_CITY
+				},
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					crit(1, {	-- Brother Nimetz in Stranglethorn Vale
+					crit(6228, {	-- Brother Nimetz in Stranglethorn Vale
+						["provider"] = { "n", 739 },	-- Brother Nimetz
+						-- #if AFTER CATA
 						["coord"] = { 47.25, 11.10, NORTHERN_STRANGLETHORN },
+						-- #else
+						["coord"] = { 37.8, 3.6, STRANGLETHORN_VALE },
+						-- #endif
 					}),
-					crit(2, {	-- Brother Wilhelm in Goldshire
-						["coord"] = { 41.07, 65.95, ELWYNN_FOREST },
+					crit(6229, {	-- Brother Wilhelm in Goldshire
+						["provider"] = { "n", 927 },	-- Brother Wilhelm
+						-- #if AFTER CATA
+						["coord"] = { 41.0, 65.8, ELWYNN_FOREST },
+						-- #else
+						["coord"] = { 41.0, 66.0, ELWYNN_FOREST },
+						-- #endif
 					}),
-					crit(3, {	-- Brother Karman in Theramore
+					crit(6231, {	-- Brother Karman in Theramore
+						["provider"] = { "n", 8140 },	-- Brother Karman
+						-- #if AFTER MOP
 						["description"] = "If Theramore is phased, talk to Zidormi to the west of the city.",
-						["coord"] = { 67.40, 47.41, DUSTWALLOW_MARSH },
+						-- #endif
+						-- #if AFTER CATA
+						["coord"] = { 67.4, 47.2, DUSTWALLOW_MARSH },
+						-- #else
+						["coord"] = { 67.4, 47.4, DUSTWALLOW_MARSH },
+						-- #endif
 					}),
-					crit(4, {	-- Brother Kristoff in Stormwind
-						["coord"] = { 55.04, 54.20, STORMWIND_CITY },
+					crit(6230, {	-- Brother Kristoff in Stormwind
+						["provider"] = { "n", 1444 },	-- Brother Kristoff
+						-- #if AFTER LEGION
+						["coord"] = { 54.6, 53.8, STORMWIND_CITY },
+						-- #else
+						["coord"] = { 55.0, 54.2, STORMWIND_CITY },
+						-- #endif
 					}),
-					crit(5, {	-- Brother Joshua in Stormwind
-						["coord"] = { 49.50, 45.22, STORMWIND_CITY },
+					crit(6232, {	-- Brother Joshua in Stormwind
+						["provider"] = { "n", 5489 },	-- Brother Joshua
+						-- #if AFTER LEGION
+						["coord"] = { 49.6, 45.2, STORMWIND_CITY },
+						-- #else
+						["coord"] = { 49.5, 45.2, STORMWIND_CITY },
+						-- #endif
 					}),
-					crit(6, {	-- Brother Crowley in Stormwind
-						["description"] = "He is in the basement.",
-						["coord"] = { 52.60, 43.93, STORMWIND_CITY },
+					crit(6233, {	-- Brother Crowley in Stormwind
+						["provider"] = { "n", 12336 },	-- Brother Crowley
+						-- #if AFTER LEGION
+						["coord"] = { 52.2, 43.8, STORMWIND_CITY },
+						-- #else
+						["coord"] = { 52.6, 43.4, STORMWIND_CITY },
+						-- #endif
 					}),
-					crit(7, {	-- Brother Cassius in Stormwind
-						["coord"] = { 52.42, 45.80, STORMWIND_CITY },
+					crit(6234, {	-- Brother Cassius in Stormwind
+						["provider"] = { "n", 1351 },	-- Brother Cassius
+						-- #if AFTER LEGION
+						["coord"] = { 52.2, 45.6, STORMWIND_CITY },
+						-- #else
+						["coord"] = { 53.2, 45.2, STORMWIND_CITY },
+						-- #endif
 					}),
-					crit(8, {	-- Brother Benjamin in Stormwind
-						["coord"] = { 51.8, 46.8, STORMWIND_CITY },
+					crit(6235, {	-- Brother Benjamin in Stormwind
+						["provider"] = { "n", 5484 },	-- Brother Benjamin
+						-- #if AFTER LEGION
+						["coord"] = { 51.6, 46.4, STORMWIND_CITY },
+						-- #else
+						["coord"] = { 52.3, 47.6, STORMWIND_CITY },
+						-- #endif
 					}),
+					-- #if BEFORE CATA
+					crit(6236, {	-- Brother Anton in Nijel's Point
+						["provider"] = { "n", 1182 },	-- Brother Anton
+						["coord"] = { 66.5, 7.9, DESOLACE },
+						["timeline"] = { "removed 4.0.3" },
+					}),
+					-- #endif
 				},
 			}),
 			ach(1685, {	-- Holiday Bromance (H)
+				["provider"] = { "i", 21519 },	-- Mistletoe
+				["maps"] = { UNDERCITY, BOREAN_TUNDRA, ICECROWN },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					crit(1, {	-- Brother Malach in the Undercity
+					crit(6225, {	-- Brother Malach in the Undercity
+						["provider"] = { "n", 5661 },	-- Brother Malach
 						["coord"] = { 51.6, 22.6, UNDERCITY },
 					}),
-					crit(2, {	-- Durkot Wolfbrother in Warsong Hold
+					crit(6226, {	-- Durkot Wolfbrother in Warsong Hold
+						["provider"] = { "n", 26044 },	-- Durkot Wolfbrother
 						["coord"] = { 40.2, 55.0, BOREAN_TUNDRA },
 					}),
-					crit(3, {	-- Brother Keltan in Icecrown
+					crit(6662, {	-- Brother Keltan in Icecrown
+						["provider"] = { "n", 31261 },	-- Brother Keltan
+						["description"] = "Located on the horde gunship in the air.",
 						["coord"] = { 69.4, 42.4, ICECROWN },
 					}),
 				},
@@ -216,43 +393,99 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			ach(10353, {	-- Iron Armada
 				["timeline"] = { "added 6.2.2.20426" },
 				["groups"] = {
-					crit(1),		-- Crashin' Thrashin' Flamer
-					crit(2),		-- Crashin' Thrashin' Killdozer
-					crit(3),		-- Crashin' Thrashin' Mortar
-					crit(4),		-- Crashin' Thrashin' Cannon
-					crit(5),		-- Crashin' Thrashin' Roller
+					crit(28989, {	-- Crashin' Thrashin' Cannon
+						["provider"] = { "i", 108633 },	-- Crashin' Thrashin' Cannon
+					}),
+					crit(28924, {	-- Crashin' Thrashin' Flamer
+						["provider"] = { "i", 108632 },	-- Crashin' Thrashin' Flamer Controller
+					}),
+					crit(28987, {	-- Crashin' Thrashin' Killdozer
+						["provider"] = { "i", 108635 },	-- Crashin' Thrashin' Killdozer
+					}),
+					crit(28988, {	-- Crashin' Thrashin' Mortar
+						["provider"] = { "i", 108634 },	-- Crashin' Thrashin' Mortar
+					}),
+					crit(28990, {	-- Crashin' Thrashin' Roller
+						["provider"] = { "i", 108631 },	-- Crashin' Thrashin' Roller
+					}),
 				},
 			}),
 			ach(1687, {	-- Let It Snow
-				crit(1),	-- Orc Death Knight
-				crit(2),	-- Human Warrior
-				crit(3),	-- Tauren Shaman
-				crit(4),	-- Night Elf Druid
-				crit(5),	-- Undead Rogue
-				crit(6),	-- Troll Hunter
-				crit(7),	-- Gnome Mage
-				crit(8),	-- Dwarf Paladin
-				crit(9),	-- Blood Elf Warlock
-				crit(10),	-- Draenei Priest
+				["provider"] = { "i", 21519 },	-- Mistletoe
+				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(273),	-- On Metzen!
+			ach(273, {	-- On Metzen!
+				["provider"] = { "n", 15664 },	-- Metzen the Reindeer
+				["sourceQuests"] = {
+					7043,	-- You're a Mean One... [A]
+					6983,	-- You're a Mean One... [H]
+				},
+				["maps"] = {
+					-- #if AFTER CATA
+					HILLSBRAD_FOOTHILLS,
+					-- #else
+					ALTERAC_MOUNTAINS,
+					-- #endif
+					IRONFORGE,
+					ORGRIMMAR,
+				},
+			}),
 			ach(1255, {	-- Scrooge (A)
+				-- #if AFTER 4.0.3
+				["provider"] = { "n", 42928 },	-- Muradin Bronzebeard
+				-- #else
+				["provider"] = { "n", 2784 },	-- King Magni Bronzebeard
+				-- #endif
+				["cost"] = {{ "i", 17202, 1 }},	-- Snowball
+				["maps"] = { IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(259, {	-- Scrooge (H)
+				-- #if AFTER 4.0.3
+				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
+				-- #else
+				["provider"] = { "n", 3057 },	-- Cairne Bloodhoof <High Chieftain>
+				-- #endif
+				["cost"] = {{ "i", 17202, 1 }},	-- Snowball
+				["maps"] = {
+					-- #if AFTER 9.0.1
+					ORIBOS,
+					-- #endif
+					THUNDER_BLUFF,
+				},
 				["races"] = HORDE_ONLY,
 			}),
-			ach(279),	-- Simply Abominable
+			ach(279, {	-- Simply Abominable
+				["sourceQuests"] = {
+					7045,	-- A Smokywood Pastures' Thank You! (Alliance)
+					6984,	-- A Smokywood Pastures' Thank You! (Horde)
+				},
+				["maps"] = {
+					IRONFORGE,
+					ORGRIMMAR,
+				},
+			}),
 			ach(8699, {	-- The Danger Zone
 				["provider"] = { "i", 104318 },	-- Crashin' Thrashin' Flyer Controller
 				["timeline"] = { "added 5.4.0.17227" },
 			}),
 			ach(1688, {	-- The Winter Veil Gourmet
-				crit(1),	-- Gingerbread Cookie
-				crit(2),	-- Winter Veil Egg Nog
-				crit(3),	-- Hot Apple Cider
+				["requireSkill"] = COOKING,
+				["groups"] = {
+					crit(6247, {	-- Gingerbread Cookie
+						["provider"] = { "i", 17197 },	-- Gingerbread Cookie
+					}),
+					crit(6249, {	-- Hot Apple Cider
+						["provider"] = { "i", 34411 },	-- Hot Apple Cider
+					}),
+					crit(6248, {	-- Winter Veil Egg Nog
+						["provider"] = { "i", 17198 },	-- Winter Veil Egg Nog
+					}),
+				},
 			}),
-			ach(252),	-- With a Little Helper from My Friends
+			pvp(ach(252, {	-- With a Little Helper from My Friends
+				["provider"] = { "o", 180796 },	-- PX-238 Winter Wondervolt
+			})),
 			classicAch(1705, {	-- Clockwork Rocket Bot (2007)
 				["provider"] = { "i", 34425 },	-- Clockwork Rocket Bot
 				["timeline"] = { "added 2.3.0.7561" },
@@ -272,17 +505,62 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["provider"] = { "i", 46725 },	-- Red Rider Air Rifle
 				["timeline"] = { "added 4.3.0.15005" },
 			}),
-			ach(6060),		-- MiniZep Controller (2010)
-			ach(6061),		-- Gaudy Winter Veil Sweater (2011)
-			ach(7852),		-- They're Both Footballs? (2012)
-			ach(8698),		-- Crashin' Thrashin' Flyer (2013)
-			ach(9915),		-- Crashin' Thrashin' Shredder (2014)
-			ach(10337),		-- Crashin' Thrashin' Flamer (2015)
-			ach(10751),		-- Brr... It's Cold in Here (2016)
-			ach(11913),		-- Don't Play With That In The House (2017)
-			ach(12850),		-- At Least You're Being Careful (2018)
-			ach(13927),		-- Crashin' Splashin' (2019)
-			ach(14931),		-- Flying Festivities (2020)
+			ach(6060, {	-- MiniZep Controller (2010)
+				["provider"] = { "i", 46709 },	-- MiniZep Controller
+				["timeline"] = { "added 4.3.0.15005" },
+			}),
+			ach(6061, {	-- Gaudy Winter Veil Sweater (2011)
+				["provider"] = { "i", 70923 },	-- Gaudy Winter Veil Sweater
+				["timeline"] = { "added 4.3.0.15005" },
+			}),
+			ach(7852, {	-- They're Both Footballs? (2012)
+				["providers"] = {
+					{ "i", 90888 },	-- Special Edition Foot Ball (TOY!)
+					{ "i", 90883 },	-- The Pigskin (TOY!)
+				},
+				["timeline"] = { "added 5.1.0.16309" },
+			}),
+			ach(8698, {	-- Crashin' Thrashin' Flyer (2013)
+				["provider"] = { "i", 104318 },	-- Crashin' Thrashin' Flyer Controller (TOY!)
+				["timeline"] = { "added 5.4.0.17227" },
+			}),
+			ach(9915, {	-- Crashin' Thrashin' Shredder (2014)
+				["provider"] = { "i", 116763 },	-- Crashin' Thrashin' Shredder Controller (TOY!)
+				["timeline"] = { "added 6.1.0.19533" },
+			}),
+			ach(10337, {	-- Crashin' Thrashin' Flamer (2015)
+				["provider"] = { "i", 108632 },	-- Crashin' Thrashin' Flamer Controller (TOY!)
+				["timeline"] = { "added 6.2.2.20426" },
+			}),
+			ach(10751, {	-- Brr... It's Cold in Here (2016)
+				["provider"] = { "i", 128636 },	-- Endothermic Blaster (TOY!)
+				["timeline"] = { "added 7.0.3.21414" },
+			}),
+			ach(11913, {	-- Don't Play With That In The House (2017)
+				["providers"] = {
+					{ "i", 151349 },	-- Toy Weapon Set [A] (TOY!)
+					{ "i", 151348 },	-- Toy Weapon Set [H] (TOY!)
+				},
+				["timeline"] = { "added 7.3.0.24473" },
+			}),
+			ach(12850, {	-- At Least You're Being Careful (2018)
+				["providers"] = {
+					{ "i", 162643 },	-- Toy Armor Set [A] (TOY!)
+					{ "i", 162642 },	-- Toy Armor Set [H] (TOY!)
+				},
+				["timeline"] = { "added 8.0.1.27326" },
+			}),
+			ach(13927, {	-- Crashin' Splashin' (2019)
+				["providers"] = {
+					{ "i", 172223 },	-- Crashin' Thrashin' Battleship (TOY!)
+					{ "i", 172222 },	-- Crashin' Thrashin' Juggernaught (TOY!)
+				},
+				["timeline"] = { "added 8.2.5.32750" },
+			}),
+			ach(14931, {	-- Flying Festivities (2020)
+				["provider"] = { "i", 178530 },	-- Wreath-A-Rang (TOY!)
+				["timeline"] = { "added 9.0.5.37862" },
+			}),
 			ach(15313, {	-- Rockin' Rollin' Racer (2021)
 				["providers"] = {
 					{ "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3
@@ -1718,6 +1996,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			}),
 			-- #ENDIF
 		}),
+		-- #if AFTER 8.3.0
 		n(RARES, {
 			i(174865, {	-- A Tiny Winter Hat (Pepe)
 				["questID"] = 58901,
@@ -1728,6 +2007,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["timeline"] = { "created 8.3.0", "added 9.0.1" },
 			}),
 		}),
+		-- #endif
 		n(REWARDS, {
 			i(17727, HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK),	-- Smokywood Pastures Gift Pack
 			i(17685, {	-- Smokywood Pastures Sampler
@@ -1759,6 +2039,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				i(17720),	-- Schematic: Snowmaster 9000
 			}),
 			-- TODO: Sort out the contents of the Stolen Presents by patch (in time, don't need it until Cata)
+			-- NOTE: The contents will be slightly delayed after the gift each year rather than their respective "timestamp", so good lord kill me please for the love of god. -Crieve
 			i(116762, {	-- Stolen Present
 				["timeline"] = { "added 6.0.1.18594" },
 				["lvl"] = 50,
@@ -1767,42 +2048,80 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(54436),	-- Blue Clockwork Rocket Bot
 					i(34425),	-- Clockwork Rocket Bot
 					i(73797),	-- Lump of Coal
-					i(104317),	-- Rotten Helper Box
-					i(178533),	-- Shaking Pet Carrier
+					i(104317, {	-- Rotten Helper Box
+						["timeline"] = { "added 5.4.0.17227" },
+					}),
+					i(178533, {	-- Shaking Pet Carrier
+						["timeline"] = { "added 9.0.1.36216" },
+					}),
 					-- Toys
 					i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
-					i(108632),	-- Crashin' Thrashin' Flamer Controller (TOY!)
-					i(104318),	-- Crashin' Thrashin' Flyer Controller (TOY!)
+					i(108632, {	-- Crashin' Thrashin' Flamer Controller (TOY!)
+						["timeline"] = { "added 6.2.2.20395" },
+					}),
+					i(104318, {	-- Crashin' Thrashin' Flyer Controller (TOY!)
+						["timeline"] = { "added 5.4.0.17227" },
+					}),
 					i(172223, {	-- Crashin' Thrashin' Battleship (TOY!)
+						["timeline"] = { "added 8.2.5.31958" },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(172222, {	-- Crashin' Thrashin' Juggernaught (TOY!)
+						["timeline"] = { "added 8.2.5.31958" },
 						["races"] = HORDE_ONLY,
 					}),
 					i(37710),	-- Crashin' Thrashin' Racer Controller (TOY!)
-					i(116763),	-- Crashin' Thrashin' Shredder Controller (TOY!)
-					i(139337),	-- Disposable Winter Veil Suits (TOY!)
-					i(128636),	-- Endothermic Blaster (TOY!)
-					i(116692),	-- Fuzzy Green Lounge Cushion (TOY!)
+					i(116763, {	-- Crashin' Thrashin' Shredder Controller (TOY!)
+						["timeline"] = { "added 6.0.1.18594" },
+					}),
+					i(139337, {	-- Disposable Winter Veil Suits (TOY!)
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
+					i(128636, {	-- Endothermic Blaster (TOY!)
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
+					i(116692, {	-- Fuzzy Green Lounge Cushion (TOY!)
+						["timeline"] = { "added 6.0.2" },
+					}),
 					i(162973, {	-- Greatfather Winter's Hearthstone (TOY!)
 						["timeline"] = { "added 8.1" },	-- 8.0.1 it was added in the Gift, so will say 8.1 for this source
 					}),
 					i(46709),	-- MiniZep Controller (TOY!)
-					i(116689),	-- Pineapple Lounge Cushion (TOY!)
-					i(128776),	-- Red Wooden Sled (TOY!)
-					i(116690),	-- Safari Lounge Cushion (TOY!)
-					i(116456),	-- Scroll of Storytelling (TOY!)
+					i(116689, {	-- Pineapple Lounge Cushion (TOY!)
+						["timeline"] = { "added 6.0.2" },
+					}),
+					i(128776, {	-- Red Wooden Sled (TOY!)
+						["timeline"] = { "added 6.2.2.20395" },
+					}),
+					i(116690, {	-- Safarai Lounge Cushion (TOY!)
+						["timeline"] = { "added 6.0.2" },
+					}),
+					i(116456, {	-- Scroll of Storytelling (TOY!)
+						["timeline"] = { "added 6.0.1.18594" },
+					}),
 					i(90888),	-- Special Edition Foot Ball (TOY!)
 					i(90883),	-- The Pigskin (TOY!)
 					i(54438),	-- Tiny Blue Ragdoll (TOY!)
 					i(54437),	-- Tiny Green Ragdoll (TOY!)
 					i(44606),	-- Toy Train Set (TOY!)
-					i(151349),	-- Toy Weapon Set [A] (TOY!)
-					i(151348),	-- Toy Weapon Set [H] (TOY!)
-					i(172219),	-- Wild Holly (TOY!)
+					i(151349, {	-- Toy Weapon Set [A] (TOY!)
+						["timeline"] = { "added 7.3.0.24484" },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(151348, {	-- Toy Weapon Set [H] (TOY!)
+						["timeline"] = { "added 7.3.0.24484" },
+						["races"] = HORDE_ONLY,
+					}),
+					i(172219, {	-- Wild Holly (TOY!)
+						["timeline"] = { "added 8.2.5.31961" },
+					}),
 					i(45057),	-- Wind-Up Train Wrecker (TOY!)
-					i(188680),	-- Winter Veil Chorus Book (TOY!)
-					i(116691),	-- Zhevra Lounge Cushion (TOY!)
+					i(188680, {	-- Winter Veil Chorus Book (TOY!)
+						["timeline"] = { "added 9.1.5.40871" },
+					}),
+					i(116691, {	-- Zhevra Lounge Cusion (TOY!)
+						["timeline"] = { "added 6.0.2" },
+					}),
 					i(151343, {	-- Hearthstation (A) (TOY!)
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1810,15 +2129,29 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 						["races"] = HORDE_ONLY,
 					}),
 					-- Illusions
-					i(128649),	-- Illusion: Winter's Grasp
-					i(118572),	-- Illusion: Flames of Ragnaros
+					i(128649, {	-- Illusion: Winter's Grasp
+						["timeline"] = { "added 6.2.2.20395" },
+					}),
+					i(118572, {	-- Illusion: Flames of Ragnaros
+						["timeline"] = { "added 6.0.1.18711" },
+					}),
 					-- Appearances
-					un(REMOVED_FROM_GAME, i(66540)),	-- Miniature Winter Veil Tree (Level 85)
-					un(REMOVED_FROM_GAME, i(93625)),	-- Miniature Winter Veil Tree (Level 90)
-					un(REMOVED_FROM_GAME, i(117371)),	-- Miniature Winter Veil Tree (Level 1-110)
-					i(143898),	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
+					i(143898, {	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
+						["timeline"] = { "added 7.1.0.22864" },
+					}),
+					i(117371, {	-- Miniature Winter Veil Tree (Level 1-110)
+						["timeline"] = { "added 6.0.1.18594", "removed 7.1.0.22864" },
+					}),
+					i(93625, {	-- Miniature Winter Veil Tree (Level 90)
+						["timeline"] = { "added 5.1.0.16357", "removed 6.0.1.18594" },
+					}),
+					i(66540, {	-- Miniature Winter Veil Tree (Level 85)
+						["timeline"] = { "added 4.3.0.15050", "removed 5.1.0.16357" },
+					}),
 					-- Trinkets
-					i(151351),	-- Glowing Gift
+					i(151351, {	-- Glowing Gift
+						["timeline"] = { "added 7.3.0.24484" },
+					}),
 					-- Misc:
 					i(46725),	-- Red Rider Air Rifle
 				},
