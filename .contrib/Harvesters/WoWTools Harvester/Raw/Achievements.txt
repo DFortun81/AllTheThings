@@ -11189,3 +11189,7 @@
 17210@@@<Hidden> Chromie Time - Hit 60 While In Chromie Time (copy)
 10.0.2.46781
 17314@@@Heroic Edition: Tangled Dreamweaver
+10.0.2.46999
+16493@@@Petty Theft Mammoth
+10.0.2.47067
+15640@@@Return to Darkness
