@@ -217,7 +217,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(20),		-- Un'Goro Crater
 			crit(21),		-- Winterspring
 		})),
-		petbattle(ach(15644, bubbleDownSelf({ ["timeline"] = { ADDED_DF_PRE } }, {	-- Good Things Come in Small Packages (2000)
+		petbattle(ach(15644, bubbleDownSelf({ ["timeline"] = { ADDED_DF_PRE, "removed 10.0.2.47120" } }, {	-- Good Things Come in Small Packages (2000)
 			i(191946),	-- Mister Muskoxeles (PET!)
 		}))),
 		petbattle(ach(15643,  bubbleDownSelf({ ["timeline"] = { ADDED_DF_PRE } }, {	-- What Can I Say? They Love Me. (1750)

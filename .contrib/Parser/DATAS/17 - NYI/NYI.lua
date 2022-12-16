@@ -2128,7 +2128,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191932),	-- Violet Violence
 			i(191936),	-- Secretive Frogduck
 			i(191941),	-- Crystalline Mini-Monster
-			i(191946),	-- Mister Muskoxeles
 			i(193620),	-- [PH] Yellow Baby Fox Wyvern
 			i(193068),	-- [PH] Gold Flying Squirrel
 			i(193235),	-- [PH] Red Baby River Otter
