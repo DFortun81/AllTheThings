@@ -1044,7 +1044,7 @@ root("Zones", m(KALIMDOR, {
 					},
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 54.4, 27.2, TANARIS },
-					["timeline"] = { "removed 4.0.3.2000" },
+					["timeline"] = { "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
 					["cost"] = {
 						{ "i", 4392, 2 },	-- Advanced Target Dummy

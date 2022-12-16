@@ -934,7 +934,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["altQuests"] = { 3639, 3643 },	-- Show Your Work
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 69.8, 50.2, IRONFORGE },
-					["timeline"] = { "removed 4.0.3.2000" },
+					["timeline"] = { "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
