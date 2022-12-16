@@ -2751,6 +2751,7 @@ _.ObjectIcons = {
 	[19016] = "Interface/Icons/inv_misc_dust_02",	-- Stardust Covered Bush
 	[19021] = "Interface/Icons/inv_box_01",	-- Rusty Chest
 	[19023] = "Interface/Icons/INV_Misc_NoteScript2d",	-- |cFFFFFFFFStep 7:|r Page 2351
+	[19024] = "Interface/Icons/inv_enchant_essencemagicsmall",	-- Hidden Shrine
 	[19027] = "Interface/Icons/INV_Misc_Book_09",	-- Tome of Mel'Thandris
 	[19030] = "Interface/Icons/INV_MISC_DUST_05",	-- Mound of Dirt
 	[19901] = "Interface/Icons/inv_misc_gem_ruby_01",	-- Circle of Imprisonment
