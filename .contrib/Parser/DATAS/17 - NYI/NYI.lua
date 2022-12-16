@@ -377,7 +377,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			i(198081),	-- Caregiver's Charm
 			i(198451),	-- Lifeflame Ampoule
-			i(198529),	-- Wayfarer's Iron Torch
 			i(198532),	-- The Cartographer's Calipers
 			i(198539),	-- Breath of the Plains
 			i(198730),	-- Dragonscale Expedition Tabard
@@ -414,7 +413,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200434),	-- Anund's Mana-Singed Amice
 			i(200435),	-- Brackish Breeches
 			i(200436),	-- Gorestained Hauberk
-			i(200438),	-- Surcoat of the Chastigator
 			i(200441),	-- Jhakan's Horned Cowl
 			i(200444),	-- Mantle of the Gatekeeper
 			i(200446),	-- Crystalized Sigil
@@ -431,7 +429,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200758),	-- Breastplate of Storied Antiquity
 			i(200760),	-- Unstable Arcane Cell
 			i(200875),	-- Seeker's Bands
-			i(200880),	-- Wind-Sealed Mana Capsule
 			i(200968),	-- Sandshaped Winglord's Drape
 			i(201035),	-- Obsidian Citadel Pauldrons
 			i(201036),	-- Obsidian Citadel Chestplate
@@ -817,7 +814,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197936),	-- Serrated Deboning Knife
 			i(197937),	-- Intricate Scaling Knife
 			i(197938),	-- Uktulut Whaling Spear
-			i(197940),	-- Hefty Iskaaran Anchor
 			i(197942),	-- Tuskarr Navigator's Staff
 			i(197944),	-- Deepsea Hunter's Crossbow
 			i(197945),	-- Gnarled Thorn Bow
@@ -825,13 +821,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197955),	-- Sword of the Eternal Guard
 			i(197956),	-- Empowered Shortsword of Insight
 			i(197957),	-- Timeless Watcher's Saber
-			i(198007),	-- Large Brass Cleaver
 			i(198035),	-- Archer's Decorated Bow
 				-- Thaldraszus
 			i(195177),	-- Moment's Notice
-			i(195180),	-- Time-Woven Blade
 			i(195181),	-- Rapid Fire
-			i(195182),	-- Inexorable Separation
 
 			i(197677),	-- Plainswalking Stick
 			i(197684),	-- Argali Shearing Blade
@@ -1085,7 +1078,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201355),	-- Eternal Equipment Chest
 			i(201362),	-- Fated Equipment Chest
 			i(201439),	-- Renewed Dream
-			i(201728),	-- Vakril's Strongbox
 			i(201757),	-- Plundered Supplies
 			i(201836),	-- Valdrakken Token of Merit
 			i(201841),	-- Ensemble: Cosmic Aspirant's Plate Armor

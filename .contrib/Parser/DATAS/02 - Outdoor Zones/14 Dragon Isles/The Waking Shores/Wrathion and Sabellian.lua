@@ -774,8 +774,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
-			q(70984),	-- triggered first time entering Obsidian Citadel area with Wrathion chat message
-			q(64277),	-- chosing Seballian for the current week
+			q(70984),	-- Triggered first time entering Obsidian Citadel area with Wrathion chat message
+			q(64277),	-- Triggered when choosing Wrathion in Allegiance To One (66419)
+			--q(xxxxx),	-- Triggered when choosing Seballian in Allegiance To One (66419)
+			q(66802),	-- Triggered when choosing Wrathion or Seballian in Allegiance To One (66419)
 		}),
 	}),
 })));

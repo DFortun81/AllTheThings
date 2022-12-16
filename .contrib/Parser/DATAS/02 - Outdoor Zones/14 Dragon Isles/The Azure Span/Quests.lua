@@ -199,10 +199,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 186228 },	-- Brena
 					["coord"] = { 34.3, 31.0, THE_AZURE_SPAN },
 					["g"] = {
-						i(198004),	-- Steel Draconic Gavel
-						i(198008),	-- Shined Iron Polearm
+						i(198007),	-- Large Brass Cleaver
 						i(198003),	-- Ornate Steel Cleaver
-						-- i(198035),	-- Archer's Decorated Bow
+						i(198006),	-- Sharpened Silver Sword
+						i(198008),	-- Shined Iron Polearm
+						i(198005),	-- Sleek Obsidian Kris
+						i(198004),	-- Steel Draconic Gavel
 					},
 				}),
 				q(65870, {	-- Supplies!
@@ -1717,6 +1719,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 49.5, 36.1, THE_AZURE_SPAN },
 					["repeatable"] = true,
 				}),
+				q(69864, {	-- Forgotten Creation
+					["provider"] = { "n", 193214 },	-- Forgotten Creation
+					["coord"] = { 38.2, 59.0, THE_AZURE_SPAN },
+				}),
 				q(66718, {	-- Gnolls Must Die
 					["sourceQuests"] = { 66709 },	-- Field Medic 101
 					["coord"] = { 58.1, 42.3, THE_AZURE_SPAN },
@@ -1736,6 +1742,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(67173, {	-- Thieving Gnolls
 					["provider"] = { "n", 192749 },	-- Sharpfang
 					["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },
+				}),
+				q(69872, {	-- Vakril, the Strongest Tuskarr
+					["provider"] = { "n", 193223 },	-- Vakril
+					["coord"] = { 17.0, 41.3, THE_AZURE_SPAN },
 				}),
 			}),
 			n(HIDDEN_QUESTS, {

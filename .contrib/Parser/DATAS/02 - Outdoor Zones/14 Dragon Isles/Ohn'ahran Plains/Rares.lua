@@ -339,8 +339,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(192453, {	-- Vaniik the Stormtouched <Corrupted Child of Ohn'ahra>
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["coord"] = { 82.0, 63.0, OHNAHRAN_PLAINS },
+				["questID"] = 73978,
 				-- ["g"] = {
 
 				-- },

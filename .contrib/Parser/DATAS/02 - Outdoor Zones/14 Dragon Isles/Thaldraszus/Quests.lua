@@ -210,12 +210,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 186433 },	-- Andantenormu
 					["coord"] = { 59.6, 82.7, THALDRASZUS },
 					["g"] = {
-						i(195179),	-- Timeways Baton
-						i(195183),	-- Reach of Years
 						i(195184),	-- Bronze Tower
 						i(195211),	-- Chromie's Spare Beacon
-						i(195178),	-- Swirling Sand Fists
 						i(195214),	-- Hoursteel Barrier
+						i(195182),	-- Inexorable Separation
+						i(195183),	-- Reach of Years
+						i(195178),	-- Swirling Sand Fists
+						i(195179),	-- Timeways Baton
+						i(195180),	-- Time-Woven Blade
 					},
 				}),
 				q(65947, {	-- Time-Locked Timewalkers
@@ -995,12 +997,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(BONUS_OBJECTIVES, {
-				-- OBJECTIVES FOR RARES
-				-- NOT ALL ARE DAILY?
 				q(72114, {	-- Acrosoth
 					["provider"] = { "n", 193243 },	-- Acrosoth
 					["coord"] = { 39.0, 78.0, THALDRASZUS },
-					["isDaily"] = true,
 				}),
 				q(69963, {	-- Ancient Protector
 					["provider"] = { "n", 193664 },	-- Ancient Protector
@@ -1037,6 +1036,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 36.4, 72.8, THALDRASZUS },
 					["isDaily"] = true,
 				}),
+				q(69967, {	-- Lookout Mordren
+					["provider"] = { "n", 193668 },	-- Lookout Mordren
+					["coord"] = { 36.8, 85.6, THALDRASZUS },
+				}),
 				qNYI(69882, {	-- Lord Epochbrgl
 					["provider"] = { "n", 193241 },	-- Lord Epochbrgl
 					["coord"] = { 62.2, 81.8, THALDRASZUS },
@@ -1056,6 +1059,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 193210 },	-- Phleep
 					["coord"] = { 57.2, 84.2, THALDRASZUS },
 					["isDaily"] = true,
+				}),
+				q(70986, {	-- Private Shikzar
+					["provider"] = { "n", 193127 },	-- Private Shikzar
+					["coord"] = { 37.6, 84.7, THALDRASZUS },
 				}),
 				qNYI(69880, {	-- Riverwalker Tamopo
 					["provider"] = { "n", 193240 },	-- Riverwalker Tamopo
@@ -1103,7 +1110,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- Enraged Sprout
 				-- Goremaul the Gluttonous
 				-- Innumerable Ruination
-				-- Private Shikzar
 				-- Razk'vex the Untamed
 				-- The Weeping Vilomah
 
@@ -1361,7 +1367,8 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(67030),	-- WQ Available?
 		q(72366),	-- triggered after completing 'Moving On' (66221)
 		q(72369),	-- triggered after completing 'Moving On' (66221)
-		-- q(72084),	-- Popped during Quest at South Gate?
+		q(72084),	-- Triggers during 'The Fog of Battle' (66246)
+		q(72125),	-- Triggers during 'Tying Things Together' (66248)
 		-- q(70511),	-- Popped when doing quest and lootning 198964 Elementious Splinter from mobs?
 
 		-- Achievement Framing a New Perspective

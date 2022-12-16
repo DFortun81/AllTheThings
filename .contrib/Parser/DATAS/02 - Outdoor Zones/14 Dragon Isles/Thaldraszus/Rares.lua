@@ -59,6 +59,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 55.6, 77.4, THALDRASZUS },
 				["questID"] = 72814,
 				["g"] = {
+					i(200880),	-- Wind-Sealed Mana Capsule
 					-- is part of the DF>Global Rare Loottable
 				},
 			}),
@@ -123,10 +124,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193127, {	-- Private Shikzar
 				["coord"] = { 37.6, 84.7, THALDRASZUS },
-				-- ["questID"] = 70986,
-				-- ["g"] = {
-
-				-- },
+				["questID"] = 72844,
+				["g"] = {
+					i(200438),	-- Surcoat of the Chastigator
+				},
 			}),
 			n(193143, {	-- Razk'vex the Untamed
 				-- ["coord"] = { X, Y, THALDRASZUS },

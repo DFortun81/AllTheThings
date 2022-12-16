@@ -1289,6 +1289,11 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 	m(OHNAHRAN_PLAINS, {
 		q(73701),	-- triggered during 'Unwelcome Outsider' (66021)
 		q(71203),	-- daily lockout for 'To Tame A Thunderspine' series
+		q(72778),	-- triggered with 'Call of the Plains' (71229)
+
+		q(66887),	-- Choose Trophy from First Hunt (Renewal of Vows 66783)
+		q(66888),	-- Choose Blood (Renewal of Vows 66783)
+		q(66889),	-- Choose Eagle Feather (Renewal of Vows 66783)
 
 		-- Achievement Honor Our Ancestors
 		q(71167),	-- Maruukai Ancestor
@@ -1310,10 +1315,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		-- --
 		-- q(69834),	-- Triggered when Ripaw the Stalker is killed
 		-- --
-		-- q(66887),	-- 	Choose Trophy from First Hunt (Renewal of Vows 66783)
-		-- q(66889),	-- 	Choose Eagle Feather (Renewal of Vows 66783)
-		-- q(66888),	-- 	Choose Blood (Renewal of Vows 66783)
-
 		-- Has to do with the Chest Event In the South
 		--q(70511),	-- complete??
 		q(70922),	-- Caravan Stages swapping

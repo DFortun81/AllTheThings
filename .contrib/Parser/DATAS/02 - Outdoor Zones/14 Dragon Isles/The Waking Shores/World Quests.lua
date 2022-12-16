@@ -77,8 +77,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 --[[
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THE_WAKING_SHORES, {
-		q(64277),	-- Both Popped when choosing Wrathion in Allegiance To One (66419)
-		q(66802),
 		q(66384),
 	}),
 }));

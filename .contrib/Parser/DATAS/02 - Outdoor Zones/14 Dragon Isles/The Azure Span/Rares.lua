@@ -145,7 +145,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193214, {	-- Forgotten Creation
 				["coord"] = { 38.2, 59.0, THE_AZURE_SPAN },
-				-- ["questID"] = 69864,
+				["questID"] = 72840,
 				["g"] = {
 					i(200210),	-- Amnesia
 				},
@@ -330,10 +330,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193223, {	-- Vakril <The Strongest Tuskarr?>
 				["coord"] = { 17.0, 41.3, THE_AZURE_SPAN },
-				-- ["questID"] = 69872,
-				-- ["g"] = {
-
-				-- },
+				["questID"] = 72853,
+				["g"] = {
+					i(201728),	-- Vakril's Strongbox
+				},
 			}),
 			n(193632, {	-- Wilrive
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },

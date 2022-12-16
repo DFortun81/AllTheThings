@@ -94,6 +94,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(192797),	-- Gral's Discarded Tooth
 			i(193568),	-- Engraved Spearhead
 			i(198542),	-- Shikaari Huntress' Arrowhead
+			i(198529),	-- Wayfarer's Iron Torch
 		}),
 		n(WEAPONS, {
 			i(197923),	-- Bloodcharger's Skewer
@@ -105,6 +106,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(192024),	-- Dragonflayer's Seething Shortsword
 			i(192016),	-- Drakescale Heater Shield
 			i(197943),	-- Elder's Bioluminous Quarterstaff
+			i(197940),	-- Hefty Iskaaran Anchor
 			i(192023),	-- Lava-Forged Decapitator
 			i(192034),	-- Marauder's Singing Blade
 			i(192033),	-- Maruuk Battle Standard
