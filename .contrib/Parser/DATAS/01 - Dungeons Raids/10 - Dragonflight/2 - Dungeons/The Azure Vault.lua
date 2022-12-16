@@ -12,6 +12,9 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			2077,	-- Crystal Chambers
 		},
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(16330),	-- You Must Be Made of Hide
+			}),
 			n(QUESTS, {
 				q(71155, {	-- The Azure Vaults
 					--["sourceQuests"] = { }, -- TODO
@@ -157,7 +160,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["crs"] = { 186738 },	-- Umbrelskul
 					["g"] = {
 						ach(16274),	-- Mythic: The Azure Vault
-						ach(16330),	-- You Must Be Made of Hide
 						ach(16331),	-- The Cracked Crystal
 						i(193644),	-- Breastplate of Irreparable Madness
 						i(193645),	-- Crystalized Bulwark
