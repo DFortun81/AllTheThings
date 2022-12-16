@@ -279,10 +279,10 @@ root("Zones", {
 						},
 					}),
 					q(13374, {	-- Amped for Revolt!
-						["u"] = REMOVED_FROM_GAME,
-						["coord"] = { 54.0, 36.9, ICECROWN },
-						["races"] = HORDE_ONLY,
 						["qg"] = 32430,	-- Fringe Engineer Tezzla
+						["coord"] = { 54.0, 36.9, ICECROWN },
+						["timeline"] = { "created 3.3.0.10772" },	-- This wasn't seen during Wrath Classic
+						["races"] = HORDE_ONLY,
 					}),
 					q(13169, {	-- An Undead's Best Friend
 						["coord"] = { 44.0, 24.5, ICECROWN },
@@ -308,25 +308,27 @@ root("Zones", {
 						["sourceQuest"] = 13305,	-- Do Your Worst
 					}),
 					q(13309, {	-- Assault by Air (A)
-						["coord"] = { 62.5, 51.3, ICECROWN },
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
 						["qg"] = 31808,	-- Ground Commander Koup
 						["sourceQuest"] = 13341,	-- Joining the Assault
+						["coord"] = { 62.5, 51.3, ICECROWN },
+						["maxReputation"] = { 1050, EXALTED },	-- Valiance Expedition, Exalted.
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13310, {	-- Assault by Air (H)
+						["qg"] = 31834,	-- Ground Commander Xutjja
+						["sourceQuest"] = 13340,	-- Joining the Assault
 						["coord"] = { 58.3, 45.9, ICECROWN },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
-						["qg"] = 31834,	-- Ground Commander Xutjja
-						["sourceQuest"] = 13340,	-- Joining the Assault
 					}),
 					q(13284, {	-- Assault by Ground (A)
-						["coord"] = { 62.5, 51.1, ICECROWN },
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
 						["qg"] = 31737,	-- Skybreaker Squad Leader
 						["sourceQuest"] = 13341,	-- Joining the Assault
+						["coord"] = { 62.5, 51.1, ICECROWN },
+						["maxReputation"] = { 1050, EXALTED },	-- Valiance Expedition, Exalted.
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13301, {	-- Assault by Ground (H)
 						["coord"] = { 58.3, 46.1, ICECROWN },
@@ -446,11 +448,12 @@ root("Zones", {
 						["sourceQuest"] = 12807,	-- The Story Thus Far...
 					}),
 					q(13336, {	-- Blood of the Chosen (A)
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
 						["qg"] = 32302,	-- Knight-Captain Drosche
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13225,	-- The Skybreaker
+						["maxReputation"] = { 1050, EXALTED },	-- Valiance Expedition, Exalted.
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13330, {	-- Blood of the Chosen (H)
 						["races"] = HORDE_ONLY,
@@ -522,11 +525,12 @@ root("Zones", {
 						},
 					}),
 					q(13333, {	-- Capture More Dispatches
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
 						["qg"] = 29799,	-- Thassarian
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13314,	-- Get the Message
+						["maxReputation"] = { 1050, EXALTED },	-- Valiance Expedition, Exalted.
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13319, {	-- Chain of Command (A)
 						["races"] = ALLIANCE_ONLY,
@@ -757,9 +761,9 @@ root("Zones", {
 						},
 					}),
 					q(13373, {	-- Fringe Science Benefits
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = HORDE_ONLY,
 						["qg"] = 32430,	-- Fringe Engineer Tezzla
+						["timeline"] = { "removed 4.1.0" },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12813, {	-- From Their Corpses, Rise!
 						["coord"] = { 19.6, 48.3, ICECROWN },
@@ -822,9 +826,9 @@ root("Zones", {
 						},
 					}),
 					q(13379, {	-- Green Technology
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = HORDE_ONLY,
 						["qg"] = 30825,	-- Chief Engineer Copperclaw
+						["timeline"] = { "removed 4.1.0" },
+						["races"] = HORDE_ONLY,
 					}),
 					q(13212, {	-- He's Gone to Pieces
 						["coord"] = { 35.3, 66.3, ICECROWN },
@@ -1017,21 +1021,17 @@ root("Zones", {
 						},
 					}),
 					q(13383, {	-- Killohertz
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 30345,	-- Chief Engineer Boltwrench
-					}),
-					q(13380, {	-- Leading the Charge
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { "removed 4.1.0" },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 32444,	-- Kibli Killohertz
 					}),
 					q(13280, {	-- King of the Mountain (A)
-						["coord"] = { 62.8, 50.5, ICECROWN },
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
 						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["sourceQuest"] = 13296,	-- Get to Ymirheim!
+						["coord"] = { 62.8, 50.5, ICECROWN },
+						["maxReputation"] = { 1050, EXALTED },	-- Valiance Expedition, Exalted.
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13283, {	-- King of the Mountain (H)
 						["coord"] = { 51.9, 57.5, ICECROWN },
@@ -1051,6 +1051,11 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 32497,	-- Matthias Lehner
 						["sourceQuest"] = 13361,	-- The Hunter and the Prince
+					}),
+					q(13380, {	-- Leading the Charge
+						["qg"] = 32444,	-- Kibli Killohertz
+						["timeline"] = { "removed 4.1.0" },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12995, {	-- Leave Our Mark
 						["coord"] = { 42.8, 25.0, ICECROWN },
@@ -1328,12 +1333,12 @@ root("Zones", {
 						["sourceQuest"] = 13212,	-- He's Gone to Pieces
 					}),
 					q(13382, {	-- Putting the Hertz: The Valley of Lost Hope
-						["u"] = REMOVED_FROM_GAME,
-						["coord"] = { 54.0, 42.8, ICECROWN },
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
 						["qg"] = 32444,	-- Kibli Killohertz
 						["sourceQuest"] = 13381,	-- Watts My Target
+						["coord"] = { 54.0, 42.8, ICECROWN },
+						["timeline"] = { "removed 4.1.0" },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13332, {	-- Raise the Barricades (A)
 						["races"] = ALLIANCE_ONLY,
@@ -1576,12 +1581,13 @@ root("Zones", {
 						},
 					}),
 					q(13289, {	-- That's Abominable! (A) (daily)
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
+						-- NOTE:: Oddly enough, this doesn't exist for alliance despite the horde version being available
 						["qg"] = 29799,	-- Thassarian
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13288,	-- That's Abominable!
+						["timeline"] = { "removed 4.1.0" },
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13264, {	-- That's Abominable! (H)
 						["races"] = HORDE_ONLY,
@@ -2048,12 +2054,12 @@ root("Zones", {
 						["sourceQuest"] = 12982,	-- Ebon Blade Prisoners
 					}),
 					q(13376, {	-- Total Ohmage: The Valley of Lost Hope!
-						["u"] = REMOVED_FROM_GAME,
-						["coord"] = { 54.0, 36.9, ICECROWN },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
 						["qg"] = 32430,	-- Fringe Engineer Tezzla
 						["sourceQuest"] = 13374,	-- Amped for Revolt!
+						["coord"] = { 54.0, 36.9, ICECROWN },
+						["timeline"] = { "removed 4.1.0" },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(13085, {	-- Vaelen Has Returned
 						["coord"] = { 42.8, 25.0, ICECROWN },
@@ -2099,10 +2105,10 @@ root("Zones", {
 						["sourceQuest"] = 13239,	-- Volatility
 					}),
 					q(13381, {	-- Watts My Target
-						["u"] = REMOVED_FROM_GAME,
-						["coord"] = { 54.0, 42.8, ICECROWN },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 32444,	-- Kibli Killohertz
+						["coord"] = { 54.0, 42.8, ICECROWN },
+						["timeline"] = { "created 3.3.0.10772" },	-- This wasn't seen in Wrath Classic.
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13117, {	-- Where Are They Coming From?
 						["coord"] = { 35.3, 66.3, ICECROWN },

@@ -369,12 +369,6 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				
-				n(PROFESSIONS, {
-					prof(FISHING, {
-						
-					}),
-				}),
 				n(QUESTS, {
 					q(11476, {	-- A Carver and a Croaker
 						["qg"] = 24537,	-- Handsome Terry
@@ -569,9 +563,10 @@ root("Zones", {
 					}),
 					q(11153, {	-- Break the Blockade
 						["qg"] = 23895,	-- Bombardier Petrov
-						["isDaily"] = true,
 						["coord"] = { 28.9, 41.9, HOWLING_FJORD },
+						["maxReputation"] = { 1050, EXALTED },	-- Valiance Expedition, Exalted.
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 					}),
 					q(11396, {	-- Bring Down Those Shields (A)
 						["coord"] = { 24.2, 32.4, HOWLING_FJORD },

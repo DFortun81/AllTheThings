@@ -423,6 +423,7 @@ root("Zones", {
 					pvp(q(12444, {	-- Blackriver Skirmish
 						["qg"] = 27783,	-- Scout Captain Carter
 						["coord"] = { 29.9, 59.7, GRIZZLY_HILLS },
+						["maxReputation"] = { 1050, EXALTED },	-- Valiance Expedition, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						-- #if BEFORE CATA
@@ -779,6 +780,7 @@ root("Zones", {
 					pvp(q(12289, {	-- Kick 'Em While They're Down
 						["qg"] = 27468,	-- Sergeant Hartsman
 						["coord"] = { 39.3, 43.8, GRIZZLY_HILLS },
+						["maxReputation"] = { 1050, EXALTED },	-- Valiance Expedition, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					})),
@@ -790,6 +792,7 @@ root("Zones", {
 					pvp(q(12296, {	-- Life or Death
 						["qg"] = 27484,	-- Rheanna
 						["coord"] = { 40.4, 42.6, GRIZZLY_HILLS },
+						["maxReputation"] = { 1050, EXALTED },	-- Valiance Expedition, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					})),

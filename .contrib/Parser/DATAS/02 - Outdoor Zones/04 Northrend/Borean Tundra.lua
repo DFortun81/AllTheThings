@@ -267,6 +267,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 					}),
 					faction(1050, {	-- Valiance Expedition
+						["maps"] = { HOWLING_FJORD, GRIZZLY_HILLS, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
