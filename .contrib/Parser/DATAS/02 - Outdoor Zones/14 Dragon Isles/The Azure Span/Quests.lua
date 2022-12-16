@@ -1894,7 +1894,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	}),
 })));
 
---[[
+
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
 		q(72140),	-- Pop after touch 'Missaligned Ley Crystal' (objectID 378175), do mini-game to convert it into 'Aligned Ley Crystal' (npcID 198268).
@@ -1988,4 +1988,3 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		}),
 	}),
 }));
---]]
