@@ -411,7 +411,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				},
 			}),
 			ach(1687, {	-- Let It Snow
-				["provider"] = { "i", 21519 },	-- Mistletoe
+				["provider"] = { "i", 34191 },	-- Handful of Snowflakes
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(273, {	-- On Metzen!
