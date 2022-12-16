@@ -16,6 +16,28 @@ local NEMESIS_SKULLCAP = i(16929);	-- Nemesis Skullcap
 local NETHERWIND_CROWN = i(16914);	-- Netherwind Crown
 local STORMRAGE_COVER = i(16900);	-- Stormrage Cover
 
+-- #if WRATH
+local ONYXIAS_LAIR_FORTYMAN_ONUPDATE = [[function(t)
+	if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] then
+		t.u = ]] .. REMOVED_FROM_GAME .. [[;
+		t.rwp = nil;
+	else
+		t.u = nil;
+		t.rwp = 30202;
+	end
+end]];
+-- #endif
+local ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS = {
+	-- #if WRATH
+	["OnUpdate"] = ONYXIAS_LAIR_FORTYMAN_ONUPDATE,
+	-- #else
+	["timeline"] = REMOVED_WITH_RERELEASE,
+	-- #endif
+};
+local ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER = function(t)
+	 return not t.objectiveID; 
+end
+
 root("Instances", tier(CLASSIC_TIER, {
 	inst(760, {	-- Onyxia's Lair
 		["lore"] = "Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",
@@ -103,7 +125,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(18714),	-- Ancient Sinew Wrapped Lamina
 					},
 				})),
-				q(7496, bubbleDown({ ["timeline"] = REMOVED_WITH_RERELEASE }, {	-- Celebrating Good Times
+				q(7496, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Celebrating Good Times
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["sourceQuest"] = 7495,	-- Victory for the Alliance
 					["coord"] = { 67.2, 85.1, STORMWIND_CITY },
@@ -115,7 +137,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(18404),	-- Onyxia Tooth Pendant
 					},
 				})),
-				q(7491, bubbleDown({ ["timeline"] = REMOVED_WITH_RERELEASE }, {	-- For All To See
+				q(7491, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- For All To See
 					["qg"] = 4949,	-- Thrall
 					["sourceQuest"] = 7490,	-- Victory for the Horde
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
@@ -127,7 +149,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(18406),	-- Onyxia Blood Talisman
 					},
 				})),
-				q(7507, bubbleDown({ ["timeline"] = REMOVED_WITH_RERELEASE }, {	-- Nostro's Compendium
+				q(7507, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Nostro's Compendium
 					["provider"] = { "i", 18401 },	-- Nostro's Compendium of Dragon Slaying
 					["description"] = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
 					["classes"] = { WARRIOR, PALADIN },
@@ -137,17 +159,17 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(18513),	-- A Dull and Flat Elven Blade
 					},
 				})),
-				q(7636, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stave of the Ancients
-					["qg"] = 14524,	-- Vartrus the Ancient
+				q(7636, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {    -- Stave of the Ancients
+					["providers"] = {
+						{ "n", 14524 },	-- Vartrus the Ancient
+						{ "i", 18708 },	-- Petrified Bark
+					},
 					["sourceQuest"] = 7633,	-- An Introduction
 					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					["coord"] = { 47, 24.48, FELWOOD },
 					["maps"] = { UNGORO_CRATER, BURNING_STEPPES, SILITHUS, WINTERSPRING },
 					["classes"] = { HUNTER },
 					["lvl"] = lvlsquish(60, 30, 60),
-					["cost"] = {
-						{ "i", 18708, 1 },	-- Petrified Bark
-					},
 					["groups"] = {
 						objective(1, {	-- 0/1 Simone's Head
 							["provider"] = { "i", 18952 },	-- Simone's Head
@@ -204,17 +226,17 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				})),
-				q(7508, bubbleDown({ ["timeline"] = REMOVED_WITH_RERELEASE }, {	-- The Forging of Quel'Serrar
-					["qg"] = 14368,	-- Lorekeeper Lydros
+				q(7508, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- The Forging of Quel'Serrar
+					["providers"] = {
+						{ "n", 14368 },	-- Lorekeeper Lydros
+						{ "i", 18513 },	-- A Dull and Flat Elven Blade
+					},
 					["sourceQuest"] = 7507,	-- Nostro's Compendium
 					["maps"] = { DIRE_MAUL },
 					["classes"] = { WARRIOR, PALADIN },
-					["cost"] = {
-						{ "i", 18513, 1 },	-- A Dull and Flat Elven Blade
-					},
 					["lvl"] = lvlsquish(60, 30, 60),
 				})),
-				q(7509, bubbleDown({ ["timeline"] = REMOVED_WITH_RERELEASE }, {	-- The Forging of Quel'Serrar
+				q(7509, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- The Forging of Quel'Serrar
 					["qg"] = 14368,	-- Lorekeeper Lydros
 					["sourceQuest"] = 7508,	-- The Forging of Quel'Serrar
 					["maps"] = { DIRE_MAUL },
@@ -231,6 +253,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 						{
 							["itemID"] = 18488,	-- Heated Ancient Blade
+							["provider"] = { "o", 179562 },	-- Ancient Heated Blade
 							["description"] = "Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",
 							["cost"] = {
 								{ "i", 18489, 1 },	-- Unfired Ancient Blade
@@ -285,12 +308,12 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				q(7495, bubbleDown({ ["timeline"] = REMOVED_WITH_RERELEASE }, {	-- Victory for the Alliance
+				q(7495, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Victory for the Alliance
 					["provider"] = { "i", 18423 },	-- Head of Onyxia (A)
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(60, 30, 60),
 				})),
-				q(7490, bubbleDown({ ["timeline"] = REMOVED_WITH_RERELEASE }, {	-- Victory for the Horde
+				q(7490, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Victory for the Horde
 					["provider"] = { "i", 18422 },	-- Head of Onyxia (H)
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(60, 30, 60),
@@ -306,10 +329,14 @@ root("Instances", tier(CLASSIC_TIER, {
 					6602,	-- Horde Attunement Quest
 				},
 				["ignoreBonus"] = true,
+				-- #if AFTER CATA
 				["timeline"] = REMOVED_WITH_RERELEASE,
+				-- #else
+				["OnUpdate"] = ONYXIAS_LAIR_FORTYMAN_ONUPDATE,
+				-- #endif
 				["groups"] = {
 			-- #endif
-					n(10184, bubbleDown({ ["timeline"] = REMOVED_WITH_RERELEASE }, {	-- Onyxia
+					n(10184, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Onyxia
 						classicAch(684, {	-- Onyxia's Lair (Level 60)
 							-- #if BEFORE 3.0.1
 							["sourceQuests"] = {
@@ -478,12 +505,18 @@ root("Instances", tier(CLASSIC_TIER, {
 }));
 
 -- Helms were moved to Nefarian with 3.2.2, remove the unobtainable flag.
-BLOODFANG_HOOD.timeline = nil;
-DRAGONSTALKERS_HELM.timeline = nil;
-HALO_OF_TRANSCENDENCE.timeline = nil;
-HELM_OF_WRATH.timeline = nil;
-HELMET_OF_TEN_STORMS.timeline = nil;
-JUDGMENT_CROWN.timeline = nil;
-NEMESIS_SKULLCAP.timeline = nil;
-NETHERWIND_CROWN.timeline = nil;
-STORMRAGE_COVER.timeline = nil;
+for _,item in pairs({
+	BLOODFANG_HOOD,
+	DRAGONSTALKERS_HELM,
+	HALO_OF_TRANSCENDENCE,
+	HELM_OF_WRATH,
+	HELMET_OF_TEN_STORMS,
+	JUDGMENT_CROWN,
+	NEMESIS_SKULLCAP,
+	NETHERWIND_CROWN,
+	STORMRAGE_COVER,
+}) do
+	for key,value in pairs(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS) do
+		item[key] = nil;
+	end
+end
