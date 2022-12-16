@@ -1166,7 +1166,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				},
 				["description"] = "Gift from 2008.",
 				-- #if ANYCLASSIC
-				["timeline"] = { "created 2.4.3.8601", "added 3.0.1", "removed 3.3.0.11159" },
+				["timeline"] = { "created 2.4.3.8601", "added 3.0.1", "removed 4.0.1" },
 				-- #else
 				["timeline"] = { "added 2.4.3.8601", "removed 3.3.0.11159" },
 				-- #endif
