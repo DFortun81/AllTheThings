@@ -2397,7 +2397,7 @@ root("Zones", m(KALIMDOR, {
 								{ "i", 16652, 1 },	-- Shredder Operating Manual - Page 8
 							},
 						}),
-						objective(1, {	-- Shredder Operating Manual - Chapter 3
+						objective(3, {	-- Shredder Operating Manual - Chapter 3
 							["provider"] = { "i", 16644 },	-- Shredder Operating Manual - Chapter 3
 							["cost"] = {
 								{ "i", 16653, 1 },	-- Shredder Operating Manual - Page 9
