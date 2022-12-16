@@ -449,6 +449,20 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["coord"] = { 70.1, 39.6, 338 },
 					["sourceQuest"] = 29214,	-- The Shadow Wardens
 				}),
+				q(29311, {	-- The Rest is History
+					["qg"] = 11801,	-- Rabine Saturna
+					["lvl"] = 85,
+					["sourceQuest"] = 29310,	-- The Tipping Point
+					["groups"] = {
+						i(71259),	-- Leyara's Locket (TOY!)
+					},
+				}),
+				q(29310, {	-- The Tipping Point
+					["qg"] = 11801,	-- Rabine Saturna
+					["sourceQuest"] = 29303,	-- Tragedy and Family
+					["timeline"] = { "added 4.2.0.14241" },
+					["lvl"] = lvlsquish(85, 32, 85),
+				}),
 				q(29214, {	-- The Shadow Wardens
 					["provider"] = { "n", 52135 },	-- Malfurion Stormrage
 					["coord"] = { 47.0, 91.3, 338 },

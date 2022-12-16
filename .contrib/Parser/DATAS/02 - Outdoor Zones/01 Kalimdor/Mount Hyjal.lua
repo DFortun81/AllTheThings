@@ -1296,14 +1296,6 @@ root("Zones", m(KALIMDOR, {
 					["isDaily"] = true,
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 				}),
-				q(29311, {	-- The Rest is History
-					["qg"] = 11801,	-- Rabine Saturna
-					["lvl"] = 85,
-					["sourceQuest"] = 29310,	-- The Tipping Point
-					["groups"] = {
-						i(71259),	-- Leyara's Locket (TOY!)
-					},
-				}),
 				q(25464, {	-- The Return of Baron Geddon
 					["qg"] = 39857,	-- Malfurion Stormrage
 					["coord"] = { 47.7, 35.5, MOUNT_HYJAL },

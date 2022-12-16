@@ -2769,7 +2769,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(20971, {	-- Design: Heavy Iron Knuckles
-							["timeline"] = { "removed 4.0.3" },	-- Learned by trainer
+							["timeline"] = { "added 2.0.1", "removed 4.0.3" },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
 						i(5788, {	-- Pattern: Thick Murloc Armor
