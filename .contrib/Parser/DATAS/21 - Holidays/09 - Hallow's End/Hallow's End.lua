@@ -391,7 +391,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 	["groups"] = {
 		-- #if AFTER 2.0.1
 		n(ACHIEVEMENTS, {
-			ach(1656, {	-- Hallowed Be Thy Name
+			ach(1656, {	-- Hallowed Be Thy Name (A) / Hallowed Be Thy Name [MOP+]
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
 					{"meta_achievement",
@@ -401,21 +401,54 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						289,				-- The Savior of Hallow's End
 						981,				-- That Sparkling Smile
 						1040,				-- Rotten Hallow (A)
+						-- #if AFTER MOP
+						1041,				-- Rotten Hallow (H)
+						-- #endif
+						1261,				-- G.N.E.R.D. Rage
+						291,				-- Check Your Head
+						283,				-- The Masquerade
+						292,				-- Sinister Calling
+						-- #if AFTER MOP
+						971,				-- Tricks and Treats of Azeroth
+						-- #else
+						970,				-- Tricks and Treats of Azeroth (A)
+						-- #endif
+						
+					},
+				},
+				-- #if BEFORE MOP
+				["races"] = ALLIANCE_ONLY,
+				-- #endif
+				["groups"] = {
+					title(92),	-- %s the Hallowed
+				},
+			}),
+			-- #if BEFORE MOP
+			ach(1657, {	-- Hallowed Be Thy Name (H)
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["sym"] = {
+					{"meta_achievement",
+						972,				-- Trick or Treat!
+						288,				-- Out With It
+						255,				-- Bring Me The Head of... Oh Wait
+						289,				-- The Savior of Hallow's End
+						981,				-- That Sparkling Smile
 						1041,				-- Rotten Hallow (H)
 						1261,				-- G.N.E.R.D. Rage
 						291,				-- Check Your Head
 						283,				-- The Masquerade
 						292,				-- Sinister Calling
-						-- #if BEFORE 4.2.0
-						970,	-- Tricks and Treats of Azeroth (A)
-						-- #endif
-						971,				-- Tricks and Treats of Azeroth
+						971,				-- Tricks and Treats of Azeroth (H)
 					},
 				},
+				-- #if BEFORE MOP
+				["races"] = ALLIANCE_ONLY,
+				-- #endif
 				["groups"] = {
 					title(92),	-- %s the Hallowed
 				},
 			}),
+			-- #endif
 			ach(10365, {	-- A Frightening Friend
 				["description"] = "You need Tier 3 garrison for this.",
 				["coords"] = {

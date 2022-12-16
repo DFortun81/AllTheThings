@@ -36,8 +36,8 @@ root("Zones", m(KALIMDOR, {
 					},
 				}),
 				ach(5453, {	-- Ghost in the Dark
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28529,	-- Writings of the Void
+					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 			-- #if AFTER MOP
