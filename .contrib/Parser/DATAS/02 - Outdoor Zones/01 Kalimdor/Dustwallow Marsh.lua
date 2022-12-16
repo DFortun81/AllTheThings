@@ -1648,7 +1648,7 @@ root("Zones", m(KALIMDOR, {
 					["qg"] = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
 					["sourceQuest"] = 11142,	-- Survey Alcaz Island
 					["coord"] = { 66.3, 49.0, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["timeline"] = { "added 2.3.0", "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 33,
 				}),
@@ -1873,15 +1873,15 @@ root("Zones", m(KALIMDOR, {
 					-- #else
 					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
 					-- #endif
-					["timeline"] = { "added 2.0.1", "removed 4.0.3.13277" },
+					["timeline"] = { "added 2.0.1", "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 33,
 					["groups"] = {
 						i(33269, {	-- Bejeweled Dagger
-							["timeline"] = { "added 2.0.1", "removed 4.0.3.13277" },
+							["timeline"] = { "added 2.0.1", "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 						}),
 						i(33252, {	-- Gleaming Scale Breastplate
-							["timeline"] = { "added 2.0.1", "removed 4.0.3.13277" },
+							["timeline"] = { "added 2.0.1", "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 						}),
 						i(33250, {	-- Archer's Wristguard
 							["timeline"] = { "added 2.0.1" },	-- Moved to "Survey Alcaz Island" with Cata
@@ -3060,7 +3060,7 @@ root("Zones", m(KALIMDOR, {
 					["qg"] = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
 					["sourceQuest"] = 11142,	-- Survey Alcaz Island
 					["coord"] = { 66.3, 49.0, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 2.3.0", "removed 4.0.3" },
+					["timeline"] = { "added 2.3.0", "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 33,
 				}),
