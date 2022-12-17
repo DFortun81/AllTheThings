@@ -82,8 +82,15 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
-					i(202008),	-- Galvanic Gaiters
-					i(202010),	-- Primalist Warden's Bracers
+					i(202004),	-- Brawler's Earthen Cuirass [BoE]
+					i(201992),	-- Emissary's Flamewrought Seal [BoE]
+					i(202005),	-- Frozen Claw Mantle [BoE]
+					i(202008),	-- Galvanic Gaiters [BoE]
+					i(202006),	-- Greathelm of Horned Fury [BoE]
+					i(202009),	-- Lavamancer's Ceremonial Waistguard [BoE]
+					i(202003),	-- Primal Seeker's Leggings [BoE]
+					i(202010),	-- Primalist Warden's Bracers [BoE]
+					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
 				e(2480, {	-- Eranog
 					["crs"] = { 184972 },
@@ -343,8 +350,15 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(202008),	-- Galvanic Gaiters
-					i(202010),	-- Primalist Warden's Bracers
+					i(202004),	-- Brawler's Earthen Cuirass [BoE]
+					i(201992),	-- Emissary's Flamewrought Seal [BoE]
+					i(202005),	-- Frozen Claw Mantle [BoE]
+					i(202008),	-- Galvanic Gaiters [BoE]
+					i(202006),	-- Greathelm of Horned Fury [BoE]
+					i(202009),	-- Lavamancer's Ceremonial Waistguard [BoE]
+					i(202003),	-- Primal Seeker's Leggings [BoE]
+					i(202010),	-- Primalist Warden's Bracers [BoE]
+					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
 				e(2480, {	-- Eranog
 					["crs"] = { 184972 },
@@ -595,8 +609,15 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(202008),	-- Galvanic Gaiters
-					i(202010),	-- Primalist Warden's Bracers
+					i(202004),	-- Brawler's Earthen Cuirass [BoE]
+					i(201992),	-- Emissary's Flamewrought Seal [BoE]
+					i(202005),	-- Frozen Claw Mantle [BoE]
+					i(202008),	-- Galvanic Gaiters [BoE]
+					i(202006),	-- Greathelm of Horned Fury [BoE]
+					i(202009),	-- Lavamancer's Ceremonial Waistguard [BoE]
+					i(202003),	-- Primal Seeker's Leggings [BoE]
+					i(202010),	-- Primalist Warden's Bracers [BoE]
+					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
 				e(2480, {	-- Eranog
 					["crs"] = { 184972 },
@@ -863,8 +884,25 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(202008),	-- Galvanic Gaiters
-					i(202010),	-- Primalist Warden's Bracers
+					-- Temp Timeline until we know
+					i(202004, {["timeline"] = { "added 10.0.5"}}),		-- Brawler's Earthen Cuirass [BoE]
+					i(202146, {["timeline"] = { "removed 10.0.5"}}),	-- Brawler's Earthen Cuirass [BoP]
+					i(201992, {["timeline"] = { "added 10.0.5"}}),		-- Emissary's Flamewrought Seal [BoE]
+					i(202148, {["timeline"] = { "removed 10.0.5"}}),	-- Emissary's Flamewrought Seal [BoP]
+					i(202005, {["timeline"] = { "added 10.0.5"}}),		-- Frozen Claw Mantle [BoE]
+					i(202145, {["timeline"] = { "removed 10.0.5"}}),	-- Frozen Claw Mantle [BoP]
+					i(202008, {["timeline"] = { "added 10.0.5"}}),		-- Galvanic Gaiters [BoE]
+					i(202150, {["timeline"] = { "removed 10.0.5"}}),	-- Galvanic Gaiters [BoP]
+					i(202006, {["timeline"] = { "added 10.0.5"}}),		-- Greathelm of Horned Fury [BoE]
+					i(202144, {["timeline"] = { "removed 10.0.5"}}),	-- Greathelm of Horned Fury [BoP]
+					i(202009, {["timeline"] = { "added 10.0.5"}}),		-- Lavamancer's Ceremonial Waistguard [BoE]
+					i(202151, {["timeline"] = { "removed 10.0.5"}}),	-- Lavamancer's Ceremonial Waistguard [BoP]
+					i(202003, {["timeline"] = { "added 10.0.5"}}),		-- Primal Seeker's Leggings [BoE]
+					i(202147, {["timeline"] = { "removed 10.0.5"}}),	-- Primal Seeker's Leggings [BoP]
+					i(202010, {["timeline"] = { "added 10.0.5"}}),		-- Primalist Warden's Bracers [BoE]
+					i(202149, {["timeline"] = { "removed 10.0.5"}}),	-- Primalist Warden's Bracers [BoP]
+					i(202007, {["timeline"] = { "added 10.0.5"}}),		-- Woven Stone Bracelets [BoE]
+					i(202143, {["timeline"] = { "removed 10.0.5"}}),	-- Woven Stone Bracelets [BoP]
 				}),
 				e(2480, {	-- Eranog
 					["crs"] = { 184972 },

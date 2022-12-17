@@ -457,23 +457,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201086),	-- Slippers of the Verdant Wing
 			i(201087),	-- Emerald Scale Treads
 			i(201088),	-- Green Draketracker's Boots
-			i(201992),	-- Emissary's Flamewrought Seal
-			i(202003),	-- Primal Seeker's Leggings
-			i(202004),	-- Brawler's Earthen Cuirass
-			i(202005),	-- Frozen Claw Mantle
-			i(202006),	-- Greathelm of Horned Fury
-			i(202007),	-- Woven Stone Bracelets
-			i(202009),	-- Lavamancer's Ceremonial Waistguard
+
 			i(202116),	-- Alacritous Alchemist Stone
-			i(202143),	-- Woven Stone Bracelets
-			i(202144),	-- Greathelm of Horned Fury
-			i(202145),	-- Frozen Claw Mantle
-			i(202146),	-- Brawler's Earthen Cuirass
-			i(202147),	-- Primal Seeker's Leggings
-			i(202148),	-- Emissary's Flamewrought Seal
-			i(202149),	-- Primalist Warden's Bracers
-			i(202150),	-- Galvanic Gaiters
-			i(202151),	-- Lavamancer's Ceremonial Waistguard
+
 			i(202117),	-- Assembly Preserver's Band
 			i(202118),	-- Assembly Guardian's Ring
 			i(202119),	-- Assembly Scholar's Loop
@@ -1109,6 +1095,41 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200086),	-- Khaz'gorite-infused Resin
 		}),
 		------------- PROBABLY NYI ---------------------
+		n(ARMOR, {
+			d(17, {	-- LFR
+				i(202146),	-- Brawler's Earthen Cuirass [BoP]
+				i(202148),	-- Emissary's Flamewrought Seal [BoP]
+				i(202145),	-- Frozen Claw Mantle [BoP]
+				i(202150),	-- Galvanic Gaiters [BoP]
+				i(202144),	-- Greathelm of Horned Fury [BoP]
+				i(202151),	-- Lavamancer's Ceremonial Waistguard [BoP]
+				i(202147),	-- Primal Seeker's Leggings [BoP]
+				i(202149),	-- Primalist Warden's Bracers [BoP]
+				i(202143),	-- Woven Stone Bracelets [BoP]
+			}),
+			d(14, {	-- Normal
+				i(202146),	-- Brawler's Earthen Cuirass [BoP]
+				i(202148),	-- Emissary's Flamewrought Seal [BoP]
+				i(202145),	-- Frozen Claw Mantle [BoP]
+				i(202150),	-- Galvanic Gaiters [BoP]
+				i(202144),	-- Greathelm of Horned Fury [BoP]
+				i(202151),	-- Lavamancer's Ceremonial Waistguard [BoP]
+				i(202147),	-- Primal Seeker's Leggings [BoP]
+				i(202149),	-- Primalist Warden's Bracers [BoP]
+				i(202143),	-- Woven Stone Bracelets [BoP]
+			}),
+			d(15, {	-- Heroic
+				i(202146),	-- Brawler's Earthen Cuirass [BoP]
+				i(202148),	-- Emissary's Flamewrought Seal [BoP]
+				i(202145),	-- Frozen Claw Mantle [BoP]
+				i(202150),	-- Galvanic Gaiters [BoP]
+				i(202144),	-- Greathelm of Horned Fury [BoP]
+				i(202151),	-- Lavamancer's Ceremonial Waistguard [BoP]
+				i(202147),	-- Primal Seeker's Leggings [BoP]
+				i(202149),	-- Primalist Warden's Bracers [BoP]
+				i(202143),	-- Woven Stone Bracelets [BoP]
+			}),
+		}),
 		n(ARMOR, {
 			i(191934),	-- TEMP Event Stream TEMP - No Buckle Fleshscale Belt
 			filter(CLOTH, {
