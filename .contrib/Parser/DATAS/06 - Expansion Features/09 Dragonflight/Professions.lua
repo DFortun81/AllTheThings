@@ -336,6 +336,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? lol
 				-- ["sourceQuest"] = ,
 			}),
+			q(70025, {	-- Artisan's Supply: Draconium Sickle
+				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
+				["qg"] = 192164,	-- Gringot Coldsteel
+				["requireSkill"] = BLACKSMITHING,
+				["cost"] = {{"i",191241,1}},	-- Draconium Sickle
+				-- ["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
 			o(380620, {	-- Ancient Spear Shards
 				["questID"] = 70313,
 				["coord"] = { 81.1, 37.9, OHNAHRAN_PLAINS },

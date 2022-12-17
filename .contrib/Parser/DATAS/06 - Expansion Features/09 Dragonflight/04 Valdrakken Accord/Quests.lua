@@ -282,9 +282,20 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199683),	-- Verdant Drakonid Helmet
 				},
 			}),
+				-- RENOWN 18 --
+			q(70901, {	-- A Collection of Creatures
+				["description"] = "Requires Renown 18.",
+				["provider"] = { "n", 189197 },	-- Groundskeeper Kama
+				["coord"] = { 74.6, 63.2, VALDRAKKEN },
+				["g"] = {
+					i(199758),	-- Crimson Proto-Whelp (PET!)
+					i(199757),	-- Magic Nibbler (PET!)
+				},
+			}),
 		}),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(VALDRAKKEN_ACCORD, {
 		q(72669),	-- triggered with 'To Cook With Finery' (70880)
@@ -300,5 +311,6 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(72694),	-- triggered with 'Wielding Titanic Might' (70903)
 		q(72283),	-- triggered with 'Soaring in Style' (70895)
 		q(72691),	-- triggered with 'A Coming of Age' (70897)
+		q(72692),	-- triggered with 'A Collection of Creatures' (70901)
 	}),
 })));

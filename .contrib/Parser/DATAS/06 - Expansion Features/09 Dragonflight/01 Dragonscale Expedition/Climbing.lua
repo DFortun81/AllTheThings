@@ -81,5 +81,6 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(72002),	-- first daily looted bonus supplies (Enchanted Compass) while on climbing WQ (???)
 		q(71999),	-- second daily looted bonus supplies (Enchanted Compass) while on climbing WQ (70652)
 		q(72001),	-- first daily looted bonus supplies (Enchanted Compass) while on climbing WQ (70655)
+		q(72003),	-- first daily looted bonus supplies (Enchanted Compass) while on climbing WQ (70658)
 	}),
 })));

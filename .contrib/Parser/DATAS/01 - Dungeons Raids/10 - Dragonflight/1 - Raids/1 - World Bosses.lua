@@ -24,6 +24,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			e(2506, {	-- Basrikron, The Shale Wing
 				["crs"] = { 193535 },
 				["coord"] = { 55.0, 77.7, THE_WAKING_SHORES },
+				["questID"] = 72056,
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
@@ -33,6 +34,11 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200736),	-- Belt of Living Earth
 					i(200739),	-- Stony Cragwalkers
 				}),
+			}),
+			q(69930, {	-- Basrikron (WQ)
+				["sym"] = {
+					{"select","encounterID",2506,},{"pop"},	-- Original WB
+				},
 			}),
 			e(2517, {	-- Bazual, The Dreaded Flame
 				["crs"] = { 193532 },

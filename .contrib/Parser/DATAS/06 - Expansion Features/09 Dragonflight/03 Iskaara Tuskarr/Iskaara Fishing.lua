@@ -72,6 +72,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- Dailies --
+				q(72072, {	-- Dragonsprings Drop
+					["provider"] = { "n", 198766 },	-- Thrifty Fisher
+					["coord"] = { 80.8, 78.4, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+					["description"] = "Requires Renown 4.",
+					["g"] = {
+						i(198855),	-- Throw Net
+					},
+				}),
 				q(70438, {	-- Flying Fish
 					["provider"] = { "n", 195338 },	-- Fisherman Pasqaa
 					["coord"] = { 63.7, 76.5, THE_WAKING_SHORES },

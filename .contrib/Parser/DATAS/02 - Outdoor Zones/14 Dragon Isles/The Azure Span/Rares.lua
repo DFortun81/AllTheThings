@@ -212,8 +212,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193735, {	-- Moth'go Deeploom <Lunker>
+				["description"] = "Chance to spawn after using 5 Ominous Conches at any Lurker Sighting.",
+				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 74068,
 				-- ["g"] = {
 
 				-- },
@@ -245,13 +247,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- ["g"] = {
 
 				-- },
-			}),
-			n(193710, {	-- Seereel, the Spring <Lunker>
-				["coord"] = { 81.4, 78.3, THE_AZURE_SPAN },
-				-- ["questID"] = ,
-				["g"] = {
-					i(197098),	-- Highland Drake: Finned Back (DM!)
-				},
 			}),
 			n(192749, {	-- Sharpfang
 				["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },

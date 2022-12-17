@@ -992,7 +992,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197373),	-- Renewed Proto-Drake: Helm
 			i(197379),	-- Renewed Proto-Drake: Impaler Horns
 			i(197384),	-- Renewed Proto-Drake: Thick Spined Jaw
-			i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw
 			i(197389),	-- Renewed Proto-Drake: Green Scales
 			i(197393),	-- Renewed Proto-Drake: White Scales
 			i(197400),	-- Renewed Proto-Drake: Shark Snout
@@ -2107,7 +2106,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200116),	-- Everlasting Horn of Lavaswimming (TOY!)
 			i(200636),	-- Primal Invocation Quintessence (TOY!)
 			i(201435),	-- Shuffling Sands (TOY!)
-			i(201815),	-- Cloak of Many Faces (TOY!)
 			i(202042),	-- Aquatic Shades (TOY!)
 			i(200926),	-- Compendium of Love (TOY!)
 			i(201933),	-- Black Dragon's Challenge Dummy (TOY!)

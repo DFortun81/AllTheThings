@@ -86,7 +86,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(195409, {	-- Makhra the Ashtouched <Corrupted Child of Ohn'ahra>
 				["coord"] = { 32.7, 38.1, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["questID"] = 73968,
 				-- ["g"] = {
 
 				-- },
@@ -324,7 +324,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(195204, {	-- The Jolly Giant
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["questID"] = 73976,
 				-- ["g"] = {
 
 				-- },

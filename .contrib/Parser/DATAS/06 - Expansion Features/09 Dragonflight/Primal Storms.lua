@@ -138,7 +138,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16475),	-- Thunderstorms in The Ohn'ahran Plains
 				ach(16463),	-- Thunderstorms in The Waking Shores
 			}),
-			n(RARES, {
+			n(BONUS_OBJECTIVES, {
+				q(69959, {	-- Gaelzion
+					["qg"] = 193653,	-- Gaelzion
+				}),
+				q(69973, {	-- Rouen Icewind
+					["qg"] = 193682,	-- Rouen Icewind
+				}),
+			}),
+			n(RARES, sharedData({
+				["isDaily"] = true,
+			},{
 				n(193644, {	-- Bouldron
 					["coord"] = { 26.2, 75.6, THE_WAKING_SHORES },
 					-- ["questID"] = ,
@@ -179,7 +189,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						{ 63.0, 26.2, THE_WAKING_SHORES },
 						{ 43.4, 31.4, THE_AZURE_SPAN },
 					},
-					-- ["questID"] = ,
+					["questID"] = 73995,
 					["g"] = {
 						i(200180),	-- Crystallized Lightning Staff
 					},
@@ -242,7 +252,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				n(193682, {	-- Rouen Icewind
 					["coord"] = { 61.4, 60.6, THALDRASZUS },
-					-- ["questID"] = ,
+					["questID"] = 74027,
 					-- ["g"] = {
 
 					--},
@@ -268,7 +278,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 					--},
 				}),
-			}),
+			})),
 			n(REWARDS, {
 				currency(2118),	-- Elemental Overflow
 				currency(2122),	-- Storm Sigil

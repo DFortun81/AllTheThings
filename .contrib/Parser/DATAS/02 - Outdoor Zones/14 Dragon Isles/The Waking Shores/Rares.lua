@@ -250,12 +250,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193710, {	-- Seereel, the Spring <Lunker>
 				["coord"] = { 66.0, 74.8, THE_WAKING_SHORES },
-				["description"] = "Chance to spawn after using 5 Ominous Conches at the Lurker Sighting.",
-			--	["questID"] = 72850,
+				["description"] = "Chance to spawn after using 5 Ominous Conches at any Lurker Sighting.",
+				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
+				["questID"] = 74074,
 				["isDaily"] = true,
 				["g"] = {
 					i(197001),	-- Cliffside Wylderdrake: Finned Cheek
-					i(197098),	-- Highland Drake: Finned Back
+					i(197098),	-- Highland Drake: Finned Back (DM!)
 					i(200164),	-- iceloop
 					i(200086),	-- Khaz'gorite-infused Resin
 					i(200245),	-- leviathan-lure
@@ -297,7 +298,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193634, {	-- Swog'ranka <Lunker>
 				["coord"] = { 66.0, 74.8, THE_WAKING_SHORES },
-				["description"] = "Chance to spawn after using 5 Ominous Conches at the Lurker Sighting.",
+				["description"] = "Chance to spawn after using 5 Ominous Conches at any Lurker Sighting.",
+				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
 				["questID"] = 74084,
 				["isDaily"] = true,
 				["g"] = {
