@@ -329,7 +329,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["questID"] = 74042,
 					["isDaily"] = true,
 					["g"] = {
-						i(201040),	-- Citadel Crusher's Gauntlets
 						i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail (DM!)
 						i(197005),	-- Cliffside Wylderdrake: Horned Nose (DM!)
 					},
@@ -713,9 +712,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["description"] = "Drops from mobs around the Obsidian Citadel.",
 				}),
 				i(199915, {	-- Ancient Obsidian Charm
-					["description"] = "Drops from mobs around the Obsidian Citadel.",
-				}),
-				i(201041, {	-- Citadel Crusher's Cloak
 					["description"] = "Drops from mobs around the Obsidian Citadel.",
 				}),
 				i(198071, {	-- Flamecarved Bone

@@ -91,6 +91,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				--]]
 
 					-- Thaldraszus --
+				q(70436, {	-- Dragonrider Racing - Caverns Criss-Cross
+					["coord"] = { 58.0, 33.6, THALDRASZUS }
+				}),
 				q(70433, {	-- Dragonrider Racing - Cliffside Circuit
 					["coord"] = { 37.6, 49.0, THALDRASZUS }
 				}),
@@ -105,9 +108,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				-- Unconfirmed
 				--[[
-				q(70436, {	-- Dragonrider Racing - Caverns Criss-Cross
-					["coord"] = { 58.0, 33.6, THALDRASZUS }
-				}),
 				q(70432, {	-- Dragonrider Racing - Passage Pathway
 					["coord"] = { 57.2, 66.8, THALDRASZUS }
 				}),

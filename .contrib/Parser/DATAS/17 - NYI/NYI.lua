@@ -425,21 +425,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200760),	-- Unstable Arcane Cell
 			i(200875),	-- Seeker's Bands
 			i(200968),	-- Sandshaped Winglord's Drape
-			i(201035),	-- Obsidian Citadel Pauldrons
-			i(201036),	-- Obsidian Citadel Chestplate
-			i(201038),	-- Obsidian Citadel Footwraps
-			i(201039),	-- Obsidian Citadel Helm
-			i(201042),	-- Obsidian Citadel Bracers
-			i(201043),	-- Obsidian Citadel Belt
-			i(201048),	-- Tyrhold Epaulets
-			i(201049),	-- Tyrhold Robe
-			i(201050),	-- Tyrhold Leggings
-			i(201051),	-- Tyrhold Slippers
-			i(201052),	-- Tyrhold Visage
-			i(201053),	-- Tyrhold Gloves
-			i(201054),	-- Tyrhold Drape
-			i(201055),	-- Tyrhold Bindings
-			i(201056),	-- Tyrhold Sash
 			i(201057),	-- Dreamfire Sabatons
 			i(201058),	-- Robes of the Verdant Wing
 			i(201059),	-- Dreamfire Battleplate
@@ -820,11 +805,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(195177),	-- Moment's Notice
 			i(195181),	-- Rapid Fire
 
-			i(197677),	-- Plainswalking Stick
+
 			i(197684),	-- Argali Shearing Blade
 			i(197692),	-- Shikaar Fishing Bow
 			i(197693),	-- Shikaar Hunter's Crossbow
-			i(197698),	-- Mystic's Windblade
 			i(197904),	-- Shikaar Hunting Knife
 			i(197905),	-- Salamanther Slicer
 			i(200130),	-- Corpse Ripper
@@ -892,25 +876,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201378),	-- Tuskarr Angler's Crossbow
 			i(201380),	-- Nokhud Hunter's Bow
 			i(201382),	-- Centaur Warglaives
-			i(201429),	-- Obsidian Fist
-			i(201430),	-- Burning Mallet
-			i(201431),	-- Obsidian Tyrant's Mace
-			i(201432),	-- Obsidian Dragontooth
-			i(201434),	-- Obsidian Barrier
-			i(201442),	-- Primalist Tomorrow's Frostblade
-			i(201443),	-- Primalist Tomorrow's Icewall
-			i(201444),	-- Primalist Tomorrow's Earthblade
-			i(201445),	-- Primalist Tomorrow's Emberblade
-			i(201446),	-- Primalist Tomorrow's Firewall
-			i(201447),	-- Primalist Tomorrow's Breezeblade
-			i(201448),	-- Primalist Tomorrow's Windwall
-			i(201455),	-- Tyrhold Broadsword
-			i(201456),	-- Tyrhold Carbine
-			i(201457),	-- Tyrhold Relic
-			i(201458),	-- Aegis of Tyrhold
-			i(201459),	-- Tyrhold Shortsword
-			i(201460),	-- Gavel of Tyrhold
-			i(201461),	-- Tyrhold Pinnacle
+
+
+
 			i(201934),	-- Nokuhd Whittling Knife
 		--
 		}),
@@ -1047,7 +1015,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200287),	-- Iskaara Tuskarr Insignia
 			i(200288),	-- Maruuk Centaur Insignia
 			i(200289),	-- Valdrakken Accord Insignia
-			i(200094),	-- Caravan Strongbox
 			i(200218),	-- Charred Fishing Pole
 			i(200443),	-- Dragon Isles Artifact
 			i(200449),	-- Sacred Tuskarr Totem

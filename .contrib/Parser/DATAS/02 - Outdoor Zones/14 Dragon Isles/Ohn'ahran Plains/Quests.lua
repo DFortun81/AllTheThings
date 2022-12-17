@@ -24,11 +24,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 185882 },	-- Scout Tomul
 					["coord"] = { 77.7, 23.9, OHNAHRAN_PLAINS },
 					["g"] = {
-						i(197695),	-- Tuskchopper
-						i(197697),	-- Ohn'ir Ritual Scepter
-						i(197706),	-- Eaglestrike Pike
 						i(197680),	-- Centaur Cavalry Saber
+						i(197706),	-- Eaglestrike Pike
+						i(197698),	-- Mystic's Windblade
 						i(197701),	-- Ohn'ahran Greatsword
+						i(197697),	-- Ohn'ir Ritual Scepter
+						i(197695),	-- Tuskchopper
 					},
 				}),
 				q(65783, {	-- Welcome at Our Fire
@@ -939,6 +940,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(197691),	-- Amaa's Golden Mace
 					i(197703),	-- Ceeqa's Toothpick
+					i(197677),	-- Plainswalking Stick
 					i(197679),	-- Rockfang Uppercut
 					i(197690),	-- Staff of the Windsage
 					i(197699),	-- Nokhud Skullcrusher
@@ -1289,12 +1291,12 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 	m(OHNAHRAN_PLAINS, {
 		q(73701),	-- triggered during 'Unwelcome Outsider' (66021)
 		q(71203),	-- daily lockout for 'To Tame A Thunderspine' series
-		q(72778),	-- triggered with 'Call of the Plains' (71229)
+
 
 		q(66887),	-- Choose Trophy from First Hunt (Renewal of Vows 66783)
 		q(66888),	-- Choose Blood (Renewal of Vows 66783)
 		q(66889),	-- Choose Eagle Feather (Renewal of Vows 66783)
-
+		q(69867),	-- Stay and Listen Merithra 18.7,51.6 (LQ 70928)
 		-- Achievement Honor Our Ancestors
 		q(71167),	-- Maruukai Ancestor
 		q(71168),	-- Timberstep Outpost Ancestor
@@ -1309,7 +1311,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		--
 		-- q(70141),	-- Triggered when killed Skaara
 		-- --
-		-- q(71240),	-- Triggered when killed Skaara/Prozela for Alex!!
 		-- --
 		-- q(69813),	-- Triggered when Prozela Killed
 		-- --

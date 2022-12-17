@@ -181,7 +181,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197356),	-- Renewed Proto-Drake: Hairy Back
 		i(197359),	-- Renewed Proto-Drake: Hairy Brow
 		i(197395),	-- Renewed Proto-Drake: Harrier Pattern (DM!)
-		i(197383),	-- Renewed Proto-Drake: Heavy Horns
+		i(197383),	-- Renewed Proto-Drake: Heavy Horns (DM!)
 		i(197397),	-- Renewed Proto-Drake: Heavy Scales (DM!)
 		i(197373),	-- Renewed Proto-Drake: Helm
 		i(197354),	-- Renewed Proto-Drake: Horned Back

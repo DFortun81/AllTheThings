@@ -187,71 +187,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 
 
-			-- Weekly
-			-- 71243 / 72892 also likely possible weekly quests. completed with all of the other below
-			q(70750, {	-- Aiding the Accord
-				["sourceQuestNumRequired"] = 1,
-				["sourceQuests"] = {
-					71232,	-- Renown of the Dragon Isles
-					72366,	-- HQT unlock on alts
-				},
-				["provider"] = { "n", 196499 },	-- Therazal
-				["coord"] = { 50.7, 58.0, VALDRAKKEN },
-				["isWeekly"] = true,
-			}),
-			q(72068, {	-- Aiding the Accord: A Feast For All
-				["sourceQuestNumRequired"] = 1,
-				["sourceQuests"] = {
-					71232,	-- Renown of the Dragon Isles
-					72366,	-- HQT unlock on alts
-				},
-				["coord"] = { 50.7, 58.0, VALDRAKKEN },
-				["g"] = {
-					i(200073),	-- Valdrakken Treasures
-				},
-			}),
-			q(72373, {	-- Aiding the Accord: The Hunt is On
-				["sourceQuestNumRequired"] = 1,
-				["sourceQuests"] = {
-					71232,	-- Renown of the Dragon Isles
-					72366,	-- HQT unlock on alts
-				},
-				["coord"] = { 50.7, 58.0, VALDRAKKEN },
-				["g"] = {
-					i(200073),	-- Valdrakken Treasures
-				},
-			}),
-			q(72374, {	-- Aiding the Accord: Dragonbane Keep
-				["sourceQuestNumRequired"] = 1,
-				["sourceQuests"] = {
-					71232,	-- Renown of the Dragon Isles
-					72366,	-- HQT unlock on alts
-				},
-				["coord"] = { 50.7, 58.0, VALDRAKKEN },
-				["g"] = {
-					i(200073),	-- Valdrakken Treasures
-				},
-			}),
-			q(72375, {	-- Aiding the Accord: The Isles Call
-				["sourceQuestNumRequired"] = 1,
-				["sourceQuests"] = {
-					71232,	-- Renown of the Dragon Isles
-					72366,	-- HQT unlock on alts
-				},
-				["coord"] = { 50.7, 58.0, VALDRAKKEN },
-				["g"] = {
-					i(200073),	-- Valdrakken Treasures
-				},
-			}),
+
+
 			q(66867, {	-- Relic Recovery: Algeth'ar Academy
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 191957 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
-			q(66865, {	-- Relic Recovery: The Azure Vault
+			q(66864, {	-- Relic Recovery: Brackenhide Hollow
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
-				["provider"] = { "n", 191957 },	-- Theldren
+				["provider"] = { "n", 191958 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
@@ -267,7 +213,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
-			q(66870, {	-- Preserving the Past: Ruby Life Pools
+			q(66865, {	-- Relic Recovery: The Azure Vault
+				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 191957 },	-- Theldren
+				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				["isWeekly"] = true,
+			}),
+			q(66875, {	-- Preserving the Past: Algeth'ar Academy
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
@@ -279,19 +231,25 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
-			q(66875, {	-- Preserving the Past: Algeth'ar Academy
+			q(66868, {	-- Preserving the Past: Legacy of Tyr
+				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 189973 },	-- Kemora
+				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+				["isWeekly"] = true,
+			}),
+			q(66870, {	-- Preserving the Past: Ruby Life Pools
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
 			pvp(n(PVP, {
-				q(72167, {	-- Proving in War
+				q(72166, {	-- Proving in Battle
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
 				}),
-				q(72166, {	-- Proving in Battle
+				q(72167, {	-- Proving in War
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
@@ -304,7 +262,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(72648, {	-- Sparks of Life: The Azure Span
 					["provider"] = { "n", 199393 },	-- Keenu
 					["coord"] = { 42.2, 40.7, VALDRAKKEN },
-					["isWeekly"] = true,	-- unconfirmed but assumed
+					["isWeekly"] = true,
 				}),
 			})),
 		}),
@@ -323,8 +281,5 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 
 		q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel
 
-		-- q(71243),	-- Weekly Quest?
-
-		-- q(72892),	-- After "Aiding the Accord" series
 	}),
 }));

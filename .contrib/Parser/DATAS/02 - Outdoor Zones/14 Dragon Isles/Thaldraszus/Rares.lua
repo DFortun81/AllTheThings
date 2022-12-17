@@ -82,7 +82,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 72813,
 				["g"] = {
 					i(200182),	-- Riveted Drape
-					i(197383),	-- Renewed Proto-Drake: Heavy Horns
+					i(197383),	-- Renewed Proto-Drake: Heavy Horns (DM!)
 				},
 			}),
 			n(193241, {	-- Lord Epochbrgl <Time-Lost>

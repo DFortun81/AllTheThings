@@ -51,12 +51,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70655, {	-- Leaves from the Vine
 					["coord"] = { 82.9, 31.8, OHNAHRAN_PLAINS },
 				}),
+				q(70661, {	-- Supplies on High
+					["coord"] = { 44.6, 50.1, THALDRASZUS },
+				}),
 				--q(70656, {	-- Not Mushroom For Error
 				--	["coord"] = { 44.6, 50.1, THALDRASZUS },
 				--}),
-				--q(70661, {	-- Supplies on High
-				--	["coord"] = { 44.6, 50.1, THALDRASZUS },
-				--}),
+
 
 
 				--[[

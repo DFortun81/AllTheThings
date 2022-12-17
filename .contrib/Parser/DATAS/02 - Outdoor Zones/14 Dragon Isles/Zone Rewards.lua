@@ -127,5 +127,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(192017),	-- Thrumming Celestial Arrangement
 			i(192025),	-- World Breaker's Maul
 		}),
+		filter(COSMETIC, {
+			i(201447),	-- Primalist Tomorrow's Breezeblade
+			i(201444),	-- Primalist Tomorrow's Earthblade
+			i(201445),	-- Primalist Tomorrow's Emberblade
+			i(201446),	-- Primalist Tomorrow's Firewall
+			i(201442),	-- Primalist Tomorrow's Frostblade
+			i(201443),	-- Primalist Tomorrow's Icewall
+			i(201448),	-- Primalist Tomorrow's Windwall
+		}),
 	}),
 })));

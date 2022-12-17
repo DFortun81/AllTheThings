@@ -44,6 +44,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(69994, {	-- The Field of Ferocity Redux: Elemental Revenge Round!
 				["coord"] = { 53.1, 37.2, OHNAHRAN_PLAINS }
 			}),
+			q(69995, {	-- The Fields of Ferocity Redux: Master of the Hunt!
+				["coord"] = { 53.1, 37.2, OHNAHRAN_PLAINS }
+			}),
 			q(70634, {	-- Lashed Out
 				["coord"] = { 30.9, 52.7, OHNAHRAN_PLAINS }
 			}),

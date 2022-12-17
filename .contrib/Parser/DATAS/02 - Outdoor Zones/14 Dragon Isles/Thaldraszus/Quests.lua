@@ -774,7 +774,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 66244 },	-- To Valdrakken
 						["provider"] = { "n", 198349 },	-- Talikka
 						["coord"] = { 25.5, 40.9, VALDRAKKEN },
-						["isBreadcrumb"] = true,	-- unconfirmed
+						["isBreadcrumb"] = true,
 					}),
 					q(65913, {	-- Wotcher, Watcher?
 						["sourceQuests"] = { 72190 },	-- Reservoir Reservations
@@ -1368,7 +1368,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THALDRASZUS, {
 		q(67030),	-- WQ Available?
 		q(72366),	-- triggered after completing 'Moving On' (66221)
-		q(72369),	-- triggered after completing 'Moving On' (66221)
+		q(72369),	-- triggered after completing 'Moving On' (66221) / Finishing accord?
 		q(72084),	-- Triggers during 'The Fog of Battle' (66246)
 		q(72125),	-- Triggers during 'Tying Things Together' (66248)
 		-- q(70511),	-- Popped when doing quest and lootning 198964 Elementious Splinter from mobs?
