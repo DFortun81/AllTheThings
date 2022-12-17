@@ -875,7 +875,9 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						-- #if BEFORE CATA
-						i(6342),	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+						i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+							["isLimited"] = true,
+						}),
 						-- #endif
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 							["isLimited"] = true,

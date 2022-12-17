@@ -2172,7 +2172,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			n(23064, {	-- Eebee Jinglepocket <Smokywood Pastures>
 				["coord"] = { 51.6, 30.6, SHATTRATH_CITY },
 				["timeline"] = { "added 2.3.0.7561" },
+				-- #if AFTER CATA
 				["groups"] = HOLIDAY_VENDOR_GROUPS_GREEN,
+				-- #endif
 			}),
 			n(96362, {	-- Izzy Hollyfizzle <Events Coordinator>
 				["timeline"] = { "added 6.2.2.20395" },

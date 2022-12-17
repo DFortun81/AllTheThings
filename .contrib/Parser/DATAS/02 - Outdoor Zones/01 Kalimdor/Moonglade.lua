@@ -722,6 +722,23 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
+				n(4184, {	-- Geenia Sunshadow <Speciality Dress Maker>
+					["coord"] = { 51.8, 33.0, MOONGLADE },
+					["groups"] = {
+						i(13896),	-- Dark Green Wedding Hanbok
+						i(13895, {	-- Formal Dangui
+							["isLimited"] = true,
+						}),
+						i(13900, {	-- Green Wedding Hanbok
+							["isLimited"] = true,
+						}),
+						i(13899, {	-- Red Traditional Hanbok
+							["isLimited"] = true,
+						}),
+						i(13898),	-- Royal Dangui
+						i(13897),	-- White Traditional Hanbok
+					},
+				}),
 				n(12023, {	-- Kharedon <Light Armor Merchant>
 					["coord"] = { 56.6, 29.8, MOONGLADE },
 					["groups"] = {

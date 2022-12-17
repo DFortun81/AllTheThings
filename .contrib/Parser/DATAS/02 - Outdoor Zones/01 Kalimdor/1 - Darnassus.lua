@@ -1159,7 +1159,9 @@ root("Zones", m(KALIMDOR, {
 					["sym"] = { { "sub", "common_recipes_vendor", 1318 } }, -- Jessara Cordell <Enchanting Supplies>
 					["groups"] = {
 						-- #if BEFORE CATA
-						i(6342),	-- Formula: Enchant Chest - Minor Mana
+						i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+							["isLimited"] = true,
+						}),
 						-- #endif
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)

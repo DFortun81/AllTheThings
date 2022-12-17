@@ -55,8 +55,9 @@ local BRUTAL_GLADIATOR_ONUPDATE = [[function(t)
 end]];
 -- #endif
 root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, pvp(tier(TBC_TIER, {
-	n(PVP_HONOR, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 3.0.1" } }, function(t) return t.itemID; end, {
-		n(FACTION_HEADER_ALLIANCE, {
+	n(PVP_HONOR, {
+		-- Players have said that the Alliance versions were available through Wrath.
+		n(FACTION_HEADER_ALLIANCE, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 4.0.1" } }, function(t) return t.itemID; end, {
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				n(WEAPONS, {
@@ -204,8 +205,8 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					i(28721),	-- Grand Marshal's Wyrmhide Legguards
 				}),
 			},
-		}),
-		n(FACTION_HEADER_HORDE, {
+		})),
+		n(FACTION_HEADER_HORDE, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 3.0.1" } }, function(t) return t.itemID; end, {
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				n(WEAPONS, {
@@ -352,8 +353,8 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					i(28873),	-- High Warlord's Wyrmhide Legguards
 				}),
 			},
-		}),
-	})),
+		})),
+	}),
 	n(SEASON_GLADIATOR, {
 		bubbleDown({
 			["timeline"] = { "added 2.0.1.6180", "removed 2.1.2" },

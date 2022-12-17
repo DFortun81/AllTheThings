@@ -1741,7 +1741,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						-- #if BEFORE CATA
-						i(6342, {	-- Formula: Enchant Chest - Minor Mana
+						i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
 							["isLimited"] = true,
 						}),
 						-- #endif

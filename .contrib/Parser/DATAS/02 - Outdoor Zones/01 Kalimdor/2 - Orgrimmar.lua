@@ -1,6 +1,21 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
+local PVP_MOUNT_COST = {
+	-- #if AFTER 7.0.3.22248
+	{ "i", 137642, 15 },	-- Mark of Honor
+	-- #elseif AFTER 4.0
+	{ "c", 1901, 2000 },	-- 2000 Honor Points
+	-- #elseif AFTER WRATH
+	{ "c", 1901, 16650 },	-- 16650 Honor Points
+	-- #else
+	{ "i", 20560, 30 },	-- Alterac Valley Mark of Honor
+	{ "i", 20559, 30 },	-- Arathi Basin Mark of Honor
+	{ "i", 20558, 30 },	-- Warsong Gulch Mark of Honor
+	-- #endif
+};
+
 root("Zones", m(KALIMDOR, {
 	m(ORGRIMMAR, {
 		["lore"] = "Orgrimmar is the capital city of the Horde, with large settlements of trolls, orcs, tauren, and goblins.",
@@ -1975,48 +1990,20 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["coord"] = { 41.8, 73.0, ORGRIMMAR },
 					["groups"] = pvp({
-						i(70910, {	-- Vicious War Wolf (MOUNT!)
-							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
-						}),
-						i(102533, {	-- Vicious Skeletal Warhorse (MOUNT!)
-							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
-						}),
-						i(165020, {	-- Vicious Black Bonesteed (MOUNT!)
-							["cost"] = { { "i", 103533, 1 }, },
-						}),
-						i(163121, {	-- Vicious War Basilisk (A) (MOUNT!)
-							["cost"] = { { "i", 103533, 1 }, },
-						}),
-						i(142235, {	-- Vicious War Bear (H) (MOUNT!)
-							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
-						}),
-						i(163124, {	-- Vicious War Clefthoof (MOUNT!)
-							["cost"] = { { "i", 103533, 1 }, },
-						}),
-						i(152869, {	-- Vicious War Fox (H) (MOUNT!)
-							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
-						}),
-						i(124540, {	-- Vicious War Kodo (MOUNT!)
-							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
-						}),
-						i(116778, {	-- Vicious War Raptor (MOUNT!)
-							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
-						}),
-						i(142437, {	-- Vicious War Scorpion (MOUNT!)
-							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
-						}),
-						i(140354, {	-- Vicious War Trike (MOUNT!)
-							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
-						}),
-						i(143649, {	-- Vicious War Turtle (H) (MOUNT!)
-							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
-						}),
-						i(140348, {	-- Vicious Warstrider (MOUNT!)
-							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
-						}),
-						i(173713, {	-- Vicious White Bonesteed (MOUNT!)
-							["cost"] = { { "i", 103533, 1 }, },
-						}),
+						vicioussaddle(i(70910)),	-- Vicious War Wolf (MOUNT!)
+						vicioussaddle(i(102533)),	-- Vicious Skeletal Warhorse (MOUNT!)
+						vicioussaddle(i(165020)),	-- Vicious Black Bonesteed (MOUNT!)
+						vicioussaddle(i(163121)),	-- Vicious War Basilisk (A) (MOUNT!)
+						vicioussaddle(i(142235)),	-- Vicious War Bear (H) (MOUNT!)
+						vicioussaddle(i(163124)),	-- Vicious War Clefthoof (MOUNT!)
+						vicioussaddle(i(152869)),	-- Vicious War Fox (H) (MOUNT!)
+						vicioussaddle(i(124540)),	-- Vicious War Kodo (MOUNT!)
+						vicioussaddle(i(116778)),	-- Vicious War Raptor (MOUNT!)
+						vicioussaddle(i(142437)),	-- Vicious War Scorpion (MOUNT!)
+						vicioussaddle(i(140354)),	-- Vicious War Trike (MOUNT!)
+						vicioussaddle(i(143649)),	-- Vicious War Turtle (H) (MOUNT!)
+						vicioussaddle(i(140348)),	-- Vicious Warstrider (MOUNT!)
+						vicioussaddle(i(173713)),	-- Vicious White Bonesteed (MOUNT!)
 					}),
 				}),
 				n(69333, {	-- Disciple Jusi <Huojin Quartermaster>
@@ -2233,76 +2220,65 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 38.0, 70.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(122375, {	-- Aged Paundrons of The Five Thunders
-							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
-						}),
-						i(122338, {	-- Ancient Heirloom Armor Casing
-							["cost"] = {
-								{ "g", 5000000 },		-- 500g
-								{ "i", 23247, 350 },	-- 350x Burning Blossom
-								{ "c", 241, 55 },		-- 55x  Champion's Seal
-								{ "i", 21100, 40 },		-- 40x  Coin of Ancestry
-								{ "c", 515, 100 },		-- 100x Darkmoon Prize Ticket
-								{ "i", 137642, 12 },	-- 12x  Mark of Honor
-								{ "c", 1166, 750 },		-- 750x Timewarped Badge
-								{ "i", 33226, 250 },	-- 250x Tricky Treat
-							},
-							["sym"] = { { "fill" } },	-- simply fill this item
-						}),
-						i(122339, {	-- Ancient Heirloom Scabbard
-							["cost"] = {
-								{ "g", 7500000 },		-- 750g
-								{ "i", 37829, 300 },	-- 300x Brewfest Prize Token
-								{ "c", 241, 65 },		-- 65x  Champion's Seal
-								{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
-								{ "i", 49927, 200 },	-- 200x Love Token
-								{ "i", 137642, 14 },	-- 14x  Mark of Honor
-								{ "c", 1166, 900 },		-- 900x Timewarped Badge
-							},
-							["sym"] = { { "fill" } },	-- simply fill this item
-						}),
-						i(122369, {	-- Battleworn Thrash Blade
-							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-						}),
-						i(122376, {	-- Exceptional Stormshroud Shoulders
-							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
-						}),
-						i(122378, {	-- Exquisite Sunderseer Mantle
-							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
-						}),
-						i(122368, {	-- Grand Staff of Jordan
-							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-						}),
-						i(122370, {	-- Inherited Insignia of the Horde
-							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
-						}),
-						i(122530, {	-- Inherited Mark of Tyranny
-							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
-						}),
-						i(122377, {	-- Lasting Feralheart Spaulders
-							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
-						}),
-						i(122373, {	-- Pristine Lightforge Spaulders
-							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
-						}),
-						i(122374, {	-- Prized Beastmaster's Mantle
-							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
-						}),
-						i(122365, {	-- Reforged Truesilver Champion
-							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-						}),
-						i(122364, {	-- Sharpened Scarlet Kris
-							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-						}),
-						i(122372, {	-- Strengthened Stockade Pauldrons
-							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
-						}),
-						i(122367, {	-- The Blessed Hammer of Grace
-							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-						}),
-						i(122366, {	-- Upgraded Dwarven Hand Cannon
-							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-						}),
+						moh(8, i(122375, {	-- Aged Pauldrons of The Five Thunders
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(14, i(122338, {	-- Ancient Heirloom Armor Casing
+							["timeline"] = { "added 6.1.0.19445" },
+							["sym"] = {{ "fill" }},	-- simply fill this item
+						})),
+						moh(14, i(122339, {	-- Ancient Heirloom Scabbard
+							["timeline"] = { "added 6.1.0.19445" },
+							["sym"] = {{ "fill" }},	-- simply fill this item
+						})),
+						moh(12, i(122338, {	-- Ancient Heirloom Armor Casing
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(14, i(122339, {	-- Ancient Heirloom Scabbard
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(10, i(122369, {	-- Battleworn Thrash Blade
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(8, i(122376, {	-- Exceptional Stormshroud Shoulders
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(8, i(122378, {	-- Exquisite Sunderseer Mantle
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(4, i(122370, {	-- Inherited Insignia of the Horde
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(4, i(122530, {	-- Inherited Mark of Tyranny
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(10, i(122368, {	-- Grand Staff of Jordan
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(8, i(122377, {	-- Lasting Feralheart Spaulders
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(8, i(122373, {	-- Pristine Lightforge Spaulders
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(8, i(122374, {	-- Prized Beastmaster's Mantle
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(10, i(122365, {	-- Reforged Truesilver Champion
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(10, i(122364, {	-- Sharpened Scarlet Kris
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(8, i(122372, {	-- Strengthened Stockade Pauldrons
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(10, i(122367, {	-- The Blessed Hammer of Grace
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
+						moh(10, i(122366, {	-- Unpgraded Dwarven Hand Cannon
+							["timeline"] = { "added 6.1.0.19445" },
+						})),
 					},
 				}),
 				n(5188, {	-- Garyl <Tabard Vendor>
@@ -4234,20 +4210,46 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
-				n(12796, {	-- Raider Bork <War Mount Quartermaster>
+				n(12796, {	-- Raider Bork <War Mount Quartermaster> [WRATH+] / Raider Bork <Mount Quartermaster>
+					-- #if AFTER WRATH
 					["coord"] = { 41.8, 72.6, ORGRIMMAR },
-					["itemID"] = 137642,	-- Mark of Honor
+					-- #else
+					["description"] = "Found within the Champion's Hall.",
+					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = pvp({
-						i(29466),	-- Black War Kodo (MOUNT!)
-						un(REMOVED_FROM_GAME, i(18247)),	-- Black War Kodo (MOUNT!) Pre 2.0 Version
-						i(29469),	-- Black War Wolf (MOUNT!)
-						un(REMOVED_FROM_GAME, i(18245)),	-- Black War Wolf (MOUNT!) Pre 2.0 Version
-						i(29470),	-- Red Skeletal Warhorse (MOUNT!)
-						un(REMOVED_FROM_GAME, i(18248)),	-- Red Skeletal Warhorse (MOUNT!) Pre 2.0 Version
-						i(29472),	-- Black War Raptor (MOUNT!)
-						un(REMOVED_FROM_GAME, i(18246)),	-- Black War Raptor (MOUNT!) Pre 2.0 Version
-						i(34129),	-- Swift Warstrider (MOUNT!)
+						i(29466, {	-- Black War Kodo (MOUNT!)
+							["timeline"] = { "added 2.0.1.6180" },
+							["cost"] = PVP_MOUNT_COST,
+						}),
+						i(18247, {	-- Black War Kodo (MOUNT!)
+							["timeline"] = { "removed 2.0.1.6180" },
+						}),
+						i(29472, {	-- Black War Raptor (MOUNT!)
+							["timeline"] = { "added 2.0.1.6180" },
+							["cost"] = PVP_MOUNT_COST,
+						}),
+						i(18246, {	-- Black War Raptor (MOUNT!)
+							["timeline"] = { "removed 2.0.1.6180" },
+						}),
+						i(29469, {	-- Black War Wolf (MOUNT!)
+							["timeline"] = { "added 2.0.1.6180" },
+							["cost"] = PVP_MOUNT_COST,
+						}),
+						i(18245, {	-- Black War Wolf (MOUNT!)
+							["timeline"] = { "removed 2.0.1.6180" },
+						}),
+						i(29470, {	-- Red Skeletal Warhorse (MOUNT!)
+							["timeline"] = { "added 2.0.1.6180" },
+							["cost"] = PVP_MOUNT_COST,
+						}),
+						i(18248, {	-- Red Skeletal Warhorse (MOUNT!)
+							["timeline"] = { "removed 2.0.1.6180" },
+						}),
+						i(34129, {	-- Swift Warstrider (MOUNT!)
+							["timeline"] = { "added 2.3.0.7382" },
+							["cost"] = PVP_MOUNT_COST,
+						}),
 					}),
 				}),
 				n(52033, {	-- Rogoc <Bloodthirsty Gladiator>
