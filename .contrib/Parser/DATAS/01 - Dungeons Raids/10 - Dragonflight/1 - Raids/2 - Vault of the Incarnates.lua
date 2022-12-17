@@ -14,8 +14,9 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			2122,	-- The Vault Approach
 			2123,	-- Iceskitter Hollow
 			2124,	-- The Primal Convergence
-			2125,	--
+			2125,	-- Vault of the Incarnates
 			2126,	-- The Clutchwarren
+			2135,	-- Valdrakken
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -81,6 +82,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
+					i(202008),	-- Galvanic Gaiters
 					i(202010),	-- Primalist Warden's Bracers
 				}),
 				e(2480, {	-- Eranog
@@ -334,13 +336,14 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			d(14, {	-- Normal
 				n(QUESTS, {
 					q(71018, {	-- Vault of the Incarnates: Break a Few Eggs (N)
-						["qg"] = 193460,	-- Kalecgos
+						["provider"] = { "n", 193460 },	-- Kalecgos
 						["g"] = {
 							i(200225),	-- Shard of the Greatstaff
 						},
 					}),
 				}),
 				n(ZONE_DROPS, {
+					i(202008),	-- Galvanic Gaiters
 					i(202010),	-- Primalist Warden's Bracers
 				}),
 				e(2480, {	-- Eranog
@@ -592,6 +595,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				}),
 				n(ZONE_DROPS, {
+					i(202008),	-- Galvanic Gaiters
 					i(202010),	-- Primalist Warden's Bracers
 				}),
 				e(2480, {	-- Eranog
@@ -859,6 +863,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				}),
 				n(ZONE_DROPS, {
+					i(202008),	-- Galvanic Gaiters
 					i(202010),	-- Primalist Warden's Bracers
 				}),
 				e(2480, {	-- Eranog
@@ -1133,5 +1138,8 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(70083),	-- Broodkeeper Diurna (N)
 		q(70091),	-- Broodkeeper Diurna (N)
 		q(72276),	-- Broodkeeper Diurna (N)
+		q(70084),	-- Raszageth the Storm-Eater (N)
+		q(70092),	-- Raszageth the Storm-Eater (N)
+		q(72277),	-- Raszageth the Storm-Eater (N)
 	}),
 })));

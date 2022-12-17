@@ -89,11 +89,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(198407),	-- Azure Arcanic Amplifier
 			i(198627),	-- Blood of the Khansguard
 			i(198695),	-- Bottomless Reliquary Satchel
+			i(198539),	-- Breath of the Plains
 			i(198490),	-- Bushwhacker's Compass
+			i(198081),	-- Caregiver's Charm
 			i(198489),	-- Dreamscape Prism
 			i(192797),	-- Gral's Discarded Tooth
 			i(193568),	-- Engraved Spearhead
+			i(198451),	-- Lifeflame Ampoule
 			i(198542),	-- Shikaari Huntress' Arrowhead
+			i(198532),	-- The Cartographer's Calipers
 			i(198529),	-- Wayfarer's Iron Torch
 		}),
 		n(WEAPONS, {

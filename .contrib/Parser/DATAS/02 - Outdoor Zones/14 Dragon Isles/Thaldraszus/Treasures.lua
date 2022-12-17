@@ -47,7 +47,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(381094, {	-- Elegant Canvas Brush
 				["coord"] = { 60.2, 41.6, THALDRASZUS },
-				-- ["questID"] = ,
+				["questID"] = 70609,
 				["g"] = {
 					crit(4, {	-- Elegant Canvas Brush
 						["achievementID"] = 16301,	-- Treasures of Thaldraszus
@@ -68,7 +68,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(381107, {	-- Sand Pile
 				["coord"] = { 58.2, 80.1, THALDRASZUS },
-				-- ["questID"] = ,
+				["questID"] = 70608,
 				["cost"] = { { "i", 199069, 1 }, },	--1xYennu's Map
 				["g"] = {
 					crit(2, {	-- Sand Pile
@@ -85,7 +85,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(381216, {	-- Surveyor's Magnifying Glass
 				["coord"] = { 64.8, 16.5, THALDRASZUS },
-				-- ["questID"] = ,
+				["questID"] = 70610,
 				["g"] = {
 					crit(5, {	-- Surveyor's Magnifying Glass
 						["achievementID"] = 16301,	-- Treasures of Thaldraszus
@@ -94,7 +94,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(381108, {	-- Yennu's Map
 				["coord"] = { 54.9, 75.4 , THALDRASZUS },
-				-- ["questID"] = ,
 				["g"] = {
 					i(199069, {	-- Yennu's Map
 						["questID"] = 70538,

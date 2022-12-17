@@ -202,6 +202,24 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			},
 			["isWeekly"] = true,
 		}),
+		-- Chap 0
+		q(72773, {	-- Learning Ingenuity
+			["provider"] = { "n", 196499 },	-- Therazal
+			["coord"] = { 50.2, 55.9, VALDRAKKEN },
+			["isBreadcrumb"] = true,	-- unconfirmed
+		}),
+		q(70180, {	-- Jump-Start? Jump-Starting!
+			["sourceQuests"] = { 72773 },	-- Learning Ingenuity
+			["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
+			["coord"] = { 84.2, 54.4, VALDRAKKEN },
+		}),
+		-- Chap 1
+		q(70845, {	-- In Tyr's Footsteeps
+			["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
+			["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+			["coord"] = { 84.3, 53.5, VALDRAKKEN },
+		}),
+		--
 		prof(ALCHEMY, {
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",

@@ -375,10 +375,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(190909),	-- Ruby Felfire Splitblade
 				i(190910),	-- Ruby Felfire Bulwark
 			}),
-			i(198081),	-- Caregiver's Charm
-			i(198451),	-- Lifeflame Ampoule
-			i(198532),	-- The Cartographer's Calipers
-			i(198539),	-- Breath of the Plains
 			i(198730),	-- Dragonscale Expedition Tabard
 			i(198731),	-- Iskaara Tuskarr Tabard
 			i(198732),	-- Valdrakken Accord Tabard
@@ -483,7 +479,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(202005),	-- Frozen Claw Mantle
 			i(202006),	-- Greathelm of Horned Fury
 			i(202007),	-- Woven Stone Bracelets
-			i(202008),	-- Galvanic Gaiters
 			i(202009),	-- Lavamancer's Ceremonial Waistguard
 			i(202116),	-- Alacritous Alchemist Stone
 			i(202143),	-- Woven Stone Bracelets

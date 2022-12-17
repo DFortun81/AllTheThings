@@ -102,6 +102,7 @@ def get_other_skilllines() -> list[int]:
 def sort_raw_file_recipes() -> None:
     """Sort raw files for recipes."""
     profession_dict = build_profession_dict()
+    print(profession_dict)
     raw_path_dict = {
         profession: Path("Raw", "Professions", f"{profession}.txt")
         for profession in profession_dict
@@ -115,6 +116,7 @@ def sort_raw_file_recipes() -> None:
         builds = builds_file.readlines()
         raw_lines = raw_file.readlines()
         for profession in profession_dict.keys() | {"Other"}:
+            print(profession)
             recipe_list = list[str]()
             with open(raw_path_dict[profession], "r+") as sorted_file:
                 for line in raw_lines:
@@ -405,4 +407,61 @@ def add_latest_data(build: str) -> None:
                 raw_file.writelines(difference)
 
 
-sort_raw_file_recipes()
+def fast():
+    fast_path: Path = Path("Builds", "00Fast.txt")
+    spell_path: Path = Path("Raw", "SpellNames.txt")
+    new_path: Path = Path("Builds", "00Cool.txt")
+    fast_lines = extract_nth_column(fast_path, 0)
+    with open(fast_path) as raw_file:
+        raw_ids_and_nameids = raw_file.readlines()
+        name_ids = extract_nth_column(Path("Raw", "SpellNames.txt"), 0)
+        names = extract_nth_column(Path("Raw", "SpellNames.txt"), 1)
+    with open(fast_path, "r") as fast_file, open(spell_path, "r") as spell_file:
+       for n in range(len(fast_lines)):
+        id_list = []
+        name_list = []
+        missing_line = fast_lines[n].strip()
+        missing_line = re.sub("[^\\d^.]", "", missing_line)
+        if missing_line.isdigit():
+            fast_lines[n] = f"r({missing_line}),\t-- "
+            for m in range(len(raw_ids_and_nameids)):
+                raw_id = raw_ids_and_nameids[m].split(DELIMITER)[0].strip()
+                if missing_line == raw_id:
+                        id_list.append(
+                            raw_ids_and_nameids[m].split(DELIMITER)[0].strip()
+                        )
+            for index, name_id in enumerate(name_ids):
+                name_id = re.sub("[^\\d^.]", "", name_id.strip())
+                for element in id_list:
+                    if name_id.strip() == element.strip():
+                        name_list.append(names[index].strip())
+        else:
+            fast_lines[n] = missing_line
+        name_list.reverse()
+        fast_lines[n] += " \\\\ ".join(name_list) + "\n"
+        print(fast_lines[n])
+    with open(new_path, "w") as missing_file:
+        missing_file.writelines(fast_lines)
+
+
+def kek():
+    path = Path("Builds", "00Quest.txt")
+    lines = extract_nth_column(path, 0)
+    for index, missing_line in enumerate(lines):
+        missing_line = missing_line.strip()
+        missing_line = re.sub("[^\\d^.]", "", missing_line)
+        if missing_line.isdigit():
+            lines[index] = f"q({missing_line}),\t--\n"
+        else:
+            lines[index] = lines[index]
+    with open(path, "w") as missing_file:
+        missing_file.writelines(lines)
+
+things: list[type[Thing]] = Thing.__subclasses__()
+for thing in things:
+    print(thing)
+    kek = input("janej")
+    if kek == "ja":
+         post_process(thing)
+    else:
+        continue

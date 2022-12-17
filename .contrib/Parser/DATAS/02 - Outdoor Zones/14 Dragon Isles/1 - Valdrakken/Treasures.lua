@@ -9,6 +9,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 70731,
 				["g"] = {
 					i(198106),	-- Recipe: Tasty Hatchling's Treat (RECIPE!)
+					i(197769),	-- Tasty Hatchling's Treat
 				},
 			}),
 		}),

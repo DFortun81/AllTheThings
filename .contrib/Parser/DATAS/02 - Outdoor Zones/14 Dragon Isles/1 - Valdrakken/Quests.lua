@@ -4,7 +4,7 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(VALDRAKKEN, {
 		n(QUESTS, {
-			-- SIDE 2
+			-- A Dryad Questline
 			q(67094, {	-- A Dryad's Work Is Never Done
 				["sourceQuests"] = { 66244 },	-- To Valdrakken
 				["provider"] = { "n", 192522 },	-- Thalendra
@@ -14,6 +14,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["sourceQuests"] = { 67094 },	-- A Dryad's Work Is Never Done
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
+				["cost"] = { { "i", 197769, 1 }, },	-- 1xTasty Hatchling's Treat
+				["g"] = {
+					title(467, {	-- <Name>, Honorary Dryad
+						["collectible"] = false,
+					}),
+				},
 			}),
 
 
@@ -80,19 +86,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["timeline"] = { CREATED_DF_PRE },
 				["isBreadcrumb"] = true,
 			}),
-			q(70180, {	-- Jump-Start? Jump-Starting!
-				["sourceQuests"] = {
-					70846,	-- Dragonscale Expedition: Help Needed!
-					72773,	-- Learning Ingenuity
-				},
-				["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
-				["coord"] = { 84.2, 54.4, VALDRAKKEN },
-			}),
-			q(70845, {	-- In Tyr's Footsteeps
-				["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
-				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
-				["coord"] = { 84.3, 53.5, VALDRAKKEN },
-			}),
+
 			q(70181, {	-- First Challenge of Tyr: Finesse
 				["sourceQuests"] = { 70845 },	-- In Tyr's Footsteeps
 				["provider"] = { "o", 379290 },	-- Ornamented Statue
@@ -142,11 +136,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(72585, {	-- Open Orientation
 				["provider"] = { "n", 196499 },	-- Therazal
 				["coord"] = { 50.2, 55.9, VALDRAKKEN },
-			}),
-			q(72773, {	-- Learning Ingenuity
-				["provider"] = { "n", 196499 },	-- Therazal
-				["coord"] = { 50.2, 55.9, VALDRAKKEN },
-				["isBreadcrumb"] = true,	-- unconfirmed
 			}),
 			q(72783, {	-- Crafting Orders
 				["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
@@ -295,7 +284,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 				["isWeekly"] = true,
-			}),	
+			}),
 			pvp(n(PVP, {
 				q(72167, {	-- Proving in War
 					["provider"] = { "n", 196191 },	-- Malicia
@@ -332,7 +321,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72009),	-- triggered with 'Warm Away These Shivers' (67047)
 		q(67056),	-- triggered after '10,000 Years of Roasting' (67063)
 
-		-- q(65041),	-- Memories of Scoroxia(On wowhead? Something you should return with??) / Talked with Scalecommanders Cindretresh and Azurathel
+		q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel
 
 		-- q(71243),	-- Weekly Quest?
 

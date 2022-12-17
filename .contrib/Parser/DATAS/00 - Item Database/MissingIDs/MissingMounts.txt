@@ -107,7 +107,6 @@ mount(373646),	-- Dracthyr Flight Test
 mount(374071),	-- [PH] Dragonfly Yellow
 mount(376898),	-- [PH] Black Armored River Otter
 mount(376909),	-- [PH] Blue Armored River Otter
-mount(377071),	-- Crimson Gladiator's Drake \\ [PH] Gladiator Drake
 10.0.0.44795
 mount(385253),	-- [PH] Brown Wind Eagle
 mount(385260),	-- [PH] Sepia Wind Eagle
@@ -118,9 +117,6 @@ mount(385771),	-- PH Yellow Slyvern
 mount(387948),	-- [PH] Wind Proto-Drake
 10.0.0.45661
 mount(369536),	-- Soar
-10.0.2.45779
-mount(394737),	-- Vicious Sabertooth
-mount(394738),	-- Vicious Sabertooth
 10.0.2.46091
 mount(395644),	-- Divine Kiss of Ohn'ahra
 
