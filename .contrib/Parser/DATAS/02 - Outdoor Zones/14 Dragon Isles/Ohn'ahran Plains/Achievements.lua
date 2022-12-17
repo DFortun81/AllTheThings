@@ -208,7 +208,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					crit(9, {	-- Teerakai Ancestor
 						["crs"] = { 197057 },	-- Jhakan Khan
 						["coord"] = { 41.6, 56.7, OHNAHRAN_PLAINS },
-						["cost"] = { { "i", 190501, 1}, },	-- 1x Primal Molten Greatbelt
+						["cost"] = { { "i", 199049, 1}, },	-- 1x Fire-Blessed Greatsword
 					}),
 					crit(10, {	-- The Eternal Kurgans Ancestor
 						["crs"] = { 197058 },	-- Dihar the Unyielding
