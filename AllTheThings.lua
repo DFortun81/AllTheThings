@@ -2552,7 +2552,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 end
 local PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
-		local questRef = app.SearchForObject("questID", questID) or app.SearchForField("questID", questID);
+		local questRef = app.SearchForObject("questID", questID) or app.SearchForField("questID", questID) or app.SearchForField("altQuestIDs", questID);
 		questRef = (questRef and questRef[1]) or questRef;
 		local questChange;
 		if new == true then
@@ -5988,6 +5988,7 @@ fieldCache["objectID"] = {};
 fieldCache["professionID"] = {};
 -- identical cache as professionID
 fieldCache["requireSkill"] = rawget(fieldCache, "professionID");
+fieldCache["altQuestIDs"] = {};
 fieldCache["questID"] = {};
 fieldCache["runeforgePowerID"] = {};
 fieldCache["rwp"] = {};
@@ -6136,6 +6137,11 @@ fieldConverters = {
 	end,
 
 	-- Complex Converters
+	["altQuests"] = function(group, value)
+		for _,questID in ipairs(value) do
+			CacheField(group, "altQuestIDs", questID);
+		end
+	end,
 	["crs"] = function(group, value)
 		for _,creatureID in ipairs(value) do
 			cacheCreatureID(group, creatureID);
