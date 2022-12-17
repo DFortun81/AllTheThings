@@ -45,6 +45,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70662, {	-- A Bone to Pickaxe
 					["coord"] = { 27.7, 44.1, THE_AZURE_SPAN },
 				}),
+				q(66070, {	-- Brightblade's Bones
+					["coord"] = { 22.0, 95.1, THE_WAKING_SHORES },
+				}),
 				q(70655, {	-- Leaves from the Vine
 					["coord"] = { 82.9, 31.8, OHNAHRAN_PLAINS },
 				}),
@@ -59,7 +62,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				--[[
 				WS
 				q(70651),	-- Stolen Luggage
-				q(66070),	-- Brightblade's Bones
 				q(64768),	-- Lightsprocket's Artifact Hunt
 				OP
 				q(70652),	-- Take One Down, Pass It Around

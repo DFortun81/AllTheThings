@@ -226,7 +226,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- NON SET THINGS
 			i(191942),	-- Belloc's Hat
 			-- Waking Shore Quest Rewards?
-			i(194374),	-- Explorer's League Rifle
 			i(194378),	-- Explorer's Belt Knife
 			i(194379),	-- Field Scout's Longblade
 			i(194387),	-- Obsidian Watcher's Crossbow
@@ -829,7 +828,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197904),	-- Shikaar Hunting Knife
 			i(197905),	-- Salamanther Slicer
 			i(200130),	-- Corpse Ripper
-			i(200136),	-- Monsoonic Armguards
 			i(200138),	-- Ancient Dancer's Longspear
 			i(200139),	-- Tempest Arc
 			i(200145),	-- Hilted Monolith
@@ -914,12 +912,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201460),	-- Gavel of Tyrhold
 			i(201461),	-- Tyrhold Pinnacle
 			i(201934),	-- Nokuhd Whittling Knife
-			i(201994),	-- Felsworn Covenant Crossbow
-			i(201995),	-- Crux of Blind Faith
-			i(201996),	-- Edge of the First Blade
-			i(201997),	-- Key to the Halls
-			i(201998),	-- Fenryr's Bloodstained Fang
-			i(201999),	-- Skovald's Resolve
 		--
 		}),
 		n(DRAKEWATCHER_MANUSCRIPTS, {
@@ -955,7 +947,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197099),	-- Highland Drake: Armor
 			i(197102),	-- Highland Drake: Horned Chin
 			i(197104),	-- Highland Drake: Tapered Chin
-			i(197105),	-- Highland Drake: Spined Chin
 			i(197106),	-- Highland Drake: Finned Head
 			i(197109),	-- Highland Drake: Spiked Head
 			i(197116),	-- Highland Drake: Ears

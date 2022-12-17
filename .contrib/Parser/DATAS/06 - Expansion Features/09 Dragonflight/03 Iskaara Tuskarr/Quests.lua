@@ -273,7 +273,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
 		q(72279),	-- Triggered with 'Stolen Tuskaar Totems' (70936)
-		q(72385),	-- Triggered with 'Cpmmunity Feasts' (70938)
+		q(72385),	-- Triggered with 'Community Feasts' (70938)
 		q(72386),	-- Triggered with 'Cooking Utensils' (70939)
 		q(72387),	-- Triggered with 'Tuskarr Headwear' (70953)
 		q(72781),	-- Triggered with 'Tuskarr Fishing Gear' (71230)

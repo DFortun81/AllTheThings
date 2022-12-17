@@ -336,7 +336,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 				["provider"] = { "n", 192563 },	-- Kholmar Sunrunner
 				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
+				-- ["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
+			}),
+			q(70357, {	-- Dragon Isles Blacksmithing
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 192164 },	-- Gringot Coldsteel <Blacksmithing Trainer>
+				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
+				-- ["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
 			}),
 			q(66897, {	-- Fuel for the Forge
 				["description"] = "Requires 25 Skill.",
@@ -459,6 +468,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 		}),
 		prof(COOKING, {
+			q(72251, {	-- Dragon Isles Cooking
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 193121 },	-- Head Chef Stacks
+				["coord"] = { 47.1, 82.7, THE_WAKING_SHORES },
+			}),
 			q(72250, {	-- Dragon Isles Cooking
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -602,6 +619,23 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 190535 },	-- Quizla Blastcaps
 				["coord"] = { 75.9, 33.2, THE_WAKING_SHORES },
 			}),
+			q(70359, {	-- Dragon Isles Engineering
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 192165 },	-- Winnie Fingerspring <Engineering Trainer>
+				["coord"] = { 43.0, 66.5, THE_WAKING_SHORES },
+			}),
+			q(70027, {	-- Artisan's Supply: Quality-Assured Optics
+				["sourceQuests"] = {
+					72242,	-- Dragon Isles Engineering
+					70359,	-- Dragon Isles Engineering
+				},
+				["provider"] = { "n", 192165 },	-- Winnie Fingerspring <Engineering Trainer>
+				["coord"] = { 43.0, 66.5, THE_WAKING_SHORES },
+				["cost"] = { { "i", 198328, 1 }, },	-- 2xQuality-Assured Optics
+			}),
 			q(70252, {	-- Hidden Profession Master Engineering
 				["name"] = "Hidden Profession Master: Engineering",
 				["provider"] = { "n", 194838 },	-- Frizz Buzzcrank
@@ -674,13 +708,24 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(391089),	-- Refine Herbs+++
 				},
 			}),
-			q(70026, {	-- Artisan's Supply: Lava Beetles
-				--["sourceQuests"] = {  },	-- To the Dragon Isles:
+			q(70364, {	-- Dragon Isles Herbalism
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 192010 },	-- Szarostrasza <Herbalism Trainer>
+				["coord"] = { 57.4, 65.8, THE_WAKING_SHORES },
+			}),
+			q(72243, {	-- Dragon Isles Herbalism
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
 				["provider"] = { "n", 192549 },	-- Feilin Kuan
 				["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
 			}),
-			q(72243, {	-- Dragon Isles Herbalism
-				--["sourceQuests"] = { },	--
+			q(70026, {	-- Artisan's Supply: Lava Beetles
+				--["sourceQuests"] = {  },	-- To the Dragon Isles:
 				["provider"] = { "n", 192549 },	-- Feilin Kuan
 				["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
 			}),
@@ -770,6 +815,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(383548),	-- Scribe's Resplendent Quill
 				},
 			}),
+			q(70361, {	-- Dragon Isles Inscription
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 198125 },	-- Isarian Shadowplume <Inscription Trainer>
+				["coord"] = { 57.1, 58.2, THE_WAKING_SHORES },
+			}),
 			q(72244, {	-- Dragon Isles Inscription
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -777,6 +830,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 				["provider"] = { "n", 198380 },	-- Journalist Jessamine Spitz
 				["coord"] = { 76.1, 35.5, THE_WAKING_SHORES },
+			}),
+			q(70031, {	-- Artisan's Supply: Chef's Smooth Rolling Pin
+				["sourceQuests"] = {
+					70361,	-- Dragon Isles Inscription
+					72244,	-- Dragon Isles Inscription
+				},
+				["provider"] = { "n", 198380 },	-- Journalist Jessamine Spitz
+				["coord"] = { 76.1, 35.5, THE_WAKING_SHORES },
+				["cost"] = { { "i", 191233, 1 }, },	-- 2xChef's Smooth Rolling Pin
 			}),
 			q(70254, {	-- Hidden Profession Master Inscription
 				["name"] = "Hidden Profession Master: Inscription",
@@ -1264,7 +1326,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			q(70194, { -- Specialized Secrets: Tailoring
+			q(70194, {	-- Specialized Secrets: Tailoring
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },

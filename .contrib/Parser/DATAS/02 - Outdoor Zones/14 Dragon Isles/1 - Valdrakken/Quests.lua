@@ -196,7 +196,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					72366,	-- HQT unlock on alts
 				},
 				["provider"] = { "n", 196499 },	-- Therazal
-				["coord"] = { 50.7, 58.0, THALDRASZUS },
+				["coord"] = { 50.7, 58.0, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
 			q(72068, {	-- Aiding the Accord: A Feast For All

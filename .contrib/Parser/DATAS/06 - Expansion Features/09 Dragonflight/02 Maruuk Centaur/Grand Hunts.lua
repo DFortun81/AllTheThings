@@ -313,6 +313,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						["questID"] = 73931,
 						["isDaily"] = true,
 						["g"] = {
+							i(197105),	-- Highland Drake: Spined Chin (DM!)
 							-- is part of the DF>Global Rare Loottable
 						},
 					}),
@@ -461,7 +462,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 								200447,	-- Centaur Hunting Trophy
 								194095,	-- Ohuna Companion Color: Sepia
 								194091,	-- Bakar Companion Color: Golden Brown
-								
+
 							}},
 						}),
 					},

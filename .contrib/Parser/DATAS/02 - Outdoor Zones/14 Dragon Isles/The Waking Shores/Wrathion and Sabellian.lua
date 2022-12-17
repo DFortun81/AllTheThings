@@ -153,7 +153,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				q(69983, {	-- Flamecarved Bone
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
-					["provider"] = { "n", 198071 },	-- Flamecarved Bone
+					["provider"] = { "i", 198071 },	-- Flamecarved Bone
 					["isWeekly"] = true,
 				}),
 				q(70848, {	-- Forgotten Dragon Crest
@@ -301,6 +301,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					-- 64277 - weekly, accepted Keys of Loyalty after choosing Wrathion
 					-- 66802 - weekly, accepted Keys of Loyalty after choosing Wrathion
 				}),
+				n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
+					q(70984, {	-- Surge Breaker
+						["coord"] = { 28.4, 58.4, THE_WAKING_SHORES },
+					}),
+				})),
 			}),
 			n(RARES, {
 				n(190986, {	-- Battlehorn Pyrhus
@@ -775,7 +780,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
-			q(70984),	-- Triggered first time entering Obsidian Citadel area with Wrathion chat message
 			q(64277),	-- Triggered when choosing Wrathion in Allegiance To One (66419)
 			--q(xxxxx),	-- Triggered when choosing Seballian in Allegiance To One (66419)
 			q(66802),	-- Triggered when choosing Wrathion or Seballian in Allegiance To One (66419)

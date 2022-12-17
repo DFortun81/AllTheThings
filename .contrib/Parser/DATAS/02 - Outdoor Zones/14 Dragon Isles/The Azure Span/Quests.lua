@@ -199,6 +199,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 186228 },	-- Brena
 					["coord"] = { 34.3, 31.0, THE_AZURE_SPAN },
 					["g"] = {
+						i(198009),	-- Gleaming Bronze Blade
 						i(198007),	-- Large Brass Cleaver
 						i(198003),	-- Ornate Steel Cleaver
 						i(198006),	-- Sharpened Silver Sword
@@ -569,7 +570,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["collectible"] = false,
 				["g"] = {
 					q(66708, {	-- Riders in the Snow
-						["sourceQuests"] = { 65886 },	-- To Rhonin's Shield
+						["sourceQuests"] = { 66340 },	-- Into the Azure
 						["provider"] = { "n", 190300 },	-- Tuskarr Elder
 						["coord"] = { 65.9, 25.5, THE_AZURE_SPAN },
 						["isBreadcrumb"] = true,
@@ -678,7 +679,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["collectible"] = false,
 				["g"] = {
 					q(66261, {	-- A Minor Setback
-						["sourceQuests"] = { 66026 },	-- Urgent Action Required
+						["sourceQuests"] = { 66340 },	-- Into the Azure
 						["provider"] = { "n", 187764 },	-- Illusory Mage
 						["coord"] = { 21.0, 38.9, THE_AZURE_SPAN },
 						["isBreadcrumb"] = true,
@@ -921,7 +922,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["collectible"] = false,
 				["g"] = {
 					q(66964, {	-- Artifacts in the Wrong Hands
-						["sourceQuests"] = { 65886 },	-- To Rhonin's Shield
+						["sourceQuests"] = { 66340 },	-- Into the Azure
 						["provider"] = { "n", 196545 },	-- Polky Cogzapper
 						["coord"] = { 65.9, 25.3, THE_AZURE_SPAN },
 						["isBreadcrumb"] = true,
@@ -1284,7 +1285,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					q(66212, {	-- Fishing: Aileron Seamoth
 						["sourceQuests"] = { 65849 },	-- To Iskaara
-						["provider"] = { "n", 186126 },	-- Big Kinook
+						["provider"] = { "n", 193877 },	-- Lukoturukk
 						["coord"] = { 13.5, 48.6, THE_AZURE_SPAN },
 						["requireSkill"] = FISHING,
 						["cost"] = { { "i", 194967, 5 }, },	-- 5xAileron Seamoth
@@ -1749,7 +1750,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			n(HIDDEN_QUESTS, {
-				-- Moved temporarily to HQTs 
+				-- Moved temporarily to HQTs
 			}),
 			ach(15941, {	-- Dragon Racing Completionist: Gold
 				["collectible"] = false,

@@ -133,7 +133,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197151),	-- Highland Drake: Spiked Tail (DM!)
 		i(197097),	-- Highland Drake: Spined Back (DM!)
 		i(197133),	-- Highland Drake: Spined Cheek (DM!)
-		i(197105),	-- Highland Drake: Spined Chin
+		i(197105),	-- Highland Drake: Spined Chin (DM!)
 		i(197108),	-- Highland Drake: Spined Head (DM!)
 		i(197154),	-- Highland Drake: Spined Neck (DM!)
 		i(197137),	-- Highland Drake: Spined Nose (DM!)

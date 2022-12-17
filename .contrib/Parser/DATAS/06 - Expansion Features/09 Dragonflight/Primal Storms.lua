@@ -145,6 +145,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(69973, {	-- Rouen Icewind
 					["qg"] = 193682,	-- Rouen Icewind
 				}),
+				q(69969, {	-- Voraazka
+					["qg"] = 193674,	-- Voraazka
+				}),
 			}),
 			n(RARES, sharedData({
 				["isDaily"] = true,
@@ -265,11 +268,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					--},
 				}),
 				n(193674, {	-- Voraazka
-					-- ["coord"] = { X, Y, MAP },
-					-- ["questID"] = ,
-					-- ["g"] = {
-
-					--},
+					["coord"] = { 27.7, 72.6, THE_WAKING_SHORES },
+					["questID"] = 74038,
+					["g"] = {
+						i(200136),	-- Monsoonic Armguards
+					},
 				}),
 				n(193680, {	-- Zurgaz Corebreaker
 					-- ["coord"] = { X, Y, MAP },

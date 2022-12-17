@@ -128,6 +128,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["g"] = {
 						i(194389),	-- Brush Clearing Axe
 						i(194392),	-- Expedition Defender's Blade
+						i(194374),	-- Explorer's League Rifle
 						i(194373),	-- Field Explorer's Stave
 						i(194377),	-- Reliquary Dissection Knife
 						i(198488),	-- Staff of Discovery
@@ -1145,7 +1146,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			q(70414, {	-- Shaky Grounds
-				["qg"] = 195234,	-- Earthmender Govrum
+				["provider"] = { "n", 195234 },	-- Earthmender Govrum
 				["coord"] = { 37.0, 55.8, THE_WAKING_SHORES },
 			}),
 			-- Tour
@@ -1678,7 +1679,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		q(70767),	-- triggers when 'Tale of the Outsider' becomes available for Tarjin the Blind
 		q(70768),	-- triggers when 'Tale of the Outsider' completes
 		q(70770),	-- triggers when 'Tale of the Elders' becomes available for Tarjin the Blind
-		q(70769),	-- triggers when 'Tale of the Outsider' completes
+		q(70769),	-- triggers when 'Tale of the Elders' completes
 		q(72178, {	-- Theory in Practice: Baron von Swoopenbite
 			["name"] = "Theory in Practice: Baron von Swoopenbite",
 			["sourceQuests"] = {

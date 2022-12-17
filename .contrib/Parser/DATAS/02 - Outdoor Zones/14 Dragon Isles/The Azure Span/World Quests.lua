@@ -33,7 +33,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- ["coord"] = { XX, YY, THE_AZURE_SPAN },
 			}),
 			q(70622, {	-- Resupply Three-Falls
-				-- TODO: ["coord"] = { },
+				["coord"] = { 20.1, 27.8, THE_AZURE_SPAN },
 			}),
 			q(70625, {	-- Spellforged Creations
 				["coord"] = { 49.1, 18.6, THE_AZURE_SPAN },
