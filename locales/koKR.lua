@@ -1254,7 +1254,7 @@ for key,value in pairs({
 	[180751] = "표류하는 잔해",	-- Floating Wreckage
 	[180793] = "축제 선물",	-- Festive Gift
 	[180794] = "잔다이스 바로브의 일지",	-- Journal of Jandice Barov
-	--TODO: [180796] = "PX-238 Winter Wondervolt",	-- PX-238 Winter Wondervolt
+	[180796] = "PX-238 겨울맞이 원더볼트",	-- PX-238 Winter Wondervolt	--TODO: this was manually translated
 	[180901] = "붉은해적단 잔해",	-- Bloodsail Wreckage
 	[180918] = "현상 수배: 욕망의 탤리스",	-- Wanted: Thaelis the Hungerer
 	[181011] = "마법학자 더스크위더의 일지",	-- Magister Duskwither's Journal

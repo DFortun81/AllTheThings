@@ -1211,7 +1211,7 @@ for key,value in pairs({
 	[179485] = "Сломанная ловушка",	-- A Broken Trap
 	[179499] = "Огрский дубильный чан",	-- Ogre Tannin Basket
 	[179501] = "Тайник Уззла Наперстяка",	-- Knot Thimblejack's Cache
-	[179562] = "Ancient Heated Blade",	-- Ancient Heated Blade
+	[179562] = "Древний закаленный клинок",	-- Ancient Heated Blade
 	[179564] = "Приношения Гордока",	-- Gordok Tribute Chest
 	[179565] = "Пыльный реликварий",	-- Dusty Reliquary
 	[179697] = "Сундук с сокровищами арены",	-- Arena Treasure Chest
@@ -1245,7 +1245,7 @@ for key,value in pairs({
 	[180751] = "Обломки в воде",	-- Floating Wreckage
 	[180793] = "Подарок в разноцветной упаковке",	-- Festive Gift
 	[180794] = "Дневник Джандис Баровой",	-- Journal of Jandice Barov
-	--TODO: [180796] = "PX-238 Winter Wondervolt",	-- PX-238 Winter Wondervolt
+	[180796] = "PX-238 Чудовольт Мороза",	-- PX-238 Winter Wondervolt	--TODO: this was manually translated
 	[180901] = "Обломки кораблекрушения Кровавого Паруса",	-- Bloodsail Wreckage
 	[180918] = "Разыскивается: Таэлис Ненасытный",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Журнал магистра Блеклые Сумерки",	-- Magister Duskwither's Journal

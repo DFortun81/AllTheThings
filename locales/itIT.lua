@@ -1246,7 +1246,7 @@ for key,value in pairs({
 	[180751] = "Rottami Galleggianti",	-- Floating Wreckage
 	[180793] = "Dono Festivo",	-- Festive Gift
 	[180794] = "Journal of Jandice Barov",	-- Journal of Jandice Barov	--TODO: This was taken from wotlk Wowhead
-	--TODO: [180796] = "PX-238 Winter Wondervolt",	-- PX-238 Winter Wondervolt
+	[180796] = "Trasmutometro Invernale PX-238",	-- PX-238 Winter Wondervolt	--TODO: this was manually translated
 	[180901] = "Rottami dei Velerosse",	-- Bloodsail Wreckage
 	[180918] = "Ricercato: Thaelis il Famelico",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Diario del Magistro Lungovespro",	-- Magister Duskwither's Journal

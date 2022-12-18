@@ -1258,7 +1258,7 @@ for key,value in pairs({
 	[180751] = "Restos de un naufragio",	-- Floating Wreckage
 	[180793] = "Obsequio festivo",	-- Festive Gift
 	[180794] = "Diario de Jandice Barov",	-- Journal of Jandice Barov
-	--TODO: [180796] = "PX-238 Winter Wondervolt",	-- PX-238 Winter Wondervolt
+	[180796] = "PX-238 Maravoltio Invernal",	-- PX-238 Winter Wondervolt	--TODO: this was manually translated
 	[180901] = "Restos de los Velasangre",	-- Bloodsail Wreckage
 	[180918] = "Se busca: Thaelis el Hambriento",	-- Wanted: Thaelis the Hungerer
 	[181011] = "Diario del magister Ocaso Marchito",	-- Magister Duskwither's Journal

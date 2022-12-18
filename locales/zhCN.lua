@@ -1268,7 +1268,7 @@ for key, value in pairs({
 	[180751] = "漂浮的残骸",	-- Floating Wreckage
 	[180793] = "节日礼物",	-- Festive Gift
 	[180794] = "詹迪斯·巴罗夫的日记",	-- Journal of Jandice Barov	--TODO: This was taken from wotlk Wowhead
-	--TODO: [180796] = "PX-238 Winter Wondervolt",	-- PX-238 Winter Wondervolt
+	[180796] = "PX-238冬幕欢乐制造器",	-- PX-238 Winter Wondervolt	--TODO: this was manually translated
 	[180901] = "血帆船只残骸",	-- Bloodsail Wreckage
 	[180918] = "通缉：饥饿者泰里斯",	-- Wanted: Thaelis the Hungerer
 	[181011] = "魔导师达斯维瑟的日记",	-- Magister Duskwither's Journal	--TODO: This was taken from wotlk Wowhead
