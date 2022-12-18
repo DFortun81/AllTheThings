@@ -45,6 +45,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70662, {	-- A Bone to Pickaxe
 					["coord"] = { 27.7, 44.1, THE_AZURE_SPAN },
 				}),
+				q(70658, {	-- Artifact or Fiction
+					["coord"] = { 71.5, 22.2, THE_AZURE_SPAN },
+				}),
 				q(66070, {	-- Brightblade's Bones
 					["coord"] = { 22.0, 95.1, THE_WAKING_SHORES },
 				}),
@@ -69,7 +72,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70660),	-- Ohn'ahran Plains
 				AS
 				q(70653),	-- Cold Hard Science
-				q(70658),	-- Artifact or Fiction
 				T
 				q(70654),	-- Are You Kitten Me?
 				--]]

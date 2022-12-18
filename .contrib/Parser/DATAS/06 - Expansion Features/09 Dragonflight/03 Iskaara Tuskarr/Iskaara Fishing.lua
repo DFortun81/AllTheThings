@@ -45,29 +45,36 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 					-- RENOWN 6 --
 				q(70942, {	-- Highland Fishing
-					--["sourceQuests"] = { 72584 },	-- Setting Your Very Own Net -- TODO: CONFIRM
+					["sourceQuests"] = { 72584 },	-- Setting Your Very Own Net -- TODO: CONFIRM
 					["description"] = "Requires Renown 6.",
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 7 --
 				q(70943, {	-- Harpooning
-					--["sourceQuests"] = { 70942 },	-- Highland Fishing -- TODO: CONFIRM
+					["sourceQuests"] = { 70942 },	-- Highland Fishing -- TODO: CONFIRM
 					["description"] = "Requires Renown 7.",
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 10 --
 				q(70944, {	-- Ice Fishing
-					--["sourceQuests"] = { 70942 },	-- Highland Fishing -- TODO: CONFIRM
+					["sourceQuests"] = { 70943 },	-- Harpooning -- TODO: CONFIRM
 					["description"] = "Requires Renown 10.",
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 13 --
 				q(70945, {	-- Netting More
-					--["sourceQuests"] = { 70942 },	-- Highland Fishing -- TODO: CONFIRM
+					["sourceQuests"] = { 70944 },	-- Ice Fishing -- TODO: CONFIRM
 					["description"] = "Requires Renown 13.",
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+				}),
+					-- RENOWN 16 --
+				q(70948, {	-- Hook, Line, and Swelter!
+					["sourceQuests"] = { 70945 },	-- Netting More -- TODO: CONFIRM
+					["description"] = "Requires Renown 16.",
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
@@ -184,6 +191,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(70792),	-- Triggered after crafting Iskaaran Harpoon
 		q(72391),	-- Triggered with 'Ice Fishing' (70944)
 		q(72394),	-- Triggered with 'Fascinating Fliers' (70955)
+		q(72280),	-- Triggered with 'Hook, Line, and Swelter!' (70948)
 		q(67141),	-- Triggered after crafting Iskaaran Ice Axe after Ice Fishing (renown 10)
 		q(67139),	-- Triggered after crafting Flying Fish Bone Charm
 		--

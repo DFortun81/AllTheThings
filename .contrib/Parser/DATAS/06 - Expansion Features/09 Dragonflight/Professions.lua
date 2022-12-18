@@ -285,21 +285,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			--[[q(66382, {	-- Weekly Alchemy Knowledgepoint #1
+			--[[q(TODO, {	-- Weekly Alchemy Knowledgepoint #1
 				["name"] = "Weekly Alchemy Knowledgepoint #1",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Alchemy Knowledgepoint #2
+			q(TODO, {	-- Weekly Alchemy Knowledgepoint #2
 				["name"] = "Weekly Alchemy Knowledgepoint #2",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Alchemy Knowledgepoint #3
+			q(TODO, {	-- Weekly Alchemy Knowledgepoint #3
 				["name"] = "Weekly Alchemy Knowledgepoint #3",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
@@ -632,7 +632,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 192165 },	-- Winnie Fingerspring <Engineering Trainer>
 				["coord"] = { 43.0, 66.5, THE_WAKING_SHORES },
 			}),
-			q(70027, {	-- Artisan's Supply: Quality-Assured Optics
+			q(70030, {	-- Artisan's Supply: Quality-Assured Optics
 				["sourceQuests"] = {
 					72242,	-- Dragon Isles Engineering
 					70359,	-- Dragon Isles Engineering
@@ -676,7 +676,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[q(66382, {	-- Weekly Engineering Knowledgepoint #3
+			--[[q(TODO, {	-- Weekly Engineering Knowledgepoint #3
 				["name"] = "Weekly Engineering Knowledgepoint #3",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
@@ -879,21 +879,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Inscription Knowledgepoint #1
+			q(TODO, {	-- Weekly Inscription Knowledgepoint #1
 				["name"] = "Weekly Inscription Knowledgepoint #1",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Inscription Knowledgepoint #2
+			q(TODO, {	-- Weekly Inscription Knowledgepoint #2
 				["name"] = "Weekly Inscription Knowledgepoint #2",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Inscription Knowledgepoint #3
+			q(TODO, {	-- Weekly Inscription Knowledgepoint #3
 				["name"] = "Weekly Inscription Knowledgepoint #3",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
@@ -993,14 +993,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
 			--[[
-			q(66382, {	-- Weekly Jewelcrafting Knowledgepoint #2
+			q(TODO, {	-- Weekly Jewelcrafting Knowledgepoint #2
 				["name"] = "Weekly Jewelcrafting Knowledgepoint #2",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Jewelcrafting Knowledgepoint #3
+			q(TODO, {	-- Weekly Jewelcrafting Knowledgepoint #3
 				["name"] = "Weekly Jewelcrafting Knowledgepoint #3",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
@@ -1092,14 +1092,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
 			--[[
-			q(66382, {	-- Weekly Leatherworking Knowledgepoint #2
+			q(TODO, {	-- Weekly Leatherworking Knowledgepoint #2
 				["name"] = "Weekly Leatherworking Knowledgepoint #2",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Leatherworking Knowledgepoint #3
+			q(TODO, {	-- Weekly Leatherworking Knowledgepoint #3
 				["name"] = "Weekly Leatherworking Knowledgepoint #3",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
@@ -1172,14 +1172,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			-- 	["collectible"] = true,	-- Dont remove until we have proper tracking
 			-- }),
 			--[[
-			q(66382, {	-- Weekly Mining Knowledgepoint #2
+			q(TODO, {	-- Weekly Mining Knowledgepoint #2
 				["name"] = "Weekly Mining Knowledgepoint #2",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Mining Knowledgepoint #3
+			q(TODO, {	-- Weekly Mining Knowledgepoint #3
 				["name"] = "Weekly Mining Knowledgepoint #3",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
@@ -1249,7 +1249,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
 			--[[ Missing quest ID
-			q(74115, {		-- Inscription-Order: Skinning
+			q(TODO, {		-- Inscription-Order: Skinning
 				["name"] = "Inscription-Order: Skinning",
 				["provider"] = { "i", 201023 },		-- Draconic Treatise on Skinning
 				["timeline"] = { ADDED_DF_REL },
@@ -1258,21 +1258,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
 			--]]
-			--[[q(66382, {	-- Weekly Skinning Knowledgepoint #1
+			--[[q(TODO, {	-- Weekly Skinning Knowledgepoint #1
 				["name"] = "Weekly Skinning Knowledgepoint #1",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Skinning Knowledgepoint #2
+			q(TODO, {	-- Weekly Skinning Knowledgepoint #2
 				["name"] = "Weekly Skinning Knowledgepoint #2",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Skinning Knowledgepoint #3
+			q(TODO, {	-- Weekly Skinning Knowledgepoint #3
 				["name"] = "Weekly Skinning Knowledgepoint #3",
 				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
 				["timeline"] = { ADDED_DF_REL },
@@ -1324,13 +1324,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 27.9,45.6, VALDRAKKEN },
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			q(74115, {	-- Inscription-Order: Tailoring
-				["name"] = "Inscription-Order: Tailoring",
-				["description"] = "Requires a crafting order from inscription.",
-				["provider"] = { "i", 194698 },	-- Draconic Treatise on Tailoring
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
+			-- q(TODO, {	-- Inscription-Order: Tailoring
+			-- 	["name"] = "Inscription-Order: Tailoring",
+			-- 	["description"] = "Requires a crafting order from inscription.",
+			-- 	["provider"] = { "i", 194698 },	-- Draconic Treatise on Tailoring
+			-- 	["isWeekly"] = true,
+			-- 	["collectible"] = true,	-- Dont remove until we have proper tracking
+			-- }),
 			q(70194, {	-- Specialized Secrets: Tailoring
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin

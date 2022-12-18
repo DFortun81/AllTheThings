@@ -293,6 +293,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 				-- RENOWN 19 --
+			q(66620, {
+				["description"] = "Requires Renown 19. Spawns Anywhere on Dragon Isles.",
+				["provider"] = { "n", 197478 },	-- Herald Flaps
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+			}),
+			
 				-- RENOWN 20 --
 			q(70891, {	-- Fitting In
 				["qg"] = 195782,	-- Giera
@@ -317,6 +323,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(72682),	-- triggered with 'Feeling Freedom' (70887)
 		q(72685),	-- triggered with 'Rubbing Shoulders With The Best' (70888)
 		q(72403),	-- triggered when reaching renown 12 with Valdrakken Accord
+		q(72404),	-- triggered when reaching renown 19 with Valdrakken Accord
 		q(72688),	-- triggered with 'All of Dragons' (68794)
 		q(72776),	-- triggered with 'All of Dragons' (68794)
 		q(70974),	-- triggers right after 'Hard Lock Life' (67079)

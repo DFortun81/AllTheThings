@@ -6680,7 +6680,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66034),	--
 			q(66043),	--
 			q(66045),	--
-			q(66046),	--
 			q(66051),	--
 			q(66052),	--
 			q(66053),	--
@@ -6765,7 +6764,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66356),	--
 			q(66357),	--
 			q(66358),	--
-			q(66359),	--
 			q(66365),	--
 			q(66366),	--
 			q(66367),	--
@@ -6776,12 +6774,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66374),	--
 			q(66375),	--
 			q(66376),	--
-			q(66379),	--
-			q(66381),	--
-			q(66382),	--
 			q(66384),	--
 			q(66385),	--
-			q(66387),	--
 			q(66388),	--
 			q(66389),	--
 			q(66403),	--
@@ -6967,7 +6961,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66798),	--
 			q(66800),	--
 			q(66801),	--
-			q(66802),	--
 			q(66803),	--
 			q(66804),	--
 			q(66806),	--
@@ -7085,7 +7078,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69839),	--
 			q(69840),	--
 			q(69841),	--
-			q(69848),	--
 			q(69849),	--
 			q(69853),	--
 			q(69854),	--
@@ -7122,17 +7114,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69947),	--
 			q(69948),	--
 			q(69952),	--
-			q(69954),	--
-			q(69955),	--
 			q(69956),	--
-			q(69959),	--
 			q(69960),	--
-			q(69961),	--
-			q(69969),	--
 			q(69970),	--
-			q(69971),	--
 			q(69972),	--
-			q(69973),	--
 			q(69975),	--
 			q(69977),	--
 			q(69978),	--
@@ -7144,7 +7129,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69996),	--
 			q(69997),	--
 			q(69998),	--
-			q(69999),	--
 			q(70008),	--
 			q(70010),	--
 			q(70011),	--
@@ -7166,9 +7150,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70071),	--
 			q(70072),	--
 			q(70075),	--
-			q(70094),	--
 			q(70095),	--
-			q(70097),	--
 			q(70098),	--
 			q(70099),	--
 			q(70101),	--
@@ -7202,7 +7184,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70150),	--
 			q(70151),	--
 			-- 10.0.0.44707
-			q(69949),	--
 			q(70153),	--
 			q(70165),	--
 			q(70177),	--
@@ -7221,16 +7202,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70230),	--
 			q(70232),	--
 			q(70246),	--
-			q(70247),	--
 			q(70248),	--
 			q(70249),	--
-			q(70250),	--
-			q(70251),	--
-			q(70252),	--
-			q(70253),	--
-			q(70254),	--
-			q(70255),	--
-			q(70256),	--
 			q(70257),	--
 			q(70261),	--
 			q(70263),	--
@@ -7362,13 +7335,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70718),	--
 			q(70733),	--
 			q(70749),	--
-			q(70755),	--
 			q(70756),	--
 			q(70757),	--
 			q(70758),	--
 			q(70759),	--
 			-- 10.0.0.45141
-			q(67015),	--
 			q(70773),	--
 			q(70774),	--
 			q(70775),	--
@@ -7840,7 +7811,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72248),	--
 			q(72255),	--
 			q(72257),	--
-			q(72264),	--
 			-- 10.0.2.45698
 			q(72323),	--
 			q(72324),	--
@@ -7883,7 +7853,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72396),	--
 			q(72398),	--
 			q(72402),	--
-			q(72404),	--
 			q(72407),	--
 			q(72410),	--
 			q(72423),	--
@@ -7917,7 +7886,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72580),	--
 			q(72583),	--
 			-- 10.0.2.46259
-			q(72612),	--
 			q(72623),	--
 			q(72628),	--
 			q(72631),	--
@@ -7940,7 +7908,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72683),	--
 			q(72684),	--
 			q(72687),	--
-			q(72689),	--
 			q(72693),	--
 			q(72695),	--
 			q(72696),	--
@@ -7985,7 +7952,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72774),	--
 			q(72775),	--
 			q(72777),	--
-			q(72779),	--
 			q(72780),	--
 			q(72804),	--
 			q(72808),	--
@@ -7995,12 +7961,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72817),	--
 			q(72819),	--
 			q(72822),	--
-			q(72823),	--
-			q(72824),	--
-			q(72825),	--
-			q(72826),	--
-			q(72827),	--
-			q(72828),	--
 			q(72837),	--
 			q(72875),	--
 			q(72892),	--

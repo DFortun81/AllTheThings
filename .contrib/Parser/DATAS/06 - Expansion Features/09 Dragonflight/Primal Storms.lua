@@ -142,6 +142,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(69951, {	-- Bouldron
 					["qg"] = 193644,	-- Bouldron
 				}),
+				q(69955, {	-- Emblazion
+					["qg"] = 193650,	-- Emblazion
+				}),
 				q(69961, {	-- Frozion
 					["qg"] = 193655,	-- Frozion
 				}),
@@ -157,6 +160,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						193678,	-- Fieraan <Second Iceblade>
 						193679,	-- Leerain <Third Iceblade>
 					},
+				}),
+				q(69954, {	-- Infernum
+					["qg"] = 193648,	-- Infernum
 				}),
 				q(69974, {	-- Pipspark Thundersnap
 					["qg"] = 193684,	-- Pipspark Thundersnap
@@ -278,7 +284,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				n(193648, {	-- Infernum
 					["coord"] = { 58.8, 68.4, THE_AZURE_SPAN },
-					-- ["questID"] = ,
+					["questID"] = 74005,
 					["g"] = {
 						i(200150),	-- Infernum's Furnace
 					},

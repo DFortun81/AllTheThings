@@ -106,7 +106,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(66409, {	-- Pressing Matters
 				["description"] = "Requires Renown 11.",
-				["sourceQuests"] = { 68840 },	-- Sudden Isolation
+				["sourceQuests"] = { 68640 },	-- Sudden Isolation
 				["provider"] = { "n", 188301 },	-- Guard Hakota
 				["coord"] = { 55.1, 38.3, THE_WAKING_SHORES },
 			}),
@@ -275,6 +275,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 201471 },	-- Story of a Spectacular Victory
 				["isWeekly"] = true,
 			}),
+
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem

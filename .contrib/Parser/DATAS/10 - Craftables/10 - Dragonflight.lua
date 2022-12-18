@@ -2121,12 +2121,12 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 }))));
 
 root("HiddenQuestTriggers", {
+	-- TODO: likely many of these to be added as actual tracking under ExpansionFeatures > DF > Professions
 	tier(DF_TIER, {
 		prof(ALCHEMY, {
 			q(71948),	-- Maxxed Out Transmutation
 		}),
 		prof(HERBALISM, {
-			q(71857),	-- First Dreambloom Petal of the week
 			q(71969),	-- First Lush Hochenblume Harvest
 			q(71970),	-- First Writhebark Harvest
 			q(71971),	-- First Lush Writhebark Harvest
@@ -2526,7 +2526,6 @@ root("HiddenQuestTriggers", {
 		}),
 		--]]
 		prof(SKINNING, {
-			q(70381),	-- Curious Hide Scraps #1
 			q(70383),	-- Curious Hide Scraps #2
 			q(70384),	-- Curious Hide Scraps #3
 			q(70389),	-- Large Sample of Curious Hide
