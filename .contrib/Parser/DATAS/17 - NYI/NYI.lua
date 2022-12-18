@@ -569,49 +569,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191194),	-- Radiant Metallic Threading
 			---
 		}),
-		filter(MOUNTS, {
-			i(191838),	-- [PH] Blue Lava Mammoth
-			i(192601),	-- Loyal Magmammoth
-			i(192748),	-- [PH] Moose Bull Brown
-			i(192751),	-- [PH] Moose Bull Dark
-			i(192764),	-- Verdant Skitterfly
-			i(192765),	-- [PH] Dragonfly Yellow
-			i(192766),	-- [PH] Dragonfly Orange
-			i(192770),	-- [PH] Moose Bull Black
-			i(192771),	-- [PH] Water Salamander Blue
-			i(192772),	-- [PH] Water Salamander Green
-			i(192773),	-- [PH] Water Salamander Orange
-			i(192774),	-- [PH] Water Salamander Pink
-			i(192778),	-- [PH] Lava Slug Orange
-			i(192779),	-- Scorchpath
-			i(192780),	-- [PH] Lava Snail Orange
-			i(192781),	-- [PH] Lava Slug Blue
-			i(192782),	-- [PH] Lava Slug Yellow
-			i(192785),	-- [PH] Lava Snail Blue
-			i(192786),	-- [PH] Lava Snail Yellow
-			i(192787),	-- [PH] Mammoth V2 Dark
-			i(192788),	-- [PH] Mammoth V2 Blue
-			i(192789),	-- [PH] Mammoth V2 Gray
-			i(192790),	-- [PH] Mammoth V2 Green
-			i(192792),	-- PH Thunder Lizard Green
-			i(192793),	-- PH Thunder Lizard Black
-			i(192794),	-- PH Thunder Lizard Blue
-			i(192796),	-- PH Thunder Lizard Light
-			i(192800),	-- Skyskin Hornstrider
-			i(192801),	-- PH Primal Tallstrider White
-			i(192802),	-- PH Primal Tallstrider Black
-			i(192803),	-- PH Primal Tallstrider Red
-			i(192804),	-- Restless Hornstrider
-			i(192807),	-- PH Lava Mammoth Yellow
-			i(192111),	-- Renewed Proto-Drake: Red Scales
-			i(192523),	-- Renewed Proto-Drake: Green Scales
-			i(194722),	-- Carrier Yeti
-			i(198822),	-- [PH] Sepia Wind Eagle
-			i(198823),	-- [PH] Brown Wind Eagle
-			i(198824),	-- [PH] Dark Wind Eagle
-			i(198870),	-- Otto
-			i(201440),	-- Reins of the Liberated Slyvern
-		}),
 		n(PROFESSIONS, {
 			i(193905),	-- Iskaaran Trading Ledger
 			i(193907),	-- Chipped Tyrstone
@@ -862,6 +819,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		--
 		}),
 		n(DRAKEWATCHER_MANUSCRIPTS, {
+			i(192111),	-- Renewed Proto-Drake: Red Scales
+			i(192523),	-- Renewed Proto-Drake: Green Scales
+
 			i(196961),	-- Cliffside Wylderdrake: Armor
 			i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor
 			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
@@ -2108,42 +2068,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193063),	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
 			i(193862),	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
 			i(191929),	-- zzOld - [PH] White Flying Squirrel (REUSE)
-		}),
-		filter(MOUNTS, {
-			i(194722),	-- Carrier Yeti
-			i(192766),	-- [PH] Dragonfly Orange
-			i(192764),	-- [PH] Dragonfly Green
-			i(192765),	-- [PH] Dragonfly Yellow
-			i(192770),	-- [PH] Moose Bull Black
-			i(192780),	-- [PH] Lava Snail Orange
-			i(192778),	-- [PH] Lava Slug Orange
-			i(192787),	-- [PH] Mammoth V2 Dark
-			i(192792),	-- PH Thunder Lizard Green
-			i(192800),	-- PH Primal Tallstrider Blue
-			i(192771),	-- [PH] Water Salamander Blue
-			i(191838),	-- [PH] Blue Lava Mammoth
-			i(192748),	-- [PH] Moose Bull Brown
-			i(192601),	-- [PH] Orange Lava Mammoth
-			i(192751),	-- [PH] Moose Bull Dark
-			i(192772),	-- [PH] Water Salamander Green
-			i(192773),	-- [PH] Water Salamander Orange
-			i(192774),	-- [PH] Water Salamander Pink
-			i(192779),	-- [PH] Lava Slug Red
-			i(192781),	-- [PH] Lava Slug Blue
-			i(192782),	-- [PH] Lava Slug Yellow
-			i(192785),	-- [PH] Lava Snail Blue
-			i(192786),	-- [PH] Lava Snail Yellow
-			i(192789, 374172);	-- [PH] Mammoth V2 Gray
-			i(192788, 374181);	-- [PH] Mammoth V2 Blue
-			i(192790, 374194);	-- [PH] Mammoth V2 Green
-			i(192793, 374200);	-- PH Thunder Lizard Black
-			i(192794, 374201);	-- PH Thunder Lizard Blue
-			i(192796, 374204);	-- PH Thunder Lizard Light
-			i(192801, 374255);	-- PH Primal Tallstrider White
-			i(192802, 374258);	-- PH Primal Tallstrider Black
-			i(192803, 374259);	-- PH Primal Tallstrider Red
-			i(192804, 374263);	-- PH Primal Tallstrider Green
-			i(192807, 374278);	-- PH Lava Mammoth Yellow
 		}),
 		--]]
 	}),

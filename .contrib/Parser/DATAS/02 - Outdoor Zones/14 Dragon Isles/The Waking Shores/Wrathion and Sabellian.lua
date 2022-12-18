@@ -425,7 +425,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								{ "i", 202173, 5 },		-- 5x Magmote
 							},
 						}),
-						i(192786, {	-- Slumbering Worldsnail Shell
+						i(192786, {	-- Scrappy Worldsnail (MOUNT!)
 							["cost"] = {
 								{ "i", 202173, 1000 },		-- 1000x Magmote
 							},
@@ -565,6 +565,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								{ "i", AWAKENED_EARTH, 1 },
 							},
 						}),
+						i(201840),	-- Sturdy Obsidian Glasses
 					},
 				}),
 				n(188623, {	-- Samia Inkling
@@ -704,6 +705,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								{ "i", AWAKENED_EARTH, 1 },
 							},
 						}),
+						i(201839),	-- Netherforged Lavaproof Boots
 					},
 				}),
 			}),

@@ -411,7 +411,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 								194087,	-- Ohuna Companion Color: Red
 							}},
 							["g"] = {
-								i(192791),	-- Plainswalker Bearer (Mount!)
+								i(192791),	-- Plainswalker Bearer (MOUNT!)
 							},
 						}),
 					},

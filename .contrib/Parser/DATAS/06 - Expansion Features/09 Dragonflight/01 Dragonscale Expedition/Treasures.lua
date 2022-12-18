@@ -83,6 +83,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 				i(191384),	-- Aerated Mana Potion +
 				i(191393),	-- Potion of the Hushed Zephyr +
+
+				i(192764),	-- Verdant Skitterfly (MOUNT!)
 				currency(2003),	-- Dragon Isles Supplies
 				-- Objects
 				o(376587, {	-- Expedition Scout's Pack

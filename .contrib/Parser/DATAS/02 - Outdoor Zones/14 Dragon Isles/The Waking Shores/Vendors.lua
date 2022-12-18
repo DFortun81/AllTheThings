@@ -41,10 +41,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							{ "i", 199219, 3 },	-- 3xElement-Infused Blood
 						},
 					}),
-					i(201837, {	-- Loyal Magmammoth
+					i(201837, {	-- Magmammoth Harness
+						["description"] = "Use it on a Tame Magmammoth.",
 						["cost"] = {
 							{ "i", 201839, 1 },	-- 1xNetherforged Lavaproof Boots
 							{ "i", 201840, 1 },	-- 1xSturdy Obsidian Glasses
+						},
+						["g"] = {
+							i(192601),	-- Loyal Magmammoth (MOUNT!)
 						},
 					}),
 				},

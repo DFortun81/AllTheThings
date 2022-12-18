@@ -67,7 +67,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 5.3.0.16758" },
 		}),
 		--Probably later in the Shop
-		--[[mount(315132, {	-- Gargantuan Grrloc
+		--[[mount(315132, {	-- Gargantuan Grrloc (MOUNT!)
 			["timeline"] = { "added 10.0.0.46366" },
 		}),--]]
 		i(153540, {	-- Gilded Ravasaur (MOUNT!)
@@ -130,7 +130,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 8.2.0.30948" },
 		}),
 		--Probably later in the Shop
-		--[[mount(381529, {	-- Telix the Stormhorn
+		--[[mount(381529, {	-- Telix the Stormhorn (MOUNT!)
 			["timeline"] = { "added 10.0.0.46366" },
 		}),--]]
 		i(160589, {	-- The Dreadwake (MOUNT!)

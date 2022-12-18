@@ -109,6 +109,7 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 },
 			["description"] = "Drops from Decaying World Creatures.",
 		}),
 		i(194267),	-- Pattern: Shimmering Embroidery Thread (RECIPE!)
+		i(194486),	-- Plans: Shield of the Hearth (RECIPE!)
 		i(191580, {	-- Recipe: Transmute: Awakened Earth (RECIPE!)
 			["description"] = "Drops from Earthen World Creatures.",
 		}),

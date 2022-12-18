@@ -1014,7 +1014,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			q(72512, {	-- A Whispering Breeze
-				["description"] = "Require Renown 9 and Finish Initiate Questline. Speak to Godoloto to get the clues then gather the cost objects.",
+				["description"] = "Require Renown 25 and Finish Initiate Questline. Speak to Godoloto to get the clues then gather the cost objects.",
 				["sourceQuests"] = { 66676 },	-- Sneaking In
 				["provider"] = { "n", 190022 },	-- Godoloto
 				["coord"] = { 56.5, 73.3, OHNAHRAN_PLAINS },
