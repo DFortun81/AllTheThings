@@ -1284,7 +1284,7 @@ for key, value in pairs({
 	[181649] = "羽须的日记",	-- Featherbeard's Journal
 	[181672] = "稻草人",	-- Wickerman Effigy	--TODO: This was taken from wotlk Wowhead
 	[181681] = "艾露恩的圣杯",	-- Chalice of Elune
-	[181687] = "木材堆",	-- Lumber Pile	--TODO: This was taken from wotlk Wowhead
+	[181687] = "木材堆",	-- Warsong Lumber Pile	--TODO: This was taken from wotlk Wowhead
 	[181690] = "肥沃的土壤",	-- Fertile Dirt Mound
 	[181698] = "虚空石",	-- Voidstone	--TODO: This was taken from wotlk Wowhead
 	[181748] = "血水晶",	-- Blood Crystal	--TODO: This was taken from wotlk Wowhead
