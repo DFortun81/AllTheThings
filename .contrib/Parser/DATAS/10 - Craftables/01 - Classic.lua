@@ -1459,6 +1459,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 
 			i(89868, {	-- Glyph of the Cheetah
 				["questID"] = 62677,
+				["timeline"] = { "added 5.0.3.15882" },
 				["classes"] = { DRUID },
 			}),
 
