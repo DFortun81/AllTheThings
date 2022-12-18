@@ -168,6 +168,52 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["qg"] = 193674,	-- Voraazka
 				}),
 			}),
+			n(SPECIAL, {
+				i(201296, {	-- Docile Airy Soul
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["cost"] = {
+						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
+						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
+					},
+					["g"] = {
+						i(193921),	-- Airy Soul
+						i(201262),	-- Gale Spirit (PET!)
+					},
+				}),
+				i(201297, {	-- Docile Earthen Soul
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["cost"] = {
+						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
+						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
+					},
+					["g"] = {
+						i(193920),	-- Earthen Soul
+						i(201260),	-- Dust Spirit (PET!)
+					},
+				}),
+				i(201298, {	-- Docile Fiery Soul
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["cost"] = {
+						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
+						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
+					},
+					["g"] = {
+						i(193362),	-- Fiery Soul
+						i(201261),	-- Blaze Spirit (PET!)
+					},
+				}),
+				i(201299, {	-- Docile Frosty Soul
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["cost"] = {
+						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
+						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
+					},
+					["g"] = {
+						i(193919),	-- Frosty Soul
+						i(201265),	-- Tide Spirit (PET!)
+					},
+				}),
+			}),
 			n(RARES, sharedData({
 				["isDaily"] = true,
 			},{
@@ -316,6 +362,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			n(REWARDS, {
 				i(194641),	-- Design: Elemental Lariat (RECIPE!)
+				i(200183),	-- Echo of the Cave (PET!)
+				i(200260),	-- Echo of the Depths (PET!)
+				i(200263),	-- Echo of the Heights (PET!)
+				i(200255),	-- Echo of the Inferno (PET!)
 				i(200675),	-- Elemental Overflow Cluster
 				i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
 				i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)

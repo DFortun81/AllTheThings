@@ -493,17 +493,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193620),	-- Time-Lost Slyvern
 			i(193908),	-- Sapphire Crystalspine
 			i(198622),	-- Spyragos
-			i(200183),	-- Echo of the Cave
-			i(200255),	-- Echo of the Inferno
-			i(200260),	-- Echo of the Depths
-			i(200263),	-- Echo of the Heights
+
 			i(200276),	-- Ohuna Companion
 			i(200290),	-- Bakar Companion
 			i(200874),	-- Lady Feathersworth
-			i(201260),	-- Dust Spirit
-			i(201261),	-- Blaze Spirit
-			i(201262),	-- Gale Spirit
-			i(201265),	-- Tide Spirit
+
 			i(201838),	-- Snowclaw Cub
 			i(202085),	-- Bugbiter Tortoise
 		}),

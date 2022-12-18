@@ -20,11 +20,6 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 	-- Crafting
 	i(191529),	-- Illustrious Insight
 	i(191526),	-- Lesser Illustrious Insight
-	-- Souls
-	i(193921),	-- Airy Soul
-	i(193920),	-- Earthen Soul
-	i(193362),	-- Fiery Soul
-	i(193919),	-- Icy Soul
 	prof(ALCHEMY, {
 		spell(370747, {	-- Advanced Phial Experimentation
 			r(370472),	-- Aerated Phial of Deftness
