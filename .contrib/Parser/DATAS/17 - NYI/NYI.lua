@@ -1653,7 +1653,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201417),	-- Curding of Stratholme
 			i(201418),	-- Orb of the Obsidian Scale
 			i(201419),	-- Apexis Asiago
-			i(201422),	-- Flash Frozen Meat
 			i(201423),	-- Hallowed Helm
 			i(201469),	-- Emerald Green Apple
 			i(201697),	-- Coldarra Coldbrew
