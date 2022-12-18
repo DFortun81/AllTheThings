@@ -188,9 +188,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 53.9, 38.1, THE_WAKING_SHORES },
 				["g"] = {
 					i(201783),	-- Tutaqan's Commendation
-					crit(4, {	-- The Chieftain's Duty
-						["achievementID"] = 16808,	-- Friend of the Dragon Isles
-					}),
 				},
 			}),
 				-- RENOWN 12 --

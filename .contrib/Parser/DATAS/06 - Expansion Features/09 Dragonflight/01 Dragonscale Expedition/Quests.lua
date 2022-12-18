@@ -235,11 +235,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					{ 40.0, 67.5, OHNAHRAN_PLAINS },
 					{ 53.9, 50.7, THE_AZURE_SPAN },
 				},
-				["g"] = {
-					crit(1, {	-- A Mystery, Sealed
-						["achievementID"] = 16808,	-- Friend of the Dragon Isles
-					}),
-				},
 			}),
 				-- RENOWN 14 --
 			q(70819, {	-- Renowned Explorer's Armor

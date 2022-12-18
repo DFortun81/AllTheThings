@@ -65,12 +65,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },	-- Eaglewatch Outpost?
 					["isDaily"] = true,
 				}),
-				q(70299, {	-- Draconic Defensive
-					-- ["sourceQuests"] = {  },
-					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
-					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },	-- Eaglewatch Outpost?
-					["isDaily"] = true,
-				}),
 				q(71241, {	-- Duck, Duck, Trap
 					--["sourceQuests"] = {  },
 					["provider"] = { "n", 185870 },	-- Huntmaster Malkik

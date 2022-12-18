@@ -82,7 +82,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				16301,	-- Treasures of Thaldraszus
 			}},
 		}),
-		ach(16808),	-- Friend of the Dragon Isles
+		ach(16808, {	-- Friend of the Dragon Isles
+			crit(1, {	-- A Mystery, Sealed
+				["_quests"] = { 66128 },	-- Next Steps
+			}),
+			crit(2, {	-- In the Halls of Titans
+				-- ["_quests"] = { TODO },	-- QUESTNAME
+			}),
+			crit(3, {	-- Garden of Secrets
+				["_quests"] = { 66191 },	-- And Yet So Far
+			}),
+			crit(4, {	-- The Dreamer
+				["_quests"] = { 66402 },	-- Like Mother, Like Daughter
+			}),
+			crit(5, {	-- The Chieftain's Duty
+				["_quests"] = { 66444 },	-- While the Iron Is Hot
+			}),
+			crit(6, {	-- The Silver Purpose
+				["_quests"] = { 67084 },	-- The Silver Purpose
+			}),
+		}),
 		-- TODO: NOT COMPLETED YET!!
 		ach(16323),	-- Fragments of History
 		ach(16446),	-- That's Pretty Neat!

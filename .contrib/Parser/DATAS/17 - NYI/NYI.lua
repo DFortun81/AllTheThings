@@ -960,7 +960,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201326),	-- Draconic Satchel of Cooperation
 			i(201355),	-- Eternal Equipment Chest
 			i(201362),	-- Fated Equipment Chest
-			i(201439),	-- Renewed Dream
 			i(201757),	-- Plundered Supplies
 			i(201836),	-- Valdrakken Token of Merit
 			i(201841),	-- Ensemble: Cosmic Aspirant's Plate Armor
@@ -1595,7 +1594,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201418),	-- Orb of the Obsidian Scale
 			i(201419),	-- Apexis Asiago
 			i(201423),	-- Hallowed Helm
-			i(201469),	-- Emerald Green Apple
 			i(201697),	-- Coldarra Coldbrew
 			i(201698),	-- Black Dragon Red Eye
 			i(201721),	-- Life Fire Latte

@@ -174,9 +174,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 60.5, 58.6, THALDRASZUS },
 				["g"] = {
 					i(201781),	-- Memory of Tyr
-					crit(5, {	-- The Silver Purpose
-						["achievementID"] = 16808,	-- Friend of the Dragon Isles
-					}),
 				},
 			}),
 				-- RENOWN 13 --
@@ -293,12 +290,199 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 				-- RENOWN 19 --
-			q(66620, {
+			q(66620, {	-- Emerald Summons
 				["description"] = "Requires Renown 19. Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197478 },	-- Herald Flaps
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
-			
+			q(66178, {	-- A Day in the Groves
+				["sourceQuests"] = {
+					66620,	-- Emerald Summons
+				},
+				["qg"] = 186955,	-- Merithra
+				["coord"] = { 29.7, 60.0, OHNAHRAN_PLAINS },
+			}),
+			q(66179, {	-- Seeds for the Future
+				["sourceQuests"] = {
+					66178,	-- A Day in the Groves
+				},
+				["qg"] = 187525,	-- Merithra
+				["coord"] = { 33.2, 51.7, OHNAHRAN_PLAINS },
+			}),
+			q(66180, {	-- Wake the Ancients
+				["sourceQuests"] = {
+					66178,	-- A Day in the Groves
+				},
+				["qg"] = 187525,	-- Merithra
+				["coord"] = { 33.2, 51.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(192555),	-- Borrowed Breath
+				},
+			}),
+			q(66182, {	-- Gerithus's Reseach
+				["sourceQuests"] = {
+					66179,	-- Seeds for the Future
+					66180,	-- Wake the Ancients
+				},
+				["qg"] = 187525,	-- Merithra
+				["coord"] = { 33.2, 51.7, OHNAHRAN_PLAINS },
+			}),
+			q(66183, {	-- Emerald Tears
+				["sourceQuests"] = {
+					66182,	-- Gerithus's Reseach
+				},
+				["qg"] = 189849,	-- Gerithus
+				["coord"] = { 28.4, 48.6, OHNAHRAN_PLAINS },
+			}),
+			q(66181, {	-- A Frenzied Defender
+				["sourceQuests"] = {
+					66182,	-- Gerithus's Reseach
+				},
+				["qg"] = 189850,	-- Rymek
+				["coord"] = { 28.4, 48.7, OHNAHRAN_PLAINS },
+			}),
+			q(66184, {	-- Anchors to Life
+				["sourceQuests"] = {
+					66183,	-- Emerald Tears
+					66181,	-- A Frenzied Defender
+				},
+				["qg"] = 189849,	-- Gerithus
+				["coord"] = { 28.3, 48.6, OHNAHRAN_PLAINS },
+			}),
+			q(66393, {	-- To Somnikus
+				["sourceQuests"] = {
+					66184,	-- Anchors to Life
+				},
+				["qg"] = 187509,	-- Merithra
+				["coord"] = { 28.3, 48.6, OHNAHRAN_PLAINS },
+			}),
+			q(66395, {	-- The Chittering Rocks
+				["sourceQuests"] = {
+					66393,	-- To Somnikus
+				},
+				["qg"] = 186469,	-- Somnikus
+				["coord"] = { 21.9, 50.9, OHNAHRAN_PLAINS },
+			}),
+			q(66396, {	-- Guarded Appreciation
+				["sourceQuests"] = {
+					66393,	-- To Somnikus
+				},
+				["qg"] = 189857,	-- Rymek
+				["coord"] = { 22.0, 50.8, OHNAHRAN_PLAINS },
+			}),
+			q(66190, {	-- So Close
+				["sourceQuests"] = {
+					66395,	-- The Chittering Rocks
+					66396,	-- Guarded Appreciation
+				},
+				["qg"] = 189857,	-- Rymek
+				["coord"] = { 22.0, 50.8, OHNAHRAN_PLAINS },
+			}),
+			q(66191, {	-- And Yet So Far
+				["sourceQuests"] = {
+					66190,	-- So Close
+				},
+				["qg"] = 187561,	-- Merithra
+				["coord"] = { 22.0, 49.1, OHNAHRAN_PLAINS },
+			}),
+			q(66392, {	-- Rallying Nature's Allies
+				["sourceQuests"] = {
+					66191,	-- And Yet So Far
+				},
+				["qg"] = 187561,	-- Merithra
+				["coord"] = { 22.0, 49.2, OHNAHRAN_PLAINS },
+			}),
+			q(66185, {	-- Across the Weald
+				["sourceQuests"] = {
+					66392,	-- Rallying Nature's Allies
+				},
+				["qg"] = 187594,	-- Somnikus
+				["coord"] = { 28.4, 57.9, OHNAHRAN_PLAINS },
+			}),
+			q(66186, {	-- The Price
+				["sourceQuests"] = {
+					66185,	-- Across the Weald
+				},
+				["qg"] = 187634,	-- Ysera
+				["coord"] = { 45.8, 60.9, ARDENWEALD },
+			}),
+			q(66188, {	-- Storm's Rest
+				["sourceQuests"] = {
+					66186,	-- The Price
+				},
+				["qg"] = 187636,	-- Malfurion Stormrage
+				["coord"] = { 45.8, 60.8, ARDENWEALD },
+			}),
+			q(66189, {	-- Step Into the Life
+				["sourceQuests"] = {
+					66188,	-- Storm's Rest
+				},
+				["qg"] = 188348,	-- Ysera
+				["coord"] = { 45.2, 63.6, ARDENWEALD },
+				["maps"] = { 2084 },	-- The Emerald Dreamway
+			}),
+			q(66394, {	-- Thin the Veil
+				["sourceQuests"] = {
+					66189,	-- Step Into the Life
+				},
+				["qg"] = 187646,	-- Ysera
+				["coord"] = { 18.7, 51.8, OHNAHRAN_PLAINS },
+			}),
+			q(66397, {	-- Our Full Strength
+				["sourceQuests"] = {
+					66189,	-- Step Into the Life
+				},
+				["qg"] = 187646,	-- Ysera
+				["coord"] = { 18.7, 51.8, OHNAHRAN_PLAINS },
+			}),
+			q(66635, {	-- Reunited, Once Again
+				["sourceQuests"] = {
+					66394,	-- Thin the Veil
+					66397,	-- Our Full Strength
+				},
+				["qg"] = 187646,	-- Ysera
+				["coord"] = { 18.7, 51.9, OHNAHRAN_PLAINS },
+			}),
+			q(66398, {	-- The Emerald Dragonflight
+				["sourceQuests"] = {
+					66635,	-- Reunited, Once Again
+				},
+				["qg"] = 187660,	-- Merithra
+				["coord"] = { 18.8, 51.1, OHNAHRAN_PLAINS },
+			}),
+			q(66399, {	-- We'll Cross the Bridge
+				["sourceQuests"] = {
+					66398,	-- The Emerald Dragonflight
+				},
+				["qg"] = 188787,	-- Gerithus
+				["coord"] = { 21.9, 76.0, OHNAHRAN_PLAINS },
+				["g"] = {
+				},
+			}),
+			q(66400, {	-- Winter's Fall
+				["sourceQuests"] = {
+					66399,	-- We'll Cross the Bridge
+				},
+				["qg"] = 188840,	-- Somnikus
+				["coord"] = { 20.8, 79.7, OHNAHRAN_PLAINS },
+			}),
+			q(66401, {	-- The Dreamer
+				["sourceQuests"] = {
+					66400,	-- Winter's Fall
+				},
+				["qg"] = 188847,	-- Merithra
+				["coord"] = { 19.7, 81.6, OHNAHRAN_PLAINS },
+			}),
+			q(66402, {	-- Like Mother, Like Daughter
+				["sourceQuests"] = {
+					66401,	-- The Dreamer
+				},
+				["qg"] = 188850,	-- Ysera
+				["coord"] = { 19.8, 81.6, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(201779),	-- Merithra's Blessing
+				},
+			}),
 				-- RENOWN 20 --
 			q(70891, {	-- Fitting In
 				["qg"] = 195782,	-- Giera
@@ -333,6 +517,10 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(72691),	-- triggered with 'A Coming of Age' (70897)
 		q(72692),	-- triggered with 'A Collection of Creatures' (70901)
 		q(72689),	-- triggered with 'Fitting In' (70891)
+		q(72693),	-- triggered with 'Emerald Summons' (66620)
+		q(72777),	-- triggered with 'Emerald Summons' (66620)
+		q(72759),	-- triggered with 'And Yet So Far' (66191)
+		q(72758),	-- triggered with 'Like Mother, Like Daughter' (66402)
 
 		-- Ensembles
 		q(70755),	-- Ensemble: Crimson Valdrakken Clothing
