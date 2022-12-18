@@ -1986,6 +1986,7 @@ i(194483, 367593);	-- Obsidian Seared Slicer
 i(194506, 371682);	-- Primal Razorstone
 i(198713, 377281);	-- Prototype Explorer's Barding Framework
 i(198714, 377280);	-- Prototype Regal Barding Framework
+i(194507, 371394);	-- Serevite Skeleton Key
 i(194486, 367623);	-- Shield of the Hearth
 i(198719, 388279);	-- Sturdy Expedition Shovel
 i(194492, 367618);	-- Unstable Frostfire Belt
@@ -2039,4 +2040,3 @@ i(194473, 0);	-- Primal Molten Warglaive
 i(194505, 0);	-- Primal Weightstone
 i(194504, 0);	-- Primal Whetstone
 i(194494, 0);	-- Reinforced Plating
-i(194507, 0);	-- Serevite Skeleton Key
