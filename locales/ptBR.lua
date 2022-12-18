@@ -1270,7 +1270,7 @@ for key,value in pairs({
 	[181649] = "Diário de Barbapena",	-- Featherbeard's Journal
 	[181672] = "Efígie do Homem de Palha",	-- Wickerman Effigy
 	[181681] = "Cálice de Eluna",	-- Chalice of Elune
-	[181687] = "Pilha de Madeira",	-- Lumber Pile	--TODO: This was taken from wotlk Wowhead
+	[181687] = "Pilha de Madeira",	-- Warsong Lumber Pile	--TODO: This was taken from wotlk Wowhead
 	[181690] = "Monturo de Terra Fértil",	-- Fertile Dirt Mound
 	[181698] = "Pedra do Caos",	-- Voidstone
 	[181748] = "Cristal de Sangue",	-- Blood Crystal
