@@ -282,18 +282,22 @@ root("Zones", {
 				}),
 				prof(FISHING, {
 					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192053 },	-- Deep Sea Monsterbelly School
 						["criteriaID"] = 5279,	-- Deep Sea Monsterbelly School
 						["requireSkill"] = FISHING,
 					}),
 					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192048 },	-- Dragonfin Angelfish School
 						["criteriaID"] = 5280,	-- Dragonfin Angelfish School
 						["requireSkill"] = FISHING,
 					}),
 					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192052 },	-- Imperial Manta Ray School
 						["criteriaID"] = 5284,	-- Imperial Manta Ray School
 						["requireSkill"] = FISHING,
 					}),
 					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192054 },	-- Moonglow Cuttlefish School
 						["criteriaID"] = 5285,	-- Moonglow Cuttlefish School
 						["requireSkill"] = FISHING,
 					}),

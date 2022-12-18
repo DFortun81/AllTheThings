@@ -391,7 +391,10 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 				}),
 			},
 		}),
-		ach(3218),		-- Turtles All the Way Down
+		applyclassicphase(WRATH_PHASE_ONE, ach(3218, {	-- Turtles All the Way Down
+			["provider"] = { "i", 46109 },	-- Sea Turtle
+			["requireSkill"] = FISHING,
+		})),
 		ach(12754, {	-- Zandalari Fisherman (H)
 			["races"] = HORDE_ONLY,
 		}),
