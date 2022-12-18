@@ -160,12 +160,11 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 			}),
 			crit(3754, {	-- Parrot (Un'Goro Crater, Swamp of Sorrows, Northern Stranglethorn, The Cape of Stranglethorn)
 				["maps"] = {
-					UNGORO_CRATER, SWAMP_OF_SORROWS,
+					UNGORO_CRATER,
 					-- #if AFTER CATA
+					SWAMP_OF_SORROWS,
 					NORTHERN_STRANGLETHORN,
 					THE_CAPE_OF_STRANGLETHORN,
-					-- #else
-					STRANGLETHORN_VALE,
 					-- #endif
 				},
 				["crs"] = { 9600 },	-- Parrot
@@ -258,12 +257,11 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 			}),
 			crit(11, {	-- Parrot (Un'Goro Crater, Swamp of Sorrows, Northern Stranglethorn, The Cape of Stranglethorn)
 				["maps"] = {
-					UNGORO_CRATER, SWAMP_OF_SORROWS,
+					UNGORO_CRATER,
 					-- #if AFTER CATA
+					SWAMP_OF_SORROWS,
 					NORTHERN_STRANGLETHORN,
 					THE_CAPE_OF_STRANGLETHORN,
-					-- #else
-					STRANGLETHORN_VALE,
 					-- #endif
 				},
 				["crs"] = { 9600 },	-- Parrot
