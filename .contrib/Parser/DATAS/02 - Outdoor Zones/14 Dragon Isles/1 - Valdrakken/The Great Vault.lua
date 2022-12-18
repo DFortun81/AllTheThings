@@ -76,7 +76,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							{"where", "headerID", SEASON_CRIMSON},	-- Season 1
 							{"pop"},								-- Discard the Custom Headers and acquire all of their children.
 							{"is", "headerID"},
-							{"not", "headerID", ACHIEVEMENT},
+							{"not", "headerID", ACHIEVEMENTS},
 						},
 					}),
 				})),

@@ -2550,6 +2550,7 @@ _.ObjectNames = {
 	[380860] = "Centaur Horn",
 	[380902] = "Fields of Ferocity",
 	[380991] = "Dirt Mound",
+	[381035] = "The Great Vault",
 	[381045] = "Golden Dragon Goblet",
 	[381094] = "Elegant Canvas Brush",
 	[381107] = "Sand Pile",
