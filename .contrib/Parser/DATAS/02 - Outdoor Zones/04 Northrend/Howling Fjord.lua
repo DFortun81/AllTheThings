@@ -846,9 +846,10 @@ root("Zones", {
 						-- #endif
 					}),
 					q(12181, {	-- Give it a Name
+						["qg"] = 24251,	-- Chief Plaguebringer Harris
 						["coord"] = { 53.5, 66.3, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24251,	-- Chief Plaguebringer Harris
+						["isBreadcrumb"] = true,
 					}),
 					q(11237, {	-- Gjalerbron Attack Plans (A) -- TODO: Verify if this drops all the time
 						["races"] = ALLIANCE_ONLY,
@@ -2053,10 +2054,10 @@ root("Zones", {
 						["sourceQuest"] = 11307,	-- Field Test
 					}),
 					q(12182, {	-- To Venomspite!
-						["coord"] = { 52.0, 67.3, HOWLING_FJORD },
-						["races"] = HORDE_ONLY,
 						["qg"] = 24155,	-- Tobias Sarkhoff
 						["sourceQuest"] = 12181,	-- Give it a Name
+						["coord"] = { 52.0, 67.3, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(11291, {	-- To Westguard Keep!
