@@ -81,10 +81,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		q(72560),	-- Triggered after completing Climb Every Mountain (questID 65421)
-		q(72002),	-- first daily looted bonus supplies (Enchanted Compass) while on climbing WQ (???)
-		q(71999),	-- second daily looted bonus supplies (Enchanted Compass) while on climbing WQ (70652)
-		q(72001),	-- first daily looted bonus supplies (Enchanted Compass) while on climbing WQ (70655)
-		q(72003),	-- first daily looted bonus supplies (Enchanted Compass) while on climbing WQ (70658)
+		q(72002),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (???)
+		q(71997),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (66070)
+		q(71999),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70652)
+		q(72001),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70655)
+		q(72003),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70658)
 		q(66478),	-- Rescuing the Marmot during Brightblade's Bones (66070)
 	}),
 })));

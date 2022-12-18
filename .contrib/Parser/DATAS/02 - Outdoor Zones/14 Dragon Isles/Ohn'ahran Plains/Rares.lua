@@ -188,8 +188,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73973,
 			}),
 			n(193215, {	-- Scaleseeker Mezeri
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
-				-- ["questID"] = 69865,
+				["coord"] = { 20.3, 43.5, OHNAHRAN_PLAINS },
+				["questID"] = 74073,
 				-- ["g"] = {
 
 				-- },

@@ -161,6 +161,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 				},
 			}),
+			n(REWARDS, {
+				i(200085, {	-- Khaz'gorite Wire
+					["description"] = "Obtained from Full Tuskarr Fishing Nets.",
+				}),
+			}),
 		})
 	}),
 })));

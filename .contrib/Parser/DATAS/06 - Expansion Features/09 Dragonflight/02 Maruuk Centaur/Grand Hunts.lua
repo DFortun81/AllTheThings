@@ -482,6 +482,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	q(70002),	-- First time Rare Grand Hunt
 	q(70001),	-- First time Uncommon Grand Hunt
 	q(70000),	-- First time Common Grand Hunt
+	q(69999),	-- 'Grand Hunter' achievement (start - end full hunt)
 	q(70908),	-- Maruuk Hunts // HQ to reward you with Reputation after each Stage
 	-- Each Unique Event can reward you with 1 trophy daily.
 	-- Upon killing a mob that dropped a trophy, the quest is triggered.

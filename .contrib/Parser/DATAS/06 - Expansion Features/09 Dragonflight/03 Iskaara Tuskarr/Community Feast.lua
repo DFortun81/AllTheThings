@@ -40,6 +40,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 	n(ISKAARA_TUSKARR, {
 		n(COMMUNITY_FEAST, {
 			q(70925),	-- triggers repeatedly during 'Community Feast' (70925) to show in objective pane
+			q(74382),	-- catching a 'Gungle' during Community Feast event
 		}),
 	}),
 })));

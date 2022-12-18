@@ -234,7 +234,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 					["provider"] = { "n", 196518 },	-- Voraxian
 					["coord"] = { 27.6,56.7, THE_WAKING_SHORES },
-					["isDaily"] = true,
+					["isWeekly"] = true,
 				}),
 				--[[
 				q(66633, {	-- Make a Statement

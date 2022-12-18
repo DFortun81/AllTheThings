@@ -2508,6 +2508,7 @@ _.ObjectNames = {
 	[376451] = "Bronze Stopwatch",
 	[376580] = "Djaradin Cache",
 	[376581] = "Clan Chest",
+	[376582] = "Tuskarr Chest",
 	[376587] = "Expedition Scout's Pack",
 	[376757] = "WANTED: Frigellus",
 	[377114] = "Coil of Heavy Rope",

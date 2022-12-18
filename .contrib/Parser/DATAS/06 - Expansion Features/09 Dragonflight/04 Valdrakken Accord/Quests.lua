@@ -292,6 +292,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199757),	-- Magic Nibbler (PET!)
 				},
 			}),
+				-- RENOWN 19 --
+				-- RENOWN 20 --
+			q(70891, {	-- Fitting In
+				["qg"] = 195782,	-- Giera
+				["coord"] = { 31.6, 69.3, VALDRAKKEN },
+				["g"] = {
+					i(199754),	-- Ensemble: Azure Valdrakken Clothing
+					i(199753),	-- Ensemble: Black Valdrakken Clothing
+					i(199756),	-- Ensemble: Bronze Valdrakken Clothing
+					i(199752),	-- Ensemble: Crimson Valdrakken Clothing
+					i(199755),	-- Ensemble: Green Valdrakken Clothing
+				},
+			}),
 		}),
 	}),
 })));
@@ -312,5 +325,9 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(72283),	-- triggered with 'Soaring in Style' (70895)
 		q(72691),	-- triggered with 'A Coming of Age' (70897)
 		q(72692),	-- triggered with 'A Collection of Creatures' (70901)
+		q(72689),	-- triggered with 'Fitting In' (70891)
+
+		-- Ensembles
+		q(70755),	-- Ensemble: Crimson Valdrakken Clothing
 	}),
 })));

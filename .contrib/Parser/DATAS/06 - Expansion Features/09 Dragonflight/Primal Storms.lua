@@ -139,8 +139,27 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16463),	-- Thunderstorms in The Waking Shores
 			}),
 			n(BONUS_OBJECTIVES, {
+				q(69951, {	-- Bouldron
+					["qg"] = 193644,	-- Bouldron
+				}),
+				q(69961, {	-- Frozion
+					["qg"] = 193655,	-- Frozion
+				}),
 				q(69959, {	-- Gaelzion
 					["qg"] = 193653,	-- Gaelzion
+				}),
+				q(69953, {	-- Karantun
+					["qg"] = 193647,	-- Karantun
+				}),
+				q(69971, {	-- Iceblade Trio
+					["qgs"] = {
+						193677,	-- Maeleera <First Iceblade>
+						193678,	-- Fieraan <Second Iceblade>
+						193679,	-- Leerain <Third Iceblade>
+					},
+				}),
+				q(69974, {	-- Pipspark Thundersnap
+					["qg"] = 193684,	-- Pipspark Thundersnap
 				}),
 				q(69973, {	-- Rouen Icewind
 					["qg"] = 193682,	-- Rouen Icewind
@@ -154,7 +173,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			},{
 				n(193644, {	-- Bouldron
 					["coord"] = { 26.2, 75.6, THE_WAKING_SHORES },
-					-- ["questID"] = ,
+					["questID"] = 73986,
 					-- ["g"] = {
 
 					--},
@@ -175,14 +194,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				n(193678, {	-- Fieraan <Second Iceblade>
 					-- ["coord"] = { X, Y, MAP },
-					-- ["questID"] = ,
+					-- questID shared with Maeleera, don't duplicate
 					-- ["g"] = {
 
 					--},
 				}),
 				n(193655, {	-- Frozion <Progeny of Water>
-					-- ["coord"] = { X, Y, MAP },
-					-- ["questID"] = ,
+					["coord"] = { 22.8, 71.8, THE_WAKING_SHORES },
+					["questID"] = 73993,
 					-- ["g"] = {
 
 					--},
@@ -227,21 +246,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				n(193647, {	-- Karantun
 					["coord"] = { 26.8, 75.4, THE_WAKING_SHORES },
-					-- ["questID"] = ,
-					-- ["g"] = {
-
-					--},
+					["questID"] = 74007,
+					["g"] = {
+						i(200170),	-- Stormbringer Bow
+					},
 				}),
 				n(193679, {	-- Leerain <Third Iceblade>
 					["coord"] = { 48.4, 25.4, THE_AZURE_SPAN },
-					-- ["questID"] = ,
+					-- questID shared with Maeleera, don't duplicate
 					-- ["g"] = {
 
 					--},
 				}),
 				n(193677, {	-- Maeleera <First Iceblade>
 					["coord"] = { 48.6, 25.2, THE_AZURE_SPAN },
-					-- ["questID"] = ,
+					["questID"] = 74009,
 					-- ["g"] = {
 
 					--},
@@ -262,7 +281,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				n(193684, {	-- Pipspark Thundersnap
 					["coord"] = { 53.4, 26.2, PRIMALIST_TOMORROW },
-					-- ["questID"] = ,
+					["questID"] = 74022,
 					-- ["g"] = {
 
 					--},
@@ -282,14 +301,30 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					--},
 				}),
 			})),
+			n(QUESTS, {
+				q(71242, {	-- Supporting the Storm Researchers
+					["provider"] = {"i",200675},	-- Elemental Overflow Cluster
+				}),
+				q(70752, {	-- Vaporizing the Water Primalists
+					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
+					["provider"] = {"i",199748},	-- Primal Water Core
+				}),
+				q(70753, {	-- Dissipating the Air Primalists
+					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
+					["provider"] = {"i",199749},	-- Primal Air Core
+				}),
+			}),
 			n(REWARDS, {
-				currency(2118),	-- Elemental Overflow
-				currency(2122),	-- Storm Sigil
 				i(194641),	-- Design: Elemental Lariat (RECIPE!)
+				i(200675),	-- Elemental Overflow Cluster
 				i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
 				i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
 				i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
 				i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
+				i(199749),	-- Primal Air Core
+				i(199748),	-- Primal Water Core
+				currency(2118),	-- Elemental Overflow
+				currency(2122),	-- Storm Sigil
 			}),
 			n(VENDORS, {
 				n(196516, {	-- Mythressa

@@ -198,3 +198,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	m(THALDRASZUS, {
+		n(RARES, {
+			q(72050),	-- first kill of Ancient Protector...? maybe
+		}),
+	}),
+})));

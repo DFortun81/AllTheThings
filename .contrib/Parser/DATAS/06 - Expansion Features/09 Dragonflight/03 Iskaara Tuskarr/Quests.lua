@@ -264,6 +264,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201714),	-- Notebook of Crafting Knowledge
 				},
 			}),
+				-- RENOWN 15 --
+			q(70978, {	-- Dragon Isles Champion's Tales
+				["description"] = "Requires Renown 15.",
+				["provider"] = { "n", 186448 },	-- Elder Poa
+				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+			}),
+			q(72292, {	-- Story of a Spectacular Victory
+				["sourceQuests"] = { 70978 },	-- Dragon Isles Champion's Tales
+				["provider"] = { "i", 201471 },	-- Story of a Spectacular Victory
+				["isWeekly"] = true,
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem

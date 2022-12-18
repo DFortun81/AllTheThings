@@ -75,6 +75,16 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(72261, {	-- More Than a Prison?
 					["provider"] = {"i",201412},	-- Ancient Vault Artifact
 				}),
+				q(72259, {	-- Vault Artifacts
+					["qg"] = 197095,	-- Lillian Brightmoon
+					["cost"] = {{"i",201411,1}},	-- 1x Ancient Vault Artifact
+					["repeatable"] = true,
+				}),
+				q(72260, {	-- Vault Artifacts
+					["qg"] = 197095,	-- Lillian Brightmoon
+					["cost"] = {{"i",201411,5}},	-- 5x Ancient Vault Artifact
+					["repeatable"] = true,
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(201412),	-- Ancient Vault Artifact (Quest)

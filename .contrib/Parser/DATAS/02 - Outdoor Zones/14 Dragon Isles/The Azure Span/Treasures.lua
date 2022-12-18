@@ -134,6 +134,34 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(199842),	-- Stone Dragontooth
 				},
 			}),
+			o(376582, {	-- Tuskarr Chest
+				["coords"] = {
+					{ 7.2, 45.1, THE_AZURE_SPAN },
+					{ 8.4, 40.7, THE_AZURE_SPAN },
+					{ 8.5, 40.7, THE_AZURE_SPAN },
+					{ 9.4, 37.9, THE_AZURE_SPAN },
+					{ 45.1, 52.1, THE_AZURE_SPAN },
+					{ 45.8, 56.1, THE_AZURE_SPAN },
+					{ 46.9, 54.2, THE_AZURE_SPAN },
+					{ 55.7, 68.7, THE_AZURE_SPAN },
+					{ 56.5, 65.7, THE_AZURE_SPAN },
+					{ 56.9, 67.9, THE_AZURE_SPAN },
+					{ 57.6, 69.7, THE_AZURE_SPAN },
+					{ 58.8, 68.4, THE_AZURE_SPAN },
+					{ 58.9, 54.8, THE_AZURE_SPAN },
+					{ 59.0, 66.7, THE_AZURE_SPAN },
+					{ 59.2, 56.6, THE_AZURE_SPAN },
+					{ 60.5, 59.0, THE_AZURE_SPAN },
+				},
+				["g"] = {
+					i(201372),	-- Imbu Tuskarr Axe
+					i(201376),	-- Imbu Tuskarr Mace
+					i(201375),	-- Imbu Warrior's Club
+					i(201378),	-- Tuskarr Angler's Crossbow
+					i(201377),	-- Tuskarr Elder's Staff
+					i(201374),	-- Tuskarr Fishing Pike
+				},
+			}),
 			o(380554, {	-- Well-Danced Drum
 				["coord"] = { 12.5, 49.4, THE_AZURE_SPAN },
 				["requireSkill"] = LEATHERWORKING,

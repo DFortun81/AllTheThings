@@ -1100,8 +1100,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			q(66101, {	-- From Such Great Heights
 				["sourceQuests"] = {
-					67053,	-- Give Peace a Chance [A]
-					66110,	-- Give Peace a Chance [H]
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
 				},
 				["provider"] = { "n", 187257 },	-- Aster Cloudgaze
 				["coord"] = { 75.8, 33., THE_WAKING_SHORES },

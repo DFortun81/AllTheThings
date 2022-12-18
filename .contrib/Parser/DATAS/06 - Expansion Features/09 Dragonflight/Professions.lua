@@ -193,6 +193,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 		q(70221, {	-- Show Your Mettle
 			["provider"] = { "n", 192574 },	-- Thomas Bright
+			["isWeekly"] = true,
 			["coords"] = {
 				{ 60.2, 72.2, THE_WAKING_SHORES },
 				{ 71.7, 81.2, OHNAHRAN_PLAINS },
@@ -200,7 +201,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			["g"] = {
 				i(190456),	-- Artisan's Mettle
 			},
-			["isWeekly"] = true,
 		}),
 		-- Chap 0
 		q(72773, {	-- Learning Ingenuity
@@ -351,7 +351,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires 25 Skill.",
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
-				-- ["isWeekly"] = true,
+				["isWeekly"] = true,
 				-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? lol
 				-- ["sourceQuest"] = ,
 			}),
@@ -414,6 +414,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.8, 63.6, VALDRAKKEN },
 				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["isWeekly"] = true,
 				["g"] = {
 					i(198606),	-- Blacksmith's Writ
 				},

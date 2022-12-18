@@ -803,7 +803,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200145),	-- Hilted Monolith
 			i(200147),	-- Web-Woven Robe
 			i(200151),	-- Seamist Blade
-			i(200170),	-- Stormbringer Bow
 			i(200171),	-- Grymheart Blade
 			i(200155),	-- Haphazardly Welded Protector
 			i(200175),	-- Repurposed Anvil
@@ -854,12 +853,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201368),	-- Brackenhide Hollow Barbslinger
 			i(201369),	-- Hollow Greatwood Pestilence
 			i(201370),	-- Brackenhide Skullcracker
-			i(201372),	-- Imbu Tuskarr Axe
-			i(201374),	-- Tuskarr Fishing Pike
-			i(201375),	-- Imbu Warrior's Club
-			i(201376),	-- Imbu Tuskarr Mace
-			i(201377),	-- Tuskarr Elder's Staff
-			i(201378),	-- Tuskarr Angler's Crossbow
 			i(201380),	-- Nokhud Hunter's Bow
 			i(201382),	-- Centaur Warglaives
 
@@ -1091,7 +1084,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200082),	-- Battered Imbu-made Net
 			i(200083),	-- Irontree Branch
 			i(200084),	-- Salinated Serevite
-			i(200085),	-- Khaz'gorite Wire
 			i(200086),	-- Khaz'gorite-infused Resin
 		}),
 		------------- PROBABLY NYI ---------------------
