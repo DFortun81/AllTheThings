@@ -330,11 +330,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["cost"] = {{"i",190395,16}},	-- 16x Severite Ore
 				}),
 				q(70617, {	-- All Mine, Mine, Mine
-					["qg"] = 185553,	-- Sekita the Burrower
-					["coord"] = { 39.0, 51.8, VALDRAKKEN },
-					["cost"] = {{"i",190395,16}},	-- 16x Severite Ore
-				}),
-				q(70617, {	-- All Mine, Mine, Mine
 					--["sourceQuests"] = {  },	--
 					["provider"] = { "n", 185553 },	-- Sekita the Burrower
 					["coord"] = { 76.3, 34.6, THE_WAKING_SHORES },
