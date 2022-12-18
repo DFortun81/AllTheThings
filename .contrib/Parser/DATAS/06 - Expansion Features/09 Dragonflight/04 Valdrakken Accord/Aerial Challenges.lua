@@ -25,6 +25,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70417, {	-- Dragonrider Racing - Wingrest Roundabout
 					["coord"] = { 73.2, 34.0, THE_WAKING_SHORES }
 				}),
+				q(70412, {	-- Dragonrider Racing - Wild Preserve Slalom
+					["coord"] = { 47.0, 85.6, THE_WAKING_SHORES }
+				}),
 				-- Unconfirmed
 				--[[
 				q(70415, {	-- Dragonrider Racing - Apex Canopy River Run
@@ -35,9 +38,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				q(70418, {	-- Dragonrider Racing - Wild Preserve Circuit
 					["coord"] = { 42.6, 94.4, THE_WAKING_SHORES }
-				}),
-				q(70412, {	-- Dragonrider Racing - Wild Preserve Slalom
-					["coord"] = { 47.0, 85.6, THE_WAKING_SHORES }
 				}),
 				--]]
 
