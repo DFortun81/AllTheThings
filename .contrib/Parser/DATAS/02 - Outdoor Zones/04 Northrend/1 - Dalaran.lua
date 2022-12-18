@@ -4321,6 +4321,9 @@ root("Zones", {
 					i(45328, {	-- Bloated Slippery Eel
 						i(45323),	-- Severed Arm
 					}),
+					i(43659, {	-- Bloodied Prison Shank
+						["timeline"] = { "added 3.0.2.8982" },
+					}),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(310, {	-- Dalaran
