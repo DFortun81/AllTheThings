@@ -144,8 +144,8 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 			}),
 			crit(3752, {	-- Gazelle (Desolace, Mulgore, Northern Barrens, Southern Barrens)
 				["maps"] = {
-					DESOLACE, MULGORE,
 					-- #if AFTER CATA
+					DESOLACE, MULGORE,
 					NORTHERN_BARRENS,
 					SOUTHERN_BARRENS,
 					-- #else
@@ -241,8 +241,8 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 			}),
 			crit(9, {	-- Gazelle (Desolace, Mulgore, Northern Barrens, Southern Barrens)
 				["maps"] = {
-					DESOLACE, MULGORE,
 					-- #if AFTER CATA
+					DESOLACE, MULGORE,
 					NORTHERN_BARRENS,
 					SOUTHERN_BARRENS,
 					-- #else
