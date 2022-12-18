@@ -233,27 +233,31 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(370714),	-- Transmute: Decay to Elements
 				},
 			}),
-			q(70355, {	-- To the Dragon Isles: Alchemy
+			q(70355, {	-- Dragon Isles Alchemy [A]
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
-					65444,	-- To the Dragon Isles! [H]
 				},
 				["provider"] = { "n", 191893 },	-- Zherrak
 				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
+				["races"] = ALLIANCE_ONLY,
 			}),
-			q(72245, {	-- To the Dragon Isles: Alchemy
+			q(72245, {	-- Dragon Isles Alchemy [H]
 				["sourceQuests"] = {
-					67700,	-- To The Dragon Isles! [A]
 					65444,	-- To the Dragon Isles! [H]
 				},
 				["provider"] = { "n", 198392 },	-- An'timon
 				["coord"] = { 76.2, 35.8, THE_WAKING_SHORES },
+				["races"] = HORDE_ONLY,
 			}),
 			q(67080, {	-- Artisan's Supply: Dragon's Alchemical Solution
-				["sourceQuests"] = { 70355 },	-- To the Dragon Isles: Alchemy
+				["sourceQuests"] = {
+					-- suspected... was able to pick up with only 72245 on horde
+					70355,	-- Dragon Isles Alchemy [A]
+					72245,	-- Dragon Isles Alchemy [H]
+				},
 				["provider"] = { "n", 191893 },	-- Zherrak
 				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
-				["cost"] = { { "i", 191570, 2 }, },	-- 2xDragon's Alchemical Solution
+				["cost"] = { { "i", 191570, 2 }, },	-- 2x Dragon's Alchemical Solution
 				["g"] = {
 					i(191462),	-- Hochenblume+++
 				},

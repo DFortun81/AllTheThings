@@ -25,6 +25,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(191904, {	-- Orb of Primal Stone
 				["cr"] = 189795,	-- Unsettled Rubble
 			}),
+			i(194507),	-- Plans: Serevite Skeleton Key (RECIPE!)
 			i(193874, {	-- Qalashi Plans
 				["cr"] = 186777,	-- Meatgrinder Sotok
 			}),

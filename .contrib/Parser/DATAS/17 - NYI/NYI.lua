@@ -1713,7 +1713,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(194505),	-- Plans: Primal Weightstone (RECIPE!)
 				i(194504),	-- Plans: Primal Whetstone (RECIPE!)
 				i(194494),	-- Plans: Reinforced Plating (RECIPE!)
-				i(194507),	-- Plans: Serevite Skeleton Key (RECIPE!)
 				-- Items
 				i(191261),	-- Draconium Repair Hammer
 				i(191884),	-- Draconium Repair Hammer

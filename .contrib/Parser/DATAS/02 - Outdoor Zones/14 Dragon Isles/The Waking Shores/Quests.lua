@@ -129,7 +129,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(194389),	-- Brush Clearing Axe
 						i(194392),	-- Expedition Defender's Blade
 						i(194374),	-- Explorer's League Rifle
+						i(194375),	-- Explorer's Short Sword
 						i(194373),	-- Field Explorer's Stave
+						i(194394),	-- Persistent Threat Cleaver
 						i(194377),	-- Reliquary Dissection Knife
 						i(198488),	-- Staff of Discovery
 					},
@@ -147,8 +149,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 186767 },	-- Majordomo Selistra
 					["coord"] = { 62.7, 33.1, THE_WAKING_SHORES },
 					["g"] = {
-						i(194375),	-- Explorer's Short Sword
-						i(194394),	-- Persistent Threat Cleaver
 						i(193917),	-- Rejuvenating Draught
 					},
 				}),
@@ -906,21 +906,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["collectible"] = false,
 				["g"] = {
 					q(67053, {	-- Give Peace a Chance [A]
-						["sourceQuests"] = {
-							70122,	-- Explorers in Peril [A]
-							70124,	-- Practice Materials [A]
-							70123,	-- Primal Pests [A]
-						},
+						["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
 						["provider"] = { "n", 184449 },	-- Captain Garrick
 						["coord"] = { 76.7, 34.6, THE_WAKING_SHORES },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(66110, {	-- Give Peace a Chance [H]
-						["sourceQuests"] = {
-							65452,	-- Explorers in Peril [H]
-							65451,	-- Practice Materials [H]
-							65453,	-- Primal Pests [H]
-						},
+						["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
 						["provider"] = { "n", 184452 },	-- Warlord Breka Grimaxe
 						["coord"] = { 76.4, 33.1, THE_WAKING_SHORES },
 						["races"] = HORDE_ONLY,
