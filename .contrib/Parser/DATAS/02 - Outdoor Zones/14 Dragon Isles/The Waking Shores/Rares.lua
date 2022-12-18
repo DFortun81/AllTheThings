@@ -283,11 +283,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193175, {	-- Slurpo, the Incredible Snail
-				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
-				-- ["questID"] = 72126,
-				-- ["g"] = {
-
-				-- },
+				["coord"] = { 34.5, 89.7, THE_WAKING_SHORES },
+				["questID"] = 74079,
+				["g"] = {
+					i(200189),	-- Hydroforged Shell Helm
+				},
 			}),
 			n(193120, {	-- Smogswog the Firebreather
 				["coord"] = { 69.0, 64.8, THE_WAKING_SHORES },

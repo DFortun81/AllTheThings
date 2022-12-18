@@ -1341,6 +1341,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 47.2, 73.6, THE_WAKING_SHORES },
 					["isDaily"] = true,
 				}),
+				q(72126, {	-- Slurpo, the Incredible Snail
+					["provider"] = { "n", 193175 },	-- Slurpo, the Incredible Snail
+					["coord"] = { 34.5, 89.7, THE_WAKING_SHORES },
+				}),
 				q(70751, {	-- Terillod the Devout
 					["provider"] = { "n", 193171 },	-- Terillod the Devout
 					["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
@@ -1672,6 +1676,9 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		q(70768),	-- triggers when 'Tale of the Outsider' completes
 		q(70770),	-- triggers when 'Tale of the Elders' becomes available for Tarjin the Blind
 		q(70769),	-- triggers when 'Tale of the Elders' completes
+		q(70772),	-- triggers when 'Tale of the Warlord' becomes available for Tarjin the Blind
+		q(70771),	-- triggers when 'Tale of the Warlord' completes
+
 		q(72178, {	-- Theory in Practice: Baron von Swoopenbite
 			["name"] = "Theory in Practice: Baron von Swoopenbite",
 			["sourceQuests"] = {

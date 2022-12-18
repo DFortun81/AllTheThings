@@ -73,7 +73,22 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200889),	-- Highly-Spiced Haunch
 				},
 			}),
-
+			-- Another week?
+			q(70957, {	-- The Sea Out West
+				["sourceQuests"] = { 67063 },	-- 10,000 Years of Roasting
+				["provider"] = { "n", 189479 },	-- Rumiastrasza
+				["coord"] = { 61.5, 11.8, VALDRAKKEN },
+			}),
+			q(67064, {	-- Rambling Delight
+				["sourceQuests"] = { 70957 },	-- The Sea Out West
+				["provider"] = { "n", 186502 },	-- Sugarbough
+				["coord"] = { 28.6, 60.5, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(200892),	-- Dragonfruit Punch
+					i(200891),	-- Druidic Dreamsalad
+					i(200890),	-- Stonetalon Bloom Skewer
+				},
+			}),
 
 			-- Last week of Ruby Feast
 			i(198132),	-- Recipe: Hoard of Draconic Delicacies (RECIPE!)
@@ -274,12 +289,11 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72596),	-- After Open Orientation
 		q(69935),	-- triggered with 'A Dryadic Remedy' (67606)
 		q(72011),	-- triggeres when accepting 'The Ruby Feast!' (71238)
+		q(72009),	-- triggered with 'Warm Away These Shivers' (67047)
 		q(72258),	-- triggered with 'A Dryadic Remedy' (71238) and with '10,000 Years of Roasting' (67063) - triggers off a line of text from Coulisa, the steward at the door - spell ID 393805
 		q(67055),	-- triggered with 'Warm Away These Shivers' (67047)
-		q(72009),	-- triggered with 'Warm Away These Shivers' (67047)
 		q(67056),	-- triggered after '10,000 Years of Roasting' (67063)
-
+		q(67057),	-- triggered after 'Rambling Delight' (67064)
 		q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel
-
 	}),
 }));

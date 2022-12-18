@@ -199,7 +199,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 186228 },	-- Brena
 					["coord"] = { 34.3, 31.0, THE_AZURE_SPAN },
 					["g"] = {
-						i(198009),	-- Gleaming Bronze Blade
+						i(198035),	-- Archer's Decorated Bow
 						i(198007),	-- Large Brass Cleaver
 						i(198003),	-- Ornate Steel Cleaver
 						i(198006),	-- Sharpened Silver Sword

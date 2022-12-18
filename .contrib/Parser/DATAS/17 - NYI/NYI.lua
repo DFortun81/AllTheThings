@@ -384,7 +384,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200154),	-- Rubyscale Band
 			i(200161),	-- Razorwind Talisman
 			i(200185),	-- Grips of the Everflowing Ocean
-			i(200189),	-- Hydroforged Shell Helm
 			i(200199),	-- Elements' Burden
 			i(200202),	-- Tomorrow's Chains
 			i(200203),	-- Repurposed Giant's Thimble
@@ -737,7 +736,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197955),	-- Sword of the Eternal Guard
 			i(197956),	-- Empowered Shortsword of Insight
 			i(197957),	-- Timeless Watcher's Saber
-			i(198035),	-- Archer's Decorated Bow
 				-- Thaldraszus
 			i(195177),	-- Moment's Notice
 			i(195181),	-- Rapid Fire
@@ -1574,9 +1572,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200887),	-- Charred Porter
 			i(200888),	-- Coal-Fired Rib Rack
 			i(200889),	-- Highly-Spiced Haunch
-			i(200890),	-- Stonetalon Bloom Skewer
-			i(200891),	-- Druidic Dreamsalad
-			i(200892),	-- Dragonfruit Punch
 			i(200893),	-- Azsunian-Poached Lobster
 			i(200894),	-- Rare Vintage Arcwine
 			i(200895),	-- Fine Taladorian Cheese Platter
