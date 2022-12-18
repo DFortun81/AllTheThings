@@ -47,6 +47,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(70047, {	-- Icy Prisons
 				["coord"] = { 58.6, 43.7, THE_AZURE_SPAN }
 			}),
+			q(70631, {	-- Clearing the Skies
+				["coord"] = { 53.1, 32.8, THE_AZURE_SPAN },
+			}),
 			pvp(q(72019, {	-- Seeing through the Enemy: Nezascar
 				["coord"] = { 29.7, 29.8, THE_AZURE_SPAN },
 			})),

@@ -80,13 +80,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70428, {	-- Dragonrider Racing - Iskaara Tour
 					["coord"] = { 16.4, 49.4, THE_AZURE_SPAN }
 				}),
+				q(70427, {	-- Dragonrider Racing - Vakthros Ascent
+					["coord"] = { 71.2, 24.6, THE_AZURE_SPAN }
+				}),
 				-- Unconfirmed
 				--[[
 				q(70430, {	-- Dragonrider Racing - Archive Ambit
 					["coord"] = { 42.2, 56.8, THE_AZURE_SPAN }
-				}),
-				q(70427, {	-- Dragonrider Racing - Vakthros Ascent
-					["coord"] = { 71.2, 24.6, THE_AZURE_SPAN }
 				}),
 				--]]
 
