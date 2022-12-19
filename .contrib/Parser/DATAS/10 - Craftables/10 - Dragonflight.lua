@@ -2540,6 +2540,7 @@ root("HiddenQuestTriggers", {
 			q(74157),	-- Skinning Moskhoi on a Grand Hunt
 			q(74159),	-- Skinning Tevgai on a Grand Hunt
 			q(74196),	-- Skinning Rokmur rare
+			q(74126),	-- Skinning Crystalus in a Primal Storm
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--

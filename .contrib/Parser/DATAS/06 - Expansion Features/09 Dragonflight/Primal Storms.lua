@@ -234,8 +234,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					--},
 				}),
 				n(193645, {	-- Crystalus
-					-- ["coord"] = { X, Y, MAP },
-					-- ["questID"] = ,
+					["coord"] = { 36.1, 36.1, OHNAHRAN_PLAINS },
+					["questID"] = 73989,
 					-- ["g"] = {
 
 					--},
