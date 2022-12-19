@@ -1592,7 +1592,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				o(202083, {	-- Razormaw Matriarch's Nest
-					["coord"] = { 69.9, 29.1, WETLANDS },
+					["coords"] = {
+						{ 69.9, 29.1, WETLANDS },
+						{ 70.9, 31.3, WETLANDS },
+					},
 					["timeline"] = { "added 3.3.0.10958" },
 					["groups"] = {
 						i(48124, {	-- Razormaw Hatchling Pet
