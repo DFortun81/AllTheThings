@@ -686,10 +686,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198133),	-- Golden Expedition Compass
 			i(198134),	-- Shiny Surveyor Scope
 			i(198135),	-- Jeb's Supply Pack
-			i(199691),	-- Primal Earth Core
-			i(199748),	-- Primal Water Core
-			i(199749),	-- Primal Air Core
-			i(199750),	-- Primal Fire Core
 			i(199831),	-- Forgotten Dragon Crest
 			i(199840),	-- Wrapped Gold Band
 			i(199842),	-- Stone Dragontooth
@@ -774,9 +770,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200302),	-- Magmaforged Scimitar
 			i(200307),	-- Viciously Hooked Cleaver
 			i(200308),	-- Rellen's Legacy
-			i(200311),	-- Bonespike Mallet
 			i(200437),	-- Dreamsong Censer
-			i(200439),	-- Earthpact Scepter
 			i(201231),	-- Bident of Hallucinations
 			i(201232),	-- Bonedust Spreader
 			i(201233),	-- Verdant Drakespine Glaive

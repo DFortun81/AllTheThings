@@ -151,6 +151,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(69959, {	-- Gaelzion
 					["qg"] = 193653,	-- Gaelzion
 				}),
+				q(69970, {	-- Kain Firebrand
+					["qg"] = 193675,	-- Kain Firebrand
+				}),
 				q(69953, {	-- Karantun
 					["qg"] = 193647,	-- Karantun
 				}),
@@ -239,7 +242,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				n(193650, {	-- Emblazion <Progeny of Fire>
 					-- ["coord"] = { X, Y, MAP },
-					-- ["questID"] = ,
+					["questID"] = 73991,
 					-- ["g"] = {
 
 					--},
@@ -254,9 +257,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(193655, {	-- Frozion <Progeny of Water>
 					["coord"] = { 22.8, 71.8, THE_WAKING_SHORES },
 					["questID"] = 73993,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200311),	-- Bonespike Mallet
+					},
 				}),
 				n(193653, {	-- Gaelzion <Progeny of Air>
 					["coords"] = {
@@ -291,7 +294,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				n(193675, {	-- Kain Firebrand
 					["coord"] = { 64.0, 72.2, THE_WAKING_SHORES },
-					-- ["questID"] = ,
+					["questID"] = 74006,
 					-- ["g"] = {
 
 					--},
@@ -342,6 +345,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 27.7, 72.6, THE_WAKING_SHORES },
 					["questID"] = 74038,
 					["g"] = {
+						i(200439),	-- Earthpact Scepter
 						i(200136),	-- Monsoonic Armguards
 					},
 				}),
@@ -357,13 +361,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(71242, {	-- Supporting the Storm Researchers
 					["provider"] = {"i",200675},	-- Elemental Overflow Cluster
 				}),
-				q(70752, {	-- Vaporizing the Water Primalists
-					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
-					["provider"] = {"i",199748},	-- Primal Water Core
-				}),
 				q(70753, {	-- Dissipating the Air Primalists
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
 					["provider"] = {"i",199749},	-- Primal Air Core
+				}),
+				q(70754, {	-- Extinguishing the Fire Primalists
+					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
+					["provider"] = {"i",199750},	-- Primal Fire Core
+				}),
+				q(70752, {	-- Vaporizing the Water Primalists
+					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
+					["provider"] = {"i",199748},	-- Primal Water Core
 				}),
 			}),
 			n(REWARDS, {
@@ -378,6 +386,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
 				i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
 				i(199749),	-- Primal Air Core
+				i(199691),	-- Primal Earth Core
+				i(199750),	-- Primal Fire Core
 				i(199748),	-- Primal Water Core
 				currency(2118),	-- Elemental Overflow
 				currency(2122),	-- Storm Sigil
