@@ -121,6 +121,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 34086 },		-- Winter Boots
 					-- #endif
 				},
+				["maps"] = { NORTHREND_DALARAN },
 			}),
 			ach(5853, {	-- A-Caroling We Will Go (A)
 				-- #if AFTER 9.1.5
