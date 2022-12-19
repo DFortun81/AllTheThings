@@ -1188,7 +1188,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(13966, { 	-- A Winter Veil Gift (2009)
+			applyclassicphase(WRATH_PHASE_FOUR, q(13966, { 	-- A Winter Veil Gift (2009)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 46740 },	-- Winter Veil Gift
@@ -1202,7 +1202,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 						["timeline"] = { "added 3.3.0.11159" },
 					}),
 				},
-			}),
+			})),
 			q(28878, { 	-- A Winter Veil Gift (2010)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
