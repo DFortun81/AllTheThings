@@ -1648,6 +1648,11 @@ local function GetProgressTextForRow(data)
 			return L["COST_ICON"].." "..GetProgressColorText(data.progress or 0, total);
 		end
 
+		-- Reagent & Progress (show reagent icon & container info)
+		if data.filledReagent then
+			return L["REAGENT_ICON"].." "..GetProgressColorText(data.progress or 0, total);
+		end
+
 		local costTotal = data.costTotal;
 		local isCost = costTotal and costTotal > 0;
 		-- Cost (show cost icon)
@@ -1693,6 +1698,15 @@ local function GetProgressTextForTooltip(data, iconOnly)
 				return stateText.." "..L["COST_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
 			else
 				return L["COST_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
+			end
+		end
+
+		-- Reagent & Progress (show reagent icon & container info)
+		if data.filledReagent then
+			if stateText then
+				return stateText.." "..L["REAGENT_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
+			else
+				return L["REAGENT_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
 			end
 		end
 
@@ -5207,6 +5221,9 @@ local function DetermineCraftedGroups(group)
 		end
 	end
 	-- app.PrintDebug("DetermineCraftedGroups",group.hash,groups and #groups);
+	if #groups > 0 then
+		group.filledReagent = true;
+	end
 	return groups;
 end
 local function DetermineSymlinkGroups(group)
@@ -19052,14 +19069,20 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		local topHeaders = {
 		-- ACHIEVEMENTS = -4
 			[-4] = "achievementID",
+		-- BONUS_OBJECTIVES = -221;
+			[-221] = true,
 		-- BUILDINGS = -99;
 			[-99] = true,
 		-- COMMON_BOSS_DROPS = -1;
 			[-1] = true,
+		-- EMISSARY_QUESTS = -169;
+			[-169] = true,
 		-- FACTIONS = -6013;
 			[-6013] = "factionID",
 		-- FLIGHT_PATHS = -228;
 			[-228] = "flightPathID",
+		-- HIDDEN_QUESTS = -999;	-- currently nested under 'Quests' due to Type
+			-- [-999] = true,
 		-- HOLIDAY = -3;
 			[-3] = "holidayID",
 		-- PROFESSIONS = -38;
@@ -19070,10 +19093,18 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			[-16] = true,
 		-- SECRETS = -22;
 			[-22] = true,
+		-- SPECIAL = -77;
+			[-77] = true,
 		-- TREASURES = -212;
 			[-212] = "objectID",
 		-- VENDORS = -2;
 			[-2] = true,
+		-- WEEKLY_HOLIDAYS = -176;
+			[-176] = true,
+		-- WORLD_QUESTS = -34;
+			[-34] = true,
+		-- ZONE_REWARDS = -903;
+			[-903] = true,
 		-- ZONE_DROPS = 0;
 			[0] = true,
 		};
