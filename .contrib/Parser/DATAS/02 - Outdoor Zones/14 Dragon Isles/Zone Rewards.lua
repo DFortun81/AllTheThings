@@ -125,6 +125,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(197948),	-- Stone Sentinel's Greatsword
 			i(192029),	-- Swift Dragonbone Mace
 			i(192017),	-- Thrumming Celestial Arrangement
+			i(197957),	-- Timeless Watcher's Saber
 			i(192025),	-- World Breaker's Maul
 		}),
 		filter(COSMETIC, {

@@ -2039,11 +2039,3 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 	}),
 })));
-
-
---TODO: should we organize this section differently with the HQTs? There's going to be a million of them...
-root("HiddenQuestTriggers", m(DRAGON_ISLES, {
-	m(VALDRAKKEN, {
-		q(71705),	-- When I craft item 193388 first time, leatherworking. But may due to / First time/ getting artisans mettle?
-	}),
-}));

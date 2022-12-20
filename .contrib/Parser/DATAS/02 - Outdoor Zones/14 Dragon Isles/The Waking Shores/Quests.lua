@@ -128,6 +128,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["g"] = {
 						i(194389),	-- Brush Clearing Axe
 						i(194392),	-- Expedition Defender's Blade
+						i(194378),	-- Explorer's Belt Knife
 						i(194374),	-- Explorer's League Rifle
 						i(194375),	-- Explorer's Short Sword
 						i(194373),	-- Field Explorer's Stave
@@ -792,6 +793,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "n", 190533 },	-- Adazius
 						["coord"] = { 55.2, 63.7, THE_WAKING_SHORES },
 						["g"] = {
+							i(194419),	-- Life Pool Herb Pouch
 							i(194418),	-- Life Pools Watering Can
 						},
 					}),

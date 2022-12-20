@@ -2405,18 +2405,17 @@ root("HiddenQuestTriggers", {
 			q(),	-- Queen's Gift
 			q(71653),	-- Timewatcher's Patience
 		}),
+		--]]
 		prof(LEATHERWORKING, {
-			-- Recraft
-			q(),	-- Recraft Equipment
 			-- Leather Armor
-			q(),	-- Life-Bound Belt
-			q(71713),	-- Life-Bound Binding
-			q(),	-- Life-Bound Boots
-			q(),	-- Life-Bound Cap
-			q(),	-- Life-Bound Chestpiece
-			q(),	-- Life-Bound Gloves
-			q(71711),	-- Life-Bound Shoulderpads
-			q(),	-- Life-Bound Trousers
+			-- q(),	-- Life-Bound Belt
+			-- q(71713),	-- Life-Bound Binding
+			-- q(),	-- Life-Bound Boots
+			-- q(),	-- Life-Bound Cap
+			-- q(),	-- Life-Bound Chestpiece
+			-- q(),	-- Life-Bound Gloves
+			-- q(71711),	-- Life-Bound Shoulderpads
+			-- q(),	-- Life-Bound Trousers
 			q(71704),	-- Pioneer's Leather Boots
 			q(71703),	-- Pioneer's Leather Tunic
 			q(72569),	-- Pioneer's Leather Wristguard
@@ -2426,105 +2425,104 @@ root("HiddenQuestTriggers", {
 			q(72497),	-- Pioneer's Practiced Leggings
 			q(72498),	-- Pioneer's Practiced Shoulderpads
 			-- Mail Armor
-			q(),	-- Flame-Touched Chain
-			q(),	-- Flame-Touched Chainmail
-			q(),	-- Flame-Touched Cuffs
-			q(),	-- Flame-Touched Handguards
-			q(),	-- Flame-Touched Helmet
-			q(),	-- Flame-Touched Legguards
-			q(),	-- Flame-Touched Spaulders
-			q(),	-- Flame-Touched Treads
+			-- q(),	-- Flame-Touched Chain
+			-- q(),	-- Flame-Touched Chainmail
+			-- q(),	-- Flame-Touched Cuffs
+			-- q(),	-- Flame-Touched Handguards
+			-- q(),	-- Flame-Touched Helmet
+			-- q(),	-- Flame-Touched Legguards
+			-- q(),	-- Flame-Touched Spaulders
+			-- q(),	-- Flame-Touched Treads
 			q(71730),	-- Trailblazer's Scale Boots
-			q(),	-- Trailblazer's Scale Bracers
-			q(),	-- Trailblazer's Scale Vest
-			q(),	-- Trailblazer's Toughened Chainbelt
-			q(),	-- Trailblazer's Toughened Coif
+			q(71731),	-- Trailblazer's Scale Bracers
+			q(71729),	-- Trailblazer's Scale Vest
+			q(71705),	-- Trailblazer's Toughened Chainbelt
+			q(72501),	-- Trailblazer's Toughened Coif
 			q(72500),	-- Trailblazer's Toughened Grips
-			q(),	-- Trailblazer's Toughened Legguards
+			q(72502),	-- Trailblazer's Toughened Legguards
 			q(72503),	-- Trailblazer's Toughened Spikes
 			-- Profession Equipment
 			q(71683),	-- Alchemist's Hat
 			q(71767),	-- Durable Pack
-			q(),	-- Expert Alchemist's Hat
-			q(),	-- Expert Skinner's Cap
-			q(),	-- Flameproof Apron
-			q(),	-- Floral Basket
+			-- q(),	-- Expert Alchemist's Hat
+			-- q(),	-- Expert Skinner's Cap
+			-- q(),	-- Flameproof Apron
+			q(71751),	-- Floral Basket
 			q(71753),	-- Jeweler's Cover
-			q(),	-- Lavish Floral Pack
-			q(),	-- Masterwork Smock
+			-- q(),	-- Lavish Floral Pack
+			-- q(),	-- Masterwork Smock
 			q(71749),	-- Protective Gloves
-			q(),	-- Reinforced Pack
+			-- q(),	-- Reinforced Pack
 			q(71755),	-- Resilient Smock
-			q(),	-- Resplendent Cover
-			q(),	-- Shockproof Gloves
+			-- q(),	-- Resplendent Cover
+			-- q(),	-- Shockproof Gloves
 			q(71769),	-- Skinner's Cap
 			q(71744),	-- Smithing Apron
 			-- Weapons
-			q(),	-- Bonewrought Crossbow
+			q(71777),	-- Bonewrought Crossbow
 			-- Elemental Patterns
-			q(),	-- Ancestor's Dew Drippers
-			q(),	-- Flaring Cowl
-			q(),	-- Old Spirit's Wristwraps
-			q(),	-- Scale Rein Grips
-			q(),	-- Snowball Makers
-			q(),	-- String of Spiritual Knick-Knacks
-			q(),	-- Wind Spirit's Lasso
+			-- q(),	-- Ancestor's Dew Drippers
+			-- q(),	-- Flaring Cowl
+			-- q(),	-- Old Spirit's Wristwraps
+			-- q(),	-- Scale Rein Grips
+			-- q(),	-- Snowball Makers
+			-- q(),	-- String of Spiritual Knick-Knacks
+			-- q(),	-- Wind Spirit's Lasso
 			-- Bestial Patterns
-			q(),	-- Allied Heartwarming Fur Coat
-			q(),	-- Allied Legguards of Sansok Khan
-			q(),	-- Bow of the Dragon Hunters
-			q(),	-- Crimson Combatant's Adamant Chainmail
-			q(),	-- Crimson Combatant's Adamant Cowl
-			q(),	-- Crimson Combatant's Adamant Cuffs
-			q(),	-- Crimson Combatant's Adamant Eqpaulettes
-			q(),	-- Crimson Combatant's Adamant Gauntlets
-			q(),	-- Crimson Combatant's Adamant Girdle
-			q(),	-- Crimson Combatant's Adamant Leggings
-			q(),	-- Crimson Combatant's Adamant Treads
-			q(),	-- Crimson Combatant's Resilient Belt
-			q(),	-- Crimson Combatant's Resilient Boots
-			q(),	-- Crimson Combatant's Resilient Chestpiece
-			q(),	-- Crimson Combatant's Resilient Gloves
-			q(),	-- Crimson Combatant's Resilient Mask
-			q(),	-- Crimson Combatant's Resilient Shoulderpads
-			q(),	-- Crimson Combatant's Resilient Trousers
-			q(),	-- Crimson Combatant's Resilient Wristwraps
-			q(),	-- Infurious Boots of Reprieve
-			q(),	-- Infurious Chainhelm Protector
-			q(),	-- Infurious Footwraps of Indemnity
-			q(),	-- Infurious Spirit's Hood
+			-- q(),	-- Allied Heartwarming Fur Coat
+			-- q(),	-- Allied Legguards of Sansok Khan
+			-- q(),	-- Bow of the Dragon Hunters
+			-- q(),	-- Crimson Combatant's Adamant Chainmail
+			-- q(),	-- Crimson Combatant's Adamant Cowl
+			-- q(),	-- Crimson Combatant's Adamant Cuffs
+			-- q(),	-- Crimson Combatant's Adamant Eqpaulettes
+			-- q(),	-- Crimson Combatant's Adamant Gauntlets
+			-- q(),	-- Crimson Combatant's Adamant Girdle
+			-- q(),	-- Crimson Combatant's Adamant Leggings
+			-- q(),	-- Crimson Combatant's Adamant Treads
+			-- q(),	-- Crimson Combatant's Resilient Belt
+			-- q(),	-- Crimson Combatant's Resilient Boots
+			-- q(),	-- Crimson Combatant's Resilient Chestpiece
+			-- q(),	-- Crimson Combatant's Resilient Gloves
+			-- q(),	-- Crimson Combatant's Resilient Mask
+			-- q(),	-- Crimson Combatant's Resilient Shoulderpads
+			-- q(),	-- Crimson Combatant's Resilient Trousers
+			-- q(),	-- Crimson Combatant's Resilient Wristwraps
+			-- q(),	-- Infurious Boots of Reprieve
+			-- q(),	-- Infurious Chainhelm Protector
+			-- q(),	-- Infurious Footwraps of Indemnity
+			-- q(),	-- Infurious Spirit's Hood
 			-- Decayed Patter
-			q(),	-- Acidic Hailstone Treads
-			q(),	-- Silmy Expulsion Boots
-			q(),	-- Toxic Thorn Footwraps
-			q(),	-- Venom-Steeped Stompers
-			q(),	-- Witherrot Tome
+			-- q(),	-- Acidic Hailstone Treads
+			-- q(),	-- Silmy Expulsion Boots
+			-- q(),	-- Toxic Thorn Footwraps
+			-- q(),	-- Venom-Steeped Stompers
+			-- q(),	-- Witherrot Tome
 			-- Reagents
-			q(),	-- Finished Prototype Explorer's Barding
-			q(),	-- Finished Prototype Regal Barding
-			q(71764),	-- Earthshine Scale
-			q(),	-- Frostbite Scale
-			q(),	-- Infurious Hide
-			q(),	-- Infurious Scales
+			-- q(),	-- Finished Prototype Explorer's Barding
+			-- q(),	-- Finished Prototype Regal Barding
+			q(71764),	-- Earthshine Scales
+			q(71765),	-- Frostbite Scales
+			-- q(),	-- Infurious Hide
+			-- q(),	-- Infurious Scales
 			q(71760),	-- Mireslush Hide
-			q(),	-- Stonecrust Hide
+			q(71759),	-- Stonecrust Hide
 			-- Optional Reagents
-			q(),	-- Fang Adornments
-			q(),	-- Toxified Armor Patch
+			-- q(),	-- Fang Adornments
+			-- q(),	-- Toxified Armor Patch
 			-- Finishing Reagents
-			q(),	-- Illustrious Insight
+			-- q(),	-- Illustrious Insight
 			-- Armor Kits
-			q(),	-- Fierce Armor Kit
-			q(),	-- Frosted Armor Kit
+			-- q(),	-- Fierce Armor Kit
+			-- q(),	-- Frosted Armor Kit
 			q(71743),	-- Reinforced Armor Kit
 			-- Drums
 			q(71746),	-- Feral Hide Drums
 			-- Toys
-			q(),	-- Artisan's Sign
-			q(),	-- Gnoll Tent
-			q(71773),	-- Tuskarr Bean Bag
+			-- q(),	-- Artisan's Sign
+			-- q(),	-- Gnoll Tent
+			-- q(71773),	-- Tuskarr Bean Bag
 		}),
-		--]]
 		prof(SKINNING, {
 			q(70383),	-- Curious Hide Scraps #2
 			q(70384),	-- Curious Hide Scraps #3

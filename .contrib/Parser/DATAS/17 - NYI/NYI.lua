@@ -226,12 +226,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- NON SET THINGS
 			i(191942),	-- Belloc's Hat
 			-- Waking Shore Quest Rewards?
-			i(194378),	-- Explorer's Belt Knife
 			i(194379),	-- Field Scout's Longblade
 			i(194387),	-- Obsidian Watcher's Crossbow
 			i(194398),	-- Crumbling Watcher's Stone (NYI)
 			i(194417),	-- Vault Guard's Talon
-			i(194419),	-- Life Pool Herb Pouch
 			i(194420),	-- Blacktalon Blade
 			filter(COSMETIC, {
 				i(193069),	-- Climber's Pack
@@ -727,17 +725,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197953),	-- Ancient Protector's Broadsword
 			i(197955),	-- Sword of the Eternal Guard
 			i(197956),	-- Empowered Shortsword of Insight
-			i(197957),	-- Timeless Watcher's Saber
 				-- Thaldraszus
 			i(195177),	-- Moment's Notice
 			i(195181),	-- Rapid Fire
 
 
 			i(197684),	-- Argali Shearing Blade
-			i(197692),	-- Shikaar Fishing Bow
 			i(197693),	-- Shikaar Hunter's Crossbow
 			i(197904),	-- Shikaar Hunting Knife
-			i(197905),	-- Salamanther Slicer
 			i(200130),	-- Corpse Ripper
 			i(200138),	-- Ancient Dancer's Longspear
 			i(200139),	-- Tempest Arc

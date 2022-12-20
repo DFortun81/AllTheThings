@@ -29,6 +29,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(197698),	-- Mystic's Windblade
 						i(197701),	-- Ohn'ahran Greatsword
 						i(197697),	-- Ohn'ir Ritual Scepter
+						i(197905),	-- Salamanther Slicer
+						i(197692),	-- Shikaar Fishing Bow
 						i(197695),	-- Tuskchopper
 					},
 				}),
