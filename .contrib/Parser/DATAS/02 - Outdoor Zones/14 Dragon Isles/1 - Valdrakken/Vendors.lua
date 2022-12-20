@@ -451,7 +451,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(200977, {	-- Dusty Engineer's Scribblings
-						-- ["questID"] = TODO,
+						["questID"] = 71896,
 						["requireSkill"] = ENGINEERING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },

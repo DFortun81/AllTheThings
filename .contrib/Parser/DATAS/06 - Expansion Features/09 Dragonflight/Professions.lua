@@ -307,7 +307,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),--]]
 		}),
-		prof(BLACKSMITHING, {
+		prof(BLACKSMITHING, sharedData({
+			["requireSkill"] = BLACKSMITHING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -356,7 +358,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
-				-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? lol
 				-- ["sourceQuest"] = ,
 			}),
 			q(70235, {	-- Repair Bill
@@ -364,7 +365,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				-- ["isWeekly"] = true,
-				-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? lol
 				-- ["sourceQuest"] = ,
 			}),
 			q(70025, {	-- Artisan's Supply: Draconium Sickle
@@ -374,6 +374,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["cost"] = {{"i",191241,1}},	-- Draconium Sickle
 				-- ["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+			}),
+			o(376657, {	-- Ancient Monument
+				["description"] = "Kill NPCs and loot the sword. If you receive no loot, check your mail!",
+				["questID"] = 70246,
+				["coord"] = { 22.3, 87.7, THE_WAKING_SHORES },
+				["crs"] = { 188648 },	-- Enchanted Bulwark
+				["g"] = {
+					i(201007),	-- Ancient Monument
+				},
 			}),
 			o(380620, {	-- Ancient Spear Shards
 				["questID"] = 70313,
@@ -389,6 +398,20 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201005),	-- Curious Ingots
 				},
 			}),
+			o(380618, {	-- Draconic Flux
+				-- ["questID"] = TODO,
+				["coord"] = { 52.2, 80.5, THALDRASZUS },
+				["g"] = {
+					i(201006),	-- Draconic Flux
+				},
+			}),
+			o(380709, {	-- Falconer Gauntlet Drawings
+				-- ["questID"] = TODO,
+				["coord"] = { 50.9, 66.5, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(201009),	-- Falconer Gauntlet Drawings
+				},
+			}),
 			o(380598, {	-- Singed Chest
 				["questID"] = 70296,
 				["coord"] = { 35.6, 64.5, THE_WAKING_SHORES },
@@ -396,21 +419,18 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201008),	-- Molten Ingot
 				},
 			}),
+			o(380623, {	-- Spelltouched Tongs
+				["questID"] = 70314,
+				["coord"] = { 53.1, 66.1, THE_AZURE_SPAN },
+				["g"] = {
+					i(201011),	-- Spelltouched Tongs
+				},
+			}),
 			o(380617, {	-- Qalashi Weapon Diagram
 				["questID"] = 70310,
 				["coord"] = { 34.5, 67.1, THE_WAKING_SHORES },
 				["g"] = {
 					i(201010),	-- Qalashi Weapon Diagram
-				},
-			}),
-			q(67221, {	-- A Head For Metal
-				["sourceQuests"] = { 66359 },	-- First Completion of 'Unlocking our Past' (Forgemaster Bazentus)
-				["coord"] = { 24.5, 60.9, THE_WAKING_SHORES },
-				["provider"] = { "n", 191194 },	-- Weaponsmith Mida
-				["isWeekly"] = true,
-				-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? lol
-				["g"] = {
-					i(194963),	-- Plans: Black Dragon Seared Alloy (RECIPE!)
 				},
 			}),
 			q(66517, { -- A New Source of Weapons
@@ -471,7 +491,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-		}),
+		})),
 		prof(COOKING, {
 			q(72251, {	-- Dragon Isles Cooking
 				["sourceQuests"] = {

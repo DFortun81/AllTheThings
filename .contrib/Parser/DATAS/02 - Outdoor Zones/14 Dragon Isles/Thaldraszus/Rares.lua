@@ -16,9 +16,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 59.5, 59.2, THALDRASZUS },
 				["questID"] = 74055,
 				["cost"] = {{"i",197733,4}},	-- 4x Unsustainable Containment Core
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(197138),	-- Highland Drake: Striped Pattern
+				},
 			}),
 			n(193220, {	-- Broodweaver Araznae <Mother of Spiders>
 				["coord"] = { 59.6, 70.1, THALDRASZUS },

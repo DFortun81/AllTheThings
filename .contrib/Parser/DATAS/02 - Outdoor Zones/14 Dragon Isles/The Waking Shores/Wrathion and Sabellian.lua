@@ -113,6 +113,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						}),
 					},
 				}),
+				q(67221, {	-- A Head For Metal
+					["sourceQuests"] = { 66359 },	-- First Completion of 'Unlocking our Past' (Forgemaster Bazentus)
+					["coord"] = { 24.5, 60.9, THE_WAKING_SHORES },
+					["provider"] = { "n", 191194 },	-- Weaponsmith Mida
+					["isWeekly"] = true,
+					-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? move to Professions if it's fixed?
+					["g"] = {
+						i(194963),	-- Plans: Black Dragon Seared Alloy (RECIPE!)
+					},
+				}),
 				q(66419, {	-- Allegiance To One
 					["coord"] = { 25.0, 56.2, THE_WAKING_SHORES },
 					["isWorldQuest"] = true,

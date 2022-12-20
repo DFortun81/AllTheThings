@@ -644,10 +644,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200652),	-- Alchemical Flavor Pocket
 			i(198656),	-- Painter's Pretty Jewel
 			i(201003),	-- Furry Gloop
-			i(201006),	-- Draconic Flux
-			i(201007),	-- Ancient Monument
-			i(201009),	-- Falconer Gauntlet Drawings
-			i(201011),	-- Spelltouched Tongs
 			i(201012),	-- Enchanted Debris
 			i(201013),	-- Faintly Enchanted Remains
 			i(201014),	-- Boomthyr Rocket
@@ -853,7 +849,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197131),	-- Highland Drake: Hairy Cheek
 			i(197134),	-- Highland Drake: Spiked Legs
 			i(197136),	-- Highland Drake: Taperered Nose
-			i(197138),	-- Highland Drake: Striped Pattern
 			i(197146),	-- Highland Drake: White Scales
 			i(197152),	-- Highland Drake: Hooked Tail
 			i(197155),	-- Highland Drake: Finned Neck
