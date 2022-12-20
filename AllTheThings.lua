@@ -4966,6 +4966,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 
+					if not working and (right == RETRIEVING_DATA or right:find(RETRIEVING_DATA) or right:find("%[]")) then working = true; end
+
 					-- If this entry is an Achievement Criteria (whose raw parent is not the Achievement) then show the Achievement
 					if entry.criteriaID and entry.achievementID then
 						local rawParent = rawget(entry, "parent");
