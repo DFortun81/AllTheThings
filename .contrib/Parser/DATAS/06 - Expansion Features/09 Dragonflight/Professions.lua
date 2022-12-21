@@ -1558,18 +1558,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198667),	-- Spare Djaradin Tools
 				},
 			}),--]]
-			--[[q(70266, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+			o(380547, {	-- Decay-Infused Tanning Oil
+				["questID"] = 70266,
+				["coord"] = { 16.77, 38.83, THE_AZURE_SPAN },
 				["g"] = {
-					i(000000),	-- ???
+					i(198658),	-- Decay-Infused Tanning Oil
 				},
-			}),--]]
+			}),
 			q(70286, {	-- Treasure: Treated Hides
 				["name"] = "Treated Hides",
 				["provider"] = { "i", 198683 },	-- Treasure: Treated Hides
