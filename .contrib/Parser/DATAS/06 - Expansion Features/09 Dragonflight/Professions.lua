@@ -1401,42 +1401,28 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			q(70308, {	-- Treasure: Poachers Pack
-				["name"] = "Poachers Pack",
-				["provider"] = { "i", 198711 },	-- Poachers Pack
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			--[[o(TODO, {	-- Poachers Pack
+			o(380615, {	-- Poacher's Pack
 				["questID"] = 70308,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 39.0, 86.0, THE_WAKING_SHORES },
 				["g"] = {
-					i(198711),	-- Poachers Pack
+					i(198711),	-- Poacher's Pack
 				},
-			}),--]]
-			q(70269, {	-- Treasure: Well-Danced Drum
-				["name"] = "Well-Danced Drum",
-				["provider"] = { "i", 201018 },	-- Well-Danced Drum
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Well-Danced Drum
+			o(380554, {	-- Well-Danced Drum
+				["description"] = "Fix the drum by interacting with it, wait for the little Tuskarr to finish dancing, then you can loot the treasure.",
 				["questID"] = 70269,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 12.5, 49.4, THE_AZURE_SPAN },
 				["g"] = {
 					i(201018),	-- Well-Danced Drum
 				},
-			}),--]]
-			q(70280, {	-- Treasure: Spare Djaradin Tools
-				["name"] = "Spare Djaradin Tools",
-				["provider"] = { "i", 198667 },	-- Treasure: Spare Djaradin Tools
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Spare Djaradin Tools
+			o(380579, {	-- Spare Djaradin Tools
 				["questID"] = 70280,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 64.3, 25.4, THE_WAKING_SHORES },
 				["g"] = {
 					i(198667),	-- Spare Djaradin Tools
 				},
-			}),--]]
+			}),
 			o(380547, {	-- Decay-Infused Tanning Oil
 				["questID"] = 70266,
 				["coord"] = { 16.77, 38.83, THE_AZURE_SPAN },
@@ -1444,42 +1430,27 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198658),	-- Decay-Infused Tanning Oil
 				},
 			}),
-			q(70286, {	-- Treasure: Treated Hides
-				["name"] = "Treated Hides",
-				["provider"] = { "i", 198683 },	-- Treasure: Treated Hides
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			--[[o(TODO, {	-- Treated Hides
+			o(380587, {	-- Crate of Treated Hides
 				["questID"] = 70286,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 57.5, 41.3, THE_AZURE_SPAN },
 				["g"] = {
 					i(198683),	-- Treated Hides
 				},
-			}),--]]
-			q(70300, {	-- Treasure: Wind-Blessed Hide
-				["name"] = "Wind-Blessed Hide",
-				["provider"] = { "i", 198696 },	-- Treasure: Wind-Blessed Hide
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Wind-Blessed Hide
+			o(380602, {	-- Wind-Blessed Hide
 				["questID"] = 70300,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 86.4, 53.7, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(198696),	-- Wind-Blessed Hide
 				},
-			}),--]]
-			--[[q(70294, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
+			}),
+			o(380593, {	-- Bag of Decayed Scales
 				["questID"] = 70294,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 56.8, 30.5, THALDRASZUS },
 				["g"] = {
-					i(000000),	-- ???
+					i(198690),	-- Decayed Scales
 				},
-			}),--]]
+			}),
 			q(70256, {	-- Hidden Profession Master Leatherworking
 				["name"] = "Hidden Profession Master: Leatherworking",
 				["provider"] = { "n", 194842 },	-- Erden
