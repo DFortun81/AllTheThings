@@ -494,28 +494,28 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			o(380620, {	-- Treasure
+			o(380620, {	-- Ancient Spear Shards
 				["questID"] = 70313,
 				["coord"] = { 81.1, 37.9, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(201004),	-- Ancient Spear Shards
 				},
 			}),
-			o(380619, {	-- Treasure
+			o(380619, {	-- Curious Ingots
 				["questID"] = 70312,
 				["coord"] = { 65.6, 25.7, THE_WAKING_SHORES },
 				["g"] = {
 					i(201005),	-- Curious Ingots
 				},
 			}),
-			o(380598, {	-- Treasure
+			o(380598, {	-- Molten Ingot
 				["questID"] = 70296,
 				["coord"] = { 35.6, 64.5, THE_WAKING_SHORES },
 				["g"] = {
 					i(201008),	-- Molten Ingot
 				},
 			}),
-			o(380617, {	-- Treasure
+			o(380617, {	-- Qalashi Weapon Diagram
 				["questID"] = 70310,
 				["coord"] = { 34.5, 67.1, THE_WAKING_SHORES },
 				["g"] = {
@@ -533,13 +533,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(70230, {	-- Treasure: Glimmer of Blacksmithing Wisdom
 				["name"] = "Glimmer of Blacksmithing Wisdom",
-				-- Requires crafting a primal molten alloy, which triggers questID 70232
+				-- Requires crafting a primal molten alloy, which triggers questID 70232. Add as sourceQuest?
 				["provider"] = { "i", 198791 },	-- Treasure: Glimmer of Blacksmithing Wisdom
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Glimmer of Blacksmithing Wisdom
 				["questID"] = 70230,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 56.4, 19.5, THE_WAKING_SHORES },
 				["g"] = {
 					i(198791),	-- Glimmer of Blacksmithing Wisdom
 				},
@@ -550,11 +550,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(201011),	-- Spelltouched Tongs
 				},
-			}),
-			q(70353, {	-- Treasure: Falconer Gauntlet Drawings
-				["name"] = "Falconer Gauntlet Drawings",
-				["provider"] = { "i", 201009 },	-- Treasure: Falconer Gauntlet Drawings
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
 			o(380709, {	-- Falconer Gauntlet Drawings
 				["questID"] = 70353,
@@ -686,102 +681,63 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			q(70272, {	-- Treasure: Enchanted Debris
-				["name"] = "Enchanted Debris",
-				["provider"] = { "i", 201012 },	-- Treasure: Enchanted Debris
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			--[[o(TODO, {	-- Enchanted Debris
+			o(380558, {	-- Enchanted Debris
+				["description"] = "Interact with the Disenchanted Broom, then follow it to the location of the treasure.",
 				["questID"] = 70272,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 57.5, 58.5, THE_WAKING_SHORES },
 				["g"] = {
 					i(201012),	-- Enchanted Debris
 				},
-			}),--]]
-			q(70320, {	-- Treasure: Flashfrozen Scroll
-				["name"] = "Flashfrozen Scroll",
-				["provider"] = { "i", 198798 },	-- Treasure: Flashfrozen Scroll
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Flashfrozen Scroll
+			o(380643, {	-- Flashfrozen Scroll
 				["questID"] = 70320,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 57.5, 83.6, THE_WAKING_SHORES },
 				["g"] = {
 					i(198798),	-- Flashfrozen Scroll
 				},
-			}),--]]
-			q(70283, {	-- Treasure: Lava-Infused Seed
-				["name"] = "Lava-Infused Seed",
-				["provider"] = { "i", 198675 },	-- Treasure: Lava-Infused Seed
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Lava-Infused Seed
+			o(380580, {	-- Lava-Infused Seed
 				["questID"] = 70283,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 68.0, 26.8, THE_WAKING_SHORES },
 				["g"] = {
 					i(198675),	-- Lava-Infused Seed
 				},
-			}),--]]
-			q(70298, {	-- Treasure: Enriched Earthen Shard
-				["name"] = "Enriched Earthen Shard",
-				["provider"] = { "i", 198694 },	-- Treasure: Enriched Earthen Shard
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Enriched Earthen Shard
+			o(380600, {	-- Enriched Earthen Shard
 				["questID"] = 70298,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 21.0, 45.0, THE_AZURE_SPAN },
 				["g"] = {
 					i(198694),	-- Enriched Earthen Shard
 				},
-			}),--]]
-			q(70336, {	-- Treasure: Forgotten Arcane Tome
-				["name"] = "Forgotten Arcane Tome",
-				["provider"] = { "i", 198799 },	-- Treasure: Forgotten Arcane Tome
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Forgotten Arcane Tome
+			o(380647, {	-- Forgotten Arcane Tome
 				["questID"] = 70336,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 38.5, 59.2, THE_AZURE_SPAN },
 				["g"] = {
 					i(198799),	-- Forgotten Arcane Tome
 				},
-			}),--]]
-			--[[q(70290, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
-				["g"] = {
-					i(000000),	-- ???
-				},
-			}),--]]
-			q(70291, {	-- Treasure: Stormbound Horn
-				["name"] = "Stormbound Horn",
-				["provider"] = { "i", 198689 },	-- Treasure: Stormbound Horn
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Stormbound Horn
+			o(380589, {	-- Faintly Enchanted Remains
+				["questID"] = 70290,
+				["coord"] = { 45.1, 61.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(201013),	-- Faintly Enchanted Remains
+				},
+			}),
+			o(380592, {	-- Stormbound Horn
 				["questID"] = 70291,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 61.4, 67.6, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(198689),	-- Stormbound Horn
 				},
-			}),--]]
-			q(70342, {	-- Treasure: Fractured Titanic Sphere
-				["name"] = "Fractured Titanic Sphere",
-				["provider"] = { "i", 198800 },	-- Treasure: Fractured Titanic Sphere
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Fractured Titanic Sphere
+			o(380652, {	-- Fractured Titanic Sphere
 				["questID"] = 70342,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 59.9, 70.4, THALDRASZUS },
 				["g"] = {
 					i(198800),	-- Fractured Titanic Sphere
 				},
-			}),--]]
+			}),
 			q(70251, {	-- Hidden Profession Master Enchanting
 				["name"] = "Hidden Profession Master: Enchanting",
 				["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
