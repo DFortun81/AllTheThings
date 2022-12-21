@@ -531,19 +531,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201007),	-- Ancient Monument
 				},
 			}),
-			q(70230, {	-- Treasure: Glimmer of Blacksmithing Wisdom
-				["name"] = "Glimmer of Blacksmithing Wisdom",
-				-- Requires crafting a primal molten alloy, which triggers questID 70232. Add as sourceQuest?
-				["provider"] = { "i", 198791 },	-- Treasure: Glimmer of Blacksmithing Wisdom
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			--[[o(TODO, {	-- Glimmer of Blacksmithing Wisdom
+			o(380516, {	-- Glimmer of Wisdom
+				["description"] = "Craft a Primal Molten Alloy or a Frostfire Alloy next to the Dim Forge. A sparkle will appear in the deposit box, which you can click to grab the treasure.",
+				["sourceQuest"] = 70232, -- This triggers when crafting the Alloy, which makes the treasure appear.
 				["questID"] = 70230,
 				["coord"] = { 56.4, 19.5, THE_WAKING_SHORES },
 				["g"] = {
 					i(198791),	-- Glimmer of Blacksmithing Wisdom
 				},
-			}),--]]
+			}),
 			o(380623, {	-- Spelltouched Tongs
 				["questID"] = 70314,
 				["coord"] = { 53.1, 66.1, THE_AZURE_SPAN },

@@ -2473,6 +2473,7 @@ _.ObjectNames = {
 	[379321] = "Mysterious Paw Print",
 	[380429] = "Golden Claw",
 	[380430] = "Tail Fragment",
+	[380516] = "Glimmer of Wisdom",
 	[380533] = "Snow Covered Scroll",
 	[380540] = "Ornamented Statue",
 	[380547] = "Decay-Infused Tanning Oil",

@@ -2543,6 +2543,7 @@ _.ObjectNames = {
 	[378010] = "Forgotten Dragon Treasure",
 	[380429] = "Golden Claw",
 	[380430] = "Tail Fragment",
+	[380516] = "Glimmer of Wisdom",
 	[380518] = "Dislodged Dragoneye",
 	[380533] = "Snow Covered Scroll",
 	[380540] = "Ornamented Statue",
