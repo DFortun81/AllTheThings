@@ -483,7 +483,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
-			
+
 			q(70184, { -- Specialized Secrets: Blacksmithing
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
@@ -2022,5 +2022,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
 		q(71705),	-- When I craft item 193388 first time, leatherworking. But may due to / First time/ getting artisans mettle?
+		q(74430),	-- First weekly profession knowledge quest
 	}),
 }));

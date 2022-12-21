@@ -151,6 +151,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(69959, {	-- Gaelzion
 					["qg"] = 193653,	-- Gaelzion
 				}),
+				q(69956, {	-- Grizzlerock
+					["qg"] = 193652,	-- Grizzlerock
+				}),
 				q(69970, {	-- Kain Firebrand
 					["qg"] = 193675,	-- Kain Firebrand
 				}),

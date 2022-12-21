@@ -272,6 +272,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 201471 },	-- Story of a Spectacular Victory
 				["isWeekly"] = true,
 			}),
+				-- RENOWN 16 --
+			q(70966, {	-- Trading Made Easier
+				["description"] = "Requires Renown 16.",
+				["provider"] = { "n", 187869 },	-- Tikukk
+				["coord"] = { 12.6, 50.2, THE_AZURE_SPAN },
+			}),
 
 		}),
 		-- Maybe sub-header related items, maybe not
@@ -293,5 +299,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72393),	-- Triggered with 'Trader's Apparel' (70960)
 		q(72400),	-- Triggered when hitting Renown 11
 		q(72782),	-- Triggered with 'A Lost Tribe' (68863)
+		q(72395),	-- Triggered with 'Trading Made Easier' (70966)
 	}),
 }));

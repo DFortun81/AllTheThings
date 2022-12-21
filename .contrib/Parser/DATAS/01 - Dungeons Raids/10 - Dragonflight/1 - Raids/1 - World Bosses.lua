@@ -11,6 +11,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			e(2515, {	-- Strunraan, The Sky's Misery
 				["crs"] = { 193534 },
 				["coord"] = { 82.0, 76.0, OHNAHRAN_PLAINS },
+				["questID"] = 72055,
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
@@ -20,6 +21,11 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200734),	-- Striders of the Sky's Misery
 					i(200676),	-- Static-Charged Scale
 				}),
+			}),
+			q(69929, {	-- Strunraan (WQ)
+				["sym"] = {
+					{"select","encounterID",2515,},{"pop"},	-- Original WB
+				},
 			}),
 			e(2506, {	-- Basrikron, The Shale Wing
 				["crs"] = { 193535 },
@@ -43,6 +49,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			e(2517, {	-- Bazual, The Dreaded Flame
 				["crs"] = { 193532 },
 				-- ["coord"] = { , , THE_AZURE_SPAN },
+				-- ["questID"] = TODO,
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
@@ -53,9 +60,15 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200761),	-- Smoldering Sulfuron Signet
 				}),
 			}),
+			-- q(TODO, {	-- Bazual (WQ)
+			-- 	["sym"] = {
+			-- 		{"select","encounterID",2517,},{"pop"},	-- Original WB
+			-- 	},
+			-- }),
 			e(2518, {	-- Liskanoth, The Futurebane
 				["crs"] = { 193533 },
 				-- ["coord"] = { , , THALDRASZUS },
+				-- ["questID"] = TODO,
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
@@ -66,6 +79,11 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200743),	-- Frozen Footwraps
 				}),
 			}),
+			-- q(TODO, {	-- Liskanoth (WQ)
+			-- 	["sym"] = {
+			-- 		{"select","encounterID",2518,},{"pop"},	-- Original WB
+			-- 	},
+			-- }),
 		}),
 	}),
 })));

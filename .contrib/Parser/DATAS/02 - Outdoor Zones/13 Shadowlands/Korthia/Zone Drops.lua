@@ -217,6 +217,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			i(186148),	-- Mawsworn Vanquisher's Spire*
 			i(186145),	-- Stygian Thorn Loop
 			i(186146),	-- Mawsworn Sentry's Cudgel
+			currency(1931),	-- Cataloged Research
 		}),
 	}),
 })));
