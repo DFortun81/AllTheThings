@@ -369,21 +369,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[q(TODO, {	-- Weekly Alchemy Knowledgepoint #1
+			q(66373, {	-- Weekly Alchemy Knowledgepoint #1
 				["name"] = "Weekly Alchemy Knowledgepoint #1",
 				["provider"] = { "i", 193891 },		-- Experimental Substance
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(TODO, {	-- Weekly Alchemy Knowledgepoint #2
+			q(70511, {	-- Weekly Alchemy Knowledgepoint #2
 				["name"] = "Weekly Alchemy Knowledgepoint #2",
 				["provider"] = { "i", 198964 },		-- Elementious Splinter
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(TODO, {	-- Weekly Alchemy Knowledgepoint #3
+			--[[q(TODO, {	-- Weekly Alchemy Knowledgepoint #3
 				["name"] = "Weekly Alchemy Knowledgepoint #3",
 				["provider"] = { "i", 198963 },		-- Decaying Phlegm
 				["timeline"] = { ADDED_DF_REL },
@@ -1232,13 +1232,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			--[[q(TODO, {	-- Weekly Inscription Knowledgepoint #2
+			q(66375, {	-- Weekly Inscription Knowledgepoint #2
 				["name"] = "Weekly Inscription Knowledgepoint #2",
 				["provider"] = { "i", 193904 },		-- Phoenix Feather Quill
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),--]]
+			}),
 			q(70518, {	-- Weekly Inscription Knowledgepoint #3
 				["name"] = "Weekly Inscription Knowledgepoint #3",
 				["provider"] = { "i", 198971 },		-- Curious Djaradin Rune
@@ -1441,13 +1441,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			--[[q(TODO, {	-- Weekly Jewelcrafting Knowledgepoint #2
+			q(70521, {	-- Weekly Jewelcrafting Knowledgepoint #2
 				["name"] = "Weekly Jewelcrafting Knowledgepoint #2",
 				["provider"] = { "i", 198974 },		-- Elegantly Engraved Embellishment
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),--]]
+			}),
 			q(66388, {	-- Weekly Jewelcrafting Knowledgepoint #3
 				["name"] = "Weekly Jewelcrafting Knowledgepoint #3",
 				["provider"] = { "i", 193909 },		-- Ancient Gem Fragments
@@ -1626,20 +1626,20 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			--[[q(TODO, {	-- Weekly Leatherworking Knowledgepoint #2
+			q(70522, {	-- Weekly Leatherworking Knowledgepoint #2
 				["name"] = "Weekly Leatherworking Knowledgepoint #2",
 				["provider"] = { "i", 198975 },		-- Ossified Hide
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
-			q(TODO, {	-- Weekly Leatherworking Knowledgepoint #3
+			q(66384, {	-- Weekly Leatherworking Knowledgepoint #3
 				["name"] = "Weekly Leatherworking Knowledgepoint #3",
 				["provider"] = { "i", 193910 },		-- Molten Dragon Scales
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),--]]
+			}),
 			q(66385, {	-- Weekly Leatherworking Knowledgepoint #4
 				["name"] = "Weekly Leatherworking Knowledgepoint #4",
 				["provider"] = { "i", 193913 },		-- Preserved Animal Parts
