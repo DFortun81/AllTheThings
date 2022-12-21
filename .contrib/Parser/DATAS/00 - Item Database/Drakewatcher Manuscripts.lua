@@ -180,7 +180,7 @@ i(197349, 69550);	-- Renewed Proto-Drake: Gold and White Armor
 i(197381, 69582);	-- Renewed Proto-Drake: Gradiant Horns
 i(197367, 69568);	-- Renewed Proto-Drake: Gray Hair
 i(197371, 69572);	-- Renewed Proto-Drake: Green Hair
-i(197389, 69590);	-- Renewed Proto-Drake: Green Scales
+i(197389, 66720);	-- Renewed Proto-Drake: Green Scales
 i(197356, 69557);	-- Renewed Proto-Drake: Hairy Back
 i(197359, 69560);	-- Renewed Proto-Drake: Hairy Brow
 i(197395, 69596);	-- Renewed Proto-Drake: Harrier Pattern

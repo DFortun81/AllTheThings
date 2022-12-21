@@ -856,7 +856,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197373),	-- Renewed Proto-Drake: Helm
 			i(197379),	-- Renewed Proto-Drake: Impaler Horns
 			i(197384),	-- Renewed Proto-Drake: Thick Spined Jaw
-			i(197389),	-- Renewed Proto-Drake: Green Scales
 			i(197393),	-- Renewed Proto-Drake: White Scales
 			i(197400),	-- Renewed Proto-Drake: Shark Snout
 			i(197404),	-- Renewed Proto-Drake: Finned Tail
