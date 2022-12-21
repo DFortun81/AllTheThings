@@ -834,30 +834,22 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			q(70275, {	-- Treasure: Intact Coil Capacitor
-				["name"] = "Intact Coil Capacitor",
-				["provider"] = { "i", 198789 },	-- Treasure: Intact Coil Capacitor
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			--[[o(TODO, {	-- Intact Coil Capacitor
+			o(380560, {	-- Disabled Tesla Coil
+				["description"] = "Click on the three exposed items to make the treasure appear.",
 				["questID"] = 70275,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 49.1, 77.5, THE_WAKING_SHORES },
 				["g"] = {
 					i(198789),	-- Intact Coil Capacitor
 				},
-			}),--]]
-			q(70270, {	-- Treasure: Boomthyr Rocket
-				["name"] = "Boomthyr Rocket",
-				["provider"] = { "i", 201014 },	-- Treasure: Boomthyr Rocket
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Boomthyr Rocket
+			o(380571, {	-- Boomthyr Rocket
+				["description"] = "Interact with the Note next to the rocket, then gather the items in the surrounding area. You may need to leave and return to the area after gathering all objects for the treasure to be clickable after that.",
 				["questID"] = 70270,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 56.0, 44.9, THE_WAKING_SHORES },
 				["g"] = {
 					i(201014),	-- Boomthyr Rocket
 				},
-			}),--]]
+			}),
 			q(70252, {	-- Hidden Profession Master Engineering
 				["name"] = "Hidden Profession Master: Engineering",
 				["provider"] = { "n", 194838 },	-- Frizz Buzzcrank
