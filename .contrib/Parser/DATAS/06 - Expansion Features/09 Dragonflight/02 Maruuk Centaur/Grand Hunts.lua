@@ -358,8 +358,25 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 			-- }),
 			n(REWARDS, {
-				i(194085),	-- Proof of Might
-				i(194086),	-- Proof of Cunning
+				i(200290),	-- Bakar Companion
+				i(194094, {	-- Bakar Companion Color: Black
+					["questID"] = 71044,
+				}),
+				i(194093, {	-- Bakar Companion Color: Brown
+					--["questID"] = TODO, probably 71045
+				}),
+				i(194091, {	-- Bakar Companion Color: Golden Brown
+					["questID"] = 71048,
+				}),	
+				i(194089, {	-- Bakar Companion Color: Orange
+					["questID"] = 71046,
+				}),
+				i(194090, {	-- Bakar Companion Color: White
+					["questID"] = 71047,
+				}),
+				i(194097),	-- Hunter's Fabulous Treasure
+				i(194108),	-- Mighty Hunter's Horn
+				i(200276),	-- Ohuna Companion
 				i(193205, {	-- Ohuna Companion Color: Brown
 					["questID"] = 71050,
 				}),
@@ -369,26 +386,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(194088, {	-- Ohuna Companion Color: Dark
 					["questID"] = 71049,
 				}),
-				i(194089, {	-- Bakar Companion Color: Orange
-					["questID"] = 71046,
-				}),
-				i(194090, {	-- Bakar Companion Color: White
-					["questID"] = 71047,
-				}),
-				i(194091, {	-- Bakar Companion Color: Golden Brown
-					["questID"] = 71048,
-				}),
-				i(194092),	-- Timbertooth Pelt
-				i(194093),	-- Bakar Companion Color: Brown
-				i(194094, {	-- Bakar Companion Color: Black
-					["questID"] = 71044,
-				}),
 				i(194095, {	-- Ohuna Companion Color: Sepia
 					["questID"] = 71052,
 				}),
-				i(194097),	-- Hunter's Fabulous Treasure
+				i(194086),	-- Proof of Cunning
+				i(194085),	-- Proof of Might
 				i(194099),	-- Shikaar Hunting Horn
-				i(194108),	-- Mighty Hunter's Horn
+				i(194092),	-- Timbertooth Pelt
 
 				q(70906, {
 					["name"] = "1st Weekly Grand Hunt",

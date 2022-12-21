@@ -192,8 +192,10 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72391),	-- Triggered with 'Ice Fishing' (70944)
 		q(72394),	-- Triggered with 'Fascinating Fliers' (70955)
 		q(72280),	-- Triggered with 'Hook, Line, and Swelter!' (70948)
-		q(67141),	-- Triggered after crafting Iskaaran Ice Axe after Ice Fishing (renown 10)
-		q(67139),	-- Triggered after crafting Flying Fish Bone Charm
+		--
+		q(67140),	-- Triggered after crafting 'Polished Basalt Bracelet'
+		q(67139),	-- Triggered after crafting 'Flying Fish Bone Charm'
+		q(67141),	-- Triggered after crafting 'Iskaaran Ice Axe'
 		--
 		q(72828),	-- First weekly completion of 'Catch and Release: Scalebell Mackerel' (70199)
 		q(72827),	-- First weekly completion of 'Catch and Release: Thousandbite Piranha' (70200)

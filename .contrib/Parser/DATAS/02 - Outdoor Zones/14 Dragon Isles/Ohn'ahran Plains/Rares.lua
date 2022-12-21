@@ -149,8 +149,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(196010, {	-- Researcher Sneakwing <The Sundered Flame>
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
-				-- ["questID"] = 70698,
+				["coord"] = { 37.3, 53.9, OHNAHRAN_PLAINS },
+				["questID"] = 74023,
 				-- ["g"] = {
 
 				-- },
