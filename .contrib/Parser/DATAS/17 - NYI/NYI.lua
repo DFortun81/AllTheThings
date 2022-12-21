@@ -721,7 +721,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197945),	-- Gnarled Thorn Bow
 			i(197953),	-- Ancient Protector's Broadsword
 			i(197955),	-- Sword of the Eternal Guard
-			i(197956),	-- Empowered Shortsword of Insight
 				-- Thaldraszus
 			i(195177),	-- Moment's Notice
 			i(195181),	-- Rapid Fire
@@ -874,7 +873,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197594),	-- Windborne Velocidrake: Small Ears
 			i(197600),	-- Windborne Velocidrake: Helm
 			i(197604),	-- Windborne Velocidrake: Ox Horns
-			i(197605),	-- Windborne Velocidrake: Curled Horns
 			i(197606),	-- Windborne Velocidrake: Swept Horns
 			i(197609),	-- Windborne Velocidrake: White Horns
 			i(197615),	-- Windborne Velocidrake: Teal Scales

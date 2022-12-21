@@ -221,7 +221,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197613),	-- Windborne Velocidrake: Bronze Scales (DM!)
 		i(197624),	-- Windborne Velocidrake: Club Tail (DM!)
 		i(197602),	-- Windborne Velocidrake: Cluster Horns (DM!)
-		i(197605),	-- Windborne Velocidrake: Curled Horns
+		i(197605),	-- Windborne Velocidrake: Curled Horns (DM!)
 		i(197603),	-- Windborne Velocidrake: Curved Horns (DM!)
 		i(197583),	-- Windborne Velocidrake: Exposed Finned Back
 		i(197626),	-- Windborne Velocidrake: Exposed Finned Neck

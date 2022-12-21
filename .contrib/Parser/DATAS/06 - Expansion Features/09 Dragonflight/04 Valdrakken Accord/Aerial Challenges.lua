@@ -9,6 +9,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
 					i(197366),	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
 					i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw (DM!)
+					i(197605),	-- Windborne Velocidrake: Curled Horns (DM!)
 				}),
 			}),
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {

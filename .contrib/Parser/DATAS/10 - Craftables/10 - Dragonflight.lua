@@ -955,7 +955,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			q(71879, { ["name"] = "First Craft: Green Fireflight", }),	-- Green Fireflight
 			q(71882, { ["name"] = "First Craft: Red Fireflight", }),	-- Red Fireflight
 			-- Explosives
-			--q(, { ["name"] = "First Craft: Creature Combustion Canister", }),	-- Creature Combustion Canister
+			q(71462, { ["name"] = "First Craft: Creature Combustion Canister", }),	-- Creature Combustion Canister
 			--q(, { ["name"] = "First Craft: EZ-Thro Creature Combustion Canister", }),	-- EZ-Thro Creature Combustion Canister
 			--q(, { ["name"] = "First Craft: EZ-Thro Gravitational Displacer", }),	-- EZ-Thro Gravitational Displacer
 			--q(, { ["name"] = "First Craft: EZ-Thro Grease Grenade", }),	-- EZ-Thro Grease Grenade
@@ -2304,108 +2304,105 @@ root("HiddenQuestTriggers", {
 			q(),	-- Cliffside Wylderdrake: Steel and Yellow Armor
 			q(),	-- Cliffside Wylderdrake: Triple Head Horns
 		}),
+		--]]
 		prof(JEWELCRAFTING, {
-			-- Jewelcrafting Essentials
-			q(),	-- Dragon Isles Crushing
-			q(),	-- Dragon Isles Prospecting
 			-- Reagents
-			q(),	-- Blotting Sand
-			q(),	-- Draconic Vial
-			q(),	-- Elemental Harmony
-			q(),	-- Empty Soul Cage
+			-- q(),	-- Blotting Sand
+			q(71673),	-- Draconic Vial
+			-- q(),	-- Elemental Harmony
+			-- q(),	-- Empty Soul Cage
 			q(71675),	-- Frameless Lens
-			q(),	-- Glossy Stone
-			q(),	-- Illustrious Insight
-			q(),	-- Pounce
+			q(71676),	-- Glossy Stone
+			-- q(),	-- Illustrious Insight
+			-- q(),	-- Pounce
 			q(71672),	-- Shimmering Clasp
 			-- Rudimentary Gems
-			q(),	-- Crafty Queen's Ruby
-			q(),	-- Energized Vibrant Emerald
-			q(),	-- Sensei's Sundered Onyx
-			q(),	-- Soild Eternity Amber
-			q(),	-- Zen Mystic Sapphire
+			q(71625),	-- Crafty Queen's Ruby
+			q(71623),	-- Energized Vibrant Emerald
+			q(71624),	-- Sensei's Sundered Onyx
+			q(71622),	-- Solid Eternity Amber
+			q(71626),	-- Zen Mystic Sapphire
 			-- Air Gems
-			q(),	-- Crafty Alexstraszite
-			q(),	-- Energized Malygite
+			-- q(),	-- Crafty Alexstraszite
+			-- q(),	-- Energized Malygite
 			q(71627),	-- Forceful Nozdorite
-			q(),	-- Keen Neltharite
-			q(),	-- Quick Ysemerald
+			-- q(),	-- Keen Neltharite
+			-- q(),	-- Quick Ysemerald
 			-- Earth Gems
-			q(),	-- Fractured Neltharite
-			q(),	-- Keen Ysemerald
+			-- q(),	-- Fractured Neltharite
+			-- q(),	-- Keen Ysemerald
 			q(71628),	-- Puissant Nozdorite
-			q(),	-- Sensei's Alexstraszite
-			q(),	-- Zen Malygite
+			-- q(),	-- Sensei's Alexstraszite
+			-- q(),	-- Zen Malygite
 			-- Fire Gems
-			q(),	-- Crafty Ysemerald
-			q(),	-- Deadly Alexstraszite
+			-- q(),	-- Crafty Ysemerald
+			-- q(),	-- Deadly Alexstraszite
 			q(71629),	-- Jagged Nozdorite
-			q(),	-- Radiant Malygite
-			q(),	-- Sensei's Neltharite
+			-- q(),	-- Radiant Malygite
+			-- q(),	-- Sensei's Neltharite
 			-- Frost Gems
-			q(),	-- Energized Ysemerald
-			q(),	-- Radiant Alexstraszite
+			-- q(),	-- Energized Ysemerald
+			-- q(),	-- Radiant Alexstraszite
 			q(71630),	-- Steady Nozdorite
-			q(),	-- Stormy Malygite
-			q(),	-- Zen Neltharite
+			-- q(),	-- Stormy Malygite
+			-- q(),	-- Zen Neltharite
 			-- Primalist Gems
-			q(),	-- Fierce Illimited Diamond
-			q(71619),	-- Inscribed Illimited Diamond
-			q(),	-- Resplendent Illimited Diamond
-			q(),	-- Skillful Illimited Diamond
+			-- q(),	-- Fierce Illimited Diamond
+			-- q(71619),	-- Inscribed Illimited Diamond
+			-- q(),	-- Resplendent Illimited Diamond
+			-- q(),	-- Skillful Illimited Diamond
 			-- Misc
-			q(71657),	-- Tiered Medallion Setting
+			-- q(71657),	-- Tiered Medallion Setting
 			-- Trinkets
-			q(),	-- Idol of the Earth Warder
-			q(),	-- Idol of the Dreamer
-			q(),	-- Idol of the Lifebinder
-			q(),	-- Idol of the Spellweaver
+			-- q(),	-- Idol of the Earth Warder
+			-- q(),	-- Idol of the Dreamer
+			-- q(),	-- Idol of the Lifebinder
+			-- q(),	-- Idol of the Spellweaver
 			-- Jewelry
-			q(),	-- Band of New Beginnings
-			q(),	-- Choker of Shielding
-			q(),	-- Crimson Combatant's Jeweled Amulet
-			q(),	-- Crimson Combatant's Jeweled Signet
-			q(),	-- Elemental Lariat
+			q(71607),	-- Band of New Beginnings
+			-- q(),	-- Choker of Shielding
+			-- q(),	-- Crimson Combatant's Jeweled Amulet
+			-- q(),	-- Crimson Combatant's Jeweled Signet
+			-- q(),	-- Elemental Lariat
 			q(71602),	-- Pendant of Impending Perils
-			q(),	-- Ring-Bound Hourglass
-			q(),	-- Signet of Titanic Insight
-			q(),	-- Torc of Passed Time
+			-- q(),	-- Ring-Bound Hourglass
+			-- q(),	-- Signet of Titanic Insight
+			-- q(),	-- Torc of Passed Time
 			-- Statues & Carvings
-			q(),	-- Djaradin's "Pinata"
-			q(),	-- Kalu'ak Figurine
-			q(),	-- Narcissist's Sculpture
+			-- q(),	-- Djaradin's "Pinata"
+			-- q(),	-- Kalu'ak Figurine
+			-- q(),	-- Narcissist's Sculpture
 			q(71612),	-- Revitalizing Red Carving
-			q(),	-- Statue of Tyr's Herald
+			-- q(),	-- Statue of Tyr's Herald
 			-- Battle Pets
-			q(),	-- Jeweled Amber Whelpling
-			q(),	-- Jeweled Emerald Whelpling
-			q(),	-- Jeweled Onyx Whelpling
-			q(),	-- Jeweled Ruby Whelpling
-			q(),	-- Jeweled Sapphire Whelpling
+			-- q(),	-- Jeweled Amber Whelpling
+			-- q(),	-- Jeweled Emerald Whelpling
+			-- q(),	-- Jeweled Onyx Whelpling
+			-- q(),	-- Jeweled Ruby Whelpling
+			-- q(),	-- Jeweled Sapphire Whelpling
 			-- Noevelties
-			q(),	-- "Rhinestone" Sunglasses
-			q(),	-- Covergent Prism
-			q(),	-- Jeweled Offering
-			q(),	-- Projection Prism
-			q(),	-- Split-Lens Specs
+			-- q(),	-- "Rhinestone" Sunglasses
+			-- q(),	-- Covergent Prism
+			-- q(),	-- Jeweled Offering
+			-- q(),	-- Projection Prism
+			-- q(),	-- Split-Lens Specs
 			-- Profession Equipment
-			q(),	-- Alexstraszite Loupes
-			q(),	-- Bold-Print Bifocals
-			q(),	-- Chromatic Focus
-			q(),	-- Fine-Print Trifocals
-			q(),	-- Left-Handed Magnifying Glass
-			q(),	-- Magnificent Margin Magnifier
-			q(),	-- Resonant Focus
+			-- q(),	-- Alexstraszite Loupes
+			q(71661),	-- Bold-Print Bifocals
+			q(71659),	-- Chromatic Focus
+			-- q(),	-- Fine-Print Trifocals
+			q(71662),	-- Left-Handed Magnifying Glass
+			-- q(),	-- Magnificent Margin Magnifier
+			-- q(),	-- Resonant Focus
 			q(71665),	-- Sundered Onyx Loupes
 			-- Extravagant Glasswares
-			q(),	-- Dreamer's Vision
-			q(),	-- Earthwarden's Prize
-			q(71654),	-- Jeweled Dragon's Heart
-			q(),	-- Keeper's Glory
-			q(),	-- Queen's Gift
+			q(71655),	-- Dreamer's Vision
+			q(71651),	-- Earthwarden's Prize
+			-- q(71654),	-- Jeweled Dragon's Heart
+			-- q(),	-- Keeper's Glory
+			-- q(),	-- Queen's Gift
 			q(71653),	-- Timewatcher's Patience
 		}),
-		--]]
 		prof(LEATHERWORKING, {
 			-- Leather Armor
 			-- q(),	-- Life-Bound Belt
