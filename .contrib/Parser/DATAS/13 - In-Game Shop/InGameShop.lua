@@ -350,6 +350,45 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(188136, {	-- Mrrgl's Shiny Shell
 			["timeline"] = { "added 9.1.5.41079" },
 		}),
+		i(191616, {	-- Fireplume Crest
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191617, {	-- Fireplume Vestments
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191618, {	-- Fireplume Coverts
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191619, {	-- Fireplume Flarewraps
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191620, {	-- Fireplume Plumage
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191621, {	-- Fireplume Insignia
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191622, {	-- Fireplume Talons
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191627, {	-- Fireplume Blouse
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191628, {	-- Fireplume Tailwinds
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191774, {	-- Fireplume Claws
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191775, {	-- Fireplume Shorts and Stockings
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191776, {	-- Fireplume Coverts
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191779, {	-- Fireplume Halter
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
 	}),
 	-- #endif
 	-- #if AFTER 8.1.5.29737
