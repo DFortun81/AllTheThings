@@ -451,8 +451,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 								{"select","itemID", 200516},{"pop"},	-- Grand Hunt Spoils [Common]
 								{"select","itemID",
 								-- confirmed items here
-								i(200276),	-- Ohuna Companion (PET!)
-								i(200290),	-- Bakar Companion (PET!)
+								200276,	-- Ohuna Companion (PET!)
+								200290,	-- Bakar Companion (PET!)
 							}},
 						}),
 					},
