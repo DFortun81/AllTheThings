@@ -1724,102 +1724,64 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			q(70304, {	-- Treasure: Itinerant Singed Fabric
-				["name"] = "Itinerant Singed Fabric",
-				["provider"] = { "i", 198702 },	-- Treasure: Itinerant Singed Fabric
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			--[[o(TODO, {	-- Itinerant Singed Fabric
+			o(380607, {	-- Itinerant Singed Fabric
 				["questID"] = 70304,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 24.9, 69.7, THE_WAKING_SHORES },
 				["g"] = {
 					i(198702),	-- Itinerant Singed Fabric
 				},
-			}),--]]
-			q(70302, {	-- Treasure: Mysterious Banner
-				["name"] = "Mysterious Banner",
-				["provider"] = { "i", 198699 },	-- Treasure: Mysterious Banner
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Mysterious Banner
+			o(380604, {	-- Mysterious Banner
 				["questID"] = 70302,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 74.7, 37.9, THE_WAKING_SHORES },
 				["g"] = {
 					i(198699),	-- Mysterious Banner
 				},
-			}),--]]
-			q(70284, {	-- Treasure: Decaying Brackenhide Blanket
-				["name"] = "Decaying Brackenhide Blanket",
-				["provider"] = { "i", 198680 },	-- Treasure: Decaying Brackenhide Blanket
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Decaying Brackenhide Blanket
+			o(380583, {	-- Decaying Brackenhide Blanket
 				["questID"] = 70284,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 16.2, 38.8, THE_AZURE_SPAN },
 				["g"] = {
 					i(198680),	-- Decaying Brackenhide Blanket
 				},
-			}),--]]
-			q(70267, {	-- Treasure: Intriguing Bolt of Blue Cloth
-				["name"] = "Intriguing Bolt of Blue Cloth",
-				["provider"] = { "i", 198662 },	-- Treasure: Intriguing Bolt of Blue Cloth
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Intriguing Bolt of Blue Cloth
+			o(380549, {	-- Intriguing Bolt of Blue Cloth
 				["questID"] = 70267,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 40.7, 54.5, THE_AZURE_SPAN },
 				["g"] = {
 					i(198662),	-- Intriguing Bolt of Blue Cloth
 				},
-			}),--]]
-			q(70295, {	-- Treasure: Noteworthy Scrap of Carpet
-				["name"] = "Noteworthy Scrap of Carpet",
-				["provider"] = { "i", 198692 },	-- Treasure: Noteworthy Scrap of Carpet
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Noteworthy Scrap of Carpet
+			o(380597, {	-- Battle Hardened Centaur Carpet
 				["questID"] = 70295,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 35.3, 40.1, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(198692),	-- Noteworthy Scrap of Carpet
 				},
-			}),--]]
-			q(70303, {	-- Treasure: Silky Surprise
-				["name"] = "Silky Surprise",
-				["provider"] = { "i", 201020 },	-- Treasure: Silky Surprise
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Silky Surprise
+			o(380608, {	-- Silky Surprise
+				["description"] = "Interact with the Catnip Frond, gather 5 Catnip Leaves and throw them at the Playful Prowler. Then the treasure will appear.",
 				["questID"] = 70303,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 66.1, 52.9, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(201020),	-- Silky Surprise
 				},
-			}),--]]
-			q(70372, {	-- Treasure: Ancient Dragonweave Bolt
-				["name"] = "Ancient Dragonweave Bolt",
-				["provider"] = { "i", 201019 },	-- Treasure: Ancient Dragonweave Bolt
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Ancient Dragonweave Bolt
+			o(380763, {	-- Ancient Dragonweave Loom
+				["description"] = "Interact with the loom and complete the minigame to be awared this treasure.",
 				["questID"] = 70372,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 58.6, 45.8, THALDRASZUS },
 				["g"] = {
 					i(201019),	-- Ancient Dragonweave Bolt
 				},
-			}),--]]
-			--[[q(70288, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
+			}),
+			o(380588, {	-- Miniature Bronze Dragonflight Banner
 				["questID"] = 70288,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 58.6, 45.8, THALDRASZUS },
 				["g"] = {
-					i(000000),	-- ???
+					i(198684),	-- Miniature Bronze Dragonflight Banner
 				},
-			}),--]]
+			}),
 			q(70260, {	-- Hidden Profession Master Tailoring
 				["name"] = "Hidden Profession Master: Tailoring",
 				["description"] = "Above the Rostrum of Transformation, on a ledge.",
