@@ -398,7 +398,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),
 		}),
-		prof(BLACKSMITHING, {
+		prof(BLACKSMITHING, sharedData({
+			["requireSkill"] = BLACKSMITHING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -447,7 +449,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
-				-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? lol
 				-- ["sourceQuest"] = ,
 			}),
 			q(70235, {	-- Repair Bill
@@ -455,7 +456,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				-- ["isWeekly"] = true,
-				-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? lol
 				-- ["sourceQuest"] = ,
 			}),
 			q(70025, {	-- Artisan's Supply: Draconium Sickle
@@ -465,16 +465,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["cost"] = {{"i",191241,1}},	-- Draconium Sickle
 				-- ["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
-			}),
-			q(67221, {	-- A Head For Metal
-				["sourceQuests"] = { 66359 },	-- First Completion of 'Unlocking our Past' (Forgemaster Bazentus)
-				["coord"] = { 24.5, 60.9, THE_WAKING_SHORES },
-				["provider"] = { "n", 191194 },	-- Weaponsmith Mida
-				["isWeekly"] = true,
-				-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? lol
-				["g"] = {
-					i(194963),	-- Plans: Black Dragon Seared Alloy (RECIPE!)
-				},
 			}),
 			q(66517, { -- A New Source of Weapons
 				--["sourceQuests"] = {  },	-- Unknown
@@ -532,18 +522,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201010),	-- Qalashi Weapon Diagram
 				},
 			}),
-			q(70246, {	-- Treasure: Ancient Monument
-				["name"] = "Ancient Monument",
-				["provider"] = { "i", 201007 },	-- Treasure: Ancient Monument
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			--[[o(TODO, {	-- Treasure
+			o(376657, {	-- Ancient Monument
+				["description"] = "Kill NPCs and loot the sword. If you receive no loot, check your mail!",
 				["questID"] = 70246,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 22.3, 87.7, THE_WAKING_SHORES },
+				["crs"] = { 188648 },	-- Enchanted Bulwark
 				["g"] = {
 					i(201007),	-- Ancient Monument
 				},
-			}),--]]
+			}),
 			q(70230, {	-- Treasure: Glimmer of Blacksmithing Wisdom
 				["name"] = "Glimmer of Blacksmithing Wisdom",
 				-- Requires crafting a primal molten alloy, which triggers questID 70232
@@ -557,42 +544,32 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198791),	-- Glimmer of Blacksmithing Wisdom
 				},
 			}),--]]
-			q(70314, {	-- Treasure: Spelltouched Tongs
-				["name"] = "Spelltouched Tongs",
-				["provider"] = { "i", 201011 },	-- Treasure: Spelltouched Tongs
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			--[[o(TODO, {	-- Treasure
+			o(380623, {	-- Spelltouched Tongs
 				["questID"] = 70314,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 53.1, 66.1, THE_AZURE_SPAN },
 				["g"] = {
 					i(201011),	-- Spelltouched Tongs
 				},
-			}),--]]
+			}),
 			q(70353, {	-- Treasure: Falconer Gauntlet Drawings
 				["name"] = "Falconer Gauntlet Drawings",
 				["provider"] = { "i", 201009 },	-- Treasure: Falconer Gauntlet Drawings
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			o(380709, {	-- Falconer Gauntlet Drawings
 				["questID"] = 70353,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 50.9, 66.5, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(201009),	-- Falconer Gauntlet Drawings
 				},
-			}),--]]
-			q(70311, {	-- Treasure: Draconic Flux
-				["name"] = "Draconic Flux",
-				["provider"] = { "i", 201006 },	-- Treasure: Draconic Flux
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			o(380618, {	-- Draconic Flux
 				["questID"] = 70311,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 52.2, 80.5, THALDRASZUS },
 				["g"] = {
 					i(201006),	-- Draconic Flux
 				},
-			}),--]]
+			}),
 			q(70250, {	-- Hidden Profession Master Blacksmith
 				["name"] = "Hidden Profession Master: Blacksmith",
 				["provider"] = { "n", 194836 },	-- Grekka Anvilsmash
@@ -631,7 +608,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,		-- Dont remove until we have proper tracking
 			}),--]]
-		}),
+		})),
 		prof(COOKING, {
 			q(72251, {	-- Dragon Isles Cooking
 				["sourceQuests"] = {
@@ -714,7 +691,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 201012 },	-- Treasure: Enchanted Debris
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Enchanted Debris
 				["questID"] = 70272,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -726,7 +703,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198798 },	-- Treasure: Flashfrozen Scroll
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Flashfrozen Scroll
 				["questID"] = 70320,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -738,7 +715,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198675 },	-- Treasure: Lava-Infused Seed
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Lava-Infused Seed
 				["questID"] = 70283,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -750,7 +727,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198694 },	-- Treasure: Enriched Earthen Shard
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Enriched Earthen Shard
 				["questID"] = 70298,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -762,7 +739,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198799 },	-- Treasure: Forgotten Arcane Tome
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Forgotten Arcane Tome
 				["questID"] = 70336,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -774,7 +751,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 00000,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -786,7 +763,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198689 },	-- Treasure: Stormbound Horn
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Stormbound Horn
 				["questID"] = 70291,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -798,7 +775,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198800 },	-- Treasure: Fractured Titanic Sphere
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Fractured Titanic Sphere
 				["questID"] = 70342,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -910,7 +887,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198789 },	-- Treasure: Intact Coil Capacitor
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Intact Coil Capacitor
 				["questID"] = 70275,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -922,7 +899,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 201014 },	-- Treasure: Boomthyr Rocket
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Boomthyr Rocket
 				["questID"] = 70270,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1145,7 +1122,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 00000,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1157,7 +1134,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 00000,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1169,7 +1146,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198693 },	-- Treasure: Dusty Darkmoon Card
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Dusty Darkmoon Card
 				["questID"] = 70297,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1181,7 +1158,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198703 },	-- Treasure: Sign Language Reference Sheet
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Sign Language Reference Sheet
 				["questID"] = 70307,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1193,7 +1170,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 00000,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1205,7 +1182,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 00000,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1217,7 +1194,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 00000,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1229,7 +1206,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 00000,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1353,7 +1330,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 00000,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1365,7 +1342,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 00000,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1377,7 +1354,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 00000,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1389,7 +1366,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 00000,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1401,7 +1378,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 00000,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1413,7 +1390,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198660 },	-- Treasure: Fragmented Key
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Fragmented Key
 				["questID"] = 70263,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1425,7 +1402,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 00000,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1437,7 +1414,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 00000,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1550,7 +1527,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198711 },	-- Poachers Pack
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Poachers Pack
 				["questID"] = 70308,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1562,7 +1539,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 201018 },	-- Well-Danced Drum
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Well-Danced Drum
 				["questID"] = 70269,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1574,7 +1551,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198667 },	-- Treasure: Spare Djaradin Tools
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Spare Djaradin Tools
 				["questID"] = 70280,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1586,7 +1563,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 00000,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1598,7 +1575,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198683 },	-- Treasure: Treated Hides
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Treated Hides
 				["questID"] = 70286,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1610,7 +1587,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198696 },	-- Treasure: Wind-Blessed Hide
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Wind-Blessed Hide
 				["questID"] = 70300,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1622,7 +1599,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 70294,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1907,7 +1884,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198702 },	-- Treasure: Itinerant Singed Fabric
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Itinerant Singed Fabric
 				["questID"] = 70304,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1919,7 +1896,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198699 },	-- Treasure: Mysterious Banner
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Mysterious Banner
 				["questID"] = 70302,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1931,7 +1908,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198680 },	-- Treasure: Decaying Brackenhide Blanket
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Decaying Brackenhide Blanket
 				["questID"] = 70284,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1943,7 +1920,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198662 },	-- Treasure: Intriguing Bolt of Blue Cloth
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Intriguing Bolt of Blue Cloth
 				["questID"] = 70267,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1955,7 +1932,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 198692 },	-- Treasure: Noteworthy Scrap of Carpet
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Noteworthy Scrap of Carpet
 				["questID"] = 70295,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1967,7 +1944,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 201020 },	-- Treasure: Silky Surprise
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Silky Surprise
 				["questID"] = 70303,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1979,7 +1956,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 201019 },	-- Treasure: Ancient Dragonweave Bolt
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- Ancient Dragonweave Bolt
 				["questID"] = 70372,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -1991,7 +1968,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 000000 },	-- Treasure: ???
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),--]]
-			--[[o(TODO, {	-- Treasure
+			--[[o(TODO, {	-- ???
 				["questID"] = 70288,
 				["coord"] = { 00.0, 00.0, ZONE_NAME },
 				["g"] = {
@@ -2039,3 +2016,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 	}),
 })));
+
+
+--TODO: should we organize this section differently with the HQTs? There's going to be a million of them...
+root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+	m(VALDRAKKEN, {
+		q(71705),	-- When I craft item 193388 first time, leatherworking. But may due to / First time/ getting artisans mettle?
+	}),
+}));
