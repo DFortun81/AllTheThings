@@ -225,6 +225,7 @@ root("Holidays", applyholiday(MICRO_HOLIDAY, holiday(1574965, {	-- Call of the S
 				["crs"] = {	-- TODO: Check these IDs?
 					15211,	-- Azure Templar <Abyssal Council>
 					15209,	-- Crimson Templar <Abyssal Council>
+					15307,	-- Earthen Templar <Abyssal Council>
 					15212,	-- Hoary Templar <Abyssal Council>
 				},
 			}),

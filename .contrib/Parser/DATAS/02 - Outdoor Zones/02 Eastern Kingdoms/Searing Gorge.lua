@@ -386,7 +386,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/20 Dark Iron Pillow
-							["provider"] = { "i", 18943 },	-- Dark Iron Pillow
+							["providers"] = {
+								{ "i",  18943 },	-- Dark Iron Pillow
+								{ "o", 179828 },	-- Dark Iron Pillow
+							},
 							["cr"] = 14635,	-- Sleepy Dark Iron Worker
 						}),
 						i(19129, {	-- Everglowing Robe
@@ -446,8 +449,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(7704, {	-- Look at the Size of It!
 					["providers"] = {
-						{ "i", 18950 },	-- Chambermaid Pillaclencher's Pillow
-						{ "n", 14636 },	-- Chambermaid Pillaclencher
+						{ "i",  18950 },	-- Chambermaid Pillaclencher's Pillow
+						{ "o", 179832 },	-- Pillamaster's Ornate Pillow
+						{ "n",  14636 },	-- Chambermaid Pillaclencher
 					},
 					["timeline"] = { "created 1.12.1.10958", "added 3.3.0", "removed 4.0.3" },
 					["lvl"] = 45,
@@ -459,7 +463,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(28058, {	-- Look at the Size of It!
 					["providers"] = {
-						{ "i", 62933 },	-- Chambermaid Pillaclencher's Pillow
+						{ "i",  62933 },	-- Chambermaid Pillaclencher's Pillow
 						{ "o", 179832 },	-- Pillaclencher's Ornate Pillow
 					},
 					["sourceQuests"] = {
