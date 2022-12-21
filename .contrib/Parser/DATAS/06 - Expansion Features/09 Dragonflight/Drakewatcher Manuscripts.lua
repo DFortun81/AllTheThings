@@ -80,7 +80,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(196968),	-- Cliffside Wylderdrake: Steel and Yellow Armor (DM!)
 		i(196999),	-- Cliffside Wylderdrake: Swept Horns
 		i(196980),	-- Cliffside Wylderdrake: Triple Head Horns (DM!)
-		i(196989),	-- Cliffside Wylderdrake: White Mane
+		i(196989),	-- Cliffside Wylderdrake: White Hair
 		i(197014),	-- Cliffside Wylderdrake: White Scales
 		i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern (DM!)
 		i(197010),	-- Cliffside Wylderdrake: Red Scales (DM!)

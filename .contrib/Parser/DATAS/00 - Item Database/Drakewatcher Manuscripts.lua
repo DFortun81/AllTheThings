@@ -83,7 +83,7 @@ i(196997, 69197);	-- Cliffside Wylderdrake: Split Horns
 i(196968, 69168);	-- Cliffside Wylderdrake: Steel and Yellow Armor
 i(196999, 69199);	-- Cliffside Wylderdrake: Swept Horns
 i(196980, 69180);	-- Cliffside Wylderdrake: Triple Head Horns
-i(196989, 69189);	-- Cliffside Wylderdrake: White Mane
+i(196989, 69189);	-- Cliffside Wylderdrake: White Hair
 i(197014, 69214);	-- Cliffside Wylderdrake: White Scales
 i(197007, 69207);	-- Cliffside Wylderdrake: Wide Stripes Pattern
 i(197010, 69210);	-- Cliffside Wylderdrake: Red Scales

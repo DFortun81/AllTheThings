@@ -533,6 +533,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							{ "c", DRAGON_SUPPLIES, 100 },
 						},
 					}),
+					i(196989, {	-- Cliffside Wylderdrake: White Hair (DM!)
+						["description"] = "Renown 15.",
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 100 },
+						},
+					}),
 						-- RENOWN 21 --
 					i(197145, {	-- Highland Drake: Bronze Scales (DM!)
 						["cost"] = {

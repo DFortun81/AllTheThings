@@ -809,7 +809,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(196978),	-- Cliffside Wylderdrake: Small Head Spikes
 			i(196979),	-- Cliffside Wylderdrake: Curled Head Horns
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw
-			i(196989),	-- Cliffside Wylderdrake: White Hair
 			i(196990),	-- Cliffside Wylderdrake: Helm
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
 			i(196994),	-- Cliffside Wylderdrake: Short Horns
