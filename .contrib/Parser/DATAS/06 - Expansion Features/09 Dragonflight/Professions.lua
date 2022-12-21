@@ -1096,6 +1096,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
 			--Might not have an objectID, if the NPC gives the treasure after going through the steps.
+			--We can alternatively add it to the "Eight" object, since you need to click on the Ace through Eight cards to get this treasure.
 			--[[o(TODO, {	-- Counterfeit Darkmoon Deck
 				["description"] = "Speak to Siennagosa and offer to help putting her deck back together, then gather the cards in the proper order (Ace through Eight).",
 				["questID"] = 70287,
@@ -1239,102 +1240,66 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			--[[q(70273, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+			o(380822, {	-- Igneous Gem
+				["description"] = "Click the three crystals on the nearby small islands (quickly), then return to collect the treasure.",
+				["questID"] = 70273,
+				["coord"] = { 33.9, 63.7, THE_WAKING_SHORES },
 				["g"] = {
-					i(000000),	-- ???
+					i(201017),	-- Igneous Gem
 				},
-			}),--]]
-			--[[q(70292, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
-				["g"] = {
-					i(000000),	-- ???
-				},
-			}),--]]
-			--[[q(70271, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
-				["g"] = {
-					i(000000),	-- ???
-				},
-			}),--]]
-			--[[q(70277, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
-				["g"] = {
-					i(000000),	-- ???
-				},
-			}),--]]
-			--[[q(70282, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
-				["g"] = {
-					i(000000),	-- ???
-				},
-			}),--]]
-			q(70263, {	-- Treasure: Fragmented Key
-				["name"] = "Fragmented Key",
-				["provider"] = { "i", 198660 },	-- Treasure: Fragmented Key
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Fragmented Key
-				["questID"] = 70263,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+			o(380591, {	-- Closely Guarded Shiny
+				["questID"] = 70292,
+				["coord"] = { 50.4, 45.1, THE_WAKING_SHORES },
 				["g"] = {
+					i(198687),	-- Closely Guarded Shiny
+				},
+			}),
+			o(380556, {	-- Harmonic Chest
+				["description"] = "Click the key next to the chest, then click the three crystals in the same lake. Return to the chest to collect the treasure.",
+				["questID"] = 70271,
+				["coord"] = { 44.6, 61.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(201016),	-- Harmonic Crystal Harmonizer
+				},
+			}),
+			o(380569, {	-- Crystalline Overgrowth
+				["questID"] = 70277,
+				["coord"] = { 45.01, 61.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198664),	-- Crystalline Overgrowth
+				},
+			}),
+			o(380577, {	-- Lofty Malygite
+				["questID"] = 70282,
+				["coord"] = { 25.2, 35.4, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198670),	-- Lofty Malygite
+				},
+			}),
+			o(380548, {	-- Forgotten Jewelry Box
+				["questID"] = 70263,
+				["coord"] = { 61.8, 13.0 , OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198657),	-- Forgotten Jewelry Box
 					i(198660),	-- Fragmented Key
 				},
-			}),--]]
-			--[[q(70261, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+			}),
+			o(380545, {	-- Painter's Pretty Jewel
+				["description"] = "Inside the foilage of a lantern, very small! May also be bugged in War Mode.",
+				["questID"] = 70261,
+				["coord"] = { 56.9, 43.7, THALDRASZUS },
 				["g"] = {
-					i(000000),	-- ???
+					i(198656),	-- Painter's Pretty Jewel
 				},
-			}),--]]
-			--[[q(70285, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+			}),
+			o(380585, {	-- Erupted Alexstraszite Cluster
+				["questID"] = 70285,
+				["coord"] = { 59.8, 65.2, THALDRASZUS },
 				["g"] = {
-					i(000000),	-- ???
+					i(198682),	-- Alexstraszite Cluster
 				},
-			}),--]]
+			}),
 			q(70255, {	-- Hidden Profession Master Jewelcrafting
 				["name"] = "Hidden Profession Master: Jewelcrafting",
 				["provider"] = { "n", 194841 },	-- Pluutar
