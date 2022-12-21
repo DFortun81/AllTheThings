@@ -2489,6 +2489,7 @@ _.ObjectNames = {
 	[380560] = "Disabled Tesla Coil",
 	[380567] = "Eight of Storms",
 	[380569] = "Crystalline Overgrowth",
+	[380570] = "Curious Glyph",
 	[380571] = "Boomthyr Rocket",
 	[380577] = "Lofty Malygite",
 	[380578] = "How to Train Your Whelpling",

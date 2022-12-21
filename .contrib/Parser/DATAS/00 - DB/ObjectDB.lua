@@ -2570,6 +2570,7 @@ _.ObjectNames = {
 	[380566] = "Seven of Storms",
 	[380567] = "Eight of Storms",
 	[380569] = "Crystalline Overgrowth",
+	[380570] = "Curious Glyph",
 	[380571] = "Boomthyr Rocket",
 	[380577] = "Lofty Malygite",
 	[380579] = "Spare Djaradin Tools",
