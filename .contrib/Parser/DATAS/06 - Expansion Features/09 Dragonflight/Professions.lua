@@ -1061,102 +1061,72 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			--[[q(70306, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+			o(380610, {	-- Pulsing Earth Rune
+				["questID"] = 70306,
+				["coord"] = { 67.9, 58.0, THE_WAKING_SHORES },
 				["g"] = {
-					i(000000),	-- ???
+					i(198704),	-- Pulsing Earth Rune
 				},
-			}),--]]
-			--[[q(70293, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
-				["g"] = {
-					i(000000),	-- ???
-				},
-			}),--]]
-			q(70297, {	-- Treasure: Dusty Darkmoon Card
-				["name"] = "Dusty Darkmoon Card",
-				["provider"] = { "i", 198693 },	-- Treasure: Dusty Darkmoon Card
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Dusty Darkmoon Card
+			o(380595, {	-- Frosted Parchment
+				["questID"] = 70293,
+				["coord"] = { 43.7, 30.9, THE_AZURE_SPAN },
+				["g"] = {
+					i(198686),	-- Frosted Parchment
+				},
+			}),
+			o(380601, {	-- Dusty Darkmoon Card
 				["questID"] = 70297,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 46.2, 23.9, THE_AZURE_SPAN },
 				["g"] = {
 					i(198693),	-- Dusty Darkmoon Card
 				},
-			}),--]]
-			q(70307, {	-- Treasure: Sign Language Reference Sheet
-				["name"] = "Sign Language Reference Sheet",
-				["provider"] = { "i", 198703 },	-- Treasure: Sign Language Reference Sheet
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Sign Language Reference Sheet
+			o(380612, {	-- Sign Language Reference Sheet
 				["questID"] = 70307,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 85.7, 25.2, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(198703),	-- Sign Language Reference Sheet
 				},
-			}),--]]
-			--[[q(70287, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
+			}),
+			q(70287, {	-- Treasure: Counterfeit Darkmoon Deck
+				["description"] = "Speak to Siennagosa and offer to help putting her deck back together, then gather the cards in the proper order (Ace through Eight).",
+				["name"] = "Counterfeit Darkmoon Deck",
+				["provider"] = { "i", 201015 },	-- Treasure: Counterfeit Darkmoon Deck
 				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+			}),
+			--Might not have an objectID, if the NPC gives the treasure after going through the steps.
+			--[[o(TODO, {	-- Counterfeit Darkmoon Deck
+				["description"] = "Speak to Siennagosa and offer to help putting her deck back together, then gather the cards in the proper order (Ace through Eight).",
+				["questID"] = 70287,
+				["coord"] = { 56.1, 40.9, THALDRASZUS },
 				["g"] = {
-					i(000000),	-- ???
+					i(201015),	-- Counterfeit Darkmoon Deck
 				},
 			}),--]]
-			--[[q(70264, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+			o(380550, {	-- Forgetful Apprentice's Tome
+				["questID"] = 70264,
+				["coord"] = { 56.3, 41.2, THALDRASZUS },
 				["g"] = {
-					i(000000),	-- ???
+					i(198659),	-- Forgetful Apprentice's Tome (1 of 2)
 				},
-			}),--]]
-			--[[q(70248, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+			}),
+			o(380570, {	-- Curious Glyph
+				["description"] = "Interact with the glyph, cross the bridge and kill the neutral NPC at the end, then return to collect your treasure.",
+				["questID"] = 70248,
+				["coord"] = { 47.2, 40.1, THALDRASZUS },
 				["g"] = {
-					i(000000),	-- ???
+					i(198659),	-- Forgetful Apprentice's Tome (1 of 2)
 				},
-			}),--]]
-			--[[q(70281, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- ???
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+			}),
+			o(380578, {	-- How to Train Your Whelpling
+				["description"] = "Collect the Pulsing Earth Rune first! Otherwise this treasure might erroneously contain the rune, and you will not be able to collect the proper treasure.",
+				["questID"] = 70281,
+				["coord"] = { 13.2, 63.7, VALDRAKKEN },
 				["g"] = {
-					i(000000),	-- ???
+					i(198669),	-- How to Train Your Whelpling
 				},
-			}),--]]
+			}),
 			q(70254, {	-- Hidden Profession Master Inscription
 				["name"] = "Hidden Profession Master: Inscription",
 				["provider"] = { "n", 194840 },	-- Lydiara Whisperfeather
