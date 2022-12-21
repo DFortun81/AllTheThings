@@ -1104,6 +1104,7 @@ pet(0, 3249, {			-- Lil' Ursoc
 pet(191886, 3274);	-- Alvin the Anvil
 pet(193852, 3269);	-- Azure Frillfish
 pet(193837, 3326);	-- Backswimmer Timbertooth
+pet(200290, 3325);	-- Bakar Companion
 pet(198726, 3380);	-- Black Skitterbug
 pet(193834, 3321);	-- Blackfeather Nester
 pet(201261, 3411);	-- Blaze Spirit
@@ -1137,6 +1138,7 @@ pet(193571, 3303);	-- Mallard Duckling
 pet(191946, 3265);	-- Mister Muskoxeles
 pet(200519, 3286);	-- Mister Toots
 pet(200930, 3414);	-- Obsidian Proto-Whelp
+pet(200276, 3311);	-- Ohuna Companion
 pet(200927, 3408);	-- Petal
 pet(193484, 3302);	-- Pilot
 pet(201703, 3417);	-- Pinkie
@@ -1218,14 +1220,10 @@ pet(193380, 3298);	-- Pink Salamanther
 
 
 pet(0, 3308);	-- Time-Lost Duckling
-
-pet(0, 3311);	-- Ohuna Companion
 pet(193587, 3312);	-- Time-Lost Duck
 
 pet(193614, 3314);	-- Groundshaker
 pet(193835, 3323);	-- Brightfeather
-pet(0, 3325);	-- Bakar Companion
-
 pet(0, 3329);	-- Storm-Touched Timbertooth
 pet(193850, 3330);	-- Time-Lost Timbertooth
 pet(193853, 3331);	-- Emerald Frillfish
