@@ -430,7 +430,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(198615),	-- Pentagold Seal
 					-- Dusty
 					i(200974, {	-- Dusty Alchemist's Research
-						-- ["questID"] = TODO,
+						["questID"] = 71893,
 						["requireSkill"] = ALCHEMY,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
@@ -444,7 +444,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(200976, {	-- Dusty Enchanter's Research
-						-- ["questID"] = TODO,
+						["questID"] = 71895,
 						["requireSkill"] = ENCHANTING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
@@ -465,14 +465,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(200978, {	-- Dusty Jeweler's Illustrations
-						-- ["questID"] = TODO,
+						["questID"] = 71899,
 						["requireSkill"] = JEWELCRAFTING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
 						},
 					}),
 					i(200979, {	-- Dusty Leatherworker's Diagrams
-						-- ["questID"] = TODO,
+						["questID"] = 71900,
 						["requireSkill"] = LEATHERWORKING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
@@ -486,7 +486,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(200973, {	-- Dusty Scribe's Runic Drawings
-						-- ["questID"] = TODO,
+						["questID"] = 71898,
 						["requireSkill"] = INSCRIPTION,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
@@ -500,7 +500,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(200975, {	-- Dusty Tailor's Diagrams
-						-- ["questID"] = TODO,
+						["questID"] = 71903,
 						["requireSkill"] = TAILORING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
