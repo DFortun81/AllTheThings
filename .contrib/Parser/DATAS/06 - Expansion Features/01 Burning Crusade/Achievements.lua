@@ -191,7 +191,13 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 				},
 			}),
 			crit(3756, {	-- Ram (Loch Modan, Wetlands, Arathi Highlands, Ruins of Gilneas)
-				["maps"] = { LOCH_MODAN, WETLANDS, ARATHI_HIGHLANDS },
+				["maps"] = {
+					LOCH_MODAN,
+					WETLANDS,
+					-- #if AFTER CATA
+					ARATHI_HIGHLANDS,
+					-- #endif
+				},
 				["crs"] = { 2098 },	-- Ram
 			}),
 			crit(3757, {	-- Sheep (Uldum, Gilneas, Gilneas City, Howling Fjord, Redridge Mountains)
@@ -288,7 +294,13 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 				},
 			}),
 			crit(13, {	-- Ram (Loch Modan, Wetlands, Arathi Highlands, Ruins of Gilneas)
-				["maps"] = { LOCH_MODAN, WETLANDS, ARATHI_HIGHLANDS },
+				["maps"] = {
+					LOCH_MODAN,
+					WETLANDS,
+					-- #if AFTER CATA
+					ARATHI_HIGHLANDS,
+					-- #endif
+				},
 				["crs"] = { 2098 },	-- Ram
 			}),
 			crit(14, {	-- Sheep (Uldum, Gilneas, Gilneas City, Howling Fjord, Redridge Mountains)
