@@ -358,7 +358,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 			-- }),
 			n(REWARDS, {
-				i(200290),	-- Bakar Companion
+				i(200290),	-- Bakar Companion (PET!)
 				i(194094, {	-- Bakar Companion Color: Black
 					["questID"] = 71044,
 				}),
@@ -367,7 +367,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				i(194091, {	-- Bakar Companion Color: Golden Brown
 					["questID"] = 71048,
-				}),	
+				}),
 				i(194089, {	-- Bakar Companion Color: Orange
 					["questID"] = 71046,
 				}),
@@ -376,7 +376,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				i(194097),	-- Hunter's Fabulous Treasure
 				i(194108),	-- Mighty Hunter's Horn
-				i(200276),	-- Ohuna Companion
+				i(200276),	-- Ohuna Companion (PET!)
 				i(193205, {	-- Ohuna Companion Color: Brown
 					["questID"] = 71050,
 				}),
@@ -451,8 +451,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 								{"select","itemID", 200516},{"pop"},	-- Grand Hunt Spoils [Common]
 								{"select","itemID",
 								-- confirmed items here
-								i(200276),	-- Ohuna Companion
-								i(200290),	-- Bakar Companion
+								i(200276),	-- Ohuna Companion (PET!)
+								i(200290),	-- Bakar Companion (PET!)
 							}},
 						}),
 					},
