@@ -272,90 +272,58 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			--[[q(70289, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- Treasure
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+			o(380590, {	-- Well Insulated Mug
+				["questID"] = 70289,
+				["coord"] = { 25.1, 73.3, THE_WAKING_SHORES },
 				["g"] = {
-					i(000000),	-- ???
+					i(198685),	-- Well Insulated Mug
 				},
-			}),--]]
-			--[[q(70274, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- Treasure
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
-				["g"] = {
-					i(000000),	-- ???
-				},
-			}),--]]
-			--[[q(70208, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- Treasure
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
-				["g"] = {
-					i(000000),	-- ???
-				},
-			}),--]]
-			--[[q(70309, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- Treasure
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
-				["g"] = {
-					i(000000),	-- ???
-				},
-			}),--]]
-			q(70305, {	-- Treasure: Canteen of Suspicious Water
-				["name"] = "Canteen of Suspicious Water",
-				["provider"] = { "i", 198710 },	-- Treasure: Canteen of Suspicious Water
-				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			--[[o(TODO, {	-- Treasure
+			o(380559, {	-- Frostforged Potion
+				["questID"] = 70274,
+				["coord"] = { 55.0, 81.0, THE_WAKING_SHORES },
+				["g"] = {
+					i(198663),	-- Frostforged Potion
+				},
+			}),
+			o(380457, {	-- Experimental Decay Cauldron
+				["questID"] = 70208,
+				["coord"] = { 16.4, 38.5, THE_AZURE_SPAN },
+				["g"] = {
+					i(198599),	-- Experimental Decay Sample
+				},
+			}),
+			o(380616, {	-- Small Basket of Firewater Powder
+				["questID"] = 70309,
+				["coord"] = { 67.0, 13.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(198712),	-- Firewater Powder Sample
+				},
+			}),
+			o(380611, {	-- Canteen of Suspicious Water
 				["questID"] = 70305,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+				["coord"] = { 79.2, 83.8, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(198710),	-- Canteen of Suspicious Water
 				},
-			}),--]]
-			--[[q(70278, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- Treasure
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+			}),
+			o(380586, {	-- Mysterious Cauldrons
+				-- Interact with objects 380551, 380552, 380553
+				["description"] = "Grab and drop a Docile Cub in each of these, then you can collect the treasure.",
+				["questID"] = 70278,
+				["coord"] = { 55.2, 30.5, THALDRASZUS },
 				["g"] = {
-					i(000000),	-- ???
+					i(201003),	-- Furry Gloop
 				},
-			}),--]]
-			--[[q(70301, {	-- Treasure: ???
-				["name"] = "???",
-				["provider"] = { "i", 000000 },	-- Treasure: ???
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),--]]
-			--[[o(TODO, {	-- Treasure
-				["questID"] = 00000,
-				["coord"] = { 00.0, 00.0, ZONE_NAME },
+			}),
+			o(380605, {	-- Contraband Concoction
+				["description"] = "Hidden in some bushes, hard to see.",
+				["questID"] = 70301,
+				["coord"] = { 59.5, 38.4, THALDRASZUS },
 				["g"] = {
-					i(000000),	-- ???
+					i(198697),	-- Contraband Concoction
 				},
-			}),--]]
+			}),
 			q(70247, {	-- Hidden Profession Master Alchemy
 				["name"] = "Hidden Profession Master: Alchemy",
 				["provider"] = { "n", 194829 },	-- Grigori Vialtry
@@ -1089,22 +1057,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198703),	-- Sign Language Reference Sheet
 				},
 			}),
-			q(70287, {	-- Treasure: Counterfeit Darkmoon Deck
-				["description"] = "Speak to Siennagosa and offer to help putting her deck back together, then gather the cards in the proper order (Ace through Eight).",
-				["name"] = "Counterfeit Darkmoon Deck",
-				["provider"] = { "i", 201015 },	-- Treasure: Counterfeit Darkmoon Deck
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			--Might not have an objectID, if the NPC gives the treasure after going through the steps.
-			--We can alternatively add it to the "Eight" object, since you need to click on the Ace through Eight cards to get this treasure.
-			--[[o(TODO, {	-- Counterfeit Darkmoon Deck
-				["description"] = "Speak to Siennagosa and offer to help putting her deck back together, then gather the cards in the proper order (Ace through Eight).",
+			o(380567, {	-- Eight of Storms
+				--Interact with objects 380555, 380561, 380562, 380563, 380564, 380564, 380566, 380567
+				["description"] = "Speak to Siennagosa and offer to help putting her deck back together, then gather the cards in the proper order (Ace through Eight) to collect the treasure.",
 				["questID"] = 70287,
 				["coord"] = { 56.1, 40.9, THALDRASZUS },
 				["g"] = {
 					i(201015),	-- Counterfeit Darkmoon Deck
 				},
-			}),--]]
+			}),
 			o(380550, {	-- Forgetful Apprentice's Tome
 				["questID"] = 70264,
 				["coord"] = { 56.3, 41.2, THALDRASZUS },
@@ -1113,7 +1074,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			o(380570, {	-- Curious Glyph
-				["description"] = "Interact with the glyph, cross the bridge and kill the neutral NPC at the end, then return to collect your treasure.",
+				["description"] = "Interact with the glyph, cross the bridge and kill the neutral NPC at the end, then return to collect the treasure.",
 				["questID"] = 70248,
 				["coord"] = { 47.2, 40.1, THALDRASZUS },
 				["g"] = {
@@ -1823,12 +1784,3 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 	}),
 })));
-
-
---TODO: should we organize this section differently with the HQTs? There's going to be a million of them...
-root("HiddenQuestTriggers", m(DRAGON_ISLES, {
-	m(VALDRAKKEN, {
-		q(71705),	-- When I craft item 193388 first time, leatherworking. But may due to / First time/ getting artisans mettle?
-		q(74430),	-- First weekly profession knowledge quest
-	}),
-}));
