@@ -26,6 +26,9 @@ root("PVP", pvp(tier(DF_TIER, {
 			ach(15958, {	-- Hero of the Horde: Crimson
 				["races"] = HORDE_ONLY,
 			}),
+			ach(17339, {	-- Legend: Dragonflight Season 1
+				title(491),	-- Legend	--TODO: maybe seasonal title? should me marked non collectible then
+			}),
 			ach(15952),	-- Rival I: Dragonflight Season 1
 			ach(15953),	-- Rival II: Dragonflight Season 1
 		}),
