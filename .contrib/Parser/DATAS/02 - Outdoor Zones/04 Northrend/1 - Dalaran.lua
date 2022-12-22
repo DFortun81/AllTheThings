@@ -5474,6 +5474,11 @@ root("Zones", {
 					n(32287, {	-- Archmage Alvareaux <Kirin Tor Quartermaster>
 						["coord"] = { 25.2, 47.8, NORTHREND_DALARAN },
 						["groups"] = {
+							i(50368, {	-- Arcanum of Burning Mysteries
+								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["timeline"] = { "removed 5.0.4" },
+								["filterID"] = CONSUMABLES,
+							}),
 							i(44159, {	-- Arcanum of Burning Mysteries
 								["timeline"] = { "removed 5.0.4" },
 								["filterID"] = CONSUMABLES,

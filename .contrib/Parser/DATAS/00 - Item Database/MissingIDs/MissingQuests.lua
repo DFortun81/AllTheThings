@@ -18,8 +18,6 @@ q(534),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(548),	-- [DEPRECATED] <NYI> <TXT> Bloodstone Pendant,		TBC: <NYI> <TXT> Bloodstone Pendant,		CLASSIC: <NYI> <TXT> Bloodstone Pendant
 q(612),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(636),	-- Legends of the Earth <NYI>,		TBC: Legends of the Earth <NYI>,		CLASSIC: Legends of the Earth <NYI>
-q(729),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
-q(731),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
 q(807),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(810),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(811),	-- <UNUSED>,		CLASSIC: <UNUSED>
@@ -30,35 +28,9 @@ q(854),	-- Journey to the Crossroads,		TBC: Journey to the Crossroads,		CLASSIC:
 q(856),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(886),	-- The Barrens Oases,		TBC: The Barrens Oases,		CLASSIC: The Barrens Oases
 q(897),	-- The Harvester,		TBC: The Harvester,		CLASSIC: The Harvester
-q(944),	-- The Master's Glaive,		TBC: The Master's Glaive,		CLASSIC: The Master's Glaive
-q(945),	-- Therylune's Escape,		TBC: Therylune's Escape,		CLASSIC: Therylune's Escape
 q(946),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(948),	-- Onu,		TBC: Onu,		CLASSIC: Onu
-q(949),	-- The Twilight Camp,		TBC: The Twilight Camp,		CLASSIC: The Twilight Camp
-q(950),	-- Return to Onu,		TBC: Return to Onu,		CLASSIC: Return to Onu
-q(953),	-- The Fall of Ameth'Aran,		TBC: The Fall of Ameth'Aran,		CLASSIC: The Fall of Ameth'Aran
-q(954),	-- Bashal'Aran,		TBC: Bashal'Aran,		CLASSIC: Bashal'Aran
-q(955),	-- Bashal'Aran,		TBC: Bashal'Aran,		CLASSIC: Bashal'Aran
-q(956),	-- Bashal'Aran,		TBC: Bashal'Aran,		CLASSIC: Bashal'Aran
-q(958),	-- Tools of the Highborne,		TBC: Tools of the Highborne,		CLASSIC: Tools of the Highborne
-q(965),	-- The Tower of Althalaxx,		TBC: The Tower of Althalaxx,		CLASSIC: The Tower of Althalaxx
-q(966),	-- The Tower of Althalaxx,		TBC: The Tower of Althalaxx,		CLASSIC: The Tower of Althalaxx
-q(967),	-- The Tower of Althalaxx,		TBC: The Tower of Althalaxx,		CLASSIC: The Tower of Althalaxx
-q(968),	-- The Powers Below,		TBC: The Powers Below,		CLASSIC: The Powers Below
-q(982),	-- Deep Ocean, Vast Sea,		TBC: Deep Ocean, Vast Sea,		CLASSIC: Deep Ocean, Vast Sea
-q(983),	-- Buzzbox 827,		TBC: Buzzbox 827,		CLASSIC: Buzzbox 827
-q(984),	-- How Big a Threat?,		TBC: How Big a Threat?,		CLASSIC: How Big a Threat?
-q(985),	-- How Big a Threat?,		TBC: How Big a Threat?,		CLASSIC: How Big a Threat?
-q(986),	-- A Lost Master,		TBC: A Lost Master,		CLASSIC: A Lost Master
 q(988),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(989),	-- <UNUSED>,		CLASSIC: <UNUSED>
-q(990),	-- Trek to Ashenvale,		TBC: Trek to Ashenvale,		CLASSIC: Trek to Ashenvale
-q(1001),	-- Buzzbox 411,		TBC: Buzzbox 411,		CLASSIC: Buzzbox 411
-q(1002),	-- Buzzbox 323,		TBC: Buzzbox 323,		CLASSIC: Buzzbox 323
-q(1003),	-- Buzzbox 525,		TBC: Buzzbox 525,		CLASSIC: Buzzbox 525
-q(1132),	-- Fiora Longears,		TBC: Fiora Longears,		CLASSIC: Fiora Longears
-q(1141),	-- The Family and the Fishing Pole,		TBC: The Family and the Fishing Pole,		CLASSIC: The Family and the Fishing Pole
-q(1143),	-- The Tower of Althalaxx,		TBC: The Tower of Althalaxx,		CLASSIC: The Tower of Althalaxx
 q(1155),	-- <NYI> <TXT> bug crystal side quest,		TBC: <NYI> <TXT> bug crystal side quest,		CLASSIC: <NYI> <TXT> bug crystal side quest
 q(1156),	-- <NYI> <TXT> speak to alchemist pestlezugg,		TBC: <NYI> <TXT> speak to alchemist pestlezugg,		CLASSIC: <NYI> <TXT> speak to alchemist pestlezugg
 q(1157),	-- <NYI> <TXT> pestlezugg needs items,		TBC: <NYI> <TXT> pestlezugg needs items,		CLASSIC: <NYI> <TXT> pestlezugg needs items
@@ -115,8 +87,6 @@ q(1535),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(1536),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(1537),	-- <NYI> Call of Air,		TBC: <NYI> Call of Air,		CLASSIC: <NYI> Call of Air
 q(1538),	-- <NYI> Call of Air,		CLASSIC: <NYI> Call of Air
-q(1579),	-- Gaffer Jacks,		TBC: Gaffer Jacks,		CLASSIC: Gaffer Jacks
-q(1580),	-- Electropellers,		TBC: Electropellers,		CLASSIC: Electropellers
 q(1646),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1647),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1648),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
@@ -147,10 +117,6 @@ q(2019),	-- Tools of the Trade,		CLASSIC: Tools of the Trade
 q(2020),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(2058),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(2059),	-- <UNUSED>,		CLASSIC: <UNUSED>
-q(2078),	-- Gyromast's Revenge,		TBC: Gyromast's Revenge,		CLASSIC: Gyromast's Revenge
-q(2098),	-- Gyromast's Retrieval,		TBC: Gyromast's Retrieval,		CLASSIC: Gyromast's Retrieval
-q(2118),	-- Plagued Lands,		TBC: Plagued Lands,		CLASSIC: Plagued Lands
-q(2138),	-- Cleansing of the Infected,		TBC: Cleansing of the Infected,		CLASSIC: Cleansing of the Infected
 q(2358),	-- Horns of Nez'ra,		CLASSIC: Horns of Nez'ra
 q(2378),	-- Find the Shattered Hand,		TBC: Find the Shattered Hand,		CLASSIC: Find the Shattered Hand
 q(2379),	-- Zando'zan,		TBC: Zando'zan,		CLASSIC: Zando'zan
@@ -190,7 +156,6 @@ q(3425),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3482),	-- <NYI> <TXT> The Pocked Black Box,		TBC: <NYI> <TXT> The Pocked Black Box,		CLASSIC: <NYI> <TXT> The Pocked Black Box
 q(3515),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3516),	-- <UNUSED>,		CLASSIC: <UNUSED>
-q(3524),	-- Washed Ashore,		TBC: Washed Ashore,		CLASSIC: Washed Ashore
 q(3529),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3530),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(3531),	-- <UNUSED>,		CLASSIC: <UNUSED>
@@ -208,27 +173,14 @@ q(4488),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
 q(4489),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
 q(4490),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
 q(4541),	-- <NYI> <TXT>,		CLASSIC: <NYI> <TXT>
-q(4722),	-- Beached Sea Turtle,		TBC: Beached Sea Turtle,		CLASSIC: Beached Sea Turtle
-q(4723),	-- Beached Sea Creature,		TBC: Beached Sea Creature,		CLASSIC: Beached Sea Creature
-q(4725),	-- Beached Sea Turtle,		TBC: Beached Sea Turtle,		CLASSIC: Beached Sea Turtle
-q(4727),	-- Beached Sea Turtle,		TBC: Beached Sea Turtle,		CLASSIC: Beached Sea Turtle
-q(4728),	-- Beached Sea Creature,		TBC: Beached Sea Creature,		CLASSIC: Beached Sea Creature
-q(4730),	-- Beached Sea Creature,		TBC: Beached Sea Creature,		CLASSIC: Beached Sea Creature
-q(4731),	-- Beached Sea Turtle,		TBC: Beached Sea Turtle,		CLASSIC: Beached Sea Turtle
-q(4732),	-- Beached Sea Turtle,		TBC: Beached Sea Turtle,		CLASSIC: Beached Sea Turtle
-q(4733),	-- Beached Sea Creature,		TBC: Beached Sea Creature,		CLASSIC: Beached Sea Creature
 q(4736),	-- In Search of Menara Voidrender,		TBC: In Search of Menara Voidrender,		CLASSIC: In Search of Menara Voidrender
 q(4737),	-- In Search of Menara Voidrender,		TBC: In Search of Menara Voidrender,		CLASSIC: In Search of Menara Voidrender
 q(4738),	-- In Search of Menara Voidrender,		TBC: In Search of Menara Voidrender,		CLASSIC: In Search of Menara Voidrender
 q(4739),	-- In Search of Menara Voidrender,		TBC: In Search of Menara Voidrender,		CLASSIC: In Search of Menara Voidrender
-q(4761),	-- Thundris Windweaver,		TBC: Thundris Windweaver,		CLASSIC: Thundris Windweaver
-q(4762),	-- The Cliffspring River,		TBC: The Cliffspring River,		CLASSIC: The Cliffspring River
 q(4781),	-- Components for the Enchanted Gold Bloodrobe,		TBC: Components for the Enchanted Gold Bloodrobe,		CLASSIC: Components for the Enchanted Gold Bloodrobe
 q(4782),	-- Components for the Enchanted Gold Bloodrobe,		TBC: Components for the Enchanted Gold Bloodrobe,		CLASSIC: Components for the Enchanted Gold Bloodrobe
 q(4783),	-- Components for the Enchanted Gold Bloodrobe,		TBC: Components for the Enchanted Gold Bloodrobe,		CLASSIC: Components for the Enchanted Gold Bloodrobe
 q(4784),	-- Components for the Enchanted Gold Bloodrobe,		TBC: Components for the Enchanted Gold Bloodrobe,		CLASSIC: Components for the Enchanted Gold Bloodrobe
-q(4811),	-- The Red Crystal,		TBC: The Red Crystal,		CLASSIC: The Red Crystal
-q(4812),	-- As Water Cascades,		TBC: As Water Cascades,		CLASSIC: As Water Cascades
 q(4905),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(4961),	-- Cleansing of the Orb of Orahil,		TBC: Cleansing of the Orb of Orahil,		CLASSIC: Cleansing of the Orb of Orahil
 q(4962),	-- Shard of a Felhound,		TBC: Shard of a Felhound,		CLASSIC: Shard of a Felhound
@@ -306,7 +258,6 @@ q(5710),	-- <NYI> <TXT> Troll Priest Robe,		CLASSIC: <NYI> <TXT> Troll Priest Ro
 q(5711),	-- <NYI> The Lost Ways,		CLASSIC: <NYI> The Lost Ways
 q(5712),	-- <NYI> The Lost Ways,		CLASSIC: <NYI> The Lost Ways
 q(6003),	-- <nyi> <txt> Green With Envy,		CLASSIC: <nyi> <txt> Green With Envy
-q(6123),	-- Gathering the Cure,		TBC: Gathering the Cure,		CLASSIC: Gathering the Cure
 q(6128),	-- Gathering the Cure,		TBC: Gathering the Cure,		CLASSIC: Gathering the Cure
 q(6165),	-- <NYI> <TXT> Archmage Timolain's Remains,		TBC: <NYI> <TXT> Archmage Timolain's Remains,		CLASSIC: <NYI> <TXT> Archmage Timolain's Remains
 q(6201),	-- <UNUSED> The Legacy of the Ashbringer,		TBC: <UNUSED> The Legacy of the Ashbringer,		CLASSIC: <UNUSED> The Legacy of the Ashbringer
@@ -499,7 +450,6 @@ q(10638),	-- NOT A QUEST,		TBC: NOT A QUEST
 q(10716),	-- Test Flight: Raven's Wood <needs reward>,		TBC: Test Flight: Raven's Wood <needs reward>
 q(10743),	-- [DEPRECATED]<txt>Hero of the Mok'Nathal,		TBC: [DEPRECATED]<txt>Hero of the Mok'Nathal
 q(10746),	-- DEPRECATED Karazhan: LAB - E - Exalted Ring - Caster,		TBC: DEPRECATED Karazhan: LAB - E - Exalted Ring - Caster
-q(10752),	-- Onward to Ashenvale,		TBC: Onward to Ashenvale
 q(10779),	-- The Hunter's Path,		TBC: The Hunter's Path
 q(10787),	-- [DEPRECATED]<txt><nyi>The Dragons of Dragons' End,		TBC: [DEPRECATED]<txt><nyi>The Dragons of Dragons' End
 q(10789),	-- Return to Carendin Halgar,		TBC: Return to Carendin Halgar

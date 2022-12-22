@@ -2330,6 +2330,11 @@ root("Zones", {
 						["coord"] = { 59.8, 53.0, DRAGONBLIGHT },
 						["groups"] = {
 							i(44200),	-- Ancestral Sinew Wristguards
+							i(50370, {	-- Arcanum of Blissful Mending
+								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["timeline"] = { "removed 5.0.4" },
+								["filterID"] = CONSUMABLES,
+							}),
 							i(44152, {	-- Arcanum of Blissful Mending
 								["timeline"] = { "removed 5.0.4" },
 								["filterID"] = CONSUMABLES,
