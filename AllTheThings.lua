@@ -18569,24 +18569,6 @@ function app:BuildSearchResponse(groups, field, value, clear)
 		end
 	end
 end
-function app:BuildSearchResponseForField(groups, field)
-	if groups then
-		local t;
-		for i,group in ipairs(groups) do
-			if group[field] then
-				if not t then t = {}; end
-				tinsert(t, CloneData(group));
-			elseif group.g then
-				local response = app:BuildSearchResponseForField(group.g, field);
-				if response then
-					if not t then t = {}; end
-					tinsert(t, setmetatable({g=response}, { __index = group }));
-				end
-			end
-		end
-		return t;
-	end
-end
 end -- Search Response Logic
 
 -- Store the Custom Windows Update functions which are required by specific Windows
@@ -20846,19 +20828,19 @@ customWindowUpdates["RWP"] = function(self)
 			self.dirty = true;
 			local actions = {
 				['text'] = "Removed With Patch - Get 'Em Now!",
-				['icon'] = "Interface\\Icons\\Ability_Rogue_RolltheBones.blp", 
+				['icon'] = "Interface\\Icons\\Ability_Rogue_RolltheBones.blp",
 				["description"] = "This window shows you all of the stuff that gets removed from the game soonish. Go get 'em!",
-				['visible'] = true, 
+				['visible'] = true,
 				['expanded'] = true,
 				['back'] = 1,
 				["indent"] = 0,
 				['OnUpdate'] = function(data)
 					if not self.dirty then return nil; end
 					self.dirty = nil;
-					
+
 					local g = {};
 					if not data.results then
-						data.results = app:BuildSearchResponseForField(app:GetWindow("Prime").data.g, "rwp");
+						data.results = app:BuildSearchResponse(app:GetWindow("Prime").data.g, "rwp");
 					end
 					if #data.results > 0 then
 						for i,result in ipairs(data.results) do
@@ -20888,7 +20870,7 @@ customWindowUpdates["RWP"] = function(self)
 			};
 			self.data = actions;
 		end
-		
+
 		-- Update the window and all of its row data
 		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
 		self:BaseUpdate(true);
