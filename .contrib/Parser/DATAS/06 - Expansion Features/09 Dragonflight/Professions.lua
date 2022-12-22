@@ -330,7 +330,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 60.9, 75.8, THE_WAKING_SHORES },
 				["collectible"] = true,	-- Dont remove until we have proper tracking
 			}),
-			q(74115, {	-- Inscription Order: Alchemy
+			q(74108, {	-- Inscription Order: Alchemy
 				["name"] = "Inscription Order: Alchemy",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194697 },	-- Draconic Treatise on Alchemy
