@@ -7326,7 +7326,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(71188),	--
 			q(71189),	--
 			q(71190),	--
-			q(71201),	--
+			q(71201),	-- Hide and Sneak
 			q(71214),	--
 			q(71236),	--
 			q(71237),	--
