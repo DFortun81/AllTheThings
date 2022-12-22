@@ -8168,7 +8168,7 @@ itemrecipe("Pattern: Windripper Leggings", 44933, 62177, WRATH_PHASE_ONE);
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	filter(200, {	-- Recipe
+	filter(RECIPES, {
 		itemrecipe("Deprecated Pattern: Light Winter Cloak", 2404),
 		itemrecipe("Deprecated Pattern: Light Winter Boots", 2405),
 		itemrecipe("Deprecated Pattern: Forest Silk Gloves", 2599),

@@ -2690,7 +2690,7 @@ itemrecipe("Recipe: Whitecrest Gumbo", 65406, 88047, CATA_PHASE_ONE);
 
 recipeCache = nil;	-- Invalidate the cache.
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	filter(200, {	-- Recipe
+	filter(RECIPES, {
 		-- #if AFTER WRATH
 		itemrecipe("Recipe: Shoveltusk Soup", 34126, 44438);	-- NYI, never implemented
 		itemrecipe("Recipe: Succulent Orca Stew", 39692, 45547);	-- NYI, never implemented

@@ -163,7 +163,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(191518),	-- Writhefire Oil++
 			i(191519),	-- Writhefire Oil+++
 		}),
-		filter(56, {	-- Reagents
+		filter(REAGENTS, {
 			i(191570),	-- Dragon's Alchemical Solution
 			i(191493),	-- Primal Convergent+
 			i(191494),	-- Primal Convergent++
@@ -426,7 +426,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			--
 			i(191256),	-- Serevite Skeleton Key
 		}),
-		filter(56, {	-- Reagents
+		filter(REAGENTS, {
 			i(190530),	-- Frostfire Alloy+
 			i(190531),	-- Frostfire Alloy++
 			i(190532),	-- Frostfire Alloy+++
@@ -793,7 +793,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(200535),	-- Scepter of Spectacle: Frost
 			i(201158),	-- Scepter of Spectacle: Order
 		}),
-		filter(56, {
+		filter(REAGENTS, {
 			i(200618),	-- Primal Invocation Extract+
 			i(200633),	-- Primal Invocation Extract++
 			i(200634),	-- Primal Invocation Extract+++
@@ -1108,7 +1108,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(201930),	-- H.E.L.P.
 			i(198650),	-- Rummage Through Scrap
 		}),
-		filter(56, {	-- Reagents
+		filter(REAGENTS, {
 			i(198195),	-- Arclight Capacitor+
 			i(198196),	-- Arclight Capacitor++
 			i(198197),	-- Arclight Capacitor+++
@@ -1460,7 +1460,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(198492),	-- Vantus Rune: Vault of the Incarnates++
 			i(198493),	-- Vantus Rune: Vault of the Incarnates+++
 		}),
-		filter(56, {
+		filter(REAGENTS, {
 			i(194751),	-- Blazing Ink+
 			i(194752),	-- Blazing Ink++
 			i(194846),	-- Blazing Ink+++
@@ -1625,7 +1625,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 				i(193003),	-- Idol of the Lifebinder
 				i(193004),	-- Idol of the Spell-Weaver
 			}),
-			filter(56, {
+			filter(REAGENTS, {
 				i(193368),	-- Silken Gemdust+
 				i(193369),	-- Silken Gemdust++
 				i(193370),	-- Silken Gemdust+++
@@ -1664,7 +1664,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(192993),	-- Tiered Medallion Setting++
 			i(192994),	-- Tiered Medallion Setting+++
 		}),
-		filter(56, {	-- Reagents
+		filter(REAGENTS, {
 			i(191474),	-- Draconic Vial+
 			i(191475),	-- Draconic Vial++
 			i(191476),	-- Draconic Vial+++
@@ -1877,7 +1877,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(193552),	-- Toxified Armor Patch++
 			i(193555),	-- Toxified Armor Patch+++
 		}),
-		filter(56, {	-- Reagents
+		filter(REAGENTS, {
 			i(193242),	-- Earthshine Scales+
 			i(193243),	-- Earthshine Scales++
 			i(193244),	-- Earthshine Scales+++
@@ -2086,7 +2086,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(194049),	-- Wildercloth Bandage++
 			i(194050),	-- Wildercloth Bandage+++
 		}),
-		filter(56, {	-- Reagents
+		filter(REAGENTS, {
 			i(193938),	-- Azureweave Bolt+
 			i(193939),	-- Azureweave Bolt++
 			i(193940),	-- Azureweave Bolt+++

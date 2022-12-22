@@ -43,7 +43,7 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 },
 		i(199030),	-- Stonewatcher's Thumb
 		i(199029),	-- Stonewatcher's Toe
 	}),
-	filter(56, {	-- Reagents
+	filter(REAGENTS, {
 		i(201400),	-- Aquatic Maw
 		i(193053),	-- Contoured Fowlfeather
 		i(199219),	-- Element-Infused Blood

@@ -3517,7 +3517,7 @@ local function cacheRecipes(g)
 		if g.g then cacheRecipes(g.g); end
 		local spellID = g.spellID or g.recipeID;
 		if spellID then
-			recipeCache[spellID] = true; 
+			recipeCache[spellID] = true;
 			if g.u then recipeCacheU[spellID] = g.u; end
 		end
 		for i,o in ipairs(g) do
@@ -3551,7 +3551,7 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 		o.name = name;
 	end
 	itemDB[itemID] = phase and applyclassicphase(phase, o) or o;
-	
+
 	-- Ensure that this recipe's spellID exists in the profession database.
 	if recipeCache and type(timeline) ~= "boolean" then
 		if recipeCache[o.spellID] then
@@ -3717,13 +3717,13 @@ itemrecipe("Recipe: Mighty Shadow Protection Potion", 44568, 53938, WRATH_PHASE_
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	filter(200, {	-- Recipe
+	filter(RECIPES, {
 		itemrecipe("Recipe: Elixir of Tongues", 2556, 2336);
 		itemrecipe("Deprecated Recipe: Elixir of Fortitude", 2554);
 		itemrecipe("Recipe: Cowardly Flight Potion", 5641);
 		itemrecipe("Recipe: Greater Holy Protection Potion", 13500);
 		itemrecipe("Recipe: Mad Alchemist's Potion", 34481);
-		
+
 		-- #if BEFORE TBC
 		-- This was added with TBC, NEVER_IMPLEMENTED until then.
 		itemrecipe("Recipe: Alchemist's Stone", 13517, 17632);

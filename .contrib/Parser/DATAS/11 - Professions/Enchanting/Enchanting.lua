@@ -1365,7 +1365,7 @@ itemrecipe("Formula: Smoking Heart of the Mountain", 45050, 15596);
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	filter(200, {	-- Recipe
+	filter(RECIPES, {
 		itemrecipe("Formula: Imbue Chest - Minor Spirit", 6222);
 		itemrecipe("Formula: Imbue Chest - Spirit", 6343);
 		itemrecipe("Formula: Imbue Cloak - Protection", 6345);
