@@ -27,7 +27,9 @@ root("PVP", pvp(tier(DF_TIER, {
 				["races"] = HORDE_ONLY,
 			}),
 			ach(17339, {	-- Legend: Dragonflight Season 1
-				title(491),	-- Legend	--TODO: maybe seasonal title? should me marked non collectible then
+				title(491, {	-- Legend
+					["collectible"] = false,
+				}),
 			}),
 			ach(15952),	-- Rival I: Dragonflight Season 1
 			ach(15953),	-- Rival II: Dragonflight Season 1
