@@ -17777,6 +17777,17 @@ function app:GetDataCache()
 		tinsert(g, db);
 	end
 
+	-- Trading Post
+	if app.Categories.TradingPost then
+		db = {};
+		db.g = app.Categories.TradingPost;
+		db.expanded = false;
+		db.text = "Trading Post";	-- Probably Some String Later
+		db.name = db.text;
+		--db.icon = app.asset("Category_InGameShop");	Ask for New Icon
+		tinsert(g, db);
+	end
+
 	-- Black Market
 	if app.Categories.BlackMarket then
 		db = app.CreateNPC(-94);
