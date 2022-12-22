@@ -9,7 +9,7 @@ root("Holidays", holiday(1671631, {	-- Trial of Style
 			["icon"] = "Interface\\Icons\\inv_misc_scrollrolled02c",
 			["groups"] = {
 				i(168058, {	-- Ensemble: Tranquil Spiritbind Regalia
-				["cost"] = { { "i", 151134, 60 } },	-- Trial of Style Token x60
+					["cost"] = { { "i", 151134, 60 } },	-- Trial of Style Token x60
 					["classes"] = {
 						PRIEST,
 						MAGE,
