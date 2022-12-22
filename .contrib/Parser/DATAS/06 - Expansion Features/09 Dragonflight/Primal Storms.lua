@@ -187,6 +187,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 			}),
 			n(BONUS_OBJECTIVES, {
+				-- not sure why these are listed in the Main city?
 				q(69951, {	-- Bouldron
 					["qg"] = 193644,	-- Bouldron
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },

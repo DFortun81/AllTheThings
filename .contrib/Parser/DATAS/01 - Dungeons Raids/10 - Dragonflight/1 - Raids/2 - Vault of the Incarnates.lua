@@ -1176,7 +1176,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(70078),	-- Dathea (N)
 		q(70087),	-- Dathea (N)
 		q(72272),	-- Dathea (N)
-		-- q(TODO),	-- Dathea (H)
+		q(70095),	-- Dathea (H)
 		-- q(TODO),	-- Dathea (M)
 		q(72616),	-- Iskakx (trash)
 		q(72617),	-- Kaurdyth (trash)

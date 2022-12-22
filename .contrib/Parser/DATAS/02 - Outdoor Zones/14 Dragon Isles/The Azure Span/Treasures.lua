@@ -107,6 +107,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					crit(5, {	-- Rubber Fish
 						["achievementID"] = 16300,	-- Treasures of The Azure Span
 					}),
+					i(202712),	-- Rubber Fish
 				},
 			}),
 			o(381157, {	-- Sapphire Gem Cluster

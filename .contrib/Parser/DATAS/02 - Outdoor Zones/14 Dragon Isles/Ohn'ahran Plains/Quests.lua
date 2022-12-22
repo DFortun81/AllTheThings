@@ -1093,6 +1093,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "i", 199790 },	-- Makko's Journal Cover
 				["coord"] = { 44, 66, OHNAHRAN_PLAINS },
 				["description"] = "Drops from entrhalled Murlocs during |cffffff00The Insight of Tyr|r.",
+				["g"] = {
+					i(200295),	-- Makko's Complete Journal
+				},
 			}),
 			n(BONUS_OBJECTIVES, {
 				-- q(quest, {	-- npc
