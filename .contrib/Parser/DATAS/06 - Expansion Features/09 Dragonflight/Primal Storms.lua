@@ -171,9 +171,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
-				ach(16502, {	-- Storming the Runway
-					["maps"] = { VALDRAKKEN },
-				}),
+				ach(16502),	-- Storming the Runway
 				ach(16485, {	-- Thunderstorms in Thaldraszus
 					["maps"] = { THALDRASZUS },
 				}),
