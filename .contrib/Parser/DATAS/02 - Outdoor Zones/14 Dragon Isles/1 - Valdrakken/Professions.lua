@@ -127,6 +127,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 191004 },	-- Temnaayu
 					["coord"] = { 36.8, 62.6, VALDRAKKEN },
 					["isWeekly"] = true,
+					["groups"] = {
+						i(198610),	-- Enchanter's Script
+					},
 				}),
 			})),
 			prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = ENGINEERING }, {
@@ -406,6 +409,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 					["coord"] = { 36.8, 62.6, VALDRAKKEN },
 					["isWeekly"] = true,
+					["groups"] = {
+						i(198609),	-- Tailoring Examples
+					},
 				}),
 			})),
 		}),
