@@ -512,12 +512,33 @@ TANKS = {
 	WARRIOR,
 };
 HEALERS = {
+	EVOKER,
 	DRUID,
 	MONK,
 	PALADIN,
 	PRIEST,
 	SHAMAN,
+};
+CLOTH_CLASSES = {
+	MAGE,
+	PRIEST,
+	WARLOCK,
+};
+LEATHER_CLASSES = {
+	DEMONHUNTER,
+	DRUID,
+	MONK,
+	ROGUE,
+};
+MAIL_CLASSES = {
 	EVOKER,
+	HUNTER,
+	SHAMAN,
+};
+PLATE_CLASSES = {
+	DEATHKNIGHT,
+	PALADIN,
+	WARRIOR,
 };
 
 -- Specializations
@@ -1087,6 +1108,9 @@ TCG = 10;
 TRAINING = 15;
 ELITE_PVP_REQUIREMENT = 4;
 
+-- Holidays
+TRIAL_OF_STYLE = 1671631;
+
 -- #if ANYCLASSIC
 -- Classic Phases
 PHASE_ONE = 11;
@@ -1171,6 +1195,7 @@ REMOVED_DF_PRE2 = "removed 10.0.2";						-- Second phase of Dragonflight pre-pat
 ADDED_DF_REL = "added 10.0.2.46801";					-- Dragonflight Launch on November 28th, 2022
 TIMELINE_DF_REL = { CREATED_DF_PRE, ADDED_DF_REL };		-- Dragonflight Launch on November 28th, 2022
 REMOVED_DF_REL = "removed 10.0.2.46801";				-- Dragonflight Launch on November 28th, 2022
+ADDED_10_0_5 = "added 10.0.5";							-- Dragonflight 10.0.5 Launch on January XXth, 2023
 ADDED_DF_S2 = "added 10.1.0";							-- Dragonflight Season 2 Start on
 REMOVED_DF_S2 = "removed 10.1.0";						-- Dragonflight Season 2 Start on
 

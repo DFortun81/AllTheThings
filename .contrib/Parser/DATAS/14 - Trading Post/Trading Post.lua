@@ -6,11 +6,11 @@ root("TradingPost", {
 	n(QUESTS, {
 		q(66858, {	-- Tour the Trading Post [A]
 			["maps"] = { STORMWIND_CITY },
-			["races"] = { ALLIANCE_ONLY },
+			["races"] = ALLIANCE_ONLY,
 		}),
 		q(66959, {	-- Tour the Trading Post [H]
 			["maps"] = { ORGRIMMAR },
-			["races"] = { HORDE_ONLY },
+			["races"] = HORDE_ONLY,
 		}),
 	}),
 	n(SPECIAL, {
