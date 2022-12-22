@@ -123,6 +123,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						r(389151),	-- Writ of Versatility
 					},
 				}),
+				q(72423, {	-- Weathering the Storm
+					["provider"] = { "n", 191004 },	-- Temnaayu
+					["coord"] = { 36.8, 62.6, VALDRAKKEN },
+					["isWeekly"] = true,
+				}),
 			})),
 			prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = ENGINEERING }, {
 				n(185548, {	-- Clinkyclick Shatterboom <Engineering Trainer>
@@ -396,6 +401,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						r(376553),	-- Wildercloth Gardening Hat
 						r(376545),	-- Wildercloth Tailor's Coat
 					},
+				}),
+				q(72410, {	-- Pincers and Needles
+					["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+					["coord"] = { 36.8, 62.6, VALDRAKKEN },
+					["isWeekly"] = true,
 				}),
 			})),
 		}),

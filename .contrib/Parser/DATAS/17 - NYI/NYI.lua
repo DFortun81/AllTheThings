@@ -580,8 +580,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194081),	-- Mutated Root
 			i(198607),	-- Scribe's Glyphs
 			i(198608),	-- Alchemy Notes
-			i(198609),	-- Tailoring Examples
-			i(198610),	-- Enchanter's Script
 			i(198611),	-- Engineering Details
 			i(198612),	-- Jeweler's Cuts
 			i(198599),	-- Experimental Decay Sample
