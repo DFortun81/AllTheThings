@@ -84,6 +84,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(201818, {	-- Twilight Strongbox
 							i(199215),	-- Worldbreaker Membership
 							i(202173),	-- Magmote
+							i(201815),	-- Cloak of Many Faces (TOY!)
 						}),
 						i(201817, {	-- Twilight Cache
 							i(199215),	-- Worldbreaker Membership
@@ -110,6 +111,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["g"] = {
 						i(200069, {	-- Obsidian Cache
 						}),
+					},
+				}),
+				q(67221, {	-- A Head For Metal
+					["sourceQuests"] = { 66359 },	-- First Completion of 'Unlocking our Past' (Forgemaster Bazentus)
+					["coord"] = { 24.5, 60.9, THE_WAKING_SHORES },
+					["provider"] = { "n", 191194 },	-- Weaponsmith Mida
+					["isWeekly"] = true,
+					-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? move to Professions if it's fixed?
+					["g"] = {
+						i(194963),	-- Plans: Black Dragon Seared Alloy (RECIPE!)
 					},
 				}),
 				q(66419, {	-- Allegiance To One
@@ -152,7 +163,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				q(69983, {	-- Flamecarved Bone
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
-					["provider"] = { "n", 198071 },	-- Flamecarved Bone
+					["provider"] = { "i", 198071 },	-- Flamecarved Bone
 					["isWeekly"] = true,
 				}),
 				q(70848, {	-- Forgotten Dragon Crest
@@ -206,6 +217,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(202173),	-- Magmote
 					},
 				}),
+				q(66895, {	-- Same as the Old Boss
+					["sourceQuest"] = 66362,	-- First Completion of 'Unlocking our Past' (Igys the Believer)
+					["provider"] = { "n", 191310 },	-- Doventhal the Chosen
+					["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+					["g"] = {
+						i(202173),	-- Magmote
+					},
+				}),
 				q(72448, {	-- Securing Our Legacy
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
@@ -233,7 +253,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 					["provider"] = { "n", 196518 },	-- Voraxian
 					["coord"] = { 27.6,56.7, THE_WAKING_SHORES },
-					["isDaily"] = true,
+					["isWeekly"] = true,
 				}),
 				--[[
 				q(66633, {	-- Make a Statement
@@ -300,6 +320,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					-- 64277 - weekly, accepted Keys of Loyalty after choosing Wrathion
 					-- 66802 - weekly, accepted Keys of Loyalty after choosing Wrathion
 				}),
+				n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
+					q(70984, {	-- Surge Breaker
+						["coord"] = { 28.4, 58.4, THE_WAKING_SHORES },
+					}),
+				})),
 			}),
 			n(RARES, {
 				n(190986, {	-- Battlehorn Pyrhus
@@ -323,7 +348,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["questID"] = 74042,
 					["isDaily"] = true,
 					["g"] = {
-						i(201040),	-- Citadel Crusher's Gauntlets
 						i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail (DM!)
 						i(197005),	-- Cliffside Wylderdrake: Horned Nose (DM!)
 					},
@@ -420,7 +444,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								{ "i", 202173, 5 },		-- 5x Magmote
 							},
 						}),
-						i(192786, {	-- Slumbering Worldsnail Shell
+						i(192786, {	-- Scrappy Worldsnail (MOUNT!)
 							["cost"] = {
 								{ "i", 202173, 1000 },		-- 1000x Magmote
 							},
@@ -560,6 +584,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								{ "i", AWAKENED_EARTH, 1 },
 							},
 						}),
+						i(201840),	-- Sturdy Obsidian Glasses
 					},
 				}),
 				n(188623, {	-- Samia Inkling
@@ -699,6 +724,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								{ "i", AWAKENED_EARTH, 1 },
 							},
 						}),
+						i(201839),	-- Netherforged Lavaproof Boots
 					},
 				}),
 			}),
@@ -707,9 +733,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["description"] = "Drops from mobs around the Obsidian Citadel.",
 				}),
 				i(199915, {	-- Ancient Obsidian Charm
-					["description"] = "Drops from mobs around the Obsidian Citadel.",
-				}),
-				i(201041, {	-- Citadel Crusher's Cloak
 					["description"] = "Drops from mobs around the Obsidian Citadel.",
 				}),
 				i(198071, {	-- Flamecarved Bone
@@ -774,7 +797,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
-			q(70984),	-- Triggered first time entering Obsidian Citadel area with Wrathion chat message
 			q(64277),	-- Triggered when choosing Wrathion in Allegiance To One (66419)
 			--q(xxxxx),	-- Triggered when choosing Seballian in Allegiance To One (66419)
 			q(66802),	-- Triggered when choosing Wrathion or Seballian in Allegiance To One (66419)

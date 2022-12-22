@@ -58,7 +58,8 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 5.2.0.16486", "removed 8.3.0" },
 		}),
 		i(54811, {	-- Celestial Steed (MOUNT!)
-			["timeline"] = { "added 3.3.3.11723" },
+			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
+			["timeline"] = { "added 3.3.3.11723", "removed 10.0.2.99999" },
 		}),
 		i(109013, {	-- Dread Raven (MOUNT!)
 			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0" },
@@ -67,7 +68,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 5.3.0.16758" },
 		}),
 		--Probably later in the Shop
-		--[[mount(315132, {	-- Gargantuan Grrloc
+		--[[mount(315132, {	-- Gargantuan Grrloc (MOUNT!)
 			["timeline"] = { "added 10.0.0.46366" },
 		}),--]]
 		i(153540, {	-- Gilded Ravasaur (MOUNT!)
@@ -120,7 +121,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		mount(326390, {	-- Steamscale Incinerator (MOUNT!)
 			["timeline"] = { "added 8.3.7.35249" },
 		}),
-		mount(317177, {	-- Sunwarmed Purrkin (MOUNT!)
+		mount(317177, {	-- Sunwarmed Furline (MOUNT!)
 			["timeline"] = { "added 9.1.0.40725" },
 		}),
 		i(92724, {	-- Swift Windsteed (MOUNT!)
@@ -130,11 +131,14 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 8.2.0.30948" },
 		}),
 		--Probably later in the Shop
-		--[[mount(381529, {	-- Telix the Stormhorn
+		--[[mount(381529, {	-- Telix the Stormhorn (MOUNT!)
 			["timeline"] = { "added 10.0.0.46366" },
 		}),--]]
 		i(160589, {	-- The Dreadwake (MOUNT!)
 			["timeline"] = { "added 8.0.1.27602" },
+		}),
+		i(76755, {	-- Tyrael's Charger (MOUNT!)
+			["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.99999" },	--TODO: will be removed from the store again on Jan 2 2023
 		}),
 		i(166775, {	-- Vulpine Familiar (MOUNT!)
 			["timeline"] = { "added 8.1.0.28724" },
@@ -148,7 +152,8 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			},
 		}),
 		i(69846, {	-- Winged Guardian (MOUNT!)
-			["timeline"] = { "added 4.1.0.13793" },
+			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
+			["timeline"] = { "added 4.1.0.13793", "removed 10.0.2.99999" },
 		}),
 		mount(359317, {	-- Wen Lo, the River's Edge (MOUNT!)
 			["timeline"] = { "added 9.1.5.42010" },
@@ -202,7 +207,8 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 3.3.2.11403", "removed 8.3.0" },
 		}),
 		i(49693, {	-- Lil' K.T.
-			["timeline"] = { "added 3.2.2.10505" },
+			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
+			["timeline"] = { "added 3.2.2.10505", "removed 10.0.2.99999" },
 		}),
 		p(3249, {	-- Lil' Ursoc (PET!)
 			["timeline"] = { "added 9.2.5" },
@@ -234,7 +240,8 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 6.2.2.20395" },
 		}),
 		i(49665, {	-- Pandaren Monk
-			["timeline"] = { "added 3.2.2.10468" },
+			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
+			["timeline"] = { "added 3.2.2.10468", "removed 10.0.2.99999" },
 		}),
 		i(151234, {	-- Shadow
 			["timeline"] = { "added 7.3.0.25021" },
@@ -342,6 +349,45 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		i(188136, {	-- Mrrgl's Shiny Shell
 			["timeline"] = { "added 9.1.5.41079" },
+		}),
+		i(191616, {	-- Fireplume Crest
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191617, {	-- Fireplume Vestments
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191618, {	-- Fireplume Coverts
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191619, {	-- Fireplume Flarewraps
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191620, {	-- Fireplume Plumage
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191621, {	-- Fireplume Insignia
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191622, {	-- Fireplume Talons
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191627, {	-- Fireplume Blouse
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191628, {	-- Fireplume Tailwinds
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191774, {	-- Fireplume Claws
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191775, {	-- Fireplume Shorts and Stockings
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191776, {	-- Fireplume Coverts
+			["timeline"] = { "added 10.0.2.47213" },
+		}),
+		i(191779, {	-- Fireplume Halter
+			["timeline"] = { "added 10.0.2.47213" },
 		}),
 	}),
 	-- #endif

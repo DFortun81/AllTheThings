@@ -298,6 +298,7 @@ root("Zones", {
 				}),
 				prof(FISHING, {
 					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192057 },	-- Nettlefish School
 						["criteriaID"] = 5287,	-- Nettlefish School
 						["requireSkill"] = FISHING,
 					}),

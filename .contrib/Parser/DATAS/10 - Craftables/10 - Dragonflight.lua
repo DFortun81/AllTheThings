@@ -20,11 +20,6 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 	-- Crafting
 	i(191529),	-- Illustrious Insight
 	i(191526),	-- Lesser Illustrious Insight
-	-- Souls
-	i(193921),	-- Airy Soul
-	i(193920),	-- Earthen Soul
-	i(193362),	-- Fiery Soul
-	i(193919),	-- Icy Soul
 	prof(ALCHEMY, {
 		spell(370747, {	-- Advanced Phial Experimentation
 			r(370472),	-- Aerated Phial of Deftness
@@ -168,7 +163,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(191518),	-- Writhefire Oil++
 			i(191519),	-- Writhefire Oil+++
 		}),
-		filter(56, {	-- Reagents
+		filter(REAGENTS, {
 			i(191570),	-- Dragon's Alchemical Solution
 			i(191493),	-- Primal Convergent+
 			i(191494),	-- Primal Convergent++
@@ -431,7 +426,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			--
 			i(191256),	-- Serevite Skeleton Key
 		}),
-		filter(56, {	-- Reagents
+		filter(REAGENTS, {
 			i(190530),	-- Frostfire Alloy+
 			i(190531),	-- Frostfire Alloy++
 			i(190532),	-- Frostfire Alloy+++
@@ -798,7 +793,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(200535),	-- Scepter of Spectacle: Frost
 			i(201158),	-- Scepter of Spectacle: Order
 		}),
-		filter(56, {
+		filter(REAGENTS, {
 			i(200618),	-- Primal Invocation Extract+
 			i(200633),	-- Primal Invocation Extract++
 			i(200634),	-- Primal Invocation Extract+++
@@ -960,7 +955,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			q(71879, { ["name"] = "First Craft: Green Fireflight", }),	-- Green Fireflight
 			q(71882, { ["name"] = "First Craft: Red Fireflight", }),	-- Red Fireflight
 			-- Explosives
-			--q(, { ["name"] = "First Craft: Creature Combustion Canister", }),	-- Creature Combustion Canister
+			q(71462, { ["name"] = "First Craft: Creature Combustion Canister", }),	-- Creature Combustion Canister
 			--q(, { ["name"] = "First Craft: EZ-Thro Creature Combustion Canister", }),	-- EZ-Thro Creature Combustion Canister
 			--q(, { ["name"] = "First Craft: EZ-Thro Gravitational Displacer", }),	-- EZ-Thro Gravitational Displacer
 			--q(, { ["name"] = "First Craft: EZ-Thro Grease Grenade", }),	-- EZ-Thro Grease Grenade
@@ -1113,7 +1108,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(201930),	-- H.E.L.P.
 			i(198650),	-- Rummage Through Scrap
 		}),
-		filter(56, {	-- Reagents
+		filter(REAGENTS, {
 			i(198195),	-- Arclight Capacitor+
 			i(198196),	-- Arclight Capacitor++
 			i(198197),	-- Arclight Capacitor+++
@@ -1465,7 +1460,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(198492),	-- Vantus Rune: Vault of the Incarnates++
 			i(198493),	-- Vantus Rune: Vault of the Incarnates+++
 		}),
-		filter(56, {
+		filter(REAGENTS, {
 			i(194751),	-- Blazing Ink+
 			i(194752),	-- Blazing Ink++
 			i(194846),	-- Blazing Ink+++
@@ -1630,7 +1625,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 				i(193003),	-- Idol of the Lifebinder
 				i(193004),	-- Idol of the Spell-Weaver
 			}),
-			filter(56, {
+			filter(REAGENTS, {
 				i(193368),	-- Silken Gemdust+
 				i(193369),	-- Silken Gemdust++
 				i(193370),	-- Silken Gemdust+++
@@ -1669,7 +1664,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(192993),	-- Tiered Medallion Setting++
 			i(192994),	-- Tiered Medallion Setting+++
 		}),
-		filter(56, {	-- Reagents
+		filter(REAGENTS, {
 			i(191474),	-- Draconic Vial+
 			i(191475),	-- Draconic Vial++
 			i(191476),	-- Draconic Vial+++
@@ -1882,7 +1877,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(193552),	-- Toxified Armor Patch++
 			i(193555),	-- Toxified Armor Patch+++
 		}),
-		filter(56, {	-- Reagents
+		filter(REAGENTS, {
 			i(193242),	-- Earthshine Scales+
 			i(193243),	-- Earthshine Scales++
 			i(193244),	-- Earthshine Scales+++
@@ -2091,7 +2086,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(194049),	-- Wildercloth Bandage++
 			i(194050),	-- Wildercloth Bandage+++
 		}),
-		filter(56, {	-- Reagents
+		filter(REAGENTS, {
 			i(193938),	-- Azureweave Bolt+
 			i(193939),	-- Azureweave Bolt++
 			i(193940),	-- Azureweave Bolt+++
@@ -2126,12 +2121,12 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 }))));
 
 root("HiddenQuestTriggers", {
+	-- TODO: likely many of these to be added as actual tracking under ExpansionFeatures > DF > Professions
 	tier(DF_TIER, {
 		prof(ALCHEMY, {
 			q(71948),	-- Maxxed Out Transmutation
 		}),
 		prof(HERBALISM, {
-			q(71857),	-- First Dreambloom Petal of the week
 			q(71969),	-- First Lush Hochenblume Harvest
 			q(71970),	-- First Writhebark Harvest
 			q(71971),	-- First Lush Writhebark Harvest
@@ -2309,119 +2304,115 @@ root("HiddenQuestTriggers", {
 			q(),	-- Cliffside Wylderdrake: Steel and Yellow Armor
 			q(),	-- Cliffside Wylderdrake: Triple Head Horns
 		}),
+		--]]
 		prof(JEWELCRAFTING, {
-			-- Jewelcrafting Essentials
-			q(),	-- Dragon Isles Crushing
-			q(),	-- Dragon Isles Prospecting
 			-- Reagents
-			q(),	-- Blotting Sand
-			q(),	-- Draconic Vial
-			q(),	-- Elemental Harmony
-			q(),	-- Empty Soul Cage
+			-- q(),	-- Blotting Sand
+			q(71673),	-- Draconic Vial
+			-- q(),	-- Elemental Harmony
+			-- q(),	-- Empty Soul Cage
 			q(71675),	-- Frameless Lens
-			q(),	-- Glossy Stone
-			q(),	-- Illustrious Insight
-			q(),	-- Pounce
+			q(71676),	-- Glossy Stone
+			-- q(),	-- Illustrious Insight
+			-- q(),	-- Pounce
 			q(71672),	-- Shimmering Clasp
 			-- Rudimentary Gems
-			q(),	-- Crafty Queen's Ruby
-			q(),	-- Energized Vibrant Emerald
-			q(),	-- Sensei's Sundered Onyx
-			q(),	-- Soild Eternity Amber
-			q(),	-- Zen Mystic Sapphire
+			q(71625),	-- Crafty Queen's Ruby
+			q(71623),	-- Energized Vibrant Emerald
+			q(71624),	-- Sensei's Sundered Onyx
+			q(71622),	-- Solid Eternity Amber
+			q(71626),	-- Zen Mystic Sapphire
 			-- Air Gems
-			q(),	-- Crafty Alexstraszite
-			q(),	-- Energized Malygite
+			-- q(),	-- Crafty Alexstraszite
+			-- q(),	-- Energized Malygite
 			q(71627),	-- Forceful Nozdorite
-			q(),	-- Keen Neltharite
-			q(),	-- Quick Ysemerald
+			-- q(),	-- Keen Neltharite
+			-- q(),	-- Quick Ysemerald
 			-- Earth Gems
-			q(),	-- Fractured Neltharite
-			q(),	-- Keen Ysemerald
+			-- q(),	-- Fractured Neltharite
+			-- q(),	-- Keen Ysemerald
 			q(71628),	-- Puissant Nozdorite
-			q(),	-- Sensei's Alexstraszite
-			q(),	-- Zen Malygite
+			-- q(),	-- Sensei's Alexstraszite
+			-- q(),	-- Zen Malygite
 			-- Fire Gems
-			q(),	-- Crafty Ysemerald
-			q(),	-- Deadly Alexstraszite
+			-- q(),	-- Crafty Ysemerald
+			-- q(),	-- Deadly Alexstraszite
 			q(71629),	-- Jagged Nozdorite
-			q(),	-- Radiant Malygite
-			q(),	-- Sensei's Neltharite
+			-- q(),	-- Radiant Malygite
+			-- q(),	-- Sensei's Neltharite
 			-- Frost Gems
-			q(),	-- Energized Ysemerald
-			q(),	-- Radiant Alexstraszite
+			-- q(),	-- Energized Ysemerald
+			-- q(),	-- Radiant Alexstraszite
 			q(71630),	-- Steady Nozdorite
-			q(),	-- Stormy Malygite
-			q(),	-- Zen Neltharite
+			-- q(),	-- Stormy Malygite
+			-- q(),	-- Zen Neltharite
 			-- Primalist Gems
-			q(),	-- Fierce Illimited Diamond
-			q(71619),	-- Inscribed Illimited Diamond
-			q(),	-- Resplendent Illimited Diamond
-			q(),	-- Skillful Illimited Diamond
+			-- q(),	-- Fierce Illimited Diamond
+			-- q(71619),	-- Inscribed Illimited Diamond
+			-- q(),	-- Resplendent Illimited Diamond
+			-- q(),	-- Skillful Illimited Diamond
 			-- Misc
-			q(71657),	-- Tiered Medallion Setting
+			-- q(71657),	-- Tiered Medallion Setting
 			-- Trinkets
-			q(),	-- Idol of the Earth Warder
-			q(),	-- Idol of the Dreamer
-			q(),	-- Idol of the Lifebinder
-			q(),	-- Idol of the Spellweaver
+			-- q(),	-- Idol of the Earth Warder
+			-- q(),	-- Idol of the Dreamer
+			-- q(),	-- Idol of the Lifebinder
+			-- q(),	-- Idol of the Spellweaver
 			-- Jewelry
-			q(),	-- Band of New Beginnings
-			q(),	-- Choker of Shielding
-			q(),	-- Crimson Combatant's Jeweled Amulet
-			q(),	-- Crimson Combatant's Jeweled Signet
-			q(),	-- Elemental Lariat
+			q(71607),	-- Band of New Beginnings
+			-- q(),	-- Choker of Shielding
+			-- q(),	-- Crimson Combatant's Jeweled Amulet
+			-- q(),	-- Crimson Combatant's Jeweled Signet
+			-- q(),	-- Elemental Lariat
 			q(71602),	-- Pendant of Impending Perils
-			q(),	-- Ring-Bound Hourglass
-			q(),	-- Signet of Titanic Insight
-			q(),	-- Torc of Passed Time
+			-- q(),	-- Ring-Bound Hourglass
+			-- q(),	-- Signet of Titanic Insight
+			-- q(),	-- Torc of Passed Time
 			-- Statues & Carvings
-			q(),	-- Djaradin's "Pinata"
-			q(),	-- Kalu'ak Figurine
-			q(),	-- Narcissist's Sculpture
+			-- q(),	-- Djaradin's "Pinata"
+			-- q(),	-- Kalu'ak Figurine
+			-- q(),	-- Narcissist's Sculpture
 			q(71612),	-- Revitalizing Red Carving
-			q(),	-- Statue of Tyr's Herald
+			-- q(),	-- Statue of Tyr's Herald
 			-- Battle Pets
-			q(),	-- Jeweled Amber Whelpling
-			q(),	-- Jeweled Emerald Whelpling
-			q(),	-- Jeweled Onyx Whelpling
-			q(),	-- Jeweled Ruby Whelpling
-			q(),	-- Jeweled Sapphire Whelpling
+			-- q(),	-- Jeweled Amber Whelpling
+			-- q(),	-- Jeweled Emerald Whelpling
+			-- q(),	-- Jeweled Onyx Whelpling
+			-- q(),	-- Jeweled Ruby Whelpling
+			-- q(),	-- Jeweled Sapphire Whelpling
 			-- Noevelties
-			q(),	-- "Rhinestone" Sunglasses
-			q(),	-- Covergent Prism
-			q(),	-- Jeweled Offering
-			q(),	-- Projection Prism
-			q(),	-- Split-Lens Specs
+			-- q(),	-- "Rhinestone" Sunglasses
+			-- q(),	-- Covergent Prism
+			-- q(),	-- Jeweled Offering
+			-- q(),	-- Projection Prism
+			-- q(),	-- Split-Lens Specs
 			-- Profession Equipment
-			q(),	-- Alexstraszite Loupes
-			q(),	-- Bold-Print Bifocals
-			q(),	-- Chromatic Focus
-			q(),	-- Fine-Print Trifocals
-			q(),	-- Left-Handed Magnifying Glass
-			q(),	-- Magnificent Margin Magnifier
-			q(),	-- Resonant Focus
+			-- q(),	-- Alexstraszite Loupes
+			q(71661),	-- Bold-Print Bifocals
+			q(71659),	-- Chromatic Focus
+			-- q(),	-- Fine-Print Trifocals
+			q(71662),	-- Left-Handed Magnifying Glass
+			-- q(),	-- Magnificent Margin Magnifier
+			-- q(),	-- Resonant Focus
 			q(71665),	-- Sundered Onyx Loupes
 			-- Extravagant Glasswares
-			q(),	-- Dreamer's Vision
-			q(),	-- Earthwarden's Prize
-			q(71654),	-- Jeweled Dragon's Heart
-			q(),	-- Keeper's Glory
-			q(),	-- Queen's Gift
+			q(71655),	-- Dreamer's Vision
+			q(71651),	-- Earthwarden's Prize
+			-- q(71654),	-- Jeweled Dragon's Heart
+			-- q(),	-- Keeper's Glory
+			-- q(),	-- Queen's Gift
 			q(71653),	-- Timewatcher's Patience
 		}),
 		prof(LEATHERWORKING, {
-			-- Recraft
-			q(),	-- Recraft Equipment
 			-- Leather Armor
-			q(),	-- Life-Bound Belt
-			q(71713),	-- Life-Bound Binding
-			q(),	-- Life-Bound Boots
-			q(),	-- Life-Bound Cap
-			q(),	-- Life-Bound Chestpiece
-			q(),	-- Life-Bound Gloves
-			q(71711),	-- Life-Bound Shoulderpads
-			q(),	-- Life-Bound Trousers
+			-- q(),	-- Life-Bound Belt
+			-- q(71713),	-- Life-Bound Binding
+			-- q(),	-- Life-Bound Boots
+			-- q(),	-- Life-Bound Cap
+			-- q(),	-- Life-Bound Chestpiece
+			-- q(),	-- Life-Bound Gloves
+			-- q(71711),	-- Life-Bound Shoulderpads
+			-- q(),	-- Life-Bound Trousers
 			q(71704),	-- Pioneer's Leather Boots
 			q(71703),	-- Pioneer's Leather Tunic
 			q(72569),	-- Pioneer's Leather Wristguard
@@ -2431,107 +2422,105 @@ root("HiddenQuestTriggers", {
 			q(72497),	-- Pioneer's Practiced Leggings
 			q(72498),	-- Pioneer's Practiced Shoulderpads
 			-- Mail Armor
-			q(),	-- Flame-Touched Chain
-			q(),	-- Flame-Touched Chainmail
-			q(),	-- Flame-Touched Cuffs
-			q(),	-- Flame-Touched Handguards
-			q(),	-- Flame-Touched Helmet
-			q(),	-- Flame-Touched Legguards
-			q(),	-- Flame-Touched Spaulders
-			q(),	-- Flame-Touched Treads
+			-- q(),	-- Flame-Touched Chain
+			-- q(),	-- Flame-Touched Chainmail
+			-- q(),	-- Flame-Touched Cuffs
+			-- q(),	-- Flame-Touched Handguards
+			-- q(),	-- Flame-Touched Helmet
+			-- q(),	-- Flame-Touched Legguards
+			-- q(),	-- Flame-Touched Spaulders
+			-- q(),	-- Flame-Touched Treads
 			q(71730),	-- Trailblazer's Scale Boots
-			q(),	-- Trailblazer's Scale Bracers
-			q(),	-- Trailblazer's Scale Vest
-			q(),	-- Trailblazer's Toughened Chainbelt
-			q(),	-- Trailblazer's Toughened Coif
+			q(71731),	-- Trailblazer's Scale Bracers
+			q(71729),	-- Trailblazer's Scale Vest
+			q(71705),	-- Trailblazer's Toughened Chainbelt
+			q(72501),	-- Trailblazer's Toughened Coif
 			q(72500),	-- Trailblazer's Toughened Grips
-			q(),	-- Trailblazer's Toughened Legguards
+			q(72502),	-- Trailblazer's Toughened Legguards
 			q(72503),	-- Trailblazer's Toughened Spikes
 			-- Profession Equipment
 			q(71683),	-- Alchemist's Hat
 			q(71767),	-- Durable Pack
-			q(),	-- Expert Alchemist's Hat
-			q(),	-- Expert Skinner's Cap
-			q(),	-- Flameproof Apron
-			q(),	-- Floral Basket
+			-- q(),	-- Expert Alchemist's Hat
+			-- q(),	-- Expert Skinner's Cap
+			-- q(),	-- Flameproof Apron
+			q(71751),	-- Floral Basket
 			q(71753),	-- Jeweler's Cover
-			q(),	-- Lavish Floral Pack
-			q(),	-- Masterwork Smock
+			-- q(),	-- Lavish Floral Pack
+			-- q(),	-- Masterwork Smock
 			q(71749),	-- Protective Gloves
-			q(),	-- Reinforced Pack
+			-- q(),	-- Reinforced Pack
 			q(71755),	-- Resilient Smock
-			q(),	-- Resplendent Cover
-			q(),	-- Shockproof Gloves
+			-- q(),	-- Resplendent Cover
+			-- q(),	-- Shockproof Gloves
 			q(71769),	-- Skinner's Cap
 			q(71744),	-- Smithing Apron
 			-- Weapons
-			q(),	-- Bonewrought Crossbow
+			q(71777),	-- Bonewrought Crossbow
 			-- Elemental Patterns
-			q(),	-- Ancestor's Dew Drippers
-			q(),	-- Flaring Cowl
-			q(),	-- Old Spirit's Wristwraps
-			q(),	-- Scale Rein Grips
-			q(),	-- Snowball Makers
-			q(),	-- String of Spiritual Knick-Knacks
-			q(),	-- Wind Spirit's Lasso
+			-- q(),	-- Ancestor's Dew Drippers
+			-- q(),	-- Flaring Cowl
+			-- q(),	-- Old Spirit's Wristwraps
+			-- q(),	-- Scale Rein Grips
+			-- q(),	-- Snowball Makers
+			-- q(),	-- String of Spiritual Knick-Knacks
+			-- q(),	-- Wind Spirit's Lasso
 			-- Bestial Patterns
-			q(),	-- Allied Heartwarming Fur Coat
-			q(),	-- Allied Legguards of Sansok Khan
-			q(),	-- Bow of the Dragon Hunters
-			q(),	-- Crimson Combatant's Adamant Chainmail
-			q(),	-- Crimson Combatant's Adamant Cowl
-			q(),	-- Crimson Combatant's Adamant Cuffs
-			q(),	-- Crimson Combatant's Adamant Eqpaulettes
-			q(),	-- Crimson Combatant's Adamant Gauntlets
-			q(),	-- Crimson Combatant's Adamant Girdle
-			q(),	-- Crimson Combatant's Adamant Leggings
-			q(),	-- Crimson Combatant's Adamant Treads
-			q(),	-- Crimson Combatant's Resilient Belt
-			q(),	-- Crimson Combatant's Resilient Boots
-			q(),	-- Crimson Combatant's Resilient Chestpiece
-			q(),	-- Crimson Combatant's Resilient Gloves
-			q(),	-- Crimson Combatant's Resilient Mask
-			q(),	-- Crimson Combatant's Resilient Shoulderpads
-			q(),	-- Crimson Combatant's Resilient Trousers
-			q(),	-- Crimson Combatant's Resilient Wristwraps
-			q(),	-- Infurious Boots of Reprieve
-			q(),	-- Infurious Chainhelm Protector
-			q(),	-- Infurious Footwraps of Indemnity
-			q(),	-- Infurious Spirit's Hood
+			-- q(),	-- Allied Heartwarming Fur Coat
+			-- q(),	-- Allied Legguards of Sansok Khan
+			-- q(),	-- Bow of the Dragon Hunters
+			-- q(),	-- Crimson Combatant's Adamant Chainmail
+			-- q(),	-- Crimson Combatant's Adamant Cowl
+			-- q(),	-- Crimson Combatant's Adamant Cuffs
+			-- q(),	-- Crimson Combatant's Adamant Eqpaulettes
+			-- q(),	-- Crimson Combatant's Adamant Gauntlets
+			-- q(),	-- Crimson Combatant's Adamant Girdle
+			-- q(),	-- Crimson Combatant's Adamant Leggings
+			-- q(),	-- Crimson Combatant's Adamant Treads
+			-- q(),	-- Crimson Combatant's Resilient Belt
+			-- q(),	-- Crimson Combatant's Resilient Boots
+			-- q(),	-- Crimson Combatant's Resilient Chestpiece
+			-- q(),	-- Crimson Combatant's Resilient Gloves
+			-- q(),	-- Crimson Combatant's Resilient Mask
+			-- q(),	-- Crimson Combatant's Resilient Shoulderpads
+			-- q(),	-- Crimson Combatant's Resilient Trousers
+			-- q(),	-- Crimson Combatant's Resilient Wristwraps
+			-- q(),	-- Infurious Boots of Reprieve
+			-- q(),	-- Infurious Chainhelm Protector
+			-- q(),	-- Infurious Footwraps of Indemnity
+			-- q(),	-- Infurious Spirit's Hood
 			-- Decayed Patter
-			q(),	-- Acidic Hailstone Treads
-			q(),	-- Silmy Expulsion Boots
-			q(),	-- Toxic Thorn Footwraps
-			q(),	-- Venom-Steeped Stompers
-			q(),	-- Witherrot Tome
+			-- q(),	-- Acidic Hailstone Treads
+			-- q(),	-- Silmy Expulsion Boots
+			-- q(),	-- Toxic Thorn Footwraps
+			-- q(),	-- Venom-Steeped Stompers
+			-- q(),	-- Witherrot Tome
 			-- Reagents
-			q(),	-- Finished Prototype Explorer's Barding
-			q(),	-- Finished Prototype Regal Barding
-			q(71764),	-- Earthshine Scale
-			q(),	-- Frostbite Scale
-			q(),	-- Infurious Hide
-			q(),	-- Infurious Scales
+			-- q(),	-- Finished Prototype Explorer's Barding
+			-- q(),	-- Finished Prototype Regal Barding
+			q(71764),	-- Earthshine Scales
+			q(71765),	-- Frostbite Scales
+			-- q(),	-- Infurious Hide
+			-- q(),	-- Infurious Scales
 			q(71760),	-- Mireslush Hide
-			q(),	-- Stonecrust Hide
+			q(71759),	-- Stonecrust Hide
 			-- Optional Reagents
-			q(),	-- Fang Adornments
-			q(),	-- Toxified Armor Patch
+			-- q(),	-- Fang Adornments
+			-- q(),	-- Toxified Armor Patch
 			-- Finishing Reagents
-			q(),	-- Illustrious Insight
+			-- q(),	-- Illustrious Insight
 			-- Armor Kits
-			q(),	-- Fierce Armor Kit
-			q(),	-- Frosted Armor Kit
+			-- q(),	-- Fierce Armor Kit
+			-- q(),	-- Frosted Armor Kit
 			q(71743),	-- Reinforced Armor Kit
 			-- Drums
 			q(71746),	-- Feral Hide Drums
 			-- Toys
-			q(),	-- Artisan's Sign
-			q(),	-- Gnoll Tent
-			q(71773),	-- Tuskarr Bean Bag
+			-- q(),	-- Artisan's Sign
+			-- q(),	-- Gnoll Tent
+			-- q(71773),	-- Tuskarr Bean Bag
 		}),
-		--]]
 		prof(SKINNING, {
-			q(70381),	-- Curious Hide Scraps #1
 			q(70383),	-- Curious Hide Scraps #2
 			q(70384),	-- Curious Hide Scraps #3
 			q(70389),	-- Large Sample of Curious Hide
@@ -2546,6 +2535,7 @@ root("HiddenQuestTriggers", {
 			q(74157),	-- Skinning Moskhoi on a Grand Hunt
 			q(74159),	-- Skinning Tevgai on a Grand Hunt
 			q(74196),	-- Skinning Rokmur rare
+			q(74126),	-- Skinning Crystalus in a Primal Storm
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--

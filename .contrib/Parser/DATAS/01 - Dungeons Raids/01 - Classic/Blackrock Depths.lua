@@ -1953,6 +1953,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["cr"] = 8897,	-- Doomforge Craftsman
 				}),
 				i(18235, {	-- Schematic: Field Repair Bot 74A
+					["provider"] = { "o", 179552 },	-- Schematic: Field Repair Bot 74A
 					["description"] = "On the floor next to Golem Lord Argelmach.",
 				}),
 				i(18654, {	-- Schematic: Gnomish Alarm-o-Bot

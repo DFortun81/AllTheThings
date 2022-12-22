@@ -279,25 +279,31 @@ root("Zones", {
 				}),
 				prof(FISHING, {
 					i(45905, {	-- Bloodtooth Frenzy
+						["provider"] = { "o", 194479 },	-- Pool of Blood
 						["description"] = "Kill an animal and then swim in a body of water to create a pool to fish from.",
 					}),
 					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192051 },	-- Borean Man O' War School
 						["criteriaID"] = 5278,	-- Borean Man O' War School
 						["requireSkill"] = FISHING,
 					}),
 					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192053 },	-- Deep Sea Monsterbelly School
 						["criteriaID"] = 5279,	-- Deep Sea Monsterbelly School
 						["requireSkill"] = FISHING,
 					}),
 					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192052 },	-- Imperial Manta Ray School
 						["criteriaID"] = 5284,	-- Imperial Manta Ray School
 						["requireSkill"] = FISHING,
 					}),
 					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192054 },	-- Moonglow Cuttlefish School
 						["criteriaID"] = 5285,	-- Moonglow Cuttlefish School
 						["requireSkill"] = FISHING,
 					}),
 					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192046 },	-- Musselback Sculpin School
 						["criteriaID"] = 5286,	-- Musselback Sculpin School
 						["requireSkill"] = FISHING,
 					}),
@@ -1499,6 +1505,14 @@ root("Zones", {
 						["coord"] = { 64.0, 45.7, BOREAN_TUNDRA },
 						["maxReputation"] = { 1073, EXALTED },	-- The Kalu'ak, Exalted.
 						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/8 Kaskala Supplies
+								["providers"] = {
+									{ "i",  35711 },	-- Kaskala Supplies
+									{ "o", 188164 },	-- Kaskala Supplies
+								},
+							}),
+						},
 					}),
 					q(11587, {	-- Prison Break
 						["qg"] = 25262,	-- Librarian Donathan

@@ -278,6 +278,7 @@
 930@@@Observer
 931@@@Wrathguard
 934@@@All - Specializations
+960@@@Runeforging
 962@@@Pet - Primal Fire Elemental
 963@@@Pet - Primal Earth Elemental
 975@@@Way of the Grill

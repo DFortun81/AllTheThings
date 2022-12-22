@@ -16,9 +16,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 59.5, 59.2, THALDRASZUS },
 				["questID"] = 74055,
 				["cost"] = {{"i",197733,4}},	-- 4x Unsustainable Containment Core
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(197138),	-- Highland Drake: Striped Pattern
+				},
 			}),
 			n(193220, {	-- Broodweaver Araznae <Mother of Spiders>
 				["coord"] = { 59.6, 70.1, THALDRASZUS },
@@ -82,7 +82,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 72813,
 				["g"] = {
 					i(200182),	-- Riveted Drape
-					i(197383),	-- Renewed Proto-Drake: Heavy Horns
+					i(197383),	-- Renewed Proto-Drake: Heavy Horns (DM!)
 				},
 			}),
 			n(193241, {	-- Lord Epochbrgl <Time-Lost>
@@ -195,6 +195,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					-- is part of the DF>Global Rare Loottable
 				},
 			}),
+		}),
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	m(THALDRASZUS, {
+		n(RARES, {
+			q(72050),	-- first kill of Ancient Protector...? maybe
 		}),
 	}),
 })));

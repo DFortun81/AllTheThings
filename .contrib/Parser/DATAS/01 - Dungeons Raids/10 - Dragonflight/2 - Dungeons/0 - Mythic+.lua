@@ -27,6 +27,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 				ach(16641),		-- Keystone Hero: The Nokhud Offensive
 			},
 		})),
+		i(201471),	-- Story of a Spectacular Victory
 	}),
 }))));
 

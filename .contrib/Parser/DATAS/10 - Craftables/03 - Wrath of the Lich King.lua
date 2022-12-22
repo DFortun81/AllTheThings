@@ -353,6 +353,37 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 			i(23775),	-- Titanium Toolbox*
 		}),
 	}),
+	prof(FISHING, {
+		i(44505, {	-- Dustbringer
+			["description"] = "Can be caught in schools or open water in Northrend.",
+			["providers"] = {
+				{ "o", 192051 },	-- Borean Man O' War School
+				{ "o", 192053 },	-- Deep Sea Monsterbelly School
+				{ "o", 192048 },	-- Dragonfin Angelfish School
+				{ "o", 192049 },	-- Fangtooth Herring School
+				{ "o", 192050 },	-- Glacial Salmon School
+				{ "o", 192059 },	-- Glassfin Minnow School
+				{ "o", 192052 },	-- Imperial Manta Ray School
+				{ "o", 192054 },	-- Moonglow Cuttlefish School
+				{ "o", 192046 },	-- Musselback Sculpin School
+				{ "o", 192057 },	-- Nettlefish School
+			},
+		}),
+		i(46109, {	-- Sea Turtle
+			["providers"] = {
+				{ "o", 192051 },	-- Borean Man O' War School
+				{ "o", 192053 },	-- Deep Sea Monsterbelly School
+				{ "o", 192048 },	-- Dragonfin Angelfish School
+				{ "o", 192049 },	-- Fangtooth Herring School
+				{ "o", 192050 },	-- Glacial Salmon School
+				{ "o", 192059 },	-- Glassfin Minnow School
+				{ "o", 192052 },	-- Imperial Manta Ray School
+				{ "o", 192054 },	-- Moonglow Cuttlefish School
+				{ "o", 192046 },	-- Musselback Sculpin School
+				{ "o", 192057 },	-- Nettlefish School
+			},
+		}),
+	}),
 	prof(INSCRIPTION, {
 		-- #if AFTER WOD
 		filter(GLYPHS, {

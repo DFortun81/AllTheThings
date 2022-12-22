@@ -144,8 +144,8 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 			}),
 			crit(3752, {	-- Gazelle (Desolace, Mulgore, Northern Barrens, Southern Barrens)
 				["maps"] = {
-					DESOLACE, MULGORE,
 					-- #if AFTER CATA
+					DESOLACE, MULGORE,
 					NORTHERN_BARRENS,
 					SOUTHERN_BARRENS,
 					-- #else
@@ -160,12 +160,11 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 			}),
 			crit(3754, {	-- Parrot (Un'Goro Crater, Swamp of Sorrows, Northern Stranglethorn, The Cape of Stranglethorn)
 				["maps"] = {
-					UNGORO_CRATER, SWAMP_OF_SORROWS,
+					UNGORO_CRATER,
 					-- #if AFTER CATA
+					SWAMP_OF_SORROWS,
 					NORTHERN_STRANGLETHORN,
 					THE_CAPE_OF_STRANGLETHORN,
-					-- #else
-					STRANGLETHORN_VALE,
 					-- #endif
 				},
 				["crs"] = { 9600 },	-- Parrot
@@ -192,7 +191,13 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 				},
 			}),
 			crit(3756, {	-- Ram (Loch Modan, Wetlands, Arathi Highlands, Ruins of Gilneas)
-				["maps"] = { LOCH_MODAN, WETLANDS, ARATHI_HIGHLANDS },
+				["maps"] = {
+					LOCH_MODAN,
+					WETLANDS,
+					-- #if AFTER CATA
+					ARATHI_HIGHLANDS,
+					-- #endif
+				},
 				["crs"] = { 2098 },	-- Ram
 			}),
 			crit(3757, {	-- Sheep (Uldum, Gilneas, Gilneas City, Howling Fjord, Redridge Mountains)
@@ -242,8 +247,8 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 			}),
 			crit(9, {	-- Gazelle (Desolace, Mulgore, Northern Barrens, Southern Barrens)
 				["maps"] = {
-					DESOLACE, MULGORE,
 					-- #if AFTER CATA
+					DESOLACE, MULGORE,
 					NORTHERN_BARRENS,
 					SOUTHERN_BARRENS,
 					-- #else
@@ -258,12 +263,11 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 			}),
 			crit(11, {	-- Parrot (Un'Goro Crater, Swamp of Sorrows, Northern Stranglethorn, The Cape of Stranglethorn)
 				["maps"] = {
-					UNGORO_CRATER, SWAMP_OF_SORROWS,
+					UNGORO_CRATER,
 					-- #if AFTER CATA
+					SWAMP_OF_SORROWS,
 					NORTHERN_STRANGLETHORN,
 					THE_CAPE_OF_STRANGLETHORN,
-					-- #else
-					STRANGLETHORN_VALE,
 					-- #endif
 				},
 				["crs"] = { 9600 },	-- Parrot
@@ -290,7 +294,13 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 				},
 			}),
 			crit(13, {	-- Ram (Loch Modan, Wetlands, Arathi Highlands, Ruins of Gilneas)
-				["maps"] = { LOCH_MODAN, WETLANDS, ARATHI_HIGHLANDS },
+				["maps"] = {
+					LOCH_MODAN,
+					WETLANDS,
+					-- #if AFTER CATA
+					ARATHI_HIGHLANDS,
+					-- #endif
+				},
 				["crs"] = { 2098 },	-- Ram
 			}),
 			crit(14, {	-- Sheep (Uldum, Gilneas, Gilneas City, Howling Fjord, Redridge Mountains)

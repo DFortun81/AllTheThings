@@ -16,7 +16,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			n(TREASURES, {
-				-- Dont have ObjectID etc.. atm
+				-- Don't have ObjectID etc.. atm
 				i(199229),	-- Schematic: Tinker: Breath of Neltharion (RECIPE!)
 			}),
 			d(1, {	-- Normal
@@ -167,8 +167,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	inst(1199, {	-- Neltharus
-		q(70724, {	-- first time entering dungeon as blacksmith
-			["requireSkill"] = BLACKSMITHING,	-- unconfirmed
-		}),
+		--q(70724),	-- first time entering dungeon as blacksmith // [From Errors: I pop for a mage In Ohn Plains] // [From Errors: got this for completing The Nokhud Offensive: Founders Keepers (66658) a warlock]
 	}),
 })));

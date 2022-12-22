@@ -226,13 +226,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- NON SET THINGS
 			i(191942),	-- Belloc's Hat
 			-- Waking Shore Quest Rewards?
-			i(194374),	-- Explorer's League Rifle
-			i(194378),	-- Explorer's Belt Knife
 			i(194379),	-- Field Scout's Longblade
 			i(194387),	-- Obsidian Watcher's Crossbow
 			i(194398),	-- Crumbling Watcher's Stone (NYI)
 			i(194417),	-- Vault Guard's Talon
-			i(194419),	-- Life Pool Herb Pouch
 			i(194420),	-- Blacktalon Blade
 			filter(COSMETIC, {
 				i(193069),	-- Climber's Pack
@@ -375,10 +372,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(190909),	-- Ruby Felfire Splitblade
 				i(190910),	-- Ruby Felfire Bulwark
 			}),
-			i(198081),	-- Caregiver's Charm
-			i(198451),	-- Lifeflame Ampoule
-			i(198532),	-- The Cartographer's Calipers
-			i(198539),	-- Breath of the Plains
 			i(198730),	-- Dragonscale Expedition Tabard
 			i(198731),	-- Iskaara Tuskarr Tabard
 			i(198732),	-- Valdrakken Accord Tabard
@@ -389,7 +382,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200154),	-- Rubyscale Band
 			i(200161),	-- Razorwind Talisman
 			i(200185),	-- Grips of the Everflowing Ocean
-			i(200189),	-- Hydroforged Shell Helm
 			i(200199),	-- Elements' Burden
 			i(200202),	-- Tomorrow's Chains
 			i(200203),	-- Repurposed Giant's Thimble
@@ -430,21 +422,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200760),	-- Unstable Arcane Cell
 			i(200875),	-- Seeker's Bands
 			i(200968),	-- Sandshaped Winglord's Drape
-			i(201035),	-- Obsidian Citadel Pauldrons
-			i(201036),	-- Obsidian Citadel Chestplate
-			i(201038),	-- Obsidian Citadel Footwraps
-			i(201039),	-- Obsidian Citadel Helm
-			i(201042),	-- Obsidian Citadel Bracers
-			i(201043),	-- Obsidian Citadel Belt
-			i(201048),	-- Tyrhold Epaulets
-			i(201049),	-- Tyrhold Robe
-			i(201050),	-- Tyrhold Leggings
-			i(201051),	-- Tyrhold Slippers
-			i(201052),	-- Tyrhold Visage
-			i(201053),	-- Tyrhold Gloves
-			i(201054),	-- Tyrhold Drape
-			i(201055),	-- Tyrhold Bindings
-			i(201056),	-- Tyrhold Sash
 			i(201057),	-- Dreamfire Sabatons
 			i(201058),	-- Robes of the Verdant Wing
 			i(201059),	-- Dreamfire Battleplate
@@ -477,24 +454,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201086),	-- Slippers of the Verdant Wing
 			i(201087),	-- Emerald Scale Treads
 			i(201088),	-- Green Draketracker's Boots
-			i(201992),	-- Emissary's Flamewrought Seal
-			i(202003),	-- Primal Seeker's Leggings
-			i(202004),	-- Brawler's Earthen Cuirass
-			i(202005),	-- Frozen Claw Mantle
-			i(202006),	-- Greathelm of Horned Fury
-			i(202007),	-- Woven Stone Bracelets
-			i(202008),	-- Galvanic Gaiters
-			i(202009),	-- Lavamancer's Ceremonial Waistguard
+
 			i(202116),	-- Alacritous Alchemist Stone
-			i(202143),	-- Woven Stone Bracelets
-			i(202144),	-- Greathelm of Horned Fury
-			i(202145),	-- Frozen Claw Mantle
-			i(202146),	-- Brawler's Earthen Cuirass
-			i(202147),	-- Primal Seeker's Leggings
-			i(202148),	-- Emissary's Flamewrought Seal
-			i(202149),	-- Primalist Warden's Bracers
-			i(202150),	-- Galvanic Gaiters
-			i(202151),	-- Lavamancer's Ceremonial Waistguard
+
 			i(202117),	-- Assembly Preserver's Band
 			i(202118),	-- Assembly Guardian's Ring
 			i(202119),	-- Assembly Scholar's Loop
@@ -528,17 +490,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193620),	-- Time-Lost Slyvern
 			i(193908),	-- Sapphire Crystalspine
 			i(198622),	-- Spyragos
-			i(200183),	-- Echo of the Cave
-			i(200255),	-- Echo of the Inferno
-			i(200260),	-- Echo of the Depths
-			i(200263),	-- Echo of the Heights
-			i(200276),	-- Ohuna Companion
-			i(200290),	-- Bakar Companion
 			i(200874),	-- Lady Feathersworth
-			i(201260),	-- Dust Spirit
-			i(201261),	-- Blaze Spirit
-			i(201262),	-- Gale Spirit
-			i(201265),	-- Tide Spirit
+
 			i(201838),	-- Snowclaw Cub
 			i(202085),	-- Bugbiter Tortoise
 		}),
@@ -604,49 +557,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191194),	-- Radiant Metallic Threading
 			---
 		}),
-		filter(MOUNTS, {
-			i(191838),	-- [PH] Blue Lava Mammoth
-			i(192601),	-- Loyal Magmammoth
-			i(192748),	-- [PH] Moose Bull Brown
-			i(192751),	-- [PH] Moose Bull Dark
-			i(192764),	-- Verdant Skitterfly
-			i(192765),	-- [PH] Dragonfly Yellow
-			i(192766),	-- [PH] Dragonfly Orange
-			i(192770),	-- [PH] Moose Bull Black
-			i(192771),	-- [PH] Water Salamander Blue
-			i(192772),	-- [PH] Water Salamander Green
-			i(192773),	-- [PH] Water Salamander Orange
-			i(192774),	-- [PH] Water Salamander Pink
-			i(192778),	-- [PH] Lava Slug Orange
-			i(192779),	-- Scorchpath
-			i(192780),	-- [PH] Lava Snail Orange
-			i(192781),	-- [PH] Lava Slug Blue
-			i(192782),	-- [PH] Lava Slug Yellow
-			i(192785),	-- [PH] Lava Snail Blue
-			i(192786),	-- [PH] Lava Snail Yellow
-			i(192787),	-- [PH] Mammoth V2 Dark
-			i(192788),	-- [PH] Mammoth V2 Blue
-			i(192789),	-- [PH] Mammoth V2 Gray
-			i(192790),	-- [PH] Mammoth V2 Green
-			i(192792),	-- PH Thunder Lizard Green
-			i(192793),	-- PH Thunder Lizard Black
-			i(192794),	-- PH Thunder Lizard Blue
-			i(192796),	-- PH Thunder Lizard Light
-			i(192800),	-- Skyskin Hornstrider
-			i(192801),	-- PH Primal Tallstrider White
-			i(192802),	-- PH Primal Tallstrider Black
-			i(192803),	-- PH Primal Tallstrider Red
-			i(192804),	-- Restless Hornstrider
-			i(192807),	-- PH Lava Mammoth Yellow
-			i(192111),	-- Renewed Proto-Drake: Red Scales
-			i(192523),	-- Renewed Proto-Drake: Green Scales
-			i(194722),	-- Carrier Yeti
-			i(198822),	-- [PH] Sepia Wind Eagle
-			i(198823),	-- [PH] Brown Wind Eagle
-			i(198824),	-- [PH] Dark Wind Eagle
-			i(198870),	-- Otto
-			i(201440),	-- Reins of the Liberated Slyvern
-		}),
 		n(PROFESSIONS, {
 			i(193905),	-- Iskaaran Trading Ledger
 			i(193907),	-- Chipped Tyrstone
@@ -670,8 +580,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194081),	-- Mutated Root
 			i(198607),	-- Scribe's Glyphs
 			i(198608),	-- Alchemy Notes
-			i(198609),	-- Tailoring Examples
-			i(198610),	-- Enchanter's Script
 			i(198611),	-- Engineering Details
 			i(198612),	-- Jeweler's Cuts
 			i(198599),	-- Experimental Decay Sample
@@ -729,10 +637,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200652),	-- Alchemical Flavor Pocket
 			i(198656),	-- Painter's Pretty Jewel
 			i(201003),	-- Furry Gloop
-			i(201006),	-- Draconic Flux
-			i(201007),	-- Ancient Monument
-			i(201009),	-- Falconer Gauntlet Drawings
-			i(201011),	-- Spelltouched Tongs
 			i(201012),	-- Enchanted Debris
 			i(201013),	-- Faintly Enchanted Remains
 			i(201014),	-- Boomthyr Rocket
@@ -771,10 +675,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198133),	-- Golden Expedition Compass
 			i(198134),	-- Shiny Surveyor Scope
 			i(198135),	-- Jeb's Supply Pack
-			i(199691),	-- Primal Earth Core
-			i(199748),	-- Primal Water Core
-			i(199749),	-- Primal Air Core
-			i(199750),	-- Primal Fire Core
 			i(199831),	-- Forgotten Dragon Crest
 			i(199840),	-- Wrapped Gold Band
 			i(199842),	-- Stone Dragontooth
@@ -819,28 +719,20 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197945),	-- Gnarled Thorn Bow
 			i(197953),	-- Ancient Protector's Broadsword
 			i(197955),	-- Sword of the Eternal Guard
-			i(197956),	-- Empowered Shortsword of Insight
-			i(197957),	-- Timeless Watcher's Saber
-			i(198035),	-- Archer's Decorated Bow
 				-- Thaldraszus
 			i(195177),	-- Moment's Notice
 			i(195181),	-- Rapid Fire
 
-			i(197677),	-- Plainswalking Stick
+
 			i(197684),	-- Argali Shearing Blade
-			i(197692),	-- Shikaar Fishing Bow
 			i(197693),	-- Shikaar Hunter's Crossbow
-			i(197698),	-- Mystic's Windblade
 			i(197904),	-- Shikaar Hunting Knife
-			i(197905),	-- Salamanther Slicer
 			i(200130),	-- Corpse Ripper
-			i(200136),	-- Monsoonic Armguards
 			i(200138),	-- Ancient Dancer's Longspear
 			i(200139),	-- Tempest Arc
 			i(200145),	-- Hilted Monolith
 			i(200147),	-- Web-Woven Robe
 			i(200151),	-- Seamist Blade
-			i(200170),	-- Stormbringer Bow
 			i(200171),	-- Grymheart Blade
 			i(200155),	-- Haphazardly Welded Protector
 			i(200175),	-- Repurposed Anvil
@@ -863,9 +755,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200302),	-- Magmaforged Scimitar
 			i(200307),	-- Viciously Hooked Cleaver
 			i(200308),	-- Rellen's Legacy
-			i(200311),	-- Bonespike Mallet
 			i(200437),	-- Dreamsong Censer
-			i(200439),	-- Earthpact Scepter
 			i(201231),	-- Bident of Hallucinations
 			i(201232),	-- Bonedust Spreader
 			i(201233),	-- Verdant Drakespine Glaive
@@ -891,43 +781,18 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201368),	-- Brackenhide Hollow Barbslinger
 			i(201369),	-- Hollow Greatwood Pestilence
 			i(201370),	-- Brackenhide Skullcracker
-			i(201372),	-- Imbu Tuskarr Axe
-			i(201374),	-- Tuskarr Fishing Pike
-			i(201375),	-- Imbu Warrior's Club
-			i(201376),	-- Imbu Tuskarr Mace
-			i(201377),	-- Tuskarr Elder's Staff
-			i(201378),	-- Tuskarr Angler's Crossbow
 			i(201380),	-- Nokhud Hunter's Bow
 			i(201382),	-- Centaur Warglaives
-			i(201429),	-- Obsidian Fist
-			i(201430),	-- Burning Mallet
-			i(201431),	-- Obsidian Tyrant's Mace
-			i(201432),	-- Obsidian Dragontooth
-			i(201434),	-- Obsidian Barrier
-			i(201442),	-- Primalist Tomorrow's Frostblade
-			i(201443),	-- Primalist Tomorrow's Icewall
-			i(201444),	-- Primalist Tomorrow's Earthblade
-			i(201445),	-- Primalist Tomorrow's Emberblade
-			i(201446),	-- Primalist Tomorrow's Firewall
-			i(201447),	-- Primalist Tomorrow's Breezeblade
-			i(201448),	-- Primalist Tomorrow's Windwall
-			i(201455),	-- Tyrhold Broadsword
-			i(201456),	-- Tyrhold Carbine
-			i(201457),	-- Tyrhold Relic
-			i(201458),	-- Aegis of Tyrhold
-			i(201459),	-- Tyrhold Shortsword
-			i(201460),	-- Gavel of Tyrhold
-			i(201461),	-- Tyrhold Pinnacle
+
+
+
 			i(201934),	-- Nokuhd Whittling Knife
-			i(201994),	-- Felsworn Covenant Crossbow
-			i(201995),	-- Crux of Blind Faith
-			i(201996),	-- Edge of the First Blade
-			i(201997),	-- Key to the Halls
-			i(201998),	-- Fenryr's Bloodstained Fang
-			i(201999),	-- Skovald's Resolve
 		--
 		}),
 		n(DRAKEWATCHER_MANUSCRIPTS, {
+			i(192111),	-- Renewed Proto-Drake: Red Scales
+			i(192523),	-- Renewed Proto-Drake: Green Scales
+
 			i(196961),	-- Cliffside Wylderdrake: Armor
 			i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor
 			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
@@ -938,7 +803,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(196978),	-- Cliffside Wylderdrake: Small Head Spikes
 			i(196979),	-- Cliffside Wylderdrake: Curled Head Horns
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw
-			i(196989),	-- Cliffside Wylderdrake: White Hair
 			i(196990),	-- Cliffside Wylderdrake: Helm
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
 			i(196994),	-- Cliffside Wylderdrake: Short Horns
@@ -960,7 +824,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197099),	-- Highland Drake: Armor
 			i(197102),	-- Highland Drake: Horned Chin
 			i(197104),	-- Highland Drake: Tapered Chin
-			i(197105),	-- Highland Drake: Spined Chin
 			i(197106),	-- Highland Drake: Finned Head
 			i(197109),	-- Highland Drake: Spiked Head
 			i(197116),	-- Highland Drake: Ears
@@ -974,7 +837,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197131),	-- Highland Drake: Hairy Cheek
 			i(197134),	-- Highland Drake: Spiked Legs
 			i(197136),	-- Highland Drake: Taperered Nose
-			i(197138),	-- Highland Drake: Striped Pattern
 			i(197146),	-- Highland Drake: White Scales
 			i(197152),	-- Highland Drake: Hooked Tail
 			i(197155),	-- Highland Drake: Finned Neck
@@ -992,8 +854,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197373),	-- Renewed Proto-Drake: Helm
 			i(197379),	-- Renewed Proto-Drake: Impaler Horns
 			i(197384),	-- Renewed Proto-Drake: Thick Spined Jaw
-			i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw
-			i(197389),	-- Renewed Proto-Drake: Green Scales
 			i(197393),	-- Renewed Proto-Drake: White Scales
 			i(197400),	-- Renewed Proto-Drake: Shark Snout
 			i(197404),	-- Renewed Proto-Drake: Finned Tail
@@ -1010,7 +870,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197594),	-- Windborne Velocidrake: Small Ears
 			i(197600),	-- Windborne Velocidrake: Helm
 			i(197604),	-- Windborne Velocidrake: Ox Horns
-			i(197605),	-- Windborne Velocidrake: Curled Horns
 			i(197606),	-- Windborne Velocidrake: Swept Horns
 			i(197609),	-- Windborne Velocidrake: White Horns
 			i(197615),	-- Windborne Velocidrake: Teal Scales
@@ -1062,7 +921,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200287),	-- Iskaara Tuskarr Insignia
 			i(200288),	-- Maruuk Centaur Insignia
 			i(200289),	-- Valdrakken Accord Insignia
-			i(200094),	-- Caravan Strongbox
 			i(200218),	-- Charred Fishing Pole
 			i(200443),	-- Dragon Isles Artifact
 			i(200449),	-- Sacred Tuskarr Totem
@@ -1077,7 +935,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201326),	-- Draconic Satchel of Cooperation
 			i(201355),	-- Eternal Equipment Chest
 			i(201362),	-- Fated Equipment Chest
-			i(201439),	-- Renewed Dream
 			i(201757),	-- Plundered Supplies
 			i(201836),	-- Valdrakken Token of Merit
 			i(201841),	-- Ensemble: Cosmic Aspirant's Plate Armor
@@ -1153,10 +1010,44 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200082),	-- Battered Imbu-made Net
 			i(200083),	-- Irontree Branch
 			i(200084),	-- Salinated Serevite
-			i(200085),	-- Khaz'gorite Wire
 			i(200086),	-- Khaz'gorite-infused Resin
 		}),
 		------------- PROBABLY NYI ---------------------
+		n(ARMOR, {
+			d(17, {	-- LFR
+				i(202146),	-- Brawler's Earthen Cuirass [BoP]
+				i(202148),	-- Emissary's Flamewrought Seal [BoP]
+				i(202145),	-- Frozen Claw Mantle [BoP]
+				i(202150),	-- Galvanic Gaiters [BoP]
+				i(202144),	-- Greathelm of Horned Fury [BoP]
+				i(202151),	-- Lavamancer's Ceremonial Waistguard [BoP]
+				i(202147),	-- Primal Seeker's Leggings [BoP]
+				i(202149),	-- Primalist Warden's Bracers [BoP]
+				i(202143),	-- Woven Stone Bracelets [BoP]
+			}),
+			d(14, {	-- Normal
+				i(202146),	-- Brawler's Earthen Cuirass [BoP]
+				i(202148),	-- Emissary's Flamewrought Seal [BoP]
+				i(202145),	-- Frozen Claw Mantle [BoP]
+				i(202150),	-- Galvanic Gaiters [BoP]
+				i(202144),	-- Greathelm of Horned Fury [BoP]
+				i(202151),	-- Lavamancer's Ceremonial Waistguard [BoP]
+				i(202147),	-- Primal Seeker's Leggings [BoP]
+				i(202149),	-- Primalist Warden's Bracers [BoP]
+				i(202143),	-- Woven Stone Bracelets [BoP]
+			}),
+			d(15, {	-- Heroic
+				i(202146),	-- Brawler's Earthen Cuirass [BoP]
+				i(202148),	-- Emissary's Flamewrought Seal [BoP]
+				i(202145),	-- Frozen Claw Mantle [BoP]
+				i(202150),	-- Galvanic Gaiters [BoP]
+				i(202144),	-- Greathelm of Horned Fury [BoP]
+				i(202151),	-- Lavamancer's Ceremonial Waistguard [BoP]
+				i(202147),	-- Primal Seeker's Leggings [BoP]
+				i(202149),	-- Primalist Warden's Bracers [BoP]
+				i(202143),	-- Woven Stone Bracelets [BoP]
+			}),
+		}),
 		n(ARMOR, {
 			i(191934),	-- TEMP Event Stream TEMP - No Buckle Fleshscale Belt
 			filter(CLOTH, {
@@ -1655,9 +1546,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200887),	-- Charred Porter
 			i(200888),	-- Coal-Fired Rib Rack
 			i(200889),	-- Highly-Spiced Haunch
-			i(200890),	-- Stonetalon Bloom Skewer
-			i(200891),	-- Druidic Dreamsalad
-			i(200892),	-- Dragonfruit Punch
 			i(200893),	-- Azsunian-Poached Lobster
 			i(200894),	-- Rare Vintage Arcwine
 			i(200895),	-- Fine Taladorian Cheese Platter
@@ -1680,9 +1568,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201417),	-- Curding of Stratholme
 			i(201418),	-- Orb of the Obsidian Scale
 			i(201419),	-- Apexis Asiago
-			i(201422),	-- Flash Frozen Meat
 			i(201423),	-- Hallowed Helm
-			i(201469),	-- Emerald Green Apple
 			i(201697),	-- Coldarra Coldbrew
 			i(201698),	-- Black Dragon Red Eye
 			i(201721),	-- Life Fire Latte
@@ -1795,7 +1681,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(194505),	-- Plans: Primal Weightstone (RECIPE!)
 				i(194504),	-- Plans: Primal Whetstone (RECIPE!)
 				i(194494),	-- Plans: Reinforced Plating (RECIPE!)
-				i(194507),	-- Plans: Serevite Skeleton Key (RECIPE!)
 				-- Items
 				i(191261),	-- Draconium Repair Hammer
 				i(191884),	-- Draconium Repair Hammer
@@ -2107,7 +1992,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200116),	-- Everlasting Horn of Lavaswimming (TOY!)
 			i(200636),	-- Primal Invocation Quintessence (TOY!)
 			i(201435),	-- Shuffling Sands (TOY!)
-			i(201815),	-- Cloak of Many Faces (TOY!)
 			i(202042),	-- Aquatic Shades (TOY!)
 			i(200926),	-- Compendium of Love (TOY!)
 			i(201933),	-- Black Dragon's Challenge Dummy (TOY!)
@@ -2145,42 +2029,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193063),	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
 			i(193862),	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
 			i(191929),	-- zzOld - [PH] White Flying Squirrel (REUSE)
-		}),
-		filter(MOUNTS, {
-			i(194722),	-- Carrier Yeti
-			i(192766),	-- [PH] Dragonfly Orange
-			i(192764),	-- [PH] Dragonfly Green
-			i(192765),	-- [PH] Dragonfly Yellow
-			i(192770),	-- [PH] Moose Bull Black
-			i(192780),	-- [PH] Lava Snail Orange
-			i(192778),	-- [PH] Lava Slug Orange
-			i(192787),	-- [PH] Mammoth V2 Dark
-			i(192792),	-- PH Thunder Lizard Green
-			i(192800),	-- PH Primal Tallstrider Blue
-			i(192771),	-- [PH] Water Salamander Blue
-			i(191838),	-- [PH] Blue Lava Mammoth
-			i(192748),	-- [PH] Moose Bull Brown
-			i(192601),	-- [PH] Orange Lava Mammoth
-			i(192751),	-- [PH] Moose Bull Dark
-			i(192772),	-- [PH] Water Salamander Green
-			i(192773),	-- [PH] Water Salamander Orange
-			i(192774),	-- [PH] Water Salamander Pink
-			i(192779),	-- [PH] Lava Slug Red
-			i(192781),	-- [PH] Lava Slug Blue
-			i(192782),	-- [PH] Lava Slug Yellow
-			i(192785),	-- [PH] Lava Snail Blue
-			i(192786),	-- [PH] Lava Snail Yellow
-			i(192789, 374172);	-- [PH] Mammoth V2 Gray
-			i(192788, 374181);	-- [PH] Mammoth V2 Blue
-			i(192790, 374194);	-- [PH] Mammoth V2 Green
-			i(192793, 374200);	-- PH Thunder Lizard Black
-			i(192794, 374201);	-- PH Thunder Lizard Blue
-			i(192796, 374204);	-- PH Thunder Lizard Light
-			i(192801, 374255);	-- PH Primal Tallstrider White
-			i(192802, 374258);	-- PH Primal Tallstrider Black
-			i(192803, 374259);	-- PH Primal Tallstrider Red
-			i(192804, 374263);	-- PH Primal Tallstrider Green
-			i(192807, 374278);	-- PH Lava Mammoth Yellow
 		}),
 		--]]
 	}),

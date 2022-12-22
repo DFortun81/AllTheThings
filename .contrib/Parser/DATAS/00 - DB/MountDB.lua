@@ -1496,11 +1496,6 @@ i(192557, 334482);	-- Restoration Deathwalker
 ------------------
 -- PATCH 10.0.0 --
 ------------------
-i(0, 315132);		-- Gargantuan Grrloc
-i(0, 381529);		-- Telix the Stormhorn
-
-
--- SOURCED
 i(198809, 385131);	-- Armored Vorquin Leystrider
 i(192762, 374034);	-- Azure Skitterfly
 i(201720, 394219);	-- Bronze Vorquin
@@ -1510,11 +1505,15 @@ i(194521, 368901);	-- Cliffside Wylderdrake
 i(202086, 377071);	-- Crimson Gladiator's Drake
 i(201702, 394216);	-- Crimson Vorquin
 i(198821, 359408);	-- Divine Kiss of Ohn'ahra
+i(0, 315132);		-- Gargantuan Grrloc
 i(198808, 384963);	-- Guardian Vorquin
 i(194705, 360954);	-- Highland Drake
 i(198871, 359409);	-- Iskaara Trader's Ottuk
 i(198873, 376879);	-- Ivory Trader's Ottuk
+i(201440, 359622);	-- Liberated Slyvern
 i(192799, 374247);	-- Lizi, Thunderspine Tramper
+i(192601, 373859);	-- Loyal Magmammoth
+i(192777, 350219);	-- Magmashell
 i(198811, 385115);	-- Majestic Armored Vorquin
 i(201719, 394220);	-- Obsidian Vorquin
 i(198654, 376912);	-- Otterworldly Ottuk Carrier
@@ -1522,113 +1521,79 @@ i(192791, 374196);	-- Plainswalker Bearer
 i(192806, 374275);	-- Raging Magmammoth
 i(194034, 368896);	-- Renewed Proto-Drake
 i(201704, 394218);	-- Sapphire Vorquin
+i(192786, 374162);	-- Scrappy Worldsnail
 i(192784, 374155);	-- Shellack
 i(192775, 374098);	-- Stormhide Salamanther
 i(198810, 385134);	-- Swift Armored Vorquin
 i(192761, 374032);	-- Tamed Skitterfly
+i(0, 381529);		-- Telix the Stormhorn
 i(201454, 385738);	-- Temperamental Skyclaw
+i(192764, 374048);	-- Verdant Skitterfly
 i(194549, 368899);	-- Windborne Velocidrake
 i(200118, 376880);	-- Yellow Scouting Ottuk
 i(201425, 376913);	-- Yellow War Ottuk
 i(198825, 385266);	-- Zenet Hatchling
-
-
--- UNCLEAR?
-i(192601, 373859);	-- Loyal Magmammoth
-i(201837, 373859);	-- Loyal Magmammoth
---
-
--- NYI
-i(194106, 0);	-- Highland Drake
-
-
--- NOT SOURCED YET
-
-
-
-i(0, 359622);	-- Liberated Slyvern
-
-
-i(192764, 374048);	-- Verdant Skitterfly
-
-i(0, 376873);	-- Splish-Splash
-
-
-i(192770, 349935);	-- Noble Elderhorn
-i(192777, 350219);	-- Magmashell
-
-i(192800, 352926);	-- Skyskin Hornstrider
-i(0, 368893);	-- Winding Slitherdrake
-
-
-i(192779, 374138);	-- Scorchpath
-
-i(192804, 374263);	-- Restless Hornstrider
--- PvP
-
--- Suspiciously
-i(0, 372995);	-- Swift Spectral Drake [Hmmm Legacy?]
-i(0, 373646);	-- Dracthyr Flight Test / Soar
-i(0, 369536);	-- Soar
--- Probably NYI --
-i(192766, 349943);	-- [PH] Dragonfly Orange
-i(192780, 350220);	-- PH Lava Slug Orange / ITEM:[PH] Lava Snail Orange
-i(192778, 350220);	-- PH Lava Slug Orange / ITEM:[PH] Lava Slug Orange
-i(192787, 351403);	-- PH Mammoth V2 Dark
-i(0, 351404);	-- PH Mammoth V2 Lava
-i(192792, 351408);	-- PH Thunder Lizard Green
-i(192771, 352927);	-- [PH] Water Salamander Blue
-i(191838, 371176);	-- PH Lava Mammoth Blue
+-- NOT SOURCED YET --
+i(198870, 376873);	-- Otto						/	Otto
+-- NYI --
+i(194722, 377849);	-- Carrier Yeti				/	Carrier Yeti
 i(0, 371571);	-- Dragon Isles Drake Model Test
-i(192748, 373913);	-- PH Moose Bull Brown
-i(192751, 373967);	-- PH Moose Bull Dark
-i(374071, 374071);	-- [PH] Dragonfly Yellow
-i(192772, 374090);	-- [PH] Water Salamander Green
-i(192773, 374093);	-- [PH] Water Salamander Orange
-i(192774, 374097);	-- [PH] Water Salamander Pink
-i(192781, 374140);	-- PH Lava Slug Blue
-i(192782, 374142);	-- PH Lava Slug Yellow
-i(192785, 374157);	-- PH Lava Snail Blue
-i(192786, 374162);	-- Scrappy Worldsnail
-i(192789, 374172);	-- [PH] Mammoth V2 Gray
-i(192788, 374181);	-- [PH] Mammoth V2 Blue
-i(192790, 374194);	-- [PH] Mammoth V2 Green
-i(192793, 374200);	-- PH Thunder Lizard Black
-i(192794, 374201);	-- PH Thunder Lizard Blue
-i(192796, 374204);	-- PH Thunder Lizard Light
-i(192801, 374255);	-- PH Primal Tallstrider White
-i(192802, 374258);	-- PH Primal Tallstrider Black
-i(192803, 374259);	-- PH Primal Tallstrider Red
-
-i(192807, 374278);	-- PH Lava Mammoth Yellow
-
+i(194106, 0);	-- Highland Drake
+i(192770, 349935);	-- Noble Elderhorn				/	[PH] Moose Bull Black
+i(192804, 374263);	-- Restless Hornstrider			/	Restless Hornstrider
+i(192779, 374138);	-- Scorchpath					/	Scorchpath
+i(192800, 352926);	-- Skyskin Hornstrider			/	Skyskin Hornstrider
+i(0, 372995);	-- Swift Spectral Drake
+i(0, 368893);	-- Winding Slitherdrake
 i(0, 376898);	-- [PH] Black Armored River Otter
 i(0, 376909);	-- [PH] Blue Armored River Otter
-
-
-
+i(198823, 385253);	-- [PH] Brown Wind Eagle		/	[PH] Brown Wind Eagle
+i(198824, 385262);	-- [PH] Dark Wind Eagle			/	[PH] Dark Wind Eagle
+i(192766, 349943);	-- [PH] Dragonfly Orange		/	[PH] Dragonfly Orange
+i(192765, 374071);	-- [PH] Dragonfly Yellow		/	[PH] Dragonfly Yellow
+i(192788, 374181);	-- [PH] Mammoth V2 Blue			/	[PH] Mammoth V2 Blue
+i(192787, 351403);	-- [PH] Mammoth V2 Dark			/	[PH] Mammoth V2 Dark
+i(192789, 374172);	-- [PH] Mammoth V2 Gray			/	[PH] Mammoth V2 Gray
+i(192790, 374194);	-- [PH] Mammoth V2 Green		/	[PH] Mammoth V2 Green
+i(198822, 385260);	-- [PH] Sepia Wind Eagle		/	[PH] Sepia Wind Eagle
+i(192771, 352927);	-- [PH] Water Salamander Blue	/	[PH] Water Salamander Blue
+i(192772, 374090);	-- [PH] Water Salamander Green
+i(192773, 374093);	-- [PH] Water Salamander Orange	/	[PH] Water Salamander Orange
+i(192774, 374097);	-- [PH] Water Salamander Pink	/	[PH] Water Salamander Pink
+i(0, 387948);	-- [PH] Wind Proto-Drake
+i(192748, 373913);	-- PH Moose Bull Brown			/	[PH] Moose Bull Brown
+i(192751, 373967);	-- PH Moose Bull Dark			/	[PH] Moose Bull Dark
+i(191838, 371176);	-- PH Lava Mammoth Blue			/	[PH] Blue Lava Mammoth
+i(192807, 374278);	-- PH Lava Mammoth Yellow		/	PH Lava Mammoth Yellow
+i(192781, 374140);	-- PH Lava Slug Blue			/	[PH] Lava Slug Blue
+i(192778, 350220);	-- PH Lava Slug Orange			/	[PH] Lava Slug Orange
+i(192780, 350220);	-- PH Lava Slug Orange			/	[PH] Lava Snail Orange
+i(192782, 374142);	-- PH Lava Slug Yellow			/	[PH] Lava Slug Yellow
+i(192785, 374157);	-- PH Lava Snail Blue			/	[PH] Lava Snail Blue
+i(0, 351404);	-- PH Mammoth V2 Lava
+i(192802, 374258);	-- PH Primal Tallstrider Black	/	PH Primal Tallstrider Black
+i(192803, 374259);	-- PH Primal Tallstrider Red	/	PH Primal Tallstrider Red
+i(192801, 374255);	-- PH Primal Tallstrider White	/	PH Primal Tallstrider White
+i(192793, 374200);	-- PH Thunder Lizard Black		/	PH Thunder Lizard Black
+i(192794, 374201);	-- PH Thunder Lizard Blue		/	PH Thunder Lizard Blue
+i(192792, 351408);	-- PH Thunder Lizard Green		/	PH Thunder Lizard Green
+i(192796, 374204);	-- PH Thunder Lizard Light		/	PH Thunder Lizard Light
 i(0, 385767);	-- PH White Slyvern
 i(0, 385771);	-- PH Yellow Slyvern
-i(0, 385253);	-- [PH] Brown Wind Eagle
-i(0, 385260);	-- [PH] Sepia Wind Eagle
-i(0, 385262);	-- [PH] Dark Wind Eagle
-i(0, 387948);	-- [PH] Wind Proto-Drake
-i(194722, 377849);	-- Carrier Yeti
-
 
 ------------------
 -- PATCH 10.0.2 --
 ------------------
-
-
--- SOURCED
 i(191114, 369476);	-- Amalgam of Rage
 i(199412, 387231);	-- Hailstorm Armoredon
 i(201789, 394737);	-- Vicious Sabertooth [A]
 i(201788, 394738);	-- Vicious Sabertooth [H]
 
+<<<<<<< HEAD
 --
 
+=======
+>>>>>>> origin/master
 -- #if ANYCLASSIC
 -----------------
 -- CLASSIC WOW --

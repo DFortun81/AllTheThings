@@ -1572,3 +1572,13 @@
 381529@@@Telix the Stormhorn
 10.0.2.46781
 384963@@@Guardian Vorquin
+10.0.2.46879
+374155@@@Shellack
+374162@@@Scrappy Worldsnail
+374275@@@Raging Magmammoth
+376880@@@Yellow Scouting Ottuk
+376910@@@Brown War Ottuk
+376913@@@Yellow War Ottuk
+385738@@@Temperamental Skyclaw
+10.0.2.46999
+369476@@@Amalgam of Rage

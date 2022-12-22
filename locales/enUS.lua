@@ -606,7 +606,7 @@ app.L = {
 	["SCREENSHOT_COLLECTED_CHECKBOX"] = "Collected Things Trigger a Screenshot";
 	["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to take a screenshot for every Thing you collect.";
 	["CHAT_COMMANDS_LABEL"] = "Chat Commands";
-	["CHAT_COMMANDS_TEXT"] = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
+	["CHAT_COMMANDS_TEXT"] = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
 
 	-- Profiles tab
 	["PROFILES_TAB"] = "Profiles";
@@ -744,7 +744,9 @@ app.L = {
 	["KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |cff15abffKnown on current character|r";
 	["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Unknown on current character|r";
 	["COST_ICON"] = "|T" .. app.asset("Currency") .. ":0|t";
-	["COST_TEXT"] = "|T" .. app.asset("Currency") .. ":0|t |cffdedadeCurrency|r";
+	["COST_TEXT"] = "|T" .. app.asset("Currency") .. ":0|t |cffdedade"..CURRENCY.."|r";
+	["REAGENT_ICON"] = "|T" .. app.asset("Category_Crafting") .. ":0|t";
+	["REAGENT_TEXT"] = "|T" .. app.asset("Category_Crafting") .. ":0|t |cffdedade"..GetItemClassInfo(5).."|r";
 
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",
@@ -911,6 +913,7 @@ app.L = {
 		[53] = "Interface\\Icons\\INV_Trinket_Naxxramas05",						-- Trinket
 		[54] = "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",				-- Relic
 		[55] = "Interface\\Icons\\INV_Drink_25_HoneyTea",						-- Consumables
+		[56] = app.asset("Interface_Zone_drop"),								-- Reagents (@DeadSerious maybe a new one sometime?)
 		[57] = 132932,															-- Fishing Poles
 		[59] = "Interface\\Icons\\INV_Misc_Book_03",							-- Class Books
 		[100] = app.asset("Category_Mounts"),									-- Mounts

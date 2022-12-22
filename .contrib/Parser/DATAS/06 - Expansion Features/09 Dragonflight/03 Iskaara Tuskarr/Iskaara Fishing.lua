@@ -45,33 +45,41 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 					-- RENOWN 6 --
 				q(70942, {	-- Highland Fishing
-					--["sourceQuests"] = { 72584 },	-- Setting Your Very Own Net -- TODO: CONFIRM
+					["sourceQuests"] = { 72584 },	-- Setting Your Very Own Net -- TODO: CONFIRM
 					["description"] = "Requires Renown 6.",
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 7 --
 				q(70943, {	-- Harpooning
-					--["sourceQuests"] = { 70942 },	-- Highland Fishing -- TODO: CONFIRM
+					["sourceQuests"] = { 70942 },	-- Highland Fishing -- TODO: CONFIRM
 					["description"] = "Requires Renown 7.",
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 10 --
 				q(70944, {	-- Ice Fishing
-					--["sourceQuests"] = { 70942 },	-- Highland Fishing -- TODO: CONFIRM
+					["sourceQuests"] = { 70943 },	-- Harpooning -- TODO: CONFIRM
 					["description"] = "Requires Renown 10.",
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 13 --
 				q(70945, {	-- Netting More
-					--["sourceQuests"] = { 70942 },	-- Highland Fishing -- TODO: CONFIRM
+					["sourceQuests"] = { 70944 },	-- Ice Fishing -- TODO: CONFIRM
 					["description"] = "Requires Renown 13.",
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
+					-- RENOWN 16 --
+				q(70948, {	-- Hook, Line, and Swelter!
+					["sourceQuests"] = { 70945 },	-- Netting More -- TODO: CONFIRM
+					["description"] = "Requires Renown 16.",
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+				}),
 					-- Dailies --
+					-- The Waking Shores --
 				q(70438, {	-- Flying Fish
 					["provider"] = { "n", 195338 },	-- Fisherman Pasqaa
 					["coord"] = { 63.7, 76.5, THE_WAKING_SHORES },
@@ -86,6 +94,22 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 63.6, 75, THE_WAKING_SHORES },
 					["description"] = "Requires Renown 4.",
 					["isDaily"] = true,
+				}),
+					-- Ohn'Ahran Plains --
+				q(72072, {	-- Dragonsprings Drop
+					["provider"] = { "n", 198766 },	-- Thrifty Fisher
+					["coord"] = { 80.8, 78.4, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+					["description"] = "Requires Renown 4.",
+					["g"] = {
+						i(198855),	-- Throw Net
+					},
+				}),
+				q(71192, {	-- Predator Control
+					["provider"] = { "n", 198766 },	-- Thrifty Fisher
+					["coord"] = { 80.8, 78.4, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+					["description"] = "Requires Renown 4.",
 				}),
 					-- Repeatables --
 				q(70201, {	-- Catch and Release: Aileron Seamoth
@@ -152,6 +176,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 				},
 			}),
+			n(REWARDS, {
+				i(200085, {	-- Khaz'gorite Wire
+					["description"] = "Obtained from Full Tuskarr Fishing Nets.",
+				}),
+			}),
 		})
 	}),
 })));
@@ -162,8 +191,11 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(70792),	-- Triggered after crafting Iskaaran Harpoon
 		q(72391),	-- Triggered with 'Ice Fishing' (70944)
 		q(72394),	-- Triggered with 'Fascinating Fliers' (70955)
-		q(67141),	-- Triggered after crafting Iskaaran Ice Axe after Ice Fishing (renown 10)
-		q(67139),	-- Triggered after crafting Flying Fish Bone Charm
+		q(72280),	-- Triggered with 'Hook, Line, and Swelter!' (70948)
+		--
+		q(67140),	-- Triggered after crafting 'Polished Basalt Bracelet'
+		q(67139),	-- Triggered after crafting 'Flying Fish Bone Charm'
+		q(67141),	-- Triggered after crafting 'Iskaaran Ice Axe'
 		--
 		q(72828),	-- First weekly completion of 'Catch and Release: Scalebell Mackerel' (70199)
 		q(72827),	-- First weekly completion of 'Catch and Release: Thousandbite Piranha' (70200)

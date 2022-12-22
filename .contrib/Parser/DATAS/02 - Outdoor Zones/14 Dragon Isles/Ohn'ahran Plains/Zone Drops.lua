@@ -18,6 +18,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					{"i",200194,1},	-- 1x Nokhud Battle Tunic
 				},
 			}),
+			i(201439, {	-- Renewed Dream
+				["cost"] = {{"i",201437,5}},	-- 5x Slumbering Dream Fragment
+				["g"] = {
+					i(201469),	-- Emerald Green Apple
+				},
+			}),
+			i(201437),	-- Slumbering Dream Fragment
 			i(194031, {	-- Stormtouched Shards
 				["cr"] = 191541,	-- Craggy Stag
 				["coord"] = { 82.9, 63.5, OHNAHRAN_PLAINS },

@@ -1104,14 +1104,22 @@ pet(0, 3249, {			-- Lil' Ursoc
 pet(191886, 3274);	-- Alvin the Anvil
 pet(193852, 3269);	-- Azure Frillfish
 pet(193837, 3326);	-- Backswimmer Timbertooth
+pet(200290, 3325);	-- Bakar Companion
 pet(198726, 3380);	-- Black Skitterbug
 pet(193834, 3321);	-- Blackfeather Nester
+pet(201261, 3411);	-- Blaze Spirit
 pet(199688, 3279);	-- Bronze Racing Enthusiast
 pet(193066, 3275);	-- Chestnut
 pet(199326, 3376);	-- Chip
 pet(199758, 3379);	-- Crimson Proto-Whelp
 pet(191941, 3264);	-- Crystalline Mini-Monster
 pet(201463, 3415);	-- Cubbly
+pet(201260, 3410);	-- Dust Spirit
+pet(200183, 3355);	-- Echo of the Cave
+pet(200260, 3299);	-- Echo of the Depths
+pet(200263, 3310);	-- Echo of the Heights
+pet(200255, 3289);	-- Echo of the Inferno
+pet(201262, 3412);	-- Gale Spirit
 pet(200173, 3287);	-- Ghostflame
 pet(198725, 3381);	-- Gray Marmoni
 pet(193618, 3317);	-- Hoofhelper
@@ -1130,6 +1138,7 @@ pet(193571, 3303);	-- Mallard Duckling
 pet(191946, 3265);	-- Mister Muskoxeles
 pet(200519, 3286);	-- Mister Toots
 pet(200930, 3414);	-- Obsidian Proto-Whelp
+pet(200276, 3311);	-- Ohuna Companion
 pet(200927, 3408);	-- Petal
 pet(193484, 3302);	-- Pilot
 pet(201703, 3417);	-- Pinkie
@@ -1142,6 +1151,7 @@ pet(191936, 3263);	-- Secretive Frogduck
 pet(198353, 3368);	-- Shiverweb Broodling
 pet(200479, 3390);	-- Sophic Amalgamation
 pet(200114, 3382);	-- Stormie
+pet(201265, 3409);	-- Tide Spirit
 pet(201707, 3416);	-- Troubled Tome
 pet(191932, 3262);	-- Violet Violence
 pet(199172, 3309);	-- Viridescent Duck
@@ -1185,7 +1195,7 @@ pet(0, 3322);	-- Woodbiter Piculet
 
 -- NOT SOURCED YET
 
-pet(191126, 3256);	-- Jeweled Onyx Whelpling / Obsidian Whelpling
+pet(191126, 0);	-- Obsidian Whelpling
 pet(0, 3257);	-- Test Beetle
 pet(191915, 3259);	-- Time-Lost Feral Rabbit
 pet(191930, 3261);	-- Blue Phoenix Hatchling
@@ -1198,7 +1208,7 @@ pet(193068, 3277);	-- Time-Lost Treeflitter
 
 pet(193235, 3285);	-- Scarlet Ottuk Pup
 
-pet(0, 3289);	-- Echo of the Inferno
+
 pet(193363, 3290);	-- Auburntusk Calf
 pet(193364, 3291);	-- Time-Lost Baby Mammoth
 pet(193373, 3292);	-- Phoenix Wishwing
@@ -1206,18 +1216,14 @@ pet(193374, 3293);	-- Crimson Phoenix Hatchling
 pet(193377, 3294);	-- Time-Lost Phoenix Hatchling
 pet(193429, 3297);	-- Time-Lost Salamanther
 pet(193380, 3298);	-- Pink Salamanther
-pet(0, 3299);	-- Echo of the Depths
+
 
 
 pet(0, 3308);	-- Time-Lost Duckling
-pet(0, 3310);	-- Echo of the Heights
-pet(0, 3311);	-- Ohuna Companion
 pet(193587, 3312);	-- Time-Lost Duck
 
 pet(193614, 3314);	-- Groundshaker
 pet(193835, 3323);	-- Brightfeather
-pet(0, 3325);	-- Bakar Companion
-
 pet(0, 3329);	-- Storm-Touched Timbertooth
 pet(193850, 3330);	-- Time-Lost Timbertooth
 pet(193853, 3331);	-- Emerald Frillfish
@@ -1234,7 +1240,8 @@ pet(0, 3343);	-- Bronze Dragon Whelp
 
 
 pet(0, 3354);	-- Storm-Touched Ottuk
-pet(0, 3355);	-- Echo of the Cave
+
+
 
 
 pet(0, 3359);	-- Snowclaw Cub
@@ -1285,10 +1292,7 @@ pet(0, 3402);	-- Stormamu
 
 
 pet(0, 3406);	-- Lady Feathersworth
-pet(0, 3409);	-- Tide Spirit
-pet(0, 3410);	-- Dust Spirit
-pet(0, 3411);	-- Blaze Spirit
-pet(0, 3412);	-- Gale Spirit
+
 
 
 -- #if ANYCLASSIC

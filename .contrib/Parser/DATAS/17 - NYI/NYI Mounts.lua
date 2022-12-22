@@ -523,5 +523,147 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			})),
 		}),
+		tier(DF_TIER, {
+			-- 10.0.0
+			tier(DF_TIER, 0.0, bubbleDownSelf({ ["timeline"] = { "created 10.0.0" } }, {
+				-- Probably in game
+				i(198870, {	-- Otto / Otto (MOUNT!)
+					--["modelID"] = ,
+				}),
+				--
+				i(194722, {	-- Carrier Yeti / Carrier Yeti (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(371571, {	-- Dragon Isles Drake Model Test (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(194106, {	-- Highland Drake [ITEM ONLY] (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192770, {	-- Noble Elderhorn / [PH] Moose Bull Black (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192804, {	-- Restless Hornstrider / Restless Hornstrider (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192779, {	-- Scorchpath / Scorchpath(MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192800, {	-- Skyskin Hornstrider / Skyskin Hornstrider (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(372995, {	-- Swift Spectral Drake (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(368893, {	-- Winding Slitherdrake (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(376898, {	-- [PH] Black Armored River Otter (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(376909, {	-- [PH] Blue Armored River Otter (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(198823, {	-- [PH] Brown Wind Eagle / [PH] Brown Wind Eagle (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(198824, {	-- [PH] Dark Wind Eagle / [PH] Dark Wind Eagle (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192766, {	-- [PH] Dragonfly Orange / [PH] Dragonfly Orange (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192765, {	-- [PH] Dragonfly Yellow / [PH] Dragonfly Yellow (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192788, {	-- [PH] Mammoth V2 Blue / [PH] Mammoth V2 Blue (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192787, {	-- [PH] Mammoth V2 Dark / [PH] Mammoth V2 Dark (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192789, {	-- [PH] Mammoth V2 Gray / [PH] Mammoth V2 Gray (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192790, {	-- [PH] Mammoth V2 Green / [PH] Mammoth V2 Green (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(198822, {	-- [PH] Sepia Wind Eagle / [PH] Sepia Wind Eagle (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192771, {	-- [PH] Water Salamander Blue / [PH] Water Salamander Blue (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192772, {	-- [PH] Water Salamander Green / [PH] Water Salamander Green (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192773, {	-- [PH] Water Salamander Orange / [PH] Water Salamander Orange (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192774, {	-- [PH] Water Salamander Pink / [PH] Water Salamander Pink (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(387948, {	-- [PH] Wind Proto-Drake (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192748, {	-- PH Moose Bull Brown / [PH] Moose Bull Brown (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192751, {	-- PH Moose Bull Dark / [PH] Moose Bull Dark (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(191838, {	-- PH Blue Lava Mammoth / [PH] Blue Lava Mammoth (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192807, {	-- PH Lava Mammoth Yellow / PH Lava Mammoth Yellow (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192781, {	-- PH Lava Slug Blue / [PH] Lava Slug Blue (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192778, {	-- PH Lava Slug Orange / [PH] Lava Slug Orange (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192780, {	-- PH Lava Slug Orange / [PH] Lava Snail Orange (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192782, {	-- PH Lava Slug Yellow / [PH] Lava Slug Yellow (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192785, {	-- PH Lava Snail Blue / [PH] Lava Snail Blue (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(351404, {	-- PH Mammoth V2 Lava (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192802, {	-- PH Primal Tallstrider Black / PH Primal Tallstrider Black (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192803, {	-- PH Primal Tallstrider Red / PH Primal Tallstrider Red (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192801, {	-- PH Primal Tallstrider White / PH Primal Tallstrider White (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192793, {	-- PH Thunder Lizard Black / PH Thunder Lizard Black (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192794, {	-- PH Thunder Lizard Blue / PH Thunder Lizard Blue (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192792, {	-- PH Thunder Lizard Green / PH Thunder Lizard Green (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(192796, {	-- PH Thunder Lizard Light / PH Thunder Lizard Light (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(385767, {	-- PH White Slyvern (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(385771, {	-- PH Yellow Slyvern (MOUNT!)
+					--["modelID"] = ,
+				}),
+			})),
+		}),
 	}),
 }));

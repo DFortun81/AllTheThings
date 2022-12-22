@@ -1237,7 +1237,7 @@ root("Zones", m(KALIMDOR, {
 				n(3652, {	-- Trigore the Lasher
 					["description"] = "Inside the pool of water outside the Wailing Caverns dungeon portal.",
 					["groups"] = {
-						i(5425),	-- RuneChain Girdle
+						i(5425),	-- RuneChain Girdle [7.0.3+] / Runescale Girdle
 						i(5426),	-- Serpent's Kiss
 					},
 				}),

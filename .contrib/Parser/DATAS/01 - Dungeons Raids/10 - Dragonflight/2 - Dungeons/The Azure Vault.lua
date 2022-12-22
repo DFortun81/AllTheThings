@@ -12,9 +12,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			2077,	-- Crystal Chambers
 		},
 		["g"] = {
-			n(ACHIEVEMENTS, {
-				ach(16330),	-- You Must Be Made of Hide
-			}),
 			n(QUESTS, {
 				q(71155, {	-- The Azure Vaults
 					--["sourceQuests"] = { }, -- TODO
@@ -124,6 +121,9 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			d(23, {	-- Mythic
+				n(ACHIEVEMENTS, {
+					ach(16330),	-- You Must Be Made of Hide
+				}),
 				e(2492, {	-- Leymor
 					["crs"] = { 186644 },	-- Leymor
 					["g"] = {

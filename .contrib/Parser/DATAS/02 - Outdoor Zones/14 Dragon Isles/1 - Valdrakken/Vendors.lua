@@ -430,168 +430,234 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(198615),	-- Pentagold Seal
 					-- Dusty
 					i(200974, {	-- Dusty Alchemist's Research
+						["questID"] = 71893,
+						["requireSkill"] = ALCHEMY,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
 						},
 					}),
 					i(200972, {	-- Dusty Blacksmith's Diagrams
+						["questID"] = 71894,
+						["requireSkill"] = BLACKSMITHING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
 						},
 					}),
 					i(200976, {	-- Dusty Enchanter's Research
+						["questID"] = 71895,
+						["requireSkill"] = ENCHANTING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
 						},
 					}),
 					i(200977, {	-- Dusty Engineer's Scribblings
+						["questID"] = 71896,
+						["requireSkill"] = ENGINEERING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
 						},
 					}),
 					i(200980, {	-- Dusty Herbalist's Notes
+						["questID"] = 71897,
+						["requireSkill"] = HERBALISM,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
 						},
 					}),
 					i(200978, {	-- Dusty Jeweler's Illustrations
+						["questID"] = 71899,
+						["requireSkill"] = JEWELCRAFTING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
 						},
 					}),
 					i(200979, {	-- Dusty Leatherworker's Diagrams
+						["questID"] = 71900,
+						["requireSkill"] = LEATHERWORKING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
 						},
 					}),
 					i(200981, {	-- Dusty Miner's Notes
+						["questID"] = 71901,
+						["requireSkill"] = MINING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
 						},
 					}),
 					i(200973, {	-- Dusty Scribe's Runic Drawings
+						["questID"] = 71898,
+						["requireSkill"] = INSCRIPTION,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
 						},
 					}),
 					i(200982, {	-- Dusty Skinner's Notes
+						["questID"] = 71902,
+						["requireSkill"] = SKINNING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
 						},
 					}),
 					i(200975, {	-- Dusty Tailor's Diagrams
+						["questID"] = 71903,
+						["requireSkill"] = TAILORING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 100 },
 						},
 					}),
 					-- Rare
 					i(201270, {	-- Rare Alchemist's Research
+						-- ["questID"] = TODO,
+						["requireSkill"] = ALCHEMY,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
 						},
 					}),
 					i(201268, {	-- Rare Blacksmith's Diagrams
+						-- ["questID"] = TODO,
+						["requireSkill"] = BLACKSMITHING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
 						},
 					}),
 					i(201272, {	-- Rare Enchanter's Research
+						-- ["questID"] = TODO,
+						["requireSkill"] = ENCHANTING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
 						},
 					}),
 					i(201273, {	-- Rare Engineer's Scribblings
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 200 },
-						},
-					}),
-					i(201274, {	-- Rare Jeweler's Illustrations
+						-- ["questID"] = TODO,
+						["requireSkill"] = ENGINEERING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
 						},
 					}),
 					i(201276, {	-- Rare Herbalist's Notes
+						-- ["questID"] = TODO,
+						["requireSkill"] = HERBALISM,
+						["cost"] = {
+							{ "i", ARTISANS_METTLE, 200 },
+						},
+					}),
+					i(201274, {	-- Rare Jeweler's Illustrations
+						-- ["questID"] = TODO,
+						["requireSkill"] = JEWELCRAFTING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
 						},
 					}),
 					i(201275, {	-- Rare Leatherworker's Diagrams
+						-- ["questID"] = TODO,
+						["requireSkill"] = LEATHERWORKING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
 						},
 					}),
 					i(201277, {	-- Rare Miner's Notes
+						-- ["questID"] = TODO,
+						["requireSkill"] = MINING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
 						},
 					}),
 					i(201269, {	-- Rare Scribe's Runic Drawings
+						-- ["questID"] = TODO,
+						["requireSkill"] = INSCRIPTION,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
 						},
 					}),
 					i(201278, {	-- Rare Skinner's Notes
+						-- ["questID"] = TODO,
+						["requireSkill"] = SKINNING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
 						},
 					}),
 					i(201271, {	-- Rare Tailor's Diagrams
+						-- ["questID"] = TODO,
+						["requireSkill"] = TAILORING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
 						},
 					}),
 					-- Ancient
 					i(201281, {	-- Ancient Alchemist's Research
+						-- ["questID"] = TODO,
+						["requireSkill"] = ALCHEMY,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
 						},
 					}),
 					i(201279, {	-- Ancient Blacksmith's Diagrams
+						-- ["questID"] = TODO,
+						["requireSkill"] = BLACKSMITHING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
 						},
 					}),
 					i(201283, {	-- Ancient Enchanter's Research
+						-- ["questID"] = TODO,
+						["requireSkill"] = ENCHANTING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
 						},
 					}),
 					i(201284, {	-- Ancient Engineer's Scribblings
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 300 },
-						},
-					}),
-					i(201285, {	-- Ancient Jeweler's Illustrations
+						-- ["questID"] = TODO,
+						["requireSkill"] = ENGINEERING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
 						},
 					}),
 					i(201287, {	-- Ancient Herbalist's Notes
+						-- ["questID"] = TODO,
+						["requireSkill"] = HERBALISM,
+						["cost"] = {
+							{ "i", ARTISANS_METTLE, 300 },
+						},
+					}),
+					i(201285, {	-- Ancient Jeweler's Illustrations
+						-- ["questID"] = TODO,
+						["requireSkill"] = JEWELCRAFTING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
 						},
 					}),
 					i(201286, {	-- Ancient Leatherworker's Diagrams
+						-- ["questID"] = TODO,
+						["requireSkill"] = LEATHERWORKING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
 						},
 					}),
 					i(201288, {	-- Ancient Miner's Notes
+						-- ["questID"] = TODO,
+						["requireSkill"] = MINING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
 						},
 					}),
 					i(201280, {	-- Ancient Scribe's Runic Drawings
+						-- ["questID"] = TODO,
+						["requireSkill"] = INSCRIPTION,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
 						},
 					}),
 					i(201289, {	-- Ancient Skinner's Notes
+						-- ["questID"] = TODO,
+						["requireSkill"] = SKINNING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
 						},
 					}),
 					i(201282, {	-- Ancient Tailor's Diagrams
+						-- ["questID"] = TODO,
+						["requireSkill"] = TAILORING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
 						},

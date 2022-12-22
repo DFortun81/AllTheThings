@@ -4,7 +4,6 @@
 local ELEMENTAL_OVERFLOW = 2118;
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(PRIMAL_STORMS, {
-		["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(16489, {	-- Chasing Storms in Thaldraszus
@@ -15,6 +14,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						16488,	-- Snowstorms in Thaldraszus
 						16485,	-- Thunderstorms in Thaldraszus
 					}},
+					["maps"] = { THALDRASZUS },
 				}),
 				ach(16484, {	-- Chasing Storms in The Azure Span
 					-- Meta Achievement
@@ -24,6 +24,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						16483,	-- Snowstorms in The Azure Span
 						16480,	-- Thunderstorms in The Azure Span
 					}},
+					["maps"] = { THE_AZURE_SPAN },
 				}),
 				ach(16476, {	-- Chasing Storms in The Ohn'ahran Plains
 					-- Meta Achievement
@@ -33,6 +34,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						16479,	-- Snowstorms in The Ohn'ahran Plains
 						16475,	-- Thunderstorms in The Ohn'ahran Plains
 					}},
+					["maps"] = { OHNAHRAN_PLAINS },
 				}),
 				ach(16468, {	-- Chasing Storms in The Waking Shores
 					-- Meta Achievement
@@ -42,14 +44,29 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						16467,	-- Snowstorms in The Waking Shores
 						16463,	-- Thunderstorms in The Waking Shores
 					}},
+					["maps"] = { THE_WAKING_SHORES },
 				}),
-				ach(16498),	-- Elemental Overflow
-				ach(16499),	-- Elemental Overflowing
-				ach(16500),	-- Elemental Overload
-				ach(16487),	-- Firestorms in Thaldraszus
-				ach(16482),	-- Firestorms in The Azure Span
-				ach(16478),	-- Firestorms in The Ohn'ahran Plains
-				ach(16466),	-- Firestorms in The Waking Shores
+				ach(16498, {	-- Elemental Overflow
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				}),
+				ach(16499, {	-- Elemental Overflowing
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				}),
+				ach(16500, {	-- Elemental Overload
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				}),
+				ach(16487, {	-- Firestorms in Thaldraszus
+					["maps"] = { THALDRASZUS },
+				}),
+				ach(16482, {	-- Firestorms in The Azure Span
+					["maps"] = { THE_AZURE_SPAN },
+				}),
+				ach(16478, {	-- Firestorms in The Ohn'ahran Plains
+					["maps"] = { OHNAHRAN_PLAINS },
+				}),
+				ach(16466, {	-- Firestorms in The Waking Shores
+					["maps"] = { THE_WAKING_SHORES },
+				}),
 				ach(16492, {	-- Into the Storm
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -58,15 +75,32 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						16461,	-- Stormed Off
 						16502,	-- Storming the Runway
 					}},
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
-				ach(16486),	-- Sandstorms in Thaldraszus
-				ach(16481),	-- Sandstorms in The Azure Span
-				ach(16477),	-- Sandstorms in The Ohn'ahran Plains
-				ach(16465),	-- Sandstorms in The Waking Shores
-				ach(16488),	-- Snowstorms in Thaldraszus
-				ach(16483),	-- Snowstorms in The Azure Span
-				ach(16479),	-- Snowstorms in The Ohn'ahran Plains
-				ach(16467),	-- Snowstorms in The Waking Shores
+				ach(16486, {	-- Sandstorms in Thaldraszus
+					["maps"] = { THALDRASZUS },
+				}),
+				ach(16481, {	-- Sandstorms in The Azure Span
+					["maps"] = { THE_AZURE_SPAN },
+				}),
+				ach(16477, {	-- Sandstorms in The Ohn'ahran Plains
+					["maps"] = { OHNAHRAN_PLAINS },
+				}),
+				ach(16465, {	-- Sandstorms in The Waking Shores
+					["maps"] = { THE_WAKING_SHORES },
+				}),
+				ach(16488, {	-- Snowstorms in Thaldraszus
+					["maps"] = { THALDRASZUS },
+				}),
+				ach(16483, {	-- Snowstorms in The Azure Span
+					["maps"] = { THE_AZURE_SPAN },
+				}),
+				ach(16479, {	-- Snowstorms in The Ohn'ahran Plains
+					["maps"] = { OHNAHRAN_PLAINS },
+				}),
+				ach(16467, {	-- Snowstorms in The Waking Shores
+					["maps"] = { THE_WAKING_SHORES },
+				}),
 				ach(16490, {	-- Storm Chaser
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -75,111 +109,232 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						16476,	-- Chasing Storms in Ohn'ahran Plains
 						16468,	-- Chasing Storms in The Waking Shores
 					}},
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				ach(16461, {	-- Stormed Off
-					crit(1, {
-						["_npcs"] = { 193648 },	-- Infernum
-					}),
-					crit(2, {
-						["_npcs"] = { 193645 },	-- Crystalus
-					}),
-					crit(3, {
-						["_npcs"] = { 193644 },	-- Bouldron
-					}),
-					crit(4, {
-						["_npcs"] = { 193647 },	-- Karantun
-					}),
-					crit(5, {
-						["_npcs"] = { 193686 },	-- Neela Firebane
-					}),
-					crit(6, {
-						["_npcs"] = { 193682 },	-- Rouen Icewind
-					}),
-					crit(7, {
-						["_npcs"] = { 193680 },	-- Zurgaz Corebreaker
-					}),
-					crit(8, {
-						["_npcs"] = { 193684 },	-- Pipspark Thundersnap
-					}),
-					crit(9, {
-						["_npcs"] = { 193652 },	-- Grizzlerock
-					}),
-					crit(10, {
-						["_npcs"] = { 193674 },	-- Voraazka
-					}),
-					crit(11, {
-						["_npcs"] = { 193675 },	-- Kain Firebrand
-					}),
-					crit(12, {
-						["_npcs"] = { 193677 },	-- Maeleera <First Iceblade>
-					}),
-					crit(13, {
-						["_npcs"] = { 193678 },	-- Fieraan <Second Iceblade>
-					}),
-					crit(14, {
-						["_npcs"] = { 193679 },	-- Leerain <Third Iceblade>
-					}),
-					crit(15, {
-						["_npcs"] = { 193653 },	-- Gaelzion <Progeny of Air>
-					}),
-					crit(16, {
-						["_npcs"] = { 193654 },	-- Gravlion <Progeny of Earth>
-					}),
-					crit(17, {
-						["_npcs"] = { 193650 },	-- Emblazion <Progeny of Fire>
-					}),
-					crit(18, {
-						["_npcs"] = { 193655 },	-- Frozion <Progeny of Water>
-					}),
+					["g"] = {
+						crit(1, {
+							["_npcs"] = { 193648 },	-- Infernum
+						}),
+						crit(2, {
+							["_npcs"] = { 193645 },	-- Crystalus
+						}),
+						crit(3, {
+							["_npcs"] = { 193644 },	-- Bouldron
+						}),
+						crit(4, {
+							["_npcs"] = { 193647 },	-- Karantun
+						}),
+						crit(5, {
+							["_npcs"] = { 193686 },	-- Neela Firebane
+						}),
+						crit(6, {
+							["_npcs"] = { 193682 },	-- Rouen Icewind
+						}),
+						crit(7, {
+							["_npcs"] = { 193680 },	-- Zurgaz Corebreaker
+						}),
+						crit(8, {
+							["_npcs"] = { 193684 },	-- Pipspark Thundersnap
+						}),
+						crit(9, {
+							["_npcs"] = { 193652 },	-- Grizzlerock
+						}),
+						crit(10, {
+							["_npcs"] = { 193674 },	-- Voraazka
+						}),
+						crit(11, {
+							["_npcs"] = { 193675 },	-- Kain Firebrand
+						}),
+						crit(12, {
+							["_npcs"] = { 193677 },	-- Maeleera <First Iceblade>
+						}),
+						crit(13, {
+							["_npcs"] = { 193678 },	-- Fieraan <Second Iceblade>
+						}),
+						crit(14, {
+							["_npcs"] = { 193679 },	-- Leerain <Third Iceblade>
+						}),
+						crit(15, {
+							["_npcs"] = { 193653 },	-- Gaelzion <Progeny of Air>
+						}),
+						crit(16, {
+							["_npcs"] = { 193654 },	-- Gravlion <Progeny of Earth>
+						}),
+						crit(17, {
+							["_npcs"] = { 193650 },	-- Emblazion <Progeny of Fire>
+						}),
+						crit(18, {
+							["_npcs"] = { 193655 },	-- Frozion <Progeny of Water>
+						}),
+					},
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
-				ach(16502),	-- Storming the Runway
-				ach(16485),	-- Thunderstorms in Thaldraszus
-				ach(16480),	-- Thunderstorms in The Azure Span
-				ach(16475),	-- Thunderstorms in The Ohn'ahran Plains
-				ach(16463),	-- Thunderstorms in The Waking Shores
+				ach(16502, {	-- Storming the Runway
+					["maps"] = { VALDRAKKEN },
+				}),
+				ach(16485, {	-- Thunderstorms in Thaldraszus
+					["maps"] = { THALDRASZUS },
+				}),
+				ach(16480, {	-- Thunderstorms in The Azure Span
+					["maps"] = { THE_AZURE_SPAN },
+				}),
+				ach(16475, {	-- Thunderstorms in The Ohn'ahran Plains
+					["maps"] = { OHNAHRAN_PLAINS },
+				}),
+				ach(16463, {	-- Thunderstorms in The Waking Shores
+					["maps"] = { THE_WAKING_SHORES },
+				}),
 			}),
-			n(RARES, {
+			n(BONUS_OBJECTIVES, {
+				-- not sure why these are listed in the Main city?
+				q(69951, {	-- Bouldron
+					["qg"] = 193644,	-- Bouldron
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(69955, {	-- Emblazion
+					["qg"] = 193650,	-- Emblazion
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(69961, {	-- Frozion
+					["qg"] = 193655,	-- Frozion
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(69959, {	-- Gaelzion
+					["qg"] = 193653,	-- Gaelzion
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(69956, {	-- Grizzlerock
+					["qg"] = 193652,	-- Grizzlerock
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(69970, {	-- Kain Firebrand
+					["qg"] = 193675,	-- Kain Firebrand
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(69953, {	-- Karantun
+					["qg"] = 193647,	-- Karantun
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(69971, {	-- Iceblade Trio
+					["qgs"] = {
+						193677,	-- Maeleera <First Iceblade>
+						193678,	-- Fieraan <Second Iceblade>
+						193679,	-- Leerain <Third Iceblade>
+					},
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(69954, {	-- Infernum
+					["qg"] = 193648,	-- Infernum
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(69974, {	-- Pipspark Thundersnap
+					["qg"] = 193684,	-- Pipspark Thundersnap
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(69973, {	-- Rouen Icewind
+					["qg"] = 193682,	-- Rouen Icewind
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(69969, {	-- Voraazka
+					["qg"] = 193674,	-- Voraazka
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+			}),
+			n(SPECIAL, {
+				i(201296, {	-- Docile Airy Soul
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["cost"] = {
+						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
+						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
+					},
+					["g"] = {
+						i(193921),	-- Airy Soul
+						i(201262),	-- Gale Spirit (PET!)
+					},
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				i(201297, {	-- Docile Earthen Soul
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["cost"] = {
+						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
+						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
+					},
+					["g"] = {
+						i(193920),	-- Earthen Soul
+						i(201260),	-- Dust Spirit (PET!)
+					},
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				i(201298, {	-- Docile Fiery Soul
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["cost"] = {
+						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
+						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
+					},
+					["g"] = {
+						i(193362),	-- Fiery Soul
+						i(201261),	-- Blaze Spirit (PET!)
+					},
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				i(201299, {	-- Docile Frosty Soul
+					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+					["cost"] = {
+						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
+						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
+					},
+					["g"] = {
+						i(193919),	-- Frosty Soul
+						i(201265),	-- Tide Spirit (PET!)
+					},
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+			}),
+			n(RARES, sharedData({
+				["isDaily"] = true,
+			},{
 				n(193644, {	-- Bouldron
 					["coord"] = { 26.2, 75.6, THE_WAKING_SHORES },
-					-- ["questID"] = ,
+					["questID"] = 73986,
 					-- ["g"] = {
 
 					--},
 				}),
 				n(193645, {	-- Crystalus
-					-- ["coord"] = { X, Y, MAP },
-					-- ["questID"] = ,
+					["coord"] = { 36.1, 36.1, OHNAHRAN_PLAINS },
+					["questID"] = 73989,
 					-- ["g"] = {
 
 					--},
 				}),
 				n(193650, {	-- Emblazion <Progeny of Fire>
 					-- ["coord"] = { X, Y, MAP },
-					-- ["questID"] = ,
+					["questID"] = 73991,
 					-- ["g"] = {
 
 					--},
 				}),
 				n(193678, {	-- Fieraan <Second Iceblade>
 					-- ["coord"] = { X, Y, MAP },
-					-- ["questID"] = ,
+					-- questID shared with Maeleera, don't duplicate
 					-- ["g"] = {
 
 					--},
 				}),
 				n(193655, {	-- Frozion <Progeny of Water>
-					-- ["coord"] = { X, Y, MAP },
-					-- ["questID"] = ,
-					-- ["g"] = {
-
-					--},
+					["coord"] = { 22.8, 71.8, THE_WAKING_SHORES },
+					["questID"] = 73993,
+					["g"] = {
+						i(200311),	-- Bonespike Mallet
+					},
 				}),
 				n(193653, {	-- Gaelzion <Progeny of Air>
 					["coords"] = {
 						{ 63.0, 26.2, THE_WAKING_SHORES },
 						{ 43.4, 31.4, THE_AZURE_SPAN },
 					},
-					-- ["questID"] = ,
+					["questID"] = 73995,
 					["g"] = {
 						i(200180),	-- Crystallized Lightning Staff
 					},
@@ -200,35 +355,35 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				n(193648, {	-- Infernum
 					["coord"] = { 58.8, 68.4, THE_AZURE_SPAN },
-					-- ["questID"] = ,
+					["questID"] = 74005,
 					["g"] = {
 						i(200150),	-- Infernum's Furnace
 					},
 				}),
 				n(193675, {	-- Kain Firebrand
 					["coord"] = { 64.0, 72.2, THE_WAKING_SHORES },
-					-- ["questID"] = ,
+					["questID"] = 74006,
 					-- ["g"] = {
 
 					--},
 				}),
 				n(193647, {	-- Karantun
 					["coord"] = { 26.8, 75.4, THE_WAKING_SHORES },
-					-- ["questID"] = ,
-					-- ["g"] = {
-
-					--},
+					["questID"] = 74007,
+					["g"] = {
+						i(200170),	-- Stormbringer Bow
+					},
 				}),
 				n(193679, {	-- Leerain <Third Iceblade>
 					["coord"] = { 48.4, 25.4, THE_AZURE_SPAN },
-					-- ["questID"] = ,
+					-- questID shared with Maeleera, don't duplicate
 					-- ["g"] = {
 
 					--},
 				}),
 				n(193677, {	-- Maeleera <First Iceblade>
 					["coord"] = { 48.6, 25.2, THE_AZURE_SPAN },
-					-- ["questID"] = ,
+					["questID"] = 74009,
 					-- ["g"] = {
 
 					--},
@@ -242,24 +397,25 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				n(193682, {	-- Rouen Icewind
 					["coord"] = { 61.4, 60.6, THALDRASZUS },
-					-- ["questID"] = ,
+					["questID"] = 74027,
 					-- ["g"] = {
 
 					--},
 				}),
 				n(193684, {	-- Pipspark Thundersnap
 					["coord"] = { 53.4, 26.2, PRIMALIST_TOMORROW },
-					-- ["questID"] = ,
+					["questID"] = 74022,
 					-- ["g"] = {
 
 					--},
 				}),
 				n(193674, {	-- Voraazka
-					-- ["coord"] = { X, Y, MAP },
-					-- ["questID"] = ,
-					-- ["g"] = {
-
-					--},
+					["coord"] = { 27.7, 72.6, THE_WAKING_SHORES },
+					["questID"] = 74038,
+					["g"] = {
+						i(200439),	-- Earthpact Scepter
+						i(200136),	-- Monsoonic Armguards
+					},
 				}),
 				n(193680, {	-- Zurgaz Corebreaker
 					-- ["coord"] = { X, Y, MAP },
@@ -268,15 +424,45 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 					--},
 				}),
+			})),
+			n(QUESTS, {
+				q(71242, {	-- Supporting the Storm Researchers
+					["provider"] = {"i",200675},	-- Elemental Overflow Cluster
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(70753, {	-- Dissipating the Air Primalists
+					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
+					["provider"] = {"i",199749},	-- Primal Air Core
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(70754, {	-- Extinguishing the Fire Primalists
+					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
+					["provider"] = {"i",199750},	-- Primal Fire Core
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(70752, {	-- Vaporizing the Water Primalists
+					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
+					["provider"] = {"i",199748},	-- Primal Water Core
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
 			}),
 			n(REWARDS, {
-				currency(2118),	-- Elemental Overflow
-				currency(2122),	-- Storm Sigil
 				i(194641),	-- Design: Elemental Lariat (RECIPE!)
+				i(200183),	-- Echo of the Cave (PET!)
+				i(200260),	-- Echo of the Depths (PET!)
+				i(200263),	-- Echo of the Heights (PET!)
+				i(200255),	-- Echo of the Inferno (PET!)
+				i(200675),	-- Elemental Overflow Cluster
 				i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
 				i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
 				i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
 				i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
+				i(199749),	-- Primal Air Core
+				i(199691),	-- Primal Earth Core
+				i(199750),	-- Primal Fire Core
+				i(199748),	-- Primal Water Core
+				currency(2118),	-- Elemental Overflow
+				currency(2122),	-- Storm Sigil
 			}),
 			n(VENDORS, {
 				n(196516, {	-- Mythressa

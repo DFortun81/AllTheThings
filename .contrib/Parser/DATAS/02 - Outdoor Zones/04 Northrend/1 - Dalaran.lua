@@ -4321,6 +4321,9 @@ root("Zones", {
 					i(45328, {	-- Bloated Slippery Eel
 						i(45323),	-- Severed Arm
 					}),
+					i(43659, {	-- Bloodied Prison Shank
+						["timeline"] = { "added 3.0.2.8982" },
+					}),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(310, {	-- Dalaran
@@ -5471,6 +5474,11 @@ root("Zones", {
 					n(32287, {	-- Archmage Alvareaux <Kirin Tor Quartermaster>
 						["coord"] = { 25.2, 47.8, NORTHREND_DALARAN },
 						["groups"] = {
+							i(50368, {	-- Arcanum of Burning Mysteries
+								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["timeline"] = { "removed 5.0.4" },
+								["filterID"] = CONSUMABLES,
+							}),
 							i(44159, {	-- Arcanum of Burning Mysteries
 								["timeline"] = { "removed 5.0.4" },
 								["filterID"] = CONSUMABLES,

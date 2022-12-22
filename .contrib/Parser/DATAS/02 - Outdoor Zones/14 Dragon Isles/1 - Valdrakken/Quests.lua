@@ -4,7 +4,7 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(VALDRAKKEN, {
 		n(QUESTS, {
-			-- SIDE 2
+			-- A Dryad Questline
 			q(67094, {	-- A Dryad's Work Is Never Done
 				["sourceQuests"] = { 66244 },	-- To Valdrakken
 				["provider"] = { "n", 192522 },	-- Thalendra
@@ -14,6 +14,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["sourceQuests"] = { 67094 },	-- A Dryad's Work Is Never Done
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
+				["cost"] = { { "i", 197769, 1 }, },	-- 1xTasty Hatchling's Treat
+				["g"] = {
+					title(467, {	-- <Name>, Honorary Dryad
+						["collectible"] = false,
+					}),
+				},
 			}),
 
 
@@ -67,7 +73,22 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200889),	-- Highly-Spiced Haunch
 				},
 			}),
-
+			-- Another week?
+			q(70957, {	-- The Sea Out West
+				["sourceQuests"] = { 67063 },	-- 10,000 Years of Roasting
+				["provider"] = { "n", 189479 },	-- Rumiastrasza
+				["coord"] = { 61.5, 11.8, VALDRAKKEN },
+			}),
+			q(67064, {	-- Rambling Delight
+				["sourceQuests"] = { 70957 },	-- The Sea Out West
+				["provider"] = { "n", 186502 },	-- Sugarbough
+				["coord"] = { 28.6, 60.5, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(200892),	-- Dragonfruit Punch
+					i(200891),	-- Druidic Dreamsalad
+					i(200890),	-- Stonetalon Bloom Skewer
+				},
+			}),
 
 			-- Last week of Ruby Feast
 			i(198132),	-- Recipe: Hoard of Draconic Delicacies (RECIPE!)
@@ -80,19 +101,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["timeline"] = { CREATED_DF_PRE },
 				["isBreadcrumb"] = true,
 			}),
-			q(70180, {	-- Jump-Start? Jump-Starting!
-				["sourceQuests"] = {
-					70846,	-- Dragonscale Expedition: Help Needed!
-					72773,	-- Learning Ingenuity
-				},
-				["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
-				["coord"] = { 84.2, 54.4, VALDRAKKEN },
-			}),
-			q(70845, {	-- In Tyr's Footsteeps
-				["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
-				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
-				["coord"] = { 84.3, 53.5, VALDRAKKEN },
-			}),
+
 			q(70181, {	-- First Challenge of Tyr: Finesse
 				["sourceQuests"] = { 70845 },	-- In Tyr's Footsteeps
 				["provider"] = { "o", 379290 },	-- Ornamented Statue
@@ -142,11 +151,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			q(72585, {	-- Open Orientation
 				["provider"] = { "n", 196499 },	-- Therazal
 				["coord"] = { 50.2, 55.9, VALDRAKKEN },
-			}),
-			q(72773, {	-- Learning Ingenuity
-				["provider"] = { "n", 196499 },	-- Therazal
-				["coord"] = { 50.2, 55.9, VALDRAKKEN },
-				["isBreadcrumb"] = true,	-- unconfirmed
 			}),
 			q(72783, {	-- Crafting Orders
 				["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
@@ -198,71 +202,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 
 
-			-- Weekly
-			-- 71243 / 72892 also likely possible weekly quests. completed with all of the other below
-			q(70750, {	-- Aiding the Accord
-				["sourceQuestNumRequired"] = 1,
-				["sourceQuests"] = {
-					71232,	-- Renown of the Dragon Isles
-					72366,	-- HQT unlock on alts
-				},
-				["provider"] = { "n", 196499 },	-- Therazal
-				["coord"] = { 50.7, 58.0, THALDRASZUS },
-				["isWeekly"] = true,
-			}),
-			q(72068, {	-- Aiding the Accord: A Feast For All
-				["sourceQuestNumRequired"] = 1,
-				["sourceQuests"] = {
-					71232,	-- Renown of the Dragon Isles
-					72366,	-- HQT unlock on alts
-				},
-				["coord"] = { 50.7, 58.0, VALDRAKKEN },
-				["g"] = {
-					i(200073),	-- Valdrakken Treasures
-				},
-			}),
-			q(72373, {	-- Aiding the Accord: The Hunt is On
-				["sourceQuestNumRequired"] = 1,
-				["sourceQuests"] = {
-					71232,	-- Renown of the Dragon Isles
-					72366,	-- HQT unlock on alts
-				},
-				["coord"] = { 50.7, 58.0, VALDRAKKEN },
-				["g"] = {
-					i(200073),	-- Valdrakken Treasures
-				},
-			}),
-			q(72374, {	-- Aiding the Accord: Dragonbane Keep
-				["sourceQuestNumRequired"] = 1,
-				["sourceQuests"] = {
-					71232,	-- Renown of the Dragon Isles
-					72366,	-- HQT unlock on alts
-				},
-				["coord"] = { 50.7, 58.0, VALDRAKKEN },
-				["g"] = {
-					i(200073),	-- Valdrakken Treasures
-				},
-			}),
-			q(72375, {	-- Aiding the Accord: The Isles Call
-				["sourceQuestNumRequired"] = 1,
-				["sourceQuests"] = {
-					71232,	-- Renown of the Dragon Isles
-					72366,	-- HQT unlock on alts
-				},
-				["coord"] = { 50.7, 58.0, VALDRAKKEN },
-				["g"] = {
-					i(200073),	-- Valdrakken Treasures
-				},
-			}),
+
+
 			q(66867, {	-- Relic Recovery: Algeth'ar Academy
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 191957 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
-			q(66865, {	-- Relic Recovery: The Azure Vault
+			q(66864, {	-- Relic Recovery: Brackenhide Hollow
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
-				["provider"] = { "n", 191957 },	-- Theldren
+				["provider"] = { "n", 191958 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
@@ -278,7 +228,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
-			q(66870, {	-- Preserving the Past: Ruby Life Pools
+			q(66865, {	-- Relic Recovery: The Azure Vault
+				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 191957 },	-- Theldren
+				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				["isWeekly"] = true,
+			}),
+			q(66875, {	-- Preserving the Past: Algeth'ar Academy
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
@@ -290,19 +246,25 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
-			q(66875, {	-- Preserving the Past: Algeth'ar Academy
+			q(66868, {	-- Preserving the Past: Legacy of Tyr
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 				["isWeekly"] = true,
-			}),	
+			}),
+			q(66870, {	-- Preserving the Past: Ruby Life Pools
+				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 189973 },	-- Kemora
+				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+				["isWeekly"] = true,
+			}),
 			pvp(n(PVP, {
-				q(72167, {	-- Proving in War
+				q(72166, {	-- Proving in Battle
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
 				}),
-				q(72166, {	-- Proving in Battle
+				q(72167, {	-- Proving in War
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
@@ -315,7 +277,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(72648, {	-- Sparks of Life: The Azure Span
 					["provider"] = { "n", 199393 },	-- Keenu
 					["coord"] = { 42.2, 40.7, VALDRAKKEN },
-					["isWeekly"] = true,	-- unconfirmed but assumed
+					["isWeekly"] = true,
 				}),
 			})),
 		}),
@@ -327,15 +289,11 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72596),	-- After Open Orientation
 		q(69935),	-- triggered with 'A Dryadic Remedy' (67606)
 		q(72011),	-- triggeres when accepting 'The Ruby Feast!' (71238)
+		q(72009),	-- triggered with 'Warm Away These Shivers' (67047)
 		q(72258),	-- triggered with 'A Dryadic Remedy' (71238) and with '10,000 Years of Roasting' (67063) - triggers off a line of text from Coulisa, the steward at the door - spell ID 393805
 		q(67055),	-- triggered with 'Warm Away These Shivers' (67047)
-		q(72009),	-- triggered with 'Warm Away These Shivers' (67047)
 		q(67056),	-- triggered after '10,000 Years of Roasting' (67063)
-
-		-- q(65041),	-- Memories of Scoroxia(On wowhead? Something you should return with??) / Talked with Scalecommanders Cindretresh and Azurathel
-
-		-- q(71243),	-- Weekly Quest?
-
-		-- q(72892),	-- After "Aiding the Accord" series
+		q(67057),	-- triggered after 'Rambling Delight' (67064)
+		q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel
 	}),
 }));

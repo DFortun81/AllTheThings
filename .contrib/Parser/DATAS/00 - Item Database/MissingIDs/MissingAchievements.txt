@@ -982,3 +982,5 @@ ach(17118),	-- Hall of Fame: Raszageth the Storm-Eater (Horde)
 ach(17119),	-- Deep Cuts From the Vault
 10.0.2.46781
 ach(17314),	-- Heroic Edition: Tangled Dreamweaver
+10.0.2.47067
+ach(15640),	-- Return to Darkness

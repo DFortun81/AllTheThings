@@ -311,29 +311,29 @@ root("Zones", {
 					}),
 				}),
 				prof(FISHING, {
+					i(44703, {	-- Dark Herring
+						["provider"] = { "o", 192049 },	-- Fangtooth Herring School
+						-- #if AFTER TRANSMOG
+						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+						-- #endif
+					}),
 					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192053 },	-- Deep Sea Monsterbelly School
 						["criteriaID"] = 5279,	-- Deep Sea Monsterbelly School
 						["requireSkill"] = FISHING,
 					}),
-					o(192049, {	-- Fangtooth Herring School
-						["model"] = 219405,
-						["groups"] = {
-							ach(1517, {	-- Northrend Angler
-								["criteriaID"] = 5281,	-- Fangtooth Herring School
-								["requireSkill"] = FISHING,
-							}),
-							i(44703, {	-- Dark Herring
-								-- #if AFTER TRANSMOG
-								["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-								-- #endif
-							}),
-						},
+					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192049 },	-- Fangtooth Herring School
+						["criteriaID"] = 5281,	-- Fangtooth Herring School
+						["requireSkill"] = FISHING,
 					}),
 					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192052 },	-- Imperial Manta Ray School
 						["criteriaID"] = 5284,	-- Imperial Manta Ray School
 						["requireSkill"] = FISHING,
 					}),
 					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192054 },	-- Moonglow Cuttlefish School
 						["criteriaID"] = 5285,	-- Moonglow Cuttlefish School
 						["requireSkill"] = FISHING,
 					}),
@@ -846,9 +846,10 @@ root("Zones", {
 						-- #endif
 					}),
 					q(12181, {	-- Give it a Name
+						["qg"] = 24251,	-- Chief Plaguebringer Harris
 						["coord"] = { 53.5, 66.3, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24251,	-- Chief Plaguebringer Harris
+						["isBreadcrumb"] = true,
 					}),
 					q(11237, {	-- Gjalerbron Attack Plans (A) -- TODO: Verify if this drops all the time
 						["races"] = ALLIANCE_ONLY,
@@ -2053,10 +2054,10 @@ root("Zones", {
 						["sourceQuest"] = 11307,	-- Field Test
 					}),
 					q(12182, {	-- To Venomspite!
-						["coord"] = { 52.0, 67.3, HOWLING_FJORD },
-						["races"] = HORDE_ONLY,
 						["qg"] = 24155,	-- Tobias Sarkhoff
 						["sourceQuest"] = 12181,	-- Give it a Name
+						["coord"] = { 52.0, 67.3, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(11291, {	-- To Westguard Keep!

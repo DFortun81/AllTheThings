@@ -21,6 +21,50 @@ root("Holidays", holiday(1671631, {	-- Trial of Style
 	i(188244, {	-- Virulent Gravetreaders
 		["cost"] = { { "i", 151134, 10 } },	-- Trial of Style Token x10
 	}),
+	i(202295, {	-- Anointed Crusader's Claymore
+		["cost"] = { { "i", 151134, 50 } },	-- Trial of Style Token x50
+		["timeline"] = { "added 10.0.5" },
+	}),
+	i(202296, {	-- Deathmantle Ripper
+		["cost"] = { { "i", 151134, 50 } },	-- Trial of Style Token x50
+		["timeline"] = { "added 10.0.5" },
+	}),
+	i(202297, {	-- Jade Arcus
+		["cost"] = { { "i", 151134, 50 } },	-- Trial of Style Token x50
+		["timeline"] = { "added 10.0.5" },
+	}),
+	i(202298, {	-- Trader's Bicorne
+		["cost"] = { { "i", 151134, 25 } },	-- Trial of Style Token x25
+		["timeline"] = { "added 10.0.5" },
+	}),
+	i(202300, {	-- Zealot's Prayer Staff
+		["cost"] = { { "i", 151134, 50 } },	-- Trial of Style Token x50
+		["timeline"] = { "added 10.0.5" },
+	}),
+	i(202301, {	-- Focalized Mana Accelerator
+		["cost"] = { { "i", 151134, 50 } },	-- Trial of Style Token x50
+		["timeline"] = { "added 10.0.5" },
+	}),
+	i(202303, {	-- Crimson Beanie
+		["cost"] = { { "i", 151134, 25 } },	-- Trial of Style Token x25
+		["timeline"] = { "added 10.0.5" },
+	}),
+	i(202304, {	-- Green Beanie
+		["cost"] = { { "i", 151134, 25 } },	-- Trial of Style Token x25
+		["timeline"] = { "added 10.0.5" },
+	}),
+	i(202306, {	-- Dread Captain's Chapeau
+		["cost"] = { { "i", 151134, 25 } },	-- Trial of Style Token x25
+		["timeline"] = { "added 10.0.5" },
+	}),
+	i(202307, {	-- Well-Worn Tricorne
+		["cost"] = { { "i", 151134, 25 } },	-- Trial of Style Token x25
+		["timeline"] = { "added 10.0.5" },
+	}),
+	i(202308, {	-- Alley Skulker's Bandana
+		["cost"] = { { "i", 151134, 25 } },	-- Trial of Style Token x25
+		["timeline"] = { "added 10.0.5" },
+	}),
 }));
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

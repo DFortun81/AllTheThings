@@ -12,7 +12,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16545),	-- The Best at What I Do
 				ach(16542),	-- The Disgruntled Hunter
 			}),
-			m(OHNAHRAN_PLAINS, {	-- Should be finished
+			-- TODO: convert real map headers to new automated custom headers for maps once added by Runaway
+			-- minilists work properly without real map headers currently
+			-- m(OHNAHRAN_PLAINS, {	-- Should be finished
 				n(-1123, {	-- North
 					n(190907, {	-- Blitztusk	-- North Only
 						["coord"] = { 77.0, 20.6, OHNAHRAN_PLAINS },
@@ -115,8 +117,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 				}),
-			}),
-			m(THALDRASZUS, {
+			-- }),
+			-- m(THALDRASZUS, {
 				n(-1123, {	-- North
 					n(195431, {	-- Diluu
 						["coord"] = { 50.8, 46.6, THALDRASZUS },
@@ -170,8 +172,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 				}),
-			}),
-			m(THE_AZURE_SPAN, {
+			-- }),
+			-- m(THE_AZURE_SPAN, {
 				n(-1124, {	-- East
 					n(195093, {	-- Moskhoi
 						["coord"] = { 67.6, 27.8, THE_AZURE_SPAN },
@@ -255,8 +257,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 				}),
-			}),
-			m(THE_WAKING_SHORES, {
+			-- }),
+			-- m(THE_WAKING_SHORES, {
 				n(-1124, {	-- East
 					n(193896, {	-- Borzgas
 						["coord"] = { 69.2, 56.6, THE_WAKING_SHORES },
@@ -313,6 +315,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						["questID"] = 73931,
 						["isDaily"] = true,
 						["g"] = {
+							i(197105),	-- Highland Drake: Spined Chin (DM!)
 							-- is part of the DF>Global Rare Loottable
 						},
 					}),
@@ -353,10 +356,27 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 				}),
-			}),
+			-- }),
 			n(REWARDS, {
-				i(194085),	-- Proof of Might
-				i(194086),	-- Proof of Cunning
+				i(200290),	-- Bakar Companion (PET!)
+				i(194094, {	-- Bakar Companion Color: Black
+					["questID"] = 71044,
+				}),
+				i(194093, {	-- Bakar Companion Color: Brown
+					--["questID"] = TODO, probably 71045
+				}),
+				i(194091, {	-- Bakar Companion Color: Golden Brown
+					["questID"] = 71048,
+				}),
+				i(194089, {	-- Bakar Companion Color: Orange
+					["questID"] = 71046,
+				}),
+				i(194090, {	-- Bakar Companion Color: White
+					["questID"] = 71047,
+				}),
+				i(194097),	-- Hunter's Fabulous Treasure
+				i(194108),	-- Mighty Hunter's Horn
+				i(200276),	-- Ohuna Companion (PET!)
 				i(193205, {	-- Ohuna Companion Color: Brown
 					["questID"] = 71050,
 				}),
@@ -366,26 +386,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(194088, {	-- Ohuna Companion Color: Dark
 					["questID"] = 71049,
 				}),
-				i(194089, {	-- Bakar Companion Color: Orange
-					["questID"] = 71046,
-				}),
-				i(194090, {	-- Bakar Companion Color: White
-					["questID"] = 71047,
-				}),
-				i(194091, {	-- Bakar Companion Color: Golden Brown
-					["questID"] = 71048,
-				}),
-				i(194092),	-- Timbertooth Pelt
-				i(194093),	-- Bakar Companion Color: Brown
-				i(194094, {	-- Bakar Companion Color: Black
-					["questID"] = 71044,
-				}),
 				i(194095, {	-- Ohuna Companion Color: Sepia
 					["questID"] = 71052,
 				}),
-				i(194097),	-- Hunter's Fabulous Treasure
+				i(194086),	-- Proof of Cunning
+				i(194085),	-- Proof of Might
 				i(194099),	-- Shikaar Hunting Horn
-				i(194108),	-- Mighty Hunter's Horn
+				i(194092),	-- Timbertooth Pelt
 
 				q(70906, {
 					["name"] = "1st Weekly Grand Hunt",
@@ -410,7 +417,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 								194087,	-- Ohuna Companion Color: Red
 							}},
 							["g"] = {
-								i(192791),	-- Plainswalker Bearer (Mount!)
+								i(192791),	-- Plainswalker Bearer (MOUNT!)
 							},
 						}),
 					},
@@ -444,6 +451,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 								{"select","itemID", 200516},{"pop"},	-- Grand Hunt Spoils [Common]
 								{"select","itemID",
 								-- confirmed items here
+								200276,	-- Ohuna Companion (PET!)
+								200290,	-- Bakar Companion (PET!)
 							}},
 						}),
 					},
@@ -461,7 +470,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 								200447,	-- Centaur Hunting Trophy
 								194095,	-- Ohuna Companion Color: Sepia
 								194091,	-- Bakar Companion Color: Golden Brown
-								
+
 							}},
 						}),
 					},
@@ -481,6 +490,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	q(70002),	-- First time Rare Grand Hunt
 	q(70001),	-- First time Uncommon Grand Hunt
 	q(70000),	-- First time Common Grand Hunt
+	q(69999),	-- 'Grand Hunter' achievement (start - end full hunt)
 	q(70908),	-- Maruuk Hunts // HQ to reward you with Reputation after each Stage
 	-- Each Unique Event can reward you with 1 trophy daily.
 	-- Upon killing a mob that dropped a trophy, the quest is triggered.

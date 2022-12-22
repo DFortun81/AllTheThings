@@ -59,6 +59,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },	-- Close to Maruuk?
 					["isDaily"] = true,
 				}),
+				q(70701, {	-- Bakar Dream of Lost Argali
+					--["sourceQuests"] = {  },
+					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
+					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },	-- Eaglewatch Outpost?
+					["isDaily"] = true,
+				}),
 				q(71241, {	-- Duck, Duck, Trap
 					--["sourceQuests"] = {  },
 					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
@@ -102,30 +108,45 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 71.4, 31.0, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
 				}),
-				--[[
 				q(65789, {	-- Where Rivers Sleep
 					--["sourceQuests"] = {  },
 					["provider"] = { "n", 185867 },	-- Barnak of the Reeds
 					["coord"] = { 71.4, 31.0, OHNAHRAN_PLAINS },	-- River Camp?
 					["isDaily"] = true,
 				}),
-				-- Next Camp Sight
-				q(70701, {	-- Bakar Dream of Lost Argali
-					--["sourceQuests"] = {  },
-					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
-					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },	-- Close to Maruuk?
-					["isDaily"] = true,
-				}),
 				q(70299, {	-- Draconic Defensive
 					--["sourceQuests"] = {  },
 					["provider"] = { "n", 185867 },	-- Barnak of the Reeds
-					["coord"] = { 55.9, 51.9, OHNAHRAN_PLAINS },	-- Close to Maruuk?
+					["coord"] = { 55.9, 51.9, OHNAHRAN_PLAINS },	-- Eaglewatch Outpost?
 					["isDaily"] = true,
 					["g"] = {
 						i(198691),	-- Howling Heart
 					},
-				}),			
-				--]]
+				}),
+				q(65784, {	-- The Otter Side
+					--["sourceQuests"] = {  },
+					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
+					["coord"] = { 71.2, 31.5, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+					["g"] = {
+						i(198539),	-- Breath of the Plains
+					},
+				}),
+			}),
+			n(REWARDS, {
+				q(66578, {	-- A > B Reward Test (Low Health)
+					["g"] = {
+						i(200094),	-- Caravan Strongbox
+					},
+				}),
+				q(70921, {	-- A > B Reward Test (High Health)
+					["g"] = {
+						i(200094),	-- Caravan Strongbox
+					},
+				}),
+				-- Unconfirmed
+				--q(70920),	-- A > B Reward Test (Med Health)
+				--q(70922),	-- A > B Reward Test (Mini Boss Steps)
 			}),
 		}),
 	}),

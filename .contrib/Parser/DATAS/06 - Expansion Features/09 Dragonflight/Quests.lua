@@ -146,7 +146,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			["isBreadcrumb"] = true,
 		}),
 		q(67700, {	-- To The Dragon Isles! [A]
-			["sourceQuests"] = { 
+			["sourceQuests"] = {
 				66596,	--  Whispers in the Winds [A]
 				70197,	--	The Call of the Isles [A]
 			},
@@ -156,7 +156,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			["timeline"] = TIMELINE_DF_REL,
 		}),
 		q(65444, {	-- To the Dragon Isles! [H]
-			["sourceQuests"] = { 
+			["sourceQuests"] = {
 				65439,	-- Whispers on the Winds [H]
 				70198,	-- The Call of the Isles [H]
 			},
@@ -227,16 +227,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			["g"] = {
 				ach(16790),	-- Curious Coin
 			},
-		}),
-
-		-- These are usually from Valdrakken also? They were weeklies on beta
-		q(66864, {	-- Relic Recovery: Brackenhide Hollow
-			-- maybe weekly? has a time limit for the current lockout
-			["description"] = "Accepted from Adventure Guide.",
-		}),
-		q(66868, {	-- Preserving the Past: Legacy of Tyr
-			-- maybe weekly? has a time limit for the current lockout
-			["description"] = "Accepted from Adventure Guide.",
 		}),
 	}),
 })));

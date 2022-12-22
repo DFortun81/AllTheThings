@@ -771,8 +771,11 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 				n(10506, { 	-- Kirtonos the Herald
 					-- #if BEFORE 5.0.4
+					["providers"] = {
+						{ "o", 175564 },	-- Brazier of the Herald
+						{ "i",  13523 },	-- Blood of Innocents
+					},
 					["description"] = "Can only be summoned if someone in your group has the Blood of Innocents.",
-					["cost"] = { { "i", 13523, 1 } },	-- Blood of Innocents
 					-- #endif
 					["timeline"] = { "removed 5.0.4" },
 					["groups"] = {

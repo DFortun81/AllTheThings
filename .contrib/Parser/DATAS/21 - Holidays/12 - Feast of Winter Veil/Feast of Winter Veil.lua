@@ -121,6 +121,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 34086 },		-- Winter Boots
 					-- #endif
 				},
+				["maps"] = { NORTHREND_DALARAN },
 			}),
 			ach(5853, {	-- A-Caroling We Will Go (A)
 				-- #if AFTER 9.1.5
@@ -1187,7 +1188,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			q(13966, { 	-- A Winter Veil Gift (2009)
+			applyclassicphase(WRATH_PHASE_FOUR, q(13966, { 	-- A Winter Veil Gift (2009)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 46740 },	-- Winter Veil Gift
@@ -1201,7 +1202,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 						["timeline"] = { "added 3.3.0.11159" },
 					}),
 				},
-			}),
+			})),
 			q(28878, { 	-- A Winter Veil Gift (2010)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
@@ -2172,7 +2173,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			n(23064, {	-- Eebee Jinglepocket <Smokywood Pastures>
 				["coord"] = { 51.6, 30.6, SHATTRATH_CITY },
 				["timeline"] = { "added 2.3.0.7561" },
+				-- #if AFTER CATA
 				["groups"] = HOLIDAY_VENDOR_GROUPS_GREEN,
+				-- #endif
 			}),
 			n(96362, {	-- Izzy Hollyfizzle <Events Coordinator>
 				["timeline"] = { "added 6.2.2.20395" },

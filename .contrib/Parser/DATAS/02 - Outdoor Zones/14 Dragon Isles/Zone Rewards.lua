@@ -89,11 +89,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(198407),	-- Azure Arcanic Amplifier
 			i(198627),	-- Blood of the Khansguard
 			i(198695),	-- Bottomless Reliquary Satchel
+			i(198539),	-- Breath of the Plains
 			i(198490),	-- Bushwhacker's Compass
+			i(198081),	-- Caregiver's Charm
 			i(198489),	-- Dreamscape Prism
 			i(192797),	-- Gral's Discarded Tooth
 			i(193568),	-- Engraved Spearhead
+			i(198451),	-- Lifeflame Ampoule
 			i(198542),	-- Shikaari Huntress' Arrowhead
+			i(198532),	-- The Cartographer's Calipers
 			i(198529),	-- Wayfarer's Iron Torch
 		}),
 		n(WEAPONS, {
@@ -106,6 +110,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(192024),	-- Dragonflayer's Seething Shortsword
 			i(192016),	-- Drakescale Heater Shield
 			i(197943),	-- Elder's Bioluminous Quarterstaff
+			i(197956),	-- Empowered Shortsword of Insight
 			i(197940),	-- Hefty Iskaaran Anchor
 			i(192023),	-- Lava-Forged Decapitator
 			i(192034),	-- Marauder's Singing Blade
@@ -121,7 +126,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(197948),	-- Stone Sentinel's Greatsword
 			i(192029),	-- Swift Dragonbone Mace
 			i(192017),	-- Thrumming Celestial Arrangement
+			i(197957),	-- Timeless Watcher's Saber
 			i(192025),	-- World Breaker's Maul
+		}),
+		filter(COSMETIC, {
+			i(201447),	-- Primalist Tomorrow's Breezeblade
+			i(201444),	-- Primalist Tomorrow's Earthblade
+			i(201445),	-- Primalist Tomorrow's Emberblade
+			i(201446),	-- Primalist Tomorrow's Firewall
+			i(201442),	-- Primalist Tomorrow's Frostblade
+			i(201443),	-- Primalist Tomorrow's Icewall
+			i(201448),	-- Primalist Tomorrow's Windwall
 		}),
 	}),
 })));

@@ -123,6 +123,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						r(389151),	-- Writ of Versatility
 					},
 				}),
+				q(72423, {	-- Weathering the Storm
+					["provider"] = { "n", 191004 },	-- Temnaayu
+					["coord"] = { 36.8, 62.6, VALDRAKKEN },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+					["groups"] = {
+						i(198610),	-- Enchanter's Script
+					},
+				}),
 			})),
 			prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = ENGINEERING }, {
 				n(185548, {	-- Clinkyclick Shatterboom <Engineering Trainer>
@@ -329,6 +338,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 39.0, 51.8, VALDRAKKEN },
 					["cost"] = {{"i",190395,16}},	-- 16x Severite Ore
 				}),
+				q(70617, {	-- All Mine, Mine, Mine
+					--["sourceQuests"] = {  },	--
+					["provider"] = { "n", 185553 },	-- Sekita the Burrower
+					["coord"] = { 76.3, 34.6, THE_WAKING_SHORES },
+					["cost"] = { { "i", 189143, 7 }, },	-- 7x Draconium Ore+
+					["g"] = {
+						i(190394),	-- Tyrivite Ore+++
+					}
+				}),
 			})),
 			prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINNING }, {
 				n(193846, {	-- Ralathor the Rugged <Skinning Trainer>
@@ -386,6 +404,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						r(376551),	-- Wildercloth Fishing Cap
 						r(376553),	-- Wildercloth Gardening Hat
 						r(376545),	-- Wildercloth Tailor's Coat
+					},
+				}),
+				q(72410, {	-- Pincers and Needles
+					["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+					["coord"] = { 36.8, 62.6, VALDRAKKEN },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+					["groups"] = {
+						i(198609),	-- Tailoring Examples
 					},
 				}),
 			})),

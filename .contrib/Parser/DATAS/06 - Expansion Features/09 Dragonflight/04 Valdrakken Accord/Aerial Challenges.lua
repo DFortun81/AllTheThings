@@ -8,6 +8,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(199192, {	-- Dragon Racer's Purse
 					i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
 					i(197366),	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
+					i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw (DM!)
+					i(197605),	-- Windborne Velocidrake: Curled Horns (DM!)
 				}),
 			}),
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
@@ -24,6 +26,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70417, {	-- Dragonrider Racing - Wingrest Roundabout
 					["coord"] = { 73.2, 34.0, THE_WAKING_SHORES }
 				}),
+				q(70412, {	-- Dragonrider Racing - Wild Preserve Slalom
+					["coord"] = { 47.0, 85.6, THE_WAKING_SHORES }
+				}),
 				-- Unconfirmed
 				--[[
 				q(70415, {	-- Dragonrider Racing - Apex Canopy River Run
@@ -34,9 +39,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				q(70418, {	-- Dragonrider Racing - Wild Preserve Circuit
 					["coord"] = { 42.6, 94.4, THE_WAKING_SHORES }
-				}),
-				q(70412, {	-- Dragonrider Racing - Wild Preserve Slalom
-					["coord"] = { 47.0, 85.6, THE_WAKING_SHORES }
 				}),
 				--]]
 
@@ -56,11 +58,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70419, {	-- Dragonrider Racing - Sundapple Copse Circuit
 					["coord"] = { 63.8, 30.4, OHNAHRAN_PLAINS }
 				}),
-				-- Unconfirmed
-				--[[
 				q(70422, {	-- Dragonrider Racing - Emerald Garden Ascent
 					["coord"] = { 25.6, 55.0, OHNAHRAN_PLAINS }
 				}),
+				-- Unconfirmed
+				--[[
 				q(70420, {	-- Dragonrider Racing - Fen Flythrough
 					["coord"] = { 86.2, 35.8, OHNAHRAN_PLAINS }
 				}),
@@ -79,17 +81,20 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70428, {	-- Dragonrider Racing - Iskaara Tour
 					["coord"] = { 16.4, 49.4, THE_AZURE_SPAN }
 				}),
+				q(70427, {	-- Dragonrider Racing - Vakthros Ascent
+					["coord"] = { 71.2, 24.6, THE_AZURE_SPAN }
+				}),
 				-- Unconfirmed
 				--[[
 				q(70430, {	-- Dragonrider Racing - Archive Ambit
 					["coord"] = { 42.2, 56.8, THE_AZURE_SPAN }
 				}),
-				q(70427, {	-- Dragonrider Racing - Vakthros Ascent
-					["coord"] = { 71.2, 24.6, THE_AZURE_SPAN }
-				}),
 				--]]
 
 					-- Thaldraszus --
+				q(70436, {	-- Dragonrider Racing - Caverns Criss-Cross
+					["coord"] = { 58.0, 33.6, THALDRASZUS }
+				}),
 				q(70433, {	-- Dragonrider Racing - Cliffside Circuit
 					["coord"] = { 37.6, 49.0, THALDRASZUS }
 				}),
@@ -104,9 +109,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				-- Unconfirmed
 				--[[
-				q(70436, {	-- Dragonrider Racing - Caverns Criss-Cross
-					["coord"] = { 58.0, 33.6, THALDRASZUS }
-				}),
 				q(70432, {	-- Dragonrider Racing - Passage Pathway
 					["coord"] = { 57.2, 66.8, THALDRASZUS }
 				}),

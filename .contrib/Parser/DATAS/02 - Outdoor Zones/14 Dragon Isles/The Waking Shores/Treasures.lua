@@ -94,6 +94,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			o(380648, {	-- Odd Book
+				["sourceQuests"] = { 70134 },	-- Memories
 				["description"] = "Underneath the Obsidian Citadel.",
 				["coord"] = { 23.2, 60.5, THE_WAKING_SHORES },
 				["g"] = {

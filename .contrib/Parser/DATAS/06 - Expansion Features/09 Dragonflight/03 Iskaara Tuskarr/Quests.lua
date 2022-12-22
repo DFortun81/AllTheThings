@@ -106,7 +106,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(66409, {	-- Pressing Matters
 				["description"] = "Requires Renown 11.",
-				["sourceQuests"] = { 68840 },	-- Sudden Isolation
+				["sourceQuests"] = { 68640 },	-- Sudden Isolation
 				["provider"] = { "n", 188301 },	-- Guard Hakota
 				["coord"] = { 55.1, 38.3, THE_WAKING_SHORES },
 			}),
@@ -188,9 +188,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 53.9, 38.1, THE_WAKING_SHORES },
 				["g"] = {
 					i(201783),	-- Tutaqan's Commendation
-					crit(4, {	-- The Chieftain's Duty
-						["achievementID"] = 16808,	-- Friend of the Dragon Isles
-					}),
 				},
 			}),
 				-- RENOWN 12 --
@@ -264,6 +261,24 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201714),	-- Notebook of Crafting Knowledge
 				},
 			}),
+				-- RENOWN 15 --
+			q(70978, {	-- Dragon Isles Champion's Tales
+				["description"] = "Requires Renown 15.",
+				["provider"] = { "n", 186448 },	-- Elder Poa
+				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+			}),
+			q(72292, {	-- Story of a Spectacular Victory
+				["sourceQuests"] = { 70978 },	-- Dragon Isles Champion's Tales
+				["provider"] = { "i", 201471 },	-- Story of a Spectacular Victory
+				["isWeekly"] = true,
+			}),
+				-- RENOWN 16 --
+			q(70966, {	-- Trading Made Easier
+				["description"] = "Requires Renown 16.",
+				["provider"] = { "n", 187869 },	-- Tikukk
+				["coord"] = { 12.6, 50.2, THE_AZURE_SPAN },
+			}),
+
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
@@ -273,7 +288,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
 		q(72279),	-- Triggered with 'Stolen Tuskaar Totems' (70936)
-		q(72385),	-- Triggered with 'Cpmmunity Feasts' (70938)
+		q(72385),	-- Triggered with 'Community Feasts' (70938)
 		q(72386),	-- Triggered with 'Cooking Utensils' (70939)
 		q(72387),	-- Triggered with 'Tuskarr Headwear' (70953)
 		q(72781),	-- Triggered with 'Tuskarr Fishing Gear' (71230)
@@ -284,5 +299,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72393),	-- Triggered with 'Trader's Apparel' (70960)
 		q(72400),	-- Triggered when hitting Renown 11
 		q(72782),	-- Triggered with 'A Lost Tribe' (68863)
+		q(72395),	-- Triggered with 'Trading Made Easier' (70966)
 	}),
 }));

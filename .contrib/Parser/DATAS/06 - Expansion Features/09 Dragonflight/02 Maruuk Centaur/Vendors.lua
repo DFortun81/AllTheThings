@@ -272,6 +272,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						-- RENOWN 19 --
 					i(197011),	-- Cliffside Wylderdrake: Green Scales (DM!)
 					i(197143),	-- Highland Drake: Green Scales (DM!)
+					i(197389, {	-- Renewed Proto-Drake: Green Scales (DM!)
+						["description"] = "Renown 19.",
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 400 },
+							{ "i", 190327, 1 },	-- 1x Awakened Air
+						},
+					}),
 						-- RENOWN 22 --
 					i(197982),	-- Pattern: Finished Prototype Explorer's Barding (RECIPE!)
 					i(198713),	-- Plans: Prototype Explorer's Barding Framework (RECIPE!)

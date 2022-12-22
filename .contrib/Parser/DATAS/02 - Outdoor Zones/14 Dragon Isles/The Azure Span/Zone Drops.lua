@@ -4,6 +4,12 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_AZURE_SPAN, {
 		n(ZONE_DROPS, {
+			i(201422, {	-- Flash Frozen Meat
+				-- ["crs"] = {
+				-- },
+				-- ["coords"] = {
+				-- },
+			}),
 			i(193882, {	-- Pattern: Acidic Hailstone Treads (RECIPE!)
 				["description"] = "Drops from Decayed Creatures around Bracken Hollow.",
 			}),

@@ -80,7 +80,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(196968),	-- Cliffside Wylderdrake: Steel and Yellow Armor (DM!)
 		i(196999),	-- Cliffside Wylderdrake: Swept Horns
 		i(196980),	-- Cliffside Wylderdrake: Triple Head Horns (DM!)
-		i(196989),	-- Cliffside Wylderdrake: White Mane
+		i(196989),	-- Cliffside Wylderdrake: White Hair
 		i(197014),	-- Cliffside Wylderdrake: White Scales
 		i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern (DM!)
 		i(197010),	-- Cliffside Wylderdrake: Red Scales (DM!)
@@ -133,7 +133,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197151),	-- Highland Drake: Spiked Tail (DM!)
 		i(197097),	-- Highland Drake: Spined Back (DM!)
 		i(197133),	-- Highland Drake: Spined Cheek (DM!)
-		i(197105),	-- Highland Drake: Spined Chin
+		i(197105),	-- Highland Drake: Spined Chin (DM!)
 		i(197108),	-- Highland Drake: Spined Head (DM!)
 		i(197154),	-- Highland Drake: Spined Neck (DM!)
 		i(197137),	-- Highland Drake: Spined Nose (DM!)
@@ -181,7 +181,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197356),	-- Renewed Proto-Drake: Hairy Back
 		i(197359),	-- Renewed Proto-Drake: Hairy Brow
 		i(197395),	-- Renewed Proto-Drake: Harrier Pattern (DM!)
-		i(197383),	-- Renewed Proto-Drake: Heavy Horns
+		i(197383),	-- Renewed Proto-Drake: Heavy Horns (DM!)
 		i(197397),	-- Renewed Proto-Drake: Heavy Scales (DM!)
 		i(197373),	-- Renewed Proto-Drake: Helm
 		i(197354),	-- Renewed Proto-Drake: Horned Back
@@ -221,7 +221,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197613),	-- Windborne Velocidrake: Bronze Scales (DM!)
 		i(197624),	-- Windborne Velocidrake: Club Tail (DM!)
 		i(197602),	-- Windborne Velocidrake: Cluster Horns (DM!)
-		i(197605),	-- Windborne Velocidrake: Curled Horns
+		i(197605),	-- Windborne Velocidrake: Curled Horns (DM!)
 		i(197603),	-- Windborne Velocidrake: Curved Horns (DM!)
 		i(197583),	-- Windborne Velocidrake: Exposed Finned Back
 		i(197626),	-- Windborne Velocidrake: Exposed Finned Neck

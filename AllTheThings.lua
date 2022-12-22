@@ -1648,6 +1648,11 @@ local function GetProgressTextForRow(data)
 			return L["COST_ICON"].." "..GetProgressColorText(data.progress or 0, total);
 		end
 
+		-- Reagent & Progress (show reagent icon & container info)
+		if data.filledReagent then
+			return L["REAGENT_ICON"].." "..GetProgressColorText(data.progress or 0, total);
+		end
+
 		local costTotal = data.costTotal;
 		local isCost = costTotal and costTotal > 0;
 		-- Cost (show cost icon)
@@ -1693,6 +1698,15 @@ local function GetProgressTextForTooltip(data, iconOnly)
 				return stateText.." "..L["COST_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
 			else
 				return L["COST_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
+			end
+		end
+
+		-- Reagent & Progress (show reagent icon & container info)
+		if data.filledReagent then
+			if stateText then
+				return stateText.." "..L["REAGENT_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
+			else
+				return L["REAGENT_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
 			end
 		end
 
@@ -2552,7 +2566,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 end
 local PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
-		local questRef = app.SearchForObject("questID", questID) or app.SearchForField("questID", questID);
+		local questRef = app.SearchForObject("questID", questID) or app.SearchForField("questID", questID) or app.SearchForField("altQuestIDs", questID);
 		questRef = (questRef and questRef[1]) or questRef;
 		local questChange;
 		if new == true then
@@ -4952,6 +4966,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 
+					if not working and (right == RETRIEVING_DATA or right:find(RETRIEVING_DATA) or right:find("%[]")) then working = true; end
+
 					-- If this entry is an Achievement Criteria (whose raw parent is not the Achievement) then show the Achievement
 					if entry.criteriaID and entry.achievementID then
 						local rawParent = rawget(entry, "parent");
@@ -5207,6 +5223,9 @@ local function DetermineCraftedGroups(group)
 		end
 	end
 	-- app.PrintDebug("DetermineCraftedGroups",group.hash,groups and #groups);
+	if #groups > 0 then
+		group.filledReagent = true;
+	end
 	return groups;
 end
 local function DetermineSymlinkGroups(group)
@@ -5988,6 +6007,7 @@ fieldCache["objectID"] = {};
 fieldCache["professionID"] = {};
 -- identical cache as professionID
 fieldCache["requireSkill"] = rawget(fieldCache, "professionID");
+fieldCache["altQuestIDs"] = {};
 fieldCache["questID"] = {};
 fieldCache["runeforgePowerID"] = {};
 fieldCache["rwp"] = {};
@@ -6136,6 +6156,11 @@ fieldConverters = {
 	end,
 
 	-- Complex Converters
+	["altQuests"] = function(group, value)
+		for _,questID in ipairs(value) do
+			CacheField(group, "altQuestIDs", questID);
+		end
+	end,
 	["crs"] = function(group, value)
 		for _,creatureID in ipairs(value) do
 			cacheCreatureID(group, creatureID);
@@ -19046,14 +19071,20 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		local topHeaders = {
 		-- ACHIEVEMENTS = -4
 			[-4] = "achievementID",
+		-- BONUS_OBJECTIVES = -221;
+			[-221] = true,
 		-- BUILDINGS = -99;
 			[-99] = true,
 		-- COMMON_BOSS_DROPS = -1;
 			[-1] = true,
+		-- EMISSARY_QUESTS = -169;
+			[-169] = true,
 		-- FACTIONS = -6013;
 			[-6013] = "factionID",
 		-- FLIGHT_PATHS = -228;
 			[-228] = "flightPathID",
+		-- HIDDEN_QUESTS = -999;	-- currently nested under 'Quests' due to Type
+			-- [-999] = true,
 		-- HOLIDAY = -3;
 			[-3] = "holidayID",
 		-- PROFESSIONS = -38;
@@ -19064,10 +19095,18 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			[-16] = true,
 		-- SECRETS = -22;
 			[-22] = true,
+		-- SPECIAL = -77;
+			[-77] = true,
 		-- TREASURES = -212;
 			[-212] = "objectID",
 		-- VENDORS = -2;
 			[-2] = true,
+		-- WEEKLY_HOLIDAYS = -176;
+			[-176] = true,
+		-- WORLD_QUESTS = -34;
+			[-34] = true,
+		-- ZONE_REWARDS = -903;
+			[-903] = true,
 		-- ZONE_DROPS = 0;
 			[0] = true,
 		};
@@ -20779,6 +20818,61 @@ customWindowUpdates["Random"] = function(self)
 		self.data.total = 0;
 		self.data.indent = 0;
 		BuildGroups(self.data, self.data.g);
+		self:BaseUpdate(true);
+	end
+end;
+customWindowUpdates["RWP"] = function(self)
+	if self:IsVisible() then
+		if not self.initialized then
+			self.initialized = true;
+			self.dirty = true;
+			local actions = {
+				['text'] = "Removed With Patch - Get 'Em Now!",
+				['icon'] = "Interface\\Icons\\Ability_Rogue_RolltheBones.blp",
+				["description"] = "This window shows you all of the stuff that gets removed from the game soonish. Go get 'em!",
+				['visible'] = true,
+				['expanded'] = true,
+				['back'] = 1,
+				["indent"] = 0,
+				['OnUpdate'] = function(data)
+					if not self.dirty then return nil; end
+					self.dirty = nil;
+
+					local g = {};
+					if not data.results then
+						data.results = app:BuildSearchResponse(app:GetWindow("Prime").data.g, "rwp");
+					end
+					if #data.results > 0 then
+						for i,result in ipairs(data.results) do
+							table.insert(g, result);
+						end
+					end
+					data.g = g;
+					if #g > 0 then
+						for i,entry in ipairs(g) do
+							entry.indent = nil;
+						end
+						data.progress = 0;
+						data.total = 0;
+						data.indent = 0;
+						data.visible = true;
+						BuildGroups(data, data.g);
+						app.UpdateGroups(data, data.g);
+						if not data.expanded then
+							data.expanded = true;
+							ExpandGroupsRecursively(data, true);
+						end
+					end
+					BuildGroups(self.data, self.data.g);
+				end,
+				['options'] = { },
+				['g'] = { },
+			};
+			self.data = actions;
+		end
+
+		-- Update the window and all of its row data
+		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
 		self:BaseUpdate(true);
 	end
 end;
@@ -23945,6 +24039,9 @@ SlashCmdList["AllTheThings"] = function(cmd)
 			return true;
 		elseif cmd == "quests" then
 			app:GetWindow("quests"):Toggle();
+			return true;
+		elseif cmd == "rwp" then
+			app:GetWindow("RWP"):Toggle();
 			return true;
 		elseif cmd == "wq" then
 			app:GetWindow("WorldQuests"):Toggle();

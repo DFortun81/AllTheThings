@@ -32,8 +32,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							i(192055),	-- Dragon Isles Artifact
 							i(199906),	-- Titan Relic
 							--
-							i(201037),	-- Citadel Crusher's Legguards
-							i(201433),	-- Citadel Warden's Mace
 							i(199230),	-- Schematic: Projectile Propulsion Pinion (RECIPE!)
 						},
 					}),

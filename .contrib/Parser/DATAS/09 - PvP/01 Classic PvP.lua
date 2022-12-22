@@ -214,12 +214,6 @@ root("PVP", run(MarkOfWHOOOWHATNow, pvp(tier(CLASSIC_TIER, {
 				i(18441, {	-- Sergeant's Cape
 					["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 				}),
-				i(28379, {	-- Sergeant's Heavy Cape
-					["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
-				}),
-				i(28380, {	-- Sergeant's Heavy Cloak
-					["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
-				}),
 				-- Chest
 				i(16466, {	-- Field Marshal's Chain Breastplate
 					["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
@@ -471,6 +465,35 @@ root("PVP", run(MarkOfWHOOOWHATNow, pvp(tier(CLASSIC_TIER, {
 				i(16437, {	-- Marshal's Silk Footwraps
 					["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 				}),
+				-- Necks
+				i(18443),	-- Master Sergeant's Insignia (58)
+				i(18444),	-- Master Sergeant's Insignia (45)
+				i(18442),	-- Master Sergeant's Insignia (30)
+				-- Trinkets
+				i(18854, {	-- Insignia of the Alliance
+					["classes"] = { WARRIOR },
+				}),
+				i(18857, {	-- Insignia of the Alliance
+					["classes"] = { ROGUE },
+				}),
+				i(18862, {	-- Insignia of the Alliance
+					["classes"] = { PRIEST },
+				}),
+				i(18859, {	-- Insignia of the Alliance
+					["classes"] = { MAGE },
+				}),
+				i(18858, {	-- Insignia of the Alliance
+					["classes"] = { WARLOCK },
+				}),
+				i(18863, {	-- Insignia of the Alliance
+					["classes"] = { DRUID },
+				}),
+				i(18864, {	-- Insignia of the Alliance
+					["classes"] = { PALADIN },
+				}),
+				i(18856, {	-- Insignia of the Alliance
+					["classes"] = { HUNTER },
+				}),
 			},
 		}),
 		n(FACTION_HEADER_HORDE, {
@@ -594,7 +617,6 @@ root("PVP", run(MarkOfWHOOOWHATNow, pvp(tier(CLASSIC_TIER, {
 				i(17625),	-- General's Satin Leggings
 				i(18429),	-- First Sergeant's Plate Bracers
 				i(18434),	-- First Sergeant's Dragonhide Armguards
-				i(18461),	-- Sergeant's Cloak
 				i(22843),	-- Blood Guard's Chain Greaves
 				i(22852),	-- Blood Guard's Dragonhide Treads
 				i(22855),	-- Blood Guard's Dreadweave Walkers
@@ -656,13 +678,45 @@ root("PVP", run(MarkOfWHOOOWHATNow, pvp(tier(CLASSIC_TIER, {
 				i(29615),	-- Warlord's Lamellar Chestplate
 				i(29616),	-- Warlord's Lamellar Faceguard
 				i(29617),	-- Warlord's Lamellar Pauldrons
-				i(16341),	-- Sergeant's Cloak
 				i(18430),	-- First Sergeant's Plate Bracers
 				i(18432),	-- First Sergeant's Mail Wristguards
 				i(18435),	-- First Sergeant's Leather Armguards
 				i(18436),	-- First Sergeant's Dragonhide Armguards
 				i(18437),	-- First Sergeant's Silk Cuffs
-				i(18427),	-- Sergeant's Cloak
+				
+				-- Back
+				i(18461),	-- Sergeant's Cloak (58)
+				i(16341),	-- Sergeant's Cloak (45)
+				i(18427),	-- Sergeant's Cloak (30)
+				-- Necks
+				i(16335),	-- Senior Sergeant's Insignia (58)
+				i(18428),	-- Senior Sergeant's Insignia (45)
+				i(15200),	-- Senior Sergeant's Insignia (30)
+				-- Trinkets
+				i(18834, {	-- Insignia of the Horde
+					["classes"] = { WARRIOR },
+				}),
+				i(18849, {	-- Insignia of the Horde
+					["classes"] = { ROGUE },
+				}),
+				i(18846, {	-- Insignia of the Horde
+					["classes"] = { HUNTER },
+				}),
+				i(18851, {	-- Insignia of the Horde
+					["classes"] = { PRIEST },
+				}),
+				i(18853, {	-- Insignia of the Horde
+					["classes"] = { DRUID },
+				}),
+				i(18850, {	-- Insignia of the Horde
+					["classes"] = { MAGE },
+				}),
+				i(18852, {	-- Insignia of the Horde
+					["classes"] = { WARLOCK },
+				}),
+				i(18845, {	-- Insignia of the Horde
+					["classes"] = { SHAMAN },
+				}),
 			},
 		}),
 	},

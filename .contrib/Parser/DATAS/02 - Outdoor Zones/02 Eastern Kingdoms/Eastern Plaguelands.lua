@@ -1857,8 +1857,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(5942, {	-- Hidden Treasures
 					["providers"] = {
-						{ "n", 10926 },	-- Pamela Redpath
-						{ "i", 15328 },	-- Joseph's Key
+						{ "n",  10926 },	-- Pamela Redpath
+						{ "o", 177544 },	-- Joseph's Chest
+						{ "i",  15328 },	-- Joseph's Key
 					},
 					["sourceQuest"] = 5721,	-- The Battle of Darrowshire
 					["coord"] = { 36.4, 90.8, EASTERN_PLAGUELANDS },

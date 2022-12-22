@@ -2,11 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(LEGION_TIER, {
+root("Instances", tier(LEGION_TIER, {
 	inst(721, {	-- Halls of Valor
 		["coord"] = { 70.4, 69.4, STORMHEIM },
 		["maps"] = { 703, 704, 705 },
-		["lvl"] = 98,
 		["g"] = {
 			n(QUESTS, {
 				o(251991, {	-- The Aegis of Aggramar
@@ -43,6 +42,11 @@ _.Instances = { tier(LEGION_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
+			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 } }, {
+				i(201998),	-- Fenryr's Bloodstained Fang
+				i(201997),	-- Key to the Halls
+				i(201999),	-- Skovald's Resolve
+			})),
 			d(1,  {	-- Normal
 				n(ZONE_DROPS, {
 					i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
@@ -344,4 +348,4 @@ _.Instances = { tier(LEGION_TIER, {
 			})
 		},
 	}),
-})};
+}));

@@ -7,7 +7,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			o_repeated({	-- Disturbed Dirt
 				-- Contains
 				i(192055),	-- Dragon Isles Artifact
-				currency(2003),	-- Dragon Isles Supplies
+				i(201393),	-- Dragonspawn Spellweaver's Focus
 				i(190454),	-- Primal Chaos
 				--
 				i(199061, {	-- A Guide to Rare Fish
@@ -16,6 +16,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(199062, {	-- Ruby Gem Cluster Map
 					["questID"] = 70528,
 				}),
+				currency(2003),	-- Dragon Isles Supplies
 				-- Objects
 				o(376386, {	-- Disturbed Dirt
 					["coords"] = {
@@ -39,7 +40,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			o_repeated({	-- Expedition Scout's Pack
 				-- Contains
 				i(192055),	-- Dragon Isles Artifact
-				currency(2003),	-- Dragon Isles Supplies
 				i(190454),	-- Primal Chaos
 				--
 				i(199061, {	-- A Guide to Rare Fish
@@ -83,6 +83,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 				i(191384),	-- Aerated Mana Potion +
 				i(191393),	-- Potion of the Hushed Zephyr +
+
+				i(192764),	-- Verdant Skitterfly (MOUNT!)
+				currency(2003),	-- Dragon Isles Supplies
 				-- Objects
 				o(376587, {	-- Expedition Scout's Pack
 					["coords"] = {

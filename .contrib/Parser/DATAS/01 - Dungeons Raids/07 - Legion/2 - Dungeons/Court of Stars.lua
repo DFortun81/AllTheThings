@@ -2,11 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(LEGION_TIER, {
+root("Instances", tier(LEGION_TIER, {
 	inst(800, {	-- Court of Stars
 		["coord"] = { 51.0, 65.6, SURAMAR },
 		["maps"] = { 761, 762, 763 },
-		["lvl"] = 110,
 		["g"] = {
 			n(WORLD_QUESTS, {
 				q(42769, {	-- Court of Stars: Bring Me the Eyes
@@ -30,6 +29,11 @@ _.Instances = { tier(LEGION_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
+			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 } }, {
+				i(201995),	-- Crux of Blind Faith
+				i(201996),	-- Edge of the First Blade
+				i(201994),	-- Felsworn Covenant Crossbow
+			})),
 			d(2, {	-- Heroic
 				cr(104215, e(1718, {	-- Patrol Captain Gerdo
 					i(134268),	-- Arcane Defender's Gauntlets
@@ -148,4 +152,4 @@ _.Instances = { tier(LEGION_TIER, {
 			-- #endif
 		},
 	}),
-})};
+}));

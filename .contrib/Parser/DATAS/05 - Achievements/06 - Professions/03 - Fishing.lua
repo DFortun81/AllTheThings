@@ -325,6 +325,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			["requireSkill"] = FISHING,
 			["groups"] = {
 				crit(3873, {	-- Bloodsail Wreckage
+					["provider"] = { "o", 180901 },	-- Bloodsail Wreckage
 					["requireSkill"] = FISHING,
 					["maps"] = {
 						-- #if AFTER CATA
@@ -336,6 +337,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 					},
 				}),
 				crit(3876, {	-- Floating Wreckage
+					["provider"] = { "o", 180751 },	-- Floating Wreckage
 					["requireSkill"] = FISHING,
 					["maps"] = {
 						-- #if AFTER CATA
@@ -352,6 +354,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 					},
 				}),
 				crit(3874, {	-- Schooner Wreckage
+					["provider"] = { "o", 180662 },	-- Schooner Wreckage
 					["requireSkill"] = FISHING,
 					["maps"] = {
 						-- #if AFTER CATA
@@ -364,10 +367,12 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 					},
 				}),
 				crit(3872, {	-- Steam Pump Flotsam
+					["provider"] = { "o", 182952 },	-- Steam Pump Flotsam
 					["requireSkill"] = FISHING,
 					["maps"] = { ZANGARMARSH },
 				}),
 				crit(3875, {	-- Waterlogged Wreckage
+					["provider"] = { "o", 180685 },	-- Waterlogged Wreckage
 					["requireSkill"] = FISHING,
 					["maps"] = {
 						-- #if AFTER CATA
@@ -386,7 +391,10 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 				}),
 			},
 		}),
-		ach(3218),		-- Turtles All the Way Down
+		applyclassicphase(WRATH_PHASE_ONE, ach(3218, {	-- Turtles All the Way Down
+			["provider"] = { "i", 46109 },	-- Sea Turtle
+			["requireSkill"] = FISHING,
+		})),
 		ach(12754, {	-- Zandalari Fisherman (H)
 			["races"] = HORDE_ONLY,
 		}),

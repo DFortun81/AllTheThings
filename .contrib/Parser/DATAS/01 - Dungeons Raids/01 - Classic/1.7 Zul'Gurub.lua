@@ -1473,12 +1473,15 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				},
 			}),
 			n(14515, {	-- High Priestess Arlokk
-				i(19914),	-- Panther Hide Sack
-				i(19910),	-- Arlokk's Grasp
-				i(19909),	-- Will of Arlokk
-				i(19922),	-- Arlokk's Hoodoo Stick
-				i(19913),	-- Bloodsoaked Greaves
-				i(19912),	-- Overlord's Onyx Band
+				["provider"] = { "o", 180526 },	-- Gong of Bethekk
+				["groups"] = {
+					i(19914),	-- Panther Hide Sack
+					i(19910),	-- Arlokk's Grasp
+					i(19909),	-- Will of Arlokk
+					i(19922),	-- Arlokk's Hoodoo Stick
+					i(19913),	-- Bloodsoaked Greaves
+					i(19912),	-- Overlord's Onyx Band
+				},
 			}),
 			n(11380, {	-- Jin'do the Hexxer
 				i(19891),	-- Jin'do's Bag of Whammies

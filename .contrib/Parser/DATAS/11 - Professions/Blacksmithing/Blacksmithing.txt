@@ -6247,13 +6247,13 @@ profession(BLACKSMITHING, {
 				["timeline"] = { "added 10.0.2." },
 				["isWeekly"] = true,
 				["description"] = "Requires a crafting order from inscription.",
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70311, {	-- Draconic Flux
 				["name"] = "Draconic Flux",
 				["provider"] = { "i", 201006 },		-- Draconic Flux
 				["timeline"] = { "added 10.0.2." },
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66381, {	-- Weekly Blacksmith Skillpoint #1
 				["name"] = "Weekly Blacksmith Skillpoint #1",
@@ -6261,7 +6261,7 @@ profession(BLACKSMITHING, {
 				["timeline"] = { "added 10.0.2." },
 				["isWeekly"] = true,
 				["description"] = "1 out of 3 Weekly Blacksmith Knowledge Points.",
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66382, {	-- Weekly Blacksmith Skillpoint #2
 				["name"] = "Weekly Blacksmith Skillpoint #2",
@@ -6269,7 +6269,7 @@ profession(BLACKSMITHING, {
 				["timeline"] = { "added 10.0.2." },
 				["isWeekly"] = true,
 				["description"] = "1 out of 3 Weekly Blacksmith Knowledge Points.",
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70512, {	-- Weekly Blacksmith Skillpoint #3
 				["name"] = "Weekly Blacksmith Skillpoint #3",
@@ -6277,7 +6277,7 @@ profession(BLACKSMITHING, {
 				["timeline"] = { "added 10.0.2." },
 				["isWeekly"] = true,
 				["description"] = "1 out of 3 Weekly Blacksmith Knowledge Points.",
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		}),
 	})),
@@ -6631,7 +6631,7 @@ itemrecipe("Plans: Treads of Destiny", 45091, 63190, WRATH_PHASE_TWO);
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	filter(200, {	-- Recipe
+	filter(RECIPES, {
 		itemrecipe("Plans: Bleakwood Hew", 12817, 16965);
 		itemrecipe("Plans: Blood Talon", 12831, 16986);
 		itemrecipe("Plans: Darkspear", 12832, 16987);

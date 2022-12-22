@@ -64,7 +64,7 @@ root("Promotions", filter(MISC, {
 		}),
 		i(76755, {	-- Tyrael's Charger (MOUNT!)
 			["description"] = "Reward from the Diablo III Annual Pass promotion. Additionally, it was available on the Taiwan store.",
-			["timeline"] = { "added 4.3.0.15005" },
+			["timeline"] = { "added 4.3.0.15005", "removed 4.3.4.15595" },
 		}),
 		ach(414, {	-- Tyrael's Hilt
 			["timeline"] = { "added 3.0.1" },

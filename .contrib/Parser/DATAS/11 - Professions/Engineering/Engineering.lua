@@ -3580,7 +3580,7 @@ itemrecipe("Schematic: Flintlocke's Woodchucker", 70177, 100587, CATA_PHASE_TWO)
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	filter(200, {	-- Recipe
+	filter(RECIPES, {
 		-- #if CLASSIC
 		i(22729),	-- Schematic: Steam Tonk Controller [This doesn't get added until TBC]
 		-- #endif

@@ -128,7 +128,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["g"] = {
 						i(194389),	-- Brush Clearing Axe
 						i(194392),	-- Expedition Defender's Blade
+						i(194378),	-- Explorer's Belt Knife
+						i(194374),	-- Explorer's League Rifle
+						i(194375),	-- Explorer's Short Sword
 						i(194373),	-- Field Explorer's Stave
+						i(194394),	-- Persistent Threat Cleaver
 						i(194377),	-- Reliquary Dissection Knife
 						i(198488),	-- Staff of Discovery
 					},
@@ -146,8 +150,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 186767 },	-- Majordomo Selistra
 					["coord"] = { 62.7, 33.1, THE_WAKING_SHORES },
 					["g"] = {
-						i(194375),	-- Explorer's Short Sword
-						i(194394),	-- Persistent Threat Cleaver
 						i(193917),	-- Rejuvenating Draught
 					},
 				}),
@@ -791,6 +793,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "n", 190533 },	-- Adazius
 						["coord"] = { 55.2, 63.7, THE_WAKING_SHORES },
 						["g"] = {
+							i(194419),	-- Life Pool Herb Pouch
 							i(194418),	-- Life Pools Watering Can
 						},
 					}),
@@ -905,21 +908,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["collectible"] = false,
 				["g"] = {
 					q(67053, {	-- Give Peace a Chance [A]
-						["sourceQuests"] = {
-							70122,	-- Explorers in Peril [A]
-							70124,	-- Practice Materials [A]
-							70123,	-- Primal Pests [A]
-						},
+						["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
 						["provider"] = { "n", 184449 },	-- Captain Garrick
 						["coord"] = { 76.7, 34.6, THE_WAKING_SHORES },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(66110, {	-- Give Peace a Chance [H]
-						["sourceQuests"] = {
-							65452,	-- Explorers in Peril [H]
-							65451,	-- Practice Materials [H]
-							65453,	-- Primal Pests [H]
-						},
+						["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
 						["provider"] = { "n", 184452 },	-- Warlord Breka Grimaxe
 						["coord"] = { 76.4, 33.1, THE_WAKING_SHORES },
 						["races"] = HORDE_ONLY,
@@ -1099,8 +1094,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			q(66101, {	-- From Such Great Heights
 				["sourceQuests"] = {
-					67053,	-- Give Peace a Chance [A]
-					66110,	-- Give Peace a Chance [H]
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
 				},
 				["provider"] = { "n", 187257 },	-- Aster Cloudgaze
 				["coord"] = { 75.8, 33., THE_WAKING_SHORES },
@@ -1145,7 +1140,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			q(70414, {	-- Shaky Grounds
-				["qg"] = 195234,	-- Earthmender Govrum
+				["provider"] = { "n", 195234 },	-- Earthmender Govrum
 				["coord"] = { 37.0, 55.8, THE_WAKING_SHORES },
 			}),
 			-- Tour
@@ -1281,7 +1276,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(66076, {	-- Ancient Hornswog
 					["provider"] = { "n", 187111 },	-- Ancient Hornswog
 					["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
-					["isDaily"] = true,
 				}),
 				q(72127, {	-- Captain Lancer
 					["provider"] = { "n", 193198 },	-- Captain Lancer
@@ -1312,7 +1306,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(70648, {	-- Firava the Rekindler
 					["provider"] = { "n", 195915 },	-- Firava the Rekindler
 					["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },
-					["isDaily"] = true,
 				}),
 				q(72130, {	-- Forgotten Gryphon
 					["provider"] = { "n", 193154 },	-- Forgotten Gryphon
@@ -1322,7 +1315,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(66960, {	-- Klozicc the Ascended
 					["provider"] = { "n", 187209 },	-- Klozicc the Ascended
 					["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
-					["isDaily"] = true,
 				}),
 				q(70979, {	-- Magmaton
 					["provider"] = { "n", 186827 },	-- Magmaton
@@ -1337,7 +1329,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(66074, {	-- Primal Scythid Queen
 					["provider"] = { "n", 184853 },	-- Primal Scythid Queen
 					["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
-					["isDaily"] = true,
 				}),
 				q(70196, {	-- Pruning the Preserve
 					["sourceQuests"] = { 66079 },	-- Wrathion Awaits
@@ -1346,12 +1337,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(70719, {	-- Shadeslash Trakken
 					["provider"] = { "n", 193271 },	-- Shadeslash Trakken
 					["coord"] = { 47.2, 73.6, THE_WAKING_SHORES },
-					["isDaily"] = true,
+				}),
+				q(72126, {	-- Slurpo, the Incredible Snail
+					["provider"] = { "n", 193175 },	-- Slurpo, the Incredible Snail
+					["coord"] = { 34.5, 89.7, THE_WAKING_SHORES },
 				}),
 				q(70751, {	-- Terillod the Devout
 					["provider"] = { "n", 193171 },	-- Terillod the Devout
 					["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
-					["isDaily"] = true,
 				}),
 			}),
 			n(HIDDEN_QUESTS, {
@@ -1678,7 +1671,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		q(70767),	-- triggers when 'Tale of the Outsider' becomes available for Tarjin the Blind
 		q(70768),	-- triggers when 'Tale of the Outsider' completes
 		q(70770),	-- triggers when 'Tale of the Elders' becomes available for Tarjin the Blind
-		q(70769),	-- triggers when 'Tale of the Outsider' completes
+		q(70769),	-- triggers when 'Tale of the Elders' completes
+		q(70772),	-- triggers when 'Tale of the Warlord' becomes available for Tarjin the Blind
+		q(70771),	-- triggers when 'Tale of the Warlord' completes
+
 		q(72178, {	-- Theory in Practice: Baron von Swoopenbite
 			["name"] = "Theory in Practice: Baron von Swoopenbite",
 			["sourceQuests"] = {

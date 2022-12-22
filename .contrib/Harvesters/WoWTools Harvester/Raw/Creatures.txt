@@ -19233,3 +19233,40 @@
 199725@@@Emerald Drake
 10.0.2.46781
 183638@@@Ichabod
+10.0.2.46879
+194542@@@Alexstrasza the Life-Binder
+194546@@@Wrathion
+198317@@@Invisible Bunny (IGC)
+198318@@@Emmigosa
+198319@@@Eragosa
+198320@@@Senegos
+198321@@@Stellagosa
+198322@@@Tharkago
+198323@@@Vexalgos
+198324@@@Kalecgos
+198325@@@Raszageth
+198327@@@Archmage Khadgar
+198336@@@Chromie
+198338@@@Nozdormu
+198625@@@Sindragosa
+198929@@@Invisible Bunny (IGC)
+199707@@@Saltfin Swimmer
+201041@@@Windsage Garuman
+10.0.2.46924
+193617@@@Keeper Tyr
+196923@@@Nozdormu
+10.0.2.46999
+187423@@@Neltharion
+187632@@@Winter Queen
+199585@@@Emerald Dragon
+199647@@@Vermera
+199648@@@Viranikus
+199650@@@Hesthera
+199651@@@Emerald Dragon
+199652@@@Emerald Drake
+199653@@@Fernarus
+199654@@@Berinus
+199655@@@Somnikus
+199656@@@Gerithus
+199657@@@Emerald Scaleguard
+201022@@@Soridormi

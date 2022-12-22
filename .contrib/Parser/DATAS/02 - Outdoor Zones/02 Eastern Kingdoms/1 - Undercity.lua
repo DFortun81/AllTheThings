@@ -1693,6 +1693,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 61.4, 30.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
+				n(5821, {	-- Sheldon Von Croy <Cloth Armor Merchant>
+					["coord"] = { 70.6, 28.8, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(13896),	-- Dark Green Wedding Hanbok
+						i(13898),	-- Royal Dangui
+						i(13897),	-- White Traditional Hanbok
+					},
+				}),
 				n(52588, {	-- Sara Lanner <Jewelcrafting Supplies>
 					["sym"] = { {"sub", "common_recipes_vendor", 50482 } }, -- Marith Lazuria <Jewelcrafting Supplies>
 					["coord"] = { 56.2, 36.6, UNDERCITY },
@@ -1705,7 +1714,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						-- #if BEFORE CATA
-						i(6342),	-- Formula: Enchant Chest - Minor Mana
+						i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+							["isLimited"] = true,
+						}),
 						-- #endif
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)

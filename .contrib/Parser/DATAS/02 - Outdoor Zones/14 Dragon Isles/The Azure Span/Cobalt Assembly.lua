@@ -40,9 +40,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(72784, {	-- Supporting the Cobalt Assembly
-					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 66340 },	-- Into the Azure
 					["provider"] = { "n", 192222 },	-- Althanus
 					["coord"] = { 46.7, 40.1, THE_AZURE_SPAN },
+					["isBreadcrumb"] = true,
 				}),
 				q(70550, {	-- Welcome to the Assembly
 					["sourceQuests"] = { 72784 },	-- Supporting the Cobalt Assembly

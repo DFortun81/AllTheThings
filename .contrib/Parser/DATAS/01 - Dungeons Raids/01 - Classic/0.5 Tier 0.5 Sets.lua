@@ -1,10 +1,11 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local TIER_ZEROFIVE_RACES = { DRUID, HUNTER, MAGE, PALADIN, PRIEST, ROGUE, SHAMAN, WARLOCK, WARRIOR };
 root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
-	bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, n(-420, {	-- Tier 0.5 Sets
+	bubbleDownFiltered({ ["timeline"] = { "removed 4.0.3" } }, (function(t) return not t.objectiveID; end), n(-420, {	-- Tier 0.5 Sets
 		["lore"] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
-		["classes"] = { DRUID, HUNTER, MAGE, PALADIN, PRIEST, ROGUE, SHAMAN, WARLOCK, WARRIOR },
+		["classes"] = TIER_ZEROFIVE_RACES,
 		["groups"] = {
 			cl(DRUID, {
 				{	-- An Earnest Proposition
@@ -1136,7 +1137,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					},
 				},
 			}),
-			n(QUESTS, {
+			n(QUESTS, bubbleDownFiltered({ ["classes"] = TIER_ZEROFIVE_RACES }, (function(t) return t.questID or t.allianceQuestData; end), {
 				q(8925, {	-- A Portable Power Source
 					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuest"] = 8924,	-- Hunting for Ectoplasm
@@ -1832,6 +1833,11 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						}),
 						objective(2, {	-- 0/1 Lord Valthalak's Amulet
 							["provider"] = { "i", 22048 },	-- Lord Valthalak's Amulet
+							["cost"] = {
+								{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+								{ "i", 22046, 1 },	-- Right Piece of Lord Valthalak's Amulet
+								{ "i", 21984, 1 },	-- Left Piece of Lord Valthalak's Amulet
+							},
 						}),
 					},
 				}),
@@ -1860,6 +1866,11 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						}),
 						objective(2, {	-- 0/1 Lord Valthalak's Amulet
 							["provider"] = { "i", 22048 },	-- Lord Valthalak's Amulet
+							["cost"] = {
+								{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+								{ "i", 22046, 1 },	-- Right Piece of Lord Valthalak's Amulet
+								{ "i", 21984, 1 },	-- Left Piece of Lord Valthalak's Amulet
+							},
 						}),
 					},
 				}),
@@ -1882,6 +1893,11 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						}),
 						objective(3, {	-- 0/1 Lord Valthalak's Amulet
 							["provider"] = { "i", 22048 },	-- Lord Valthalak's Amulet
+							["cost"] = {
+								{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+								{ "i", 22046, 1 },	-- Right Piece of Lord Valthalak's Amulet
+								{ "i", 21984, 1 },	-- Left Piece of Lord Valthalak's Amulet
+							},
 						}),
 					},
 				}),
@@ -1901,6 +1917,11 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						}),
 						objective(2, {	-- 0/1 Lord Valthalak's Amulet
 							["provider"] = { "i", 22048 },	-- Lord Valthalak's Amulet
+							["cost"] = {
+								{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+								{ "i", 22046, 1 },	-- Right Piece of Lord Valthalak's Amulet
+								{ "i", 21984, 1 },	-- Left Piece of Lord Valthalak's Amulet
+							},
 						}),
 					},
 				}),
@@ -1944,16 +1965,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						}),
 					},
 				}),
-			}),
-			n(REWARDS, {
-				i(22048, {	-- Lord Valthalak's Amulet
-					["cost"] = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
-						{ "i", 22046, 1 },	-- Right Piece of Lord Valthalak's Amulet
-						{ "i", 21984, 1 },	-- Left Piece of Lord Valthalak's Amulet
-					},
-				}),
-			}),
+			})),
 		},
 	})),
 })));

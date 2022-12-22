@@ -324,6 +324,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(MARUUK_CENTAUR, {
+		q(72778),	-- triggered with 'Call of the Plains' (71229)
 		q(72737),	-- triggered with 'Call of the Hunt' (71231)
 		q(73919),	-- triggered during 'License to Hunt' (70501)
 	}),

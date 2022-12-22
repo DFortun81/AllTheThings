@@ -391,7 +391,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						crit(3, {	-- Big Time Adventurer
 							["achievementID"] = 16363,	-- Just Don't Ask Me to Spell It
 						}),
+						i(195213),	-- Life-Binder's Band
 					},
+				}),
+				q(71232, {	-- Renown of the Dragon Isles
+					["sourceQuests"] = { 66221 },	-- Moving On
+					["provider"] = { "n", 190902 },	-- Alexstrasza the Life-Binder
+					["coord"] = { 72.5, 56.2, THALDRASZUS },
 				}),
 
 					-- Chapter 4 --
@@ -404,30 +410,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 70437 },	-- To Tyrhold
 					["provider"] = { "n", 187658 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 57.4, 58.7, THALDRASZUS },
-					["g"] = {
-						i(195213),	-- Life-Binder's Band
-						-- Chapter 4 finish
-						-- 'Just Don't Ask Me to Spell It' completed, achievement 16363
-					},
 				}),
 				q(67073, {	-- Red Dawn
 					["sourceQuests"] = { 66675 },	-- Aspect Power
 					["provider"] = { "n", 192455 },	-- Nozdormu
 					["coord"] = { 57.4, 59.1, THALDRASZUS },
 				}),
-				q(71232, {	-- Renown of the Dragon Isles
-					["sourceQuests"] = { 66221 },	-- Moving On
-					["provider"] = { "n", 190902 },	-- Alexstrasza the Life-Binder
-					["coord"] = { 72.5, 56.2, THALDRASZUS },
-				}),
 				q(66847, {	-- Vault of the Incarnates: Fury of the Storm-Eater
 					["sourceQuests"] = { 67073 },	-- Red Dawn
 					["provider"] = { "n", 190902 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 72.4, 56.1, THALDRASZUS },
+					["maps"] = { 2119, 2120, 2121, 2122, 2123, 2124, 2125, 2126, 2135, },	-- Vault of the Incarnates
 					["g"] = {
 						i(197921),	-- Primal Infusion
 						i(190454),	-- Primal Chaos
 					},
+				}),
+				q(72380, {	-- Together We Are Unstoppable
+					["sourceQuests"] = { 66847 },	-- Vault of the Incarnates: Fury of the Storm-Eater
+					["provider"] = { "n", 193460 },	-- Kalegos
+					["maps"] = { 2119, 2120, 2121, 2122, 2123, 2124, 2125, 2126, 2135, },	-- Vault of the Incarnates
 				}),
 			}),
 			crit(1, {	-- Gelikyr Overlook
@@ -772,7 +774,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 66244 },	-- To Valdrakken
 						["provider"] = { "n", 198349 },	-- Talikka
 						["coord"] = { 25.5, 40.9, VALDRAKKEN },
-						["isBreadcrumb"] = true,	-- unconfirmed
+						["isBreadcrumb"] = true,
 					}),
 					q(65913, {	-- Wotcher, Watcher?
 						["sourceQuests"] = { 72190 },	-- Reservoir Reservations
@@ -1366,7 +1368,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THALDRASZUS, {
 		q(67030),	-- WQ Available?
 		q(72366),	-- triggered after completing 'Moving On' (66221)
-		q(72369),	-- triggered after completing 'Moving On' (66221)
+		q(72369),	-- triggered after completing 'Moving On' (66221) / Finishing accord?
 		q(72084),	-- Triggers during 'The Fog of Battle' (66246)
 		q(72125),	-- Triggers during 'Tying Things Together' (66248)
 		-- q(70511),	-- Popped when doing quest and lootning 198964 Elementious Splinter from mobs?

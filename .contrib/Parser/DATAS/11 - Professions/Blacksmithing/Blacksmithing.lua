@@ -6589,7 +6589,7 @@ itemrecipe("Plans: Treads of Destiny", 45091, 63190, WRATH_PHASE_TWO);
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	filter(200, {	-- Recipe
+	filter(RECIPES, {
 		itemrecipe("Plans: Bleakwood Hew", 12817, 16965);
 		itemrecipe("Plans: Blood Talon", 12831, 16986);
 		itemrecipe("Plans: Darkspear", 12832, 16987);

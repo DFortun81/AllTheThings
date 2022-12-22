@@ -14,7 +14,9 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			2122,	-- The Vault Approach
 			2123,	-- Iceskitter Hollow
 			2124,	-- The Primal Convergence
+			2125,	-- Vault of the Incarnates
 			2126,	-- The Clutchwarren
+			2135,	-- Valdrakken
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -73,6 +75,16 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(72261, {	-- More Than a Prison?
 					["provider"] = {"i",201412},	-- Ancient Vault Artifact
 				}),
+				q(72259, {	-- Vault Artifacts
+					["qg"] = 197095,	-- Lillian Brightmoon
+					["cost"] = {{"i",201411,1}},	-- 1x Ancient Vault Artifact
+					["repeatable"] = true,
+				}),
+				q(72260, {	-- Vault Artifacts
+					["qg"] = 197095,	-- Lillian Brightmoon
+					["cost"] = {{"i",201411,5}},	-- 5x Ancient Vault Artifact
+					["repeatable"] = true,
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(201412),	-- Ancient Vault Artifact (Quest)
@@ -80,7 +92,15 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
-					i(202010),	-- Primalist Warden's Bracers
+					i(202004),	-- Brawler's Earthen Cuirass [BoE]
+					i(201992),	-- Emissary's Flamewrought Seal [BoE]
+					i(202005),	-- Frozen Claw Mantle [BoE]
+					i(202008),	-- Galvanic Gaiters [BoE]
+					i(202006),	-- Greathelm of Horned Fury [BoE]
+					i(202009),	-- Lavamancer's Ceremonial Waistguard [BoE]
+					i(202003),	-- Primal Seeker's Leggings [BoE]
+					i(202010),	-- Primalist Warden's Bracers [BoE]
+					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
 				e(2480, {	-- Eranog
 					["crs"] = { 184972 },
@@ -333,14 +353,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			d(14, {	-- Normal
 				n(QUESTS, {
 					q(71018, {	-- Vault of the Incarnates: Break a Few Eggs (N)
-						["qg"] = 193460,	-- Kalecgos
+						["provider"] = { "n", 193460 },	-- Kalecgos
 						["g"] = {
 							i(200225),	-- Shard of the Greatstaff
 						},
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(202010),	-- Primalist Warden's Bracers
+					i(202004),	-- Brawler's Earthen Cuirass [BoE]
+					i(201992),	-- Emissary's Flamewrought Seal [BoE]
+					i(202005),	-- Frozen Claw Mantle [BoE]
+					i(202008),	-- Galvanic Gaiters [BoE]
+					i(202006),	-- Greathelm of Horned Fury [BoE]
+					i(202009),	-- Lavamancer's Ceremonial Waistguard [BoE]
+					i(202003),	-- Primal Seeker's Leggings [BoE]
+					i(202010),	-- Primalist Warden's Bracers [BoE]
+					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
 				e(2480, {	-- Eranog
 					["crs"] = { 184972 },
@@ -591,7 +619,15 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(202010),	-- Primalist Warden's Bracers
+					i(202004),	-- Brawler's Earthen Cuirass [BoE]
+					i(201992),	-- Emissary's Flamewrought Seal [BoE]
+					i(202005),	-- Frozen Claw Mantle [BoE]
+					i(202008),	-- Galvanic Gaiters [BoE]
+					i(202006),	-- Greathelm of Horned Fury [BoE]
+					i(202009),	-- Lavamancer's Ceremonial Waistguard [BoE]
+					i(202003),	-- Primal Seeker's Leggings [BoE]
+					i(202010),	-- Primalist Warden's Bracers [BoE]
+					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
 				e(2480, {	-- Eranog
 					["crs"] = { 184972 },
@@ -858,7 +894,25 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(202010),	-- Primalist Warden's Bracers
+					-- Temp Timeline until we know
+					i(202004, {["timeline"] = { "added 10.0.5" }}),		-- Brawler's Earthen Cuirass [BoE]
+					i(202146, {["timeline"] = { "removed 10.0.5" }}),	-- Brawler's Earthen Cuirass [BoP]
+					i(201992, {["timeline"] = { "added 10.0.5" }}),		-- Emissary's Flamewrought Seal [BoE]
+					i(202148, {["timeline"] = { "removed 10.0.5" }}),	-- Emissary's Flamewrought Seal [BoP]
+					i(202005, {["timeline"] = { "added 10.0.5" }}),		-- Frozen Claw Mantle [BoE]
+					i(202145, {["timeline"] = { "removed 10.0.5" }}),	-- Frozen Claw Mantle [BoP]
+					i(202008, {["timeline"] = { "added 10.0.5" }}),		-- Galvanic Gaiters [BoE]
+					i(202150, {["timeline"] = { "removed 10.0.5" }}),	-- Galvanic Gaiters [BoP]
+					i(202006, {["timeline"] = { "added 10.0.5" }}),		-- Greathelm of Horned Fury [BoE]
+					i(202144, {["timeline"] = { "removed 10.0.5" }}),	-- Greathelm of Horned Fury [BoP]
+					i(202009, {["timeline"] = { "added 10.0.5" }}),		-- Lavamancer's Ceremonial Waistguard [BoE]
+					i(202151, {["timeline"] = { "removed 10.0.5" }}),	-- Lavamancer's Ceremonial Waistguard [BoP]
+					i(202003, {["timeline"] = { "added 10.0.5" }}),		-- Primal Seeker's Leggings [BoE]
+					i(202147, {["timeline"] = { "removed 10.0.5" }}),	-- Primal Seeker's Leggings [BoP]
+					i(202010, {["timeline"] = { "added 10.0.5" }}),		-- Primalist Warden's Bracers [BoE]
+					i(202149, {["timeline"] = { "removed 10.0.5" }}),	-- Primalist Warden's Bracers [BoP]
+					i(202007, {["timeline"] = { "added 10.0.5" }}),		-- Woven Stone Bracelets [BoE]
+					i(202143, {["timeline"] = { "removed 10.0.5" }}),	-- Woven Stone Bracelets [BoP]
 				}),
 				e(2480, {	-- Eranog
 					["crs"] = { 184972 },
@@ -1099,38 +1153,53 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	inst(1200, {	-- Vault of the Incarnates
-		q(72264),	-- 'Anicent Vault Artifact' first drop?
+		q(72264),	-- 'Anicent Vault Artifact' first drop per week
 		q(72612),	-- Volcanius (trash)
 		q(70076),	-- Eranog (N)
 		q(70085),	-- Eranog (N)
 		q(72265),	-- Eranog (N)
 		q(70093),	-- Eranog (H)
+		-- q(TODO),	-- Eranog (M)
 		q(72613),	-- Braekkas (trash)
 		q(72614),	-- Council Gauntlet (trash)
 		q(70080),	-- Terros (N)
 		q(70088),	-- Terros (N)
 		q(72273),	-- Terros (N)
 		q(70096),	-- Terros (H)
+		-- q(TODO),	-- Terros (M)
 		q(70077),	-- The Primal Council (N)
 		q(70086),	-- The Primal Council (N)
 		q(72271),	-- The Primal Council (N)
 		q(70094),	-- The Primal Council (H)
+		-- q(TODO),	-- The Primal Council (M)
 		q(72615),	-- Thondrozus (trash)
 		q(70078),	-- Dathea (N)
 		q(70087),	-- Dathea (N)
 		q(72272),	-- Dathea (N)
+		q(70095),	-- Dathea (H)
+		-- q(TODO),	-- Dathea (M)
 		q(72616),	-- Iskakx (trash)
 		q(72617),	-- Kaurdyth (trash)
 		q(70081),	-- Sennarth (N)
 		q(70089),	-- Sennarth (N)
 		q(72274),	-- Sennarth (N)
 		q(70097),	-- Sennarth (H)
+		-- q(TODO),	-- Sennarth (M)
 		q(70082),	-- Kurog Grimtotem (N)
 		q(70090),	-- Kurog Grimtotem (N)
 		q(72275),	-- Kurog Grimtotem (N)
+		q(70098),	-- Kurog Grimtotem (H)
+		-- q(TODO),	-- Kurog Grimtotem (M)
 		q(72618),	-- Broodguardian Ziruss (trash)
 		q(70083),	-- Broodkeeper Diurna (N)
 		q(70091),	-- Broodkeeper Diurna (N)
 		q(72276),	-- Broodkeeper Diurna (N)
+		-- q(TODO),	-- Broodkeeper Diurna (H)
+		-- q(TODO),	-- Broodkeeper Diurna (M)
+		q(70084),	-- Raszageth the Storm-Eater (N)
+		q(70092),	-- Raszageth the Storm-Eater (N)
+		q(72277),	-- Raszageth the Storm-Eater (N)
+		-- q(TODO),	-- Raszageth the Storm-Eater (H)
+		-- q(TODO),	-- Raszageth the Storm-Eater (M)
 	}),
 })));

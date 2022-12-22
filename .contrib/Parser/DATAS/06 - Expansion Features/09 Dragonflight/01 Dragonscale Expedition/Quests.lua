@@ -235,11 +235,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					{ 40.0, 67.5, OHNAHRAN_PLAINS },
 					{ 53.9, 50.7, THE_AZURE_SPAN },
 				},
-				["g"] = {
-					crit(1, {	-- A Mystery, Sealed
-						["achievementID"] = 16808,	-- Friend of the Dragon Isles
-					}),
-				},
 			}),
 				-- RENOWN 14 --
 			q(70819, {	-- Renowned Explorer's Armor
@@ -315,6 +310,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(197374),	-- Renewed Proto-Drake: Swept Horns (DM!)
 				},
 			}),
+				-- RENOWN 16 --
+			q(70814, {	-- Unlocking Magical Treasures
+				["description"] = "Requires Renown 16.",
+				["provider"] = { "n", 188265 },	-- Rae'ana
+				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
+				["g"] = {
+					sp(388264),	-- Magical Chests of the Dragon Isles
+				},
+			}),
+
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
 				["provider"] = { "o", 381669 },	-- Archivists' Request
@@ -376,6 +381,7 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(72756),	-- Triggered with 'Next Steps' (66128)
 		q(72039),	-- Triggered with 'Renowned Explorer's Armor' (70819)
 		q(72040),	-- Triggered with 'Deeper Mysteries of the Dragon Isles Drakes' (70809)
+		q(72041),	-- Triggered with 'Unlocking Magical Treasures' (70814)
 
 		-- Ensembles
 		q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor

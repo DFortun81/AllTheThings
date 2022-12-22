@@ -193,6 +193,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 		q(70221, {	-- Show Your Mettle
 			["provider"] = { "n", 192574 },	-- Thomas Bright
+			["isWeekly"] = true,
 			["coords"] = {
 				{ 60.2, 72.2, THE_WAKING_SHORES },
 				{ 71.7, 81.2, OHNAHRAN_PLAINS },
@@ -200,8 +201,25 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			["g"] = {
 				i(190456),	-- Artisan's Mettle
 			},
-			["isWeekly"] = true,
 		}),
+		-- Chap 0
+		q(72773, {	-- Learning Ingenuity
+			["provider"] = { "n", 196499 },	-- Therazal
+			["coord"] = { 50.2, 55.9, VALDRAKKEN },
+			["isBreadcrumb"] = true,	-- unconfirmed
+		}),
+		q(70180, {	-- Jump-Start? Jump-Starting!
+			["sourceQuests"] = { 72773 },	-- Learning Ingenuity
+			["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
+			["coord"] = { 84.2, 54.4, VALDRAKKEN },
+		}),
+		-- Chap 1
+		q(70845, {	-- In Tyr's Footsteeps
+			["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
+			["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+			["coord"] = { 84.3, 53.5, VALDRAKKEN },
+		}),
+		--
 		prof(ALCHEMY, {
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
@@ -215,77 +233,142 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(370714),	-- Transmute: Decay to Elements
 				},
 			}),
-			q(70355, {	-- To the Dragon Isles: Alchemy
+			q(70355, {	-- Dragon Isles Alchemy [A]
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
-					65444,	-- To the Dragon Isles! [H]
 				},
 				["provider"] = { "n", 191893 },	-- Zherrak
 				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
+				["races"] = ALLIANCE_ONLY,
 			}),
-			q(72245, {	-- To the Dragon Isles: Alchemy
+			q(72245, {	-- Dragon Isles Alchemy [H]
 				["sourceQuests"] = {
-					67700,	-- To The Dragon Isles! [A]
 					65444,	-- To the Dragon Isles! [H]
 				},
 				["provider"] = { "n", 198392 },	-- An'timon
 				["coord"] = { 76.2, 35.8, THE_WAKING_SHORES },
+				["races"] = HORDE_ONLY,
 			}),
 			q(67080, {	-- Artisan's Supply: Dragon's Alchemical Solution
-				["sourceQuests"] = { 70355 },	-- To the Dragon Isles: Alchemy
+				["sourceQuests"] = {
+					-- suspected... was able to pick up with only 72245 on horde
+					70355,	-- Dragon Isles Alchemy [A]
+					72245,	-- Dragon Isles Alchemy [H]
+				},
 				["provider"] = { "n", 191893 },	-- Zherrak
 				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
-				["cost"] = { { "i", 191570, 2 }, },	-- 2xDragon's Alchemical Solution
+				["cost"] = { { "i", 191570, 2 }, },	-- 2x Dragon's Alchemical Solution
 				["g"] = {
 					i(191462),	-- Hochenblume+++
 				},
 			}),
-			q(70247, {	-- Hidden Profession Master Alchemy
-				["name"] = "Hidden Profession Master: Alchemy",
-				["provider"] = { "n", 194829 },	-- Grigori Vialtry
-				["coord"] = { 60.9, 75.8, THE_WAKING_SHORES },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			q(74115, {	-- Inscription-Order: Alchemy
-				["name"] = "Inscription-Order: Alchemy",
-				["description"] = "Requires a crafting order from inscription.",
-				["provider"] = { "i", 194697 },	-- Draconic Treatise on Alchemy
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
 			q(70183, { -- Specialized Secrets: Alchemy
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			--[[q(66382, {	-- Weekly Alchemy Knowledgepoint #1
+			o(380590, {	-- Well Insulated Mug
+				["questID"] = 70289,
+				["coord"] = { 25.1, 73.3, THE_WAKING_SHORES },
+				["g"] = {
+					i(198685),	-- Well Insulated Mug
+				},
+			}),
+			o(380559, {	-- Frostforged Potion
+				["questID"] = 70274,
+				["coord"] = { 55.0, 81.0, THE_WAKING_SHORES },
+				["g"] = {
+					i(198663),	-- Frostforged Potion
+				},
+			}),
+			o(380457, {	-- Experimental Decay Cauldron
+				["questID"] = 70208,
+				["coord"] = { 16.4, 38.5, THE_AZURE_SPAN },
+				["g"] = {
+					i(198599),	-- Experimental Decay Sample
+				},
+			}),
+			o(380616, {	-- Small Basket of Firewater Powder
+				["questID"] = 70309,
+				["coord"] = { 67.0, 13.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(198712),	-- Firewater Powder Sample
+				},
+			}),
+			o(380611, {	-- Canteen of Suspicious Water
+				["questID"] = 70305,
+				["coord"] = { 79.2, 83.8, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198710),	-- Canteen of Suspicious Water
+				},
+			}),
+			o(380586, {	-- Mysterious Cauldrons
+				-- Interact with objects 380551, 380552, 380553
+				["description"] = "Grab and drop a Docile Cub in each of these, then you can collect the treasure.",
+				["questID"] = 70278,
+				["coord"] = { 55.2, 30.5, THALDRASZUS },
+				["g"] = {
+					i(201003),	-- Furry Gloop
+				},
+			}),
+			o(380605, {	-- Contraband Concoction
+				["description"] = "Hidden in some bushes, hard to see.",
+				["questID"] = 70301,
+				["coord"] = { 59.5, 38.4, THALDRASZUS },
+				["g"] = {
+					i(198697),	-- Contraband Concoction
+				},
+			}),
+			q(70247, {	-- Hidden Profession Master Alchemy
+				["name"] = "Hidden Profession Master: Alchemy",
+				["provider"] = { "n", 194829 },	-- Grigori Vialtry
+				["coord"] = { 60.9, 75.8, THE_WAKING_SHORES },
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(74108, {	-- Inscription Order: Alchemy
+				["name"] = "Inscription Order: Alchemy",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 194697 },	-- Draconic Treatise on Alchemy
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(66373, {	-- Weekly Alchemy Knowledgepoint #1
 				["name"] = "Weekly Alchemy Knowledgepoint #1",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["provider"] = { "i", 193891 },		-- Experimental Substance
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Alchemy Knowledgepoint #2
+			q(70511, {	-- Weekly Alchemy Knowledgepoint #2
 				["name"] = "Weekly Alchemy Knowledgepoint #2",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["provider"] = { "i", 198964 },		-- Elementious Splinter
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Alchemy Knowledgepoint #3
+			--[[q(TODO, {	-- Weekly Alchemy Knowledgepoint #3
 				["name"] = "Weekly Alchemy Knowledgepoint #3",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["provider"] = { "i", 198963 },		-- Decaying Phlegm
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),--]]
+			q(66374, {	-- Weekly Alchemy Knowledgepoint #4
+				["name"] = "Weekly Alchemy Knowledgepoint #4",
+				["provider"] = { "i", 193897 },		-- Reawakened Catalyst
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
 		}),
-		prof(BLACKSMITHING, {
+		prof(BLACKSMITHING, sharedData({
+			["requireSkill"] = BLACKSMITHING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -318,14 +401,22 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 				["provider"] = { "n", 192563 },	-- Kholmar Sunrunner
 				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
+				-- ["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
+			}),
+			q(70357, {	-- Dragon Isles Blacksmithing
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 192164 },	-- Gringot Coldsteel <Blacksmithing Trainer>
+				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
+				-- ["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
 			}),
 			q(66897, {	-- Fuel for the Forge
 				["description"] = "Requires 25 Skill.",
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
-				-- ["isWeekly"] = true,
-				-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? lol
+				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
 			}),
 			q(70235, {	-- Repair Bill
@@ -333,8 +424,43 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				-- ["isWeekly"] = true,
-				-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? lol
 				-- ["sourceQuest"] = ,
+			}),
+			q(70025, {	-- Artisan's Supply: Draconium Sickle
+				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
+				["qg"] = 192164,	-- Gringot Coldsteel
+				["requireSkill"] = BLACKSMITHING,
+				["cost"] = {{"i",191241,1}},	-- Draconium Sickle
+				-- ["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66517, { -- A New Source of Weapons
+				--["sourceQuests"] = {  },	-- Unknown
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["coord"] = { 36.8, 63.6, VALDRAKKEN },
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+				["isWeekly"] = true,
+				["g"] = {
+					i(198606),	-- Blacksmith's Writ
+				},
+			}),
+			q(70589, {	-- Blacksmithing Services Requested
+				["description"] = "Requires 25 Skill.",
+				--["sourceQuests"] = {  },	-- Unknown
+				["provider"] = { "n", 194026 },	-- Azley
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+				["isWeekly"] = true,
+			}),
+
+			q(70184, { -- Specialized Secrets: Blacksmithing
+				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+				["provider"] = { "n", 193110 },	-- Khadin
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
+				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
+				["isRepeatable"] = true,
+				["g"] = {
+					i(190456),	-- Artisan's Mettle
+				},
 			}),
 			o(380620, {	-- Ancient Spear Shards
 				["questID"] = 70313,
@@ -350,7 +476,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201005),	-- Curious Ingots
 				},
 			}),
-			o(380598, {	-- Singed Chest
+			o(380598, {	-- Molten Ingot
 				["questID"] = 70296,
 				["coord"] = { 35.6, 64.5, THE_WAKING_SHORES },
 				["g"] = {
@@ -364,75 +490,93 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201010),	-- Qalashi Weapon Diagram
 				},
 			}),
-			q(67221, {	-- A Head For Metal
-				["sourceQuests"] = { 66359 },	-- First Completion of 'Unlocking our Past' (Forgemaster Bazentus)
-				["coord"] = { 24.5, 60.9, THE_WAKING_SHORES },
-				["provider"] = { "n", 191194 },	-- Weaponsmith Mida
-				["isWeekly"] = true,
-				-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? lol
+			o(376657, {	-- Ancient Monument
+				["description"] = "Kill NPCs and loot the sword. If you receive no loot, check your mail!",
+				["questID"] = 70246,
+				["coord"] = { 22.3, 87.7, THE_WAKING_SHORES },
+				["crs"] = { 188648 },	-- Enchanted Bulwark
 				["g"] = {
-					i(194963),	-- Plans: Black Dragon Seared Alloy (RECIPE!)
+					i(201007),	-- Ancient Monument
 				},
 			}),
-			q(66517, { -- A New Source of Weapons
-				--["sourceQuests"] = {  },	-- Unknown
-				["provider"] = { "n", 191002 },	-- Dhurrel
-				["coord"] = { 36.8, 63.6, VALDRAKKEN },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+			o(380516, {	-- Glimmer of Wisdom
+				["description"] = "Craft a Primal Molten Alloy or a Frostfire Alloy next to the Dim Forge. A sparkle will appear in the deposit box, which you can click to grab the treasure.",
+				["sourceQuest"] = 70232, -- This triggers when crafting the Alloy, which makes the treasure appear.
+				["questID"] = 70230,
+				["coord"] = { 56.4, 19.5, THE_WAKING_SHORES },
 				["g"] = {
-					i(198606),	-- Blacksmith's Writ
+					i(198791),	-- Glimmer of Blacksmithing Wisdom
 				},
 			}),
-			q(70589, {	-- Blacksmithing Services Requested
-				["description"] = "Requires 25 Skill.",
-				--["sourceQuests"] = {  },	-- Unknown
-				["provider"] = { "n", 194026 },	-- Azley
-				["coord"] = { 35.6, 58.8, VALDRAKKEN },
-				["isWeekly"] = true,
+			o(380623, {	-- Spelltouched Tongs
+				["questID"] = 70314,
+				["coord"] = { 53.1, 66.1, THE_AZURE_SPAN },
+				["g"] = {
+					i(201011),	-- Spelltouched Tongs
+				},
 			}),
-			q(70250, {	-- Hidden Profession Master Blacksmith	-- bugged
+			o(380709, {	-- Falconer Gauntlet Drawings
+				["questID"] = 70353,
+				["coord"] = { 50.9, 66.5, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(201009),	-- Falconer Gauntlet Drawings
+				},
+			}),
+			o(380618, {	-- Draconic Flux
+				["questID"] = 70311,
+				["coord"] = { 52.2, 80.5, THALDRASZUS },
+				["g"] = {
+					i(201006),	-- Draconic Flux
+				},
+			}),
+			q(70250, {	-- Hidden Profession Master Blacksmith
 				["name"] = "Hidden Profession Master: Blacksmith",
 				["provider"] = { "n", 194836 },	-- Grekka Anvilsmash
 				["coord"] = { 43.2, 66.6, THE_WAKING_SHORES },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(74109, {	-- Inscription-Order: Blacksmith
-				["name"] = "Inscription-Order: Blacksmith",
-				["description"] = "Requires a crafting order from inscription.",
+			q(74109, {	-- Inscription Order: Blacksmith
+				["name"] = "Inscription Order: Blacksmith",
+				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 198454 },	-- Draconic Treatise on Blacksmith
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(70184, { -- Specialized Secrets: Blacksmithing
-				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
-				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
-				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
-				["isRepeatable"] = true,
-				["g"] = {
-					i(190456),	-- Artisan's Mettle
-				},
-			}),
-			q(66381, {	-- Weekly Blacksmith Knowledgepoint #1
-				["name"] = "Weekly Blacksmith Knowledgepoint #1",
+			q(66381, {	-- Weekly Blacksmithing Knowledgepoint #1
+				["name"] = "Weekly Blacksmithing Knowledgepoint #1",
 				["provider"] = { "i", 192131 },	-- Valdrakken Weapon Chain
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Blacksmith Knowledgepoint #2
-				["name"] = "Weekly Blacksmith Knowledgepoint #2",
+			q(66382, {	-- Weekly Blacksmithing Knowledgepoint #2
+				["name"] = "Weekly Blacksmithing Knowledgepoint #2",
 				["provider"] = { "i", 192132 },	-- Draconium Blade Sharpener
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(70513, {	-- Weekly Blacksmith Knowledgepoint #3
-				["name"] = "Weekly Blacksmith Knowledgepoint #3",
+			q(70513, {	-- Weekly Blacksmithing Knowledgepoint #3
+				["name"] = "Weekly Blacksmithing Knowledgepoint #3",
 				["provider"] = { "i", 198966 },	-- Molten Globule
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
+			--[[q(TODO, {	-- Weekly Blacksmithing Knowledgepoint #4
+				["name"] = "Weekly Blacksmithing Knowledgepoint #4",
+				["provider"] = { "i", 198965 },		-- Primeval Earth Fragment
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),--]]
+		})),
 		prof(COOKING, {
+			q(72251, {	-- Dragon Isles Cooking
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 193121 },	-- Head Chef Stacks
+				["coord"] = { 47.1, 82.7, THE_WAKING_SHORES },
+			}),
 			q(72250, {	-- Dragon Isles Cooking
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -491,56 +635,111 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 				["cost"] = { { "i", 201601, 2 }, },	-- 2xRuned Serevite Rod
 			}),
-			q(70251, {	-- Hidden Profession Master Enchanting
-				["name"] = "Hidden Profession Master: Enchanting",
-				["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
-				["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			q(74110, {	-- Inscription-Order: Enchanting
-				["name"] = "Inscription-Order: Enchanting",
-				["description"] = "Requires a crafting order from inscription.",
-				["provider"] = { "i", 194702 },	-- Draconic Treatise on Enchanting
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
 			q(70186, { -- Specialized Secrets: Enchanting
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			--[[q(70514, {	-- Weekly Enchanting Knowledgepoint #1
-				["altQuests"] = { 70514 },
-				["name"] = "Weekly Enchanting Knowledgepoint #1",
-				["provider"] = { "i", 198967 },		-- Primordial Aeather
-				["timeline"] = { ADDED_DF_REL },
+			o(380558, {	-- Enchanted Debris
+				["description"] = "Interact with the Disenchanted Broom, then follow it to the location of the treasure.",
+				["questID"] = 70272,
+				["coord"] = { 57.5, 58.5, THE_WAKING_SHORES },
+				["g"] = {
+					i(201012),	-- Enchanted Debris
+				},
+			}),
+			o(380643, {	-- Flashfrozen Scroll
+				["questID"] = 70320,
+				["coord"] = { 57.5, 83.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198798),	-- Flashfrozen Scroll
+				},
+			}),
+			o(380580, {	-- Lava-Infused Seed
+				["questID"] = 70283,
+				["coord"] = { 68.0, 26.8, THE_WAKING_SHORES },
+				["g"] = {
+					i(198675),	-- Lava-Infused Seed
+				},
+			}),
+			o(380600, {	-- Enriched Earthen Shard
+				["questID"] = 70298,
+				["coord"] = { 21.0, 45.0, THE_AZURE_SPAN },
+				["g"] = {
+					i(198694),	-- Enriched Earthen Shard
+				},
+			}),
+			o(380647, {	-- Forgotten Arcane Tome
+				["questID"] = 70336,
+				["coord"] = { 38.5, 59.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(198799),	-- Forgotten Arcane Tome
+				},
+			}),
+			o(380589, {	-- Faintly Enchanted Remains
+				["questID"] = 70290,
+				["coord"] = { 45.1, 61.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(201013),	-- Faintly Enchanted Remains
+				},
+			}),
+			o(380592, {	-- Stormbound Horn
+				["questID"] = 70291,
+				["coord"] = { 61.4, 67.6, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198689),	-- Stormbound Horn
+				},
+			}),
+			o(380652, {	-- Fractured Titanic Sphere
+				["questID"] = 70342,
+				["coord"] = { 59.9, 70.4, THALDRASZUS },
+				["g"] = {
+					i(198800),	-- Fractured Titanic Sphere
+				},
+			}),
+			q(70251, {	-- Hidden Profession Master Enchanting
+				["name"] = "Hidden Profession Master: Enchanting",
+				["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
+				["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(74110, {	-- Inscription Order: Enchanting
+				["name"] = "Inscription Order: Enchanting",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 194702 },	-- Draconic Treatise on Enchanting
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),--]]
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
 			q(70515, {	-- Weekly Enchanting Knowledgepoint #1
 				-- ["altQuests"] = { 70514 },
 				["name"] = "Weekly Enchanting Knowledgepoint #1",
 				["provider"] = { "i", 198968 },	-- Primalist Charm
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66377, {	-- Weekly Enchanting Knowledgepoint #2
 				["name"] = "Weekly Enchanting Knowledgepoint #2",
 				["provider"] = { "i", 193900 },	-- Prismatic Focusing Shard
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66378, {	-- Weekly Enchanting Knowledgepoint #3
 				["name"] = "Weekly Enchanting Knowledgepoint #3",
 				["provider"] = { "i", 193901 },	-- Primal Dust
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
+			--[[q(TODO, {	-- Weekly Enchanting Knowledgepoint #4
+				["name"] = "Weekly Enchanting Knowledgepoint #4",
+				["provider"] = { "i", 198967 },	-- Primordial Aether
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),--]]
 		}),
 		prof(ENGINEERING, {
 			filter(RECIPES, {
@@ -576,48 +775,88 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 190535 },	-- Quizla Blastcaps
 				["coord"] = { 75.9, 33.2, THE_WAKING_SHORES },
 			}),
-			q(70252, {	-- Hidden Profession Master Engineering
-				["name"] = "Hidden Profession Master: Engineering",
-				["provider"] = { "n", 194838 },	-- Frizz Buzzcrank
-				["coord"] = { 17.7, 21.6, THE_AZURE_SPAN },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+			q(70359, {	-- Dragon Isles Engineering
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 192165 },	-- Winnie Fingerspring <Engineering Trainer>
+				["coord"] = { 43.0, 66.5, THE_WAKING_SHORES },
 			}),
-			q(74111, {	-- Inscription-Order: Engineering
-				["name"] = "Inscription-Order: Engineering",
-				["description"] = "Requires a crafting order from inscription.",
-				["provider"] = { "i", 198510 },	-- Draconic Treatise on Engineering
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+			q(70030, {	-- Artisan's Supply: Quality-Assured Optics
+				["sourceQuests"] = {
+					72242,	-- Dragon Isles Engineering
+					70359,	-- Dragon Isles Engineering
+				},
+				["provider"] = { "n", 192165 },	-- Winnie Fingerspring <Engineering Trainer>
+				["coord"] = { 43.0, 66.5, THE_WAKING_SHORES },
+				["cost"] = { { "i", 198328, 1 }, },	-- 2xQuality-Assured Optics
 			}),
 			q(70187, { -- Specialized Secrets: Engineering
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = { { "i", 191784, 1 } },	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			o(380560, {	-- Disabled Tesla Coil
+				["description"] = "Click on the three exposed items to make the treasure appear.",
+				["questID"] = 70275,
+				["coord"] = { 49.1, 77.5, THE_WAKING_SHORES },
+				["g"] = {
+					i(198789),	-- Intact Coil Capacitor
+				},
+			}),
+			o(380571, {	-- Boomthyr Rocket
+				["description"] = "Interact with the Note next to the rocket, then gather the items in the surrounding area. You may need to leave and return to the area after gathering all objects for the treasure to be clickable after that.",
+				["questID"] = 70270,
+				["coord"] = { 56.0, 44.9, THE_WAKING_SHORES },
+				["g"] = {
+					i(201014),	-- Boomthyr Rocket
+				},
+			}),
+			q(70252, {	-- Hidden Profession Master Engineering
+				["name"] = "Hidden Profession Master: Engineering",
+				["provider"] = { "n", 194838 },	-- Frizz Buzzcrank
+				["coord"] = { 17.7, 21.6, THE_AZURE_SPAN },
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(74111, {	-- Inscription Order: Engineering
+				["name"] = "Inscription Order: Engineering",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 198510 },	-- Draconic Treatise on Engineering
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
 			q(66379, {	-- Weekly Engineering Knowledgepoint #1
 				["name"] = "Weekly Engineering Knowledgepoint #1",
 				["provider"] = { "i", 193902 },	-- Eroded Titan Gizmo
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66380, {	-- Weekly Engineering Knowledgepoint #2
 				["name"] = "Weekly Engineering Knowledgepoint #2",
 				["provider"] = { "i", 193903 },	-- Watcher Power Core
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			--[[q(66382, {	-- Weekly Engineering Knowledgepoint #3
+			q(70517, {	-- Weekly Engineering Knowledgepoint #3
 				["name"] = "Weekly Engineering Knowledgepoint #3",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["provider"] = { "i", 198970 },		-- Infinitely Attachable Pair o' Docks
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),--]]
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(70516, {	-- Weekly Engineering Knowledgepoint #4
+				["name"] = "Weekly Engineering Knowledgepoint #4",
+				["provider"] = { "i", 198969 },		-- Keeper's Mark
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
 		}),
 		prof(FISHING, {
 			q(72252, {	-- Dragon Isles Fishing [A]
@@ -648,13 +887,24 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(391089),	-- Refine Herbs+++
 				},
 			}),
-			q(70026, {	-- Artisan's Supply: Lava Beetles
-				--["sourceQuests"] = {  },	-- To the Dragon Isles:
+			q(70364, {	-- Dragon Isles Herbalism
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 192010 },	-- Szarostrasza <Herbalism Trainer>
+				["coord"] = { 57.4, 65.8, THE_WAKING_SHORES },
+			}),
+			q(72243, {	-- Dragon Isles Herbalism
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
 				["provider"] = { "n", 192549 },	-- Feilin Kuan
 				["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
 			}),
-			q(72243, {	-- Dragon Isles Herbalism
-				--["sourceQuests"] = { },	--
+			q(70026, {	-- Artisan's Supply: Lava Beetles
+				--["sourceQuests"] = {  },	-- To the Dragon Isles:
 				["provider"] = { "n", 192549 },	-- Feilin Kuan
 				["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
 			}),
@@ -662,24 +912,24 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Herbalism",
 				["provider"] = { "n", 194839 },	-- Hua Greenpaw
 				["coord"] = { 58.4, 50.0, OHNAHRAN_PLAINS },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			q(74107, {	-- Inscription-Order: Herbalism
-				["name"] = "Inscription-Order: Herbalism",
-				["description"] = "Requires a crafting order from inscription.",
-				["provider"] = { "i", 194704 },	-- Draconic Treatise on Herbalism
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70190, { -- Specialized Secrets: Herbalism
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
+			}),
+			q(74107, {	-- Inscription Order: Herbalism
+				["name"] = "Inscription Order: Herbalism",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 194704 },	-- Draconic Treatise on Herbalism
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(71857, {	-- Weekly Herbalism Knowledgepoint #1
 				["name"] = "Weekly Herbalism Knowledgepoint #1",
@@ -691,31 +941,31 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Weekly Herbalism Knowledgepoint #2",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(71859, {	-- Weekly Herbalism Knowledgepoint #3
 				["name"] = "Weekly Herbalism Knowledgepoint #3",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(71860, {	-- Weekly Herbalism Knowledgepoint #4
 				["name"] = "Weekly Herbalism Knowledgepoint #4",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(71861, {	-- Weekly Herbalism Knowledgepoint #5
 				["name"] = "Weekly Herbalism Knowledgepoint #5",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(71864, {	-- Weekly Herbalism Knowledgepoint #6
 				["name"] = "Weekly Herbalism Knowledgepoint #6",
 				["provider"] = { "i", 200678 },	-- Dreambloom
 				["repeatable"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		}),
 		prof(INSCRIPTION, {
@@ -744,6 +994,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(383548),	-- Scribe's Resplendent Quill
 				},
 			}),
+			q(70361, {	-- Dragon Isles Inscription
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 198125 },	-- Isarian Shadowplume <Inscription Trainer>
+				["coord"] = { 57.1, 58.2, THE_WAKING_SHORES },
+			}),
 			q(72244, {	-- Dragon Isles Inscription
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -752,61 +1010,125 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 198380 },	-- Journalist Jessamine Spitz
 				["coord"] = { 76.1, 35.5, THE_WAKING_SHORES },
 			}),
-			q(70254, {	-- Hidden Profession Master Inscription
-				["name"] = "Hidden Profession Master: Inscription",
-				["provider"] = { "n", 194840 },	-- Lydiara Whisperfeather
-				["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			q(74105, {	-- Inscription-Order: Inscription
-				["name"] = "Inscription-Order: Inscription",
-				["provider"] = { "i", 194699 },	-- Draconic Treatise on Inscription
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+			q(70031, {	-- Artisan's Supply: Chef's Smooth Rolling Pin
+				["sourceQuests"] = {
+					70361,	-- Dragon Isles Inscription
+					72244,	-- Dragon Isles Inscription
+				},
+				["provider"] = { "n", 198380 },	-- Journalist Jessamine Spitz
+				["coord"] = { 76.1, 35.5, THE_WAKING_SHORES },
+				["cost"] = { { "i", 191233, 1 }, },	-- 2xChef's Smooth Rolling Pin
 			}),
 			q(70188, { -- Specialized Secrets: Inscription
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = { {"i", 191784, 1 }, },	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			q(66944, {	-- Weekly Inscription Knowledgepoint #1
-				["name"] = "Weekly Inscription Knowledgepoint #1",
-			--	["provider"] = { "i", 198968 },	-- Primalist Charm
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+			o(380610, {	-- Pulsing Earth Rune
+				["questID"] = 70306,
+				["coord"] = { 67.9, 58.0, THE_WAKING_SHORES },
+				["g"] = {
+					i(198704),	-- Pulsing Earth Rune
+				},
 			}),
-			--[[q(70592, {	-- Weekly Inscription Knowledgepoint #2
-				["name"] = "Weekly Inscription Knowledgepoint #2",
-			--	["provider"] = { "i", 193900 },	-- Prismatic Focusing Shard
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+			o(380595, {	-- Frosted Parchment
+				["questID"] = 70293,
+				["coord"] = { 43.7, 30.9, THE_AZURE_SPAN },
+				["g"] = {
+					i(198686),	-- Frosted Parchment
+				},
 			}),
-			q(66382, {	-- Weekly Inscription Knowledgepoint #1
+			o(380601, {	-- Dusty Darkmoon Card
+				["questID"] = 70297,
+				["coord"] = { 46.2, 23.9, THE_AZURE_SPAN },
+				["g"] = {
+					i(198693),	-- Dusty Darkmoon Card
+				},
+			}),
+			o(380612, {	-- Sign Language Reference Sheet
+				["questID"] = 70307,
+				["coord"] = { 85.7, 25.2, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198703),	-- Sign Language Reference Sheet
+				},
+			}),
+			o(380567, {	-- Eight of Storms
+				--Interact with objects 380555, 380561, 380562, 380563, 380564, 380564, 380566, 380567
+				["description"] = "Speak to Siennagosa and offer to help putting her deck back together, then gather the cards in the proper order (Ace through Eight) to collect the treasure.",
+				["questID"] = 70287,
+				["coord"] = { 56.1, 40.9, THALDRASZUS },
+				["g"] = {
+					i(201015),	-- Counterfeit Darkmoon Deck
+				},
+			}),
+			o(380550, {	-- Forgetful Apprentice's Tome
+				["questID"] = 70264,
+				["coord"] = { 56.3, 41.2, THALDRASZUS },
+				["g"] = {
+					i(198659),	-- Forgetful Apprentice's Tome (1 of 2)
+				},
+			}),
+			o(380570, {	-- Curious Glyph
+				["description"] = "Interact with the glyph, cross the bridge and kill the neutral NPC at the end, then return to collect the treasure.",
+				["questID"] = 70248,
+				["coord"] = { 47.2, 40.1, THALDRASZUS },
+				["g"] = {
+					i(198659),	-- Forgetful Apprentice's Tome (1 of 2)
+				},
+			}),
+			o(380578, {	-- How to Train Your Whelpling
+				["description"] = "Collect the Pulsing Earth Rune first! Otherwise this treasure might erroneously contain the rune, and you will not be able to collect the proper treasure.",
+				["questID"] = 70281,
+				["coord"] = { 13.2, 63.7, VALDRAKKEN },
+				["g"] = {
+					i(198669),	-- How to Train Your Whelpling
+				},
+			}),
+			q(70254, {	-- Hidden Profession Master Inscription
+				["name"] = "Hidden Profession Master: Inscription",
+				["provider"] = { "n", 194840 },	-- Lydiara Whisperfeather
+				["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(74105, {	-- Inscription Order: Inscription
+				["name"] = "Inscription Order: Inscription",
+				["provider"] = { "i", 194699 },	-- Draconic Treatise on Inscription
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(70519, {	-- Weekly Inscription Knowledgepoint #1
 				["name"] = "Weekly Inscription Knowledgepoint #1",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["provider"] = { "i", 198972 },		-- Draconic Glamour
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Inscription Knowledgepoint #2
+			q(66375, {	-- Weekly Inscription Knowledgepoint #2
 				["name"] = "Weekly Inscription Knowledgepoint #2",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["provider"] = { "i", 193904 },		-- Phoenix Feather Quill
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Inscription Knowledgepoint #3
+			q(70518, {	-- Weekly Inscription Knowledgepoint #3
 				["name"] = "Weekly Inscription Knowledgepoint #3",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["provider"] = { "i", 198971 },		-- Curious Djaradin Rune
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),--]]
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(66376, {	-- Weekly Inscription Knowledgepoint #4
+				["name"] = "Weekly Inscription Knowledgepoint #4",
+				["provider"] = { "i", 193905 },		-- Iskaaran Trading Ledger
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
 		}),
 		prof(JEWELCRAFTING, {
 			filter(RECIPES, {
@@ -869,51 +1191,117 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(192845),	-- Vibrant Emerald+++
 				},
 			}),
-			q(70255, {	-- Hidden Profession Master Jewelcrafting
-				["name"] = "Hidden Profession Master: Jewelcrafting",
-				["provider"] = { "n", 194841 },	-- Pluutar
-				["coord"] = { 46.2, 40.8, THE_AZURE_SPAN },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			q(74112, {	-- Inscription-Order: Jewelcrafting
-				["name"] = "Inscription-Order: Jewelcrafting",
-				["description"] = "Requires a crafting order from inscription.",
-				["provider"] = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
 			q(70189, { -- Specialized Secrets: Jewelcrafting
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			o(380822, {	-- Igneous Gem
+				["description"] = "Click the three crystals on the nearby small islands (quickly), then return to collect the treasure.",
+				["questID"] = 70273,
+				["coord"] = { 33.9, 63.7, THE_WAKING_SHORES },
+				["g"] = {
+					i(201017),	-- Igneous Gem
+				},
+			}),
+			o(380591, {	-- Closely Guarded Shiny
+				["questID"] = 70292,
+				["coord"] = { 50.4, 45.1, THE_WAKING_SHORES },
+				["g"] = {
+					i(198687),	-- Closely Guarded Shiny
+				},
+			}),
+			o(380556, {	-- Harmonic Chest
+				["description"] = "Click the key next to the chest, then click the three crystals in the same lake. Return to the chest to collect the treasure.",
+				["questID"] = 70271,
+				["coord"] = { 44.6, 61.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(201016),	-- Harmonic Crystal Harmonizer
+				},
+			}),
+			o(380569, {	-- Crystalline Overgrowth
+				["questID"] = 70277,
+				["coord"] = { 45.01, 61.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198664),	-- Crystalline Overgrowth
+				},
+			}),
+			o(380577, {	-- Lofty Malygite
+				["questID"] = 70282,
+				["coord"] = { 25.2, 35.4, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198670),	-- Lofty Malygite
+				},
+			}),
+			o(380548, {	-- Forgotten Jewelry Box
+				["questID"] = 70263,
+				["coord"] = { 61.8, 13.0 , OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198657),	-- Forgotten Jewelry Box
+					i(198660),	-- Fragmented Key
+				},
+			}),
+			o(380545, {	-- Painter's Pretty Jewel
+				["description"] = "Inside the foilage of a lantern, very small! May also be bugged in War Mode.",
+				["questID"] = 70261,
+				["coord"] = { 56.9, 43.7, THALDRASZUS },
+				["g"] = {
+					i(198656),	-- Painter's Pretty Jewel
+				},
+			}),
+			o(380585, {	-- Erupted Alexstraszite Cluster
+				["questID"] = 70285,
+				["coord"] = { 59.8, 65.2, THALDRASZUS },
+				["g"] = {
+					i(198682),	-- Alexstraszite Cluster
+				},
+			}),
+			q(70255, {	-- Hidden Profession Master Jewelcrafting
+				["name"] = "Hidden Profession Master: Jewelcrafting",
+				["provider"] = { "n", 194841 },	-- Pluutar
+				["coord"] = { 46.2, 40.8, THE_AZURE_SPAN },
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(74112, {	-- Inscription Order: Jewelcrafting
+				["name"] = "Inscription Order: Jewelcrafting",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
 			q(70520, {	-- Weekly Jewelcrafting Knowledgepoint #1
 				["name"] = "Weekly Jewelcrafting Knowledgepoint #1",
-				["description"] = "1 out of 3 Weekly Jewelcrafting Knowledge Points.",
-				["provider"] = { "i", 198973 },	-- Incandescent Curio
+				["provider"] = { "i", 198973 },		-- Incandescent Curio
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			--[[
-			q(66382, {	-- Weekly Jewelcrafting Knowledgepoint #2
+			q(70521, {	-- Weekly Jewelcrafting Knowledgepoint #2
 				["name"] = "Weekly Jewelcrafting Knowledgepoint #2",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["provider"] = { "i", 198974 },		-- Elegantly Engraved Embellishment
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Jewelcrafting Knowledgepoint #3
+			q(66388, {	-- Weekly Jewelcrafting Knowledgepoint #3
 				["name"] = "Weekly Jewelcrafting Knowledgepoint #3",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["provider"] = { "i", 193909 },		-- Ancient Gem Fragments
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),--]]
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(66389, {	-- Weekly Jewelcrafting Knowledgepoint #4
+				["name"] = "Weekly Jewelcrafting Knowledgepoint #4",
+				["provider"] = { "i", 193907 },		-- Chipped Tyrstone
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
 		}),
 		prof(LEATHERWORKING, {
 			filter(RECIPES, {
@@ -951,11 +1339,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 192048 },	-- Deidre Flemmin
 				["coord"] = { 76.6, 34.7, THE_WAKING_SHORES },
 			}),
-			-- q(TODO, {    -- Dragon Isles Leatherworking
-			-- 	--["sourceQuests"] = {  },	-- Unknown
-			-- 	["provider"] = { "n", 192048 },    -- Deirdre Flemmin
-			-- 	["coord"] = { 76.6, 34.9, THE_WAKING_SHORES },
-			-- }),
+			--[[q(TODO, {    -- Dragon Isles Leatherworking
+			--["sourceQuests"] = {  },	-- Unknown
+			["provider"] = { "n", 192048 },    -- Deirdre Flemmin
+			["coord"] = { 76.6, 34.9, THE_WAKING_SHORES },
+			),--]]
 			q(69979, { -- A Worthy Hunt
 				["sourceQuests"] = { 69946 },	-- The Master of Their Craft
 				["provider"] = { "n", 193110 },	-- Khadin
@@ -967,56 +1355,103 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			q(70191, { -- Specialized Secrets: Leatherworking
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			o(380615, {	-- Poacher's Pack
+				["questID"] = 70308,
+				["coord"] = { 39.0, 86.0, THE_WAKING_SHORES },
+				["g"] = {
+					i(198711),	-- Poacher's Pack
+				},
+			}),
+			o(380554, {	-- Well-Danced Drum
+				["description"] = "Fix the drum by interacting with it, wait for the little Tuskarr to finish dancing, then you can loot the treasure.",
+				["questID"] = 70269,
+				["coord"] = { 12.5, 49.4, THE_AZURE_SPAN },
+				["g"] = {
+					i(201018),	-- Well-Danced Drum
+				},
+			}),
+			o(380579, {	-- Spare Djaradin Tools
+				["questID"] = 70280,
+				["coord"] = { 64.3, 25.4, THE_WAKING_SHORES },
+				["g"] = {
+					i(198667),	-- Spare Djaradin Tools
+				},
+			}),
+			o(380547, {	-- Decay-Infused Tanning Oil
+				["questID"] = 70266,
+				["coord"] = { 16.77, 38.83, THE_AZURE_SPAN },
+				["g"] = {
+					i(198658),	-- Decay-Infused Tanning Oil
+				},
+			}),
+			o(380587, {	-- Crate of Treated Hides
+				["questID"] = 70286,
+				["coord"] = { 57.5, 41.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198683),	-- Treated Hides
+				},
+			}),
+			o(380602, {	-- Wind-Blessed Hide
+				["questID"] = 70300,
+				["coord"] = { 86.4, 53.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198696),	-- Wind-Blessed Hide
+				},
+			}),
+			o(380593, {	-- Bag of Decayed Scales
+				["questID"] = 70294,
+				["coord"] = { 56.8, 30.5, THALDRASZUS },
+				["g"] = {
+					i(198690),	-- Decayed Scales
+				},
+			}),
 			q(70256, {	-- Hidden Profession Master Leatherworking
 				["name"] = "Hidden Profession Master: Leatherworking",
 				["provider"] = { "n", 194842 },	-- Erden
 				["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(74113, {	-- Inscription-Order: Leatherworking
-				["name"] = "Inscription-Order: Leatherworking",
-				["description"] = "Requires a crafting order from inscription.",
+			q(74113, {	-- Inscription Order: Leatherworking
+				["name"] = "Inscription Order: Leatherworking",
+				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194700 },	-- Draconic Treatise on Leatherworking
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			q(70308, {	-- Poachers Pack
-				["name"] = "Poachers Pack",
-				["provider"] = { "i", 198711 },	-- Poachers Pack
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70523, {	-- Weekly Leatherworking Knowledgepoint #1
 				["name"] = "Weekly Leatherworking Knowledgepoint #1",
-				["provider"] = { "i", 198976 },	-- Exceedingly Soft Skin
+				["provider"] = { "i", 198976 },		-- Exceedingly Soft Skin
+				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			--[[
-			q(66382, {	-- Weekly Leatherworking Knowledgepoint #2
+			q(70522, {	-- Weekly Leatherworking Knowledgepoint #2
 				["name"] = "Weekly Leatherworking Knowledgepoint #2",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["provider"] = { "i", 198975 },		-- Ossified Hide
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Leatherworking Knowledgepoint #3
+			q(66384, {	-- Weekly Leatherworking Knowledgepoint #3
 				["name"] = "Weekly Leatherworking Knowledgepoint #3",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
+				["provider"] = { "i", 193910 },		-- Molten Dragon Scales
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),--]]
-			q(70269, {	-- Well-Danced Drum
-				["name"] = "Well-Danced Drum",
-				["provider"] = { "i", 201018 },	-- Well-Danced Drum
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(66385, {	-- Weekly Leatherworking Knowledgepoint #4
+				["name"] = "Weekly Leatherworking Knowledgepoint #4",
+				["provider"] = { "i", 193913 },		-- Preserved Animal Parts
+				["timeline"] = { ADDED_DF_REL },
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		}),
 		prof(MINING, {
@@ -1049,50 +1484,61 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Mining",
 				["provider"] = { "n", 194843 },	-- Bridgette Holdug
 				["coord"] = { 61.4, 76.9, THALDRASZUS },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(74106, {		-- Inscription-Order: Mining
-				["name"] = "Inscription-Order: Mining",
-				["description"] = "Requires a crafting order from inscription.",
-				["provider"] = { "i", 194708 },	-- Draconic Treatise on Mining
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			q(70192, { -- Specialized Secrets: Mining
+						q(70192, { -- Specialized Secrets: Mining
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			-- TODO: weekly tracking
-			-- 5 weekly for 'Iridescent Ore Fragments'
-			-- 1 weekly for 'Iridescent Ore'
-			-- 1 weekly for 'Heated Ore Sample / Unyielding Stone Chunk'
-			-- q(TODO, {	-- Weekly Mining Knowledgepoint #1
-			-- 	["name"] = "Weekly Mining Knowledgepoint #1",
-			-- 	["provider"] = { "i", 202011 },	-- Elementally Charged Stone
-			-- 	["isWeekly"] = true,
-			-- 	["collectible"] = true,	-- Dont remove until we have proper tracking
-			-- }),
-			--[[
-			q(66382, {	-- Weekly Mining Knowledgepoint #2
-				["name"] = "Weekly Mining Knowledgepoint #2",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
-				["timeline"] = { ADDED_DF_REL },
+			q(74106, {		-- Inscription Order: Mining
+				["name"] = "Inscription Order: Mining",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 194708 },	-- Draconic Treatise on Mining
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Mining Knowledgepoint #3
-				["name"] = "Weekly Mining Knowledgepoint #3",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
-				["timeline"] = { ADDED_DF_REL },
+			q(72160, {	-- Weekly Mining Knowledgepoint #1
+				["name"] = "Weekly Mining Knowledgepoint #1",
+				["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),--]]
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(72161, {	-- Weekly Mining Knowledgepoint #2
+				["name"] = "Weekly Mining Knowledgepoint #2",
+				["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(72162, {	-- Weekly Mining Knowledgepoint #3
+				["name"] = "Weekly Mining Knowledgepoint #3",
+				["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(72163, {	-- Weekly Mining Knowledgepoint #4
+				["name"] = "Weekly Mining Knowledgepoint #4",
+				["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(72164, {	-- Weekly Mining Knowledgepoint #5
+				["name"] = "Weekly Mining Knowledgepoint #5",
+				["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(72165, {	-- Weekly Mining Knowledgepoint #6
+				["name"] = "Weekly Mining Knowledgepoint #6",
+				["provider"] = { "i", 201301 },	-- Iridescent Ore
+				["repeatable"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
 		}),
 		prof(SKINNING, {
 			filter(RECIPES, {
@@ -1136,56 +1582,61 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Skinning",
 				["provider"] = { "n", 194844 },	-- Zenzi
 				["coord"] = { 73.3, 69.7, THE_WAKING_SHORES },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70193, { -- Specialized Secrets: Skinning
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			q(74114, {	-- Inscription Order: Skinning
+				["name"] = "Inscription Order: Skinning",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 201023 },	-- Draconic Treatise on Skinning
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
 			q(70381, {	-- Weekly Skinning Knowledgepoint #1
 				["name"] = "Weekly Skinning Knowledgepoint #1",
-				["provider"] = { "i", 198837 },		-- Curious Hide Scraps
-				["timeline"] = { ADDED_DF_REL },
+				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			--[[ Missing quest ID
-			q(74115, {		-- Inscription-Order: Skinning
-				["name"] = "Inscription-Order: Skinning",
-				["provider"] = { "i", 201023 },		-- Draconic Treatise on Skinning
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["description"] = "Requires a crafting order from inscription.",
-				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),
-			--]]
-			--[[q(66382, {	-- Weekly Skinning Knowledgepoint #1
-				["name"] = "Weekly Skinning Knowledgepoint #1",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),
-			q(66382, {	-- Weekly Skinning Knowledgepoint #2
+			q(70382, {	-- Weekly Skinning Knowledgepoint #2
 				["name"] = "Weekly Skinning Knowledgepoint #2",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
-				["timeline"] = { ADDED_DF_REL },
+				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(66382, {	-- Weekly Skinning Knowledgepoint #3
+			q(70383, {	-- Weekly Skinning Knowledgepoint #3
 				["name"] = "Weekly Skinning Knowledgepoint #3",
-				["provider"] = { "i", 192132 },		-- Draconium Blade Sharpener
-				["timeline"] = { ADDED_DF_REL },
+				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
-			}),--]]
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(70384, {	-- Weekly Skinning Knowledgepoint #4
+				["name"] = "Weekly Skinning Knowledgepoint #4",
+				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(70385, {	-- Weekly Skinning Knowledgepoint #5
+				["name"] = "Weekly Skinning Knowledgepoint #5",
+				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(70389, {	-- Weekly Skinning Knowledgepoint #6
+				["name"] = "Weekly Skinning Knowledgepoint #6",
+				["provider"] = { "i", 198841 },	-- Large Sample of Curious Hide
+				["repeatable"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
 		}),
 		prof(TAILORING, {
 			filter(RECIPES, {
@@ -1224,56 +1675,112 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 61.4, 70.0, THE_WAKING_SHORES },
 				["cost"] = { { "i", 193497, 1 }, },	-- 2xSurveyor's Cloth Bands
 			}),
-			q(70260, {	-- Hidden Profession Master Tailoring
-				["name"] = "Hidden Profession Master: Tailoring",
-				["description"] = "Above the Rostrum of Transformation, on a ledge.",
-				["provider"] = { "n", 194845 },	-- Elysa Raywinder
-				["coord"] = { 27.9,45.6, VALDRAKKEN },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			q(74115, {	-- Inscription-Order: Tailoring
-				["name"] = "Inscription-Order: Tailoring",
-				["description"] = "Requires a crafting order from inscription.",
-				["provider"] = { "i", 194698 },	-- Draconic Treatise on Tailoring
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
-			}),
-			q(70194, { -- Specialized Secrets: Tailoring
+			q(70194, {	-- Specialized Secrets: Tailoring
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			o(380607, {	-- Itinerant Singed Fabric
+				["questID"] = 70304,
+				["coord"] = { 24.9, 69.7, THE_WAKING_SHORES },
+				["g"] = {
+					i(198702),	-- Itinerant Singed Fabric
+				},
+			}),
+			o(380604, {	-- Mysterious Banner
+				["questID"] = 70302,
+				["coord"] = { 74.7, 37.9, THE_WAKING_SHORES },
+				["g"] = {
+					i(198699),	-- Mysterious Banner
+				},
+			}),
+			o(380583, {	-- Decaying Brackenhide Blanket
+				["questID"] = 70284,
+				["coord"] = { 16.2, 38.8, THE_AZURE_SPAN },
+				["g"] = {
+					i(198680),	-- Decaying Brackenhide Blanket
+				},
+			}),
+			o(380549, {	-- Intriguing Bolt of Blue Cloth
+				["questID"] = 70267,
+				["coord"] = { 40.7, 54.5, THE_AZURE_SPAN },
+				["g"] = {
+					i(198662),	-- Intriguing Bolt of Blue Cloth
+				},
+			}),
+			o(380597, {	-- Battle Hardened Centaur Carpet
+				["questID"] = 70295,
+				["coord"] = { 35.3, 40.1, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198692),	-- Noteworthy Scrap of Carpet
+				},
+			}),
+			o(380608, {	-- Silky Surprise
+				["description"] = "Interact with the Catnip Frond, gather 5 Catnip Leaves and throw them at the Playful Prowler. Then the treasure will appear.",
+				["questID"] = 70303,
+				["coord"] = { 66.1, 52.9, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(201020),	-- Silky Surprise
+				},
+			}),
+			o(380763, {	-- Ancient Dragonweave Loom
+				["description"] = "Interact with the loom and complete the minigame to be awared this treasure.",
+				["questID"] = 70372,
+				["coord"] = { 58.6, 45.8, THALDRASZUS },
+				["g"] = {
+					i(201019),	-- Ancient Dragonweave Bolt
+				},
+			}),
+			o(380588, {	-- Miniature Bronze Dragonflight Banner
+				["questID"] = 70288,
+				["coord"] = { 58.6, 45.8, THALDRASZUS },
+				["g"] = {
+					i(198684),	-- Miniature Bronze Dragonflight Banner
+				},
+			}),
+			q(70260, {	-- Hidden Profession Master Tailoring
+				["name"] = "Hidden Profession Master: Tailoring",
+				["description"] = "Above the Rostrum of Transformation, on a ledge.",
+				["provider"] = { "n", 194845 },	-- Elysa Raywinder
+				["coord"] = { 27.9,45.6, VALDRAKKEN },
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(74115, {	-- Inscription Order: Tailoring
+				["name"] = "Inscription Order: Tailoring",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 194698 },	-- Draconic Treatise on Tailoring
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
 			q(66386, {	-- Weekly Tailoring Knowledgepoint #1
 				["name"] = "Weekly Tailoring Knowledgepoint #1",
 				["provider"] = { "i", 193898 },	-- Umbral Bone Needle
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66387, {	-- Weekly Tailoring Knowledgepoint #2
 				["name"] = "Weekly Tailoring Knowledgepoint #2",
 				["provider"] = { "i", 193899 },	-- Primalweave Spindle
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70524, {	-- Weekly Tailoring Knowledgepoint #3
 				["name"] = "Weekly Tailoring Knowledgepoint #3",
 				["provider"] = { "i", 198977 },	-- Ohn'arhan Weave
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(70525, {	-- Weekly Tailoring Knowledgepoint #4
+				["name"] = "Weekly Tailoring Knowledgepoint #4",
+				["provider"] = { "i", 198978  },	-- Stupidly Effective Stitchery
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		}),
 	}),
 })));
-
-
---TODO: should we organize this section differently with the HQTs? There's going to be a million of them...
-root("HiddenQuestTriggers", m(DRAGON_ISLES, {
-	m(VALDRAKKEN, {
-		q(71705),	-- When I craft item 193388 first time, leatherworking. But may due to / First time/ getting artisans mettle?
-	}),
-}));
