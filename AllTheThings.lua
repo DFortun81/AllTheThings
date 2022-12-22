@@ -6700,7 +6700,7 @@ local function AttachTooltipSearchResults(self, lineNumber, search, method, ...)
 end
 
 -- Map Information Lib
-(function()
+do
 local math_floor, C_SuperTrack = math.floor, C_SuperTrack;
 local __TomTomWaypointCacheIndexY = { __index = function(t, y)
 	local o = {};
@@ -6717,10 +6717,11 @@ local __TomTomWaypointCache = setmetatable({}, { __index = function(t, mapID)
 	rawset(t, mapID, o);
 	return o;
 end });
-local __TomTomWaypointFirst;
+local __TomTomWaypointFirst, __TomTomWaypointCount;
 local function AddTomTomWaypointCache(coord, group)
 	local mapID = coord[3];
 	if mapID then
+		__TomTomWaypointCount = __TomTomWaypointCount + 1;
 		__TomTomWaypointCache[mapID][math_floor(coord[1] * 10)][math_floor(coord[2] * 10)][group.key .. ":" .. group[group.key]] = group;
 	else
 		-- coord[3] not existing is checked by Parser and shouldn't ever happen
@@ -6752,14 +6753,12 @@ local function AddTomTomWaypointInternal(group, depth)
 		if TomTom then
 			-- always plot directly clicked otherwise don't plot saved or inaccessible groups
 			if depth == 0 or (not group.saved and not group.missingSourceQuests) then
-				if group.coords or group.coord then
-					if group.coords then
-						for _,coord in ipairs(group.coords) do
-							AddTomTomWaypointCache(coord, group);
-						end
+				if group.coords then
+					for _,coord in ipairs(group.coords) do
+						AddTomTomWaypointCache(coord, group);
 					end
-					if group.coord then AddTomTomWaypointCache(group.coord, group); end
 				end
+				if group.coord then AddTomTomWaypointCache(group.coord, group); end
 			end
 		elseif C_SuperTrack then
 			-- always plot directly clicked or first available waypoint otherwise don't plot saved or inaccessible groups
@@ -6780,8 +6779,26 @@ end
 AddTomTomWaypoint = function(group)
 	if TomTom or C_SuperTrack then
 		__TomTomWaypointFirst = true;
+		__TomTomWaypointCount = 0;
 		wipe(__TomTomWaypointCache);
 		AddTomTomWaypointInternal(group, 0);
+		-- also check for first coord(s) on parent chain if no coords found
+		if __TomTomWaypointCount == 0 then
+			local parent = group.sourceParent or group.parent;
+			while parent do
+				if parent.coords then
+					for _,coord in ipairs(parent.coords) do
+						AddTomTomWaypointCache(coord, parent);
+					end
+					break;
+				end
+				if parent.coord then
+					AddTomTomWaypointCache(parent.coord, parent);
+					break;
+				end
+				parent = parent.sourceParent or parent.parent;
+			end
+		end
 		if TomTom then
 			local xnormal;
 			for mapID,c in pairs(__TomTomWaypointCache) do
@@ -6909,12 +6926,17 @@ AddTomTomWaypoint = function(group)
 		end
 		if C_SuperTrack and group.questID and C_QuestLog.IsOnQuest(group.questID) then
 			C_SuperTrack.SetSuperTrackedQuestID(group.questID);
+			return;
+		end
+		if __TomTomWaypointCount == 0 then
+			app.print("No known coordinates for",group.text);
 		end
 	else
 		app.print("You must have TomTom installed to plot coordinates.");
 	end
 end
-end)();
+end	-- Map Information Lib
+
 -- Populates/replaces data within a questObject for displaying in a row
 local function PopulateQuestObject(questObject)
 	-- cannot do anything on a missing object or questID
