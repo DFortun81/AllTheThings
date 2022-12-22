@@ -328,42 +328,42 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Alchemy",
 				["provider"] = { "n", 194829 },	-- Grigori Vialtry
 				["coord"] = { 60.9, 75.8, THE_WAKING_SHORES },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(74108, {	-- Inscription Order: Alchemy
 				["name"] = "Inscription Order: Alchemy",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194697 },	-- Draconic Treatise on Alchemy
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66373, {	-- Weekly Alchemy Knowledgepoint #1
 				["name"] = "Weekly Alchemy Knowledgepoint #1",
 				["provider"] = { "i", 193891 },		-- Experimental Substance
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70511, {	-- Weekly Alchemy Knowledgepoint #2
 				["name"] = "Weekly Alchemy Knowledgepoint #2",
 				["provider"] = { "i", 198964 },		-- Elementious Splinter
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			--[[q(TODO, {	-- Weekly Alchemy Knowledgepoint #3
 				["name"] = "Weekly Alchemy Knowledgepoint #3",
 				["provider"] = { "i", 198963 },		-- Decaying Phlegm
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),--]]
 			q(66374, {	-- Weekly Alchemy Knowledgepoint #4
 				["name"] = "Weekly Alchemy Knowledgepoint #4",
 				["provider"] = { "i", 193897 },		-- Reawakened Catalyst
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		}),
 		prof(BLACKSMITHING, sharedData({
@@ -438,7 +438,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				--["sourceQuests"] = {  },	-- Unknown
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.8, 63.6, VALDRAKKEN },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				["isWeekly"] = true,
 				["g"] = {
 					i(198606),	-- Blacksmith's Writ
@@ -533,39 +533,39 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Blacksmith",
 				["provider"] = { "n", 194836 },	-- Grekka Anvilsmash
 				["coord"] = { 43.2, 66.6, THE_WAKING_SHORES },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(74109, {	-- Inscription Order: Blacksmith
 				["name"] = "Inscription Order: Blacksmith",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 198454 },	-- Draconic Treatise on Blacksmith
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66381, {	-- Weekly Blacksmithing Knowledgepoint #1
 				["name"] = "Weekly Blacksmithing Knowledgepoint #1",
 				["provider"] = { "i", 192131 },	-- Valdrakken Weapon Chain
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66382, {	-- Weekly Blacksmithing Knowledgepoint #2
 				["name"] = "Weekly Blacksmithing Knowledgepoint #2",
 				["provider"] = { "i", 192132 },	-- Draconium Blade Sharpener
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70513, {	-- Weekly Blacksmithing Knowledgepoint #3
 				["name"] = "Weekly Blacksmithing Knowledgepoint #3",
 				["provider"] = { "i", 198966 },	-- Molten Globule
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			--[[q(TODO, {	-- Weekly Blacksmithing Knowledgepoint #4
 				["name"] = "Weekly Blacksmithing Knowledgepoint #4",
 				["provider"] = { "i", 198965 },		-- Primeval Earth Fragment
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),--]]
 		})),
 		prof(COOKING, {
@@ -706,39 +706,39 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Enchanting",
 				["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
 				["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(74110, {	-- Inscription Order: Enchanting
 				["name"] = "Inscription Order: Enchanting",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194702 },	-- Draconic Treatise on Enchanting
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70515, {	-- Weekly Enchanting Knowledgepoint #1
 				-- ["altQuests"] = { 70514 },
 				["name"] = "Weekly Enchanting Knowledgepoint #1",
 				["provider"] = { "i", 198968 },	-- Primalist Charm
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66377, {	-- Weekly Enchanting Knowledgepoint #2
 				["name"] = "Weekly Enchanting Knowledgepoint #2",
 				["provider"] = { "i", 193900 },	-- Prismatic Focusing Shard
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66378, {	-- Weekly Enchanting Knowledgepoint #3
 				["name"] = "Weekly Enchanting Knowledgepoint #3",
 				["provider"] = { "i", 193901 },	-- Primal Dust
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			--[[q(TODO, {	-- Weekly Enchanting Knowledgepoint #4
 				["name"] = "Weekly Enchanting Knowledgepoint #4",
 				["provider"] = { "i", 198967 },	-- Primordial Aether
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),--]]
 		}),
 		prof(ENGINEERING, {
@@ -822,40 +822,40 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Engineering",
 				["provider"] = { "n", 194838 },	-- Frizz Buzzcrank
 				["coord"] = { 17.7, 21.6, THE_AZURE_SPAN },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(74111, {	-- Inscription Order: Engineering
 				["name"] = "Inscription Order: Engineering",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 198510 },	-- Draconic Treatise on Engineering
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66379, {	-- Weekly Engineering Knowledgepoint #1
 				["name"] = "Weekly Engineering Knowledgepoint #1",
 				["provider"] = { "i", 193902 },	-- Eroded Titan Gizmo
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66380, {	-- Weekly Engineering Knowledgepoint #2
 				["name"] = "Weekly Engineering Knowledgepoint #2",
 				["provider"] = { "i", 193903 },	-- Watcher Power Core
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70517, {	-- Weekly Engineering Knowledgepoint #3
 				["name"] = "Weekly Engineering Knowledgepoint #3",
 				["provider"] = { "i", 198970 },		-- Infinitely Attachable Pair o' Docks
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70516, {	-- Weekly Engineering Knowledgepoint #4
 				["name"] = "Weekly Engineering Knowledgepoint #4",
 				["provider"] = { "i", 198969 },		-- Keeper's Mark
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		}),
 		prof(FISHING, {
@@ -912,7 +912,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Herbalism",
 				["provider"] = { "n", 194839 },	-- Hua Greenpaw
 				["coord"] = { 58.4, 50.0, OHNAHRAN_PLAINS },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70190, { -- Specialized Secrets: Herbalism
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
@@ -929,7 +929,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194704 },	-- Draconic Treatise on Herbalism
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(71857, {	-- Weekly Herbalism Knowledgepoint #1
 				["name"] = "Weekly Herbalism Knowledgepoint #1",
@@ -941,31 +941,31 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Weekly Herbalism Knowledgepoint #2",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(71859, {	-- Weekly Herbalism Knowledgepoint #3
 				["name"] = "Weekly Herbalism Knowledgepoint #3",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(71860, {	-- Weekly Herbalism Knowledgepoint #4
 				["name"] = "Weekly Herbalism Knowledgepoint #4",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(71861, {	-- Weekly Herbalism Knowledgepoint #5
 				["name"] = "Weekly Herbalism Knowledgepoint #5",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(71864, {	-- Weekly Herbalism Knowledgepoint #6
 				["name"] = "Weekly Herbalism Knowledgepoint #6",
 				["provider"] = { "i", 200678 },	-- Dreambloom
 				["repeatable"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		}),
 		prof(INSCRIPTION, {
@@ -1093,41 +1093,41 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Inscription",
 				["provider"] = { "n", 194840 },	-- Lydiara Whisperfeather
 				["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(74105, {	-- Inscription Order: Inscription
 				["name"] = "Inscription Order: Inscription",
 				["provider"] = { "i", 194699 },	-- Draconic Treatise on Inscription
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70519, {	-- Weekly Inscription Knowledgepoint #1
 				["name"] = "Weekly Inscription Knowledgepoint #1",
 				["provider"] = { "i", 198972 },		-- Draconic Glamour
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66375, {	-- Weekly Inscription Knowledgepoint #2
 				["name"] = "Weekly Inscription Knowledgepoint #2",
 				["provider"] = { "i", 193904 },		-- Phoenix Feather Quill
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70518, {	-- Weekly Inscription Knowledgepoint #3
 				["name"] = "Weekly Inscription Knowledgepoint #3",
 				["provider"] = { "i", 198971 },		-- Curious Djaradin Rune
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66376, {	-- Weekly Inscription Knowledgepoint #4
 				["name"] = "Weekly Inscription Knowledgepoint #4",
 				["provider"] = { "i", 193905 },		-- Iskaaran Trading Ledger
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		}),
 		prof(JEWELCRAFTING, {
@@ -1265,42 +1265,42 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Jewelcrafting",
 				["provider"] = { "n", 194841 },	-- Pluutar
 				["coord"] = { 46.2, 40.8, THE_AZURE_SPAN },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(74112, {	-- Inscription Order: Jewelcrafting
 				["name"] = "Inscription Order: Jewelcrafting",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70520, {	-- Weekly Jewelcrafting Knowledgepoint #1
 				["name"] = "Weekly Jewelcrafting Knowledgepoint #1",
 				["provider"] = { "i", 198973 },		-- Incandescent Curio
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70521, {	-- Weekly Jewelcrafting Knowledgepoint #2
 				["name"] = "Weekly Jewelcrafting Knowledgepoint #2",
 				["provider"] = { "i", 198974 },		-- Elegantly Engraved Embellishment
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66388, {	-- Weekly Jewelcrafting Knowledgepoint #3
 				["name"] = "Weekly Jewelcrafting Knowledgepoint #3",
 				["provider"] = { "i", 193909 },		-- Ancient Gem Fragments
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66389, {	-- Weekly Jewelcrafting Knowledgepoint #4
 				["name"] = "Weekly Jewelcrafting Knowledgepoint #4",
 				["provider"] = { "i", 193907 },		-- Chipped Tyrstone
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		}),
 		prof(LEATHERWORKING, {
@@ -1416,42 +1416,42 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Leatherworking",
 				["provider"] = { "n", 194842 },	-- Erden
 				["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(74113, {	-- Inscription Order: Leatherworking
 				["name"] = "Inscription Order: Leatherworking",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194700 },	-- Draconic Treatise on Leatherworking
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70523, {	-- Weekly Leatherworking Knowledgepoint #1
 				["name"] = "Weekly Leatherworking Knowledgepoint #1",
 				["provider"] = { "i", 198976 },		-- Exceedingly Soft Skin
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70522, {	-- Weekly Leatherworking Knowledgepoint #2
 				["name"] = "Weekly Leatherworking Knowledgepoint #2",
 				["provider"] = { "i", 198975 },		-- Ossified Hide
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66384, {	-- Weekly Leatherworking Knowledgepoint #3
 				["name"] = "Weekly Leatherworking Knowledgepoint #3",
 				["provider"] = { "i", 193910 },		-- Molten Dragon Scales
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66385, {	-- Weekly Leatherworking Knowledgepoint #4
 				["name"] = "Weekly Leatherworking Knowledgepoint #4",
 				["provider"] = { "i", 193913 },		-- Preserved Animal Parts
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
-				["collectible"] = true,		-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		}),
 		prof(MINING, {
@@ -1484,7 +1484,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Mining",
 				["provider"] = { "n", 194843 },	-- Bridgette Holdug
 				["coord"] = { 61.4, 76.9, THALDRASZUS },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 						q(70192, { -- Specialized Secrets: Mining
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
@@ -1501,7 +1501,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194708 },	-- Draconic Treatise on Mining
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(72160, {	-- Weekly Mining Knowledgepoint #1
 				["name"] = "Weekly Mining Knowledgepoint #1",
@@ -1513,31 +1513,31 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Weekly Mining Knowledgepoint #2",
 				["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(72162, {	-- Weekly Mining Knowledgepoint #3
 				["name"] = "Weekly Mining Knowledgepoint #3",
 				["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(72163, {	-- Weekly Mining Knowledgepoint #4
 				["name"] = "Weekly Mining Knowledgepoint #4",
 				["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(72164, {	-- Weekly Mining Knowledgepoint #5
 				["name"] = "Weekly Mining Knowledgepoint #5",
 				["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(72165, {	-- Weekly Mining Knowledgepoint #6
 				["name"] = "Weekly Mining Knowledgepoint #6",
 				["provider"] = { "i", 201301 },	-- Iridescent Ore
 				["repeatable"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		}),
 		prof(SKINNING, {
@@ -1582,7 +1582,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Skinning",
 				["provider"] = { "n", 194844 },	-- Zenzi
 				["coord"] = { 73.3, 69.7, THE_WAKING_SHORES },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70193, { -- Specialized Secrets: Skinning
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
@@ -1599,7 +1599,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 201023 },	-- Draconic Treatise on Skinning
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70381, {	-- Weekly Skinning Knowledgepoint #1
 				["name"] = "Weekly Skinning Knowledgepoint #1",
@@ -1611,31 +1611,31 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Weekly Skinning Knowledgepoint #2",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70383, {	-- Weekly Skinning Knowledgepoint #3
 				["name"] = "Weekly Skinning Knowledgepoint #3",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70384, {	-- Weekly Skinning Knowledgepoint #4
 				["name"] = "Weekly Skinning Knowledgepoint #4",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70385, {	-- Weekly Skinning Knowledgepoint #5
 				["name"] = "Weekly Skinning Knowledgepoint #5",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70389, {	-- Weekly Skinning Knowledgepoint #6
 				["name"] = "Weekly Skinning Knowledgepoint #6",
 				["provider"] = { "i", 198841 },	-- Large Sample of Curious Hide
 				["repeatable"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		}),
 		prof(TAILORING, {
@@ -1748,38 +1748,38 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Above the Rostrum of Transformation, on a ledge.",
 				["provider"] = { "n", 194845 },	-- Elysa Raywinder
 				["coord"] = { 27.9,45.6, VALDRAKKEN },
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(74115, {	-- Inscription Order: Tailoring
 				["name"] = "Inscription Order: Tailoring",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194698 },	-- Draconic Treatise on Tailoring
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66386, {	-- Weekly Tailoring Knowledgepoint #1
 				["name"] = "Weekly Tailoring Knowledgepoint #1",
 				["provider"] = { "i", 193898 },	-- Umbral Bone Needle
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(66387, {	-- Weekly Tailoring Knowledgepoint #2
 				["name"] = "Weekly Tailoring Knowledgepoint #2",
 				["provider"] = { "i", 193899 },	-- Primalweave Spindle
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70524, {	-- Weekly Tailoring Knowledgepoint #3
 				["name"] = "Weekly Tailoring Knowledgepoint #3",
 				["provider"] = { "i", 198977 },	-- Ohn'arhan Weave
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70525, {	-- Weekly Tailoring Knowledgepoint #4
 				["name"] = "Weekly Tailoring Knowledgepoint #4",
 				["provider"] = { "i", 198978  },	-- Stupidly Effective Stitchery
 				["isWeekly"] = true,
-				["collectible"] = true,	-- Dont remove until we have proper tracking
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		}),
 	}),

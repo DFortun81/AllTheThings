@@ -16,7 +16,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			n(TREASURES, {
-				-- Dont have ObjectID etc.. atm
+				-- Don't have ObjectID etc.. atm
 				i(199229),	-- Schematic: Tinker: Breath of Neltharion (RECIPE!)
 			}),
 			d(1, {	-- Normal
