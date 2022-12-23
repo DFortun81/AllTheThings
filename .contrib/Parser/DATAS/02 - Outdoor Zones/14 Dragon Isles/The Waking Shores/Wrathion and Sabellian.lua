@@ -466,6 +466,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								{ "i", AWAKENED_FIRE, 4 },
 								{ "i", AWAKENED_EARTH, 4 },
 							},
+							["g"] = {
+								i(191803),	-- Obsidian Dracthyr Battlegear Bracers
+								i(191804),	-- Obsidian Dracthyr Battlegear Cover
+								i(191798),	-- Obsidian Dracthyr Battlegear Grips
+								i(191797),	-- Obsidian Dracthyr Battlegear Hauberk
+								i(191799),	-- Obsidian Dracthyr Battlegear Helm
+								i(191800),	-- Obsidian Dracthyr Battlegear Leggings
+								i(191801),	-- Obsidian Dracthyr Battlegear Monnion
+								i(191802),	-- Obsidian Dracthyr Battlegear Belt
+							},
 						}),
 						i(200707, {	-- Armoire of Endless Cloaks (TOY!)
 							["cost"] = {
@@ -595,6 +605,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", AWAKENED_FIRE, 4 },
 								{ "i", AWAKENED_EARTH, 4 },
+							},
+							["g"] = {
+								i(191803),	-- Obsidian Dracthyr Battlegear Bracers
+								i(191804),	-- Obsidian Dracthyr Battlegear Cover
+								i(191798),	-- Obsidian Dracthyr Battlegear Grips
+								i(191797),	-- Obsidian Dracthyr Battlegear Hauberk
+								i(191799),	-- Obsidian Dracthyr Battlegear Helm
+								i(191800),	-- Obsidian Dracthyr Battlegear Leggings
+								i(191801),	-- Obsidian Dracthyr Battlegear Monnion
+								i(191802),	-- Obsidian Dracthyr Battlegear Belt
 							},
 						}),
 						i(200963, {	-- Ensemble: Sabellian's Battlegear Cloth Armor
