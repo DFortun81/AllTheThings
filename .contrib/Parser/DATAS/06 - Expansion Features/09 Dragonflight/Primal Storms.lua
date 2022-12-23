@@ -239,6 +239,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["qg"] = 193674,	-- Voraazka
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
+				q(69960, {	-- Gravlion
+					["qg"] = 193654,	-- Gravlion
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				}),
 			}),
 			n(SPECIAL, {
 				i(201296, {	-- Docile Airy Soul
@@ -357,8 +361,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 				n(193654, {	-- Gravlion <Progeny of Earth>
-					-- ["coord"] = { X, Y, MAP },
-					-- ["questID"] = ,
+					["coord"] = { 60.7, 56.3, THALDRASZUS },
+					["questID"] = 73998,
 					-- ["g"] = {
 
 					--},
