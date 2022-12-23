@@ -9559,7 +9559,10 @@ local function default_link(t)
 end
 local CollectedSpeciesHelper = setmetatable({}, {
 	__index = function(t, key)
-		if not C_PetJournal_GetNumCollectedInfo(key) == nil and C_PetJournal_GetNumCollectedInfo(key) > 0 then
+		if not C_PetJournal_GetNumCollectedInfo(key) then
+			app.print("SpeciesID " .. key .. " was not found.");
+		end
+		if C_PetJournal_GetNumCollectedInfo(key) and C_PetJournal_GetNumCollectedInfo(key) > 0 then
 			rawset(t, key, 1);
 			return 1;
 		end

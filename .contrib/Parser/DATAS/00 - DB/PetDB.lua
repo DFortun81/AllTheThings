@@ -1293,7 +1293,11 @@ pet(0, 3402);	-- Stormamu
 
 pet(0, 3406);	-- Lady Feathersworth
 
-
+------------------
+-- PATCH 10.0.5 --
+------------------
+-- SOURCED
+pet(190607, 3252);	-- Garrlok
 
 -- #if ANYCLASSIC
 -----------------
