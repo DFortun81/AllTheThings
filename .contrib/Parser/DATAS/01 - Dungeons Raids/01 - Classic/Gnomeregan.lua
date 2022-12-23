@@ -789,7 +789,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				["creatureID"] = 7800,
 				["groups"] = {
 					classicAch(634, {	-- Gnomeregan
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							2929,	-- The Grand Betrayal
 							2841,	-- Rig Wars

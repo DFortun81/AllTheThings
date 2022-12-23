@@ -240,7 +240,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				["groups"] = {
 					-- #if BEFORE 4.0.1
 					classicAch(633, {	-- Stormwind Stockade
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuest"] = 391,	-- The Stockade Riots
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						["races"] = ALLIANCE_ONLY,

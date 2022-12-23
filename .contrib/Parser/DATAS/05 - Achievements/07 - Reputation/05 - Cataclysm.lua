@@ -4,12 +4,6 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 	achcat(ACHIEVEMENT_CATEGORY_CATACLYSM_REP, {
-		ach(5827, {	-- Avengers of Hyjal
-			title(188),	-- <Name>, Avenger of Hyjal
-		}),
-		ach(5375, {	-- Bardin's Wardens
-			["races"] = ALLIANCE_ONLY,
-		}),
 		ach(4886, {	-- Dragonmaw Clan
 			["races"] = HORDE_ONLY,
 		}),

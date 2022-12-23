@@ -431,7 +431,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				["creatureID"] = 4421,	-- Charlga Razorflank
 				["groups"] = {
 					classicAch(635, {	-- Razorfen Kraul
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							1102,	-- A Vengeful Fate
 							6522,	-- An Unholy Alliance

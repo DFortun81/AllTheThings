@@ -75,10 +75,10 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 			n(ACHIEVEMENTS, {
 				ach(708, applyclassicphase(PHASE_TWO, {	-- Hero of the Frostwolf Clan
 					["races"] = HORDE_ONLY,
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
+					["description"] = "Raise your reputation with the Frostwolf Clan to Exalted.",
 					-- #endif
 					-- #if ANYCLASSIC
-					["description"] = "Raise your reputation with the Frostwolf Clan to Exalted.",
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 729); end]],
@@ -86,7 +86,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				})),
 				ach(709, applyclassicphase(PHASE_TWO, {	-- Hero of the Stormpike Guard
 					["races"] = ALLIANCE_ONLY,
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Stormpike Guard to Exalted.",
 					-- #endif
 					-- #if ANYCLASSIC

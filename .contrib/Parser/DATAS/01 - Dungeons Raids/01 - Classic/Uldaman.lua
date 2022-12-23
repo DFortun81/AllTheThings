@@ -757,7 +757,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				["creatureID"] = 2748,
 				["groups"] = {
 					classicAch(638, {	-- Uldaman
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							2278,	-- The Platinum Discs
 							2204,	-- Restoring the Necklace

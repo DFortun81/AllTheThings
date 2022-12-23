@@ -375,7 +375,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				["creatureID"] = 3654,
 				["groups"] = {
 					classicAch(630, {	-- Wailing Caverns
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif

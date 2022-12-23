@@ -848,8 +848,9 @@ root("Zones", {
 						["timeline"] = { "removed 3.0.1" },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 25),
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[; end]],
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/10 Smuggled Mana Cell
 								["provider"] = { "i", 34246 },	-- Smuggled Mana Cell
@@ -858,7 +859,6 @@ root("Zones", {
 							}),
 							i(35232),	-- Shattered Sun Supplies
 						},
-						-- #endif
 					})),
 					q(10554, {	-- Ishanah
 						["qg"] = 18166,	-- Archmage Khadgar

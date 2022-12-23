@@ -7754,7 +7754,7 @@ root("HiddenQuestTriggers", {
 -- #endif
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	-- #if BEFORE 3.0.1.8634
+	-- #if BEFORE WRATH
 	i(38579, {	-- Venomous Tome
 		["timeline"] = { "created 2.4.2", "added 3.0.1.8634" },
 	}),

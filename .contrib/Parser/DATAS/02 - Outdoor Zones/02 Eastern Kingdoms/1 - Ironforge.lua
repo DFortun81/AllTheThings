@@ -1307,13 +1307,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 						i(16041, {	-- Schematic: Thorium Grenade
 							["timeline"] = { "removed 3.0.1" },	-- Now taught by trainer, schematic removed from the game.
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["isLimited"] = true,
 							-- #endif
 						}),
 						i(16042, {	-- Schematic: Thorium Widget
 							["timeline"] = { "removed 3.0.1" },	-- Now taught by trainer, schematic removed from the game.
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["isLimited"] = true,
 							-- #endif
 						}),

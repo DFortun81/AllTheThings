@@ -972,7 +972,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				["creatureID"] = 15339,
 				["groups"] = {
 					classicAch(689, {	-- Ruins of Ahn'Qiraj
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuest"] = 8791,	-- The Fall of Ossirian
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif

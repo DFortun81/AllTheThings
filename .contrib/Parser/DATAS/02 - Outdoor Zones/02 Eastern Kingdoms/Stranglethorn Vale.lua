@@ -119,7 +119,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						338,	-- The Green Hills of Stranglethorn
 					},
 					-- #endif
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
 					["description"] = "Complete all of Hemet Nesingwary quests in Stranglethorn Vale up to and including The Green Hills of Stranglethorn and Big Game Hunter.",
 					["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]],
 					-- #endif

@@ -357,7 +357,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 6.0.2" },
 				["groups"] = {
 					classicAch(636, {	-- Razorfen Downs
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							3636,	-- Bring the Light
 							3341,	-- Bring the End

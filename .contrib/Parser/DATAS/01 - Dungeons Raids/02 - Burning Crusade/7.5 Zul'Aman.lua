@@ -296,7 +296,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 					["hideText"] = true,
 					["groups"] = {
 						classicAch(691, {	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["sourceQuest"] = 11178,	-- Blood of the Warlord
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif

@@ -17,11 +17,13 @@ root("Instances", tier(CLASSIC_TIER, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				classicAch(955, {	-- Hydraxian Waterlords
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
+					["description"] = "Raise your reputation with the Hydraxian Waterlords to Exalted.",
+					-- #endif
+					-- #if ANYCLASSIC
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 749); end]],
-					["description"] = "Raise your reputation with the Hydraxian Waterlords to Exalted.",
 					-- #endif
 					["maps"] = { AZSHARA },
 				}),
@@ -125,7 +127,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							["provider"] = { "i", 17330 },	-- Hand of Sulfuron
 						}),
 						classicAch(2496, {	-- The Fifth Element
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["sourceQuest"] = 6824,	-- Hands of the Enemy
 							["description"] = "Obtain an Aqual Quintessence.",
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
@@ -685,7 +687,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				["creatureID"] = 11502,
 				["groups"] = {
 					classicAch(686, {	-- Molten Core
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							7787,	-- Rise, Thunderfury!
 							8620,	-- The Only Prescription

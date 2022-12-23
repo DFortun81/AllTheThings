@@ -9,6 +9,16 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 		["lvl"] = 32,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(5827, {	-- Avengers of Hyjal
+					-- #if ANYCLASSIC
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1204); end]],
+					-- #endif
+					["groups"] = {
+						title(188),	-- <Name>, Avenger of Hyjal
+					},
+				}),
 				ach(5874, {	-- Death From Above  (Mount Hyjal - The Molten Front)
 					crit(2),	-- Blazefury
 					crit(3),	-- Flashfire
@@ -107,6 +117,9 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 						["sourceQuest"] = 29272,	-- Need... Water... Badly...
 					}),
 				}),
+			}),
+			n(FACTIONS, {
+				faction(1204),	-- Avengers of Hyjal
 			}),
 			n(QUESTS, {
 				q(29263, {	-- A Bitter Pill

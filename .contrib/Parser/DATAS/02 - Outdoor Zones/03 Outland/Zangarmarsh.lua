@@ -238,7 +238,7 @@ root("Zones", {
 						-- #endif
 					}),
 					ach(953, applyclassicphase(TBC_PHASE_ONE, {	-- Guardian of Cenarius
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Cenarion Circle and Cenarion Expedition to Exalted.",
 						-- #endif
 						-- #if ANYCLASSIC
@@ -252,7 +252,7 @@ root("Zones", {
 						},
 					})),
 					classicAch(900, {	-- The Czar of Sporeggar
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with Sporeggar to Exalted.",
 						-- #endif
 						-- #if ANYCLASSIC

@@ -20,11 +20,13 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				classicAch(956, {	-- Brood of Nozdormu
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
+					["description"] = "Raise your reputation with the Brood of Nozdormu to Exalted.",
+					-- #endif
+					-- #if ANYCLASSIC
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 910); end]],
-					["description"] = "Raise your reputation with the Brood of Nozdormu to Exalted.",
 					-- #endif
 					["maps"] = { CAVERNS_OF_TIME },
 				}),
@@ -1504,7 +1506,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				["creatureID"] = 15727,
 				["groups"] = {
 					classicAch(687, {	-- Temple of Ahn'Qiraj
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuest"] = 8801,	-- C'Thun's Legacy
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif

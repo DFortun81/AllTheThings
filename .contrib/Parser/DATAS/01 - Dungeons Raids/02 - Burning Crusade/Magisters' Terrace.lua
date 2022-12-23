@@ -197,7 +197,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					["creatureID"] = 24664,
 					["groups"] = {
 						classicAch(661, {	-- Magister's Terrace
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["sourceQuest"] = 11492,	-- Hard to Kill
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif

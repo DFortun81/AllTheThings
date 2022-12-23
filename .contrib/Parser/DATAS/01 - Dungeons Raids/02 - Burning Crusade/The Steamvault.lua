@@ -159,7 +159,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["creatureID"] = 17798,
 					["groups"] = {
 						classicAch(656, {	-- The Steamvault
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								9763,	-- The Warlord's Hideout
 								10885,	-- Trial of the Naaru: Strength
@@ -265,7 +265,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						["creatureID"] = 17798,
 						["groups"] = {
 							classicAch(677, {	-- Heroic: The Steamvault
-								-- #if BEFORE 3.0.1
+								-- #if BEFORE WRATH
 								["sourceQuest"] = 10885,	-- Trial of the Naaru: Strength
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif

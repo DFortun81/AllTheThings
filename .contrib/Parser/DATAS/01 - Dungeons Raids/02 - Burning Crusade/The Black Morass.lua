@@ -123,7 +123,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["creatureID"] = 17881,
 					["groups"] = {
 						classicAch(655, {	-- Opening of the Dark Portal
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								9836,	-- The Master's Touch
 								10297,	-- The Opening of the Dark Portal

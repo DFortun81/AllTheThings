@@ -2002,7 +2002,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["groups"] = {
 						-- #if BEFORE 4.0.3
 						classicAch(631, {	-- Shadowfang Keep
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["sourceQuest"] = 1014,	-- Arugal Must Die
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							["races"] = HORDE_ONLY,

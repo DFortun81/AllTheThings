@@ -193,7 +193,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["creatureID"] = 17308,
 					["groups"] = {
 						classicAch(647, {	-- Hellfire Ramparts
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								9575,	-- Weaken the Ramparts
 								9572,	-- Weaken the Ramparts

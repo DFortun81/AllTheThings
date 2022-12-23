@@ -180,7 +180,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["creatureID"] = 18096,
 					["groups"] = {
 						classicAch(652, {	-- The Escape From Durnholde
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["sourceQuest"] = 10284,	-- Escape from Durnholde
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif

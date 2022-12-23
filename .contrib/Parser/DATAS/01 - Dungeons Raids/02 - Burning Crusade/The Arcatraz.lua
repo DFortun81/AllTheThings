@@ -206,7 +206,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["creatureID"] = 20912,
 					["groups"] = {
 						classicAch(660, {	-- The Arcatraz
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								10882,	-- Harbinger of Doom
 								10886,	-- Trial of the Naaru: Tenacity
@@ -333,7 +333,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						["creatureID"] = 20912,
 						["groups"] = {
 							classicAch(681, {	-- Heroic: The Arcatraz
-								-- #if BEFORE 3.0.1
+								-- #if BEFORE WRATH
 								["sourceQuest"] = 10886,	-- Trial of the Naaru: Tenacity
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif

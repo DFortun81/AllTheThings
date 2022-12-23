@@ -91,7 +91,7 @@ root("Zones", {
 					}),
 					classicAch(939, {	-- Hills Like White Elekk
 						["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["description"] = "Complete all of Hemet Nesingwary quests in Nagrand up to and including The Ultimate Bloodsport.",
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif

@@ -756,7 +756,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				["creatureID"] = 5709,
 				["groups"] = {
 					classicAch(641, {	-- Sunken Temple
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuest"] = 3373,	-- The Essence of Eranikus
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
