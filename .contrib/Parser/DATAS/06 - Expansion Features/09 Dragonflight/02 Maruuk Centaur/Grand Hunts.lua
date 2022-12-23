@@ -407,14 +407,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 								-- confirmed items here
 								193360,	-- Centaur's Trophy Necklace
 								194093,	-- Bakar Companion Color: Brown
-								194094,	-- Bakar Companion Color: Black
-								194091,	-- Bakar Companion Color: Golden Brown
-								194089,	-- Bakar Companion Color: Orange
 								194090,	-- Bakar Companion Color: White
 								193205,	-- Ohuna Companion Color: Brown
 								194088,	-- Ohuna Companion Color: Dark
-								194095,	-- Ohuna Companion Color: Sepia
-								194087,	-- Ohuna Companion Color: Red
 							}},
 							["g"] = {
 								i(192791),	-- Plainswalker Bearer (MOUNT!)
@@ -434,6 +429,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 								{"select","itemID",
 								-- confirmed items here
 								-- zone rewards?, received 198542
+								194094,	-- Bakar Companion Color: Black
 								194087,	-- Ohuna Companion Color: Red
 								194089,	-- Bakar Companion Color: Orange
 							}},

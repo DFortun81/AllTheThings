@@ -56,7 +56,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193135, {	-- Azra's Prized Peony
 				["coord"] = { 54.9, 71.1, THE_WAKING_SHORES },
-				-- ["questID"] = 69839,
+				["questID"] = 73984,
 				["g"] = {
 					i(200259),	-- Forest Dweller's Shield
 					i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)

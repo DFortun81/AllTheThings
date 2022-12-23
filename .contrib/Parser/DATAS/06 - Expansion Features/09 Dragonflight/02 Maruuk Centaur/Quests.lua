@@ -213,6 +213,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires Renown 17.",
 				["provider"] = { "n", 195529 },	-- Weaponmaster Aloom
 				["coord"] = { 62.4, 42.3, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(201159),	-- Aloom's Token
+				},
 			}),
 				-- RENOWN 19 --
 			q(71083, {	-- Understanding Their Grace
