@@ -10,6 +10,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 63.3, 41.3, OHNAHRAN_PLAINS },
 			}),
 				-- RENOWN 2	--
+				-- Binds when picked up Centaur Hunting Trophy
 			q(70928, {	-- Hunting Trophy
 				["description"] = "Requires Renown 2.",
 				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
@@ -30,6 +31,28 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 				["repeatable"] = true,
 				["cost"] = { { "i", 200093, 20 }, }, 	-- 20x Centaur Hunting Trophy
+			}),
+				-- Binds to Blizard account Centaur Hunting Trophy
+			q(71038, {	-- Hunting Trophy
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
+				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
+				["repeatable"] = true,
+				["cost"] = { { "i", 200447, 1 }, }, 	-- 1x Centaur Hunting Trophy
+			}),
+			q(71039, {	-- More Hunting Trophies
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
+				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
+				["repeatable"] = true,
+				["cost"] = { { "i", 200447, 5 }, }, 	-- 5x Centaur Hunting Trophy
+			}),
+			q(72869, {	-- More Hunting Trophies
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
+				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
+				["repeatable"] = true,
+				["cost"] = { { "i", 200447, 20 }, }, 	-- 20x Centaur Hunting Trophy
 			}),
 				-- RENOWN 3	--
 			q(72117, {	-- Cultural Exchange
