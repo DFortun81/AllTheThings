@@ -6929,10 +6929,10 @@ AddTomTomWaypoint = function(group)
 			return;
 		end
 		if __TomTomWaypointCount == 0 then
-			app.print("No known coordinates for",group.text);
+			app.print(format(L["NO_COORDINATES_FORMAT"], group.text));
 		end
 	else
-		app.print("You must have TomTom installed to plot coordinates.");
+		app.print(L["TOM_TOM_NOT_FOUND"]);
 	end
 end
 end	-- Map Information Lib
