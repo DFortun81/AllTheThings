@@ -1589,6 +1589,11 @@ i(199412, 387231);	-- Hailstorm Armoredon
 i(201789, 394737);	-- Vicious Sabertooth [A]
 i(201788, 394738);	-- Vicious Sabertooth [H]
 
+------------------
+-- PATCH 10.0.5 --
+------------------
+i(190231, 366962);	-- Ash'adar, Harbinger of Dawn
+
 -- #if ANYCLASSIC
 -----------------
 -- CLASSIC WOW --
