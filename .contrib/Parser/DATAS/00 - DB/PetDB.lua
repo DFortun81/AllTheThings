@@ -1182,6 +1182,10 @@ pet(0, 3280);	-- Shyfly
 pet(0, 3283);	-- Snowlemental
 pet(0, 3260);	-- Snowy Treeflitter
 pet(0, 3353);	-- Stoneshell
+pet(0, 3384);	-- Storm-Touched Bluefeather
+pet(0, 3354);	-- Storm-Touched Ottuk
+pet(0, 3385);	-- Storm-Touched Stomper
+pet(0, 3329);	-- Storm-Touched Timbertooth
 pet(0, 3282);	-- Swoglet
 pet(0, 3389);	-- The Quackcestor
 pet(0, 3318);	-- Thunderfoot Calf
@@ -1194,21 +1198,14 @@ pet(0, 3301);	-- Wild Duckling
 pet(0, 3322);	-- Woodbiter Piculet
 
 -- NOT SOURCED YET
-
 pet(191126, 0);	-- Obsidian Whelpling
 pet(0, 3257);	-- Test Beetle
 pet(191915, 3259);	-- Time-Lost Feral Rabbit
 pet(191930, 3261);	-- Blue Phoenix Hatchling
 pet(193620, 3267);	-- Time-Lost Slyvern
 pet(0, 3268);	-- Swog
-
-
 pet(193068, 3277);	-- Time-Lost Treeflitter
-
-
 pet(193235, 3285);	-- Scarlet Ottuk Pup
-
-
 pet(193363, 3290);	-- Auburntusk Calf
 pet(193364, 3291);	-- Time-Lost Baby Mammoth
 pet(193373, 3292);	-- Phoenix Wishwing
@@ -1216,15 +1213,10 @@ pet(193374, 3293);	-- Crimson Phoenix Hatchling
 pet(193377, 3294);	-- Time-Lost Phoenix Hatchling
 pet(193429, 3297);	-- Time-Lost Salamanther
 pet(193380, 3298);	-- Pink Salamanther
-
-
-
 pet(0, 3308);	-- Time-Lost Duckling
 pet(193587, 3312);	-- Time-Lost Duck
-
 pet(193614, 3314);	-- Groundshaker
 pet(193835, 3323);	-- Brightfeather
-pet(0, 3329);	-- Storm-Touched Timbertooth
 pet(193850, 3330);	-- Time-Lost Timbertooth
 pet(193853, 3331);	-- Emerald Frillfish
 pet(193851, 3332);	-- Purple Frillfish
@@ -1236,45 +1228,19 @@ pet(0, 3340);	-- Blue Dragon Whelp
 pet(0, 3341);	-- Red Dragon Whelp
 pet(0, 3342);	-- Spyragos
 pet(0, 3343);	-- Bronze Dragon Whelp
-
-
-
-pet(0, 3354);	-- Storm-Touched Ottuk
-
-
-
-
 pet(0, 3359);	-- Snowclaw Cub
 pet(0, 3360);	-- Bugbiter Tortoise
 pet(0, 3361);	-- Diamond Crab
 pet(0, 3362);	-- Sapphire Crab
 pet(0, 3363);	-- Truesilver Crab
 pet(0, 3364);	-- Striped Snakebiter
-
-
 pet(193908);	-- [PH] Blue Crystal Porcupine
-
 pet(192050);	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
 pet(193863);	-- zzOld - [PH] Dark Baby Vorquin (REUSE)
 pet(193063);	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
 pet(193862);	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
 pet(191929);	-- zzOld - [PH] White Flying Squirrel (REUSE)
-
-
-
-
-
-
-
-
 pet(0, 3377);	-- Gwosh
-
-
-
-
-
-pet(0, 3384);	-- Storm-Touched Bluefeather
-pet(0, 3385);	-- Storm-Touched Stomper
 pet(0, 3386);	-- Faceripper
 pet(0, 3387);	-- Bloodbiter
 pet(0, 3388);	-- Tina
@@ -1289,11 +1255,7 @@ pet(0, 3398);	-- Cat
 pet(0, 3400);	-- Chicken
 pet(0, 3401);	-- Arcantus
 pet(0, 3402);	-- Stormamu
-
-
 pet(0, 3406);	-- Lady Feathersworth
-
-
 
 -- #if ANYCLASSIC
 -----------------

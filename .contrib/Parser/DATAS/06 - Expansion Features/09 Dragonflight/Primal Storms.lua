@@ -290,6 +290,24 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 			}),
+			petbattle(filter(BATTLE_PETS, {
+				pet(3385, {	-- Storm-Touched Stomper
+					["cr"] = 192029,	-- Storm-Touched Stomper
+					["maps"] = { THE_WAKING_SHORES },
+				}),
+				pet(3329, {	-- Storm-Touched Timbertooth
+					["cr"] = 189660,	-- Storm-Touched Timbertooth
+					["maps"] = { OHNAHRAN_PLAINS },
+				}),
+				pet(3384, {	-- Storm-Touched Bluefeather
+					["cr"] = 192259,	-- Storm-Touched Bluefeather
+					["maps"] = { THALDRASZUS },
+				}),
+				pet(3354, {	-- Storm-Touched Ottuk
+					["cr"] = 192256,	-- Storm-Touched Ottuk
+					["maps"] = { THE_AZURE_SPAN },
+				}),
+			})),
 			n(RARES, sharedData({
 				["isDaily"] = true,
 			},{
