@@ -193,6 +193,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 		q(70221, {	-- Show Your Mettle
 			["provider"] = { "n", 192574 },	-- Thomas Bright
+			["minReputation"] = { 2544, 2 },	-- Artisan's Consortium, Preferred (2)
 			["isWeekly"] = true,
 			["coords"] = {
 				{ 60.2, 72.2, THE_WAKING_SHORES },

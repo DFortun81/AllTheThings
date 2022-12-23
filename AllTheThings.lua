@@ -6945,7 +6945,6 @@ local function PopulateQuestObject(questObject)
 	local questID = questObject.questID;
 	-- Check for a Task-specific icon
 	local info = C_QuestLog.GetQuestTagInfo(questID);
-	-- TODO: eventually handle the reward population async via QUEST_DATA_LOAD_RESULT event trigger somehow
 
 	-- if info then
 		-- print("WQ info:",questID);
@@ -8163,36 +8162,16 @@ local questFields = {
 		if app.CollectibleReputations and t.maxReputation and not t.locked then
 			local factionID = t.maxReputation[1];
 			local factionRef = app.SearchForObject("factionID", factionID);
-			if factionRef and not factionRef.collected and (select(6, GetFactionInfoByID(factionID)) or 0) < t.maxReputation[2] then
-				-- app.PrintDebug("Quest",t.questID,"collectible for Faction",factionID,factionRef.text)
-				return true;
+			if factionRef and not factionRef.collected then
+				-- compare the actual standing against the current standing rather than raw vaules (friendships are variable)
+				local maxStanding = app.GetReputationStanding(t.maxReputation);
+				if maxStanding > factionRef.standing then
+					-- app.PrintDebug("Quest",t.questID,"collectible for Faction",factionID,factionRef.text,factionRef.isFriend)
+					return true;
+				end
 			end
 		end
-		-- If Collectible by being a Quest
-		-- if app.CollectibleQuests or app.CollectibleQuestsLocked then
-		-- 	return app.CollectibleAsQuest(t);
-		-- end
 	end,
-	-- ["collectedAsReputation"] = function(t)
-	-- 	-- If the Quest is completed on this character, then it doesn't matter about the faction
-	-- 	if IsQuestFlaggedCompleted(t.questID) then
-	-- 		return 1;
-	-- 	end
-	-- 	-- Check whether this Quest can provide Rep towards an incomplete Faction
-	-- 	if app.CollectibleReputations and t.maxReputation then
-	-- 		local factionID = t.maxReputation[1];
-	-- 		local factionRef = app.SearchForObject("factionID", factionID);
-	-- 		-- Completing the quest will increase the Faction, so it is incomplete
-	-- 		if factionRef and not factionRef.collected and (select(6, GetFactionInfoByID(factionID)) or 0) < t.maxReputation[2] then
-	-- 			return false;
-	-- 		elseif not app.CollectibleQuests and not app.CollectibleQuestsLocked then
-	-- 		-- Completing the quest will not increase the Faction, but User doesn't care about Quests, then consider it 'collected'
-	-- 			return 2;
-	-- 		end
-	-- 	end
-	-- 	-- Finally, check if the quest is otherwise considered 'collected' by normal logic
-	-- 	return IsQuestFlaggedCompletedForObject(t);
-	-- end,
 	["altcollected"] = function(t)
 		-- determine if an altQuest is considered completed for this quest for this character
 		if t.altQuests then
@@ -8475,12 +8454,6 @@ app.CheckForBreadcrumbPrevention = function(title, questID)
 	end
 end
 
--- Quest with Reputation
--- local fields = RawCloneData(questFields, {
--- 	["collectible"] = questFields.collectibleAsReputation,
--- 	["collected"] = questFields.collectedAsReputation,
--- });
--- app.BaseQuestWithReputation = app.BaseObjectFields(fields, "BaseQuestWithReputation");
 app.CreateQuest = function(id, t)
 	if t then
 		-- extract specific faction data
@@ -8493,9 +8466,6 @@ app.CreateQuest = function(id, t)
 				for key,value in pairs(aqd) do t[key] = value; end
 			end
 		end
-		-- if rawget(t, "maxReputation") then
-		-- 	return setmetatable(constructor(id, t, "questID"), app.BaseQuestWithReputation);
-		-- end
 	end
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
