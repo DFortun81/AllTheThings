@@ -382,14 +382,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200154),	-- Rubyscale Band
 			i(200161),	-- Razorwind Talisman
 			i(200185),	-- Grips of the Everflowing Ocean
-			i(200199),	-- Elements' Burden
 			i(200202),	-- Tomorrow's Chains
 			i(200203),	-- Repurposed Giant's Thimble
 			i(200204),	-- Sandshine Chestplate
 			i(200215),	-- Plumed Shoulderguards of the Hunt
 			i(200216),	-- Water Heating Cord
 			i(200228),	-- Protoscale Pauldrons
-			i(200229),	-- Slightly Digested Leggings
 			i(200230),	-- Terrorclaw Shoulderplates
 			i(200243),	-- Titanic Scholar's Finery
 			i(200251),	-- Medallion of the Ancestors
@@ -420,7 +418,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200741),	-- Pipspark's Prestigious Pendant of Protection
 			i(200758),	-- Breastplate of Storied Antiquity
 			i(200760),	-- Unstable Arcane Cell
-			i(200875),	-- Seeker's Bands
 			i(200968),	-- Sandshaped Winglord's Drape
 			i(201057),	-- Dreamfire Sabatons
 			i(201058),	-- Robes of the Verdant Wing
@@ -620,7 +617,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198963),	-- Decaying Phlegm
 			i(198964),	-- Elementious Splinter
 			i(198969),	-- Keeper's Mark
-			i(198970),	-- Infinitely Attachable Pair o' Docks
 			i(198971),	-- Curious Djaradin Rune
 			i(198972),	-- Draconic Glamour
 			i(198974),	-- Elegantly Engraved Embellishment
@@ -730,7 +726,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200138),	-- Ancient Dancer's Longspear
 			i(200139),	-- Tempest Arc
 			i(200145),	-- Hilted Monolith
-			i(200147),	-- Web-Woven Robe
 			i(200151),	-- Seamist Blade
 			i(200171),	-- Grymheart Blade
 			i(200155),	-- Haphazardly Welded Protector
@@ -1004,7 +999,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200077),	-- Wooden Pole
 			i(200079),	-- Sea-Polished Basalt
 			i(200080),	-- Draconium Nugget
-			i(200081),	-- Hardened Seavine
 			i(200082),	-- Battered Imbu-made Net
 			i(200083),	-- Irontree Branch
 			i(200084),	-- Salinated Serevite
@@ -1541,18 +1535,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200964),	-- Alliance Dueling Flag
 			i(200965),	-- Horde Dueling Flag
 			i(201090),	-- Bivigosa's Blood Sausages
-			i(200887),	-- Charred Porter
-			i(200888),	-- Coal-Fired Rib Rack
-			i(200889),	-- Highly-Spiced Haunch
-			i(200896),	-- Captain's Caramelized Catfish
-			i(200897),	-- Venrik's Goat Milk
-			i(200898),	-- Mantis Shrimp Cocktail
-			i(200899),	-- Seared Sea Mist Noodles
-			i(200900),	-- Fried Emperor Wraps
-			i(200901),	-- Roquefort-Stuffed Peppers
-			i(200902),	-- Ravenberry Panacotta Delight
-			i(200903),	-- Moira's Choice Espresso
-			i(200904),	-- Picante Pomfruit Cake
 			i(201045),	-- Icecrown Bleu
 			i(201046),	-- Dreamwarding Dripbrew
 			i(201047),	-- Arcanostabilized Provisions

@@ -485,6 +485,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 20 --
 			q(70891, {	-- Fitting In
+				["description"] = "Requires Renown 20.",
 				["qg"] = 195782,	-- Giera
 				["coord"] = { 31.6, 69.3, VALDRAKKEN },
 				["g"] = {
@@ -493,6 +494,27 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199756),	-- Ensemble: Bronze Valdrakken Clothing
 					i(199752),	-- Ensemble: Crimson Valdrakken Clothing
 					i(199755),	-- Ensemble: Green Valdrakken Clothing
+				},
+			}),
+				-- RENOWN 21 --
+			q(70904, {	-- Variety is the Spice of Life
+				["description"] = "Requires Renown 21.",
+				["qg"] = 185561,	-- Kaestrasz
+				["coord"] = { 46.8, 78.8, VALDRAKKEN },
+			}),
+				-- RENOWN 22 --
+			q(70915, {	-- Crowning Achievement
+				["description"] = "Requires Renown 22.",
+				["qg"] = 193659,	-- Provisioner Thom
+				["coord"] = { 36.6, 50.6, VALDRAKKEN },
+			}),
+				-- RENOWN 23 --
+			q(70905, {	-- Flying with Our Colors
+				["description"] = "Requires Renown 23.",
+				["qg"] = 193015,	-- Unatos
+				["coord"] = { 58.2, 35.6, VALDRAKKEN },
+				["g"] = {
+					i(198732),	-- Valdrakken Accord Tabard
 				},
 			}),
 		}),
@@ -521,6 +543,8 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(72777),	-- triggered with 'Emerald Summons' (66620)
 		q(72759),	-- triggered with 'And Yet So Far' (66191)
 		q(72758),	-- triggered with 'Like Mother, Like Daughter' (66402)
+		q(72695),	-- triggered with 'Variety is the Spice of Life' (70904)
+		q(72696),	-- triggered with 'Flying with Our Colors' (70905)
 
 		-- Ensembles
 		q(70755),	-- Ensemble: Crimson Valdrakken Clothing

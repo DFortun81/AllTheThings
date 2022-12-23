@@ -205,6 +205,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["qg"] = 185549,	-- Agrikus
 					["isWeekly"] = true,
 				}),
+				q(70616, {	-- How Many??
+					["coord"] = { 37.7, 66.9, VALDRAKKEN },
+					["qg"] = 185549,	-- Agrikus
+					["isWeekly"] = true,
+				}),
 			})),
 			prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] = LEATHERWORKING }, {
 				n(185551, {	-- Hideshaper Koruz <Leatherworking Trainer>
@@ -415,7 +420,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(198609),	-- Tailoring Examples
 					},
 				}),
+				q(70586, {	-- Sew Many Cooks
+					["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
+					["coord"] = { 31.8, 67.6, VALDRAKKEN },
+					["isWeekly"] = true,
+				}),
 			})),
+		}),
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	m(VALDRAKKEN, {
+		n(PROFESSIONS, {
+			q(74430),	-- Weekly Profession completed
 		}),
 	}),
 })));

@@ -6,7 +6,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		n(RARES, {
 			n(194270, {	-- Arcane Devourer
 				["coord"] = { 53.0, 35.6, THE_AZURE_SPAN },
-				-- ["questID"] = 70153,
+				["questID"] = 73866,
 				-- ["g"] = {
 
 				-- },
@@ -90,7 +90,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(194392, {	-- Brackle
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 73871,
 				-- ["g"] = {
 
 				-- },

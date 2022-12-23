@@ -1277,6 +1277,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 187111 },	-- Ancient Hornswog
 					["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
 				}),
+				q(69839, {	-- Azra's Prized Peony
+					["provider"] = { "n", 193135 },	-- Azra's Prized Peony
+					["coord"] = { 54.9, 71.1, THE_WAKING_SHORES },
+				}),
 				q(72127, {	-- Captain Lancer
 					["provider"] = { "n", 193198 },	-- Captain Lancer
 					["coord"] = { 27.3, 76.5, THE_WAKING_SHORES },

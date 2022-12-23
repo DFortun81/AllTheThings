@@ -199,6 +199,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "i", 193600 },	-- Lost Battlepack
 					["isDaily"] = true,
 				}),
+				q(66633, {	-- Make a Statement
+					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
+					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+					["g"] = {
+						i(193915),	-- Flag of the Black Dragon Flight
+					},
+				}),
 				q(65840, {	-- Same as the Old Boss
 					["sourceQuest"] = 66362,	-- First Completion of 'Unlocking our Past' (Igys the Believer)
 					["provider"] = { "n", 191310 },	-- Doventhal the Chosen

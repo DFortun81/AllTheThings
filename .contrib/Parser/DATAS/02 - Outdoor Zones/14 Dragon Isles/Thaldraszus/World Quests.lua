@@ -43,6 +43,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(70934, {	-- Salamanther's Embrace
 					["coord"] = { 54.7, 39.7, THALDRASZUS }
 				}),
+				q(71164, {	-- Stolen Bandages
+					["coord"] = { 45.4, 58.9, THALDRASZUS }
+				}),
 				petbattle(q(71180, {	-- You Have to Start Somewhere
 					["coord"] = { 56.3, 49.2, THALDRASZUS }
 				})),

@@ -185,35 +185,30 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["maps"] = { THE_WAKING_SHORES },
 				}),
 			}),
-			n(BONUS_OBJECTIVES, {
-				-- not sure why these are listed in the Main city?
+			n(BONUS_OBJECTIVES, sharedData({
+				["isWeekly"] = true,
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+			},{
 				q(69951, {	-- Bouldron
 					["qg"] = 193644,	-- Bouldron
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(69955, {	-- Emblazion
 					["qg"] = 193650,	-- Emblazion
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(69961, {	-- Frozion
 					["qg"] = 193655,	-- Frozion
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(69959, {	-- Gaelzion
 					["qg"] = 193653,	-- Gaelzion
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(69956, {	-- Grizzlerock
 					["qg"] = 193652,	-- Grizzlerock
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(69970, {	-- Kain Firebrand
 					["qg"] = 193675,	-- Kain Firebrand
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(69953, {	-- Karantun
 					["qg"] = 193647,	-- Karantun
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(69971, {	-- Iceblade Trio
 					["qgs"] = {
@@ -221,28 +216,49 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						193678,	-- Fieraan <Second Iceblade>
 						193679,	-- Leerain <Third Iceblade>
 					},
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(69954, {	-- Infernum
 					["qg"] = 193648,	-- Infernum
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(69974, {	-- Pipspark Thundersnap
 					["qg"] = 193684,	-- Pipspark Thundersnap
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(69973, {	-- Rouen Icewind
 					["qg"] = 193682,	-- Rouen Icewind
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(69969, {	-- Voraazka
 					["qg"] = 193674,	-- Voraazka
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(69960, {	-- Gravlion
 					["qg"] = 193654,	-- Gravlion
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
+			})),
+			n(COMMON_BOSS_DROPS, {
+				["description"] = "These drops appear to be available from any Rare (Primal or not) which spawns within an area affected by a Primal Storm.",
+				["crs"] = {
+					193644,	-- Bouldron
+					193645,	-- Crystalus
+					193650,	-- Emblazion <Progeny of Fire>
+					193678,	-- Fieraan <Second Iceblade>
+					193655,	-- Frozion <Progeny of Water>
+					193653,	-- Gaelzion <Progeny of Air>
+					193654,	-- Gravlion <Progeny of Earth>
+					193652,	-- Grizzlerock
+					193648,	-- Infernum
+					193675,	-- Kain Firebrand
+					193647,	-- Karantun
+					193679,	-- Leerain <Third Iceblade>
+					193677,	-- Maeleera <First Iceblade>
+					193686,	-- Neela Firebane
+					193682,	-- Rouen Icewind
+					193684,	-- Pipspark Thundersnap
+					193674,	-- Voraazka
+					193680,	-- Zurgaz Corebreaker
+				},
+				["g"] = {
+					i(200199),	-- Elements' Burden
+					i(200198),	-- Primalist Prison (TOY!)
+				},
 			}),
 			n(SPECIAL, {
 				i(201296, {	-- Docile Airy Soul

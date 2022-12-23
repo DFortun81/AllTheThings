@@ -278,6 +278,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 187869 },	-- Tikukk
 				["coord"] = { 12.6, 50.2, THE_AZURE_SPAN },
 			}),
+				-- RENOWN 17 --
+			q(70967, {	-- Fishy Entertainment
+				["description"] = "Requires Renown 17.",
+				["provider"] = { "n", 186554 },	-- Nunvuq
+				["coord"] = { 13.8, 49.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(199894),	-- Fisherman's Folly Rack (TOY!)
+					i(199896),	-- Rubbery Fish Head (TOY!)
+				},
+			}),
 
 		}),
 		-- Maybe sub-header related items, maybe not

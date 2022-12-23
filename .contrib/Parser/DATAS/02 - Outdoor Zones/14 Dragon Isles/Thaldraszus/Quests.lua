@@ -1091,7 +1091,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 49.2, 79.8, THALDRASZUS },
 					["isDaily"] = true,
 				}),
-				qNYI(72121, {	-- The Great Shellkhan
+				q(72121, {	-- The Great Shellkhan
 					["provider"] = { "n", 191305 },	-- The Great Shellkhan
 					["coord"] = { 38.4, 68.2, THALDRASZUS },
 					["isDaily"] = true,

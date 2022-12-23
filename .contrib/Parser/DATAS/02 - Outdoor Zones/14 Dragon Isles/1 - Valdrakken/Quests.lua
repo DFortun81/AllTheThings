@@ -44,6 +44,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["sourceQuests"] = { 71238 },	-- The Ruby Feast!
 				["provider"] = { "n", 189479 },	-- Rumiastrasza
 				["coord"] = { 61.5, 11.8, VALDRAKKEN },
+				["altQuests"] = { 72258 },	-- Daily Lockout
 			}),
 			q(67047, {	-- Warm Away These Shivers
 				["sourceQuests"] = { 70930 },	-- All Tea, No Shadeleaf
@@ -55,12 +56,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200886),	-- Lemon Silverleaf Tea
 				},
 			}),
-
-			-- The Ruby Feast week 2
+			-- Next day
 			q(70932, {	-- The Life of Spice
 				["sourceQuests"] = { 67047 },	-- Warm Away These Shivers
 				["provider"] = { "n", 189479 },	-- Rumiastrasza
 				["coord"] = { 61.5, 11.8, VALDRAKKEN },
+				["altQuests"] = { 72258 },	-- Daily Lockout
 			}),
 			q(67063, {	-- 10,000 Years of Roasting
 				["sourceQuests"] = { 70932 },	-- The Life of Spice
@@ -72,12 +73,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200889),	-- Highly-Spiced Haunch
 				},
 			}),
-
-			-- The Ruby Feast week 3
+			-- Next day
 			q(70957, {	-- The Sea Out West
 				["sourceQuests"] = { 67063 },	-- 10,000 Years of Roasting
 				["provider"] = { "n", 189479 },	-- Rumiastrasza
 				["coord"] = { 61.5, 11.8, VALDRAKKEN },
+				["altQuests"] = { 72258 },	-- Daily Lockout
 			}),
 			q(67064, {	-- Rambling Delight
 				["sourceQuests"] = { 70957 },	-- The Sea Out West
@@ -89,21 +90,72 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200890),	-- Stonetalon Bloom Skewer
 				},
 			}),
-
-			-- The Ruby Feast week 4
+			-- Next day
 			q(70958, {	-- Finest Fungi at the Feast
 				["sourceQuests"] = { 67064 },	-- Rambling Delight
 				["provider"] = { "n", 189479 },	-- Rumiastrasza
 				["coord"] = { 61.5, 11.8, VALDRAKKEN },
+				["altQuests"] = { 72258 },	-- Daily Lockout
 			}),
 			q(67065, {	-- Future-Fresh Fungi
 				["sourceQuests"] = { 70958 },	-- Finest Fungi at the Feast
 				["provider"] = { "n", 187025 },	-- Warden Captain Sinjoirmi
-				["coord"] = { 60.3, 82.2, THALDRASZUS },
+				["coord"] = { 60.2, 82.2, THALDRASZUS },
 				["g"] = {
 					i(200893),	-- Azsunian-Poached Lobster
 					i(200894),	-- Rare Vintage Arcwine
 					i(200895),	-- Fine Taladorian Cheese Platter
+				},
+			}),
+			-- Next day
+			q(70981, {	-- Savory Seas
+				["sourceQuests"] = { 67065 },	-- Future-Fresh Fungi
+				["provider"] = { "n", 189479 },	-- Rumiastrasza
+				["coord"] = { 61.5, 11.8, VALDRAKKEN },
+				["altQuests"] = { 72258 },	-- Daily Lockout
+			}),
+			q(67066, {	-- Delights to Delve For
+				["sourceQuests"] = { 70981 },	-- Savory Seas
+				["provider"] = { "n", 186212 },	-- Wayun
+				["coord"] = { 7.4, 44.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(200896),	-- Captain's Caramelized Catfish
+					i(200897),	-- Venrik's Goat Milk
+					i(200898),	-- Mantis Shrimp Cocktail
+				},
+			}),
+			-- Next day
+			q(70987, {	-- Hearts of Starch
+				["sourceQuests"] = { 67066 },	-- Delights to Delve For
+				["provider"] = { "n", 189479 },	-- Rumiastrasza
+				["coord"] = { 61.5, 11.8, VALDRAKKEN },
+				["altQuests"] = { 72258 },	-- Daily Lockout
+			}),
+			q(67067, {	-- Navigating the Leapmaize
+				["sourceQuests"] = { 70987 },	-- Hearts of Starch
+				["provider"] = { "n", 189400 },	-- Meliane Enorath
+				["coord"] = { 65.2, 58.0, THE_WAKING_SHORES },
+				["g"] = {
+					i(200899),	-- Seared Sea Mist Noodles
+					i(200900),	-- Fried Emperor Wraps
+					i(200901),	-- Roquefort-Stuffed Peppers
+				},
+			}),
+			-- Next day
+			q(70988, {	-- The Egg's the Thing
+				["sourceQuests"] = { 67067 },	-- Navigating the Leapmaize
+				["provider"] = { "n", 189479 },	-- Rumiastrasza
+				["coord"] = { 61.5, 11.8, VALDRAKKEN },
+				["altQuests"] = { 72258 },	-- Daily Lockout
+			}),
+			q(67068, {	-- Anything But a Breeze
+				["sourceQuests"] = { 70988 },	-- The Egg's the Thing
+				["provider"] = { "n", 196161 },	-- Ilana
+				["coord"] = { 85.8, 35.2, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(200902),	-- Ravenberry Panacotta Delight
+					i(200903),	-- Moira's Choice Espresso
+					i(200904),	-- Picante Pomfruit Cake
 				},
 			}),
 
@@ -251,6 +303,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
+			q(66862, {	-- Relic Recovery: Ruby Life Pools
+				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 191957 },	-- Theldren
+				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				["isWeekly"] = true,
+			}),
+
 			q(66875, {	-- Preserving the Past: Algeth'ar Academy
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 189973 },	-- Kemora
@@ -275,7 +334,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 				["isWeekly"] = true,
 			}),
+			q(66871, {	-- Preserving the Past: The Nokhud Offensive
+				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 189973 },	-- Kemora
+				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+				["isWeekly"] = true,
+			}),
 			pvp(n(PVP, {
+				q(72723, {	-- A Call to Battle
+					["provider"] = { "n", 196191 },	-- Malicia
+					["coord"] = { 43.4, 42.5, VALDRAKKEN },
+					["isWeekly"] = true,
+				}),
 				q(72166, {	-- Proving in Battle
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
@@ -296,6 +366,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 42.2, 40.7, VALDRAKKEN },
 					["isWeekly"] = true,
 				}),
+				q(72649, {	-- Sparks of Life: Thaldraszus
+					["provider"] = { "n", 199393 },	-- Keenu
+					["coord"] = { 42.2, 40.7, VALDRAKKEN },
+					["isWeekly"] = true,
+				}),
 			})),
 		}),
 	}),
@@ -307,11 +382,14 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(69935),	-- triggered with 'A Dryadic Remedy' (67606)
 		q(72011),	-- triggeres when accepting 'The Ruby Feast!' (71238)
 		q(72009),	-- triggered with 'Warm Away These Shivers' (67047)
-		q(72258),	-- triggered with 'A Dryadic Remedy' (71238) and with '10,000 Years of Roasting' (67063) - triggers off a line of text from Coulisa, the steward at the door - spell ID 393805
+		q(72258, {["name"] = "Ruby Feast Daily Lockout",["isDaily"] = true}),	-- daily lockout of Ruby Feast quest progression
 		q(67055),	-- triggered with 'Warm Away These Shivers' (67047)
 		q(67056),	-- triggered after '10,000 Years of Roasting' (67063)
 		q(67057),	-- triggered after 'Rambling Delight' (67064)
 		q(67058),	-- triggered after 'Future-Fresh Fungi' (67065)
+		q(67059),	-- triggered after 'Delights to Delve For' (67066)
+		q(67060),	-- triggered after 'Navigating the Leapmaize' (67067)
+		q(67061),	-- triggered after 'Anything But a Breeze' (67068)
 		q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel
 	}),
 }));

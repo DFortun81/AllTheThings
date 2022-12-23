@@ -25,6 +25,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(70653, {	-- Cold Hard Science
 					["coord"] = { 47.9, 39.1, THE_AZURE_SPAN },
 				}),
+				q(70015, {	-- Decay Cleanup
+					["coord"] = { 19.9, 36.3, THE_AZURE_SPAN },
+				}),
 				q(72022, {	-- Fishing Frenzy!
 					-- ["coord"] = { XX, YY, THE_AZURE_SPAN },
 				}),

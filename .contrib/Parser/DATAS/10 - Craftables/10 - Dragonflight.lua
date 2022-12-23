@@ -1142,6 +1142,9 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(198334),	-- P.E.W. x2
 			i(198335),	-- Sophisticated Problem Solver
 		}),
+		n(DROPS, {	-- not sure if this is where we want the 'random knowledge items'
+			i(198970),	-- Infinitely Attachable Pair o' Docks
+		}),
 	}),
 	prof(FISHING, {
 		i(198439, {	-- Aged Recipe in a Bottle
@@ -2174,6 +2177,7 @@ root("HiddenQuestTriggers", {
 		}),
 		prof(BLACKSMITHING, {
 			q(70512),	-- Primeval Earth Fragment Drop (maybe weekly tracking?)
+			q(70232),	-- crafting an Alloy material near the Dim Forge in The Waking Shores to trigger the Glimmer of Wisdom
 		}),
 		--[[
 		prof(COOKING, {

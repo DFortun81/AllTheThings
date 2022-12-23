@@ -34,20 +34,23 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(71154, {	-- Talon Toss: Shooting 101
 					["coord"] = { 60.5, 25.7, OHNAHRAN_PLAINS }
 				}),
-				q(69991, {	-- The Fields of Ferocity Redux: Foe from the Volcano!
+				q(69991, {	-- The Field of Ferocity Redux: Foe from the Volcano!
 					["coord"] = { 53.8, 37.2, OHNAHRAN_PLAINS }
 				}),
-				q(69990, {	-- The Fields of Ferocity Redux: Lord of Decay!
+				q(69990, {	-- The Field of Ferocity Redux: Lord of Decay!
 					["coord"] = { 53.1, 37.2, OHNAHRAN_PLAINS }
 				}),
-				q(69993, {	-- The Fields of Ferocity Redux: Lost in the Dream!
+				q(69993, {	-- The Field of Ferocity Redux: Lost in the Dream!
 					["coord"] = { 53.1, 37.2, OHNAHRAN_PLAINS }
 				}),
 				q(69994, {	-- The Field of Ferocity Redux: Elemental Revenge Round!
 					["coord"] = { 53.1, 37.2, OHNAHRAN_PLAINS }
 				}),
-				q(69995, {	-- The Fields of Ferocity Redux: Master of the Hunt!
+				q(69995, {	-- The Field of Ferocity Redux: Master of the Hunt!
 					["coord"] = { 53.1, 37.2, OHNAHRAN_PLAINS }
+				}),
+				q(69987, {	-- The Field of Ferocity Redux: Terror of the Swamp!
+					["coord"] = { 53.8, 37.2, OHNAHRAN_PLAINS }
 				}),
 				q(70634, {	-- Lashed Out
 					["coord"] = { 30.9, 52.7, OHNAHRAN_PLAINS }

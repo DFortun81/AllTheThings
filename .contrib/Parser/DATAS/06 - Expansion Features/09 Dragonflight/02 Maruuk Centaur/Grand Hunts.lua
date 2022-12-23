@@ -498,4 +498,5 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	q(73941),	-- Thaldraszus South - Part 1 Towering Fickleshells
 	q(70005),	-- Azure Span East - Completing the Hunt
 	q(70006),	-- Azure Span South - Completing the Hunt
+	q(69998),	-- Waking Shores South - Completing the Hunt
 }));

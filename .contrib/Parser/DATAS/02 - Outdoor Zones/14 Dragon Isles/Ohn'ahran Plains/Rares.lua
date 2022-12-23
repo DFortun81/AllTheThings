@@ -204,11 +204,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193188, {	-- Seeker Teryx
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
+				["coord"] = { 62.7, 12.8, OHNAHRAN_PLAINS },
+				["questID"] = 73894,
+				["g"] = {
+					i(200875),	-- Seeker's Bands
+				},
 			}),
 			n(187559, {	-- Shade of Grief
 				["crs"] = { 193166 },	-- Solethus's Gravestone

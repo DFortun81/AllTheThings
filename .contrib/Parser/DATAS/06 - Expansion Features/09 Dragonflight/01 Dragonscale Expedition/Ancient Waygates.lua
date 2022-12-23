@@ -69,6 +69,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					-- RENOWN 8 --
 				q(70702, {	-- Continued Waygate Exploration
 					["description"] = "Requires Renown 8. Spawns Anywhere on Dragon Isles.",
+					["sourceQuests"] = { 70156 },	-- An Ancient Awakening
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
@@ -147,12 +148,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					-- RENOWN 10 --
 				q(71146, {	-- Continued Waygate Exploration
 					["description"] = "Requires Renown 8. Spawns Anywhere on Dragon Isles.",
+					["sourceQuest"] = 70702,	-- Continued Waygate Exploration
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 					-- RENOWN 15 --
 				q(71148, {	-- Continued Waygate Exploration
 					["description"] = "Requires Renown 15. Spawns Anywhere on Dragon Isles.",
+					["sourceQuest"] = 71146,	-- Continued Waygate Exploration
+					["provider"] = { "n", 196643 },	-- Doc Nanners
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+					-- RENOWN 17 --
+				q(71149, {	-- Continued Waygate Exploration
+					["description"] = "Requires Renown 17. Spawns Anywhere on Dragon Isles.",
+					["sourceQuest"] = 71148,	-- Continued Waygate Exploration
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),

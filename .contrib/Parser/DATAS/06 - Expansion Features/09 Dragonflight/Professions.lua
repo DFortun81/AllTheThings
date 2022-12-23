@@ -221,7 +221,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			["coord"] = { 84.3, 53.5, VALDRAKKEN },
 		}),
 		--
-		prof(ALCHEMY, {
+		prof(ALCHEMY, sharedData({
+			["requireSkill"] = ALCHEMY,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -366,7 +368,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
+		})),
 		prof(BLACKSMITHING, sharedData({
 			["requireSkill"] = BLACKSMITHING,
 		},{
@@ -569,7 +571,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),--]]
 		})),
-		prof(COOKING, {
+		prof(COOKING, sharedData({
+			["requireSkill"] = COOKING,
+		},{
 			q(72251, {	-- Dragon Isles Cooking
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -586,8 +590,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 198094 },	-- Head Chef Stacks
 				["coord"] = { 76.4, 35.7, THE_WAKING_SHORES },
 			}),
-		}),
-		prof(ENCHANTING, {
+		})),
+		prof(ENCHANTING, sharedData({
+			["requireSkill"] = ENCHANTING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -741,8 +747,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),--]]
-		}),
-		prof(ENGINEERING, {
+		})),
+		prof(ENGINEERING, sharedData({
+			["requireSkill"] = ENGINEERING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -858,8 +866,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
-		prof(FISHING, {
+		})),
+		prof(FISHING, sharedData({
+			["requireSkill"] = FISHING,
+		},{
 			q(72252, {	-- Dragon Isles Fishing [A]
 				["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
 				["provider"] = { "n", 191150 },	-- Danielle Anglers
@@ -879,8 +889,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 202105 },	-- Rusted Coin of the Isles
 				["requireSkill"] = FISHING,
 			}),
-		}),
-		prof(HERBALISM, {
+		})),
+		prof(HERBALISM, sharedData({
+			["requireSkill"] = HERBALISM,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -968,8 +980,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["repeatable"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
-		prof(INSCRIPTION, {
+		})),
+		prof(INSCRIPTION, sharedData({
+			["requireSkill"] = INSCRIPTION,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -1130,8 +1144,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
-		prof(JEWELCRAFTING, {
+		})),
+		prof(JEWELCRAFTING, sharedData({
+			["requireSkill"] = JEWELCRAFTING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -1303,8 +1319,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
-		prof(LEATHERWORKING, {
+		})),
+		prof(LEATHERWORKING, sharedData({
+			["requireSkill"] = LEATHERWORKING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -1454,8 +1472,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
-		prof(MINING, {
+		})),
+		prof(MINING, sharedData({
+			["requireSkill"] = MINING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -1540,8 +1560,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["repeatable"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
-		prof(SKINNING, {
+		})),
+		prof(SKINNING, sharedData({
+			["requireSkill"] = SKINNING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -1638,8 +1660,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["repeatable"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
-		prof(TAILORING, {
+		})),
+		prof(TAILORING, sharedData({
+			["requireSkill"] = TAILORING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -1751,6 +1775,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 27.9,45.6, VALDRAKKEN },
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
+			-- Weeklies
 			q(74115, {	-- Inscription Order: Tailoring
 				["name"] = "Inscription Order: Tailoring",
 				["description"] = "Requires a crafting order from Inscription.",
@@ -1782,6 +1807,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
+		})),
 	}),
 })));

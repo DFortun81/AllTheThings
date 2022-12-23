@@ -83,7 +83,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(377900, {	-- Nokhud Warspear
 				["coord"] = { 32.5, 38.2, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["questID"] = 67049,
 				["cost"] = { { "i", 194540, 1 }, },	--1xNokhud Armorer's Notes
 				["g"] = {
 					crit(1, {	-- Nokhud Warspear

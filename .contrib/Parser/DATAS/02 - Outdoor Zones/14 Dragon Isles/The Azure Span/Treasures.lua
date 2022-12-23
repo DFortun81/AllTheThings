@@ -5,8 +5,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_AZURE_SPAN, {
 		n(TREASURES, {
 			o(383625, {	-- Case of Fresh Gleamfish
-				["coord"] = { 38.4, 68.2, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["coord"] = { 45.6, 54.8, THE_AZURE_SPAN },
 				["g"] = {
 					i(200949),	-- Case of Fresh Gleamfish
 				},

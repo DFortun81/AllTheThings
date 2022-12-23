@@ -25,6 +25,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73987,
 				["g"] = {
 					-- is part of the DF>Global Rare Loottable
+					-- specfic drops
+					i(200147),	-- Web-Woven Robe
 				},
 			}),
 			n(193658, {	-- Corrupted Proto-Dragon
@@ -160,8 +162,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(191305, {	-- The Great Shellkhan
 				["description"] = "Needs fresh fish from Azure Span.",
 				["coord"] = { 38.5, 68.2, THALDRASZUS },
-				-- ["questID"] = 72121,
-				["cost"] = { { "i", 200949, 1 }, },	-- 1xCase of Fresh Gleamfish
+				["questID"] = 74085,
+				["cost"] = { { "i", 200949, 1 }, },	-- 1x Case of Fresh Gleamfish
 				["g"] = {
 					i(200999),	-- The Super Shellkhan Gang (TOY!)
 					-- is part of the DF>Global Rare Loottable

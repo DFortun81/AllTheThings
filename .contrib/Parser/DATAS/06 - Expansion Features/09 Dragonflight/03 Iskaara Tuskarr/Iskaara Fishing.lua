@@ -111,6 +111,20 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["isDaily"] = true,
 					["description"] = "Requires Renown 4.",
 				}),
+					-- The Azure Span --
+				q(71191, {	-- Net Worth
+					["provider"] = { "n", 197700 },	-- Gruff Fisher
+					["coord"] = { 58.6, 34.4, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+					["description"] = "Requires Renown 4.",
+				}),
+				q(72069, {	-- Subglacial Refill
+					["provider"] = { "n", 197700 },	-- Gruff Fisher
+					["coord"] = { 58.6, 34.4, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+					["description"] = "Requires Renown 4.",
+				}),
+
 					-- Repeatables --
 				q(70201, {	-- Catch and Release: Aileron Seamoth
 					["provider"] = { "n", 194584 },	-- Khuri
@@ -180,6 +194,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(200085, {	-- Khaz'gorite Wire
 					["description"] = "Obtained from Full Tuskarr Fishing Nets.",
 				}),
+				i(200081),	-- Hardened Seavine
 			}),
 		})
 	}),

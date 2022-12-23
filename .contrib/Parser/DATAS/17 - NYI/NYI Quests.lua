@@ -7007,20 +7007,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(67023),	--
 			q(67024),	--
 			q(67025),	--
-			q(67026),	--
 			q(67028),	--
 			q(67029),	--
 			q(67037),	--
 			q(67040),	--
 			q(67042),	--
 			q(67045),	--
-			q(67049),	--
 			q(67052),	--
 			q(67054),	--
 			q(67058),	--
-			q(67059),	--
-			q(67060),	--
-			q(67061),	--
 			q(67069),	--
 			q(67085),	--
 			q(67086),	--
@@ -7065,7 +7060,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69667),	--
 			q(69668),	--
 			q(69669),	--
-			q(69839),	--
 			q(69840),	--
 			q(69841),	--
 			q(69849),	--
@@ -7109,7 +7103,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69978),	--
 			q(69982),	--
 			q(69985),	--
-			q(69987),	--
 			q(69988),	--
 			q(69989),	--
 			q(69996),	--
@@ -7120,7 +7113,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70011),	--
 			q(70013),	--
 			q(70014),	--
-			q(70015),	--
 			q(70017),	--
 			q(70018),	--
 			q(70019),	--
@@ -7247,7 +7239,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70629),	--
 			q(70630),	--
 			q(70635),	--
-			q(70636),	--
 			q(70637),	--
 			q(70639),	--
 			-- 10.0.0.44999
@@ -7318,7 +7309,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 10.0.0.45335
 			q(70993),	--
 			q(71156),	--
-			q(71164),	--
 			q(71181),	--
 			q(71186),	--
 			q(71189),	--
@@ -7757,13 +7747,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72643),	-- Dragon Isles Supplies
 			q(72646),	--
 			q(72647),	--
-			q(72649),	--
 			q(72676),	--
 			q(72683),	--
 			q(72684),	--
 			q(72687),	--
 			q(72695),	--
-			q(72696),	--
 			q(72697),	--
 			q(72698),	--
 			q(72701),	--

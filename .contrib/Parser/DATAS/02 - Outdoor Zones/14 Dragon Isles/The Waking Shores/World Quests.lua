@@ -10,6 +10,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- q(QUEST, {	-- NAME
 				-- 	-- ["coord"] = { XX, YY, THE_WAKING_SHORES }
 				-- }),
+				q(70636, {	-- Ancient Protodragons
+					["coord"] = { 35.1, 81.6, THE_WAKING_SHORES },
+				}),
 				q(67062, {	-- Cascading Conflict
 					["coord"] = { 48.0, 52.2, THE_WAKING_SHORES },
 				}),
@@ -21,6 +24,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				q(66989, {	-- Helpful Harvest
 					["coord"] = { 58.2, 64.7, THE_WAKING_SHORES },
+				}),
+				q(67026, {	-- Hold the Shrine
+					["coord"] = { 58.4, 78.5, THE_WAKING_SHORES },
 				}),
 				pvp(q(67005, {	-- How to Train a Proto-Drake
 					["coord"] = { 40, 89, THE_WAKING_SHORES }
@@ -64,9 +70,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				--[[
 				q(67014, {	-- Gorlocs No More-locs
 					["coord"] = { 80, 39.6, THE_WAKING_SHORES },
-				}),
-				q(67026, {	-- Hold the Shrine
-					["coord"] = { 58.4, 78.5, THE_WAKING_SHORES },
 				}),
 				q(70021, {	-- Tale of Tapionnuq
 					["coord"] = { 15.1, 91.3, THE_WAKING_SHORES },

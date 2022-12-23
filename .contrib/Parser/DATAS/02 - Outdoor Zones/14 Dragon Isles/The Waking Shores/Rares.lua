@@ -61,6 +61,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200259),	-- Forest Dweller's Shield
 					i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
 					i(197121),	-- Highland Drake: Tan Horns (DM!)
+					i(200229),	-- Slightly Digested Leggings
 				},
 			}),
 			n(193177, {	-- Beakers
@@ -100,6 +101,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200286),	-- Dragonbane Lance
 					i(200757),	-- Qalashi War-Helm
 				},
+			}),
+			n(187745, {	-- Disoriented Watcher
+				["coord"] = { 67.8, 55.4, THE_WAKING_SHORES },
+				["questID"] = 74092,
 			}),
 			n(191611, {	-- Dragonhunter Igordan
 				["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
@@ -195,7 +200,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(197023),	-- Cliffside Wylderdrake: Maned Neck (DM!)
 					i(200246),	-- Lost Delving Lamp
-					i(200198),	-- Primalist Prison (TOY!)
 					i(200254),	-- Totemic Cinch
 				},
 			}),
