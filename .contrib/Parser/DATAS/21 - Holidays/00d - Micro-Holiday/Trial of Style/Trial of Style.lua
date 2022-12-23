@@ -255,6 +255,38 @@ root("Holidays", applyholiday(MICRO_HOLIDAY, holiday(TRIAL_OF_STYLE, bubbleDown(
 			}),
 
 			--
+			i(190429, {	-- Clasp of Ursine Rage
+				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
+				["timeline"] = { ADDED_10_0_5 },
+			}),
+			i(190544, {	-- Ultramafic Girdle
+				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
+				["timeline"] = { ADDED_10_0_5 },
+			}),
+			i(190673, {	-- Waistguard of the Infernal Eye
+				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
+				["timeline"] = { ADDED_10_0_5 },
+			}),
+			i(190697, {	-- Boots of a Broken World
+				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
+				["timeline"] = { ADDED_10_0_5 },
+			}),
+			i(190803, {	-- Lost Acolyte's Boots
+				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
+				["timeline"] = { ADDED_10_0_5 },
+			}),
+			i(190830, {	-- Mad Thief's Boots
+				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
+				["timeline"] = { ADDED_10_0_5 },
+			}),
+			i(190858, {	-- Girdle of Chilled Embers
+				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
+				["timeline"] = { ADDED_10_0_5 },
+			}),
+			i(190888, {	-- Embrace of the Great Dark Beyond
+				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 15 }, },
+				["timeline"] = { ADDED_10_0_5 },
+			}),
 			i(202295, {	-- Anointed Crusader's Claymore
 				["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 50 }, },
 				["timeline"] = { ADDED_10_0_5 },
