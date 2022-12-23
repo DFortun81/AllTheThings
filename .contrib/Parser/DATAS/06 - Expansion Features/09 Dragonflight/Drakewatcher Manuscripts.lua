@@ -54,7 +54,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(196998),	-- Cliffside Wylderdrake: Hook Horns (DM!)
 		i(196985),	-- Cliffside Wylderdrake: Horned Jaw (DM!)
 		i(197005),	-- Cliffside Wylderdrake: Horned Nose (DM!)
-		i(197017),	-- Cliffside Wylderdrake: Large Tail Spikes
+		i(197017),	-- Cliffside Wylderdrake: Large Tail Spikes (DM!)
 		i(196983),	-- Cliffside Wylderdrake: Maned Jaw (DM!)
 		i(197023),	-- Cliffside Wylderdrake: Maned Neck (DM!)
 		i(197016),	-- Cliffside Wylderdrake: Maned Tail

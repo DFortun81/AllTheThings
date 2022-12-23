@@ -156,6 +156,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
+					-- RENOWN 17 --
+				q(71149, {	-- Continued Waygate Exploration
+					["description"] = "Requires Renown 17. Spawns Anywhere on Dragon Isles.",
+					["provider"] = { "n", 196643 },	-- Doc Nanners
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
 			}),
 		}),
 	}),
@@ -165,6 +171,7 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(71183),	-- triggered together with 'Continued Waygate Exploration' (70702)
 		q(71185),	-- triggered together with 'Continued Waygate Exploration' (71146)
 		q(71187),	-- triggered together with 'Continued Waygate Exploration' (71148)
+		q(71188),	-- triggered together with 'Continued Waygate Exploration' (71149)
 		q(73864),	-- triggered when accepting 'Dormant Discovery' (66595)
 	}),
 })));

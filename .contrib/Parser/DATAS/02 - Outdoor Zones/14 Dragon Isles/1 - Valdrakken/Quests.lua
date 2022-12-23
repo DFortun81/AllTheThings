@@ -22,7 +22,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 
-
 			-- LEVEL 70
 			-- SIDE 1
 			q(67007, {	-- Archival Assistance
@@ -31,8 +30,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["isBreadcrumb"] = true,
 			}),
 
-
-			-- SIDE 2
+			-- The Ruby Feast week 1
 			q(71238, {	-- The Ruby Feast!
 				["provider"] = { "o", 382166 },	-- The Ruby Feast!
 				["coords"] = {
@@ -57,7 +55,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200886),	-- Lemon Silverleaf Tea
 				},
 			}),
-			-- Next week?
+
+			-- The Ruby Feast week 2
 			q(70932, {	-- The Life of Spice
 				["sourceQuests"] = { 67047 },	-- Warm Away These Shivers
 				["provider"] = { "n", 189479 },	-- Rumiastrasza
@@ -73,7 +72,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200889),	-- Highly-Spiced Haunch
 				},
 			}),
-			-- Another week?
+
+			-- The Ruby Feast week 3
 			q(70957, {	-- The Sea Out West
 				["sourceQuests"] = { 67063 },	-- 10,000 Years of Roasting
 				["provider"] = { "n", 189479 },	-- Rumiastrasza
@@ -87,6 +87,23 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200892),	-- Dragonfruit Punch
 					i(200891),	-- Druidic Dreamsalad
 					i(200890),	-- Stonetalon Bloom Skewer
+				},
+			}),
+
+			-- The Ruby Feast week 4
+			q(70958, {	-- Finest Fungi at the Feast
+				["sourceQuests"] = { 67064 },	-- Rambling Delight
+				["provider"] = { "n", 189479 },	-- Rumiastrasza
+				["coord"] = { 61.5, 11.8, VALDRAKKEN },
+			}),
+			q(67065, {	-- Future-Fresh Fungi
+				["sourceQuests"] = { 70958 },	-- Finest Fungi at the Feast
+				["provider"] = { "n", 187025 },	-- Warden Captain Sinjoirmi
+				["coord"] = { 60.3, 82.2, THALDRASZUS },
+				["g"] = {
+					i(200893),	-- Azsunian-Poached Lobster
+					i(200894),	-- Rare Vintage Arcwine
+					i(200895),	-- Fine Taladorian Cheese Platter
 				},
 			}),
 
@@ -294,6 +311,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(67055),	-- triggered with 'Warm Away These Shivers' (67047)
 		q(67056),	-- triggered after '10,000 Years of Roasting' (67063)
 		q(67057),	-- triggered after 'Rambling Delight' (67064)
+		q(67058),	-- triggered after 'Future-Fresh Fungi' (67065)
 		q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel
 	}),
 }));

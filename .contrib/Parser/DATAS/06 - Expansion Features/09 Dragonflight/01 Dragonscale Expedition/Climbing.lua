@@ -42,31 +42,38 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 			}),
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
+					-- The Waking Shores --
+				q(66070, {	-- Brightblade's Bones
+					["coord"] = { 22.0, 95.1, THE_WAKING_SHORES },
+				}),
+				q(64768, {	-- Lightsprocket's Artifact Hunt
+					["coord"] = { 48.7, 36.8, THE_WAKING_SHORES },
+				}),
+
+					-- Ohn'ahran Plains --
+				q(70655, {	-- Leaves from the Vine
+					["coord"] = { 82.9, 31.8, OHNAHRAN_PLAINS },
+				}),
+
+					-- The Azure Span --
 				q(70662, {	-- A Bone to Pickaxe
 					["coord"] = { 27.7, 44.1, THE_AZURE_SPAN },
 				}),
 				q(70658, {	-- Artifact or Fiction
 					["coord"] = { 71.5, 22.2, THE_AZURE_SPAN },
 				}),
-				q(66070, {	-- Brightblade's Bones
-					["coord"] = { 22.0, 95.1, THE_WAKING_SHORES },
-				}),
-				q(70655, {	-- Leaves from the Vine
-					["coord"] = { 82.9, 31.8, OHNAHRAN_PLAINS },
-				}),
+
+					-- Thaldraszus --
 				q(70661, {	-- Supplies on High
 					["coord"] = { 44.6, 50.1, THALDRASZUS },
 				}),
 				--q(70656, {	-- Not Mushroom For Error
 				--	["coord"] = { 44.6, 50.1, THALDRASZUS },
 				--}),
-
-
-
+				
 				--[[
 				WS
 				q(70651),	-- Stolen Luggage
-				q(64768),	-- Lightsprocket's Artifact Hunt
 				OP
 				q(70652),	-- Take One Down, Pass It Around
 				q(70660),	-- Ohn'ahran Plains
@@ -85,6 +92,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(72560),	-- Triggered after completing Climb Every Mountain (questID 65421)
 		q(72002),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (???)
 		q(71997),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (66070)
+		q(71998),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (64768)
 		q(71999),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70652)
 		q(72001),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70655)
 		q(72003),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70658)

@@ -724,7 +724,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(195181),	-- Rapid Fire
 
 
-			i(197684),	-- Argali Shearing Blade
 			i(197693),	-- Shikaar Hunter's Crossbow
 			i(197904),	-- Shikaar Hunting Knife
 			i(200130),	-- Corpse Ripper
@@ -817,7 +816,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197014),	-- Cliffside Wylderdrake: White Scales
 			i(197015),	-- Cliffside Wylderdrake: Dark Skin Variation
 			i(197016),	-- Cliffside Wylderdrake: Maned Tail
-			i(197017),	-- Cliffside Wylderdrake: Large Tail Spikes
 			i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail
 			i(197022),	-- Cliffside Wylderdrake: Finned Neck
 			i(197095),	-- Highland Drake: Gold and White Armor
@@ -1546,9 +1544,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200887),	-- Charred Porter
 			i(200888),	-- Coal-Fired Rib Rack
 			i(200889),	-- Highly-Spiced Haunch
-			i(200893),	-- Azsunian-Poached Lobster
-			i(200894),	-- Rare Vintage Arcwine
-			i(200895),	-- Fine Taladorian Cheese Platter
 			i(200896),	-- Captain's Caramelized Catfish
 			i(200897),	-- Venrik's Goat Milk
 			i(200898),	-- Mantis Shrimp Cocktail

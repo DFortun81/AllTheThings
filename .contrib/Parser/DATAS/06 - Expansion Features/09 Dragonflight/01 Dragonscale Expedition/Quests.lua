@@ -319,6 +319,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					sp(388264),	-- Magical Chests of the Dragon Isles
 				},
 			}),
+				-- RENOWN 17 --
+			q(70831, {	-- Researching in Comfort
+				["description"] = "Requires Renown 17.",
+				["provider"] = { "n", 188265 },	-- Rae'ana
+				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
+				["g"] = {
+					i(198721),	-- Skinny Reliquary Pillow (TOY!)
+					i(198722),	-- Small Triangular Pillow (TOY!)
+					i(198720),	-- Soft Purple Pillow (TOY!)
+				},
+			}),
 
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
@@ -367,6 +378,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 48.0, 82.1, THE_WAKING_SHORES },
 				["isWeekly"] = true,
 			}),
+			q(70965, {	-- Wanted: Watcher's Golden Girdle
+				["provider"] = { "o", 381579 },	-- Archivists' Request
+				["coord"] = { 47.5, 83.6, THE_WAKING_SHORES },
+				["isWeekly"] = true,
+			}),
 		}),
 	}),
 })));
@@ -382,6 +398,7 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(72039),	-- Triggered with 'Renowned Explorer's Armor' (70819)
 		q(72040),	-- Triggered with 'Deeper Mysteries of the Dragon Isles Drakes' (70809)
 		q(72041),	-- Triggered with 'Unlocking Magical Treasures' (70814)
+		q(72042),	-- Triggered with 'Researching in Comfort' (70831)
 
 		-- Ensembles
 		q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor

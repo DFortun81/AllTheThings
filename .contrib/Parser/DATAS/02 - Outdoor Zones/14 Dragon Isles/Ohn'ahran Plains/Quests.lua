@@ -941,6 +941,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(197691),	-- Amaa's Golden Mace
+					i(197684),	-- Argali Shearing Blade
 					i(197703),	-- Ceeqa's Toothpick
 					i(197677),	-- Plainswalking Stick
 					i(197679),	-- Rockfang Uppercut

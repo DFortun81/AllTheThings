@@ -6,6 +6,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		n(AERIAL_CHALLENGES, {
 			n(REWARDS, {
 				i(199192, {	-- Dragon Racer's Purse
+					i(197017),	-- Cliffside Wylderdrake: Large Tail Spikes (DM!)
 					i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
 					i(197366),	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
 					i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw (DM!)
