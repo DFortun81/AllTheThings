@@ -23,6 +23,7 @@ ROOTS = {
 	["Promotions"] = "Promotions",
 	["BlackMarket"] = "BlackMarket",
 	["InGameShop"] = "InGameShop",
+	["TradingPost"] = "TradingPost",
 	["PetBattles"] = "PetBattles",
 	["HiddenQuestTriggers"] = "HiddenQuestTriggers",
 	["HiddenAchievementTriggers"] = "HiddenAchievementTriggers",
