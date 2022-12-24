@@ -518,18 +518,59 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 				-- RENOWN 24 --
-			-- TODO: all profession quests...
-			q(70909, {	-- Crafting for Expertise [Blacksmithing]
+			q(70889, {	-- Crafting for Expertise
+				["description"] = "Requires Renown 24.",
+				["qg"] = 191000,	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = ALCHEMY,
+				["g"] = {
+					i(201706),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(70902, {	-- Crafting for Expertise
+				["description"] = "Requires Renown 24.",
+				["qg"] = 191000,	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = ENGINEERING,
+				["g"] = {
+					i(201710),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(70909, {	-- Crafting for Expertise
 				["description"] = "Requires Renown 24.",
 				["qg"] = 191000,	-- Dothenos
 				["coord"] = { 36.4, 52.8, VALDRAKKEN },
 				["requireSkill"] = BLACKSMITHING,
+				["g"] = {
+					i(201708),	-- Notebook of Crafting Knowledge
+				},
 			}),
-			q(72335, {	-- Crafting for Expertise [Mining]
+			q(72334, {	-- Crafting for Expertise
+				["description"] = "Requires Renown 24.",
+				["qg"] = 191000,	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = INSCRIPTION,
+				["g"] = {
+					i(201711),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72335, {	-- Crafting for Expertise
 				["description"] = "Requires Renown 24.",
 				["qg"] = 191000,	-- Dothenos
 				["coord"] = { 36.4, 52.8, VALDRAKKEN },
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(201716),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72336, {	-- Crafting for Expertise
+				["description"] = "Requires Renown 24.",
+				["qg"] = 191000,	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = TAILORING,
+				["g"] = {
+					i(201715),	-- Notebook of Crafting Knowledge
+				},
 			}),
 				-- RENOWN 25 --
 		}),

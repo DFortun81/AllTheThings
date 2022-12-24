@@ -647,7 +647,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201359),	-- Glimmer of Earth
 			i(201360),	-- Glimmer of Order
 			i(201361),	-- Primal Inspiration
-			i(201716),	-- Notebook of Crafting Knowledge
 
 			i(198853),	-- Tinker: Always Malfunction
 		}),
@@ -908,7 +907,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198869),	-- Large Valdrakken Accord Supply Pack
 			i(199472),	-- Overflowing Dragon Expedition Supply Pack
 			i(199473),	-- Overflowing Iskaaran Supply Pack
-			i(199474),	-- Overflowing Maruuk Centaur Supply Satchel
 			i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 			i(200285),	-- Dragonscale Expedition Insignia
 			i(200287),	-- Iskaara Tuskarr Insignia

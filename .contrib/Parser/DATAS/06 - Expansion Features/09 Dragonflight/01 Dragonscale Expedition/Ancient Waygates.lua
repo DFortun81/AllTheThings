@@ -166,12 +166,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
-					-- RENOWN 17 --
-				q(71149, {	-- Continued Waygate Exploration
-					["description"] = "Requires Renown 17. Spawns Anywhere on Dragon Isles.",
-					["provider"] = { "n", 196643 },	-- Doc Nanners
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
-				}),
 			}),
 		}),
 	}),

@@ -344,6 +344,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(197921),	-- Primal Infusion
 				},
 			}),
+				-- Paragon --
+			q(65606, {	-- Renowned with the Maruuk
+				["description"] = "Requires Renown 25.",
+				["provider"] = { "n", 185179 },	-- Agari Dotur
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["isRepeatable"] = true,
+				["g"] = {
+					i(199474),	-- Overflowing Maruuk Centaur Supply Satchel
+				},
+			}),
 		}),
 	}),
 })));
