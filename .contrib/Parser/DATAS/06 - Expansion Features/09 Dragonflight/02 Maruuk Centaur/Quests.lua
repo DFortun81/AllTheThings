@@ -145,17 +145,41 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 			}),
+			q(72764, {	-- Sharing the Bounty
+				["description"] = "Requires Renown 8.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
+				},
+			}),
 				-- RENOWN 9 --
 			q(70541, {	-- Hunting Tactics: Companion
 				["description"] = "Requires Renown 9.",
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
 			}),
+			q(72765, {	-- Sharing the Bounty
+				["description"] = "Requires Renown 9.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
+				},
+			}),
 				-- RENOWN 10 --
 			q(71028, {	-- Hunting Tactics: Blessing of Ohn'ahra
 				["description"] = "Requires Renown 10.",
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
+			}),
+			q(72766, {	-- Sharing the Bounty
+				["description"] = "Requires Renown 10.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
+				},
 			}),
 				-- RENOWN 11 --
 			q(71066, {	-- A Useful Curiosity
@@ -174,6 +198,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
 			}),
+			q(72767, {	-- Sharing the Bounty
+				["description"] = "Requires Renown 12.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
+				},
+			}),
 				-- RENOWN 13 --
 			q(71073, {	-- Mantle of Friendship
 				["description"] = "Requires Renown 13.",
@@ -186,6 +218,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(200494),	-- Shikaar Scout's Shoulderpads
 					i(200493),	-- Ohn'ir Daylight Shoulderpads
 					i(200502),	-- Ohn'ir Midnight Shoulderpads
+					i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned all items
 				},
 			}),
 				-- RENOWN 14 --
@@ -195,6 +228,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(194885),	-- Ohuna Perch (TOY!)
+				},
+			}),
+			q(72131, {	-- Overstocking
+				["description"] = "Requires Renown 14.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
 				},
 			}),
 			q(72296, {	-- A Gift of Knowledge
@@ -250,6 +291,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(197618),	-- Windborne Velocidrake: Long Snout (DM!)
 					i(197623),	-- Windborne Velocidrake: Spiked Tail (DM!)
+					i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned both Drakewatcher Manuscripts
 				},
 			}),
 				-- RENOWN 16 --
@@ -257,6 +299,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires Renown 16.",
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
+			}),
+			q(72768, {	-- Our Great Bounty
+				["description"] = "Requires Renown 16.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198864),	-- Large Maruuk Centaur Supply Satchel
+				},
 			}),
 				-- RENOWN 17	--
 			q(71079, {	-- Getting to the Point
@@ -267,14 +317,24 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201159),	-- Aloom's Token
 				},
 			}),
+				-- RENOWN 18 --
+			q(72770, {	-- Our Great Bounty
+				["description"] = "Requires Renown 18.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198864),	-- Large Maruuk Centaur Supply Satchel
+				},
+			}),
 				-- RENOWN 19 --
-			q(71083, {	-- Understanding Their Grace
+			q(71083, {	-- An Expected Unexpected Gift
 				["description"] = "Requires Renown 19.",
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(197011),	-- Cliffside Wylderdrake: Green Scales (DM!)
 					i(197143),	-- Highland Drake: Green Scales (DM!)
+					i(197389),	-- Renewed Proto-Drake: Green Scales (DM!)
 				},
 			}),
 				-- RENOWN 20 --
@@ -282,6 +342,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires Renown 20.",
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
+			}),
+			q(72771, {	-- Our Great Bounty
+				["description"] = "Requires Renown 20.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198864),	-- Large Maruuk Centaur Supply Satchel
+				},
 			}),
 				-- RENOWN 21	--
 			q(71085, {	-- Representation Matters

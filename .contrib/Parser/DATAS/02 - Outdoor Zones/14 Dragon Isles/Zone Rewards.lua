@@ -73,6 +73,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(197943),	-- Elder's Bioluminous Quarterstaff
 			i(197956),	-- Empowered Shortsword of Insight
 			i(197940),	-- Hefty Iskaaran Anchor
+			i(197937),	-- Intricate Scaling Knife
 			i(192023),	-- Lava-Forged Decapitator
 			i(192034),	-- Marauder's Singing Blade
 			i(192033),	-- Maruuk Battle Standard

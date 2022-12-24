@@ -691,7 +691,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197933),	-- Lutokk's Wedding Ring
 			i(197935),	-- Seafarer's Hatchet
 			i(197936),	-- Serrated Deboning Knife
-			i(197937),	-- Intricate Scaling Knife
 			i(197938),	-- Uktulut Whaling Spear
 			i(197942),	-- Tuskarr Navigator's Staff
 			i(197944),	-- Deepsea Hunter's Crossbow
@@ -883,7 +882,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198657),	-- Forgotten Jewelry Box
 			i(199110),	-- Mechanical Maestro Duck
 			i(198863),	-- Small Dragon Expedition Supply Pack
-			i(198864),	-- Large Maruuk Centaur Supply Satchel
 			i(198865),	-- Large Dragon Expedition Supply Pack
 			i(198866),	-- Small Iskaaran Supply Pack
 			i(198867),	-- Large Iskaaran Supply Pack
