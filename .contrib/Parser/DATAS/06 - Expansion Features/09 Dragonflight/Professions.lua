@@ -354,13 +354,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			--[[q(TODO, {	-- Weekly Alchemy Knowledgepoint #3
+			q(70504, {	-- Weekly Alchemy Knowledgepoint #3
 				["name"] = "Weekly Alchemy Knowledgepoint #3",
 				["provider"] = { "i", 198963 },		-- Decaying Phlegm
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),--]]
+			}),
 			q(66374, {	-- Weekly Alchemy Knowledgepoint #4
 				["name"] = "Weekly Alchemy Knowledgepoint #4",
 				["provider"] = { "i", 193897 },		-- Reawakened Catalyst
@@ -563,13 +563,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			--[[q(TODO, {	-- Weekly Blacksmithing Knowledgepoint #4
+			q(70512, {	-- Weekly Blacksmithing Knowledgepoint #4
 				["name"] = "Weekly Blacksmithing Knowledgepoint #4",
 				["provider"] = { "i", 198965 },		-- Primeval Earth Fragment
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),--]]
+			}),
 		})),
 		prof(COOKING, sharedData({
 			["requireSkill"] = COOKING,

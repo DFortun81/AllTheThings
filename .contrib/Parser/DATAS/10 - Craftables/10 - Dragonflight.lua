@@ -400,7 +400,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			q(71341, { ["name"] = "First Craft: Primal Whetstone", }),	-- Primal Whetstone
 			-- Pets
 			q(71351, { ["name"] = "First Craft: Alvin The Anvil", }),	-- Alvin The Anvil
-			-- Dragon Ridning
+			-- Dragon Riding
 			q(71342, { ["name"] = "First Craft: Prototype Explorer's Barding Framework", }),	-- Prototype Explorer's Barding Framework
 			q(71343, { ["name"] = "First Craft: Prototype Regal Barding Framework", }),	-- Prototype Regal Barding Framework
 		}),
@@ -2166,17 +2166,10 @@ root("HiddenQuestTriggers", {
 			q(71965),	-- First Overload Titan Node
 			q(71963),	-- First Overload Molten Node
 			q(71966),	-- First Overload Primal Node
-			-- TODO: these are weekly, perhaps track them normally
+			-- TODO: these are possibly weekly, perhaps track them normally
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
-			q(72160),	-- Iridescent Ore Fragments
-			q(72161),	-- Iridescent Ore Fragments
-			q(72162),	-- Iridescent Ore Fragments
-			q(72163),	-- Iridescent Ore Fragments
-			q(72164),	-- Iridescent Ore Fragments
-			q(72165),	-- Iridescent Ore
 		}),
 		prof(BLACKSMITHING, {
-			q(70512),	-- Primeval Earth Fragment Drop (maybe weekly tracking?)
 			q(70232),	-- crafting an Alloy material near the Dim Forge in The Waking Shores to trigger the Glimmer of Wisdom
 		}),
 		--[[
@@ -2527,9 +2520,6 @@ root("HiddenQuestTriggers", {
 			-- q(71773),	-- Tuskarr Bean Bag
 		}),
 		prof(SKINNING, {
-			q(70383),	-- Curious Hide Scraps #2
-			q(70384),	-- Curious Hide Scraps #3
-			q(70389),	-- Large Sample of Curious Hide
 			q(74206),	-- Skinning Corrupted Proto-Dragon Rare
 			q(74154),	-- Skinning Muugurv during a Grand Hunt
 			q(74153),	-- Skinning Degmakh during a Grant Hunt
