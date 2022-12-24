@@ -6880,7 +6880,7 @@ AddTomTomWaypoint = function(group)
 
 						local first = root[1];
 						if first then
-							local opt = { from = "ATT", persistent = false };
+							local opt = { from = "ATT" };
 							opt.title = first.text or RETRIEVING_DATA;
 							local displayID = GetDisplayID(first);
 							if displayID then
@@ -17367,6 +17367,7 @@ local DynamicCategory_Simple = function(self)
 		-- delay-sort the top level groups
 		app.SortGroupDelayed(self, "name");
 		-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
+		-- TODO: cache dynamic groups elsewhere since there's never a need to include them in regular search results
 		app.FunctionRunner.Run(app.CacheFields, self);
 		-- run a direct update on itself after being populated
 		app.DirectGroupUpdate(self);
@@ -17389,6 +17390,7 @@ local DynamicCategory_Nested = function(self)
 	-- delay-sort the top level groups
 	app.SortGroupDelayed(self, "name");
 	-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
+	-- TODO: cache dynamic groups elsewhere since there's never a need to include them in regular search results
 	app.FunctionRunner.Run(app.CacheFields, self);
 	-- run a direct update on itself after being populated
 	app.DirectGroupUpdate(self);
@@ -19111,7 +19113,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		(function()
 		local results, groups, nested, header, headerKeys, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID, isInInstance;
 		self.Rebuild = function(self)
-			-- print("Rebuild",self.mapID);
+			-- app.PrintDebug("Rebuild",self.mapID);
 			-- check if this is the same 'map' for data purposes
 			if self:IsSameMapData() then
 				self.data.mapID = self.mapID;
@@ -19121,7 +19123,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			-- Get all results for this map, without any results that have been cloned into Source Ignored groups
 			results = app.CleanSourceIgnoredGroups(SearchForField("mapID", self.mapID));
 			if results then
-				-- print(#results,"Minilist Results for mapID",self.mapID)
+				-- app.PrintDebug(#results,"Minilist Results for mapID",self.mapID)
 				-- Simplify the returned groups
 				groups = {};
 				header = app.CreateMap(self.mapID, { g = groups });
@@ -19133,7 +19135,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					-- app.PrintDebug("Clone",group.hash)
 					group = CreateObject(group);
 					-- app.PrintDebug("Done")
-					-- print(group.key,group.key and group[group.key],group.text)
+					-- app.PrintDebug(group.hash,group.text)
 					nested = nil;
 
 					-- Cache the difficultyID, if there is one and we are in an actual instance where the group is being mapped
@@ -19149,6 +19151,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 								self.CurrentMaps[m] = true;
 							end
 						end
+						-- app.PrintDebug("Merge as Root")
 						MergeProperties(header, group, true);
 						NestObjects(header, group.g);
 						group = nil;
@@ -19194,6 +19197,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						-- Create/match the header chain for the zone list assuming it matches one of the allowed top headers
 						if topHeader then
 							group = CreateHeaderData(group, topHeader);
+							-- app.PrintDebug("topHeader",group.text,group.hash)
 							nested = true;
 						end
 					end
@@ -19227,6 +19231,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					-- If relative to a difficultyID, then merge it into one.
 					if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
 					if group then
+						-- app.PrintDebug("Merge as Mapped")
 						MergeObject(groups, group);
 					end
 				end
@@ -21215,6 +21220,12 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
 						-- Index 2: The Crafted Item IDs => reagentCount
 						-- TODO: potentially re-design this structure
+						-- current:
+						-- reagentCache[reagentItemID][1][<recipeID>] = { craftedItemID, reagentCount }
+						-- reagentCache[reagentItemID][2][craftedItemID] = reagentCount
+						-- 2 table design due to many - many - many relationships
+						-- reagentCache["reagent"][<itemID>][<recipeID>] = Count
+						-- reagentCache["recipe"][<recipeID>][<craftedItemID>] = Count
 						if reagentItemID then
 							reagentItem = reagentCache[reagentItemID];
 							if skipcaching then
