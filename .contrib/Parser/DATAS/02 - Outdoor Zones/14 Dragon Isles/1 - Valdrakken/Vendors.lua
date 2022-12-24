@@ -515,7 +515,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(201268, {	-- Rare Blacksmith's Diagrams
-						-- ["questID"] = TODO,
+						["questID"] = 71905,
 						["requireSkill"] = BLACKSMITHING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
