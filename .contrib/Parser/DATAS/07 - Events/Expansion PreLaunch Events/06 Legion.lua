@@ -209,7 +209,11 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 				q(43242, { ["isRepeatable"] = true, }),	-- Demon Commander (Westfall)
 				q(44184, {	-- In the Blink of an Eye
 					["provider"] = { "n", 114562 },	-- Khadgar's Upgraded Servant
-					["sourceQuests"] = { 44500 },	-- Author! Author!
+					["sourceQuests"] = { 
+						44500,	-- Author! Author!
+						43926,	-- Legion: The Legion Returns
+					},
+					["sourceQuestNumRequired"] = 1,
 					-- #if AFTER SHADOWLANDS
 					["description"] = "This is available to players choosing the Legion Timeline during Chromie Time.",
 					["timeline"] = { "added 7.0.3.22248", "removed 7.0.3.22810", "added 9.0" },
