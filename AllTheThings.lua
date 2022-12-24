@@ -2410,7 +2410,7 @@ local function GetItemIDAndModID(modItemID)
 		local itemID = math.floor(modItemID);
 		modItemID = (modItemID - itemID) * 100;
 		local modID = math.floor(modItemID);
-		modItemID = (modItemID - modID) * 1000000;
+		modItemID = (modItemID - modID) * 10000;
 		local bonusID = math.floor(modItemID);
 		-- print(itemID,modID,bonusID)
 		return itemID, modID, bonusID;
