@@ -29,198 +29,238 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 			}),
 		}),
-		-- GENERAL PROFESSION
-		q(67564, {	-- Artisan's Courier
-			-- ["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
-			["provider"] = { "n", 192498 },	-- Haephesta
-			["coord"] = { 57.9, 68.2, THE_WAKING_SHORES },
-			["g"] = {
-				i(198790),	-- I.O.U
-				i(195357),	-- Artisan's Consortium Invoice
-			},
+		n(QUESTS, {
+			q(67564, {	-- Artisan's Courier
+				-- ["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+				["provider"] = { "n", 192498 },	-- Haephesta
+				["coord"] = { 57.9, 68.2, THE_WAKING_SHORES },
+				["g"] = {
+					i(198790),	-- I.O.U
+					i(195357),	-- Artisan's Consortium Invoice
+				},
+			}),
+			q(67100, {	-- A Gift for Miguel
+				["sourceQuests"] = { 67564 },	-- Artisan's Courier
+				["provider"] = { "n", 192574 },	-- Thomas Bright
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["cost"] = { { "i", 194728, 3 }, },	-- 3xFiery Spirit++
+				["g"] = {
+					i(194715),	-- Gatherer's Pouch
+				},
+			}),
+			q(67143, {	-- To Give One's Heart
+				["sourceQuests"] = { 67100 },	-- A Gift for Miguel
+				["provider"] = { "n", 192574 },	-- Thomas Bright
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(202097),	-- Bulging Box of Skins and Scales
+					i(202098),	-- Crowded Crate of Mined Materials
+					i(202100),	-- Populous Pack of Castoff Clothes
+					i(202099),	-- Stocked Sack of Hale Herbs
+					i(202101),	-- Topped Trunk of Disenchanted Detritus
+					--
+					i(194746),	-- Thomas's Empty Bottle
+					i(194714),	-- Miguel's Gift
+					i(198084),	-- Miguel's Gift
+					-- Recipes
+					r(377978,{["u"]=15}),	-- Heart in a Bottle (ALCHEMY)
+					r(377981,{["u"]=15}),	-- Heart in a Bottle (BLACKSMITHING)
+					r(377982,{["u"]=15}),	-- Heart in a Bottle (ENCHANTING)
+					r(377983,{["u"]=15}),	-- Heart in a Bottle (ENGINEERING)
+					r(377984,{["u"]=15}),	-- Heart in a Bottle (HERBALISM)
+					r(377985,{["u"]=15}),	-- Heart in a Bottle (INSCRIPTION)
+					r(377915,{["u"]=15}),	-- Heart in a Bottle (JEWELCRAFTING)
+					r(377989,{["u"]=15}),	-- Heart in a Bottle (LEATHERWORKING)
+					r(377987,{["u"]=15}),	-- Heart in a Bottle (MINING)
+					r(377988,{["u"]=15}),	-- Heart in a Bottle (SKINNING)
+					r(377986,{["u"]=15}),	-- Heart in a Bottle (TAILORING)
+				},
+			}),
+			q(67137, {	-- Professionally Equipped
+				["sourceQuests"] = { 67100 },	-- A Gift for Miguel
+				["provider"] = { "n", 192539 },	-- Miguel Bright
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(193487),	-- Alchemist's Hat
+					i(193615),	-- Jeweler's Tool Apron
+					i(193486),	-- Resilient Smock
+					i(193482),	-- Skinner's Cap
+					i(193534),	-- Wildercloth Chef's Hat
+					i(193529),	-- Wildercloth Fishing Cap
+					i(193612),	-- Smithing Apron
+					i(198243),	-- Draconium Delver's Helmet
+					i(191239),	-- Draconium Needle Set
+				},
+			}),
+			q(70126, {	-- A Finishing Touch
+				["sourceQuests"] = {
+					67143,	-- To Give One's Heart
+					67137,	-- Professionally Equipped
+				},
+				["provider"] = { "n", 192539 },	-- Miguel Bright
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(197765),	-- Impossibly Sharp Cutting Knife
+					i(191516),	-- Brood Salt
+					i(190456),	-- Artisan's Mettle
+				},
+			}),
+			q(67295, { -- That's My Specialty
+				-- ["sourceQuests"] = { 70126 },	-- A Finishing Touch
+				["provider"] = { "n", 192539 },	-- Miguel Bright
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(191784),	-- Dragon Shard of Knowledge
+				},
+			}),
+			q(67298, { -- The Wonders of the World
+				["sourceQuests"] = { 67295 },	-- That's My Specialty
+				["provider"] = { "n", 192539 },	-- Miguel Bright
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(191784),	-- Dragon Shard of Knowledge
+				},
+			}),
+			q(69946, { -- The Master of Their Craft
+				["sourceQuests"] = { 67298 },	-- The Wonders of the World
+				["provider"] = { "n", 192539 },	-- Miguel Bright
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(191784),	-- Dragon Shard of Knowledge
+				},
+			}),
+			q(69919, {	-- A Craft in Need
+				["provider"] = { "n", 194026 },	-- Azley
+				["coords"] = {
+					{ 72.0, 81.1, OHNAHRAN_PLAINS },
+					{ 35.4, 58.8, VALDRAKKEN },
+				},
+				["g"] = {
+					i(193528),	-- Wildercloth Alchemist's Robe
+					i(193529),	-- Wildercloth Fishing Cap
+					i(193615),	-- Jeweler's Cover
+				},
+			}),
+			q(69915, {	-- Targeted Ads
+				["provider"] = { "n", 194026 },	-- Azley
+				["coords"] = {
+					{ 72.0, 81.1, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(191234),	-- Alchemist's Sturdy Mixing Rod
+					i(198225),	-- Draconium Fisherfriend
+					i(191233),	-- Chef's Smooth Rolling Pin
+				},
+			}),
+			q(69981, {	-- Customer Satisfaction
+				["provider"] = { "n", 194026 },	-- Azley
+				["coords"] = {
+					{ 72.0, 81.1, OHNAHRAN_PLAINS },
+					{ 35.4, 58.8, VALDRAKKEN },
+				},
+				["g"] = {
+					i(193515),	-- Explorer's Cloth Robe
+					i(193390),	-- Resilient Leather Tunic
+					i(193394),	-- Adamant Scale Vest
+					i(189538),	-- Explorer's Plate Chestguard
+					i(198048),	-- Titan Training Matrix I
+					i(201343),	-- Bag of Cloth Armor Reagents
+					i(201352),	-- Bag of Leather Reagents
+					i(201353),	-- Bag of Mail Armor Reagents
+					i(201354),	-- Bag of Plate Armor Reagents
+				},
+			}),
+			q(70221, {	-- Show Your Mettle
+				["provider"] = { "n", 192574 },	-- Thomas Bright
+				["minReputation"] = { 2544, 2 },	-- Artisan's Consortium, Preferred (2)
+				["isWeekly"] = true,
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(190456),	-- Artisan's Mettle
+				},
+			}),
+
+			-- In Tyr's Footsteps chapter 1
+			q(72773, {	-- Learning Ingenuity
+				["provider"] = { "n", 196499 },	-- Therazal
+				["coord"] = { 50.2, 55.9, VALDRAKKEN },
+				["isBreadcrumb"] = true,	-- unconfirmed
+			}),
+			q(70180, {	-- Jump-Start? Jump-Starting!
+				["sourceQuests"] = { 72773 },	-- Learning Ingenuity
+				["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
+				["coord"] = { 84.2, 54.4, VALDRAKKEN },
+			}),
+
+			-- In Tyr's Footsteps chapter 2
+			q(70845, {	-- In Tyr's Footsteeps
+				["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
+				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+				["coord"] = { 84.3, 53.5, VALDRAKKEN },
+			}),
+			q(70181, {	-- First Challenge of Tyr: Finesse
+				["sourceQuests"] = { 70845 },	-- In Tyr's Footsteeps
+				["provider"] = { "o", 379290 },	-- Ornamented Statue
+				["coord"] = { 67.2, 30.8, THE_AZURE_SPAN },
+				["g"] = {
+					i(199197),	-- Bottled Essence
+				},
+			}),
+			q(70182, {	-- The Sweet Taste of Victory
+				["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
+				["provider"] = { "n", 195827 },	-- Maiden of Inspiration
+				["coord"] = { 67.1, 30.9, THE_AZURE_SPAN },
+			}),
+			q(70633, {	-- Fueling the Engine
+				["sourceQuests"] = { 70182 },	-- The Sweet Taste of Victory
+				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+				["coord"] = { 84.3, 53.5, VALDRAKKEN },
+			}),
+
+			-- In Tyr's Footsteps chapter 3
+			q(70339, {	-- In Tyr's Footsteps: The Ohn'ahran Plains
+				["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
+				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+				["coord"] = { 84.3, 53.5, VALDRAKKEN },
+			}),
+			q(70376, {	-- Second Challenge of Tyr: Might
+				["sourceQuests"] = { 70339 },	-- In Tyr's Footsteps: The Ohn'ahran Plains
+				["provider"] = { "o", 380540 },	-- Ornamented Statue
+				["coord"] = { 66.2, 55.3, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(199197),	-- Bottled Essence
+				},
+			}),
+			q(70341, {	-- Well Earned Vicotry
+				["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
+				["provider"] = { "n", 195924 },	-- Maiden of Inspiration
+				["coord"] = { 66.3, 55.3, VALDRAKKEN },
+			}),
 		}),
-		q(67100, {	-- A Gift for Miguel
-			["sourceQuests"] = { 67564 },	-- Artisan's Courier
-			["provider"] = { "n", 192574 },	-- Thomas Bright
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["cost"] = { { "i", 194728, 3 }, },	-- 3xFiery Spirit++
-			["g"] = {
-				i(194715),	-- Gatherer's Pouch
-			},
-		}),
-		q(67143, {	-- To Give One's Heart
-			["sourceQuests"] = { 67100 },	-- A Gift for Miguel
-			["provider"] = { "n", 192574 },	-- Thomas Bright
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(202097),	-- Bulging Box of Skins and Scales
-				i(202098),	-- Crowded Crate of Mined Materials
-				i(202100),	-- Populous Pack of Castoff Clothes
-				i(202099),	-- Stocked Sack of Hale Herbs
-				i(202101),	-- Topped Trunk of Disenchanted Detritus
-				--
-				i(194746),	-- Thomas's Empty Bottle
-				i(194714),	-- Miguel's Gift
-				i(198084),	-- Miguel's Gift
-				-- Recipes
-				r(377978,{["u"]=15}),	-- Heart in a Bottle (ALCHEMY)
-				r(377981,{["u"]=15}),	-- Heart in a Bottle (BLACKSMITHING)
-				r(377982,{["u"]=15}),	-- Heart in a Bottle (ENCHANTING)
-				r(377983,{["u"]=15}),	-- Heart in a Bottle (ENGINEERING)
-				r(377984,{["u"]=15}),	-- Heart in a Bottle (HERBALISM)
-				r(377985,{["u"]=15}),	-- Heart in a Bottle (INSCRIPTION)
-				r(377915,{["u"]=15}),	-- Heart in a Bottle (JEWELCRAFTING)
-				r(377989,{["u"]=15}),	-- Heart in a Bottle (LEATHERWORKING)
-				r(377987,{["u"]=15}),	-- Heart in a Bottle (MINING)
-				r(377988,{["u"]=15}),	-- Heart in a Bottle (SKINNING)
-				r(377986,{["u"]=15}),	-- Heart in a Bottle (TAILORING)
-			},
-		}),
-		q(67137, {	-- Professionally Equipped
-			["sourceQuests"] = { 67100 },	-- A Gift for Miguel
-			["provider"] = { "n", 192539 },	-- Miguel Bright
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(193487),	-- Alchemist's Hat
-				i(193615),	-- Jeweler's Tool Apron
-				i(193486),	-- Resilient Smock
-				i(193482),	-- Skinner's Cap
-				i(193534),	-- Wildercloth Chef's Hat
-				i(193529),	-- Wildercloth Fishing Cap
-				i(193612),	-- Smithing Apron
-				i(198243),	-- Draconium Delver's Helmet
-				i(191239),	-- Draconium Needle Set
-			},
-		}),
-		q(70126, {	-- A Finishing Touch
-			["sourceQuests"] = {
-				67143,	-- To Give One's Heart
-				67137,	-- Professionally Equipped
-			},
-			["provider"] = { "n", 192539 },	-- Miguel Bright
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(197765),	-- Impossibly Sharp Cutting Knife
-				i(191516),	-- Brood Salt
-				i(190456),	-- Artisan's Mettle
-			},
-		}),
-		q(67295, { -- That's My Specialty
-			-- ["sourceQuests"] = { 70126 },	-- A Finishing Touch
-			["provider"] = { "n", 192539 },	-- Miguel Bright
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(191784),	-- Dragon Shard of Knowledge
-			},
-		}),
-		q(67298, { -- The Wonders of the World
-			["sourceQuests"] = { 67295 },	-- That's My Specialty
-			["provider"] = { "n", 192539 },	-- Miguel Bright
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(191784),	-- Dragon Shard of Knowledge
-			},
-		}),
-		q(69946, { -- The Master of Their Craft
-			["sourceQuests"] = { 67298 },	-- The Wonders of the World
-			["provider"] = { "n", 192539 },	-- Miguel Bright
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(191784),	-- Dragon Shard of Knowledge
-			},
-		}),
-		q(69919, {	-- A Craft in Need
-			["provider"] = { "n", 194026 },	-- Azley
-			["coords"] = {
-				{ 72.0, 81.1, OHNAHRAN_PLAINS },
-				{ 35.4, 58.8, VALDRAKKEN },
-			},
-			["g"] = {
-				i(193528),	-- Wildercloth Alchemist's Robe
-				i(193529),	-- Wildercloth Fishing Cap
-				i(193615),	-- Jeweler's Cover
-			},
-		}),
-		q(69915, {	-- Targeted Ads
-			["provider"] = { "n", 194026 },	-- Azley
-			["coords"] = {
-				{ 72.0, 81.1, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(191234),	-- Alchemist's Sturdy Mixing Rod
-				i(198225),	-- Draconium Fisherfriend
-				i(191233),	-- Chef's Smooth Rolling Pin
-			},
-		}),
-		q(69981, {	-- Customer Satisfaction
-			["provider"] = { "n", 194026 },	-- Azley
-			["coords"] = {
-				{ 72.0, 81.1, OHNAHRAN_PLAINS },
-				{ 35.4, 58.8, VALDRAKKEN },
-			},
-			["g"] = {
-				i(193515),	-- Explorer's Cloth Robe
-				i(193390),	-- Resilient Leather Tunic
-				i(193394),	-- Adamant Scale Vest
-				i(189538),	-- Explorer's Plate Chestguard
-				i(198048),	-- Titan Training Matrix I
-				i(201343),	-- Bag of Cloth Armor Reagents
-				i(201352),	-- Bag of Leather Reagents
-				i(201353),	-- Bag of Mail Armor Reagents
-				i(201354),	-- Bag of Plate Armor Reagents
-			},
-		}),
-		q(70221, {	-- Show Your Mettle
-			["provider"] = { "n", 192574 },	-- Thomas Bright
-			["minReputation"] = { 2544, 2 },	-- Artisan's Consortium, Preferred (2)
-			["isWeekly"] = true,
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(190456),	-- Artisan's Mettle
-			},
-		}),
-		-- Chap 0
-		q(72773, {	-- Learning Ingenuity
-			["provider"] = { "n", 196499 },	-- Therazal
-			["coord"] = { 50.2, 55.9, VALDRAKKEN },
-			["isBreadcrumb"] = true,	-- unconfirmed
-		}),
-		q(70180, {	-- Jump-Start? Jump-Starting!
-			["sourceQuests"] = { 72773 },	-- Learning Ingenuity
-			["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
-			["coord"] = { 84.2, 54.4, VALDRAKKEN },
-		}),
-		-- Chap 1
-		q(70845, {	-- In Tyr's Footsteeps
-			["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
-			["provider"] = { "n", 196475 },	-- Maiden of Inspiration
-			["coord"] = { 84.3, 53.5, VALDRAKKEN },
-		}),
-		--
 		prof(ALCHEMY, sharedData({
 			["requireSkill"] = ALCHEMY,
 		},{

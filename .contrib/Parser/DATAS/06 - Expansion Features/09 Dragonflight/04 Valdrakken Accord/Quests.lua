@@ -573,6 +573,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 				-- RENOWN 25 --
+
+				-- Unknown renown -- I will fix this later as well as all other renown quests -Darkal
+			q(72671, {	-- Renown Supplies
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack (contains Dragon Isles Supplies)
+				},
+			}),
 		}),
 	}),
 })));
@@ -604,5 +613,9 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 
 		-- Ensembles
 		q(70755),	-- Ensemble: Crimson Valdrakken Clothing
+		q(70756),	-- Ensemble: Black Valdrakken Clothing
+		q(70757),	-- Ensemble: Azure Valdrakken Clothing
+		q(70758),	-- Ensemble: Bronze Valdrakken Clothing
+		q(70759),	-- Ensemble: Green Valdrakken Clothing
 	}),
 })));

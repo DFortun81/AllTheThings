@@ -3,55 +3,6 @@
 -----------------------------------------------------
 root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
 	i(201470),	-- Story of a Memorable Victory
-	-- Alchemy knowledge drops
-	i(193891),	-- Experimental Substance
-	i(198964),	-- Elementious Splinter
-	i(198963),	-- Decaying Phlegm
-	i(193897),	-- Reawakened Catalyst
-	-- Blacksmithing knowledge drops
-	i(198966),	-- Molten Globule
-	i(198965),	-- Primeval Earth Fragment
-	i(192131),	-- Valdrakken Weapon Chain
-	i(192132),	-- Draconium Blade Sharpener
-	-- Enchanting knowledge drops
-	i(198968),	-- Primalist Charm
-	i(198967),	-- Primordial Aether
-	i(193900),	-- Prismatic Focusing Shard
-	i(193901),	-- Primal Dust
-	-- Engineering knowledge drops
-	i(198969),	-- Keeper's Mark
-	i(198970),	-- Infitely Attachable Pair o' Docks
-	i(193902),	-- Eroded Titan Gizmo
-	i(193903),	-- Watcher Power Core
-	-- Inscription knowledge drops
-	i(198972),	-- Draconic Glamour
-	i(193904),	-- Phoenix Feather Quill
-	i(198971),	-- Curious Djaradin Rune
-	i(193905),	-- Iskaaran Trading Ledger
-	-- Jewelcrafting knowledge drops
-	i(198974),	-- Elegantly Engraved Embellishment
-	i(198973),	-- Incandescent Curio
-	i(193909),	-- Ancient Gem Fragments
-	i(193907),	-- Chipped Tyrstone
-	-- Leatherworking knowledge drops
-	i(198976),	-- Exceedingly Soft Skin
-	i(198975),	-- Ossified Hide
-	i(193910),	-- Molted Dragon Scales
-	i(193913),	-- Preserved Animal Parts
-	-- Tailoring knowledge drops
-	i(198978),	-- Stupidly Effective Stitchery
-	i(193898),	-- Umbral Bone Needle
-	i(198977),	-- Ohn'ahran Weave
-	i(193899),	-- Primalweave Spindle
-	-- Enchanting drops (disenchant items)
-	i(200939),	-- Chromatic Pocketwatch
-	i(200940),	-- Everflowing Inkwell
-	i(200941),	-- Seal of Order
-	i(200947),	-- Carving of Awakening
-	i(200942),	-- Vibrant Emulsion
-	i(200943),	-- Whispering Band
-	i(200945),	-- Valiant Hammer
-	i(200946),	-- Thunderous Blade
 	n(ARMOR, {
 		i(199019),	-- Aerodynamic Cape
 		i(199018),	-- Bejeweled Stonewatcher's Pendant
@@ -91,6 +42,66 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 },
 		i(199031),	-- Stonewatcher's Eye
 		i(199030),	-- Stonewatcher's Thumb
 		i(199029),	-- Stonewatcher's Toe
+	}),
+	n(PROFESSIONS, {
+		prof(ALCHEMY, sharedData({ ["requireSkill"] = ALCHEMY, },{
+			i(198963),	-- Decaying Phlegm
+			i(198964),	-- Elementious Splinter
+			i(193891),	-- Experimental Substance
+			i(193897),	-- Reawakened Catalyst
+		})),
+		prof(BLACKSMITHING, sharedData({ ["requireSkill"] = BLACKSMITHING, },{
+			i(198966),	-- Molten Globule
+			i(198965),	-- Primeval Earth Fragment
+			i(192131),	-- Valdrakken Weapon Chain
+			i(192132),	-- Draconium Blade Sharpener
+		})),
+		prof(ENCHANTING, sharedData({ ["requireSkill"] = ENCHANTING, },{
+			i(198968),	-- Primalist Charm
+			i(198967),	-- Primordial Aether
+			i(193900),	-- Prismatic Focusing Shard
+			i(193901),	-- Primal Dust
+
+			-- Enchanting drops (disenchant items)
+			i(200947),	-- Carving of Awakening
+			i(200939),	-- Chromatic Pocketwatch
+			i(200940),	-- Everflowing Inkwell
+			i(200941),	-- Seal of Order
+			i(200946),	-- Thunderous Blade
+			i(200945),	-- Valiant Hammer
+			i(200942),	-- Vibrant Emulsion
+			i(200943),	-- Whispering Band
+		})),
+		prof(ENGINEERING, sharedData({ ["requireSkill"] = ENGINEERING, },{
+			i(198969),	-- Keeper's Mark
+			i(198970),	-- Infitely Attachable Pair o' Docks
+			i(193902),	-- Eroded Titan Gizmo
+			i(193903),	-- Watcher Power Core
+		})),
+		prof(INSCRIPTION, sharedData({ ["requireSkill"] = INSCRIPTION, },{
+			i(198972),	-- Draconic Glamour
+			i(193904),	-- Phoenix Feather Quill
+			i(198971),	-- Curious Djaradin Rune
+			i(193905),	-- Iskaaran Trading Ledger
+		})),
+		prof(JEWELCRAFTING, sharedData({ ["requireSkill"] = JEWELCRAFTING, },{
+			i(198974),	-- Elegantly Engraved Embellishment
+			i(198973),	-- Incandescent Curio
+			i(193909),	-- Ancient Gem Fragments
+			i(193907),	-- Chipped Tyrstone
+		})),
+		prof(LEATHERWORKING, sharedData({ ["requireSkill"] = LEATHERWORKING, },{
+			i(198976),	-- Exceedingly Soft Skin
+			i(198975),	-- Ossified Hide
+			i(193910),	-- Molted Dragon Scales
+			i(193913),	-- Preserved Animal Parts
+		})),
+		prof(TAILORING, sharedData({ ["requireSkill"] = TAILORING, },{
+			i(198978),	-- Stupidly Effective Stitchery
+			i(193898),	-- Umbral Bone Needle
+			i(198977),	-- Ohn'ahran Weave
+			i(193899),	-- Primalweave Spindle
+		})),
 	}),
 	filter(REAGENTS, {
 		i(201400),	-- Aquatic Maw

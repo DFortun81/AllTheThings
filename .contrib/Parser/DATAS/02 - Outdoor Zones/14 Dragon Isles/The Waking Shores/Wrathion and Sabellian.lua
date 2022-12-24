@@ -60,6 +60,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["cost"] = { { "i", 191255, 1 }, },	-- 1x Greater Obsidian Key
 					["isWeekly"] = true,
 				}),
+				q(72338, {	-- Greater Obsidian Key
+					["sourceQuest"] = 66805,	-- Keys of Loyalty
+					["provider"] = { "n", 187447 },	-- Sabellian
+					["coord"] = { 27.6, 56.5, THE_WAKING_SHORES },
+					["cost"] = { { "i", 191255, 1 }, },	-- 1x Greater Obsidian Key
+					["isWeekly"] = true,
+				}),
 				q(66126, {	-- Unlocking Our Past
 					["provider"] = { "n", 187272 },	-- Forgemaster Bazentus
 					["coord"] = { 24.9, 61.0, THE_WAKING_SHORES },
@@ -139,7 +146,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["isWeekly"] = true,
 				}),
 				q(65842, {	-- Disarming Behavior
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuests"] = { 66419 },	-- Allegiance to One
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.5, THE_WAKING_SHORES },
 					["isDaily"] = true,
@@ -172,7 +179,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["isDaily"] = true,
 				}),
 				q(69984, {	-- Gold-Banded Dragon Tooth
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuests"] = { 66419 },	-- Allegiance to One
 					["provider"] = { "i", 198072 },	-- Gold-Banded Dragon Tooth
 					["isWeekly"] = true,
 				}),
@@ -183,13 +190,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["isDaily"] = true,
 				}),
 				q(72447, {	-- Greatest of Threads
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuests"] = { 66419 },	-- Allegiance to One
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				q(66445, {	-- Honor Our Fallen
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuests"] = { 66419 },	-- Allegiance to One
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
@@ -200,7 +207,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["isDaily"] = true,
 				}),
 				q(66633, {	-- Make a Statement
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuests"] = { 66419 },	-- Allegiance to One
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
 					["isWeekly"] = true,
@@ -248,7 +255,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["isWeekly"] = true,
 				}),
 				q(66326, {	-- The Tools of One's Trade
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuests"] = { 66419 },	-- Allegiance to One
 					["provider"] = { "n", 188179 },	-- Stoker Volrax
 					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
@@ -259,16 +266,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 25, 56.1, THE_WAKING_SHORES },
 				}),
 				q(67142, {	-- Wyrm Food
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuests"] = { 66419 },	-- Allegiance to One
 					["provider"] = { "n", 196518 },	-- Voraxian
 					["coord"] = { 27.6,56.7, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				--[[
-				q(66633, {	-- Make a Statement
-					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
-					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
-				}),
 				q(66856, {	-- Ashen Black and the Seven Gnomes
 					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
 					["provider"] = { "n", 191014 },	-- Ashen Black
@@ -826,9 +829,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
-			q(64277),	-- Triggered when choosing Wrathion in Allegiance To One (66419)
-			--q(xxxxx),	-- Triggered when choosing Seballian in Allegiance To One (66419)
-			q(66802),	-- Triggered when choosing Wrathion or Seballian in Allegiance To One (66419)
+			q(64277),	-- Triggered when choosing anyone in Allegiance To One (66419) -- triggered for both in 2 weeks
+			q(66808),	-- Triggered when choosing Seballian in Allegiance To One (66419) -- triggered for Seballian only
+			qNYI(66802),	-- Triggered when choosing anyone? in Allegiance To One (66419) -- needs confirmation
 		}),
 	}),
 })));

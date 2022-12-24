@@ -10,6 +10,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 63.3, 41.3, OHNAHRAN_PLAINS },
 			}),
 				-- RENOWN 2	--
+			q(72762, {	-- Sharing the Bounty
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
+				},
+			}),
 				-- Binds when picked up Centaur Hunting Trophy
 			q(70928, {	-- Hunting Trophy
 				["description"] = "Requires Renown 2.",
@@ -63,6 +71,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(200551),	-- Comfortable Pile of Pelts (TOY!)
 					i(198402),	-- Maruuk Cooking Pot (TOY!)
 					i(200550),	-- Very Comfortable Pelt (TOY!)
+					i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned all 3 toys
 				},
 			}),
 				-- RENOWN 4	--
@@ -70,6 +79,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires Renown 4. Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197627 },	-- Roki
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+			}),
+			q(72763, {	-- Sharing the Bounty
+				["description"] = "Requires Renown 4.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
+				},
 			}),
 				-- RENOWN 5	--
 			q(71231, {	-- Call of the Hunt
@@ -83,6 +100,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 			}),
+			q(72761, {	-- Sharing the Bounty
+				["description"] = "Requires Renown 5.",
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
+				},
+			}),
 				-- RENOWN 6	--
 			q(71058, {	-- Observing the Wind
 				["description"] = "Requires Renown 6.",
@@ -91,6 +116,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(197596),	-- Windborne Velocidrake: Horned Jaw (DM!)
 					i(197610),	-- Windborne Velocidrake: Yellow Horns (DM!)
+					i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned both Drakewatcher Manuscripts
 				},
 			}),
 				-- RENOWN 7	--
@@ -105,6 +131,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(200481),	-- Ohn'ir Midnight Helm
 					i(200487),	-- Shikaar Hunter's Visor
 					i(200489),	-- Shikaar Scout's Visor
+					i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned all items
 				},
 			}),
 			q(72363, {	-- Good at Doings, Not Understandings

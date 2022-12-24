@@ -70,6 +70,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				--]]
 
 					-- The Azure Span --
+				q(70430, {	-- Dragonrider Racing - Archive Ambit
+					["coord"] = { 42.2, 56.8, THE_AZURE_SPAN }
+				}),
 				q(70425, {	-- Dragonrider Racing - Azure Span Sprint
 					["coord"] = { 47.8, 40.8, THE_AZURE_SPAN },
 				}),
@@ -85,13 +88,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70427, {	-- Dragonrider Racing - Vakthros Ascent
 					["coord"] = { 71.2, 24.6, THE_AZURE_SPAN }
 				}),
-				-- Unconfirmed
-				--[[
-				q(70430, {	-- Dragonrider Racing - Archive Ambit
-					["coord"] = { 42.2, 56.8, THE_AZURE_SPAN }
-				}),
-				--]]
-
+				
 					-- Thaldraszus --
 				q(70436, {	-- Dragonrider Racing - Caverns Criss-Cross
 					["coord"] = { 58.0, 33.6, THALDRASZUS }

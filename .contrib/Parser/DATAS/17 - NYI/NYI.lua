@@ -541,7 +541,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(187621),	-- Writ of Construction
 			--
 			i(187637),	-- Navarro's Backpack
-			i(189765),	-- Maruuk Centaur Supply Satchel
 			i(190233),	-- Maruuk Centaur Supplies
 			i(190340),	-- Plainshunter's Supplies
 			i(191203),	-- Dragonscale Expedition Supplies
@@ -555,9 +554,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			---
 		}),
 		n(PROFESSIONS, {
-			i(193905),	-- Iskaaran Trading Ledger
-			i(193907),	-- Chipped Tyrstone
-			i(193909),	-- Ancient Gem Fragments
 			i(194040),	-- Slateskin Hide
 			i(194041),	-- Driftbloom Sprout
 			i(194054),	-- Dredged Seedling
@@ -614,14 +610,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198798),	-- Flashfrozen Scroll
 			i(198799),	-- Forgotten Arcane Tome
 			i(198800),	-- Fractured Titanic Sphere
-			i(198963),	-- Decaying Phlegm
-			i(198964),	-- Elementious Splinter
-			i(198969),	-- Keeper's Mark
-			i(198971),	-- Curious Djaradin Rune
-			i(198972),	-- Draconic Glamour
-			i(198974),	-- Elegantly Engraved Embellishment
-			i(198975),	-- Ossified Hide
-			i(198978),	-- Stupidly Effective Stitchery
 			i(199115),	-- Herbalism Field Notes
 			i(199122),	-- Mining Field Notes
 			i(199128),	-- Skinning Field Notes
@@ -641,10 +629,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201017),	-- Igneous Gem
 			i(201019),	-- Ancient Dragonweave Bolt
 			i(201020),	-- Silky Surprise
-			i(201356),	-- Glimmer of Fire
-			i(201357),	-- Glimmer of Frost
-			i(201358),	-- Glimmer of Air
-			i(201359),	-- Glimmer of Earth
 			i(201360),	-- Glimmer of Order
 			i(201361),	-- Primal Inspiration
 
@@ -1512,16 +1496,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201253),	-- Competitor's Edge
 			i(201254),	-- Medal of Honor
 			i(201255),	-- Medal of Honor
-			-- Mystic??
-			i(200939),	-- Chromatic Pocketwatch
-			i(200940),	-- Everflowing Inkwell
-			i(200941),	-- Seal of Order
-			i(200942),	-- Vibrant Emulsion
-			i(200943),	-- Whispering Band
+			--
 			i(200944),	-- Djaradin's Trophy Mask
-			i(200945),	-- Valiant Hammer
-			i(200946),	-- Thunderous Blade
-			i(200947),	-- Carving of Awakening
 			--
 			i(199553),	-- Memory of Unity
 			i(200680),	-- Maruukai Mule

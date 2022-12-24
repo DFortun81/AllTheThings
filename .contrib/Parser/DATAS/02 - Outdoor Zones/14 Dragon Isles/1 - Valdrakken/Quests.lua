@@ -176,53 +176,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["timeline"] = { CREATED_DF_PRE },
 				["isBreadcrumb"] = true,
 			}),
-
-			q(70181, {	-- First Challenge of Tyr: Finesse
-				["sourceQuests"] = { 70845 },	-- In Tyr's Footsteeps
-				["provider"] = { "o", 379290 },	-- Ornamented Statue
-				["coord"] = { 67.2, 30.8, THE_AZURE_SPAN },
-				["g"] = {
-					i(199197),	-- Bottled Essence
-				},
-			}),
-			q(70339, {	-- In Tyr's Footsteps: The Ohn'ahran Plains
-				["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
-				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
-				["coord"] = { 84.3, 53.5, VALDRAKKEN },
-			}),
-			q(70376, {	-- Second Challenge of Tyr: Might
-				["sourceQuests"] = { 70339 },	-- In Tyr's Footsteps: The Ohn'ahran Plains
-				["provider"] = { "o", 380540 },	-- Ornamented Statue
-				["coord"] = { 66.2, 55.3, OHNAHRAN_PLAINS },
-				["g"] = {
-					i(199197),	-- Bottled Essence
-				},
-			}),
-			q(70341, {	-- Well Earned Vicotry
-				["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
-				["provider"] = { "n", 195924 },	-- Maiden of Inspiration
-				["coord"] = { 66.3, 55.3, VALDRAKKEN },
-			}),
-			q(70182, {	-- The Sweet Taste of Victory
-				["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
-				["provider"] = { "n", 195827 },	-- Maiden of Inspiration
-				["coord"] = { 67.1, 30.9, THE_AZURE_SPAN },
-			}),
-			q(70633, {	-- Fueling the Engine
-				["sourceQuests"] = { 70182 },	-- The Sweet Taste of Victory
-				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
-				["coord"] = { 84.3, 53.5, VALDRAKKEN },
-			}),
-
-
-			-- TODO: These need some sorting
-			q(72671, {	-- Renown Supplies
-				["provider"] = { "n", 193015 },	-- Unatos
-				["coord"] = { 58.1, 35.2, VALDRAKKEN },
-				["g"] = {
-					i(198868),	-- Small Valdrakken Accord Supply Pack (contains Dragon Isles Supplies)
-				},
-			}),
 			q(72585, {	-- Open Orientation
 				["provider"] = { "n", 196499 },	-- Therazal
 				["coord"] = { 50.2, 55.9, VALDRAKKEN },
@@ -241,44 +194,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 38.2, 37, VALDRAKKEN },
 				["isBreadcrumb"] = true,	-- unconfirmed
 			}),
-
-			-- Profession daily marks
-			q(70594, {	-- Leatherworking Services Requested
-				["provider"] = { "n", 194026 },	-- Azley
-				["coord"] = { 35.4, 58.7, VALDRAKKEN },
-				["isDaily"] = true,
-				["g"] = {
-					i(198613),	-- Leatherworking Designs
-				},
-			}),
-			q(66951, {	-- Population Control
-				["provider"] = { "n", 191004 },	-- Temnaayu
-				["coord"] = { 36.7, 62.4, VALDRAKKEN },
-				["isDaily"] = true,
-				["g"] = {
-					i(198613),	-- Leatherworking Designs
-				},
-			}),
-			q(70567, {	-- When You Give Bakar a Bone
-				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
-				["coord"] = { 28.5, 61.3, VALDRAKKEN },
-				["isDaily"] = true,
-				["g"] = {
-					i(198613),	-- Leatherworking Designs
-				},
-			}),
-			q(72158, {	-- A Dense Delivery
-				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
-				["coord"] = { 28.6, 60.4, VALDRAKKEN },
-				["isDaily"] = true,
-				["g"] = {
-					i(199128),	-- Skinning Field Notes
-				},
-			}),
-
-
-
-
+			
+			-- Weeklies
 			q(66867, {	-- Relic Recovery: Algeth'ar Academy
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 191957 },	-- Theldren

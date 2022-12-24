@@ -201,6 +201,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(69959, {	-- Gaelzion
 					["qg"] = 193653,	-- Gaelzion
 				}),
+				q(69960, {	-- Gravlion
+					["qg"] = 193654,	-- Gravlion
+				}),
 				q(69956, {	-- Grizzlerock
 					["qg"] = 193652,	-- Grizzlerock
 				}),
@@ -229,8 +232,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(69969, {	-- Voraazka
 					["qg"] = 193674,	-- Voraazka
 				}),
-				q(69960, {	-- Gravlion
-					["qg"] = 193654,	-- Gravlion
+				q(69972, {	-- Infernum
+					["qg"] = 193680,	-- Zurgaz Corebreaker
 				}),
 			})),
 			n(COMMON_BOSS_DROPS, {
@@ -460,8 +463,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 				n(193680, {	-- Zurgaz Corebreaker
-					-- ["coord"] = { X, Y, MAP },
-					-- ["questID"] = ,
+					["coord"] = { 24.3, 75.5, THE_WAKING_SHORES },
+					["questID"] = 74039,
 					-- ["g"] = {
 
 					--},
