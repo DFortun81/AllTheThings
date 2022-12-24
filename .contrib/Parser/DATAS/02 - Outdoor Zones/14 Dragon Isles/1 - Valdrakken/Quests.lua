@@ -158,9 +158,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200904),	-- Picante Pomfruit Cake
 				},
 			}),
-
-			-- Last week of Ruby Feast
-			i(198132),	-- Recipe: Hoard of Draconic Delicacies (RECIPE!)
+			q(67071, {	-- What a Long, Sweet Trip It's Been
+				["sourceQuests"] = { 67068 },	-- Anything But a Breeze
+				["provider"] = { "n", 189479 },	-- Rumiastrasza
+				["coord"] = { 61.5, 11.8, VALDRAKKEN },
+				["altQuests"] = { 72258 },	-- Daily Lockout
+				["g"] = {
+					i(198132),	-- Recipe: Hoard of Draconic Delicacies (RECIPE!)
+				},
+			}),
 
 			-- SIDE 3
 			q(70846, {	-- Dragonscale Expedition: Help Needed!

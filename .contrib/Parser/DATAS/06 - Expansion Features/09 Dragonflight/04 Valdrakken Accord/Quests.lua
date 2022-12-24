@@ -517,6 +517,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198732),	-- Valdrakken Accord Tabard
 				},
 			}),
+				-- RENOWN 24 --
+			-- TODO: all profession quests...
+			q(70909, {	-- Crafting for Expertise [Blacksmithing]
+				["description"] = "Requires Renown 24.",
+				["qg"] = 191000,	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = BLACKSMITHING,
+			}),
+			q(72335, {	-- Crafting for Expertise [Mining]
+				["description"] = "Requires Renown 24.",
+				["qg"] = 191000,	-- Dothenos
+				["coord"] = { 36.4, 52.8, VALDRAKKEN },
+				["requireSkill"] = MINING,
+			}),
+				-- RENOWN 25 --
 		}),
 	}),
 })));

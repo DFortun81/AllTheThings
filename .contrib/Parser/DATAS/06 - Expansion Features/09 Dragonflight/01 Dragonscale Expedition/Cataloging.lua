@@ -19,7 +19,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						["_quests"] = { 70100 },	-- Cataloging the Azure Span
 					}),
 					crit(4, {	-- Elder Clearwater
-						-- ["cr"] = NPCID,
+						["cr"] = 197699,
 						["_quests"] = { 70659 },	-- Cataloging the Ohn'ahran Plains
 					}),
 					crit(5, {	-- Time-Warped Mysterious Fisher
@@ -31,15 +31,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						["_quests"] = { 70079 },	-- Cataloging the Ohn'ahran Plains
 					}),
 					crit(7, {	-- Wrathion
-						-- ["cr"] = NPCID,
+						["cr"] = 185089,
 						["_quests"] = { 70699 },	-- Cataloging Thaldraszus
 					}),
 				}),
 				ach(16572, {	-- Legendary Photograph
-					["sym"] = {{"select","achID",16570},{"pop"}},	-- same criteria as final achievement
+					["sym"] = {{"select","achievementID",16570},{"pop"}},	-- same criteria as final achievement
 				}),
 				ach(16573, {	-- Legendary Photographs
-					["sym"] = {{"select","achID",16570},{"pop"}},	-- same criteria as final achievement
+					["sym"] = {{"select","achievementID",16570},{"pop"}},	-- same criteria as final achievement
 				}),
 				ach(16567),	-- A Lot of Great Shots!
 				ach(16566),	-- Great Shot!
