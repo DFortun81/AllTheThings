@@ -31,7 +31,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		}),
 		-- GENERAL PROFESSION
 		q(67564, {	-- Artisan's Courier
-			["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+			-- ["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 			["provider"] = { "n", 192498 },	-- Haephesta
 			["coord"] = { 57.9, 68.2, THE_WAKING_SHORES },
 			["g"] = {
@@ -118,7 +118,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			},
 		}),
 		q(67295, { -- That's My Specialty
-			["sourceQuests"] = { 70126 },	-- A Finishing Touch
+			-- ["sourceQuests"] = { 70126 },	-- A Finishing Touch
 			["provider"] = { "n", 192539 },	-- Miguel Bright
 			["coords"] = {
 				{ 60.2, 72.2, THE_WAKING_SHORES },
@@ -253,11 +253,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["races"] = HORDE_ONLY,
 			}),
 			q(67080, {	-- Artisan's Supply: Dragon's Alchemical Solution
-				["sourceQuests"] = {
-					-- suspected... was able to pick up with only 72245 on horde
-					70355,	-- Dragon Isles Alchemy [A]
-					72245,	-- Dragon Isles Alchemy [H]
-				},
+				-- ["sourceQuests"] = { },
 				["provider"] = { "n", 191893 },	-- Zherrak
 				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
 				["cost"] = { { "i", 191570, 2 }, },	-- 2x Dragon's Alchemical Solution
@@ -274,6 +270,62 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
+			}),
+			q(66940, {	-- Elixir Experiment
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66938, {	-- Mammoth Marrow
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72427, {	-- Animated Infusion
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66937, {	-- Decaying News
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70533, {	-- Decaying News
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 36.4, 71.4, VALDRAKKEN },
+				["provider"] = { "n", 185545 },	-- Conflago
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70532, {	-- Aiding the Raiding
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 36.4, 71.4, VALDRAKKEN },
+				["provider"] = { "n", 185545 },	-- Conflago
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70531, {	-- Mana Markets
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 36.4, 71.4, VALDRAKKEN },
+				["provider"] = { "n", 185545 },	-- Conflago
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70530, {	-- Examination Week
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 36.4, 71.4, VALDRAKKEN },
+				["provider"] = { "n", 185545 },	-- Conflago
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
 			}),
 			o(380590, {	-- Well Insulated Mug
 				["questID"] = 70289,
@@ -415,7 +467,28 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
 				-- ["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
 			}),
+			q(70025, {	-- Artisan's Supply: Draconium Sickle
+				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
+				["qg"] = 192164,	-- Gringot Coldsteel
+				["requireSkill"] = BLACKSMITHING,
+				["cost"] = {{"i",191241,1}},	-- Draconium Sickle
+				-- ["sourceQuest"] = ,
+			}),
 			q(66897, {	-- Fuel for the Forge
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66941, {	-- Tremendous Tools
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72398, {	-- Rock and Stone
 				["description"] = "Requires 25 Skill.",
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
@@ -426,35 +499,44 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires 45 Skill.",
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
-				-- ["isWeekly"] = true,
+				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
 			}),
-			q(70025, {	-- Artisan's Supply: Draconium Sickle
-				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
-				["qg"] = 192164,	-- Gringot Coldsteel
-				["requireSkill"] = BLACKSMITHING,
-				["cost"] = {{"i",191241,1}},	-- Draconium Sickle
-				-- ["isWeekly"] = true,
+			q(70234, {	-- All this Hammering
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 37.0, 47.0, VALDRAKKEN },
+				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70233, {	-- Axe Shortage
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 37.0, 47.0, VALDRAKKEN },
+				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70211, {	-- Stomping Explorers
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 37.0, 47.0, VALDRAKKEN },
+				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
+				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
 			}),
 			q(66517, { -- A New Source of Weapons
-				--["sourceQuests"] = {  },	-- Unknown
-				["provider"] = { "n", 191002 },	-- Dhurrel
+				["description"] = "Requires 45 Skill.",
 				["coord"] = { 36.8, 63.6, VALDRAKKEN },
-				["collectible"] = true,	-- Don't remove until we have proper tracking
+				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
-				["g"] = {
-					i(198606),	-- Blacksmith's Writ
-				},
+				-- ["sourceQuest"] = ,
 			}),
 			q(70589, {	-- Blacksmithing Services Requested
 				["description"] = "Requires 25 Skill.",
-				--["sourceQuests"] = {  },	-- Unknown
-				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+				["provider"] = { "n", 194026 },	-- Azley
 				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
 			}),
-
 			q(70184, { -- Specialized Secrets: Blacksmithing
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
@@ -512,6 +594,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			o(380623, {	-- Spelltouched Tongs
+				["description"] = "If you do not have Mining to clear the Rock Wall, try dying. Ghosts can walk through it.",
 				["questID"] = 70314,
 				["coord"] = { 53.1, 66.1, THE_AZURE_SPAN },
 				["g"] = {
@@ -651,6 +734,62 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
+			}),
+			q(70530, {	-- Fireproof Gear
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72423, {	-- Weathering the Storm
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66900, {	-- Enchanted Relics
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66935, {	-- Crystal Quill Pens
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72175, {	-- A Scept-acular Time
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 30.8, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 193744 },	-- Soragosa
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72172, {	-- Essence, Shards, and Chromatic Dust
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 30.8, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 193744 },	-- Soragosa
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72155, {	-- Spread the Enchantment
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 30.8, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 193744 },	-- Soragosa
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72173, {	-- Braced for Enchantment
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 30.8, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 193744 },	-- Soragosa
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
 			}),
 			o(380558, {	-- Enchanted Debris
 				["description"] = "Interact with the Disenchanted Broom, then follow it to the location of the treasure.",
@@ -810,6 +949,69 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			q(66891, {	-- Explosive Ash
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66942, {	-- Enemy Engineering
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66890, {	-- Stolen Tools
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72396, {	-- Horns of Plenty
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70540, {	-- An Engineer's Best Friend
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 42.2, 48.8, VALDRAKKEN },
+				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70557, {	-- No Scopes
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 42.2, 48.8, VALDRAKKEN },
+				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70545, {	-- Blingtron 8000...?
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 42.2, 48.8, VALDRAKKEN },
+				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70539, {	-- And You Thought They Did Nothing
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 42.2, 48.8, VALDRAKKEN },
+				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70591, {	-- Engineering Services Requested
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+				["provider"] = { "n", 194026 },	-- Azley
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
 			o(380560, {	-- Disabled Tesla Coil
 				["description"] = "Click on the three exposed items to make the treasure appear.",
 				["questID"] = 70275,
@@ -936,6 +1138,34 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			q(70613, {	-- Get Their Bark Before They Bite
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 38.2, 68.6, VALDRAKKEN },
+				["provider"] = { "n", 185549 },	-- Agrikus
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70614, {	-- Bubble Craze
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 38.2, 68.6, VALDRAKKEN },
+				["provider"] = { "n", 185549 },	-- Agrikus
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70615, {	-- The Case of the Missing Herbs
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 38.2, 68.6, VALDRAKKEN },
+				["provider"] = { "n", 185549 },	-- Agrikus
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70616, {	-- How Many??
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 38.2, 68.6, VALDRAKKEN },
+				["provider"] = { "n", 185549 },	-- Agrikus
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
 			q(74107, {	-- Inscription Order: Herbalism
 				["name"] = "Inscription Order: Herbalism",
 				["description"] = "Requires a crafting order from Inscription.",
@@ -1042,6 +1272,62 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
+			}),
+			q(66943, {	-- Wood for Writing
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66944, {	-- Peacock Pigments
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66945, {	-- Icy Ink
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70560, {	-- The Most Powerful Tool: Good Documentation
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 39.4, 73.6, VALDRAKKEN },
+				["provider"] = { "n", 185540 },	-- Talendara
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70559, {	-- Quill You Help?
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 39.4, 73.6, VALDRAKKEN },
+				["provider"] = { "n", 185540 },	-- Talendara
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70558, {	-- Disillusioned Illusions
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 39.4, 73.6, VALDRAKKEN },
+				["provider"] = { "n", 185540 },	-- Talendara
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70561, {	-- A Scribe's Tragedy
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 39.4, 73.6, VALDRAKKEN },
+				["provider"] = { "n", 185540 },	-- Talendara
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70592, {	-- Inscription Services Requested
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+				["provider"] = { "n", 194026 },	-- Azley
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
 			}),
 			o(380610, {	-- Pulsing Earth Rune
 				["questID"] = 70306,
@@ -1217,6 +1503,69 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			q(72428, {	-- Hornswog Hoarders
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66516, {	-- Mundane Gems, I Think not!
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66950, {	-- Heart of a Giant
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66949, {	-- Trinket Bandits
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70565, {	-- Separation by Saturation
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+				["provider"] = { "n", 190094 },	-- Tuluradormi
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70564, {	-- Spectacular
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+				["provider"] = { "n", 190094 },	-- Tuluradormi
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70563, {	-- The Exhibition
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+				["provider"] = { "n", 190094 },	-- Tuluradormi
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70562, {	-- The Plumbers, Mason
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+				["provider"] = { "n", 190094 },	-- Tuluradormi
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70593, {	-- Jewelcrafting Services Requested
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+				["provider"] = { "n", 194026 },	-- Azley
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
 			o(380822, {	-- Igneous Gem
 				["description"] = "Click the three crystals on the nearby small islands (quickly), then return to collect the treasure.",
 				["questID"] = 70273,
@@ -1380,6 +1729,69 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			q(66363, {	-- Basilisk Bucklers
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 63.6, VALDRAKKEN },
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66364, {	-- To Fly a Kite
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66951, {	-- Population Control
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72407, {	-- Soaked in Success
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70569, {	-- For Trisket, a Task Kit
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 28.6, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70567, {	-- When You Give Bakar a Bone
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 28.6, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70571, {	-- Drums Here!
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 28.6, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70568, {	-- Tipping the Scales
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 28.6, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70594, {	-- Leatherworking Services Requested
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+				["provider"] = { "n", 194026 },	-- Azley
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
 			o(380615, {	-- Poacher's Pack
 				["questID"] = 70308,
 				["coord"] = { 39.0, 86.0, THE_WAKING_SHORES },
@@ -1506,7 +1918,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 61.4, 76.9, THALDRASZUS },
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-						q(70192, { -- Specialized Secrets: Mining
+			q(70192, { -- Specialized Secrets: Mining
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
@@ -1515,6 +1927,34 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
+			}),
+			q(72157, {	-- The Weight of Earth
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 39.0, 51.2, VALDRAKKEN },
+				["provider"] = { "n", 185553 },	-- Sekita the Burrower
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70618, {	-- The Call of the Forge
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 39.0, 51.2, VALDRAKKEN },
+				["provider"] = { "n", 185553 },	-- Sekita the Burrower
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70617, {	-- All Mine, Mine, Mine
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 39.0, 51.2, VALDRAKKEN },
+				["provider"] = { "n", 185553 },	-- Sekita the Burrower
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72156, {	-- A Fiery Flight
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 39.0, 51.2, VALDRAKKEN },
+				["provider"] = { "n", 185553 },	-- Sekita the Burrower
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
 			}),
 			q(74106, {		-- Inscription Order: Mining
 				["name"] = "Inscription Order: Mining",
@@ -1616,6 +2056,34 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			q(72159, {	-- Scaling Down
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 28.8, 60.4, VALDRAKKEN },
+				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70620, {	-- Scaling Up
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 28.8, 60.4, VALDRAKKEN },
+				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70619, {	-- A Study of Leather
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 28.8, 60.4, VALDRAKKEN },
+				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72158, {	-- A Dense Delivery
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 28.8, 60.4, VALDRAKKEN },
+				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
 			q(74114, {	-- Inscription Order: Skinning
 				["name"] = "Inscription Order: Skinning",
 				["description"] = "Requires a crafting order from Inscription.",
@@ -1708,6 +2176,69 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
+			}),
+			q(66952, {	-- The Gnoll's Clothes
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72410, {	-- Pincers and Needles
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66899, {	-- Fuzzy Legs
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66953, {	-- All Things Fluffy
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70587, {	-- A Knapsack Problem
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 31.8, 67.6, VALDRAKKEN },
+				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70586, {	-- Sew Many Cooks
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 31.8, 67.6, VALDRAKKEN },
+				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70582, {	-- Weave Well Enough Alone
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 31.8, 67.6, VALDRAKKEN },
+				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70572, {	-- The Cold Does Bother Them, Actually
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 31.8, 67.6, VALDRAKKEN },
+				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70595, {	-- Tailoring Services Requested
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+				["provider"] = { "n", 194026 },	-- Azley
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
 			}),
 			o(380607, {	-- Itinerant Singed Fabric
 				["questID"] = 70304,

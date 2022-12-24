@@ -258,6 +258,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(200199),	-- Elements' Burden
 					i(200198),	-- Primalist Prison (TOY!)
+					-- Enchanting knowledge drops (one-time)
+					i(201356), -- Glimmer of Fire
+					i(201357), -- Glimmer of Frost
+					i(201358), -- Glimmer of Air
+					i(201359), -- Glimmer of Earth
 				},
 			}),
 			n(SPECIAL, {
