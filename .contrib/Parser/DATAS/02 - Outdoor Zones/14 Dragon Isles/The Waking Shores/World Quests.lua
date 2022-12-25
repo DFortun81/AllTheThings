@@ -67,6 +67,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(69924, {	-- Towers of Flaming Power
 					["coord"] = { 55.2, 24.5, THE_WAKING_SHORES },
 				}),
+				q(66896, {	-- Net Income
+					["coord"] = { 51.6, 35.1, THE_WAKING_SHORES },
+				}),
+				q(70502, {	-- Clearing the Skies
+					["coord"] = { 56.6, 56.5, THE_WAKING_SHORES },
+				}),
+				q(69916, {	-- Famous Frogs
+					["coord"] = { 38.1, 93.4, THE_WAKING_SHORES },
+				}),
 				--[[
 				q(67014, {	-- Gorlocs No More-locs
 					["coord"] = { 80, 39.6, THE_WAKING_SHORES },
