@@ -1981,15 +1981,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		--]]
 	}),
-	tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
-		-- Winter Veil 2022
-		ach(15645),	-- To Catch Falling Stars
-		ach(15653),	-- The More You Know*
-		i(191937),	-- Falling Star Catcher (TOY!)
-		i(191925),	-- Falling Star Flinger (TOY!)
-		q(66507),	-- A Winter Veil Gift
-		q(66508),	-- A Gently Shaken Gift
-	})),
 	tier(CLASSIC_TIER, {
 		filter(BAGS, {
 			i(22233),	-- Zigris' Footlocker

@@ -569,14 +569,22 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			}),
 			ach(15313, {	-- Rockin' Rollin' Racer (2021)
 				["providers"] = {
-					{ "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3
+					{ "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
 					{ "i", 187560 },	-- Rockin' Rollin' Racer Pack
 				},
 				["timeline"] = { "added 9.1.5.40871" },
 			}),
 			ach(15181, {	-- Rock n' Roll (2021)
-				["provider"] = { "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3
+				["provider"] = { "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
 				["timeline"] = { "added 9.1.5.40871" },
+			}),
+			ach(15645, {	-- To Catch Falling Stars (2022)
+				["provider"] = { "i", 191937 },	-- Falling Star Catcher (TOY!)
+				["timeline"] = { "added 10.0.2.47213" },
+			}),
+			ach(15653, {	-- The More You Know* (2022)
+				["provider"] = { "i", 191937 },	-- Falling Star Catcher (TOY!)
+				["timeline"] = { "added 10.0.2.47213" },
 			}),
 		}),
 		-- #if AFTER 7.3.0.24727
@@ -1093,6 +1101,20 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
+			q(66508, { 	-- A Gently Shaken Gift (2022)
+				["providers"] = {
+					{ "o", 180746 },	-- Gently Shaken Gift
+					{ "i", 192093 },	-- Gently Shaken Gift
+				},
+				["description"] = "Gift from 2022.",
+				["timeline"] = { "added 10.0.2.47213" },	-- TODO: Add Removed Timestamp in 2023.
+				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["groups"] = {
+					i(191925, {	-- Falling Star Flinger (TOY!)
+						["timeline"] = { "added 10.0.2.47213" },
+					}),
+				},
+			}),
 			q(8769, {	-- A Ticking Present
 				["providers"] = {
 					{ "o", 180748 },	-- Ticking Present
@@ -1398,6 +1420,21 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["groups"] = {
 					i(187560, {	-- Rockin' Rollin' Racer Pack
 						["timeline"] = { "added 9.1.5.40871" },
+					}),
+				},
+			}),
+			q(66507, { 	-- A Winter Veil Gift (2022)
+				["providers"] = {
+					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 192094 },	-- Winter Veil Gift
+				},
+				["description"] = "Gift from 2022.",
+				["timeline"] = { "added 10.0.2.47213" },	-- TODO: Add removed.
+				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["lvl"] = 10,
+				["groups"] = {
+					i(191937, {	-- Falling Star Catcher (TOY!)
+						["timeline"] = { "added 10.0.2.47213" },
 					}),
 				},
 			}),

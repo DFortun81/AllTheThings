@@ -1043,8 +1043,8 @@ i(192485);	-- Stored Wisdom Device
 i(193588);	-- Timewalker's Hearthstone
 i(187958);	-- Shrouded Banner of the Opportune
 -- NYI --
-i(191937);	-- Falling Star Catcher
-i(191925);	-- Falling Star Flinger
+--i(191937);	-- Falling Star Catcher (Added in Dragonflight)
+--i(191925);	-- Falling Star Flinger (Added in Dragonflight)
 
 
 ------------------
@@ -1071,6 +1071,8 @@ i(194056);	-- Duck-Stuffed Duck Lovie
 i(192443);	-- Element-Infused Rocket Helmet
 i(198206);	-- Environmental Emulator
 i(198728);	-- Explorer's League Banner
+i(191937);	-- Falling Star Catcher
+i(191925);	-- Falling Star Flinger
 i(199894);	-- Fisherman's Folly Rack
 i(194052);	-- Forlorn Funeral Pall
 i(198227);	-- Giggle Goggles
