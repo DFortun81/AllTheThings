@@ -3518,7 +3518,7 @@ for key,value in pairs({
 	[381511] = "Наконечник гарпуна",	-- Harpoon Head
 	[381513] = "Старая кирка",	-- Old Pickaxe
 	[381579] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
-	[381650] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
+	[381650] = "Просьба архивариуса",	-- Archivists' Request
 	[381653] = "Запись на игру в \"Клык, взмах, огонь\"",	-- Fang Flap Fire Signups
 	[381661] = "Просьба архивариуса",	-- Archivists' Request
 	[381663] = "\"Манаштормы для новичков\"",	-- Manastorming For Beginners
@@ -3536,7 +3536,7 @@ for key,value in pairs({
 	[382166] = "Рубиновый Пир!",	-- The Ruby Feast!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Ящик свежих блескорыбок",	-- Case of Fresh Gleamfish
-	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
+	[384405] = "Наполовину сваренная рыба",	-- Half-Boiled Fish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "Самодельная лужа жижи изгоя",	-- Outcast's Makeshift Muckpool

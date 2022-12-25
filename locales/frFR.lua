@@ -3526,13 +3526,13 @@ for key,value in pairs({
 	[381511] = "Tête de harpon",	-- Harpoon Head
 	[381513] = "Vieille pioche",	-- Old Pickaxe
 	[381579] = "Requête des archives",	-- Archivists' Request
-	[381650] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
+	[381650] = "Requête des archives",	-- Archivists' Request
 	[381653] = "Inscriptions à Croc-claque-crame",	-- Fang Flap Fire Signups
 	[381661] = "Requête des archives",	-- Archivists' Request
 	[381663] = "La tempête de mana pour les novices",	-- Manastorming For Beginners
 	[381664] = "Requête des archives",	-- Archivists' Request
 	[381667] = "Requête des archives",	-- Archivists' Request
-	[381668] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
+	[381668] = "Requête des archives",	-- Archivists' Request
 	[381669] = "Requête des archives",	-- Archivists' Request	--TODO: this was manually translated
 	[381670] = "Requête des archives",	-- Archivists' Request
 	[381671] = "Requête des archives",	-- Archivists' Request
