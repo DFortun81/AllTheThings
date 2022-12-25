@@ -2137,25 +2137,25 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(70382, {	-- Weekly Skinning Knowledgepoint #2
+			q(70383, {	-- Weekly Skinning Knowledgepoint #2
 				["name"] = "Weekly Skinning Knowledgepoint #2",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(70383, {	-- Weekly Skinning Knowledgepoint #3
+			q(70384, {	-- Weekly Skinning Knowledgepoint #3
 				["name"] = "Weekly Skinning Knowledgepoint #3",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(70384, {	-- Weekly Skinning Knowledgepoint #4
+			q(70385, {	-- Weekly Skinning Knowledgepoint #4
 				["name"] = "Weekly Skinning Knowledgepoint #4",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(70385, {	-- Weekly Skinning Knowledgepoint #5
+			q(70386, {	-- Weekly Skinning Knowledgepoint #5
 				["name"] = "Weekly Skinning Knowledgepoint #5",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 				["isWeekly"] = true,

@@ -2600,6 +2600,10 @@ root("HiddenQuestTriggers", {
 			q(74160),	-- Skinning Yamakh
 			q(74134),	-- Skinning Grumbletrunk
 			q(74122),	-- Skinning Blisterhide
+			q(74149),	-- Skinning Zumakh on a Grand Hunt
+			q(74141),	-- Skinning Blitztusk on a Grand Hunt
+			q(74140),	-- Skinning Norbett on a Grand Hunt
+			q(74142),	-- Skinning Sarana on a Grand Hunt
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--
