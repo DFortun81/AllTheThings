@@ -238,7 +238,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201323, {	-- Essence of Awakening
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
-							{ "i", DRAGON_SUPPLIES, 50 },
+							{ "i", OCASSIONAL_SAND, 1 },
 						},
 					}),
 						-- RENOWN 8 --
