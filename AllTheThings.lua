@@ -1468,6 +1468,7 @@ app.Colors = {
 	["DefaultDifficulty"] = "ff1eff00",
 	["RemovedWithPatch"] = "ffffaaaa",
 	["AddedWithPatch"] = "ffaaffaa",
+	["Renown"] = "ff00bff3",
 };
 Colorize = function(str, color)
 	return "|c" .. color .. str .. "|r";
@@ -10153,6 +10154,8 @@ end)();
 (function()
 local GetFriendshipReputation, GetFriendshipReputationRanks =
 	GetFriendshipReputation, GetFriendshipReputationRanks;
+local GetRenownLevels, GetMajorFactionData =
+	C_MajorFactions.GetRenownLevels, C_MajorFactions.GetMajorFactionData;
 
 -- 10.0 Blizz does some weird stuff with Friendship functions now, so let's try to wrap the functionality to work with what we expected before... at least for now
 if C_GossipInfo then
@@ -10281,9 +10284,11 @@ end
 -- Given a maxReputation/minReputation table, will return the proper StandingID and Amount into that Standing associated with the data
 app.GetReputationStanding = function(reputationInfo)
 	local factionID, standingOrAmount = reputationInfo[1], reputationInfo[2];
+	-- check if the Faction is actually a 'Renown' faction (Major Faction)
+	local majorFactionData = GetMajorFactionData(factionID);
 	-- make it really easy to use threshold checks by directly providing the expected standing
 	-- incoming value can also be negative for hostile standings, so check directly on the table
-	if standingOrAmount > 0 and StandingByID[standingOrAmount] then
+	if majorFactionData or (standingOrAmount > 0 and StandingByID[standingOrAmount]) then
 		return standingOrAmount, 0;
 	else
 		local friend = GetFriendshipReputation(factionID);
@@ -10302,7 +10307,13 @@ app.GetReputationStanding = function(reputationInfo)
 		end
 	end
 end
-local function GetCurrentFactionStandings(factionID)
+local function GetCurrentFactionStandings(factionID, requestedStanding)
+	-- check if the Faction is actually a 'Renown' faction (Major Faction)
+	local majorFactionData = GetMajorFactionData(factionID);
+	if majorFactionData then
+		local max = #GetRenownLevels(factionID);
+		return requestedStanding or majorFactionData.renownLevel, max, true;
+	end
 	local standing, maxStanding = 0, 8;
 	local friend = GetFriendshipReputation(factionID);
 	if friend then
@@ -10310,7 +10321,7 @@ local function GetCurrentFactionStandings(factionID)
 	else
 		standing = select(3, GetFactionInfoByID(factionID));
 	end
-	return standing or 1, maxStanding;
+	return requestedStanding or standing or 1, maxStanding;
 end
 app.GetCurrentFactionStandings = GetCurrentFactionStandings;
 -- Returns the 'text' colorized to match a specific standard 'StandingID'
@@ -10325,10 +10336,12 @@ local function ColorizeStandingText(standingID, text)
 end
 -- Returns StandingText or Requested Standing colorzing the 'Standing' text for the Faction, or otherwise the provided 'textOverride'
 app.GetCurrentFactionStandingText = function(factionID, requestedStanding, textOverride)
-	local standing = requestedStanding or GetCurrentFactionStandings(factionID);
+	local standing , maxStanding, isRenown = GetCurrentFactionStandings(factionID, requestedStanding);
+	if isRenown then
+		return Colorize(sformat(COVENANT_RENOWN_LEVEL_TOAST, standing), app.Colors.Renown);
+	end
 	local friendStandingText = GetFriendshipReputation(factionID, "reaction");
 	if friendStandingText then
-		local _, maxStanding = GetFriendshipReputationRanks(factionID);
 		-- adjust relative to max based on the actual max ranks of the friendship faction
 		-- prevent any weirdness of requesting a standing higher than the max for the friendship
 		local progress = math.min(standing, maxStanding) / maxStanding;

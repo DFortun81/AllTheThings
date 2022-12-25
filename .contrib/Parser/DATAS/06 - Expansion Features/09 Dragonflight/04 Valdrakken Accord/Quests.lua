@@ -6,13 +6,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		n(QUESTS, {
 				-- RENOWN 1 --
 			q(72406, {	-- Orientation: Valdrakken
-				["description"] = "Requires Renown 1.",
+				["minReputation"] = { 2510, 1 },	-- Valdrakken Renown 1
 				["provider"] = { "n", 193015 },	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
 			}),
 				-- RENOWN 2 --
 			q(70839, {	-- The Search for Titan Relics
-				["description"] = "Requires Renown 2.",
+				["minReputation"] = { 2510, 2 },	-- Valdrakken Renown 2
 				["provider"] = { "n", 195768 },	-- Sorotis
 				["coord"] = { 26, 40, VALDRAKKEN },
 				["g"] = {
@@ -20,7 +20,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72282, {	-- Renown Supplies
-				["description"] = "Requires Renown 2.",
+				["minReputation"] = { 2510, 2 },	-- Valdrakken Renown 2
 				["coord"] = { 26, 40, VALDRAKKEN },
 				["g"] = {
 					i(198868),	-- Small Valdrakken Accord Supply Pack
@@ -28,14 +28,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- Binds when picked up A Titan Relic
 			q(70840, {	-- A Titan Relic
-				["description"] = "Requires Renown 2.",
+				["minReputation"] = { 2510, 2 },	-- Valdrakken Renown 2
 				["provider"] = { "n", 195768 },	-- Sorotis
 				["coord"] = { 26, 40, VALDRAKKEN },
 				["cost"] = { { "i", 199906, 1 }, },	-- 1x Titan Relic
 				["repeatable"] = true,
 			}),
 			q(70841, {	-- More Titan Relics
-				["description"] = "Requires Renown 2.",
+				["minReputation"] = { 2510, 2 },	-- Valdrakken Renown 2
 				["provider"] = { "n", 195768 },	-- Sorotis
 				["coord"] = { 26, 40, VALDRAKKEN },
 				["cost"] = { { "i", 199906, 5 }, },	-- 5x Titan Relic
@@ -43,14 +43,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- Binds to Blizard account Centaur Hunting Trophy
 			q(71042, {	-- A Titan Relic
-				["description"] = "Requires Renown 2.",
+				["minReputation"] = { 2510, 2 },	-- Valdrakken Renown 2
 				["provider"] = { "n", 195768 },	-- Sorotis
 				["coord"] = { 26, 40, VALDRAKKEN },
 				["cost"] = { { "i", 200450, 1 }, },	-- 1x Titan Relic
 				["repeatable"] = true,
 			}),
 			q(71043, {	-- More Titan Relics
-				["description"] = "Requires Renown 2.",
+				["minReputation"] = { 2510, 2 },	-- Valdrakken Renown 2
 				["provider"] = { "n", 195768 },	-- Sorotis
 				["coord"] = { 26, 40, VALDRAKKEN },
 				["cost"] = { { "i", 200450, 5 }, },	-- 5x Titan Relic
@@ -58,7 +58,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 3 --
 			q(70880, {	-- To Cook With Finery
-				["description"] = "Requires Renown 3.",
+				["minReputation"] = { 2510, 3 },	-- Valdrakken Renown 3
 				["provider"] = { "n", 185556 },	-- Erugosa
 				["coord"] = { 46.5, 46.2, VALDRAKKEN },
 				["g"] = {
@@ -71,7 +71,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 4 --
 			q(70882, {	-- Well Supplied
-				["description"] = "Requires Renown 4.",
+				["minReputation"] = { 2510, 4 },	-- Valdrakken Renown 4
 				["provider"] = { "n", 193015 },	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
 				["g"] = {
@@ -80,17 +80,18 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 5 --
 			q(71210, {	-- To Dragonbane Keep!
-				["description"] = "Requires Renown 5. Spawns Anywhere on Dragon Isles.",
+				["minReputation"] = { 2510, 5 },	-- Valdrakken Renown 5
+				["description"] = "Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197478 },	-- Herald Flaps
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
 				-- RENOWN 6 --
 			q(70883, {	-- A Hand In Cultivation
-				["description"] = "Requires Renown 6.",
+				["minReputation"] = { 2510, 6 },	-- Valdrakken Renown 6
 				["provider"] = { "n", 193015 },	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
 				["g"] = {
-					i(199647),	-- Dragon Garden Fork	
+					i(199647),	-- Dragon Garden Fork
 					i(199653),	-- Dragon Garden Hand Shovel
 					i(199651),	-- Dragon Garden Hoe
 					i(199652),	-- Dragon Garden Rake
