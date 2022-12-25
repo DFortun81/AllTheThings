@@ -330,6 +330,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198720),	-- Soft Purple Pillow (TOY!)
 				},
 			}),
+				-- RENOWN 18 --
+			q(70818, {	-- New Dragonscale Equipment
+				["description"] = "Requires Renown 18.",
+				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
+				["coord"] = { 47.3, 83.3, THE_WAKING_SHORES },
+			}),
 
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
