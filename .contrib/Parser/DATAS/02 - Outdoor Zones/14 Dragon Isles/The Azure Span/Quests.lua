@@ -1715,6 +1715,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 186962 },	-- Cascade
 					["coord"] = { 23.7, 33.7, THE_AZURE_SPAN },
 				}),
+				q(69892, {	-- Grumbletrunk
+					["provider"] = { "n", 193269 },	-- Grumbletrunk
+					["coord"] = { 19.1, 43.6, THE_AZURE_SPAN },
+				}),
 				q(72254, {	-- Fisherman Tinnak's Ghost
 					["provider"] = { "n", 193691 },	-- Fisherman Tinnak <Angered Ghost>
 					["coord"] = { 49.5, 36.1, THE_AZURE_SPAN },

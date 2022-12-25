@@ -2598,6 +2598,8 @@ root("HiddenQuestTriggers", {
 			q(74126),	-- Skinning Crystalus in a Primal Storm
 			q(74152),	-- Skinning Galnomor
 			q(74160),	-- Skinning Yamakh
+			q(74134),	-- Skinning Grumbletrunk
+			q(74122),	-- Skinning Blisterhide
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--

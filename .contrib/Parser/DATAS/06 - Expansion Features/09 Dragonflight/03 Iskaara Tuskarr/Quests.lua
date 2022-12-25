@@ -288,7 +288,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199896),	-- Rubbery Fish Head (TOY!)
 				},
 			}),
-
+				-- RENOWN 19 --
+			q(70956, {	-- Of Azure Scales
+				["description"] = "Requires Renown 19.",
+				["provider"] = { "n", 196544 },	-- Norukk
+				["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
+				["g"] = {
+					i(197390),	-- Renewed Proto-Drake: Blue Scales (DM!)
+					i(197612),	-- Windborne Velocidrake: Blue Scales (DM!)
+					i(197012),	-- Cliffside Wylderdrake: Blue Scales (DM!)
+				},
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
