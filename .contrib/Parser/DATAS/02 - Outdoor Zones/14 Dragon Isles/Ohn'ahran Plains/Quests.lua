@@ -1017,7 +1017,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			q(72512, {	-- A Whispering Breeze
-				["description"] = "Require Renown 25 and Finish Initiate Questline. Speak to Godoloto to get the clues then gather the cost objects.",
+				["minReputation"] = { 2503, 25 },	-- Maruuk Centaur Renown 25
+				["description"] = "Speak to Godoloto to get the clues then gather the cost objects.",
 				["sourceQuests"] = { 66676 },	-- Sneaking In
 				["provider"] = { "n", 190022 },	-- Godoloto
 				["coord"] = { 56.5, 73.3, OHNAHRAN_PLAINS },
@@ -1031,7 +1032,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			q(71196, {	-- To Tame A Thunderspine
-				["description"] = "Require Renown 9 and Finish Initiate Questline.",
+				["minReputation"] = { 2503, 19 },	-- Maruuk Centaur Renown 19
 				["sourceQuests"] = { 66676 },	-- Sneaking In
 				["provider"] = { "n", 190014 },	-- Initiate Radiya
 				["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },

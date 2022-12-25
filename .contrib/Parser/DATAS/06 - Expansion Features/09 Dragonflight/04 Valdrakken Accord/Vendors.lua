@@ -534,7 +534,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 					i(196989, {	-- Cliffside Wylderdrake: White Hair (DM!)
-						["description"] = "Renown 15.",
+						["minReputation"] = { 2510, 15 },	-- Valdrakken Accord Renown 15
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 100 },
 						},

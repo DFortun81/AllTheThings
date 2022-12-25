@@ -262,7 +262,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198902),	-- Technique: Windborne Velocidrake: Black Fur (RECIPE!)
 					i(197618),	-- Windborne Velocidrake: Long Snout (DM!)
 					i(197623),	-- Windborne Velocidrake: Spiked Tail (DM!)
-						-- Renown 18 --
+						-- RENOWN 18 --
 					i(198463),	-- Pattern: Expert Alchemist's Hat (RECIPE!)
 					i(198462),	-- Pattern: Flameproof Apron (RECIPE!)
 					i(198457),	-- Pattern: Masterwork Smock (RECIPE!)
@@ -273,7 +273,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(197011),	-- Cliffside Wylderdrake: Green Scales (DM!)
 					i(197143),	-- Highland Drake: Green Scales (DM!)
 					i(197389, {	-- Renewed Proto-Drake: Green Scales (DM!)
-						["description"] = "Renown 19.",
+						["minReputation"] = { 2503, 19 },	-- Maruuk Centaur Renown 19
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 400 },
 							{ "i", 190327, 1 },	-- 1x Awakened Air

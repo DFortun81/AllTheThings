@@ -539,7 +539,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
-						-- Renown 23 --
+						-- RENOWN 23 --
 					i(194311, {	-- Pattern: Tuskarr Bean Bag (RECIPE!)
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
@@ -551,7 +551,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							{ "c", DRAGON_SUPPLIES, 200 },
 						},
 					}),
-						-- Renown 29 --
+						-- RENOWN 29 --
 					i(197981, {	-- Pattern: Finished Prototype Regal Barding (RECIPE!)
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },

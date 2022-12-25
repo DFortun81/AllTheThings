@@ -15,24 +15,25 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			n(QUESTS, {
 					-- RENOWN 6 --
 				q(69855, {	-- A Climber's Calling
-					["description"] = "Requires Renown 6. Spawns Anywhere on Dragon Isles.",
+					["minReputation"] = { 2507, 6 },	-- Dragonscale Expedition Renown 6
+					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(72524, {	-- Basic Climbing Gear
-					["description"] = "Requires Renown 6.",
+					["minReputation"] = { 2507, 6 },	-- Dragonscale Expedition Renown 6
 					["sourceQuests"] = { 69855 },	-- A Climber's Calling
 					["provider"] = { "n", 187700 },	-- Pathfinder Jab
 					["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
 				}),
 				q(66351, {	-- Smoke Over the Mountain
-					["description"] = "Requires Renown 6.",
+					["minReputation"] = { 2507, 6 },	-- Dragonscale Expedition Renown 6
 					["sourceQuests"] = { 72524 },	-- Basic Climbing Gear
 					["provider"] = { "n", 187700 },	-- Pathfinder Jab
 					["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
 				}),
 				q(65421, {	-- Climb Every Mountain
-					["description"] = "Requires Renown 6.",
+					["minReputation"] = { 2507, 6 },	-- Dragonscale Expedition Renown 6
 					["sourceQuests"] = { 66351 },	-- Smoke Over the Mountain
 					["provider"] = { "n", 181039 },	-- Rocky Dustbeard
 					["coord"] = { 62.4, 50.5, THE_WAKING_SHORES },

@@ -56,9 +56,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			pet(3322, {	-- Woodbiter Piculet
 				["cr"] = 189157,	-- Woodbiter Piculet
 			}),
-
 			pet(3389, {	-- The Quackcestor
-				["description"] = "Requires renown 7 with |cFFefc400Maruuk Centaur|r. Buy the |cFFefc400Essence of Awakening|r from |cFFefc400Quartermaster Huseng|r and use it to be able to see this pet.",
+				["minReputation"] = { 2503, 7 },	-- Maruuk Centaur Renown 7
+				["description"] = "Buy the |cFFefc400Essence of Awakening|r from |cFFefc400Quartermaster Huseng|r and use it to be able to see this pet.",
 				["cr"] = 197063,	-- The Quackcestor
 				["coords"] = {
 					{ 41.6, 45.2, OHNAHRAN_PLAINS },

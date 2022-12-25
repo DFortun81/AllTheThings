@@ -100,22 +100,22 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 7 --
 			q(70885, {	-- Renown Supplies
-				["description"] = "Requires Renown 7.",
+				["minReputation"] = { 2510, 7 },	-- Valdrakken Accord Renown 7
 				["provider"] = { "n", 193015 },	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
 				["g"] = {
 					i(198868),	-- Small Valdrakken Accord Supply Pack
 				},
 			}),
-				-- RENOWN 7 --
 			q(71227, {	-- Aerial Challenges
-				["description"] = "Requires Renown 7. Spawns Anywhere on Dragon Isles.",
+				["minReputation"] = { 2510, 7 },	-- Valdrakken Accord Renown 7
+				["description"] = "Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197478 },	-- Herald Flaps
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
 				-- RENOWN 9 --
 			q(70887, {	-- Feeling Freedom
-				["description"] = "Requires Renown 9.",
+				["minReputation"] = { 2510, 9 },	-- Valdrakken Accord Renown 9
 				["provider"] = { "n", 185561 },	-- Kaestrasz
 				["coord"] = { 46.8, 78.8, VALDRAKKEN },
 				["g"] = {
@@ -126,7 +126,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 10 --
 			q(70888, {	-- Rubbing Shoulders With The Best
-				["description"] = "Requires Renown 10.",
+				["minReputation"] = { 2510, 10 },	-- Valdrakken Accord Renown 10
 				["provider"] = { "n", 195770 },	-- Armorsmith Terisk
 				["coord"] = { 36.0, 49.7, VALDRAKKEN },
 				["g"] = {
@@ -139,61 +139,62 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 12 --
 			q(68794, {	-- Ally of Dragons
-				["description"] = "Requires Renown 12. Spawns Anywhere on Dragon Isles.",
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
+				["description"] = "Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197478 },	-- Herald Flaps
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
 			q(67074, {	-- The Gift of Silver
 				["sourceQuest"] = 68794,	-- Ally of Dragons
-				["description"] = "Requires Renown 12.",
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
 				["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 				["coord"] = { 58.5, 35.7, VALDRAKKEN },
 			}),
 			q(70703, {	-- The Legacy of Tyrhold
 				["sourceQuest"] = 67074,	-- The Gift of Silver
-				["description"] = "Requires Renown 12.",
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
 				["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 				["coord"] = { 58.5, 35.7, VALDRAKKEN },
 			}),
 			q(67075, {	-- The Magic Within
 				["sourceQuest"] = 70703,	-- The Legacy of Tyrhold
-				["description"] = "Requires Renown 12.",
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
 				["provider"] = { "n", 192480 },	-- Watcher Koranos
 				["coord"] = { 58.2, 58.8, THALDRASZUS },
 			}),
 			q(67076, {	-- A Spark of Discovery
 				["sourceQuest"] = 67075,	-- The Magic Within
-				["description"] = "Requires Renown 12.",
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
 				["provider"] = { "n", 192480 },	-- Watcher Koranos
 				["coord"] = { 58.2, 58.8, THALDRASZUS },
 			}),
 			q(67077, {	-- Memories of the Past
 				["sourceQuest"] = 67076,	-- A Spark of Discovery
-				["description"] = "Requires Renown 12.",
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
 				["provider"] = { "n", 192573 },	-- Alexstrasza the Life-Binder
 				["coord"] = { 62.1, 59.3, THALDRASZUS },
 			}),
 			q(67078, {	-- Parting Instructions
 				["sourceQuest"] = 67077,	-- Memories of the Past
-				["description"] = "Requires Renown 12.",
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
 				["provider"] = { "n", 192496 },	-- Keeper Tyr
 				["coord"] = { 62.2, 59.2, THALDRASZUS },
 			}),
 			q(67079, {	-- Hard Lock Life
 				["sourceQuest"] = 67078,	-- Parting Instructions
-				["description"] = "Requires Renown 12.",
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
 				["provider"] = { "n", 192480 },	-- Watcher Karanos
 				["coord"] = { 60.4, 58.9, THALDRASZUS },
 			}),
 			q(67081, {	-- An Infusion of Materials
 				["sourceQuest"] = 67079,	-- Hard Lock Life
-				["description"] = "Requires Renown 12.",
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
 				["provider"] = { "n", 192496 },	-- Keeper Tyr
 				["coord"] = { 60.5, 58.6, THALDRASZUS },
 			}),
 			q(67084, {	-- The Silver Purpose
 				["sourceQuest"] = 67081,	-- An Infusion of Materials
-				["description"] = "Requires Renown 12.",
+				["minReputation"] = { 2510, 12 },	-- Valdrakken Accord Renown 12
 				["provider"] = { "n", 192496 },	-- Keeper Tyr
 				["coord"] = { 60.5, 58.6, THALDRASZUS },
 				["g"] = {
@@ -202,7 +203,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 13 --
 			q(70903, {	-- Wielding Titanic Might
-				["description"] = "Requires Renown 13.",
+				["minReputation"] = { 2510, 13 },	-- Valdrakken Accord Renown 13
 				["provider"] = { "n", 195768 },	-- Sorotis
 				["coord"] = { 26.1, 40.0, VALDRAKKEN },
 				["g"] = {
@@ -212,7 +213,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 14 --
 			q(72690, {	-- Renown Supplies
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2510, 14 },	-- Valdrakken Accord Renown 14
 				["provider"] = { "n", 193015 },	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
 				["g"] = {
@@ -220,7 +221,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(70892, {	-- Crafting Your Start
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2510, 14 },	-- Valdrakken Accord Renown 14
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.4, 52.8, VALDRAKKEN },
 				["requireSkill"] = ALCHEMY,
@@ -229,7 +230,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72329, {	-- Crafting Your Start
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2510, 14 },	-- Valdrakken Accord Renown 14
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.4, 52.8, VALDRAKKEN },
 				["requireSkill"] = BLACKSMITHING,
@@ -238,7 +239,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72330, {	-- Crafting Your Start
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2510, 14 },	-- Valdrakken Accord Renown 14
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.4, 52.8, VALDRAKKEN },
 				["requireSkill"] = ENGINEERING,
@@ -247,7 +248,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72331, {	-- Crafting Your Start
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2510, 14 },	-- Valdrakken Accord Renown 14
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.4, 52.8, VALDRAKKEN },
 				["requireSkill"] = INSCRIPTION,
@@ -256,7 +257,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72332, {	-- Crafting Your Start
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2510, 14 },	-- Valdrakken Accord Renown 14
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.4, 52.8, VALDRAKKEN },
 				["requireSkill"] = MINING,
@@ -265,7 +266,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72333, {	-- Crafting Your Start
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2510, 14 },	-- Valdrakken Accord Renown 14
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.4, 52.8, VALDRAKKEN },
 				["requireSkill"] = TAILORING,
@@ -275,7 +276,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 15 --
 			q(70895, {	-- Soaring in Style
-				["description"] = "Requires Renown 15.",
+				["minReputation"] = { 2510, 15 },	-- Valdrakken Accord Renown 15
 				["provider"] = { "n", 185561 },	-- Kaestrasz
 				["coord"] = { 46.8, 78.8, VALDRAKKEN },
 				["g"] = {
@@ -286,13 +287,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 16 --
 			q(70896, {	-- Waist Not, Want Not
-				["description"] = "Requires Renown 16.",
+				["minReputation"] = { 2510, 16 },	-- Valdrakken Accord Renown 16
 				["provider"] = { "n", 193659 },	-- Provisioner Thom
 				["coord"] = { 36.5, 50.6, VALDRAKKEN },
 			}),
 				-- RENOWN 17 --
 			q(70897, {	-- A Coming of Age
-				["description"] = "Requires Renown 17.",
+				["minReputation"] = { 2510, 17 },	-- Valdrakken Accord Renown 17
 				["provider"] = { "n", 195770 },	-- Armorsmith Terisk
 				["coord"] = { 36.0, 49.7, VALDRAKKEN },
 				["g"] = {
@@ -305,7 +306,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 18 --
 			q(70901, {	-- A Collection of Creatures
-				["description"] = "Requires Renown 18.",
+				["minReputation"] = { 2510, 18 },	-- Valdrakken Accord Renown 18
 				["provider"] = { "n", 189197 },	-- Groundskeeper Kama
 				["coord"] = { 74.6, 63.2, VALDRAKKEN },
 				["g"] = {
@@ -315,7 +316,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 19 --
 			q(66620, {	-- Emerald Summons
-				["description"] = "Requires Renown 19. Spawns Anywhere on Dragon Isles.",
+				["minReputation"] = { 2510, 19 },	-- Valdrakken Accord Renown 19
+				["description"] = "Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197478 },	-- Herald Flaps
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
@@ -509,7 +511,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 20 --
 			q(70891, {	-- Fitting In
-				["description"] = "Requires Renown 20.",
+				["minReputation"] = { 2510, 20 },	-- Valdrakken Accord Renown 20
 				["qg"] = 195782,	-- Giera
 				["coord"] = { 31.6, 69.3, VALDRAKKEN },
 				["g"] = {
@@ -522,19 +524,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 21 --
 			q(70904, {	-- Variety is the Spice of Life
-				["description"] = "Requires Renown 21.",
+				["minReputation"] = { 2510, 21 },	-- Valdrakken Accord Renown 21
 				["qg"] = 185561,	-- Kaestrasz
 				["coord"] = { 46.8, 78.8, VALDRAKKEN },
 			}),
 				-- RENOWN 22 --
 			q(70915, {	-- Crowning Achievement
-				["description"] = "Requires Renown 22.",
+				["minReputation"] = { 2510, 22 },	-- Valdrakken Accord Renown 22
 				["qg"] = 193659,	-- Provisioner Thom
 				["coord"] = { 36.6, 50.6, VALDRAKKEN },
 			}),
 				-- RENOWN 23 --
 			q(70905, {	-- Flying with Our Colors
-				["description"] = "Requires Renown 23.",
+				["minReputation"] = { 2510, 23 },	-- Valdrakken Accord Renown 23
 				["qg"] = 193015,	-- Unatos
 				["coord"] = { 58.2, 35.6, VALDRAKKEN },
 				["g"] = {
@@ -543,7 +545,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 24 --
 			q(70889, {	-- Crafting for Expertise
-				["description"] = "Requires Renown 24.",
+				["minReputation"] = { 2510, 24 },	-- Valdrakken Accord Renown 24
 				["qg"] = 191000,	-- Dothenos
 				["coord"] = { 36.4, 52.8, VALDRAKKEN },
 				["requireSkill"] = ALCHEMY,
@@ -552,7 +554,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(70902, {	-- Crafting for Expertise
-				["description"] = "Requires Renown 24.",
+				["minReputation"] = { 2510, 24 },	-- Valdrakken Accord Renown 24
 				["qg"] = 191000,	-- Dothenos
 				["coord"] = { 36.4, 52.8, VALDRAKKEN },
 				["requireSkill"] = ENGINEERING,
@@ -561,7 +563,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(70909, {	-- Crafting for Expertise
-				["description"] = "Requires Renown 24.",
+				["minReputation"] = { 2510, 24 },	-- Valdrakken Accord Renown 24
 				["qg"] = 191000,	-- Dothenos
 				["coord"] = { 36.4, 52.8, VALDRAKKEN },
 				["requireSkill"] = BLACKSMITHING,
@@ -570,7 +572,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72334, {	-- Crafting for Expertise
-				["description"] = "Requires Renown 24.",
+				["minReputation"] = { 2510, 24 },	-- Valdrakken Accord Renown 24
 				["qg"] = 191000,	-- Dothenos
 				["coord"] = { 36.4, 52.8, VALDRAKKEN },
 				["requireSkill"] = INSCRIPTION,
@@ -579,7 +581,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72335, {	-- Crafting for Expertise
-				["description"] = "Requires Renown 24.",
+				["minReputation"] = { 2510, 24 },	-- Valdrakken Accord Renown 24
 				["qg"] = 191000,	-- Dothenos
 				["coord"] = { 36.4, 52.8, VALDRAKKEN },
 				["requireSkill"] = MINING,
@@ -588,7 +590,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72336, {	-- Crafting for Expertise
-				["description"] = "Requires Renown 24.",
+				["minReputation"] = { 2510, 24 },	-- Valdrakken Accord Renown 24
 				["qg"] = 191000,	-- Dothenos
 				["coord"] = { 36.4, 52.8, VALDRAKKEN },
 				["requireSkill"] = TAILORING,
