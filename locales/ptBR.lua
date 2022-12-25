@@ -3526,7 +3526,7 @@ for key,value in pairs({
 	[381510] = "Ossos de Peixe Voador",	-- Flying Fish Bones
 	[381511] = "Cabeça de Arpão",	-- Harpoon Head
 	--TODO: [381513] = "Old Pickaxe",	-- Old Pickaxe
-	--TODO: [381579] = "Archivists' Request",	-- Archivists' Request
+	[381579] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Inscrições Fogo, Asa, Presa",	-- Fang Flap Fire Signups
 	[381661] = "Pedido dos Arquivistas",	-- Archivists' Request

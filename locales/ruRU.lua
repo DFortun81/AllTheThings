@@ -3517,7 +3517,7 @@ for key,value in pairs({
 	[381510] = "Кости летающей рыбы",	-- Flying Fish Bones
 	[381511] = "Наконечник гарпуна",	-- Harpoon Head
 	[381513] = "Старая кирка",	-- Old Pickaxe
-	--TODO: [381579] = "Archivists' Request",	-- Archivists' Request
+	[381579] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Запись на игру в \"Клык, взмах, огонь\"",	-- Fang Flap Fire Signups
 	[381661] = "Просьба архивариуса",	-- Archivists' Request

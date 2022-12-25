@@ -3527,7 +3527,7 @@ for key,value in pairs({
 	[381510] = "Knochen fliegender Fische",	-- Flying Fish Bones
 	[381511] = "Harpunenspitze",	-- Harpoon Head
 	--TODO: [381513] = "Old Pickaxe",	-- Old Pickaxe
-	--TODO: [381579] = "Archivists' Request",	-- Archivists' Request
+	[381579] = "Anfrage des Archivars",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "Anfrage des Archivars",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Einschreibungen für Zahnflatterfeuer",	-- Fang Flap Fire Signups
 	[381661] = "Anfrage des Archivars",	-- Archivists' Request

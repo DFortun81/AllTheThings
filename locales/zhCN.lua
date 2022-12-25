@@ -3540,7 +3540,7 @@ for key, value in pairs({
 	--TODO: [381510] = "Flying Fish Bones",	-- Flying Fish Bones
 	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
 	[381513] = "旧镐",	-- Old Pickaxe
-	--TODO: [381579] = "Archivists' Request",	-- Archivists' Request
+	[381579] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "“炽齿翅”报名处",	-- Fang Flap Fire Signups
 	[381661] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated

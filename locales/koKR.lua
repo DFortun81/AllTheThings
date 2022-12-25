@@ -3526,7 +3526,7 @@ for key,value in pairs({
 	[381510] = "날치 뼈",	-- Flying Fish Bones
 	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
 	[381513] = "오래된 곡괭이",	-- Old Pickaxe
-	--TODO: [381579] = "Archivists' Request",	-- Archivists' Request
+	[381579] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "송곳니, 날개, 불 등록",	-- Fang Flap Fire Signups
 	[381661] = "기록관의 요청",	-- Archivists' Request
