@@ -4,37 +4,57 @@
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(VALDRAKKEN_ACCORD, {
 		n(QUESTS, {
+				-- RENOWN 1 --
 			q(72406, {	-- Orientation: Valdrakken
+				["description"] = "Requires Renown 1.",
 				["provider"] = { "n", 193015 },	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
 			}),
 				-- RENOWN 2 --
 			q(70839, {	-- The Search for Titan Relics
+				["description"] = "Requires Renown 2.",
 				["provider"] = { "n", 195768 },	-- Sorotis
 				["coord"] = { 26, 40, VALDRAKKEN },
 				["g"] = {
 					sp(388303),	-- Titan Relics
 				},
 			}),
+			q(72282, {	-- Renown Supplies
+				["description"] = "Requires Renown 2.",
+				["coord"] = { 26, 40, VALDRAKKEN },
+				["g"] = {
+					i(198868),	-- Small Valdrakken Accord Supply Pack
+				},
+			}),
+				-- Binds when picked up A Titan Relic
 			q(70840, {	-- A Titan Relic
+				["description"] = "Requires Renown 2.",
 				["provider"] = { "n", 195768 },	-- Sorotis
 				["coord"] = { 26, 40, VALDRAKKEN },
 				["cost"] = { { "i", 199906, 1 }, },	-- 1x Titan Relic
 				["repeatable"] = true,
 			}),
 			q(70841, {	-- More Titan Relics
-				["sourceQuest"] = 70839,	-- The Search for Titan Relics
+				["description"] = "Requires Renown 2.",
 				["provider"] = { "n", 195768 },	-- Sorotis
 				["coord"] = { 26, 40, VALDRAKKEN },
 				["cost"] = { { "i", 199906, 5 }, },	-- 5x Titan Relic
 				["repeatable"] = true,
 			}),
-			q(72282, {	-- Renown Supplies
-				["sourceQuest"] = 70839,	-- The Search for Titan Relics
+				-- Binds to Blizard account Centaur Hunting Trophy
+			q(71042, {	-- A Titan Relic
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 195768 },	-- Sorotis
 				["coord"] = { 26, 40, VALDRAKKEN },
-				["g"] = {
-					i(198868),	-- Small Valdrakken Accord Supply Pack (contains Dragon Isles Supplies)
-				},
+				["cost"] = { { "i", 200450, 1 }, },	-- 1x Titan Relic
+				["repeatable"] = true,
+			}),
+			q(71043, {	-- More Titan Relics
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 195768 },	-- Sorotis
+				["coord"] = { 26, 40, VALDRAKKEN },
+				["cost"] = { { "i", 200450, 5 }, },	-- 5x Titan Relic
+				["repeatable"] = true,
 			}),
 				-- RENOWN 3 --
 			q(70880, {	-- To Cook With Finery
@@ -70,8 +90,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 193015 },	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
 				["g"] = {
+					i(199647),	-- Dragon Garden Fork	
+					i(199653),	-- Dragon Garden Hand Shovel
+					i(199651),	-- Dragon Garden Hoe
+					i(199652),	-- Dragon Garden Rake
 					i(199654),	-- Dragon Garden Shovel
-					i(199647),	-- Dragon Garden Fork
 				},
 			}),
 				-- RENOWN 7 --

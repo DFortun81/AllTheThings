@@ -162,7 +162,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				crit(3),	-- Broken Banding
 				crit(6),	-- Finely Carved Wing
 			}),
-			ach(16409),	-- Let's Get Quacking
 			ach(16493, {	-- Petty Theft Mammoth
 				["coords"] = {
 					{ 33.3, 72.2, THE_WAKING_SHORES },	-- Burning Ascent

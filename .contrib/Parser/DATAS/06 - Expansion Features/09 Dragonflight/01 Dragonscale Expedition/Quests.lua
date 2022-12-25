@@ -5,54 +5,70 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 	n(DRAGONSCALE_EXPEDITION, {
 		n(QUESTS, {
 				-- RENOWN 1 --
-			q(71034, {	-- Dragon Isles Artifacts
-				["provider"] = { "n", 189226 },	-- Cataloger Jakes
-				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-				["repeatable"] = true,
-				["cost"] = { { "i", 192055, 1 }, }, 	-- 1x Dragon Isles Artifact
-			}),
-			q(71035, {	-- Multiple Dragon Isles Artifacts
-				["provider"] = { "n", 189226 },	-- Cataloger Jakes
-				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-				["repeatable"] = true,
-				["cost"] = { { "i", 192055, 5 }, }, 	-- 5x Dragon Isles Artifact
-			}),
-			q(72876, {	-- Multiple Dragon Isles Artifacts
-				["provider"] = { "n", 189226 },	-- Cataloger Jakes
-				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-				["repeatable"] = true,
-				["cost"] = { { "i", 192055, 20 }, }, 	-- 20x Dragon Isles Artifact
-			}),
 			q(72397, {	-- Orientation: Dragonscale Basecamp
 				["description"] = "Requires Renown 1.",
 				["provider"] = { "n", 186869 },	-- Naleidea Rivergleam
 				["coord"] = { 47.9, 82.4, THE_WAKING_SHORES },
 			}),
 				-- RENOWN 2 --
-			q(72023, {	-- Dragon Isles Supplies
-				["description"] = "Requires Renown 2.",
-				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
-				["provider"] = { "n", 189226 },	-- Cataloger Jakes
-				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-				["g"] = {
-					i(198863),	-- Small Dragon Expedition Supply Pack
-				},
-			}),
 			q(70822, {	-- Lost Expedition Scouts
 				["description"] = "Requires Renown 2.",
 				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
 				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
 			}),
-				-- RENOWN 3 --
-			q(72024, {	-- Dragon Isles Supplies
-				["description"] = "Requires Renown 3.",
-				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
+			q(72023, {	-- Dragon Isles Supplies
+				["description"] = "Requires Renown 2.",
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["g"] = {
 					i(198863),	-- Small Dragon Expedition Supply Pack
 				},
 			}),
+				-- Binds when picked up A Titan Relic
+			q(71034, {	-- Dragon Isles Artifacts
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["cost"] = { { "i", 192055, 1 }, }, 	-- 1x Dragon Isles Artifact
+			}),
+			q(71035, {	-- Multiple Dragon Isles Artifacts
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["cost"] = { { "i", 192055, 5 }, }, 	-- 5x Dragon Isles Artifact
+			}),
+			q(72876, {	-- Multiple Dragon Isles Artifacts
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["cost"] = { { "i", 192055, 20 }, }, 	-- 20x Dragon Isles Artifact
+			}),
+				-- Binds to Blizard account A Titan Relic
+			q(71036, {	-- Dragon Isles Artifacts
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["cost"] = { { "i", 200443, 1 }, }, 	-- 1x Dragon Isles Artifact
+			}),
+			q(71037, {	-- Multiple Dragon Isles Artifacts
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["cost"] = { { "i", 200443, 5 }, }, 	-- 5x Dragon Isles Artifact
+			}),
+			q(72877, {	-- Multiple Dragon Isles Artifacts
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["cost"] = { { "i", 200443, 20 }, }, 	-- 20x Dragon Isles Artifact
+			}),
+				-- RENOWN 3 --
 			q(70335, {	-- Simple Excavation Tools
 				["description"] = "Requires Renown 3.",
 				["provider"] = { "n", 188265 },	-- Rae'ana
@@ -62,6 +78,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198717),	-- Excavator's Punch
 					i(198718),	-- Excavator's Chisel
 					i(199746),	-- Excavator's Trowel
+				},
+			}),
+			q(72024, {	-- Dragon Isles Supplies
+				["description"] = "Requires Renown 3.",
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
 				},
 			}),
 				-- RENOWN 4 --
@@ -77,6 +101,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199875),	-- Renowned Expeditioner's Drape
 				},
 			}),
+			q(72025, {	-- Dragon Isles Supplies
+				["description"] = "Requires Renown 4.",
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
+				},
+			}),
 				-- RENOWN 5 --
 			q(70813, {	-- Digging Up Treasure
 				["description"] = "Requires Renown 5.",
@@ -88,7 +120,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(72026, {	-- Dragonscale Expedition Supplies
 				["description"] = "Requires Renown 5.",
-				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["g"] = {
@@ -109,7 +140,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				-- RENOWN 8 --
 			q(72032, {	-- Dragonscale Expedition Supplies
 				["description"] = "Requires Renown 8.",
-				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["g"] = {
@@ -118,7 +148,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(72034, {	-- Dragonscale Expedition Supplies
 				["description"] = "Requires Renown 8.",
-				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["g"] = {
@@ -395,7 +424,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAGONSCALE_EXPEDITION, {
-		q(72025),	-- Triggeres together with 'Expedition Cloaks' (70812)
 		q(72033),	-- Triggeres together with 'Advanced Excavation Tools' (70807)
 		q(72037),	-- Triggers together with 'The Basecamp 'Pets'' (70820)
 		q(72401),	-- Triggered immediately after reaching renown 13

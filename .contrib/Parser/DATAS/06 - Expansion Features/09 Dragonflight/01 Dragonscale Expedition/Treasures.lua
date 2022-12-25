@@ -7,6 +7,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			o_repeated({	-- Disturbed Dirt
 				-- Contains
 				i(192055),	-- Dragon Isles Artifact
+				i(200443),	-- Dragon Isles Artifact
 				i(201393),	-- Dragonspawn Spellweaver's Focus
 				i(190454),	-- Primal Chaos
 				--
@@ -40,6 +41,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			o_repeated({	-- Expedition Scout's Pack
 				-- Contains
 				i(192055),	-- Dragon Isles Artifact
+				i(200443),	-- Dragon Isles Artifact
 				i(190454),	-- Primal Chaos
 				--
 				i(199061, {	-- A Guide to Rare Fish

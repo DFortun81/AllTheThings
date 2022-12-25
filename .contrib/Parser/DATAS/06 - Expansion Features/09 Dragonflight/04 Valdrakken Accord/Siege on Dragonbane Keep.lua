@@ -30,7 +30,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						["g"] = {
 							i(190454),	-- Primal Chaos
 							i(192055),	-- Dragon Isles Artifact
+							i(200443),	-- Dragon Isles Artifact
 							i(199906),	-- Titan Relic
+							i(200450),	-- Titan Relic
 							--
 							i(199230),	-- Schematic: Projectile Propulsion Pinion (RECIPE!)
 						},

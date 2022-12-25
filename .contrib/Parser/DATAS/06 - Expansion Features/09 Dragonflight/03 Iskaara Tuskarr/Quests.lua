@@ -4,21 +4,58 @@
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(ISKAARA_TUSKARR, {
 		n(QUESTS, {
+				-- RENOWN 1 --
 			q(72435, {	-- Orientation: Iskaara
+				["description"] = "Requires Renown 1.",
 				["provider"] = { "n", 193006 },	-- Murik
 				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 			}),
-				-- RENOWN 1 --
+				-- RENOWN 2 --
 			q(70936, {	-- Stolen Tuskaar Totems
-				["sourceQuests"] = { 65848 },	-- Tome-ward Bound (likely not accurate but what I had up through the chain)
+				["description"] = "Requires Renown 2.",
 				["provider"] = { "n", 186448 },	-- Elder Poa
 				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 			}),
+			q(72279, {	-- Dragon Isles Supplies
+				["description"] = "Requires Renown 2.",
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198866),	-- Small Iskaaran Supply Pack
+				},
+			}),
+				-- Binds when picked up Sacred Tuskarr Totem
 			q(70926, {	-- Stolen Totems
+				["description"] = "Requires Renown 2.",
 				["sourceQuests"] = { 70936 },	-- Stolen Tuskaar Totems
 				["provider"] = { "n", 186448 },	-- Elder Poa
 				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
-				["cost"] = {{"i",200071,1}},	-- Sacred Tuskarr Totem
+				["cost"] = {{ "i", 200071, 1 }},	-- 1x Sacred Tuskarr Totem
+				["repeatable"] = true,
+			}),
+			q(70927, {	-- More Stolen Totems
+				["description"] = "Requires Renown 2.",
+				["sourceQuests"] = { 70936 },	-- Stolen Tuskaar Totems
+				["provider"] = { "n", 186448 },	-- Elder Poa
+				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+				["cost"] = {{ "i", 200071, 5 }},	-- 5x Sacred Tuskarr Totem
+				["repeatable"] = true,
+			}),
+				-- Binds to Blizard account Sacred Tuskarr Totem
+			q(71040, {	-- Stolen Totems
+				["description"] = "Requires Renown 2.",
+				["sourceQuests"] = { 70936 },	-- Stolen Tuskaar Totems
+				["provider"] = { "n", 186448 },	-- Elder Poa
+				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+				["cost"] = {{ "i", 200449, 1 }},	-- 1x Sacred Tuskarr Totem
+				["repeatable"] = true,
+			}),
+			q(71041, {	-- More Stolen Totems
+				["description"] = "Requires Renown 2.",
+				["sourceQuests"] = { 70936 },	-- Stolen Tuskaar Totems
+				["provider"] = { "n", 186448 },	-- Elder Poa
+				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+				["cost"] = {{ "i", 200449, 5 }},	-- 5x Sacred Tuskarr Totem
 				["repeatable"] = true,
 			}),
 				-- RENOWN 3 --
@@ -27,12 +64,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 197631 },	-- Rowie
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
-				-- RENOWN 4 --
-			q(70941, {	-- Fishing Holes
-				["description"] = "Requires Renown 4. Spawns Anywhere on Dragon Isles.",
-				["provider"] = { "n", 197631 },	-- Rowie
-				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+			q(72385, {	-- Dragon Isles Supplies
+				["description"] = "Requires Renown 3.",
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198866),	-- Small Iskaaran Supply Pack
+				},
 			}),
+				-- RENOWN 4 --
 			q(70939, {	-- Cooking Utensils
 				["description"] = "Requires Renown 4.",
 				["provider"] = { "n", 186547 },	-- Lil Ki
@@ -42,22 +82,33 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(200748),	-- Tuskarr Ulu Knife
 				},
 			}),
-				-- RENOWN 5 --
-			q(71230, {	-- Tuskarr Fishing Gear
-				["description"] = "Requires Renown 5. Spawns Anywhere on Dragon Isles.",
-				["provider"] = { "n", 197631 },	-- Rowie
-				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+			q(72386, {	-- Dragon Isles Supplies
+				["description"] = "Requires Renown 4.",
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198866),	-- Small Iskaaran Supply Pack
+				},
 			}),
+				-- RENOWN 5 --
 			q(70940, {	-- Tuskarr Champion's Tales
 				["description"] = "Requires Renown 5.",
 				["provider"] = { "n", 186448 },	-- Elder Poa
 				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 			}),
 			q(72291, {	-- Story of a Memorable Victory
-				--["description"] = "Requires Renown 5.",
+				["description"] = "Requires Renown 5.",
 				["sourceQuests"] = { 70940 },	-- Tuskarr Champion's Tales
 				["provider"] = { "i", 201470 },	-- Story of a Memorable Victory
 				["isWeekly"] = true,
+			}),
+			q(72875, {	-- Dragon Isles Supplies
+				["description"] = "Requires Renown 5.",
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198866),	-- Small Iskaaran Supply Pack
+				},
 			}),
 				-- RENOWN 6 --
 			q(70953, {	-- Tuskarr Headwear
@@ -71,6 +122,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199536),	-- Ocean Grey Ear Warmer
 				},
 			}),
+			q(72387, {	-- Dragon Isles Supplies
+				["description"] = "Requires Renown 6.",
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198866),	-- Small Iskaaran Supply Pack
+				},
+			}),
 				-- RENOWN 7 --
 			q(70954, {	-- Mounting Curiosity
 				["description"] = "Requires Renown 7.",
@@ -82,6 +141,23 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(197101),	-- Highland Drake: Bushy Brow (DM!)
 				},
 			}),
+			q(72388, {	-- Dragon Isles Supplies
+				["description"] = "Requires Renown 7.",
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198866),	-- Small Iskaaran Supply Pack
+				},
+			}),
+				-- RENOWN 8 --
+			q(72389, {	-- Dragon Isles Supplies
+				["description"] = "Requires Renown 8.",
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198866),	-- Small Iskaaran Supply Pack
+				},
+			}),
 				-- RENOWN 9 --
 			q(70959, {	-- Cute and Cuddly
 				["description"] = "Requires Renown 9. Runs around Iskaara.",
@@ -90,6 +166,23 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(193837),	-- Backswimmer Timbertooth (PET!)
 					i(193225),	-- Whiskuk (PET!)
+				},
+			}),
+			q(72390, {	-- Dragon Isles Supplies
+				["description"] = "Requires Renown 9.",
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198866),	-- Small Iskaaran Supply Pack
+				},
+			}),
+				-- RENOWN 10 --
+			q(72391, {	-- Dragon Isles Supplies
+				["description"] = "Requires Renown 10.",
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198866),	-- Small Iskaaran Supply Pack
 				},
 			}),
 				-- RENOWN 11 --
@@ -307,13 +400,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
-		q(72279),	-- Triggered with 'Stolen Tuskaar Totems' (70936)
-		q(72385),	-- Triggered with 'Community Feasts' (70938)
-		q(72386),	-- Triggered with 'Cooking Utensils' (70939)
-		q(72387),	-- Triggered with 'Tuskarr Headwear' (70953)
 		q(72781),	-- Triggered with 'Tuskarr Fishing Gear' (71230)
-		q(72388),	-- Triggered with 'Mounting Curiosity' (70954)
-		q(72390),	-- Triggered with 'Cute and Cuddly' (70959)
 		q(71184),	-- Triggered with 'While the Iron Is Hot' (66444)
 		q(72753),	-- Triggered with 'While the Iron Is Hot' (66444)
 		q(72393),	-- Triggered with 'Trader's Apparel' (70960)

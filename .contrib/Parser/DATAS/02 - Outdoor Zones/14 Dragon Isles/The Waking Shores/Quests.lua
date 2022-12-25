@@ -1054,6 +1054,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "n", 196572 },	-- Bubbled Duckling
 						["coord"] = { 79.3, 42.7, THE_WAKING_SHORES },
 					}),
+					q(70919, {	-- Quacking Out For a Hero
+						["sourceQuests"] = { 70918 },	-- Quack for Your Life
+						["provider"] = { "n", 196747 },	-- Bubbled Duckling
+						["coord"] = { 82.8, 42.6, THE_WAKING_SHORES },
+						["g"] = {
+							ach(16409),	-- Let's Get Quacking
+						},
+					}),
 				},
 			}),
 				-- MISC --

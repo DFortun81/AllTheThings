@@ -9,9 +9,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16321),	-- Cutting Tusk Equipment
 				ach(16317),	-- Secret Fishing Spots
 
-
-
-
 				ach(16561),	-- Lunkers, Lunkers Everywhere
 				ach(16562),	-- That's not a Fish...
 				ach(16563),	-- We're Going to Need a Bigger Harpoon
@@ -24,7 +21,18 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16553),	-- Taking From Nature
 			}),
 			n(QUESTS, {
+					-- RENOWN 4 --
+				q(70941, {	-- Fishing Holes
+					["description"] = "Requires Renown 4. Spawns Anywhere on Dragon Isles.",
+					["provider"] = { "n", 197631 },	-- Rowie
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
 					-- RENOWN 5 --
+				q(71230, {	-- Tuskarr Fishing Gear
+					["description"] = "Requires Renown 5. Spawns Anywhere on Dragon Isles.",
+					["provider"] = { "n", 197631 },	-- Rowie
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
 				q(70871, {	-- Iskaaran Fishing Net
 					["description"] = "Requires Renown 5.",
 					["provider"] = { "n", 195935 },	-- Tavio
@@ -100,7 +108,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["provider"] = { "n", 198766 },	-- Thrifty Fisher
 					["coord"] = { 80.8, 78.4, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
-					["description"] = "Requires Renown 4.",
+					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
 					["g"] = {
 						i(198855),	-- Throw Net
 					},
@@ -109,20 +117,20 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["provider"] = { "n", 198766 },	-- Thrifty Fisher
 					["coord"] = { 80.8, 78.4, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
-					["description"] = "Requires Renown 4.",
+					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
 				}),
 					-- The Azure Span --
 				q(71191, {	-- Net Worth
 					["provider"] = { "n", 197700 },	-- Gruff Fisher
 					["coord"] = { 58.6, 34.4, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
-					["description"] = "Requires Renown 4.",
+					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
 				}),
 				q(72069, {	-- Subglacial Refill
 					["provider"] = { "n", 197700 },	-- Gruff Fisher
 					["coord"] = { 58.6, 34.4, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
-					["description"] = "Requires Renown 4.",
+					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
 				}),
 
 					-- Repeatables --
@@ -204,7 +212,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
 		q(70793),	-- Triggered after crafting Iskaaran Fishing Net during Iskaaran Fishing Net (questID 70871)
 		q(70792),	-- Triggered after crafting Iskaaran Harpoon
-		q(72391),	-- Triggered with 'Ice Fishing' (70944)
 		q(72394),	-- Triggered with 'Fascinating Fliers' (70955)
 		q(72280),	-- Triggered with 'Hook, Line, and Swelter!' (70948)
 		--
