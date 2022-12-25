@@ -1042,10 +1042,6 @@ i(192099);  -- Earpieces of Tranquil Focus
 i(192485);	-- Stored Wisdom Device
 i(193588);	-- Timewalker's Hearthstone
 i(187958);	-- Shrouded Banner of the Opportune
--- NYI --
---i(191937);	-- Falling Star Catcher (Added in Dragonflight)
---i(191925);	-- Falling Star Flinger (Added in Dragonflight)
-
 
 ------------------
 -- PATCH 10.0.0 --

@@ -171,7 +171,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 						["provider"] = { "n", 16802 },	-- Lor'themar Theron
 					}),
 					-- #if BEFORE 4.0.3
-					-- Patch 4.0.3a (2010-11-23): Criteria updated to match new faction leaders: 
+					-- Patch 4.0.3a (2010-11-23): Criteria updated to match new faction leaders:
 					-- Cairne Bloodhoof changed to Baine Bloodhoof;
 					-- Thrall changed to Garrosh Hellscream;
 					-- Vol'jin removed.
@@ -192,9 +192,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 						["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
 					}),
 					-- #endif
-					
+
 					-- #if AFTER 8.2.5
-					-- Patch 8.2.5 (2019-09-24): Eitrigg has replaced High Overlord Saurfang. 
+					-- Patch 8.2.5 (2019-09-24): Eitrigg has replaced High Overlord Saurfang.
 					crit(35832, {	-- Eitrigg
 						["provider"] = { "n", 126066 },	-- Eitrigg
 					}),
@@ -204,7 +204,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 						["provider"] = { "n", 14720 },	-- High Overlord Saurfang
 					}),
 					-- #elseif AFTER 6.0.2
-					-- Patch 6.0.2 (2014-10-14): Garrosh Hellscream changed to Vol'jin to reflect post-Siege of Orgrimmar events. 
+					-- Patch 6.0.2 (2014-10-14): Garrosh Hellscream changed to Vol'jin to reflect post-Siege of Orgrimmar events.
 					crit(12659, {	-- Vol'jin
 						["provider"] = { "n", 10540 },	-- Vol'jin
 					}),
@@ -236,9 +236,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 						["provider"] = { "n", 7999 },	-- Tyrande Whisperwind
 					}),
 					-- #if AFTER 4.0.3
-					-- Patch 4.0.3a (2010-11-23): Criteria updated to match new faction leaders: 
+					-- Patch 4.0.3a (2010-11-23): Criteria updated to match new faction leaders:
 					-- King Magni Bronzebeard changed to Muradin Bronzebeard;
-					-- High Tinker Mekkatorque removed. 
+					-- High Tinker Mekkatorque removed.
 					crit(12664, {	-- Muradin Bronzebeard
 						["provider"] = { "n", 42928 },	-- Muradin Bronzebeard
 					}),
@@ -250,11 +250,11 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 						["provider"] = { "n", 2784 },	-- King Magni Bronzebeard
 					}),
 					-- #endif
-					
+
 					-- #if BEFORE 9.0.1
 					-- Patch 9.0.1 (2020-10-13): Anduin Wrynn removed.
 					-- #if AFTER 7.0.1
-					-- Legion Hotfix (2016-12-16): Anduin Wrynn replaced King Varian Wrynn from the criteria. 
+					-- Legion Hotfix (2016-12-16): Anduin Wrynn replaced King Varian Wrynn from the criteria.
 					crit(12663, {	-- Anduin Wrynn <King of Stormwind>
 						["provider"] = { "n", 107574 },	-- Anduin Wrynn <King of Stormwind>
 					}),
@@ -1090,7 +1090,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 187520 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2021.",
-				["timeline"] = { "added 9.1.5.40871" },	-- TODO: Add Removed Timestamp in 2022.
+				["timeline"] = { "added 9.1.5.40871", "removed 9.1.5.41793" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["groups"] = {
 					i(187422, {	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
@@ -1107,7 +1107,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 192093 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2022.",
-				["timeline"] = { "added 10.0.2.47213" },	-- TODO: Add Removed Timestamp in 2023.
+				["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.99999" },	-- TODO: Correct Removed Timestamp in 2023.
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["groups"] = {
 					i(191925, {	-- Falling Star Flinger (TOY!)
@@ -1414,7 +1414,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 187561 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2021.",
-				["timeline"] = { "added 9.1.5.40871" },	-- TODO: Add removed.
+				["timeline"] = { "added 9.1.5.40871", "removed 9.1.5.41793" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["lvl"] = 10,
 				["groups"] = {
@@ -1429,7 +1429,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 192094 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2022.",
-				["timeline"] = { "added 10.0.2.47213" },	-- TODO: Add removed.
+				["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.99999" },	-- TODO: Correct Removed Timestamp in 2023.
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["lvl"] = 10,
 				["groups"] = {
@@ -2078,6 +2078,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 					i(128776, {	-- Red Wooden Sled (TOY!)
 						["timeline"] = { "added 6.2.2.20395" },
+					}),
+					i(187422, {	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
+						["timeline"] = { "added 10.0.2.47067" },
 					}),
 					i(116690, {	-- Safarai Lounge Cushion (TOY!)
 						["timeline"] = { "added 6.0.2" },
