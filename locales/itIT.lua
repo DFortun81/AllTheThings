@@ -3498,7 +3498,7 @@ for key,value in pairs({
 	--TODO: [381157] = "Sapphire Gem Cluster",	-- Sapphire Gem Cluster
 	--TODO: [381158] = "Gnoll Fiend Flail",	-- Gnoll Fiend Flail
 	[381160] = "Bussola Perduta",	-- Lost Compass
-	--TODO: [381216] = "Surveyor's Magnifying Glass",	-- Surveyor's Magnifying Glass
+	[381216] = "Lente d'Ingrandimento dell'Ispettore",	-- Surveyor's Magnifying Glass
 	--TODO: [381223] = "Cracked Hourglass",	-- Cracked Hourglass
 	[381277] = "Barile di Dolcetti Confiscati",	-- Barrel of Confiscated Treats
 	[381296] = "Un disastro",	-- Horrible Mess
@@ -3537,7 +3537,7 @@ for key,value in pairs({
 	[382166] = "Banchetto di Rubino!",	-- The Ruby Feast!
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Cassa di Pescilume Freschi",	-- Case of Fresh Gleamfish
-	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
+	[384405] = "Pesce Semibollito",	-- Half-Boiled Fish
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "Pozza di Fango Improvvisata dell'Esiliato",	-- Outcast's Makeshift Muckpool
