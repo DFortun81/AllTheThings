@@ -162,7 +162,7 @@ async def localize_objects(
     original_obj_names: dict[int, str] = {},
 ) -> dict[int, str]:
     logging.info(f"Starting {lang_code}!")
-    with open(filename) as file:
+    with open(filename, encoding="utf-8") as file:
         lines = file.readlines()
 
     todo_dict = get_todo_lines(lines)
@@ -171,7 +171,7 @@ async def localize_objects(
 
     localized_dict = await get_localized_names(session, todo_dict, lang_code)
 
-    for line in fileinput.input(filename, inplace=True):
+    for line in fileinput.input(filename, inplace=True, encoding="utf-8"):
         old_line = line
         line_ind = fileinput.filelineno() - 1  # filelineno() indexing starts from 1
         if line_ind in localized_dict:
@@ -198,7 +198,7 @@ async def localize_objects(
 
 
 def sort_objects(filename: str) -> None:
-    with open(filename) as file:
+    with open(filename, encoding="utf-8") as file:
         lines = file.readlines()
     lines_copy = lines.copy()
 
@@ -241,7 +241,7 @@ def sort_objects(filename: str) -> None:
     )
 
     obj_ind = 0
-    for line in fileinput.input(filename, inplace=True):
+    for line in fileinput.input(filename, inplace=True, encoding="utf-8"):
         line_ind = fileinput.filelineno() - 1  # filelineno() indexing starts from 1
         if first_obj_line <= line_ind <= last_obj_line:
             line = lines_copy[sorted_list[obj_ind][0]]
@@ -263,7 +263,7 @@ class ObjectsInfo(NamedTuple):
 
 async def get_objects_info(session: ClientSession, filename: str) -> ObjectsInfo:
     sort_objects(filename)
-    with open(filename) as file:
+    with open(filename, encoding="utf-8") as file:
         lines = file.readlines()
 
     objects: list[Object] = []
@@ -309,7 +309,7 @@ async def get_objects_info(session: ClientSession, filename: str) -> ObjectsInfo
     # replace all lines because we might have localized new objects
     localized_obj_lines = [i.line for i in objects]
     lines[first_obj_line : last_obj_line + 1] = localized_obj_lines
-    with open(filename, "w") as file:
+    with open(filename, "w", encoding="utf-8") as file:
         file.writelines(lines)
 
     objects = [obj for obj in objects if obj.name != "GetSpellInfo"]
@@ -383,9 +383,9 @@ async def sync_objects(
             logging.info(del_obj)
         del localized_objects[localized_ind:]
 
-    with open(filename) as file:
+    with open(filename, encoding="utf-8") as file:
         contents = file.readlines()
     localized_obj_lines = [i.line for i in localized_objects]
     contents[first_obj_line : last_obj_line + 1] = localized_obj_lines
-    with open(filename, "w") as file:
+    with open(filename, "w", encoding="utf-8") as file:
         file.writelines(contents)
