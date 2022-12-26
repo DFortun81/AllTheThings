@@ -502,7 +502,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			ach(1706, {	-- Crashin' Thrashin' Racer (2008)
 				["provider"] = { "i", 37710 },	-- Crashin' Thrashin' Racer Controller
 				-- #if ANYCLASSIC
-				["timeline"] = { "created 2.4.3.8601", "added 3.0.1" },
+				["timeline"] = { "created 2.4.3.8601", "removed 3.3.0.11159" },
 				-- #else
 				["timeline"] = { "added 2.4.3.8601" },
 				-- #endif
