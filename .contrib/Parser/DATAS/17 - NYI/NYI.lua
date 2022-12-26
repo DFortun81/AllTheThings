@@ -509,7 +509,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194828),	-- Stacked Deck of Darkmoon Mysteries
 			i(194873),	-- Apprentice's Fluffed Quill
 			i(194903),	-- Pocket Chocolate
-			i(198137),	-- Esoteric Dragon Shard of Knowledge
 			i(198151),	-- Cracked Heart in a Bottle
 			--
 			i(198086),	-- Darkmoon Deck: Inferno

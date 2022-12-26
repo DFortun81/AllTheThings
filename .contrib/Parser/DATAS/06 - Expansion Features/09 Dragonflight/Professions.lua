@@ -150,6 +150,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(191784),	-- Dragon Shard of Knowledge
 				},
 			}),
+			q(69979, { -- A Worthy Hunt
+				["sourceQuests"] = { 69946 },	-- The Master of Their Craft
+				["provider"] = { "n", 193110 },	-- Khadin
+				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(191784),	-- Dragon Shard of Knowledge
+					i(198137),	-- Esoteric Dragon Shard of Knowledge
+				},
+			}),
 			q(69919, {	-- A Craft in Need
 				["provider"] = { "n", 194026 },	-- Azley
 				["coords"] = {
@@ -1751,14 +1760,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			["provider"] = { "n", 192048 },    -- Deirdre Flemmin
 			["coord"] = { 76.6, 34.9, THE_WAKING_SHORES },
 			),--]]
-			q(69979, { -- A Worthy Hunt
-				["sourceQuests"] = { 69946 },	-- The Master of Their Craft
-				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
-				["g"] = {
-					i(191784),	-- Dragon Shard of Knowledge
-				},
-			}),
 			q(70191, { -- Specialized Secrets: Leatherworking
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
