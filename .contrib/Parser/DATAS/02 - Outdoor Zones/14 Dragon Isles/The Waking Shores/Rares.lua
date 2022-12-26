@@ -163,7 +163,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193226, {	-- Gorjo the Crab Shackler
 				["crs"] = { 193228 },	-- Snappy
 				["coord"] = { 78.6, 50.0, THE_WAKING_SHORES },
-				-- ["questID"] = 69874,
+				["questID"] = 73997,
 				["g"] = {
 					i(200281),	-- Gorjo's Riding Crop
 				},

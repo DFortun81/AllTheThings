@@ -115,10 +115,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				crit(7),	-- Vault of the Incarnates
 				crit(8),	-- Veiled Ossuary
 			}),
-			ach(16323, {	 -- Fragment of History
-				crit(7),	-- Golden Claw
-				crit(8),	-- Precious Stone Fragment
-			}),
 			ach(16634, {	-- Framing a New Perspective
 				crit(1, {	-- The Seat of the Aspects
 					["coord"] = { 56.1, 44.4, VALDRAKKEN },
@@ -245,6 +241,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					15860,	-- Tyrhold Trial Advanced: Gold
 				}},
 			}),
+			pvp(ach(16593)),	-- Tour of Duty: Thaldraszus
 
 			-- TODO: NOT COMPLETED YET
 			ach(16301),	-- Treasures of Thaldraszus

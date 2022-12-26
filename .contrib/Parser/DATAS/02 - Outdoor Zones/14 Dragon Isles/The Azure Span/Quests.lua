@@ -1625,41 +1625,21 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 199895 },	-- Chunk of Sculpture
 				["coord"] = { 66.1, 60.1, THE_AZURE_SPAN },
-				["g"] = {
-					crit(4, {	-- Chunk of Sculpture
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			q(70791, {	-- Coldwashed Dragonclaw
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 199843 },	-- Coldwashed Dragonclaw
 				["coord"] = { 47.8, 38.9, THE_AZURE_SPAN },
-				["g"] = {
-					crit(5, {	-- Coldwashed Dragonclaw
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			q(70790, {	-- Stone Dragontooth
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 199842 },	-- Stone Dragontooth
 				["coord"] = { 69.2, 47.6, THE_AZURE_SPAN },
-				["g"] = {
-					crit(9, {	-- Stone Dragontooth
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			q(70788, {	-- Wrapped Gold Band
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 199840 },	-- Wrapped Gold Band
 				["coord"] = { 47.3, 24.6, THE_AZURE_SPAN },
-				["g"] = {
-					crit(10, {	-- Wrapped Gold Band
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 				-- MAGE POLYMORPH --
 			q(71002, {	-- Best Spell Ever

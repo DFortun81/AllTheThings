@@ -1193,41 +1193,21 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 198475 },	-- Broken Bankding
 				["coord"] = { 81.0, 30.4, THE_WAKING_SHORES },
-				["g"] = {
-					crit(3, {	-- Broken Banding
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			q(70236, {	-- Dislodged Dragoneye
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 198626 },	-- Dislodged Dragoneye
 				["coord"] = { 60.5, 57.9, THE_WAKING_SHORES },
-				["g"] = {
-					crit(1, {	-- Dislodged Dragoneye
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			q(70789, {	-- Finely Carved Wing
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 199841 },	-- Finely Carved Wing
 				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
-				["g"] = {
-					crit(6, {	-- Finely Carved Wing
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			q(70207, {	-- Tail Fragment
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 198543 },	-- Tail Fragment
 				["coord"] = { 58.2, 68.3, THE_WAKING_SHORES },
-				["g"] = {
-					crit(2, {	-- Broken Banding
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			-- Alt quests
 			q(72293, {	-- Adventuring in the Dragon Isles
@@ -1323,6 +1303,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 193154 },	-- Forgotten Gryphon
 					["coord"] = { 32.8, 75.9, THE_WAKING_SHORES },
 					["isDaily"] = true,
+				}),
+				q(69874, {	-- Gorjo the Crab Shackler
+					["provider"] = { "n", 187209 },	-- Gorjo the Crab Shackler
+					["coord"] = { 78.6, 50.0, THE_WAKING_SHORES },
 				}),
 				q(66960, {	-- Klozicc the Ascended
 					["provider"] = { "n", 187209 },	-- Klozicc the Ascended

@@ -64,7 +64,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				petbattle(q(71145, {	-- The Grand Master
 					["coord"] = { 13.5, 50.0, THE_AZURE_SPAN },
 				})),
-				petbattle(q(71202, {	-- Mini Manafeind Melee
+				petbattle(q(71202, {	-- Mini Manafiend Melee
 					["coord"] = { 40.6, 59.1, THE_AZURE_SPAN }
 				})),
 				pvp(q(70439, {	-- Wild Arcana [Cobalt]

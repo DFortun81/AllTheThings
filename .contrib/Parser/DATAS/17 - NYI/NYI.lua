@@ -395,7 +395,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200280),	-- Decaying Ghostly Band
 			i(200291),	-- Waterlogged Racing Grips
 			i(200292),	-- Cragforge Pauldrons
-			i(200294),	-- Primal Chain Hauberk
 			i(200306),	-- Tempest Shawl
 			i(200309),	-- Rock Encrusted Chestguard
 			i(200313),	-- Earthen Protoscale Drape

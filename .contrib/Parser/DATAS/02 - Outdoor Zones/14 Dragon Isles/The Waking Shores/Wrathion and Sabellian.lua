@@ -18,6 +18,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		n(-1102, {	-- Wrathion & Sabellian
 			n(ACHIEVEMENTS, {
 				ach(16494),	-- Loyalty to the Prince
+				ach(16497, {	-- I'm Playing All Sides
+					crit(1, {	-- Sabellian
+						["_quests"] = {
+							72338,	-- Greater Obsidian Key
+							66131,	-- Unlocking Our Past
+						},
+					}),
+					crit(2, {	-- Wrathion
+						["_quests"] = {
+							72337,	-- Greater Obsidian Key
+							66130,	-- Unlocking our Past
+						},
+					}),
+					crit(3, {	-- Forgemaster Bazentus
+						["_quests"] = { 66126 },	-- Unlocking Our Past
+					}),
+					crit(4, {	-- Igys the Believer
+						["_quests"] = { 66129 },	-- Unlocking Our Past
+					}),
+				}),
 				ach(16496, {	-- Obsidian Champion
 					crit(1, {
 						["_quests"] = { 67015 },	-- Forging the Answer
@@ -32,6 +52,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["_quests"] = { 66903 },	-- Clearing the Vault
 					}),
 				}),
+				ach(16495),	-- Obsidian Keymaster
 				ach(16760),	-- The Obsidian Bloodline
 			}),
 			n(QUESTS, {

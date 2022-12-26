@@ -88,6 +88,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
+					-- RENOWN 18 --
+				q(70950, {	-- Fishy Entertainment
+					["sourceQuests"] = { 70948 },	-- Hook, Line, and Swelter! -- TODO: CONFIRM
+					["minReputation"] = { 2511, 18 },	-- Iskaara Tuskarr Renown 18
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+				}),
 					-- Dailies --
 					-- The Waking Shores --
 				q(70438, {	-- Flying Fish

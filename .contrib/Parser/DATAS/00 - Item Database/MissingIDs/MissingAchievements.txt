@@ -895,21 +895,6 @@ ach(15557),	-- Murkastrasza
 10.0.0.45335
 ach(16425),	-- I'm a Template Character [DNT]
 10.0.0.45454
-ach(16464),	-- Battle on the Dragon Isles
-ach(16495),	-- Obsidian Keymaster
-ach(16497),	-- I'm Playing All Sides \\ I'm Playing Both Sides
-ach(16501),	-- Aquatic Battler of the Dragon Isles
-ach(16503),	-- Beast Battler of the Dragon Isles
-ach(16504),	-- Critter Battler of the Dragon Isles
-ach(16505),	-- Dragonkin Battler of the Dragon Isles
-ach(16506),	-- Elemental Battler of the Dragon Isles
-ach(16507),	-- Flying Battler of the Dragon Isles
-ach(16508),	-- Humanoid Battler of the Dragon Isles
-ach(16509),	-- Magic Battler of the Dragon Isles
-ach(16510),	-- Mechanical Battler of the Dragon Isles
-ach(16511),	-- Undead Battler of the Dragon Isles
-ach(16512),	-- Family Battler of the Dragon Isles
-ach(16519),	-- Dragon Isles Safari
 ach(16520),	-- 10.0 Dragonflight - Expansion Quest Launch (Meet Wrathion/Ebyssian) \\ 10.0 Dragonflight - Expansion Quest Launch
 ach(16522),	-- A True Explorer
 ach(16528),	-- Joining the Khansguard
@@ -926,20 +911,6 @@ ach(16547),	-- Pulled!
 ach(16548),	-- It Takes a Tuskarr Buddy \\ It takes a (Tuskarr) village.
 ach(16549),	-- Popular Around the Isles
 10.0.0.45570
-ach(16556),	-- Great Gourmand of The Ruby Feast
-ach(16592),	-- Tour of Duty: The Waking Shores
-ach(16593),	-- Tour of Duty: Thaldraszus
-ach(16594),	-- Tour of Duty: The Azure Span
-ach(16595),	-- Tour of Duty: Ohn'ahran Plains
-ach(16599),	-- A Champion's Pursuit
-ach(16601),	-- Dragonfight Club
-ach(16603),	-- Bounty Hunter
-ach(16611),	-- Resource Scavanger
-ach(16612),	-- Bounty Vigalante
-ach(16613),	-- Finder's Keepers
-ach(16614),	-- Bloodstained Bounty
-ach(16615),	-- Blood Bank
-ach(16616),	-- Prosperously Bloody
 ach(16621),	-- One of Everything, Please
 ach(16622),	-- Three Minutes or It's Free
 ach(16626),	-- Working with Wyrms

@@ -260,6 +260,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 				["g"] = {
 					i(200199),	-- Elements' Burden
+					i(200294),	-- Primal Chain Hauberk
 					i(200198),	-- Primalist Prison (TOY!)
 					-- Enchanting knowledge drops (one-time)
 					i(201356), -- Glimmer of Fire

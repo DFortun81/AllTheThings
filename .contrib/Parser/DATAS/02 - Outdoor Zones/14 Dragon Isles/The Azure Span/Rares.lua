@@ -27,7 +27,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(194210, {	-- Azure Pathfinder
 				["coord"] = { 60.7, 31.7, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 73867,
 				-- ["g"] = {
 
 				-- },

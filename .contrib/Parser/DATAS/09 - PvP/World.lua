@@ -5,32 +5,101 @@
 root("PVP", pvp(n(-10058, {	-- World
 	tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		n(ACHIEVEMENTS, {
+			ach(16599, {	-- A Champion's Pursuit
+				crit(1, {	-- Krolkoth the Mountain
+					["_quests"] = { 72008 },	-- Overcoming a Mountain: Krolkoth
+				}),
+				crit(2, {	-- Tarolekk the Stomper
+					["_quests"] = { 72058 },	-- What Hoof We Here: Tarolekk
+				}),
+				crit(3, {	-- Nezascar the Sightless
+					["_quests"] = { 72019 },	-- Seeing through the Enemy: Nezascar
+				}),
+				crit(4, {	-- Rhuzast the Tempest
+					["_quests"] = { 71225 },	-- Blown Through Wind: Rhuzast
+				}),
+			}),
 			ach(16590, {	-- A Champion's Tour: Dragon Isles
 				crit(1, {	-- How to Train a Proto-Drake
-					-- ["_quests"] = { QUEST },
+					["_quests"] = { 67005 },
 				}),
 				crit(2, {	-- Quacks and Attacks
-					-- ["_quests"] = { QUEST },
+					["_quests"] = { 70209 },
 				}),
 				crit(3, {	-- Wild Arcana
-					-- ["_quests"] = { QUEST },
+					["_quests"] = { 70439 },
 				}),
 				crit(4, {	-- Extermination
 					["_quests"] = { 69949 },
 				}),
 			}),
+			ach(16615, {	-- Blood Bank
+				["cost"] = {{"c",2123,3000}},	-- 3000 Bloody Token
+			}),
+			ach(16614, {	-- Bloodstained Bounty
+				["cost"] = {{"c",2123,750}},	-- 750 Bloody Token
+			}),
+			ach(16603, {	-- Bounty Hunter
+				crit(1, {	-- The Waking Shores
+					["maps"] = { THE_WAKING_SHORES },
+				}),
+				crit(2, {	-- Ohn'ahran Plains
+					["maps"] = { OHNAHRAN_PLAINS },
+				}),
+				crit(3, {	-- The Azure Span
+					["maps"] = { THE_AZURE_SPAN },
+				}),
+				crit(4, {	-- Thaldraszus
+					["maps"] = { THALDRASZUS },
+				}),
+			}),
+			ach(16612, {	-- Bounty Vigalante
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+			}),
+			ach(16601, {	-- Dragonfight Club
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					16589,	-- Malicia's Challenge
+					16590,	-- A Champion's Tour: Dragon Isles
+					16592,	-- Tour of Duty: The Waking Shores
+					16595,	-- Tour of Duty: Ohn'ahran Plains
+					16594,	-- Tour of Duty: The Azure Span
+					16593,	-- Tour of Duty: Thaldraszus
+					16599,	-- A Champion's Pursuit
+				}},
+			}),
+			ach(16613, {	-- Finder's Keepers
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+			}),
 			ach(16589, {	-- Malicia's Challenge
 				crit(1, {	-- How to Train a Proto-Drake
-					-- ["_quests"] = { QUEST },
+					["_quests"] = { 67005 },
 				}),
 				crit(2, {	-- Quacks and Attacks
-					-- ["_quests"] = { QUEST },
+					["_quests"] = { 70209 },
 				}),
 				crit(3, {	-- Wild Arcana
-					-- ["_quests"] = { QUEST },
+					["_quests"] = { 70439 },
 				}),
 				crit(4, {	-- Extermination
 					["_quests"] = { 69949 },
+				}),
+			}),
+			ach(16616, {	-- Prosperously Bloody
+				["cost"] = {{"c",2123,1500}},	-- 1500 Bloody Token
+			}),
+			ach(16611, {	-- Resource Scavanger
+				crit(1, {	-- The Waking Shores
+					["maps"] = { THE_WAKING_SHORES },
+				}),
+				crit(2, {	-- Ohn'ahran Plains
+					["maps"] = { OHNAHRAN_PLAINS },
+				}),
+				crit(3, {	-- The Azure Span
+					["maps"] = { THE_AZURE_SPAN },
+				}),
+				crit(4, {	-- Thaldraszus
+					["maps"] = { THALDRASZUS },
 				}),
 			}),
 		}),

@@ -775,7 +775,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
-			q(70530, {	-- Fireproof Gear
+			q(66884, {	-- Fireproof Gear
 				["description"] = "Requires 25 Skill.",
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu

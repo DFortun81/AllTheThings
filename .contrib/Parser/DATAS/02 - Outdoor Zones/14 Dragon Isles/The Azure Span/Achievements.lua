@@ -247,12 +247,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				crit(10),	-- Three-Falls Lookout
 				crit(11),	-- Vakthros
 			}),
-			ach(16323, {	 -- Fragment of History
-				crit(4),	-- Chunk of Sculpture
-				crit(5),	-- Coldwashed Dragonclaw
-				crit(9),	-- Stone Dragontooth
-				crit(10),	-- Wrapped Gold Band
-			}),
 			ach(16580),	-- Lend a Helping Span
 			ach(16638, {	-- Ley Line in the Span
 				crit(1, {	-- Azure Archives
@@ -281,6 +275,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			ach(16581),	-- Seeing Blue
 			ach(16428),	-- Sojourner of Azure Span
+			pvp(ach(16594)),	-- Tour of Duty: The Azure Span
 			ach(16300),	-- Treasures of The Azure Span
 		}),
 	})

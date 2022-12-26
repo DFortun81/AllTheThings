@@ -194,7 +194,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 38.2, 37, VALDRAKKEN },
 				["isBreadcrumb"] = true,	-- unconfirmed
 			}),
-			
+
 			-- Weeklies
 			q(66867, {	-- Relic Recovery: Algeth'ar Academy
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
