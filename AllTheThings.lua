@@ -3183,7 +3183,7 @@ local ResolveFunctions = {
 		local vals = select("#", ...);
 		for i=1,vals do
 			val = select(i, ...);
-			cache = app.CleanSourceIgnoredGroups(app.SearchForField(field, val));
+			cache = app.SearchForField(field, val);
 			if cache then
 				ArrayAppend(searchResults, cache);
 			else
@@ -3231,7 +3231,7 @@ local ResolveFunctions = {
 		if okey then
 			local okeyval = o[okey];
 			if okeyval then
-				local cache = app.CleanSourceIgnoredGroups(app.SearchForField(okey, okeyval));
+				local cache = app.SearchForField(okey, okeyval);
 				if cache then
 					for _,s in ipairs(cache) do
 						ArrayAppend(searchResults, s.g);
@@ -3453,7 +3453,7 @@ local ResolveFunctions = {
 		local cache, value;
 		for i=1,vals do
 			value = select(i, ...);
-			cache = app.CleanSourceIgnoredGroups(app.SearchForField("achievementID", value));
+			cache = app.SearchForField("achievementID", value);
 			if cache then
 				ArrayAppend(searchResults, cache);
 			else
@@ -4135,10 +4135,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if not group then group = {}; end
 	if a then paramA = a; end
 	if b then paramB = b; end
-
-	-- Clean results which are cached under 'Source Ignored' content since they've been copied from another Source and we don't care about them in search results
-	group = app.CleanSourceIgnoredGroups(group);
-	-- app.PrintDebug("Removed Source Ignored",#group)
 
 	-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 	if paramA == "creatureID" or paramA == "encounterID" then
@@ -5454,7 +5450,7 @@ app.BuildSourceParent = function(group)
 
 	-- pull all listings of this 'Thing'
 	local keyValue = group[groupKey];
-	local things = specificSource and { group } or app.CleanSourceIgnoredGroups(app.SearchForLink(groupKey .. ":" .. keyValue));
+	local things = specificSource and { group } or app.SearchForLink(groupKey .. ":" .. keyValue);
 	if things then
 		local groupHash = group.hash;
 		local isAchievement = groupKey == "achievementID";
@@ -14393,20 +14389,6 @@ app.RecursiveFirstParentWithFieldValue = function(group, field, value)
 		end
 	end
 end
--- Cleans any groups which are nested under 'Source Ignored' content
-app.CleanSourceIgnoredGroups = function(groups)
-	if groups then
-		local parentCheck = app.RecursiveFirstParentWithField;
-		local refined = {};
-		for _,j in ipairs(groups) do
-			if not parentCheck(j, "sourceIgnored") then
-				tinsert(refined, j);
-			-- else print("  ",j.hash)
-			end
-		end
-		return refined;
-	end
-end
 
 -- Processing Functions
 do
@@ -17352,7 +17334,7 @@ local DynamicCategory_Simple = function(self)
 			local dynamicValueCache, thingKeys = dynamicCache[dynamicValue], app.ThingKeys;
 			if dynamicValueCache then
 				-- app.PrintDebug("Build Dynamic Group",self.dynamic,self.dynamic_value)
-				for _,source in pairs(app.CleanSourceIgnoredGroups(dynamicValueCache)) do
+				for _,source in pairs(dynamicValueCache) do
 					-- only pull in actual 'Things' to the simple dynamic group
 					if thingKeys[source.key] then
 						-- find the top-level parent of the Thing
@@ -17379,7 +17361,7 @@ local DynamicCategory_Simple = function(self)
 			else app.print("Failed to build Simple Dynamic Category: No data cached for key & value",self.dynamic,self.dynamic_value); end
 		else
 			for id,sources in pairs(dynamicCache) do
-				for _,source in pairs(app.CleanSourceIgnoredGroups(sources)) do
+				for _,source in pairs(sources) do
 					-- find the top-level parent of the Thing
 					top = RecursiveParentMapper(source, "parent", rootATT);
 					-- create/match the expected top header
@@ -18553,7 +18535,7 @@ local function BuildSearchResponseViaCachedGroups(cacheContainer, field, value, 
 		wipe(ClonedHierarachyMapping);
 		local parent, thing;
 		if value then
-			local sources = app.CleanSourceIgnoredGroups(cacheContainer[value]);
+			local sources = cacheContainer[value];
 			if not sources then return ClonedHierarchyGroups; end
 			-- for each source of each Thing with the value
 			for _,source in ipairs(sources) do
@@ -18574,7 +18556,7 @@ local function BuildSearchResponseViaCachedGroups(cacheContainer, field, value, 
 		else
 			for id,sources in pairs(cacheContainer) do
 				-- for each source of each Thing
-				for _,source in ipairs(app.CleanSourceIgnoredGroups(sources)) do
+				for _,source in ipairs(sources) do
 					-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
 					if IncludeUnavailableRecipes or not source.spellID or IgnoreBoEFilter(source) then
 						-- find/clone the expected parent group in hierachy
@@ -19169,7 +19151,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			end
 			wipe(self.CurrentMaps);
 			-- Get all results for this map, without any results that have been cloned into Source Ignored groups
-			results = app.CleanSourceIgnoredGroups(SearchForField("mapID", self.mapID));
+			results = SearchForField("mapID", self.mapID);
 			if results then
 				-- app.PrintDebug(#results,"Minilist Results for mapID",self.mapID)
 				-- Simplify the returned groups
