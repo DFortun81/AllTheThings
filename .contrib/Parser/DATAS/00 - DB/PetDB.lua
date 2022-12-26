@@ -1226,7 +1226,7 @@ pet(0, 3338);	-- Sapphire Crystalspine
 pet(0, 3339);	-- Black Dragon Whelp
 pet(0, 3340);	-- Blue Dragon Whelp
 pet(0, 3341);	-- Red Dragon Whelp
-pet(0, 3342);	-- Spyragos
+pet(198622, 3342);	-- Spyragos
 pet(0, 3343);	-- Bronze Dragon Whelp
 pet(0, 3359);	-- Snowclaw Cub
 pet(0, 3360);	-- Bugbiter Tortoise

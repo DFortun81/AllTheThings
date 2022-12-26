@@ -1269,7 +1269,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					{ "i", 198044, 1 },	-- Whirlwind Wine
 				},
 				["g"] = {
-					i(198622),	-- Spyragos
+					i(198622),	-- Spyragos (PET!)
 				},
 			});
 			n(BONUS_OBJECTIVES, {

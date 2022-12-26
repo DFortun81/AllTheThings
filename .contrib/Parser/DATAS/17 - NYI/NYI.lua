@@ -482,7 +482,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193614),	-- Groundshaker
 			i(193620),	-- Time-Lost Slyvern
 			i(193908),	-- Sapphire Crystalspine
-			i(198622),	-- Spyragos
 			i(200874),	-- Lady Feathersworth
 
 			i(201838),	-- Snowclaw Cub
