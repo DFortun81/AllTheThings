@@ -1256,6 +1256,22 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 				["provider"] = { "i", 202081 },	-- Dragon Isles Supply Bag
 			}),
+			q(65875, {	-- A Dragon's Day Off
+				["provider"] = { "n", 192662 },
+				["coord"] = { 20.1, 39.5, THE_WAKING_SHORES },
+				["cost"] = {
+					{ "i", 195543, 1 },	-- Riptide Brew
+					{ "i", 197737, 1 },	-- Popfizz Punch
+					{ "i", 197738, 1 },	-- Flameslinger Rum
+					{ "i", 197739, 1 },	-- Happy Trigger Sour
+					{ "i", 198045, 1 },	-- Slam Bam Swill
+					{ "i", 198043, 1 },	-- Stealthy Elven Port
+					{ "i", 198044, 1 },	-- Whirlwind Wine
+				},
+				["g"] = {
+					i(198622),	-- Spyragos
+				},
+			});
 			n(BONUS_OBJECTIVES, {
 				q(69838, {	-- Amethyzar the Glittering
 					["provider"] = { "n", 193132 },	-- Amethyzar the Glittering
@@ -1679,6 +1695,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		q(70769),	-- triggers when 'Tale of the Elders' completes
 		q(70772),	-- triggers when 'Tale of the Warlord' becomes available for Tarjin the Blind
 		q(70771),	-- triggers when 'Tale of the Warlord' completes
+		q(70218),	-- Dialogue before you can pick up the quest "A Dragon's Day Off"
 
 		-- TODO: how do we sort these types of things going forward? Also, is Skytop an actual quest or should this be a NYI/Never Implemented?
 		q(72178, {	-- Theory in Practice: Baron von Swoopenbite
