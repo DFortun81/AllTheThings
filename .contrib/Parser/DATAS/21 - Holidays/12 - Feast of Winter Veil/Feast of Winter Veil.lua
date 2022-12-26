@@ -870,6 +870,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(8744, { 	-- A Carefully Wrapped Present
 				["providers"] = {
 					{ "o", 180743 },	-- Carefully Wrapped Present
+					{ "i", 21191 },	-- Carefully Wrapped Present
 				},
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["isYearly"] = true,
@@ -892,6 +893,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(8803, { 	-- A Festive Gift
 				["providers"] = {
 					{ "o", 180793 },	-- Festive Gift
+					{ "i", 21363 },	-- Festive Gift
 				},
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["isYearly"] = true,
@@ -903,6 +905,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(8768, { 	-- A Gaily Wrapped Present
 				["providers"] = {
 					{ "o", 180747 },	-- Gaily Wrapped Present
+					{ "i", 21310 },	-- Gaily Wrapped Present
 				},
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["isYearly"] = true,
@@ -917,6 +920,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(8767, { 	-- A Gently Shaken Gift [Non-Spell Casters Only] (Before 2015)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
+					{ "i", 21270 },	-- Gently Shaken Gift
 				},
 				["description"] = "Given prior to 2015 exclusively to non-spell casters.",
 				["classes"] = exclude({ PRIEST, MAGE, WARLOCK, SHAMAN, DRUID }, ALL_CLASSES),
@@ -946,6 +950,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(8788, { 	-- A Gently Shaken Gift [Spell Casters Only] (Before 2015)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
+					{ "i", 21271 },	-- Gently Shaken Gift
 				},
 				["description"] = "Given prior to 2015 exclusively to spell casters.",
 				["classes"] = { PRIEST, MAGE, WARLOCK, SHAMAN, DRUID },
@@ -975,6 +980,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(39658, { 	-- A Gently Shaken Gift (2015)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
+					{ "i", 128652 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2015.",
 				["timeline"] = { "added 6.2.2.20395", "removed 7.0.3.21570" },
@@ -991,6 +997,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(43364, { 	-- A Gently Shaken Gift (2016)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
+					{ "i", 139343 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2016.",
 				["timeline"] = { "added 7.0.3.21570", "removed 7.3.5.25807" },
@@ -1007,6 +1014,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(50420, { 	-- A Gently Shaken Gift (2017)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
+					{ "i", 151345 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2017.  You will receive only one faction's Hearthstation.  In order to obtain the opposite faction's, you will need to have a character on that side open this gift.",
 				["timeline"] = { "added 7.3.5.25807", "removed 8.0.1.27291" },
@@ -1028,6 +1036,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(53011, { 	-- A Gently Shaken Gift (2018)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
+					{ "i", 162974 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2018.",
 				["timeline"] = { "added 8.0.1.27291", "removed 8.2.5.31961" },
@@ -1044,6 +1053,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(57643, { 	-- A Gently Shaken Gift (2019)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
+					{ "i", 172225 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2019.",
 				["timeline"] = { "added 8.2.5.31961", "removed 9.0.1.36230" },
@@ -1060,6 +1070,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(60238, { 	-- A Gently Shaken Gift (2020)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
+					{ "i", 178529 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2020.",
 				["timeline"] = { "added 9.0.1.36230", "removed 9.1.5.40871" },
@@ -1076,6 +1087,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(64581, { 	-- A Gently Shaken Gift (2021)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
+					{ "i", 187520 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2021.",
 				["timeline"] = { "added 9.1.5.40871", "removed 9.1.5.41793" },
@@ -1092,6 +1104,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(66508, { 	-- A Gently Shaken Gift (2022)
 				["providers"] = {
 					{ "o", 180746 },	-- Gently Shaken Gift
+					{ "i", 192093 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2022.",
 				["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.99999" },	-- TODO: Correct Removed Timestamp in 2023.
@@ -1105,6 +1118,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(8769, {	-- A Ticking Present
 				["providers"] = {
 					{ "o", 180748 },	-- Ticking Present
+					{ "i", 21327 },	-- Ticking Present
 				},
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["isYearly"] = true,
@@ -1157,6 +1171,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(11528, { 	-- A Winter Veil Gift (2007)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 34426 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2007.",
 				-- #if ANYCLASSIC
@@ -1175,6 +1190,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(13203, { 	-- A Winter Veil Gift (2008)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 43504 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2008.",
 				-- #if ANYCLASSIC
@@ -1197,6 +1213,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			applyclassicphase(WRATH_PHASE_FOUR, q(13966, { 	-- A Winter Veil Gift (2009)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 46740 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2009.",
 				["timeline"] = { "added 3.3.0.11159", "removed 4.0.3.13329" },
@@ -1211,6 +1228,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(28878, { 	-- A Winter Veil Gift (2010)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 67443 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2010.",
 				["timeline"] = { "added 4.0.3.13329", "removed 4.2.0.14333" },
@@ -1225,6 +1243,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(29385, { 	-- A Winter Veil Gift (2011)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 70938 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2011.",
 				["timeline"] = { "added 4.2.0.14333", "removed 5.1.0.16309" },
@@ -1239,6 +1258,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(32106, { 	-- A Winter Veil Gift (2012)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 90892 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2012.",
 				["timeline"] = { "added 5.1.0.16309", "removed 5.4.0.17227" },
@@ -1256,6 +1276,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(33252, { 	-- A Winter Veil Gift (2013)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 104319 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2013.",
 				["timeline"] = { "added 5.4.0.17227", "removed 6.0.1.18594" },
@@ -1270,6 +1291,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(36617, { 	-- A Winter Veil Gift (2014)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 116761 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2014.",
 				["timeline"] = { "added 6.0.1.18594", "removed 6.2.2.20395" },
@@ -1284,6 +1306,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(39659, { 	-- A Winter Veil Gift (2015)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 128653 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2015.",
 				["timeline"] = { "added 6.2.2.20395", "removed 7.0.3.22248" },
@@ -1298,6 +1321,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(43363, { 	-- A Winter Veil Gift (2016)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 139341 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2016.",
 				["timeline"] = { "added 7.0.3.22248", "removed 7.3.0.24484" },
@@ -1312,6 +1336,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(47751, { 	-- A Winter Veil Gift (2017)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 151350 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2017. You will receive only one factions Toy Weapon Set.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
 				["timeline"] = { "added 7.3.0.24484", "removed 8.0.1.26624" },
@@ -1331,6 +1356,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(52965, { 	-- A Winter Veil Gift (2018)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 162644 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2018. You will receive only one factions Toy Armor Set.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
 				["timeline"] = { "added 8.0.1.26624", "removed 8.2.5.31958" },
@@ -1350,6 +1376,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(57642, { 	-- A Winter Veil Gift (2019)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 172224 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2019.",
 				["timeline"] = { "added 8.2.5.31958", "removed 9.0.1.36216" },
@@ -1369,6 +1396,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(60239, { 	-- A Winter Veil Gift (2020)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 178528 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2020.",
 				["timeline"] = { "added 9.0.1.36216", "removed 9.1.5.40871" },
@@ -1383,6 +1411,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(64639, { 	-- A Winter Veil Gift (2021)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 187561 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2021.",
 				["timeline"] = { "added 9.1.5.40871", "removed 9.1.5.41793" },
@@ -1397,6 +1426,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			q(66507, { 	-- A Winter Veil Gift (2022)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
+					{ "i", 192094 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2022.",
 				["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.99999" },	-- TODO: Correct Removed Timestamp in 2023.
