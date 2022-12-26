@@ -152,7 +152,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				},
 				["maps"] = { NORTHREND_DALARAN },
 			}),
-			applyclassicphase(WRATH_PHASE_FOUR, ach(4436, {	-- BB King (A)
+			ach(4436, {	-- BB King (A)
 				["provider"] = { "i", 46725 },	-- Red Rider Air Rifle
 				["maps"] = {
 					ORGRIMMAR,
@@ -216,8 +216,8 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					-- #endif
 					-- #endif
 				},
-			})),
-			applyclassicphase(WRATH_PHASE_FOUR, ach(4437, {	-- BB King (H)
+			}),
+			ach(4437, {	-- BB King (H)
 				["provider"] = { "i", 46725 },	-- Red Rider Air Rifle
 				["maps"] = {
 					THE_EXODAR,
@@ -265,7 +265,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					-- #endif
 					-- #endif
 				},
-			})),
+			}),
 			ach(1295, {	-- Crashin' & Thrashin'
 				["providers"] = {
 					{ "i", 37710 },	-- Crashin' Thrashin' Racer Controller
@@ -1193,11 +1193,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 43504 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2008.",
-				-- #if ANYCLASSIC
-				["timeline"] = { "created 2.4.3.8601", "added 3.0.1", "removed 4.0.1" },
-				-- #else
 				["timeline"] = { "added 2.4.3.8601", "removed 3.3.0.11159" },
-				-- #endif
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["lvl"] = 10,
 				["groups"] = {
@@ -1210,7 +1206,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					}),
 				},
 			}),
-			applyclassicphase(WRATH_PHASE_FOUR, q(13966, { 	-- A Winter Veil Gift (2009)
+			q(13966, { 	-- A Winter Veil Gift (2009)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
 					{ "i", 46740 },	-- Winter Veil Gift
@@ -1224,7 +1220,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 						["timeline"] = { "added 3.3.0.11159" },
 					}),
 				},
-			})),
+			}),
 			q(28878, { 	-- A Winter Veil Gift (2010)
 				["providers"] = {
 					{ "o", 187236 },	-- Winter Veil Gift
