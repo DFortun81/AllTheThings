@@ -2523,24 +2523,19 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 	return
 	{
 		"**"..(infoText or "quest-info")..":"..id.."**",
-
 		"```",	-- discord fancy box
 
-		questChange,
-		"name:"..(C_TaskQuest.GetQuestInfoByQuestID(id) or C_QuestLog.GetTitleForQuestID(id) or "???"),
-		"race:"..app.RaceID.." ("..app.Race..")",
-		"class:"..app.ClassIndex.." ("..app.Class..")",
-		"lvl:"..app.Level,
-		"u:"..tostring(questRef and questRef.u),
+		questChange.." '"..(C_TaskQuest.GetQuestInfoByQuestID(id) or C_QuestLog.GetTitleForQuestID(id) or "???").."'",
+		"lvl:"..app.Level.." race:"..app.RaceID.." ("..app.Race..") class:"..app.ClassIndex.." ("..app.Class..") cov:"..(covData and covData.name or "N/A")..(covRenown and ":"..covRenown or ""),
+		"u:"..tostring(questRef and questRef.u).." skill:"..(questRef.requireSkill or ""),
 		"sq:"..app.SourceQuestString(questRef or id),
 		"lq:"..(app.LastQuestTurnedIn or ""),
-		"cov:"..(covData and covData.name or "N/A")..(covRenown and ":"..covRenown or ""),
+		-- TODO: put more info in here as it will be copy-paste into Discord
+
 		mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??",
 		coord and ("coord:"..coord) or "coord:??",
 		"ver:"..app.Version,
-
 		"```",	-- discord fancy box
-		-- TODO: put more info in here as it will be copy-paste into Discord
 	};
 end
 -- Checks a given quest reference against the current character info to see if something is inaccurate
