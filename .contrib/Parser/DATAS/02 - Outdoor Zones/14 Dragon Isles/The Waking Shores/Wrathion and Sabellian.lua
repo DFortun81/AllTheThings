@@ -825,9 +825,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				i(194476, {	-- Plans: Obsidian Seared Hexsword (RECIPE!)
 					["description"] = "Drops Around Obsidian Citadel.",
-					i(194483, {	-- Plans: Obsidian Seared Slicer (RECIPE!)
-					["description"] = "Drops Around Obsidian Citadel.",
 				}),
+				i(194483, {	-- Plans: Obsidian Seared Slicer (RECIPE!)
+					["description"] = "Drops Around Obsidian Citadel.",
 				}),
 				i(201991, {	-- Sargh's Signet
 					["description"] = "Drops from mobs around the Obsidian Citadel.",
