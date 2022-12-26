@@ -138,9 +138,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					186202,	-- Voll
 				},
 				["coord"] = { 42.1, 39.5, THE_WAKING_SHORES },
-				-- ["questID"] = ,
+				["questID"] = 74003,	
 				["g"] = {
 					i(200171),	-- Grymheart Blade
+					i(182361),	-- Protector's Molten Cudgel (off Snee and Voll)
+					i(183061),	-- Qalashi War-Helm (off Groth)
 				},
 			}),
 			n(193263, {	-- Helmet Missingway
