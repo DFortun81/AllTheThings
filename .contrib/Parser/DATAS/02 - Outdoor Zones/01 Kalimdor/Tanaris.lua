@@ -1,52 +1,90 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+-- #if BEFORE CATA
+-- TODO: Fully implement this for Retail's faction tooltips, also look at cape of stranglethorn.
+local OnTooltipForGadgetzhan = [[function(t)
+	local reputation = t.reputation;
+	if reputation < 42000 then
+		local isHuman = _.RaceIndex == 1;
+		if reputation < 0 then
+			local repPerKill = isHuman and 2.75 or 2.5;
+			local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(84000 / repPerKill);
+			GameTooltip:AddDoubleLine("Kill Pirates near Ratchet", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			
+			local repPerKill = isHuman and 5.5 or 5;
+			local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(84000 / repPerKill);
+			GameTooltip:AddDoubleLine("Kill Southsea Pirates in Tanaris", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		else
+			local repPerKill = isHuman and 2.75 or 2.5;
+			local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(42000 / repPerKill);
+			GameTooltip:AddDoubleLine("Kill Pirates near Ratchet", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			
+			if reputation < 20999 then
+				local repPerKill = isHuman and 5.5 or 5;
+				local x, n = math.ceil((20999 - t.reputation) / repPerKill), math.ceil(20999 / repPerKill);
+				GameTooltip:AddDoubleLine("Kill Southsea Pirates in Tanaris (To 11999 Honored)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			end
+		end
+	end
+end]];
+-- #endif
 root("Zones", m(KALIMDOR, {
 	m(TANARIS, {
-		["lore"] = "Tanaris is a desert in southern Kalimdor. Players will find both Gadgetzan, a major city of the Steamwheedle cartel, and the Caverns of Time, where the bronze dragonflight made their ancestral home.",
+		["lore"] = "The Tanaris Desert is vast and unexplored. It is a land of endless sands and cloudless skies. The southern Tanaris Desert is more mountainous than the north, boasting canyons and high bluffs. Numerous tunnels run beneath the sands, purportedly infested with the mysterious silithid. Other creatures in the desert include tallstriders, lions, kodo beasts, drakes and dragons — many the offspring of mighty Nozdormu, who is said to make this land his home.\n\nThe only bit of civilization is Gadgetzhan, a goblin trading post. Many Ironforge prospectors stock up on supplies here before heading out in search of the lost Titan city of Uldum.",
+		-- #if AFTER WRATH
+		["icon"] = "Interface\\Icons\\achievement_zone_tanaris_01",
+		-- #endif
 		["maps"] = {
 			72,	-- The Noxious Lair
 			73,	-- The Gaping Chasm
 		},
-		["achievementID"] = 851,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				explorationAch(851, {	-- Explore Tanaris
+					-- #if BEFORE WRATH
+					["description"] = "Explore Tanaris, revealing the covered areas of the world map.",
+					-- #endif
+				}),
 				ach(4935, {	-- Tanaris Quests
-					crit(1, {	-- Southsea Pirates
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 25166,	-- Captain Dreadbeard
-					}),
-					crit(1, {	-- Southsea Pirates
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 24950,	-- Captain Dreadbeard
-					}),
-					crit(2, {	-- Bug Free
-						["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
-					}),
-					crit(3, {	-- Advancing Our Interests
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 25065,	-- You Too, Brute?
-					}),
-					crit(3, {	-- Advancing Our Interests
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 25001,	-- Sandscraper
-					}),
-					crit(4, {	-- Grudge Match!
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 25513,	-- Thunderdrome: Grudge Match!
-					}),
-					crit(4, {	-- Grudge Match!
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 25591,	-- THunderdrome: Grudge Match!
-					}),
-					crit(5, {	-- The Titans
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 25421,	-- The Grand Goblet
-					}),
-					crit(5, {	-- The Titans
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 25107,	-- The Grand Goblet
-					}),
+					["timeline"] = { "added 4.0.3" },
+					["groups"] = {
+						crit(1, {	-- Southsea Pirates
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 25166,	-- Captain Dreadbeard
+						}),
+						crit(1, {	-- Southsea Pirates
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 24950,	-- Captain Dreadbeard
+						}),
+						crit(2, {	-- Bug Free
+							["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
+						}),
+						crit(3, {	-- Advancing Our Interests
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 25065,	-- You Too, Brute?
+						}),
+						crit(3, {	-- Advancing Our Interests
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 25001,	-- Sandscraper
+						}),
+						crit(4, {	-- Grudge Match!
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 25513,	-- Thunderdrome: Grudge Match!
+						}),
+						crit(4, {	-- Grudge Match!
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 25591,	-- THunderdrome: Grudge Match!
+						}),
+						crit(5, {	-- The Titans
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 25421,	-- The Grand Goblet
+						}),
+						crit(5, {	-- The Titans
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 25107,	-- The Grand Goblet
+						}),
+					},
 				}),
 			}),
 			-- #if AFTER CATA
@@ -82,21 +120,87 @@ root("Zones", m(KALIMDOR, {
 				}),
 			})),
 			-- #endif
+			-- #if ANYCLASSIC
+			n(EXPLORATION, explorationBatch({
+				["110:140:611:147"] = 986,	-- Zalashji's Den
+				["110:180:473:234"] = 1938,	-- Broken Pillar
+				["120:135:533:104"] = 1937,	-- Noonshade Ruins
+				["150:160:291:434"] = 990,	-- Valley of the Watchers
+				["155:150:561:256"] = 2300,	-- Caverns of Time
+				["155:150:592:75"] = 977,	-- Steamwheedle Port
+				["160:150:395:346"] = 984,	-- Eastmoon Ruins
+				["160:190:629:220"] = 1336,	-- Lost Rigger Cove
+				["165:180:509:168"] = 985,	-- Waterspring Field
+				["175:165:421:91"] = 976,	-- Gadgetzan
+				["180:200:252:199"] = 982,	-- The Noxious Lair
+				["185:250:203:286"] = 980,	-- Thistleshrub Valley
+				["195:175:299:100"] = 979,	-- Sandsorrow Watch
+				["195:210:323:359"] = 992,	-- Southmoon Ruins
+				["205:145:325:289"] = 983,	-- Dunemaul Compound
+				["205:157:445:511"] = 987,	-- Land's End Beach
+				["210:175:254:0"] = 978,	-- Zul'Farrak
+				["215:175:499:293"] = 1940,	-- Southbreak Shore
+				["215:180:363:194"] = 1939,	-- Abyssal Sands
+				["220:210:449:372"] = 981,	-- The Gaping Chasm
+				--[[
+				[988] = 13,                              -- Wavestrider Beach
+				[989] = 14,                              -- Uldum
+				[991] = 16,                              -- Gunstan's Post
+				[2317] = 24,                             -- South Seas
+				[2857] = 25,                             -- The Rumble Cage
+				]]--
+			})),
+			-- #endif
+			n(FACTIONS, {
+				faction(369, { 	-- Gadgetzan
+					["icon"] = icon("INV_Misc_Coin_01"),
+					-- #if BEFORE CATA
+					["OnTooltip"] = OnTooltipForGadgetzhan,
+					-- #endif
+					["maps"] = {
+						-- #if AFTER CATA
+						NORTHERN_BARRENS,
+						-- #else
+						THE_BARRENS,
+						-- #endif
+					},
+				}),
+			}),
 			n(FLIGHT_PATHS, {
 				fp(539, {	-- Bootlegger Outpost, Tanaris
+					["cr"] = 41214,	-- Slick Dropdip <Flight Master>
 					["coord"] = { 55.8, 60.6, TANARIS },
+					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				fp(531, {	-- Dawnrise Expedition, Tanaris
+					["cr"] = 41215,	-- Raina Sunglide <Flight Master>
 					["coord"] = { 33.2, 77.2, TANARIS },
+					["timeline"] = { "added 4.0.1.12984" },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(39, {	-- Gadgetzan, Tanaris
+					["cr"] = 7823,	-- Bera Stonehammer <Gryphon Master>
+					-- #if AFTER CATA
 					["coord"] = { 51.4, 29.4, TANARIS },
+					-- #else
+					["coord"] = { 51.0, 29.2, TANARIS },
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(40, {	-- Gadgetzan, Tanaris
+					["cr"] = 7824,	-- Bulkrek Ragefist <Wind Rider Master>
+					-- #if AFTER CATA
 					["coord"] = { 52, 27.6, TANARIS },
+					-- #else
+					["coord"] = { 51.6, 26.6, TANARIS },
+					-- #endif
+					["races"] = HORDE_ONLY,
 				}),
 				fp(532, {	-- Gunstan's Dig, Tanaris
+					["cr"] = 40827,	-- Thurda <Flight Master>
 					["coord"] = { 40, 77.4, TANARIS },
+					["timeline"] = { "added 4.0.1.12984" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 			n(QUESTS, {
@@ -1360,8 +1464,18 @@ root("Zones", m(KALIMDOR, {
 			}),
 			n(TREASURES, {
 				o(142184, {	-- Captain's Chest
-					["coord"] = { 76.4, 45.8, TANARIS },
-					["cost"] = { { "i", 9249, 1 } },	-- 1x Captain's Key
+					-- #if AFTER CATA
+					["coords"] = {
+						{ 75.3, 45.9, TANARIS },
+						{ 76.4, 45.8, TANARIS },
+					},
+					-- #else
+					["coord"] = { 76.5, 45.8, TANARIS },
+					-- #endif
+					["cost"] = {{ "i", 9249, 1 }},	-- 1x Captain's Key
+					["groups"] = {
+						i(9359),	-- Southsea Lamp (Renamed from Wirt's Third Leg)
+					},
 				}),
 			}),
 			n(VENDORS, {
@@ -4211,37 +4325,114 @@ root("Zones", m(KALIMDOR, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(9249),	-- Captain's Key
 				i(71714, {	-- Formula: Enchant Cloak - Lesser Agility (RECIPE!)
 					["timeline"] = { "added 4.0.3" },
 				}),
 				i(11206, {	-- Formula: Enchant Cloak - Lesser Agility (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
+					-- #if BEFORE 4.0.3
+					["crs"] = {
+						5623,	-- Wastewander Assassin
+						7805,	-- Wastewander Scofflaw
+					},
+					-- #endif
 				}),
-				i(72028),	-- Pattern: Tough Scorpid Boots
-				un(REMOVED_FROM_GAME, i(8399)),	-- Pattern: Tough Scorpid Boots (old BoE version was removed from game)
-				i(72026),	-- Pattern: Tough Scorpid Bracers
-				un(REMOVED_FROM_GAME, i(8397)),	-- Pattern: Tough Scorpid Bracers (old BoE version was removed from game)
-				i(72029),	-- Pattern: Tough Scorpid Breastplate
-				un(REMOVED_FROM_GAME, i(8395)),	-- Pattern: Tough Scorpid Breastplate (old BoE version was removed from game)
-				i(72025),	-- Pattern: Tough Scorpid Gloves
-				un(REMOVED_FROM_GAME, i(8398)),	-- Pattern: Tough Scorpid Gloves (old BoE version was removed from game)
-				i(72033),	-- Pattern: Tough Scorpid Helm
-				un(REMOVED_FROM_GAME, i(8402)),	-- Pattern: Tough Scorpid Helm (old BoE version was removed from game)
-				i(72030),	-- Pattern: Tough Scorpid Leggings
-				un(REMOVED_FROM_GAME, i(8401)),	-- Pattern: Tough Scorpid Leggings (old BoE version was removed from game)
-				i(72027),	-- Pattern: Tough Scorpid Shoulders
-				un(REMOVED_FROM_GAME, i(8400)),	-- Pattern: Tough Scorpid Shoulders (old BoE version was removed from game)
+				i(72028, {	-- Pattern: Tough Scorpid Boots
+					["timeline"] = { "added 4.0.3" },
+				}),
+				i(8399, {	-- Pattern: Tough Scorpid Boots
+					["timeline"] = { "removed 4.0.3" },
+					-- #if BEFORE 4.0.3
+					["cr"] = 5615,	-- Wastewander Rogue
+					-- #endif
+				}),
+				i(72026, {	-- Pattern: Tough Scorpid Bracers
+					["timeline"] = { "added 4.0.3" },
+				}),
+				i(8397, {	-- Pattern: Tough Scorpid Bracers
+					["timeline"] = { "removed 4.0.3" },
+					-- #if BEFORE 4.0.3
+					["cr"] = 5617,	-- Wastewander Shadow Mage
+					-- #endif
+				}),
+				i(72029, {	-- Pattern: Tough Scorpid Breastplate
+					["timeline"] = { "added 4.0.3" },
+				}),
+				i(8395, {	-- Pattern: Tough Scorpid Breastplate
+					["timeline"] = { "removed 4.0.3" },
+					-- #if BEFORE 4.0.3
+					["cr"] = 5618,	-- Wastewander Bandit
+					-- #endif
+				}),
+				i(72025, {	-- Pattern: Tough Scorpid Gloves
+					["timeline"] = { "added 4.0.3" },
+				}),
+				i(8398, {	-- Pattern: Tough Scorpid Gloves
+					["timeline"] = { "removed 4.0.3" },
+					-- #if BEFORE 4.0.3
+					["cr"] = 5616,	-- Wastewander Thief
+					-- #endif
+				}),
+				i(72033, {	-- Pattern: Tough Scorpid Helm
+					["timeline"] = { "added 4.0.3" },
+				}),
+				i(8402, {	-- Pattern: Tough Scorpid Helm
+					["timeline"] = { "removed 4.0.3" },
+					-- #if BEFORE 4.0.3
+					["crs"] = {
+						7883,	-- Andre Firebeard
+						5623,	-- Wastewander Assassin
+						7805,	-- Wastewander Scofflaw
+					},
+					-- #endif
+				}),
+				i(72030, {	-- Pattern: Tough Scorpid Leggings
+					["timeline"] = { "added 4.0.3" },
+				}),
+				i(8401, {	-- Pattern: Tough Scorpid Leggings
+					["timeline"] = { "removed 4.0.3" },
+					-- #if BEFORE 4.0.3
+					["cr"] = 5615,	-- Wastewander Rogue
+					-- #endif
+				}),
+				i(72027, {	-- Pattern: Tough Scorpid Shoulders
+					["timeline"] = { "added 4.0.3" },
+				}),
+				i(8400, {	-- Pattern: Tough Scorpid Shoulders
+					["timeline"] = { "removed 4.0.3" },
+					-- #if BEFORE 4.0.3
+					["crs"] = {
+						7883,	-- Andre Firebeard
+						5623,	-- Wastewander Assassin
+						7805,	-- Wastewander Scofflaw
+					},
+					-- #endif
+				}),
 				i(9276, {	-- Pirate's Footlocker
 					["crs"] = {
 						7857,	-- Southsea Dock Worker
 						7856,	-- Southsea Freebooter
 						15685,	-- Southsea Kidnapper
+						7855,	-- Southsea Pirate
 						7858,	-- Southsea Swashbuckler
 					},
 					["groups"] = {
-						i(9249),	-- Captain's Key
-						i(9359),	-- Wirt's Third Leg
+						i(9359),	-- Southsea Lamp (Renamed from Wirt's Third Leg)
+						i(9250, {	-- Ship Schedule
+							["timeline"] = { "deleted 4.0.3" },
+						}),
+						i(9251, {	-- Upper Map Fragment
+							["timeline"] = { "deleted 4.1.0" },
+						}),
+						i(9253, {	-- Middle Map Fragment
+							["timeline"] = { "deleted 4.1.0" },
+						}),
+						i(9252, {	-- Lower Map Fragment
+							["timeline"] = { "deleted 4.1.0" },
+						}),
+						i(9249, {	-- Captain's Key
+							["description"] = "Unlocks the Captain's Chest located in the ship at the docks.",
+						}),
 					},
 				}),
 			}),

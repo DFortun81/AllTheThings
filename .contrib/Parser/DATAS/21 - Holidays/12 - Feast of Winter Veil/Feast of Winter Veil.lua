@@ -873,6 +873,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 21191 },	-- Carefully Wrapped Present
 				},
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["isYearly"] = true,
 				["groups"] = {
 					i(116451, {	-- Warm Blue Woolen Socks
@@ -896,6 +897,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 21363 },	-- Festive Gift
 				},
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["isYearly"] = true,
 				["lvl"] = 10,
 				["groups"] = {
@@ -908,6 +910,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 21310 },	-- Gaily Wrapped Present
 				},
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["isYearly"] = true,
 				["lvl"] = 20,
 				["groups"] = {
@@ -926,6 +929,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["classes"] = exclude({ PRIEST, MAGE, WARLOCK, SHAMAN, DRUID }, ALL_CLASSES),
 				["timeline"] = { "removed 6.2.3.20601" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["isYearly"] = true,
 				["groups"] = {
 					-- #if BEFORE 6.2.2
@@ -956,6 +960,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["classes"] = { PRIEST, MAGE, WARLOCK, SHAMAN, DRUID },
 				["timeline"] = { "removed 6.2.3.20601" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["isYearly"] = true,
 				["groups"] = {
 					-- #if BEFORE 6.2.2
@@ -985,6 +990,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2015.",
 				["timeline"] = { "added 6.2.2.20395", "removed 7.0.3.21570" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["groups"] = {
 					i(128776, {	-- Red Wooden Sled (TOY!)
 						["timeline"] = { "added 6.2.2.20395" },
@@ -1002,6 +1008,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2016.",
 				["timeline"] = { "added 7.0.3.21570", "removed 7.3.5.25807" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["groups"] = {
 					i(139337, {	-- Disposable Winter Veil Suits (TOY!)
 						["timeline"] = { "added 7.0.3.22248" },
@@ -1019,6 +1026,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2017.  You will receive only one faction's Hearthstation.  In order to obtain the opposite faction's, you will need to have a character on that side open this gift.",
 				["timeline"] = { "added 7.3.5.25807", "removed 8.0.1.27291" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["groups"] = {
 					i(151343, {	-- Hearthstation (A) (TOY!)
 						["timeline"] = { "added 7.3.5.25807" },
@@ -1041,6 +1049,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2018.",
 				["timeline"] = { "added 8.0.1.27291", "removed 8.2.5.31961" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["groups"] = {
 					i(162973, {	-- Greatfather Winter's Hearthstone (TOY!)
 						["timeline"] = { "added 8.0.1.27291" },
@@ -1058,6 +1067,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2019.",
 				["timeline"] = { "added 8.2.5.31961", "removed 9.0.1.36230" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["groups"] = {
 					i(172219, {	-- Wild Holly (TOY!)
 						["timeline"] = { "added 8.2.5.31961" },
@@ -1075,6 +1085,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2020.",
 				["timeline"] = { "added 9.0.1.36230", "removed 9.1.5.40871" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["groups"] = {
 					i(178530, {	-- Wreath-A-Rang (TOY!)
 						["timeline"] = { "added 9.0.1.36230" },
@@ -1092,6 +1103,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2021.",
 				["timeline"] = { "added 9.1.5.40871", "removed 9.1.5.41793" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["groups"] = {
 					i(187422, {	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
 						["timeline"] = { "added 9.1.5.40871" },
@@ -1109,6 +1121,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2022.",
 				["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.99999" },	-- TODO: Correct Removed Timestamp in 2023.
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["groups"] = {
 					i(191925, {	-- Falling Star Flinger (TOY!)
 						["timeline"] = { "added 10.0.2.47213" },
@@ -1121,6 +1134,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 21327 },	-- Ticking Present
 				},
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["isYearly"] = true,
 				["lvl"] = 40,
 				["groups"] = {
@@ -1180,6 +1194,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["timeline"] = { "added 2.3.0.7561", "removed 2.4.3.8601" },
 				-- #endif
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
 					i(34425, {	-- Clockwork Rocket Bot
@@ -1195,6 +1210,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2008.",
 				["timeline"] = { "added 2.4.3.8601", "removed 3.3.0.11159" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
 					i(37710, {	-- Crashin' Thrashin' Racer Controller (TOY!)
@@ -1229,6 +1245,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2010.",
 				["timeline"] = { "added 4.0.3.13329", "removed 4.2.0.14333" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
 					i(46709, {	-- MiniZep Controller (TOY!)
@@ -1244,6 +1261,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2011.",
 				["timeline"] = { "added 4.2.0.14333", "removed 5.1.0.16309" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
 					i(70923, {	-- Gaudy Winter Veil Sweater
@@ -1259,6 +1277,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2012.",
 				["timeline"] = { "added 5.1.0.16309", "removed 5.4.0.17227" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
 					i(90888, {	-- Special Edition Foot Ball (TOY!)
@@ -1277,6 +1296,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2013.",
 				["timeline"] = { "added 5.4.0.17227", "removed 6.0.1.18594" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
 					i(104318, {	-- Crashin' Thrashin' Flyer Controller (TOY!)
@@ -1292,6 +1312,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2014.",
 				["timeline"] = { "added 6.0.1.18594", "removed 6.2.2.20395" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
 					i(116763, {	-- Crashin' Thrashin' Shredder Controller (TOY!)
@@ -1307,6 +1328,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2015.",
 				["timeline"] = { "added 6.2.2.20395", "removed 7.0.3.22248" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
 					i(108632, {	-- Crashin' Thrashin' Flamer Controller (TOY!)
@@ -1322,6 +1344,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2016.",
 				["timeline"] = { "added 7.0.3.22248", "removed 7.3.0.24484" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
 					i(128636, {	-- Endothermic Blaster (TOY!)
@@ -1337,6 +1360,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2017. You will receive only one factions Toy Weapon Set.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
 				["timeline"] = { "added 7.3.0.24484", "removed 8.0.1.26624" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
 					i(151349, {	-- Toy Weapon Set [A] (TOY!)
@@ -1357,6 +1381,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2018. You will receive only one factions Toy Armor Set.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
 				["timeline"] = { "added 8.0.1.26624", "removed 8.2.5.31958" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
 					i(162643, {	-- Toy Armor Set [A] (TOY!)
@@ -1377,6 +1402,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2019.",
 				["timeline"] = { "added 8.2.5.31958", "removed 9.0.1.36216" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
 					i(172223, {	-- Crashin' Thrashin' Battleship (TOY!)
@@ -1397,6 +1423,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2020.",
 				["timeline"] = { "added 9.0.1.36216", "removed 9.1.5.40871" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
 					i(178533, {	-- Shaking Pet Carrier
@@ -1412,6 +1439,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2021.",
 				["timeline"] = { "added 9.1.5.40871", "removed 9.1.5.41793" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
 					i(187560, {	-- Rockin' Rollin' Racer Pack
@@ -1427,6 +1455,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["description"] = "Gift from 2022.",
 				["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.99999" },	-- TODO: Correct Removed Timestamp in 2023.
 				["maps"] = { IRONFORGE, ORGRIMMAR },
+				["_drop"] = { "g" },
 				["lvl"] = 10,
 				["groups"] = {
 					i(191937, {	-- Falling Star Catcher (TOY!)

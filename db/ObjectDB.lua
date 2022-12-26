@@ -2788,6 +2788,7 @@ _.ObjectIcons = {
 	[141979] = "Interface/Icons/INV_Plate_BlackrockClan_B_01Chest",
 	[142122] = "Interface/Icons/inv_scroll_03",
 	[142151] = "Interface/Icons/inv_cask_03",
+	[142184] = "Interface/Icons/inv_box_02",
 	[142195] = "Interface/Icons/INV_Misc_Map07",
 	[142343] = "Interface/Icons/inv_misc_platnumdisks",
 	[142344] = "Interface/Icons/inv_gizmo_01",

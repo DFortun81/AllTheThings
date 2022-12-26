@@ -1714,7 +1714,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 		-- #endif
 		n(ZONE_DROPS, {
 			["description"] = "Apply a perfume or cologne buff to your character and speak to a guard in a major city to receive one of these items. Items exclusively found within each container will be listed within.",
-			["timeline"] = { "removed 3.3.2.11403" },
+			["timeline"] = { "added 3.3.2.11403" },
 			["cost"] = {
 				{ "i", 21833, 1 },	-- Cologne Bottle
 				{ "i", 21829, 1 },	-- Perfume Bottle
