@@ -322,6 +322,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 27.4, 60.8, THE_WAKING_SHORES },
 						["repeatable"] = true,
 					}),
+					q(70212, {	-- Penumbrus
+						["provider"] = { "n", 189289 },	-- Penumbrus
+						["coord"] = { 24.5, 54.4, THE_WAKING_SHORES },
+					}),
 					q(70763, {	-- Worldcarver A'tir
 						["provider"] = { "n", 186859 },	-- Worldcarver A'tir
 						["coord"] = { 30.0, 55.4, THE_WAKING_SHORES },
@@ -365,7 +369,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["questID"] = 74040,
 					["isDaily"] = true,
 					["g"] = {
-						-- Rest is under shared Lv70 Elite Rare Drops
+						i(200252),	-- Molten Flak Cannon
 					},
 				}),
 				n(190991, {	-- Char
@@ -414,6 +418,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["g"] = {
 						i(200144),	-- Band of the Unscalable
 						i(200683),	-- Legguards of the Deep Strata
+						i(200141),	-- Wind Generating Band
 					},
 				}),
 				n(193232, {	-- Rasnar the War Ender
@@ -820,9 +825,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				i(194476, {	-- Plans: Obsidian Seared Hexsword (RECIPE!)
 					["description"] = "Drops Around Obsidian Citadel.",
-				}),
-				i(194483, {	-- Plans: Obsidian Seared Slicer (RECIPE!)
+					i(194483, {	-- Plans: Obsidian Seared Slicer (RECIPE!)
 					["description"] = "Drops Around Obsidian Citadel.",
+				}),
 				}),
 				i(201991, {	-- Sargh's Signet
 					["description"] = "Drops from mobs around the Obsidian Citadel.",

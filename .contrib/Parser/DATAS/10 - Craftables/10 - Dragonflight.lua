@@ -492,7 +492,6 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		n(DISCOVERY, {
 			r(381397),	-- Aromatic Seafood Platter
 			r(381403),	-- Braised Bruffalon Brisket
-			r(381385),	-- Charred Hornswog Steaks
 			r(381396),	-- Feisty Fish Sticks
 			r(381402),	-- Great Cerulean Sea
 			r(381399),	-- Revenge, Served Cold

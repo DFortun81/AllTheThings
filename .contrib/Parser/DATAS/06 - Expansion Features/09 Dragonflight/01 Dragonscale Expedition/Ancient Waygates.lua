@@ -179,7 +179,7 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(71183),	-- triggered together with 'Continued Waygate Exploration' (70702)
 		q(71185),	-- triggered together with 'Continued Waygate Exploration' (71146)
 		q(71187),	-- triggered together with 'Continued Waygate Exploration' (71148)
-		q(71188),	-- triggered together with 'Continued Waygate Exploration' (71149)
+		q(71188),	-- triggered together with 'Continued Waygate Exploration' (71149) / Shady Sanctuary ( 71178)?
 		q(73864),	-- triggered when accepting 'Dormant Discovery' (66595)
 	}),
 })));

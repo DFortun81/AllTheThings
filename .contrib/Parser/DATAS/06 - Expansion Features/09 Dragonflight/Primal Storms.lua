@@ -355,11 +355,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					--},
 				}),
 				n(193650, {	-- Emblazion <Progeny of Fire>
-					-- ["coord"] = { X, Y, MAP },
+					["coord"] = { 29.6, 53.8, THE_WAKING_SHORES },
 					["questID"] = 73991,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200307),	-- Viciously Hooked Cleaver
+					},
 				}),
 				n(193678, {	-- Fieraan <Second Iceblade>
 					-- ["coord"] = { X, Y, MAP },
@@ -394,7 +394,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				n(193652, {	-- Grizzlerock
 					["coord"] = { 59.4, 61.6, THALDRASZUS },
-					-- ["questID"] = ,
+					["questID"] = 73999,
 					-- ["g"] = {
 
 					--},
@@ -451,9 +451,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(193684, {	-- Pipspark Thundersnap
 					["coord"] = { 53.4, 26.2, PRIMALIST_TOMORROW },
 					["questID"] = 74022,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200741),	-- Pipspark's Prestigious Pendant of Protection
+					},
 				}),
 				n(193674, {	-- Voraazka
 					["coord"] = { 27.7, 72.6, THE_WAKING_SHORES },
@@ -484,6 +484,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70754, {	-- Extinguishing the Fire Primalists
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
 					["provider"] = {"i",199750},	-- Primal Fire Core
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				}),
+				q(70723, {	-- Shattering the Earth Primalists
+					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
+					["provider"] = {"i",199691},	-- Primal Earth Core
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(70752, {	-- Vaporizing the Water Primalists

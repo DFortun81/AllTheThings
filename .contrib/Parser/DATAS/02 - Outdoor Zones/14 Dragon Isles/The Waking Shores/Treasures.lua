@@ -128,7 +128,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			o(380840, {	-- Torn Riding Pack
-				["description"] = "Cave Entrance at 29.4, 52.6",
 				["coord"] = { 48.5, 85.2, THE_WAKING_SHORES },
 				["questID"] = 70378,
 				["g"] = {

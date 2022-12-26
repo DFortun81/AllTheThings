@@ -18,41 +18,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200165),	-- Aegis of Scales
 					i(196992),	-- Cliffside Wylderdrake: Heavy Horns (DM!)
 					i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
 				},
 			}),
 			n(187945, {	-- Anhydros the Tidetaker
 				["coord"] = { 58.7, 40.3, THE_WAKING_SHORES },
 				["questID"] = 73865,
-				["g"] = {
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
-				},
 			}),
 			n(193135, {	-- Azra's Prized Peony
 				["coord"] = { 54.9, 71.1, THE_WAKING_SHORES },
@@ -75,23 +45,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["description"] = "Travelling.",
 				["coord"] = { 48.4, 66.1, THE_WAKING_SHORES },
 				["questID"] = 73890,
-				["g"] = {
-					i(200857),	-- Talisman of Sargha (TOY!)
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
-				},
 			}),
 			n(193198, {	-- Captain Lancer
 				["coord"] = { 26.9, 76.1, THE_WAKING_SHORES },
@@ -105,6 +58,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(187745, {	-- Disoriented Watcher
 				["coord"] = { 67.8, 55.4, THE_WAKING_SHORES },
 				["questID"] = 74092,
+				["g"] = {
+					i(200138),	-- Ancient Dancer's Longspear
+				},
 			}),
 			n(191611, {	-- Dragonhunter Igordan
 				["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
@@ -183,9 +139,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 				["coord"] = { 42.1, 39.5, THE_WAKING_SHORES },
 				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200171),	-- Grymheart Blade
+				},
 			}),
 			n(193263, {	-- Helmet Missingway
 				["coord"] = { 43.4, 73.6, THE_WAKING_SHORES },
@@ -199,13 +155,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 72841,
 				["g"] = {
 					i(197023),	-- Cliffside Wylderdrake: Maned Neck (DM!)
+					i(200313),	-- Earthen Protoscale Drape
 					i(200246),	-- Lost Delving Lamp
+					i(200253),	-- Snowspring Incanter's Knife
 					i(200254),	-- Totemic Cinch
 				},
 			}),
 			n(193266, {	-- Lepidoralia the Resplendent
-				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
-				-- ["questID"] = 69891,
+				["coord"] = { 33.8, 85.8, THE_WAKING_SHORES },
+				["questID"] = 74065,
 				-- ["g"] = {
 
 				-- },
@@ -240,10 +198,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193118, {	-- O'nank Shorescour
 				["coord"] = { 82.2, 49.4, THE_WAKING_SHORES },
-				-- ["questID"] = 70983,
-				-- ["g"] = {
-
-				-- },
+				["questID"] = 74017,
+				["g"] = {
+					i(200203),	-- Repurposed Giant's Thimble
+					i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
+				},
 			}),
 			n(184853, {	-- Primal Scythid Queen
 				["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
@@ -279,7 +238,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193181, {	-- Skewersnout <Raypier of the Deep>
 				["coord"] = { 39.6, 41.2, THE_WAKING_SHORES },
-				-- ["questID"] = ,
+				["questID"] = 73895,
 				["g"] = {
 					i(200132),	-- Skewer's Snout
 					i(200552),	-- Torrent Caller's Shell
@@ -295,7 +254,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193120, {	-- Smogswog the Firebreather
 				["coord"] = { 69.0, 64.8, THE_WAKING_SHORES },
-				-- ["questID"] = 69668,
+				["questID"] = 74031,
 				["g"] = {
 					i(200209),	-- Firebreather's Cowl
 				},

@@ -383,7 +383,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200161),	-- Razorwind Talisman
 			i(200185),	-- Grips of the Everflowing Ocean
 			i(200202),	-- Tomorrow's Chains
-			i(200203),	-- Repurposed Giant's Thimble
 			i(200204),	-- Sandshine Chestplate
 			i(200215),	-- Plumed Shoulderguards of the Hunt
 			i(200216),	-- Water Heating Cord
@@ -397,7 +396,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200292),	-- Cragforge Pauldrons
 			i(200306),	-- Tempest Shawl
 			i(200309),	-- Rock Encrusted Chestguard
-			i(200313),	-- Earthen Protoscale Drape
 			i(200314),	-- Skyspeaker's Envelope
 			i(200434),	-- Anund's Mana-Singed Amice
 			i(200435),	-- Brackish Breeches
@@ -414,7 +412,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200710),	-- Ashjra'kamas
 			i(200735),	-- Magically Magical Faerie Flower
 			i(200737),	-- Pauldrons of Infinite Darkness
-			i(200741),	-- Pipspark's Prestigious Pendant of Protection
 			i(200758),	-- Breastplate of Storied Antiquity
 			i(200760),	-- Unstable Arcane Cell
 			i(200968),	-- Sandshaped Winglord's Drape
@@ -704,11 +701,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197693),	-- Shikaar Hunter's Crossbow
 			i(197904),	-- Shikaar Hunting Knife
 			i(200130),	-- Corpse Ripper
-			i(200138),	-- Ancient Dancer's Longspear
 			i(200139),	-- Tempest Arc
 			i(200145),	-- Hilted Monolith
 			i(200151),	-- Seamist Blade
-			i(200171),	-- Grymheart Blade
 			i(200155),	-- Haphazardly Welded Protector
 			i(200175),	-- Repurposed Anvil
 			i(200176),	-- Missingway Hand Cannon
@@ -721,14 +716,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200241),	-- Stormcaller's Ritual Hatchet
 			i(200242),	-- Watcher's Lightning Rod
 			i(200250),	-- Frost Tipped Glaive
-			i(200253),	-- Snowspring Incanter's Knife
 			i(200257),	-- Decay Infused Branch
 			i(200259),	-- Forest Dweller's Shield
 			i(200293),	-- Primal Scion's Twinblade
 			i(200297),	-- Hastily Cobbled Maul
 			i(200301),	-- Reclaimed Tuskarr Harpoon
 			i(200302),	-- Magmaforged Scimitar
-			i(200307),	-- Viciously Hooked Cleaver
 			i(200308),	-- Rellen's Legacy
 			i(200437),	-- Dreamsong Censer
 			i(201231),	-- Bident of Hallucinations
@@ -1639,7 +1632,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(198100),	-- Recipe: Assorted Exotic Spices (RECIPE!)
 				i(198123),	-- Recipe: Braised Bruffalon Brisket (RECIPE!)
 				i(198097),	-- Recipe: Breakfast of Draconic Champions (RECIPE!)
-				i(195881),	-- Recipe: Charred Hornswog Steaks (RECIPE!)
 				i(198093),	-- Recipe: Cheese and Quackers (RECIPE!)
 				i(198108),	-- Recipe: Delicious Dragon Spittle (RECIPE!)
 				i(198117),	-- Recipe: Feisty Fish Sticks (RECIPE!)

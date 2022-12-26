@@ -42,6 +42,7 @@ i(0, 381381);	-- Zesty Water
 -- ITEM --
 i(198104, 381377);	-- Blubbery Muffin
 i(198105, 381378);	-- Celebratory Cake
+i(195881, 381385);	-- Charred Hornswog Steaks
 i(198109, 381383);	-- Churnbelly Tea
 i(198127, 381412);	-- Fated Fortune Cookie
 i(198114, 381392);	-- Filet of Fangs (FISHING?)
@@ -66,7 +67,6 @@ i(194965, 381413);	-- Yusa's Hearty Stew
 -- DISCOVERY --
 i(0, 381397);	-- Aromatic Seafood Platter
 i(0, 381403);	-- Braised Bruffalon Brisket
-i(0, 381385);	-- Charred Hornswog Steaks
 i(0, 381396);	-- Feisty Fish Sticks
 i(0, 381402);	-- Great Cerulean Sea
 i(0, 381399);	-- Revenge, Served Cold
@@ -79,7 +79,6 @@ i(198118, 0);	-- Aromatic Seafood Platter
 i(198100, 0);	-- Assorted Exotic Spices
 i(198123, 0);	-- Braised Bruffalon Brisket
 i(198097, 0);	-- Breakfast of Draconic Champions
-i(195881, 0);	-- Charred Hornswog Steaks
 i(198093, 0);	-- Cheese and Quackers
 i(198108, 0);	-- Delicious Dragon Spittle
 i(198117, 0);	-- Feisty Fish Sticks

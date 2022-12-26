@@ -50,42 +50,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 14.5, 31.1, THE_AZURE_SPAN },
 				["questID"] = 73985,
 				["isDaily"] = true,
-				["g"] = {
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
-				},
 			}),
 			n(193259, {	-- Blue Terror
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
 				-- ["questID"] = ,
 				["g"] = {
 					i(197595),	-- Windborne Velocidrake: Finned Ears (DM!)
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
 				},
 			}),
 			n(194392, {	-- Brackle
@@ -128,20 +98,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200310),	-- Stole of the Iron Phantom
 					i(198070),	-- Tattered Seavine (IF!)
 					i(200552),	-- Torrent Callers-shell
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
 				},
 			}),
 			n(193214, {	-- Forgotten Creation

@@ -1312,6 +1312,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 187209 },	-- Klozicc the Ascended
 					["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
 				}),
+				q(69891, {	-- Lepidoralia the Resplendent
+					["provider"] = { "n", 193266 },	-- Lepidoralia the Resplendent
+					["coord"] = { 34.1, 85.7, THE_WAKING_SHORES },
+				}),
 				q(70979, {	-- Magmaton
 					["provider"] = { "n", 186827 },	-- Magmaton
 					["coord"] = { 40.0, 64.5, THE_WAKING_SHORES },
@@ -1321,6 +1325,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 193152 },	-- Massive Magmashell
 					["coord"] = { 21.7, 76.2, THE_WAKING_SHORES },
 					["isDaily"] = true,
+				}),
+				q(70983, {	-- O'nank Shorescour
+					["provider"] = { "n", 184853 },	-- O'nank Shorescour
+					["coord"] = { 80.1, 53.9, THE_WAKING_SHORES },
 				}),
 				q(66074, {	-- Primal Scythid Queen
 					["provider"] = { "n", 184853 },	-- Primal Scythid Queen
@@ -1337,6 +1345,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(72126, {	-- Slurpo, the Incredible Snail
 					["provider"] = { "n", 193175 },	-- Slurpo, the Incredible Snail
 					["coord"] = { 34.5, 89.7, THE_WAKING_SHORES },
+				}),
+				q(69668, {	-- Smogswog the Firebreather
+					["provider"] = { "n", 193120 },	-- Smogswog the Firebreather
+					["coord"] = { 68.4, 65.3, THE_WAKING_SHORES },
 				}),
 				q(70751, {	-- Terillod the Devout
 					["provider"] = { "n", 193171 },	-- Terillod the Devout
