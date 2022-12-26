@@ -5952,18 +5952,19 @@ end
 end)();
 
 -- Lua Constructor Lib
-local fieldCache = {};
+local fieldCache;
 local CacheFields;
 local _cache;
+local DataCaches = {};
 (function()
 local currentMaps = {};
-local currentInstance;
-local delayedRawSets = {};
+local currentInstance, currentCache, fieldCache_g, fieldCache_f, fieldConverters;
 local wipe, type =
 	  wipe, type;
-local fieldCache_g,fieldCache_f, fieldConverters;
-local function CacheField(group, field, value)
-	fieldCache_g = rawget(fieldCache, field);
+local delayedRawSets = {};
+-- Allows caching the given 'group' using the provided field and value into the 'currentCache'
+local CacheField = function(group, field, value)
+	fieldCache_g = rawget(currentCache, field);
 	fieldCache_f = rawget(fieldCache_g, value);
 	if fieldCache_f then
 		fieldCache_f[#fieldCache_f + 1] = group;
@@ -5971,48 +5972,72 @@ local function CacheField(group, field, value)
 		rawset(fieldCache_g, value, {group});
 	end
 end
+
+-- Creates and returns an object which can be used for holding cached data by various keys allowing for quick updates of data states. 'name' is optional for debugging
+app.CreateDataCache = function(name)
+	local cache = {};
+	-- Caches all the nested groups into this DataCache
+	cache.CacheFields = function(groups)
+		-- link the local references to the references of this specific cache
+		currentCache = cache;
+		-- app.PrintDebug("DataCache",currentCache.name)
+		-- perform the caching logic against the groups
+		CacheFields(groups);
+		-- reset to the default data cache
+		currentCache = fieldCache;
+		-- app.PrintDebug("Reset DataCache",currentCache.name)
+	end
+	cache.name = name;
+	-- These are the fields we store.
+	cache["achievementID"] = {};
+	cache["achievementCategoryID"] = {};
+	cache["artifactID"] = {};
+	cache["azeriteEssenceID"] = {};
+	cache["creatureID"] = {};
+	cache["currencyID"] = {};
+	cache["currencyIDAsCost"] = {};
+	cache["encounterID"] = {};
+	cache["factionID"] = {};
+	cache["flightPathID"] = {};
+	cache["followerID"] = {};
+	cache["headerID"] = {};
+	cache["illusionID"] = {};
+	cache["instanceID"] = {};
+	cache["itemID"] = {};
+	cache["itemIDAsCost"] = {};
+	cache["mapID"] = {};
+	cache["mountID"] = {};
+	cache["nextQuests"] = {};
+	-- identical cache as creatureID (probably deprecate creatureID use eventually)
+	cache["npcID"] = rawget(cache, "creatureID");
+	cache["objectID"] = {};
+	cache["professionID"] = {};
+	-- identical cache as professionID
+	cache["requireSkill"] = rawget(cache, "professionID");
+	cache["altQuestIDs"] = {};
+	cache["questID"] = {};
+	cache["runeforgePowerID"] = {};
+	cache["rwp"] = {};
+	cache["s"] = {};
+	cache["speciesID"] = {};
+	cache["spellID"] = {};
+	cache["tierID"] = {};
+	cache["titleID"] = {};
+	cache["toyID"] = {};
+
+	tinsert(DataCaches, cache);
+	return cache;
+end
+-- default data cache
+fieldCache = app.CreateDataCache("default");
+currentCache = fieldCache;
+-- This is referenced by FlightPath objects when pulling their Info from the DB
+app.CacheField = CacheField;
+
 -- Toggle being able to cache things inside maps
 app.ToggleCacheMaps = function(skipCaching)
 	currentMaps[-1] = skipCaching;
 end
--- This is referenced by FlightPath objects when pulling their Info from the DB
-app.CacheField = CacheField;
--- These are the fields we store.
-fieldCache["achievementID"] = {};
-fieldCache["achievementCategoryID"] = {};
-fieldCache["artifactID"] = {};
-fieldCache["azeriteEssenceID"] = {};
-fieldCache["creatureID"] = {};
-fieldCache["currencyID"] = {};
-fieldCache["currencyIDAsCost"] = {};
-fieldCache["encounterID"] = {};
-fieldCache["factionID"] = {};
-fieldCache["flightPathID"] = {};
-fieldCache["followerID"] = {};
-fieldCache["headerID"] = {};
-fieldCache["illusionID"] = {};
-fieldCache["instanceID"] = {};
-fieldCache["itemID"] = {};
-fieldCache["itemIDAsCost"] = {};
-fieldCache["mapID"] = {};
-fieldCache["mountID"] = {};
-fieldCache["nextQuests"] = {};
--- identical cache as creatureID (probably deprecate creatureID use eventually)
-fieldCache["npcID"] = rawget(fieldCache, "creatureID");
-fieldCache["objectID"] = {};
-fieldCache["professionID"] = {};
--- identical cache as professionID
-fieldCache["requireSkill"] = rawget(fieldCache, "professionID");
-fieldCache["altQuestIDs"] = {};
-fieldCache["questID"] = {};
-fieldCache["runeforgePowerID"] = {};
-fieldCache["rwp"] = {};
-fieldCache["s"] = {};
-fieldCache["speciesID"] = {};
-fieldCache["spellID"] = {};
-fieldCache["tierID"] = {};
-fieldCache["titleID"] = {};
-fieldCache["toyID"] = {};
 local cacheAchievementID = function(group, value)
 	-- achievements used on maps should not cache the location for the achievement
 	if group.mapID then return; end
@@ -6622,14 +6647,30 @@ local function UpdateSearchResults(searchResults)
 	end
 	-- app.PrintDebug("UpdateSearchResults Done")
 end
--- Pulls the field search results for the rawID's and passes the results into UpdateSearchResults
+-- Pulls all cached fields for the field/id and passes the results into UpdateSearchResults
+local function UpdateRawID(field, id)
+	-- app.PrintDebug("UpdateRawID",field,id)
+	if field and id then
+		local groups, append, _cache = {}, app.ArrayAppend;
+		for _,cache in ipairs(DataCaches) do
+			_cache = rawget(cache, field);
+			append(groups, _cache and rawget(_cache, id));
+			-- app.PrintDebug("Update in DataCache",cache.name,id)
+		end
+		UpdateSearchResults(groups);
+	end
+end
+-- Pulls all cached fields for the field/ids and passes the results into UpdateSearchResults
 local function UpdateRawIDs(field, ids)
-	-- print("UpdateRawIDs",field,ids and #ids)
-	if ids and #ids > 0 then
-		local groups, append, search = {}, app.ArrayAppend;
-		for _,id in ipairs(ids) do
-			search = SearchForField(field, id);
-			append(groups, search);
+	-- app.PrintDebug("UpdateRawIDs",field,ids and #ids)
+	if field and ids and #ids > 0 then
+		local groups, append, _cache = {}, app.ArrayAppend;
+		for _,cache in ipairs(DataCaches) do
+			for _,id in ipairs(ids) do
+				_cache = rawget(cache, field);
+				append(groups, _cache and rawget(_cache, id));
+				-- app.PrintDebug("Update in DataCache",cache.name,id)
+			end
 		end
 		UpdateSearchResults(groups);
 	end
@@ -9607,7 +9648,7 @@ app.events.NEW_PET_ADDED = function(petID)
 	-- app.PrintDebug("NEW_PET_ADDED", petID, speciesID);
 	if speciesID and C_PetJournal_GetNumCollectedInfo(speciesID) > 0 and not rawget(CollectedSpeciesHelper, speciesID) then
 		rawset(CollectedSpeciesHelper, speciesID, 1);
-		UpdateSearchResults(SearchForField("speciesID", speciesID));
+		UpdateRawID("speciesID", speciesID);
 		app:PlayFanfare();
 		app:TakeScreenShot("BattlePets");
 		wipe(searchCache);
@@ -17297,6 +17338,7 @@ local function RecursiveParentMapper(group, field, value)
 	end
 end
 
+local DynamicDataCache = app.CreateDataCache("dynamic");
 -- Common function set as the OnUpdate for a group which will build itself a 'simple' version of the
 -- content which matches the specified .dynamic 'field' of the group
 -- NOTE: Content must be cached using the dynamic 'field'
@@ -17375,8 +17417,7 @@ local DynamicCategory_Simple = function(self)
 		-- delay-sort the top level groups
 		app.SortGroupDelayed(self, "name");
 		-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
-		-- TODO: cache dynamic groups elsewhere since there's never a need to include them in regular search results
-		app.FunctionRunner.Run(app.CacheFields, self);
+		app.FunctionRunner.Run(DynamicDataCache.CacheFields, self);
 		-- run a direct update on itself after being populated
 		app.DirectGroupUpdate(self);
 	else app.print("Failed to build Simple Dynamic Category: No cached data for key",self.dynamic) end
@@ -17398,8 +17439,7 @@ local DynamicCategory_Nested = function(self)
 	-- delay-sort the top level groups
 	app.SortGroupDelayed(self, "name");
 	-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
-	-- TODO: cache dynamic groups elsewhere since there's never a need to include them in regular search results
-	app.FunctionRunner.Run(app.CacheFields, self);
+	app.FunctionRunner.Run(DynamicDataCache.CacheFields, self);
 	-- run a direct update on itself after being populated
 	app.DirectGroupUpdate(self);
 end
@@ -21495,7 +21535,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 					ATTAccountWideData.Spells[spellID] = 1;
 					if not app.CurrentCharacter.Spells[spellID] then
 						app.CurrentCharacter.Spells[spellID] = 1;
-						UpdateSearchResults(SearchForField("spellID",spellID));
+						UpdateRawID("spellID",spellID);
 						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
 							app:PlayFanfare();
 							app:TakeScreenShot("Recipes");
@@ -24583,7 +24623,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	-- print("HEIRLOOMS_UPDATED",itemID,kind)
 	if itemID then
 		app.RefreshQuestInfo();
-		UpdateSearchResults(SearchForField("itemID", itemID));
+		UpdateRawID("itemID", itemID);
 		app:PlayFanfare();
 		app:TakeScreenShot("Heirlooms");
 		wipe(searchCache);
@@ -24710,7 +24750,7 @@ end
 app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and not ATTAccountWideData.Toys[itemID] and PlayerHasToy(itemID) then
 		ATTAccountWideData.Toys[itemID] = 1;
-		UpdateSearchResults(SearchForField("itemID", itemID));
+		UpdateRawID("itemID", itemID);
 		app:PlayFanfare();
 		app:TakeScreenShot("Toys");
 		wipe(searchCache);
