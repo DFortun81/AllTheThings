@@ -1467,11 +1467,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 35.1, 47.2, THE_WAKING_SHORES },
 				}),
 				-- Theory In Practice moved temporarily to HQTs
-				q(72089, {	-- To Skytop Observatory
-					["name"] = "To Skytop Observatory",
-					["provider"] = { "n", 193287 },	-- Lord Andestrasz
-					["coord"] = { 57.7, 66.9, THE_WAKING_SHORES },
-				}),
+				-- To Skytop Observatory moved temporarily to HQTs
+				-- TODO: for the two above mentioned chains, how do we sort these types of things going forward? Also, is Skytop an actual quest or should this be a NYI/Never Implemented?
 			}),
 			ach(15941, {	-- Dragon Racing Completionist: Gold
 				["collectible"] = false,
@@ -1687,6 +1684,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		q(70772),	-- triggers when 'Tale of the Warlord' becomes available for Tarjin the Blind
 		q(70771),	-- triggers when 'Tale of the Warlord' completes
 
+		-- TODO: how do we sort these types of things going forward? Also, is Skytop an actual quest or should this be a NYI/Never Implemented?
 		q(72178, {	-- Theory in Practice: Baron von Swoopenbite
 			["name"] = "Theory in Practice: Baron von Swoopenbite",
 			["sourceQuests"] = {
@@ -1766,6 +1764,11 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 				72177,	-- Theory in Practice: Mr.Nibbles
 				-- 72176,	-- Theory in Practice: Toughscale
 			},
+		}),
+		q(72089, {	-- To Skytop Observatory
+			["name"] = "To Skytop Observatory",
+			["provider"] = { "n", 193287 },	-- Lord Andestrasz
+			["coord"] = { 57.7, 66.9, THE_WAKING_SHORES },
 		}),
 	}),
 })));
