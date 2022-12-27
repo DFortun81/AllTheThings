@@ -1,5 +1,5 @@
 """
-Functions used for object localization (all TODOs and simple sync when adding/removing objects in enUS).
+Functions used for object localization (all TODOs and simple sync when adding/removing objects in ObjectDB.lua).
 """
 
 import asyncio
