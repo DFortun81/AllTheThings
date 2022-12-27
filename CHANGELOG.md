@@ -17,7 +17,7 @@ Happy Holidays! ❄
 
 ### Functional changes
 
-- Converted Renown descriptions ("Requires Renows X.") into fancy Reputation requirements.
+- Converted Renown descriptions ("Requires Renown X.") into fancy Reputation requirements.
 - Compressed the 'Discord report' dialog text a bit and added 'requireSkill' data.
 
 
