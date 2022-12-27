@@ -1046,19 +1046,24 @@ i(187958);	-- Shrouded Banner of the Opportune
 ------------------
 -- PATCH 10.0.0 --
 ------------------
--- SOURCED
+i(200148);	-- A Collection Of Me
+i(202042);	-- Aquatic Shades
 i(200707);	-- Armoire of Endless Cloaks
 i(197719);	-- Artisan's Sign
 i(198474);	-- Artist's Easel
+i(198173);	-- Atomic Recalibrator
 i(199337);	-- Bag of Furious Winds
 i(199768);	-- Black Dragon Banner
+i(201933);	-- Black Dragon's Challenge Dummy
 i(199769);	-- Blue Dragon Banner
 i(199897);	-- Blue-Covered Beanbag
 i(202021);	-- Breaker's Flag of Victory
 i(199770);	-- Bronze Dragon Banner
 i(198264);	-- Centralized Precipitation Emitter
+i(201815);	-- Cloak of Many Faces
 i(194058);	-- Cold Cushion
 i(200551);	-- Comfortable Pile of Pelts
+i(200926);	-- Compendium of Love
 i(193033);	-- Convergent Prism
 i(194057);	-- Cushion of Time Travel
 i(199649);	-- Dragon Tea Set
@@ -1066,6 +1071,7 @@ i(194060);	-- Dragonscale Expedition's Expedition Tent
 i(194056);	-- Duck-Stuffed Duck Lovie
 i(192443);	-- Element-Infused Rocket Helmet
 i(198206);	-- Environmental Emulator
+i(200116);	-- Everlasting Horn of Lavaswimming
 i(198728);	-- Explorer's League Banner
 i(191937);	-- Falling Star Catcher
 i(191925);	-- Falling Star Flinger
@@ -1087,6 +1093,7 @@ i(200597);	-- Lover's Bouquet
 i(198857);	-- Lucky Duck
 i(200249);	-- Mage's Chewed Wand
 i(198827);	-- Magical Snow Sled
+i(192495);	-- Malfunctioning Stealthman 54
 i(194059);	-- Market Tent
 i(198402);	-- Maruuk Cooking Pot
 i(197986);	-- Murglasses
@@ -1095,6 +1102,7 @@ i(200640);	-- Obsidian Egg Clutch
 i(200869);	-- Ohn Lite Branded Horn
 i(200630);	-- Ohn'ir Windsage's Hearthstone
 i(194885);	-- Ohuna Perch
+i(198646);	-- Ornate Dragon Statue
 i(198409);	-- Personal Shell
 i(200198);	-- Primalist Prison
 i(191891);	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise
@@ -1102,7 +1110,9 @@ i(199767);	-- Red Dragon Banner
 i(198729);	-- Reliquary Banner
 i(198039);	-- Rock of Appreciation
 i(199896);	-- Rubbery Fish Head
+i(199554);	-- S.E.A.T.
 i(200960);	-- Seed of Renewed Souls
+i(201435);	-- Shuffling Sands
 i(198721);	-- Skinny Reliquary Pillow
 i(198722);	-- Small Triangular Pillow
 i(198720);	-- Soft Purple Pillow
@@ -1120,24 +1130,12 @@ i(199902);	-- Wayfinder's Compass
 i(199650);	-- Whale Bone Tea Set
 i(200878);	-- Wheeled Floaty Boaty Controller
 i(198156);	-- Wyrmhole Generator
--- NYI
-i(192495);	-- Malfunctioning Stealthman 54
-i(197961);	-- Whelps on Strings
-i(198646);	-- Ornate Dragon Statue
-i(199111);	-- Maestro Duck's Orchestrion
-i(199554);	-- S.E.A.T.
-i(199926);	-- Portable J.A.M.
+-- NYI --
 i(200142);	-- Generous Goblin Grenade
-i(200148);	-- A Collection Of Me
-i(200116);	-- Everlasting Horn of Lavaswimming
+i(199111);	-- Maestro Duck's Orchestrion
+i(199926);	-- Portable J.A.M.
 i(200636);	-- Primal Invocation Quintessence
-i(201435);	-- Swinging Sands
-i(201933);	-- Black Dragon's Challenge Dummy
-i(200926);	-- Compendium of Love
-i(202042);	-- Aquatic Shades
-i(201815);	-- Cloak of Many Faces
-
---
+i(197961);	-- Whelps on Strings
 
 -- #if ANYCLASSIC
 -----------------

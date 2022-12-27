@@ -1578,11 +1578,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(199292),	-- Schematic: Convincingly Realistic Jumper Cables (RECIPE!)
 				i(199291),	-- Schematic: Draconic Gunshoes (RECIPE!)
 				-- Without SpellID attached
+				i(199294),	-- Schematic: Atomic Recalibrator (RECIPE!)
 				i(199277),	-- Schematic: Battle-Ready Binoculars (RECIPE!)
 				i(199279),	-- Schematic: Bottomless Stonecrust Ore Satchel (RECIPE!)
 				i(199296),	-- Schematic: Bronze Fireflight (RECIPE!)
 				i(199250),	-- Schematic: Calibrated Safety Switch (RECIPE!)
-				i(199294),	-- Schematic: Cartomancy Cannon (RECIPE!)
 				i(199266),	-- Schematic: Centralized Precipitation Emitter (RECIPE!)
 				i(199263),	-- Schematic: Completely Safe Rockets (RECIPE!)
 				i(199224),	-- Schematic: Complicated Cuffs (RECIPE!)
@@ -1824,19 +1824,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(193535),	-- Bronze Dragon Rider's Wraps
 				i(194051),	-- Wildercloth Weapon Upholstery
 			}),
-		}),
-		filter(TOYS, {
-			i(192495),	-- Malfunctioning Stealthman 54 (TOY!)
-			i(197961),	-- Whelps on Strings (TOY!)
-			i(199111),	-- Maestro Duck's Orchestrion (TOY!)
-			i(199554),	-- S.E.A.T. (TOY!)
-			i(199926),	-- Portable J.A.M. (TOY!)
-			i(200142),	-- Generous Goblin Grenade (TOY!)
-			i(200148),	-- A Collection Of Me (TOY!)
-			i(200116),	-- Everlasting Horn of Lavaswimming (TOY!)
-			i(200636),	-- Primal Invocation Quintessence (TOY!)
-			i(200926),	-- Compendium of Love (TOY!)
-			i(201933),	-- Black Dragon's Challenge Dummy (TOY!)
 		}),
 		--[[
 		filter(PETS, {

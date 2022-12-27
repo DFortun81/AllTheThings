@@ -81,6 +81,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(202019),	-- Golden Dragon Goblet (TOY!)
 				},
 			}),
+			o(378857, {	-- Lost Obsidian Cache
+				-- TODO Check?
+				["description"] = "Collect a  Sour Apple from the ground around the Blacktalon Pack Goat along the road leading up to Obsidian Bulwark at 43.7, 71.8\n\nThrow an apple at the Blacktalon Shadowclaw in Obsidian Bulwark 43.1, 67.2\n\nYou can now interact with the bird, it will fly you up to the cave where the Cache key will be visible beside the corpse",
+				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
+				-- ["questID"] = ,
+				["cost"] = { { "i", 198085, 1 }, },	-- 1xLost Obsidian Cache Key
+				["g"] = {
+					i(201933),	-- Black Dragon's Challenge Dummy (TOY!)
+				},
+			}),
 			o(378820, {	-- Popfizz Punch
 				["coord"] = { 39.30, 38.32, THE_WAKING_SHORES },
 				--["questID"] = ???,

@@ -1271,7 +1271,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 46.6, 40.2, THE_AZURE_SPAN },
 						["g"] = {
 							i(198676),	-- Divo's Worn Cloth
-							i(200926),	-- Compendium of Love
+							i(200926),	-- Compendium of Love (TOY!)
 							crit(5, {	-- For The Love of Others
 								["achievementID"] = 16580,	-- Lend a Helping Span
 							}),

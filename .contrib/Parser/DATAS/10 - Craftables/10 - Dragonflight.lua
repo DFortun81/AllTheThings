@@ -845,6 +845,10 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		spell(382322, {	-- Primal Deconstruction Charge
 			r(382357),	-- EZ-Thro Primal Deconstruction Charge
 		}),
+		spell(382374, {	-- Rummage Through Scrap
+			i(192495),	-- Malfunctioning Stealthman 54 (TOY!)
+			i(199554),	-- S.E.A.T. (TOY!)
+		}),
 		n(ARMOR, {
 			i(198326),	-- Battle-Ready Binoculars
 			i(198332),	-- Complicated Cuffs
@@ -1014,7 +1018,6 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(198253),	-- Calibrated Safety Switch+
 			i(198254),	-- Calibrated Safety Switch++
 			i(198255),	-- Calibrated Safety Switch+++
-			i(198173),	-- Cartomancy Cannon
 			i(198160),	-- Completely Safe Rockets+
 			i(198161),	-- Completely Safe Rockets++
 			i(198162),	-- Completely Safe Rockets+++
@@ -1136,6 +1139,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(198188),	-- Shock-Spring Coil+++
 		}),
 		filter(TOYS, {
+			i(198173);	-- Atomic Recalibrator (TOY!)
 			i(198264),	-- Centralized Precipitation Emitter (TOY!)
 			i(192443),	-- Element-Infused Rocket Helmet (TOY!)
 			i(198206),	-- Environmental Emulator (TOY!)

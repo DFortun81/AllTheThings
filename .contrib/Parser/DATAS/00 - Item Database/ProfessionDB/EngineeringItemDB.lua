@@ -123,7 +123,7 @@ i(0, 382361);	-- Razor-Sharp Gear
 i(0, 384491);	-- Spring-Loaded Capacitor Casing
 -- SPECIALIZATION --
 i(0, 382345);	-- Assorted Safety Fuses
-i(0, 382408);	-- Cartomancy Cannon
+i(0, 382408);	-- Atomic Recalibrator
 i(0, 382368);	-- Centralized Precipitation Emitter
 i(0, 382365);	-- Completely Safe Rockets
 i(0, 382371);	-- Element-Infused Rocket Helmet
@@ -158,7 +158,7 @@ i(199277, 0);	-- Battle-Ready Binoculars
 i(199279, 0);	-- Bottomless Stonecrust Ore Satchel
 i(199296, 0);	-- Bronze Fireflight
 i(199250, 0);	-- Calibrated Safety Switch
-i(199294, 0);	-- Cartomancy Cannon
+i(199294, 0);	-- Atomic Recalibrator
 i(199266, 0);	-- Centralized Precipitation Emitter
 i(199263, 0);	-- Completely Safe Rockets
 i(199224, 0);	-- Complicated Cuffs

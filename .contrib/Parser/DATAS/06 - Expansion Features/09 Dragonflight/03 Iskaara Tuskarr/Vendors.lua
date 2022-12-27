@@ -211,7 +211,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 						-- RENOWN 23 --
-					i(199897),	-- Blue-Covered Beanbag (TOY!) [Todo cost??]
+					i(199897, {	-- Blue-Covered Beanbag (TOY!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 100 },
+							{ "i", PEBBLED_ROCK_SALTS, 10 },
+							{ "i", RESILIENT_LEATHER, 10 },
+						},
+					}),
 						-- RENOWN 28 --
 					i(199543, {	-- Azure Depths Shoulderguards
 						["cost"] = {
