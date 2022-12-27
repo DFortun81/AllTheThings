@@ -240,7 +240,7 @@ local function AfterCombatCallback(method, ...)
 			local args = app.__callbacks[method];
 			app.__callbacks[method] = nil;
 			-- AfterCombatCallback with args/void
-			if args ~= true then
+			if args and args ~= true then
 				-- print("AfterCombatCallback/args Running",method, unpack(args))
 				method(unpack(args));
 			else
@@ -2527,7 +2527,7 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 
 		questChange.." '"..(C_TaskQuest.GetQuestInfoByQuestID(id) or C_QuestLog.GetTitleForQuestID(id) or "???").."'",
 		"lvl:"..app.Level.." race:"..app.RaceID.." ("..app.Race..") class:"..app.ClassIndex.." ("..app.Class..") cov:"..(covData and covData.name or "N/A")..(covRenown and ":"..covRenown or ""),
-		"u:"..tostring(questRef and questRef.u).." skill:"..(questRef.requireSkill or ""),
+		"u:"..tostring(questRef and questRef.u).." skill:"..(questRef and questRef.requireSkill or ""),
 		"sq:"..app.SourceQuestString(questRef or id),
 		"lq:"..(app.LastQuestTurnedIn or ""),
 		-- TODO: put more info in here as it will be copy-paste into Discord
@@ -14657,9 +14657,9 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 	local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 	if sourceInfo then
 		-- Search ATT for the related sources.
-		local searchResults = SearchForField("s", sourceID);
 		-- Show the collection message.
 		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
+			local searchResults = SearchForField("s", sourceID);
 			if searchResults and #searchResults > 0 then
 				local firstMatch = searchResults[1];
 				print(format(L["ITEM_ID_ADDED"], firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
@@ -14680,7 +14680,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 		end
 
 		-- Update the groups for the sourceID results
-		UpdateSearchResults(searchResults);
+		UpdateRawID("s", sourceID);
 	end
 end
 function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
@@ -24696,12 +24696,13 @@ end
 app.events.PLAYER_REGEN_ENABLED = function()
 	app:UnregisterEvent("PLAYER_REGEN_ENABLED");
 	-- print("PLAYER_REGEN_ENABLED:Begin")
-	if app.__combatcallbacks and #app.__combatcallbacks > 0 then
-		local i = #app.__combatcallbacks;
+	local callbacks = app.__combatcallbacks;
+	if callbacks and #callbacks > 0 then
+		local i = #callbacks;
 		for c=i,1,-1 do
 			-- print("PLAYER_REGEN_ENABLED:",c)
-			app.__combatcallbacks[c]();
-			app.__combatcallbacks[c] = nil;
+			callbacks[c]();
+			callbacks[c] = nil;
 		end
 	end
 	-- print("PLAYER_REGEN_ENABLED:End")
