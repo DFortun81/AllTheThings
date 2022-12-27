@@ -14389,6 +14389,20 @@ app.RecursiveFirstParentWithFieldValue = function(group, field, value)
 		end
 	end
 end
+-- Cleans any groups which are nested under 'Source Ignored' content
+app.CleanSourceIgnoredGroups = function(groups)
+	if groups then
+		local parentCheck = app.RecursiveFirstParentWithField;
+		local refined = {};
+		for _,j in ipairs(groups) do
+			if not parentCheck(j, "sourceIgnored") then
+				tinsert(refined, j);
+			-- else print("  ",j.hash)
+			end
+		end
+		return refined;
+	end
+end
 
 -- Processing Functions
 do
@@ -19151,7 +19165,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			end
 			wipe(self.CurrentMaps);
 			-- Get all results for this map, without any results that have been cloned into Source Ignored groups
-			results = SearchForField("mapID", self.mapID);
+			results = app.CleanSourceIgnoredGroups(SearchForField("mapID", self.mapID));
 			if results then
 				-- app.PrintDebug(#results,"Minilist Results for mapID",self.mapID)
 				-- Simplify the returned groups
