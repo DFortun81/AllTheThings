@@ -176,7 +176,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		ach(16509),	-- Magic Battler of the Dragon Isles
 		ach(16510),	-- Mechanical Battler of the Dragon Isles
 		ach(16511),	-- Undead Battler of the Dragon Isles
-		ach(16512),	-- Family Battler of the Dragon Isles
+		ach(16512, {	-- Family Battler of the Dragon Isles
+			i(200874),	-- Lady Feathersworth (PET!)
+		}),
 	}),
 })));
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {

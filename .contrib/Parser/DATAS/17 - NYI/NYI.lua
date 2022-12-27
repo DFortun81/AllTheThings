@@ -430,39 +430,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 
 		}),
-		filter(BATTLE_PETS, {
-			i(191126),	-- Obsidian Whelpling
-			i(191915),	-- Time-Lost Feral Rabbit
-			i(191929),	-- zzOld - [PH] White Flying Squirrel (REUSE)
-			i(191930),	-- Blue Phoenix Hatchling
-			i(192050),	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
-			i(193587),	-- Time-Lost Duck
-			i(193063),	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
-			i(193068),	-- Time-Lost Treeflitter
-			i(193235),	-- Scarlet Ottuk Pup
-			i(193363),	-- Auburntusk Calf
-			i(193364),	-- Time-Lost Baby Mammoth
-			i(193373),	-- Phoenix Wishwing
-			i(193374),	-- Crimson Phoenix Hatchling
-			i(193377),	-- Time-Lost Phoenix Hatchling
-			i(193380),	-- Pink Salamanther
-			i(193429),	-- Time-Lost Salamanther
-			i(193835),	-- Brightfeather
-			i(193850),	-- Time-Lost Timbertooth
-			i(193851),	-- Purple Frillfish
-			i(193853),	-- Emerald Frillfish
-			i(193854),	-- Blue Vorquin Foal
-			i(193855),	-- Time-Lost Vorquin Foal
-			i(193862),	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
-			i(193863),	-- zzOld - [PH] Dark Baby Vorquin (REUSE)
-			i(193614),	-- Groundshaker
-			i(193620),	-- Time-Lost Slyvern
-			i(193908),	-- Sapphire Crystalspine
-			i(200874),	-- Lady Feathersworth
-
-			i(201838),	-- Snowclaw Cub
-			i(202085),	-- Bugbiter Tortoise
-		}),
 		n(CRAFTABLES, {
 			i(193361),	-- zzOldIncomplete Hunting Necklace
 			i(190318),	-- Perception!
@@ -1824,41 +1791,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(194051),	-- Wildercloth Weapon Upholstery
 			}),
 		}),
-		--[[
-		filter(PETS, {
-			i(191126),	-- Obsidian Whelpling
-			i(191915),	-- [PH] Brown Shaggy Rabbit
-			i(191930),	-- [PH] Blue Baby Phoenix
-			i(191932),	-- Violet Violence
-			i(191936),	-- Secretive Frogduck
-			i(191941),	-- Crystalline Mini-Monster
-			i(193620),	-- [PH] Yellow Baby Fox Wyvern
-			i(193068),	-- [PH] Gold Flying Squirrel
-			i(193235),	-- [PH] Red Baby River Otter
-			i(193363),	-- [PH] Orange Baby Mammoth
-			i(193364),	-- [PH] Yellow Baby Mammoth
-			i(193373),	-- [PH] Orange Baby Phoenix
-			i(193374),	-- [PH] Red Baby Phoenix
-			i(193377),	-- [PH] Yellow Baby Phoenix
-			i(193429),	-- [PH] Orange Baby Salamander
-			i(193380),	-- [PH] Pink Baby Salamander
-			i(193572),	-- [PH] Mech Baby Duck
-			i(193587),	-- [PH] Yellow Duck
-			i(193614),	-- [PH] Blue Baby Thunder Lizard
-			i(193835),	-- [PH] Red Woodpecker
-			i(193850),	-- [PH] Yellow Baby Primal Beaver
-			i(193853),	-- [PH] Green Lionfish
-			i(193851),	-- [PH] Purple Lionfish
-			i(193854),	-- [PH] Blue Baby Vorquin
-			i(193855),	-- [PH] Bronze Baby Vorquin
-			i(193908),	-- [PH] Blue Crystal Porcupine
-			i(192050),	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
-			i(193863),	-- zzOld - [PH] Dark Baby Vorquin (REUSE)
-			i(193063),	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
-			i(193862),	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
-			i(191929),	-- zzOld - [PH] White Flying Squirrel (REUSE)
-		}),
-		--]]
 	}),
 	tier(CLASSIC_TIER, {
 		filter(BAGS, {

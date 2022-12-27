@@ -478,6 +478,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 34.8, 46.6, THE_WAKING_SHORES },
 					["g"] = {
 						i(197738),	-- Flameslinger Rum
+						i(198356),	-- Honey Snack
 						i(201418, {	-- Orb of the Obsidian Scale
 							["cost"] = {
 								{ "i", 202173, 5 },		-- 5x Magmote

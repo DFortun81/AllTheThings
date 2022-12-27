@@ -24,6 +24,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
+			n(187077, {	-- Cymre Brightblade
+				["coord"] = { 22.8, 95.0, THE_WAKING_SHORES },
+				["g"] = {
+					i(202085, {	-- Bugbiter Tortoise (PET!)
+						["cost"] = {
+							{ "i", 202084, 1 },	-- 1xEroded Fossil
+							{ "i", 202082, 1 },	-- 1xPetrified Dragon Egg
+						},
+					}),
+				},
+			}),
 			n(186752, {	-- Firstmate Kaleson
 				["coord"] = { 43.0, 67.4, THE_WAKING_SHORES },
 				["g"] = {

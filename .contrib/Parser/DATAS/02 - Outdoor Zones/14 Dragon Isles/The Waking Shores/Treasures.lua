@@ -42,6 +42,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(202193),	-- Dead Man's Tunic
 				},
 			}),
+			o(385022, {	-- Eroded Fossil
+				["coords"] = {
+					{ 26.0, 94.6, THE_WAKING_SHORES },
+					{ 21.6, 92.1, THE_WAKING_SHORES },
+					{ 22.1, 95.5, THE_WAKING_SHORES },
+					{ 23.4, 96.7, THE_WAKING_SHORES },
+				},
+				-- ["questID"] = ,
+				["g"] = {
+					i(202084),	-- Eroded Fossil
+				},
+			}),
 			o(381355, {	-- Finely Carved Wing
 				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
 				["g"] = {
@@ -150,6 +162,21 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["requireSkill"] = LEATHERWORKING,
 				["g"] = {
 					i(198711),	-- Poacher's Pack
+				},
+			}),
+			o(385021, {	-- Petrified Dragon Egg
+				["coords"] = {
+					{ 33.4, 77.1, THE_WAKING_SHORES },
+					{ 23.0, 88.8, THE_WAKING_SHORES },
+					{ 33.3, 87.2, THE_WAKING_SHORES },
+					{ 40.8, 95.4, THE_WAKING_SHORES },
+					{ 25.7, 96.3, THE_WAKING_SHORES },
+					{ 35.7, 91.6, THE_WAKING_SHORES },
+					{ 21.7, 97.3, THE_WAKING_SHORES },
+				},
+				-- ["questID"] = ,
+				["g"] = {
+					i(202082),	-- Petrified Dragon Egg
 				},
 			}),
 			o(380430, {	-- Tail Fragment
