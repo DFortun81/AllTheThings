@@ -9,6 +9,7 @@ import re
 import sys
 from collections.abc import Coroutine
 from enum import Enum
+from pathlib import Path
 from typing import NamedTuple
 
 from aiohttp.client import ClientSession
@@ -19,7 +20,7 @@ logging.basicConfig(
 )
 
 CUSTOM_OBJECTS_CONST = 9000000
-LOCALES_DIR = "../../../locales/"
+LOCALES_DIR = Path("..", "..", "..", "locales")
 
 
 class LangCode(Enum):
@@ -157,12 +158,12 @@ async def get_localized_names(
 
 async def localize_objects(
     session: ClientSession,
-    filename: str,
+    filepath: Path,
     lang_code: LangCode,
     original_obj_names: dict[int, str] = {},
 ) -> dict[int, str]:
     logging.info(f"Starting {lang_code}!")
-    with open(filename, encoding="utf-8") as file:
+    with open(filepath, encoding="utf-8") as file:
         lines = file.readlines()
 
     todo_dict = get_todo_lines(lines)
@@ -171,7 +172,7 @@ async def localize_objects(
 
     localized_dict = await get_localized_names(session, todo_dict, lang_code)
 
-    for line in fileinput.input(filename, inplace=True, encoding="utf-8"):
+    for line in fileinput.input(filepath, inplace=True, encoding="utf-8"):
         old_line = line
         line_ind = fileinput.filelineno() - 1  # filelineno() indexing starts from 1
         if line_ind in localized_dict:
@@ -197,8 +198,8 @@ async def localize_objects(
     return original_obj_names
 
 
-def sort_objects(filename: str) -> None:
-    with open(filename, encoding="utf-8") as file:
+def sort_objects(filepath: Path) -> None:
+    with open(filepath, encoding="utf-8") as file:
         lines = file.readlines()
     lines_copy = lines.copy()
 
@@ -209,7 +210,7 @@ def sort_objects(filename: str) -> None:
         if "ObjectNames" in line:
             first_obj_line = ind + 2
             ind += 2
-            if "ObjectDB" in filename:
+            if "ObjectDB" in filepath.stem:
                 first_obj_line -= 1
                 ind -= 1
             # logging.info(f"Found beginning at line {first_obj_line}!")
@@ -241,7 +242,7 @@ def sort_objects(filename: str) -> None:
     )
 
     obj_ind = 0
-    for line in fileinput.input(filename, inplace=True, encoding="utf-8"):
+    for line in fileinput.input(filepath, inplace=True, encoding="utf-8"):
         line_ind = fileinput.filelineno() - 1  # filelineno() indexing starts from 1
         if first_obj_line <= line_ind <= last_obj_line:
             line = lines_copy[sorted_list[obj_ind][0]]
@@ -261,9 +262,9 @@ class ObjectsInfo(NamedTuple):
     last_line: int
 
 
-async def get_objects_info(session: ClientSession, filename: str) -> ObjectsInfo:
-    sort_objects(filename)
-    with open(filename, encoding="utf-8") as file:
+async def get_objects_info(session: ClientSession, filepath: Path) -> ObjectsInfo:
+    sort_objects(filepath)
+    with open(filepath, encoding="utf-8") as file:
         lines = file.readlines()
 
     objects: list[Object] = []
@@ -273,7 +274,7 @@ async def get_objects_info(session: ClientSession, filename: str) -> ObjectsInfo
         if "ObjectNames" in line:
             first_obj_line = ind + 2
             ind += 2
-            if "ObjectDB" in filename:
+            if "ObjectDB" in filepath.stem:
                 first_obj_line -= 1
                 ind -= 1
             # logging.info(f"Found beginning at line {first_obj_line}!")
@@ -309,7 +310,7 @@ async def get_objects_info(session: ClientSession, filename: str) -> ObjectsInfo
     # replace all lines because we might have localized new objects
     localized_obj_lines = [i.line for i in objects]
     lines[first_obj_line : last_obj_line + 1] = localized_obj_lines
-    with open(filename, "w", encoding="utf-8") as file:
+    with open(filepath, "w", encoding="utf-8") as file:
         file.writelines(lines)
 
     objects = [obj for obj in objects if obj.name != "GetSpellInfo"]
@@ -344,11 +345,11 @@ async def get_new_object_line(
 
 
 async def sync_objects(
-    session: ClientSession, objects: list[Object], filename: str, lang_code: LangCode
+    session: ClientSession, objects: list[Object], filepath: Path, lang_code: LangCode
 ) -> None:
     logging.info(f"Syncing {lang_code}!")
     localized_objects, first_obj_line, last_obj_line = await get_objects_info(
-        session, filename
+        session, filepath
     )
 
     new_tail = False
@@ -383,9 +384,9 @@ async def sync_objects(
             logging.info(del_obj)
         del localized_objects[localized_ind:]
 
-    with open(filename, encoding="utf-8") as file:
+    with open(filepath, encoding="utf-8") as file:
         contents = file.readlines()
     localized_obj_lines = [i.line for i in localized_objects]
     contents[first_obj_line : last_obj_line + 1] = localized_obj_lines
-    with open(filename, "w", encoding="utf-8") as file:
+    with open(filepath, "w", encoding="utf-8") as file:
         file.writelines(contents)
