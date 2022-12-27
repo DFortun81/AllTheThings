@@ -1122,9 +1122,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
 				}),
 				q(70698, {	-- Researcher Sneakwing
-				["coord"] = { 37.3, 53.9, OHNAHRAN_PLAINS },
+					["coord"] = { 37.3, 53.9, OHNAHRAN_PLAINS },
+					["provider"] = { "n", 196010 },	-- Researcher Sneakwing
 				}),
-				["provider"] = { "n", 196010 },	-- Researcher Sneakwing
 				q(69851, {	-- Ripsaw the Stalker
 					["provider"] = { "n", 193153 },	-- Ripsaw the Stalker
 					["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
