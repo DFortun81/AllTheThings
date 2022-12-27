@@ -149,7 +149,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			}),
 		}),
-		filter(TWO_HANDED_MACES {
+		filter(TWO_HANDED_MACES, {
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.0, {
 					i(189700),	-- 10.0 Dungeon Template - Mace2H - Int - 2 Hand
