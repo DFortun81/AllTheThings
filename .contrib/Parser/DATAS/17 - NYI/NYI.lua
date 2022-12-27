@@ -711,7 +711,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197124),	-- Highland Drake: Swept Horns
 			i(197128),	-- Highland Drake: Curled Back Horns
 			i(197129),	-- Highland Drake: Sleek Horns
-			i(197130),	-- Highland Drake: Stag Horns
 			i(197131),	-- Highland Drake: Hairy Cheek
 			i(197134),	-- Highland Drake: Spiked Legs
 			i(197136),	-- Highland Drake: Taperered Nose

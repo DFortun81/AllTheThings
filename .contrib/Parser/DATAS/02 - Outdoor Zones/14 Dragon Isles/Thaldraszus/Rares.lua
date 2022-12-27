@@ -18,6 +18,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["cost"] = {{"i",197733,4}},	-- 4x Unsustainable Containment Core
 				["g"] = {
 					i(197138),	-- Highland Drake: Striped Pattern
+					i(200299),	-- Strange Clockwork Gladius
 				},
 			}),
 			n(193220, {	-- Broodweaver Araznae <Mother of Spiders>
@@ -70,6 +71,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73881,
 				["g"] = {
 					i(200760),	-- Unstable Arcane Cell
+					i(197130),	-- Highland Drake: Stag Horns
 				},
 			}),
 			n(193273, {	-- Liskron the Dazzling
@@ -102,6 +104,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200257),	-- Decay Infused Branch
 				},
 			}),
+			n(193687, {	-- Mawgor
+				["coord"] = { 61.7, 60.7, THALDRASZUS },
+				["questID"] = 74016,
+				-- ["g"] = {
+
+				-- },
+			}),
 			n(193688, {	-- Phenran
 				-- ["coord"] = { X, Y, THALDRASZUS },
 				-- ["questID"] = 69976,
@@ -133,8 +142,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193143, {	-- Razk'vex the Untamed
-				-- ["coord"] = { X, Y, THALDRASZUS },
-				-- ["questID"] = ,
+				["coord"] = { 50.3, 49.7, THALDRASZUS },
+				["questID"] = 73892,
 				-- ["g"] = {
 
 				-- },
@@ -212,7 +221,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THALDRASZUS, {
 		n(RARES, {
-			q(72050),	-- first kill of Ancient Protector...? maybe
+			q(72050),	-- first kill of Ancient Protector...? maybe. Quest name is Balgar.
 		}),
 	}),
 })));
