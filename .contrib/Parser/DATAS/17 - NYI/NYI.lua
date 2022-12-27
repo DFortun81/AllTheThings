@@ -1512,7 +1512,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201820),	-- Silithus Swiss
 			i(201989),	-- Twisted Heart
 			i(202062),	-- Ash Feather
-			i(202072),	-- Frigid Floe Fish
 			i(202073),	-- Calamitous Carp
 			i(202074),	-- Kingfin, the Wise Whiskerfish
 			i(202107),	-- Shadowscrawled Coin
@@ -1927,7 +1926,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200116),	-- Everlasting Horn of Lavaswimming (TOY!)
 			i(200636),	-- Primal Invocation Quintessence (TOY!)
 			i(201435),	-- Shuffling Sands (TOY!)
-			i(202042),	-- Aquatic Shades (TOY!)
 			i(200926),	-- Compendium of Love (TOY!)
 			i(201933),	-- Black Dragon's Challenge Dummy (TOY!)
 		}),

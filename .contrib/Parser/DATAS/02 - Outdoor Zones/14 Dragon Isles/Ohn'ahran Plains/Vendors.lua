@@ -54,6 +54,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(201736),	-- Technique: Cliffside Wylderdrake: Steel and Yellow Armor (RECIPE!)
 							i(201737),	-- Technique: Highland Drake: Steel and Yellow Armor (RECIPE!)
 							i(201739),	-- Technique: Windborne Velocidrake: Steel and Orange Armor (RECIPE!)
+							i(202042),	-- Aquatic Shades (TOY!)
 						},
 					}),
 				},

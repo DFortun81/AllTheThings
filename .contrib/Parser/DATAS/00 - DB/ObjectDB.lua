@@ -2691,6 +2691,7 @@ _.ObjectNames = {
 	[382325] = "Onyx Gem Cluster",
 	[383625] = "Case of Fresh Gleamfish",
 	[384405] = "Half-Boiled Fish",
+	[385001] = "Empty Fish Barrel",
 	[500000] = "Inspiration Catalyst Console",	-- Fake ID while waiting
 	[999111] = "Amber Gem Cluster",
  	[9962198] = "Outcast's Makeshift Muckpool",
