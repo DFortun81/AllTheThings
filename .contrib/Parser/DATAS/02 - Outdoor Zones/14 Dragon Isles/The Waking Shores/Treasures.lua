@@ -81,6 +81,27 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(202019),	-- Golden Dragon Goblet (TOY!)
 				},
 			}),
+			o(378820, {	-- Popfizz Punch
+				["coord"] = { 39.30, 38.32, THE_WAKING_SHORES },
+				--["questID"] = ???,
+				["g"] = {
+					i(197737),	-- Popfizz Punch
+				},
+			}),
+			o(378054, {	-- Riptide Brew
+				["coord"] = { 62.95, 79.77, THE_WAKING_SHORES },
+				--["questID"] = ???,
+				["g"] = {
+					i(195543),	-- Riptide Brew
+				},
+			}),
+			o(379297, {	-- Slam Bam Swill
+				["coord"] = { 46.91, 30.68, THE_WAKING_SHORES },
+				--["questID"] = ???,
+				["g"] = {
+					i(198045),	-- Slam Bam Swill
+				},
+			}),
 			o(381153, {	-- Ruby Gem Cluster
 				["coord"] = { 61.3, 70.8, THE_WAKING_SHORES },
 				-- ["questID"] = 70598,

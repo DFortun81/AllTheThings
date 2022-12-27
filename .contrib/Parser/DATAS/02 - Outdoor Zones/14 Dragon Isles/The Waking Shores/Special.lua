@@ -42,6 +42,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(195881),	-- Recipe: Charred Hornswog Steaks (RECIPE!)
 				},
 			}),
+			i(198044, {	-- Whirlwind Wine
+				["crs"] = {
+					187494,	-- Rampaging Wind
+				},
+				["cost"] = { { "i", 198047, 1 }, },	-- 1x Kul Tiran Red
+			}),
 		}),
 	}),
 })));

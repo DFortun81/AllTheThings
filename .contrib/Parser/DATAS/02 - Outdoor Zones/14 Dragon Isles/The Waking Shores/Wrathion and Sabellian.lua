@@ -477,6 +477,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				n(193310, {	-- Dealer Vexil <Food and Drink>
 					["coord"] = { 34.8, 46.6, THE_WAKING_SHORES },
 					["g"] = {
+						i(197738),	-- Flameslinger Rum
 						i(201418, {	-- Orb of the Obsidian Scale
 							["cost"] = {
 								{ "i", 202173, 5 },		-- 5x Magmote
@@ -633,6 +634,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							},
 						}),
 						i(201840),	-- Sturdy Obsidian Glasses
+					},
+				}),
+				n(188349, {	-- Outfitter Tipech <Food and Drink>
+					["coord"] = { 25.6, 55.0, THE_WAKING_SHORES },
+					["g"] = {
+						i(198043),	-- Stealthy Elven Port
+					},
+				}),
+				n(189604, {	-- Provisioner Ojito <Supplies>
+					["coord"] = { 34.4, 61.2, THE_WAKING_SHORES },
+					["g"] = {
+						i(198043),	-- Stealthy Elven Port
 					},
 				}),
 				n(188623, {	-- Samia Inkling

@@ -1260,13 +1260,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "n", 192662 },
 				["coord"] = { 20.1, 39.5, THE_WAKING_SHORES },
 				["cost"] = {
-					{ "i", 195543, 1 },	-- Riptide Brew
-					{ "i", 197737, 1 },	-- Popfizz Punch
-					{ "i", 197738, 1 },	-- Flameslinger Rum
-					{ "i", 197739, 1 },	-- Happy Trigger Sour
-					{ "i", 198045, 1 },	-- Slam Bam Swill
-					{ "i", 198043, 1 },	-- Stealthy Elven Port
-					{ "i", 198044, 1 },	-- Whirlwind Wine
+					{ "i", 195543, 1 },	-- 1x Riptide Brew
+					{ "i", 197737, 1 },	-- 1x Popfizz Punch
+					{ "i", 197738, 1 },	-- 1x Flameslinger Rum
+					{ "i", 197739, 1 },	-- 1x Happy Trigger Sour
+					{ "i", 198045, 1 },	-- 1x Slam Bam Swill
+					{ "i", 198043, 1 },	-- 1x Stealthy Elven Port
+					{ "i", 198044, 1 },	-- 1x Whirlwind Wine
 				},
 				["g"] = {
 					i(198622),	-- Spyragos (PET!)

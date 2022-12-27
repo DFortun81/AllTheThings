@@ -10,6 +10,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(199900),	-- Secondhand Survery Tools
 				},
 			}),
+			n(186752, {	-- Firstmate Kaleson
+				["coord"] = { 43.0, 67.4, THE_WAKING_SHORES },
+				["g"] = {
+					i(197739),	-- Happy Trigger Sour
+				},
+			}),
 			n(189207, {	-- Griftah
 				["coord"] = { 25.6, 54.3, THE_WAKING_SHORES },
 				["g"] = {
@@ -24,6 +30,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(199177),	-- Ash Feather Amulet
 					i(74918),	-- Problem Solving Pendant
 					i(201410),	-- Powerful Purple Thing
+				},
+			}),
+			n(186454, {	-- Kora Fullsails <Food and Provisions>
+				["coord"] = { 43.0, 67.2, THE_WAKING_SHORES },
+				["g"] = {
+					i(198047),	-- Kul Tiran Red
 				},
 			}),
 			n(191135, {	-- Yries Lightfingers
