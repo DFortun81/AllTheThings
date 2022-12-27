@@ -921,7 +921,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["collectible"] = false,
 				["g"] = {
 					q(71024, {	-- Chaos and Commotion
-						["sourceQuests"] = { 66244 },	-- To Valdrakken
+						["sourceQuests"] = { 66252 },	-- Reporting In
 						["provider"] = { "n", 189842 },	-- Captain Drine
 						["coord"] = { 56.0, 40.0, VALDRAKKEN },
 					}),

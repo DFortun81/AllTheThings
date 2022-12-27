@@ -270,6 +270,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 195924 },	-- Maiden of Inspiration
 				["coord"] = { 66.3, 55.3, VALDRAKKEN },
 			}),
+			-- In Tyr's Footsteps chapter 4
+			q(70650, {	-- In Tyr's Footsteps: The Waking Shores
+				["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
+				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+				["coord"] = { 84.3, 53.5, VALDRAKKEN },
+			})
 		}),
 		prof(ALCHEMY, sharedData({
 			["requireSkill"] = ALCHEMY,

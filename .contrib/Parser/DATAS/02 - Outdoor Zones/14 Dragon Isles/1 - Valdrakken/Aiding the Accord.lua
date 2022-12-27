@@ -89,9 +89,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
-
-		-- q(71243),	-- Weekly Quest?
-
-		-- q(72892),	-- After "Aiding the Accord" series
+		q(71243),	-- Weekly Quest?
+		q(72892),	-- After "Aiding the Accord" series
 	}),
 }));

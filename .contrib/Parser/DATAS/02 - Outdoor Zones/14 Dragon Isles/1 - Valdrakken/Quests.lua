@@ -269,12 +269,22 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
 				}),
+				q(71026, {	-- Against Overwhelming Odds
+					["provider"] = { "n", 196191 },	-- Malicia
+					["coord"] = { 43.4, 42.5, VALDRAKKEN },
+					["isWeekly"] = true,
+				}),
 				q(72166, {	-- Proving in Battle
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
 				}),
 				q(72167, {	-- Proving in War
+					["provider"] = { "n", 196191 },	-- Malicia
+					["coord"] = { 43.4, 42.5, VALDRAKKEN },
+					["isWeekly"] = true,
+				}),
+				q(72168, {	-- Proving in Skirmishes
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
@@ -290,6 +300,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["isWeekly"] = true,
 				}),
 				q(72649, {	-- Sparks of Life: Thaldraszus
+					["provider"] = { "n", 199393 },	-- Keenu
+					["coord"] = { 42.2, 40.7, VALDRAKKEN },
+					["isWeekly"] = true,
+				}),
+				q(72649, {	-- Sparks of Life: Ohn'ahran Plains
 					["provider"] = { "n", 199393 },	-- Keenu
 					["coord"] = { 42.2, 40.7, VALDRAKKEN },
 					["isWeekly"] = true,
@@ -313,6 +328,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(67059),	-- triggered after 'Delights to Delve For' (67066)
 		q(67060),	-- triggered after 'Navigating the Leapmaize' (67067)
 		q(67061),	-- triggered after 'Anything But a Breeze' (67068)
+		q(72010),	-- triggered after 'What a Long, Sweet Trip It's Been' (67071)
 		q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel
 	}),
 }));
