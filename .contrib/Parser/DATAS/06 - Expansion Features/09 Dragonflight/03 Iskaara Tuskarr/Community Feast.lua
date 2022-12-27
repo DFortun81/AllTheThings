@@ -8,6 +8,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			["isWeekly"] = true,
 			["g"] = {
 				i(200095, {	-- Supply-Laden Soup Pot
+					i(198131),	-- Recipe: Gral's Devotion (RECIPE!)
+					i(198129),	-- Recipe: Gral's Reverence (RECIPE!)
+					i(198130),	-- Recipe: Gral's Veneration (RECIPE!)
+				}),
+				i(200095, {	-- Supply-Laden Soup Pot
 					["sym"] = {
 						{"select", "mapID",
 							DRAGON_ISLES,
@@ -40,11 +45,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							i(200163),	-- Ring of Embers
 						},
 					}),
-				}),
-				n(REWARDS, {
-					i(198131),	-- Recipe: Gral's Devotion (RECIPE!)
-					i(198129),	-- Recipe: Gral's Reverence (RECIPE!)
-					i(198130),	-- Recipe: Gral's Veneration (RECIPE!)
 				}),
 			},
 		})
