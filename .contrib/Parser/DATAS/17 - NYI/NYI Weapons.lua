@@ -4,6 +4,194 @@
 -- Everything in this file hasn't been implemented yet.
 
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+	n(WEAPONS, {
+		filter(BOWS, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189689),	-- 10.0 Dungeon Template - Bows - Ranged
+					i(189127),	-- 10.0 QRP Template <Descriptor> Longbow
+				}),
+			}),
+		}),
+		filter(CROSSBOWS, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189690),	-- 10.0 Dungeon Template - Crossbow - RangedRight
+					i(189128),	-- 10.0 QRP Template <Descriptor> Crossbow
+				}),
+			}),
+		}),
+		filter(DAGGERS, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189680),	-- 10.0 Dungeon Template - Dagger - Agi - Weapon
+					i(189679),	-- 10.0 Dungeon Template - Dagger - Int - Weapon
+					i(189043),	-- 10.0 End Game Template <Descriptor> Kris
+					i(189045),	-- 10.0 End Game Template <Descriptor> Shank
+					i(189111),	-- 10.0 QRP Template <Descriptor> Dagger
+					i(189112),	-- 10.0 QRP Template <Descriptor> Dagger
+				}),
+			}),
+		}),
+		n(-57, {	-- Fishing Poles
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(199898),	-- Iskaara Fishing Pole
+				}),
+			}),
+		}),
+		filter(FIST_WEAPONS, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189699),	-- 10.0 Dungeon Template - FistWeapon - Weapon
+					i(189137),	-- 10.0 QRP Template <Descriptor> Fist
+				}),
+			}),
+		}),
+		filter(GUNS, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189675),	-- 10.0 Dungeon Template - Guns - RangedRight
+					i(189042),	-- 10.0 End Game Template <Descriptor> Gun
+					i(189107),	-- 10.0 QRP Template <Descriptor> Gun
+				}),
+			}),
+		}),
+		filter(HELD_IN_OFF_HAND, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189672),	-- 10.0 Dungeon Template - Generic - Holdable
+					i(189040),	-- 10.0 End Game Template <Descriptor> Offhand
+					i(189104),	-- 10.0 QRP Template <Descriptor> Offhand
+				}),
+			}),
+		}),
+		filter(ONE_HANDED_AXES, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189692),	-- 10.0 Dungeon Template - Axe1H - Agi - Weapon
+					i(189693),	-- 10.0 Dungeon Template - Axe1H - Int - Weapon
+					i(189691),	-- 10.0 Dungeon Template - Axe1H - Str - Weapon
+					i(189129),	-- 10.0 QRP Template <Descriptor> Axe
+					i(189130),	-- 10.0 QRP Template <Descriptor> Axe
+					i(189131),	-- 10.0 QRP Template <Descriptor> Axe
+				}),
+			}),
+		}),
+		filter(ONE_HANDED_MACES, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189688),	-- 10.0 Dungeon Template - Mace1H - Agi - Weapon
+					i(189694),	-- 10.0 Dungeon Template - Mace1H - Int - Weapon
+					i(189696),	-- 10.0 Dungeon Template - Mace1H - Str - Weapon
+					i(189051),	-- 10.0 End Game Template <Descriptor> Cudgel
+					i(189052),	-- 10.0 End Game Template <Descriptor> Cudgel
+					i(189121),	-- 10.0 QRP Template <Descriptor> Mace
+					i(189132),	-- 10.0 QRP Template <Descriptor> Mace
+					i(189134),	-- 10.0 QRP Template <Descriptor> Mace
+				}),
+			}),
+		}),
+		filter(ONE_HANDED_SWORDS, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189681),	-- 10.0 Dungeon Template - Sword1H - Agi - Weapon
+					i(189695),	-- 10.0 Dungeon Template - Sword1H - Int - Weapon
+					i(189677),	-- 10.0 Dungeon Template - Sword1H - Str -Weapon
+					i(189047),	-- 10.0 End Game Template <Descriptor> Blade
+					i(189046),	-- 10.0 End Game Template <Descriptor> Sword
+					i(189109),	-- 10.0 QRP Template <Descriptor> Sword
+					i(189113),	-- 10.0 QRP Template <Descriptor> Sword
+					i(189133),	-- 10.0 QRP Template <Descriptor> Sword
+					i(200995),	-- Obsidian Soldier's Cutlass
+				}),
+			}),
+		}),
+		filter(POLEARMS, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189703),	-- 10.0 Dungeon Template - Polearms - Agi - 2 Hand
+					i(189678),	-- 10.0 Dungeon Template - Polearms - Int - 2 Hand
+					i(189054),	-- 10.0 End Game Template <Descriptor> Halberd
+					i(189041),	-- 10.0 End Game Template <Descriptor> Polearm
+					i(189110),	-- 10.0 QRP Template <Descriptor> Staff
+					i(189141),	-- 10.0 QRP Template <Descriptor> Staff
+				}),
+			}),
+		}),
+		filter(SHIELDS, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189671),	-- 10.0 Dungeon Template - Shield - Shield
+					i(189039),	-- 10.0 End Game Template <Descriptor> Shield
+					i(189103),	-- 10.0 QRP Template <Descriptor> Shield
+				}),
+			}),
+		}),
+		filter(STAVES, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189674),	-- 10.0 Dungeon Template - Staff - Agi - 2 Hand
+					i(189687),	-- 10.0 Dungeon Template - Staff - Int - 2 Hand
+					i(189056),	-- 10.0 End Game Template <Descriptor> Staff
+					i(189053),	-- 10.0 End Game Template <Descriptor> Stave
+					i(189106),	-- 10.0 QRP Template <Descriptor> Staff
+					i(189120),	-- 10.0 QRP Template <Descriptor> Staff
+					i(197806),	-- 10.0 Rare Reward TBD - Staff_2H_Titan_C_01 - Staff - Int
+				}),
+			}),
+		}),
+		filter(TWO_HANDED_AXES, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189697),	-- 10.0 Dungeon Template - Axe2H - Str - 2 Hand
+					i(189135),	-- 10.0 QRP Template <Descriptor> Axe
+				}),
+			}),
+		}),
+		filter(TWO_HANDED_MACES {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189700),	-- 10.0 Dungeon Template - Mace2H - Int - 2 Hand
+					i(189673),	-- 10.0 Dungeon Template - Mace2H - Str - 2 Hand
+					i(189048),	-- 10.0 End Game Template <Descriptor> Great Mace
+					i(189044),	-- 10.0 End Game Template <Descriptor> Mace
+					i(189138),	-- 10.0 QRP Template <Descriptor> Greatmace
+					i(189105),	-- 10.0 QRP Template <Descriptor> Mace
+					i(197796),	-- 10.0 Rare Reward TBD - Mace2H - Str - 2 Hand
+				}),
+			}),
+		}),
+		filter(TWO_HANDED_SWORDS, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189701),	-- 10.0 Dungeon Template - Sword2H - Int - 2 Hand
+					i(189698),	-- 10.0 Dungeon Template - Sword2H - Str - 2 Hand
+					i(189136),	-- 10.0 QRP Template <Descriptor> Greatsword
+					i(189139),	-- 10.0 QRP Template <Descriptor> Greatsword
+				}),
+			}),
+		}),
+		filter(WANDS, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189702),	-- 10.0 Dungeon Template - Wand - RangedRight
+					i(199932),	-- 10.0 Enchanting - Weapon - Wand 1
+					i(199933),	-- 10.0 Enchanting - Weapon - Wand 2
+					i(189140),	-- 10.0 QRP Template <Descriptor> Wand
+				}),
+			}),
+		}),
+		filter(WARGLAIVES, {
+			tier(DF_TIER, {
+				tier(DF_TIER, 0.0, {
+					i(189676),	-- 10.0 Dungeon Template - Warglaives - Weapon
+					i(189057),	-- 10.0 End Game Template <Descriptor> Warglaive
+					i(189108),	-- 10.0 QRP Template <Descriptor> Glaive
+				}),
+			}),
+		}),
+	}),
 	tier(CLASSIC_TIER, {
 		n(WEAPONS, {
 			i(13262),	-- Ashbringer

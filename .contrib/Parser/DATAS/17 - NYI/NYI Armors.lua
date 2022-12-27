@@ -2068,6 +2068,290 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 	}),
 	tier(DF_TIER, {
-
+		n(ARMOR, {
+			n(BACK, {
+				tier(DF_TIER, 0.0, {
+					i(189669),	-- 10.0 Dungeon Template - Generic - Cloak
+					i(189061),	-- 10.0 End Game Template <Descriptor> Shawl
+					i(192038),	-- 10.0 PH Dragonscale Expedition Shawl
+					i(189102),	-- 10.0 QRP Template <Descriptor> Cloak
+					i(189101),	-- 10.0 QRP Template <Descriptor> Shroud
+					i(189622),	-- 10.0 Raid Template - Generic - Cloak
+					i(189006),	-- 10.0 Zone Uncommon Template <Descriptor> Cape
+				}),
+			}),
+			cl(DRUID, {
+				tier(DF_TIER, 0.0, {
+					i(198145),	-- Copy Bracers of the druid name PH
+					i(198144),	-- Copy Chestguard of the druid name PH
+					i(198147),	-- Copy Cincture of the druid name PH
+					i(198149),	-- Copy Footwraps of the druid name PH
+					i(198148),	-- Copy Handwraps of the druid name PH
+					i(198142),	-- Copy Headpiece of the druid name PH
+					i(198143),	-- Copy Leggings of the druid name PH
+					i(198146),	-- Copy Shoulderpads of the druid name PH
+					i(198150),	-- Copy Wrap of the druid name PH
+				}),
+			}),
+			filter(CLOTH, {
+				tier(DF_TIER, 0.0, {
+					i(189683),	-- 10.0 Dungeon Template - Cloth - Feet
+					i(189641),	-- 10.0 Dungeon Template - Cloth - Hand
+					i(189643),	-- 10.0 Dungeon Template - Cloth - Head
+					i(189647),	-- 10.0 Dungeon Template - Cloth - Legs
+					i(189635),	-- 10.0 Dungeon Template - Cloth - Robe
+					i(189652),	-- 10.0 Dungeon Template - Cloth - Shoulder
+					i(189655),	-- 10.0 Dungeon Template - Cloth - Waist
+					i(189658),	-- 10.0 Dungeon Template - Cloth - Wrist
+					i(189012),	-- 10.0 End Game Template <Descriptor> Cord
+					i(189010),	-- 10.0 End Game Template <Descriptor> Cowl
+					i(189013),	-- 10.0 End Game Template <Descriptor> Cuffs
+					i(189009),	-- 10.0 End Game Template <Descriptor> Handwraps
+					i(189011),	-- 10.0 End Game Template <Descriptor> Leggings
+					i(189008),	-- 10.0 End Game Template <Descriptor> Sandals
+					i(189038),	-- 10.0 End Game Template <Descriptor> Shoulderpads
+					i(189007),	-- 10.0 End Game Template <Descriptor> Vestment
+					i(189116),	-- 10.0 QRP Template <Descriptor> Feet
+					i(189070),	-- 10.0 QRP Template <Descriptor> Gloves
+					i(189072),	-- 10.0 QRP Template <Descriptor> Hood
+					i(189076),	-- 10.0 QRP Template <Descriptor> Leggings
+					i(189081),	-- 10.0 QRP Template <Descriptor> Mantle
+					i(189084),	-- 10.0 QRP Template <Descriptor> Sash
+					i(189064),	-- 10.0 QRP Template <Descriptor> Vestments
+					i(189087),	-- 10.0 QRP Template <Descriptor> Wraps
+					i(189595),	-- 10.0 Raid Template - Cloth - Chest
+					i(189592),	-- 10.0 Raid Template - Cloth - Feet
+					i(189617),	-- 10.0 Raid Template - Cloth - Hand
+					i(189616),	-- 10.0 Raid Template - Cloth - Head
+					i(189610),	-- 10.0 Raid Template - Cloth - Legs
+					i(189615),	-- 10.0 Raid Template - Cloth - Shoulder
+					i(189606),	-- 10.0 Raid Template - Cloth - Waist
+					i(189602),	-- 10.0 Raid Template - Cloth - Wrist
+					i(188965),	-- 10.0 Zone Uncommon Template <Descriptor> Cord
+					i(188962),	-- 10.0 Zone Uncommon Template <Descriptor> Handwraps
+					i(188963),	-- 10.0 Zone Uncommon Template <Descriptor> Hood
+					i(188964),	-- 10.0 Zone Uncommon Template <Descriptor> Leggings
+					i(188961),	-- 10.0 Zone Uncommon Template <Descriptor> Sandals
+					i(188991),	-- 10.0 Zone Uncommon Template <Descriptor> Shoulderpads
+					i(188960),	-- 10.0 Zone Uncommon Template <Descriptor> Vestment
+					i(188966),	-- 10.0 Zone Uncommon Template <Descriptor> Wristwraps
+				}),
+			}),
+			filter(LEATHER, {
+				tier(DF_TIER, 0.0, {
+					i(189638),	-- 10.0 Dungeon Template - Leather - Chest
+					i(189685),	-- 10.0 Dungeon Template - Leather - Feet
+					i(189639),	-- 10.0 Dungeon Template - Leather - Hand
+					i(189645),	-- 10.0 Dungeon Template - Leather - Head
+					i(189649),	-- 10.0 Dungeon Template - Leather - Legs
+					i(189650),	-- 10.0 Dungeon Template - Leather - Shoulder
+					i(189657),	-- 10.0 Dungeon Template - Leather - Waist
+					i(189661),	-- 10.0 Dungeon Template - Leather - Wrist
+					i(189017),	-- 10.0 End Game Template <Descriptor> Breeches
+					i(189019),	-- 10.0 End Game Template <Descriptor> Bindings
+					i(189037),	-- 10.0 End Game Template <Descriptor> Epaulets
+					i(189015),	-- 10.0 End Game Template <Descriptor> Grips
+					i(189016),	-- 10.0 End Game Template <Descriptor> Helm
+					i(189018),	-- 10.0 End Game Template <Descriptor> Sash
+					i(189036),	-- 10.0 End Game Template <Descriptor> Vest
+					i(189014),	-- 10.0 End Game Template <Descriptor> Waders
+					i(189086),	-- 10.0 QRP Template <Descriptor> Belt
+					i(189090),	-- 10.0 QRP Template <Descriptor> Bindings
+					i(189118),	-- 10.0 QRP Template <Descriptor> Boots
+					i(189078),	-- 10.0 QRP Template <Descriptor> Breeches
+					i(189117),	-- 10.0 QRP Template <Descriptor> Cover
+					i(189068),	-- 10.0 QRP Template <Descriptor> Gloves
+					i(189074),	-- 10.0 QRP Template <Descriptor> Hood
+					i(189079),	-- 10.0 QRP Template <Descriptor> Spaulders
+					i(189067),	-- 10.0 QRP Template <Descriptor> Vest
+					i(189609),	-- 10.0 Raid Template - Leather - Chest
+					i(189621),	-- 10.0 Raid Template - Leather - Feet
+					i(189608),	-- 10.0 Raid Template - Leather - Hand
+					i(189593),	-- 10.0 Raid Template - Leather - Head
+					i(189599),	-- 10.0 Raid Template - Leather - Legs
+					i(189620),	-- 10.0 Raid Template - Leather - Shoulder
+					i(189601),	-- 10.0 Raid Template - Leather - Waist
+					i(189614),	-- 10.0 Raid Template - Leather - Wrist
+					i(188971),	-- 10.0 Zone Uncommon Template <Descriptor> Belt
+					i(188972),	-- 10.0 Zone Uncommon Template <Descriptor> Bindings
+					i(188970),	-- 10.0 Zone Uncommon Template <Descriptor> Breeches
+					i(188990),	-- 10.0 Zone Uncommon Template <Descriptor> Epaulets
+					i(188968),	-- 10.0 Zone Uncommon Template <Descriptor> Grips
+					i(188969),	-- 10.0 Zone Uncommon Template <Descriptor> Helm
+					i(188967),	-- 10.0 Zone Uncommon Template <Descriptor> Treads
+					i(188989),	-- 10.0 Zone Uncommon Template <Descriptor> Tunic
+				}),
+			}),
+			filter(MAIL, {
+				tier(DF_TIER, 0.0, {
+					i(189637),	-- 10.0 Dungeon Template - Mail - Chest
+					i(189684),	-- 10.0 Dungeon Template - Mail - Feet
+					i(189642),	-- 10.0 Dungeon Template - Mail - Hand
+					i(189644),	-- 10.0 Dungeon Template - Mail - Head
+					i(189648),	-- 10.0 Dungeon Template - Mail - Legs
+					i(189653),	-- 10.0 Dungeon Template - Mail - Shoulder
+					i(189656),	-- 10.0 Dungeon Template - Mail - Waist
+					i(189660),	-- 10.0 Dungeon Template - Mail - Wrist
+					i(189060),	-- 10.0 End Game Template <Descriptor> Belt
+					i(189027),	-- 10.0 End Game Template <Descriptor> Bracers
+					i(189020),	-- 10.0 End Game Template <Descriptor> Chainmail
+					i(189026),	-- 10.0 End Game Template <Descriptor> Cinch
+					i(189023),	-- 10.0 End Game Template <Descriptor> Coif
+					i(189024),	-- 10.0 End Game Template <Descriptor> Greaves
+					i(189022),	-- 10.0 End Game Template <Descriptor> Grips
+					i(189025),	-- 10.0 End Game Template <Descriptor> Shoulderguards
+					i(189021),	-- 10.0 End Game Template <Descriptor> Striders
+					i(189085),	-- 10.0 QRP Template <Descriptor> Belt
+					i(189089),	-- 10.0 QRP Template <Descriptor> Bracers
+					i(189071),	-- 10.0 QRP Template <Descriptor> Grips
+					i(189066),	-- 10.0 QRP Template <Descriptor> Hauberk
+					i(189073),	-- 10.0 QRP Template <Descriptor> Helm
+					i(189077),	-- 10.0 QRP Template <Descriptor> Leggings
+					i(189082),	-- 10.0 QRP Template <Descriptor> Monnion
+					i(189597),	-- 10.0 Raid Template - Mail - Chest
+					i(189607),	-- 10.0 Raid Template - Mail - Feet
+					i(189612),	-- 10.0 Raid Template - Mail - Hand
+					i(189604),	-- 10.0 Raid Template - Mail - Head
+					i(189611),	-- 10.0 Raid Template - Mail - Legs
+					i(189605),	-- 10.0 Raid Template - Mail - Shoulder
+					i(189590),	-- 10.0 Raid Template - Mail - Waist
+					i(189591),	-- 10.0 Raid Template - Mail - Wrist
+					i(188980),	-- 10.0 Zone Uncommon Template <Descriptor> Bracers
+					i(188973),	-- 10.0 Zone Uncommon Template <Descriptor> Chainmail
+					i(188979),	-- 10.0 Zone Uncommon Template <Descriptor> Cinch
+					i(188975),	-- 10.0 Zone Uncommon Template <Descriptor> Gloves
+					i(188976),	-- 10.0 Zone Uncommon Template <Descriptor> Helm
+					i(188977),	-- 10.0 Zone Uncommon Template <Descriptor> Leggings
+					i(188978),	-- 10.0 Zone Uncommon Template <Descriptor> Shoulderguards
+					i(188974),	-- 10.0 Zone Uncommon Template <Descriptor> Striders
+					i(191934),	-- TEMP Event Stream TEMP - No Buckle Fleshscale Belt
+				}),
+			}),
+			filter(PLATE, {
+				tier(DF_TIER, 0.0, {
+					i(189636),	-- 10.0 Dungeon Template - Plate - Chest
+					i(189634),	-- 10.0 Dungeon Template - Plate - Feet
+					i(189640),	-- 10.0 Dungeon Template - Plate - Hand
+					i(189682),	-- 10.0 Dungeon Template - Plate - Head
+					i(189646),	-- 10.0 Dungeon Template - Plate - Legs
+					i(189651),	-- 10.0 Dungeon Template - Plate - Shoulder
+					i(189654),	-- 10.0 Dungeon Template - Plate - Waist
+					i(189659),	-- 10.0 Dungeon Template - Plate - Wrist
+					i(189035),	-- 10.0 End Game Template <Descriptor> Armplates
+					i(189029),	-- 10.0 End Game Template <Descriptor> Breastplate
+					i(189031),	-- 10.0 End Game Template <Descriptor> Gauntlets
+					i(189034),	-- 10.0 End Game Template <Descriptor> Girdle
+					i(189028),	-- 10.0 End Game Template <Descriptor> Helm
+					i(189032),	-- 10.0 End Game Template <Descriptor> Legguards
+					i(189033),	-- 10.0 End Game Template <Descriptor> Mantle
+					i(189030),	-- 10.0 End Game Template <Descriptor> Sabatons
+					i(189065),	-- 10.0 QRP Template <Descriptor> ChestPlate
+					i(189115),	-- 10.0 QRP Template <Descriptor> Helm
+					i(189069),	-- 10.0 QRP Template <Descriptor> Gauntlets
+					i(189083),	-- 10.0 QRP Template <Descriptor> Girdle
+					i(189075),	-- 10.0 QRP Template <Descriptor> Legguards
+					i(189063),	-- 10.0 QRP Template <Descriptor> Sabatons
+					i(189080),	-- 10.0 QRP Template <Descriptor> Spaulders
+					i(189092),	-- 10.0 QRP Template <Descriptor> Ring
+					i(189088),	-- 10.0 QRP Template <Descriptor> Vambraces
+					i(197916),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
+					i(197912),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
+					i(197915),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
+					i(197914),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
+					i(197913),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
+					i(197911),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
+					i(197910),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
+					i(197917),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
+					i(189619),	-- 10.0 Raid Template - Plate - Feet
+					i(189594),	-- 10.0 Raid Template - Plate - Hand
+					i(189603),	-- 10.0 Raid Template - Plate - Head
+					i(189596),	-- 10.0 Raid Template - Plate - Chest
+					i(189598),	-- 10.0 Raid Template - Plate - Legs
+					i(189600),	-- 10.0 Raid Template - Plate - Shoulder
+					i(189613),	-- 10.0 Raid Template - Plate - Wrist
+					i(189618),	-- 10.0 Raid Template - Plate - Waist
+					i(188988),	-- 10.0 Zone Uncommon Template <Descriptor> Armplates
+					i(188982),	-- 10.0 Zone Uncommon Template <Descriptor> Breastplate
+					i(188987),	-- 10.0 Zone Uncommon Template <Descriptor> Cincture
+					i(188983),	-- 10.0 Zone Uncommon Template <Descriptor> Footguards
+					i(188984),	-- 10.0 Zone Uncommon Template <Descriptor> Gauntlets
+					i(188981),	-- 10.0 Zone Uncommon Template <Descriptor> Helm
+					i(188985),	-- 10.0 Zone Uncommon Template <Descriptor> Legguards
+					i(188986),	-- 10.0 Zone Uncommon Template <Descriptor> Pauldrons
+					i(195467),	-- zzOld(DNT) Test Belt of Molten Metallic Awesomeness
+				}),
+			}),
+			filter(COSMETIC, {
+				tier(DF_TIER, 0.0, {
+					i(198385),	-- Draconian Garden Pick
+					i(198386),	-- Gardener's Tilling Spork
+					i(198342),	-- Tuskarr Expedition Pack
+				}),
+			}),
+			filter(TABARDS, {
+				tier(DF_TIER, 0.0, {
+					i(194676),	-- Emboldened Dracthyr's Tabard [Lol they changed model]
+				}),
+			}),
+			filter(NECK_F, {
+				tier(DF_TIER, 0.0, {
+					i(189667),	-- 10.0 Dungeon Template - Generic - Neck
+					i(189062),	-- 10.0 End Game Template <Descriptor> Choker
+					i(192039),	-- 10.0 PH Dragonscale Expedition Choker
+					i(189099),	-- 10.0 QRP Template <Descriptor> Pendant
+					i(189100),	-- 10.0 QRP Template <Descriptor> Pendant
+					i(189624),	-- 10.0 Raid Template - Generic - Neck
+					i(189005),	-- 10.0 Zone Uncommon Template <Descriptor> Necklace
+				}),
+			}),
+			filter(FINGER_F, {
+				tier(DF_TIER, 0.0, {
+					i(189662),	-- 10.0 Dungeon Template - Generic - Finger
+					i(189049),	-- 10.0 End Game Template <Descriptor> Band
+					i(189059),	-- 10.0 End Game Template <Descriptor> Band
+					i(189050),	-- 10.0 End Game Template <Descriptor> Signet
+					i(192026),	-- 10.0 PH Dragonscale Expedition Band
+					i(192036),	-- 10.0 PH Dragonscale Expedition Band
+					i(192027),	-- 10.0 PH Dragonscale Expedition Signet
+					i(189093),	-- 10.0 QRP Template <Descriptor> Band
+					i(189091),	-- 10.0 QRP Template <Descriptor> Signet
+					i(189094),	-- 10.0 QRP Template <Descriptor> Signet
+					i(189119),	-- 10.0 QRP Template <Descriptor> Signet
+					i(189623),	-- 10.0 Raid Template - Generic - Finger
+					i(189003),	-- 10.0 Zone Uncommon Template <Descriptor> Band
+					i(189002),	-- 10.0 Zone Uncommon Template <Descriptor> Signet
+				}),
+			}),
+			filter(TRINKET_F, {
+				tier(DF_TIER, 0.0, {
+					i(189666),	-- 10.0 Dungeon Template - Generic - Trinket
+					i(189058),	-- 10.0 End Game Template <Descriptor> Trinket
+					i(192035),	-- 10.0 PH Dragonscale Expedition Trinket
+					i(189096),	-- 10.0 QRP Template <Descriptor> Trinket
+					i(189632),	-- 10.0 Raid Template - AGI - Trinket
+					i(189633),	-- 10.0 Raid Template - INT - Trinket
+					i(189628),	-- 10.0 Raid Template - Healer - Trinket
+					i(189627),	-- 10.0 Raid Template - Int DPS - Trinket
+					i(189625),	-- 10.0 Raid Template - Melee DPS - Trinket
+					i(189630),	-- 10.0 Raid Template - Omni  - Trinket
+					i(189631),	-- 10.0 Raid Template - Physical DPS - Trinket
+					i(189629),	-- 10.0 Raid Template - STR - Trinket
+					i(189626),	-- 10.0 Raid Template - Tank - Trinket
+					i(189004),	-- 10.0 Zone Uncommon Template <Descriptor> Trinket
+					i(192464),	-- Darkmoon Deck: Ysera
+					i(198392),	-- zzOldDarkmoon Binding: Awakened Chill
+					i(198391),	-- zzOldDarkmoon Binding: Inferno
+					i(198393),	-- zzOldDarkmoon Binding: Refreshing Dance
+					i(198394),	-- zzOldDarkmoon Binding: Watcher
+					i(198433),	-- zzOldDarkmoon Deckbox: Awakened Chill
+					i(198434),	-- zzOldDarkmoon Deckbox: Refreshing Dance
+					i(198435),	-- zzOldDarkmoon Deckbox: Watcher
+				}),
+			}),
+			tier(DF_TIER, 0.0, {	-- Unknown
+				i(198531),	-- Peripheral Vision Projectors (TYLER'S TEST DNT)
+				i(198681),	-- Luke Test Belt [DNT]
+			}),
+		}),
 	}),
 }));
