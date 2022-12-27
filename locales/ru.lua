@@ -3413,8 +3413,12 @@ for key,value in pairs({
 	[377899] = "Скрытый заложник рогоплава",	-- Hidden Hornswog Hostage
 	[377900] = "Боевое копье клана Нокхуд",	-- Nokhud Warspear
 	[378010] = "Забытое сокровище драконов",	-- Forgotten Dragon Treasure
+	[378054] = "Отвар быстрины",	-- Riptide Brew
+	[378820] = "Искрометный пунш",	-- Popfizz Punch
+	[378857] = "Потерянный обсидиановый тайник",	-- Lost Obsidian Cache
 	[379290] = "Украшенная узорами статуя",	-- Ornamented Statue
 	[379296] = "Сломанная окантовка",	-- Broken Banding
+	[379297] = "Пойло \"Бадабум\"",	-- Slam Bam Swill
 	[379321] = "Таинственный след лапы",	-- Mysterious Paw Print
 	[380429] = "Золотой коготь",	-- Golden Claw
 	[380430] = "Фрагмент хвоста",	-- Tail Fragment
@@ -3534,9 +3538,13 @@ for key,value in pairs({
 	[381981] = "Сундук Прилива",	-- Chest of the Flood
 	[382029] = "Потревоженная почва",	-- Disturbed Dirt
 	[382166] = "Рубиновый Пир!",	-- The Ruby Feast!
+	[382193] = "Сундук стихий",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Ящик свежих блескорыбок",	-- Case of Fresh Gleamfish
+	[384318] = "Непримечательная закладка",	-- Inconspicuous Bookmark
 	[384405] = "Наполовину сваренная рыба",	-- Half-Boiled Fish
+	[385021] = "Окаменевшее яйцо дракона",	-- Petrified Dragon Egg
+	[385022] = "Размытая окаменелость",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "Самодельная лужа жижи изгоя",	-- Outcast's Makeshift Muckpool

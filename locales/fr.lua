@@ -3421,8 +3421,12 @@ for key,value in pairs({
 	[377899] = "Otage bufflacien caché",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	[378010] = "Trésor draconique oublié",	-- Forgotten Dragon Treasure
+	[378054] = "Bière des baïnes",	-- Riptide Brew
+	[378820] = "Punch moussboum",	-- Popfizz Punch
+	[378857] = "Cache d’obsidienne perdue",	-- Lost Obsidian Cache
 	[379290] = "Statue ornementale",	-- Ornamented Statue
 	[379296] = "Bande brisée",	-- Broken Banding
+	[379297] = "Piquette bam-boum",	-- Slam Bam Swill
 	[379321] = "Trace de patte mystérieuse",	-- Mysterious Paw Print
 	[380429] = "Griffe d’or",	-- Golden Claw
 	[380430] = "Fragment de queue",	-- Tail Fragment
@@ -3542,9 +3546,13 @@ for key,value in pairs({
 	[381981] = "Coffre du déluge",	-- Chest of the Flood
 	[382029] = "Terre retournée",	-- Disturbed Dirt
 	[382166] = "Au Festin rubis !",	-- The Ruby Feast!
+	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Caisse de loupiotes fraîches",	-- Case of Fresh Gleamfish
+	[384318] = "Marque-page discret",	-- Inconspicuous Bookmark
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
+	[385021] = "Œuf de Dragon pétrifié",	-- Petrified Dragon Egg
+	[385022] = "Fossile érodé",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "Tourbière de fortune de paria",	-- Outcast's Makeshift Muckpool
