@@ -2697,6 +2697,7 @@ _.ObjectNames = {
 	[385001] = "Empty Fish Barrel",
 	[385002] = "Eroded Fossil",
 	[385021] = "Petrified Dragon Egg",
+	[385022] = "Eroded Fossil",
 	[500000] = "Inspiration Catalyst Console",	-- Fake ID while waiting
 	[999111] = "Amber Gem Cluster",
  	[9962198] = "Outcast's Makeshift Muckpool",

@@ -2625,6 +2625,7 @@ _.ObjectNames = {
 	[384318] = "Inconspicuous Bookmark",
 	[384405] = "Half-Boiled Fish",
 	[385021] = "Petrified Dragon Egg",
+	[385022] = "Eroded Fossil",
 	[500000] = "Inspiration Catalyst Console",
 	[999111] = "Amber Gem Cluster",
 	[9962198] = "Outcast's Makeshift Muckpool",
