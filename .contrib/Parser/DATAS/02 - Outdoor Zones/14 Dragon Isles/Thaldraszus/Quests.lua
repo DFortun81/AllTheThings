@@ -214,6 +214,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195211),	-- Chromie's Spare Beacon
 						i(195214),	-- Hoursteel Barrier
 						i(195182),	-- Inexorable Separation
+						i(195177),	-- Moment's Notice
+						i(195181),	-- Rapid Fire
 						i(195183),	-- Reach of Years
 						i(195178),	-- Swirling Sand Fists
 						i(195179),	-- Timeways Baton

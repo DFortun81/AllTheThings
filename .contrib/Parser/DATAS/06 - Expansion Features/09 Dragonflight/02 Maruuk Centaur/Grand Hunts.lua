@@ -127,6 +127,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						["g"] = {
 							i(196983),	-- Cliffside Wylderdrake: Maned Jaw (DM!)
 							i(197125),	-- Highland Drake: Coiled Horns (DM!)
+							i(200233),	-- Paradox Saber
+							i(200204),	-- Sandshine Chestplate
 						},
 					}),
 					n(195430, {	-- Molkeej
@@ -315,8 +317,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						["questID"] = 73931,
 						["isDaily"] = true,
 						["g"] = {
+							i(200237),	-- Burnished Lifewarder's Targe
 							i(197105),	-- Highland Drake: Spined Chin (DM!)
-							-- is part of the DF>Global Rare Loottable
 						},
 					}),
 				}),

@@ -943,10 +943,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(197691),	-- Amaa's Golden Mace
 					i(197684),	-- Argali Shearing Blade
 					i(197703),	-- Ceeqa's Toothpick
+					i(197699),	-- Nokhud Skullcrusher
 					i(197677),	-- Plainswalking Stick
 					i(197679),	-- Rockfang Uppercut
+					i(197904),	-- Shikaar Hunting Knife
 					i(197690),	-- Staff of the Windsage
-					i(197699),	-- Nokhud Skullcrusher
 					i(197903),	-- Waterback Culling Axe
 				},
 			}),

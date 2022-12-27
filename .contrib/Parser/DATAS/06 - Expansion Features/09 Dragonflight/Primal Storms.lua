@@ -343,16 +343,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(193644, {	-- Bouldron
 					["coord"] = { 26.2, 75.6, THE_WAKING_SHORES },
 					["questID"] = 73986,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200231),	-- Flaming Stonescale Bulwark
+					},
 				}),
 				n(193645, {	-- Crystalus
 					["coord"] = { 36.1, 36.1, OHNAHRAN_PLAINS },
 					["questID"] = 73989,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200301),	-- Reclaimed Tuskarr Harpoon
+					},
 				}),
 				n(193650, {	-- Emblazion <Progeny of Fire>
 					["coord"] = { 29.6, 53.8, THE_WAKING_SHORES },
@@ -395,9 +395,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(193652, {	-- Grizzlerock
 					["coord"] = { 59.4, 61.6, THALDRASZUS },
 					["questID"] = 73999,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200145),	-- Hilted Monolith
+					},
 				}),
 				n(193648, {	-- Infernum
 					["coord"] = { 58.8, 68.4, THE_AZURE_SPAN },
@@ -409,9 +409,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(193675, {	-- Kain Firebrand
 					["coord"] = { 64.0, 72.2, THE_WAKING_SHORES },
 					["questID"] = 74006,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200155),	-- Haphazardly Welded Protector
+					},
 				}),
 				n(193647, {	-- Karantun
 					["coord"] = { 26.8, 75.4, THE_WAKING_SHORES },
@@ -430,16 +430,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(193677, {	-- Maeleera <First Iceblade>
 					["coord"] = { 48.6, 25.2, THE_AZURE_SPAN },
 					["questID"] = 74009,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200250),	-- Frost Tipped Glaive
+					},
 				}),
 				n(193686, {	-- Neela Firebane
 					["coord"] = { 67.6, 27.0, THE_WAKING_SHORES },
 					-- ["questID"] = ,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200181),	-- Blade of Blazing Torment
+					},
 				}),
 				n(193682, {	-- Rouen Icewind
 					["coord"] = { 61.4, 60.6, THALDRASZUS },

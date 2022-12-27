@@ -65,6 +65,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(202099),	-- Stocked Sack of Hale Herbs
 					i(202101),	-- Topped Trunk of Disenchanted Detritus
 					--
+					i(198151),	-- Cracked Heart in a Bottle++
 					i(194746),	-- Thomas's Empty Bottle
 					i(194714),	-- Miguel's Gift
 					i(198084),	-- Miguel's Gift

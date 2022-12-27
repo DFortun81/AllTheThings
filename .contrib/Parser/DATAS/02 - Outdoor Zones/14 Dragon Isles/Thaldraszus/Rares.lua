@@ -54,9 +54,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193125, {	-- Goremaul the Gluttonous
 				["coord"] = { 53.4, 41.0, THALDRASZUS },
 				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200436),	-- Gorestained Hauberk
+				},
 			}),
 			n(193229, {	-- Henlare
 				["coord"] = { 55.6, 77.4, THALDRASZUS },
@@ -91,16 +91,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["description"] = "From a Time-Lost Portal.",
 				-- ["coord"] = { X, Y, THALDRASZUS },
 				-- ["questID"] = 69882,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200185),	-- Grips of the Everflowing Ocean
+				},
 			}),
 			n(193246, {	-- Matriarch Remalla <Temple Menace>
 				-- ["coord"] = { X, Y, THALDRASZUS },
 				-- ["questID"] = 69883,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200257),	-- Decay Infused Branch
+				},
 			}),
 			n(193688, {	-- Phenran
 				-- ["coord"] = { X, Y, THALDRASZUS },
@@ -113,8 +113,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 57.2, 84.2, THALDRASZUS },
 				["questID"] = 74021,
 				["g"] = {
-					i(200126),	-- Mantle of Copious Chronologies
 					i(200148),	-- A Collection of Me (TOY!)
+					i(200126),	-- Mantle of Copious Chronologies
+					i(200202),	-- Tomorrow's Chains
 				},
 			}),
 			n(193130, {	-- Pleasant Alpha
@@ -157,6 +158,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 74029,
 				["g"] = {
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
+					i(200161),	-- Razorwind Talisman
 				},
 			}),
 			n(191305, {	-- The Great Shellkhan
@@ -193,6 +195,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- ["questID"] = 70947,
 				["g"] = {
 					i(200300),	-- Sack of Looted Treasures
+					i(200291),	-- Waterlogged Racing Grips
 				},
 			}),
 			n(193161, {	-- Woolfang

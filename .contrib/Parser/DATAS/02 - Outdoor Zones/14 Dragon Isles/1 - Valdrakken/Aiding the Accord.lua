@@ -71,6 +71,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							{"select", "mapID",
 								DRAGON_ISLES,
 								THE_WAKING_SHORES,
+								OHNAHRAN_PLAINS,
+								THE_AZURE_SPAN,
 								THALDRASZUS,
 							},
 							{"pop"},

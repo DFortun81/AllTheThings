@@ -137,11 +137,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					186202,	-- Voll
 				},
 				["coord"] = { 42.1, 39.5, THE_WAKING_SHORES },
-				["questID"] = 74003,	
+				["questID"] = 74003,
 				["g"] = {
 					i(200171),	-- Grymheart Blade
-					i(182361),	-- Protector's Molten Cudgel (off Snee and Voll)
-					i(183061),	-- Qalashi War-Helm (off Groth)
+					i(182361),	-- Protector's Molten Cudgel
+					i(183061),	-- Qalashi War-Helm
+					i(200175),	-- Repurposed Anvil
+					i(200243),	-- Titanic Scholar's Finery
 				},
 			}),
 			n(193263, {	-- Helmet Missingway
@@ -201,6 +203,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 82.2, 49.4, THE_WAKING_SHORES },
 				["questID"] = 74017,
 				["g"] = {
+					i(200435),	-- Brackish Breeches
 					i(200203),	-- Repurposed Giant's Thimble
 					i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
 				},

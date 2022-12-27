@@ -584,10 +584,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["g"] = {
 							i(194393),	-- Expedition Guard's Cudgel
 							i(194371),	-- Expedition Guard's Shield
+							i(194379),	-- Field Scout's Longblade
 							i(194386),	-- League Mercenary's Mace
 							i(194416),	-- Titan Lightning Generator
 							i(194372),	-- Vault Guardian's Missive
 							i(194376),	-- Vault Guardian's Poleaxe
+							i(194417),	-- Vault Guard's Talon
 							crit(1, {	-- Beyond the Barrier
 								["achievementID"] = 16401,	-- Sojourner of the Waking Shores
 							}),
@@ -890,12 +892,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "n", 185628 },	-- Ayasanth
 						["coord"] = { 37.4, 46.6, THE_WAKING_SHORES },
 						["g"] = {
+							i(194420),	-- Blacktalon Blade
 							i(194396),	-- Blacktalon Claw
 							i(194397),	-- Darkscale Twinblade
 							i(194395),	-- Doomsayer's Greatsword
 							i(194385),	-- Neltharian Channeler's Rod
 							i(194388),	-- Obsidian Guardian's Cleaver
 							i(194390),	-- Obsidian Spellsplitter
+							i(194387),	-- Obsidian Watcher's Crossbow
 							crit(6, {	-- The Shadow of His Wings
 								["achievementID"] = 16401,	-- Sojourner of the Waking Shores
 							}),

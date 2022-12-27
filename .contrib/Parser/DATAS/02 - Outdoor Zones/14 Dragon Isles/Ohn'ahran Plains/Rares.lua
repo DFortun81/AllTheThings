@@ -82,6 +82,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 87.4, 61.4, OHNAHRAN_PLAINS },
 				["questID"] = 73882,
 				["g"] = {
+					i(200434),	-- Anund's Mana-Singed Amice
 					i(200446),	-- Crystalized Sigil
 				},
 			}),
@@ -93,11 +94,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(193212, {	-- Malsegan
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
+				["coord"] = { 72.2, 44.8, OHNAHRAN_PLAINS },
 				-- ["questID"] = 69871,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200197),	-- Armoredon Herding Crook
+				},
 			}),
 			n(193173, {	-- Mikrin of the Raging Winds
 				["coord"] = { 62.8, 79.8, OHNAHRAN_PLAINS },
@@ -160,9 +161,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193227, {	-- Ronsak the Decimator
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = 69878,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200308),	-- Rellen's Legacy
+				},
 			}),
 			n(193153, {	-- Ripsaw the Stalker
 				["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
@@ -178,9 +179,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193215, {	-- Scaleseeker Mezeri
 				["coord"] = { 20.3, 43.5, OHNAHRAN_PLAINS },
 				["questID"] = 74073,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200735),	-- Magically Magical Faerie Flower
+				},
 			}),
 			n(193136, {	-- Scav Notail
 				["coord"] = { 50.1, 75.2, OHNAHRAN_PLAINS },
@@ -195,6 +196,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 62.7, 12.8, OHNAHRAN_PLAINS },
 				["questID"] = 73894,
 				["g"] = {
+					i(200154),	-- Rubyscale Band
 					i(200875),	-- Seeker's Bands
 				},
 			}),
@@ -206,6 +208,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(196996),	-- Cliffside Wylderdrake: Branched Horns (DM!)
 					i(200437),	-- Dreamsong Censer
 					i(197115),	-- Highland Drake: Thorned Jaw (DM!)
+					i(200444),	-- Mantle of the Gatekeeper
 				},
 			}),
 			n(192949, {	-- Skaara
@@ -216,6 +219,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 22.1, 38.8, OHNAHRAN_PLAINS },
 				["questID"] = 73896,
 				["g"] = {
+					i(200297),	-- Hastily Cobbled Maul
+					i(200689),	-- Rimetalon Band
 					i(200234),	-- Vrak's Embossed Aegis
 				},
 			}),
@@ -296,6 +301,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 31.5, 64.0, OHNAHRAN_PLAINS },
 				-- ["questID"] = 70177,
 				["g"] = {
+					i(200314),	-- Skyspeaker's Envelope
+					i(200306),	-- Tempest Shawl
 					i(200879, {	-- Zenet Egg
 						i(198825),	-- Zenet Hatchling (MOUNT!)
 					}),

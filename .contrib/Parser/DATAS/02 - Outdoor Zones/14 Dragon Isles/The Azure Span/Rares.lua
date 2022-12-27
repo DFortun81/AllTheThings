@@ -62,9 +62,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(194392, {	-- Brackle
 				["coord"] = { 8.7, 48.6, THE_AZURE_SPAN },
 				["questID"] = 73871,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200448),	-- Abyssal Ward
+					i(200151),	-- Seamist Blade
+				},
 			}),
 			n(186962, {	-- Cascade
 				["coord"] = { 23.7, 33.7, THE_AZURE_SPAN },
@@ -147,9 +148,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193269, {	-- Grumbletrunk
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
 				-- ["questID"] = 69892,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200206),	-- Behemoth Slayer Greatbow
+				},
 			}),
 			n(197356, {	-- High Shaman Rotknuckle
 				["coord"] = { 16.2, 33.6, THE_AZURE_SPAN },
@@ -284,9 +285,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["description"] = "Collect Singing Fragments.",
 				["coord"] = { 70.2, 25.2, THE_AZURE_SPAN },
 				["questID"] = 74087,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200549),	-- Restored Titan Artifact
+				},
 			}),
 			n(193223, {	-- Vakril <The Strongest Tuskarr?>
 				["coord"] = { 17.0, 41.3, THE_AZURE_SPAN },

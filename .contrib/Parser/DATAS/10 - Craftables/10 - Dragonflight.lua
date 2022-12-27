@@ -2157,6 +2157,9 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(193932),	-- Infurious Wildercloth Bolt+
 			i(193933),	-- Infurious Wildercloth Bolt++
 			i(193934),	-- Infurious Wildercloth Bolt+++
+			i(192095),	-- Spool of Wilderthread+
+			i(192096),	-- Spool of Wilderthread++
+			i(192097),	-- Spool of Wilderthread+++
 			i(193929),	-- Vibrant Wildercloth Bolt+
 			i(193930),	-- Vibrant Wildercloth Bolt++
 			i(193931),	-- Vibrant Wildercloth Bolt+++

@@ -223,14 +223,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191826),	-- Obsidian Dracthyr Battlegear Belt
 			i(191827),	-- Obsidian Dracthyr Battlegear Bracers
 			i(191828),	-- Obsidian Dracthyr Battlegear Cover
-			-- NON SET THINGS
-			i(191942),	-- Belloc's Hat
-			-- Waking Shore Quest Rewards?
-			i(194379),	-- Field Scout's Longblade
-			i(194387),	-- Obsidian Watcher's Crossbow
+			i(191942),	-- Belloc's Hat [Added SpellIDs regarding this.. Belloc also lost his hat... In Waking Shores]
 			i(194398),	-- Crumbling Watcher's Stone (NYI)
-			i(194417),	-- Vault Guard's Talon
-			i(194420),	-- Blacktalon Blade
 			filter(COSMETIC, {
 				i(193069),	-- Climber's Pack
 				i(191647),	-- Tuskarr Fishing Pole
@@ -372,78 +366,69 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(190909),	-- Ruby Felfire Splitblade
 				i(190910),	-- Ruby Felfire Bulwark
 			}),
+			-- This is usually from a quest at Renown Level Max-1.... Hopefully someone add them soon
 			i(198730),	-- Dragonscale Expedition Tabard
 			i(198731),	-- Iskaara Tuskarr Tabard
 			i(198732),	-- Valdrakken Accord Tabard
+			-- I Dont Think These has been added yet...
 			i(199665),	-- Spiked Obsidian Spaulders
 			i(199666),	-- Spiked Azure Spaulders
 			i(199667),	-- Spiked Bronze Spaulders
 			i(199668),	-- Spiked Emerald Spaulders
-			i(200154),	-- Rubyscale Band
-			i(200161),	-- Razorwind Talisman
-			i(200185),	-- Grips of the Everflowing Ocean
-			i(200202),	-- Tomorrow's Chains
-			i(200204),	-- Sandshine Chestplate
-			i(200228),	-- Protoscale Pauldrons
+			-- These are probably from rares... We just still missing Information
 			i(200230),	-- Terrorclaw Shoulderplates
-			i(200243),	-- Titanic Scholar's Finery
-			i(200251),	-- Medallion of the Ancestors
-			i(200261),	-- White Chitin Bandages
 			i(200280),	-- Decaying Ghostly Band
-			i(200291),	-- Waterlogged Racing Grips
-			i(200306),	-- Tempest Shawl
-			i(200314),	-- Skyspeaker's Envelope
-			i(200434),	-- Anund's Mana-Singed Amice
-			i(200435),	-- Brackish Breeches
-			i(200436),	-- Gorestained Hauberk
-			i(200444),	-- Mantle of the Gatekeeper
-			i(200448),	-- Abyssal Ward
-			i(200549),	-- Restored Titan Artifact
 			i(200679),	-- Essence of Somnikus's Shade
-			i(200689),	-- Rimetalon Band
+			-- Old Cloaks with New IDs... Probably made for the cloak toy.
 			i(200708),	-- Polymorphic Cloak of Absorption
 			i(200710),	-- Ashjra'kamas
-			i(200735),	-- Magically Magical Faerie Flower
+
+
 			i(200737),	-- Pauldrons of Infinite Darkness
 			i(200968),	-- Sandshaped Winglord's Drape
-			i(201057),	-- Dreamfire Sabatons
-			i(201058),	-- Robes of the Verdant Wing
+
+			-- Green Dragon Set?
+			-- Dreamfire
 			i(201059),	-- Dreamfire Battleplate
+			i(201077),	-- Dreamfire Buckle
+			i(201063),	-- Dreamfire Gauntlets
+			i(201085),	-- Dreamfire Helm
+			i(201069),	-- Dreamfire Legplates
+			i(201074),	-- Dreamfire Pauldrons
+			i(201057),	-- Dreamfire Sabatons
+			i(201082),	-- Dreamfire Wristguards
+			-- Verdant Wing
+			i(201078),	-- Cord of the Verdant Wing
+			i(201064),	-- Gloves of the Verdant Wing
+			i(201066),	-- Hood of the Verdant Wing
+			i(201070),	-- Leggings of the Verdant Wing
+			i(201075),	-- Mantle of the Verdant Wing
+			i(201058),	-- Robes of the Verdant Wing
+			i(201086),	-- Slippers of the Verdant Wing
+			i(201081),	-- Wraps of the Verdant Wing
+			-- Emerald Scale
+			i(201083),	-- Emerald Scale Armguards
 			i(201060),	-- Emerald Scale Chainmail
+			i(201067),	-- Emerald Scale Coif
+			i(201065),	-- Emerald Scale Grips
+			i(201071),	-- Emerald Scale Legguards
+			i(201079),	-- Emerald Scale Loop
+			i(201076),	-- Emerald Scale Spaulders
+			i(201087),	-- Emerald Scale Treads
+			-- Green Draketracker
+			i(201080),	-- Green Draketracker's Belt
+			i(201088),	-- Green Draketracker's Boots
+			i(201084),	-- Green Draketracker's Bracers
+			i(201072),	-- Green Draketracker's Britches
+			i(201068),	-- Green Draketracker's Cowl
 			i(201061),	-- Green Draketracker's Vest
 			i(201062),	-- Green Draketracker's Mitts
-			i(201063),	-- Dreamfire Gauntlets
-			i(201064),	-- Gloves of the Verdant Wing
-			i(201065),	-- Emerald Scale Grips
-			i(201066),	-- Hood of the Verdant Wing
-			i(201067),	-- Emerald Scale Coif
-			i(201068),	-- Green Draketracker's Cowl
-			i(201069),	-- Dreamfire Legplates
-			i(201070),	-- Leggings of the Verdant Wing
-			i(201071),	-- Emerald Scale Legguards
-			i(201072),	-- Green Draketracker's Britches
 			i(201073),	-- Green Draketracker's Shoulderpads
-			i(201074),	-- Dreamfire Pauldrons
-			i(201075),	-- Mantle of the Verdant Wing
-			i(201076),	-- Emerald Scale Spaulders
-			i(201077),	-- Dreamfire Buckle
-			i(201078),	-- Cord of the Verdant Wing
-			i(201079),	-- Emerald Scale Loop
-			i(201080),	-- Green Draketracker's Belt
-			i(201081),	-- Wraps of the Verdant Wing
-			i(201082),	-- Dreamfire Wristguards
-			i(201083),	-- Emerald Scale Armguards
-			i(201084),	-- Green Draketracker's Bracers
-			i(201085),	-- Dreamfire Helm
-			i(201086),	-- Slippers of the Verdant Wing
-			i(201087),	-- Emerald Scale Treads
-			i(201088),	-- Green Draketracker's Boots
 
+			-- NYI?
 			i(202116),	-- Alacritous Alchemist Stone
 
-			i(202117),	-- Assembly Preserver's Band
-			i(202118),	-- Assembly Guardian's Ring
-			i(202119),	-- Assembly Scholar's Loop
+
 		}),
 		filter(BATTLE_PETS, {
 			i(191126),	-- Obsidian Whelpling
@@ -492,14 +477,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191879),	-- DNT - Stonename Weightstone
 			i(191880),	-- DNT - Stonename Whetstone
 			i(191881),	-- DNT - Stonename Whetstone
-			i(192095),	-- Spool of Wilderthread+
-			i(192096),	-- Spool of Wilderthread++
-			i(192097),	-- Spool of Wilderthread+++
+
 			i(192078),	-- Bottled Putrescence
 			i(194828),	-- Stacked Deck of Darkmoon Mysteries
 			i(194873),	-- Apprentice's Fluffed Quill
 			i(194903),	-- Pocket Chocolate
-			i(198151),	-- Cracked Heart in a Bottle
+
 			--
 			i(198086),	-- Darkmoon Deck: Inferno
 			i(198087),	-- Darkmoon Deck: Rime
@@ -634,18 +617,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191889),	-- Ancient Sword Design
 			i(192128),	-- Reinforced Scale Sample
 			i(192129),	-- Azure Basilisk Belly
-			i(193600),	-- Lost Battlepack
-			i(193611),	-- Ancient Horn Ring
 			i(198133),	-- Golden Expedition Compass
 			i(198134),	-- Shiny Surveyor Scope
 			i(198135),	-- Jeb's Supply Pack
-			i(199831),	-- Forgotten Dragon Crest
-			i(199840),	-- Wrapped Gold Band
-			i(199842),	-- Stone Dragontooth
-			i(199895),	-- Chunk of Sculpture
-			i(199915),	-- Ancient Obsidian Charm
-			i(201411),	-- Ancient Vault Artifact
-			i(201412),	-- Ancient Vault Artifact
 		}),
 		n(TREASURES, {
 			i(191058),	-- Dilapidated Parchment: Bottom Half
@@ -663,53 +637,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194442),	-- Activity Map: Apex Canopy
 			i(198085),	-- Lost Obsidian Cache Key
 		}),
+		i(197933),	-- Lutokk's Wedding Ring
 		n(WEAPONS, {
-
-			-- WQ?
-			i(197922),	-- Cavalry's Charging Lance
-			i(197923),	-- Bloodcharger's Skewer
-			i(197924),	-- Wyrm Poacher's Emberblade
-			i(197926),	-- Billowing Magmathrower's Cudgel
-			i(197927),	-- Djaradin Bludgeoning Hammer
-			--
-			i(197931),	-- Waking Shores Cleaver
-			i(197933),	-- Lutokk's Wedding Ring
-			i(197935),	-- Seafarer's Hatchet
-			i(197936),	-- Serrated Deboning Knife
-			i(197938),	-- Uktulut Whaling Spear
-			i(197942),	-- Tuskarr Navigator's Staff
-			i(197944),	-- Deepsea Hunter's Crossbow
-			i(197945),	-- Gnarled Thorn Bow
-			i(197953),	-- Ancient Protector's Broadsword
-			i(197955),	-- Sword of the Eternal Guard
-				-- Thaldraszus
-			i(195177),	-- Moment's Notice
-			i(195181),	-- Rapid Fire
-
-
 			i(197693),	-- Shikaar Hunter's Crossbow
-			i(197904),	-- Shikaar Hunting Knife
 			i(200130),	-- Corpse Ripper
 			i(200139),	-- Tempest Arc
-			i(200145),	-- Hilted Monolith
-			i(200151),	-- Seamist Blade
-			i(200155),	-- Haphazardly Welded Protector
-			i(200175),	-- Repurposed Anvil
-			i(200176),	-- Missingway Hand Cannon
-			i(200181),	-- Blade of Blazing Torment
-			i(200197),	-- Armoredon Herding Crook
-			i(200206),	-- Behemoth Slayer Greatbow
-			i(200231),	-- Flaming Stonescale Bulwark
-			i(200233),	-- Paradox Saber
-			i(200237),	-- Burnished Lifewarder's Targe
+			i(200176),	-- Missingway Hand Canno
 			i(200241),	-- Stormcaller's Ritual Hatchet
 			i(200242),	-- Watcher's Lightning Rod
-			i(200250),	-- Frost Tipped Glaive
-			i(200257),	-- Decay Infused Branch
-			i(200259),	-- Forest Dweller's Shield
-			i(200297),	-- Hastily Cobbled Maul
-			i(200301),	-- Reclaimed Tuskarr Harpoon
-			i(200308),	-- Rellen's Legacy
+			-- Green Dragon Stuff?
 			i(201231),	-- Bident of Hallucinations
 			i(201232),	-- Bonedust Spreader
 			i(201233),	-- Verdant Drakespine Glaive
@@ -729,19 +665,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201247),	-- Whaler's Fang
 			i(201248),	-- Dreamfused Scaled Protector
 			i(201249),	-- Dreamfire Imbued Drakehorn
-			i(201363),	-- Brackenhide Hollow Maul
-			i(201365),	-- Brackenhide Gnoll Guard
-			i(201367),	-- Hollow Hunter's Sticker
-			i(201368),	-- Brackenhide Hollow Barbslinger
-			i(201369),	-- Hollow Greatwood Pestilence
-			i(201370),	-- Brackenhide Skullcracker
-			i(201380),	-- Nokhud Hunter's Bow
-			i(201382),	-- Centaur Warglaives
-
-
-
+			-- Grey Darkal?
 			i(201934),	-- Nokuhd Whittling Knife
-		--
 		}),
 		n(DRAKEWATCHER_MANUSCRIPTS, {
 			i(192111),	-- Renewed Proto-Drake: Red Scales

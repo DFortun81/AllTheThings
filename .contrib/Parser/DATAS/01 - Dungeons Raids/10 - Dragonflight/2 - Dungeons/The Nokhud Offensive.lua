@@ -19,7 +19,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 190164 },	-- Elder Nazuun
 					["coord"] = { 41.6, 56.7, OHNAHRAN_PLAINS },
 					["g"] = {
-						i(200251),	-- Medallion of the ancestors
+						i(200251),	-- Medallion of the Ancestors
 						crit(5, {	-- Elder Nazuun
 							["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
 						}),
