@@ -3426,8 +3426,12 @@ for key,value in pairs({
 	[377899] = "Rehén oculto de los cornisapos",	-- Hidden Hornswog Hostage
 	[377900] = "Lanza de guerra Nokhud",	-- Nokhud Warspear
 	[378010] = "Tesoro de dragón olvidado",	-- Forgotten Dragon Treasure
+	[378054] = "Bebida de mareaviva",	-- Riptide Brew
+	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
+	[378857] = "Alijo de obsidiana perdido",	-- Lost Obsidian Cache
 	[379290] = "Estatua adornada",	-- Ornamented Statue
 	[379296] = "Banda rota",	-- Broken Banding
+	[379297] = "Al centro y pa' dentro",	-- Slam Bam Swill
 	[379321] = "Huella de zarpa misteriosa",	-- Mysterious Paw Print
 	[380429] = "Zarpa dorada",	-- Golden Claw
 	[380430] = "Trozo de cola",	-- Tail Fragment
@@ -3547,9 +3551,13 @@ for key,value in pairs({
 	[381981] = "Cofre de la inundación",	-- Chest of the Flood
 	[382029] = "Tierra revuelta",	-- Disturbed Dirt
 	[382166] = "¡El Festín Rubí!",	-- The Ruby Feast!
+	[382193] = "Cofre de los elementos",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Caja de brillopeces frescos",	-- Case of Fresh Gleamfish
+	[384318] = "Marcapáginas discreto",	-- Inconspicuous Bookmark
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
+	[385021] = "Huevo de dragón petrificado",	-- Petrified Dragon Egg
+	[385022] = "Fósil erosionado",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "Charco mugroso improvisado de desterrado",	-- Outcast's Makeshift Muckpool

@@ -3436,8 +3436,12 @@ for key, value in pairs({
 	[377899] = "隐藏的龙蛙人质",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	[378010] = "被遗忘的巨龙宝藏",	-- Forgotten Dragon Treasure
+	[378054] = "激流陈酿",	-- Riptide Brew
+	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
+	[378857] = "失落的黑曜石宝箱",	-- Lost Obsidian Cache
 	[379290] = "精美雕像",	-- Ornamented Statue
 	--TODO: [379296] = "Broken Banding",	-- Broken Banding
+	[379297] = "轰砰豪饮",	-- Slam Bam Swill
 	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
@@ -3557,9 +3561,13 @@ for key, value in pairs({
 	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
 	[382029] = "翻动过的泥土",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
+	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "一箱新鲜的冰湖鱼",	-- Case of Fresh Gleamfish
+	--TODO: [384318] = "Inconspicuous Bookmark",	-- Inconspicuous Bookmark
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
+	--TODO: [385021] = "Petrified Dragon Egg",	-- Petrified Dragon Egg
+	[385022] = "被侵蚀的化石",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "流亡者的简易泥池",	-- Outcast's Makeshift Muckpool

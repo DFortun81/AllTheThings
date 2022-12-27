@@ -3414,8 +3414,12 @@ for key,value in pairs({
 	[377899] = "Ostaggio dei Drospi Cornuti Nascosto",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	[378010] = "Tesoro dei Draghi Dimenticato",	-- Forgotten Dragon Treasure
+	[378054] = "Birra di Marea",	-- Riptide Brew
+	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
+	[378857] = "Cassa d'Ossidiana Perduta",	-- Lost Obsidian Cache
 	[379290] = "Statua Adornata",	-- Ornamented Statue
 	--TODO: [379296] = "Broken Banding",	-- Broken Banding
+	[379297] = "Melma Bum Bum",	-- Slam Bam Swill
 	[379321] = "Impronte di Zampe Misteriose",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
@@ -3535,9 +3539,13 @@ for key,value in pairs({
 	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
 	[382029] = "Terra Smossa",	-- Disturbed Dirt
 	[382166] = "Banchetto di Rubino!",	-- The Ruby Feast!
+	[382193] = "Cassa degli Elementi",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Cassa di Pescilume Freschi",	-- Case of Fresh Gleamfish
+	[384318] = "Segnalibro Incospicuo",	-- Inconspicuous Bookmark
 	[384405] = "Pesce Semibollito",	-- Half-Boiled Fish
+	[385021] = "Uovo di Drago Pietrificato",	-- Petrified Dragon Egg
+	[385022] = "Fossile Eroso",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "Pozza di Fango Improvvisata dell'Esiliato",	-- Outcast's Makeshift Muckpool

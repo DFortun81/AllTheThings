@@ -3422,8 +3422,12 @@ for key,value in pairs({
 	[377899] = "숨겨진 용뿔두꺼비 인질",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	[378010] = "잊힌 용의 보물",	-- Forgotten Dragon Treasure
+	[378054] = "성난 해일 맥주",	-- Riptide Brew
+	[378820] = "팝피즈 음료",	-- Popfizz Punch
+	[378857] = "잃어버린 흑요석 보관함",	-- Lost Obsidian Cache
 	[379290] = "장식된 조각상",	-- Ornamented Statue
 	--TODO: [379296] = "Broken Banding",	-- Broken Banding
+	[379297] = "극통 꿀꺽주",	-- Slam Bam Swill
 	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
@@ -3543,9 +3547,13 @@ for key,value in pairs({
 	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
 	[382029] = "흐트러진 흙",	-- Disturbed Dirt
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
+	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "신선한 미명어 보관함",	-- Case of Fresh Gleamfish
+	[384318] = "눈에 띄지 않는 서표",	-- Inconspicuous Bookmark
 	[384405] = "반쯤 삶은 생선",	-- Half-Boiled Fish
+	[385021] = "석화된 용의 알",	-- Petrified Dragon Egg
+	[385022] = "부식된 화석",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
 	[9962198] = "추방자의 급조한 진흙 웅덩이",	-- Outcast's Makeshift Muckpool
