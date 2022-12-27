@@ -33,7 +33,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			}),
 		}),
-		n(-57, {	-- Fishing Poles
+		filter(FISHING_POLES, {	-- Fishing Poles
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.0, {
 					i(199898),	-- Iskaara Fishing Pole
