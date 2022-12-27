@@ -273,7 +273,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			ach(15889, {	-- River Rapids Wrangler
 				i(198428),	-- Tuskarr Dinghy (TOY!)
 			}),
-			ach(16581),	-- Seeing Blue
+			ach(16581, {	-- Seeing Blue
+				["coords"] = {
+					{ 40.0, 61.7, THE_AZURE_SPAN },	-- Start
+					{ 46.1, 26.3, THE_AZURE_SPAN },	-- End
+				},
+			}),
 			ach(16428),	-- Sojourner of Azure Span
 			pvp(ach(16594)),	-- Tour of Duty: The Azure Span
 			ach(16300),	-- Treasures of The Azure Span

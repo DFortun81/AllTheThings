@@ -1,6 +1,35 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+-- Blizzard used some really wacky BonusIDs this time around to give proper Tier SourceIDs...
+local function TOKEN_LFR(id, t)
+	local item = i(id, t);
+	for _,i in ipairs(item.groups) do
+		i.bonusID = 7982;
+	end
+	return item;
+end
+local function TOKEN_NORMAL(id, t)
+	local item = i(id, t);
+	for _,i in ipairs(item.groups) do
+		i.bonusID = 7979;
+	end
+	return item;
+end
+local function TOKEN_HEROIC(id, t)
+	local item = i(id, t);
+	for _,i in ipairs(item.groups) do
+		i.bonusID = 7980;
+	end
+	return item;
+end
+local function TOKEN_MYTHIC(id, t)
+	local item = i(id, t);
+	for _,i in ipairs(item.groups) do
+		i.bonusID = 7981;
+	end
+	return item;
+end
 
 root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	inst(1200, {	-- Vault of the Incarnates
@@ -165,22 +194,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						crit(5, {	-- Sennarth, the Cold Breath
 							["achievementID"] = 16343,	-- Vault of the Incarnates
 						}),
-						i(196588, {	-- Dreadful Jade Forgestone
+						TOKEN_LFR(196588, {	-- Dreadful Jade Forgestone
 							i(200409),	-- Greaves of the Haunted Frostbrood
 							i(200346),	-- Skybound Avenger's Legguards
 							i(200337),	-- Scalesworn Cultist's Culottes
 						}),
-						i(196598, {	-- Mystic Jade Forgestone
+						TOKEN_LFR(196598, {	-- Mystic Jade Forgestone
 							i(200355),	-- Lost Landcaller's Leggings
 							i(200391),	-- Stormwing Harrier's Greaves
 							i(200319),	-- Crystal Scholar's Britches
 						}),
-						i(196603, {	-- Venerated Jade Forgestone
+						TOKEN_LFR(196603, {	-- Venerated Jade Forgestone
 							i(200418),	-- Virtuous Silver Cuisses
 							i(200328),	-- Draconic Hierophant's Britches
 							i(200400),	-- Leggings of Infused Earth
 						}),
-						i(196593, {	-- Zenith Jade Forgestone
+						TOKEN_LFR(196593, {	-- Zenith Jade Forgestone
 							i(200382),	-- Legguards of the Awakened
 							i(200364),	-- Legguards of the Waking Fist
 							i(200373),	-- Vault Delver's Pantaloons
@@ -202,22 +231,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						crit(3, {	-- Dathea, Ascended
 							["achievementID"] = 16343,	-- Vault of the Incarnates
 						}),
-						i(196587, {	-- Dreadful Garnet Forgestone
+						TOKEN_LFR(196587, {	-- Dreadful Garnet Forgestone
 							i(200407),	-- Grasps of the Haunted Frostbrood
 							i(200344),	-- Skybound Avenger's Grips
 							i(200335),	-- Scalesworn Cultist's Gloves
 						}),
-						i(196597, {	-- Mystic Garnet Forgestone
+						TOKEN_LFR(196597, {	-- Mystic Garnet Forgestone
 							i(200353),	-- Lost Landcaller's Claws
 							i(200389),	-- Stormwing Harrier's Handguards
 							i(200317),	-- Crystal Scholar's Pageturners
 						}),
-						i(196602, {	-- Venerated Garnet Forgestone
+						TOKEN_LFR(196602, {	-- Venerated Garnet Forgestone
 							i(200416),	-- Virtuous Silver Gauntlets
 							i(200326),	-- Draconic Hierophant's Grips
 							i(200398),	-- Gauntlets of Infused Earth
 						}),
-						i(196592, {	-- Zenith Garnet Forgestone
+						TOKEN_LFR(196592, {	-- Zenith Garnet Forgestone
 							i(200380),	-- Gauntlets of the Awakened
 							i(200362),	-- Palms of the Waking Fist
 							i(200371),	-- Vault Delver's Lockbreakers
@@ -239,22 +268,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						crit(6, {	-- Kurog Grimtotem
 							["achievementID"] = 16343,	-- Vault of the Incarnates
 						}),
-						i(196586, {	-- Dreadful Amethyst Forgestone
+						TOKEN_LFR(196586, {	-- Dreadful Amethyst Forgestone
 							i(200405),	-- Breastplate of the Haunted Frostbrood
 							i(200342),	-- Skybound Avenger's Harness
 							i(200333),	-- Scalesworn Cultist's Frosk
 						}),
-						i(196596, {	-- Mystic Amethyst Forgestone
+						TOKEN_LFR(196596, {	-- Mystic Amethyst Forgestone
 							i(200351),	-- Lost Landcaller's Robes
 							i(200387),	-- Stormwing Harrier's Cuirass
 							i(200315),	-- Crystal Scholar's Tunic
 						}),
-						i(196601, {	-- Venerated Amethyst Forgestone
+						TOKEN_LFR(196601, {	-- Venerated Amethyst Forgestone
 							i(200414),	-- Virtuous Silver Breastplate
 							i(200324),	-- Draconic Hierophant's Vestment
 							i(200396),	-- Robe of Infused Earth
 						}),
-						i(196591, {	-- Zenith Amethyst Forgestone
+						TOKEN_LFR(196591, {	-- Zenith Amethyst Forgestone
 							i(200378),	-- Hauberk of the Awakened
 							i(200360),	-- Chestwrap of the Waking Fist
 							i(200369),	-- Vault Delver's Brigandine
@@ -278,22 +307,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						crit(7, {	-- Broodkeeper Diurna
 							["achievementID"] = 16343,	-- Vault of the Incarnates
 						}),
-						i(196589, {	-- Dreadful Lapis Forgestone
+						TOKEN_LFR(196589, {	-- Dreadful Lapis Forgestone
 							i(200410),	-- Jaws of the Haunted Frostbrood
 							i(200347),	-- Skybound Avenger's Ailerons
 							i(200338),	-- Scalesworn Cultist's Effigy
 						}),
-						i(196599, {	-- Mystic Lapis Forgestone
+						TOKEN_LFR(196599, {	-- Mystic Lapis Forgestone
 							i(200356),	-- Lost Landcaller's Mantle
 							i(200392),	-- Stormwing Harrier's Pinions
 							i(200320),	-- Crystal Scholar's Beacons
 						}),
-						i(196604, {	-- Venerated Lapis Forgestone
+						TOKEN_LFR(196604, {	-- Venerated Lapis Forgestone
 							i(200419),	-- Virtuous Silver Pauldrons
 							i(200329),	-- Draconic Hierophant's Wisdom
 							i(200401),	-- Calderas of Infused Earth
 						}),
-						i(196594, {	-- Zenith Lapis Forgestone
+						TOKEN_LFR(196594, {	-- Zenith Lapis Forgestone
 							i(200383),	-- Talons of the Awakened
 							i(200365),	-- Mantle of the Waking Fist
 							i(200374),	-- Vault Delver's Epaulets
@@ -317,22 +346,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						crit(8, {	-- Raszageth the Storm-Eater
 							["achievementID"] = 16343,	-- Vault of the Incarnates
 						}),
-						i(196590, {	-- Dreadful Topaz Forgestone
+						TOKEN_LFR(196590, {	-- Dreadful Topaz Forgestone
 							i(200408),	-- Maw of the Haunted Frostbrood
 							i(200345),	-- Skybound Avenger's Visor
 							i(200336),	-- Scalesworn Cultist's Scorn
 						}),
-						i(196600, {	-- Mystic Topaz Forgestone
+						TOKEN_LFR(196600, {	-- Mystic Topaz Forgestone
 							i(200354),	-- Lost Landcaller's Antlers
 							i(200390),	-- Stormwing Harrier's Skullmask
 							i(200318),	-- Crystal Scholar's Cowl
 						}),
-						i(196605, {	-- Venerated Topaz Forgestone
+						TOKEN_LFR(196605, {	-- Venerated Topaz Forgestone
 							i(200417),	-- Virtuous Silver Heaume
 							i(200327),	-- Draconic Hierophant's Archcowl
 							i(200399),	-- Faceguard of Infused Earth
 						}),
-						i(196595, {	-- Zenith Topaz Forgestone
+						TOKEN_LFR(196595, {	-- Zenith Topaz Forgestone
 							i(200381),	-- Crown of the Awakened
 							i(200363),	-- Gaze of the Waking Fist
 							i(200372),	-- Vault Delver's Vizard
@@ -425,22 +454,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["crs"] = { 187967 },
 					["g"] = {
 						ach(16419),	-- I Was Saving That For Later
-						i(196588, {	-- Dreadful Jade Forgestone
+						TOKEN_NORMAL(196588, {	-- Dreadful Jade Forgestone
 							i(200409),	-- Greaves of the Haunted Frostbrood
 							i(200346),	-- Skybound Avenger's Legguards
 							i(200337),	-- Scalesworn Cultist's Culottes
 						}),
-						i(196598, {	-- Mystic Jade Forgestone
+						TOKEN_NORMAL(196598, {	-- Mystic Jade Forgestone
 							i(200355),	-- Lost Landcaller's Leggings
 							i(200391),	-- Stormwing Harrier's Greaves
 							i(200319),	-- Crystal Scholar's Britches
 						}),
-						i(196603, {	-- Venerated Jade Forgestone
+						TOKEN_NORMAL(196603, {	-- Venerated Jade Forgestone
 							i(200418),	-- Virtuous Silver Cuisses
 							i(200328),	-- Draconic Hierophant's Britches
 							i(200400),	-- Leggings of Infused Earth
 						}),
-						i(196593, {	-- Zenith Jade Forgestone
+						TOKEN_NORMAL(196593, {	-- Zenith Jade Forgestone
 							i(200382),	-- Legguards of the Awakened
 							i(200364),	-- Legguards of the Waking Fist
 							i(200373),	-- Vault Delver's Pantaloons
@@ -460,22 +489,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["crs"] = { 189813 },
 					["g"] = {
 						ach(16458),	-- Nothing But Air
-						i(196587, {	-- Dreadful Garnet Forgestone
+						TOKEN_NORMAL(196587, {	-- Dreadful Garnet Forgestone
 							i(200407),	-- Grasps of the Haunted Frostbrood
 							i(200344),	-- Skybound Avenger's Grips
 							i(200335),	-- Scalesworn Cultist's Gloves
 						}),
-						i(196597, {	-- Mystic Garnet Forgestone
+						TOKEN_NORMAL(196597, {	-- Mystic Garnet Forgestone
 							i(200353),	-- Lost Landcaller's Claws
 							i(200389),	-- Stormwing Harrier's Handguards
 							i(200317),	-- Crystal Scholar's Pageturners
 						}),
-						i(196602, {	-- Venerated Garnet Forgestone
+						TOKEN_NORMAL(196602, {	-- Venerated Garnet Forgestone
 							i(200416),	-- Virtuous Silver Gauntlets
 							i(200326),	-- Draconic Hierophant's Grips
 							i(200398),	-- Gauntlets of Infused Earth
 						}),
-						i(196592, {	-- Zenith Garnet Forgestone
+						TOKEN_NORMAL(196592, {	-- Zenith Garnet Forgestone
 							i(200380),	-- Gauntlets of the Awakened
 							i(200362),	-- Palms of the Waking Fist
 							i(200371),	-- Vault Delver's Lockbreakers
@@ -495,22 +524,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["crs"] = { 181378 },
 					["g"] = {
 						ach(16450),	-- The Power is MINE!
-						i(196586, {	-- Dreadful Amethyst Forgestone
+						TOKEN_NORMAL(196586, {	-- Dreadful Amethyst Forgestone
 							i(200405),	-- Breastplate of the Haunted Frostbrood
 							i(200342),	-- Skybound Avenger's Harness
 							i(200333),	-- Scalesworn Cultist's Frosk
 						}),
-						i(196596, {	-- Mystic Amethyst Forgestone
+						TOKEN_NORMAL(196596, {	-- Mystic Amethyst Forgestone
 							i(200351),	-- Lost Landcaller's Robes
 							i(200387),	-- Stormwing Harrier's Cuirass
 							i(200315),	-- Crystal Scholar's Tunic
 						}),
-						i(196601, {	-- Venerated Amethyst Forgestone
+						TOKEN_NORMAL(196601, {	-- Venerated Amethyst Forgestone
 							i(200414),	-- Virtuous Silver Breastplate
 							i(200324),	-- Draconic Hierophant's Vestment
 							i(200396),	-- Robe of Infused Earth
 						}),
-						i(196591, {	-- Zenith Amethyst Forgestone
+						TOKEN_NORMAL(196591, {	-- Zenith Amethyst Forgestone
 							i(200378),	-- Hauberk of the Awakened
 							i(200360),	-- Chestwrap of the Waking Fist
 							i(200369),	-- Vault Delver's Brigandine
@@ -532,22 +561,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["crs"] = { 190245 },
 					["g"] = {
 						ach(16442),	-- Incubation Extermination
-						i(196589, {	-- Dreadful Lapis Forgestone
+						TOKEN_NORMAL(196589, {	-- Dreadful Lapis Forgestone
 							i(200410),	-- Jaws of the Haunted Frostbrood
 							i(200347),	-- Skybound Avenger's Ailerons
 							i(200338),	-- Scalesworn Cultist's Effigy
 						}),
-						i(196599, {	-- Mystic Lapis Forgestone
+						TOKEN_NORMAL(196599, {	-- Mystic Lapis Forgestone
 							i(200356),	-- Lost Landcaller's Mantle
 							i(200392),	-- Stormwing Harrier's Pinions
 							i(200320),	-- Crystal Scholar's Beacons
 						}),
-						i(196604, {	-- Venerated Lapis Forgestone
+						TOKEN_NORMAL(196604, {	-- Venerated Lapis Forgestone
 							i(200419),	-- Virtuous Silver Pauldrons
 							i(200329),	-- Draconic Hierophant's Wisdom
 							i(200401),	-- Calderas of Infused Earth
 						}),
-						i(196594, {	-- Zenith Lapis Forgestone
+						TOKEN_NORMAL(196594, {	-- Zenith Lapis Forgestone
 							i(200383),	-- Talons of the Awakened
 							i(200365),	-- Mantle of the Waking Fist
 							i(200374),	-- Vault Delver's Epaulets
@@ -569,22 +598,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["crs"] = { 189492 },	-- Temp
 					["g"] = {
 						ach(16451),	-- The Ol Raszle Daszle
-						i(196590, {	-- Dreadful Topaz Forgestone
+						TOKEN_NORMAL(196590, {	-- Dreadful Topaz Forgestone
 							i(200408),	-- Maw of the Haunted Frostbrood
 							i(200345),	-- Skybound Avenger's Visor
 							i(200336),	-- Scalesworn Cultist's Scorn
 						}),
-						i(196600, {	-- Mystic Topaz Forgestone
+						TOKEN_NORMAL(196600, {	-- Mystic Topaz Forgestone
 							i(200354),	-- Lost Landcaller's Antlers
 							i(200390),	-- Stormwing Harrier's Skullmask
 							i(200318),	-- Crystal Scholar's Cowl
 						}),
-						i(196605, {	-- Venerated Topaz Forgestone
+						TOKEN_NORMAL(196605, {	-- Venerated Topaz Forgestone
 							i(200417),	-- Virtuous Silver Heaume
 							i(200327),	-- Draconic Hierophant's Archcowl
 							i(200399),	-- Faceguard of Infused Earth
 						}),
-						i(196595, {	-- Zenith Topaz Forgestone
+						TOKEN_NORMAL(196595, {	-- Zenith Topaz Forgestone
 							i(200381),	-- Crown of the Awakened
 							i(200363),	-- Gaze of the Waking Fist
 							i(200372),	-- Vault Delver's Vizard
@@ -692,22 +721,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						crit(5, {	-- Sennarth, the Cold Breath
 							["achievementID"] = 16345,	-- Heroic: Vault of the Incarnates
 						}),
-						i(196588, {	-- Dreadful Jade Forgestone
+						TOKEN_HEROIC(196588, {	-- Dreadful Jade Forgestone
 							i(200409),	-- Greaves of the Haunted Frostbrood
 							i(200346),	-- Skybound Avenger's Legguards
 							i(200337),	-- Scalesworn Cultist's Culottes
 						}),
-						i(196598, {	-- Mystic Jade Forgestone
+						TOKEN_HEROIC(196598, {	-- Mystic Jade Forgestone
 							i(200355),	-- Lost Landcaller's Leggings
 							i(200391),	-- Stormwing Harrier's Greaves
 							i(200319),	-- Crystal Scholar's Britches
 						}),
-						i(196603, {	-- Venerated Jade Forgestone
+						TOKEN_HEROIC(196603, {	-- Venerated Jade Forgestone
 							i(200418),	-- Virtuous Silver Cuisses
 							i(200328),	-- Draconic Hierophant's Britches
 							i(200400),	-- Leggings of Infused Earth
 						}),
-						i(196593, {	-- Zenith Jade Forgestone
+						TOKEN_HEROIC(196593, {	-- Zenith Jade Forgestone
 							i(200382),	-- Legguards of the Awakened
 							i(200364),	-- Legguards of the Waking Fist
 							i(200373),	-- Vault Delver's Pantaloons
@@ -729,22 +758,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						crit(3, {	-- Dathea, Ascended
 							["achievementID"] = 16345,	-- Heroic: Vault of the Incarnates
 						}),
-						i(196587, {	-- Dreadful Garnet Forgestone
+						TOKEN_HEROIC(196587, {	-- Dreadful Garnet Forgestone
 							i(200407),	-- Grasps of the Haunted Frostbrood
 							i(200344),	-- Skybound Avenger's Grips
 							i(200335),	-- Scalesworn Cultist's Gloves
 						}),
-						i(196597, {	-- Mystic Garnet Forgestone
+						TOKEN_HEROIC(196597, {	-- Mystic Garnet Forgestone
 							i(200353),	-- Lost Landcaller's Claws
 							i(200389),	-- Stormwing Harrier's Handguards
 							i(200317),	-- Crystal Scholar's Pageturners
 						}),
-						i(196602, {	-- Venerated Garnet Forgestone
+						TOKEN_HEROIC(196602, {	-- Venerated Garnet Forgestone
 							i(200416),	-- Virtuous Silver Gauntlets
 							i(200326),	-- Draconic Hierophant's Grips
 							i(200398),	-- Gauntlets of Infused Earth
 						}),
-						i(196592, {	-- Zenith Garnet Forgestone
+						TOKEN_HEROIC(196592, {	-- Zenith Garnet Forgestone
 							i(200380),	-- Gauntlets of the Awakened
 							i(200362),	-- Palms of the Waking Fist
 							i(200371),	-- Vault Delver's Lockbreakers
@@ -766,22 +795,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						crit(6, {	-- Kurog Grimtotem
 							["achievementID"] = 16345,	-- Heroic: Vault of the Incarnates
 						}),
-						i(196586, {	-- Dreadful Amethyst Forgestone
+						TOKEN_HEROIC(196586, {	-- Dreadful Amethyst Forgestone
 							i(200405),	-- Breastplate of the Haunted Frostbrood
 							i(200342),	-- Skybound Avenger's Harness
 							i(200333),	-- Scalesworn Cultist's Frosk
 						}),
-						i(196596, {	-- Mystic Amethyst Forgestone
+						TOKEN_HEROIC(196596, {	-- Mystic Amethyst Forgestone
 							i(200351),	-- Lost Landcaller's Robes
 							i(200387),	-- Stormwing Harrier's Cuirass
 							i(200315),	-- Crystal Scholar's Tunic
 						}),
-						i(196601, {	-- Venerated Amethyst Forgestone
+						TOKEN_HEROIC(196601, {	-- Venerated Amethyst Forgestone
 							i(200414),	-- Virtuous Silver Breastplate
 							i(200324),	-- Draconic Hierophant's Vestment
 							i(200396),	-- Robe of Infused Earth
 						}),
-						i(196591, {	-- Zenith Amethyst Forgestone
+						TOKEN_HEROIC(196591, {	-- Zenith Amethyst Forgestone
 							i(200378),	-- Hauberk of the Awakened
 							i(200360),	-- Chestwrap of the Waking Fist
 							i(200369),	-- Vault Delver's Brigandine
@@ -805,22 +834,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						crit(7, {	-- Broodkeeper Diurna
 							["achievementID"] = 16345,	-- Heroic: Vault of the Incarnates
 						}),
-						i(196589, {	-- Dreadful Lapis Forgestone
+						TOKEN_HEROIC(196589, {	-- Dreadful Lapis Forgestone
 							i(200410),	-- Jaws of the Haunted Frostbrood
 							i(200347),	-- Skybound Avenger's Ailerons
 							i(200338),	-- Scalesworn Cultist's Effigy
 						}),
-						i(196599, {	-- Mystic Lapis Forgestone
+						TOKEN_HEROIC(196599, {	-- Mystic Lapis Forgestone
 							i(200356),	-- Lost Landcaller's Mantle
 							i(200392),	-- Stormwing Harrier's Pinions
 							i(200320),	-- Crystal Scholar's Beacons
 						}),
-						i(196604, {	-- Venerated Lapis Forgestone
+						TOKEN_HEROIC(196604, {	-- Venerated Lapis Forgestone
 							i(200419),	-- Virtuous Silver Pauldrons
 							i(200329),	-- Draconic Hierophant's Wisdom
 							i(200401),	-- Calderas of Infused Earth
 						}),
-						i(196594, {	-- Zenith Lapis Forgestone
+						TOKEN_HEROIC(196594, {	-- Zenith Lapis Forgestone
 							i(200383),	-- Talons of the Awakened
 							i(200365),	-- Mantle of the Waking Fist
 							i(200374),	-- Vault Delver's Epaulets
@@ -844,22 +873,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						crit(8, {	-- Raszageth the Storm-Eater
 							["achievementID"] = 16345,	-- Heroic: Vault of the Incarnates
 						}),
-						i(196590, {	-- Dreadful Topaz Forgestone
+						TOKEN_HEROIC(196590, {	-- Dreadful Topaz Forgestone
 							i(200408),	-- Maw of the Haunted Frostbrood
 							i(200345),	-- Skybound Avenger's Visor
 							i(200336),	-- Scalesworn Cultist's Scorn
 						}),
-						i(196600, {	-- Mystic Topaz Forgestone
+						TOKEN_HEROIC(196600, {	-- Mystic Topaz Forgestone
 							i(200354),	-- Lost Landcaller's Antlers
 							i(200390),	-- Stormwing Harrier's Skullmask
 							i(200318),	-- Crystal Scholar's Cowl
 						}),
-						i(196605, {	-- Venerated Topaz Forgestone
+						TOKEN_HEROIC(196605, {	-- Venerated Topaz Forgestone
 							i(200417),	-- Virtuous Silver Heaume
 							i(200327),	-- Draconic Hierophant's Archcowl
 							i(200399),	-- Faceguard of Infused Earth
 						}),
-						i(196595, {	-- Zenith Topaz Forgestone
+						TOKEN_HEROIC(196595, {	-- Zenith Topaz Forgestone
 							i(200381),	-- Crown of the Awakened
 							i(200363),	-- Gaze of the Waking Fist
 							i(200372),	-- Vault Delver's Vizard
@@ -969,22 +998,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["crs"] = { 187967 },
 					["g"] = {
 						ach(16349),	-- Mythic: Sennarth, The Cold Breath
-						i(196588, {	-- Dreadful Jade Forgestone
+						TOKEN_MYTHIC(196588, {	-- Dreadful Jade Forgestone
 							i(200409),	-- Greaves of the Haunted Frostbrood
 							i(200346),	-- Skybound Avenger's Legguards
 							i(200337),	-- Scalesworn Cultist's Culottes
 						}),
-						i(196598, {	-- Mystic Jade Forgestone
+						TOKEN_MYTHIC(196598, {	-- Mystic Jade Forgestone
 							i(200355),	-- Lost Landcaller's Leggings
 							i(200391),	-- Stormwing Harrier's Greaves
 							i(200319),	-- Crystal Scholar's Britches
 						}),
-						i(196603, {	-- Venerated Jade Forgestone
+						TOKEN_MYTHIC(196603, {	-- Venerated Jade Forgestone
 							i(200418),	-- Virtuous Silver Cuisses
 							i(200328),	-- Draconic Hierophant's Britches
 							i(200400),	-- Leggings of Infused Earth
 						}),
-						i(196593, {	-- Zenith Jade Forgestone
+						TOKEN_MYTHIC(196593, {	-- Zenith Jade Forgestone
 							i(200382),	-- Legguards of the Awakened
 							i(200364),	-- Legguards of the Waking Fist
 							i(200373),	-- Vault Delver's Pantaloons
@@ -1004,22 +1033,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["crs"] = { 189813 },
 					["g"] = {
 						ach(16350),	-- Mythic: Dathea, Ascended
-						i(196587, {	-- Dreadful Garnet Forgestone
+						TOKEN_MYTHIC(196587, {	-- Dreadful Garnet Forgestone
 							i(200407),	-- Grasps of the Haunted Frostbrood
 							i(200344),	-- Skybound Avenger's Grips
 							i(200335),	-- Scalesworn Cultist's Gloves
 						}),
-						i(196597, {	-- Mystic Garnet Forgestone
+						TOKEN_MYTHIC(196597, {	-- Mystic Garnet Forgestone
 							i(200353),	-- Lost Landcaller's Claws
 							i(200389),	-- Stormwing Harrier's Handguards
 							i(200317),	-- Crystal Scholar's Pageturners
 						}),
-						i(196602, {	-- Venerated Garnet Forgestone
+						TOKEN_MYTHIC(196602, {	-- Venerated Garnet Forgestone
 							i(200416),	-- Virtuous Silver Gauntlets
 							i(200326),	-- Draconic Hierophant's Grips
 							i(200398),	-- Gauntlets of Infused Earth
 						}),
-						i(196592, {	-- Zenith Garnet Forgestone
+						TOKEN_MYTHIC(196592, {	-- Zenith Garnet Forgestone
 							i(200380),	-- Gauntlets of the Awakened
 							i(200362),	-- Palms of the Waking Fist
 							i(200371),	-- Vault Delver's Lockbreakers
@@ -1039,22 +1068,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["crs"] = { 181378 },
 					["g"] = {
 						ach(16351),	-- Mythic: Kurog Grimtotem
-						i(196586, {	-- Dreadful Amethyst Forgestone
+						TOKEN_MYTHIC(196586, {	-- Dreadful Amethyst Forgestone
 							i(200405),	-- Breastplate of the Haunted Frostbrood
 							i(200342),	-- Skybound Avenger's Harness
 							i(200333),	-- Scalesworn Cultist's Frosk
 						}),
-						i(196596, {	-- Mystic Amethyst Forgestone
+						TOKEN_MYTHIC(196596, {	-- Mystic Amethyst Forgestone
 							i(200351),	-- Lost Landcaller's Robes
 							i(200387),	-- Stormwing Harrier's Cuirass
 							i(200315),	-- Crystal Scholar's Tunic
 						}),
-						i(196601, {	-- Venerated Amethyst Forgestone
+						TOKEN_MYTHIC(196601, {	-- Venerated Amethyst Forgestone
 							i(200414),	-- Virtuous Silver Breastplate
 							i(200324),	-- Draconic Hierophant's Vestment
 							i(200396),	-- Robe of Infused Earth
 						}),
-						i(196591, {	-- Zenith Amethyst Forgestone
+						TOKEN_MYTHIC(196591, {	-- Zenith Amethyst Forgestone
 							i(200378),	-- Hauberk of the Awakened
 							i(200360),	-- Chestwrap of the Waking Fist
 							i(200369),	-- Vault Delver's Brigandine
@@ -1076,22 +1105,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["crs"] = { 190245 },
 					["g"] = {
 						ach(16352),	-- Mythic: Broodkeeper Diurna
-						i(196589, {	-- Dreadful Lapis Forgestone
+						TOKEN_MYTHIC(196589, {	-- Dreadful Lapis Forgestone
 							i(200410),	-- Jaws of the Haunted Frostbrood
 							i(200347),	-- Skybound Avenger's Ailerons
 							i(200338),	-- Scalesworn Cultist's Effigy
 						}),
-						i(196599, {	-- Mystic Lapis Forgestone
+						TOKEN_MYTHIC(196599, {	-- Mystic Lapis Forgestone
 							i(200356),	-- Lost Landcaller's Mantle
 							i(200392),	-- Stormwing Harrier's Pinions
 							i(200320),	-- Crystal Scholar's Beacons
 						}),
-						i(196604, {	-- Venerated Lapis Forgestone
+						TOKEN_MYTHIC(196604, {	-- Venerated Lapis Forgestone
 							i(200419),	-- Virtuous Silver Pauldrons
 							i(200329),	-- Draconic Hierophant's Wisdom
 							i(200401),	-- Calderas of Infused Earth
 						}),
-						i(196594, {	-- Zenith Lapis Forgestone
+						TOKEN_MYTHIC(196594, {	-- Zenith Lapis Forgestone
 							i(200383),	-- Talons of the Awakened
 							i(200365),	-- Mantle of the Waking Fist
 							i(200374),	-- Vault Delver's Epaulets
@@ -1113,22 +1142,22 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["crs"] = { 189492 },	-- Temp
 					["g"] = {
 						ach(16353),	-- Mythic: Raszageth the Storm-Eater
-						i(196590, {	-- Dreadful Topaz Forgestone
+						TOKEN_MYTHIC(196590, {	-- Dreadful Topaz Forgestone
 							i(200408),	-- Maw of the Haunted Frostbrood
 							i(200345),	-- Skybound Avenger's Visor
 							i(200336),	-- Scalesworn Cultist's Scorn
 						}),
-						i(196600, {	-- Mystic Topaz Forgestone
+						TOKEN_MYTHIC(196600, {	-- Mystic Topaz Forgestone
 							i(200354),	-- Lost Landcaller's Antlers
 							i(200390),	-- Stormwing Harrier's Skullmask
 							i(200318),	-- Crystal Scholar's Cowl
 						}),
-						i(196605, {	-- Venerated Topaz Forgestone
+						TOKEN_MYTHIC(196605, {	-- Venerated Topaz Forgestone
 							i(200417),	-- Virtuous Silver Heaume
 							i(200327),	-- Draconic Hierophant's Archcowl
 							i(200399),	-- Faceguard of Infused Earth
 						}),
-						i(196595, {	-- Zenith Topaz Forgestone
+						TOKEN_MYTHIC(196595, {	-- Zenith Topaz Forgestone
 							i(200381),	-- Crown of the Awakened
 							i(200363),	-- Gaze of the Waking Fist
 							i(200372),	-- Vault Delver's Vizard

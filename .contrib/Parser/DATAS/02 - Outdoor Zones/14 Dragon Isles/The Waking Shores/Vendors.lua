@@ -8,6 +8,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 75.4, 34.0, THE_WAKING_SHORES },
 				["g"] = {
 					i(199900),	-- Secondhand Survery Tools
+					i(198646, {	-- Ornate Dragon Statue (TOY!)
+						["sourceQuests"] = {
+							70236,	-- Dislodged Dragoneye
+							70207,	-- Tail Fragment
+							70175,	-- Broken Banding
+							70806,	-- Chunk of Sculpture
+							70791,	-- Coldwashed Dragonclaw
+							70789,	-- Finely Carved Wing
+							70204,	-- Golden Claw
+							70805,	-- Precious Stone Fragment
+							70790,	-- Stone Dragontooth
+							70788,	-- Wrapped Gold Band
+						},
+					}),
 				},
 			}),
 			n(186752, {	-- Firstmate Kaleson

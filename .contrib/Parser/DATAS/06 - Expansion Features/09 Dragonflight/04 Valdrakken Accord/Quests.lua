@@ -599,6 +599,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 				-- RENOWN 25 --
+			q(70910, {	-- Mysteries in Paper and Glass
+				["minReputation"] = { 2510, 25 },	-- Valdrakken Accord Renown 25
+				["qg"] = 195782,	-- Giera
+				["coord"] = { 31.6, 68.8, VALDRAKKEN },
+				["g"] = {
+					i(199742),	-- A Mender's Mentality
+					i(199744),	-- Academy Student's Journal
+					i(199741),	-- Compendium of Advanced Spells
+					i(199743),	-- Runic Symbols and their Meaning
+					i(198388),	-- Swirling Draconian Concoction
+					i(198389),	-- Weighted Potion Cylinder
+				},
+			}),
 
 				-- Unknown renown -- I will fix this later as well as all other renown quests -Darkal
 			q(72671, {	-- Renown Supplies
@@ -636,6 +649,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(72758),	-- triggered with 'Like Mother, Like Daughter' (66402)
 		q(72695),	-- triggered with 'Variety is the Spice of Life' (70904)
 		q(72696),	-- triggered with 'Flying with Our Colors' (70905)
+		q(72698),	-- triggered with 'Mysteries in Paper and Glass' (70910)
 
 		-- Ensembles
 		q(70755),	-- Ensemble: Crimson Valdrakken Clothing

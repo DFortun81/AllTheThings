@@ -412,8 +412,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200710),	-- Ashjra'kamas
 			i(200735),	-- Magically Magical Faerie Flower
 			i(200737),	-- Pauldrons of Infinite Darkness
-			i(200758),	-- Breastplate of Storied Antiquity
-			i(200760),	-- Unstable Arcane Cell
 			i(200968),	-- Sandshaped Winglord's Drape
 			i(201057),	-- Dreamfire Sabatons
 			i(201058),	-- Robes of the Verdant Wing
@@ -1915,7 +1913,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		filter(TOYS, {
 			i(192495),	-- Malfunctioning Stealthman 54 (TOY!)
 			i(197961),	-- Whelps on Strings (TOY!)
-			i(198646),	-- Ornate Dragon Statue (TOY!)
 			i(199111),	-- Maestro Duck's Orchestrion (TOY!)
 			i(199554),	-- S.E.A.T. (TOY!)
 			i(199926),	-- Portable J.A.M. (TOY!)
@@ -1923,7 +1920,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200148),	-- A Collection Of Me (TOY!)
 			i(200116),	-- Everlasting Horn of Lavaswimming (TOY!)
 			i(200636),	-- Primal Invocation Quintessence (TOY!)
-			i(201435),	-- Shuffling Sands (TOY!)
 			i(200926),	-- Compendium of Love (TOY!)
 			i(201933),	-- Black Dragon's Challenge Dummy (TOY!)
 		}),

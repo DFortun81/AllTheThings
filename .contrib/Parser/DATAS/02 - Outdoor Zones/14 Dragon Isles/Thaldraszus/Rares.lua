@@ -26,6 +26,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					-- is part of the DF>Global Rare Loottable
 					-- specfic drops
+					i(200758),	-- Breastplate of Storied Antiquity (needs to move to a CBD somehow sometime for certain Rares)
 					i(200147),	-- Web-Woven Robe
 				},
 			}),
@@ -68,9 +69,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193126, {	-- Innumerable Ruination
 				["coord"] = { 57.8, 83.8, THALDRASZUS },
 				["questID"] = 73881,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200760),	-- Unstable Arcane Cell
+				},
 			}),
 			n(193273, {	-- Liskron the Dazzling
 				["coord"] = { 36.7, 72.8, THALDRASZUS },
@@ -119,7 +120,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193130, {	-- Pleasant Alpha
 				["coord"] = { 37.7, 78.7, THALDRASZUS },
-				-- ["questID"] = 73889, -- confirm
+				["questID"] = 73889,
 				-- ["g"] = {
 
 				-- },
@@ -170,7 +171,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(183984, {	-- The Weeping Vilomah
-				["coord"] = { 49.6, 72.8, THALDRASZUS },
+				["description"] = "Inside cave, speak to 'Boomhooch the Lost'.",
+				["crs"] = { 193206 },	-- Boomhooch the Lost
+				["coords"] = {
+					{ 49.6, 72.8, THALDRASZUS },
+					{ 47.5, 71.7, THALDRASZUS },	-- cave
+				},
 				["questID"] = 74086,
 				["g"] = {
 					i(200214),	-- Grasp of the Weeping Widow
@@ -192,7 +198,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193161, {	-- Woolfang
 				["coord"] = { 47.9, 49.8, THALDRASZUS },
-				-- ["questID"] = 69850,
+				["questID"] = 74089,
 				["g"] = {
 					-- is part of the DF>Global Rare Loottable
 				},
