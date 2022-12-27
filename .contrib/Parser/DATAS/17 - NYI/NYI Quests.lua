@@ -6759,7 +6759,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66348),	--
 			q(66350),	--
 			q(66355),	--
-			q(66356),	--
 			q(66357),	--
 			q(66358),	--
 			q(66365),	--
@@ -7050,7 +7049,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(67717),	--
 			q(67744),	--
 			q(67749),	--
-			q(67950),	--
 			q(68086),	--
 			q(69292),	--
 			q(69590),	-- This was attached to Renewed Proto-Drake: Green Scales 197389 but it triggers different ID now
@@ -7062,11 +7060,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69853),	--
 			q(69854),	--
 			q(69856),	--
-			q(69858),	--
 			q(69860),	--
-			q(69861),	--
 			q(69863),	--
-			q(69865),	--
 			q(69871),	--
 			q(69874),	--
 			q(69877),	--
@@ -7217,7 +7212,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70597),	--
 			q(70598),	--
 			q(70602),	--
-			q(70603),	--
 			q(70605),	--
 			q(70607),	--
 			q(70612),	--

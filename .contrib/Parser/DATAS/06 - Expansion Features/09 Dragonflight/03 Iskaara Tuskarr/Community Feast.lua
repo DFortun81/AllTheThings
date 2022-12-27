@@ -22,6 +22,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							ach(16444, {	-- Leftovers' Revenge
 								i(200882),	-- Big Kinook's Spare Ladle
 							}),
+							i(197135),	-- Highland Drake: Toothy Mouth (DM!)
 							i(200163),	-- Ring of Embers
 						},
 					}),

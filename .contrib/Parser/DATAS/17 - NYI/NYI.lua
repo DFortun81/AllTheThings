@@ -384,8 +384,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200185),	-- Grips of the Everflowing Ocean
 			i(200202),	-- Tomorrow's Chains
 			i(200204),	-- Sandshine Chestplate
-			i(200215),	-- Plumed Shoulderguards of the Hunt
-			i(200216),	-- Water Heating Cord
 			i(200228),	-- Protoscale Pauldrons
 			i(200230),	-- Terrorclaw Shoulderplates
 			i(200243),	-- Titanic Scholar's Finery
@@ -393,18 +391,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200261),	-- White Chitin Bandages
 			i(200280),	-- Decaying Ghostly Band
 			i(200291),	-- Waterlogged Racing Grips
-			i(200292),	-- Cragforge Pauldrons
 			i(200306),	-- Tempest Shawl
-			i(200309),	-- Rock Encrusted Chestguard
 			i(200314),	-- Skyspeaker's Envelope
 			i(200434),	-- Anund's Mana-Singed Amice
 			i(200435),	-- Brackish Breeches
 			i(200436),	-- Gorestained Hauberk
-			i(200441),	-- Jhakan's Horned Cowl
 			i(200444),	-- Mantle of the Gatekeeper
-			i(200446),	-- Crystalized Sigil
 			i(200448),	-- Abyssal Ward
-			i(200542),	-- Breezy Companion
 			i(200549),	-- Restored Titan Artifact
 			i(200679),	-- Essence of Somnikus's Shade
 			i(200689),	-- Rimetalon Band
@@ -671,7 +664,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198085),	-- Lost Obsidian Cache Key
 		}),
 		n(WEAPONS, {
-			i(189055),	-- Ghendish's Backup Talisman
+
 			-- WQ?
 			i(197922),	-- Cavalry's Charging Lance
 			i(197923),	-- Bloodcharger's Skewer
@@ -714,12 +707,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200250),	-- Frost Tipped Glaive
 			i(200257),	-- Decay Infused Branch
 			i(200259),	-- Forest Dweller's Shield
-			i(200293),	-- Primal Scion's Twinblade
 			i(200297),	-- Hastily Cobbled Maul
 			i(200301),	-- Reclaimed Tuskarr Harpoon
-			i(200302),	-- Magmaforged Scimitar
 			i(200308),	-- Rellen's Legacy
-			i(200437),	-- Dreamsong Censer
 			i(201231),	-- Bident of Hallucinations
 			i(201232),	-- Bonedust Spreader
 			i(201233),	-- Verdant Drakespine Glaive

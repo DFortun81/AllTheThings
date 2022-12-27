@@ -63,7 +63,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 72814,
 				["g"] = {
 					i(200880),	-- Wind-Sealed Mana Capsule
-					-- is part of the DF>Global Rare Loottable
 				},
 			}),
 			n(193126, {	-- Innumerable Ruination

@@ -105,7 +105,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(197135),	-- Highland Drake: Toothy Mouth (DM!)
 					i(200247),	-- Inextinguishable Gavel
 					i(200133),	-- Volcanic Chakram
-					-- is part of the DF>Global Rare Loottable
 				},
 			}),
 			n(193154, {	-- Forgotten Gryphon
@@ -222,9 +221,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(197001),	-- Cliffside Wylderdrake: Finned Cheek
 					i(197098),	-- Highland Drake: Finned Back (DM!)
-					i(200164),	-- iceloop
-					i(200086),	-- Khaz'gorite-infused Resin
-					i(200245),	-- leviathan-lure
+					i(200164),	-- Iceloop
+					i(200086),	-- Khaz'gorite Infused Resin
+					i(200245),	-- Leviathan Lure
 					i(200563),	-- Primal Ritual Shell
 					i(200187),	-- Rod of Glacial Force
 					i(200552),	-- Torrent Caller's Shell

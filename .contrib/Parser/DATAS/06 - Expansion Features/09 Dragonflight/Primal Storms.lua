@@ -232,7 +232,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(69969, {	-- Voraazka
 					["qg"] = 193674,	-- Voraazka
 				}),
-				q(69972, {	-- Infernum
+				q(69972, {	-- Zurgaz Corebreaker
 					["qg"] = 193680,	-- Zurgaz Corebreaker
 				}),
 			})),

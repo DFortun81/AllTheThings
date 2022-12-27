@@ -48,7 +48,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(380991, {	-- Dirt Mound
 				["coord"] = { 70.6, 35.4, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["questID"] = 67950,
 				["cost"] = { { "i", 195453, 1 }, },	--1xLudo's Stash Map
 				["g"] = {
 					crit(2, {	-- Slightly Chewed Duck Egg

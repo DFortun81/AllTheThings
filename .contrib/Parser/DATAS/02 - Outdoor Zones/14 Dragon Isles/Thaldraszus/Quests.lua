@@ -1108,7 +1108,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 
 				-- NO BONUS OBJECTIVE?
-				-- Blightpaw the Depraved
 				-- Enraged Sprout
 				-- Goremaul the Gluttonous
 				-- Innumerable Ruination

@@ -6,7 +6,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		n(RARES, {
 			n(193128, {	-- Blightpaw the Depraved
 				["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["questID"] = 74096,
 				["g"] = {
 					i(196986),	-- Cliffside Wylderdrake: Black Hair (DM!)
 					i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
@@ -20,8 +20,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(195186, {	-- Cinta the Forgotten
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["coord"] = { 31.3, 76.0, OHNAHRAN_PLAINS },
+				["questID"] = 73950,
 				-- ["g"] = {
 
 				-- },
@@ -29,9 +29,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(189652, {	-- Deadwaker Ghendish
 				["coord"] = { 30.8, 66.6, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(189055),	-- Ghendish's Backup Talisman
+					i(200441),	-- Jhakan's Horned Cowl
+				},
 			}),
 			n(192020, {	-- Eaglemaster Niraak
 				["coord"] = { 49.5, 67.0, OHNAHRAN_PLAINS },
@@ -42,15 +43,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193142, {	-- Enraged Sapphire
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
-				-- ["questID"] = 69840,
-				-- ["g"] = {
-
-				-- },
+				["coord"] = { 56.6, 81.4, OHNAHRAN_PLAINS },
+				["questID"] = 73875,
+				["g"] = {
+					i(200309),	-- Rock Encrusted Chestguard
+				},
 			}),
 			n(193170, {	-- Fulgurb
 				["coord"] = { 74.4, 47.6, OHNAHRAN_PLAINS },
-				-- ["questID"] = 69856,
+				["questID"] = 73994,
 				["g"] = {
 					i(200433),	-- Footwraps of Subjugation
 				},
@@ -63,8 +64,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(188095, {	-- Hunter of the Deep
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["coord"] = { 80.5, 42.2, OHNAHRAN_PLAINS },
+				["questID"] = 73966,
 				-- ["g"] = {
 
 				-- },
@@ -72,17 +73,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(188124, {	-- Irontree
 				["description"] = "Cave Entrance: 79.2, 36.6.",
 				["coord"] = { 80.5, 37.8, OHNAHRAN_PLAINS },
-				-- ["questID"] = 66356,
+				["questID"] = 73967,
 				-- ["g"] = {
 
 				-- },
 			}),
 			n(197009, {	-- Liskheszaera
 				["coord"] = { 87.4, 61.4, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
+				["questID"] = 73882,
+				["g"] = {
+					i(200446),	-- Crystalized Sigil
+				},
 			}),
 			n(195409, {	-- Makhra the Ashtouched <Corrupted Child of Ohn'ahra>
 				["coord"] = { 32.7, 38.1, OHNAHRAN_PLAINS },
@@ -101,9 +102,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193173, {	-- Mikrin of the Raging Winds
 				["coord"] = { 62.8, 79.8, OHNAHRAN_PLAINS },
 				["questID"] = 74015,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200542),	-- Breezy Companion
+				},
 			}),
 			n(187219, {	-- Nokhud Warmaster
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
@@ -137,6 +138,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
 				["questID"] = 71240, -- also 72815 ?
 				["g"] = {
+					i(200292),	-- Cragforge Pauldrons
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 					i(200172),	-- Zephyrdance Signet
 				},
@@ -151,9 +153,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(196010, {	-- Researcher Sneakwing <The Sundered Flame>
 				["coord"] = { 37.3, 53.9, OHNAHRAN_PLAINS },
 				["questID"] = 74023,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200682),	-- Hardened Scale Shoulderguards
+				},
 			}),
 			n(193227, {	-- Ronsak the Decimator
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
@@ -182,7 +184,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193136, {	-- Scav Notail
 				["coord"] = { 50.1, 75.2, OHNAHRAN_PLAINS },
-				-- ["questID"] = 69863,
+				["questID"] = 73893,
 				["g"] = {
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 					i(200168),	-- Gnoll Hide Belt
@@ -202,6 +204,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 74075,
 				["g"] = {
 					i(196996),	-- Cliffside Wylderdrake: Branched Horns (DM!)
+					i(200437),	-- Dreamsong Censer
 					i(197115),	-- Highland Drake: Thorned Jaw (DM!)
 				},
 			}),
@@ -210,19 +213,22 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 72847,
 			}),
 			n(193165, {	-- Sparkspitter Vrak
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["coord"] = { 22.1, 38.8, OHNAHRAN_PLAINS },
+				["questID"] = 73896,
 				["g"] = {
 					i(200234),	-- Vrak's Embossed Aegis
 				},
 			}),
 			n(193123, {	-- Steamgill
 				["coord"] = { 53.6, 72.8, OHNAHRAN_PLAINS },
-				-- ["questID"] = 69667,
+				["questID"] = 74034,
+				["g"] = {
+					i(200216),	-- Water Heating Cord
+				},
 			}),
 			n(191842, {	-- Sulfurion
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["coord"] = { 78.3, 83.0, OHNAHRAN_PLAINS },
+				["questID"] = 73974,
 				-- ["g"] = {
 
 				-- },
@@ -259,6 +265,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 26.1, 34.2, OHNAHRAN_PLAINS },
 				["questID"] = 72852,
 				["g"] = {
+					i(200293),	-- Primal Scion's Twinblade
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 					i(198429),	-- Typhoon Bringer
 					i(200172),	-- Zephyrdance Signet
@@ -303,11 +310,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(193140, {	-- Zarizz
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
-				-- ["questID"] = 72364,
-				-- ["g"] = {
-
-				-- },
+				["coord"] = { 30.3, 62.1, OHNAHRAN_PLAINS },
+				["questID"] = 74091,
+				["g"] = {
+					i(200215),	-- Plumed Shoulderguards of the Hunt
+				},
 			}),
 		}),
 	}),

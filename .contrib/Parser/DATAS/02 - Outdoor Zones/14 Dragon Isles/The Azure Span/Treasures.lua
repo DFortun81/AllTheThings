@@ -38,7 +38,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(381110, {	-- Forgotten Jewel Box
 				["coord"] = { 45.1, 59.3, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 70603,
 				["cost"] = { { "i", 199065, 1 }, },	--1x Sorrowful Letter
 				["g"] = {
 					i(201927),	-- Gleaming Arcanocrystal (TOY!)

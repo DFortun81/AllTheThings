@@ -37,11 +37,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73868,
 				["g"] = {
 					i(200673),	-- Beogoka's Tooth and Claw
+					i(200253),	-- Snowspring Incanter's Knife
 				},
 			}),
 			n(193178, {	-- Blightfur
-				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
-				-- ["questID"] = 69858,
+				["coord"] = { 13.4, 22.4, THE_AZURE_SPAN },
+				["questID"] = 74058,
 				-- ["g"] = {
 
 				-- },
@@ -52,14 +53,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["isDaily"] = true,
 			}),
 			n(193259, {	-- Blue Terror
-				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["coord"] = { 16.7, 28.4, THE_AZURE_SPAN },
+				["questID"] = 73870,
 				["g"] = {
 					i(197595),	-- Windborne Velocidrake: Finned Ears (DM!)
 				},
 			}),
 			n(194392, {	-- Brackle
-				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
+				["coord"] = { 8.7, 48.6, THE_AZURE_SPAN },
 				["questID"] = 73871,
 				-- ["g"] = {
 
@@ -71,12 +72,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(200135),	-- Corroded Greatsword
 					i(197098),	-- Highland Drake: Finned Back (DM!)
+					i(200187),	-- Rod of Glacial Force
 				},
 			}),
 			n(193157, {	-- Dragonhunter Gorund
 				["coord"] = { 27.8, 45.8, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 73873,
 				["g"] = {
+					i(200302),	-- Magmaforged Scimitar
 					i(200169),	-- Protector's Molten Cudgel
 				},
 			}),
@@ -92,6 +95,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200256),	-- Darkmaul Soul Horn
 					i(200158),	-- Eerie Spectral Ring
 					i(197098),	-- Highland Drake: Finned Back (DM!)
+					i(200164),	-- Iceloop
 					i(200245),	-- Leviathan Lure
 					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 					i(200187),	-- Rod of Glacial Force
@@ -105,18 +109,19 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 72840,
 				["g"] = {
 					i(200210),	-- Amnesia
+					i(200758),	-- Breastplate of Storied Antiquity
 				},
 			}),
 			n(193698, {	-- Frigidpelt Den Mother
-				-- ["coord"] = { 64.8, 23.0, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["coord"] = { 64.8, 23.0, THE_AZURE_SPAN },
+				["questID"] = 73876,
 				-- ["g"] = {
 
 				-- },
 			}),
 			n(191356, {	-- Frostpaw
-				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["coord"] = { 58.2, 43.7, THE_AZURE_SPAN },
+				["questID"] = 73877,
 				-- ["g"] = {
 
 				-- },
@@ -151,6 +156,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 74004,
 				["g"] = {
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
+					i(200178),	-- Infested Ichor (TOY!)
 				},
 			}),
 			n(190244, {	-- Mahg the Trampler
@@ -186,7 +192,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193225, {	-- Notfar the Unbearable
 				["coord"] = { 36.8, 35.8, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 73887,
 				["g"] = {
 					i(200160),	-- Notfar's Favorite Food (TOY!)
 				},
@@ -210,6 +216,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 72846,
 				["g"] = {
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
+					i(197150),	-- Highland Drake: Spiked Club Tail (DM!)
 					i(200283),	-- Gnoll-Gnawed Breeches
 					i(200266),	-- Gnollish Chewtoy Launcher
 				},
@@ -236,11 +243,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193706, {	-- Snufflegust <Lunker>
-				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
-				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
+				["coord"] = { 58.9, 32.7, THE_AZURE_SPAN },
+				["questID"] = 74080,
+				["g"] = {
+					i(200187),	-- Rod of Glacial Force
+				},
 			}),
 			n(193238, {	-- Spellwrought Snowman
 				["description"] = "Click the Arcane Pedestal.",
@@ -256,6 +263,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 72848,
 				["g"] = {
 					i(200868),	-- Integrated Primal Fire
+					i(200133),	-- Volcanic Chakram
 				},
 			}),
 			n(193167, {	-- Swagraal the Swollen
@@ -275,7 +283,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193196, {	-- Trilvarus Loreweaver
 				["description"] = "Collect Singing Fragments.",
 				["coord"] = { 70.2, 25.2, THE_AZURE_SPAN },
-				-- ["questID"] = 69861,
+				["questID"] = 74087,
 				-- ["g"] = {
 
 				-- },
@@ -284,12 +292,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 17.0, 41.3, THE_AZURE_SPAN },
 				["questID"] = 72853,
 				["g"] = {
-					i(201728),	-- Vakril's Strongbox
+					i(201728, {	-- Vakril's Strongbox
+						i(200164),	-- Iceloop
+						i(200245),	-- Leviathan Lure
+						i(200187),	-- Rod of Glacial Force
+					}),
 				},
 			}),
 			n(193632, {	-- Wilrive
-				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
-				-- ["questID"] = 69948,
+				["coord"] = { 59.4, 55.2, THE_AZURE_SPAN },
+				["questID"] = 73900,
 				-- ["g"] = {
 
 				-- },

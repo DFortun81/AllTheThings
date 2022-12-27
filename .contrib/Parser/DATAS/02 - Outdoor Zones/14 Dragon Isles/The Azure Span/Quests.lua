@@ -1691,6 +1691,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- Stranded Soul ID 197183
 			}),
 			n(BONUS_OBJECTIVES, {
+				q(69858, {	-- Blightfur
+					["provider"] = { "n", 193178 },	-- Blightfur
+					["coord"] = { 13.4, 22.4, THE_AZURE_SPAN },
+				}),
 				q(72358, {	-- Cascade
 					["provider"] = { "n", 186962 },	-- Cascade
 					["coord"] = { 23.7, 33.7, THE_AZURE_SPAN },
@@ -1727,6 +1731,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(67173, {	-- Thieving Gnolls
 					["provider"] = { "n", 192749 },	-- Sharpfang
 					["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },
+				}),
+				q(69861, {	-- Trilvarus Loreweaver
+					["provider"] = { "n", 193196 },	-- Trilvarus Loreweaver
+					["coord"] = { 70.4, 25.0, THE_AZURE_SPAN },
 				}),
 				q(69872, {	-- Vakril, the Strongest Tuskarr
 					["provider"] = { "n", 193223 },	-- Vakril

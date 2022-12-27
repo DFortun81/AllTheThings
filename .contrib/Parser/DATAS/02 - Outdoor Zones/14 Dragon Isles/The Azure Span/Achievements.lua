@@ -202,7 +202,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 50.7, 55.4, THE_AZURE_SPAN },
 			}),
 			ach(16065, {	-- Dragon Glyphs: Azure Archive
-				["coord"] = { 40.4, 66.5, THE_AZURE_SPAN },
+				["coord"] = { 39.4, 63.4, THE_AZURE_SPAN },
 			}),
 			ach(16068, {	-- Dragon Glyphs: Brackenhide Hollow
 				["coord"] = { 10.3, 35.9, THE_AZURE_SPAN },
