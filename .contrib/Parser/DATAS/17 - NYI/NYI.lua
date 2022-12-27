@@ -1512,8 +1512,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201820),	-- Silithus Swiss
 			i(201989),	-- Twisted Heart
 			i(202062),	-- Ash Feather
-			i(202073),	-- Calamitous Carp
-			i(202074),	-- Kingfin, the Wise Whiskerfish
 			i(202107),	-- Shadowscrawled Coin
 			i(202122),	-- Primal Chaos Cluster
 			i(202152),	-- Storm-Charged Manipulator
