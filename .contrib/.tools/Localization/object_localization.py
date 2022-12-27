@@ -160,7 +160,7 @@ async def localize_objects(
     session: ClientSession,
     filepath: Path,
     lang_code: LangCode,
-    original_obj_names: dict[int, str] = {},
+    original_obj_names: dict[int, str],
 ) -> dict[int, str]:
     logging.info(f"Starting {lang_code}!")
     with open(filepath, encoding="utf-8") as file:
