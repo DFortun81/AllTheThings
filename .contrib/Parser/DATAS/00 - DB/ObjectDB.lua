@@ -2641,6 +2641,7 @@ _.ObjectNames = {
 	[380859] = "Tuskarr Toy Boat",
 	[380860] = "Centaur Horn",
 	[380902] = "Fields of Ferocity",
+	[380918] = "Broken Ornamented Statue",
 	[380991] = "Dirt Mound",
 	[381035] = "The Great Vault",
 	[381045] = "Golden Dragon Goblet",

@@ -275,7 +275,25 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
 				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 				["coord"] = { 84.3, 53.5, VALDRAKKEN },
-			})
+			}),
+			q(70509, {	-- Third Challenge of Tyr: Persistence
+				["sourceQuests"] = { 70650 },	-- In Tyr's Footsteps: The Waking Shores
+				["provider"] = { "o", 380918 },	-- Broken Ornamented Statue
+				["coord"] = { 63.9, 41.5, THE_WAKING_SHORES },
+			}),
+			q(70621, {	-- Third Challenge of Tyr: Persistence Embodied
+				["sourceQuests"] = { 70509 },	-- Third Challenge of Tyr: Persistence
+				["provider"] = { "n", 195737 },	-- Maiden of Inspiration
+				["coord"] = { 64, 41.3, THE_WAKING_SHORES },
+				["g"] = {
+					i(199197),	-- Bottled Essence
+				},
+			}),
+			q(70510, {	-- Victorious
+				["sourceQuests"] = { 70621 },	-- Third Challenge of Tyr: Persistence Embodied
+				["provider"] = { "n", 195737 },	-- Maiden of Inspiration
+				["coord"] = { 64, 41.3, THE_WAKING_SHORES },
+			}),
 		}),
 		prof(ALCHEMY, sharedData({
 			["requireSkill"] = ALCHEMY,
