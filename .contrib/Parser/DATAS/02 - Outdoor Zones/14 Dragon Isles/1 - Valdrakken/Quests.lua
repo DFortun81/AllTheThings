@@ -304,7 +304,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 42.2, 40.7, VALDRAKKEN },
 					["isWeekly"] = true,
 				}),
-				q(72649, {	-- Sparks of Life: Ohn'ahran Plains
+				q(72647, {	-- Sparks of Life: Ohn'ahran Plains
 					["provider"] = { "n", 199393 },	-- Keenu
 					["coord"] = { 42.2, 40.7, VALDRAKKEN },
 					["isWeekly"] = true,

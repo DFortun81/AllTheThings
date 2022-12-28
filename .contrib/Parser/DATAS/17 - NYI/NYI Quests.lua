@@ -7672,7 +7672,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72642),	--
 			q(72643),	-- Dragon Isles Supplies
 			q(72646),	--
-			q(72647),	--
 			q(72683),	--
 			q(72684),	--
 			q(72687),	--
