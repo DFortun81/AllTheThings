@@ -367,6 +367,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
 				["coord"] = { 47.3, 83.3, THE_WAKING_SHORES },
 			}),
+				-- RENOWN 19 --
+			q(70832, {	-- One of Us Now
+				["minReputation"] = { 2507, 19 },	-- Dragonscale Expedition Renown 19
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198730),	-- Dragonscale Expedition Tabard
+				},
+			}),
 
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
@@ -440,6 +449,7 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(72040),	-- Triggered with 'Deeper Mysteries of the Dragon Isles Drakes' (70809)
 		q(72041),	-- Triggered with 'Unlocking Magical Treasures' (70814)
 		q(72042),	-- Triggered with 'Researching in Comfort' (70831)
+		q(72044),	-- Triggered with 'One of Us Now' (70832)
 
 		-- Ensembles
 		q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor

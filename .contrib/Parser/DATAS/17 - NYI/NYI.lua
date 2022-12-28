@@ -367,9 +367,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(190910),	-- Ruby Felfire Bulwark
 			}),
 			-- This is usually from a quest at Renown Level Max-1.... Hopefully someone add them soon
-			i(198730),	-- Dragonscale Expedition Tabard
 			i(198731),	-- Iskaara Tuskarr Tabard
-			i(198732),	-- Valdrakken Accord Tabard
 			-- I Dont Think These has been added yet...
 			i(199665),	-- Spiked Obsidian Spaulders
 			i(199666),	-- Spiked Azure Spaulders
