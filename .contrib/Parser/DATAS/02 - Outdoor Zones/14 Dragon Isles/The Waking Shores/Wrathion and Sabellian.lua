@@ -185,7 +185,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["isWeekly"] = true,
 				}),
 				q(66308, {	-- Feeding the Fire
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuests"] = { 66419 },	-- Allegiance to One
 					["provider"] = { "n", 188179 },	-- Stoker Volrax
 					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
 				}),
@@ -290,6 +290,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 66419 },	-- Allegiance to One
 					["provider"] = { "n", 196518 },	-- Voraxian
 					["coord"] = { 27.6,56.7, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+				}),
+				q(66449, {	-- Hands-Off Operation
+					["sourceQuests"] = { 66419 },	-- Allegiance to One
+					["provider"] = { "n", 191193 },	-- Exadria
+					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+				}),
+				q(69926, {	-- Becca Black and the Seven Gnomes
+					["sourceQuests"] = { 66419 },	-- Allegiance to One
+					["provider"] = { "n", 191014 },	-- Becca Black
+					["coord"] = { 26.4, 62.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				--[[
