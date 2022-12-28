@@ -2626,6 +2626,7 @@ _.ObjectNames = {
 	[383625] = "Case of Fresh Gleamfish",
 	[384318] = "Inconspicuous Bookmark",
 	[384405] = "Half-Boiled Fish",
+	[385001] = "Empty Fish Barrel",
 	[385021] = "Petrified Dragon Egg",
 	[385022] = "Eroded Fossil",
 	[500000] = "Inspiration Catalyst Console",

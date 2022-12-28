@@ -527,9 +527,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 10.0.0
 			tier(DF_TIER, 0.0, bubbleDownSelf({ ["timeline"] = { "created 10.0.0" } }, {
 				-- Probably in game
-				i(198870, {	-- Otto / Otto (MOUNT!)
-					--["modelID"] = ,
-				}),
 				--
 				i(194722, {	-- Carrier Yeti / Carrier Yeti (MOUNT!)
 					--["modelID"] = ,
