@@ -1044,7 +1044,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 193668 },	-- Lookout Mordren
 					["coord"] = { 36.8, 85.6, THALDRASZUS },
 				}),
-				qNYI(69882, {	-- Lord Epochbrgl
+				q(69882, {	-- Lord Epochbrgl
 					["provider"] = { "n", 193241 },	-- Lord Epochbrgl
 					["coord"] = { 62.2, 81.8, THALDRASZUS },
 					["isDaily"] = true,

@@ -91,8 +91,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193241, {	-- Lord Epochbrgl <Time-Lost>
 				["description"] = "From a Time-Lost Portal.",
-				-- ["coord"] = { X, Y, THALDRASZUS },
-				-- ["questID"] = 69882,
+				["coord"] = { 62.2, 81.7, THALDRASZUS },
+				["questID"] = 74066,
 				["g"] = {
 					i(200185),	-- Grips of the Everflowing Ocean
 				},
