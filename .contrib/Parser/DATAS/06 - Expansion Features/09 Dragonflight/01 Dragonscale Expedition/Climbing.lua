@@ -68,6 +68,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70661, {	-- Supplies on High
 					["coord"] = { 44.6, 50.1, THALDRASZUS },
 				}),
+				q(70654, {	-- Are You Kitten Me?
+					["coord"] = { 59, 76.8, THALDRASZUS },
+				}),
 				--q(70656, {	-- Not Mushroom For Error
 				--	["coord"] = { 44.6, 50.1, THALDRASZUS },
 				--}),
@@ -81,7 +84,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				AS
 				q(70653),	-- Cold Hard Science
 				T
-				q(70654),	-- Are You Kitten Me?
 				--]]
 			})),
 		}),
