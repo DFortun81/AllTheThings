@@ -1699,6 +1699,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		q(70769),	-- triggers when 'Tale of the Elders' completes
 		q(70772),	-- triggers when 'Tale of the Warlord' becomes available for Tarjin the Blind
 		q(70771),	-- triggers when 'Tale of the Warlord' completes
+		q(70776),	-- triggers when 'Tale of the Magma Pact' becomes available for Tarjin the Blind
+		q(70775),	-- triggers when 'Tale of the Magma Pact' completes
 		q(70218),	-- Dialogue before you can pick up the quest "A Dragon's Day Off"
 
 		-- TODO: how do we sort these types of things going forward? Also, is Skytop an actual quest or should this be a NYI/Never Implemented?

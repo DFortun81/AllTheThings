@@ -396,6 +396,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(197012),	-- Cliffside Wylderdrake: Blue Scales (DM!)
 				},
 			}),
+				-- RENOWN 21 --
+			q(70968, {	-- Of the Cloth, of the Community
+				["minReputation"] = { 2511, 21 },	-- Iskaara Tuskarr Renown 21
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+				["g"] = {
+					i(198731),	-- Iskaara Tuskarr Tabard
+				},
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
