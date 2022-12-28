@@ -83,6 +83,9 @@ root("TradingPost", bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 			i(54811, {	-- Celestial Steed (MOUNT!)
 				["cost"] = { { "c", TRADERS_TENDER, 900 }, },
 			}),
+			-- i(TODO, {	-- Cerulean Marsh Hopper (MOUNT!)
+			-- 	["cost"] = { { "c", TRADERS_TENDER, TODO }, },
+			-- }),
 		}),
 	}),
 }));

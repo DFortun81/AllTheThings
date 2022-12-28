@@ -1593,6 +1593,7 @@ i(201788, 394738);	-- Vicious Sabertooth [H]
 -- PATCH 10.0.5 --
 ------------------
 i(190231, 366962);	-- Ash'adar, Harbinger of Dawn
+i(0, 369480);	-- Cerulean Marsh Hopper
 
 -- #if ANYCLASSIC
 -----------------
