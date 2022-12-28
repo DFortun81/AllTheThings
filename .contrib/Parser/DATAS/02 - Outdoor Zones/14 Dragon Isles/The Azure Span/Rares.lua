@@ -20,7 +20,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(197411, {	-- Astray Splasher <Lunker>
 				["coord"] = { 81.2, 77.8, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 74057,
 				-- ["g"] = {
 
 				-- },

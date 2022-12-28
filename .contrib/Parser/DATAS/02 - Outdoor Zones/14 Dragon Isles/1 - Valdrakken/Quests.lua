@@ -189,13 +189,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 49.9, 56, VALDRAKKEN },
 				["isBreadcrumb"] = true,	-- unconfirmed
 			}),
+
+			-- Weeklies
 			q(72686, {	-- Storm Surge
 				["provider"] = { "n", 196598 },	-- Rethelshi
 				["coord"] = { 38.2, 37, VALDRAKKEN },
-				["isBreadcrumb"] = true,	-- unconfirmed
+				["isWeekly"] = true,
 			}),
-
-			-- Weeklies
 			q(66867, {	-- Relic Recovery: Algeth'ar Academy
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 191957 },	-- Theldren

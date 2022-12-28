@@ -14,6 +14,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 49.5, 59.9, VALDRAKKEN },
 				["isWeekly"] = true,
 			}, {
+				q(72722),	-- Emissary of War
 				q(72728),	-- The World Awaits
 			})),
 		}),

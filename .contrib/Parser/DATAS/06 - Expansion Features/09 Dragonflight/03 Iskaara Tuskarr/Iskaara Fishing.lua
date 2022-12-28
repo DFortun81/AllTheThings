@@ -141,6 +141,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["isDaily"] = true,
 					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 				}),
+					-- Thaldraszus
 
 					-- Repeatables --
 				q(70201, {	-- Catch and Release: Aileron Seamoth

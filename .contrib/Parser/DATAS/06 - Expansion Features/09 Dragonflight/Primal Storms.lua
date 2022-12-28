@@ -192,6 +192,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(69951, {	-- Bouldron
 					["qg"] = 193644,	-- Bouldron
 				}),
+				q(69952, {	-- Crystalus
+					["qg"] = 193645,	-- Crystalus
+				}),
 				q(69955, {	-- Emblazion
 					["qg"] = 193650,	-- Emblazion
 				}),

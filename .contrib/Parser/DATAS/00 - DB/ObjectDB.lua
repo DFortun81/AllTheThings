@@ -2674,6 +2674,7 @@ _.ObjectNames = {
 	[381511] = "Harpoon Head",
 	[381513] = "Old Pickaxe",
 	[381579] = "Archivists' Request",
+	[381622] = "Archivists' Request",
 	[381650] = "Archivists' Request",
 	[381653] = "Fang Flap Fire Signups",
 	[381661] = "Archivists' Request",

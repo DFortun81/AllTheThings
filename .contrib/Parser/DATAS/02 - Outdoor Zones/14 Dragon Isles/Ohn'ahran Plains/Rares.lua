@@ -123,7 +123,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193235, {	-- Oshigol
 				["coord"] = { 60.8, 26.8, OHNAHRAN_PLAINS },
-				-- ["questID"] = 69877,
+				["questID"] = 74018,
 				-- ["g"] = {
 
 				-- },

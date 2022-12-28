@@ -1117,6 +1117,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 193128 },	-- Irontree
 					["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
 				}),
+				q(69877, {	-- Oshigol
+					["provider"] = { "n", 193235 },	-- Oshigol
+					["coord"] = { 60.8, 26.8, OHNAHRAN_PLAINS },
+				}),
 				q(69968, {	-- Prozela Galeshot
 					["provider"] = { "n", 193669 },	-- Prozela Galeshot
 					["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },

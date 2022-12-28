@@ -146,7 +146,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 24.5, 60.9, THE_WAKING_SHORES },
 					["provider"] = { "n", 191194 },	-- Weaponsmith Mida
 					["isWeekly"] = true,
-					-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? move to Professions if it's fixed?
 					["g"] = {
 						i(194963),	-- Plans: Black Dragon Seared Alloy (RECIPE!)
 					},
@@ -162,45 +161,52 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["isWeekly"] = true,
 				}),
 				q(70847, {	-- Ancient Obsidian Charm
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "i", 199915 },	-- Ancient Obsidian Charm
 					["isWeekly"] = true,
 				}),
+				q(69926, {	-- Becca Black and the Seven Gnomes
+					["sourceQuest"] = 66419,	-- Allegiance To One
+					["provider"] = { "n", 191014 },	-- Becca Black
+					["coord"] = { 26.4, 62.3, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+				}),
 				q(65842, {	-- Disarming Behavior
-					["sourceQuests"] = { 66419 },	-- Allegiance to One
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.5, THE_WAKING_SHORES },
 					["isDaily"] = true,
 				}),
 				q(67099, {	-- Dragon Eyes
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				q(66103, {	-- Eager to Please
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				q(66308, {	-- Feeding the Fire
-					["sourceQuests"] = { 66419 },	-- Allegiance to One
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 188179 },	-- Stoker Volrax
 					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
+					["isWeekly"] = true,
 				}),
 				q(69983, {	-- Flamecarved Bone
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "i", 198071 },	-- Flamecarved Bone
 					["isWeekly"] = true,
 				}),
 				q(70848, {	-- Forgotten Dragon Crest
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "i", 199831 },	-- Forgotten Dragon Crest
 					["isDaily"] = true,
 				}),
 				q(69984, {	-- Gold-Banded Dragon Tooth
-					["sourceQuests"] = { 66419 },	-- Allegiance to One
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "i", 198072 },	-- Gold-Banded Dragon Tooth
 					["isWeekly"] = true,
 				}),
@@ -211,24 +217,30 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["isDaily"] = true,
 				}),
 				q(72447, {	-- Greatest of Threads
-					["sourceQuests"] = { 66419 },	-- Allegiance to One
+					["sourceQuest"] = 66419,	-- Allegiance To One
+					["provider"] = { "n", 191193 },	-- Exadria
+					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+				}),
+				q(66449, {	-- Hands-Off Operation
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				q(66445, {	-- Honor Our Fallen
-					["sourceQuests"] = { 66419 },	-- Allegiance to One
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				q(66882, {	-- Lost Battlepack
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "i", 193600 },	-- Lost Battlepack
 					["isDaily"] = true,
 				}),
 				q(66633, {	-- Make a Statement
-					["sourceQuests"] = { 66419 },	-- Allegiance to One
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
 					["isWeekly"] = true,
@@ -264,49 +276,37 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(72448, {	-- Securing Our Legacy
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				q(69918, {	-- Shaking Our Foundations
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				q(66326, {	-- The Tools of One's Trade
-					["sourceQuests"] = { 66419 },	-- Allegiance to One
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 188179 },	-- Stoker Volrax
 					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				q(72456, {	-- Tomes Of Trust
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 188344 },	-- Chydrass
 					["coord"] = { 25, 56.1, THE_WAKING_SHORES },
 				}),
 				q(67142, {	-- Wyrm Food
-					["sourceQuests"] = { 66419 },	-- Allegiance to One
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 196518 },	-- Voraxian
 					["coord"] = { 27.6,56.7, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
-				q(66449, {	-- Hands-Off Operation
-					["sourceQuests"] = { 66419 },	-- Allegiance to One
-					["provider"] = { "n", 191193 },	-- Exadria
-					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
-					["isWeekly"] = true,
-				}),
-				q(69926, {	-- Becca Black and the Seven Gnomes
-					["sourceQuests"] = { 66419 },	-- Allegiance to One
-					["provider"] = { "n", 191014 },	-- Becca Black
-					["coord"] = { 26.4, 62.3, THE_WAKING_SHORES },
-					["isWeekly"] = true,
-				}),
 				--[[
 				q(66856, {	-- Ashen Black and the Seven Gnomes
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 191014 },	-- Ashen Black
 					["coord"] = { 26.5, 62.5, THE_WAKING_SHORES },
 					["isDaily"] = true,
@@ -346,22 +346,22 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				n(HIDDEN_QUESTS, {
 					q(66362, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Igys the Believer)",
-						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+						["sourceQuest"] = 66419,	-- Allegiance To One
 						["cr"] = 187275,	-- Igys the Believer
 						["isDaily"] = true,
 					}),
 					q(66359, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Forgemaster Bazentus)",
-						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+						["sourceQuest"] = 66419,	-- Allegiance To One
 						["cr"] = 187272,	-- Forgemaster Bazentus
 						["isDaily"] = true,
 					}),
 					q(66360, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Sabellian)",
-						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+						["sourceQuest"] = 66419,	-- Allegiance To One
 						["cr"] = 187447,	-- Sabellian
 						["isDaily"] = true,
 					}),
 					q(66361, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Wrathion)",
-						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+						["sourceQuest"] = 66419,	-- Allegiance To One
 						["cr"] = 187284,	-- Wrathion
 						["isDaily"] = true,
 					}),
