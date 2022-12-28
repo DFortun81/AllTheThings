@@ -2610,6 +2610,7 @@ root("HiddenQuestTriggers", {
 			q(74141),	-- Skinning Blitztusk on a Grand Hunt
 			q(74140),	-- Skinning Norbett on a Grand Hunt
 			q(74142),	-- Skinning Sarana on a Grand Hunt
+			q(74182),	-- Skinning Makhra the Ashtouched
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--
