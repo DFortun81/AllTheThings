@@ -79,6 +79,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(70150, {	-- 'Many Whelps, Handle It'
 					["coord"] = { 57.8, 68, THE_WAKING_SHORES },
 				}),
+				q(67113, {	-- Excavation Emergency
+					["coord"] = { 66.2, 57.8, THE_WAKING_SHORES },
+				}),
 				--[[
 				q(67014, {	-- Gorlocs No More-locs
 					["coord"] = { 80, 39.6, THE_WAKING_SHORES },
