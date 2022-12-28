@@ -3,29 +3,28 @@
 -----------------------------------------------------
 root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(MYTHIC_PLUS, {
-		ach(16429, bubbleDownSelf({ ["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 } }, {	-- Thundering Hero: Dragonflight Season 1 [TEMP! Until we can use the new headers from Runaway]
-			["collectible"] = false,
-			["g"] = {
-				ach(16647),		-- Dragonflight Keystone Explorer: Season One
-				ach(16648, {	-- Dragonflight Keystone Conqueror: Season One
-					title(477),	-- <Name> the Thundering
-				}),
-				ach(16649, {		-- Dragonflight Keystone Master: Season One
-					i(199412),	-- Hailstorm Armoredon (MOUNT!)
-				}),
-				ach(16650),		-- Dragonflight Keystone Hero: Season One
-				ach(16429, {	-- Thundering Hero: Dragonflight Season 1
-					title(470),	-- <Name> the Thundering Hero
-				}),
-				ach(16643),		-- Keystone Hero: Algeth'ar Academy
-				ach(16658),		-- Keystone Hero: Court of Stars
-				ach(16659),		-- Keystone Hero: Halls of Valor
-				ach(16640),		-- Keystone Hero: Ruby Life Pools
-				ach(16660),		-- Keystone Hero: Shadowmoon Burial Grounds
-				ach(16661),		-- Keystone Hero: Temple of the Jade Serpent
-				ach(16645),		-- Keystone Hero: The Azure Vault
-				ach(16641),		-- Keystone Hero: The Nokhud Offensive
-			},
+		header(HEADERS.Achievement, 16429, bubbleDownSelf({	-- Thundering Hero: Dragonflight Season 1
+			["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 }
+		},{
+			ach(16647),		-- Dragonflight Keystone Explorer: Season One
+			ach(16648, {	-- Dragonflight Keystone Conqueror: Season One
+				title(477),	-- <Name> the Thundering
+			}),
+			ach(16649, {		-- Dragonflight Keystone Master: Season One
+				i(199412),	-- Hailstorm Armoredon (MOUNT!)
+			}),
+			ach(16650),		-- Dragonflight Keystone Hero: Season One
+			ach(16429, {	-- Thundering Hero: Dragonflight Season 1
+				title(470),	-- <Name> the Thundering Hero
+			}),
+			ach(16643),		-- Keystone Hero: Algeth'ar Academy
+			ach(16658),		-- Keystone Hero: Court of Stars
+			ach(16659),		-- Keystone Hero: Halls of Valor
+			ach(16640),		-- Keystone Hero: Ruby Life Pools
+			ach(16660),		-- Keystone Hero: Shadowmoon Burial Grounds
+			ach(16661),		-- Keystone Hero: Temple of the Jade Serpent
+			ach(16645),		-- Keystone Hero: The Azure Vault
+			ach(16641),		-- Keystone Hero: The Nokhud Offensive
 		})),
 		i(201471),	-- Story of a Spectacular Victory
 	}),
