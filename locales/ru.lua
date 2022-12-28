@@ -817,10 +817,6 @@ for key,value in pairs({
 		[-924] = "Транспортная Сеть",								-- Transport Network
 		-- SL Ardenweald/Night Fae
 			[-936] = "Формы души",									-- Soulshape Forms (Night Fae)
-			[-1002] = "Дух служения",								-- Dutiful Spirit
-			[-1003] = "Воинственный дух",							-- Martial Spirit
-			[-1004] = "Дух гордыни",								-- Prideful Spirit
-			[-1005] = "Неукрощенный дух",							-- Untamed Spirit
 		-- SL Bastion/Kyrian
 			[-940] = "Совет перерожденных",							-- Ascended Counil
 			[-973] = "Верность",									-- Loyalty

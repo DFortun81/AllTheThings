@@ -821,10 +821,6 @@ for key,value in pairs({
 		[-924] = "Rete di Trasporto",								-- Transport Network
 		-- SL Ardenweald/Night Fae
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
-			[-1002] = "Spirito Diligente",							-- Dutiful Spirit
-			[-1003] = "Spirito Marziale",							-- Martial Spirit
-			[-1004] = "Spirito Orgoglioso",							-- Prideful Spirit
-			[-1005] = "Spirito Indomito",							-- Untamed Spirit
 		-- SL Bastion/Kyrian
 			[-940] = "Concilio degli Ascesi",						-- Ascended Counil
 			--TODO: [-973] = "Loyalty",								-- Loyalty

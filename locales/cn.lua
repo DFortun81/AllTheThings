@@ -838,10 +838,6 @@ for key,value in pairs({
 		[-924] = "传送网络",											-- Transport Network
 		-- SL Ardenweald/Night Fae
 			[-936] = "灵魂变形形态",										-- Soulshape Forms (Night Fae)
-			[-1002] = "尽职精魂",										-- Dutiful Spirit
-			[-1003] = "尚武精魂",										-- Martial Spirit
-			[-1004] = "骄傲精魂",										-- Prideful Spirit
-			[-1005] = "狂野精魂",										-- Untamed Spirit
 		-- SL Bastion/Kyrian
 			[-940] = "晋升者议会",										-- Ascended Counil
 			[-973] = "忠诚",											-- Loyalty

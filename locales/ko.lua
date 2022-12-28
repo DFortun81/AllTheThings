@@ -829,10 +829,6 @@ for key,value in pairs({
 		[-924] = "이동 연결망",											-- Transport Network
 		-- SL Ardenweald/Night Fae
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
-			[-1002] = "충직한 영혼",								-- Dutiful Spirit
-			[-1003] = "무예의 영혼",								-- Martial Spirit
-			[-1004] = "긍지 높은 영혼",								-- Prideful Spirit
-			[-1005] = "야생의 영혼",								-- Untamed Spirit
 		-- SL Bastion/Kyrian
 			[-940] = "승천자 의회",										-- Ascended Counil
 			--TODO: [-973] = "Loyalty",								-- Loyalty

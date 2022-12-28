@@ -1097,8 +1097,6 @@ app.L = {
 		[-165] = "Interface\\Icons\\inv_box_01",											-- Junkboxes
 	-- Emissary
 		[-169] = app.asset("Interface_Emissary_Callings"),								    -- Emissary Quests
-	-- Legion Artifact Questline
-		[-170] = "Interface\\Icons\\spell_shaman_maelstromweapon",							-- Balance of Power
 	-- Events
 		[-176] = 3753381,																	-- Weekly Holidays
 	-- New Characters
@@ -1368,10 +1366,6 @@ app.L = {
 		--[-926] = Uses Different Icons														-- Tier 5
 		[-929] = "Interface\\Icons\\ui_sigil_nightfae",										-- Covenant: Night Fae
 		[-930] = "Interface\\Icons\\Sanctum_features_gardenweald",							-- Queen's Conservatory
-		[-1002] = 3528288,																	-- Dutiful Spirit
-		[-1003] = 3528296,																	-- Martial Spirit
-		[-1004] = 3528312,																	-- Prideful Spirit
-		[-1005] = 3528280,																	-- Untamed Spirit
 		[-936] = "Interface\\Icons\\Ability_nightfae_flicker",								-- Soulshape Forms (Night Fae)
 		[-939] = "Interface\\Icons\\ui_sigil_kyrian",										-- Covenant: Kyrian
 		[-942] = 3675496,																	-- Path of Ascension
@@ -1403,11 +1397,6 @@ app.L = {
 		--
 	-- Sets
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
-		-- Taken
-		--[-1002] = 3528288,																	-- Dutiful Spirit
-		--[-1003] = 3528296,																	-- Martial Spirit
-		--[-1004] = 3528312,																	-- Prideful Spirit
-		--[-1005] = 3528280,																	-- Untamed Spirit
 	-- Temp Sets for Creation Catalyst
 		[-1006] = app.asset("Difficulty_LFR"),
 		[-1007] = app.asset("Difficulty_Normal"),
@@ -1653,8 +1642,6 @@ app.L = {
 		[-165] = GetItemSubClassInfo(13,1),										-- Junkboxes
 	-- Emissary
 		[-169] = BOUNTY_BOARD_LOCKED_TITLE,										-- Emissary Quests
-	-- Legion Artifact Questline
-		[-170] = GetSpellInfo(41341),											-- Balance of Power
 	-- Events
 		[-176] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,								-- Weekly Holidays
 	-- Item Sets
@@ -1949,10 +1936,6 @@ app.L = {
 		[-930] = COVENANT_SANCTUM_FEATURE_NIGHT_FAE,							-- Queen's Conservatory
 		[-934] = C_Map.GetAreaInfo(12840),										-- Star Lake Amphitheater
 		[-936] = "Soulshape Forms",												-- Soulshape Forms (Night Fae)
-		[-1002] = "Dutiful Spirit",												-- Dutiful Spirit
-		[-1003] = "Martial Spirit",												-- Martial Spirit
-		[-1004] = "Prideful Spirit",											-- Prideful Spirit
-		[-1005] = "Untamed Spirit",												-- Untamed Spirit
 		-- SL Bastion/Kyrian
 		[-939] = GetSpellInfo(321076),											-- Kyrian
 		[-940] = "Ascended Council",											-- Ascended Counil
@@ -1984,10 +1967,6 @@ app.L = {
 	[-999] = MINIMAP_TRACKING_HIDDEN_QUESTS,								-- Hidden Quests, note that it's different from HIDDEN_QUEST_TRIGGERS
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
-		--[-1002] = "Dutiful Spirit",												-- Dutiful Spirit
-		--[-1003] = "Martial Spirit",												-- Martial Spirit
-		--[-1004] = "Prideful Spirit",												-- Prideful Spirit
-		--[-1005] = "Untamed Spirit",												-- Untamed Spirit
 	-- Temp Sets for Creation Catalyst
 		[-1006] = "Raid Finder Alternative",										-- Raid Finder Alternative
 		[-1007] = "Normal Alternative",												-- Normal Alternative
