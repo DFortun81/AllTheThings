@@ -2613,6 +2613,7 @@ root("HiddenQuestTriggers", {
 			q(74142),	-- Skinning Sarana on a Grand Hunt
 			q(74182),	-- Skinning Makhra the Ashtouched
 			q(74214),	-- Skinning Moth'go Deeploom
+			q(74198),	-- Skinning The Weeping Vilomah
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--
