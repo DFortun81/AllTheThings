@@ -12,7 +12,7 @@ _.Zones =
 						i(143660),	-- Mrgrglhjorn (TOY!)
 					}),
 				}),
-				n(-170, {	-- Balance of Power
+				header(HEADERS.Spell, 41341, {	-- Balance of Power
 					["description"] = "The only known requirement to start this questline is the completion of your class campaign.",
 					["maps"] = CLASS_HALL_MAPS,
 					["g"] = {

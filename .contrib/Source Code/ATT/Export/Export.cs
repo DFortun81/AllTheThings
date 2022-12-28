@@ -76,7 +76,12 @@ namespace ATT
             ObjectData.Create("tierID",             "t",            "_.CreateTier", "f");
             ObjectData.Create("professionID",       "prof",         "_.CreateProfession", "requireSkill", "modID");
             ObjectData.Create("vignetteID",         "v",            "_.CreateVignette", "f");
-            ObjectData.Create<NPCData>("creatureID", "n",           "_.CreateNPC", "f");
+            ObjectData.Create<NPCData>("creatureID","n",            "_.CreateNPC", "f");
+#if ANYCLASSIC
+            // Classic has no implementation for Automated Headers... the _main.lua file will translate them into non-collectible versions of the respective Things
+#else
+            ObjectData.Create("headerID",           "h",            "_.CreateHeader", "f");
+#endif
             ObjectData.Create("f",                  "flt",          "_.CreateFilter");
         }
 

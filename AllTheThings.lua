@@ -6104,7 +6104,7 @@ fieldConverters = {
 	end,
 	["headerID"] = function(group, value)
 		-- WARNING: DEV ONLY START
-		if not L["HEADER_NAMES"][value] then
+		if not group.type and not L["HEADER_NAMES"][value] then
 			print("Header Missing Name ", value);
 			L["HEADER_NAMES"][value] = "Header #" .. value;
 		end
@@ -12937,6 +12937,43 @@ fields.repeatable = npcFields.repeatableAsQuest;
 fields.saved = fields.savedAsQuest;
 app.BaseNPCWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseNPCWithAchievementAndQuest");
 
+local HeaderTypeAbbreviations = {
+	["a"] = "achievementID",
+	["m"] = "mapID",
+	["i"] = "itemID",
+	["q"] = "questID",
+	["s"] = "spellID",
+};
+-- Alternate functions to attach data into a table based on an id for a given type code
+local AlternateDataTypes = {
+	["c"] = function(t, id)
+		local name = GetCategoryInfo(id);
+		t.name = name;
+	end,
+};
+local cache = app.CreateCache("headerCode");
+local function CacheInfo(t, field)
+	local type = t.type;
+	if not type then return; end
+	local id = t.headerID;
+	local _t = cache.GetCached(t);
+	local altFunc = AlternateDataTypes[type];
+	if altFunc then
+		altFunc(_t, id);
+	else
+		local typeID = HeaderTypeAbbreviations[type] or type;
+		local obj = app.SearchForObject(typeID, id) or CreateObject({[typeID]=id});
+		if obj then
+			-- app.PrintDebug("Automatic Header",obj.name or obj.link)
+			_t.name = obj.name or obj.link;
+			_t.icon = obj.icon;
+		else
+			app.print("Failed finding object/function for automatic header",t.headerCode);
+		end
+	end
+	if field then return _t[field]; end
+end
+
 -- Header Lib
 local headerFields = {
 	["key"] = function(t)
@@ -12982,6 +13019,27 @@ fields.icon = headerFields.iconAsAchievement;
 fields.saved = headerFields.savedAsQuest;
 fields.trackable = headerFields.trackableAsQuest;
 app.BaseHeaderWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseHeaderWithAchievementAndQuest");
+-- Automatic Type Header
+local fields = RawCloneData(headerFields, {
+	["headerCode"] = function(t)
+		if t.type then
+			return t.type..t.headerID;
+		else
+			return t.headerID;
+		end
+	end,
+	["name"] = function(t)
+		return cache.GetCachedField(t, "name", CacheInfo);
+	end,
+	["icon"] = function(t)
+		return cache.GetCachedField(t, "icon", CacheInfo) or 4555017;
+	end,
+});
+fields.description = nil;
+app.BaseAutomaticHeader = app.BaseObjectFields(fields, "BaseAutomaticHeader");
+app.CreateHeader = function(id, t)
+	return setmetatable(constructor(id, t, "headerID"), app.BaseAutomaticHeader);
+end
 app.CreateNPC = function(id, t)
 	if t then
 		-- TEMP: clean MoH tagging from random Vendors
