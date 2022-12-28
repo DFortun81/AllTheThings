@@ -72,7 +72,7 @@ root("Instances", tier(SL_TIER, {
 				ach(15045),		-- Keystone Hero: The Necrotic Wake
 				ach(15050),		-- Keystone Hero: Theater of Pain
 			})),
-			header(HEADERS.Achievement, 15691, bubbleDownSelf({	-- Cryptic Hero: Shadowlands Season 3
+			header(HEADERS.Achievement, 15756, bubbleDownSelf({	-- Shrouded Hero: Shadowlands Season 4
 				["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE },
 			},{
 				ach(15688),		-- Shadowlands Keystone Explorer: Season Four

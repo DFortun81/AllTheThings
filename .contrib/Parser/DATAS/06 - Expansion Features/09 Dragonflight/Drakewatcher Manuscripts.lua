@@ -70,7 +70,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(196978),	-- Cliffside Wylderdrake: Small Head Spikes
 		i(197020),	-- Cliffside Wylderdrake: Spear Tail (DM!)
 		i(196970),	-- Cliffside Wylderdrake: Spiked Back
-		i(196971),	-- Cliffside Wylderdrake: Spiked Brow
+		i(196971),	-- Cliffside Wylderdrake: Spiked Brow (DM!)
 		i(197003),	-- Cliffside Wylderdrake: Spiked Cheek (DM!)
 		i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail
 		i(196995),	-- Cliffside Wylderdrake: Spiked Horns

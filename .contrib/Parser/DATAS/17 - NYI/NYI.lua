@@ -639,7 +639,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor
 			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
 			i(196970),	-- Cliffside Wylderdrake: Spiked Back
-			i(196971),	-- Cliffside Wylderdrake: Spiked Brow
 			i(196974),	-- Cliffside Wylderdrake: Four Horned Chin
 			i(196975),	-- Cliffside Wylderdrake: Head Fin
 			i(196978),	-- Cliffside Wylderdrake: Small Head Spikes
@@ -1029,7 +1028,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201820),	-- Silithus Swiss
 			i(201989),	-- Twisted Heart
 			i(202062),	-- Ash Feather
-			i(202107),	-- Shadowscrawled Coin
 			i(202122),	-- Primal Chaos Cluster
 			i(202152),	-- Storm-Charged Manipulator
 			i(202172),	-- Overflowing Satchel of Coins
