@@ -1170,8 +1170,15 @@ DF_PHASE_ONE = 100;
 -- #endif
 
 -- Timelines
+ADDED_SL_REL = "added 9.0.2";							-- Shadowlands Launch on November 23rd, 2020
+ADDED_SL_0_5 = "added 9.0.5";							-- Shadowlands 9.0.5 Start on March 9th, 2021
+ADDED_SL_S2 = "added 9.1.0";							-- Shadowlands Season 2 Start on June 29th, 2021
+REMOVED_SL_S2 = "removed 9.1.0";						-- Shadowlands Season 2 Start on June 29th, 2021
+ADDED_SL_S3 = "added 9.2.0";							-- Shadowlands Season 3 Start on February 22nd, 2022
+REMOVED_SL_S3 = "removed 9.2.0";						-- Shadowlands Season 3 Start on February 22nd, 2022
 ADDED_SL_S4 = "added 9.2.5.44908";						-- Shadowlands Season 4 Start on August 2, 2022
 REMOVED_SL_S4 = "removed 9.2.5.44908";					-- Shadowlands Season 4 Start on August 2, 2022
+--
 CREATED_DF_PRE = "created 10.0.0";						-- First phase of Dragonflight pre-patch on October 25th, 2022
 ADDED_DF_PRE = "added 10.0.0";							-- First phase of Dragonflight pre-patch on October 25th, 2022
 REMOVED_DF_PRE = "removed 10.0.0";						-- First phase of Dragonflight pre-patch on October 25th, 2022
