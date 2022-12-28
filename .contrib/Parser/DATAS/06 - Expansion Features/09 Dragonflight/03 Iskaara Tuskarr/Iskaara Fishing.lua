@@ -142,6 +142,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 				}),
 					-- Thaldraszus
+				q(71193, {	-- Underwater Menace
+					--["provider"] = { "n",  },	-- TODO
+					["coord"] = { 57.2, 65.3, THALDRASZUS },
+					["isDaily"] = true,
+					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
+				}),
 
 					-- Repeatables --
 				q(70201, {	-- Catch and Release: Aileron Seamoth
