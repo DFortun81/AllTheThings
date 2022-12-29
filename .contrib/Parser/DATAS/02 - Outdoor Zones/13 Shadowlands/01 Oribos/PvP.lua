@@ -148,7 +148,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								}),
 							},
 						})),
-						header(HEADERS.Achievement, SEASON_ETERNAL, bubbleDownSelf({
+						header(HEADERS.Achievement, SEASON_ETERNAL, bubbleDown({
 							["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE },
 						},{
 							["icon"] = "Interface\\Icons\\inv_shadebeastmount_orange",
@@ -1680,7 +1680,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								}),
 							},
 						})),
-						header(HEADERS.Achievement, SEASON_ETERNAL, bubbleDownSelf({
+						header(HEADERS.Achievement, SEASON_ETERNAL, bubbleDown({
 							["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE },
 						},{
 							["icon"] = "Interface\\Icons\\inv_shadebeastmount_orange",
