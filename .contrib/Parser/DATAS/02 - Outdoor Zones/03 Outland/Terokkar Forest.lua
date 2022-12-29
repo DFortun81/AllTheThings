@@ -328,32 +328,23 @@ root("Zones", {
 						["OnTooltip"] = OnTooltipForSkyguard,
 					})),
 				}),
-				n(FLIGHT_PATHS, {
-					fp(121, {	-- Allerian Stronghold, Terokkar Forest
-						["cr"] = 18809,	-- Furnan Skysoar <Gryphon Master>
-						["coord"] = { 59.4, 55.4, TEROKKAR_FOREST },
-						["races"] = ALLIANCE_ONLY,
-					}),
-					fp(127, {	-- Stonebreaker Hold, Terokkar Forest
-						["cr"] = 18807,	-- Kerna <Wind Rider Master>
-						["coord"] = { 49.2, 43.4, TEROKKAR_FOREST },
-						["races"] = HORDE_ONLY,
-					}),
-				}),
 				prof(FISHING, {
 					i(34865),	-- Blackfin Darter
 					-- #if ANYCLASSIC
 					ach(1225, {	-- Outland Angler
+						["provider"] = { "o", 182957 },	-- Highland Mixed School
 						["criteriaID"] = 3869,	-- Highland Mixed School
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
+						["provider"] = { "o", 182957 },	-- Highland Mixed School
 						["criteriaID"] = 3627,	-- Highland Mixed School
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
 					i(27388, {	-- Mr. Pinchy
+						["provider"] = { "o", 182957 },	-- Highland Mixed School
 						["description"] = "Fished up from Highland Mixed Schools. You have 3 wishes per Mr. Pinchy, each wish granting one of the following effects:\n\n1) Mr. Pinchy's Blessing (Flask)\n2) Summon Furious Mr. Pinchy (Enemy)\n3) Magical Crawdad Box (Rare Pet)\n4) Mr. Pinchy's Gift (Potions)\n5) Benevolent Mr. Pinchy (Guardian)",
 						["groups"] = {
 							i(27445),	-- Magical Crawdad Box
@@ -367,15 +358,29 @@ root("Zones", {
 					}),
 					-- #if ANYCLASSIC
 					ach(1225, {	-- Outland Angler
+						["provider"] = { "o", 182956 },	-- School of Darter
 						["criteriaID"] = 3868,	-- School of Darter
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
+						["provider"] = { "o", 182956 },	-- School of Darter
 						["criteriaID"] = 3628,	-- School of Darter
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
+				}),
+				n(FLIGHT_PATHS, {
+					fp(121, {	-- Allerian Stronghold, Terokkar Forest
+						["cr"] = 18809,	-- Furnan Skysoar <Gryphon Master>
+						["coord"] = { 59.4, 55.4, TEROKKAR_FOREST },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					fp(127, {	-- Stonebreaker Hold, Terokkar Forest
+						["cr"] = 18807,	-- Kerna <Wind Rider Master>
+						["coord"] = { 49.2, 43.4, TEROKKAR_FOREST },
+						["races"] = HORDE_ONLY,
+					}),
 				}),
 				n(QUESTS, {
 					q(11666, {	-- Bait Bandits

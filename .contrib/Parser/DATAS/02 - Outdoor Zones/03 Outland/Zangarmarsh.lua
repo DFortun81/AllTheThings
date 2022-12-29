@@ -306,6 +306,46 @@ root("Zones", {
 						["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
 					}),
 				}),
+				prof(FISHING, {
+					i(35313, {	-- Bloated Barbed Gill Trout
+						i(34866),	-- Giant Freshwater Shrimp
+					}),
+					-- #if ANYCLASSIC
+					ach(1225, {	-- Outland Angler
+						["provider"] = { "o", 182954 },	-- Brackish Mixed School
+						["criteriaID"] = 3865,	-- Brackish Mixed School
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
+					ach(1225, {	-- Outland Angler
+						["provider"] = { "o", 182954 },	-- Brackish Mixed School
+						["criteriaID"] = 3623,	-- Brackish Mixed School
+						["requireSkill"] = FISHING,
+					}),
+					-- #endif
+					o(182952, {	-- Steam Pump Flotsam
+						["model"] = 219411,
+						["groups"] = {
+							i(27481),	-- Heavy Supply Crate
+							i(34469, {	-- Strange Engine Part
+								["description"] = "\"Don't pay anybody in advance. And don't ride in anything with a Capissen 38 engine, they fall right out of the sky.\" - Kaylee Fry",
+							}),
+						},
+					}),
+					-- #if ANYCLASSIC
+					ach(1225, {	-- Outland Angler
+						["provider"] = { "o", 182953 },	-- Sporefish School
+						["criteriaID"] = 3870,	-- Sporefish School
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
+					ach(1225, {	-- Outland Angler
+						["provider"] = { "o", 182953 },	-- Sporefish School
+						["criteriaID"] = 3628,	-- Sporefish School
+						["requireSkill"] = FISHING,
+					}),
+					-- #endif
+				}),
 				n(FLIGHT_PATHS, {
 					fp(164, {	-- Orebor Harborage, Zangarmarsh
 						["cr"] = 22485,	-- Halu <Hippogryph Master>
@@ -327,42 +367,6 @@ root("Zones", {
 						["coord"] = { 33.0, 51.0, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 					}),
-				}),
-				prof(FISHING, {
-					i(35313, {	-- Bloated Barbed Gill Trout
-						i(34866),	-- Giant Freshwater Shrimp
-					}),
-					-- #if ANYCLASSIC
-					ach(1225, {	-- Outland Angler
-						["criteriaID"] = 3865,	-- Brackish Mixed School
-						["requireSkill"] = FISHING,
-					}),
-					-- #else
-					ach(1225, {	-- Outland Angler
-						["criteriaID"] = 3623,	-- Brackish Mixed School
-						["requireSkill"] = FISHING,
-					}),
-					-- #endif
-					o(182952, {	-- Steam Pump Flotsam
-						["model"] = 219411,
-						["groups"] = {
-							i(27481),	-- Heavy Supply Crate
-							i(34469, {	-- Strange Engine Part
-								["description"] = "\"Don't pay anybody in advance. And don't ride in anything with a Capissen 38 engine, they fall right out of the sky.\" - Kaylee Fry",
-							}),
-						},
-					}),
-					-- #if ANYCLASSIC
-					ach(1225, {	-- Outland Angler
-						["criteriaID"] = 3870,	-- Sporefish School
-						["requireSkill"] = FISHING,
-					}),
-					-- #else
-					ach(1225, {	-- Outland Angler
-						["criteriaID"] = 3628,	-- Sporefish School
-						["requireSkill"] = FISHING,
-					}),
-					-- #endif
 				}),
 				n(QUESTS, {
 					q(50130, {	-- A Friendly Gesture

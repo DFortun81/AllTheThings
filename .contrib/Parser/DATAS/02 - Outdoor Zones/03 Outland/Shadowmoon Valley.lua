@@ -178,6 +178,9 @@ root("Zones", {
 						["OnTooltip"] = OnTooltipForNetherwing,
 					})),
 				}),
+				prof(FISHING, {
+					i(34867),	-- Monstrous Felblood Snapper
+				}),
 				n(FLIGHT_PATHS, {
 					fp(140, {	-- Altar of Sha'tar, Shadowmoon Valley
 						["cr"] = 19581,	-- Maddix <Flight Master>
@@ -199,9 +202,6 @@ root("Zones", {
 						["coord"] = { 37.6, 55.4, SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 					}),
-				}),
-				prof(FISHING, {
-					i(34867),	-- Monstrous Felblood Snapper
 				}),
 				prof(HERBALISM, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32506)),	-- Netherwing Egg
