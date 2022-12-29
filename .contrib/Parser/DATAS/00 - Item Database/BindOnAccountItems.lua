@@ -14,6 +14,8 @@ end
 
 -- DF Currencies
 i(199211);	-- Primeval Essence
+i(201254);	-- Medal of Honor [A]
+i(201255);	-- Medal of Honor [H]
 
 -- BoA Cost Items
 i(137642);	-- Mark of Honor

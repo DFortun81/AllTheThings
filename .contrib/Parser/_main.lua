@@ -529,6 +529,27 @@ HEALERS = {
 	SHAMAN,
 	EVOKER,
 };
+CLOTH_CLASSES = {
+	MAGE,
+	PRIEST,
+	WARLOCK,
+};
+LEATHER_CLASSES = {
+	DEMONHUNTER,
+	DRUID,
+	MONK,
+	ROGUE,
+};
+MAIL_CLASSES = {
+	EVOKER,
+	HUNTER,
+	SHAMAN,
+};
+PLATE_CLASSES = {
+	DEATHKNIGHT,
+	PALADIN,
+	WARRIOR,
+};
 
 -- Specializations
 -- CRIEVE NOTE: Do not use the simple versions, they will be deprecated and replaced with fully formed class/spec constants.
@@ -819,6 +840,9 @@ BOSSES = -139;
 SCENARIOS = -10069;
 MYTHIC_PLUS = -857;
 
+-- Mythic Seasons
+SEASON_THUNDERING = 16429;
+
 -- Pet
 PET_BATTLE = -796;
 PET_JOURNAL = -797;
@@ -880,7 +904,7 @@ SEASON_SINFUL = -693;
 SEASON_UNCHAINED = -694;
 SEASON_COSMIC = -695;
 SEASON_ETERNAL = -696;
-SEASON_CRIMSON = -697;
+SEASON_CRIMSON = 15951;
 
 -- Expansion Features
 LEGENDARIES = -364;
@@ -993,6 +1017,7 @@ P9xx = -2188;
 --     T H E  E N D     --
 --------------------------
 -- Currencies
+HONOR = 1792;
 ANIMA = 1813;
 GRATEFUL = 1885;
 DRAGON_SUPPLIES = 2003;

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(MYTHIC_PLUS, {
-		header(HEADERS.Achievement, 16429, bubbleDownSelf({	-- Thundering Hero: Dragonflight Season 1
+		header(HEADERS.Achievement, SEASON_THUNDERING, bubbleDownSelf({
 			["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 }
 		},{
 			ach(16647),		-- Dragonflight Keystone Explorer: Season One

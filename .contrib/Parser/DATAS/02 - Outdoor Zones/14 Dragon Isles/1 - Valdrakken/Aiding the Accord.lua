@@ -6,63 +6,23 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		header(HEADERS.Quest, 70750, {	-- Aiding the Accord
 			-- Weekly
 			-- 71243 / 72892 also likely possible weekly quests. completed with all of the other below
-			n(QUESTS, {
-				q(70750, {	-- Aiding the Accord
-					["sourceQuestNumRequired"] = 1,
-					["sourceQuests"] = {
-						71232,	-- Renown of the Dragon Isles
-						72366,	-- HQT unlock on alts
-					},
-					["provider"] = { "n", 196499 },	-- Therazal
-					["coord"] = { 50.7, 58.0, VALDRAKKEN },
-					["isWeekly"] = true,
-					["_drop"] = { "g" },
-				}),
-				q(72068, {	-- Aiding the Accord: A Feast For All
-					["sourceQuestNumRequired"] = 1,
-					["sourceQuests"] = {
-						71232,	-- Renown of the Dragon Isles
-						72366,	-- HQT unlock on alts
-					},
-					["provider"] = { "n", 196499 },	-- Therazal
-					["coord"] = { 50.7, 58.0, VALDRAKKEN },
-					["isWeekly"] = true,
-					["_drop"] = { "g" },
-				}),
-				q(72374, {	-- Aiding the Accord: Dragonbane Keep
-					["sourceQuestNumRequired"] = 1,
-					["sourceQuests"] = {
-						71232,	-- Renown of the Dragon Isles
-						72366,	-- HQT unlock on alts
-					},
-					["provider"] = { "n", 196499 },	-- Therazal
-					["coord"] = { 50.7, 58.0, VALDRAKKEN },
-					["isWeekly"] = true,
-					["_drop"] = { "g" },
-				}),
-				q(72373, {	-- Aiding the Accord: The Hunt is On
-					["sourceQuestNumRequired"] = 1,
-					["sourceQuests"] = {
-						71232,	-- Renown of the Dragon Isles
-						72366,	-- HQT unlock on alts
-					},
-					["provider"] = { "n", 196499 },	-- Therazal
-					["coord"] = { 50.7, 58.0, VALDRAKKEN },
-					["isWeekly"] = true,
-					["_drop"] = { "g" },
-				}),
-				q(72375, {	-- Aiding the Accord: The Isles Call
-					["sourceQuestNumRequired"] = 1,
-					["sourceQuests"] = {
-						71232,	-- Renown of the Dragon Isles
-						72366,	-- HQT unlock on alts
-					},
-					["provider"] = { "n", 196499 },	-- Therazal
-					["coord"] = { 50.7, 58.0, VALDRAKKEN },
-					["isWeekly"] = true,
-					["_drop"] = { "g" },
-				}),
-			}),
+			n(QUESTS, sharedData({
+				["sourceQuestNumRequired"] = 1,
+				["sourceQuests"] = {
+					71232,	-- Renown of the Dragon Isles
+					72366,	-- HQT unlock on alts
+				},
+				["provider"] = { "n", 196499 },	-- Therazal
+				["coord"] = { 50.7, 58.0, VALDRAKKEN },
+				["isWeekly"] = true,
+				["_drop"] = { "g" },
+			},{
+				q(70750),	-- Aiding the Accord
+				q(72068),	-- Aiding the Accord: A Feast For All
+				q(72374),	-- Aiding the Accord: Dragonbane Keep
+				q(72373),	-- Aiding the Accord: The Hunt is On
+				q(72375),	-- Aiding the Accord: The Isles Call
+			})),
 			n(REWARDS, {
 				i(200073, {	-- Valdrakken Treasures
 					["sym"] = {

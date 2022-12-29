@@ -990,12 +990,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193067),	-- Acadia's Tools [DNT/Unused]
 			i(194337),	-- Liquid Courage
 			i(198441),	-- Thunderspine Tenders
-			i(201250),	-- Victorious Contender's Strongbox
 			i(201251),	-- Pillaged Contender's Strongbox
 			i(201252),	-- 10.0 Bronze PvP Chest (DNT)
 			i(201253),	-- Competitor's Edge
-			i(201254),	-- Medal of Honor
-			i(201255),	-- Medal of Honor
 			--
 			i(200944),	-- Djaradin's Trophy Mask
 			--
