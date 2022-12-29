@@ -170,6 +170,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 191014 },	-- Becca Black
 					["coord"] = { 26.4, 62.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
+					["g"] = {
+						i(197946),	-- Dragonforged Poker
+						i(197959),	-- Lavafused Armor
+					},
 				}),
 				q(65842, {	-- Disarming Behavior
 					["sourceQuest"] = 66419,	-- Allegiance To One

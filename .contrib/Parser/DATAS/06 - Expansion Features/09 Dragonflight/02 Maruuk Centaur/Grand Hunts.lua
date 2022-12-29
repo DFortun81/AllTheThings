@@ -365,7 +365,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["questID"] = 71044,
 				}),
 				i(194093, {	-- Bakar Companion Color: Brown
-					--["questID"] = TODO, probably 71045
+					["questID"] = 71045,
 				}),
 				i(194091, {	-- Bakar Companion Color: Golden Brown
 					["questID"] = 71048,

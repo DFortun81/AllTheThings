@@ -157,11 +157,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				crit(12),	-- Wild Preserve
 			}),
 			ach(16493, {	-- Petty Theft Mammoth
-				["coords"] = {
-					{ 33.3, 72.2, THE_WAKING_SHORES },	-- Burning Ascent
-					{ 23.6, 71.5, THE_WAKING_SHORES },	-- Dragonbane Keep
-					{ 37.2, 44.5, THE_WAKING_SHORES },	-- Smoldering Perch
-					{ 66.3, 24.6, THE_WAKING_SHORES },	-- Scalecracker Keep
+				["description"] = "Find Mammoths to ride from the individual locations to the location specified on this achievement.",
+				["cr"] = 198163,	-- Mammoth-Tamer Tavok
+				["coord"] = { 39.6, 55.0, THE_WAKING_SHORES },	-- Turn in
+				["g"] = {
+					crit(1, {	-- Smoldering Perch
+						["coord"] = { 37.2, 44.5, THE_WAKING_SHORES },
+						["cr"] = 194625,	-- Tame Magmammoth
+					}),
+					crit(2, {	-- Burning Ascent
+						["coord"] = { 33.3, 72.2, THE_WAKING_SHORES },
+						["cr"] = 198150,	-- Tame Magmammoth
+					}),
+					crit(3, {	-- Scalecracker Keep
+						["coord"] = { 66.3, 24.6, THE_WAKING_SHORES },
+						-- ["cr"] = TODO,	-- Tame Magmammoth
+					}),
+					crit(4, {	-- Dragonbane Keep
+						["coord"] = { 23.6, 71.5, THE_WAKING_SHORES },
+						-- ["cr"] = TODO,	-- Tame Magmammoth
+					}),
 				},
 			}),
 			ach(16401),	-- Sojourner of the Waking Shores

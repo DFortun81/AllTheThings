@@ -160,25 +160,367 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["_quests"] = { 67084 },	-- The Silver Purpose
 			}),
 		}),
+		petbattle(ach(16512, {	-- Family Battler of the Dragon Isles
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				16501,	-- Aquatic Battler of the Dragon Isles
+				16503,	-- Beast Battler of the Dragon Isles
+				16504,	-- Critter Battler of the Dragon Isles
+				16505,	-- Dragonkin Battler of the Dragon Isles
+				16506,	-- Elemental Battler of the Dragon Isles
+				16507,	-- Flying Battler of the Dragon Isles
+				16508,	-- Humanoid Battler of the Dragon Isles
+				16509,	-- Magic Battler of the Dragon Isles
+				16510,	-- Mechanical Battler of the Dragon Isles
+				16511,	-- Undead Battler of the Dragon Isles
+			}},
+			["g"] = {
+				i(200874),	-- Lady Feathersworth (PET!)
+			},
+		})),
+		petbattle(ach(16501, { -- Aquatic Battler of the Dragon Isles
+			crit(1, {	-- Arcantus
+				["cr"] = 197417,
+				["coord"] = { 41.0, 59.4, THE_AZURE_SPAN },
+			}),
+			crit(2, {	-- Bakhushek
+				["cr"] = 197102,
+				["coord"] = { 62.0, 41.6, OHNAHRAN_PLAINS },
+			}),
+			crit(3, {	-- Enyobon
+				["cr"] = 197336,
+				["coord"] = { 39.4, 73.6, THALDRASZUS },
+			}),
+			crit(4, {	-- Haniko
+				["cr"] = 196264,
+				["coord"] = { 38.8, 83.2, THE_WAKING_SHORES },
+			}),
+			crit(5, {	-- Patchu
+				["cr"] = 196069,
+				["coord"] = { 13.8, 49.8, THE_AZURE_SPAN },
+			}),
+			crit(6, {	-- Setimothes
+				["cr"] = 197350,
+				["coord"] = { 56.2, 49.2, THALDRASZUS },
+			}),
+			crit(7, {	-- Stormamu
+				["cr"] = 197447,
+				["coord"] = { 24.4, 42.4, OHNAHRAN_PLAINS },
+			}),
+			crit(8, {	-- Swog
+				["cr"] = 189376,
+				["coord"] = { 26.0, 92.4, THE_WAKING_SHORES },
+			}),
+		})),
+		petbattle(ach(16503, {	-- Beast Battler of the Dragon Isles
+			crit(1, {	-- Arcantus
+				["cr"] = 197417,
+				["coord"] = { 41.0, 59.4, THE_AZURE_SPAN },
+			}),
+			crit(2, {	-- Bakhushek
+				["cr"] = 197102,
+				["coord"] = { 62.0, 41.6, OHNAHRAN_PLAINS },
+			}),
+			crit(3, {	-- Enyobon
+				["cr"] = 197336,
+				["coord"] = { 39.4, 73.6, THALDRASZUS },
+			}),
+			crit(4, {	-- Haniko
+				["cr"] = 196264,
+				["coord"] = { 38.8, 83.2, THE_WAKING_SHORES },
+			}),
+			crit(5, {	-- Patchu
+				["cr"] = 196069,
+				["coord"] = { 13.8, 49.8, THE_AZURE_SPAN },
+			}),
+			crit(6, {	-- Setimothes
+				["cr"] = 197350,
+				["coord"] = { 56.2, 49.2, THALDRASZUS },
+			}),
+			crit(7, {	-- Stormamu
+				["cr"] = 197447,
+				["coord"] = { 24.4, 42.4, OHNAHRAN_PLAINS },
+			}),
+			crit(8, {	-- Swog
+				["cr"] = 189376,
+				["coord"] = { 26.0, 92.4, THE_WAKING_SHORES },
+			}),
+		})),
+		petbattle(ach(16504, {	-- Critter Battler of the Dragon Isles
+			crit(1, {	-- Arcantus
+				["cr"] = 197417,
+				["coord"] = { 41.0, 59.4, THE_AZURE_SPAN },
+			}),
+			crit(2, {	-- Bakhushek
+				["cr"] = 197102,
+				["coord"] = { 62.0, 41.6, OHNAHRAN_PLAINS },
+			}),
+			crit(3, {	-- Enyobon
+				["cr"] = 197336,
+				["coord"] = { 39.4, 73.6, THALDRASZUS },
+			}),
+			crit(4, {	-- Haniko
+				["cr"] = 196264,
+				["coord"] = { 38.8, 83.2, THE_WAKING_SHORES },
+			}),
+			crit(5, {	-- Patchu
+				["cr"] = 196069,
+				["coord"] = { 13.8, 49.8, THE_AZURE_SPAN },
+			}),
+			crit(6, {	-- Setimothes
+				["cr"] = 197350,
+				["coord"] = { 56.2, 49.2, THALDRASZUS },
+			}),
+			crit(7, {	-- Stormamu
+				["cr"] = 197447,
+				["coord"] = { 24.4, 42.4, OHNAHRAN_PLAINS },
+			}),
+			crit(8, {	-- Swog
+				["cr"] = 189376,
+				["coord"] = { 26.0, 92.4, THE_WAKING_SHORES },
+			}),
+		})),
+		petbattle(ach(16505, {	-- Dragonkin Battler of the Dragon Isles
+			crit(1, {	-- Arcantus
+				["cr"] = 197417,
+				["coord"] = { 41.0, 59.4, THE_AZURE_SPAN },
+			}),
+			crit(2, {	-- Bakhushek
+				["cr"] = 197102,
+				["coord"] = { 62.0, 41.6, OHNAHRAN_PLAINS },
+			}),
+			crit(3, {	-- Enyobon
+				["cr"] = 197336,
+				["coord"] = { 39.4, 73.6, THALDRASZUS },
+			}),
+			crit(4, {	-- Haniko
+				["cr"] = 196264,
+				["coord"] = { 38.8, 83.2, THE_WAKING_SHORES },
+			}),
+			crit(5, {	-- Patchu
+				["cr"] = 196069,
+				["coord"] = { 13.8, 49.8, THE_AZURE_SPAN },
+			}),
+			crit(6, {	-- Setimothes
+				["cr"] = 197350,
+				["coord"] = { 56.2, 49.2, THALDRASZUS },
+			}),
+			crit(7, {	-- Stormamu
+				["cr"] = 197447,
+				["coord"] = { 24.4, 42.4, OHNAHRAN_PLAINS },
+			}),
+			crit(8, {	-- Swog
+				["cr"] = 189376,
+				["coord"] = { 26.0, 92.4, THE_WAKING_SHORES },
+			}),
+		})),
+		petbattle(ach(16506, {	-- Elemental Battler of the Dragon Isles
+			crit(1, {	-- Arcantus
+				["cr"] = 197417,
+				["coord"] = { 41.0, 59.4, THE_AZURE_SPAN },
+			}),
+			crit(2, {	-- Bakhushek
+				["cr"] = 197102,
+				["coord"] = { 62.0, 41.6, OHNAHRAN_PLAINS },
+			}),
+			crit(3, {	-- Enyobon
+				["cr"] = 197336,
+				["coord"] = { 39.4, 73.6, THALDRASZUS },
+			}),
+			crit(4, {	-- Haniko
+				["cr"] = 196264,
+				["coord"] = { 38.8, 83.2, THE_WAKING_SHORES },
+			}),
+			crit(5, {	-- Patchu
+				["cr"] = 196069,
+				["coord"] = { 13.8, 49.8, THE_AZURE_SPAN },
+			}),
+			crit(6, {	-- Setimothes
+				["cr"] = 197350,
+				["coord"] = { 56.2, 49.2, THALDRASZUS },
+			}),
+			crit(7, {	-- Stormamu
+				["cr"] = 197447,
+				["coord"] = { 24.4, 42.4, OHNAHRAN_PLAINS },
+			}),
+			crit(8, {	-- Swog
+				["cr"] = 189376,
+				["coord"] = { 26.0, 92.4, THE_WAKING_SHORES },
+			}),
+		})),
+		petbattle(ach(16507, {	-- Flying Battler of the Dragon Isles
+			crit(1, {	-- Arcantus
+				["cr"] = 197417,
+				["coord"] = { 41.0, 59.4, THE_AZURE_SPAN },
+			}),
+			crit(2, {	-- Bakhushek
+				["cr"] = 197102,
+				["coord"] = { 62.0, 41.6, OHNAHRAN_PLAINS },
+			}),
+			crit(3, {	-- Enyobon
+				["cr"] = 197336,
+				["coord"] = { 39.4, 73.6, THALDRASZUS },
+			}),
+			crit(4, {	-- Haniko
+				["cr"] = 196264,
+				["coord"] = { 38.8, 83.2, THE_WAKING_SHORES },
+			}),
+			crit(5, {	-- Patchu
+				["cr"] = 196069,
+				["coord"] = { 13.8, 49.8, THE_AZURE_SPAN },
+			}),
+			crit(6, {	-- Setimothes
+				["cr"] = 197350,
+				["coord"] = { 56.2, 49.2, THALDRASZUS },
+			}),
+			crit(7, {	-- Stormamu
+				["cr"] = 197447,
+				["coord"] = { 24.4, 42.4, OHNAHRAN_PLAINS },
+			}),
+			crit(8, {	-- Swog
+				["cr"] = 189376,
+				["coord"] = { 26.0, 92.4, THE_WAKING_SHORES },
+			}),
+		})),
+		petbattle(ach(16508, {	-- Humanoid Battler of the Dragon Isles
+			crit(1, {	-- Arcantus
+				["cr"] = 197417,
+				["coord"] = { 41.0, 59.4, THE_AZURE_SPAN },
+			}),
+			crit(2, {	-- Bakhushek
+				["cr"] = 197102,
+				["coord"] = { 62.0, 41.6, OHNAHRAN_PLAINS },
+			}),
+			crit(3, {	-- Enyobon
+				["cr"] = 197336,
+				["coord"] = { 39.4, 73.6, THALDRASZUS },
+			}),
+			crit(4, {	-- Haniko
+				["cr"] = 196264,
+				["coord"] = { 38.8, 83.2, THE_WAKING_SHORES },
+			}),
+			crit(5, {	-- Patchu
+				["cr"] = 196069,
+				["coord"] = { 13.8, 49.8, THE_AZURE_SPAN },
+			}),
+			crit(6, {	-- Setimothes
+				["cr"] = 197350,
+				["coord"] = { 56.2, 49.2, THALDRASZUS },
+			}),
+			crit(7, {	-- Stormamu
+				["cr"] = 197447,
+				["coord"] = { 24.4, 42.4, OHNAHRAN_PLAINS },
+			}),
+			crit(8, {	-- Swog
+				["cr"] = 189376,
+				["coord"] = { 26.0, 92.4, THE_WAKING_SHORES },
+			}),
+		})),
+		petbattle(ach(16509, {	-- Magic Battler of the Dragon Isles
+			crit(1, {	-- Arcantus
+				["cr"] = 197417,
+				["coord"] = { 41.0, 59.4, THE_AZURE_SPAN },
+			}),
+			crit(2, {	-- Bakhushek
+				["cr"] = 197102,
+				["coord"] = { 62.0, 41.6, OHNAHRAN_PLAINS },
+			}),
+			crit(3, {	-- Enyobon
+				["cr"] = 197336,
+				["coord"] = { 39.4, 73.6, THALDRASZUS },
+			}),
+			crit(4, {	-- Haniko
+				["cr"] = 196264,
+				["coord"] = { 38.8, 83.2, THE_WAKING_SHORES },
+			}),
+			crit(5, {	-- Patchu
+				["cr"] = 196069,
+				["coord"] = { 13.8, 49.8, THE_AZURE_SPAN },
+			}),
+			crit(6, {	-- Setimothes
+				["cr"] = 197350,
+				["coord"] = { 56.2, 49.2, THALDRASZUS },
+			}),
+			crit(7, {	-- Stormamu
+				["cr"] = 197447,
+				["coord"] = { 24.4, 42.4, OHNAHRAN_PLAINS },
+			}),
+			crit(8, {	-- Swog
+				["cr"] = 189376,
+				["coord"] = { 26.0, 92.4, THE_WAKING_SHORES },
+			}),
+		})),
+		petbattle(ach(16510, {	-- Mechanical Battler of the Dragon Isles
+			crit(1, {	-- Arcantus
+				["cr"] = 197417,
+				["coord"] = { 41.0, 59.4, THE_AZURE_SPAN },
+			}),
+			crit(2, {	-- Bakhushek
+				["cr"] = 197102,
+				["coord"] = { 62.0, 41.6, OHNAHRAN_PLAINS },
+			}),
+			crit(3, {	-- Enyobon
+				["cr"] = 197336,
+				["coord"] = { 39.4, 73.6, THALDRASZUS },
+			}),
+			crit(4, {	-- Haniko
+				["cr"] = 196264,
+				["coord"] = { 38.8, 83.2, THE_WAKING_SHORES },
+			}),
+			crit(5, {	-- Patchu
+				["cr"] = 196069,
+				["coord"] = { 13.8, 49.8, THE_AZURE_SPAN },
+			}),
+			crit(6, {	-- Setimothes
+				["cr"] = 197350,
+				["coord"] = { 56.2, 49.2, THALDRASZUS },
+			}),
+			crit(7, {	-- Stormamu
+				["cr"] = 197447,
+				["coord"] = { 24.4, 42.4, OHNAHRAN_PLAINS },
+			}),
+			crit(8, {	-- Swog
+				["cr"] = 189376,
+				["coord"] = { 26.0, 92.4, THE_WAKING_SHORES },
+			}),
+		})),
+		petbattle(ach(16511, {	-- Undead Battler of the Dragon Isles
+			crit(1, {	-- Arcantus
+				["cr"] = 197417,
+				["coord"] = { 41.0, 59.4, THE_AZURE_SPAN },
+			}),
+			crit(2, {	-- Bakhushek
+				["cr"] = 197102,
+				["coord"] = { 62.0, 41.6, OHNAHRAN_PLAINS },
+			}),
+			crit(3, {	-- Enyobon
+				["cr"] = 197336,
+				["coord"] = { 39.4, 73.6, THALDRASZUS },
+			}),
+			crit(4, {	-- Haniko
+				["cr"] = 196264,
+				["coord"] = { 38.8, 83.2, THE_WAKING_SHORES },
+			}),
+			crit(5, {	-- Patchu
+				["cr"] = 196069,
+				["coord"] = { 13.8, 49.8, THE_AZURE_SPAN },
+			}),
+			crit(6, {	-- Setimothes
+				["cr"] = 197350,
+				["coord"] = { 56.2, 49.2, THALDRASZUS },
+			}),
+			crit(7, {	-- Stormamu
+				["cr"] = 197447,
+				["coord"] = { 24.4, 42.4, OHNAHRAN_PLAINS },
+			}),
+			crit(8, {	-- Swog
+				["cr"] = 189376,
+				["coord"] = { 26.0, 92.4, THE_WAKING_SHORES },
+			}),
+		})),
 		-- TODO: NOT COMPLETED YET!!
 		ach(16446),	-- That's Pretty Neat!
 		ach(16519),	-- Dragon Isles Safari
-		-- These PB achieves are not directly related to the WQ's for the respective battles and can be done at anytime
-		-- so they should each simply contain ["crs"] & ["coord"] for each criteria
-		-- ex. ach(14868, {	-- Aquatic Apparitions
-		ach(16501),	-- Aquatic Battler of the Dragon Isles
-		ach(16503),	-- Beast Battler of the Dragon Isles
-		ach(16504),	-- Critter Battler of the Dragon Isles
-		ach(16505),	-- Dragonkin Battler of the Dragon Isles
-		ach(16506),	-- Elemental Battler of the Dragon Isles
-		ach(16507),	-- Flying Battler of the Dragon Isles
-		ach(16508),	-- Humanoid Battler of the Dragon Isles
-		ach(16509),	-- Magic Battler of the Dragon Isles
-		ach(16510),	-- Mechanical Battler of the Dragon Isles
-		ach(16511),	-- Undead Battler of the Dragon Isles
-		ach(16512, {	-- Family Battler of the Dragon Isles
-			i(200874),	-- Lady Feathersworth (PET!)
-		}),
 	}),
 })));
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {

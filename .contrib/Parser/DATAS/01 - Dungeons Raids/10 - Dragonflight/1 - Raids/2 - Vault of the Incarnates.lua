@@ -1200,7 +1200,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(70086),	-- The Primal Council (N)
 		q(72271),	-- The Primal Council (N)
 		q(70094),	-- The Primal Council (H)
-		-- q(TODO),	-- The Primal Council (M)
+		q(70103),	-- The Primal Council (M)
 		q(72615),	-- Thondrozus (trash)
 		q(70078),	-- Dathea (N)
 		q(70087),	-- Dathea (N)

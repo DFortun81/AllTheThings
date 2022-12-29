@@ -143,7 +143,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 					-- Thaldraszus
 				q(71193, {	-- Underwater Menace
-					--["provider"] = { "n",  },	-- TODO
+					["provider"] = { "n", 197597 },	-- Cautious Fisher
+					["coord"] = { 57.2, 65.3, THALDRASZUS },
+					["isDaily"] = true,
+					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
+				}),
+				q(72074, {	-- Highland Habitat
+					["provider"] = { "n", 197597 },	-- Cautious Fisher
 					["coord"] = { 57.2, 65.3, THALDRASZUS },
 					["isDaily"] = true,
 					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM

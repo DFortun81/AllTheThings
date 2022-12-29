@@ -612,6 +612,18 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198389),	-- Weighted Potion Cylinder
 				},
 			}),
+				-- RENOWN 26 --
+			q(70911, {	-- Armored and ready
+				["minReputation"] = { 2510, 26 },	-- Valdrakken Accord Renown 26
+				["provider"] = { "n", 185561 },	-- Kaestrasz
+				["coord"] = { 46.8, 78.8, VALDRAKKEN },
+				["g"] = {
+					i(196962),	-- Cliffside Wylderdrake: Silver and Purple Armor (DM!)
+					i(197093),	-- Highland Drake: Silver and Purple Armor (DM!)
+					i(197350),	-- Renewned Proto-Drake: Silver and Purple Armor (DM!)
+					i(197581),	-- Windborne Velocidrake: Silver and Purple Armor (DM!)
+				},
+			}),
 
 				-- Unknown renown -- I will fix this later as well as all other renown quests -Darkal
 			q(72671, {	-- Renown Supplies
