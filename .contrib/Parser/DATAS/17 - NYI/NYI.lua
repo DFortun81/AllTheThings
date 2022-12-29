@@ -770,22 +770,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201362),	-- Fated Equipment Chest
 			i(201757),	-- Plundered Supplies
 			i(201836),	-- Valdrakken Token of Merit
-			i(201841),	-- Ensemble: Cosmic Aspirant's Plate Armor
-			i(201842),	-- Ensemble: Cosmic Aspirant's Mail Armor
-			i(201843),	-- Ensemble: Cosmic Aspirant's Leather Armor
-			i(201844),	-- Ensemble: Cosmic Aspirant's Cloth Armor
-			i(201845),	-- Ensemble: Cosmic Gladiator's Warrior Armor
-			i(201846),	-- Ensemble: Cosmic Gladiator's Warlock Armor
-			i(201847),	-- Ensemble: Cosmic Gladiator's Shaman Armor
-			i(201848),	-- Ensemble: Cosmic Gladiator's Rogue Armor
-			i(201849),	-- Ensemble: Cosmic Gladiator's Priest Armor
-			i(201850),	-- Ensemble: Cosmic Gladiator's Paladin Armor
-			i(201851),	-- Ensemble: Cosmic Gladiator's Monk Armor
-			i(201852),	-- Ensemble: Cosmic Gladiator's Mage Armor
-			i(201853),	-- Ensemble: Cosmic Gladiator's Hunter Armor
-			i(201854),	-- Ensemble: Cosmic Gladiator's Druid Armor
-			i(201855),	-- Ensemble: Cosmic Gladiator's Demon Hunter Armor
-			i(201856),	-- Ensemble: Cosmic Gladiator's Death Knight Armor
 			i(201857),	-- Ensemble: Unchained Aspirant's Plate Armor
 			i(201858),	-- Ensemble: Unchained Aspirant's Mail Armor
 			i(201859),	-- Ensemble: Unchained Aspirant's Leather Armor
@@ -802,8 +786,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201870),	-- Ensemble: Sinful Gladiator's Mail Armor
 			i(201871),	-- Ensemble: Sinful Gladiator's Leather Armor
 			i(201872),	-- Ensemble: Sinful Gladiator's Cloth Armor
-			i(201873),	-- Arsenal: Cosmic Gladiator's Weapons
-			i(201875),	-- Arsenal: Cosmic Aspirant's Weapons
 			i(201876),	-- Arsenal: Unchained Gladiator's Weapons
 			i(201877),	-- Arsenal: Unchained Aspirant's Weapons
 			i(201878),	-- Arsenal: Sinful Aspirant's Weapons
