@@ -366,9 +366,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(143752, {	-- Mag'har Direwolf / Sound Test Mount (MOUNT!)
 					["modelID"] = 84468,
 				}),
-				mount(241851, {	-- Netherlord's Chaotic Wrathsteed (MOUNT!)
-					["modelID"] = 74303,
-				}),
 				mount(239363, {	-- Swift Spectral Hippogryph (MOUNT!)
 					["modelID"] = 75637,
 				}),
