@@ -2591,32 +2591,33 @@ root("HiddenQuestTriggers", {
 			-- q(71773),	-- Tuskarr Bean Bag
 		}),
 		prof(SKINNING, {
-			q(74206),	-- Skinning Corrupted Proto-Dragon Rare
-			q(74154),	-- Skinning Muugurv during a Grand Hunt
+			q(74122),	-- Skinning Blisterhide
+			q(74126),	-- Skinning Crystalus in a Primal Storm
+			q(74127),	-- Skinning Karantun
+			q(74131),	-- Skinning Mucka the Raker
+			q(74134),	-- Skinning Grumbletrunk
+			q(74140),	-- Skinning Norbett on a Grand Hunt
+			q(74141),	-- Skinning Blitztusk on a Grand Hunt
+			q(74142),	-- Skinning Sarana on a Grand Hunt
+			q(74149),	-- Skinning Zumakh on a Grand Hunt
+			q(74152),	-- Skinning Galnomor
 			q(74153),	-- Skinning Degmakh during a Grant Hunt
-			q(74162),	-- Skinning Angen during a Grand Hunt
-			q(74163),	-- Skinning Molkeej on a Grand Hunt
-			q(74161),	-- Skinning Melkhop on a Grand Hunt
-			q(74164),	-- Skinning Diluu on a Grand Hunt
+			q(74154),	-- Skinning Muugurv during a Grand Hunt
 			q(74156),	-- Skinning Uurhilt on a Grand Hunt
 			q(74157),	-- Skinning Moskhoi on a Grand Hunt
 			q(74159),	-- Skinning Tevgai on a Grand Hunt
-			q(74196),	-- Skinning Rokmur rare
-			q(74126),	-- Skinning Crystalus in a Primal Storm
-			q(74152),	-- Skinning Galnomor
 			q(74160),	-- Skinning Yamakh
-			q(74134),	-- Skinning Grumbletrunk
-			q(74122),	-- Skinning Blisterhide
-			q(74149),	-- Skinning Zumakh on a Grand Hunt
-			q(74141),	-- Skinning Blitztusk on a Grand Hunt
-			q(74140),	-- Skinning Norbett on a Grand Hunt
-			q(74142),	-- Skinning Sarana on a Grand Hunt
-			q(74182),	-- Skinning Makhra the Ashtouched
-			q(74214),	-- Skinning Moth'go Deeploom
-			q(74198),	-- Skinning The Weeping Vilomah
-			q(74127),	-- Skinning Karantun
+			q(74161),	-- Skinning Melkhop on a Grand Hunt
+			q(74162),	-- Skinning Angen during a Grand Hunt
+			q(74163),	-- Skinning Molkeej on a Grand Hunt
+			q(74164),	-- Skinning Diluu on a Grand Hunt
 			q(74174),	-- Skinning Biryuk
-			q(74131),	-- Skinning Mucka the Raker
+			q(74182),	-- Skinning Makhra the Ashtouched
+			q(74195),	-- Skinning Woolfang
+			q(74196),	-- Skinning Rokmur rare
+			q(74198),	-- Skinning The Weeping Vilomah
+			q(74206),	-- Skinning Corrupted Proto-Dragon Rare
+			q(74214),	-- Skinning Moth'go Deeploom
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--
