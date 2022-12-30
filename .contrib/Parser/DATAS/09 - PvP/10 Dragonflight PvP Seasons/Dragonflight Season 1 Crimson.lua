@@ -8,37 +8,64 @@ root("PVP", pvp(tier(DF_TIER, {
 		["icon"] = "Interface\\Icons\\inv_drake2mountgladiator",
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(15955),	-- Challenger I: Dragonflight Season 1
-				ach(15956),	-- Challenger II: Dragonflight Season 1
-				ach(15960),	-- Combatant I: Dragonflight Season 1
-				ach(15961),	-- Combatant II: Dragonflight Season 1
 				ach(15943, {	-- Crimson Combatant [A]
 					["races"] = ALLIANCE_ONLY,
+					["collectible"] = false,
 				}),
 				ach(15942, {	-- Crimson Combatant [H]
 					["races"] = HORDE_ONLY,
+					["collectible"] = false,
 				}),
+				ach(15960),		-- Combatant I: Dragonflight Season 1
+				ach(15961),		-- Combatant II: Dragonflight Season 1
+				ach(15955),		-- Challenger I: Dragonflight Season 1
+				ach(15956),		-- Challenger II: Dragonflight Season 1
+				ach(15952),		-- Rival I: Dragonflight Season 1
+				ach(15953),		-- Rival II: Dragonflight Season 1
+				ach(15954),		-- Duelist: Dragonflight Season 1
+				ach(15984),		-- Elite: Dragonflight Season 1
+				ach(15957, {	-- Gladiator: Dragonflight Season 1
+					i(202086),	-- Crimson Gladiator's Drake (MOUNT!)
+					i(201792),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
+				}),
+				ach(16730),	-- Crimson Gladiator's Drake
 				ach(15951),	-- Crimson Gladiator: Dragonflight Season 1
-				ach(16734),	-- Crimson Soloist: Dragonflight Season 1
-				ach(15954),	-- Duelist: Dragonflight Season 1
-				ach(15984),	-- Elite: Dragonflight Season 1
-				ach(15957),	-- Gladiator: Dragonflight Season 1
+				-- RBG
 				ach(15959, {	-- Hero of the Alliance: Crimson
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(15958, {	-- Hero of the Horde: Crimson
 					["races"] = HORDE_ONLY,
 				}),
-				ach(17339, {	-- Legend: Dragonflight Season 1
-					title(491, {	-- Legend
-						["collectible"] = false,
-					}),
+				-- Solo
+				ach(17339),		-- Legend: Dragonflight Season 1
+				ach(16734, {	-- Crimson Soloist: Dragonflight Season 1
+					title(482),	-- Crimson Soloist <Name>
 				}),
-				ach(15952),	-- Rival I: Dragonflight Season 1
-				ach(15953),	-- Rival II: Dragonflight Season 1
 			}),
+			filter(TITLES, bubbleDown({ ["collectible"] = false, },{
+				title(78),	-- Combatant <Name>
+				title(32),	-- Challenger <Name>
+				title(31),	-- Rival <Name>
+				title(30),	-- Duelist <Name>
+				title(387),	-- <Name> the Elite Death Knight
+				title(388),	-- <Name> the Elite Demon Hunter
+				title(389),	-- <Name> the Elite Druid
+				title(390),	-- <Name> the Elite Hunter
+				title(391),	-- <Name> the Elite Mage
+				title(392),	-- <Name> the Elite Monk
+				title(393),	-- <Name> the Elite Paladin
+				title(394),	-- <Name> the Elite Priest
+				title(395),	-- <Name> the Elite Rogue
+				title(396),	-- <Name> the Elite Shaman
+				title(397),	-- <Name> the Elite Warlock
+				title(398),	-- <Name> the Elite Warrior
+				title(29),	-- Gladiator <Name>
+				-- Solo
+				title(491),	-- Legend <Name>
+			})),
 			n(PVP_ASPIRANT, {
-				n(BACK, {
+				filter(CLOAKS, {
 					i(201752),	-- Crimson Aspirant's Cape
 					i(201750),	-- Crimson Aspirant's Cloak
 					i(201751),	-- Crimson Aspirant's Drape
@@ -62,7 +89,7 @@ root("PVP", pvp(tier(DF_TIER, {
 					i(201126),	-- Crimson Aspirant's Silk Vest
 					i(201121),	-- Crimson Aspirant's Silk Wristwraps
 				}),
-				n(FINGER, {
+				filter(FINGER_F, {
 					i(201745),	-- Crimson Aspirant's Band
 					i(201744),	-- Crimson Aspirant's Ring
 					i(201746),	-- Crimson Aspirant's Signet
@@ -103,7 +130,7 @@ root("PVP", pvp(tier(DF_TIER, {
 					i(201144),	-- Crimson Aspirant's Chain Wargreaves
 					i(201123),	-- Crimson Aspirant's Chain Wristwraps
 				}),
-				n(NECK, {
+				filter(NECK_F, {
 					i(201748),	-- Crimson Aspirant's Choker
 					i(201747),	-- Crimson Aspirant's Necklace
 					i(201749),	-- Crimson Aspirant's Pendant
@@ -126,7 +153,7 @@ root("PVP", pvp(tier(DF_TIER, {
 					i(201098),	-- Crimson Aspirant's Plate Warboots
 					i(201142),	-- Crimson Aspirant's Plate Wargreaves
 				}),
-				n(-386, {	-- Trinkets
+				filter(TRINKET_F, {
 					i(201449),	-- Crimson Aspirant's Badge of Ferocity
 					i(201452),	-- Crimson Aspirant's Emblem
 					i(201451),	-- Crimson Aspirant's Insignia of Alacrity
@@ -431,17 +458,17 @@ root("PVP", pvp(tier(DF_TIER, {
 						i(201919),	-- Crimson Gladiator's Shawl
 					}),
 				}),
-				n(FINGER, {
+				filter(FINGER_F, {
 					i(201802),	-- Crimson Gladiator's Band
 					i(201801),	-- Crimson Gladiator's Ring
 					i(201803),	-- Crimson Gladiator's Signet
 				}),
-				n(NECK, {
+				filter(NECK_F, {
 					i(201806),	-- Crimson Gladiator's Amulet
 					i(201804),	-- Crimson Gladiator's Necklace
 					i(201805),	-- Crimson Gladiator's Pendant
 				}),
-				n(-386, {	-- Trinkets
+				filter(TRINKET_F, {
 					i(201807),	-- Crimson Gladiator's Badge of Ferocity
 					i(201809),	-- Crimson Gladiator's Emblem
 					i(201808),	-- Crimson Gladiator's Insignia of Alacrity
@@ -759,17 +786,17 @@ root("PVP", pvp(tier(DF_TIER, {
 						i(201919),	-- Crimson Gladiator's Shawl
 					}),
 				}),
-				n(FINGER, {
+				filter(FINGER_F, {
 					i(201802),	-- Crimson Gladiator's Band
 					i(201801),	-- Crimson Gladiator's Ring
 					i(201803),	-- Crimson Gladiator's Signet
 				}),
-				n(NECK, {
+				filter(NECK_F, {
 					i(201806),	-- Crimson Gladiator's Amulet
 					i(201804),	-- Crimson Gladiator's Necklace
 					i(201805),	-- Crimson Gladiator's Pendant
 				}),
-				n(-386, {	-- Trinkets
+				filter(TRINKET_F, {
 					i(201807),	-- Crimson Gladiator's Badge of Ferocity
 					i(201809),	-- Crimson Gladiator's Emblem
 					i(201808),	-- Crimson Gladiator's Insignia of Alacrity
@@ -812,8 +839,6 @@ root("PVP", pvp(tier(DF_TIER, {
 				}),
 			})),
 			filter(MOUNTS, {
-				i(202086),	-- Crimson Gladiator's Drake (MOUNT!)
-				i(201792),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
 				i(201789, {	-- Vicious Sabertooth [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),

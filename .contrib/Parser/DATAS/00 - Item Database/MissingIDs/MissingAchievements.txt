@@ -920,7 +920,6 @@ ach(16631),	-- Dragon Isles Cook
 ach(16632),	-- Dragon Isles Fisherman
 10.0.2.45779
 ach(16729),	-- To All the Squirrels Hidden Til Now \\ To All the Squirrels Hidden Till Now
-ach(16730),	-- Crimson Gladiator's Drake
 ach(16731),	-- Court is Now in Session
 10.0.2.45969
 ach(16736),	-- Grand Theft Mammoth

@@ -8,53 +8,71 @@ root("PVP", pvp(tier(SL_TIER, {
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount_red",
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
-				ach(15349),			-- Challenger I: Shadowlands Season 3
-				ach(15379),			-- Challenger II: Shadowlands Season 3
-				ach(15348, {		-- Combatant I: Shadowlands Season 3
-					title(78, {		-- Combatant <Name>
-						["collectible"] = false,
-					}),
-				}),
-				ach(15380),			-- Combatant II: Shadowlands Season 3
-				ach(15347, {		-- Cosmic Combatant (A)
+				ach(15347, {	-- Cosmic Combatant [A]
+					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
 				}),
-				ach(15346, {		-- Cosmic Combatant (H)
+				ach(15346, {	-- Cosmic Combatant [H]
+					["races"] = HORDE_ONLY,
 					["collectible"] = false,
 				}),
-				ach(15353, {		-- Cosmic Gladiator: Shadowlands Season 3
-					title(452),		-- Cosmic Gladiator <Name>
+				ach(15348),		-- Combatant I: Shadowlands Season 3
+				ach(15380),		-- Combatant II: Shadowlands Season 3
+				ach(15349),		-- Challenger I: Shadowlands Season 3
+				ach(15379),		-- Challenger II: Shadowlands Season 3
+				ach(15350),		-- Rival I: Shadowlands Season 3
+				ach(15378),		-- Rival II: Shadowlands Season 3
+				ach(15351, {	-- Duelist: Shadowlands Season 3
+					ill(6351),	-- Cosmic Flow
+					i(186776),	-- Cosmic Gladiator's Prestigious Cloak
 				}),
-				ach(15384),			-- Cosmic Gladiator's Soul Eater
-				ach(15351, {		-- Duelist: Shadowlands Season 3
-					illusion(6351),	-- Cosmic Flow
-					i(186776),		-- Cosmic Gladiator's Prestigious Cloak
+				ach(15354, {	-- Elite: Shadowlands Season 3
+					i(186777),	-- Cosmic Gladiator's Tabard
 				}),
-				ach(15354, {		-- Elite: Shadowlands Season 3
-					i(186777),		-- Cosmic Gladiator's Tabard
+				ach(15352, {	-- Gladiator: Shadowlands Season 3
+					i(189507),	-- Cosmic Gladiator's Soul Eater (MOUNT!)
 				}),
-				ach(15352, {		-- Gladiator: Shadowlands Season 3
-					i(189507),		-- Cosmic Gladiator's Soul Eater (MOUNT!)
+				ach(15384),		-- Cosmic Gladiator's Soul Eater
+				ach(15353, {	-- Cosmic Gladiator: Shadowlands Season 3
+					title(452),	-- Cosmic Gladiator <Name>
 				}),
-				ach(15355, {		-- Hero of the Alliance: Cosmic
+				-- RBG
+				ach(15355, {	-- Hero of the Alliance: Cosmic
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(15356, {		-- Hero of the Horde: Cosmic
+				ach(15356, {	-- Hero of the Horde: Cosmic
 					["races"] = HORDE_ONLY,
 				}),
-				ach(15350),			-- Rival I: Shadowlands Season 3
-				ach(15378),			-- Rival II: Shadowlands Season 3
 			})),
 			filter(MOUNTS, {
-				i(187681, {	-- Vicious War Gulper (A) (MOUNT!)
+				i(187681, {	-- Vicious War Gulper [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(187680, {	-- Vicious War Gulper (H) (MOUNT!)
+				i(187680, {	-- Vicious War Gulper [H] (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			filter(TITLES, bubbleDown({ ["collectible"] = false, },{
+				title(78),	-- Combatant <Name>
+				title(32),	-- Challenger <Name>
+				title(31),	-- Rival <Name>
+				title(30),	-- Duelist <Name>
+				title(387),	-- <Name> the Elite Death Knight
+				title(388),	-- <Name> the Elite Demon Hunter
+				title(389),	-- <Name> the Elite Druid
+				title(390),	-- <Name> the Elite Hunter
+				title(391),	-- <Name> the Elite Mage
+				title(392),	-- <Name> the Elite Monk
+				title(393),	-- <Name> the Elite Paladin
+				title(394),	-- <Name> the Elite Priest
+				title(395),	-- <Name> the Elite Rogue
+				title(396),	-- <Name> the Elite Shaman
+				title(397),	-- <Name> the Elite Warlock
+				title(398),	-- <Name> the Elite Warrior
+				title(29),	-- Gladiator <Name>
+			})),
 			n(PVP_ASPIRANT, {
-				n(BACK, {
+				filter(CLOAKS, {
 					i(186944),	-- Cosmic Aspirant's Cape
 					i(186873),	-- Cosmic Aspirant's Cloak
 					i(186909),	-- Cosmic Aspirant's Drape
@@ -77,7 +95,7 @@ root("PVP", pvp(tier(SL_TIER, {
 					i(186910),	-- Cosmic Aspirant's Silk Vest
 					i(186902),	-- Cosmic Aspirant's Silk Wristwraps
 				}),
-				n(FINGER, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
+				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
 					i(186937),	-- Cosmic Aspirant's Band
 					i(186901),	-- Cosmic Aspirant's Ring
 					i(186945),	-- Cosmic Aspirant's Signet
@@ -118,7 +136,7 @@ root("PVP", pvp(tier(SL_TIER, {
 					i(186927),	-- Cosmic Aspirant's Chain Wargreaves
 					i(186904),	-- Cosmic Aspirant's Chain Wristwraps
 				}),
-				n(NECK, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
+				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
 					i(186943),	-- Cosmic Aspirant's Choker
 					i(186907),	-- Cosmic Aspirant's Necklace
 					i(186947),	-- Cosmic Aspirant's Pendant
@@ -141,7 +159,7 @@ root("PVP", pvp(tier(SL_TIER, {
 					i(186878),	-- Cosmic Aspirant's Plate Warboots
 					i(186925),	-- Cosmic Aspirant's Plate Wargreaves
 				}),
-				n(-386, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {	-- Trinket
+				filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
 					i(186906),	-- Cosmic Aspirant's Badge of Ferocity
 					i(186946),	-- Cosmic Aspirant's Emblem
 					i(186942),	-- Cosmic Aspirant's Insignia of Alacrity
@@ -308,7 +326,7 @@ root("PVP", pvp(tier(SL_TIER, {
 						}),
 					}),
 				}),
-				n(BACK, {
+				filter(CLOAKS, {
 					i(186780),	-- Cosmic Gladiator's Cloak
 					i(186781),	-- Cosmic Gladiator's Drape
 					i(186783),	-- Cosmic Gladiator's Greatcloak
@@ -332,7 +350,7 @@ root("PVP", pvp(tier(SL_TIER, {
 					i(186791),	-- Cosmic Gladiator's Silk Vestments
 					i(186804),	-- Cosmic Gladiator's Silk Wristwraps
 				}),
-				n(FINGER, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
+				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
 					i(186785),	-- Cosmic Gladiator's Band
 					i(186784),	-- Cosmic Gladiator's Ring
 					i(186786),	-- Cosmic Gladiator's Signet
@@ -373,7 +391,7 @@ root("PVP", pvp(tier(SL_TIER, {
 					i(186822),	-- Cosmic Gladiator's Chain Vest
 					i(186836),	-- Cosmic Gladiator's Chain Wristguards
 				}),
-				n(NECK, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
+				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
 					i(186789),	-- Cosmic Gladiator's Amulet
 					i(186787),	-- Cosmic Gladiator's Necklace
 					i(186788),	-- Cosmic Gladiator's Pendant
@@ -396,7 +414,7 @@ root("PVP", pvp(tier(SL_TIER, {
 					i(186847),	-- Cosmic Gladiator's Plate Wargreaves
 					i(186852),	-- Cosmic Gladiator's Plate Wristguards
 				}),
-				n(-386, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {	-- Trinket
+				filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
 					i(186866),	-- Cosmic Gladiator's Badge of Ferocity
 					i(188778),	-- Cosmic Gladiator's Devouring Malediction
 					i(188691),	-- Cosmic Gladiator's Echoing Resolve
@@ -572,7 +590,7 @@ root("PVP", pvp(tier(SL_TIER, {
 						}),
 					}),
 				}),
-				n(BACK, {
+				filter(CLOAKS, {
 					i(186780),	-- Cosmic Gladiator's Cloak
 					i(186781),	-- Cosmic Gladiator's Drape
 					i(186783),	-- Cosmic Gladiator's Greatcloak

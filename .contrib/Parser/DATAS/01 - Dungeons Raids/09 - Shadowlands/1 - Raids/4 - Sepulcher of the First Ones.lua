@@ -1772,7 +1772,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189859),	-- Worldkiller Iris
 						i(189861),	-- Zovastrum, the Unmaking
 						i(190768),	-- Zereth Overseer (MOUNT!)
-						i(189982),	-- Silithid Soul
+						i(189982),	-- Silithid Soul (SS!)
 					},
 				}),
 			}),

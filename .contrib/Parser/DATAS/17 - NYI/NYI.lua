@@ -770,29 +770,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201362),	-- Fated Equipment Chest
 			i(201757),	-- Plundered Supplies
 			i(201836),	-- Valdrakken Token of Merit
-			i(201857),	-- Ensemble: Unchained Aspirant's Plate Armor
-			i(201858),	-- Ensemble: Unchained Aspirant's Mail Armor
-			i(201859),	-- Ensemble: Unchained Aspirant's Leather Armor
-			i(201860),	-- Ensemble: Unchained Aspirant's Cloth Armor
-			i(201861),	-- Ensemble: Unchained Gladiator's Plate Armor
-			i(201862),	-- Ensemble: Unchained Gladiator's Mail Armor
-			i(201863),	-- Ensemble: Unchained Gladiator's Leather Armor
-			i(201864),	-- Ensemble: Unchained Gladiator's Cloth Armor
-			i(201865),	-- Ensemble: Sinful Aspirant's Plate Armor
-			i(201866),	-- Ensemble: Sinful Aspirant's Mail Armor
-			i(201867),	-- Ensemble: Sinful Aspirant's Leather Armor
-			i(201868),	-- Ensemble: Sinful Aspirant's Cloth Armor
-			i(201869),	-- Ensemble: Sinful Gladiator's Plate Armor
-			i(201870),	-- Ensemble: Sinful Gladiator's Mail Armor
-			i(201871),	-- Ensemble: Sinful Gladiator's Leather Armor
-			i(201872),	-- Ensemble: Sinful Gladiator's Cloth Armor
-			i(201876),	-- Arsenal: Unchained Gladiator's Weapons
-			i(201877),	-- Arsenal: Unchained Aspirant's Weapons
-			i(201878),	-- Arsenal: Sinful Aspirant's Weapons
-			i(201879),	-- Arsenal: Sinful Gladiator's Revendreth Weapons
-			i(201880),	-- Arsenal: Sinful Gladiator's Maldraxxus Weapons
-			i(201881),	-- Arsenal: Sinful Gladiator's Bastion Weapons
-			i(201882),	-- Arsenal: Sinful Gladiator's Ardenweald Weapons
 			i(201921),	-- Dragonscale Expedition Insignia
 			i(201922),	-- Iskaara Tuskarr Insignia
 			i(201923),	-- Maruuk Centaur Insignia

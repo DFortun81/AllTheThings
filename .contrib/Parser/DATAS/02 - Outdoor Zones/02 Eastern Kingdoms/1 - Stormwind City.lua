@@ -7359,6 +7359,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						vicioussaddle(i(163123)),	-- Vicious War Riverbeast (MOUNT!)
 						vicioussaddle(i(173714)),	-- Vicious White Warsaber (MOUNT!)
 						vicioussaddle(i(143648)),	-- Vicious War Turtle (A) (MOUNT!)
+						vicioussaddle(i(184014, {	-- Vicious War Spider (A) (MOUNT!)
+							["timeline"] = { ADDED_DF_REL },
+						})),
+						vicioussaddle(i(186178, {	-- Vicious War Gorm (A) (MOUNT!)
+							["timeline"] = { ADDED_DF_REL },
+						})),
 						vicioussaddle(i(187681, {	-- Vicious War Gulper (A) (MOUNT!)
 							["timeline"] = { ADDED_DF_REL },
 						})),

@@ -1,6 +1,55 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local SymPvP = function(SeasonID)
+	SymLink = {
+		{"select", "tierID", DF_TIER},			-- Select Dragonflight
+		{"pop"},								-- Discard the Dragonflight Header and acquire all of their children.
+		{"where", "headerID", SeasonID},		-- Season
+		{"pop"},								-- Discard the Season Header and acquire all of their children.
+		{"where", "headerID", PVP_ASPIRANT},	-- Aspirant Gear
+		{"pop"},								-- Discard the Aspirant Header and acquire all of their children.
+		{"finalize"},							-- Push Everything to the Queue
+
+		{"select", "tierID", DF_TIER},			-- Select Dragonflight
+		{"pop"},								-- Discard the Dragonflight Header and acquire all of their children.
+		{"where", "headerID", SeasonID},		-- Season
+		{"pop"},								-- Discard the Season Header and acquire all of their children.
+		{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
+		{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+		{"finalize"},							-- Push Everything to the Queue
+
+		{"select", "tierID", DF_TIER},			-- Select Dragonflight
+		{"pop"},								-- Discard the Dragonflight Header and acquire all of their children.
+		{"where", "headerID", SeasonID},		-- Season
+		{"pop"},								-- Discard the Season Header and acquire all of their children.
+		{"where", "headerID", PVP_ELITE},		-- Elite Gear
+		{"pop"},								-- Discard the Elite Header and acquire all of their children.
+		{"finalize"},							-- Push Everything to the Queue
+
+		{"merge"},								-- Merge the Queue
+	}
+	return SymLink
+end
+local SymRaid = function(InstanceID, Remove)
+	SymLink = {
+		{"select", "tierID", DF_TIER},			-- Select Dragonflight
+		{"pop"},								-- Discard the Dragonflight Header and acquire all of their children.
+		{"where", "instanceID", InstanceID},	-- Instance
+		{"pop"},								-- Discard the Instance Header and acquire all of their children.
+		{"is", "difficultyID" },				-- Select only the Difficulty Headers.
+		{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+		{"is","encounterID"},					-- Only Encounter Headers
+		{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+		{"is", "itemID"},						-- Only Items!
+	}
+	if Remove then
+		for _,v in ipairs(Remove) do
+			table.insert(SymLink, {"not", "itemID", v })
+		end
+	end
+	return SymLink
+end
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(VALDRAKKEN, {
 		o(381035, {	-- The Great Vault
@@ -8,18 +57,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			["g"] = {
 				inst(1200, {	-- Vault of the Incarnates
 					["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 },
-					["sym"] = {
-						{"select", "tierID", DF_TIER},			-- Select Dragonflight
-						{"pop"},								-- Discard the Dragonflight Headers and acquire all of their children.
-						{"where", "instanceID", 1200},			-- Vault of the Incarnates
-						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
-						{"is", "difficultyID"},				-- Select only the Difficulty Headers.
-						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-						{"is","encounterID"},					-- Only Encounter Headers
-						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-						{"is", "itemID"},						-- Only Items!
-						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-					},
+					["sym"] = SymRaid(1200),
 				}),
 				n(MYTHIC_PLUS, {
 					header(HEADERS.Achievement, SEASON_THUNDERING, {
@@ -72,33 +110,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					header(HEADERS.Achievement, SEASON_CRIMSON, {
 						["icon"] = "Interface\\Icons\\inv_drake2mountgladiator",
 						["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 },
-						["sym"] = {
-							{"select", "tierID", DF_TIER},			-- Select Dragonflight
-							{"pop"},								-- Discard the Dragonflight Header and acquire all of their children.
-							{"where", "headerID", SEASON_CRIMSON},	-- Season 1
-							{"pop"},								-- Discard the Season Header and acquire all of their children.
-							{"where", "headerID", PVP_ASPIRANT},	-- Aspirant Gear
-							{"pop"},								-- Discard the Aspirant Header and acquire all of their children.
-							{"finalize"},							-- Push Everything to the Queue
-
-							{"select", "tierID", DF_TIER},			-- Select Dragonflight
-							{"pop"},								-- Discard the Dragonflight Header and acquire all of their children.
-							{"where", "headerID", SEASON_CRIMSON},	-- Season 1
-							{"pop"},								-- Discard the Season Header and acquire all of their children.
-							{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
-							{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
-							{"finalize"},							-- Push Everything to the Queue
-
-							{"select", "tierID", DF_TIER},			-- Select Dragonflight
-							{"pop"},								-- Discard the Dragonflight Header and acquire all of their children.
-							{"where", "headerID", SEASON_CRIMSON},	-- Season 1
-							{"pop"},								-- Discard the Season Header and acquire all of their children.
-							{"where", "headerID", PVP_ELITE},		-- Elite Gear
-							{"pop"},								-- Discard the Elite Header and acquire all of their children.
-							{"finalize"},							-- Push Everything to the Queue
-
-							{"merge"},								-- Merge the Queue
-						},
+						["sym"] = SymPvP(SEASON_CRIMSON),
 					}),
 				})),
 			},

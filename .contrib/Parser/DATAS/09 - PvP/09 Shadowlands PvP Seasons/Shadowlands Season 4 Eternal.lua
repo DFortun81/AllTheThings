@@ -8,53 +8,71 @@ root("PVP", pvp(tier(SL_TIER, {
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount_orange",
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
-				ach(15600),			-- Challenger I: Shadowlands Season 4
-				ach(15601),			-- Challenger II: Shadowlands Season 4
-				ach(15609, {		-- Combatant I: Shadowlands Season 4
-					title(78, {		-- Combatant <Name>
-						["collectible"] = false,
-					}),
+				ach(15599, {	-- Eternal Combatant [A]
+					["races"] = ALLIANCE_ONLY,
+					["collectible"] = false,
 				}),
-				ach(15610),			-- Combatant II: Shadowlands Season 4
+				ach(15598, {	-- Eternal Combatant [H]
+					["races"] = HORDE_ONLY,
+					["collectible"] = false,
+				}),
+				ach(15609),		-- Combatant I: Shadowlands Season 4
+				ach(15610),		-- Combatant II: Shadowlands Season 4
+				ach(15600),		-- Challenger I: Shadowlands Season 4
+				ach(15601),		-- Challenger II: Shadowlands Season 4
+				ach(15602),		-- Rival I: Shadowlands Season 4
+				ach(15603),		-- Rival II: Shadowlands Season 4
 				ach(15604, {	-- Duelist: Shadowlands Season 4
-					illusion(6378),	-- Eternal Flux
-					i(192205),		-- Eternal Gladiator's Prestigious Cloak
+					ill(6378),	-- Eternal Flux
+					i(192205),	-- Eternal Gladiator's Prestigious Cloak
 				}),
-				ach(15639, {		-- Elite: Shadowlands Season 4
-					i(192206),		-- Eternal Gladiator's Tabard
+				ach(15639, {	-- Elite: Shadowlands Season 4
+					i(192206),	-- Eternal Gladiator's Tabard
 				}),
-				ach(15599, {		-- Eternal Combatant (A)
-					["collectible"] = false,
+				ach(15605, {	-- Gladiator: Shadowlands Season 4
+					i(191290),	-- Eternal Gladiator's Soul Eater (MOUNT!)
 				}),
-				ach(15598, {		-- Eternal Combatant (H)
-					["collectible"] = false,
+				ach(15612),		-- Eternal Gladiator's Soul Eater
+				ach(15606, {	-- Eternal Gladiator: Shadowlands Season 4
+					title(461),	-- Eternal Gladiator <Name>
 				}),
-				ach(15606, {		-- Eternal Gladiator: Shadowlands Season 4
-					title(461),		-- Eternal Gladiator <Name>
-				}),
-				ach(15612),			-- Eternal Gladiator's Soul Eater
-				ach(15605, {		-- Gladiator: Shadowlands Season 4
-					i(191290),		-- Eternal Gladiator's Soul Eater (MOUNT!)
-				}),
-				ach(15608, {		-- Hero of the Alliance: Eternal
+				-- RBG
+				ach(15608, {	-- Hero of the Alliance: Eternal
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(15607, {		-- Hero of the Horde: Eternal
+				ach(15607, {	-- Hero of the Horde: Eternal
 					["races"] = HORDE_ONLY,
 				}),
-				ach(15602),			-- Rival I: Shadowlands Season 4
-				ach(15603),			-- Rival II: Shadowlands Season 4
 			})),
 			filter(MOUNTS, {
-				i(187644, {	-- Vicious Warstalker (A) (MOUNT!)
+				i(187644, {	-- Vicious Warstalker [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(187642, {	-- Vicious Warstalker (H) (MOUNT!)
+				i(187642, {	-- Vicious Warstalker [H] (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			filter(TITLES, bubbleDown({ ["collectible"] = false, },{
+				title(78),	-- Combatant <Name>
+				title(32),	-- Challenger <Name>
+				title(31),	-- Rival <Name>
+				title(30),	-- Duelist <Name>
+				title(387),	-- <Name> the Elite Death Knight
+				title(388),	-- <Name> the Elite Demon Hunter
+				title(389),	-- <Name> the Elite Druid
+				title(390),	-- <Name> the Elite Hunter
+				title(391),	-- <Name> the Elite Mage
+				title(392),	-- <Name> the Elite Monk
+				title(393),	-- <Name> the Elite Paladin
+				title(394),	-- <Name> the Elite Priest
+				title(395),	-- <Name> the Elite Rogue
+				title(396),	-- <Name> the Elite Shaman
+				title(397),	-- <Name> the Elite Warlock
+				title(398),	-- <Name> the Elite Warrior
+				title(29),	-- Gladiator <Name>
+			})),
 			n(PVP_ASPIRANT, {
-				n(BACK, {
+				filter(CLOAKS, {
 					i(192390),	-- Eternal Aspirant's Cape
 					i(192319),	-- Eternal Aspirant's Cloak
 					i(192355),	-- Eternal Aspirant's Drape
@@ -77,7 +95,7 @@ root("PVP", pvp(tier(SL_TIER, {
 					i(192356),	-- Eternal Aspirant's Silk Vest
 					i(192348),	-- Eternal Aspirant's Silk Wristwraps
 				}),
-				n(FINGER, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
+				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
 					i(192383),	-- Eternal Aspirant's Band
 					i(192347),	-- Eternal Aspirant's Ring
 					i(192391),	-- Eternal Aspirant's Signet
@@ -118,7 +136,7 @@ root("PVP", pvp(tier(SL_TIER, {
 					i(192373),	-- Eternal Aspirant's Chain Wargreaves
 					i(192350),	-- Eternal Aspirant's Chain Wristwraps
 				}),
-				n(NECK, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
+				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
 					i(192389),	-- Eternal Aspirant's Choker
 					i(192353),	-- Eternal Aspirant's Necklace
 					i(192393),	-- Eternal Aspirant's Pendant
@@ -141,7 +159,7 @@ root("PVP", pvp(tier(SL_TIER, {
 					i(192324),	-- Eternal Aspirant's Plate Warboots
 					i(192371),	-- Eternal Aspirant's Plate Wargreaves
 				}),
-				n(-386, {	-- Trinket
+				filter(TRINKET_F, {
 					i(192352, {["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE }}),	-- Eternal Aspirant's Badge of Ferocity
 					i(192392, {["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE }}),	-- Eternal Aspirant's Emblem
 					i(192388),	-- Eternal Aspirant's Insignia of Alacrity
@@ -308,7 +326,7 @@ root("PVP", pvp(tier(SL_TIER, {
 						}),
 					}),
 				}),
-				n(BACK, {
+				filter(CLOAKS, {
 					i(192209),	-- Eternal Gladiator's Cloak
 					i(192210),	-- Eternal Gladiator's Drape
 					i(192212),	-- Eternal Gladiator's Greatcloak
@@ -332,7 +350,7 @@ root("PVP", pvp(tier(SL_TIER, {
 					i(192220),	-- Eternal Gladiator's Silk Vestments
 					i(192233),	-- Eternal Gladiator's Silk Wristwraps
 				}),
-				n(FINGER, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
+				filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
 					i(192214),	-- Eternal Gladiator's Band
 					i(192213),	-- Eternal Gladiator's Ring
 					i(192215),	-- Eternal Gladiator's Signet
@@ -373,7 +391,7 @@ root("PVP", pvp(tier(SL_TIER, {
 					i(192251),	-- Eternal Gladiator's Chain Vest
 					i(192265),	-- Eternal Gladiator's Chain Wristguards
 				}),
-				n(NECK, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
+				filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
 					i(192218),	-- Eternal Gladiator's Amulet
 					i(192216),	-- Eternal Gladiator's Necklace
 					i(192217),	-- Eternal Gladiator's Pendant
@@ -396,7 +414,7 @@ root("PVP", pvp(tier(SL_TIER, {
 					i(192276),	-- Eternal Gladiator's Plate Wargreaves
 					i(192281),	-- Eternal Gladiator's Plate Wristguards
 				}),
-				n(-386, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {	-- Trinket
+				filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
 					i(192295),	-- Eternal Gladiator's Badge of Ferocity
 					i(192305),	-- Eternal Gladiator's Devouring Malediction
 					i(192302),	-- Eternal Gladiator's Echoing Resolve
@@ -572,7 +590,7 @@ root("PVP", pvp(tier(SL_TIER, {
 						}),
 					}),
 				}),
-				n(BACK, {
+				filter(CLOAKS, {
 					i(192209),	-- Eternal Gladiator's Cloak
 					i(192210),	-- Eternal Gladiator's Drape
 					i(192212),	-- Eternal Gladiator's Greatcloak
