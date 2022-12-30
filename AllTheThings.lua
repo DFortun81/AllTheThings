@@ -5350,6 +5350,7 @@ app.BuildCost = function(group)
 				["text"] = L["COST"],
 				["description"] = L["COST_DESC"],
 				["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
+				["sourceIgnored"] = true,
 				["OnUpdate"] = app.AlwaysShowUpdate,
 				["g"] = {},
 			};
@@ -5366,11 +5367,12 @@ app.BuildCost = function(group)
 				costItem = CloneData(costItem);
 				costItem.g = nil;
 				costItem.collectible = false;
+				costItem.count = c[3];
 				-- if c[3] then
-				-- 	costItem.total = c[3];
-				-- 	if group.collected then
-				-- 		costItem.progress = c[3];
-				-- 	end
+					-- if group.collected then
+					-- 	-- alternatively have count minus from item count in bags/bank... or something?
+					-- 	costItem.progress = c[3];
+					-- end
 				-- end
 				costItem.OnUpdate = app.AlwaysShowUpdate;
 				NestObject(costGroup, costItem);
