@@ -185,8 +185,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(193201, {	-- Mucka the Raker
-				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["coord"] = { 57.2, 53.6, THE_AZURE_SPAN },
+				["questID"] = 73885,
+				["description"] = "In order to fully kill this rare and not have her reset on you, you have to kill two Mucklings in the area. They like to get stuck in rocks.",
 				["g"] = {
 					-- Rest is under shared Lv70 Elite Rare Drops
 				},
@@ -310,3 +311,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		}),
 	}),
 })));
+
+root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+	m(THE_AZURE_SPAN, {
+		q(73886),	-- Killing both Mucklings for Mucka the Raker
+	}),
+}));
