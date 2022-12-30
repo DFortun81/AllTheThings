@@ -34,6 +34,98 @@ local SymPvPClass = function(SeasonID, HeaderID, ClassID)
 end
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	m(ORIBOS, {
+		n(QUESTS, {
+			pvp(n(PVP, {
+				q(62910, {	-- Against Overwhelming Odds
+					["provider"] = { "n", 168011 },	-- Zo'sorg
+					["isWeekly"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 34.7, 56.5, ORIBOS },
+					["_drop"] = { "g" },	-- drop anima trash
+				}),
+				q(62911, {	-- Against Overwhelming Odds
+					["provider"] = { "n", 168011 },	-- Zo'sorg
+					["isWeekly"] = true,
+					["races"] = HORDE_ONLY,
+					["coord"] = { 34.7, 56.5, ORIBOS },
+					["_drop"] = { "g" },	-- drop anima trash
+				}),
+				q(65649, {	-- A New Deal
+					["provider"] = { "n", 168011 },	-- Zo'sorg
+					["sourceQuest"] = 64957,	-- This Old Waystone (possibly earlier)
+					["coord"] = { 35.6, 57.5, ORIBOS },
+					["timeline"] = { "added 9.2.0" },
+					["g"] = {
+						i(188778),	-- Cosmic Gladiator's Devouring Malediction
+						i(188691),	-- Cosmic Gladiator's Echoing Resolve
+						i(188775),	-- Cosmic Gladiator's Eternal Aegis
+						i(188524),	-- Cosmic Gladiator's Fastidious Resolve
+						i(188766),	-- Cosmic Gladiator's Resonator
+						currency(1792),	-- Honor
+					},
+				}),
+				q(64304, {	-- New Opportunities Await
+					["provider"] = { "n", 168011 },	-- Zo'sorg
+					["coord"] = { 34.7, 57.3, ORIBOS },
+					["timeline"] = { "added 9.1.0" },
+					["isWeekly"] = true,
+					["g"] = {
+						i(186980),	-- Unchained Gladiator's Shackles of Malediction
+					},
+				}),
+				q(62287, {	-- Observing Arenas
+					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+					["isWeekly"] = true,
+					["coord"] = { 34.3, 55.8, ORIBOS },
+					["_drop"] = { "g" },	-- drop anima trash
+				}),
+				q(62284, {	-- Observing Battle
+					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+					["isWeekly"] = true,
+					["coord"] = { 34.7, 56.5, ORIBOS },
+					["_drop"] = { "g" },	-- drop anima trash
+				}),
+				q(62286, {	-- Observing Skirmishes
+					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+					["isWeekly"] = true,
+					["coord"] = { 34.7, 56.5, ORIBOS },
+					["_drop"] = { "g" },	-- drop anima trash
+				}),
+				q(62288, {	-- Observing Teamwork
+					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+					["isWeekly"] = true,
+					["coord"] = { 34.7, 56.5, ORIBOS },
+					["_drop"] = { "g" },	-- drop anima trash
+				}),
+				q(64527, {	-- Observing the Chase [SL 'Try Warmode']
+					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+					["coord"] = { 34.7, 55.7, ORIBOS },	-- Ring of Fates
+					["timeline"] = { "added 9.1.0" },
+					["altQuests"] = {
+						53295,	-- Do Your Part [BFA 'Try Warmode'] [A]
+						53338,	-- Prove Your Worth [BFA 'Try Warmode'] [H]
+					},
+				}),
+				q(62285, {	-- Observing War
+					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+					["isWeekly"] = true,
+					["coord"] = { 34.7, 56.5, ORIBOS },
+					["_drop"] = { "g" },	-- drop anima trash
+				}),
+				q(65773, {	-- Solo Mission
+					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+					["coord"] = { 34.7, 56.5, ORIBOS },
+					["isWeekly"] = true,
+					["timeline"] = { "added 9.2.0" },
+				}),
+				q(65775, {	-- Soloing Strategy
+					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+					["coord"] = { 34.7, 56.5, ORIBOS },
+					["isWeekly"] = true,
+					["timeline"] = { "added 9.2.0" },
+				}),
+			})),
+		}),
 		n(VENDORS, {
 			pvp(n(PVP, {
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
@@ -464,316 +556,366 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								}),
 							},
 						})),
-						n(SEASON_COSMIC, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SL_S4 } }, {
-							n(WEAPONS, {
-								i(186959, {	-- Cosmic Aspirant's Barrier
-									["cost"] = { { "c", 1792, 450 } },
-								}),
-								i(186948, {	-- Cosmic Aspirant's Battleaxe
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186964, {	-- Cosmic Aspirant's Blackjack
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186963, {	-- Cosmic Aspirant's Blade
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186965, {	-- Cosmic Aspirant's Crescent
-									["cost"] = { { "c", 1792, 1325 } },
-								}),
-								i(186949, {	-- Cosmic Aspirant's Dagger
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186958, {	-- Cosmic Aspirant's Gavel
-									["cost"] = { { "c", 1792, 1325 } },
-								}),
-								i(186954, {	-- Cosmic Aspirant's Greataxe
-									["cost"] = { { "c", 1792, 1325 } },
-								}),
-								i(186955, {	-- Cosmic Aspirant's Greatsword
-									["cost"] = { { "c", 1792, 1750 } },
-								}),
-								i(186960, {	-- Cosmic Aspirant's Hatchet
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186962, {	-- Cosmic Aspirant's Longspear
-									["cost"] = { { "c", 1792, 1750 } },
-								}),
-								i(186950, {	-- Cosmic Aspirant's Mace
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186956, {	-- Cosmic Aspirant's Orb
-									["cost"] = { { "c", 1792, 450 } },
-								}),
-								i(186951, {	-- Cosmic Aspirant's Polearm
-									["cost"] = { { "c", 1792, 1750 } },
-								}),
-								i(186961, {	-- Cosmic Aspirant's Recurve
-									["cost"] = { { "c", 1792, 1750 } },
-								}),
-								i(186952, {	-- Cosmic Aspirant's Staff
-									["cost"] = { { "c", 1792, 1750 } },
-								}),
-								i(186953, {	-- Cosmic Aspirant's Sword
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186957, {	-- Cosmic Aspirant's Warglaive
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-							}),
-							n(BACK, {
-								i(186944, {	-- Cosmic Aspirant's Cape
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-								i(186873, {	-- Cosmic Aspirant's Cloak
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-								i(186909, {	-- Cosmic Aspirant's Drape
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-							}),
-							filter(CLOTH, {
-								i(186934, {	-- Cosmic Aspirant's Silk Belt
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186938, {	-- Cosmic Aspirant's Silk Bindings
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-								i(186898, {	-- Cosmic Aspirant's Silk Cord
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186922, {	-- Cosmic Aspirant's Silk Cover
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186915, {	-- Cosmic Aspirant's Silk Footwraps
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186884, {	-- Cosmic Aspirant's Silk Gloves
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186920, {	-- Cosmic Aspirant's Silk Handwraps
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186886, {	-- Cosmic Aspirant's Silk Hood
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186890, {	-- Cosmic Aspirant's Silk Leggings
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186926, {	-- Cosmic Aspirant's Silk Legwraps
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186895, {	-- Cosmic Aspirant's Silk Mantle
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186931, {	-- Cosmic Aspirant's Silk Shawl
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186879, {	-- Cosmic Aspirant's Silk Treads
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186874, {	-- Cosmic Aspirant's Silk Tunic
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186910, {	-- Cosmic Aspirant's Silk Vest
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186902, {	-- Cosmic Aspirant's Silk Wristwraps
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-							}),
-							n(FINGER, {
-								i(186937, {	-- Cosmic Aspirant's Band
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-								i(186901, {	-- Cosmic Aspirant's Ring
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-								i(186945, {	-- Cosmic Aspirant's Signet
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-							}),
-							filter(LEATHER, {
-								i(186941, {	-- Cosmic Aspirant's Leather Armguards
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-								i(186900, {	-- Cosmic Aspirant's Leather Belt
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186881, {	-- Cosmic Aspirant's Leather Boots
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186892, {	-- Cosmic Aspirant's Leather Breeches
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186936, {	-- Cosmic Aspirant's Leather Cord
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186917, {	-- Cosmic Aspirant's Leather Footpads
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186882, {	-- Cosmic Aspirant's Leather Gloves
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186918, {	-- Cosmic Aspirant's Leather Grips
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186888, {	-- Cosmic Aspirant's Leather Helm
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186928, {	-- Cosmic Aspirant's Leather Leggings
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186929, {	-- Cosmic Aspirant's Leather Mantle
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186924, {	-- Cosmic Aspirant's Leather Mask
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186893, {	-- Cosmic Aspirant's Leather Spaulders
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186913, {	-- Cosmic Aspirant's Leather Tunic
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186877, {	-- Cosmic Aspirant's Leather Vest
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186905, {	-- Cosmic Aspirant's Leather Wristwraps
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-							}),
-							filter(MAIL, {
-								i(186899, {	-- Cosmic Aspirant's Chain Belt
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186940, {	-- Cosmic Aspirant's Chain Bracer
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-								i(186935, {	-- Cosmic Aspirant's Chain Clasp
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186885, {	-- Cosmic Aspirant's Chain Gauntlets
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186921, {	-- Cosmic Aspirant's Chain Handguards
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186923, {	-- Cosmic Aspirant's Chain Headguard
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186887, {	-- Cosmic Aspirant's Chain Helm
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186891, {	-- Cosmic Aspirant's Chain Leggings
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186880, {	-- Cosmic Aspirant's Chain Sabatons
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186932, {	-- Cosmic Aspirant's Chain Shoulderguards
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186896, {	-- Cosmic Aspirant's Chain Spaulders
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186916, {	-- Cosmic Aspirant's Chain Stompers
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186912, {	-- Cosmic Aspirant's Chain Tunic
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186876, {	-- Cosmic Aspirant's Chain Vest
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186927, {	-- Cosmic Aspirant's Chain Wargreaves
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186904, {	-- Cosmic Aspirant's Chain Wristwraps
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-							}),
-							n(NECK, {
-								i(186943, {	-- Cosmic Aspirant's Choker
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-								i(186907, {	-- Cosmic Aspirant's Necklace
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-								i(186947, {	-- Cosmic Aspirant's Pendant
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-							}),
-							filter(PLATE, {
-								i(186939, {	-- Cosmic Aspirant's Plate Armguards
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-								i(186911, {	-- Cosmic Aspirant's Plate Armor
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186875, {	-- Cosmic Aspirant's Plate Chestplate
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186903, {	-- Cosmic Aspirant's Plate Cuffs
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-								i(186883, {	-- Cosmic Aspirant's Plate Gauntlets
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186897, {	-- Cosmic Aspirant's Plate Girdle
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186933, {	-- Cosmic Aspirant's Plate Greatbelt
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186919, {	-- Cosmic Aspirant's Plate Handguards
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186908, {	-- Cosmic Aspirant's Plate Headguard
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186872, {	-- Cosmic Aspirant's Plate Helm
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186889, {	-- Cosmic Aspirant's Plate Legguards
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-								i(186930, {	-- Cosmic Aspirant's Plate Pauldrons
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186894, {	-- Cosmic Aspirant's Plate Shoulders
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186914, {	-- Cosmic Aspirant's Plate Stompers
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186878, {	-- Cosmic Aspirant's Plate Warboots
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186925, {	-- Cosmic Aspirant's Plate Wargreaves
-									["cost"] = { { "c", 1792, 875 } },
-								}),
-							}),
-							n(-386, {	-- Trinket
-								i(186906, {	-- Cosmic Aspirant's Badge of Ferocity
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186946, {	-- Cosmic Aspirant's Emblem
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186942, {	-- Cosmic Aspirant's Insignia of Alacrity
-									["cost"] = { { "c", 1792, 700 } },
-								}),
-								i(186966, {	-- Cosmic Aspirant's Medallion
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-								i(186967, {	-- Cosmic Aspirant's Relentless Brooch
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-								i(186968, {	-- Cosmic Aspirant's Sigil of Adaptation
-									["cost"] = { { "c", 1792, 525 } },
-								}),
-							}),
+						header(HEADERS.Achievement, SEASON_COSMIC, bubbleDownSelf({
+							["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4, ADDED_DF_REL },
+						},{
+							["icon"] = "Interface\\Icons\\inv_shadebeastmount_red",
+							["g"] = {
+								i(201875, {	-- Arsenal: Cosmic Aspirant's Weapons
+									["questID"] = 74274,
+									["cost"] = { { "i", MOH, 80 } },
+									["sym"] = {
+										{"select", "tierID", SL_TIER},			-- Select Shadowlands
+										{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
+										{"where", "headerID", SEASON_COSMIC},	-- Season
+										{"pop"},								-- Discard the Season Header and acquire all of their children.
+										{"where", "headerID", PVP_ASPIRANT},	-- Aspirant Gear
+										{"pop"},								-- Discard the Aspirant Header and acquire all of their children.
+										{"where", "headerID", WEAPONS},			-- Weapons
+										{"pop"},								-- Discard the Weapons Header and acquire all of their children.
+									},
+								}),
+								i(201844, {	-- Ensemble: Cosmic Aspirant's Cloth Armor
+									["questID"] = 74272,
+									["classes"] = CLOTH_CLASSES,
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = SymPvPFilter(SEASON_COSMIC, PVP_ASPIRANT, CLOTH),
+								}),
+								i(201843, {	-- Ensemble: Cosmic Aspirant's Leather Armor
+									["questID"] = 74271,
+									["classes"] = LEATHER_CLASSES,
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = SymPvPFilter(SEASON_COSMIC, PVP_ASPIRANT, CLOTH, 186873),
+								}),
+								i(201842, {	-- Ensemble: Cosmic Aspirant's Mail Armor
+									["questID"] = 74270,
+									["classes"] = MAIL_CLASSES,
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = SymPvPFilter(SEASON_COSMIC, PVP_ASPIRANT, MAIL, 186909),
+								}),
+								i(201841, {	-- Ensemble: Cosmic Aspirant's Plate Armor
+									["questID"] = 74269,
+									["classes"] = PLATE_CLASSES,
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = SymPvPFilter(SEASON_COSMIC, PVP_ASPIRANT, PLATE, 186944),
+								}),
+							},
+						})),
+						header(HEADERS.Achievement, SEASON_COSMIC, bubbleDown({
+							["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
+						},{
+							["icon"] = "Interface\\Icons\\inv_shadebeastmount_red",
+							["g"] = {
+								n(BACK, {
+									i(186944, {	-- Cosmic Aspirant's Cape
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+									i(186873, {	-- Cosmic Aspirant's Cloak
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+									i(186909, {	-- Cosmic Aspirant's Drape
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+								}),
+								filter(CLOTH, {
+									i(186934, {	-- Cosmic Aspirant's Silk Belt
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186938, {	-- Cosmic Aspirant's Silk Bindings
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+									i(186898, {	-- Cosmic Aspirant's Silk Cord
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186922, {	-- Cosmic Aspirant's Silk Cover
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186915, {	-- Cosmic Aspirant's Silk Footwraps
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186884, {	-- Cosmic Aspirant's Silk Gloves
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186920, {	-- Cosmic Aspirant's Silk Handwraps
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186886, {	-- Cosmic Aspirant's Silk Hood
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186890, {	-- Cosmic Aspirant's Silk Leggings
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186926, {	-- Cosmic Aspirant's Silk Legwraps
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186895, {	-- Cosmic Aspirant's Silk Mantle
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186931, {	-- Cosmic Aspirant's Silk Shawl
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186879, {	-- Cosmic Aspirant's Silk Treads
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186874, {	-- Cosmic Aspirant's Silk Tunic
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186910, {	-- Cosmic Aspirant's Silk Vest
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186902, {	-- Cosmic Aspirant's Silk Wristwraps
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+								}),
+								n(FINGER, {
+									i(186937, {	-- Cosmic Aspirant's Band
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+									i(186901, {	-- Cosmic Aspirant's Ring
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+									i(186945, {	-- Cosmic Aspirant's Signet
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+								}),
+								filter(LEATHER, {
+									i(186941, {	-- Cosmic Aspirant's Leather Armguards
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+									i(186900, {	-- Cosmic Aspirant's Leather Belt
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186881, {	-- Cosmic Aspirant's Leather Boots
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186892, {	-- Cosmic Aspirant's Leather Breeches
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186936, {	-- Cosmic Aspirant's Leather Cord
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186917, {	-- Cosmic Aspirant's Leather Footpads
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186882, {	-- Cosmic Aspirant's Leather Gloves
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186918, {	-- Cosmic Aspirant's Leather Grips
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186888, {	-- Cosmic Aspirant's Leather Helm
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186928, {	-- Cosmic Aspirant's Leather Leggings
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186929, {	-- Cosmic Aspirant's Leather Mantle
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186924, {	-- Cosmic Aspirant's Leather Mask
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186893, {	-- Cosmic Aspirant's Leather Spaulders
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186913, {	-- Cosmic Aspirant's Leather Tunic
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186877, {	-- Cosmic Aspirant's Leather Vest
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186905, {	-- Cosmic Aspirant's Leather Wristwraps
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+								}),
+								filter(MAIL, {
+									i(186899, {	-- Cosmic Aspirant's Chain Belt
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186940, {	-- Cosmic Aspirant's Chain Bracer
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+									i(186935, {	-- Cosmic Aspirant's Chain Clasp
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186885, {	-- Cosmic Aspirant's Chain Gauntlets
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186921, {	-- Cosmic Aspirant's Chain Handguards
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186923, {	-- Cosmic Aspirant's Chain Headguard
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186887, {	-- Cosmic Aspirant's Chain Helm
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186891, {	-- Cosmic Aspirant's Chain Leggings
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186880, {	-- Cosmic Aspirant's Chain Sabatons
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186932, {	-- Cosmic Aspirant's Chain Shoulderguards
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186896, {	-- Cosmic Aspirant's Chain Spaulders
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186916, {	-- Cosmic Aspirant's Chain Stompers
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186912, {	-- Cosmic Aspirant's Chain Tunic
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186876, {	-- Cosmic Aspirant's Chain Vest
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186927, {	-- Cosmic Aspirant's Chain Wargreaves
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186904, {	-- Cosmic Aspirant's Chain Wristwraps
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+								}),
+								n(NECK, {
+									i(186943, {	-- Cosmic Aspirant's Choker
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+									i(186907, {	-- Cosmic Aspirant's Necklace
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+									i(186947, {	-- Cosmic Aspirant's Pendant
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+								}),
+								filter(PLATE, {
+									i(186939, {	-- Cosmic Aspirant's Plate Armguards
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+									i(186911, {	-- Cosmic Aspirant's Plate Armor
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186875, {	-- Cosmic Aspirant's Plate Chestplate
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186903, {	-- Cosmic Aspirant's Plate Cuffs
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+									i(186883, {	-- Cosmic Aspirant's Plate Gauntlets
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186897, {	-- Cosmic Aspirant's Plate Girdle
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186933, {	-- Cosmic Aspirant's Plate Greatbelt
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186919, {	-- Cosmic Aspirant's Plate Handguards
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186908, {	-- Cosmic Aspirant's Plate Headguard
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186872, {	-- Cosmic Aspirant's Plate Helm
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186889, {	-- Cosmic Aspirant's Plate Legguards
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186930, {	-- Cosmic Aspirant's Plate Pauldrons
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186894, {	-- Cosmic Aspirant's Plate Shoulders
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186914, {	-- Cosmic Aspirant's Plate Stompers
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186878, {	-- Cosmic Aspirant's Plate Warboots
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186925, {	-- Cosmic Aspirant's Plate Wargreaves
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+								}),
+								n(-386, {	-- Trinket
+									i(186906, {	-- Cosmic Aspirant's Badge of Ferocity
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186946, {	-- Cosmic Aspirant's Emblem
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186942, {	-- Cosmic Aspirant's Insignia of Alacrity
+										["cost"] = { { "c", 1792, 700 } },
+									}),
+									i(186966, {	-- Cosmic Aspirant's Medallion
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+									i(186967, {	-- Cosmic Aspirant's Relentless Brooch
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+									i(186968, {	-- Cosmic Aspirant's Sigil of Adaptation
+										["cost"] = { { "c", 1792, 525 } },
+									}),
+								}),
+								n(WEAPONS, {
+									i(186959, {	-- Cosmic Aspirant's Barrier
+										["cost"] = { { "c", 1792, 450 } },
+									}),
+									i(186948, {	-- Cosmic Aspirant's Battleaxe
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186964, {	-- Cosmic Aspirant's Blackjack
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186963, {	-- Cosmic Aspirant's Blade
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186965, {	-- Cosmic Aspirant's Crescent
+										["cost"] = { { "c", 1792, 1325 } },
+									}),
+									i(186949, {	-- Cosmic Aspirant's Dagger
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186958, {	-- Cosmic Aspirant's Gavel
+										["cost"] = { { "c", 1792, 1325 } },
+									}),
+									i(186954, {	-- Cosmic Aspirant's Greataxe
+										["cost"] = { { "c", 1792, 1325 } },
+									}),
+									i(186955, {	-- Cosmic Aspirant's Greatsword
+										["cost"] = { { "c", 1792, 1750 } },
+									}),
+									i(186960, {	-- Cosmic Aspirant's Hatchet
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186962, {	-- Cosmic Aspirant's Longspear
+										["cost"] = { { "c", 1792, 1750 } },
+									}),
+									i(186950, {	-- Cosmic Aspirant's Mace
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186956, {	-- Cosmic Aspirant's Orb
+										["cost"] = { { "c", 1792, 450 } },
+									}),
+									i(186951, {	-- Cosmic Aspirant's Polearm
+										["cost"] = { { "c", 1792, 1750 } },
+									}),
+									i(186961, {	-- Cosmic Aspirant's Recurve
+										["cost"] = { { "c", 1792, 1750 } },
+									}),
+									i(186952, {	-- Cosmic Aspirant's Staff
+										["cost"] = { { "c", 1792, 1750 } },
+									}),
+									i(186953, {	-- Cosmic Aspirant's Sword
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+									i(186957, {	-- Cosmic Aspirant's Warglaive
+										["cost"] = { { "c", 1792, 875 } },
+									}),
+								}),
+							},
 						})),
 						n(SEASON_UNCHAINED, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {
 							n(WEAPONS, {
@@ -1288,7 +1430,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				n(168011, {	-- Zo'sorg <Master of Conflict>
 					["coord"] = { 35.0, 57.6, ORIBOS },
 					["g"] = {
-						n(CONDUITS, sharedData({["cost"] = { { "c", CONQUEST, 200 } }}, {
+						n(CONDUITS, sharedData({
+							["cost"] = { { "c", CONQUEST, 200 }, }
+						},{
 							i(181848),	-- Accelerated Cold
 							i(183470),	-- Born of the Wilds
 							i(182748),	-- Borne of Blood
@@ -1544,7 +1688,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								}),
 								i(201849, {	-- Ensemble: Cosmic Gladiator's Priest Armor
 									["questID"] = 74261,
-									["classes"] = { PALADIN },
+									["classes"] = { PRIEST },
 									["cost"] = { { "i", MOH, 12 } },
 									["sym"] = {
 										{"select", "tierID", SL_TIER},			-- Select Shadowlands
@@ -2016,336 +2160,682 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								}),
 							},
 						})),
-						n(SEASON_COSMIC, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SL_S4 } }, {
-							n(WEAPONS, {
-								i(186863, {	-- Cosmic Gladiator's Ballista
-									["cost"] = { { "c", 1602, 1800 } },
-								}),
-								i(189562, {	-- Cosmic Gladiator's Barrier
-									["cost"] = { { "c", 1602, 450 } },
-								}),
-								i(186859, {	-- Cosmic Gladiator's Ceremonial Sword
-									["cost"] = { { "c", 1602, 1350 } },
-								}),
-								i(186778, {	-- Cosmic Gladiator's Chalice
-									["cost"] = { { "c", 1602, 450 } },
-								}),
-								i(189566, {	-- Cosmic Gladiator's Focus Staff
-									["cost"] = { { "c", 1602, 1800 } },
-								}),
-								i(189568, {	-- Cosmic Gladiator's Gavel
-									["cost"] = { { "c", 1602, 1350 } },
-								}),
-								i(186858, {	-- Cosmic Gladiator's Gladius
-									["cost"] = { { "c", 1602, 900 } },
-								}),
-								i(189567, {	-- Cosmic Gladiator's Greatstaff
-									["cost"] = { { "c", 1602, 1800 } },
-								}),
-								i(189564, {	-- Cosmic Gladiator's Greatsword
-									["cost"] = { { "c", 1602, 1800 } },
-								}),
-								i(186779, {	-- Cosmic Gladiator's Guard
-									["cost"] = { { "c", 1602, 450 } },
-								}),
-								i(186855, {	-- Cosmic Gladiator's Hacker
-									["cost"] = { { "c", 1602, 900 } },
-								}),
-								i(186856, {	-- Cosmic Gladiator's Knife
-									["cost"] = { { "c", 1602, 900 } },
-								}),
-								i(186862, {	-- Cosmic Gladiator's Pulverizer
-									["cost"] = { { "c", 1602, 1800 } },
-								}),
-								i(189563, {	-- Cosmic Gladiator's Rifle
-									["cost"] = { { "c", 1602, 1800 } },
-								}),
-								i(189569, {	-- Cosmic Gladiator's Ripper
-									["cost"] = { { "c", 1602, 900 } },
-								}),
-								i(186857, {	-- Cosmic Gladiator's Ritual Dagger
-									["cost"] = { { "c", 1602, 1350 } },
-								}),
-								i(186864, {	-- Cosmic Gladiator's Scythe
-									["cost"] = { { "c", 1602, 1800 } },
-								}),
-								i(189570, {	-- Cosmic Gladiator's Slicer
-									["cost"] = { { "c", 1602, 900 } },
-								}),
-								i(186854, {	-- Cosmic Gladiator's Splitter
-									["cost"] = { { "c", 1602, 900 } },
-								}),
-								i(186865, {	-- Cosmic Gladiator's Vesper
-									["cost"] = { { "c", 1602, 1800 } },
-								}),
-								i(186861, {	-- Cosmic Gladiator's Warglaive
-									["cost"] = { { "c", 1602, 900 } },
-								}),
-								i(186860, {	-- Cosmic Gladiator's Xiphos
-									["cost"] = { { "c", 1602, 900 } },
-								}),
-							}),
-							n(BACK, {
-								i(186780, {	-- Cosmic Gladiator's Cloak
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-								i(186781, {	-- Cosmic Gladiator's Drape
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-								i(186783, {	-- Cosmic Gladiator's Greatcloak
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-								i(186782, {	-- Cosmic Gladiator's Shawl
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-							}),
-							filter(CLOTH, {
-								i(186801, {	-- Cosmic Gladiator's Silk Amice
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186805, {	-- Cosmic Gladiator's Silk Armbands
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-								i(186803, {	-- Cosmic Gladiator's Silk Belt
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186802, {	-- Cosmic Gladiator's Silk Cord
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186794, {	-- Cosmic Gladiator's Silk Gloves
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186797, {	-- Cosmic Gladiator's Silk Guise
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186795, {	-- Cosmic Gladiator's Silk Handwraps
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186796, {	-- Cosmic Gladiator's Silk Hood
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186798, {	-- Cosmic Gladiator's Silk Leggings
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186800, {	-- Cosmic Gladiator's Silk Mantle
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186790, {	-- Cosmic Gladiator's Silk Robe
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186792, {	-- Cosmic Gladiator's Silk Slippers
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186793, {	-- Cosmic Gladiator's Silk Treads
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186799, {	-- Cosmic Gladiator's Silk Trousers
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186791, {	-- Cosmic Gladiator's Silk Vestments
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186804, {	-- Cosmic Gladiator's Silk Wristwraps
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-							}),
-							n(FINGER, {
-								i(186785, {	-- Cosmic Gladiator's Band
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-								i(186784, {	-- Cosmic Gladiator's Ring
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-								i(186786, {	-- Cosmic Gladiator's Signet
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-							}),
-							filter(LEATHER, {
-								i(186818, {	-- Cosmic Gladiator's Leather Belt
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186808, {	-- Cosmic Gladiator's Leather Boots
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186814, {	-- Cosmic Gladiator's Leather Breeches
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186810, {	-- Cosmic Gladiator's Leather Gloves
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186811, {	-- Cosmic Gladiator's Leather Grips
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186812, {	-- Cosmic Gladiator's Leather Helm
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186807, {	-- Cosmic Gladiator's Leather Jerkin
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186815, {	-- Cosmic Gladiator's Leather Legwraps
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186813, {	-- Cosmic Gladiator's Leather Mask
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186817, {	-- Cosmic Gladiator's Leather Shoulderpads
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186816, {	-- Cosmic Gladiator's Leather Spaulders
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186819, {	-- Cosmic Gladiator's Leather Strap
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186809, {	-- Cosmic Gladiator's Leather Treads
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186806, {	-- Cosmic Gladiator's Leather Vest
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186821, {	-- Cosmic Gladiator's Leather Wristguards
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-								i(186820, {	-- Cosmic Gladiator's Leather Wristwraps
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-							}),
-							filter(MAIL, {
-								i(186834, {	-- Cosmic Gladiator's Chain Belt
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186825, {	-- Cosmic Gladiator's Chain Boots
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186837, {	-- Cosmic Gladiator's Chain Bracers
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-								i(186831, {	-- Cosmic Gladiator's Chain Breeches
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186829, {	-- Cosmic Gladiator's Chain Faceguard
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186826, {	-- Cosmic Gladiator's Chain Gauntlets
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186835, {	-- Cosmic Gladiator's Chain Girdle
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186827, {	-- Cosmic Gladiator's Chain Handguards
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186828, {	-- Cosmic Gladiator's Chain Helm
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186830, {	-- Cosmic Gladiator's Chain Leggings
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186832, {	-- Cosmic Gladiator's Chain Monnion
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186824, {	-- Cosmic Gladiator's Chain Sabatons
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186833, {	-- Cosmic Gladiator's Chain Shoulderguard
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186823, {	-- Cosmic Gladiator's Chain Tunic
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186822, {	-- Cosmic Gladiator's Chain Vest
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186836, {	-- Cosmic Gladiator's Chain Wristguards
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-							}),
-							n(NECK, {
-								i(186789, {	-- Cosmic Gladiator's Amulet
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-								i(186787, {	-- Cosmic Gladiator's Necklace
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-								i(186788, {	-- Cosmic Gladiator's Pendant
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-							}),
-							filter(PLATE, {
-								i(186838, {	-- Cosmic Gladiator's Plate Chestguard
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186839, {	-- Cosmic Gladiator's Plate Chestplate
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186842, {	-- Cosmic Gladiator's Plate Gauntlets
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186850, {	-- Cosmic Gladiator's Plate Girdle
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186851, {	-- Cosmic Gladiator's Plate Greatbelt
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186843, {	-- Cosmic Gladiator's Plate Handguards
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186844, {	-- Cosmic Gladiator's Plate Helm
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186845, {	-- Cosmic Gladiator's Plate Helmet
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186846, {	-- Cosmic Gladiator's Plate Legguards
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186849, {	-- Cosmic Gladiator's Plate Pauldrons
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186848, {	-- Cosmic Gladiator's Plate Shoulders
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186841, {	-- Cosmic Gladiator's Plate Stompers
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186853, {	-- Cosmic Gladiator's Plate Vambraces
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-								i(186840, {	-- Cosmic Gladiator's Plate Warboots
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186847, {	-- Cosmic Gladiator's Plate Wargreaves
-									["cost"] = { { "c", 1602, 875 } },
-								}),
-								i(186852, {	-- Cosmic Gladiator's Plate Wristguards
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-							}),
-							n(-386, {	-- Trinket
-								i(186866, {	-- Cosmic Gladiator's Badge of Ferocity
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								--i(188778, {	-- Cosmic Gladiator's Devouring Malediction
-								--i(188691),	-- Cosmic Gladiator's Echoing Resolve
-								i(186868, {	-- Cosmic Gladiator's Emblem
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								--i(188775, {	-- Cosmic Gladiator's Eternal Aegis
-								--i(188524),	-- Cosmic Gladiator's Fastidious Resolve
-								i(186867, {	-- Cosmic Gladiator's Insignia of Alacrity
-									["cost"] = { { "c", 1602, 700 } },
-								}),
-								i(186869, {	-- Cosmic Gladiator's Medallion
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-								i(186870, {	-- Cosmic Gladiator's Relentless Brooch
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-								--i(188766, {	-- Cosmic Gladiator's Resonator
-								i(186871, {	-- Cosmic Gladiator's Sigil of Adaptation
-									["cost"] = { { "c", 1602, 525 } },
-								}),
-							}),
+						header(HEADERS.Achievement, SEASON_COSMIC, bubbleDownSelf({
+							["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4, ADDED_DF_REL },
+						},{
+							["icon"] = "Interface\\Icons\\inv_shadebeastmount_red",
+							["g"] = {
+								i(201873, {	-- Arsenal: Cosmic Gladiator's Weapons
+									["questID"] = 74273,
+									["cost"] = { { "i", MOH, 80 } },
+									["sym"] = {
+										{"select", "tierID", SL_TIER},			-- Select Shadowlands
+										{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
+										{"where", "headerID", SEASON_COSMIC},	-- Season
+										{"pop"},								-- Discard the Season Header and acquire all of their children.
+										{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
+										{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+										{"where", "headerID", WEAPONS},			-- Weapons
+										{"pop"},								-- Discard the Weapons Header and acquire all of their children.
+									},
+								}),
+								i(201856, {	-- Ensemble: Cosmic Gladiator's Death Knight Armor
+									["questID"] = 74268,
+									["classes"] = { DEATHKNIGHT },
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = {
+										{"select", "tierID", SL_TIER},			-- Select Shadowlands
+										{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
+										{"where", "headerID", SEASON_COSMIC},	-- Eternal Season
+										{"pop"},								-- Discard the Eternal Header and acquire all of their children.
+										{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Header
+										{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+										{"where", "headerID", CLASSES},			-- Classes Header
+										{"pop"},								-- Discard the Classes Header and acquire all of their children.
+										{"where", "classID", DEATHKNIGHT},		-- Death Knight
+										{"pop"},								-- Discard the Death Knight Header and acquire all of their children.
+
+										{"select", "itemID",
+											186783,
+											186842,
+											186850,
+											186845,
+											186846,
+											186852,
+										},
+										{"not", "bonusID", 7532 },
+									},
+								}),
+								i(201855, {	-- Ensemble: Cosmic Gladiator's Demon Hunter Armor
+									["questID"] = 74267,
+									["classes"] = { DEMONHUNTER },
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = {
+										{"select", "tierID", SL_TIER},			-- Select Shadowlands
+										{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
+										{"where", "headerID", SEASON_COSMIC},	-- Eternal Season
+										{"pop"},								-- Discard the Eternal Header and acquire all of their children.
+										{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Header
+										{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+										{"where", "headerID", CLASSES},			-- Classes Header
+										{"pop"},								-- Discard the Classes Header and acquire all of their children.
+										{"where", "classID", DEMONHUNTER},		-- Demon Hunter
+										{"pop"},								-- Discard the Demon Hunter Header and acquire all of their children.
+
+										{"select", "itemID",
+											186782,
+											186818,
+											186815,
+											186813,
+											186821,
+										},
+										{"not", "bonusID", 7532 },
+									},
+								}),
+								i(201854, {	-- Ensemble: Cosmic Gladiator's Druid Armor
+									["questID"] = 74266,
+									["classes"] = { DRUID },
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = {
+										{"select", "tierID", SL_TIER},			-- Select Shadowlands
+										{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
+										{"where", "headerID", SEASON_COSMIC},	-- Eternal Season
+										{"pop"},								-- Discard the Eternal Header and acquire all of their children.
+										{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Header
+										{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+										{"where", "headerID", CLASSES},			-- Classes Header
+										{"pop"},								-- Discard the Classes Header and acquire all of their children.
+										{"where", "classID", DRUID},			-- Druid
+										{"pop"},								-- Discard the Druid Header and acquire all of their children.
+
+										{"select", "itemID",
+											186814,
+											186810,
+											186809,
+											186821,
+										},
+										{"not", "bonusID", 7532 },
+									},
+								}),
+								i(201853, {	-- Ensemble: Cosmic Gladiator's Hunter Armor
+									["questID"] = 74265,
+									["classes"] = { HUNTER },
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = {
+										{"select", "tierID", SL_TIER},			-- Select Shadowlands
+										{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
+										{"where", "headerID", SEASON_COSMIC},	-- Eternal Season
+										{"pop"},								-- Discard the Eternal Header and acquire all of their children.
+										{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Header
+										{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+										{"where", "headerID", CLASSES},			-- Classes Header
+										{"pop"},								-- Discard the Classes Header and acquire all of their children.
+										{"where", "classID", HUNTER},			-- Hunter
+										{"pop"},								-- Discard the Hunter Header and acquire all of their children.
+
+										{"select", "itemID",
+											186780,
+											186834,
+											186826,
+											186828,
+											186830,
+											186832,
+											186824,
+											186822,
+											186836,
+										},
+										{"not", "bonusID", 7532 },
+									},
+								}),
+								i(201852, {	-- Ensemble: Cosmic Gladiator's Mage Armor
+									["questID"] = 74264,
+									["classes"] = { MAGE },
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = {
+										{"select", "tierID", SL_TIER},			-- Select Shadowlands
+										{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
+										{"where", "headerID", SEASON_COSMIC},	-- Cosmic Season
+										{"pop"},								-- Discard the Cosmic Header and acquire all of their children.
+										{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Header
+										{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+										{"where", "headerID", CLASSES},			-- Classes Header
+										{"pop"},								-- Discard the Classes Header and acquire all of their children.
+										{"where", "classID", MAGE},				-- Mage
+										{"pop"},								-- Discard the Mage Header and acquire all of their children.
+
+										{"select", "itemID",
+											186805,
+											186803,
+											186794,
+											186796,
+											186792,
+											186799,
+										},
+										{"not", "bonusID", 7532 },
+									},
+								}),
+								i(201851, {	-- Ensemble: Cosmic Gladiator's Monk Armor
+									["questID"] = 74263,
+									["classes"] = { MONK },
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = {
+										{"select", "tierID", SL_TIER},			-- Select Shadowlands
+										{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
+										{"where", "headerID", SEASON_COSMIC},	-- Cosmic Season
+										{"pop"},								-- Discard the Cosmic Header and acquire all of their children.
+										{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Header
+										{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+										{"where", "headerID", CLASSES},			-- Classes Header
+										{"pop"},								-- Discard the Classes Header and acquire all of their children.
+										{"where", "classID", MONK},				-- Monk
+										{"pop"},								-- Discard the Monk Header and acquire all of their children.
+
+										{"select", "itemID",
+											186811,
+											186807,
+											186816,
+											186819,
+										},
+										{"not", "bonusID", 7532 },
+									},
+								}),
+								i(201850, {	-- Ensemble: Cosmic Gladiator's Paladin Armor
+									["questID"] = 74262,
+									["classes"] = { PALADIN },
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = {
+										{"select", "tierID", SL_TIER},			-- Select Shadowlands
+										{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
+										{"where", "headerID", SEASON_COSMIC},	-- Cosmic Season
+										{"pop"},								-- Discard the Cosmic Header and acquire all of their children.
+										{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Header
+										{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+										{"where", "headerID", CLASSES},			-- Classes Header
+										{"pop"},								-- Discard the Classes Header and acquire all of their children.
+										{"where", "classID", PALADIN},			-- Paladin
+										{"pop"},								-- Discard the Paladin Header and acquire all of their children.
+
+										{"select", "itemID",
+											186838,
+											186843,
+											186844,
+											186848,
+											186841,
+											186853,
+										},
+										{"not", "bonusID", 7532 },
+									},
+								}),
+								i(201849, {	-- Ensemble: Cosmic Gladiator's Priest Armor
+									["questID"] = 74261,
+									["classes"] = { PRIEST },
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = {
+										{"select", "tierID", SL_TIER},			-- Select Shadowlands
+										{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
+										{"where", "headerID", SEASON_COSMIC},	-- Cosmic Season
+										{"pop"},								-- Discard the Cosmic Header and acquire all of their children.
+										{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Header
+										{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+										{"where", "headerID", CLASSES},			-- Classes Header
+										{"pop"},								-- Discard the Classes Header and acquire all of their children.
+										{"where", "classID", PRIEST},			-- Priest
+										{"pop"},								-- Discard the Priest Header and acquire all of their children.
+
+										{"select", "itemID",
+											186781,
+											186801,
+											186802,
+											186797,
+											186791,
+											186804,
+										},
+										{"not", "bonusID", 7532 },
+									},
+								}),
+								i(201848, {	-- Ensemble: Cosmic Gladiator's Rogue Armor
+									["questID"] = 74260,
+									["classes"] = { ROGUE },
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = {
+										{"select", "tierID", SL_TIER},			-- Select Shadowlands
+										{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
+										{"where", "headerID", SEASON_COSMIC},	-- Cosmic Season
+										{"pop"},								-- Discard the Cosmic Header and acquire all of their children.
+										{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Header
+										{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+										{"where", "headerID", CLASSES},			-- Classes Header
+										{"pop"},								-- Discard the Classes Header and acquire all of their children.
+										{"where", "classID", ROGUE},			-- Rogue
+										{"pop"},								-- Discard the Rogue Header and acquire all of their children.
+
+										{"select", "itemID",
+											186808,
+											186812,
+											186817,
+											186806,
+										},
+										{"not", "bonusID", 7532 },
+									},
+								}),
+								i(201847, {	-- Ensemble: Cosmic Gladiator's Shaman Armor
+									["questID"] = 74259,
+									["classes"] = { SHAMAN },
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = {
+										{"select", "tierID", SL_TIER},			-- Select Shadowlands
+										{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
+										{"where", "headerID", SEASON_COSMIC},	-- Cosmic Season
+										{"pop"},								-- Discard the Cosmic Header and acquire all of their children.
+										{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Header
+										{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+										{"where", "headerID", CLASSES},			-- Classes Header
+										{"pop"},								-- Discard the Classes Header and acquire all of their children.
+										{"where", "classID", SHAMAN},			-- Shaman
+										{"pop"},								-- Discard the Shaman Header and acquire all of their children.
+
+										{"select", "itemID",
+											186825,
+											186837,
+											186831,
+											186829,
+											186835,
+											186827,
+											186833,
+											186823,
+										},
+										{"not", "bonusID", 7532 },
+									},
+								}),
+								i(201846, {	-- Ensemble: Cosmic Gladiator's Warlock Armor
+									["questID"] = 74258,
+									["classes"] = { WARLOCK },
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = {
+										{"select", "tierID", SL_TIER},			-- Select Shadowlands
+										{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
+										{"where", "headerID", SEASON_COSMIC},	-- Cosmic Season
+										{"pop"},								-- Discard the Cosmic Header and acquire all of their children.
+										{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Header
+										{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+										{"where", "headerID", CLASSES},			-- Classes Header
+										{"pop"},								-- Discard the Classes Header and acquire all of their children.
+										{"where", "classID", WARLOCK},			-- Warlock
+										{"pop"},								-- Discard the Warlock Header and acquire all of their children.
+
+										{"select", "itemID",
+											186795,
+											186798,
+											186800,
+											186790,
+											186793,
+										},
+										{"not", "bonusID", 7532 },
+									},
+								}),
+								i(201845, {	-- Ensemble: Cosmic Gladiator's Warrior Armor
+									["questID"] = 74257,
+									["classes"] = { WARRIOR },
+									["cost"] = { { "i", MOH, 12 } },
+									["sym"] = {
+										{"select", "tierID", SL_TIER},			-- Select Shadowlands
+										{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
+										{"where", "headerID", SEASON_COSMIC},	-- Cosmic Season
+										{"pop"},								-- Discard the Cosmic Header and acquire all of their children.
+										{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Header
+										{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+										{"where", "headerID", CLASSES},			-- Classes Header
+										{"pop"},								-- Discard the Classes Header and acquire all of their children.
+										{"where", "classID", WARRIOR},			-- Warrior
+										{"pop"},								-- Discard the Warrior Header and acquire all of their children.
+
+										{"select", "itemID",
+											186839,
+											186851,
+											186849,
+											186840,
+											186847,
+										},
+										{"not", "bonusID", 7532 },
+									},
+								}),
+							},
+						})),
+						header(HEADERS.Achievement, SEASON_COSMIC, bubbleDown({
+							["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
+						},{
+							["icon"] = "Interface\\Icons\\inv_shadebeastmount_red",
+							["g"] = {
+								n(BACK, {
+									i(186780, {	-- Cosmic Gladiator's Cloak
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+									i(186781, {	-- Cosmic Gladiator's Drape
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+									i(186783, {	-- Cosmic Gladiator's Greatcloak
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+									i(186782, {	-- Cosmic Gladiator's Shawl
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+								}),
+								filter(CLOTH, {
+									i(186801, {	-- Cosmic Gladiator's Silk Amice
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186805, {	-- Cosmic Gladiator's Silk Armbands
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+									i(186803, {	-- Cosmic Gladiator's Silk Belt
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186802, {	-- Cosmic Gladiator's Silk Cord
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186794, {	-- Cosmic Gladiator's Silk Gloves
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186797, {	-- Cosmic Gladiator's Silk Guise
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186795, {	-- Cosmic Gladiator's Silk Handwraps
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186796, {	-- Cosmic Gladiator's Silk Hood
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186798, {	-- Cosmic Gladiator's Silk Leggings
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186800, {	-- Cosmic Gladiator's Silk Mantle
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186790, {	-- Cosmic Gladiator's Silk Robe
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186792, {	-- Cosmic Gladiator's Silk Slippers
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186793, {	-- Cosmic Gladiator's Silk Treads
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186799, {	-- Cosmic Gladiator's Silk Trousers
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186791, {	-- Cosmic Gladiator's Silk Vestments
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186804, {	-- Cosmic Gladiator's Silk Wristwraps
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+								}),
+								n(FINGER, {
+									i(186785, {	-- Cosmic Gladiator's Band
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+									i(186784, {	-- Cosmic Gladiator's Ring
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+									i(186786, {	-- Cosmic Gladiator's Signet
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+								}),
+								filter(LEATHER, {
+									i(186818, {	-- Cosmic Gladiator's Leather Belt
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186808, {	-- Cosmic Gladiator's Leather Boots
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186814, {	-- Cosmic Gladiator's Leather Breeches
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186810, {	-- Cosmic Gladiator's Leather Gloves
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186811, {	-- Cosmic Gladiator's Leather Grips
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186812, {	-- Cosmic Gladiator's Leather Helm
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186807, {	-- Cosmic Gladiator's Leather Jerkin
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186815, {	-- Cosmic Gladiator's Leather Legwraps
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186813, {	-- Cosmic Gladiator's Leather Mask
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186817, {	-- Cosmic Gladiator's Leather Shoulderpads
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186816, {	-- Cosmic Gladiator's Leather Spaulders
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186819, {	-- Cosmic Gladiator's Leather Strap
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186809, {	-- Cosmic Gladiator's Leather Treads
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186806, {	-- Cosmic Gladiator's Leather Vest
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186821, {	-- Cosmic Gladiator's Leather Wristguards
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+									i(186820, {	-- Cosmic Gladiator's Leather Wristwraps
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+								}),
+								filter(MAIL, {
+									i(186834, {	-- Cosmic Gladiator's Chain Belt
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186825, {	-- Cosmic Gladiator's Chain Boots
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186837, {	-- Cosmic Gladiator's Chain Bracers
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+									i(186831, {	-- Cosmic Gladiator's Chain Breeches
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186829, {	-- Cosmic Gladiator's Chain Faceguard
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186826, {	-- Cosmic Gladiator's Chain Gauntlets
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186835, {	-- Cosmic Gladiator's Chain Girdle
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186827, {	-- Cosmic Gladiator's Chain Handguards
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186828, {	-- Cosmic Gladiator's Chain Helm
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186830, {	-- Cosmic Gladiator's Chain Leggings
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186832, {	-- Cosmic Gladiator's Chain Monnion
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186824, {	-- Cosmic Gladiator's Chain Sabatons
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186833, {	-- Cosmic Gladiator's Chain Shoulderguard
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186823, {	-- Cosmic Gladiator's Chain Tunic
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186822, {	-- Cosmic Gladiator's Chain Vest
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186836, {	-- Cosmic Gladiator's Chain Wristguards
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+								}),
+								n(NECK, {
+									i(186789, {	-- Cosmic Gladiator's Amulet
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+									i(186787, {	-- Cosmic Gladiator's Necklace
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+									i(186788, {	-- Cosmic Gladiator's Pendant
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+								}),
+								filter(PLATE, {
+									i(186838, {	-- Cosmic Gladiator's Plate Chestguard
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186839, {	-- Cosmic Gladiator's Plate Chestplate
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186842, {	-- Cosmic Gladiator's Plate Gauntlets
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186850, {	-- Cosmic Gladiator's Plate Girdle
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186851, {	-- Cosmic Gladiator's Plate Greatbelt
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186843, {	-- Cosmic Gladiator's Plate Handguards
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186844, {	-- Cosmic Gladiator's Plate Helm
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186845, {	-- Cosmic Gladiator's Plate Helmet
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186846, {	-- Cosmic Gladiator's Plate Legguards
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186849, {	-- Cosmic Gladiator's Plate Pauldrons
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186848, {	-- Cosmic Gladiator's Plate Shoulders
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186841, {	-- Cosmic Gladiator's Plate Stompers
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186853, {	-- Cosmic Gladiator's Plate Vambraces
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+									i(186840, {	-- Cosmic Gladiator's Plate Warboots
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186847, {	-- Cosmic Gladiator's Plate Wargreaves
+										["cost"] = { { "c", 1602, 875 } },
+									}),
+									i(186852, {	-- Cosmic Gladiator's Plate Wristguards
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+								}),
+								n(-386, {	-- Trinket
+									i(186866, {	-- Cosmic Gladiator's Badge of Ferocity
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									--i(188778, {	-- Cosmic Gladiator's Devouring Malediction
+									--i(188691),	-- Cosmic Gladiator's Echoing Resolve
+									i(186868, {	-- Cosmic Gladiator's Emblem
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									--i(188775, {	-- Cosmic Gladiator's Eternal Aegis
+									--i(188524),	-- Cosmic Gladiator's Fastidious Resolve
+									i(186867, {	-- Cosmic Gladiator's Insignia of Alacrity
+										["cost"] = { { "c", 1602, 700 } },
+									}),
+									i(186869, {	-- Cosmic Gladiator's Medallion
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+									i(186870, {	-- Cosmic Gladiator's Relentless Brooch
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+									--i(188766, {	-- Cosmic Gladiator's Resonator
+									i(186871, {	-- Cosmic Gladiator's Sigil of Adaptation
+										["cost"] = { { "c", 1602, 525 } },
+									}),
+								}),
+								n(WEAPONS, {
+									i(186863, {	-- Cosmic Gladiator's Ballista
+										["cost"] = { { "c", 1602, 1800 } },
+									}),
+									i(189562, {	-- Cosmic Gladiator's Barrier
+										["cost"] = { { "c", 1602, 450 } },
+									}),
+									i(186859, {	-- Cosmic Gladiator's Ceremonial Sword
+										["cost"] = { { "c", 1602, 1350 } },
+									}),
+									i(186778, {	-- Cosmic Gladiator's Chalice
+										["cost"] = { { "c", 1602, 450 } },
+									}),
+									i(189566, {	-- Cosmic Gladiator's Focus Staff
+										["cost"] = { { "c", 1602, 1800 } },
+									}),
+									i(189568, {	-- Cosmic Gladiator's Gavel
+										["cost"] = { { "c", 1602, 1350 } },
+									}),
+									i(186858, {	-- Cosmic Gladiator's Gladius
+										["cost"] = { { "c", 1602, 900 } },
+									}),
+									i(189567, {	-- Cosmic Gladiator's Greatstaff
+										["cost"] = { { "c", 1602, 1800 } },
+									}),
+									i(189564, {	-- Cosmic Gladiator's Greatsword
+										["cost"] = { { "c", 1602, 1800 } },
+									}),
+									i(186779, {	-- Cosmic Gladiator's Guard
+										["cost"] = { { "c", 1602, 450 } },
+									}),
+									i(186855, {	-- Cosmic Gladiator's Hacker
+										["cost"] = { { "c", 1602, 900 } },
+									}),
+									i(186856, {	-- Cosmic Gladiator's Knife
+										["cost"] = { { "c", 1602, 900 } },
+									}),
+									i(186862, {	-- Cosmic Gladiator's Pulverizer
+										["cost"] = { { "c", 1602, 1800 } },
+									}),
+									i(189563, {	-- Cosmic Gladiator's Rifle
+										["cost"] = { { "c", 1602, 1800 } },
+									}),
+									i(189569, {	-- Cosmic Gladiator's Ripper
+										["cost"] = { { "c", 1602, 900 } },
+									}),
+									i(186857, {	-- Cosmic Gladiator's Ritual Dagger
+										["cost"] = { { "c", 1602, 1350 } },
+									}),
+									i(186864, {	-- Cosmic Gladiator's Scythe
+										["cost"] = { { "c", 1602, 1800 } },
+									}),
+									i(189570, {	-- Cosmic Gladiator's Slicer
+										["cost"] = { { "c", 1602, 900 } },
+									}),
+									i(186854, {	-- Cosmic Gladiator's Splitter
+										["cost"] = { { "c", 1602, 900 } },
+									}),
+									i(186865, {	-- Cosmic Gladiator's Vesper
+										["cost"] = { { "c", 1602, 1800 } },
+									}),
+									i(186861, {	-- Cosmic Gladiator's Warglaive
+										["cost"] = { { "c", 1602, 900 } },
+									}),
+									i(186860, {	-- Cosmic Gladiator's Xiphos
+										["cost"] = { { "c", 1602, 900 } },
+									}),
+								}),
+							},
 						})),
 						n(SEASON_UNCHAINED, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {
 							n(WEAPONS, {

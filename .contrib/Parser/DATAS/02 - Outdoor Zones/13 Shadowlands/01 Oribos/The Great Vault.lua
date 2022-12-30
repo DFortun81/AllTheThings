@@ -1,10 +1,39 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local SymPvP = function(SeasonID)
+	SymLink = {
+		{"select", "tierID", SL_TIER},			-- Select Shadowlands
+		{"pop"},								-- Discard the Shadowlands Header and acquire all of their children.
+		{"where", "headerID", SeasonID},		-- Season
+		{"pop"},								-- Discard the Season Header and acquire all of their children.
+		{"where", "headerID", PVP_ASPIRANT},	-- Aspirant Gear
+		{"pop"},								-- Discard the Aspirant Header and acquire all of their children.
+		{"finalize"},							-- Push Everything to the Queue
 
+		{"select", "tierID", SL_TIER},			-- Select Shadowlands
+		{"pop"},								-- Discard the Shadowlands Header and acquire all of their children.
+		{"where", "headerID", SeasonID},		-- Season
+		{"pop"},								-- Discard the Season Header and acquire all of their children.
+		{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
+		{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+		{"finalize"},							-- Push Everything to the Queue
+
+		{"select", "tierID", SL_TIER},			-- Select Shadowlands
+		{"pop"},								-- Discard the Shadowlands Header and acquire all of their children.
+		{"where", "headerID", SeasonID},		-- Season
+		{"pop"},								-- Discard the Season Header and acquire all of their children.
+		{"where", "headerID", PVP_ELITE},		-- Elite Gear
+		{"pop"},								-- Discard the Elite Header and acquire all of their children.
+		{"finalize"},							-- Push Everything to the Queue
+
+		{"merge"},								-- Merge the Queue
+	}
+	return SymLink
+end
 root("Zones", m(SHADOWLANDS, {
 	m(ORIBOS, {
-		o(353484, bubbleDown({ ["timeline"] = { "added 9.0.2", REMOVED_DF_REL } }, {	-- The Great Vault
+		o(353484, bubbleDownSelf({ ["timeline"] = { "added 9.0.2", REMOVED_DF_REL } }, {	-- The Great Vault
 			["coord"] = { 64.3, 32.1, ORIBOS },
 			["g"] = {
 				i(187219, {	-- Attendant's Token of Merit
@@ -120,16 +149,13 @@ root("Zones", m(SHADOWLANDS, {
 							{"pop"},								-- Discard the Custom Headers and acquire all of their children.
 						},
 					}),
-					n(SEASON_COSMIC, {
-						["timeline"] = { "added 9.2.0" },
-						["sym"] = {
-							{"select", "tierID", SL_TIER},			-- Select Shadowlands
-							{"pop"},								-- Discard the Shadowland Headers and acquire all of their children.
-							{"where", "headerID", SEASON_COSMIC},	-- Season 3
-							{"pop"},								-- Discard the Custom Headers and acquire all of their children.
-							{"not", "itemID", 189507 },				-- Mount
-							{"not", "itemID", 186777 },				-- Tabard
-						},
+					header(HEADERS.Achievement, SEASON_COSMIC, {
+						["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
+						["sym"] = SymPvP(SEASON_COSMIC),
+					}),
+					header(HEADERS.Achievement, SEASON_COSMIC, {
+						["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE },
+						["sym"] = SymPvP(SEASON_ETERNAL),
 					}),
 				})),
 			},

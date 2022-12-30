@@ -1,8 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(BFA_TIER, {
+root("Instances", tier(BFA_TIER, {
 	n(MYTHIC_PLUS, {
 		n(AZERITE_ESSENCES, bubbleDownSelf({ ["timeline"] = { "added 8.2.0.30918", "removed 9.0.0" } }, {
 			i(169491),	-- Focused Life Anima
@@ -38,59 +37,40 @@ _.Instances = { tier(BFA_TIER, {
 			}),
 		})),
 		n(ACHIEVEMENTS, {
-			ach(13078, {		-- Realm First! Battle for Azeroth Keystone Master
-				["u"] = REMOVED_FROM_GAME,
-			}),
 			ach(13075, {		-- Battle for Azeroth Keymaster
-				["timeline"] = {
-					"added 8.0.1",
-					"removed 9.0.2",
-				},
+				["timeline"] = { ADDED_BFA_REL, REMOVED_SL_PRE },
 			}),
-			ach(13079, {		-- Battle for Azeroth Keystone Conqueror: Season One
-				["timeline"] = {
-					"added 8.0.1",
-					"removed 8.1.0",
-				},
-			}),
-			ach(13080, {		-- Battle for Azeroth Keystone Master: Season One
-				["timeline"] = {
-					"added 8.0.1",
-					"removed 8.1.0",
-				},
-			}),
-			ach(13448, {		-- Battle for Azeroth Keystone Conqueror: Season Two
-				["timeline"] = {
-					"added 8.1.0",
-					"removed 8.2.0",
-				},
-			}),
-			ach(13449, {		-- Battle for Azeroth Keystone Master: Season Two
-				["timeline"] = {
-					"added 8.1.0",
-					"removed 8.2.0",
-				},
-			}),
-			ach(13780, {		-- Battle for Azeroth Keystone Conqueror: Season Three
-				["timeline"] = {
-					"added 8.2.0",
-					"removed 8.3.0",
-				},
-			}),
-			ach(13781, {		-- Battle for Azeroth Keystone Master: Season Three
-				["timeline"] = {
-					"added 8.2.0",
-					"removed 8.3.0",
-				},
-			}),
-			bubbleDown({ ["timeline"] = { "added 8.3.0", "removed 9.0.2" } },
-				ach(14144, {		-- Battle for Azeroth Keystone Conqueror: Season Four
-					title(418),	-- "the Awakened"
+			header(HEADERS.Achievement, SEASON_INFESTED, bubbleDownSelf({
+				["timeline"] = { ADDED_BFA_REL, REMOVED_BFA_S2 },
+			},{
+				ach(13078, {	-- Realm First! Battle for Azeroth Keystone Master
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(13079),	-- Battle for Azeroth Keystone Conqueror: Season One
+				ach(13080),	-- Battle for Azeroth Keystone Master: Season One
 			})),
-			bubbleDown({ ["timeline"] = { "added 8.3.0", "removed 9.0.2" } },
-				ach(14145, {		-- Battle for Azeroth Keystone Master: Season Four
+			header(HEADERS.Achievement, SEASON_REAPING, bubbleDownSelf({
+				["timeline"] = { ADDED_BFA_S2, REMOVED_BFA_S3 },
+			},{
+				ach(13448),	-- Battle for Azeroth Keystone Conqueror: Season Two
+				ach(13449),	-- Battle for Azeroth Keystone Master: Season Two
+			})),
+			header(HEADERS.Achievement, SEASON_BEGUILING, bubbleDownSelf({
+				["timeline"] = { ADDED_BFA_S3, REMOVED_BFA_S4 },
+			},{
+				ach(13780),	-- Battle for Azeroth Keystone Conqueror: Season Three
+				ach(13781),	-- Battle for Azeroth Keystone Master: Season Three
+			})),
+			header(HEADERS.Achievement, SEASON_AWAKENED, bubbleDownSelf({
+				["timeline"] = { ADDED_BFA_S4, REMOVED_SL_PRE },
+			},{
+				ach(14144, {	-- Battle for Azeroth Keystone Conqueror: Season Four
+					title(418),	-- <Name> the Awakened (TITLE!)
+				}),
+				ach(14145, {	-- Battle for Azeroth Keystone Master: Season Four
 					i(174836)	-- Awakened Mindborer (MOUNT!)
+				}),
 			})),
 		}),
 	}),
-})};
+}));

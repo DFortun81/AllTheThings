@@ -2004,6 +2004,12 @@ root("Zones", m(KALIMDOR, {
 						vicioussaddle(i(143649)),	-- Vicious War Turtle (H) (MOUNT!)
 						vicioussaddle(i(140348)),	-- Vicious Warstrider (MOUNT!)
 						vicioussaddle(i(173713)),	-- Vicious White Bonesteed (MOUNT!)
+						vicioussaddle(i(187680, {	-- Vicious War Gulper (H) (MOUNT!)
+							["timeline"] = { ADDED_DF_REL },
+						})),
+						vicioussaddle(i(187642, {	-- Vicious Warstalker (H) (MOUNT!)
+							["timeline"] = { ADDED_DF_REL },
+						})),
 					}),
 				}),
 				n(69333, {	-- Disciple Jusi <Huojin Quartermaster>

@@ -1,11 +1,10 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 root("Instances", tier(SL_TIER, {
 	n(MYTHIC_PLUS, {
 		n(ACHIEVEMENTS, {
-			header(HEADERS.Achievement, 14532, bubbleDownSelf({	-- Shadowlands Keystone Master: Season One
+			header(HEADERS.Achievement, SEASON_PROUD, bubbleDownSelf({
 				["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 },
 			},{
 				ach(14662,	{	-- Realm First! Shadowlands Keystone Master
@@ -21,7 +20,7 @@ root("Instances", tier(SL_TIER, {
 					i(182717),	-- Sintouched Deathwalker (MOUNT!)
 				}),
 			})),
-			header(HEADERS.Achievement, 15327, bubbleDownSelf({	-- Tormented Hero: Shadowlands Season 2
+			header(HEADERS.Achievement, SEASON_TORMENTED, bubbleDownSelf({
 				["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 },
 			},{
 				ach(15073),		-- Shadowlands Keystone Explorer: Season Two
@@ -44,7 +43,7 @@ root("Instances", tier(SL_TIER, {
 				ach(15045),	-- Keystone Hero: The Necrotic Wake
 				ach(15050),	-- Keystone Hero: Theater of Pain
 			})),
-			header(HEADERS.Achievement, 15691, bubbleDownSelf({	-- Cryptic Hero: Shadowlands Season 3
+			header(HEADERS.Achievement, SEASON_CRYPTIC, bubbleDownSelf({
 				["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
 			},{
 				ach(15496),		-- Shadowlands Keystone Explorer: Season Three
@@ -72,7 +71,7 @@ root("Instances", tier(SL_TIER, {
 				ach(15045),		-- Keystone Hero: The Necrotic Wake
 				ach(15050),		-- Keystone Hero: Theater of Pain
 			})),
-			header(HEADERS.Achievement, 15756, bubbleDownSelf({	-- Shrouded Hero: Shadowlands Season 4
+			header(HEADERS.Achievement, SEASON_SHROUDED, bubbleDownSelf({
 				["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE },
 			},{
 				ach(15688),		-- Shadowlands Keystone Explorer: Season Four
@@ -101,26 +100,9 @@ root("Instances", tier(SL_TIER, {
 					crit(2),	-- Tazavesh: So'leah's Gambit
 				}),
 			})),
-			ach(15651, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Myths of the Shadowlands Dungeons
-				-- Meta Achievement
-				["sym"] = {
-					{"meta_achievement",
-						14368,	-- Mythic: The Necrotic Wake
-						14413,	-- Mythic: Mists of Tirna Scithe
-						14325,	-- Mythic: Spires of Ascension
-						14409,	-- Mythic: De Other Side
-						15650,	-- Mythic: Streets of Wonder
-						14415,	-- Mythic: Plaguefall
-						14411,	-- Mythic: Halls of Atonement
-						14417,	-- Mythic: Theater of Pain
-						14199,	-- Mythic: Sanguine Depths
-						15652,	-- Mythic: So'leah's Gambit
-					},
-				},
-			})),
 		}),
 		n(SOULSHAPES, {
-			i(182173, {["timeline"] = { ADDED_SL_REL }}),	-- Hyena Soul
+			i(182173, {["timeline"] = { ADDED_SL_REL, REMOVED_DF_REL }}),	-- Hyena Soul
 		}),
 	}),
 }));

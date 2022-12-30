@@ -16,7 +16,10 @@ root("PVP", pvp(tier(SL_TIER, {
 					}),
 				}),
 				ach(15610),			-- Combatant II: Shadowlands Season 4
-				ach(15604),			-- Duelist: Shadowlands Season 4
+				ach(15604, {	-- Duelist: Shadowlands Season 4
+					illusion(6378),	-- Eternal Flux
+					i(192205),		-- Eternal Gladiator's Prestigious Cloak
+				}),
 				ach(15639, {		-- Elite: Shadowlands Season 4
 					i(192206),		-- Eternal Gladiator's Tabard
 				}),
@@ -30,7 +33,9 @@ root("PVP", pvp(tier(SL_TIER, {
 					title(461),		-- Eternal Gladiator <Name>
 				}),
 				ach(15612),			-- Eternal Gladiator's Soul Eater
-				ach(15605),			-- Gladiator: Shadowlands Season 4
+				ach(15605, {		-- Gladiator: Shadowlands Season 4
+					i(191290),		-- Eternal Gladiator's Soul Eater (MOUNT!)
+				}),
 				ach(15608, {		-- Hero of the Alliance: Eternal
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -40,6 +45,14 @@ root("PVP", pvp(tier(SL_TIER, {
 				ach(15602),			-- Rival I: Shadowlands Season 4
 				ach(15603),			-- Rival II: Shadowlands Season 4
 			})),
+			filter(MOUNTS, {
+				i(187644, {	-- Vicious Warstalker (A) (MOUNT!)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(187642, {	-- Vicious Warstalker (H) (MOUNT!)
+					["races"] = HORDE_ONLY,
+				}),
+			}),
 			n(PVP_ASPIRANT, {
 				n(BACK, {
 					i(192390),	-- Eternal Aspirant's Cape
@@ -422,108 +435,6 @@ root("PVP", pvp(tier(SL_TIER, {
 				}),
 			}),
 			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE }, ["bonusID"] = 7532 }, {
-				n(BACK, {
-					i(192209),	-- Eternal Gladiator's Cloak
-					i(192210),	-- Eternal Gladiator's Drape
-					i(192212),	-- Eternal Gladiator's Greatcloak
-					i(192211),	-- Eternal Gladiator's Shawl
-				}),
-				filter(CLOTH, {
-					i(192230),	-- Eternal Gladiator's Silk Amice
-					i(192234),	-- Eternal Gladiator's Silk Armbands
-					i(192232),	-- Eternal Gladiator's Silk Belt
-					i(192231),	-- Eternal Gladiator's Silk Cord
-					i(192223),	-- Eternal Gladiator's Silk Gloves
-					i(192226),	-- Eternal Gladiator's Silk Guise
-					i(192224),	-- Eternal Gladiator's Silk Handwraps
-					i(192225),	-- Eternal Gladiator's Silk Hood
-					i(192227),	-- Eternal Gladiator's Silk Leggings
-					i(192229),	-- Eternal Gladiator's Silk Mantle
-					i(192219),	-- Eternal Gladiator's Silk Robe
-					i(192221),	-- Eternal Gladiator's Silk Slippers
-					i(192222),	-- Eternal Gladiator's Silk Treads
-					i(192228),	-- Eternal Gladiator's Silk Trousers
-					i(192220),	-- Eternal Gladiator's Silk Vestments
-					i(192233),	-- Eternal Gladiator's Silk Wristwraps
-				}),
-				filter(LEATHER, {
-					i(192247),	-- Eternal Gladiator's Leather Belt
-					i(192237),	-- Eternal Gladiator's Leather Boots
-					i(192243),	-- Eternal Gladiator's Leather Breeches
-					i(192239),	-- Eternal Gladiator's Leather Gloves
-					i(192240),	-- Eternal Gladiator's Leather Grips
-					i(192241),	-- Eternal Gladiator's Leather Helm
-					i(192236),	-- Eternal Gladiator's Leather Jerkin
-					i(192244),	-- Eternal Gladiator's Leather Legwraps
-					i(192242),	-- Eternal Gladiator's Leather Mask
-					i(192246),	-- Eternal Gladiator's Leather Shoulderpads
-					i(192245),	-- Eternal Gladiator's Leather Spaulders
-					i(192248),	-- Eternal Gladiator's Leather Strap
-					i(192238),	-- Eternal Gladiator's Leather Treads
-					i(192235),	-- Eternal Gladiator's Leather Vest
-					i(192250),	-- Eternal Gladiator's Leather Wristguards
-					i(192249),	-- Eternal Gladiator's Leather Wristwraps
-				}),
-				filter(MAIL, {
-					i(192263),	-- Eternal Gladiator's Chain Belt
-					i(192254),	-- Eternal Gladiator's Chain Boots
-					i(192266),	-- Eternal Gladiator's Chain Bracers
-					i(192260),	-- Eternal Gladiator's Chain Breeches
-					i(192258),	-- Eternal Gladiator's Chain Faceguard
-					i(192255),	-- Eternal Gladiator's Chain Gauntlets
-					i(192264),	-- Eternal Gladiator's Chain Girdle
-					i(192256),	-- Eternal Gladiator's Chain Handguards
-					i(192257),	-- Eternal Gladiator's Chain Helm
-					i(192259),	-- Eternal Gladiator's Chain Leggings
-					i(192261),	-- Eternal Gladiator's Chain Monnion
-					i(192253),	-- Eternal Gladiator's Chain Sabatons
-					i(192262),	-- Eternal Gladiator's Chain Shoulderguard
-					i(192252),	-- Eternal Gladiator's Chain Tunic
-					i(192251),	-- Eternal Gladiator's Chain Vest
-					i(192265),	-- Eternal Gladiator's Chain Wristguards
-				}),
-				filter(PLATE, {
-					i(192267),	-- Eternal Gladiator's Plate Chestguard
-					i(192268),	-- Eternal Gladiator's Plate Chestplate
-					i(192271),	-- Eternal Gladiator's Plate Gauntlets
-					i(192279),	-- Eternal Gladiator's Plate Girdle
-					i(192280),	-- Eternal Gladiator's Plate Greatbelt
-					i(192272),	-- Eternal Gladiator's Plate Handguards
-					i(192273),	-- Eternal Gladiator's Plate Helm
-					i(192274),	-- Eternal Gladiator's Plate Helmet
-					i(192275),	-- Eternal Gladiator's Plate Legguards
-					i(192278),	-- Eternal Gladiator's Plate Pauldrons
-					i(192277),	-- Eternal Gladiator's Plate Shoulders
-					i(192270),	-- Eternal Gladiator's Plate Stompers
-					i(192282),	-- Eternal Gladiator's Plate Vambraces
-					i(192269),	-- Eternal Gladiator's Plate Warboots
-					i(192276),	-- Eternal Gladiator's Plate Wargreaves
-					i(192281),	-- Eternal Gladiator's Plate Wristguards
-				}),
-				n(WEAPONS, {
-					i(192292),	-- Eternal Gladiator's Ballista
-					i(192306),	-- Eternal Gladiator's Barrier
-					i(192288),	-- Eternal Gladiator's Ceremonial Sword
-					i(192207),	-- Eternal Gladiator's Chalice
-					i(192309),	-- Eternal Gladiator's Focus Staff
-					i(192311),	-- Eternal Gladiator's Gavel
-					i(192287),	-- Eternal Gladiator's Gladius
-					i(192310),	-- Eternal Gladiator's Greatstaff
-					i(192308),	-- Eternal Gladiator's Greatsword
-					i(192208),	-- Eternal Gladiator's Guard
-					i(192284),	-- Eternal Gladiator's Hacker
-					i(192285),	-- Eternal Gladiator's Knife
-					i(192291),	-- Eternal Gladiator's Pulverizer
-					i(192307),	-- Eternal Gladiator's Rifle
-					i(192312),	-- Eternal Gladiator's Ripper
-					i(192286),	-- Eternal Gladiator's Ritual Dagger
-					i(192293),	-- Eternal Gladiator's Scythe
-					i(192313),	-- Eternal Gladiator's Slicer
-					i(192283),	-- Eternal Gladiator's Splitter
-					i(192294),	-- Eternal Gladiator's Vesper
-					i(192290),	-- Eternal Gladiator's Warglaive
-					i(192289),	-- Eternal Gladiator's Xiphos
-				}),
 				n(CLASSES,{
 					["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
 					["g"] = bubbleDown({ ["bonusID"] = 7532 }, {
@@ -661,23 +572,108 @@ root("PVP", pvp(tier(SL_TIER, {
 						}),
 					}),
 				}),
-			})),
-			filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
-				illusion(6378),	-- Eternal Flux
-			})),
-			filter(MOUNTS, {
-				i(191290, {	-- Eternal Gladiator's Soul Eater (MOUNT!)
-					["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE }
+				n(BACK, {
+					i(192209),	-- Eternal Gladiator's Cloak
+					i(192210),	-- Eternal Gladiator's Drape
+					i(192212),	-- Eternal Gladiator's Greatcloak
+					i(192211),	-- Eternal Gladiator's Shawl
 				}),
-				i(187644, {	-- Vicious Warstalker (A) (MOUNT!)
-					["races"] = ALLIANCE_ONLY,
+				filter(CLOTH, {
+					i(192230),	-- Eternal Gladiator's Silk Amice
+					i(192234),	-- Eternal Gladiator's Silk Armbands
+					i(192232),	-- Eternal Gladiator's Silk Belt
+					i(192231),	-- Eternal Gladiator's Silk Cord
+					i(192223),	-- Eternal Gladiator's Silk Gloves
+					i(192226),	-- Eternal Gladiator's Silk Guise
+					i(192224),	-- Eternal Gladiator's Silk Handwraps
+					i(192225),	-- Eternal Gladiator's Silk Hood
+					i(192227),	-- Eternal Gladiator's Silk Leggings
+					i(192229),	-- Eternal Gladiator's Silk Mantle
+					i(192219),	-- Eternal Gladiator's Silk Robe
+					i(192221),	-- Eternal Gladiator's Silk Slippers
+					i(192222),	-- Eternal Gladiator's Silk Treads
+					i(192228),	-- Eternal Gladiator's Silk Trousers
+					i(192220),	-- Eternal Gladiator's Silk Vestments
+					i(192233),	-- Eternal Gladiator's Silk Wristwraps
 				}),
-				i(187642, {	-- Vicious Warstalker (H) (MOUNT!)
-					["races"] = HORDE_ONLY,
+				filter(LEATHER, {
+					i(192247),	-- Eternal Gladiator's Leather Belt
+					i(192237),	-- Eternal Gladiator's Leather Boots
+					i(192243),	-- Eternal Gladiator's Leather Breeches
+					i(192239),	-- Eternal Gladiator's Leather Gloves
+					i(192240),	-- Eternal Gladiator's Leather Grips
+					i(192241),	-- Eternal Gladiator's Leather Helm
+					i(192236),	-- Eternal Gladiator's Leather Jerkin
+					i(192244),	-- Eternal Gladiator's Leather Legwraps
+					i(192242),	-- Eternal Gladiator's Leather Mask
+					i(192246),	-- Eternal Gladiator's Leather Shoulderpads
+					i(192245),	-- Eternal Gladiator's Leather Spaulders
+					i(192248),	-- Eternal Gladiator's Leather Strap
+					i(192238),	-- Eternal Gladiator's Leather Treads
+					i(192235),	-- Eternal Gladiator's Leather Vest
+					i(192250),	-- Eternal Gladiator's Leather Wristguards
+					i(192249),	-- Eternal Gladiator's Leather Wristwraps
 				}),
-			}),
-			filter(TABARDS, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
-				i(192205),		-- Eternal Gladiator's Prestigious Cloak
+				filter(MAIL, {
+					i(192263),	-- Eternal Gladiator's Chain Belt
+					i(192254),	-- Eternal Gladiator's Chain Boots
+					i(192266),	-- Eternal Gladiator's Chain Bracers
+					i(192260),	-- Eternal Gladiator's Chain Breeches
+					i(192258),	-- Eternal Gladiator's Chain Faceguard
+					i(192255),	-- Eternal Gladiator's Chain Gauntlets
+					i(192264),	-- Eternal Gladiator's Chain Girdle
+					i(192256),	-- Eternal Gladiator's Chain Handguards
+					i(192257),	-- Eternal Gladiator's Chain Helm
+					i(192259),	-- Eternal Gladiator's Chain Leggings
+					i(192261),	-- Eternal Gladiator's Chain Monnion
+					i(192253),	-- Eternal Gladiator's Chain Sabatons
+					i(192262),	-- Eternal Gladiator's Chain Shoulderguard
+					i(192252),	-- Eternal Gladiator's Chain Tunic
+					i(192251),	-- Eternal Gladiator's Chain Vest
+					i(192265),	-- Eternal Gladiator's Chain Wristguards
+				}),
+				filter(PLATE, {
+					i(192267),	-- Eternal Gladiator's Plate Chestguard
+					i(192268),	-- Eternal Gladiator's Plate Chestplate
+					i(192271),	-- Eternal Gladiator's Plate Gauntlets
+					i(192279),	-- Eternal Gladiator's Plate Girdle
+					i(192280),	-- Eternal Gladiator's Plate Greatbelt
+					i(192272),	-- Eternal Gladiator's Plate Handguards
+					i(192273),	-- Eternal Gladiator's Plate Helm
+					i(192274),	-- Eternal Gladiator's Plate Helmet
+					i(192275),	-- Eternal Gladiator's Plate Legguards
+					i(192278),	-- Eternal Gladiator's Plate Pauldrons
+					i(192277),	-- Eternal Gladiator's Plate Shoulders
+					i(192270),	-- Eternal Gladiator's Plate Stompers
+					i(192282),	-- Eternal Gladiator's Plate Vambraces
+					i(192269),	-- Eternal Gladiator's Plate Warboots
+					i(192276),	-- Eternal Gladiator's Plate Wargreaves
+					i(192281),	-- Eternal Gladiator's Plate Wristguards
+				}),
+				n(WEAPONS, {
+					i(192292),	-- Eternal Gladiator's Ballista
+					i(192306),	-- Eternal Gladiator's Barrier
+					i(192288),	-- Eternal Gladiator's Ceremonial Sword
+					i(192207),	-- Eternal Gladiator's Chalice
+					i(192309),	-- Eternal Gladiator's Focus Staff
+					i(192311),	-- Eternal Gladiator's Gavel
+					i(192287),	-- Eternal Gladiator's Gladius
+					i(192310),	-- Eternal Gladiator's Greatstaff
+					i(192308),	-- Eternal Gladiator's Greatsword
+					i(192208),	-- Eternal Gladiator's Guard
+					i(192284),	-- Eternal Gladiator's Hacker
+					i(192285),	-- Eternal Gladiator's Knife
+					i(192291),	-- Eternal Gladiator's Pulverizer
+					i(192307),	-- Eternal Gladiator's Rifle
+					i(192312),	-- Eternal Gladiator's Ripper
+					i(192286),	-- Eternal Gladiator's Ritual Dagger
+					i(192293),	-- Eternal Gladiator's Scythe
+					i(192313),	-- Eternal Gladiator's Slicer
+					i(192283),	-- Eternal Gladiator's Splitter
+					i(192294),	-- Eternal Gladiator's Vesper
+					i(192290),	-- Eternal Gladiator's Warglaive
+					i(192289),	-- Eternal Gladiator's Xiphos
+				}),
 			})),
 		},
 	})),
