@@ -61,9 +61,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(70639, {	-- Azure Banners
 					["coord"] = { 70.3, 22.7, THE_AZURE_SPAN },
 				}),
-				q(69927, {	-- Bazual
-					["coord"] = { 77.7, 35.8, THE_AZURE_SPAN },
-				}),
 				pvp(q(72019, {	-- Seeing through the Enemy: Nezascar
 					["coord"] = { 29.7, 29.8, THE_AZURE_SPAN },
 				})),

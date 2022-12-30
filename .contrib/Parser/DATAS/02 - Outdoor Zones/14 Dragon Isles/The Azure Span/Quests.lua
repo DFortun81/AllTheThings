@@ -1904,7 +1904,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(66046),	-- Pop after killing/completing bonus objective (Cascade) ... or skinning knowledge proc possibly
 		q(72779),	-- After completion of [70938]
 		q(72516),	-- After completion of (72487)
-		q(72054),	-- Pop after killing Bazual WB for the first time in war mode
 		-- During The Weave of a Tale (66213)
 		-- First Question
 		q(66563, { ["name"] = "The Weave of a Tale: Rarest Fish",
