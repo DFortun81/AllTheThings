@@ -2615,6 +2615,7 @@ root("HiddenQuestTriggers", {
 			q(74214),	-- Skinning Moth'go Deeploom
 			q(74198),	-- Skinning The Weeping Vilomah
 			q(74127),	-- Skinning Karantun
+			q(74174),	-- Skinning Biryuk
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--
