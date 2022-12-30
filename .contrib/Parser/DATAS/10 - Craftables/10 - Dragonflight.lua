@@ -2599,6 +2599,7 @@ root("HiddenQuestTriggers", {
 			q(74140),	-- Skinning Norbett on a Grand Hunt
 			q(74141),	-- Skinning Blitztusk on a Grand Hunt
 			q(74142),	-- Skinning Sarana on a Grand Hunt
+			q(74147),	-- Skinning Kholdeg on a Grand Hunt
 			q(74149),	-- Skinning Zumakh on a Grand Hunt
 			q(74152),	-- Skinning Galnomor
 			q(74153),	-- Skinning Degmakh during a Grant Hunt
@@ -2612,6 +2613,7 @@ root("HiddenQuestTriggers", {
 			q(74163),	-- Skinning Molkeej on a Grand Hunt
 			q(74164),	-- Skinning Diluu on a Grand Hunt
 			q(74174),	-- Skinning Biryuk
+			q(74179),	-- Skinning Hunter of the Deep
 			q(74182),	-- Skinning Makhra the Ashtouched
 			q(74195),	-- Skinning Woolfang
 			q(74196),	-- Skinning Rokmur rare
