@@ -252,6 +252,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193175, {	-- Slurpo, the Incredible Snail
 				["coord"] = { 34.5, 89.7, THE_WAKING_SHORES },
 				["questID"] = 74079,
+				["cost"] = {{"i",201033,1}},	-- 1x Magical Salt Crystal
+				["description"] = "Bring a Magical Salt Crystal from the Azure Span into the cave. If the pool is full of Unsalted Water Snails, use the Extra Action Button to summon the rare.",
 				["g"] = {
 					i(200189),	-- Hydroforged Shell Helm
 				},
