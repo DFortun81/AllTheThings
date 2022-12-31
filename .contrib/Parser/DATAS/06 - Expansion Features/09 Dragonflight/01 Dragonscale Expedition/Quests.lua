@@ -385,6 +385,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198727),	-- Expedition Explosives
 				},
 			}),
+				-- RENOWN 21 --
+			q(70833, {	-- Rumors of the Jeweled Whelplings
+				["minReputation"] = { 2507, 21 },	-- Dragonscale Expedition Renown 21
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["g"] = {
+					i(200738),	-- Onyx Gem Cluster Map
+				},
+			}),
 
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
@@ -460,6 +469,7 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(72042),	-- Triggered with 'Researching in Comfort' (70831)
 		q(72044),	-- Triggered with 'One of Us Now' (70832)
 		q(72045),	-- Triggered with 'Demolitions Access' (70815)
+		q(72046),	-- Triggered with 'Rumors of the Jeweled Whelplings' (70833)
 
 		-- Ensembles
 		q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor
