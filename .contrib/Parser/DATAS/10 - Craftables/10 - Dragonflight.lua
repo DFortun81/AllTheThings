@@ -2616,6 +2616,7 @@ root("HiddenQuestTriggers", {
 			q(74164),	-- Skinning Diluu on a Grand Hunt
 			q(74174),	-- Skinning Biryuk
 			q(74179),	-- Skinning Hunter of the Deep
+			q(74181),	-- Skinning Zarimek
 			q(74182),	-- Skinning Makhra the Ashtouched
 			q(74195),	-- Skinning Woolfang
 			q(74196),	-- Skinning Rokmur rare
