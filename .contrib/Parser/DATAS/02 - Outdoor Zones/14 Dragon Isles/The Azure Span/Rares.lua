@@ -123,6 +123,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(191356, {	-- Frostpaw
 				["coord"] = { 58.2, 43.7, THE_AZURE_SPAN },
 				["questID"] = 73877,
+				["description"] = "Can be spawned when the three toys are present on the stump nearby- use the hammer at 58.6, 43.4.",
 				-- ["g"] = {
 
 				-- },

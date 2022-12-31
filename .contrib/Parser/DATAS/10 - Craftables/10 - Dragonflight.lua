@@ -2591,38 +2591,39 @@ root("HiddenQuestTriggers", {
 			-- q(71773),	-- Tuskarr Bean Bag
 		}),
 		prof(SKINNING, {
-			q(74122),	-- Skinning Blisterhide
-			q(74126),	-- Skinning Crystalus in a Primal Storm
-			q(74127),	-- Skinning Karantun
-			q(74131),	-- Skinning Mucka the Raker
-			q(74134),	-- Skinning Grumbletrunk
-			q(74140),	-- Skinning Norbett on a Grand Hunt
-			q(74141),	-- Skinning Blitztusk on a Grand Hunt
-			q(74142),	-- Skinning Sarana on a Grand Hunt
-			q(74143),	-- Skinning Uranto the Swift on a Grand Hunt
-			q(74145),	-- Skinning Khomuur on a Grand Hunt
-			q(74147),	-- Skinning Kholdeg on a Grand Hunt
-			q(74149),	-- Skinning Zumakh on a Grand Hunt
-			q(74152),	-- Skinning Galnomor
-			q(74153),	-- Skinning Degmakh during a Grant Hunt
-			q(74154),	-- Skinning Muugurv during a Grand Hunt
-			q(74156),	-- Skinning Uurhilt on a Grand Hunt
-			q(74157),	-- Skinning Moskhoi on a Grand Hunt
-			q(74159),	-- Skinning Tevgai on a Grand Hunt
-			q(74160),	-- Skinning Yamakh
-			q(74161),	-- Skinning Melkhop on a Grand Hunt
-			q(74162),	-- Skinning Angen during a Grand Hunt
-			q(74163),	-- Skinning Molkeej on a Grand Hunt
-			q(74164),	-- Skinning Diluu on a Grand Hunt
+			q(74162),	-- Skinning Angen (Great Hunt)
 			q(74174),	-- Skinning Biryuk
+			q(74122),	-- Skinning Blisterhide
+			q(74141),	-- Skinning Blitztusk (Grand Hunt)
+			q(74206),	-- Skinning Corrupted Proto-Dragon
+			q(74126),	-- Skinning Crystalus (Primal Storm)
+			q(74153),	-- Skinning Degmakh (Grand Hunt)
+			q(74164),	-- Skinning Diluu (Grand Hunt)
+			q(74186),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)
+			q(74152),	-- Skinning Galnomor
+			q(74134),	-- Skinning Grumbletrunk
 			q(74179),	-- Skinning Hunter of the Deep
-			q(74181),	-- Skinning Zarimek
+			q(74127),	-- Skinning Karantun
+			q(74147),	-- Skinning Kholdeg (Grand Hunt)
+			q(74145),	-- Skinning Khomuur (Grand Hunt)
 			q(74182),	-- Skinning Makhra the Ashtouched
-			q(74195),	-- Skinning Woolfang
-			q(74196),	-- Skinning Rokmur rare
-			q(74198),	-- Skinning The Weeping Vilomah
-			q(74206),	-- Skinning Corrupted Proto-Dragon Rare
+			q(74161),	-- Skinning Melkhop (Grand Hunt)
+			q(74163),	-- Skinning Molkeej (Grand Hunt)
+			q(74157),	-- Skinning Moskhoi (Grand Hunt)
 			q(74214),	-- Skinning Moth'go Deeploom
+			q(74131),	-- Skinning Mucka the Raker
+			q(74154),	-- Skinning Muugurv (Grand Hunt)
+			q(74140),	-- Skinning Norbett (Grand Hunt)
+			q(74196),	-- Skinning Rokmur
+			q(74142),	-- Skinning Sarana (Grand Hunt)
+			q(74159),	-- Skinning Tevgai (Grand Hunt)
+			q(74198),	-- Skinning The Weeping Vilomah
+			q(74143),	-- Skinning Uranto the Swift (Grand Hunt)
+			q(74156),	-- Skinning Uurhilt (Grand Hunt)
+			q(74195),	-- Skinning Woolfang
+			q(74160),	-- Skinning Yamakh
+			q(74181),	-- Skinning Zarimek
+			q(74149),	-- Skinning Zumakh (Grand Hunt)
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--
