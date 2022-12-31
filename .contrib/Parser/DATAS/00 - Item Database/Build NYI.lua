@@ -3,7 +3,6 @@
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(SOURCELESS),
 	tier(DF_TIER),
-	tier(SL_TIER, 2.5, {}),
 	tier(CLASSIC_TIER),
 	tier(TBC_TIER),
 	tier(WOTLK_TIER),
