@@ -31,6 +31,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(69949, {	-- Extermination
 					["coord"] = { 61.5, 27.5, THALDRASZUS }
 				}),
+				q(70224, {	-- Fetid Threat
+					["coord"] = { 56.1, 30.8, THALDRASZUS },
+				}),
 				q(72029, {	-- Fishing Frenzy!
 					["coord"] = { 57.3, 66.7, THALDRASZUS }
 				}),
