@@ -167,6 +167,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193266, {	-- Lepidoralia the Resplendent
 				["coord"] = { 33.8, 85.8, THE_WAKING_SHORES },
 				["questID"] = 74065,
+				["description"] = "Talk to Collector Zik at the entrance to the cave and get a net. Start catching butterflies- no really, like, hundreds of butterflies. You'll be here a while.",
 				-- ["g"] = {
 
 				-- },
