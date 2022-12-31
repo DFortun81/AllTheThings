@@ -9586,7 +9586,9 @@ local function default_link(t)
 end
 local CollectedSpeciesHelper = setmetatable({}, {
 	__index = function(t, key)
-		if C_PetJournal_GetNumCollectedInfo(key) > 0 then
+		-- this returns nil for non-existent speciesID, which may be in unsorted
+		local numCollected = C_PetJournal_GetNumCollectedInfo(key);
+		if numCollected and numCollected > 0 then
 			rawset(t, key, 1);
 			return 1;
 		end
