@@ -2599,6 +2599,7 @@ root("HiddenQuestTriggers", {
 			q(74140),	-- Skinning Norbett on a Grand Hunt
 			q(74141),	-- Skinning Blitztusk on a Grand Hunt
 			q(74142),	-- Skinning Sarana on a Grand Hunt
+			q(74143),	-- Skinning Uranto the Swift on a Grand Hunt
 			q(74147),	-- Skinning Kholdeg on a Grand Hunt
 			q(74149),	-- Skinning Zumakh on a Grand Hunt
 			q(74152),	-- Skinning Galnomor
