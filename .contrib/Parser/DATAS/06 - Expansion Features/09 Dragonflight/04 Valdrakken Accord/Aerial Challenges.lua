@@ -16,20 +16,20 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
 					-- Waking Shores --
-				q(70382, {	-- Dragonrider Racing - Ruby Lifeshrine Loop
-					["coord"] = { 63.2, 70.8, THE_WAKING_SHORES },
-				}),
-				q(70412, {	-- Dragonrider Racing - Wild Preserve Slalom
-					["coord"] = { 47.0, 85.6, THE_WAKING_SHORES }
+				q(70415, {	-- Dragonrider Racing - Apex Canopy River Run
+					["coord"] = { 23.2, 84.2, THE_WAKING_SHORES }
 				}),
 				q(70413, {	-- Dragonrider Racing - Emberflow Flight
 					["coord"] = { 42.0, 67.2, THE_WAKING_SHORES }
 				}),
-				q(70415, {	-- Dragonrider Racing - Apex Canopy River Run
-					["coord"] = { 23.2, 84.2, THE_WAKING_SHORES }
+				q(70382, {	-- Dragonrider Racing - Ruby Lifeshrine Loop
+					["coord"] = { 63.2, 70.8, THE_WAKING_SHORES },
 				}),
 				q(70416, {	-- Dragonrider Racing - Uktulut Coaster
 					["coord"] = { 55.4, 41.2, THE_WAKING_SHORES },
+				}),
+				q(70412, {	-- Dragonrider Racing - Wild Preserve Slalom
+					["coord"] = { 47.0, 85.6, THE_WAKING_SHORES }
 				}),
 				q(70417, {	-- Dragonrider Racing - Wingrest Roundabout
 					["coord"] = { 73.2, 34.0, THE_WAKING_SHORES }
@@ -45,6 +45,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				--]]
 
 					-- Ohn'ahran Plains --
+				q(70422, {	-- Dragonrider Racing - Emerald Garden Ascent
+					["coord"] = { 25.6, 55.0, OHNAHRAN_PLAINS }
+				}),
 				q(70423, {	-- Dragonrider Racing - Maruukai Dash
 					["coord"] = { 59.8, 35.4, OHNAHRAN_PLAINS },
 				}),
@@ -59,9 +62,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				q(70419, {	-- Dragonrider Racing - Sundapple Copse Circuit
 					["coord"] = { 63.8, 30.4, OHNAHRAN_PLAINS }
-				}),
-				q(70422, {	-- Dragonrider Racing - Emerald Garden Ascent
-					["coord"] = { 25.6, 55.0, OHNAHRAN_PLAINS }
 				}),
 				-- Unconfirmed
 				--[[
@@ -91,6 +91,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				
 					-- Thaldraszus --
+				q(70434, {	-- Dragonrider Racing - Academy Ascent
+					["coord"] = { 60.2, 41.8, THALDRASZUS }
+				}),
 				q(70436, {	-- Dragonrider Racing - Caverns Criss-Cross
 					["coord"] = { 58.0, 33.6, THALDRASZUS }
 				}),
@@ -102,9 +105,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				q(70435, {	-- Dragonrider Racing - Garden Gallivant
 					["coord"] = { 39.4, 76.2, THALDRASZUS }
-				}),
-				q(70434, {	-- Dragonrider Racing - Academy Ascent
-					["coord"] = { 60.2, 41.8, THALDRASZUS }
 				}),
 				-- Unconfirmed
 				--[[
