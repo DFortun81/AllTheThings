@@ -310,6 +310,19 @@ end
 do
 local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
 local QueueIndex = 1;
+local function SetPerFrame(count)
+	Config.PerFrame = math.max(1, tonumber(count) or 1);
+	-- app.PrintDebug("FR:",Config.PerFrame)
+end
+local function Reset()
+	Config.PerFrame = 1;
+	-- when done with all functions in the queue, reset the queue index and clear the queues of data
+	QueueIndex = 1;
+	wipe(FunctionQueue);
+	wipe(ParameterBucketQueue);
+	wipe(ParameterSingleQueue);
+	-- app.PrintDebug("FR:Reset")
+end
 
 -- maybe a coroutine directly which can be restarted without needing to be re-created?
 local FunctionRunnerCoroutine = function()
@@ -320,7 +333,7 @@ local FunctionRunnerCoroutine = function()
 		perFrame = perFrame - 1;
 		params = ParameterBucketQueue[i];
 		if params then
-			-- app.PrintDebug("FRC.Run.N",i,params)
+			-- app.PrintDebug("FRC.Run.N",i,unpack(params))
 			func(unpack(params));
 		else
 			-- app.PrintDebug("FRC.Run.1",i,ParameterSingleQueue[i])
@@ -337,16 +350,14 @@ local FunctionRunnerCoroutine = function()
 	end
 	-- Run the OnEnd function if it exists
 	local OnEnd = FunctionQueue[0];
-	if OnEnd then OnEnd(); end
-	-- when done with all functions in the queue, reset the queue index and clear the queues of data
-	QueueIndex = 1;
-	-- app.PrintDebug("FRC.End",#FunctionQueue)
-	wipe(FunctionQueue);
-	wipe(ParameterBucketQueue);
-	wipe(ParameterSingleQueue);
+	if OnEnd then
+		-- app.PrintDebug("FRC.End",#FunctionQueue)
+		OnEnd();
+	end
+	Reset();
 end
 
--- Provides a utility which will process a given number of functions each frame in a queue
+-- Provides a utility which will process a given number of functions each frame in a Queue
 local FunctionRunner = {
 	-- Adds a function to be run with any necessary parameters
 	["Run"] = function(func, ...)
@@ -364,16 +375,20 @@ local FunctionRunner = {
 		QueueIndex = QueueIndex + 1;
 		StartCoroutine("FunctionRunnerCoroutine", FunctionRunnerCoroutine);
 	end,
-	-- Defines how many functions will be executed per frame
-	["SetPerFrame"] = function(count)
-		Config.PerFrame = math.max(1, tonumber(count) or 1);
-		-- app.PrintDebug("FR:",Config.PerFrame)
-	end,
 	-- Set a function to be run once the queue is empty. This function takes no parameters.
 	["OnEnd"] = function(func)
 		FunctionQueue[0] = func;
 	end,
 };
+
+-- Defines how many functions will be executed per frame. Executes via the FunctionRunner when encountered in the Queue, unless specified as 'instant'
+FunctionRunner.SetPerFrame = function(count, instant)
+	if instant then
+		SetPerFrame(count);
+	else
+		FunctionRunner.Run(SetPerFrame, count);
+	end
+end
 
 app.FunctionRunner = FunctionRunner;
 end
@@ -5328,7 +5343,6 @@ app.FillGroups = function(group)
 	knownSkills = app.CurrentCharacter.Professions;
 	-- Check if this group is inside a Window or not
 	isInWindow = app.RecursiveFirstDirectParentWithField(group, "window") and true;
-	app.FunctionRunner.SetPerFrame(1);
 
 	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",isInWindow)
 
@@ -7747,7 +7761,7 @@ app.RequestLoadQuestByID = function(questID, data)
 	-- only allow requests once per frame until received
 	if not QuestsRequested[questID] then
 		-- there's some limit to quest data checking that causes d/c... not entirely sure what or how much
-		app.FunctionRunner.SetPerFrame(10);
+		app.FunctionRunner.SetPerFrame(10, true);
 		-- app.PrintDebug("RequestLoadQuestByID",questID,"Data:",data)
 		QuestsRequested[questID] = true;
 		if data then
@@ -15567,7 +15581,6 @@ app.Windows = {};
 app._UpdateWindows = function(force, got)
 	-- app.PrintDebug("_UpdateWindows",force,got)
 	app._LastUpdateTime = GetTimePreciseSec();
-	app.FunctionRunner.SetPerFrame(1);
 	local Run = app.FunctionRunner.Run;
 	for _,window in pairs(app.Windows) do
 		Run(window.Update, window, force, got);
@@ -17514,8 +17527,6 @@ function app:GetDataCache()
 		-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
 		group.dynamic = field;
 		group.dynamic_value = value;
-		-- only perform dynamic update logic on 1 group per frame to reduce unnecessary lag
-		app.FunctionRunner.SetPerFrame(1);
 		-- run a direct update on itself after being populated if the Filler exists
 		if Filler then
 			app.FunctionRunner.Run(Filler, group);
@@ -17667,6 +17678,9 @@ function app:GetDataCache()
 			app.ToggleCacheMaps();
 			app.print(sformat(L["READY_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]));
 		end);
+
+		-- the caching of Dynamic groups takes place after all are generated and it can run more per frame
+		app.FunctionRunner.SetPerFrame(5);
 	end
 
 	-- Update the Row Data by filtering raw data (this function only runs once)
@@ -21497,7 +21511,6 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 					updates["Recipes"] = nil;
 				end
 
-				app.FunctionRunner.SetPerFrame(1);
 				app.FunctionRunner.Run(UpdateLocalizedCategories, self, updates);
 				app.FunctionRunner.Run(UpdateLearnedRecipes, self, updates);
 				app.FunctionRunner.Run(UpdateData, self, updates);
@@ -23811,7 +23824,6 @@ app.InitDataCoroutine = function()
 				characterData[guid] = nil;
 				-- app.print("Removed & Backed up Duplicate Data of Current Character:",character.text,guid)
 			end
-			app.FunctionRunner.SetPerFrame(1);
 			for _,guid in ipairs(toClean) do
 				app.FunctionRunner.Run(cleanCharacterFunc, guid);
 			end
