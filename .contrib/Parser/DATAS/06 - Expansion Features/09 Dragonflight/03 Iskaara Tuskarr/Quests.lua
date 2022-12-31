@@ -405,9 +405,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198731),	-- Iskaara Tuskarr Tabard
 				},
 			}),
+				-- RENOWN 22 --
+			q(70964, {	-- Shrug it On!
+				["minReputation"] = { 2511, 22 },	-- Iskaara Tuskarr Renown 22
+				["provider"] = { "n", 186449 },	-- Arvik
+				["coord"] = { 12.9, 48.8, THE_AZURE_SPAN },
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
+		i(200449),	-- Sacred Tuskarr Totem
 	}),
 })));
 
