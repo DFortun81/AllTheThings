@@ -3526,7 +3526,7 @@ for key,value in pairs({
 	[381513] = "Старая кирка",	-- Old Pickaxe
 	[381514] = "Отшлифованный волнами базальт",	-- Sea-Polished Basalt
 	[381579] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
-	--TODO: [381622] = "Archivists' Request",	-- Archivists' Request
+	[381622] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "Просьба архивариуса",	-- Archivists' Request
 	[381653] = "Запись на игру в \"Клык, взмах, огонь\"",	-- Fang Flap Fire Signups
 	[381661] = "Просьба архивариуса",	-- Archivists' Request

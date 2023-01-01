@@ -3535,7 +3535,7 @@ for key,value in pairs({
 	--TODO: [381513] = "Old Pickaxe",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
 	[381579] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
-	--TODO: [381622] = "Archivists' Request",	-- Archivists' Request
+	[381622] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Inscrições Fogo, Asa, Presa",	-- Fang Flap Fire Signups
 	[381661] = "Pedido dos Arquivistas",	-- Archivists' Request
