@@ -104,13 +104,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200257),	-- Decay Infused Branch
 				},
 			}),
-			n(193687, {	-- Mawgor
-				["coord"] = { 61.7, 60.7, THALDRASZUS },
-				["questID"] = 74016,
-				-- ["g"] = {
-
-				-- },
-			}),
 			n(193688, {	-- Phenran
 				-- ["coord"] = { X, Y, THALDRASZUS },
 				-- ["questID"] = 69976,

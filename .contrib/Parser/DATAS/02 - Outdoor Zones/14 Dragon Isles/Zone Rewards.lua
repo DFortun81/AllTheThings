@@ -48,6 +48,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		}),
 		filter(TRINKET_F, {
 			i(198407),	-- Azure Arcanic Amplifier
+			i(193477),	-- Battle Scarred Scale
 			i(198627),	-- Blood of the Khansguard
 			i(198695),	-- Bottomless Reliquary Satchel
 			i(198539),	-- Breath of the Plains

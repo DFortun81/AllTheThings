@@ -1035,38 +1035,35 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
-			ach(16409, {	-- Let's Get Quacking
-				["collectible"] = false,
-				["g"] = {
-					q(66196, {	-- A Quack For Help
-						["sourceQuests"] = { 66104 },	-- Forensic Ecology
-						["provider"] = { "n", 187439 },	-- Bubbled Duckling
-						["coord"] = { 80.1, 42.9, THE_WAKING_SHORES },
-					}),
-					q(70877, {	-- A Quack in Time
-						["sourceQuests"] = { 66196 },	-- A Quack For Help
-						["provider"] = { "n", 196744 },	-- Bubbled Duckling
-						["coord"] = { 80.1, 39.9, THE_WAKING_SHORES },
-					}),
-					q(70917, {	-- A Shoulder to Quack On
-						["sourceQuests"] = { 70877 },	--A Quack in Time
-						["provider"] = { "n", 196746 },	-- Bubbled Duckling
-						["coord"] = { 81.6, 45.4, THE_WAKING_SHORES },
-					}),
-					q(70918, {	-- Quack for Your Life
-						["sourceQuests"] = { 70917 },	-- A Shoulder to Quack On
-						["provider"] = { "n", 196572 },	-- Bubbled Duckling
-						["coord"] = { 79.3, 42.7, THE_WAKING_SHORES },
-					}),
-					q(70919, {	-- Quacking Out For a Hero
-						["sourceQuests"] = { 70918 },	-- Quack for Your Life
-						["provider"] = { "n", 196747 },	-- Bubbled Duckling
-						["coord"] = { 82.8, 42.6, THE_WAKING_SHORES },
-						["g"] = {
-							ach(16409),	-- Let's Get Quacking
-						},
-					}),
-				},
+			header(HEADERS.Achievement, 16409, {	-- Let's Get Quacking
+				q(66196, {	-- A Quack For Help
+					["sourceQuests"] = { 66104 },	-- Forensic Ecology
+					["provider"] = { "n", 187439 },	-- Bubbled Duckling
+					["coord"] = { 80.1, 42.9, THE_WAKING_SHORES },
+				}),
+				q(70877, {	-- A Quack in Time
+					["sourceQuests"] = { 66196 },	-- A Quack For Help
+					["provider"] = { "n", 196744 },	-- Bubbled Duckling
+					["coord"] = { 80.1, 39.9, THE_WAKING_SHORES },
+				}),
+				q(70917, {	-- A Shoulder to Quack On
+					["sourceQuests"] = { 70877 },	--A Quack in Time
+					["provider"] = { "n", 196746 },	-- Bubbled Duckling
+					["coord"] = { 81.6, 45.4, THE_WAKING_SHORES },
+				}),
+				q(70918, {	-- Quack for Your Life
+					["sourceQuests"] = { 70917 },	-- A Shoulder to Quack On
+					["provider"] = { "n", 196572 },	-- Bubbled Duckling
+					["coord"] = { 79.3, 42.7, THE_WAKING_SHORES },
+				}),
+				q(70919, {	-- Quacking Out For a Hero
+					["sourceQuests"] = { 70918 },	-- Quack for Your Life
+					["provider"] = { "n", 196747 },	-- Bubbled Duckling
+					["coord"] = { 82.8, 42.6, THE_WAKING_SHORES },
+					["g"] = {
+						ach(16409),	-- Let's Get Quacking
+					},
+				}),
 			}),
 				-- MISC --
 			q(69965, {	-- Quality Assurance

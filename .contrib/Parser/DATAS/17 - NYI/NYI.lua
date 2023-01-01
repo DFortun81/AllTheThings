@@ -465,7 +465,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			prof(LEATHERWORKING, {
 				i(193209),	-- Quality Bone
-				i(193477),	-- Battle Scarred Scale
 			}),
 		}),
 		filter(MISC, {
@@ -795,7 +794,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199850),	-- Imbu Knot
 			i(199851),	-- Double Imbu Knot
 			i(200077),	-- Wooden Pole
-			i(200079),	-- Sea-Polished Basalt
 			i(200080),	-- Draconium Nugget
 			i(200082),	-- Battered Imbu-made Net
 			i(200083),	-- Irontree Branch

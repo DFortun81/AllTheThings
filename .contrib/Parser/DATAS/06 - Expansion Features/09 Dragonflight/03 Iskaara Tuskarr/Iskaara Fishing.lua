@@ -197,6 +197,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["crs"] = { 195935 },
 				["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				["g"] = {
+					-- TODO: maybe link these to the HQT they trigger so that the components can be considered collectible for the unlocks?
 					r(387594),	-- Reinforced Irontree Harpoon Handle
 					r(387827),	-- Flying Fish Bone Charm
 					r(387828),	-- Iskaaran Fishing Net
@@ -225,6 +226,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["description"] = "Obtained from Full Tuskarr Fishing Nets.",
 				}),
 				i(200081),	-- Hardened Seavine
+				o(381514, {	-- Sea-Polished Basalt
+					-- i didn't save the coords, and wowhead doesn't know about it. probably need some fine-tuning and additional spawn locations, then remove description
+					["description"] = "Near landing points for Alliance/Horde in The Waking Shores. Rough coordinates.",
+					["coords"] = {
+						{ 80.0, 27.0, THE_WAKING_SHORES },
+					},
+					["g"] = {
+						i(200079),	-- Sea-Polished Basalt
+					},
+				}),
 			}),
 		})
 	}),

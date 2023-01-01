@@ -624,6 +624,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(197581),	-- Windborne Velocidrake: Silver and Purple Armor (DM!)
 				},
 			}),
+				-- RENOWN 27 --
+			q(70912, {	-- The Accord's High Standards
+				["minReputation"] = { 2510, 27 },	-- Valdrakken Accord Renown 27
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.1, 35.2, VALDRAKKEN },
+				["g"] = {
+					i(199768),	-- Black Dragon Banner (TOY!)
+					i(199769),	-- Blue Dragon Banner (TOY!)
+					i(199770),	-- Bronze Dragon Banner (TOY!)
+					i(199771),	-- Green Dragon Banner (TOY!)
+					i(199767),	-- Red Dragon Banner (TOY!)
+				},
+			}),
 
 				-- Unknown renown -- I will fix this later as well as all other renown quests -Darkal
 			q(72671, {	-- Renown Supplies
@@ -662,6 +675,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(72695),	-- triggered with 'Variety is the Spice of Life' (70904)
 		q(72696),	-- triggered with 'Flying with Our Colors' (70905)
 		q(72698),	-- triggered with 'Mysteries in Paper and Glass' (70910)
+		q(72701),	-- triggered with 'The Accord's High Standards' (70912)
 
 		-- Ensembles
 		q(70755),	-- Ensemble: Crimson Valdrakken Clothing

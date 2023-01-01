@@ -439,7 +439,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				n(193686, {	-- Neela Firebane
 					["coord"] = { 67.6, 27.0, THE_WAKING_SHORES },
-					["questID"] = 69975,
+					["questID"] = 74016,
 					["g"] = {
 						i(200181),	-- Blade of Blazing Torment
 					},

@@ -2679,6 +2679,7 @@ _.ObjectNames = {
 	[381510] = "Flying Fish Bones",
 	[381511] = "Harpoon Head",
 	[381513] = "Old Pickaxe",
+	[381514] = "Sea-Polished Basalt",
 	[381579] = "Archivists' Request",
 	[381622] = "Archivists' Request",
 	[381650] = "Archivists' Request",

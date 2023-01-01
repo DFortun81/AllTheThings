@@ -1361,6 +1361,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72366),	-- triggered after completing 'Moving On' (66221)
 		q(72369),	-- triggered after completing 'Moving On' (66221) / Finishing accord?
 		q(72084),	-- Triggers during 'The Fog of Battle' (66246)
+		q(72110),	-- when delivering Gleamfish to spawn 'The Great Shellkhan'
 		q(72125),	-- Triggers during 'Tying Things Together' (66248)
 		-- q(70511),	-- Popped when doing quest and lootning 198964 Elementious Splinter from mobs?
 

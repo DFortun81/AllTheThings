@@ -154,6 +154,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					{ 60.5, 59.0, THE_AZURE_SPAN },
 				},
 				["g"] = {
+					i(201373),	-- Imbu Net Cutter
 					i(201372),	-- Imbu Tuskarr Axe
 					i(201376),	-- Imbu Tuskarr Mace
 					i(201375),	-- Imbu Warrior's Club

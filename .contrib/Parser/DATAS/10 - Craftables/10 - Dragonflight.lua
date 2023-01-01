@@ -2377,7 +2377,7 @@ root("HiddenQuestTriggers", {
 		--]]
 		prof(JEWELCRAFTING, {
 			-- Reagents
-			-- q(),	-- Blotting Sand
+			q(71647),	-- Blotting Sand
 			q(71673),	-- Draconic Vial
 			-- q(),	-- Elemental Harmony
 			-- q(),	-- Empty Soul Cage
