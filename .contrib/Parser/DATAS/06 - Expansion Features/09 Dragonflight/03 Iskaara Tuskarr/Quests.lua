@@ -411,6 +411,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 186449 },	-- Arvik
 				["coord"] = { 12.9, 48.8, THE_AZURE_SPAN },
 			}),
+				-- RENOWN 23 --
+			q(70962, {	-- A Comfy Seat
+				["minReputation"] = { 2511, 23 },	-- Iskaara Tuskarr Renown 23
+				["provider"] = { "n", 196016 },	-- Lontupit
+				["coord"] = { 14.0, 49.4, THE_AZURE_SPAN },
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
@@ -427,5 +433,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72400),	-- Triggered when hitting Renown 11
 		q(72782),	-- Triggered with 'A Lost Tribe' (68863)
 		q(72395),	-- Triggered with 'Trading Made Easier' (70966)
+		q(72637),	-- Triggered with 'A Comfy Seat' (70962)
 	}),
 }));

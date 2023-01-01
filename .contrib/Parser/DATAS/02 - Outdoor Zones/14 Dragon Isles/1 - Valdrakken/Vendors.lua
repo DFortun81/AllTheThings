@@ -310,36 +310,50 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								}),
 								n(WEAPONS, {
 									i(201983),	-- Crimson Gladiator's Axe
-									i(202129),	-- Crimson Gladiator's Barrier
-									i(202133),	-- Crimson Gladiator's Blade
-									i(202130),	-- Crimson Gladiator's Bulwark
-									i(202127),	-- Crimson Gladiator's Censer
-									i(202140),	-- Crimson Gladiator's Claw
-									i(202124),	-- Crimson Gladiator's Crossbow
 									i(201973),	-- Crimson Gladiator's Dagger
 									i(201979),	-- Crimson Gladiator's Gavel
-									i(202134),	-- Crimson Gladiator's Glaive
-									i(202137),	-- Crimson Gladiator's Greataxe
-									i(202123),	-- Crimson Gladiator's Greatbow
-									i(202138),	-- Crimson Gladiator's Greatmace
-									i(202125),	-- Crimson Gladiator's Greatstaff
 									i(201978),	-- Crimson Gladiator's Greatsword
 									i(201977),	-- Crimson Gladiator's Hand Cannon
 									i(201980),	-- Crimson Gladiator's Horn
 									i(201984),	-- Crimson Gladiator's Knife
 									i(201985),	-- Crimson Gladiator's Mace
 									i(201987),	-- Crimson Gladiator's Polearm
+									i(201981),	-- Crimson Gladiator's Shield
+									i(201975),	-- Crimson Gladiator's Spear
+									i(201972),	-- Crimson Gladiator's Splitter
+									i(201976),	-- Crimson Gladiator's Staff
+									i(201982),	-- Crimson Gladiator's Wand
+									i(201974),	-- Crimson Gladiator's Warglaive
+								}),
+							},
+						})),
+					},
+				}),
+				n(199720, {	-- Glamora
+					["coord"] = { 45.9, 38.7, VALDRAKKEN },
+					["g"] = {
+						header(HEADERS.Achievement, SEASON_CRIMSON, bubbleDownSelf({
+							["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 },
+						},{
+							["icon"] = "Interface\\Icons\\inv_drake2mountgladiator",
+							["g"] = {
+								n(WEAPONS, {
+									i(202129),	-- Crimson Gladiator's Barrier
+									i(202133),	-- Crimson Gladiator's Blade
+									i(202130),	-- Crimson Gladiator's Bulwark
+									i(202127),	-- Crimson Gladiator's Censer
+									i(202140),	-- Crimson Gladiator's Claw
+									i(202124),	-- Crimson Gladiator's Crossbow
+									i(202134),	-- Crimson Gladiator's Glaive
+									i(202137),	-- Crimson Gladiator's Greataxe
+									i(202123),	-- Crimson Gladiator's Greatbow
+									i(202138),	-- Crimson Gladiator's Greatmace
+									i(202125),	-- Crimson Gladiator's Greatstaff
 									i(202135),	-- Crimson Gladiator's Poleaxe
 									i(202136),	-- Crimson Gladiator's Quarterstaff
 									i(202128),	-- Crimson Gladiator's Rod
-									i(201981),	-- Crimson Gladiator's Shield
-									i(201975),	-- Crimson Gladiator's Spear
 									i(202126),	-- Crimson Gladiator's Spellblade
-									i(201972),	-- Crimson Gladiator's Splitter
-									i(201976),	-- Crimson Gladiator's Staff
 									i(202131),	-- Crimson Gladiator's Sword
-									i(201982),	-- Crimson Gladiator's Wand
-									i(201974),	-- Crimson Gladiator's Warglaive
 									i(202132),	-- Crimson Gladiator's Warhammer
 								}),
 							},
