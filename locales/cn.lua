@@ -3552,7 +3552,7 @@ for key, value in pairs({
 	[381650] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "“炽齿翅”报名处",	-- Fang Flap Fire Signups
 	[381661] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
-	--TODO: [381662] = "Archivists' Request",	-- Archivists' Request
+	[381662] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381663] = "法力风暴初学指南",	-- Manastorming For Beginners
 	[381664] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381667] = "档案员的请求",	-- Archivists' Request
