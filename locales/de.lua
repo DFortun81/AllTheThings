@@ -1318,6 +1318,12 @@ for key,value in pairs({
 	[182588] = "Steckbrief",	-- Wanted Poster
 	[182947] = "Kodex des Blutes",	-- The Codex of Blood
 	[182952] = "Treibgut der Dampfpumpe",	-- Steam Pump Flotsam
+	[182953] = "Ein Schwarm Sporenfische",	-- Sporefish School
+	[182954] = "Ein Brackwasserschwarm",	-- Brackish Mixed School
+	[182956] = "Ein Schwarm Stachelflosser",	-- School of Darter
+	[182957] = "Ein Hochlandschwarm",	-- Highland Mixed School
+	[182958] = "Ein Schwarm Matschflosser",	-- Mudfish School
+	[182959] = "Ein Schwarm Blauflossen",	-- Bluefish School
 	[183284] = "Steckbrief",	-- Wanted Poster
 	[183770] = "Steuerkonsole von B'naar",	-- B'naar Control Console
 	[183811] = "Steckbrief",	-- Wanted Poster
@@ -3496,6 +3502,7 @@ for key,value in pairs({
 	[380859] = "Spielzeugboot der Tuskarr",	-- Tuskarr Toy Boat
 	[380860] = "Zentaurenhorn",	-- Centaur Horn
 	[380902] = "Felder der Wildheit",	-- Fields of Ferocity
+	[380918] = "Zerbrochene verzierte Statue",	-- Broken Ornamented Statue
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "Die Große Schatzkammer",	-- The Great Vault
 	[381045] = "Goldener Drachenkelch",	-- Golden Dragon Goblet
@@ -3527,7 +3534,9 @@ for key,value in pairs({
 	[381510] = "Knochen fliegender Fische",	-- Flying Fish Bones
 	[381511] = "Harpunenspitze",	-- Harpoon Head
 	--TODO: [381513] = "Old Pickaxe",	-- Old Pickaxe
+	[381514] = "Wassergeschliffener Basalt",	-- Sea-Polished Basalt
 	[381579] = "Anfrage des Archivars",	-- Archivists' Request	--TODO: this was manually translated
+	[381622] = "Anfrage des Archivars",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "Anfrage des Archivars",	-- Archivists' Request
 	[381653] = "Einschreibungen für Zahnflatterfeuer",	-- Fang Flap Fire Signups
 	[381661] = "Anfrage des Archivars",	-- Archivists' Request
@@ -3549,6 +3558,7 @@ for key,value in pairs({
 	[383625] = "Kiste mit frischem Leuchtfisch",	-- Case of Fresh Gleamfish
 	[384318] = "Unauffälliges Lesezeichen",	-- Inconspicuous Bookmark
 	[384405] = "Halbgarer Fisch",	-- Half-Boiled Fish
+	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Versteinertes Drachenei",	-- Petrified Dragon Egg
 	[385022] = "Erodiertes Fossil",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console

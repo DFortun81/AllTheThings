@@ -1321,6 +1321,12 @@ for key,value in pairs({
 	[182588] = "Cartel de Se busca",	-- Wanted Poster
 	[182947] = "El Códice de Sangre",	-- The Codex of Blood
 	[182952] = "Restos flotantes de bomba de vapor",	-- Steam Pump Flotsam
+	[182953] = "Banco de pecesporas",	-- Sporefish School
+	[182954] = "Banco mixto salobre",	-- Brackish Mixed School
+	[182956] = "Banco de dardos",	-- School of Darter
+	[182957] = "Banco mixto de las Tierras Altas",	-- Highland Mixed School
+	[182958] = "Banco de pezfangos",	-- Mudfish School
+	[182959] = "Banco de pezazules",	-- Bluefish School
 	[183284] = "Cartel de Se busca",	-- Wanted Poster
 	[183770] = "Consola de control B'naar",	-- B'naar Control Console
 	[183811] = "Cartel de Se busca",	-- Wanted Poster
@@ -3499,6 +3505,7 @@ for key,value in pairs({
 	[380859] = "Barco de juguete colmillarr",	-- Tuskarr Toy Boat
 	[380860] = "Cuerno de centauro",	-- Centaur Horn
 	[380902] = "Campos de la Ferocidad",	-- Fields of Ferocity
+	[380918] = "Estatua adornada rota",	-- Broken Ornamented Statue
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "La gran cámara",	-- The Great Vault
 	[381045] = "Cáliz dracónico dorado",	-- Golden Dragon Goblet
@@ -3530,7 +3537,9 @@ for key,value in pairs({
 	[381510] = "Raspas de pez volador",	-- Flying Fish Bones
 	[381511] = "Punta de arpón",	-- Harpoon Head
 	[381513] = "Piqueta vieja",	-- Old Pickaxe
+	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
 	[381579] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381622] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "Petición de los archivistas",	-- Archivists' Request
 	[381653] = "Inscripción a colmillo, ala o fuego",	-- Fang Flap Fire Signups
 	[381661] = "Petición de los archivistas",	-- Archivists' Request
@@ -3552,6 +3561,7 @@ for key,value in pairs({
 	[383625] = "Caja de brillopeces frescos",	-- Case of Fresh Gleamfish
 	[384318] = "Marcapáginas discreto",	-- Inconspicuous Bookmark
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
+	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Huevo de dragón petrificado",	-- Petrified Dragon Egg
 	[385022] = "Fósil erosionado",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console

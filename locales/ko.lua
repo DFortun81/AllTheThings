@@ -1317,6 +1317,12 @@ for key,value in pairs({
 	[182588] = "현상 수배 전단",	-- Wanted Poster
 	[182947] = "피의 고서",	-- The Codex of Blood
 	[182952] = "증기 양수기 표류물",	-- Steam Pump Flotsam
+	[182953] = "포자물고기 떼",	-- Sporefish School
+	[182954] = "강어귀 물고기 떼",	-- Brackish Mixed School
+	[182956] = "황금 화살고기 떼",	-- School of Darter
+	[182957] = "고원의 물고기 떼",	-- Highland Mixed School
+	[182958] = "미꾸라지 떼",	-- Mudfish School
+	[182959] = "게르치 떼",	-- Bluefish School
 	[183284] = "현상 수배 전단",	-- Wanted Poster
 	[183770] = "브나르 제어장치",	-- B'naar Control Console
 	[183811] = "현상 수배 전단",	-- Wanted Poster
@@ -3495,6 +3501,7 @@ for key,value in pairs({
 	[380859] = "투스카르 장난감 배",	-- Tuskarr Toy Boat
 	[380860] = "켄타우로스 뿔피리",	-- Centaur Horn
 	[380902] = "야성의 전장",	-- Fields of Ferocity
+	[380918] = "부서진 장식된 조각상",	-- Broken Ornamented Statue
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "위대한 금고",	-- The Great Vault
 	[381045] = "황금 용 술잔",	-- Golden Dragon Goblet
@@ -3526,7 +3533,9 @@ for key,value in pairs({
 	[381510] = "날치 뼈",	-- Flying Fish Bones
 	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
 	[381513] = "오래된 곡괭이",	-- Old Pickaxe
+	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
 	[381579] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
+	[381622] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "송곳니, 날개, 불 등록",	-- Fang Flap Fire Signups
 	[381661] = "기록관의 요청",	-- Archivists' Request
@@ -3548,6 +3557,7 @@ for key,value in pairs({
 	[383625] = "신선한 미명어 보관함",	-- Case of Fresh Gleamfish
 	[384318] = "눈에 띄지 않는 서표",	-- Inconspicuous Bookmark
 	[384405] = "반쯤 삶은 생선",	-- Half-Boiled Fish
+	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "석화된 용의 알",	-- Petrified Dragon Egg
 	[385022] = "부식된 화석",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console

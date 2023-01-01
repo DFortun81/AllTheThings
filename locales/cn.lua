@@ -1331,6 +1331,12 @@ for key, value in pairs({
 	[182588] = "通缉布告",	-- Wanted Poster
 	[182947] = "鲜血法典",	-- The Codex of Blood
 	[182952] = "蒸汽泵废料",	-- Steam Pump Flotsam
+	[182953] = "孢子鱼群",	-- Sporefish School
+	[182954] = "魔尾鱼群",	-- Brackish Mixed School
+	[182956] = "金镖鱼群",	-- School of Darter
+	[182957] = "高地杂鱼群",	-- Highland Mixed School
+	[182958] = "泥鱼群",	-- Mudfish School
+	[182959] = "蓝鱼群",	-- Bluefish School
 	[183284] = "通缉布告",	-- Wanted Poster
 	[183770] = "布纳尔控制台",	-- B'naar Control Console	--TODO: This was taken from wotlk Wowhead
 	[183811] = "通缉布告",	-- Wanted Poster
@@ -3509,6 +3515,7 @@ for key, value in pairs({
 	[380859] = "海象人玩具船",	-- Tuskarr Toy Boat
 	[380860] = "半人马之角",	-- Centaur Horn
 	[380902] = "野性战场",	-- Fields of Ferocity
+	[380918] = "破损的精美雕像",	-- Broken Ornamented Statue
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "宏伟宝库",	-- The Great Vault
 	[381045] = "金色巨龙高脚杯",	-- Golden Dragon Goblet
@@ -3540,7 +3547,9 @@ for key, value in pairs({
 	--TODO: [381510] = "Flying Fish Bones",	-- Flying Fish Bones
 	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
 	[381513] = "旧镐",	-- Old Pickaxe
+	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
 	[381579] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
+	[381622] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "“炽齿翅”报名处",	-- Fang Flap Fire Signups
 	[381661] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
@@ -3562,6 +3571,7 @@ for key, value in pairs({
 	[383625] = "一箱新鲜的冰湖鱼",	-- Case of Fresh Gleamfish
 	--TODO: [384318] = "Inconspicuous Bookmark",	-- Inconspicuous Bookmark
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
+	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	--TODO: [385021] = "Petrified Dragon Egg",	-- Petrified Dragon Egg
 	[385022] = "被侵蚀的化石",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
