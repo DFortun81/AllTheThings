@@ -29,7 +29,9 @@ root("PVP", pvp(tier(DF_TIER, {
 					i(201792),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
 				}),
 				ach(16730),	-- Crimson Gladiator's Drake
-				ach(15951),	-- Crimson Gladiator: Dragonflight Season 1
+				ach(15951, {	-- Crimson Gladiator: Dragonflight Season 1
+					title(468),	-- Crimson Gladiator <Name>
+				}),
 				-- RBG
 				ach(15959, {	-- Hero of the Alliance: Crimson
 					["races"] = ALLIANCE_ONLY,
@@ -51,6 +53,7 @@ root("PVP", pvp(tier(DF_TIER, {
 				title(387),	-- <Name> the Elite Death Knight
 				title(388),	-- <Name> the Elite Demon Hunter
 				title(389),	-- <Name> the Elite Druid
+				title(481),	-- <Name> the Elite Evoker
 				title(390),	-- <Name> the Elite Hunter
 				title(391),	-- <Name> the Elite Mage
 				title(392),	-- <Name> the Elite Monk
@@ -801,6 +804,7 @@ root("PVP", pvp(tier(DF_TIER, {
 					i(202135),	-- Crimson Gladiator's Poleaxe
 					i(202136),	-- Crimson Gladiator's Quarterstaff
 					i(202128),	-- Crimson Gladiator's Rod
+					i(202139),	-- Crimson Gladiator's Scepter
 					i(202126),	-- Crimson Gladiator's Spellblade
 					i(202131),	-- Crimson Gladiator's Sword
 					i(202132),	-- Crimson Gladiator's Warhammer

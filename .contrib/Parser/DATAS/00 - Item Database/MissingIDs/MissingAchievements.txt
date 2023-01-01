@@ -932,7 +932,6 @@ ach(16797),	-- Artisan's Consortium Monopolist
 ach(16798),	-- Crafting Cooperative
 ach(16799),	-- Personal Crafter
 ach(16800),	-- Dragon Isles Crafting Order Master
-ach(16801),	-- Realm First! Dragonflight Keystone Hero
 10.0.2.46420
 ach(17096),	-- Mythic: Algeth'ar Academy Guild Run
 ach(17097),	-- Mythic: Brackenhide Hollow Guild Run
@@ -942,15 +941,4 @@ ach(17100),	-- Mythic: Ruby Life Pools Guild Run
 ach(17101),	-- Mythic: The Azure Vault Guild Run
 ach(17102),	-- Mythic: The Nokhud Offensive Guild Run
 ach(17103),	-- Mythic: Uldaman: Legacy of Tyr Guild Run
-ach(17107),	-- Ahead of the Curve: Raszageth the Storm-Eater
-ach(17108),	-- Cutting Edge: Raszageth the Storm-Eater
-ach(17110),	-- The Primal Bulwark
-ach(17111),	-- Caverns of Infusion
-ach(17112),	-- Fury of the Storm
-ach(17116),	-- Hall of Fame: Raszageth the Storm-Eater (Alliance)
-ach(17118),	-- Hall of Fame: Raszageth the Storm-Eater (Horde)
 ach(17119),	-- Deep Cuts From the Vault
-10.0.2.46781
-ach(17314),	-- Heroic Edition: Tangled Dreamweaver
-10.0.2.47067
-ach(15640),	-- Return to Darkness

@@ -6,6 +6,9 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 		header(HEADERS.Achievement, SEASON_THUNDERING, bubbleDownSelf({
 			["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 }
 		},{
+			ach(16801, {	-- Realm First! Dragonflight Keystone Hero
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			ach(16647),		-- Dragonflight Keystone Explorer: Season One
 			ach(16648, {	-- Dragonflight Keystone Conqueror: Season One
 				title(477),	-- <Name> the Thundering

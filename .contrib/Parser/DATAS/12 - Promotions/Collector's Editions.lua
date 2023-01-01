@@ -299,6 +299,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 			}),
 			p(3175),	-- Murkastrasza (PET!)
 			mount(359843),	-- Tangled Dreamweaver (MOUNT!)
+			ach(17314),	-- Heroic Edition: Tangled Dreamweaver
 			n(REWARDS, {
 				["description"] = "The following additional rewards were only available if you purchased Dragonflight Epic Edition.",
 				["groups"] = {
