@@ -556,61 +556,47 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 											["cost"] = { { "c", CONQUEST, 525 } },
 										}),
 										i(201630, {	-- Crimson Gladiator's Leather Belt
-											["cost"] = {
-												{ "c", CONQUEST, 1 },
-											}}),
+											["cost"] = { { "c", CONQUEST, 700 } },
+										}),
 										i(201620, {	-- Crimson Gladiator's Leather Boots
-											["cost"] = {
-												{ "c", CONQUEST, 1 },
-											}}),
+											["cost"] = { { "c", CONQUEST, 700 } },
+										}),
 										i(201626, {	-- Crimson Gladiator's Leather Breeches
-											["cost"] = {
-												{ "c", CONQUEST, 1 },
-											}}),
+											["cost"] = { { "c", CONQUEST, 875 } },
+										}),
 										i(201622, {	-- Crimson Gladiator's Leather Gloves
-											["cost"] = {
-												{ "c", CONQUEST, 1 },
-											}}),
+											["cost"] = { { "c", CONQUEST, 700 } },
+										}),
 										i(201623, {	-- Crimson Gladiator's Leather Grips
-											["cost"] = {
-												{ "c", CONQUEST, 1 },
-											}}),
+											["cost"] = { { "c", CONQUEST, 700 } },
+										}),
 										i(201624, {	-- Crimson Gladiator's Leather Helm
-											["cost"] = {
-												{ "c", CONQUEST, 1 },
-											}}),
+											["cost"] = { { "c", CONQUEST, 875 } },
+										}),
 										i(201619, {	-- Crimson Gladiator's Leather Jerkin
-											["cost"] = {
-												{ "c", CONQUEST, 1 },
-											}}),
+											["cost"] = { { "c", CONQUEST, 875 } },
+										}),
 										i(201627, {	-- Crimson Gladiator's Leather Legwraps
-											["cost"] = {
-												{ "c", CONQUEST, 1 },
-											}}),
+											["cost"] = { { "c", CONQUEST, 875 } },
+										}),
 										i(201625, {	-- Crimson Gladiator's Leather Mask
-											["cost"] = {
-												{ "c", CONQUEST, 1 },
-											}}),
+											["cost"] = { { "c", CONQUEST, 875 } },
+										}),
 										i(201629, {	-- Crimson Gladiator's Leather Shoulderpads
-											["cost"] = {
-												{ "c", CONQUEST, 1 },
-											}}),
+											["cost"] = { { "c", CONQUEST, 700 } },
+										}),
 										i(201628, {	-- Crimson Gladiator's Leather Spaulders
-											["cost"] = {
-												{ "c", CONQUEST, 1 },
-											}}),
+											["cost"] = { { "c", CONQUEST, 700 } },
+										}),
 										i(201631, {	-- Crimson Gladiator's Leather Strap
-											["cost"] = {
-												{ "c", CONQUEST, 1 },
-											}}),
+											["cost"] = { { "c", CONQUEST, 700 } },
+										}),
 										i(201621, {	-- Crimson Gladiator's Leather Treads
-											["cost"] = {
-												{ "c", CONQUEST, 1 },
-											}}),
+											["cost"] = { { "c", CONQUEST, 700 } },
+										}),
 										i(201618, {	-- Crimson Gladiator's Leather Vest
-											["cost"] = {
-												{ "c", CONQUEST, 1 },
-											}}),
+											["cost"] = { { "c", CONQUEST, 875 } },
+										}),
 										i(201633, {	-- Crimson Gladiator's Leather Wristguards
 											["cost"] = { { "c", CONQUEST, 525 } },
 										}),
