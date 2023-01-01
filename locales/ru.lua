@@ -1308,6 +1308,12 @@ for key,value in pairs({
 	[182588] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[182947] = "Кодекс Крови",	-- The Codex of Blood
 	[182952] = "Обломки парового насоса",	-- Steam Pump Flotsam
+	[182953] = "Косяк спороуса",	-- Sporefish School
+	[182954] = "Косяк морской рыбы",	-- Brackish Mixed School
+	[182956] = "Косяк ершей",	-- School of Darter
+	[182957] = "Смешанный косяк нагорья",	-- Highland Mixed School
+	[182958] = "Косяк ильной рыбы",	-- Mudfish School
+	[182959] = "Косяк луфаря",	-- Bluefish School
 	[183284] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[183770] = "Панель управления Б'наара",	-- B'naar Control Console
 	[183811] = "Плакат \"Разыскивается\"",	-- Wanted Poster
@@ -3486,6 +3492,7 @@ for key,value in pairs({
 	[380859] = "Игрушечная лодка клыкарров",	-- Tuskarr Toy Boat
 	[380860] = "Кентаврский рог",	-- Centaur Horn
 	[380902] = "Поля Дикой Ярости",	-- Fields of Ferocity
+	[380918] = "Обломки украшенной узорами статуи",	-- Broken Ornamented Statue
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "Великое хранилище",	-- The Great Vault
 	[381045] = "Золотой драконий кубок",	-- Golden Dragon Goblet
@@ -3517,7 +3524,9 @@ for key,value in pairs({
 	[381510] = "Кости летающей рыбы",	-- Flying Fish Bones
 	[381511] = "Наконечник гарпуна",	-- Harpoon Head
 	[381513] = "Старая кирка",	-- Old Pickaxe
+	[381514] = "Отшлифованный волнами базальт",	-- Sea-Polished Basalt
 	[381579] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
+	--TODO: [381622] = "Archivists' Request",	-- Archivists' Request
 	[381650] = "Просьба архивариуса",	-- Archivists' Request
 	[381653] = "Запись на игру в \"Клык, взмах, огонь\"",	-- Fang Flap Fire Signups
 	[381661] = "Просьба архивариуса",	-- Archivists' Request
@@ -3539,6 +3548,7 @@ for key,value in pairs({
 	[383625] = "Ящик свежих блескорыбок",	-- Case of Fresh Gleamfish
 	[384318] = "Непримечательная закладка",	-- Inconspicuous Bookmark
 	[384405] = "Наполовину сваренная рыба",	-- Half-Boiled Fish
+	[385001] = "Пустой бочонок для рыбы",	-- Empty Fish Barrel
 	[385021] = "Окаменевшее яйцо дракона",	-- Petrified Dragon Egg
 	[385022] = "Размытая окаменелость",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console

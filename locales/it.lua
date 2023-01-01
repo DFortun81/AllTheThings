@@ -1309,6 +1309,12 @@ for key,value in pairs({
 	[182588] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[182947] = "Il Codice del Sangue",	-- The Codex of Blood
 	[182952] = "Rottami di Pompa del Vapore",	-- Steam Pump Flotsam
+	[182953] = "Banco di Pescispora",	-- Sporefish School
+	[182954] = "Banco di Pesci d'Acqua Salmastra",	-- Brackish Mixed School
+	[182956] = "Banco di Pesci Persico",	-- School of Darter
+	[182957] = "Banco di Pesci delle Alture",	-- Highland Mixed School
+	[182958] = "Banco di Pescifango",	-- Mudfish School
+	[182959] = "Banco di Pesci Azzurri",	-- Bluefish School
 	[183284] = "Manifesto dei Ricercati",	-- Wanted Poster
 	[183770] = "Console di Comando B'naar",	-- B'naar Control Console
 	[183811] = "Manifesto dei Ricercati",	-- Wanted Poster
@@ -3487,6 +3493,7 @@ for key,value in pairs({
 	[380859] = "Barca Giocattolo dei Tuskarr",	-- Tuskarr Toy Boat
 	[380860] = "Corno di Centauro",	-- Centaur Horn
 	[380902] = "Campi della Ferocia",	-- Fields of Ferocity
+	[380918] = "Statua Adornata Rotta",	-- Broken Ornamented Statue
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "La Gran Banca",	-- The Great Vault
 	[381045] = "Calice del Drago Dorato",	-- Golden Dragon Goblet
@@ -3518,7 +3525,9 @@ for key,value in pairs({
 	[381510] = "Lische di Pesce Volanti",	-- Flying Fish Bones
 	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
 	--TODO: [381513] = "Old Pickaxe",	-- Old Pickaxe
+	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
 	[381579] = "Richiesta degli Archivisti",	-- Archivists' Request	--TODO: this was manually translated
+	--TODO: [381622] = "Archivists' Request",	-- Archivists' Request
 	[381650] = "Richiesta degli Archivisti",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Iscrizioni a Zanne Ali Fuoco.",	-- Fang Flap Fire Signups
 	[381661] = "Richiesta degli Archivisti",	-- Archivists' Request
@@ -3540,6 +3549,7 @@ for key,value in pairs({
 	[383625] = "Cassa di Pescilume Freschi",	-- Case of Fresh Gleamfish
 	[384318] = "Segnalibro Incospicuo",	-- Inconspicuous Bookmark
 	[384405] = "Pesce Semibollito",	-- Half-Boiled Fish
+	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Uovo di Drago Pietrificato",	-- Petrified Dragon Egg
 	[385022] = "Fossile Eroso",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console

@@ -1316,6 +1316,12 @@ for key,value in pairs({
 	[182588] = "Avis de recherche",	-- Wanted Poster
 	[182947] = "Le Codex de sang",	-- The Codex of Blood
 	[182952] = "Détritus de la pompe à vapeur",	-- Steam Pump Flotsam
+	[182953] = "Banc de poissons-spores",	-- Sporefish School
+	[182954] = "Banc mixte en eaux saumâtres",	-- Brackish Mixed School
+	[182956] = "Banc de dards",	-- School of Darter
+	[182957] = "Banc mixte des hautes-terres",	-- Highland Mixed School
+	[182958] = "Banc d'éperlans",	-- Mudfish School
+	[182959] = "Banc de tassergals",	-- Bluefish School
 	[183284] = "Avis de recherche",	-- Wanted Poster
 	[183770] = "Console de contrôle de B'naar",	-- B'naar Control Console
 	[183811] = "Avis de recherche",	-- Wanted Poster
@@ -3494,6 +3500,7 @@ for key,value in pairs({
 	[380859] = "Bateau jouet rohart",	-- Tuskarr Toy Boat
 	[380860] = "Cor de Centaure",	-- Centaur Horn
 	[380902] = "Champs de Férocité",	-- Fields of Ferocity
+	[380918] = "Statue ornementale brisée",	-- Broken Ornamented Statue
 	[380991] = "Tas de terre",	-- Dirt Mound
 	[381035] = "Grande chambre forte",	-- The Great Vault
 	[381045] = "Gobelet draconique en or",	-- Golden Dragon Goblet
@@ -3525,7 +3532,9 @@ for key,value in pairs({
 	[381510] = "Arêtes de poisson volant",	-- Flying Fish Bones
 	[381511] = "Tête de harpon",	-- Harpoon Head
 	[381513] = "Vieille pioche",	-- Old Pickaxe
+	[381514] = "Basalte poli par la mer",	-- Sea-Polished Basalt
 	[381579] = "Requête des archives",	-- Archivists' Request
+	--TODO: [381622] = "Archivists' Request",	-- Archivists' Request
 	[381650] = "Requête des archives",	-- Archivists' Request
 	[381653] = "Inscriptions à Croc-claque-crame",	-- Fang Flap Fire Signups
 	[381661] = "Requête des archives",	-- Archivists' Request
@@ -3547,6 +3556,7 @@ for key,value in pairs({
 	[383625] = "Caisse de loupiotes fraîches",	-- Case of Fresh Gleamfish
 	[384318] = "Marque-page discret",	-- Inconspicuous Bookmark
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
+	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Œuf de Dragon pétrifié",	-- Petrified Dragon Egg
 	[385022] = "Fossile érodé",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
