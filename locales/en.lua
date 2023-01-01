@@ -1303,13 +1303,6 @@ app.L = {
 		[-690] = "Interface\\Icons\\inv_protodrakegladiatormount_blue",						-- Sinister Gladiator: Battle for Azeroth Season 2
 		[-691] = "Interface\\Icons\\inv_protodrakegladiatormount_purple",					-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-692] = "Interface\\Icons\\inv_protodrakegladiatormount_black",					-- Corrupted Gladiator: Battle for Azeroth Season 4
-	-- Shadowlands PvP Seasons
-		[-693] = "Interface\\Icons\\inv_shadebeastmount",									-- Sinful Gladiator: Shadowlands Season 1
-		[-694] = "Interface\\Icons\\inv_shadebeastmount_blue",								-- Unchained Gladiator: Shadowlands Season 2
-		[-695] = "Interface\\Icons\\inv_shadebeastmount_red",								-- Cosmic Gladiator: Shadowlands Season 3
-		[-696] = "Interface\\Icons\\inv_shadebeastmount_orange",							-- Eternal Gladiator: Shadowlands Season 4
-	-- Dragonflight PvP Seasons
-		[-697] = "Interface\\Icons\\inv_drake2mountgladiator",								-- Crimson Gladiator: Dragonflight Season 1
 	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
 		[-795] = app.asset("Pet_Dungeon"),													-- Pet Battle Dungeons
@@ -1860,13 +1853,6 @@ app.L = {
 		[-690] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
 		[-691] = select(2, GetAchievementInfo(13630)),							-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-692] = select(2, GetAchievementInfo(13957)),							-- Corrupted Gladiator: Battle for Azeroth Season 4
-	-- Shadowlands PvP Seasons
-		[-693] = select(2, GetAchievementInfo(14690)),							-- Sinful Gladiator: Shadowlands Season 1
-		[-694] = select(2, GetAchievementInfo(14973)),							-- Unchained Gladiator: Shadowlands Season 2
-		[-695] = select(2, GetAchievementInfo(15353)),							-- Cosmic Gladiator: Shadowlands Season 3
-		[-696] = select(2, GetAchievementInfo(15606)),							-- Eternal Gladiator: Shadowlands Season 4
-	-- Dragonflight PvP Seasons
-		[-697] = select(2, GetAchievementInfo(15951)),							-- Crimson Gladiator: Dragonflight Season 1
 	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets
 		[-795] = "Pet Battle Dungeons",											-- Pet Battle Dungeons
