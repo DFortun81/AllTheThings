@@ -2,7 +2,7 @@
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
 
-root("Secrets", n(-810, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, { 	 -- Otto
+root("Secrets", header(HEADERS.Spell, 376873, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, { 	 -- Otto
 	["description"] = "***Debugg Mode enabled is required to see all the steps. Fishing is required for this Secret!***",
 	["modelScale"] = .8,
 	["modelID"] = 102074,
@@ -19,7 +19,7 @@ root("Secrets", n(-810, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, { 	 -
 			["description"] = "Head to The Bubble Bath Dive Bar, off the coast of The Waking Shores. While wearing the Aquatic Shades, find an empty dance floor and walk onto it; you'll receive the debuff Dance Dance 'Til You're Dead. Stay on the dance floor until this debuff wears off.",
 			["coord"] = { 19.6, 36.5, THE_WAKING_SHORES },
 			["name"] = "Step 2: Dance, Dance 'Til You're Dead",
-		}),	
+		}),
 		o(385001, {	-- Step 3: Empty Fish Barrel
 			["description"] = "Once you wake up from your dance hangover, loot the Empty Fish Barrel. It's directly in front of you.",
 			["coord"] = { 20, 40, THE_WAKING_SHORES },

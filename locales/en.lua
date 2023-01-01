@@ -1322,7 +1322,6 @@ app.L = {
 		[-807] = "Interface\\Icons\\inv_hivemind",											-- Hivemind
 		[-808] = 2998185,																	-- Bound Shadehound
 		[-809] = 3954409,																	-- Stored Wisdom Device
-		[-810] = 4093847,																	-- Otto
 	-- More Secrets are likely to come dont use IDs here
 	-- Chests
 		[-851] = "Interface\\Icons\\INV_Eng_Crate2",										-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
@@ -1872,7 +1871,6 @@ app.L = {
 		[-807] = GetSpellInfo(261395),											-- The Hivemind
 		[-808] = GetSpellInfo(344577),											-- Bound Shadehound
 		[-809] = GetSpellInfo(373230),											-- Stored Wisdom Device
-		[-810] = GetSpellInfo(376873),											-- Otto
 	-- More Secrets are likely to come dont use IDs here
 	-- Chests
 		[-851] = "Black Empire Cache",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
