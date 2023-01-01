@@ -417,6 +417,69 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 196016 },	-- Lontupit
 				["coord"] = { 14.0, 49.4, THE_AZURE_SPAN },
 			}),
+				-- RENOWN 24 --
+			q(70971, {	-- Arms for Every Arm
+				["minReputation"] = { 2511, 24 },	-- Iskaara Tuskarr Renown 24
+				["provider"] = { "n", 186186 },	-- Hanu
+				["coords"] = {
+					{ 13.5, 48.2, THE_AZURE_SPAN },
+					{ 12.9, 48.7, THE_AZURE_SPAN },
+				},
+				["g"] = {
+					i(199879),	-- Tuskarr Fisherman's Dagger
+					i(199881),	-- Tuskarr Fisherman's Harpoon
+					i(199880),	-- Tuskarr Leviathan's Hook
+					i(199882),	-- Tuskarr Mystic's Stave
+					i(199883),	-- Tuskarr Sharktooth Bolthrower
+					i(199878),	-- Tuskarr Timber Splitter
+				},
+				
+			}),
+			q(72323, {	-- Iskaaran Crafting Mastery
+				["minReputation"] = { 2511, 24 },	-- Iskaara Tuskarr Renown 24
+				["provider"] = { "n", 194059 },	-- Rokkutuk
+				["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
+				["requireSkill"] = ENCHANTING,
+				["g"] = {
+					i(201709),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72324, {	-- Iskaaran Crafting Mastery
+				["minReputation"] = { 2511, 24 },	-- Iskaara Tuskarr Renown 24
+				["provider"] = { "n", 194059 },	-- Rokkutuk
+				["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
+				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(201717),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72325, {	-- Iskaaran Crafting Mastery
+				["minReputation"] = { 2511, 24 },	-- Iskaara Tuskarr Renown 24
+				["provider"] = { "n", 194059 },	-- Rokkutuk
+				["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
+				["requireSkill"] = JEWELCRAFTING,
+				["g"] = {
+					i(201712),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72326, {	-- Iskaaran Crafting Mastery
+				["minReputation"] = { 2511, 24 },	-- Iskaara Tuskarr Renown 24
+				["provider"] = { "n", 194059 },	-- Rokkutuk
+				["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
+				["requireSkill"] = LEATHERWORKING,
+				["g"] = {
+					i(201713),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72327, {	-- Iskaaran Crafting Mastery
+				["minReputation"] = { 2511, 24 },	-- Iskaara Tuskarr Renown 24
+				["provider"] = { "n", 194059 },	-- Rokkutuk
+				["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
+				["requireSkill"] = SKINNING,
+				["g"] = {
+					i(201718),	-- Notebook of Crafting Knowledge
+				},
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
@@ -434,5 +497,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72782),	-- Triggered with 'A Lost Tribe' (68863)
 		q(72395),	-- Triggered with 'Trading Made Easier' (70966)
 		q(72637),	-- Triggered with 'A Comfy Seat' (70962)
+		q(72638),	-- Triggered with 'Arms for Every Arm'  (70971)
 	}),
 }));
