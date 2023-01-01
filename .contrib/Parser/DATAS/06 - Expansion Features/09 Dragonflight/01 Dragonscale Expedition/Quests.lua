@@ -448,7 +448,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 			}),
 			q(70997, {	-- Wanted: Ruby Lifeband
-				["provider"] = { "o", 381622 },	-- Archivist's Request
+				["provider"] = { "o", 381662 },	-- Archivist's Request
 				["coord"] = { 47.9, 82.5, THE_WAKING_SHORES },
 				["isWeekly"] = true,
 			}),
