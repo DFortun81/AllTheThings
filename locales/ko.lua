@@ -3535,10 +3535,10 @@ for key,value in pairs({
 	[381513] = "오래된 곡괭이",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
 	[381579] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
-	[381622] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "송곳니, 날개, 불 등록",	-- Fang Flap Fire Signups
 	[381661] = "기록관의 요청",	-- Archivists' Request
+	[381662] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	[381663] = "초보자를 위한 마나스톰 안내서",	-- Manastorming For Beginners
 	[381664] = "기록관의 요청",	-- Archivists' Request
 	[381667] = "기록관의 요청",	-- Archivists' Request

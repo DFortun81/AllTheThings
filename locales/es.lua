@@ -3539,10 +3539,10 @@ for key,value in pairs({
 	[381513] = "Piqueta vieja",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
 	[381579] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
-	[381622] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "Petición de los archivistas",	-- Archivists' Request
 	[381653] = "Inscripción a colmillo, ala o fuego",	-- Fang Flap Fire Signups
 	[381661] = "Petición de los archivistas",	-- Archivists' Request
+	[381662] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381663] = "Tormentas de maná para principiantes",	-- Manastorming For Beginners
 	[381664] = "Petición de los archivistas",	-- Archivists' Request
 	[381667] = "Petición de los archivistas",	-- Archivists' Request

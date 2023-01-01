@@ -3526,10 +3526,10 @@ for key,value in pairs({
 	[381513] = "Старая кирка",	-- Old Pickaxe
 	[381514] = "Отшлифованный волнами базальт",	-- Sea-Polished Basalt
 	[381579] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
-	[381622] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
 	[381650] = "Просьба архивариуса",	-- Archivists' Request
 	[381653] = "Запись на игру в \"Клык, взмах, огонь\"",	-- Fang Flap Fire Signups
 	[381661] = "Просьба архивариуса",	-- Archivists' Request
+	[381662] = "Просьба архивариуса",	-- Archivists' Request	--TODO: this was manually translated
 	[381663] = "\"Манаштормы для новичков\"",	-- Manastorming For Beginners
 	[381664] = "Просьба архивариуса",	-- Archivists' Request
 	[381667] = "Просьба архивариуса",	-- Archivists' Request
