@@ -832,7 +832,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						i(45500),	-- Mark of the Champion
 					},
 				}),
-				q(13793, {	-- Among the Champions (A , DK)
+				q(13793, {	-- Among the Champions (A, DK)
 					["classes"] = { DEATHKNIGHT },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -851,7 +851,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						i(45500),	-- Mark of the Champion
 					},
 				}),
-				q(13814, {	-- Among the Champions (H , DK)
+				q(13814, {	-- Among the Champions (H, DK)
 					["classes"] = { DEATHKNIGHT },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -963,7 +963,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						i(45724),	-- Champion's Purse
 					},
 				}),
-				q(13864, {	-- Battle Before the Citadel (A , DK)
+				q(13864, {	-- Battle Before the Citadel (A, DK)
 					["classes"] = { DEATHKNIGHT },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1118,7 +1118,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
 				}),
-				q(13789, {	-- Taking Battle To The Enemy (A , non-DK)
+				q(13789, {	-- Taking Battle To The Enemy (A, non-DK)
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1129,7 +1129,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						i(45724),	-- Champion's Purse
 					},
 				}),
-				q(13810, {	-- Taking Battle To The Enemy (H , non-DK)
+				q(13810, {	-- Taking Battle To The Enemy (H, non-DK)
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1140,7 +1140,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						i(45724),	-- Champion's Purse
 					},
 				}),
-				q(13791, {	-- Taking Battle To The Enemy (A , DK)
+				q(13791, {	-- Taking Battle To The Enemy (A, DK)
 					["classes"] = { DEATHKNIGHT },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1151,7 +1151,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 						i(45724),	-- Champion's Purse
 					},
 				}),
-				q(13813, {	-- Taking Battle To The Enemy (H , DK)
+				q(13813, {	-- Taking Battle To The Enemy (H, DK)
 					["classes"] = { DEATHKNIGHT },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,

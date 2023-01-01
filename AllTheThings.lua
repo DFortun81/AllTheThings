@@ -1153,8 +1153,8 @@ GameTooltipModel:SetBackdropBorderColor(1, 1, 1, 1);
 GameTooltipModel:SetBackdropColor(0, 0, 0, 1);
 GameTooltipModel.Models = {};
 GameTooltipModel.Model = CreateFrame("DressUpModel", nil, GameTooltipModel);
-GameTooltipModel.Model:SetPoint("TOPLEFT", GameTooltipModel ,"TOPLEFT", 4, -4)
-GameTooltipModel.Model:SetPoint("BOTTOMRIGHT", GameTooltipModel ,"BOTTOMRIGHT", -4, 4)
+GameTooltipModel.Model:SetPoint("TOPLEFT", GameTooltipModel, "TOPLEFT", 4, -4)
+GameTooltipModel.Model:SetPoint("BOTTOMRIGHT", GameTooltipModel, "BOTTOMRIGHT", -4, 4)
 GameTooltipModel.Model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
 GameTooltipModel.Model:SetScript("OnUpdate", function(self, elapsed)
 	self:SetFacing(self:GetFacing() + elapsed);
@@ -1163,8 +1163,8 @@ GameTooltipModel.Model:Hide();
 
 for i=1,MAX_CREATURES_PER_ENCOUNTER do
 	model = CreateFrame("DressUpModel", "ATTGameTooltipModel" .. i, GameTooltipModel);
-	model:SetPoint("TOPLEFT", GameTooltipModel ,"TOPLEFT", 4, -4);
-	model:SetPoint("BOTTOMRIGHT", GameTooltipModel ,"BOTTOMRIGHT", -4, 4);
+	model:SetPoint("TOPLEFT", GameTooltipModel, "TOPLEFT", 4, -4);
+	model:SetPoint("BOTTOMRIGHT", GameTooltipModel, "BOTTOMRIGHT", -4, 4);
 	model:SetCamDistanceScale(1.7);
 	model:SetDisplayInfo(987);
 	model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
@@ -10386,7 +10386,7 @@ local function ColorizeStandingText(standingID, text)
 end
 -- Returns StandingText or Requested Standing colorzing the 'Standing' text for the Faction, or otherwise the provided 'textOverride'
 app.GetCurrentFactionStandingText = function(factionID, requestedStanding, textOverride)
-	local standing , maxStanding, isRenown = GetCurrentFactionStandings(factionID, requestedStanding);
+	local standing, maxStanding, isRenown = GetCurrentFactionStandings(factionID, requestedStanding);
 	if isRenown then
 		return Colorize(sformat(COVENANT_RENOWN_LEVEL_TOAST, standing), app.Colors.Renown);
 	end
@@ -21961,7 +21961,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				-- Acquire all of the world mapIDs
 				for _,pair in ipairs(worldMapIDs) do
 					local mapID = pair[1];
-					-- print("WQ.WorldMapIDs." , mapID)
+					-- print("WQ.WorldMapIDs.", mapID)
 					-- start fetching the data while other stuff is setup
 					C_QuestLine_RequestQuestLinesForMap(mapID);
 					local mapObject = app.CreateMapWithStyle(mapID);
@@ -24038,12 +24038,12 @@ app.InitDataCoroutine = function()
 			53175,	-- The Warfront Looms (BFA Alliance Warfront Breadcrumb)
 		},
 		{
-			31977 ,	-- The Returning Champion (Horde Winterspring Pass Pet Battle Quest)
-			31975 ,	-- The Returning Champion (Alliance Winterspring Pass Pet Battle Quest)
+			31977,	-- The Returning Champion (Horde Winterspring Pass Pet Battle Quest)
+			31975,	-- The Returning Champion (Alliance Winterspring Pass Pet Battle Quest)
 		},
 		{
-			31980 ,	-- The Returning Champion (Horde Deadwind Pass Pet Battle Quest)
-			31976 ,	-- The Returning Champion (Alliance Deadwind Pass Pet Battle Quest)
+			31980,	-- The Returning Champion (Horde Deadwind Pass Pet Battle Quest)
+			31976,	-- The Returning Champion (Alliance Deadwind Pass Pet Battle Quest)
 		},
 	}) do
 		for _,questID in ipairs(questGroup) do

@@ -77,7 +77,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(198604, {	-- Strange Bear Cub
-				["coord"] = { 52.5, 83.6 , THALDRASZUS },
+				["coord"] = { 52.5, 83.6, THALDRASZUS },
 				["questID"] = 72355,
 				["g"] = {
 					i(201463),	-- Cubbly (PET!)
@@ -94,7 +94,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			o(381108, {	-- Yennu's Map
-				["coord"] = { 54.9, 75.4 , THALDRASZUS },
+				["coord"] = { 54.9, 75.4, THALDRASZUS },
 				["g"] = {
 					i(199069, {	-- Yennu's Map
 						["questID"] = 70538,

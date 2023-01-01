@@ -25,13 +25,13 @@ local TOTAL_COST_COLLECTION = {};
 local number = 1;
 for _,g in ipairs({DUTIFUL_COST_GROUP,MARTIAL_COST_GROUP,UNTAMED_COST_GROUP,PRIDEFUL_COST_GROUP}) do
 	local COST_GROUP_T2 = {
-		{ "i", 176832 ,1 },	-- 1x Wildseed Root Grain
+		{ "i", 176832, 1 },	-- 1x Wildseed Root Grain
 	};
 	local COST_GROUP_T3 = {
-		{ "i", 176832 ,2 },	-- 2x Wildseed Root Grain
+		{ "i", 176832, 2 },	-- 2x Wildseed Root Grain
 	};
 	local COST_GROUP_T5 = {
-		{ "i", 176832 ,4 },	-- 4x Wildseed Root Grain
+		{ "i", 176832, 4 },	-- 4x Wildseed Root Grain
 	};
 	for _,t in ipairs({COST_GROUP_T2,COST_GROUP_T3,COST_GROUP_T5}) do
 		TOTAL_COST_COLLECTION[number] = appendGroups(g,t);

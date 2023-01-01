@@ -357,7 +357,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				q(66660, {	-- On Your Mark... Get Set...
 					["sourceQuests"] = {
-						66029 ,	-- Temporal Tuning
+						66029,	-- Temporal Tuning
 						66037,	-- Back to Reality
 					},
 					["provider"] = { "n", 186931 },	-- Nozdormu

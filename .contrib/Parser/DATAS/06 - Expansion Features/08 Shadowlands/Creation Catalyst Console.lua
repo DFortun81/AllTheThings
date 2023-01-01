@@ -118,7 +118,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 							i(188838),	-- Erudite Occultist's Treads
 						},
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						["sym"] = SymRaid(MONK, 4),
 						["g"] = {
 							i(188913),	-- Demigaunts of the Grand Upwelling
@@ -231,7 +231,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 							i(188838),	-- Erudite Occultist's Treads
 						},
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						["sym"] = SymRaid(MONK, 3),
 						["g"] = {
 							i(188913),	-- Demigaunts of the Grand Upwelling
@@ -344,7 +344,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 							i(188838),	-- Erudite Occultist's Treads
 						},
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						["sym"] = SymRaid(MONK, 5),
 						["g"] = {
 							i(188913),	-- Demigaunts of the Grand Upwelling
@@ -457,7 +457,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 							i(188838),	-- Erudite Occultist's Treads
 						},
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						["sym"] = SymRaid(MONK, 6),
 						["g"] = {
 							i(188913),	-- Demigaunts of the Grand Upwelling
@@ -570,7 +570,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 							i(188838),	-- Erudite Occultist's Treads
 						},
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						["sym"] = SymPvP(MONK, PVP_GLADIATOR),
 						["g"] = {
 							i(188913),	-- Demigaunts of the Grand Upwelling
@@ -683,7 +683,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 							i(188838),	-- Erudite Occultist's Treads
 						},
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						["sym"] = SymPvP(MONK, PVP_ELITE),
 						["g"] = {
 							i(188913),	-- Demigaunts of the Grand Upwelling
@@ -813,7 +813,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(188846),	-- Erudite Occultist's Shroud
 						i(188838),	-- Erudite Occultist's Treads
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						i(188910),	-- Crown of the Grand Upwelling
 						i(188912),	-- Cuirass of the Grand Upwelling
 						i(188913),	-- Demigaunts of the Grand Upwelling
@@ -950,7 +950,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(188846),	-- Erudite Occultist's Shroud
 						i(188838),	-- Erudite Occultist's Treads
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						i(188910),	-- Crown of the Grand Upwelling
 						i(188912),	-- Cuirass of the Grand Upwelling
 						i(188913),	-- Demigaunts of the Grand Upwelling
@@ -1087,7 +1087,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(188846),	-- Erudite Occultist's Shroud
 						i(188838),	-- Erudite Occultist's Treads
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						i(188910),	-- Crown of the Grand Upwelling
 						i(188912),	-- Cuirass of the Grand Upwelling
 						i(188913),	-- Demigaunts of the Grand Upwelling
@@ -1224,7 +1224,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(188846),	-- Erudite Occultist's Shroud
 						i(188838),	-- Erudite Occultist's Treads
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						i(188910),	-- Crown of the Grand Upwelling
 						i(188912),	-- Cuirass of the Grand Upwelling
 						i(188913),	-- Demigaunts of the Grand Upwelling
@@ -1361,7 +1361,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(188846),	-- Erudite Occultist's Shroud
 						i(188838),	-- Erudite Occultist's Treads
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						i(188910),	-- Crown of the Grand Upwelling
 						i(188912),	-- Cuirass of the Grand Upwelling
 						i(188913),	-- Demigaunts of the Grand Upwelling
@@ -1498,7 +1498,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(188846),	-- Erudite Occultist's Shroud
 						i(188838),	-- Erudite Occultist's Treads
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						i(188910),	-- Crown of the Grand Upwelling
 						i(188912),	-- Cuirass of the Grand Upwelling
 						i(188913),	-- Demigaunts of the Grand Upwelling

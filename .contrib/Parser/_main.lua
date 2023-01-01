@@ -2077,7 +2077,7 @@ end
 inst = function(id, t)									-- Create an INSTANCE Object
 	return struct("instanceID", id, t);
 end
-inst_tw = function(id ,t)								-- Create a TIMEWALKING INSTANCE Object
+inst_tw = function(id, t)								-- Create a TIMEWALKING INSTANCE Object
 	t = inst(id, t);
 	t.u = TIMEWALKING;
 	-- Look for the CreatureID's

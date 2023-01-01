@@ -559,7 +559,7 @@ root("Zones", m(KALIMDOR, {
 						objective(1, {	-- 0/1 Filled Cliffspring Falls Sampler
 							["provider"] = { "i", 15845 },	-- Filled Cliffspring Falls Sampler
 							["cost"] = {{ "i", 15844, 1 }},	-- Empty Cliffspring Falls Sampler
-							["coord"] = { 54.9 , 33.3, DARKSHORE },
+							["coord"] = { 54.9, 33.3, DARKSHORE },
 						}),
 					},
 				}),

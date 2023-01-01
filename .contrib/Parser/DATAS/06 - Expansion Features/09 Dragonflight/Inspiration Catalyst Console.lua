@@ -125,7 +125,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							i(200316),	-- Crystal Scholar's Footwraps
 						},
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						["sym"] = SymRaid(MONK, 4),
 						["g"] = {
 							i(200367),	-- Cuffs of the Waking Fist
@@ -247,7 +247,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							i(200316),	-- Crystal Scholar's Footwraps
 						},
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						["sym"] = SymRaid(MONK, 3),
 						["g"] = {
 							i(200367),	-- Cuffs of the Waking Fist
@@ -369,7 +369,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							i(200316),	-- Crystal Scholar's Footwraps
 						},
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						["sym"] = SymRaid(MONK, 5),
 						["g"] = {
 							i(200367),	-- Cuffs of the Waking Fist
@@ -491,7 +491,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							i(200316),	-- Crystal Scholar's Footwraps
 						},
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						["sym"] = SymRaid(MONK, 6),
 						["g"] = {
 							i(200367),	-- Cuffs of the Waking Fist
@@ -605,7 +605,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							i(188838),	-- Erudite Occultist's Treads
 						},
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						["sym"] = SymPvP(MONK, PVP_GLADIATOR),
 						["g"] = {
 							i(188913),	-- Demigaunts of the Grand Upwelling
@@ -718,7 +718,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							i(188838),	-- Erudite Occultist's Treads
 						},
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						["sym"] = SymPvP(MONK, PVP_ELITE),
 						["g"] = {
 							i(188913),	-- Demigaunts of the Grand Upwelling

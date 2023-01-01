@@ -1679,7 +1679,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			o(380548, {	-- Forgotten Jewelry Box
 				["questID"] = 70263,
-				["coord"] = { 61.8, 13.0 , OHNAHRAN_PLAINS },
+				["coord"] = { 61.8, 13.0, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(198657),	-- Forgotten Jewelry Box
 					i(198660),	-- Fragmented Key

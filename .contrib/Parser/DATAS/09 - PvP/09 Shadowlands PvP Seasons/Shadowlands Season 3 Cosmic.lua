@@ -247,7 +247,7 @@ root("PVP", pvp(tier(SL_TIER, {
 							i(188846),	-- Erudite Occultist's Shroud
 							i(188838),	-- Erudite Occultist's Treads
 						}),
-						cl(MONK ,{
+						cl(MONK, {
 							i(188910),	-- Crown of the Grand Upwelling
 							i(188912),	-- Cuirass of the Grand Upwelling
 							i(188913),	-- Demigaunts of the Grand Upwelling
@@ -511,7 +511,7 @@ root("PVP", pvp(tier(SL_TIER, {
 							i(188846),	-- Erudite Occultist's Shroud
 							i(188838),	-- Erudite Occultist's Treads
 						}),
-						cl(MONK ,{
+						cl(MONK, {
 							i(188910),	-- Crown of the Grand Upwelling
 							i(188912),	-- Cuirass of the Grand Upwelling
 							i(188913),	-- Demigaunts of the Grand Upwelling

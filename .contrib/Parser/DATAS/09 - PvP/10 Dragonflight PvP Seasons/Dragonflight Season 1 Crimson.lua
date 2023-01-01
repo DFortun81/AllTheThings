@@ -313,7 +313,7 @@ root("PVP", pvp(tier(DF_TIER, {
 						i(201472),	-- Crimson Gladiator's Silk Tunic
 						i(201486),	-- Crimson Gladiator's Silk Wristwraps
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						i(201896),	-- Crimson Gladiator's Cloak
 						i(201897),	-- Crimson Gladiator's Drape
 						i(201614),	-- Crimson Gladiator's Leather Belt
@@ -624,7 +624,7 @@ root("PVP", pvp(tier(DF_TIER, {
 						i(201472),	-- Crimson Gladiator's Silk Tunic
 						i(201486),	-- Crimson Gladiator's Silk Wristwraps
 					}),
-					cl(MONK ,{
+					cl(MONK, {
 						i(201896),	-- Crimson Gladiator's Cloak
 						i(201897),	-- Crimson Gladiator's Drape
 						i(201614),	-- Crimson Gladiator's Leather Belt

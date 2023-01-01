@@ -152,7 +152,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		ach(9400, {		-- Gorgrond Monster Hunter
 			crit(1, {	-- Biolante
 				["crs"] = { 75207 },	-- Biolante
-				["coord"] = { 62.8, 54.0 , GORGROND },
+				["coord"] = { 62.8, 54.0, GORGROND },
 			}),
 			crit(2, {	-- Roardan the Sky Terror
 				["crs"] = { 77093 },	-- Roardan the Sky Terror
@@ -186,8 +186,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				["crs"] = { 80785 },	-- Fungal Praetorian
 				["coord"] = { 58.0, 63.6, GORGROND },
 			}),
-		
-		}),	
+
+		}),
 		ach(9728, {		-- Grand Treasure Hunter
 			ach(10348),		-- Master Treasure Hunter
 			ach(9727),		-- Expert Treasure Hunter

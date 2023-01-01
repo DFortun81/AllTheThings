@@ -393,7 +393,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(62703),	-- Art Template Leather Shoulder - Leather_Cataclysm_B_01 - Brown
 					i(62704),	-- Art Template Leather Wrist - Leather_Cataclysm_B_01 - Brown
 				}),
-				n(P4xx ,{
+				n(P4xx, {
 					i(59790),	-- Gnash-Crusher Helm
 				})
 			}),

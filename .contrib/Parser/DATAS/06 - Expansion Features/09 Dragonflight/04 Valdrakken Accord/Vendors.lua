@@ -115,7 +115,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 250 },
 							{ "i", SEREVITE_ORE, 10 },
-							{ "i", ETERNITY_AMBER , 1 },
+							{ "i", ETERNITY_AMBER, 1 },
 						},
 					}),
 					i(199671, {	-- Cobalt Drakonid Shoulderplates

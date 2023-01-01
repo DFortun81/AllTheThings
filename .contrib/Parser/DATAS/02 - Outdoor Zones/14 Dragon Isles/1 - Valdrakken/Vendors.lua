@@ -371,7 +371,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 											["cost"] = { { "c", CONQUEST, 525 } },
 										}),
 									}),
-									cl(MONK ,{
+									cl(MONK, {
 										i(201896, {	-- Crimson Gladiator's Cloak
 											["cost"] = { { "c", CONQUEST, 525 } },
 										}),

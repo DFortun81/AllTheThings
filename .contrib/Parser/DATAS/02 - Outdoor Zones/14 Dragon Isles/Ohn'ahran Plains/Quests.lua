@@ -161,7 +161,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						66021,	-- Unwelcome Outsider
 					},
 					["provider"] = { "n", 192724 },	-- Aru
-					["coord"] = { 61.3 ,39.5, OHNAHRAN_PLAINS },	-- Follows you coords is middle.
+					["coord"] = { 61.3, 39.5, OHNAHRAN_PLAINS },	-- Follows you coords is middle.
 					["g"] = {
 						i(197906),	-- Teerai Locket
 						i(197671),	-- Shikaar Chain
