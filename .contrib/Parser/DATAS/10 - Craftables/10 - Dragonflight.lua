@@ -2617,6 +2617,7 @@ root("HiddenQuestTriggers", {
 			q(74140),	-- Skinning Norbett (Grand Hunt)
 			q(74196),	-- Skinning Rokmur
 			q(74142),	-- Skinning Sarana (Grand Hunt)
+			q(74213),	-- Skinning Swog'ranka
 			q(74159),	-- Skinning Tevgai (Grand Hunt)
 			q(74198),	-- Skinning The Weeping Vilomah
 			q(74143),	-- Skinning Uranto the Swift (Grand Hunt)
