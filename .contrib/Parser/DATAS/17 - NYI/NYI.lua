@@ -793,11 +793,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199850),	-- Imbu Knot
 			i(199851),	-- Double Imbu Knot
 			i(200077),	-- Wooden Pole
-			i(200080),	-- Draconium Nugget
 			i(200082),	-- Battered Imbu-made Net
-			i(200083),	-- Irontree Branch
 			i(200084),	-- Salinated Serevite
-			i(200086),	-- Khaz'gorite-infused Resin
 		}),
 		------------- PROBABLY NYI ---------------------
 

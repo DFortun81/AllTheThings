@@ -223,10 +223,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			n(REWARDS, {
+				i(200080, {	-- Draconium Nugget
+					["description"] = "Best obtained from Prismatic Leaper pools.",
+				}),
+				i(200081, {	-- Hardened Seavine
+					["description"] = "Best obtained from Prismatic Leaper pools.",
+				}),
+				i(200083, {	-- Irontree Branch
+					["description"] = "Best obtained from Prismatic Leaper pools.",
+				}),
+				i(200086),	-- Khaz'gorite Infused Resin
 				i(200085, {	-- Khaz'gorite Wire
 					["description"] = "Obtained from Full Tuskarr Fishing Nets.",
 				}),
-				i(200081),	-- Hardened Seavine
 				o(381514, {	-- Sea-Polished Basalt
 					-- i didn't save the coords, and wowhead doesn't know about it. probably need some fine-tuning and additional spawn locations, then remove description
 					["description"] = "Near landing points for Alliance/Horde in The Waking Shores. Rough coordinates.",
