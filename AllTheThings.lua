@@ -20942,54 +20942,17 @@ customWindowUpdates["RWP"] = function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
-			self.dirty = true;
-			local actions = {
-				['text'] = L["FUTURE_UNOBTAINABLE"],
-				['icon'] = "Interface\\Icons\\Ability_Rogue_RolltheBones.blp",
+			self:SetData({
+				["text"] = L["FUTURE_UNOBTAINABLE"],
+				["icon"] = "Interface\\Icons\\Ability_Rogue_RolltheBones.blp",
 				["description"] = L["FUTURE_UNOBTAINABLE_TOOLTIP"],
-				['visible'] = true,
-				['expanded'] = true,
-				['back'] = 1,
-				["indent"] = 0,
-				['OnUpdate'] = function(data)
-					if not self.dirty then return nil; end
-					self.dirty = nil;
-
-					local g = {};
-					if not data.results then
-						data.results = app:BuildSearchResponse(app:GetWindow("Prime").data.g, "rwp");
-					end
-					if #data.results > 0 then
-						for i,result in ipairs(data.results) do
-							table.insert(g, result);
-						end
-					end
-					data.g = g;
-					if #g > 0 then
-						for i,entry in ipairs(g) do
-							entry.indent = nil;
-						end
-						data.progress = 0;
-						data.total = 0;
-						data.indent = 0;
-						data.visible = true;
-						BuildGroups(data, data.g);
-						app.UpdateGroups(data, data.g);
-						if not data.expanded then
-							data.expanded = true;
-							ExpandGroupsRecursively(data, true);
-						end
-					end
-					BuildGroups(self.data, self.data.g);
-				end,
-				['options'] = { },
-				['g'] = { },
-			};
-			self.data = actions;
+				["visible"] = true,
+				["back"] = 1,
+				["g"] = app:BuildSearchResponse(app:GetDataCache().g, "rwp"),
+			});
+			self:BuildData();
+			self.ExpandInfo = { Expand = true, Manual = true };
 		end
-
-		-- Update the window and all of its row data
-		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
 		self:BaseUpdate(true);
 	end
 end;
