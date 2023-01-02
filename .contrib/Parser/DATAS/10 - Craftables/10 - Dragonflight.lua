@@ -2608,6 +2608,7 @@ root("HiddenQuestTriggers", {
 			q(74147),	-- Skinning Kholdeg (Grand Hunt)
 			q(74145),	-- Skinning Khomuur (Grand Hunt)
 			q(74182),	-- Skinning Makhra the Ashtouched
+			q(74171),	-- Skinning Malsegan
 			q(74161),	-- Skinning Melkhop (Grand Hunt)
 			q(74163),	-- Skinning Molkeej (Grand Hunt)
 			q(74157),	-- Skinning Moskhoi (Grand Hunt)

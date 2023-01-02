@@ -95,7 +95,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193212, {	-- Malsegan
 				["coord"] = { 72.2, 44.8, OHNAHRAN_PLAINS },
-				-- ["questID"] = 69871,
+				["questID"] = 74011,
 				["g"] = {
 					i(200197),	-- Armoredon Herding Crook
 				},
