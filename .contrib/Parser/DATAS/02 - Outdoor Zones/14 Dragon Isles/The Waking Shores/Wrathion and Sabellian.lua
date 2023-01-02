@@ -887,7 +887,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		n(-1102, {	-- Wrathion & Sabellian
 			q(64277),	-- Triggered when choosing anyone in Allegiance To One (66419) -- triggered for both in 2 weeks
 			q(66808),	-- Triggered when choosing Seballian in Allegiance To One (66419) -- triggered for Seballian only
-			qNYI(66802),	-- Triggered when choosing anyone? in Allegiance To One (66419) -- needs confirmation
+			q(66802),	-- Triggered when choosing Wrathion in Allegiance To One (66419) -- triggered for Wrathion only
 		}),
 	}),
 })));

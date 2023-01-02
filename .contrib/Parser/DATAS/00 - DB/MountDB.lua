@@ -1504,7 +1504,7 @@ i(201426, 376910);	-- Brown War Ottuk
 i(194521, 368901);	-- Cliffside Wylderdrake
 i(202086, 377071);	-- Crimson Gladiator's Drake
 i(201702, 394216);	-- Crimson Vorquin
-i(198821, 359408);	-- Divine Kiss of Ohn'ahra
+i(198821, 395644);	-- Divine Kiss of Ohn'ahra
 i(0, 315132);		-- Gargantuan Grrloc
 i(198808, 384963);	-- Guardian Vorquin
 i(194705, 360954);	-- Highland Drake
