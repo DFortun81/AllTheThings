@@ -2595,6 +2595,7 @@ root("HiddenQuestTriggers", {
 			q(74174),	-- Skinning Biryuk
 			q(74122),	-- Skinning Blisterhide
 			q(74141),	-- Skinning Blitztusk (Grand Hunt)
+			q(74124),	-- Skinning Bouldron
 			q(74206),	-- Skinning Corrupted Proto-Dragon
 			q(74126),	-- Skinning Crystalus (Primal Storm)
 			q(74153),	-- Skinning Degmakh (Grand Hunt)

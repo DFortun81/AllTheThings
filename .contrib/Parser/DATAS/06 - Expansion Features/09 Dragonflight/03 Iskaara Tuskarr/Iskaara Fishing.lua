@@ -224,17 +224,48 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			n(REWARDS, {
 				i(200080, {	-- Draconium Nugget
-					["description"] = "Best obtained from Prismatic Leaper pools.",
+					["description"] = "Obtained from Rare fishing pools.",
+					["providers"] = {
+						{ "o", 377938 },	-- Prismatic Leaper School
+						{ "o", 382180 },	-- Overheated Magma Thresher Pool
+						{ "n", 197596 },	-- Deep Ice Fishing Hole
+					},
 				}),
 				i(200081, {	-- Hardened Seavine
-					["description"] = "Best obtained from Prismatic Leaper pools.",
+					["description"] = "Obtained from Rare fishing pools.",
+					["providers"] = {
+						{ "o", 377938 },	-- Prismatic Leaper School
+						{ "o", 382180 },	-- Overheated Magma Thresher Pool
+						{ "n", 197596 },	-- Deep Ice Fishing Hole
+					},
 				}),
 				i(200083, {	-- Irontree Branch
-					["description"] = "Best obtained from Prismatic Leaper pools.",
+					["description"] = "Obtained from Rare fishing pools.",
+					["providers"] = {
+						{ "o", 377938 },	-- Prismatic Leaper School
+						{ "o", 382180 },	-- Overheated Magma Thresher Pool
+						{ "n", 197596 },	-- Deep Ice Fishing Hole
+					},
 				}),
-				i(200086),	-- Khaz'gorite Infused Resin
+				i(200086, {	-- Khaz'gorite Infused Resin
+					["description"] = "Obtained from Rares summoned by using Ominous Conch at Large Lunker Sightings.",
+					["providers"] = {
+						{ "n", 193706 },	-- Snufflegust
+						{ "n", 197411 },	-- Astray Splasher
+						{ "n", 193634 },	-- Swog'Ranka
+						{ "n", 193708 },	-- Skald the Impaler
+						{ "n", 193710 },	-- Seereel, the Spring
+						{ "n", 193735 },	-- Moth'go Deeploom
+						{ "n", 197371 },	-- Ravenous Tundra Bear
+					},
+				}),
 				i(200085, {	-- Khaz'gorite Wire
 					["description"] = "Obtained from Full Tuskarr Fishing Nets.",
+					["providers"] = {
+						{ "o", 382071 },	-- Full Fishing Net
+						{ "o", 379314 },	-- Full Fishing Net
+						{ "o", 381069 },	-- Full Fishing Net
+					},
 				}),
 				o(381514, {	-- Sea-Polished Basalt
 					-- i didn't save the coords, and wowhead doesn't know about it. probably need some fine-tuning and additional spawn locations, then remove description
