@@ -2379,27 +2379,27 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(66386, {	-- Weekly Tailoring Knowledgepoint #1
+			q(70525, {	-- Weekly Tailoring Knowledgepoint #1
 				["name"] = "Weekly Tailoring Knowledgepoint #1",
-				["provider"] = { "i", 193898 },	-- Umbral Bone Needle
+				["provider"] = { "i", 198978  },	-- Stupidly Effective Stitchery
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(66387, {	-- Weekly Tailoring Knowledgepoint #2
+			q(70524, {	-- Weekly Tailoring Knowledgepoint #2
 				["name"] = "Weekly Tailoring Knowledgepoint #2",
-				["provider"] = { "i", 193899 },	-- Primalweave Spindle
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70524, {	-- Weekly Tailoring Knowledgepoint #3
-				["name"] = "Weekly Tailoring Knowledgepoint #3",
 				["provider"] = { "i", 198977 },	-- Ohn'arhan Weave
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(70525, {	-- Weekly Tailoring Knowledgepoint #4
+			q(66386, {	-- Weekly Tailoring Knowledgepoint #3
+				["name"] = "Weekly Tailoring Knowledgepoint #3",
+				["provider"] = { "i", 193898 },	-- Umbral Bone Needle
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(66387, {	-- Weekly Tailoring Knowledgepoint #4
 				["name"] = "Weekly Tailoring Knowledgepoint #4",
-				["provider"] = { "i", 198978  },	-- Stupidly Effective Stitchery
+				["provider"] = { "i", 193899 },	-- Primalweave Spindle
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),

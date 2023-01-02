@@ -369,15 +369,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["cr"] = 187284,	-- Wrathion
 						["isDaily"] = true,
 					}),
-					-- not sure if HQT these or Hidden Quests, maybe after knowing better what they represent
-					-- 64277 - weekly, accepted Keys of Loyalty after choosing Wrathion
-					-- 66802 - weekly, accepted Keys of Loyalty after choosing Wrathion
 				}),
-				n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
+			}),
+			n(WORLD_QUESTS, {
+				["sourceQuests"] = {
+					71232,	-- Renown of the Dragon Isles
+					72366,	-- HQT unlock on alts
+				},
+				["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 					q(70984, {	-- Surge Breaker
 						["coord"] = { 28.4, 58.4, THE_WAKING_SHORES },
 					}),
-				})),
+				}),
 			}),
 			n(RARES, {
 				n(190986, {	-- Battlehorn Pyrhus

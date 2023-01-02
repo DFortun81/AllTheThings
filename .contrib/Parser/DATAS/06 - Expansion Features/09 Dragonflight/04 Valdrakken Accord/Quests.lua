@@ -637,6 +637,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199767),	-- Red Dragon Banner (TOY!)
 				},
 			}),
+				-- RENOWN 28 --
+			q(70913, {	-- To Bear Our Mantle
+				["minReputation"] = { 2510, 28 },	-- Valdrakken Accord Renown 28
+				["provider"] = { "n", 195770 },	-- Armorsmith Terisk
+				["coord"] = { 36.0, 49.7, VALDRAKKEN },
+				["g"] = {
+					i(199662),	-- Amber Jeweled Shoulderpads
+					i(199661),	-- Azure Jeweled Shoulderpads
+					i(199663),	-- Emerald Jeweled Shoulderpads
+					i(199660),	-- Obsidian Jeweled Shoulderpads
+					i(199664),	-- Ruby Jeweled Shoulderpads
+				},
+			}),
 
 				-- Unknown renown -- I will fix this later as well as all other renown quests -Darkal
 			q(72671, {	-- Renown Supplies
@@ -676,6 +689,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(72696),	-- triggered with 'Flying with Our Colors' (70905)
 		q(72698),	-- triggered with 'Mysteries in Paper and Glass' (70910)
 		q(72701),	-- triggered with 'The Accord's High Standards' (70912)
+		q(72702),	-- triggered with 'To Bear Our Mantle' (70913)
 
 		-- Ensembles
 		q(70755),	-- Ensemble: Crimson Valdrakken Clothing

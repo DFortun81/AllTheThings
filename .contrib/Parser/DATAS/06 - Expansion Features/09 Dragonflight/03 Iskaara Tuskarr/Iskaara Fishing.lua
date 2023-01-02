@@ -218,6 +218,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						-- TODO: these shouldn't need cost if the Tuskaar Fishing profession is scanned by ATT
 						i(194510),	-- Iskaaran Harpoon
 						i(199694),	-- Flying Fish Bone Charm
+						i(199697),	-- Polished Basalt Bracelet
 					}),
 				},
 			}),

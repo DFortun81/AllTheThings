@@ -4,7 +4,10 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
 		n(WORLD_QUESTS, {
-			["sourceQuests"] = { 71232 },	-- on one character only
+			["sourceQuests"] = {
+				71232,	-- Renown of the Dragon Isles
+				72366,	-- HQT unlock on alts
+			},
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 				-- q(QUEST, {	-- NAME
 					-- ["coord"] = { XX, YY, OHNAHRAN_PLAINS }
@@ -84,10 +87,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				pvp(q(72058, {	-- What Hoof We Here: Tarolekk
 					["coord"] = { 34.9, 39.1, OHNAHRAN_PLAINS }
 				})),
-				
-				
+
+
 				--[[
-				
+
 				q(70634, {	-- Lashed Out
 					["coord"] = { 32.1, 52.0, OHNAHRAN_PLAINS }
 				}),

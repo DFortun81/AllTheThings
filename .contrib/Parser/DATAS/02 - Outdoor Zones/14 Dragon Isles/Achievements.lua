@@ -519,7 +519,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 		})),
 		-- TODO: NOT COMPLETED YET!!
-		ach(16446),	-- That's Pretty Neat!
+		ach(16446, {	-- That's Pretty Neat!
+			-- will implement this at some point as it is progressed in game, but if anyone else does part of it beforehand, please
+			-- use this format for each criteria, some may need 'coords' instead
+			-- crit(1,	-- NAME
+				-- ["cr"] = NPCID,
+				-- ["coord"] = { COORD, MAP },
+			-- ),
+		}),
 		ach(16519),	-- Dragon Isles Safari
 	}),
 })));

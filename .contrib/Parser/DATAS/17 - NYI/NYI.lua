@@ -783,7 +783,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199641),	-- Reinforced Irontree Harpoon Handle
 			i(199695),	-- Iskaaran Fishing Net
 			i(199696),	-- Iskaaran Ice Axe
-			i(199697),	-- Polished Basalt Bracelet
 			i(199698),	-- Irontree Harpoon Handle
 			i(199844),	-- Serevite Harpoon Head
 			i(199845),	-- Jagged Serevite Harpoon Head

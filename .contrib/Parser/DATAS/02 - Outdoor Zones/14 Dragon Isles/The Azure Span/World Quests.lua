@@ -4,7 +4,10 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_AZURE_SPAN, {
 		n(WORLD_QUESTS, {
-			["sourceQuests"] = { 71232 },	-- on one character only
+			["sourceQuests"] = {
+				71232,	-- Renown of the Dragon Isles
+				72366,	-- HQT unlock on alts
+			},
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 
 				-- q(QUEST, {	-- NAME
