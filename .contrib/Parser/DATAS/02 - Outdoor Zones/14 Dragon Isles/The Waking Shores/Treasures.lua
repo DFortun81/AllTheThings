@@ -147,7 +147,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			o(382325, {	-- Onyx Gem Cluster
 				["description"] = "Cave Entrance at 29.4, 52.6",
 				["coord"] = { 29.4, 47.0, THE_WAKING_SHORES },
-				-- ["questID"] = 72020,
+				["questID"] = 72020,
 				["cost"] = { { "i", 200738, 1 }, },	-- 1x Onyx Gem Cluster Map
 				["g"] = {
 					crit(8, {	-- Onyx Gem Cluster
