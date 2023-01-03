@@ -40,8 +40,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(72029, {	-- Fishing Frenzy!
 					["coord"] = { 57.3, 66.7, THALDRASZUS }
 				}),
+				q(70602, {	-- History Lesson: War of the Shifting Sands
+					["coord"] = { 58.2, 36.2, THALDRASZUS },
+				}),
 				q(71205, {	-- Hydro Tuskarr
 					["coord"] = { 53.6, 41.5, THALDRASZUS }
+				}),
+				q(71156, {	-- Rebel Concerns
+					["coord"] = { 46.2, 52.2, THALDRASZUS },
 				}),
 				q(70066, {	-- Reclaiming the Hold
 					["coord"] = { 58.8, 57.1, THALDRASZUS }

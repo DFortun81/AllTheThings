@@ -111,12 +111,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					q(70435, {	-- Dragonrider Racing - Garden Gallivant
 						["coord"] = { 39.4, 76.2, THALDRASZUS }
 					}),
-					-- Unconfirmed
-					--[[
-					q(70432, {	-- Dragonrider Racing - Passage Pathway
+					q(70432, {	-- Dragonrider Racing - Tyrhold Trial
 						["coord"] = { 57.2, 66.8, THALDRASZUS }
 					}),
-					--]]
 				}),
 			}),
 		}),
