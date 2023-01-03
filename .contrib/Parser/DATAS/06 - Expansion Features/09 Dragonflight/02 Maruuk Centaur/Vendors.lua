@@ -248,7 +248,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 						-- RENOWN 8 --
-					-- TODO: COSTS!
 					i(199814, {	-- Formula: Enchant Boots - Plainsrunner's Breeze (RECIPE!)
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 50 },
@@ -324,8 +323,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							{ "c", DRAGON_SUPPLIES, 25 },
 						},
 					}),
-					i(197618),	-- Windborne Velocidrake: Long Snout (DM!)
-					i(197623),	-- Windborne Velocidrake: Spiked Tail (DM!)
+					i(197618, {	-- Windborne Velocidrake: Long Snout (DM!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 100 },
+						},
+					}),
+					i(197623, {	-- Windborne Velocidrake: Spiked Tail (DM!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 100 },
+						},
+					}),
 						-- RENOWN 18 --
 					i(198463, {	-- Pattern: Expert Alchemist's Hat (RECIPE!)
 						["cost"] = 2000000,	-- 200g
@@ -407,7 +414,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 62.4, 42.2, OHNAHRAN_PLAINS },
 				["g"] = {
 						-- RENOWN 17 --
-					-- TODO: COSTS!
 					i(200541, {	-- Fur-Lined Safeguard
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 600 },

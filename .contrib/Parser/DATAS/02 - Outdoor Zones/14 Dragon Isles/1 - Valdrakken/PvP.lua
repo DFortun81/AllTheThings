@@ -16,6 +16,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(71026, {	-- Against Overwhelming Odds
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
+					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
+				}),
+				q(71025, {	-- Against Overwhelming Odds
+					["provider"] = { "n", 196191 },	-- Malicia
+					["coord"] = { 43.4, 42.5, VALDRAKKEN },
+					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 				}),
 				q(72169, {	-- Proving in Arenas

@@ -2217,6 +2217,7 @@ root("HiddenQuestTriggers", {
 			q(71983),	-- First Frigid Saxifrage Harvest
 			q(71984),	-- First Titan-Touched Hochenblume Harvest
 			q(71986),	-- First Titan-Touched Bubble Poppy
+			q(71987),	-- First Titan-Touched Saxifrage
 		}),
 		prof(MINING, {
 			q(71951),	-- First Draconium Deposit
