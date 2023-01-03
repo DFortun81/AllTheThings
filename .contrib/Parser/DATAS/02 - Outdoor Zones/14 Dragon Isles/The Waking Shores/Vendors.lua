@@ -79,7 +79,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(201837, {	-- Magmammoth Harness
-						["description"] = "Use it on a Tame Magmammoth.",
+						["description"] = "Use it while riding the Tame Magmammoth @ 33.3, 72.2",
+						["coord"] = { 33.3, 72.2, THE_WAKING_SHORES },
+						["cr"] = 198150,	-- Tame Magmammoth
 						["cost"] = {
 							{ "i", 201839, 1 },	-- 1xNetherforged Lavaproof Boots
 							{ "i", 201840, 1 },	-- 1xSturdy Obsidian Glasses

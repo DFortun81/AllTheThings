@@ -1304,7 +1304,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(70084),	-- Raszageth the Storm-Eater (N)
 		q(70092),	-- Raszageth the Storm-Eater (N)
 		q(72277),	-- Raszageth the Storm-Eater (N)
-		-- q(TODO),	-- Raszageth the Storm-Eater (H)
+		q(70101),	-- Raszageth the Storm-Eater (H)
 		-- q(TODO),	-- Raszageth the Storm-Eater (M)
 	}),
 })));
