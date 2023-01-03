@@ -33,6 +33,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					q(70416, {	-- Dragonrider Racing - Uktulut Coaster
 						["coord"] = { 55.4, 41.2, THE_WAKING_SHORES },
 					}),
+					q(70418, {	-- Dragonrider Racing - Wild Preserve Circuit
+						["coord"] = { 42.6, 94.4, THE_WAKING_SHORES }
+					}),
 					q(70412, {	-- Dragonrider Racing - Wild Preserve Slalom
 						["coord"] = { 47.0, 85.6, THE_WAKING_SHORES }
 					}),
@@ -43,9 +46,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					--[[
 					q(70410, {	-- Dragonrider Racing - Flashfrost Flyover
 						["coord"] = { 62.8, 74.0, THE_WAKING_SHORES }
-					}),
-					q(70418, {	-- Dragonrider Racing - Wild Preserve Circuit
-						["coord"] = { 42.6, 94.4, THE_WAKING_SHORES }
 					}),
 					--]]
 

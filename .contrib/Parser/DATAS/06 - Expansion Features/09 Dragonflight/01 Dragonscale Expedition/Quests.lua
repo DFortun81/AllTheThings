@@ -406,6 +406,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 46.7, 82.9, THE_WAKING_SHORES },
 				["isWeekly"] = true,
 			}),
+			q(70975, {	-- Wanted: Everblazing Fireheart
+				--["provider"] = { "o", },	-- Archivists' Request
+				["coord"] = { 47.8, 83.2, THE_WAKING_SHORES },
+				["isWeekly"] = true,
+			}),
 			q(71005, {	-- Wanted: Fangfall
 				["provider"] = { "o", 381668 },	-- Archivists' Request
 				["coord"] = { 49.0, 82.7, THE_WAKING_SHORES },

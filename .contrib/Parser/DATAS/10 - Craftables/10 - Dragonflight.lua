@@ -2586,6 +2586,7 @@ root("HiddenQuestTriggers", {
 		}),
 		prof(SKINNING, {
 			q(74162),	-- Skinning Angen (Great Hunt)
+			q(74225),	-- Skinning Battlehorn Pyrhus
 			q(74174),	-- Skinning Biryuk
 			q(74122),	-- Skinning Blisterhide
 			q(74141),	-- Skinning Blitztusk (Grand Hunt)

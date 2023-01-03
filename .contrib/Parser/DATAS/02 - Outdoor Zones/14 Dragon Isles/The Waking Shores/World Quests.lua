@@ -52,6 +52,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(69931, {	-- Swoop And Grab
 					["coord"] = { 53.4, 21.0, THE_WAKING_SHORES },
 				}),
+				q(70021, {	-- Tale of Tapionnuq
+					["coord"] = { 15.1, 91.3, THE_WAKING_SHORES },
+				}),
 				petbattle(q(66551, {	-- The Terrible Three
 					["coord"] = { 39.0, 83.5, THE_WAKING_SHORES }
 				})),
@@ -88,9 +91,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				--[[
 				q(67014, {	-- Gorlocs No More-locs
 					["coord"] = { 80, 39.6, THE_WAKING_SHORES },
-				}),
-				q(70021, {	-- Tale of Tapionnuq
-					["coord"] = { 15.1, 91.3, THE_WAKING_SHORES },
 				}),
 				--]]
 			}),
