@@ -274,6 +274,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
 				}),
+				q(72169, {	-- Proving in Arenas
+					["provider"] = { "n", 196191 },	-- Malicia
+					["coord"] = { 43.4, 42.5, VALDRAKKEN },
+					["isWeekly"] = true,
+				}),
 				q(72166, {	-- Proving in Battle
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
@@ -294,7 +299,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
 				}),
-				q(72648, {	-- Sparks of Life: The Azure Span
+				q(72647, {	-- Sparks of Life: Ohn'ahran Plains
 					["provider"] = { "n", 199393 },	-- Keenu
 					["coord"] = { 42.2, 40.7, VALDRAKKEN },
 					["isWeekly"] = true,
@@ -304,9 +309,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 42.2, 40.7, VALDRAKKEN },
 					["isWeekly"] = true,
 				}),
-				q(72647, {	-- Sparks of Life: Ohn'ahran Plains
+				q(72648, {	-- Sparks of Life: The Azure Span
 					["provider"] = { "n", 199393 },	-- Keenu
 					["coord"] = { 42.2, 40.7, VALDRAKKEN },
+					["isWeekly"] = true,
+				}),
+				q(72646, {	-- Sparks of Life: The Waking Shores
+					["provider"] = { "n", 199376 },	-- Ailith Stonebreeze
+					["coord"] = { 41.9, 40.6, VALDRAKKEN },
 					["isWeekly"] = true,
 				}),
 			})),
