@@ -3,7 +3,7 @@
 --------------------------------------------------
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
-	achcat(ACHIEVEMENT_CATEGORY_DRAGON_ISLES_HIDDEN, {
-		-- Leave empty for now, Parser fills this
-	}),
+	-- achcat(ACHIEVEMENT_CATEGORY_DRAGON_ISLES_HIDDEN, {
+	-- 	-- Leave empty for now, Parser fills this
+	-- }),
 }));
