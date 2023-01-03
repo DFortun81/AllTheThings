@@ -213,6 +213,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			q(72783, {	-- Crafting Orders
+				["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
+				["coord"] = { 84.9, 54.4, VALDRAKKEN },
+			}),
 
 			-- In Tyr's Footsteps chapter 1
 			q(72773, {	-- Learning Ingenuity
