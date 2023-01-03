@@ -127,6 +127,103 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 				ach(14614),		-- Castle Vain
+				-- Fated
+				ach(15663, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Fate of Nathria
+					crit(1, { -- Shriekwing
+						["_encounter"] = { 2393, LFR_R },
+					}),
+					crit(2, { -- Huntsman Altimor
+						["_encounter"] = { 2429, LFR_R },
+					}),
+					crit(3, { -- Sun King's Salvation
+						["_encounter"] = { 2422, LFR_R },
+					}),
+					crit(4, { -- Artificer Xy'mox
+						["_encounter"] = { 2418, LFR_R },
+					}),
+					crit(5, { -- Hungering Destroyer
+						["_encounter"] = { 2428, LFR_R },
+					}),
+					crit(6, { -- Lady Inerva Darkvein
+						["_encounter"] = { 2420, LFR_R },
+					}),
+					crit(7, { -- The Council of Blood
+						["_encounter"] = { 2426, LFR_R },
+					}),
+					crit(8, { -- Sludgefist
+						["_encounter"] = { 2394, LFR_R },
+					}),
+					crit(9, { -- Stone Legion Generals
+						["_encounter"] = { 2425, LFR_R },
+					}),
+					crit(10, {-- Sire Denathrius
+						["_encounter"] = { 2424, LFR_R },
+					}),
+				})),
+				ach(15664, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Heroic: Fate of Nathria
+					crit(1, { -- Shriekwing
+						["_encounter"] = { 2393, HEROIC_R },
+					}),
+					crit(2, { -- Huntsman Altimor
+						["_encounter"] = { 2429, HEROIC_R },
+					}),
+					crit(3, { -- Sun King's Salvation
+						["_encounter"] = { 2422, HEROIC_R },
+					}),
+					crit(4, { -- Artificer Xy'mox
+						["_encounter"] = { 2418, HEROIC_R },
+					}),
+					crit(5, { -- Hungering Destroyer
+						["_encounter"] = { 2428, HEROIC_R },
+					}),
+					crit(6, { -- Lady Inerva Darkvein
+						["_encounter"] = { 2420, HEROIC_R },
+					}),
+					crit(7, { -- The Council of Blood
+						["_encounter"] = { 2426, HEROIC_R },
+					}),
+					crit(8, { -- Sludgefist
+						["_encounter"] = { 2394, HEROIC_R },
+					}),
+					crit(9, { -- Stone Legion Generals
+						["_encounter"] = { 2425, HEROIC_R },
+					}),
+					crit(10, {-- Sire Denathrius
+						["_encounter"] = { 2424, HEROIC_R },
+					}),
+				})),
+				ach(15665, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Mythic: Fate of Nathria
+					crit(1, { -- Shriekwing
+						["_encounter"] = { 2393, MYTHIC_R },
+					}),
+					crit(2, { -- Huntsman Altimor
+						["_encounter"] = { 2429, MYTHIC_R },
+					}),
+					crit(3, { -- Sun King's Salvation
+						["_encounter"] = { 2422, MYTHIC_R },
+					}),
+					crit(4, { -- Artificer Xy'mox
+						["_encounter"] = { 2418, MYTHIC_R },
+					}),
+					crit(5, { -- Hungering Destroyer
+						["_encounter"] = { 2428, MYTHIC_R },
+					}),
+					crit(6, { -- Lady Inerva Darkvein
+						["_encounter"] = { 2420, MYTHIC_R },
+					}),
+					crit(7, { -- The Council of Blood
+						["_encounter"] = { 2426, MYTHIC_R },
+					}),
+					crit(8, { -- Sludgefist
+						["_encounter"] = { 2394, MYTHIC_R },
+					}),
+					crit(9, { -- Stone Legion Generals
+						["_encounter"] = { 2425, MYTHIC_R },
+					}),
+					crit(10, {-- Sire Denathrius
+						["_encounter"] = { 2424, MYTHIC_R },
+					}),
+				})),
 				-- Guild Achievements
 				ach(14459),		-- Castle Nathria Guild Run
 				ach(14720),		-- Heroic: Castle Nathria Guild Run

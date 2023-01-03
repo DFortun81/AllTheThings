@@ -164,6 +164,112 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					},
 				}),
 				ach(15409),	-- First Wonders
+				-- Fated
+				ach(15681, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Fate of the Sepulcher
+					crit(1, { -- Vigilant Guardian
+						["_encounter"] = { 2458, LFR_R },
+					}),
+					crit(2, { -- Skolex, the Insatiable Ravener
+						["_encounter"] = { 2465, LFR_R },
+					}),
+					crit(3, { -- Artificer Xy'mox
+						["_encounter"] = { 2470, LFR_R },
+					}),
+					crit(4, { -- Dausegne, the Fallen Oracle
+						["_encounter"] = { 2459, LFR_R },
+					}),
+					crit(5, { -- Prototype Pantheon
+						["_encounter"] = { 2460, LFR_R },
+					}),
+					crit(6, { -- Lihuvim, Principal Architect
+						["_encounter"] = { 2461, LFR_R },
+					}),
+					crit(7, { -- Halondrus the Reclaimer
+						["_encounter"] = { 2463, LFR_R },
+					}),
+					crit(8, { -- Anduin Wrynn
+						["_encounter"] = { 2469, LFR_R },
+					}),
+					crit(9, { -- Lords of Dread
+						["_encounter"] = { 2457, LFR_R },
+					}),
+					crit(10, {-- Rygelon
+						["_encounter"] = { 2467, LFR_R },
+					}),
+					crit(11, {-- The Jailer
+						["_encounter"] = { 2464, LFR_R },
+					}),
+				})),
+				ach(15682, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Heroic: Fate of the Sepulcher
+					crit(1, { -- Vigilant Guardian
+						["_encounter"] = { 2458, HEROIC_R },
+					}),
+					crit(2, { -- Skolex, the Insatiable Ravener
+						["_encounter"] = { 2465, HEROIC_R },
+					}),
+					crit(3, { -- Artificer Xy'mox
+						["_encounter"] = { 2470, HEROIC_R },
+					}),
+					crit(4, { -- Dausegne, the Fallen Oracle
+						["_encounter"] = { 2459, HEROIC_R },
+					}),
+					crit(5, { -- Prototype Pantheon
+						["_encounter"] = { 2460, HEROIC_R },
+					}),
+					crit(6, { -- Lihuvim, Principal Architect
+						["_encounter"] = { 2461, HEROIC_R },
+					}),
+					crit(7, { -- Halondrus the Reclaimer
+						["_encounter"] = { 2463, HEROIC_R },
+					}),
+					crit(8, { -- Anduin Wrynn
+						["_encounter"] = { 2469, HEROIC_R },
+					}),
+					crit(9, { -- Lords of Dread
+						["_encounter"] = { 2457, HEROIC_R },
+					}),
+					crit(10, {-- Rygelon
+						["_encounter"] = { 2467, HEROIC_R },
+					}),
+					crit(11, {-- The Jailer
+						["_encounter"] = { 2464, HEROIC_R },
+					}),
+				})),
+				ach(15683, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Mythic: Fate of the Sepulcher
+					crit(1, { -- Vigilant Guardian
+						["_encounter"] = { 2458, MYTHIC_R },
+					}),
+					crit(2, { -- Skolex, the Insatiable Ravener
+						["_encounter"] = { 2465, MYTHIC_R },
+					}),
+					crit(3, { -- Artificer Xy'mox
+						["_encounter"] = { 2470, MYTHIC_R },
+					}),
+					crit(4, { -- Dausegne, the Fallen Oracle
+						["_encounter"] = { 2459, MYTHIC_R },
+					}),
+					crit(5, { -- Prototype Pantheon
+						["_encounter"] = { 2460, MYTHIC_R },
+					}),
+					crit(6, { -- Lihuvim, Principal Architect
+						["_encounter"] = { 2461, MYTHIC_R },
+					}),
+					crit(7, { -- Halondrus the Reclaimer
+						["_encounter"] = { 2463, MYTHIC_R },
+					}),
+					crit(8, { -- Anduin Wrynn
+						["_encounter"] = { 2469, MYTHIC_R },
+					}),
+					crit(9, { -- Lords of Dread
+						["_encounter"] = { 2457, MYTHIC_R },
+					}),
+					crit(10, {-- Rygelon
+						["_encounter"] = { 2467, MYTHIC_R },
+					}),
+					crit(11, {-- The Jailer
+						["_encounter"] = { 2464, MYTHIC_R },
+					}),
+				})),
 				-- Guild Achievements
 				ach(15472),		-- Sepulcher of the First Ones Guild Run
 				ach(15473),		-- Heroic Sepulcher of the First Ones Guild Run

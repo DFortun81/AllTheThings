@@ -595,47 +595,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				}),
 			},
 		})),
-		ach(15491, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Glory of the Sepulcher Raider
-			i(187675),	-- Shimmering Aurelid (MOUNT!)
-			ach(15381),	-- Power ON
-			ach(15401),	-- Wisdom Comes From the Desert
-			ach(15398),	-- Xy Never, Ever Marks the Spot.
-			ach(15397),	-- Four Ring Circus
-			ach(15400),	-- Where the Wild Beasts Are
-			ach(15419),	-- The Protoform Matrix
-			ach(15386),	-- Shimmering Secrets
-			ach(15399),	-- Coming to Terms
-			ach(15315),	-- Amidst Ourselves
-			ach(15396),	-- We Are All Made of Stars
-			ach(15494),	-- Damnation Aviation
-		})),
-		ach(14322, {	-- Glory of the Shadowlands Hero
-			i(184183),		-- Voracious Gorger (MOUNT!)
-			crit(1),		-- Bountiful Harvest
-			crit(2),		-- Surgeon's Supplies
-			crit(3),		-- Ready for Raiding VII
-			crit(4),		-- Hooked On Hydroponics
-			crit(5),		-- Someone Could Trip on These!
-			crit(6),		-- Hunger for Knowledge
-			crit(7),		-- Full Gores Meal
-			crit(8),		-- Going Viral
-			crit(9),		-- Riding with my Slimes
-			crit(10),		-- Picking Up the Pieces
-			crit(11),		-- Breaking Bad
-			crit(12),		-- Nobody Puts Denathrius in a Corner
-			crit(13),		-- Couples Therapy
-			crit(14),		-- Highly Communicable
-			crit(15),		-- Thinking with...
-			crit(16),		-- Goliath Offline
-			crit(17),		-- ExSPEARiential
-			crit(18),		-- I Can See My House From Here
-			crit(19),		-- Three Choose One
-			crit(20),		-- Fresh Meat!
-			crit(21),		-- Royal Rumble
-			crit(22),		-- Residue Evil
-			crit(23),		-- I Only Have Eyes For You
-			crit(24),		-- Kaal-ed Shot
-		}),
 		ach(8124, {		-- Glory of the Thundering Raider
 			i(93662),		-- Armored Skyscreamer (MOUNT!)
 			crit(1),		-- Heroic: Jin'rokh the Breaker

@@ -157,7 +157,104 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 					["classes"] = { HUNTER },
 				}),
 				ach(15110),		-- Dominating the Catwalk
-				-- Guild Achievements
+				-- Fated
+				ach(15667, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Fate of Domination
+					crit(1, { -- The Tarragrue
+						["_encounter"] = { 2435, LFR_R },
+					}),
+					crit(2, { -- The Eye of the Jailer
+						["_encounter"] = { 2442, LFR_R },
+					}),
+					crit(3, { -- The Nine
+						["_encounter"] = { 2439, LFR_R },
+					}),
+					crit(4, { -- Remnant of Ner'zhul
+						["_encounter"] = { 2444, LFR_R },
+					}),
+					crit(5, { -- Soulrender Dormazain
+						["_encounter"] = { 2445, LFR_R },
+					}),
+					crit(6, { -- Painsmith Raznal
+						["_encounter"] = { 2443, LFR_R },
+					}),
+					crit(7, { -- Guardian of the First Ones
+						["_encounter"] = { 2446, LFR_R },
+					}),
+					crit(8, { -- Fatescribe Roh-Kalo
+						["_encounter"] = { 2447, LFR_R },
+					}),
+					crit(9, { -- Kel'Thuzad
+						["_encounter"] = { 2440, LFR_R },
+					}),
+					crit(10, {-- Sylvanas Windrunner
+						["_encounter"] = { 2441, LFR_R },
+					}),
+				})),
+				ach(15668, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Heroic: Fate of Domination
+					crit(1, { -- The Tarragrue
+						["_encounter"] = { 2435, HEROIC_R },
+					}),
+					crit(2, { -- The Eye of the Jailer
+						["_encounter"] = { 2442, HEROIC_R },
+					}),
+					crit(3, { -- The Nine
+						["_encounter"] = { 2439, HEROIC_R },
+					}),
+					crit(4, { -- Remnant of Ner'zhul
+						["_encounter"] = { 2444, HEROIC_R },
+					}),
+					crit(5, { -- Soulrender Dormazain
+						["_encounter"] = { 2445, HEROIC_R },
+					}),
+					crit(6, { -- Painsmith Raznal
+						["_encounter"] = { 2443, HEROIC_R },
+					}),
+					crit(7, { -- Guardian of the First Ones
+						["_encounter"] = { 2446, HEROIC_R },
+					}),
+					crit(8, { -- Fatescribe Roh-Kalo
+						["_encounter"] = { 2447, HEROIC_R },
+					}),
+					crit(9, { -- Kel'Thuzad
+						["_encounter"] = { 2440, HEROIC_R },
+					}),
+					crit(10, {-- Sylvanas Windrunner
+						["_encounter"] = { 2441, HEROIC_R },
+					}),
+				})),
+				ach(15669, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Mythic: Fate of Domination
+					crit(1, { -- The Tarragrue
+						["_encounter"] = { 2435, MYTHIC_R },
+					}),
+					crit(2, { -- The Eye of the Jailer
+						["_encounter"] = { 2442, MYTHIC_R },
+					}),
+					crit(3, { -- The Nine
+						["_encounter"] = { 2439, MYTHIC_R },
+					}),
+					crit(4, { -- Remnant of Ner'zhul
+						["_encounter"] = { 2444, MYTHIC_R },
+					}),
+					crit(5, { -- Soulrender Dormazain
+						["_encounter"] = { 2445, MYTHIC_R },
+					}),
+					crit(6, { -- Painsmith Raznal
+						["_encounter"] = { 2443, MYTHIC_R },
+					}),
+					crit(7, { -- Guardian of the First Ones
+						["_encounter"] = { 2446, MYTHIC_R },
+					}),
+					crit(8, { -- Fatescribe Roh-Kalo
+						["_encounter"] = { 2447, MYTHIC_R },
+					}),
+					crit(9, { -- Kel'Thuzad
+						["_encounter"] = { 2440, MYTHIC_R },
+					}),
+					crit(10, {-- Sylvanas Windrunner
+						["_encounter"] = { 2441, MYTHIC_R },
+					}),
+				})),
+					-- Guild Achievements
 				ach(15182),		-- Sanctum of Domination Guild Run
 				ach(15183),		-- Heroic: Sanctum of Domination Guild Run
 				ach(15184),		-- Mythic: Sylvanas Windrunner Guild Run
