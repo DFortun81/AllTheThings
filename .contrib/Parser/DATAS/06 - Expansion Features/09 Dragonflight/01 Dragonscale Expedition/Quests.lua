@@ -394,6 +394,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(200738),	-- Onyx Gem Cluster Map
 				},
 			}),
+			q(70810, {	-- Broader Mysteries of the Dragon Isles Drakes
+				["minReputation"] = { 2507, 22 },	-- Dragonscale Expedition Renown 22
+				["provider"] = { "n", 188265 },	-- Rae'anna
+				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
+				["g"] = {
+					i(197144),	-- Highland Drake: Red Scales (DM!)
+					i(197010),	-- Cliffside Wylderdrake: Red Scales (DM!)
+					i(197614),	-- Windborne Velocidrake: Red Scales (DM!)
+				},
+			}),
 
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
@@ -475,6 +485,7 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(72044),	-- Triggered with 'One of Us Now' (70832)
 		q(72045),	-- Triggered with 'Demolitions Access' (70815)
 		q(72046),	-- Triggered with 'Rumors of the Jeweled Whelplings' (70833)
+		q(72047),	-- Triggered with 'Broader Mysteries of the Dragon Isles Drakes' (70810)
 
 		-- Ensembles
 		q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor
