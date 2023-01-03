@@ -778,7 +778,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(202094),	-- Maruuk Centaur Insignia
 			i(202171),	-- Dragon Purse
 			i(202079),	-- Cache of Vault Treasures
-			i(202080),	-- Cache of Vault Treasures
 			-- Fishing
 			i(199641),	-- Reinforced Irontree Harpoon Handle
 			i(199695),	-- Iskaaran Fishing Net
