@@ -480,6 +480,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201718),	-- Notebook of Crafting Knowledge
 				},
 			}),
+				-- RENOWN 25 --
+			q(70972, {	-- Our Loyal, Lanky Steeds
+				["minReputation"] = { 2511, 25 },	-- Iskaara Tuskarr Renown 25
+				["provider"] = { "n", 186462 },	-- Tatto
+				["coord"] = { 13.8, 49.7, THE_AZURE_SPAN },
+				["g"] = {
+					i(198872),	-- Brown Scouting Ottuk (MOUNT!)
+					i(200118),	-- Yellow Scouting Ottuk (MOUNT!)
+				},
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
@@ -498,5 +508,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72395),	-- Triggered with 'Trading Made Easier' (70966)
 		q(72637),	-- Triggered with 'A Comfy Seat' (70962)
 		q(72638),	-- Triggered with 'Arms for Every Arm'  (70971)
+		q(72639),	-- Triggered with 'Our Loyal, Lanky Steeds' (70972)
 	}),
 }));

@@ -1517,6 +1517,7 @@ i(192777, 350219);	-- Magmashell
 i(198811, 385115);	-- Majestic Armored Vorquin
 i(201719, 394220);	-- Obsidian Vorquin
 i(198654, 376912);	-- Otterworldly Ottuk Carrier
+i(198870, 376873);	-- Otto
 i(192791, 374196);	-- Plainswalker Bearer
 i(192806, 374275);	-- Raging Magmammoth
 i(194034, 368896);	-- Renewed Proto-Drake
@@ -1533,8 +1534,6 @@ i(194549, 368899);	-- Windborne Velocidrake
 i(200118, 376880);	-- Yellow Scouting Ottuk
 i(201425, 376913);	-- Yellow War Ottuk
 i(198825, 385266);	-- Zenet Hatchling
--- NOT SOURCED YET --
-i(198870, 376873);	-- Otto						/	Otto
 -- NYI --
 i(194722, 377849);	-- Carrier Yeti				/	Carrier Yeti
 i(0, 371571);	-- Dragon Isles Drake Model Test

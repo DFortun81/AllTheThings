@@ -625,7 +625,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							{ "i", MASTODON_TUSK, 2 },
 						},
 					}),
-
+						-- RENOWN 30 --
 					i(201426, {	-- Brown War Ottuk (MOUNT!)
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 1000 },
