@@ -1118,6 +1118,15 @@ BFA_TIER = 8;
 SL_TIER = 9;
 DF_TIER = 10;
 
+-- Difficulties
+NORMAL_D = 1;
+HEROIC_D = 2;
+MYTHIC_D = 23;
+LFR_R = 17;
+NORMAL_R = 14;
+HEROIC_R = 15;
+MYTHIC_R = 16;
+
 -- Unobtainable Filters
 NEVER_IMPLEMENTED = 1;
 REMOVED_FROM_GAME = 2;
@@ -1216,7 +1225,7 @@ ADDED_SL_PRE = "added 9.0.1";							-- Shadowlands Pre-Patch on October 13th, 20
 REMOVED_SL_PRE = "removed 9.0.1";						-- Shadowlands Pre-Patch on October 13th, 2020
 ADDED_SL_REL = "added 9.0.2";							-- Shadowlands Launch on November 23rd, 2020
 ADDED_SL_0_5 = "added 9.0.5";							-- Shadowlands 9.0.5 Start on March 9th, 2021
-ADDED_SL_S2 = "added 9.1.0";							-- Shadowlands Season 2 Start on June 29th, 2021
+ADDED_SL_S2 = "added 9.1.0.39185";							-- Shadowlands Season 2 Start on June 29th, 2021
 REMOVED_SL_S2 = "removed 9.1.0";						-- Shadowlands Season 2 Start on June 29th, 2021
 ADDED_SL_1_5 = "added 9.1.5";							-- Shadowlands 9.1.5 Start on November 2nd, 2021
 ADDED_SL_S3 = "added 9.2.0";							-- Shadowlands Season 3 Start on February 22nd, 2022

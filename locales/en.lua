@@ -1385,7 +1385,6 @@ app.L = {
 		[-986] = 2178500,																	-- Mort'regar
 		[-987] = 2178509,																	-- The Upper Reaches
 		-- 9.2
-		[-988] = select(10, GetAchievementInfo(15402)),										-- Cypher of the First Ones
 		[-999] = "Interface\\Icons\\inv_misc_questionmark",									-- Sourceless
 		--
 	-- Sets
@@ -1949,7 +1948,6 @@ app.L = {
 		[-986] = select(2, GetAchievementInfo(14488)),							-- Mort'regar
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
 		-- 9.2
-		[-988] = select(2, GetAchievementInfo(15402)),							-- Cypher of the First Ones
 	[-999] = MINIMAP_TRACKING_HIDDEN_QUESTS,								-- Hidden Quests, note that it's different from HIDDEN_QUEST_TRIGGERS
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets

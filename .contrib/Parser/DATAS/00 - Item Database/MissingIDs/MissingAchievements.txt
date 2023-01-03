@@ -857,8 +857,6 @@ ach(14382),	-- Mythic: Mists of Tirna Scithe Guild Run
 ach(14383),	-- Mythic: Plaguefall Guild Run
 ach(14384),	-- Mythic: Spires of Ascension Guild Run
 ach(14385),	-- Mythic: Theater of Pain Guild Run
-9.0.1.35167
-ach(14459),	-- Castle Nathria Guild Run \\ Mythic: Castle Nathria Guild Run
 9.0.1.35256
 ach(14517),	-- First Trial, First Try
 ach(14518),	-- The Many Trials of Zo'Sorg
@@ -869,10 +867,8 @@ ach(14571),	-- Twisting Corridors: Layer 9 \\ Torghast: Twisting Corridors: Laye
 ach(14583),	-- The Soulforges: Layer 9 \\ Torghast: The Soulforges: Layer 9 \\ Torghast: The Soulforges: Level 9
 ach(14604),	-- Torghast: Tracking - Completed Layer 9
 9.0.1.35522
-ach(14652),	-- Mythic: Sire Denathrius Guild Run
 ach(14657),	-- Stygian Stockpile
 9.0.1.35598
-ach(14720),	-- Heroic: Castle Nathria Guild Run
 ach(14756),	-- Stygian Sample
 ach(14757),	-- Rainy Day Fund \\ Stygian Supply
 9.0.2.35978
@@ -880,16 +876,9 @@ ach(14838),	-- Champion of Connection
 9.1.0.38511
 ach(15074),	-- <Hidden> Razorwing Eggs Returned
 9.1.0.38950
-ach(15182),	-- Sanctum of Domination Guild Run
-ach(15183),	-- Heroic: Sanctum of Domination Guild Run
-ach(15184),	-- Mythic: Sylvanas Windrunner Guild Run
 ach(15185),	-- Mythic: Tazavesh, the Veiled Market Guild Run
 9.1.5.40622
 ach(15326),	-- [DNT] Rating Test Achievement
-9.2.0.41726
-ach(15472),	-- Sepulcher of the First Ones Guild Run
-ach(15473),	-- Heroic Sepulcher of the First Ones Guild Run
-ach(15474),	-- Mythic The Jailer Guild Run
 9.2.0.42174
 ach(15557),	-- Murkastrasza
 10.0.0.45335
@@ -924,7 +913,6 @@ ach(16731),	-- Court is Now in Session
 10.0.2.45969
 ach(16736),	-- Grand Theft Mammoth
 10.0.2.46259
-ach(16764),	-- Crimson Carpet Fashion
 ach(16791),	-- Merchant Artisan
 ach(16794),	-- Dragon Isles Crafting Order Apprentice
 ach(16795),	-- Dragon Isles Crafting Order Journeyman

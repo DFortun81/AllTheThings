@@ -7,7 +7,7 @@ root("PVP", pvp(tier(SL_TIER, {
 	},{
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount",
 		["g"] = {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {
 				ach(14685),		-- Combatant: Shadowlands Season 1
 				ach(14686),		-- Challenger: Shadowlands Season 1
 				ach(14687),		-- Rival: Shadowlands Season 1
@@ -31,6 +31,10 @@ root("PVP", pvp(tier(SL_TIER, {
 				}),
 				ach(14693, {	-- Hero of the Horde: Sinful
 					["races"] = HORDE_ONLY,
+				}),
+				-- Fashion
+				ach(14831, {	-- I Live, I Die, I Queue Again
+					["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2, ADDED_DF_REL }
 				}),
 			})),
 			filter(MOUNTS, {

@@ -13,15 +13,10 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		}),
 		ach(11748),	-- Black is the New Black (Black Temple)
 		ach(11762),	-- Can I Get A Helya (Trial of Valor)
-		ach(14614),	-- Castle Vain (Castle Nathria)
 		ach(11716),	-- Cataclysmic Catwalk (PvP Season 11)
 		ach(12021),	-- Claws Out (PvP Season 23, 24, or 25)
-		ach(15408, {	-- Cosmic Chic
-			["timeline"] = { "added 9.2.0" },
-		}),
 		ach(11723),	-- Cruel Intentions (PvP Season 21 or 22)
 		ach(13385),	-- Daz'aling Attire
-		ach(15110),	-- Dominating the Catwalk (Sanctum of Domination)
 		ach(12993),	-- Don't Warfront Me
 		ach(11742),	-- Dress in Lairs (Blackwing Lair)
 		ach(11718),	-- Dressed to Oppress (PvP Season 13)
@@ -41,14 +36,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 			ach(10689),	-- Fashionista: Weapon & Off-Hand
 			ach(10688),	-- Fashionista: Wrist
 		}),
-		ach(15409, {	-- First Wonders
-			["timeline"] = { "added 9.2.0" },
-		}),
 		ach(11754),	-- Glamour of Twilight (The Bastion of Twilight and Blackwing Descent)
 		ach(11755),	-- Hot Couture (Firelands)
-		ach(14831),	-- I Live, I Die, I Queue Again (Shadowlands PvP Season 1)
 		ach(11719),	-- It's Not Fashion Unless It Hurts (PvP Season 14)
-		ach(15102),	-- It's Off the Chain!
 		ach(11710),	-- Lethal Looks (PvP Season 5)
 		ach(11740),	-- Make it W-orc W-orc (Blackrock Foundry)
 		ach(11747),	-- Merely a Set (Serpentshrine Cavern and The Eye)

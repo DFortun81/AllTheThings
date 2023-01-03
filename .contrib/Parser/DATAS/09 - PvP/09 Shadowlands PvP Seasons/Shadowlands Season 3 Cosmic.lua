@@ -7,7 +7,7 @@ root("PVP", pvp(tier(SL_TIER, {
 	},{
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount_red",
 		["g"] = {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {
 				ach(15347, {	-- Cosmic Combatant [A]
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
@@ -42,6 +42,10 @@ root("PVP", pvp(tier(SL_TIER, {
 				}),
 				ach(15356, {	-- Hero of the Horde: Cosmic
 					["races"] = HORDE_ONLY,
+				}),
+				--Fashion
+				ach(15408, {	-- Cosmic Chic
+					["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4, ADDED_DF_REL },
 				}),
 			})),
 			filter(MOUNTS, {

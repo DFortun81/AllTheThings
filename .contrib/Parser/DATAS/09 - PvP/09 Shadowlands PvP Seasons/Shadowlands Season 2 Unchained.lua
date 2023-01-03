@@ -7,7 +7,7 @@ root("PVP", pvp(tier(SL_TIER, {
 	},{
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount_blue",
 		["g"] = {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 } }, {
 				ach(14968),		-- Combatant I: Shadowlands Season 2
 				ach(15232, {	-- Combatant II: Shadowlands Season 2
 					["timeline"] = { ADDED_SL_1_5, REMOVED_SL_S3 },
@@ -40,6 +40,10 @@ root("PVP", pvp(tier(SL_TIER, {
 				}),
 				ach(14976, {	-- Hero of the Horde: Unchained
 					["races"] = HORDE_ONLY,
+				}),
+				-- Fashion
+				ach(15102, {	-- It's Off the Chain!
+					["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3, ADDED_DF_REL },
 				}),
 			})),
 			filter(MOUNTS, {

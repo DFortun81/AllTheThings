@@ -170,22 +170,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			ach(13430),		-- De Lurker Be'loa
 			ach(13425),		-- We Got Spirit, How About You?
 		}),
-		ach(15130, {	-- Glory of the Dominant Raider
-			i(186653),	-- Hand of Hrestimorak (MOUNT!)
-			ach(14998),		-- Name A Better Duo, I'll Wait
-			ach(15065, {	-- Eye Wish You Were Here
-				crit(1),	-- All players have Photoflash!
-				crit(2),	-- Eye of the Jailer has Photoflash!
-			}),
-			ach(15003),	-- To the Nines
-			ach(15105),	-- Tormentor's Tango
-			ach(15058),	-- I Used to Bullseye Deeprun Rats Back Home
-			ach(15131),	-- Whack-A-Soul
-			ach(15132),	-- Knowledge is Power
-			ach(15040),	-- Flawless Fate
-			ach(15108),	-- Together Forever
-			ach(15133),	-- This World is a Prism
-		}),
 		ach(9396, {		-- Glory of the Draenor Hero
 			i(116670),		-- Frostplains Battleboar (MOUNT!)
 			crit(1),		-- Draenor Dungeon Hero
@@ -421,19 +405,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(15),		-- Burning Bridges
 			crit(16),		-- Infinitesimal
 			crit(17),		-- I've Got My Eyes On You
-		}),
-		ach(14355, {	-- Glory of the Nathria Raider
-			i(182596),	-- Rampart Screecher (MOUNT!)
-			crit(1),		-- Blind as a Bat
-			crit(2),		-- Taking Care of Business
-			crit(3),		-- Burning Bright
-			crit(4),		-- Private Stock
-			crit(5),		-- Feed the Beast
-			crit(6),		-- I Don't Know What I Expected
-			crit(7),		-- Pour Decision Making
-			crit(8),		-- Dirtflap's Revenge
-			crit(9),		-- Feed Me, Seymour!
-			crit(10),		-- Clear Conscience
 		}),
 		ach(14146, {	-- Glory of the Ny'alotha Raider
 			i(174861),	-- Wriggling Parasite (MOUNT!)

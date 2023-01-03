@@ -30,7 +30,6 @@ local function TOKEN_MYTHIC(id, t)
 	end
 	return item;
 end
-
 root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	inst(1200, {	-- Vault of the Incarnates
 		["isRaid"] = true,
@@ -49,11 +48,88 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(17110),	-- The Primal Bulwark
-				ach(17111),	-- Caverns of Infusion
-				ach(17112),	-- Fury of the Storm
-				ach(16343),	-- Vault of the Incarnates
-				ach(16345),	-- Heroic: Vault of the Incarnates
+				ach(17110, {	-- The Primal Bulwark
+					crit(1, { -- Eranog
+						["_encounter"] = { 2480, LFR_R },
+					}),
+					crit(2, { -- The Primal Council
+						["_encounter"] = { 2486, LFR_R },
+					}),
+					crit(3, { -- Dathea, Ascended
+						["_encounter"] = { 2502, LFR_R },
+					}),
+				}),
+				ach(17111, {	-- Caverns of Infusion
+					crit(1, { -- Terros
+						["_encounter"] = { 2500, LFR_R },
+					}),
+					crit(2, { -- Sennarth, the Cold Breath
+						["_encounter"] = { 2482, LFR_R },
+					}),
+					crit(3, { -- Kurog Grimtotem
+						["_encounter"] = { 2491, LFR_R },
+					}),
+				}),
+				ach(17112, {	-- Fury of the Storm
+					crit(1, { -- Broodkeeper Diurna
+						["_encounter"] = { 2493, LFR_R },
+					}),
+					crit(2, { --Raszageth the Storm-Eater
+						["_encounter"] = { 2499, LFR_R },
+					}),
+				}),
+				ach(16343, {	-- Vault of the Incarnates
+					crit(1, { -- Eranog
+						["_encounter"] = { 2480, LFR_R },
+					}),
+					crit(2, { -- The Primal Council
+						["_encounter"] = { 2486, LFR_R },
+					}),
+					crit(3, { -- Dathea, Ascended
+						["_encounter"] = { 2502, LFR_R },
+					}),
+					crit(4, { -- Terros
+						["_encounter"] = { 2500, LFR_R },
+					}),
+					crit(5, { -- Sennarth, the Cold Breath
+						["_encounter"] = { 2482, LFR_R },
+					}),
+					crit(6, { -- Kurog Grimtotem
+						["_encounter"] = { 2491, LFR_R },
+					}),
+					crit(7, { -- Broodkeeper Diurna
+						["_encounter"] = { 2493, LFR_R },
+					}),
+					crit(8, { --Raszageth the Storm-Eater
+						["_encounter"] = { 2499, LFR_R },
+					}),
+				}),
+				ach(16345, {	-- Heroic: Vault of the Incarnates
+					crit(1, { -- Eranog
+						["_encounter"] = { 2480, HEROIC_R },
+					}),
+					crit(2, { -- The Primal Council
+						["_encounter"] = { 2486, HEROIC_R },
+					}),
+					crit(3, { -- Dathea, Ascended
+						["_encounter"] = { 2502, HEROIC_R },
+					}),
+					crit(4, { -- Terros
+						["_encounter"] = { 2500, HEROIC_R },
+					}),
+					crit(5, { -- Sennarth, the Cold Breath
+						["_encounter"] = { 2482, HEROIC_R },
+					}),
+					crit(6, { -- Kurog Grimtotem
+						["_encounter"] = { 2491, HEROIC_R },
+					}),
+					crit(7, { -- Broodkeeper Diurna
+						["_encounter"] = { 2493, HEROIC_R },
+					}),
+					crit(8, { --Raszageth the Storm-Eater
+						["_encounter"] = { 2499, HEROIC_R },
+					}),
+				}),
 				ach(16354, {	-- Mythic: Vault of the Incarnates
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -83,25 +159,40 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(192806),	-- Raging Magmammoth (MOUNT!)
 					},
 				}),
-				ach(16395),	-- Vaulternative Fashion
+				ach(16395),		-- Vaulternative Fashion
 				-- Guild Achievements
-				ach(16356),	-- Vault of the Incarnates Guild Run
-				ach(16357),	-- Heroic: Vault of the Incarnates Guild Run
-				ach(16358),	-- Mythic: Raszageth the Storm-Eater Guild Run
+				ach(16356),		-- Vault of the Incarnates Guild Run
+				ach(16357),		-- Heroic: Vault of the Incarnates Guild Run
+				ach(16358),		-- Mythic: Raszageth the Storm-Eater Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {
-				i(194642),	-- Design: Choker of Shielding (RECIPE!)
-				i(194259),	-- Pattern: Allied Cinch of Time Dilation (RECIPE!)
-				i(194266),	-- Pattern: Bronzed Grip Wrappings (RECIPE!)
-				i(194260),	-- Pattern: Blue Dragon Soles (RECIPE!)
-				i(193873),	-- Pattern: Old Spirit's Wristwraps (RECIPE!)
-				i(193881),	-- Pattern: Scale Rein Grips (RECIPE!)
-				i(193872),	-- Pattern: String of Spiritual Knick-Knacks (RECIPE!)
-				i(193880),	-- Pattern: Wind Spirit's Lasso (RECIPE!)
-				i(194489),	-- Plans: Allied Chestplate of Generosity (RECIPE!)
-				i(194490),	-- Plans: Allied Wristguard of Companionship (RECIPE!)
-				i(191597),	-- Recipe: Potion Absorption Inhibitor (RECIPE!)
-				i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
+				["crs"] = {
+					184972,	-- Eranog
+					190496,	-- Terros
+					187771,	-- The Primal Council — Kadros Icewrath
+					187768,	-- The Primal Council — Dathea Stormlash
+					187767,	-- The Primal Council — Embar Firepath
+					187772,	-- The Primal Council — Opalfang
+					187967,	-- Sennarth, the Cold Breath
+					189813,	-- Dathea, Ascended
+					181378,	-- Kurog Grimtotem
+					190245,	-- Broodkeeper Diurna
+					193909,	-- Raszageth the Storm-Eater
+				},
+				["g"] = {
+					i(194642),	-- Design: Choker of Shielding (RECIPE!)
+					i(194259),	-- Pattern: Allied Cinch of Time Dilation (RECIPE!)
+					i(194266),	-- Pattern: Bronzed Grip Wrappings (RECIPE!)
+					i(194260),	-- Pattern: Blue Dragon Soles (RECIPE!)
+					i(193873),	-- Pattern: Old Spirit's Wristwraps (RECIPE!)
+					i(193881),	-- Pattern: Scale Rein Grips (RECIPE!)
+					i(193872),	-- Pattern: String of Spiritual Knick-Knacks (RECIPE!)
+					i(193880),	-- Pattern: Wind Spirit's Lasso (RECIPE!)
+					i(194489),	-- Plans: Allied Chestplate of Generosity (RECIPE!)
+					i(194490),	-- Plans: Allied Wristguard of Companionship (RECIPE!)
+					i(191597),	-- Recipe: Potion Absorption Inhibitor (RECIPE!)
+					i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
+				},
 			}),
 			n(QUESTS, {
 				q(72261, {	-- More Than a Prison?
@@ -122,7 +213,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				i(201412),	-- Ancient Vault Artifact (Quest)
 				i(201411),	-- Ancient Vault Artifact (Repeatable)
 			}),
-			d(17, {	-- LFR
+			d(LFR_R, {
 				n(ZONE_DROPS, {
 					i(202004),	-- Brawler's Earthen Cuirass [BoE]
 					i(201992),	-- Emissary's Flamewrought Seal [BoE]
@@ -136,11 +227,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				header(HEADERS.Achievement, 17110, {	-- The Primal Bulwark
 					e(2480, {	-- Eranog
-						["crs"] = { 184972 },
+						["crs"] = { 184972 },	-- Eranog
 						["g"] = {
-							crit(1, {	-- Eranog
-								["achievementID"] = 16343,	-- Vault of the Incarnates
-							}),
 							i(195482),	-- Decorated Commander's Cindercloak
 							i(194299),	-- Decoration of Flame
 							i(195476),	-- Eranog's Adorned Sallet
@@ -160,9 +248,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							187772,	-- Opalfang
 						},
 						["g"] = {
-							crit(2, {	-- The Primal Council
-								["achievementID"] = 16343,	-- Vault of the Incarnates
-							}),
 							i(194300),	-- Conjured Chillglobe
 							i(195485),	-- Councilor's Terrormask
 							i(195487),	-- Embar's Ashen Hauberk
@@ -176,11 +261,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					e(2502, {	-- Dathea, Ascended
-						["crs"] = { 189813 },
+						["crs"] = { 189813 },	-- Dathea, Ascended
 						["g"] = {
-							crit(3, {	-- Dathea, Ascended
-								["achievementID"] = 16343,	-- Vault of the Incarnates
-							}),
 							TOKEN_LFR(196587, {	-- Dreadful Garnet Forgestone
 								i(200407),	-- Grasps of the Haunted Frostbrood
 								i(200344),	-- Skybound Avenger's Grips
@@ -217,9 +299,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					e(2500, {	-- Terros
 						["crs"] = { 190496 },	-- Terros
 						["g"] = {
-							crit(4, {	-- Terros
-								["achievementID"] = 16343,	-- Vault of the Incarnates
-							}),
 							i(195504),	-- Awakened Planar Pillar
 							i(195500),	-- Compressed Cultist's Frock
 							i(195503),	-- Enduring Shard of Terros
@@ -232,11 +311,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					e(2482, {	-- Sennarth, the Cold Breath
-						["crs"] = { 187967 },
+						["crs"] = { 187967 },	-- Sennarth, the Cold Breath
 						["g"] = {
-							crit(5, {	-- Sennarth, the Cold Breath
-								["achievementID"] = 16343,	-- Vault of the Incarnates
-							}),
 							TOKEN_LFR(196588, {	-- Dreadful Jade Forgestone
 								i(200409),	-- Greaves of the Haunted Frostbrood
 								i(200346),	-- Skybound Avenger's Legguards
@@ -269,11 +345,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					e(2491, {	-- Kurog Grimtotem
-						["crs"] = { 181378 },
+						["crs"] = { 181378 },	-- Kurog Grimtotem
 						["g"] = {
-							crit(6, {	-- Kurog Grimtotem
-								["achievementID"] = 16343,	-- Vault of the Incarnates
-							}),
 							TOKEN_LFR(196586, {	-- Dreadful Amethyst Forgestone
 								i(200405),	-- Breastplate of the Haunted Frostbrood
 								i(200342),	-- Skybound Avenger's Harness
@@ -310,11 +383,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				header(HEADERS.Achievement, 17112, {	-- Fury of the Storm
 					e(2493, {	-- Broodkeeper Diurna
-						["crs"] = { 190245 },
+						["crs"] = { 190245 },	-- Broodkeeper Diurna
 						["g"] = {
-							crit(7, {	-- Broodkeeper Diurna
-								["achievementID"] = 16343,	-- Vault of the Incarnates
-							}),
 							TOKEN_LFR(196589, {	-- Dreadful Lapis Forgestone
 								i(200410),	-- Jaws of the Haunted Frostbrood
 								i(200347),	-- Skybound Avenger's Ailerons
@@ -349,11 +419,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					e(2499, {	-- Raszageth the Storm-Eater
-						["crs"] = { 189492 },	-- Temp
+						["crs"] = { 193909 },	-- Raszageth the Storm-Eater
 						["g"] = {
-							crit(8, {	-- Raszageth the Storm-Eater
-								["achievementID"] = 16343,	-- Vault of the Incarnates
-							}),
 							TOKEN_LFR(196590, {	-- Dreadful Topaz Forgestone
 								i(200408),	-- Maw of the Haunted Frostbrood
 								i(200345),	-- Skybound Avenger's Visor
@@ -388,7 +455,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				}),
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_R, {
 				n(QUESTS, {
 					q(71018, {	-- Vault of the Incarnates: Break a Few Eggs (N)
 						["provider"] = { "n", 193460 },	-- Kalecgos
@@ -409,7 +476,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
 				e(2480, {	-- Eranog
-					["crs"] = { 184972 },
+					["crs"] = { 184972 },	-- Eranog
 					["g"] = {
 						ach(16335),	-- What Frozen Things Do
 						i(195482),	-- Decorated Commander's Cindercloak
@@ -460,7 +527,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				e(2482, {	-- Sennarth, the Cold Breath
-					["crs"] = { 187967 },
+					["crs"] = { 187967 },	-- Sennarth, the Cold Breath
 					["g"] = {
 						ach(16419),	-- I Was Saving That For Later
 						TOKEN_NORMAL(196588, {	-- Dreadful Jade Forgestone
@@ -495,7 +562,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				e(2502, {	-- Dathea, Ascended
-					["crs"] = { 189813 },
+					["crs"] = { 189813 },	-- Dathea, Ascended
 					["g"] = {
 						ach(16458),	-- Nothing But Air
 						TOKEN_NORMAL(196587, {	-- Dreadful Garnet Forgestone
@@ -530,7 +597,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				e(2491, {	-- Kurog Grimtotem
-					["crs"] = { 181378 },
+					["crs"] = { 181378 },	-- Kurog Grimtotem
 					["g"] = {
 						ach(16450),	-- The Power is MINE!
 						TOKEN_NORMAL(196586, {	-- Dreadful Amethyst Forgestone
@@ -567,7 +634,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				e(2493, {	-- Broodkeeper Diurna
-					["crs"] = { 190245 },
+					["crs"] = { 190245 },	-- Broodkeeper Diurna
 					["g"] = {
 						ach(16442),	-- Incubation Extermination
 						TOKEN_NORMAL(196589, {	-- Dreadful Lapis Forgestone
@@ -604,7 +671,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				e(2499, {	-- Raszageth the Storm-Eater
-					["crs"] = { 189492 },	-- Temp
+					["crs"] = { 193909 },	-- Raszageth the Storm-Eater
 					["g"] = {
 						ach(16451),	-- The Ol Raszle Daszle
 						TOKEN_NORMAL(196590, {	-- Dreadful Topaz Forgestone
@@ -641,12 +708,27 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(15, {	-- Heroic
+			d(HEROIC_R, {
 				n(COMMON_BOSS_DROPS, {
-					i(201740, {	-- Elemental Codex of Ultimate Power
-						r(370543),	-- Elemental Potion of Ultimate Power (RECIPE!)
-						r(370672),	-- Potion Cauldron of Ultimate Power (RECIPE!)
-					}),
+					["crs"] = {
+						184972,	-- Eranog
+						190496,	-- Terros
+						187771,	-- The Primal Council — Kadros Icewrath
+						187768,	-- The Primal Council — Dathea Stormlash
+						187767,	-- The Primal Council — Embar Firepath
+						187772,	-- The Primal Council — Opalfang
+						187967,	-- Sennarth, the Cold Breath
+						189813,	-- Dathea, Ascended
+						181378,	-- Kurog Grimtotem
+						190245,	-- Broodkeeper Diurna
+						193909,	-- Raszageth the Storm-Eater
+					},
+					["g"] = {
+						i(201740, {	-- Elemental Codex of Ultimate Power
+							r(370543),	-- Elemental Potion of Ultimate Power (RECIPE!)
+							r(370672),	-- Potion Cauldron of Ultimate Power (RECIPE!)
+						}),
+					},
 				}),
 				n(QUESTS, {
 					q(71019, {	-- Vault of the Incarnates: Break a Few Eggs (H)
@@ -668,11 +750,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
 				e(2480, {	-- Eranog
-					["crs"] = { 184972 },
+					["crs"] = { 184972 },	-- Eranog
 					["g"] = {
-						crit(1, {	-- Eranog
-							["achievementID"] = 16345,	-- Heroic: Vault of the Incarnates
-						}),
 						i(195482),	-- Decorated Commander's Cindercloak
 						i(194299),	-- Decoration of Flame
 						i(195476),	-- Eranog's Adorned Sallet
@@ -687,9 +766,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				e(2500, {	-- Terros
 					["crs"] = { 190496 },	-- Terros
 					["g"] = {
-						crit(4, {	-- Terros
-							["achievementID"] = 16345,	-- Heroic: Vault of the Incarnates
-						}),
 						i(195504),	-- Awakened Planar Pillar
 						i(195500),	-- Compressed Cultist's Frock
 						i(195503),	-- Enduring Shard of Terros
@@ -709,9 +785,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						187772,	-- Opalfang
 					},
 					["g"] = {
-						crit(2, {	-- The Primal Council
-							["achievementID"] = 16345,	-- Heroic: Vault of the Incarnates
-						}),
 						i(194300),	-- Conjured Chillglobe
 						i(195485),	-- Councilor's Terrormask
 						i(195487),	-- Embar's Ashen Hauberk
@@ -725,11 +798,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				e(2482, {	-- Sennarth, the Cold Breath
-					["crs"] = { 187967 },
+					["crs"] = { 187967 },	-- Sennarth, the Cold Breath
 					["g"] = {
-						crit(5, {	-- Sennarth, the Cold Breath
-							["achievementID"] = 16345,	-- Heroic: Vault of the Incarnates
-						}),
 						TOKEN_HEROIC(196588, {	-- Dreadful Jade Forgestone
 							i(200409),	-- Greaves of the Haunted Frostbrood
 							i(200346),	-- Skybound Avenger's Legguards
@@ -762,11 +832,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				e(2502, {	-- Dathea, Ascended
-					["crs"] = { 189813 },
+					["crs"] = { 189813 },	-- Dathea, Ascended
 					["g"] = {
-						crit(3, {	-- Dathea, Ascended
-							["achievementID"] = 16345,	-- Heroic: Vault of the Incarnates
-						}),
 						TOKEN_HEROIC(196587, {	-- Dreadful Garnet Forgestone
 							i(200407),	-- Grasps of the Haunted Frostbrood
 							i(200344),	-- Skybound Avenger's Grips
@@ -799,11 +866,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				e(2491, {	-- Kurog Grimtotem
-					["crs"] = { 181378 },
+					["crs"] = { 181378 },	-- Kurog Grimtotem
 					["g"] = {
-						crit(6, {	-- Kurog Grimtotem
-							["achievementID"] = 16345,	-- Heroic: Vault of the Incarnates
-						}),
 						TOKEN_HEROIC(196586, {	-- Dreadful Amethyst Forgestone
 							i(200405),	-- Breastplate of the Haunted Frostbrood
 							i(200342),	-- Skybound Avenger's Harness
@@ -838,11 +902,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				e(2493, {	-- Broodkeeper Diurna
-					["crs"] = { 190245 },
+					["crs"] = { 190245 },	-- Broodkeeper Diurna
 					["g"] = {
-						crit(7, {	-- Broodkeeper Diurna
-							["achievementID"] = 16345,	-- Heroic: Vault of the Incarnates
-						}),
 						TOKEN_HEROIC(196589, {	-- Dreadful Lapis Forgestone
 							i(200410),	-- Jaws of the Haunted Frostbrood
 							i(200347),	-- Skybound Avenger's Ailerons
@@ -877,11 +938,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				e(2499, {	-- Raszageth the Storm-Eater
-					["crs"] = { 189492 },	-- Temp
+					["crs"] = { 193909 },	-- Raszageth the Storm-Eater
 					["g"] = {
-						crit(8, {	-- Raszageth the Storm-Eater
-							["achievementID"] = 16345,	-- Heroic: Vault of the Incarnates
-						}),
 						ach(17107, {["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 }}),	-- Ahead of the Curve: Raszageth the Storm-Eater
 						TOKEN_HEROIC(196590, {	-- Dreadful Topaz Forgestone
 							i(200408),	-- Maw of the Haunted Frostbrood
@@ -917,13 +975,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(16, {	-- Mythic
-				n(COMMON_BOSS_DROPS, {
-					i(201740, {	-- Elemental Codex of Ultimate Power
-						r(370543),	-- Elemental Potion of Ultimate Power (RECIPE!)
-						r(370672),	-- Potion Cauldron of Ultimate Power (RECIPE!)
-					}),
-				}),
+			d(MYTHIC_R, {
 				n(QUESTS, {
 					q(71020, {	-- Vault of the Incarnates: Break a Few Eggs (M)
 						["qg"] = 193460,	-- Kalecgos
@@ -953,7 +1005,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(202143, {["timeline"] = { "removed 10.0.2.47213" }}),	-- Woven Stone Bracelets [BoP]
 				}),
 				e(2480, {	-- Eranog
-					["crs"] = { 184972 },
+					["crs"] = { 184972 },	-- Eranog
 					["g"] = {
 						ach(16346),	-- Mythic: Eranog
 						i(195482),	-- Decorated Commander's Cindercloak
@@ -1004,7 +1056,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				e(2482, {	-- Sennarth, the Cold Breath
-					["crs"] = { 187967 },
+					["crs"] = { 187967 },	-- Sennarth, the Cold Breath
 					["g"] = {
 						ach(16349),	-- Mythic: Sennarth, The Cold Breath
 						TOKEN_MYTHIC(196588, {	-- Dreadful Jade Forgestone
@@ -1039,7 +1091,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				e(2502, {	-- Dathea, Ascended
-					["crs"] = { 189813 },
+					["crs"] = { 189813 },	-- Dathea, Ascended
 					["g"] = {
 						ach(16350),	-- Mythic: Dathea, Ascended
 						TOKEN_MYTHIC(196587, {	-- Dreadful Garnet Forgestone
@@ -1074,7 +1126,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				e(2491, {	-- Kurog Grimtotem
-					["crs"] = { 181378 },
+					["crs"] = { 181378 },	-- Kurog Grimtotem
 					["g"] = {
 						ach(16351),	-- Mythic: Kurog Grimtotem
 						TOKEN_MYTHIC(196586, {	-- Dreadful Amethyst Forgestone
@@ -1111,7 +1163,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				e(2493, {	-- Broodkeeper Diurna
-					["crs"] = { 190245 },
+					["crs"] = { 190245 },	-- Broodkeeper Diurna
 					["g"] = {
 						ach(16352),	-- Mythic: Broodkeeper Diurna
 						TOKEN_MYTHIC(196589, {	-- Dreadful Lapis Forgestone
@@ -1148,7 +1200,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				e(2499, {	-- Raszageth the Storm-Eater
-					["crs"] = { 189492 },	-- Temp
+					["crs"] = { 193909 },	-- Raszageth the Storm-Eater
 					["g"] = {
 						ach(16353, {	-- Mythic: Raszageth the Storm-Eater
 							title(488),	-- <Name> the Storm-Eater

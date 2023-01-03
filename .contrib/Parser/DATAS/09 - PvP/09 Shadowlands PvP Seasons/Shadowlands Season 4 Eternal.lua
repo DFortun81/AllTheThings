@@ -7,7 +7,7 @@ root("PVP", pvp(tier(SL_TIER, {
 	},{
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount_orange",
 		["g"] = {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE } }, {
 				ach(15599, {	-- Eternal Combatant [A]
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
@@ -42,6 +42,10 @@ root("PVP", pvp(tier(SL_TIER, {
 				}),
 				ach(15607, {	-- Hero of the Horde: Eternal
 					["races"] = HORDE_ONLY,
+				}),
+				-- Fashion
+				ach(15408, {	-- Cosmic Chic
+					["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE, ADDED_DF_REL },
 				}),
 			})),
 			filter(MOUNTS, {

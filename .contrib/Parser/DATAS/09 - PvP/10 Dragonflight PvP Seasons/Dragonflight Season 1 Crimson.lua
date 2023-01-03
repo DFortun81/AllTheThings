@@ -28,7 +28,7 @@ root("PVP", pvp(tier(DF_TIER, {
 					i(202086),	-- Crimson Gladiator's Drake (MOUNT!)
 					i(201792),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
 				}),
-				ach(16730),	-- Crimson Gladiator's Drake
+				ach(16730),		-- Crimson Gladiator's Drake
 				ach(15951, {	-- Crimson Gladiator: Dragonflight Season 1
 					title(468),	-- Crimson Gladiator <Name>
 				}),
@@ -44,6 +44,8 @@ root("PVP", pvp(tier(DF_TIER, {
 				ach(16734, {	-- Crimson Soloist: Dragonflight Season 1
 					title(482),	-- Crimson Soloist <Name>
 				}),
+				-- Fashion
+				ach(16764),		-- Crimson Carpet Fashion
 			}),
 			filter(TITLES, bubbleDown({ ["collectible"] = false, },{
 				title(78),	-- Combatant <Name>
