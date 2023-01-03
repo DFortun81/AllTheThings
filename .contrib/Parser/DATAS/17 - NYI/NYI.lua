@@ -766,7 +766,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201355),	-- Eternal Equipment Chest
 			i(201362),	-- Fated Equipment Chest
 			i(201757),	-- Plundered Supplies
-			i(201836),	-- Valdrakken Token of Merit
 			i(201921),	-- Dragonscale Expedition Insignia
 			i(201922),	-- Iskaara Tuskarr Insignia
 			i(201923),	-- Maruuk Centaur Insignia
@@ -973,8 +972,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201820),	-- Silithus Swiss
 			i(201989),	-- Twisted Heart
 			i(202062),	-- Ash Feather
-			i(202122),	-- Primal Chaos Cluster
-			i(202152),	-- Storm-Charged Manipulator
 			i(202172),	-- Overflowing Satchel of Coins
 		}),
 		-- Use this in a Cost.. Must find the source

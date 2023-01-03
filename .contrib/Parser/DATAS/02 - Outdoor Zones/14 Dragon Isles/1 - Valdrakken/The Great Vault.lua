@@ -55,6 +55,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		o(381035, {	-- The Great Vault
 			["coord"] = { 58.8, 57.9, VALDRAKKEN },
 			["g"] = {
+				i(201836),	-- Aspects' Token of Merit
 				inst(1200, {	-- Vault of the Incarnates
 					["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 },
 					["sym"] = SymRaid(1200),

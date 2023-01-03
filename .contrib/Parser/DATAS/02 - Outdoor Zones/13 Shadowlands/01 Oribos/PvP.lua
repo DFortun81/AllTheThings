@@ -15,13 +15,6 @@ local SymPvPFilter = function(SeasonID, HeaderID, FilterID, Extra)
 
 		{"select", "itemID", Extra }
 	}
-	--[[
-	if Extra then
-		for i,v in ipairs(Extra) do
-			table.insert(SymLink, {"select", "itemID", v })
-		end
-	end
-	--]]
 	return SymLink
 end
 local SymPvPFilterDouble = function(HeaderID, FilterID, Extra)
@@ -93,8 +86,8 @@ local SymPvPClass = function(ClassID, Extra)
 end
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(ORIBOS, {
-		n(QUESTS, {
-			pvp(n(PVP, {
+		pvp(n(PVP, {
+			n(QUESTS, {
 				q(62910, {	-- Against Overwhelming Odds
 					["provider"] = { "n", 168011 },	-- Zo'sorg
 					["isWeekly"] = true,
@@ -183,10 +176,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["isWeekly"] = true,
 					["timeline"] = { "added 9.2.0" },
 				}),
-			})),
-		}),
-		n(VENDORS, {
-			pvp(n(PVP, {
+			}),
+			n(VENDORS, {
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 					["coord"] = { 36.0, 58.6, ORIBOS },
 					["g"] = {
@@ -3426,7 +3417,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 						})),
 					},
 				}),
-			})),
-		}),
+			}),
+		})),
 	}),
 })));
