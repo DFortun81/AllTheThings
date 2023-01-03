@@ -2379,16 +2379,12 @@ root("HiddenQuestTriggers", {
 		prof(JEWELCRAFTING, {
 			-- Reagents
 			q(71647),	-- Blotting Sand
-			q(71673),	-- Draconic Vial
 			-- q(),	-- Elemental Harmony
 			q(71862),	-- Empty Soul Cage
-			q(71675),	-- Frameless Lens
 			q(71676),	-- Glossy Stone
 			-- q(),	-- Illustrious Insight
 			-- q(),	-- Pounce
-			q(71672),	-- Shimmering Clasp
 			-- Rudimentary Gems
-			q(71625),	-- Crafty Queen's Ruby
 			q(71623),	-- Energized Vibrant Emerald
 			q(71624),	-- Sensei's Sundered Onyx
 			q(71622),	-- Solid Eternity Amber
@@ -2465,7 +2461,6 @@ root("HiddenQuestTriggers", {
 			q(71662),	-- Left-Handed Magnifying Glass
 			-- q(),	-- Magnificent Margin Magnifier
 			-- q(),	-- Resonant Focus
-			q(71665),	-- Sundered Onyx Loupes
 			-- Extravagant Glasswares
 			q(71655),	-- Dreamer's Vision
 			q(71651),	-- Earthwarden's Prize
@@ -2484,7 +2479,6 @@ root("HiddenQuestTriggers", {
 			-- q(),	-- Life-Bound Gloves
 			-- q(71711),	-- Life-Bound Shoulderpads
 			-- q(),	-- Life-Bound Trousers
-			q(71704),	-- Pioneer's Leather Boots
 			q(71703),	-- Pioneer's Leather Tunic
 			q(72569),	-- Pioneer's Leather Wristguard
 			q(72495),	-- Pioneer's Practiced Belt
@@ -2507,7 +2501,6 @@ root("HiddenQuestTriggers", {
 			q(71705),	-- Trailblazer's Toughened Chainbelt
 			q(72501),	-- Trailblazer's Toughened Coif
 			q(72500),	-- Trailblazer's Toughened Grips
-			q(72502),	-- Trailblazer's Toughened Legguards
 			q(72503),	-- Trailblazer's Toughened Spikes
 			-- Profession Equipment
 			q(71683),	-- Alchemist's Hat
@@ -2670,7 +2663,6 @@ root("HiddenQuestTriggers", {
 			q(72504),	-- Surveyor's Seasoned Cord
 			q(72506),	-- Surveyor's Seasoned Gloves
 			q(72507),	-- Surveyor's Seasoned Hood
-			q(72508),	-- Surveyor's Seasoned Pants
 			q(72509),	-- Surveyor's Seasoned Shoulders
 			q(71792),	-- Surveyor's Tailored Cloak
 				-- Azureweave Garments --

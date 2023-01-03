@@ -826,6 +826,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["groups"] = {
+					i(198610),	-- Enchanter's Script
+				},
 			}),
 			q(66900, {	-- Enchanted Relics
 				["description"] = "Requires 25 Skill.",
@@ -2260,6 +2263,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["groups"] = {
+					i(198609),	-- Tailoring Examples
+				},
 			}),
 			q(66899, {	-- Fuzzy Legs
 				["description"] = "Requires 25 Skill.",

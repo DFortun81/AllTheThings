@@ -123,15 +123,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						r(389151),	-- Writ of Versatility
 					},
 				}),
-				q(72423, {	-- Weathering the Storm
-					["provider"] = { "n", 191004 },	-- Temnaayu
-					["coord"] = { 36.8, 62.6, VALDRAKKEN },
-					["isWeekly"] = true,
-					["collectible"] = true,	-- Don't remove until we have proper tracking
-					["groups"] = {
-						i(198610),	-- Enchanter's Script
-					},
-				}),
 			})),
 			prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = ENGINEERING }, {
 				n(185548, {	-- Clinkyclick Shatterboom <Engineering Trainer>
@@ -333,11 +324,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						r(384692),	-- Serevite Deposit
 					},
 				}),
-				q(72157, {	-- The Weight of Earth
-					["qg"] = 185553,	-- Sekita the Burrower
-					["coord"] = { 39.0, 51.8, VALDRAKKEN },
-					["cost"] = {{"i",190315,15}},	-- 15x Rousing Earth
-				}),
 				q(70618, {	-- The Call of the Forge
 					["qg"] = 185553,	-- Sekita the Burrower
 					["coord"] = { 39.0, 51.8, VALDRAKKEN },
@@ -365,11 +351,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						r(396173),	-- Saturated Bone
 						r(392445),	-- Scale Skinning
 					},
-				}),
-				q(72159, {	-- Scaling Down
-					["qg"] = 193846,	-- Ralathor the Rugged
-					["coord"] = { 28.6, 60.4, VALDRAKKEN },
-					["isWeekly"] = true,
 				}),
 				q(70620, {	-- Scaling Up
 					["qg"] = 193846,	-- Ralathor the Rugged
@@ -409,15 +390,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						r(376551),	-- Wildercloth Fishing Cap
 						r(376553),	-- Wildercloth Gardening Hat
 						r(376545),	-- Wildercloth Tailor's Coat
-					},
-				}),
-				q(72410, {	-- Pincers and Needles
-					["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
-					["coord"] = { 36.8, 62.6, VALDRAKKEN },
-					["isWeekly"] = true,
-					["collectible"] = true,	-- Don't remove until we have proper tracking
-					["groups"] = {
-						i(198609),	-- Tailoring Examples
 					},
 				}),
 				q(70586, {	-- Sew Many Cooks
