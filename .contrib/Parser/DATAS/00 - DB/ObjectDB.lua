@@ -2707,6 +2707,7 @@ _.ObjectNames = {
 	[382325] = "Onyx Gem Cluster",
 	[383625] = "Case of Fresh Gleamfish",
 	[384318] = "Inconspicuous Bookmark",
+	[384370] = "Deliberately Delinquent Notes",
 	[384405] = "Half-Boiled Fish",
 	[385001] = "Empty Fish Barrel",
 	[385002] = "Eroded Fossil",
