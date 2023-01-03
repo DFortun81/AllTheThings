@@ -67,8 +67,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			e(2518, {	-- Liskanoth, The Futurebane
 				["crs"] = { 193533 },
-				-- ["coord"] = { , , THALDRASZUS },
-				-- ["questID"] = TODO,
+				["coord"] = { 53.7, 64.5, 2085 },
+				["questID"] = 72057,
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
@@ -78,6 +78,11 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200746),	-- Icebound Girdle
 					i(200743),	-- Frozen Footwraps
 				}),
+			}),
+			q(69928, {	-- Liskanoth
+				["sym"] = {
+					{"select","encounterID",2518,},{"pop"},	-- Original WB
+				},
 			}),
 			-- q(TODO, {	-- Liskanoth (WQ)
 			-- 	["sym"] = {
