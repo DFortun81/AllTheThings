@@ -2,36 +2,36 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 local DUTIFUL_COST_GROUP = {
-	{ "i", 178881, 1 },	-- 1xDutiful Spirit
-	{ "i", 178880, 1 },	-- 1xGreater Dutiful Spirit
-	{ "i", 178879, 1 },	-- 1xDivine Dutiful Spirit
+	{ "i", 178881, 1 },	-- 1x Dutiful Spirit
+	{ "i", 178880, 1 },	-- 1x Greater Dutiful Spirit
+	{ "i", 178879, 1 },	-- 1x Divine Dutiful Spirit
 };
 local MARTIAL_COST_GROUP = {
-	{ "i", 178874, 1 },	-- 1xMartial Spirit
-	{ "i", 178877, 1 },	-- 1xGreater Martial Spirit
-	{ "i", 178878, 1 },	-- 1xDivine Martial Spirit
+	{ "i", 178874, 1 },	-- 1x Martial Spirit
+	{ "i", 178877, 1 },	-- 1x Greater Martial Spirit
+	{ "i", 178878, 1 },	-- 1x Divine Martial Spirit
 };
 local UNTAMED_COST_GROUP = {
-	{ "i", 177698, 1 },	-- 1xUntamed Spirit
-	{ "i", 177699, 1 },	-- 1xGreater Untamed Spirit
-	{ "i", 177700, 1 },	-- 1xDivine Untamed Spirit
+	{ "i", 177698, 1 },	-- 1x Untamed Spirit
+	{ "i", 177699, 1 },	-- 1x Greater Untamed Spirit
+	{ "i", 177700, 1 },	-- 1x Divine Untamed Spirit
 };
 local PRIDEFUL_COST_GROUP = {
-	{ "i", 178882, 1 },	-- 1xPrideful Spirit
-	{ "i", 178883, 1 },	-- 1xGreater Prideful Spirit
-	{ "i", 178884, 1 },	-- 1xDivine Prideful Spirit
+	{ "i", 178882, 1 },	-- 1x Prideful Spirit
+	{ "i", 178883, 1 },	-- 1x Greater Prideful Spirit
+	{ "i", 178884, 1 },	-- 1x Divine Prideful Spirit
 };
 local TOTAL_COST_COLLECTION = {};
 local number = 1;
 for _,g in ipairs({DUTIFUL_COST_GROUP,MARTIAL_COST_GROUP,UNTAMED_COST_GROUP,PRIDEFUL_COST_GROUP}) do
 	local COST_GROUP_T2 = {
-		{ "i", 176832 ,1 },	-- 1xWildseed Root Grain
+		{ "i", 176832, 1 },	-- 1x Wildseed Root Grain
 	};
 	local COST_GROUP_T3 = {
-		{ "i", 176832 ,2 },	-- 2xWildseed Root Grain
+		{ "i", 176832, 2 },	-- 2x Wildseed Root Grain
 	};
 	local COST_GROUP_T5 = {
-		{ "i", 176832 ,4 },	-- 4xWildseed Root Grain
+		{ "i", 176832, 4 },	-- 4x Wildseed Root Grain
 	};
 	for _,t in ipairs({COST_GROUP_T2,COST_GROUP_T3,COST_GROUP_T5}) do
 		TOTAL_COST_COLLECTION[number] = appendGroups(g,t);
@@ -263,15 +263,15 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									}),
 								}),
 								o(350978, {	-- Queen's Conservatory Cache
-									n(DUTIFUL, {
+									header(HEADERS.Item, 178881, {	-- Dutiful Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[1] },T2_DUTIFUL_GROUP),
 									}),
-									n(MARTIAL, {
+									header(HEADERS.Item, 178874, {	-- Martial Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[4] },T2_MARTIAL_GROUP),
 									}),
-									n(UNTAMED, {
+									header(HEADERS.Item, 177698, {	-- Untamed Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[7] },appendGroups(T2_UNTAMED_GROUP, {
 											i(181313),		-- Snapper Soul
@@ -279,21 +279,21 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											i(181302),		-- Spirit Tender's Branches
 										})),
 									}),
-									n(PRIDEFUL, {
+									header(HEADERS.Item, 178882, {	-- Prideful Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[10] },T2_PRIDEFUL_GROUP),
 									}),
 								}),
 								o(350978, {	-- Queen's Conservatory Cache
-									n(DUTIFUL, {
+									header(HEADERS.Item, 178880, {	-- Greater Dutiful Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[2] },T3_DUTIFUL_GROUP),
 									}),
-									n(MARTIAL, {
+									header(HEADERS.Item, 178877, {	-- Greater Martial Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[5] },T3_MARTIAL_GROUP),
 									}),
-									n(UNTAMED, {
+									header(HEADERS.Item, 177699, {	-- Greater Untamed Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[8] },appendGroups(T3_UNTAMED_GROUP, {
 											i(181306),	-- Spirit Tender's Bulb
@@ -304,7 +304,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											}),
 										})),
 									}),
-									n(PRIDEFUL, {
+									header(HEADERS.Item, 178883, {	-- Greater Prideful Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[11] },T3_PRIDEFUL_GROUP),
 									}),
@@ -437,22 +437,22 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							["icon"] = "Interface\\Icons\\Ability_ardenweald_paladin_winter",
 							["g"] = {
 								o(350978, {	-- Queen's Conservatory Cache
-									n(DUTIFUL, {
+									header(HEADERS.Item, 178879, {	-- Divine Dutiful Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[3] },T5_DUTIFUL_GROUP),
 									}),
-									n(MARTIAL, {
+									header(HEADERS.Item, 178878, {	-- Divine Martial Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[6] },T5_MARTIAL_GROUP),
 									}),
-									n(UNTAMED, {
+									header(HEADERS.Item, 177700, {	-- Divine Untamed Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[9] },appendGroups(T5_UNTAMED_GROUP, {
 											i(180723),	-- Enchanted Wakener's Runestag (MOUNT!)
 											i(181310),	-- Spirit Tender's Pack
 										})),
 									}),
-									n(PRIDEFUL, {
+									header(HEADERS.Item, 178884, {	-- Divine Prideful Spirit
 										["description"] = "Spirit quality affects loot chance.",
 										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[12] },T5_PRIDEFUL_GROUP),
 									}),

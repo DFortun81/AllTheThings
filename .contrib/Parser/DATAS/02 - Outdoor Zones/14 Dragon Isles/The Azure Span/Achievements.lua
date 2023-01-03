@@ -202,7 +202,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 50.7, 55.4, THE_AZURE_SPAN },
 			}),
 			ach(16065, {	-- Dragon Glyphs: Azure Archive
-				["coord"] = { 40.4, 66.5, THE_AZURE_SPAN },
+				["coord"] = { 39.4, 63.4, THE_AZURE_SPAN },
 			}),
 			ach(16068, {	-- Dragon Glyphs: Brackenhide Hollow
 				["coord"] = { 10.3, 35.9, THE_AZURE_SPAN },
@@ -247,12 +247,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				crit(10),	-- Three-Falls Lookout
 				crit(11),	-- Vakthros
 			}),
-			ach(16323, {	 -- Fragment of History
-				crit(4),	-- Chunk of Sculpture
-				crit(5),	-- Coldwashed Dragonclaw
-				crit(9),	-- Stone Dragontooth
-				crit(10),	-- Wrapped Gold Band
-			}),
 			ach(16580),	-- Lend a Helping Span
 			ach(16638, {	-- Ley Line in the Span
 				crit(1, {	-- Azure Archives
@@ -279,8 +273,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			ach(15889, {	-- River Rapids Wrangler
 				i(198428),	-- Tuskarr Dinghy (TOY!)
 			}),
-			ach(16581),	-- Seeing Blue
+			ach(16581, {	-- Seeing Blue
+				["coords"] = {
+					{ 40.0, 61.7, THE_AZURE_SPAN },	-- Start
+					{ 46.1, 26.3, THE_AZURE_SPAN },	-- End
+				},
+			}),
 			ach(16428),	-- Sojourner of Azure Span
+			pvp(ach(16594)),	-- Tour of Duty: The Azure Span
 			ach(16300),	-- Treasures of The Azure Span
 		}),
 	})

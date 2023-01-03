@@ -978,11 +978,16 @@ namespace ATT
             if (!CheckTimeline(data))
                 return false;
 
-            // certain types with empty groups shouldn't be included
-            if (data.TryGetValue("achievementCategoryID", out _))
+            data.TryGetValue("g", out List<object> g);
+            int subGroupCount = g?.Count ?? 0;
+            // no sub-groups, remove the g field
+            if (subGroupCount == 0)
             {
-                if (!data.TryGetValue("g", out List<object> g) || g.Count == 0)
+                data.Remove("g");
+                // certain types with empty groups shouldn't be included
+                if (data.ContainsKey("achievementCategoryID"))
                 {
+                    Log($"Sourced Achievement Category {data["achievementCategoryID"]} contained no content after Parsing");
                     return false;
                 }
             }
@@ -3492,7 +3497,7 @@ namespace ATT
             // Default is relative to where the executable is. (.contrib/Parser)
             string addonRootFolder = "../..";
 #endif
-			string dbRootFolder = "";
+            string dbRootFolder = "";
 #endif
 
             // Setup the output folder (/db)

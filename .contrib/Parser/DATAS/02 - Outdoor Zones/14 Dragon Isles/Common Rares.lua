@@ -77,9 +77,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				i(200442),	-- Basilisk Hide Jerkin
 				i(200174),	-- Bonesigil Shoulderguards
 				i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-				i(197111),	-- Highland Drake: Maned Head
+				i(197111),	-- Highland Drake: Maned Head (DM!)
 				i(200445),	-- Lucky Hunting Charm
-				i(200249),	-- Mage's Chewed Wand
+				i(200249),	-- Mage's Chewed Wand (TOY!)
 				i(200193),	-- Manafrond Sandals
 				i(200232),	-- Raptor Talonglaive
 				i(200131),	-- Reclaimed Survivalist's Dagger

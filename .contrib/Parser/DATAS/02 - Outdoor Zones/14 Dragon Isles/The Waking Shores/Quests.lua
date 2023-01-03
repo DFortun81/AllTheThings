@@ -584,10 +584,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["g"] = {
 							i(194393),	-- Expedition Guard's Cudgel
 							i(194371),	-- Expedition Guard's Shield
+							i(194379),	-- Field Scout's Longblade
 							i(194386),	-- League Mercenary's Mace
 							i(194416),	-- Titan Lightning Generator
 							i(194372),	-- Vault Guardian's Missive
 							i(194376),	-- Vault Guardian's Poleaxe
+							i(194417),	-- Vault Guard's Talon
 							crit(1, {	-- Beyond the Barrier
 								["achievementID"] = 16401,	-- Sojourner of the Waking Shores
 							}),
@@ -890,12 +892,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "n", 185628 },	-- Ayasanth
 						["coord"] = { 37.4, 46.6, THE_WAKING_SHORES },
 						["g"] = {
+							i(194420),	-- Blacktalon Blade
 							i(194396),	-- Blacktalon Claw
 							i(194397),	-- Darkscale Twinblade
 							i(194395),	-- Doomsayer's Greatsword
 							i(194385),	-- Neltharian Channeler's Rod
 							i(194388),	-- Obsidian Guardian's Cleaver
 							i(194390),	-- Obsidian Spellsplitter
+							i(194387),	-- Obsidian Watcher's Crossbow
 							crit(6, {	-- The Shadow of His Wings
 								["achievementID"] = 16401,	-- Sojourner of the Waking Shores
 							}),
@@ -1031,30 +1035,35 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
-			ach(16409, {	-- Let's Get Quacking
-				["collectible"] = false,
-				["g"] = {
-					q(66196, {	-- A Quack For Help
-						["sourceQuests"] = { 66104 },	-- Forensic Ecology
-						["provider"] = { "n", 187439 },	-- Bubbled Duckling
-						["coord"] = { 80.1, 42.9, THE_WAKING_SHORES },
-					}),
-					q(70877, {	-- A Quack in Time
-						["sourceQuests"] = { 66196 },	-- A Quack For Help
-						["provider"] = { "n", 196744 },	-- Bubbled Duckling
-						["coord"] = { 80.1, 39.9, THE_WAKING_SHORES },
-					}),
-					q(70917, {	-- A Shoulder to Quack On
-						["sourceQuests"] = { 70877 },	--A Quack in Time
-						["provider"] = { "n", 196746 },	-- Bubbled Duckling
-						["coord"] = { 81.6, 45.4, THE_WAKING_SHORES },
-					}),
-					q(70918, {	-- Quack for Your Life
-						["sourceQuests"] = { 70917 },	-- A Shoulder to Quack On
-						["provider"] = { "n", 196572 },	-- Bubbled Duckling
-						["coord"] = { 79.3, 42.7, THE_WAKING_SHORES },
-					}),
-				},
+			header(HEADERS.Achievement, 16409, {	-- Let's Get Quacking
+				q(66196, {	-- A Quack For Help
+					["sourceQuests"] = { 66104 },	-- Forensic Ecology
+					["provider"] = { "n", 187439 },	-- Bubbled Duckling
+					["coord"] = { 80.1, 42.9, THE_WAKING_SHORES },
+				}),
+				q(70877, {	-- A Quack in Time
+					["sourceQuests"] = { 66196 },	-- A Quack For Help
+					["provider"] = { "n", 196744 },	-- Bubbled Duckling
+					["coord"] = { 80.1, 39.9, THE_WAKING_SHORES },
+				}),
+				q(70917, {	-- A Shoulder to Quack On
+					["sourceQuests"] = { 70877 },	--A Quack in Time
+					["provider"] = { "n", 196746 },	-- Bubbled Duckling
+					["coord"] = { 81.6, 45.4, THE_WAKING_SHORES },
+				}),
+				q(70918, {	-- Quack for Your Life
+					["sourceQuests"] = { 70917 },	-- A Shoulder to Quack On
+					["provider"] = { "n", 196572 },	-- Bubbled Duckling
+					["coord"] = { 79.3, 42.7, THE_WAKING_SHORES },
+				}),
+				q(70919, {	-- Quacking Out For a Hero
+					["sourceQuests"] = { 70918 },	-- Quack for Your Life
+					["provider"] = { "n", 196747 },	-- Bubbled Duckling
+					["coord"] = { 82.8, 42.6, THE_WAKING_SHORES },
+					["g"] = {
+						ach(16409),	-- Let's Get Quacking
+					},
+				}),
 			}),
 				-- MISC --
 			q(69965, {	-- Quality Assurance
@@ -1185,41 +1194,21 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 198475 },	-- Broken Bankding
 				["coord"] = { 81.0, 30.4, THE_WAKING_SHORES },
-				["g"] = {
-					crit(3, {	-- Broken Banding
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			q(70236, {	-- Dislodged Dragoneye
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 198626 },	-- Dislodged Dragoneye
 				["coord"] = { 60.5, 57.9, THE_WAKING_SHORES },
-				["g"] = {
-					crit(1, {	-- Dislodged Dragoneye
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			q(70789, {	-- Finely Carved Wing
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 199841 },	-- Finely Carved Wing
 				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
-				["g"] = {
-					crit(6, {	-- Finely Carved Wing
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			q(70207, {	-- Tail Fragment
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 198543 },	-- Tail Fragment
 				["coord"] = { 58.2, 68.3, THE_WAKING_SHORES },
-				["g"] = {
-					crit(2, {	-- Broken Banding
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			-- Alt quests
 			q(72293, {	-- Adventuring in the Dragon Isles
@@ -1268,6 +1257,22 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 				["provider"] = { "i", 202081 },	-- Dragon Isles Supply Bag
 			}),
+			q(65875, {	-- A Dragon's Day Off
+				["provider"] = { "n", 192662 },
+				["coord"] = { 20.1, 39.5, THE_WAKING_SHORES },
+				["cost"] = {
+					{ "i", 195543, 1 },	-- 1x Riptide Brew
+					{ "i", 197737, 1 },	-- 1x Popfizz Punch
+					{ "i", 197738, 1 },	-- 1x Flameslinger Rum
+					{ "i", 197739, 1 },	-- 1x Happy Trigger Sour
+					{ "i", 198045, 1 },	-- 1x Slam Bam Swill
+					{ "i", 198043, 1 },	-- 1x Stealthy Elven Port
+					{ "i", 198044, 1 },	-- 1x Whirlwind Wine
+				},
+				["g"] = {
+					i(198622),	-- Spyragos (PET!)
+				},
+			});
 			n(BONUS_OBJECTIVES, {
 				q(69838, {	-- Amethyzar the Glittering
 					["provider"] = { "n", 193132 },	-- Amethyzar the Glittering
@@ -1276,6 +1281,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(66076, {	-- Ancient Hornswog
 					["provider"] = { "n", 187111 },	-- Ancient Hornswog
 					["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
+				}),
+				q(69839, {	-- Azra's Prized Peony
+					["provider"] = { "n", 193135 },	-- Azra's Prized Peony
+					["coord"] = { 54.9, 71.1, THE_WAKING_SHORES },
 				}),
 				q(72127, {	-- Captain Lancer
 					["provider"] = { "n", 193198 },	-- Captain Lancer
@@ -1312,9 +1321,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 32.8, 75.9, THE_WAKING_SHORES },
 					["isDaily"] = true,
 				}),
+				q(69874, {	-- Gorjo the Crab Shackler
+					["provider"] = { "n", 187209 },	-- Gorjo the Crab Shackler
+					["coord"] = { 78.6, 50.0, THE_WAKING_SHORES },
+				}),
 				q(66960, {	-- Klozicc the Ascended
 					["provider"] = { "n", 187209 },	-- Klozicc the Ascended
 					["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
+				}),
+				q(69891, {	-- Lepidoralia the Resplendent
+					["provider"] = { "n", 193266 },	-- Lepidoralia the Resplendent
+					["coord"] = { 34.1, 85.7, THE_WAKING_SHORES },
 				}),
 				q(70979, {	-- Magmaton
 					["provider"] = { "n", 186827 },	-- Magmaton
@@ -1325,6 +1342,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 193152 },	-- Massive Magmashell
 					["coord"] = { 21.7, 76.2, THE_WAKING_SHORES },
 					["isDaily"] = true,
+				}),
+				q(70983, {	-- O'nank Shorescour
+					["provider"] = { "n", 184853 },	-- O'nank Shorescour
+					["coord"] = { 80.1, 53.9, THE_WAKING_SHORES },
 				}),
 				q(66074, {	-- Primal Scythid Queen
 					["provider"] = { "n", 184853 },	-- Primal Scythid Queen
@@ -1341,6 +1362,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(72126, {	-- Slurpo, the Incredible Snail
 					["provider"] = { "n", 193175 },	-- Slurpo, the Incredible Snail
 					["coord"] = { 34.5, 89.7, THE_WAKING_SHORES },
+				}),
+				q(69668, {	-- Smogswog the Firebreather
+					["provider"] = { "n", 193120 },	-- Smogswog the Firebreather
+					["coord"] = { 68.4, 65.3, THE_WAKING_SHORES },
 				}),
 				q(70751, {	-- Terillod the Devout
 					["provider"] = { "n", 193171 },	-- Terillod the Devout
@@ -1455,11 +1480,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 35.1, 47.2, THE_WAKING_SHORES },
 				}),
 				-- Theory In Practice moved temporarily to HQTs
-				q(72089, {	-- To Skytop Observatory
-					["name"] = "To Skytop Observatory",
-					["provider"] = { "n", 193287 },	-- Lord Andestrasz
-					["coord"] = { 57.7, 66.9, THE_WAKING_SHORES },
-				}),
+				-- To Skytop Observatory moved temporarily to HQTs
+				-- TODO: for the two above mentioned chains, how do we sort these types of things going forward? Also, is Skytop an actual quest or should this be a NYI/Never Implemented?
 			}),
 			ach(15941, {	-- Dragon Racing Completionist: Gold
 				["collectible"] = false,
@@ -1674,7 +1696,15 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 		q(70769),	-- triggers when 'Tale of the Elders' completes
 		q(70772),	-- triggers when 'Tale of the Warlord' becomes available for Tarjin the Blind
 		q(70771),	-- triggers when 'Tale of the Warlord' completes
+		q(70776),	-- triggers when 'Tale of the Magma Pact' becomes available for Tarjin the Blind
+		q(70775),	-- triggers when 'Tale of the Magma Pact' completes
+		q(70774),	-- triggers when 'Tale of the Slumbering' becomes available for Tarjin the Blind
+		q(70773),	-- triggers when 'Tale of the Slumbering' completes
+		q(70778),	-- triggers when 'Tale of the Weakling' becomes available for Tarjin the Blind
+		q(70777),	-- triggers when 'Tale of the Weakling' completes (FINALLY DONE WITH THIS STUPID CHAIN)
+		q(70218),	-- Dialogue before you can pick up the quest "A Dragon's Day Off"
 
+		-- TODO: how do we sort these types of things going forward? Also, is Skytop an actual quest or should this be a NYI/Never Implemented?
 		q(72178, {	-- Theory in Practice: Baron von Swoopenbite
 			["name"] = "Theory in Practice: Baron von Swoopenbite",
 			["sourceQuests"] = {
@@ -1754,6 +1784,11 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 				72177,	-- Theory in Practice: Mr.Nibbles
 				-- 72176,	-- Theory in Practice: Toughscale
 			},
+		}),
+		q(72089, {	-- To Skytop Observatory
+			["name"] = "To Skytop Observatory",
+			["provider"] = { "n", 193287 },	-- Lord Andestrasz
+			["coord"] = { 57.7, 66.9, THE_WAKING_SHORES },
 		}),
 	}),
 })));

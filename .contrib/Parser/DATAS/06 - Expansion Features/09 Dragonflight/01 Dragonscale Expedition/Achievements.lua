@@ -5,7 +5,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 	n(DRAGONSCALE_EXPEDITION, {
 		n(ACHIEVEMENTS, {
 			ach(15890, {	-- Dragonscale Expedition: The Highest Peaks
-				["description"] = "Require Renown 7 and Research Cartographer's Flag at Expedition Supply Kit.",
+				["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7
+				["description"] = "Requires Research Cartographer's Flag at Expedition Supply Kit.",
 				["coords"] = {
 					{ 73.4, 38.8, THE_WAKING_SHORES },
 					{ 56.0, 45.3, THE_WAKING_SHORES },

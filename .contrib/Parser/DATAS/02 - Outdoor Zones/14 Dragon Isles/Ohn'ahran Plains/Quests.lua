@@ -161,7 +161,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						66021,	-- Unwelcome Outsider
 					},
 					["provider"] = { "n", 192724 },	-- Aru
-					["coord"] = { 61.3 ,39.5, OHNAHRAN_PLAINS },	-- Follows you coords is middle.
+					["coord"] = { 61.3, 39.5, OHNAHRAN_PLAINS },	-- Follows you coords is middle.
 					["g"] = {
 						i(197906),	-- Teerai Locket
 						i(197671),	-- Shikaar Chain
@@ -941,11 +941,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(197691),	-- Amaa's Golden Mace
+					i(197684),	-- Argali Shearing Blade
 					i(197703),	-- Ceeqa's Toothpick
+					i(197699),	-- Nokhud Skullcrusher
 					i(197677),	-- Plainswalking Stick
 					i(197679),	-- Rockfang Uppercut
+					i(197904),	-- Shikaar Hunting Knife
 					i(197690),	-- Staff of the Windsage
-					i(197699),	-- Nokhud Skullcrusher
 					i(197903),	-- Waterback Culling Axe
 				},
 			}),
@@ -1016,7 +1018,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			q(72512, {	-- A Whispering Breeze
-				["description"] = "Require Renown 25 and Finish Initiate Questline. Speak to Godoloto to get the clues then gather the cost objects.",
+				["minReputation"] = { 2503, 25 },	-- Maruuk Centaur Renown 25
+				["description"] = "Speak to Godoloto to get the clues then gather the cost objects.",
 				["sourceQuests"] = { 66676 },	-- Sneaking In
 				["provider"] = { "n", 190022 },	-- Godoloto
 				["coord"] = { 56.5, 73.3, OHNAHRAN_PLAINS },
@@ -1030,7 +1033,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			q(71196, {	-- To Tame A Thunderspine
-				["description"] = "Require Renown 9 and Finish Initiate Questline.",
+				["minReputation"] = { 2503, 19 },	-- Maruuk Centaur Renown 19
 				["sourceQuests"] = { 66676 },	-- Sneaking In
 				["provider"] = { "n", 190014 },	-- Initiate Radiya
 				["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
@@ -1102,13 +1105,33 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- 	["provider"] = { "n", npcid },	-- npc
 				-- 	["coord"] = { XX, YY, OHNAHRAN_PLAINS },
 				-- }),
+				q(73869, {	-- Blightpaw the Depraved
+					["provider"] = { "n", 193128 },	-- Blightpaw the Depraved
+					["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
+				}),
+				q(69856, {	-- Fulgurb
+					["provider"] = { "n", 193170 },	-- Fulgurb
+					["coord"] = { 74.9, 47.1, OHNAHRAN_PLAINS },
+				}),
+				q(66356, {	-- Irontree
+					["provider"] = { "n", 193128 },	-- Irontree
+					["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
+				}),
+				q(69871, {	-- Malsegan
+					["provider"] = { "n", 193212 },	-- Malsegan
+					["coord"] = { 71.7, 45.9, OHNAHRAN_PLAINS },
+				}),
+				q(69877, {	-- Oshigol
+					["provider"] = { "n", 193235 },	-- Oshigol
+					["coord"] = { 60.8, 26.8, OHNAHRAN_PLAINS },
+				}),
 				q(69968, {	-- Prozela Galeshot
 					["provider"] = { "n", 193669 },	-- Prozela Galeshot
 					["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
 				}),
-				q(70698, {	-- Prozela Galeshot
-					["provider"] = { "n", 196010 },	-- Researcher Sneakwing
+				q(70698, {	-- Researcher Sneakwing
 					["coord"] = { 37.3, 53.9, OHNAHRAN_PLAINS },
+					["provider"] = { "n", 196010 },	-- Researcher Sneakwing
 				}),
 				q(69851, {	-- Ripsaw the Stalker
 					["provider"] = { "n", 193153 },	-- Ripsaw the Stalker
@@ -1117,6 +1140,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(70783, {	-- Skaara
 					["provider"] = { "n", 192949 },	-- Skaara
 					["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
+				}),
+				q(69667, {	-- Steamgill
+					["provider"] = { "n", 193123 },	-- Steamgill
+					["coord"] = { 53.2, 72.5, OHNAHRAN_PLAINS },
 				}),
 				q(69837, {	-- Sunscale Behemoth
 					["provider"] = { "n", 193133 },	-- Sunscale Behemoth
@@ -1141,6 +1168,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(69857, {	-- Mikrin of the Raging Winds
 					["provider"] = { "n", 193173 },	-- Mikrin of the Raging Winds
 					["coord"] = { 62.8, 79.8, OHNAHRAN_PLAINS },
+				}),
+				q(69865, {	-- Scaleseeker Mezeri
+					["provider"] = { "n", 193215 },	-- Scaleseeker Mezeri
+					["coord"] = { 20.1, 44.3, OHNAHRAN_PLAINS },
+				}),
+				q(72364, {	-- Zarizz
+					["provider"] = { "n", 193140 },	-- Zarizz
+					["coord"] = { 30.3, 62.1, OHNAHRAN_PLAINS },
 				}),
 			}),
 			ach(15941, {	-- Dragon Racing Completionist: Gold

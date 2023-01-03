@@ -1271,7 +1271,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 46.6, 40.2, THE_AZURE_SPAN },
 						["g"] = {
 							i(198676),	-- Divo's Worn Cloth
-							i(200926),	-- Compendium of Love
+							i(200926),	-- Compendium of Love (TOY!)
 							crit(5, {	-- For The Love of Others
 								["achievementID"] = 16580,	-- Lend a Helping Span
 							}),
@@ -1625,41 +1625,21 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 199895 },	-- Chunk of Sculpture
 				["coord"] = { 66.1, 60.1, THE_AZURE_SPAN },
-				["g"] = {
-					crit(4, {	-- Chunk of Sculpture
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			q(70791, {	-- Coldwashed Dragonclaw
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 199843 },	-- Coldwashed Dragonclaw
 				["coord"] = { 47.8, 38.9, THE_AZURE_SPAN },
-				["g"] = {
-					crit(5, {	-- Coldwashed Dragonclaw
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			q(70790, {	-- Stone Dragontooth
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 199842 },	-- Stone Dragontooth
 				["coord"] = { 69.2, 47.6, THE_AZURE_SPAN },
-				["g"] = {
-					crit(9, {	-- Stone Dragontooth
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			q(70788, {	-- Wrapped Gold Band
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 199840 },	-- Wrapped Gold Band
 				["coord"] = { 47.3, 24.6, THE_AZURE_SPAN },
-				["g"] = {
-					crit(10, {	-- Wrapped Gold Band
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 				-- MAGE POLYMORPH --
 			q(71002, {	-- Best Spell Ever
@@ -1711,9 +1691,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- Stranded Soul ID 197183
 			}),
 			n(BONUS_OBJECTIVES, {
+				q(69858, {	-- Blightfur
+					["provider"] = { "n", 193178 },	-- Blightfur
+					["coord"] = { 13.4, 22.4, THE_AZURE_SPAN },
+				}),
 				q(72358, {	-- Cascade
 					["provider"] = { "n", 186962 },	-- Cascade
 					["coord"] = { 23.7, 33.7, THE_AZURE_SPAN },
+				}),
+				q(69892, {	-- Grumbletrunk
+					["provider"] = { "n", 193269 },	-- Grumbletrunk
+					["coord"] = { 19.1, 43.6, THE_AZURE_SPAN },
 				}),
 				q(72254, {	-- Fisherman Tinnak's Ghost
 					["provider"] = { "n", 193691 },	-- Fisherman Tinnak <Angered Ghost>
@@ -1743,6 +1731,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(67173, {	-- Thieving Gnolls
 					["provider"] = { "n", 192749 },	-- Sharpfang
 					["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },
+				}),
+				q(69861, {	-- Trilvarus Loreweaver
+					["provider"] = { "n", 193196 },	-- Trilvarus Loreweaver
+					["coord"] = { 70.4, 25.0, THE_AZURE_SPAN },
 				}),
 				q(69872, {	-- Vakril, the Strongest Tuskarr
 					["provider"] = { "n", 193223 },	-- Vakril

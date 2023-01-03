@@ -957,7 +957,6 @@ _.Zones =
 					["sourceQuests"] = {
 						34579,	-- Gas Guzzlers (artillery tower)
 						34576,	-- Iridium Recovery (artillery tower)
-						34874,	-- Next Steps (arcane sanctum)
 						34577,	-- Out of Jovite (artillery tower)
 					},
 				}),
@@ -1539,7 +1538,6 @@ _.Zones =
 					["sourceQuests"] = {
 						34579,	-- Gas Guzzlers (artillery tower)
 						34576,	-- Iridium Recovery (artillery tower)
-						34874,	-- Next Steps (arcane sanctum)
 						34577,	-- Out of Jovite (artillery tower)
 					},
 					["g"] = {
@@ -1577,7 +1575,6 @@ _.Zones =
 					["sourceQuests"] = {
 						34579,	-- Gas Guzzlers (artillery tower)
 						34576,	-- Iridium Recovery (artillery tower)
-						34874,	-- Next Steps (arcane sanctum)
 						34577,	-- Out of Jovite (artillery tower)
 					},
 					["g"] = {

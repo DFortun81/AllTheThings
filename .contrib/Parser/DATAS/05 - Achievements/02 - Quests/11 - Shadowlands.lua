@@ -164,9 +164,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		ach(15056),		-- Friend of Bloop
 		ach(15055),		-- Friend of Ooz
 		ach(15057),		-- Friend of Plaguey
-		ach(15336, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- From A to Zereth
-			i(187673),	-- Cryptic Aurelid (MOUNT!)
-		})),
 		ach(14334),		-- Into the Maw
 		ach(14280, {	-- Loremaster of Shadowlands
 			ach(14281, {	-- The Path to Ascension
@@ -236,9 +233,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				crit(6),		-- Revelations of the Light
 			}),
 		}),
-		ach(15515, {	-- Path to Enlightenment
-			["timeline"] = { "added 9.2.0" }
-		}),
 		ach(15036, {	-- Rooting Out The Evil
 			crit(1),	-- Clean Out the Crucible
 			crit(2),	-- Looming Darkness
@@ -251,9 +245,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(9),	-- A Shady Place
 			crit(10),	-- Heavy Handed Tactics
 		}),
-		ach(15259, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Secrets of the First Ones
-			ach(15518),	-- A Means to an End
-		})),
 		ach(15033, {	-- Taking the Tremaculum
 			crit(1),	-- Terrorizing the Tremaculum
 			crit(2),	-- Weapons of the Tremaculum

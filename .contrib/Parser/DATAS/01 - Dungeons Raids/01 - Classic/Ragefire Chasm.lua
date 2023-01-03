@@ -412,7 +412,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				["groups"] = {
 					-- #if BEFORE 5.0.4
 					classicAch(629, {	-- Ragefire Chasm
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuest"] = 5761,	-- Slaying the Beast
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						["races"] = HORDE_ONLY,

@@ -576,7 +576,7 @@ root("Holidays", applyholiday(BREWFEST, {
 						}),
 					},
 				}),
-				-- #if BEFORE 3.0.1
+				-- #if BEFORE WRATH
 				i(37828, {	-- Great Brewfest Kodo (MOUNT!)
 					["timeline"] = { "added 2.0.1" },
 				}),

@@ -1,8 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 	inst(1195, {	-- Sepulcher of the First Ones
 		["isRaid"] = true,
 		["coord"] = { 80.9, 53.4, ZERETH_MORTIS },
@@ -18,53 +17,280 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(15417),	-- Sepulcher of the First Ones
-				ach(15478),	-- Heroic: Sepulcher of the First Ones
-				ach(15490, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Mythic: Sepulcher of the First Ones
-					-- Meta Achievement
-					["sym"] = {
-						{"meta_achievement",
-							15479,	-- Mythic: Vigilant Guardian
-							15480,	-- Mythic: Skolex
-							15481,	-- Mythic: Artificer Xy'mox
-							15482,	-- Mythic: Dausegne
-							15483,	-- Mythic: Prototype Pantheon
-							15484,	-- Mythic: Lihuvim
-							15485,	-- Mythic: Halondrus
-							15486,	-- Mythic: Anduin Wrynn
-							15487,	-- Mythic: Lords of Dread
-							15488,	-- Mythic: Rygelon
-							15489,	-- Mythic: The Jailer
-						},
-					},
-				})),
-				ach(15491, {	-- Glory of the Sepulcher Raider
-					i(187675),	-- Shimmering Aurelid (MOUNT!)
+				ach(15493, {	-- Ephemeral Plains
+					crit(1, { -- Vigilant Guardian
+						["_encounter"] = { 2458, LFR_R },
+					}),
+					crit(2, { -- Skolex, the Insatiable Ravener
+						["_encounter"] = { 2465, LFR_R },
+					}),
+					crit(3, { -- Artificer Xy'mox
+						["_encounter"] = { 2470, LFR_R },
+					}),
+					crit(4, { -- Halondrus the Reclaimer
+						["_encounter"] = { 2463, LFR_R },
+					}),
 				}),
-				ach(15493),	-- Ephemeral Plains
-				ach(15492),	-- Cornerstone of Creation
-				ach(15416),	-- Domination's Grasp
-				ach(15418),	-- The Grand Design
+				ach(15492, {	-- Cornerstone of Creation
+					crit(1, { -- Dausegne, the Fallen Oracle
+						["_encounter"] = { 2459, LFR_R },
+					}),
+					crit(2, { -- Prototype Pantheon
+						["_encounter"] = { 2460, LFR_R },
+					}),
+					crit(3, { -- Lihuvim, Principal Architect
+						["_encounter"] = { 2461, LFR_R },
+					}),
+				}),
+				ach(15416, {	-- Domination's Grasp
+					crit(1, { -- Anduin Wrynn
+						["_encounter"] = { 2469, LFR_R },
+					}),
+					crit(2, { -- Lords of Dread
+						["_encounter"] = { 2457, LFR_R },
+					}),
+					crit(3, {-- Rygelon
+						["_encounter"] = { 2467, LFR_R },
+					}),
+				}),
+				ach(15418, {	-- The Grand Design
+					crit(1, {-- The Jailer
+						["_encounter"] = { 2464, LFR_R },
+					}),
+				}),
+				ach(15417, {	-- Sepulcher of the First Ones
+					crit(1, { -- Vigilant Guardian
+						["_encounter"] = { 2458, LFR_R },
+					}),
+					crit(2, { -- Skolex, the Insatiable Ravener
+						["_encounter"] = { 2465, LFR_R },
+					}),
+					crit(3, { -- Artificer Xy'mox
+						["_encounter"] = { 2470, LFR_R },
+					}),
+					crit(4, { -- Dausegne, the Fallen Oracle
+						["_encounter"] = { 2459, LFR_R },
+					}),
+					crit(5, { -- Prototype Pantheon
+						["_encounter"] = { 2460, LFR_R },
+					}),
+					crit(6, { -- Lihuvim, Principal Architect
+						["_encounter"] = { 2461, LFR_R },
+					}),
+					crit(7, { -- Halondrus the Reclaimer
+						["_encounter"] = { 2463, LFR_R },
+					}),
+					crit(8, { -- Anduin Wrynn
+						["_encounter"] = { 2469, LFR_R },
+					}),
+					crit(9, { -- Lords of Dread
+						["_encounter"] = { 2457, LFR_R },
+					}),
+					crit(10, {-- Rygelon
+						["_encounter"] = { 2467, LFR_R },
+					}),
+					crit(11, {-- The Jailer
+						["_encounter"] = { 2464, LFR_R },
+					}),
+				}),
+				ach(15478, {	-- Heroic: Sepulcher of the First Ones
+					crit(1, { -- Vigilant Guardian
+						["_encounter"] = { 2458, HEROIC_R },
+					}),
+					crit(2, { -- Skolex, the Insatiable Ravener
+						["_encounter"] = { 2465, HEROIC_R },
+					}),
+					crit(3, { -- Artificer Xy'mox
+						["_encounter"] = { 2470, HEROIC_R },
+					}),
+					crit(4, { -- Dausegne, the Fallen Oracle
+						["_encounter"] = { 2459, HEROIC_R },
+					}),
+					crit(5, { -- Prototype Pantheon
+						["_encounter"] = { 2460, HEROIC_R },
+					}),
+					crit(6, { -- Lihuvim, Principal Architect
+						["_encounter"] = { 2461, HEROIC_R },
+					}),
+					crit(7, { -- Halondrus the Reclaimer
+						["_encounter"] = { 2463, HEROIC_R },
+					}),
+					crit(8, { -- Anduin Wrynn
+						["_encounter"] = { 2469, HEROIC_R },
+					}),
+					crit(9, { -- Lords of Dread
+						["_encounter"] = { 2457, HEROIC_R },
+					}),
+					crit(10, {-- Rygelon
+						["_encounter"] = { 2467, HEROIC_R },
+					}),
+					crit(11, {-- The Jailer
+						["_encounter"] = { 2464, HEROIC_R },
+					}),
+				}),
+				ach(15490, {	-- Mythic: Sepulcher of the First Ones
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						15479,	-- Mythic: Vigilant Guardian
+						15480,	-- Mythic: Skolex
+						15481,	-- Mythic: Artificer Xy'mox
+						15482,	-- Mythic: Dausegne
+						15483,	-- Mythic: Prototype Pantheon
+						15484,	-- Mythic: Lihuvim
+						15485,	-- Mythic: Halondrus
+						15486,	-- Mythic: Anduin Wrynn
+						15487,	-- Mythic: Lords of Dread
+						15488,	-- Mythic: Rygelon
+						15489,	-- Mythic: The Jailer
+					}},
+				}),
+				ach(15491, {	-- Glory of the Sepulcher Raider
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						15381,	-- Power ON
+						15401,	-- Wisdom Comes From the Desert
+						15398,	-- Xy Never, Ever Marks the Spot.
+						15397,	-- Four Ring Circus
+						15400,	-- Where the Wild Beasts Are
+						15419,	-- The Protoform Matrix
+						15386,	-- Shimmering Secrets
+						15399,	-- Coming to Terms
+						15315,	-- Amidst Ourselves
+						15396,	-- We Are All Made of Stars
+						15494,	-- Damnation Aviation
+					}},
+					["g"] = {
+						i(187675),	-- Shimmering Aurelid (MOUNT!)
+					},
+				}),
+				ach(15409),	-- First Wonders
+				-- Fated
+				ach(15681, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Fate of the Sepulcher
+					crit(1, { -- Vigilant Guardian
+						["_encounter"] = { 2458, LFR_R },
+					}),
+					crit(2, { -- Skolex, the Insatiable Ravener
+						["_encounter"] = { 2465, LFR_R },
+					}),
+					crit(3, { -- Artificer Xy'mox
+						["_encounter"] = { 2470, LFR_R },
+					}),
+					crit(4, { -- Dausegne, the Fallen Oracle
+						["_encounter"] = { 2459, LFR_R },
+					}),
+					crit(5, { -- Prototype Pantheon
+						["_encounter"] = { 2460, LFR_R },
+					}),
+					crit(6, { -- Lihuvim, Principal Architect
+						["_encounter"] = { 2461, LFR_R },
+					}),
+					crit(7, { -- Halondrus the Reclaimer
+						["_encounter"] = { 2463, LFR_R },
+					}),
+					crit(8, { -- Anduin Wrynn
+						["_encounter"] = { 2469, LFR_R },
+					}),
+					crit(9, { -- Lords of Dread
+						["_encounter"] = { 2457, LFR_R },
+					}),
+					crit(10, {-- Rygelon
+						["_encounter"] = { 2467, LFR_R },
+					}),
+					crit(11, {-- The Jailer
+						["_encounter"] = { 2464, LFR_R },
+					}),
+				})),
+				ach(15682, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Heroic: Fate of the Sepulcher
+					crit(1, { -- Vigilant Guardian
+						["_encounter"] = { 2458, HEROIC_R },
+					}),
+					crit(2, { -- Skolex, the Insatiable Ravener
+						["_encounter"] = { 2465, HEROIC_R },
+					}),
+					crit(3, { -- Artificer Xy'mox
+						["_encounter"] = { 2470, HEROIC_R },
+					}),
+					crit(4, { -- Dausegne, the Fallen Oracle
+						["_encounter"] = { 2459, HEROIC_R },
+					}),
+					crit(5, { -- Prototype Pantheon
+						["_encounter"] = { 2460, HEROIC_R },
+					}),
+					crit(6, { -- Lihuvim, Principal Architect
+						["_encounter"] = { 2461, HEROIC_R },
+					}),
+					crit(7, { -- Halondrus the Reclaimer
+						["_encounter"] = { 2463, HEROIC_R },
+					}),
+					crit(8, { -- Anduin Wrynn
+						["_encounter"] = { 2469, HEROIC_R },
+					}),
+					crit(9, { -- Lords of Dread
+						["_encounter"] = { 2457, HEROIC_R },
+					}),
+					crit(10, {-- Rygelon
+						["_encounter"] = { 2467, HEROIC_R },
+					}),
+					crit(11, {-- The Jailer
+						["_encounter"] = { 2464, HEROIC_R },
+					}),
+				})),
+				ach(15683, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Mythic: Fate of the Sepulcher
+					crit(1, { -- Vigilant Guardian
+						["_encounter"] = { 2458, MYTHIC_R },
+					}),
+					crit(2, { -- Skolex, the Insatiable Ravener
+						["_encounter"] = { 2465, MYTHIC_R },
+					}),
+					crit(3, { -- Artificer Xy'mox
+						["_encounter"] = { 2470, MYTHIC_R },
+					}),
+					crit(4, { -- Dausegne, the Fallen Oracle
+						["_encounter"] = { 2459, MYTHIC_R },
+					}),
+					crit(5, { -- Prototype Pantheon
+						["_encounter"] = { 2460, MYTHIC_R },
+					}),
+					crit(6, { -- Lihuvim, Principal Architect
+						["_encounter"] = { 2461, MYTHIC_R },
+					}),
+					crit(7, { -- Halondrus the Reclaimer
+						["_encounter"] = { 2463, MYTHIC_R },
+					}),
+					crit(8, { -- Anduin Wrynn
+						["_encounter"] = { 2469, MYTHIC_R },
+					}),
+					crit(9, { -- Lords of Dread
+						["_encounter"] = { 2457, MYTHIC_R },
+					}),
+					crit(10, {-- Rygelon
+						["_encounter"] = { 2467, MYTHIC_R },
+					}),
+					crit(11, {-- The Jailer
+						["_encounter"] = { 2464, MYTHIC_R },
+					}),
+				})),
+				-- Guild Achievements
+				ach(15472),		-- Sepulcher of the First Ones Guild Run
+				ach(15473),		-- Heroic Sepulcher of the First Ones Guild Run
+				ach(15474),		-- Mythic The Jailer Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
-					180773,	-- Vigilant Guardian
-					184522,	-- Vigilant Custodian
+					180773,	-- Vigilant Guardian — Vigilant Guardian
+					184522,	-- Vigilant Guardian — Vigilant Custodian
 					181395,	-- Skolex
 					183501, -- Artificer Xy'mox
-					184006,	-- Xy Reinforcer
-					184005,	-- Xy Reinforcer
-					184007,	-- Xy Reinforcer
 					181224,	-- Dausegne
-					181551,	-- Prototype of Duty
-					181549,	-- Prototype of War
-					181546,	-- Prototype of Renewal
-					181548,	-- Prototype of Absolution
+					181551,	-- Prototype Pantheon — Prototype of Duty
+					181549,	-- Prototype Pantheon — Prototype of War
+					181546,	-- Prototype Pantheon — Prototype of Renewal
+					181548,	-- Prototype Pantheon — Prototype of Absolution
 					182169,	-- Lihuvium
 					180906,	-- Halondrus the Reclaimer
 					181954,	-- Anduin Wrynn
-					181398,	-- Mal'Ganis <The Eternal>
-					181399,	-- Kin'tessa <The Beguiler>
+					181398,	-- Lords of Dread — Mal'Ganis <The Eternal>
+					181399,	-- Lords of Dread — Kin'tessa <The Beguiler>
 					182777,	-- Rygelon
 					185421,	-- Zovaal <The Jailer>
 				},
@@ -365,7 +591,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
 				}),
 			}),
-			d(17, {	-- LFR
+			d(LFR_R, {
 				n(ZONE_DROPS, {
 					i(190629),	-- Cartel's Larcenous Toecaps
 					i(190630),	-- Devouring Pellicle Shoulderpads
@@ -377,345 +603,299 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					i(190627),	-- Subversive Lord's Leggings
 					i(190631),	-- Vandalized Ephemera Mitts
 				}),
-				ach(15493, {	-- Ephemeral Plains
-					["g"] = {
-						e(2458, {	-- Vigilant Guardian
-							["crs"] = {
-								180773,	-- Vigilant Guardian
-								184522,	-- Vigilant Custodian
-							},
-							["g"] = {
-								crit(1, {	-- Vigilant Guardian
-									["achievementID"] = 15417,	-- Sepulcher of the First Ones
-								}),
-								i(189771),	-- Ancient Materium Tassets
-								i(188273),	-- Auxillary Attendant Chime
-								i(189774),	-- Fractured Colossus Core
-								i(189776),	-- Girdle of the First Gate
-								i(189775),	-- Helm of Solemn Vigil
-								i(189779),	-- Key to the Immortal Hearth
-								i(189778),	-- Legplates of the Slumbering Sentinel
-								i(189772),	-- Modified Defense Grid
-								i(189770),	-- Pre-Fabricated Footpads
-								i(189584),	-- Sepulcher's Savior
-								i(189777),	-- Unstable Giant's Cuffs
-							},
-						}),
-						e(2465, {	-- Skolex, the Insatiable Ravener
-							["crs"] = { 181395 },	-- Skolex
-							["g"] = {
-								crit(2, {	-- Skolex, the Insatiable Ravener
-									["achievementID"] = 15417,	-- Sepulcher of the First Ones
-								}),
-								i(189819),	-- Assimilated Safeguard
-								i(188267),	-- Bells of the Endless Feast
-								i(189816),	-- Crystallized Viscera Spike
-								i(189812),	-- Devourer's Sandblown Hidebinders
-								i(189810),	-- Ephemera-Softened Exoskeleton
-								i(189814),	-- Gluttonous Gardbrace
-								i(189811),	-- Infinitely Collapsing Coil
-								i(189815),	-- Lurking Predator's Camouflage
-								i(189813),	-- Mantle of the Broken Beast
-								i(189817),	-- Rift-Scarred Solcrusher
-								i(189809),	-- Skolex's Ravenous Skinguards
-							},
-						}),
-						e(2470, {	-- Artificer Xy'mox
-							["crs"] = {
-								183501, -- Artificer Xy'mox
-								184006,	-- Xy Reinforcer
-								184005,	-- Xy Reinforcer
-								184007,	-- Xy Reinforcer
-							},
-							["g"] = {
-								crit(3, {	-- Artificer Xy'mox
-									["achievementID"] = 15417,	-- Sepulcher of the First Ones
-								}),
-								i(188265),	-- Cache of Acquired Treasures
-								i(189827),	-- Cartel Xy's Proof of Initiation
-								i(189826),	-- Enforcer's Containment Cinch
-								i(189829),	-- Forerunner's Relic Blade
-								i(189821),	-- Illicit Artifact Holster
-								i(189822),	-- Imported Illidari Spaulders
-								i(188266),	-- Pulsating Riftshard
-								i(189830),	-- Replicated Relic Blade
-								i(189823),	-- Stolen Nathrian Slippers
-								i(189824),	-- Unlicensed Hyperlight Handlers
-								i(189825),	-- Veiled Auctioneer's Vambraces
-								i(189828),	-- Xy Captain's Crossbow
-							},
-						}),
-						e(2463, {	-- Halondrus the Reclaimer
-							["crs"] = { 180906 },	-- Halondrus the Reclaimer
-							["g"] = {
-								crit(7, {	-- Halondrus the Reclaimer
-									["achievementID"] = 15417,	-- Sepulcher of the First Ones
-								}),
-								i(188264),	-- Earthbreaker's Impact
-								i(189831),	-- Ephemera-Stained Sollerets
-								i(189832),	-- Greatboots of the Roaming Goliath
-								i(189834),	-- Guardstaff of the Great Cycle
-								i(189806),	-- Lightshatter Hatchet
-								i(189781),	-- Obscured Fractal Prism
-								i(188263),	-- Reclaimer's Intensity Core
-								i(189833),	-- Taciturn Keeper's Lapis
-								-- Tier
-								i(191018, {	-- Dreadful Leg Module
-									i(188866),	-- Chausses of the First Eidolon
-									i(188893),	-- Mercurial Punisher's Breeches
-									i(188887),	-- Leggings of the Demon Star
-								}),
-								i(191019, {	-- Mystic Leg Module
-									i(188848),	-- Leggings of the Fixed Stars
-									i(188860),	-- Godstalker's Tassets
-									i(188842),	-- Erudite Occultist's Leggings
-								}),
-								i(191020, {	-- Venerated Leg Module
-									i(188931),	-- Luminous Chevalier's Robes
-									i(188878),	-- Leggings of the Empyrean
-									i(188924),	-- Theurgic Starspeaker's Tassets
-								}),
-								i(191021, {	-- Zenith Leg Module
-									i(188911),	-- Legguards of the Grand Upwelling
-									i(188902),	-- Soulblade Leggings
-									i(188940),	-- Legplates of the Infinite Infantry
-								}),
-							},
-						}),
-					},
+				header(HEADERS.Achievement, 15493, {	-- Ephemeral Plains
+					e(2458, {	-- Vigilant Guardian
+						["crs"] = {
+							180773,	-- Vigilant Guardian
+							184522,	-- Vigilant Custodian
+						},
+						["g"] = {
+							i(189771),	-- Ancient Materium Tassets
+							i(188273),	-- Auxillary Attendant Chime
+							i(189774),	-- Fractured Colossus Core
+							i(189776),	-- Girdle of the First Gate
+							i(189775),	-- Helm of Solemn Vigil
+							i(189779),	-- Key to the Immortal Hearth
+							i(189778),	-- Legplates of the Slumbering Sentinel
+							i(189772),	-- Modified Defense Grid
+							i(189770),	-- Pre-Fabricated Footpads
+							i(189584),	-- Sepulcher's Savior
+							i(189777),	-- Unstable Giant's Cuffs
+						},
+					}),
+					e(2465, {	-- Skolex, the Insatiable Ravener
+						["crs"] = { 181395 },	-- Skolex
+						["g"] = {
+							i(189819),	-- Assimilated Safeguard
+							i(188267),	-- Bells of the Endless Feast
+							i(189816),	-- Crystallized Viscera Spike
+							i(189812),	-- Devourer's Sandblown Hidebinders
+							i(189810),	-- Ephemera-Softened Exoskeleton
+							i(189814),	-- Gluttonous Gardbrace
+							i(189811),	-- Infinitely Collapsing Coil
+							i(189815),	-- Lurking Predator's Camouflage
+							i(189813),	-- Mantle of the Broken Beast
+							i(189817),	-- Rift-Scarred Solcrusher
+							i(189809),	-- Skolex's Ravenous Skinguards
+						},
+					}),
+					e(2470, {	-- Artificer Xy'mox
+						["crs"] = { 183501 },	-- Artificer Xy'mox
+						["g"] = {
+							i(188265),	-- Cache of Acquired Treasures
+							i(189827),	-- Cartel Xy's Proof of Initiation
+							i(189826),	-- Enforcer's Containment Cinch
+							i(189829),	-- Forerunner's Relic Blade
+							i(189821),	-- Illicit Artifact Holster
+							i(189822),	-- Imported Illidari Spaulders
+							i(188266),	-- Pulsating Riftshard
+							i(189830),	-- Replicated Relic Blade
+							i(189823),	-- Stolen Nathrian Slippers
+							i(189824),	-- Unlicensed Hyperlight Handlers
+							i(189825),	-- Veiled Auctioneer's Vambraces
+							i(189828),	-- Xy Captain's Crossbow
+						},
+					}),
+					e(2463, {	-- Halondrus the Reclaimer
+						["crs"] = { 180906 },	-- Halondrus the Reclaimer
+						["g"] = {
+							i(188264),	-- Earthbreaker's Impact
+							i(189831),	-- Ephemera-Stained Sollerets
+							i(189832),	-- Greatboots of the Roaming Goliath
+							i(189834),	-- Guardstaff of the Great Cycle
+							i(189806),	-- Lightshatter Hatchet
+							i(189781),	-- Obscured Fractal Prism
+							i(188263),	-- Reclaimer's Intensity Core
+							i(189833),	-- Taciturn Keeper's Lapis
+							-- Tier
+							i(191018, {	-- Dreadful Leg Module
+								i(188866),	-- Chausses of the First Eidolon
+								i(188893),	-- Mercurial Punisher's Breeches
+								i(188887),	-- Leggings of the Demon Star
+							}),
+							i(191019, {	-- Mystic Leg Module
+								i(188848),	-- Leggings of the Fixed Stars
+								i(188860),	-- Godstalker's Tassets
+								i(188842),	-- Erudite Occultist's Leggings
+							}),
+							i(191020, {	-- Venerated Leg Module
+								i(188931),	-- Luminous Chevalier's Robes
+								i(188878),	-- Leggings of the Empyrean
+								i(188924),	-- Theurgic Starspeaker's Tassets
+							}),
+							i(191021, {	-- Zenith Leg Module
+								i(188911),	-- Legguards of the Grand Upwelling
+								i(188902),	-- Soulblade Leggings
+								i(188940),	-- Legplates of the Infinite Infantry
+							}),
+						},
+					}),
 				}),
-				ach(15492, {	-- Cornerstone of Creation
-					["g"] = {
-						e(2459, {	-- Dausegne, the Fallen Oracle
-							["crs"] = { 181224 },	-- Dausegne
-							["g"] = {
-								crit(4, {	-- Dausegne, the Fallen Oracle
-									["achievementID"] = 15417,	-- Sepulcher of the First Ones
-								}),
-								i(189773),	-- Clasp of Crooked Crescendos
-								i(189787),	-- Dausegne's Dissonant Halo
-								i(189807),	-- Discordant Deathblade
-								i(189791),	-- Drape of Mournful Melodies
-								i(189784),	-- Epaulets of the Ailing Aria
-								i(189790),	-- Final Forte
-								i(189782),	-- Haunting Hymnal Robes
-								i(189788),	-- Maestro's Malice
-								i(189785),	-- Oracle's Chromatic Cuirass
-								i(188272),	-- Resonant Reservoir
-								i(189793),	-- Sash of the Silent Sonata
-								i(189786),	-- Song-Mad Sabatons
-							},
-						}),
-						e(2460, {	-- Prototype Pantheon
-							["crs"] = {
-								181551,	-- Prototype of Duty
-								181549,	-- Prototype of War
-								181546,	-- Prototype of Renewal
-								181548,	-- Prototype of Absolution
-							},
-							["g"] = {
-								crit(5, {	-- Prototype Pantheon
-									["achievementID"] = 15417,	-- Sepulcher of the First Ones
-								}),
-								i(189794),	-- Boots of Ceaseless Conflict
-								i(189796),	-- Duty's Ascendant Breastplate
-								i(188270),	-- Elegy of the Eternals
-								i(189799),	-- Elysia's Promise
-								i(189798),	-- Moccasins of Dreadful Absolution
-								i(189800),	-- Prelude to Pride
-								i(189789),	-- Pursuit of Victory
-								i(189783),	-- Sin-Steeped Coronet
-								i(188271),	-- The First Sigil
-								i(189795),	-- Winter's Stampeding Striders
-								i(189797),	-- Wristwraps of Night's Renewal
-							},
-						}),
-						e(2461, {	-- Lihuvim, Principal Architect
-							["crs"] = { 182169 },	-- Lihuvium
-							["g"] = {
-								crit(6, {	-- Lihuvim, Principal Architect
-									["achievementID"] = 15417,	-- Sepulcher of the First Ones
-								}),
-								i(188268),	-- Architect's Ingenuity Core
-								i(189803),	-- Automa-Tender's Tights
-								i(189805),	-- Bracers of the Inscrutable Inventor
-								i(189804),	-- Combustible Collaboration Girdle
-								i(189801),	-- Ephemera-Charged Thinking Cap
-								i(189754),	-- Genesis Lathe
-								i(189808),	-- Lihuvim's Severing Scalpel
-								i(189802),	-- Loquacious Keeper's Peridot
-								i(188269),	-- Pocket Protoforge
-								ig(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
-								ig(189178),	-- Tools of Incomprehensible Experimentation (PS)
-								-- Tier
-								i(191014, {	-- Dreadful Hand Module
-									i(188863),	-- Gauntlets of the First Eidolon
-									i(188898),	-- Mercurial Punisher's Grips
-									i(188890),	-- Grasps of the Demon Star
-								}),
-								i(191015, {	-- Mystic Hand Module
-									i(188853),	-- Handwraps of the Fixed Stars
-									i(188861),	-- Godstalker's Gauntlets
-									i(188845),	-- Erudite Occultist's Handwraps
-								}),
-								i(191016, {	-- Venerated Hand Module
-									i(188928),	-- Luminous Chevalier's Gauntlets
-									i(188881),	-- Caress of the Empyrean
-									i(188925),	-- Theurgic Starspeaker's Runebindings
-								}),
-								i(191017, {	-- Zenith Hand Module
-									i(188916),	-- Grips of the Grand Upwelling
-									i(188907),	-- Soulblade Grasps
-									i(188937),	-- Grasps of the Infinite Infantry
-								}),
-							},
-						}),
-					},
+				header(HEADERS.Achievement, 15492, {	-- Cornerstone of Creation
+					e(2459, {	-- Dausegne, the Fallen Oracle
+						["crs"] = { 181224 },	-- Dausegne
+						["g"] = {
+							i(189773),	-- Clasp of Crooked Crescendos
+							i(189787),	-- Dausegne's Dissonant Halo
+							i(189807),	-- Discordant Deathblade
+							i(189791),	-- Drape of Mournful Melodies
+							i(189784),	-- Epaulets of the Ailing Aria
+							i(189790),	-- Final Forte
+							i(189782),	-- Haunting Hymnal Robes
+							i(189788),	-- Maestro's Malice
+							i(189785),	-- Oracle's Chromatic Cuirass
+							i(188272),	-- Resonant Reservoir
+							i(189793),	-- Sash of the Silent Sonata
+							i(189786),	-- Song-Mad Sabatons
+						},
+					}),
+					e(2460, {	-- Prototype Pantheon
+						["crs"] = {
+							181551,	-- Prototype of Duty
+							181549,	-- Prototype of War
+							181546,	-- Prototype of Renewal
+							181548,	-- Prototype of Absolution
+						},
+						["g"] = {
+							i(189794),	-- Boots of Ceaseless Conflict
+							i(189796),	-- Duty's Ascendant Breastplate
+							i(188270),	-- Elegy of the Eternals
+							i(189799),	-- Elysia's Promise
+							i(189798),	-- Moccasins of Dreadful Absolution
+							i(189800),	-- Prelude to Pride
+							i(189789),	-- Pursuit of Victory
+							i(189783),	-- Sin-Steeped Coronet
+							i(188271),	-- The First Sigil
+							i(189795),	-- Winter's Stampeding Striders
+							i(189797),	-- Wristwraps of Night's Renewal
+						},
+					}),
+					e(2461, {	-- Lihuvim, Principal Architect
+						["crs"] = { 182169 },	-- Lihuvium
+						["g"] = {
+							i(188268),	-- Architect's Ingenuity Core
+							i(189803),	-- Automa-Tender's Tights
+							i(189805),	-- Bracers of the Inscrutable Inventor
+							i(189804),	-- Combustible Collaboration Girdle
+							i(189801),	-- Ephemera-Charged Thinking Cap
+							i(189754),	-- Genesis Lathe
+							i(189808),	-- Lihuvim's Severing Scalpel
+							i(189802),	-- Loquacious Keeper's Peridot
+							i(188269),	-- Pocket Protoforge
+							ig(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
+							ig(189178),	-- Tools of Incomprehensible Experimentation (PS)
+							-- Tier
+							i(191014, {	-- Dreadful Hand Module
+								i(188863),	-- Gauntlets of the First Eidolon
+								i(188898),	-- Mercurial Punisher's Grips
+								i(188890),	-- Grasps of the Demon Star
+							}),
+							i(191015, {	-- Mystic Hand Module
+								i(188853),	-- Handwraps of the Fixed Stars
+								i(188861),	-- Godstalker's Gauntlets
+								i(188845),	-- Erudite Occultist's Handwraps
+							}),
+							i(191016, {	-- Venerated Hand Module
+								i(188928),	-- Luminous Chevalier's Gauntlets
+								i(188881),	-- Caress of the Empyrean
+								i(188925),	-- Theurgic Starspeaker's Runebindings
+							}),
+							i(191017, {	-- Zenith Hand Module
+								i(188916),	-- Grips of the Grand Upwelling
+								i(188907),	-- Soulblade Grasps
+								i(188937),	-- Grasps of the Infinite Infantry
+							}),
+						},
+					}),
 				}),
-				ach(15416, {	-- Domination's Grasp
-					["g"] = {
-						e(2469, {	-- Anduin Wrynn
-							["crs"] = { 181954 },	-- Anduin Wrynn
-							["g"] = {
-								crit(8, {	-- Anduin Wrynn
-									["achievementID"] = 15417,	-- Sepulcher of the First Ones
-								}),
-								i(189835),	-- Anduin's Princely Vestments
-								i(189838),	-- Beacon of Stormwind
-								i(189837),	-- King's Wolfheart Wasitband
-								i(189840),	-- Remnant's Blasphemous Scourgebelt
-								i(189841),	-- Soulwarped Seal of Menethil
-								i(189839),	-- Soulwarped Seal of Wrynn
-								i(188262),	-- The Lion's Roar
-								i(189836),	-- Wrists of the Wicked Star
-								-- Tier
-								i(191005, {	-- Dreadful Helm Module
-									i(188868),	-- Visage of the First Eidolon
-									i(188892),	-- Mercurial Punisher's Hood
-									i(188889),	-- Horns of the Demon Star
-								}),
-								i(191002, {	-- Mystic Helm Module
-									i(188847),	-- Headpiece of the Fixed Stars
-									i(188859),	-- Godstalker's Sallet
-									i(188844),	-- Erudite Occultist's Hood
-								}),
-								i(191003, {	-- Venerated Helm Module
-									i(188933),	-- Luminous Chevalier's Casque
-									i(188880),	-- Amice of the Empyrean
-									i(188923),	-- Theurgic Starspeaker's Howl
-								}),
-								i(191004, {	-- Zenith Helm Module
-									i(188910),	-- Crown of the Grand Upwelling
-									i(188901),	-- Soulblade Guise
-									i(188942),	-- Gaze of the Infinite Infantry
-								}),
-							},
-						}),
-						e(2457, {	-- Lords of Dread
-							["crs"] = {
-								181398,	-- Mal'Ganis <The Eternal>
-								181399,	-- Kin'tessa <The Beguiler>
-							},
-							["g"] = {
-								crit(9, {	-- Lords of Dread
-									["achievementID"] = 15417,	-- Sepulcher of the First Ones
-								}),
-								i(189846),	-- Alandien's Tortured Twinblades
-								i(189842),	-- Cuffs of the Covert Commander
-								i(189844),	-- Gauntlets of Unseen Guests
-								i(189843),	-- Grasps of Abducted Fate
-								i(188255),	-- Heart of the Swarm
-								i(188261),	-- Intrusive Thoughtcage
-								i(189845),	-- Ruined Crest of Lordaeron
-								i(189847),	-- Shroud of the Sire's Chosen
-								-- Tier
-								i(191006, {	-- Dreadful Shoulder Module
-									i(188867),	-- Shoulderplates of the First Eidolon
-									i(188896),	-- Mercurial Punisher's Shoulderpads
-									i(188888),	-- Mantle of the Demon Star
-								}),
-								i(191007, {	-- Mystic Shoulder Module
-									i(188851),	-- Shoulderpads of the Fixed Stars
-									i(188856),	-- Godstalker's Pauldrons
-									i(188843),	-- Erudite Occultist's Mantle
-								}),
-								i(191008, {	-- Venerated Shoulder Module
-									i(188932),	-- Luminous Chevalier's Epaulettes
-									i(188879),	-- Capelet of the Empyrean
-									i(188920),	-- Theurgic Starspeaker's Adornment
-								}),
-								i(191009, {	-- Zenith Shoulder Module
-									i(188914),	-- Tassets of the Grand Upwelling
-									i(188905),	-- Soulblade Nightwings
-									i(188941),	-- Pauldrons of the Infinite Infantry
-								}),
-							},
-						}),
-						e(2467, {	-- Rygelon
-							["crs"] = { 182777 },	-- Rygelon
-							["g"] = {
-								crit(10, {	-- Rygelon
-									["achievementID"] = 15417,	-- Sepulcher of the First Ones
-								}),
-								i(189852),	-- Antumbra, Shadow of the Cosmos
-								i(189853),	-- Astral Verdict
-								i(189851),	-- Devastated Worldshard
-								i(188254),	-- Grim Eclipse
-								i(189850),	-- Handguards of Hidden Realms
-								i(189849),	-- Interdimensional Manica
-								i(191001),	-- Observer's Umbral Shiv
-								i(189854),	-- Rygelon's Heraldric Ring
-								i(189848),	-- Treads of Titanic Curiosity
-								-- Tier
-								i(191010, {	-- Dreadful Chest Module
-									i(188864),	-- Carapace of the First Eidolon
-									i(188894),	-- Mercurial Punisher's Jerkin
-									i(188884),	-- Robes of the Demon Star
-								}),
-								i(191011, {	-- Mystic Chest Module
-									i(188849),	-- Chestguard of the Fixed Stars
-									i(188858),	-- Godstalker's Hauberk
-									i(188839),	-- Erudite Occultist's Robes
-								}),
-								i(191012, {	-- Venerated Chest Module
-									i(188929),	-- Luminous Chevalier's Plackart
-									i(188875),	-- Habit of the Empyrean
-									i(188922),	-- Theurgic Starspeaker's Ringmail
-								}),
-								i(191013, {	-- Zenith Chest Module
-									i(188912),	-- Cuirass of the Grand Upwelling
-									i(188903),	-- Soulblade Leathers
-									i(188938),	-- Breastplate of the Infinite Infantry
-								}),
-							},
-						}),
-					},
+				header(HEADERS.Achievement, 15416, {	-- Domination's Grasp
+					e(2469, {	-- Anduin Wrynn
+						["crs"] = { 181954 },	-- Anduin Wrynn
+						["g"] = {
+							i(189835),	-- Anduin's Princely Vestments
+							i(189838),	-- Beacon of Stormwind
+							i(189837),	-- King's Wolfheart Wasitband
+							i(189840),	-- Remnant's Blasphemous Scourgebelt
+							i(189841),	-- Soulwarped Seal of Menethil
+							i(189839),	-- Soulwarped Seal of Wrynn
+							i(188262),	-- The Lion's Roar
+							i(189836),	-- Wrists of the Wicked Star
+							-- Tier
+							i(191005, {	-- Dreadful Helm Module
+								i(188868),	-- Visage of the First Eidolon
+								i(188892),	-- Mercurial Punisher's Hood
+								i(188889),	-- Horns of the Demon Star
+							}),
+							i(191002, {	-- Mystic Helm Module
+								i(188847),	-- Headpiece of the Fixed Stars
+								i(188859),	-- Godstalker's Sallet
+								i(188844),	-- Erudite Occultist's Hood
+							}),
+							i(191003, {	-- Venerated Helm Module
+								i(188933),	-- Luminous Chevalier's Casque
+								i(188880),	-- Amice of the Empyrean
+								i(188923),	-- Theurgic Starspeaker's Howl
+							}),
+							i(191004, {	-- Zenith Helm Module
+								i(188910),	-- Crown of the Grand Upwelling
+								i(188901),	-- Soulblade Guise
+								i(188942),	-- Gaze of the Infinite Infantry
+							}),
+						},
+					}),
+					e(2457, {	-- Lords of Dread
+						["crs"] = {
+							181398,	-- Mal'Ganis <The Eternal>
+							181399,	-- Kin'tessa <The Beguiler>
+						},
+						["g"] = {
+							i(189846),	-- Alandien's Tortured Twinblades
+							i(189842),	-- Cuffs of the Covert Commander
+							i(189844),	-- Gauntlets of Unseen Guests
+							i(189843),	-- Grasps of Abducted Fate
+							i(188255),	-- Heart of the Swarm
+							i(188261),	-- Intrusive Thoughtcage
+							i(189845),	-- Ruined Crest of Lordaeron
+							i(189847),	-- Shroud of the Sire's Chosen
+							-- Tier
+							i(191006, {	-- Dreadful Shoulder Module
+								i(188867),	-- Shoulderplates of the First Eidolon
+								i(188896),	-- Mercurial Punisher's Shoulderpads
+								i(188888),	-- Mantle of the Demon Star
+							}),
+							i(191007, {	-- Mystic Shoulder Module
+								i(188851),	-- Shoulderpads of the Fixed Stars
+								i(188856),	-- Godstalker's Pauldrons
+								i(188843),	-- Erudite Occultist's Mantle
+							}),
+							i(191008, {	-- Venerated Shoulder Module
+								i(188932),	-- Luminous Chevalier's Epaulettes
+								i(188879),	-- Capelet of the Empyrean
+								i(188920),	-- Theurgic Starspeaker's Adornment
+							}),
+							i(191009, {	-- Zenith Shoulder Module
+								i(188914),	-- Tassets of the Grand Upwelling
+								i(188905),	-- Soulblade Nightwings
+								i(188941),	-- Pauldrons of the Infinite Infantry
+							}),
+						},
+					}),
+					e(2467, {	-- Rygelon
+						["crs"] = { 182777 },	-- Rygelon
+						["g"] = {
+							i(189852),	-- Antumbra, Shadow of the Cosmos
+							i(189853),	-- Astral Verdict
+							i(189851),	-- Devastated Worldshard
+							i(188254),	-- Grim Eclipse
+							i(189850),	-- Handguards of Hidden Realms
+							i(189849),	-- Interdimensional Manica
+							i(191001),	-- Observer's Umbral Shiv
+							i(189854),	-- Rygelon's Heraldric Ring
+							i(189848),	-- Treads of Titanic Curiosity
+							-- Tier
+							i(191010, {	-- Dreadful Chest Module
+								i(188864),	-- Carapace of the First Eidolon
+								i(188894),	-- Mercurial Punisher's Jerkin
+								i(188884),	-- Robes of the Demon Star
+							}),
+							i(191011, {	-- Mystic Chest Module
+								i(188849),	-- Chestguard of the Fixed Stars
+								i(188858),	-- Godstalker's Hauberk
+								i(188839),	-- Erudite Occultist's Robes
+							}),
+							i(191012, {	-- Venerated Chest Module
+								i(188929),	-- Luminous Chevalier's Plackart
+								i(188875),	-- Habit of the Empyrean
+								i(188922),	-- Theurgic Starspeaker's Ringmail
+							}),
+							i(191013, {	-- Zenith Chest Module
+								i(188912),	-- Cuirass of the Grand Upwelling
+								i(188903),	-- Soulblade Leathers
+								i(188938),	-- Breastplate of the Infinite Infantry
+							}),
+						},
+					}),
 				}),
-				ach(15418, {	-- The Grand Design
-					["g"] = {
-						e(2464, {	-- The Jailer
-							["crs"] = { 185421 },	-- Zovaal <The Jailer>
-							["g"] = {
-								crit(11, {	-- The Jailer
-									["achievementID"] = 15417,	-- Sepulcher of the First Ones
-								}),
-								i(189855),	-- Bindings of the Banished One
-								i(188252),	-- Chains of Domination
-								i(189818),	-- Domination's Deliverance
-								i(189857),	-- Epochal Oppressor's Greaves
-								i(189860),	-- Forbidden Truth
-								i(189862),	-- Gavel of the First Arbiter
-								i(189858),	-- Legguards of the Ultimate Threat
-								i(189856),	-- Runecarver's Twisted Ward
-								i(188253),	-- Scars of Fraternal Strife
-								i(189859),	-- Worldkiller Iris
-								i(189861),	-- Zovastrum, the Unmaking
-							},
-						}),
-					},
+				header(HEADERS.Achievement, 15418, {	-- The Grand Design
+					e(2464, {	-- The Jailer
+						["crs"] = { 185421 },	-- Zovaal <The Jailer>
+						["g"] = {
+							i(189855),	-- Bindings of the Banished One
+							i(188252),	-- Chains of Domination
+							i(189818),	-- Domination's Deliverance
+							i(189857),	-- Epochal Oppressor's Greaves
+							i(189860),	-- Forbidden Truth
+							i(189862),	-- Gavel of the First Arbiter
+							i(189858),	-- Legguards of the Ultimate Threat
+							i(189856),	-- Runecarver's Twisted Ward
+							i(188253),	-- Scars of Fraternal Strife
+							i(189859),	-- Worldkiller Iris
+							i(189861),	-- Zovastrum, the Unmaking
+						},
+					}),
 				}),
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_R, {
 				n(QUESTS, {
 					q(65764, {	-- Sepulcher of the First Ones - Heavy is the Crown
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
@@ -744,9 +924,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						184522,	-- Vigilant Custodian
 					},
 					["g"] = {
-						crit(1, {	-- Vigilant Guardian
-							["achievementID"] = 15417,	-- Sepulcher of the First Ones
-						}),
 						ach(15381),	-- Power ON
 						i(189771),	-- Ancient Materium Tassets
 						i(188273),	-- Auxillary Attendant Chime
@@ -764,9 +941,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2465, {	-- Skolex, the Insatiable Ravener
 					["crs"] = { 181395 },	-- Skolex
 					["g"] = {
-						crit(2, {	-- Skolex, the Insatiable Ravener
-							["achievementID"] = 15417,	-- Sepulcher of the First Ones
-						}),
 						ach(15401),	-- Wisdom Comes From the Desert
 						i(189819),	-- Assimilated Safeguard
 						i(188267),	-- Bells of the Endless Feast
@@ -782,16 +956,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				e(2470, {	-- Artificer Xy'mox
-					["crs"] = {
-						183501, -- Artificer Xy'mox
-						184006,	-- Xy Reinforcer
-						184005,	-- Xy Reinforcer
-						184007,	-- Xy Reinforcer
-					},
+					["crs"] = { 183501 }, -- Artificer Xy'mox
 					["g"] = {
-						crit(3, {	-- Artificer Xy'mox
-							["achievementID"] = 15417,	-- Sepulcher of the First Ones
-						}),
 						ach(15398),	-- Xy Never, Ever Marks the Spot.
 						i(188265),	-- Cache of Acquired Treasures
 						i(189827),	-- Cartel Xy's Proof of Initiation
@@ -811,9 +977,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2459, {	-- Dausegne, the Fallen Oracle
 					["crs"] = { 181224 },	-- Dausegne
 					["g"] = {
-						crit(4, {	-- Dausegne, the Fallen Oracle
-							["achievementID"] = 15417,	-- Sepulcher of the First Ones
-						}),
 						ach(15397),	-- Four Ring Circus
 						i(189773),	-- Clasp of Crooked Crescendos
 						i(189787),	-- Dausegne's Dissonant Halo
@@ -837,9 +1000,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						181548,	-- Prototype of Absolution
 					},
 					["g"] = {
-						crit(5, {	-- Prototype Pantheon
-							["achievementID"] = 15417,	-- Sepulcher of the First Ones
-						}),
 						ach(15400),	-- Where the Wild Beasts Are
 						i(189794),	-- Boots of Ceaseless Conflict
 						i(189796),	-- Duty's Ascendant Breastplate
@@ -857,9 +1017,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2461, {	-- Lihuvim, Principal Architect
 					["crs"] = { 182169 },	-- Lihuvium
 					["g"] = {
-						crit(6, {	-- Lihuvim, Principal Architect
-							["achievementID"] = 15417,	-- Sepulcher of the First Ones
-						}),
 						ach(15419),	-- The Protoform Matrix
 						i(188268),	-- Architect's Ingenuity Core
 						i(189803),	-- Automa-Tender's Tights
@@ -898,9 +1055,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2463, {	-- Halondrus the Reclaimer
 					["crs"] = { 180906 },	-- Halondrus the Reclaimer
 					["g"] = {
-						crit(7, {	-- Halondrus the Reclaimer
-							["achievementID"] = 15417,	-- Sepulcher of the First Ones
-						}),
 						ach(15386),	-- Shimmering Secrets
 						i(188264),	-- Earthbreaker's Impact
 						i(189831),	-- Ephemera-Stained Sollerets
@@ -936,9 +1090,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2469, {	-- Anduin Wrynn
 					["crs"] = { 181954 },	-- Anduin Wrynn
 					["g"] = {
-						crit(8, {	-- Anduin Wrynn
-							["achievementID"] = 15417,	-- Sepulcher of the First Ones
-						}),
 						ach(15399),	-- Coming to Terms
 						i(189835),	-- Anduin's Princely Vestments
 						i(189838),	-- Beacon of Stormwind
@@ -978,9 +1129,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						181399,	-- Kin'tessa <The Beguiler>
 					},
 					["g"] = {
-						crit(9, {	-- Lords of Dread
-							["achievementID"] = 15417,	-- Sepulcher of the First Ones
-						}),
 						ach(15315),	-- Amidst Ourselves
 						i(189846),	-- Alandien's Tortured Twinblades
 						i(189842),	-- Cuffs of the Covert Commander
@@ -1016,9 +1164,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2467, {	-- Rygelon
 					["crs"] = { 182777 },	-- Rygelon
 					["g"] = {
-						crit(10, {	-- Rygelon
-							["achievementID"] = 15417,	-- Sepulcher of the First Ones
-						}),
 						ach(15396),	-- We Are All Made of Stars
 						i(189852),	-- Antumbra, Shadow of the Cosmos
 						i(189853),	-- Astral Verdict
@@ -1055,9 +1200,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2464, {	-- The Jailer
 					["crs"] = { 185421 },	-- Zovaal <The Jailer>
 					["g"] = {
-						crit(11, {	-- The Jailer
-							["achievementID"] = 15417,	-- Sepulcher of the First Ones
-						}),
 						ach(15494),	-- Damnation Aviation
 						i(189855),	-- Bindings of the Banished One
 						i(188252),	-- Chains of Domination
@@ -1073,11 +1215,10 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 			}),
-			d(15, {	-- Heroic
+			d(HEROIC_R, {
 				n(QUESTS, {
 					q(65717, bubbleDownSelf({	-- Final Shape
-						["timeline"] = { "added 9.2.0", REMOVED_DF_REL },
-						["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
+						["timeline"] = { ADDED_SL_S3, REMOVED_DF_REL },
 					},{
 						["provider"] = { "i", 190773 },	-- Carcinized Protoform
 						["g"] = {
@@ -1111,9 +1252,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						184522,	-- Vigilant Custodian
 					},
 					["g"] = {
-						crit(1, {	-- Vigilant Guardian
-							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
-						}),
 						i(189771),	-- Ancient Materium Tassets
 						i(188273),	-- Auxillary Attendant Chime
 						i(189774),	-- Fractured Colossus Core
@@ -1130,9 +1268,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2465, {	-- Skolex, the Insatiable Ravener
 					["crs"] = { 181395 },	-- Skolex
 					["g"] = {
-						crit(2, {	-- Skolex, the Insatiable Ravener
-							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
-						}),
 						i(189819),	-- Assimilated Safeguard
 						i(188267),	-- Bells of the Endless Feast
 						i(189816),	-- Crystallized Viscera Spike
@@ -1147,16 +1282,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				e(2470, {	-- Artificer Xy'mox
-					["crs"] = {
-						183501, -- Artificer Xy'mox
-						184006,	-- Xy Reinforcer
-						184005,	-- Xy Reinforcer
-						184007,	-- Xy Reinforcer
-					},
+					["crs"] = { 183501 }, -- Artificer Xy'mox
 					["g"] = {
-						crit(3, {	-- Artificer Xy'mox
-							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
-						}),
 						i(188265),	-- Cache of Acquired Treasures
 						i(189827),	-- Cartel Xy's Proof of Initiation
 						i(189826),	-- Enforcer's Containment Cinch
@@ -1174,9 +1301,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2459, {	-- Dausegne, the Fallen Oracle
 					["crs"] = { 181224 },	-- Dausegne
 					["g"] = {
-						crit(4, {	-- Dausegne, the Fallen Oracle
-							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
-						}),
 						i(189773),	-- Clasp of Crooked Crescendos
 						i(189787),	-- Dausegne's Dissonant Halo
 						i(189807),	-- Discordant Deathblade
@@ -1199,9 +1323,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						181548,	-- Prototype of Absolution
 					},
 					["g"] = {
-						crit(5, {	-- Prototype Pantheon
-							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
-						}),
 						i(189794),	-- Boots of Ceaseless Conflict
 						i(189796),	-- Duty's Ascendant Breastplate
 						i(188270),	-- Elegy of the Eternals
@@ -1219,9 +1340,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2461, {	-- Lihuvim, Principal Architect
 					["crs"] = { 182169 },	-- Lihuvium
 					["g"] = {
-						crit(6, {	-- Lihuvim, Principal Architect
-							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
-						}),
 						i(188268),	-- Architect's Ingenuity Core
 						i(189803),	-- Automa-Tender's Tights
 						i(189805),	-- Bracers of the Inscrutable Inventor
@@ -1259,9 +1377,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2463, {	-- Halondrus the Reclaimer
 					["crs"] = { 180906 },	-- Halondrus the Reclaimer
 					["g"] = {
-						crit(7, {	-- Halondrus the Reclaimer
-							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
-						}),
 						i(188264),	-- Earthbreaker's Impact
 						i(189831),	-- Ephemera-Stained Sollerets
 						i(189832),	-- Greatboots of the Roaming Goliath
@@ -1296,9 +1411,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2469, {	-- Anduin Wrynn
 					["crs"] = { 181954 },	-- Anduin Wrynn
 					["g"] = {
-						crit(8, {	-- Anduin Wrynn
-							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
-						}),
 						i(189835),	-- Anduin's Princely Vestments
 						i(189838),	-- Beacon of Stormwind
 						i(189837),	-- King's Wolfheart Wasitband
@@ -1338,9 +1450,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						181399,	-- Kin'tessa <The Beguiler>
 					},
 					["g"] = {
-						crit(9, {	-- Lords of Dread
-							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
-						}),
 						i(189846),	-- Alandien's Tortured Twinblades
 						i(189842),	-- Cuffs of the Covert Commander
 						i(189844),	-- Gauntlets of Unseen Guests
@@ -1375,10 +1484,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2467, {	-- Rygelon
 					["crs"] = { 182777 },	-- Rygelon
 					["g"] = {
-						crit(10, {	-- Rygelon
-							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
-						}),
-						ach(15468, {["timeline"] = { "added 9.2.7", REMOVED_DF_REL }}),	-- We Are All Made of Stars [Heroic]
+						ach(15468, {["timeline"] = { ADDED_SL_2_7, REMOVED_DF_REL }}),	-- We Are All Made of Stars [Heroic]
 						i(189852),	-- Antumbra, Shadow of the Cosmos
 						i(189853),	-- Astral Verdict
 						i(189851),	-- Devastated Worldshard
@@ -1414,10 +1520,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2464, {	-- The Jailer
 					["crs"] = { 185421 },	-- Zovaal <The Jailer>
 					["g"] = {
-						crit(11, {	-- The Jailer
-							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
-						}),
-						ach(15470, {["timeline"] = { "added 9.2.0", REMOVED_SL_S4 }}),	-- Ahead of the Curve: The Jailer
+						ach(15470, {["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 }}),	-- Ahead of the Curve: The Jailer
 						i(189855),	-- Bindings of the Banished One
 						i(188252),	-- Chains of Domination
 						i(189818),	-- Domination's Deliverance
@@ -1429,12 +1532,12 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188253),	-- Scars of Fraternal Strife
 						i(189859),	-- Worldkiller Iris
 						i(189861),	-- Zovastrum, the Unmaking
-						i(190773, {["timeline"] = { "added 9.2.0", REMOVED_DF_REL }}),	-- Carcinized Protoform (MOUNT! - QUEST)
+						i(190773, {["timeline"] = { ADDED_SL_S3, REMOVED_DF_REL }}),	-- Carcinized Protoform (MOUNT! - QUEST)
 						i(189982),	-- Silithid Soul
 					},
 				}),
 			}),
-			d(16, {	-- Mythic
+			d(MYTHIC_R, {
 				n(QUESTS, {
 					q(65762, {	-- Sepulcher of the First Ones - Heavy is the Crown
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
@@ -1495,12 +1598,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				e(2470, {	-- Artificer Xy'mox
-					["crs"] = {
-						183501, -- Artificer Xy'mox
-						184006,	-- Xy Reinforcer
-						184005,	-- Xy Reinforcer
-						184007,	-- Xy Reinforcer
-					},
+					["crs"] = { 183501 }, -- Artificer Xy'mox
 					["g"] = {
 						ach(15481),	-- Mythic: Artificer Xy'mox
 						i(188265),	-- Cache of Acquired Treasures
@@ -1710,7 +1808,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					["crs"] = { 182777 },	-- Rygelon
 					["g"] = {
 						ach(15488),	-- Mythic: Rygelon
-						ach(15469, {["timeline"] = { "added 9.2.7", REMOVED_DF_REL }}),	-- We Are All Made of Stars [Mythic]
+						ach(15469, {["timeline"] = { ADDED_SL_2_7, REMOVED_DF_REL }}),	-- We Are All Made of Stars [Mythic]
 						i(189852),	-- Antumbra, Shadow of the Cosmos
 						i(189853),	-- Astral Verdict
 						i(189851),	-- Devastated Worldshard
@@ -1746,20 +1844,22 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				e(2464, {	-- The Jailer
 					["crs"] = { 185421 },	-- Zovaal <The Jailer>
 					["g"] = {
-						ach(15489),	-- Mythic: The Jailer
-						ach(15476, bubbleDownSelf({["timeline"] = { "added 9.2.0", REMOVED_SL_S4 } }, {	-- Hall of Fame: The Jailer (A)
+						ach(15489, {	-- Mythic: The Jailer
+							title(455),	-- <Name>, Guardian of the Pattern
+						}),
+						ach(15476, bubbleDownSelf({["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {	-- Hall of Fame: The Jailer (A)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(454),	-- <Name>, Famed Slayer of The Banished One
 							},
 						})),
-						ach(15475, bubbleDownSelf({["timeline"] = { "added 9.2.0", REMOVED_SL_S4 } }, {	-- Hall of Fame: The Jailer (H)
+						ach(15475, bubbleDownSelf({["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 } }, {	-- Hall of Fame: The Jailer (H)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(454),	-- <Name>, Famed Slayer of The Banished One
 							},
 						})),
-						ach(15471, {["timeline"] = { "added 9.2.0", REMOVED_SL_S4 }}),	-- Cutting Edge: The Jailer
+						ach(15471, {["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 }}),	-- Cutting Edge: The Jailer
 						i(189855),	-- Bindings of the Banished One
 						i(188252),	-- Chains of Domination
 						i(189818),	-- Domination's Deliverance
@@ -1772,7 +1872,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189859),	-- Worldkiller Iris
 						i(189861),	-- Zovastrum, the Unmaking
 						i(190768),	-- Zereth Overseer (MOUNT!)
-						i(189982),	-- Silithid Soul
+						i(189982),	-- Silithid Soul (SS!)
 					},
 				}),
 			}),

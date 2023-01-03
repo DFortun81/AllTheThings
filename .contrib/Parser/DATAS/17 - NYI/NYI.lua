@@ -223,14 +223,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191826),	-- Obsidian Dracthyr Battlegear Belt
 			i(191827),	-- Obsidian Dracthyr Battlegear Bracers
 			i(191828),	-- Obsidian Dracthyr Battlegear Cover
-			-- NON SET THINGS
-			i(191942),	-- Belloc's Hat
-			-- Waking Shore Quest Rewards?
-			i(194379),	-- Field Scout's Longblade
-			i(194387),	-- Obsidian Watcher's Crossbow
+			i(191942),	-- Belloc's Hat [Added SpellIDs regarding this.. Belloc also lost his hat... In Waking Shores]
 			i(194398),	-- Crumbling Watcher's Stone (NYI)
-			i(194417),	-- Vault Guard's Talon
-			i(194420),	-- Blacktalon Blade
 			filter(COSMETIC, {
 				i(193069),	-- Climber's Pack
 				i(191647),	-- Tuskarr Fishing Pole
@@ -372,128 +366,67 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(190909),	-- Ruby Felfire Splitblade
 				i(190910),	-- Ruby Felfire Bulwark
 			}),
-			i(198730),	-- Dragonscale Expedition Tabard
-			i(198731),	-- Iskaara Tuskarr Tabard
-			i(198732),	-- Valdrakken Accord Tabard
+			-- This is usually from a quest at Renown Level Max-1.... Hopefully someone add them soon
+			-- I Dont Think These has been added yet...
 			i(199665),	-- Spiked Obsidian Spaulders
 			i(199666),	-- Spiked Azure Spaulders
 			i(199667),	-- Spiked Bronze Spaulders
 			i(199668),	-- Spiked Emerald Spaulders
-			i(200154),	-- Rubyscale Band
-			i(200161),	-- Razorwind Talisman
-			i(200185),	-- Grips of the Everflowing Ocean
-			i(200199),	-- Elements' Burden
-			i(200202),	-- Tomorrow's Chains
-			i(200203),	-- Repurposed Giant's Thimble
-			i(200204),	-- Sandshine Chestplate
-			i(200215),	-- Plumed Shoulderguards of the Hunt
-			i(200216),	-- Water Heating Cord
-			i(200228),	-- Protoscale Pauldrons
-			i(200229),	-- Slightly Digested Leggings
+			-- These are probably from rares... We just still missing Information
 			i(200230),	-- Terrorclaw Shoulderplates
-			i(200243),	-- Titanic Scholar's Finery
-			i(200251),	-- Medallion of the Ancestors
-			i(200261),	-- White Chitin Bandages
 			i(200280),	-- Decaying Ghostly Band
-			i(200291),	-- Waterlogged Racing Grips
-			i(200292),	-- Cragforge Pauldrons
-			i(200294),	-- Primal Chain Hauberk
-			i(200306),	-- Tempest Shawl
-			i(200309),	-- Rock Encrusted Chestguard
-			i(200313),	-- Earthen Protoscale Drape
-			i(200314),	-- Skyspeaker's Envelope
-			i(200434),	-- Anund's Mana-Singed Amice
-			i(200435),	-- Brackish Breeches
-			i(200436),	-- Gorestained Hauberk
-			i(200441),	-- Jhakan's Horned Cowl
-			i(200444),	-- Mantle of the Gatekeeper
-			i(200446),	-- Crystalized Sigil
-			i(200448),	-- Abyssal Ward
-			i(200542),	-- Breezy Companion
-			i(200549),	-- Restored Titan Artifact
 			i(200679),	-- Essence of Somnikus's Shade
-			i(200689),	-- Rimetalon Band
+			i(197933),	-- Lutokk's Wedding Ring
+			-- Old Cloaks with New IDs... Probably made for the cloak toy.
 			i(200708),	-- Polymorphic Cloak of Absorption
 			i(200710),	-- Ashjra'kamas
-			i(200735),	-- Magically Magical Faerie Flower
+
+
 			i(200737),	-- Pauldrons of Infinite Darkness
-			i(200741),	-- Pipspark's Prestigious Pendant of Protection
-			i(200758),	-- Breastplate of Storied Antiquity
-			i(200760),	-- Unstable Arcane Cell
-			i(200875),	-- Seeker's Bands
 			i(200968),	-- Sandshaped Winglord's Drape
-			i(201057),	-- Dreamfire Sabatons
-			i(201058),	-- Robes of the Verdant Wing
+
+			-- Green Dragon Set?
+			-- Dreamfire
 			i(201059),	-- Dreamfire Battleplate
+			i(201077),	-- Dreamfire Buckle
+			i(201063),	-- Dreamfire Gauntlets
+			i(201085),	-- Dreamfire Helm
+			i(201069),	-- Dreamfire Legplates
+			i(201074),	-- Dreamfire Pauldrons
+			i(201057),	-- Dreamfire Sabatons
+			i(201082),	-- Dreamfire Wristguards
+			-- Verdant Wing
+			i(201078),	-- Cord of the Verdant Wing
+			i(201064),	-- Gloves of the Verdant Wing
+			i(201066),	-- Hood of the Verdant Wing
+			i(201070),	-- Leggings of the Verdant Wing
+			i(201075),	-- Mantle of the Verdant Wing
+			i(201058),	-- Robes of the Verdant Wing
+			i(201086),	-- Slippers of the Verdant Wing
+			i(201081),	-- Wraps of the Verdant Wing
+			-- Emerald Scale
+			i(201083),	-- Emerald Scale Armguards
 			i(201060),	-- Emerald Scale Chainmail
+			i(201067),	-- Emerald Scale Coif
+			i(201065),	-- Emerald Scale Grips
+			i(201071),	-- Emerald Scale Legguards
+			i(201079),	-- Emerald Scale Loop
+			i(201076),	-- Emerald Scale Spaulders
+			i(201087),	-- Emerald Scale Treads
+			-- Green Draketracker
+			i(201080),	-- Green Draketracker's Belt
+			i(201088),	-- Green Draketracker's Boots
+			i(201084),	-- Green Draketracker's Bracers
+			i(201072),	-- Green Draketracker's Britches
+			i(201068),	-- Green Draketracker's Cowl
 			i(201061),	-- Green Draketracker's Vest
 			i(201062),	-- Green Draketracker's Mitts
-			i(201063),	-- Dreamfire Gauntlets
-			i(201064),	-- Gloves of the Verdant Wing
-			i(201065),	-- Emerald Scale Grips
-			i(201066),	-- Hood of the Verdant Wing
-			i(201067),	-- Emerald Scale Coif
-			i(201068),	-- Green Draketracker's Cowl
-			i(201069),	-- Dreamfire Legplates
-			i(201070),	-- Leggings of the Verdant Wing
-			i(201071),	-- Emerald Scale Legguards
-			i(201072),	-- Green Draketracker's Britches
 			i(201073),	-- Green Draketracker's Shoulderpads
-			i(201074),	-- Dreamfire Pauldrons
-			i(201075),	-- Mantle of the Verdant Wing
-			i(201076),	-- Emerald Scale Spaulders
-			i(201077),	-- Dreamfire Buckle
-			i(201078),	-- Cord of the Verdant Wing
-			i(201079),	-- Emerald Scale Loop
-			i(201080),	-- Green Draketracker's Belt
-			i(201081),	-- Wraps of the Verdant Wing
-			i(201082),	-- Dreamfire Wristguards
-			i(201083),	-- Emerald Scale Armguards
-			i(201084),	-- Green Draketracker's Bracers
-			i(201085),	-- Dreamfire Helm
-			i(201086),	-- Slippers of the Verdant Wing
-			i(201087),	-- Emerald Scale Treads
-			i(201088),	-- Green Draketracker's Boots
 
+			-- NYI?
 			i(202116),	-- Alacritous Alchemist Stone
 
-			i(202117),	-- Assembly Preserver's Band
-			i(202118),	-- Assembly Guardian's Ring
-			i(202119),	-- Assembly Scholar's Loop
-		}),
-		filter(BATTLE_PETS, {
-			i(191126),	-- Obsidian Whelpling
-			i(191915),	-- Time-Lost Feral Rabbit
-			i(191929),	-- zzOld - [PH] White Flying Squirrel (REUSE)
-			i(191930),	-- Blue Phoenix Hatchling
-			i(192050),	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
-			i(193587),	-- Time-Lost Duck
-			i(193063),	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
-			i(193068),	-- Time-Lost Treeflitter
-			i(193235),	-- Scarlet Ottuk Pup
-			i(193363),	-- Auburntusk Calf
-			i(193364),	-- Time-Lost Baby Mammoth
-			i(193373),	-- Phoenix Wishwing
-			i(193374),	-- Crimson Phoenix Hatchling
-			i(193377),	-- Time-Lost Phoenix Hatchling
-			i(193380),	-- Pink Salamanther
-			i(193429),	-- Time-Lost Salamanther
-			i(193835),	-- Brightfeather
-			i(193850),	-- Time-Lost Timbertooth
-			i(193851),	-- Purple Frillfish
-			i(193853),	-- Emerald Frillfish
-			i(193854),	-- Blue Vorquin Foal
-			i(193855),	-- Time-Lost Vorquin Foal
-			i(193862),	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
-			i(193863),	-- zzOld - [PH] Dark Baby Vorquin (REUSE)
-			i(193614),	-- Groundshaker
-			i(193620),	-- Time-Lost Slyvern
-			i(193908),	-- Sapphire Crystalspine
-			i(198622),	-- Spyragos
-			i(200874),	-- Lady Feathersworth
 
-			i(201838),	-- Snowclaw Cub
-			i(202085),	-- Bugbiter Tortoise
 		}),
 		n(CRAFTABLES, {
 			i(193361),	-- zzOldIncomplete Hunting Necklace
@@ -509,15 +442,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191879),	-- DNT - Stonename Weightstone
 			i(191880),	-- DNT - Stonename Whetstone
 			i(191881),	-- DNT - Stonename Whetstone
-			i(192095),	-- Spool of Wilderthread+
-			i(192096),	-- Spool of Wilderthread++
-			i(192097),	-- Spool of Wilderthread+++
+
 			i(192078),	-- Bottled Putrescence
 			i(194828),	-- Stacked Deck of Darkmoon Mysteries
 			i(194873),	-- Apprentice's Fluffed Quill
 			i(194903),	-- Pocket Chocolate
-			i(198137),	-- Esoteric Dragon Shard of Knowledge
-			i(198151),	-- Cracked Heart in a Bottle
+
 			--
 			i(198086),	-- Darkmoon Deck: Inferno
 			i(198087),	-- Darkmoon Deck: Rime
@@ -535,7 +465,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			prof(LEATHERWORKING, {
 				i(193209),	-- Quality Bone
-				i(193477),	-- Battle Scarred Scale
 			}),
 		}),
 		filter(MISC, {
@@ -544,7 +473,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(187621),	-- Writ of Construction
 			--
 			i(187637),	-- Navarro's Backpack
-			i(189765),	-- Maruuk Centaur Supply Satchel
 			i(190233),	-- Maruuk Centaur Supplies
 			i(190340),	-- Plainshunter's Supplies
 			i(191203),	-- Dragonscale Expedition Supplies
@@ -558,9 +486,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			---
 		}),
 		n(PROFESSIONS, {
-			i(193905),	-- Iskaaran Trading Ledger
-			i(193907),	-- Chipped Tyrstone
-			i(193909),	-- Ancient Gem Fragments
 			i(194040),	-- Slateskin Hide
 			i(194041),	-- Driftbloom Sprout
 			i(194054),	-- Dredged Seedling
@@ -617,15 +542,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198798),	-- Flashfrozen Scroll
 			i(198799),	-- Forgotten Arcane Tome
 			i(198800),	-- Fractured Titanic Sphere
-			i(198963),	-- Decaying Phlegm
-			i(198964),	-- Elementious Splinter
-			i(198969),	-- Keeper's Mark
-			i(198970),	-- Infinitely Attachable Pair o' Docks
-			i(198971),	-- Curious Djaradin Rune
-			i(198972),	-- Draconic Glamour
-			i(198974),	-- Elegantly Engraved Embellishment
-			i(198975),	-- Ossified Hide
-			i(198978),	-- Stupidly Effective Stitchery
 			i(199115),	-- Herbalism Field Notes
 			i(199122),	-- Mining Field Notes
 			i(199128),	-- Skinning Field Notes
@@ -634,7 +550,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200508),	-- Propagating Roused Seedling
 			i(200509),	-- Agitated Roused Seedling
 			i(200638),	-- Bubblefilled Flounder
-			i(200652),	-- Alchemical Flavor Pocket
 			i(198656),	-- Painter's Pretty Jewel
 			i(201003),	-- Furry Gloop
 			i(201012),	-- Enchanted Debris
@@ -645,13 +560,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201017),	-- Igneous Gem
 			i(201019),	-- Ancient Dragonweave Bolt
 			i(201020),	-- Silky Surprise
-			i(201356),	-- Glimmer of Fire
-			i(201357),	-- Glimmer of Frost
-			i(201358),	-- Glimmer of Air
-			i(201359),	-- Glimmer of Earth
 			i(201360),	-- Glimmer of Order
 			i(201361),	-- Primal Inspiration
-			i(201716),	-- Notebook of Crafting Knowledge
 
 			i(198853),	-- Tinker: Always Malfunction
 		}),
@@ -670,18 +580,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191889),	-- Ancient Sword Design
 			i(192128),	-- Reinforced Scale Sample
 			i(192129),	-- Azure Basilisk Belly
-			i(193600),	-- Lost Battlepack
-			i(193611),	-- Ancient Horn Ring
 			i(198133),	-- Golden Expedition Compass
 			i(198134),	-- Shiny Surveyor Scope
 			i(198135),	-- Jeb's Supply Pack
-			i(199831),	-- Forgotten Dragon Crest
-			i(199840),	-- Wrapped Gold Band
-			i(199842),	-- Stone Dragontooth
-			i(199895),	-- Chunk of Sculpture
-			i(199915),	-- Ancient Obsidian Charm
-			i(201411),	-- Ancient Vault Artifact
-			i(201412),	-- Ancient Vault Artifact
 		}),
 		n(TREASURES, {
 			i(191058),	-- Dilapidated Parchment: Bottom Half
@@ -700,62 +601,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198085),	-- Lost Obsidian Cache Key
 		}),
 		n(WEAPONS, {
-			i(189055),	-- Ghendish's Backup Talisman
-			-- WQ?
-			i(197922),	-- Cavalry's Charging Lance
-			i(197923),	-- Bloodcharger's Skewer
-			i(197924),	-- Wyrm Poacher's Emberblade
-			i(197926),	-- Billowing Magmathrower's Cudgel
-			i(197927),	-- Djaradin Bludgeoning Hammer
-			--
-			i(197931),	-- Waking Shores Cleaver
-			i(197933),	-- Lutokk's Wedding Ring
-			i(197935),	-- Seafarer's Hatchet
-			i(197936),	-- Serrated Deboning Knife
-			i(197937),	-- Intricate Scaling Knife
-			i(197938),	-- Uktulut Whaling Spear
-			i(197942),	-- Tuskarr Navigator's Staff
-			i(197944),	-- Deepsea Hunter's Crossbow
-			i(197945),	-- Gnarled Thorn Bow
-			i(197953),	-- Ancient Protector's Broadsword
-			i(197955),	-- Sword of the Eternal Guard
-				-- Thaldraszus
-			i(195177),	-- Moment's Notice
-			i(195181),	-- Rapid Fire
-
-
-			i(197684),	-- Argali Shearing Blade
 			i(197693),	-- Shikaar Hunter's Crossbow
-			i(197904),	-- Shikaar Hunting Knife
 			i(200130),	-- Corpse Ripper
-			i(200138),	-- Ancient Dancer's Longspear
 			i(200139),	-- Tempest Arc
-			i(200145),	-- Hilted Monolith
-			i(200147),	-- Web-Woven Robe
-			i(200151),	-- Seamist Blade
-			i(200171),	-- Grymheart Blade
-			i(200155),	-- Haphazardly Welded Protector
-			i(200175),	-- Repurposed Anvil
-			i(200176),	-- Missingway Hand Cannon
-			i(200181),	-- Blade of Blazing Torment
-			i(200197),	-- Armoredon Herding Crook
-			i(200206),	-- Behemoth Slayer Greatbow
-			i(200231),	-- Flaming Stonescale Bulwark
-			i(200233),	-- Paradox Saber
-			i(200237),	-- Burnished Lifewarder's Targe
+			i(200176),	-- Missingway Hand Canno
 			i(200241),	-- Stormcaller's Ritual Hatchet
 			i(200242),	-- Watcher's Lightning Rod
-			i(200250),	-- Frost Tipped Glaive
-			i(200253),	-- Snowspring Incanter's Knife
-			i(200257),	-- Decay Infused Branch
-			i(200259),	-- Forest Dweller's Shield
-			i(200293),	-- Primal Scion's Twinblade
-			i(200297),	-- Hastily Cobbled Maul
-			i(200301),	-- Reclaimed Tuskarr Harpoon
-			i(200302),	-- Magmaforged Scimitar
-			i(200307),	-- Viciously Hooked Cleaver
-			i(200308),	-- Rellen's Legacy
-			i(200437),	-- Dreamsong Censer
+			-- Green Dragon Stuff?
 			i(201231),	-- Bident of Hallucinations
 			i(201232),	-- Bonedust Spreader
 			i(201233),	-- Verdant Drakespine Glaive
@@ -775,19 +627,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201247),	-- Whaler's Fang
 			i(201248),	-- Dreamfused Scaled Protector
 			i(201249),	-- Dreamfire Imbued Drakehorn
-			i(201363),	-- Brackenhide Hollow Maul
-			i(201365),	-- Brackenhide Gnoll Guard
-			i(201367),	-- Hollow Hunter's Sticker
-			i(201368),	-- Brackenhide Hollow Barbslinger
-			i(201369),	-- Hollow Greatwood Pestilence
-			i(201370),	-- Brackenhide Skullcracker
-			i(201380),	-- Nokhud Hunter's Bow
-			i(201382),	-- Centaur Warglaives
-
-
-
-			i(201934),	-- Nokuhd Whittling Knife
-		--
 		}),
 		n(DRAKEWATCHER_MANUSCRIPTS, {
 			i(192111),	-- Renewed Proto-Drake: Red Scales
@@ -797,7 +636,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor
 			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
 			i(196970),	-- Cliffside Wylderdrake: Spiked Back
-			i(196971),	-- Cliffside Wylderdrake: Spiked Brow
 			i(196974),	-- Cliffside Wylderdrake: Four Horned Chin
 			i(196975),	-- Cliffside Wylderdrake: Head Fin
 			i(196978),	-- Cliffside Wylderdrake: Small Head Spikes
@@ -817,7 +655,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197014),	-- Cliffside Wylderdrake: White Scales
 			i(197015),	-- Cliffside Wylderdrake: Dark Skin Variation
 			i(197016),	-- Cliffside Wylderdrake: Maned Tail
-			i(197017),	-- Cliffside Wylderdrake: Large Tail Spikes
 			i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail
 			i(197022),	-- Cliffside Wylderdrake: Finned Neck
 			i(197095),	-- Highland Drake: Gold and White Armor
@@ -833,7 +670,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197124),	-- Highland Drake: Swept Horns
 			i(197128),	-- Highland Drake: Curled Back Horns
 			i(197129),	-- Highland Drake: Sleek Horns
-			i(197130),	-- Highland Drake: Stag Horns
 			i(197131),	-- Highland Drake: Hairy Cheek
 			i(197134),	-- Highland Drake: Spiked Legs
 			i(197136),	-- Highland Drake: Taperered Nose
@@ -881,7 +717,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197628),	-- Windborne Velocidrake: Plated Neck
 			i(197629),	-- Windborne Velocidrake: Spiked Neck
 			i(197630),	-- Windborne Velocidrake: Feathered Neck
-			i(197636),	-- Windborne Velocidrake: Shrieker Pattern'
+			i(197636),	-- Windborne Velocidrake: Shrieker Pattern
 
 			--
 			i(194830),	-- Renewed Proto Drake Manuscript: Red Hair
@@ -907,24 +743,18 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198657),	-- Forgotten Jewelry Box
 			i(199110),	-- Mechanical Maestro Duck
 			i(198863),	-- Small Dragon Expedition Supply Pack
-			i(198864),	-- Large Maruuk Centaur Supply Satchel
 			i(198865),	-- Large Dragon Expedition Supply Pack
-			i(198866),	-- Small Iskaaran Supply Pack
 			i(198867),	-- Large Iskaaran Supply Pack
 			i(198868),	-- Small Valdrakken Accord Supply Pack
 			i(198869),	-- Large Valdrakken Accord Supply Pack
 			i(199472),	-- Overflowing Dragon Expedition Supply Pack
 			i(199473),	-- Overflowing Iskaaran Supply Pack
-			i(199474),	-- Overflowing Maruuk Centaur Supply Satchel
 			i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 			i(200285),	-- Dragonscale Expedition Insignia
 			i(200287),	-- Iskaara Tuskarr Insignia
 			i(200288),	-- Maruuk Centaur Insignia
 			i(200289),	-- Valdrakken Accord Insignia
 			i(200218),	-- Charred Fishing Pole
-			i(200443),	-- Dragon Isles Artifact
-			i(200449),	-- Sacred Tuskarr Totem
-			i(200450),	-- Titan Relic
 			i(200452),	-- Dragonscale Expedition Insignia
 			i(200453),	-- Iskaara Tuskarr Insignia
 			i(200454),	-- Maruuk Centaur Insignia
@@ -936,48 +766,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201355),	-- Eternal Equipment Chest
 			i(201362),	-- Fated Equipment Chest
 			i(201757),	-- Plundered Supplies
-			i(201836),	-- Valdrakken Token of Merit
-			i(201841),	-- Ensemble: Cosmic Aspirant's Plate Armor
-			i(201842),	-- Ensemble: Cosmic Aspirant's Mail Armor
-			i(201843),	-- Ensemble: Cosmic Aspirant's Leather Armor
-			i(201844),	-- Ensemble: Cosmic Aspirant's Cloth Armor
-			i(201845),	-- Ensemble: Cosmic Gladiator's Warrior Armor
-			i(201846),	-- Ensemble: Cosmic Gladiator's Warlock Armor
-			i(201847),	-- Ensemble: Cosmic Gladiator's Shaman Armor
-			i(201848),	-- Ensemble: Cosmic Gladiator's Rogue Armor
-			i(201849),	-- Ensemble: Cosmic Gladiator's Priest Armor
-			i(201850),	-- Ensemble: Cosmic Gladiator's Paladin Armor
-			i(201851),	-- Ensemble: Cosmic Gladiator's Monk Armor
-			i(201852),	-- Ensemble: Cosmic Gladiator's Mage Armor
-			i(201853),	-- Ensemble: Cosmic Gladiator's Hunter Armor
-			i(201854),	-- Ensemble: Cosmic Gladiator's Druid Armor
-			i(201855),	-- Ensemble: Cosmic Gladiator's Demon Hunter Armor
-			i(201856),	-- Ensemble: Cosmic Gladiator's Death Knight Armor
-			i(201857),	-- Ensemble: Unchained Aspirant's Plate Armor
-			i(201858),	-- Ensemble: Unchained Aspirant's Mail Armor
-			i(201859),	-- Ensemble: Unchained Aspirant's Leather Armor
-			i(201860),	-- Ensemble: Unchained Aspirant's Cloth Armor
-			i(201861),	-- Ensemble: Unchained Gladiator's Plate Armor
-			i(201862),	-- Ensemble: Unchained Gladiator's Mail Armor
-			i(201863),	-- Ensemble: Unchained Gladiator's Leather Armor
-			i(201864),	-- Ensemble: Unchained Gladiator's Cloth Armor
-			i(201865),	-- Ensemble: Sinful Aspirant's Plate Armor
-			i(201866),	-- Ensemble: Sinful Aspirant's Mail Armor
-			i(201867),	-- Ensemble: Sinful Aspirant's Leather Armor
-			i(201868),	-- Ensemble: Sinful Aspirant's Cloth Armor
-			i(201869),	-- Ensemble: Sinful Gladiator's Plate Armor
-			i(201870),	-- Ensemble: Sinful Gladiator's Mail Armor
-			i(201871),	-- Ensemble: Sinful Gladiator's Leather Armor
-			i(201872),	-- Ensemble: Sinful Gladiator's Cloth Armor
-			i(201873),	-- Arsenal: Cosmic Gladiator's Weapons
-			i(201875),	-- Arsenal: Cosmic Aspirant's Weapons
-			i(201876),	-- Arsenal: Unchained Gladiator's Weapons
-			i(201877),	-- Arsenal: Unchained Aspirant's Weapons
-			i(201878),	-- Arsenal: Sinful Aspirant's Weapons
-			i(201879),	-- Arsenal: Sinful Gladiator's Revendreth Weapons
-			i(201880),	-- Arsenal: Sinful Gladiator's Maldraxxus Weapons
-			i(201881),	-- Arsenal: Sinful Gladiator's Bastion Weapons
-			i(201882),	-- Arsenal: Sinful Gladiator's Ardenweald Weapons
 			i(201921),	-- Dragonscale Expedition Insignia
 			i(201922),	-- Iskaara Tuskarr Insignia
 			i(201923),	-- Maruuk Centaur Insignia
@@ -987,13 +775,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(202093),	-- Valdrakken Accord Insignia
 			i(202094),	-- Maruuk Centaur Insignia
 			i(202171),	-- Dragon Purse
-			i(202079),	-- Cache of Vault Treasures
-			i(202080),	-- Cache of Vault Treasures
 			-- Fishing
 			i(199641),	-- Reinforced Irontree Harpoon Handle
 			i(199695),	-- Iskaaran Fishing Net
 			i(199696),	-- Iskaaran Ice Axe
-			i(199697),	-- Polished Basalt Bracelet
 			i(199698),	-- Irontree Harpoon Handle
 			i(199844),	-- Serevite Harpoon Head
 			i(199845),	-- Jagged Serevite Harpoon Head
@@ -1004,16 +789,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199850),	-- Imbu Knot
 			i(199851),	-- Double Imbu Knot
 			i(200077),	-- Wooden Pole
-			i(200079),	-- Sea-Polished Basalt
-			i(200080),	-- Draconium Nugget
-			i(200081),	-- Hardened Seavine
 			i(200082),	-- Battered Imbu-made Net
-			i(200083),	-- Irontree Branch
 			i(200084),	-- Salinated Serevite
-			i(200086),	-- Khaz'gorite-infused Resin
 		}),
 		------------- PROBABLY NYI ---------------------
-		n(ARMOR, {
+
+		inst(1200, {	-- Vault of the Incarnates
 			d(17, {	-- LFR
 				i(202146),	-- Brawler's Earthen Cuirass [BoP]
 				i(202148),	-- Emissary's Flamewrought Seal [BoP]
@@ -1047,128 +828,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(202149),	-- Primalist Warden's Bracers [BoP]
 				i(202143),	-- Woven Stone Bracelets [BoP]
 			}),
-		}),
-		n(ARMOR, {
-			i(191934),	-- TEMP Event Stream TEMP - No Buckle Fleshscale Belt
-			filter(CLOTH, {
-				i(188960),	-- 10.0 Zone Uncommon Template <Descriptor> Vestment
-				i(188961),	-- 10.0 Zone Uncommon Template <Descriptor> Sandals
-				i(188962),	-- 10.0 Zone Uncommon Template <Descriptor> Handwraps
-				i(188963),	-- 10.0 Zone Uncommon Template <Descriptor> Hood
-				i(188964),	-- 10.0 Zone Uncommon Template <Descriptor> Leggings
-				i(188965),	-- 10.0 Zone Uncommon Template <Descriptor> Cord
-				i(188966),	-- 10.0 Zone Uncommon Template <Descriptor> Wristwraps
-				i(188991),	-- 10.0 Zone Uncommon Template <Descriptor> Shoulderpads
-				i(189007),	-- 10.0 End Game Template <Descriptor> Vestment
-				i(189008),	-- 10.0 End Game Template <Descriptor> Sandals
-				i(189009),	-- 10.0 End Game Template <Descriptor> Handwraps
-				i(189010),	-- 10.0 End Game Template <Descriptor> Cowl
-				i(189011),	-- 10.0 End Game Template <Descriptor> Leggings
-				i(189012),	-- 10.0 End Game Template <Descriptor> Cord
-				i(189013),	-- 10.0 End Game Template <Descriptor> Cuffs
-				i(189038),	-- 10.0 End Game Template <Descriptor> Shoulderpads
-			}),
-			filter(LEATHER, {
-				i(188967),	-- 10.0 Zone Uncommon Template <Descriptor> Treads
-				i(188968),	-- 10.0 Zone Uncommon Template <Descriptor> Grips
-				i(188969),	-- 10.0 Zone Uncommon Template <Descriptor> Helm
-				i(188970),	-- 10.0 Zone Uncommon Template <Descriptor> Breeches
-				i(188971),	-- 10.0 Zone Uncommon Template <Descriptor> Belt
-				i(188972),	-- 10.0 Zone Uncommon Template <Descriptor> Bindings
-				i(188989),	-- 10.0 Zone Uncommon Template <Descriptor> Tunic
-				i(188990),	-- 10.0 Zone Uncommon Template <Descriptor> Epaulets
-				i(189014),	-- 10.0 End Game Template <Descriptor> Waders
-				i(189015),	-- 10.0 End Game Template <Descriptor> Grips
-				i(189016),	-- 10.0 End Game Template <Descriptor> Helm
-				i(189017),	-- 10.0 End Game Template <Descriptor> Breeches
-				i(189018),	-- 10.0 End Game Template <Descriptor> Sash
-				i(189019),	-- 10.0 End Game Template <Descriptor> Bindings
-				i(189036),	-- 10.0 End Game Template <Descriptor> Vest
-				i(189037),	-- 10.0 End Game Template <Descriptor> Epaulets
-
-				i(198142),	-- Copy Headpiece of the druid name PH
-				i(198143),	-- Copy Leggings of the druid name PH
-				i(198144),	-- Copy Chestguard of the druid name PH
-				i(198145),	-- Copy Bracers of the druid name PH
-				i(198146),	-- Copy Shoulderpads of the druid name PH
-				i(198147),	-- Copy Cincture of the druid name PH
-				i(198148),	-- Copy Handwraps of the druid name PH
-				i(198149),	-- Copy Footwraps of the druid name PH
-				i(198150),	-- Copy Wrap of the druid name PH
-			}),
-			filter(MAIL, {
-				i(188973),	-- 10.0 Zone Uncommon Template <Descriptor> Chainmail
-				i(188974),	-- 10.0 Zone Uncommon Template <Descriptor> Striders
-				i(188975),	-- 10.0 Zone Uncommon Template <Descriptor> Gloves
-				i(188976),	-- 10.0 Zone Uncommon Template <Descriptor> Helm
-				i(188977),	-- 10.0 Zone Uncommon Template <Descriptor> Leggings
-				i(188978),	-- 10.0 Zone Uncommon Template <Descriptor> Shoulderguards
-				i(188979),	-- 10.0 Zone Uncommon Template <Descriptor> Cinch
-				i(188980),	-- 10.0 Zone Uncommon Template <Descriptor> Bracers
-				i(189020),	-- 10.0 End Game Template <Descriptor> Chainmail
-				i(189021),	-- 10.0 End Game Template <Descriptor> Striders
-				i(189022),	-- 10.0 End Game Template <Descriptor> Grips
-				i(189023),	-- 10.0 End Game Template <Descriptor> Coif
-				i(189024),	-- 10.0 End Game Template <Descriptor> Greaves
-				i(189025),	-- 10.0 End Game Template <Descriptor> Shoulderguards
-				i(189026),	-- 10.0 End Game Template <Descriptor> Cinch
-				i(189027),	-- 10.0 End Game Template <Descriptor> Bracers
-				i(189060),	-- 10.0 End Game Template <Descriptor> Belt
-			}),
-			filter(PLATE, {
-				i(188981),	-- 10.0 Zone Uncommon Template <Descriptor> Helm
-				i(188982),	-- 10.0 Zone Uncommon Template <Descriptor> Breastplate
-				i(188983),	-- 10.0 Zone Uncommon Template <Descriptor> Footguards
-				i(188984),	-- 10.0 Zone Uncommon Template <Descriptor> Gauntlets
-				i(188985),	-- 10.0 Zone Uncommon Template <Descriptor> Legguards
-				i(188986),	-- 10.0 Zone Uncommon Template <Descriptor> Pauldrons
-				i(188987),	-- 10.0 Zone Uncommon Template <Descriptor> Cincture
-				i(188988),	-- 10.0 Zone Uncommon Template <Descriptor> Armplates
-				i(189028),	-- 10.0 End Game Template <Descriptor> Helm
-				i(189029),	-- 10.0 End Game Template <Descriptor> Breastplate
-				i(189030),	-- 10.0 End Game Template <Descriptor> Sabatons
-				i(189031),	-- 10.0 End Game Template <Descriptor> Gauntlets
-				i(189032),	-- 10.0 End Game Template <Descriptor> Legguards
-				i(189033),	-- 10.0 End Game Template <Descriptor> Mantle
-				i(189034),	-- 10.0 End Game Template <Descriptor> Girdle
-				i(189035),	-- 10.0 End Game Template <Descriptor> Armplates
-			}),
-			i(189002),	-- 10.0 Zone Uncommon Template <Descriptor> Signet
-			i(189003),	-- 10.0 Zone Uncommon Template <Descriptor> Band
-			i(189004),	-- 10.0 Zone Uncommon Template <Descriptor> Trinket
-			i(189005),	-- 10.0 Zone Uncommon Template <Descriptor> Necklace
-			i(189006),	-- 10.0 Zone Uncommon Template <Descriptor> Cape
-			i(189049),	-- 10.0 End Game Template <Descriptor> Band
-			i(189050),	-- 10.0 End Game Template <Descriptor> Signet
-			i(189058),	-- 10.0 End Game Template <Descriptor> Trinket
-			i(189059),	-- 10.0 End Game Template <Descriptor> Band
-			i(189061),	-- 10.0 End Game Template <Descriptor> Shawl
-			i(189062),	-- 10.0 End Game Template <Descriptor> Choker
-
-			-- Cosmetic
-			i(198342),	-- Tuskarr Expedition Pack
-			i(198385),	-- Draconian Garden Pick
-			i(198386),	-- Gardener's Tilling Spork
-
-			-- Trinket
-			i(198391),	-- zzOldDarkmoon Binding: Inferno
-			i(198392),	-- zzOldDarkmoon Binding: Awakened Chill
-			i(198393),	-- zzOldDarkmoon Binding: Refreshing Dance
-			i(198394),	-- zzOldDarkmoon Binding: Watcher
-			i(198433),	-- zzOldDarkmoon Deckbox: Awakened Chill
-			i(198434),	-- zzOldDarkmoon Deckbox: Refreshing Dance
-			i(198435),	-- zzOldDarkmoon Deckbox: Watcher
-
-
-
-			i(198531),	-- Peripheral Vision Projectors (TYLER'S TEST DNT)
-			i(198681),	-- Luke Test Belt [DNT]
-			i(199898),	-- Iskaara Fishing Pole
-			i(199932),	-- 10.0 Enchanting - Weapon - Wand 1
-			i(199933),	-- 10.0 Enchanting - Weapon - Wand 2
-			i(200995),	-- Obsidian Soldier's Cutlass [COMMENT: THIS IS PROBABLY NYI. REMOVED FROM SABE/WRATH QUATERMASTERS]
-			i(195467),	-- zzOld(DNT) Test Belt of Molten Metallic Awesomeness
-			i(194676),	-- Emboldened Dracthyr's Tabard [Lol they changed model]
 		}),
 		filter(MISC, {
 			i(193640),	-- Unstable Power Stone
@@ -1210,13 +869,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198733),	-- Wayfinderr's Compass (NYI)
 		}),
 		n(SOURCELESS, {
-			i(192026),	-- 10.0 PH Dragonscale Expedition Band
-			i(192027),	-- 10.0 PH Dragonscale Expedition Signet
-			i(192035),	-- 10.0 PH Dragonscale Expedition Trinket
-			i(192036),	-- 10.0 PH Dragonscale Expedition Band
-			i(192038),	-- 10.0 PH Dragonscale Expedition Shawl
-			i(192039),	-- 10.0 PH Dragonscale Expedition Choker
-			i(192464),	-- Darkmoon Deck: Ysera
+			-- Grey Darkal?
 			i(192556),	-- 10.0.0 Armor Cloak - Cape_Cloth_Sindragosa_D_01
 			i(192567),	-- 10.0 Poor Item Template - <Descriptor> Leather Cinch
 			i(192568),	-- 10.0 Poor Item Template - <Descriptor> Leather Footwraps
@@ -1250,245 +903,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192596),	-- 10.0 Poor Item Template - <Descriptor> Chain Gauntlets
 			i(192597),	-- 10.0 Poor Item Template - <Descriptor> Chain Helm
 			i(192598),	-- 10.0 Poor Item Template - <Descriptor> Chain Clasp
-			i(189063),	-- 10.0 QRP Template <Descriptor> Sabatons
-			i(189064),	-- 10.0 QRP Template <Descriptor> Vestments
-			i(189065),	-- 10.0 QRP Template <Descriptor> ChestPlate
-			i(189066),	-- 10.0 QRP Template <Descriptor> Hauberk
-			i(189067),	-- 10.0 QRP Template <Descriptor> Vest
-			i(189068),	-- 10.0 QRP Template <Descriptor> Gloves
-			i(189069),	-- 10.0 QRP Template <Descriptor> Gauntlets
-			i(189070),	-- 10.0 QRP Template <Descriptor> Gloves
-			i(189071),	-- 10.0 QRP Template <Descriptor> Grips
-			i(189072),	-- 10.0 QRP Template <Descriptor> Hood
-			i(189073),	-- 10.0 QRP Template <Descriptor> Helm
-			i(189074),	-- 10.0 QRP Template <Descriptor> Hood
-			i(189075),	-- 10.0 QRP Template <Descriptor> Legguards
-			i(189076),	-- 10.0 QRP Template <Descriptor> Leggings
-			i(189077),	-- 10.0 QRP Template <Descriptor> Leggings
-			i(189078),	-- 10.0 QRP Template <Descriptor> Breeches
-			i(189079),	-- 10.0 QRP Template <Descriptor> Spaulders
-			i(189080),	-- 10.0 QRP Template <Descriptor> Spaulders
-			i(189081),	-- 10.0 QRP Template <Descriptor> Mantle
-			i(189082),	-- 10.0 QRP Template <Descriptor> Monnion
-			i(189083),	-- 10.0 QRP Template <Descriptor> Girdle
-			i(189084),	-- 10.0 QRP Template <Descriptor> Sash
-			i(189085),	-- 10.0 QRP Template <Descriptor> Belt
-			i(189086),	-- 10.0 QRP Template <Descriptor> Belt
-			i(189087),	-- 10.0 QRP Template <Descriptor> Wraps
-			i(189088),	-- 10.0 QRP Template <Descriptor> Vambraces
-			i(189089),	-- 10.0 QRP Template <Descriptor> Bracers
-			i(189090),	-- 10.0 QRP Template <Descriptor> Bindings
-			i(189091),	-- 10.0 QRP Template <Descriptor> Signet
-			i(189092),	-- 10.0 QRP Template <Descriptor> Ring
-			i(189093),	-- 10.0 QRP Template <Descriptor> Band
-			i(189094),	-- 10.0 QRP Template <Descriptor> Signet
-			i(189096),	-- 10.0 QRP Template <Descriptor> Trinket
-			i(189099),	-- 10.0 QRP Template <Descriptor> Pendant
-			i(189100),	-- 10.0 QRP Template <Descriptor> Pendant
-			i(189101),	-- 10.0 QRP Template <Descriptor> Shroud
-			i(189102),	-- 10.0 QRP Template <Descriptor> Cloak
-			i(189103),	-- 10.0 QRP Template <Descriptor> Shield
-			i(189104),	-- 10.0 QRP Template <Descriptor> Offhand
-			i(189105),	-- 10.0 QRP Template <Descriptor> Mace
-			i(189106),	-- 10.0 QRP Template <Descriptor> Staff
-			i(189107),	-- 10.0 QRP Template <Descriptor> Gun
-			i(189108),	-- 10.0 QRP Template <Descriptor> Glaive
-			i(189109),	-- 10.0 QRP Template <Descriptor> Sword
-			i(189110),	-- 10.0 QRP Template <Descriptor> Staff
-			i(189111),	-- 10.0 QRP Template <Descriptor> Dagger
-			i(189112),	-- 10.0 QRP Template <Descriptor> Dagger
-			i(189113),	-- 10.0 QRP Template <Descriptor> Sword
-			i(189115),	-- 10.0 QRP Template <Descriptor> Helm
-			i(189116),	-- 10.0 QRP Template <Descriptor> Feet
-			i(189117),	-- 10.0 QRP Template <Descriptor> Cover
-			i(189118),	-- 10.0 QRP Template <Descriptor> Boots
-			i(189119),	-- 10.0 QRP Template <Descriptor> Signet
-			i(189120),	-- 10.0 QRP Template <Descriptor> Staff
-			i(189121),	-- 10.0 QRP Template <Descriptor> Mace
-			i(189127),	-- 10.0 QRP Template <Descriptor> Longbow
-			i(189128),	-- 10.0 QRP Template <Descriptor> Crossbow
-			i(189129),	-- 10.0 QRP Template <Descriptor> Axe
-			i(189130),	-- 10.0 QRP Template <Descriptor> Axe
-			i(189131),	-- 10.0 QRP Template <Descriptor> Axe
-			i(189132),	-- 10.0 QRP Template <Descriptor> Mace
-			i(189133),	-- 10.0 QRP Template <Descriptor> Sword
-			i(189134),	-- 10.0 QRP Template <Descriptor> Mace
-			i(189135),	-- 10.0 QRP Template <Descriptor> Axe
-			i(189136),	-- 10.0 QRP Template <Descriptor> Greatsword
-			i(189137),	-- 10.0 QRP Template <Descriptor> Fist
-			i(189138),	-- 10.0 QRP Template <Descriptor> Greatmace
-			i(189139),	-- 10.0 QRP Template <Descriptor> Greatsword
-			i(189140),	-- 10.0 QRP Template <Descriptor> Wand
-			i(189141),	-- 10.0 QRP Template <Descriptor> Staff
-			i(189333),	-- 10.0 Zone Uncommon Template <Descriptor> Shield
-			i(189334),	-- 10.0 Zone Uncommon Template <Descriptor> Offhand
-			i(189335),	-- 10.0 Zone Uncommon Template <Descriptor> Mace
-			i(189336),	-- 10.0 Zone Uncommon Template <Descriptor> Staff
-			i(189337),	-- 10.0 Zone Uncommon Template <Descriptor> Gun
-			i(189338),	-- 10.0 Zone Uncommon Template <Descriptor> Glaive
-			i(189339),	-- 10.0 Zone Uncommon Template <Descriptor> Sword
-			i(189340),	-- 10.0 Zone Uncommon Template <Descriptor> Staff
-			i(189341),	-- 10.0 Zone Uncommon Template <Descriptor> Dagger
-			i(189342),	-- 10.0 Zone Uncommon Template <Descriptor> Dagger
-			i(189343),	-- 10.0 Zone Uncommon Template <Descriptor> Sword
-			i(189344),	-- 10.0 Zone Uncommon Template <Descriptor> Staff
-			i(189345),	-- 10.0 Zone Uncommon Template <Descriptor> Mace
-			i(189346),	-- 10.0 Zone Uncommon Template <Descriptor> Longbow
-			i(189347),	-- 10.0 Zone Uncommon Template <Descriptor> Crossbow
-			i(189348),	-- 10.0 Zone Uncommon Template <Descriptor> Axe
-			i(189349),	-- 10.0 Zone Uncommon Template <Descriptor> Axe
-			i(189350),	-- 10.0 Zone Uncommon Template <Descriptor> Axe
-			i(189351),	-- 10.0 Zone Uncommon Template <Descriptor> Mace
-			i(189352),	-- 10.0 Zone Uncommon Template <Descriptor> Sword
-			i(189353),	-- 10.0 Zone Uncommon Template <Descriptor> Mace
-			i(189354),	-- 10.0 Zone Uncommon Template <Descriptor> Axe
-			i(189355),	-- 10.0 Zone Uncommon Template <Descriptor> Greatsword
-			i(189356),	-- 10.0 Zone Uncommon Template <Descriptor> Fist
-			i(189357),	-- 10.0 Zone Uncommon Template <Descriptor> Greatmace
-			i(189358),	-- 10.0 Zone Uncommon Template <Descriptor> Greatsword
-			i(189359),	-- 10.0 Zone Uncommon Template <Descriptor> Wand
-			i(189360),	-- 10.0 Zone Uncommon Template <Descriptor> Staff
-			i(189590),	-- 10.0 Raid Template - Mail - Waist
-			i(189591),	-- 10.0 Raid Template - Mail - Wrist
-			i(189592),	-- 10.0 Raid Template - Cloth - Feet
-			i(189593),	-- 10.0 Raid Template - Leather - Head
-			i(189594),	-- 10.0 Raid Template - Plate - Hand
-			i(189595),	-- 10.0 Raid Template - Cloth - Chest
-			i(189596),	-- 10.0 Raid Template - Plate - Chest
-			i(189597),	-- 10.0 Raid Template - Mail - Chest
-			i(189598),	-- 10.0 Raid Template - Plate - Legs
-			i(189599),	-- 10.0 Raid Template - Leather - Legs
-			i(189600),	-- 10.0 Raid Template - Plate - Shoulder
-			i(189601),	-- 10.0 Raid Template - Leather - Waist
-			i(189602),	-- 10.0 Raid Template - Cloth - Wrist
-			i(189603),	-- 10.0 Raid Template - Plate - Head
-			i(189604),	-- 10.0 Raid Template - Mail - Head
-			i(189605),	-- 10.0 Raid Template - Mail - Shoulder
-			i(189606),	-- 10.0 Raid Template - Cloth - Waist
-			i(189607),	-- 10.0 Raid Template - Mail - Feet
-			i(189608),	-- 10.0 Raid Template - Leather - Hand
-			i(189609),	-- 10.0 Raid Template - Leather - Chest
-			i(189610),	-- 10.0 Raid Template - Cloth - Legs
-			i(189611),	-- 10.0 Raid Template - Mail - Legs
-			i(189612),	-- 10.0 Raid Template - Mail - Hand
-			i(189613),	-- 10.0 Raid Template - Plate - Wrist
-			i(189614),	-- 10.0 Raid Template - Leather - Wrist
-			i(189615),	-- 10.0 Raid Template - Cloth - Shoulder
-			i(189616),	-- 10.0 Raid Template - Cloth - Head
-			i(189617),	-- 10.0 Raid Template - Cloth - Hand
-			i(189618),	-- 10.0 Raid Template - Plate - Waist
-			i(189619),	-- 10.0 Raid Template - Plate - Feet
-			i(189620),	-- 10.0 Raid Template - Leather - Shoulder
-			i(189621),	-- 10.0 Raid Template - Leather - Feet
-			i(189622),	-- 10.0 Raid Template - Generic - Cloak
-			i(189623),	-- 10.0 Raid Template - Generic - Finger
-			i(189624),	-- 10.0 Raid Template - Generic - Neck
-			i(189625),	-- 10.0 Raid Template - Melee DPS - Trinket
-			i(189626),	-- 10.0 Raid Template - Tank - Trinket
-			i(189627),	-- 10.0 Raid Template - Int DPS - Trinket
-			i(189628),	-- 10.0 Raid Template - Healer - Trinket
-			i(189629),	-- 10.0 Raid Template - STR - Trinket
-			i(189630),	-- 10.0 Raid Template - Omni  - Trinket
-			i(189631),	-- 10.0 Raid Template - Physical DPS - Trinket
-			i(189632),	-- 10.0 Raid Template - AGI - Trinket
-			i(189633),	-- 10.0 Raid Template - INT - Trinket
-			i(189634),	-- 10.0 Dungeon Template - Plate - Feet
-			i(189635),	-- 10.0 Dungeon Template - Cloth - Robe
-			i(189636),	-- 10.0 Dungeon Template - Plate - Chest
-			i(189637),	-- 10.0 Dungeon Template - Mail - Chest
-			i(189638),	-- 10.0 Dungeon Template - Leather - Chest
-			i(189639),	-- 10.0 Dungeon Template - Leather - Hand
-			i(189640),	-- 10.0 Dungeon Template - Plate - Hand
-			i(189641),	-- 10.0 Dungeon Template - Cloth - Hand
-			i(189642),	-- 10.0 Dungeon Template - Mail - Hand
-			i(189643),	-- 10.0 Dungeon Template - Cloth - Head
-			i(189644),	-- 10.0 Dungeon Template - Mail - Head
-			i(189645),	-- 10.0 Dungeon Template - Leather - Head
-			i(189646),	-- 10.0 Dungeon Template - Plate - Legs
-			i(189647),	-- 10.0 Dungeon Template - Cloth - Legs
-			i(189648),	-- 10.0 Dungeon Template - Mail - Legs
-			i(189649),	-- 10.0 Dungeon Template - Leather - Legs
-			i(189650),	-- 10.0 Dungeon Template - Leather - Shoulder
-			i(189651),	-- 10.0 Dungeon Template - Plate - Shoulder
-			i(189652),	-- 10.0 Dungeon Template - Cloth - Shoulder
-			i(189653),	-- 10.0 Dungeon Template - Mail - Shoulder
-			i(189654),	-- 10.0 Dungeon Template - Plate - Waist
-			i(189655),	-- 10.0 Dungeon Template - Cloth - Waist
-			i(189656),	-- 10.0 Dungeon Template - Mail - Waist
-			i(189657),	-- 10.0 Dungeon Template - Leather - Waist
-			i(189658),	-- 10.0 Dungeon Template - Cloth - Wrist
-			i(189659),	-- 10.0 Dungeon Template - Plate - Wrist
-			i(189660),	-- 10.0 Dungeon Template - Mail - Wrist
-			i(189661),	-- 10.0 Dungeon Template - Leather - Wrist
-			i(189662),	-- 10.0 Dungeon Template - Generic - Finger
-			i(189666),	-- 10.0 Dungeon Template - Generic - Trinket
-			i(189667),	-- 10.0 Dungeon Template - Generic - Neck
-			i(189669),	-- 10.0 Dungeon Template - Generic - Cloak
-			i(189671),	-- 10.0 Dungeon Template - Shield - Shield
-			i(189672),	-- 10.0 Dungeon Template - Generic - Holdable
-			i(189673),	-- 10.0 Dungeon Template - Mace2H - Str - 2 Hand
-			i(189674),	-- 10.0 Dungeon Template - Staff - Agi - 2 Hand
-			i(189675),	-- 10.0 Dungeon Template - Guns - RangedRight
-			i(189676),	-- 10.0 Dungeon Template - Warglaives - Weapon
-			i(189677),	-- 10.0 Dungeon Template - Sword1H - Str -Weapon
-			i(189678),	-- 10.0 Dungeon Template - Polearms - Int - 2 Hand
-			i(189679),	-- 10.0 Dungeon Template - Dagger - Int - Weapon
-			i(189680),	-- 10.0 Dungeon Template - Dagger - Agi - Weapon
-			i(189681),	-- 10.0 Dungeon Template - Sword1H - Agi - Weapon
-			i(189682),	-- 10.0 Dungeon Template - Plate - Head
-			i(189683),	-- 10.0 Dungeon Template - Cloth - Feet
-			i(189684),	-- 10.0 Dungeon Template - Mail - Feet
-			i(189685),	-- 10.0 Dungeon Template - Leather - Feet
-			i(189687),	-- 10.0 Dungeon Template - Staff - Int - 2 Hand
-			i(189688),	-- 10.0 Dungeon Template - Mace1H - Agi - Weapon
-			i(189689),	-- 10.0 Dungeon Template - Bows - Ranged
-			i(189690),	-- 10.0 Dungeon Template - Crossbow - RangedRight
-			i(189691),	-- 10.0 Dungeon Template - Axe1H - Str - Weapon
-			i(189692),	-- 10.0 Dungeon Template - Axe1H - Agi - Weapon
-			i(189693),	-- 10.0 Dungeon Template - Axe1H - Int - Weapon
-			i(189694),	-- 10.0 Dungeon Template - Mace1H - Int - Weapon
-			i(189695),	-- 10.0 Dungeon Template - Sword1H - Int - Weapon
-			i(189696),	-- 10.0 Dungeon Template - Mace1H - Str - Weapon
-			i(189697),	-- 10.0 Dungeon Template - Axe2H - Str - 2 Hand
-			i(189698),	-- 10.0 Dungeon Template - Sword2H - Str - 2 Hand
-			i(189699),	-- 10.0 Dungeon Template - FistWeapon - Weapon
-			i(189700),	-- 10.0 Dungeon Template - Mace2H - Int - 2 Hand
-			i(189701),	-- 10.0 Dungeon Template - Sword2H - Int - 2 Hand
-			i(189702),	-- 10.0 Dungeon Template - Wand - RangedRight
-			i(189703),	-- 10.0 Dungeon Template - Polearms - Agi - 2 Hand
-		}),
-		n(WEAPONS, {
-			i(189039),	-- 10.0 End Game Template <Descriptor> Shield
-			i(189040),	-- 10.0 End Game Template <Descriptor> Offhand
-			i(189041),	-- 10.0 End Game Template <Descriptor> Polearm
-			i(189042),	-- 10.0 End Game Template <Descriptor> Gun
-			i(189043),	-- 10.0 End Game Template <Descriptor> Kris
-			i(189044),	-- 10.0 End Game Template <Descriptor> Mace
-			i(189045),	-- 10.0 End Game Template <Descriptor> Shank
-			i(189046),	-- 10.0 End Game Template <Descriptor> Sword
-			i(189047),	-- 10.0 End Game Template <Descriptor> Blade
-			i(189048),	-- 10.0 End Game Template <Descriptor> Great Mace
-			i(189051),	-- 10.0 End Game Template <Descriptor> Cudgel
-			i(189052),	-- 10.0 End Game Template <Descriptor> Cudgel
-			i(189053),	-- 10.0 End Game Template <Descriptor> Stave
-			i(189054),	-- 10.0 End Game Template <Descriptor> Halberd
-			i(189056),	-- 10.0 End Game Template <Descriptor> Staff
-			i(189057),	-- 10.0 End Game Template <Descriptor> Warglaive
+
 			i(189555),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Brown
 			i(189556),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Green
 			i(189557),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Gray
 			i(189558),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Dark
 			i(189559),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Light
-			i(197796),	-- 10.0 Rare Reward TBD - Mace2H - Str - 2 Hand
-			i(197806),	-- 10.0 Rare Reward TBD - Staff_2H_Titan_C_01 - Staff - Int
-			i(197910),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
-			i(197911),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
-			i(197912),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
-			i(197913),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
-			i(197914),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
-			i(197915),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
-			i(197916),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
-			i(197917),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
+
+			i(201934),	-- Nokuhd Whittling Knife
 		}),
 		n(PROFESSIONS, {
 			i(198483),	-- jrz 10.0 enchanting test [DNT]
@@ -1516,22 +938,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193067),	-- Acadia's Tools [DNT/Unused]
 			i(194337),	-- Liquid Courage
 			i(198441),	-- Thunderspine Tenders
-			i(201250),	-- Victorious Contender's Strongbox
 			i(201251),	-- Pillaged Contender's Strongbox
 			i(201252),	-- 10.0 Bronze PvP Chest (DNT)
 			i(201253),	-- Competitor's Edge
-			i(201254),	-- Medal of Honor
-			i(201255),	-- Medal of Honor
-			-- Mystic??
-			i(200939),	-- Chromatic Pocketwatch
-			i(200940),	-- Everflowing Inkwell
-			i(200941),	-- Seal of Order
-			i(200942),	-- Vibrant Emulsion
-			i(200943),	-- Whispering Band
+			--
 			i(200944),	-- Djaradin's Trophy Mask
-			i(200945),	-- Valiant Hammer
-			i(200946),	-- Thunderous Blade
-			i(200947),	-- Carving of Awakening
 			--
 			i(199553),	-- Memory of Unity
 			i(200680),	-- Maruukai Mule
@@ -1543,21 +954,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200964),	-- Alliance Dueling Flag
 			i(200965),	-- Horde Dueling Flag
 			i(201090),	-- Bivigosa's Blood Sausages
-			i(200887),	-- Charred Porter
-			i(200888),	-- Coal-Fired Rib Rack
-			i(200889),	-- Highly-Spiced Haunch
-			i(200893),	-- Azsunian-Poached Lobster
-			i(200894),	-- Rare Vintage Arcwine
-			i(200895),	-- Fine Taladorian Cheese Platter
-			i(200896),	-- Captain's Caramelized Catfish
-			i(200897),	-- Venrik's Goat Milk
-			i(200898),	-- Mantis Shrimp Cocktail
-			i(200899),	-- Seared Sea Mist Noodles
-			i(200900),	-- Fried Emperor Wraps
-			i(200901),	-- Roquefort-Stuffed Peppers
-			i(200902),	-- Ravenberry Panacotta Delight
-			i(200903),	-- Moira's Choice Espresso
-			i(200904),	-- Picante Pomfruit Cake
 			i(201045),	-- Icecrown Bleu
 			i(201046),	-- Dreamwarding Dripbrew
 			i(201047),	-- Arcanostabilized Provisions
@@ -1576,12 +972,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201820),	-- Silithus Swiss
 			i(201989),	-- Twisted Heart
 			i(202062),	-- Ash Feather
-			i(202072),	-- Frigid Floe Fish
-			i(202073),	-- Calamitous Carp
-			i(202074),	-- Kingfin, the Wise Whiskerfish
-			i(202107),	-- Shadowscrawled Coin
-			i(202122),	-- Primal Chaos Cluster
-			i(202152),	-- Storm-Charged Manipulator
 			i(202172),	-- Overflowing Satchel of Coins
 		}),
 		-- Use this in a Cost.. Must find the source
@@ -1694,7 +1084,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(198100),	-- Recipe: Assorted Exotic Spices (RECIPE!)
 				i(198123),	-- Recipe: Braised Bruffalon Brisket (RECIPE!)
 				i(198097),	-- Recipe: Breakfast of Draconic Champions (RECIPE!)
-				i(195881),	-- Recipe: Charred Hornswog Steaks (RECIPE!)
 				i(198093),	-- Recipe: Cheese and Quackers (RECIPE!)
 				i(198108),	-- Recipe: Delicious Dragon Spittle (RECIPE!)
 				i(198117),	-- Recipe: Feisty Fish Sticks (RECIPE!)
@@ -1733,11 +1122,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(199292),	-- Schematic: Convincingly Realistic Jumper Cables (RECIPE!)
 				i(199291),	-- Schematic: Draconic Gunshoes (RECIPE!)
 				-- Without SpellID attached
+				i(199294),	-- Schematic: Atomic Recalibrator (RECIPE!)
 				i(199277),	-- Schematic: Battle-Ready Binoculars (RECIPE!)
 				i(199279),	-- Schematic: Bottomless Stonecrust Ore Satchel (RECIPE!)
 				i(199296),	-- Schematic: Bronze Fireflight (RECIPE!)
 				i(199250),	-- Schematic: Calibrated Safety Switch (RECIPE!)
-				i(199294),	-- Schematic: Cartomancy Cannon (RECIPE!)
 				i(199266),	-- Schematic: Centralized Precipitation Emitter (RECIPE!)
 				i(199263),	-- Schematic: Completely Safe Rockets (RECIPE!)
 				i(199224),	-- Schematic: Complicated Cuffs (RECIPE!)
@@ -1980,67 +1369,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(194051),	-- Wildercloth Weapon Upholstery
 			}),
 		}),
-		filter(TOYS, {
-			i(192495),	-- Malfunctioning Stealthman 54 (TOY!)
-			i(197961),	-- Whelps on Strings (TOY!)
-			i(198646),	-- Ornate Dragon Statue (TOY!)
-			i(199111),	-- Maestro Duck's Orchestrion (TOY!)
-			i(199554),	-- S.E.A.T. (TOY!)
-			i(199926),	-- Portable J.A.M. (TOY!)
-			i(200142),	-- Generous Goblin Grenade (TOY!)
-			i(200148),	-- A Collection Of Me (TOY!)
-			i(200116),	-- Everlasting Horn of Lavaswimming (TOY!)
-			i(200636),	-- Primal Invocation Quintessence (TOY!)
-			i(201435),	-- Shuffling Sands (TOY!)
-			i(202042),	-- Aquatic Shades (TOY!)
-			i(200926),	-- Compendium of Love (TOY!)
-			i(201933),	-- Black Dragon's Challenge Dummy (TOY!)
-		}),
-		--[[
-		filter(PETS, {
-			i(191126),	-- Obsidian Whelpling
-			i(191915),	-- [PH] Brown Shaggy Rabbit
-			i(191930),	-- [PH] Blue Baby Phoenix
-			i(191932),	-- Violet Violence
-			i(191936),	-- Secretive Frogduck
-			i(191941),	-- Crystalline Mini-Monster
-			i(193620),	-- [PH] Yellow Baby Fox Wyvern
-			i(193068),	-- [PH] Gold Flying Squirrel
-			i(193235),	-- [PH] Red Baby River Otter
-			i(193363),	-- [PH] Orange Baby Mammoth
-			i(193364),	-- [PH] Yellow Baby Mammoth
-			i(193373),	-- [PH] Orange Baby Phoenix
-			i(193374),	-- [PH] Red Baby Phoenix
-			i(193377),	-- [PH] Yellow Baby Phoenix
-			i(193429),	-- [PH] Orange Baby Salamander
-			i(193380),	-- [PH] Pink Baby Salamander
-			i(193572),	-- [PH] Mech Baby Duck
-			i(193587),	-- [PH] Yellow Duck
-			i(193614),	-- [PH] Blue Baby Thunder Lizard
-			i(193835),	-- [PH] Red Woodpecker
-			i(193850),	-- [PH] Yellow Baby Primal Beaver
-			i(193853),	-- [PH] Green Lionfish
-			i(193851),	-- [PH] Purple Lionfish
-			i(193854),	-- [PH] Blue Baby Vorquin
-			i(193855),	-- [PH] Bronze Baby Vorquin
-			i(193908),	-- [PH] Blue Crystal Porcupine
-			i(192050),	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
-			i(193863),	-- zzOld - [PH] Dark Baby Vorquin (REUSE)
-			i(193063),	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
-			i(193862),	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
-			i(191929),	-- zzOld - [PH] White Flying Squirrel (REUSE)
-		}),
-		--]]
 	}),
-	tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
-		-- Winter Veil 2022
-		ach(15645),	-- To Catch Falling Stars
-		ach(15653),	-- The More You Know*
-		i(191937),	-- Falling Star Catcher (TOY!)
-		i(191925),	-- Falling Star Flinger (TOY!)
-		q(66507),	-- A Winter Veil Gift
-		q(66508),	-- A Gently Shaken Gift
-	})),
 	tier(CLASSIC_TIER, {
 		filter(BAGS, {
 			i(22233),	-- Zigris' Footlocker

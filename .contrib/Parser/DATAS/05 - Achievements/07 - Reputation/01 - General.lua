@@ -78,11 +78,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 				crit(6),		-- Exalted Undercity
 			},
 		}),
-		ach(953,   {	-- Guardian of Cenarius
-			title(100),		-- Guardian of Cenarius
-			crit(1),		-- Exalted with Cenarion Circle
-			crit(2),		-- Exalted with Cenarion Expedition
-		}),
 		ach(12415, {	-- Heritage of Highmountain
 			["races"] = { HIGHMOUNTAIN_TAUREN },
 			["g"] = {
@@ -230,11 +225,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 				i(164999),	-- Zandalari Shinguards
 			},
 		}),
-		ach(945,   {	-- The Argent Champion
-			title(99),		-- the Argent Champion
-			crit(1),		-- The Argent Dawn
-			crit(2),		-- The Argent Crusade
-		}),
 		ach(942,   {	-- The Diplomat (A)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
@@ -255,4 +245,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		}),
 		ach(5794),		-- Time Flies When You're Having Fun
 	}),
+	achcat(ACHIEVEMENT_CATEGORY_CLASSIC_REP),
+	achcat(ACHIEVEMENT_CATEGORY_THE_BURNING_CRUSADE_REP),
 }));

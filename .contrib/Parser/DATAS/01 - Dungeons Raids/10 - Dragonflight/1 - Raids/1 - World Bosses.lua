@@ -48,8 +48,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			e(2517, {	-- Bazual, The Dreaded Flame
 				["crs"] = { 193532 },
-				-- ["coord"] = { , , THE_AZURE_SPAN },
-				-- ["questID"] = TODO,
+				["coord"] = { 77.7, 35.8, THE_AZURE_SPAN },
+				["questID"] = 72054,
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
@@ -60,11 +60,11 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200761),	-- Smoldering Sulfuron Signet
 				}),
 			}),
-			-- q(TODO, {	-- Bazual (WQ)
-			-- 	["sym"] = {
-			-- 		{"select","encounterID",2517,},{"pop"},	-- Original WB
-			-- 	},
-			-- }),
+			q(69927, {	-- Bazual (WQ)
+				["sym"] = {
+					{"select","encounterID",2517,},{"pop"},	-- Original WB
+				},
+			}),
 			e(2518, {	-- Liskanoth, The Futurebane
 				["crs"] = { 193533 },
 				-- ["coord"] = { , , THALDRASZUS },

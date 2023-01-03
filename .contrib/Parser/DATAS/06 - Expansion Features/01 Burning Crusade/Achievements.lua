@@ -96,7 +96,14 @@ root("ExpansionFeatures", tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.
 			}),
 			-- #endif
 			crit(3746, {	-- Cow (Elwynn Forest, Stormwind City, Arathi Highlands, Redridge Mountains)
-				["maps"] = { ELWYNN_FOREST, ARATHI_HIGHLANDS, REDRIDGE_MOUNTAINS },
+				["maps"] = {
+					ELWYNN_FOREST,
+					ARATHI_HIGHLANDS,
+					REDRIDGE_MOUNTAINS,
+					-- #if BEFORE CATA
+					HILLSBRAD_FOOTHILLS,
+					-- #endif
+				},
 				["crs"] = { 2442 },	-- Cow
 			}),
 			-- #if ANYCLASSIC

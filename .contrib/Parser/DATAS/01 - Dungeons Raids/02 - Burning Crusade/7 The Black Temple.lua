@@ -24,11 +24,13 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				classicAch(958, {	-- Sworn to the Deathsworn
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
+					["description"] = "Raise your reputation with the Ashtongue Deathsworn to Exalted.",
+					-- #endif
+					-- #if ANYCLASSIC
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1012); end]],
-					["description"] = "Raise your reputation with the Ashtongue Deathsworn to Exalted.",
 					-- #endif
 				}),
 			}),
@@ -45,7 +47,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["groups"] = {
 						classicAch(431, {	-- Hand of A'dal (Achievement)
 							["sourceQuest"] = 10985,	-- A Distraction for Akama
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 							["timeline"] = { "removed 3.0.1" },
@@ -440,7 +442,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						["creatureID"] = 22917,
 						["groups"] = {
 							classicAch(697, {	-- The Black Temple
-								-- #if BEFORE 3.0.1
+								-- #if BEFORE WRATH
 								["sourceQuest"] = 10959,	-- The Fall of the Betrayer
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif

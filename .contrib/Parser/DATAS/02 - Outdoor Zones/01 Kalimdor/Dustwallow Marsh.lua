@@ -1878,10 +1878,10 @@ root("Zones", m(KALIMDOR, {
 					["lvl"] = 33,
 					["groups"] = {
 						i(33269, {	-- Bejeweled Dagger
-							["timeline"] = { "added 2.0.1", "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
+							["timeline"] = { "added 2.0.1", "removed 4.0.3" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird. Still available for the Horde!
 						}),
 						i(33252, {	-- Gleaming Scale Breastplate
-							["timeline"] = { "added 2.0.1", "removed 3.0.2" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
+							["timeline"] = { "added 2.0.1", "removed 4.0.3" },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird. Still available for the Horde!
 						}),
 						i(33250, {	-- Archer's Wristguard
 							["timeline"] = { "added 2.0.1" },	-- Moved to "Survey Alcaz Island" with Cata

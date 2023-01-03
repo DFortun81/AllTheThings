@@ -9,6 +9,14 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 		["lvl"] = 80,
 		["g"] = {
 			n(ACHIEVEMENTS, {	-- non-pvp map
+				ach(5375, {	-- Baradin's Wardens
+					-- #if ANYCLASSIC
+					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1177); end]],
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+				}),
 				-- Non-Pvp portions of the achievement
 				a(ach(5718, {	-- Just Another Day in Tol Barad (A)
 					crit(1),	-- Captain P. Harris
@@ -89,6 +97,9 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 			petbattle(filter(BATTLE_PETS, {
 				p(410),	-- Wharf Rat
 			})),
+			n(FACTIONS, {
+				faction(1177),	-- Baradin's Wardens
+			}),
 			n(QUESTS, {
 				q(28684, {	-- A Sticky Task
 					["lvl"] = 85,

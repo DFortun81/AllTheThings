@@ -30,7 +30,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			o(381223, {	-- Cracked Hourglass
 				["description"] = "In a Cave.",
 				["coord"] = { 33.9, 76.9, THALDRASZUS },
-				-- ["questID"] = ,
+				["questID"] = 70607,
 				["cost"] = { { "i", 199068, 1 }, },	--1xTime-Lost Memo
 				["g"] = {
 					crit(1, {	-- Cracked Hourglass
@@ -77,7 +77,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(198604, {	-- Strange Bear Cub
-				["coord"] = { 52.5, 83.6 , THALDRASZUS },
+				["coord"] = { 52.5, 83.6, THALDRASZUS },
 				["questID"] = 72355,
 				["g"] = {
 					i(201463),	-- Cubbly (PET!)
@@ -90,20 +90,34 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					crit(5, {	-- Surveyor's Magnifying Glass
 						["achievementID"] = 16301,	-- Treasures of Thaldraszus
 					}),
+					i(193036),	-- Left-Handed Magnifying Glass
 				},
 			}),
 			o(381108, {	-- Yennu's Map
-				["coord"] = { 54.9, 75.4 , THALDRASZUS },
+				["coord"] = { 54.9, 75.4, THALDRASZUS },
 				["g"] = {
 					i(199069, {	-- Yennu's Map
 						["questID"] = 70538,
 					}),
 				},
 			}),
-			-- Some Special Treasure In Primalist Tomorrow
-			i(194640),	-- Design: Ring-Bound Hourglass (RECIPE!)
-			--- not seen this Treasure
-			i(194654),	-- Design: Convergent Prism (RECIPE!)
+			-- The Primalist Future
+			o(382193, {	-- Chest of the Elements
+				["coord"] = { 28.0, 25.9, PRIMALIST_TOMORROW },
+				["g"]= {
+					i(194640),	-- Design: Ring-Bound Hourglass (RECIPE!)
+					i(201447),	-- Primal Revenant's Breezeblade
+					i(201444),	-- Primal Revenant's Earthblade
+					i(201446),	-- Primal Revenant's Firewall
+				}
+			});
+			-- Jewelcrafting
+			o(384318, {	-- Inconspicuous Bookmark
+				["coord"] = { 58.5, 36.7, THALDRASZUS },
+				["g"] = {
+					i(194654),	-- Design: Convergent Prism (RECIPE!)
+				}
+			}),
 		}),
 	}),
 })));

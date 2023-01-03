@@ -91,7 +91,7 @@ root("Zones", {
 					}),
 					classicAch(939, {	-- Hills Like White Elekk
 						["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["description"] = "Complete all of Hemet Nesingwary quests in Nagrand up to and including The Ultimate Bloodsport.",
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
@@ -372,6 +372,32 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
+				prof(FISHING, {
+					-- #if ANYCLASSIC
+					ach(1225, {	-- Outland Angler
+						["provider"] = { "o", 182959 },	-- Bluefish School
+						["criteriaID"] = 3866,	-- Bluefish School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1225, {	-- Outland Angler
+						["provider"] = { "o", 182958 },	-- Mudfish School
+						["criteriaID"] = 3867,	-- Mudfish School
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
+					ach(1225, {	-- Outland Angler
+						["provider"] = { "o", 182959 },	-- Bluefish School
+						["criteriaID"] = 3624,	-- Bluefish School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1225, {	-- Outland Angler
+						["provider"] = { "o", 182958 },	-- Mudfish School
+						["criteriaID"] = 3625,	-- Mudfish School
+						["requireSkill"] = FISHING,
+					}),
+					-- #endif
+					i(34868),	-- World's Largest Mudfish
+				}),
 				n(FLIGHT_PATHS, {
 					fp(120, {	-- Garadar, Nagrand
 						["cr"] = 18808,	-- Gursha <Wind Rider Master>
@@ -383,28 +409,6 @@ root("Zones", {
 						["coord"] = { 54.2, 75.0, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 					}),
-				}),
-				prof(FISHING, {
-					-- #if ANYCLASSIC
-					ach(1225, {	-- Outland Angler
-						["criteriaID"] = 3866,	-- Bluefish School
-						["requireSkill"] = FISHING,
-					}),
-					ach(1225, {	-- Outland Angler
-						["criteriaID"] = 3867,	-- Mudfish School
-						["requireSkill"] = FISHING,
-					}),
-					-- #else
-					ach(1225, {	-- Outland Angler
-						["criteriaID"] = 3624,	-- Bluefish School
-						["requireSkill"] = FISHING,
-					}),
-					ach(1225, {	-- Outland Angler
-						["criteriaID"] = 3625,	-- Mudfish School
-						["requireSkill"] = FISHING,
-					}),
-					-- #endif
-					i(34868),	-- World's Largest Mudfish
 				}),
 				n(QUESTS, {
 					q(11042, {	-- A Mystifying Vision

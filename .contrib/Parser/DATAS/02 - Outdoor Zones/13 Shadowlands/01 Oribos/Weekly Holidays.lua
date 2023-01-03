@@ -7,7 +7,7 @@ root("Zones", m(SHADOWLANDS, {
 		n(WEEKLY_HOLIDAYS, {
 			n(REWARDS, {
 				i(184869, {	-- Cache of Nathrian Treasures (N)
-					["timeline"] = { "added 9.0.2", "removed 9.1.0" },
+					["timeline"] = { ADDED_SL_S1, REMOVED_SL_S2 },
 					["sym"] = {
 						{"select", "instanceID", 1190},			-- Castle Nathria
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -22,7 +22,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 				}),
 				i(184868, {	-- Cache of Nathrian Treasures (HC)
-					["timeline"] = { "added 9.0.2", "removed 9.1.0" },
+					["timeline"] = { ADDED_SL_S1, REMOVED_SL_S2 },
 					["sym"] = {
 						{"select", "instanceID", 1190},			-- Castle Nathria
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -37,7 +37,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 				}),
 				i(186531, {	-- Cache of Sanctum Treasures (N)
-					["timeline"] = { "added 9.1.0", "removed 9.2.0" },
+					["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 },
 					["sym"] = {
 						{"select", "instanceID", 1193},			-- Sanctum of Domination
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -52,7 +52,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 				}),
 				i(186533, {	-- Cache of Sanctum Treasures (HC)
-					["timeline"] = { "added 9.1.0", "removed 9.2.0" },
+					["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 },
 					["sym"] = {
 						{"select", "instanceID", 1193},			-- Sanctum of Domination
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -67,7 +67,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 				}),
 				i(190655, {	-- Cache of Sepulcher Treasures (N) or 190654
-					["timeline"] = { "added 9.2.0" },
+					["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -80,7 +80,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 				}),
 				i(191040, {	-- Cache of Sepulcher Treasures (5x BC TW -> N) [Q:62632]
-					["timeline"] = { "added 9.2.0" },
+					["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -93,7 +93,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 				}),
 				i(191041, {	-- Cache of Sepulcher Treasures (4x Mythic -> H)
-					["timeline"] = { "added 9.2.0" },
+					["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -106,7 +106,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 				}),
 				i(190656, {	-- Cache of Sepulcher Treasures (H)
-					["timeline"] = { "added 9.2.0", },
+					["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -176,11 +176,12 @@ root("Zones", m(SHADOWLANDS, {
 				["isWeekly"] = true,
 				["coord"] = { 64.9, 32.7, ORIBOS },
 				["_drop"] = { "g" },	-- Drop Trash
+				["timeline"] = { REMOVED_DF_REL },
 			}, {
 				q(62632),					-- A Burning Path Through Time
 				pvp(q(62637)),				-- A Call to Battle
 				q(64709, {					-- A Fel Path Through Time
-					["timeline"] = { "added 9.1.5" },
+					["timeline"] = { "added 9.1.5", REMOVED_DF_REL },
 				}),
 				q(62633),					-- A Frozen Path Through Time
 				q(62636),					-- A Savage Path Through Time
@@ -190,7 +191,7 @@ root("Zones", m(SHADOWLANDS, {
 				q(64970, {					-- Timeworn Keystone: The Broken Isle
 					["provider"] = { "n", 178804 },	-- Ta'hsup
 					["coord"] = { 65.2, 35.1, ORIBOS },
-					["timeline"] = { "added 9.1.5" },
+					["timeline"] = { "added 9.1.5", REMOVED_DF_REL },
 				}),
 				pvp(q(62640)),				-- The Arena Calls
 				pvp(petbattle(q(62639))),	-- The Very Best

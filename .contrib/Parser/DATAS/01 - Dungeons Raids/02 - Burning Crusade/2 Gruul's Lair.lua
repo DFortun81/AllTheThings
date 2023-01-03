@@ -34,7 +34,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				["creatureID"] = 19044,
 				["groups"] = {
 					classicAch(692, {	-- Gruul's Lair
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuest"] = 10901,	-- The Cudgel of Kar'desh
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif

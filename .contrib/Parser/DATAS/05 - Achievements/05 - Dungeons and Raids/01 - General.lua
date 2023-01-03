@@ -170,22 +170,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			ach(13430),		-- De Lurker Be'loa
 			ach(13425),		-- We Got Spirit, How About You?
 		}),
-		ach(15130, {	-- Glory of the Dominant Raider
-			i(186653),	-- Hand of Hrestimorak (MOUNT!)
-			ach(14998),		-- Name A Better Duo, I'll Wait
-			ach(15065, {	-- Eye Wish You Were Here
-				crit(1),	-- All players have Photoflash!
-				crit(2),	-- Eye of the Jailer has Photoflash!
-			}),
-			ach(15003),	-- To the Nines
-			ach(15105),	-- Tormentor's Tango
-			ach(15058),	-- I Used to Bullseye Deeprun Rats Back Home
-			ach(15131),	-- Whack-A-Soul
-			ach(15132),	-- Knowledge is Power
-			ach(15040),	-- Flawless Fate
-			ach(15108),	-- Together Forever
-			ach(15133),	-- This World is a Prism
-		}),
 		ach(9396, {		-- Glory of the Draenor Hero
 			i(116670),		-- Frostplains Battleboar (MOUNT!)
 			crit(1),		-- Draenor Dungeon Hero
@@ -422,19 +406,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(16),		-- Infinitesimal
 			crit(17),		-- I've Got My Eyes On You
 		}),
-		ach(14355, {	-- Glory of the Nathria Raider
-			i(182596),	-- Rampart Screecher (MOUNT!)
-			crit(1),		-- Blind as a Bat
-			crit(2),		-- Taking Care of Business
-			crit(3),		-- Burning Bright
-			crit(4),		-- Private Stock
-			crit(5),		-- Feed the Beast
-			crit(6),		-- I Don't Know What I Expected
-			crit(7),		-- Pour Decision Making
-			crit(8),		-- Dirtflap's Revenge
-			crit(9),		-- Feed Me, Seymour!
-			crit(10),		-- Clear Conscience
-		}),
 		ach(14146, {	-- Glory of the Ny'alotha Raider
 			i(174861),	-- Wriggling Parasite (MOUNT!)
 			crit(1),	-- Smoke Test
@@ -624,47 +595,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				}),
 			},
 		})),
-		ach(15491, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Glory of the Sepulcher Raider
-			i(187675),	-- Shimmering Aurelid (MOUNT!)
-			ach(15381),	-- Power ON
-			ach(15401),	-- Wisdom Comes From the Desert
-			ach(15398),	-- Xy Never, Ever Marks the Spot.
-			ach(15397),	-- Four Ring Circus
-			ach(15400),	-- Where the Wild Beasts Are
-			ach(15419),	-- The Protoform Matrix
-			ach(15386),	-- Shimmering Secrets
-			ach(15399),	-- Coming to Terms
-			ach(15315),	-- Amidst Ourselves
-			ach(15396),	-- We Are All Made of Stars
-			ach(15494),	-- Damnation Aviation
-		})),
-		ach(14322, {	-- Glory of the Shadowlands Hero
-			i(184183),		-- Voracious Gorger (MOUNT!)
-			crit(1),		-- Bountiful Harvest
-			crit(2),		-- Surgeon's Supplies
-			crit(3),		-- Ready for Raiding VII
-			crit(4),		-- Hooked On Hydroponics
-			crit(5),		-- Someone Could Trip on These!
-			crit(6),		-- Hunger for Knowledge
-			crit(7),		-- Full Gores Meal
-			crit(8),		-- Going Viral
-			crit(9),		-- Riding with my Slimes
-			crit(10),		-- Picking Up the Pieces
-			crit(11),		-- Breaking Bad
-			crit(12),		-- Nobody Puts Denathrius in a Corner
-			crit(13),		-- Couples Therapy
-			crit(14),		-- Highly Communicable
-			crit(15),		-- Thinking with...
-			crit(16),		-- Goliath Offline
-			crit(17),		-- ExSPEARiential
-			crit(18),		-- I Can See My House From Here
-			crit(19),		-- Three Choose One
-			crit(20),		-- Fresh Meat!
-			crit(21),		-- Royal Rumble
-			crit(22),		-- Residue Evil
-			crit(23),		-- I Only Have Eyes For You
-			crit(24),		-- Kaal-ed Shot
-		}),
 		ach(8124, {		-- Glory of the Thundering Raider
 			i(93662),		-- Armored Skyscreamer (MOUNT!)
 			crit(1),		-- Heroic: Jin'rokh the Breaker

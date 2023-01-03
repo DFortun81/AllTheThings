@@ -1518,7 +1518,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["creatureID"] = 9568,	-- Overlord Wyrmthalak
 					["groups"] = {
 						classicAch(643, {	-- Lower Blackrock Spire
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								5089,	-- General Drakkisath's Command
 								5081,	-- Maxwell's Mission
@@ -1915,7 +1915,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						["groups"] = {
 							classicAch(1307, {	-- Upper Blackrock Spire
 								["timeline"] = { "removed 6.0.2" },
-								-- #if BEFORE 3.0.1
+								-- #if BEFORE WRATH
 								["sourceQuests"] = {
 									6602,	-- Blood of the Black Dragon Champion
 									6502,	-- Drakefire Amulet

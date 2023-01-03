@@ -11,6 +11,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "o", 381653 },	-- Fang Flap Fire Signups
 				["coord"] = { 42.8, 69.3, VALDRAKKEN },
 			}),
+			ach(16556),	-- Great Gourmand of The Ruby Feast
 		}),
 	}),
 })));

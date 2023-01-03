@@ -140,13 +140,13 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 			["timeline"] = { "added 3.3.5.12340" },
 		}),
 		i(35225, {	-- X-51 Nether-Rocket (MOUNT!) BOP
-			["timeline"] = { "added 2.4.0.7923" , "removed 3.2.0" },
+			["timeline"] = { "added 2.4.0.7923", "removed 3.2.0" },
 		}),
 		i(49285, {	-- X-51 Nether-Rocket (MOUNT!) BOE
 			["timeline"] = { "added 3.2.0" },
 		}),
 		i(35226, {	-- X-51 Nether-Rocket X-TREME (MOUNT!) BOP
-			["timeline"] = { "added 2.4.0.7923" , "removed 3.2.0" },
+			["timeline"] = { "added 2.4.0.7923", "removed 3.2.0" },
 		}),
 		i(49286, {	-- X-51 Nether-Rocket X-TREME (MOUNT!) BOE
 			["timeline"] = { "added 3.2.0" },

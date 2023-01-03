@@ -1,19 +1,33 @@
 # AllTheThings
 
-## [DF-3.1.7](https://github.com/DFortun81/AllTheThings/tree/DF-3.1.7) (2022-12-18)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.1.6...DF-3.1.7) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.1.10](https://github.com/DFortun81/AllTheThings/tree/DF-3.1.10) (2023-01-01)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.1.9...DF-3.1.10) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
-### Twitch drops
+### Feast of Winter Veil 🎅🎄🤶
 
-Watch eligible The Race to World first streams on Twitch to get free Perpetual Purple Firework toy 🎆 Check out details [here](https://worldofwarcraft.com/en-us/news/23891616).
+Don't forget to open your Winter Veil presents this year! It's 2 toys and 2 achievements this time around ⛄
+Happy New Year! ❄
 
 
-### Data fixes
+### Fucntional changes
 
-- Added and fixed lots of Dragon Isles quests, rares, mounts and pets.
-- Updated Feast of Winter Veil 🎄
-- Updated Stormwind, Ashenvale with legacy information.
-- Daily quests that grant Valiance Expedition reputation are now displayed every day until Exalted.
-- Added various daily quests that grant reputation with Wrath of the Lich King factions.
+- Added the cost counts for popout windows of Things with Costs (pretty basic but should help at-a-glance if you need multiples of certain Items prior to going to the Location to purchase).
+
+
+### Functional fixes
+
+- Fixed duplicated achievements in minilist from last release.
+- Fixed Lua error related to not yet added pets.
+
+
+### Data additions/fixes
+
+- Usual updates to Dragonflight (World/Weekly) Quests, Renown activities, Professions, Rares, Achievements.
+- Celestial Steed, Winged Guardian, Lil' K.T. and Pandaren Monk will leave Game Shop on Jan 2 2023. They will be added to Trading Post in patch 10.0.5 at a later date. Additionally, Tyrael's Charger is available in the shop until Jan 2 2023.
+- Fixed Fireplume Regalia shop set.
+- Added Otto secret Mount.
+- Fixed Dragonflight Achievement category.
+- Added Valdrakken PvP vendors.
+- Added Shadowlands Season 3/4 Ensembles/Arsenals.
 - Other fixes.

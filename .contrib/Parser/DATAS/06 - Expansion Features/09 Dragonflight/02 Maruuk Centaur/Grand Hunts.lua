@@ -127,6 +127,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						["g"] = {
 							i(196983),	-- Cliffside Wylderdrake: Maned Jaw (DM!)
 							i(197125),	-- Highland Drake: Coiled Horns (DM!)
+							i(200233),	-- Paradox Saber
+							i(200204),	-- Sandshine Chestplate
 						},
 					}),
 					n(195430, {	-- Molkeej
@@ -315,8 +317,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						["questID"] = 73931,
 						["isDaily"] = true,
 						["g"] = {
+							i(200237),	-- Burnished Lifewarder's Targe
 							i(197105),	-- Highland Drake: Spined Chin (DM!)
-							-- is part of the DF>Global Rare Loottable
 						},
 					}),
 				}),
@@ -363,7 +365,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["questID"] = 71044,
 				}),
 				i(194093, {	-- Bakar Companion Color: Brown
-					--["questID"] = TODO, probably 71045
+					["questID"] = 71045,
 				}),
 				i(194091, {	-- Bakar Companion Color: Golden Brown
 					["questID"] = 71048,
@@ -407,14 +409,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 								-- confirmed items here
 								193360,	-- Centaur's Trophy Necklace
 								194093,	-- Bakar Companion Color: Brown
-								194094,	-- Bakar Companion Color: Black
-								194091,	-- Bakar Companion Color: Golden Brown
-								194089,	-- Bakar Companion Color: Orange
 								194090,	-- Bakar Companion Color: White
 								193205,	-- Ohuna Companion Color: Brown
 								194088,	-- Ohuna Companion Color: Dark
-								194095,	-- Ohuna Companion Color: Sepia
-								194087,	-- Ohuna Companion Color: Red
 							}},
 							["g"] = {
 								i(192791),	-- Plainswalker Bearer (MOUNT!)
@@ -434,6 +431,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 								{"select","itemID",
 								-- confirmed items here
 								-- zone rewards?, received 198542
+								194094,	-- Bakar Companion Color: Black
 								194087,	-- Ohuna Companion Color: Red
 								194089,	-- Bakar Companion Color: Orange
 							}},
@@ -502,4 +500,5 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	q(73941),	-- Thaldraszus South - Part 1 Towering Fickleshells
 	q(70005),	-- Azure Span East - Completing the Hunt
 	q(70006),	-- Azure Span South - Completing the Hunt
+	q(69998),	-- Waking Shores South - Completing the Hunt
 }));

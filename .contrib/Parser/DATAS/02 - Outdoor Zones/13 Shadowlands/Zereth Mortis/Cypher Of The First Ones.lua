@@ -2,9 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local CYPHER = 1979;
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 	m(ZERETH_MORTIS, {
-		n(-988, {	-- Cypher of the First Ones
+		header(HEADERS.Achievement, 15402, {	-- Cypher of the First Ones
 			n(ACHIEVEMENTS, {
 				ach(15542),	-- Apocopocolypse Now
 				ach(15402, {	-- Cyphers of the First Ones
@@ -43,7 +43,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				q(66579, {	-- Sounds of Healing
 					["sourceQuests"] = { 65219 },	-- Jiro to Hero
 					["provider"] = { "i", 192444 },	-- Resonating Disc
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { ADDED_SL_S4 },
 				}),
 				-- Puzzle Quests
 				q(65460, {	-- Your First Cantaric Protolock
@@ -580,7 +580,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							["cost"] = { { "c", CYPHER, 500 }, },
 						}),
 						i(187421, {	-- Ashen Liniment
-							["timeline"] = { "added 9.2.7" },
+							["cost"] = { { "c", CYPHER, 25 }, },
+							["timeline"] = {  ADDED_SL_2_7 },
 						}),
 						i(188793, {	-- Automated Cypher Analysis Tool
 							["questID"] = 65282,
@@ -658,7 +659,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							["cost"] = { { "c", CYPHER, 500 }, },
 						}),
 						i(190739, {	-- Provis Wax
-							["timeline"] = { "added 9.2.7" },
+							["cost"] = { { "c", CYPHER, 25 }, },
+							["timeline"] = { ADDED_SL_2_7 },
 						}),
 						i(187804, {	-- Recipe: Empty Kettle of Stone Soup (RECIPE!)
 							["cost"] = { { "c", CYPHER, 25 }, },

@@ -17,7 +17,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 54.4, 40.9, VALDRAKKEN },
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_D, {
 				e(2504, {	-- Watcher Irideus
 					["crs"] = { 189719 },	-- Watcher Irideus
 					["g"] = {
@@ -63,7 +63,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_D, {
 				e(2504, {	-- Watcher Irideus
 					["crs"] = { 189719 },	-- Watcher Irideus
 					["g"] = {
@@ -109,7 +109,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_D, {
 				n(ACHIEVEMENTS, {
 					ach(16517),	-- Toxicity Strike Team
 				}),

@@ -214,6 +214,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195211),	-- Chromie's Spare Beacon
 						i(195214),	-- Hoursteel Barrier
 						i(195182),	-- Inexorable Separation
+						i(195177),	-- Moment's Notice
+						i(195181),	-- Rapid Fire
 						i(195183),	-- Reach of Years
 						i(195178),	-- Swirling Sand Fists
 						i(195179),	-- Timeways Baton
@@ -355,7 +357,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				q(66660, {	-- On Your Mark... Get Set...
 					["sourceQuests"] = {
-						66029 ,	-- Temporal Tuning
+						66029,	-- Temporal Tuning
 						66037,	-- Back to Reality
 					},
 					["provider"] = { "n", 186931 },	-- Nozdormu
@@ -919,7 +921,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["collectible"] = false,
 				["g"] = {
 					q(71024, {	-- Chaos and Commotion
-						["sourceQuests"] = { 66244 },	-- To Valdrakken
+						["sourceQuests"] = { 66252 },	-- Reporting In
 						["provider"] = { "n", 189842 },	-- Captain Drine
 						["coord"] = { 56.0, 40.0, VALDRAKKEN },
 					}),
@@ -1042,7 +1044,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 193668 },	-- Lookout Mordren
 					["coord"] = { 36.8, 85.6, THALDRASZUS },
 				}),
-				qNYI(69882, {	-- Lord Epochbrgl
+				q(69882, {	-- Lord Epochbrgl
 					["provider"] = { "n", 193241 },	-- Lord Epochbrgl
 					["coord"] = { 62.2, 81.8, THALDRASZUS },
 					["isDaily"] = true,
@@ -1091,7 +1093,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 49.2, 79.8, THALDRASZUS },
 					["isDaily"] = true,
 				}),
-				qNYI(72121, {	-- The Great Shellkhan
+				q(72121, {	-- The Great Shellkhan
 					["provider"] = { "n", 191305 },	-- The Great Shellkhan
 					["coord"] = { 38.4, 68.2, THALDRASZUS },
 					["isDaily"] = true,
@@ -1108,7 +1110,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 
 				-- NO BONUS OBJECTIVE?
-				-- Blightpaw the Depraved
 				-- Enraged Sprout
 				-- Goremaul the Gluttonous
 				-- Innumerable Ruination
@@ -1195,21 +1196,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 198540 },	-- Golden Claw
 				["coord"] = { 38.8, 45.01, THALDRASZUS },
-				["g"] = {
-					crit(7, {	-- Golden Claw
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			q(70805, {	-- Precious Stone Fragment
 				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 				["provider"] = { "i", 199893 },	-- Precious Stone Fragment
 				["coord"] = { 57.1, 64.6, THALDRASZUS },
-				["g"] = {
-					crit(8, {	-- Precious Stone Fragment
-						["achievementID"] = 16323,	-- Fragments of History
-					}),
-				},
 			}),
 			ach(15941, {	-- Dragon Racing Completionist: Gold
 				["collectible"] = false,
@@ -1370,6 +1361,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72366),	-- triggered after completing 'Moving On' (66221)
 		q(72369),	-- triggered after completing 'Moving On' (66221) / Finishing accord?
 		q(72084),	-- Triggers during 'The Fog of Battle' (66246)
+		q(72110),	-- when delivering Gleamfish to spawn 'The Great Shellkhan'
 		q(72125),	-- Triggers during 'Tying Things Together' (66248)
 		-- q(70511),	-- Popped when doing quest and lootning 198964 Elementious Splinter from mobs?
 

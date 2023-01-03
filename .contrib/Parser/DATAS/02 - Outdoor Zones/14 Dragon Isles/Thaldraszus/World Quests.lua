@@ -4,7 +4,10 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THALDRASZUS, {
 		n(WORLD_QUESTS, {
-			["sourceQuests"] = { 71232 },	-- on one character only
+			["sourceQuests"] = {
+				71232,	-- Renown of the Dragon Isles
+				72366,	-- HQT unlock on alts
+			},
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 
 				-- q(QUEST, {	-- NAME
@@ -31,17 +34,29 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(69949, {	-- Extermination
 					["coord"] = { 61.5, 27.5, THALDRASZUS }
 				}),
+				q(70224, {	-- Fetid Threat
+					["coord"] = { 56.1, 30.8, THALDRASZUS },
+				}),
 				q(72029, {	-- Fishing Frenzy!
 					["coord"] = { 57.3, 66.7, THALDRASZUS }
 				}),
+				q(70602, {	-- History Lesson: War of the Shifting Sands
+					["coord"] = { 58.2, 36.2, THALDRASZUS },
+				}),
 				q(71205, {	-- Hydro Tuskarr
 					["coord"] = { 53.6, 41.5, THALDRASZUS }
+				}),
+				q(71156, {	-- Rebel Concerns
+					["coord"] = { 46.2, 52.2, THALDRASZUS },
 				}),
 				q(70066, {	-- Reclaiming the Hold
 					["coord"] = { 58.8, 57.1, THALDRASZUS }
 				}),
 				q(70934, {	-- Salamanther's Embrace
 					["coord"] = { 54.7, 39.7, THALDRASZUS }
+				}),
+				q(71164, {	-- Stolen Bandages
+					["coord"] = { 45.4, 58.9, THALDRASZUS }
 				}),
 				petbattle(q(71180, {	-- You Have to Start Somewhere
 					["coord"] = { 56.3, 49.2, THALDRASZUS }

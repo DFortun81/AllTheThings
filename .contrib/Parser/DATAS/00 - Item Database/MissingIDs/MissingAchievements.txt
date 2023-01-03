@@ -857,8 +857,6 @@ ach(14382),	-- Mythic: Mists of Tirna Scithe Guild Run
 ach(14383),	-- Mythic: Plaguefall Guild Run
 ach(14384),	-- Mythic: Spires of Ascension Guild Run
 ach(14385),	-- Mythic: Theater of Pain Guild Run
-9.0.1.35167
-ach(14459),	-- Castle Nathria Guild Run \\ Mythic: Castle Nathria Guild Run
 9.0.1.35256
 ach(14517),	-- First Trial, First Try
 ach(14518),	-- The Many Trials of Zo'Sorg
@@ -869,10 +867,8 @@ ach(14571),	-- Twisting Corridors: Layer 9 \\ Torghast: Twisting Corridors: Laye
 ach(14583),	-- The Soulforges: Layer 9 \\ Torghast: The Soulforges: Layer 9 \\ Torghast: The Soulforges: Level 9
 ach(14604),	-- Torghast: Tracking - Completed Layer 9
 9.0.1.35522
-ach(14652),	-- Mythic: Sire Denathrius Guild Run
 ach(14657),	-- Stygian Stockpile
 9.0.1.35598
-ach(14720),	-- Heroic: Castle Nathria Guild Run
 ach(14756),	-- Stygian Sample
 ach(14757),	-- Rainy Day Fund \\ Stygian Supply
 9.0.2.35978
@@ -880,36 +876,14 @@ ach(14838),	-- Champion of Connection
 9.1.0.38511
 ach(15074),	-- <Hidden> Razorwing Eggs Returned
 9.1.0.38950
-ach(15182),	-- Sanctum of Domination Guild Run
-ach(15183),	-- Heroic: Sanctum of Domination Guild Run
-ach(15184),	-- Mythic: Sylvanas Windrunner Guild Run
 ach(15185),	-- Mythic: Tazavesh, the Veiled Market Guild Run
 9.1.5.40622
 ach(15326),	-- [DNT] Rating Test Achievement
-9.2.0.41726
-ach(15472),	-- Sepulcher of the First Ones Guild Run
-ach(15473),	-- Heroic Sepulcher of the First Ones Guild Run
-ach(15474),	-- Mythic The Jailer Guild Run
 9.2.0.42174
 ach(15557),	-- Murkastrasza
 10.0.0.45335
 ach(16425),	-- I'm a Template Character [DNT]
 10.0.0.45454
-ach(16464),	-- Battle on the Dragon Isles
-ach(16495),	-- Obsidian Keymaster
-ach(16497),	-- I'm Playing All Sides \\ I'm Playing Both Sides
-ach(16501),	-- Aquatic Battler of the Dragon Isles
-ach(16503),	-- Beast Battler of the Dragon Isles
-ach(16504),	-- Critter Battler of the Dragon Isles
-ach(16505),	-- Dragonkin Battler of the Dragon Isles
-ach(16506),	-- Elemental Battler of the Dragon Isles
-ach(16507),	-- Flying Battler of the Dragon Isles
-ach(16508),	-- Humanoid Battler of the Dragon Isles
-ach(16509),	-- Magic Battler of the Dragon Isles
-ach(16510),	-- Mechanical Battler of the Dragon Isles
-ach(16511),	-- Undead Battler of the Dragon Isles
-ach(16512),	-- Family Battler of the Dragon Isles
-ach(16519),	-- Dragon Isles Safari
 ach(16520),	-- 10.0 Dragonflight - Expansion Quest Launch (Meet Wrathion/Ebyssian) \\ 10.0 Dragonflight - Expansion Quest Launch
 ach(16522),	-- A True Explorer
 ach(16528),	-- Joining the Khansguard
@@ -926,20 +900,6 @@ ach(16547),	-- Pulled!
 ach(16548),	-- It Takes a Tuskarr Buddy \\ It takes a (Tuskarr) village.
 ach(16549),	-- Popular Around the Isles
 10.0.0.45570
-ach(16556),	-- Great Gourmand of The Ruby Feast
-ach(16592),	-- Tour of Duty: The Waking Shores
-ach(16593),	-- Tour of Duty: Thaldraszus
-ach(16594),	-- Tour of Duty: The Azure Span
-ach(16595),	-- Tour of Duty: Ohn'ahran Plains
-ach(16599),	-- A Champion's Pursuit
-ach(16601),	-- Dragonfight Club
-ach(16603),	-- Bounty Hunter
-ach(16611),	-- Resource Scavanger
-ach(16612),	-- Bounty Vigalante
-ach(16613),	-- Finder's Keepers
-ach(16614),	-- Bloodstained Bounty
-ach(16615),	-- Blood Bank
-ach(16616),	-- Prosperously Bloody
 ach(16621),	-- One of Everything, Please
 ach(16622),	-- Three Minutes or It's Free
 ach(16626),	-- Working with Wyrms
@@ -949,12 +909,10 @@ ach(16631),	-- Dragon Isles Cook
 ach(16632),	-- Dragon Isles Fisherman
 10.0.2.45779
 ach(16729),	-- To All the Squirrels Hidden Til Now \\ To All the Squirrels Hidden Till Now
-ach(16730),	-- Crimson Gladiator's Drake
 ach(16731),	-- Court is Now in Session
 10.0.2.45969
 ach(16736),	-- Grand Theft Mammoth
 10.0.2.46259
-ach(16764),	-- Crimson Carpet Fashion
 ach(16791),	-- Merchant Artisan
 ach(16794),	-- Dragon Isles Crafting Order Apprentice
 ach(16795),	-- Dragon Isles Crafting Order Journeyman
@@ -962,7 +920,6 @@ ach(16797),	-- Artisan's Consortium Monopolist
 ach(16798),	-- Crafting Cooperative
 ach(16799),	-- Personal Crafter
 ach(16800),	-- Dragon Isles Crafting Order Master
-ach(16801),	-- Realm First! Dragonflight Keystone Hero
 10.0.2.46420
 ach(17096),	-- Mythic: Algeth'ar Academy Guild Run
 ach(17097),	-- Mythic: Brackenhide Hollow Guild Run
@@ -972,15 +929,4 @@ ach(17100),	-- Mythic: Ruby Life Pools Guild Run
 ach(17101),	-- Mythic: The Azure Vault Guild Run
 ach(17102),	-- Mythic: The Nokhud Offensive Guild Run
 ach(17103),	-- Mythic: Uldaman: Legacy of Tyr Guild Run
-ach(17107),	-- Ahead of the Curve: Raszageth the Storm-Eater
-ach(17108),	-- Cutting Edge: Raszageth the Storm-Eater
-ach(17110),	-- The Primal Bulwark
-ach(17111),	-- Caverns of Infusion
-ach(17112),	-- Fury of the Storm
-ach(17116),	-- Hall of Fame: Raszageth the Storm-Eater (Alliance)
-ach(17118),	-- Hall of Fame: Raszageth the Storm-Eater (Horde)
 ach(17119),	-- Deep Cuts From the Vault
-10.0.2.46781
-ach(17314),	-- Heroic Edition: Tangled Dreamweaver
-10.0.2.47067
-ach(15640),	-- Return to Darkness

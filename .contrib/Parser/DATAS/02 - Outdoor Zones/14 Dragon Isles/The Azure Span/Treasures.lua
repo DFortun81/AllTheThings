@@ -5,8 +5,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_AZURE_SPAN, {
 		n(TREASURES, {
 			o(383625, {	-- Case of Fresh Gleamfish
-				["coord"] = { 38.4, 68.2, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["coord"] = { 45.6, 54.8, THE_AZURE_SPAN },
 				["g"] = {
 					i(200949),	-- Case of Fresh Gleamfish
 				},
@@ -39,7 +38,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(381110, {	-- Forgotten Jewel Box
 				["coord"] = { 45.1, 59.3, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 70603,
 				["cost"] = { { "i", 199065, 1 }, },	--1x Sorrowful Letter
 				["g"] = {
 					i(201927),	-- Gleaming Arcanocrystal (TOY!)
@@ -155,6 +154,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					{ 60.5, 59.0, THE_AZURE_SPAN },
 				},
 				["g"] = {
+					i(201373),	-- Imbu Net Cutter
 					i(201372),	-- Imbu Tuskarr Axe
 					i(201376),	-- Imbu Tuskarr Mace
 					i(201375),	-- Imbu Warrior's Club

@@ -1,15 +1,13 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	inst(1189, {	-- Sanguine Depths
 		["coord"] = { 51.0, 30.1, REVENDRETH },
 		["maps"] = {
 			1675,	-- Sanguine Depths
 			1676,	-- Amphitheater of Sorrow / Ring of Souls
 		},
-		["lvl"] = { 50 },
 		["g"] = {
 			n(QUESTS, {
 				q(60502,{	-- Sanguine Depths: An Ally Within
@@ -84,7 +82,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_D, {
 				e(2388, {	-- Kryxis the Voracious
 					["crs"] = { 162100 },	-- Kryxis the Voracious
 					["g"] = {
@@ -138,126 +136,119 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
-				["lvl"] = { 60 },
-				["g"] = {
-					e(2388, {	-- Kryxis the Voracious
-						["crs"] = { 162100 },	-- Kryxis the Voracious
-						["g"] = {
-							i(178854),	-- Hungering Devourer's Twinblade
-							i(178853),	-- Voracious Gorger Spine
-							i(178835),	-- Anima-Splattered Hide
-							i(178844),	-- Essence Surgers Cuffs
-							i(178846),	-- Shackles of Alluring Vitality
-							i(178836),	-- Sabatons of the Rushing Juggernaut
-							i(178848),	-- Entwined Gorger Tendril
-						},
-					}),
-					e(2415, {	-- Executor Tarvold
-						["crs"] = { 162103 },	-- Executor Tarvold
-						["g"] = {
-							i(178855),	-- Sinsmasher
-							i(178859),	-- Castigator's Mantle
-							i(178851),	-- Cloak of Enveloping Manifestations
-							i(178845),	-- Vambraces of the Depraved Warden
-							i(178843),	-- Executor's Prideful Girdle
-							i(178837),	-- Sinsoaked Waders
-							i(178849),	-- Overflowing Anima Prison
-						},
-					}),
-					e(2421, {	-- Grand Proctor Beryllia
-						["crs"] = { 162102 },	-- Grand Proctor Beryllia
-						["g"] = {
-							i(178852),	-- Vessel of Shining Radiance
-							i(178847),	-- Radiant Light Binders
-							i(178841),	-- Iron Spiked Handgrips
-							i(178842),	-- Waistguard of Expurged Anguish
-							i(178838),	-- Beryllia's Leggings of Endless Torment
-							i(178850),	-- Lingering Sunmote
-						},
-					}),
-					e(2407, {	-- General Kaal
-						["crs"] = {
-							162133,	-- General Kaal (during gauntlet)
-							162099,	-- General Kaal
-						},
-						["g"] = {
-							ach(14198),	-- Heroic: Sanguine Depths
-							i(178856),	-- Kaal's Gloomblade
-							i(178857),	-- Stone General's Edge
-							i(178860),	-- Cowl of the Devoted General
-							i(178858),	-- Wicked Bladewing Pauldrons
-							i(178840),	-- Guilewind Stone Talons
-							i(178839),	-- Wind Dancer's Legguards
-							i(178862),	-- Bladedancer's Armor Kit
-							i(178861),	-- Decanter of Anima-Charged Winds
-						},
-					}),
-				},
+			d(HEROIC_D, {
+				e(2388, {	-- Kryxis the Voracious
+					["crs"] = { 162100 },	-- Kryxis the Voracious
+					["g"] = {
+						i(178854),	-- Hungering Devourer's Twinblade
+						i(178853),	-- Voracious Gorger Spine
+						i(178835),	-- Anima-Splattered Hide
+						i(178844),	-- Essence Surgers Cuffs
+						i(178846),	-- Shackles of Alluring Vitality
+						i(178836),	-- Sabatons of the Rushing Juggernaut
+						i(178848),	-- Entwined Gorger Tendril
+					},
+				}),
+				e(2415, {	-- Executor Tarvold
+					["crs"] = { 162103 },	-- Executor Tarvold
+					["g"] = {
+						i(178855),	-- Sinsmasher
+						i(178859),	-- Castigator's Mantle
+						i(178851),	-- Cloak of Enveloping Manifestations
+						i(178845),	-- Vambraces of the Depraved Warden
+						i(178843),	-- Executor's Prideful Girdle
+						i(178837),	-- Sinsoaked Waders
+						i(178849),	-- Overflowing Anima Prison
+					},
+				}),
+				e(2421, {	-- Grand Proctor Beryllia
+					["crs"] = { 162102 },	-- Grand Proctor Beryllia
+					["g"] = {
+						i(178852),	-- Vessel of Shining Radiance
+						i(178847),	-- Radiant Light Binders
+						i(178841),	-- Iron Spiked Handgrips
+						i(178842),	-- Waistguard of Expurged Anguish
+						i(178838),	-- Beryllia's Leggings of Endless Torment
+						i(178850),	-- Lingering Sunmote
+					},
+				}),
+				e(2407, {	-- General Kaal
+					["crs"] = {
+						162133,	-- General Kaal (during gauntlet)
+						162099,	-- General Kaal
+					},
+					["g"] = {
+						ach(14198),	-- Heroic: Sanguine Depths
+						i(178856),	-- Kaal's Gloomblade
+						i(178857),	-- Stone General's Edge
+						i(178860),	-- Cowl of the Devoted General
+						i(178858),	-- Wicked Bladewing Pauldrons
+						i(178840),	-- Guilewind Stone Talons
+						i(178839),	-- Wind Dancer's Legguards
+						i(178862),	-- Bladedancer's Armor Kit
+						i(178861),	-- Decanter of Anima-Charged Winds
+					},
+				}),
 			}),
-			d(23, {	-- Mythic
-				["difficulties"] = { 8, 23 },
-				["lvl"] = { 60 },
-				["g"] = {
-					n(ACHIEVEMENTS, {
-						ach(14290),	-- I Only Have Eyes For You
-					}),
-					e(2388, {	-- Kryxis the Voracious
-						["crs"] = { 162100 },	-- Kryxis the Voracious
-						["g"] = {
-							i(178854),	-- Hungering Devourer's Twinblade
-							i(178853),	-- Voracious Gorger Spine
-							i(178835),	-- Anima-Splattered Hide
-							i(178844),	-- Essence Surgers Cuffs
-							i(178846),	-- Shackles of Alluring Vitality
-							i(178836),	-- Sabatons of the Rushing Juggernaut
-							i(178848),	-- Entwined Gorger Tendril
-						},
-					}),
-					e(2415, {	-- Executor Tarvold
-						["crs"] = { 162103 },	-- Executor Tarvold
-						["g"] = {
-							ach(14286),	-- Residue Evil
-							i(178855),	-- Sinsmasher
-							i(178859),	-- Castigator's Mantle
-							i(178851),	-- Cloak of Enveloping Manifestations
-							i(178845),	-- Vambraces of the Depraved Warden
-							i(178843),	-- Executor's Prideful Girdle
-							i(178837),	-- Sinsoaked Waders
-							i(178849),	-- Overflowing Anima Prison
-						},
-					}),
-					e(2421, {	-- Grand Proctor Beryllia
-						["crs"] = { 162102 },	-- Grand Proctor Beryllia
-						["g"] = {
-							i(180591),	-- Vial of Roiling Emotions (PET!)
-							i(178852),	-- Vessel of Shining Radiance
-							i(178847),	-- Radiant Light Binders
-							i(178841),	-- Iron Spiked Handgrips
-							i(178842),	-- Waistguard of Expurged Anguish
-							i(178838),	-- Beryllia's Leggings of Endless Torment
-							i(178850),	-- Lingering Sunmote
-						},
-					}),
-					e(2407, {	-- General Kaal
-						["crs"] = {
-							162133,	-- General Kaal (during gauntlet)
-							162099,	-- General Kaal
-						},
-						["g"] = {
-							ach(14199),	-- Mythic: Sanguine Depths
-							ach(14289),	-- Kaal-ed Shot
-							i(178856),	-- Kaal's Gloomblade
-							i(178857),	-- Stone General's Edge
-							i(178860),	-- Cowl of the Devoted General
-							i(178858),	-- Wicked Bladewing Pauldrons
-							i(178840),	-- Guilewind Stone Talons
-							i(178839),	-- Wind Dancer's Legguards
-							i(178862),	-- Bladedancer's Armor Kit
-							i(178861),	-- Decanter of Anima-Charged Winds
-						},
-					}),
-				},
+			d(MYTHIC_D, {
+				n(ACHIEVEMENTS, {
+					ach(14290),	-- I Only Have Eyes For You
+				}),
+				e(2388, {	-- Kryxis the Voracious
+					["crs"] = { 162100 },	-- Kryxis the Voracious
+					["g"] = {
+						i(178854),	-- Hungering Devourer's Twinblade
+						i(178853),	-- Voracious Gorger Spine
+						i(178835),	-- Anima-Splattered Hide
+						i(178844),	-- Essence Surgers Cuffs
+						i(178846),	-- Shackles of Alluring Vitality
+						i(178836),	-- Sabatons of the Rushing Juggernaut
+						i(178848),	-- Entwined Gorger Tendril
+					},
+				}),
+				e(2415, {	-- Executor Tarvold
+					["crs"] = { 162103 },	-- Executor Tarvold
+					["g"] = {
+						ach(14286),	-- Residue Evil
+						i(178855),	-- Sinsmasher
+						i(178859),	-- Castigator's Mantle
+						i(178851),	-- Cloak of Enveloping Manifestations
+						i(178845),	-- Vambraces of the Depraved Warden
+						i(178843),	-- Executor's Prideful Girdle
+						i(178837),	-- Sinsoaked Waders
+						i(178849),	-- Overflowing Anima Prison
+					},
+				}),
+				e(2421, {	-- Grand Proctor Beryllia
+					["crs"] = { 162102 },	-- Grand Proctor Beryllia
+					["g"] = {
+						i(180591),	-- Vial of Roiling Emotions (PET!)
+						i(178852),	-- Vessel of Shining Radiance
+						i(178847),	-- Radiant Light Binders
+						i(178841),	-- Iron Spiked Handgrips
+						i(178842),	-- Waistguard of Expurged Anguish
+						i(178838),	-- Beryllia's Leggings of Endless Torment
+						i(178850),	-- Lingering Sunmote
+					},
+				}),
+				e(2407, {	-- General Kaal
+					["crs"] = {
+						162133,	-- General Kaal (during gauntlet)
+						162099,	-- General Kaal
+					},
+					["g"] = {
+						ach(14199),	-- Mythic: Sanguine Depths
+						ach(14289),	-- Kaal-ed Shot
+						i(178856),	-- Kaal's Gloomblade
+						i(178857),	-- Stone General's Edge
+						i(178860),	-- Cowl of the Devoted General
+						i(178858),	-- Wicked Bladewing Pauldrons
+						i(178840),	-- Guilewind Stone Talons
+						i(178839),	-- Wind Dancer's Legguards
+						i(178862),	-- Bladedancer's Armor Kit
+						i(178861),	-- Decanter of Anima-Charged Winds
+					},
+				}),
 			}),
 		},
 	}),

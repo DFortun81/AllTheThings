@@ -18,49 +18,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200165),	-- Aegis of Scales
 					i(196992),	-- Cliffside Wylderdrake: Heavy Horns (DM!)
 					i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
 				},
 			}),
 			n(187945, {	-- Anhydros the Tidetaker
 				["coord"] = { 58.7, 40.3, THE_WAKING_SHORES },
 				["questID"] = 73865,
-				["g"] = {
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
-				},
 			}),
 			n(193135, {	-- Azra's Prized Peony
 				["coord"] = { 54.9, 71.1, THE_WAKING_SHORES },
-				-- ["questID"] = 69839,
+				["questID"] = 73984,
 				["g"] = {
 					i(200259),	-- Forest Dweller's Shield
 					i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
 					i(197121),	-- Highland Drake: Tan Horns (DM!)
+					i(200229),	-- Slightly Digested Leggings
 				},
 			}),
 			n(193177, {	-- Beakers
@@ -74,23 +45,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["description"] = "Travelling.",
 				["coord"] = { 48.4, 66.1, THE_WAKING_SHORES },
 				["questID"] = 73890,
-				["g"] = {
-					i(200857),	-- Talisman of Sargha (TOY!)
-					--[[ Rest is under shared Lv70 Elite Rare Drops
-					i(200186),	-- Amberquill Shroud
-					i(200442),	-- Basilisk Hide Jerkin
-					i(200174),	-- Bonesigil Shoulderguards
-					i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-					i(197111),	-- Highland Drake: Maned Head
-					i(200445),	-- Lucky Hunting Charm
-					i(200249),	-- Mage's Chewed Wand
-					i(200193),	-- Manafrond Sandals
-					i(200232),	-- Raptor Talonglaive
-					i(200131),	-- Reclaimed Survivalist's Dagger
-					i(200859),	-- Seasoned Hunter's Trophy
-					i(200563),	-- Primal Ritual-shell
-					i(200195),	-- Thunderscale Legguards --]]
-				},
 			}),
 			n(193198, {	-- Captain Lancer
 				["coord"] = { 26.9, 76.1, THE_WAKING_SHORES },
@@ -99,6 +53,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(200286),	-- Dragonbane Lance
 					i(200757),	-- Qalashi War-Helm
+				},
+			}),
+			n(187745, {	-- Disoriented Watcher
+				["coord"] = { 67.8, 55.4, THE_WAKING_SHORES },
+				["questID"] = 74092,
+				["g"] = {
+					i(200138),	-- Ancient Dancer's Longspear
 				},
 			}),
 			n(191611, {	-- Dragonhunter Igordan
@@ -144,7 +105,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(197135),	-- Highland Drake: Toothy Mouth (DM!)
 					i(200247),	-- Inextinguishable Gavel
 					i(200133),	-- Volcanic Chakram
-					-- is part of the DF>Global Rare Loottable
 				},
 			}),
 			n(193154, {	-- Forgotten Gryphon
@@ -158,7 +118,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193226, {	-- Gorjo the Crab Shackler
 				["crs"] = { 193228 },	-- Snappy
 				["coord"] = { 78.6, 50.0, THE_WAKING_SHORES },
-				-- ["questID"] = 69874,
+				["questID"] = 73997,
 				["g"] = {
 					i(200281),	-- Gorjo's Riding Crop
 				},
@@ -177,10 +137,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					186202,	-- Voll
 				},
 				["coord"] = { 42.1, 39.5, THE_WAKING_SHORES },
-				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
+				["questID"] = 74003,
+				["g"] = {
+					i(200171),	-- Grymheart Blade
+					i(182361),	-- Protector's Molten Cudgel
+					i(183061),	-- Qalashi War-Helm
+					i(200175),	-- Repurposed Anvil
+					i(200243),	-- Titanic Scholar's Finery
+				},
 			}),
 			n(193263, {	-- Helmet Missingway
 				["coord"] = { 43.4, 73.6, THE_WAKING_SHORES },
@@ -194,14 +158,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 72841,
 				["g"] = {
 					i(197023),	-- Cliffside Wylderdrake: Maned Neck (DM!)
+					i(200313),	-- Earthen Protoscale Drape
 					i(200246),	-- Lost Delving Lamp
-					i(200198),	-- Primalist Prison (TOY!)
+					i(200253),	-- Snowspring Incanter's Knife
 					i(200254),	-- Totemic Cinch
 				},
 			}),
 			n(193266, {	-- Lepidoralia the Resplendent
-				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
-				-- ["questID"] = 69891,
+				["coord"] = { 33.8, 85.8, THE_WAKING_SHORES },
+				["questID"] = 74065,
+				["description"] = "Talk to Collector Zik at the entrance to the cave and get a net. Start catching butterflies- no really, like, hundreds of butterflies. You'll be here a while.",
 				-- ["g"] = {
 
 				-- },
@@ -236,10 +202,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193118, {	-- O'nank Shorescour
 				["coord"] = { 82.2, 49.4, THE_WAKING_SHORES },
-				-- ["questID"] = 70983,
-				-- ["g"] = {
-
-				-- },
+				["questID"] = 74017,
+				["g"] = {
+					i(200435),	-- Brackish Breeches
+					i(200203),	-- Repurposed Giant's Thimble
+					i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
+				},
 			}),
 			n(184853, {	-- Primal Scythid Queen
 				["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
@@ -257,9 +225,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(197001),	-- Cliffside Wylderdrake: Finned Cheek
 					i(197098),	-- Highland Drake: Finned Back (DM!)
-					i(200164),	-- iceloop
-					i(200086),	-- Khaz'gorite-infused Resin
-					i(200245),	-- leviathan-lure
+					i(200164),	-- Iceloop
+					i(200086),	-- Khaz'gorite Infused Resin
+					i(200245),	-- Leviathan Lure
 					i(200563),	-- Primal Ritual Shell
 					i(200187),	-- Rod of Glacial Force
 					i(200552),	-- Torrent Caller's Shell
@@ -275,7 +243,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193181, {	-- Skewersnout <Raypier of the Deep>
 				["coord"] = { 39.6, 41.2, THE_WAKING_SHORES },
-				-- ["questID"] = ,
+				["questID"] = 73895,
 				["g"] = {
 					i(200132),	-- Skewer's Snout
 					i(200552),	-- Torrent Caller's Shell
@@ -285,13 +253,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193175, {	-- Slurpo, the Incredible Snail
 				["coord"] = { 34.5, 89.7, THE_WAKING_SHORES },
 				["questID"] = 74079,
+				["cost"] = {{"i",201033,1}},	-- 1x Magical Salt Crystal
+				["description"] = "Bring a Magical Salt Crystal from the Azure Span into the cave. If the pool is full of Unsalted Water Snails, use the Extra Action Button to summon the rare.",
 				["g"] = {
 					i(200189),	-- Hydroforged Shell Helm
 				},
 			}),
 			n(193120, {	-- Smogswog the Firebreather
 				["coord"] = { 69.0, 64.8, THE_WAKING_SHORES },
-				-- ["questID"] = 69668,
+				["questID"] = 74031,
 				["g"] = {
 					i(200209),	-- Firebreather's Cowl
 				},

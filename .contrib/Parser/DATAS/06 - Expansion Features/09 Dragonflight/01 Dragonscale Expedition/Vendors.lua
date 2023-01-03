@@ -19,35 +19,127 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 				["g"] = {
 						-- RENOWN 5 --
-					i(198719),	-- Plans: Sturdy Expedition Shovel (RECIPE!)
+					i(198719, {	-- Plans: Sturdy Expedition Shovel (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 15 },
+						},
+					}),
 						-- RENOWN 9 --
-					i(199812),	-- Formula: Enchant Boots - Rider's Assurance (RECIPE!)
-					i(199811),	-- Formula: Enchant Cloak - Graceful Avoidance (RECIPE!)
-					i(194606),	-- Design: Energized Malygite (RECIPE!)
-					i(194614),	-- Design: Keen Neltharite (RECIPE!)
-					i(194605),	-- Design: Radiant Malygite (RECIPE!)
-					i(194613),	-- Design: Sensei's Neltharite (RECIPE!)
-					i(198781),	-- Schematic: Gravitational Displacer (RECIPE!)
-					i(198784),	-- Schematic: Primal Deconstruction Charge (RECIPE!)
+					i(199812, {	-- Formula: Enchant Boots - Rider's Assurance (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 50 },
+						},
+					}),
+					i(199811, {	-- Formula: Enchant Cloak - Graceful Avoidance (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 50 },
+						},
+					}),
+					i(194606, {	-- Design: Energized Malygite (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 50 },
+						},
+					}),
+					i(194614, {	-- Design: Keen Neltharite (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 50 },
+						},
+					}),
+					i(194605, {	-- Design: Radiant Malygite (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 50 },
+						},
+					}),
+					i(194613, {	-- Design: Sensei's Neltharite (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 50 },
+						},
+					}),
+					i(198781, {	-- Schematic: Gravitational Displacer (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 50 },
+						},
+					}),
+					i(198784, {	-- Schematic: Primal Deconstruction Charge (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 50 },
+						},
+					}),
 						-- RENOWN 13 --
-					i(194635),	-- Design: Idol of the Earth Warder (RECIPE!)
-					i(194632),	-- Design: Idol of the Lifebinder (RECIPE!)
+					i(194635, {	-- Design: Idol of the Earth Warder (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 400 },
+						},
+					}),
+					i(194632, {	-- Design: Idol of the Lifebinder (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 400 },
+						},
+					}),
 					i(198101),	-- Recipe: Salad on the Side (RECIPE!)
 						-- RENOWN 15 --
-					i(194661),	-- Design: Magnificent Margin Magnifier (RECIPE!)
-					i(194294),	-- Pattern: Explorer's Banner of Dragon Isles Flora (RECIPE!)
-					i(194295),	-- Pattern: Explorer's Banner of Dragon Isles Geology (RECIPE!)
-					i(194289),	-- Pattern: Master's Wildercloth Chef's Hat (RECIPE!)
-					i(194291),	-- Pattern: Master's Wildercloth Fishing Cap (RECIPE!)
-					i(198782),	-- Schematic: Bottomless Mireslush Ore Satchel (RECIPE!)
-					i(198783),	-- Schematic: Spring-Loaded Khaz'gorite Fabric Cutters (RECIPE!)
-					i(198901),	-- Technique: Renewed Proto-Drake Manuscript: Spined Crest (RECIPE!)
+					i(194661, {	-- Design: Magnificent Margin Magnifier (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 500 },
+						},
+					}),
+					i(194294, {	-- Pattern: Explorer's Banner of Herbology (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 750 },
+						},
+					}),
+					i(194295, {	-- Pattern: Explorer's Banner of Geology (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 750 },
+						},
+					}),
+					i(194289, {	-- Pattern: Master's Wildercloth Chef's Hat (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 500 },
+						},
+					}),
+					i(194291, {	-- Pattern: Master's Wildercloth Fishing Cap (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 500 },
+						},
+					}),
+					i(198782, {	-- Schematic: Bottomless Mireslush Ore Satchel (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 500 },
+						},
+					}),
+					i(198783, {	-- Schematic: Spring-Loaded Khaz'gorite Fabric Cutters (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 500 },
+						},
+					}),
+					i(198901, {	-- Technique: Renewed Proto-Drake Manuscript: Spined Crest (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 25 },
+						},
+					}),
 						-- RENOWN 17 --
-					i(194281),	-- Pattern: Cold Cushion (RECIPE!)
-					i(194268),	-- Pattern: Explorer's League Exploring Tent (RECIPE!)
+					i(194281, {	-- Pattern: Cold Cushion (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 750 },
+						},
+					}),
+					i(194268, {	-- Pattern: Dragonscale Expedition's Expedition Tent (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 750 },
+						},
+					}),
 						-- RENOWN 19 --
-					i(194285),	-- Pattern: Azureweave Expedition Pack (RECIPE!)
-					i(198788),	-- Technique: Contract: Dragonscale Expedition (RECIPE!)
+					i(194285, {	-- Pattern: Azureweave Expedition Pack (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 750 },
+						},
+					}),
+					i(198788, {	-- Technique: Contract: Dragonscale Expedition (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 200 },
+						},
+					}),
 						-- RENOWN 21 --
 					i(200738, {	-- Onyx Gem Cluster Map
 						["questID"] = 72021,
@@ -56,9 +148,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							{ "i", NELTHARITE, 3 },
 						},
 					}),
-					i(194283),	-- Pattern: Duck Stuffed Duck Lovie (RECIPE!)
-					i(198785),	-- Schematic: Quack-E (RECIPE!)
-					i(198909),	-- Technique: Illusion Parchment: Magma Missile (RECIPE!)
+					i(194283, {	-- Pattern: Duck Stuffed Duck Lovie (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 750 },
+						},
+					}),
+					i(198785, {	-- Schematic: Quack-E (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 750 },
+						},
+					}),
+					i(198909, {	-- Technique: Illusion Parchment: Magma Missile (RECIPE!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 750 },
+						},
+					}),
 				},
 			}),
 			n(189226, {	-- Cataloger Jakes

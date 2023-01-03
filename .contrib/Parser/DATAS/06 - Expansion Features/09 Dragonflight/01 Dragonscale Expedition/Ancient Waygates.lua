@@ -13,29 +13,29 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			n(QUESTS, {
 					-- RENOWN 7 --
 				q(66595, {	-- Dormant Discovery
-					["description"] = "Requires Renown 7.",
+					["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7
 					["provider"] = { "i", 198538 },	-- Magically Bound Message
 				}),
 				q(66597, {	-- This Old Stone
-					["description"] = "Requires Renown 7.",
+					["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7
 					["sourceQuests"] = { 66595 },	-- Dormant Discovery
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 				}),
 				q(66598, {	-- Nightborne Know-How
-					["description"] = "Requires Renown 7.",
+					["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7
 					["sourceQuests"] = { 66597 },	-- This Old Stone
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 				}),
 				q(70215, {	-- Curiosity is Key
-					["description"] = "Requires Renown 7.",
+					["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7
 					["sourceQuests"] = { 66598 },	-- Nightborne Know-How
 					["provider"] = { "n", 189764 },	-- Warpcaster Delandra
 					["coord"] = { 45.9, 40.7, THE_AZURE_SPAN },
 				}),
 				q(66582, {	-- Power Procurement
-					["description"] = "Requires Renown 7.",
+					["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7
 					["sourceQuests"] = { 70215 },	-- Curiosity is Key
 					["provider"] = { "n", 189764 },	-- Warpcaster Delandra
 					["coord"] = { 45.9, 40.7, THE_AZURE_SPAN },
@@ -45,13 +45,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 				q(70154, {	-- A Gateway to Somewhere
-					["description"] = "Requires Renown 7.",
+					["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7
 					["sourceQuests"] = { 66582 },	-- Power Procurement
 					["provider"] = { "n", 189764 },	-- Warpcaster Delandra
 					["coord"] = { 45.9, 40.7, THE_AZURE_SPAN },
 				}),
 				q(70156, {	-- An Ancient Awakening
-					["description"] = "Requires Renown 7.",
+					["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7
 					["sourceQuests"] = { 70154 },	-- A Gateway to Somewhere
 					["provider"] = { "n", 189764 },	-- Warpcaster Delandra
 					["coord"] = { 48.6, 30.3, THE_AZURE_SPAN },
@@ -68,12 +68,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 					-- RENOWN 8 --
 				q(70702, {	-- Continued Waygate Exploration
-					["description"] = "Requires Renown 8. Spawns Anywhere on Dragon Isles.",
+					["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
+					["description"] = "Spawns Anywhere on Dragon Isles.",
+					["sourceQuests"] = { 70156 },	-- An Ancient Awakening
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(71138, {	-- Waygate: Rusza'thar Reach
-					["description"] = "Requires Renown 8.",
+					["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
 					["sourceQuests"] = { 70702 },	-- Continued Waygate Exploration
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
@@ -85,7 +87,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 				q(71157, {	-- Waygate: Skytop Observatory
-					["description"] = "Requires Renown 8.",
+					["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
 					["sourceQuests"] = { 70702 },	-- Continued Waygate Exploration
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
@@ -97,7 +99,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 				q(71161, {	-- Waygate: Vakthros
-					["description"] = "Requires Renown 8.",
+					["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
 					["sourceQuests"] = { 70702 },	-- Continued Waygate Exploration
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
@@ -109,7 +111,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 				q(71162, {	-- Waygate: Algeth'era
-					["description"] = "Requires Renown 8.",
+					["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
 					["sourceQuests"] = { 70702 },	-- Continued Waygate Exploration
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
@@ -121,7 +123,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 				q(71165, {	-- Waygate: Eon's Fringe
-					["description"] = "Requires Renown 8.",
+					["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
 					["sourceQuests"] = { 70702 },	-- Continued Waygate Exploration
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
@@ -133,7 +135,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 				q(71178, {	-- Waygate: Shady Sanctuary
-					["description"] = "Requires Renown 8.",
+					["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
 					["sourceQuests"] = { 70702 },	-- Continued Waygate Exploration
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
@@ -146,13 +148,33 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 					-- RENOWN 10 --
 				q(71146, {	-- Continued Waygate Exploration
-					["description"] = "Requires Renown 8. Spawns Anywhere on Dragon Isles.",
+					["minReputation"] = { 2507, 10 },	-- Dragonscale Expedition Renown 10
+					["description"] = "Spawns Anywhere on Dragon Isles.",
+					["sourceQuest"] = 70702,	-- Continued Waygate Exploration
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 					-- RENOWN 15 --
 				q(71148, {	-- Continued Waygate Exploration
-					["description"] = "Requires Renown 15. Spawns Anywhere on Dragon Isles.",
+					["minReputation"] = { 2507, 15 },	-- Dragonscale Expedition Renown 15
+					["description"] = "Spawns Anywhere on Dragon Isles.",
+					["sourceQuest"] = 71146,	-- Continued Waygate Exploration
+					["provider"] = { "n", 196643 },	-- Doc Nanners
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+					-- RENOWN 17 --
+				q(71149, {	-- Continued Waygate Exploration
+					["minReputation"] = { 2507, 17 },	-- Dragonscale Expedition Renown 17
+					["description"] = "Spawns Anywhere on Dragon Isles.",
+					["sourceQuest"] = 71148,	-- Continued Waygate Exploration
+					["provider"] = { "n", 196643 },	-- Doc Nanners
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+					-- RENOWN 20 --
+				q(71150, {	-- Continued Waygate Exploration
+					["minReputation"] = { 2507, 20 },	-- Dragonscale Expedition Renown 20
+					["description"] = "Spawns Anywhere on Dragon Isles.",
+					["sourceQuest"] = 71149,	-- Continued Waygate Exploration
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
@@ -165,6 +187,8 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(71183),	-- triggered together with 'Continued Waygate Exploration' (70702)
 		q(71185),	-- triggered together with 'Continued Waygate Exploration' (71146)
 		q(71187),	-- triggered together with 'Continued Waygate Exploration' (71148)
+		q(71188),	-- triggered together with 'Continued Waygate Exploration' (71149) / Shady Sanctuary ( 71178)?
+		q(71189),	-- triggered together with 'Continued Waygate Exploration' (71150)
 		q(73864),	-- triggered when accepting 'Dormant Discovery' (66595)
 	}),
 })));

@@ -250,7 +250,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["group"] = {
 						classicAch(2357, {	-- Dreadsteed of Xoroth
 							["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["description"] = "Completed the Dreadsteed of Xoroth warlock quest.",
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif

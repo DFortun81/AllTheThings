@@ -5,56 +5,72 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 	n(DRAGONSCALE_EXPEDITION, {
 		n(QUESTS, {
 				-- RENOWN 1 --
+			q(72397, {	-- Orientation: Dragonscale Basecamp
+				["minReputation"] = { 2507, 1 },	-- Dragonscale Expedition Renown 1
+				["provider"] = { "n", 186869 },	-- Naleidea Rivergleam
+				["coord"] = { 47.9, 82.4, THE_WAKING_SHORES },
+			}),
+				-- RENOWN 2 --
+			q(70822, {	-- Lost Expedition Scouts
+				["minReputation"] = { 2507, 2 },	-- Dragonscale Expedition Renown 2
+				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
+				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
+			}),
+			q(72023, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 2 },	-- Dragonscale Expedition Renown 2
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
+				},
+			}),
+				-- Binds when picked up A Titan Relic
 			q(71034, {	-- Dragon Isles Artifacts
+				["minReputation"] = { 2507, 2 },	-- Dragonscale Expedition Renown 2
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["repeatable"] = true,
 				["cost"] = { { "i", 192055, 1 }, }, 	-- 1x Dragon Isles Artifact
 			}),
 			q(71035, {	-- Multiple Dragon Isles Artifacts
+				["minReputation"] = { 2507, 2 },	-- Dragonscale Expedition Renown 2
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["repeatable"] = true,
 				["cost"] = { { "i", 192055, 5 }, }, 	-- 5x Dragon Isles Artifact
 			}),
 			q(72876, {	-- Multiple Dragon Isles Artifacts
+				["minReputation"] = { 2507, 2 },	-- Dragonscale Expedition Renown 2
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["repeatable"] = true,
 				["cost"] = { { "i", 192055, 20 }, }, 	-- 20x Dragon Isles Artifact
 			}),
-			q(72397, {	-- Orientation: Dragonscale Basecamp
-				["description"] = "Requires Renown 1.",
-				["provider"] = { "n", 186869 },	-- Naleidea Rivergleam
-				["coord"] = { 47.9, 82.4, THE_WAKING_SHORES },
-			}),
-				-- RENOWN 2 --
-			q(72023, {	-- Dragon Isles Supplies
-				["description"] = "Requires Renown 2.",
-				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
+				-- Binds to Blizard account A Titan Relic
+			q(71036, {	-- Dragon Isles Artifacts
+				["minReputation"] = { 2507, 2 },	-- Dragonscale Expedition Renown 2
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-				["g"] = {
-					i(198863),	-- Small Dragon Expedition Supply Pack
-				},
+				["repeatable"] = true,
+				["cost"] = { { "i", 200443, 1 }, }, 	-- 1x Dragon Isles Artifact
 			}),
-			q(70822, {	-- Lost Expedition Scouts
-				["description"] = "Requires Renown 2.",
-				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
-				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
+			q(71037, {	-- Multiple Dragon Isles Artifacts
+				["minReputation"] = { 2507, 2 },	-- Dragonscale Expedition Renown 2
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["cost"] = { { "i", 200443, 5 }, }, 	-- 5x Dragon Isles Artifact
+			}),
+			q(72877, {	-- Multiple Dragon Isles Artifacts
+				["minReputation"] = { 2507, 2 },	-- Dragonscale Expedition Renown 2
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["cost"] = { { "i", 200443, 20 }, }, 	-- 20x Dragon Isles Artifact
 			}),
 				-- RENOWN 3 --
-			q(72024, {	-- Dragon Isles Supplies
-				["description"] = "Requires Renown 3.",
-				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
-				["provider"] = { "n", 189226 },	-- Cataloger Jakes
-				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-				["g"] = {
-					i(198863),	-- Small Dragon Expedition Supply Pack
-				},
-			}),
 			q(70335, {	-- Simple Excavation Tools
-				["description"] = "Requires Renown 3.",
+				["minReputation"] = { 2507, 3 },	-- Dragonscale Expedition Renown 3
 				["provider"] = { "n", 188265 },	-- Rae'ana
 				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
 				["g"] = {
@@ -64,9 +80,18 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199746),	-- Excavator's Trowel
 				},
 			}),
+			q(72024, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 3 },	-- Dragonscale Expedition Renown 3
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
+				},
+			}),
 				-- RENOWN 4 --
 			q(70812, {	-- Expedition Cloaks
-				["description"] = "Requires Renown 4.\n\nBuying the Renowned cloaks will remove this quest from being available!",
+				["minReputation"] = { 2507, 4 },	-- Dragonscale Expedition Renown 4
+				["description"] = "Buying the Renowned cloaks will remove this quest from being available!",
 				["provider"] = { "n", 187700 },	-- Pathfinder Jab
 				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1, "questID", 72025 },
@@ -77,9 +102,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199875),	-- Renowned Expeditioner's Drape
 				},
 			}),
+			q(72025, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2507, 4 },	-- Dragonscale Expedition Renown 4
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
+				},
+			}),
 				-- RENOWN 5 --
 			q(70813, {	-- Digging Up Treasure
-				["description"] = "Requires Renown 5.",
+				["minReputation"] = { 2507, 5 },	-- Dragonscale Expedition Renown 5
 				["provider"] = { "n", 187700 },	-- Pathfinder Jab
 				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
 				["g"] = {
@@ -87,8 +120,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72026, {	-- Dragonscale Expedition Supplies
-				["description"] = "Requires Renown 5.",
-				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
+				["minReputation"] = { 2507, 5 },	-- Dragonscale Expedition Renown 5
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["g"] = {
@@ -97,7 +129,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 7 --
 			q(70807, {	-- Advanced Excavation Tools
-				["description"] = "Requires Renown 7.",
+				["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7
 				["provider"] = { "n", 188265 },	-- Rae'ana
 				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
 				["g"] = {
@@ -108,8 +140,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 8 --
 			q(72032, {	-- Dragonscale Expedition Supplies
-				["description"] = "Requires Renown 8.",
-				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
+				["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["g"] = {
@@ -117,8 +148,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72034, {	-- Dragonscale Expedition Supplies
-				["description"] = "Requires Renown 8.",
-				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
+				["minReputation"] = { 2507, 8 },	-- Dragonscale Expedition Renown 8
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["g"] = {
@@ -127,7 +157,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 9 --
 			q(70828, {	-- Wayfinder's Compass
-				["description"] = "Requires Renown 9.",
+				["minReputation"] = { 2507, 9 },	-- Dragonscale Expedition Renown 9
 				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
 				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
 				["g"] = {
@@ -135,7 +165,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(70808, {	-- Initial Mysteries of the Dragon Isles Drakes
-				["description"] = "Requires Renown 9.",
+				["minReputation"] = { 2507, 9 },	-- Dragonscale Expedition Renown 9
 				["provider"] = { "n", 188265 },	-- Rae'ana
 				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
 				["g"] = {
@@ -146,7 +176,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 11 --
 			q(70820, {	-- The Basecamp 'Pets'
-				["description"] = "Requires Renown 11.",
+				["minReputation"] = { 2507, 11 },	-- Dragonscale Expedition Renown 11
 				["provider"] = { "n", 187408 },	-- Granpap Whiskers
 				["coord"] = { 47.7, 83.2, THE_WAKING_SHORES },
 				["g"] = {
@@ -156,72 +186,73 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 12 --
 			q(70817, {	-- New Dragonscale Equipment
-				["description"] = "Requires Renown 12.",
+				["minReputation"] = { 2507, 12 },	-- Dragonscale Expedition Renown 12
 				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
 				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
 			}),
 				-- RENOWN 13 --
 			q(69093, {	-- A New Mystery
-				["description"] = "Requires Renown 13. Spawns Anywhere on Dragon Isles.",
+				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
+				["description"] = "Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 196643 },	-- Doc Nanners
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
 			q(66012, {	-- The Sealed Door
-				["description"] = "Requires Renown 13.",
+				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
 				["sourceQuests"] = { 69093 },	-- A New Mystery
 				["provider"] = { "n", 186869 },	-- Naleidea Rivergleam
 				["coord"] = { 47.9, 82.4, THE_WAKING_SHORES },
 			}),
 			q(66013, {	-- Investigate the Door
-				["description"] = "Requires Renown 13.",
+				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
 				["sourceQuests"] = { 66012 },	-- The Sealed Door
 				["provider"] = { "n", 186870 },	-- Naleidea Rivergleam
 				["coord"] = { 54.5, 55.7, THALDRASZUS },
 			}),
 			q(66673, {	-- Speak to Koranos
-				["description"] = "Requires Renown 13.",
+				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
 				["sourceQuests"] = { 66013 },	-- Investigate the Door
 				["provider"] = { "n", 186870 },	-- Naleidea Rivergleam
 				["coord"] = { 54.5, 55.7, THALDRASZUS },
 			}),
 			q(66094, {	-- The Ruins of Szat Skeleth
-				["description"] = "Requires Renown 13.",
+				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
 				["sourceQuests"] = { 66673 },	-- Speak to Koranos
 				["provider"] = { "n", 186870 },	-- Naleidea Rivergleam
 				["coord"] = { 54.5, 55.7, THALDRASZUS },
 			}),
 			q(70784, {	-- The Abandoned Outpost
-				["description"] = "Requires Renown 13.",
+				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
 				["sourceQuests"] = { 66673 },	-- Speak to Koranos
 				["provider"] = { "n", 186870 },	-- Naleidea Rivergleam
 				["coord"] = { 54.5, 55.7, THALDRASZUS },
 			}),
 			q(70785, {	-- The City of the Dead
-				["description"] = "Requires Renown 13.",
+				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
 				["sourceQuests"] = { 66673 },	-- Speak to Koranos
 				["provider"] = { "n", 186870 },	-- Naleidea Rivergleam
 				["coord"] = { 54.5, 55.7, THALDRASZUS },
 			}),
 			q(70507, {	-- The Insight of Tyr
-				["description"] = "Requires Renown 13.",
+				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
 				["sourceQuests"] = { 66094 },	-- The Ruins of Szat Skeleth
 				["provider"] = { "n", 191159 },	-- Toddy Whiskers
 				["coord"] = { 40.0, 67.5, OHNAHRAN_PLAINS },
 			}),
 			q(70503, {	-- The Vigilance of Tyr
-				["description"] = "Requires Renown 13.",
+				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
 				["sourceQuests"] = { 70784 },	-- The Abandoned Outpost
 				["provider"] = { "n", 193350 },	-- Naleidea Rivergleam
 				["coord"] = { 53.9, 50.7, THE_AZURE_SPAN },
 			}),
 			q(66814, {	-- The Judgement of Tyr
-				["description"] = "Requires Renown 13.",
+				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
 				["sourceQuests"] = { 70785 },	-- The City of the Dead
 				["provider"] = { "n", 190855 },	-- Naleidea Rivergleam
 				["coord"] = { 62.2, 18.3, THALDRASZUS },
 			}),
 			q(66128, {	-- Next Steps
-				["description"] = "Requires Renown 13.",
+				["minReputation"] = { 2507, 13 },	-- Dragonscale Expedition Renown 13
 				["sourceQuests"] = {
 					70507,	-- The City of the Dead
 					70503,	-- The Vigilance of Tyr
@@ -238,7 +269,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 14 --
 			q(70819, {	-- Renowned Explorer's Armor
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2507, 14 },	-- Dragonscale Expedition Renown 14
 				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
 				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
 				["g"] = {
@@ -246,7 +277,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72294, {	-- Expedition Crafting Knowledge
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2507, 14 },	-- Dragonscale Expedition Renown 14
 				["provider"] = { "n", 189065 },	-- Boss Magor
 				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 				["requireSkill"] = INSCRIPTION,
@@ -255,7 +286,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72299, {	-- Expedition Crafting Knowledge
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2507, 14 },	-- Dragonscale Expedition Renown 14
 				["provider"] = { "n", 189065 },	-- Boss Magor
 				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 				["requireSkill"] = ENCHANTING,
@@ -264,7 +295,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72300, {	-- Expedition Crafting Knowledge
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2507, 14 },	-- Dragonscale Expedition Renown 14
 				["provider"] = { "n", 189065 },	-- Boss Magor
 				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 				["requireSkill"] = ENGINEERING,
@@ -273,7 +304,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72301, {	-- Expedition Crafting Knowledge
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2507, 14 },	-- Dragonscale Expedition Renown 14
 				["provider"] = { "n", 189065 },	-- Boss Magor
 				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 				["requireSkill"] = JEWELCRAFTING,
@@ -282,7 +313,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72302, {	-- Expedition Crafting Knowledge
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2507, 14 },	-- Dragonscale Expedition Renown 14
 				["provider"] = { "n", 189065 },	-- Boss Magor
 				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 				["requireSkill"] = MINING,
@@ -291,7 +322,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72303, {	-- Expedition Crafting Knowledge
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2507, 14 },	-- Dragonscale Expedition Renown 14
 				["provider"] = { "n", 189065 },	-- Boss Magor
 				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 				["requireSkill"] = TAILORING,
@@ -301,7 +332,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 15 --
 			q(70809, {	-- Deeper Mysteries of the Dragon Isles Drakes
-				["description"] = "Requires Renown 15.",
+				["minReputation"] = { 2507, 15 },	-- Dragonscale Expedition Renown 15
 				["provider"] = { "n", 188265 },	-- Rae'ana
 				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
 				["g"] = {
@@ -312,11 +343,55 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 16 --
 			q(70814, {	-- Unlocking Magical Treasures
-				["description"] = "Requires Renown 16.",
+				["minReputation"] = { 2507, 16 },	-- Dragonscale Expedition Renown 16
 				["provider"] = { "n", 188265 },	-- Rae'ana
 				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
 				["g"] = {
 					sp(388264),	-- Magical Chests of the Dragon Isles
+				},
+			}),
+				-- RENOWN 17 --
+			q(70831, {	-- Researching in Comfort
+				["minReputation"] = { 2507, 17 },	-- Dragonscale Expedition Renown 17
+				["provider"] = { "n", 188265 },	-- Rae'ana
+				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
+				["g"] = {
+					i(198721),	-- Skinny Reliquary Pillow (TOY!)
+					i(198722),	-- Small Triangular Pillow (TOY!)
+					i(198720),	-- Soft Purple Pillow (TOY!)
+				},
+			}),
+				-- RENOWN 18 --
+			q(70818, {	-- New Dragonscale Equipment
+				["minReputation"] = { 2507, 18 },	-- Dragonscale Expedition Renown 18
+				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
+				["coord"] = { 47.3, 83.3, THE_WAKING_SHORES },
+			}),
+				-- RENOWN 19 --
+			q(70832, {	-- One of Us Now
+				["minReputation"] = { 2507, 19 },	-- Dragonscale Expedition Renown 19
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198730),	-- Dragonscale Expedition Tabard
+				},
+			}),
+				-- RENOWN 20 --
+			q(70815, {	-- Demolitions Access
+				["minReputation"] = { 2507, 20 },	-- Dragonscale Expedition Renown 20
+				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
+				["coord"] = { 47.3, 83.3, THE_WAKING_SHORES },
+				["g"] = {
+					i(198727),	-- Expedition Explosives
+				},
+			}),
+				-- RENOWN 21 --
+			q(70833, {	-- Rumors of the Jeweled Whelplings
+				["minReputation"] = { 2507, 21 },	-- Dragonscale Expedition Renown 21
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["g"] = {
+					i(200738),	-- Onyx Gem Cluster Map
 				},
 			}),
 
@@ -329,6 +404,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			q(71001, {	-- Wanted: Earthbound Primordial Core
 				["provider"] = { "o", 381661 },	-- Archivists' Request
 				["coord"] = { 46.7, 82.9, THE_WAKING_SHORES },
+				["isWeekly"] = true,
+			}),
+			q(70975, {	-- Wanted: Everblazing Fireheart
+				--["provider"] = { "o", },	-- Archivists' Request
+				["coord"] = { 47.8, 83.2, THE_WAKING_SHORES },
 				["isWeekly"] = true,
 			}),
 			q(71005, {	-- Wanted: Fangfall
@@ -367,13 +447,22 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 48.0, 82.1, THE_WAKING_SHORES },
 				["isWeekly"] = true,
 			}),
+			q(70965, {	-- Wanted: Watcher's Golden Girdle
+				["provider"] = { "o", 381579 },	-- Archivists' Request
+				["coord"] = { 47.5, 83.6, THE_WAKING_SHORES },
+				["isWeekly"] = true,
+			}),
+			q(70997, {	-- Wanted: Ruby Lifeband
+				["provider"] = { "o", 381662 },	-- Archivist's Request
+				["coord"] = { 47.9, 82.5, THE_WAKING_SHORES },
+				["isWeekly"] = true,
+			}),
 		}),
 	}),
 })));
 
 root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAGONSCALE_EXPEDITION, {
-		q(72025),	-- Triggeres together with 'Expedition Cloaks' (70812)
 		q(72033),	-- Triggeres together with 'Advanced Excavation Tools' (70807)
 		q(72037),	-- Triggers together with 'The Basecamp 'Pets'' (70820)
 		q(72401),	-- Triggered immediately after reaching renown 13
@@ -382,6 +471,10 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(72039),	-- Triggered with 'Renowned Explorer's Armor' (70819)
 		q(72040),	-- Triggered with 'Deeper Mysteries of the Dragon Isles Drakes' (70809)
 		q(72041),	-- Triggered with 'Unlocking Magical Treasures' (70814)
+		q(72042),	-- Triggered with 'Researching in Comfort' (70831)
+		q(72044),	-- Triggered with 'One of Us Now' (70832)
+		q(72045),	-- Triggered with 'Demolitions Access' (70815)
+		q(72046),	-- Triggered with 'Rumors of the Jeweled Whelplings' (70833)
 
 		-- Ensembles
 		q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor

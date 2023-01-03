@@ -2447,7 +2447,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["creatureID"] = 9019,
 					["groups"] = {
 						classicAch(642, {	-- Blackrock Depths
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								4362,	-- The Fate of the Kingdom
 								4003,	-- The Royal Rescue

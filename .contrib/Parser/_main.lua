@@ -32,6 +32,16 @@ ROOTS = {
 	["Holidays"] = "Holidays",
 };
 
+-- Automatic Header Constants (verify if supported against AllTheThings.lua::HeaderTypeAbbreviations)
+HEADERS = {
+	Achievement = "a",
+	Item = "i",
+	Map = "m",
+	Quest = "q",
+	Spell = "s",
+	-- AchCategory = "c",	-- don't use until Classic has some alternative support for Achievement Category Headers
+};
+
 -- Map Constants for quick and easy replacement when we can get mapIDs on live!
 -- Raids (Classic)
 BLACKWING_LAIR = 287;
@@ -541,6 +551,27 @@ PLATE_CLASSES = {
 	PALADIN,
 	WARRIOR,
 };
+CLOTH_CLASSES = {
+	MAGE,
+	PRIEST,
+	WARLOCK,
+};
+LEATHER_CLASSES = {
+	DEMONHUNTER,
+	DRUID,
+	MONK,
+	ROGUE,
+};
+MAIL_CLASSES = {
+	EVOKER,
+	HUNTER,
+	SHAMAN,
+};
+PLATE_CLASSES = {
+	DEATHKNIGHT,
+	PALADIN,
+	WARRIOR,
+};
 
 -- Specializations
 -- CRIEVE NOTE: Do not use the simple versions, they will be deprecated and replaced with fully formed class/spec constants.
@@ -700,7 +731,7 @@ ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS = 168;
 	ACHIEVEMENT_CATEGORY_BATTLE_RAID = 15286;
 	ACHIEVEMENT_CATEGORY_SHADOWLANDS_DUNGEON = 15428;
 	ACHIEVEMENT_CATEGORY_SHADOWLANDS_RAID = 15438;
-	ACHIEVEMENT_CATEGORY_DRAGONFLIGHT_DUNGEON = 15470;
+	ACHIEVEMENT_CATEGORY_DRAGONFLIGHT_DUNGEON = 15467;
 	ACHIEVEMENT_CATEGORY_DRAGONFLIGHT_RAID = 15471;
 ACHIEVEMENT_CATEGORY_PROFESSIONS = 169;
 	ACHIEVEMENT_CATEGORY_COOKING = 170;
@@ -831,6 +862,17 @@ BOSSES = -139;
 SCENARIOS = -10069;
 MYTHIC_PLUS = -857;
 
+-- Mythic Seasons
+SEASON_INFESTED = 13080;
+SEASON_REAPING = 13449;
+SEASON_BEGUILING = 13781;
+SEASON_AWAKENED = 14145;
+SEASON_PROUD = 14532;
+SEASON_TORMENTED = 15327;
+SEASON_CRYPTIC = 15691;
+SEASON_SHROUDED = 15756;
+SEASON_THUNDERING = 16429;
+
 -- Pet
 PET_BATTLE = -796;
 PET_JOURNAL = -797;
@@ -888,11 +930,11 @@ SEASON_DREAD = -689;
 SEASON_SINISTER = -690;
 SEASON_NOTORIOUS = -691;
 SEASON_CORRUPTED = -692;
-SEASON_SINFUL = -693;
-SEASON_UNCHAINED = -694;
-SEASON_COSMIC = -695;
-SEASON_ETERNAL = -696;
-SEASON_CRIMSON = -697;
+SEASON_SINFUL = 14690;
+SEASON_UNCHAINED = 14973;
+SEASON_COSMIC = 15353;
+SEASON_ETERNAL = 15606;
+SEASON_CRIMSON = 15951;
 
 -- Expansion Features
 LEGENDARIES = -364;
@@ -926,10 +968,6 @@ LEGENDARY_QUESTLINE = -10066;
 		HUMILITY = -975;
 	ABOMINATION_FACTORY = -923;
 	QUEENS_CONSERVATORY = -930;
-		DUTIFUL = -1002;
-		MARTIAL = -1003;
-		PRIDEFUL = -1004;
-		UNTAMED = -1005;
 	SOULSHAPES = -936;
 	EMBER_COURT = -960;
 
@@ -1010,8 +1048,10 @@ P9xx = -2188;
 --------------------------
 -- Currencies
 ANIMA = 1813;
-GRATEFUL = 1885;
+CONQUEST = 1602;
 DRAGON_SUPPLIES = 2003;
+GRATEFUL = 1885;
+HONOR = 1792;
 
 -- Filters
 HELD_IN_OFF_HAND = 1;
@@ -1100,6 +1140,15 @@ BFA_TIER = 8;
 SL_TIER = 9;
 DF_TIER = 10;
 
+-- Difficulties
+NORMAL_D = 1;
+HEROIC_D = 2;
+MYTHIC_D = 23;
+LFR_R = 17;
+NORMAL_R = 14;
+HEROIC_R = 15;
+MYTHIC_R = 16;
+
 -- Unobtainable Filters
 NEVER_IMPLEMENTED = 1;
 REMOVED_FROM_GAME = 2;
@@ -1185,8 +1234,31 @@ DF_PHASE_ONE = 100;
 -- #endif
 
 -- Timelines
-ADDED_SL_S4 = "added 9.2.5.44908";						-- Shadowlands Season 4 Start on August 2, 2022
-REMOVED_SL_S4 = "removed 9.2.5.44908";					-- Shadowlands Season 4 Start on August 2, 2022
+ADDED_BFA_REL = "added 8.0.1";							-- Battle for Azeroth Launch on August 14th, 2018
+ADDED_BFA_S2 = "added 8.1.0";							-- Battle for Azeroth Season 2 Start on December 11th, 2018
+REMOVED_BFA_S2 = "removed 8.1.0";						-- Battle for Azeroth Season 2 Start on December 11th, 2018
+ADDED_BFA_1_5 = "added 8.1.5";							-- Battle for Azeroth 8.1.5 Start on March 19th, 2019
+REMOVED_BFA_1_5 = "removed 8.1.5";						-- Battle for Azeroth 8.1.5 Start on March 19th, 2019
+ADDED_BFA_S3 = "added 8.2.0";							-- Battle for Azeroth Season 3 Start on June 25th, 2019
+REMOVED_BFA_S3 = "removed 8.2.0";						-- Battle for Azeroth Season 3 Start on June 25th, 2019
+ADDED_BFA_2_5 = "added 8.2.5";							-- Battle for Azeroth 8.2.5 Start on September 24th, 2019
+REMOVED_BFA_2_5 = "removed 8.2.5";						-- Battle for Azeroth 8.2.5 Start on September 24th, 2019
+ADDED_BFA_S4 = "added 8.3.0";							-- Battle for Azeroth Season 4 Start on January 14th, 2020
+REMOVED_BFA_S4 = "removed 8.3.0";						-- Battle for Azeroth Season 4 Start on January 14th, 2020
+--
+ADDED_SL_PRE = "added 9.0.1";							-- Shadowlands Pre-Patch on October 13th, 2020
+REMOVED_SL_PRE = "removed 9.0.1";						-- Shadowlands Pre-Patch on October 13th, 2020
+ADDED_SL_REL = "added 9.0.2";							-- Shadowlands Launch on November 23rd, 2020
+ADDED_SL_0_5 = "added 9.0.5";							-- Shadowlands 9.0.5 Start on March 9th, 2021
+ADDED_SL_S2 = "added 9.1.0.39185";						-- Shadowlands Season 2 Start on June 29th, 2021
+REMOVED_SL_S2 = "removed 9.1.0";						-- Shadowlands Season 2 Start on June 29th, 2021
+ADDED_SL_1_5 = "added 9.1.5";							-- Shadowlands 9.1.5 Start on November 2nd, 2021
+ADDED_SL_S3 = "added 9.2.0";							-- Shadowlands Season 3 Start on February 22nd, 2022
+REMOVED_SL_S3 = "added 9.2.0.42488";					-- Shadowlands Season 3 Start on February 22nd, 2022
+ADDED_SL_S4 = "added 9.2.5.44908";						-- Shadowlands Season 4 Start on May 31, 2022
+REMOVED_SL_S4 = "removed 9.2.5.44908";					-- Shadowlands Season 4 Start on May 31, 2022
+ADDED_SL_2_7 = "added 9.2.7";							-- Shadowlands 9.2.7 Start on August 16, 2022
+--
 CREATED_DF_PRE = "created 10.0.0";						-- First phase of Dragonflight pre-patch on October 25th, 2022
 ADDED_DF_PRE = "added 10.0.0";							-- First phase of Dragonflight pre-patch on October 25th, 2022
 REMOVED_DF_PRE = "removed 10.0.0";						-- First phase of Dragonflight pre-patch on October 25th, 2022
@@ -1840,7 +1912,7 @@ moh = function(cost, item)								-- Assign a Mark of Honor cost to an item with
 	return item;
 end
 vicioussaddle = function(item)							-- Assign a Vicious Saddle cost to an item with proper timeline requirements.
-	-- #if BEFORE 5.4.0.17153
+	-- #if AFTER 5.4.0.17153
 	applycost(item, { "i", 103533, 1 });	-- Vicious Saddle
 	-- #endif
 	return item;
@@ -2011,6 +2083,11 @@ end
 gssh = function(id, t)									-- Create a GEAR SET SUB HEADER Object (IE: "Gladiator")
 	return struct("setSubHeaderID", id, t);
 end
+header = function(type, id, t)							-- Create an Automatic Header which will use the plain Text of the specified in-game object based on Type-ID combination
+	t = struct("headerID", id, t);
+	t.type = type;
+	return t;
+end
 heir = function(id, t)									-- Create an HEIRLOOM Object(NOTE: You should only use this if not an appearance)
 	return struct("itemID", id, t);
 end
@@ -2036,7 +2113,7 @@ end
 inst = function(id, t)									-- Create an INSTANCE Object
 	return struct("instanceID", id, t);
 end
-inst_tw = function(id ,t)								-- Create a TIMEWALKING INSTANCE Object
+inst_tw = function(id, t)								-- Create a TIMEWALKING INSTANCE Object
 	t = inst(id, t);
 	t.u = TIMEWALKING;
 	-- Look for the CreatureID's

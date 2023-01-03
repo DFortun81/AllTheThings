@@ -615,7 +615,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2246,	-- Syndicate Assassin
 				}),
-				i(11206, {	-- Formula: Enchant Cloak - Lesser Agility
+				i(11206, {	-- Formula: Enchant Cloak - Lesser Agility (RECIPE!)
+					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2246,	-- Syndicate Assassin
 				}),
 				-- #if BEFORE 4.0.3

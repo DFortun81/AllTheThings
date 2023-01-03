@@ -36,6 +36,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					{ 71.0, 25.0, THE_WAKING_SHORES },	-- Empowered Snail
 				},
 			}),
+			n(191476, {	-- Searing Flame Harchek
+				["coord"] = { 32.2, 68.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(195881),	-- Recipe: Charred Hornswog Steaks (RECIPE!)
+				},
+			}),
+			i(198044, {	-- Whirlwind Wine
+				["crs"] = {
+					187494,	-- Rampaging Wind
+				},
+				["cost"] = { { "i", 198047, 1 }, },	-- 1x Kul Tiran Red
+			}),
 		}),
 	}),
 })));

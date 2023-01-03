@@ -1392,7 +1392,7 @@ root("Zones", {
 					})),
 					n(26352, {	-- Big Zokk Torquewrench <Arena Vendor> Original BC S4 VENDOR
 						["coord"] = { 33.2, 64.1, NETHERSTORM },
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sym"] = {
 							{"sub", "pvp_gear_base", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },	-- Brutal Gladiator's Set
 							-- #if ANYCLASSIC
@@ -1715,7 +1715,7 @@ root("Zones", {
 					}),
 					n(23396, {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate> / Krixel Pinchwhistle <Arena Vendor> [TBC]
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR },{"pop"}},	-- Gladiator's Set
 						-- #endif
 						["timeline"] = { "removed 3.0.1", "added 4.3.0.15005" },

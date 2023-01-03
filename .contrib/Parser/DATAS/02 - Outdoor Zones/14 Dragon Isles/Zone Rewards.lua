@@ -5,45 +5,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(ZONE_REWARDS, {
 		i(191784),	-- Dragon Shard of Knowledge
 		i(198058),	-- Titan Training Matrix III
-
-		-- Profession Weekly Items
-		-- Alchemy
-		-- Blacksmith 3/3
-		i(192132),	-- Draconium Blade Sharpener
-		i(198965),	-- Primeval Earth Fragment
-		i(192131),	-- Valdrakken Weapon Chain
-		i(198966),	-- Molten Globule
-		-- Enchanting 3/3
-		i(198967),	-- Primordial Aeather
-		i(193901),	-- Primal Dust
-		i(198968),	-- Primalist Charm
-		i(193900),	-- Prismatic Focusing Shard
-		-- Engineering 2/3
-		i(193902),	-- Eroded Titan Gizmo
-		i(193903),	-- Watcher Power Core
-
-		-- herb
-		-- inscription
-		-- Jewelcrafting 1/3
-		i(198973),	-- Incandescent Curio
-
-		-- Leatherworking 1/3
-		i(198976),	-- Exceedingly Soft Skin
-
-
-		-- Mining 1/3
-
-
-		i(193891),	-- Experimental Substance
-		i(193910),	-- Molted Dragon Scales
-		i(193904),	-- Phoenix Feather Quill
-		i(193913),	-- Preserved Animal Parts
-		i(193897),	-- Reawakened Catalyst
-		-- Skinning
-		-- Tailor 3/3
-		i(198977),	-- Ohn'arhan Weave
-		i(193899),	-- Primalweave Spindle
-		i(193898),	-- Umbral Bone Needle
 		filter(CLOTH, {
 			i(191989),	-- Cobalt Watcher's Cord
 			i(191987),	-- Cobalt Watcher's Cowl
@@ -87,6 +48,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		}),
 		filter(TRINKET_F, {
 			i(198407),	-- Azure Arcanic Amplifier
+			i(193477),	-- Battle Scarred Scale
 			i(198627),	-- Blood of the Khansguard
 			i(198695),	-- Bottomless Reliquary Satchel
 			i(198539),	-- Breath of the Plains
@@ -101,17 +63,25 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(198529),	-- Wayfarer's Iron Torch
 		}),
 		n(WEAPONS, {
+			i(197953),	-- Ancient Protector's Broadsword
+			i(197926),	-- Billowing Magmathrower's Cudgel
 			i(197923),	-- Bloodcharger's Skewer
 			i(197925),	-- Burning Club of the Wallclimbers
 			i(192019),	-- Calibrated Hand Cannon
+			i(197922),	-- Cavalry's Charging Lance
 			i(192020),	-- Ceremonial Ohn'ir Dagger
 			i(197932),	-- Chipped Reef Hacker
+			i(197944),	-- Deepsea Hunter's Crossbow
 			i(192030),	-- Dexterous War Pole
+			i(197927),	-- Djaradin Bludgeoning Hammer
 			i(192024),	-- Dragonflayer's Seething Shortsword
 			i(192016),	-- Drakescale Heater Shield
 			i(197943),	-- Elder's Bioluminous Quarterstaff
 			i(197956),	-- Empowered Shortsword of Insight
+			i(197945),	-- Gnarled Thorn Bow
 			i(197940),	-- Hefty Iskaaran Anchor
+			i(197937),	-- Intricate Scaling Knife
+			i(197941),	-- Iskaaran Mystic's Tideshear
 			i(192023),	-- Lava-Forged Decapitator
 			i(192034),	-- Marauder's Singing Blade
 			i(192033),	-- Maruuk Battle Standard
@@ -122,12 +92,19 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			i(192022),	-- Plumed Outrunner's Dirk
 			i(192021),	-- Qalashi Crustshaper's Greatmace
 			i(197939),	-- Razortooth Harpoon
+			i(197935),	-- Seafarer's Hatchet
 			i(192032),	-- Searing Wyvern Brand
+			i(197936),	-- Serrated Deboning Knife
 			i(197948),	-- Stone Sentinel's Greatsword
 			i(192029),	-- Swift Dragonbone Mace
+			i(197955),	-- Sword of the Eternal Guard
 			i(192017),	-- Thrumming Celestial Arrangement
 			i(197957),	-- Timeless Watcher's Saber
+			i(197942),	-- Tuskarr Navigator's Staff
+			i(197938),	-- Uktulut Whaling Spear
+			i(197931),	-- Waking Shores Cleaver
 			i(192025),	-- World Breaker's Maul
+			i(197924),	-- Wyrm Poacher's Emberblade
 		}),
 		filter(COSMETIC, {
 			i(201447),	-- Primalist Tomorrow's Breezeblade

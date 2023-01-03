@@ -20,7 +20,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 40.6, 41.2, THE_WAKING_SHORES },
 				["description"] = "Use nearby Fragrant Plant to attract Bubble Drifter.",
  				["questID"] = 70599,
-				["cost"] = { { "i", 199061, 1 }, },	-- 1xA Guide to Rare Fish
+				["cost"] = { { "i", 199061, 1 }, },	-- 1x A Guide to Rare Fish
 				["g"] = {
 					crit(2, {	-- Bubble Drifter
 						["achievementID"] = 16297,	-- Treasures of The Waking Shores
@@ -42,6 +42,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(202193),	-- Dead Man's Tunic
 				},
 			}),
+			o(385022, {	-- Eroded Fossil
+				["coords"] = {
+					{ 26.0, 94.6, THE_WAKING_SHORES },
+					{ 21.6, 92.1, THE_WAKING_SHORES },
+					{ 22.1, 95.5, THE_WAKING_SHORES },
+					{ 23.4, 96.7, THE_WAKING_SHORES },
+				},
+				-- ["questID"] = ,
+				["g"] = {
+					i(202084),	-- Eroded Fossil
+				},
+			}),
 			o(381355, {	-- Finely Carved Wing
 				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
 				["g"] = {
@@ -51,7 +63,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			o(376175, {	-- Fullsails Supply Chest
 				["coord"] = { 43.1, 67.4, THE_WAKING_SHORES },
 				["questID"] = 65965,
-				["cost"] = { { "i", 191122, 1 }, },	--1xFullsails Supply Chest Key
+				["cost"] = { { "i", 191122, 1 }, },	-- 1x Fullsails Supply Chest Key
 			}),
 			o(381483, {	-- Marmoni's Prize
 				["coord"] = { 47.7, 83.6, THE_WAKING_SHORES },
@@ -73,7 +85,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			o(381045, {	-- Golden Dragon Goblet
 				["coord"] = { 65.8, 41.8, THE_WAKING_SHORES },
 				["questID"] = 70600,
-				["cost"] = { { "i", 198854, 1 }, },	-- 1xArcheologist Artifact Notes
+				["cost"] = { { "i", 198854, 1 }, },	-- 1x Archeologist Artifact Notes
 				["g"] = {
 					crit(1, {	-- Replica Dragon Goblet
 						["achievementID"] = 16297,	-- Treasures of The Waking Shores
@@ -81,10 +93,41 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(202019),	-- Golden Dragon Goblet (TOY!)
 				},
 			}),
+			o(378857, {	-- Lost Obsidian Cache
+				-- TODO Check?
+				["description"] = "Collect a Sour Apple from the ground around the Blacktalon Pack Goat along the road leading up to Obsidian Bulwark at 43.7, 71.8\n\nThrow an apple at the Blacktalon Shadowclaw in Obsidian Bulwark 43.1, 67.2\n\nYou can now interact with the bird, it will fly you up to the cave where the Cache key will be visible beside the corpse.",
+				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
+				-- ["questID"] = ,
+				["cost"] = { { "i", 198085, 1 }, },	-- 1x Lost Obsidian Cache Key
+				["g"] = {
+					i(201933),	-- Black Dragon's Challenge Dummy (TOY!)
+				},
+			}),
+			o(378820, {	-- Popfizz Punch
+				["coord"] = { 39.30, 38.32, THE_WAKING_SHORES },
+				--["questID"] = ???,
+				["g"] = {
+					i(197737),	-- Popfizz Punch
+				},
+			}),
+			o(378054, {	-- Riptide Brew
+				["coord"] = { 62.95, 79.77, THE_WAKING_SHORES },
+				--["questID"] = ???,
+				["g"] = {
+					i(195543),	-- Riptide Brew
+				},
+			}),
+			o(379297, {	-- Slam Bam Swill
+				["coord"] = { 46.91, 30.68, THE_WAKING_SHORES },
+				--["questID"] = ???,
+				["g"] = {
+					i(198045),	-- Slam Bam Swill
+				},
+			}),
 			o(381153, {	-- Ruby Gem Cluster
 				["coord"] = { 61.3, 70.8, THE_WAKING_SHORES },
 				-- ["questID"] = 70598,
-				["cost"] = { { "i", 199062, 1 }, },	-- 1xRuby Gem Cluster Map
+				["cost"] = { { "i", 199062, 1 }, },	-- 1x Ruby Gem Cluster Map
 				["g"] = {
 					crit(3, {	-- Ruby Gem Cluster
 						["achievementID"] = 16297,	-- Treasures of The Waking Shores
@@ -104,8 +147,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			o(382325, {	-- Onyx Gem Cluster
 				["description"] = "Cave Entrance at 29.4, 52.6",
 				["coord"] = { 29.4, 47.0, THE_WAKING_SHORES },
-				-- ["questID"] = 72020,
-				["cost"] = { { "i", 200738, 1 }, },	-- 1xOnyx Gem Cluster Map
+				["questID"] = 72020,
+				["cost"] = { { "i", 200738, 1 }, },	-- 1x Onyx Gem Cluster Map
 				["g"] = {
 					crit(8, {	-- Onyx Gem Cluster
 						["achievementID"] = 16297,	-- Treasures of The Waking Shores
@@ -121,6 +164,21 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(198711),	-- Poacher's Pack
 				},
 			}),
+			o(385021, {	-- Petrified Dragon Egg
+				["coords"] = {
+					{ 33.4, 77.1, THE_WAKING_SHORES },
+					{ 23.0, 88.8, THE_WAKING_SHORES },
+					{ 33.3, 87.2, THE_WAKING_SHORES },
+					{ 40.8, 95.4, THE_WAKING_SHORES },
+					{ 25.7, 96.3, THE_WAKING_SHORES },
+					{ 35.7, 91.6, THE_WAKING_SHORES },
+					{ 21.7, 97.3, THE_WAKING_SHORES },
+				},
+				-- ["questID"] = ,
+				["g"] = {
+					i(202082),	-- Petrified Dragon Egg
+				},
+			}),
 			o(380430, {	-- Tail Fragment
 				["coord"] = { 58.2, 68.3, THE_WAKING_SHORES },
 				["g"] = {
@@ -128,7 +186,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			o(380840, {	-- Torn Riding Pack
-				["description"] = "Cave Entrance at 29.4, 52.6",
 				["coord"] = { 48.5, 85.2, THE_WAKING_SHORES },
 				["questID"] = 70378,
 				["g"] = {

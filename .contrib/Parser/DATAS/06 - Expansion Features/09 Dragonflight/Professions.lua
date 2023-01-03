@@ -29,198 +29,279 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 			}),
 		}),
-		-- GENERAL PROFESSION
-		q(67564, {	-- Artisan's Courier
-			["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
-			["provider"] = { "n", 192498 },	-- Haephesta
-			["coord"] = { 57.9, 68.2, THE_WAKING_SHORES },
-			["g"] = {
-				i(198790),	-- I.O.U
-				i(195357),	-- Artisan's Consortium Invoice
-			},
+		n(QUESTS, {
+			q(67564, {	-- Artisan's Courier
+				-- ["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+				["provider"] = { "n", 192498 },	-- Haephesta
+				["coord"] = { 57.9, 68.2, THE_WAKING_SHORES },
+				["g"] = {
+					i(198790),	-- I.O.U
+					i(195357),	-- Artisan's Consortium Invoice
+				},
+			}),
+			q(67100, {	-- A Gift for Miguel
+				["sourceQuests"] = { 67564 },	-- Artisan's Courier
+				["provider"] = { "n", 192574 },	-- Thomas Bright
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["cost"] = { { "i", 194728, 3 }, },	-- 3xFiery Spirit++
+				["g"] = {
+					i(194715),	-- Gatherer's Pouch
+				},
+			}),
+			q(67143, {	-- To Give One's Heart
+				["sourceQuests"] = { 67100 },	-- A Gift for Miguel
+				["provider"] = { "n", 192574 },	-- Thomas Bright
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(202097),	-- Bulging Box of Skins and Scales
+					i(202098),	-- Crowded Crate of Mined Materials
+					i(202100),	-- Populous Pack of Castoff Clothes
+					i(202099),	-- Stocked Sack of Hale Herbs
+					i(202101),	-- Topped Trunk of Disenchanted Detritus
+					--
+					i(198151),	-- Cracked Heart in a Bottle++
+					i(194746),	-- Thomas's Empty Bottle
+					i(194714),	-- Miguel's Gift
+					i(198084),	-- Miguel's Gift
+					-- Recipes
+					r(377978,{["u"]=15}),	-- Heart in a Bottle (ALCHEMY)
+					r(377981,{["u"]=15}),	-- Heart in a Bottle (BLACKSMITHING)
+					r(377982,{["u"]=15}),	-- Heart in a Bottle (ENCHANTING)
+					r(377983,{["u"]=15}),	-- Heart in a Bottle (ENGINEERING)
+					r(377984,{["u"]=15}),	-- Heart in a Bottle (HERBALISM)
+					r(377985,{["u"]=15}),	-- Heart in a Bottle (INSCRIPTION)
+					r(377915,{["u"]=15}),	-- Heart in a Bottle (JEWELCRAFTING)
+					r(377989,{["u"]=15}),	-- Heart in a Bottle (LEATHERWORKING)
+					r(377987,{["u"]=15}),	-- Heart in a Bottle (MINING)
+					r(377988,{["u"]=15}),	-- Heart in a Bottle (SKINNING)
+					r(377986,{["u"]=15}),	-- Heart in a Bottle (TAILORING)
+				},
+			}),
+			q(67137, {	-- Professionally Equipped
+				["sourceQuests"] = { 67100 },	-- A Gift for Miguel
+				["provider"] = { "n", 192539 },	-- Miguel Bright
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(193487),	-- Alchemist's Hat
+					i(193615),	-- Jeweler's Tool Apron
+					i(193486),	-- Resilient Smock
+					i(193482),	-- Skinner's Cap
+					i(193534),	-- Wildercloth Chef's Hat
+					i(193529),	-- Wildercloth Fishing Cap
+					i(193612),	-- Smithing Apron
+					i(198243),	-- Draconium Delver's Helmet
+					i(191239),	-- Draconium Needle Set
+				},
+			}),
+			q(70126, {	-- A Finishing Touch
+				["sourceQuests"] = {
+					67143,	-- To Give One's Heart
+					67137,	-- Professionally Equipped
+				},
+				["provider"] = { "n", 192539 },	-- Miguel Bright
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(197765),	-- Impossibly Sharp Cutting Knife
+					i(191516),	-- Brood Salt
+					i(190456),	-- Artisan's Mettle
+				},
+			}),
+			q(67295, { -- That's My Specialty
+				-- ["sourceQuests"] = { 70126 },	-- A Finishing Touch
+				["provider"] = { "n", 192539 },	-- Miguel Bright
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(191784),	-- Dragon Shard of Knowledge
+				},
+			}),
+			q(67298, { -- The Wonders of the World
+				["sourceQuests"] = { 67295 },	-- That's My Specialty
+				["provider"] = { "n", 192539 },	-- Miguel Bright
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(191784),	-- Dragon Shard of Knowledge
+				},
+			}),
+			q(69946, { -- The Master of Their Craft
+				["sourceQuests"] = { 67298 },	-- The Wonders of the World
+				["provider"] = { "n", 192539 },	-- Miguel Bright
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(191784),	-- Dragon Shard of Knowledge
+				},
+			}),
+			q(69979, { -- A Worthy Hunt
+				["sourceQuests"] = { 69946 },	-- The Master of Their Craft
+				["provider"] = { "n", 193110 },	-- Khadin
+				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(191784),	-- Dragon Shard of Knowledge
+					i(198137),	-- Esoteric Dragon Shard of Knowledge
+				},
+			}),
+			q(69919, {	-- A Craft in Need
+				["provider"] = { "n", 194026 },	-- Azley
+				["coords"] = {
+					{ 72.0, 81.1, OHNAHRAN_PLAINS },
+					{ 35.4, 58.8, VALDRAKKEN },
+				},
+				["g"] = {
+					i(193528),	-- Wildercloth Alchemist's Robe
+					i(193529),	-- Wildercloth Fishing Cap
+					i(193615),	-- Jeweler's Cover
+				},
+			}),
+			q(69915, {	-- Targeted Ads
+				["provider"] = { "n", 194026 },	-- Azley
+				["coords"] = {
+					{ 72.0, 81.1, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(191234),	-- Alchemist's Sturdy Mixing Rod
+					i(198225),	-- Draconium Fisherfriend
+					i(191233),	-- Chef's Smooth Rolling Pin
+				},
+			}),
+			q(69981, {	-- Customer Satisfaction
+				["provider"] = { "n", 194026 },	-- Azley
+				["coords"] = {
+					{ 72.0, 81.1, OHNAHRAN_PLAINS },
+					{ 35.4, 58.8, VALDRAKKEN },
+				},
+				["g"] = {
+					i(193515),	-- Explorer's Cloth Robe
+					i(193390),	-- Resilient Leather Tunic
+					i(193394),	-- Adamant Scale Vest
+					i(189538),	-- Explorer's Plate Chestguard
+					i(198048),	-- Titan Training Matrix I
+					i(201343),	-- Bag of Cloth Armor Reagents
+					i(201352),	-- Bag of Leather Reagents
+					i(201353),	-- Bag of Mail Armor Reagents
+					i(201354),	-- Bag of Plate Armor Reagents
+				},
+			}),
+			q(70221, {	-- Show Your Mettle
+				["provider"] = { "n", 192574 },	-- Thomas Bright
+				["minReputation"] = { 2544, 2 },	-- Artisan's Consortium, Preferred (2)
+				["isWeekly"] = true,
+				["coords"] = {
+					{ 60.2, 72.2, THE_WAKING_SHORES },
+					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(190456),	-- Artisan's Mettle
+				},
+			}),
+			q(72783, {	-- Crafting Orders
+				["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
+				["coord"] = { 84.9, 54.4, VALDRAKKEN },
+			}),
+
+			-- In Tyr's Footsteps chapter 1
+			q(72773, {	-- Learning Ingenuity
+				["provider"] = { "n", 196499 },	-- Therazal
+				["coord"] = { 50.2, 55.9, VALDRAKKEN },
+				["isBreadcrumb"] = true,	-- unconfirmed
+			}),
+			q(70180, {	-- Jump-Start? Jump-Starting!
+				["sourceQuests"] = { 72773 },	-- Learning Ingenuity
+				["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
+				["coord"] = { 84.2, 54.4, VALDRAKKEN },
+			}),
+
+			-- In Tyr's Footsteps chapter 2
+			q(70845, {	-- In Tyr's Footsteeps
+				["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
+				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+				["coord"] = { 84.3, 53.5, VALDRAKKEN },
+			}),
+			q(70181, {	-- First Challenge of Tyr: Finesse
+				["sourceQuests"] = { 70845 },	-- In Tyr's Footsteeps
+				["provider"] = { "o", 379290 },	-- Ornamented Statue
+				["coord"] = { 67.2, 30.8, THE_AZURE_SPAN },
+				["g"] = {
+					i(199197),	-- Bottled Essence
+				},
+			}),
+			q(70182, {	-- The Sweet Taste of Victory
+				["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
+				["provider"] = { "n", 195827 },	-- Maiden of Inspiration
+				["coord"] = { 67.1, 30.9, THE_AZURE_SPAN },
+			}),
+			q(70633, {	-- Fueling the Engine
+				["sourceQuests"] = { 70182 },	-- The Sweet Taste of Victory
+				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+				["coord"] = { 84.3, 53.5, VALDRAKKEN },
+			}),
+
+			-- In Tyr's Footsteps chapter 3
+			q(70339, {	-- In Tyr's Footsteps: The Ohn'ahran Plains
+				["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
+				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+				["coord"] = { 84.3, 53.5, VALDRAKKEN },
+			}),
+			q(70376, {	-- Second Challenge of Tyr: Might
+				["sourceQuests"] = { 70339 },	-- In Tyr's Footsteps: The Ohn'ahran Plains
+				["provider"] = { "o", 380540 },	-- Ornamented Statue
+				["coord"] = { 66.2, 55.3, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(199197),	-- Bottled Essence
+				},
+			}),
+			q(70341, {	-- Well Earned Vicotry
+				["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
+				["provider"] = { "n", 195924 },	-- Maiden of Inspiration
+				["coord"] = { 66.3, 55.3, VALDRAKKEN },
+			}),
+			-- In Tyr's Footsteps chapter 4
+			q(70650, {	-- In Tyr's Footsteps: The Waking Shores
+				["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
+				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+				["coord"] = { 84.3, 53.5, VALDRAKKEN },
+			}),
+			q(70509, {	-- Third Challenge of Tyr: Persistence
+				["sourceQuests"] = { 70650 },	-- In Tyr's Footsteps: The Waking Shores
+				["provider"] = { "o", 380918 },	-- Broken Ornamented Statue
+				["coord"] = { 63.9, 41.5, THE_WAKING_SHORES },
+			}),
+			q(70621, {	-- Third Challenge of Tyr: Persistence Embodied
+				["sourceQuests"] = { 70509 },	-- Third Challenge of Tyr: Persistence
+				["provider"] = { "n", 195737 },	-- Maiden of Inspiration
+				["coord"] = { 64, 41.3, THE_WAKING_SHORES },
+				["g"] = {
+					i(199197),	-- Bottled Essence
+				},
+			}),
+			q(70510, {	-- Victorious
+				["sourceQuests"] = { 70621 },	-- Third Challenge of Tyr: Persistence Embodied
+				["provider"] = { "n", 195737 },	-- Maiden of Inspiration
+				["coord"] = { 64, 41.3, THE_WAKING_SHORES },
+			}),
 		}),
-		q(67100, {	-- A Gift for Miguel
-			["sourceQuests"] = { 67564 },	-- Artisan's Courier
-			["provider"] = { "n", 192574 },	-- Thomas Bright
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["cost"] = { { "i", 194728, 3 }, },	-- 3xFiery Spirit++
-			["g"] = {
-				i(194715),	-- Gatherer's Pouch
-			},
-		}),
-		q(67143, {	-- To Give One's Heart
-			["sourceQuests"] = { 67100 },	-- A Gift for Miguel
-			["provider"] = { "n", 192574 },	-- Thomas Bright
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(202097),	-- Bulging Box of Skins and Scales
-				i(202098),	-- Crowded Crate of Mined Materials
-				i(202100),	-- Populous Pack of Castoff Clothes
-				i(202099),	-- Stocked Sack of Hale Herbs
-				i(202101),	-- Topped Trunk of Disenchanted Detritus
-				--
-				i(194746),	-- Thomas's Empty Bottle
-				i(194714),	-- Miguel's Gift
-				i(198084),	-- Miguel's Gift
-				-- Recipes
-				r(377978,{["u"]=15}),	-- Heart in a Bottle (ALCHEMY)
-				r(377981,{["u"]=15}),	-- Heart in a Bottle (BLACKSMITHING)
-				r(377982,{["u"]=15}),	-- Heart in a Bottle (ENCHANTING)
-				r(377983,{["u"]=15}),	-- Heart in a Bottle (ENGINEERING)
-				r(377984,{["u"]=15}),	-- Heart in a Bottle (HERBALISM)
-				r(377985,{["u"]=15}),	-- Heart in a Bottle (INSCRIPTION)
-				r(377915,{["u"]=15}),	-- Heart in a Bottle (JEWELCRAFTING)
-				r(377989,{["u"]=15}),	-- Heart in a Bottle (LEATHERWORKING)
-				r(377987,{["u"]=15}),	-- Heart in a Bottle (MINING)
-				r(377988,{["u"]=15}),	-- Heart in a Bottle (SKINNING)
-				r(377986,{["u"]=15}),	-- Heart in a Bottle (TAILORING)
-			},
-		}),
-		q(67137, {	-- Professionally Equipped
-			["sourceQuests"] = { 67100 },	-- A Gift for Miguel
-			["provider"] = { "n", 192539 },	-- Miguel Bright
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(193487),	-- Alchemist's Hat
-				i(193615),	-- Jeweler's Tool Apron
-				i(193486),	-- Resilient Smock
-				i(193482),	-- Skinner's Cap
-				i(193534),	-- Wildercloth Chef's Hat
-				i(193529),	-- Wildercloth Fishing Cap
-				i(193612),	-- Smithing Apron
-				i(198243),	-- Draconium Delver's Helmet
-				i(191239),	-- Draconium Needle Set
-			},
-		}),
-		q(70126, {	-- A Finishing Touch
-			["sourceQuests"] = {
-				67143,	-- To Give One's Heart
-				67137,	-- Professionally Equipped
-			},
-			["provider"] = { "n", 192539 },	-- Miguel Bright
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(197765),	-- Impossibly Sharp Cutting Knife
-				i(191516),	-- Brood Salt
-				i(190456),	-- Artisan's Mettle
-			},
-		}),
-		q(67295, { -- That's My Specialty
-			["sourceQuests"] = { 70126 },	-- A Finishing Touch
-			["provider"] = { "n", 192539 },	-- Miguel Bright
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(191784),	-- Dragon Shard of Knowledge
-			},
-		}),
-		q(67298, { -- The Wonders of the World
-			["sourceQuests"] = { 67295 },	-- That's My Specialty
-			["provider"] = { "n", 192539 },	-- Miguel Bright
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(191784),	-- Dragon Shard of Knowledge
-			},
-		}),
-		q(69946, { -- The Master of Their Craft
-			["sourceQuests"] = { 67298 },	-- The Wonders of the World
-			["provider"] = { "n", 192539 },	-- Miguel Bright
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(191784),	-- Dragon Shard of Knowledge
-			},
-		}),
-		q(69919, {	-- A Craft in Need
-			["provider"] = { "n", 194026 },	-- Azley
-			["coords"] = {
-				{ 72.0, 81.1, OHNAHRAN_PLAINS },
-				{ 35.4, 58.8, VALDRAKKEN },
-			},
-			["g"] = {
-				i(193528),	-- Wildercloth Alchemist's Robe
-				i(193529),	-- Wildercloth Fishing Cap
-				i(193615),	-- Jeweler's Cover
-			},
-		}),
-		q(69915, {	-- Targeted Ads
-			["provider"] = { "n", 194026 },	-- Azley
-			["coords"] = {
-				{ 72.0, 81.1, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(191234),	-- Alchemist's Sturdy Mixing Rod
-				i(198225),	-- Draconium Fisherfriend
-				i(191233),	-- Chef's Smooth Rolling Pin
-			},
-		}),
-		q(69981, {	-- Customer Satisfaction
-			["provider"] = { "n", 194026 },	-- Azley
-			["coords"] = {
-				{ 72.0, 81.1, OHNAHRAN_PLAINS },
-				{ 35.4, 58.8, VALDRAKKEN },
-			},
-			["g"] = {
-				i(193515),	-- Explorer's Cloth Robe
-				i(193390),	-- Resilient Leather Tunic
-				i(193394),	-- Adamant Scale Vest
-				i(189538),	-- Explorer's Plate Chestguard
-				i(198048),	-- Titan Training Matrix I
-				i(201343),	-- Bag of Cloth Armor Reagents
-				i(201352),	-- Bag of Leather Reagents
-				i(201353),	-- Bag of Mail Armor Reagents
-				i(201354),	-- Bag of Plate Armor Reagents
-			},
-		}),
-		q(70221, {	-- Show Your Mettle
-			["provider"] = { "n", 192574 },	-- Thomas Bright
-			["isWeekly"] = true,
-			["coords"] = {
-				{ 60.2, 72.2, THE_WAKING_SHORES },
-				{ 71.7, 81.2, OHNAHRAN_PLAINS },
-			},
-			["g"] = {
-				i(190456),	-- Artisan's Mettle
-			},
-		}),
-		-- Chap 0
-		q(72773, {	-- Learning Ingenuity
-			["provider"] = { "n", 196499 },	-- Therazal
-			["coord"] = { 50.2, 55.9, VALDRAKKEN },
-			["isBreadcrumb"] = true,	-- unconfirmed
-		}),
-		q(70180, {	-- Jump-Start? Jump-Starting!
-			["sourceQuests"] = { 72773 },	-- Learning Ingenuity
-			["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
-			["coord"] = { 84.2, 54.4, VALDRAKKEN },
-		}),
-		-- Chap 1
-		q(70845, {	-- In Tyr's Footsteeps
-			["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
-			["provider"] = { "n", 196475 },	-- Maiden of Inspiration
-			["coord"] = { 84.3, 53.5, VALDRAKKEN },
-		}),
-		--
-		prof(ALCHEMY, {
+		prof(ALCHEMY, sharedData({
+			["requireSkill"] = ALCHEMY,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -250,11 +331,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["races"] = HORDE_ONLY,
 			}),
 			q(67080, {	-- Artisan's Supply: Dragon's Alchemical Solution
-				["sourceQuests"] = {
-					-- suspected... was able to pick up with only 72245 on horde
-					70355,	-- Dragon Isles Alchemy [A]
-					72245,	-- Dragon Isles Alchemy [H]
-				},
+				-- ["sourceQuests"] = { },
 				["provider"] = { "n", 191893 },	-- Zherrak
 				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
 				["cost"] = { { "i", 191570, 2 }, },	-- 2x Dragon's Alchemical Solution
@@ -271,6 +348,62 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
+			}),
+			q(66940, {	-- Elixir Experiment
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66938, {	-- Mammoth Marrow
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72427, {	-- Animated Infusion
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66937, {	-- Decaying News
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70533, {	-- Decaying News
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 36.4, 71.4, VALDRAKKEN },
+				["provider"] = { "n", 185545 },	-- Conflago
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70532, {	-- Aiding the Raiding
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 36.4, 71.4, VALDRAKKEN },
+				["provider"] = { "n", 185545 },	-- Conflago
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70531, {	-- Mana Markets
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 36.4, 71.4, VALDRAKKEN },
+				["provider"] = { "n", 185545 },	-- Conflago
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70530, {	-- Examination Week
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 36.4, 71.4, VALDRAKKEN },
+				["provider"] = { "n", 185545 },	-- Conflago
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
 			}),
 			o(380590, {	-- Well Insulated Mug
 				["questID"] = 70289,
@@ -351,13 +484,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			--[[q(TODO, {	-- Weekly Alchemy Knowledgepoint #3
+			q(70504, {	-- Weekly Alchemy Knowledgepoint #3
 				["name"] = "Weekly Alchemy Knowledgepoint #3",
 				["provider"] = { "i", 198963 },		-- Decaying Phlegm
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),--]]
+			}),
 			q(66374, {	-- Weekly Alchemy Knowledgepoint #4
 				["name"] = "Weekly Alchemy Knowledgepoint #4",
 				["provider"] = { "i", 193897 },		-- Reawakened Catalyst
@@ -365,7 +498,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
+		})),
 		prof(BLACKSMITHING, sharedData({
 			["requireSkill"] = BLACKSMITHING,
 		},{
@@ -412,7 +545,28 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
 				-- ["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
 			}),
+			q(70025, {	-- Artisan's Supply: Draconium Sickle
+				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
+				["qg"] = 192164,	-- Gringot Coldsteel
+				["requireSkill"] = BLACKSMITHING,
+				["cost"] = {{"i",191241,1}},	-- Draconium Sickle
+				-- ["sourceQuest"] = ,
+			}),
 			q(66897, {	-- Fuel for the Forge
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66941, {	-- Tremendous Tools
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72398, {	-- Rock and Stone
 				["description"] = "Requires 25 Skill.",
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
@@ -423,35 +577,44 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Requires 45 Skill.",
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
-				-- ["isWeekly"] = true,
+				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
 			}),
-			q(70025, {	-- Artisan's Supply: Draconium Sickle
-				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
-				["qg"] = 192164,	-- Gringot Coldsteel
-				["requireSkill"] = BLACKSMITHING,
-				["cost"] = {{"i",191241,1}},	-- Draconium Sickle
-				-- ["isWeekly"] = true,
+			q(70234, {	-- All this Hammering
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 37.0, 47.0, VALDRAKKEN },
+				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70233, {	-- Axe Shortage
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 37.0, 47.0, VALDRAKKEN },
+				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70211, {	-- Stomping Explorers
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 37.0, 47.0, VALDRAKKEN },
+				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
+				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
 			}),
 			q(66517, { -- A New Source of Weapons
-				--["sourceQuests"] = {  },	-- Unknown
-				["provider"] = { "n", 191002 },	-- Dhurrel
+				["description"] = "Requires 45 Skill.",
 				["coord"] = { 36.8, 63.6, VALDRAKKEN },
-				["collectible"] = true,	-- Don't remove until we have proper tracking
+				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
-				["g"] = {
-					i(198606),	-- Blacksmith's Writ
-				},
+				-- ["sourceQuest"] = ,
 			}),
 			q(70589, {	-- Blacksmithing Services Requested
 				["description"] = "Requires 25 Skill.",
-				--["sourceQuests"] = {  },	-- Unknown
-				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+				["provider"] = { "n", 194026 },	-- Azley
 				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
 			}),
-
 			q(70184, { -- Specialized Secrets: Blacksmithing
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
@@ -509,6 +672,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			o(380623, {	-- Spelltouched Tongs
+				["description"] = "If you do not have Mining to clear the Rock Wall, try dying. Ghosts can walk through it.",
 				["questID"] = 70314,
 				["coord"] = { 53.1, 66.1, THE_AZURE_SPAN },
 				["g"] = {
@@ -560,15 +724,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			--[[q(TODO, {	-- Weekly Blacksmithing Knowledgepoint #4
+			q(70512, {	-- Weekly Blacksmithing Knowledgepoint #4
 				["name"] = "Weekly Blacksmithing Knowledgepoint #4",
 				["provider"] = { "i", 198965 },		-- Primeval Earth Fragment
 				["timeline"] = { ADDED_DF_REL },
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),--]]
+			}),
 		})),
-		prof(COOKING, {
+		prof(COOKING, sharedData({
+			["requireSkill"] = COOKING,
+		},{
 			q(72251, {	-- Dragon Isles Cooking
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -585,8 +751,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 198094 },	-- Head Chef Stacks
 				["coord"] = { 76.4, 35.7, THE_WAKING_SHORES },
 			}),
-		}),
-		prof(ENCHANTING, {
+		})),
+		prof(ENCHANTING, sharedData({
+			["requireSkill"] = ENCHANTING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -644,6 +812,65 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
+			}),
+			q(66884, {	-- Fireproof Gear
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72423, {	-- Weathering the Storm
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+				["groups"] = {
+					i(198610),	-- Enchanter's Script
+				},
+			}),
+			q(66900, {	-- Enchanted Relics
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66935, {	-- Crystal Quill Pens
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72175, {	-- A Scept-acular Time
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 30.8, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 193744 },	-- Soragosa
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72172, {	-- Essence, Shards, and Chromatic Dust
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 30.8, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 193744 },	-- Soragosa
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72155, {	-- Spread the Enchantment
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 30.8, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 193744 },	-- Soragosa
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72173, {	-- Braced for Enchantment
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 30.8, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 193744 },	-- Soragosa
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
 			}),
 			o(380558, {	-- Enchanted Debris
 				["description"] = "Interact with the Disenchanted Broom, then follow it to the location of the treasure.",
@@ -716,7 +943,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			q(70515, {	-- Weekly Enchanting Knowledgepoint #1
-				-- ["altQuests"] = { 70514 },
 				["name"] = "Weekly Enchanting Knowledgepoint #1",
 				["provider"] = { "i", 198968 },	-- Primalist Charm
 				["isWeekly"] = true,
@@ -734,14 +960,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			--[[q(TODO, {	-- Weekly Enchanting Knowledgepoint #4
+			q(70514, {	-- Weekly Enchanting Knowledgepoint #4
 				["name"] = "Weekly Enchanting Knowledgepoint #4",
 				["provider"] = { "i", 198967 },	-- Primordial Aether
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),--]]
-		}),
-		prof(ENGINEERING, {
+			}),
+		})),
+		prof(ENGINEERING, sharedData({
+			["requireSkill"] = ENGINEERING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -802,6 +1030,69 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			q(66891, {	-- Explosive Ash
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66942, {	-- Enemy Engineering
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66890, {	-- Stolen Tools
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72396, {	-- Horns of Plenty
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70540, {	-- An Engineer's Best Friend
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 42.2, 48.8, VALDRAKKEN },
+				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70557, {	-- No Scopes
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 42.2, 48.8, VALDRAKKEN },
+				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70545, {	-- Blingtron 8000...?
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 42.2, 48.8, VALDRAKKEN },
+				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70539, {	-- And You Thought They Did Nothing
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 42.2, 48.8, VALDRAKKEN },
+				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70591, {	-- Engineering Services Requested
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+				["provider"] = { "n", 194026 },	-- Azley
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
 			o(380560, {	-- Disabled Tesla Coil
 				["description"] = "Click on the three exposed items to make the treasure appear.",
 				["questID"] = 70275,
@@ -857,8 +1148,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
-		prof(FISHING, {
+		})),
+		prof(FISHING, sharedData({
+			["requireSkill"] = FISHING,
+		},{
 			q(72252, {	-- Dragon Isles Fishing [A]
 				["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
 				["provider"] = { "n", 191150 },	-- Danielle Anglers
@@ -878,8 +1171,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "i", 202105 },	-- Rusted Coin of the Isles
 				["requireSkill"] = FISHING,
 			}),
-		}),
-		prof(HERBALISM, {
+		})),
+		prof(HERBALISM, sharedData({
+			["requireSkill"] = HERBALISM,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -924,6 +1219,34 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			q(70613, {	-- Get Their Bark Before They Bite
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 38.2, 68.6, VALDRAKKEN },
+				["provider"] = { "n", 185549 },	-- Agrikus
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70614, {	-- Bubble Craze
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 38.2, 68.6, VALDRAKKEN },
+				["provider"] = { "n", 185549 },	-- Agrikus
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70615, {	-- The Case of the Missing Herbs
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 38.2, 68.6, VALDRAKKEN },
+				["provider"] = { "n", 185549 },	-- Agrikus
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70616, {	-- How Many??
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 38.2, 68.6, VALDRAKKEN },
+				["provider"] = { "n", 185549 },	-- Agrikus
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
 			q(74107, {	-- Inscription Order: Herbalism
 				["name"] = "Inscription Order: Herbalism",
 				["description"] = "Requires a crafting order from Inscription.",
@@ -967,8 +1290,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["repeatable"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
-		prof(INSCRIPTION, {
+		})),
+		prof(INSCRIPTION, sharedData({
+			["requireSkill"] = INSCRIPTION,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -1028,6 +1353,62 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
+			}),
+			q(66943, {	-- Wood for Writing
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66944, {	-- Peacock Pigments
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66945, {	-- Icy Ink
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70560, {	-- The Most Powerful Tool: Good Documentation
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 39.4, 73.6, VALDRAKKEN },
+				["provider"] = { "n", 185540 },	-- Talendara
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70559, {	-- Quill You Help?
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 39.4, 73.6, VALDRAKKEN },
+				["provider"] = { "n", 185540 },	-- Talendara
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70558, {	-- Disillusioned Illusions
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 39.4, 73.6, VALDRAKKEN },
+				["provider"] = { "n", 185540 },	-- Talendara
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70561, {	-- A Scribe's Tragedy
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 39.4, 73.6, VALDRAKKEN },
+				["provider"] = { "n", 185540 },	-- Talendara
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70592, {	-- Inscription Services Requested
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+				["provider"] = { "n", 194026 },	-- Azley
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
 			}),
 			o(380610, {	-- Pulsing Earth Rune
 				["questID"] = 70306,
@@ -1129,8 +1510,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
-		prof(JEWELCRAFTING, {
+		})),
+		prof(JEWELCRAFTING, sharedData({
+			["requireSkill"] = JEWELCRAFTING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -1201,6 +1584,69 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			q(72428, {	-- Hornswog Hoarders
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66516, {	-- Mundane Gems, I Think not!
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66950, {	-- Heart of a Giant
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66949, {	-- Trinket Bandits
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70565, {	-- Separation by Saturation
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+				["provider"] = { "n", 190094 },	-- Tuluradormi
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70564, {	-- Spectacular
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+				["provider"] = { "n", 190094 },	-- Tuluradormi
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70563, {	-- The Exhibition
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+				["provider"] = { "n", 190094 },	-- Tuluradormi
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70562, {	-- The Plumbers, Mason
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+				["provider"] = { "n", 190094 },	-- Tuluradormi
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70593, {	-- Jewelcrafting Services Requested
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+				["provider"] = { "n", 194026 },	-- Azley
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
 			o(380822, {	-- Igneous Gem
 				["description"] = "Click the three crystals on the nearby small islands (quickly), then return to collect the treasure.",
 				["questID"] = 70273,
@@ -1240,7 +1686,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			o(380548, {	-- Forgotten Jewelry Box
 				["questID"] = 70263,
-				["coord"] = { 61.8, 13.0 , OHNAHRAN_PLAINS },
+				["coord"] = { 61.8, 13.0, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(198657),	-- Forgotten Jewelry Box
 					i(198660),	-- Fragmented Key
@@ -1302,8 +1748,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
-		prof(LEATHERWORKING, {
+		})),
+		prof(LEATHERWORKING, sharedData({
+			["requireSkill"] = LEATHERWORKING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -1344,14 +1792,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			["provider"] = { "n", 192048 },    -- Deirdre Flemmin
 			["coord"] = { 76.6, 34.9, THE_WAKING_SHORES },
 			),--]]
-			q(69979, { -- A Worthy Hunt
-				["sourceQuests"] = { 69946 },	-- The Master of Their Craft
-				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
-				["g"] = {
-					i(191784),	-- Dragon Shard of Knowledge
-				},
-			}),
 			q(70191, { -- Specialized Secrets: Leatherworking
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
@@ -1361,6 +1801,69 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
+			}),
+			q(66363, {	-- Basilisk Bucklers
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 63.6, VALDRAKKEN },
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66364, {	-- To Fly a Kite
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66951, {	-- Population Control
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72407, {	-- Soaked in Success
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70569, {	-- For Trisket, a Task Kit
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 28.6, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70567, {	-- When You Give Bakar a Bone
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 28.6, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70571, {	-- Drums Here!
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 28.6, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70568, {	-- Tipping the Scales
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 28.6, 61.4, VALDRAKKEN },
+				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70594, {	-- Leatherworking Services Requested
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+				["provider"] = { "n", 194026 },	-- Azley
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
 			}),
 			o(380615, {	-- Poacher's Pack
 				["questID"] = 70308,
@@ -1453,8 +1956,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
-		prof(MINING, {
+		})),
+		prof(MINING, sharedData({
+			["requireSkill"] = MINING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -1486,7 +1991,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 61.4, 76.9, THALDRASZUS },
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-						q(70192, { -- Specialized Secrets: Mining
+			q(70192, { -- Specialized Secrets: Mining
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
@@ -1495,6 +2000,34 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
+			}),
+			q(72157, {	-- The Weight of Earth
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 39.0, 51.2, VALDRAKKEN },
+				["provider"] = { "n", 185553 },	-- Sekita the Burrower
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70618, {	-- The Call of the Forge
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 39.0, 51.2, VALDRAKKEN },
+				["provider"] = { "n", 185553 },	-- Sekita the Burrower
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70617, {	-- All Mine, Mine, Mine
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 39.0, 51.2, VALDRAKKEN },
+				["provider"] = { "n", 185553 },	-- Sekita the Burrower
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72156, {	-- A Fiery Flight
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 39.0, 51.2, VALDRAKKEN },
+				["provider"] = { "n", 185553 },	-- Sekita the Burrower
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
 			}),
 			q(74106, {		-- Inscription Order: Mining
 				["name"] = "Inscription Order: Mining",
@@ -1539,8 +2072,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["repeatable"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
-		prof(SKINNING, {
+		})),
+		prof(SKINNING, sharedData({
+			["requireSkill"] = SKINNING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -1594,6 +2129,34 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			q(72159, {	-- Scaling Down
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 28.8, 60.4, VALDRAKKEN },
+				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70620, {	-- Scaling Up
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 28.8, 60.4, VALDRAKKEN },
+				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70619, {	-- A Study of Leather
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 28.8, 60.4, VALDRAKKEN },
+				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72158, {	-- A Dense Delivery
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 28.8, 60.4, VALDRAKKEN },
+				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
 			q(74114, {	-- Inscription Order: Skinning
 				["name"] = "Inscription Order: Skinning",
 				["description"] = "Requires a crafting order from Inscription.",
@@ -1607,25 +2170,25 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(70382, {	-- Weekly Skinning Knowledgepoint #2
+			q(70383, {	-- Weekly Skinning Knowledgepoint #2
 				["name"] = "Weekly Skinning Knowledgepoint #2",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(70383, {	-- Weekly Skinning Knowledgepoint #3
+			q(70384, {	-- Weekly Skinning Knowledgepoint #3
 				["name"] = "Weekly Skinning Knowledgepoint #3",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(70384, {	-- Weekly Skinning Knowledgepoint #4
+			q(70385, {	-- Weekly Skinning Knowledgepoint #4
 				["name"] = "Weekly Skinning Knowledgepoint #4",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(70385, {	-- Weekly Skinning Knowledgepoint #5
+			q(70386, {	-- Weekly Skinning Knowledgepoint #5
 				["name"] = "Weekly Skinning Knowledgepoint #5",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 				["isWeekly"] = true,
@@ -1637,8 +2200,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["repeatable"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
-		prof(TAILORING, {
+		})),
+		prof(TAILORING, sharedData({
+			["requireSkill"] = TAILORING,
+		},{
 			filter(RECIPES, {
 				["description"] = "These are learned by specialization.",
 				["g"] = {
@@ -1684,6 +2249,72 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
 				},
+			}),
+			q(66952, {	-- The Gnoll's Clothes
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72410, {	-- Pincers and Needles
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+				["groups"] = {
+					i(198609),	-- Tailoring Examples
+				},
+			}),
+			q(66899, {	-- Fuzzy Legs
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(66953, {	-- All Things Fluffy
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70587, {	-- A Knapsack Problem
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 31.8, 67.6, VALDRAKKEN },
+				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70586, {	-- Sew Many Cooks
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 31.8, 67.6, VALDRAKKEN },
+				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70582, {	-- Weave Well Enough Alone
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 31.8, 67.6, VALDRAKKEN },
+				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70572, {	-- The Cold Does Bother Them, Actually
+				["description"] = "Requires 45 Skill.",
+				["coord"] = { 31.8, 67.6, VALDRAKKEN },
+				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(70595, {	-- Tailoring Services Requested
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+				["provider"] = { "n", 194026 },	-- Azley
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
 			}),
 			o(380607, {	-- Itinerant Singed Fabric
 				["questID"] = 70304,
@@ -1750,6 +2381,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 27.9,45.6, VALDRAKKEN },
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
+			-- Weeklies
 			q(74115, {	-- Inscription Order: Tailoring
 				["name"] = "Inscription Order: Tailoring",
 				["description"] = "Requires a crafting order from Inscription.",
@@ -1757,30 +2389,30 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(66386, {	-- Weekly Tailoring Knowledgepoint #1
+			q(70525, {	-- Weekly Tailoring Knowledgepoint #1
 				["name"] = "Weekly Tailoring Knowledgepoint #1",
-				["provider"] = { "i", 193898 },	-- Umbral Bone Needle
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66387, {	-- Weekly Tailoring Knowledgepoint #2
-				["name"] = "Weekly Tailoring Knowledgepoint #2",
-				["provider"] = { "i", 193899 },	-- Primalweave Spindle
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70524, {	-- Weekly Tailoring Knowledgepoint #3
-				["name"] = "Weekly Tailoring Knowledgepoint #3",
-				["provider"] = { "i", 198977 },	-- Ohn'arhan Weave
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70525, {	-- Weekly Tailoring Knowledgepoint #4
-				["name"] = "Weekly Tailoring Knowledgepoint #4",
 				["provider"] = { "i", 198978  },	-- Stupidly Effective Stitchery
 				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-		}),
+			q(70524, {	-- Weekly Tailoring Knowledgepoint #2
+				["name"] = "Weekly Tailoring Knowledgepoint #2",
+				["provider"] = { "i", 198977 },	-- Ohn'arhan Weave
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(66386, {	-- Weekly Tailoring Knowledgepoint #3
+				["name"] = "Weekly Tailoring Knowledgepoint #3",
+				["provider"] = { "i", 193898 },	-- Umbral Bone Needle
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+			q(66387, {	-- Weekly Tailoring Knowledgepoint #4
+				["name"] = "Weekly Tailoring Knowledgepoint #4",
+				["provider"] = { "i", 193899 },	-- Primalweave Spindle
+				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
+			}),
+		})),
 	}),
 })));

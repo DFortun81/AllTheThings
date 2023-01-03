@@ -21,10 +21,6 @@ title(429),	-- Count %s
 title(430),	-- Countess %s
 9.2.0.41726
 title(453),	-- %s the [PH] TBD Title
-9.2.0.41962
-title(455),	-- %s, Guardian of the Pattern
-10.0.0.44707
-title(468),	-- Crimson Gladiator %s
 10.0.0.44895
 title(469),	-- %s, the Worldbreaker \\ %s, The Worldbreaker \\ %s, Close and Personal Friend of Deathwing
 10.0.0.45335
@@ -37,15 +33,9 @@ title(476),	-- %s of Iskaara
 title(479),	-- Malicious %s
 10.0.2.45779
 title(480),	-- %s, Knight of Feathersworth
-10.0.2.45969
-title(481),	-- %s the Elite Evoker
-title(482),	-- Crimson Soloist %s
 10.0.2.46091
 title(483),	-- %s, Paragon of the Obsidian Brood
 title(484),	-- %s, Agent of the Black Prince
 10.0.2.46259
 title(485),	-- Merchant Artisan %s
 title(486),	-- Personal Crafter %s
-10.0.2.46420
-title(487),	-- %s, Famed Slayer of Raszageth
-title(488),	-- %s the Storm-Eater

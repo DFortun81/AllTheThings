@@ -338,7 +338,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			-- #endif
 					n(10184, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Onyxia
 						classicAch(684, {	-- Onyxia's Lair (Level 60)
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								7635,	-- A Proper String
 								7509,	-- The Forging of Quel'Serrar

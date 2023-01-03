@@ -358,7 +358,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 	n(SEASON_GLADIATOR, {
 		bubbleDown({
 			["timeline"] = { "added 2.0.1.6180", "removed 2.1.2" },
-			-- #if BEFORE 3.0.1
+			-- #if BEFORE WRATH
 			["OnUpdate"] = SEASONONE_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
@@ -1310,7 +1310,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 	applyclassicphase(TBC_PHASE_TWO, n(SEASON_MERCILESS, {
 		bubbleDown({
 			["timeline"] = { "added 2.1.2", "removed 2.3.0.7501" },
-			-- #if BEFORE 3.0.1
+			-- #if BEFORE WRATH
 			["OnUpdate"] = MERCILESS_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
@@ -2039,7 +2039,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 	applyclassicphase(TBC_PHASE_THREE, n(SEASON_VENGEFUL, {
 		bubbleDown({
 			["timeline"] = { "added 2.3.0.7501", "removed 2.4.3.8600" },
-			-- #if BEFORE 3.0.1
+			-- #if BEFORE WRATH
 			["OnUpdate"] = VENGEFUL_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {

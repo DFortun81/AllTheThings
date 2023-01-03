@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 local MYTHIC = 92;
 local HEROIC = 91;
 local NORMAL = 89;
@@ -11,10 +10,10 @@ local function FatedItem(modItemID, modID)
 	local item = i(math.floor(modItemID));
 	item.modID = modID;
 	item.sym = {{"select","itemID",modItemID}};	-- Base Version
+	item.timeline = { ADDED_SL_S4 };
 	return item;
 end
-
-root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	inst(1190, {	-- Castle Nathria
 		["isRaid"] = true,
 		["coord"] = { 46.1, 41.5, REVENDRETH },
@@ -30,29 +29,234 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 		["lvl"] = { 60 },
 		["g"] = {
 			n(ACHIEVEMENTS,  {
-				ach(14715),	-- Castle Nathria
-			}),
-			n(COMMON_BOSS_DROPS, {
-				i(173068, {	-- Vantus Rune Technique: Castle Nathria (RECIPE!)
-					["crs"] = {	-- TODO: probable that this can drop from any boss in the raid.  check back and add additional crs as necessary
-						164261,	-- Hungering Destroyer
-						165066,	-- Huntsman Altimor
-						169457,	-- Huntsman Altimor — Bargast
-						169458,	-- Huntsman Altimor — Hecutis
-						165067,	-- Huntsman Altimor — Margore
-						165521,	-- Lady Inerva Darkvein
-						166969,	-- The Council of Blood — Baroness Frieda
-						166971,	-- The Council of Blood — Castellan Niklaus
-						166970,	-- The Council of Blood — Lord Stavros
-						168938,	-- Sire Denathrius
-						164407,	-- Sludgefist
-						164406,	-- Shriekwing
+				ach(14715, {	-- Castle Nathria
+					crit(1, { -- Shriekwing
+						["_encounter"] = { 2393, LFR_R },
+					}),
+					crit(2, { -- Huntsman Altimor
+						["_encounter"] = { 2429, LFR_R },
+					}),
+					crit(3, { -- Sun King's Salvation
+						["_encounter"] = { 2422, LFR_R },
+					}),
+					crit(4, { -- Artificer Xy'mox
+						["_encounter"] = { 2418, LFR_R },
+					}),
+					crit(5, { -- Hungering Destroyer
+						["_encounter"] = { 2428, LFR_R },
+					}),
+					crit(6, { -- Lady Inerva Darkvein
+						["_encounter"] = { 2420, LFR_R },
+					}),
+					crit(7, { -- The Council of Blood
+						["_encounter"] = { 2426, LFR_R },
+					}),
+					crit(8, { -- Sludgefist
+						["_encounter"] = { 2394, LFR_R },
+					}),
+					crit(9, { -- Stone Legion Generals
+						["_encounter"] = { 2425, LFR_R },
+					}),
+					crit(10, {-- Sire Denathrius
+						["_encounter"] = { 2424, LFR_R },
+					}),
+				}),
+				ach(14717, {	-- Heroic: Castle Nathria
+					crit(1, { -- Shriekwing
+						["_encounter"] = { 2393, HEROIC_R },
+					}),
+					crit(2, { -- Huntsman Altimor
+						["_encounter"] = { 2429, HEROIC_R },
+					}),
+					crit(3, { -- Sun King's Salvation
+						["_encounter"] = { 2422, HEROIC_R },
+					}),
+					crit(4, { -- Artificer Xy'mox
+						["_encounter"] = { 2418, HEROIC_R },
+					}),
+					crit(5, { -- Hungering Destroyer
+						["_encounter"] = { 2428, HEROIC_R },
+					}),
+					crit(6, { -- Lady Inerva Darkvein
+						["_encounter"] = { 2420, HEROIC_R },
+					}),
+					crit(7, { -- The Council of Blood
+						["_encounter"] = { 2426, HEROIC_R },
+					}),
+					crit(8, { -- Sludgefist
+						["_encounter"] = { 2394, HEROIC_R },
+					}),
+					crit(9, { -- Stone Legion Generals
+						["_encounter"] = { 2425, HEROIC_R },
+					}),
+					crit(10, {-- Sire Denathrius
+						["_encounter"] = { 2424, HEROIC_R },
+					}),
+				}),
+				ach(14718, {	-- Mythic: Castle Nathria
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						14356,	-- Mythic: Shriekwing
+						14357,	-- Mythic: Huntsman Altimor
+						14360,	-- Mythic: Sun King's Salvation
+						14359,	-- Mythic: Artificer Xy'mox
+						14358,	-- Mythic: Hungering Destroyer
+						14361,	-- Mythic: Lady Inerva Darkvein
+						14362,	-- Mythic: The Council of Blood
+						14363,	-- Mythic: Sludgefist
+						14364,	-- Mythic: Stone Legion Generals
+						14365,	-- Mythic: Sire Denathrius
+					}},
+				}),
+				ach(14355, {	-- Glory of the Nathria Raider
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						14293,	-- Blind as a Bat
+						14523,	-- Taking Care of Business
+						14608,	-- Burning Bright
+						14617,	-- Private Stock
+						14376,	-- Feed the Beast
+						14524,	-- I Don't Know What I Expected
+						14619,	-- Pour Decision Making
+						14294,	-- Dirtflap's Revenge
+						14525,	-- Feed Me, Seymour!
+						14610,	-- Clear Conscience
+					}},
+					["g"] = {
+						i(182596),	-- Rampart Screecher (MOUNT!)
 					},
 				}),
+				ach(14614),		-- Castle Vain
+				-- Fated
+				ach(15663, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Fate of Nathria
+					crit(1, { -- Shriekwing
+						["_encounter"] = { 2393, LFR_R },
+					}),
+					crit(2, { -- Huntsman Altimor
+						["_encounter"] = { 2429, LFR_R },
+					}),
+					crit(3, { -- Sun King's Salvation
+						["_encounter"] = { 2422, LFR_R },
+					}),
+					crit(4, { -- Artificer Xy'mox
+						["_encounter"] = { 2418, LFR_R },
+					}),
+					crit(5, { -- Hungering Destroyer
+						["_encounter"] = { 2428, LFR_R },
+					}),
+					crit(6, { -- Lady Inerva Darkvein
+						["_encounter"] = { 2420, LFR_R },
+					}),
+					crit(7, { -- The Council of Blood
+						["_encounter"] = { 2426, LFR_R },
+					}),
+					crit(8, { -- Sludgefist
+						["_encounter"] = { 2394, LFR_R },
+					}),
+					crit(9, { -- Stone Legion Generals
+						["_encounter"] = { 2425, LFR_R },
+					}),
+					crit(10, {-- Sire Denathrius
+						["_encounter"] = { 2424, LFR_R },
+					}),
+				})),
+				ach(15664, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Heroic: Fate of Nathria
+					crit(1, { -- Shriekwing
+						["_encounter"] = { 2393, HEROIC_R },
+					}),
+					crit(2, { -- Huntsman Altimor
+						["_encounter"] = { 2429, HEROIC_R },
+					}),
+					crit(3, { -- Sun King's Salvation
+						["_encounter"] = { 2422, HEROIC_R },
+					}),
+					crit(4, { -- Artificer Xy'mox
+						["_encounter"] = { 2418, HEROIC_R },
+					}),
+					crit(5, { -- Hungering Destroyer
+						["_encounter"] = { 2428, HEROIC_R },
+					}),
+					crit(6, { -- Lady Inerva Darkvein
+						["_encounter"] = { 2420, HEROIC_R },
+					}),
+					crit(7, { -- The Council of Blood
+						["_encounter"] = { 2426, HEROIC_R },
+					}),
+					crit(8, { -- Sludgefist
+						["_encounter"] = { 2394, HEROIC_R },
+					}),
+					crit(9, { -- Stone Legion Generals
+						["_encounter"] = { 2425, HEROIC_R },
+					}),
+					crit(10, {-- Sire Denathrius
+						["_encounter"] = { 2424, HEROIC_R },
+					}),
+				})),
+				ach(15665, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Mythic: Fate of Nathria
+					crit(1, { -- Shriekwing
+						["_encounter"] = { 2393, MYTHIC_R },
+					}),
+					crit(2, { -- Huntsman Altimor
+						["_encounter"] = { 2429, MYTHIC_R },
+					}),
+					crit(3, { -- Sun King's Salvation
+						["_encounter"] = { 2422, MYTHIC_R },
+					}),
+					crit(4, { -- Artificer Xy'mox
+						["_encounter"] = { 2418, MYTHIC_R },
+					}),
+					crit(5, { -- Hungering Destroyer
+						["_encounter"] = { 2428, MYTHIC_R },
+					}),
+					crit(6, { -- Lady Inerva Darkvein
+						["_encounter"] = { 2420, MYTHIC_R },
+					}),
+					crit(7, { -- The Council of Blood
+						["_encounter"] = { 2426, MYTHIC_R },
+					}),
+					crit(8, { -- Sludgefist
+						["_encounter"] = { 2394, MYTHIC_R },
+					}),
+					crit(9, { -- Stone Legion Generals
+						["_encounter"] = { 2425, MYTHIC_R },
+					}),
+					crit(10, {-- Sire Denathrius
+						["_encounter"] = { 2424, MYTHIC_R },
+					}),
+				})),
+				-- Guild Achievements
+				ach(14459),		-- Castle Nathria Guild Run
+				ach(14720),		-- Heroic: Castle Nathria Guild Run
+				ach(14652),		-- Mythic: Sire Denathrius Guild Run
+			}),
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					164406,	-- Shriekwing
+					165066,	-- Huntsman Altimor
+					169457,	-- Huntsman Altimor — Bargast
+					169458,	-- Huntsman Altimor — Hecutis
+					165067,	-- Huntsman Altimor — Margore
+					164261,	-- Hungering Destroyer
+					165521,	-- Lady Inerva Darkvein
+					168973,	-- Sun King's Salvation — High Torturer Darithos
+					165759,	-- Sun King's Salvation — Kael'thas Sunstrider
+					165805,	-- Sun King's Salvation — Shade of Kael'thas
+					166644,	-- Artificer Xy'mox
+					166969,	-- The Council of Blood — Baroness Frieda
+					166971,	-- The Council of Blood — Castellan Niklaus
+					166970,	-- The Council of Blood — Lord Stavros
+					164407,	-- Sludgefist
+					168112,	-- Stone Legion Generals — General Kaal
+					168113,	-- Stone Legion Generals — General Grashaal
+					168938,	-- Sire Denathrius
+				},
+				["g"] = {
+					i(173068),	-- Vantus Rune Technique: Castle Nathria (RECIPE!)
+				},
 			}),
 			n(CONDUITS, {
 				e(2393, {	-- Shriekwing
-					["crs"] = { 164406 },	-- Castle Nathria / Shriekwing
+					["crs"] = { 164406 },	-- Shriekwing
 					["g"] = {
 						i(182330),	-- Demonic Parole
 						i(182656),	-- Disturb the Peace
@@ -410,7 +614,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 			n(ZONE_DROPS, {
 				i(180453),	-- She Had a Stone Heart
 			}),
-			d(17, {	-- LFR
+			d(LFR_R, {
 				n(ZONE_DROPS, {
 					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
@@ -423,6 +627,17 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					i(183008),	-- Supple Supplicant's Gloves
 					i(182982),	-- Watchful Arbelist's Bracers
 				}),
+				e(2393, {	-- Shriekwing
+					["crs"] = { 164406 },	-- Shriekwing
+					["g"] = {
+						i(183034),	-- Cowled Batwing Cloak
+						i(182976),	-- Double-Chained Utility Belt
+						i(182993),	-- Chiropteran Leggings
+						i(183027),	-- Errant Crusader's Greaves
+						i(182979),	-- Slippers of the Forgotten Heretic
+						i(184016),	-- Skulker's Wing
+					},
+				}),
 				e(2429, {	-- Huntsman Altimor
 					["crs"] = {
 						165066,	-- Huntsman Altimor
@@ -431,9 +646,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						165067,	-- Margore
 					},
 					["g"] = {
-						crit(2, {	-- Huntsman Altimor
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						i(183892),	-- Mystic Anima Spherule
 						FatedItem(183892.04, LFR),	-- Mystic Anima Spherule (Fated)
 						i(183040),	-- Charm of Eternal Winter
@@ -444,12 +656,42 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						i(184017),	-- Bargast's Leash
 					},
 				}),
+				e(2422, {	-- Sun King's Salvation
+					["crs"] = {
+						168973,	-- High Torturer Darithos
+						165759,	-- Kael'thas Sunstrider
+						165805,	-- Shade of Kael'thas
+					},
+					["g"] = {
+						i(183893),	-- Abominable Anima Spherule
+						FatedItem(183893.04, LFR),	-- Abominable Anima Spherule (Fated)
+						i(183033),	-- Mantle of Manifest Sins
+						i(182986),	-- High Torturer's Smock
+						i(182977),	-- Bangles of Errant Pride
+						i(183007),	-- Bleakwing Assassin's Grips
+						i(183025),	-- Stoic Guardsman's Belt
+						i(184019),	-- Soul Igniter
+						i(184018),	-- Splintered Heart of Al'ar
+						i(184020),	-- Tuft of Smoldering Plumage
+					},
+				}),
+				e(2418, {	-- Artificer Xy'mox
+					["crs"] = { 166644 },	-- Artificer Xy'mox
+					["g"] = {
+						i(183888),	-- Apogee Anima Bead
+						FatedItem(183888.04, LFR),	-- Apogee Anima Bead (Fated)
+						i(183960),	-- Portable Pocket Dimension (BAG!)
+						i(182987),	-- Breastplate of Cautious Calculation
+						i(183019),	-- Precisely Calibrated Chronometer
+						i(183004),	-- Shadewarped Sash
+						i(183012),	-- Greaves of Enigmatic Energies
+						i(183038),	-- Hyperlight Band
+						i(184021),	-- Glyph of Assimilation
+					},
+				}),
 				e(2428, {	-- Hungering Destroyer
 					["crs"] = { 164261 },	-- Hungering Destroyer
 					["g"] = {
-						crit(5, {	-- Hungering Destroyer
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						i(183891),	-- Venerated Anima Spherule
 						FatedItem(183891.04, LFR),	-- Venerated Anima Spherule (Fated)
 						i(183001),	-- Helm of Insatiable Appetite
@@ -466,9 +708,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				e(2420, {	-- Lady Inerva Darkvein
 					["crs"] = { 165521 },	-- Lady Inerva Darkvein
 					["g"] = {
-						crit(6, {	-- Lady Inerva Darkvein
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						i(183889),	-- Thaumaturgic Anima Bead
 						FatedItem(183889.04, LFR),	-- Thaumaturgic Anima Bead (Fated)
 						i(183021),	-- Confidant's Favored Cap
@@ -479,45 +718,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						i(184025),	-- Memory of Past Sins
 					},
 				}),
-				e(2422, {	-- Sun King's Salvation
-					["crs"] = {
-						168973,	-- High Torturer Darithos
-						165759,	-- Kael'thas Sunstrider
-						165805,	-- Shade of Kael'thas
-					},
-					["g"] = {
-						crit(3, {	-- Sun King's Salvation
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						i(183893),	-- Abominable Anima Spherule
-						FatedItem(183893.04, LFR),	-- Abominable Anima Spherule (Fated)
-						i(183033),	-- Mantle of Manifest Sins
-						i(182986),	-- High Torturer's Smock
-						i(182977),	-- Bangles of Errant Pride
-						i(183007),	-- Bleakwing Assassin's Grips
-						i(183025),	-- Stoic Guardsman's Belt
-						i(184019),	-- Soul Igniter
-						i(184018),	-- Splintered Heart of Al'ar
-						i(184020),	-- Tuft of Smoldering Plumage
-					},
-				}),
-				e(2418, {	-- Artificer Xy'mox
-					["crs"] = { 166644 },	-- Artificer Xy'mox
-					["g"] = {
-						crit(4, {	-- Artificer Xy'mox
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						i(183888),	-- Apogee Anima Bead
-						FatedItem(183888.04, LFR),	-- Apogee Anima Bead (Fated)
-						i(183960),	-- Portable Pocket Dimension (BAG!)
-						i(182987),	-- Breastplate of Cautious Calculation
-						i(183019),	-- Precisely Calibrated Chronometer
-						i(183004),	-- Shadewarped Sash
-						i(183012),	-- Greaves of Enigmatic Energies
-						i(183038),	-- Hyperlight Band
-						i(184021),	-- Glyph of Assimilation
-					},
-				}),
 				e(2426, {	-- The Council of Blood
 					["crs"] = {
 						166971,	-- Castellan Niklaus
@@ -525,9 +725,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						166969,	-- Baroness Frieda
 					},
 					["g"] = {
-						crit(7, {	-- The Council of Blood
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						i(183890),	-- Zenith Anima Spherule
 						FatedItem(183890.04, LFR),	-- Zenith Anima Spherule (Fated)
 						i(183039),	-- Noble's Birthstone Pendant
@@ -540,26 +737,9 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						i(184024),	-- Macabre Sheet Music
 					},
 				}),
-				e(2393, {	-- Shriekwing
-					["crs"] = { 164406 },	-- Castle Nathria / Shriekwing
-					["g"] = {
-						crit(1, {	-- Shriekwing
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						i(183034),	-- Cowled Batwing Cloak
-						i(182976),	-- Double-Chained Utility Belt
-						i(182993),	-- Chiropteran Leggings
-						i(183027),	-- Errant Crusader's Greaves
-						i(182979),	-- Slippers of the Forgotten Heretic
-						i(184016),	-- Skulker's Wing
-					},
-				}),
 				e(2394, {	-- Sludgefist
 					["crs"] = { 164407 },	-- Sludgefist
 					["g"] = {
-						crit(8, {	-- Sludgefist
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						i(182999),	-- Rampaging Giant's Chestplate
 						i(182984),	-- Colossal Plate Gauntlets
 						i(183022),	-- Impossibly Oversized Mitts
@@ -576,9 +756,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						168113,	-- General Grashaal
 					},
 					["g"] = {
-						crit(9, {	-- Stone Legion Generals
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						i(183895, {	-- Apogee Anima Bead
 							["modID"] = 83,
 						}),
@@ -601,9 +778,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						168156,	-- Remornia
 					},
 					["g"] = {
-						crit(10, {	-- Sire Denathrius
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						ig(179358),	-- Remornia
 						ig(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
@@ -634,15 +808,10 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					},
 				}),
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_R, {
 				n(QUESTS, {
 					q(62054, {	-- Castle Nathria: Getting a Head [Normal]
-						-- TODO: verify if this is locked out/completed by higher difficulty skip
 						["provider"] = { "n", 172653 },	-- General Draven
-						--["altQuests"] = {
-						--	62055,	-- Castle Nathria: Getting a Head [Heroic]
-						--	62056,	-- Castle Nathria: Getting a Head [Mythic]
-						--},
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -658,11 +827,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					i(182982),	-- Watchful Arbelist's Bracers
 				}),
 				e(2393, {	-- Shriekwing
-					["crs"] = { 164406 },	-- Castle Nathria / Shriekwing
+					["crs"] = { 164406 },	-- Shriekwing
 					["g"] = {
-						crit(1, {	-- Shriekwing
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						ach(14293),	-- Blind as a Bat
 						i(183034),	-- Cowled Batwing Cloak
 						i(182976),	-- Double-Chained Utility Belt
@@ -680,9 +846,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						165067,	-- Margore
 					},
 					["g"] = {
-						crit(2, {	-- Huntsman Altimor
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						ach(14523),	-- Taking Care of Business
 						i(183892),	-- Mystic Anima Spherule
 						FatedItem(183892.03, NORMAL),	-- Mystic Anima Spherule (Fated)
@@ -701,9 +864,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						165805,	-- Shade of Kael'thas
 					},
 					["g"] = {
-						crit(3, {	-- Sun King's Salvation
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						ach(14608),	-- Burning Bright
 						i(183893),	-- Abominable Anima Spherule
 						FatedItem(183893.03, NORMAL),	-- Abominable Anima Spherule (Fated)
@@ -720,9 +880,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				e(2418, {	-- Artificer Xy'mox
 					["crs"] = { 166644 },	-- Artificer Xy'mox
 					["g"] = {
-						crit(4, {	-- Artificer Xy'mox
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						ach(14617),	-- Private Stock
 						i(183888),	-- Apogee Anima Bead
 						FatedItem(183888.03, NORMAL),	-- Apogee Anima Bead (Fated)
@@ -738,9 +895,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				e(2428, {	-- Hungering Destroyer
 					["crs"] = { 164261 },	-- Hungering Destroyer
 					["g"] = {
-						crit(5, {	-- Hungering Destroyer
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						ach(14376),	-- Feed the Beast
 						i(183891),	-- Venerated Anima Spherule
 						FatedItem(183891.03, NORMAL),	-- Venerated Anima Spherule (Fated)
@@ -758,9 +912,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				e(2420, {	-- Lady Inerva Darkvein
 					["crs"] = { 165521 },	-- Lady Inerva Darkvein
 					["g"] = {
-						crit(6, {	-- Lady Inerva Darkvein
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						ach(14524),	-- I Don't Know What I Expected
 						i(183889),	-- Thaumaturgic Anima Bead
 						FatedItem(183889.03, NORMAL),	-- Thaumaturgic Anima Bead (Fated)
@@ -779,9 +930,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						166969,	-- Baroness Frieda
 					},
 					["g"] = {
-						crit(7, {	-- The Council of Blood
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						ach(14619),	-- Pour Decision Making
 						i(183890),	-- Zenith Anima Spherule
 						FatedItem(183890.03, NORMAL),	-- Zenith Anima Spherule (Fated)
@@ -798,9 +946,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				e(2394, {	-- Sludgefist
 					["crs"] = { 164407 },	-- Sludgefist
 					["g"] = {
-						crit(8, {	-- Sludgefist
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						ach(14294),	-- Dirtflap's Revenge
 						i(182999),	-- Rampaging Giant's Chestplate
 						i(182984),	-- Colossal Plate Gauntlets
@@ -818,9 +963,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						168113,	-- General Grashaal
 					},
 					["g"] = {
-						crit(9, {	-- Stone Legion Generals
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						ach(14525),	-- Feed Me, Seymour!
 						i(183895, {	-- Apogee Anima Bead
 							["modID"] = 82,
@@ -844,9 +986,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						168156,	-- Remornia
 					},
 					["g"] = {
-						crit(10, {	-- Sire Denathrius
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						ach(14610),	-- Clear Conscience
 						ig(179358),	-- Remornia
 						ig(183395),	-- Pommel Jewel of Remornia (PET!)
@@ -878,17 +1017,10 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					},
 				}),
 			}),
-			d(15, {	-- Heroic
-				n(ACHIEVEMENTS, {
-					ach(14717),	-- Heroic: Castle Nathria
-				}),
+			d(HEROIC_R, {
 				n(QUESTS, {
 					q(62055, {	-- Castle Nathria: Getting a Head [Heroic]
-						-- TODO: verify if this is locked out/completed by higher difficulty skip
 						["provider"] = { "n", 172653 },	-- General Draven
-						--["altQuests"] = {
-						--	62056,	-- Castle Nathria: Getting a Head [Mythic]
-						--},
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -904,15 +1036,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					i(182982),	-- Watchful Arbelist's Bracers
 				}),
 				e(2393, {	-- Shriekwing
-					["crs"] = { 164406 },	-- Castle Nathria / Shriekwing
+					["crs"] = { 164406 },	-- Shriekwing
 					["g"] = {
-						crit(1, {	-- Shriekwing
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
 						crit(1, {	-- Shriekwing
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
-						ach(14293),	-- Blind as a Bat
 						i(183034),	-- Cowled Batwing Cloak
 						i(182976),	-- Double-Chained Utility Belt
 						i(182993),	-- Chiropteran Leggings
@@ -930,12 +1058,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					},
 					["g"] = {
 						crit(2, {	-- Huntsman Altimor
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(2, {	-- Huntsman Altimor
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
-						ach(14523),	-- Taking Care of Business
 						i(183892),	-- Mystic Anima Spherule
 						FatedItem(183892.05, HEROIC),	-- Mystic Anima Spherule (Fated)
 						i(183040),	-- Charm of Eternal Winter
@@ -954,12 +1078,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					},
 					["g"] = {
 						crit(3, {	-- Sun King's Salvation
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(3, {	-- Sun King's Salvation
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
-						ach(14608),	-- Burning Bright
 						i(183893),	-- Abominable Anima Spherule
 						FatedItem(183893.05, HEROIC),	-- Abominable Anima Spherule (Fated)
 						i(183033),	-- Mantle of Manifest Sins
@@ -976,12 +1096,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					["crs"] = { 166644 },	-- Artificer Xy'mox
 					["g"] = {
 						crit(4, {	-- Artificer Xy'mox
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(4, {	-- Artificer Xy'mox
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
-						ach(14617),	-- Private Stock
 						i(183888),	-- Apogee Anima Bead
 						FatedItem(183888.05, HEROIC),	-- Apogee Anima Bead (Fated)
 						i(183960),	-- Portable Pocket Dimension (BAG!)
@@ -997,12 +1113,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					["crs"] = { 164261 },	-- Hungering Destroyer
 					["g"] = {
 						crit(5, {	-- Hungering Destroyer
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(5, {	-- Hungering Destroyer
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
-						ach(14376),	-- Feed the Beast
 						i(183891),	-- Venerated Anima Spherule
 						FatedItem(183891.05, HEROIC),	-- Venerated Anima Spherule (Fated)
 						i(183001),	-- Helm of Insatiable Appetite
@@ -1020,12 +1132,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					["crs"] = { 165521 },	-- Lady Inerva Darkvein
 					["g"] = {
 						crit(6, {	-- Lady Inerva Darkvein
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(6, {	-- Lady Inerva Darkvein
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
-						ach(14524),	-- I Don't Know What I Expected
 						i(183889),	-- Thaumaturgic Anima Bead
 						FatedItem(183889.05, HEROIC),	-- Thaumaturgic Anima Bead (Fated)
 						i(183021),	-- Confidant's Favored Cap
@@ -1044,12 +1152,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					},
 					["g"] = {
 						crit(7, {	-- The Council of Blood
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(7, {	-- The Council of Blood
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
-						ach(14619),	-- Pour Decision Making
 						i(183890),	-- Zenith Anima Spherule
 						FatedItem(183890.05, HEROIC),	-- Zenith Anima Spherule (Fated)
 						i(183039),	-- Noble's Birthstone Pendant
@@ -1066,12 +1170,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					["crs"] = { 164407 },	-- Sludgefist
 					["g"] = {
 						crit(8, {	-- Sludgefist
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(8, {	-- Sludgefist
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
-						ach(14294),	-- Dirtflap's Revenge
 						i(182999),	-- Rampaging Giant's Chestplate
 						i(182984),	-- Colossal Plate Gauntlets
 						i(183022),	-- Impossibly Oversized Mitts
@@ -1089,12 +1189,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					},
 					["g"] = {
 						crit(9, {	-- Stone Legion Generals
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(9, {	-- Stone Legion Generals
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
-						ach(14525),	-- Feed Me, Seymour!
 						i(183895, {	-- Apogee Anima Bead
 							["modID"] = 84,
 						}),
@@ -1118,17 +1214,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					},
 					["g"] = {
 						crit(10, {	-- Sire Denathrius
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(10, {	-- Sire Denathrius
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
-						ach(14460, {	-- Ahead of the Curve: Sire Denathrius
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						ach(14610),	-- Clear Conscience
+						ach(14460, {["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 }}),	-- Ahead of the Curve: Sire Denathrius
 						ig(179358),	-- Remornia
-						ig(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
+						ig(182169),	-- Veilwing Soul (SS!)
 						ig(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 84,
@@ -1158,26 +1248,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					},
 				}),
 			}),
-			d(16, {	-- Mythic
-				n(ACHIEVEMENTS, {
-					ach(14718, {	-- Mythic: Castle Nathria
-						-- Meta Achievement
-						["sym"] = {
-							{"meta_achievement",
-								14359,	-- Mythic: Artificer Xy'mox
-								14358,	-- Mythic: Hungering Destroyer
-								14357,	-- Mythic: Huntsman Altimor
-								14361,	-- Mythic: Lady Inerva Darkvein
-								14356,	-- Mythic: Shriekwing
-								14365,	-- Mythic: Sire Denathrius
-								14363,	-- Mythic: Sludgefist
-								14364,	-- Mythic: Stone Legion Generals
-								14360,	-- Mythic: Sun King's Salvation
-								14362,	-- Mythic: The Council of Blood
-							},
-						},
-					}),
-				}),
+			d(MYTHIC_R, {
 				n(QUESTS, {
 					q(62056, {	-- Castle Nathria: Getting a Head [Mythic]
 						["provider"] = { "n", 172653 },	-- General Draven
@@ -1196,16 +1267,9 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					i(182982),	-- Watchful Arbelist's Bracers
 				}),
 				e(2393, {	-- Shriekwing
-					["crs"] = { 164406 },	-- Castle Nathria / Shriekwing
+					["crs"] = { 164406 },	-- Shriekwing
 					["g"] = {
-						crit(1, {	-- Shriekwing
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(1, {	-- Shriekwing
-							["achievementID"] = 14717,	-- Heroic: Castle Nathria
-						}),
 						ach(14356),	-- Mythic: Shriekwing
-						ach(14293),	-- Blind as a Bat
 						i(183034),	-- Cowled Batwing Cloak
 						i(182976),	-- Double-Chained Utility Belt
 						i(182993),	-- Chiropteran Leggings
@@ -1222,14 +1286,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						165067,	-- Margore
 					},
 					["g"] = {
-						crit(2, {	-- Huntsman Altimor
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(2, {	-- Huntsman Altimor
-							["achievementID"] = 14717,	-- Heroic: Castle Nathria
-						}),
 						ach(14357),	-- Mythic: Huntsman Altimor
-						ach(14523),	-- Taking Care of Business
 						i(183892),	-- Mystic Anima Spherule
 						FatedItem(183892.06, MYTHIC),	-- Mystic Anima Spherule (Fated)
 						i(183040),	-- Charm of Eternal Winter
@@ -1247,14 +1304,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						165805,	-- Shade of Kael'thas
 					},
 					["g"] = {
-						crit(3, {	-- Sun King's Salvation
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(3, {	-- Sun King's Salvation
-							["achievementID"] = 14717,	-- Heroic: Castle Nathria
-						}),
 						ach(14360),	-- Mythic: Sun King's Salvation
-						ach(14608),	-- Burning Bright
 						i(183893),	-- Abominable Anima Spherule
 						FatedItem(183893.06, MYTHIC),	-- Abominable Anima Spherule (Fated)
 						i(183033),	-- Mantle of Manifest Sins
@@ -1270,14 +1320,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				e(2418, {	-- Artificer Xy'mox
 					["crs"] = { 166644 },	-- Artificer Xy'mox
 					["g"] = {
-						crit(4, {	-- Artificer Xy'mox
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(4, {	-- Artificer Xy'mox
-							["achievementID"] = 14717,	-- Heroic: Castle Nathria
-						}),
 						ach(14359),	-- Mythic: Artificer Xy'mox
-						ach(14617),	-- Private Stock
 						i(183888),	-- Apogee Anima Bead
 						FatedItem(183888.06, MYTHIC),	-- Apogee Anima Bead (Fated)
 						i(183960),	-- Portable Pocket Dimension (BAG!)
@@ -1292,14 +1335,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				e(2428, {	-- Hungering Destroyer
 					["crs"] = { 164261 },	-- Hungering Destroyer
 					["g"] = {
-						crit(5, {	-- Hungering Destroyer
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(5, {	-- Hungering Destroyer
-							["achievementID"] = 14717,	-- Heroic: Castle Nathria
-						}),
 						ach(14358),	-- Mythic: Hungering Destroyer
-						ach(14376),	-- Feed the Beast
 						i(183891),	-- Venerated Anima Spherule
 						FatedItem(183891.06, MYTHIC),	-- Venerated Anima Spherule (Fated)
 						i(183001),	-- Helm of Insatiable Appetite
@@ -1316,14 +1352,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				e(2420, {	-- Lady Inerva Darkvein
 					["crs"] = { 165521 },	-- Lady Inerva Darkvein
 					["g"] = {
-						crit(6, {	-- Lady Inerva Darkvein
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(6, {	-- Lady Inerva Darkvein
-							["achievementID"] = 14717,	-- Heroic: Castle Nathria
-						}),
 						ach(14361),	-- Mythic: Lady Inerva Darkvein
-						ach(14524),	-- I Don't Know What I Expected
 						i(183889),	-- Thaumaturgic Anima Bead
 						FatedItem(183889.06, MYTHIC),	-- Thaumaturgic Anima Bead (Fated)
 						i(183021),	-- Confidant's Favored Cap
@@ -1341,14 +1370,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						166969,	-- Baroness Frieda
 					},
 					["g"] = {
-						crit(7, {	-- The Council of Blood
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(7, {	-- The Council of Blood
-							["achievementID"] = 14717,	-- Heroic: Castle Nathria
-						}),
 						ach(14362),	-- Mythic: The Council of Blood
-						ach(14619),	-- Pour Decision Making
 						i(183890),	-- Zenith Anima Spherule
 						FatedItem(183890.06, MYTHIC),	-- Zenith Anima Spherule (Fated)
 						i(183039),	-- Noble's Birthstone Pendant
@@ -1364,14 +1386,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				e(2394, {	-- Sludgefist
 					["crs"] = { 164407 },	-- Sludgefist
 					["g"] = {
-						crit(8, {	-- Sludgefist
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(8, {	-- Sludgefist
-							["achievementID"] = 14717,	-- Heroic: Castle Nathria
-						}),
 						ach(14363),	-- Mythic: Sludgefist
-						ach(14294),	-- Dirtflap's Revenge
 						i(182999),	-- Rampaging Giant's Chestplate
 						i(182984),	-- Colossal Plate Gauntlets
 						i(183022),	-- Impossibly Oversized Mitts
@@ -1388,14 +1403,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						168113,	-- General Grashaal
 					},
 					["g"] = {
-						crit(9, {	-- Stone Legion Generals
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(9, {	-- Stone Legion Generals
-							["achievementID"] = 14717,	-- Heroic: Castle Nathria
-						}),
 						ach(14364),	-- Mythic: Stone Legion Generals
-						ach(14525),	-- Feed Me, Seymour!
 						i(183895, {	-- Apogee Anima Bead
 							["modID"] = 85,
 						}),
@@ -1418,25 +1426,14 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						168156,	-- Remornia
 					},
 					["g"] = {
-						crit(10, {	-- Sire Denathrius
-							["achievementID"] = 14715,	-- Castle Nathria
-						}),
-						crit(10, {	-- Sire Denathrius
-							["achievementID"] = 14717,	-- Heroic: Castle Nathria
-						}),
-						ach(14461, {	-- Cutting Edge: Sire Denathrius
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						ach(14460, {	-- Ahead of the Curve: Sire Denathrius
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						ach(14649, bubbleDownSelf({["timeline"] = { "added 9.0", "removed 9.1" } }, {	-- Hall of Fame: Sire Denathrius (Alliance)
+						ach(14461, {["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 }}),	-- Cutting Edge: Sire Denathrius
+						ach(14649, bubbleDownSelf({["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {	-- Hall of Fame: Sire Denathrius (Alliance)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(440),	-- <Name>, Famed Slayer of Denathrius
 							},
 						})),
-						ach(14650, bubbleDownSelf({["timeline"] = { "added 9.0", "removed 9.1" } }, {	-- Hall of Fame: Sire Denathrius (Horde)
+						ach(14650, bubbleDownSelf({["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 } }, {	-- Hall of Fame: Sire Denathrius (Horde)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(440),	-- <Name>, Famed Slayer of Denathrius
@@ -1447,7 +1444,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						}),
 						ach(14610),	-- Clear Conscience
 						ig(179358),	-- Remornia
-						ig(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
+						ig(182169),	-- Veilwing Soul (SS!)
 						ig(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 85,

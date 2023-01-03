@@ -1751,7 +1751,7 @@ local f = root("CommonQualityItems", {
 			i(2092),	-- Worn Dagger
 			i(50055),	-- Worn Dirk
 		}),
-		n(-57, {	-- Fishing Poles
+		filter(FISHING_POLES, {	-- Fishing Poles
 			i(177030),	-- Aquatic Extractor
 			i(6367),	-- Big Iron Fishing Pole
 			i(12225),	-- Blump Family Fishing Pole

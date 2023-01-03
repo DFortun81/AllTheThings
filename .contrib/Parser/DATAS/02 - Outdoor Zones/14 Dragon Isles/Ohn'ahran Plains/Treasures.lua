@@ -18,6 +18,19 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 71033,
 				["coord"] = { 56.0, 78.7, OHNAHRAN_PLAINS },
 				["isWeekly"] = true,
+				["sym"] = {
+					{"select", "mapID",
+						DRAGON_ISLES,
+						THE_WAKING_SHORES,
+						OHNAHRAN_PLAINS,
+						THE_AZURE_SPAN,
+						THALDRASZUS,
+					},
+					{"pop"},
+					{"where", "headerID", ZONE_REWARDS},
+					{"pop"},
+					{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+				},
 			}),
 			o(376581, {	-- Clan Chest
 				["coords"] = {
@@ -48,7 +61,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(380991, {	-- Dirt Mound
 				["coord"] = { 70.6, 35.4, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["questID"] = 67950,
 				["cost"] = { { "i", 195453, 1 }, },	--1xLudo's Stash Map
 				["g"] = {
 					crit(2, {	-- Slightly Chewed Duck Egg
@@ -83,7 +96,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(377900, {	-- Nokhud Warspear
 				["coord"] = { 32.5, 38.2, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["questID"] = 67049,
 				["cost"] = { { "i", 194540, 1 }, },	--1xNokhud Armorer's Notes
 				["g"] = {
 					crit(1, {	-- Nokhud Warspear

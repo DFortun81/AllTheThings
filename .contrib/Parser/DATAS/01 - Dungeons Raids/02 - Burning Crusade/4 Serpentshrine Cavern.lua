@@ -213,7 +213,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				["creatureID"] = 21212,
 				["groups"] = {
 					classicAch(694, {	-- Serpentshrine Cavern
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuest"] = 10445,	-- The Vials of Eternity
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif

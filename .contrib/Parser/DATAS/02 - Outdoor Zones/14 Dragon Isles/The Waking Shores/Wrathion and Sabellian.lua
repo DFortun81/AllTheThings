@@ -18,6 +18,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		n(-1102, {	-- Wrathion & Sabellian
 			n(ACHIEVEMENTS, {
 				ach(16494),	-- Loyalty to the Prince
+				ach(16497, {	-- I'm Playing All Sides
+					crit(1, {	-- Sabellian
+						["_quests"] = {
+							72338,	-- Greater Obsidian Key
+							66131,	-- Unlocking Our Past
+						},
+					}),
+					crit(2, {	-- Wrathion
+						["_quests"] = {
+							72337,	-- Greater Obsidian Key
+							66130,	-- Unlocking our Past
+						},
+					}),
+					crit(3, {	-- Forgemaster Bazentus
+						["_quests"] = { 66126 },	-- Unlocking Our Past
+					}),
+					crit(4, {	-- Igys the Believer
+						["_quests"] = { 66129 },	-- Unlocking Our Past
+					}),
+				}),
 				ach(16496, {	-- Obsidian Champion
 					crit(1, {
 						["_quests"] = { 67015 },	-- Forging the Answer
@@ -32,6 +52,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["_quests"] = { 66903 },	-- Clearing the Vault
 					}),
 				}),
+				ach(16495),	-- Obsidian Keymaster
 				ach(16760),	-- The Obsidian Bloodline
 			}),
 			n(QUESTS, {
@@ -57,6 +78,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuest"] = 66133,	-- Keys of Loyalty
 					["provider"] = { "n", 187284 },	-- Wrathion
 					["coord"] = { 26.8, 62.5, THE_WAKING_SHORES },
+					["cost"] = { { "i", 191255, 1 }, },	-- 1x Greater Obsidian Key
+					["isWeekly"] = true,
+				}),
+				q(72338, {	-- Greater Obsidian Key
+					["sourceQuest"] = 66805,	-- Keys of Loyalty
+					["provider"] = { "n", 187447 },	-- Sabellian
+					["coord"] = { 27.6, 56.5, THE_WAKING_SHORES },
 					["cost"] = { { "i", 191255, 1 }, },	-- 1x Greater Obsidian Key
 					["isWeekly"] = true,
 				}),
@@ -118,7 +146,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 24.5, 60.9, THE_WAKING_SHORES },
 					["provider"] = { "n", 191194 },	-- Weaponsmith Mida
 					["isWeekly"] = true,
-					-- ["requireSkill"] = BLACKSMITHING,	-- currently available to other professions also? move to Professions if it's fixed?
 					["g"] = {
 						i(194963),	-- Plans: Black Dragon Seared Alloy (RECIPE!)
 					},
@@ -134,45 +161,61 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["isWeekly"] = true,
 				}),
 				q(70847, {	-- Ancient Obsidian Charm
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "i", 199915 },	-- Ancient Obsidian Charm
 					["isWeekly"] = true,
 				}),
+				q(66321, {	-- Bar Their Efforts
+					["sourceQuest"] = 66419,	-- Allegiance To One
+					["provider"] = { "n", 191193 },	-- Exadria
+					["isWeekly"] = true,
+				}),
+				q(69926, {	-- Becca Black and the Seven Gnomes
+					["sourceQuest"] = 66419,	-- Allegiance To One
+					["provider"] = { "n", 191014 },	-- Becca Black
+					["coord"] = { 26.4, 62.3, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+					["g"] = {
+						i(197946),	-- Dragonforged Poker
+						i(197959),	-- Lavafused Armor
+					},
+				}),
 				q(65842, {	-- Disarming Behavior
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.5, THE_WAKING_SHORES },
 					["isDaily"] = true,
 				}),
 				q(67099, {	-- Dragon Eyes
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				q(66103, {	-- Eager to Please
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				q(66308, {	-- Feeding the Fire
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 188179 },	-- Stoker Volrax
 					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
+					["isWeekly"] = true,
 				}),
 				q(69983, {	-- Flamecarved Bone
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "i", 198071 },	-- Flamecarved Bone
 					["isWeekly"] = true,
 				}),
 				q(70848, {	-- Forgotten Dragon Crest
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "i", 199831 },	-- Forgotten Dragon Crest
 					["isDaily"] = true,
 				}),
 				q(69984, {	-- Gold-Banded Dragon Tooth
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "i", 198072 },	-- Gold-Banded Dragon Tooth
 					["isWeekly"] = true,
 				}),
@@ -183,21 +226,36 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["isDaily"] = true,
 				}),
 				q(72447, {	-- Greatest of Threads
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
+					["provider"] = { "n", 191193 },	-- Exadria
+					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+				}),
+				q(66449, {	-- Hands-Off Operation
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				q(66445, {	-- Honor Our Fallen
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				q(66882, {	-- Lost Battlepack
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "i", 193600 },	-- Lost Battlepack
 					["isDaily"] = true,
+				}),
+				q(66633, {	-- Make a Statement
+					["sourceQuest"] = 66419,	-- Allegiance To One
+					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
+					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
+					["isWeekly"] = true,
+					["g"] = {
+						i(193915),	-- Flag of the Black Dragon Flight
+					},
 				}),
 				q(65840, {	-- Same as the Old Boss
 					["sourceQuest"] = 66362,	-- First Completion of 'Unlocking our Past' (Igys the Believer)
@@ -227,41 +285,37 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(72448, {	-- Securing Our Legacy
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				q(69918, {	-- Shaking Our Foundations
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				q(66326, {	-- The Tools of One's Trade
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 188179 },	-- Stoker Volrax
 					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				q(72456, {	-- Tomes Of Trust
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 188344 },	-- Chydrass
 					["coord"] = { 25, 56.1, THE_WAKING_SHORES },
 				}),
 				q(67142, {	-- Wyrm Food
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 196518 },	-- Voraxian
 					["coord"] = { 27.6,56.7, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 				}),
 				--[[
-				q(66633, {	-- Make a Statement
-					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
-					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
-				}),
 				q(66856, {	-- Ashen Black and the Seven Gnomes
-					["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 191014 },	-- Ashen Black
 					["coord"] = { 26.5, 62.5, THE_WAKING_SHORES },
 					["isDaily"] = true,
@@ -289,6 +343,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 27.4, 60.8, THE_WAKING_SHORES },
 						["repeatable"] = true,
 					}),
+					q(70212, {	-- Penumbrus
+						["provider"] = { "n", 189289 },	-- Penumbrus
+						["coord"] = { 24.5, 54.4, THE_WAKING_SHORES },
+					}),
 					q(70763, {	-- Worldcarver A'tir
 						["provider"] = { "n", 186859 },	-- Worldcarver A'tir
 						["coord"] = { 30.0, 55.4, THE_WAKING_SHORES },
@@ -297,34 +355,37 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				n(HIDDEN_QUESTS, {
 					q(66362, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Igys the Believer)",
-						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+						["sourceQuest"] = 66419,	-- Allegiance To One
 						["cr"] = 187275,	-- Igys the Believer
 						["isDaily"] = true,
 					}),
 					q(66359, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Forgemaster Bazentus)",
-						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+						["sourceQuest"] = 66419,	-- Allegiance To One
 						["cr"] = 187272,	-- Forgemaster Bazentus
 						["isDaily"] = true,
 					}),
 					q(66360, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Sabellian)",
-						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+						["sourceQuest"] = 66419,	-- Allegiance To One
 						["cr"] = 187447,	-- Sabellian
 						["isDaily"] = true,
 					}),
 					q(66361, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Wrathion)",
-						["sourceQuests"] = { 66133 },	-- Keys of Loyalty
+						["sourceQuest"] = 66419,	-- Allegiance To One
 						["cr"] = 187284,	-- Wrathion
 						["isDaily"] = true,
 					}),
-					-- not sure if HQT these or Hidden Quests, maybe after knowing better what they represent
-					-- 64277 - weekly, accepted Keys of Loyalty after choosing Wrathion
-					-- 66802 - weekly, accepted Keys of Loyalty after choosing Wrathion
 				}),
-				n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
+			}),
+			n(WORLD_QUESTS, {
+				["sourceQuests"] = {
+					71232,	-- Renown of the Dragon Isles
+					72366,	-- HQT unlock on alts
+				},
+				["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 					q(70984, {	-- Surge Breaker
 						["coord"] = { 28.4, 58.4, THE_WAKING_SHORES },
 					}),
-				})),
+				}),
 			}),
 			n(RARES, {
 				n(190986, {	-- Battlehorn Pyrhus
@@ -332,7 +393,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["questID"] = 74040,
 					["isDaily"] = true,
 					["g"] = {
-						-- Rest is under shared Lv70 Elite Rare Drops
+						i(200252),	-- Molten Flak Cannon
 					},
 				}),
 				n(190991, {	-- Char
@@ -381,6 +442,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["g"] = {
 						i(200144),	-- Band of the Unscalable
 						i(200683),	-- Legguards of the Deep Strata
+						i(200141),	-- Wind Generating Band
 					},
 				}),
 				n(193232, {	-- Rasnar the War Ender
@@ -439,6 +501,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				n(193310, {	-- Dealer Vexil <Food and Drink>
 					["coord"] = { 34.8, 46.6, THE_WAKING_SHORES },
 					["g"] = {
+						i(197738),	-- Flameslinger Rum
+						i(198356),	-- Honey Snack
 						i(201418, {	-- Orb of the Obsidian Scale
 							["cost"] = {
 								{ "i", 202173, 5 },		-- 5x Magmote
@@ -465,6 +529,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", AWAKENED_FIRE, 4 },
 								{ "i", AWAKENED_EARTH, 4 },
+							},
+							["g"] = {
+								i(191803),	-- Obsidian Dracthyr Battlegear Bracers
+								i(191804),	-- Obsidian Dracthyr Battlegear Cover
+								i(191798),	-- Obsidian Dracthyr Battlegear Grips
+								i(191797),	-- Obsidian Dracthyr Battlegear Hauberk
+								i(191799),	-- Obsidian Dracthyr Battlegear Helm
+								i(191800),	-- Obsidian Dracthyr Battlegear Leggings
+								i(191801),	-- Obsidian Dracthyr Battlegear Monnion
+								i(191802),	-- Obsidian Dracthyr Battlegear Belt
 							},
 						}),
 						i(200707, {	-- Armoire of Endless Cloaks (TOY!)
@@ -587,6 +661,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(201840),	-- Sturdy Obsidian Glasses
 					},
 				}),
+				n(188349, {	-- Outfitter Tipech <Food and Drink>
+					["coord"] = { 25.6, 55.0, THE_WAKING_SHORES },
+					["g"] = {
+						i(198043),	-- Stealthy Elven Port
+					},
+				}),
+				n(189604, {	-- Provisioner Ojito <Supplies>
+					["coord"] = { 34.4, 61.2, THE_WAKING_SHORES },
+					["g"] = {
+						i(198043),	-- Stealthy Elven Port
+					},
+				}),
 				n(188623, {	-- Samia Inkling
 					["coord"] = { 25.2, 55.8, THE_WAKING_SHORES },
 					["g"] = {
@@ -595,6 +681,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", AWAKENED_FIRE, 4 },
 								{ "i", AWAKENED_EARTH, 4 },
+							},
+							["g"] = {
+								i(191803),	-- Obsidian Dracthyr Battlegear Bracers
+								i(191804),	-- Obsidian Dracthyr Battlegear Cover
+								i(191798),	-- Obsidian Dracthyr Battlegear Grips
+								i(191797),	-- Obsidian Dracthyr Battlegear Hauberk
+								i(191799),	-- Obsidian Dracthyr Battlegear Helm
+								i(191800),	-- Obsidian Dracthyr Battlegear Leggings
+								i(191801),	-- Obsidian Dracthyr Battlegear Monnion
+								i(191802),	-- Obsidian Dracthyr Battlegear Belt
 							},
 						}),
 						i(200963, {	-- Ensemble: Sabellian's Battlegear Cloth Armor
@@ -797,9 +893,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
 		n(-1102, {	-- Wrathion & Sabellian
-			q(64277),	-- Triggered when choosing Wrathion in Allegiance To One (66419)
-			--q(xxxxx),	-- Triggered when choosing Seballian in Allegiance To One (66419)
-			q(66802),	-- Triggered when choosing Wrathion or Seballian in Allegiance To One (66419)
+			q(64277),	-- Triggered when choosing anyone in Allegiance To One (66419) -- triggered for both in 2 weeks
+			q(66808),	-- Triggered when choosing Seballian in Allegiance To One (66419) -- triggered for Seballian only
+			q(66802),	-- Triggered when choosing Wrathion in Allegiance To One (66419) -- triggered for Wrathion only
+			q(72284),	-- Triggered when reaching max rank friendship with Sabellian after also being max rank with Wrathion (also popped with four Drake Armor triggers)
 		}),
 	}),
 })));

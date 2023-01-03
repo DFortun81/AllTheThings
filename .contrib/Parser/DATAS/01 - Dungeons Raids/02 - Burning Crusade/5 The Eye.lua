@@ -218,7 +218,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				["creatureID"] = 19622,
 				["groups"] = {
 					classicAch(696, {	-- Tempest Keep
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							10445,	-- The Vials of Eternity
 							11007,	-- Kael'thas and the Verdant Sphere

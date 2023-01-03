@@ -115,7 +115,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				ach(1259),	-- Not So Fast
 				ach(713, applyclassicphase(PHASE_TWO, {	-- Silverwing Sentinel (A)
 					["races"] = ALLIANCE_ONLY,
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Silverwing Sentinels to Exalted.",
 					-- #endif
 					-- #if ANYCLASSIC
@@ -126,7 +126,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				})),
 				ach(712, applyclassicphase(PHASE_TWO, {	-- Warsong Outrider (H)
 					["races"] = HORDE_ONLY,
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Warsong Outriders to Exalted.",
 					-- #endif
 					-- #if ANYCLASSIC

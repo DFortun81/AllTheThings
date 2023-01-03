@@ -119,20 +119,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			["coord"] = { 55.9, 12.6, DUROTAR },
 			["races"] = HORDE_ONLY,
 		}),
-		q(70053, {    -- Lessons From Our Past [A]
-            ["sourceQuests"] = { 70044 },	-- Truths and Revelations [A]
-            ["provider"] = { "n", 193924 },	-- Scalecommander Emberthal
-            ["coord"] = { 40.6, 49.7, STORMWIND_CITY },
-            ["races"] = ALLIANCE_ONLY,
-			["timeline"] = TIMELINE_DF_REL,
-		}),
-		q(70054, {	-- Lessons From Our Past [H]
-			["sourceQuests"] = { 70045 },	-- Truths and Revelations [H]
-			["provider"] = { "n", 193924 },	-- Scalecommander Emberthal
-			["coord"] = { 49.2, 73.8, ORGRIMMAR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = TIMELINE_DF_REL,
-		}),
 		q(70197, {	-- The Call of the Isles [A]
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -245,6 +231,20 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
             ["provider"] = { "n", 193890 },	-- Dervishian
             ["coord"] = { 23.1, 56.2, STORMWIND_CITY },
             ["races"] = ALLIANCE_ONLY,
+			["timeline"] = TIMELINE_DF_REL,
+		}),
+		q(70053, {    -- Lessons From Our Past [A]
+            ["sourceQuests"] = { 70044 },	-- Truths and Revelations [A]
+            ["provider"] = { "n", 193924 },	-- Scalecommander Emberthal
+            ["coord"] = { 40.6, 49.7, STORMWIND_CITY },
+            ["races"] = ALLIANCE_ONLY,
+			["timeline"] = TIMELINE_DF_REL,
+		}),
+		q(70054, {	-- Lessons From Our Past [H]
+			["sourceQuests"] = { 70045 },	-- Truths and Revelations [H]
+			["provider"] = { "n", 193924 },	-- Scalecommander Emberthal
+			["coord"] = { 49.2, 73.8, ORGRIMMAR },
+			["races"] = HORDE_ONLY,
 			["timeline"] = TIMELINE_DF_REL,
 		}),
 	}),

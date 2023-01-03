@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
+root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
 	i(190456),	-- Artisan's Mettle
 	-- Optional
 	i(190455),	-- Concentrated Primal Focus
@@ -162,6 +162,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(191517),	-- Writhefire Oil+
 			i(191518),	-- Writhefire Oil++
 			i(191519),	-- Writhefire Oil+++
+			i(194337),	-- Liquid Courage
 		}),
 		filter(REAGENTS, {
 			i(191570),	-- Dragon's Alchemical Solution
@@ -400,7 +401,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			q(71341, { ["name"] = "First Craft: Primal Whetstone", }),	-- Primal Whetstone
 			-- Pets
 			q(71351, { ["name"] = "First Craft: Alvin The Anvil", }),	-- Alvin The Anvil
-			-- Dragon Ridning
+			-- Dragon Riding
 			q(71342, { ["name"] = "First Craft: Prototype Explorer's Barding Framework", }),	-- Prototype Explorer's Barding Framework
 			q(71343, { ["name"] = "First Craft: Prototype Regal Barding Framework", }),	-- Prototype Regal Barding Framework
 		}),
@@ -491,7 +492,6 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		n(DISCOVERY, {
 			r(381397),	-- Aromatic Seafood Platter
 			r(381403),	-- Braised Bruffalon Brisket
-			r(381385),	-- Charred Hornswog Steaks
 			r(381396),	-- Feisty Fish Sticks
 			r(381402),	-- Great Cerulean Sea
 			r(381399),	-- Revenge, Served Cold
@@ -763,6 +763,10 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			q(71880, { ["name"] = "First Craft: Scepter of Spectacle: Order", }),	-- Scepter of Spectacle: Order
 			-- Magical Merchandise
 			q(71878, { ["name"] = "First Craft: Sophic Amalgamation", }),	-- Sophic Amalgamation
+			-- Disenchanting Mystic items, these quests are NOT tied to the specific item disenchanted, but unsure what their logic is.
+			q(71934, { ["name"] = "Disenchant ? Mystic items", }),
+			q(71935, { ["name"] = "Disenchant ? Mystic items", }),
+			q(71941, { ["name"] = "Disenchant ? Mystic items", }),
 		}),
 		filter(ILLUSIONS, {
 			i(200883),	-- Illusion: Primal Air
@@ -840,6 +844,10 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		}),
 		spell(382322, {	-- Primal Deconstruction Charge
 			r(382357),	-- EZ-Thro Primal Deconstruction Charge
+		}),
+		spell(382374, {	-- Rummage Through Scrap
+			i(192495),	-- Malfunctioning Stealthman 54 (TOY!)
+			i(199554),	-- S.E.A.T. (TOY!)
 		}),
 		n(ARMOR, {
 			i(198326),	-- Battle-Ready Binoculars
@@ -1010,7 +1018,6 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(198253),	-- Calibrated Safety Switch+
 			i(198254),	-- Calibrated Safety Switch++
 			i(198255),	-- Calibrated Safety Switch+++
-			i(198173),	-- Cartomancy Cannon
 			i(198160),	-- Completely Safe Rockets+
 			i(198161),	-- Completely Safe Rockets++
 			i(198162),	-- Completely Safe Rockets+++
@@ -1132,6 +1139,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(198188),	-- Shock-Spring Coil+++
 		}),
 		filter(TOYS, {
+			i(198173);	-- Atomic Recalibrator (TOY!)
 			i(198264),	-- Centralized Precipitation Emitter (TOY!)
 			i(192443),	-- Element-Infused Rocket Helmet (TOY!)
 			i(198206),	-- Environmental Emulator (TOY!)
@@ -1141,6 +1149,9 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		n(WEAPONS, {
 			i(198334),	-- P.E.W. x2
 			i(198335),	-- Sophisticated Problem Solver
+		}),
+		n(DROPS, {	-- not sure if this is where we want the 'random knowledge items'
+			i(198970),	-- Infinitely Attachable Pair o' Docks
 		}),
 	}),
 	prof(FISHING, {
@@ -1294,6 +1305,27 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(197578),	-- Windborne Velocidrake: Silver and Blue Armor (DM!)
 			i(197579),	-- Windborne Velocidrake: Steel and Orange Armor (DM!)
 			i(197634),	-- Windborne Velocidrake: Windswept Pattern (DM!)
+		}),
+		n(HIDDEN_QUESTS, {
+			-- Unsorted
+			q(74102, { ["name"] = "First Craft: Crimson Combatant's Medallion", }),	-- Not commenting these, it's right there in the name
+			q(74103, { ["name"] = "First Craft: Crimson Combatant's Insignia", }),
+			q(74104, { ["name"] = "First Craft: Crimson Combatant's Emblem", }),
+			q(71558, { ["name"] = "First Craft: Draconic Missive of the Aurora", }),
+			q(71564, { ["name"] = "First Craft: Draconic Missive of the Feverflare", }),
+			q(71565, { ["name"] = "First Craft: Draconic Missive of the Fireflash", }),
+			q(71566, { ["name"] = "First Craft: Draconic Missive of the Harmonious", }),
+			q(71567, { ["name"] = "First Craft: Draconic Missive of the Peerless", }),
+			q(71568, { ["name"] = "First Craft: Draconic Missive of the Quickblade", }),
+			q(71554, { ["name"] = "First Craft: Fated Fortune Card", }),
+			q(71552, { ["name"] = "First Craft: Illusion Parchment: Spell Shield", }),
+			q(71548, { ["name"] = "First Craft: Illusion Parchment: Chilling Wind", }),
+			q(71547, { ["name"] = "First Craft: Illusion Parchment: Arcane Burst", }),
+			q(71546, { ["name"] = "First Craft: Illusion Parchment: Aqua Torrent", }),
+			q(71596, { ["name"] = "First Craft: Core Explorer's Compendium", }),
+			q(71569, { ["name"] = "First Craft: Chilled Rune", }),
+			q(71601, { ["name"] = "First Craft: Serene Ink", }),
+			q(71599, { ["name"] = "First Craft: Blazing Ink", }),
 		}),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)
@@ -1631,6 +1663,25 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 				i(193370),	-- Silken Gemdust+++
 			}),
 		}),
+		n(HIDDEN_QUESTS, {
+			-- Unsorted
+			q(71645, { ["name"] = "First Craft: Radiant Malygite", }),	-- Not commenting these, it's right there in the name
+			q(71609, { ["name"] = "First Craft: Crimson Combatant's Jeweled Signet", }),
+			q(71608, { ["name"] = "First Craft: Crimson Combatant's Jeweled Amulet", }),
+			q(71635, { ["name"] = "First Craft: Keen Neltharite", }),
+			q(71643, { ["name"] = "First Craft: Energized Malygite", }),
+			q(71637, { ["name"] = "First Craft: Sensei's Neltharite", }),
+			q(71648, { ["name"] = "First Craft: Pounce", }),
+			q(71673, { ["name"] = "First Craft: Draconic Vial", }),
+			q(71654, { ["name"] = "First Craft: Jeweled Dragon's Heart", }),
+			q(71677, { ["name"] = "First Craft: Jeweled Offering", }),
+			q(71678, { ["name"] = "First Craft: Convergent Prism", }),
+			q(71625, { ["name"] = "First Craft: Crafty Queen's Ruby", }),
+			q(71665, { ["name"] = "First Craft: Sundered Onyx Loupe", }),
+			q(71675, { ["name"] = "First Craft: Frameless Lens", }),
+			q(71602, { ["name"] = "First Craft: Pendant of Impending Perils", }),
+			q(71672, { ["name"] = "First Craft: Shimmering Clasp", }),
+		}),
 		filter(BATTLE_PETS, {
 			i(193885),	-- Jeweled Amber Whelpling (PET!)
 			i(193888),	-- Jeweled Emerald Whelpling (PET!)
@@ -1858,6 +1909,20 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(193491),	-- Shockproof Gloves
 			i(193482),	-- Skinner's Cap
 			i(193612),	-- Smithing Apron
+		}),
+		n(HIDDEN_QUESTS, {
+			-- Unsorted
+			q(71721, { ["name"] = "First Craft: Crimson Combatant's Adamant Treads", }),	-- Not commenting these, it's right there in the name
+			q(71684, { ["name"] = "First Craft: Expert Alchemist's Hat", }),
+			q(71752, { ["name"] = "First Craft: Lavish Floral Pack", }),
+			q(71754, { ["name"] = "First Craft: Resplendent Cover", }),
+			q(71688, { ["name"] = "First Craft: Infurious Footwraps of Indemnity", }),
+			q(71740, { ["name"] = "First Craft: Allied Legguards of Sansok Khan", }),
+			q(71462, { ["name"] = "First Craft: Creature Combustion Canister", }),
+			q(71750, { ["name"] = "First Craft: Shockproof Gloves", }),
+			q(71706, { ["name"] = "First Craft: Life-Bound Boots", }),
+			q(71704, { ["name"] = "First Craft: Pioneer's Leather Boots", }),
+			q(72502, { ["name"] = "First Craft: Trailblazer's Toughened Legguards", }),
 		}),
 		filter(MISC, {
 			i(193468),	-- Fang Adornments+
@@ -2096,6 +2161,9 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(193932),	-- Infurious Wildercloth Bolt+
 			i(193933),	-- Infurious Wildercloth Bolt++
 			i(193934),	-- Infurious Wildercloth Bolt+++
+			i(192095),	-- Spool of Wilderthread+
+			i(192096),	-- Spool of Wilderthread++
+			i(192097),	-- Spool of Wilderthread+++
 			i(193929),	-- Vibrant Wildercloth Bolt+
 			i(193930),	-- Vibrant Wildercloth Bolt++
 			i(193931),	-- Vibrant Wildercloth Bolt+++
@@ -2117,8 +2185,13 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(198041),	-- Khaz'gorite Fabric Cutters Left Blade
 			i(194065),	-- Khaz'gorite Fabric Cutters Right Blade
 		}),
+		n(HIDDEN_QUESTS, {
+			-- Unsorted
+			q(71778, { ["name"] = "First Craft: Hood of Surging Time", }),	-- Not commenting these, it's right there in the name
+			q(72508, { ["name"] = "First Craft: Surveyor's Seasoned Pants", }),
+		}),
 	}),
-}))));
+})));
 
 root("HiddenQuestTriggers", {
 	-- TODO: likely many of these to be added as actual tracking under ExpansionFeatures > DF > Professions
@@ -2135,12 +2208,16 @@ root("HiddenQuestTriggers", {
 			q(71974),	-- First Saxifrage Harvest
 			q(71975),	-- First Lush Saxifrage Harvest
 			q(71976),	-- First Windswept Hochenblume Harvest
+			q(71977),	-- First Windswept Writhebark Harvest
 			q(71978),	-- First Windswept Bubble Poppy Harvest
 			q(71979),	-- First Windswept Saxifrage Harvest
 			q(71980),	-- First Frigid Hochenblume Harvest
 			q(71981),	-- First Frigid Writhebark Harvest
 			q(71982),	-- First Frigid Bubble Poppy Harvest
-			q(71984),	-- First Titan-touched Hochenblume Harvest
+			q(71983),	-- First Frigid Saxifrage Harvest
+			q(71984),	-- First Titan-Touched Hochenblume Harvest
+			q(71986),	-- First Titan-Touched Bubble Poppy
+			q(71987),	-- First Titan-Touched Saxifrage
 		}),
 		prof(MINING, {
 			q(71951),	-- First Draconium Deposit
@@ -2161,17 +2238,11 @@ root("HiddenQuestTriggers", {
 			q(71965),	-- First Overload Titan Node
 			q(71963),	-- First Overload Molten Node
 			q(71966),	-- First Overload Primal Node
-			-- TODO: these are weekly, perhaps track them normally
+			-- TODO: these are possibly weekly, perhaps track them normally
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
-			q(72160),	-- Iridescent Ore Fragments
-			q(72161),	-- Iridescent Ore Fragments
-			q(72162),	-- Iridescent Ore Fragments
-			q(72163),	-- Iridescent Ore Fragments
-			q(72164),	-- Iridescent Ore Fragments
-			q(72165),	-- Iridescent Ore
 		}),
 		prof(BLACKSMITHING, {
-			q(70512),	-- Primeval Earth Fragment Drop (maybe weekly tracking?)
+			q(70232),	-- crafting an Alloy material near the Dim Forge in The Waking Shores to trigger the Glimmer of Wisdom
 		}),
 		--[[
 		prof(COOKING, {
@@ -2307,17 +2378,13 @@ root("HiddenQuestTriggers", {
 		--]]
 		prof(JEWELCRAFTING, {
 			-- Reagents
-			-- q(),	-- Blotting Sand
-			q(71673),	-- Draconic Vial
+			q(71647),	-- Blotting Sand
 			-- q(),	-- Elemental Harmony
-			-- q(),	-- Empty Soul Cage
-			q(71675),	-- Frameless Lens
+			q(71862),	-- Empty Soul Cage
 			q(71676),	-- Glossy Stone
 			-- q(),	-- Illustrious Insight
 			-- q(),	-- Pounce
-			q(71672),	-- Shimmering Clasp
 			-- Rudimentary Gems
-			q(71625),	-- Crafty Queen's Ruby
 			q(71623),	-- Energized Vibrant Emerald
 			q(71624),	-- Sensei's Sundered Onyx
 			q(71622),	-- Solid Eternity Amber
@@ -2394,7 +2461,6 @@ root("HiddenQuestTriggers", {
 			q(71662),	-- Left-Handed Magnifying Glass
 			-- q(),	-- Magnificent Margin Magnifier
 			-- q(),	-- Resonant Focus
-			q(71665),	-- Sundered Onyx Loupes
 			-- Extravagant Glasswares
 			q(71655),	-- Dreamer's Vision
 			q(71651),	-- Earthwarden's Prize
@@ -2413,7 +2479,6 @@ root("HiddenQuestTriggers", {
 			-- q(),	-- Life-Bound Gloves
 			-- q(71711),	-- Life-Bound Shoulderpads
 			-- q(),	-- Life-Bound Trousers
-			q(71704),	-- Pioneer's Leather Boots
 			q(71703),	-- Pioneer's Leather Tunic
 			q(72569),	-- Pioneer's Leather Wristguard
 			q(72495),	-- Pioneer's Practiced Belt
@@ -2436,7 +2501,6 @@ root("HiddenQuestTriggers", {
 			q(71705),	-- Trailblazer's Toughened Chainbelt
 			q(72501),	-- Trailblazer's Toughened Coif
 			q(72500),	-- Trailblazer's Toughened Grips
-			q(72502),	-- Trailblazer's Toughened Legguards
 			q(72503),	-- Trailblazer's Toughened Spikes
 			-- Profession Equipment
 			q(71683),	-- Alchemist's Hat
@@ -2521,21 +2585,43 @@ root("HiddenQuestTriggers", {
 			-- q(71773),	-- Tuskarr Bean Bag
 		}),
 		prof(SKINNING, {
-			q(70383),	-- Curious Hide Scraps #2
-			q(70384),	-- Curious Hide Scraps #3
-			q(70389),	-- Large Sample of Curious Hide
-			q(74206),	-- Skinning Corrupted Proto-Dragon Rare
-			q(74154),	-- Skinning Muugurv during a Grand Hunt
-			q(74153),	-- Skinning Degmakh during a Grant Hunt
-			q(74162),	-- Skinning Angen during a Grand Hunt
-			q(74163),	-- Skinning Molkeej on a Grand Hunt
-			q(74161),	-- Skinning Melkhop on a Grand Hunt
-			q(74164),	-- Skinning Diluu on a Grand Hunt
-			q(74156),	-- Skinning Uurhilt on a Grand Hunt
-			q(74157),	-- Skinning Moskhoi on a Grand Hunt
-			q(74159),	-- Skinning Tevgai on a Grand Hunt
-			q(74196),	-- Skinning Rokmur rare
-			q(74126),	-- Skinning Crystalus in a Primal Storm
+			q(74162),	-- Skinning Angen (Great Hunt)
+			q(74225),	-- Skinning Battlehorn Pyrhus
+			q(74174),	-- Skinning Biryuk
+			q(74122),	-- Skinning Blisterhide
+			q(74141),	-- Skinning Blitztusk (Grand Hunt)
+			q(74124),	-- Skinning Bouldron
+			q(74206),	-- Skinning Corrupted Proto-Dragon
+			q(74126),	-- Skinning Crystalus (Primal Storm)
+			q(74153),	-- Skinning Degmakh (Grand Hunt)
+			q(74164),	-- Skinning Diluu (Grand Hunt)
+			q(74186),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)
+			q(74152),	-- Skinning Galnomor
+			q(74134),	-- Skinning Grumbletrunk
+			q(74179),	-- Skinning Hunter of the Deep
+			q(74127),	-- Skinning Karantun
+			q(74147),	-- Skinning Kholdeg (Grand Hunt)
+			q(74145),	-- Skinning Khomuur (Grand Hunt)
+			q(74182),	-- Skinning Makhra the Ashtouched
+			q(74171),	-- Skinning Malsegan
+			q(74161),	-- Skinning Melkhop (Grand Hunt)
+			q(74163),	-- Skinning Molkeej (Grand Hunt)
+			q(74157),	-- Skinning Moskhoi (Grand Hunt)
+			q(74214),	-- Skinning Moth'go Deeploom
+			q(74131),	-- Skinning Mucka the Raker
+			q(74154),	-- Skinning Muugurv (Grand Hunt)
+			q(74140),	-- Skinning Norbett (Grand Hunt)
+			q(74196),	-- Skinning Rokmur
+			q(74142),	-- Skinning Sarana (Grand Hunt)
+			q(74213),	-- Skinning Swog'ranka
+			q(74159),	-- Skinning Tevgai (Grand Hunt)
+			q(74198),	-- Skinning The Weeping Vilomah
+			q(74143),	-- Skinning Uranto the Swift (Grand Hunt)
+			q(74156),	-- Skinning Uurhilt (Grand Hunt)
+			q(74195),	-- Skinning Woolfang
+			q(74160),	-- Skinning Yamakh
+			q(74181),	-- Skinning Zarimek
+			q(74149),	-- Skinning Zumakh (Grand Hunt)
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--
@@ -2578,7 +2664,6 @@ root("HiddenQuestTriggers", {
 			q(72504),	-- Surveyor's Seasoned Cord
 			q(72506),	-- Surveyor's Seasoned Gloves
 			q(72507),	-- Surveyor's Seasoned Hood
-			q(72508),	-- Surveyor's Seasoned Pants
 			q(72509),	-- Surveyor's Seasoned Shoulders
 			q(71792),	-- Surveyor's Tailored Cloak
 				-- Azureweave Garments --

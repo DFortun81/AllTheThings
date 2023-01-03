@@ -2,7 +2,10 @@
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
+-- We don't need all of this as part of the addon since there's no trigger to alert that a Faction has
+-- been encountered, and it really causes the Dynamic population to take forever since every one of these Factions is added into the Main list
 
+--[[
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(FACTIONS, {
 		tier(CLASSIC_TIER, {
@@ -532,7 +535,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				faction(2090),	-- The Wardens (Paragon)
 				faction(2091),	-- Armies of Legionfall (Paragon)
 			})),
-			
+
 			-- 7.3.0
 			tier(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 7.3.0"} }, {
 				faction(2166),	-- Army of the Light (Paragon)
@@ -653,3 +656,4 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 	}),
 }));
+--]]

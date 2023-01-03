@@ -9,7 +9,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				i(164579, {	-- Cache of Uldir Treasures (N)
 					["timeline"] = { "added 8.0.1", "removed 8.1.0" },
 					["sym"] = {
-						{"select", "instanceID", 1190},			-- Uldir
+						{"select", "instanceID", 1031},			-- Uldir
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
 						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
@@ -21,7 +21,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				i(164257, {	-- Cache of Uldir Treasures (HC)
 					["timeline"] = { "added 8.0.1", "removed 8.1.0" },
 					["sym"] = {
-						{"select", "instanceID", 1190},			-- Uldir
+						{"select", "instanceID", 1031},			-- Uldir
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
 						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.

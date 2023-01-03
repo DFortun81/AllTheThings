@@ -1338,11 +1338,13 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					-- #endif
 				}),
 				classicAch(897, {	-- You're So Offensive
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
+					["description"] = "Raise your reputation with the Shattered Sun Offensive to Exalted.",
+					-- #endif
+					-- #if ANYCLASSIC
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1077); end]],
-					["description"] = "Raise your reputation with the Shattered Sun Offensive to Exalted.",
 					-- #endif
 				}),
 			}),
@@ -1366,7 +1368,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["coord"] = { 49.1, 37.6, ISLE_OF_QUELDANAS },
 					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["timeline"] = { "removed 3.0.1" },
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
 					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[; end]],
 					-- #endif
 					["cost"] = { { "g", 100000 } },	-- 10g
@@ -1469,8 +1471,9 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["timeline"] = { "removed 3.0.1" },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
 					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[; end]],
+					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/2 Pit Overlord
 							["provider"] = { "i", 34475 },	-- Arcane Charges
@@ -1485,7 +1488,6 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 							["cr"] = 25030,	-- Wrath Enforcer
 						}),
 					},
-					-- #endif
 				})),
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B, q(11536, {	-- Don't Stop Now....
 					["qg"] = 25046,	-- Smith Hauthaa
@@ -1506,7 +1508,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["coord"] = { 54.3, 44.3, SHATTRATH_CITY },
 					["timeline"] = { "removed 3.0.1" },
 					["lvl"] = lvlsquish(70, 70, 25),
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
 					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE .. [[; end]],
 					-- #endif
 				})),
@@ -1517,15 +1519,15 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["timeline"] = { "removed 3.0.1" },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
 					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE .. [[; end]],
+					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/5 Converted Sentry Deployed
 							["provider"] = { "i", 34368 },	-- Attuned Crystal Cores
 							["cr"] = 24972,	-- Erratic Sentry
 						}),
 					},
-					-- #endif
 				})),
 				q(11557, {	-- Exalted Among All Combatants
 					["qg"] = 25032,	-- Eldara Dawnrunner
@@ -1567,8 +1569,9 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["timeline"] = { "removed 3.0.1" },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
 					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[; end]],
+					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/1 Sin'loren sails burned
 							["provider"] = { "i", 34489 },	-- Flaming Oil
@@ -1583,7 +1586,6 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 							["provider"] = { "n", 25087 },	-- Dawnblade Reservist
 						}),
 					},
-					-- #endif
 				})),
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR, q(11543, {	-- Keeping the Enemy at Bay
 					["qg"] = 25108,	-- Vindicator Kaalan
@@ -1635,8 +1637,9 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["timeline"] = { "removed 3.0.1" },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
 					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[; end]],
+					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/3 Darkspine Iron Ore
 							["provider"] = { "i", 34479 },	-- Darkspine Iron Ore
@@ -1644,7 +1647,6 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 							["cr"] = 25060,	-- Darkspine Myrmidon
 						}),
 					},
-					-- #endif
 				})),
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C, q(11546, {	-- Open for Business
 					["qg"] = 24975,	-- Mar'nah
@@ -1670,8 +1672,9 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["maps"] = { TEROKKAR_FOREST },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
 					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[; end]],
+					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/3 Razorthorn Root
 							["providers"] = {
@@ -1682,7 +1685,6 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 							["cost"] = { { "i", 34255, 1 }},	-- Razorthorn Flayer Gland
 						}),
 					},
-					-- #endif
 				})),
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C, q(11521, {	-- Rediscovering Your Roots
 					["qg"] = 24975,	-- Mar'nah
@@ -1735,8 +1737,9 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["timeline"] = { "removed 3.0.1" },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
 					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[; end]],
+					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/6 Dawnblade Summoner slain
 							["provider"] = { "n", 24978 },	-- Dawnblade Summoner
@@ -1748,7 +1751,6 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 							["provider"] = { "n", 24979 },	-- Dawnblade Marksman
 						}),
 					},
-					-- #endif
 				})),
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE, q(11533, {	-- The Air Strikes Must Continue
 					["qg"] = 25057,	-- Battlemage Arynna
@@ -1778,8 +1780,9 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["timeline"] = { "removed 3.0.1" },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
 					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[; end]],
+					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/1 Emissary of Hate Impaled
 							["provider"] = { "i", 34414 },	-- Shattered Sun Banner
@@ -1794,7 +1797,6 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 							},
 						}),
 					},
-					-- #endif
 				})),
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE, q(11537, {	-- The Battle Must Go On
 					["qg"] = 25061,	-- Harbinger Inuuro
@@ -1824,8 +1826,9 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["timeline"] = { "removed 3.0.1" },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
 					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE .. [[; end]],
+					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/1 Energize a Crystal Ward
 							["provider"] = { "i", 34338 },	-- Mana Remnants
@@ -1833,7 +1836,6 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 							["cr"] = 24966,	-- Wretched Fiend
 						}),
 					},
-					-- #endif
 				})),
 				q(11526, {	-- The Missing Magistrix
 					["providers"] = {

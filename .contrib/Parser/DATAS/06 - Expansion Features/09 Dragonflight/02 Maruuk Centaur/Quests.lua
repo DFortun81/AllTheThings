@@ -10,69 +10,120 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 63.3, 41.3, OHNAHRAN_PLAINS },
 			}),
 				-- RENOWN 2	--
+			q(72762, {	-- Sharing the Bounty
+				["minReputation"] = { 2503, 2 },	-- Maruuk Centaur Renown 2
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
+				},
+			}),
+				-- Binds when picked up Centaur Hunting Trophy
 			q(70928, {	-- Hunting Trophy
-				["description"] = "Requires Renown 2.",
+				["minReputation"] = { 2503, 2 },	-- Maruuk Centaur Renown 2
 				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 				["repeatable"] = true,
 				["cost"] = { { "i", 200093, 1 }, }, 	-- 1x Centaur Hunting Trophy
 			}),
 			q(70929, {	-- More Hunting Trophies
-				["description"] = "Requires Renown 2.",
+				["minReputation"] = { 2503, 2 },	-- Maruuk Centaur Renown 2
 				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 				["repeatable"] = true,
 				["cost"] = { { "i", 200093, 5 }, }, 	-- 5x Centaur Hunting Trophy
 			}),
 			q(72868, {	-- More Hunting Trophies
-				["description"] = "Requires Renown 2.",
+				["minReputation"] = { 2503, 2 },	-- Maruuk Centaur Renown 2
 				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 				["repeatable"] = true,
 				["cost"] = { { "i", 200093, 20 }, }, 	-- 20x Centaur Hunting Trophy
 			}),
+				-- Binds to Blizard account Centaur Hunting Trophy
+			q(71038, {	-- Hunting Trophy
+				["minReputation"] = { 2503, 2 },	-- Maruuk Centaur Renown 2
+				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
+				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
+				["repeatable"] = true,
+				["cost"] = { { "i", 200447, 1 }, }, 	-- 1x Centaur Hunting Trophy
+			}),
+			q(71039, {	-- More Hunting Trophies
+				["minReputation"] = { 2503, 2 },	-- Maruuk Centaur Renown 2
+				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
+				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
+				["repeatable"] = true,
+				["cost"] = { { "i", 200447, 5 }, }, 	-- 5x Centaur Hunting Trophy
+			}),
+			q(72869, {	-- More Hunting Trophies
+				["minReputation"] = { 2503, 2 },	-- Maruuk Centaur Renown 2
+				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
+				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
+				["repeatable"] = true,
+				["cost"] = { { "i", 200447, 20 }, }, 	-- 20x Centaur Hunting Trophy
+			}),
 				-- RENOWN 3	--
 			q(72117, {	-- Cultural Exchange
-				["description"] = "Requires Renown 3.",
+				["minReputation"] = { 2503, 3 },	-- Maruuk Centaur Renown 3
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(200551),	-- Comfortable Pile of Pelts (TOY!)
 					i(198402),	-- Maruuk Cooking Pot (TOY!)
 					i(200550),	-- Very Comfortable Pelt (TOY!)
+					i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned all 3 toys
 				},
 			}),
 				-- RENOWN 4	--
 			q(71229, {	-- Call of the Plains
-				["description"] = "Requires Renown 4. Spawns Anywhere on Dragon Isles.",
+				["minReputation"] = { 2503, 4 },	-- Maruuk Centaur Renown 4
+				["description"] = "Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197627 },	-- Roki
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
+			q(72763, {	-- Sharing the Bounty
+				["minReputation"] = { 2503, 4 },	-- Maruuk Centaur Renown 4
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
+				},
+			}),
 				-- RENOWN 5	--
 			q(71231, {	-- Call of the Hunt
-				["description"] = "Requires Renown 5. Spawns Anywhere on Dragon Isles.",
+				["minReputation"] = { 2503, 5 },	-- Maruuk Centaur Renown 5
+				["description"] = "Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197627 },	-- Roki
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
 			q(70501, {	-- License to Hunt
-				["description"] = "Requires Renown 5.",
+				["minReputation"] = { 2503, 5 },	-- Maruuk Centaur Renown 5
 				["sourceQuests"] = { 71231 },	-- Call of the Hunt
 				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 			}),
+			q(72761, {	-- Sharing the Bounty
+				["minReputation"] = { 2503, 5 },	-- Maruuk Centaur Renown 5
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
+				},
+			}),
 				-- RENOWN 6	--
 			q(71058, {	-- Observing the Wind
-				["description"] = "Requires Renown 6.",
+				["minReputation"] = { 2503, 6 },	-- Maruuk Centaur Renown 6
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(197596),	-- Windborne Velocidrake: Horned Jaw (DM!)
 					i(197610),	-- Windborne Velocidrake: Yellow Horns (DM!)
+					i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned both Drakewatcher Manuscripts
 				},
 			}),
 				-- RENOWN 7	--
 			q(71060, {	-- To Adorn Your Head
-				["description"] = "Requires Renown 7.",
+				["minReputation"] = { 2503, 7 },	-- Maruuk Centaur Renown 7
 				["provider"] = { "n", 195547 },	-- Farrier Rondare
 				["coord"] = { 62.5, 42.5, OHNAHRAN_PLAINS },
 				["g"] = {
@@ -82,6 +133,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(200481),	-- Ohn'ir Midnight Helm
 					i(200487),	-- Shikaar Hunter's Visor
 					i(200489),	-- Shikaar Scout's Visor
+					i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned all items
 				},
 			}),
 			q(72363, {	-- Good at Doings, Not Understandings
@@ -91,42 +143,74 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 8 --
 			q(72137, {	-- Hatchling Plans
-				["description"] = "Requires Renown 8.",
+				["minReputation"] = { 2503, 8 },	-- Maruuk Centaur Renown 8
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 			}),
+			q(72764, {	-- Sharing the Bounty
+				["minReputation"] = { 2503, 8 },	-- Maruuk Centaur Renown 8
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
+				},
+			}),
 				-- RENOWN 9 --
 			q(70541, {	-- Hunting Tactics: Companion
-				["description"] = "Requires Renown 9.",
+				["minReputation"] = { 2503, 9 },	-- Maruuk Centaur Renown 9
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
+			}),
+			q(72765, {	-- Sharing the Bounty
+				["minReputation"] = { 2503, 9 },	-- Maruuk Centaur Renown 9
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
+				},
 			}),
 				-- RENOWN 10 --
 			q(71028, {	-- Hunting Tactics: Blessing of Ohn'ahra
-				["description"] = "Requires Renown 10.",
+				["minReputation"] = { 2503, 10 },	-- Maruuk Centaur Renown 10
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
 			}),
+			q(72766, {	-- Sharing the Bounty
+				["minReputation"] = { 2503, 10 },	-- Maruuk Centaur Renown 10
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
+				},
+			}),
 				-- RENOWN 11 --
 			q(71066, {	-- A Useful Curiosity
-				["description"] = "Requires Renown 11.",
+				["minReputation"] = { 2503, 11 },	-- Maruuk Centaur Renown 11
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 			}),
 			q(71067, {	-- Whistling Rocks
-				["description"] = "Requires Renown 11.",
+				["minReputation"] = { 2503, 11 },	-- Maruuk Centaur Renown 11
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 			}),
 				-- RENOWN 12 --
 			q(71029, {	-- Hunting Tactics: Companion Training
-				["description"] = "Requires Renown 12.",
+				["minReputation"] = { 2503, 12 },	-- Maruuk Centaur Renown 12
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
 			}),
+			q(72767, {	-- Sharing the Bounty
+				["minReputation"] = { 2503, 12 },	-- Maruuk Centaur Renown 12
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
+				},
+			}),
 				-- RENOWN 13 --
 			q(71073, {	-- Mantle of Friendship
-				["description"] = "Requires Renown 13.",
+				["minReputation"] = { 2503, 13 },	-- Maruuk Centaur Renown 13
 				["provider"] = { "n", 195547 },	-- Farrier Rondare
 				["coord"] = { 62.5, 42.5, OHNAHRAN_PLAINS },
 				["g"] = {
@@ -136,19 +220,28 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(200494),	-- Shikaar Scout's Shoulderpads
 					i(200493),	-- Ohn'ir Daylight Shoulderpads
 					i(200502),	-- Ohn'ir Midnight Shoulderpads
+					i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned all items
 				},
 			}),
 				-- RENOWN 14 --
 			q(71074, {	-- Befriending Wings and Wind
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2503, 14 },	-- Maruuk Centaur Renown 14
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(194885),	-- Ohuna Perch (TOY!)
 				},
 			}),
+			q(72131, {	-- Overstocking
+				["minReputation"] = { 2503, 14 },	-- Maruuk Centaur Renown 14
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(189765),	-- Maruuk Centaur Supply Satchel
+				},
+			}),
 			q(72296, {	-- A Gift of Knowledge
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2503, 14 },	-- Maruuk Centaur Renown 14
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["requireSkill"] = LEATHERWORKING,
@@ -157,7 +250,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72310, {	-- A Gift of Knowledge
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2503, 14 },	-- Maruuk Centaur Renown 14
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["requireSkill"] = SKINNING,
@@ -166,7 +259,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72311, {	-- A Gift of Knowledge
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2503, 14 },	-- Maruuk Centaur Renown 14
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["requireSkill"] = ALCHEMY,
@@ -175,7 +268,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72312, {	-- A Gift of Knowledge
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2503, 14 },	-- Maruuk Centaur Renown 14
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["requireSkill"] = BLACKSMITHING,
@@ -184,7 +277,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72313, {	-- A Gift of Knowledge
-				["description"] = "Requires Renown 14.",
+				["minReputation"] = { 2503, 14 },	-- Maruuk Centaur Renown 14
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["requireSkill"] = HERBALISM,
@@ -194,45 +287,75 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 15 --
 			q(71075, {	-- Understanding Their Grace
-				["description"] = "Requires Renown 15.",
+				["minReputation"] = { 2503, 15 },	-- Maruuk Centaur Renown 15
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(197618),	-- Windborne Velocidrake: Long Snout (DM!)
 					i(197623),	-- Windborne Velocidrake: Spiked Tail (DM!)
+					i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned both Drakewatcher Manuscripts
 				},
 			}),
 				-- RENOWN 16 --
 			q(71030, {	-- Hunting Tactics: Shikaar Mentorship
-				["description"] = "Requires Renown 16.",
+				["minReputation"] = { 2503, 16 },	-- Maruuk Centaur Renown 16
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
 			}),
+			q(72768, {	-- Our Great Bounty
+				["minReputation"] = { 2503, 16 },	-- Maruuk Centaur Renown 16
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198864),	-- Large Maruuk Centaur Supply Satchel
+				},
+			}),
 				-- RENOWN 17	--
 			q(71079, {	-- Getting to the Point
-				["description"] = "Requires Renown 17.",
+				["minReputation"] = { 2503, 17 },	-- Maruuk Centaur Renown 17
 				["provider"] = { "n", 195529 },	-- Weaponmaster Aloom
 				["coord"] = { 62.4, 42.3, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(201159),	-- Aloom's Token
+				},
+			}),
+				-- RENOWN 18 --
+			q(72770, {	-- Our Great Bounty
+				["minReputation"] = { 2503, 18 },	-- Maruuk Centaur Renown 18
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198864),	-- Large Maruuk Centaur Supply Satchel
+				},
 			}),
 				-- RENOWN 19 --
-			q(71083, {	-- Understanding Their Grace
-				["description"] = "Requires Renown 19.",
+			q(71083, {	-- An Expected Unexpected Gift
+				["minReputation"] = { 2503, 19 },	-- Maruuk Centaur Renown 19
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(197011),	-- Cliffside Wylderdrake: Green Scales (DM!)
 					i(197143),	-- Highland Drake: Green Scales (DM!)
+					i(197389),	-- Renewed Proto-Drake: Green Scales (DM!)
 				},
 			}),
 				-- RENOWN 20 --
 			q(71031, {	-- Hunting Tactics: Proof of Prowess
-				["description"] = "Requires Renown 20.",
+				["minReputation"] = { 2503, 20 },	-- Maruuk Centaur Renown 20
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
 			}),
+			q(72771, {	-- Our Great Bounty
+				["minReputation"] = { 2503, 20 },	-- Maruuk Centaur Renown 20
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198864),	-- Large Maruuk Centaur Supply Satchel
+				},
+			}),
 				-- RENOWN 21	--
 			q(71085, {	-- Representation Matters
-				["description"] = "Requires Renown 21.",
+				["minReputation"] = { 2503, 21 },	-- Maruuk Centaur Renown 21
 				["provider"] = { "n", 195547 },	-- Farrier Rondare
 				["coord"] = { 62.5, 42.5, OHNAHRAN_PLAINS },
 				["g"] = {
@@ -244,13 +367,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 22 --
 			q(71032, {	-- Hunting Tactics: Apex Hunter
-				["description"] = "Requires Renown 22.",
+				["minReputation"] = { 2503, 22 },	-- Maruuk Centaur Renown 22
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
 			}),
 				-- RENOWN 23 --
 			q(71089, {	-- Get on the Horn
-				["description"] = "Requires Renown 23.",
+				["minReputation"] = { 2503, 23 },	-- Maruuk Centaur Renown 23
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["g"] = {
@@ -259,12 +382,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 24 --
 			q(71090, {	-- From the Heart, For the Heart
-				["description"] = "Requires Renown 24.",
+				["minReputation"] = { 2503, 24 },	-- Maruuk Centaur Renown 24
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 			}),
 			q(72297, {	-- A Gift of Secrets
-				["description"] = "Requires Renown 24.",
+				["minReputation"] = { 2503, 24 },	-- Maruuk Centaur Renown 24
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["requireSkill"] = LEATHERWORKING,
@@ -273,7 +396,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72314, {	-- A Gift of Secrets
-				["description"] = "Requires Renown 24.",
+				["minReputation"] = { 2503, 24 },	-- Maruuk Centaur Renown 24
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["requireSkill"] = ALCHEMY,
@@ -282,7 +405,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72315, {	-- A Gift of Secrets
-				["description"] = "Requires Renown 24.",
+				["minReputation"] = { 2503, 24 },	-- Maruuk Centaur Renown 24
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["requireSkill"] = BLACKSMITHING,
@@ -291,7 +414,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72316, {	-- A Gift of Secrets
-				["description"] = "Requires Renown 24.",
+				["minReputation"] = { 2503, 24 },	-- Maruuk Centaur Renown 24
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["requireSkill"] = HERBALISM,
@@ -300,7 +423,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			q(72317, {	-- A Gift of Secrets
-				["description"] = "Requires Renown 24.",
+				["minReputation"] = { 2503, 24 },	-- Maruuk Centaur Renown 24
 				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 				["requireSkill"] = SKINNING,
@@ -310,12 +433,22 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 				-- RENOWN 25 --
 			q(71091, {	-- The Highest Honor
-				["description"] = "Requires Renown 25.",
+				["minReputation"] = { 2503, 25 },	-- Maruuk Centaur Renown 25
 				["provider"] = { "n", 181198 },	-- Khanam Matra Sarest
 				["coord"] = { 60.0, 37.5, OHNAHRAN_PLAINS },
 				["g"] = {
 					title(473),	-- Khansguard
 					i(197921),	-- Primal Infusion
+				},
+			}),
+				-- Paragon --
+			q(65606, {	-- Renowned with the Maruuk
+				["minReputation"] = { 2503, 25 },	-- Maruuk Centaur Renown 25
+				["provider"] = { "n", 185179 },	-- Agari Dotur
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["isRepeatable"] = true,
+				["g"] = {
+					i(199474),	-- Overflowing Maruuk Centaur Supply Satchel
 				},
 			}),
 		}),

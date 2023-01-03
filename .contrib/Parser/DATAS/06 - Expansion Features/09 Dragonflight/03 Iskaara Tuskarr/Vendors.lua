@@ -211,7 +211,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 						-- RENOWN 23 --
-					i(199897),	-- Blue-Covered Beanbag (TOY!) [Todo cost??]
+					i(199897, {	-- Blue-Covered Beanbag (TOY!)
+						["cost"] = {
+							{ "c", DRAGON_SUPPLIES, 100 },
+							{ "i", PEBBLED_ROCK_SALTS, 10 },
+							{ "i", RESILIENT_LEATHER, 10 },
+						},
+					}),
 						-- RENOWN 28 --
 					i(199543, {	-- Azure Depths Shoulderguards
 						["cost"] = {
@@ -539,7 +545,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							{ "c", DRAGON_SUPPLIES, 500 },
 						},
 					}),
-						-- Renown 23 --
+						-- RENOWN 23 --
 					i(194311, {	-- Pattern: Tuskarr Bean Bag (RECIPE!)
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
@@ -551,7 +557,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							{ "c", DRAGON_SUPPLIES, 200 },
 						},
 					}),
-						-- Renown 29 --
+						-- RENOWN 29 --
 					i(197981, {	-- Pattern: Finished Prototype Regal Barding (RECIPE!)
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 750 },
@@ -619,7 +625,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							{ "i", MASTODON_TUSK, 2 },
 						},
 					}),
-
+						-- RENOWN 30 --
 					i(201426, {	-- Brown War Ottuk (MOUNT!)
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 1000 },

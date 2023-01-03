@@ -36,11 +36,13 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				classicAch(960, {	-- The Violet Eye
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
+					["description"] = "Raise your reputation with The Violet Eye to Exalted.",
+					-- #endif
+					-- #if ANYCLASSIC
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 967); end]],
-					["description"] = "Raise your reputation with The Violet Eye to Exalted.",
 					-- #endif
 				}),
 			}),
@@ -1009,7 +1011,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				["creatureID"] = 15690,
 				["groups"] = {
 					classicAch(690, {	-- Karazhan
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuest"] = 9844,	-- A Demonic Presence
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif

@@ -89,6 +89,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(64650, {	-- Hyena Soul
 				["description"] = "Drops from M+.",
 				["provider"] = { "i", 182173 },	-- Hyena Soul
+				["timeline"] = { ADDED_SL_REL, REMOVED_DF_REL },
 			}),
 			q(65023, {	-- Jormungar Soul
 				["provider"] = { "i", 187903 },	-- Jormungar Soul

@@ -333,6 +333,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			ach(16405),	-- Sojourner of Ohn'ahran Plains
+			pvp(ach(16595)),	-- Tour of Duty: Ohn'ahran Plains
 			ach(16299),	-- Treasures of the Ohn'ahran Plains
 			ach(16424, {	-- Who's a Good Bakar?
 				crit(1, {	-- Alli

@@ -127,7 +127,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						["sym"] = {
 							{ "select", "tierID", SL_TIER },	-- SL Tier
 							{ "pop" },							-- pop the Tier header
-							{ "select", "headerID" , LEGENDARIES },	-- Legendary header
+							{ "select", "headerID", LEGENDARIES },	-- Legendary header
 							{ "pop" },							-- pop header
 							{ "extract", "runeforgePowerID" },	-- extract all Legendaries into a direct list
 							{ "exclude", "itemID",

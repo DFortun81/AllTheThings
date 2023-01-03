@@ -330,7 +330,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 				["creatureID"] = 11583,	-- Nefarian
 				["groups"] = {
 					classicAch(685, {	-- Blackwing Lair
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							7781,	-- The Lord of Blackrock
 							7783,	-- The Lord of Blackrock

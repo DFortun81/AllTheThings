@@ -155,7 +155,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["creatureID"] = 18373,
 					["groups"] = {
 						classicAch(666, {	-- Auchenai Crypts
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								10167,	-- Auchindoun...
 								10164,	-- Everything Will Be Alright

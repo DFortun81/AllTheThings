@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_REWARDS, {
 			currency(1979),	-- Cyphers of the First Ones
@@ -30,43 +30,43 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			-- Weapons
 			i(192428, {	-- Ballad Shield
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			i(192450, {	-- Choral Staff
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			i(192422, {	-- Harmonium Lantern
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			i(192451, {	-- Lamenting Blade
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			i(192425, {	-- Legato Hammer
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			i(192430, {	-- Meno Sword
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			i(192449, {	-- Overture's Shiv
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			i(192424, {	-- Rhapsodic Cleaver
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			i(192429, {	-- Scepter of Requiem
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			i(192427, {	-- Senza Spellblade
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			i(192423, {	-- Serenading Arbalest
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			i(192440, {	-- Tempo Smasher
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			i(192426, {	-- Waltzing Glaive
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			--
 			i(190605),	-- Impossibly Ancient Cloak

@@ -178,6 +178,9 @@ root("Zones", {
 						["OnTooltip"] = OnTooltipForNetherwing,
 					})),
 				}),
+				prof(FISHING, {
+					i(34867),	-- Monstrous Felblood Snapper
+				}),
 				n(FLIGHT_PATHS, {
 					fp(140, {	-- Altar of Sha'tar, Shadowmoon Valley
 						["cr"] = 19581,	-- Maddix <Flight Master>
@@ -199,9 +202,6 @@ root("Zones", {
 						["coord"] = { 37.6, 55.4, SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 					}),
-				}),
-				prof(FISHING, {
-					i(34867),	-- Monstrous Felblood Snapper
 				}),
 				prof(HERBALISM, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32506)),	-- Netherwing Egg
@@ -1310,7 +1310,7 @@ root("Zones", {
 					}),
 					q(10775, {	-- Tabards of the Illidari (A)
 						["qg"] = 22059,	-- Wildhammer Gryphon Rider
-						["sourceQuest"] = 10774 ,	-- Blood Elf + Giant = ???
+						["sourceQuest"] = 10774,	-- Blood Elf + Giant = ???
 						["coord"] = { 52.4, 68.4, SHADOWMOON_VALLEY },
 						["description"] = "Use your Wildhammer Flare Gun to summon the questgiver anywhere on the Path of Conquest.",
 						["races"] = ALLIANCE_ONLY,
@@ -1658,7 +1658,7 @@ root("Zones", {
 						["groups"] = {
 							objective(1, {	-- 	The Path of Conquest Discovered
 								["provider"] = { "i", 31310 },	-- Wildhammer Flare Gun (Provided)
-								["coord"] = { 51 , 62, SHADOWMOON_VALLEY },
+								["coord"] = { 51, 62, SHADOWMOON_VALLEY },
 							}),
 						},
 					}),

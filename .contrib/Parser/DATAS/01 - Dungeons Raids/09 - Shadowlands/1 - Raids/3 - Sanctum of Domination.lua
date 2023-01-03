@@ -1,8 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
+root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	inst(1193, {	-- Sanctum of Domination
 		["isRaid"] = true,
 		["coord"] = { 69.8, 31.8, THE_MAW },
@@ -13,49 +12,273 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 			2000,	-- The Torment Chambers
 			2001,	-- Crown of Gorgoa
 			2002,	-- Pinnacle of Domination
-			2003,	-- ??
+			2003,	-- Sanctum of Domination
 			2004,	-- The Crucible
 		},
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(15122, {	-- The Jailer's Vanguard
+					crit(1, { -- The Tarragrue
+						["_encounter"] = { 2435, LFR_R },
+					}),
+					crit(2, { -- The Eye of the Jailer
+						["_encounter"] = { 2442, LFR_R },
+					}),
+					crit(3, { -- The Nine
+						["_encounter"] = { 2439, LFR_R },
+					}),
+				}),
+				ach(15123, {	-- The Dark Bastille
+					crit(1, { -- Remnant of Ner'zhul
+						["_encounter"] = { 2444, LFR_R },
+					}),
+					crit(2, { -- Soulrender Dormazain
+						["_encounter"] = { 2445, LFR_R },
+					}),
+					crit(3, { -- Painsmith Raznal
+						["_encounter"] = { 2443, LFR_R },
+					}),
+				}),
+				ach(15124, {	-- Shackles of Fate
+					crit(1, { -- Guardian of the First Ones
+						["_encounter"] = { 2446, LFR_R },
+					}),
+					crit(2, { -- Fatescribe Roh-Kalo
+						["_encounter"] = { 2447, LFR_R },
+					}),
+					crit(3, { -- Kel'Thuzad
+						["_encounter"] = { 2440, LFR_R },
+					}),
+				}),
+				ach(15125, {	-- The Reckoning
+					crit(1, {-- Sylvanas Windrunner
+						["_encounter"] = { 2441, LFR_R },
+					}),
+				}),
+				ach(15126, {	-- Sanctum of Domination
+					crit(1, { -- The Tarragrue
+						["_encounter"] = { 2435, LFR_R },
+					}),
+					crit(2, { -- The Eye of the Jailer
+						["_encounter"] = { 2442, LFR_R },
+					}),
+					crit(3, { -- The Nine
+						["_encounter"] = { 2439, LFR_R },
+					}),
+					crit(4, { -- Remnant of Ner'zhul
+						["_encounter"] = { 2444, LFR_R },
+					}),
+					crit(5, { -- Soulrender Dormazain
+						["_encounter"] = { 2445, LFR_R },
+					}),
+					crit(6, { -- Painsmith Raznal
+						["_encounter"] = { 2443, LFR_R },
+					}),
+					crit(7, { -- Guardian of the First Ones
+						["_encounter"] = { 2446, LFR_R },
+					}),
+					crit(8, { -- Fatescribe Roh-Kalo
+						["_encounter"] = { 2447, LFR_R },
+					}),
+					crit(9, { -- Kel'Thuzad
+						["_encounter"] = { 2440, LFR_R },
+					}),
+					crit(10, {-- Sylvanas Windrunner
+						["_encounter"] = { 2441, LFR_R },
+					}),
+				}),
+				ach(15127, {	-- Heroic: Sanctum of Domination
+					crit(1, { -- The Tarragrue
+						["_encounter"] = { 2435, HEROIC_R },
+					}),
+					crit(2, { -- The Eye of the Jailer
+						["_encounter"] = { 2442, HEROIC_R },
+					}),
+					crit(3, { -- The Nine
+						["_encounter"] = { 2439, HEROIC_R },
+					}),
+					crit(4, { -- Remnant of Ner'zhul
+						["_encounter"] = { 2444, HEROIC_R },
+					}),
+					crit(5, { -- Soulrender Dormazain
+						["_encounter"] = { 2445, HEROIC_R },
+					}),
+					crit(6, { -- Painsmith Raznal
+						["_encounter"] = { 2443, HEROIC_R },
+					}),
+					crit(7, { -- Guardian of the First Ones
+						["_encounter"] = { 2446, HEROIC_R },
+					}),
+					crit(8, { -- Fatescribe Roh-Kalo
+						["_encounter"] = { 2447, HEROIC_R },
+					}),
+					crit(9, { -- Kel'Thuzad
+						["_encounter"] = { 2440, HEROIC_R },
+					}),
+					crit(10, {-- Sylvanas Windrunner
+						["_encounter"] = { 2441, HEROIC_R },
+					}),
+				}),
+				ach(15128, {	-- Mythic: Sanctum of Domination
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						15112,	-- Mythic: The Tarragrue
+						15113,	-- Mythic: The Eye of the Jailer
+						15114,	-- Mythic: The Nine
+						15115,	-- Mythic: Remnant of Ner'zhul
+						15116,	-- Mythic: Soulrender Dormazain
+						15117,	-- Mythic: Painsmith Raznal
+						15118,	-- Mythic: Guardian of the First Ones
+						15119,	-- Mythic: Fatescribe Roh-Kalo
+						15120,	-- Mythic: Kel'Thuzad
+						15121,	-- Mythic: Sylvanas Windrunner
+					}},
+				}),
+				ach(15130, {	-- Glory of the Dominant Raider
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						14998,	-- Name A Better Duo, I'll Wait
+						15065,	-- Eye Wish You Were Here
+						15003,	-- To the Nines
+						15058,	-- I Used to Bullseye Deeprun Rats Back Home
+						15105,	-- Tormentor's Tango
+						15131,	-- Whack-A-Soul
+						15132,	-- Knowledge is Power
+						15040,	-- Flawless Fate
+						15108,	-- Together Forever
+						15133,	-- This World is a Prism
+					}},
+					["g"] = {
+						i(186653),	-- Hand of Hrestimorak (MOUNT!)
+					},
+				}),
+				ach(15191, {	-- Rae'shalare, Death's Whisper
+					["provider"] = { "i", 186414 },
+					["classes"] = { HUNTER },
+				}),
+				ach(15110),		-- Dominating the Catwalk
+				-- Fated
+				ach(15667, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Fate of Domination
+					crit(1, { -- The Tarragrue
+						["_encounter"] = { 2435, LFR_R },
+					}),
+					crit(2, { -- The Eye of the Jailer
+						["_encounter"] = { 2442, LFR_R },
+					}),
+					crit(3, { -- The Nine
+						["_encounter"] = { 2439, LFR_R },
+					}),
+					crit(4, { -- Remnant of Ner'zhul
+						["_encounter"] = { 2444, LFR_R },
+					}),
+					crit(5, { -- Soulrender Dormazain
+						["_encounter"] = { 2445, LFR_R },
+					}),
+					crit(6, { -- Painsmith Raznal
+						["_encounter"] = { 2443, LFR_R },
+					}),
+					crit(7, { -- Guardian of the First Ones
+						["_encounter"] = { 2446, LFR_R },
+					}),
+					crit(8, { -- Fatescribe Roh-Kalo
+						["_encounter"] = { 2447, LFR_R },
+					}),
+					crit(9, { -- Kel'Thuzad
+						["_encounter"] = { 2440, LFR_R },
+					}),
+					crit(10, {-- Sylvanas Windrunner
+						["_encounter"] = { 2441, LFR_R },
+					}),
+				})),
+				ach(15668, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Heroic: Fate of Domination
+					crit(1, { -- The Tarragrue
+						["_encounter"] = { 2435, HEROIC_R },
+					}),
+					crit(2, { -- The Eye of the Jailer
+						["_encounter"] = { 2442, HEROIC_R },
+					}),
+					crit(3, { -- The Nine
+						["_encounter"] = { 2439, HEROIC_R },
+					}),
+					crit(4, { -- Remnant of Ner'zhul
+						["_encounter"] = { 2444, HEROIC_R },
+					}),
+					crit(5, { -- Soulrender Dormazain
+						["_encounter"] = { 2445, HEROIC_R },
+					}),
+					crit(6, { -- Painsmith Raznal
+						["_encounter"] = { 2443, HEROIC_R },
+					}),
+					crit(7, { -- Guardian of the First Ones
+						["_encounter"] = { 2446, HEROIC_R },
+					}),
+					crit(8, { -- Fatescribe Roh-Kalo
+						["_encounter"] = { 2447, HEROIC_R },
+					}),
+					crit(9, { -- Kel'Thuzad
+						["_encounter"] = { 2440, HEROIC_R },
+					}),
+					crit(10, {-- Sylvanas Windrunner
+						["_encounter"] = { 2441, HEROIC_R },
+					}),
+				})),
+				ach(15669, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Mythic: Fate of Domination
+					crit(1, { -- The Tarragrue
+						["_encounter"] = { 2435, MYTHIC_R },
+					}),
+					crit(2, { -- The Eye of the Jailer
+						["_encounter"] = { 2442, MYTHIC_R },
+					}),
+					crit(3, { -- The Nine
+						["_encounter"] = { 2439, MYTHIC_R },
+					}),
+					crit(4, { -- Remnant of Ner'zhul
+						["_encounter"] = { 2444, MYTHIC_R },
+					}),
+					crit(5, { -- Soulrender Dormazain
+						["_encounter"] = { 2445, MYTHIC_R },
+					}),
+					crit(6, { -- Painsmith Raznal
+						["_encounter"] = { 2443, MYTHIC_R },
+					}),
+					crit(7, { -- Guardian of the First Ones
+						["_encounter"] = { 2446, MYTHIC_R },
+					}),
+					crit(8, { -- Fatescribe Roh-Kalo
+						["_encounter"] = { 2447, MYTHIC_R },
+					}),
+					crit(9, { -- Kel'Thuzad
+						["_encounter"] = { 2440, MYTHIC_R },
+					}),
+					crit(10, {-- Sylvanas Windrunner
+						["_encounter"] = { 2441, MYTHIC_R },
+					}),
+				})),
+					-- Guild Achievements
+				ach(15182),		-- Sanctum of Domination Guild Run
+				ach(15183),		-- Heroic: Sanctum of Domination Guild Run
+				ach(15184),		-- Mythic: Sylvanas Windrunner Guild Run
+			}),
 			n(COMMON_BOSS_DROPS, {
-				i(186671, {	-- Vantus Rune Technique: Sanctum of Domination (RECIPE!)
-					["crs"] = {
-						175611,	-- The Tarragrue
-						175725,	-- Eye of the Jailer
-						176531,	-- Deathseeker Eye
-						177094,	-- Signe
-						177095,	-- Kyra
-						175726,	-- Skyja
-						177100,	-- Aradne
-						177099,	-- Daschla
-						177096,	-- Agatha
-						177101,	-- Bryjna
-						177097,	-- Annhylde
-						177098,	-- Arthura
-						175729,	-- Remnant of Ner'zhul
-						175727,	-- Soulrender Dormazain
-						175731,	-- Guardian of the First Ones
-					},
-				}),
-				i(186599, {	-- Stygian Ember
-					["crs"] = {
-						175611,	-- The Tarragrue
-						175725,	-- Eye of the Jailer
-						176531,	-- Deathseeker Eye
-						177094,	-- Signe
-						177095,	-- Kyra
-						175726,	-- Skyja
-						177100,	-- Aradne
-						177099,	-- Daschla
-						177096,	-- Agatha
-						177101,	-- Bryjna
-						177097,	-- Annhylde
-						177098,	-- Arthura
-						175729,	-- Remnant of Ner'zhul
-						175727,	-- Soulrender Dormazain
-						175731,	-- Guardian of the First Ones
-					},
-				}),
+				["crs"] = {
+					175611,	-- The Tarragrue
+					175725,	-- Eye of the Jailer
+					176531,	-- Deathseeker Eye
+					177094,	-- The Nine — Signe
+					177095,	-- The Nine — Kyra
+					175726,	-- The Nine — Skyja
+					175729,	-- Remnant of Ner'zhul
+					175727,	-- Soulrender Dormazain
+					176523,	-- Painsmith Raznal
+					175731,	-- Guardian of the First Ones
+					175730,	-- Fatescribe Roh-Kalo
+					175559,	-- Kel'Thuzad
+					175732,	-- Sylvanas Windrunner
+				},
+				["g"] = {
+					i(186671),	-- Vantus Rune Technique: Sanctum of Domination (RECIPE!)
+					i(186599),	-- Stygian Ember
+				},
 			}),
 			n(CONDUITS, {
 				e(2435, {	-- The Tarragrue
@@ -237,39 +460,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 					["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
 				}),
 			}),
-			d(17, {	-- LFR
-				ach(15126, {	-- Sanctum of Domination
-					crit(1, { -- The Tarragrue
-						["_encounter"] = { 2435, 17 },
-					}),
-					crit(2, { -- The Eye of the Jailer
-						["_encounter"] = { 2442, 17 },
-					}),
-					crit(3, { -- The Nine
-						["_encounter"] = { 2439, 17 },
-					}),
-					crit(4, { -- Remnant of Ner'zhul
-						["_encounter"] = { 2444, 17 },
-					}),
-					crit(5, { -- Soulrender Dormazain
-						["_encounter"] = { 2445, 17 },
-					}),
-					crit(6, { -- Painsmith Raznal
-						["_encounter"] = { 2443, 17 },
-					}),
-					crit(7, { -- Guardian of the First Ones
-						["_encounter"] = { 2446, 17 },
-					}),
-					crit(8, { -- Fatescribe Roh-Kalo
-						["_encounter"] = { 2447, 17 },
-					}),
-					crit(9, { -- Kel'Thuzad
-						["_encounter"] = { 2440, 17 },
-					}),
-					crit(10, {-- Sylvanas Windrunner
-						["_encounter"] = { 2441, 17 },
-					}),
-				}),
+			d(LFR_R, {
 				n(ZONE_DROPS, {
 					i(186371),	-- Ancient Brokensoul Bands
 					i(186362),	-- Bindings of the Subjugated
@@ -280,233 +471,206 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 					i(186358),	-- Soulcaster's Woven Grips
 					i(186373),	-- Towering Shadowghast Greatboots
 				}),
-				ach(15122, {	-- The Jailer's Vanguard
-					["collectible"] = false,
-					["g"] = {
-						e(2435, {	-- The Tarragrue
-							["crs"] = { 175611 },	-- The Tarragrue
-							["g"] = {
-								i(186381),	-- Elethium-Bladed Glaive
-								i(186415),	-- Moriaz's Spare Targe
-								i(186291),	-- Periapt of Pristine Preservation
-								i(186298),	-- Smuggler's Plundered Pauldrons
-								i(186303),	-- Colossus Slayer's Hauberk
-								i(186297),	-- Clasps of the Unfortunate Troubadour
-								i(186302),	-- Mistwrap Manacles
-								i(186311),	-- Cavalier Oathbreaker's Grasps
-								i(186285),	-- Sorcerer's Headlong Legwraps
-								i(186318),	-- Champion's Gruesome Greaves
-								i(186281),	-- Phantasma-Forged Striders
-								i(186422),	-- Tome of Monstrous Constructions
-							},
-						}),
-						e(2442, {	-- The Eye of the Jailer
-							["crs"] = {
-								175725,	-- Eye of the Jailer
-								176531,	-- Deathseeker Eye
-							},
-							["g"] = {
-								i(186554),	-- Eye of Allseeing (PET!)
-								i(186403),	-- Stygian Lance of Passage
-								i(186383),	-- Gazepiercer
-								i(186418),	-- Guarm's Lost Chew Toy
-								i(186296),	-- Mawsworn Eviscerator's Cuirass
-								i(186316),	-- Airborne Abductor's Vambraces
-								i(186288),	-- Grasps of the Clairvoyant Sage
-								i(186295),	-- Loyal Kvaldir's Handwraps
-								i(186301),	-- Coiled Stygian Grapnel
-								i(186306),	-- Greaves of Extermination
-								i(186423),	-- Titanic Ocular Gland
-							},
-						}),
-						e(2439, {	-- The Nine
-							["crs"] = {
-								-- Main bosses
-								177094,	-- Signe
-								177095,	-- Kyra
-								175726,	-- Skyja
-								-- "adds"
-								177100,	-- Aradne
-								177099,	-- Daschla
-								177096,	-- Agatha
-								177101,	-- Bryjna
-								177097,	-- Annhylde
-								177098,	-- Arthura
-							},
-							["g"] = {
-								i(186656),	-- Sanctum Gloomcharger (MOUNT!)
-								i(186404),	-- Jotungeirr, Destiny's Call
-								i(186385),	-- Signe's Sonorous Scramaseax
-								i(186384),	-- Skyja's Revenant Fury
-								i(186286),	-- Mantle of Arthura's Chosen
-								i(186339),	-- Brynja's Mournful Wristwraps
-								i(186346),	-- Kyra's Unending Protectors
-								i(186313),	-- Agatha's Gothic Greaves
-								i(186307),	-- Aradne's Lancer Legguards
-								i(186299),	-- Daschla's Defiant Treads
-								i(186290),	-- Sworn Oath of the Nine
-								i(186425),	-- Scrawled Word of Recall
-								i(186424),	-- Shard of Annhylde's Aegis
-							},
-						}),
-					},
+				header(HEADERS.Achievement, 15122, {	-- The Jailer's Vanguard
+					e(2435, {	-- The Tarragrue
+						["crs"] = { 175611 },	-- The Tarragrue
+						["g"] = {
+							i(186381),	-- Elethium-Bladed Glaive
+							i(186415),	-- Moriaz's Spare Targe
+							i(186291),	-- Periapt of Pristine Preservation
+							i(186298),	-- Smuggler's Plundered Pauldrons
+							i(186303),	-- Colossus Slayer's Hauberk
+							i(186297),	-- Clasps of the Unfortunate Troubadour
+							i(186302),	-- Mistwrap Manacles
+							i(186311),	-- Cavalier Oathbreaker's Grasps
+							i(186285),	-- Sorcerer's Headlong Legwraps
+							i(186318),	-- Champion's Gruesome Greaves
+							i(186281),	-- Phantasma-Forged Striders
+							i(186422),	-- Tome of Monstrous Constructions
+						},
+					}),
+					e(2442, {	-- The Eye of the Jailer
+						["crs"] = {
+							175725,	-- Eye of the Jailer
+							176531,	-- Deathseeker Eye
+						},
+						["g"] = {
+							i(186554),	-- Eye of Allseeing (PET!)
+							i(186403),	-- Stygian Lance of Passage
+							i(186383),	-- Gazepiercer
+							i(186418),	-- Guarm's Lost Chew Toy
+							i(186296),	-- Mawsworn Eviscerator's Cuirass
+							i(186316),	-- Airborne Abductor's Vambraces
+							i(186288),	-- Grasps of the Clairvoyant Sage
+							i(186295),	-- Loyal Kvaldir's Handwraps
+							i(186301),	-- Coiled Stygian Grapnel
+							i(186306),	-- Greaves of Extermination
+							i(186423),	-- Titanic Ocular Gland
+						},
+					}),
+					e(2439, {	-- The Nine
+						["crs"] = {
+							177094,	-- Signe
+							177095,	-- Kyra
+							175726,	-- Skyja
+						},
+						["g"] = {
+							i(186656),	-- Sanctum Gloomcharger (MOUNT!)
+							i(186404),	-- Jotungeirr, Destiny's Call
+							i(186385),	-- Signe's Sonorous Scramaseax
+							i(186384),	-- Skyja's Revenant Fury
+							i(186286),	-- Mantle of Arthura's Chosen
+							i(186339),	-- Brynja's Mournful Wristwraps
+							i(186346),	-- Kyra's Unending Protectors
+							i(186313),	-- Agatha's Gothic Greaves
+							i(186307),	-- Aradne's Lancer Legguards
+							i(186299),	-- Daschla's Defiant Treads
+							i(186290),	-- Sworn Oath of the Nine
+							i(186425),	-- Scrawled Word of Recall
+							i(186424),	-- Shard of Annhylde's Aegis
+						},
+					}),
 				}),
-				ach(15123, {	-- The Dark Bastille
-					["collectible"] = false,
-					["g"] = {
-						e(2444, {	-- Remnant of Ner'zhul
-							["crs"] = { 175729 },	-- Remnant of Ner'zhul
-							["g"] = {
-								i(186405),	-- Gnarled Staff of the Elder Shaman
-								i(186386),	-- Betrayer's Shadowspike
-								i(186292),	-- Cap of Writhing Malevolence
-								i(186304),	-- Crest of the Fallen
-								i(186315),	-- Dark Tormentor's Gaze
-								i(186287),	-- Hood of Vengeful Possession
-								i(186378),	-- Weathered Talisman of the Shadowmoon
-								i(186312),	-- Cuirass of the Lonely Citadel
-								i(186308),	-- Grasps of Ancestral Whispers
-								i(186428),	-- Shadowed Orb of Torment
-								i(186427),	-- Whispering Shard of Power
-							},
-						}),
-						e(2445, {	-- Soulrender Dormazain
-							["crs"] = { 175727 },	-- Soulrender Dormazain 175728 Garrosh Hellscream
-							["g"] = {
-								i(186558),	-- Irongrasp (PET!)
-								i(186407),	-- Hellscream's Requiem
-								i(186387),	-- Dormazain's Tenderizer
-								i(186411),	-- Soulrent Outrider's Recurve
-								i(186305),	-- Pauldrons of Tyrannical Defiance
-								i(186314),	-- Ruinous Warchief's Shoulderguards
-								i(186289),	-- Cloak of Scarred Honor
-								i(186283),	-- Cruel Overlord's Shackles
-								i(186294),	-- Agonizing Spiked Belt
-								i(186343),	-- Ragebound Leg Irons
-								i(186319),	-- Tormented Shadowcleft Boots
-								i(186337),	-- Trenchant Warmonger Treads
-								i(186429),	-- Decanter of Endless Howling
-							},
-						}),
-						e(2443, {	-- Painsmith Raznal
-							["crs"] = { 176523 },	-- Painsmith Raznal
-							["g"] = {
-								i(186388),	-- Cruciform Veinripper
-								i(186392),	-- Exacting Mindslicer
-								i(186391),	-- Shadowsteel Demoralizer
-								i(186341),	-- Shadowsteel Facecage
-								i(186282),	-- Sacrificer's Sacramental Cassock
-								i(186369),	-- Guillotine Gauntlets
-								i(186333),	-- Hangman's Knotbinders
-								i(186293),	-- Flameclasp-Scorched Legguards
-								i(186323),	-- Leggings of the Screaming Flames
-								i(186375),	-- Miniature Breaking Wheel
-								i(186431),	-- Ebonsoul Vise
-								i(186430),	-- Tormented Rack Fragment
-							},
-						}),
-					},
+				header(HEADERS.Achievement, 15123, {	-- The Dark Bastille
+					e(2444, {	-- Remnant of Ner'zhul
+						["crs"] = { 175729 },	-- Remnant of Ner'zhul
+						["g"] = {
+							i(186405),	-- Gnarled Staff of the Elder Shaman
+							i(186386),	-- Betrayer's Shadowspike
+							i(186292),	-- Cap of Writhing Malevolence
+							i(186304),	-- Crest of the Fallen
+							i(186315),	-- Dark Tormentor's Gaze
+							i(186287),	-- Hood of Vengeful Possession
+							i(186378),	-- Weathered Talisman of the Shadowmoon
+							i(186312),	-- Cuirass of the Lonely Citadel
+							i(186308),	-- Grasps of Ancestral Whispers
+							i(186428),	-- Shadowed Orb of Torment
+							i(186427),	-- Whispering Shard of Power
+						},
+					}),
+					e(2445, {	-- Soulrender Dormazain
+						["crs"] = { 175727 },	-- Soulrender Dormazain
+						["g"] = {
+							i(186558),	-- Irongrasp (PET!)
+							i(186407),	-- Hellscream's Requiem
+							i(186387),	-- Dormazain's Tenderizer
+							i(186411),	-- Soulrent Outrider's Recurve
+							i(186305),	-- Pauldrons of Tyrannical Defiance
+							i(186314),	-- Ruinous Warchief's Shoulderguards
+							i(186289),	-- Cloak of Scarred Honor
+							i(186283),	-- Cruel Overlord's Shackles
+							i(186294),	-- Agonizing Spiked Belt
+							i(186343),	-- Ragebound Leg Irons
+							i(186319),	-- Tormented Shadowcleft Boots
+							i(186337),	-- Trenchant Warmonger Treads
+							i(186429),	-- Decanter of Endless Howling
+						},
+					}),
+					e(2443, {	-- Painsmith Raznal
+						["crs"] = { 176523 },	-- Painsmith Raznal
+						["g"] = {
+							i(186388),	-- Cruciform Veinripper
+							i(186392),	-- Exacting Mindslicer
+							i(186391),	-- Shadowsteel Demoralizer
+							i(186341),	-- Shadowsteel Facecage
+							i(186282),	-- Sacrificer's Sacramental Cassock
+							i(186369),	-- Guillotine Gauntlets
+							i(186333),	-- Hangman's Knotbinders
+							i(186293),	-- Flameclasp-Scorched Legguards
+							i(186323),	-- Leggings of the Screaming Flames
+							i(186375),	-- Miniature Breaking Wheel
+							i(186431),	-- Ebonsoul Vise
+							i(186430),	-- Tormented Rack Fragment
+						},
+					}),
 				}),
-				ach(15124, {	-- Shackles of Fate
-					["collectible"] = false,
-					["g"] = {
-						e(2446, {	-- Guardian of the First Ones
-							["crs"] = { 175731 },	-- Guardian of the First Ones
-							["g"] = {
-								i(186409),	-- Pylon of the Great Purge
-								i(186393),	-- Torch of Eternal Knowledge
-								i(186413),	-- Directional Meltdown Projector
-								i(186416),	-- Infinity's Last Bulwark
-								i(186374),	-- Self-Replicating Tissue
-								i(186347),	-- Ancient Colossus Chassis
-								i(186317),	-- Disintegration-Proof Waistband
-								i(186284),	-- Enigmatic Energy Circuit
-								i(186344),	-- Hyperdense Greaves
-								i(186354),	-- Sandals of Sacred Symmetry
-								i(186363),	-- Unstable Energizer Boots
-								i(186433),	-- Reactive Defense Matrix
-								i(186432),	-- Salvaged Fusion Amplifier
-							},
-						}),
-						e(2447, {	-- Fatescribe Roh-Kalo
-							["crs"] = { 175730 },	-- Fatescribe Roh-Kalo
-							["g"] = {
-								i(186419),	-- Record of Collapsing Realities
-								i(186330),	-- Cowl of Haunting Precognition
-								i(186340),	-- Conjunction-Forged Chainmail
-								i(186320),	-- Diviner's Draped Finery
-								i(186335),	-- Fate-Threaded Bindings
-								i(186345),	-- Demigaunts of Predestination
-								i(186326),	-- Gloves of Forsaken Purpose
-								i(186352),	-- Binding of Dark Destinies
-								i(186348),	-- Fateforged Legplates
-								i(186376),	-- Oscillating Ouroboros
-								i(186435),	-- Carved Ivory Keepsake
-								i(186434),	-- Weave of Warped Fates
-							},
-						}),
-						e(2440, {	-- Kel'Thuzad
-							["crs"] = { 175559 },	-- Kel'Thuzad
-							["g"] = {
-								i(186550),	-- Mawsworn Minion (PET!)
-								i(187542),	-- Jaithys, the Prison Blade
-								i(186410),	-- Jaithys, the Prison Blade
-								i(186406),	-- Maledict Opus
+				header(HEADERS.Achievement, 15124, {	-- Shackles of Fate
+					e(2446, {	-- Guardian of the First Ones
+						["crs"] = { 175731 },	-- Guardian of the First Ones
+						["g"] = {
+							i(186409),	-- Pylon of the Great Purge
+							i(186393),	-- Torch of Eternal Knowledge
+							i(186413),	-- Directional Meltdown Projector
+							i(186416),	-- Infinity's Last Bulwark
+							i(186374),	-- Self-Replicating Tissue
+							i(186347),	-- Ancient Colossus Chassis
+							i(186317),	-- Disintegration-Proof Waistband
+							i(186284),	-- Enigmatic Energy Circuit
+							i(186344),	-- Hyperdense Greaves
+							i(186354),	-- Sandals of Sacred Symmetry
+							i(186363),	-- Unstable Energizer Boots
+							i(186433),	-- Reactive Defense Matrix
+							i(186432),	-- Salvaged Fusion Amplifier
+						},
+					}),
+					e(2447, {	-- Fatescribe Roh-Kalo
+						["crs"] = { 175730 },	-- Fatescribe Roh-Kalo
+						["g"] = {
+							i(186419),	-- Record of Collapsing Realities
+							i(186330),	-- Cowl of Haunting Precognition
+							i(186340),	-- Conjunction-Forged Chainmail
+							i(186320),	-- Diviner's Draped Finery
+							i(186335),	-- Fate-Threaded Bindings
+							i(186345),	-- Demigaunts of Predestination
+							i(186326),	-- Gloves of Forsaken Purpose
+							i(186352),	-- Binding of Dark Destinies
+							i(186348),	-- Fateforged Legplates
+							i(186376),	-- Oscillating Ouroboros
+							i(186435),	-- Carved Ivory Keepsake
+							i(186434),	-- Weave of Warped Fates
+						},
+					}),
+					e(2440, {	-- Kel'Thuzad
+						["crs"] = { 175559 },	-- Kel'Thuzad
+						["g"] = {
+							i(186550),	-- Mawsworn Minion (PET!)
+							i(187542),	-- Jaithys, the Prison Blade
+							i(186410),	-- Jaithys, the Prison Blade
+							i(186406),	-- Maledict Opus
+							i(187056, {	-- The Devouring Cold
 								i(187056, {	-- The Devouring Cold
-									i(187056, {	-- The Devouring Cold
-										["bonusID"] = 7723,	-- Adjusted weapon [LFR]
-									}),
+									["bonusID"] = 7723,	-- Adjusted weapon [LFR]
 								}),
-								i(186350),	-- Valorous Visage of Krexus
-								i(186379),	-- Interplanar Keystone
-								i(186324),	-- Frame of the False Margrave
-								i(186336),	-- Spaulders of the Crooked Confidant
-								i(186365),	-- Bands of the Fallen House
-								i(186351),	-- Vyraz's Parade Cuffs
-								i(186338),	-- Ceremonial Construct Clasp
-								i(186322),	-- Sash of Duplicitous Magics
-								i(186331),	-- Elite Aranakk Breeches
-								i(186421),	-- Forbidden Necromantic Tome
-								i(186437),	-- Relic of the Frozen Wastes
-								i(186436),	-- Resonant Silver Bell
-							},
-						}),
-					},
+							}),
+							i(186350),	-- Valorous Visage of Krexus
+							i(186379),	-- Interplanar Keystone
+							i(186324),	-- Frame of the False Margrave
+							i(186336),	-- Spaulders of the Crooked Confidant
+							i(186365),	-- Bands of the Fallen House
+							i(186351),	-- Vyraz's Parade Cuffs
+							i(186338),	-- Ceremonial Construct Clasp
+							i(186322),	-- Sash of Duplicitous Magics
+							i(186331),	-- Elite Aranakk Breeches
+							i(186421),	-- Forbidden Necromantic Tome
+							i(186437),	-- Relic of the Frozen Wastes
+							i(186436),	-- Resonant Silver Bell
+						},
+					}),
 				}),
-				ach(15125, {	-- The Reckoning
-					["collectible"] = false,
-					["g"] = {
-						e(2441, {	-- Sylvanas Windrunner
-							["crs"] = { 175732 },	-- Sylvanas Windrunner
-							["g"] = {
-								i(186398),	-- Edge of Night
-								i(186417),	-- Guard of the Sundered Defender
-								i(186325),	-- Veil of the Banshee Queen
-								i(186342),	-- Epaulettes of the Master Ranger
-								i(186349),	-- Spires of Broken Hope
-								i(186439),	-- Dark Ranger's Quiver
-								i(186334),	-- Witherheart Studded Breastplate
-								i(186321),	-- Desecrator's Keening Wristwraps
-								i(186332),	-- Windrunner's Baldric
-								i(186353),	-- Greaves of Haunting Ruination
-								i(186377),	-- Tarnished Insignia of Quel'Thalas
-								i(186438),	-- Old Warrior's Soul
-							},
-						}),
-					},
+				header(HEADERS.Achievement, 15125, {	-- The Reckoning
+					e(2441, {	-- Sylvanas Windrunner
+						["crs"] = { 175732 },	-- Sylvanas Windrunner
+						["g"] = {
+							i(186398),	-- Edge of Night
+							i(186417),	-- Guard of the Sundered Defender
+							i(186325),	-- Veil of the Banshee Queen
+							i(186342),	-- Epaulettes of the Master Ranger
+							i(186349),	-- Spires of Broken Hope
+							i(186439),	-- Dark Ranger's Quiver
+							i(186334),	-- Witherheart Studded Breastplate
+							i(186321),	-- Desecrator's Keening Wristwraps
+							i(186332),	-- Windrunner's Baldric
+							i(186353),	-- Greaves of Haunting Ruination
+							i(186377),	-- Tarnished Insignia of Quel'Thalas
+							i(186438),	-- Old Warrior's Soul
+						},
+					}),
 				}),
 			}),
-			d(14, {	-- Normal
-				ach(15191, {	-- Rae'shalare, Death's Whisper
-					["provider"] = { "i", 186414 },
-					["classes"] = { HUNTER },
-				}),
+			d(NORMAL_R, {
 				n(QUESTS, {
 					q(64597, {	-- Sanctum of Domination - Damned If You Don't [N]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
-						-- ["altQuests"] = {
-						--	TODO: add Mythic quest (not listed on WH), add providers for all quests, add altQuests and description (see WoD/Legion raids) if quests are mutually exclusive per character
-						-- },
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -562,17 +726,9 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				}),
 				e(2439, {	-- The Nine
 					["crs"] = {
-						-- Main bosses
 						177094,	-- Signe
 						177095,	-- Kyra
 						175726,	-- Skyja
-						-- "adds"
-						177100,	-- Aradne
-						177099,	-- Daschla
-						177096,	-- Agatha
-						177101,	-- Bryjna
-						177097,	-- Annhylde
-						177098,	-- Arthura
 					},
 					["g"] = {
 						ach(15003),	-- To the Nines
@@ -609,7 +765,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 					},
 				}),
 				e(2445, {	-- Soulrender Dormazain
-					["crs"] = { 175727 },	-- Soulrender Dormazain 175728 Garrosh Hellscream
+					["crs"] = { 175727 },	-- Soulrender Dormazain
 					["g"] = {
 						ach(15105),	-- Tormentor's Tango
 						i(186558),	-- Irongrasp (PET!)
@@ -729,45 +885,10 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 					},
 				}),
 			}),
-			d(15, {	-- Heroic
-				ach(15127, {	-- Heroic: Sanctum of Domination
-					crit(1, { -- The Tarragrue
-						["_encounter"] = { 2435, 16 },
-					}),
-					crit(2, { -- The Eye of the Jailer
-						["_encounter"] = { 2442, 16 },
-					}),
-					crit(3, { -- The Nine
-						["_encounter"] = { 2439, 16 },
-					}),
-					crit(4, { -- Remnant of Ner'zhul
-						["_encounter"] = { 2444, 16 },
-					}),
-					crit(5, { -- Soulrender Dormazain
-						["_encounter"] = { 2445, 16 },
-					}),
-					crit(6, { -- Painsmith Raznal
-						["_encounter"] = { 2443, 16 },
-					}),
-					crit(7, { -- Guardian of the First Ones
-						["_encounter"] = { 2446, 16 },
-					}),
-					crit(8, { -- Fatescribe Roh-Kalo
-						["_encounter"] = { 2447, 16 },
-					}),
-					crit(9, { -- Kel'Thuzad
-						["_encounter"] = { 2440, 16 },
-					}),
-					crit(10, {-- Sylvanas Windrunner
-						["_encounter"] = { 2441, 16 },
-					}),
-				}),
+			d(HEROIC_R, {
 				n(QUESTS, {
 					q(64598, {	-- Sanctum of Domination - Damned If You Don't [H]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
-						-- ["altQuests"] = {
-						--	TODO: add Mythic quest (not listed on WH), add altQuests and description (see WoD/Legion raids) if quests are mutually exclusive per character
-						-- },
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -783,7 +904,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2435, {	-- The Tarragrue
 					["crs"] = { 175611 },	-- The Tarragrue
 					["g"] = {
-						ach(14998),	-- Name A Better Duo, I'll Wait
 						i(186381),	-- Elethium-Bladed Glaive
 						i(186415),	-- Moriaz's Spare Targe
 						i(186291),	-- Periapt of Pristine Preservation
@@ -804,10 +924,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						176531,	-- Deathseeker Eye
 					},
 					["g"] = {
-						ach(15065, {	-- Eye Wish You Were Here
-							crit(1),	-- All players have Photoflash!
-							crit(2),	-- Eye of the Jailer has Photoflash!
-						}),
 						i(186554),	-- Eye of Allseeing (PET!)
 						i(186403),	-- Stygian Lance of Passage
 						i(186383),	-- Gazepiercer
@@ -823,20 +939,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				}),
 				e(2439, {	-- The Nine
 					["crs"] = {
-						-- Main bosses
 						177094,	-- Signe
 						177095,	-- Kyra
 						175726,	-- Skyja
-						-- "adds"
-						177100,	-- Aradne
-						177099,	-- Daschla
-						177096,	-- Agatha
-						177101,	-- Bryjna
-						177097,	-- Annhylde
-						177098,	-- Arthura
 					},
 					["g"] = {
-						ach(15003),	-- To the Nines
 						i(186656),	-- Sanctum Gloomcharger (MOUNT!)
 						i(186404),	-- Jotungeirr, Destiny's Call
 						i(186385),	-- Signe's Sonorous Scramaseax
@@ -855,7 +962,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2444, {	-- Remnant of Ner'zhul
 					["crs"] = { 175729 },	-- Remnant of Ner'zhul
 					["g"] = {
-						ach(15058),	-- I Used to Bullseye Deeprun Rats Back Home
 						i(186405),	-- Gnarled Staff of the Elder Shaman
 						i(186386),	-- Betrayer's Shadowspike
 						i(186292),	-- Cap of Writhing Malevolence
@@ -870,9 +976,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 					},
 				}),
 				e(2445, {	-- Soulrender Dormazain
-					["crs"] = { 175727 },	-- Soulrender Dormazain 175728 Garrosh Hellscream
+					["crs"] = { 175727 },	-- Soulrender Dormazain
 					["g"] = {
-						ach(15105),	-- Tormentor's Tango
 						i(186558),	-- Irongrasp (PET!)
 						i(186407),	-- Hellscream's Requiem
 						i(186387),	-- Dormazain's Tenderizer
@@ -891,7 +996,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2443, {	-- Painsmith Raznal
 					["crs"] = { 176523 },	-- Painsmith Raznal
 					["g"] = {
-						ach(15131),	-- Whack-A-Soul
 						i(186388),	-- Cruciform Veinripper
 						i(186392),	-- Exacting Mindslicer
 						i(186391),	-- Shadowsteel Demoralizer
@@ -909,7 +1013,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2446, {	-- Guardian of the First Ones
 					["crs"] = { 175731 },	-- Guardian of the First Ones
 					["g"] = {
-						ach(15132),	-- Knowledge is Power
 						i(186409),	-- Pylon of the Great Purge
 						i(186393),	-- Torch of Eternal Knowledge
 						i(186413),	-- Directional Meltdown Projector
@@ -928,7 +1031,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2447, {	-- Fatescribe Roh-Kalo
 					["crs"] = { 175730 },	-- Fatescribe Roh-Kalo
 					["g"] = {
-						ach(15040),	-- Flawless Fate
 						i(186419),	-- Record of Collapsing Realities
 						i(186330),	-- Cowl of Haunting Precognition
 						i(186340),	-- Conjunction-Forged Chainmail
@@ -946,7 +1048,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2440, {	-- Kel'Thuzad
 					["crs"] = { 175559 },	-- Kel'Thuzad
 					["g"] = {
-						ach(15108),	-- Together Forever
 						i(186550),	-- Mawsworn Minion (PET!)
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410),	-- Jaithys, the Prison Blade
@@ -973,10 +1074,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				e(2441, {	-- Sylvanas Windrunner
 					["crs"] = { 175732 },	-- Sylvanas Windrunner
 					["g"] = {
-						ach(15134, {	-- Ahead of the Curve: Sylvanas Windrunner
-							["timeline"] = { "added 9.1.0", "removed 9.2.0" },
-						}),
-						ach(15133),	-- This World is a Prism
+						ach(15134, {["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 }}),	-- Ahead of the Curve: Sylvanas Windrunner
 						i(186398),	-- Edge of Night
 						i(186414),	-- Rae'shalare, Death's Whisper
 						i(186417),	-- Guard of the Sundered Defender
@@ -991,28 +1089,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						i(186377),	-- Tarnished Insignia of Quel'Thalas
 						i(186438),	-- Old Warrior's Soul
 						i(187592),	-- Wraithwisp Sinew (Upgrade Legendary)
-						i(182177),	-- Owlcat Soul (NF Soulshape)
+						i(182177),	-- Owlcat Soul (SS!)
 					},
 				}),
 			}),
-			d(16, {	-- Mythic
-				ach(15128, {	-- Mythic: Sanctum of Domination
-					-- Meta Achievement
-					["sym"] = {
-						{"meta_achievement",
-							15112,	-- Mythic: The Tarragrue
-							15113,	-- Mythic: The Eye of the Jailer
-							15114,	-- Mythic: The Nine
-							15116,	-- Mythic: Soulrender Dormazain
-							15115,	-- Mythic: Remnant of Ner'zhul
-							15117,	-- Mythic: Painsmith Raznal
-							15118,	-- Mythic: Guardian of the First Ones
-							15119,	-- Mythic: Fatescribe Roh-Kalo
-							15120,	-- Mythic: Kel'Thuzad
-							15121,	-- Mythic: Sylvanas Windrunner
-						},
-					},
-				}),
+			d(MYTHIC_R, {
 				n(QUESTS, {
 					q(64599, {	-- Sanctum of Domination - Damned If You Don't [M]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
@@ -1033,7 +1114,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 					["crs"] = { 175611 },	-- The Tarragrue
 					["g"] = {
 						ach(15112),	-- Mythic: The Tarragrue
-						ach(14998),	-- Name A Better Duo, I'll Wait
 						i(186381),	-- Elethium-Bladed Glaive
 						i(186415),	-- Moriaz's Spare Targe
 						i(186291),	-- Periapt of Pristine Preservation
@@ -1055,10 +1135,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 					},
 					["g"] = {
 						ach(15113),		-- Mythic: The Eye of the Jailer
-						ach(15065, {	-- Eye Wish You Were Here
-							crit(1),	-- All players have Photoflash!
-							crit(2),	-- Eye of the Jailer has Photoflash!
-						}),
 						i(186554),	-- Eye of Allseeing (PET!)
 						i(186555),	-- Eye of Etermination (PET!)
 						i(186403),	-- Stygian Lance of Passage
@@ -1075,21 +1151,12 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				}),
 				e(2439, {	-- The Nine
 					["crs"] = {
-						-- Main bosses
 						177094,	-- Signe
 						177095,	-- Kyra
 						175726,	-- Skyja
-						-- "adds"
-						177100,	-- Aradne
-						177099,	-- Daschla
-						177096,	-- Agatha
-						177101,	-- Bryjna
-						177097,	-- Annhylde
-						177098,	-- Arthura
 					},
 					["g"] = {
 						ach(15114),	-- Mythic: The Nine
-						ach(15003),	-- To the Nines
 						i(186656),	-- Sanctum Gloomcharger (MOUNT!)
 						i(186404),	-- Jotungeirr, Destiny's Call
 						i(186385),	-- Signe's Sonorous Scramaseax
@@ -1109,7 +1176,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 					["crs"] = { 175729 },	-- Remnant of Ner'zhul
 					["g"] = {
 						ach(15115),	-- Mythic: Remnant of Ner'zhul
-						ach(15058),	-- I Used to Bullseye Deeprun Rats Back Home
 						i(186405),	-- Gnarled Staff of the Elder Shaman
 						i(186386),	-- Betrayer's Shadowspike
 						i(186292),	-- Cap of Writhing Malevolence
@@ -1124,10 +1190,9 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 					},
 				}),
 				e(2445, {	-- Soulrender Dormazain
-					["crs"] = { 175727 },	-- Soulrender Dormazain 175728 Garrosh Hellscream
+					["crs"] = { 175727 },	-- Soulrender Dormazain
 					["g"] = {
 						ach(15116),	-- Mythic: Soulrender Dormazain
-						ach(15105),	-- Tormentor's Tango
 						i(186558),	-- Irongrasp (PET!)
 						i(186407),	-- Hellscream's Requiem
 						i(186387),	-- Dormazain's Tenderizer
@@ -1147,7 +1212,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 					["crs"] = { 176523 },	-- Painsmith Raznal
 					["g"] = {
 						ach(15117),	-- Mythic: Painsmith Raznal
-						ach(15131),	-- Whack-A-Soul
 						i(186388),	-- Cruciform Veinripper
 						i(186392),	-- Exacting Mindslicer
 						i(186391),	-- Shadowsteel Demoralizer
@@ -1166,7 +1230,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 					["crs"] = { 175731 },	-- Guardian of the First Ones
 					["g"] = {
 						ach(15118),	-- Mythic: Guardian of the First Ones
-						ach(15132),	-- Knowledge is Power
 						i(186409),	-- Pylon of the Great Purge
 						i(186393),	-- Torch of Eternal Knowledge
 						i(186413),	-- Directional Meltdown Projector
@@ -1186,7 +1249,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 					["crs"] = { 175730 },	-- Fatescribe Roh-Kalo
 					["g"] = {
 						ach(15119),	-- Mythic: Fatescribe Roh-Kalo
-						ach(15040),	-- Flawless Fate
 						i(186419),	-- Record of Collapsing Realities
 						i(186330),	-- Cowl of Haunting Precognition
 						i(186340),	-- Conjunction-Forged Chainmail
@@ -1205,7 +1267,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 					["crs"] = { 175559 },	-- Kel'Thuzad
 					["g"] = {
 						ach(15120),	-- Mythic: Kel'Thuzad
-						ach(15108),	-- Together Forever
 						i(186550),	-- Mawsworn Minion (PET!)
 						i(187542),	-- Jaithys, the Prison Blade
 						i(186410),	-- Jaithys, the Prison Blade
@@ -1235,25 +1296,19 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						ach(15121, {	-- Mythic: Sylvanas Windrunner
 							title(447),	-- Breaker of Chains
 						}),
-						ach(15197, bubbleDownSelf({["timeline"] = { "added 9.1.0.39185", "removed 9.2" } }, {	-- Hall of Fame: Sylvanas (Alliance)
+						ach(15197, bubbleDownSelf({["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 } }, {	-- Hall of Fame: Sylvanas (Alliance)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(448),	-- <Name>, Famed Bane of the Banshee Queen
 							},
 						})),
-						ach(15196, bubbleDownSelf({["timeline"] = { "added 9.1.0.39185", "removed 9.2" } }, {	-- Hall of Fame: Sylvanas (Horde)
+						ach(15196, bubbleDownSelf({["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 } }, {	-- Hall of Fame: Sylvanas (Horde)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(448),	-- <Name>, Famed Bane of the Banshee Queen
 							},
 						})),
-						ach(15134, {	-- Ahead of the Curve: Sylvanas Windrunner
-							["timeline"] = { "added 9.1.0", "removed 9.2.0" },
-						}),
-						ach(15135, {	-- Cutting Edge: Sylvanas Windrunner
-							["timeline"] = { "added 9.1.0", "removed 9.2.0" },
-						}),
-						ach(15133),	-- This World is a Prism
+						ach(15134, {["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 }}),	-- Ahead of the Curve: Sylvanas Windrunner
 						i(186642),	-- Vengeance (MOUNT!)
 						i(186398),	-- Edge of Night
 						i(186414),	-- Rae'shalare, Death's Whisper
@@ -1269,7 +1324,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						i(186377),	-- Tarnished Insignia of Quel'Thalas
 						i(186438),	-- Old Warrior's Soul
 						i(187593),	-- Ethereal Fletching (Upgrade Legendary)
-						i(182177),	-- Owlcat Soul (NF Soulshape)
+						i(182177),	-- Owlcat Soul (SS!)
 					},
 				}),
 			}),
@@ -1294,7 +1349,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 }));
 
-root("HiddenQuestTriggers",  tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
+root("HiddenQuestTriggers",  tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	inst(1193, {	-- Sanctum of Domination
 		--q(63074),	-- Stygian ember loot >-- seems a too low number for this.
 		q(64604),	-- Stygian Ember from Bonesteel [] (Normal / Heroic)

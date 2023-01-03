@@ -3,6 +3,7 @@
 -----------------------------------------------------
 
 root("Instances", tier(SL_TIER, {
+	["timeline"] = { ADDED_SL_REL },
 	-- #if ANYCLASSIC
 	["u"] = SHADOWLANDS_PHASE_ONE,
 	-- #endif

@@ -17,8 +17,12 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			n(TREASURES, {
-				-- Not seen this treasure Deliquent Notes
-				i(198908),	-- Technique: Illusion Parchment: Love Charm (RECIPE!)
+				o(384370, {	-- Deliberately Delinquent Notes
+					["description"] = "This Recipe is found near Overgrown Ancient in far left corner of the arena on a table with some strange flasks.",
+					["g"] = {
+						i(198908),	-- Technique: Illusion Parchment: Love Charm (RECIPE!)
+					},
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(194255),	-- Pattern: Amice of the Blue (RECIPE!)
@@ -26,7 +30,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				i(194491),	-- Plans: Frostfire Legguards of Preparation (RECIPE!)
 				i(194492),	-- Plans: Unstable Frostfire Belt (RECIPE!)
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_D, {
 				e(2509, {	-- Vexamus
 					["crs"] = {
 						189668,	-- Professor Madormu
@@ -78,7 +82,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_D, {
 				e(2509, {	-- Vexamus
 					["crs"] = {
 						189668,	-- Professor Madormu
@@ -130,7 +134,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_D, {
 				e(2509, {	-- Vexamus
 					["crs"] = {
 						189668,	-- Professor Madormu

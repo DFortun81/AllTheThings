@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	inst(1198, {	-- The Nokhud Offensive
 		["coord"] = { 60.9, 39.1, OHNAHRAN_PLAINS },
@@ -19,7 +18,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 190164 },	-- Elder Nazuun
 					["coord"] = { 41.6, 56.7, OHNAHRAN_PLAINS },
 					["g"] = {
-						i(200251),	-- Medallion of the ancestors
+						i(200251),	-- Medallion of the Ancestors
 						crit(5, {	-- Elder Nazuun
 							["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
 						}),
@@ -50,7 +49,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_D, {
 				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
@@ -101,7 +100,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_D, {
 				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
@@ -154,7 +153,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_D, {
 				n(ACHIEVEMENTS, {
 					ach(16620),	-- Ohuna Incubation
 				}),

@@ -1,135 +1,197 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local SymPvP = function(SeasonID)
+	SymLink = {
+		{"select", "tierID", SL_TIER},			-- Select Shadowlands
+		{"pop"},								-- Discard the Shadowlands Header and acquire all of their children.
+		{"where", "headerID", SeasonID},		-- Season
+		{"pop"},								-- Discard the Season Header and acquire all of their children.
+		{"where", "headerID", PVP_ASPIRANT},	-- Aspirant Gear
+		{"pop"},								-- Discard the Aspirant Header and acquire all of their children.
+		{"finalize"},							-- Push Everything to the Queue
 
+		{"select", "tierID", SL_TIER},			-- Select Shadowlands
+		{"pop"},								-- Discard the Shadowlands Header and acquire all of their children.
+		{"where", "headerID", SeasonID},		-- Season
+		{"pop"},								-- Discard the Season Header and acquire all of their children.
+		{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
+		{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
+		{"finalize"},							-- Push Everything to the Queue
+
+		{"select", "tierID", SL_TIER},			-- Select Shadowlands
+		{"pop"},								-- Discard the Shadowlands Header and acquire all of their children.
+		{"where", "headerID", SeasonID},		-- Season
+		{"pop"},								-- Discard the Season Header and acquire all of their children.
+		{"where", "headerID", PVP_ELITE},		-- Elite Gear
+		{"pop"},								-- Discard the Elite Header and acquire all of their children.
+		{"finalize"},							-- Push Everything to the Queue
+
+		{"merge"},								-- Merge the Queue
+	}
+	return SymLink
+end
+local SymRaid = function(InstanceID, Remove)
+	SymLink = {
+		{"select", "tierID", SL_TIER},			-- Select Shadowlands
+		{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
+		{"where", "instanceID", InstanceID},	-- Instance
+		{"pop"},								-- Discard the Instance Header and acquire all of their children.
+		{"is", "difficultyID" },				-- Select only the Difficulty Headers.
+		{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+		{"is","encounterID"},					-- Only Encounter Headers
+		{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+		{"is", "itemID"},						-- Only Items!
+	}
+	if Remove then
+		for _,v in ipairs(Remove) do
+			table.insert(SymLink, {"not", "itemID", v })
+		end
+	end
+	return SymLink
+end
 root("Zones", m(SHADOWLANDS, {
 	m(ORIBOS, {
-		o(353484, bubbleDown({ ["timeline"] = { "added 9.0.2", REMOVED_DF_REL } }, {	-- The Great Vault
+		o(353484, bubbleDownSelf({ ["timeline"] = { "added 9.0.2", REMOVED_DF_REL } }, {	-- The Great Vault
 			["coord"] = { 64.3, 32.1, ORIBOS },
 			["g"] = {
 				i(187219, {	-- Attendant's Token of Merit
-					["timeline"] = { REMOVED_SL_S4 },
+					["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
 				}),
 				i(199202, {	-- Attendant's Token of Merit
-					["timeline"] = { ADDED_SL_S4 },
+					["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE },
 				}),
 				inst(1190, {	-- Castle Nathria
-					["timeline"] = { "added 9.0.2", "removed 9.1.0", ADDED_SL_S4 },
-					["sym"] = {
-						{"select", "tierID", SL_TIER},			-- Select Shadowlands
-						{"pop"},								-- Discard the Shadowland Headers and acquire all of their children.
-						{"where", "instanceID", 1190},			-- Castle Nathria
-						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
-						{"is", "difficultyID" },				-- Select only the Difficulty Headers.
-						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-						{"is","encounterID"},					-- Only Encounter Headers
-						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-						{"is", "itemID"},						-- Only Items!
-						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-					},
+					["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2, ADDED_SL_S4, REMOVED_DF_PRE },
+					["sym"] = SymRaid(1190, {
+						182169,	-- Veilwing Soul (SS!)
+					}),
 				}),
 				inst(1193, {	-- Sanctum of Domination
-					["timeline"] = { "added 9.1.0", "removed 9.2.0", ADDED_SL_S4 },
-					["sym"] = {
-						{"select", "tierID", SL_TIER},			-- Select Shadowlands
-						{"pop"},								-- Discard the Shadowland Headers and acquire all of their children.
-						{"where", "instanceID", 1193},			-- Sanctum of Domination
-						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
-						{"is", "difficultyID" },				-- Select only the Difficulty Headers.
-						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-						{"is", "encounterID"},					-- Only Encounter Headers
-						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-						{"is", "itemID"},						-- Only Items!
-						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-					},
+					["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3, ADDED_SL_S4, REMOVED_DF_PRE },
+					["sym"] = SymRaid(1193, {
+						182177,	-- Owlcat Soul (SS!)
+					})
 				}),
 				inst(1195, {	-- Sepulcher of the First Ones
-					["timeline"] = { "added 9.2.0" },
-					["sym"] = {
-						{"select", "tierID", SL_TIER},			-- Select Shadowlands
-						{"pop"},								-- Discard the Shadowland Headers and acquire all of their children.
-						{"where", "instanceID", 1195},			-- Sepulcher of the First Ones
-						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
-						{"is", "difficultyID" },				-- Select only the Difficulty Headers.
-						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-						{"is", "encounterID" },					-- Only Encounter Headers
-						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-						{"is", "itemID"},						-- Only Items!
-						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-						{"select", "itemID",
-							191010,	-- Dreadful Chest Module
-							191014,	-- Dreadful Hand Module
-							191005,	-- Dreadful Helm Module
-							191018,	-- Dreadful Leg Module
-							191006,	-- Dreadful Shoulder Module
-							191011,	-- Mystic Chest Module
-							191015,	-- Mystic Hand Module
-							191002,	-- Mystic Helm Module
-							191019,	-- Mystic Leg Module
-							191007,	-- Mystic Shoulder Module
-							191012,	-- Venerated Chest Module
-							191016,	-- Venerated Hand Module
-							191003,	-- Venerated Helm Module
-							191020,	-- Venerated Leg Module
-							191008,	-- Venerated Shoulder Module
-							191013,	-- Zenith Chest Module
-							191017,	-- Zenith Hand Module
-							191004,	-- Zenith Helm Module
-							191021,	-- Zenith Leg Module
-							191009,	-- Zenith Shoulder Module
-						},
-					},
+					["timeline"] = { ADDED_SL_S3, REMOVED_DF_PRE },
+					["sym"] = SymRaid(1195, {
+						189437,	-- Schematic: Stabilized Geomental (RECIPE!)
+						189178,	-- Tools of Incomprehensible Experimentation
+						190337,	-- Cervid Soul (SS!)
+						189982,	-- Silithid Soul (SS!)
+						190768,	-- Zereth Overseer (MOUNT!)
+						190773,	-- Almanac's Echo
+					}),
 				}),
 				n(MYTHIC_PLUS, {
-					["sym"] = {
-						-- Dungeons
-						{"select", "instanceID", 1188},			-- De Other Side
-						{"select", "instanceID", 1185},			-- Halls of Atonement
-						{"select", "instanceID", 1184},			-- Mists of Tirna Scithe
-						{"select", "instanceID", 1182},			-- Necrotic Wake
-						{"select", "instanceID", 1183},			-- Plaguefall
-						{"select", "instanceID", 1189},			-- Sanguine Depths
-						{"select", "instanceID", 1186},			-- Spires of Ascension
-						{"select", "instanceID", 1194},			-- Tazavesh, the Veiled Market
-						{"select", "instanceID", 1187},			-- Theater of Pain
-
-						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
-						{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
-						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-						{"is", "itemID"},						-- Only Items!
-						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-					},
+					header(HEADERS.Achievement, SEASON_PROUD, {
+						["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 },
+						["sym"] = {
+							{"select", "instanceID",
+								1188,	-- De Other Side
+								1185,	-- Halls of Atonement
+								1184,	-- Mists of Tirna Scithe
+								1182,	-- Necrotic Wake
+								1183,	-- Plaguefall
+								1189,	-- Sanguine Depths
+								1186,	-- Spires of Ascension
+								1187,	-- Theater of Pain
+							},
+							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
+							{"pop"},								-- Discard the Mythic Header and acquire all of their children.
+							{"is","encounterID"},					-- Only Encounter Headers
+							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+							{"is", "itemID"},						-- Only Items!
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+						},
+					}),
+					header(HEADERS.Achievement, SEASON_TORMENTED, {
+						["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 },
+						["sym"] = {
+							{"select", "instanceID",
+								1188,	-- De Other Side
+								1185,	-- Halls of Atonement
+								1184,	-- Mists of Tirna Scithe
+								1182,	-- Necrotic Wake
+								1183,	-- Plaguefall
+								1189,	-- Sanguine Depths
+								1186,	-- Spires of Ascension
+								1187,	-- Theater of Pain
+							},
+							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
+							{"pop"},								-- Discard the Mythic Header and acquire all of their children.
+							{"is","encounterID"},					-- Only Encounter Headers
+							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+							{"is", "itemID"},						-- Only Items!
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+						},
+					}),
+					header(HEADERS.Achievement, SEASON_CRYPTIC, {
+						["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
+						["sym"] = {
+							{"select", "instanceID",
+								1188,	-- De Other Side
+								1185,	-- Halls of Atonement
+								1184,	-- Mists of Tirna Scithe
+								1182,	-- Necrotic Wake
+								1183,	-- Plaguefall
+								1189,	-- Sanguine Depths
+								1186,	-- Spires of Ascension
+								1194,	-- Tazavesh, the Veiled Market
+								1187,	-- Theater of Pain
+							},
+							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
+							{"pop"},								-- Discard the Mythic Header and acquire all of their children.
+							{"is","encounterID"},					-- Only Encounter Headers
+							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+							{"is", "itemID"},						-- Only Items!
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+						},
+					}),
+					header(HEADERS.Achievement, SEASON_SHROUDED, {
+						["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE },
+						["sym"] = {
+							{"select", "instanceID",
+								536,	-- Grimrail Depot
+								558,	-- Iron Docks
+								1178,	-- Operation: Mechagon
+								860,	-- Return to Karazhan
+								1194,	-- Tazavesh, the Veiled Market
+							},
+							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
+							{"pop"},								-- Discard the Mythic Header and acquire all of their children.
+							{"is","encounterID"},					-- Only Encounter Headers
+							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+							{"is", "itemID"},						-- Only Items!
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+						},
+					}),
 				}),
 				pvp(n(PVP, {
-					n(SEASON_SINFUL, {
-						["timeline"] = { "added 9.0.2", "removed 9.1.0" },
-						["sym"] = {
-							{"select", "tierID", SL_TIER},			-- Select Shadowlands
-							{"pop"},								-- Discard the Shadowland Headers and acquire all of their children.
-							{"where", "headerID", SEASON_SINFUL},	-- Season 1
-							{"pop"},								-- Discard the Custom Headers and acquire all of their children.
-						},
+					header(HEADERS.Achievement, SEASON_SINFUL, {
+						["icon"] = "Interface\\Icons\\inv_shadebeastmount",
+						["timeline"] = { ADDED_SL_REL, REMOVED_SL_S2 },
+						["sym"] = SymPvP(SEASON_SINFUL),
 					}),
-					n(SEASON_UNCHAINED, {
-						["timeline"] = { "added 9.1.0", "removed 9.2.0" },
-						["sym"] = {
-							{"select", "tierID", SL_TIER},			-- Select Shadowlands
-							{"pop"},								-- Discard the Shadowland Headers and acquire all of their children.
-							{"where", "headerID", SEASON_UNCHAINED},	-- Season 2
-							{"pop"},								-- Discard the Custom Headers and acquire all of their children.
-						},
+					header(HEADERS.Achievement, SEASON_UNCHAINED, {
+						["icon"] = "Interface\\Icons\\inv_shadebeastmount_blue",
+						["timeline"] = { ADDED_SL_S2, REMOVED_SL_S3 },
+						["sym"] = SymPvP(SEASON_UNCHAINED),
 					}),
-					n(SEASON_COSMIC, {
-						["timeline"] = { "added 9.2.0" },
-						["sym"] = {
-							{"select", "tierID", SL_TIER},			-- Select Shadowlands
-							{"pop"},								-- Discard the Shadowland Headers and acquire all of their children.
-							{"where", "headerID", SEASON_COSMIC},	-- Season 3
-							{"pop"},								-- Discard the Custom Headers and acquire all of their children.
-							{"not", "itemID", 189507 },				-- Mount
-							{"not", "itemID", 186777 },				-- Tabard
-						},
+					header(HEADERS.Achievement, SEASON_COSMIC, {
+						["icon"] = "Interface\\Icons\\inv_shadebeastmount_red",
+						["timeline"] = { ADDED_SL_S3, REMOVED_SL_S4 },
+						["sym"] = SymPvP(SEASON_COSMIC),
+					}),
+					header(HEADERS.Achievement, SEASON_ETERNAL, {
+						["icon"] = "Interface\\Icons\\inv_shadebeastmount_orange",
+						["timeline"] = { ADDED_SL_S4, REMOVED_DF_PRE },
+						["sym"] = SymPvP(SEASON_ETERNAL),
 					}),
 				})),
 			},

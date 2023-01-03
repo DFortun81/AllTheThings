@@ -4,9 +4,6 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 	achcat(ACHIEVEMENT_CATEGORY_SHADOWLANDS_EXP, {
-		ach(15391, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Adventurer of Zereth Mortis
-			ach(15512),	-- Adventures in Zereth Mortis
-		})),
 		ach(14774, {	-- Ardenweald Gourmand
 			["description"] = "All food is sold by Tanor in Ardenweald at |cFFFFFFFF65.0, 19.6|r.",
 			["coord"] = { 65.0, 19.6, ARDENWEALD },
@@ -72,16 +69,10 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				{ 64.0, 62.0, REVENDRETH },
 			},
 		}),
-		ach(15404, {	-- Cosmic Empowerment
-			["timeline"] = { "added 9.2.0" },
-		}),
 		ach(14767, {	-- Count Your Blessings
 			crit(1),		-- Purified Blessing of Grace
 			crit(2),		-- Purified Blessing of Power
 			crit(3),		-- Purified Blessing of Fortitude
-		}),
-		ach(15392, {	-- Dune Dominance
-			["timeline"] = { "added 9.2.0" },
 		}),
 		ach(15053, {	-- Explore Korthia
 			crit(1),	-- Estuary of Awakening
@@ -107,12 +98,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(10),		-- The Altar of Damnation
 			crit(11),		-- The Beastwarrens
 			crit(12),		-- Zovaal's Cauldron
-		}),
-		ach(15224, {	-- Explore Zereth Mortis
-			["timeline"] = { "added 9.2.0" },
-		}),
-		ach(15508, {	-- Fashion of the First Ones
-			["timeline"] = { "added 9.2.0" },
 		}),
 		ach(14745),		-- Grand Theft Shadehound
 		ach(14943),		-- Guarmageddon
@@ -231,9 +216,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(3),		-- Vesper of Humility
 			crit(4),		-- Vesper of Loyalty
 			crit(5),		-- Vesper of Purity
-		}),
-		ach(15502, {	-- Sand, Sand Everywhere!
-			["timeline"] = { "added 9.2.0" },
 		}),
 		ach(14825, {	-- Shadowlands Voyager
 			ach(15388, {	-- Shadowlands Explorer
@@ -439,9 +421,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			}),
 		}),
 		ach(14658),		-- Soulkeeper's Burden
-		ach(15509, {	-- Tales of the Exile
-			["timeline"] = { "added 9.2.0" },
-		}),
 		ach(14771, {	-- The Afterlife Express
 			crit(1),		-- Chalice Carriage
 			crit(2),		-- Old Gate Carriage
@@ -518,9 +497,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(9),	-- Infested Vestige
 			crit(10),	-- Offering Box
 		}),
-		ach(15331, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Treasures of Zereth Mortis
-			ach(15513),	-- Curious Collections
-		})),
 		ach(15648, sharedDataSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Walking in Maw-mphis
 			title(462),	-- <Name>, Maw Walker
 			crit(1),	-- 'Ghast Five

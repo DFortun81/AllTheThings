@@ -233,6 +233,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				n(196862, {	-- Steiz <Quartermaster>
 					["coord"] = { 49.4, 22.6, THE_AZURE_SPAN },
 					["g"] = {
+						i(202117),	-- Assembly Preserver's Band
+						i(202119),	-- Assembly Scholar's Loop
+						i(202118),	-- Assembly Guardian's Ring
 						i(194265, {	-- Pattern: Blue Silken Lining (RECIPE!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 50 },

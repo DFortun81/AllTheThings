@@ -11,7 +11,7 @@ root("Instances", { tier(LEGION_TIER, {
 			n(QUESTS, {
 				i(152204, {	-- Glowing Key Fragment
 					["questID"] = 48230,	-- Fragment of the Past
-					["maps"] = { 882 } ,	-- Eredath
+					["maps"] = { 882 },	-- Eredath
 					["description"] = "You must complete |cffffff00Seat of the Triumvirate: The Crest of Knowledge|r before this item will drop.",
 					["sourceQuest"] = 47654, 	-- Seat of the Triumvirate: The Crest of Knowledge
 					["crs"] = {

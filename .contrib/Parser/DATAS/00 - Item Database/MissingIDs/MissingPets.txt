@@ -608,14 +608,12 @@ p(3308),	-- Time-Lost Duckling \\ [PH] Yellow Baby Duck
 p(3310),	-- Echo of the Heights \\ Brown Duck \\ [PH] Brown Duck
 p(3311),	-- Ohuna Companion \\ White Duck \\ [PH] White Duck
 p(3325),	-- Bakar Companion \\ White Woodpecker \\ [PH] White Woodpecker
-p(3329),	-- Storm-Touched Timbertooth \\ Light Baby Timbertooth \\ [PH] Light Baby Timbertooth
 p(3338),	-- Sapphire Crystalspine \\ [PH] Blue Crystalspine
 p(3339),	-- Black Dragon Whelp \\ [PH] Black Dragon Whelp
 p(3340),	-- Blue Dragon Whelp \\ [PH] Blue Dragon Whelp
 p(3341),	-- Red Dragon Whelp \\ [PH] Red Dragon Whelp
 p(3342),	-- Spyragos
 p(3343),	-- Bronze Dragon Whelp \\ [PH] Bronze Dragon Whelp
-p(3354),	-- Storm-Touched Ottuk \\ Green Baby Turtle \\ [PH]Green Baby Turtle
 p(3355),	-- Echo of the Cave \\ Orange Baby Turtle \\ [PH] Orange Baby Turtle
 p(3359),	-- Snowclaw Cub \\ [PH] White Primal Bear Cub
 p(3360),	-- Bugbiter Tortoise \\ [PH] Teal Baby Turtle
@@ -626,8 +624,6 @@ p(3364),	-- Striped Snakebiter \\ [PH] Striped Light Ferret
 10.0.0.44999
 p(3377),	-- Gwosh
 10.0.0.45232
-p(3384),	-- Storm-Touched Bluefeather \\ Orange Baby Turtle \\ [PH] Orange Baby Turtle
-p(3385),	-- Storm-Touched Stomper \\ Green Baby Mammoth \\ [PH] Green Baby Mammoth
 p(3386),	-- Faceripper \\ Brown Duck \\ [PH] Brown Duck
 p(3387),	-- Bloodbiter \\ REUSE ME \\ [PH] Brown Baby Thunder Lizard
 p(3388),	-- Tina \\ [PH] White Shaggy Rabbit

@@ -46,7 +46,7 @@ root("WorldEvents", n(-539,	-- The Scepter of the Shifting Sands
 					["groups"] = {
 						classicAch(416, {	-- Scarab Lord (Achievement)
 							["sourceQuest"] = 8743,	-- Bang a Gong!
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 							["timeline"] = { "removed 4.0.3" },

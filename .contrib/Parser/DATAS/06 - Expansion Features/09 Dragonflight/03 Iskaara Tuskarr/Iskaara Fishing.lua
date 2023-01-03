@@ -9,9 +9,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16321),	-- Cutting Tusk Equipment
 				ach(16317),	-- Secret Fishing Spots
 
-
-
-
 				ach(16561),	-- Lunkers, Lunkers Everywhere
 				ach(16562),	-- That's not a Fish...
 				ach(16563),	-- We're Going to Need a Bigger Harpoon
@@ -24,9 +21,22 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16553),	-- Taking From Nature
 			}),
 			n(QUESTS, {
+					-- RENOWN 4 --
+				q(70941, {	-- Fishing Holes
+					["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4
+					["description"] = "Spawns Anywhere on Dragon Isles.",
+					["provider"] = { "n", 197631 },	-- Rowie
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
 					-- RENOWN 5 --
+				q(71230, {	-- Tuskarr Fishing Gear
+					["minReputation"] = { 2511, 5 },	-- Iskaara Tuskarr Renown 5
+					["description"] = "Spawns Anywhere on Dragon Isles.",
+					["provider"] = { "n", 197631 },	-- Rowie
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
 				q(70871, {	-- Iskaaran Fishing Net
-					["description"] = "Requires Renown 5.",
+					["minReputation"] = { 2511, 5 },	-- Iskaara Tuskarr Renown 5
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 					["g"] = {
@@ -38,7 +48,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 				q(72584, {	-- Setting Your Very Own Net
-				["description"] = "Requires Renown 5.",
+					["minReputation"] = { 2511, 5 },	-- Iskaara Tuskarr Renown 5
 					["sourceQuests"] = { 70871 },	-- Iskaaran Fishing Net
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
@@ -46,35 +56,42 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					-- RENOWN 6 --
 				q(70942, {	-- Highland Fishing
 					["sourceQuests"] = { 72584 },	-- Setting Your Very Own Net -- TODO: CONFIRM
-					["description"] = "Requires Renown 6.",
+					["minReputation"] = { 2511, 6 },	-- Iskaara Tuskarr Renown 6
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 7 --
 				q(70943, {	-- Harpooning
 					["sourceQuests"] = { 70942 },	-- Highland Fishing -- TODO: CONFIRM
-					["description"] = "Requires Renown 7.",
+					["minReputation"] = { 2511, 7 },	-- Iskaara Tuskarr Renown 7
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 10 --
 				q(70944, {	-- Ice Fishing
 					["sourceQuests"] = { 70943 },	-- Harpooning -- TODO: CONFIRM
-					["description"] = "Requires Renown 10.",
+					["minReputation"] = { 2511, 10 },	-- Iskaara Tuskarr Renown 10
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 13 --
 				q(70945, {	-- Netting More
 					["sourceQuests"] = { 70944 },	-- Ice Fishing -- TODO: CONFIRM
-					["description"] = "Requires Renown 13.",
+					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 16 --
 				q(70948, {	-- Hook, Line, and Swelter!
 					["sourceQuests"] = { 70945 },	-- Netting More -- TODO: CONFIRM
-					["description"] = "Requires Renown 16.",
+					["minReputation"] = { 2511, 16 },	-- Iskaara Tuskarr Renown 16
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+				}),
+					-- RENOWN 18 --
+				q(70950, {	-- Fishy Entertainment
+					["sourceQuests"] = { 70948 },	-- Hook, Line, and Swelter! -- TODO: CONFIRM
+					["minReputation"] = { 2511, 18 },	-- Iskaara Tuskarr Renown 18
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
@@ -84,7 +101,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["provider"] = { "n", 195338 },	-- Fisherman Pasqaa
 					["coord"] = { 63.7, 76.5, THE_WAKING_SHORES },
 					["isDaily"] = true,
-					["description"] = "Requires Renown 4.",
+					["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4
 					["g"] = {
 						i(198855),	-- Throw Net
 					},
@@ -92,7 +109,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70450, {	-- Otter Devastation
 					["provider"] = { "n", 195444 },	-- Brix Rocketcast
 					["coord"] = { 63.6, 75, THE_WAKING_SHORES },
-					["description"] = "Requires Renown 4.",
+					["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4
 					["isDaily"] = true,
 				}),
 					-- Ohn'Ahran Plains --
@@ -100,7 +117,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["provider"] = { "n", 198766 },	-- Thrifty Fisher
 					["coord"] = { 80.8, 78.4, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
-					["description"] = "Requires Renown 4.",
+					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 					["g"] = {
 						i(198855),	-- Throw Net
 					},
@@ -109,43 +126,70 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["provider"] = { "n", 198766 },	-- Thrifty Fisher
 					["coord"] = { 80.8, 78.4, OHNAHRAN_PLAINS },
 					["isDaily"] = true,
-					["description"] = "Requires Renown 4.",
+					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 				}),
+					-- The Azure Span --
+				q(71191, {	-- Net Worth
+					["provider"] = { "n", 197700 },	-- Gruff Fisher
+					["coord"] = { 58.6, 34.4, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
+				}),
+				q(72069, {	-- Subglacial Refill
+					["provider"] = { "n", 197700 },	-- Gruff Fisher
+					["coord"] = { 58.6, 34.4, OHNAHRAN_PLAINS },
+					["isDaily"] = true,
+					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
+				}),
+					-- Thaldraszus
+				q(71193, {	-- Underwater Menace
+					["provider"] = { "n", 197597 },	-- Cautious Fisher
+					["coord"] = { 57.2, 65.3, THALDRASZUS },
+					["isDaily"] = true,
+					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
+				}),
+				q(72074, {	-- Highland Habitat
+					["provider"] = { "n", 197597 },	-- Cautious Fisher
+					["coord"] = { 57.2, 65.3, THALDRASZUS },
+					["isDaily"] = true,
+					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
+				}),
+
 					-- Repeatables --
 				q(70201, {	-- Catch and Release: Aileron Seamoth
 					["provider"] = { "n", 194584 },	-- Khuri
 					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
-					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
+					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 					["isRepeatable"] = true,
 				}),
 				q(70202, {	-- Catch and Release: Cerulean Spinefish
 					["provider"] = { "n", 194584 },	-- Khuri
 					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
-					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
+					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 					["isRepeatable"] = true,
 				}),
 				q(70935, {	-- Catch and Release: Islefin Dorado
 					["provider"] = { "n", 194584 },	-- Khuri
 					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
-					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
+					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 					["isRepeatable"] = true,
 				}),
 				q(70199, {	-- Catch and Release: Scalebelly Mackerel
 					["provider"] = { "n", 194584 },	-- Khuri
 					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
-					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
+					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 					["isRepeatable"] = true,
 				}),
 				q(70203, {	-- Catch and Release: Temporal Dragonhead
 					["provider"] = { "n", 194584 },	-- Khuri
 					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
-					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
+					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 					["isRepeatable"] = true,
 				}),
 				q(70200, {	-- Catch and Release: Thousandbite Piranha
 					["provider"] = { "n", 194584 },	-- Khuri
 					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
-					--["description"] = "Requires Renown 4.",	-- TODO: CONFIRM
+					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 					["isRepeatable"] = true,
 				}),
 			}),
@@ -153,6 +197,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["crs"] = { 195935 },
 				["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				["g"] = {
+					-- TODO: maybe link these to the HQT they trigger so that the components can be considered collectible for the unlocks?
 					r(387594),	-- Reinforced Irontree Harpoon Handle
 					r(387827),	-- Flying Fish Bone Charm
 					r(387828),	-- Iskaaran Fishing Net
@@ -173,12 +218,64 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						-- TODO: these shouldn't need cost if the Tuskaar Fishing profession is scanned by ATT
 						i(194510),	-- Iskaaran Harpoon
 						i(199694),	-- Flying Fish Bone Charm
+						i(199697),	-- Polished Basalt Bracelet
 					}),
 				},
 			}),
 			n(REWARDS, {
+				i(200080, {	-- Draconium Nugget
+					["description"] = "Obtained from Rare fishing pools.",
+					["providers"] = {
+						{ "o", 377938 },	-- Prismatic Leaper School
+						{ "o", 382180 },	-- Overheated Magma Thresher Pool
+						{ "n", 197596 },	-- Deep Ice Fishing Hole
+					},
+				}),
+				i(200081, {	-- Hardened Seavine
+					["description"] = "Obtained from Rare fishing pools.",
+					["providers"] = {
+						{ "o", 377938 },	-- Prismatic Leaper School
+						{ "o", 382180 },	-- Overheated Magma Thresher Pool
+						{ "n", 197596 },	-- Deep Ice Fishing Hole
+					},
+				}),
+				i(200083, {	-- Irontree Branch
+					["description"] = "Obtained from Rare fishing pools.",
+					["providers"] = {
+						{ "o", 377938 },	-- Prismatic Leaper School
+						{ "o", 382180 },	-- Overheated Magma Thresher Pool
+						{ "n", 197596 },	-- Deep Ice Fishing Hole
+					},
+				}),
+				i(200086, {	-- Khaz'gorite Infused Resin
+					["description"] = "Obtained from Rares summoned by using Ominous Conch at Large Lunker Sightings.",
+					["providers"] = {
+						{ "n", 193706 },	-- Snufflegust
+						{ "n", 197411 },	-- Astray Splasher
+						{ "n", 193634 },	-- Swog'Ranka
+						{ "n", 193708 },	-- Skald the Impaler
+						{ "n", 193710 },	-- Seereel, the Spring
+						{ "n", 193735 },	-- Moth'go Deeploom
+						{ "n", 197371 },	-- Ravenous Tundra Bear
+					},
+				}),
 				i(200085, {	-- Khaz'gorite Wire
 					["description"] = "Obtained from Full Tuskarr Fishing Nets.",
+					["providers"] = {
+						{ "o", 382071 },	-- Full Fishing Net
+						{ "o", 379314 },	-- Full Fishing Net
+						{ "o", 381069 },	-- Full Fishing Net
+					},
+				}),
+				o(381514, {	-- Sea-Polished Basalt
+					-- i didn't save the coords, and wowhead doesn't know about it. probably need some fine-tuning and additional spawn locations, then remove description
+					["description"] = "Near landing points for Alliance/Horde in The Waking Shores. Rough coordinates.",
+					["coords"] = {
+						{ 80.0, 27.0, THE_WAKING_SHORES },
+					},
+					["g"] = {
+						i(200079),	-- Sea-Polished Basalt
+					},
 				}),
 			}),
 		})
@@ -189,7 +286,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THE_AZURE_SPAN, {
 		q(70793),	-- Triggered after crafting Iskaaran Fishing Net during Iskaaran Fishing Net (questID 70871)
 		q(70792),	-- Triggered after crafting Iskaaran Harpoon
-		q(72391),	-- Triggered with 'Ice Fishing' (70944)
 		q(72394),	-- Triggered with 'Fascinating Fliers' (70955)
 		q(72280),	-- Triggered with 'Hook, Line, and Swelter!' (70948)
 		--

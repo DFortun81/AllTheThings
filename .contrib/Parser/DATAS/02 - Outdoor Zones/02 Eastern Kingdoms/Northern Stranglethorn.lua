@@ -53,7 +53,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						338,	-- The Green Hills of Stranglethorn
 					},
 					-- #endif
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE WRATH
 					["description"] = "Complete all of Hemet Nesingwary quests in Stranglethorn Vale up to and including The Green Hills of Stranglethorn and Big Game Hunter.",
 					["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]],
 					-- #endif
@@ -135,7 +135,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(26746, {	-- A Nose for This Sort of Thing (A)
 					["qg"] = 43884,	-- Osborn Obnoticus
 					["sourceQuest"] = 26745,	-- Favored Skull
-					["coord"] = { 47.13 , 10.56, NORTHERN_STRANGLETHORN },
+					["coord"] = { 47.13, 10.56, NORTHERN_STRANGLETHORN },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),

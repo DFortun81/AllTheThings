@@ -251,7 +251,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(80285, {	-- Guh <Bladespire Trader>
-					["description"] = "Must speak to him in |cFFFFD700Frostfire Ridge|r before he joins your garrison.",
+					["description"] = "Must speak to him in |cFFFFD700Frostfire Ridge|r to invite him to your garrison.",
 					["g"] = {
 						i(119430, {	-- Gas-Powered Stick
 							["cost"] = 10000000,	-- 1,000g

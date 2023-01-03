@@ -1134,14 +1134,14 @@ local TIER_TWELVE_NORMAL_GROUPS = {	-- Firelands [Tier 12] (Normal)
 		i(71064),	-- Immolation Gauntlets
 		i(71063),	-- Immolation Battleplate
 		i(71066),	-- Immolation Legplates
-		
+
 		-- Holy
 		i(71093),	-- Immolation Headguard
 		i(71095),	-- Immolation Mantle
 		i(71092),	-- Immolation Gloves
 		i(71091),	-- Immolation Breastplate
 		i(71094),	-- Immolation Greaves
-		
+
 		-- Protection
 		i(70948),	-- Immolation Faceguard
 		i(70946),	-- Immolation Shoulderguards
@@ -1185,7 +1185,7 @@ local TIER_TWELVE_NORMAL_GROUPS = {	-- Firelands [Tier 12] (Normal)
 		i(71276),	-- Gloves of the Cleansing Flame
 		i(71279),	-- Vestment of the Cleansing Flame
 		i(71278),	-- Leggings of the Cleansing Flame
-		
+
 		-- Holy
 		i(71272),	-- Cowl of the Cleansing Flame
 		i(71275),	-- Mantle of the Cleansing Flame
@@ -1200,14 +1200,14 @@ local TIER_TWELVE_NORMAL_GROUPS = {	-- Firelands [Tier 12] (Normal)
 		i(71302),	-- Erupting Volcanic Grips
 		i(71301),	-- Erupting Volcanic Cuirass
 		i(71304),	-- Erupting Volcanic Legguards
-		
+
 		-- Elemental
 		i(71293),	-- Erupting Volcanic Headpiece
 		i(71295),	-- Erupting Volcanic Shoulderwraps
 		i(71292),	-- Erupting Volcanic Gloves
 		i(71291),	-- Erupting Volcanic Hauberk
 		i(71294),	-- Erupting Volcanic Kilt
-		
+
 		-- Restoration
 		i(71298),	-- Erupting Volcanic Faceguard
 		i(71300),	-- Erupting Volcanic Mantle
@@ -1236,14 +1236,14 @@ local TIER_TWELVE_NORMAL_GROUPS = {	-- Firelands [Tier 12] (Normal)
 		i(71107),	-- Obsidian Arborweave Gloves
 		i(71110),	-- Obsidian Arborweave Vestment
 		i(71109),	-- Obsidian Arborweave Leggings
-		
+
 		-- Feral
 		i(71098),	-- Obsidian Arborweave Headpiece
 		i(71101),	-- Obsidian Arborweave Spaulders
 		i(71097),	-- Obsidian Arborweave Grips
 		i(71100),	-- Obsidian Arborweave Raiment
 		i(71099),	-- Obsidian Arborweave Legguards
-		
+
 		-- Restoration
 		i(71103),	-- Obsidian Arborweave Helm
 		i(71106),	-- Obsidian Arborweave Mantle
@@ -1332,7 +1332,7 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 				{ "i", 71678.05, 1 },	-- Leggings of the Fiery Conqueror
 			},
 		}),
-		
+
 		-- Holy
 		i(71519, {	-- Immolation Headguard
 			["cost"] = { { "i", 71677.05, 1 }, },	-- Crown of the Fiery Conqueror
@@ -1358,7 +1358,7 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 				{ "i", 71678.05, 1 },	-- Leggings of the Fiery Conqueror
 			},
 		}),
-		
+
 		-- Protection
 		i(71524, {	-- Immolation Faceguard
 			["cost"] = { { "i", 71677.05, 1 }, },	-- Crown of the Fiery Conqueror
@@ -1516,7 +1516,7 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 				{ "i", 71678.05, 1 },	-- Leggings of the Fiery Conqueror
 			},
 		}),
-		
+
 		-- Holy
 		i(71528, {	-- Cowl of the Cleansing Flame
 			["cost"] = { { "i", 71677.05, 1 }, },	-- Crown of the Fiery Conqueror
@@ -1569,7 +1569,7 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 				{ "i", 71685.05, 1 },	-- Leggings of the Fiery Protector
 			},
 		}),
-		
+
 		-- Elemental
 		i(71554, {	-- Erupting Volcanic Headpiece
 			["cost"] = { { "i", 71684.05, 1 }, },	-- Crown of the Fiery Protector
@@ -1595,7 +1595,7 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 				{ "i", 71685.05, 1 },	-- Leggings of the Fiery Protector
 			},
 		}),
-		
+
 		-- Restoration
 		i(71544, {	-- Erupting Volcanic Faceguard
 			["cost"] = { { "i", 71684.05, 1 }, },	-- Crown of the Fiery Protector
@@ -1700,7 +1700,7 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 				{ "i", 71671.05, 1 },	-- Leggings of the Fiery Vanquisher
 			},
 		}),
-		
+
 		-- Feral
 		i(71488, {	-- Obsidian Arborweave Headpiece
 			["cost"] = { { "i", 71670.05, 1 }, },	-- Crown of the Fiery Vanquisher
@@ -1726,7 +1726,7 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 				{ "i", 71671.05, 1 },	-- Leggings of the Fiery Vanquisher
 			},
 		}),
-		
+
 		-- Restoration
 		i(71492, {	-- Obsidian Arborweave Helm
 			["cost"] = { { "i", 71670.05, 1 }, },	-- Crown of the Fiery Vanquisher
@@ -1806,14 +1806,14 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 		i(60345),	-- Reinforced Sapphirium Gauntlets
 		i(60344),	-- Reinforced Sapphirium Battleplate
 		i(60347),	-- Reinforced Sapphirium Legplates
-		
+
 		-- Holy
 		i(60359),	-- Reinforced Sapphirium Headguard
 		i(60362),	-- Reinforced Sapphirium Mantle
 		i(60363),	-- Reinforced Sapphirium Gloves
 		i(60360),	-- Reinforced Sapphirium Breastplate
 		i(60361),	-- Reinforced Sapphirium Greaves
-		
+
 		-- Protection
 		i(60356),	-- Reinforced Sapphirium Faceguard
 		i(60358),	-- Reinforced Sapphirium Shoulderguards
@@ -1828,7 +1828,7 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 		i(60340),	-- Magma Plated Gauntlets
 		i(60339),	-- Magma Plated Battleplate
 		i(60342),	-- Magma Plated Legplates
-		
+
 		-- Protection
 		i(60351),	-- Magma Plated Faceguard
 		i(60353),	-- Magma Plated Shoulderguards
@@ -1857,7 +1857,7 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 		i(60257),	-- Mercurial Gloves
 		i(60254),	-- Mercurial Vestment
 		i(60255),	-- Mercurial Leggings
-		
+
 		-- Holy
 		i(60258),	-- Mercurial Cowl
 		i(60262),	-- Mercurial Mantle
@@ -1872,14 +1872,14 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 		i(60319),	-- Grips of the Raging Elements
 		i(60318),	-- Cuirass of the Raging Elements
 		i(60321),	-- Legguards of the Raging Elements
-		
+
 		-- Elemental
 		i(60315),	-- Headpiece of the Raging Elements
 		i(60317),	-- Shoulderwraps of the Raging Elements
 		i(60314),	-- Gloves of the Raging Elements
 		i(60313),	-- Hauberk of the Raging Elements
 		i(60316),	-- Kilt of the Raging Elements
-		
+
 		-- Restoration
 		i(60308),	-- Faceguard of the Raging Elements
 		i(60311),	-- Mantle of the Raging Elements
@@ -1908,14 +1908,14 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 		i(60285),	-- Stormrider's Gloves
 		i(60281),	-- Stormrider's Vestment
 		i(60283),	-- Stormrider's Leggings
-		
+
 		-- Feral
 		i(60286),	-- Stormrider's Headpiece
 		i(60289),	-- Stormrider's Spaulders
 		i(60290),	-- Stormrider's Grips
 		i(60287),	-- Stormrider's Raiment
 		i(60288),	-- Stormrider's Legguards
-		
+
 		-- Restoration
 		i(60277),	-- Stormrider's Helm
 		i(60279),	-- Stormrider's Mantle
@@ -2004,7 +2004,7 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 				{ "i", 60347, 1 },	-- Reinforced Sapphirium Legplates
 			},
 		}),
-		
+
 		-- Holy
 		i(65221, {	-- Reinforced Sapphirium Headguard
 			["cost"] = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
@@ -2030,7 +2030,7 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 				{ "i", 60361, 1 },	-- Reinforced Sapphirium Greaves
 			},
 		}),
-		
+
 		-- Protection
 		i(65226, {	-- Reinforced Sapphirium Faceguard
 			["cost"] = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
@@ -2083,7 +2083,7 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 				{ "i", 60342, 1 },	-- Magma Plated Legplates
 			},
 		}),
-		
+
 		-- Protection
 		i(65186, {	-- Magma Plated Faceguard
 			["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
@@ -2188,7 +2188,7 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 				{ "i", 60255, 1 },	-- Mercurial Leggings
 			},
 		}),
-		
+
 		-- Holy
 		i(65230, {	-- Mercurial Cowl
 			["cost"] = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
@@ -2241,7 +2241,7 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 				{ "i", 60321, 1 },	-- Legguards of the Raging Elements
 			},
 		}),
-		
+
 		-- Elemental
 		i(65256, {	-- Headpiece of the Raging Elements
 			["cost"] = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
@@ -2267,7 +2267,7 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 				{ "i", 60316, 1 },	-- Kilt of the Raging Elements
 			},
 		}),
-		
+
 		-- Restoration
 		i(65246, {	-- Faceguard of the Raging Elements
 			["cost"] = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
@@ -2372,7 +2372,7 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 				{ "i", 60283, 1 },	-- Stormrider's Leggings
 			},
 		}),
-		
+
 		-- Feral
 		i(65190, {	-- Stormrider's Headpiece
 			["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
@@ -2398,7 +2398,7 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 				{ "i", 60288, 1 },	-- Stormrider's Legguards
 			},
 		}),
-		
+
 		-- Restoration
 		i(65195, {	-- Stormrider's Helm
 			["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
@@ -7359,6 +7359,18 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						vicioussaddle(i(163123)),	-- Vicious War Riverbeast (MOUNT!)
 						vicioussaddle(i(173714)),	-- Vicious White Warsaber (MOUNT!)
 						vicioussaddle(i(143648)),	-- Vicious War Turtle (A) (MOUNT!)
+						vicioussaddle(i(184014, {	-- Vicious War Spider (A) (MOUNT!)
+							["timeline"] = { ADDED_DF_REL },
+						})),
+						vicioussaddle(i(186178, {	-- Vicious War Gorm (A) (MOUNT!)
+							["timeline"] = { ADDED_DF_REL },
+						})),
+						vicioussaddle(i(187681, {	-- Vicious War Gulper (A) (MOUNT!)
+							["timeline"] = { ADDED_DF_REL },
+						})),
+						vicioussaddle(i(187644, {	-- Vicious Warstalker (A) (MOUNT!)
+							["timeline"] = { ADDED_DF_REL },
+						})),
 					}),
 				}),
 				-- #if ANYCLASSIC
@@ -7754,7 +7766,7 @@ root("HiddenQuestTriggers", {
 -- #endif
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	-- #if BEFORE 3.0.1.8634
+	-- #if BEFORE WRATH
 	i(38579, {	-- Venomous Tome
 		["timeline"] = { "created 2.4.2", "added 3.0.1.8634" },
 	}),

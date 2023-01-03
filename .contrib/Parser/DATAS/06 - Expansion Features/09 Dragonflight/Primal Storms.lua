@@ -4,6 +4,7 @@
 local ELEMENTAL_OVERFLOW = 2118;
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(PRIMAL_STORMS, {
+		["maps"] = { VALDRAKKEN },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(16489, {	-- Chasing Storms in Thaldraszus
@@ -75,7 +76,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						16461,	-- Stormed Off
 						16502,	-- Storming the Runway
 					}},
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				ach(16486, {	-- Sandstorms in Thaldraszus
 					["maps"] = { THALDRASZUS },
@@ -170,9 +171,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
-				ach(16502, {	-- Storming the Runway
-					["maps"] = { VALDRAKKEN },
-				}),
+				ach(16502),	-- Storming the Runway
 				ach(16485, {	-- Thunderstorms in Thaldraszus
 					["maps"] = { THALDRASZUS },
 				}),
@@ -186,35 +185,36 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["maps"] = { THE_WAKING_SHORES },
 				}),
 			}),
-			n(BONUS_OBJECTIVES, {
-				-- not sure why these are listed in the Main city?
+			n(BONUS_OBJECTIVES, sharedData({
+				["isWeekly"] = true,
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+			},{
 				q(69951, {	-- Bouldron
 					["qg"] = 193644,	-- Bouldron
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(69952, {	-- Crystalus
+					["qg"] = 193645,	-- Crystalus
 				}),
 				q(69955, {	-- Emblazion
 					["qg"] = 193650,	-- Emblazion
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(69961, {	-- Frozion
 					["qg"] = 193655,	-- Frozion
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(69959, {	-- Gaelzion
 					["qg"] = 193653,	-- Gaelzion
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
+				q(69960, {	-- Gravlion
+					["qg"] = 193654,	-- Gravlion
 				}),
 				q(69956, {	-- Grizzlerock
 					["qg"] = 193652,	-- Grizzlerock
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(69970, {	-- Kain Firebrand
 					["qg"] = 193675,	-- Kain Firebrand
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(69953, {	-- Karantun
 					["qg"] = 193647,	-- Karantun
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(69971, {	-- Iceblade Trio
 					["qgs"] = {
@@ -222,24 +222,55 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						193678,	-- Fieraan <Second Iceblade>
 						193679,	-- Leerain <Third Iceblade>
 					},
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(69954, {	-- Infernum
 					["qg"] = 193648,	-- Infernum
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(69974, {	-- Pipspark Thundersnap
 					["qg"] = 193684,	-- Pipspark Thundersnap
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(69973, {	-- Rouen Icewind
 					["qg"] = 193682,	-- Rouen Icewind
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(69969, {	-- Voraazka
 					["qg"] = 193674,	-- Voraazka
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
+				q(69972, {	-- Zurgaz Corebreaker
+					["qg"] = 193680,	-- Zurgaz Corebreaker
+				}),
+			})),
+			n(COMMON_BOSS_DROPS, {
+				["description"] = "These drops appear to be available from any Rare (Primal or not) which spawns within an area affected by a Primal Storm.",
+				["crs"] = {
+					193644,	-- Bouldron
+					193645,	-- Crystalus
+					193650,	-- Emblazion <Progeny of Fire>
+					193678,	-- Fieraan <Second Iceblade>
+					193655,	-- Frozion <Progeny of Water>
+					193653,	-- Gaelzion <Progeny of Air>
+					193654,	-- Gravlion <Progeny of Earth>
+					193652,	-- Grizzlerock
+					193648,	-- Infernum
+					193675,	-- Kain Firebrand
+					193647,	-- Karantun
+					193679,	-- Leerain <Third Iceblade>
+					193677,	-- Maeleera <First Iceblade>
+					193686,	-- Neela Firebane
+					193682,	-- Rouen Icewind
+					193684,	-- Pipspark Thundersnap
+					193674,	-- Voraazka
+					193680,	-- Zurgaz Corebreaker
+				},
+				["g"] = {
+					i(200199),	-- Elements' Burden
+					i(200294),	-- Primal Chain Hauberk
+					i(200198),	-- Primalist Prison (TOY!)
+					-- Enchanting knowledge drops (one-time)
+					i(201356), -- Glimmer of Fire
+					i(201357), -- Glimmer of Frost
+					i(201358), -- Glimmer of Air
+					i(201359), -- Glimmer of Earth
+				},
 			}),
 			n(SPECIAL, {
 				i(201296, {	-- Docile Airy Soul
@@ -252,7 +283,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						i(193921),	-- Airy Soul
 						i(201262),	-- Gale Spirit (PET!)
 					},
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				i(201297, {	-- Docile Earthen Soul
 					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
@@ -264,7 +295,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						i(193920),	-- Earthen Soul
 						i(201260),	-- Dust Spirit (PET!)
 					},
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				i(201298, {	-- Docile Fiery Soul
 					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
@@ -276,7 +307,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						i(193362),	-- Fiery Soul
 						i(201261),	-- Blaze Spirit (PET!)
 					},
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				i(201299, {	-- Docile Frosty Soul
 					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
@@ -288,32 +319,50 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						i(193919),	-- Frosty Soul
 						i(201265),	-- Tide Spirit (PET!)
 					},
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 			}),
+			petbattle(filter(BATTLE_PETS, {
+				pet(3384, {	-- Storm-Touched Bluefeather (PET!)
+					["cr"] = 192259,	-- Storm-Touched Bluefeather
+					["maps"] = { THALDRASZUS },
+				}),
+				pet(3354, {	-- Storm-Touched Ottuk (PET!)
+					["cr"] = 192256,	-- Storm-Touched Ottuk
+					["maps"] = { THE_AZURE_SPAN },
+				}),
+				pet(3385, {	-- Storm-Touched Stomper (PET!)
+					["cr"] = 192029,	-- Storm-Touched Stomper
+					["maps"] = { THE_WAKING_SHORES },
+				}),
+				pet(3329, {	-- Storm-Touched Timbertooth (PET!)
+					["cr"] = 189660,	-- Storm-Touched Timbertooth
+					["maps"] = { OHNAHRAN_PLAINS },
+				}),
+			})),
 			n(RARES, sharedData({
 				["isDaily"] = true,
 			},{
 				n(193644, {	-- Bouldron
 					["coord"] = { 26.2, 75.6, THE_WAKING_SHORES },
 					["questID"] = 73986,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200231),	-- Flaming Stonescale Bulwark
+					},
 				}),
 				n(193645, {	-- Crystalus
 					["coord"] = { 36.1, 36.1, OHNAHRAN_PLAINS },
 					["questID"] = 73989,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200301),	-- Reclaimed Tuskarr Harpoon
+					},
 				}),
 				n(193650, {	-- Emblazion <Progeny of Fire>
-					-- ["coord"] = { X, Y, MAP },
+					["coord"] = { 29.6, 53.8, THE_WAKING_SHORES },
 					["questID"] = 73991,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200307),	-- Viciously Hooked Cleaver
+					},
 				}),
 				n(193678, {	-- Fieraan <Second Iceblade>
 					-- ["coord"] = { X, Y, MAP },
@@ -340,18 +389,18 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 				n(193654, {	-- Gravlion <Progeny of Earth>
-					-- ["coord"] = { X, Y, MAP },
-					-- ["questID"] = ,
+					["coord"] = { 60.7, 56.3, THALDRASZUS },
+					["questID"] = 73998,
 					-- ["g"] = {
 
 					--},
 				}),
 				n(193652, {	-- Grizzlerock
 					["coord"] = { 59.4, 61.6, THALDRASZUS },
-					-- ["questID"] = ,
-					-- ["g"] = {
-
-					--},
+					["questID"] = 73999,
+					["g"] = {
+						i(200145),	-- Hilted Monolith
+					},
 				}),
 				n(193648, {	-- Infernum
 					["coord"] = { 58.8, 68.4, THE_AZURE_SPAN },
@@ -363,9 +412,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(193675, {	-- Kain Firebrand
 					["coord"] = { 64.0, 72.2, THE_WAKING_SHORES },
 					["questID"] = 74006,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200155),	-- Haphazardly Welded Protector
+					},
 				}),
 				n(193647, {	-- Karantun
 					["coord"] = { 26.8, 75.4, THE_WAKING_SHORES },
@@ -384,16 +433,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(193677, {	-- Maeleera <First Iceblade>
 					["coord"] = { 48.6, 25.2, THE_AZURE_SPAN },
 					["questID"] = 74009,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200250),	-- Frost Tipped Glaive
+					},
 				}),
 				n(193686, {	-- Neela Firebane
 					["coord"] = { 67.6, 27.0, THE_WAKING_SHORES },
-					-- ["questID"] = ,
-					-- ["g"] = {
-
-					--},
+					["questID"] = 74016,
+					["g"] = {
+						i(200181),	-- Blade of Blazing Torment
+					},
 				}),
 				n(193682, {	-- Rouen Icewind
 					["coord"] = { 61.4, 60.6, THALDRASZUS },
@@ -405,9 +454,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				n(193684, {	-- Pipspark Thundersnap
 					["coord"] = { 53.4, 26.2, PRIMALIST_TOMORROW },
 					["questID"] = 74022,
-					-- ["g"] = {
-
-					--},
+					["g"] = {
+						i(200741),	-- Pipspark's Prestigious Pendant of Protection
+					},
 				}),
 				n(193674, {	-- Voraazka
 					["coord"] = { 27.7, 72.6, THE_WAKING_SHORES },
@@ -418,8 +467,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 				n(193680, {	-- Zurgaz Corebreaker
-					-- ["coord"] = { X, Y, MAP },
-					-- ["questID"] = ,
+					["coord"] = { 24.3, 75.5, THE_WAKING_SHORES },
+					["questID"] = 74039,
 					-- ["g"] = {
 
 					--},
@@ -428,22 +477,27 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			n(QUESTS, {
 				q(71242, {	-- Supporting the Storm Researchers
 					["provider"] = {"i",200675},	-- Elemental Overflow Cluster
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(70753, {	-- Dissipating the Air Primalists
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
 					["provider"] = {"i",199749},	-- Primal Air Core
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(70754, {	-- Extinguishing the Fire Primalists
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
 					["provider"] = {"i",199750},	-- Primal Fire Core
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				}),
+				q(70723, {	-- Shattering the Earth Primalists
+					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
+					["provider"] = {"i",199691},	-- Primal Earth Core
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(70752, {	-- Vaporizing the Water Primalists
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
 					["provider"] = {"i",199748},	-- Primal Water Core
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 			}),
 			n(REWARDS, {

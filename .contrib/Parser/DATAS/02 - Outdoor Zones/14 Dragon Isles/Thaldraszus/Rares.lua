@@ -18,6 +18,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["cost"] = {{"i",197733,4}},	-- 4x Unsustainable Containment Core
 				["g"] = {
 					i(197138),	-- Highland Drake: Striped Pattern
+					i(200299),	-- Strange Clockwork Gladius
 				},
 			}),
 			n(193220, {	-- Broodweaver Araznae <Mother of Spiders>
@@ -25,6 +26,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73987,
 				["g"] = {
 					-- is part of the DF>Global Rare Loottable
+					-- specfic drops
+					i(200758),	-- Breastplate of Storied Antiquity (needs to move to a CBD somehow sometime for certain Rares)
+					i(200147),	-- Web-Woven Robe
 				},
 			}),
 			n(193658, {	-- Corrupted Proto-Dragon
@@ -51,24 +55,24 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193125, {	-- Goremaul the Gluttonous
 				["coord"] = { 53.4, 41.0, THALDRASZUS },
 				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200436),	-- Gorestained Hauberk
+				},
 			}),
 			n(193229, {	-- Henlare
 				["coord"] = { 55.6, 77.4, THALDRASZUS },
 				["questID"] = 72814,
 				["g"] = {
 					i(200880),	-- Wind-Sealed Mana Capsule
-					-- is part of the DF>Global Rare Loottable
 				},
 			}),
 			n(193126, {	-- Innumerable Ruination
 				["coord"] = { 57.8, 83.8, THALDRASZUS },
 				["questID"] = 73881,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200760),	-- Unstable Arcane Cell
+					i(197130),	-- Highland Drake: Stag Horns
+				},
 			}),
 			n(193273, {	-- Liskron the Dazzling
 				["coord"] = { 36.7, 72.8, THALDRASZUS },
@@ -87,18 +91,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193241, {	-- Lord Epochbrgl <Time-Lost>
 				["description"] = "From a Time-Lost Portal.",
-				-- ["coord"] = { X, Y, THALDRASZUS },
-				-- ["questID"] = 69882,
-				-- ["g"] = {
-
-				-- },
+				["coord"] = { 62.2, 81.7, THALDRASZUS },
+				["questID"] = 74066,
+				["g"] = {
+					i(200185),	-- Grips of the Everflowing Ocean
+				},
 			}),
 			n(193246, {	-- Matriarch Remalla <Temple Menace>
 				-- ["coord"] = { X, Y, THALDRASZUS },
 				-- ["questID"] = 69883,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(200257),	-- Decay Infused Branch
+				},
 			}),
 			n(193688, {	-- Phenran
 				-- ["coord"] = { X, Y, THALDRASZUS },
@@ -111,13 +115,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 57.2, 84.2, THALDRASZUS },
 				["questID"] = 74021,
 				["g"] = {
-					i(200126),	-- Mantle of Copious Chronologies
 					i(200148),	-- A Collection of Me (TOY!)
+					i(200126),	-- Mantle of Copious Chronologies
+					i(200202),	-- Tomorrow's Chains
 				},
 			}),
 			n(193130, {	-- Pleasant Alpha
 				["coord"] = { 37.7, 78.7, THALDRASZUS },
-				-- ["questID"] = 73889, -- confirm
+				["questID"] = 73889,
 				-- ["g"] = {
 
 				-- },
@@ -130,8 +135,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193143, {	-- Razk'vex the Untamed
-				-- ["coord"] = { X, Y, THALDRASZUS },
-				-- ["questID"] = ,
+				["coord"] = { 50.3, 49.7, THALDRASZUS },
+				["questID"] = 73892,
 				-- ["g"] = {
 
 				-- },
@@ -155,20 +160,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 74029,
 				["g"] = {
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
+					i(200161),	-- Razorwind Talisman
 				},
 			}),
 			n(191305, {	-- The Great Shellkhan
 				["description"] = "Needs fresh fish from Azure Span.",
 				["coord"] = { 38.5, 68.2, THALDRASZUS },
-				-- ["questID"] = 72121,
-				["cost"] = { { "i", 200949, 1 }, },	-- 1xCase of Fresh Gleamfish
+				["questID"] = 74085,
+				["cost"] = { { "i", 200949, 1 }, },	-- 1x Case of Fresh Gleamfish
 				["g"] = {
 					i(200999),	-- The Super Shellkhan Gang (TOY!)
 					-- is part of the DF>Global Rare Loottable
 				},
 			}),
 			n(183984, {	-- The Weeping Vilomah
-				["coord"] = { 49.6, 72.8, THALDRASZUS },
+				["description"] = "Inside cave, speak to 'Boomhooch the Lost'.",
+				["crs"] = { 193206 },	-- Boomhooch the Lost
+				["coords"] = {
+					{ 49.6, 72.8, THALDRASZUS },
+					{ 47.5, 71.7, THALDRASZUS },	-- cave
+				},
 				["questID"] = 74086,
 				["g"] = {
 					i(200214),	-- Grasp of the Weeping Widow
@@ -186,11 +197,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- ["questID"] = 70947,
 				["g"] = {
 					i(200300),	-- Sack of Looted Treasures
+					i(200291),	-- Waterlogged Racing Grips
 				},
 			}),
 			n(193161, {	-- Woolfang
 				["coord"] = { 47.9, 49.8, THALDRASZUS },
-				-- ["questID"] = 69850,
+				["questID"] = 74089,
 				["g"] = {
 					-- is part of the DF>Global Rare Loottable
 				},
@@ -202,7 +214,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THALDRASZUS, {
 		n(RARES, {
-			q(72050),	-- first kill of Ancient Protector...? maybe
+			q(72050),	-- first kill of Ancient Protector...? maybe. Quest name is Balgar.
 		}),
 	}),
 })));

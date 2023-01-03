@@ -1,8 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	inst(1182, {	-- Necrotic Wake
 		["coord"] = { 40.0, 55.3, BASTION },
 		["maps"] = {
@@ -10,32 +9,21 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 			1667,	-- Necrotic Wake
 			1668,	-- Necrotic Wake
 		},
-		["lvl"] = { 50 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(14339, {	-- Shard Labor
+				header(HEADERS.Achievement, 14339, {	-- Shard Labor
 					["description"] = "Quest tracking must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide.  There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.\n\nGoblin Gliders are required for some of the shards in Bastion.  Being part of the |cFFfe040fVenthyr Covenant|r is not required, but the |cFFfe040fDoor of Shadows|r ability does trivialize a few of the more annoying shards!",
-					["collectible"] = false,
-					["lvl"] = { 60 },
-					["g"] = {
+					["g"] = sharedData({ ["name"] = "Anima Crystal Shard", ["icon"] = 3528288 }, {
 						q(61296, {	-- Anima Crystal Shard
 							["description"] = "After Blightbone, go up the stairs to the middle platform.  Straight ahead is a large fallen bell.  The shard is behind it on the right-hand side.",
-							["name"] = "Anima Crystal Shard",
-							["icon"] = 3528288,
 						}),
 						q(61297, {	-- Anima Crystal Shard
 							["description"] = "Before Amarth, at the middle of the top of the final platform is a little outcropping that juts north.  Climb behind the large broken pillar.  Behind it is a small broken pillar, and the shard is behind that.",
-							["name"] = "Anima Crystal Shard",
-							["icon"] = 3528288,
 						}),
-					},
+					}),
 				}),
 			}),
-			n(QUESTS, {
-				-- please don't delete this header!  a quest is linked here from outside, and with the header missing the category ports to the bottom of the list below all 3 instance difficulties
-			}),
-			--n(WORLD_QUESTS, {
-			--}),
+			n(QUESTS, {}),	-- Do Not Remove
 			n(CONDUITS, {
 				e(2395, {	-- Blightbone
 					["crs"] = { 162691 },	-- Blightbone
@@ -104,7 +92,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_D, {
 				e(2395, {	-- Blightbone
 					["crs"] = { 162691 },	-- Blightbone
 					["g"] = {
@@ -160,128 +148,121 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
-				["lvl"] = { 60 },
-				["g"] = {
-					e(2395, {	-- Blightbone
-						["crs"] = { 162691 },	-- Blightbone
-						["g"] = {
-							i(178730),	-- Engorged Worm Smasher
-							i(178735),	-- Blight Belcher
-							i(178732, {	-- Abominable Visage
-								["filterID"] = CLOTH,
-							}),
-							i(178733),	-- Blightbone Spaulders
-							i(178734),	-- Fused Bone Greatbelt
-							i(178731),	-- Viscera-Stitched Footpads
-							i(178736),	-- Stitchflesh's Misplaced Signet
-						},
-					}),
-					e(2391, {	-- Amarth, The Harvester
-						["crs"] = { 166855 },	-- Amarth, The Harvester
-						["g"] = {
-							i(178737),	-- Amarth's Spellblade
-							i(178738),	-- Rattling Deadeye Hood
-							i(178740),	-- Reanimator's Mantle
-							i(178741),	-- Risen Monstrosity Cuffs
-							i(178739),	-- Legplates of Unholy Frenzy
-							i(178742),	-- Bottled Chimera Toxin
-						},
-					}),
-					e(2392, {	-- Surgeon Stitchflesh
-						["crs"] = {
-							162689,	-- Surgeon Stitchflesh
-							164578,	-- Stitchflesh's Creation
-						},
-						["g"] = {
-							i(178743),	-- Stitchflesh's Scalpel
-							i(178750),	-- Encrusted Canopic Lid
-							i(178749),	-- Vile Butcher's Pauldrons
-							i(178744),	-- Freshly Embalmed Jerkin
-							i(178748),	-- Gory Surgeon's Gloves
-							i(178745),	-- Striders of Restless Malice
-							i(178772),	-- Satchel of Misbegotten Minions
-							i(178751),	-- Spare Meat Hook
-						},
-					}),
-					e(2396, {	-- Nalthor the Rimebinder
-						["crs"] = { 162693 },	-- Nalthor the Rimebinder
-						["g"] = {
-							ach(14367),	-- Heroic: The Necrotic Wake
-							i(178780),	-- Rimebinder's Runeblade
-							i(178777),	-- Dark Frost Helmet
-							i(178779),	-- Undying Chill Shoulderpads
-							i(178782),	-- Necropolis Lord's Shackles
-							i(178778),	-- Lichbone Legguards
-							i(178781),	-- Ritual Commander's Ring
-							i(178783),	-- Siphoning Phylactery Shard
-						},
-					}),
-				},
+			d(HEROIC_D, {
+				e(2395, {	-- Blightbone
+					["crs"] = { 162691 },	-- Blightbone
+					["g"] = {
+						i(178730),	-- Engorged Worm Smasher
+						i(178735),	-- Blight Belcher
+						i(178732, {	-- Abominable Visage
+							["filterID"] = CLOTH,
+						}),
+						i(178733),	-- Blightbone Spaulders
+						i(178734),	-- Fused Bone Greatbelt
+						i(178731),	-- Viscera-Stitched Footpads
+						i(178736),	-- Stitchflesh's Misplaced Signet
+					},
+				}),
+				e(2391, {	-- Amarth, The Harvester
+					["crs"] = { 166855 },	-- Amarth, The Harvester
+					["g"] = {
+						i(178737),	-- Amarth's Spellblade
+						i(178738),	-- Rattling Deadeye Hood
+						i(178740),	-- Reanimator's Mantle
+						i(178741),	-- Risen Monstrosity Cuffs
+						i(178739),	-- Legplates of Unholy Frenzy
+						i(178742),	-- Bottled Chimera Toxin
+					},
+				}),
+				e(2392, {	-- Surgeon Stitchflesh
+					["crs"] = {
+						162689,	-- Surgeon Stitchflesh
+						164578,	-- Stitchflesh's Creation
+					},
+					["g"] = {
+						i(178743),	-- Stitchflesh's Scalpel
+						i(178750),	-- Encrusted Canopic Lid
+						i(178749),	-- Vile Butcher's Pauldrons
+						i(178744),	-- Freshly Embalmed Jerkin
+						i(178748),	-- Gory Surgeon's Gloves
+						i(178745),	-- Striders of Restless Malice
+						i(178772),	-- Satchel of Misbegotten Minions
+						i(178751),	-- Spare Meat Hook
+					},
+				}),
+				e(2396, {	-- Nalthor the Rimebinder
+					["crs"] = { 162693 },	-- Nalthor the Rimebinder
+					["g"] = {
+						ach(14367),	-- Heroic: The Necrotic Wake
+						i(178780),	-- Rimebinder's Runeblade
+						i(178777),	-- Dark Frost Helmet
+						i(178779),	-- Undying Chill Shoulderpads
+						i(178782),	-- Necropolis Lord's Shackles
+						i(178778),	-- Lichbone Legguards
+						i(178781),	-- Ritual Commander's Ring
+						i(178783),	-- Siphoning Phylactery Shard
+					},
+				}),
 			}),
-			d(23, {	-- Mythic
-				["difficulties"] = { 8, 23 },
-				["lvl"] = { 60 },
-				["g"] = {
-					e(2395, {	-- Blightbone
-						["crs"] = { 162691 },	-- Blightbone
-						["g"] = {
-							i(178730),	-- Engorged Worm Smasher
-							i(178735),	-- Blight Belcher
-							i(178732, {	-- Abominable Visage
-								["filterID"] = CLOTH,
-							}),
-							i(178733),	-- Blightbone Spaulders
-							i(178734),	-- Fused Bone Greatbelt
-							i(178731),	-- Viscera-Stitched Footpads
-							i(178736),	-- Stitchflesh's Misplaced Signet
-						},
-					}),
-					e(2391, {	-- Amarth, The Harvester
-						["crs"] = { 166855 },	-- Amarth, The Harvester
-						["g"] = {
-							ach(14295),	-- Bountiful Harvest
-							i(178737),	-- Amarth's Spellblade
-							i(178738),	-- Rattling Deadeye Hood
-							i(178740),	-- Reanimator's Mantle
-							i(178741),	-- Risen Monstrosity Cuffs
-							i(178739),	-- Legplates of Unholy Frenzy
-							i(178742),	-- Bottled Chimera Toxin
-						},
-					}),
-					e(2392, {	-- Surgeon Stitchflesh
-						["crs"] = {
-							162689,	-- Surgeon Stitchflesh
-							164578,	-- Stitchflesh's Creation
-						},
-						["g"] = {
-							ach(14320),	-- Surgeon's Supplies
-							i(178743),	-- Stitchflesh's Scalpel
-							i(178750),	-- Encrusted Canopic Lid
-							i(178749),	-- Vile Butcher's Pauldrons
-							i(178744),	-- Freshly Embalmed Jerkin
-							i(178748),	-- Gory Surgeon's Gloves
-							i(178745),	-- Striders of Restless Malice
-							i(178772),	-- Satchel of Misbegotten Minions
-							i(178751),	-- Spare Meat Hook
-						},
-					}),
-					e(2396, {	-- Nalthor the Rimebinder
-						["crs"] = { 162693 },	-- Nalthor the Rimebinder
-						["g"] = {
-							ach(14368),	-- Mythic: The Necrotic Wake
-							ach(14285),	-- Ready for Raiding VII
-							i(181819),	-- Marrowfang (MOUNT!)
-							i(178780),	-- Rimebinder's Runeblade
-							i(178777),	-- Dark Frost Helmet
-							i(178779),	-- Undying Chill Shoulderpads
-							i(178782),	-- Necropolis Lord's Shackles
-							i(178778),	-- Lichbone Legguards
-							i(178781),	-- Ritual Commander's Ring
-							i(178783),	-- Siphoning Phylactery Shard
-						},
-					}),
-				},
+			d(MYTHIC_D, {
+				e(2395, {	-- Blightbone
+					["crs"] = { 162691 },	-- Blightbone
+					["g"] = {
+						i(178730),	-- Engorged Worm Smasher
+						i(178735),	-- Blight Belcher
+						i(178732, {	-- Abominable Visage
+							["filterID"] = CLOTH,
+						}),
+						i(178733),	-- Blightbone Spaulders
+						i(178734),	-- Fused Bone Greatbelt
+						i(178731),	-- Viscera-Stitched Footpads
+						i(178736),	-- Stitchflesh's Misplaced Signet
+					},
+				}),
+				e(2391, {	-- Amarth, The Harvester
+					["crs"] = { 166855 },	-- Amarth, The Harvester
+					["g"] = {
+						ach(14295),	-- Bountiful Harvest
+						i(178737),	-- Amarth's Spellblade
+						i(178738),	-- Rattling Deadeye Hood
+						i(178740),	-- Reanimator's Mantle
+						i(178741),	-- Risen Monstrosity Cuffs
+						i(178739),	-- Legplates of Unholy Frenzy
+						i(178742),	-- Bottled Chimera Toxin
+					},
+				}),
+				e(2392, {	-- Surgeon Stitchflesh
+					["crs"] = {
+						162689,	-- Surgeon Stitchflesh
+						164578,	-- Stitchflesh's Creation
+					},
+					["g"] = {
+						ach(14320),	-- Surgeon's Supplies
+						i(178743),	-- Stitchflesh's Scalpel
+						i(178750),	-- Encrusted Canopic Lid
+						i(178749),	-- Vile Butcher's Pauldrons
+						i(178744),	-- Freshly Embalmed Jerkin
+						i(178748),	-- Gory Surgeon's Gloves
+						i(178745),	-- Striders of Restless Malice
+						i(178772),	-- Satchel of Misbegotten Minions
+						i(178751),	-- Spare Meat Hook
+					},
+				}),
+				e(2396, {	-- Nalthor the Rimebinder
+					["crs"] = { 162693 },	-- Nalthor the Rimebinder
+					["g"] = {
+						ach(14368),	-- Mythic: The Necrotic Wake
+						ach(14285),	-- Ready for Raiding VII
+						i(181819),	-- Marrowfang (MOUNT!)
+						i(178780),	-- Rimebinder's Runeblade
+						i(178777),	-- Dark Frost Helmet
+						i(178779),	-- Undying Chill Shoulderpads
+						i(178782),	-- Necropolis Lord's Shackles
+						i(178778),	-- Lichbone Legguards
+						i(178781),	-- Ritual Commander's Ring
+						i(178783),	-- Siphoning Phylactery Shard
+					},
+				}),
 			}),
 		},
 	}),

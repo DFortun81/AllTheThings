@@ -4,9 +4,15 @@
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(VALDRAKKEN_ACCORD, {
 		n(WORLD_QUESTS, {
-			n(QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
-				
-			})),
+			n(WORLD_QUESTS, {
+				["sourceQuests"] = {
+					71232,	-- Renown of the Dragon Isles
+					72366,	-- HQT unlock on alts
+				},
+				["g"] = sharedData({ ["isWorldQuest"] = true, }, {
+
+				}),
+			}),
 			n(REWARDS, {
 
 			}),

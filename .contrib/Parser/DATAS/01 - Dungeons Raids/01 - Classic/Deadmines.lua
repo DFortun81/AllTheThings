@@ -586,7 +586,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["groups"] = {
 						-- #if BEFORE 4.0.3
 						classicAch(628, {	-- Deadmines
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								166,	-- The Defias Brotherhood (7/7)
 								373,	-- The Unsent Letter

@@ -1100,7 +1100,6 @@ pet(0, 3249, {			-- Lil' Ursoc
 ------------------
 -- PATCH 10.0.0 --
 ------------------
--- SOURCED
 pet(191886, 3274);	-- Alvin the Anvil
 pet(193852, 3269);	-- Azure Frillfish
 pet(193837, 3326);	-- Backswimmer Timbertooth
@@ -1109,6 +1108,7 @@ pet(198726, 3380);	-- Black Skitterbug
 pet(193834, 3321);	-- Blackfeather Nester
 pet(201261, 3411);	-- Blaze Spirit
 pet(199688, 3279);	-- Bronze Racing Enthusiast
+pet(202085, 3360);	-- Bugbiter Tortoise
 pet(193066, 3275);	-- Chestnut
 pet(199326, 3376);	-- Chip
 pet(199758, 3379);	-- Crimson Proto-Whelp
@@ -1130,6 +1130,7 @@ pet(193888, 3347);	-- Jeweled Emerald Whelpling
 pet(193889, 3256);	-- Jeweled Onyx Whelpling
 pet(193887, 3346);	-- Jeweled Ruby Whelpling
 pet(193886, 3344);	-- Jeweled Sapphire Whelpling
+pet(200874, 3406);	-- Lady Feathersworth
 pet(200872, 3405);	-- Living Mud Mask
 pet(194098, 3350);	-- Lord Basilton
 pet(199175, 3316);	-- Lubbins
@@ -1149,7 +1150,9 @@ pet(193572, 3306);	-- Quack-E
 pet(201441, 3407);	-- Scout
 pet(191936, 3263);	-- Secretive Frogduck
 pet(198353, 3368);	-- Shiverweb Broodling
+pet(201838, 3359);	-- Snowclaw Cub
 pet(200479, 3390);	-- Sophic Amalgamation
+pet(198622, 3342);	-- Spyragos
 pet(200114, 3382);	-- Stormie
 pet(201265, 3409);	-- Tide Spirit
 pet(201707, 3416);	-- Troubled Tome
@@ -1157,7 +1160,6 @@ pet(191932, 3262);	-- Violet Violence
 pet(199172, 3309);	-- Viridescent Duck
 pet(193225, 3284);	-- Whiskuk
 pet(193619, 3319);	-- Yipper
-
 pet(0, 3357);	-- Azure Crystalspine
 pet(0, 3266);	-- Black Slyvern Pup
 pet(0, 3403);	-- Blue Dasher
@@ -1182,6 +1184,10 @@ pet(0, 3280);	-- Shyfly
 pet(0, 3283);	-- Snowlemental
 pet(0, 3260);	-- Snowy Treeflitter
 pet(0, 3353);	-- Stoneshell
+pet(0, 3384);	-- Storm-Touched Bluefeather
+pet(0, 3354);	-- Storm-Touched Ottuk
+pet(0, 3385);	-- Storm-Touched Stomper
+pet(0, 3329);	-- Storm-Touched Timbertooth
 pet(0, 3282);	-- Swoglet
 pet(0, 3389);	-- The Quackcestor
 pet(0, 3318);	-- Thunderfoot Calf
@@ -1192,112 +1198,66 @@ pet(0, 3336);	-- Vorquin Runt
 pet(0, 3320);	-- Whitewhisker
 pet(0, 3301);	-- Wild Duckling
 pet(0, 3322);	-- Woodbiter Piculet
-
--- NOT SOURCED YET
-
-pet(191126, 0);	-- Obsidian Whelpling
-pet(0, 3257);	-- Test Beetle
-pet(191915, 3259);	-- Time-Lost Feral Rabbit
-pet(191930, 3261);	-- Blue Phoenix Hatchling
-pet(193620, 3267);	-- Time-Lost Slyvern
-pet(0, 3268);	-- Swog
-
-
-pet(193068, 3277);	-- Time-Lost Treeflitter
-
-
-pet(193235, 3285);	-- Scarlet Ottuk Pup
-
-
+-- NYI --
 pet(193363, 3290);	-- Auburntusk Calf
-pet(193364, 3291);	-- Time-Lost Baby Mammoth
-pet(193373, 3292);	-- Phoenix Wishwing
+pet(191930, 3261);	-- Blue Phoenix Hatchling
+pet(193854, 3333);	-- Blue Vorquin Foal
+pet(193835, 3323);	-- Brightfeather
 pet(193374, 3293);	-- Crimson Phoenix Hatchling
+pet(193853, 3331);	-- Emerald Frillfish
+pet(193614, 3314);	-- Groundshaker
+pet(193373, 3292);	-- Phoenix Wishwing
+pet(193380, 3298);	-- Pink Salamanther
+pet(193851, 3332);	-- Purple Frillfish
+pet(193908, 3338);	-- Sapphire Crystalspine
+pet(193235, 3285);	-- Scarlet Ottuk Pup
+pet(193364, 3291);	-- Time-Lost Baby Mammoth
+pet(193587, 3312);	-- Time-Lost Duck
+pet(191915, 3259);	-- Time-Lost Feral Rabbit
 pet(193377, 3294);	-- Time-Lost Phoenix Hatchling
 pet(193429, 3297);	-- Time-Lost Salamanther
-pet(193380, 3298);	-- Pink Salamanther
-
-
-
-pet(0, 3308);	-- Time-Lost Duckling
-pet(193587, 3312);	-- Time-Lost Duck
-
-pet(193614, 3314);	-- Groundshaker
-pet(193835, 3323);	-- Brightfeather
-pet(0, 3329);	-- Storm-Touched Timbertooth
+pet(193620, 3267);	-- Time-Lost Slyvern
 pet(193850, 3330);	-- Time-Lost Timbertooth
-pet(193853, 3331);	-- Emerald Frillfish
-pet(193851, 3332);	-- Purple Frillfish
-pet(193854, 3333);	-- Blue Vorquin Foal
+pet(193068, 3277);	-- Time-Lost Treeflitter
 pet(193855, 3334);	-- Time-Lost Vorquin Foal
-pet(0, 3338);	-- Sapphire Crystalspine
-pet(0, 3339);	-- Black Dragon Whelp
-pet(0, 3340);	-- Blue Dragon Whelp
-pet(0, 3341);	-- Red Dragon Whelp
-pet(0, 3342);	-- Spyragos
-pet(0, 3343);	-- Bronze Dragon Whelp
-
-
-
-pet(0, 3354);	-- Storm-Touched Ottuk
-
-
-
-
-pet(0, 3359);	-- Snowclaw Cub
-pet(0, 3360);	-- Bugbiter Tortoise
-pet(0, 3361);	-- Diamond Crab
-pet(0, 3362);	-- Sapphire Crab
-pet(0, 3363);	-- Truesilver Crab
-pet(0, 3364);	-- Striped Snakebiter
-
-
-pet(193908);	-- [PH] Blue Crystal Porcupine
-
-pet(192050);	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
-pet(193863);	-- zzOld - [PH] Dark Baby Vorquin (REUSE)
-pet(193063);	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
-pet(193862);	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
-pet(191929);	-- zzOld - [PH] White Flying Squirrel (REUSE)
-
-
-
-
-
-
-
-
-pet(0, 3377);	-- Gwosh
-
-
-
-
-
-pet(0, 3384);	-- Storm-Touched Bluefeather
-pet(0, 3385);	-- Storm-Touched Stomper
-pet(0, 3386);	-- Faceripper
-pet(0, 3387);	-- Bloodbiter
-pet(0, 3388);	-- Tina
-pet(0, 3391);	-- Phantus
-pet(0, 3392);	-- Skritches
 pet(0, 3393);	-- Anubisath Idol
-pet(0, 3394);	-- Mechanical Pandaren Dragonling
-pet(0, 3395);	-- Spectral Tiger Cub
-pet(0, 3396);	-- Enyobon
-pet(0, 3397);	-- Cockroach
+pet(0, 3401);	-- Arcantus
+pet(0, 3339);	-- Black Dragon Whelp
+pet(0, 3387);	-- Bloodbiter
+pet(0, 3340);	-- Blue Dragon Whelp
+pet(0, 3343);	-- Bronze Dragon Whelp
 pet(0, 3398);	-- Cat
 pet(0, 3400);	-- Chicken
-pet(0, 3401);	-- Arcantus
+pet(0, 3397);	-- Cockroach
+pet(0, 3361);	-- Diamond Crab
+pet(0, 3396);	-- Enyobon
+pet(0, 3386);	-- Faceripper
+pet(0, 3377);	-- Gwosh
+pet(0, 3394);	-- Mechanical Pandaren Dragonling
+pet(0, 3391);	-- Phantus
+pet(0, 3341);	-- Red Dragon Whelp
+pet(0, 3362);	-- Sapphire Crab
+pet(0, 3392);	-- Skritches
+pet(0, 3395);	-- Spectral Tiger Cub
 pet(0, 3402);	-- Stormamu
-
-
-pet(0, 3406);	-- Lady Feathersworth
-
+pet(0, 3364);	-- Striped Snakebiter
+pet(0, 3268);	-- Swog
+pet(0, 3257);	-- Test Beetle
+pet(0, 3308);	-- Time-Lost Duckling
+pet(0, 3388);	-- Tina
+pet(0, 3363);	-- Truesilver Crab
+pet(191126, 0);	-- Obsidian Whelpling
+pet(192050, 0);	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
+pet(193863, 0);	-- zzOld - [PH] Dark Baby Vorquin (REUSE)
+pet(193063, 0);	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
+pet(193862, 0);	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
+pet(191929, 0);	-- zzOld - [PH] White Flying Squirrel (REUSE)
 ------------------
 -- PATCH 10.0.5 --
 ------------------
 -- SOURCED
 pet(190607, 3252);	-- Garrlok
+
 
 -- #if ANYCLASSIC
 -----------------

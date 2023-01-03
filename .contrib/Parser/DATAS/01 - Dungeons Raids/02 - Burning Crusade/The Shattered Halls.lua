@@ -443,7 +443,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["creatureID"] = 16808,
 					["groups"] = {
 						classicAch(657, {	-- The Shattered Halls
-							-- #if BEFORE 3.0.1
+							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								10884,	-- Trial of the Naaru: Mercy
 								9492,	-- Turning the Tide
@@ -576,7 +576,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						["creatureID"] = 16808,
 						["groups"] = {
 							classicAch(678, {	-- Heroic: The Shattered Halls
-								-- #if BEFORE 3.0.1
+								-- #if BEFORE WRATH
 								["sourceQuests"] = {
 									10884,	-- Trial of the Naaru: Mercy
 									9524,	-- Imprisoned in the Citadel
