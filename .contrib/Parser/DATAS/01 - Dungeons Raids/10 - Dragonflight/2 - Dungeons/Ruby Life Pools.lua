@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	inst(1202, {	-- Ruby Life Pools
 		["coord"] = { 60.1, 75.7, THE_WAKING_SHORES },
 		["maps"] = {
@@ -19,7 +19,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 					["coord"] = { 60.0, 76.0, THE_WAKING_SHORES },
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_D, {
 				e(2488, {	-- Melidrussa Chillworn
 					["crs"] = { 188252 },	-- Melidrussa Chillworn
 					["g"] = {
@@ -60,7 +60,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_D, {
 				e(2488, {	-- Melidrussa Chillworn
 					["crs"] = { 188252 },	-- Melidrussa Chillworn
 					["g"] = {
@@ -102,7 +102,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 					},
 				}),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_D, {
 				e(2488, {	-- Melidrussa Chillworn
 					["crs"] = { 188252 },	-- Melidrussa Chillworn
 					["g"] = {
@@ -149,4 +149,4 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 			}),
 		},
 	})
-}))));
+})));

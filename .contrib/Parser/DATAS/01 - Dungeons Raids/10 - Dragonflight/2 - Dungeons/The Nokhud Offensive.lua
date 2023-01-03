@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	inst(1198, {	-- The Nokhud Offensive
 		["coord"] = { 60.9, 39.1, OHNAHRAN_PLAINS },
@@ -50,7 +49,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_D, {
 				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
@@ -101,7 +100,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_D, {
 				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
@@ -154,7 +153,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_D, {
 				n(ACHIEVEMENTS, {
 					ach(16620),	-- Ohuna Incubation
 				}),

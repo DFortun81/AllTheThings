@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
 	inst(1197, {	-- Uldaman: Legacy of Tyr
 		["coord"] = {41.2, 10.3, BADLANDS },
@@ -13,7 +12,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 			n(ZONE_DROPS, {
 				i(194256),	-- Pattern: Hood of Surging Time (RECIPE!)
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_D, {
 				e(2475, {	-- The Lost Dwarves
 					["crs"] = {
 						184581,	-- Baelog
@@ -74,7 +73,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_D, {
 				e(2475, {	-- The Lost Dwarves
 					["crs"] = {
 						184581,	-- Baelog
@@ -135,7 +134,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 					},
 				}),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_D, {
 				e(2475, {	-- The Lost Dwarves
 					["crs"] = {
 						184581,	-- Baelog

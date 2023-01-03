@@ -1,12 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 	m(ZERETH_MORTIS, {
 		n(ACHIEVEMENTS, {
-			ach(15391, {	-- Adventurer of Zereth Mortis
-				ach(15512),	-- Adventures in Zereth Mortis
-			}),
+			ach(15518),	-- A Means to an End
+			ach(15391),	-- Adventurer of Zereth Mortis
+			ach(15512),	-- Adventures in Zereth Mortis
 			ach(15211, sharedDataSelf({	-- Completing the Code
 					["cost"] = {
 						{ "i", 187909, 1 },	-- Unstable Containment Trap (temporary vendor item)
@@ -120,6 +120,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 				},
 			})),
+			ach(15513),	-- Curious Collections
 			ach(15404),	-- Cosmic Empowerment
 			ach(15392, {	-- Dune Dominance
 				i(190111),	-- Escutcheon of Beautiful Death
@@ -147,13 +148,23 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				crit(17),	-- Resonant Peaks
 			}),
 			ach(15336, {	-- From A to Zereth
-				i(187673),	-- Cryptic Aurelid (MOUNT!)
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					15259,	-- Secrets of the First Ones
+					15331,	-- Treasures of Zereth Mortis
+					15392,	-- Dune Dominance
+					15391,	-- Adventurer of Zereth Mortis
+					15402,	-- Cyphers of the First Ones
+					15407,	-- Synthe-fived!
+					15220,	-- The Enlightened
+				}},
+				["g"] = {
+					i(187673),	-- Cryptic Aurelid (MOUNT!)
+				},
 			}),
 			ach(15515),	-- Path to Enlightenment
 			ach(15502),	-- Sand, Sand Everywhere!
-			ach(15259, {	-- Secrets of the First Ones
-				ach(15518),	-- A Means to an End
-			}),
+			ach(15259),	-- Secrets of the First Ones
 			ach(15229, {	-- Traversing the Spheres
 				i(187860),	-- Mortis Mover (TOY!)
 				crit(1, {	-- Pollinated Extraction
@@ -196,17 +207,21 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["coord"] = { 34.5, 46.6, ZERETH_MORTIS },
 				}),
 			}),
-			ach(15331, {	-- Treasures of Zereth Mortis
-				ach(15513),	-- Curious Collections
-			}),
+			ach(15331),	-- Treasures of Zereth Mortis
 			ach(15514, {	-- Unlocking the Secrets
-				spell(366736),	-- Zereth Mortis Flying
-				crit(1),	-- Explore Zereth Mortis
-				crit(2),	-- Tales of the Exile
-				crit(3),	-- Curious Collections
-				crit(4),	-- Adventures in Zereth Mortis
-				crit(5),	-- Path to Enlightenment
-				crit(6),	-- A Means to an End
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					15224,	-- Explore Zereth Mortis
+					15509,	-- Tales of the Exile
+					15513,	-- Curious Collections
+					15512,	-- Adventures in Zereth Mortis
+					15515,	-- Path to Enlightenment
+					15518,	-- A Means to an End
+					15220,	-- The Enlightened
+				}},
+				["g"] = {
+					spell(366736),	-- Zereth Mortis Flying
+				},
 			}),
 		}),
 	}),

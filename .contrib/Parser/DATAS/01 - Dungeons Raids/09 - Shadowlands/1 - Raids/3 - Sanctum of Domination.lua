@@ -1349,7 +1349,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 }));
 
-root("HiddenQuestTriggers",  tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
+root("HiddenQuestTriggers",  tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	inst(1193, {	-- Sanctum of Domination
 		--q(63074),	-- Stygian ember loot >-- seems a too low number for this.
 		q(64604),	-- Stygian Ember from Bonesteel [] (Normal / Heroic)

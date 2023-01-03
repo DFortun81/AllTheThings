@@ -1,12 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_DROPS, {
 			-- Quest
 			i(192444, {	-- Resonating Disc
-				["timeline"] = { "added 9.2.5" },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			i(190579),	-- Unformed Essence
 			-- Schematic

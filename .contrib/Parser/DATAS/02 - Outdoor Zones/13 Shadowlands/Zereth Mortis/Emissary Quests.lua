@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 	m(ZERETH_MORTIS, {
 		n(EMISSARY_QUESTS, {
 			q(64867, {	-- Supplies from The Enlightened
@@ -31,11 +30,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						i(190939),	-- Walking Staff of the Enlightened Journey
 					}),
 				},
-			}),
-		}),
-		n(FACTIONS, {
-			faction(2478, {	-- The Enlightened
-				ach(15220),	-- The Enlightened
 			}),
 		}),
 	}),

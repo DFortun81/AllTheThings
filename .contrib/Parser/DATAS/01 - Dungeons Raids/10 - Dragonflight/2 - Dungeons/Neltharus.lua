@@ -19,7 +19,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- Don't have ObjectID etc.. atm
 				i(199229),	-- Schematic: Tinker: Breath of Neltharion (RECIPE!)
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_D, {
 				e(2490, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales
 					["g"] = {
@@ -65,7 +65,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_D, {
 				e(2490, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales
 					["g"] = {
@@ -111,7 +111,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_D, {
 				e(2490, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales
 					["g"] = {

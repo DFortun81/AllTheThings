@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_THUNDERING, bubbleDownSelf({
 			["timeline"] = { ADDED_DF_REL, REMOVED_DF_S2 }
@@ -31,7 +31,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["t
 		})),
 		i(201471),	-- Story of a Spectacular Victory
 	}),
-}))));
+})));
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(DF_TIER, {

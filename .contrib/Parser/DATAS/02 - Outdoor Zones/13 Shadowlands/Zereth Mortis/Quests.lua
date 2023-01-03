@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 	m(ZERETH_MORTIS, {
 		n(QUESTS, {
 			n(REWARDS, {
@@ -941,7 +941,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 181367 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.7, ZERETH_MORTIS },
 			}),
-			q(65324, bubbleDownSelf({ ["timeline"] = { "added 9.2.0.42488", "removed 9.2.0.42538"} }, {	-- Patterns Within Patterns (Chap 3)
+			q(65324, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, "removed 9.2.0.42538"} }, {	-- Patterns Within Patterns (Chap 3)
 				["sourceQuests"] = { 65305 },	-- The Way Forwards
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },

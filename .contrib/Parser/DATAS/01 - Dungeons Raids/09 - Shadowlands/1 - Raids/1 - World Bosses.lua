@@ -1,8 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["modID"] = 14,
@@ -73,7 +72,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					i(187882),	-- Alpaca Soul
 				},
 			}),
-			e(2468, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {	-- Antros <Keeper of the Antecedents>
+			e(2468, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3 } }, {	-- Antros <Keeper of the Antecedents>
 				["crs"] = {
 					182466,	-- Antros
 					182863,	-- Sav'thul
@@ -111,7 +110,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					{"modID",89},					-- Make the Items 'Fated'
 				},
 			}),
-			e(2456, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {	-- Mor'geth <Tormentor of the Damned>
+			e(2456, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S2 } }, {	-- Mor'geth <Tormentor of the Damned>
 				["questID"] = 64547,
 				["coord"] = { 69.1, 44.2, THE_MAW },
 				["maps"] = { 1820, 1821, 1822, 1823 },	-- all maps in the Maw

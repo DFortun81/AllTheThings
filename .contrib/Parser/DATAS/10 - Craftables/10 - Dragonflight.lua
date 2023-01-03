@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
+root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL }, {
 	i(190456),	-- Artisan's Mettle
 	-- Optional
 	i(190455),	-- Concentrated Primal Focus
@@ -2191,7 +2191,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			q(72508, { ["name"] = "First Craft: Surveyor's Seasoned Pants", }),
 		}),
 	}),
-}))));
+})));
 
 root("HiddenQuestTriggers", {
 	-- TODO: likely many of these to be added as actual tracking under ExpansionFeatures > DF > Professions

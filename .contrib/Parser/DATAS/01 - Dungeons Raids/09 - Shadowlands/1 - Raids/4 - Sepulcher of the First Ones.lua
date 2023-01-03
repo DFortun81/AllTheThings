@@ -1484,7 +1484,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				e(2467, {	-- Rygelon
 					["crs"] = { 182777 },	-- Rygelon
 					["g"] = {
-						ach(15468, {["timeline"] = { "added 9.2.7", REMOVED_DF_REL }}),	-- We Are All Made of Stars [Heroic]
+						ach(15468, {["timeline"] = { ADDED_SL_2_7, REMOVED_DF_REL }}),	-- We Are All Made of Stars [Heroic]
 						i(189852),	-- Antumbra, Shadow of the Cosmos
 						i(189853),	-- Astral Verdict
 						i(189851),	-- Devastated Worldshard
@@ -1808,7 +1808,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					["crs"] = { 182777 },	-- Rygelon
 					["g"] = {
 						ach(15488),	-- Mythic: Rygelon
-						ach(15469, {["timeline"] = { "added 9.2.7", REMOVED_DF_REL }}),	-- We Are All Made of Stars [Mythic]
+						ach(15469, {["timeline"] = { ADDED_SL_2_7, REMOVED_DF_REL }}),	-- We Are All Made of Stars [Mythic]
 						i(189852),	-- Antumbra, Shadow of the Cosmos
 						i(189853),	-- Astral Verdict
 						i(189851),	-- Devastated Worldshard

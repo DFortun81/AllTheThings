@@ -19,15 +19,14 @@ local UNFORMED_LATTICE = 189153;
 local VESPOID_LATTICE = 189154;
 local VIPERID_LATTICE = 189155;
 local VOMBATA_LATTICE = 189156;
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 	m(ZERETH_MORTIS, {
 		prof(PROTOFORM_SYNTHESIS, {
 			n(ACHIEVEMENTS, {
-				ach(15411, {	-- Synthe-supersized!
-					ach(15406),	-- Synthesized!
-					ach(15407),	-- Synthe-fived!
-					ach(15410),	-- Synthe-superfived!
-				}),
+				ach(15406),	-- Synthesized!
+				ach(15407),	-- Synthe-fived!
+				ach(15410),	-- Synthe-superfived!
+				ach(15411),	-- Synthe-supersized!
 			}),
 			n(QUESTS, {
 				-- Unlock Pet Forge Available with Dealic Understanding
