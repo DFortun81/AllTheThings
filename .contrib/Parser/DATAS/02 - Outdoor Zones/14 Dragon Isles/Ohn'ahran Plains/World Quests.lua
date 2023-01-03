@@ -45,6 +45,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(70646, {	-- Pressure Valve
 					["coord"] = { 79.2, 76.1, OHNAHRAN_PLAINS }
 				}),
+				q(70649, {	-- Swab Swog
+					["coord"] = { 81.4, 71.1, OHNAHRAN_PLAINS },
+				}),
 				q(70652, {	-- Take One Down, Pass It Around
 					["coord"] = { 24.5, 34.7, OHNAHRAN_PLAINS }
 				}),
