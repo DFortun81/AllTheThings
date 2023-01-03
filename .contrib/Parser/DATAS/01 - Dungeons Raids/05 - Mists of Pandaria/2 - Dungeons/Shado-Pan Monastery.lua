@@ -41,7 +41,7 @@ _.Instances = { tier(MOP_TIER, {
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				cr(56747, e(673, {	-- Gu Cloudstrike
 					i(144127),	-- Cloudstrike Pendant
 					i(143961),	-- Azure Serpent Chestguard
@@ -93,7 +93,7 @@ _.Instances = { tier(MOP_TIER, {
 					un(REMOVED_FROM_GAME, i(80917)),	-- Blastwalker Footguards (7.1 - Removed from Game!)
 				})),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 90,
 				["groups"] = {
 					cr(56747, e(673, {	-- Gu Cloudstrike

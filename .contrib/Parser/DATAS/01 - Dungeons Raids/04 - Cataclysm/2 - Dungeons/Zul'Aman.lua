@@ -8,7 +8,7 @@ _.Instances = { tier(CATA_TIER, {
 		["isRaid"] = false,	-- prevent merging isRaid from BC version
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["groups"] = {
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 85,
 				["groups"] = {
 					n(QUESTS, {

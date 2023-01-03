@@ -50,84 +50,84 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(ACHIEVEMENTS, {
 				ach(17110, {	-- The Primal Bulwark
 					crit(1, { -- Eranog
-						["_encounter"] = { 2480, LFR_R },
+						["_encounter"] = { 2480, LFR_RAID },
 					}),
 					crit(2, { -- The Primal Council
-						["_encounter"] = { 2486, LFR_R },
+						["_encounter"] = { 2486, LFR_RAID },
 					}),
 					crit(3, { -- Dathea, Ascended
-						["_encounter"] = { 2502, LFR_R },
+						["_encounter"] = { 2502, LFR_RAID },
 					}),
 				}),
 				ach(17111, {	-- Caverns of Infusion
 					crit(1, { -- Terros
-						["_encounter"] = { 2500, LFR_R },
+						["_encounter"] = { 2500, LFR_RAID },
 					}),
 					crit(2, { -- Sennarth, the Cold Breath
-						["_encounter"] = { 2482, LFR_R },
+						["_encounter"] = { 2482, LFR_RAID },
 					}),
 					crit(3, { -- Kurog Grimtotem
-						["_encounter"] = { 2491, LFR_R },
+						["_encounter"] = { 2491, LFR_RAID },
 					}),
 				}),
 				ach(17112, {	-- Fury of the Storm
 					crit(1, { -- Broodkeeper Diurna
-						["_encounter"] = { 2493, LFR_R },
+						["_encounter"] = { 2493, LFR_RAID },
 					}),
 					crit(2, { --Raszageth the Storm-Eater
-						["_encounter"] = { 2499, LFR_R },
+						["_encounter"] = { 2499, LFR_RAID },
 					}),
 				}),
 				ach(16343, {	-- Vault of the Incarnates
 					crit(1, { -- Eranog
-						["_encounter"] = { 2480, LFR_R },
+						["_encounter"] = { 2480, LFR_RAID },
 					}),
 					crit(2, { -- The Primal Council
-						["_encounter"] = { 2486, LFR_R },
+						["_encounter"] = { 2486, LFR_RAID },
 					}),
 					crit(3, { -- Dathea, Ascended
-						["_encounter"] = { 2502, LFR_R },
+						["_encounter"] = { 2502, LFR_RAID },
 					}),
 					crit(4, { -- Terros
-						["_encounter"] = { 2500, LFR_R },
+						["_encounter"] = { 2500, LFR_RAID },
 					}),
 					crit(5, { -- Sennarth, the Cold Breath
-						["_encounter"] = { 2482, LFR_R },
+						["_encounter"] = { 2482, LFR_RAID },
 					}),
 					crit(6, { -- Kurog Grimtotem
-						["_encounter"] = { 2491, LFR_R },
+						["_encounter"] = { 2491, LFR_RAID },
 					}),
 					crit(7, { -- Broodkeeper Diurna
-						["_encounter"] = { 2493, LFR_R },
+						["_encounter"] = { 2493, LFR_RAID },
 					}),
 					crit(8, { --Raszageth the Storm-Eater
-						["_encounter"] = { 2499, LFR_R },
+						["_encounter"] = { 2499, LFR_RAID },
 					}),
 				}),
 				ach(16345, {	-- Heroic: Vault of the Incarnates
 					crit(1, { -- Eranog
-						["_encounter"] = { 2480, HEROIC_R },
+						["_encounter"] = { 2480, HEROIC_RAID },
 					}),
 					crit(2, { -- The Primal Council
-						["_encounter"] = { 2486, HEROIC_R },
+						["_encounter"] = { 2486, HEROIC_RAID },
 					}),
 					crit(3, { -- Dathea, Ascended
-						["_encounter"] = { 2502, HEROIC_R },
+						["_encounter"] = { 2502, HEROIC_RAID },
 					}),
 					crit(4, { -- Terros
-						["_encounter"] = { 2500, HEROIC_R },
+						["_encounter"] = { 2500, HEROIC_RAID },
 					}),
 					crit(5, { -- Sennarth, the Cold Breath
-						["_encounter"] = { 2482, HEROIC_R },
+						["_encounter"] = { 2482, HEROIC_RAID },
 					}),
 					crit(6, { -- Kurog Grimtotem
-						["_encounter"] = { 2491, HEROIC_R },
+						["_encounter"] = { 2491, HEROIC_RAID },
 					}),
 					crit(7, { -- Broodkeeper Diurna
-						["_encounter"] = { 2493, HEROIC_R },
+						["_encounter"] = { 2493, HEROIC_RAID },
 					}),
 					crit(8, { --Raszageth the Storm-Eater
-						["_encounter"] = { 2499, HEROIC_R },
+						["_encounter"] = { 2499, HEROIC_RAID },
 					}),
 				}),
 				ach(16354, {	-- Mythic: Vault of the Incarnates
@@ -213,7 +213,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				i(201412),	-- Ancient Vault Artifact (Quest)
 				i(201411),	-- Ancient Vault Artifact (Repeatable)
 			}),
-			d(LFR_R, {
+			d(LFR_RAID, {
 				n(ZONE_DROPS, {
 					i(202004),	-- Brawler's Earthen Cuirass [BoE]
 					i(201992),	-- Emissary's Flamewrought Seal [BoE]
@@ -455,7 +455,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				}),
 			}),
-			d(NORMAL_R, {
+			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(71018, {	-- Vault of the Incarnates: Break a Few Eggs (N)
 						["provider"] = { "n", 193460 },	-- Kalecgos
@@ -708,7 +708,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(HEROIC_R, {
+			d(HEROIC_RAID, {
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
 						184972,	-- Eranog
@@ -975,7 +975,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(MYTHIC_R, {
+			d(MYTHIC_RAID, {
 				n(QUESTS, {
 					q(71020, {	-- Vault of the Incarnates: Break a Few Eggs (M)
 						["qg"] = 193460,	-- Kalecgos

@@ -7,7 +7,7 @@ _.Instances = { tier(CATA_TIER, {
 		["mapID"] = ZULGURUB,
 		["coord"] = { 72.0, 32.9, NORTHERN_STRANGLETHORN },	-- Zul'Gurub
 		["g"] = {
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 85,
 				["g"] = {
 					n(ACHIEVEMENTS, {

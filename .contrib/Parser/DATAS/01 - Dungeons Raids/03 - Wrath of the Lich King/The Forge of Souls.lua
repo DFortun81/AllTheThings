@@ -83,7 +83,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					["lvl"] = lvlsquish(78, 78, 25),
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				n(ZONE_DROPS, {
 					i(49852),	-- Coffin Nail
 					i(49854),	-- Mantle of Tattered Feathers
@@ -160,7 +160,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ZONE_DROPS, {
@@ -214,7 +214,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 							-- #if AFTER 7.3.5
 							i(49789),	-- Heartshiver (7.3.5 - Used to be only Normal Mode)
 							-- #endif
-							i(50210),	-- Seethe 
+							i(50210),	-- Seethe
 							i(50206),	-- Frayed Scoundrel's Cap
 							i(50214),	-- Helm of the Spirit Shock
 							i(50211),	-- Arcane Loops of Anger

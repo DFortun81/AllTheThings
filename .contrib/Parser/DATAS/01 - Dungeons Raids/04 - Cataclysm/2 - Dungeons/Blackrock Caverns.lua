@@ -109,7 +109,7 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				cr(39665, e(105, {	-- Rom'ogg Boncrusher
 					i(56312),	-- Torturer's Mercy
 					i(56314),	-- Shield of the Iron Maiden
@@ -183,7 +183,7 @@ _.Instances = { tier(CATA_TIER, {
 					un(REMOVED_FROM_GAME, i(55787)),	-- Witching Hourglass (7.3.5 - Removed from Game!)
 				})),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 85,
 				["groups"] = {
 					cr(39665, e(105, {	-- Rom'ogg Boncrusher

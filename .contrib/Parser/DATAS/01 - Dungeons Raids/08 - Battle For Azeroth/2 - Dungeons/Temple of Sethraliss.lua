@@ -25,7 +25,7 @@ _.Instances = { tier(BFA_TIER, {
 					["lvl"] = 120,
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				e(2142, {	-- Adderis and Aspix
 					["crs"] = {
 						133379,	-- Adderis
@@ -91,7 +91,7 @@ _.Instances = { tier(BFA_TIER, {
 					}),
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 120,
 				["g"] = {
 					e(2142, {	-- Adderis and Aspix
@@ -160,8 +160,8 @@ _.Instances = { tier(BFA_TIER, {
 					}),
 				},
 			}),
-			d(23, {	-- Mythic
-				["difficulties"] = { 8, 23 },
+			d(MYTHIC_DUNGEON, {
+				["difficulties"] = { 8, MYTHIC_DUNGEON },
 				["lvl"] = 120,
 				["g"] = {
 					ach(12503),	-- Snake Eyes

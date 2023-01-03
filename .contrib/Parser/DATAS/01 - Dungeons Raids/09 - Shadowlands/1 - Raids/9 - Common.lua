@@ -4,7 +4,7 @@
 
 root(ROOTS.Instances, tier(SL_TIER, {
 	n(COMMON_BOSS_DROPS, sharedData({["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },},{
-		d(15, {	-- Heroic
+		d(HEROIC_RAID, {
 			i(191910, {	-- Confounding Antique Cypher
 				["description"] = "Drops from Fated Heroic Shadowlands Raid bosses.",
 			}),
@@ -12,7 +12,7 @@ root(ROOTS.Instances, tier(SL_TIER, {
 				["cost"] = { { "i", 191910, 20 } },	-- 20x Confounding Antique Cypher
 			}),
 		}),
-		d(16, {	-- Mythic
+		d(MYTHIC_RAID, {
 			i(191926, {	-- Confounding Ancient Cypher
 				["description"] = "Drops from Fated Mythic Shadowlands Raid bosses.",
 			}),

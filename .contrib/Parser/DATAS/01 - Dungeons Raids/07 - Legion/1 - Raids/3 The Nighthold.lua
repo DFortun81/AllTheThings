@@ -62,11 +62,11 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 			}),
-			d(17, {	-- LFR Queue NPC
+			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
 			}),
-			d(17, {		-- LFR
+			d(LFR_RAID, {
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
@@ -383,7 +383,7 @@ _.Instances = { tier(LEGION_TIER, {
 					}))
 				}),
 			}),
-			d(14, {		-- Normal
+			d(NORMAL_RAID, {
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
@@ -760,7 +760,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(140823),	-- Warchief's Shattered Tusk
 				}))
 			}),
-			d(15, {		-- Heroic
+			d(HEROIC_RAID, {
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
@@ -1139,7 +1139,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(140823),	-- Warchief's Shattered Tusk
 				}))
 			}),
-			d(16, {		-- Mythic
+			d(MYTHIC_RAID, {
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {

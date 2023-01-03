@@ -27,10 +27,10 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(17, {	-- LFR Queue NPC
+			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
 			}),
-			d(17, {		-- LFR
+			d(LFR_RAID, {
 				n(ZONE_DROPS, {
 					un(REMOVED_FROM_GAME, i(115510, {	-- Elemental Rune
 						["g"] = {
@@ -257,7 +257,7 @@ _.Instances = { tier(WOD_TIER, {
 					})),
 				}),
 			}),
-			d(14, {		-- Normal
+			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(37029, {	-- Sigil of the Black Hand
 						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
@@ -791,7 +791,7 @@ _.Instances = { tier(WOD_TIER, {
 					un(REMOVED_FROM_GAME, i(115523)),	-- Blackhand's Severed Arm
 				})),
 			}),
-			d(15, {		-- Heroic
+			d(HEROIC_RAID, {
 				n(QUESTS, {
 					q(37030, {	-- Sigil of the Black Hand (Heroic)
 						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
@@ -1325,7 +1325,7 @@ _.Instances = { tier(WOD_TIER, {
 					un(REMOVED_FROM_GAME, i(115523)),	-- Blackhand's Severed Arm
 				}))
 			}),
-			d(16, {		-- Mythic
+			d(MYTHIC_RAID, {
 				n(QUESTS, {
 					q(37031, {	-- Sigil of the Black Hand (Mythic)
 						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic difficulty each week.",

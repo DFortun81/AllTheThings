@@ -22,7 +22,7 @@ _.Instances = { tier(LEGION_TIER, {
 					["isWorldQuest"] = true,
 				}),
 			}),
-			d(1, {		-- Normal
+			d(NORMAL_DUNGEON, {
 				cr(96756, e(1502, {	-- Ymiron, the Fallen King
 					i(134199),	-- Biornskin Belt
 					i(134217),	-- Bonespeaker Gloves
@@ -74,7 +74,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(124025),	-- Ancient Vrykul Hammer
 				})),
 			}),
-			d(2, {		-- Heroic
+			d(HEROIC_DUNGEON, {
 				cr(96756, e(1502, {	-- Ymiron, the Fallen King
 					i(134199),	-- Biornskin Belt
 					i(134217),	-- Bonespeaker Gloves
@@ -130,7 +130,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(124025),	-- Ancient Vrykul Hammer
 				})),
 			}),
-			d(23, {		-- Mythic
+			d(MYTHIC_DUNGEON, {
 				cr(96756, e(1502, {	-- Ymiron, the Fallen King
 					ach(10413),	-- Instant Karma
 					i(134199),	-- Biornskin Belt

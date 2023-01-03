@@ -53,7 +53,7 @@ _.Instances = { tier(CATA_TIER, {
 					["sourceQuests"] = { 30096 },	-- Murozond
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				n(ZONE_DROPS, {
 					i(76154, {	-- Breastplate of Despair
 						["crs"] = {

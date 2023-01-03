@@ -19,7 +19,7 @@ _.Instances = {
 				i(141643, {	-- Technique: Codex of the Clear Mind (RECIPE!)
 					["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS },
 				}),
-				d(1, {	-- Normal
+				d(NORMAL_DUNGEON, {
 					n(HANDS, bubbleDown({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109861),	-- Felflame Grips
 						i(109845),	-- Frost-Touched Gloves
@@ -515,7 +515,7 @@ _.Instances = {
 						})),
 					})),
 				}),
-				d(2, {	-- Heroic
+				d(HEROIC_DUNGEON, {
 					n(HANDS, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109861),	-- Felflame Grips
 						i(109845),	-- Frost-Touched Gloves
@@ -764,7 +764,7 @@ _.Instances = {
 						i(109777),	-- Unsullied Signet
 					})),
 				}),
-				d(23, {	-- Mythic
+				d(MYTHIC_DUNGEON, {
 					n(HANDS, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
 						i(109861),	-- Felflame Grips
 						i(109845),	-- Frost-Touched Gloves

@@ -30,7 +30,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 		["lvl"] = lvlsquish(68, 30, 68),
 		["groups"] = {
 			-- #if AFTER CATA
-			d(1, {	-- Normal (Legacy)
+			d(NORMAL_DUNGEON , {	-- Legacy
 			-- #endif
 				n(QUESTS, {
 					q(11165, {	-- A Troll Among Trolls

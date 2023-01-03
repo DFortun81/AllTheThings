@@ -118,7 +118,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }
 					},
 				}),
 			}),
-			d(17, {	-- LFR Queue NPC
+			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = {
 					177193,	-- Kiku
 					177208,	-- Eppu
@@ -128,7 +128,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }
 					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 				},
 			}),
-			d(17,  {	-- LFR
+			d(LFR_RAID, {
 				n(ZONE_DROPS, {
 					i(161071),	-- Bloody Experimenter's Wraps
 					i(160612),	-- Spellbound Specimen Handlers
@@ -326,7 +326,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }
 					},
 				}),
 			}),
-			d(14,  {	-- Normal
+			d(NORMAL_RAID, {
 				n(ZONE_DROPS, {
 					i(161071),	-- Bloody Experimenter's Wraps
 					i(160612),	-- Spellbound Specimen Handlers
@@ -498,7 +498,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }
 					},
 				}),
 			}),
-			d(15,  {	-- Heroic
+			d(HEROIC_RAID, {
 				n(ZONE_DROPS, {
 					i(161071),	-- Bloody Experimenter's Wraps
 					i(160612),	-- Spellbound Specimen Handlers
@@ -663,7 +663,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }
 					},
 				}),
 			}),
-			d(16,  {	-- Mythic
+			d(MYTHIC_RAID, {
 				n(ZONE_DROPS, {
 					["g"] = {
 						i(161071),	-- Bloody Experimenter's Wraps

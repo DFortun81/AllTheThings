@@ -17,7 +17,7 @@ _.Instances = { tier(MOP_TIER, {
 					i(87360),	-- Saboteur's Locket
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				cr(61567, e(693, {	-- Vizier Jin'bak
 					i(144022),	-- Hood of Viridian Residue
 					i(144162),	-- Engraved Amber Pendant
@@ -79,7 +79,7 @@ _.Instances = { tier(MOP_TIER, {
 					un(REMOVED_FROM_GAME, i(100969)),	-- Anchoring Sabatons (7.1 - Removed from Game!)
 				})),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 90,
 				["groups"] = {
 					cr(61567, e(693, {	-- Vizier Jin'bak

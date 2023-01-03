@@ -42,7 +42,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					["crs"] = { 154794 },
 				}),
 			})),
-			d(2,  {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 120,
 				["g"] = {
 					n(-379, {	-- Junkyard
@@ -211,8 +211,8 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					}),
 				},
 			}),
-			d(23, {	-- Mythic
-				["difficulties"] = { 8, 23 },
+			d(MYTHIC_DUNGEON, {
+				["difficulties"] = { 8, MYTHIC_DUNGEON },
 				["lvl"] = 120,
 				["g"] = {
 					ach(13789, {	-- Hertz Locker

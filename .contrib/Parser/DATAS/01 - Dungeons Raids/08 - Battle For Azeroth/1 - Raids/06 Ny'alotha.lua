@@ -50,7 +50,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }
 				i(171201),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 2] (RECIPE!)
 				i(171200),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 3] (RECIPE!)
 			}),
-			d(17, {	-- LFR Queue NPC
+			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = {
 					177193,	-- Kiku
 					177208,	-- Eppu
@@ -60,7 +60,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }
 					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 				},
 			}),
-			d(17, {	-- LFR
+			d(LFR_RAID, {
 				n(ZONE_DROPS, {
 					i(175005, {	-- Belt of Concealed Intent
 						["f"] = MAIL,
@@ -321,7 +321,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }
 					},
 				}),
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(58373, {	-- Ny'alotha: MOTHER's Guidance
 						["provider"] = { "n", 160177 },	-- Wrathion
@@ -549,7 +549,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }
 					},
 				}),
 			}),
-			d(15, {	-- Heroic
+			d(HEROIC_RAID, {
 				n(QUESTS, {
 					q(58374, {	-- Ny'alotha: MOTHER's Guidance
 						["provider"] = { "n", 160177 },	-- Wrathion
@@ -771,7 +771,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }
 					},
 				}),
 			}),
-			d(16, {	-- Mythic
+			d(MYTHIC_RAID, {
 				n(QUESTS, {
 					q(58375, {	-- Ny'alotha: MOTHER's Guidance
 						["provider"] = { "n", 160177 },	-- Wrathion

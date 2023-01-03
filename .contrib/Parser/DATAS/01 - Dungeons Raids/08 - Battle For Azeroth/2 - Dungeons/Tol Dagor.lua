@@ -30,7 +30,7 @@ _.Instances = { tier(BFA_TIER, {
 					["lvl"] = 120,
 				}),
 			}),
-			d(1,  {	-- Normal
+			d(NORMAL_DUNGEON, {
 				e(2097, {	-- The Sand Queen
 					["crs"] = { 127479 },	-- The Sand Queen
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -88,7 +88,7 @@ _.Instances = { tier(BFA_TIER, {
 					}),
 				}),
 			}),
-			d(2,  {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 120,
 				["g"] = {
 					e(2097, {	-- The Sand Queen
@@ -148,8 +148,8 @@ _.Instances = { tier(BFA_TIER, {
 					}),
 				},
 			}),
-			d(23, {	-- Mythic
-				["difficulties"] = { 8, 23 },
+			d(MYTHIC_DUNGEON, {
+				["difficulties"] = { 8, MYTHIC_DUNGEON },
 				["lvl"] = 120,
 				["g"] = {
 					n(135448, {	-- Gol'than the Malodorous

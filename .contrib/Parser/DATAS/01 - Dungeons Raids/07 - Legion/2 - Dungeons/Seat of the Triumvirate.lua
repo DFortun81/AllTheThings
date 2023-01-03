@@ -128,7 +128,7 @@ root("Instances", { tier(LEGION_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				n(127882, {	-- Vixx the Collector
 					i(153004),	-- Unstable Portal Emitter (TOY!)
 					i(152982, {		-- Vixx's Chest of Tricks (TOY!)
@@ -200,7 +200,7 @@ root("Instances", { tier(LEGION_TIER, {
 					},
 				})),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_DUNGEON, {
 				n(127882, {	-- Vixx the Collector
 					i(153004),	-- Unstable Portal Emitter (TOY!)
 					i(152982, {		-- Vixx's Chest of Tricks (TOY!)

@@ -69,7 +69,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 		["modelScale"] = 3,
 		["sourceQuest"] = 64842,	-- Flora Frenzy (technically the console was interactible after completing this quest, possibly earlier)
 		["g"] = {
-			d(17, {	-- LFR
+			d(LFR_RAID, {
 				["description"] = "Items of 249 item level or lower will take the LFR appearance.\nSeason 4 (speculated): 275 item level or lower.",
 				["g"] = bubbleDown({ ["modID"] = 4 },
 						sharedData({["cost"] = {{"i",190189,2070}}},{	-- 2070 Sandworn Relic, Full set cost from Vendor
@@ -183,7 +183,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 					}),
 				})),
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_RAID, {
 				["description"] = "Items between 252 and 262 item level will take the Normal appearance.\nSeason 4 (speculated): between item level 278 and 288.",
 				["g"] = bubbleDown({ ["modID"] = 3 }, {
 					cl(DEATHKNIGHT, {
@@ -296,7 +296,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 					}),
 				}),
 			}),
-			d(15, {	-- Heroic
+			d(HEROIC_RAID, {
 				["description"] = "Items between 265 and 275 item level will take the Heroic appearance.\nSeason 4 (speculated): between item level 291 and 301.",
 				["g"] = bubbleDown({ ["modID"] = 5 }, {
 					cl(DEATHKNIGHT, {
@@ -409,7 +409,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 					}),
 				}),
 			}),
-			d(16, {	-- Mythic
+			d(MYTHIC_RAID, {
 				["description"] = "Items at 278 item level or above will take the Mythic Appearance.\nSeason 4 (speculated): item level 304 and higher.",
 				["g"] = bubbleDown({ ["modID"] = 6  }, {
 					cl(DEATHKNIGHT, {

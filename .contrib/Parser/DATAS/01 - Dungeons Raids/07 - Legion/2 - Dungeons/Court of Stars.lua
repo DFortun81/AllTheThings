@@ -34,7 +34,7 @@ root("Instances", tier(LEGION_TIER, {
 				i(201996),	-- Edge of the First Blade
 				i(201994),	-- Felsworn Covenant Crossbow
 			})),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				cr(104215, e(1718, {	-- Patrol Captain Gerdo
 					i(134268),	-- Arcane Defender's Gauntlets
 					i(134415),	-- Arcanist's Resonant Robes
@@ -86,7 +86,7 @@ root("Instances", tier(LEGION_TIER, {
 					i(137493),	-- Edge of the First Blade
 				})),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
 					ach(10611),	-- Dropping some Eaves
 				}),

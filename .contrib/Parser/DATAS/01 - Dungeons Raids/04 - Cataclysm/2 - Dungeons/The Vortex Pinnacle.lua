@@ -41,7 +41,7 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 			}),
-			d(1,   {	-- Normal
+			d(NORMAL_DUNGEON, {
 				n(ZONE_DROPS, {
 					i(55855, {	-- Darksky Treads
 						["crs"] = {
@@ -127,7 +127,7 @@ _.Instances = { tier(CATA_TIER, {
 					un(REMOVED_FROM_GAME, i(55845)),	-- Heart of Thunder (7.3.5 - Removed from Game!)
 				})),
 			}),
-			d(2,   {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 85,
 				["groups"] = {
 					n(ACHIEVEMENTS, {

@@ -8,7 +8,7 @@ _.Instances = { tier(LEGION_TIER, {
 		["mapID"] = 732,
 		["coord"] = { 66.2, 68.3, LEGION_DALARAN },
 		["g"] = {
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				cr(101995, e(1693, {	-- Festerface
 					i(137438),	-- Band of Decaying Rubies
 					i(137435),	-- Blightbile Waistband
@@ -130,7 +130,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137476),	-- Brand of Tyranny
 				})),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 110,
 				["groups"] = {
 					cr(101995, e(1693, {	-- Festerface
@@ -255,7 +255,7 @@ _.Instances = { tier(LEGION_TIER, {
 					})),
 				},
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_DUNGEON, {
 				["lvl"] = 110,
 				["groups"] = {
 					cr(101995, e(1693, {	-- Festerface

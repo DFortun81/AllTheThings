@@ -133,7 +133,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 					}),
 				},
 			}),
-			d(HEROIC_D, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
+			d(HEROIC_DUNGEON, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				e(2437, {	-- Zo'phex the Sentinel
 					["crs"] = { 175616 },	-- Zo'phex
 					["g"] = {
@@ -292,7 +292,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 					},
 				}),
 			})),
-			d(MYTHIC_D, {
+			d(MYTHIC_DUNGEON, {
 				e(2437, {	-- Zo'phex the Sentinel
 					["crs"] = { 175616 },	-- Zo'phex
 					["g"] = {

@@ -256,7 +256,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 				i(32897),	-- Mark of the Illidari
 			}),
 			-- #if AFTER 7.2.5.23910
-			d(14, {	-- Normal
+			d(NORMAL_RAID, {
 				["lvl"] = 68,
 				["ignoreBonus"] = 1,
 				["groups"] = {

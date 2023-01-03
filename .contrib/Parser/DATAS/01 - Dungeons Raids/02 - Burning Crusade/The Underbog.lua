@@ -120,7 +120,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			n(ZONE_DROPS, {
 				i(24246),	-- Sanguine Hibiscus
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				e(576, {	-- Hungarfen
 					["creatureID"] = 17770,
 					["groups"] = {
@@ -240,7 +240,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = {

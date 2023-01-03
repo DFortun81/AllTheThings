@@ -31,66 +31,66 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 			n(ACHIEVEMENTS,  {
 				ach(14715, {	-- Castle Nathria
 					crit(1, { -- Shriekwing
-						["_encounter"] = { 2393, LFR_R },
+						["_encounter"] = { 2393, LFR_RAID },
 					}),
 					crit(2, { -- Huntsman Altimor
-						["_encounter"] = { 2429, LFR_R },
+						["_encounter"] = { 2429, LFR_RAID },
 					}),
 					crit(3, { -- Sun King's Salvation
-						["_encounter"] = { 2422, LFR_R },
+						["_encounter"] = { 2422, LFR_RAID },
 					}),
 					crit(4, { -- Artificer Xy'mox
-						["_encounter"] = { 2418, LFR_R },
+						["_encounter"] = { 2418, LFR_RAID },
 					}),
 					crit(5, { -- Hungering Destroyer
-						["_encounter"] = { 2428, LFR_R },
+						["_encounter"] = { 2428, LFR_RAID },
 					}),
 					crit(6, { -- Lady Inerva Darkvein
-						["_encounter"] = { 2420, LFR_R },
+						["_encounter"] = { 2420, LFR_RAID },
 					}),
 					crit(7, { -- The Council of Blood
-						["_encounter"] = { 2426, LFR_R },
+						["_encounter"] = { 2426, LFR_RAID },
 					}),
 					crit(8, { -- Sludgefist
-						["_encounter"] = { 2394, LFR_R },
+						["_encounter"] = { 2394, LFR_RAID },
 					}),
 					crit(9, { -- Stone Legion Generals
-						["_encounter"] = { 2425, LFR_R },
+						["_encounter"] = { 2425, LFR_RAID },
 					}),
 					crit(10, {-- Sire Denathrius
-						["_encounter"] = { 2424, LFR_R },
+						["_encounter"] = { 2424, LFR_RAID },
 					}),
 				}),
 				ach(14717, {	-- Heroic: Castle Nathria
 					crit(1, { -- Shriekwing
-						["_encounter"] = { 2393, HEROIC_R },
+						["_encounter"] = { 2393, HEROIC_RAID },
 					}),
 					crit(2, { -- Huntsman Altimor
-						["_encounter"] = { 2429, HEROIC_R },
+						["_encounter"] = { 2429, HEROIC_RAID },
 					}),
 					crit(3, { -- Sun King's Salvation
-						["_encounter"] = { 2422, HEROIC_R },
+						["_encounter"] = { 2422, HEROIC_RAID },
 					}),
 					crit(4, { -- Artificer Xy'mox
-						["_encounter"] = { 2418, HEROIC_R },
+						["_encounter"] = { 2418, HEROIC_RAID },
 					}),
 					crit(5, { -- Hungering Destroyer
-						["_encounter"] = { 2428, HEROIC_R },
+						["_encounter"] = { 2428, HEROIC_RAID },
 					}),
 					crit(6, { -- Lady Inerva Darkvein
-						["_encounter"] = { 2420, HEROIC_R },
+						["_encounter"] = { 2420, HEROIC_RAID },
 					}),
 					crit(7, { -- The Council of Blood
-						["_encounter"] = { 2426, HEROIC_R },
+						["_encounter"] = { 2426, HEROIC_RAID },
 					}),
 					crit(8, { -- Sludgefist
-						["_encounter"] = { 2394, HEROIC_R },
+						["_encounter"] = { 2394, HEROIC_RAID },
 					}),
 					crit(9, { -- Stone Legion Generals
-						["_encounter"] = { 2425, HEROIC_R },
+						["_encounter"] = { 2425, HEROIC_RAID },
 					}),
 					crit(10, {-- Sire Denathrius
-						["_encounter"] = { 2424, HEROIC_R },
+						["_encounter"] = { 2424, HEROIC_RAID },
 					}),
 				}),
 				ach(14718, {	-- Mythic: Castle Nathria
@@ -130,98 +130,98 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 				-- Fated
 				ach(15663, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Fate of Nathria
 					crit(1, { -- Shriekwing
-						["_encounter"] = { 2393, LFR_R },
+						["_encounter"] = { 2393, LFR_RAID },
 					}),
 					crit(2, { -- Huntsman Altimor
-						["_encounter"] = { 2429, LFR_R },
+						["_encounter"] = { 2429, LFR_RAID },
 					}),
 					crit(3, { -- Sun King's Salvation
-						["_encounter"] = { 2422, LFR_R },
+						["_encounter"] = { 2422, LFR_RAID },
 					}),
 					crit(4, { -- Artificer Xy'mox
-						["_encounter"] = { 2418, LFR_R },
+						["_encounter"] = { 2418, LFR_RAID },
 					}),
 					crit(5, { -- Hungering Destroyer
-						["_encounter"] = { 2428, LFR_R },
+						["_encounter"] = { 2428, LFR_RAID },
 					}),
 					crit(6, { -- Lady Inerva Darkvein
-						["_encounter"] = { 2420, LFR_R },
+						["_encounter"] = { 2420, LFR_RAID },
 					}),
 					crit(7, { -- The Council of Blood
-						["_encounter"] = { 2426, LFR_R },
+						["_encounter"] = { 2426, LFR_RAID },
 					}),
 					crit(8, { -- Sludgefist
-						["_encounter"] = { 2394, LFR_R },
+						["_encounter"] = { 2394, LFR_RAID },
 					}),
 					crit(9, { -- Stone Legion Generals
-						["_encounter"] = { 2425, LFR_R },
+						["_encounter"] = { 2425, LFR_RAID },
 					}),
 					crit(10, {-- Sire Denathrius
-						["_encounter"] = { 2424, LFR_R },
+						["_encounter"] = { 2424, LFR_RAID },
 					}),
 				})),
 				ach(15664, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Heroic: Fate of Nathria
 					crit(1, { -- Shriekwing
-						["_encounter"] = { 2393, HEROIC_R },
+						["_encounter"] = { 2393, HEROIC_RAID },
 					}),
 					crit(2, { -- Huntsman Altimor
-						["_encounter"] = { 2429, HEROIC_R },
+						["_encounter"] = { 2429, HEROIC_RAID },
 					}),
 					crit(3, { -- Sun King's Salvation
-						["_encounter"] = { 2422, HEROIC_R },
+						["_encounter"] = { 2422, HEROIC_RAID },
 					}),
 					crit(4, { -- Artificer Xy'mox
-						["_encounter"] = { 2418, HEROIC_R },
+						["_encounter"] = { 2418, HEROIC_RAID },
 					}),
 					crit(5, { -- Hungering Destroyer
-						["_encounter"] = { 2428, HEROIC_R },
+						["_encounter"] = { 2428, HEROIC_RAID },
 					}),
 					crit(6, { -- Lady Inerva Darkvein
-						["_encounter"] = { 2420, HEROIC_R },
+						["_encounter"] = { 2420, HEROIC_RAID },
 					}),
 					crit(7, { -- The Council of Blood
-						["_encounter"] = { 2426, HEROIC_R },
+						["_encounter"] = { 2426, HEROIC_RAID },
 					}),
 					crit(8, { -- Sludgefist
-						["_encounter"] = { 2394, HEROIC_R },
+						["_encounter"] = { 2394, HEROIC_RAID },
 					}),
 					crit(9, { -- Stone Legion Generals
-						["_encounter"] = { 2425, HEROIC_R },
+						["_encounter"] = { 2425, HEROIC_RAID },
 					}),
 					crit(10, {-- Sire Denathrius
-						["_encounter"] = { 2424, HEROIC_R },
+						["_encounter"] = { 2424, HEROIC_RAID },
 					}),
 				})),
 				ach(15665, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Mythic: Fate of Nathria
 					crit(1, { -- Shriekwing
-						["_encounter"] = { 2393, MYTHIC_R },
+						["_encounter"] = { 2393, MYTHIC_RAID },
 					}),
 					crit(2, { -- Huntsman Altimor
-						["_encounter"] = { 2429, MYTHIC_R },
+						["_encounter"] = { 2429, MYTHIC_RAID },
 					}),
 					crit(3, { -- Sun King's Salvation
-						["_encounter"] = { 2422, MYTHIC_R },
+						["_encounter"] = { 2422, MYTHIC_RAID },
 					}),
 					crit(4, { -- Artificer Xy'mox
-						["_encounter"] = { 2418, MYTHIC_R },
+						["_encounter"] = { 2418, MYTHIC_RAID },
 					}),
 					crit(5, { -- Hungering Destroyer
-						["_encounter"] = { 2428, MYTHIC_R },
+						["_encounter"] = { 2428, MYTHIC_RAID },
 					}),
 					crit(6, { -- Lady Inerva Darkvein
-						["_encounter"] = { 2420, MYTHIC_R },
+						["_encounter"] = { 2420, MYTHIC_RAID },
 					}),
 					crit(7, { -- The Council of Blood
-						["_encounter"] = { 2426, MYTHIC_R },
+						["_encounter"] = { 2426, MYTHIC_RAID },
 					}),
 					crit(8, { -- Sludgefist
-						["_encounter"] = { 2394, MYTHIC_R },
+						["_encounter"] = { 2394, MYTHIC_RAID },
 					}),
 					crit(9, { -- Stone Legion Generals
-						["_encounter"] = { 2425, MYTHIC_R },
+						["_encounter"] = { 2425, MYTHIC_RAID },
 					}),
 					crit(10, {-- Sire Denathrius
-						["_encounter"] = { 2424, MYTHIC_R },
+						["_encounter"] = { 2424, MYTHIC_RAID },
 					}),
 				})),
 				-- Guild Achievements
@@ -614,7 +614,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 			n(ZONE_DROPS, {
 				i(180453),	-- She Had a Stone Heart
 			}),
-			d(LFR_R, {
+			d(LFR_RAID, {
 				n(ZONE_DROPS, {
 					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
@@ -808,7 +808,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(NORMAL_R, {
+			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(62054, {	-- Castle Nathria: Getting a Head [Normal]
 						["provider"] = { "n", 172653 },	-- General Draven
@@ -1017,7 +1017,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(HEROIC_R, {
+			d(HEROIC_RAID, {
 				n(QUESTS, {
 					q(62055, {	-- Castle Nathria: Getting a Head [Heroic]
 						["provider"] = { "n", 172653 },	-- General Draven
@@ -1248,7 +1248,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(MYTHIC_R, {
+			d(MYTHIC_RAID, {
 				n(QUESTS, {
 					q(62056, {	-- Castle Nathria: Getting a Head [Mythic]
 						["provider"] = { "n", 172653 },	-- General Draven

@@ -53,7 +53,7 @@ root("Instances", tier(LEGION_TIER, {
 					["classes"] = { WARLOCK },
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				cr(117193, e(1905, {	-- Agronox
 					i(144469),	-- Caretaker's Budding Mantle
 					i(144491),	-- Choking Vine Bindings
@@ -111,7 +111,7 @@ root("Instances", tier(LEGION_TIER, {
 					i(144463),	-- Shard of Kaldorei Stained Glass
 				})),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_DUNGEON, {
 				cr(117193, e(1905, {	-- Agronox
 					ach(11768),	-- Boom Bloom
 					i(144469),	-- Caretaker's Budding Mantle
@@ -178,7 +178,7 @@ root("Instances", tier(LEGION_TIER, {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		inst(900, {	-- Cathedral of Eternal Night
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				i(147514),	-- Felguard Destroyer's Legplates
 				i(147515),	-- Hellblaze Invader's Greaves
 				i(147517),	-- Inquisitor's Battle Cowl

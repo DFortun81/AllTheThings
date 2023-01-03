@@ -9,7 +9,7 @@ _.Instances = { tier(CATA_TIER, {
 		["mapID"] = 293,
 		["coord"] = { 19.2, 54.2, TWILIGHT_HIGHLANDS },
 		["g"] = {
-			d(1,  {	-- Normal
+			d(NORMAL_DUNGEON, {
 				n(QUESTS, {
 					q(28854, {	-- Closing A Dark Chapter
 						i(66933),	-- Breastplate of the Witness
@@ -124,7 +124,7 @@ _.Instances = { tier(CATA_TIER, {
 					un(REMOVED_FROM_GAME, i(56132)),	-- Mark of Khardros [Replaced with 56458]
 				})),
 			}),
-			d(2,  {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 85,
 				["g"] = {
 					cr(39625, e(131, {	-- General Umbriss

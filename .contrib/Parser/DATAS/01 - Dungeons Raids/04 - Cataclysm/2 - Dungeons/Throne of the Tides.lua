@@ -65,7 +65,7 @@ _.Instances = { tier(CATA_TIER, {
 					i(55261),	-- Ring of the Great Whale
 				},
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				cr(40586, e(101, {	-- Lady Naz'jar
 					i(56266),	-- Lightning Whelk Axe
 					i(56269),	-- Aurelian Mitre
@@ -130,7 +130,7 @@ _.Instances = { tier(CATA_TIER, {
 					un(REMOVED_FROM_GAME, i(55256)),	-- Sea Star (7.3.5 - Removed from Game!)
 				}))
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 85,
 				["groups"] = {
 					cr(40586, e(101, {	-- Lady Naz'jar

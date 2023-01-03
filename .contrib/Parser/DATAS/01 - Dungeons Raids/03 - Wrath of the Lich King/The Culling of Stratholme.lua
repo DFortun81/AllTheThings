@@ -78,7 +78,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				i(37117),	-- King's Square Bracers
 				i(37698),	-- Spaulders of Elder's Square
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				e(611, {	-- Meathook
 					["creatureID"] = 26529,	-- Meathook
 					["groups"] = {
@@ -170,7 +170,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ACHIEVEMENTS, {

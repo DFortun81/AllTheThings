@@ -795,7 +795,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		------------- PROBABLY NYI ---------------------
 
 		inst(1200, {	-- Vault of the Incarnates
-			d(17, {	-- LFR
+			d(LFR_RAID, {
 				i(202146),	-- Brawler's Earthen Cuirass [BoP]
 				i(202148),	-- Emissary's Flamewrought Seal [BoP]
 				i(202145),	-- Frozen Claw Mantle [BoP]
@@ -806,7 +806,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(202149),	-- Primalist Warden's Bracers [BoP]
 				i(202143),	-- Woven Stone Bracelets [BoP]
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_RAID, {
 				i(202146),	-- Brawler's Earthen Cuirass [BoP]
 				i(202148),	-- Emissary's Flamewrought Seal [BoP]
 				i(202145),	-- Frozen Claw Mantle [BoP]
@@ -817,7 +817,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(202149),	-- Primalist Warden's Bracers [BoP]
 				i(202143),	-- Woven Stone Bracelets [BoP]
 			}),
-			d(15, {	-- Heroic
+			d(HEROIC_RAID, {
 				i(202146),	-- Brawler's Earthen Cuirass [BoP]
 				i(202148),	-- Emissary's Flamewrought Seal [BoP]
 				i(202145),	-- Frozen Claw Mantle [BoP]

@@ -376,7 +376,7 @@ root("Instances", tier(CATA_TIER, {
 					i(71367),	-- Theck's Emberseal
 				},
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_RAID, {
 				["difficulties"] = { 1, 3, 4 },
 				["g"] = {
 					n(COMMON_BOSS_DROPS, {
@@ -568,7 +568,7 @@ root("Instances", tier(CATA_TIER, {
 					}),
 				},
 			}),
-			d(15,  {	-- Heroic
+			d(HEROIC_RAID, {
 				["difficulties"] = { 2, 5, 6 },
 				["g"] = {
 					n(VENDORS, {
@@ -884,7 +884,7 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(71394),	-- Flamebinding Girdle
 			i(71569),	-- Flamebinder Bracers
 			i(71581),	-- Smolderskull Bindings
-			d(14, {
+			d(NORMAL_RAID, {
 				-- Normal version tokens that don't exist (here in NYI with Normal wrapper just in case someone gets them to drop)
 				i(71679),	-- Chest of the Fiery Conqueror
 				i(71672),	-- Chest of the Fiery Vanquisher

@@ -1734,11 +1734,11 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					}),
 				},
 			}),
-			d(17, {	-- LFR Queue NPC
+			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 			}),
-			d(17, {	-- LFR
+			d(LFR_RAID, {
 				["description"] = "Loot from this LFR is NOT tradeable to others in group.",
 				["g"] = {
 					n(COMMON_BOSS_DROPS, {
@@ -2257,7 +2257,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					}),
 				},
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_RAID, {
 				n(ZONE_DROPS, {
 					i(113224),	-- Aeth's Swiftcinder Cloak
 					i(113231),	-- Brave Niunai's Cloak
@@ -2712,7 +2712,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112924),	-- Curse of Hubris
 				})),
 			}),
-			d(15, {	-- Heroic
+			d(HEROIC_RAID, {
 				n(ZONE_DROPS, {
 					i(113224),	-- Aeth's Swiftcinder Cloak
 					i(113231),	-- Brave Niunai's Cloak
@@ -3184,7 +3184,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112924),	-- Curse of Hubris
 				})),
 			}),
-			d(16, {	-- Mythic
+			d(MYTHIC_RAID, {
 				n(ZONE_DROPS, {
 					i(113224),	-- Aeth's Swiftcinder Cloak
 					i(113231),	-- Brave Niunai's Cloak
@@ -3699,7 +3699,7 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(102316),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Tank Trinket (5)
 			i(103897),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Str Tank Ring
 			i(103825),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
-			d(17, {	-- LFR
+			d(LFR_RAID, {
 				n(ZONE_DROPS, {
 					i(113218),	-- Seebo's Sainted Touch
 					i(113221),	-- Siid's Silent Stranglers

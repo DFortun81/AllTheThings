@@ -66,7 +66,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(NORMAL_D, {
+			d(NORMAL_DUNGEON, {
 				e(2400, {	-- Ingra Maloch
 					["crs"] = {
 						164567,	-- Ingra Maloch
@@ -114,7 +114,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(HEROIC_D, {
+			d(HEROIC_DUNGEON, {
 				e(2400, {	-- Ingra Maloch
 					["crs"] = {
 						164567,	-- Ingra Maloch
@@ -162,7 +162,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(MYTHIC_D, {
+			d(MYTHIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
 					ach(14291, {	-- Someone Could Trip on These!
 						crit(1),	-- First Toy

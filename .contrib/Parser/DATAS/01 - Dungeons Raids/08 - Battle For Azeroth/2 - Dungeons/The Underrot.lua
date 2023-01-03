@@ -21,7 +21,7 @@ _.Instances = { tier(BFA_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				e(2157, {	-- Elder Leaxa
 					["crs"] = {
 						131318,	-- Elder Leaxa <Voice of G'huun>
@@ -87,7 +87,7 @@ _.Instances = { tier(BFA_TIER, {
 					}),
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 120,
 				["g"] = {
 					e(2157, {	-- Elder Leaxa
@@ -156,8 +156,8 @@ _.Instances = { tier(BFA_TIER, {
 					}),
 				},
 			}),
-			d(23, {	-- Mythic
-				["difficulties"] = { 8, 23 },
+			d(MYTHIC_DUNGEON, {
+				["difficulties"] = { 8, MYTHIC_DUNGEON },
 				["lvl"] = 120,
 				["g"] = {
 					e(2157, {	-- Elder Leaxa

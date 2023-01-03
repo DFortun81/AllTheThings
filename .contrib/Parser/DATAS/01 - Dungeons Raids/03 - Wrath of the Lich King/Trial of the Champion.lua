@@ -135,7 +135,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 				}),
 			}),
 			-- #endif
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				e(634, {	-- Grand Champions
 					["crs"] = {
 						34705,	-- Marshal Jacob Alerius
@@ -306,7 +306,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {

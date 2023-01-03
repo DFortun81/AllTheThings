@@ -97,7 +97,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(NORMAL_D, {
+			d(NORMAL_DUNGEON, {
 				e(2397, {	-- An Affront of Challengers
 					["crs"] = {
 						164451,	-- Dessia the Decapitator
@@ -160,7 +160,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(HEROIC_D, {
+			d(HEROIC_DUNGEON, {
 				e(2397, {	-- An Affront of Challengers
 					["crs"] = {
 						164451,	-- Dessia the Decapitator
@@ -223,7 +223,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(MYTHIC_D, {
+			d(MYTHIC_DUNGEON, {
 				e(2397, {	-- An Affront of Challengers
 					["crs"] = {
 						164451,	-- Dessia the Decapitator

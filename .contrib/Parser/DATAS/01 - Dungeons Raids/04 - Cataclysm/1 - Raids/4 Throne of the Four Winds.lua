@@ -11,7 +11,7 @@ _.Instances = { tier(CATA_TIER, {
 		["coord"] = { 38.37, 80.63, ULDUM },	-- Throne of the Four Winds
 		["groups"] = {
 			ach(4851),	-- Throne of the Four Winds
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
 					e(154, {	-- The Conclave of Wind
@@ -69,7 +69,7 @@ _.Instances = { tier(CATA_TIER, {
 					}),
 				},
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
 					e(154, {	-- The Conclave of Wind
