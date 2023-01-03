@@ -110,8 +110,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			o(381157, {	-- Sapphire Gem Cluster
-				["coord"] = { 40.5, 41.4, THE_AZURE_SPAN },
-				-- ["questID"] = 70605,
+				["coord"] = { 49, 25, THE_AZURE_SPAN },
+				["questID"] = 70605,
 				["cost"] = { { "i", 199067, 1 }, },	--1x Precious Plans
 				["g"] = {
 					crit(3, {	-- Sapphire Gem Cluster
