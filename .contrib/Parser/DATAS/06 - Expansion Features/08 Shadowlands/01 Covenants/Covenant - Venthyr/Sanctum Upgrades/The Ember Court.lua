@@ -643,6 +643,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											}),
 										}),
 										i(178128),	-- Pouch of Shinies
+										i(179301),	-- Large Muck Stained Blade
+										i(179302),	-- Muck-Encrusted Dagger
 									}),
 								}),
 								o(356741, {	-- The Countess' Extravagant Tribute

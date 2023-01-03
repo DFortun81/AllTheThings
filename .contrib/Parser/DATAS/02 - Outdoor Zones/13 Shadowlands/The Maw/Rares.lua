@@ -42,6 +42,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					},
 					["g"] = {
 						i(183409),	-- Decaying Mawrat
+						i(184368),	-- Sputtering Hilt
 						i(183408),	-- Undying Deathroach
 					},
 				}),

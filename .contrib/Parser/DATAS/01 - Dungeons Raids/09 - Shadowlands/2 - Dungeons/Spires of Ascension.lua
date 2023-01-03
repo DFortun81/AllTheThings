@@ -105,6 +105,18 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
+			n(ZONE_DROPS, {
+				i(174021, {	-- Age-Worn Shortblade
+					["crs"] = {
+						168420,	-- Forsworn Champion
+						163501,	-- Forsworn Skirmisher
+						168418,	-- Forsworn Inquisitor
+						163458,	-- Forsworn Castigator
+						168681,	-- Forsworn Helion
+						163520,	-- Forsworn Squad-Leader
+					},
+				}),
+			}),
 			d(NORMAL_D, {
 				e(2399, {	-- Kin-Tara
 					["crs"] = {

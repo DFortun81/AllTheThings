@@ -905,6 +905,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			q(60277, {	-- WANTED: Aggregate of Doom
 				["provider"] = { "o", 351885 },	-- Wanted: Aggregate of Doom
 				["coord"] = { 59.1, 69.2, REVENDRETH },
+				["g"] = {
+					i(180288),	-- Silver-Bladed Excavator
+				},
 			}),
 			q(60278, {	-- WANTED: Duke Anton
 				["provider"] = { "o", 351886 },	-- Wanted: Duke Anton

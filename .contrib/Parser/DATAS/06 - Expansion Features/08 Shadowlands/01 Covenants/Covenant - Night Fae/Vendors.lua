@@ -1422,53 +1422,9 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179444),	-- 9.0 Covenant - Ardenweald - Cloth - Shoulders
 					i(179445),	-- 9.0 Covenant - Ardenweald - Cloth - Waist
 					i(179446),	-- 9.0 Covenant - Ardenweald - Cloth - Wrists
-					i(179683),	-- Ardenweald Covenant Cloth Robe
-					i(179684),	-- Ardenweald Covenant Cloth Feet
-					i(179685),	-- Ardenweald Covenant Cloth Hand
-					i(179686),	-- Ardenweald Covenant Cloth Head
-					i(179687),	-- Ardenweald Covenant Cloth Legs
-					i(179688),	-- Ardenweald Covenant Cloth Shoulder
-					i(179689),	-- Ardenweald Covenant Cloth Waist
-					i(179690),	-- Ardenweald Covenant Cloth Wrist
-					i(179691),	-- Ardenweald Covenant Cloth Robe
-					i(179692),	-- Ardenweald Covenant Cloth Robe
-					i(179693),	-- Ardenweald Covenant Cloth Robe
-					i(179694),	-- Ardenweald Covenant Cloth Chest
-					i(179695),	-- Ardenweald Covenant Cloth Chest
-					i(179696),	-- Ardenweald Covenant Cloth Chest
-					i(179697),	-- Ardenweald Covenant Cloth Chest
-					i(179698),	-- Ardenweald Covenant Cloth Feet
-					i(179699),	-- Ardenweald Covenant Cloth Feet
-					i(179700),	-- Ardenweald Covenant Cloth Feet
-					i(179701),	-- Ardenweald Covenant Cloth Hand
-					i(179702),	-- Ardenweald Covenant Cloth Hand
-					i(179703),	-- Ardenweald Covenant Cloth Hand
-					i(179704),	-- Ardenweald Covenant Cloth Head
-					i(179705),	-- Ardenweald Covenant Cloth Head
-					i(179706),	-- Ardenweald Covenant Cloth Head
-					i(179707),	-- Ardenweald Covenant Cloth Legs
-					i(179708),	-- Ardenweald Covenant Cloth Legs
-					i(179709),	-- Ardenweald Covenant Cloth Legs
-					i(179710),	-- Ardenweald Covenant Cloth Shoulder
-					i(179711),	-- Ardenweald Covenant Cloth Shoulder
-					i(179712),	-- Ardenweald Covenant Cloth Shoulder
-					i(179713),	-- Ardenweald Covenant Cloth Waist
-					i(179714),	-- Ardenweald Covenant Cloth Waist
-					i(179715),	-- Ardenweald Covenant Cloth Waist
-					i(179716),	-- Ardenweald Covenant Cloth Wrist
-					i(179717),	-- Ardenweald Covenant Cloth Wrist
-					i(179718),	-- Ardenweald Covenant Cloth Wrist
 					i(179660),	-- Winterborn Tunic
 				}),
 				filter(LEATHER, {
-					i(175579),	-- Ardenweald Covenant Leather Chest
-					i(175583),	-- Ardenweald Covenant Leather Feet
-					i(175584),	-- Ardenweald Covenant Leather Hand
-					i(175590),	-- Ardenweald Covenant Leather Head
-					i(175594),	-- Ardenweald Covenant Leather Legs
-					i(175595),	-- Ardenweald Covenant Leather Shoulder
-					i(175602),	-- Ardenweald Covenant Leather Waist
-					i(175606),	-- Ardenweald Covenant Leather Wrist
 					i(179430),	-- 9.0 Covenant - Ardenweald - Leather - Head
 					i(179431),	-- 9.0 Covenant - Ardenweald - Leather - Chest
 					i(179432),	-- 9.0 Covenant - Ardenweald - Leather - Feet
@@ -1477,76 +1433,8 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179435),	-- 9.0 Covenant - Ardenweald - Leather - Shoulders
 					i(179436),	-- 9.0 Covenant - Ardenweald - Leather - Waist
 					i(179437),	-- 9.0 Covenant - Ardenweald - Leather - Wrists
-					i(179733),	-- Ardenweald Covenant Leather Robe
-					i(179734),	-- Ardenweald Covenant Leather Chest
-					i(179736),	-- Ardenweald Covenant Leather Chest
-					i(179737),	-- Ardenweald Covenant Leather Chest
-					i(179741),	-- Ardenweald Covenant Leather Feet
-					i(179742),	-- Ardenweald Covenant Leather Feet
-					i(179743),	-- Ardenweald Covenant Leather Feet
-					i(179744),	-- Ardenweald Covenant Leather Hand
-					i(179745),	-- Ardenweald Covenant Leather Hand
-					i(179746),	-- Ardenweald Covenant Leather Hand
-					i(179747),	-- Ardenweald Covenant Leather Head
-					i(179748),	-- Ardenweald Covenant Leather Head
-					i(179749),	-- Ardenweald Covenant Leather Head
-					i(179750),	-- Ardenweald Covenant Leather Legs
-					i(179751),	-- Ardenweald Covenant Leather Legs
-					i(179752),	-- Ardenweald Covenant Leather Legs
-					i(179753),	-- Ardenweald Covenant Leather Robe
-					i(179754),	-- Ardenweald Covenant Leather Robe
-					i(179755),	-- Ardenweald Covenant Leather Robe
-					i(179756),	-- Ardenweald Covenant Leather Shoulder
-					i(179757),	-- Ardenweald Covenant Leather Shoulder
-					i(179758),	-- Ardenweald Covenant Leather Shoulder
-					i(179759),	-- Ardenweald Covenant Leather Waist
-					i(179760),	-- Ardenweald Covenant Leather Waist
-					i(179761),	-- Ardenweald Covenant Leather Waist
-					i(179762),	-- Ardenweald Covenant Leather Wrist
-					i(179763),	-- Ardenweald Covenant Leather Wrist
-					i(179764),	-- Ardenweald Covenant Leather Wrist
 				}),
 				filter(MAIL, {
-					i(179855),	-- Ardenweald Covenant Mail Waist
-					i(179856),	-- Ardenweald Covenant Mail Shoulders
-					i(179857),	-- Ardenweald Covenant Mail Legs
-					i(179858),	-- Ardenweald Covenant Mail Head
-					i(179859),	-- Ardenweald Covenant Mail Hand
-					i(179860),	-- Ardenweald Covenant Mail Feet
-					i(179861),	-- Ardenweald Covenant Mail Chest
-					i(179830),	-- Ardenweald Covenant Mail Chest
-					i(179831),	-- Ardenweald Covenant Mail Feet
-					i(179832),	-- Ardenweald Covenant Mail Hand
-					i(179833),	-- Ardenweald Covenant Mail Head
-					i(179834),	-- Ardenweald Covenant Mail Legs
-					i(179835),	-- Ardenweald Covenant Mail Shoulder
-					i(179836),	-- Ardenweald Covenant Mail Waist
-					i(179837),	-- Ardenweald Covenant Mail Wrist
-					i(179838),	-- Ardenweald Covenant Mail Wrist
-					i(179839),	-- Ardenweald Covenant Mail Waist
-					i(179840),	-- Ardenweald Covenant Mail Shoulder
-					i(179841),	-- Ardenweald Covenant Mail Legs
-					i(179842),	-- Ardenweald Covenant Mail Head
-					i(179843),	-- Ardenweald Covenant Mail Hand
-					i(179844),	-- Ardenweald Covenant Mail Feet
-					i(179845),	-- Ardenweald Covenant Mail Chest
-					i(179846),	-- Ardenweald Covenant Mail Wrist
-					i(179847),	-- Ardenweald Covenant Mail Waist
-					i(179848),	-- Ardenweald Covenant Mail Shoulder
-					i(179849),	-- Ardenweald Covenant Mail Legs
-					i(179850),	-- Ardenweald Covenant Mail Head
-					i(179851),	-- Ardenweald Covenant Mail Hand
-					i(179852),	-- Ardenweald Covenant Mail Feet
-					i(179853),	-- Ardenweald Covenant Mail Chest
-					i(179854),	-- Ardenweald Covenant Mail Wrist
-					i(175578),	-- Ardenweald Covenant Mail Chest
-					i(175582),	-- Ardenweald Covenant Mail Feet
-					i(175587),	-- Ardenweald Covenant Mail Hand
-					i(175589),	-- Ardenweald Covenant Mail Head
-					i(175593),	-- Ardenweald Covenant Mail Legs
-					i(175598),	-- Ardenweald Covenant Mail Shoulder
-					i(175601),	-- Ardenweald Covenant Mail Waist
-					i(175605),	-- Ardenweald Covenant Mail Wrist
 					i(179448),	-- 9.0 Covenant - Ardenweald - Mail Head - D_01
 					i(179449),	-- 9.0 Covenant - Ardenweald - Mail Chest - D_01
 					i(179450),	-- 9.0 Covenant - Ardenweald - Mail Feet - D_01
@@ -1555,30 +1443,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179453),	-- 9.0 Covenant - Ardenweald - Mail Shoulders - D_01
 					i(179454),	-- 9.0 Covenant - Ardenweald - Mail Waist - D_01
 					i(179455),	-- 9.0 Covenant - Ardenweald - Mail Wrists - D_01
-					i(179805),	-- Ardenweald Covenant Mail Wrist
-					i(179806),	-- Ardenweald Covenant Mail Waist
-					i(179807),	-- Ardenweald Covenant Mail Shoulder
-					i(179808),	-- Ardenweald Covenant Mail Legs
-					i(179809),	-- Ardenweald Covenant Mail Head
-					i(179810),	-- Ardenweald Covenant Mail Hand
-					i(179811),	-- Ardenweald Covenant Mail Feet
-					i(179812),	-- Ardenweald Covenant Mail Chest
-					i(179813),	-- Ardenweald Covenant Mail Wrist
-					i(179814),	-- Ardenweald Covenant Mail Waist
-					i(179815),	-- Ardenweald Covenant Mail Shoulder
-					i(179816),	-- Ardenweald Covenant Mail Legs
-					i(179817),	-- Ardenweald Covenant Mail Head
-					i(179818),	-- Ardenweald Covenant Mail Hand
-					i(179819),	-- Ardenweald Covenant Mail Feet
-					i(179820),	-- Ardenweald Covenant Mail Chest
-					i(179821),	-- Ardenweald Covenant Mail Wrist
-					i(179822),	-- Ardenweald Covenant Mail Waist
-					i(179824),	-- Ardenweald Covenant Mail Shoulder
-					i(179825),	-- Ardenweald Covenant Mail Legs
-					i(179826),	-- Ardenweald Covenant Mail Head
-					i(179827),	-- Ardenweald Covenant Mail Hand
-					i(179828),	-- Ardenweald Covenant Mail Feet
-					i(179829),	-- Ardenweald Covenant Mail Chest
 					i(180570),	-- 9.0 Covenant - Ardenweald - Mail Head - D_02
 					i(180571),	-- 9.0 Covenant - Ardenweald - Mail Chest - D_02
 					i(180572),	-- 9.0 Covenant - Ardenweald - Mail Feet - D_02
@@ -1587,40 +1451,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(180575),	-- 9.0 Covenant - Ardenweald - Mail Shoulders - D_02
 					i(180576),	-- 9.0 Covenant - Ardenweald - Mail Waist - D_02
 					i(180577),	-- 9.0 Covenant - Ardenweald - Mail Wrists - D_02
-					i(180835),	-- Ardenweald Covenant Mail D_02 Robe
-					i(181869),	-- Ardenweald Covenant Mail D_02 Chest
-					i(181870),	-- Ardenweald Covenant Mail D_02 Feet
-					i(181871),	-- Ardenweald Covenant Mail D_02 Hand
-					i(181872),	-- Ardenweald Covenant Mail D_02 Head
-					i(181873),	-- Ardenweald Covenant Mail D_02 Legs
-					i(181874),	-- Ardenweald Covenant Mail D_02 Shoulder
-					i(181875),	-- Ardenweald Covenant Mail D_02 Waist
-					i(181876),	-- Ardenweald Covenant Mail D_02 Wrist
-					i(181885),	-- Ardenweald Covenant Mail D_02 Wrist
-					i(181886),	-- Ardenweald Covenant Mail D_02 Waist
-					i(181887),	-- Ardenweald Covenant Mail D_02 Shoulder
-					i(181888),	-- Ardenweald Covenant Mail D_02 Legs
-					i(181889),	-- Ardenweald Covenant Mail D_02 Head
-					i(181890),	-- Ardenweald Covenant Mail D_02 Hand
-					i(181891),	-- Ardenweald Covenant Mail D_02 Feet
-					i(181892),	-- Ardenweald Covenant Mail D_02 Chest
-					i(181893),	-- Ardenweald Covenant Mail D_02 Wrist
-					i(181894),	-- Ardenweald Covenant Mail D_02 Waist
-					i(181895),	-- Ardenweald Covenant Mail D_02 Shoulder
-					i(181896),	-- Ardenweald Covenant Mail D_02 Legs
-					i(181897),	-- Ardenweald Covenant Mail D_02 Head
-					i(181898),	-- Ardenweald Covenant Mail D_02 Hand
-					i(181899),	-- Ardenweald Covenant Mail D_02 Feet
-					i(181900),	-- Ardenweald Covenant Mail D_02 Chest
-					i(181901),	-- Ardenweald Covenant Mail D_02 Wrist
-					i(181902),	-- Ardenweald Covenant Mail D_02 Waist
-					i(181903),	-- Ardenweald Covenant Mail D_02 Shoulder
-					i(181904),	-- Ardenweald Covenant Mail D_02 Legs
-					i(181905),	-- Ardenweald Covenant Mail D_02 Head
-					i(181906),	-- Ardenweald Covenant Mail D_02 Hand
-					i(181907),	-- Ardenweald Covenant Mail D_02 Feet
-					i(181908),	-- Ardenweald Covenant Mail D_02 Chest
-					i(181976),	-- Ardenweald Covenant Mail D_02 Robe
 				}),
 				filter(PLATE, {
 					i(173914),	-- 9.0 Covenant - Ardenweald - Plate Head
@@ -1631,158 +1461,22 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(173919),	-- 9.0 Covenant - Ardenweald - Plate Shoulders
 					i(173920),	-- 9.0 Covenant - Ardenweald - Plate Waist
 					i(173921),	-- 9.0 Covenant - Ardenweald - Plate Wrists
-					i(175575),	-- Ardenweald Covenant Plate Head
-					i(175577),	-- Ardenweald Covenant Plate Chest
-					i(175580),	-- Ardenweald Covenant Plate Feet
-					i(175585),	-- Ardenweald Covenant Plate Hand
-					i(175591),	-- Ardenweald Covenant Plate Legs
-					i(175596),	-- Ardenweald Covenant Plate Shoulder
-					i(175599),	-- Ardenweald Covenant Plate Waist
-					i(175604),	-- Ardenweald Covenant Plate Wrist
-					i(179863),	-- Ardenweald Covenant Plate Wrist
-					i(179864),	-- Ardenweald Covenant Plate Waist
-					i(179865),	-- Ardenweald Covenant Plate Shoulder
-					i(179866),	-- Ardenweald Covenant Plate Legs
-					i(179867),	-- Ardenweald Covenant Plate Head
-					i(179868),	-- Ardenweald Covenant Plate Hand
-					i(179869),	-- Ardenweald Covenant Plate Feet
-					i(179870),	-- Ardenweald Covenant Plate Chest
-					i(179871),	-- Ardenweald Covenant Plate Wrist
-					i(179872),	-- Ardenweald Covenant Plate Waist
-					i(179873),	-- Ardenweald Covenant Plate Shoulder
-					i(179874),	-- Ardenweald Covenant Plate Legs
-					i(179875),	-- Ardenweald Covenant Plate Head
-					i(179876),	-- Ardenweald Covenant Plate Hand
-					i(179877),	-- Ardenweald Covenant Plate Feet
-					i(179878),	-- Ardenweald Covenant Plate Chest
-					i(179879),	-- Ardenweald Covenant Plate Wrist
-					i(179880),	-- Ardenweald Covenant Plate Waist
-					i(179881),	-- Ardenweald Covenant Plate Shoulder
-					i(179882),	-- Ardenweald Covenant Plate Legs
-					i(179883),	-- Ardenweald Covenant Plate Head
-					i(179884),	-- Ardenweald Covenant Plate Hand
-					i(179885),	-- Ardenweald Covenant Plate Feet
-					i(179886),	-- Ardenweald Covenant Plate Chest
 				}),
 				n(BACK, {
 					i(179621),	-- Ardenweald Covenant Mail Cloak
 					i(179630),	-- Ardenweald Covenant Mail Cloak
 					i(179631),	-- Ardenweald Covenant Mail Cloak
 					i(179632),	-- Ardenweald Covenant Mail Cloak
-
 					i(173926),	-- 9.0 Covenant - Ardenweald - Plate Cloak
 					i(179438),	-- 9.0 Covenant - Ardenweald - Leather - Cloak
 					i(179447),	-- 9.0 Covenant - Ardenweald - Cloth - Cloak
 					i(179456),	-- 9.0 Covenant - Ardenweald - Mail Cloak - D_01
-					i(179636),	-- Ardenweald Covenant Plate Cloak
-					i(179637),	-- Ardenweald Covenant Mail Cloak
-					i(179639),	-- Ardenweald Covenant Cloth Cloak
-					i(179640),	-- Ardenweald Covenant Cloth Cloak
-					i(179641),	-- Ardenweald Covenant Cloth Cloak
-					i(179642),	-- Ardenweald Covenant Cloth Cloak
-					i(179644),	-- Ardenweald Covenant Leather Cloak
-					i(179645),	-- Ardenweald Covenant Leather Cloak
-					i(179646),	-- Ardenweald Covenant Mail Cloak
-					i(179647),	-- Ardenweald Covenant Mail Cloak
-					i(179648),	-- Ardenweald Covenant Mail Cloak
-					i(179649),	-- Ardenweald Covenant Plate Cloak
-					i(179650),	-- Ardenweald Covenant Plate Cloak
-					i(179651),	-- Ardenweald Covenant Plate Cloak
-					i(179732),	-- Ardenweald Covenant Leather Cloak
-					i(179738),	-- Ardenweald Covenant Leather Cloak
 					i(180578),	-- 9.0 Covenant - Ardenweald - Mail Cloak - D_02
-					i(181881),	-- Ardenweald Covenant Mail D_02 Cloak
-					i(181882),	-- Ardenweald Covenant Mail D_02 Cloak
-					i(181883),	-- Ardenweald Covenant Mail D_02 Cloak
-					i(181884),	-- Ardenweald Covenant Mail D_02 Cloak
 				}),
 			}),
 			n(WEAPONS, {
-				i(177719),	-- Ardenweald Covenant Dagger
-				i(177720),	-- Ardenweald Covenant Dagger
-				i(177721),	-- Ardenweald Covenant Dagger
-				i(177722),	-- Ardenweald Covenant Dagger
-				i(177723),	-- Ardenweald Covenant Dagger
-				i(177724),	-- Ardenweald Covenant Dagger
-				i(177725),	-- Ardenweald Covenant Offhand
-				i(177726),	-- Ardenweald Covenant Offhand
-				i(177727),	-- Ardenweald Covenant Offhand
-				i(177728),	-- Ardenweald Covenant Offhand
-				i(177729),	-- Ardenweald Covenant Offhand
-				i(177730),	-- Ardenweald Covenant Offhand
-				i(173932),	-- Ardenweald Covenant Fist Weapon
-				i(179572),	-- Ardenweald Covenant Fist Weapon
-				i(179573),	-- Ardenweald Covenant Fist Weapon
-				i(179574),	-- Ardenweald Covenant Fist Weapon
-				i(179575),	-- Ardenweald Covenant Fist Weapon
-				i(179576),	-- Ardenweald Covenant Fist Weapon
-				i(178096),	-- Ardenweald Covenant 2H Mace
-				i(178097),	-- Ardenweald Covenant 2H Mace
-				i(178098),	-- Ardenweald Covenant 2H Mace
-				i(178099),	-- Ardenweald Covenant 2H Mace
-				i(178100),	-- Ardenweald Covenant 2H Mace
-				i(178101),	-- Ardenweald Covenant 2H Mace
-				i(179550),	-- Ardenweald Covenant Mace
-				i(179551),	-- Ardenweald Covenant Mace
-				i(179552),	-- Ardenweald Covenant Mace
-				i(179553),	-- Ardenweald Covenant Mace
-				i(179554),	-- Ardenweald Covenant Mace
-				i(179555),	-- Ardenweald Covenant Mace
-				i(180250),	-- Ardenweald Covenant Warglaives
-				i(180251),	-- Ardenweald Covenant Warglaives
-				i(180252),	-- Ardenweald Covenant Warglaives
-				i(180253),	-- Ardenweald Covenant Warglaives
-				i(180254),	-- Ardenweald Covenant Warglaives
-				i(180255),	-- Ardenweald Covenant Warglaives
-				i(173930),	-- Ardenweald Covenant Shield
-				i(179597),	-- Ardenweald Covenant Shield
-				i(179598),	-- Ardenweald Covenant Shield
-				i(179599),	-- Ardenweald Covenant Shield
-				i(179600),	-- Ardenweald Covenant Shield
-				i(179601),	-- Ardenweald Covenant Shield
-				i(178119),	-- Ardenweald NPC Polearm
-				i(180024),	-- Ardenweald NPC Polearm Long
-				i(180072),	-- Ardenweald Covenant Bow
-				i(180074),	-- Ardenweald Covenant Bow
-				i(180076),	-- Ardenweald Covenant Bow
-				i(180078),	-- Ardenweald Covenant Bow
-				i(180080),	-- Ardenweald Covenant Bow
-				i(180082),	-- Ardenweald Covenant Bow
 				i(182350),	-- Ardenweald Raid Mace STR
-				i(179519),	-- Ardenweald Covenant Staff
-				i(179520),	-- Ardenweald Covenant Staff
-				i(179521),	-- Ardenweald Covenant Staff
-				i(179522),	-- Ardenweald Covenant Staff
-				i(179523),	-- Ardenweald Covenant Staff
-				i(179524),	-- Ardenweald Covenant Staff
-				i(179994),	-- Ardenweald Covenant Staff 2
-				i(179995),	-- Ardenweald Covenant Staff 2
-				i(179996),	-- Ardenweald Covenant Staff 2
-				i(179997),	-- Ardenweald Covenant Staff 2
-				i(179998),	-- Ardenweald Covenant Staff 2
-				i(179999),	-- Ardenweald Covenant Staff 2
-				i(180157),	-- Drust Staff
-				i(180158),	-- Drust Staff
-				i(180159),	-- Drust Staff
-				i(180160),	-- Drust Staff
-				i(180161),	-- Drust Staff
-				i(180147),	-- Drust 2H Axe
-				i(180148),	-- Drust 2H Axe
-				i(180149),	-- Drust 2H Axe
-				i(180150),	-- Drust 2H Axe
-				i(180151),	-- Drust 2H Axe
 				i(180152),	-- Drust 2H Axe
-				i(180012),	-- Ardenweald Covenant Wand
-				i(180013),	-- Ardenweald Covenant Wand
-				i(180014),	-- Ardenweald Covenant Wand
-				i(180015),	-- Ardenweald Covenant Wand
-				i(180016),	-- Ardenweald Covenant Wand
-				i(180017),	-- Ardenweald Covenant Wand
-				i(180137),	-- Drust 1H Axe
-				i(180138),	-- Drust 1H Axe
-				i(180139),	-- Drust 1H Axe
-				i(180140),	-- Drust 1H Axe
-				i(180141),	-- Drust 1H Axe
 			}),
 		}),
 	}),

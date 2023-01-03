@@ -483,8 +483,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 74.0, 61.9, REVENDRETH },
 				["g"] = {
 					i(180393),	-- Depraved Darkblade's Epaulets
+					i(180336),	-- Faintly Smoldering Torch
 					i(180394),	-- Envy-Laced Leggings
 					i(180386),	-- Herbalist's Pouch
+					i(180335),	-- Sturdy Pitch Fork
+					i(180337),	-- Sturdy Pitch Fork
 				},
 			}),
 			o(351543, {	-- Secret Treasure
@@ -770,8 +773,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 				["g"] = {
 					i(180393),	-- Depraved Darkblade's Epaulets
-					i(180386),	-- Herbalist's Pouch
 					i(180394),	-- Envy-Laced Leggings
+					i(180336),	-- Faintly Smoldering Torch
+					i(180386),	-- Herbalist's Pouch
+					i(180335),	-- Sturdy Pitch Fork
+					i(180337),	-- Sturdy Pitch Fork
 				},
 			}),
 			o(357584, {	-- Vyrtha's Dredglaive
