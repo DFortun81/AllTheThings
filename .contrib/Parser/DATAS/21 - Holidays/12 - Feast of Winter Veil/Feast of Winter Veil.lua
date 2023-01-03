@@ -1119,7 +1119,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 192093 },	-- Gently Shaken Gift
 				},
 				["description"] = "Gift from 2022.",
-				["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.99999" },	-- TODO: Correct Removed Timestamp in 2023.
+				["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["_drop"] = { "g" },
 				["groups"] = {
@@ -1453,7 +1453,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					{ "i", 192094 },	-- Winter Veil Gift
 				},
 				["description"] = "Gift from 2022.",
-				["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.99999" },	-- TODO: Correct Removed Timestamp in 2023.
+				["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" },
 				["maps"] = { IRONFORGE, ORGRIMMAR },
 				["_drop"] = { "g" },
 				["lvl"] = 10,
