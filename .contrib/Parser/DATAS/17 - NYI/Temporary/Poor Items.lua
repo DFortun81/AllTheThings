@@ -1049,9 +1049,6 @@ local f = root("PoorQualityItems", {
 			i(124524),	-- Fel Axe
 			i(128279),	-- Fel Lord Axe
 			i(152866),	-- Kul Tiras Polearm
-			i(179726),	-- Maw 2H Polearm
-			i(179727),	-- Maw 2H Polearm
-			i(179728),	-- Maw 2H Polearm
 			i(67153),	-- Mobus's Vile Halberd
 			i(147440),	-- Monster Weapon - Polearm_2H_FelfireRaid_D_01 - Teal
 			i(169090),	-- Naga Polearm
@@ -1211,8 +1208,11 @@ for i,o in ipairs(f) do
 	o.OnUpdate = OnUpdateForPoorQualityItems;
 end
 
+-- Never Implemented Poor Items --
+-- Do not move this elsewhere, please leave it here for now. -Darkal
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(SL_TIER, {
+		-- NYI Shadowlands Poor Items
 		n(ARMOR, {
 			filter(CLOTH, {
 				n(HEAD, {
@@ -1712,6 +1712,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(176029),	-- Ardenweald Quest Polearm
 				i(176030),	-- Ardenweald Quest Polearm
 				i(176031),	-- Ardenweald Quest Polearm
+				i(179726),	-- Maw 2H Polearm
+				i(179727),	-- Maw 2H Polearm
+				i(179728),	-- Maw 2H Polearm
 				i(177271),	-- Monster - Maldraxxus Polearm - Covenant
 				i(177270),	-- Monster - Maldraxxus Polearm - Covenant
 				i(177272),	-- Monster - Maldraxxus Polearm - Guard Only, 2H Variant
