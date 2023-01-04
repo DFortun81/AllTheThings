@@ -4,6 +4,10 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
 		n(RARES, {
+			n(193168, {	-- Biryuk
+				["coord"] = { 72.5, 56.2, OHNAHRAN_PLAINS },
+				["questID"] = 73903,
+			}),
 			n(193128, {	-- Blightpaw the Depraved
 				["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
 				["questID"] = 74096,
@@ -145,8 +149,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(192557, {	-- Quackers the Terrible
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
-				-- ["questID"] = 70177,
+				["coord"] = { 68.2, 79.2, OHNAHRAN_PLAINS },
+				["questID"] = 73972,
 				-- ["g"] = {
 
 				-- },
@@ -299,7 +303,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193209, {	-- Zenet Avis <The Hard Wind>
 				["coord"] = { 31.5, 64.0, OHNAHRAN_PLAINS },
-				-- ["questID"] = 70177,
+				["questID"] = 73901,
 				["g"] = {
 					i(200314),	-- Skyspeaker's Envelope
 					i(200306),	-- Tempest Shawl
@@ -322,10 +326,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(200215),	-- Plumed Shoulderguards of the Hunt
 				},
-			}),
-			n(193168, {	-- Biryuk
-				["coord"] = { 72.5, 56.2, OHNAHRAN_PLAINS },
-				["questID"] = 73903,
 			}),
 		}),
 	}),

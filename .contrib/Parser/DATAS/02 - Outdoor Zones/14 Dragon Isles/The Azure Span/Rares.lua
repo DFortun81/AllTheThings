@@ -172,7 +172,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(198004, {	-- Mange the Outcast
 				["coord"] = { 40.4, 48.4, THE_AZURE_SPAN },
-				-- ["questID"] = ,
+				["questID"] = 73884,
 				["g"] = {
 					i(200283),	-- Gnoll-Gnawed Breeches
 				},
