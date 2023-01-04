@@ -9,20 +9,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 49.4, 63.1, THALDRASZUS },
 				["questID"] = 70611,
 				["g"] = {
-					crit(6, {	-- Acorn Harvester
-						["achievementID"] = 16301,	-- Treasures of Thaldraszus
-					}),
 					i(193066),	-- Chestnut (PET!)
 				},
 			}),
 			o(999111, {	-- Amber Gem Cluster	-- PH
 				["coord"] = { 52.6, 76.7, THALDRASZUS },
-				-- ["questID"] = 70408,
+				["questID"] = 70408,
 				["cost"] = { { "i", 198852, 1 }, },	--1xYennu's Map
 				["g"] = {
-					crit(3, {	-- Amber Gem Cluster
-						["achievementID"] = 16301,	-- Treasures of Thaldraszus
-					}),
 					i(200863),	-- Glimmering Nozdorite Cluster
 					i(194651),	-- Design: Jeweled Amber Whelpling (RECIPE!)
 				},
@@ -32,11 +26,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 33.9, 76.9, THALDRASZUS },
 				["questID"] = 70607,
 				["cost"] = { { "i", 199068, 1 }, },	--1xTime-Lost Memo
-				["g"] = {
-					crit(1, {	-- Cracked Hourglass
-						["achievementID"] = 16301,	-- Treasures of Thaldraszus
-					}),
-				},
 			}),
 			o(380618, {	-- Draconic Flux
 				["coord"] = { 52.2, 80.5, THALDRASZUS },
@@ -48,11 +37,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			o(381094, {	-- Elegant Canvas Brush
 				["coord"] = { 60.2, 41.6, THALDRASZUS },
 				["questID"] = 70609,
-				["g"] = {
-					crit(4, {	-- Elegant Canvas Brush
-						["achievementID"] = 16301,	-- Treasures of Thaldraszus
-					}),
-				},
 			}),
 			o(380429, {	-- Golden Claw
 				["coord"] = { 38.8, 45.01, THALDRASZUS },
@@ -70,11 +54,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 58.2, 80.1, THALDRASZUS },
 				["questID"] = 70608,
 				["cost"] = { { "i", 199069, 1 }, },	--1xYennu's Map
-				["g"] = {
-					crit(2, {	-- Sand Pile
-						["achievementID"] = 16301,	-- Treasures of Thaldraszus
-					}),
-				},
 			}),
 			n(198604, {	-- Strange Bear Cub
 				["coord"] = { 52.5, 83.6, THALDRASZUS },
@@ -87,9 +66,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 64.8, 16.5, THALDRASZUS },
 				["questID"] = 70610,
 				["g"] = {
-					crit(5, {	-- Surveyor's Magnifying Glass
-						["achievementID"] = 16301,	-- Treasures of Thaldraszus
-					}),
 					i(193036),	-- Left-Handed Magnifying Glass
 				},
 			}),

@@ -4,6 +4,9 @@
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		n(ACHIEVEMENTS, {
+			ach(16522, {	-- A True Explorer
+				["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 25
+			}),
 			ach(15890, {	-- Dragonscale Expedition: The Highest Peaks
 				["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7
 				["description"] = "Requires Research Cartographer's Flag at Expedition Supply Kit.",
@@ -30,8 +33,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					{ 34.0, 84.9, THALDRASZUS },
 				}
 			}),
-			-- TODO: There is a questline for these... Not spawning for me :( To start these
-			ach(16571),	-- Well Supplied
+			ach(16571, {	-- Well Supplied
+				["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7
+			}),
 		}),
 	}),
 })));

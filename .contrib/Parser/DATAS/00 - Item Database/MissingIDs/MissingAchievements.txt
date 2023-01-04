@@ -885,10 +885,6 @@ ach(15557),	-- Murkastrasza
 ach(16425),	-- I'm a Template Character [DNT]
 10.0.0.45454
 ach(16520),	-- 10.0 Dragonflight - Expansion Quest Launch (Meet Wrathion/Ebyssian) \\ 10.0 Dragonflight - Expansion Quest Launch
-ach(16522),	-- A True Explorer
-ach(16528),	-- Joining the Khansguard
-ach(16529),	-- Joining the Community
-ach(16530),	-- Ally of the Flights
 ach(16531),	-- A Whole Heap of Lunkers \\ A Whole Lot of Lunkers
 ach(16532),	-- Friends with Sabellian
 ach(16533),	-- Lots of Lunkers \\ A Whole Lot of Lunkers
@@ -898,7 +894,6 @@ ach(16539),	-- In High Esteem
 ach(16546),	-- What's Down There? \\ That's not a fish...
 ach(16547),	-- Pulled!
 ach(16548),	-- It Takes a Tuskarr Buddy \\ It takes a (Tuskarr) village.
-ach(16549),	-- Popular Around the Isles
 10.0.0.45570
 ach(16621),	-- One of Everything, Please
 ach(16622),	-- Three Minutes or It's Free

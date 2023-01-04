@@ -153,8 +153,43 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
-			ach(16363),	-- Just Don't Ask Me to Spell It
-			ach(16398),	-- Sojourner of Thaldraszus
+			ach(16363, {	-- Just Don't Ask Me to Spell It
+				crit(1, {	-- Valdrakken, City of Dragons
+					["sourceQuests"] = { 66252 },	-- Reporting In
+				}),
+				crit(2, {	-- Time Management
+					["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
+				}),
+				crit(3, {	-- Big Time Adventurer
+					["sourceQuests"] = { 66221 },	-- Moving On
+				}),
+			}),
+			ach(16398, {	-- Sojourner of Thaldraszus
+				crit(1, {	-- Gelikyr Overlook
+					["sourceQuests"] = { 66472 },	-- Primal List
+				}),
+				crit(2, {	-- Drawing Conclusions
+					["sourceQuests"] = { 66467 },	-- Art Inmitates Life
+				}),
+				crit(3, {	-- The Screetchflight Scramble
+					["sourceQuests"] = { 66299 },	-- The Awaited Egg-splosion
+				}),
+				crit(4, {	-- Gardens of Unity
+					["sourceQuests"] = { 66412 },	-- Carry On, Basilton
+				}),
+				crit(5, {	-- Tyrhold Reservoir
+					["sourceQuests"] = { 65920 },	-- For the Ward!
+				}),
+				crit(6, {	-- Bleeding Hearts
+					["sourceQuests"] = { 69934 },	-- Bleeding Hearts
+				}),
+				crit(7, {	-- Serene Dreams Spa
+					["sourceQuests"] = { 70745 },	-- Enforced Relaxation
+				}),
+				crit(8, {	-- Misty Vale
+					["sourceQuests"] = { 70879 },	-- Report on the Rebels
+				}),
+			}),
 			ach(16578, {	-- Thaldraszus Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -245,9 +280,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}},
 			}),
 			pvp(ach(16593)),	-- Tour of Duty: Thaldraszus
-
-			-- TODO: NOT COMPLETED YET
-			ach(16301),	-- Treasures of Thaldraszus
+			ach(16301, {	-- Treasures of Thaldraszus
+				crit(1, {	-- Cracked Hourglass
+					["_quests"] = { 70607 },
+				}),
+				crit(2, {	-- Sand Pile
+					["_quests"] = { 70608 },
+				}),
+				crit(3, {	-- Amber Gem Cluster
+					["_quests"] = { 70408 },
+				}),
+				crit(4, {	-- Elegant Canvas Brush
+					["_quests"] = { 70609 },
+				}),
+				crit(5, {	-- Surveyor's Magnifying Glass
+					["_quests"] = { 70610 },
+				}),
+				crit(6, {	-- Acorn Harvester
+					["_quests"] = { 70611 },
+				}),
+			}),
 		}),
 	}),
 })));

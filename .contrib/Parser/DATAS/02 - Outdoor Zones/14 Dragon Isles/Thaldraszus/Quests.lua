@@ -115,11 +115,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 66251 },	-- Fire Fighter
 					["provider"] = { "n", 190562 },	-- Guardian Velomir
 					["coord"] = { 40.2, 85.1, THALDRASZUS },
-					["g"] = {
-						crit(1, {	-- Valdrakken, City of Dragons
-							["achievementID"] = 16363,	-- Just Don't Ask Me to Spell It
-						}),
-					},
 				}),
 
 					-- Chapter 2 --
@@ -247,11 +242,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 65938 },	-- The Once and Future Team
 					["provider"] = { "n", 186711 },	-- Chromie
 					["coord"] = { 59.6, 81.7, THALDRASZUS },
-					["g"] = {
-						crit(2, {	-- Time Management
-							["achievementID"] = 16363,	-- Just Don't Ask Me to Spell It
-						}),
-					},
 				}),
 
 					-- Chapter 3 --
@@ -390,9 +380,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 186931 },	-- Nozdormu
 					["coord"] = { 60.1, 82.4, THALDRASZUS },
 					["g"] = {
-						crit(3, {	-- Big Time Adventurer
-							["achievementID"] = 16363,	-- Just Don't Ask Me to Spell It
-						}),
 						i(195213),	-- Life-Binder's Band
 					},
 				}),
@@ -480,9 +467,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 54.8, 64.3, THALDRASZUS },
 						["g"] = {
 							i(200537),	-- Bundle of Primalist Orders
-							crit(1, {	-- Gelikyr Overlook
-								["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-							}),
 						},
 					}),
 				},
@@ -550,9 +534,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(195186),	-- Artist's Cinch
 							i(195188),	-- Artist's Sash
 							i(195189),	-- Artist's Waistguard
-							crit(2, {	-- Drawing Conclusions
-								["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-							}),
 						},
 					}),
 					q(66465, {	-- Cache and Release
@@ -688,9 +669,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(197133),	-- Highland Drake: Spined Cheek (DM!)
 							i(191891),	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise (TOY!)
 							i(191763),	-- Im-PECK-able Screechflight Disguise v2
-							crit(3, {	-- The Screetchflight Scramble
-								["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-							}),
 						},
 					}),
 				},
@@ -761,9 +739,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 37.9, 75.4, THALDRASZUS },
 						["g"] = {
 							i(194098),	-- Lord Basilton (PET!)
-							crit(4, {	-- Gardens of Unity
-								["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-							}),
 						},
 					}),
 				},
@@ -821,9 +796,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(195193),	-- Sister's Keeper
 							i(195190),	-- Sister's Token
 							i(195191),	-- Sister's Embrace
-							crit(5, {	-- Tyrhold Reservoir
-								["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-							}),
 						},
 					}),
 				},
@@ -853,11 +825,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 						["provider"] = { "n", 193538 },	-- Szareth
 						["coord"] = { 50.3, 67.7, THALDRASZUS },
-						["g"] = {
-							crit(6, {	-- Bleeding Hearts
-								["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-							}),
-						},
 					}),
 				},
 			}),
@@ -908,11 +875,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 70744 },	-- Look at the Bones!
 						["provider"] = { "n", 196160 },	-- Quilius
 						["coord"] = { 40.5, 48.9, THALDRASZUS },
-						["g"] = {
-							crit(7, {	-- Serene Dreams Spa
-								["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-							}),
-						},
 					}),
 				},
 			}),
@@ -992,11 +954,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 						["provider"] = { "n", 196566 },	-- Investigator Erima
 						["coord"] = { 42.4, 78.9, THALDRASZUS },
-						["g"] = {
-							crit(8, {	-- Misty Vale
-								["achievementID"] = 16398,	-- Sojourner of Thaldraszus
-							}),
-						},
 					}),
 				},
 			}),

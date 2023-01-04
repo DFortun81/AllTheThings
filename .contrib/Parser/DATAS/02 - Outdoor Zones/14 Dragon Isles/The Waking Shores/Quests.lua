@@ -79,11 +79,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 69912 },	-- My First Real Emergency!
 					["provider"] = { "n", 193372 },	-- Majordomo Selistra
 					["coord"] = { 76.6, 33.7, THE_WAKING_SHORES },
-					["g"] = {
-						crit(1, {	-- The Dragonscale Expedition
-							["achievementID"] = 16334,	-- Waking Hope
-						}),
-					},
 				}),
 
 					-- Chapter 1 --
@@ -183,15 +178,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						65999,	-- Red in Tooth and Claw
 					},
 					["provider"] = { "n", 190171 },	-- Sendrax
-					["coord"] = { 54.0, 22.8, THE_WAKING_SHORES },	-- This isnt true, He follows you....
+					["coord"] = { 54.0, 22.8, THE_WAKING_SHORES },
 					["g"] = {
 						i(194382),	-- Expedition Mercenary's Boots
 						i(194381),	-- Expedition Researcher's Treads
 						i(194338),	-- Expedition Guard's Sabatons
 						i(194383),	-- Field Scout's Boots
-						crit(2, {	-- Dragons in Distress
-							["achievementID"] = 16334,	-- Waking Hope
-						}),
 					},
 				}),
 
@@ -335,9 +327,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 53.7, 80.2, THE_WAKING_SHORES },
 					["g"] = {
 						i(197378),	-- Renewed Proto-Drake: Subtle Horns (DM!)
-						crit(3, {	-- In Defense of Life
-							["achievementID"] = 16334,	-- Waking Hope
-						}),
 					},
 				}),
 
@@ -436,9 +425,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(194341),	-- Expedition Mercenary's Legguards
 						i(194339),	-- Expedition Researcher's Pantaloons
 						i(194342),	-- Field Scout's Pants
-						crit(4, {	-- Wrathion's Gambit
-							["achievementID"] = 16334,	-- Waking Hope
-						}),
 					},
 				}),
 
@@ -494,9 +480,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(194348),	-- Expedition Mercenary's Helm
 						i(194347),	-- Expedition Researcher's Hood
 						i(194349),	-- Field Scout's Helmet
-						crit(5, {	-- A Purpose Restored
-							["achievementID"] = 16334,	-- Waking Hope
-						}),
 					},
 				}),
 				q(70641, {	-- A Waking Oath
@@ -590,9 +573,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(194372),	-- Vault Guardian's Missive
 							i(194376),	-- Vault Guardian's Poleaxe
 							i(194417),	-- Vault Guard's Talon
-							crit(1, {	-- Beyond the Barrier
-								["achievementID"] = 16401,	-- Sojourner of the Waking Shores
-							}),
 						},
 					}),
 				},
@@ -636,11 +616,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 						["provider"] = { "n", 192298 },	-- Tyrgon
 						["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
-						["g"] = {
-							crit(2, {	-- Brave Researchers
-								["achievementID"] = 16401,	-- Sojourner of the Waking Shores
-							}),
-						},
 					}),
 				},
 			}),
@@ -697,9 +672,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 39.1, 83.3, THE_WAKING_SHORES },
 						["g"] = {
 							i(192465),	-- Wulferd's Award-Winning Camera
-							crit(3, {	-- Professional Protographer
-								["achievementID"] = 16401,	-- Sojourner of the Waking Shores
-							}),
 						},
 					}),
 				},
@@ -799,9 +771,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(194418),	-- Life Pools Watering Can
 						},
 					}),
-					crit(4, {	-- Ruby Lifecalling
-						["achievementID"] = 16401,	-- Sojourner of the Waking Shores
-					}),
 				},
 			}),
 			crit(5, {	-- Save the Hippos!
@@ -850,9 +819,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(194413),	-- Expedition Mercenary's Wristwraps
 							i(194411),	-- Expedition Researcher's Binders
 							i(194414),	-- Field Scout's Bindings
-							crit(5, {	-- Save the Hippos!
-								["achievementID"] = 16401,	-- Sojourner of the Waking Shores
-							}),
 						},
 					}),
 					q(66106, {	-- Don't Be So Shellfish
@@ -900,9 +866,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(194388),	-- Obsidian Guardian's Cleaver
 							i(194390),	-- Obsidian Spellsplitter
 							i(194387),	-- Obsidian Watcher's Crossbow
-							crit(6, {	-- The Shadow of His Wings
-								["achievementID"] = 16401,	-- Sojourner of the Waking Shores
-							}),
 						},
 					}),
 				},
@@ -928,22 +891,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "n", 184452 },	-- Warlord Breka Grimaxe
 						["coord"] = { 76.4, 33.1, THE_WAKING_SHORES },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							crit(1, {	-- Captain Garrick & Shuja Grimaxe
-								["achievementID"] = 16406,	-- All Sides of the Story
-							}),
-						},
 					}),
 					q(66111, {	-- Encroaching Elementals [H]
 						["sourceQuests"] = { 66110 },	-- Give Peace a Chance [H]
 						["provider"] = { "n", 184449 },	-- Captain Garrick
 						["coord"] = { 76.7, 34.6, THE_WAKING_SHORES },
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							crit(1, {	-- Captain Garrick & Shuja Grimaxe
-								["achievementID"] = 16406,	-- All Sides of the Story
-							}),
-						},
 					}),
 				},
 			}),
@@ -979,11 +932,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 70242 },	-- Life After Life
 						["provider"] = { "n", 194801 },	-- Bathoras
 						["coord"] = { 58.4, 67.5, THE_WAKING_SHORES },
-						["g"] = {
-							crit(2, {	-- Duroz & Kolgar
-								["achievementID"] = 16406,	-- All Sides of the Story
-							}),
-						},
 					}),
 				},
 			}),
@@ -998,9 +946,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["isWeekly"] = true,
 						["g"] = {
 							i(200143),	-- Fenistrasza's Skull
-							crit(3, {	-- Tarjin the Blind
-								["achievementID"] = 16406,	-- All Sides of the Story
-							}),
 						},
 					}),
 				},
@@ -1027,11 +972,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["provider"] = { "i", 198661 },	-- Partially Destroyed Diary
 						["coord"] = { 23, 60, THE_WAKING_SHORES },
 						["description"] = "To obtain this quest, you must enter the vault located at 27, 61. Once inside, head down the stairs and take a left, and then another left into the room. This room will have a bookshelf on it with the item to start this quest.",
-						["g"] = {
-							crit(4, {	-- Veritistrasz
-								["achievementID"] = 16406,	-- All Sides of the Story
-							}),
-						},
 					}),
 				},
 			}),

@@ -305,7 +305,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					15762,	-- Sundapple Copse Circuit Advanced: Gold
 				}},
 			}),
-			ach(15394),	-- Ohn'a'Roll
+			ach(15394, {	-- Ohn'a'Roll
+				crit(1, {	-- Into the Plains
+					["sourceQuests"] = { 65806 },	-- Maruukai
+				}),
+				crit(2, {	-- Maruukai
+					["sourceQuests"] = { 66025 },	-- The Nokhud Threat
+				}),
+				crit(3, {	-- Ohn'ahra's Blessing
+					["sourceQuests"] = { 66259 },	-- A Storm of Ill Tidings
+				}),
+				crit(4, {	-- Bonds Renewed
+					["sourceQuests"] = { 66783 },	-- Renewal of Vows
+				}),
+			}),
 			ach(16574, {	-- Sleeping on the Job
 				crit(1, {	-- Dreamguard Felyasra
 					["crs"] = { 198064 },	-- Dreamguard Felyasra
@@ -332,9 +345,53 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 29.4, 41.5, OHNAHRAN_PLAINS },
 				}),
 			}),
-			ach(16405),	-- Sojourner of Ohn'ahran Plains
+			ach(16405, {	-- Sojourner of Ohn'ahran Plains
+				crit(1, {	-- Taivan's Purpose
+					["sourceQuests"] = { 69096 },	-- Taivan's Purpose
+				}),
+				crit(2, {	-- Initiate's Day Out
+					["sourceQuests"] = { 66676 },	-- Sneaking In
+				}),
+				crit(3, {	-- Lilac Ramble
+					["sourceQuests"] = { 66011 },	-- In Memory of Ysera
+				}),
+				crit(4, {	-- Pinewood Post
+					["sourceQuests"] = { 66684 },	-- Storm Chasing
+				}),
+				crit(5, {	-- Elder Nazuun
+					["sourceQuests"] = { 66690 },	-- The Final Ancestor
+				}),
+				crit(6, {	-- The Eternal Kurgans
+					["sourceQuests"] = { 66658 },	-- The Nokhud Offensive: Founders Keepers
+				}),
+				crit(7, {	-- Mudfin Village
+					["sourceQuests"] = { 66006 },	-- Return to Roscha
+				}),
+				crit(8, {	-- Nelthazan Ruins
+					["sourceQuests"] = { 66700 },	-- The Black Lotus
+				}),
+			}),
 			pvp(ach(16595)),	-- Tour of Duty: Ohn'ahran Plains
-			ach(16299),	-- Treasures of the Ohn'ahran Plains
+			ach(16299, {	-- Treasures of the Ohn'ahran Plains
+				crit(1, {	-- Nokhud Warspear
+					["_quests"] = { 67049 },
+				}),
+				crit(2, {	-- Slightly Chewed Duck Egg
+					["_quests"] = { 67950 },
+				}),
+				crit(3, {	-- Emerald Gem Cluster
+					["_quests"] = { 70391 },
+				}),
+				crit(4, {	-- Centaur Horn
+					["_quests"] = { 70402 },
+				}),
+				crit(5, {	-- Gold Coin
+					["_quests"] = { 70379 },
+				}),
+				crit(6, {	-- Tuskarr Toy Boat
+					["sourceQuests"] = { 72063 },	-- Return Yennu's Toy Boat
+				}),
+			}),
 			ach(16424, {	-- Who's a Good Bakar?
 				crit(1, {	-- Alli
 					["crs"] = { 197569 },	-- Alli

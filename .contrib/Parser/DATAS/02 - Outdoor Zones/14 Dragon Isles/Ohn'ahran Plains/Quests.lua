@@ -110,11 +110,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 66848 },	-- Omens on the Wind
 					["provider"] = { "n", 181217 },	-- Sansok Khan
 					["coord"] = { 70.0, 38.0, OHNAHRAN_PLAINS },
-					["g"] = {
-						crit(1, {	-- Into the Plains
-							["achievementID"] = 15394,	-- Ohn'a'Roll
-						}),
-					},
 				}),
 
 					-- Chapter 2 --
@@ -209,11 +204,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 					["provider"] = { "n", 181198 },	-- Khanam Matra Sarest
 					["coord"] = { 60.3,38.0, OHNAHRAN_PLAINS },
-					["g"] = {
-						crit(2, {	-- Maruukai
-							["achievementID"] = 15394,	-- Ohn'a'Roll
-						}),
-					},
 				}),
 
 					-- Chapter 3 --
@@ -302,9 +292,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 61.4, 62.8, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197846),	-- Ohn'ahra's Carving
-						crit(3, {	-- Ohn'ahra's Blessing
-							["achievementID"] = 15394,	-- Ohn'a'Roll
-						}),
 					},
 				}),
 
@@ -395,9 +382,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["g"] = {
 						i(197672),	-- Emerald Shroud of Loyalty
 						i(197375),	-- Renewed Proto-Drake: Curled Horns (DM!)
-						crit(4, {	-- Bonds Renewed
-							["achievementID"] = 15394,	-- Ohn'a'Roll
-						}),
 					},
 				}),
 			}),
@@ -461,9 +445,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 61.2, 40.0, OHNAHRAN_PLAINS },
 						["g"] = {
 							i(198537),	-- Taivan's Trumpet (TOY!)
-							crit(1, {	-- Taivan's Purpose
-								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-							}),
 						},
 					}),
 				},
@@ -515,9 +496,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(200275),	-- Geyserwalker Sandals
 							i(200272),	-- Keratin-Reinforced Boots
 							i(200274),	-- Spearbreaker Footguards
-							crit(2, {	-- Initiate's Day Out
-								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-							}),
 						},
 					}),
 				},
@@ -585,9 +563,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 24.4, 64.0, OHNAHRAN_PLAINS },
 						["g"] = {
 							i(199693),	-- Memory of Ysera
-							crit(3, {	-- Lilac Ramble
-								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-							}),
 						},
 					}),
 				},
@@ -644,9 +619,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(197887),	-- Geyserwalker Bindings
 							i(197896),	-- Keratin-Reinforced Wristguards
 							i(197901),	-- Spearbreaker Vambraces
-							crit(4, {	-- Pinewood Post
-								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-							}),
 						},
 					}),
 				},
@@ -792,11 +764,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 65952 },	-- A Chief of Legends
 						["provider"] = { "n", 186649 },	-- Khasar
 						["coord"] = { 83.4, 32.3, OHNAHRAN_PLAINS },
-						["g"] = {
-							crit(7, {	-- Mudfin Village
-								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-							}),
-						},
 					}),
 					q(66005, {	-- Medallion of a Fallen Friend
 						["sourceQuests"] = { 65950 },	-- Thieving Gorlocs
@@ -869,9 +836,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["g"] = {
 							i(200278),	-- Drake Archaeologist's Shawl
 							i(197407),	-- Renewed Proto-Drake: Spiked Throat (DM!)
-							crit(8, {	-- Nelthazan Ruins
-								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-							}),
 							i(198354),	-- The Black Locus
 						},
 					}),
@@ -1011,9 +975,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "i", 200876 },	-- Yennu's Toy Boat
 				["coord"] = { 52.0, 58.3, OHNAHRAN_PLAINS },
 				["g"] = {
-					crit(6, {	-- Tuskarr Toy Boat
-						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
-					}),
 					i(200878),	-- Wheeled Floaty Boaty Controller (TOY!)
 				},
 			}),

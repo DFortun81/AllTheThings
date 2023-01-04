@@ -8,9 +8,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 73.5, 56.2, OHNAHRAN_PLAINS },
 				["questID"] = 70402,
 				["g"] = {
-					crit(4, {	-- Centaur Horn
-						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
-					}),
 					i(200869),	-- Ohn Lite Branded Horn (TOY!)
 				},
 			}),
@@ -64,9 +61,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 67950,
 				["cost"] = { { "i", 195453, 1 }, },	--1xLudo's Stash Map
 				["g"] = {
-					crit(2, {	-- Slightly Chewed Duck Egg
-						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
-					}),
 					i(199171, {	-- Slightly Chewed Duck Egg
 						i(199172),	-- Viridescent Duck (PET!)
 					}),
@@ -74,12 +68,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(380847, {	-- Emerald Gem Cluster
 				["coord"] = { 33.2, 55.3, OHNAHRAN_PLAINS },
-				-- ["questID"] = 70391,
+				["questID"] = 70391,
 				["cost"] = { { "i", 198843, 1 }, },	--1xEmerald Gardens Explorer's Notes
 				["g"] = {
-					crit(3, {	-- Emerald Gem Cluster
-						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
-					}),
 					i(200865),	-- Glimmering Ysemerald Cluster
 					i(194648),	-- Design: Jeweled Emerald Whelpling (RECIPE!)
 				},
@@ -88,9 +79,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 82.3, 73.4, OHNAHRAN_PLAINS },
 				["questID"] = 70379,
 				["g"] = {
-					crit(5, {	-- Gold Coin
-						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
-					}),
 					i(199338),	-- Copper Coin of the Isles
 				},
 			}),
@@ -99,9 +87,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 67049,
 				["cost"] = { { "i", 194540, 1 }, },	--1xNokhud Armorer's Notes
 				["g"] = {
-					crit(1, {	-- Nokhud Warspear
-						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
-					}),
 					i(200861),	-- Stolen Shikaar Warspear
 				},
 			}),

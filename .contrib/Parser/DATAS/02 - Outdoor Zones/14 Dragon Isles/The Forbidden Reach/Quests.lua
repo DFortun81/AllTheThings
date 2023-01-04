@@ -36,12 +36,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
 				["coord"] = { 62.3, 36.5, 2109 },
 				["g"] = {
 					i(193914),	--	Crystalline Lapis
-					crit(1, {	-- The War Creche [A]
-						["achievementID"] = 15325,	-- Dracthyr, Awaken [A]
-					}),
-					crit(1, {	-- The War Creche [H]
-						["achievementID"] = 15638,	-- Dracthyr, Awaken [H]
-					}),
 				},
 			}),
 			-- Chapter 2
@@ -70,14 +64,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
 				["sourceQuests"] = { 64873 },	-- Stretch Your Wings
 				["provider"] = { "n", 192889 },	-- Dervishian
 				["coord"] = { 44.7, 57.6, THE_FORBIDDEN_REACH },
-				["g"] = {
-					crit(2, {	-- Old Weyrn Grounds [A]
-						["achievementID"] = 15325,	-- Dracthyr, Awaken [A]
-					}),
-					crit(2, {	-- Old Weyrn Grounds [H]
-						["achievementID"] = 15638,	-- Dracthyr, Awaken [H]
-					}),
-				},
 			}),
 			-- Chapter 3
 			q(65060, {	-- Caldera of the Menders
@@ -132,12 +118,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
 				["coord"] = { 20.1, 19.1, THE_FORBIDDEN_REACH },
 				["g"] = {
 					i(191812),	-- Crimson Dracthyr Battlegear Treads
-					crit(3, {	-- The Healing Wings [A]
-						["achievementID"] = 15325,	-- Dracthyr, Awaken [A]
-					}),
-					crit(3, {	-- The Healing Wings [H]
-						["achievementID"] = 15638,	-- Dracthyr, Awaken [H]
-					}),
 				},
 			}),
 			-- Chapter 4
@@ -191,14 +171,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
 				["sourceQuests"] = { 65052 },	-- The Ebon Scales
 				["provider"] = { "n", 182275 },	-- Scalecommander Sarkareth
 				["coord"] = { 81.2, 54.0, THE_FORBIDDEN_REACH },
-				["g"] = {
-					crit(4, {	-- The Ebon Scales [A]
-						["achievementID"] = 15325,	-- Dracthyr, Awaken [A]
-					}),
-					crit(4, {	-- The Ebon Scales [H]
-						["achievementID"] = 15638,	-- Dracthyr, Awaken [H]
-					}),
-				},
 			}),
 			-- Chapter 5
 			q(65701, {	-- Preservation or Devastation
@@ -220,12 +192,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
 				["coord"] = { 56.7, 28.2, THE_FORBIDDEN_REACH },
 				["g"] = {
 					i(194335),	-- Emerald Tear Necklace
-					crit(5, {	-- Froststone Vault [A]
-						["achievementID"] = 15325,	-- Dracthyr, Awaken [A]
-					}),
-					crit(5, {	-- Froststone Vault [H]
-						["achievementID"] = 15638,	-- Dracthyr, Awaken [H]
-					}),
 				},
 			}),
 			-- Chapter 6
@@ -248,12 +214,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
 				["coord"] = { 41.7, 44.5, THE_FORBIDDEN_REACH },
 				["g"] = {
 					i(193916),	-- Dragonkin Signet Ring
-					crit(6, {	-- Wrath of the Storm-Eater [A]
-						["achievementID"] = 15325,	-- Dracthyr, Awaken [A]
-					}),
-					crit(6, {	-- Wrath of the Storm-Eater [H]
-						["achievementID"] = 15638,	-- Dracthyr, Awaken [H]
-					}),
 				},
 			}),
 			-- Chapter 6
@@ -277,9 +237,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
 				["races"] = { DRACTHYR_ALLIANCE },
 				["g"] = {
 					i(194675),	-- Gilded Dracthyr's Tabard
-					crit(7, {	-- All Along the Watchtowers
-						["achievementID"] = 15325,	-- Dracthyr, Awaken [A]
-					}),
 				},
 			}),
 			-- Org
@@ -302,9 +259,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
 				["races"] = { DRACTHYR_HORDE },
 				["g"] = {
 					i(202197),	-- Emboldened Dracthyr's Tabard
-					crit(7, {	-- The Dark Talons
-						["achievementID"] = 15638,	-- Dracthyr, Awaken [H]
-					}),
 				},
 			}),
 			-- To'no Side-Quest
