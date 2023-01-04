@@ -490,6 +490,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(200118),	-- Yellow Scouting Ottuk (MOUNT!)
 				},
 			}),
+				-- RENOWN 26 --
+			q(70976, {	-- Slacking and Sledding
+				["minReputation"] = { 2511, 26 },	-- Iskaara Tuskarr Renown 26
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+				["g"] = {
+					i(199899),	-- Iskaara Tug Sled (TOY!)
+					i(198827),	-- Magical Snow Sled (TOY!)
+				},
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
@@ -509,5 +519,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72637),	-- Triggered with 'A Comfy Seat' (70962)
 		q(72638),	-- Triggered with 'Arms for Every Arm'  (70971)
 		q(72639),	-- Triggered with 'Our Loyal, Lanky Steeds' (70972)
+		q(72281),	-- Triggered with 'Slacking and Sledding' (70976)
 	}),
 }));

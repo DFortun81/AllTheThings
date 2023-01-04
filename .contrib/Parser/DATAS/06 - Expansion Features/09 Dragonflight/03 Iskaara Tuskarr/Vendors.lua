@@ -173,12 +173,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(199899, {	-- Iskaara Tug Sled (TOY!)
 						["cost"] = {
-							{ "c", DRAGON_SUPPLIES, 250 },
+							{ "c", DRAGON_SUPPLIES, 400 },
+							{ "i", RUNED_WRITHEBARK, 5 },
+							{ "i", MASTODON_TUSK, 2 },
 						},
 					}),
 					i(198827, {	-- Magical Snow Sled (TOY!)
 						["cost"] = {
-							{ "c", DRAGON_SUPPLIES, 250 },
+							{ "c", DRAGON_SUPPLIES, 400 },
+							{ "i", RUNED_WRITHEBARK, 5 },
+							{ "i", MASTODON_TUSK, 2 },
 						},
 					}),
 				},

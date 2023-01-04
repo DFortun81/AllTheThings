@@ -55,43 +55,43 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 					-- RENOWN 6 --
 				q(70942, {	-- Highland Fishing
-					["sourceQuests"] = { 72584 },	-- Setting Your Very Own Net -- TODO: CONFIRM
 					["minReputation"] = { 2511, 6 },	-- Iskaara Tuskarr Renown 6
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 7 --
 				q(70943, {	-- Harpooning
-					["sourceQuests"] = { 70942 },	-- Highland Fishing -- TODO: CONFIRM
 					["minReputation"] = { 2511, 7 },	-- Iskaara Tuskarr Renown 7
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 10 --
 				q(70944, {	-- Ice Fishing
-					["sourceQuests"] = { 70943 },	-- Harpooning -- TODO: CONFIRM
 					["minReputation"] = { 2511, 10 },	-- Iskaara Tuskarr Renown 10
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 13 --
 				q(70945, {	-- Netting More
-					["sourceQuests"] = { 70944 },	-- Ice Fishing -- TODO: CONFIRM
 					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 16 --
 				q(70948, {	-- Hook, Line, and Swelter!
-					["sourceQuests"] = { 70945 },	-- Netting More -- TODO: CONFIRM
 					["minReputation"] = { 2511, 16 },	-- Iskaara Tuskarr Renown 16
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 18 --
 				q(70950, {	-- Fishy Entertainment
-					["sourceQuests"] = { 70948 },	-- Hook, Line, and Swelter! -- TODO: CONFIRM
 					["minReputation"] = { 2511, 18 },	-- Iskaara Tuskarr Renown 18
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+				}),
+					-- RENOWN 27 --
+				q(70952, {	-- Abandoned... or Hidden Caches
+					["minReputation"] = { 2511, 27 },	-- Iskaara Tuskarr Renown 27
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
@@ -288,6 +288,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(70792),	-- Triggered after crafting Iskaaran Harpoon
 		q(72394),	-- Triggered with 'Fascinating Fliers' (70955)
 		q(72280),	-- Triggered with 'Hook, Line, and Swelter!' (70948)
+		q(72640),	-- Triggered with 'Abandoned... or Hidden Caches' (70952)
 		--
 		q(67140),	-- Triggered after crafting 'Polished Basalt Bracelet'
 		q(67139),	-- Triggered after crafting 'Flying Fish Bone Charm'
