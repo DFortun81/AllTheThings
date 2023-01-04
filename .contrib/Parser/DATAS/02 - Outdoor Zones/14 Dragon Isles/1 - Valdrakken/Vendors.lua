@@ -161,7 +161,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(201273, {	-- Rare Engineer's Scribblings
-						-- ["questID"] = TODO,
+						["questID"] = 71907,
 						["requireSkill"] = ENGINEERING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
@@ -189,7 +189,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(201277, {	-- Rare Miner's Notes
-						-- ["questID"] = TODO,
+						["questID"] = 71912,
 						["requireSkill"] = MINING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },

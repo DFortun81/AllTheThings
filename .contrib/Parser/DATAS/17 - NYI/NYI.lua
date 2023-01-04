@@ -668,13 +668,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197119),	-- Highland Drake: Helm
 			i(197120),	-- Highland Drake: Ornate Helm
 			i(197124),	-- Highland Drake: Swept Horns
-			i(197128),	-- Highland Drake: Curled Back Horns
 			i(197129),	-- Highland Drake: Sleek Horns
 			i(197131),	-- Highland Drake: Hairy Cheek
 			i(197134),	-- Highland Drake: Spiked Legs
 			i(197136),	-- Highland Drake: Taperered Nose
 			i(197146),	-- Highland Drake: White Scales
-			i(197152),	-- Highland Drake: Hooked Tail
 			i(197155),	-- Highland Drake: Finned Neck
 			i(197156),	-- Highland Drake: Bronze and Green Armor
 			i(197348),	-- Renewed Proto-Drake: Black and Red Armor
