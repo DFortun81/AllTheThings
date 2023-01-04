@@ -32,7 +32,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(189652, {	-- Deadwaker Ghendish
 				["coord"] = { 30.8, 66.6, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["questID"] = 73872,
 				["g"] = {
 					i(189055),	-- Ghendish's Backup Talisman
 					i(200441),	-- Jhakan's Horned Cowl
@@ -213,6 +213,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200437),	-- Dreamsong Censer
 					i(197115),	-- Highland Drake: Thorned Jaw (DM!)
 					i(200444),	-- Mantle of the Gatekeeper
+					i(200310),	-- Stole of the Iron Phantom
 				},
 			}),
 			n(192949, {	-- Skaara
@@ -305,6 +306,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 31.5, 64.0, OHNAHRAN_PLAINS },
 				["questID"] = 73901,
 				["g"] = {
+					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 					i(200314),	-- Skyspeaker's Envelope
 					i(200306),	-- Tempest Shawl
 					i(200879, {	-- Zenet Egg
@@ -321,6 +323,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(193140, {	-- Zarizz
+				["description"] = "Use /hiss on 4 nearby Juvenile Wind Serpents to spawn.",
 				["coord"] = { 30.3, 62.1, OHNAHRAN_PLAINS },
 				["questID"] = 74091,
 				["g"] = {

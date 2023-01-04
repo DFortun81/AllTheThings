@@ -79,16 +79,11 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200743),	-- Frozen Footwraps
 				}),
 			}),
-			q(69928, {	-- Liskanoth
+			q(69928, {	-- Liskanoth (WQ)
 				["sym"] = {
 					{"select","encounterID",2518,},{"pop"},	-- Original WB
 				},
 			}),
-			-- q(TODO, {	-- Liskanoth (WQ)
-			-- 	["sym"] = {
-			-- 		{"select","encounterID",2518,},{"pop"},	-- Original WB
-			-- 	},
-			-- }),
 		}),
 	}),
 })));

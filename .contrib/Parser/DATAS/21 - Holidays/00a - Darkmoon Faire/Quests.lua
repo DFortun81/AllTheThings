@@ -1151,6 +1151,7 @@ root("HiddenQuestTriggers",{
 		q(57827),	-- Rune Matching easy
 		q(57828),	-- Rune Matching normal
 		q(57829),	-- Rune Matching hard
+		q(57830),	-- Rune Matching hardest
 		q(57835),	-- Totems lvl 1
 		q(57836),	-- Totems lvl 2
 		q(57837),	-- Totems lvl 3
