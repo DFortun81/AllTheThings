@@ -134,9 +134,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					["g"] = {
 						i(197989),	-- Water Ordained Signet
-						crit(1, {	-- Into the Archives
-							["achievementID"] = 16336,	-- Azure Spanner
-						}),
 					},
 				}),
 					-- Chapter 2 --
@@ -241,9 +238,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(198033),	-- Sleet Shined Armguards
 						i(198016),	-- Twisted Leather Bindings
 						i(197993),	-- Windswept Wraps
-						crit(2, {	-- Tuskarr Troubles
-							["achievementID"] = 16336,	-- Azure Spanner
-						}),
 					},
 				}),
 					-- Chapter 3 --
@@ -320,11 +314,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 65850 },	-- The Cycle of the Sea
 					["provider"] = { "n", 186177 },	-- Kalecgos
 					["coord"] = { 12.9, 50.4, THE_AZURE_SPAN },
-					["g"] = {
-						crit(3, {	-- Decayed Roots
-							["achievementID"] = 16336,	-- Azure Spanner
-						}),
-					},
 				}),
 					-- Chapter 4 --
 				q(66027, {	-- Calling the Blue Dragons
@@ -422,9 +411,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(198029),	-- Sleet Shined Shoulderguards
 						i(198011),	-- Twisted Leather Spaulders
 						i(197997),	-- Windswept Mantle
-						crit(4, {	-- Vakthros
-							["achievementID"] = 16336,	-- Azure Spanner
-						}),
 					},
 				}),
 			}),
@@ -488,9 +474,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 58.8, 34.9, THE_AZURE_SPAN },
 						["g"] = {
 							i(202201),	-- Tuskarr Spirit Shawl
-							crit(1, {	-- Grimtusk Hideaway
-								["achievementID"] = 16428,	-- Sojourner of Azure Span
-							}),
 						},
 					}),
 				},
@@ -557,11 +540,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 66187 },	-- Mad Mordigan & The Crystal King
 						["provider"] = { "n", 188030 },	-- Aelnara
 						["coord"] = { 10.8, 41.2, THE_AZURE_SPAN },
-						["g"] = {
-							crit(2, {	-- Gorloc Shore
-								["achievementID"] = 16428,	-- Sojourner of Azure Span
-							}),
-						},
 					}),
 				},
 			}),
@@ -599,11 +577,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 67050 },	-- Frostbite: Causes and Symptoms
 						["provider"] = { "n", 189963 },	-- Old Grimtusk
 						["coord"] = { 58.5, 40.5, THE_AZURE_SPAN },
-						["g"] = {
-							crit(3, {	-- Snowhide Camp
-								["achievementID"] = 16428,	-- Sojourner of Azure Span
-							}),
-						},
 					}),
 				},
 			}),
@@ -667,9 +640,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 65.7, 30.8, THE_AZURE_SPAN },
 						["g"] = {
 							i(200526),	-- Steria's Charm of Invisiblity
-							crit(4, {	-- Slyvern Plunge
-								["achievementID"] = 16428,	-- Sojourner of Azure Span
-							}),
 						},
 					}),
 				},
@@ -752,9 +722,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(198432),	-- Crude Wind Charm
 							i(198036),	-- Spineripper's Fang
 							i(197385),	-- Renewned Proto-Drake: Horned Jaw (DM!)
-							crit(5, {	-- Brackenhide Water Hole
-								["achievementID"] = 16428,	-- Sojourner of Azure Span
-							}),
 						},
 					}),
 				},
@@ -799,9 +766,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["g"] = {
 							i(198671),	-- Mystic's String of Slime
 							i(198090),	-- Jar of Excess Slime (TOY!)
-							crit(6, {	-- Creektooth Den
-								["achievementID"] = 16428,	-- Sojourner of Azure Span
-							}),
 						},
 					}),
 				},
@@ -848,9 +812,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["g"] = {
 							i(191044),	-- Spider Squasher
 							i(198353),	-- Shiverweb Egg (PET!)
-							crit(7, {	-- Shiverweb Vale
-								["achievementID"] = 16428,	-- Sojourner of Azure Span
-							}),
 						},
 					}),
 				},
@@ -910,9 +871,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(199829),	-- Tuskarr Wading Boots
 							i(199827),	-- Tuskarr Water Kickers
 							i(197607),	-- Windborne Velocidrake: Split Horns (DM!)
-							crit(8, {	-- Kauriq Gleamlet
-								["achievementID"] = 16428,	-- Sojourner of Azure Span
-							}),
 						},
 					}),
 				},
@@ -989,9 +947,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(201293),	-- Sleet Shined Waistguard
 							i(201291),	-- Twisted Leather Belt
 							i(201290),	-- Windswept Sash
-							crit(9, {	-- Lost Ruins
-								["achievementID"] = 16428,	-- Sojourner of Azure Span
-							}),
 						},
 					}),
 				},
@@ -1065,9 +1020,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["g"] = {
 							i(202199),	-- Frozen Shard Ring
 							i(202198),	-- Salt Crystal Ring
-							crit(10, {	-- Ruins of Karnthar
-								["achievementID"] = 16428,	-- Sojourner of Azure Span
-							}),
 						},
 					}),
 				},
@@ -1134,11 +1086,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 66151 },	-- His Stone Heart
 						["provider"] = { "n", 187535 },	-- Garz
 						["coord"] = { 61.0, 50.6, THE_AZURE_SPAN },
-						["g"] = {
-							crit(11, {	-- Rustpine Den
-								["achievementID"] = 16428,	-- Sojourner of Azure Span
-							}),
-						},
 					}),
 				},
 			}),
@@ -1177,9 +1124,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["g"] = {
 							i(197988),	-- Frozen Shard Ring
 							i(197627),	-- Windborne Velocidrake: Finned Neck (DM!)
-							crit(12, {	-- Winterpelt Hollow
-								["achievementID"] = 16428,	-- Sojourner of Azure Span
-							}),
 						},
 					}),
 				},
@@ -1192,11 +1136,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 67036 },	-- Wrath of the Kirin Tor
 						["provider"] = { "o", 376757 },	-- WANTED: Frigellus
 						["coord"] = { 46.2, 39.6, THE_AZURE_SPAN },
-						["g"] = {
-							crit(1, {	-- WANTED: Frigellus
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
-						},
 					}),
 				},
 			}),
@@ -1208,11 +1147,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 67036 },	-- Wrath of the Kirin Tor
 						["provider"] = { "n", 189208 },	-- Custodian Vernagos
 						["coord"] = { 46.1, 41.0, THE_AZURE_SPAN },
-						["g"] = {
-							crit(2, {	-- Tending the Forge
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
-						},
 					}),
 				},
 			}),
@@ -1226,9 +1160,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 46.0, 38.4, THE_AZURE_SPAN },
 						["g"] = {
 							i(192471),	-- Arch Instructor's Wand
-							crit(3, {	-- Setting the Defense
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
 						},
 					}),
 				},
@@ -1243,9 +1174,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 46.0, 38.8, THE_AZURE_SPAN },
 						["g"] = {
 							i(197107),	-- Highland Drake: Triple Finned Head (DM!)
-							crit(4, {	-- Send It!
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
 						},
 					}),
 				},
@@ -1272,9 +1200,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["g"] = {
 							i(198676),	-- Divo's Worn Cloth
 							i(200926),	-- Compendium of Love (TOY!)
-							crit(5, {	-- For The Love of Others
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
 						},
 					}),
 				},
@@ -1289,11 +1214,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 13.5, 48.6, THE_AZURE_SPAN },
 						["requireSkill"] = FISHING,
 						["cost"] = { { "i", 194967, 5 }, },	-- 5xAileron Seamoth
-						["g"] = {
-							crit(6, {	-- Fishing: Aileron Seamoth
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
-						},
 					}),
 				},
 			}),
@@ -1305,11 +1225,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 65849 },	-- To Iskaara
 						["provider"] = { "n", 186446 },	-- Elder Nappa
 						["coord"] = { 12.4, 49.4, THE_AZURE_SPAN },
-						["g"] = {
-							crit(7, {	-- The Weave of a Tale
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
-						},
 					}),
 				},
 			}),
@@ -1321,11 +1236,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 65849 },	-- To Iskaara
 						["provider"] = { "n", 186568 },	-- Bukarakikk
 						["coord"] = { 13.2, 48.8, THE_AZURE_SPAN },
-						["g"] = {
-							crit(8, {	-- WANTED: Krojek the Shoreprowler
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
-						},
 					}),
 				},
 			}),
@@ -1348,9 +1258,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["cost"] = { { "i", 192153, 7 }, },	--7xFrigidfish
 						["g"] = {
 							i(201295),	-- Neelo's Spare Blanket
-							crit(9, {	-- Can We Keep It?
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
 						},
 					}),
 				},
@@ -1368,11 +1275,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 66558 },	-- Rowie
 						["provider"] = { "n", 186542 },	-- Rowie
 						["coord"] = { 16.1, 50.4, THE_AZURE_SPAN },
-						["g"] = {
-							crit(10, {	-- Toejam the Terrible
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
-						},
 					}),
 				},
 			}),
@@ -1390,11 +1292,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 71233 },	-- Falling Water [Might be the only true SQ here..]
 						["provider"] = { "n", 190315 },	-- Willa Stronghinge
 						["coord"] = { 18.7, 24.5, THE_AZURE_SPAN },
-						["g"] = {
-							crit(11, {	-- Nothing for Breakfast
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
-						},
 					}),
 				},
 			}),
@@ -1406,11 +1303,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 71233 },	-- Falling Water
 						["provider"] = { "n", 190315 },	-- Willa Stronghinge
 						["coord"] = { 18.7, 24.5, THE_AZURE_SPAN },
-						["g"] = {
-							crit(12, {	-- It's Cold Up Here
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
-						},
 					}),
 				},
 			}),
@@ -1422,11 +1314,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 71233 },	-- Falling Water
 						["provider"] = { "n", 190672 },	-- Modurun Sixtoes
 						["coord"] = { 19.0, 23.3, THE_AZURE_SPAN },
-						["g"] = {
-							crit(13, {	-- It's Brew Time
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
-						},
 					}),
 				},
 			}),
@@ -1438,11 +1325,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 71233 },	-- Falling Water
 						["provider"] = { "n", 190884 },	-- Branor Broadbraw
 						["coord"] = { 19.3, 26.9, THE_AZURE_SPAN },
-						["g"] = {
-							crit(14, {	-- Out of Lukh
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
-						},
 					}),
 				},
 			}),
@@ -1456,9 +1338,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 19.0, 24.0, THE_AZURE_SPAN },
 						["g"] = {
 							i(193619),	-- Yipper (PET!)
-							crit(15, {	-- The Great Shokhari
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
 						},
 					}),
 				},
@@ -1469,7 +1348,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					q(66841, {	-- A Shard of the Past
 						["sourceQuests"] = {
-							-- DIDNT POP UNTIL ALL IN?? Might be unlucky order..
 							66839,	-- It's Brew Time
 							66838,	-- It's Cold Up Here
 							66837,	-- Nothing for Breakfast
@@ -1480,7 +1358,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 					q(66840, {	-- Water Safety
 						["sourceQuests"] = {
-							-- DIDNT POP UNTIL ALL IN?? Might be unlucky order..
 							66839,	-- It's Brew Time
 							66838,	-- It's Cold Up Here
 							66837,	-- Nothing for Breakfast
@@ -1504,11 +1381,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 66845 },	-- Legendary Foil
 						["provider"] = { "n", 191741 },	-- Mysterious Apparition
 						["coord"] = { 18.8, 24.4, THE_AZURE_SPAN },
-						["g"] = {
-							crit(16, {	-- The Heart of the Deck
-								["achievementID"] = 16580,	-- Lend a Helping Span
-							}),
-						},
 					}),
 
 				},

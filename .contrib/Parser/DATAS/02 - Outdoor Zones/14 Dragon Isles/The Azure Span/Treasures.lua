@@ -42,9 +42,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["cost"] = { { "i", 199065, 1 }, },	--1x Sorrowful Letter
 				["g"] = {
 					i(201927),	-- Gleaming Arcanocrystal (TOY!)
-					crit(1, {	-- Forgotten Jewel Box
-						["achievementID"] = 16300,	-- Treasures of The Azure Span
-					}),
 				},
 			}),
 			o(381510, {	-- Flying Fish Bones
@@ -59,9 +56,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["cost"] = { { "i", 199066, 1 }, },	--1x Letter of Caution
 				["g"] = {
 					i(202692),	-- Gnoll Fiend Flail
-					crit(2, {	-- Gnoll Fiend Flail
-						["achievementID"] = 16300,	-- Treasures of The Azure Span
-					}),
 				},
 			}),
 			o(381511, {	-- Harpoon Head
@@ -75,9 +69,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 74.9, 55.0, THE_AZURE_SPAN },
 				["questID"] = 70606,
 				["g"] = {
-					crit(4, {	-- Lost Compass
-						["achievementID"] = 16300,	-- Treasures of The Azure Span
-					}),
 					i(202711),	-- Lost Compass (TOY!)
 				},
 			}),
@@ -93,9 +84,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 26.5, 46.3, THE_AZURE_SPAN },
 				["questID"] = 70441,
 				["g"] = {
-					crit(6, {	-- Pepper Hammer
-						["achievementID"] = 16300,	-- Treasures of The Azure Span
-					}),
 					i(193834),	-- Blackfeather Nester (PET!)
 				},
 			}),
@@ -103,20 +91,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 54.6, 29.3, THE_AZURE_SPAN },
 				["questID"] = 70380,
 				["g"] = {
-					crit(5, {	-- Rubber Fish
-						["achievementID"] = 16300,	-- Treasures of The Azure Span
-					}),
 					i(202712),	-- Rubber Fish
 				},
 			}),
 			o(381157, {	-- Sapphire Gem Cluster
-				["coord"] = { 49, 25, THE_AZURE_SPAN },
+				["coord"] = { 49.0, 25.0, THE_AZURE_SPAN },
 				["questID"] = 70605,
 				["cost"] = { { "i", 199067, 1 }, },	--1x Precious Plans
 				["g"] = {
-					crit(3, {	-- Sapphire Gem Cluster
-						["achievementID"] = 16300,	-- Treasures of The Azure Span
-					}),
 					i(200866),	-- Glimmering Malygite Cluster
 					i(194649),	-- Design: Jeweled Sapphire Whelpling (RECIPE!)
 				},
