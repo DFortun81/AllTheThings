@@ -31,6 +31,21 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		})),
 		i(201471),	-- Story of a Spectacular Victory
 	}),
+	--[[ Me doing some Gleaming Thunderstone SourceIDs // Braghe
+	i(202047, sharedData({ ["bonusID"] = 6896 }, {
+		i(200417),
+		i(200419),
+		i(200414),
+		i(200416),
+		i(200418),
+
+		i(200318),
+		i(200320),
+		i(200315),
+		i(200317),
+		i(200319),
+	})),
+	--]]
 })));
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

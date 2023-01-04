@@ -4,7 +4,7 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_AZURE_SPAN, {
 		n(QUESTS, {
-			n(CAMPAIGN, {
+			header(HEADERS.Achievement, 16336, {	-- Azure Spanner
 					-- Chatper 1 --
 				q(66340, {	-- Into the Azure
 					["sourceQuests"] = { 66783 },	-- Renewal of Vows
@@ -1385,43 +1385,40 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				},
 			}),
-			-- MISC --
-			q(72487, {	-- The Thaldraszus Tour
-				["sourceQuests"] = { 72485 },	-- The Azure Span Tour
-				["provider"] = { "n", 199119 },	-- Celormu
-				["coord"] = { 63.1, 13.6, THE_AZURE_SPAN },
+			cl(MAGE, {
+				q(71002, {	-- Best Spell Ever
+					["provider"] = { "o", 381663 },	-- Manastorming For Beginners
+					["coord"] = { 66.4, 33.3, THE_AZURE_SPAN },
+					["classes"] = { MAGE },
+					["description"] = "Use Blink ability to enter the cave.",
+					["g"] = {
+						i(200205),	-- Tome of Polymorph: Duck
+					},
+				}),
 			}),
-			q(72488, {	-- The Thaldraszus Advanced Tour
-				["sourceQuests"] = { 72486 },	-- The Azure Span Advanced Tour
-				["provider"] = { "n", 199119 },	-- Celormu
-				["coord"] = { 63.1, 13.6, THE_AZURE_SPAN },
+			header(HEADERS.Achievement, 16323, {	-- Fragments of History
+				q(70806, {	-- Chunk of Sculpture
+					["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
+					["provider"] = { "i", 199895 },	-- Chunk of Sculpture
+					["coord"] = { 66.1, 60.1, THE_AZURE_SPAN },
+				}),
+				q(70791, {	-- Coldwashed Dragonclaw
+					["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
+					["provider"] = { "i", 199843 },	-- Coldwashed Dragonclaw
+					["coord"] = { 47.8, 38.9, THE_AZURE_SPAN },
+				}),
+				q(70790, {	-- Stone Dragontooth
+					["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
+					["provider"] = { "i", 199842 },	-- Stone Dragontooth
+					["coord"] = { 69.2, 47.6, THE_AZURE_SPAN },
+				}),
+				q(70788, {	-- Wrapped Gold Band
+					["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
+					["provider"] = { "i", 199840 },	-- Wrapped Gold Band
+					["coord"] = { 47.3, 24.6, THE_AZURE_SPAN },
+				}),
 			}),
-			q(66227, {	-- Some Good Fishing
-				["sourceQuests"] = { 65686 },	-- To the Azure Span
-				["provider"] = { "n", 185608 },	-- Khuri
-				["coord"] = { 41.5, 35.6, THE_AZURE_SPAN },
-				["requireSkill"] = FISHING,
-			}),
-			q(67174, {	-- Arcane Detection
-				["sourceQuests"] = { 65686 },	-- To the Azure Span
-				["provider"] = { "n", 192750 },	-- Miva Star-Eye
-				["coord"] = { 41.2, 35.9, THE_AZURE_SPAN },
-			}),
-			q(67175, {	-- How To Stop An Exploding Toy Boat
-				["sourceQuests"] = { 67174 },	-- Arcane Detection
-				["provider"] = { "n", 192750 },	-- Miva Star-Eye
-				["coord"] = { 41.2, 35.9, THE_AZURE_SPAN },
-			}),
-			q(67177, {	-- WANTED: Gorger
-				["sourceQuests"] = { 65686 },	-- To the Azure Span
-				["provider"] = { "n", 192760 },	-- Shala
-				["coord"] = { 41.4, 36.4, THE_AZURE_SPAN },
-			}),
-			q(66622, {	-- Wayward Tools
-				["sourceQuests"] = { 70627 },	-- What of the Winterpelt Clan?
-				["provider"] = { "n", 186755 },	-- Tyrnokos Sunstrike
-				["coord"] = { 65.6, 16.2, THE_AZURE_SPAN },
-			}),
+
 				-- Hemet Nesingwary --
 			q(66972, {	-- Old Stonetusk
 				["sourceQuests"] = { 65686 },	-- To the Azure Span
@@ -1492,37 +1489,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(198474),	-- Artist's Easel (TOY!)
 				},
 			}),
-				-- Fragment of History --
-			q(70806, {	-- Chunk of Sculpture
-				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
-				["provider"] = { "i", 199895 },	-- Chunk of Sculpture
-				["coord"] = { 66.1, 60.1, THE_AZURE_SPAN },
-			}),
-			q(70791, {	-- Coldwashed Dragonclaw
-				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
-				["provider"] = { "i", 199843 },	-- Coldwashed Dragonclaw
-				["coord"] = { 47.8, 38.9, THE_AZURE_SPAN },
-			}),
-			q(70790, {	-- Stone Dragontooth
-				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
-				["provider"] = { "i", 199842 },	-- Stone Dragontooth
-				["coord"] = { 69.2, 47.6, THE_AZURE_SPAN },
-			}),
-			q(70788, {	-- Wrapped Gold Band
-				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
-				["provider"] = { "i", 199840 },	-- Wrapped Gold Band
-				["coord"] = { 47.3, 24.6, THE_AZURE_SPAN },
-			}),
-				-- MAGE POLYMORPH --
-			q(71002, {	-- Best Spell Ever
-				["provider"] = { "o", 381663 },	-- Manastorming For Beginners
-				["coord"] = { 66.4, 33.3, THE_AZURE_SPAN },
-				["classes"] = { MAGE },
-				["description"] = "Use Blink ability to enter the cave.",
-				["g"] = {
-					i(200205),	-- Tome of Polymorph: Duck
-				},
-			}),
 				-- CAPTAIN HAAB --
 			q(72083, {	-- Me Lucky Lure
 				["provider"] = { "n", 197979 },	-- Captain Haab
@@ -1536,12 +1502,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(202200),	-- Solemn Seashell String
 				},
 			}),
-				-- EVOKER SIDE QUESTS
-			q(71182, {	-- Wayward Archivists
-				["sourceQuests"] = { 65854 },	-- Reclaiming the Oathstone
-				["provider"] = { "n", 186188 },	-- Sindragosa
-				["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
-				["classes"] = { EVOKER },
+
+				-- MISC --
+			q(67174, {	-- Arcane Detection
+				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				["provider"] = { "n", 192750 },	-- Miva Star-Eye
+				["coord"] = { 41.2, 35.9, THE_AZURE_SPAN },
 			}),
 			q(70748, {	-- For Blue Eyes Only
 				["sourceQuests"] = { 71182 },	-- Wayward Archivists
@@ -1549,7 +1515,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 42.4, 63.8, THE_AZURE_SPAN },
 				["classes"] = { EVOKER },
 			}),
-				-- OTHER --
 			q(71139, {	-- Glowing Arcane Jewel
 				["provider"] = { "i", 200528 },	-- Glowing Arcane Jewel
 				["coord"] = { 75.8, 24.2, THE_AZURE_SPAN },
@@ -1561,6 +1526,33 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- Lost Elemental ID 196900
 				-- Lava Orb ID 196901
 				-- Stranded Soul ID 197183
+			}),
+			q(67175, {	-- How To Stop An Exploding Toy Boat
+				["sourceQuests"] = { 67174 },	-- Arcane Detection
+				["provider"] = { "n", 192750 },	-- Miva Star-Eye
+				["coord"] = { 41.2, 35.9, THE_AZURE_SPAN },
+			}),
+			q(66227, {	-- Some Good Fishing
+				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				["provider"] = { "n", 185608 },	-- Khuri
+				["coord"] = { 41.5, 35.6, THE_AZURE_SPAN },
+				["requireSkill"] = FISHING,
+			}),
+			q(67177, {	-- WANTED: Gorger
+				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				["provider"] = { "n", 192760 },	-- Shala
+				["coord"] = { 41.4, 36.4, THE_AZURE_SPAN },
+			}),
+			q(71182, {	-- Wayward Archivists
+				["sourceQuests"] = { 65854 },	-- Reclaiming the Oathstone
+				["provider"] = { "n", 186188 },	-- Sindragosa
+				["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
+				["classes"] = { EVOKER },
+			}),
+			q(66622, {	-- Wayward Tools
+				["sourceQuests"] = { 70627 },	-- What of the Winterpelt Clan?
+				["provider"] = { "n", 186755 },	-- Tyrnokos Sunstrike
+				["coord"] = { 65.6, 16.2, THE_AZURE_SPAN },
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(69858, {	-- Blightfur
@@ -1616,154 +1608,151 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(HIDDEN_QUESTS, {
 				-- Moved temporarily to HQTs
 			}),
-			ach(15941, {	-- Dragon Racing Completionist: Gold
-				["collectible"] = false,
-				["g"] = {
-					q(67741, {	-- Archive Ambit
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 193027 },	-- Bronze Timekeeper
-						["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15847),	-- Archive Ambit: Bronze
-							ach(15848),	-- Archive Ambit: Silver
-							ach(15849),	-- Archive Ambit: Gold
-						},
-					}),
-					q(67742, {	-- Archive Ambit - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 193027 },	-- Bronze Timekeeper
-						["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15850),	-- Archive Ambit Advanced: Bronze
-							ach(15851),	-- Archive Ambit Advanced: Silver
-							ach(15852),	-- Archive Ambit Advanced: Gold
-						},
-					}),
-					q(67002, {	-- Azure Span Slalom
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 191947 },	-- Bronze Timekeeper
-						["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15799),	-- The Azure Span Slalom: Bronze
-							ach(15800),	-- The Azure Span Slalom: Silver
-							ach(15801),	-- The Azure Span Slalom: Gold
-						},
-					}),
-					q(67003, {	-- Azure Span Slalom - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 191947 },	-- Bronze Timekeeper
-						["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15802),	-- The Azure Span Slalom Advanced: Bronze
-							ach(15803),	-- The Azure Span Slalom Advanced: Silver
-							ach(15804),	-- The Azure Span Slalom Advanced: Gold
-						},
-					}),
-					q(66946, {	-- Azure Span Sprint
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 191572 },	-- Bronze Timekeeper
-						["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15788),	-- The Azure Span Sprint: Bronze
-							ach(15789),	-- The Azure Span Sprint: Silver
-							ach(15790),	-- The Azure Span Sprint: Gold
-						},
-					}),
-					q(66947, {	-- Azure Span Sprint - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 191572 },	-- Bronze Timekeeper
-						["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15791),	-- The Azure Span Sprint Advanced: Bronze
-							ach(15792),	-- The Azure Span Sprint Advanced: Silver
-							ach(15793),	-- The Azure Span Sprint Advanced: Gold
-						},
-					}),
-					q(67565, {	-- Frostland Flyover
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 192945 },	-- Bronze Timekeeper
-						["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15841),	-- Frostland Flyover: Bronze
-							ach(15842),	-- Frostland Flyover: Silver
-							ach(15843),	-- Frostland Flyover: Gold
-						},
-					}),
-					q(67566, {	-- Frostland Flyover - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 192945 },	-- Bronze Timekeeper
-						["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15844),	-- Frostland Flyover Advanced: Bronze
-							ach(15845),	-- Frostland Flyover Advanced: Silver
-							ach(15846),	-- Frostland Flyover Advanced: Gold
-						},
-					}),
-					q(67296, {	-- Iskaara Tour
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 192886 },	-- Bronze Timekeeper
-						["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15835),	-- Iskaara Tour: Bronze
-							ach(15836),	-- Iskaara Tour: Silver
-							ach(15837),	-- Iskaara Tour: Gold
-						},
-					}),
-					q(67297, {	-- Iskaara Tour - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 192886 },	-- Bronze Timekeeper
-						["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15838),	-- Iskaara Tour Advanced: Bronze
-							ach(15839),	-- Iskaara Tour Advanced: Silver
-							ach(15840),	-- Iskaara Tour Advanced: Gold
-						},
-					}),
-					q(67031, {	-- Vakthros Ascent
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 192115 },	-- Bronze Timekeeper
-						["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15818),	-- The Vakthros Ascent: Bronze
-							ach(15819),	-- The Vakthros Ascent: Silver
-							ach(15820),	-- The Vakthros Ascent: Gold
-						},
-					}),
-					q(67032, {	-- Vakthros Ascent - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 192115 },	-- Bronze Timekeeper
-						["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15821),	-- The Vakthros Ascent Advanced: Bronze
-							ach(15822),	-- The Vakthros Ascent Advanced: Silver
-							ach(15823),	-- The Vakthros Ascent Advanced: Gold
-						},
-					}),
-				},
+			header(HEADERS.Achievement, 15941, {	-- Dragon Racing Completionist: Gold
+				q(67741, {	-- Archive Ambit
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 193027 },	-- Bronze Timekeeper
+					["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15847),	-- Archive Ambit: Bronze
+						ach(15848),	-- Archive Ambit: Silver
+						ach(15849),	-- Archive Ambit: Gold
+					},
+				}),
+				q(67742, {	-- Archive Ambit - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 193027 },	-- Bronze Timekeeper
+					["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15850),	-- Archive Ambit Advanced: Bronze
+						ach(15851),	-- Archive Ambit Advanced: Silver
+						ach(15852),	-- Archive Ambit Advanced: Gold
+					},
+				}),
+				q(67002, {	-- Azure Span Slalom
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 191947 },	-- Bronze Timekeeper
+					["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15799),	-- The Azure Span Slalom: Bronze
+						ach(15800),	-- The Azure Span Slalom: Silver
+						ach(15801),	-- The Azure Span Slalom: Gold
+					},
+				}),
+				q(67003, {	-- Azure Span Slalom - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 191947 },	-- Bronze Timekeeper
+					["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15802),	-- The Azure Span Slalom Advanced: Bronze
+						ach(15803),	-- The Azure Span Slalom Advanced: Silver
+						ach(15804),	-- The Azure Span Slalom Advanced: Gold
+					},
+				}),
+				q(66946, {	-- Azure Span Sprint
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 191572 },	-- Bronze Timekeeper
+					["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15788),	-- The Azure Span Sprint: Bronze
+						ach(15789),	-- The Azure Span Sprint: Silver
+						ach(15790),	-- The Azure Span Sprint: Gold
+					},
+				}),
+				q(66947, {	-- Azure Span Sprint - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 191572 },	-- Bronze Timekeeper
+					["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15791),	-- The Azure Span Sprint Advanced: Bronze
+						ach(15792),	-- The Azure Span Sprint Advanced: Silver
+						ach(15793),	-- The Azure Span Sprint Advanced: Gold
+					},
+				}),
+				q(67565, {	-- Frostland Flyover
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 192945 },	-- Bronze Timekeeper
+					["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15841),	-- Frostland Flyover: Bronze
+						ach(15842),	-- Frostland Flyover: Silver
+						ach(15843),	-- Frostland Flyover: Gold
+					},
+				}),
+				q(67566, {	-- Frostland Flyover - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 192945 },	-- Bronze Timekeeper
+					["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15844),	-- Frostland Flyover Advanced: Bronze
+						ach(15845),	-- Frostland Flyover Advanced: Silver
+						ach(15846),	-- Frostland Flyover Advanced: Gold
+					},
+				}),
+				q(67296, {	-- Iskaara Tour
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 192886 },	-- Bronze Timekeeper
+					["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15835),	-- Iskaara Tour: Bronze
+						ach(15836),	-- Iskaara Tour: Silver
+						ach(15837),	-- Iskaara Tour: Gold
+					},
+				}),
+				q(67297, {	-- Iskaara Tour - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 192886 },	-- Bronze Timekeeper
+					["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15838),	-- Iskaara Tour Advanced: Bronze
+						ach(15839),	-- Iskaara Tour Advanced: Silver
+						ach(15840),	-- Iskaara Tour Advanced: Gold
+					},
+				}),
+				q(67031, {	-- Vakthros Ascent
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 192115 },	-- Bronze Timekeeper
+					["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15818),	-- The Vakthros Ascent: Bronze
+						ach(15819),	-- The Vakthros Ascent: Silver
+						ach(15820),	-- The Vakthros Ascent: Gold
+					},
+				}),
+				q(67032, {	-- Vakthros Ascent - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 192115 },	-- Bronze Timekeeper
+					["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15821),	-- The Vakthros Ascent Advanced: Bronze
+						ach(15822),	-- The Vakthros Ascent Advanced: Silver
+						ach(15823),	-- The Vakthros Ascent Advanced: Gold
+					},
+				}),
 			}),
 		}),
 	}),

@@ -4,7 +4,7 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
 		n(QUESTS, {
-			n(CAMPAIGN, {
+			header(HEADERS.Achievement, 16334, {	-- Waking Hope
 					-- Chapter 0 --
 				q(70122, {	-- Explorers in Peril [A]
 					["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
@@ -1005,40 +1005,98 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
+			header(HEADERS.Item, 198622, {	-- Spyragos
+				q(65875, {	-- A Dragon's Day Off
+					["provider"] = { "n", 192662 },
+					["coord"] = { 20.1, 39.5, THE_WAKING_SHORES },
+					["cost"] = {
+						{ "i", 195543, 1 },	-- 1x Riptide Brew
+						{ "i", 197737, 1 },	-- 1x Popfizz Punch
+						{ "i", 197738, 1 },	-- 1x Flameslinger Rum
+						{ "i", 197739, 1 },	-- 1x Happy Trigger Sour
+						{ "i", 198045, 1 },	-- 1x Slam Bam Swill
+						{ "i", 198043, 1 },	-- 1x Stealthy Elven Port
+						{ "i", 198044, 1 },	-- 1x Whirlwind Wine
+					},
+					["g"] = {
+						i(198622),	-- Spyragos (PET!)
+					},
+				}),
+			}),
+			header(HEADERS.Achievement, 16323, {	-- Fragments of History
+				q(70231, {	-- Talk to Emilia Bellocq
+					["name"] = "Talk to Emilia Bellocq",
+					["description"] = "Talk to Emilia Bellocq and chose her dialogue option to complete this quest and unlock the objects required to complete achievement Fragments of History",
+					["provider"] = { "n", 193915 },	-- Emilia Bellocq
+					["coord"] = { 75.4, 34.0, THE_WAKING_SHORES },
+				}),
+				q(70175, {	-- Broken Banding
+					["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
+					["provider"] = { "i", 198475 },	-- Broken Bankding
+					["coord"] = { 81.0, 30.4, THE_WAKING_SHORES },
+				}),
+				q(70236, {	-- Dislodged Dragoneye
+					["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
+					["provider"] = { "i", 198626 },	-- Dislodged Dragoneye
+					["coord"] = { 60.5, 57.9, THE_WAKING_SHORES },
+				}),
+				q(70789, {	-- Finely Carved Wing
+					["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
+					["provider"] = { "i", 199841 },	-- Finely Carved Wing
+					["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
+				}),
+				q(70207, {	-- Tail Fragment
+					["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
+					["provider"] = { "i", 198543 },	-- Tail Fragment
+					["coord"] = { 58.2, 68.3, THE_WAKING_SHORES },
+				}),
+			}),
+
 				-- MISC --
-			q(69965, {	-- Quality Assurance
-				["sourceQuests"] = { 66110 },	-- Give Peace a Chance
-				["provider"] = { "n", 192438 },	-- Haephesta
-				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
+			q(70179, {	-- A Two for One Deal
+				["sourceQuests"] = { 66001 },	-- A Last Hope, -- TODO: Wasnt available when picking up 65997, but available before 66001....
+				["provider"] = { "n", 194525 },	-- Apprentice Caretaker Zefren
+				["coord"] = { 54.4, 30.8, THE_WAKING_SHORES },
 			}),
 			q(66112, {	-- Always Be Crafting
 				["sourceQuests"] = { 66110 },	-- Give Peace a Chance
 				["provider"] = { "n", 187261 },	-- Grun Ashbeard
 				["coord"] = { 76.4, 34.6, THE_WAKING_SHORES },
 			}),
-			q(66003, {	-- Rings To Bind Them
-				-- ["sourceQuests"] = {} Unknown
-				["provider"] = { "n", 187609 },	-- Earthcaller Yevaa
-				["coord"] = { 37.4, 71.8, THE_WAKING_SHORES },
+			q(66612, {	-- Crabtender's Quandry
+				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+				["provider"] = { "n", 196827 },	-- Crabtender Kad'irsza
+				["coord"] = { 59.7, 51.2, THE_WAKING_SHORES },
+			}),
+			q(72708, {	-- Dragon Isles Supplies
+				["sourceQuests"] = {
+					67700,	-- To The Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "i", 202081 },	-- Dragon Isles Supply Bag
+			}),
+			q(70994, {	-- Drainage Solutions
+				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+				["provider"] = { "n", 196820 },	-- Zikkori
+				["coord"] = { 70.5, 56.8, THE_WAKING_SHORES },
 				["g"] = {
-					i(194384),	-- Elemental Binding Ring
+					i(200747),	-- Zikkori's Water Siphoning Device
 				},
 			}),
-			q(66369, {	-- The Earthen Ward
-				["sourceQuests"] = { 66003 },	-- Rings To Bind Them
-				["provider"] = { "n", 187609 },	-- Earthcaller Yevaa
-				["coord"] = { 37.4, 71.8, THE_WAKING_SHORES },
+			q(66998, {	-- Fighting Fire with... Water
+				["sourceQuests"] = { 65995 },	-- The Obsidian Citadel
+				["provider"] = { "n", 188297 },	-- Caretaker Ventraz
+				["coord"] = { 59.1, 34.8, THE_WAKING_SHORES },
 				["g"] = {
-					i(191837),	-- Earthen Charm
+					i(194441),	-- Bottled Water Elemental
 				},
 			}),
-			q(66368, {	-- Island In A Storm
-				["sourceQuests"] = { 66369 },	-- The Earthen Ward
-				["provider"] = { "n", 187609 },	-- Earthcaller Yevaa
-				["coord"] = { 37.4, 71.8, THE_WAKING_SHORES },
-				["isWeekly"] = true,
+			q(70058, {	-- Friend on the Mend
+				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+				["provider"] = { "n", 193955 },	-- Lillistazsa
+				["coord"] = { 59.9, 70.4, THE_WAKING_SHORES },
 				["g"] = {
-					i(191837),	-- Earthen Charm
+					i(198857),	-- Lucky Duck (TOY!)
 				},
 			}),
 			q(66101, {	-- From Such Great Heights
@@ -1049,12 +1107,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "n", 187257 },	-- Aster Cloudgaze
 				["coord"] = { 75.8, 33., THE_WAKING_SHORES },
 			}),
-			q(66998, {	-- Fighting Fire with... Water
-				["sourceQuests"] = { 65995 },	-- The Obsidian Citadel
-				["provider"] = { "n", 188297 },	-- Caretaker Ventraz
-				["coord"] = { 59.1, 34.8, THE_WAKING_SHORES },
+			q(71141, {	-- Gills with Gall
+				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+				["provider"] = { "n", 193304 },	-- Ru'Kroszk
+				["coord"] = { 59.7, 51.2, THE_WAKING_SHORES },
+			}),
+			q(66368, {	-- Island In A Storm
+				["sourceQuests"] = { 66369 },	-- The Earthen Ward
+				["provider"] = { "n", 187609 },	-- Earthcaller Yevaa
+				["coord"] = { 37.4, 71.8, THE_WAKING_SHORES },
+				["isWeekly"] = true,
 				["g"] = {
-					i(194441),	-- Bottled Water Elemental
+					i(191837),	-- Earthen Charm
 				},
 			}),
 			q(70042, {	-- Opportunities Abound
@@ -1067,90 +1131,33 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["sourceQuestNumRequired"] = 1,
 				["classes"] = { ROGUE },
 			}),
-			q(70179, {	-- A Two for One Deal
-				["sourceQuests"] = { 66001 },	-- A Last Hope, -- TODO: Wasnt available when picking up 65997, but available before 66001....
-				["provider"] = { "n", 194525 },	-- Apprentice Caretaker Zefren
-				["coord"] = { 54.4, 30.8, THE_WAKING_SHORES },
+			q(69965, {	-- Quality Assurance
+				["sourceQuests"] = { 66110 },	-- Give Peace a Chance
+				["provider"] = { "n", 192438 },	-- Haephesta
+				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
 			}),
-			q(70058, {	-- Friend on the Mend
-				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
-				["provider"] = { "n", 193955 },	-- Lillistazsa
-				["coord"] = { 59.9, 70.4, THE_WAKING_SHORES },
+			q(66003, {	-- Rings To Bind Them
+				-- ["sourceQuests"] = {} Unknown
+				["provider"] = { "n", 187609 },	-- Earthcaller Yevaa
+				["coord"] = { 37.4, 71.8, THE_WAKING_SHORES },
 				["g"] = {
-					i(198857),	-- Lucky Duck (TOY!)
-				},
-			}),
-			q(70994, {	-- Drainage Solutions
-				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
-				["provider"] = { "n", 196820 },	-- Zikkori
-				["coord"] = { 70.5, 56.8, THE_WAKING_SHORES },
-				["g"] = {
-					i(200747),	-- Zikkori's Water Siphoning Device
+					i(194384),	-- Elemental Binding Ring
 				},
 			}),
 			q(70414, {	-- Shaky Grounds
 				["provider"] = { "n", 195234 },	-- Earthmender Govrum
 				["coord"] = { 37.0, 55.8, THE_WAKING_SHORES },
 			}),
-			-- Tour
-			q(72481, {	-- The Waking Shore Tour
-				["sourceQuests"] = { 68796 },	-- The Skytop Observatory
-				["provider"] = { "n", 193411 },	-- Celormu
-				["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
+			q(66369, {	-- The Earthen Ward
+				["sourceQuests"] = { 66003 },	-- Rings To Bind Them
+				["provider"] = { "n", 187609 },	-- Earthcaller Yevaa
+				["coord"] = { 37.4, 71.8, THE_WAKING_SHORES },
+				["g"] = {
+					i(191837),	-- Earthen Charm
+				},
 			}),
-			q(72483, {	-- The Ohn'ahran Plains Tour
-				["sourceQuests"] = { 72481 },	-- The Waking Shore Tour
-				["provider"] = { "n", 193411 },	-- Celormu
-				["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
-			}),
-			q(72485, {	-- The Azure Span Tour
-				["sourceQuests"] = { 72483 },	-- The Ohn'ahran Plains Tour
-				["provider"] = { "n", 193411 },	-- Celormu
-				["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
-			}),
-			q(72484, {	-- The Ohn'ahran Plains Advanced Tour
-				["sourceQuests"] = { 72482 },	-- The Waking Shores Advanced Tour
-				["provider"] = { "n", 193411 },	-- Celormu
-				["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
-			}),
-			q(71141, {	-- Gills with Gall
-				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
-				["provider"] = { "n", 193304 },	-- Ru'Kroszk
-				["coord"] = { 59.7, 51.2, THE_WAKING_SHORES },
-			}),
-			q(66612, {	-- Crabtender's Quandry
-				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
-				["provider"] = { "n", 196827 },	-- Crabtender Kad'irsza
-				["coord"] = { 59.7, 51.2, THE_WAKING_SHORES },
-			}),
-			-- Fragments
-			q(70231, {	-- Talk to Emilia Bellocq
-				["name"] = "Talk to Emilia Bellocq",
-				["description"] = "Talk to Emilia Bellocq and chose her dialogue option to complete this quest and unlock the objects required to complete achievement Fragments of History",
-				["provider"] = { "n", 193915 },	-- Emilia Bellocq
-				["coord"] = { 75.4, 34.0, THE_WAKING_SHORES },
-			}),
-			q(70175, {	-- Broken Banding
-				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
-				["provider"] = { "i", 198475 },	-- Broken Bankding
-				["coord"] = { 81.0, 30.4, THE_WAKING_SHORES },
-			}),
-			q(70236, {	-- Dislodged Dragoneye
-				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
-				["provider"] = { "i", 198626 },	-- Dislodged Dragoneye
-				["coord"] = { 60.5, 57.9, THE_WAKING_SHORES },
-			}),
-			q(70789, {	-- Finely Carved Wing
-				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
-				["provider"] = { "i", 199841 },	-- Finely Carved Wing
-				["coord"] = { 47.2, 88.6, THE_WAKING_SHORES },
-			}),
-			q(70207, {	-- Tail Fragment
-				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
-				["provider"] = { "i", 198543 },	-- Tail Fragment
-				["coord"] = { 58.2, 68.3, THE_WAKING_SHORES },
-			}),
-			-- Alt quests
+
+				-- Alt Quest --
 			q(72293, {	-- Adventuring in the Dragon Isles
 				["sourceQuests"] = {
 					70125,	-- Where is Wrathion? (A)
@@ -1189,30 +1196,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["lockCriteria"] = { 1, "questID", 66244 },	-- To Valdrakken
 				["isBreadcrumb"] = true,
 			}),
-			--
-			q(72708, {	-- Dragon Isles Supplies
-				["sourceQuests"] = {
-					67700,	-- To The Dragon Isles! [A]
-					65444,	-- To the Dragon Isles! [H]
-				},
-				["provider"] = { "i", 202081 },	-- Dragon Isles Supply Bag
-			}),
-			q(65875, {	-- A Dragon's Day Off
-				["provider"] = { "n", 192662 },
-				["coord"] = { 20.1, 39.5, THE_WAKING_SHORES },
-				["cost"] = {
-					{ "i", 195543, 1 },	-- 1x Riptide Brew
-					{ "i", 197737, 1 },	-- 1x Popfizz Punch
-					{ "i", 197738, 1 },	-- 1x Flameslinger Rum
-					{ "i", 197739, 1 },	-- 1x Happy Trigger Sour
-					{ "i", 198045, 1 },	-- 1x Slam Bam Swill
-					{ "i", 198043, 1 },	-- 1x Stealthy Elven Port
-					{ "i", 198044, 1 },	-- 1x Whirlwind Wine
-				},
-				["g"] = {
-					i(198622),	-- Spyragos (PET!)
-				},
-			});
 			n(BONUS_OBJECTIVES, {
 				q(69838, {	-- Amethyzar the Glittering
 					["provider"] = { "n", 193132 },	-- Amethyzar the Glittering
@@ -1423,202 +1406,199 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- To Skytop Observatory moved temporarily to HQTs
 				-- TODO: for the two above mentioned chains, how do we sort these types of things going forward? Also, is Skytop an actual quest or should this be a NYI/Never Implemented?
 			}),
-			ach(15941, {	-- Dragon Racing Completionist: Gold
-				["collectible"] = false,
-				["g"] = {
-					q(66732, {	-- Apex Canopy River Run
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190551 },	-- Bronze Timekeeper
-						["coord"] = { 23.3, 84.3, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15730),	-- Apex Canopy River Run: Bronze
-							ach(15731),	-- Apex Canopy River Run: Silver
-							ach(15732),	-- Apex Canopy River Run: Gold
-						},
-					}),
-					q(66733, {	-- Apex Canopy River Run - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190551 },	-- Bronze Timekeeper
-						["coord"] = { 23.3, 84.3, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15733),	-- Apex Canopy River Run Advanced: Bronze
-							ach(15734),	-- Apex Canopy River Run Advanced: Silver
-							ach(15735),	-- Apex Canopy River Run Advanced: Gold
-						},
-					}),
-					q(66727, {	-- Emberflow Flight
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190326 },	-- Bronze Timekeeper
-						["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15724),	-- Emberflow Flight: Bronze
-							ach(15725),	-- Emberflow Flight: Silver
-							ach(15726),	-- Emberflow Flight: Gold
-						},
-					}),
-					q(66728, {	-- Emberflow Flight - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190326 },	-- Bronze Timekeeper
-						["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15727),	-- Emberflow Flight Advanced: Bronze
-							ach(15728),	-- Emberflow Flight Advanced: Silver
-							ach(15729),	-- Emberflow Flight Advanced: Gold
-						},
-					}),
-					q(66710, {	-- Flashfrost Flyover
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190326 },	-- Bronze Timekeeper
-						["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15705),	-- Flashfrost Flyover: Bronze
-							ach(15706),	-- Flashfrost Flyover: Silver
-							ach(15707),	-- Flashfrost Flyover: Gold
-						},
-					}),
-					q(66712, {	-- Flashfrost Flyover - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190326 },	-- Bronze Timekeeper
-						["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15709),	-- Flashfrost Flyover Advanced: Bronze
-							ach(15710),	-- Flashfrost Flyover Advanced: Silver
-							ach(15711),	-- Flashfrost Flyover Advanced: Gold
-						},
-					}),
-					q(66679, {	-- Ruby Lifeshrine Loop
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190123 },	-- Bronze Timekeeper
-						["coord"] = { 63.3, 70.9, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15696),	-- Ruby Lifeshrine Loop: Bronze
-							ach(15697),	-- Ruby Lifeshrine Loop: Silver
-							ach(15698),	-- Ruby Lifeshrine Loop: Gold
-						},
-					}),
-					q(66692, {	-- Ruby Lifeshrine Loop - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190123 },	-- Bronze Timekeeper
-						["coord"] = { 63.3, 70.9, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15702),	-- Ruby Lifeshrine Loop Advanced: Bronze
-							ach(15703),	-- Ruby Lifeshrine Loop Advanced: Silver
-							ach(15704),	-- Ruby Lifeshrine Loop Advanced: Gold
-						},
-					}),
-					q(66777, {	-- Uktulut Coaster
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190667 },	-- Bronze Timekeeper
-						["coord"] = { 55.4, 41.1, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15736),	-- Uktulut Coaster: Bronze
-							ach(15737),	-- Uktulut Coaster: Silver
-							ach(15738),	-- Uktulut Coaster: Gold
-						},
-					}),
-					q(66778, {	-- Uktulut Coaster - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190667 },	-- Bronze Timekeeper
-						["coord"] = { 55.4, 41.1, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15739),	-- Uktulut Coaster Advanced: Bronze
-							ach(15740),	-- Uktulut Coaster Advanced: Silver
-							ach(15741),	-- Uktulut Coaster Advanced: Gold
-						},
-					}),
-					q(66725, {	-- Wild Preserve Circuit
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190503 },	-- Bronze Timekeeper
-						["coord"] = { 42.6, 94.5, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15718),	-- Wild Preserve Circuit: Bronze
-							ach(15719),	-- Wild Preserve Circuit: Silver
-							ach(15720),	-- Wild Preserve Circuit: Gold
-						},
-					}),
-					q(66726, {	-- Wild Preserve Circuit - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190503 },	-- Bronze Timekeeper
-						["coord"] = { 42.6, 94.5, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15721),	-- Wild Preserve Circuit Advanced: Bronze
-							ach(15722),	-- Wild Preserve Circuit Advanced: Silver
-							ach(15723),	-- Wild Preserve Circuit Advanced: Gold
-						},
-					}),
-					q(66721, {	-- Wild Preserve Slalom
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190473 },	-- Bronze Timekeeper
-						["coord"] = { 47.0, 85.6, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15712),	-- Wild Preserve Slalom: Bronze
-							ach(15713),	-- Wild Preserve Slalom: Silver
-							ach(15714),	-- Wild Preserve Slalom: Gold
-						},
-					}),
-					q(66722, {	-- Wild Preserve Slalom - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190473 },	-- Bronze Timekeeper
-						["coord"] = { 47.0, 85.6, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15715),	-- Wild Preserve Slalom Advanced: Bronze
-							ach(15716),	-- Wild Preserve Slalom Advanced: Silver
-							ach(15717),	-- Wild Preserve Slalom Advanced: Gold
-						},
-					}),
-					q(66786, {	-- Wingrest Roundabout
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190753 },	-- Bronze Timekeeper
-						["coord"] = { 73.2, 33.9, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15742),	-- Wingrest Roundabout: Bronze
-							ach(15743),	-- Wingrest Roundabout: Silver
-							ach(15744),	-- Wingrest Roundabout: Gold
-						},
-					}),
-					q(66787, {	-- Wingrest Roundabout - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190753 },	-- Bronze Timekeeper
-						["coord"] = { 73.2, 33.9, THE_WAKING_SHORES },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15745),	-- Wingrest Roundabout Advanced: Bronze
-							ach(15746),	-- Wingrest Roundabout Advanced: Silver
-							ach(15747),	-- Wingrest Roundabout Advanced: Gold
-						},
-					}),
-				},
+			header(HEADERS.Achievement, 15941, {	-- Dragon Racing Completionist: Gold
+				q(66732, {	-- Apex Canopy River Run
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190551 },	-- Bronze Timekeeper
+					["coord"] = { 23.3, 84.3, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15730),	-- Apex Canopy River Run: Bronze
+						ach(15731),	-- Apex Canopy River Run: Silver
+						ach(15732),	-- Apex Canopy River Run: Gold
+					},
+				}),
+				q(66733, {	-- Apex Canopy River Run - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190551 },	-- Bronze Timekeeper
+					["coord"] = { 23.3, 84.3, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15733),	-- Apex Canopy River Run Advanced: Bronze
+						ach(15734),	-- Apex Canopy River Run Advanced: Silver
+						ach(15735),	-- Apex Canopy River Run Advanced: Gold
+					},
+				}),
+				q(66727, {	-- Emberflow Flight
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190326 },	-- Bronze Timekeeper
+					["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15724),	-- Emberflow Flight: Bronze
+						ach(15725),	-- Emberflow Flight: Silver
+						ach(15726),	-- Emberflow Flight: Gold
+					},
+				}),
+				q(66728, {	-- Emberflow Flight - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190326 },	-- Bronze Timekeeper
+					["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15727),	-- Emberflow Flight Advanced: Bronze
+						ach(15728),	-- Emberflow Flight Advanced: Silver
+						ach(15729),	-- Emberflow Flight Advanced: Gold
+					},
+				}),
+				q(66710, {	-- Flashfrost Flyover
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190326 },	-- Bronze Timekeeper
+					["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15705),	-- Flashfrost Flyover: Bronze
+						ach(15706),	-- Flashfrost Flyover: Silver
+						ach(15707),	-- Flashfrost Flyover: Gold
+					},
+				}),
+				q(66712, {	-- Flashfrost Flyover - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190326 },	-- Bronze Timekeeper
+					["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15709),	-- Flashfrost Flyover Advanced: Bronze
+						ach(15710),	-- Flashfrost Flyover Advanced: Silver
+						ach(15711),	-- Flashfrost Flyover Advanced: Gold
+					},
+				}),
+				q(66679, {	-- Ruby Lifeshrine Loop
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190123 },	-- Bronze Timekeeper
+					["coord"] = { 63.3, 70.9, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15696),	-- Ruby Lifeshrine Loop: Bronze
+						ach(15697),	-- Ruby Lifeshrine Loop: Silver
+						ach(15698),	-- Ruby Lifeshrine Loop: Gold
+					},
+				}),
+				q(66692, {	-- Ruby Lifeshrine Loop - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190123 },	-- Bronze Timekeeper
+					["coord"] = { 63.3, 70.9, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15702),	-- Ruby Lifeshrine Loop Advanced: Bronze
+						ach(15703),	-- Ruby Lifeshrine Loop Advanced: Silver
+						ach(15704),	-- Ruby Lifeshrine Loop Advanced: Gold
+					},
+				}),
+				q(66777, {	-- Uktulut Coaster
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190667 },	-- Bronze Timekeeper
+					["coord"] = { 55.4, 41.1, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15736),	-- Uktulut Coaster: Bronze
+						ach(15737),	-- Uktulut Coaster: Silver
+						ach(15738),	-- Uktulut Coaster: Gold
+					},
+				}),
+				q(66778, {	-- Uktulut Coaster - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190667 },	-- Bronze Timekeeper
+					["coord"] = { 55.4, 41.1, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15739),	-- Uktulut Coaster Advanced: Bronze
+						ach(15740),	-- Uktulut Coaster Advanced: Silver
+						ach(15741),	-- Uktulut Coaster Advanced: Gold
+					},
+				}),
+				q(66725, {	-- Wild Preserve Circuit
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190503 },	-- Bronze Timekeeper
+					["coord"] = { 42.6, 94.5, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15718),	-- Wild Preserve Circuit: Bronze
+						ach(15719),	-- Wild Preserve Circuit: Silver
+						ach(15720),	-- Wild Preserve Circuit: Gold
+					},
+				}),
+				q(66726, {	-- Wild Preserve Circuit - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190503 },	-- Bronze Timekeeper
+					["coord"] = { 42.6, 94.5, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15721),	-- Wild Preserve Circuit Advanced: Bronze
+						ach(15722),	-- Wild Preserve Circuit Advanced: Silver
+						ach(15723),	-- Wild Preserve Circuit Advanced: Gold
+					},
+				}),
+				q(66721, {	-- Wild Preserve Slalom
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190473 },	-- Bronze Timekeeper
+					["coord"] = { 47.0, 85.6, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15712),	-- Wild Preserve Slalom: Bronze
+						ach(15713),	-- Wild Preserve Slalom: Silver
+						ach(15714),	-- Wild Preserve Slalom: Gold
+					},
+				}),
+				q(66722, {	-- Wild Preserve Slalom - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190473 },	-- Bronze Timekeeper
+					["coord"] = { 47.0, 85.6, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15715),	-- Wild Preserve Slalom Advanced: Bronze
+						ach(15716),	-- Wild Preserve Slalom Advanced: Silver
+						ach(15717),	-- Wild Preserve Slalom Advanced: Gold
+					},
+				}),
+				q(66786, {	-- Wingrest Roundabout
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190753 },	-- Bronze Timekeeper
+					["coord"] = { 73.2, 33.9, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15742),	-- Wingrest Roundabout: Bronze
+						ach(15743),	-- Wingrest Roundabout: Silver
+						ach(15744),	-- Wingrest Roundabout: Gold
+					},
+				}),
+				q(66787, {	-- Wingrest Roundabout - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190753 },	-- Bronze Timekeeper
+					["coord"] = { 73.2, 33.9, THE_WAKING_SHORES },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15745),	-- Wingrest Roundabout Advanced: Bronze
+						ach(15746),	-- Wingrest Roundabout Advanced: Silver
+						ach(15747),	-- Wingrest Roundabout Advanced: Gold
+					},
+				}),
 			}),
 		}),
 	}),

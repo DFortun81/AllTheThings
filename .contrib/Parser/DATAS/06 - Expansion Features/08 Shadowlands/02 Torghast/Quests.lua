@@ -25,13 +25,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				["provider"] = { "i", 178585 },	-- The Forgotten Key
 				["cr"] = 151329,	-- Warden Skoldus
 			}),
-			q(64816, {	-- Reality's Doorstep
-				["sourceQuests"] = { 64813 },	-- The Crown of Wills
-				["provider"] = { "n", 181379 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 49.1, 69.5, 1912 },
-				["isBreadcrumb"] = true,
-				["timeline"] = { "added 9.2.0" },
-			}),
 			q(60269, {	-- Reawakening
 				["sourceQuests"] = { 60268 },	-- Deep Within
 				["provider"] = { "n", 164937 },	-- Runecarver
@@ -45,30 +38,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 					1968,	-- TG107_Floor
 				},
 			}),
-			q(64813, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Crown of Wills
-				["sourceQuests"] = { 64812 },	-- Forge of Domination
-				["provider"] = { "n", 181384 },	-- The Primus
-				["coord"] = { 49.3, 58.6, 1912 },
-				["g"] = {
-					crit(5, {	-- Crown of Wills
-						["achievementID"] = 15259,	-- Secrets of the First Ones
-					}),
-					i(187785, {	-- Tome of the Eternal (RECIPE!)
-						recipe(359700, {	-- Vestige of the Eternal
-							["requireSkill"] = BLACKSMITHING,
-						}),
-						recipe(359701, {	-- Vestige of the Eternal
-							["requireSkill"] = JEWELCRAFTING,
-						}),
-						recipe(359702, {	-- Vestige of the Eternal
-							["requireSkill"] = LEATHERWORKING,
-						}),
-						recipe(359703, {	-- Vestige of the Eternal
-							["requireSkill"] = TAILORING,
-						}),
-					}),
-				},
-			})),
 			q(62719, {	-- The Final Pieces
 				["sourceQuests"] = { 60272 },    -- The Weak Link
 				["qgs"] = {

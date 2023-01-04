@@ -105,7 +105,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193688, {	-- Phenran
-				["coord"] = { 60.0, 61.0 THALDRASZUS },
+				["coord"] = { 60.0, 61.0, THALDRASZUS },
 				["questID"] = 74020,
 				["g"] = {
 					i(200146),	-- Phenran's Discordant Smasher

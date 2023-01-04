@@ -4,7 +4,7 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THALDRASZUS, {
 		n(QUESTS, {
-			n(CAMPAIGN, {
+			header(HEADERS.Achievement, 16363, {	-- Just Don't Ask Me to Spell It
 					-- Chapter 1 --
 				q(66244, {	-- To Valdrakken
 					["sourceQuests"] = { 66015 },	-- The Blue Dragon Oathstone
@@ -957,6 +957,88 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
+			header(HEADERS.Quest, 70377, {	-- Derelict Fashion
+				q(70377, {	-- Derelict Fashion
+					["description"] = "Drops from Mudgatu.",
+					["provider"] = { "i", 200586 },	-- Derelict Sunglasses
+					["coord"] = { 40.6, 45.4, THALDRASZUS },
+				}),
+				q(72270, {	-- HQT for talking to Zeldis after 'Derelict Fashion' (70377)
+					["name"] = "Talk to Zeldis",
+					["sourceQuests"] = { 70377 },	-- Derelict Fashion
+					["provider"] = { "n", 198062 },	-- Zeldis
+					["coord"] = { 39.6, 48.4, THALDRASZUS },
+
+				}),
+				q(72351, {	-- HQT for talking to Zeldis again (70377)
+					["name"] = "Talk to Zeldis again",
+					["sourceQuests"] = { 72270 },	-- HQT for talking to Zeldis after 'Derelict Fashion' (70377)
+					["provider"] = { "n", 198062 },	-- Zeldis
+					["coord"] = { 39.3, 46.8, THALDRASZUS },
+				}),
+				q(72352, {	-- HQT for moving closer to Sneaky Mud Mask npc
+					["name"] = "Move closer to Sneaky Mud Mask",
+					["sourceQuests"] = { 72351 },	-- HQT for talking to Zeldis again (70377)
+					["provider"] = { "n", 198590 },	-- Sneaky Mud Mask
+					["coord"] = { 38.6, 46.4, THALDRASZUS },
+				}),
+				q(72060, {	-- Special Treatment
+					["sourceQuests"] = { 72352 },	-- HQT for moving closer to Sneaky Mud Mask npc
+					["provider"] = { "n", 198590 },	-- Sneaky Mud Mask
+					["coord"] = { 38.6, 46.4, THALDRASZUS },
+					["g"] = {
+						i(200872),	-- Living Mud Mask (PET!)
+					},
+				}),
+			}),
+			header(HEADERS.Achievement, 16323, {	-- Fragments of History
+				q(70204, {	-- Golden Claw
+					["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
+					["provider"] = { "i", 198540 },	-- Golden Claw
+					["coord"] = { 38.8, 45.01, THALDRASZUS },
+				}),
+				q(70805, {	-- Precious Stone Fragment
+					["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
+					["provider"] = { "i", 199893 },	-- Precious Stone Fragment
+					["coord"] = { 57.1, 64.6, THALDRASZUS },
+				}),
+			}),
+				-- MISC --
+			q(67093, {	-- An Anomalous Shrine
+				["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
+				["provider"] = { "n", 192543 },	-- Archivist Arenial
+				["coord"] = { 60.3, 81.9, THALDRASZUS },
+				["g"] = {
+					i(195218),	-- Highfather's Burden
+					i(195215),	-- Highfather's Cover
+					i(195216),	-- Highfather's Guard
+					i(195217),	-- Highfather's Legacy
+				},
+			}),
+			q(67154, {	-- Entropic Remnants
+				["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
+				["provider"] = { "n", 192543 },	-- Archivist Arenial
+				["coord"] = { 60.3, 81.9, THALDRASZUS },
+			}),
+			q(66929, {	-- Gotta Collect Them All
+				["provider"] = { "n", 191414 },	-- Yumadormu
+				["coord"] = { 59.7, 43.6, THALDRASZUS },
+			}),
+			q(67167, {	-- It's Time To Duel!
+				["sourceQuests"] = { 66929 },	-- Gotta Collect Them All
+				["provider"] = { "n", 191414 },	-- Yumadormu
+				["coord"] = { 60.7, 43.3, THALDRASZUS },
+			}),
+			q(72519, {	-- Temporal Two-ning
+				["sourceQuests"] = { 67154 },	-- Entropic Remnants
+				["provider"] = { "n", 186931 },	-- Nozdormu
+				["coord"] = { 60, 82.4, THALDRASZUS },
+			}),
+			q(67178, {	-- White Eyes, Blue Dragon
+				["sourceQuests"] = { 67167 },	-- It's Time To Duel!
+				["provider"] = { "n", 192733 },	-- Professor Dromokdormi
+				["coord"] = { 58.1, 40.4, THALDRASZUS },
+			}),
 			n(BONUS_OBJECTIVES, {
 				q(72114, {	-- Acrosoth
 					["provider"] = { "n", 193243 },	-- Acrosoth
@@ -1074,239 +1156,151 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- The Weeping Vilomah
 
 			}),
-			n(SPECIAL, {
-				q(70377, {	-- Derelict Fashion
-					["provider"] = { "i", 200586 },	-- Derelict Sunglasses
-					["coord"] = { 40.6, 45.4, THALDRASZUS },
-					["description"] = "Drops from Mudgatu.",
-				}),
-				q(72270, {	-- HQT for talking to Zeldis after 'Derelict Fashion' (70377)
-					["sourceQuests"] = { 70377 },	-- Derelict Fashion
-					["provider"] = { "n", 198062 },	-- Zeldis
-					["coord"] = { 39.6, 48.4, THALDRASZUS },
-					["name"] = "Talk to Zeldis",
-				}),
-				q(72351, {	-- HQT for talking to Zeldis again (70377)
-					["sourceQuests"] = { 72270 },	-- HQT for talking to Zeldis after 'Derelict Fashion' (70377)
-					["provider"] = { "n", 198062 },	-- Zeldis
-					["coord"] = { 39.3, 46.8, THALDRASZUS },
-					["name"] = "Talk to Zeldis again",
-				}),
-				q(72352, {	-- HQT for moving closer to Sneaky Mud Mask npc
-					["sourceQuests"] = { 72351 },	-- HQT for talking to Zeldis again (70377)
-					["provider"] = { "n", 198590 },	-- Sneaky Mud Mask
-					["coord"] = { 38.6, 46.4, THALDRASZUS },
-					["name"] = "Move closer to Sneaky Mud Mask",
-				}),
-				q(72060, {	-- Special Treatment
-					["sourceQuests"] = { 72352 },	-- HQT for moving closer to Sneaky Mud Mask npc
-					["provider"] = { "n", 198590 },	-- Sneaky Mud Mask
-					["coord"] = { 38.6, 46.4, THALDRASZUS },
+			header(HEADERS.Achievement, 15941, {	-- Dragon Racing Completionist: Gold
+				q(70059, {	-- Academy Ascent
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 193951 },	-- Bronze Timekeeper
+					["coord"] = { 60.3, 41.6, THALDRASZUS },
+					["repeatable"] = true,
 					["g"] = {
-						i(200872),	-- Living Mud Mask (PET!)
+						i(191140),	-- Bronze Timepiece
+						ach(15897),	-- Academy Ascent: Bronze
+						ach(15898),	-- Academy Ascent: Silver
+						ach(15899),	-- Academy Ascent: Gold
 					},
 				}),
-			}),
-			q(72482, {	-- The Waking Shores Advanced Tour
-				["sourceQuests"] = { 72487 },	-- The Thaldraszus Tour
-				["provider"] = { "n", 199120 },	-- Celormu
-				["coord"] = { 46.0, 63.0, THALDRASZUS },
-			}),
-				-- MISC --
-			q(67093, {	-- An Anomalous Shrine
-				["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
-				["provider"] = { "n", 192543 },	-- Archivist Arenial
-				["coord"] = { 60.3, 81.9, THALDRASZUS },
-				["g"] = {
-					i(195218),	-- Highfather's Burden
-					i(195215),	-- Highfather's Cover
-					i(195216),	-- Highfather's Guard
-					i(195217),	-- Highfather's Legacy
-				},
-			}),
-			q(67154, {	-- Entropic Remnants
-				["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
-				["provider"] = { "n", 192543 },	-- Archivist Arenial
-				["coord"] = { 60.3, 81.9, THALDRASZUS },
-			}),
-			q(66929, {	-- Gotta Collect Them All
-				["provider"] = { "n", 191414 },	-- Yumadormu
-				["coord"] = { 59.7, 43.6, THALDRASZUS },
-			}),
-			q(67167, {	-- It's Time To Duel!
-				["sourceQuests"] = { 66929 },	-- Gotta Collect Them All
-				["provider"] = { "n", 191414 },	-- Yumadormu
-				["coord"] = { 60.7, 43.3, THALDRASZUS },
-			}),
-			q(72519, {	-- Temporal Two-ning
-				["sourceQuests"] = { 67154 },	-- Entropic Remnants
-				["provider"] = { "n", 186931 },	-- Nozdormu
-				["coord"] = { 60, 82.4, THALDRASZUS },
-			}),
-			q(67178, {	-- White Eyes, Blue Dragon
-				["sourceQuests"] = { 67167 },	-- It's Time To Duel!
-				["provider"] = { "n", 192733 },	-- Professor Dromokdormi
-				["coord"] = { 58.1, 40.4, THALDRASZUS },
-			}),
-			-- Fragment of History --
-			q(70204, {	-- Golden Claw
-				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
-				["provider"] = { "i", 198540 },	-- Golden Claw
-				["coord"] = { 38.8, 45.01, THALDRASZUS },
-			}),
-			q(70805, {	-- Precious Stone Fragment
-				["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
-				["provider"] = { "i", 199893 },	-- Precious Stone Fragment
-				["coord"] = { 57.1, 64.6, THALDRASZUS },
-			}),
-			ach(15941, {	-- Dragon Racing Completionist: Gold
-				["collectible"] = false,
-				["g"] = {
-					q(70059, {	-- Academy Ascent
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 193951 },	-- Bronze Timekeeper
-						["coord"] = { 60.3, 41.6, THALDRASZUS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15897),	-- Academy Ascent: Bronze
-							ach(15898),	-- Academy Ascent: Silver
-							ach(15899),	-- Academy Ascent: Gold
-						},
-					}),
-					q(70060, {	-- Academy Ascent - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 193951 },	-- Bronze Timekeeper
-						["coord"] = { 60.3, 41.6, THALDRASZUS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15900),	-- Academy Ascent Advanced: Bronze
-							ach(15901),	-- Academy Ascent Advanced: Silver
-							ach(15902),	-- Academy Ascent Advanced: Gold
-						},
-					}),
-					q(70161, {	-- Caverns Criss-Cross
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 194372 },	-- Bronze Timekeeper
-						["coord"] = { 58.1, 33.6, THALDRASZUS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15909),	-- Caverns Criss-Cross: Bronze
-							ach(15910),	-- Caverns Criss-Cross: Silver
-							ach(15911),	-- Caverns Criss-Cross: Gold
-						},
-					}),
-					q(70163, {	-- Caverns Criss-Cross - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 194372 },	-- Bronze Timekeeper
-						["coord"] = { 58.1, 33.6, THALDRASZUS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15912),	-- Caverns Criss-Cross Advanced: Bronze
-							ach(15913),	-- Caverns Criss-Cross Advanced: Silver
-							ach(15914),	-- Caverns Criss-Cross Advanced: Gold
-						},
-					}),
-					q(70051, {	-- Cliffside Circuit
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 193911 },	-- Bronze Timekeeper
-						["coord"] = { 37.7, 48.9, THALDRASZUS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15891),	-- Cliffside Circuit: Bronze
-							ach(15892),	-- Cliffside Circuit: Silver
-							ach(15893),	-- Cliffside Circuit: Gold
-						},
-					}),
-					q(70052, {	-- Cliffside Circuit - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 193911 },	-- Bronze Timekeeper
-						["coord"] = { 37.7, 48.9, THALDRASZUS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15894),	-- Cliffside Circuit Advanced: Bronze
-							ach(15895),	-- Cliffside Circuit Advanced: Silver
-							ach(15896),	-- Cliffside Circuit Advanced: Gold
-						},
-					}),
-					q(67095, {	-- Flowing Forest Flight
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 192555 },	-- Bronze Timekeeper
-						["coord"] = { 57.8, 75.0, THALDRASZUS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15827),	-- The Flowing Forest Flight: Bronze
-							ach(15828),	-- The Flowing Forest Flight: Silver
-							ach(15829),	-- The Flowing Forest Flight: Gold
-						},
-					}),
-					q(67096, {	-- Flowing Forest Flight - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 192555 },	-- Bronze Timekeeper
-						["coord"] = { 57.8, 75.0, THALDRASZUS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15830),	-- The Flowing Forest Flight Advanced: Bronze
-							ach(15831),	-- The Flowing Forest Flight Advanced: Silver
-							ach(15832),	-- The Flowing Forest Flight Advanced: Gold
-						},
-					}),
-					q(70157, {	-- Garden Gallivant
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 194348 },	-- Bronze Timekeeper
-						["coord"] = { 39.5, 76.2, THALDRASZUS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15903),	-- Garden Gallivant: Bronze
-							ach(15904),	-- Garden Gallivant: Silver
-							ach(15905),	-- Garden Gallivant: Gold
-						},
-					}),
-					q(70158, {	-- Garden Gallivant - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 194348 },	-- Bronze Timekeeper
-						["coord"] = { 39.5, 76.2, THALDRASZUS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15906),	-- Garden Gallivant Advanced: Bronze
-							ach(15907),	-- Garden Gallivant Advanced: Silver
-							ach(15908),	-- Garden Gallivant Advanced: Gold
-						},
-					}),
-					q(69957, {	-- Tyrhold Trial
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 193651 },	-- Bronze Timekeeper
-						["coord"] = { 57.2, 66.9, THALDRASZUS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15855),	-- Tyrhold Trial: Bronze
-							ach(15856),	-- Tyrhold Trial: Silver
-							ach(15857),	-- Tyrhold Trial: Gold
-						},
-					}),
-					q(69958, {	-- Tyrhold Trial - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 193651 },	-- Bronze Timekeeper
-						["coord"] = { 57.2, 66.9, THALDRASZUS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15858),	-- Tyrhold Trial Advanced: Bronze
-							ach(15859),	-- Tyrhold Trial Advanced: Silver
-							ach(15860),	-- Tyrhold Trial Advanced: Gold
-						},
-					}),
-				},
+				q(70060, {	-- Academy Ascent - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 193951 },	-- Bronze Timekeeper
+					["coord"] = { 60.3, 41.6, THALDRASZUS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15900),	-- Academy Ascent Advanced: Bronze
+						ach(15901),	-- Academy Ascent Advanced: Silver
+						ach(15902),	-- Academy Ascent Advanced: Gold
+					},
+				}),
+				q(70161, {	-- Caverns Criss-Cross
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 194372 },	-- Bronze Timekeeper
+					["coord"] = { 58.1, 33.6, THALDRASZUS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15909),	-- Caverns Criss-Cross: Bronze
+						ach(15910),	-- Caverns Criss-Cross: Silver
+						ach(15911),	-- Caverns Criss-Cross: Gold
+					},
+				}),
+				q(70163, {	-- Caverns Criss-Cross - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 194372 },	-- Bronze Timekeeper
+					["coord"] = { 58.1, 33.6, THALDRASZUS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15912),	-- Caverns Criss-Cross Advanced: Bronze
+						ach(15913),	-- Caverns Criss-Cross Advanced: Silver
+						ach(15914),	-- Caverns Criss-Cross Advanced: Gold
+					},
+				}),
+				q(70051, {	-- Cliffside Circuit
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 193911 },	-- Bronze Timekeeper
+					["coord"] = { 37.7, 48.9, THALDRASZUS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15891),	-- Cliffside Circuit: Bronze
+						ach(15892),	-- Cliffside Circuit: Silver
+						ach(15893),	-- Cliffside Circuit: Gold
+					},
+				}),
+				q(70052, {	-- Cliffside Circuit - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 193911 },	-- Bronze Timekeeper
+					["coord"] = { 37.7, 48.9, THALDRASZUS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15894),	-- Cliffside Circuit Advanced: Bronze
+						ach(15895),	-- Cliffside Circuit Advanced: Silver
+						ach(15896),	-- Cliffside Circuit Advanced: Gold
+					},
+				}),
+				q(67095, {	-- Flowing Forest Flight
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 192555 },	-- Bronze Timekeeper
+					["coord"] = { 57.8, 75.0, THALDRASZUS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15827),	-- The Flowing Forest Flight: Bronze
+						ach(15828),	-- The Flowing Forest Flight: Silver
+						ach(15829),	-- The Flowing Forest Flight: Gold
+					},
+				}),
+				q(67096, {	-- Flowing Forest Flight - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 192555 },	-- Bronze Timekeeper
+					["coord"] = { 57.8, 75.0, THALDRASZUS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15830),	-- The Flowing Forest Flight Advanced: Bronze
+						ach(15831),	-- The Flowing Forest Flight Advanced: Silver
+						ach(15832),	-- The Flowing Forest Flight Advanced: Gold
+					},
+				}),
+				q(70157, {	-- Garden Gallivant
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 194348 },	-- Bronze Timekeeper
+					["coord"] = { 39.5, 76.2, THALDRASZUS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15903),	-- Garden Gallivant: Bronze
+						ach(15904),	-- Garden Gallivant: Silver
+						ach(15905),	-- Garden Gallivant: Gold
+					},
+				}),
+				q(70158, {	-- Garden Gallivant - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 194348 },	-- Bronze Timekeeper
+					["coord"] = { 39.5, 76.2, THALDRASZUS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15906),	-- Garden Gallivant Advanced: Bronze
+						ach(15907),	-- Garden Gallivant Advanced: Silver
+						ach(15908),	-- Garden Gallivant Advanced: Gold
+					},
+				}),
+				q(69957, {	-- Tyrhold Trial
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 193651 },	-- Bronze Timekeeper
+					["coord"] = { 57.2, 66.9, THALDRASZUS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15855),	-- Tyrhold Trial: Bronze
+						ach(15856),	-- Tyrhold Trial: Silver
+						ach(15857),	-- Tyrhold Trial: Gold
+					},
+				}),
+				q(69958, {	-- Tyrhold Trial - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 193651 },	-- Bronze Timekeeper
+					["coord"] = { 57.2, 66.9, THALDRASZUS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15858),	-- Tyrhold Trial Advanced: Bronze
+						ach(15859),	-- Tyrhold Trial Advanced: Silver
+						ach(15860),	-- Tyrhold Trial Advanced: Gold
+					},
+				}),
 			}),
 		}),
 	}),

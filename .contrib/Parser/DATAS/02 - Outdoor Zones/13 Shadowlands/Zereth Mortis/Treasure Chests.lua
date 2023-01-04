@@ -19,16 +19,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["questID"] = 65520,
 				["sourceQuest"] = 65427,	-- A New Architect
 				["g"] = {
-					crit(13, {	-- Architect's Reserve
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(187833, {	-- Dapper Pocopoc
 						["questID"] = 65528,
-						["g"] = {
-							crit(5, {	-- Dapper Pocopoc
-								["achievementID"] = 15508,	-- Fashion of the First Ones
-							}),
-						},
 					}),
 				},
 			}),
@@ -37,17 +29,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["coord"] = { 47.5, 95.2, ZERETH_MORTIS },
 				["questID"] = 65573,
 				["g"] = {
-					crit(27, {	-- Bushel of Progenitor Produce
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(190853),	-- Bushel of Mysterious Fruit (TOY!)
 					i(189451, {	-- Chef Pocopoc
 						["questID"] = 65524,
-						["g"] = {
-							crit(2, {	-- Chef Pocopoc
-								["achievementID"] = 15508,	-- Fashion of the First Ones
-							}),
-						},
 					}),
 				},
 			}),
@@ -61,20 +45,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["description"] = "To open it you need to pick up a Jiro Hammer(189768). Ontop of the rock there is a repair tool that you can use to trade with the nearby Jiros(Hiu Fi 185151) for a Jiro Hammer.",
 				["coord"] = { 56.8, 64.2, ZERETH_MORTIS },
 				["questID"] = 65489,
-				["g"] = {
-					crit(14, {	-- Crushed Supply Crate
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
-				},
 			}),
 			o(370140, {	-- Damaged Jiro Stash
 				["description"] = "Jumping puzzle.",
 				["coord"] = { 38.2, 37.2, ZERETH_MORTIS },
 				["questID"] = 64667,
 				["g"] = {
-					crit(3, {	-- Damaged Jiro Stash
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(190637),	-- Percussive Maintenance Instrument
 				},
 			}),
@@ -84,9 +60,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["questID"] = 65465,
 				["cost"] = { { "i", 189704, 1}, },	-- 1xDominance Key
 				["g"] = {
-					crit(11, {	-- Domination Cache
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(189863),	-- Spatial Opener
 					i(190638),	-- Tormented Mawsteel Greatsword
 				},
@@ -108,66 +81,33 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					o(375397, {	-- Glinting Sand Pile
 						["coord"] = { 45.1, 36, 2029 },
 						["questID"] = 65495,
-						["g"] = {
-							crit(2, {	-- Glinting Sand Pile
-								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
-							}),
-						},
 					}),
 					o(375399, {	-- Humming Sand Pile
 						["coord"] = { 44.3, 36.7, 2029 },
 						["questID"] = 65497,
-						["g"] = {
-							crit(4, {	-- Humming Sand Pile
-								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
-							}),
-						},
 					}),
 					o(375396, {	-- Lumpy Sand Pile
 						["coord"] = { 44.8, 36.9, 2029 },
 						["questID"] = 65494,
-						["g"] = {
-							crit(1, {	-- Lumpy Sand Pile
-								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
-							}),
-						},
 					}),
 					o(375400, {	-- Misshapen Sand Pile
 						["coord"] = { 44.6, 35.7, 2029 },
 						["questID"] = 65498,
-						["g"] = {
-							crit(5, {	-- Misshapen Sand Pile
-								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
-							}),
-						},
 					}),
 					o(375398, {	-- Shifting Sand Pile
 						["coord"] = { 43.7, 37.1, 2029 },
 						["questID"] = 65496,
-						["g"] = {
-							crit(3, {	-- Shifting Sand Pile
-								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
-							}),
-						},
 					}),
 					o(375401, {	-- Sparkling Sand Pile
 						["coord"] = { 43.9, 36.5, 2029 },
 						["questID"] = 65499,
 						["g"] = {
-							crit(6, {	-- Sparkling Sand Pile
-								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
-							}),
 							i(190374),	-- Gemstone of Prismatic Brilliance
 						},
 					}),
 					o(375402, {	-- Ticking Sand Pile
 						["coord"] = { 43.8, 37.6, 2029 },
 						["questID"] = 65500,
-						["g"] = {
-							crit(7, {	-- Ticking Sand Pile
-								["achievementID"] = 15502,	-- Sand, Sand Everywhere!
-							}),
-						},
 					}),
 				}),
 			}),
@@ -176,16 +116,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["coord"] = { 34.8, 69.9, ZERETH_MORTIS },
 				["questID"] = 65523,
 				["g"] = {
-					crit(17, {	-- Drowned Broker Supplies
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(190059, {	-- Pirate Pocopoc
 						["questID"] = 65526,
-						["g"] = {
-							crit(3, {	-- Pirate Pocopoc
-								["achievementID"] = 15508,	-- Fashion of the First Ones
-							}),
-						},
 					}),
 				},
 			}),
@@ -194,9 +126,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["coord"] = { 51.6, 9.9, ZERETH_MORTIS },
 				["questID"] = 65487,
 				["g"] = {
-					crit(9, {	-- Fallen Vault
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(189863),	-- Spatial Opener
 				},
 			}),
@@ -205,9 +134,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["coord"] = { 49.8, 87.3, ZERETH_MORTIS },
 				["questID"] = 65503,
 				["g"] = {
-					crit(12, {	-- Filched Artifact
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(189863),	-- Spatial Opener
 				},
 			}),
@@ -216,9 +142,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["coord"] = { 67.0, 69.4, ZERETH_MORTIS },
 				["questID"] = 65178,
 				["g"] = {
-					crit(5, {	-- Forgotten Proto-Vault
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(189469),	-- Schematic: Prototype Leaper
 				},
 			}),
@@ -246,20 +169,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["description"] = "Jumping Puzzle, Start on the top of the nearby vault. On the big rock.",
 				["coord"] = { 39, 73.2, ZERETH_MORTIS },
 				["questID"] = 65480,
-				["g"] = {
-					crit(10, {	-- Gnawed Valise
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
-				},
 			}),
 			o(375484, {	-- Grateful Boon
 				["description"] = "Pet all the creatures in the area. The creature will sit down after being petted. The Jiro will yell when you are done.",
 				["coord"] = { 37.2, 78.2, ZERETH_MORTIS },
 				["questID"] = 65545,
 				["g"] = {
-					crit(22, {	-- Grateful Boon
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(189478),	-- Schematic: Adorned Vombata
 				},
 			}),
@@ -268,20 +183,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["coord"] = { 58.9, 77, ZERETH_MORTIS },
 				["questID"] = 65173,
 				["g"] = {
-					crit(1, {	-- Library Vault
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(189447),	-- Schematic: Viperid Menace
 				},
 			}),
 			o(375272, {	-- Mawsworn Cache
 				["coord"] = { 60.6, 30.8, ZERETH_MORTIS },
 				["questID"] = 65441,
-				["g"] = {
-					crit(7, {	-- Mawsworn Cache
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
-				}
 			}),
 			o(375411, {	-- Mistaken Ovoid
 				["description"] = "Inside the cave. Need to collect 5xLost Ovoids around Zereth Mortis.",
@@ -289,9 +196,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["questID"] = 65522,
 				["cost"] = { { "i", 190239, 5 } }, 	-- 5xLost Ovoid
 				["g"] = {
-					crit(16, {	-- Mistaken Ovoid
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(189435),	-- Schematic: Multichicken
 				},
 			}),
@@ -300,9 +204,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["coord"] = { 35.2, 44.1, ZERETH_MORTIS },
 				["questID"] = 65536,
 				["g"] = {
-					crit(15, {	-- Overgrown Protofruit
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(190953),	-- Protofruit Flesh
 				},
 			}),
@@ -310,9 +211,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["coord"] = { 34.8, 56.1, ZERETH_MORTIS },
 				["questID"] = 65537,
 				["g"] = {
-					crit(18, {	-- Offering to the First Ones
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(190339),	-- Enlightened Offering
 				},
 			}),
@@ -321,16 +219,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["coord"] = { 60.8, 42.9, ZERETH_MORTIS },
 				["questID"] = 65542,
 				["g"] = {
-					crit(20, {	-- Pilfered Curio
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(190098, {	-- Pepepec
 						["questID"] = 65538,
-						["g"] = {
-							crit(9, {	-- Pepepec
-								["achievementID"] = 15508,	-- Fashion of the First Ones
-							}),
-						},
 					}),
 				},
 			}),
@@ -339,9 +229,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["coord"] = { 52.8, 71.4, ZERETH_MORTIS },
 				["questID"] = 65546,
 				["g"] = {
-					crit(23, {	-- Protoflora Harvester
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(190952),	-- Protoflora Harvester
 				},
 			}),
@@ -350,9 +237,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["coord"] = { 46.6, 31, ZERETH_MORTIS },
 				["questID"] = 65540,
 				["g"] = {
-					crit(19, {	-- Protomineral Extractor
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(190942),	-- Protomineral Extractor
 				},
 			}),
@@ -384,16 +268,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["coord"] = { 65.4, 47.1, 2027 },
 				["questID"] = 65566,
 				["g"] = {
-					crit(25, {	-- Ripened Protopear
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(190058, {	-- Peaceful Pocopoc
 						["questID"] = 65525,
-						["g"] = {
-							crit(1, {	-- Peaceful Pocopoc
-								["achievementID"] = 15508,	-- Fashion of the First Ones
-							}),
-						},
 					}),
 				},
 			}),
@@ -415,20 +291,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["description"] = "Jumping Puzzle.",
 				["coord"] = { 37.9, 65.2, ZERETH_MORTIS },
 				["questID"] = 65447,
-				["g"] = {
-					crit(8, {	-- Stolen Relic
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
-				},
 			}),
 			o(375483, {	-- Stolen Scroll
 				["description"] = "Jumping Puzzle, climb ontop of the slumbering vault in Haven.",
 				["coord"] = { 34, 67.6, ZERETH_MORTIS },
 				["questID"] = 65543,
 				["g"] = {
-					crit(21, {	-- Stolen Scroll
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(189863),	-- Spatial Opener
 					i(190941),	-- Teachings of the Elders
 				},
@@ -438,16 +306,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["coord"] = { 58.8, 73.1, ZERETH_MORTIS },
 				["questID"] = 64545,
 				["g"] = {
-					crit(2, {	-- Submerged Chest
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(190061, {	-- Admiral Pocopoc
 						["questID"] = 65529,
-						["g"] = {
-							crit(6, {	-- Admiral Pocopoc
-								["achievementID"] = 15508,	-- Fashion of the First Ones
-							}),
-						},
 					}),
 					i(189863),	-- Spatial Opener
 				},
@@ -457,9 +317,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["coord"] = { 52.7, 63, ZERETH_MORTIS },
 				["questID"] = 65270,
 				["g"] = {
-					crit(6, {	-- Symphonic Vault
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(189863),	-- Spatial Opener
 				},
 			}),
@@ -476,9 +333,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				},
 				["questID"] = 65565,
 				["g"] = {
-					crit(24, {	-- Syntactic Vault
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(190457),	-- Protopological Cube (TOY!)
 				},
 			}),
@@ -486,16 +340,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["description"] = "Found inside of Nexus of Actualization. Push Orb in the room before",
 				["questID"] = 65175,
 				["g"] = {
-					crit(4, {	-- Template Archive
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
-					}),
 					i(190060, {	-- Adventurous Pocopoc
 						["questID"] = 65527,
-						["g"] = {
-							crit(4, {	-- Adventurous Pocopoc
-								["achievementID"] = 15508,	-- Fashion of the First Ones
-							}),
-						},
 					}),
 				},
 			}),
@@ -520,9 +366,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 						["description"] = "This lock is outside of the Wards, next to the console that opens the door.",
 						["coord"] = { 50, 76.2, ZERETH_MORTIS },
 						["questID"] = 65592,
-					}),
-					crit(26, {	-- Undulating Foliage
-						["achievementID"] = 15331,	-- Treasures of Zereth Mortis
 					}),
 					i(189863),	-- Spatial Opener
 					i(190926),	-- Infested Automa Core (TOY!)
@@ -601,11 +444,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					}),
 					i(190096, {	-- Pocobold
 						["questID"] = 65534,
-						["g"] = {
-							crit(8, {	-- Pocobold
-								["achievementID"] = 15508,	-- Fashion of the First Ones
-							}),
-						},
 					}),
 				},
 			}),

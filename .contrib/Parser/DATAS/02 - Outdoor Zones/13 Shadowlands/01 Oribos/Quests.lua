@@ -298,27 +298,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 162928 },	-- Overseer Kah-Delen
 				["coord"] = { 54.4, 54.2, ORIBOS },
 			}),
-			q(65329, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Safe Haven
-				["sourceQuests"] = { 65238 },	-- Souls Entwined
-				["provider"] = { "n", 184584 },	-- Kleia
-				["coord"] = { 59.9, 56.1, ORIBOS },
-				["isBreadcrumb"] = true,
-			})),
-			q(65260, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- A Long Walk
-				["sourceQuests"] = { 65250 },	-- Prisoner of Interest
-				["provider"] = { "n", 183822 },	-- Uther
-				["coord"] = { 52.2, 40.5, ORIBOS },
-			})),
-			q(65263, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Fate of Sylvanas
-				["sourceQuests"] = { 65260 },	-- A Long Walk
-				["provider"] = { "n", 183830 },	-- Arbiter Pelagos
-				["coord"] = { 55, 49.2, ORIBOS },
-			})),
-			q(65297, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Penance and Renewal
-				["sourceQuests"] = { 65263 },	-- The Fate of Sylvanas
-				["provider"] = { "n", 183830 },	-- Arbiter Pelagos
-				["coord"] = { 55, 49.2, ORIBOS },
-			})),
 			q(51355, {	-- Secretest Fish
 				["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
 				["provider"] = { "i", 158932 },	-- Secretest Fish
@@ -356,12 +335,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 60146 },	-- Torment Chamber: Thrall
 				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 39.9, 68.5, ORIBOS },
-			}),
-			q(66170,{	-- Silent Vigil
-				["sourceQuests"] = { 65297 },	-- Penance and Renewal
-				["provider"] = { "n", 187436 },	-- Dori'thur <Tyrande's Companion>
-				["coord"] = { 46.6, 55.9, 1671 },
-				["timeline"] = { "added 9.2.5" },
 			}),
 			q(60129, {	-- Stranger in an Even Stranger Land
 				["sourceQuests"] = { 59770 },	-- Stand as One
@@ -415,29 +388,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 62569 },	-- The Jailer's Grasp
 				["timeline"] = { "added 9.1.0" },
 			}),
-			q(64958, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Forces Gather
-				["sourceQuests"] = { 64957 },	-- The Old Waystone
-				["provider"] = { "n", 184698 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 49.5, 37.5, ORIBOS },	-- (Up Stairs)
-				["g"] = {
-					crit(1, {	-- Into the Unknown
-						["achievementID"] = 15259,	-- Secrets of the First Ones
-					}),
-					i(188041),	-- Ageless Spellblade
-					i(188056),	-- Ancient Protector's Pulverizer
-					i(188040),	-- Burnished Arbalest
-					i(188042),	-- Enlightened Dagger
-					i(188043),	-- Eradicator of the Eternal Guard
-					i(188051),	-- Gatewarden's Warglaive
-					i(188039),	-- Harmonic Actuator
-					i(188047),	-- Haven Guard's Cudgel
-					i(188046),	-- Haven Guard's Mace
-					i(188038),	-- Haven Guard's Shield
-					i(188050),	-- Ineffable Spire
-					i(188049),	-- Transcendant Gavel
-					i(188048),	-- Truthseeker's Staff
-				},
-			})),
 			q(62457, {	-- The Great Vault
 				["provider"] = { "n", 173350 },	-- Ba'vol
 				["coord"] = { 64.4, 35.8, ORIBOS },
