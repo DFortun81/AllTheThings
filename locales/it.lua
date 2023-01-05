@@ -3499,7 +3499,7 @@ for key,value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "La Gran Banca",	-- The Great Vault
 	[381045] = "Calice del Drago Dorato",	-- Golden Dragon Goblet
-	--TODO: [381069] = "Full Fishing Net",	-- Full Fishing Net
+	[381069] = "Rete da Pesca Piena",	-- Full Fishing Net	--TODO: this was manually translated
 	[381094] = "Spazzola Elegante",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
 	[381108] = "Mappa di Yennu",	-- Yennu's Map

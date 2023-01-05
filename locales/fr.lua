@@ -3553,7 +3553,7 @@ for key,value in pairs({
 	[381701] = "ON RECHERCHE : Mara’nar l’Orageux",	-- WANTED: Mara'nar the Thunderous
 	[381981] = "Coffre du déluge",	-- Chest of the Flood
 	[382029] = "Terre retournée",	-- Disturbed Dirt
-	--TODO: [382071] = "Full Fishing Net",	-- Full Fishing Net
+	[382071] = "Filet de pêche plein",	-- Full Fishing Net	--TODO: this was manually translated
 	[382166] = "Au Festin rubis !",	-- The Ruby Feast!
 	[382180] = "Banc de requins-renards magmatiques surchauffé",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements

@@ -3554,7 +3554,7 @@ for key,value in pairs({
 	[381701] = "현상 수배: 천둥의 마라나르",	-- WANTED: Mara'nar the Thunderous
 	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
 	[382029] = "흐트러진 흙",	-- Disturbed Dirt
-	--TODO: [382071] = "Full Fishing Net",	-- Full Fishing Net
+	[382071] = "완전한 낚시 그물",	-- Full Fishing Net	--TODO: this was manually translated
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
 	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements

@@ -3554,7 +3554,7 @@ for key,value in pairs({
 	[381701] = "PROCURA-SE: Mara'nar, o Trovejante",	-- WANTED: Mara'nar the Thunderous
 	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
 	[382029] = "Poeira Revolvida",	-- Disturbed Dirt
-	--TODO: [382071] = "Full Fishing Net",	-- Full Fishing Net
+	[382071] = "Rede de Pesca Cheia",	-- Full Fishing Net	--TODO: this was manually translated
 	[382166] = "Banquete Rubi!",	-- The Ruby Feast!
 	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
