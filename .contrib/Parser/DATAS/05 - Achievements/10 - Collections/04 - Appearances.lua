@@ -18,7 +18,15 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(11723),	-- Cruel Intentions (PvP Season 21 or 22)
 		ach(13385),	-- Daz'aling Attire
 		ach(17119, {	-- Deep Cuts From the Vault
-			i(202047),	-- Gleaming Incarnate Thunderstone
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				16353,	-- Mythic: Raszageth the Storm-Eater
+				16650,	-- Dragonflight Keystone Hero: Season One
+				15984,	-- Elite: Dragonflight Season 1
+			}},
+			["groups"] = {
+				i(202047),	-- Gleaming Incarnate Thunderstone
+			},
 		}),
 		ach(12993),	-- Don't Warfront Me
 		ach(11742),	-- Dress in Lairs (Blackwing Lair)
