@@ -7581,11 +7581,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72361),	--
 			q(72368),	--
 			q(72370),	--
-			q(72372),	--
+			q(72372),	-- Taming the Dragon...kin
 			q(72378),	--
 			q(72379),	--
 			-- 10.0.2.45969
-			q(72392),	--
+			q(72392),	-- Dragon Isles Supplies
 			q(72402),	--
 			q(72434),	--
 			q(72438),	-- Tarasek Intentions
