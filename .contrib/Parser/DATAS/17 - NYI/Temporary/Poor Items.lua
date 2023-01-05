@@ -18,7 +18,6 @@ local f = root("PoorQualityItems", {
 				i(143675),	-- Potentate's Threadbare Headdress
 				i(106306),	-- Scraggly Hat
 				i(90744),	-- Scruffy Cloth Hat
-				i(188725),	-- Singed Cloth Hood
 				i(62133),	-- Sodden Cloth Hat
 				i(121364),	-- Sunbleached Cowl
 				i(33438),	-- Thread-Bare Hat
@@ -41,7 +40,6 @@ local f = root("PoorQualityItems", {
 				i(121398),	-- Realm of Companions
 				i(106284),	-- Scraggly Cloth Shoulderpads
 				i(90767),	-- Scruffy Cloth Shoulderpads
-				i(188727),	-- Singed Cloth Mantle
 				i(62110),	-- Sodden Cloth Shoulderpads
 				i(121356),	-- Sunbleached Armice
 				i(33363),	-- Thread-Bare Cloth Shoulderpads
@@ -69,7 +67,6 @@ local f = root("PoorQualityItems", {
 				i(134061),	-- Prisoner's Shirt
 				i(106312),	-- Scraggly Cloth Vest
 				i(90768),	-- Scruffy Cloth Vest
-				i(188721),	-- Singed Cloth Vestments
 				i(62109),	-- Sodden Cloth Vest
 				i(121368),	-- Sunbleached Shirt
 				i(33364),	-- Thread-Bare Cloth Vest
@@ -96,7 +93,6 @@ local f = root("PoorQualityItems", {
 				i(62084),	-- Pockmarked Cloth Bracers
 				i(106290),	-- Scraggly Cloth Bracers
 				i(90759),	-- Scruffy Cloth Bracers
-				i(188720),	-- Singed Cloth Armbands
 				i(62118),	-- Sodden Cloth Bracers
 				i(121348),	-- Sunbleached Wristwraps
 				i(33360),	-- Thread-Bare Cloth Bracers
@@ -123,7 +119,6 @@ local f = root("PoorQualityItems", {
 				i(106304),	-- Scraggly Cloth Gloves
 				i(90760),	-- Scruffy Cloth Gloves
 				i(121400),	-- Shandris's Fingerless Gloves
-				i(188724),	-- Singed Cloth Grips
 				i(62117),	-- Sodden Cloth Gloves
 				i(121358),	-- Sunbleached Handwraps
 				i(33361),	-- Thread-Bare Cloth Gloves
@@ -150,7 +145,6 @@ local f = root("PoorQualityItems", {
 				i(62100),	-- Pockmarked Cloth Belt
 				i(106287),	-- Scraggly Cloth Belt
 				i(90757),	-- Scruffy Cloth Belt
-				i(188726),	-- Singed Cloth Cincture
 				i(62120),	-- Sodden Cloth Belt
 				i(121344),	-- Sunbleached Cord
 				i(33358),	-- Thread-Bare Cloth Belt
@@ -178,7 +172,6 @@ local f = root("PoorQualityItems", {
 				i(15794),	-- Ripped Ogre Loincloth
 				i(106296),	-- Scraggly Cloth Pants
 				i(90761),	-- Scruffy Cloth Pants
-				i(188723),	-- Singed Cloth Legwraps
 				i(62116),	-- Sodden Cloth Pants
 				i(121351),	-- Sunbleached Pants
 				i(33362),	-- Thread-Bare Cloth Pants
@@ -206,7 +199,6 @@ local f = root("PoorQualityItems", {
 				i(132154),	-- Sandankles
 				i(106314),	-- Scraggly Cloth Boots
 				i(90758),	-- Scruffy Cloth Boots
-				i(188722),	-- Singed Cloth Footpads
 				i(62119),	-- Sodden Cloth Boots
 				i(39205),	-- Sole-Less Boots
 				i(121372),	-- Sunbleached Sandals
@@ -229,7 +221,6 @@ local f = root("PoorQualityItems", {
 				i(25354),	-- Moldy Leather Helmet
 				i(90775),	-- Mudsoaked Leather Helmet
 				i(106345),	-- Overstretched Leather Helmet
-				i(188707),	-- Rotten Leather Guise
 				i(153075),	-- Ruined Krokul Hood
 				i(90742),	-- Shabby Leather Helmet
 				i(62135),	-- Singed Leather Helmet
@@ -252,7 +243,6 @@ local f = root("PoorQualityItems", {
 				i(106338),	-- Overstretched Leather Shoulderpads
 				i(1793),	-- Patched Leather Shoulderpads
 				i(1801),	-- Rawhide Shoulderpads
-				i(188709),	-- Rotten Leather Shoulderpads
 				i(153077),	-- Ruined Krokul Shoulders
 				i(143671),	-- Sagging Shoulderpads of the Merciless
 				i(90766),	-- Shabby Shoulderpads
@@ -276,7 +266,6 @@ local f = root("PoorQualityItems", {
 				i(1794),	-- Patched Leather Jerkin
 				i(1364),	-- Ragged Leather Vest
 				i(1802),	-- Rawhide Tunic
-				i(188710),	-- Rotten Leather Jerkin
 				i(153078),	-- Ruined Krokul Vest
 				i(21014),	-- Scraggy Leather Vest
 				i(90769),	-- Shabby Armor
@@ -304,7 +293,6 @@ local f = root("PoorQualityItems", {
 				i(121391),	-- Poison-Soaked Cuffs
 				i(1370),	-- Ragged Leather Bracers
 				i(1797),	-- Rawhide Bracers
-				i(188711),	-- Rotten Leather Bracers
 				i(153079),	-- Ruined Krokul Wristguards
 				i(21011),	-- Scraggy Leather Bracers
 				i(90763),	-- Shabby Bracers
@@ -331,7 +319,6 @@ local f = root("PoorQualityItems", {
 				i(1791),	-- Patched Leather Gloves
 				i(1368),	-- Ragged Leather Gloves
 				i(1799),	-- Rawhide Gloves
-				i(188706),	-- Rotten Leather Handwraps
 				i(153074),	-- Ruined Krokul Gloves
 				i(21012),	-- Scraggy Leather Gloves
 				i(90764),	-- Shabby Gloves
@@ -361,7 +348,6 @@ local f = root("PoorQualityItems", {
 				i(1369),	-- Ragged Leather Belt
 				i(1795),	-- Rawhide Belt
 				i(4982),	-- Ripped Prospector Belt
-				i(188704),	-- Rotten Leather Cinch
 				i(153072),	-- Ruined Krokul Belt
 				i(21009),	-- Scraggy Leather Belt
 				i(90770),	-- Shabby Belt
@@ -388,7 +374,6 @@ local f = root("PoorQualityItems", {
 				i(1792),	-- Patched Leather Pants
 				i(1366),	-- Ragged Leather Pants
 				i(1800),	-- Rawhide Pants
-				i(188708),	-- Rotten Leather Leggings
 				i(153076),	-- Ruined Krokul Pants
 				i(21013),	-- Scraggy Leather Pants
 				i(90765),	-- Shabby Pants
@@ -417,7 +402,6 @@ local f = root("PoorQualityItems", {
 				i(1788),	-- Patched Leather Boots
 				i(1367),	-- Ragged Leather Boots
 				i(1796),	-- Rawhide Boots
-				i(188705),	-- Rotten Leather Footwraps
 				i(153073),	-- Ruined Krokul Boots
 				i(21010),	-- Scraggy Leather Boots
 				i(90762),	-- Shabby Boots
@@ -450,7 +434,6 @@ local f = root("PoorQualityItems", {
 				i(121361),	-- Rust-Encrusted Coif
 				i(153104),	-- Soggy Mo'arg Eyepatch
 				i(62136),	-- Sooty Mail Circlet
-				i(188734),	-- Timeworn Chain Helm
 				i(121403),	-- Unintended Lightning Rod
 			}),
 			n(SHOULDER, {
@@ -474,7 +457,6 @@ local f = root("PoorQualityItems", {
 				i(106283),	-- Ripped Mail Shoulderpads
 				i(121354),	-- Rust-Encrusted Spaulders
 				i(62121),	-- Sooty Mail Shoulderpads
-				i(188729),	-- Timeworn Chain Spaulders
 			}),
 			n(CHEST, {
 				i(62097),	-- Clammy Mail Armor
@@ -500,7 +482,6 @@ local f = root("PoorQualityItems", {
 				i(121366),	-- Rust-Encrusted Hauberk
 				i(21016),	-- Shoddy Chain Vest
 				i(62132),	-- Sooty Mail Armor
-				i(188732),	-- Timeworn Chain Vest
 				i(1737),	-- Worn Mail Vest
 			}),
 			n(WRIST, {
@@ -527,7 +508,6 @@ local f = root("PoorQualityItems", {
 				i(121347),	-- Rust-Encrusted Wristguards
 				i(21019),	-- Shoddy Chain Bracers
 				i(62124),	-- Sooty Mail Bracers
-				i(188728),	-- Timeworn Chain Armguards
 				i(1732),	-- Worn Mail Bracers
 			}),
 			n(HANDS, {
@@ -553,7 +533,6 @@ local f = root("PoorQualityItems", {
 				i(121357),	-- Rust-Encrusted Gloves
 				i(21018),	-- Shoddy Chain Gloves
 				i(62123),	-- Sooty Mail Gloves
-				i(188733),	-- Timeworn Chain Gauntlets
 				i(1734),	-- Worn Mail Gloves
 			}),
 			n(WAIST, {
@@ -579,7 +558,6 @@ local f = root("PoorQualityItems", {
 				i(121342),	-- Rust-Encrusted Chain Belt
 				i(21015),	-- Shoddy Chain Belt
 				i(62131),	-- Sooty Mail Belt
-				i(188735),	-- Timeworn Chain Clasp
 				i(1730),	-- Worn Mail Belt
 			}),
 			n(LEGS, {
@@ -606,7 +584,6 @@ local f = root("PoorQualityItems", {
 				i(121350),	-- Rust-Encrusted Leggings
 				i(21017),	-- Shoddy Chain Pants
 				i(62122),	-- Sooty Mail Pants
-				i(188731),	-- Timeworn Chain Breeches
 				i(1735),	-- Worn Mail Pants
 			}),
 			n(FEET, {
@@ -633,7 +610,6 @@ local f = root("PoorQualityItems", {
 				i(21020),	-- Shoddy Chain Boots
 				i(62125),	-- Sooty Mail Boots
 				i(143670),	-- Thin-Soled Fiend Slayer Boots
-				i(188730),	-- Timeworn Chain Footguards
 				i(121413),	-- Two-Toed Warboots
 				i(1731),	-- Worn Mail Boots
 			}),
@@ -644,7 +620,6 @@ local f = root("PoorQualityItems", {
 				i(121404),	-- Badly Rolled Helmet
 				i(153084),	-- Bile-Scoured Helmet
 				i(62134),	-- Bleached Plate Helmet
-				i(188716),	-- Corroded Plate Faceguard
 				i(121405),	-- Damaged Berserker's Plate Helm
 				i(25394),	-- Deteriorating Plate Helmet
 				i(90743),	-- Dingy Plate Helmet
@@ -662,7 +637,6 @@ local f = root("PoorQualityItems", {
 				i(106298),	-- Acid Scarred Plate Shoulderpads
 				i(153082),	-- Bile-Scoured Pauldrons
 				i(62127),	-- Bleached Plate Shoulderpads
-				i(188714),	-- Corroded Plate Shoulderguards
 				i(25396),	-- Deteriorating Plate Shoulderpads
 				i(90750),	-- Dingy Plate Shoulderpads
 				i(33419),	-- Frost-Worn Plate Shoulderpads
@@ -679,7 +653,6 @@ local f = root("PoorQualityItems", {
 				i(106310),	-- Acid Scarred Plate Chestpiece
 				i(153086),	-- Bile-Scoured Breastplate
 				i(62126),	-- Bleached Plate Chestpiece
-				i(188718),	-- Corroded Plate Chestpiece
 				i(25392),	-- Deteriorating Plate Chestpiece
 				i(90751),	-- Dingy Plate Chestpiece
 				i(33415),	-- Frost-Worn Plate Chestpiece
@@ -697,7 +670,6 @@ local f = root("PoorQualityItems", {
 				i(106292),	-- Acid Scarred Plate Bracers
 				i(153080),	-- Bile-Scoured Vambraces
 				i(62128),	-- Bleached Plate Bracers
-				i(188712),	-- Corroded Plate Vambraces
 				i(25391),	-- Deteriorating Plate Bracers
 				i(90749),	-- Dingy Plate Bracers
 				i(132140),	-- Flame Scorched Bindings
@@ -716,7 +688,6 @@ local f = root("PoorQualityItems", {
 				i(106302),	-- Acid Scarred Plate Gloves
 				i(153085),	-- Bile-Scoured Gauntlets
 				i(62106),	-- Bleached Plate Gloves
-				i(188717),	-- Corroded Plate Gloves
 				i(25393),	-- Deteriorating Plate Gloves
 				i(90771),	-- Dingy Plate Gloves
 				i(33416),	-- Frost-Worn Plate Gloves
@@ -734,7 +705,6 @@ local f = root("PoorQualityItems", {
 				i(106285),	-- Acid Scarred Plate Belt
 				i(153087),	-- Bile-Scoured Belt
 				i(62130),	-- Bleached Plate Belt
-				i(188719),	-- Corroded Plate Greatbelt
 				i(25389),	-- Deteriorating Plate Belt
 				i(90747),	-- Dingy Plate Belt
 				i(33412),	-- Frost-Worn Plate Belt
@@ -751,7 +721,6 @@ local f = root("PoorQualityItems", {
 				i(106294),	-- Acid Scarred Plate Pants
 				i(153083),	-- Bile-Scoured Leggings
 				i(62105),	-- Bleached Plate Pants
-				i(188715),	-- Corroded Plate Legguards
 				i(143674),	-- Creaking Legplates of the Innocent
 				i(25395),	-- Deteriorating Plate Pants
 				i(90772),	-- Dingy Plate Pants
@@ -770,7 +739,6 @@ local f = root("PoorQualityItems", {
 				i(106300),	-- Acid Scarred Plate Boots
 				i(153081),	-- Bile-Scoured Stompers
 				i(62129),	-- Bleached Plate Boots
-				i(188713),	-- Corroded Plate Warboots
 				i(25390),	-- Deteriorating Plate Boots
 				i(90748),	-- Dingy Plate Boots
 				i(33413),	-- Frost-Worn Plate Boots
@@ -1814,5 +1782,132 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(177897),	-- Monster - Maldraxxus Warglaives - Covenant
 			}),
 		}),
+	}),
+	tier(DF_TIER, {
+		-- NYI Dragonflight Poor Items
+		n(ARMOR, {
+			filter(CLOTH, {
+				n(HEAD, {
+					i(192588),	-- 10.0 Poor Item Template - <Descriptor> Cloth Hood
+				}),
+				n(SHOULDER, {
+					i(192590),	-- 10.0 Poor Item Template - <Descriptor> Cloth Mantle
+				}),
+				n(CHEST, {
+					i(192584),	-- 10.0 Poor Item Template - <Descriptor> Cloth Vestments
+				}),
+				n(WRIST, {
+					i(192583),	-- 10.0 Poor Item Template - <Descriptor> Cloth Armbands
+				}),
+				n(HANDS, {
+					i(192587),	-- 10.0 Poor Item Template - <Descriptor> Cloth Grips
+				}),
+				n(WAIST, {
+					i(192589),	-- 10.0 Poor Item Template - <Descriptor> Cloth Cincture
+				}),
+				n(LEGS, {
+					i(192586),	-- 10.0 Poor Item Template - <Descriptor> Cloth Legwraps
+				}),
+				n(FEET, {
+					i(192585),	-- 10.0 Poor Item Template - <Descriptor> Cloth Footpads
+				}),
+			}),
+			filter(LEATHER, {
+				n(HEAD, {
+					i(192570),	-- 10.0 Poor Item Template - <Descriptor> Leather Guise
+				}),
+				n(SHOULDER, {
+					i(192572),	-- 10.0 Poor Item Template - <Descriptor> Leather Shoulderpads
+				}),
+				n(CHEST, {
+					i(192573),	-- 10.0 Poor Item Template - <Descriptor> Leather Jerkin
+				}),
+				n(WRIST, {
+					i(192574),	-- 10.0 Poor Item Template - <Descriptor> Leather Bracers
+				}),
+				n(HANDS, {
+					i(192569),	-- 10.0 Poor Item Template - <Descriptor> Leather Handwraps
+				}),
+				n(WAIST, {
+					i(192567),	-- 10.0 Poor Item Template - <Descriptor> Leather Cinch
+				}),
+				n(LEGS, {
+					i(192571),	-- 10.0 Poor Item Template - <Descriptor> Leather Leggings
+				}),
+				n(FEET, {
+					i(192568),	-- 10.0 Poor Item Template - <Descriptor> Leather Footwraps
+				}),
+			}),
+			filter(MAIL, {
+				n(HEAD, {
+					i(192597),	-- 10.0 Poor Item Template - <Descriptor> Chain Helm
+				}),
+				n(SHOULDER, {
+					i(192592),	-- 10.0 Poor Item Template - <Descriptor> Chain Spaulders
+				}),
+				n(CHEST, {
+					i(192595),	-- 10.0 Poor Item Template - <Descriptor> Chain Vest
+				}),
+				n(WRIST, {
+					i(192591),	-- 10.0 Poor Item Template - <Descriptor> Chain Armguards
+				}),
+				n(HANDS, {
+					i(192596),	-- 10.0 Poor Item Template - <Descriptor> Chain Gauntlets
+				}),
+				n(WAIST, {
+					i(192598),	-- 10.0 Poor Item Template - <Descriptor> Chain Clasp
+				}),
+				n(LEGS, {
+					i(192594),	-- 10.0 Poor Item Template - <Descriptor> Chain Breeches
+				}),
+				n(FEET, {
+					i(192593),	-- 10.0 Poor Item Template - <Descriptor> Chain Footguards
+				}),
+			}),
+			filter(PLATE, {
+				n(HEAD, {
+					i(192579),	-- 10.0 Poor Item Template - <Descriptor> Plate Faceguard
+				}),
+				n(SHOULDER, {
+					i(192577),	-- 10.0 Poor Item Template - <Descriptor> Plate Shoulderguards
+				}),
+				n(CHEST, {
+					i(192581),	-- 10.0 Poor Item Template - <Descriptor> Plate Chestpiece
+				}),
+				n(WRIST, {
+					i(192575),	-- 10.0 Poor Item Template - <Descriptor> Plate Vambraces
+				}),
+				n(HANDS, {
+					i(192580),	-- 10.0 Poor Item Template - <Descriptor> Plate Gloves
+				}),
+				n(WAIST, {
+					i(192582),	-- 10.0 Poor Item Template - <Descriptor> Plate Greatbelt
+				}),
+				n(LEGS, {
+					i(192578),	-- 10.0 Poor Item Template - <Descriptor> Plate Legguards
+				}),
+				n(FEET, {
+					i(192576),	-- 10.0 Poor Item Template - <Descriptor> Plate Warboots
+				}),
+			}),
+			filter(CLOAKS, {
+				i(192556),	-- 10.0.0 Armor Cloak - Cape_Cloth_Sindragosa_D_01
+			}),
+		}),
+		n(WEAPONS, {
+			filter(DAGGERS, {
+				i(201934),	-- Nokuhd Whittling Knife	-- removed/bugged/NYI?
+			}),
+			filter(FIST_WEAPONS, {
+				i(187518),	-- Monster - Fist Weapon, Main Hand, Invisible
+			}),
+			filter(MISC, {
+				i(189555),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Brown
+				i(189556),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Green
+				i(189557),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Gray
+				i(189558),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Dark
+				i(189559),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Light
+			}),
+		})
 	}),
 }));

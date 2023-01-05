@@ -868,50 +868,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198724),	-- Expedition Telescope (NYI)
 			i(198733),	-- Wayfinderr's Compass (NYI)
 		}),
-		n(SOURCELESS, {
-			-- Grey Darkal?
-			i(192556),	-- 10.0.0 Armor Cloak - Cape_Cloth_Sindragosa_D_01
-			i(192567),	-- 10.0 Poor Item Template - <Descriptor> Leather Cinch
-			i(192568),	-- 10.0 Poor Item Template - <Descriptor> Leather Footwraps
-			i(192569),	-- 10.0 Poor Item Template - <Descriptor> Leather Handwraps
-			i(192570),	-- 10.0 Poor Item Template - <Descriptor> Leather Guise
-			i(192571),	-- 10.0 Poor Item Template - <Descriptor> Leather Leggings
-			i(192572),	-- 10.0 Poor Item Template - <Descriptor> Leather Shoulderpads
-			i(192573),	-- 10.0 Poor Item Template - <Descriptor> Leather Jerkin
-			i(192574),	-- 10.0 Poor Item Template - <Descriptor> Leather Bracers
-			i(192575),	-- 10.0 Poor Item Template - <Descriptor> Plate Vambraces
-			i(192576),	-- 10.0 Poor Item Template - <Descriptor> Plate Warboots
-			i(192577),	-- 10.0 Poor Item Template - <Descriptor> Plate Shoulderguards
-			i(192578),	-- 10.0 Poor Item Template - <Descriptor> Plate Legguards
-			i(192579),	-- 10.0 Poor Item Template - <Descriptor> Plate Faceguard
-			i(192580),	-- 10.0 Poor Item Template - <Descriptor> Plate Gloves
-			i(192581),	-- 10.0 Poor Item Template - <Descriptor> Plate Chestpiece
-			i(192582),	-- 10.0 Poor Item Template - <Descriptor> Plate Greatbelt
-			i(192583),	-- 10.0 Poor Item Template - <Descriptor> Cloth Armbands
-			i(192584),	-- 10.0 Poor Item Template - <Descriptor> Cloth Vestments
-			i(192585),	-- 10.0 Poor Item Template - <Descriptor> Cloth Footpads
-			i(192586),	-- 10.0 Poor Item Template - <Descriptor> Cloth Legwraps
-			i(192587),	-- 10.0 Poor Item Template - <Descriptor> Cloth Grips
-			i(192588),	-- 10.0 Poor Item Template - <Descriptor> Cloth Hood
-			i(192589),	-- 10.0 Poor Item Template - <Descriptor> Cloth Cincture
-			i(192590),	-- 10.0 Poor Item Template - <Descriptor> Cloth Mantle
-			i(192591),	-- 10.0 Poor Item Template - <Descriptor> Chain Armguards
-			i(192592),	-- 10.0 Poor Item Template - <Descriptor> Chain Spaulders
-			i(192593),	-- 10.0 Poor Item Template - <Descriptor> Chain Footguards
-			i(192594),	-- 10.0 Poor Item Template - <Descriptor> Chain Breeches
-			i(192595),	-- 10.0 Poor Item Template - <Descriptor> Chain Vest
-			i(192596),	-- 10.0 Poor Item Template - <Descriptor> Chain Gauntlets
-			i(192597),	-- 10.0 Poor Item Template - <Descriptor> Chain Helm
-			i(192598),	-- 10.0 Poor Item Template - <Descriptor> Chain Clasp
-
-			i(189555),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Brown
-			i(189556),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Green
-			i(189557),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Gray
-			i(189558),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Dark
-			i(189559),	-- 10.0 Monster - Gnoll - Weapon - 2H Mace STR - Mace_2H_Gnoll_C_01 - Light
-
-			i(201934),	-- Nokuhd Whittling Knife
-		}),
 		n(PROFESSIONS, {
 			i(198483),	-- jrz 10.0 enchanting test [DNT]
 			i(198518),	-- Professor Instructaur's Top Secret Guide to Blacksmithing

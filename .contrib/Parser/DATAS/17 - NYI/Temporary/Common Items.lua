@@ -2116,4 +2116,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 	}),
+	tier(DF_TIER, {
+		-- NYI Dragonflight Common Items
+		n(WEAPONS, {
+			filter(TWO_HANDED_AXES, {
+				i(192112),	-- Reclaimer Pickaxe
+			}),
+			filter(POLEARMS, {
+				i(191068),	-- Mounted Gnoll Lance
+			}),
+		}),
+	}),
 }));
