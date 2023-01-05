@@ -3523,7 +3523,7 @@ for key,value in pairs({
 	[381216] = "Lupa de perito",	-- Surveyor's Magnifying Glass
 	[381223] = "Reloj de arena agrietado",	-- Cracked Hourglass
 	[381277] = "Barrica de dulces confiscados",	-- Barrel of Confiscated Treats
-	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
+	[381296] = "Desastre horrible",	-- Horrible Mess
 	[381297] = "Equipaje extraviado",	-- Misplaced Luggage
 	[381353] = "Diente de dragón pétreo",	-- Stone Dragontooth
 	[381354] = "Sortija de oro envuelta",	-- Wrapped Gold Band
@@ -3550,7 +3550,7 @@ for key,value in pairs({
 	[381664] = "Petición de los archivistas",	-- Archivists' Request
 	[381667] = "Petición de los archivistas",	-- Archivists' Request
 	[381668] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
-	[381669] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381669] = "Petición de los archivistas",	-- Archivists' Request
 	[381670] = "Petición de los archivistas",	-- Archivists' Request
 	[381671] = "Petición de los archivistas",	-- Archivists' Request
 	[381672] = "Petición de los archivistas",	-- Archivists' Request

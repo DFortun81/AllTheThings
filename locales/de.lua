@@ -3542,7 +3542,7 @@ for key,value in pairs({
 	[381650] = "Anfrage des Archivars",	-- Archivists' Request
 	[381653] = "Einschreibungen für Zahnflatterfeuer",	-- Fang Flap Fire Signups
 	[381661] = "Anfrage des Archivars",	-- Archivists' Request
-	[381662] = "Anfrage des Archivars",	-- Archivists' Request	--TODO: this was manually translated
+	[381662] = "Anfrage des Archivars",	-- Archivists' Request
 	[381663] = "Manastürmen für Anfänger",	-- Manastorming For Beginners
 	[381664] = "Anfrage des Archivars",	-- Archivists' Request
 	[381667] = "Anfrage des Archivars",	-- Archivists' Request
