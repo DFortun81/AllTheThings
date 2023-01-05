@@ -8,6 +8,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193168, {	-- Biryuk
 				["coord"] = { 72.5, 56.2, OHNAHRAN_PLAINS },
 				["questID"] = 73903,
+				["isDaily"] = true,
 			}),
 			n(193128, {	-- Blightpaw the Depraved
 				["description"] = "Speak to nearby NPC to spawn.",
@@ -37,6 +38,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(189652, {	-- Deadwaker Ghendish
 				["coord"] = { 30.8, 66.6, OHNAHRAN_PLAINS },
 				["questID"] = 73872,
+				["isDaily"] = true,
 				["g"] = {
 					i(189055),	-- Ghendish's Backup Talisman
 					i(200441),	-- Jhakan's Horned Cowl
@@ -237,6 +239,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193165, {	-- Sparkspitter Vrak
 				["coord"] = { 22.1, 38.8, OHNAHRAN_PLAINS },
 				["questID"] = 73896,
+				["isDaily"] = true,
 				["g"] = {
 					i(200297),	-- Hastily Cobbled Maul
 					i(200689),	-- Rimetalon Band
@@ -253,6 +256,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(191842, {	-- Sulfurion
 				["coord"] = { 78.3, 83.0, OHNAHRAN_PLAINS },
 				["questID"] = 73974,
+				["isDaily"] = true,
 				-- ["g"] = {
 
 				-- },
@@ -301,6 +305,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(192453, {	-- Vaniik the Stormtouched <Corrupted Child of Ohn'ahra>
 				["coord"] = { 82.0, 63.0, OHNAHRAN_PLAINS },
 				["questID"] = 73978,
+				["isDaily"] = true,
 				-- ["g"] = {
 
 				-- },
@@ -310,6 +315,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- TODO: add crs for kill npcs
 				["coord"] = { 84.2, 47.8, OHNAHRAN_PLAINS },
 				["questID"] = 73979,
+				["isDaily"] = true,
 				-- ["g"] = {
 
 				-- },
@@ -346,6 +352,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["description"] = "Use /hiss on 4 nearby Juvenile Wind Serpents to spawn.",
 				["coord"] = { 30.3, 62.1, OHNAHRAN_PLAINS },
 				["questID"] = 74091,
+				["isDaily"] = true,
 				["g"] = {
 					i(200215),	-- Plumed Shoulderguards of the Hunt
 				},

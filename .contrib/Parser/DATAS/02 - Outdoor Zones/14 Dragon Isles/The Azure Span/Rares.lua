@@ -3,7 +3,8 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_AZURE_SPAN, {
-		n(RARES, sharedData({["isDaily"] = true},{
+	--	n(RARES, sharedData({["isDaily"] = true},{
+		n(RARES, {
 			n(194270, {	-- Arcane Devourer
 				["coord"] = { 53.0, 35.6, THE_AZURE_SPAN },
 				["questID"] = 73866,
@@ -316,7 +317,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				-- },
 			}),
-		})),
+	--	})),
+		}),
 	}),
 })));
 
