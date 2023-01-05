@@ -3415,6 +3415,7 @@ for key,value in pairs({
 	[377534] = "Scrigno Consegnato",	-- Delivered Vault
 	[377899] = "Ostaggio dei Drospi Cornuti Nascosto",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
+	--TODO: [377938] = "Prismatic Leaper School",	-- Prismatic Leaper School
 	[378010] = "Tesoro dei Draghi Dimenticato",	-- Forgotten Dragon Treasure
 	[378054] = "Birra di Marea",	-- Riptide Brew
 	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
@@ -3422,6 +3423,7 @@ for key,value in pairs({
 	[379290] = "Statua Adornata",	-- Ornamented Statue
 	--TODO: [379296] = "Broken Banding",	-- Broken Banding
 	[379297] = "Melma Bum Bum",	-- Slam Bam Swill
+	[379314] = "Rete da Pesca Piena",	-- Full Fishing Net
 	[379321] = "Impronte di Zampe Misteriose",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
@@ -3497,6 +3499,7 @@ for key,value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "La Gran Banca",	-- The Great Vault
 	[381045] = "Calice del Drago Dorato",	-- Golden Dragon Goblet
+	--TODO: [381069] = "Full Fishing Net",	-- Full Fishing Net
 	[381094] = "Spazzola Elegante",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
 	[381108] = "Mappa di Yennu",	-- Yennu's Map
@@ -3543,11 +3546,14 @@ for key,value in pairs({
 	[381701] = "RICERCATO: Mara'nar il Tonante",	-- WANTED: Mara'nar the Thunderous
 	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
 	[382029] = "Terra Smossa",	-- Disturbed Dirt
+	[382071] = "Rete da Pesca Piena",	-- Full Fishing Net
 	[382166] = "Banchetto di Rubino!",	-- The Ruby Feast!
+	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	[382193] = "Cassa degli Elementi",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Cassa di Pescilume Freschi",	-- Case of Fresh Gleamfish
 	[384318] = "Segnalibro Incospicuo",	-- Inconspicuous Bookmark
+	[384370] = "Appunti Deliberatamente Negligenti",	-- Deliberately Delinquent Notes
 	[384405] = "Pesce Semibollito",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Uovo di Drago Pietrificato",	-- Petrified Dragon Egg

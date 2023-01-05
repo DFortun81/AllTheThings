@@ -3423,6 +3423,7 @@ for key,value in pairs({
 	[377534] = "Cofre Entregue",	-- Delivered Vault
 	[377899] = "Refém Zapo-de-chifre Escondido",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
+	--TODO: [377938] = "Prismatic Leaper School",	-- Prismatic Leaper School
 	[378010] = "Tesouro do Dragão Esquecido",	-- Forgotten Dragon Treasure
 	[378054] = "Cerveja Contracorrente",	-- Riptide Brew
 	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
@@ -3430,6 +3431,7 @@ for key,value in pairs({
 	[379290] = "Estátua Ornamentada",	-- Ornamented Statue
 	--TODO: [379296] = "Broken Banding",	-- Broken Banding
 	[379297] = "Gororoba de Bambu Batido",	-- Slam Bam Swill
+	[379314] = "Rede de Pesca Cheia",	-- Full Fishing Net
 	[379321] = "Pegada Misteriosa",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
@@ -3505,6 +3507,7 @@ for key,value in pairs({
 	[380991] = "Monturo de Terra",	-- Dirt Mound
 	[381035] = "O Grande Cofre",	-- The Great Vault
 	[381045] = "Cálice do Dragão Dourado",	-- Golden Dragon Goblet
+	[381069] = "Rede de Pesca Cheia",	-- Full Fishing Net
 	[381094] = "Pincel Elegante",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
 	[381108] = "Mapa de Yennu",	-- Yennu's Map
@@ -3551,11 +3554,14 @@ for key,value in pairs({
 	[381701] = "PROCURA-SE: Mara'nar, o Trovejante",	-- WANTED: Mara'nar the Thunderous
 	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
 	[382029] = "Poeira Revolvida",	-- Disturbed Dirt
+	--TODO: [382071] = "Full Fishing Net",	-- Full Fishing Net
 	[382166] = "Banquete Rubi!",	-- The Ruby Feast!
+	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Caixa de Peixe-brilho Fresco",	-- Case of Fresh Gleamfish
 	[384318] = "Marcador de Páginas Inconspícuo",	-- Inconspicuous Bookmark
+	--TODO: [384370] = "Deliberately Delinquent Notes",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Ovo de Dragão Petrificado",	-- Petrified Dragon Egg

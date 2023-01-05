@@ -3424,6 +3424,7 @@ for key,value in pairs({
 	[377534] = "Abgelieferter Tresor",	-- Delivered Vault
 	[377899] = "Versteckte Flunkergeisel",	-- Hidden Hornswog Hostage
 	[377900] = "Kriegsspeer der Nokhud",	-- Nokhud Warspear
+	[377938] = "Prismatischer Springerschwarm",	-- Prismatic Leaper School
 	[378010] = "Vergessener Drachenschatz",	-- Forgotten Dragon Treasure
 	[378054] = "Springflutbräu",	-- Riptide Brew
 	[378820] = "Sprudelpunsch",	-- Popfizz Punch
@@ -3431,6 +3432,7 @@ for key,value in pairs({
 	[379290] = "Verzierte Statue",	-- Ornamented Statue
 	[379296] = "Abgebrochene Leiste",	-- Broken Banding
 	[379297] = "Krach-Bumm-Gesöff",	-- Slam Bam Swill
+	[379314] = "Gefülltes Fischernetz",	-- Full Fishing Net
 	[379321] = "Mysteriöser Tatzenabdruck",	-- Mysterious Paw Print
 	[380429] = "Goldene Klaue",	-- Golden Claw
 	[380430] = "Schwanzfragment",	-- Tail Fragment
@@ -3506,6 +3508,7 @@ for key,value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "Die Große Schatzkammer",	-- The Great Vault
 	[381045] = "Goldener Drachenkelch",	-- Golden Dragon Goblet
+	[381069] = "Gefülltes Fischernetz",	-- Full Fishing Net
 	[381094] = "Eleganter Leinwandpinsel",	-- Elegant Canvas Brush
 	[381107] = "Sandhaufen",	-- Sand Pile
 	[381108] = "Yennus Karte",	-- Yennu's Map
@@ -3552,11 +3555,14 @@ for key,value in pairs({
 	[381701] = "GESUCHT: Mara'nar der Donnernde",	-- WANTED: Mara'nar the Thunderous
 	[381981] = "Truhe der Flut",	-- Chest of the Flood
 	[382029] = "Bewegte Erde",	-- Disturbed Dirt
+	[382071] = "Gefülltes Fischernetz",	-- Full Fishing Net
 	[382166] = "Das Rubinfestmahl!",	-- The Ruby Feast!
+	[382180] = "Überhitzter Magmadrescherschwarm",	-- Overheated Magma Thresher Pool
 	[382193] = "Truhe der Elemente",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Kiste mit frischem Leuchtfisch",	-- Case of Fresh Gleamfish
 	[384318] = "Unauffälliges Lesezeichen",	-- Inconspicuous Bookmark
+	[384370] = "Vorsätzlich schlampige Notizen",	-- Deliberately Delinquent Notes
 	[384405] = "Halbgarer Fisch",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Versteinertes Drachenei",	-- Petrified Dragon Egg

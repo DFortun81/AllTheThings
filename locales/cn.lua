@@ -3437,6 +3437,7 @@ for key, value in pairs({
 	--TODO: [377534] = "Delivered Vault",	-- Delivered Vault
 	[377899] = "隐藏的龙蛙人质",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
+	--TODO: [377938] = "Prismatic Leaper School",	-- Prismatic Leaper School
 	[378010] = "被遗忘的巨龙宝藏",	-- Forgotten Dragon Treasure
 	[378054] = "激流陈酿",	-- Riptide Brew
 	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
@@ -3444,6 +3445,7 @@ for key, value in pairs({
 	[379290] = "精美雕像",	-- Ornamented Statue
 	--TODO: [379296] = "Broken Banding",	-- Broken Banding
 	[379297] = "轰砰豪饮",	-- Slam Bam Swill
+	[379314] = "完整的渔网",	-- Full Fishing Net
 	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
@@ -3519,6 +3521,7 @@ for key, value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "宏伟宝库",	-- The Great Vault
 	[381045] = "金色巨龙高脚杯",	-- Golden Dragon Goblet
+	[381069] = "完整的渔网",	-- Full Fishing Net
 	[381094] = "优雅的画笔",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
 	[381108] = "耶努的地图",	-- Yennu's Map
@@ -3565,11 +3568,14 @@ for key, value in pairs({
 	[381701] = "通缉：雷鸣者玛拉纳尔",	-- WANTED: Mara'nar the Thunderous
 	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
 	[382029] = "翻动过的泥土",	-- Disturbed Dirt
+	[382071] = "完整的渔网",	-- Full Fishing Net
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
+	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "一箱新鲜的冰湖鱼",	-- Case of Fresh Gleamfish
 	--TODO: [384318] = "Inconspicuous Bookmark",	-- Inconspicuous Bookmark
+	[384370] = "故意拖欠票据",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	--TODO: [385021] = "Petrified Dragon Egg",	-- Petrified Dragon Egg
