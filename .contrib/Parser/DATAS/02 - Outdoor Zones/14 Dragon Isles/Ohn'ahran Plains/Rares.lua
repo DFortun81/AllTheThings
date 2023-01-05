@@ -3,8 +3,8 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
-		--n(RARES, sharedData({["isDaily"] = true},{
-		n(RARES, {
+		n(RARES, sharedData({["isDaily"] = true},{
+		--n(RARES, {
 			n(193168, {	-- Biryuk
 				["coord"] = { 72.5, 56.2, OHNAHRAN_PLAINS },
 				["questID"] = 73903,
@@ -357,7 +357,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200215),	-- Plumed Shoulderguards of the Hunt
 				},
 			}),
-		--})),
-		}),
+		})),
+		--}),
 	}),
 })));

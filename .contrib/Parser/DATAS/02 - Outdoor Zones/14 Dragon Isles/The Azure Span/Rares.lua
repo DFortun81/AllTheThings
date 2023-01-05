@@ -3,8 +3,8 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_AZURE_SPAN, {
-	--	n(RARES, sharedData({["isDaily"] = true},{
-		n(RARES, {
+		n(RARES, sharedData({["isDaily"] = true},{
+	--	n(RARES, {
 			n(194270, {	-- Arcane Devourer
 				["coord"] = { 53.0, 35.6, THE_AZURE_SPAN },
 				["questID"] = 73866,
@@ -121,7 +121,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193698, {	-- Frigidpelt Den Mother
-				["coord"] = { 64.7, 29.9, Frigidpelt Den Mother, THE_AZURE_SPAN },
+				["coord"] = { 64.7, 29.9, THE_AZURE_SPAN },
 				["questID"] = 73876,
 				-- ["g"] = {
 
@@ -183,6 +183,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73884,
 				["g"] = {
 					i(200283),	-- Gnoll-Gnawed Breeches
+					i(200266),	-- Gnollish Chewtoy Launcher
 				},
 			}),
 			n(193735, {	-- Moth'go Deeploom <Lunker>
@@ -296,8 +297,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(193196, {	-- Trilvarus Loreweaver
-				["description"] = "Collect Singing Fragments.",
-				["coord"] = { 70.2, 25.2, THE_AZURE_SPAN },
+				["description"] = "Collect a little blue crystal called Singing Fragment & bring it to the NPC to summon him.",
+				-- add npc crs
+				["coords"] = { 
+					{ 70.2, 25.2, THE_AZURE_SPAN },
+					{ 70.2, 26.2, THE_AZURE_SPAN },	-- Crystal Spot
+				},
 				["questID"] = 74087,
 				["g"] = {
 					i(200549),	-- Restored Titan Artifact
@@ -323,8 +328,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				-- },
 			}),
-	--	})),
-		}),
+		})),
+	--	}),
 	}),
 })));
 

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
-	--	n(RARES, sharedData({["isDaily"] = true},{
-		n(RARES, {
+		n(RARES, sharedData({["isDaily"] = true},{
+	--	n(RARES, {
 			n(193132, {	-- Amethyzar the Glittering
 				["coord"] = { 63.4, 54.8, THE_WAKING_SHORES },
 				["questID"] = 73981,
@@ -301,7 +301,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					-- is part of the DF>Global Rare Loottable
 				},
 			}),
-		--})),
-		}),
+		})),
+		--}),
 	}),
 })));
