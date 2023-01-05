@@ -8,6 +8,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(194270, {	-- Arcane Devourer
 				["coord"] = { 53.0, 35.6, THE_AZURE_SPAN },
 				["questID"] = 73866,
+				["isDaily"] = true,
 				-- ["g"] = {
 
 				-- },
@@ -64,6 +65,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(194392, {	-- Brackle
 				["coord"] = { 8.7, 48.6, THE_AZURE_SPAN },
 				["questID"] = 73871,
+				["isDaily"] = true,
 				["g"] = {
 					i(200448),	-- Abyssal Ward
 					i(200151),	-- Seamist Blade
@@ -82,6 +84,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193157, {	-- Dragonhunter Gorund
 				["coord"] = { 27.8, 45.8, THE_AZURE_SPAN },
 				["questID"] = 73873,
+				["isDaily"] = true,
 				["g"] = {
 					i(200302),	-- Magmaforged Scimitar
 					i(200169),	-- Protector's Molten Cudgel
@@ -118,7 +121,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193698, {	-- Frigidpelt Den Mother
-				["coord"] = { 64.8, 23.0, THE_AZURE_SPAN },
+				["coord"] = { 64.7, 29.9, Frigidpelt Den Mother, THE_AZURE_SPAN },
 				["questID"] = 73876,
 				-- ["g"] = {
 
@@ -153,6 +156,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193269, {	-- Grumbletrunk
 				["coord"] = { 19.3, 43.1, THE_AZURE_SPAN },
 				["questID"] = 74002,
+				["isDaily"] = true,
 				["g"] = {
 					i(200206),	-- Behemoth Slayer Greatbow
 				},
@@ -263,6 +267,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 55.0, 34.0, THE_AZURE_SPAN },
 				["cr"] = 193242,	-- Arcane Pedestal
 				["questID"] = 74082,
+				["isDaily"] = true,
 				["g"] = {
 					i(200211),	-- Snowman's Icy Gaze
 				},
@@ -313,6 +318,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193632, {	-- Wilrive
 				["coord"] = { 59.4, 55.2, THE_AZURE_SPAN },
 				["questID"] = 73900,
+				["isDaily"] = true,
 				-- ["g"] = {
 
 				-- },
