@@ -17,6 +17,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(12021),	-- Claws Out (PvP Season 23, 24, or 25)
 		ach(11723),	-- Cruel Intentions (PvP Season 21 or 22)
 		ach(13385),	-- Daz'aling Attire
+		ach(17119, {	-- Deep Cuts From the Vault
+			i(202047),	-- Gleaming Incarnate Thunderstone
+		}),
 		ach(12993),	-- Don't Warfront Me
 		ach(11742),	-- Dress in Lairs (Blackwing Lair)
 		ach(11718),	-- Dressed to Oppress (PvP Season 13)
@@ -76,3 +79,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(11759),	-- Yaass'shaarj (Siege of Orgrimmar)
 	}),
 }));
+root("HiddenQuestTriggers", {
+	q(72248),	-- triggers when using Gleaming Incarnate Thunderstone 202047
+});

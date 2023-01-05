@@ -970,8 +970,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		-- Use this in a Cost.. Must find the source
 		i(194690),	-- Horn o' Mead
-		-- Special Reward
-		i(202047),	-- Gleaming Incarnate Thunderstone
 		n(PROFESSIONS, {
 			prof(ALCHEMY, {
 				r(371635),	-- Demonstration Item Recipe
