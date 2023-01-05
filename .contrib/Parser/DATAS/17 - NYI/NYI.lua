@@ -748,7 +748,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200285),	-- Dragonscale Expedition Insignia
 			i(200287),	-- Iskaara Tuskarr Insignia
 			i(200288),	-- Maruuk Centaur Insignia
-			i(200289),	-- Valdrakken Accord Insignia
 			i(200218),	-- Charred Fishing Pole
 			i(200452),	-- Dragonscale Expedition Insignia
 			i(200453),	-- Iskaara Tuskarr Insignia

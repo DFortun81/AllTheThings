@@ -47,7 +47,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
-						i(193753),	-- Breastplate of Soaring Terror
 						i(193690),	-- Drake Hunter Shoulderpads
 						i(193694),	-- Drake Slayer's Greaves
 						i(193689),	-- Granyth's Enduring Scale
@@ -98,7 +97,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
-						i(193753),	-- Breastplate of Soaring Terror
 						i(193690),	-- Drake Hunter Shoulderpads
 						i(193694),	-- Drake Slayer's Greaves
 						i(193689),	-- Granyth's Enduring Scale
@@ -154,7 +152,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
-						i(193753),	-- Breastplate of Soaring Terror
 						i(193690),	-- Drake Hunter Shoulderpads
 						i(193694),	-- Drake Slayer's Greaves
 						i(193689),	-- Granyth's Enduring Scale

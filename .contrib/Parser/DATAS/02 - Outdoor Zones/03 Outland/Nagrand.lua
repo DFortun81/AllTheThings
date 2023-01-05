@@ -1222,7 +1222,6 @@ root("Zones", {
 						["qg"] = 22924,	-- Arthorn Windsong
 						["sourceQuest"] = 10988,	-- The Raven Stones
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-						["maps"] = { BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { "removed 4.0.1" },
 						["classes"] = { DRUID },
 						["cost"] = {

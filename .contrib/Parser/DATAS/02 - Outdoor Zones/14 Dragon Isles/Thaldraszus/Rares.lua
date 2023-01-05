@@ -211,7 +211,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193161, {	-- Woolfang
+				["description"] = "Pet a Wooly Lamb to spawn.",
 				["coord"] = { 47.9, 49.8, THALDRASZUS },
+				["crs"] = { 193156 },	-- Wooly Lamb
 				["questID"] = 74089,
 				["g"] = {
 					-- is part of the DF>Global Rare Loottable

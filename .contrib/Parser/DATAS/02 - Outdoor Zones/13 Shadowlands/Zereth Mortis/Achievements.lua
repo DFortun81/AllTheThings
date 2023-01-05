@@ -38,7 +38,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					["_npcs"] = { 183925 },	-- Tahkwitz
 				}),
 				crit(10, {
-					["_npcs"] = { 193234 },	-- Sorranos <Vombata Prime>
+					["_npcs"] = { 183722 },	-- Sorranos <Vombata Prime>
 				}),
 				crit(11, {
 					["_npcs"] = { 179043 },	-- Orixal <Gastropod Prime>
@@ -127,7 +127,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					["_npcs"] = { 183925 },	-- Tahkwitz
 				}),
 				crit(10, {
-					["_npcs"] = { 193234 },	-- Sorranos <Vombata Prime>
+					["_npcs"] = { 183722 },	-- Sorranos <Vombata Prime>
 				}),
 				crit(11, {
 					["_npcs"] = { 179043 },	-- Orixal <Gastropod Prime>

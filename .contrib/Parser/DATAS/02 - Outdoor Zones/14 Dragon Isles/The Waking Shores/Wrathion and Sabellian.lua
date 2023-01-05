@@ -110,9 +110,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["repeatable"] = true,
 					["g"] = {
 						i(201818, {	-- Twilight Strongbox
-							i(199215),	-- Worldbreaker Membership
-							i(202173),	-- Magmote
-							i(201815),	-- Cloak of Many Faces (TOY!)
+							["sym"] = {{"select","itemID",201817},{"pop"}},	-- Twilight Cache
+							["g"] = {
+								-- any loot from epic box which is only epic box
+							},
 						}),
 						i(201817, {	-- Twilight Cache
 							i(199215),	-- Worldbreaker Membership

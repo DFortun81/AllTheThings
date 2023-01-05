@@ -86,6 +86,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				i(200859),	-- Seasoned Hunter's Trophy
 				i(200563),	-- Primal Ritual-shell
 				i(200195),	-- Thunderscale Legguards
+					-- Insignias @ Max Renown
+				i(200289),	-- Valdrakken Accord Insignia
 			},
 		}),
 	}),

@@ -273,53 +273,61 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			n(SPECIAL, {
-				i(201296, {	-- Docile Airy Soul
+				i(200932, {	-- Encaged Airy Soul
 					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 					["cost"] = {
 						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
-					["g"] = {
-						i(193921),	-- Airy Soul
-						i(201262),	-- Gale Spirit (PET!)
-					},
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					["g"] = {
+						i(201296, {	-- Docile Airy Soul
+							i(193921),	-- Airy Soul
+							i(201262),	-- Gale Spirit (PET!)
+						}),
+					},
 				}),
-				i(201297, {	-- Docile Earthen Soul
+				i(200936, {	-- Encaged Earthen Soul
 					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 					["cost"] = {
 						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
-					["g"] = {
-						i(193920),	-- Earthen Soul
-						i(201260),	-- Dust Spirit (PET!)
-					},
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					["g"] = {
+						i(201297, {	-- Docile Earthen Soul
+							i(193920),	-- Earthen Soul
+							i(201260),	-- Dust Spirit (PET!)
+						}),
+					},
 				}),
-				i(201298, {	-- Docile Fiery Soul
+				i(200931, {	-- Encaged Firey Soul
 					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 					["cost"] = {
 						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
-					["g"] = {
-						i(193362),	-- Fiery Soul
-						i(201261),	-- Blaze Spirit (PET!)
-					},
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					["g"] = {
+						i(201298, {	-- Docile Fiery Soul
+							i(193362),	-- Fiery Soul
+							i(201261),	-- Blaze Spirit (PET!)
+						}),
+					},
 				}),
-				i(201299, {	-- Docile Frosty Soul
+				i(200934, {	-- Encaged Frosty Soul
 					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 					["cost"] = {
 						{ "i", 200938, 1 },	-- 1xEmpty Soul Cage
 						{ "i", 199414, 1 },	-- 1xZapthrottle Soul Inhaler
 					},
-					["g"] = {
-						i(193919),	-- Frosty Soul
-						i(201265),	-- Tide Spirit (PET!)
-					},
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					["g"] = {
+						i(201299, {	-- Docile Frosty Soul
+							i(193919),	-- Frosty Soul
+							i(201265),	-- Tide Spirit (PET!)
+						}),
+					},
 				}),
 			}),
 			petbattle(filter(BATTLE_PETS, {
@@ -475,6 +483,11 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 			})),
 			n(QUESTS, {
+				q(72686, {	-- Storm Surge
+					["provider"] = { "n", 196598 },	-- Rethelshi
+					["coord"] = { 38.2, 37, VALDRAKKEN },
+					["isWeekly"] = true,
+				}),
 				q(71242, {	-- Supporting the Storm Researchers
 					["provider"] = {"i",200675},	-- Elemental Overflow Cluster
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
@@ -483,21 +496,25 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
 					["provider"] = {"i",199749},	-- Primal Air Core
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					["isWeekly"] = true,
 				}),
 				q(70754, {	-- Extinguishing the Fire Primalists
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
 					["provider"] = {"i",199750},	-- Primal Fire Core
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					["isWeekly"] = true,
 				}),
 				q(70723, {	-- Shattering the Earth Primalists
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
 					["provider"] = {"i",199691},	-- Primal Earth Core
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					["isWeekly"] = true,
 				}),
 				q(70752, {	-- Vaporizing the Water Primalists
 					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
 					["provider"] = {"i",199748},	-- Primal Water Core
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					["isWeekly"] = true,
 				}),
 			}),
 			n(REWARDS, {

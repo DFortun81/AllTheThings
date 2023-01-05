@@ -49,6 +49,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["g"] = {
 						ach(16266),	-- Ruby Life Pools
 						i(193755),	-- Backdraft Cleaver
+						i(193753),	-- Breastplate of Soaring Terror
 						i(193751),	-- Crown of Roaring Storms
 						i(193754),	-- Drake Rider's Stecktarge
 						i(193752),	-- Galerattle Gauntlets
@@ -90,6 +91,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["g"] = {
 						ach(16267),	-- Heroic: Ruby Life Pools
 						i(193755),	-- Backdraft Cleaver
+						i(193753),	-- Breastplate of Soaring Terror
 						i(193751),	-- Crown of Roaring Storms
 						i(193754),	-- Drake Rider's Stecktarge
 						i(193752),	-- Galerattle Gauntlets
@@ -135,6 +137,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						ach(16268),	-- Mythic: Ruby Life Pools
 						ach(16440),	-- Are You My Broodmother?
 						i(193755),	-- Backdraft Cleaver
+						i(193753),	-- Breastplate of Soaring Terror
 						i(193751),	-- Crown of Roaring Storms
 						i(193754),	-- Drake Rider's Stecktarge
 						i(193752),	-- Galerattle Gauntlets
