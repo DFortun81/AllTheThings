@@ -500,6 +500,18 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198827),	-- Magical Snow Sled (TOY!)
 				},
 			}),
+				-- RENOWN 28 --
+			q(70961, {	-- Shouldering the Needed Armor
+				["minReputation"] = { 2511, 28 },	-- Iskaara Tuskarr Renown 28
+				["provider"] = { "n", 196016 },	-- Lontupit
+				["coord"] = { 14.0, 49.4, THE_AZURE_SPAN },
+				["g"] = {
+					i(199539),	-- Blue Tufted Shoulderpads
+					i(199540),	-- Green Tufted Shoulderpads
+					i(199541),	-- Grey Tufted Shoulderpads
+					i(199542),	-- Red Tufted Shoulderpads
+				},
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
@@ -520,5 +532,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72638),	-- Triggered with 'Arms for Every Arm'  (70971)
 		q(72639),	-- Triggered with 'Our Loyal, Lanky Steeds' (70972)
 		q(72281),	-- Triggered with 'Slacking and Sledding' (70976)
+		q(72641),	-- Triggered with 'Shouldering the Needed Armor' (70961)
 	}),
 }));

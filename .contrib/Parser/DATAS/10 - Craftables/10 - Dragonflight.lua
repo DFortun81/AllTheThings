@@ -2253,127 +2253,123 @@ root("HiddenQuestTriggers", {
 		}),
 		prof(FISHING, {
 		}),
+		--]]
 		prof(INSCRIPTION, {
-			-- Inscription Essentials
-			q(),	-- Dragon Isles Milling
-			q(),	-- Recraft Equipment
 			-- Inks
-			q(),	-- Blazing Ink
-			q(),	-- Burnished Ink
-			q(),	-- Cosmic Ink
-			q(),	-- Flourishing Ink
-			q(),	-- Serene Ink
+			q(71599),	-- Blazing Ink
+			q(71597),	-- Burnished Ink
+			q(71598),	-- Cosmic Ink
+			q(71600),	-- Flourishing Ink
+			q(71601),	-- Serene Ink
 			-- Reagents
-			q(),	-- Chilled Rune
-			q(),	-- Illustrious Insight
-			q(),	-- Runed Writhebark
+			q(71569),	-- Chilled Rune
+			-- q(),	-- Illustrious Insight
+			q(71570),	-- Runed Writhebark
 			-- Missives
-			q(),	-- Draconic Missive of the Aurora
-			q(),	-- Draconic Missive of the Feverflare
-			q(),	-- Draconic Missive of the Fireflash
-			q(),	-- Draconic Missive of the Harmonious
-			q(),	-- Draconic Missive of the Peerless
-			q(),	-- Draconic Missive of the Quickblade
+			q(71558),	-- Draconic Missive of the Aurora
+			q(71564),	-- Draconic Missive of the Feverflare
+			q(71565),	-- Draconic Missive of the Fireflash
+			q(71566),	-- Draconic Missive of the Harmonious
+			q(71567),	-- Draconic Missive of the Peerless
+			q(71568),	-- Draconic Missive of the Quickblade
 			-- Crafting Tool Missives
-			q(),	-- Draconic Missive of Crafting Speed
-			q(),	-- Draconic Missive of Inspiration
-			q(),	-- Draconic Missive of Multicraft
-			q(),	-- Draconic Missive of Resourcefulness
+			-- q(),	-- Draconic Missive of Crafting Speed
+			-- q(),	-- Draconic Missive of Inspiration
+			-- q(),	-- Draconic Missive of Multicraft
+			-- q(),	-- Draconic Missive of Resourcefulness
 			-- Gathering Tool Missives
-			q(),	-- Draconic Missive of Deftness
-			q(),	-- Draconic Missive of Finesse
-			q(),	-- Draconic Missive of Perception
+			-- q(),	-- Draconic Missive of Deftness
+			-- q(),	-- Draconic Missive of Finesse
+			-- q(),	-- Draconic Missive of Perception
 			-- Trinkets
-			q(),	-- Darkmoon Deck Box: Dance
-			q(),	-- Darkmoon Deck Box: Inferno
-			q(),	-- Darkmoon Deck Box: Rime
-			q(),	-- Darkmoon Deck Box: Watcher
+			-- q(),	-- Darkmoon Deck Box: Dance
+			-- q(),	-- Darkmoon Deck Box: Inferno
+			-- q(),	-- Darkmoon Deck Box: Rime
+			-- q(),	-- Darkmoon Deck Box: Watcher
 			-- Weapons
-			q(),	-- Core Explorer's Compendium
-			q(),	-- Cracking Codex of the Isles
-			q(),	-- Illuminating Pillar of the Isles
-			q(),	-- Kinetic Pillar of the Isles
-			q(),	-- Overseer's Writhebark Stave
-			q(),	-- Pioneer's Writhebark Stave
-			q(),	-- Weathered Explorer's Stave
+			q(71596),	-- Core Explorer's Compendium
+			-- q(),	-- Cracking Codex of the Isles
+			-- q(),	-- Illuminating Pillar of the Isles
+			-- q(),	-- Kinetic Pillar of the Isles
+			q(71518),	-- Overseer's Writhebark Stave
+			q(71517),	-- Pioneer's Writhebark Stave
+			-- q(),	-- Weathered Explorer's Stave
 			-- Runes and Sigil
-			q(),	-- Azurescale Sigil
-			q(),	-- Bronzescale Sigil
-			q(),	-- Buzzing Rune
-			q(),	-- Chirping Rune
-			q(),	-- Emberscale Sigil
-			q(),	-- Howling Rune
-			q(),	-- Jetscale Sigil
-			q(),	-- Sagescale Sigil
-			q(),	-- Vantus Rune: Vault of the Incarnates
+			-- q(),	-- Azurescale Sigil
+			-- q(),	-- Bronzescale Sigil
+			q(71555),	-- Buzzing Rune
+			q(71556),	-- Chirping Rune
+			-- q(),	-- Emberscale Sigil
+			q(71557),	-- Howling Rune
+			-- q(),	-- Jetscale Sigil
+			-- q(),	-- Sagescale Sigil
+			q(71594),	-- Vantus Rune: Vault of the Incarnates
 			-- Profession Equipment
-			q(),	-- Alchemist's Brilliant Mixing Rod
-			q(),	-- Alchemist's Sturdy Mixing Rod
-			q(),	-- Chef's Smooth Rolling Pin
-			q(),	-- Chef's Splendid Rolling Pin
-			q(),	-- Scribe's Fastened Quill
-			q(),	-- Scribe's Resplendent Quill
+			-- q(),	-- Alchemist's Brilliant Mixing Rod
+			q(71584),	-- Alchemist's Sturdy Mixing Rod
+			q(71586),	-- Chef's Smooth Rolling Pin
+			-- q(),	-- Chef's Splendid Rolling Pin
+			q(71588),	-- Scribe's Fastened Quill
+			-- q(),	-- Scribe's Resplendent Quill
 			-- Scrolls
-			q(),	-- Illusion Parchment: Aqua Torrent
-			q(),	-- Illusion Parchment: Arcane Burst
-			q(),	-- Illusion Parchment: Chilling Wind
-			q(),	-- Illusion Parchment: Love Charm
-			q(),	-- Illusion Parchment: Magma Missile
-			q(),	-- Illusion Parchment: Shadow Orb
-			q(),	-- Illusion Parchment: Spell Shield
-			q(),	-- Illusion Parchment: Whirling Breeze
-			q(),	-- Scroll of Sales
+			-- q(),	-- Illusion Parchment: Aqua Torrent
+			-- q(),	-- Illusion Parchment: Arcane Burst
+			-- q(),	-- Illusion Parchment: Chilling Wind
+			-- q(),	-- Illusion Parchment: Love Charm
+			-- q(),	-- Illusion Parchment: Magma Missile
+			-- q(),	-- Illusion Parchment: Shadow Orb
+			q(71552),	-- Illusion Parchment: Spell Shield
+			-- q(),	-- Illusion Parchment: Whirling Breeze
+			-- q(),	-- Scroll of Sales
 			-- Mysteries
-			q(),	-- Blazing Fortune
-			q(),	-- Bundle O' Cards: Dragon Isles
-			q(),	-- Extraction: Awakened Air
-			q(),	-- Extraction: Awakened Earth
-			q(),	-- Extraction: Awakened Fire
-			q(),	-- Extraction: Awakened Frost
-			q(),	-- Flourishing Fortune
-			q(),	-- Setene Fortune
+			q(71554),	-- Blazing Fortune / Flourishing Fortune / Setene Fortune
+			-- q(),	-- Bundle O' Cards: Dragon Isles
+			-- q(),	-- Extraction: Awakened Air
+			-- q(),	-- Extraction: Awakened Earth
+			-- q(),	-- Extraction: Awakened Fire
+			-- q(),	-- Extraction: Awakened Frost
 			-- Contracts
-			q(),	-- Contract: Artisan's Consortium
-			q(),	-- Contract: Dragonscale Expedition
-			q(),	-- Contract: Iskaara Tuskarr
-			q(),	-- Contract: Maruuk Centaur
-			q(),	-- Contract: Valdrakken Accord
+			-- q(),	-- Contract: Artisan's Consortium
+			-- q(),	-- Contract: Dragonscale Expedition
+			-- q(),	-- Contract: Iskaara Tuskarr
+			-- q(),	-- Contract: Maruuk Centaur
+			-- q(),	-- Contract: Valdrakken Accord
 			-- Profession Specialization
-			q(),	-- Draconic Treatise on Alchemy
-			q(),	-- Draconic Treatise on Blacksmithing
-			q(),	-- Draconic Treatise on Enchanting
-			q(),	-- Draconic Treatise on Engineering
-			q(),	-- Draconic Treatise on Herbalism
-			q(),	-- Draconic Treatise on Inscription
-			q(),	-- Draconic Treatise on Jewelcrafting
-			q(),	-- Draconic Treatise on Leatherworking
-			q(),	-- Draconic Treatise on Mining
-			q(),	-- Draconic Treatise on Skinning
-			q(),	-- Draconic Treatise on Tailoring
+			-- q(),	-- Draconic Treatise on Alchemy
+			-- q(),	-- Draconic Treatise on Blacksmithing
+			-- q(),	-- Draconic Treatise on Enchanting
+			-- q(),	-- Draconic Treatise on Engineering
+			-- q(),	-- Draconic Treatise on Herbalism
+			-- q(),	-- Draconic Treatise on Inscription
+			-- q(),	-- Draconic Treatise on Jewelcrafting
+			-- q(),	-- Draconic Treatise on Leatherworking
+			-- q(),	-- Draconic Treatise on Mining
+			-- q(),	-- Draconic Treatise on Skinning
+			-- q(),	-- Draconic Treatise on Tailoring
 			-- Dragonriding - Renewed Proto-Drake
-			q(),	-- Renewed Proto-Drake: Bovine Horns
-			q(),	-- Renewed Proto-Drake: Predator Pattern
-			q(),	-- Renewed Proto-Drake: Silver and Blue Armor
-			q(),	-- Renewed Proto-Drake: Spined Crest
-			q(),	-- Renewed Proto-Drake: Steel and Yellow Armor
+			-- q(),	-- Renewed Proto-Drake: Bovine Horns
+			-- q(),	-- Renewed Proto-Drake: Predator Pattern
+			-- q(),	-- Renewed Proto-Drake: Silver and Blue Armor
+			-- q(),	-- Renewed Proto-Drake: Spined Crest
+			-- q(),	-- Renewed Proto-Drake: Steel and Yellow Armor
 			-- Dragonriding - Windborne Velocidrake
-			q(),	-- Windborne Velocidrake: Black Fur
-			q(),	-- Windborne Velocidrake: Silver and Blue Armor
-			q(),	-- Windborne Velocidrake: Spined Head
-			q(),	-- Windborne Velocidrake: Steel and Orange Armor
-			q(),	-- Windborne Velocidrake: Windswept Pattern
+			-- q(),	-- Windborne Velocidrake: Black Fur
+			-- q(),	-- Windborne Velocidrake: Silver and Blue Armor
+			-- q(),	-- Windborne Velocidrake: Spined Head
+			-- q(),	-- Windborne Velocidrake: Steel and Orange Armor
+			-- q(),	-- Windborne Velocidrake: Windswept Pattern
 			-- Dragonriding - Highland Drake
-			q(),	-- Highland Drake: Black Hair
-			q(),	-- Highland Drake: Silver and Blue Armor
-			q(),	-- Highland Drake: Spined Crest
-			q(),	-- Highland Drake: Spined Throat
-			q(),	-- Highland Drake: Steel and Yellow Armor
+			-- q(),	-- Highland Drake: Black Hair
+			-- q(),	-- Highland Drake: Silver and Blue Armor
+			-- q(),	-- Highland Drake: Spined Crest
+			-- q(),	-- Highland Drake: Spined Throat
+			-- q(),	-- Highland Drake: Steel and Yellow Armor
 			-- Dragonriding - Cliffside Wylderdrake
-			q(),	-- Cliffside Wylderdrake: Conical Head
-			q(),	-- Cliffside Wylderdrake: Red Hair
-			q(),	-- Cliffside Wylderdrake: Silver and Blue Armor
-			q(),	-- Cliffside Wylderdrake: Steel and Yellow Armor
-			q(),	-- Cliffside Wylderdrake: Triple Head Horns
+			-- q(),	-- Cliffside Wylderdrake: Conical Head
+			-- q(),	-- Cliffside Wylderdrake: Red Hair
+			-- q(),	-- Cliffside Wylderdrake: Silver and Blue Armor
+			-- q(),	-- Cliffside Wylderdrake: Steel and Yellow Armor
+			-- q(),	-- Cliffside Wylderdrake: Triple Head Horns
 		}),
 		--]]
 		prof(JEWELCRAFTING, {
