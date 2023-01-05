@@ -164,6 +164,39 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 66221 },	-- Moving On
 				}),
 			}),
+			ach(16621, {    -- One of Everything, Please
+				crit(1, {    -- Picante Pomfruit Cake
+					["provider"] = { "i", 200904 },
+					["coord"] = { 60.92, 11.0, VALDRAKKEN },
+				}),
+				crit(2, {    -- Icecrown Bleu
+					["provider"] = { "i", 201045 },
+					["coord"] = { 29.0, 65.0, VALDRAKKEN },
+				}),
+				crit(3, {    -- Dreamwarding Dripbrew
+					["provider"] = { "i", 201046 },
+					["coord"] = { 50.1, 42.6, THALDRASZUS },
+				}),
+				crit(4, {    -- Arcanostablilized Provisions
+					["provider"] = { "i", 201047 },
+					["coord"] = { 61.6, 53.1, 2085 },
+				}),
+				crit(5, {    -- Steamed Scarab Steak
+					["provider"] = { "i", 200871 },
+					["coord"] = { 38.9, 46.3, THALDRASZUS },
+				}),
+				crit(6, {    -- Craft Creche Crowler
+					["provider"] = { "i", 201089 },
+					["coords"] = {
+						{ 58.1, 83.0, THALDRASZUS },
+						{ 47.1, 82.9, THE_WAKING_SHORES },
+					},
+				}),
+				crit(7, {    -- Blood Sausages
+					["provider"] = { "i", 201090 },
+					["coord"] = { 52.4, 69.8, THALDRASZUS },
+				}),
+            }),
 			ach(16398, {	-- Sojourner of Thaldraszus
 				crit(1, {	-- Gelikyr Overlook
 					["sourceQuests"] = { 66472 },	-- Primal List
