@@ -3406,7 +3406,7 @@ for key,value in pairs({
 	[376175] = "Baú de Suprimentos de Velaplena",	-- Fullsails Supply Chest
 	--TODO: [376213] = "Mysterious Wand",	-- Mysterious Wand
 	[376386] = "Poeira Revolvida",	-- Disturbed Dirt
-	--TODO: [376426] = "Magic-Bound Chest",	-- Magic-Bound Chest
+	[376426] = "Baú Trancado com Magia",	-- Magic-Bound Chest
 	[376451] = "Cronômetro de Bronze",	-- Bronze Stopwatch
 	[376580] = "Baú de Djaradin",	-- Djaradin Cache
 	[376581] = "Baú de Clã",	-- Clan Chest
@@ -3541,7 +3541,7 @@ for key,value in pairs({
 	[381650] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Inscrições Fogo, Asa, Presa",	-- Fang Flap Fire Signups
 	[381661] = "Pedido dos Arquivistas",	-- Archivists' Request
-	[381662] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381662] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381663] = "Manavento para Iniciantes",	-- Manastorming For Beginners
 	[381664] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381667] = "Pedido dos Arquivistas",	-- Archivists' Request
@@ -3552,7 +3552,7 @@ for key,value in pairs({
 	[381672] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381687] = "Nota Descartada",	-- Discarded Note
 	[381701] = "PROCURA-SE: Mara'nar, o Trovejante",	-- WANTED: Mara'nar the Thunderous
-	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
+	[381981] = "Baú da Inundação",	-- Chest of the Flood
 	[382029] = "Poeira Revolvida",	-- Disturbed Dirt
 	[382071] = "Rede de Pesca Cheia",	-- Full Fishing Net	--TODO: this was manually translated
 	[382166] = "Banquete Rubi!",	-- The Ruby Feast!
