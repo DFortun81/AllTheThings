@@ -3423,6 +3423,7 @@ for key,value in pairs({
 	[377534] = "전달된 금고",	-- Delivered Vault
 	[377899] = "숨겨진 용뿔두꺼비 인질",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
+	[377938] = "오색 도약꾼 떼",	-- Prismatic Leaper School
 	[378010] = "잊힌 용의 보물",	-- Forgotten Dragon Treasure
 	[378054] = "성난 해일 맥주",	-- Riptide Brew
 	[378820] = "팝피즈 음료",	-- Popfizz Punch
@@ -3430,6 +3431,7 @@ for key,value in pairs({
 	[379290] = "장식된 조각상",	-- Ornamented Statue
 	--TODO: [379296] = "Broken Banding",	-- Broken Banding
 	[379297] = "극통 꿀꺽주",	-- Slam Bam Swill
+	[379314] = "완전한 낚시 그물",	-- Full Fishing Net
 	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
@@ -3505,6 +3507,7 @@ for key,value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "위대한 금고",	-- The Great Vault
 	[381045] = "황금 용 술잔",	-- Golden Dragon Goblet
+	[381069] = "완전한 낚시 그물",	-- Full Fishing Net
 	--TODO: [381094] = "Elegant Canvas Brush",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
 	[381108] = "옌누의 지도",	-- Yennu's Map
@@ -3551,11 +3554,14 @@ for key,value in pairs({
 	[381701] = "현상 수배: 천둥의 마라나르",	-- WANTED: Mara'nar the Thunderous
 	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
 	[382029] = "흐트러진 흙",	-- Disturbed Dirt
+	[382071] = "완전한 낚시 그물",	-- Full Fishing Net	--TODO: this was manually translated
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
+	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "신선한 미명어 보관함",	-- Case of Fresh Gleamfish
 	[384318] = "눈에 띄지 않는 서표",	-- Inconspicuous Bookmark
+	[384370] = "섬세한 방황의 기록",	-- Deliberately Delinquent Notes
 	[384405] = "반쯤 삶은 생선",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "석화된 용의 알",	-- Petrified Dragon Egg

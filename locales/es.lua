@@ -3427,6 +3427,7 @@ for key,value in pairs({
 	[377534] = "Cofre entregado",	-- Delivered Vault
 	[377899] = "Rehén oculto de los cornisapos",	-- Hidden Hornswog Hostage
 	[377900] = "Lanza de guerra Nokhud",	-- Nokhud Warspear
+	[377938] = "Banco de saltadores prismáticos",	-- Prismatic Leaper School
 	[378010] = "Tesoro de dragón olvidado",	-- Forgotten Dragon Treasure
 	[378054] = "Bebida de mareaviva",	-- Riptide Brew
 	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
@@ -3434,6 +3435,7 @@ for key,value in pairs({
 	[379290] = "Estatua adornada",	-- Ornamented Statue
 	[379296] = "Banda rota",	-- Broken Banding
 	[379297] = "Al centro y pa' dentro",	-- Slam Bam Swill
+	[379314] = "Red de pesca llena",	-- Full Fishing Net
 	[379321] = "Huella de zarpa misteriosa",	-- Mysterious Paw Print
 	[380429] = "Zarpa dorada",	-- Golden Claw
 	[380430] = "Trozo de cola",	-- Tail Fragment
@@ -3509,6 +3511,7 @@ for key,value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "La gran cámara",	-- The Great Vault
 	[381045] = "Cáliz dracónico dorado",	-- Golden Dragon Goblet
+	[381069] = "Red de pesca llena",	-- Full Fishing Net
 	[381094] = "Pincel de lienzo elegante",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
 	[381108] = "Mapa de Yennu",	-- Yennu's Map
@@ -3555,11 +3558,14 @@ for key,value in pairs({
 	[381701] = "SE BUSCA: Mara'nar el Atronador",	-- WANTED: Mara'nar the Thunderous
 	[381981] = "Cofre de la inundación",	-- Chest of the Flood
 	[382029] = "Tierra revuelta",	-- Disturbed Dirt
+	[382071] = "Red de pesca llena",	-- Full Fishing Net
 	[382166] = "¡El Festín Rubí!",	-- The Ruby Feast!
+	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	[382193] = "Cofre de los elementos",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Caja de brillopeces frescos",	-- Case of Fresh Gleamfish
 	[384318] = "Marcapáginas discreto",	-- Inconspicuous Bookmark
+	[384370] = "Notas deliberadamente descuidadas",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Huevo de dragón petrificado",	-- Petrified Dragon Egg

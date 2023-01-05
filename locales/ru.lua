@@ -3414,6 +3414,7 @@ for key,value in pairs({
 	[377534] = "Доставленный сундук",	-- Delivered Vault
 	[377899] = "Скрытый заложник рогоплава",	-- Hidden Hornswog Hostage
 	[377900] = "Боевое копье клана Нокхуд",	-- Nokhud Warspear
+	[377938] = "Косяк призматического прыгуна",	-- Prismatic Leaper School
 	[378010] = "Забытое сокровище драконов",	-- Forgotten Dragon Treasure
 	[378054] = "Отвар быстрины",	-- Riptide Brew
 	[378820] = "Искрометный пунш",	-- Popfizz Punch
@@ -3421,6 +3422,7 @@ for key,value in pairs({
 	[379290] = "Украшенная узорами статуя",	-- Ornamented Statue
 	[379296] = "Сломанная окантовка",	-- Broken Banding
 	[379297] = "Пойло \"Бадабум\"",	-- Slam Bam Swill
+	[379314] = "Полная сеть",	-- Full Fishing Net
 	[379321] = "Таинственный след лапы",	-- Mysterious Paw Print
 	[380429] = "Золотой коготь",	-- Golden Claw
 	[380430] = "Фрагмент хвоста",	-- Tail Fragment
@@ -3496,6 +3498,7 @@ for key,value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "Великое хранилище",	-- The Great Vault
 	[381045] = "Золотой драконий кубок",	-- Golden Dragon Goblet
+	[381069] = "Полная сеть",	-- Full Fishing Net
 	[381094] = "Элегантная кисть",	-- Elegant Canvas Brush
 	[381107] = "Кучка песка",	-- Sand Pile
 	[381108] = "Карта Йенну",	-- Yennu's Map
@@ -3542,11 +3545,14 @@ for key,value in pairs({
 	[381701] = "Разыскивается: Мара'нар Громогласный",	-- WANTED: Mara'nar the Thunderous
 	[381981] = "Сундук Прилива",	-- Chest of the Flood
 	[382029] = "Потревоженная почва",	-- Disturbed Dirt
+	[382071] = "Полная сеть",	-- Full Fishing Net
 	[382166] = "Рубиновый Пир!",	-- The Ruby Feast!
+	[382180] = "Перегретый пруд лавазубов",	-- Overheated Magma Thresher Pool
 	[382193] = "Сундук стихий",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Ящик свежих блескорыбок",	-- Case of Fresh Gleamfish
 	[384318] = "Непримечательная закладка",	-- Inconspicuous Bookmark
+	[384370] = "Нарочито непристойные записи",	-- Deliberately Delinquent Notes
 	[384405] = "Наполовину сваренная рыба",	-- Half-Boiled Fish
 	[385001] = "Пустой бочонок для рыбы",	-- Empty Fish Barrel
 	[385021] = "Окаменевшее яйцо дракона",	-- Petrified Dragon Egg

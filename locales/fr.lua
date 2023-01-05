@@ -3422,6 +3422,7 @@ for key,value in pairs({
 	[377534] = "Coffre-fort livré",	-- Delivered Vault
 	[377899] = "Otage bufflacien caché",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
+	[377938] = "Banc de bondisseurs prismatiques",	-- Prismatic Leaper School
 	[378010] = "Trésor draconique oublié",	-- Forgotten Dragon Treasure
 	[378054] = "Bière des baïnes",	-- Riptide Brew
 	[378820] = "Punch moussboum",	-- Popfizz Punch
@@ -3429,6 +3430,7 @@ for key,value in pairs({
 	[379290] = "Statue ornementale",	-- Ornamented Statue
 	[379296] = "Bande brisée",	-- Broken Banding
 	[379297] = "Piquette bam-boum",	-- Slam Bam Swill
+	[379314] = "Filet de pêche plein",	-- Full Fishing Net
 	[379321] = "Trace de patte mystérieuse",	-- Mysterious Paw Print
 	[380429] = "Griffe d’or",	-- Golden Claw
 	[380430] = "Fragment de queue",	-- Tail Fragment
@@ -3504,6 +3506,7 @@ for key,value in pairs({
 	[380991] = "Tas de terre",	-- Dirt Mound
 	[381035] = "Grande chambre forte",	-- The Great Vault
 	[381045] = "Gobelet draconique en or",	-- Golden Dragon Goblet
+	[381069] = "Filet de pêche plein",	-- Full Fishing Net
 	[381094] = "Pinceau d’artiste élégant",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
 	[381108] = "Carte de Yennu",	-- Yennu's Map
@@ -3550,11 +3553,14 @@ for key,value in pairs({
 	[381701] = "ON RECHERCHE : Mara’nar l’Orageux",	-- WANTED: Mara'nar the Thunderous
 	[381981] = "Coffre du déluge",	-- Chest of the Flood
 	[382029] = "Terre retournée",	-- Disturbed Dirt
+	[382071] = "Filet de pêche plein",	-- Full Fishing Net	--TODO: this was manually translated
 	[382166] = "Au Festin rubis !",	-- The Ruby Feast!
+	[382180] = "Banc de requins-renards magmatiques surchauffé",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Caisse de loupiotes fraîches",	-- Case of Fresh Gleamfish
 	[384318] = "Marque-page discret",	-- Inconspicuous Bookmark
+	[384370] = "Notes délibérément en souffrance",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Œuf de Dragon pétrifié",	-- Petrified Dragon Egg
