@@ -98,7 +98,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(70501, {	-- License to Hunt
 				["minReputation"] = { 2503, 5 },	-- Maruuk Centaur Renown 5
-				["sourceQuests"] = { 71231 },	-- Call of the Hunt
+				-- ["sourceQuests"] = {  },	--
 				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 			}),

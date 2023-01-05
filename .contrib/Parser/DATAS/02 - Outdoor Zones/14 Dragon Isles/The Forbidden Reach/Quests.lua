@@ -6,9 +6,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 15325, {	-- Dracthyr, Awaken
 				-- Chapter 1 --
-				q(64864, {	-- Awaken, Dracthyr
-					["maps"] = { 2109 },
-				}),
+				q(64864),	-- Awaken, Dracthyr
 				q(64863, {	-- Arcane Guardians
 					["sourceQuests"] = { 64864 },	-- Awaken, Dracthyr
 					["provider"] = { "n", 181596 },	-- Dervishian

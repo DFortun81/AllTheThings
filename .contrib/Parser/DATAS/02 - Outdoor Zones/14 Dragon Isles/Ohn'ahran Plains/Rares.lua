@@ -3,12 +3,14 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
-		n(RARES, {
+		n(RARES, sharedData({["isDaily"] = true},{
 			n(193168, {	-- Biryuk
 				["coord"] = { 72.5, 56.2, OHNAHRAN_PLAINS },
 				["questID"] = 73903,
 			}),
 			n(193128, {	-- Blightpaw the Depraved
+				["description"] = "Speak to nearby NPC to spawn.",
+				["cr"] = 193222,	-- Archaeologist Koranir
 				["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
 				["questID"] = 74096,
 				["g"] = {
@@ -88,6 +90,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(200434),	-- Anund's Mana-Singed Amice
 					i(200446),	-- Crystalized Sigil
+					i(197106),	-- Highland Drake: Finned Head (DM!)
 				},
 			}),
 			n(195409, {	-- Makhra the Ashtouched <Corrupted Child of Ohn'ahra>
@@ -142,6 +145,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193669, {	-- Prozela Galeshot
 				["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
 				["questID"] = 71240, -- also 72815 ?
+				["isDaily"] = false,
 				["g"] = {
 					i(200292),	-- Cragforge Pauldrons
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
@@ -172,6 +176,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193153, {	-- Ripsaw the Stalker
 				["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
 				["questID"] = 72845,
+				["isDaily"] = false,
 				["g"] = {
 					i(200137),	-- Chitin Dreadbringer
 				},
@@ -197,9 +202,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193188, {	-- Seeker Teryx
-				["coord"] = { 62.7, 12.8, OHNAHRAN_PLAINS },
+				["coord"] = { 61.0, 13.6, OHNAHRAN_PLAINS },
 				["questID"] = 73894,
 				["g"] = {
+					i(196970),	-- Cliffside Wylderdrake: Spiked Back (DM!)
 					i(200154),	-- Rubyscale Band
 					i(200875),	-- Seeker's Bands
 				},
@@ -219,6 +225,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(192949, {	-- Skaara
 				["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
 				["questID"] = 72847,
+				["isDaily"] = false,
 			}),
 			n(193165, {	-- Sparkspitter Vrak
 				["coord"] = { 22.1, 38.8, OHNAHRAN_PLAINS },
@@ -246,6 +253,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193133, {	-- Sunscale Behemoth
 				["coord"] = { 63.2, 48.6, OHNAHRAN_PLAINS },
 				["questID"] = 72849,
+				["isDaily"] = false,
 				["g"] = {
 					i(198409),	-- Personal Shell (TOY!)
 				},
@@ -253,6 +261,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193163, {	-- Territorial Coastling
 				["coord"] = { 22.7, 67.6, OHNAHRAN_PLAINS },
 				["questID"] = 72851,
+				["isDaily"] = false,
 				["g"] = {
 					i(200212),	-- Sand-Encrusted Graves
 				},
@@ -274,6 +283,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(191354, {	-- Ty'foon the Ascended
 				["coord"] = { 26.1, 34.2, OHNAHRAN_PLAINS },
 				["questID"] = 72852,
+				["isDaily"] = false,
 				["g"] = {
 					i(200293),	-- Primal Scion's Twinblade
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
@@ -289,8 +299,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(192364, {	-- Windscale the Stormborn
+				["description"] = "Spawns from the egg after killing 5 nearby egg channelers.",
+				-- TODO: add crs for kill npcs
 				["coord"] = { 84.2, 47.8, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["questID"] = 73979,
 				-- ["g"] = {
 
 				-- },
@@ -330,6 +342,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200215),	-- Plumed Shoulderguards of the Hunt
 				},
 			}),
-		}),
+		})),
 	}),
 })));

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
-		n(RARES, {
+		n(RARES, sharedData({["isDaily"] = true},{
 			n(193132, {	-- Amethyzar the Glittering
 				["coord"] = { 63.4, 54.8, THE_WAKING_SHORES },
 				["questID"] = 73981,
@@ -14,6 +14,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(187111, {	-- Ancient Hornswog
 				["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
 				["questID"] = 72835,
+				["isDaily"] = false,
 				["g"] = {
 					i(200165),	-- Aegis of Scales
 					i(196992),	-- Cliffside Wylderdrake: Heavy Horns (DM!)
@@ -49,7 +50,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193198, {	-- Captain Lancer
 				["coord"] = { 26.9, 76.1, THE_WAKING_SHORES },
 				["questID"] = 73075,
-				["isDaily"] = true,
 				["g"] = {
 					i(200286),	-- Dragonbane Lance
 					i(200757),	-- Qalashi War-Helm
@@ -65,6 +65,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(191611, {	-- Dragonhunter Igordan
 				["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
 				["questID"] = 72838,
+				["isDaily"] = false,
 				["g"] = {
 					i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail (DM!)
 					i(197005),	-- Cliffside Wylderdrake: Horned Nose (DM!)
@@ -86,7 +87,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["description"] = "Can only be summoned by fishing with the Lava Spices buff active at 22 65 in the Waking Shores. Lava Spices can be obtained by killing Restless Lava, Lavaslurpers and Basalt Shells along the lava river leading to the rare.",
 				["cost"] = {{"i",201092,1}},	-- Lava Spices
 				["questID"] = 73072,
-				["isDaily"] = true,
 				["g"] = {
 					i(200217),	-- Blazing Essence
 					i(200247),	-- Inextinguishable Gavel
@@ -100,6 +100,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(195915, {	-- Firava the Rekindler
 				["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },
 				["questID"] = 72839,
+				["isDaily"] = false,
 				["g"] = {
 					i(200217),	-- Blazing Essence
 					i(197135),	-- Highland Drake: Toothy Mouth (DM!)
@@ -110,7 +111,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193154, {	-- Forgotten Gryphon
 				["coord"] = { 33.1, 76.3, THE_WAKING_SHORES },
 				["questID"] = 73073,
-				["isDaily"] = true,
 				["g"] = {
 					i(200858),	-- Plume of the Forgotten
 				},
@@ -156,6 +156,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(187209, {	-- Klozicc the Ascended
 				["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
 				["questID"] = 72841,
+				["isDaily"] = false,
 				["g"] = {
 					i(197023),	-- Cliffside Wylderdrake: Maned Neck (DM!)
 					i(200313),	-- Earthen Protoscale Drape
@@ -212,6 +213,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(184853, {	-- Primal Scythid Queen
 				["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
 				["questID"] = 72843,
+				["isDaily"] = false,
 				["g"] = {
 					-- is part of the DF>Global Rare Loottable
 				},
@@ -221,7 +223,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["description"] = "Chance to spawn after using 5 Ominous Conches at any Lurker Sighting.",
 				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
 				["questID"] = 74074,
-				["isDaily"] = true,
 				["g"] = {
 					i(197001),	-- Cliffside Wylderdrake: Finned Cheek
 					i(197098),	-- Highland Drake: Finned Back (DM!)
@@ -271,7 +272,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["description"] = "Chance to spawn after using 5 Ominous Conches at any Lurker Sighting.",
 				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
 				["questID"] = 74084,
-				["isDaily"] = true,
 				["g"] = {
 					i(197001),	-- Cliffside Wylderdrake: Finned Cheek
 					i(200086),	-- Khaz'gorite-infused Resin
@@ -285,6 +285,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193171, {	-- Terillod the Devout
 				["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
 				["questID"] = 72850,
+				["isDaily"] = false,
 				["g"] = {
 					i(200208),	-- Cloud Coalescing Handwraps
 					i(200172),	-- Zephyrdance Signet
@@ -297,6 +298,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					-- is part of the DF>Global Rare Loottable
 				},
 			}),
-		}),
+		})),
 	}),
 })));

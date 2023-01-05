@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_AZURE_SPAN, {
-		n(RARES, {
+		n(RARES, sharedData({["isDaily"] = true},{
 			n(194270, {	-- Arcane Devourer
 				["coord"] = { 53.0, 35.6, THE_AZURE_SPAN },
 				["questID"] = 73866,
@@ -50,7 +50,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(197353, {	-- Blisterhide <The Infested>
 				["coord"] = { 14.5, 31.1, THE_AZURE_SPAN },
 				["questID"] = 73985,
-				["isDaily"] = true,
 			}),
 			n(193259, {	-- Blue Terror
 				["coord"] = { 16.7, 28.4, THE_AZURE_SPAN },
@@ -70,6 +69,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(186962, {	-- Cascade
 				["coord"] = { 23.7, 33.7, THE_AZURE_SPAN },
 				["questID"] = 72836,
+				["isDaily"] = false,
 				["g"] = {
 					i(200135),	-- Corroded Greatsword
 					i(197098),	-- Highland Drake: Finned Back (DM!)
@@ -89,7 +89,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["description"] = "Collect the Broken Fishing Pole, Torn Fishing Net and Old Harpoon around to summon him.\n\nRewards you with 950 Reputation if you are summoner or 60 Reputation with a normal tag.",
 				["coord"] = { 49.5, 36.1, THE_AZURE_SPAN },
 				["questID"] = 72730,
-				-- ["isDaily"] = true,
+				["isDaily"] = false,
 				["g"] = {
 					i(197001),	-- Cliffside Wylderdrake: Finned Cheek (DM!)
 					i(196985),	-- Cliffside Wylderdrake: Horned Jaw (DM!)
@@ -108,6 +108,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193214, {	-- Forgotten Creation
 				["coord"] = { 38.2, 59.0, THE_AZURE_SPAN },
 				["questID"] = 72840,
+				["isDaily"] = false,
 				["g"] = {
 					i(200210),	-- Amnesia
 					i(200758),	-- Breastplate of Storied Antiquity
@@ -131,7 +132,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(197354, {	-- Gnarls
 				["coord"] = { 14.1, 37.5, THE_AZURE_SPAN },
 				["questID"] = 73996,
-				["isDaily"] = true,
 				["g"] = {
 					i(200259),	-- Forest Dweller's Shield
 					i(200267),	-- Reinforced Garden Tenders
@@ -147,8 +147,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193269, {	-- Grumbletrunk
-				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
-				-- ["questID"] = 69892,
+				["coord"] = { 19.3, 43.1, THE_AZURE_SPAN },
+				["questID"] = 74002,
 				["g"] = {
 					i(200206),	-- Behemoth Slayer Greatbow
 				},
@@ -218,6 +218,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(192749, {	-- Sharpfang
 				["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },
 				["questID"] = 72846,
+				["isDaily"] = false,
 				["g"] = {
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 					i(197150),	-- Highland Drake: Spiked Club Tail (DM!)
@@ -265,6 +266,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193288, {	-- Summoned Destroyer
 				["coord"] = { 70.1, 33.2, THE_AZURE_SPAN },
 				["questID"] = 72848,
+				["isDaily"] = false,
 				["g"] = {
 					i(200868),	-- Integrated Primal Fire
 					i(200133),	-- Volcanic Chakram
@@ -295,6 +297,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193223, {	-- Vakril <The Strongest Tuskarr?>
 				["coord"] = { 17.0, 41.3, THE_AZURE_SPAN },
 				["questID"] = 72853,
+				["isDaily"] = false,
 				["g"] = {
 					i(201728, {	-- Vakril's Strongbox
 						i(200164),	-- Iceloop
@@ -310,7 +313,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				-- },
 			}),
-		}),
+		})),
 	}),
 })));
 

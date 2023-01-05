@@ -3,10 +3,11 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THALDRASZUS, {
-		n(RARES, {
+		n(RARES, sharedData({["isDaily"] = true},{
 			n(193243, {	-- Acrosoth
 				["coord"] = { 40.5, 78.3, THALDRASZUS },
 				["questID"] = 72834,
+				["isDaily"] = false,
 				["g"] = {
 					i(197403),	-- Renewed Proto-Drake: Club Tail (DM!)
 					i(200228),	-- Protoscale Pauldrons
@@ -62,6 +63,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193229, {	-- Henlare
 				["coord"] = { 55.6, 77.4, THALDRASZUS },
 				["questID"] = 72814,
+				["isDaily"] = false,
 				["g"] = {
 					i(200880),	-- Wind-Sealed Mana Capsule
 				},
@@ -77,6 +79,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193273, {	-- Liskron the Dazzling
 				["coord"] = { 36.7, 72.8, THALDRASZUS },
 				["questID"] = 72842,
+				["isDaily"] = false,
 				["g"] = {
 					-- is part of the DF>Global Rare Loottable
 				},
@@ -84,6 +87,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193668, {	-- Lookout Mordren
 				["coord"] = { 36.8, 85.6, THALDRASZUS },
 				["questID"] = 72813,
+				["isDaily"] = false,
 				["g"] = {
 					i(200182),	-- Riveted Drape
 					i(197383),	-- Renewed Proto-Drake: Heavy Horns (DM!)
@@ -207,7 +211,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					-- is part of the DF>Global Rare Loottable
 				},
 			}),
-		}),
+		})),
 	}),
 })));
 

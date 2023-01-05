@@ -634,7 +634,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(196961),	-- Cliffside Wylderdrake: Armor
 			i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor
 			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
-			i(196970),	-- Cliffside Wylderdrake: Spiked Back
 			i(196974),	-- Cliffside Wylderdrake: Four Horned Chin
 			i(196975),	-- Cliffside Wylderdrake: Head Fin
 			i(196978),	-- Cliffside Wylderdrake: Small Head Spikes
@@ -660,7 +659,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197099),	-- Highland Drake: Armor
 			i(197102),	-- Highland Drake: Horned Chin
 			i(197104),	-- Highland Drake: Tapered Chin
-			i(197106),	-- Highland Drake: Finned Head
 			i(197109),	-- Highland Drake: Spiked Head
 			i(197116),	-- Highland Drake: Ears
 			i(197118),	-- Highland Drake: Brown Hair
