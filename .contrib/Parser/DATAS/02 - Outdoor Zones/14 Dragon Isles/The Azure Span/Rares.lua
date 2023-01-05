@@ -28,6 +28,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(194210, {	-- Azure Pathfinder
 				["coord"] = { 60.7, 31.7, THE_AZURE_SPAN },
 				["questID"] = 73867,
+				["isDaily"] = true,
 				-- ["g"] = {
 
 				-- },
@@ -35,6 +36,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193116, {	-- Beogoka
 				["coord"] = { 73.0, 26.6, THE_AZURE_SPAN },
 				["questID"] = 73868,
+				["isDaily"] = true,
 				["g"] = {
 					i(200673),	-- Beogoka's Tooth and Claw
 					i(200253),	-- Snowspring Incanter's Knife
@@ -124,6 +126,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(191356, {	-- Frostpaw
 				["coord"] = { 58.2, 43.7, THE_AZURE_SPAN },
 				["questID"] = 73877,
+				["isDaily"] = true,
 				["description"] = "Can be spawned when the three toys are present on the stump nearby- use the hammer at 58.6, 43.4.",
 				-- ["g"] = {
 

@@ -3,7 +3,8 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
-		n(RARES, sharedData({["isDaily"] = true},{
+		--n(RARES, sharedData({["isDaily"] = true},{
+		n(RARES, {
 			n(193168, {	-- Biryuk
 				["coord"] = { 72.5, 56.2, OHNAHRAN_PLAINS },
 				["questID"] = 73903,
@@ -13,6 +14,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["cr"] = 193222,	-- Archaeologist Koranir
 				["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
 				["questID"] = 74096,
+				["isDaily"] = true,
 				["g"] = {
 					i(196986),	-- Cliffside Wylderdrake: Black Hair (DM!)
 					i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
@@ -58,6 +60,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193170, {	-- Fulgurb
 				["coord"] = { 74.4, 47.6, OHNAHRAN_PLAINS },
 				["questID"] = 73994,
+				["isDaily"] = true,
 				["g"] = {
 					i(200433),	-- Footwraps of Subjugation
 				},
@@ -87,6 +90,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(197009, {	-- Liskheszaera
 				["coord"] = { 87.4, 61.4, OHNAHRAN_PLAINS },
 				["questID"] = 73882,
+				["isDaily"] = true,
 				["g"] = {
 					i(200434),	-- Anund's Mana-Singed Amice
 					i(200446),	-- Crystalized Sigil
@@ -195,6 +199,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193136, {	-- Scav Notail
 				["coord"] = { 50.1, 75.2, OHNAHRAN_PLAINS },
 				["questID"] = 73893,
+				["isDaily"] = true,
 				["g"] = {
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 					i(200168),	-- Gnoll Hide Belt
@@ -204,6 +209,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193188, {	-- Seeker Teryx
 				["coord"] = { 61.0, 13.6, OHNAHRAN_PLAINS },
 				["questID"] = 73894,
+				["isDaily"] = true,
 				["g"] = {
 					i(196970),	-- Cliffside Wylderdrake: Spiked Back (DM!)
 					i(200154),	-- Rubyscale Band
@@ -214,6 +220,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["crs"] = { 193166 },	-- Solethus's Gravestone
 				["coord"] = { 29.9, 41.1, OHNAHRAN_PLAINS },
 				["questID"] = 74075,
+				["isDaily"] = true,
 				["g"] = {
 					i(196996),	-- Cliffside Wylderdrake: Branched Horns (DM!)
 					i(200437),	-- Dreamsong Censer
@@ -317,6 +324,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193209, {	-- Zenet Avis <The Hard Wind>
 				["coord"] = { 31.5, 64.0, OHNAHRAN_PLAINS },
 				["questID"] = 73901,
+				["isDaily"] = true,
 				["g"] = {
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 					i(200314),	-- Skyspeaker's Envelope
@@ -342,6 +350,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200215),	-- Plumed Shoulderguards of the Hunt
 				},
 			}),
-		})),
+		--})),
+		}),
 	}),
 })));
