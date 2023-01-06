@@ -68,6 +68,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(187781, {	-- Hamett <Rockfang Matriarch>
+				["description"] = "Can spawn upon killing nearby Cats.",
 				["coord"] = { 85.4, 15.8, OHNAHRAN_PLAINS },
 				["questID"] = 73951,
 				-- ["g"] = {
@@ -75,6 +76,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(188095, {	-- Hunter of the Deep
+				["description"] = "There will be some glowing fish in the water when he is summonable. Click on the weapon rack, shoot the fish. When all fish are eliminated, the boss will spawn.",
 				["coord"] = { 80.5, 42.2, OHNAHRAN_PLAINS },
 				["questID"] = 73966,
 				-- ["g"] = {
