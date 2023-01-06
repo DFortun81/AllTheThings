@@ -512,6 +512,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199542),	-- Red Tufted Shoulderpads
 				},
 			}),
+				-- RENOWN 29 --
+			q(70977, {	-- Scaps Packs
+				["minReputation"] = { 2511, 29 },	-- Iskaara Tuskarr Renown 29
+				["provider"] = { "n", 187680 },	-- Scaps
+				["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
+				["g"] = {
+					i(198337),	-- Azure Paw Pack
+					i(198338),	-- Black Paw Pack
+					i(198339),	-- Dark Paw Pack
+					i(198340),	-- Red Paw Pack
+					i(198341),	-- Tan Paw Pack
+				},
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
@@ -533,5 +546,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72639),	-- Triggered with 'Our Loyal, Lanky Steeds' (70972)
 		q(72281),	-- Triggered with 'Slacking and Sledding' (70976)
 		q(72641),	-- Triggered with 'Shouldering the Needed Armor' (70961)
+		q(72642),	-- Triggered with 'Scaps Packs' (70977)
 	}),
 }));
