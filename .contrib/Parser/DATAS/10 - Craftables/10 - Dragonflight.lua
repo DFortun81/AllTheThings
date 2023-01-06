@@ -1156,9 +1156,9 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 	}),
 	prof(FISHING, {
 		i(198439, {	-- Aged Recipe in a Bottle
-			["description"] = "Please Report to the ATT-Discord if you get this item.",
 			["g"] = {
-				i(14514),	-- Pattern: Robe of the Void (RECIPE!)
+			--	i(14514),	-- Pattern: Robe of the Void (RECIPE!)
+			-- The pattern did not make it to Live. Was only fishable on Beta
 			},
 		}),
 		i(198438, {	-- Draconic Recipe in a Bottle

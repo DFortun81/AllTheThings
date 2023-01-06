@@ -278,6 +278,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 			}),
+			--[[ -- To Do: Add Tuskarr Tackleboxes. Can be looted from Tuskarr Tackleboxes (requires renown 27 to see)
+				i(199338),	-- Copper Coin of the Isles
+				i(199340),	-- Gold Coin of the Isles
+				i(199339),	-- Silver Coin of the Isles
+			}),
+			--]]
 		})
 	}),
 })));

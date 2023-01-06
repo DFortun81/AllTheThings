@@ -42,11 +42,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193663, {	-- Craggravated Elemental
-				["coord"] = { 52.8, 67.6, THALDRASZUS },
+				["coord"] = { 45.4, 85.2, THALDRASZUS },
 				["questID"] = 74061,
 				["isDaily"] = true,
 				["g"] = {
 					i(200298),	-- Stoneshaped Greatbelt
+					i(196991),	-- Cliffside Wylderdrake: Black Horns
+					i(197624),	-- Windborne Velocidrake: Club Tail				
 				},
 			}),
 			n(193234, {	-- Eldoren the Reborn <Jewel of the Skies>

@@ -25,6 +25,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(187945, {	-- Anhydros the Tidetaker
 				["coord"] = { 58.7, 40.3, THE_WAKING_SHORES },
 				["questID"] = 73865,
+				["g"] = {
+					i(200245), -- Leviathan Lure
+				},
 			}),
 			n(193135, {	-- Azra's Prized Peony
 				["coord"] = { 54.9, 71.1, THE_WAKING_SHORES },
@@ -42,11 +45,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					{ 27.8, 78.8, THE_WAKING_SHORES },
 					{ 30.2, 78.2, THE_WAKING_SHORES },
 				},
-			}),
-			n(192738, {	-- Brundin the Dragonbane <Qalashi War Party>
-				["description"] = "Travelling.",
-				["coord"] = { 48.4, 66.1, THE_WAKING_SHORES },
-				["questID"] = 73890,
 			}),
 			n(193198, {	-- Captain Lancer
 				["coord"] = { 26.9, 76.1, THE_WAKING_SHORES },
@@ -197,10 +195,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(193256, {	-- Nulltheria the Void Gazer
-				["coord"] = { 56.7, 45.6, THE_WAKING_SHORES },
+				["coord"] = { 50.00, 45.87, THE_WAKING_SHORES },
+				["description"] = "At the top of the Tower. Nearby ghostly telescopes will indicate her spawn timer:\n\n2 telescopes means roughly 2h30min till respawn.\n\n3 telescopes indicate 2h respawn till respawn.\n\n4 telescopes indicate 1h till respawn.",
 				["questID"] = 73888,
 				["g"] = {
 					i(200236),	-- Memory of Nulltheria
+					i(200310),	-- Stole of the Iron Phantom
 				},
 			}),
 			n(193118, {	-- O'nank Shorescour
@@ -218,6 +218,28 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["isDaily"] = false,
 				["g"] = {
 					-- is part of the DF>Global Rare Loottable
+				},
+			}),
+			n(192737, {	-- Qalashi War Mammoth
+				["description"] = "Marked with an icon on the map if they are up.",
+				["coords"] = { 
+					{ 33.8, 70.4, THE_WAKING_SHORES },
+					{ 39.2, 68.2, THE_WAKING_SHORES },
+					{ 47.0, 73.0, THE_WAKING_SHORES },
+					{ 48.4, 65.8, THE_WAKING_SHORES },
+					{ 53.0, 66.4, THE_WAKING_SHORES },
+				},
+				["questID"] = 73890,
+				-- He "drops" 4 rare npcs upon dieing, but they have no drops. CRS doesnt seem useful
+				["g"] = {
+					n(192743, {	-- Stonefist Rejara
+					}),
+					n(192741, {	-- Flamebreaker Grella
+					}),
+					n(192738, {	-- Brundin the Dragonbane
+					}),
+					n(192744, {	-- Scalemelter Dorbane
+					}),
 				},
 			}),
 			n(193710, {	-- Seereel, the Spring <Lunker>

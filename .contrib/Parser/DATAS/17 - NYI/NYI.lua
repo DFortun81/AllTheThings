@@ -745,9 +745,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199472),	-- Overflowing Dragon Expedition Supply Pack
 			i(199473),	-- Overflowing Iskaaran Supply Pack
 			i(199475),	-- Overflowing Valdrakken Accord Supply Pack
-			i(200285),	-- Dragonscale Expedition Insignia
-			i(200287),	-- Iskaara Tuskarr Insignia
-			i(200288),	-- Maruuk Centaur Insignia
 			i(200218),	-- Charred Fishing Pole
 			i(200452),	-- Dragonscale Expedition Insignia
 			i(200453),	-- Iskaara Tuskarr Insignia

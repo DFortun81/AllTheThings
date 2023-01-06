@@ -118,6 +118,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(200210),	-- Amnesia
 					i(200758),	-- Breastplate of Storied Antiquity
+					i(197138),	-- [Highland Drake: Striped Pattern]
 				},
 			}),
 			n(193698, {	-- Frigidpelt Den Mother
@@ -174,6 +175,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 36.8, 35.8, THE_AZURE_SPAN },
 				["questID"] = 73883,
 				["g"] = {
+					i(200684),  -- Emerald tailbone
 					i(197149),	-- Highland Drake: Club Tail (DM!)
 					i(200157),	-- Pathmaker
 				},
@@ -204,10 +206,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193225, {	-- Notfar the Unbearable
-				["coord"] = { 36.8, 35.8, THE_AZURE_SPAN },
+				["coord"] = { 20.6, 49.4, THE_AZURE_SPAN },
 				["questID"] = 73887,
 				["g"] = {
 					i(200160),	-- Notfar's Favorite Food (TOY!)
+					i(197023),	-- Cliffside Wylderdrake: Maned Neck
 				},
 			}),
 			n(197371, {	-- Ravenous Tundra Bear <Lunker>
