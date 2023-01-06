@@ -6,17 +6,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 	achcat(ACHIEVEMENT_CATEGORY_SHADOWLANDS_QUESTS, {
 		ach(15064, {	-- Breaking The Chains
 			i(186654),	-- Hand of Salaranga (MOUNT!)
-			ach(14961, {	-- Chains of Domination
-				crit(1),	-- Battle of Ardenweald
-				crit(2),	-- Maw Walkers
-				crit(3),	-- Focusing the Eye
-				crit(4),	-- The Last Sigil
-				crit(5),	-- An Army of Bone and Steel
-				crit(6),	-- The Unseen Guests
-				crit(7),	-- The Power of Night
-				crit(8),	-- A New Path
-				crit(9),	-- What Lies Ahead
-			}),
 			ach(15035, {	-- On the Offensive
 				ach(15000, {	-- United Front
 					crit(1),	-- Necrolord Assault
@@ -74,62 +63,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				crit(14),	-- Manifestation of Pain slain
 				crit(15),	-- Golmak the Monstrosity slain
 			}),
-			ach(15066),		-- Reliquary Restoration
-			ach(15053, {	-- Explore Korthia
-				crit(1),	-- Estuary of Awakening
-				crit(2),	-- Hope's Ascent
-				crit(3),	-- Keeper's Respite
-				crit(4),	-- Mauler's Outlook
-				crit(5),	-- Sanctuary of Guidance
-				crit(6),	-- Scholar's Den
-				crit(7),	-- Seeker's Quorum
-				crit(8),	-- Vault of Secrets
-				crit(9),	-- Windswept Aerie
-			}),
-			ach(15059),		-- Death's Advance
-			ach(15069),		-- The Archivist's Codex
-			ach(15099, {	-- Treasures of Korthia
-				crit(1),	-- Glittering Nest Material
-				crit(2),	-- Forgotten Feather
-				crit(3),	-- Lost Memento
-				crit(4),	-- Dislodged Nest
-				crit(5),	-- Anima Laden Egg
-				crit(6),	-- Displaced Relic
-				crit(7),	-- Helsworn Chest
-				crit(8),	-- Jeweled Heart
-				crit(9),	-- Infested Vestige
-				crit(10),	-- Offering Box
-			}),
-			ach(15107, {	-- Conquering Korthia
-				crit(1),	-- Assault Supply Carriage
-				crit(2),	-- Blinding Shadow
-				crit(3),	-- Chamber of Knowledge
-				crit(4),	-- Chamber of Wisdom
-				crit(5),	-- Consumption
-				crit(6),	-- Corpse Heap
-				crit(7),	-- Deadsoul Hatcher
-				crit(8),	-- Deomen the Vortex
-				crit(9),	-- Dominated Protector
-				crit(10),	-- Escaped Wilderling
-				crit(11),	-- Fallen Charger
-				crit(12),	-- Guard Orguluus
-				crit(13),	-- Hunting the Hunter
-				crit(14),	-- Konthrogz the Obliterator
-				crit(15),	-- Kroke the Tormented
-				crit(16),	-- No Stoneborn Left Behind
-				crit(17),	-- Observer Yorik
-				crit(18),	-- Pop Quiz
-				crit(19),	-- Popo's Potion Patrol
-				crit(20),	-- Relic Breaker Krelva
-				crit(21),	-- Reliwik the Defiant
-				crit(22),	-- Screaming Shade
-				crit(23),	-- Silent Soulstalker
-				crit(24),	-- Torglluun, Lord of Shades
-				crit(25),	-- Towering Exterminator
-				crit(26),	-- Traitor Balthier
-				crit(27),	-- Ylva, Mate of Guarm
-				crit(28),	-- Zelnithop
-			}),
 		}),
 		ach(15032, {	-- Breaking Their Hold
 			crit(1),	-- Dead On Their Feet
@@ -161,27 +94,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				["_quests"] = { 60911 },	-- Flight School: Flapping Frenzy
 			}),
 		}),
-		ach(15056),		-- Friend of Bloop
-		ach(15055),		-- Friend of Ooz
-		ach(15057),		-- Friend of Plaguey
-		ach(14334),		-- Into the Maw
 		ach(14280, {	-- Loremaster of Shadowlands
-			ach(14281, {	-- The Path to Ascension
-				crit(1),		-- Eternity's Call
-				crit(2),		-- The Aspirant's Crucible
-				crit(3),		-- The Temple of Purity
-				crit(4),		-- Chasing a Memory
-				crit(5),		-- Your Personal Assistant
-				crit(6),		-- A Time for Courage
-				crit(7),		-- A Land of Strife
-			}),
-			ach(14801, {	-- Sojourner of Bastion
-				crit(1),		-- In Agthia's Memory
-				crit(2),		-- Wings of Freedom
-				crit(3),		-- In the Garden of Respite
-				crit(4),		-- The Spear of Kalliope
-				crit(5),		-- Pride or Unit
-			}),
 			ach(14206, {	-- Blade of the Primus
 				crit(1),		-- Champion of Pain
 				crit(2),		-- House of the Chosen

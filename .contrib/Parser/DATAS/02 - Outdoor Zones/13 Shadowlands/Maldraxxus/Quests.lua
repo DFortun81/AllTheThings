@@ -40,15 +40,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 161559 },	-- Louison
 				["coord"] = { 54.4, 48.6, MALDRAXXUS },
 			}),
-			q(63678, {	-- Akarek Avenged
-				["sourceQuests"] = {
-					63677,	-- You Can Only Die
-					63676,	-- You Cannot Hide
-					63675,	-- You Cannot Run
-				},
-				["provider"] = { "n", 177437 },	-- Khaliiq
-				["timeline"] = { "added 9.1.0" },
-			}),
 			q(59202, {	-- Among the Chosen
 				["sourceQuests"] = {
 					59231,	-- Fathomless Power
@@ -156,12 +147,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 				["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 				["coord"] = { 58.3, 71.6, MALDRAXXUS },
-			}),
-			q(63674, {	-- By Your Leave
-				["sourceQuests"] = { 63990 },	-- The Blade in the Night
-				["provider"] = { "n", 177435 },	-- Khaliiq
-				["coord"] = { 42.1, 23.2, MALDRAXXUS },
-				["timeline"] = { "added 9.1.0" },
 			}),
 			q(57301, {	-- Callous Concoctions
 				["sourceQuests"] = { 58431 },	-- Pool of Potions
@@ -328,12 +313,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 59879 },	-- This Thing of Ours
 				["provider"] = { "n", 159830 },	-- Au'narim
 				["coord"] = { 53.6, 47.5, MALDRAXXUS },
-			}),
-			q(63679, {	-- Magical Mystery Tour!
-				["sourceQuests"] = { 63678 },	-- Akarek Avenged
-				["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
-				["coord"] = { 74.7, 33.6, MALDRAXXUS },
-				["timeline"] = { "added 9.1.0" },
 			}),
 			q(58617, {	-- Maintaining Order
 				["sourceQuests"] = { 57514 },	-- The First Act of War
@@ -530,12 +509,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 				["provider"] = { "n", 161559 },	-- Louison
 				["coord"] = { 54.4, 48.6, MALDRAXXUS },
-			}),
-			q(63990, {	-- The Blade in the Night
-				["sourceQuests"] = { 63728, 63673 },	-- Hunting Amid Houses (Kyrian/Necrolord/Venthyr, Night Fae)
-				["provider"] = { "n", 177471 },	-- Huln Highmountain
-				["coord"] = { 42.8, 25.2, MALDRAXXUS },
-				["timeline"] = { "added 9.1.0" },
 			}),
 			q(60428, {	-- The Blade of the Primus
 				["sourceQuests"] = {
@@ -759,24 +732,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					1691,	-- Shattered Grove
 					1715,	-- Vestibule Of Eternity (procs when entering the portal but not actual destination)
 				},
-			}),
-			q(63677, {	-- You Can Only Die
-				["sourceQuests"] = { 63674 },	-- By Your Leave
-				["provider"] = { "n", 177435 },	-- Khaliiq
-				["coord"] = { 52.8, 68.6, MALDRAXXUS },
-				["timeline"] = { "added 9.1.0" },
-			}),
-			q(63676, {	-- You Cannot Hide
-				["sourceQuests"] = { 63674 },	-- By Your Leave
-				["provider"] = { "n", 177435 },	-- Khaliiq
-				["coord"] = { 52.8, 68.6, MALDRAXXUS },
-				["timeline"] = { "added 9.1.0" },
-			}),
-			q(63675, {	-- You Cannot Run
-				["sourceQuests"] = { 63674 },	-- By Your Leave
-				["provider"] = { "n", 177435 },	-- Khaliiq
-				["coord"] = { 52.8, 68.6, MALDRAXXUS },
-				["timeline"] = { "added 9.1.0" },
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(62742, {	-- Avoid 'Em Like the P	lague (pre-60)

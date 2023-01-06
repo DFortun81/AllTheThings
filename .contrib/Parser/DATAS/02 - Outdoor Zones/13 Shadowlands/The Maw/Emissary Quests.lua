@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	m(THE_MAW, {
 		n(EMISSARY_QUESTS, {
 			q(64267, {	-- Mysterious Gifts from Ve'nari
@@ -14,11 +13,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						i(186552),	-- Rook (PET!)
 					}),
 				},
-			}),
-		}),
-		n(FACTIONS, {
-			faction(2432, {	-- Ve'nari
-				ach(14656),	-- Trading Partners
 			}),
 		}),
 	}),

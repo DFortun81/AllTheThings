@@ -46,16 +46,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				},
 				["coord"] = { 50.4, 53.8, 1912 },    -- The Runecarver's Oubliette
 			}),
-			q(63727, {	-- The Primus Returns
-				["sourceQuests"] = { 63726 },	-- Untangling the Sigil
-				["provider"] = { "n", 177569 },	-- The Primus
-				["coord"] = { 50.2, 58.4, 1912 },	-- The Runecarver's Oubliette
-				["g"] = {
-					i(185965, {	-- Memories of Sunless Skies
-						["questID"] = 63893,
-					}),
-				},
-			}),
 			q(62800, {	-- The Vessels of Jewels
 				["sourceQuests"] = { 60272 },    -- The Weak Link
 				["requireSkill"] = JEWELCRAFTING,

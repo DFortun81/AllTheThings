@@ -1,8 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
+local CATALOGED_RESEARCH = 1931;
+local STYGIA = 1767;
+local SOUL_ASH = 1828;
+local SOUL_CINDERS = 1906;
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	m(KORTHIA, {
 		n(VENDORS, {
 			n(178257, {	-- Archivist Roh-Suir
@@ -10,33 +13,33 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["minReputation"] = { 2472, 1 },	-- The Archivist's Codex, Tier 1
 				["g"] = {
 					i(186648, {	-- Soaring Razorwing (MOUNT!)
-						["cost"] = { { "c", 1931, 5000 } },	-- 5,000x Stygia
+						["cost"] = { { "c", CATALOGED_RESEARCH, 5000 } },
 					}),
 				--	Epics
 					i(187134, {	-- Alloy-Warping Facetor
-						["cost"] = { { "c", 1931, 5000 } },	-- 5,000x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 5000 } }
 					}),
 					i(187535, {	-- Attendant Scholar's Waistcord
-						["cost"] = { { "c", 1931, 4000 } },	-- 4,000x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 4000 } },
 					}),
 					i(187148, {	-- Death-Bound Shard
-						["cost"] = { { "c", 1931, 3000 } },	-- 3,000x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 3000 } },
 					}),
 					i(187534, {	-- Korthite Crystal Waistguard
-						["cost"] = { { "c", 1931, 4000 } },	-- 4,000x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 4000 } },
 					}),
 					i(187536, {	-- Prototype Guardian Grips
-						["cost"] = { { "c", 1931, 4000 } },	-- 4,000x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 4000 } },
 					}),
 					i(187537, {	-- Subtle Mortality Manipulators
-						["cost"] = { { "c", 1931, 4000 } },	-- 4,000x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 4000 } },
 					}),
 				--	Blues
 					i(187409, {	-- Cloak of the Korthian Scholar
-						["cost"] = { { "c", 1931, 500 } },	-- 500x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 500 } },
 					}),
 					i(186470, {	-- Recipe: Crafter's Mark of the Chained Isle
-						["cost"] = { { "c", 1931, 2500 } },	-- 2,500x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 2500 } },
 						["g"] = {
 							recipe(343676, {	-- Crafter's Mark of the Chained Isle
 								["requireSkill"] = ALCHEMY,
@@ -60,68 +63,68 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					}),
 					i(186717, {	-- Research Report: Adaptive Alloys
 						["questID"] = 64300,
-						["cost"] = { { "c", 1931, 4000 } },	-- 4,000x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 4000 } },
 					}),
 					i(186714, {	-- Research Report: All-Seeing Crystal
 						["questID"] = 64339,
-						["cost"] = { { "c", 1931, 100 } },	-- 100x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 100 } },
 					}),
 					i(186716, {	-- Research Report: Ancient Shrines
 						["questID"] = 64348,
-						["cost"] = { { "c", 1931, 1000 } },	-- 1,000x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 1000 } },
 					}),
 					i(187136, {	-- Research Report: Relic Examination Techniques
 						["questID"] = 64367,
-						["cost"] = { { "c", 1931, 2500 } },	-- 2,500x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 2500 } },
 					}),
 					i(187138, {	-- Research Report: First Alloys
 						["questID"] = 64303,
-						["cost"] = { { "c", 1931, 8000 } },	-- 8,000x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 8000 } },
 					}),
 					i(187706, {	-- Treatise: Bonds of Stygia in Mortals
 						["questID"] = 64828,
-						["cost"] = { { "c", 1931, 1000 } },	-- 1000x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 1000 } },
 					}),
 					i(187145, {	-- Treatise: Recognizing Stygia and its Uses
 						["questID"] = 64307,
-						["cost"] = { { "c", 1931, 800 } },	-- 800x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 800 } },
 					}),
 					i(186721, {	-- Treatise: Relics Abound in the Shadowlands
 						["questID"] = 64366,
-						["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 2000 } },
 					}),
 					i(186722, {	-- Treatise: The Study of Anima and Harnessing Every Drop
 						["questID"] = 64027,
-						["cost"] = { { "c", 1931, 1500 } },	-- 1,500x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 1500 } },
 					}),
 				--	Greens
 					i(187612, {	-- Key of Flowing Waters
-						["cost"] = { { "c", 1931, 25 } },	-- 25x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 25 } },
 					}),
 					i(187614, {	-- Key of Many Thoughts
-						["cost"] = { { "c", 1931, 25 } },	-- 25x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 25 } },
 					}),
 					i(187613, {	-- Key of the Inner Chambers
-						["cost"] = { { "c", 1931, 25 } },	-- 25x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 25 } },
 					}),
 					i(186984, {	-- Korthite Crystal Key
-						["cost"] = { { "c", 1931, 25 } },	-- 25x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 25 } },
 					}),
 					i(186731, {	-- Repaired Riftkey
-						["cost"] = { { "c", 1931, 100 } },	-- 100x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 100 } },
 					}),
 					i(186718, {	-- Teleporter Repair Kit
-						["cost"] = { { "c", 1931, 50 } },	-- 50x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 50 } },
 					}),
 					i(187508, {	-- Trained Gromit Carrier
-						["cost"] = { { "c", 1931, 35 } },	-- 35x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 35 } },
 					}),
 				--	Whites
 					i(186991, {	-- Transmute: Stones to Ore (RECIPE!)
-						["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 2000 } },
 					}),
 					i(184665, {	-- Chronicle of Lost Memories
-						["cost"] = { { "c", 1931, 1500 } },	-- 1,500x Catalogued Research
+						["cost"] = { { "c", CATALOGED_RESEARCH, 1500 } },
 						["description"] = "|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",
 						["_drop"] = { "customCollect" },	-- this is Covenant tagged in various other locations
 						["sym"] = {
@@ -153,17 +156,17 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 63.5, 25.3, KORTHIA },
 				["g"] = {
 					i(187077, {	-- Packaged Soul Ash
-						["cost"] = { { "c", 1828, 300 } },	-- 300x Soul Ash
+						["cost"] = { { "c", SOUL_ASH, 300 } },
 					}),
 					i(191031, {	-- Packaged Soul Cinders
-						["cost"] = { { "c", 1906, 300 } },	-- 300x Soul Cinders
-						["timeline"] = { "added 9.2.0" },
+						["cost"] = { { "c", SOUL_CINDERS, 300 } },
+						["timeline"] = { ADDED_SL_S3 },
 					}),
 					i(187532, {	-- Soulfire Chisel
-						["cost"] = { { "c", 1767, 2500 } },	-- 2,500x Stygia
+						["cost"] = { { "c", STYGIA, 2500 } },
 					}),
 					i(187134, {	-- Alloy-Warping Facetor
-						["cost"] = { { "c", 1906, 1000 } },	-- 1,000x Soul Cinders
+						["cost"] = { { "c", SOUL_CINDERS, 1000 } },
 					}),
 				},
 			}),
@@ -172,26 +175,26 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["minReputation"] = { 2470, 5 },	-- Death's Advance, Friendly
 				["g"] = {
 					i(186647, {	-- Amber Shardhide (MOUNT!)
-						["cost"] = { { "c", 1767, 5000 } },	-- 5,000x Stygia
+						["cost"] = { { "c", STYGIA, 5000 } },
 					}),
 					i(186480, {	-- Battle-Hardened Aquilon (MOUNT!)
-						["customCollect"] = "SL_COV_KYR",	-- Kyrian-only
-						["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
+						["customCollect"] = "SL_COV_KYR",	-- Kyrian
+						["cost"] = { { "c", STYGIA, 1000 } },
 					}),
 					i(186490, {	-- Battlefield Swarmer (MOUNT!)
-						["customCollect"] = "SL_COV_NEC",	-- Necrolord-only
-						["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
+						["customCollect"] = "SL_COV_NEC",	-- Necrolord
+						["cost"] = { { "c", STYGIA, 1000 } },
 					}),
 					i(186477, {	-- Pale Gravewing (MOUNT!)
-						["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
-						["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
+						["customCollect"] = "SL_COV_VEN",	-- Venthyr
+						["cost"] = { { "c", STYGIA, 1000 } },
 					}),
 					i(186495, {	-- Winter Wilderling (MOUNT!)
-						["customCollect"] = "SL_COV_NFA",	-- Night Fae-only
-						["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
+						["customCollect"] = "SL_COV_NFA",	-- Night Fae
+						["cost"] = { { "c", STYGIA, 1000 } },
 					}),
 					i(187218, {	-- Tome of Origins
-						["cost"] = { { "c", 1767, 2000 } },
+						["cost"] = { { "c", STYGIA, 2000 } },
 						["g"] = {
 							recipe(352443, {	-- Vestige of Origins
 								["requireSkill"] = JEWELCRAFTING,
@@ -210,76 +213,76 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					--
 					i(187187, {	-- Korthian Armaments
 						["description"] = "These items can also drop from War Chests awarded by Covenant Assaults, the Death's Advance War Chest, and occasionally from Korthian dailies.\n\nKorthian Armaments also have a chance to drop from Korthia rares and treasures.",
-						["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
-						["g"] = {	-- * are next to ones i have seen (there are a couple sets so not sure if both exist)
+						["cost"] = { { "c", STYGIA, 1000 } },
+						["g"] = {
 							n(WEAPONS, {
 								i(185889),	-- Gromit Tendon Longbow
 								i(186762),	-- Korthian Anima Slicer
-								i(186759),	-- Korthian Anima Vessel*
+								i(186759),	-- Korthian Anima Vessel
 								i(185899),	-- Korthian Archivist's Gavel
 								i(186761),	-- Korthian Attendant's Blade
-								i(186768),	-- Korthian Attendant's Cane*
-								i(186767),	-- Korthian Attendant's Scepter*
-								i(185890),	-- Korthian Caretaker's Kris*
-								i(185888),	-- Korthian Caretaker's Orb*
+								i(186768),	-- Korthian Attendant's Cane
+								i(186767),	-- Korthian Attendant's Scepter
+								i(185890),	-- Korthian Caretaker's Kris
+								i(185888),	-- Korthian Caretaker's Orb
 								i(185900),	-- Korthian Caretaker's Rod
-								i(185900),	-- Korthian Caretaker's Stave*
+								i(185900),	-- Korthian Caretaker's Stave
 								i(186760),	-- Korthian Energy Bow
-								i(186758),	-- Korthian Keeper's Buckler*
+								i(186758),	-- Korthian Keeper's Buckler
 								i(185898),	-- Korthian Pathfinder's Spire
 								i(185893),	-- Korthian Protector's Greataxe
-								i(186764),	-- Korthian Protector's Warhammer*
+								i(186764),	-- Korthian Protector's Warhammer
 								i(185897),	-- Korthian Sentinel's Hammer
 								i(185901),	-- Korthian Twinblade
 								i(185891),	-- Razorwing's Claw
-								i(185944),	-- Vault Guardian's Cleaver*
+								i(185944),	-- Vault Guardian's Cleaver
 								i(185896),	-- Vault Guardian's Cudgel
 								i(186763),	-- Vault Guardian's Decapitator
 								i(185887),	-- Vault Guardian's Targe
 								i(186769),	-- Vault Guardian's Warglaive
 								i(186765),	-- Vault Patroller's Mace
-								i(186771),	-- Vault Patroller's Slicer*
+								i(186771),	-- Vault Patroller's Slicer
 								i(186766),	-- Vault Patroller's Staff
 							}),
 							n(BACK, {
-								i(186770),	-- Vault Attendant's Cape*
-								i(185905),	-- Vault Guardian's Drape*
+								i(186770),	-- Vault Attendant's Cape
+								i(185905),	-- Vault Guardian's Drape
 							}),
 							filter(CLOTH, {
-								i(185861),	-- Korthian Caretaker's Bindings*
-								i(185860),	-- Korthian Caretaker's Cinch*
-								i(185858),	-- Korthian Caretaker's Crest*
-								i(186666),	-- Korthian Caretaker's Crown*
-								i(185857),	-- Korthian Caretaker's Handwraps*
-								i(185859),	-- Korthian Caretaker's Leggings*
+								i(185861),	-- Korthian Caretaker's Bindings
+								i(185860),	-- Korthian Caretaker's Cinch
+								i(185858),	-- Korthian Caretaker's Crest
+								i(186666),	-- Korthian Caretaker's Crown
+								i(185857),	-- Korthian Caretaker's Handwraps
+								i(185859),	-- Korthian Caretaker's Leggings
 								i(186670),	-- Korthian Caretaker's Mantle
-								i(186665),	-- Korthian Caretaker's Mitts*
-								i(186667),	-- Korthian Caretaker's Pantaloons*
-								i(185855),	-- Korthian Caretaker's Robes*
-								i(186664),	-- Korthian Caretaker's Sandals*
+								i(186665),	-- Korthian Caretaker's Mitts
+								i(186667),	-- Korthian Caretaker's Pantaloons
+								i(185855),	-- Korthian Caretaker's Robes
+								i(186664),	-- Korthian Caretaker's Sandals
 								i(186668),	-- Korthian Caretaker's Sash
-								i(185886),	-- Korthian Caretaker's Shoulderpads*
+								i(185886),	-- Korthian Caretaker's Shoulderpads
 								i(185856),	-- Korthian Caretaker's Slippers
-								i(186663),	-- Korthian Caretaker's Vestments*
+								i(186663),	-- Korthian Caretaker's Vestments
 								i(186669),	-- Korthian Caretaker's Wraps
 							}),
 							filter(LEATHER, {
 								i(185866),	-- Shardhide Leather Belt
 								i(185862),	-- Shardhide Leather Boots
-								i(185867),	-- Shardhide Leather Bracers*
-								i(185865),	-- Shardhide Leather Breeches*
-								i(186736),	-- Shardhide Leather Cowl*
+								i(185867),	-- Shardhide Leather Bracers
+								i(185865),	-- Shardhide Leather Breeches
+								i(186736),	-- Shardhide Leather Cowl
 								i(186739),	-- Shardhide Leather Cuffs
-								i(186757),	-- Shardhide Leather Epaulets*
+								i(186757),	-- Shardhide Leather Epaulets
 								i(185863),	-- Shardhide Leather Gloves
-								i(186735),	-- Shardhide Leather Handlers*
-								i(185864),	-- Shardhide Leather Hood*
-								i(186756),	-- Shardhide Leather Jerkin*
+								i(186735),	-- Shardhide Leather Handlers
+								i(185864),	-- Shardhide Leather Hood
+								i(186756),	-- Shardhide Leather Jerkin
 								i(185885),	-- Shardhide Leather Shoulderguards
-								i(186738),	-- Shardhide Leather Strap*
+								i(186738),	-- Shardhide Leather Strap
 								i(186734),	-- Shardhide Leather Treads
 								i(186737),	-- Shardhide Leather Trousers
-								i(185884),	-- Shardhide Leather Vest*
+								i(185884),	-- Shardhide Leather Vest
 							}),
 							filter(MAIL, {
 								i(185875),	-- Razorwing Scale Bracers
@@ -287,14 +290,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 								i(185868),	-- Razorwing Scale Chainmail
 								i(185874),	-- Razorwing Scale Cincture
 								i(185871),	-- Razorwing Scale Coif
-								i(186742),	-- Razorwing Scale Fists*
+								i(186742),	-- Razorwing Scale Fists
 								i(186741),	-- Razorwing Scale Footguards
-								i(185872),	-- Razorwing Scale Greaves*
+								i(185872),	-- Razorwing Scale Greaves
 								i(185870),	-- Razorwing Scale Grips
-								i(186740),	-- Razorwing Scale Harness*
+								i(186740),	-- Razorwing Scale Harness
 								i(186743),	-- Razorwing Scale Hood
 								i(186744),	-- Razorwing Scale Pants
-								i(185873),	-- Razorwing Scale Shoulderguards*
+								i(185873),	-- Razorwing Scale Shoulderguards
 								i(186745),	-- Razorwing Scale Spaulders
 								i(185869),	-- Razorwing Scale Striders
 								i(186747),	-- Razorwing Scale Wristguards
@@ -303,25 +306,25 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 								i(186755),	-- Vault Guardian's Binders
 								i(185877),	-- Vault Guardian's Breastplate
 								i(186754),	-- Vault Guardian's Buckle
-								i(186749),	-- Vault Guardian's Chestpiece*
+								i(186749),	-- Vault Guardian's Chestpiece
 								i(185879),	-- Vault Guardian's Gauntlets
-								i(185882),	-- Vault Guardian's Girdle*
+								i(185882),	-- Vault Guardian's Girdle
 								i(186751),	-- Vault Guardian's Handguards
-								i(185876),	-- Vault Guardian's Helm*
-								i(185880),	-- Vault Guardian's Legguards*
+								i(185876),	-- Vault Guardian's Helm
+								i(185880),	-- Vault Guardian's Legguards
 								i(186752),	-- Vault Guardian's Legplates
 								i(185881),	-- Vault Guardian's Pauldrons
 								i(185878),	-- Vault Guardian's Sabatons
 								i(186753),	-- Vault Guardian's Shoulderplates
 								i(186750),	-- Vault Guardian's Stompers
 								i(185883),	-- Vault Guardian's Vambraces
-								i(186748),	-- Vault Guardian's Visor*
+								i(186748),	-- Vault Guardian's Visor
 							}),
 							filter(FINGER_F, {
-								i(185894),	-- Attendant's Loop*
-								i(185941),	-- Korthian Scholar's Signet*
-								i(185895),	-- Lost Wayfarer's Band*
-								i(185903),	-- Soul-Seeker's Ring*
+								i(185894),	-- Attendant's Loop
+								i(185941),	-- Korthian Scholar's Signet
+								i(185895),	-- Lost Wayfarer's Band
+								i(185903),	-- Soul-Seeker's Ring
 							}),
 							filter(TRINKET_F, {
 								i(186976),	-- Fine Razorwing Quill
@@ -331,80 +334,80 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						},
 					}),
 					i(188156, {	-- Korthian Accessory
-						["cost"] = { { "c", 1767, 750 } },	-- 750x Stygia
-						["timeline"] = { "added 9.1.5" },
+						["cost"] = { { "c", STYGIA, 750 } },
+						["timeline"] = { ADDED_SL_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_FINGER" },
 							{"sub", "korthian_armaments", "INVTYPE_TRINKET" },
 						},
 					}),
 					i(188161, {	-- Korthian Belt
-						["cost"] = { { "c", 1767, 750 } },	-- 750x Stygia
-						["timeline"] = { "added 9.1.5" },
+						["cost"] = { { "c", STYGIA, 750 } },
+						["timeline"] = { ADDED_SL_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_WAIST" },
 						},
 					}),
 					i(188155, {	-- Korthian Boots
-						["cost"] = { { "c", 1767, 1000 } },	-- 1000x Stygia
-						["timeline"] = { "added 9.1.5" },
+						["cost"] = { { "c", STYGIA, 1000 } },
+						["timeline"] = { ADDED_SL_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_FEET" },
 						},
 					}),
 					i(188163, {	-- Korthian Bracers
-						["cost"] = { { "c", 1767, 750 } },	-- 750x Stygia
-						["timeline"] = { "added 9.1.5" },
+						["cost"] = { { "c", STYGIA, 750 } },
+						["timeline"] = { ADDED_SL_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_WRIST" },
 						},
 					}),
 					i(188154, {	-- Korthian Chestpiece
-						["cost"] = { { "c", 1767, 1250 } },	-- 1250x Stygia
-						["timeline"] = { "added 9.1.5" },
+						["cost"] = { { "c", STYGIA, 1250 } },
+						["timeline"] = { ADDED_SL_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_CHEST" },
 							{"sub", "korthian_armaments", "INVTYPE_ROBE" },
 						},
 					}),
 					i(188153, {	-- Korthian Cloak
-						["cost"] = { { "c", 1767, 750 } },	-- 750x Stygia
-						["timeline"] = { "added 9.1.5" },
+						["cost"] = { { "c", STYGIA, 750 } },
+						["timeline"] = { ADDED_SL_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_CLOAK" },
 						},
 					}),
 					i(188157, {	-- Korthian Gloves
-						["cost"] = { { "c", 1767, 1000 } },	-- 1000x Stygia
-						["timeline"] = { "added 9.1.5" },
+						["cost"] = { { "c", STYGIA, 1000 } },
+						["timeline"] = { ADDED_SL_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_HAND" },
 						},
 					}),
 					i(188158, {	-- Korthian Helm
-						["cost"] = { { "c", 1767, 1250 } },	-- 1250x Stygia
-						["timeline"] = { "added 9.1.5" },
+						["cost"] = { { "c", STYGIA, 1250 } },
+						["timeline"] = { ADDED_SL_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_HEAD" },
 						},
 					}),
 					i(188159, {	-- Korthian Legguards
-						["cost"] = { { "c", 1767, 1250 } },	-- 1250x Stygia
-						["timeline"] = { "added 9.1.5" },
+						["cost"] = { { "c", STYGIA, 1250 } },
+						["timeline"] = { ADDED_SL_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_LEGS" },
 						},
 					}),
 					i(188160, {	-- Korthian Shoulders
-						["cost"] = { { "c", 1767, 1000 } },	-- 1000x Stygia
-						["timeline"] = { "added 9.1.5" },
+						["cost"] = { { "c", STYGIA, 1000 } },
+						["timeline"] = { ADDED_SL_1_5 },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_SHOULDER" },
 						},
 					}),
 					i(188162, {	-- Korthian Weaponry
-						["cost"] = { { "c", 1767, 1500 } },	-- 1500x Stygia
-						["timeline"] = { "added 9.1.5" },
+						["cost"] = { { "c", STYGIA, 1500 } },
+						["timeline"] = { ADDED_SL_1_5 },
 						["sym"] = {
 							{"select", "itemID", 187187 },		-- Korthian Armaments
 							{"pop"},							-- Discard Header
@@ -414,17 +417,17 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					}),
 				--	Epics
 					i(187541, {	-- Chain of Encircling Death
-						["cost"] = { { "c", 1767, 2000 } },	-- 2,000x Stygia
+						["cost"] = { { "c", STYGIA, 2000 } },
 					}),
 					i(187540, {	-- Cincture of Enveloping Death
-						["cost"] = { { "c", 1767, 2000 } },	-- 2,000x Stygia
+						["cost"] = { { "c", STYGIA, 2000 } },
 					}),
 					i(186997, {	-- Death's Advance Tabard
-						["cost"] = { { "c", 1767, 3000 } },	-- 3,000x Stygia
+						["cost"] = { { "c", STYGIA, 3000 } },
 					}),
 					i(186517, {	-- Ensemble: Battlefield Messenger's Regalia
-						["customCollect"] = "SL_COV_KYR",	-- Kyrian-only
-						["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
+						["customCollect"] = "SL_COV_KYR",	-- Kyrian
+						["cost"] = { { "c", STYGIA, 6000 } },
 						["g"] = {
 							i(184982),	-- Battlefield Messenger's Drape
 							i(184977),	-- Battlefield Messenger's Handwraps
@@ -438,8 +441,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						},
 					}),
 					i(186504, {	-- Ensemble: Frontline Necromancer's Vestments
-						["customCollect"] = "SL_COV_NEC",	-- Necrolord-only
-						["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
+						["customCollect"] = "SL_COV_NEC",	-- Necrolord
+						["cost"] = { { "c", STYGIA, 6000 } },
 						["g"] = {
 							i(185046),	-- Frontline Necromancer's Drape
 							i(185040),	-- Frontline Necromancer's Handwraps
@@ -453,8 +456,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						},
 					}),
 					i(186499, {	-- Ensemble: Garb of Fall's Promise
-						["customCollect"] = "SL_COV_NFA",	-- Night Fae-only
-						["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
+						["customCollect"] = "SL_COV_NFA",	-- Night Fae
+						["cost"] = { { "c", STYGIA, 6000 } },
 						["g"] = {
 							i(184965),	-- Drape of Fall's Promise
 							i(184959),	-- Handwraps of Fall's Promise
@@ -468,8 +471,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						},
 					}),
 					i(186511, {	-- Ensemble: Renathal's Battlefield Attire
-						["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
-						["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
+						["customCollect"] = "SL_COV_VEN",	-- Venthyr
+						["cost"] = { { "c", STYGIA, 6000 } },
 						["g"] = {
 							i(185072),	-- Renathal's Battlefield Drape
 							i(185067),	-- Renathal's Battlefield Handwraps
@@ -482,8 +485,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						},
 					}),
 					i(186512, {	-- Ensemble: Renathal's Field Inquisitor's Vestments
-						["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
-						["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
+						["customCollect"] = "SL_COV_VEN",	-- Venthyr
+						["cost"] = { { "c", STYGIA, 6000 } },
 						["g"] = {
 							i(185098),	-- Renathal's Field Inquisitor's Cloak
 							i(185104),	-- Renathal's Field Inquisitor's Handwraps
@@ -497,23 +500,23 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						},
 					}),
 					i(187539, {	-- Gauntlets of Death's Guardian
-						["cost"] = { { "c", 1767, 2000 } },	-- 2,000x Stygia
+						["cost"] = { { "c", STYGIA, 2000 } },
 					}),
 					i(187538, {	-- Gloves of Advancing Death
-						["cost"] = { { "c", 1767, 2000 } },	-- 2,000x Stygia
+						["cost"] = { { "c", STYGIA, 2000 } },
 					}),
 				--	Blues
 					i(186543, {	-- Domestic Aunian (PET!)
 						["cost"] = {
 							{ "i", 163036, 50 },	-- 50x Polished Pet Charm
-							{ "c", 1767, 1500 },	-- 1,500x Stygia
+							{ "c", STYGIA, 1500 },
 						},
 					}),
 					i(187411, {	-- Mantle of Death's Advance
-						["cost"] = { { "c", 1767, 500 } },	-- 500x Stygia
+						["cost"] = { { "c", STYGIA, 500 } },
 					}),
 					i(186598, {	-- Recipe: Crafter's Mark III
-						["cost"] = { { "c", 1767, 2000 } },	-- 2,000x Stygia
+						["cost"] = { { "c", STYGIA, 2000 } },
 						["g"] = {
 							recipe(343677, {	-- Crafter's Mark III
 								["requireSkill"] = ALCHEMY,
@@ -537,11 +540,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					}),
 					i(186453, {	-- Vault Anima Tracker
 						["questID"] = 64061,
-						["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
+						["cost"] = { { "c", STYGIA, 1000 } },
 					}),
 				--	Greens
 					i(186724, {	-- Technique: Contract: Death's Advance (RECIPE!)
-						["cost"] = { { "c", 1767, 2500 } },	-- 2,500x Stygia
+						["cost"] = { { "c", STYGIA, 2500 } },
 					}),
 				},
 			}),

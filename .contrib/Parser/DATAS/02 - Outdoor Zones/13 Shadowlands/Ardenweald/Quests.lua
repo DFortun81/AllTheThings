@@ -150,12 +150,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 169031 },	-- Lady Moonberry
 				["coord"] = { 63.5, 36.2, ARDENWEALD },
 			}),
-			q(63638, {	-- Can't Turn Our Backs
-				["sourceQuests"] = { 63578 },	-- The Battle of Ardenweald
-				["provider"] = { "n", 177148 },	-- Lady Moonberry
-				["coord"] = { 48.7, 43.3, ARDENWEALD },
-				["timeline"] = { "added 9.1.0" },
-			}),
 			q(58592, {	-- Caring for the Caretakers
 				["sourceQuests"] = { 60572 },	-- For the Sake of Spirit
 				["provider"] = { "n", 160962 },	-- Dreamweaver
@@ -476,12 +470,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(175114),	-- Renny (PET!)
 				},
 			}),
-			q(63639, {	-- Report to Oribos
-				["sourceQuests"] = { 63904 },	-- The Heart of Ardenweald
-				["provider"] = { "n", 177460 },	-- Winter Queen
-				["coord"] = { 47.1, 48.5, ARDENWEALD },
-				["timeline"] = { "added 9.1.0" },
-			}),
 			q(60522, {	-- Return to Tirna Vaal
 				["sourceQuests"] = { 60632 },	-- I Know Your Face
 				["provider"] = { "n", 169935 },	-- Ara'lon
@@ -496,12 +484,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 60600 },	-- Preparing for the Winter Queen
 				["provider"] = { "n", 158487 },	-- Droman Tashmur
 				["coord"] = { 63.5, 36.2, ARDENWEALD },
-			}),
-			q(64042, {	-- Rituals of Night
-				["sourceQuests"] = { 63681 },	-- Back to The Heart
-				["provider"] = { "n", 177434 },	-- Ysera
-				["coord"] = { 48.0, 53.9, ARDENWEALD },
-				["timeline"] = { "added 9.1.0" },
 			}),
 			q(60064, {	-- Save Ol' Gertie
 				["sourceQuests"] = { 60062 },	-- The Shattered Harp
@@ -674,26 +656,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 160121 },	-- Master Sha'lor
 				["coord"] = { 62.9, 36.2, ARDENWEALD },
 			}),
-			q(63904, {	-- The Heart of Ardenweald
-				["sourceQuests"] = { 63638 },	-- Can't Turn Our Backs
-				["provider"] = { "n", 177460 },	-- Winter Queen
-				["coord"] = { 47.1, 48.5, ARDENWEALD },
-				["timeline"] = { "added 9.1.0" },
-				["_drop"] = { "g" },	-- drop anima trash
-			}),
 			q(60628, {	-- The Missing Hunters
 				["sourceQuests"] = { 60521 },	-- Call of the Hunt
 				["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
 				["coord"] = { 51.3, 34.0, ARDENWEALD },
-			}),
-			q(63682, {	-- The Power of Elune
-				["sourceQuests"] = { 64042 },	-- Rituals of Night
-				["provider"] = { "n", 177434 },	-- Ysera
-				["coord"] = { 45.3, 64.8, ARDENWEALD },
-				["timeline"] = { "added 9.1.0" },
-				["g"] = {
-					i(182171),	-- Hippogryph Soul
-				},
 			}),
 			q(58724, {	-- The Queen's Request
 				["sourceQuests"] = { 58723 },	-- The Court of Winter
@@ -887,13 +853,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 60341 },	-- First on the Agenda
 				["provider"] = { "n", 170175 },	-- Featherlight
 				["coord"] = { 65.0, 19.5, ARDENWEALD },
-			}),
-			q(63683, {	-- Winter's Sigil
-				["sourceQuests"] = { 63682 },	-- The Power of Elune
-				["provider"] = { "n", 178669 },	-- Winter Queen
-				["coord"] = { 45.2, 65.1, ARDENWEALD },
-				["timeline"] = { "added 9.1.0" },
-				["_drop"] = { "g" },	-- drop anima trash
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(62773, {	-- Dreamshrine Basin (pre-60)

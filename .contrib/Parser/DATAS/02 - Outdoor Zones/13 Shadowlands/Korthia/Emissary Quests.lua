@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	m(KORTHIA, {
 		n(EMISSARY_QUESTS, {
 			q(64012, {	-- Supplies from Death's Advance
@@ -25,14 +24,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						i(186538),	-- Gnashtooth (PET!)
 					}),
 				},
-			}),
-		}),
-		n(FACTIONS, {
-			faction(2470, {	-- Death's Advance
-				ach(15059),	-- Death's Advance
-			}),
-			faction(2472, {	-- The Archivist's Codex
-				ach(15069),	-- The Archivist's Codex
 			}),
 		}),
 	}),

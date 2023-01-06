@@ -23,7 +23,19 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					}),
 				}),
 			}),
-			n(QUESTS, {}),	-- Do Not Remove
+			n(QUESTS, {
+				q(60057, {	-- Necrotic Wake: A Paragon's Plight
+					["sourceQuests"] = { 60055 },	-- A Time For Courage
+					["provider"] = { "n", 167584 },	-- Disciple Artemede
+					["coord"] = { 40.9, 55.3, BASTION },
+					["g"] = {
+						i(184714),	-- Refulgent Chestguard
+						i(184713),	-- Refulgent Cuirass
+						i(184712),	-- Refulgent Raiment
+						i(184715),	-- Refulgent Tunic
+					},
+				}),
+			}),
 			n(CONDUITS, {
 				e(2395, {	-- Blightbone
 					["crs"] = { 162691 },	-- Blightbone

@@ -666,11 +666,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "n", 173193 },	-- Xandria
 				["coord"] = { 31.0, 29.1, MALDRAXXUS },
 			}),
-			q(57967, {	-- Rightful Resting Place
-				["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
-				["provider"] = { "n", 159248 },	-- Haetio
-				["coord"] = { 43.2, 38.5, BASTION },
-			}),
 			q(57115, {	-- Sacred Scrolls of Humility
 				["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
 				["provider"] = { "n", 156327 },	-- Voitha
@@ -786,12 +781,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["sourceQuests"] = { 58795 },	-- Ascended
 				["provider"] = { "n", 163650 },	-- Kleia
 				["coord"] = { 51.6, 47.7, ARCHONS_RISE },
-			}),
-			q(63591, {	-- The Grand Reception
-				["sourceQuests"] = { 63584 },	-- A Triumphant Return
-				["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
-				["coord"] = { 64.0, 19.1, ARCHONS_RISE },
-				["maps"] = { 2017 },	-- Spires of Ascension (scenario)
 			}),
 			q(58846, {	-- The Greater Good
 				["sourceQuests"] = { 58844 },	-- Before the Dawn

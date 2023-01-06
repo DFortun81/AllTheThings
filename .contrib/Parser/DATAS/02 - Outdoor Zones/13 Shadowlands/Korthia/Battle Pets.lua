@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	m(KORTHIA, {
 		petbattle(filter(BATTLE_PETS, {
 			pet(3102, {	-- Animite Broodling
@@ -23,8 +22,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			pet(3135, {	-- Young Garnetgullet
 				["cr"] = 179250,	-- Young Garnetgullet
 			}),
-			-- chompy = visitor dailies: oozing with character & local reagents (possibly hidden reward for ooz/bloop/plaguey achievements?)
-			-- korthian specimen = no info/tooltip on mouseover in pet journal
 		})),
 	}),
 })));

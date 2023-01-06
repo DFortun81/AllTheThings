@@ -337,6 +337,17 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 				},
 			}),
+			i(186188, {	-- Lil'Abom (PET!)
+				["description"] = "What controls the availability of parts is currently unknown.  They appear to spawn in Perdition Hold and the surrounding area, next to dead Prime Guards.  If you cannot find parts at any of the provided coordinates, try using |cFFFFFFFF/tar Prime Guard|r.",
+				["cost"] = {
+					{ "i", 186183, 1 },	-- Lil'Abom Head
+					{ "i", 186185, 1 },	-- Lil'Abom Legs
+					{ "i", 186186, 1 },	-- Lil'Abom Right Hand
+					{ "i", 186187, 1 },	-- Lil'Abom Spare Arm
+					{ "i", 186184, 1 },	-- Lil'Abom Torso
+				},
+				["timeline"] = { ADDED_SL_S2 },
+			}),
 		}),
 	}),
 })));

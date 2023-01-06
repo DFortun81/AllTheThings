@@ -69,11 +69,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				{ 64.0, 62.0, REVENDRETH },
 			},
 		}),
-		ach(14767, {	-- Count Your Blessings
-			crit(1),		-- Purified Blessing of Grace
-			crit(2),		-- Purified Blessing of Power
-			crit(3),		-- Purified Blessing of Fortitude
-		}),
 		ach(15053, {	-- Explore Korthia
 			crit(1),	-- Estuary of Awakening
 			crit(2),	-- Hope's Ascent
@@ -99,16 +94,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(11),		-- The Beastwarrens
 			crit(12),		-- Zovaal's Cauldron
 		}),
-		ach(14745),		-- Grand Theft Shadehound
-		ach(14943),		-- Guarmageddon
 		ach(14626),		-- Harvester of Sorrow
-		ach(14738, {	-- Hunting Party
-			crit(1),		-- Complete Hunt: Shadehounds
-			crit(2),		-- Complete Hunt: Soul Eaters
-			crit(3),		-- Complete Hunt: Death Elemental
-			crit(4),		-- Complete Hunt: Winged Soul Eaters
-		}),
-		ach(14733),		-- In the Hot Seat
 		ach(14660, {	-- It's About Sending a Message (all criteria below)
 			ach(14659),		-- Handling His Henchmen (5 of the criteria below)
 			crit(1),		-- Drifting Sorrow
@@ -210,13 +196,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			},
 		}),
 		ach(14746),		-- Prepare for Trouble!
-		ach(14734, {	-- Rallying Cry of the Ascended
-			crit(1),		-- Vesper of Courage
-			crit(2),		-- Vesper of Wisdom
-			crit(3),		-- Vesper of Humility
-			crit(4),		-- Vesper of Loyalty
-			crit(5),		-- Vesper of Purity
-		}),
 		ach(14825, {	-- Shadowlands Voyager
 			ach(15388, {	-- Shadowlands Explorer
 				ach(14306, {	-- Explore Revendreth
@@ -268,19 +247,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 					crit(11),		-- Darkreach
 					crit(12),		-- Crumbled Ridge
 					crit(13),		-- Gossamer Cliffs
-				}),
-				ach(14303, {	-- Explore Bastion
-					crit(1),		-- Vestribule of Eternity
-					crit(2),		-- Temple of Humility
-					crit(3),		-- Purity's Pinnacle
-					crit(4),		-- Firstborne's Bounty
-					crit(5),		-- The Mnemonic Locus
-					crit(6),		-- The Eternal Forge
-					crit(7),		-- Elysian Hold
-					crit(8),		-- Citadel of Loyalty
-					crit(9),		-- Temple of Courage
-					crit(10),		-- Aspirant's Crucible
-					crit(11),		-- Agthia's Repose
 				}),
 			}),
 			ach(14310, {	-- Adventurer of Revendreth
@@ -356,37 +322,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				crit(21),		-- Warbringer Mal'Korak
 				crit(22),		-- Necromantic Anomaly
 			}),
-			ach(14307, {	-- Adventurer of Bastion
-				crit(1),		-- Herculon
-				crit(2),		-- Fallen Acolyte Erisne
-				crit(3),		-- Sigilback
-				crit(4),		-- Cloudtail
-				crit(5),		-- Nemaeus
-				crit(6),		-- Baedos
-				crit(7),		-- Wingflayer the Cruel
-				crit(8),		-- Vesper Repair: Sophia's Aria
-				crit(9),		-- Dionae
-				crit(10),		-- Sundancer
-				crit(11),		-- Basilofos, King of the Hill
-				crit(12),		-- Dark Watcher
-				crit(13),		-- Cloudfeather Patriarch
-				crit(14),		-- Enforcer Aegeon
-				crit(15),		-- Unstable Memory
-				crit(16),		-- Embodied Hunger
-				crit(17),		-- Xixin the Ravening
-				crit(18),		-- Worldfeaster Chronn
-				crit(19),		-- Collector Astorestes
-				crit(20),		-- Demi the Relic Hoarder
-				crit(21),		-- Bookkeeper Mnemis
-				crit(22),		-- Aspirant Eolis
-				crit(23),		-- Echo of Aella
-				crit(24),		-- Corrupted Clawguard
-				crit(25),		-- Reekmonger
-				crit(26),		-- Aethon
-				crit(27),		-- Vesper Repair: Sophia's Overture
-				crit(28),		-- Orstus and Sotiros
-				crit(29),		-- The Ascended Council
-			}),
 			ach(14313, {	-- Treasures of Ardenweald
 				crit(1),		-- Aerto's Body
 				crit(2),		-- Lost Satchel
@@ -420,7 +355,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				crit(13),		-- Ritualist's Cache
 			}),
 		}),
-		ach(14658),		-- Soulkeeper's Burden
 		ach(14771, {	-- The Afterlife Express
 			crit(1),		-- Chalice Carriage
 			crit(2),		-- Old Gate Carriage
@@ -485,18 +419,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			}),
 		}),
 		ach(14791),		-- Toss a Seed to Your Hunter...
-		ach(15099, {	-- Treasures of Korthia
-			crit(1),	-- Glittering Nest Material
-			crit(2),	-- Forgotten Feather
-			crit(3),	-- Lost Memento
-			crit(4),	-- Dislodged Nest
-			crit(5),	-- Anima Laden Egg
-			crit(6),	-- Displaced Relic
-			crit(7),	-- Helsworn Chest
-			crit(8),	-- Jeweled Heart
-			crit(9),	-- Infested Vestige
-			crit(10),	-- Offering Box
-		}),
 		ach(15648, sharedDataSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Walking in Maw-mphis
 			title(462),	-- <Name>, Maw Walker
 			crit(1),	-- 'Ghast Five
@@ -507,12 +429,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(6),	-- Soulkeeper's Burden
 			crit(7),	-- Explore The Maw
 		})),
-		ach(14768, {	-- What is that Melody?
-			crit(1),		-- Hymn of Purity
-			crit(2),		-- Hymn of Courage
-			crit(3),		-- Hymn of Humility
-			crit(4),		-- Hymn of Wisdom
-		}),
 		ach(14742),		-- Who Sent You?
 		ach(14779, {	-- Wild Hunting
 			crit(1),		-- Nightsong Wader

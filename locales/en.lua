@@ -1376,7 +1376,6 @@ app.L = {
 		[-973] = 3536186,																	-- Loyalty
 		[-974] = 3536184,																	-- Wisdom
 		[-975] = 3536187,																	-- Humility
-		[-978] = 651097,																	-- The Rift
 		[-981] = 3601566,																	-- Conduits
 		[-982] = 2178518,																	-- Skoldus Hall
 		[-983] = 1392920,																	-- Fracture Chambers
@@ -1904,8 +1903,6 @@ app.L = {
 		[-916] = string.format(COVENANT_SANCTUM_TIER, 1),						-- Tier 1
 		[-917] = string.format(COVENANT_SANCTUM_TIER, 2),						-- Tier 2
 		[-918] = string.format(COVENANT_SANCTUM_TIER, 3),						-- Tier 3
-		[-977] = "Maelie the Wanderer",											-- Maelie the Wanderer
-		[-978] = select(1, GetSpellInfo(354778)),								-- The Rift
 		[-979] = "Broker Ve'ken & Broker Ve'nott",								-- Broker Ve'ken & Broker Ve'nott
 		[-981] = GetSpellInfo(348869),											-- Conduits
 		-- SL Maldraxxus/Necrolord
@@ -1923,7 +1920,6 @@ app.L = {
 		[-936] = "Soulshape Forms",												-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
 		[-939] = GetSpellInfo(321076),											-- Kyrian
-		[-940] = "Ascended Council",											-- Ascended Counil
 		[-942] = COVENANT_SANCTUM_FEATURE_KYRIAN,								-- Path of Ascension
 		[-972] = C_PetJournal.GetPetInfoBySpeciesID(3065),						-- Courage
 		[-973] = "Loyalty",														-- Loyalty

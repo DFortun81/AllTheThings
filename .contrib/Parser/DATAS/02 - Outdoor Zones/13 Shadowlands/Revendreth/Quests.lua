@@ -136,15 +136,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["description"] = "The quest item drops from Depraved and Dredger mobs in the Court of the Harvesters.",
 				["provider"] = { "i", 172957 },	-- Atonement Crypt Key
 			}),
-			q(63681, {	-- Back to The Heart
-				["sourceQuests"] = { 63680 },	-- Out On the Edge
-				["providers"] = {
-					{ "n", 177962 },	-- Lady Moonberry <Court of Night>
-					{ "n", 177964 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
-				},
-				["coord"] = { 34.0, 9.65, REVENDRETH },
-				["timeline"] = { "added 9.1.0" },
-			}),
 			q(58936, {	-- Beast Control
 			--	TODO: verify SQs.  i saw it after turning in 57098, "The Grove of Terror," not sure if it was available before that
 				["provider"] = { "o", 355296 },	-- Bounty: Beast Control
@@ -204,21 +195,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(175417),	-- Soul Hunter's Hauberk
 					i(175416),	-- Stoneforged Chestplate
 				},
-			}),
-			q(63646, {	-- Convoy of the Covenants
-				["sourceQuests"] = { 63644 },	-- Dread Tidings
-				["provider"] = { "n", 168898 },	-- Prince Renathal
-				["coord"] = { 22.9, 43.7, REVENDRETH },
-				["timeline"] = { "added 9.1.0" },
-			}),
-			q(63650, {	-- De-Infiltration
-				["sourceQuests"] = {
-					63648,	-- Nal'ragas
-					63649,	-- Spy vs Spy
-				},
-				["provider"] = { "n", 177644 },	-- Prince Renathal
-				["coord"] = { 25.0, 27.9, REVENDRETH },
-				["timeline"] = { "added 9.1.0" },
 			}),
 			q(57164, {	-- Devour This
 				["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
@@ -316,12 +292,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 				["provider"] = { "n", 160248 },	-- Archivist Fane
 				["coord"] = { 73.0, 52.0, REVENDRETH },
-			}),
-			q(64092, {	-- Hunting Huln
-				["sourceQuests"] = { 63679 },	-- Magical Mystery Tour!
-				["provider"] = { "n", 177962 },	-- Lady Moonberry
-				["coord"] = { 25.3, 29.0, REVENDRETH },
-				["timeline"] = { "added 9.1.0" },
 			}),
 			q(60514, {	-- Hunting Trophies
 				["sourceQuests"] = { 59014 },	-- King of the Hill
@@ -426,12 +396,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "i", 180834 },	-- Renathal's Journal Pages
 				["repeatable"] = true,
 			}),
-			q(64091, {	-- Mal'appropriated
-				["sourceQuests"] = { 64092 },	-- Hunting Huln
-				["provider"] = { "n", 179327 },	-- Mal'Ganis
-				["coord"] = { 37.9, 23.4, REVENDRETH },
-				["timeline"] = { "added 9.1.0" },
-			}),
 			q(59715, {	-- Message for Matyas
 				["sourceQuests"] = {
 					59714,	-- A Fine Vintage
@@ -473,12 +437,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(175424),	-- Stoneforged Grips
 				},
 			}),
-			q(63648, {	-- Nal'ragas
-				["sourceQuests"] = { 63647 },	-- The Unseen Guests
-				["provider"] = { "n", 177628 },	-- Kael'thas Sunstrider
-				["coord"] = { 36.0, 22.4, REVENDRETH },
-				["timeline"] = { "added 9.1.0" },
-			}),
 			q(61839, {	-- Nipping at the Undergrowth
 				["description"] = "Becomes available in the Endmire north of Darkhaven after looting Impressionable Gorger Spawn from the Worldedge Gorger.",
 				["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
@@ -515,15 +473,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["altQuests"] = { 57918 },	-- The Absolution of Souls
 				["provider"] = { "n", 160248 },	-- Archivist Fane
 				["coord"] = { 72.9, 52.0, REVENDRETH },
-			}),
-			q(63680, {	-- Out On the Edge
-				["sourceQuests"] = { 64090 },	-- The Big Squeeze
-				["providers"] = {
-					{ "n", 177964 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
-					{ "n", 177967 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
-				},
-				["coord"] = { 35.6, 22.6, REVENDRETH },
-				["timeline"] = { "added 9.1.0" },
 			}),
 			q(62189, {	-- Parasol Components
 				["provider"] = { "i", 182738 },	-- Bundle of Smuggled Parasol Components
@@ -676,12 +625,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["description"] = "Pick up the Hollow Rock at |cFFFFFFFF38.8, 64.3|r, or Stonehead will fling you away when you try to approach the quest.",
 				["coord"] = { 39.2, 65.2, REVENDRETH },
 			}),
-			q(63649, {	-- Spy vs Spy
-				["sourceQuests"] = { 63647 },	-- The Unseen Guests
-				["provider"] = { "n", 177637 },	-- Baroness Vashj
-				["coord"] = { 36.0, 22.4, REVENDRETH },
-				["timeline"] = { "added 9.1.0" },
-			}),
 			q(62044, {	-- Standing Toe To Toe
 				["sourceQuests"] = { 61844 },	-- Hungry Hungry Gorger
 				["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
@@ -723,12 +666,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 57178 },	-- The Master Awaits
 				["provider"] = { "n", 156644 },	-- Sire Denathrius
 				["coord"] = { 57.4, 49.4, REVENDRETH },
-			}),
-			q(64090, {	-- The Big Squeeze
-				["sourceQuests"] = { 64091 },	-- Mal'appropriated
-				["provider"] = { "n", 177968 },	-- Cudgelface
-				["coord"] = { 38.0, 23.7, REVENDRETH },
-				["timeline"] = { "added 9.1.0" },
 			}),
 			q(57876, {	-- The End of the Beginning
 				["sourceQuests"] = { 58086 },	-- The Master of Lies
@@ -799,19 +736,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(175479),	-- Stoneforged Cover
 				},
 			}),
-			q(63656, {	-- The Meaning of Wrath
-				["sourceQuests"] = { 63654 },	-- The Nathrezim
-				["provider"] = { "n", 179978 },	-- The Accuser
-				["coord"] = { 23.1, 45.9, REVENDRETH },
-				["timeline"] = { "added 9.1.0" },
-			}),
-			q(63654, {	-- The Nathrezim
-				["sourceQuests"] = { 63653 },	-- The Power of a Crown
-				["provider"] = { "n", 178337 },	-- The Stonewright
-				["coord"] = { 25.2, 45.1, REVENDRETH },
-				["_drop"] = { "g" },	-- drop anima trash
-				["timeline"] = { "added 9.1.0" },
-			}),
 			q(58060, {	-- The Night Market
 				["provider"] = { "n", 160100 },	-- Provisioner Dracho
 				["coord"] = { 61.0, 39.6, REVENDRETH },
@@ -853,12 +777,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 56978 },	-- To Darkhaven
 				["provider"] = { "n", 156374 },	-- Lord Chamberlain
 				["coord"] = { 63.2, 62.1, REVENDRETH },
-			}),
-			q(63647, {	-- The Unseen Guests
-				["sourceQuests"] = { 63646 },	-- Convoy of the Covenants
-				["provider"] = { "n", 165866 },	-- The Stonewright
-				["coord"] = { 34.3, 22.0, REVENDRETH },
-				["timeline"] = { "added 9.1.0" },
 			}),
 			q(57428, {	-- Theotar's Mission
 				["sourceQuests"] = { 57405 },	-- Chasing Madness
@@ -978,13 +896,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["g"] = {
 					i(177665),	-- Spectral Hankerchief
 				},
-			}),
-			q(63645, {	-- The Dawnkeep Prisoner
-				["sourceQuests"] = { 63644 },	-- Dread Tidings
-				["altQuests"] = { 60501 },	-- Redemption for the Redeemer
-				["provider"] = { "n", 168898 },	-- Prince Renathal
-				["coord"] = { 22.9, 43.7, REVENDRETH },
-				["timeline"] = { "added 9.1.0" },
 			}),
 			n(BONUS_OBJECTIVES, {
 				-- TODO: Check Rewards they are true for Druid and Monk atm.
