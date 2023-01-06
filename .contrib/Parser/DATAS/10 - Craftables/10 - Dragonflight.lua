@@ -2561,7 +2561,7 @@ root("HiddenQuestTriggers", {
 			-- q(),	-- Crimson Combatant's Resilient Shoulderpads
 			-- q(),	-- Crimson Combatant's Resilient Trousers
 			-- q(),	-- Crimson Combatant's Resilient Wristwraps
-			-- q(),	-- Infurious Boots of Reprieve
+			q(71716),	-- Infurious Boots of Reprieve
 			-- q(),	-- Infurious Chainhelm Protector
 			-- q(),	-- Infurious Footwraps of Indemnity
 			-- q(),	-- Infurious Spirit's Hood
@@ -2576,7 +2576,7 @@ root("HiddenQuestTriggers", {
 			-- q(),	-- Finished Prototype Regal Barding
 			q(71764),	-- Earthshine Scales
 			q(71765),	-- Frostbite Scales
-			-- q(),	-- Infurious Hide
+			q(71762),	-- Infurious Hide
 			-- q(),	-- Infurious Scales
 			q(71760),	-- Mireslush Hide
 			q(71759),	-- Stonecrust Hide

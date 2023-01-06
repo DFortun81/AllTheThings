@@ -287,6 +287,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201783),	-- Tutaqan's Commendation
 				},
 			}),
+			q(72392, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 11 },	-- Iskaara Tuskarr Renown 11
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198866),	-- Small Iskaaran Supply Pack
+				},
+			}),
 				-- RENOWN 12 --
 			q(70960, {	-- Trader's Apparel
 				["minReputation"] = { 2511, 12 },	-- Iskaara Tuskarr Renown 12
@@ -523,6 +531,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(198339),	-- Dark Paw Pack
 					i(198340),	-- Red Paw Pack
 					i(198341),	-- Tan Paw Pack
+				},
+			}),
+				-- RENOWN 30 --
+			q(70969, {	-- Becoming One of Our Community
+				["minReputation"] = { 2511, 30 },	-- Iskaara Tuskarr Renown 30
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+				["g"] = {
+					title(476),	-- %s of Iskaara
 				},
 			}),
 		}),

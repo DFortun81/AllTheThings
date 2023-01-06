@@ -12,6 +12,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					ach(16410),	-- Siege on Dragonbane Keep: Snack Attack
 				}),
 				n(REWARDS, {
+					i(200116),	-- Everlasting Horn of Lavaswimming (TOY!)
 					i(202142),	-- Dragonbane Keep Strongbox [RARE]
 					i(200072, {	-- Dragonbane Keep Strongbox [EPIC]
 						["sym"] = {
@@ -26,9 +27,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							{"where", "headerID", ZONE_REWARDS},
 							{"pop"},
 							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-						},
-						["g"] = {
-							i(200116),	-- Everlasting Horn of Lavaswimming (TOY!)
 						},
 					}),
 				}),

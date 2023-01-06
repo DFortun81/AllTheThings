@@ -139,13 +139,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200867),	-- Glimmering Neltharite Cluster
 				},
 			}),
-			o(380615, {	-- Poacher's Pack
-				["coord"] = { 39.4, 86.3, THE_WAKING_SHORES },
-				["requireSkill"] = LEATHERWORKING,
-				["g"] = {
-					i(198711),	-- Poacher's Pack
-				},
-			}),
 			o(385021, {	-- Petrified Dragon Egg
 				["coords"] = {
 					{ 33.4, 77.1, THE_WAKING_SHORES },

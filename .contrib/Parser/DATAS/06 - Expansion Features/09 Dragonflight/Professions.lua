@@ -1426,7 +1426,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			o(380601, {	-- Dusty Darkmoon Card
 				["questID"] = 70297,
-				["coord"] = { 46.2, 23.9, THE_AZURE_SPAN },
+				["coord"] = { 46.2, 24.0, THE_AZURE_SPAN },
 				["g"] = {
 					i(198693),	-- Dusty Darkmoon Card
 				},
@@ -1457,7 +1457,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			o(380570, {	-- Curious Glyph
 				["description"] = "Interact with the glyph, cross the bridge and kill the neutral NPC at the end, then return to collect the treasure.",
 				["questID"] = 70248,
-				["coord"] = { 47.2, 40.1, THALDRASZUS },
+				["coord"] = { 47.1, 40.1, THALDRASZUS },
 				["g"] = {
 					i(198659),	-- Forgetful Apprentice's Tome (1 of 2)
 				},
@@ -1679,7 +1679,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			o(380577, {	-- Lofty Malygite
 				["questID"] = 70282,
-				["coord"] = { 25.2, 35.4, OHNAHRAN_PLAINS },
+				["coord"] = { 25.2, 34.8, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(198670),	-- Lofty Malygite
 				},
@@ -1867,7 +1867,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			o(380615, {	-- Poacher's Pack
 				["questID"] = 70308,
-				["coord"] = { 39.0, 86.0, THE_WAKING_SHORES },
+				["coord"] = { 39.4, 86.3, THE_WAKING_SHORES },
 				["g"] = {
 					i(198711),	-- Poacher's Pack
 				},
@@ -2369,7 +2369,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			o(380588, {	-- Miniature Bronze Dragonflight Banner
 				["questID"] = 70288,
-				["coord"] = { 58.6, 45.8, THALDRASZUS },
+				["coord"] = { 60.5, 79.7, THALDRASZUS },
 				["g"] = {
 					i(198684),	-- Miniature Bronze Dragonflight Banner
 				},

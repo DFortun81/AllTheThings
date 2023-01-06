@@ -28,7 +28,6 @@ title(472),	-- Birdwatcher %s
 10.0.0.45454
 title(474),	-- %s, Ally of Dragons
 title(475),	-- Intrepid Explorer %s
-title(476),	-- %s of Iskaara
 10.0.0.45661
 title(479),	-- Malicious %s
 10.0.2.45779

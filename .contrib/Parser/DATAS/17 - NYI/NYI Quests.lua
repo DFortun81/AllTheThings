@@ -7421,7 +7421,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(71713),	--
 			q(71714),	--
 			q(71715),	--
-			q(71716),	--
 			q(71717),	--
 			q(71718),	--
 			q(71719),	--
@@ -7450,7 +7449,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(71757),	--
 			q(71758),	--
 			q(71761),	--
-			q(71762),	--
 			q(71763),	--
 			q(71766),	--
 			q(71768),	--
@@ -7572,7 +7570,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72378),	--
 			q(72379),	--
 			-- 10.0.2.45969
-			q(72392),	-- Dragon Isles Supplies
 			q(72402),	--
 			q(72434),	--
 			q(72438),	-- Tarasek Intentions
