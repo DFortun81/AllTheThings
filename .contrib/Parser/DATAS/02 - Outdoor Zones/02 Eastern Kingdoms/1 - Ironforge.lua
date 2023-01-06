@@ -523,6 +523,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["qg"] = 6031,	-- Tormus Deepforge
 					["coord"] = { 48.6, 43, IRONFORGE },
 					["requireSkill"] = BLACKSMITHING,
+					["maps"] = { REDRIDGE_MOUNTAINS },
 					["cost"] = {
 						{ "i", 2857, 4 },	-- Runed Copper Belt
 						{ "i", 6214, 4 },	-- Heavy Copper Maul
@@ -995,6 +996,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["qg"] = 6031,	-- Tormus Deepforge
 					["coord"] = { 48.5, 43, IRONFORGE },
 					["requireSkill"] = BLACKSMITHING,
+					["maps"] = { LOCH_MODAN },
 					["cost"] = {
 						{ "i", 2845, 6 },	-- Copper Axe
 						{ "i", 2851, 6 },	-- Copper Chain Belt
