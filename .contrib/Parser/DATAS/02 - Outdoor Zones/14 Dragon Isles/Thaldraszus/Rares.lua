@@ -60,7 +60,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193125, {	-- Goremaul the Gluttonous
 				["coord"] = { 53.4, 41.0, THALDRASZUS },
-				-- ["questID"] = ,
+				["questID"] = 73878,
 				["g"] = {
 					i(200436),	-- Gorestained Hauberk
 				},
