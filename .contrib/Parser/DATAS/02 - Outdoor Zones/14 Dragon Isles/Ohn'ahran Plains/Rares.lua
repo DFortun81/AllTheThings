@@ -68,7 +68,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(187781, {	-- Hamett <Rockfang Matriarch>
-				["description"] = "Can spawn upon killing nearby Cats.",
+				["description"] = "Chance to spawn upon killing Sutaan.",
 				["coord"] = { 85.4, 15.8, OHNAHRAN_PLAINS },
 				["questID"] = 73951,
 				-- ["g"] = {
