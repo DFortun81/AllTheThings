@@ -73,7 +73,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193217, {	-- Drakewing
-				["coord"] = { 72.8, 47.0, THE_WAKING_SHORES },
+				["description"] = "Spawns at the top right of the river & follows it all the way down to the Dragonscale Basecamp. Once there, he cycles back to his spawnpoint, again following the river. Coordinates roughly show his path.",
+				["coords"] = {
+					{ 73.6, 46.4, THE_WAKING_SHORES },	
+					{ 69.2, 59.6, THE_WAKING_SHORES },	
+					{ 54.0, 34.6, THE_WAKING_SHORES },	
+					{ 55.2, 59.2, THE_WAKING_SHORES },	
+					{ 47.2, 78.0, THE_WAKING_SHORES },	
+				},
 				["questID"] = 73874,
 				["g"] = {
 					i(200219),	-- Dangerous Drapery
@@ -232,13 +239,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73890,
 				-- He "drops" 4 rare npcs upon dieing, but they have no drops. CRS doesnt seem useful
 				["g"] = {
-					n(192743, {	-- Stonefist Rejara
+					n(192738, {	-- Brundin the Dragonbane
 					}),
 					n(192741, {	-- Flamebreaker Grella
 					}),
-					n(192738, {	-- Brundin the Dragonbane
-					}),
 					n(192744, {	-- Scalemelter Dorbane
+					}),
+					n(192743, {	-- Stonefist Rejara
 					}),
 				},
 			}),

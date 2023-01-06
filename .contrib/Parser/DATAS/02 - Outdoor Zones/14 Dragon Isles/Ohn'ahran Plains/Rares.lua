@@ -159,7 +159,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(192557, {	-- Quackers the Terrible
-				["coord"] = { 68.2, 79.2, OHNAHRAN_PLAINS },
+				["description"] = "Requires Duck Trap Kit, purchased from a nearby camp (northern waypoint).\n\nYou'll need a rank 1 of these reagents:\n\n1 x Primal Molten Alloy\n\n3 x Resilient Leather\n\n4 x Spool of Wilderthread\n\nUse the item to trap a duck and then go to southern waypoint & put the trapped duck into the nest.",
+				["coords"] = { 
+					{ 68.2, 79.2, OHNAHRAN_PLAINS },
+					{ 70.43, 63.49, OHNAHRAN_PLAINS },
+				},
 				["questID"] = 73972,
 				-- ["g"] = {
 
