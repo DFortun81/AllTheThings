@@ -61,7 +61,9 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 				["description"] = "Requires Decayology."
 			}),
 		}),
-		n(HIDDEN_QUESTS, {
+		n(HIDDEN_QUESTS, sharedData({
+			["requireSkill"] = ALCHEMY,
+		},{
 			-- Alchemy Essentials
 			q(71251, { ["name"] = "First Craft: Advanced Phial Alchemical Experimentation", }),	-- Advanced Phial Alchemical Experimentation
 			q(71253, { ["name"] = "First Craft: Advanced Potion Alchemical Experimentation", }),	-- Advanced Potion Alchemical Experimentation
@@ -130,7 +132,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			-- Alchemist Stones
 			q(71246, { ["name"] = "First Craft: Alacritous Alchemist Stone", }),	-- Alacritous Alchemist Stone
 			q(71245, { ["name"] = "First Craft: Sustaining Alchemist Stone", }),	-- Sustaining Alchemist Stone
-		}),
+		})),
 		filter(MISC, {
 			i(191520),	-- Agitating Potion Augmentation+
 			i(191521),	-- Agitating Potion Augmentation++
@@ -307,7 +309,9 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 		filter(BATTLE_PETS, {
 			i(191886),	-- Alvin the Anvil (PET!)
 		}),
-		n(HIDDEN_QUESTS, {
+		n(HIDDEN_QUESTS, sharedData({
+			["requireSkill"] = BLACKSMITHING,
+		},{
 			-- Smelting --
 			q(71353, { ["name"] = "First Craft: Frostfire Alloy", }),	-- Frostfire Alloy
 			q(71355, { ["name"] = "First Craft: Infurious Alloy", }),	-- Infurious Alloy
@@ -404,7 +408,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			-- Dragon Riding
 			q(71342, { ["name"] = "First Craft: Prototype Explorer's Barding Framework", }),	-- Prototype Explorer's Barding Framework
 			q(71343, { ["name"] = "First Craft: Prototype Regal Barding Framework", }),	-- Prototype Regal Barding Framework
-		}),
+		})),
 		filter(MISC, {
 			i(191250),	-- Armor Spikes+
 			i(191872),	-- Armor Spikes++
@@ -687,7 +691,9 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 		filter(BATTLE_PETS, {
 			i(200479),	-- Sophic Amalgamation (PET!)
 		}),
-		n(HIDDEN_QUESTS, {
+		n(HIDDEN_QUESTS, sharedData({
+			["requireSkill"] = ENCHANTING,
+		},{
 			-- Cloak Enchantments
 			q(71403, { ["name"] = "First Craft: Graceful Avoidance", }),	-- Graceful Avoidance
 			q(71407, { ["name"] = "First Craft: Homebound Avoidance", }),	-- Homebound Avoidance
@@ -767,7 +773,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71934, { ["name"] = "Disenchant ? Mystic items", }),
 			q(71935, { ["name"] = "Disenchant ? Mystic items", }),
 			q(71941, { ["name"] = "Disenchant ? Mystic items", }),
-		}),
+		})),
 		filter(ILLUSIONS, {
 			i(200883),	-- Illusion: Primal Air
 			i(200905),	-- Illusion: Primal Earth
@@ -902,7 +908,9 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 		filter(BATTLE_PETS, {
 			i(193572),	-- Quack-E (PET!)
 		}),
-		n(HIDDEN_QUESTS, {
+		n(HIDDEN_QUESTS, sharedData({
+			["requireSkill"] = ENGINEERING,
+		},{
 			-- Parts --
 			q(71482, { ["name"] = "First Craft: Arclight Capacitor", }),	-- Arclight Capacitor
 			q(71484, { ["name"] = "First Craft: Assorted Safety Fuses", }),	-- Assorted Safety Fuses
@@ -1007,7 +1015,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			-- Robotics
 			q(71458, { ["name"] = "First Craft: D.U.C.K.O.Y", }),	-- D.U.C.K.O.Y
 			--q(, { ["name"] = "First Craft: Quack-E", }),	-- Quack-E
-		}),
+		})),
 		filter(MISC, {
 			i(198549),	-- Black Fireflight
 			i(198222),	-- Blue Fireflight
@@ -1306,7 +1314,9 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			i(197579),	-- Windborne Velocidrake: Steel and Orange Armor (DM!)
 			i(197634),	-- Windborne Velocidrake: Windswept Pattern (DM!)
 		}),
-		n(HIDDEN_QUESTS, {
+		n(HIDDEN_QUESTS, sharedData({
+			["requireSkill"] = INSCRIPTION,
+		},{
 			-- Unsorted
 			q(74102, { ["name"] = "First Craft: Crimson Combatant's Medallion", }),	-- Not commenting these, it's right there in the name
 			q(74103, { ["name"] = "First Craft: Crimson Combatant's Insignia", }),
@@ -1326,7 +1336,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71569, { ["name"] = "First Craft: Chilled Rune", }),
 			q(71601, { ["name"] = "First Craft: Serene Ink", }),
 			q(71599, { ["name"] = "First Craft: Blazing Ink", }),
-		}),
+		})),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)
 			i(199114), 	-- Fated Fortune Card
@@ -1663,7 +1673,9 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 				i(193370),	-- Silken Gemdust+++
 			}),
 		}),
-		n(HIDDEN_QUESTS, {
+		n(HIDDEN_QUESTS, sharedData({
+			["requireSkill"] = JEWELCRAFTING,
+		},{
 			-- Unsorted
 			q(71645, { ["name"] = "First Craft: Radiant Malygite", }),	-- Not commenting these, it's right there in the name
 			q(71609, { ["name"] = "First Craft: Crimson Combatant's Jeweled Signet", }),
@@ -1681,7 +1693,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71675, { ["name"] = "First Craft: Frameless Lens", }),
 			q(71602, { ["name"] = "First Craft: Pendant of Impending Perils", }),
 			q(71672, { ["name"] = "First Craft: Shimmering Clasp", }),
-		}),
+		})),
 		filter(BATTLE_PETS, {
 			i(193885),	-- Jeweled Amber Whelpling (PET!)
 			i(193888),	-- Jeweled Emerald Whelpling (PET!)
@@ -1910,7 +1922,9 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			i(193482),	-- Skinner's Cap
 			i(193612),	-- Smithing Apron
 		}),
-		n(HIDDEN_QUESTS, {
+		n(HIDDEN_QUESTS, sharedData({
+			["requireSkill"] = LEATHERWORKING,
+		},{
 			-- Unsorted
 			q(71721, { ["name"] = "First Craft: Crimson Combatant's Adamant Treads", }),	-- Not commenting these, it's right there in the name
 			q(71684, { ["name"] = "First Craft: Expert Alchemist's Hat", }),
@@ -1923,7 +1937,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71706, { ["name"] = "First Craft: Life-Bound Boots", }),
 			q(71704, { ["name"] = "First Craft: Pioneer's Leather Boots", }),
 			q(72502, { ["name"] = "First Craft: Trailblazer's Toughened Legguards", }),
-		}),
+		})),
 		filter(MISC, {
 			i(193468),	-- Fang Adornments+
 			i(193551),	-- Fang Adornments++
@@ -2185,11 +2199,13 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			i(198041),	-- Khaz'gorite Fabric Cutters Left Blade
 			i(194065),	-- Khaz'gorite Fabric Cutters Right Blade
 		}),
-		n(HIDDEN_QUESTS, {
+		n(HIDDEN_QUESTS, sharedData({
+			["requireSkill"] = TAILORING,
+		},{
 			-- Unsorted
 			q(71778, { ["name"] = "First Craft: Hood of Surging Time", }),	-- Not commenting these, it's right there in the name
 			q(72508, { ["name"] = "First Craft: Surveyor's Seasoned Pants", }),
-		}),
+		})),
 	}),
 })));
 
