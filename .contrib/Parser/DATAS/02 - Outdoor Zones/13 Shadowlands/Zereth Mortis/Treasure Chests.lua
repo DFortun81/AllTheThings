@@ -66,8 +66,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 			}),
 			o(375191, {	-- Dormant Alcove Arrangement
 				["description"] = "Requires Altonian Understanding and Chapter 6. Accessible with flying or via the Quintus Locus and dropping down.",
-				["questID"] = 65346,
 				["coord"] = { 51.03, 32.48, ZERETH_MORTIS },
+				["questID"] = 65346,
 				["g"] = sharedData({
 					["sourceQuest"] = 65346,	-- Dormant Alcove Arrangement
 					["cost"] = { { "i", 189863, 1 }, },	-- 1 Spatial Opener
@@ -247,14 +247,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["g"] = {
 					n(185261, {	-- Requisites Originator
 						["description"] = "Gather 60 Cosmic energy and go to Interior Locus then use Repertory Locus.",
-						["coord"] = { 31.3, 65, 2029 },
-						["questID"] = 65532,	-- Fourth Option?
-						["sourceQuest"] = 65344,
-						["isWeekly"] = true,
+						["sourceQuests"] = { 65344 },
 						["crs"] = {
 							184329,	-- Locus Shift (Gravid Repose)
 							184485,	-- Locus Shift (Interior)
 						},
+						["coord"] = { 31.3, 65, 2029 },
+						["questID"] = 65532,	-- Fourth Option?
+						["isWeekly"] = true,
 						["g"] = {
 							i(189179, {	-- Unalloyed Bronze Ingot
 								["description"] = "Select 4th option, 'Restore Genesis Potencies'.",
@@ -338,6 +338,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 			}),
 			o(373548, {	-- Template Archive
 				["description"] = "Found inside of Nexus of Actualization. Push Orb in the room before",
+				["coord"] = { 51.6, 86.6, ZERETH_MORTIS },
 				["questID"] = 65175,
 				["g"] = {
 					i(190060, {	-- Adventurous Pocopoc
@@ -347,7 +348,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 			}),
 			o(375495, {	-- Undulating Foliage
 				["description"] = "There is four runes that needs to be activated to activate the teleporter.",
-				["coord"] = { 52, 80, ZERETH_MORTIS },
+				["coord"] = { 52.0, 80.0, ZERETH_MORTIS },
 				["questID"] = 65572,
 				["g"] = {
 					n(185390, { -- Teleporter Lock
@@ -371,108 +372,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					i(190926),	-- Infested Automa Core (TOY!)
 				},
 			}),
-			o(375403, {	-- Pulp-Covered Relic
-				["description"] = "Talk to this chest multiple times and kill add waves.",
-				["crs"] = {
-					185502,	-- Pulp-Covered Relic
-					185265,	-- Pulp-Covered Relic
-				},
-				["questID"] = 65501,
-				["isDaily"] = true,
-				["coords"] = {
-					{ 42, 34.2, ZERETH_MORTIS },
-					{ 53.4, 25.8, ZERETH_MORTIS },
-					{ 52.8, 45.8, ZERETH_MORTIS },
-					{ 50.4, 41.2, ZERETH_MORTIS },
-					{ 64.4, 63.4, ZERETH_MORTIS },
-					{ 42, 34.2, ZERETH_MORTIS },
-				},
-				["g"] = {
-					i(189474),	-- Schematic: Buzz
-				},
-			}),
-			-- Repeatable chests with QuestID
-			o(375538, {	-- Lost Ovoid
-				["questID"] = 65624,
-				["isDaily"] = true,
-				["coords"] = {
-					{ 34.31, 66.55, ZERETH_MORTIS },
-					{ 34.52, 49.69, ZERETH_MORTIS },
-					{ 35.15, 49.02, ZERETH_MORTIS },
-					{ 35.97, 46.22, ZERETH_MORTIS },
-					{ 43.22, 84.88, ZERETH_MORTIS },
-					{ 46.69, 63.00, ZERETH_MORTIS },
-					{ 48.14, 73.55, ZERETH_MORTIS },
-					{ 49.18, 71.53, ZERETH_MORTIS },
-					{ 50.80, 70.81, ZERETH_MORTIS },
-					{ 52.43, 73.64, ZERETH_MORTIS },
-					{ 53.60, 72.60, ZERETH_MORTIS },
-					{ 53.83, 64.88, ZERETH_MORTIS },
-					{ 55.19, 76.85, ZERETH_MORTIS },
-					{ 55.98, 68.78, ZERETH_MORTIS },
-					{ 60.84, 75.94, ZERETH_MORTIS },
-					{ 61.07, 65.15, ZERETH_MORTIS },
-				},
-				["g"] = {
-					i(190239),	-- Lost Ovoid
-				},
-			}),
-			o(373568, {	-- Provis Cache
-				["description"] = "Use Firim's Spare Forge-tap to gain 15xEphemera Strands(187728) to get Ephemera Orb(187787), not guaranteed.",
-				["coord"] = { 42, 51.9, ZERETH_MORTIS },
-				["questID"] = 65183,
-				["isWeekly"] = true,
-				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
-				["g"] = {
-					i(189710, {	-- Pocopoc's Ruby and Platinum Body
-						["questID"] = 65474,
-					}),
-				},
-			}),
-			o(373579, {	-- Prying Eye Discovery
-				["coords"] = {
-					{ 35.2, 43.7, ZERETH_MORTIS },
-					{ 34.3, 44.3, ZERETH_MORTIS },
-					{ 48, 66.3, ZERETH_MORTIS },
-					{ 51.8, 77.8, ZERETH_MORTIS },
-				},
-				["questID"] = 65184,
-				["repeatable"] = true,
-				["g"] = {
-					i(189711, {	-- Pocopoc's Gold and Ruby Components
-						["questID"] = 65476,
-					}),
-					i(190096, {	-- Pocobold
-						["questID"] = 65534,
-					}),
-				},
-			}),
-			o(375404, {	-- Sandworn Chest
-				["description"] = "Key fragements drops in the area from mobs Sandworn Chest Key Fragment(190198)",
-				["coords"] = {
-					{ 64.8, 33.7, ZERETH_MORTIS },
-					{ 63.2, 26.0, ZERETH_MORTIS },
-					{ 60.9, 37.9, ZERETH_MORTIS },
-					{ 60.0, 25.8, ZERETH_MORTIS },
-					{ 63.2, 26.0, ZERETH_MORTIS },
-					{ 60.9, 37.9, ZERETH_MORTIS },
-					{ 61.4, 17.6, ZERETH_MORTIS },
-				},
-				["questID"] = 65611,
-				["cost"] = { { "i", 190197, 1 } },	-- Sandworn Chest Key
-				["repeatable"] = true,
-				["g"] = {
-					i(190189),	-- Sandworn Relic
-					i(190734),	-- Makaris's Satchel of Mines (TOY!)
-					i(189713, {	-- Pocopoc's Copper and Cobalt Components
-						["questID"] = 65478
-					}),
-					i(189714, {	-- Pocopoc's Platinum and Emerald Components
-						["questID"] = 65479,
-					}),
-				},
-			}),
-			-- Repeatable chests Without QuestID
+		}),
+		n(TREASURES, sharedData({ ["repeatable"] = true }, {
 			o(375362, {	-- Avian Nest
 				["coords"] = {
 					{ 40.5, 56.6, ZERETH_MORTIS },
@@ -485,13 +386,88 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					{ 48.4, 59.5, ZERETH_MORTIS },
 					{ 66.0, 42.8, ZERETH_MORTIS },
 					{ 68.5, 36.1, ZERETH_MORTIS },
-					{ 62, 42, ZERETH_MORTIS },
+					{ 62.0, 42.0, ZERETH_MORTIS },
 					{ 60.3, 71.6, ZERETH_MORTIS },
 					{ 59.1, 64.7, ZERETH_MORTIS },
 					{ 60.3, 71.7, ZERETH_MORTIS },
 				},
 				["g"] = {
 					i(189148),	-- Poultrid Lattice
+				},
+			}),
+			o(375950, {	-- Bauble of Pure Innovation
+				["description"] = "Multiple spawn places?",
+				["coord"] = { 34.5, 49.7, ZERETH_MORTIS },
+				["g"] = {
+					i(189171),	-- Bauble of Pure Innovation
+				},
+			}),
+			o(375974, {	-- Crystallized Echo of the First Song
+				["description"] = "Spawns in multple places.",
+				["coords"] = {
+					{ 77.5, 59.0, ZERETH_MORTIS },
+					{ 77.4, 45.4, ZERETH_MORTIS },
+					{ 77.6, 60.4, ZERETH_MORTIS },
+					{ 58.7, 89.8, ZERETH_MORTIS },
+				},
+				["g"] = {
+					i(189172),	-- Crystallized Echo of the First Song
+					i(189441),	-- Schematic: Resonant Echo
+				},
+			}),
+			o(375290, {	-- Cypher-Bound Chest
+				["coords"] = {
+					{ 59.5, 64.7, ZERETH_MORTIS },
+					{ 53.1, 63.8, ZERETH_MORTIS },
+					{ 52.2, 61.8, ZERETH_MORTIS },
+					{ 34.7, 68.9, ZERETH_MORTIS },
+					{ 44.7, 22.4, ZERETH_MORTIS },
+					{ 46.6, 8.7, ZERETH_MORTIS },
+					{ 47.8, 66.9, ZERETH_MORTIS },
+					{ 49.0, 65.3, ZERETH_MORTIS },
+					{ 55.5, 55.5, ZERETH_MORTIS },
+					{ 51.8, 72.0, ZERETH_MORTIS },
+					{ 48.3, 79.8, ZERETH_MORTIS },
+					{ 54.3, 84.2, ZERETH_MORTIS },
+					{ 59.4, 82.7, ZERETH_MORTIS },
+					{ 58.8, 20.8, ZERETH_MORTIS },
+					{ 59.2, 19.3, ZERETH_MORTIS },
+					{ 58.5, 20.3, ZERETH_MORTIS },
+					{ 63.0, 19.6, ZERETH_MORTIS },
+					{ 63.2, 19.6, ZERETH_MORTIS },
+					{ 29.3, 51.8, ZERETH_MORTIS },
+					{ 35.4, 51.7, ZERETH_MORTIS },
+					{ 51.1, 65.3, ZERETH_MORTIS },
+					{ 42.7, 76.4, ZERETH_MORTIS },
+					{ 39.8, 56.4, ZERETH_MORTIS },
+					{ 44.8, 50.8, ZERETH_MORTIS },
+					{ 54.2, 76.3, ZERETH_MORTIS },
+					{ 53.1, 71.3, ZERETH_MORTIS },
+					{ 59.4, 25.0, ZERETH_MORTIS },
+					{ 59.9, 34.0, ZERETH_MORTIS },
+					{ 59.6, 32.4, ZERETH_MORTIS },
+					{ 36.2, 38.4, ZERETH_MORTIS },
+					{ 43.6, 86.7, ZERETH_MORTIS },
+					{ 34.6, 68.8, ZERETH_MORTIS },
+					{ 59.4, 24.9, ZERETH_MORTIS },
+					{ 74.5, 60.6, ZERETH_MORTIS },
+					{ 54.0, 72.6, ZERETH_MORTIS },
+					{ 39.5, 41.4, ZERETH_MORTIS },
+					{ 59.9, 61.1, ZERETH_MORTIS },
+					{ 53.2, 85.6, ZERETH_MORTIS },
+					{ 50.0, 76.7, ZERETH_MORTIS },
+					{ 37.9, 32.5, ZERETH_MORTIS },
+					{ 58.7, 20.8, ZERETH_MORTIS },
+					{ 52.9, 58.6, ZERETH_MORTIS },
+					{ 47.0, 45.3, ZERETH_MORTIS },
+					{ 49.0, 65.3, ZERETH_MORTIS },
+					{ 51.0, 65.3, ZERETH_MORTIS },
+					{ 71.1, 28.7, ZERETH_MORTIS },
+					{ 42.6, 76.5, ZERETH_MORTIS },
+				},
+				["g"] = {
+					i(190740),	-- Automa Integration
+					i(190739),	-- Provis Wax
 				},
 			}),
 			o(375373, {	-- Discarded Automa Scrap
@@ -534,6 +510,53 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					{ 37.8, 56.9, ZERETH_MORTIS },
 				},
 			}),
+			o(375915, {	-- Glimmer of Serenity
+				["description"] = "Multiple spawn places. Usually on top of an orb.",
+				["coords"] = {
+					{ 50.0, 11.0, ZERETH_MORTIS },
+					{ 46.9, 11.2, ZERETH_MORTIS },
+					{ 64.7, 63.4, ZERETH_MORTIS },
+					{ 51.2, 28.3, ZERETH_MORTIS },
+					{ 50.7, 89.0, ZERETH_MORTIS },
+					{ 67.1, 15.9, ZERETH_MORTIS },
+					{ 43.0, 35.5, ZERETH_MORTIS },
+					{ 60.4, 25.3, ZERETH_MORTIS },
+					{ 52.9, 80.7, ZERETH_MORTIS },
+					{ 50.2, 32.2, ZERETH_MORTIS },
+					{ 67.0, 16.0, ZERETH_MORTIS },
+					{ 32.8, 39.3, ZERETH_MORTIS },
+					{ 66.3, 27.2, ZERETH_MORTIS },
+					{ 37.7, 29.1, ZERETH_MORTIS },
+					{ 61.5, 18.3, ZERETH_MORTIS },
+				},
+				["g"] = {
+					i(189168),	-- Glimmer of Serenity
+				},
+			}),
+			o(375538, {	-- Lost Ovoid
+				["coords"] = {
+					{ 34.31, 66.55, ZERETH_MORTIS },
+					{ 34.52, 49.69, ZERETH_MORTIS },
+					{ 35.15, 49.02, ZERETH_MORTIS },
+					{ 35.97, 46.22, ZERETH_MORTIS },
+					{ 43.22, 84.88, ZERETH_MORTIS },
+					{ 46.69, 63.00, ZERETH_MORTIS },
+					{ 48.14, 73.55, ZERETH_MORTIS },
+					{ 49.18, 71.53, ZERETH_MORTIS },
+					{ 50.80, 70.81, ZERETH_MORTIS },
+					{ 52.43, 73.64, ZERETH_MORTIS },
+					{ 53.60, 72.60, ZERETH_MORTIS },
+					{ 53.83, 64.88, ZERETH_MORTIS },
+					{ 55.19, 76.85, ZERETH_MORTIS },
+					{ 55.98, 68.78, ZERETH_MORTIS },
+					{ 60.84, 75.94, ZERETH_MORTIS },
+					{ 61.07, 65.15, ZERETH_MORTIS },
+				},
+				["questID"] = 65624,
+				["g"] = {
+					i(190239),	-- Lost Ovoid
+				},
+			}),
 			o(375363, {	-- Mawsworn Supply Chest
 				["coords"] = {
 					{ 46.1, 24.1, ZERETH_MORTIS },
@@ -553,6 +576,66 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				},
 				["g"] = {
 					i(190766),	-- Colossal Wraithbound Mawrat (MOUNT!)
+				},
+			}),
+			o(373579, {	-- Prying Eye Discovery
+				["coords"] = {
+					{ 35.2, 43.7, ZERETH_MORTIS },
+					{ 34.3, 44.3, ZERETH_MORTIS },
+					{ 48.0, 66.3, ZERETH_MORTIS },
+					{ 51.8, 77.8, ZERETH_MORTIS },
+				},
+				["questID"] = 65184,
+				["g"] = {
+					i(189711, {	-- Pocopoc's Gold and Ruby Components
+						["questID"] = 65476,
+					}),
+					i(190096, {	-- Pocobold
+						["questID"] = 65534,
+					}),
+				},
+			}),
+			o(375403, {	-- Pulp-Covered Relic
+				["description"] = "Talk to this chest multiple times and kill add waves.",
+				["crs"] = {
+					185502,	-- Pulp-Covered Relic
+					185265,	-- Pulp-Covered Relic
+				},
+				["coords"] = {
+					{ 42, 34.2, ZERETH_MORTIS },
+					{ 53.4, 25.8, ZERETH_MORTIS },
+					{ 52.8, 45.8, ZERETH_MORTIS },
+					{ 50.4, 41.2, ZERETH_MORTIS },
+					{ 64.4, 63.4, ZERETH_MORTIS },
+					{ 42, 34.2, ZERETH_MORTIS },
+				},
+				["questID"] = 65501,
+				["g"] = {
+					i(189474),	-- Schematic: Buzz
+				},
+			}),
+			o(375404, {	-- Sandworn Chest
+				["description"] = "Key fragements drops in the area from mobs Sandworn Chest Key Fragment(190198)",
+				["coords"] = {
+					{ 64.8, 33.7, ZERETH_MORTIS },
+					{ 63.2, 26.0, ZERETH_MORTIS },
+					{ 60.9, 37.9, ZERETH_MORTIS },
+					{ 60.0, 25.8, ZERETH_MORTIS },
+					{ 63.2, 26.0, ZERETH_MORTIS },
+					{ 60.9, 37.9, ZERETH_MORTIS },
+					{ 61.4, 17.6, ZERETH_MORTIS },
+				},
+				["questID"] = 65611,
+				["cost"] = { { "i", 190197, 1 } },	-- Sandworn Chest Key
+				["g"] = {
+					i(190189),	-- Sandworn Relic
+					i(190734),	-- Makaris's Satchel of Mines (TOY!)
+					i(189713, {	-- Pocopoc's Copper and Cobalt Components
+						["questID"] = 65478
+					}),
+					i(189714, {	-- Pocopoc's Platinum and Emerald Components
+						["questID"] = 65479,
+					}),
 				},
 			}),
 			o(376041, {	-- Shrouded Cypher Cache
@@ -591,106 +674,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					i(189158),	-- Glimmer of Cunning
 				},
 			}),
-			o(375290, {	-- Cypher-Bound Chest
-				["coords"] = {
-					{ 59.5, 64.7, ZERETH_MORTIS },
-					{ 53.1, 63.8, ZERETH_MORTIS },
-					{ 52.2, 61.8, ZERETH_MORTIS },
-					{ 34.7, 68.9, ZERETH_MORTIS },
-					{ 44.7, 22.4, ZERETH_MORTIS },
-					{ 46.6, 8.7, ZERETH_MORTIS },
-					{ 47.8, 66.9, ZERETH_MORTIS },
-					{ 49, 65.3, ZERETH_MORTIS },
-					{ 55.5, 55.5, ZERETH_MORTIS },
-					{ 51.8, 72, ZERETH_MORTIS },
-					{ 48.3, 79.8, ZERETH_MORTIS },
-					{ 54.3, 84.2, ZERETH_MORTIS },
-					{ 59.4, 82.7, ZERETH_MORTIS },
-					{ 58.8, 20.8, ZERETH_MORTIS },
-					{ 59.2, 19.3, ZERETH_MORTIS },
-					{ 58.5, 20.3, ZERETH_MORTIS },
-					{ 63, 19.6, ZERETH_MORTIS },
-					{ 63.2, 19.6, ZERETH_MORTIS },
-					{ 29.3, 51.8, ZERETH_MORTIS },
-					{ 35.4, 51.7, ZERETH_MORTIS },
-					{ 51.1, 65.3, ZERETH_MORTIS },
-					{ 42.7, 76.4, ZERETH_MORTIS },
-					{ 39.8, 56.4, ZERETH_MORTIS },
-					{ 44.8, 50.8, ZERETH_MORTIS },
-					{ 54.2, 76.3, ZERETH_MORTIS },
-					{ 53.1, 71.3, ZERETH_MORTIS },
-					{ 59.4, 25, ZERETH_MORTIS },
-					{ 59.9, 34, ZERETH_MORTIS },
-					{ 59.6, 32.4, ZERETH_MORTIS },
-					{ 36.2, 38.4, ZERETH_MORTIS },
-					{ 43.6, 86.7, ZERETH_MORTIS },
-					{ 34.6, 68.8, ZERETH_MORTIS },
-					{ 59.4, 24.9, ZERETH_MORTIS },
-					{ 74.5, 60.6, ZERETH_MORTIS },
-					{ 54, 72.6, ZERETH_MORTIS },
-					{ 39.5, 41.4, ZERETH_MORTIS },
-					{ 59.9, 61.1, ZERETH_MORTIS },
-					{ 53.2, 85.6, ZERETH_MORTIS },
-					{ 50.0, 76.7, ZERETH_MORTIS },
-					{ 37.9, 32.5, ZERETH_MORTIS },
-					{ 58.7, 20.8, ZERETH_MORTIS },
-					{ 52.9, 58.6, ZERETH_MORTIS },
-					{ 47.0, 45.3, ZERETH_MORTIS },
-					{ 49.0, 65.3, ZERETH_MORTIS },
-					{ 51.0, 65.3, ZERETH_MORTIS },
-					{ 71.1, 28.7, ZERETH_MORTIS },
-					{ 42.6, 76.5, ZERETH_MORTIS },
-				},
+		})),
+		n(TREASURES, sharedData({ ["isWeekly"] = true }, {
+			o(373568, {	-- Provis Cache
+				["description"] = "Use Firim's Spare Forge-tap to gain 15xEphemera Strands(187728) to get Ephemera Orb(187787), not guaranteed.",
+				["coord"] = { 42, 51.9, ZERETH_MORTIS },
+				["questID"] = 65183,
+				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
+				["isWeekly"] = true,
 				["g"] = {
-					i(190740),	-- Automa Integration
-					i(190739),	-- Provis Wax
-				},
-			}),
-		}),
-		n(TREASURES, sharedData({ ["repeatable"] = true }, {
-			o(375915, {	-- Glimmer of Serenity
-				["description"] = "Multiple spawn places. Usually on top of an orb.",
-				["coords"] = {
-					{ 50.0, 11.0, ZERETH_MORTIS },
-					{ 46.9, 11.2, ZERETH_MORTIS },
-					{ 64.7, 63.4, ZERETH_MORTIS },
-					{ 51.2, 28.3, ZERETH_MORTIS },
-					{ 50.7, 89.0, ZERETH_MORTIS },
-					{ 67.1, 15.9, ZERETH_MORTIS },
-					{ 43.0, 35.5, ZERETH_MORTIS },
-					{ 60.4, 25.3, ZERETH_MORTIS },
-					{ 52.9, 80.7, ZERETH_MORTIS },
-					{ 50.2, 32.2, ZERETH_MORTIS },
-					{ 67.0, 16.0, ZERETH_MORTIS },
-					{ 32.8, 39.3, ZERETH_MORTIS },
-					{ 66.3, 27.2, ZERETH_MORTIS },
-					{ 37.7, 29.1, ZERETH_MORTIS },
-					{ 61.5, 18.3, ZERETH_MORTIS },
-				},
-				["g"] = {
-					i(189168),	-- Glimmer of Serenity
-				},
-			}),
-			o(375974, {	-- Crystallized Echo of the First Song
-				["description"] = "Spawns in multple places.",
-				["coords"] = {
-					{ 77.5, 59, ZERETH_MORTIS },
-					{ 77.4, 45.4, ZERETH_MORTIS },
-					{ 77.6, 60.4, ZERETH_MORTIS },
-					{ 58.7, 89.8, ZERETH_MORTIS },
-				},
-				["g"] = {
-					i(189172),	-- Crystallized Echo of the First Song
-					i(189441),	-- Schematic: Resonant Echo
-				},
-			}),
-			o(375950, {	-- Bauble of Pure Innovation
-				["description"] = "Multiple spawn places?",
-				["coords"] = {
-					{ 34.5, 49.7, ZERETH_MORTIS },
-				},
-				["g"] = {
-					i(189171),	-- Bauble of Pure Innovation
+					i(189710, {	-- Pocopoc's Ruby and Platinum Body
+						["questID"] = 65474,
+					}),
 				},
 			}),
 		})),

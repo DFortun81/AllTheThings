@@ -495,9 +495,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 						["g"] = {
 							i(187527),	-- Aeon Matrix
 							i(187788, {	-- Aetheric Lattice
-								["coords"] = {
-									{ 53.0, 29.1, ZERETH_MORTIS },
-								},
+								["coord"] = { 53.0, 29.1, ZERETH_MORTIS },
 							}),
 							i(187891, {	-- Empyrean Essence
 								["coords"] = {
@@ -560,15 +558,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 										i(187866),	-- Accelerating Tendons
 										i(187867),	-- Evolved Exo-mucus
 										i(187865),	-- Spiked Protomesh
-								}),
-								}
+									}),
+								},
 							}),
 							i(187792, {	-- Kismetric Disc
 								["cost"] = {
-									{ "i", 187791, 1 },		--1 Kismetric Circlet
-									{ "i", 187790, 100 },	--100 Trace Enigmet
-									{ "i", 187728, 10 },	--10 Ephemera Strand
-									{ "i", 187789, 5 },		--5 Eidolic Particles
+									{ "i", 187791, 1 },		-- 1x Kismetric Circlet
+									{ "i", 187790, 100 },	-- 100x Trace Enigmet
+									{ "i", 187728, 10 },	-- 10x Ephemera Strand
+									{ "i", 187789, 5 },		-- 5x Eidolic Particles
 								},
 							}),
 							i(187789, {	-- Eidolic Particles

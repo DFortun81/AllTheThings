@@ -16,14 +16,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 60.6, 41.2, ORIBOS },
 				["timeline"] = { "added 9.2.5" },
 			}),
-			q(61716, {	-- A Glimpse into Darkness
-				["sourceQuests"] = { 61715 },	-- Request of the Highlord
-				["provider"] = { "n", 173384 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 40.3, 68.7, ORIBOS },
-				["g"] = {
-					i(184165),	-- Seal of Fordragon
-				},
-			}),
 			q(64944, { -- A Hasty Voyage
 				["sourceQuests"] = { 64942 },	-- Call of the Primus
 				["provider"] = { "n", 181655 },	-- The Primus
@@ -42,11 +34,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					{ 49.4, 60.1, ORIBOS },
 					{ 38.8, 70.2, ORIBOS },
 				},
-			}),
-			q(59974, {	-- A Soul Saved
-				["sourceQuests"] = { 62654 },	-- Maw Walker
-				["provider"] = { "n", 167903 },	-- Baroness Draka
-				["coord"] = { 39.1, 49.9, ORIBOS },
 			}),
 			q(60256, {	-- A Valuable Find: Halls of Atonement
 				["sourceQuests"] = { 60274 },	-- Trading Favors
@@ -157,11 +144,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 40.0, 65.3, ORIBOS },
 			}),
-			q(57386, {	-- If You Want Peace...
-				["sourceQuests"] = { 61107 },	-- A Land of Strife
-				["provider"] = { "n", 171338 },	-- Overseer Kah-Sher
-				["coord"] = {61.1, 36.9, ORIBOS },
-			}),
+
 			q(62938, {	-- Information for a Price
 				["sourceQuests"] = { 62935 },	-- Remnants of Hope
 				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
@@ -186,11 +169,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			q(66661, {	-- It's Just a Coin, What Could it Cost?
 				["description"] = "Automatically accepted when zoning into Oribos after completion of 'Crossing Fate'.",
 				["sourceQuest"] = 66648,	-- Crossing Fate
-			}),
-			q(60338, {	-- Journey to Ardenweald
-				["sourceQuests"] = { 61715 },	-- Request of the Highlord
-				["provider"] = { "n", 159478 },	-- Tal-Inara
-				["coord"] = { 38.8, 69.9, ORIBOS },
 			}),
 			q(63944, {	-- Korthia Awaits
 				["description"] = "Only available to characters who choose to skip ahead to Korthia.",
@@ -265,11 +243,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 62932 },	-- Explore Torghast
 				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 39.9, 68.5, ORIBOS },
-			}),
-			q(61715, {	-- Request of the Highlord
-				["sourceQuests"] = { 59206 },	-- Words of the Primus
-				["provider"] = { "n", 162928 },	-- Overseer Kah-Delen
-				["coord"] = { 54.4, 54.2, ORIBOS },
 			}),
 			q(51355, {	-- Secretest Fish
 				["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",

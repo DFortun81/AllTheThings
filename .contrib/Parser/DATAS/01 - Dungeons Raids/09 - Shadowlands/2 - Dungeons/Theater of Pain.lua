@@ -12,7 +12,13 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 			1687,	-- Lower Barrow of Carnage
 		},
 		["g"] = {
-			n(QUESTS, {}),	-- Do Not Remove
+			n(QUESTS, {
+				q(58095, {	-- Theater of Pain: Help Wanted
+					["provider"] = { "n", 159689 },	-- Overseer Kalvaros
+					["coord"] = { 54.0, 50.8, MALDRAXXUS },
+					["_drop"] = { "g" },	-- Anima Trash
+				}),
+			}),
 			n(CONDUITS, {
 				e(2397, {	-- An Affront of Challengers
 					["crs"] = {

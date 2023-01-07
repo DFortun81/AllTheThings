@@ -4,6 +4,23 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	m(KORTHIA, {
 		n(ACHIEVEMENTS, {
+			ach(15064, {	-- Breaking the Chains
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					14961,	-- Chains of Domination
+					15035,	-- On the Offensive
+					15054,	-- Minions of the Cold Dark
+					15066,	-- Reliquary Restoration
+					15053,	-- Explore Korthia
+					15059,	-- Death's Advance
+					15069,	-- The Archivists' Codex
+					15099,	-- Treasures of Korthia
+					15107,	-- Conquering Korthia
+				}},
+				["g"] = {
+					i(186654),	-- Hand of Salaranga (MOUNT!)
+				},
+			}),
 			ach(14961, {	-- Chains of Domination
 				crit(1, {	-- Battle of Ardenweald
 					["sourceQuests"] = { 63639 },	-- Report to Oribos

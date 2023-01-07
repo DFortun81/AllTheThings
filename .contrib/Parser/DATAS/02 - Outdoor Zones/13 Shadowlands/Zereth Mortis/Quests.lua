@@ -1030,13 +1030,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
 				["provider"] = { "o", 375972 },	-- Wanted: Custos
 				["coord"] = { 35.3, 65.4, ZERETH_MORTIS },
-				["_drop"] = { "g" },	-- Anima rewards
+				["_drop"] = { "g" },	-- Anima Trash
 			}),
 			q(65748, {	-- You Supply The Effort
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
 				["provider"] = { "n", 185713 },	-- Hadja
 				["coord"] = { 35.2, 65.7, ZERETH_MORTIS },
 			}),
+		}),
+		n(QUESTS, sharedData({ ["repeatable"] = true }, {
 			q(65324, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S3, "removed 9.2.0.42538"} }, {	-- Patterns Within Patterns
 				["sourceQuests"] = { 65305 },	-- The Way Forwards
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
@@ -1048,28 +1050,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					}),
 				},
 			})),
-			q(66042, bubbleDownSelf({ ["timeline"] = { "added 9.2.0.42538"} }, {	-- Patterns Within Patterns
-				["sourceQuests"] = { 65305 },	-- The Way Forwards
-				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 35, 64.8, ZERETH_MORTIS },
-				["isWeekly"] = true,
-				["g"] = {
-					i(191139, {	-- Tribute of the Enlightened Elders
-						["sym"] = {
-							{"select","mapID",ZERETH_MORTIS},{"pop"},
-							{"where","headerID",ZONE_REWARDS},{"pop"},
-							{"not","itemID",190336},	-- Thrumming Powerstone
-						},
-						["g"] = {
-							i(189716, {	-- Pocopoc's Face Decoration
-								["questID"] = 65482,
-							}),
-							i(189462),	-- Schematic: Bronze Helicid (RECIPE!)
-						},
-					}),
-				},
-			})),
-		}),
+		})),
 		n(QUESTS, sharedData({ ["isDaily"] = true }, {
 			-- Confirmed
 			q(64852, {	-- Aeon Matrix
@@ -1221,6 +1202,28 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				["provider"] = { "n", 180630 },	-- Elder Amir
 				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
 			}),
+		})),
+		n(QUESTS, sharedData({ ["isWeekly"] = true }, {
+			q(66042, bubbleDownSelf({ ["timeline"] = { "added 9.2.0.42538"} }, {	-- Patterns Within Patterns
+				["sourceQuests"] = { 65305 },	-- The Way Forwards
+				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 35, 64.8, ZERETH_MORTIS },
+				["g"] = {
+					i(191139, {	-- Tribute of the Enlightened Elders
+						["sym"] = {
+							{"select","mapID",ZERETH_MORTIS},{"pop"},
+							{"where","headerID",ZONE_REWARDS},{"pop"},
+							{"not","itemID",190336},	-- Thrumming Powerstone
+						},
+						["g"] = {
+							i(189716, {	-- Pocopoc's Face Decoration
+								["questID"] = 65482,
+							}),
+							i(189462),	-- Schematic: Bronze Helicid (RECIPE!)
+						},
+					}),
+				},
+			})),
 		})),
 	}),
 })));

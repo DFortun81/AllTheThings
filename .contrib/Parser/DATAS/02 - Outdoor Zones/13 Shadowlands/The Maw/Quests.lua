@@ -150,130 +150,141 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["coord"] = { 42.3, 42.1, 1648 },	-- pre-SL scenario
 				}),
 			}),
-
-				-- Deciphering Death's Intentions --
-			q(63157, {	-- Box of Torments
-				["provider"] = { "i", 183060 },	-- Box of Torments
+			header(HEADERS.Achievement, 14761, {	-- Deciphering Death's Intentions
+				q(63157, {	-- Box of Torments
+					["provider"] = { "i", 183060 },	-- Box of Torments
+				}),
+				q(63136, {	-- Chaotic Runes
+					["provider"] = { "i", 180802 },	-- Chaotic Runes
+				}),
+				q(63135, {	-- Coldheart Flight Routes
+					["provider"] = { "i", 180801 },	-- Coldheart Flight Routes
+				}),
+				q(63132, {	-- Constellan Writ
+					["provider"] = { "i", 175769 },	-- Constellan Writ
+				}),
+				q(63153, {	-- Discarded Torments
+					["provider"] = { "i", 180808 },	-- Discarded Torments
+				}),
+				q(63155, {	-- Indecipherable Map
+					["provider"] = { "i", 183058 },	-- Indecipherable Map
+				}),
+				q(63160, {	-- Korrath's Grimoire: Aleketh
+					["provider"] = { "i", 183066 },	-- Korrath's Grimoire: Aleketh
+				}),
+				q(63161, {	-- Korrath's Grimoire: Belidir
+					["provider"] = { "i", 183067 },	-- Korrath's Grimoire: Belidir
+				}),
+				q(63162, {	-- Korrath's Grimoire: Gyadrek
+					["provider"] = { "i", 183068 },	-- Korrath's Grimoire: Gyadrek
+				}),
+				q(63133, {	-- Shifting Cryptogram
+					["provider"] = { "i", 178044 },	-- Shifting Cryptogram
+				}),
+				q(63164, {	-- Mawsworn Orders
+					["provider"] = { "i", 183070 },	-- Mawsworn Orders
+				}),
+				q(63134, {	-- Mawsworn Patrol Map
+					["provider"] = { "i", 180799 },	-- Mawsworn Patrol Map
+				}),
+				q(63156, {	-- Mawsworn Shackles
+					["provider"] = { "i", 183059 },	-- Mawsworn Shackles
+				}),
+				q(63137, {	-- Puzzling Cryptogram
+					["provider"] = { "i", 180803 },	-- Puzzling Cryptogram
+				}),
+				q(63145, {	-- Shadebound Testimonial
+					["provider"] = { "i", 180806 },	-- Shadebound Testimonial
+				}),
+				q(63154, {	-- Shadehound Armor Plating
+					["provider"] = { "i", 183057 },	-- Shadehound Armor Plating
+				}),
+				q(63142, {	-- Soulforge Blueprints
+					["provider"] = { "i", 180805 },	-- Soulforge Blueprints
+				}),
+				q(63163, {	-- Tormentor's Notes
+					["provider"] = { "i", 183069 },	-- Tormentor's Notes
+				}),
+				q(63152, {	-- Venthyr Concordat
+					["provider"] = { "i", 180807 },	-- Venthyr Concordat
+				}),
+				q(63158, {	-- Wailing Coin
+					["provider"] = { "i", 183061 },	-- Wailing Coin
+				}),
+				q(63159, {	-- Words of the Warden
+					["provider"] = { "i", 183063 },	-- Words of the Warden
+				}),
+				q(63140, {	-- Worn Obleron Etching
+					["provider"] = { "i", 180804 },	-- Worn Obleron Etching
+				}),
 			}),
-			q(63136, {	-- Chaotic Runes
-				["provider"] = { "i", 180802 },	-- Chaotic Runes
+			header(HEADERS.Achievement, 14747, {	-- Make it Double!
+				q(62882, {	-- Setting the Ground Rules
+					["sourceQuests"] = {
+						62905,	-- Back into the Darkness (Venthyr)
+						62893,	-- Do What We Cannot (Night Fae)
+						62832,	-- Friends in Dark Places (Kyrian)
+						62843,	-- The Soul Contact (Necrolords)
+					},
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(60287, {	-- Rule 1: Have an Escape Plan
+					["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(61355, {	-- Rule 2: Keep a Low Profile
+					["sourceQuests"] = { 60287 },	-- Rule 1: Have an Escape Plan
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(60289, {	-- Rule 3: Trust is Earned
+					["sourceQuests"] = { 61355 },	-- Rule 2: Keep a Low Profile
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(60281, {	-- Rule 4: Make A List
+					["sourceQuests"] = { 63051 },	-- Trust Issues
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(60284, {	-- Rule 5: Be Audacious
+					["sourceQuests"] = { 60281 },	-- Rule 4: Make a List
+					["description"] = "Requires Tentative reputation with Ve'nari.",
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(60285, {	-- Rule 6: Concealment is Everything
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+					["description"] = "Requires Ambivalent reputation with Ve'nari.",
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(63060, {	-- Rule 6 Footnote: Don't Forget Anything
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+					["description"] = "Requires Ambivalent reputation with Ve'nari.",
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(63022, {	-- Rule 6 Addendum: Save Me At Any Cost
+					["sourceQuests"] = {
+						60284,	-- Rule 5: Be Audacious
+						63060,	-- Rule 6 Footnote: Don't Forget Anything
+					},
+					["description"] = "Requires Ambivalent reputation with Ve'nari.",
+					["provider"] = { "n", 175703 },	-- Ve'brax <Asset Analyst>
+					["coord"] = { 56.9, 57.5, THE_MAW },
+				}),
+				q(60158, {	-- Rule 7: Betrayal is Inevitable
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+					["description"] = "Requires Appreciative reputation with Ve'nari.",
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
 			}),
-			q(63135, {	-- Coldheart Flight Routes
-				["provider"] = { "i", 180801 },	-- Coldheart Flight Routes
-			}),
-			q(63132, {	-- Constellan Writ
-				["provider"] = { "i", 175769 },	-- Constellan Writ
-			}),
-			q(63153, {	-- Discarded Torments
-				["provider"] = { "i", 180808 },	-- Discarded Torments
-			}),
-			q(63155, {	-- Indecipherable Map
-				["provider"] = { "i", 183058 },	-- Indecipherable Map
-			}),
-			q(63160, {	-- Korrath's Grimoire: Aleketh
-				["provider"] = { "i", 183066 },	-- Korrath's Grimoire: Aleketh
-			}),
-			q(63161, {	-- Korrath's Grimoire: Belidir
-				["provider"] = { "i", 183067 },	-- Korrath's Grimoire: Belidir
-			}),
-			q(63162, {	-- Korrath's Grimoire: Gyadrek
-				["provider"] = { "i", 183068 },	-- Korrath's Grimoire: Gyadrek
-			}),
-			q(63133, {	-- Shifting Cryptogram
-				["provider"] = { "i", 178044 },	-- Shifting Cryptogram
-			}),
-			q(63164, {	-- Mawsworn Orders
-				["provider"] = { "i", 183070 },	-- Mawsworn Orders
-			}),
-			q(63134, {	-- Mawsworn Patrol Map
-				["provider"] = { "i", 180799 },	-- Mawsworn Patrol Map
-			}),
-			q(63156, {	-- Mawsworn Shackles
-				["provider"] = { "i", 183059 },	-- Mawsworn Shackles
-			}),
-			q(63137, {	-- Puzzling Cryptogram
-				["provider"] = { "i", 180803 },	-- Puzzling Cryptogram
-			}),
-			q(63145, {	-- Shadebound Testimonial
-				["provider"] = { "i", 180806 },	-- Shadebound Testimonial
-			}),
-			q(63154, {	-- Shadehound Armor Plating
-				["provider"] = { "i", 183057 },	-- Shadehound Armor Plating
-			}),
-			q(63142, {	-- Soulforge Blueprints
-				["provider"] = { "i", 180805 },	-- Soulforge Blueprints
-			}),
-			q(63163, {	-- Tormentor's Notes
-				["provider"] = { "i", 183069 },	-- Tormentor's Notes
-			}),
-			q(63152, {	-- Venthyr Concordat
-				["provider"] = { "i", 180807 },	-- Venthyr Concordat
-			}),
-			q(63158, {	-- Wailing Coin
-				["provider"] = { "i", 183061 },	-- Wailing Coin
-			}),
-			q(63159, {	-- Words of the Warden
-				["provider"] = { "i", 183063 },	-- Words of the Warden
-			}),
-			q(63140, {	-- Worn Obleron Etching
-				["provider"] = { "i", 180804 },	-- Worn Obleron Etching
-			}),
-				-- Maldraxxus
-			q(60972, {	-- The Hunt for the Baron
-				["sourceQuests"] = { 59897 },	-- Seeking the Baron
-				["coord"] = { 44.9, 40.9, THE_MAW },
-				["maps"] = { 1960 },	-- The Maw (scenario)
-			}),
-			q(59960, {	-- A Cooling Trail
-				["sourceQuests"] = { 60972 },	-- The Hunt for the Baron
-				["maps"] = { 1960 },	-- The Maw (scenario)
-			}),
-			q(59959, {	-- The Brand Holds the Key
-				["sourceQuests"] = { 59960 },	-- A Cooling Trail
-				["provider"] = { "o", 355798 },	-- Cage
-				["coord"] = { 38.3, 48.5, THE_MAW },
-			}),
-			q(59962, {	-- Hope Never Dies
-				["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
-				["provider"] = { "n", 171770 },	-- Ve'nari
-				["coord"] = { 36.5, 50.7, THE_MAW },
-				["maps"] = { 1960 },	-- The Maw (scenario)
-			}),
-			q(59973, {	-- A Bond Beyond Death
-				["sourceQuests"] = { 59962 },	-- Hope Never Dies
-				["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
-				["coord"] = { 32.9, 66.4, THE_MAW },
-				["maps"] = { 1960 },	-- The Maw (scenario)
-			}),
-			q(59966, {	-- Delving Deeper
-				["sourceQuests"] = { 59962 },	-- Hope Never Dies
-				["provider"] = { "n", 171770 },	-- Ve'nari
-				["coord"] = { 36.2, 55.7, THE_MAW },
-				["maps"] = { 1960 },	-- The Maw (scenario)
-			}),
-			q(61190, {	-- Wake of Ashes
-				["sourceQuests"] = { 59966 },	-- Delving Deeper
-				["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
-				["coord"] = { 32.9, 66.4, THE_MAW },
-				["maps"] = { 1960 },	-- The Maw (scenario)
-			}),
-			q(62654, {	-- Maw Walker
-				["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
-				["provider"] = { "n", 162804 },	-- Ve'nari
-				["coord"] = { 49.9, 41.6, THE_MAW },
-				["maps"] = { 1960 },	-- The Maw (scenario)
-				["g"] = {
-					i(175511),	-- Fallen Protector's Headguard
-					i(175525),	-- Forgotten Pursuer's Cowl
-					i(175524),	-- Risen Journeyman's Visage
-					i(175526),	-- Vicious Reclaimer's Cover
-				},
-			}),
-			--
 			-- Revendreth
-
-
-
 			q(60271, {	-- A Grave Chance
 				["sourceQuests"] = { 60270 },	-- A Damned Pact
 				["provider"] = { "n", 162804 },	-- Ve'nari
@@ -308,86 +319,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			q(62882, {	-- Setting the Ground Rules
-				["sourceQuests"] = {
-					62905,	-- Back into the Darkness (Venthyr)
-					62893,	-- Do What We Cannot (Night Fae)
-					62832,	-- Friends in Dark Places (Kyrian)
-					62843,	-- The Soul Contact (Necrolords)
-				},
-				["provider"] = { "n", 162804 },	-- Ve'nari
-				["coord"] = { 46.9, 41.7, THE_MAW },
-			}),
-			q(60287, {	-- Rule 1: Have an Escape Plan
-				["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
-				["provider"] = { "n", 162804 },	-- Ve'nari
-				["coord"] = { 46.9, 41.7, THE_MAW },
-			}),
-			q(61355, {	-- Rule 2: Keep a Low Profile
-				["sourceQuests"] = { 60287 },	-- Rule 1: Have an Escape Plan
-				["provider"] = { "n", 162804 },	-- Ve'nari
-				["coord"] = { 46.9, 41.7, THE_MAW },
-			}),
-			q(60289, {	-- Rule 3: Trust is Earned
-				["sourceQuests"] = { 61355 },	-- Rule 2: Keep a Low Profile
-				["provider"] = { "n", 162804 },	-- Ve'nari
-				["coord"] = { 46.9, 41.7, THE_MAW },
-			}),
-			q(60281, {	-- Rule 4: Make A List
-				["sourceQuests"] = { 63051 },	-- Trust Issues
-				["provider"] = { "n", 162804 },	-- Ve'nari
-				["coord"] = { 46.9, 41.7, THE_MAW },
-			}),
-			q(60284, {	-- Rule 5: Be Audacious
-				["sourceQuests"] = { 60281 },	-- Rule 4: Make a List
-				["description"] = "Requires Tentative reputation with Ve'nari.",
-				["provider"] = { "n", 162804 },	-- Ve'nari
-				["coord"] = { 46.9, 41.7, THE_MAW },
-			}),
-			q(60285, {	-- Rule 6: Concealment is Everything
-				["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
-				["description"] = "Requires Ambivalent reputation with Ve'nari.",
-				["provider"] = { "n", 162804 },	-- Ve'nari
-				["coord"] = { 46.9, 41.7, THE_MAW },
-			}),
-			q(63060, {	-- Rule 6 Footnote: Don't Forget Anything
-				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-				["description"] = "Requires Ambivalent reputation with Ve'nari.",
-				["isBreadcrumb"] = true,
-				["provider"] = { "n", 162804 },	-- Ve'nari
-				["coord"] = { 46.9, 41.7, THE_MAW },
-			}),
-			q(63022, {	-- Rule 6 Addendum: Save Me At Any Cost
-				["sourceQuests"] = {
-					60284,	-- Rule 5: Be Audacious
-					63060,	-- Rule 6 Footnote: Don't Forget Anything
-				},
-				["description"] = "Requires Ambivalent reputation with Ve'nari.",
-				["provider"] = { "n", 175703 },	-- Ve'brax <Asset Analyst>
-				["coord"] = { 56.9, 57.5, THE_MAW },
-			}),
-			q(60158, {	-- Rule 7: Betrayal is Inevitable
-				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-				["description"] = "Requires Appreciative reputation with Ve'nari.",
-				["provider"] = { "n", 162804 },	-- Ve'nari
-				["coord"] = { 46.9, 41.7, THE_MAW },
-			}),
-
 			q(62837, {	-- Hopeful News
 				["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 				["provider"] = { "n", 162804 },	-- Ve'nari
@@ -421,20 +352,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.8, 41.6, THE_MAW },
 			}),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

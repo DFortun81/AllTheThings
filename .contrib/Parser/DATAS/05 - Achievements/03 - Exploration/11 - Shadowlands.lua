@@ -69,17 +69,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				{ 64.0, 62.0, REVENDRETH },
 			},
 		}),
-		ach(15053, {	-- Explore Korthia
-			crit(1),	-- Estuary of Awakening
-			crit(2),	-- Hope's Ascent
-			crit(3),	-- Keeper's Respite
-			crit(4),	-- Mauler's Outlook
-			crit(5),	-- Sanctuary of Guidance
-			crit(6),	-- Scholar's Den
-			crit(7),	-- Seeker's Quorum
-			crit(8),	-- Vault of Secrets
-			crit(9),	-- Windswept Aerie
-		}),
 		ach(14663, {	-- Explore The Maw
 			crit(1),		-- Calcis
 			crit(2),		-- Cocyrus
@@ -129,23 +118,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(7),		-- Corrupted Sediment
 		}),
 		ach(14747),		-- Make it Double!
-		ach(15054, {	-- Minions of the Cold Dark
-			crit(1),	-- Versya the Damned slain
-			crit(2),	-- Gralebboih slain
-			crit(3),	-- Promathiz slain
-			crit(4),	-- Sentinel Pyrophus slain
-			crit(5),	-- Gruukuuek the Elder slain
-			crit(6),	-- Zul'gath the Flayer slain
-			crit(7),	-- Mugrem the Soul Devourer slain
-			crit(8),	-- The Mass of Souls slain
-			crit(9),	-- Algel the Hunter slain
-			crit(10),	-- Sentinel Shakorzeth slain
-			crit(11),	-- Kazj the Sentinel slain
-			crit(12),	-- Intercessor Razzram slain
-			crit(13),	-- Malleus Grakizz slain
-			crit(14),	-- Manifestation of Pain slain
-			crit(15),	-- Golmak the Monstrosity slain
-		}),
 		ach(14634, {	-- Nine Afterlives
 			["g"] = {
 				i(184449),		-- Jiggles's Favorite Toy (TOY!)
@@ -232,21 +204,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 					crit(11),		-- Glutharn's Decay
 					crit(12),		-- Forgotten Wounds
 					crit(13),		-- Burning Thicket
-				}),
-				ach(14304, {	-- Explore Ardenweald
-					crit(1),		-- Dusty Burrows
-					crit(2),		-- The Stalks
-					crit(3),		-- Starlit Overlook
-					crit(4),		-- Shimmerbough
-					crit(5),		-- Tirna Scithe
-					crit(6),		-- Hibernal Hollow
-					crit(7),		-- Heart of the Forest
-					crit(8),		-- Gormhive
-					crit(9),		-- Glitterfall Basin
-					crit(10),		-- Tirna Noch
-					crit(11),		-- Darkreach
-					crit(12),		-- Crumbled Ridge
-					crit(13),		-- Gossamer Cliffs
 				}),
 			}),
 			ach(14310, {	-- Adventurer of Revendreth
@@ -418,7 +375,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				},
 			}),
 		}),
-		ach(14791),		-- Toss a Seed to Your Hunter...
 		ach(15648, sharedDataSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Walking in Maw-mphis
 			title(462),	-- <Name>, Maw Walker
 			crit(1),	-- 'Ghast Five
@@ -430,19 +386,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(7),	-- Explore The Maw
 		})),
 		ach(14742),		-- Who Sent You?
-		ach(14779, {	-- Wild Hunting
-			crit(1),		-- Nightsong Wader
-			crit(2),		-- Decayfly
-			crit(3),		-- Basin Vulpin
-			crit(4),		-- Greater Ardenmoth
-			crit(5),		-- Verdant Prowler
-			crit(6),		-- Veilwing Guardian
-			crit(7),		-- Highland Runestag
-			crit(8),		-- Wild Gloomrunner
-			crit(9),		-- Voracious Lasher
-			crit(10),		-- Mystic Gulper
-			crit(11),		-- Roving Gladechewer
-			crit(12),		-- Wild Gormling
-		}),
 	}),
 }));

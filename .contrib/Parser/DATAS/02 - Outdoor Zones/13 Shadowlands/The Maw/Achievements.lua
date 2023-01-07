@@ -272,54 +272,68 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				crit(6, {	-- Soulsmith Yol-Mattar
 					["_npcs"] = { 165047 },
 				}),
-				crit(7, {	-- Cyrixia <The Willbreaker>
+				crit(7, {	-- Warren Mongrel [This NPC has no info or comment on wowhead nor ATT... >.<]
+					["_npcs"] = { 165973 },
+					["timeline"] = { "created 9.0.1" },
+				}),
+				crit(8, {	-- Cyrixia <The Willbreaker>
 					["_npcs"] = { 168693 },
 				}),
-				crit(8, {	-- Agonix
+				crit(9, {	-- Agonix
 					["_npcs"] = { 169102 },
 				}),
-				crit(9, {	-- Krala <Death's Wings>
+				crit(10, {	-- Krala <Death's Wings>
 					["_npcs"] = { 170692 },
 				}),
-				crit(10, {	-- Akros <Death's Hammer>
+				crit(11, {	-- Akros <Death's Hammer>
 					["_npcs"] = { 170787 },
 				}),
-				crit(11, {	-- Malevolent Stygia
+				crit(12, {	-- Malevolent Stygia
 					["_npcs"] = { 171316 },
 				}),
-				crit(12, {	-- Sanngror the Torturer
+				crit(13, {	-- Sanngror the Torturer
 					["_npcs"] = { 172521 },
 				}),
-				crit(13, {	-- Houndmaster Vasanok
+				crit(14, {	-- Houndmaster Vasanok
 					["_npcs"] = { 172523 },
 				}),
-				crit(14, {	-- Skittering Broodmother
+				crit(15, {	-- Skittering Broodmother
 					["_npcs"] = { 172524 },
 				}),
-				crit(15, {	-- Valis the Cruel
+				crit(16, {	-- Valis the Cruel
 					["_npcs"] = { 173086 },
 				}),
-				crit(16, {	-- Odalrik
+				crit(17, {	-- Odalrik
 					["_npcs"] = { 172207 },
 				}),
-				crit(17, {	-- Stygian Incinerator
+				crit(18, {	-- Stygian Incinerator
 					["_npcs"] = { 156203 },
 				}),
-				crit(18, {	-- Dath Rezara <Lord of Blades>
+				crit(19, {	-- Dath Rezara <Lord of Blades>
 					["_npcs"] = { 162844 },
 				}),
-				crit(19, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
+				crit(20, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
 					["_npcs"] = { 175821 },
 				}),
 			}),
 			ach(14738, {	-- Hunting Party
-				crit(1),		-- Complete Hunt: Shadehounds
-				crit(2),		-- Complete Hunt: Soul Eaters
-				crit(3),		-- Complete Hunt: Death Elemental
-				crit(4),		-- Complete Hunt: Winged Soul Eaters
+				crit(1, {	-- Complete Hunt: Shadehounds
+					["_quests"] = { 63180 }
+				}),
+				crit(2, {	-- Complete Hunt: Soul Eaters
+					["_quests"] = { 63199 }
+				}),
+				crit(3, {	-- Complete Hunt: Death Elemental
+					["_quests"] = { 63198 }
+				}),
+				crit(4, {	-- Complete Hunt: Winged Soul Eaters
+					["_quests"] = { 63194 }
+				}),
 			}),
 			ach(14334, {	-- Into the Maw
-				["sourceQuests"] = { 59770 },	-- Stand as One
+				crit(1, {
+					["sourceQuests"] = { 59770 },	-- Stand as One
+				}),
 			}),
 			ach(14660, {	-- It's About Sending a Message
 				crit(1, {	-- Drifting Sorrow
@@ -381,10 +395,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				}),
 			}),
 			ach(14747, {	-- Make it Double!
-				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+				crit(1, {
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+				}),
 			}),
 			ach(14746, {	-- Prepare for Trouble!
-				["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+				crit(1, {
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+				}),
 			}),
 			ach(14658, {	-- Soulkeeper's Burden
 				["crs"] = {

@@ -188,11 +188,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				}),
 			}),
 			ach(15211, sharedDataSelf({	-- Completing the Code
-					["cost"] = {
-						{ "i", 187909, 1 },	-- Unstable Containment Trap (temporary vendor item)
-						{ "i", 187684, 1 },	-- Containment Trap (quest item)
-					},
-				}, {
+				["cost"] = {
+					{ "i", 187909, 1 },	-- Unstable Containment Trap (temporary vendor item)
+					{ "i", 187684, 1 },	-- Containment Trap (quest item)
+				},
+			}, {
 				["g"] = {
 					i(187793),	-- Personal Containment Trap (TOY!)
 					crit(1, {
@@ -200,8 +200,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 						["coord"] = { 61.9, 68, ZERETH_MORTIS },
 					}),
 					crit(2, {	-- Gaiagantic
-						["crs"] = { 181223 },
 						["description"] = "Only Available during the Daily Quest: Overgrown Story (64785).",
+						["crs"] = { 181223 },
 						["coord"] = { 60.9, 64.4, ZERETH_MORTIS },
 					}),
 					crit(3, {
@@ -221,8 +221,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 						["coord"] = { 62.5, 24.6, ZERETH_MORTIS },
 					}),
 					crit(7, {
-						["crs"] = { 184819 },	-- Dominated Irregular
 						["description"] = "Can spawn in place of a Dominated Laborer.",
+						["crs"] = { 184819 },	-- Dominated Irregular
 						["coords"] = {
 							{ 45.9, 8.2, ZERETH_MORTIS },
 							{ 46.0, 7.6, ZERETH_MORTIS },
@@ -236,8 +236,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 						},
 					}),
 					crit(8, {
-						["crs"] = { 181292 },	-- Misaligned Enforcer
 						["description"] = "Has a long pathway, Start: 61.1, 47.7 Finish: 58.1, 44.3.",
+						["crs"] = { 181292 },	-- Misaligned Enforcer
 						["coords"] = {
 							{ 56.2, 46.8, ZERETH_MORTIS },
 							{ 61.1, 47.7, ZERETH_MORTIS },
@@ -246,8 +246,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 						},
 					}),
 					crit(9, {
-						["crs"] = { 181293 },	-- Suspicious Nesmin
 						["description"] = "Friendly NPC. Short path out of the hub, then despawns.",
+						["crs"] = { 181293 },	-- Suspicious Nesmin
 						["coords"] = {
 							{ 35.0, 64.1, ZERETH_MORTIS },
 							{ 34.6, 63.2, ZERETH_MORTIS },
@@ -262,8 +262,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 						["coord"] = { 53.5, 75.1, ZERETH_MORTIS },
 					}),
 					crit(12, {
-						["crs"] = { 181295 },	-- Runethief Xy'lora
 						["description"] = "This NPC is in stealth.",
+						["crs"] = { 181295 },	-- Runethief Xy'lora
 						["coords"] = {
 							{ 60.0, 51.6, ZERETH_MORTIS },
 							{ 61.8, 51.6, ZERETH_MORTIS },
@@ -290,8 +290,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 						["coord"] = { 62.3, 60.1, ZERETH_MORTIS },
 					}),
 					crit(17, {
-						["crs"] = { 181290 },	-- Corrupted Runehoarder
 						["description"] = "Has a big patrol path.",
+						["crs"] = { 181290 },	-- Corrupted Runehoarder
 						["coord"] = { 46.7, 59.4, ZERETH_MORTIS },
 					}),
 					crit(18, {

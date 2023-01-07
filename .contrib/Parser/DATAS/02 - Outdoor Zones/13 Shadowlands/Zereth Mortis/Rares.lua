@@ -197,22 +197,19 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 							}),
 							o(373439, {	--  Flipper Fish School
 								["description"] = "Found in the Nazjatar",
-								["coord"] = { 72.8, 24.3, 1355 },
+								["coord"] = { 72.8, 24.3, NAZJATAR },
 								["g"] = {
 									i(187922),	-- Flipper Fish
 								},
 							}),
 							o(373437, {	-- Pungent Blobfish Cluster
 								["description"] = "Found in the Colifang Reservoir",
-								["coord"] = { 52.2, 37.9, 102 },
+								["coord"] = { 52.2, 37.9, ZANGARMARSH },
 								["g"] = {
 									i(187915),	-- Pungent Blobfish
 								},
 							}),
 						},
-					}),
-					crit(23, {	-- Hirukon <Aurelid Prime>
-						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
 					i(187676, {	-- Deepstar Polyp (MOUNT!)
 						["description"] = "This mount has 100% drop chance if you do the summon.",
