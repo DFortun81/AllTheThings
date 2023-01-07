@@ -56,6 +56,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					q(70422, {	-- Dragonrider Racing - Emerald Garden Ascent
 						["coord"] = { 25.6, 55.0, OHNAHRAN_PLAINS }
 					}),
+					q(70420, {	-- Dragonrider Racing - Fen Flythrough
+						["coord"] = { 86.2, 35.8, OHNAHRAN_PLAINS }
+					}),
 					q(70423, {	-- Dragonrider Racing - Maruukai Dash
 						["coord"] = { 59.8, 35.4, OHNAHRAN_PLAINS },
 					}),
@@ -71,12 +74,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					q(70419, {	-- Dragonrider Racing - Sundapple Copse Circuit
 						["coord"] = { 63.8, 30.4, OHNAHRAN_PLAINS }
 					}),
-					-- Unconfirmed
-					--[[
-					q(70420, {	-- Dragonrider Racing - Fen Flythrough
-						["coord"] = { 86.2, 35.8, OHNAHRAN_PLAINS }
-					}),
-					--]]
 
 						-- The Azure Span --
 					q(70430, {	-- Dragonrider Racing - Archive Ambit
