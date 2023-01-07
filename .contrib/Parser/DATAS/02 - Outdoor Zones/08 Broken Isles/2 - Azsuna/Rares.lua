@@ -223,6 +223,10 @@ _.Zones =
 						i(141874),	-- Inquisitor's Corrupted Cincture
 					},
 				}),
+				n(111939, {	-- Lysanis Shadesoul
+					["questID"] = 43956,
+					["coord"] = { 43.4, 89.5, AZSUNA },
+				}),
 				n(89865,  {	-- Mrrgrl the Tide Reaver
 					["questID"] = 37823,
 					["coord"] = { 50.0, 34.6, AZSUNA },
@@ -354,7 +358,6 @@ _.Zones =
 --				n(109584, {	-- Fjordun }),
 --				n(109630, {	-- Immolian }),
 --				n(103975, {	-- Jade Darkhaven }),
---				n(111939, {	-- Lysanis Shadesoul }),
 --				n(109653, {	-- Marblub the Massive }),
 --				n(93622, {	-- Mortiferous }),
 --				n(111434, {	-- Sea King Tidross }),
