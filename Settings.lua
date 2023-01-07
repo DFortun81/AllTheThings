@@ -46,7 +46,7 @@ settings:SetBackdropColor(0, 0, 0, 1);
 do	-- Add the ATT Settings frame into the WoW Settings options
 	local toc = select(4, GetBuildInfo());
 	-- 10.0: new way to configure settings frame
-	if toc >= 100000 then
+	if toc < 100000 then
 		InterfaceOptions_AddCategory(settings);
 		settings.Open = function(self)
 			-- Open the Options menu.
@@ -54,6 +54,7 @@ do	-- Add the ATT Settings frame into the WoW Settings options
 		end
 	else
 		local category = Settings.RegisterCanvasLayoutCategory(settings, settings.name)
+		category.ID = settings.name;
 		Settings.RegisterAddOnCategory(category)
 		settings.Open = function(self)
 			-- Open the Options menu.
