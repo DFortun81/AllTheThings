@@ -25,11 +25,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(72030, {	-- Fishing Frenzy!
 					["coord"] = { 33.6, 63.2, THE_WAKING_SHORES },
 				}),
+				q(67014, {	-- Gorlocs No More-locs
+					["coord"] = { 80, 39.6, THE_WAKING_SHORES },
+				}),
 				q(66989, {	-- Helpful Harvest
 					["coord"] = { 58.2, 64.7, THE_WAKING_SHORES },
 				}),
 				q(67026, {	-- Hold the Shrine
 					["coord"] = { 58.4, 78.5, THE_WAKING_SHORES },
+				}),
+				q(67009, {	-- Hornswog Hogwash
+					["coord"] = { 67.5, 64.2, THE_WAKING_SHORES },
 				}),
 				pvp(q(67005, {	-- How to Train a Proto-Drake
 					["coord"] = { 40, 89, THE_WAKING_SHORES }
@@ -88,11 +94,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(67113, {	-- Excavation Emergency
 					["coord"] = { 66.2, 57.8, THE_WAKING_SHORES },
 				}),
-				--[[
-				q(67014, {	-- Gorlocs No More-locs
-					["coord"] = { 80, 39.6, THE_WAKING_SHORES },
-				}),
-				--]]
 			}),
 		}),
 	}),
