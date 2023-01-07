@@ -169,6 +169,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 					i(197150),	-- Highland Drake: Spiked Club Tail (DM!)
 					i(200178),	-- Infested Ichor (TOY!)
+					i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
 				},
 			}),
 			n(190244, {	-- Mahg the Trampler

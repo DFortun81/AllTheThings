@@ -185,6 +185,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 74010,
 				["g"] = {
 					i(197149),	-- Highland Drake: Club Tail (DM!)
+					i(200684),	-- Emerald Tailbone
 				},
 			}),
 			n(193152, {	-- Massive Magmashell

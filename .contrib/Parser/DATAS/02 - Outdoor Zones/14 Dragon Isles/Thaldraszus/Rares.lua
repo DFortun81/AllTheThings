@@ -74,7 +74,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193126, {	-- Innumerable Ruination
-				["coord"] = { 57.8, 83.8, THALDRASZUS },
+				["description"] = "Patrols in a circle around the coordinates.",
+				["coords"] = { 
+					{ 58.0, 83.8, THALDRASZUS },
+					{ 58.4, 80.4, THALDRASZUS },
+					{ 61.6, 81.0, THALDRASZUS },
+					{ 60.2, 83.0, THALDRASZUS },
+				},
 				["questID"] = 73881,
 				["g"] = {
 					i(200760),	-- Unstable Arcane Cell
@@ -99,7 +105,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193241, {	-- Lord Epochbrgl <Time-Lost>
-				["description"] = "From a Time-Lost Portal.",
+				["description"] = "Requires completion of the questhub in the area. Only spawns if the portal is available.",
 				["coord"] = { 62.2, 81.7, THALDRASZUS },
 				["questID"] = 74066,
 				["g"] = {
@@ -146,11 +152,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193143, {	-- Razk'vex the Untamed
-				["coord"] = { 50.3, 49.7, THALDRASZUS },
+				["description"] = "Patrols between the coordinates.",
+				["coords"] = { 
+					{ 49.8, 50.2, THALDRASZUS },
+					{ 53.6, 42.8, THALDRASZUS },
+				},
 				["questID"] = 73892,
-				-- ["g"] = {
-
-				-- },
 			}),
 			n(193240, {	-- Riverwalker Tamopo <Terror of the Shallows>
 				-- ["coord"] = { X, Y, THALDRASZUS },

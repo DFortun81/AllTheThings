@@ -31,9 +31,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(195186, {	-- Cinta the Forgotten
 				["coord"] = { 31.3, 76.0, OHNAHRAN_PLAINS },
 				["questID"] = 73950,
-				-- ["g"] = {
-
-				-- },
 			}),
 			n(189652, {	-- Deadwaker Ghendish
 				["coord"] = { 30.8, 66.6, OHNAHRAN_PLAINS },
@@ -46,6 +43,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(192020, {	-- Eaglemaster Niraak
 				["coord"] = { 49.5, 67.0, OHNAHRAN_PLAINS },
+				["description"] = "Chance to spawn after killing any nearby Nokhud Mobs. Yells 'Filth! I will end you for your actions!' upon spawning.",
 				["questID"] = 74063,
 				["g"] = {
 					i(200536),	-- Tamed Eagle

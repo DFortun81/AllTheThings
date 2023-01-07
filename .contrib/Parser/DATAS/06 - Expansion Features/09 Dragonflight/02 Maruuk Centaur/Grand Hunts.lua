@@ -14,7 +14,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			-- TODO: convert real map headers to new automated custom headers for maps once added by Runaway
 			-- minilists work properly without real map headers currently
-			-- m(OHNAHRAN_PLAINS, {	-- Should be finished
 				n(-1123, {	-- North
 					n(190907, {	-- Blitztusk	-- North Only
 						["coord"] = { 77.0, 20.6, OHNAHRAN_PLAINS },
