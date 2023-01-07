@@ -371,6 +371,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
 			}),
+			q(72772, {	-- Our Great Bounty
+				["minReputation"] = { 2503, 22 },	-- Maruuk Centaur Renown 22
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198864),	-- Large Maruuk Centaur Supply Satchel
+				},
+			}),
 				-- RENOWN 23 --
 			q(71089, {	-- Get on the Horn
 				["minReputation"] = { 2503, 23 },	-- Maruuk Centaur Renown 23

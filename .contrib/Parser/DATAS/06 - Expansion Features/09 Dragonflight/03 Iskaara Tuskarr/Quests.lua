@@ -542,6 +542,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					title(476),	-- %s of Iskaara
 				},
 			}),
+			q(72328, {	-- Out Ferocious, Armored Steeds
+				["minReputation"] = { 2511, 30 },	-- Iskaara Tuskarr Renown 30
+				["provider"] = { "n", 186462 },	-- Tatto
+				["coord"] = { 13.8, 49.7, THE_AZURE_SPAN },
+				["g"] = {
+					i(201426),	-- Brown War Ottuk (MOUNT!)
+					i(201425),	-- Yellow War Ottuk (MOUNT!)
+				},
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
