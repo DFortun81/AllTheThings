@@ -12,8 +12,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16545),	-- The Best at What I Do
 				ach(16542),	-- The Disgruntled Hunter
 			}),
-			-- TODO: convert real map headers to new automated custom headers for maps once added by Runaway
-			-- minilists work properly without real map headers currently
+			header(HEADERS.Map, OHNAHRAN_PLAINS, {
 				n(-1123, {	-- North
 					n(190907, {	-- Blitztusk	-- North Only
 						["coord"] = { 77.0, 20.6, OHNAHRAN_PLAINS },
@@ -116,8 +115,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 				}),
-			-- }),
-			-- m(THALDRASZUS, {
+			}),
+			header(HEADERS.Map, THALDRASZUS, {
 				n(-1123, {	-- North
 					n(195431, {	-- Diluu
 						["coord"] = { 50.8, 46.6, THALDRASZUS },
@@ -173,8 +172,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 				}),
-			-- }),
-			-- m(THE_AZURE_SPAN, {
+			}),
+			header(HEADERS.Map, THE_AZURE_SPAN, {
 				n(-1124, {	-- East
 					n(195093, {	-- Moskhoi
 						["coord"] = { 67.6, 27.8, THE_AZURE_SPAN },
@@ -258,8 +257,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 				}),
-			-- }),
-			-- m(THE_WAKING_SHORES, {
+			}),
+			header(HEADERS.Map, THE_WAKING_SHORES, {
 				n(-1124, {	-- East
 					n(193896, {	-- Borzgas
 						["coord"] = { 69.2, 56.6, THE_WAKING_SHORES },
@@ -357,7 +356,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						},
 					}),
 				}),
-			-- }),
+			}),
 			n(REWARDS, {
 				i(200290),	-- Bakar Companion (PET!)
 				i(194094, {	-- Bakar Companion Color: Black
