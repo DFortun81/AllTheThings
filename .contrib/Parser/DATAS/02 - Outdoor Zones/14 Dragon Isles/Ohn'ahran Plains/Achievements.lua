@@ -217,6 +217,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
+			ach(16583, {	-- Knew You Nokhud Do It!
+				["crs"] = { 197884 },	-- Training Master Turasa
+				["cost"] = {{"i",200201,1}},	-- Nokhud Battlegear
+				["coord"] = { 34.6, 34.6, OHNAHRAN_PLAINS },
+			}),
 			ach(16576, {	-- Ohn'ahran Plains Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -476,8 +481,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 84.6, 24.6, OHNAHRAN_PLAINS },
 				}),
 			}),
-			-- TODO: NOT COMPLETED YET!
-			ach(16583),	-- Knew You Nokhud Do It!
 		}),
 	}),
 })));
