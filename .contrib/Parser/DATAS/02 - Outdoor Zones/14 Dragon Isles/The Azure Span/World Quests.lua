@@ -43,6 +43,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(70015, {	-- Decay Cleanup
 					["coord"] = { 19.9, 36.3, THE_AZURE_SPAN },
 				}),
+				q(70612, {	-- Feed Three-Falls
+					["coord"] = { 17.8, 27.6, THE_AZURE_SPAN },
+				}),
 				q(70152, {	-- Fishing Frenzy!
 					["coord"] = { 70.8, 35.3, THE_AZURE_SPAN },
 				}),
