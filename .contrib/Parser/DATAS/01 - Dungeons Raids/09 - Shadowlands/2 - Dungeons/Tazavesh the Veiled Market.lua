@@ -65,11 +65,53 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 				}),
 			}),
 			n(QUESTS, {
+				q(63976, {	-- The Al'ley Cat of Oribos
+					["provider"] = { "n", 156688 },	-- Host Ta'rela
+					["coord"] = { 67.0, 50.3, ORIBOS },	-- Ring of Fates
+				}),
+				q(63977, {	-- Insider Trading
+					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
+					["provider"] = { "n", 178908 },	-- Al'dalil
+					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+				}),
+				q(63979, {	-- Things Best Kept Dark
+					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
+					["provider"] = { "n", 178908 },	-- Al'dalil
+					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+				}),
+				q(63980, {	-- Seeking Smugglers
+					["sourceQuests"] = {
+						63977,	-- Insider Trading
+						63979,	-- Things Best Kept Dark
+					},
+					["provider"] = { "n", 178908 },	-- Al'dalil
+					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+				}),
+				q(63982, {	-- Above My Station
+					["sourceQuests"] = { 63980 },	-- Seeking Smugglers
+					["provider"] = { "n", 160090 },	-- Ta'nla the Identifier
+					["coord"] = { 51.4, 82.7, REVENDRETH },
+				}),
+				q(63983, {	-- Dead Drop
+					["sourceQuests"] = { 63982 },	-- Above My Station
+					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
+					["coord"] = { 32.5, 32.4, BASTION },
+				}),
+				q(63984, {	-- Coins for the Ferryman
+					["sourceQuests"] = { 63983 },	-- Dead Drop
+					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
+					["coord"] = { 32.5, 32.4, BASTION },
+				}),
+				q(63985, {	-- The Veiled Market
+					["sourceQuests"] = { 63984 },	-- Coins for the Ferryman
+					["provider"] = { "n", 178792 },	-- Ta'meri
+					["coord"] = { 29.6, 66.1, ORIBOS },	-- Ring of Fates
+				}),
 				q(63986, {	-- Tazavesh: Raiders of the Lost Artifact
 					["sourceQuests"] = { 63985 },	-- The Veiled Market
 					["provider"] = { "n", 178908 },	-- Al'dalil
 					["coord"] = { 86.7, 48.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
-					["_drop"] = { "g" },	-- drop anima trash
+					["_drop"] = { "g" },	-- Anima Trash
 				}),
 				q(64607, {	-- Tazavesh: A Hard Bargain
 					["description"] = "Requires |cFFFFFFFFPassably-Forged Credentials|r to be equipped to be able to accept the quest.",

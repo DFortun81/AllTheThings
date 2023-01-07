@@ -11,6 +11,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 			}),
 			header(HEADERS.Achievement, 15259, {	-- Secrets of the First Ones
 					-- Chapter 1 --
+				q(64942, {	-- Call of the Primus
+					["maps"] = { ORIBOS },
+				}),
+				q(64944, { -- A Hasty Voyage
+					["sourceQuests"] = { 64942 },	-- Call of the Primus
+					["provider"] = { "n", 181655 },	-- The Primus
+					["coord"] = { 34.2, 52.3, 2042 },
+				}),
 				q(64945, {	-- Stangers in a Strange Land
 					["sourceQuests"] = { 64944 },	-- A Hasty Voyage
 					["provider"] = { "n", 184003 },	-- Pelagos TODO: Double Check ID

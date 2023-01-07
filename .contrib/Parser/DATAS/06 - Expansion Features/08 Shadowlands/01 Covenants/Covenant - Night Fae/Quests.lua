@@ -51,6 +51,27 @@ local LFR_WEAPON_GROUP = {
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(QUESTS, {
+			q(63214, {	-- Report to Moonberry
+				["sourceQuests"] = {
+					57878,	-- Choosing Your Purpose [Story] -- TODO: confirm this requirement on a Story-Night Fae?
+					62000,	-- Choosing Your Purpose [Skip]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["isBreadcrumb"] = true,
+				["provider"] = { "n", 159478 },	-- Tal-Inara
+				["coord"] = { 39.2, 69.7, ORIBOS },
+			}),
+			q(61475, {	-- The Heart of the Forest
+				["sourceQuests"] = {
+					-- TODO: confirm
+					57878,	-- Choosing Your Purpose [Story]
+					62000,	-- Choosing Your Purpose [Skip]
+					63214,	-- Report to Moonberry [Skip]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 171795 },	-- Lady Moonberry
+				["coord"] = { 39.7, 61.0, ORIBOS },
+			}),
 			-- These quests are not part of the covenant questline chapters, but are Night Fae only
 			q(62560, {	-- Growing in Power
 				["sourceQuests"] = {

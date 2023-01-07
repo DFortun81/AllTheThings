@@ -969,21 +969,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["isWeekly"] = true,
 				["coord"] = { 53.0, 47.6, BASTION },
 			}),
-			-- 9.1
-
-
-			q(63983, {	-- Dead Drop
-				["sourceQuests"] = { 63982 },	-- Above My Station
-				["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
-				["coord"] = { 32.5, 32.4, BASTION },
-				["timeline"] = { "added 9.1.0" },
-			}),
-			q(63984, {	-- Coins for the Ferryman
-				["sourceQuests"] = { 63983 },	-- Dead Drop
-				["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
-				["coord"] = { 32.5, 32.4, BASTION },
-				["timeline"] = { "added 9.1.0" },
-			}),
 			n(BONUS_OBJECTIVES, {
 				q(62737, {	-- Aspirant For a Day (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character

@@ -51,6 +51,27 @@ local LFR_WEAPON_GROUP = {
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(QUESTS, {
+			q(63211, {	-- Report to Adrestes
+				["sourceQuests"] = {
+					-- TODO: confirm
+					57878,	-- Choosing Your Purpose [Story]
+					62000,	-- Choosing Your Purpose [Skip]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["isBreadcrumb"] = true,
+				["provider"] = { "n", 159478 },	-- Tal-Inara
+				["coord"] = { 39.2, 69.7, ORIBOS },
+			}),
+			q(60491, {	-- Among the Kyrian
+				["sourceQuests"] = {
+					57878,	-- Choosing Your Purpose [Story]
+					62000,	-- Choosing Your Purpose [Skip]
+					63211,	-- Report to Adrestes [Skip]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 171787 },	-- Polemarch Adrestes
+				["coord"] = { 36.1, 64.1, ORIBOS },
+			}),
 			q(58997, {	-- A Bittersweet Prize
 				["sourceQuests"] = { 58995 },	-- I Dreamed A Dream
 				["provider"] = { "n", 163328 },	-- Pelagos

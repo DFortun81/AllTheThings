@@ -84,6 +84,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 				},
 			}),
 			header(HEADERS.Achievement, 14961, {	-- Chains of Domination
+				q(63944, {	-- Korthia Awaits
+					["description"] = "Only available to characters who choose to skip ahead to Korthia.",
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 40.3, 67.9, ORIBOS },	-- Ring of Fates
+					["isBreadcrumb"] = true,
+				}),
 					-- Chapter 1 --
 				q(63576, {	-- The First Move
 					["sourceQuests"] = { 62569 },	-- The Jailer's Grasp

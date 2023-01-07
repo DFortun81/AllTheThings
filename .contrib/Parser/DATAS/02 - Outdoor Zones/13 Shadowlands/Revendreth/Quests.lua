@@ -5,6 +5,430 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	m(REVENDRETH, {
 		n(QUESTS, {
+				-- Chapter 1 --
+			q(57025, {	-- A Plea to Revendreth
+				["sourceQuests"] = { 58724 },	-- The Queen's Request
+				["provider"] = { "n", 159478 },	-- Tal-Inara
+				["coords"] = {
+					{ 49.4, 60.1, ORIBOS },
+					{ 38.8, 70.2, ORIBOS },
+				},
+			}),
+			q(57026, {	-- The Sinstone
+				["sourceQuests"] = { 57025 },	-- A Plea to Revendreth
+				["provider"] = { "n", 155537 },	-- Rendle
+				["coord"] = { 69.9, 82.6, REVENDRETH },
+			}),
+			q(57007, {	-- Invitation of the Master
+				["sourceQuests"] = { 57026 },	-- The Sinstone
+				["provider"] = { "n", 155533 },	-- Lord Chamberlain
+				["coord"] = { 69.0, 81.7, REVENDRETH },
+			}),
+			q(56829, {	-- Bottom Feeders
+				["sourceQuests"] = { 57007 },	-- Invitation of the Master
+				["provider"] = { "n", 155668 },	-- Rendle
+				["coord"] = { 65.3, 66.2, REVENDRETH },
+			}),
+			q(57381, {	-- The Greatest Duelist
+				["sourceQuests"] = { 57007 },	-- Invitation of the Master
+				["provider"] = { "n", 157550 },	-- Nadjia the Mistblade
+				["coord"] = { 65.7, 64.6, REVENDRETH },
+				["g"] = {
+					i(175730),	-- Master Duelist's Chit
+				},
+			}),
+			q(56942, {	-- On The Road Again
+				["sourceQuests"] = {
+					56829,	-- Bottom Feeders
+					57381,	-- The Greatest Duelist
+				},
+				["provider"] = { "n", 155668 },	-- Rendle
+				["coord"] = { 65.3, 66.2, REVENDRETH },
+			}),
+			q(58433, {	-- Anima Attrition
+				["sourceQuests"] = { 56942 },	-- On The Road Again
+				["provider"] = { "n", 155533 },	-- Lord Chamberlain
+				["coord"] = { 67.5, 68.5, REVENDRETH },
+			}),
+			q(56955, {	-- Rebels on the Road
+				["sourceQuests"] = { 56942 },	-- On The Road Again
+				["provider"] = { "n", 155533 },	-- Lord Chamberlain
+				["coord"] = { 67.5, 68.5, REVENDRETH },
+				["g"] = {
+					i(175439),	-- Sash of Pained Absolution
+					i(175441),	-- Nightcloaked Belt
+					i(175440),	-- Soul Hunter's Belt
+					i(175438),	-- Stoneforged Girdle
+				},
+			}),
+			q(56978, {	-- To Darkhaven
+				["sourceQuests"] = {
+					56955,	-- Rebels on the Road
+					58433,	-- Anima Attrition
+				},
+				["provider"] = { "n", 168341 },	-- Lady Moonberry
+				["coord"] = { 70.7, 84.1, REVENDRETH },
+			}),
+				-- Chapter 2 --
+			q(57174, {	-- The Stoneborn
+				["sourceQuests"] = { 56978 },	-- To Darkhaven
+				["provider"] = { "n", 156374 },	-- Lord Chamberlain
+				["coord"] = { 63.2, 62.1, REVENDRETH },
+			}),
+			q(58654, {	-- A Plea to the Harvesters
+				["sourceQuests"] = { 57174 },	-- The Stoneborn
+				["provider"] = { "n", 156822 },	-- Mistress Mihaela
+				["coord"] = { 61.3, 63.7, REVENDRETH },
+			}),
+			q(57178, {	-- The Master Awaits
+				["sourceQuests"] = { 58654 },	-- A Plea to the Harvesters
+				["provider"] = { "n", 155541 },	-- General Kaal
+				["coord"] = { 60.4, 60.9, REVENDRETH },
+			}),
+			q(57179, {	-- The Authority of Revendreth
+				["sourceQuests"] = { 57178 },	-- The Master Awaits
+				["provider"] = { "n", 156644 },	-- Sire Denathrius
+				["coord"] = { 57.4, 49.4, REVENDRETH },
+			}),
+
+				-- Chapter 3 --
+			q(57161, {	-- I Don't Get My Hands Dirty
+				["sourceQuests"] = { 57179 },	-- The Authority of Revendreth
+				["provider"] = { "n", 156605 },	-- Lord Chamberlain
+				["coord"] = { 58.0, 49.5, REVENDRETH },
+				["g"] = {
+					i(175714),	-- The Chamberlain's Tarnished Signet
+				},
+			}),
+			q(57173, {	-- The Accuser's Sinstone
+				["sourceQuests"] = { 57161 },	-- I Don't Get My Hands Dirty
+				["provider"] = { "n", 156842 },	-- Echelon
+				["coord"] = { 64.7, 50.0, REVENDRETH },
+			}),
+			q(58931, {	-- Inquisitor Stelia's Sinstone
+				["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
+				["provider"] = { "n", 156823 },	-- Lord Chamberlain
+				["coord"] = { 64.7, 49.9, REVENDRETH },
+			}),
+			q(58932, {	-- Temel, the Sin Herald
+				["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
+				["description"] = "Automatically offered after Echelon drops you off during Inquisitor Stelia's Sinstone.",
+				["coord"] = { 69.4, 53.9, REVENDRETH },
+			}),
+			q(59021, {	-- Herald Their Demise
+				["sourceQuests"] = {
+					58931,	-- Inquisitor Stelia's Sinstone
+					58932,	-- Temel, the Sin Herald
+				},
+				["provider"] = { "n", 163576 },	-- Echelon
+				["coord"] = { 67.4, 53.5, REVENDRETH },
+				["g"] = {
+					i(175431),	-- Leggings of Pained Absolution
+					i(175433),	-- Nightcloaked Breeches
+					i(175432),	-- Soul Hunter's Leggings
+					i(175430),	-- Stoneforged Legguards
+				},
+			}),
+			q(57175, {	-- Inquisitor Vilhelm's Sinstone
+				["sourceQuests"] = { 59021 },	-- Herald Their Demise
+				["provider"] = { "n", 163576 },	-- Echelon
+				["coord"] = { 67.4, 53.5, REVENDRETH },
+			}),
+			q(59023, {	-- Ending the Inquisitor
+				["sourceQuests"] = { 57175 },	-- Inquisitor Vilhelm's Sinstone
+				["provider"] = { "n", 164166 },	-- Echelon
+				["coord"] = { 65.9, 47.1, REVENDRETH },
+				["g"] = {
+					i(175442),	-- Wraps of Pained Absolution
+					i(175445),	-- Nightcloaked Bindings
+					i(175444),	-- Soul Hunter's Bracers
+					i(175443),	-- Stoneforged Vambraces
+				},
+			}),
+			q(57176, {	-- Sinstone Delivery
+				["sourceQuests"] = { 59023 },	-- Ending the Inquisitor
+				["provider"] = { "n", 164166 },	-- Echelon
+				["coord"] = { 65.9, 47.1, REVENDRETH },
+			}),
+			q(57180, {	-- The Accuser's Secret
+				["sourceQuests"] = { 57176 },	-- Sinstone Delivery
+				["provider"] = { "n", 157069 },	-- Lord Chamberlain
+				["coord"] = { 65.6, 49.6, REVENDRETH },
+				["g"] = {
+					i(175732),	-- Tablet of Despair
+				},
+			}),
+			q(57182, {	-- The Accuser's Fate
+				["sourceQuests"] = { 57180 },	-- The Accuser's Secret
+				["provider"] = { "n", 157084 },	-- Lord Chamberlain
+				["coord"] = { 66.3, 50.5, REVENDRETH },
+			}),
+			q(59232, {	-- A Lesson in Humility
+				["sourceQuests"] = { 57182 },	-- The Accuser's Fate
+				["provider"] = { "n", 156381 },	-- Sire Denathrius
+				["coord"] = { 53.4, 63.9, REVENDRETH },
+				["g"] = {
+					i(175436),	-- Mantle of Pained Absolution
+					i(175434),	-- Nightcloaked Spaulders
+					i(175437),	-- Soul Hunter's Monnion
+					i(175435),	-- Stoneforged Spaulders
+				},
+			}),
+
+				-- Chapter 4 --
+			q(57098, {	-- The Grove of Terror
+				["sourceQuests"] = { 59232 },	-- A Lesson in Humility
+				["provider"] = { "n", 156381 },	-- Sire Denathrius
+				["coord"] = { 53.4, 63.9, REVENDRETH },
+			}),
+			q(58916, {	-- Dread Priming
+				["sourceQuests"] = { 57098 },	-- The Grove of Terror
+				["provider"] = { "n", 169087 },	-- The Fearstalker
+				["coord"] = { 50.6, 73.8, REVENDRETH },
+			}),
+			q(58941, {	-- Alpha Bat
+				["sourceQuests"] = { 58916 },	-- Dread Priming
+				["provider"] = { "n", 163221 },	-- Flockmaster Sergio
+				["coord"] = { 51.2, 74.3, REVENDRETH },
+				["g"] = {
+					i(175765),	-- Dredwing Shroud
+				},
+			}),
+			q(59014, {	-- King of the Hill
+				["sourceQuests"] = { 58941 },	-- Alpha Bat
+				["provider"] = { "n", 163221 },	-- Flockmaster Sergio
+				["coord"] = { 51.2, 74.3, REVENDRETH },
+			}),
+			q(57131, {	-- Let the Hunt Begin
+				["sourceQuests"] = { 59014 },	-- King of the Hill
+				["provider"] = { "n", 168664 },	-- The Fearstalker
+				["coord"] = { 47.8, 70.1, REVENDRETH },
+			}),
+			q(57164, {	-- Devour This
+				["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
+				["provider"] = { "n", 168664 },	-- The Fearstalker
+				["coord"] = { 47.8, 70.1, REVENDRETH },
+			}),
+			q(57136, {	-- The Penitent Hunt
+				["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
+				["provider"] = { "n", 168664 },	-- The Fearstalker
+				["coord"] = { 47.8, 70.1, REVENDRETH },
+				["g"] = {
+					i(175715),	-- Gargon Eye Ring
+				},
+			}),
+			q(60506, {	-- The Accuser
+				["sourceQuests"] = {
+					57164,	-- Devour This
+					57136,	-- The Penitent Hunt
+				},
+				["provider"] = { "n", 156499 },	-- The Fearstalker
+			}),
+			q(57159, {	-- A Reflection of Truth
+				["sourceQuests"] = { 60506 },	-- The Accuser
+				["provider"] = { "n", 156554 },	-- The Accuser
+				["coord"] = { 51.5, 59.1, REVENDRETH },
+				["maps"] = { 1755 },	-- Castle Nathria (scenario version)
+			}),
+			q(60313, {	-- Dredhollow
+				["sourceQuests"] = { 57159 },	-- A Reflection of Truth
+				["provider"] = { "n", 156554 },	-- The Accuser
+				["coord"] = { 51.5, 59.1, REVENDRETH },
+			}),
+			q(57189, {	-- Breaking the Hopebreakers
+				["sourceQuests"] = { 60313 },	-- Dredhollow
+				["provider"] = { "n", 168217 },	-- The Accuser
+				["coord"] = { 43.2, 73.8, REVENDRETH },
+				["g"] = {
+					i(177646),	-- Vicious Dredblade
+					i(177651),	-- Nimble Hopebreaker's Rapier
+					i(177650),	-- Stalwart Hopebreaker's Rapier
+					i(177648),	-- Honed Dredglaive
+					i(177652),	-- Splinterball Morningstar
+					i(177634),	-- Vial of Volatile Essence
+					i(177633),	-- Steelbound Heater Shield
+				},
+			}),
+			q(59209, {	-- Rebel Reinforcements
+				["sourceQuests"] = { 60313 },	-- Dredhollow
+				["provider"] = { "n", 164394 },	-- General Draven
+				["coord"] = { 43.3, 74.0, REVENDRETH },
+				["g"] = {
+					i(175427),	-- Hood of Pained Absolution
+					i(175429),	-- Nightcloaked Hood
+					i(175428),	-- Soul Hunter's Helm
+					i(175414),	-- Stoneforged Headgear
+				},
+			}),
+			q(57190, {	-- They Won't Know What Hit Them
+				["sourceQuests"] = { 60313 },	-- Dredhollow
+				["provider"] = { "n", 168217 },	-- The Accuser
+				["coord"] = { 43.2, 73.8, REVENDRETH },
+			}),
+			q(59256, {	-- The Fearstalker
+				["sourceQuests"] = {
+					57189,	-- Breaking the Hopebreakers
+					59209,	-- Rebel Reinforcements
+					57190,	-- They Won't Know What Hit Them
+				},
+				["provider"] = { "n", 168468 },	-- The Accuser
+				["coord"] = { 39.6, 81.2, REVENDRETH },
+				["g"] = {
+					i(175485),	-- Shoes of Pained Absolution
+					i(175487),	-- Nightcloaked Shoes
+					i(175486),	-- Soul Hunter's Boots
+					i(175484),	-- Stoneforged Sabatons
+				},
+			}),
+
+				-- Chapter 5 --
+			q(57240, {	-- Where is Prince Renathal?
+				["sourceQuests"] = { 59256 },	-- The Fearstalker
+				["provider"] = { "n", 168217 },	-- The Accuser
+				["coord"] = { 43.2, 73.8, REVENDRETH },
+			}),
+			q(57380, {	-- Sign Your Own Death Warrant
+				["sourceQuests"] = { 57240 },	-- Where is Prince Renathal?
+				["provider"] = { "n", 157199 },	-- Stonehead
+				["coord"] = { 38.9, 66.0, REVENDRETH },
+			}),
+			q(57405, {	-- Chasing Madness
+				["sourceQuests"] = { 57380 },	-- Sign Your Own Death Warrant
+				["provider"] = { "n", 157588 },	-- Lost Sybille
+				["coord"] = { 37.0, 63.0, REVENDRETH },
+			}),
+			q(57426, {	-- My Terrible Morning
+				["sourceQuests"] = { 57405 },	-- Chasing Madness
+				["provider"] = { "n", 157639 },	-- Theotar
+				["coord"] = { 38.0, 60.7, REVENDRETH },
+				["g"] = {
+					i(175425),	-- Handwraps of Pained Absolution
+					i(175423),	-- Nightcloaked Gloves
+					i(175426),	-- Soul Hunter's Gauntlets
+					i(175424),	-- Stoneforged Grips
+				},
+			}),
+			q(57428, {	-- Theotar's Mission
+				["sourceQuests"] = { 57405 },	-- Chasing Madness
+				["provider"] = { "n", 157639 },	-- Theotar
+				["coord"] = { 38.0, 60.7, REVENDRETH },
+			}),
+			q(57427, {	-- Unbearable Light
+				["sourceQuests"] = { 57405 },	-- Chasing Madness
+				["provider"] = { "n", 157639 },	-- Theotar
+				["coord"] = { 38.0, 60.7, REVENDRETH },
+			}),
+			q(57442, {	-- Lost in the Desiccation
+				["sourceQuests"] = {
+					57426,	-- My Terrible Morning
+					57428,	-- Theotar's Mission
+					57427,	-- Unbearable Light
+				},
+				["provider"] = { "n", 157650 },	-- Theotar
+			}),
+			q(57460, {	-- Tubbins's Tea
+				["sourceQuests"] = { 57442 },	-- Lost in the Desiccation
+				["provider"] = { "n", 157801 },	-- Tubbins
+				["coord"] = { 31.0, 57.6, REVENDRETH },
+			}),
+			q(57461, {	-- An Uneventful Stroll
+				["sourceQuests"] = { 57460 },	-- Tubbins's Tea
+				["provider"] = { "n", 158542 },	-- Theotar
+				["coord"] = { 31.1, 57.4, REVENDRETH },
+				["g"] = {
+					i(179988),	-- Ash-Scored Girdle
+					i(179991),	-- Light-Bleached Greaves
+					i(179990),	-- Shattereye's Chestguard
+					i(179989),	-- Marquis's Lace Cuffs
+				},
+			}),
+			q(60566, {	-- Into the Light
+				["sourceQuests"] = { 57461 },	-- An Uneventful Stroll
+				["provider"] = { "n", 158694 },	-- Theotar
+				["coord"] = { 32.0, 47.6, REVENDRETH },
+			}),
+			q(57724, {	-- Securing Sinfall
+				["sourceQuests"] = { 60566 },	-- Into the Light
+				["provider"] = { "n", 169105 },	-- Breakfist
+				["coord"] = { 30.4, 45.6, REVENDRETH },
+				["g"] = {
+					i(177642),	-- Sinfall Darkblade
+					i(177641),	-- Sinfall Inquisitor's Dagger
+					i(177643),	-- Sinfall Duelist's Rapier
+					i(177639),	-- Sinfall Guardian's Rapier
+					i(177644),	-- Sinfall Reclaimer's Greatmace
+					i(177638),	-- Sinfall Edgemaster's Blade
+					i(177637),	-- Sinfall Arquebus
+					i(177635, {	-- Sinfall Legion Smasher
+						["f"] = TWO_HANDED_MACES,	-- (for some reason erroneously has filterID of 23, which is 1H maces)
+					}),
+					i(177636),	-- Sinfall Legionaire's Barbed Staff
+					i(184326),	-- Sinfall Stoneborn Cudgel
+					i(184320),	-- Sinfall Initiate's Staff
+				},
+			}),
+
+				-- Chapter 6 --
+			q(59327, {	-- In the Ruin of Rebellion
+				["sourceQuests"] = { 57724 },	-- Securing Sinfall
+				["provider"] = { "n", 158716 },	-- Theotar
+				["coord"] = { 29.9, 42.3, REVENDRETH },
+			}),
+			q(57689, {	-- Prince Renathal
+				["sourceQuests"] = { 59327 },	-- In the Ruin of Rebellion
+				["provider"] = { "n", 158615 },	-- Vorpalia
+				["coord"] = { 42.8, 43.5, REVENDRETH },
+			}),
+			q(57690, {	-- Cages For All Occasions
+				["sourceQuests"] = { 57689 },	-- Prince Renathal
+				["provider"] = { "n", 158649 },	-- Vorpalia
+				["coord"] = { 38.7, 28.3, THE_MAW },
+			}),
+			q(57691, {	-- A Royal Key
+				["sourceQuests"] = { 57690 },	-- Cages For All Occasions
+				["provider"] = { "n", 158645 },	-- Prince Renathal
+				["coord"] = { 34.6, 18.6, THE_MAW },
+			}),
+			q(57693, {	-- Torghast, Tower of the Damned
+				["sourceQuests"] = { 57691 },	-- A Royal Key
+				["provider"] = { "n", 158645 },	-- Prince Renathal
+				["coord"] = { 34.6, 18.6, THE_MAW },
+				["g"] = {
+					i(175731),	-- Stolen Maw Badge
+				},
+			}),
+			q(57694, {	-- Refuge of Revendreth
+				["sourceQuests"] = { 57693 },	-- Torghast, Tower of the Damned
+				["provider"] = { "n", 162688 },	-- Prince Renathal
+				["coord"] = { 25.8, 57.1, SINFALL_REACHES },
+			}),
+
+				-- Chapter 7 --
+			q(59644, {	-- Blinded By The Light
+				["sourceQuests"] = { 57694 },	-- Refuge of Revendreth
+				["provider"] = { "n", 162688 },	-- Prince Renathal
+				["coord"] = { 52.4, 39.2, REVENDRETH },
+			}),
+			q(58086, {	-- The Master of Lies
+				["sourceQuests"] = { 59644 },	-- Blinded By The Light
+				["provider"] = { "n", 172673 },	-- Projection of Prince Renathal
+				["coord"] = { 32.1, 41.4, REVENDRETH },
+				["maps"] = { 1688 },	-- Revendreth (scenario version)
+				["g"] = {
+					i(175480),	-- Robe of Pained Absolution
+					i(175492),	-- Cowl of Pained Absolution
+					i(175483),	-- Nightcloaked Chestpiece
+					i(175494),	-- Nightcloaked Helm
+					i(175482),	-- Soul Hunter's Vest
+					i(175493),	-- Soul Hunter's Headgear
+					i(175481),	-- Stoneforged Hauberk
+					i(175479),	-- Stoneforged Cover
+				},
+			}),
+				-- The End --
+
+
+
 			q(59710, {	-- A Curious Invitation
 				["sourceQuests"] = { 57174 },	-- The Stoneborn
 				["provider"] = { "n", 165859 },	-- Dimwiddle
@@ -21,17 +445,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
 				["coord"] = { 59.9, 68.9, REVENDRETH },
 			}),
-			q(59232, {	-- A Lesson in Humility
-				["sourceQuests"] = { 57182 },	-- The Accuser's Fate
-				["provider"] = { "n", 156381 },	-- Sire Denathrius
-				["coord"] = { 53.4, 63.9, REVENDRETH },
-				["g"] = {
-					i(175436),	-- Mantle of Pained Absolution
-					i(175434),	-- Nightcloaked Spaulders
-					i(175437),	-- Soul Hunter's Monnion
-					i(175435),	-- Stoneforged Spaulders
-				},
-			}),
+
 			q(62046, {	-- A New Pack
 				["sourceQuests"] = { 62045 },	-- Ready for More
 				["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
@@ -42,17 +456,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 				}
 			}),
-			q(58654, {	-- A Plea to the Harvesters
-				["sourceQuests"] = { 57174 },	-- The Stoneborn
-				["provider"] = { "n", 156822 },	-- Mistress Mihaela
-				["coord"] = { 61.3, 63.7, REVENDRETH },
-			}),
-			q(57159, {	-- A Reflection of Truth
-				["sourceQuests"] = { 60506 },	-- The Accuser
-				["provider"] = { "n", 156554 },	-- The Accuser
-				["coord"] = { 51.5, 59.1, REVENDRETH },
-				["maps"] = { 1755 },	-- Castle Nathria (scenario version)
-			}),
+
+
 			q(60467, {	-- A Rousing Aroma
 				["provider"] = { "n", 168455 },	-- Sabina
 				["coord"] = { 35.0, 53.9, REVENDRETH },
@@ -69,24 +474,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 156384 },	-- Huntmaster Constantin
 				["coord"] = { 48.5, 68.5, REVENDRETH },
 			}),
-			q(63982, {	-- Above My Station
-				["sourceQuests"] = { 63980 },	-- Seeking Smugglers
-				["provider"] = { "n", 160090 },	-- Ta'nla the Identifier
-				["coord"] = { 51.4, 82.7, REVENDRETH },
-			}),
+
 			q(59713, {	-- Active Ingredients
 				["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
 				["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
 				["coord"] = { 59.9, 68.9, REVENDRETH },
 			}),
-			q(58941, {	-- Alpha Bat
-				["sourceQuests"] = { 58916 },	-- Dread Priming
-				["provider"] = { "n", 163221 },	-- Flockmaster Sergio
-				["coord"] = { 51.2, 74.3, REVENDRETH },
-				["g"] = {
-					i(175765),	-- Dredwing Shroud
-				},
-			}),
+
 			q(57919, {	-- An Abuse of Power
 				["sourceQuests"] = {
 					58093,	-- Our Forgotten Purpose (neutral)
@@ -95,17 +489,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 160116 },	-- The Accuser
 				["coord"] = { 71.7, 40.3, REVENDRETH },
 			}),
-			q(57461, {	-- An Uneventful Stroll
-				["sourceQuests"] = { 57460 },	-- Tubbins's Tea
-				["provider"] = { "n", 158542 },	-- Theotar
-				["coord"] = { 31.1, 57.4, REVENDRETH },
-				["g"] = {
-					i(179988),	-- Ash-Scored Girdle
-					i(179991),	-- Light-Bleached Greaves
-					i(179990),	-- Shattereye's Chestguard
-					i(179989),	-- Marquis's Lace Cuffs
-				},
-			}),
+
 			q(57531, {	-- An Unfortunate Situation
 				["sourceQuests"] = { 60051 },	-- A Master of Their Craft
 				["provider"] = { "n", 158038 },	-- Laurent
@@ -120,11 +504,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(175737),	-- Samu's Inkwell Pendant
 				},
 			}),
-			q(58433, {	-- Anima Attrition
-				["sourceQuests"] = { 56942 },	-- On The Road Again
-				["provider"] = { "n", 155533 },	-- Lord Chamberlain
-				["coord"] = { 67.5, 68.5, REVENDRETH },
-			}),
+
 			q(57925, {	-- Archivist Fane
 				["sourceQuests"] = { 57924 },	-- Ritual of Judgment
 				["provider"] = { "n", 160294 },	-- The Accuser
@@ -147,40 +527,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "i", 174674 },	-- Bell of Remembrance
 				["crs"] = { 160716 },	-- Sinstone Rampager
 			}),
-			q(59644, {	-- Blinded By The Light
-				["sourceQuests"] = { 57694 },	-- Refuge of Revendreth
-				["provider"] = { "n", 162688 },	-- Prince Renathal
-				["coord"] = { 52.4, 39.2, REVENDRETH },
-			}),
-			q(56829, {	-- Bottom Feeders
-				["sourceQuests"] = { 57007 },	-- Invitation of the Master
-				["provider"] = { "n", 155668 },	-- Rendle
-				["coord"] = { 65.3, 66.2, REVENDRETH },
-			}),
-			q(57189, {	-- Breaking the Hopebreakers
-				["sourceQuests"] = { 60313 },	-- Dredhollow
-				["provider"] = { "n", 168217 },	-- The Accuser
-				["coord"] = { 43.2, 73.8, REVENDRETH },
-				["g"] = {
-					i(177646),	-- Vicious Dredblade
-					i(177651),	-- Nimble Hopebreaker's Rapier
-					i(177650),	-- Stalwart Hopebreaker's Rapier
-					i(177648),	-- Honed Dredglaive
-					i(177652),	-- Splinterball Morningstar
-					i(177634),	-- Vial of Volatile Essence
-					i(177633),	-- Steelbound Heater Shield
-				},
-			}),
+
+
+
 			q(60176, {	-- Bring Out Your Tithe
 				["sourceQuests"] = { 57174 },	-- The Stoneborn
 				["provider"] = { "n", 156822 },	-- Mistress Mihaela
 				["coord"] = { 61.3, 63.7, REVENDRETH },
 			}),
-			q(57405, {	-- Chasing Madness
-				["sourceQuests"] = { 57380 },	-- Sign Your Own Death Warrant
-				["provider"] = { "n", 157588 },	-- Lost Sybille
-				["coord"] = { 37.0, 63.0, REVENDRETH },
-			}),
+
 			q(59716, {	-- Comfortably Numb
 				["sourceQuests"] = { 59715 },	-- Message for Matyas
 				["provider"] = { "n", 166081 },	-- Taskmaster Matyas
@@ -196,37 +551,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(175416),	-- Stoneforged Chestplate
 				},
 			}),
-			q(57164, {	-- Devour This
-				["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
-				["provider"] = { "n", 168664 },	-- The Fearstalker
-				["coord"] = { 47.8, 70.1, REVENDRETH },
-			}),
-			q(58916, {	-- Dread Priming
-				["sourceQuests"] = { 57098 },	-- The Grove of Terror
-				["provider"] = { "n", 169087 },	-- The Fearstalker
-				["coord"] = { 50.6, 73.8, REVENDRETH },
-			}),
+
+
 			q(57474, {	-- Dredger Duty
 				["sourceQuests"] = { 57471 },	-- It's a Dirty Job
 				["provider"] = { "n", 157846 },	-- Rendle
 				["coord"] = { 72.5, 73.2, REVENDRETH },
 			}),
-			q(60313, {	-- Dredhollow
-				["sourceQuests"] = { 57159 },	-- A Reflection of Truth
-				["provider"] = { "n", 156554 },	-- The Accuser
-				["coord"] = { 51.5, 59.1, REVENDRETH },
-			}),
-			q(59023, {	-- Ending the Inquisitor
-				["sourceQuests"] = { 57175 },	-- Inquisitor Vilhelm's Sinstone
-				["provider"] = { "n", 164166 },	-- Echelon
-				["coord"] = { 65.9, 47.1, REVENDRETH },
-				["g"] = {
-					i(175442),	-- Wraps of Pained Absolution
-					i(175445),	-- Nightcloaked Bindings
-					i(175444),	-- Soul Hunter's Bracers
-					i(175443),	-- Stoneforged Vambraces
-				},
-			}),
+
+
 			q(57535, {	-- Escaping the Master
 				["sourceQuests"] = {
 					57533,	-- Light Punishment
@@ -264,20 +597,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(184717),	-- Lord Chamberlain's Cloak
 				},
 			}),
-			q(59021, {	-- Herald Their Demise
-				["sourceQuests"] = {
-					58931,	-- Inquisitor Stelia's Sinstone
-					58932,	-- Temel, the Sin Herald
-				},
-				["provider"] = { "n", 163576 },	-- Echelon
-				["coord"] = { 67.4, 53.5, REVENDRETH },
-				["g"] = {
-					i(175431),	-- Leggings of Pained Absolution
-					i(175433),	-- Nightcloaked Breeches
-					i(175432),	-- Soul Hunter's Leggings
-					i(175430),	-- Stoneforged Legguards
-				},
-			}),
+
 			q(61844, {	-- Hungry Hungry Gorger
 				["sourceQuests"] = { 61842 },	-- Vineroot Will Not Do
 				["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
@@ -298,39 +618,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 156384 },	-- Huntmaster Constantin
 				["coord"] = { 48.5, 68.4, REVENDRETH },
 			}),
-			q(57161, {	-- I Don't Get My Hands Dirty
-				["sourceQuests"] = { 57179 },	-- The Authority of Revendreth
-				["provider"] = { "n", 156605 },	-- Lord Chamberlain
-				["coord"] = { 58.0, 49.5, REVENDRETH },
-				["g"] = {
-					i(175714),	-- The Chamberlain's Tarnished Signet
-				},
-			}),
-			q(59327, {	-- In the Ruin of Rebellion
-				["sourceQuests"] = { 57724 },	-- Securing Sinfall
-				["provider"] = { "n", 158716 },	-- Theotar
-				["coord"] = { 29.9, 42.3, REVENDRETH },
-			}),
-			q(58931, {	-- Inquisitor Stelia's Sinstone
-				["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
-				["provider"] = { "n", 156823 },	-- Lord Chamberlain
-				["coord"] = { 64.7, 49.9, REVENDRETH },
-			}),
-			q(57175, {	-- Inquisitor Vilhelm's Sinstone
-				["sourceQuests"] = { 59021 },	-- Herald Their Demise
-				["provider"] = { "n", 163576 },	-- Echelon
-				["coord"] = { 67.4, 53.5, REVENDRETH },
-			}),
-			q(60566, {	-- Into the Light
-				["sourceQuests"] = { 57461 },	-- An Uneventful Stroll
-				["provider"] = { "n", 158694 },	-- Theotar
-				["coord"] = { 32.0, 47.6, REVENDRETH },
-			}),
-			q(57007, {	-- Invitation of the Master
-				["sourceQuests"] = { 57026 },	-- The Sinstone
-				["provider"] = { "n", 155533 },	-- Lord Chamberlain
-				["coord"] = { 69.0, 81.7, REVENDRETH },
-			}),
+
+
+
+
+
+
 			q(60487, {	-- It Used to Be Quiet Here
 				["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
 				["provider"] = { "n", 168698 },	-- Chiselgrump
@@ -369,29 +662,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(177640),	-- Sinstealer's Staff
 				},
 			}),
-			q(59014, {	-- King of the Hill
-				["sourceQuests"] = { 58941 },	-- Alpha Bat
-				["provider"] = { "n", 163221 },	-- Flockmaster Sergio
-				["coord"] = { 51.2, 74.3, REVENDRETH },
-			}),
-			q(57131, {	-- Let the Hunt Begin
-				["sourceQuests"] = { 59014 },	-- King of the Hill
-				["provider"] = { "n", 168664 },	-- The Fearstalker
-				["coord"] = { 47.8, 70.1, REVENDRETH },
-			}),
+
+
 			q(57533, {	-- Light Punishment
 				["sourceQuests"] = { 57571 },	-- Moving Mirrors
 				["provider"] = { "n", 158088 },	-- Simone
 				["coord"] = { 24.2, 49.4, REVENDRETH },
 			}),
-			q(57442, {	-- Lost in the Desiccation
-				["sourceQuests"] = {
-					57426,	-- My Terrible Morning
-					57428,	-- Theotar's Mission
-					57427,	-- Unbearable Light
-				},
-				["provider"] = { "n", 157650 },	-- Theotar
-			}),
+
 			q(61432, {	-- Lost Journals
 				["provider"] = { "i", 180834 },	-- Renathal's Journal Pages
 				["repeatable"] = true,
@@ -426,17 +704,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 158205 },	-- Laurent
 				["coord"] = { 24.2, 49.3, REVENDRETH },
 			}),
-			q(57426, {	-- My Terrible Morning
-				["sourceQuests"] = { 57405 },	-- Chasing Madness
-				["provider"] = { "n", 157639 },	-- Theotar
-				["coord"] = { 38.0, 60.7, REVENDRETH },
-				["g"] = {
-					i(175425),	-- Handwraps of Pained Absolution
-					i(175423),	-- Nightcloaked Gloves
-					i(175426),	-- Soul Hunter's Gauntlets
-					i(175424),	-- Stoneforged Grips
-				},
-			}),
+
 			q(61839, {	-- Nipping at the Undergrowth
 				["description"] = "Becomes available in the Endmire north of Darkhaven after looting Impressionable Gorger Spawn from the Worldedge Gorger.",
 				["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
@@ -459,14 +727,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(178077),	-- Briarbane Signet
 				},
 			}),
-			q(56942, {	-- On The Road Again
-				["sourceQuests"] = {
-					56829,	-- Bottom Feeders
-					57381,	-- The Greatest Duelist
-				},
-				["provider"] = { "n", 155668 },	-- Rendle
-				["coord"] = { 65.3, 66.2, REVENDRETH },
-			}),
+
 			q(58093, {	-- Our Forgotten Purpose
 			--	["sourceQuests"] = {  },	-- TODO: unknown.  possibly just requires 60
 				["isBreadcrumb"] = true,
@@ -478,11 +739,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "i", 182738 },	-- Bundle of Smuggled Parasol Components
 				["coord"] = { 31.1, 55.1, REVENDRETH },
 			}),
-			q(57689, {	-- Prince Renathal
-				["sourceQuests"] = { 59327 },	-- In the Ruin of Rebellion
-				["provider"] = { "n", 158615 },	-- Vorpalia
-				["coord"] = { 42.8, 43.5, REVENDRETH },
-			}),
+
 			q(62045, {	-- Ready for More
 				["sourceQuests"] = { 62044 },	-- Standing Toe To Toe
 				["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
@@ -503,28 +760,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 167489 },	-- Lajos
 				["coord"] = { 62.2, 61.3, REVENDRETH },
 			}),
-			q(59209, {	-- Rebel Reinforcements
-				["sourceQuests"] = { 60313 },	-- Dredhollow
-				["provider"] = { "n", 164394 },	-- General Draven
-				["coord"] = { 43.3, 74.0, REVENDRETH },
-				["g"] = {
-					i(175427),	-- Hood of Pained Absolution
-					i(175429),	-- Nightcloaked Hood
-					i(175428),	-- Soul Hunter's Helm
-					i(175414),	-- Stoneforged Headgear
-				},
-			}),
-			q(56955, {	-- Rebels on the Road
-				["sourceQuests"] = { 56942 },	-- On The Road Again
-				["provider"] = { "n", 155533 },	-- Lord Chamberlain
-				["coord"] = { 67.5, 68.5, REVENDRETH },
-				["g"] = {
-					i(175439),	-- Sash of Pained Absolution
-					i(175441),	-- Nightcloaked Belt
-					i(175440),	-- Soul Hunter's Belt
-					i(175438),	-- Stoneforged Girdle
-				},
-			}),
+
+
 			q(57927, {	-- Rebuilding Temel
 				["sourceQuests"] = { 60127 },	-- Missing Stone Fiend
 				["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
@@ -535,11 +772,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "i", 179358 },	-- Remornia
 				["altQuests"] = { 63645 },	-- The Dawnkeep Prisoner
 			}),
-			q(57694, {	-- Refuge of Revendreth
-				["sourceQuests"] = { 57693 },	-- Torghast, Tower of the Damned
-				["provider"] = { "n", 162688 },	-- Prince Renathal
-				["coord"] = { 25.8, 57.1, SINFALL_REACHES },
-			}),
+
 			q(57923, {	-- Ritual of Absolution
 				["sourceQuests"] = {
 					57922,	-- The Proper Punishment
@@ -575,26 +808,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 168455 },	-- Sabina
 				["coord"] = { 35.0, 53.9, REVENDRETH },
 			}),
-			q(57724, {	-- Securing Sinfall
-				["sourceQuests"] = { 60566 },	-- Into the Light
-				["provider"] = { "n", 169105 },	-- Breakfist
-				["coord"] = { 30.4, 45.6, REVENDRETH },
-				["g"] = {
-					i(177642),	-- Sinfall Darkblade
-					i(177641),	-- Sinfall Inquisitor's Dagger
-					i(177643),	-- Sinfall Duelist's Rapier
-					i(177639),	-- Sinfall Guardian's Rapier
-					i(177644),	-- Sinfall Reclaimer's Greatmace
-					i(177638),	-- Sinfall Edgemaster's Blade
-					i(177637),	-- Sinfall Arquebus
-					i(177635, {	-- Sinfall Legion Smasher
-						["f"] = TWO_HANDED_MACES,	-- (for some reason erroneously has filterID of 23, which is 1H maces)
-					}),
-					i(177636),	-- Sinfall Legionaire's Barbed Staff
-					i(184326),	-- Sinfall Stoneborn Cudgel
-					i(184320),	-- Sinfall Initiate's Staff
-				},
-			}),
+
 			q(60470, {	-- Setting Sabina Free
 				["sourceQuests"] = {
 					60468,	-- Rubble Rummaging
@@ -606,21 +820,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(175736),	-- Hopebreaker Pendant
 				},
 			}),
-			q(57380, {	-- Sign Your Own Death Warrant
-				["sourceQuests"] = { 57240 },	-- Where is Prince Renathal?
-				["provider"] = { "n", 157199 },	-- Stonehead
-				["coord"] = { 38.9, 66.0, REVENDRETH },
-			}),
+
 			q(58725, {	-- Sinkeeper
 				["sourceQuests"] = { 58717 },	-- Bell of Remembrance
 				["provider"] = { "n", 161418 },	-- Sinkeeper Mourana
 				["coord"] = { 73.2, 34.0, REVENDRETH },
 			}),
-			q(57176, {	-- Sinstone Delivery
-				["sourceQuests"] = { 59023 },	-- Ending the Inquisitor
-				["provider"] = { "n", 164166 },	-- Echelon
-				["coord"] = { 65.9, 47.1, REVENDRETH },
-			}),
+
 			q(58327, {	-- Snacks for Stonehead
 				["description"] = "Pick up the Hollow Rock at |cFFFFFFFF38.8, 64.3|r, or Stonehead will fling you away when you try to approach the quest.",
 				["coord"] = { 39.2, 65.2, REVENDRETH },
@@ -632,122 +838,37 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(182594),	-- A Sparkling Ruby Necklace
 				}
 			}),
-			q(58932, {	-- Temel, the Sin Herald
-				["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
-				["description"] = "Automatically offered after Echelon drops you off during Inquisitor Stelia's Sinstone.",
-				["coord"] = { 69.4, 53.9, REVENDRETH },
-			}),
-			q(60506, {	-- The Accuser
-				["sourceQuests"] = {
-					57164,	-- Devour This
-					57136,	-- The Penitent Hunt
-				},
-				["provider"] = { "n", 156499 },	-- The Fearstalker
-			}),
-			q(57182, {	-- The Accuser's Fate
-				["sourceQuests"] = { 57180 },	-- The Accuser's Secret
-				["provider"] = { "n", 157084 },	-- Lord Chamberlain
-				["coord"] = { 66.3, 50.5, REVENDRETH },
-			}),
-			q(57180, {	-- The Accuser's Secret
-				["sourceQuests"] = { 57176 },	-- Sinstone Delivery
-				["provider"] = { "n", 157069 },	-- Lord Chamberlain
-				["coord"] = { 65.6, 49.6, REVENDRETH },
-				["g"] = {
-					i(175732),	-- Tablet of Despair
-				},
-			}),
-			q(57173, {	-- The Accuser's Sinstone
-				["sourceQuests"] = { 57161 },	-- I Don't Get My Hands Dirty
-				["provider"] = { "n", 156842 },	-- Echelon
-				["coord"] = { 64.7, 50.0, REVENDRETH },
-			}),
-			q(57179, {	-- The Authority of Revendreth
-				["sourceQuests"] = { 57178 },	-- The Master Awaits
-				["provider"] = { "n", 156644 },	-- Sire Denathrius
-				["coord"] = { 57.4, 49.4, REVENDRETH },
-			}),
-			q(57876, {	-- The End of the Beginning
-				["sourceQuests"] = { 58086 },	-- The Master of Lies
-				["altQuests"] = { 62704 },	-- The Threads of Fate (can't do this version on a Skip character)
-				["provider"] = { "n", 165557 },	-- Prince Renathal
-				["coord"] = { 50.2, 28.2, REVENDRETH },
-			}),
+
+
+
+
+
+
+
 			q(60480, {	-- The Endmire
 				["provider"] = { "n", 168618 },	-- Tessle the Snitch
 				["coord"] = { 65.1, 63.5, REVENDRETH },
 			}),
-			q(59256, {	-- The Fearstalker
-				["sourceQuests"] = {
-					57189,	-- Breaking the Hopebreakers
-					59209,	-- Rebel Reinforcements
-					57190,	-- They Won't Know What Hit Them
-				},
-				["provider"] = { "n", 168468 },	-- The Accuser
-				["coord"] = { 39.6, 81.2, REVENDRETH },
-				["g"] = {
-					i(175485),	-- Shoes of Pained Absolution
-					i(175487),	-- Nightcloaked Shoes
-					i(175486),	-- Soul Hunter's Boots
-					i(175484),	-- Stoneforged Sabatons
-				},
-			}),
+
 			q(59724, {	-- The Field of Honor
 				["sourceQuests"] = { 59716 },	-- Comfortably Numb
 				["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
 				["coord"] = { 60.1, 69.2, REVENDRETH },
 			}),
-			q(57381, {	-- The Greatest Duelist
-				["sourceQuests"] = { 57007 },	-- Invitation of the Master
-				["provider"] = { "n", 157550 },	-- Nadjia the Mistblade
-				["coord"] = { 65.7, 64.6, REVENDRETH },
-				["g"] = {
-					i(175730),	-- Master Duelist's Chit
-				},
-			}),
-			q(57098, {	-- The Grove of Terror
-				["sourceQuests"] = { 59232 },	-- A Lesson in Humility
-				["provider"] = { "n", 156381 },	-- Sire Denathrius
-				["coord"] = { 53.4, 63.9, REVENDRETH },
-			}),
+
+
 			q(59712, {	-- The Lay of the Land
 				["sourceQuests"] = { 59710 },	-- A Curious Invitation
 				["provider"] = { "n", 169238 },	-- Courier Araak
 				["coord"] = { 59.5, 66.7, REVENDRETH },
 			}),
-			q(57178, {	-- The Master Awaits
-				["sourceQuests"] = { 58654 },	-- A Plea to the Harvesters
-				["provider"] = { "n", 155541 },	-- General Kaal
-				["coord"] = { 60.4, 60.9, REVENDRETH },
-			}),
-			q(58086, {	-- The Master of Lies
-				["sourceQuests"] = { 59644 },	-- Blinded By The Light
-				["provider"] = { "n", 172673 },	-- Projection of Prince Renathal
-				["coord"] = { 32.1, 41.4, REVENDRETH },
-				["maps"] = { 1688 },	-- Revendreth (scenario version)
-				["g"] = {
-					i(175480),	-- Robe of Pained Absolution
-					i(175492),	-- Cowl of Pained Absolution
-					i(175483),	-- Nightcloaked Chestpiece
-					i(175494),	-- Nightcloaked Helm
-					i(175482),	-- Soul Hunter's Vest
-					i(175493),	-- Soul Hunter's Headgear
-					i(175481),	-- Stoneforged Hauberk
-					i(175479),	-- Stoneforged Cover
-				},
-			}),
+
+
 			q(58060, {	-- The Night Market
 				["provider"] = { "n", 160100 },	-- Provisioner Dracho
 				["coord"] = { 61.0, 39.6, REVENDRETH },
 			}),
-			q(57136, {	-- The Penitent Hunt
-				["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
-				["provider"] = { "n", 168664 },	-- The Fearstalker
-				["coord"] = { 47.8, 70.1, REVENDRETH },
-				["g"] = {
-					i(175715),	-- Gargon Eye Ring
-				},
-			}),
+
 			q(57922, {	-- The Proper Punishment
 				["sourceQuests"] = { 57919 },	-- An Abuse of Power
 				["provider"] = { "n", 160116 },	-- The Accuser
@@ -763,49 +884,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 160116 },	-- The Accuser
 				["coord"] = { 71.8, 40.3, REVENDRETH },
 			}),
-			q(57026, {	-- The Sinstone
-				["sourceQuests"] = { 57025 },	-- A Plea to Revendreth
-				["provider"] = { "n", 155537 },	-- Rendle
-				["coord"] = { 69.9, 82.6, REVENDRETH },
-			}),
+
 			q(57926, {	-- The Sinstone Archive
 				["sourceQuests"] = { 57925 },	-- Archivist Fane
 				["provider"] = { "n", 160248 },	-- Archivist Fane
 				["coord"] = { 73.0, 52.0, REVENDRETH },
 			}),
-			q(57174, {	-- The Stoneborn
-				["sourceQuests"] = { 56978 },	-- To Darkhaven
-				["provider"] = { "n", 156374 },	-- Lord Chamberlain
-				["coord"] = { 63.2, 62.1, REVENDRETH },
-			}),
-			q(57428, {	-- Theotar's Mission
-				["sourceQuests"] = { 57405 },	-- Chasing Madness
-				["provider"] = { "n", 157639 },	-- Theotar
-				["coord"] = { 38.0, 60.7, REVENDRETH },
-			}),
-			q(57190, {	-- They Won't Know What Hit Them
-				["sourceQuests"] = { 60313 },	-- Dredhollow
-				["provider"] = { "n", 168217 },	-- The Accuser
-				["coord"] = { 43.2, 73.8, REVENDRETH },
-			}),
-			q(56978, {	-- To Darkhaven
-				["sourceQuests"] = {
-					56955,	-- Rebels on the Road
-					58433,	-- Anima Attrition
-				},
-				["provider"] = { "n", 168341 },	-- Lady Moonberry
-				["coord"] = { 70.7, 84.1, REVENDRETH },
-			}),
-			q(57460, {	-- Tubbins's Tea
-				["sourceQuests"] = { 57442 },	-- Lost in the Desiccation
-				["provider"] = { "n", 157801 },	-- Tubbins
-				["coord"] = { 31.0, 57.6, REVENDRETH },
-			}),
-			q(57427, {	-- Unbearable Light
-				["sourceQuests"] = { 57405 },	-- Chasing Madness
-				["provider"] = { "n", 157639 },	-- Theotar
-				["coord"] = { 38.0, 60.7, REVENDRETH },
-			}),
+
+
+
+
+
+
 			q(61840, {	-- Vineroot on the Menu
 				["sourceQuests"] = { 61839 },	-- Nipping at the Undergrowth
 				["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
@@ -884,11 +974,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(175716),	-- Emberscorched Band
 				},
 			}),
-			q(57240, {	-- Where is Prince Renathal?
-				["sourceQuests"] = { 59256 },	-- The Fearstalker
-				["provider"] = { "n", 168217 },	-- The Accuser
-				["coord"] = { 43.2, 73.8, REVENDRETH },
-			}),
+
 			q(58272, {	-- Words Have Power
 				["sourceQuests"] = { 56942 },	-- On The Road Again
 				["provider"] = { "o", 352490 },	-- Join the Rebellion!

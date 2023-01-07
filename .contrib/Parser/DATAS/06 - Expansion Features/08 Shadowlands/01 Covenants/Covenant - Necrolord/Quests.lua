@@ -51,6 +51,27 @@ local LFR_WEAPON_GROUP = {
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(QUESTS, {
+			q(63212, {	-- Report to Mevix
+				["sourceQuests"] = {
+					-- TODO: confirm
+					57878,	-- Choosing Your Purpose [Story]
+					62000,	-- Choosing Your Purpose [Skip]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["isBreadcrumb"] = true,
+				["provider"] = { "n", 159478 },	-- Tal-Inara
+				["coord"] = { 39.2, 69.7, ORIBOS },
+			}),
+			q(58609, {	-- Taking The Seat
+				["sourceQuests"] = {
+					57878,	-- Choosing Your Purpose [Story]
+					62000,	-- Choosing Your Purpose [Skip]
+					63212,	-- Report to Mevix [Skip]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 171821 },	-- Baroness Draka
+				["coord"] = { 42.9, 74.1, ORIBOS },
+			}),
 			q(62835, {	-- A Call to Service
 				["sourceQuests"] = { 62834 },	-- Glorious Ambition
 				["provider"] = { "n", 175998 },	-- Elspeth Larink

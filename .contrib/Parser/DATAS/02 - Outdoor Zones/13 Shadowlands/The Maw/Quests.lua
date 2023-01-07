@@ -244,6 +244,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
+				q(62837, {	-- Hopeful News
+					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(63051, {	-- Trust Issues
+					["sourceQuests"] = { 61099 },	-- The Search for Baine
+					["provider"] = { "n", 168432 },	-- Ve'rayn
+				}),
 				q(60281, {	-- Rule 4: Make A List
 					["sourceQuests"] = { 63051 },	-- Trust Issues
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -260,6 +269,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["description"] = "Requires Ambivalent reputation with Ve'nari.",
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(62461, {	-- Stalking the Warrens
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.6, THE_MAW },
 				}),
 				q(63060, {	-- Rule 6 Footnote: Don't Forget Anything
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
@@ -284,77 +298,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 			}),
-			-- Revendreth
-			q(60271, {	-- A Grave Chance
-				["sourceQuests"] = { 60270 },	-- A Damned Pact
-				["provider"] = { "n", 162804 },	-- Ve'nari
-				["coord"] = { 46.9, 41.7, THE_MAW },
-			}),
-			q(60272, {	-- The Weak Link
-				["sourceQuests"] = { 60271 },	-- A Grave Chance
-				["provider"] = { "n", 162804 },	-- Ve'nari
-				["coord"] = { 46.9, 41.7, THE_MAW },
-			}),
-
-
-
-			q(57690, {	-- Cages For All Occasions
-				["sourceQuests"] = { 57689 },	-- Prince Renathal
-				["provider"] = { "n", 158649 },	-- Vorpalia
-				["coord"] = { 38.7, 28.3, THE_MAW },
-			}),
-			q(57691, {	-- A Royal Key
-				["sourceQuests"] = { 57690 },	-- Cages For All Occasions
-				["provider"] = { "n", 158645 },	-- Prince Renathal
-				["coord"] = { 34.6, 18.6, THE_MAW },
-			}),
-			q(57693, {	-- Torghast, Tower of the Damned
-				["sourceQuests"] = { 57691 },	-- A Royal Key
-				["provider"] = { "n", 158645 },	-- Prince Renathal
-				["coord"] = { 34.6, 18.6, THE_MAW },
-				["g"] = {
-					i(175731),	-- Stolen Maw Badge
-				},
-			}),
-
-
-
-			q(62837, {	-- Hopeful News
-				["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
-				["provider"] = { "n", 162804 },	-- Ve'nari
-				["coord"] = { 46.9, 41.7, THE_MAW },
-			}),
-
-
-			q(61099, {	-- The Search for Baine
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["provider"] = { "n", 162804 },	-- Ve'nari
-				["coord"] = { 46.8, 41.7, THE_MAW },
-				["g"] = {
-					i(184757),	-- Chain of the Purpose-Bound
-				},
-			}),
-			q(62932, {	-- Explore Torghast
-				["sourceQuests"] = { 61099 },	-- The Search for Baine
-				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 39.9, 68.5, ORIBOS },
-				["maps"] = { 1627 },	-- Torghast
-				["g"] = {
-					i(184758),	-- Drape of Inscrutable Purpose
-				},
-			}),
-
-
-
-
-			q(62461, {	-- Stalking the Warrens
-				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-				["provider"] = { "n", 162804 },	-- Ve'nari
-				["coord"] = { 46.8, 41.6, THE_MAW },
-			}),
-
-
-
 		}),
 		n(QUESTS, sharedData({ ["isDaily"] = true }, {
 			q(63039, {	-- A Monument to Vengeance

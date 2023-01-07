@@ -413,6 +413,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["provider"] = { "n", 164843 },	-- Baron Vyraz
 					["coord"] = { 38.2, 66.7, MALDRAXXUS },
 				}),
+				q(59897, {	-- Seeking the Baron
+					["sourceQuests"] = { 59874 },	-- The Maw
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.9, 68.5, ORIBOS },
+				}),
 				q(60972, {	-- The Hunt for the Baron
 					["sourceQuests"] = { 59897 },	-- Seeking the Baron
 					["coord"] = { 44.9, 40.9, THE_MAW },

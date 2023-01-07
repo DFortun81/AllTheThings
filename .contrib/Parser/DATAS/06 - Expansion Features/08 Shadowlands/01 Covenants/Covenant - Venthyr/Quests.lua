@@ -54,6 +54,27 @@ local LFR_WEAPON_GROUP = {
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(QUESTS, {
+			q(63215, {	-- Report to Draven
+				["sourceQuests"] = {
+					-- TODO: confirm
+					57878,	-- Choosing Your Purpose [Story]
+					62000,	-- Choosing Your Purpose [Skip]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["isBreadcrumb"] = true,
+				["provider"] = { "n", 159478 },	-- Tal-Inara
+				["coord"] = { 39.2, 69.7, ORIBOS },
+			}),
+			q(59314, {	-- Sinfall
+				["sourceQuests"] = {
+					57878,	-- Choosing Your Purpose [Story]
+					62000,	-- Choosing Your Purpose [Skip]
+					63215,	-- Report to Draven [Skip]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 171589 },	-- General Draven
+				["coord"] = { 44.8, 68.9, ORIBOS },
+			}),
 			q(57889, {	-- "Accidental" Arson
 				["sourceQuests"] = { 57887 },	-- Killing the Messenger
 				["provider"] = { "n", 159694 },	-- The Countess
