@@ -518,7 +518,7 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.PROFILE_COPY_TOOLTIP = "Скопировать Выделенный Профиль в Текущий Профиль";
 		L.PROFILE_DELETE_TOOLTIP = "Удалить Выделенный Профиль";
 		L.PROFILE_SWITCH_TOOLTIP = "Установить Выделенный Профиль как Текущий Профиль\n\nИли кликните на Профиль с зажатым "..SHIFT_KEY_TEXT.."";
-		--TODO: L.["SHOW_PROFILE_LOADED"] = "Show which profile loads during login or when switching between profiles";
+		L.SHOW_PROFILE_LOADED = "Показывать Текущий Профиль после загрузки и после смены Профиля";
 
 	-- Sync tab
 		L.SYNC = "Синхронизация";

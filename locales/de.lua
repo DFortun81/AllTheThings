@@ -515,7 +515,7 @@ local L = app.L;
 		L.PROFILE_COPY_TOOLTIP = "Kopieren des ausgewählten Profils in das derzeitig aktive Profil";
 		L.PROFILE_DELETE_TOOLTIP = "Lösche das ausgewählte Profil";
 		L.PROFILE_SWITCH_TOOLTIP = "Setzt das ausgewählte Profil als das derzeitig aktive Profil\n\nEin Profil kann auch mit "..SHIFT_KEY_TEXT.."-geklickt werden, um dazu zu wechseln";
-		--TODO: L.["SHOW_PROFILE_LOADED"] = "Show which profile loads during login or when switching between profiles";
+		--TODO: L.SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 
 	-- Sync tab
 		L.SYNC = "Sync";
