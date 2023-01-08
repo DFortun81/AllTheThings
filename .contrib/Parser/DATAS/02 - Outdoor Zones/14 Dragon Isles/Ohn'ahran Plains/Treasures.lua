@@ -58,7 +58,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			o(378088, {	-- Crystalline Flower
 				["description"] = "You need 5 flowers, but only 2 can be up at any given time. Realmhop recommended.\n\n",
-				["coords"] = { 
+				["coords"] = {
 					{ 26.61, 48.76, OHNAHRAN_PLAINS },
 					{ 26.86, 47.33, OHNAHRAN_PLAINS },
 					{ 27.58, 52.76, OHNAHRAN_PLAINS },
@@ -71,9 +71,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(195884, {	-- Crystalline Petals
 						i(195542, {	-- Slumber Incense
-						-- Cost? 
+						-- Cost?
 						-- ["cost"] = { { "i", 195884, 5 }, },	-- Crystalline Petals
-						}),	
+						}),
 					}),
 				},
 			}),
@@ -87,9 +87,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
-			-- Im using the Wrong ObjectID, was not able to find Emerald Chest
-			o(376929, {	-- Emerald Tear (SHOULD BE EMERALD CHEST)
-				["coords"] = { 
+			-- objectID is mentioned here https://www.wowhead.com/item=195041/everliving-wooden-key#comments:id=5485045
+			-- but still missing from wowhead
+			o(378047, {	-- Emerald Chest
+				["coords"] = {
 					{ 67.03, 43.72, OHNAHRAN_PLAINS },	-- Stone
 					{ 66.97, 50.36, OHNAHRAN_PLAINS },	-- Trasure
 				},

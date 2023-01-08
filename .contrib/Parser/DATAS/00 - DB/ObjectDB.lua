@@ -2560,6 +2560,7 @@ _.ObjectNames = {
 	[377899] = "Hidden Hornswog Hostage",
 	[377900] = "Nokhud Warspear",
 	[377938] = "Prismatic Leaper School",
+	[378047] = "Emerald Chest",
 	[378054] = "Riptide Brew",
 	[378088] = "Crystalline Flower",
 	[378820] = "Popfizz Punch",
