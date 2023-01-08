@@ -24,12 +24,12 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 				["maps"] = { 1022 },	-- Uncharted Island
 			}),
 			q(51870, {	-- Island Expedition (1/2) (H)
-				["sourceQuest"] = 53061,
+				["sourceQuest"] = 53062,
 				["races"] = HORDE_ONLY,
 				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 			}),
 			q(51888, {	-- Island Expedition (2/2) (H)
-				["sourceQuest"] = 51903,
+				["sourceQuest"] = 51870,
 				["races"] = HORDE_ONLY,
 				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["maps"] = { 1022 },	-- Uncharted Island
