@@ -173,6 +173,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 10 },
 						},
+						["sourceQuest"] = 72709,	-- Funding a Treasure Hunt
 					}),
 						-- RENOWN 19 --
 					i(198728, {	-- Explorer's League Banner (TOY!)

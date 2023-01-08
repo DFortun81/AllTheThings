@@ -1107,6 +1107,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "n", 187257 },	-- Aster Cloudgaze
 				["coord"] = { 75.8, 33., THE_WAKING_SHORES },
 			}),
+			q(72709, {	-- Funding a Treasure Hunt
+				["sourceQuests"] = 72708,	-- Dragon Isles Supplies
+				["provider"] = { "n", 198846 },	-- Cataloger Jakes
+				["coord"] = { 76.5, 34.2, THE_WAKING_SHORES },
+				["g"] = {
+					i(198854),	-- Archeologist Artifact Notes
+				},
+				["isBreadcrumb"] = true,
+			}),
 			q(71141, {	-- Gills with Gall
 				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 				["provider"] = { "n", 193304 },	-- Ru'Kroszk
