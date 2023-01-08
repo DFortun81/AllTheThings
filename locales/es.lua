@@ -827,15 +827,12 @@ for key,value in pairs({
 		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
 		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
 		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
-		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
-		[-977] = "Maelie la Errante",								-- Maelie the Wanderer
 		[-979] = "Especulador Ve'ken & Especulador Ve'nott",		-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Mejoras del sagrario",							-- Sanctum Upgrades
 		[-924] = "Red de transporte",								-- Transport Network
 		-- SL Ardenweald/Night Fae
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			[-940] = "Consejo de los Ascendidos",					-- Ascended Counil
 			--TODO: [-973] = "Loyalty",								-- Loyalty
 			--TODO: [-975] = "Humility",							-- Humility
 		-- SL Revendreth/Venthyr

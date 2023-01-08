@@ -5,8 +5,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(THE_MAW, {
 		n(SPECIAL, {
 			header(HEADERS.Achievement, 14738, {	-- Hunting Party
-				q(63199,  {	-- Hunt: Alpha Devourers
-					["name"] = "Hunt: Alpha Devourers",
+				n(-910, {	-- Hunt: Alpha Devourers
+					["questID"] = 63199,
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["crs"] = { 175851 },	-- Alpha Anima Devourer
 					["isWeekly"] = true,
@@ -14,14 +14,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 						i(184586),	-- Sky Chain
 					},
 				}),
-				q(63198,  {	-- Hunt: Death Elementals
-					["name"] = "Hunt: Death Elementals",
+				n(-909, {	-- Hunt: Death Elementals
+					["questID"] = 63198,
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["crs"] = { 172962 },	-- Tempered Stygia
 					["isWeekly"] = true,
 				}),
-				q(63180,  {	-- Hunt: Shadehounds
-					["name"] = "Hunt: Shadehounds",
+				n(-911, {	-- Hunt: Shadehounds
+					["questID"] = 63180,
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["crs"] = { 174861 },	-- Gorged Shadehound
 					["isWeekly"] = true,
@@ -37,8 +37,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 						}),
 					},
 				}),
-				q(63194,  {	-- Hunt: Winged Soul Eaters
-					["name"] = "Hunt: Winged Soul Eaters",
+				n(-912, {	-- Hunt: Winged Soul Eaters
+					["questID"] = 63194,
 					["crs"] = { 173195 },	-- Undying Soulbinder
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["isWeekly"] = true,
@@ -51,31 +51,31 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["isWeekly"] = true,
 				["g"] = {
 					ach(15054, {	-- Minions of the Cold Dark
-						crit(1,  {	-- Versya the Damned
+						crit(1, {	-- Versya the Damned
 							["_npcs"] = { 177981 },
 						}),
-						crit(2,  {	-- Gralebboih
+						crit(2, {	-- Gralebboih
 							["_npcs"] = { 177979 },
 						}),
-						crit(3,  {	-- Promathiz
+						crit(3, {	-- Promathiz
 							["_npcs"] = { 177330 },
 						}),
-						crit(4,  {	-- Sentinel Pyrophus
+						crit(4, {	-- Sentinel Pyrophus
 							["_npcs"] = { 177331 },
 						}),
-						crit(5,  {	-- Gruukuuek the Elder
+						crit(5, {	-- Gruukuuek the Elder
 							["_npcs"] = { 177980 },
 						}),
-						crit(6,  {	-- Zul'gath the Flayer
+						crit(6, {	-- Zul'gath the Flayer
 							["_npcs"] = { 178886 },
 						}),
-						crit(7,  {	-- Mugrem the Soul Devourer
+						crit(7, {	-- Mugrem the Soul Devourer
 							["_npcs"] = { 178002 },
 						}),
-						crit(8,  {	-- The Mass of Souls
+						crit(8, {	-- The Mass of Souls
 							["_npcs"] = { 177427 },
 						}),
-						crit(9,  {	-- Algel the Hunter
+						crit(9, {	-- Algel the Hunter
 							["_npcs"] = { 178897 },
 						}),
 						crit(10, {	-- Sentinel Shakorzeth
@@ -315,7 +315,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				},
 			}),
 			i(186188, {	-- Lil'Abom (PET!)
-				["description"] = "What controls the availability of parts is currently unknown.  They appear to spawn in Perdition Hold and the surrounding area, next to dead Prime Guards.  If you cannot find parts at any of the provided coordinates, try using |cFFFFFFFF/tar Prime Guard|r.",
+				["description"] = "What controls the availability of parts is currently unknown. They appear to spawn in Perdition Hold and the surrounding area, next to dead Prime Guards. If you cannot find parts at any of the provided coordinates, try using |cFFFFFFFF/tar Prime Guard|r.",
 				["cost"] = {
 					{ "i", 186183, 1 },	-- Lil'Abom Head
 					{ "i", 186185, 1 },	-- Lil'Abom Legs

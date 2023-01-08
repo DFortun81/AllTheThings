@@ -811,15 +811,12 @@ for key,value in pairs({
 		[-910] = "Охота: пожиратели душ",							-- Hunt: Alpha Devourers
 		[-911] = "Охота: темные гончие",							-- Hunt: Shadehounds
 		[-912] = "Охота: крылатые пожиратели душ",					-- Hunt: Winged Soul Eaters
-		[-913] = "Мучители из Торгаста",							-- Tormentors of Torghast
-		[-977] = "Маэли Странница",									-- Maelie the Wanderer
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Улучшения для Обители",							-- Sanctum Upgrades
 		[-924] = "Транспортная Сеть",								-- Transport Network
 		-- SL Ardenweald/Night Fae
 			[-936] = "Формы души",									-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			[-940] = "Совет перерожденных",							-- Ascended Counil
 			[-973] = "Верность",									-- Loyalty
 			[-975] = "Смирение",									-- Humility
 		-- SL Revendreth/Venthyr

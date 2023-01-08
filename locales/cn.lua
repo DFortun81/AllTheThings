@@ -832,15 +832,12 @@ for key,value in pairs({
 		[-910] = "狩猎：噬魂者",											-- Hunt: Alpha Devourers
 		[-911] = "狩猎：影犬",											-- Hunt: Shadehounds
 		[-912] = "狩猎：飞翼噬魂者",										-- Hunt: Winged Soul Eaters
-		[-913] = "托加斯特的折磨者",										-- Tormentors of Torghast
-		[-977] = "游荡者梅莉",											-- Maelie the Wanderer
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "圣所升级",											-- Sanctum Upgrades
 		[-924] = "传送网络",											-- Transport Network
 		-- SL Ardenweald/Night Fae
 			[-936] = "灵魂变形形态",										-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			[-940] = "晋升者议会",										-- Ascended Counil
 			[-973] = "忠诚",											-- Loyalty
 			[-975] = "谦逊",											-- Humility
 		-- SL Revendreth/Venthyr
