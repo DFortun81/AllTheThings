@@ -3206,6 +3206,8 @@ for key, value in pairs({
 	[364932] = "灼光矿锭",	-- Blazing Ingot
 	[364937] = "相位虹吸仪",	-- Phasic Siphoner
 	[364987] = "掮灵日志",	-- Broker Journal
+	[364994] = "幽灵矿镐",	-- Spectral Pick
+	[365084] = "拷问者之矛",	-- Tormentor's Pike
 	--TODO: [365093] = "Theotar's Caroling Books",	-- Theotar's Caroling Books
 	[368205] = "渊誓之箱",	-- Mawsworn Cache
 	[368206] = "渊誓之箱",	-- Mawsworn Cache
@@ -3438,7 +3440,9 @@ for key, value in pairs({
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	--TODO: [377938] = "Prismatic Leaper School",	-- Prismatic Leaper School
 	[378010] = "被遗忘的巨龙宝藏",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "激流陈酿",	-- Riptide Brew
+	[378088] = "水晶花",	-- Crystalline Flower
 	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
 	[378857] = "失落的黑曜石宝箱",	-- Lost Obsidian Cache
 	[379290] = "精美雕像",	-- Ornamented Statue

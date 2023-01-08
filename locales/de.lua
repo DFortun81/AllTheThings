@@ -3193,6 +3193,8 @@ for key,value in pairs({
 	[364932] = "Lodernder Barren",	-- Blazing Ingot
 	[364937] = "Phasenschröpfer",	-- Phasic Siphoner
 	[364987] = "Mittlertagebuch",	-- Broker Journal
+	[364994] = "Spektralhacke",	-- Spectral Pick
+	[365084] = "Pike des Quälers",	-- Tormentor's Pike
 	[365093] = "Theotars Liederbücher",	-- Theotar's Caroling Books
 	[368205] = "Schlundgebundene Truhe",	-- Mawsworn Cache
 	[368206] = "Schlundgebundene Truhe",	-- Mawsworn Cache
@@ -3425,7 +3427,9 @@ for key,value in pairs({
 	[377900] = "Kriegsspeer der Nokhud",	-- Nokhud Warspear
 	[377938] = "Prismatischer Springerschwarm",	-- Prismatic Leaper School
 	[378010] = "Vergessener Drachenschatz",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "Springflutbräu",	-- Riptide Brew
+	[378088] = "Kristalline Blume",	-- Crystalline Flower
 	[378820] = "Sprudelpunsch",	-- Popfizz Punch
 	[378857] = "Verlorene Obsidiantruhe",	-- Lost Obsidian Cache
 	[379290] = "Verzierte Statue",	-- Ornamented Statue
