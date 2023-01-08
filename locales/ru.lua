@@ -3183,6 +3183,8 @@ for key,value in pairs({
 	[364932] = "Полыхающий слиток",	-- Blazing Ingot
 	[364937] = "Фазовый вытягиватель",	-- Phasic Siphoner
 	[364987] = "Журнал брокера",	-- Broker Journal
+	[364994] = "Призрачная кирка",	-- Spectral Pick
+	[365084] = "Пика истязателя",	-- Tormentor's Pike
 	[365093] = "Книга праздничных гимнов Теотара",	-- Theotar's Caroling Books
 	[368205] = "Тайник Верных Утробе",	-- Mawsworn Cache
 	[368206] = "Тайник Верных Утробе",	-- Mawsworn Cache
@@ -3415,7 +3417,9 @@ for key,value in pairs({
 	[377900] = "Боевое копье клана Нокхуд",	-- Nokhud Warspear
 	[377938] = "Косяк призматического прыгуна",	-- Prismatic Leaper School
 	[378010] = "Забытое сокровище драконов",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "Отвар быстрины",	-- Riptide Brew
+	[378088] = "Кристаллический цветок",	-- Crystalline Flower
 	[378820] = "Искрометный пунш",	-- Popfizz Punch
 	[378857] = "Потерянный обсидиановый тайник",	-- Lost Obsidian Cache
 	[379290] = "Украшенная узорами статуя",	-- Ornamented Statue

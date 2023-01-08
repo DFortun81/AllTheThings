@@ -3191,6 +3191,8 @@ for key,value in pairs({
 	[364932] = "Lingot incandescent",	-- Blazing Ingot
 	[364937] = "Siphonneur phasique",	-- Phasic Siphoner
 	[364987] = "Journal de négociant",	-- Broker Journal
+	[364994] = "Pioche spectrale",	-- Spectral Pick
+	[365084] = "Pique de tourmenteur",	-- Tormentor's Pike
 	[365093] = "Livres de chants festifs de Théotar",	-- Theotar's Caroling Books
 	[368205] = "Cache antrelige",	-- Mawsworn Cache
 	[368206] = "Cache antrelige",	-- Mawsworn Cache
@@ -3423,7 +3425,9 @@ for key,value in pairs({
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	[377938] = "Banc de bondisseurs prismatiques",	-- Prismatic Leaper School
 	[378010] = "Trésor draconique oublié",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "Bière des baïnes",	-- Riptide Brew
+	[378088] = "Fleur cristalline",	-- Crystalline Flower
 	[378820] = "Punch moussboum",	-- Popfizz Punch
 	[378857] = "Cache d’obsidienne perdue",	-- Lost Obsidian Cache
 	[379290] = "Statue ornementale",	-- Ornamented Statue

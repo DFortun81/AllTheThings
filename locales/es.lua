@@ -3196,6 +3196,8 @@ for key,value in pairs({
 	[364932] = "Lingote llameante",	-- Blazing Ingot
 	[364937] = "Succionador fásico",	-- Phasic Siphoner
 	[364987] = "Diario de especulador",	-- Broker Journal
+	[364994] = "Pico espectral",	-- Spectral Pick
+	[365084] = "Pica de torturador",	-- Tormentor's Pike
 	[365093] = "Libros de villancicos de Theotar",	-- Theotar's Caroling Books
 	[368205] = "Alijo jurafauces",	-- Mawsworn Cache
 	[368206] = "Alijo jurafauces",	-- Mawsworn Cache
@@ -3428,7 +3430,9 @@ for key,value in pairs({
 	[377900] = "Lanza de guerra Nokhud",	-- Nokhud Warspear
 	[377938] = "Banco de saltadores prismáticos",	-- Prismatic Leaper School
 	[378010] = "Tesoro de dragón olvidado",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "Bebida de mareaviva",	-- Riptide Brew
+	[378088] = "Flor cristalina",	-- Crystalline Flower
 	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
 	[378857] = "Alijo de obsidiana perdido",	-- Lost Obsidian Cache
 	[379290] = "Estatua adornada",	-- Ornamented Statue

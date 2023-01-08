@@ -3192,6 +3192,8 @@ for key,value in pairs({
 	[364932] = "이글거리는 주괴",	-- Blazing Ingot
 	[364937] = "위상 착취기",	-- Phasic Siphoner
 	[364987] = "중개자 일지",	-- Broker Journal
+	[364994] = "유령 곡괭이",	-- Spectral Pick
+	[365084] = "고문관의 창",	-- Tormentor's Pike
 	--TODO: [365093] = "Theotar's Caroling Books",	-- Theotar's Caroling Books
 	[368205] = "나락살이 보관함",	-- Mawsworn Cache
 	[368206] = "나락살이 보관함",	-- Mawsworn Cache
@@ -3424,7 +3426,9 @@ for key,value in pairs({
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	[377938] = "오색 도약꾼 떼",	-- Prismatic Leaper School
 	[378010] = "잊힌 용의 보물",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "성난 해일 맥주",	-- Riptide Brew
+	[378088] = "수정 꽃",	-- Crystalline Flower
 	[378820] = "팝피즈 음료",	-- Popfizz Punch
 	[378857] = "잃어버린 흑요석 보관함",	-- Lost Obsidian Cache
 	[379290] = "장식된 조각상",	-- Ornamented Statue
