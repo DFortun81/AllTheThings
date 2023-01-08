@@ -712,6 +712,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								i(200961),	-- Sabellian's Cloak
 								i(200962),	-- Sabellian's Tunic
 							},
+							["questID"] = 72115,
 						}),
 						i(200640, {	-- Obsidian Egg Clutch (TOY!)
 							["cost"] = {

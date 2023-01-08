@@ -46,6 +46,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(200138),	-- Ancient Dancer's Longspear
 					i(197586),	-- Windborne Velocidrake: Spiked Back
+					i(200758),	-- Breastplate of Storied Antiquity
+					i(200303),	-- Dreamweaver Acolyte's Staff
 				},
 			}),
 			n(191611, {	-- Dragonhunter Igordan
