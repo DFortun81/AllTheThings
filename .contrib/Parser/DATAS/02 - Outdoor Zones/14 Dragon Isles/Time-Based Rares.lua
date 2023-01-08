@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(RARES, {
-		n(-1143, {	-- Time-Based Rare
+		n(-1143, {	-- Every 2 Hours Rare
 			["description"] = "These rares spawn on a fixed timer & will be marked with a skull on the map if you are in the respective zone.\n\nEU: 6am CET 8am CET and so on\n\nNA: 7am PST 9am PST and so on",
 			["g"] = {
 				-- Thaldraszus
@@ -34,7 +34,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				n(192737, {	-- Qalashi War Mammoth
 					["description"] = "Marked with an icon on the map if they are up.",
-					["coords"] = { 
+					["coords"] = {
 						{ 33.8, 70.4, THE_WAKING_SHORES },
 						{ 39.2, 68.2, THE_WAKING_SHORES },
 						{ 47.0, 73.0, THE_WAKING_SHORES },
