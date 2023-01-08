@@ -516,6 +516,7 @@ local L = app.L;
 		L.PROFILE_COPY_TOOLTIP = "复制已选配置文件到当前配置文件";
 		L.PROFILE_DELETE_TOOLTIP = "删除已选配置文件";
 		L.PROFILE_SWITCH_TOOLTIP = "将选定的配置文件设置为当前配置文件\n\n一个配置文件也可以通过 "..SHIFT_KEY_TEXT.."-点击切换到它";
+		--TODO: L.["SHOW_PROFILE_LOADED"] = "Show which profile loads during login or when switching between profiles";
 
 	-- Sync tab
 		L.SYNC = "同步";
