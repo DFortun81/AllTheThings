@@ -1110,6 +1110,7 @@ end
 -- Do not move this elsewhere, please leave it here for now. -Darkal
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(BFA_TIER, {
+		-- NYI Battle for Azeroth Poor Items
 		n(ARMOR, {
 			filter(COSMETIC, {
 				i(162606),	-- Tidesage Chest

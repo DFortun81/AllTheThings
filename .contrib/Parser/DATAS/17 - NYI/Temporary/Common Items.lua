@@ -380,7 +380,6 @@ local f = root("CommonQualityItems", {
 				i(3890),	-- Studded Hat
 				i(42094),	-- Snowhide Cap
 				i(3893),	-- Reinforced Leather Cap
-				i(162523),	-- Raptor's Visage
 			}),
 			n(SHOULDER, {
 				i(10405),	-- Bandit Shoulders
@@ -1244,7 +1243,6 @@ local f = root("CommonQualityItems", {
 			i(6508),	-- Infantry Cloak
 			i(4662),	-- Journeyman's Cloak
 			i(2570),	-- Linen Cloak
-			i(171253),	-- Loyalist Drape
 			i(15015),	-- Lupine Cloak
 			i(3331),	-- Melrache's Cape
 			i(24104),	-- Moongraze Fur Cloak
@@ -1287,70 +1285,13 @@ local f = root("CommonQualityItems", {
 			i(64310),	-- No Tabard
 		}),
 		filter(COSMETIC, {
-			i(160227),	-- Bilge Rat Belt
-			i(158939),	-- Bilge Rat Hat
-			i(160224),	-- Bilge Rat Hat
-			i(160226),	-- Bilge Rat Pants
-			i(160225),	-- Bilge Rat Shirt
-			i(160231),	-- Blacktooth Belt
-			i(160232),	-- Blacktooth Hat
-			i(158938),	-- Blacktooth Hat
-			i(160230),	-- Blacktooth Pants
 			i(114985),	-- Bow Tie
-			i(155683),	-- Cutwater Hat
-			i(160247),	-- Cutwater Hat
-			i(160223),	-- Cutwater Pants
-			i(160220),	-- Cutwater Shirt
-			i(168004),	-- Gift of N'Zoth
-			i(153355),	-- Irontide Hat
-			i(160248),	-- Irontide Hat
-			i(160229),	-- Irontide Pants
-			i(160228),	-- Irontide Shirt
-			i(171261),	-- Loyalist Belt
-			i(171260),	-- Loyalist Gloves
-			i(171251),	-- Loyalist Hood
-			i(171255),	-- Loyalist Chest
-			i(171256),	-- Loyalist Legs
-			i(171252),	-- Loyalist Shoulders
-			i(160280),	-- Pirate Bandana (Black)
-			i(160279),	-- Pirate Bandana (Blue)
-			i(160278),	-- Pirate Bandana (Green)
-			i(160277),	-- Pirate Bandana (Grey)
-			i(160276),	-- Pirate Bandana (Orange)
-			i(160275),	-- Pirate Bandana (Red)
-			i(160281),	-- Pirate Bicorne (Forward, Blue)
-			i(160282),	-- Pirate Bicorne (Forward, Brown)
-			i(160283),	-- Pirate Bicorne (Forward, Green)
-			i(160284),	-- Pirate Bicorne (Forward, Grey)
-			i(160285),	-- Pirate Bicorne (Forward, Red)
-			i(160272),	-- Pirate Bicorne (Side, Black)
-			i(160271),	-- Pirate Bicorne (Side, Blue)
-			i(160273),	-- Pirate Bicorne (Side, Brown)
-			i(160274),	-- Pirate Bicorne (Side, Green)
-			i(160222),	-- Pirate Boots
-			i(160291),	-- Pirate Flared Tricorne (Blue)
-			i(160293),	-- Pirate Flared Tricorne (Brown)
-			i(160294),	-- Pirate Flared Tricorne (Green)
-			i(160295),	-- Pirate Flared Tricorne (Grey)
-			i(160297),	-- Pirate Flared Tricorne (Red, Military)
-			i(160296),	-- Pirate Flared Tricorne (Red)
-			i(160221),	-- Pirate Gloves
-			i(160287),	-- Pirate Tricorne (Brown)
-			i(160288),	-- Pirate Tricorne (Green)
-			i(162608),	-- Tidesage Belt
-			i(162605),	-- Tidesage Boots
-			i(162609),	-- Tidesage Gloves
-			i(162607),	-- Tidesage Hood
-			i(162610),	-- Tidesage Pants
+			i(168004),	-- Gift of N'Zoth	-- TODO Battle for Azeroth
 			i(135550),	-- Transmog UI Feet Item
 			i(135549),	-- Transmog UI Hand Item
 			i(135547),	-- Transmog UI Head Item
 			i(135522),	-- Transmog UI Chest Item
 			i(135548),	-- Transmog UI Legs Item
-			i(169924),	-- Transmog UI Trim Head Item
-			i(175262),	-- Transmog UI Trim Head Item
-			i(175263),	-- Transmog UI Trim Head Item
-			i(175264),	-- Transmog UI Trim Head Item
 			i(135510),	-- Transmog UI Trim Head Item
 		}),
 		filter(MISC, {
@@ -1870,7 +1811,6 @@ local f = root("CommonQualityItems", {
 			i(20978),	-- Apprentice's Staff
 			i(2527),	-- Battle Staff
 			i(4938),	-- Blemished Wooden Staff
-			i(163561),	-- Butterfly Net
 			i(1388),	-- Crooked Staff
 			i(52947),	-- Cyclone Staff
 			i(44655),	-- Dalaran Stave
@@ -2035,6 +1975,84 @@ end
 -- Never Implemented Common Items --
 -- Do not move this elsewhere, please leave it here for now. -Darkal
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+	tier(BFA_TIER, {
+		-- NYI Battle for Azeroth Common Items
+		n(ARMOR, {
+			filter(LEATHER, {
+				n(HEAD, {
+					i(162523),	-- Raptor's Visage
+				}),
+			}),
+			filter(CLOAKS, {
+				i(171253),	-- Loyalist Drape
+			}),
+			filter(COSMETIC, {
+				i(160227),	-- Bilge Rat Belt
+				i(158939),	-- Bilge Rat Hat
+				i(160224),	-- Bilge Rat Hat
+				i(160226),	-- Bilge Rat Pants
+				i(160225),	-- Bilge Rat Shirt
+				i(160231),	-- Blacktooth Belt
+				i(160232),	-- Blacktooth Hat
+				i(158938),	-- Blacktooth Hat
+				i(160230),	-- Blacktooth Pants
+				i(155683),	-- Cutwater Hat
+				i(160247),	-- Cutwater Hat
+				i(160223),	-- Cutwater Pants
+				i(160220),	-- Cutwater Shirt
+				i(168004),	-- Gift of N'Zoth
+				i(153355),	-- Irontide Hat
+				i(160248),	-- Irontide Hat
+				i(160229),	-- Irontide Pants
+				i(160228),	-- Irontide Shirt
+				i(171261),	-- Loyalist Belt
+				i(171260),	-- Loyalist Gloves
+				i(171251),	-- Loyalist Hood
+				i(171255),	-- Loyalist Chest
+				i(171256),	-- Loyalist Legs
+				i(171252),	-- Loyalist Shoulders
+				i(160280),	-- Pirate Bandana (Black)
+				i(160279),	-- Pirate Bandana (Blue)
+				i(160278),	-- Pirate Bandana (Green)
+				i(160277),	-- Pirate Bandana (Grey)
+				i(160276),	-- Pirate Bandana (Orange)
+				i(160275),	-- Pirate Bandana (Red)
+				i(160281),	-- Pirate Bicorne (Forward, Blue)
+				i(160282),	-- Pirate Bicorne (Forward, Brown)
+				i(160283),	-- Pirate Bicorne (Forward, Green)
+				i(160284),	-- Pirate Bicorne (Forward, Grey)
+				i(160285),	-- Pirate Bicorne (Forward, Red)
+				i(160272),	-- Pirate Bicorne (Side, Black)
+				i(160271),	-- Pirate Bicorne (Side, Blue)
+				i(160273),	-- Pirate Bicorne (Side, Brown)
+				i(160274),	-- Pirate Bicorne (Side, Green)
+				i(160222),	-- Pirate Boots
+				i(160291),	-- Pirate Flared Tricorne (Blue)
+				i(160293),	-- Pirate Flared Tricorne (Brown)
+				i(160294),	-- Pirate Flared Tricorne (Green)
+				i(160295),	-- Pirate Flared Tricorne (Grey)
+				i(160297),	-- Pirate Flared Tricorne (Red, Military)
+				i(160296),	-- Pirate Flared Tricorne (Red)
+				i(160221),	-- Pirate Gloves
+				i(160287),	-- Pirate Tricorne (Brown)
+				i(160288),	-- Pirate Tricorne (Green)
+				i(162608),	-- Tidesage Belt
+				i(162605),	-- Tidesage Boots
+				i(162609),	-- Tidesage Gloves
+				i(162607),	-- Tidesage Hood
+				i(162610),	-- Tidesage Pants
+				i(169924),	-- Transmog UI Trim Head Item
+				i(175262),	-- Transmog UI Trim Head Item
+				i(175263),	-- Transmog UI Trim Head Item
+				i(175264),	-- Transmog UI Trim Head Item
+			}),
+		}),
+		n(WEAPONS, {
+			filter(STAVES, {
+				i(163561),	-- Butterfly Net
+			}),
+		}),
+	}),
 	tier(SL_TIER, {
 		-- NYI Shadowlands Common Items
 		n(ARMOR, {
