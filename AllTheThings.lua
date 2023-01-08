@@ -2589,7 +2589,7 @@ local PrintQuestInfo = function(questID, new, info)
 		end
 		-- This quest doesn't meet the filter for this character, then ask to report in chat
 		if questChange == "accepted" then
-			DelayedCallback(app.CheckInaccurateQuestInfo, 0.5, questRef, questChange);
+			DelayedCallback(app.CheckInaccurateQuestInfo, 1, questRef, questChange);
 		end
 		local chatMsg;
 		if not questRef or GetRelativeField(questRef, "text", L["UNSORTED_1"]) then
@@ -19198,11 +19198,13 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		-- FLIGHT_PATHS = -228;
 			[-228] = "flightPathID",
 		-- HIDDEN_QUESTS = -999;	-- currently nested under 'Quests' due to Type
-			-- [-999] = true,
+		-- [-999] = true,
 		-- HOLIDAY = -3;
 			[-3] = "holidayID",
 		-- PROFESSIONS = -38;
 			[-38] = "professionID",
+		-- PVP = -9;
+			[-9] = true,
 		-- QUESTS = -17;
 			[-17] = "questID",
 		-- RARES = -16;
@@ -21724,7 +21726,8 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				{
 					1978,	-- Dragon Isles
 					{
-						-- TODO: any un-attached sub-zones
+						{ 2085 },	-- Primalist Tomorrow
+						-- any un-attached sub-zones
 					}
 				},
 				-- Shadowlands Continents

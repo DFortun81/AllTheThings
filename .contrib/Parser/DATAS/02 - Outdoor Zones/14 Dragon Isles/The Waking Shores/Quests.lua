@@ -495,7 +495,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["collectible"] = false,
 				["g"] = {
 					q(69896, {	-- Disastrous Detour
-						["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+						["sourceQuests"] = { 66001 },	-- A Last Hope
 						["provider"] = { "n", 190273 },	-- Scout Kuvaeth
 						["coord"] = { 63.5, 61.8, THE_WAKING_SHORES },
 						["isBreadcrumb"] = true,

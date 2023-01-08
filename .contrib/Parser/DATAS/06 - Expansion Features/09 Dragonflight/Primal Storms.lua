@@ -76,7 +76,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						16461,	-- Stormed Off
 						16502,	-- Storming the Runway
 					}},
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				ach(16486, {	-- Sandstorms in Thaldraszus
 					["maps"] = { THALDRASZUS },
@@ -110,7 +109,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						16476,	-- Chasing Storms in Ohn'ahran Plains
 						16468,	-- Chasing Storms in The Waking Shores
 					}},
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				ach(16461, {	-- Stormed Off
 					["g"] = {
@@ -273,6 +271,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			n(SPECIAL, {
+				-- TODO: these actually are not realted to Primal Storms. maybe will move to Exp Features > Professions > Special
 				i(200932, {	-- Encaged Airy Soul
 					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 					["cost"] = {

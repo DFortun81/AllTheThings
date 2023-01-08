@@ -516,6 +516,7 @@ local L = app.L;
 		L.PROFILE_COPY_TOOLTIP = "复制已选配置文件到当前配置文件";
 		L.PROFILE_DELETE_TOOLTIP = "删除已选配置文件";
 		L.PROFILE_SWITCH_TOOLTIP = "将选定的配置文件设置为当前配置文件\n\n一个配置文件也可以通过 "..SHIFT_KEY_TEXT.."-点击切换到它";
+		--TODO: L.SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 
 	-- Sync tab
 		L.SYNC = "同步";
@@ -831,15 +832,12 @@ for key,value in pairs({
 		[-910] = "狩猎：噬魂者",											-- Hunt: Alpha Devourers
 		[-911] = "狩猎：影犬",											-- Hunt: Shadehounds
 		[-912] = "狩猎：飞翼噬魂者",										-- Hunt: Winged Soul Eaters
-		[-913] = "托加斯特的折磨者",										-- Tormentors of Torghast
-		[-977] = "游荡者梅莉",											-- Maelie the Wanderer
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "圣所升级",											-- Sanctum Upgrades
 		[-924] = "传送网络",											-- Transport Network
 		-- SL Ardenweald/Night Fae
 			[-936] = "灵魂变形形态",										-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			[-940] = "晋升者议会",										-- Ascended Counil
 			[-973] = "忠诚",											-- Loyalty
 			[-975] = "谦逊",											-- Humility
 		-- SL Revendreth/Venthyr
@@ -874,6 +872,7 @@ for key,value in pairs({
 		[-1131] = "伊斯卡拉渔具",										-- Iskaara Fishing
 		[-1140] = "瓦德拉肯联军",											-- Valdrakken Accord
 		[-1142] = "天际挑战",											-- Aerial Challenges
+		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
@@ -3207,6 +3206,8 @@ for key, value in pairs({
 	[364932] = "灼光矿锭",	-- Blazing Ingot
 	[364937] = "相位虹吸仪",	-- Phasic Siphoner
 	[364987] = "掮灵日志",	-- Broker Journal
+	[364994] = "幽灵矿镐",	-- Spectral Pick
+	[365084] = "拷问者之矛",	-- Tormentor's Pike
 	--TODO: [365093] = "Theotar's Caroling Books",	-- Theotar's Caroling Books
 	[368205] = "渊誓之箱",	-- Mawsworn Cache
 	[368206] = "渊誓之箱",	-- Mawsworn Cache
@@ -3439,7 +3440,9 @@ for key, value in pairs({
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	--TODO: [377938] = "Prismatic Leaper School",	-- Prismatic Leaper School
 	[378010] = "被遗忘的巨龙宝藏",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "激流陈酿",	-- Riptide Brew
+	[378088] = "水晶花",	-- Crystalline Flower
 	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
 	[378857] = "失落的黑曜石宝箱",	-- Lost Obsidian Cache
 	[379290] = "精美雕像",	-- Ornamented Statue

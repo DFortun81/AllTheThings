@@ -515,6 +515,7 @@ local L = app.L;
 		L.PROFILE_COPY_TOOLTIP = "Kopieren des ausgewählten Profils in das derzeitig aktive Profil";
 		L.PROFILE_DELETE_TOOLTIP = "Lösche das ausgewählte Profil";
 		L.PROFILE_SWITCH_TOOLTIP = "Setzt das ausgewählte Profil als das derzeitig aktive Profil\n\nEin Profil kann auch mit "..SHIFT_KEY_TEXT.."-geklickt werden, um dazu zu wechseln";
+		--TODO: L.SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 
 	-- Sync tab
 		L.SYNC = "Sync";
@@ -823,15 +824,12 @@ for key,value in pairs({
 		[-910] = "Jagd: Seelenfresser",								-- Hunt: Alpha Devourers
 		[-911] = "Jagd: Schemenhunde",								-- Hunt: Shadehounds
 		[-912] = "Jagd: Geflügelte Seelenfresser",					-- Hunt: Winged Soul Eaters
-		[-913] = "Peiniger von Torghast",							-- Tormentors of Torghast
-		[-977] = "Maelie die Wanderin",								-- Maelie the Wanderer
 		[-979] = "Mittler Ve'ken & Mittler Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Sanktumaufwertungen",								-- Sanctum Upgrades
 		[-924] = "Reisenetzwerk",									-- Transport Network
 		-- SL Ardenweald/Night Fae
 			[-936] = "Seelengestalt Formen",						-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			[-940] = "Rat der Aufgestiegenen",						-- Ascended Counil
 			[-973] = "Loyalität",									-- Loyalty
 			[-975] = "Demut",										-- Humility
 		-- SL Revendreth/Venthyr
@@ -866,6 +864,7 @@ for key,value in pairs({
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Valdrakkenabkommen",								-- Valdrakken Accord
 		[-1142] = "Luftige Herausforderungen",						-- Aerial Challenges
+		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
 	-- Warrior order hall lore items
 		[-2200] = "Der große Odyn und der Feuerlord",				-- Great Odyn and the Firelord
 		[-2201] = "Der Wanderer und die Schlange",					-- The Wanderer and the Serpent
@@ -3194,6 +3193,8 @@ for key,value in pairs({
 	[364932] = "Lodernder Barren",	-- Blazing Ingot
 	[364937] = "Phasenschröpfer",	-- Phasic Siphoner
 	[364987] = "Mittlertagebuch",	-- Broker Journal
+	[364994] = "Spektralhacke",	-- Spectral Pick
+	[365084] = "Pike des Quälers",	-- Tormentor's Pike
 	[365093] = "Theotars Liederbücher",	-- Theotar's Caroling Books
 	[368205] = "Schlundgebundene Truhe",	-- Mawsworn Cache
 	[368206] = "Schlundgebundene Truhe",	-- Mawsworn Cache
@@ -3426,7 +3427,9 @@ for key,value in pairs({
 	[377900] = "Kriegsspeer der Nokhud",	-- Nokhud Warspear
 	[377938] = "Prismatischer Springerschwarm",	-- Prismatic Leaper School
 	[378010] = "Vergessener Drachenschatz",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "Springflutbräu",	-- Riptide Brew
+	[378088] = "Kristalline Blume",	-- Crystalline Flower
 	[378820] = "Sprudelpunsch",	-- Popfizz Punch
 	[378857] = "Verlorene Obsidiantruhe",	-- Lost Obsidian Cache
 	[379290] = "Verzierte Statue",	-- Ornamented Statue

@@ -99,7 +99,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(72291, {	-- Story of a Memorable Victory
 				["minReputation"] = { 2511, 5 },	-- Iskaara Tuskarr Renown 5
-				["sourceQuests"] = { 70940 },	-- Tuskarr Champion's Tales
+				-- ["sourceQuests"] = { 70940 },	-- Tuskarr Champion's Tales
 				["provider"] = { "i", 201470 },	-- Story of a Memorable Victory
 				["isWeekly"] = true,
 			}),
@@ -193,6 +193,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197631 },	-- Rowie
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				["isBreadcrumb"] = true,
 			}),
 			q(68640, {	-- Sudden Isolation
 				["minReputation"] = { 2511, 11 },	-- Iskaara Tuskarr Renown 11
@@ -238,10 +239,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(66418, {	-- Testing the Tuskaprsenal
 				["minReputation"] = { 2511, 11 },	-- Iskaara Tuskarr Renown 11
-				["sourceQuests"] = {
-					66411,	-- Troubled Waters
-					66417,	-- Salvaging Supplies
-				},
+				["sourceQuests"] = { 66417 },	-- Salvaging Supplies
 				["provider"] = { "n", 188285 },	-- Crafter Kuliqa
 				["coord"] = { 54.3, 38.7, THE_WAKING_SHORES },
 				["g"] = {
@@ -441,7 +439,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199883),	-- Tuskarr Sharktooth Bolthrower
 					i(199878),	-- Tuskarr Timber Splitter
 				},
-				
 			}),
 			q(72323, {	-- Iskaaran Crafting Mastery
 				["minReputation"] = { 2511, 24 },	-- Iskaara Tuskarr Renown 24

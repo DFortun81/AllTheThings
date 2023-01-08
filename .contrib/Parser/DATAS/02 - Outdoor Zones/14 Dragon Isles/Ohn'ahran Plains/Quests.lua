@@ -946,6 +946,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				-- Fields of Ferocity --
 			q(70444, {	-- The Fields of Ferocity
+				-- TODO: add magic alt-unlock quest
+				["sourceQuestsNumRequired"] = 1,
 				["sourceQuests"] = { 65806 },	-- Maruukai
 				["provider"] = { "o", 380902 },	-- Fields of Ferocity
 				["coord"] = { 62.3, 42.3, OHNAHRAN_PLAINS },

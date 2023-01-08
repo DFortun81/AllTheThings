@@ -514,6 +514,7 @@ local L = app.L;
 		--TODO: L.PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
 		--TODO: L.PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
 		--TODO: L.PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.."-Clicked to Switch to it";
+		--TODO: L.SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 
 	-- Sync tab
 		--TODO: L.SYNC = "Sync";
@@ -814,15 +815,12 @@ for key,value in pairs({
 		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
 		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
 		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
-		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
-		[-977] = "Maelie la Girovaga",								-- Maelie the Wanderer
 		[-979] = "Alienatore Ve'ken & Alienatore Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Potenziamenti al Santuario",						-- Sanctum Upgrades
 		[-924] = "Rete di Trasporto",								-- Transport Network
 		-- SL Ardenweald/Night Fae
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			[-940] = "Concilio degli Ascesi",						-- Ascended Counil
 			--TODO: [-973] = "Loyalty",								-- Loyalty
 			--TODO: [-975] = "Humility",							-- Humility
 		-- SL Revendreth/Venthyr
@@ -857,6 +855,7 @@ for key,value in pairs({
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Accordo di Valdrakken",							-- Valdrakken Accord
 		[-1142] = "Sfide Aeree",									-- Aerial Challenges
+		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
@@ -3185,6 +3184,8 @@ for key,value in pairs({
 	[364932] = "Lingotto Fiammeggiante",	-- Blazing Ingot
 	[364937] = "Risucchiatore Fasico",	-- Phasic Siphoner
 	[364987] = "Diario dell'Alienatore",	-- Broker Journal
+	[364994] = "Piccone Spettrale",	-- Spectral Pick
+	[365084] = "Picca del Tormentatore",	-- Tormentor's Pike
 	[365093] = "Libri di Canti di Teotar",	-- Theotar's Caroling Books
 	[368205] = "Scrigno dei Giurafauce",	-- Mawsworn Cache
 	[368206] = "Scrigno dei Giurafauce",	-- Mawsworn Cache
@@ -3417,7 +3418,9 @@ for key,value in pairs({
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	--TODO: [377938] = "Prismatic Leaper School",	-- Prismatic Leaper School
 	[378010] = "Tesoro dei Draghi Dimenticato",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "Birra di Marea",	-- Riptide Brew
+	[378088] = "Fiore Cristallino",	-- Crystalline Flower
 	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
 	[378857] = "Cassa d'Ossidiana Perduta",	-- Lost Obsidian Cache
 	[379290] = "Statua Adornata",	-- Ornamented Statue

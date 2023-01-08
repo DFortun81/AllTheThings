@@ -620,6 +620,7 @@ app.L = {
 	["PROFILE_COPY_TOOLTIP"] = "Copy the Selected Profile into the Current Profile";
 	["PROFILE_DELETE_TOOLTIP"] = "Delete the Selected Profile";
 	["PROFILE_SWITCH_TOOLTIP"] = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.."-Clicked to Switch to it";
+	["SHOW_PROFILE_LOADED"] = "Show which profile loads during login or when switching between profiles";
 
 	-- Sync tab
 	["SYNC"] = "Sync";
@@ -1416,6 +1417,7 @@ app.L = {
 		[-1140] = "Interface\\Icons\\ui_majorfaction_valdrakken",									-- Valdrakken Accord
 		[-1141] = "Interface\\Icons\\inv_artifact_dragonscales",									-- Siege on Dragonbane Keep
 		[-1142] = "Interface\\Icons\\inv_checkered_flag",											-- Aerial Challenges
+		[-1143] = 237274,																			-- Every 2 Hours Rare
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1890,6 +1892,10 @@ app.L = {
 		[-903] = "Zone Rewards",												-- Zone Rewards
 		[-905] = GetSpellInfo(280630),											-- Command Table
 		[-907] = "Dead Blanchy",												-- Dead Blanchy
+		[-909] = "Hunt: Death Elementals",										-- Hunt: Death Elementals
+		[-910] = "Hunt: Alpha Devourers",										-- Hunt: Alpha Devourers
+		[-911] = "Hunt: Shadehounds",											-- Hunt: Shadehounds
+		[-912] = "Hunt: Winged Soul Eaters",									-- Hunt: Winged Soul Eaters
 		[-914] = COVENANT_MISSIONS_TITLE,										-- Adventures
 		[-915] = ANIMA_DIVERSION_ORIGIN_TOOLTIP,								-- Anima Conductor
 		[-916] = string.format(COVENANT_SANCTUM_TIER, 1),						-- Tier 1
@@ -1969,6 +1975,7 @@ app.L = {
 		[-1140] = "Valdrakken Accord",												-- Valdrakken Accord
 		[-1141] = GetSpellInfo(388945),												-- Siege on Dragonbane Keep
 		[-1142] = "Aerial Challenges",												-- Aerial Challenges
+		[-1143] = "Every 2 Hours Rare",												-- Every 2 Hours Rare
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",

@@ -48,16 +48,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(200298),	-- Stoneshaped Greatbelt
 					i(196991),	-- Cliffside Wylderdrake: Black Horns
-					i(197624),	-- Windborne Velocidrake: Club Tail				
+					i(197624),	-- Windborne Velocidrake: Club Tail
 				},
 			}),
-			n(193234, {	-- Eldoren the Reborn <Jewel of the Skies>
-				["coord"] = { 49.0, 51.0, THALDRASZUS },
-				["questID"] = 73990,
-				["g"] = {
-					i(200284),	-- Phoenix Feather Pendant
-				},
-			}),
+		--	n(193234, {	-- Eldoren the Reborn <Jewel of the Skies>
+		-- 	Time-Based Rare
 			n(193125, {	-- Goremaul the Gluttonous
 				["coord"] = { 53.4, 41.0, THALDRASZUS },
 				["questID"] = 73878,
@@ -75,7 +70,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193126, {	-- Innumerable Ruination
 				["description"] = "Patrols in a circle around the coordinates.",
-				["coords"] = { 
+				["coords"] = {
 					{ 58.0, 83.8, THALDRASZUS },
 					{ 58.4, 80.4, THALDRASZUS },
 					{ 61.6, 81.0, THALDRASZUS },
@@ -113,8 +108,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193246, {	-- Matriarch Remalla <Temple Menace>
-				-- ["coord"] = { X, Y, THALDRASZUS },
-				-- ["questID"] = 69883,
+				["coord"] = { 52.6, 59.2, THALDRASZUS },
+				["questID"] = 74013,
 				["g"] = {
 					i(200257),	-- Decay Infused Branch
 				},
@@ -153,15 +148,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193143, {	-- Razk'vex the Untamed
 				["description"] = "Patrols between the coordinates.",
-				["coords"] = { 
+				["coords"] = {
 					{ 49.8, 50.2, THALDRASZUS },
 					{ 53.6, 42.8, THALDRASZUS },
 				},
 				["questID"] = 73892,
 			}),
 			n(193240, {	-- Riverwalker Tamopo <Terror of the Shallows>
-				-- ["coord"] = { X, Y, THALDRASZUS },
-				-- ["questID"] = 69880,
+				["coord"] = { 39.8, 70.0, THALDRASZUS },
+				["questID"] = 74024,
 				-- ["g"] = {
 
 				-- },
@@ -213,7 +208,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193146, {	-- Treasure-Mad Trambladd
 				["coord"] = { 35.0, 70.0, THALDRASZUS },
-				-- ["questID"] = 70947,
+				["questID"] = 74036,
 				["g"] = {
 					i(200300),	-- Sack of Looted Treasures
 					i(200291),	-- Waterlogged Racing Grips

@@ -514,6 +514,7 @@ local L = app.L;
 		--TODO: L.PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
 		--TODO: L.PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
 		--TODO: L.PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.."-Clicked to Switch to it";
+		--TODO: L.SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 
 	-- Sync tab
 		--TODO: L.SYNC = "Sync";
@@ -822,15 +823,12 @@ for key,value in pairs({
 		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
 		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
 		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
-		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
-		[-977] = "방랑자 멜리",											-- Maelie the Wanderer
 		[-979] = "중개자 베켄 & 중개자 베노트",								-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "성소 강화",											-- Sanctum Upgrades
 		[-924] = "이동 연결망",											-- Transport Network
 		-- SL Ardenweald/Night Fae
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			[-940] = "승천자 의회",										-- Ascended Counil
 			--TODO: [-973] = "Loyalty",								-- Loyalty
 			--TODO: [-975] = "Humility",							-- Humility
 		-- SL Revendreth/Venthyr
@@ -865,6 +863,7 @@ for key,value in pairs({
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "발드라켄 협의회",										-- Valdrakken Accord
 		[-1142] = "비행 도전",											-- Aerial Challenges
+		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
@@ -3193,6 +3192,8 @@ for key,value in pairs({
 	[364932] = "이글거리는 주괴",	-- Blazing Ingot
 	[364937] = "위상 착취기",	-- Phasic Siphoner
 	[364987] = "중개자 일지",	-- Broker Journal
+	[364994] = "유령 곡괭이",	-- Spectral Pick
+	[365084] = "고문관의 창",	-- Tormentor's Pike
 	--TODO: [365093] = "Theotar's Caroling Books",	-- Theotar's Caroling Books
 	[368205] = "나락살이 보관함",	-- Mawsworn Cache
 	[368206] = "나락살이 보관함",	-- Mawsworn Cache
@@ -3425,7 +3426,9 @@ for key,value in pairs({
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
 	[377938] = "오색 도약꾼 떼",	-- Prismatic Leaper School
 	[378010] = "잊힌 용의 보물",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "성난 해일 맥주",	-- Riptide Brew
+	[378088] = "수정 꽃",	-- Crystalline Flower
 	[378820] = "팝피즈 음료",	-- Popfizz Punch
 	[378857] = "잃어버린 흑요석 보관함",	-- Lost Obsidian Cache
 	[379290] = "장식된 조각상",	-- Ornamented Statue

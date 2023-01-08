@@ -7061,7 +7061,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69863),	--
 			q(69874),	--
 			q(69877),	--
-			q(69878),	--
+			q(69878),	-- Ronsak the Decimator
 			q(69879),	--
 			q(69881),	--
 			q(69885),	--
@@ -7191,7 +7191,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70590),	--
 			q(70596),	--
 			q(70597),	--
-			q(70607),	--
 			q(70626),	--
 			q(70628),	--
 			q(70630),	--
@@ -7594,7 +7593,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72643),	-- Dragon Isles Supplies
 			q(72683),	--
 			q(72684),	--
-			q(72687),	--
+			q(72687),	-- Renown Supplies
 			q(72697),	--
 			q(72703),	--
 			q(72704),	--

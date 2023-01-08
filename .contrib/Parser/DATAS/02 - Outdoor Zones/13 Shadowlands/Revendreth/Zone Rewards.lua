@@ -12,6 +12,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				i(173718),	-- Bottle of Redelav Wine
 				i(173715),	-- Dredger's Toolkit
 				i(173720),	-- Glittering Primrose Necklace
+				i(182704, {	-- Green Muck Dye
+					["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Muck Pool: Banewood area (|cFFFFFFFF53.8, 72.3|r).  It's easiest to find when the |cFFFFD700Dirty Job: Demolition Detail|r WQ is up, but there may be leftover Bonemauler mobs after the WQ has ended.",
+					["crs"] = {
+						157695,	-- Lurking Bonemauler
+						172888,	-- Lurking Alpha
+						172715,	-- Muckpool Investigator
+						172713,	-- Muckpool Vandal
+					},
+				}),
 				i(173712),	-- Ledger of Souls
 				i(173721),	-- Love and Terror
 				i(182726),	-- Nadja's Letter

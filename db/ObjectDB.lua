@@ -2503,6 +2503,7 @@ _.ObjectNames = {
 	[377900] = "Nokhud Warspear",
 	[377938] = "Prismatic Leaper School",
 	[378010] = "Forgotten Dragon Treasure",
+	[378047] = "Emerald Chest",
 	[378054] = "Riptide Brew",
 	[378088] = "Crystalline Flower",
 	[378820] = "Popfizz Punch",
