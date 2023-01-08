@@ -119,6 +119,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(191294),	-- Small Expedition Shovel
 				},
 			}),
+			q(70835, {	-- Sturdy Expedition Shovel
+				["minReputation"] = { 2507, 5 },	-- Dragonscale Expedition Renown 5
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["requireSkill"] = BLACKSMITHING,
+			}),
 			q(72026, {	-- Dragonscale Expedition Supplies
 				["minReputation"] = { 2507, 5 },	-- Dragonscale Expedition Renown 5
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes

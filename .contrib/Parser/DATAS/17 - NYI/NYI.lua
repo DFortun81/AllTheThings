@@ -458,7 +458,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(191919),	-- Suspiciously Fuzzy Drink+++
 			}),
 			prof(JEWELCRAFTING, {
-				i(192809),	-- Temporal Residue
 				i(192872),	-- Fractured Glass
 				i(192880),	-- Crumbled Stone
 			}),
@@ -579,9 +578,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191889),	-- Ancient Sword Design
 			i(192128),	-- Reinforced Scale Sample
 			i(192129),	-- Azure Basilisk Belly
-			i(198133),	-- Golden Expedition Compass
-			i(198134),	-- Shiny Surveyor Scope
-			i(198135),	-- Jeb's Supply Pack
 		}),
 		n(TREASURES, {
 			i(191058),	-- Dilapidated Parchment: Bottom Half

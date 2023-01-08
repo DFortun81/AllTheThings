@@ -337,7 +337,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 46.1, 78.3, THE_WAKING_SHORES },
 				}),
 				q(72241, {	-- Lessons from Our Past
-					["sourceQuests"] = { 66124 },	-- Exeunt, Triumphant
+					["sourceQuests"] = {
+						66124,	-- Exeunt, Triumphant
+						66079,	-- Wrathion Awaits
+					},	
 					["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
 					["coord"] = { 42.4, 66.8, THE_WAKING_SHORES },
 				}),
@@ -382,6 +385,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = {
 						65957,	-- No Time For Heroes
 						65956,	-- Talon Strike
+						65939,	-- The Courage of One's Convictions
 					},
 					["provider"] = { "n", 186933 },	-- Wrathion
 					["coord"] = { 29.2, 58.8, THE_WAKING_SHORES },
@@ -1165,6 +1169,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(191837),	-- Earthen Charm
 				},
 			}),
+			q(70148, {	-- Without Purpose
+				["provider"] = { "n", 192438 },	-- Hephaesta
+				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
+				["sourceQuests"] = 70124,	-- Practice Materials
+				["classes"] = { EVOKER },
+			}),
+				--TODO: At some point this quest will need to be looked at and changed to either a Dracthyr-specific race tag or adjusted to whatever classes Dracthyr are eventually opened up to. For now Evoker covers all the bases.
 
 				-- Alt Quest --
 			q(72293, {	-- Adventuring in the Dragon Isles
