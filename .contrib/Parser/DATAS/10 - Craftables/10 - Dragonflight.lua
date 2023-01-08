@@ -2667,6 +2667,7 @@ root("HiddenQuestTriggers", {
 			q(74173),	-- Skinning Steamgill
 			q(74174),	-- Skinning Biryuk
 			q(74179),	-- Skinning Hunter of the Deep
+			q(74180),	-- Skinning Hamett
 			q(74181),	-- Skinning Zarimek
 			q(74182),	-- Skinning Makhra the Ashtouched
 			q(74186),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)
