@@ -855,6 +855,7 @@ for key,value in pairs({
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Accordo di Valdrakken",							-- Valdrakken Accord
 		[-1142] = "Sfide Aeree",									-- Aerial Challenges
+		--TODO: [-1143] = "Time-Based Rares",						-- Time-Based Rares
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",

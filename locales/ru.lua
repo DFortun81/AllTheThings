@@ -851,6 +851,7 @@ for key,value in pairs({
 		[-1131] = "Искарское рыболовство",							-- Iskaara Fishing
 		[-1140] = "Союз Вальдраккена",								-- Valdrakken Accord
 		[-1142] = "Воздушные испытания",							-- Aerial Challenges
+		[-1143] = "Редкие по таймеру",								-- Time-Based Rares
 	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",
 		[-2201] = "Странник и змей",
