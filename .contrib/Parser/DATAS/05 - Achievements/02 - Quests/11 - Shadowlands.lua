@@ -23,23 +23,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			}),
 		}),
 		ach(14280, {	-- Loremaster of Shadowlands
-			ach(13878, {	-- The Master of Revendreth
-				crit(1),		-- Welcome to Revendreth
-				crit(2),		-- The Master
-				crit(3),		-- The Accuser
-				crit(4),		-- The Penitent Hunt
-				crit(5),		-- The Mad Duke
-				crit(6),		-- Prince Renathal
-				crit(7),		-- The Master of Lies
-			}),
-			ach(14798, {	-- Sojourner of Revendreth
-				crit(1),		-- The Duelist's Debt
-				crit(2),		-- Tithes of Darkhaven
-				crit(3),		-- Dirty Jobs
-				crit(4),		-- The Final Atonement
-				crit(5),		-- Mirror Maker of the Master
-				crit(6),		-- Revelations of the Light
-			}),
 		}),
 		ach(14233, {	-- Tea Tales
 			crit(1, {		-- Tea Tales: Theotar

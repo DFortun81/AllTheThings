@@ -1,35 +1,116 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(REVENDRETH, {
 		n(ACHIEVEMENTS, {
-			ach(14272, {	-- Best Bud With Benefits
-				["sourceQuests"] = { 58327 },	-- Snacks for Stonehead
+			ach(14310, {	-- Adventurer of Revendreth
+				crit(1, {
+					["_npcs"] = { 160392 },	-- Soulstalker Doina
+				}),
+				crit(2, {
+					["_npcs"] = { 160675 },	-- Scrivener Lenua
+				}),
+				crit(3, {
+					["_npcs"] = { 160640 },	-- Innervus
+				}),
+				crit(4, {
+					["_npcs"] = { 155779 },	-- Tomb Burster <Dread Crawler Queen>
+				}),
+				crit(5, {
+					["_npcs"] = { 159503 },	-- Stonefist
+				}),
+				crit(6, {
+					["_npcs"] = { 160821 },	-- Worldedge Gorger
+				}),
+				crit(7, {
+					["_npcs"] = { 160857 },	-- Sire Ladinas <The Lightrazed>
+				}),
+				crit(8, {
+					["_npcs"] = { 161310 },	-- Executioner Adrastia
+				}),
+				crit(9, {
+					["_npcs"] = { 161891 },	-- Lord Mortegore
+				}),
+				crit(10, {
+					["_npcs"] = { 165152 },	-- Leeched Soul
+				}),
+				crit(11, {
+					["_npcs"] = { 165206 },	-- Endlurker
+				}),
+				crit(12, {
+					["_npcs"] = { 164388 },	-- Amalgamation of Light
+				}),
+				crit(13, {
+					["_npcs"] = { 165253 },	-- Tollkeeper Varaboss
+				}),
+				crit(14, {
+					["_npcs"] = { 166393 },	-- Amalgamation of Filth
+				}),
+				crit(15, {
+					["_npcs"] = { 166521 },	-- Famu the Infinite
+				}),
+				crit(16, {
+					["_npcs"] = { 166576 },	-- Azgar
+				}),
+				crit(17, {
+					["_npcs"] = { 166679 },	-- Hopecrusher
+				}),
+				crit(18, {
+					["_npcs"] = { 166292 },	-- Bog Beast
+				}),
+				crit(19, {
+					["_npcs"] = { 166710 },	-- Executioner Aatron
+				}),
+				crit(20, {
+					["_npcs"] = { 166993 },	-- Huntmaster Petrus
+				}),
+				crit(21, {
+					["_npcs"] = { 167464 },	-- Grand Arcanist Dimitri
+				}),
+				crit(22, {
+					["_npcs"] = { 170048 },	-- Manifestation of Wrath
+				}),
+				crit(23, {
+					["_npcs"] = { 170434 },	-- Amalgamation of Sin
+				}),
+				crit(24, {
+					["_npcs"] = { 162481 },	-- Sinstone Hoarder
+				}),
 			}),
-			ach(13878, {	-- The Master of Revendreth
-				crit(1, {	-- Welcome to Revendreth
-					["sourceQuests"] = { 56978 },	-- To Darkhaven
-				}),
-				crit(2, {	-- The Master
-					["sourceQuests"] = { 57179 },	-- The Authority of Revendreth
-				}),
-				crit(3, {	-- The Accuser
-					["sourceQuests"] = { 59232 },	-- A Lesson in Humility
-				}),
-				crit(4, {	-- The Penitent Hunt
-					["sourceQuests"] = { 59256 },	-- The Fearstalker
-				}),
-				crit(5, {	-- The Mad Duke
-					["sourceQuests"] = { 57724 },	-- Securing Sinfall
-				}),
-				crit(6, {	-- Prince Renathal
-					["sourceQuests"] = { 57694 },	-- Refuge of Revendreth
-				}),
-				crit(7, {	-- The Master of Lies
-					["sourceQuests"] = { 58086 },	-- The Master of Lies
-				}),
+			ach(14769, {	-- Bat!
+				["description"] = "As of 9.2.5, this achievement is currently bugged and only awarding credit occasionally. To work around this, you may have to ride the bat more than once or try another one.",
+				["crs"] = { 161015 },	-- Dredbat Statue
+				["coords"] = {	-- there doesn't seem to be a way to track individual bat statue collection, no questID or anything
+					{ 21.7, 50.2, REVENDRETH },
+					{ 25.1, 37.5, REVENDRETH },
+					{ 31.9, 59.2, REVENDRETH },
+					{ 35.0, 35.0, REVENDRETH },
+					{ 56.2, 62.2, REVENDRETH },
+					{ 57.3, 61.3, REVENDRETH },
+					{ 60.4, 61.1, REVENDRETH },
+					{ 64.0, 62.0, REVENDRETH },
+				},
+			}),
+			ach(14306, {	-- Explore Revendreth
+				crit(1),		-- Caretaker's Manor
+				crit(2),		-- Archivam
+				crit(3),		-- Witherfall Ruin
+				crit(4),		-- The Endmire
+				crit(5),		-- Catacombs of Regret
+				crit(6),		-- Old Gate
+				crit(7),		-- The Night Market
+				crit(8),		-- The Banewood
+				crit(9),		-- Stalker's Lodge
+				crit(10),		-- Chalice District
+				crit(11),		-- Redelav District
+				crit(12),		-- Dredhollow
+				crit(13),		-- Ember Ward
+				crit(14),		-- Darkwall Tower
+				crit(15),		-- Court of the Harvesters
+				crit(16),		-- Dominance Gate
+				crit(17),		-- The Shrouded Asylum
+				crit(18),		-- Dominance Keep
 			}),
 			ach(14798, {	-- Sojourner of Revendreth
 				crit(1, {	-- The Duelist's Debt
@@ -79,6 +160,29 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["crs"] = { 174754 },	-- The Castle Carriage
 					}),
 				},
+			}),
+			ach(13878, {	-- The Master of Revendreth
+				crit(1, {	-- Welcome to Revendreth
+					["sourceQuests"] = { 56978 },	-- To Darkhaven
+				}),
+				crit(2, {	-- The Master
+					["sourceQuests"] = { 57179 },	-- The Authority of Revendreth
+				}),
+				crit(3, {	-- The Accuser
+					["sourceQuests"] = { 59232 },	-- A Lesson in Humility
+				}),
+				crit(4, {	-- The Penitent Hunt
+					["sourceQuests"] = { 59256 },	-- The Fearstalker
+				}),
+				crit(5, {	-- The Mad Duke
+					["sourceQuests"] = { 57724 },	-- Securing Sinfall
+				}),
+				crit(6, {	-- Prince Renathal
+					["sourceQuests"] = { 57694 },	-- Refuge of Revendreth
+				}),
+				crit(7, {	-- The Master of Lies
+					["sourceQuests"] = { 58086 },	-- The Master of Lies
+				}),
 			}),
 			pvp(ach(14512)),	-- Tour of Duty: Revendreth
 			ach(14314, {	-- Treasures of Revendreth

@@ -51,6 +51,21 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["_npcs"] = { 168147 },
 				}),
 			}),
+			ach(14305, {	-- Explore Maldraxxus
+				crit(1),		-- Theater of Pain
+				crit(2),		-- The Stitchyard
+				crit(3),		-- The Spearhead
+				crit(4),		-- Sepulcher of Knowledge
+				crit(5),		-- Seat of the Primus
+				crit(6),		-- House of Plagues
+				crit(7),		-- House of the Chosen
+				crit(8),		-- House of Rituals
+				crit(9),		-- House of Eyes
+				crit(10),		-- House of Constructs
+				crit(11),		-- Glutharn's Decay
+				crit(12),		-- Forgotten Wounds
+				crit(13),		-- Burning Thicket
+			}),
 			ach(14721, {	-- It's in the Mix
 				i(183903),	-- Smelly Jelly (TOY!)
 			}),
