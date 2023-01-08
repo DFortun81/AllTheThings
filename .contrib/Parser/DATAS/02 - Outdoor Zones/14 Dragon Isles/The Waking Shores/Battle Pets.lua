@@ -48,6 +48,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			pet(3280, {	-- Shyfly (PET!)
 				["cr"] = 189102,	-- Shyfly
+				["description"] = "You won't be able to see these pets until you've accepted the quest |cffffff00A Friend for Lubbins|r.",
 				["coords"] = {
 					{ 40.8, 81.2, THE_WAKING_SHORES, },
 				},
