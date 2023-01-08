@@ -188,7 +188,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 			q(66243, {	-- A Gift of Hope
 				["provider"] = { "n", 187905 },	-- Lilacsprig <Queen's Messenger>
 				["coord"] = { 60.6, 41.2, ORIBOS },
-				["timeline"] = { ADDED_SL_2_5 },
+				["timeline"] = { ADDED_SL_S4 },
 			}),
 			q(66661, {	-- It's Just a Coin, What Could it Cost?
 				["description"] = "Automatically accepted when zoning into Oribos after completion of 'Crossing Fate'.",
