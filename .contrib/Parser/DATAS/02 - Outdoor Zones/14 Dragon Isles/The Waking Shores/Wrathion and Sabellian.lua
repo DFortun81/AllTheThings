@@ -883,7 +883,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				i(191264, {	-- Restored Obsidian Key
-					["description"] = "This Item will be deleted immediately if leaving the area!",
 					["cost"] = {
 						{"i",191251,30},	-- 30x Key Fragment
 						{"i",193201, 3},	-- 3x Key Framing
