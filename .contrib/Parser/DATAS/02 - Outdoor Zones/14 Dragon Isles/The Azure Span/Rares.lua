@@ -47,9 +47,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193178, {	-- Blightfur
 				["coord"] = { 13.4, 22.4, THE_AZURE_SPAN },
 				["questID"] = 74058,
-				-- ["g"] = {
-
-				-- },
+				["g"] = {
+					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
+				},
 			}),
 			n(197353, {	-- Blisterhide <The Infested>
 				["coord"] = { 14.5, 31.1, THE_AZURE_SPAN },

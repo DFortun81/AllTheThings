@@ -542,6 +542,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								i(191801),	-- Obsidian Dracthyr Battlegear Monnion
 								i(191802),	-- Obsidian Dracthyr Battlegear Belt
 							},
+							["questID"] = 72112,
 						}),
 						i(200707, {	-- Armoire of Endless Cloaks (TOY!)
 							["cost"] = {
@@ -694,6 +695,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								i(191801),	-- Obsidian Dracthyr Battlegear Monnion
 								i(191802),	-- Obsidian Dracthyr Battlegear Belt
 							},
+							["questID"] = 72112,
 						}),
 						i(200963, {	-- Ensemble: Sabellian's Battlegear Cloth Armor
 							["cost"] = {

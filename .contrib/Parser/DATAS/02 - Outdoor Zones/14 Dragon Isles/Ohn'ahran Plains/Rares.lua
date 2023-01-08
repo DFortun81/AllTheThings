@@ -227,6 +227,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(197115),	-- Highland Drake: Thorned Jaw (DM!)
 					i(200444),	-- Mantle of the Gatekeeper
 					i(200310),	-- Stole of the Iron Phantom
+					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 				},
 			}),
 			n(192949, {	-- Skaara

@@ -106,6 +106,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73073,
 				["g"] = {
 					i(200858),	-- Plume of the Forgotten
+					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 				},
 			}),
 			n(193226, {	-- Gorjo the Crab Shackler
@@ -195,6 +196,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(200236),	-- Memory of Nulltheria
 					i(200310),	-- Stole of the Iron Phantom
+					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 				},
 			}),
 			n(193118, {	-- O'nank Shorescour
