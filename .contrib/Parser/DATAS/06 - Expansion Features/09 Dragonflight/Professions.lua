@@ -1340,6 +1340,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					70361,	-- Dragon Isles Inscription
 					72244,	-- Dragon Isles Inscription
 				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 198380 },	-- Journalist Jessamine Spitz
 				["coord"] = { 76.1, 35.5, THE_WAKING_SHORES },
 				["cost"] = { { "i", 191233, 1 }, },	-- 2xChef's Smooth Rolling Pin
@@ -1800,6 +1801,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isRepeatable"] = true,
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
+				},
+			}),
+			q(70033, {	-- Artisan's Supply: Pioneer's Leather Boots
+				["sourceQuests"] = 70362,	-- Dragon Isles Leatherworking
+				["providers"] = {
+					{ "n", 192027 },	-- Dokhusek
+					{ "n", 192048 },	-- Deirdre Flemmin
+					{ "n", 195785 },	-- Samar
+					{ "n", 196628 },	-- Ekhi
+				},
+				["coords"] = { 
+					{ 57.9, 68.1, THE_WAKING_SHORES },	-- Deirdre Flemmin
+					{ 80.8, 59.4, OHNAHRAN_PLAINS },	-- Dokhusek
+					{ 29.0, 61.0, VALDRAKKEN },			-- Samar
+					{ 39.4, 55.4, OHNAHRAN_PLAINS },	-- Ekhi
 				},
 			}),
 			q(66363, {	-- Basilisk Bucklers
