@@ -160,8 +160,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 73892,
 			}),
 			n(193240, {	-- Riverwalker Tamopo <Terror of the Shallows>
-				-- ["coord"] = { X, Y, THALDRASZUS },
-				-- ["questID"] = 69880,
+				["coord"] = { 39.8, 70.0, THALDRASZUS },
+				["questID"] = 74024,
 				-- ["g"] = {
 
 				-- },
@@ -213,7 +213,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193146, {	-- Treasure-Mad Trambladd
 				["coord"] = { 35.0, 70.0, THALDRASZUS },
-				-- ["questID"] = 70947,
+				["questID"] = 74036,
 				["g"] = {
 					i(200300),	-- Sack of Looted Treasures
 					i(200291),	-- Waterlogged Racing Grips

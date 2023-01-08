@@ -391,6 +391,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 					-- Chapter 4 --
 				q(70437, {	-- To Tyrhold
+					-- TODO: add magic alt-unlock quest
+					["sourceQuestsNumRequired"] = 1,
 					["sourceQuests"] = { 66221 },	-- Moving On
 					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 58.4, 35.4, VALDRAKKEN },
@@ -1107,7 +1109,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 193127 },	-- Private Shikzar
 					["coord"] = { 37.6, 84.7, THALDRASZUS },
 				}),
-				qNYI(69880, {	-- Riverwalker Tamopo
+				q(69880, {	-- Riverwalker Tamopo
 					["provider"] = { "n", 193240 },	-- Riverwalker Tamopo
 					["coord"] = { 39.8, 70.0, THALDRASZUS },
 					["isDaily"] = true,

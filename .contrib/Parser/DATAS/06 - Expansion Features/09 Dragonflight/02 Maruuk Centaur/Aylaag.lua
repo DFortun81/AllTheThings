@@ -134,20 +134,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 			}),
 			n(REWARDS, {
-				q(66578, {	-- A > B Reward Test (Low Health)
-					["g"] = {
-						i(200094),	-- Caravan Strongbox
-					},
-				}),
-				q(70921, {	-- A > B Reward Test (High Health)
-					["g"] = {
-						i(200094),	-- Caravan Strongbox
-					},
-				}),
-				-- Unconfirmed
-				--q(70920),	-- A > B Reward Test (Med Health)
-				--q(70922),	-- A > B Reward Test (Mini Boss Steps)
+				i(200094),	-- Caravan Strongbox
 			}),
+		}),
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	n(MARUUK_CENTAUR, {
+		n(AYLAAG, {
+			q(70922),	-- A > B Reward Test (Mini Boss Steps)
+			q(66578),	-- A > B Reward Test (Low Health)
+			q(70921),	-- A > B Reward Test (High Health)
+			q(70920),	-- A > B Reward Test (Med Health)
 		}),
 	}),
 })));

@@ -2589,7 +2589,7 @@ local PrintQuestInfo = function(questID, new, info)
 		end
 		-- This quest doesn't meet the filter for this character, then ask to report in chat
 		if questChange == "accepted" then
-			DelayedCallback(app.CheckInaccurateQuestInfo, 0.5, questRef, questChange);
+			DelayedCallback(app.CheckInaccurateQuestInfo, 1, questRef, questChange);
 		end
 		local chatMsg;
 		if not questRef or GetRelativeField(questRef, "text", L["UNSORTED_1"]) then
