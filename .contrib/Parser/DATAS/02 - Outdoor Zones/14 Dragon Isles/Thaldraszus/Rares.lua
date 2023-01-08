@@ -51,13 +51,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(197624),	-- Windborne Velocidrake: Club Tail
 				},
 			}),
-			n(193234, {	-- Eldoren the Reborn <Jewel of the Skies>
-				["coord"] = { 49.0, 51.0, THALDRASZUS },
-				["questID"] = 73990,
-				["g"] = {
-					i(200284),	-- Phoenix Feather Pendant
-				},
-			}),
+		--	n(193234, {	-- Eldoren the Reborn <Jewel of the Skies>
+		-- 	Time-Based Rare
 			n(193125, {	-- Goremaul the Gluttonous
 				["coord"] = { 53.4, 41.0, THALDRASZUS },
 				["questID"] = 73878,

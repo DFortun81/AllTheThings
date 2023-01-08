@@ -147,13 +147,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(197121),	-- Highland Drake: Tan Horns (DM!)
 				},
 			}),
-			n(193251, {	-- Gruffy
-				["coord"] = { 32.7, 29.2, THE_AZURE_SPAN },
-				-- ["questID"] = 69885,
-				["g"] = {
-					i(200755),	-- Gruffy's Dented Horn
-				},
-			}),
+			-- n(193251, {	-- Gruffy
+			-- Timed Based Rare
 			n(193269, {	-- Grumbletrunk
 				["coord"] = { 19.3, 43.1, THE_AZURE_SPAN },
 				["questID"] = 74002,

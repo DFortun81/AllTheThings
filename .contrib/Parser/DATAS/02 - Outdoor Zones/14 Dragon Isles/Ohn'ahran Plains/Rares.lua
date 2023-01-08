@@ -57,14 +57,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200309),	-- Rock Encrusted Chestguard
 				},
 			}),
-			n(193170, {	-- Fulgurb
-				["coord"] = { 74.4, 47.6, OHNAHRAN_PLAINS },
-				["questID"] = 73994,
-				["isDaily"] = true,
-				["g"] = {
-					i(200433),	-- Footwraps of Subjugation
-				},
-			}),
+		--	n(193170, {	-- Fulgurb
+		--	Time Based Rare
 			n(187781, {	-- Hamett <Rockfang Matriarch>
 				["description"] = "Chance to spawn upon killing Sutaan.",
 				["coord"] = { 85.4, 15.8, OHNAHRAN_PLAINS },

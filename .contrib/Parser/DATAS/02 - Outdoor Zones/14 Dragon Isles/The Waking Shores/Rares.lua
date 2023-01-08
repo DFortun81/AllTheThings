@@ -4,14 +4,8 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
 		n(RARES, sharedData({["isDaily"] = true},{
-	--	n(RARES, {
-			n(193132, {	-- Amethyzar the Glittering
-				["coord"] = { 63.4, 54.8, THE_WAKING_SHORES },
-				["questID"] = 73981,
-				["g"] = {
-					i(200156),	-- Amethyzarite Geode
-				},
-			}),
+		--	n(193132, {	-- Amethyzar the Glittering
+		--	Time-Based Rare
 			n(187111, {	-- Ancient Hornswog
 				["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
 				["questID"] = 72835,
@@ -29,16 +23,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200245), -- Leviathan Lure
 				},
 			}),
-			n(193135, {	-- Azra's Prized Peony
-				["coord"] = { 54.9, 71.1, THE_WAKING_SHORES },
-				["questID"] = 73984,
-				["g"] = {
-					i(200259),	-- Forest Dweller's Shield
-					i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
-					i(197121),	-- Highland Drake: Tan Horns (DM!)
-					i(200229),	-- Slightly Digested Leggings
-				},
-			}),
+		--	n(193135, {	-- Azra's Prized Peony
+		--	Time-Based Rare	
 			n(193177, {	-- Beakers
 				["questID"] = 73902,
 				["coords"] = {
@@ -228,28 +214,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					-- is part of the DF>Global Rare Loottable
 				},
 			}),
-			n(192737, {	-- Qalashi War Mammoth
-				["description"] = "Marked with an icon on the map if they are up.",
-				["coords"] = { 
-					{ 33.8, 70.4, THE_WAKING_SHORES },
-					{ 39.2, 68.2, THE_WAKING_SHORES },
-					{ 47.0, 73.0, THE_WAKING_SHORES },
-					{ 48.4, 65.8, THE_WAKING_SHORES },
-					{ 53.0, 66.4, THE_WAKING_SHORES },
-				},
-				["questID"] = 73890,
-				-- He "drops" 4 rare npcs upon dieing, but they have no drops. CRS doesnt seem useful
-				["g"] = {
-					n(192738, {	-- Brundin the Dragonbane
-					}),
-					n(192741, {	-- Flamebreaker Grella
-					}),
-					n(192744, {	-- Scalemelter Dorbane
-					}),
-					n(192743, {	-- Stonefist Rejara
-					}),
-				},
-			}),
+		--	n(192737, {	-- Qalashi War Mammoth
+		--	Time-Based Rare
 			n(193710, {	-- Seereel, the Spring <Lunker>
 				["coord"] = { 66.0, 74.8, THE_WAKING_SHORES },
 				["description"] = "Chance to spawn after using 5 Ominous Conches at any Lurker Sighting.",

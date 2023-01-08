@@ -1416,6 +1416,7 @@ app.L = {
 		[-1140] = "Interface\\Icons\\ui_majorfaction_valdrakken",									-- Valdrakken Accord
 		[-1141] = "Interface\\Icons\\inv_artifact_dragonscales",									-- Siege on Dragonbane Keep
 		[-1142] = "Interface\\Icons\\inv_checkered_flag",											-- Aerial Challenges
+		[-1143] = 237274,																			-- Time-Based Rares
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1969,6 +1970,7 @@ app.L = {
 		[-1140] = "Valdrakken Accord",												-- Valdrakken Accord
 		[-1141] = GetSpellInfo(388945),												-- Siege on Dragonbane Keep
 		[-1142] = "Aerial Challenges",												-- Aerial Challenges
+		[-1143] = "Time-Based Rares",												-- Time-Based Rares
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",
