@@ -1088,7 +1088,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 62.2, 81.8, THALDRASZUS },
 					["isDaily"] = true,
 				}),
-				qNYI(69883, {	-- Matriarch Remalla
+				q(69883, {	-- Matriarch Remalla
 					["provider"] = { "n", 193246 },	-- Matriarch Remalla
 					["coord"] = { 52.8, 59.2, THALDRASZUS },
 					["isDaily"] = true,
