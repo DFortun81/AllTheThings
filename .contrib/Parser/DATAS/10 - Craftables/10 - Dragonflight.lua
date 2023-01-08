@@ -979,7 +979,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71460, { ["name"] = "First Craft: Gravitational Displacer", }),	-- Gravitational Displacer
 			q(71461, { ["name"] = "First Craft: Grease Grenade", }),	-- Grease Grenade
 			--q(, { ["name"] = "First Craft: I.W.I.N Button Mk10", }),	-- I.W.I.N Button Mk10
-			--q(, { ["name"] = "First Craft: Primal Deconstruction Charge", }),	-- Primal Deconstruction Charge
+			q(71463, { ["name"] = "First Craft: Primal Deconstruction Charge", }),	-- Primal Deconstruction Charge
 			q(71464, { ["name"] = "First Craft: Sticky Warp Grenade", }),	-- Sticky Warp Grenade
 			q(71453, { ["name"] = "First Craft: Suspiciously Silent Crate", }),	-- Suspiciously Silent Crate
 			q(71452, { ["name"] = "First Craft: Suspiciously Ticking Crate", }),	-- Suspiciously Ticking Crate
@@ -998,7 +998,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71888, { ["name"] = "First Craft: Wyrmhole Generator", }),	-- Wyrmhole Generator
 			q(71456, { ["name"] = "First Craft: Zapthrottle Soul Inhaler", }),	-- Zapthrottle Soul Inhaler
 			-- Profession Equipment
-			-- q(, { ["name"] = "First Craft: Bottomless Mireslush Ore Satchel", }),	-- Bottomless Mireslush Ore Satchel
+			q(71496, { ["name"] = "First Craft: Bottomless Mireslush Ore Satchel", }),	-- Bottomless Mireslush Ore Satchel
 			q(71495, { ["name"] = "First Craft: Bottomless Stonecrust Ore Satchel", }),	-- Bottomless Stonecrust Ore Satchel
 			q(71485, { ["name"] = "First Craft: Draconium Brainwave Amplifier", }),	-- Draconium Brainwave Amplifier
 			q(71493, { ["name"] = "First Craft: Draconium Delver's Helmet", }),	-- Draconium Delver's Helmet
@@ -1336,6 +1336,19 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71569, { ["name"] = "First Craft: Chilled Rune", }),
 			q(71601, { ["name"] = "First Craft: Serene Ink", }),
 			q(71599, { ["name"] = "First Craft: Blazing Ink", }),
+			q(71585, { ["name"] = "First Craft: Alchemist's Brilliant Mixing Rod", }),
+			q(71533, { ["name"] = "First Craft: Cliffside Wylderdrake: Triple Head Horns", }),
+			q(72016, { ["name"] = "First Craft: Windborne Velocidrake: Steel and Orange Armor", }),
+			q(71526, { ["name"] = "First Craft: Draconic Treatise on Jewelcrafting", }),
+			q(72018, { ["name"] = "First Craft: Cliffside Wylderdrake: Steel and Yellow Armor", }),
+			q(72015, { ["name"] = "First Craft: Cliffside Wylderdrake: Silver and Blue Armor", }),
+			q(72017, { ["name"] = "First Craft: Highland Drake: Steel and Yellow Armor", }),
+			q(72014, { ["name"] = "First Craft: Highland Drake: Silver and Blue Armor", }),
+			q(72013, { ["name"] = "First Craft: Windborne Velocidrake: Silver and Blue Armor", }),
+			q(71537, { ["name"] = "First Craft: Renewed Proto-Drake: Silver and Blue Armor", }),
+			q(71534, { ["name"] = "First Craft: Highland Drake: Black Hair", }),
+			q(71587, { ["name"] = "First Craft: Chef's Splendid Rolling Pin", }),
+			q(71541, { ["name"] = "First Craft: Renewed Proto-Drake: Steel and Yellow Armor", }),
 		})),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)
@@ -1693,6 +1706,8 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71675, { ["name"] = "First Craft: Frameless Lens", }),
 			q(71602, { ["name"] = "First Craft: Pendant of Impending Perils", }),
 			q(71672, { ["name"] = "First Craft: Shimmering Clasp", }),
+			q(71611, { ["name"] = "First Craft: Kalu'ak Figurine", }),
+			q(71666, { ["name"] = "First Craft: Alexstraszite Loupes", }),
 		})),
 		filter(BATTLE_PETS, {
 			i(193885),	-- Jeweled Amber Whelpling (PET!)
@@ -1937,6 +1952,13 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71706, { ["name"] = "First Craft: Life-Bound Boots", }),
 			q(71704, { ["name"] = "First Craft: Pioneer's Leather Boots", }),
 			q(72502, { ["name"] = "First Craft: Trailblazer's Toughened Legguards", }),
+			q(71747, { ["name"] = "First Craft: Finished Prototype Regal Barding", }),
+			q(71775, { ["name"] = "First Craft: Bow of the Dragon Hunters", }),
+			q(71707, { ["name"] = "First Craft: Life-Bound Chestpiece", }),
+			q(71741, { ["name"] = "First Craft: Fierce Armor Kit", }),
+			q(71756, { ["name"] = "First Craft: Masterwork Smock", }),
+			q(71773, { ["name"] = "First Craft: Tuskarr Beanbag", }),
+			q(71710, { ["name"] = "First Craft: Life-Bound Trousers", }),
 		})),
 		filter(MISC, {
 			i(193468),	-- Fang Adornments+
@@ -2205,6 +2227,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			-- Unsorted
 			q(71778, { ["name"] = "First Craft: Hood of Surging Time", }),	-- Not commenting these, it's right there in the name
 			q(72508, { ["name"] = "First Craft: Surveyor's Seasoned Pants", }),
+			q(71838, { ["name"] = "First Craft: Master's Wildercloth Fishing Cap", }),
 		})),
 	}),
 })));
@@ -2234,13 +2257,22 @@ root("HiddenQuestTriggers", {
 			q(71984),	-- First Titan-Touched Hochenblume Harvest
 			q(71986),	-- First Titan-Touched Bubble Poppy
 			q(71987),	-- First Titan-Touched Saxifrage
+			q(71988),	-- First Decayed Hochenblume
+			q(71991),	-- First Decayed Saxifrage
+			q(71992),	-- First Infurious Hochenblume
+			q(71993),	-- First Infurious Writhebark
+			q(71994),	-- First Infurious Bubble Poppy
+			q(72344),	-- First Overload Titan-Touched Herb
+			q(72348),	-- First Overload Infurious Herb
+			-- Unsorted
+			q(71989),	-- Learning spellID 391508: Decayed Writhebark
 		}),
 		prof(MINING, {
 			q(71951),	-- First Draconium Deposit
 			q(71950),	-- First Rich Serevite Deposit
 			q(71952),	-- First Rich Draconium Deposit
 			q(71961),	-- First Infurious Serevite Deposit
-			-- q(TODO),	-- First Infurious Draconium Deposit
+			q(71962),	-- First Infurious Draconium Deposit
 			q(71953),	-- First Molten Serevite Deposit
 			q(71954),	-- First Molten Draconium Deposit
 			q(71955),	-- First Hardened Serevite Deposit
@@ -2597,44 +2629,60 @@ root("HiddenQuestTriggers", {
 			-- q(71773),	-- Tuskarr Bean Bag
 		}),
 		prof(SKINNING, {
-			q(74162),	-- Skinning Angen (Great Hunt)
-			q(74225),	-- Skinning Battlehorn Pyrhus
-			q(74174),	-- Skinning Biryuk
 			q(74122),	-- Skinning Blisterhide
-			q(74141),	-- Skinning Blitztusk (Grand Hunt)
 			q(74124),	-- Skinning Bouldron
-			q(74206),	-- Skinning Corrupted Proto-Dragon
+			q(74125),	-- Skinning Infernum
 			q(74126),	-- Skinning Crystalus (Primal Storm)
-			q(74153),	-- Skinning Degmakh (Grand Hunt)
-			q(74164),	-- Skinning Diluu (Grand Hunt)
-			q(74186),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)
-			q(74152),	-- Skinning Galnomor
-			q(74134),	-- Skinning Grumbletrunk
-			q(74179),	-- Skinning Hunter of the Deep
 			q(74127),	-- Skinning Karantun
-			q(74147),	-- Skinning Kholdeg (Grand Hunt)
-			q(74145),	-- Skinning Khomuur (Grand Hunt)
-			q(74155),	-- Skinning Khuumog (Grand Hunt)
-			q(74182),	-- Skinning Makhra the Ashtouched
-			q(74171),	-- Skinning Malsegan
-			q(74161),	-- Skinning Melkhop (Grand Hunt)
-			q(74163),	-- Skinning Molkeej (Grand Hunt)
-			q(74157),	-- Skinning Moskhoi (Grand Hunt)
-			q(74214),	-- Skinning Moth'go Deeploom
 			q(74131),	-- Skinning Mucka the Raker
-			q(74154),	-- Skinning Muugurv (Grand Hunt)
+			q(74134),	-- Skinning Grumbletrunk
 			q(74140),	-- Skinning Norbett (Grand Hunt)
-			q(74196),	-- Skinning Rokmur
+			q(74141),	-- Skinning Blitztusk (Grand Hunt)
 			q(74142),	-- Skinning Sarana (Grand Hunt)
-			q(74213),	-- Skinning Swog'ranka
-			q(74159),	-- Skinning Tevgai (Grand Hunt)
-			q(74198),	-- Skinning The Weeping Vilomah
 			q(74143),	-- Skinning Uranto the Swift (Grand Hunt)
-			q(74156),	-- Skinning Uurhilt (Grand Hunt)
-			q(74195),	-- Skinning Woolfang
-			q(74160),	-- Skinning Yamakh
-			q(74181),	-- Skinning Zarimek
+			q(74144),	-- Skinning Boolk
+			q(74145),	-- Skinning Khomuur (Grand Hunt)
+			q(74146),	-- Skinning Ergburk
+			q(74147),	-- Skinning Kholdeg (Grand Hunt)
+			q(74148),	-- Skinning Zagdech
 			q(74149),	-- Skinning Zumakh (Grand Hunt)
+			q(74150),	-- Skinning Tonmu
+			q(74152),	-- Skinning Galnomor
+			q(74153),	-- Skinning Degmakh (Grand Hunt)
+			q(74154),	-- Skinning Muugurv (Grand Hunt)
+			q(74155),	-- Skinning Khuumog (Grand Hunt)
+			q(74156),	-- Skinning Uurhilt (Grand Hunt)
+			q(74157),	-- Skinning Moskhoi (Grand Hunt)
+			q(74158),	-- Skinning Yaankhi
+			q(74159),	-- Skinning Tevgai (Grand Hunt)
+			q(74160),	-- Skinning Yamakh
+			q(74161),	-- Skinning Melkhop (Grand Hunt)
+			q(74162),	-- Skinning Angen (Great Hunt)
+			q(74163),	-- Skinning Molkeej (Grand Hunt)
+			q(74164),	-- Skinning Diluu (Grand Hunt)
+			q(74167),	-- Skinning Sunscale Behemoth
+			q(74170),	-- Skinning Zenet Avis
+			q(74171),	-- Skinning Malsegan
+			q(74172),	-- Skinning Zarizz
+			q(74173),	-- Skinning Steamgill
+			q(74174),	-- Skinning Biryuk
+			q(74179),	-- Skinning Hunter of the Deep
+			q(74181),	-- Skinning Zarimek
+			q(74182),	-- Skinning Makhra the Ashtouched
+			q(74186),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)
+			q(74195),	-- Skinning Woolfang
+			q(74196),	-- Skinning Rokmur
+			q(74198),	-- Skinning The Weeping Vilomah
+			q(74204),	-- Skinning Acrosoth
+			q(74206),	-- Skinning Corrupted Proto-Dragon
+			q(74213),	-- Skinning Swog'ranka
+			q(74214),	-- Skinning Moth'go Deeploom
+			q(74216),	-- Skinning Snufflegust
+			q(74220),	-- Skinning Mamonth (War Party Event)
+			q(74224),	-- Skinning Enkine the Voracious
+			q(74225),	-- Skinning Battlehorn Pyrhus
+			q(74228),	-- Skinning Worldcarver A'tir
+			q(74229),	-- Skinning Death's Shadow
 		}),
 		prof(TAILORING, {
 				-- Woven Cloth	--
