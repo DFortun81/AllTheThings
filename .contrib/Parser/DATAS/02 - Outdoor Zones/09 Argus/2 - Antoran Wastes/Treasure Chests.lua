@@ -15,6 +15,7 @@ _.Zones =
 					},
 					["g"] = {
 					-- Shared Rewards
+						i(152857),	-- Chipped Man'ari Blade
 						i(153344),	-- Triumvirate High Guard's Bracers
 						i(153340),	-- Triumvirate High Guard's Breastplate
 						i(153339),	-- Triumvirate High Guard's Casque

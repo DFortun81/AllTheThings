@@ -136,6 +136,7 @@ root("Zones", {
 								["achievementID"] = 12074,	-- Shoot First, Loot Later
 							}),
 							i(153328),	-- Mystic Wakener's Shiv
+							i(152854),	-- Nethershorn Lantern
 						},
 					}),
 				}),

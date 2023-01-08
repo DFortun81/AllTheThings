@@ -1296,7 +1296,6 @@ local f = root("CommonQualityItems", {
 		}),
 		filter(MISC, {
 			i(34828),	-- Antique Silver Cufflinks
-			i(164308),	-- Art Template Cloth Head - Helm_Misc_PigNoseMask_A_01
 			i(92894),	-- Art Template Generic Head - Helm_Misc_StarPartyHat_A_01
 			i(81862),	-- Art Template Robe Dress_B_03 - Blue
 			i(45998),	-- Battered Jungle Hat
@@ -2078,6 +2077,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			filter(MISC, {
 				i(180596),	-- "Sootible" Hat
+				i(164308),	-- Art Template Cloth Head - Helm_Misc_PigNoseMask_A_01
 				i(168121),	-- Light Tome
 			}),
 			filter(FINGER_F, {

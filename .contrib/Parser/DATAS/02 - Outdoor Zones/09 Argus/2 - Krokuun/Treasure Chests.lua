@@ -10,6 +10,7 @@ root(ROOTS.Zones, m(905, {	-- Argus
 					{"select","mapID",830},{"pop"},	-- get Krokuun
 					{"where","headerID",SPECIAL},{"pop"},	-- get Special
 					{"where","filterID",PLATE},{"pop"},	-- get Plate
+					{"where","filterID",WEAPONS},{"pop"},	-- get Weapons
 				},
 				["g"] = sharedData({["isDaily"] = true,},{
 					o(271849, {	-- Eredar War Supplies (very small circular spawn area west and a little south of Krokul Hovel (near Talestra the Vile)

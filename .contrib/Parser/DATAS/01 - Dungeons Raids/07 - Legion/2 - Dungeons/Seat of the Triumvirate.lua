@@ -8,6 +8,14 @@ root("Instances", { tier(LEGION_TIER, {
 		["mapID"] = 903,
 		["coord"] = { 22.2, 55.9, 882 },	-- Eredath
 		["g"] = {
+			n(TREASURES, {
+				o(277384, {	-- Abandoned Treasure
+					["isReapeatable"] = true,
+					["g"] = {
+						i(152854),	-- Nethershorn Lantern
+					},
+				}),
+			}),
 			n(QUESTS, {
 				i(152204, {	-- Glowing Key Fragment
 					["questID"] = 48230,	-- Fragment of the Past
