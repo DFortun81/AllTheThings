@@ -224,6 +224,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			n(REWARDS, {
+				i(200082, {	-- Battered Imbu-made Net 
+					["description"] = "Obtained from Rare fishing pools.",
+					["providers"] = {
+						{ "o", 377938 },	-- Prismatic Leaper School
+						{ "o", 382180 },	-- Overheated Magma Thresher Pool
+						{ "n", 197596 },	-- Deep Ice Fishing Hole
+					},
+				}),
 				i(200080, {	-- Draconium Nugget
 					["description"] = "Obtained from Rare fishing pools.",
 					["providers"] = {

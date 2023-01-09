@@ -775,7 +775,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199850),	-- Imbu Knot
 			i(199851),	-- Double Imbu Knot
 			i(200077),	-- Wooden Pole
-			i(200082),	-- Battered Imbu-made Net
 			i(200084),	-- Salinated Serevite
 		}),
 		------------- PROBABLY NYI ---------------------
