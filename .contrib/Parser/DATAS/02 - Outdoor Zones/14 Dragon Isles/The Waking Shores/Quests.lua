@@ -1115,10 +1115,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["sourceQuests"] = 72708,	-- Dragon Isles Supplies
 				["provider"] = { "n", 198846 },	-- Cataloger Jakes
 				["coord"] = { 76.5, 34.2, THE_WAKING_SHORES },
+				["isBreadcrumb"] = true,
 				["g"] = {
 					i(198854),	-- Archeologist Artifact Notes
-				},
-				["isBreadcrumb"] = true,
+				},	
 			}),
 			q(71141, {	-- Gills with Gall
 				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen

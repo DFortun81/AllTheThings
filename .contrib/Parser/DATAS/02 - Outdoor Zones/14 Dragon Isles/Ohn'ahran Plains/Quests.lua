@@ -1293,12 +1293,14 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 	m(OHNAHRAN_PLAINS, {
 		q(73701),	-- triggered during 'Unwelcome Outsider' (66021)
 		q(71203),	-- daily lockout for 'To Tame A Thunderspine' series
-
-
+		q(70749),	-- triggered when looting the talisman off windsage garuman
+		q(70505),	-- triggered when talking to Tigari Khan after looting the talisman off windsage garuman
+		q(72064),	-- triggered when receiving toy from Yennu
 		q(66887),	-- Choose Trophy from First Hunt (Renewal of Vows 66783)
 		q(66888),	-- Choose Blood (Renewal of Vows 66783)
 		q(66889),	-- Choose Eagle Feather (Renewal of Vows 66783)
 		q(69867),	-- Stay and Listen Merithra 18.7,51.6 (LQ 70928)
+		q(66512),	-- triggered when talking to Hunter Zaya and giving her Sarnai's Collar
 		-- Achievement Honor Our Ancestors
 		q(71167),	-- Maruukai Ancestor
 		q(71168),	-- Timberstep Outpost Ancestor
