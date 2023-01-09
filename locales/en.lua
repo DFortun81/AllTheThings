@@ -751,6 +751,7 @@ app.L = {
 	["REAGENT_ICON"] = "|T" .. app.asset("Category_Crafting") .. ":0|t";
 	["REAGENT_TEXT"] = "|T" .. app.asset("Category_Crafting") .. ":0|t |cffdedade"..GetItemClassInfo(5).."|r";
 
+	-- These are solely used to condense the length of Source strings within Tooltips
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",
 		["Antorus, the Burning Throne"] = "Antorus",
@@ -762,13 +763,14 @@ app.L = {
 		["Burning Crusade"] = "BC",
 		["The BC"] = "BC",										-- Fix for BC PvP season
 		["Wrath of the Lich King"] = "WotLK",
-		["Cataclysm"] = "Cata",
-		["Cataic"] = "Cataclysmic",								-- Fix for Cata last PvP Season
+		["Cataclysm %>"] = "Cata >",
+		-- ["Cataic"] = "Cataclysmic",								-- Fix for Cata last PvP Season
 		["Mists of Pandaria"] = "MoP",
 		["Warlords of Draenor"] = "WoD",
 		["Battle for Azeroth"] = "BFA",
 		["The Shadowlands"] = "SL",
 		["Shadowlands"] = "SL",
+		["Dragonflight"] = "DF",
 		["Player vs Player"] = "PvP",
 		["Raid Finder"] = "LFR",
 		["Looking For Raid"] = "LFR",
@@ -789,6 +791,8 @@ app.L = {
 		["Pet Journal"] = PETS,
 		--["Pet Battles"] = PETS,
 		["Toy Box"] = TOY,
+		[BATTLEGROUNDS] = "BGs",
+		[BLACK_MARKET_AUCTION_HOUSE] = "BMAH",
 		["Monthly World Events"] = CALENDAR_REPEAT_MONTHLY,
 		["Weekly World Events"] = CALENDAR_REPEAT_WEEKLY,
 		["Mini World Events"] = GetSpellInfo(57055),
@@ -796,7 +800,9 @@ app.L = {
 		[TRACKER_HEADER_WORLD_QUESTS] = "WQ",
 		["WoW Anniversary"] = "Anniversary",
 		["Covenant:"] = "Cov:",
+		["Season "] = "S",
 		["Sanctum Upgrades %> "] = "",
+		[CLASS.." %> "] = "",
 	};
 
 	["CUSTOM_DIFFICULTIES"] = {
