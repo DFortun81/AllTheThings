@@ -768,11 +768,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199698),	-- Irontree Harpoon Handle
 			i(199844),	-- Serevite Harpoon Head
 			i(199845),	-- Jagged Serevite Harpoon Head
-			i(199846),	-- Seavine Harpoon Rope
 			i(199847),	-- Braided Seavine Harpoon Rope
 			i(199848),	-- Draconium Net Weights
 			i(199849),	-- Dense Draconium Net Weight
-			i(199850),	-- Imbu Knot
 			i(199851),	-- Double Imbu Knot
 			i(200077),	-- Wooden Pole
 		}),

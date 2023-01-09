@@ -220,6 +220,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						i(199694),	-- Flying Fish Bone Charm
 						i(199697),	-- Polished Basalt Bracelet
 						i(199695),	-- Iskaaran Fishing Net
+						i(199850),	-- Imbu Knot
+						i(199846),	-- Seavine Harpoon Rope
 					}),
 				},
 			}),
@@ -316,6 +318,8 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(67140),	-- Triggered after crafting 'Polished Basalt Bracelet'
 		q(67139),	-- Triggered after crafting 'Flying Fish Bone Charm'
 		q(67141),	-- Triggered after crafting 'Iskaaran Ice Axe'
+		q(70802),	-- Triggered after crafting 'Imbu Knot'
+		q(70798),	-- Triggered after crafting 'Seavine Harpoon Rope'
 		--
 		q(72828),	-- First weekly completion of 'Catch and Release: Scalebell Mackerel' (70199)
 		q(72827),	-- First weekly completion of 'Catch and Release: Thousandbite Piranha' (70200)
