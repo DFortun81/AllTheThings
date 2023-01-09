@@ -178,6 +178,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
+				q(71151, {	-- Continued Waygate Exploration
+					["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23
+					["description"] = "Spawns Anywhere on Dragon Isles.",
+					["sourceQuest"] = 71150,	-- Continued Waygate Exploration
+					["provider"] = { "n", 196643 },	-- Doc Nanners
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				}),
 			}),
 		}),
 	}),
@@ -189,6 +196,9 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(71187),	-- triggered together with 'Continued Waygate Exploration' (71148)
 		q(71188),	-- triggered together with 'Continued Waygate Exploration' (71149) / Shady Sanctuary ( 71178)?
 		q(71189),	-- triggered together with 'Continued Waygate Exploration' (71150)
+		q(71190),	-- triggered together with 'Continued Waygate Exploration' (71151)
+		q(72043),	-- triggered together with 'Continued Waygate Exploration' (71151)
+		q(72744),	-- triggered together with 'Continued Waygate Exploration' (71151)
 		q(73864),	-- triggered when accepting 'Dormant Discovery' (66595)
 	}),
 })));
