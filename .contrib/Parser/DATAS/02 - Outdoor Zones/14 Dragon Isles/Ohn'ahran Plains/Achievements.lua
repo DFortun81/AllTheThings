@@ -459,10 +459,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				crit(15, {	-- Soyoo
 					["crs"] = { 197514 },	-- Soyoo
 					["coord"] = { 71.6, 49.7, OHNAHRAN_PLAINS },
+					["description"] = "This good bakar won't show up until you start |cffffff00The Trouble with Taivan|r.",
 				}),
 				crit(16, {	-- Taivan
 					["crs"] = { 197518 },	-- Taivan
 					["coord"] = { 61.8, 38.7, OHNAHRAN_PLAINS },
+					["description"] = "This good (large) bakar will be unavailable to pet until completing |cffffff00Taivan's Purpose|r.",
 				}),
 				crit(17, {	-- Tseg
 					["crs"] = { 189276 },	-- Tseg

@@ -410,6 +410,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 								194090,	-- Bakar Companion Color: White
 								193205,	-- Ohuna Companion Color: Brown
 								194088,	-- Ohuna Companion Color: Dark
+								194087,	-- Ohuna Companion Color: Red
+								201732,	-- Pattern: Fierce Armor Kit (RECIPE!)
 							}},
 							["g"] = {
 								i(192791),	-- Plainswalker Bearer (MOUNT!)

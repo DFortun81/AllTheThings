@@ -190,10 +190,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					{ 35.4, 58.8, VALDRAKKEN },
 				},
 				["g"] = {
-					i(193515),	-- Explorer's Cloth Robe
-					i(193390),	-- Resilient Leather Tunic
-					i(193394),	-- Adamant Scale Vest
-					i(189538),	-- Explorer's Plate Chestguard
 					i(198048),	-- Titan Training Matrix I
 					i(201343),	-- Bag of Cloth Armor Reagents
 					i(201352),	-- Bag of Leather Reagents

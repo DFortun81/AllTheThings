@@ -924,7 +924,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193058),	-- Sherwood - Test Trinket
 			i(193067),	-- Acadia's Tools [DNT/Unused]
 			i(194337),	-- Liquid Courage
-			i(198441),	-- Thunderspine Tenders
 			i(201251),	-- Pillaged Contender's Strongbox
 			i(201252),	-- 10.0 Bronze PvP Chest (DNT)
 			i(201253),	-- Competitor's Edge
@@ -932,8 +931,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200944),	-- Djaradin's Trophy Mask
 			--
 			i(199553),	-- Memory of Unity
-			i(200680),	-- Maruukai Mule
-			i(200681),	-- Ohn Lite
 			i(200854),	-- Cooked Caviar
 			i(200856),	-- Sideboat
 			i(200862),	-- Experimental Duck Feed
