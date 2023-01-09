@@ -15760,13 +15760,16 @@ local CreateRow;
 local function Refresh(self)
 	if not app.IsReady or not self:IsVisible() then return; end
 	-- app.PrintDebug("Refresh:",self.Suffix)
-	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
-	if self:GetHeight() < 40 then
-		self.CloseButton:Hide();
-		self.Grip:Hide();
-	else
+	local height = self:GetHeight();
+	if height > 80 then
+		self.ScrollBar:Show();
 		self.CloseButton:Show();
-		self.Grip:Show();
+	elseif height > 40 then
+		self.ScrollBar:Hide();
+		self.CloseButton:Show();
+	else
+		self.ScrollBar:Hide();
+		self.CloseButton:Hide();
 	end
 
 	-- If there is no raw data, then return immediately.
