@@ -16,7 +16,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			i(191122, {	-- Fullsails Supply Chest Key
-				-- npc 187971/187320
+				["crs"] = {
+					187320,	-- Soggymaw Seabasher
+					187971,	-- Soggymaw Crabtrapper
+				},
 			}),
 			i(201092, {	-- Lava Spices
 				["crs"] = {
