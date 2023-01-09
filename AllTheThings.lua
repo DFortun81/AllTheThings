@@ -2196,7 +2196,7 @@ local function VerifySourceID(item)
 	-- check that the group's itemlink still returns the same sourceID as saved in the group
 	if item.link and not item.retries then
 		-- quality below UNCOMMON means no source
-		if item.q and item.q < 2 then return true; end
+		if item.q and item.q < 0 then return true; end
 
 		local linkInfoSourceID = GetSourceID(item.link);
 		if linkInfoSourceID and linkInfoSourceID ~= item.s then
@@ -4330,7 +4330,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if topLevelSearch then
 				if sourceID then
 					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-					if sourceInfo and (sourceInfo.quality or 0) > 1 then
+					if sourceInfo and (sourceInfo.quality or 0) > -1 then
 						local allVisualSources = C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID) or app.EmptyTable;
 						if #allVisualSources < 1 then
 							-- Items with SourceInfo which don't register as having any visual data...
@@ -4470,7 +4470,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)});
 										else
 											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-											if otherSource and (otherSource.quality or 0) > 1 then
+											if otherSource and (otherSource.quality or 0) > -1 then
 												local link = select(2, GetItemInfo(otherSource.itemID));
 												if not link then
 													link = RETRIEVING_DATA;
@@ -12094,7 +12094,7 @@ itemHarvesterFields.text = function(t)
 			if not app.IsBoP(info) then
 				info.b = nil;
 			end
-			if info.q and info.q < 1 then
+			if info.q and info.q < -1 then
 				info.q = nil;
 			end
 			if info.iLvl and info.iLvl < 2 then
@@ -15228,7 +15228,7 @@ function app:CreateMiniListForGroup(group)
 							if otherSourceInfo then
 								-- TODO: this can create an item link whose appearance is actually different than the SourceID's Visual
 								local newItem = app.CreateItemSource(otherSourceID, otherSourceInfo.itemID);
-								newItem.collectible = (otherSourceInfo.quality or 0) > 1;
+								newItem.collectible = (otherSourceInfo.quality or 0) > -1;
 								if otherSourceInfo.isCollected then
 									ATTAccountWideData.Sources[otherSourceID] = 1;
 									newItem.collected = true;
@@ -15307,7 +15307,7 @@ function app:CreateMiniListForGroup(group)
 							tinsert(g, search);
 						else
 							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSourceInfo and (otherSourceInfo.quality or 0) > 1 then
+							if otherSourceInfo and (otherSourceInfo.quality or 0) > -1 then
 								-- TODO: this can create an item link whose appearance is actually different than the SourceID's Visual
 								local newItem = app.CreateItemSource(sourceID, otherSourceInfo.itemID);
 								if otherSourceInfo.isCollected then
@@ -15660,7 +15660,7 @@ local function SetRowData(self, row, data)
 		-- WARNING: DEV ONLY START
 		-- no or bad sourceID or requested to reSource and is of a proper source-able quality
 		elseif data.reSource then
-			if not data.q or data.q > 1 then
+			if not data.q or data.q > -1 then
 				-- If it doesn't, the source ID will need to be harvested.
 				local s, success = GetSourceID(text) or (data.artifactID and data.s);
 				if s and s > 0 then
@@ -19963,7 +19963,7 @@ customWindowUpdates["SourceFinder"] = function(self)
 												local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
 												itemEquipLoc, itemIcon, itemSellPrice, itemClassID, itemSubClassID, bindType, expacID, itemSetID,
 												isCraftingReagent = GetItemInfo(itemID);
-												if itemRarity and itemRarity < 2 then
+												if itemRarity and itemRarity < 0 then
 													source.fails = source.fails + 1;
 													self.shouldFullRefresh = true;
 												else
