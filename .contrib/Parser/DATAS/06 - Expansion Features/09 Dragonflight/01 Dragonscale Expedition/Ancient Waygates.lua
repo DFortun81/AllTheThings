@@ -178,6 +178,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
+					-- RENOWN 23 --
 				q(71151, {	-- Continued Waygate Exploration
 					["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23
 					["description"] = "Spawns Anywhere on Dragon Isles.",

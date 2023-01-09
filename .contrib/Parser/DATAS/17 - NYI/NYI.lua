@@ -593,7 +593,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194028),	-- Ancient Parchment: Bottom Half
 			i(194029),	-- Treasure Map: Thaldraszus
 			i(194442),	-- Activity Map: Apex Canopy
-			i(198085),	-- Lost Obsidian Cache Key
 		}),
 		n(WEAPONS, {
 			i(197693),	-- Shikaar Hunter's Crossbow

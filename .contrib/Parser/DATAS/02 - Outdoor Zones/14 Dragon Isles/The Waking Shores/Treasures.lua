@@ -81,11 +81,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(202019),	-- Golden Dragon Goblet (TOY!)
 				},
 			}),
-			o(378857, {	-- Lost Obsidian Cache
-				-- TODO Check?
+			o(379168, {	-- Lost Cache Key
 				["description"] = "Collect a Sour Apple from the ground around the Blacktalon Pack Goat along the road leading up to Obsidian Bulwark at 43.7, 71.8\n\nThrow an apple at the Blacktalon Shadowclaw in Obsidian Bulwark 43.1, 67.2\n\nYou can now interact with the bird, it will fly you up to the cave where the Cache key will be visible beside the corpse.",
-				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
-				-- ["questID"] = ,
+				["coord"] = { 43, 70, THE_WAKING_SHORES },
+				["isCollectible"] = false,
+				["g"] = {
+					i(198085),	-- Lost Obsidian Cache Key
+				},
+			}),
+			o(378857, {	-- Lost Obsidian Cache
+				["description"] = "Collect a Sour Apple from the ground around the Blacktalon Pack Goat along the road leading up to Obsidian Bulwark at 43.7, 71.8\n\nThrow an apple at the Blacktalon Shadowclaw in Obsidian Bulwark 43.1, 67.2\n\nYou can now interact with the bird, it will fly you up to the cave where the Cache key will be visible beside the corpse.",
+				["coord"] = { 45, 70, THE_WAKING_SHORES },
+				["questID"] = 70018,
 				["cost"] = { { "i", 198085, 1 }, },	-- 1x Lost Obsidian Cache Key
 				["g"] = {
 					i(201933),	-- Black Dragon's Challenge Dummy (TOY!)

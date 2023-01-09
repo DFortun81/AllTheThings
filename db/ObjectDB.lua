@@ -2508,6 +2508,7 @@ _.ObjectNames = {
 	[378088] = "Crystalline Flower",
 	[378820] = "Popfizz Punch",
 	[378857] = "Lost Obsidian Cache",
+	[379168] = "Lost Cache Key",
 	[379290] = "Ornamented Statue",
 	[379296] = "Broken Banding",
 	[379297] = "Slam Bam Swill",
