@@ -276,6 +276,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						{ "o", 381069 },	-- Full Fishing Net
 					},
 				}),
+				i(200084, {	-- Salinated Serevite
+					["description"] = "Obtained from Full Tuskarr Fishing Nets.",
+					["providers"] = {
+						{ "o", 382071 },	-- Full Fishing Net
+						{ "o", 379314 },	-- Full Fishing Net
+						{ "o", 381069 },	-- Full Fishing Net
+					},
+				}),
 				o(381514, {	-- Sea-Polished Basalt
 					-- i didn't save the coords, and wowhead doesn't know about it. probably need some fine-tuning and additional spawn locations, then remove description
 					["description"] = "Near landing points for Alliance/Horde in The Waking Shores. Rough coordinates.",
