@@ -504,7 +504,7 @@ local L = app.L;
 		L.SCREENSHOT_COLLECTED_CHECKBOX = "收藏物品后触发截图";
 		L.SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "如果你想为你收藏的每件物品进行截图请启用此选项。";
 		L.CHAT_COMMANDS_LABEL = "聊天命令";
-		L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFF或|R /things |cffFFFFFF或|R /allthethings\n|cffFFFFFF打开主列表。\n\n|R/att mini |cffFFFFFF或|R /attmini\n|cffFFFFFF打开小列表。\n\n|R/att bounty\n|cffFFFFFF打开被出错或未确认的物品列表。\n\n|R/att ra |cffFFFFFF或|R /attra\n|cffFFFFFF打开团队助手。\n\n|R/att wq |cffFFFFFF或|R /attwq\n|cffFFFFFF打开世界任务列表。\n\n|R/att item:1234 |cffFFFFFF或|R /att [物品链接]\n|cffFFFFFF打开一个共享外观的窗口。也适用于其他事物，例如|R quest:1234|cffFFFFFF，|Rnpcid:1234|cffFFFFFF，|Rmapid:1234|cffFFFFFF 或 |Rrecipeid:1234|cffFFFFFF。\n\n|R/att rwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/att random |cffFFFFFF或|R /attrandom |cffFFFFFF或|R /attran\n|cffFFFFFF打开随机列表。\n\n|R/att unsorted\n|cffFFFFFF打开未知源物品列表。最好在调试模式下打开。\n\n|R/rl\n|cffFFFFFF重载魔兽界面。|R";	--TODO: Translate /att rwp
+		L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFF或|R /things |cffFFFFFF或|R /allthethings\n|cffFFFFFF打开主列表。\n\n|R/att mini |cffFFFFFF或|R /attmini\n|cffFFFFFF打开小列表。\n\n|R/att bounty\n|cffFFFFFF打开被出错或未确认的物品列表。\n\n|R/att ra |cffFFFFFF或|R /attra\n|cffFFFFFF打开团队助手。\n\n|R/att wq |cffFFFFFF或|R /attwq\n|cffFFFFFF打开世界任务列表。\n\n|R/att item:1234 |cffFFFFFF或|R /att [物品链接]\n|cffFFFFFF打开一个共享外观的窗口。也适用于其他事物，例如|R quest:1234|cffFFFFFF，|Rnpcid:1234|cffFFFFFF，|Rmapid:1234|cffFFFFFF 或 |Rrecipeid:1234|cffFFFFFF。\n\n|R/att rwp\n|cffFFFFFF显示所有未来用补丁删除的东西。\n\n|R/att random |cffFFFFFF或|R /attrandom |cffFFFFFF或|R /attran\n|cffFFFFFF打开随机列表。\n\n|R/att unsorted\n|cffFFFFFF打开未知源物品列表。最好在调试模式下打开。\n\n|R/rl\n|cffFFFFFF重载魔兽界面。|R";
 
 	-- Profiles tab
 		L.PROFILES_TAB = "配置文件";
@@ -516,7 +516,7 @@ local L = app.L;
 		L.PROFILE_COPY_TOOLTIP = "复制已选配置文件到当前配置文件";
 		L.PROFILE_DELETE_TOOLTIP = "删除已选配置文件";
 		L.PROFILE_SWITCH_TOOLTIP = "将选定的配置文件设置为当前配置文件\n\n一个配置文件也可以通过 "..SHIFT_KEY_TEXT.."-点击切换到它";
-		--TODO: L.SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
+		L.SHOW_PROFILE_LOADED = "显示在登录期间或在配置文件之间切换时加载的配置文件";
 
 	-- Sync tab
 		L.SYNC = "同步";
@@ -857,7 +857,7 @@ for key,value in pairs({
 		[-1010] = "角斗士备选",											-- Gladiator Alternative
 		[-1011] = "精锐备选",											-- Elite Alternative
 	-- Dragonflight
-		[-1100] = "观龙者手稿",											-- Drakewatcher Manuscripts	--TODO: plural
+		[-1100] = "观龙者手稿",											-- Drakewatcher Manuscripts
 		[-1101] = "原始风暴",											-- Primal Storms
 		[-1102] = "拉希奥和萨贝里安",										-- Wrathion & Sabellian
 		[-1110] = "龙鳞探险队",											-- Dragonscale Expedition
@@ -872,7 +872,7 @@ for key,value in pairs({
 		[-1131] = "伊斯卡拉渔具",										-- Iskaara Fishing
 		[-1140] = "瓦德拉肯联军",											-- Valdrakken Accord
 		[-1142] = "天际挑战",											-- Aerial Challenges
-		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
+		[-1143] = "每2小时稀有",						-- Every 2 Hours Rare
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
