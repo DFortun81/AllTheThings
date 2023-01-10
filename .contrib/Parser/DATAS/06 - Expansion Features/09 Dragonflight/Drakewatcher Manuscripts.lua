@@ -174,7 +174,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197346),	-- Renewed Proto-Drake: Gold and Black Armor (DM!)
 		i(197351),	-- Renewed Proto-Drake: Gold and Red Armor (DM!)
 		i(197349),	-- Renewed Proto-Drake: Gold and White Armor
-		i(197381),	-- Renewed Proto-Drake: Gradiant Horns (DM!)
+		i(197381),	-- Renewed Proto-Drake: Gradient Horns (DM!)
 		i(197367),	-- Renewed Proto-Drake: Gray Hair (DM!)
 		i(197371),	-- Renewed Proto-Drake: Green Hair
 		i(197389),	-- Renewed Proto-Drake: Green Scales
