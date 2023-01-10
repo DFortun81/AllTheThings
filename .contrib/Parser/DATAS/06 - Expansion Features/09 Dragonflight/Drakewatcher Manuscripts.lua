@@ -316,336 +316,336 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 			}),
 			ach(16707, {	-- Highland Drake Scales and Patterns
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
+				crit(56352, {	-- Black Scales
+					["provider"] = { "i", 197142 },	-- Highland Drake: Black Scales (DM!)
+				}),
+				crit(56353, {	-- Green Scales
+					["provider"] = { "i", 197143 },	-- Highland Drake: Green Scales (DM!)
+				}),
+				crit(56354, {	-- Red Scales
+					["provider"] = { "i", 197144 },	-- Highland Drake: Red Scales (DM!)
+				}),
+				crit(56355, {	-- Bronze Scales
+					["provider"] = { "i", 197145 },	-- Highland Drake: Bronze Scales (DM!)
+				}),
+				crit(56357, {	-- Heavy Scales
+					["provider"] = { "i", 197147 },	-- Highland Drake: Heavy Scales (DM!)
+				}),
+				crit(56358, {	-- Striped Pattern
+					["provider"] = { "i", 197138 },	-- Highland Drake: Striped Pattern
+				}),
+				crit(56359, {	-- Large Spotted Pattern
+					["provider"] = { "i", 197139 },	-- Highland Drake: Large Spotted Pattern (DM!)
+				}),
+				crit(56360, {	-- Small Spotted Pattern
+					["provider"] = { "i", 197140 },	-- Highland Drake: Small Spotted Pattern (DM!)
+				}),
+				crit(56361, {	-- Scaled Pattern
+					["provider"] = { "i", 197141 },	-- Highland Drake: Scaled Pattern (DM!)
+				}),
 			}),
 			ach(16708, {	-- Highland Drake Armor
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
+				crit(56362, {	-- Gold and Black Armor
+					["provider"] = { "i", 197090 },	-- Highland Drake: Gold and Black Armor (DM!)
+				}),
+				crit(56363, {	-- Silver and Blue Armor
+					["provider"] = { "i", 197091 },	-- Highland Drake: Silver and Blue Armor (DM!)
+				}),
+				crit(56364, {	-- Silver and Purple Armor
+					["provider"] = { "i", 197093 },	-- Highland Drake: Silver and Purple Armor (DM!)
+				}),
+				crit(56365, {	-- Gold and Red Armor
+					["provider"] = { "i", 197094 },	-- Highland Drake: Gold and Red Armor (DM!)
+				}),
+				crit(56367, {	-- Steel and Yellow Armor
+					["provider"] = { "i", 197096 },	-- Highland Drake: Steel and Yellow Armor (DM!)
+				}),
+				crit(56368, {	-- Armor
+					["provider"] = { "i", 197099 },	-- Highland Drake: Armor
+				}),
 			}),
 			ach(16710, {	-- Highland Drake Horns and Hair
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
+				crit(56369, {	-- Black Hair
+					["provider"] = { "i", 197117 },	-- Highland Drake: Black Hair (DM!)
+				}),
+				crit(56370, {	-- Brown Hair
+					["provider"] = { "i", 197118 },	-- Highland Drake: Brown Hair
+				}),
+				crit(56371, {	-- Tan Horns
+					["provider"] = { "i", 197121 },	-- Highland Drake: Tan Horns (DM!)
+				}),
+				crit(56372, {	-- Heavy Horns
+					["provider"] = { "i", 197122 },	-- Highland Drake: Heavy Horns (DM!)
+				}),
+				crit(56373, {	-- Thorn Horns
+					["provider"] = { "i", 197123 },	-- Highland Drake: Thorn Horns (DM!)
+				}),
+				crit(56375, {	-- Coiled Horns
+					["provider"] = { "i", 197125 },	-- Highland Drake: Coiled Horns (DM!)
+				}),
+				crit(56376, {	-- Hooked Horns
+					["provider"] = { "i", 197126 },	-- Highland Drake: Hooked Horns (DM!)
+				}),
+				crit(56377, {	-- Grand Thorn Horns
+					["provider"] = { "i", 197127 },	-- Highland Drake: Grand Thorn Horns (DM!)
+				}),
+				crit(56378, {	-- Curled Back Horns
+					["provider"] = { "i", 197128 },	-- Highland Drake: Curled Back Horns
+				}),
+				crit(56380, {	-- Stag Horns
+					["provider"] = { "i", 197130 },	-- Highland Drake: Stag Horns
+				}),
 			}),
 			ach(16712, {	-- Highland Drake Head Features
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
+				crit(56391, {	-- Crested Brow
+					["provider"] = { "i", 197100 },	-- Highland Drake: Crested Brow (DM!)
+				}),
+				crit(56392, {	-- Bushy Brow
+					["provider"] = { "i", 197101 },	-- Highland Drake: Bushy Brow (DM!)
+				}),
+				crit(56394, {	-- Maned Chin
+					["provider"] = { "i", 197103 },	-- Highland Drake: Maned Chin (DM!)
+				}),
+				crit(56396, {	-- Spined Chin
+					["provider"] = { "i", 197105 },	-- Highland Drake: Spined Chin (DM!)
+				}),
+				crit(56397, {	-- Finned Head
+					["provider"] = { "i", 197106 },	-- Highland Drake: Finned Head
+				}),
+				crit(56398, {	-- Triple Finned Head
+					["provider"] = { "i", 197107 },	-- Highland Drake: Triple Finned Head (DM!)
+				}),
+				crit(56399, {	-- Spined Head
+					["provider"] = { "i", 197108 },	-- Highland Drake: Spined Head (DM!)
+				}),
+				crit(56401, {	-- Plated Head
+					["provider"] = { "i", 197110 },	-- Highland Drake: Plated Head (DM!)
+				}),
+				crit(56402, {	-- Maned Head
+					["provider"] = { "i", 197111 },	-- Highland Drake: Maned Head (DM!)
+				}),
+				crit(56403, {	-- Single Horned Head
+					["provider"] = { "i", 197112 },	-- Highland Drake: Single Horned Head (DM!)
+				}),
+				crit(56404, {	-- Swept Spiked Head
+					["provider"] = { "i", 197113 },	-- Highland Drake: Swept Spiked Head (DM!)
+				}),
+				crit(56405, {	-- Multi-Horned Head
+					["provider"] = { "i", 197114 },	-- Highland Drake: Multi-Horned Head (DM!)
+				}),
+				crit(56406, {	-- Thorned Jaw
+					["provider"] = { "i", 197115 },	-- Highland Drake: Thorned Jaw (DM!)
+				}),
+				crit(56407, {	-- Ears
+					["provider"] = { "i", 197116 },	-- Highland Drake: Ears
+				}),
+				crit(56410, {	-- Hairy Cheek
+					["provider"] = { "i", 197131 },	-- Highland Drake: Hairy Cheek
+				}),
+				crit(56411, {	-- Spiked Cheek
+					["provider"] = { "i", 197132 },	-- Highland Drake: Spiked Cheek (DM!)
+				}),
+				crit(56412, {	-- Spined Cheek
+					["provider"] = { "i", 197133 },	-- Highland Drake: Spined Cheek (DM!)
+				}),
+				crit(56413, {	-- Toothy Mouth
+					["provider"] = { "i", 197135 },	-- Highland Drake: Toothy Mouth (DM!)
+				}),
+				crit(56415, {	-- Spined Nose
+					["provider"] = { "i", 197137 },	-- Highland Drake: Spined Nose (DM!)
+				}),
+				crit(56416, {	-- Spined Neck
+					["provider"] = { "i", 197154 },	-- Highland Drake: Spined Neck (DM!)
+				}),
+				crit(56417, {	-- Finned Neck
+					["provider"] = { "i", 197155 },	-- Highland Drake: Finned Neck
+				}),
 			}),
 			ach(16711, {	-- Highland Drake Back and Tail
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
+				crit(56381, {	-- Spined Back
+					["provider"] = { "i", 197097 },	-- Highland Drake: Spined Back (DM!)
+				}),
+				crit(56382, {	-- Finned Back
+					["provider"] = { "i", 197098 },	-- Highland Drake: Finned Back (DM!)
+				}),
+				crit(56383, {	-- Vertical Finned Tail
+					["provider"] = { "i", 197148 },	-- Highland Drake: Vertical Finned Tail (DM!)
+				}),
+				crit(56384, {	-- Club Tail
+					["provider"] = { "i", 197149 },	-- Highland Drake: Club Tail (DM!)
+				}),
+				crit(56385, {	-- Spiked Club Tail
+					["provider"] = { "i", 197150 },	-- Highland Drake: Spiked Club Tail (DM!)
+				}),
+				crit(56386, {	-- Spiked Tail
+					["provider"] = { "i", 197151 },	-- Highland Drake: Spiked Tail (DM!)
+				}),
+				crit(56387, {	-- Hooked Tail
+					["provider"] = { "i", 197152 },	-- Highland Drake: Hooked Tail
+				}),
+				crit(56388, {	-- Bladed Tail
+					["provider"] = { "i", 197153 },	-- Highland Drake: Bladed Tail (DM!)
+				}),
 			}),
 			ach(16723, {	-- Cliffside Wylderdrake Scales and Patterns
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
+				crit(56437, {	-- Red Scales
+					["provider"] = { "i", 197010 },	-- Cliffside Wylderdrake: Red Scales (DM!)
+				}),
+				crit(56438, {	-- Green Scales
+					["provider"] = { "i", 197011 },	-- Cliffside Wylderdrake: Green Scales (DM!)
+				}),
+				crit(56439, {	-- Blue Scales
+					["provider"] = { "i", 197012 },	-- Cliffside Wylderdrake: Blue Scales (DM!)
+				}),
+				crit(56440, {	-- Black Scales
+					["provider"] = { "i", 197013 },	-- Cliffside Wylderdrake: Black Scales (DM!)
+				}),
+				crit(56442, {	-- Eclipse Scale Type
+					["provider"] = { "i", 197015 },	-- Cliffside Wylderdrake: Dark Skin Variation
+				}),
+				crit(56443, {	-- Wide Stripes Pattern
+					["provider"] = { "i", 197007 },	-- Cliffside Wylderdrake: Wide Stripes Pattern (DM!)
+				}),
+				crit(56444, {	-- Narrow Stripes Pattern
+					["provider"] = { "i", 197008 },	-- Cliffside Wylderdrake: Narrow Stripes Pattern
+				}),
+				crit(56445, {	-- Scaled Pattern
+					["provider"] = { "i", 197009 },	-- Cliffside Wylderdrake: Scaled Pattern (DM!)
+				}),
 			}),
 			ach(16724, {	-- Cliffside Wylderdrake Armor
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
+				crit(56446, {	-- Armor
+					["provider"] = { "i", 196961 },	-- Cliffside Wylderdrake: Armor
+				}),
+				crit(56447, {	-- Silver and Purple Armor
+					["provider"] = { "i", 196962 },	-- Cliffside Wylderdrake: Silver and Purple Armor (DM!)
+				}),
+				crit(56448, {	-- Silver and Blue Armor
+					["provider"] = { "i", 196963 },	-- Cliffside Wylderdrake: Silver and Blue Armor (DM!)
+				}),
+				crit(56449, {	-- Gold and Black Armor
+					["provider"] = { "i", 196964 },	-- Cliffside Wylderdrake: Gold and Black Armor (DM!)
+				}),
+				crit(56451, {	-- Gold and Orange Armor
+					["provider"] = { "i", 196966 },	-- Cliffside Wylderdrake: Gold and Orange Armor (DM!)
+				}),
+				crit(56453, {	-- Steel and Yellow Armor
+					["provider"] = { "i", 196968 },	-- Cliffside Wylderdrake: Steel and Yellow Armor (DM!)
+				}),
 			}),
 			ach(16725, {	-- Cliffside Wylderdrake Horns and Manes
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
+				crit(56454, {	-- Black Horns
+					["provider"] = { "i", 196991 },	-- Cliffside Wylderdrake: Black Horns (DM!)
+				}),
+				crit(56455, {	-- Heavy Horns
+					["provider"] = { "i", 196992 },	-- Cliffside Wylderdrake: Heavy Horns (DM!)
+				}),
+				crit(56457, {	-- Short Horns
+					["provider"] = { "i", 196994 },	-- Cliffside Wylderdrake: Short Horns
+				}),
+				crit(56459, {	-- Branched Horns
+					["provider"] = { "i", 196991 },	-- Cliffside Wylderdrake: Black Horns (DM!)
+				}),
+				crit(56461, {	-- Hook Horns
+					["provider"] = { "i", 196998 },	-- Cliffside Wylderdrake: Hook Horns (DM!)
+				}),
+				crit(56462, {	-- Swept Horns
+					["provider"] = { "i", 196999 },	-- Cliffside Wylderdrake: Swept Horns
+				}),
+				crit(56464, {	-- Black Mane
+					["provider"] = { "i", 196986 },	-- Cliffside Wylderdrake: Black Hair (DM!)
+				}),
+				crit(56465, {	-- Blonde Mane
+					["provider"] = { "i", 196987 },	-- Cliffside Wylderdrake: Blonde Hair (DM!)
+				}),
+				crit(56466, {	-- Red Mane
+					["provider"] = { "i", 196988 },	-- Cliffside Wylderdrake: Red Mane (DM!)
+				}),
+				crit(56467, {	-- White Mane
+					["provider"] = { "i", 196989 },	-- Cliffside Wylderdrake: White Hair
+				}),
 			}),
 			ach(16727, {	-- Cliffside Wylderdrake Head Features
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
+				crit(56530, {	-- Spiked Brow
+					["provider"] = { "i", 196971 },	-- Cliffside Wylderdrake: Spiked Brow (DM!)
+				}),
+				crit(56531, {	-- Plated Brow
+					["provider"] = { "i", 196972 },	-- Cliffside Wylderdrake: Plated Brow (DM!)
+				}),
+				crit(56532, {	-- Dual Horned Chin
+					["provider"] = { "i", 196973 },	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
+				}),
+				crit(56533, {	-- Four Horned Chin
+					["provider"] = { "i", 196974 },	-- Cliffside Wylderdrake: Four Horned Chin
+				}),
+				crit(56534, {	-- Head Fin
+					["provider"] = { "i", 196975 },	-- Cliffside Wylderdrake: Head Fin
+				}),
+				crit(56535, {	-- Head Mane
+					["provider"] = { "i", 196976 },	-- Cliffside Wylderdrake: Head Mane (DM!)
+				}),
+				crit(56536, {	-- Split Head Horns
+					["provider"] = { "i", 196977 },	-- Cliffside Wylderdrake: Split Head Horns (DM!)
+				}),
+				crit(56538, {	-- Curled Head Horns
+					["provider"] = { "i", 196979 },	-- Cliffside Wylderdrake: Curled Head Horns
+				}),
+				crit(56539, {	-- Triple Head Horns
+					["provider"] = { "i", 196980 },	-- Cliffside Wylderdrake: Triple Head Horns (DM!)
+				}),
+				crit(56540, {	-- Conical Head
+					["provider"] = { "i", 196981 },	-- Cliffside Wylderdrake: Conical Head (DM!)
+				}),
+				crit(56541, {	-- Ears
+					["provider"] = { "i", 196982 },	-- Cliffside Wylderdrake: Ears (DM!)
+				}),
+				crit(56542, {	-- Maned Jaw
+					["provider"] = { "i", 196983 },	-- Cliffside Wylderdrake: Maned Jaw (DM!)
+				}),
+				crit(56544, {	-- Horned Jaw
+					["provider"] = { "i", 196985 },	-- Cliffside Wylderdrake: Horned Jaw (DM!)
+				}),
+				crit(56546, {	-- Finned Cheek
+					["provider"] = { "i", 197001 },	-- Cliffside Wylderdrake: Finned Cheek (DM!)
+				}),
+				crit(56548, {	-- Spiked Cheek
+					["provider"] = { "i", 197003 },	-- Cliffside Wylderdrake: Spiked Cheek (DM!)
+				}),
+				crit(56549, {	-- Horned Nose
+					["provider"] = { "i", 197005 },	-- Cliffside Wylderdrake: Horned Nose (DM!)
+				}),
+				crit(56551, {	-- Finned Neck
+					["provider"] = { "i", 197022 },	-- Cliffside Wylderdrake: Finned Neck
+				}),
+				crit(56552, {	-- Maned Neck
+					["provider"] = { "i", 197023 },	-- Cliffside Wylderdrake: Maned Neck (DM!)
+				}),
 			}),
 			ach(16726, {	-- Cliffside Wylderdrake Back and Tail
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
-				-- 	crit(, {	--
-				-- 		["provider"] = { "i",  },	--
-				-- 	}),
+				crit(56468, {	-- Finned Back
+					["provider"] = { "i", 196969 },	-- Cliffside Wylderdrake: Finned Back (DM!)
+				}),
+				crit(56469, {	-- Spiked Back
+					["provider"] = { "i", 196970 },	-- Cliffside Wylderdrake: Spiked Back
+				}),
+				crit(56470, {	-- Maned Tail
+					["provider"] = { "i", 197016 },	-- Cliffside Wylderdrake: Maned Tail
+				}),
+				crit(56471, {	-- Large Tail Spikes
+					["provider"] = { "i", 197017 },	-- Cliffside Wylderdrake: Large Tail Spikes (DM!)
+				}),
+				crit(56472, {	-- Finned Tail
+					["provider"] = { "i", 197018 },	-- Cliffside Wylderdrake: Finned Tail (DM!)
+				}),
+				crit(56473, {	-- Blunt Spiked Tail
+					["provider"] = { "i", 197019 },	-- Cliffside Wylderdrake: Blunt Spiked Tail (DM!)
+				}),
+				crit(56474, {	-- Spear Tail
+					["provider"] = { "i", 197020 },	-- Cliffside Wylderdrake: Spear Tail (DM!)
+				}),
+				crit(56476, {	-- Spiked Legs
+					["provider"] = { "i", 197004 },	-- Cliffside Wylderdrake: Spiked Legs
+				}),
 			}),
 		})),
 		--[[
@@ -707,6 +707,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(196972),	-- Cliffside Wylderdrake: Plated Brow (DM!)
 		i(197006),	-- Cliffside Wylderdrake: Plated Nose
 		i(196988),	-- Cliffside Wylderdrake: Red Mane (DM!)
+		i(197010),	-- Cliffside Wylderdrake: Red Scales (DM!)
 		i(197009),	-- Cliffside Wylderdrake: Scaled Pattern (DM!)
 		i(196994),	-- Cliffside Wylderdrake: Short Horns
 		i(196963),	-- Cliffside Wylderdrake: Silver and Blue Armor (DM!)
@@ -728,7 +729,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(196989),	-- Cliffside Wylderdrake: White Hair
 		i(197014),	-- Cliffside Wylderdrake: White Scales
 		i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern (DM!)
-		i(197010),	-- Cliffside Wylderdrake: Red Scales (DM!)
 		i(197099),	-- Highland Drake: Armor
 		i(197117),	-- Highland Drake: Black Hair (DM!)
 		i(197142),	-- Highland Drake: Black Scales (DM!)
@@ -762,7 +762,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197111),	-- Highland Drake: Maned Head (DM!)
 		i(197114),	-- Highland Drake: Multi-Horned Head (DM!)
 		i(197120),	-- Highland Drake: Ornate Helm
-		i(197138),	-- Highland Drake: Pattern 1
 		i(197110),	-- Highland Drake: Plated Head (DM!)
 		i(197144),	-- Highland Drake: Red Scales (DM!)
 		i(197141),	-- Highland Drake: Scaled Pattern (DM!)
@@ -784,6 +783,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		i(197137),	-- Highland Drake: Spined Nose (DM!)
 		i(197130),	-- Highland Drake: Stag Horns
 		i(197096),	-- Highland Drake: Steel and Yellow Armor (DM!)
+		i(197138),	-- Highland Drake: Striped Pattern
 		i(197124),	-- Highland Drake: Swept Horns
 		i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
 		i(197121),	-- Highland Drake: Tan Horns (DM!)
