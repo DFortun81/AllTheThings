@@ -1271,7 +1271,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(70088),	-- Terros (N)
 		q(72273),	-- Terros (N)
 		q(70096),	-- Terros (H)
-		-- q(TODO),	-- Terros (M)
+		q(70105),	-- Terros (M)
 		q(70077),	-- The Primal Council (N)
 		q(70086),	-- The Primal Council (N)
 		q(72271),	-- The Primal Council (N)
