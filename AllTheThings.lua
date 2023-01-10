@@ -6977,7 +6977,7 @@ AddTomTomWaypoint = function(group)
 			C_SuperTrack.SetSuperTrackedQuestID(group.questID);
 			return;
 		end
-		if __TomTomWaypointCount == 0 then
+		if __TomTomWaypointCount == 0 and __TomTomWaypointFirst then
 			app.print(format(L["NO_COORDINATES_FORMAT"], group.text));
 		end
 	else
