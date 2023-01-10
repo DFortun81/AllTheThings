@@ -3,6 +3,651 @@
 -------------------------------------------------------------------
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAKEWATCHER_MANUSCRIPTS, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
+			ach(16699, {	-- Renewed Proto-Drake Scales and Patterns
+				crit(56246,	{	-- Green Scales
+					["provider"] = { "i", 197389 }, -- Renewed Proto-Drake: Green Scales (DM!)
+				}),
+				crit(56261, {	-- Blue Scales
+					["provider"] = { "i", 197390 },	-- Renewed Proto-Drake: Blue Scales (DM!)
+				}),
+				crit(56262, {	-- Bronze Scales
+					["provider"] = { "i", 197391 },	-- Renewed Proto-Drake: Bronze Scales (DM!)
+				}),
+				crit(56263, {	-- Black Scales
+					["provider"] = { "i", 197392 },	-- Renewed Proto-Drake: Black Scales (DM!)
+				}),
+				crit(56265, {	-- Predator Pattern
+					["provider"] = { "i", 197394 },	-- Renewed Proto-Drake: Predator Pattern (DM!)
+				}),
+				crit(56266, {	-- Harrier Pattern
+					["provider"] = { "i", 197395 },	-- Renewed Proto-Drake: Harrier Pattern (DM!)
+				}),
+				crit(56267, {	-- Skyterror Pattern
+					["provider"] = { "i", 197396 },	-- Renewed Proto-Drake: Skyterror Pattern (DM!)
+				}),
+				crit(56268, {	-- Heavy Scales
+					["provider"] = { "i", 197397 },	-- Renewed Proto-Drake: Heavy Scales (DM!)
+				}),
+			}),
+			ach(16696, {	-- Renewed Proto-Drake Armor
+				crit(56248, {	-- Gold and Black Armor
+					["provider"] = { "i", 197346 },	-- Renewed Proto-Drake: Gold and Black Armor (DM!)
+				}),
+				crit(56249, {	-- Silver and Blue Armor
+					["provider"] = { "i", 197347 },	-- Renewed Proto-Drake: Silver and Blue Armor (DM!)
+				}),
+				crit(56252, {	-- Silver and Purple Armor
+					["provider"] = { "i", 197350 },	-- Renewned Proto-Drake: Silver and Purple Armor (DM!)
+				}),
+				crit(56253, {	-- Gold and Red Armor
+					["provider"] = { "i", 197351 },	-- Renewed Proto-Drake: Gold and Red Armor (DM!)
+				}),
+				crit(56254, {	-- Steel and Yellow Armor
+					["provider"] = { "i", 197352 },	-- Renewed Proto-Drake: Steel and Yellow Armor (DM!)
+				}),
+				crit(56259, {	-- Armor
+					["provider"] = { "i", 197357 },	-- Renewed Proto-Drake: Armor
+				}),
+			}),
+			ach(16700, {	-- Renewed Proto-Drake Horns and Hair
+				crit(56731, {	-- Gray Hair
+					["provider"] = { "i", 197367 },	-- Renewed Proto-Drake: Gray Hair (DM!)
+				}),
+				crit(56732, {	-- Blue Hair
+					["provider"] = { "i", 197368 },	-- Renewed Proto-Drake: Blue Hair (DM!)
+				}),
+				crit(56733, {	-- Brown Hair
+					["provider"] = { "i", 197369 },	-- Renewed Proto-Drake: Brown Hair
+				}),
+				crit(56734, {	-- Red Hair
+					["provider"] = { "i", 197370 },	-- Renewed Proto-Drake: Red Hair (DM!)
+				}),
+				crit(56735, {	-- Purple Hair
+					["provider"] = { "i", 197372 },	-- Renewed Proto-Drake: Purple Hair (DM!)
+				}),
+				crit(56736, {	-- Swept Horns
+					["provider"] = { "i", 197374 },	-- Renewed Proto-Drake: Swept Horns (DM!)
+				}),
+				crit(56737, {	-- Curled Horns
+					["provider"] = { "i", 197375 },	-- Renewed Proto-Drake: Curled Horns (DM!)
+				}),
+				crit(56738, {	-- Ears
+					["provider"] = { "i", 197376 },	-- Renewed Proto-Drake: Ears (DM!)
+				}),
+				crit(56739, {	-- Bovine Horns
+					["provider"] = { "i", 197377 },	-- Renewed Proto-Drake: Bovine Horns (DM!)
+				}),
+				crit(56740, {	-- Impaler Horns
+					["provider"] = { "i", 197379 },	-- Renewed Proto-Drake: Impaler Horns
+				}),
+				crit(56741, {	-- Curved Horns
+					["provider"] = { "i", 197380 },	-- Renewed Proto-Drake: Curved Horns (DM!)
+				}),
+				crit(56742, {	-- Gradient Horns
+					["provider"] = { "i", 197381 },	-- Renewed Proto-Drake: Gradient Horns (DM!)
+				}),
+				crit(56743, {	-- White Horns
+					["provider"] = { "i", 197382 },	-- Renewed Proto-Drake: White Horns (DM!)
+				}),
+				crit(56744, {	-- Heavy Horns
+					["provider"] = { "i", 197383 },	-- Renewed Proto-Drake: Heavy Horns (DM!)
+				}),
+			}),
+			ach(16697, {	-- Renewed Proto-Drake Head Features
+				crit(56274, {	-- Curved Spiked Brow
+					["provider"] = { "i", 197358 },	-- Renewed Proto-Drake: Curved Spiked Brow
+				}),
+				crit(56276, {	-- Spined Brow
+					["provider"] = { "i", 197360 },	-- Renewed Proto-Drake: Spined Brow (DM!)
+				}),
+				crit(56277, {	-- Spiked Crest
+					["provider"] = { "i", 197361 },	-- Renewed Proto-Drake: Spiked Crest (DM!)
+				}),
+				crit(56278, {	-- Spined Crest
+					["provider"] = { "i", 197362 },	-- Renewed Proto-Drake: Spined Crest (DM!)
+				}),
+				crit(56279, {	-- Maned Crest
+					["provider"] = { "i", 97363 },	-- Renewed Proto-Drake: Maned Crest (DM!)
+				}),
+				crit(56281, {	-- Finned Crest
+					["provider"] = { "i", 197365 },	-- Renewed Proto-Drake: Finned Crest (DM!)
+				}),
+				crit(56282, {	-- Dual Horned Crest
+					["provider"] = { "i", 197366 },	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
+				}),
+				crit(56284, {	-- Horned Jaw
+					["provider"] = { "i", 197385 },	-- Renewed Proto-Drake: Horned Jaw (DM!)
+				}),
+				crit(56285, {	-- Spiked Jaw
+					["provider"] = { "i", 197386 },	-- Renewed Proto-Drake: Spiked Jaw (DM!)
+				}),
+				crit(56286, {	-- Thin Spined Jaw
+					["provider"] = { "i", 197387 },	-- Renewed Proto-Drake: Thin Spined Jaw
+				}),
+				crit(56287, {	-- Finned Jaw
+					["provider"] = { "i", 197388 },	-- Renewed Proto-Drake: Finned Jaw (DM!)
+				}),
+				crit(56288, {	-- Snub Snout
+					["provider"] = { "i", 197398 },	-- Renewed Proto-Drake: Snub Snout (DM!)
+				}),
+				crit(56289, {	-- Razor Snout
+					["provider"] = { "i", 197399 },	-- Renewed Proto-Drake: Razor Snout (DM!)
+				}),
+				crit(56290, {	-- Shark Snout
+					["provider"] = { "i", 197400 },	-- Renewed Proto-Drake: Shark Snout
+				}),
+				crit(56291, {	-- Beaked Snout
+					["provider"] = { "i", 197401 },	-- Renewed Proto-Drake: Beaked Snout (DM!)
+				}),
+				crit(56292, {	-- Spiked Throat
+					["provider"] = { "i", 197407 },	-- Renewed Proto-Drake: Spiked Throat (DM!)
+				}),
+				crit(56293, {	-- Finned Throat
+					["provider"] = { "i", 197408 },	-- Renewed Proto-Drake: Finned Throat (DM!)
+				}),
+			}),
+			ach(16698, {	-- Renewed Proto-Drake Tail Features
+				crit(56269, {	-- Spiked Club Tail
+					["provider"] = { "i", 197402 },	-- Renewed Proto-Drake: Spiked Club Tail (DM!)
+				}),
+				crit(56270, {	-- Club Tail
+					["provider"] = { "i", 197403 },	-- Renewed Proto-Drake: Club Tail (DM!)
+				}),
+				crit(56271, {	-- Finned Tail
+					["provider"] = { "i", 197404 },	-- Renewed Proto-Drake: Finned Tail
+				}),
+				crit(56272, {	-- Maned Tail
+					["provider"] = { "i", 197405 },	-- Renewed Proto-Drake: Maned Tail (DM!)
+				}),
+				crit(56273, {	-- Spined Tail
+					["provider"] = { "i", 197406 },	-- Renewed Proto-Drake: Spined Tail (DM!)
+				}),
+			}),
+			ach(16701, {	-- Windborne Velocidrake Scales and Patterns
+				crit(56294, {	-- Black Scales
+					["provider"] = { "i", 197611 },	-- Windborne Velocidrake: Black Scales (DM!)
+				}),
+				crit(56295, {	-- Blue Scales
+					["provider"] = { "i", 197612 },	-- Windborne Velocidrake: Blue Scales (DM!)
+				}),
+				crit(56296, {	-- Bronze Scales
+					["provider"] = { "i", 197613 },	-- Windborne Velocidrake: Bronze Scales (DM!)
+				}),
+				crit(56297, {	-- Red Scales
+					["provider"] = { "i", 197614 },	-- Windborne Velocidrake: Red Scales (DM!)
+				}),
+				crit(56300, {	-- Heavy Scales
+					["provider"] = { "i", 197397 },	-- Renewed Proto-Drake: Heavy Scales (DM!)
+				}),
+				crit(56301, {	-- Windswept Pattern
+					["provider"] = { "i", 197634 },	-- Windborne Velocidrake: Windswept Pattern (DM!)
+				}),
+				crit(56302, {	-- Reaver Pattern
+					["provider"] = { "i", 197635 },	-- Windborne Velocidrake: Reaver Pattern (DM!)
+				}),
+				crit(56303, {	-- Shrieker Pattern
+					["provider"] = { "i", 197636 },	-- Windborne Velocidrake: Shrieker Pattern
+				}),
+			}),
+			ach(16702, {	-- Windborne Velocidrake Armor
+				crit(56305, {	-- Silver and Blue Armor
+					["provider"] = { "i", 197578 },	-- Windborne Velocidrake: Silver and Blue Armor (DM!)
+				}),
+				crit(56306, {	-- Steel and Orange Armor
+					["provider"] = { "i", 197579 },	-- Windborne Velocidrake: Steel and Orange Armor (DM!)
+				}),
+				crit(56307, {	-- Gold and Red Armor
+					["provider"] = { "i", 197580 },	-- Windborne Velocidrake: Gold and Red Armor (DM!)
+				}),
+				crit(56308, {	-- Silver and Purple Armor
+					["provider"] = { "i", 197581 },	-- Windborne Velocidrake: Silver and Purple Armor (DM!)
+				}),
+				crit(56310, {	-- Armor
+					["provider"] = { "i", 197588 },	-- Windborne Velocidrake: Armor
+				}),
+			}),
+			ach(16704, {	-- Windborne Velocidrake Horns and Fur
+				crit(56311, {	-- Wavy Horns
+					["provider"] = { "i", 197601 },	-- Windborne Velocidrake: Wavy Horns (DM!)
+				}),
+				crit(56312, {	-- Cluster Horns
+					["provider"] = { "i", 197602 },	-- Windborne Velocidrake: Cluster Horns (DM!)
+				}),
+				crit(56313, {	-- Curved Horns
+					["provider"] = { "i", 197603 },	-- Windborne Velocidrake: Curved Horns (DM!)
+				}),
+				crit(56314, {	-- Ox Horns
+					["provider"] = { "i", 197604 },	-- Windborne Velocidrake: Ox Horns
+				}),
+				crit(56315, {	-- Curled Horns
+					["provider"] = { "i", 197605 },	-- Windborne Velocidrake: Curled Horns (DM!)
+				}),
+				crit(56316, {	-- Swept Horns
+					["provider"] = { "i", 197606 },	-- Windborne Velocidrake: Swept Horns
+				}),
+				crit(56317, {	-- Split Horns
+					["provider"] = { "i", 197607 },	-- Windborne Velocidrake: Split Horns (DM!)
+				}),
+				crit(56319, {	-- Gray Horns
+					["provider"] = { "i", 197608 },	-- Windborne Velocidrake: Gray Horns (DM!)
+				}),
+				crit(56320, {	-- White Horns
+					["provider"] = { "i", 197609 },	-- Windborne Velocidrake: White Horns
+				}),
+				crit(56321, {	-- Yellow Horns
+					["provider"] = { "i", 197610 },	-- Windborne Velocidrake: Yellow Horns (DM!)
+				}),
+				crit(56322, {	-- Black Fur
+					["provider"] = { "i", 197597 },	-- Windborne Velocidrake: Black Fur (DM!)
+				}),
+				crit(56323, {	-- Gray Fur
+					["provider"] = { "i", 197598 },	-- Windborne Velocidrake: Gray Hair (DM!)
+				}),
+				crit(56324, {	-- Red Fur
+					["provider"] = { "i", 197599 },	-- Windborne Velocidrake: Red Fur (DM!)
+				}),
+			}),
+			ach(16705, {	-- Windborne Velocidrake Head Features
+				crit(56326, {	-- Large Head Fin
+					["provider"] = { "i", 197589 },	-- Windborne Velocidrake: Large Head Fin (DM!)
+				}),
+				crit(56327, {	-- Small Head Fin
+					["provider"] = { "i", 197590 },	-- Windborne Velocidrake: Small Head Fin
+				}),
+				crit(56328, {	-- Hairy Head
+					["provider"] = { "i", 197591 },	-- Windborne Velocidrake: Hairy Head
+				}),
+				crit(56329, {	-- Spined Head
+					["provider"] = { "i", 197592 },	-- Windborne Velocidrake: Spined Head (DM!)
+				}),
+				crit(56330, {	-- Feathery Head
+					["provider"] = { "i", 197593 },	-- Windborne Velocidrake: Feathery Head
+				}),
+				crit(56332, {	-- Finned Ears
+					["provider"] = { "i", 197595 },	-- Windborne Velocidrake: Finned Ears (DM!)
+				}),
+				crit(56333, {	-- Horned Jaw
+					["provider"] = { "i", 197596 },	-- Windborne Velocidrake: Horned Jaw (DM!)
+				}),
+				crit(56334, {	-- Long Snout
+					["provider"] = { "i", 197618 },	-- Windborne Velocidrake: Long Snout (DM!)
+				}),
+				crit(56335, {	-- Hooked Snout
+					["provider"] = { "i", 197619 },	-- Windborne Velocidrake: Hooked Snout
+				}),
+				crit(56336, {	-- Beaked Snout
+					["provider"] = { "i", 197620 },	-- Windborne Velocidrake: Beaked Snout (DM!)
+				}),
+				crit(56338, {	-- Finned Neck
+					["provider"] = { "i", 197627 },	-- Windborne Velocidrake: Finned Neck (DM!)
+				}),
+				crit(56339, {	-- Plated Neck
+					["provider"] = { "i", 197628 },	-- Windborne Velocidrake: Plated Neck
+				}),
+				crit(56341, {	-- Feathered Neck
+					["provider"] = { "i", 197630 },	-- Windborne Velocidrake: Feathered Neck
+				}),
+			}),
+			ach(16706, {	-- Windborne Velocidrake Back and Tail
+				crit(56342, {	-- Finned Back
+					["provider"] = { "i", 197584 },	-- Windborne Velocidrake: Finned Back (DM!)
+				}),
+				crit(56343, {	-- Maned Back
+					["provider"] = { "i", 197585 },	-- Windborne Velocidrake: Maned Back
+				}),
+				crit(56344, {	-- Spiked Back
+					["provider"] = { "i", 197586 },	-- Windborne Velocidrake: Spiked Back
+				}),
+				crit(56345, {	-- Feathered Back
+					["provider"] = { "i", 197587 },	-- Windborne Velocidrake: Feathered Back
+				}),
+				crit(56347, {	-- Finned Tail
+					["provider"] = { "i", 197622 },	-- Windborne Velocidrake: Finned Tail (DM!)
+				}),
+				crit(56348, {	-- Spiked Tail
+					["provider"] = { "i", 197623 },	-- Windborne Velocidrake: Spiked Tail (DM!)
+				}),
+				crit(56349, {	-- Club Tail
+					["provider"] = { "i", 197624 },	-- Windborne Velocidrake: Club Tail (DM!)
+				}),
+				crit(56350, {	-- Feathery Tail
+					["provider"] = { "i", 197625 },	-- Windborne Velocidrake: Feathery Tail (DM!)
+				}),
+			}),
+			ach(16707, {	-- Highland Drake Scales and Patterns
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+			}),
+			ach(16708, {	-- Highland Drake Armor
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+			}),
+			ach(16710, {	-- Highland Drake Horns and Hair
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+			}),
+			ach(16712, {	-- Highland Drake Head Features
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+			}),
+			ach(16711, {	-- Highland Drake Back and Tail
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+			}),
+			ach(16723, {	-- Cliffside Wylderdrake Scales and Patterns
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+			}),
+			ach(16724, {	-- Cliffside Wylderdrake Armor
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+			}),
+			ach(16725, {	-- Cliffside Wylderdrake Horns and Manes
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+			}),
+			ach(16727, {	-- Cliffside Wylderdrake Head Features
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+			}),
+			ach(16726, {	-- Cliffside Wylderdrake Back and Tail
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+				-- 	crit(, {	--
+				-- 		["provider"] = { "i",  },	--
+				-- 	}),
+			}),
+		})),
 		--[[
 		-- These might be NYI? Two Versions exists
 		i(194839),	-- Cliffside Wylderdrake Manuscript: Conical Head
