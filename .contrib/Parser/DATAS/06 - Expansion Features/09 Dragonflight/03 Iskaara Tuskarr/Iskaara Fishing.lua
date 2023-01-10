@@ -112,6 +112,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4
 					["isDaily"] = true,
 				}),
+				q(71194, {	-- Frogs of Fire
+					["provider"] = { "n", 198767 },	-- Explorative Fisher
+					["coord"] = { 34.5, 65.2, THE_WAKING_SHORES },
+					["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4
+					["isDaily"] = true,
+				}),
+				q(72075, {	-- Hot Stock
+					["provider"] = { "n", 198767 },	-- Explorative Fisher
+					["coord"] = { 34.5, 65.2, THE_WAKING_SHORES },
+					["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4
+					["isDaily"] = true,
+					["g"] = {
+						i(198855),	-- Throw Net
+					},
+				}),
 					-- Ohn'Ahran Plains --
 				q(72072, {	-- Dragonsprings Drop
 					["provider"] = { "n", 198766 },	-- Thrifty Fisher
