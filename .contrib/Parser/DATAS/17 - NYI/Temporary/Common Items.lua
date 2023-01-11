@@ -8,7 +8,6 @@ local f = root("CommonQualityItems", {
 			n(HEAD, {
 				i(60222),	-- Authentic Jr. Engineer Goggles
 				i(3892),	-- Embroidered Hat
-				i(117483),	-- Field Hat
 				i(38276),	-- Haliscan Brimmed Hat
 				i(3732),	-- Hooded Cowl
 				i(38089),	-- Ruby Shades
@@ -19,7 +18,6 @@ local f = root("CommonQualityItems", {
 			}),
 			n(SHOULDER, {
 				i(14169),	-- Aboriginal Shoulder Pads
-				i(106956),	-- Booster Jets
 				i(14170),	-- Buccaneer's Mantle
 				i(14368),	-- Mystic's Shoulder Pads
 				i(14157),	-- Pagan Mantle
@@ -63,7 +61,6 @@ local f = root("CommonQualityItems", {
 				i(837),		-- Heavy Weave Armor
 				i(2615),	-- Chromatic Robe
 				i(73224),	-- Initiate's Robes
-				i(106836),	-- Kinetic Vest
 				i(795),		-- Knitted Tunic
 				i(20990),	-- Light Cloth Armor
 				i(2110),	-- Light Magesmith Robe
@@ -81,7 +78,6 @@ local f = root("CommonQualityItems", {
 				i(23479),	-- Recruit's Robe
 				i(52729),	-- Recruit's Robe
 				i(23321),	-- Recruit's Robe
-				i(117484),	-- Red Overalls
 				i(2614),	-- Robe of Apprenticeship
 				i(57558),	-- Robes of Endless Raiding
 				i(57201),	-- Robes of the Sun
@@ -592,7 +588,6 @@ local f = root("CommonQualityItems", {
 				i(55019),	-- Repair Belt
 				i(74598),	-- Ropes of Grieving
 				i(1839),	-- Rough Leather Belt
-				i(118532),	-- Runner's Belt
 				i(24129),	-- Salvaged Leather Belt
 				i(42084),	-- Snowhide Belt
 				i(4951),	-- Squealer's Belt
@@ -1137,7 +1132,6 @@ local f = root("CommonQualityItems", {
 			i(2240),	-- Rugged Cape
 			i(5618),	-- Scout's Cloak
 			i(4933),	-- Seasoned Fighter's Cloak
-			i(105916),	-- Self-Wrapping Parachute
 			i(11850),	-- Short Duskbat Cape
 			i(9745),	-- Simple Cape
 			i(6549),	-- Soldier's Cloak
@@ -1159,13 +1153,10 @@ local f = root("CommonQualityItems", {
 			i(2584),	-- Woolen Cape
 			i(53398),	-- Zen'Taji's Cloak
 		}),
-		--filter(SHIRTS, {
-		--}),
 		filter(TABARDS, {
 			i(64310),	-- No Tabard
 		}),
 		filter(COSMETIC, {
-			i(114985),	-- Bow Tie
 			i(168004),	-- Gift of N'Zoth	-- TODO Battle for Azeroth
 		}),
 		filter(MISC, {
@@ -1214,7 +1205,6 @@ local f = root("CommonQualityItems", {
 			i(13899),	-- Red Traditional Hanbok
 			i(34085),	-- Red Winter Clothes
 			i(13898),	-- Royal Dangui
-			i(110427),	-- Safari Hat
 			i(10053),	-- Simple Black Dress
 			i(6786),	-- Simple Dress
 			i(38160),	-- Soul-Trader's Bindings
@@ -1569,8 +1559,6 @@ local f = root("CommonQualityItems", {
 			i(46106),	-- Argent Lance
 			i(5956),	-- Blacksmith Hammer
 			i(77256),	-- Darkmoon "Sword"
-			i(118108),	-- Darkmoon Ring
-			i(118102),	-- Darkmoon Ring
 			i(45861),	-- Diamond-Tipped Cane
 			i(85663),	-- Herbalist's Spade
 			i(46070),	-- Horde Lance
@@ -1651,9 +1639,6 @@ local f = root("CommonQualityItems", {
 			i(3277),	-- Executor Staff
 			i(25553),	-- Exodar Staff
 			i(3335),	-- Farmer's Broom
-			i(114980),	-- Farmer's Broom
-			i(114979),	-- Farmer's Hoe
-			i(114978),	-- Farmer's Shovel
 			i(2067),	-- Frostbit Staff
 			i(2257),	-- Frostmane Staff
 			i(60829),	-- Geomaster Staff
@@ -1801,6 +1786,38 @@ end
 -- Never Implemented Common Items --
 -- Do not move this elsewhere, please leave it here for now. -Darkal
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+	tier(WOD_TIER, {
+		-- NYI Warlods of Draenor Common Items
+		n(ARMOR, {
+			filter(CLOTH, {
+				n(HEAD, {
+					i(117483),	-- Field Hat
+				}),
+				n(SHOULDER, {
+					i(106956),	-- Booster Jets
+				}),
+				n(CHEST, {
+					i(106836),	-- Kinetic Vest
+					i(117484),	-- Red Overalls
+				}),
+			}),
+			filter(CLOAKS, {
+				i(105916),	-- Self-Wrapping Parachute
+			}),
+			filter(COSMETIC, {
+				i(114985),	-- Bow Tie
+			}),
+			filter(MISC, {
+				i(110427),	-- Safari Hat
+			}),
+		}),
+		n(WEAPONS, {
+			filter(MISC, {
+				i(118108),	-- Darkmoon Ring
+				i(118102),	-- Darkmoon Ring
+			}),
+		}),
+	}),
 	tier(LEGION_TIER, {
 		-- NYI Legion Common Items
 		n(ARMOR, {

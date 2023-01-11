@@ -43,6 +43,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
+			n(198441, {	-- Gardener Cereus <Garden Supplies>
+				["coord"] = { 57.8, 24.0, VALDRAKKEN },
+				["g"] = {
+					i(114980, {	-- Farmer's Broom
+						["cost"] = 67,	-- 67c
+					}),
+					i(114979, {	-- Farmer's Hoe
+						["cost"] = 67,	-- 67c
+					}),
+					i(114978, {	-- Farmer's Shovel
+						["cost"] = 67,	-- 67c
+					}),
+				},
+			}),
 			n(187783, {	-- Pakak
 				["coord"] = { 43.8, 75.0, VALDRAKKEN },
 				["g"] = {
