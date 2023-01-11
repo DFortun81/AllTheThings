@@ -737,7 +737,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199472),	-- Overflowing Dragon Expedition Supply Pack
 			i(199473),	-- Overflowing Iskaaran Supply Pack
 			i(199475),	-- Overflowing Valdrakken Accord Supply Pack
-			i(200218),	-- Charred Fishing Pole
 			i(200452),	-- Dragonscale Expedition Insignia
 			i(200453),	-- Iskaara Tuskarr Insignia
 			i(200454),	-- Maruuk Centaur Insignia
@@ -756,7 +755,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(202092),	-- Iskaara Tuskarr Insignia
 			i(202093),	-- Valdrakken Accord Insignia
 			i(202094),	-- Maruuk Centaur Insignia
-			i(202171),	-- Dragon Purse
 			-- Fishing
 			i(199641),	-- Reinforced Irontree Harpoon Handle
 			i(199696),	-- Iskaaran Ice Axe

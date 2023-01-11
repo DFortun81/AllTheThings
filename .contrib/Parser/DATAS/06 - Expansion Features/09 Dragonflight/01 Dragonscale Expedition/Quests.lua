@@ -411,6 +411,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(197614),	-- Windborne Velocidrake: Red Scales (DM!)
 				},
 			}),
+				-- RENOWN 23 --
+			q(72308, {	-- Expedition Crafting Knowledge
+				["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 22
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["requireSkill"] = MINING,
+				["g"] = {
+					i(201716),	-- Notebook of Crafting Knowledge
+				},
+			}),
 				-- RENOWN 24 --
 			q(69097, {	-- A Vault Unsealed
 				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
@@ -445,15 +455,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(71152, {	-- Back to the Main Hall
 				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
-				["sourceQuests"] = { 
+				["sourceQuests"] = {
 					66173,	-- Hall of Samples
 					66174,	-- Hall of the Aspects
 				},
-				["providers"] = { 
+				["providers"] = {
 					{ "n", 191853 },	-- Toddy Whiskers
 					{ "n", 193374 },	-- Toddy Whiskers
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 58.1, 53.0, THALDRASZUS },
 					{ 57.2, 52.6, THALDRASZUS },
 				},

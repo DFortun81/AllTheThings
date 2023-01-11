@@ -246,8 +246,79 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 				},
 			}),
+			n(RARES, sharedData({
+				["description"] = "Chance to spawn after using 5 |cffffffffOminous Conches|r at specific |cffffffffLarge Lunker Sighting|r Locations.",
+				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
+			},{
+				-- For all we know, the available Lunkers could also be related to the user's tuskarr fishing unlock progress as well...
+				n(197411, {	-- Astray Splasher <Lunker>
+					["coords"] = {
+						{ 57.2, 65.6, THALDRASZUS },
+						{ 81.0, 77.8, OHNAHRAN_PLAINS },
+					},
+					["questID"] = 74057,
+					-- ["g"] = {
+
+					-- },
+				}),
+				n(193735, {	-- Moth'go Deeploom <Lunker>
+					["coord"] = { 65.6, 73.8, THE_WAKING_SHORES },
+					["questID"] = 74068,
+					-- ["g"] = {
+
+					-- },
+				}),
+				n(197371, {	-- Ravenous Tundra Bear <Lunker>
+					["coord"] = { 58.8, 32.6, THE_AZURE_SPAN },
+					-- ["questID"] = ,
+					-- ["g"] = {
+
+					-- },
+				}),
+				n(193710, {	-- Seereel, the Spring <Lunker>
+					["coord"] = { 65.6, 73.8, THE_WAKING_SHORES },
+					["questID"] = 74074,
+					["g"] = {
+						i(197001),	-- Cliffside Wylderdrake: Finned Cheek
+						i(197098),	-- Highland Drake: Finned Back (DM!)
+						i(200164),	-- Iceloop
+						i(200086),	-- Khaz'gorite Infused Resin
+						i(200245),	-- Leviathan Lure
+						i(200563),	-- Primal Ritual Shell
+						i(200187),	-- Rod of Glacial Force
+						i(200552),	-- Torrent Caller's Shell
+					},
+				}),
+				n(193706, {	-- Snufflegust <Lunker>
+					["coord"] = { 58.6, 32.4, THE_AZURE_SPAN },
+					["questID"] = 74080,
+					["g"] = {
+						i(200187),	-- Rod of Glacial Force
+					},
+				}),
+				n(193708, {	-- Skald the Impaler <Lunker>
+					["coord"] = { 33.8, 64.4, THE_WAKING_SHORES },
+					["questID"] = 74078,
+					["g"] = {
+						i(200218),	-- Charred Fishing Pole
+					},
+				}),
+				n(193634, {	-- Swog'ranka <Lunker>
+					["coord"] = { 65.6, 73.8, THE_WAKING_SHORES },
+					["questID"] = 74084,
+					["g"] = {
+						i(197001),	-- Cliffside Wylderdrake: Finned Cheek
+						i(200086),	-- Khaz'gorite-infused Resin
+						i(200552),	-- Torrent Caller's Shell
+						i(200448),	-- Abyssal Ward
+						i(200151),	-- Seamist Blade
+						i(197589),	-- Windborne Velocidrake: Large Head Fin
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+			})),
 			n(REWARDS, {
-				i(200082, {	-- Battered Imbu-made Net 
+				i(200082, {	-- Battered Imbu-made Net
 					["description"] = "Obtained from Rare fishing pools.",
 					["providers"] = {
 						{ "o", 377938 },	-- Prismatic Leaper School

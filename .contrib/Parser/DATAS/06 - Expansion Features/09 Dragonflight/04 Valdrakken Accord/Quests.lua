@@ -650,6 +650,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199664),	-- Ruby Jeweled Shoulderpads
 				},
 			}),
+				-- RENOWN 29 --
 			q(70914, {	-- The Breadth of Dragon Weaponry
 				["minReputation"] = { 2510, 29 },	-- Valdrakken Accord Renown 29
 				["provider"] = { "n", 195769 },	-- Weaponsmith Koref

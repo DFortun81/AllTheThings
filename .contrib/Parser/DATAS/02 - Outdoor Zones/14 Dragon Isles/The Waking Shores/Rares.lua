@@ -24,7 +24,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 		--	n(193135, {	-- Azra's Prized Peony
-		--	Time-Based Rare	
+		--	Time-Based Rare
 			n(193177, {	-- Beakers
 				["questID"] = 73902,
 				["coords"] = {
@@ -63,11 +63,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193217, {	-- Drakewing
 				["description"] = "Spawns at the top right of the river & follows it all the way down to the Dragonscale Basecamp. Once there, he cycles back to his spawnpoint, again following the river. Coordinates roughly show his path.",
 				["coords"] = {
-					{ 73.6, 46.4, THE_WAKING_SHORES },	
-					{ 69.2, 59.6, THE_WAKING_SHORES },	
-					{ 54.0, 34.6, THE_WAKING_SHORES },	
-					{ 55.2, 59.2, THE_WAKING_SHORES },	
-					{ 47.2, 78.0, THE_WAKING_SHORES },	
+					{ 73.6, 46.4, THE_WAKING_SHORES },
+					{ 69.2, 59.6, THE_WAKING_SHORES },
+					{ 54.0, 34.6, THE_WAKING_SHORES },
+					{ 55.2, 59.2, THE_WAKING_SHORES },
+					{ 47.2, 78.0, THE_WAKING_SHORES },
 				},
 				["questID"] = 73874,
 				["g"] = {
@@ -220,22 +220,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 		--	n(192737, {	-- Qalashi War Mammoth
 		--	Time-Based Rare
-			n(193710, {	-- Seereel, the Spring <Lunker>
-				["coord"] = { 66.0, 74.8, THE_WAKING_SHORES },
-				["description"] = "Chance to spawn after using 5 Ominous Conches at any Lurker Sighting.",
-				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
-				["questID"] = 74074,
-				["g"] = {
-					i(197001),	-- Cliffside Wylderdrake: Finned Cheek
-					i(197098),	-- Highland Drake: Finned Back (DM!)
-					i(200164),	-- Iceloop
-					i(200086),	-- Khaz'gorite Infused Resin
-					i(200245),	-- Leviathan Lure
-					i(200563),	-- Primal Ritual Shell
-					i(200187),	-- Rod of Glacial Force
-					i(200552),	-- Torrent Caller's Shell
-				},
-			}),
 			n(193271, {	-- Shadeslash Trakken
 				["description"] = "Cave Entrance: 48.6, 74.3. Have to touch Focus, Globe and Telescope to spawn.",
 				["coord"] = { 47.3, 73.9, THE_WAKING_SHORES },
@@ -268,21 +252,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 74031,
 				["g"] = {
 					i(200209),	-- Firebreather's Cowl
-				},
-			}),
-			n(193634, {	-- Swog'ranka <Lunker>
-				["coord"] = { 66.0, 74.8, THE_WAKING_SHORES },
-				["description"] = "Chance to spawn after using 5 Ominous Conches at any Lurker Sighting.",
-				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
-				["questID"] = 74084,
-				["g"] = {
-					i(197001),	-- Cliffside Wylderdrake: Finned Cheek
-					i(200086),	-- Khaz'gorite-infused Resin
-					i(200552),	-- Torrent Caller's Shell
-					i(200448),	-- Abyssal Ward
-					i(200151),	-- Seamist Blade
-					i(197589),	-- Windborne Velocidrake: Large Head Fin
-					-- is part of the DF>Global Rare Loottable
 				},
 			}),
 			n(193171, {	-- Terillod the Devout

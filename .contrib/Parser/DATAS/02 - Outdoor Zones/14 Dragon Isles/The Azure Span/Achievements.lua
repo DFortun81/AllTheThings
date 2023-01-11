@@ -86,28 +86,25 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				crit(27, {
 					["_npcs"] = { 193178 },	-- Blightfur
 				}),
-				crit(28, {
-					["_npcs"] = { 193255 },	-- Archmage Cleary
-				}),
-				crit(29, {
+				crit(28, {	-- Spellwrought Snowman
 					["_npcs"] = { 193238 },	-- Spellwrought Snowman
 				}),
-				crit(30, {
+				crit(29, {	-- Snarglebone
 					["_npcs"] = { 197344 },	-- Snarglebone
 				}),
-				crit(31, {
+				crit(30, {	-- Blisterhide <The Infested>
 					["_npcs"] = { 197353 },	-- Blisterhide <The Infested>
 				}),
-				crit(32, {
+				crit(31, {	-- Gnarls
 					["_npcs"] = { 197354 },	-- Gnarls
 				}),
-				crit(33, {
+				crit(32, {	-- High Shaman Rotknuckle
 					["_npcs"] = { 197356 },	-- High Shaman Rotknuckle
 				}),
-				crit(34, {
+				crit(33, {	-- Ravenous Tundra Bear <Lunker>
 					["_npcs"] = { 197371 },	-- Ravenous Tundra Bear <Lunker>
 				}),
-				crit(35, {
+				crit(34, {	-- Astray Splasher <Lunker>
 					["_npcs"] = { 197411 },	-- Astray Splasher <Lunker>
 				}),
 			}),

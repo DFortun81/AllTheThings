@@ -20,13 +20,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				-- },
 			}),
-			n(197411, {	-- Astray Splasher <Lunker>
-				["coord"] = { 81.2, 77.8, THE_AZURE_SPAN },
-				["questID"] = 74057,
-				-- ["g"] = {
-
-				-- },
-			}),
 			n(194210, {	-- Azure Pathfinder
 				["coord"] = { 60.7, 31.7, THE_AZURE_SPAN },
 				["questID"] = 73867,
@@ -184,15 +177,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200266),	-- Gnollish Chewtoy Launcher
 				},
 			}),
-			n(193735, {	-- Moth'go Deeploom <Lunker>
-				["description"] = "Chance to spawn after using 5 Ominous Conches at any Lurker Sighting.",
-				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
-				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
-				["questID"] = 74068,
-				-- ["g"] = {
-
-				-- },
-			}),
 			n(193201, {	-- Mucka the Raker
 				["coord"] = { 57.2, 53.6, THE_AZURE_SPAN },
 				["questID"] = 73885,
@@ -208,13 +192,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200160),	-- Notfar's Favorite Food (TOY!)
 					i(197023),	-- Cliffside Wylderdrake: Maned Neck
 				},
-			}),
-			n(197371, {	-- Ravenous Tundra Bear <Lunker>
-				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
-				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
 			}),
 			n(193693, {	-- Rusthide
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
@@ -241,25 +218,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200279),	-- Competitive Throwing Gauntlets
 				},
 			}),
-			n(193708, {	-- Skald the Impaler <Lunker>
-				["coord"] = { 33.8, 64.4, THE_AZURE_SPAN },
-				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
-			}),
 			n(197344, {	-- Snarglebone
 				["coord"] = { 11.1, 32.2, THE_AZURE_SPAN },
 				["questID"] = 74032,
 				["g"] = {
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
-				},
-			}),
-			n(193706, {	-- Snufflegust <Lunker>
-				["coord"] = { 58.9, 32.7, THE_AZURE_SPAN },
-				["questID"] = 74080,
-				["g"] = {
-					i(200187),	-- Rod of Glacial Force
 				},
 			}),
 			n(193238, {	-- Spellwrought Snowman
@@ -288,17 +251,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				-- },
 			}),
-			n(193634, {	-- Swog'ranka <Lunker>
-				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
-				-- ["questID"] = ,
-				-- ["g"] = {
-
-				-- },
-			}),
 			n(193196, {	-- Trilvarus Loreweaver
 				["description"] = "Collect a little blue crystal called Singing Fragment & bring it to the NPC to summon him.",
 				-- add npc crs
-				["coords"] = { 
+				["coords"] = {
 					{ 70.2, 25.2, THE_AZURE_SPAN },
 					{ 70.2, 26.2, THE_AZURE_SPAN },	-- Crystal Spot
 				},

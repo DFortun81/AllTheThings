@@ -486,6 +486,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				n(186859, {	-- Worldcarver A'tir
 					["coord"] = { 30.0, 55.6, THE_WAKING_SHORES },
+					["cost"] = {{"i",191211,3}},	-- 3x Wurmling Bones
 					["questID"] = 74090,
 					["isDaily"] = true,
 					["g"] = {
@@ -879,6 +880,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["description"] = "Drops from mobs around the Obsidian Citadel.",
 				}),
 				i(200857),	-- Talisman of Sargha (TOY!)
+				i(191211, {	-- Wurmling Bones
+					["cr"] = 187366,	-- Worldcarver Wurmling
+					["coords"] = {
+						{ 28.6, 53.4, THE_WAKING_SHORES },
+						{ 31.2, 54.8, THE_WAKING_SHORES },
+						{ 31.2, 57.8, THE_WAKING_SHORES },
+					},
+				}),
 				i(191255, {	-- Greater Obsidian Key
 					["description"] = "This Item will be deleted immediately if leaving the area!",
 					["cost"] = {
