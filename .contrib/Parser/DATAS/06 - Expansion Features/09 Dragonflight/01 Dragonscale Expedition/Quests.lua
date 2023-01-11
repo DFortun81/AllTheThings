@@ -431,6 +431,45 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 191838 },	-- Toddy Whiskers
 				["coord"] = { 54.2, 55.4, THALDRASZUS },
 			}),
+			q(66173, {	-- Hall of Samples
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["sourceQuests"] = { 66636 },	-- The Other Side
+				["provider"] = { "n", 192820 },	-- Toddy Whiskers
+				["coord"] = { 55.1, 56.2, THALDRASZUS },
+			}),
+			q(66174, {	-- Hall of the Aspects
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["sourceQuests"] = { 66636 },	-- The Other Side
+				["provider"] = { "n", 192820 },	-- Toddy Whiskers
+				["coord"] = { 55.1, 56.2, THALDRASZUS },
+			}),
+			q(71152, {	-- Back to the Main Hall
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["sourceQuests"] = { 
+					66173,	-- Hall of Samples
+					66174,	-- Hall of the Aspects
+				},
+				["providers"] = { 
+					{ "n", 191853 },	-- Toddy Whiskers
+					{ "n", 193374 },	-- Toddy Whiskers
+				},
+				["coords"] = { 
+					{ 58.1, 53.0, THALDRASZUS },
+					{ 57.2, 52.6, THALDRASZUS },
+				},
+			}),
+			q(66546, {	-- Retrieve the Discs
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["sourceQuests"] = { 71152 },	-- Back to the Main Hall
+				["provider"] = { "n", 192820 },	-- Toddy Whiskers
+				["coord"] = { 55.1, 56.2, THALDRASZUS },
+			}),
+			q(66547, {	-- It Belongs in a Museum... Eventually
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["sourceQuests"] = { 66546 },	-- Retrieve the Discs
+				["provider"] = { "n", 192967 },	-- Toddy Whiskers
+				["coord"] = { 54.4, 55.5, THALDRASZUS },
+			}),
 
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
@@ -515,6 +554,8 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(72047),	-- Triggered with 'Broader Mysteries of the Dragon Isles Drakes' (70810)
 		q(72402),	-- Triggered on reaching Renown 24 before accepting any quests
 		q(72048),	-- Triggered with 'A Vault Unsealed' (69097)
+		q(72752),	-- Triggered on completion of 'It Belongs in a Museum... Eventually' (also at the same time as Friend of the Dragon Isles popping, unsure which is the trigger)
+		q(72822),	-- Triggered on completion of 'It Belongs in a Museum... Eventually' (also at the same time as Friend of the Dragon Isles popping, unsure which is the trigger)
 
 		-- Ensembles
 		q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor
