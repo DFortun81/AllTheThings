@@ -1710,6 +1710,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71672, { ["name"] = "First Craft: Shimmering Clasp", }),
 			q(71611, { ["name"] = "First Craft: Kalu'ak Figurine", }),
 			q(71666, { ["name"] = "First Craft: Alexstraszite Loupes", }),
+			q(71663, { ["name"] = "First Craft: Fine-Print Trifocals", }),
 		})),
 		filter(BATTLE_PETS, {
 			i(193885),	-- Jeweled Amber Whelpling (PET!)
@@ -1961,6 +1962,9 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71756, { ["name"] = "First Craft: Masterwork Smock", }),
 			q(71773, { ["name"] = "First Craft: Tuskarr Beanbag", }),
 			q(71710, { ["name"] = "First Craft: Life-Bound Trousers", }),
+			q(71772, { ["name"] = "First Craft: Gnoll Tent", }),
+			q(71742, { ["name"] = "First Craft: Frosted Armor Kit", }),
+			q(71766, { ["name"] = "First Craft: Infurious Scales", }),
 		})),
 		filter(MISC, {
 			i(193468),	-- Fang Adornments+
