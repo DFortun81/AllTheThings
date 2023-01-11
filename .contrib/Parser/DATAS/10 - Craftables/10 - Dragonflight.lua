@@ -1980,6 +1980,7 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			q(71722, { ["name"] = "First Craft: Crimson Combatant's Adamant Chainmail", }),
 			q(71698, { ["name"] = "First Craft: Crimson Combatant's Resilient Trousers", }),
 			q(71694, { ["name"] = "First Craft: Crimson Combatant's Resilient Boots", }),
+			q(71758, { ["name"] = "First Craft: Fang Adornments", }),
 		})),
 		filter(MISC, {
 			i(193468),	-- Fang Adornments+
