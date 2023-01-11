@@ -26,10 +26,10 @@ namespace ATT
                 fields.Remove("mountID");
                 fields.Remove("spellID");
 
-                // Write the Spell ID as the primary field.
-                if (data.TryGetValue("spellID", out object spellIDRef) || data.TryGetValue("mountID", out spellIDRef))
+                // Write the Spell ID as the primary field, with priority on 'mountID' specifically
+                if (data.TryGetValue("mountID", out object spellIDRef) || data.TryGetValue("spellID", out spellIDRef))
                 {
-                    ATT.Export.ExportCompressedLua(builder, spellIDRef);
+                    ExportCompressedLua(builder, spellIDRef);
                 }
                 else throw new Exception("SPELL DOES NOT KNOW ID?");
             }

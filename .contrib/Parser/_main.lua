@@ -2369,7 +2369,7 @@ end
 
 -- Used by the Harvester (Parser)
 function Harvest(things)
-	local itemDB = root("ItemDB", {});
+	local itemDB = root("ItemDBConditional", {});
 	local thing;
 	for i,j in pairs(things) do
 		thing = itemDB[i];
@@ -2385,8 +2385,8 @@ function Harvest(things)
 		end
 		if j.bonuses then
 			if not thing.bonuses then thing.bonuses = {} end
-			for l,bonusID in pairs(j.bonuses) do
-				thing.bonuses[l] = bonusID;
+			for bonusID,sourceID in pairs(j.bonuses) do
+				thing.bonuses[bonusID] = sourceID;
 			end
 		end
 	end

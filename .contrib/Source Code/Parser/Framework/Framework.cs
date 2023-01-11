@@ -2096,7 +2096,7 @@ namespace ATT
                 }
             }
 
-            Trace.WriteLine("Unsorted Built");
+            Trace.WriteLine("Processing Complete");
         }
 
         /// <summary>

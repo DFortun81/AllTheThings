@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using NLua;
 
@@ -79,6 +80,8 @@ namespace ATT
                 luaFiles.Sort();
 
                 Lua lua = new Lua();
+                // link the Lua 'print' function to instead perform a Trace print
+                lua.RegisterFunction("print", typeof(Program).GetMethod(nameof(LuaPrintAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
                 lua.DoString(ProcessContent(File.ReadAllText(mainFileName)));
 
                 // Try to Copy in the Alliance Only / Horde Only lists
@@ -464,6 +467,11 @@ namespace ATT
             return false;
         }
 
+        private static void LuaPrintAsTrace(params object[] args)
+        {
+            Trace.WriteLine(string.Join(" ", args));
+        }
+
         private static void ParseJSONFile(string fileName)
         {
             // Load the text and then convert it to a common JSON data format.
@@ -508,7 +516,7 @@ namespace ATT
                     Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();
                 }
-                catch(NLua.Exceptions.LuaScriptException e)
+                catch (NLua.Exceptions.LuaScriptException e)
                 {
                     Trace.WriteLine(fileName);
                     Trace.WriteLine(e.Message);

@@ -319,6 +319,33 @@ namespace ATT
             return false;
         }
 
+        /// <summary>
+        /// Try to convert the object to a specific Type
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static bool TryConvert<T>(this object obj, out T value)
+        {
+            if (obj is T val)
+            {
+                value = val;
+                return true;
+            }
+
+            try
+            {
+                value = (T)Convert.ChangeType(obj, typeof(T));
+                return true;
+            }
+            catch
+            {
+                value = default;
+                return false;
+            }
+        }
+
         // https://stackoverflow.com/questions/1749966/c-sharp-how-to-determine-whether-a-type-is-a-number
         private static readonly HashSet<Type> NumericTypes = new HashSet<Type>
         {

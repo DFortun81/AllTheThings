@@ -638,49 +638,50 @@ namespace ATT
                     case "modIDs":
                     case "bonusIDs":
                         {
-                            // Convert the data to a list of generic objects.
-                            if (value is Dictionary<long, object> newDict)
-                            {
-                                // Attempt to get the old list data.
-                                Dictionary<long, long> oldDict;
-                                if (item.TryGetValue(field, out object oldData))
-                                {
-                                    // Convert the old data to a dictionary of ints.
-                                    oldDict = oldData as Dictionary<long, long>;
-                                }
-                                else
-                                {
-                                    // Create a new data dictionary of ints.
-                                    item[field] = oldDict = new Dictionary<long, long>();
-                                }
+                            Objects.MergeSpecificItemDataDictionary(item, field, value);
+                            //// Convert the data to a list of generic objects.
+                            //if (value is Dictionary<long, object> newDict)
+                            //{
+                            //    // Attempt to get the old list data.
+                            //    Dictionary<long, long> oldDict;
+                            //    if (item.TryGetValue(field, out object oldData))
+                            //    {
+                            //        // Convert the old data to a dictionary of ints.
+                            //        oldDict = oldData as Dictionary<long, long>;
+                            //    }
+                            //    else
+                            //    {
+                            //        // Create a new data dictionary of ints.
+                            //        item[field] = oldDict = new Dictionary<long, long>();
+                            //    }
 
-                                // Merge the new list of data into the old data and ensure there are no duplicate values.
-                                foreach (var pair in newDict) oldDict[pair.Key] = Convert.ToInt64(pair.Value);
-                            }
-                            // LUA parser decides that things in LUA-ordered indexes (1,2,3,4) etc. are actually lists
-                            else if (value is List<object> newList)
-                            {
-                                // Attempt to get the old list data.
-                                Dictionary<long, long> oldDict;
-                                if (item.TryGetValue(field, out object oldData))
-                                {
-                                    // Convert the old data to a dictionary of ints.
-                                    oldDict = oldData as Dictionary<long, long>;
-                                }
-                                else
-                                {
-                                    // Create a new data dictionary of ints.
-                                    item[field] = oldDict = new Dictionary<long, long>();
-                                }
+                            //    // Merge the new list of data into the old data and ensure there are no duplicate values.
+                            //    foreach (var pair in newDict) oldDict[pair.Key] = Convert.ToInt64(pair.Value);
+                            //}
+                            //// LUA parser decides that things in LUA-ordered indexes (1,2,3,4) etc. are actually lists
+                            //else if (value is List<object> newList)
+                            //{
+                            //    // Attempt to get the old list data.
+                            //    Dictionary<long, long> oldDict;
+                            //    if (item.TryGetValue(field, out object oldData))
+                            //    {
+                            //        // Convert the old data to a dictionary of ints.
+                            //        oldDict = oldData as Dictionary<long, long>;
+                            //    }
+                            //    else
+                            //    {
+                            //        // Create a new data dictionary of ints.
+                            //        item[field] = oldDict = new Dictionary<long, long>();
+                            //    }
 
-                                // Merge the new list of data into the old data and ensure there are no duplicate values.
-                                int modID = 1;
-                                foreach (var sourceID in newList)
-                                {
-                                    oldDict[modID] = Convert.ToInt64(sourceID);
-                                    modID++;
-                                }
-                            }
+                            //    // Merge the new list of data into the old data and ensure there are no duplicate values.
+                            //    int modID = 1;
+                            //    foreach (var sourceID in newList)
+                            //    {
+                            //        oldDict[modID] = Convert.ToInt64(sourceID);
+                            //        modID++;
+                            //    }
+                            //}
                             break;
                         }
 
@@ -886,60 +887,15 @@ namespace ATT
 
                     // IMPORTANT: Parse Source ID!
                     case "modIDs":
-                        {
-                            // Make sure that there isn't already a Source ID assigned.
-                            if (data.ContainsKey("s"))
-                                break;
-                            if (data.ContainsKey("ignoreSource"))
-                            {
-                                if (DebugMode) Trace.WriteLine($"Skipped applying SourceID for Item {itemID}");
-                                break;
-                            }
-
-                            // Determine which variant this data is using.
-                            long modID = 0;
-                            if (!data.ContainsKey("ignoreBonus") && data.TryGetValue("modID", out object variantObj))
-                            {
-                                modID = Convert.ToInt64(variantObj);
-                            }
-
-                            // Attempt to get the variants from the item DB
-                            var variants = value as Dictionary<long, long>;
-                            if (variants == null)
-                            {
-                                if (DebugMode) Trace.WriteLine($"No SourceID variants for Item {itemID}");
-                                break;
-                            }
-
-                            // Attempt to get the Source ID for this variant of the item.
-                            if (variants.TryGetValue(modID, out long sourceID))
-                            {
-                                data["s"] = sourceID;
-                                break;
-                            }
-                            if (DebugMode) Trace.WriteLine($"Failed to match SourceID for Item {itemID}:{modID}");
+                        // Make sure that there isn't already a Source ID assigned.
+                        if (data.ContainsKey("s"))
                             break;
-                        }
+                        DetermineSourceFromVariants(itemID, data, value as Dictionary<long, object>, "modID");
+                        break;
                     case "bonusIDs":
-                        {
-                            // NOTE: Bonus ID Source IDs trump all other Source ID assignments.
-                            if (data.ContainsKey("ignoreBonus") || data.ContainsKey("ignoreSource")) return;
-
-                            // Determine which variant this data is using.
-                            if (data.TryGetValue("bonusID", out object variantObj))
-                            {
-                                // Attempt to get the variants from the item
-                                var variants = value as Dictionary<long, long>;
-                                if (variants == null) return;
-
-                                // Attempt to get the Source ID for this variant of the item.
-                                if (variants.TryGetValue(Convert.ToInt64(variantObj), out long sourceID))
-                                {
-                                    data["s"] = sourceID;
-                                }
-                            }
-                            break;
-                        }
+                        // BonusID Source can overwrite existing Source
+                        DetermineSourceFromVariants(itemID, data, value as Dictionary<long, object>, "bonusID");
+                        break;
 
                     // Ignore all of the other fields.
                     default:
@@ -1011,6 +967,49 @@ namespace ATT
 
                 // Merge the specific item with the data dictionary.
                 MergeInto((long)specificItemID, item, data);
+            }
+
+            private static void DetermineSourceFromVariants(long itemID, Dictionary<string, object> data, Dictionary<long, object> variants, string variantType)
+            {
+                if (data.ContainsKey("ignoreSource"))
+                {
+                    LogDebug($"Skipped applying SourceID for Item {itemID} via {variantType}");
+                    return;
+                }
+
+                // Attempt to get the variants from the item DB
+                if (variants == null)
+                {
+                    LogDebug($"No SourceID variants for Item {itemID} via {variantType}");
+                    return;
+                }
+
+                // Determine which variant this data is using.
+                long id = 0;
+                if (data.ContainsKey("ignoreBonus"))
+                {
+                    // ignore having a variant for sourceID lookup
+                }
+                else if (!data.TryGetValue(variantType, out object variantObj))
+                {
+                    // no matching variant field in data
+                }
+                else if (!variantObj.TryConvert(out id))
+                {
+                    // variant field not valid data type
+                    Log($"WARNING: Data Type Conversion Failed (expected: number [long]): {variantObj}");
+                    Log($"Data: {MiniJSON.Json.Serialize(data)}");
+                }
+
+                // Attempt to get the Source ID for this variant of the item.
+                if (variants.TryGetValue(id, out object sourceObj) && sourceObj.TryConvert(out long sourceID))
+                {
+                    data["s"] = sourceID;
+                    return;
+                }
+
+                if (!data.ContainsKey("s"))
+                    LogDebug($"Failed to match SourceID for Item {itemID}:{sourceObj} via {variantType}");
             }
             #endregion
 
