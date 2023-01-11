@@ -947,7 +947,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- Fields of Ferocity --
 			q(70444, {	-- The Fields of Ferocity
 				-- TODO: add magic alt-unlock quest
-				["sourceQuestsNumRequired"] = 1,
+				["sourceQuestNumRequired"] = 1,
 				["sourceQuests"] = { 65806 },	-- Maruukai
 				["provider"] = { "o", 380902 },	-- Fields of Ferocity
 				["coord"] = { 62.3, 42.3, OHNAHRAN_PLAINS },
@@ -1097,6 +1097,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(69851, {	-- Ripsaw the Stalker
 					["provider"] = { "n", 193153 },	-- Ripsaw the Stalker
 					["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
+				}),
+				q(69878, {	-- Ronsak the Decimator
+					["provider"] = { "n", 193227 },	-- Ronsak the Decimator
+					["coord"] = { 43.3, 55.2, OHNAHRAN_PLAINS },
 				}),
 				q(70783, {	-- Skaara
 					["provider"] = { "n", 192949 },	-- Skaara

@@ -392,7 +392,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					-- Chapter 4 --
 				q(70437, {	-- To Tyrhold
 					-- TODO: add magic alt-unlock quest
-					["sourceQuestsNumRequired"] = 1,
+					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = { 66221 },	-- Moving On
 					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 58.4, 35.4, VALDRAKKEN },

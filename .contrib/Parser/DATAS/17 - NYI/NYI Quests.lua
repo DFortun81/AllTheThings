@@ -7060,7 +7060,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69863),	--
 			q(69874),	--
 			q(69877),	--
-			q(69878),	-- Ronsak the Decimator
 			q(69879),	--
 			q(69881),	--
 			q(69885),	--
