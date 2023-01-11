@@ -340,7 +340,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = {
 						66124,	-- Exeunt, Triumphant
 						66079,	-- Wrathion Awaits
-					},	
+					},
 					["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
 					["coord"] = { 42.4, 66.8, THE_WAKING_SHORES },
 				}),
@@ -1118,7 +1118,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["isBreadcrumb"] = true,
 				["g"] = {
 					i(198854),	-- Archeologist Artifact Notes
-				},	
+				},
 			}),
 			q(71141, {	-- Gills with Gall
 				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
@@ -1453,8 +1453,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				q(66727, {	-- Emberflow Flight
 					["sourceQuests"] = { 68795 },	-- Dragonriding
-					["provider"] = { "n", 190326 },	-- Bronze Timekeeper
-					["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
+					["provider"] = { "n", 190519 },	-- Bronze Timekeeper
+					["coord"] = { 41.8, 67.2, THE_WAKING_SHORES },
 					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
@@ -1465,8 +1465,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				q(66728, {	-- Emberflow Flight - Advanced
 					["sourceQuests"] = { 68795 },	-- Dragonriding
-					["provider"] = { "n", 190326 },	-- Bronze Timekeeper
-					["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
+					["provider"] = { "n", 190519 },	-- Bronze Timekeeper
+					["coord"] = { 41.8, 67.2, THE_WAKING_SHORES },
 					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
