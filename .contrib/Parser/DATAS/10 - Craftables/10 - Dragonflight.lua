@@ -2634,6 +2634,7 @@ root("HiddenQuestTriggers", {
 			q(74125),	-- Skinning Infernum
 			q(74126),	-- Skinning Crystalus (Primal Storm)
 			q(74127),	-- Skinning Karantun
+			q(74130),	-- Skinning Frigidpelt Den Mother
 			q(74131),	-- Skinning Mucka the Raker
 			q(74134),	-- Skinning Grumbletrunk
 			q(74140),	-- Skinning Norbett (Grand Hunt)
