@@ -400,6 +400,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(200738),	-- Onyx Gem Cluster Map
 				},
 			}),
+				-- RENOWN 22 --
 			q(70810, {	-- Broader Mysteries of the Dragon Isles Drakes
 				["minReputation"] = { 2507, 22 },	-- Dragonscale Expedition Renown 22
 				["provider"] = { "n", 188265 },	-- Rae'anna
@@ -409,6 +410,26 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(197010),	-- Cliffside Wylderdrake: Red Scales (DM!)
 					i(197614),	-- Windborne Velocidrake: Red Scales (DM!)
 				},
+			}),
+				-- RENOWN 24 --
+			q(69097, {	-- A Vault Unsealed
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["description"] = "Spawns Anywhere on Dragon Isles.",
+				["provider"] = { "n", 196643 },	-- Doc Nanners
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				["isBreadcrumb"] = true,	-- TODO: double check this
+			}),
+			q(67722, {	-- Break on Through
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["sourceQuests"] = { 69097 },	-- A Vault Unsealed
+			}),
+			q(66636, {	-- The Other Side
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["sourceQuests"] = { 67722 },	-- Break on Through
+				["provider"] = { "n", 191838 },	-- Toddy Whiskers
+				["coord"] = { 54.2, 55.4, THALDRASZUS },
 			}),
 
 				-- Weeklies --
@@ -492,6 +513,8 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(72045),	-- Triggered with 'Demolitions Access' (70815)
 		q(72046),	-- Triggered with 'Rumors of the Jeweled Whelplings' (70833)
 		q(72047),	-- Triggered with 'Broader Mysteries of the Dragon Isles Drakes' (70810)
+		q(72402),	-- Triggered on reaching Renown 24 before accepting any quests
+		q(72048),	-- Triggered with 'A Vault Unsealed' (69097)
 
 		-- Ensembles
 		q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor
