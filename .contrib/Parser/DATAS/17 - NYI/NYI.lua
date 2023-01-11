@@ -543,9 +543,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199115),	-- Herbalism Field Notes
 			i(199122),	-- Mining Field Notes
 			i(199128),	-- Skinning Field Notes
-			i(200506),	-- Roused Seedling
-			i(200507),	-- Decayed Roused Seedling
-			i(200508),	-- Propagating Roused Seedling
 			i(200509),	-- Agitated Roused Seedling
 			i(200638),	-- Bubblefilled Flounder
 			i(198656),	-- Painter's Pretty Jewel
@@ -915,8 +912,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201251),	-- Pillaged Contender's Strongbox
 			i(201252),	-- 10.0 Bronze PvP Chest (DNT)
 			i(201253),	-- Competitor's Edge
-			--
-			i(200944),	-- Djaradin's Trophy Mask
 			--
 			i(199553),	-- Memory of Unity
 			i(200854),	-- Cooked Caviar

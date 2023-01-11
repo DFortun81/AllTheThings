@@ -1223,6 +1223,8 @@ root("Craftables", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELINE_DF_REL
 			i(202014),	-- Infused Pollen
 			i(197755),	-- Lava Beetle
 			i(200506),	-- Roused Seedling
+			i(200507),	-- Decayed Roused Seedling
+			i(200508),	-- Propagating Roused Seedling
 			i(191464),	-- Saxifrage+
 			i(191465),	-- Saxifrage++
 			i(191466),	-- Saxifrage+++
