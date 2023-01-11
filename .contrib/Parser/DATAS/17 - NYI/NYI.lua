@@ -751,7 +751,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201757),	-- Plundered Supplies
 			i(201921),	-- Dragonscale Expedition Insignia
 			i(201922),	-- Iskaara Tuskarr Insignia
-			i(201923),	-- Maruuk Centaur Insignia
 			i(201924),	-- Valdrakken Accord Insignia
 			i(202091),	-- Dragonscale Expedition Insignia
 			i(202092),	-- Iskaara Tuskarr Insignia
