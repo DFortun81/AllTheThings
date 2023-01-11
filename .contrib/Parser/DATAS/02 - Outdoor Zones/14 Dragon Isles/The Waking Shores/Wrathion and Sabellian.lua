@@ -838,7 +838,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				i(200944, {	-- Djaradin's Trophy Mask
 					["description"] = "Drops from mobs around the Obsidian Citadel.",
-					["isCollectible"] = false,
 				}),
 				i(198071, {	-- Flamecarved Bone
 					["cr"] = 196336,	-- Qalashi Flameslinger

@@ -7536,7 +7536,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72684),	--
 			q(72687),	-- Renown Supplies
 			q(72697),	--
-			q(72703),	--
 			q(72704),	--
 			q(72719),	--
 			q(72725),	--
