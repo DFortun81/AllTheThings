@@ -116,7 +116,26 @@ root("WorldDrops", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3"
 		}),
 	}),
 	n(WEAPONS, {
+		i(121382),	-- Arthropod Leg Club
 		i(132921),	-- Athrog's Dethamma
+		i(121376),	-- Azsharan Queensguard Blade
+		i(121377),	-- Beastmaster's Discarded Axe
+		i(121338),	-- Bent-Blade Axe
+		i(121381),	-- Chipped Colossus Blade
+		i(121383),	-- Curious Nar'thalas Student's Staff
+		i(121335),	-- Fixing Axe
+		i(121339),	-- Kvaldir Skinning Knife
+		i(121340),	-- Lightning-Struck Hammer
+		i(121380),	-- Magnificent Cleaver
+		i(121379),	-- Mechanized Musket
+		i(121334),	-- Mining Sword
+		i(121336),	-- Mossy Longbow
+		i(121332),	-- Over-Sharpened Shank
+		i(121337),	-- Permanently Jammed Blunderbuss
+		i(121333),	-- Poorly Weighted Blackjack
+		i(121341),	-- Robble's Staff of Discourse
+		i(121378),	-- Saga of Elandrul
+		i(121375),	-- Voo's Juicer
 	}),
 	filter(RECIPES, {
 		prof(ALCHEMY, {

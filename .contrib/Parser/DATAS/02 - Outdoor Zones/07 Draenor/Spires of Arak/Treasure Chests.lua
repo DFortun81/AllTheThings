@@ -346,6 +346,9 @@ _.Zones =
 				o(234432, {	-- Ogron Plunder
 					["questID"] = 36340,
 					["coord"] = { 58.7, 60.3, SPIRES_OF_ARAK },
+					["g"] = {
+						i(116922),	-- Burglar's Vest
+					},
 				}),
 				o(234147, {	-- Outcast's Belongings
 					["questID"] = 36243,
