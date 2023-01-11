@@ -1890,8 +1890,10 @@ root("Holidays", applyholiday(BREWFEST, {
 						}),
 						i(138730, {	-- Synthebrew Goggles XL
 							["timeline"] = { "added 7.0.3.22248" },
-							["collectible"] = false,	-- TODO: Look into this
 							["cost"] = BREWFEST_TOKEN_COST(200),
+							-- #if BEFORE 10.0.5
+							["collectible"] = false,	-- TODO: Look into this
+							-- #endif
 						}),
 						i(168915, {	-- Tabard of Brew
 							["timeline"] = { "added 8.2.0.30918" },
@@ -2044,8 +2046,10 @@ root("Holidays", applyholiday(BREWFEST, {
 						}),
 						i(138730, {	-- Synthebrew Goggles XL
 							["timeline"] = { "added 7.0.3.22248" },
-							["collectible"] = false,
 							["cost"] = BREWFEST_TOKEN_COST(200),
+							-- #if BEFORE 10.0.5
+							["collectible"] = false,	-- TODO: Look into this
+							-- #endif
 						}),
 						i(168915, {	-- Tabard of Brew
 							["timeline"] = { "added 8.2.0.30918" },

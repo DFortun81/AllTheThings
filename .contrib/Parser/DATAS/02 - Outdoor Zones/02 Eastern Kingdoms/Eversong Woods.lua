@@ -1225,6 +1225,9 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["cr"] = 15638,	-- Arcane Patroller
 						}),
 					},
+					-- #if AFTER LEGION
+					i(131237),	-- Padded Chainmail
+					-- #endif
 				}),
 				q(9119, {	-- Malfunction at the West Sanctum
 					["qg"] = 15405,	-- Ley-Keeper Caidanis

@@ -2041,7 +2041,7 @@ root("Zones", m(KALIMDOR, {
 						i(53392, {	-- Tiragarde Vest
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
-						i(131405, {	-- 7.0.3.22248
+						i(131405, {	-- Hauberk of the Razor Guard
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 						i(53375, {	-- Kul Tiras Leggings

@@ -724,91 +724,51 @@ local f = root("CommonQualityItems", {
 			}),
 			n(CHEST, {
 				i(2417),	-- Augmented Chain Vest
-				i(131826),	-- Bloodtalon Chain Vest
 				i(2423),	-- Brigandine Vest
-				i(131355),	-- Dark Ranger's Hauberk
-				i(131876),	-- Deputy's Chainmail
-				i(131363),	-- Earthmother's Garb
-				i(131916),	-- Empathetic Mail
 				i(2109),	-- Frostmane Chain Vest
 				i(49570),	-- Gilnean Trapper's Tunic
 				i(49502),	-- Goblin Trapper's Shirt
 				i(62265),	-- Grunt's Chain Vest
-				i(131405),	-- Hauberk of the Razor Guard
 				i(847),		-- Chainmail Armor
-				i(131904),	-- Initiate's Chestpiece
 				i(4922),	-- Jagged Chain Vest
 				i(2398),	-- Light Chain Armor
 				i(2392),	-- Light Mail Armor
 				i(30781),	-- Mag'hari Chain Vest
-				i(131838),	-- Miner's Overcoat
 				i(2898),	-- Mountaineer Chestpiece
-				i(131237),	-- Padded Chainmail
-				i(131890),	-- Plundered Rockjaw Chestguard
 				i(2153),	-- Polished Scale Vest
 				i(52544),	-- Primal Robe
 				i(52538),	-- Primal Robe
 				i(52534),	-- Primal Robe
 				i(52550),	-- Primal Shirt
-				i(131205),	-- Ram Rescue Vest
-				i(131252),	-- Ranger's Chainmail
 				i(58232),	-- Rugged Trapper's Vest
 				i(2386),	-- Rusted Chain Vest
 				i(49259),	-- Salvaged Chain Armor
 				i(285),		-- Scalemail Vest
-				i(131869),	-- Scarred Battleboar Breastplate
-				i(131923),	-- Scavenger Vest
 				i(58240),	-- Scout's Vest
-				i(131238),	-- Sentry's Chain Shirt
 				i(3151),	-- Siege Brigade Vest
-				i(131909),	-- Sun Pearl Chainmail
 				i(2379),	-- Tarnished Chain Vest
-				i(131211),	-- Thornroot Hauberk
 				i(58247),	-- Trapper's Vest
-				i(131856),	-- Tunnel Worm Chestguard
 				i(20919),	-- Unadorned Chain Vest
-				i(131855),	-- Valley Defense Hauberk
 				i(58235),	-- Warder's Vest
-				i(131820),	-- Weathered Chain Shirt
-				i(131705),	-- Woodland Chainmail
 			}),
 			n(WRIST, {
-				i(131393),	-- Agamand Family Bracer
-				i(131516),	-- Angular Momentum Wristguards
-				i(131864),	-- Armstead Bindings
 				i(2421),	-- Augmented Chain Bracers
 				i(3280),	-- Battle Chain Bracers
-				i(131848),	-- Beast Tracker's Bracers
-				i(131896),	-- Big Trogg Bracers
-				i(131910),	-- Bracers of the Earth Spirit
 				i(3303),	-- Brackwater Bracers
 				i(2427),	-- Brigandine Bracers
 				i(9760),	-- Cadet Bracers
 				i(15400),	-- Clamshell Bracers
-				i(131850),	-- Coven Hollow Wristguards
 				i(57533),	-- Dwarven Iron Bracer
-				i(131228),	-- Feral Wristguards
-				i(131256),	-- Fur Lined Chain Bracers
-				i(131860),	-- Gassy Armbands
-				i(131236),	-- Gleaming Chain Bindings
-				i(131891),	-- Grik'nir's Warming Bands
 				i(62262),	-- Grunt's Chain Bracers
-				i(131254),	-- Huntsman's Chain Cuffs
-				i(131203),	-- Chain Link Winter Bracers
 				i(1846),	-- Chainmail Bracers
 				i(15474),	-- Charger's Bindings
 				i(6507),	-- Infantry Bracers
-				i(131901),	-- Initiate's Cuffs
-				i(131874),	-- Light Gleaming Bracers
 				i(2402),	-- Light Chain Bracers
 				i(2396),	-- Light Mail Bracers
-				i(131240),	-- Longshoreman's Bracers
 				i(2150),	-- Polished Scale Bracers
-				i(131494),	-- Prairie Wolf Bracers
 				i(2390),	-- Rusted Chain Bracers
 				i(49262),	-- Salvaged Chain Bracers
 				i(1852),	-- Scalemail Bracers
-				i(131868),	-- Sun Bleached Armbands
 				i(2384),	-- Tarnished Chain Bracers
 				i(20916),	-- Unadorned Chain Bracers
 				i(3213),	-- Veteran Bracers
@@ -816,58 +776,34 @@ local f = root("CommonQualityItems", {
 				i(3214),	-- Warrior's Bracers
 			}),
 			n(HANDS, {
-				i(131851),	-- Aid-Lender's Grips
 				i(2422),	-- Augmented Chain Gloves
-				i(131196),	-- Auntie's Oven Mitts
 				i(3281),	-- Battle Chain Gloves
-				i(131263),	-- Battle Worn Grips
 				i(2547),	-- Boar Handler Gloves
 				i(3304),	-- Brackwater Gauntlets
 				i(2428),	-- Brigandine Gloves
 				i(9762),	-- Cadet Gauntlets
-				i(131865),	-- Darius' Handguards
-				i(131857),	-- Debt Collector's Grips
-				i(131908),	-- Gauntlets of Splashing Water
 				i(49571),	-- Gilnean Trapper's Gloves
-				i(131815),	-- Glen Culler's Grips
 				i(62263),	-- Grunt's Chain Gloves
-				i(131913),	-- Handgrips of Verity
 				i(850),		-- Chainmail Gloves
 				i(15476),	-- Charger's Handwraps
 				i(6510),	-- Infantry Gauntlets
-				i(131903),	-- Initiate's Grips
-				i(131895),	-- Ironstock's Iron Grips
 				i(2403),	-- Light Chain Gloves
 				i(2397),	-- Light Mail Gloves
-				i(131837),	-- Monkey Handler Fists
-				i(131215),	-- Mulit-Scaled Gloves
 				i(15402),	-- Noosegrip Gauntlets
 				i(4910),	-- Painted Chain Gloves
 				i(2151),	-- Polished Scale Gloves
-				i(132094),	-- Proprietor's Mitts
-				i(131867),	-- Red Cloud Handwraps
-				i(131854),	-- Rockbitten Gloves
 				i(2391),	-- Rusted Chain Gloves
 				i(49263),	-- Salvaged Chain Gloves
 				i(718),		-- Scalemail Gloves
-				i(131626),	-- Shrouded Gauntlets
-				i(131715),	-- Smith's Chain Gloves
+				i(131715),	-- Smith's Chain Gloves	-- TODO Legion
 				i(2385),	-- Tarnished Chain Gloves
-				i(131354),	-- The Stone's Gauntlets
-				i(131366),	-- Thunderhorn Handguards
-				i(131514),	-- Torque-Applying Grips
 				i(20917),	-- Unadorned Chain Gloves
-				i(131818),	-- Verdant Chain Gloves
-				i(131925),	-- Wanderer's Grips
 				i(15484),	-- War Torn Handgrips
 				i(2968),	-- Warrior's Gloves
-				i(131207),	-- Well-Oiled Chain Gauntlets
 				i(57392),	-- Willem's Mitts
 				i(30784),	-- Worn Mag'hari Gauntlets
-				i(131388),	-- Xavren's Gauntlets
 			}),
 			n(WAIST, {
-				i(131214),	-- Animal Scale Belt
 				i(2419),	-- Augmented Chain Belt
 				i(4669),	-- Battle Chain Girdle
 				i(1154),	-- Belt of the People's Militia
@@ -875,93 +811,53 @@ local f = root("CommonQualityItems", {
 				i(2424),	-- Brigandine Belt
 				i(9758),	-- Cadet Belt
 				i(3437),	-- Clasped Belt
-				i(131849),	-- Cord of Accomplishment
-				i(131409),	-- Fine Crocolisk Scale Belt
-				i(131448),	-- Frostmane Chain Links
-				i(131210),	-- Gritroot Cinch
 				i(62260),	-- Grunt's Chain Belt
 				i(1845),	-- Chainmail Belt
 				i(15472),	-- Charger's Belt
-				i(131899),	-- Chaser's Belt
 				i(6509),	-- Infantry Belt
-				i(131902),	-- Initiate's Braided Belt
-				i(131260),	-- Interlocked Chain Cinch
 				i(2690),	-- Latched Belt
 				i(2399),	-- Light Chain Belt
 				i(2393),	-- Light Mail Belt
-				i(131914),	-- Links of Grieving
-				i(131390),	-- Mountaineer's Waistguard
-				i(131924),	-- Outrider Belt
 				i(4913),	-- Painted Chain Belt
-				i(131819),	-- Partially Tarnished Chain
 				i(2148),	-- Polished Scale Belt
-				i(131512),	-- Quickening Cinch
-				i(131356),	-- Repairman's Cinch
-				i(131841),	-- Rotor Chain
 				i(2546),	-- Royal Frostmane Girdle
 				i(2387),	-- Rusted Chain Belt
 				i(2172),	-- Rustic Belt
-				i(131605),	-- Rusty Chain Belt
 				i(49260),	-- Salvaged Chain Belt
 				i(1853),	-- Scalemail Belt
 				i(5592),	-- Shackled Girdle
-				i(131235),	-- Sunspire Cinch
-				i(131872),	-- Sunwalker's Waistcord
 				i(2380),	-- Tarnished Chain Belt
-				i(131870),	-- Thorned Links
 				i(20914),	-- Unadorned Chain Belt
-				i(131907),	-- Unmarred Chain
 				i(4678),	-- Veteran Girdle
-				i(131392),	-- Waistguard of Brill
 				i(15480),	-- War Torn Girdle
 				i(4659),	-- Warrior's Girdle
-				i(131704),	-- Web Covered Mail Belt
 				i(4935),	-- Wide Metal Girdle
-				i(131825),	-- Wrangler's Chain Cinch
 			}),
 			n(LEGS, {
-				i(131387),	-- Abandoned Miner's Pants
 				i(2418),	-- Augmented Chain Leggings
 				i(4917),	-- Battleworn Chain Leggings
 				i(5941),	-- Brass Scale Pants
 				i(2425),	-- Brigandine Leggings
-				i(131858),	-- Clinking Chain Trousers
-				i(131250),	-- Coarse Mail Leggings
-				i(131389),	-- Duskbat Mail Leggings
 				i(49568),	-- Gilnean Trapper's Pants
 				i(49503),	-- Goblin Trapper's Pants
 				i(62264),	-- Grunt's Chain Leggings
-				i(131213),	-- Chain Kodo-Rider's Pants
 				i(848),		-- Chainmail Pants
-				i(131905),	-- Initiate's Greaves
 				i(2400),	-- Light Chain Leggings
 				i(2394),	-- Light Mail Leggings
-				i(131816),	-- Moss-Encrusted Chain Pants
-				i(131911),	-- Padded Greaves
 				i(2152),	-- Polished Scale Leggings
 				i(52539),	-- Primal Pants
 				i(52551),	-- Primal Pants
 				i(52535),	-- Primal Pants
 				i(52545),	-- Primal Pants
-				i(131351),	-- Protector's Legguards
-				i(131408),	-- Quilboar Woven Chain Pants
-				i(131871),	-- Rabbit Chaser's Greaves
 				i(147),		-- Rugged Trapper's Pants
 				i(2388),	-- Rusted Chain Leggings
-				i(131840),	-- Sailor's Legguards
 				i(49264),	-- Salvaged Chain Leggings
 				i(286),		-- Scalemail Pants
 				i(23344),	-- Scout's Pants
-				i(131915),	-- Service Greaves
-				i(131827),	-- Spitescale Pants
-				i(131239),	-- Springpaw Padded Greaves
-				i(131875),	-- Spy Dispatchers Greaves
 				i(2381),	-- Tarnished Chain Leggings
 				i(6137),	-- Thug Pants
-				i(131853),	-- Toxin-Stained Pants
 				i(20918),	-- Unadorned Chain Leggings
 				i(20899),	-- Warder's Pants
-				i(131436),	-- Wendigo Pantaloons
 			}),
 			n(FEET, {
 				i(2420),	-- Augmented Chain Boots
@@ -971,47 +867,31 @@ local f = root("CommonQualityItems", {
 				i(9759),	-- Cadet Boots
 				i(4972),	-- Cliff Runner Boots
 				i(3447),	-- Cryptwalker Boots
-				i(131391),	-- Frost-Encrusted Chain Boots
 				i(49569),	-- Gilnean Trapper's Boots
 				i(49504),	-- Goblin Trapper's Boots
 				i(62261),	-- Grunt's Chain Boots
 				i(849),		-- Chainmail Boots
 				i(15473),	-- Charger's Boots
-				i(131873),	-- Chaser's Boots
 				i(6506),	-- Infantry Boots
-				i(131906),	-- Initiate's Boots
 				i(2401),	-- Light Chain Boots
 				i(2395),	-- Light Mail Boots
-				i(131274),	-- Moongraze Linked Boots
 				i(3332),	-- Perrine's Boots
 				i(2149),	-- Polished Scale Boots
 				i(52540),	-- Primal Boots
 				i(52552),	-- Primal Boots
-				i(131912),	-- Ringing Boots
 				i(129),		-- Rugged Trapper's Boots
 				i(2389),	-- Rusted Chain Boots
-				i(131197),	-- Rusty-Chain Galoshes
 				i(49261),	-- Salvaged Chain Boots
 				i(287),		-- Scalemail Boots
 				i(23348),	-- Scout's Boots
-				i(131206),	-- Shimmerweed Brewer Treads
 				i(57539),	-- Snow Stomping Boots
-				i(131828),	-- Spitescale Stompers
-				i(131866),	-- Steadfast Greaves
 				i(2383),	-- Tarnished Chain Boots
-				i(131493),	-- Trackless Boots
 				i(6138),	-- Trapper's Boots
-				i(131394),	-- Treads of Brill
 				i(20915),	-- Unadorned Chain Boots
-				i(131859),	-- Vault Cracker Boots
 				i(2979),	-- Veteran Boots
-				i(131403),	-- Vile Greaves
-				i(131917),	-- Waders of Bravery
 				i(15481),	-- War Torn Greaves
 				i(20900),	-- Warder's Boots
 				i(2967),	-- Warrior's Boots
-				i(131839),	-- Weed-Flattening Greatboots
-				i(131458),	-- Well-Worn Raider Treads
 			}),
 		}),
 		filter(PLATE, {
@@ -1287,12 +1167,6 @@ local f = root("CommonQualityItems", {
 		filter(COSMETIC, {
 			i(114985),	-- Bow Tie
 			i(168004),	-- Gift of N'Zoth	-- TODO Battle for Azeroth
-			i(135550),	-- Transmog UI Feet Item
-			i(135549),	-- Transmog UI Hand Item
-			i(135547),	-- Transmog UI Head Item
-			i(135522),	-- Transmog UI Chest Item
-			i(135548),	-- Transmog UI Legs Item
-			i(135510),	-- Transmog UI Trim Head Item
 		}),
 		filter(MISC, {
 			i(34828),	-- Antique Silver Cufflinks
@@ -1302,12 +1176,6 @@ local f = root("CommonQualityItems", {
 			i(33047),	-- Belbi's Eyesight Enhancing Romance Goggles
 			i(54441),	-- Black Embersilk Gown
 			i(6835),	-- Black Tuxedo Pants
-			i(151594),	-- Blighthead Bitter Wounds Mask
-			i(151592),	-- Blighthead Electric Beehive Mask
-			i(151593),	-- Blighthead Grim Smile Mask
-			i(151597),	-- Blighthead Mohawk Mask
-			i(151598),	-- Blighthead Romero Mask
-			i(151596),	-- Blighthead Slack-Jaw Mask
 			i(34008),	-- Blix's Eyesight Enhancing Romance Goggles
 			i(23909),	-- Blood Elf Bandit Mask
 			i(156724),	-- Blue Crystal Monocle
@@ -1316,21 +1184,10 @@ local f = root("CommonQualityItems", {
 			i(33105),	-- Budd's Guise of Zul'aman
 			i(44692),	-- Dalaran Nurse's Gown
 			i(13896),	-- Dark Green Wedding Hanbok
-			i(151595),	-- Devlynn Styx Mask
 			i(44737),	-- Draenic Silk Robes
 			i(19028),	-- Elegant Dress
 			i(21154),	-- Festival Dress
 			i(21542),	-- Festival Suit
-			i(139305),	-- Finely-Tailored Green Holiday Belt
-			i(139303),	-- Finely-Tailored Green Holiday Boots
-			i(139296),	-- Finely-Tailored Green Holiday Pants
-			i(139294),	-- Finely-Tailored Green Holiday Shirt
-			i(139298),	-- Finely-Tailored Green Holiday Shorts
-			i(139304),	-- Finely-Tailored Red Holiday Belt
-			i(139301),	-- Finely-Tailored Red Holiday Boots
-			i(139295),	-- Finely-Tailored Red Holiday Pants
-			i(139293),	-- Finely-Tailored Red Holiday Shirt
-			i(139297),	-- Finely-Tailored Red Holiday Shorts
 			i(13895),	-- Formal Dangui
 			i(69865),	-- Gem Studded Bracelets
 			i(156727),	-- Green Crystal Monocle
@@ -1369,7 +1226,6 @@ local f = root("CommonQualityItems", {
 			i(30719),	-- Spectrecles
 			i(30721),	-- Spectrecles
 			i(46735),	-- Synthebrew Goggles
-			i(138730),	-- Synthebrew Goggles XL
 			i(69864),	-- Tarnished Crown
 			i(44647),	-- Violet Hat
 			i(13897),	-- White Traditional Hanbok
@@ -1388,7 +1244,6 @@ local f = root("CommonQualityItems", {
 			i(27976),	-- Polished Pendant of Edible Energy
 			i(74918),	-- Problem Solving Pendant
 			i(27945),	-- Shark's Tooth of Bona Fide Fluidic Mobility
-			i(141322),	-- Shiny Silver Necklace
 			i(27978),	-- Soap on a Rope
 			i(27979),	-- Stone of Stupendous Springing Strides
 			i(27944),	-- Talisman of True Treasure Tracking
@@ -1398,7 +1253,6 @@ local f = root("CommonQualityItems", {
 			i(69262),	-- Black Ice
 			i(7341),	-- Cubic Zirconia Ring
 			i(7340),	-- Flawless Diamond Solitaire
-			i(147433),	-- Glowing Diamond Ring
 			i(38091),	-- Gold Eternium Band
 			i(34826),	-- Gold Wedding Band
 			i(7339),	-- Miniscule Diamond Ring
@@ -1428,7 +1282,6 @@ local f = root("CommonQualityItems", {
 			i(44642),	-- Dalaran Axe
 			i(3293),	-- Deadman Cleaver
 			i(927),		-- Double Axe
-			i(132821),	-- Felguard Axe
 			i(2530),	-- Francisca
 			i(2260),	-- Frostmane Hand Axe
 			i(2134),	-- Hand Axe
@@ -1437,7 +1290,6 @@ local f = root("CommonQualityItems", {
 			i(768),		-- Lumberjack Axe
 			i(30751),	-- Mag'hari Light Axe
 			i(4923),	-- Primitive Hatchet
-			i(156970),	-- Razor Hill Axe
 			i(1011),	-- Sharp Axe
 			i(2066),	-- Skull Hatchet
 			i(1383),	-- Stone Tomahawk
@@ -1511,7 +1363,6 @@ local f = root("CommonQualityItems", {
 			i(23923),	-- Amani Sacrificial Dagger
 			i(2195),	-- Anvilmar Knife
 			i(20852),	-- Arcane Forged Dirk
-			i(133691),	-- Battle Tested Dirk
 			i(3225),	-- Bloodstained Knife
 			i(10547),	-- Camping Knife
 			i(3445),	-- Ceremonial Knife
@@ -1527,29 +1378,23 @@ local f = root("CommonQualityItems", {
 			i(3268),	-- Forsaken Dagger
 			i(54979),	-- Godfrey's Dagger
 			i(74590),	-- Jade Hilted Dagger
-			i(133693),	-- Jagged Wing Slasher
 			i(2207),	-- Jambiya
 			i(2209),	-- Kris
 			i(2526),	-- Main Gauche
 			i(2224),	-- Militia Dagger
-			i(133699),	-- Militia Dagger
 			i(2208),	-- Poniard
 			i(4925),	-- Primitive Hand Blade
 			i(5605),	-- Pruning Knife
 			i(53381),	-- Quilboar Sticker
-			i(133694),	-- Ranger's Notched Dirk
 			i(22963),	-- Ranger's Pocketknife
 			i(34859),	-- Razor Sharp Fillet Knife
 			i(5093),	-- Razormane Backstabber
 			i(57231),	-- Red Ceremonial Dagger
 			i(2534),	-- Rondel
-			i(133696),	-- Rusty Sin'dorei Stiletto
 			i(5040),	-- Shadow Hunter Knife
 			i(20982),	-- Sharp Dagger
 			i(50057),	-- Sharp Dirk
 			i(2225),	-- Sharp Kitchen Knife
-			i(133695),	-- Short Knife
-			i(133700),	-- Simmer's Dirk
 			i(4565),	-- Simple Dagger
 			i(4302),	-- Small Green Dagger
 			i(52930),	-- Spy Poker
@@ -1593,7 +1438,6 @@ local f = root("CommonQualityItems", {
 			i(2509),	-- Ornate Blunderbuss
 			i(8182),	-- Pellet Rifle
 			i(54298),	-- Skyrocket Gun
-			i(156940),	-- Snubnose Blunderbuss
 			i(2510),	-- Solid Blunderbuss
 			i(52950),	-- Whamo Kablamo
 		}),
@@ -1671,10 +1515,8 @@ local f = root("CommonQualityItems", {
 			i(766),		-- Flanged Mace
 			i(3269),	-- Forsaken Maul
 			i(2259),	-- Frostmane Club
-			i(157016),	-- Gnarled Gavel
 			i(55016),	-- Granny's Mallet
 			i(2028),	-- Hammer
-			i(157020),	-- Humble Cudgel
 			i(1389),	-- Kobold Mining Mallet
 			i(19292),	-- Last Month's Mutton
 			i(19293),	-- Last Year's Mutton
@@ -1688,7 +1530,6 @@ local f = root("CommonQualityItems", {
 			i(3262),	-- Putrid Wooden Hammer
 			i(1382),	-- Rock Mace
 			i(22956),	-- Rusty Mace
-			i(156938),	-- Simmer's Cudgel
 			i(2055),	-- Small Wooden Hammer
 			i(3329),	-- Spiked Wooden Plank
 			i(781),		-- Stone Gnoll Hammer
@@ -1714,7 +1555,6 @@ local f = root("CommonQualityItems", {
 			i(924),		-- Maul
 			i(5579),	-- Militia Warhammer
 			i(57216),	-- Mud Splattering Hammer
-			i(156969),	-- Quilboar Crusher
 			i(2026),	-- Rock Hammer
 			i(60820),	-- Stone Hearth Maul
 			i(60824),	-- Stone Trogg Crusher
@@ -1724,21 +1564,14 @@ local f = root("CommonQualityItems", {
 			i(2493),	-- Wooden Mallet
 		}),
 		filter(MISC, {
-			i(140209),	-- 'Imported' Blacksmith Hammer
-			i(140208),	-- 'Imported' Mining Pick
 			i(46069),	-- Alliance Lance
 			i(6219),	-- Arclight Spanner
 			i(46106),	-- Argent Lance
 			i(5956),	-- Blacksmith Hammer
-			i(181763),	-- Bonesmith's Hammer
-			i(136350),	-- Brumdysla, Hammer of Vrorsk
-			i(181760),	-- Calcified Pickaxe
 			i(77256),	-- Darkmoon "Sword"
 			i(118108),	-- Darkmoon Ring
 			i(118102),	-- Darkmoon Ring
-			i(181764),	-- Dermal Flayer
 			i(45861),	-- Diamond-Tipped Cane
-			i(181758),	-- Guisein Extractor
 			i(85663),	-- Herbalist's Spade
 			i(46070),	-- Horde Lance
 			i(2901),	-- Mining Pick
@@ -1754,7 +1587,6 @@ local f = root("CommonQualityItems", {
 			i(15810),	-- Short Spear
 			i(39987),	-- Tuskarr Fishing Spear
 			i(57244),	-- Warder's Spear
-			i(156944),	-- Worgen Training Stick
 			i(57243),	-- Worn Spear
 		}),
 		filter(SHIELDS, {
@@ -1855,7 +1687,6 @@ local f = root("CommonQualityItems", {
 			i(2535),	-- War Staff
 		}),
 		filter(ONE_HANDED_SWORDS, {
-			i(132470),	-- 7.0 Weapon - Sword_1h_LordRavencrest_B_01 - Purple
 			i(29518),	-- Amani Scimitar
 			i(20849),	-- Arcane Forged Shortsword
 			i(24448),	-- Battle Tested Blade
@@ -1917,7 +1748,7 @@ local f = root("CommonQualityItems", {
 			i(5779),	-- Forsaken Bastard Sword
 			i(40004),	-- Forsaken Greatsword
 			i(74589),	-- Jade Hilted Sword
-			i(142274),	-- Keleseth's Persuader
+			i(142274),	-- Keleseth's Persuader	-- TODO Legion
 			i(6741),	-- Orcish War Sword
 			i(8177),	-- Practice Sword
 			i(24430),	-- Seafarer's Blade
@@ -1947,10 +1778,6 @@ local f = root("CommonQualityItems", {
 			i(40020),	-- Wand of Jade
 			i(40018),	-- Wand of Onyx
 		}),
-		filter(WARGLAIVES, {
-			i(131718),	-- Lyana's Wrathful Warglaive
-			i(131719),	-- Lyana's Vengeful Warglaive
-		}),
 	}),
 });
 
@@ -1974,6 +1801,78 @@ end
 -- Never Implemented Common Items --
 -- Do not move this elsewhere, please leave it here for now. -Darkal
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+	tier(LEGION_TIER, {
+		-- NYI Legion Common Items
+		n(ARMOR, {
+			filter(MAIL, {
+				n(WRIST, {
+					i(131848),	-- Beast Tracker's Bracers
+					i(131203),	-- Chain Link Winter Bracers
+					i(131256),	-- Fur Lined Chain Bracers
+				}),
+				n(HANDS, {
+					i(131854),	-- Rockbitten Gloves
+					i(131626),	-- Shrouded Gauntlets
+					i(131925),	-- Wanderer's Grips
+				}),
+				n(LEGS, {
+					i(131213),	-- Chain Kodo-Rider's Pants
+				}),
+				n(FEET, {
+					i(131873),	-- Chaser's Boots
+					i(131391),	-- Frost-Encrusted Chain Boots
+				}),
+			}),
+			filter(FINGER_F, {
+				i(147433),	-- Glowing Diamond Ring
+			}),
+			filter(COSMETIC, {
+				i(135522),	-- Transmog UI Chest Item
+				i(135550),	-- Transmog UI Feet Item
+				i(135549),	-- Transmog UI Hand Item
+				i(135547),	-- Transmog UI Head Item
+				i(135548),	-- Transmog UI Legs Item
+				i(135510),	-- Transmog UI Trim Head Item
+			}),
+			filter(MISC, {
+				i(151594),	-- Blighthead Bitter Wounds Mask
+				i(151592),	-- Blighthead Electric Beehive Mask
+				i(151593),	-- Blighthead Grim Smile Mask
+				i(151597),	-- Blighthead Mohawk Mask
+				i(151598),	-- Blighthead Romero Mask
+				i(151596),	-- Blighthead Slack-Jaw Mask
+				i(151595),	-- Devlynn Styx Mask
+				i(139305),	-- Finely-Tailored Green Holiday Belt
+				i(139303),	-- Finely-Tailored Green Holiday Boots
+				i(139296),	-- Finely-Tailored Green Holiday Pants
+				i(139294),	-- Finely-Tailored Green Holiday Shirt
+				i(139298),	-- Finely-Tailored Green Holiday Shorts
+				i(139304),	-- Finely-Tailored Red Holiday Belt
+				i(139301),	-- Finely-Tailored Red Holiday Boots
+				i(139295),	-- Finely-Tailored Red Holiday Pants
+				i(139293),	-- Finely-Tailored Red Holiday Shirt
+				i(139297),	-- Finely-Tailored Red Holiday Shorts
+				i(146976),	-- Gladiator's Tattered Cloak
+			})
+		}),
+		n(WEAPONS, {
+			filter(ONE_HANDED_AXES, {
+				i(132821),	-- Felguard Axe
+			}),
+			filter(MISC, {
+				i(140209),	-- 'Imported' Blacksmith Hammer
+				i(140208),	-- 'Imported' Mining Pick
+				i(136350),	-- Brumdysla, Hammer of Vrorsk
+			}),
+			filter(ONE_HANDED_SWORDS, {
+				i(132470),	-- 7.0 Weapon - Sword_1h_LordRavencrest_B_01 - Purple
+			}),
+			filter(WARGLAIVES, {
+				i(131718),	-- Lyana's Wrathful Warglaive
+				i(131719),	-- Lyana's Vengeful Warglaive
+			}),
+		}),
+	}),
 	tier(BFA_TIER, {
 		-- NYI Battle for Azeroth Common Items
 		n(ARMOR, {
@@ -2105,10 +2004,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			filter(MISC, {
 				i(176888),	-- Amber Knife
 				i(174280),	-- Bastion Blacksmithing Hammer
+				i(181763),	-- Bonesmith's Hammer
+				i(181760),	-- Calcified Pickaxe
 				i(167740),	-- Cleaver
+				i(181764),	-- Dermal Flayer
 				i(177032),	-- Epidermal Separator
 				i(177038),	-- Flora Extraction Tool
 				i(178263),	-- Grove Tender's Spade
+				i(181758),	-- Guisein Extractor
 				i(168110),	-- Inscribed Mace
 				i(176851),	-- Ironwood Pickaxe
 				i(168064),	-- Magical Staff

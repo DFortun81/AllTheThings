@@ -1516,6 +1516,9 @@ app.L = {
 		[-2186] = app.asset("Expansion_LEGION"),								-- Patch 7.x.x
 		[-2187] = app.asset("Expansion_BFA"),									-- Patch 8.x.x
 		[-2188] = app.asset("Expansion_SL"),									-- Patch 9.x.x
+	-- Temporary headers for unsorted poor and common items
+		[-123456] = "Interface\\Icons\\Inv_chest_cloth_46",						-- Poor Quality Items
+		[-123457] = "Interface\\Icons\\Inv_gauntlets_16",						-- Common Quality Items
 	};
 	["HEADER_NAMES"] = {
 	-- Commonly used
@@ -2088,6 +2091,9 @@ app.L = {
 		[-2186] = "7.x.x",														-- Patch 7.x.x
 		[-2187] = "8.x.x",														-- Patch 8.x.x
 		[-2188] = "9.x.x",														-- Patch 9.x.x
+	-- Temporary headers for unsorted poor and common items
+		[-123456] = "Poor Quality Items",										-- Poor Quality Items
+		[-123457] = "Common Quality Items",										-- Common Quality Items
 	};
 	["HEADER_DESCRIPTIONS"] = {
 		[-18] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",

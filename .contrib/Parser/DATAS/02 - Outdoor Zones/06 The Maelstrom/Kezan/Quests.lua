@@ -15,7 +15,12 @@ _.Zones =
 						14121,	-- Robbing Hoods
 						14122,	-- The Great Bank Heist
 						14123,	-- Waltz Right In
-					}
+					},
+					["g"] = {
+						i(131860, {	-- Gassy Armbands
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
 				}),
 				q(14120, {	-- A Bazillion Macaroons?!
 					["coord"] = { 56.7, 76.9, 194 },
@@ -26,6 +31,11 @@ _.Zones =
 					["coord"] = { 56.4, 76.9, 194 },
 					["provider"] = { "n", 34668 },	-- Sassy Hardwrench
 					["sourceQuests"] = { 14071 },	-- Rolling with my Homies
+					["g"] = {
+						i(131857, {	-- Debt Collector's Grips
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
 				}),
 				q(24503, {	-- Fourth and Goal [Auto-Given in Mech]
 					["coord"] = { 47.7, 57.7, 194 },
@@ -124,6 +134,11 @@ _.Zones =
 					["coord"] = { 58.3, 76.4, 194 },
 					["provider"] = { "n", 34874 },	-- Megs Dreadshredder
 					["sourceQuests"] = { 28349 },	-- Megs in Marketing
+					["g"] = {
+						i(131858, {	-- Clinking Chain Trousers
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
 				}),
 				q(14138, {	-- Taking Care of Business
 					["coord"] = { 56.4, 76.9, 194 },
@@ -135,6 +150,9 @@ _.Zones =
 					["sourceQuests"] = { 14120 },	-- A Bazillion Macaroons?!
 					["g"] = {
 						i(56148),	-- Bank Robber's Bag
+						i(131859, {	-- Vault Cracker Boots
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(28606, {	-- The Keys to the Hot Rod
@@ -169,6 +187,11 @@ _.Zones =
 					["coord"] = { 60.2, 74.5, 194 },
 					["provider"] = { "n", 34872 },	-- Foreman Dampwick
 					["sourceQuests"] = { 14138 },	-- Taking Care of Business
+					["g"] = {
+						i(131856, {	-- Tunnel Worm Chestguard
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
 				}),
 				q(14123, {	-- Waltz Right In
 					["coord"] = { 58.7, 74.1, 194 },

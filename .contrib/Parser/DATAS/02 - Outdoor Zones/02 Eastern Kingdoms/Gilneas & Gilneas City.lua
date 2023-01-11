@@ -56,7 +56,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 									["ignoreSource"] = true,	-- White Item
 								}),
 								i(131866, {	-- Steadfast Greaves
-									["ignoreSource"] = true,	-- White Item
+									["timeline"] = { "added 7.0.3.22248" },
 								}),
 							},
 						}),
@@ -70,7 +70,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 									["ignoreSource"] = true,	-- White Item
 								}),
 								i(131865, {	-- Darius' Handguards
-									["ignoreSource"] = true,	-- White Item
+									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(55005, {	-- Darius' Sash
 									["ignoreSource"] = true,	-- White Item
@@ -401,13 +401,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							},
 							["groups"] = {
 								i(131864, {	-- Armstead Bindings
-									["ignoreSource"] = true,	-- White Item
+									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(54975, {	-- Armstead Bracers
-									["ignoreSource"] = true,	-- White Item
+									["timeline"] = { "added 4.0.3.13287" },
 								}),
 								i(54978, {	-- Merchant's Chestguard
-									["ignoreSource"] = true,	-- White Item
+									["timeline"] = { "added 4.0.3.13287" },
 								}),
 							},
 						}),
@@ -621,7 +621,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(131355, {	-- Dark Ranger's Hauberk
-							["ignoreSource"] = true,	-- White Item
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(55007, {	-- Dark Ranger's Vest
 							["ignoreSource"] = true,	-- White Item
@@ -756,7 +756,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["ignoreSource"] = true,	-- White Item
 						}),
 						i(131351, {	-- Protector's Legguards
-							["ignoreSource"] = true,	-- White Item
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
 					},
 				}),
@@ -901,7 +901,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["ignoreSource"] = true,	-- White Item
 						}),
 						i(131354, {	-- The Stone's Gauntlets
-							["ignoreSource"] = true,	-- White Item
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
 					},
 				}),
@@ -932,7 +932,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["ignoreSource"] = true,	-- White Item
 						}),
 						i(131356, {	-- Repairman's Cinch
-							["ignoreSource"] = true,	-- White Item
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
 					},
 				}),

@@ -117,6 +117,11 @@ _.Zones =
 					["coord"] = { 25.2, 59.8, 174 },
 					["provider"] = { "n", 36112 },	-- Scout Brax
 					["sourceQuests"] = { 14240 },	-- Get to the Gyrochoppa
+					["g"] = {
+						i(131841, {	-- Rotor Chain
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
 				}),
 				q(14001, {	-- Goblin Escape Pods
 					["coord"] = { 24.6, 77.9, 174 },
@@ -204,11 +209,21 @@ _.Zones =
 					["coord"] = { 31.2, 79.2, 174 },
 					["provider"] = { "n", 35769 },	-- Foreman Dampwick
 					["sourceQuests"] = { 14248 },	-- Help Wanted
+					["g"] = {
+						i(131838, {	-- Miner's Overcoat
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
 				}),
 				q(14019, {	-- Monkey Business
 					["coord"] = { 27.9, 74.4, 174 },
 					["provider"] = { "n", 35758 },	-- Bamm Megabomb
 					["sourceQuests"] = { 14001 },	-- Goblin Escape Pods
+					["g"] = {
+						i(131837, {	-- Monkey Handler Fists
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
 				}),
 				q(25122, {	-- Morale Boost
 					["coord"] = { 53.1, 36.5, 174 },
@@ -327,6 +342,11 @@ _.Zones =
 						14021,	-- Miner Troubles
 						14031,	-- Capturing the Unknown
 						14233,	-- The Enemy of My Enemy
+					},
+					["g"] = {
+						i(131840, {	-- Sailor's Legguards
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(25202, {	-- The Fastest Way to His Heart [Female Version]
@@ -486,6 +506,11 @@ _.Zones =
 					["coord"] = { 35.4, 75.7, 174 },
 					["provider"] = { "n", 35893 },	-- Kilag Gorefang
 					["sourceQuests"] = { 14235 },	-- The Vicious Vale
+					["g"] = {
+						i(131839, {	-- Weed-Flattening Greatboots
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
 				}),
 				q(25244, {	-- What Kind of Name is Candy, Anyway? [Female Version]
 					["coord"] = { 43.6, 25.3, 174 },

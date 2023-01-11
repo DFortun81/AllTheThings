@@ -16,6 +16,11 @@ _.Zones =
 					}),
 					q(29679, {	-- A New Friend
 						["sourceQuests"] = { 29678 },	-- Shu, the Spirit of Water
+						["g"] = {
+							i(131908, {	-- Gauntlets of Splashing Water
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						},
 					}),
 					q(29798, {	-- An Ancient Evil
 						["provider"] = { "n", 55940 },	-- Jojo Ironbrow
@@ -48,10 +53,20 @@ _.Zones =
 					q(29793, {	-- Evil from the Seas
 						["provider"] = { "n", 55942 },	-- Ji Firepaw
 						["sourceQuests"] = { 30589 },	-- Wrecking the Wreck
+						["g"] = {
+							i(131917, {	-- Waders of Bravery
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						},
 					}),
 					q(29523, {	-- Fanning the Flames
 						["provider"] = { "n", 54568 },	-- Ji Firepaw
 						["sourceQuests"] = { 29417 },	-- The Way of the Huojin
+						["g"] = {
+							i(131906, {	-- Initiate's Boots
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						},
 					}),
 					q(29676, {	-- Finding an Old Friend
 						["provider"] = { "n", 54975 },	-- Aysa Cloudsinger
@@ -88,6 +103,11 @@ _.Zones =
 					q(29768, {	-- Missing Mallet
 						["provider"] = { "n", 55477 },	-- Ji Firepaw
 						["sourceQuests"] = { 29769 },	-- Rascals
+						["g"] = {
+							i(131912, {	-- Ringing Boots
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						},
 					}),
 					q(29781, {	-- Monkey Advisory Warning
 						["provider"] = { "n", 55583 },	-- Ji Firepaw
@@ -112,6 +132,11 @@ _.Zones =
 					q(29794, {	-- None Left Behind
 						["provider"] = { "n", 55944 },	-- Delora Lionheart
 						["sourceQuests"] = { 29796 },	-- Urgent News
+						["g"] = {
+							i(131916, {	-- Empathetic Mail
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						},
 					}),
 					q(29774, {	-- Not In the Face!
 						["provider"] = { "n", 55477 },	-- Ji Firepaw
@@ -124,6 +149,11 @@ _.Zones =
 					q(29790, {	-- Passing Wisdom
 						["provider"] = { "n", 55672 },	-- Master Shang Xi
 						["sourceQuests"] = { 29788, 29789 },	-- Unwelcome Nature, Small, but Significant
+						["g"] = {
+							i(131914, {	-- Links of Grieving
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						},
 					}),
 					q(30591, {	-- Preying on the Predators
 						["provider"] = { "n", 55943 },	-- Wei Palerage
@@ -140,6 +170,11 @@ _.Zones =
 					q(29778, {	-- Rewritten Wisdoms
 						["provider"] = { "n", 55583 },	-- Ji Firepaw
 						["sourceQuests"] = { 29776 },	-- Morning Breeze Village
+						["g"] = {
+							i(131913, {	-- Handgrips of Verity
+								["timeline"] = { "added 7.0.3.22248" },
+							}),	
+						},
 					}),
 					q(30767, {	-- Risking It All
 						["provider"] = { "n", 56416 },	-- Aysa Cloudsinger
@@ -156,6 +191,11 @@ _.Zones =
 					q(29770, {	-- Still Good!
 						["provider"] = { "n", 55479 },	-- Gao Summerdraft
 						["sourceQuests"] = { 29680 },	-- The Source of Our Livelihood
+						["g"] = {
+							i(131911, {	-- Padded Greaves
+								["timeline"] = { "added 7.0.3.22248" },
+							}),	
+						},
 					}),
 					q(29795, {	-- Stocking Stalks
 						["provider"] = { "n", 60042 },	-- Korga Strongmane
@@ -164,6 +204,11 @@ _.Zones =
 					o(209673, {	-- Jade Tiger Pillar
 						q(29782, {	-- Stronger Than Bone
 							["sourceQuests"] = { 29778 },	-- Rewritten Wisdoms
+							["g"] = {
+								i(157020, {	-- Humble Cudgel
+									["timeline"] = { "added 7.0.3.22248" },
+								}),	
+							},
 						}),
 					}),
 					q(29662, {	-- Stronger Than Reeds
@@ -189,18 +234,38 @@ _.Zones =
 					q(29409, {	-- The Disciple's Challenge
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
 						["sourceQuests"] = { 29408 },	-- The Lesson of the Burning Scroll
+						["g"] = {
+							i(131903, {	-- Initiate's Grips
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						},
 					}),
 					q(29799, {	-- The Healing of Shen-zin Su
 						["provider"] = { "n", 56418 },	-- Ji Firepaw
 						["sourceQuests"] = { 30767 },	-- Risking it All
+						["g"] = {
+							i(131915, {	-- Service Greaves
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						},
 					}),
 					q(29661, {	-- The Lesson of Dry Fur
 						["provider"] = { "n", 54975 },	-- Aysa Cloudsinger
 						["sourceQuests"] = { 29521 },	-- The Singing Pools
+						["g"] = {
+							i(131907, {	-- Unmarred Chain
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						},
 					}),
 					q(29524, {	-- The Lesson of Stifled Pride
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
 						["sourceQuests"] = { 29406 },	-- The Lesson of the Sandy Fist
+						["g"] = {
+							i(131902, {	-- Initiate's Braided Belt
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						},
 					}),
 					q(29663, {	-- The Lesson of the Balanced Rock
 						["provider"] = { "n", 54975 },	-- Aysa Cloudsinger
@@ -241,6 +306,11 @@ _.Zones =
 					q(29406, {	-- The Lesson of the Sandy Fist
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
 						["sourceQuests"] = { 30027, 30033, 30034, 30035, 30036, 30037, 30038 },	-- The Lesson of the Iron Bough (all classes)
+						["g"] = {
+							i(131901, {	-- Initiate's Cuffs
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						},
 					}),
 					q(29419, {	-- The Missing Driver
 						["provider"] = { "n", 54943 },	-- Merchant Lorvo
@@ -261,6 +331,11 @@ _.Zones =
 					q(29775, {	-- The Spirit and Body of Shen-zin Su
 						["provider"] = { "n", 55477 },	-- Ji Firepaw
 						["sourceQuests"] = { 29774 },	-- Not in the Face!
+						["g"] = {
+							i(131910, {	-- Bracers of the Earth Spirit
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						},
 					}),
 					q(29420, {	-- The Spirit's Guardian
 						["provider"] = { "n", 54609 },	-- Master Shang Xi
@@ -277,14 +352,29 @@ _.Zones =
 					q(29677, {	-- The Sun Pearl
 						["provider"] = { "n", 55020 },	-- Old Man Liang
 						["sourceQuests"] = { 29676 },	-- Finding an Old Friend
+						["g"] = {
+							i(131909, {	-- Sun Pearl Chainmail
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						},
 					}),
 					q(29417, {	-- The Way of the Huojin
 						["provider"] = { "n", 54568 },	-- Ji Firepaw
 						["sourceQuests"] = { 29522 },	-- Ji of the Huojin
+						["g"] = {
+							i(131905, {	-- Initiate's Greaves
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						},
 					}),
 					q(29414, {	-- The Way of the Tushui
 						["provider"] = { "n", 54567 },	-- Aysa Cloudsinger
 						["sourceQuests"] = { 29419, 29424 },	-- The Missing Driver, Items of Utmost Importance
+						["g"] = {
+							i(131904, {	-- Initiate's Chestpiece
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						},
 					}),
 					q(29777, {	-- Tools of the Enemy
 						["provider"] = { "n", 55588 },	-- Elder Shaopai

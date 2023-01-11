@@ -17,6 +17,9 @@ root("Zones", {
 				o(243798, {	-- A Steamy Jewelry Box
 					["questID"] = 39531,
 					["coord"] = { 63.5, 59.3, 750 },
+					["g"] = {
+						i(141322),	-- Shiny Silver Necklace
+					},
 				}),
 				n(95958, {	-- Floating Treasure
 					["description"] = "Can be found floating down the river.",
