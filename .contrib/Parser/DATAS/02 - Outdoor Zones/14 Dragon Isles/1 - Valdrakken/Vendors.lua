@@ -140,7 +140,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 					-- Rare
 					i(201270, {	-- Rare Alchemist's Research
-						-- ["questID"] = TODO,
+						["questID"] = 71904,
 						["requireSkill"] = ALCHEMY,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
