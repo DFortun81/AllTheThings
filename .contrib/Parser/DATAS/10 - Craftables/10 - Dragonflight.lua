@@ -2700,11 +2700,13 @@ root("HiddenQuestTriggers", {
 			q(74180),	-- Skinning Hamett
 			q(74181),	-- Skinning Zarimek
 			q(74182),	-- Skinning Makhra the Ashtouched
+			q(74183),	-- Skinning Vaniik the Stormtouched
 			q(74186),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)
 			q(74193),	-- Skinning Goremaul the Gluttonous
 			q(74194),	-- Skinning Pleasant Alpha
 			q(74195),	-- Skinning Woolfang
 			q(74196),	-- Skinning Rokmur
+			q(74197),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
 			q(74198),	-- Skinning The Weeping Vilomah
 			q(74204),	-- Skinning Acrosoth
 			q(74206),	-- Skinning Corrupted Proto-Dragon
