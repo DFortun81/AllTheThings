@@ -2712,6 +2712,7 @@ root("HiddenQuestTriggers", {
 			q(74214),	-- Skinning Moth'go Deeploom
 			q(74216),	-- Skinning Snufflegust
 			q(74220),	-- Skinning Mamonth (War Party Event)
+			q(74223),	-- Skinning Skewersnout
 			q(74224),	-- Skinning Enkine the Voracious
 			q(74225),	-- Skinning Battlehorn Pyrhus
 			q(74228),	-- Skinning Worldcarver A'tir
