@@ -628,7 +628,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(196974),	-- Cliffside Wylderdrake: Four Horned Chin
 			i(196975),	-- Cliffside Wylderdrake: Head Fin
 			i(196978),	-- Cliffside Wylderdrake: Small Head Spikes
-			i(196979),	-- Cliffside Wylderdrake: Curled Head Horns
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw
 			i(196990),	-- Cliffside Wylderdrake: Helm
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
@@ -749,7 +748,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201757),	-- Plundered Supplies
 			i(201921),	-- Dragonscale Expedition Insignia
 			i(201922),	-- Iskaara Tuskarr Insignia
-			i(201924),	-- Valdrakken Accord Insignia
 			i(202091),	-- Dragonscale Expedition Insignia
 			i(202092),	-- Iskaara Tuskarr Insignia
 			i(202093),	-- Valdrakken Accord Insignia

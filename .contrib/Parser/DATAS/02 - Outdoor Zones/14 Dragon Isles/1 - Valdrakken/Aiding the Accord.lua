@@ -42,8 +42,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(202171),	-- Dragon Purse
 					},
 				}),
-				i(201923, {	--Maruuk Centaur Insignia
+				i(201923, {	-- Maruuk Centaur Insignia
 					["minReputation"] = { 2503, 25 },	-- Maruuk Centaur renown 25
+					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				}),
+				i(201924, {	-- Valdrakken Accord Insignia
+					["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
 			}),
