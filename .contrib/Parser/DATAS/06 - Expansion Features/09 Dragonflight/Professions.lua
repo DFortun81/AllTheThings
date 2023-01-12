@@ -294,7 +294,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 195737 },	-- Maiden of Inspiration
 				["coord"] = { 64, 41.3, THE_WAKING_SHORES },
 			}),
-			-- In Tyr's Footsteps chapter 5 
+			-- In Tyr's Footsteps chapter 5
 			q(70881, {	-- Fourth Challenge of Tyr: Resourcefulness
 				["sourceQuests"] = { 70510 },	-- Victorious
 				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
@@ -1816,7 +1816,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					{ "n", 195785 },	-- Samar
 					{ "n", 196628 },	-- Ekhi
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 57.9, 68.1, THE_WAKING_SHORES },	-- Deirdre Flemmin
 					{ 80.8, 59.4, OHNAHRAN_PLAINS },	-- Dokhusek
 					{ 29.0, 61.0, VALDRAKKEN },			-- Samar

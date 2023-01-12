@@ -1,23 +1,20 @@
 # AllTheThings
 
-## [DF-3.1.12](https://github.com/DFortun81/AllTheThings/tree/DF-3.1.12) (2023-01-08)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.1.11...DF-3.1.12) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.1.13](https://github.com/DFortun81/AllTheThings/tree/DF-3.1.13) (2023-01-12)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.1.12...DF-3.1.13) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
 ### Functional changes
 
-- Added a checkbox to grant control over the profile loaded message upon login and when switching profiles.
-- Added Primalist Tomorrow (alternate-Thaldraszus) to `/attwq` scan.
-- Slightly longer delay for inaccurate quest check after accepting new quests.
-- PvP can now be a top header in minilist.
+- Adjusted ATT window 'grip' to never hide so that players always understand that the window is still resizeable.
+- Inaccurate Quest check will now include whether a non-repeatable Quest has been completed again on the same Character.
+- Inaccurate Quest Discord info now includes more info: repeatable, DF Renown levels.
 
 ### Functional fixes
 
-- Fixed new Settings to actually open to the AllTheThings tab.
+- Fixed an issue where a user without TomTom could plot a single in-game waypoint but still see the 'no coordinates' error.
 
 ### Data additions/fixes
 
-- Usual updates to Dragonflight Achievements, Renown activities, Professions, (World) Quests.
-- Lots of Dragonflight Rare updates.
-- Shadowlands cleanups.
+- Usual updates to Dragonflight Professions, Rares, Treasures, (World/Weekly) Quests, Renown activities.
 - Other fixes.
