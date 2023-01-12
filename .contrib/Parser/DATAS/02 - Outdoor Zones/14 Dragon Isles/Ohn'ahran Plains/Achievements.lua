@@ -305,6 +305,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					15762,	-- Sundapple Copse Circuit Advanced: Gold
 				}},
 			}),
+			ach(17198, {	-- Ohn'ahran Plains Reverse: Bronze
+				["timeline"] = { ADDED_10_0_5 },
+			}),
+			ach(17199, {	-- Ohn'ahran Plains Reverse: Silver
+				["timeline"] = { ADDED_10_0_5 },
+			}),
+			ach(17200, {	-- Ohn'ahran Plains Reverse: Gold
+				["timeline"] = { ADDED_10_0_5 },
+			}),
 			ach(15394),	-- Ohn'a'Roll
 			ach(16574, {	-- Sleeping on the Job
 				crit(1, {	-- Dreamguard Felyasra

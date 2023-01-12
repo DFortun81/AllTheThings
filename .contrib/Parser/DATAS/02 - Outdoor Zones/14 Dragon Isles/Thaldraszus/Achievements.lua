@@ -244,6 +244,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					15860,	-- Tyrhold Trial Advanced: Gold
 				}},
 			}),
+			ach(17204, {	-- Thaldraszus Reverse: Bronze
+				["timeline"] = { ADDED_10_0_5 },
+			}),
+			ach(17205, {	-- Thaldraszus Reverse: Silver
+				["timeline"] = { ADDED_10_0_5 },
+			}),
+			ach(17206, {	-- Thaldraszus Reverse: Gold
+				["timeline"] = { ADDED_10_0_5 },
+			}),
 			pvp(ach(16593)),	-- Tour of Duty: Thaldraszus
 
 			-- TODO: NOT COMPLETED YET

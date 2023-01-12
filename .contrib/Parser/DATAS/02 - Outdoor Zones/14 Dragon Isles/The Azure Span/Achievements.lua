@@ -197,6 +197,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					15823,	-- The Vakthros Ascent Advanced: Gold
 				}},
 			}),
+			ach(17201, {	-- Azure Span Reverse: Bronze
+				["timeline"] = { ADDED_10_0_5 },
+			}),
+			ach(17202, {	-- Azure Span Reverse: Silver
+				["timeline"] = { ADDED_10_0_5 },
+			}),
+			ach(17203, {	-- Azure Span Reverse: Gold
+				["timeline"] = { ADDED_10_0_5 },
+			}),
 			ach(16336),	-- Azure Spanner
 			ach(16474, {	-- Do You Wanna Build a Snowman?
 				["coord"] = { 50.7, 55.4, THE_AZURE_SPAN },

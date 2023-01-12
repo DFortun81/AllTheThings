@@ -44,6 +44,12 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 		ach(9458),		-- Blind Lake Sturgeon Angler
 		ach(4917),		-- Cataclysmic Fisherman
 		ach(12990),		-- Catchin' Some Rays
+		ach(17207, {	-- Discombobberlated
+			["timeline"] = { ADDED_10_0_5 },
+			["g"] =	{
+				i(202207),	-- Reusable Oversized Bobber
+			},
+		}),
 		ach(9462,  {	-- Draenor Angler
 			i(111928),		-- Fishing Shack, Level 3 [Blueprints]
 			crit(1),		-- Sea Scorpion Angler

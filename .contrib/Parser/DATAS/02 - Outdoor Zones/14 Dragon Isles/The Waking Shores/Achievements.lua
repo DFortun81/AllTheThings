@@ -316,6 +316,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					15747,	-- Wingrest Roundabout Advanced: Gold
 				}},
 			}),
+			ach(17195, {	-- Waking Shores Reverse: Bronze
+				["timeline"] = { ADDED_10_0_5 },
+			}),
+			ach(17196, {	-- Waking Shores Reverse: Silver
+				["timeline"] = { ADDED_10_0_5 },
+			}),
+			ach(17197, {	-- Waking Shores Reverse: Gold
+				["timeline"] = { ADDED_10_0_5 },
+			}),
 		}),
 	}),
 })));
