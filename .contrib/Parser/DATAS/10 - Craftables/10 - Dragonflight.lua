@@ -2294,6 +2294,8 @@ root("HiddenQuestTriggers", {
 			q(71994),	-- First Infurious Bubble Poppy
 			q(72344),	-- First Overload Titan-Touched Herb
 			q(72348),	-- First Overload Infurious Herb
+			--
+			q(74121),	-- Herbing Enraged Sprout
 			-- Unsorted
 			q(71989),	-- Learning spellID 391508: Decayed Writhebark
 		}),
