@@ -207,6 +207,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 					["isRepeatable"] = true,
 				}),
+					-- Fishing Gear Repeatables --
+				q(72787, {	-- Contribute Supplies: Battered Imbu-made network.canDetectNetworkStatusChanges
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
+					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
+					["isRepeatable"] = true,
+				}),
 			}),
 			prof(TUSKARR_FISHING_GEAR, {
 				["crs"] = { 195935 },
@@ -243,6 +250,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						i(199845),	-- Jagged Serevite Harpoon Head
 						i(199848),	-- Draconium Net Weights
 						i(199698),	-- Irontree Harpoon Handle
+						i(199641),	-- Reinforced Irontree Harpoon Handle
 					}),
 				},
 			}),
@@ -407,12 +415,16 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72280),	-- Triggered with 'Hook, Line, and Swelter!' (70948)
 		q(72640),	-- Triggered with 'Abandoned... or Hidden Caches' (70952)
 		--
+		q(74370),	-- Triggered with 'Contribute Supplies: Battered Imbu-made Net'
+		--
 		q(67140),	-- Triggered after crafting 'Polished Basalt Bracelet'
 		q(67139),	-- Triggered after crafting 'Flying Fish Bone Charm'
 		q(67141),	-- Triggered after crafting 'Iskaaran Ice Axe'
 		q(70802),	-- Triggered after crafting 'Imbu Knot'
 		q(70798),	-- Triggered after crafting 'Seavine Harpoon Rope'
 		q(70796),	-- Triggered after crafting 'Serevite Harpoon Head'
+		q(70794),	-- Triggered after crafting 'Irontree Harpoon Handle'
+		q(70803),	-- Triggered after crafting 'Double Imbu Knot'
 		--
 		q(72828),	-- First weekly completion of 'Catch and Release: Scalebell Mackerel' (70199)
 		q(72827),	-- First weekly completion of 'Catch and Release: Thousandbite Piranha' (70200)

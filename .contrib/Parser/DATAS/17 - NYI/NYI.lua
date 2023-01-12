@@ -755,7 +755,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(202093),	-- Valdrakken Accord Insignia
 			i(202094),	-- Maruuk Centaur Insignia
 			-- Fishing
-			i(199641),	-- Reinforced Irontree Harpoon Handle
 			i(199696),	-- Iskaaran Ice Axe
 			i(199849),	-- Dense Draconium Net Weight
 			i(200077),	-- Wooden Pole
