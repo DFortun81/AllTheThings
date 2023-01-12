@@ -42,6 +42,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 74058,
 				["g"] = {
 					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
+					i(197404),	-- Renewed Proto-Drake: Finned Tail (DM!)
 				},
 			}),
 			n(197353, {	-- Blisterhide <The Infested>

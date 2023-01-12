@@ -2713,6 +2713,7 @@ root("HiddenQuestTriggers", {
 			q(74206),	-- Skinning Corrupted Proto-Dragon
 			q(74213),	-- Skinning Swog'ranka
 			q(74214),	-- Skinning Moth'go Deeploom
+			q(74215),	-- Skinning Skald the Impaler
 			q(74216),	-- Skinning Snufflegust
 			q(74220),	-- Skinning Mamonth (War Party Event)
 			q(74223),	-- Skinning Skewersnout
