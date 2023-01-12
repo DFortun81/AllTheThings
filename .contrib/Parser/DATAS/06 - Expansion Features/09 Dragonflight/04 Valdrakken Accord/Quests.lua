@@ -664,6 +664,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199821),	-- Valdrakken Serrated Shortsword
 				},
 			}),
+				-- RENOWN 30 --
+			q(70916, {	-- Beknownst and Glorious
+				["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
+				["provider"] = { "n", 193015 },	-- Unatos
+				["coord"] = { 58.2, 35.8, VALDRAKKEN },
+				["g"] = {
+					i(197921),		-- Primal Infusion
+					spell(388978),	-- Ally of Dragons
+					title(735),		-- %s, Ally of Dragons (TITLE!)
+				},
+			}),
 
 				-- Unknown renown -- I will fix this later as well as all other renown quests -Darkal
 			q(72671, {	-- Renown Supplies
@@ -705,6 +716,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(72701),	-- triggered with 'The Accord's High Standards' (70912)
 		q(72702),	-- triggered with 'To Bear Our Mantle' (70913)
 		q(72703),	-- triggered with 'The Breadth of Dragon Weaponry' (70914)
+		q(72704),	-- triggered with 'Beknownst and Glorious' (70916)
 
 		-- Ensembles
 		q(70755),	-- Ensemble: Crimson Valdrakken Clothing
