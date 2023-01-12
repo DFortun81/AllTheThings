@@ -480,6 +480,26 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 192967 },	-- Toddy Whiskers
 				["coord"] = { 54.4, 55.5, THALDRASZUS },
 			}),
+				-- RENOWN 25 --
+			q(70834, {	-- Titled Story
+				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renown 25
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					spell(388278),	-- Intrepid Explorer cast
+					title(736),	-- Intrepid Explorer %s (title!)
+					i(197921),	-- Primal Infusion
+				},
+			}),
+			q(70821, {	-- Skitterfly Riding
+				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renown 25
+				["provider"] = { "n", 187408 },	-- Granpap Whiskers
+				["coord"] = { 47.7, 83.2, THE_WAKING_SHORES },
+				["g"] = {
+					i(192761),	-- Tamed Skitterfly (Mount!)
+					i(192762),	-- Azure Skitterfly (Mount!)
+				},
+			}),
 
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
@@ -566,6 +586,7 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(72048),	-- Triggered with 'A Vault Unsealed' (69097)
 		q(72752),	-- Triggered on completion of 'It Belongs in a Museum... Eventually' (also at the same time as Friend of the Dragon Isles popping, unsure which is the trigger)
 		q(72822),	-- Triggered on completion of 'It Belongs in a Museum... Eventually' (also at the same time as Friend of the Dragon Isles popping, unsure which is the trigger)
+		q(72049),	-- Triggered with 'Skitterfly Riding' (70821)
 
 		-- Ensembles
 		q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor
