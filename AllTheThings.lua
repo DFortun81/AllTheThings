@@ -2529,11 +2529,27 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 		covData = C_Covenants.GetCovenantData(covID);
 		covRenown = C_CovenantSanctumUI.GetRenownLevel();
 	end
+	local DFmajorFactionIDs, majorFactionInfo, info = C_MajorFactions.GetMajorFactionIDs(9), {};
+	if DFmajorFactionIDs then
+		for _,factionID in ipairs(DFmajorFactionIDs) do
+			info = C_MajorFactions.GetMajorFactionData(factionID);
+			tinsert(majorFactionInfo, "|");
+			tinsert(majorFactionInfo, info.name:sub(1,3));
+			tinsert(majorFactionInfo, ":");
+			tinsert(majorFactionInfo, info.renownLevel);
+		end
+	end
 	if position then
 		local x,y = position:GetXY();
 		x = math.floor(x * 1000) / 10;
 		y = math.floor(y * 1000) / 10;
 		coord = x..", "..y;
+	end
+	local u, requireSkill, repeatable;
+	if questRef then
+		u = questRef.u;
+		requireSkill = questRef.requireSkill;
+		repeatable = questRef.repeatable;
 	end
 	return
 	{
@@ -2542,7 +2558,8 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 
 		questChange.." '"..(C_TaskQuest.GetQuestInfoByQuestID(id) or C_QuestLog.GetTitleForQuestID(id) or "???").."'",
 		"lvl:"..app.Level.." race:"..app.RaceID.." ("..app.Race..") class:"..app.ClassIndex.." ("..app.Class..") cov:"..(covData and covData.name or "N/A")..(covRenown and ":"..covRenown or ""),
-		"u:"..tostring(questRef and questRef.u).." skill:"..(questRef and questRef.requireSkill or ""),
+		"renown"..(app.TableConcat(majorFactionInfo)),
+		"u:"..(u or "").." skill:"..(requireSkill or "").." r:"..(repeatable or ""),
 		"sq:"..app.SourceQuestString(questRef or id),
 		"lq:"..(app.LastQuestTurnedIn or ""),
 		-- TODO: put more info in here as it will be copy-paste into Discord
@@ -2556,12 +2573,19 @@ end
 -- Checks a given quest reference against the current character info to see if something is inaccurate
 app.CheckInaccurateQuestInfo = function(questRef, questChange)
 	if questRef and questRef.questID then
-		-- print("CheckInaccurateQuestInfo",questRef.questID,questChange)
+		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange)
 		local id = questRef.questID;
-		if not (app.CurrentCharacterFilters(questRef)
+		if not
+			-- expectations for accurate quest data
+			-- meets current character filters
+			(app.CurrentCharacterFilters(questRef)
+			-- is marked as in the game
 			and app.ItemIsInGame(questRef)
-			and not questRef.missingPrequisites) then
-
+			-- repeatable or not previously completed
+			and (questRef.repeatable or not app.CurrentCharacter.Quests[id])
+			-- not missing pre-requisites
+			and not questRef.missingPrequisites)
+		then
 			-- Play a sound when a reportable error is found, if any sound setting is enabled
 			app:PlayReportSound();
 
