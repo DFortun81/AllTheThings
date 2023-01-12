@@ -3445,6 +3445,7 @@ for key, value in pairs({
 	[378088] = "水晶花",	-- Crystalline Flower
 	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
 	[378857] = "失落的黑曜石宝箱",	-- Lost Obsidian Cache
+	--TODO: [379168] = "Lost Cache Key",	-- Lost Cache Key
 	[379290] = "精美雕像",	-- Ornamented Statue
 	--TODO: [379296] = "Broken Banding",	-- Broken Banding
 	[379297] = "轰砰豪饮",	-- Slam Bam Swill

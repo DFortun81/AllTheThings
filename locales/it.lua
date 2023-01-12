@@ -3423,6 +3423,7 @@ for key,value in pairs({
 	[378088] = "Fiore Cristallino",	-- Crystalline Flower
 	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
 	[378857] = "Cassa d'Ossidiana Perduta",	-- Lost Obsidian Cache
+	--TODO: [379168] = "Lost Cache Key",	-- Lost Cache Key
 	[379290] = "Statua Adornata",	-- Ornamented Statue
 	--TODO: [379296] = "Broken Banding",	-- Broken Banding
 	[379297] = "Melma Bum Bum",	-- Slam Bam Swill

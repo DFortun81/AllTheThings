@@ -3422,6 +3422,7 @@ for key,value in pairs({
 	[378088] = "Кристаллический цветок",	-- Crystalline Flower
 	[378820] = "Искрометный пунш",	-- Popfizz Punch
 	[378857] = "Потерянный обсидиановый тайник",	-- Lost Obsidian Cache
+	--TODO: [379168] = "Lost Cache Key",	-- Lost Cache Key
 	[379290] = "Украшенная узорами статуя",	-- Ornamented Statue
 	[379296] = "Сломанная окантовка",	-- Broken Banding
 	[379297] = "Пойло \"Бадабум\"",	-- Slam Bam Swill

@@ -3431,6 +3431,7 @@ for key,value in pairs({
 	[378088] = "수정 꽃",	-- Crystalline Flower
 	[378820] = "팝피즈 음료",	-- Popfizz Punch
 	[378857] = "잃어버린 흑요석 보관함",	-- Lost Obsidian Cache
+	--TODO: [379168] = "Lost Cache Key",	-- Lost Cache Key
 	[379290] = "장식된 조각상",	-- Ornamented Statue
 	--TODO: [379296] = "Broken Banding",	-- Broken Banding
 	[379297] = "극통 꿀꺽주",	-- Slam Bam Swill
