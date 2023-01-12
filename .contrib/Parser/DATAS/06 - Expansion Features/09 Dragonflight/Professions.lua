@@ -1381,6 +1381,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
 			}),
+			q(72438, {	-- Tarasek Intentions
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
 			q(70560, {	-- The Most Powerful Tool: Good Documentation
 				["description"] = "Requires 45 Skill.",
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },

@@ -7483,7 +7483,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72379),	--
 			-- 10.0.2.45969
 			q(72434),	--
-			q(72438),	-- Tarasek Intentions
 			-- 10.0.2.46091
 			q(72491),	--
 			q(72492),	--
