@@ -7,6 +7,7 @@ _.WorldDrops =
 	tier(MOP_TIER, {
 		n(WEAPONS, {
 			filter(ONE_HANDED_AXES, {
+				i(90807),	-- Corroded Timber Axe
 				i(82020),	-- Polished Axe
 				i(82045),	-- Bronzed Axe
 				i(82100),	-- Barbarian Axe
@@ -17,6 +18,7 @@ _.WorldDrops =
 				i(87516),	-- Scalebreaker Axe
 			}),
 			filter(TWO_HANDED_AXES, {
+				i(90812),	-- Salt-Scored Cleaver
 				i(82019),	-- Polished Broadaxe
 				i(82047),	-- Bronzed Broadaxe
 				i(82102),	-- Barbarian Broadaxe
@@ -26,6 +28,7 @@ _.WorldDrops =
 				i(87421),	-- Fellworth's Repetitive Greataxe
 			}),
 			filter(BOWS, {
+				i(90809),	-- Knog's Bow of Clumsiness
 				i(82018),	-- Polished Bow
 				i(82046),	-- Bronzed Bow
 				i(82101),	-- Barbarian Bow
@@ -43,6 +46,7 @@ _.WorldDrops =
 				i(82268),	-- Engraved Crossbow
 			}),
 			filter(DAGGERS, {
+				i(90811),	-- Battered Shiv
 				i(82003),	-- Intricate Spellblade
 				i(82015),	-- Polished Dagger
 				i(82049),	-- Bronzed Dagger
@@ -69,6 +73,7 @@ _.WorldDrops =
 				i(87509),	-- Fist of Fate
 			}),
 			filter(GUNS, {
+				i(90808),	-- Bent-Barrel Rifle
 				i(82012),	-- Polished Gun
 				i(82051),	-- Bronzed Gun
 				i(82106),	-- Barbarian Gun
@@ -90,6 +95,7 @@ _.WorldDrops =
 				i(90571),	-- Scroll of Whispered Secrets
 			}),
 			filter(ONE_HANDED_MACES, {
+				i(90810),	-- Fireblackened Mace
 				i(82009),	-- Polished Mace
 				i(82011),	-- Intricate Scepter
 				i(82055),	-- Bronzed Mace
@@ -107,6 +113,7 @@ _.WorldDrops =
 				i(87515),	-- Ced's Crusher
 			}),
 			filter(TWO_HANDED_MACES, {
+				i(90814),	-- Fractured War Mace
 				i(82008),	-- Polished Hammer
 				i(82052),	-- Bronzed Hammer
 				i(82107),	-- Barbarian Hammer
@@ -137,6 +144,7 @@ _.WorldDrops =
 				i(90575),	-- Sutiru's Brazen Bulwark
 			}),
 			filter(STAVES, {
+				i(90805),	-- Robble's Stabilized Staff
 				i(82002),	-- Polished Staff
 				i(82014),	-- Polished Staff
 				i(82057),	-- Bronzed Staff
@@ -154,6 +162,7 @@ _.WorldDrops =
 				i(87422),	-- Matsuba's Breadmaker
 			}),
 			filter(ONE_HANDED_SWORDS, {
+				i(90806),	-- Rusted Blade
 				i(82001),	-- Polished Sword
 				i(82059),	-- Bronzed Sword
 				i(82114),	-- Barbarian Sword
@@ -165,6 +174,7 @@ _.WorldDrops =
 				i(87511),	-- Horrifying Meatsaw
 			}),
 			filter(TWO_HANDED_SWORDS, {
+				i(90813),	-- Salt-Scored Greatsword
 				i(82000),	-- Polished Greatsword
 				i(82050),	-- Bronzed Greatsword
 				i(82105),	-- Barbarian Greatsword

@@ -7,6 +7,14 @@ _.WorldDrops =
 	tier(MOP_TIER, {
 		n(ARMOR, {
 			n(HEAD, {
+				i(90774),	-- Vermin-Gnawed Hat
+				i(90744),	-- Scruffy Cloth Hat
+				i(90742),	-- Shabby Leather Helmet
+				i(90775),	-- Mudsoaked Leather Helmet
+				i(90741),	-- Inferior Mail Circlet
+				i(90776),	-- Moist Mail Circlet
+				i(90773),	-- Slipshod Plate Helmet
+				i(90743),	-- Dingy Plate Helmet
 				i(87450),	-- Hood of Alchemical Vapors
 				i(87451),	-- Helm of Elemental Binding
 				i(87452),	-- Zom's Misty Hood
@@ -27,6 +35,14 @@ _.WorldDrops =
 				i(87468),	-- Shiny Hozen Rock Holder
 			}),
 			n(SHOULDER, {
+				i(90785),	-- Vermin-Gnawed Cloth Shoulderpads
+				i(90767),	-- Scruffy Cloth Shoulderpads
+				i(90766),	-- Shabby Shoulderpads
+				i(90798),	-- Mudsoaked Shoulderpads
+				i(90756),	-- Inferior Mail Shoulderpads
+				i(90779),	-- Moist Mail Shoulderpads
+				i(90802),	-- Slipshod Plate Shoulderpads
+				i(90750),	-- Dingy Plate Shoulderpads
 				i(87489),	-- Fletcher's Sharpening Shoulders
 				i(87490),	-- Orb-Bound Shoulders
 				i(87491),	-- Spaulders of Five Rings
@@ -53,6 +69,14 @@ _.WorldDrops =
 				i(90589),	-- Dirl's Drafty Drape
 			}),
 			n(CHEST, {
+				i(90786),	-- Vermin-Gnawed Cloth Vest
+				i(90768),	-- Scruffy Cloth Vest
+				i(90769),	-- Shabby Armor
+				i(90796),	-- Mudsoaked Armor
+				i(90780),	-- Moist Mail Armor
+				i(90745),	-- Inferior Mail Armor
+				i(90751),	-- Dingy Plate Chestpiece
+				i(90799),	-- Slipshod Plate Chestpiece
 				i(87424),	-- Cryptwarden's Breastplate
 				i(87425),	-- Chestguard of the Solicitious Pandaren
 				i(87426),	-- Deathspite Breastplate
@@ -63,6 +87,14 @@ _.WorldDrops =
 				i(90587),	-- Natli's Fireheart Robe
 			}),
 			n(WRIST, {
+				i(90759),	-- Scruffy Cloth Bracers
+				i(90793),	-- Vermin-Gnawed Cloth Bracers
+				i(90763),	-- Shabby Bracers
+				i(90790),	-- Mudsoaked Bracers
+				i(90753),	-- Inferior Mail Bracers
+				i(90803),	-- Moist Mail Bracers
+				i(90749),	-- Dingy Plate Bracers
+				i(90782),	-- Slipshod Plate Bracers
 				i(87517),	-- Bracers of Rolling Fields
 				i(87518),	-- Bracers of the Neux Dawn
 				i(87519),	-- Misty Morning Wristguards
@@ -70,6 +102,14 @@ _.WorldDrops =
 				i(87521),	-- Zoid's Scorched Bracers
 			}),
 			n(HANDS, {
+				i(90771),	-- Dingy Plate Gloves
+				i(90754),	-- Inferior Mail Gloves
+				i(90804),	-- Moist Mail Gloves
+				i(90760),	-- Scruffy Cloth Gloves
+				i(90783),	-- Vermin-Gnawed Cloth Gloves
+				i(90764),	-- Shabby Gloves
+				i(90791),	-- Mudsoaked Gloves
+				i(90800),	-- Slipshod Plate Gloves
 				i(87443),	-- Syrio's Gloves of Tutelage
 				i(87444),	-- Wind-Kissed Handwraps
 				i(87445),	-- Gauntlets of Blurring Fingers
@@ -81,6 +121,14 @@ _.WorldDrops =
 				i(90588),	-- Rittsyn's Ruinblasters
 			}),
 			n(WAIST, {
+				i(90746),	-- Inferior Mail Belt
+				i(90757),	-- Scruffy Cloth Belt
+				i(90777),	-- Vermin-Gnawed Cloth Belt
+				i(90788),	-- Mudsoaked Belt
+				i(90770),	-- Shabby Belt
+				i(90781),	-- Moist Mail Belt
+				i(90787),	-- Slipshod Plate Belt
+				i(90747),	-- Dingy Plate Belt
 				i(87501),	-- Unbreakable Waistplate
 				i(87502),	-- Repression Belt
 				i(87503),	-- Repin's Ammo-Laden Belt
@@ -90,6 +138,14 @@ _.WorldDrops =
 				i(87507),	-- Melador's Mercurial Wrap
 			}),
 			n(LEGS, {
+				i(90784),	-- Vermin-Gnawed Cloth Pants
+				i(90761),	-- Scruffy Cloth Pants
+				i(90765),	-- Shabby Pants
+				i(90795),	-- Mudsoaked Pants
+				i(90778),	-- Moist Mail Pants
+				i(90755),	-- Inferior Mail Pants
+				i(90772),	-- Dingy Plate Pants
+				i(90801),	-- Slipshod Plate Pants
 				i(87459),	-- Dills' Primal Leggings
 				i(87460),	-- Legplates of the Wandering Warrior
 				i(87461),	-- Greatheart Pants
@@ -101,6 +157,14 @@ _.WorldDrops =
 				i(90579),	-- Legplates of Durable Dreams
 			}),
 			n(FEET, {
+				i(90758),	-- Scruffy Cloth Boots
+				i(90792),	-- Vermin-Gnawed Cloth Boots
+				i(90762),	-- Shabby Boots
+				i(90789),	-- Mudsoaked Boots
+				i(90752),	-- Inferior Mail Boots
+				i(90794),	-- Moist Mail Boots
+				i(90748),	-- Dingy Plate Boots
+				i(90797),	-- Slipshod Plate Boots
 				i(87432),	-- Tesslah's Ticking Treads
 				i(87433),	-- Blackfooted Greatboots
 				i(87434),	-- Sandals of Sympathetic Healing
