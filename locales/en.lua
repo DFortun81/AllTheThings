@@ -2092,8 +2092,8 @@ app.L = {
 		[-2187] = "8.x.x",														-- Patch 8.x.x
 		[-2188] = "9.x.x",														-- Patch 9.x.x
 	-- Temporary headers for unsorted poor and common items
-		[-123456] = "Poor Quality Items",										-- Poor Quality Items
-		[-123457] = "Common Quality Items",										-- Common Quality Items
+		[-123456] = BATTLE_PET_BREED_QUALITY1,									-- Poor
+		[-123457] = BATTLE_PET_BREED_QUALITY2,									-- Common
 	};
 	["HEADER_DESCRIPTIONS"] = {
 		[-18] = "Contains Things which are rewarded or are available from other content within the containing section.\nThey are consolidated here in an effort to reduce duplication from many possible Sources.",
