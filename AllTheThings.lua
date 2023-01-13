@@ -8070,7 +8070,7 @@ local function MapSourceQuestsRecursive(parentQuestID, questID, currentDepth, de
 				if p[1] == "i" then
 					id = p[2];
 					-- print("Quest Item Provider",p[1], id);
-					local pRef = app.SearchForObject("itemID", id);
+					local pRef = Search("itemID", id);
 					if pRef then
 						NestObject(questRef, pRef, true, 1);
 					else
@@ -12982,13 +12982,14 @@ app.BaseNPCWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseNPCWithAc
 local HeaderTypeAbbreviations = {
 	["a"] = "achievementID",
 	["m"] = "mapID",
+	["n"] = "npcID",
 	["i"] = "itemID",
 	["q"] = "questID",
 	["s"] = "spellID",
 };
 -- Alternate functions to attach data into a table based on an id for a given type code
 local AlternateDataTypes = {
-	["c"] = function(t, id)
+	["ac"] = function(t, id)
 		local name = GetCategoryInfo(id);
 		t.name = name;
 	end,

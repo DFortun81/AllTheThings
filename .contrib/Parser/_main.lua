@@ -36,9 +36,10 @@ HEADERS = {
 	Achievement = "a",
 	Item = "i",
 	Map = "m",
+	NPC = "n",
 	Quest = "q",
 	Spell = "s",
-	-- AchCategory = "c",	-- don't use until Classic has some alternative support for Achievement Category Headers
+	AchCategory = "ac",
 };
 
 -- Map Constants for quick and easy replacement when we can get mapIDs on live!
