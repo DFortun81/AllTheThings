@@ -9506,7 +9506,7 @@ local fields = {
 		if t._s then return t._s; end
 		local s = t.silentLink;
 		if s then
-			s = app.GetSourceID(s);
+			s = GetSourceID(s);
 			-- print("Artifact Source",s,t.silentLink)
 			if s and s > 0 then
 				rawset(t, "_s", s);

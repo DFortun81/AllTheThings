@@ -24,16 +24,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200299),	-- Strange Clockwork Gladius
 				},
 			}),
-			n(193220, {	-- Broodweaver Araznae <Mother of Spiders>
-				["coord"] = { 59.6, 70.1, THALDRASZUS },
-				["questID"] = 73987,
-				["g"] = {
-					-- is part of the DF>Global Rare Loottable
-					-- specfic drops
-					i(200758),	-- Breastplate of Storied Antiquity (needs to move to a CBD somehow sometime for certain Rares)
-					i(200147),	-- Web-Woven Robe
-				},
-			}),
 			n(193658, {	-- Corrupted Proto-Dragon
 				["coord"] = { 44.8, 69.0, THALDRASZUS },
 				["questID"] = 74060,
@@ -120,15 +110,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["isDaily"] = true,
 				["g"] = {
 					i(200146),	-- Phenran's Discordant Smasher
-				},
-			}),
-			n(193210, {	-- Phleep <Time-Lost, Mind-Lost>
-				["coord"] = { 57.2, 84.2, THALDRASZUS },
-				["questID"] = 74021,
-				["g"] = {
-					i(200148),	-- A Collection of Me (TOY!)
-					i(200126),	-- Mantle of Copious Chronologies
-					i(200202),	-- Tomorrow's Chains
 				},
 			}),
 			n(193130, {	-- Pleasant Alpha

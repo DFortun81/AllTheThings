@@ -639,7 +639,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197002),	-- Cliffside Wylderdrake: Flared Cheek
 			i(197004),	-- Cliffside Wylderdrake: Spiked Legs
 			i(197006),	-- Cliffside Wylderdrake: Plated Nose
-			i(197008),	-- Cliffside Wylderdrake: Narrow Stripes Pattern
 			i(197014),	-- Cliffside Wylderdrake: White Scales
 			i(197015),	-- Cliffside Wylderdrake: Dark Skin Variation
 			i(197016),	-- Cliffside Wylderdrake: Maned Tail
