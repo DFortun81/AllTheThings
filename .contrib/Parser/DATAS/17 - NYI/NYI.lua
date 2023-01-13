@@ -310,10 +310,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(190781),	-- Slumbering Caldera Bracers
 				i(190782),	-- Slumbering Caldera Hauberk
 				-- Buccaneer Sets
-				i(190783),	-- Swashbuckling Buccaneer's Tunic
-				i(190784),	-- Swashbuckling Buccaneer's Sash
-				i(190785),	-- Swashbuckling Buccaneer's Breeches
-				i(190786),	-- Swashbuckling Buccaneer's Boots
 				i(190904),	-- Dashing Buccaneer's Tunic
 				i(190905),	-- Dashing Buccaneer's Sash
 				i(190906),	-- Dashing Buccaneer's Breeches
@@ -340,29 +336,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- Non Set Cosmetics
 				i(190093),	-- Elune's Fury
 				i(190094),	-- Elune's Wrath
-				i(190149),	-- Wanderer's Midnight Cloak
-				i(190150),	-- Vagabond's Midnight Hood
-				i(190151),	-- Wanderer's Midnight Scarf
-				i(190376),	-- Vagabond's Midnight Cape
-				i(190423),	-- Wanderer's Violet Cloak
-				i(190424),	-- Vagabond's Violet Cape
-				i(190425),	-- Vagabond's Violet Hood
-				i(190426),	-- Wanderer's Violet Scarf
-				i(190541),	-- Vagabond's Azure Cape
-				i(190542),	-- Wanderer's Azure Scarf
-				i(190572),	-- Vagabond's Azure Hood
-				i(190573),	-- Wanderer's Azure Cloak
 				i(190448),	-- Olive Huntsman's Shot Pouch
 				i(190449),	-- Olive Huntsman's Quiver
 				i(190674),	-- Leaky Bucket
-				i(190825),	-- Wanderer's Crimson Cloak
-				i(190826),	-- Wanderer's Crimson Scarf
-				i(190827),	-- Vagabond's Crimson Cape
-				i(190828),	-- Vagabond's Crimson Hood
-				i(190882),	-- Vagabond's Snowy Cape
-				i(190883),	-- Wanderer's Snowy Cloak
-				i(190884),	-- Vagabond's Snowy Hood
-				i(190885),	-- Wanderer's Snowy Scarf
 				i(190909),	-- Ruby Felfire Splitblade
 				i(190910),	-- Ruby Felfire Bulwark
 			}),

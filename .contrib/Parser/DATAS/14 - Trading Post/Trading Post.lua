@@ -89,3 +89,113 @@ root("TradingPost", bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 		}),
 	}),
 }));
+root(ROOTS.HiddenQuestTriggers, {
+	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, }, {
+		q(65720),	-- Ensemble: Swashbuckling Buccaneer's Slops
+		q(65737),	-- Ensemble: Vagabond's Rosy Threads
+		q(65677),	-- Ensemble: Wanderer's Rosy Trappings
+	})),
+	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {
+		-- q(65677),	-- Ensemble: Wanderer's Azure/Snowy Trappings	-- Wowhead has same id as Rosy Trappings
+		q(65721),	-- Ensemble: Wanderer's Crimson Trappings
+		q(65648),	-- Ensemble: Wanderer's Midnight Trappings
+		q(65673),	-- Ensemble: Wanderer's Violet Trappings
+		q(65678),	-- Ensemble: Vagabond's Azure Threads
+		q(65723),	-- Ensemble: Vagabond's Crimson Trappings
+		q(65570),	-- Ensemble: Vagabond's Midnight Threads
+		-- q(65737),	-- Ensemble: Vagabond's Snowy Threads	-- Wowhead has same id as Rosy Threads
+		q(65672),	-- Ensemble: Vagabond's Violet Threads
+	})),
+});
+root(ROOTS.NeverImplemented, {
+	tier(DF_TIER, bubbleDown({ ["u"] = NEVER_IMPLEMENTED, ["timeline"] = { ADDED_10_0_5 }, }, {
+		n(VENDOR, {
+			filter(COSMETIC, {
+				i(190577, {	-- Ensemble: Wanderer's Azure Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190573),	-- Wanderer's Azure Cloak
+						i(190542),	-- Wanderer's Azure Scarf
+					},
+				}),
+				i(202179, {	-- Ensemble: Wanderer's Carrot Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(202175),	-- Wanderer's Carrot Cloak
+						i(202174),	-- Wanderer's Carrot Scarf
+					},
+				}),
+				-- i(, {	-- Ensemble: Wanderer's Crimson Trappings	-- spellID 368270
+				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				-- 	["g"] = {
+						i(190825),	-- Wanderer's Crimson Cloak
+						i(190826),	-- Wanderer's Crimson Scarf
+				-- 	},
+				-- }),
+				i(190377, {	-- Ensemble: Wanderer's Midnight Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190149),	-- Wanderer's Midnight Cloak
+						i(190151),	-- Wanderer's Midnight Scarf
+					},
+				}),
+				-- i(, {	-- Ensemble: Wanderer's Snowy Trappings	-- spellID 368305
+				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				-- 	["g"] = {
+						i(190883),	-- Wanderer's Snowy Cloak
+						i(190885),	-- Wanderer's Snowy Scarf
+				-- 	},
+				-- }),
+				-- i(, {	-- Ensemble: Wanderer's Violet Trappings	-- spellID 367583
+				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				-- 	["g"] = {
+						i(190423),	-- Wanderer's Violet Cloak
+						i(190426),	-- Wanderer's Violet Scarf
+				-- 	},
+				-- }),
+				i(190576, {	-- Ensemble: Vagabond's Azure Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190541),	-- Vagabond's Azure Cape
+						i(190572),	-- Vagabond's Azure Hood
+					},
+				}),
+				i(202178, {	-- Ensemble: Vagabond's Carrot Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(202177),	-- Vagabond's Carrot Cape
+						i(202176),	-- Vagabond's Carrot Hood
+					},
+				}),
+				-- i(, {	-- Ensemble: Vagabond's Crimson Trappings	-- spellID 368272
+				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				-- 	["g"] = {
+						i(190827),	-- Vagabond's Crimson Cape
+						i(190828),	-- Vagabond's Crimson Hood
+				-- 	},
+				-- }),
+				i(190166, {	-- Ensemble: Vagabond's Midnight Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190376),	-- Vagabond's Midnight Cape
+						i(190150),	-- Vagabond's Midnight Hood
+					},
+				}),
+				-- i(, {	-- Ensemble: Vagabond's Snowy Threads	-- spellID 368306
+				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				-- 	["g"] = {
+						i(190882),	-- Vagabond's Snowy Cape
+						i(190884),	-- Vagabond's Snowy Hood
+				-- 	},
+				-- }),
+				-- i(, {	-- Ensemble: Vagabond's Violet Threads	-- spellID 367582
+				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				-- 	["g"] = {
+						i(190424),	-- Vagabond's Violet Cape
+						i(190425),	-- Vagabond's Violet Hood
+				-- 	},
+				-- }),
+			}),
+		})
+	})),
+});
