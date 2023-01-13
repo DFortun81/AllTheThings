@@ -10,7 +10,7 @@ root("Instances", { tier(LEGION_TIER, {
 		["g"] = {
 			n(TREASURES, {
 				o(277384, {	-- Abandoned Treasure
-					["isReapeatable"] = true,
+					["isRepeatable"] = true,
 					["g"] = {
 						i(152854),	-- Nethershorn Lantern
 					},
