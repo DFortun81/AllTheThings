@@ -3434,6 +3434,13 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
+				faction(1276, {	-- Old Hillpaw
+					["g"] = {
+						i(90042, {	-- Straw Hat
+							["description"] = "Once you hit Exalted with Old Hillpaw you receive this in the mail.",
+						}),
+					},
+				}),
 				n(55143, {	-- Sally Fizzlefury <Engineering Trainer>
 					["coord"] = { 16.0, 83.0, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {

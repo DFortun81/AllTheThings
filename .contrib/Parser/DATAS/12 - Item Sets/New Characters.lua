@@ -31,6 +31,18 @@ _.GearSets =
 				i(187758),	-- Mage's Trousers
 				i(187761),	-- Mage's Robes
 				i(187757),	-- Mage's Wristwraps
+				i(77509, {	-- Trainee's Cord
+					["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				}),
+				i(72020, {	-- Trainee's Leggings
+					["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				}),
+				i(72019, {	-- Trainee's Vest
+					["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				}),
+				i(77526, {	-- Trainee's Wristwraps
+					["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				}),
 			}),
 			cl(ROGUE, {
 				i(187770),	-- Rogue's Footwear
@@ -99,6 +111,18 @@ _.GearSets =
 				i(187765),	-- Priest's Slippers
 				i(187764),	-- Priest's Trousers
 				i(187763),	-- Priest's Wristwraps
+				i(77509, {	-- Trainee's Cord
+					["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				}),
+				i(72020, {	-- Trainee's Leggings
+					["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				}),
+				i(72019, {	-- Trainee's Vest
+					["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				}),
+				i(77526, {	-- Trainee's Wristwraps
+					["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				}),
 			}),
 			cl(SHAMAN, {
 				i(187721),	-- Shaman's Belt

@@ -14,7 +14,6 @@ local f = root("CommonQualityItems", {
 				i(3889),	-- Russet Hat
 				i(63205),	-- Safety Goggles
 				i(61509),	-- Sapphire Spectacles
-				i(90042),	-- Straw Hat
 			}),
 			n(SHOULDER, {
 				i(14169),	-- Aboriginal Shoulder Pads
@@ -60,7 +59,6 @@ local f = root("CommonQualityItems", {
 				i(53372),	-- Hand Woven Vest
 				i(837),		-- Heavy Weave Armor
 				i(2615),	-- Chromatic Robe
-				i(73224),	-- Initiate's Robes
 				i(795),		-- Knitted Tunic
 				i(20990),	-- Light Cloth Armor
 				i(2110),	-- Light Magesmith Robe
@@ -73,7 +71,6 @@ local f = root("CommonQualityItems", {
 				i(57386),	-- Northshire Abbot's Robe
 				i(2160),	-- Padded Armor
 				i(2612),	-- Plain Robe
-				i(74606),	-- Protector's Robes
 				i(49270),	-- Recovered Knit Vest
 				i(23479),	-- Recruit's Robe
 				i(52729),	-- Recruit's Robe
@@ -81,7 +78,6 @@ local f = root("CommonQualityItems", {
 				i(2614),	-- Robe of Apprenticeship
 				i(57558),	-- Robes of Endless Raiding
 				i(57201),	-- Robes of the Sun
-				i(74577),	-- Robes of the Water Spirit
 				i(2429),	-- Russet Vest
 				i(3260),	-- Scarlet Initiate Robes
 				i(2616),	-- Shimmering Silk Robes
@@ -93,7 +89,6 @@ local f = root("CommonQualityItems", {
 				i(193),		-- Tattered Cloth Vest
 				i(200),		-- Thick Cloth Vest
 				i(2121),	-- Thin Cloth Armor
-				i(72019),	-- Trainee's Vest
 				i(10036),	-- Tuxedo Jacket
 				i(53394),	-- Venom-Imbued Robes
 				i(5767),	-- Violet Robes
@@ -117,10 +112,8 @@ local f = root("CommonQualityItems", {
 				i(6060),	-- Flax Bracers
 				i(57537),	-- Frosthammer Bracer
 				i(3323),	-- Ghostly Bracers
-				i(74600),	-- Healer's Wristwraps
 				i(6062),	-- Heavy Cord Bracers
 				i(3590),	-- Heavy Weave Bracers
-				i(73214),	-- Initiate's Wristwraps
 				i(2326),	-- Ivy-Weave Bracers
 				i(3641),	-- Journeyman's Bracers
 				i(3603),	-- Knitted Bracers
@@ -130,7 +123,6 @@ local f = root("CommonQualityItems", {
 				i(14095),	-- Native Bands
 				i(3592),	-- Padded Bracers
 				i(57205),	-- Plains Hunter Guards
-				i(74571),	-- Playful Wristbands
 				i(57156),	-- Prodigal Lich Bracer
 				i(3453),	-- Quilted Bracers
 				i(49267),	-- Recovered Knit Bracers
@@ -149,7 +141,6 @@ local f = root("CommonQualityItems", {
 				i(3596),	-- Tattered Cloth Bracers
 				i(3598),	-- Thick Cloth Bracers
 				i(3600),	-- Thin Cloth Bracers
-				i(77526),	-- Trainee's Wristwraps
 				i(59044),	-- Velocity Bracers
 				i(49245),	-- Waterlogged Cloth Bracers
 				i(3607),	-- Woven Bracers
@@ -167,9 +158,7 @@ local f = root("CommonQualityItems", {
 				i(3275),	-- Flax Gloves
 				i(5606),	-- Gardening Gloves
 				i(59050),	-- Gloves of Potential Energy
-				i(74594),	-- Gloves of Wisdom
 				i(839),		-- Heavy Weave Gloves
-				i(73220),	-- Initiate's Gloves
 				i(2960),	-- Journeyman's Gloves
 				i(793),		-- Knitted Gloves
 				i(20987),	-- Light Cloth Gloves
@@ -188,7 +177,6 @@ local f = root("CommonQualityItems", {
 				i(23397),	-- Satin Lined Gloves
 				i(9746),	-- Simple Gloves
 				i(2972),	-- Spellbinder Gloves
-				i(74574),	-- Sun Pearl Gloves
 				i(711),		-- Tattered Cloth Gloves
 				i(203),		-- Thick Cloth Gloves
 				i(2119),	-- Thin Cloth Gloves
@@ -207,7 +195,6 @@ local f = root("CommonQualityItems", {
 				i(66928),	-- Belt of So-Called Leaders
 				i(57209),	-- Belt of the Prairie Wolf
 				i(53363),	-- Circle of Suffering
-				i(74597),	-- Cord of Grieving
 				i(55005),	-- Darius' Sash
 				i(6513),	-- Disciple's Sash
 				i(3587),	-- Embroidered Belt
@@ -220,7 +207,6 @@ local f = root("CommonQualityItems", {
 				i(57400),	-- Gold Dust Belt
 				i(57534),	-- Grik'nir's Chilly Belt
 				i(3589),	-- Heavy Weave Belt
-				i(73217),	-- Initiate's Rope Belt
 				i(4663),	-- Journeyman's Belt
 				i(3602),	-- Knitted Belt
 				i(20989),	-- Light Cloth Belt
@@ -240,8 +226,6 @@ local f = root("CommonQualityItems", {
 				i(3597),	-- Thick Cloth Belt
 				i(3599),	-- Thin Cloth Belt
 				i(53391),	-- Thwarter's Belt
-				i(77509),	-- Trainee's Cord
-				i(74568),	-- Unmarred Cord
 				i(49242),	-- Waterlogged Cloth Belt
 				i(3606),	-- Woven Belt
 				i(20998),	-- Wyrm Sash
@@ -269,8 +253,6 @@ local f = root("CommonQualityItems", {
 				i(38278),	-- Haliscan Pantaloons
 				i(24425),	-- Hand Sewn Pants
 				i(838),		-- Heavy Weave Pants
-				i(74580),	-- Homespun Leggings
-				i(73227),	-- Initiate's Leggings
 				i(57389),	-- Innkeeper's Longstockings
 				i(794),		-- Knitted Pants
 				i(53375),	-- Kul Tiras Leggings
@@ -291,13 +273,11 @@ local f = root("CommonQualityItems", {
 				i(6118),	-- Squire's Pants
 				i(21001),	-- Striding Pants
 				i(3834),	-- Sturdy Cloth Trousers
-				i(74603),	-- Survival Leggings
 				i(6076),	-- Tapered Pants
 				i(194),		-- Tattered Cloth Pants
 				i(201),		-- Thick Cloth Pants
 				i(2120),	-- Thin Cloth Pants
 				i(57200),	-- Thorncaller Trousers
-				i(72020),	-- Trainee's Leggings
 				i(6126),	-- Trapper's Pants
 				i(10035),	-- Tuxedo Pants
 				i(57402),	-- Uncle Stonefield's Pants
@@ -336,7 +316,6 @@ local f = root("CommonQualityItems", {
 				i(57550),	-- Grizzled Den Boots
 				i(840),		-- Heavy Weave Shoes
 				i(52556),	-- Initiate's Boots
-				i(73230),	-- Initiate's Slippers
 				i(2959),	-- Journeyman's Boots
 				i(792),		-- Knitted Sandals
 				i(54292),	-- KTC Executive Slippers
@@ -350,7 +329,6 @@ local f = root("CommonQualityItems", {
 				i(2432),	-- Russet Boots
 				i(15398),	-- Sandcomber Boots
 				i(23267),	-- Satin Lined Boots
-				i(74583),	-- Silk Shoes
 				i(10046),	-- Simple Linen Boots
 				i(9743),	-- Simple Shoes
 				i(57203),	-- Slippers of High Honor
@@ -361,7 +339,6 @@ local f = root("CommonQualityItems", {
 				i(195),		-- Tattered Cloth Boots
 				i(202),		-- Thick Cloth Shoes
 				i(2117),	-- Thin Cloth Shoes
-				i(72021),	-- Trainee's Boots
 				i(6127),	-- Trapper's Boots
 				i(53397),	-- Vile Slippers
 				i(2571),	-- Viny Wrappings
@@ -412,7 +389,6 @@ local f = root("CommonQualityItems", {
 				i(6525),	-- Grunt's Harness
 				i(5957),	-- Handstitched Leather Vest
 				i(2817),	-- Hard Leather Tunic
-				i(73225),	-- Initiate's Vest
 				i(60),		-- Layered Tunic
 				i(4929),	-- Light Scorpid Armor
 				i(58238),	-- Lookout's Vest
@@ -432,14 +408,12 @@ local f = root("CommonQualityItems", {
 				i(2463),	-- Studded Doublet
 				i(6524),	-- Studded Leather Harness
 				i(20925),	-- Sun Cured Vest
-				i(74575),	-- Sun Pearl Vest
 				i(846),		-- Tanned Leather Jerkin
 				i(54869),	-- Thornroot Vest
 				i(58246),	-- Thug Vest
 				i(3444),	-- Tiller's Vest
 				i(53392),	-- Tiragarde Vest
 				i(54293),	-- Tunnel Worm Vest
-				i(74604),	-- Vest of Compassion
 				i(49275),	-- Water-Stained Leather Harness
 				i(24134),	-- Weathered Leather Vest
 				i(57531),	-- Winter Jacket
@@ -451,7 +425,6 @@ local f = root("CommonQualityItems", {
 				i(2374),	-- Battered Leather Bracers
 				i(53356),	-- Beast Tracker's Bracers
 				i(66929),	-- Big Trogg Armbands
-				i(74578),	-- Bindings of the Earth Spirit
 				i(57257),	-- Borderlands Bracers
 				i(59051),	-- Bracers of Angular Momentum
 				i(3158),	-- Burnt Hide Bracers
@@ -472,7 +445,6 @@ local f = root("CommonQualityItems", {
 				i(3207),	-- Hunting Bracers
 				i(24436),	-- Huntsman's Bracers
 				i(763),		-- Ice-Covered Bracers
-				i(73215),	-- Initiate's Bracers
 				i(5612),	-- Ivy Cuffs
 				i(22965),	-- Longshoreman's Bindings
 				i(15013),	-- Lupine Cuffs
@@ -515,12 +487,9 @@ local f = root("CommonQualityItems", {
 				i(3152),	-- Driving Gloves
 				i(49573),	-- Gilnean Footpad's Gloves
 				i(49565),	-- Gilnean Novice's Gloves
-				i(74572),	-- Gloves of Splashing Water
 				i(53371),	-- Gloves of the Helping Hand
 				i(55015),	-- Gloves of the Two Birds
-				i(74595),	-- Gloves of Verity
 				i(15300),	-- Grizzly Gloves
-				i(73221),	-- Initiate's Handguards
 				i(57396),	-- Innkeeper's Gloves
 				i(66923),	-- Lent Hands
 				i(1359),	-- Lion-Stamped Gloves
@@ -543,7 +512,6 @@ local f = root("CommonQualityItems", {
 				i(20923),	-- Sun Cured Gloves
 				i(844),		-- Tanned Leather Gloves
 				i(57210),	-- Thunderhorn Gloves
-				i(87265),	-- Tiger Palm Wraps
 				i(59048),	-- Torque-Applying Gloves
 				i(3286),	-- Tribal Gloves
 				i(4940),	-- Veiled Grips
@@ -573,7 +541,6 @@ local f = root("CommonQualityItems", {
 				i(52949),	-- Gyrochoppa Seat Belt
 				i(4237),	-- Handstitched Leather Belt
 				i(4690),	-- Hunting Belt
-				i(73218),	-- Initiate's Belt
 				i(57538),	-- Kharanos Belt
 				i(53377),	-- Lovingly Embroidered Belt
 				i(52877),	-- Moraya's Belt
@@ -586,7 +553,6 @@ local f = root("CommonQualityItems", {
 				i(6147),	-- Ratty Old Belt
 				i(2471),	-- Reinforced Leather Belt
 				i(55019),	-- Repair Belt
-				i(74598),	-- Ropes of Grieving
 				i(1839),	-- Rough Leather Belt
 				i(24129),	-- Salvaged Leather Belt
 				i(42084),	-- Snowhide Belt
@@ -599,7 +565,6 @@ local f = root("CommonQualityItems", {
 				i(1843),	-- Tanned Leather Belt
 				i(57217),	-- Thorned Cinch
 				i(4675),	-- Tribal Belt
-				i(74569),	-- Unmarred Waistband
 				i(49271),	-- Water-Stained Leather Belt
 				i(3583),	-- Weathered Belt
 			}),
@@ -607,7 +572,6 @@ local f = root("CommonQualityItems", {
 				i(2372),	-- Battered Leather Pants
 				i(5398),	-- Canopy Leggings
 				i(54981),	-- Caregiver's Leggings
-				i(74601),	-- Ceremonial Leggings
 				i(52883),	-- Cold Focus Leggings
 				i(2126),	-- Cracked Leather Pants
 				i(2146),	-- Cuirboulli Pants
@@ -623,7 +587,6 @@ local f = root("CommonQualityItems", {
 				i(18611),	-- Gnarlpine Leggings
 				i(49515),	-- Goblin Thug's Pants
 				i(2303),	-- Handstitched Leather Pants
-				i(73228),	-- Initiate's Britches
 				i(20896),	-- Lookout's Pants
 				i(6124),	-- Novice's Pants
 				i(53380),	-- Poison-Cured Britches
@@ -637,7 +600,6 @@ local f = root("CommonQualityItems", {
 				i(4970),	-- Rough-Hewn Kodo Leggings
 				i(52948),	-- Sailor's Leggings
 				i(42098),	-- Snowhide Pants
-				i(74581),	-- Soft Britches
 				i(22951),	-- Springpaw Hide Leggings
 				i(57387),	-- Spymaster's Legs
 				i(2465),	-- Studded Pants
@@ -652,7 +614,6 @@ local f = root("CommonQualityItems", {
 			n(FEET, {
 				i(2373),	-- Battered Leather Boots
 				i(57165),	-- Boots of Brill
-				i(74607),	-- Boots of Courage
 				i(57559),	-- Boots of the Weary Raider
 				i(2963),	-- Burnt Leather Boots
 				i(3311),	-- Ceremonial Leather Ankleguards
@@ -671,7 +632,6 @@ local f = root("CommonQualityItems", {
 				i(15301),	-- Grizzly Slippers
 				i(2302),	-- Handstitched Leather Boots
 				i(2975),	-- Hunting Boots
-				i(73231),	-- Initiate's Footgear
 				i(6201),	-- Lithe Boots
 				i(20898),	-- Lookout's Shoes
 				i(24103),	-- Moongraze Hide Boots
@@ -686,7 +646,6 @@ local f = root("CommonQualityItems", {
 				i(42088),	-- Snowhide Hoof-Warmers
 				i(55009),	-- Steadfast Boots
 				i(2467),	-- Studded Boots
-				i(74584),	-- Summer Shoes
 				i(20921),	-- Sun Cured Boots
 				i(843),		-- Tanned Leather Boots
 				i(54305),	-- Tasseled Shoes
@@ -902,13 +861,11 @@ local f = root("CommonQualityItems", {
 				i(54295),	-- Crosscheck Breastplate
 				i(22953),	-- Fur Lined Breastplate
 				i(49578),	-- Gilnean Recruit's Tunic
-				i(74573),	-- Glistening Breastplate
 				i(49524),	-- Goblin Brawler's Harness
 				i(20994),	-- Green Plate Vest
 				i(62253),	-- Grunt's Plate Armor
 				i(30765),	-- Heavy Draenic Breastplate
 				i(57223),	-- Chestguard of the Beating Drum
-				i(73226),	-- Initiate's Breastplate
 				i(58248),	-- Initiate's Vest
 				i(58237),	-- Initiate's Vest
 				i(57401),	-- Jasperlode Chestguard
@@ -919,7 +876,6 @@ local f = root("CommonQualityItems", {
 				i(58231),	-- Recruit's Vest
 				i(58244),	-- Recruit's Vest
 				i(58243),	-- Recruit's Vest
-				i(74602),	-- Ritual Breastplate
 				i(57532),	-- Rockjaw Breastplate
 				i(10421),	-- Rough Copper Vest
 				i(3273),	-- Rugged Plate Vest
@@ -947,7 +903,6 @@ local f = root("CommonQualityItems", {
 				i(53373),	-- Hearth Defender Bracers
 				i(30771),	-- Heavy Draenic Bracers
 				i(59049),	-- Inertial Bracers
-				i(73216),	-- Initiate's Armguards
 				i(6177),	-- Ironwrought Bracers
 				i(52932),	-- Parachute Wrist Straps
 				i(8090),	-- Platemail Bracers
@@ -955,12 +910,10 @@ local f = root("CommonQualityItems", {
 				i(53384),	-- Razor Hill Grunt's Bracers
 				i(11849),	-- Rustmetal Bracers
 				i(24131),	-- Slightly Rusted Bracers
-				i(74576),	-- Sun Pearl Bracers
 				i(22964),	-- Sunsail Bracers
 				i(52882),	-- Swift Plate Armbands
 				i(57232),	-- Thorn-Proof Wristguard
 				i(54303),	-- Total Disaster Bracers
-				i(74596),	-- Unvarnished Vambraces
 			}),
 			n(HANDS, {
 				i(24141),	-- Battle Worn Gauntlets
@@ -971,14 +924,11 @@ local f = root("CommonQualityItems", {
 				i(59046),	-- Friction Gloves
 				i(57144),	-- Gallow's End Gauntlets
 				i(23376),	-- Gatewatcher's Plate Gloves
-				i(74579),	-- Gauntlets of Earth and Water
-				i(74605),	-- Gauntlets of Mercy
 				i(54982),	-- Gloves of Protection
 				i(49529),	-- Goblin Brawler's Gauntlets
 				i(20999),	-- Green Plate Gauntlets
 				i(62257),	-- Grunt's Plate Gloves
 				i(57548),	-- Herb-Stained Gauntlets
-				i(73222),	-- Initiate's Gauntlets
 				i(8091),	-- Platemail Gloves
 				i(52946),	-- Spy Strangler Gloves
 				i(57234),	-- Swoopskin Gloves
@@ -993,7 +943,6 @@ local f = root("CommonQualityItems", {
 				i(23265),	-- Blackened Plate Girdle
 				i(38646),	-- Bone-Plated Belt
 				i(57219),	-- Braided Boarskin Belt
-				i(74599),	-- Cinch of Grieving
 				i(57546),	-- Cog Belt
 				i(2851),	-- Copper Plate Belt
 				i(54297),	-- Cracking Whip
@@ -1003,12 +952,10 @@ local f = root("CommonQualityItems", {
 				i(53370),	-- Girdle of Honor
 				i(24241),	-- Green Plate Belt
 				i(62254),	-- Grunt's Plate Belt
-				i(73219),	-- Initiate's Plate Belt
 				i(57399),	-- Kobold Hunter's Trophy Belt
 				i(8088),	-- Platemail Belt
 				i(57388),	-- Stormwind Infantry Belt
 				i(54870),	-- Thornroot Cord
-				i(74570),	-- Unmarred Belt
 				i(57150),	-- Vile Fin Belt
 				i(52887),	-- Zuni's Family Heirloom
 			}),
@@ -1019,16 +966,13 @@ local f = root("CommonQualityItems", {
 				i(38651),	-- Bone-Plated Leggings
 				i(139),		-- Brawler's Pants
 				i(55010),	-- Cannoneer's Leggings
-				i(74582),	-- Comfortable Greaves
 				i(2852),	-- Copper Plate Pants
 				i(57160),	-- Garren's Leggings
 				i(49576),	-- Gilnean Recruit's Pants
 				i(49528),	-- Goblin Brawler's Greaves
 				i(62258),	-- Grunt's Plate Leggings
-				i(73229),	-- Initiate's Legguards
 				i(52549),	-- Initiate's Pants
 				i(24145),	-- Initiate's Pants
-				i(74608),	-- Legguards of the Brave
 				i(57221),	-- Legs of the Long Day
 				i(57536),	-- Legs of the Wayward Elemental
 				i(53379),	-- Ouster's Leggings
@@ -1052,14 +996,12 @@ local f = root("CommonQualityItems", {
 				i(140),		-- Brawler's Boots
 				i(53362),	-- Carapace Boots
 				i(3469),	-- Copper Plate Boots
-				i(74585),	-- Dancing Boots
 				i(54309),	-- Gas Soaked Boots
 				i(49579),	-- Gilnean Recruit's Boots
 				i(49527),	-- Goblin Brawler's Boots
 				i(20997),	-- Green Plate Boots
 				i(62255),	-- Grunt's Plate Boots
 				i(24146),	-- Initiate's Boots
-				i(73232),	-- Initiate's Sabatons
 				i(55008),	-- Leader's Boots
 				i(4946),	-- Lightweight Boots
 				i(57148),	-- Marrowpetal Boots
@@ -1096,8 +1038,6 @@ local f = root("CommonQualityItems", {
 			i(9761),	-- Cadet Cloak
 			i(4692),	-- Ceremonial Cloak
 			i(45044),	-- Cloak of Cenarius
-			i(73223),	-- Cloak of the Compassionate
-			i(74586),	-- Cloak of the Fiery Skies
 			i(54617),	-- Darkspear Shroud
 			i(20991),	-- Daylight Cloak
 			i(4854),	-- Demon Scarred Cloak
@@ -1286,7 +1226,6 @@ local f = root("CommonQualityItems", {
 			i(3071),	-- Striking Hatchet
 			i(20837),	-- Sunstrider Axe
 			i(2490),	-- Tomahawk
-			i(76391),	-- Trainee's Axe
 			i(2054),	-- Trogg Hand Axe
 			i(37),		-- Worn Axe
 			i(57233),	-- Worn Ceremonial Tomahawk
@@ -1340,13 +1279,10 @@ local f = root("CommonQualityItems", {
 			i(30757),	-- Draenic Light Crossbow
 			i(24441),	-- Exodar Crossbow
 			i(15808),	-- Fine Light Crossbow
-			i(73234),	-- Flameheart Crossbow
 			i(15809),	-- Heavy Crossbow
 			i(54986),	-- Houndmaster's Crossbow
-			i(74588),	-- Jade Crossbow
 			i(15807),	-- Light Crossbow
 			i(57139),	-- Night Web Crossbow
-			i(73211),	-- Trainee's Crossbow
 		}),
 		filter(DAGGERS, {
 			i(20983),	-- Acolyte's Dagger
@@ -1357,9 +1293,6 @@ local f = root("CommonQualityItems", {
 			i(10547),	-- Camping Knife
 			i(3445),	-- Ceremonial Knife
 			i(7166),	-- Copper Dagger
-			i(73236),	-- Dagger of Silent Flame
-			i(74592),	-- Dagger of the Hozen
-			i(73238),	-- Dagger of the Master
 			i(44652),	-- Dalaran Dagger
 			i(3296),	-- Deadman Dagger
 			i(2139),	-- Dirk
@@ -1367,7 +1300,6 @@ local f = root("CommonQualityItems", {
 			i(40005),	-- Forsaken Blade
 			i(3268),	-- Forsaken Dagger
 			i(54979),	-- Godfrey's Dagger
-			i(74590),	-- Jade Hilted Dagger
 			i(2207),	-- Jambiya
 			i(2209),	-- Kris
 			i(2526),	-- Main Gauche
@@ -1391,8 +1323,6 @@ local f = root("CommonQualityItems", {
 			i(2494),	-- Stiletto
 			i(20836),	-- Sunstrider Dagger
 			i(5392),	-- Thistlewood Dagger
-			i(73212),	-- Trainee's Dagger
-			i(73208),	-- Trainee's Dagger
 			i(2787),	-- Trogg Dagger
 			i(2137),	-- Whittling Knife
 		}),
@@ -1481,8 +1411,6 @@ local f = root("CommonQualityItems", {
 			i(33012),	-- Terokkar Lilac
 			i(6653),	-- Torch of the Dormant Flame
 			i(6654),	-- Torch of the Eternal Flame
-			i(76393),	-- Trainee's Book of Prayers
-			i(76392),	-- Trainee's Hand Fan
 			i(8625),	-- White Sparkler
 			i(44678),	-- Wine Glass
 		}),
@@ -1511,7 +1439,6 @@ local f = root("CommonQualityItems", {
 			i(19292),	-- Last Month's Mutton
 			i(19293),	-- Last Year's Mutton
 			i(852),		-- Mace
-			i(73237),	-- Mace of the Master
 			i(24431),	-- McWeaksauce's Meat Tenderizer
 			i(5580),	-- Militia Hammer
 			i(2532),	-- Morning Star
@@ -1526,7 +1453,6 @@ local f = root("CommonQualityItems", {
 			i(1913),	-- Studded Blackjack
 			i(20840),	-- Sunstrider Mace
 			i(10544),	-- Thistlewood Maul
-			i(73207),	-- Trainee's Mace
 			i(2064),	-- Trogg Club
 			i(2524),	-- Truncheon
 		}),
@@ -1592,7 +1518,6 @@ local f = root("CommonQualityItems", {
 			i(2448),	-- Heavy Pavise
 			i(15478),	-- Charger's Shield
 			i(4937),	-- Charging Buckler
-			i(74587),	-- Jade Shield
 			i(2446),	-- Kite Shield
 			i(2445),	-- Large Metal Shield
 			i(2129),	-- Large Round Shield
@@ -1609,7 +1534,6 @@ local f = root("CommonQualityItems", {
 			i(17192),	-- Reinforced Targe
 			i(17188),	-- Ringed Buckler
 			i(17185),	-- Round Buckler
-			i(73233),	-- Shield of Blazing Will
 			i(17184),	-- Small Shield
 			i(17186),	-- Small Targe
 			i(4263),	-- Standard Issue Shield
@@ -1618,7 +1542,6 @@ local f = root("CommonQualityItems", {
 			i(9444),	-- Techbot CPU Shell
 			i(4911),	-- Thick Bark Buckler
 			i(6203),	-- Thuggish Shield
-			i(73213),	-- Trainee's Shield
 			i(3649),	-- Tribal Buckler
 			i(4967),	-- Tribal Warrior's Shield
 			i(1202),	-- Wall Shield
@@ -1650,8 +1573,7 @@ local f = root("CommonQualityItems", {
 			i(928),		-- Long Staff
 			i(20853),	-- Mana Gathering Staff
 			i(1159),	-- Militia Quarterstaff
-			i(85575),	-- Peacebringer's Staff
-			i(79740),	-- Plain Wooden Staff
+			i(79740),	-- Plain Wooden Staff	-- TODO Mists of Pandaria
 			i(5778),	-- Primitive Walking Stick
 			i(854),		-- Quarter Staff
 			i(60830),	-- Rockmagus Stave
@@ -1659,13 +1581,10 @@ local f = root("CommonQualityItems", {
 			i(2132),	-- Short Staff
 			i(22959),	-- Smooth Metal Staff
 			i(5581),	-- Smooth Walking Staff
-			i(74593),	-- Staff of the Hozen
-			i(73239),	-- Staff of the Master
 			i(20839),	-- Sunstrider Staff
 			i(24434),	-- The Discipline Stick
 			i(5393),	-- Thistlewood Staff
 			i(66247),	-- Timeworn Staff
-			i(73209),	-- Trainee's Staff
 			i(23371),	-- Velania's Walking Stick
 			i(3327),	-- Vile Fin Oracle Staff
 			i(2495),	-- Walking Stick
@@ -1711,9 +1630,7 @@ local f = root("CommonQualityItems", {
 			i(3935),	-- Smotts' Cutlass
 			i(2268),	-- Stonesplinter Blade
 			i(20835),	-- Sunstrider Sword
-			i(74591),	-- Sword of the Hozen
 			i(5586),	-- Thistlewood Blade
-			i(76390),	-- Trainee's Spellblade
 			i(1008),	-- Well-Used Sword
 		}),
 		filter(TWO_HANDED_SWORDS, {
@@ -1732,14 +1649,11 @@ local f = root("CommonQualityItems", {
 			i(2521),	-- Flamberge
 			i(5779),	-- Forsaken Bastard Sword
 			i(40004),	-- Forsaken Greatsword
-			i(74589),	-- Jade Hilted Sword
 			i(142274),	-- Keleseth's Persuader	-- TODO Legion
 			i(6741),	-- Orcish War Sword
 			i(8177),	-- Practice Sword
 			i(24430),	-- Seafarer's Blade
-			i(73235),	-- Sword of the Burning Spirit
 			i(2754),	-- Tarnished Bastard Sword
-			i(73210),	-- Trainee's Sword
 			i(2489),	-- Two-Handed Sword
 			i(57155),	-- Worgen Slaying Sword
 			i(49778),	-- Worn Greatsword
@@ -1786,6 +1700,23 @@ end
 -- Never Implemented Common Items --
 -- Do not move this elsewhere, please leave it here for now. -Darkal
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+	tier(MOP_TIER, {
+		-- NYI Mists of Pandaria Common Items
+		n(ARMOR, {
+			filter(CLOTH, {
+				n(FEET, {
+					i(72021),	-- Trainee's Boots
+				}),
+			}),
+		}),
+		n(ARMOR, {
+			filter(LEATHER, {
+				n(HANDS, {
+					i(87265),	-- Tiger Palm Wraps
+				}),
+			}),
+		}),
+	}),
 	tier(WOD_TIER, {
 		-- NYI Warlods of Draenor Common Items
 		n(ARMOR, {
