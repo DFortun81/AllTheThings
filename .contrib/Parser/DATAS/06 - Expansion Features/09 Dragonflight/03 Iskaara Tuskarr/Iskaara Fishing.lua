@@ -257,6 +257,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			n(RARES, sharedData({
 				["description"] = "Chance to spawn after using 5 |cffffffffOminous Conches|r at specific |cffffffffLarge Lunker Sighting|r Locations.",
 				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
+				["isDaily"] = true,
 			},{
 				-- For all we know, the available Lunkers could also be related to the user's tuskarr fishing unlock progress as well...
 				n(197411, {	-- Astray Splasher <Lunker>
@@ -398,6 +399,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 			}),
 			--[[ -- To Do: Add Tuskarr Tackleboxes. Can be looted from Tuskarr Tackleboxes (requires renown 27 to see)
+				-- we probably dont need coords of every tuskarr tacklebox location, there's about a billion of them and they respawn so fast you can't even escape one area
 				i(199338),	-- Copper Coin of the Isles
 				i(199340),	-- Gold Coin of the Isles
 				i(199339),	-- Silver Coin of the Isles
