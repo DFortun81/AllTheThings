@@ -1708,8 +1708,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(72021),	-- Trainee's Boots
 				}),
 			}),
-		}),
-		n(ARMOR, {
 			filter(LEATHER, {
 				n(HANDS, {
 					i(87265),	-- Tiger Palm Wraps
