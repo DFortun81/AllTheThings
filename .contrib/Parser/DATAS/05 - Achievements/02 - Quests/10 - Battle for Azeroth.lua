@@ -366,5 +366,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		})),
 		h(ach(12555)),	-- Welcome to Zandalar
 		ach(13144),		-- Wide World of Quests
+
+		achcat(ACHIEVEMENT_CATEGORY_SHADOWLANDS_QUESTS, {["timeline"] = { ADDED_SL_REL }}),
+		achcat(ACHIEVEMENT_CATEGORY_DRAGONFLIGHT_QUESTS, {["timeline"] = TIMELINE_DF_REL }),
 	}),
 }));

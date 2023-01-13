@@ -1599,9 +1599,7 @@ root("HiddenQuestTriggers", {
 		q(60848),	-- triggered when looting one of the Greater Greedstone treasures
 		q(59432),	-- triggered when turning in #59661, "Ember Court Rehearsal"
 		q(61438),	-- triggered when turning in #61404, "Ember Court: Tubbins's Tea Party"
-		q(59506),	-- triggered when signing Tubbins's Contract (used on the item itself)
 		q(59507),	-- triggered when signing Tubbins's Contract
-		q(59494),	-- Ember Court: Atoning Rituals
 		q(62813),	-- triggered when looting Atonement Crypt Key while on #60236, "RSVP: Cryptkeeper Kassir"
 		q(62814),	-- triggered when opening a crypt with the key
 		q(59495),	-- when using Contract: Atoning Rituals (59594)
@@ -1656,7 +1654,7 @@ root("HiddenQuestTriggers", {
 		q(62505),	-- ""
 		q(62487),	-- Ember Court End - Baroness/H-C K/Choofa/Stonehead Elated
 		q(62503),	-- Ember Court End - Baroness/H-C K/Choofa/Stonehead Elated
-		q(62529),	-- ""
+		q(62529),	-- Ember Court End - Four Elated Guests
 		q(62488),	-- Ember Court End - (Lady Moonberry / Rendle&Cudgelface as first-time guests, Elated and Very Happy respectively, had Casual maxed)
 		q(62494),	-- ""
 		q(62518),	-- ""
@@ -1672,11 +1670,7 @@ root("HiddenQuestTriggers", {
 		q(58064),	-- when choosing House Sourwine while on "Enacting Immediate Justice"
 		q(58065),	-- when choosing House Duskmire while on "Enacting Immediate Justice"
 		q(58066),	-- when choosing House Sinfang while on "Enacting Immediate Justice"
-		-- q(59682),	-- triggered when using "Crown of Honor"
-		q(59684),	-- Using 'Bounding Shroom Seeds' (177233)
-		q(59694),	-- Using 'Night Fae Arsenal' (177244)
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
-		q(59686),	-- triggered when using Tubbins's Lucky Teapot
 		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)	— incremental power/ability boosts each time you complete the WQ
 		q(60610),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)
 		q(60612),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor rank 2 WQ (as assassin)
@@ -1688,7 +1682,6 @@ root("HiddenQuestTriggers", {
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
 		q(60302),	-- when channeling anima to Dominance Keep for the first time
-		q(61502),	-- when using Invitation: Choofa
 		q(62533),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(62534),	-- when completing 'Sootible Hat: Pink Party Hat' (62556) (2nd time)
 		q(63354),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
@@ -1698,13 +1691,9 @@ root("HiddenQuestTriggers", {
 		q(61224),	-- "Ashen Urn" buff from Anima Conductor
 		q(61197),	-- "Mobile Mirror Set" buff from Anima Conductor
 		q(61210),	-- "Thirst for Anima" buff from Anima Conductor
-		q(59685),	-- when using Rally Bell
 		q(61577),	-- triggered when turning in #62174, "A Proper Cover"
 		q(62532),	-- think this was from doing the Sootible Hat: Pink Party Hat quest
 		q(63355),	-- think this was from doing the Sootible Hat: Fae Revel Mask quest (these 2 may be swapped/opposite, they both popped at once)
-		q(59687),	-- using "Dog Bone's Bone"
-		q(59681),	-- using "Anima-Infused Water"
-		q(61455),	-- using "Protective Braziers"
 		q(63428),	-- triggers when choosing to skip the Necrolord sanctum intro quests
 
 		-- The Maw

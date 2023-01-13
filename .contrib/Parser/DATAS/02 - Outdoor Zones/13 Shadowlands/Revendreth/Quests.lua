@@ -55,8 +55,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["provider"] = { "n", 155533 },	-- Lord Chamberlain
 					["coord"] = { 67.5, 68.5, REVENDRETH },
 					["g"] = {
-						i(175439),	-- Sash of Pained Absolution
 						i(175441),	-- Nightcloaked Belt
+						i(175439),	-- Sash of Pained Absolution
 						i(175440),	-- Soul Hunter's Belt
 						i(175438),	-- Stoneforged Girdle
 					},
@@ -139,10 +139,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["provider"] = { "n", 164166 },	-- Echelon
 					["coord"] = { 65.9, 47.1, REVENDRETH },
 					["g"] = {
-						i(175442),	-- Wraps of Pained Absolution
 						i(175445),	-- Nightcloaked Bindings
 						i(175444),	-- Soul Hunter's Bracers
 						i(175443),	-- Stoneforged Vambraces
+						i(175442),	-- Wraps of Pained Absolution
 					},
 				}),
 				q(57176, {	-- Sinstone Delivery
@@ -228,7 +228,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["sourceQuests"] = { 60506 },	-- The Accuser
 					["provider"] = { "n", 156554 },	-- The Accuser
 					["coord"] = { 51.5, 59.1, REVENDRETH },
-					["maps"] = { 1755 },	-- Castle Nathria (scenario version)
+					["maps"] = { 1755 },	-- Castle Nathria (Scenario Map)
 				}),
 				q(60313, {	-- Dredhollow
 					["sourceQuests"] = { 57159 },	-- A Reflection of Truth
@@ -240,13 +240,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["provider"] = { "n", 168217 },	-- The Accuser
 					["coord"] = { 43.2, 73.8, REVENDRETH },
 					["g"] = {
-						i(177646),	-- Vicious Dredblade
-						i(177651),	-- Nimble Hopebreaker's Rapier
-						i(177650),	-- Stalwart Hopebreaker's Rapier
 						i(177648),	-- Honed Dredglaive
+						i(177651),	-- Nimble Hopebreaker's Rapier
 						i(177652),	-- Splinterball Morningstar
-						i(177634),	-- Vial of Volatile Essence
+						i(177650),	-- Stalwart Hopebreaker's Rapier
 						i(177633),	-- Steelbound Heater Shield
+						i(177634),	-- Vial of Volatile Essence
+						i(177646),	-- Vicious Dredblade
 					},
 				}),
 				q(59209, {	-- Rebel Reinforcements
@@ -274,8 +274,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["provider"] = { "n", 168468 },	-- The Accuser
 					["coord"] = { 39.6, 81.2, REVENDRETH },
 					["g"] = {
-						i(175485),	-- Shoes of Pained Absolution
 						i(175487),	-- Nightcloaked Shoes
+						i(175485),	-- Shoes of Pained Absolution
 						i(175486),	-- Soul Hunter's Boots
 						i(175484),	-- Stoneforged Sabatons
 					},
@@ -338,8 +338,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["g"] = {
 						i(179988),	-- Ash-Scored Girdle
 						i(179991),	-- Light-Bleached Greaves
-						i(179990),	-- Shattereye's Chestguard
 						i(179989),	-- Marquis's Lace Cuffs
+						i(179990),	-- Shattereye's Chestguard
 					},
 				}),
 				q(60566, {	-- Into the Light
@@ -352,19 +352,19 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["provider"] = { "n", 169105 },	-- Breakfist
 					["coord"] = { 30.4, 45.6, REVENDRETH },
 					["g"] = {
-						i(177642),	-- Sinfall Darkblade
-						i(177641),	-- Sinfall Inquisitor's Dagger
-						i(177643),	-- Sinfall Duelist's Rapier
-						i(177639),	-- Sinfall Guardian's Rapier
-						i(177644),	-- Sinfall Reclaimer's Greatmace
-						i(177638),	-- Sinfall Edgemaster's Blade
 						i(177637),	-- Sinfall Arquebus
+						i(177642),	-- Sinfall Darkblade
+						i(177643),	-- Sinfall Duelist's Rapier
+						i(177638),	-- Sinfall Edgemaster's Blade
+						i(177639),	-- Sinfall Guardian's Rapier
+						i(184320),	-- Sinfall Initiate's Staff
+						i(177641),	-- Sinfall Inquisitor's Dagger
 						i(177635, {	-- Sinfall Legion Smasher
-							["f"] = TWO_HANDED_MACES,	-- (for some reason erroneously has filterID of 23, which is 1H maces)
+							["filterID"] = TWO_HANDED_MACES,	-- BLIZZARD?!
 						}),
 						i(177636),	-- Sinfall Legionaire's Barbed Staff
+						i(177644),	-- Sinfall Reclaimer's Greatmace
 						i(184326),	-- Sinfall Stoneborn Cudgel
-						i(184320),	-- Sinfall Initiate's Staff
 					},
 				}),
 
@@ -413,16 +413,16 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["sourceQuests"] = { 59644 },	-- Blinded By The Light
 					["provider"] = { "n", 172673 },	-- Projection of Prince Renathal
 					["coord"] = { 32.1, 41.4, REVENDRETH },
-					["maps"] = { 1688 },	-- Revendreth (scenario version)
+					["maps"] = { 1688 },	-- Revendreth (Scenario Map)
 					["g"] = {
-						i(175480),	-- Robe of Pained Absolution
 						i(175492),	-- Cowl of Pained Absolution
 						i(175483),	-- Nightcloaked Chestpiece
 						i(175494),	-- Nightcloaked Helm
-						i(175482),	-- Soul Hunter's Vest
+						i(175480),	-- Robe of Pained Absolution
 						i(175493),	-- Soul Hunter's Headgear
-						i(175481),	-- Stoneforged Hauberk
+						i(175482),	-- Soul Hunter's Vest
 						i(175479),	-- Stoneforged Cover
+						i(175481),	-- Stoneforged Hauberk
 					},
 				}),
 					-- The End --
@@ -446,8 +446,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 						["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
 						["coord"] = { 59.9, 68.9, REVENDRETH },
 						["g"] = {
-							i(178067),	-- Mitts of Pained Absolution
 							i(178071),	-- Amice of Pained Absolution
+							i(178067),	-- Mitts of Pained Absolution
 							i(178065),	-- Nightcloaked Mitts
 							i(178069),	-- Nightcloaked Mantle
 							i(178068),	-- Soul Hunter's Gloves
@@ -479,14 +479,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 						["provider"] = { "n", 166081 },	-- Taskmaster Matyas
 						["coord"] = { 60.1, 69.4, REVENDRETH },
 						["g"] = {
-							i(175496),	-- Pantaloons of Pained Absolution
 							i(175498),	-- Nightcloaked Pants
+							i(175418),	-- Nightcloaked Vest
+							i(175496),	-- Pantaloons of Pained Absolution
+							i(175417),	-- Soul Hunter's Hauberk
 							i(175497),	-- Soul Hunter's Legguards
+							i(175416),	-- Stoneforged Chestplate
 							i(175495),	-- Stoneforged Greaves
 							i(175415),	-- Vestments of Pained Absolution
-							i(175418),	-- Nightcloaked Vest
-							i(175417),	-- Soul Hunter's Hauberk
-							i(175416),	-- Stoneforged Chestplate
 						},
 					}),
 					q(59868, {	-- Offer of Freedom
@@ -510,15 +510,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 						["provider"] = { "n", 166616 },	-- Nadjia the Mistblade
 						["coord"] = { 60.2, 78.6, REVENDRETH },
 						["g"] = {
-							i(178057),	-- Nobleman's Quickblade
-							i(178058),	-- Cavalier's Morningstar
-							i(178056),	-- Stonevigil Rapier
-							i(178055),	-- Briarbane Glaive
 							i(178054),	-- Briarbane Carbine
-							i(178059),	-- Sacred Morningstar
-							i(178053),	-- Thicket Sweeper
+							i(178055),	-- Briarbane Glaive
 							i(178060),	-- Briarbane Halberd
+							i(178058),	-- Cavalier's Morningstar
+							i(178057),	-- Nobleman's Quickblade
+							i(178059),	-- Sacred Morningstar
 							i(177640),	-- Sinstealer's Staff
+							i(178056),	-- Stonevigil Rapier
+							i(178053),	-- Thicket Sweeper
 						},
 					}),
 				},
@@ -587,10 +587,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 						["provider"] = { "n", 157898 },	-- Bootus
 						["coord"] = { 72.8, 73.9, REVENDRETH },
 						["g"] = {
-							i(177656),	-- Boot-a-Charge Flyers
 							i(177655),	-- Air Bootuses
-							i(177654),	-- Bootus Shocks
+							i(177656),	-- Boot-a-Charge Flyers
 							i(177653),	-- Bootus Hardeneds
+							i(177654),	-- Bootus Shocks
 						},
 					}),
 				},
@@ -717,10 +717,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 						["coord"] = { 24.2, 49.4, REVENDRETH },
 						["g"] = {
 							i(175507),	-- Bindings of Pained Absolution
+							i(175716),	-- Emberscorched Band
 							i(175510),	-- Nightcloaked Bracers
 							i(175509),	-- Soul Hunter's Wristguards
 							i(175508),	-- Stoneforged Wristguards
-							i(175716),	-- Emberscorched Band
 						},
 					}),
 					q(57535, {	-- Escaping the Master
@@ -826,8 +826,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 					["g"] = {
 						i(182586, {	-- A Venthyr Arm Holding a Cudgel
-							i(182587), -- Gorger Slobbered Cudgel
 							i(182588), -- A Bloody Hand
+							i(182587), -- Gorger Slobbered Cudgel
 						}),
 					}
 				}),
@@ -861,19 +861,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["coord"] = { 48.5, 68.5, REVENDRETH },
 			}),
 			q(57928, {	-- Atonement Crypt Key
-			--	using a description instead of ["crs"] because i think the quest showing up in mobs' tooltips prior to its availability would be confusing/potentially cause people to waste time killing the mobs when they can't get the item/quest
-				["sourceQuests"] = { 57925 },	-- Archivist Fane
 				["description"] = "The quest item drops from Depraved and Dredger mobs in the Court of the Harvesters.",
+				["sourceQuests"] = { 57925 },	-- Archivist Fane
 				["provider"] = { "i", 172957 },	-- Atonement Crypt Key
 			}),
 			q(58936, {	-- Beast Control
-			--	TODO: verify SQs.  i saw it after turning in 57098, "The Grove of Terror," not sure if it was available before that
+				["sourceQuests"] = { 57098 },	-- The Grove of Terror
 				["provider"] = { "o", 355296 },	-- Bounty: Beast Control
 				["coord"] = { 49.6, 75.9, REVENDRETH },
 			}),
 			q(58717, {	-- Bell of Remembrance
-				["coord"] = { 67.0, 33.6, REVENDRETH },
 				["provider"] = { "i", 174674 },	-- Bell of Remembrance
+				["coord"] = { 67.0, 33.6, REVENDRETH },
 				["crs"] = { 160716 },	-- Sinstone Rampager
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
 			}),
@@ -971,63 +970,41 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				},
 			}),
 			n(BONUS_OBJECTIVES, {
-				-- TODO: Check Rewards they are true for Druid and Monk atm.
 				q(57177, {	-- A Fresh Start
 					["description"] = "Probably have to be on quest 57175, Inquisitor Vilhelm's Sinstone for this to show up.",
 					["sourceQuests"] = { 59021 },	-- Herald Their Demise
 				}),
-				q(62781, {	-- Ash You Like It (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						i(181334),	-- Essence Extractor
-					},
-					["timeline"] = { "added 9.0.2", REMOVED_DF_PRE2 },
-				}),
-				q(62784, {	-- Charlatans (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						i(181185),	-- Soulstalker Breeches
-					},
-					["timeline"] = { "added 9.0.2", REMOVED_DF_PRE2 },
-				}),
 				q(59211, {	-- Forgotten Village
 					["sourceQuests"] = { 60313 },	-- Dredhollow
 					["lvl"] = { 58, 59 },
-					-- still not 100% confirmed on a way to actually complete this quest, either on fresh character or 60
 					["lockCriteria"] = { 1, "lvl", 60 },
 				}),
-				q(62780, {	-- Parasites of Reality (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						i(181183),	-- Soulstalker Grips
-					},
-					["timeline"] = { "added 9.0.2", REMOVED_DF_PRE2 },
-				}),
-				q(62783, {	-- Stalking Fear (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						i(181187),	-- Soulstalker Bindings
-					},
-					["timeline"] = { "added 9.0.2", REMOVED_DF_PRE2 },
-				}),
-				q(62782, {	-- The Banewood (pre-60)
-					["customCollect"] = "SL_SKIP",	-- SL Skip Character
-					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-					["g"] = {
-						i(181184),	-- Soulstalker Helm
-					},
-					["timeline"] = { "added 9.0.2", REMOVED_DF_PRE2 },
-				}),
 			}),
+			n(BONUS_OBJECTIVES, sharedData({
+				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
+				["customCollect"] = "SL_SKIP",	-- SL Skip Character
+			}, bubbleDown({
+				["timeline"] = { ADDED_SL_REL, REMOVED_DF_PRE2 },
+			}, {
+				q(62781, {	-- Ash You Like It [Pre-60]
+					i(181334),	-- Essence Extractor
+				}),
+				q(62784, {	-- Charlatans [Pre-60]
+					i(181185),	-- Soulstalker Breeches
+				}),
+				q(62780, {	-- Parasites of Reality [Pre-60]
+					i(181183),	-- Soulstalker Grips
+				}),
+				q(62783, {	-- Stalking Fear [Pre-60]
+					i(181187),	-- Soulstalker Bindings
+				}),
+				q(62782, {	-- The Banewood [Pre-60]
+					i(181184),	-- Soulstalker Helm
+				}),
+			}))),
 		}),
 		-- Random Zone Dailies
-		n(QUESTS, sharedData({
-				["isDaily"] = true,
-			},{
+		n(QUESTS, sharedData({ ["isDaily"] = true },{
 			q(62184, {	-- A Crate of Sinvyr Ore
 				["provider"] = { "i", 182728 },	-- A Crate of Sinvyr Ore
 			}),
@@ -1036,6 +1013,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 			}),
 			q(62182, {	-- A Letter From Nadja
 				["provider"] = { "i", 182726 },	-- Nadja's Letter
+			}),
+			q(60517, {	-- The Toll of the Road
+				["provider"] = { "i", 179363 },	-- 'Misplaced' Anima Tolls
 			}),
 		})),
 		-- Dailies that become available once unlocking the BMAH

@@ -99,6 +99,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				i(181211),	-- Souldrinker's Kris
 				i(181187),	-- Soulstalker Bindings
 				i(181185),	-- Soulstalker Breeches
+				i(181205),	-- Soulstalker Epaulets
 				i(181183),	-- Soulstalker Grips
 				i(181184),	-- Soulstalker Helm
 				i(181186),	-- Stalker Wight's Sash

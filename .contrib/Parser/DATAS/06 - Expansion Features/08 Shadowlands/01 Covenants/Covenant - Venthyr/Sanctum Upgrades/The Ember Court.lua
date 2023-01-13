@@ -136,40 +136,380 @@ local SILVERTIP_DREDWING = i(181316, {	-- -- Silvertip Dredwing (MOUNT!)
 	["cost"] = { { "c", ANIMA, 5000 } },
 });
 
-root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
+root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL }, ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = "Interface\\Icons\\Inv_misc_sigil_revendreth01",
 			["g"] = {
 				n(EMBER_COURT, {
-					["maps"] = { 1644 },	-- Ember Court (scenario)
+					["maps"] = { 1644 },	-- Ember Court (Scenario Map)
 					["g"] = {
 						n(ACHIEVEMENTS, {
-							ach(14749),	-- Rendle's Big Day
-							ach(14682, {	-- The Party Herald
-								title(433),	-- The Party Herald
-								ach(14723),		-- Be Our Guest
-								ach(14678),		-- Court Favors
-								ach(14681),		-- Dredger Academy
-								ach(14683),		-- Dredger Style
-								ach(14726, {	-- It's Certainly Never Boring
-									crit(1),	-- Messy
-									crit(2),	-- Clean
-									crit(3),	-- Safe
-									crit(4),	-- Dangerous
-									crit(5),	-- Humble
-									crit(6),	-- Decadent
-									crit(7),	-- Relaxing
-									crit(8),	-- Exciting
-									crit(9),	-- Casual
-									crit(10),	-- Formal
+							ach(14723, {	-- Be Our Guest
+								crit(1, {	-- Baroness Vashj
+									["_npcs"] = { 168444 },
 								}),
-								ach(14727),		-- Master of Ceremonies
-								ach(14679),		-- Party Palace
-								ach(14724),		-- People Pleaser
-								ach(14680),		-- Something for Everyone
-								ach(14725),		-- We Happy Few
+								crit(2, {	-- Lady Moonberry
+									["_npcs"] = { 171830 },
+								}),
+								crit(3, {	-- Mikanikos
+									["_npcs"] = { 171831 },
+								}),
+								crit(4, {	-- The Countess
+									["_npcs"] = { 165269 },
+								}),
+								crit(5, {	-- Alexandros Mograine
+									["_npcs"] = { 171833 },
+								}),
+								crit(6, {	-- Hunt-Captain Korayn
+									["_npcs"] = { 171836 },
+								}),
+								crit(7, {	-- Polemarch Adrestes
+									["_npcs"] = { 168447 },
+								}),
+								crit(8, {	-- Rendle and Cudgelface
+									["_npcs"] = {
+										171841,	-- Cudgelface
+										171839,	-- Rendle
+									},
+								}),
+								crit(9, {	-- Choofa
+									["_npcs"] = { 168449 },
+								}),
+								crit(10, {	-- Cryptkeeper Kassir
+									["_npcs"] = { 168450 },
+								}),
+								crit(11, {	-- Droman Aliothe
+									["_npcs"] = { 171847 },
+								}),
+								crit(12, {	-- Grandmaster Vole
+									["_npcs"] = { 171848 },
+								}),
+								crit(13, {	-- Kleia and Pelagos
+									["_npcs"] = {
+										171850,	-- Kleia
+										171851,	-- Pelagos
+									},
+								}),
+								crit(14, {	-- Plague Deviser Marileth
+									["_npcs"] = { 171852 },
+								}),
+								crit(15, {	-- Sika
+									["_npcs"] = { 171854 },
+								}),
+								crit(16, {	-- Stonehead
+									["_npcs"] = { 171856 },
+								}),
 							}),
+							ach(14678, {	-- Court Favors
+								crit(1, {	-- Anima-Infused Water
+									["_quests"] = { 59681 },
+								}),
+								crit(2, {	-- Crown of Honor
+									["_quests"] = { 59682 },
+								}),
+								crit(3, {	-- Bewitched Wardrobe
+									["_quests"] = { 59683 },
+								}),
+								crit(4, {	-- Bounding Shroom Seeds
+									["_quests"] = { 59684 },
+								}),
+								crit(5, {	-- Rally Bell
+									["_quests"] = { 59685 },
+								}),
+								crit(6, {	-- Tubbins's Lucky Teapot
+									["_quests"] = { 59686 },
+								}),
+								crit(7, {	-- Dog Bone's Bone
+									["_quests"] = { 59687 },
+								}),
+								crit(8, {	-- Dredger Party Supplies
+									["_quests"] = { 59688 },
+								}),
+								crit(9, {	-- Generous Gift
+									["_quests"] = { 59689 },
+								}),
+								crit(10, {	-- Racing Permit
+									["_quests"] = { 59690 },
+								}),
+								crit(11, {	-- Necrolord Arsenal
+									["_quests"] = { 59691 },
+								}),
+								crit(12, {	-- Venthyr Arsenal
+									["_quests"] = { 59692 },
+								}),
+								crit(13, {	-- Kyrian Arsenal
+									["_quests"] = { 59693 },
+								}),
+								crit(14, {	-- Night Fae Arsenal
+									["_quests"] = { 59694 },
+								}),
+								crit(15, {	-- Maldraxxi Challenge Banner
+									["_quests"] = { 59695 },
+								}),
+								crit(16, {	-- Vanity Mirror
+									["_quests"] = { 61452 },
+								}),
+								crit(17, {	-- Training Dummies
+									["_quests"] = { 61453 },
+								}),
+								crit(18, {	-- The Wild Drum
+									["_quests"] = { 61454 },
+								}),
+								crit(19, {	-- Protective Braziers
+									["_quests"] = { 61455 },
+								}),
+								crit(20, {	-- Slippery Muck
+									["_quests"] = { 61456 },
+								}),
+								crit(21, {	-- Altar of Accomplishment
+									["_quests"] = { 61457 },
+								}),
+							}),
+							ach(14681, {	-- Dredger Academy
+								crit(1, {	-- Ardenweald Etiquette
+									["_quests"] = { 62206 },	-- Ardenweald Etiquette
+								}),
+								crit(2, {	-- Bastion Etiquette
+									["_quests"] = { 62207 },	-- Bastion Etiquette
+								}),
+								crit(3, {	-- Maldraxxus Etiquette
+									["_quests"] = { 62208 },	-- Maldraxxi Protocols
+								}),
+								crit(4, {	-- Revendreth Etiquette
+									["_quests"] = { 62205 },	-- Venthyr Ettiquette
+								}),
+								crit(5, {	-- Sinrunner Riding
+									["_quests"] = { 62221 },	-- My Own Death Pony!
+								}),
+								crit(6, {	-- Dredbat Riding
+									["_quests"] = { 62222 },	-- On Silver Wings
+								}),
+							}),
+							ach(14683, {	-- Dredger Style
+								crit(1, {	-- Black Muck Armor Dye
+									["_quests"] = { 62178 },	-- Black Muck Dye
+								}),
+								crit(2, {	-- Blue Muck Armor Dye
+									["_quests"] = { 62179 },	-- Blue Muck Dye
+								}),
+								crit(3, {	-- Green Muck Armor Dye
+									["_quests"] = { 62180 },	-- Green Muck Dye
+								}),
+								crit(4, {	-- Bubbling Muck Armor Dye
+									["_quests"] = { 62181 },	-- Bubbling Red Muck Dye
+								}),
+								crit(5, {	-- Thin Hair Cut
+									["_quests"] = { 62177 },	-- A Memorable Look
+								}),
+								crit(6, {	-- Spikey Hair Cut
+									["_quests"] = { 62176 },	-- The Spikey Look
+								}),
+								crit(7, {	-- Full Flowing Hair Cut
+									["_quests"] = { 62175 },	-- Looking Fabulous
+								}),
+								crit(8, {	-- Dredger Lether Coif
+									["_quests"] = { 62174 },	-- A Proper Cover
+								}),
+								crit(9, {	-- Short Sleeved Doublet
+									["_quests"] = { 62172 },	-- Shortsleeved Doublet
+								}),
+								crit(10, {	-- Long Sleeved Doublet
+									["_quests"] = { 62173 },	-- Long Sleeved Doublet
+								}),
+							}),
+							ach(14726, {	-- It's Certainly Never Boring
+								crit(1),	-- Messy
+								crit(2),	-- Clean
+								crit(3),	-- Safe
+								crit(4),	-- Dangerous
+								crit(5),	-- Humble
+								crit(6),	-- Decadent
+								crit(7),	-- Relaxing
+								crit(8),	-- Exciting
+								crit(9),	-- Casual
+								crit(10),	-- Formal
+							}),
+							ach(14727),		-- Master of Ceremonies
+							ach(14679, {	-- Party Palace
+								crit(1, {	-- Building: Dredger Pool
+									["_quests"] = { 61493 },
+								}),
+								crit(2, {	-- Building: Guardhouse
+									["_quests"] = { 61494 },
+								}),
+								crit(3, {	-- Staff: Dredger Decorators
+									["_quests"] = { 59435 },
+								}),
+								crit(4, {	-- Staff: Stage Crew
+									["_quests"] = { 59436 },
+								}),
+								crit(5, {	-- Staff: Waiters
+									["_quests"] = { 59433 },
+								}),
+								crit(6, {	-- Staff: Bouncers
+									["_quests"] = { 59437 },
+								}),
+								crit(7, {	-- Staff: Revendreth Ambassador
+									["_quests"] = { 61501 },
+								}),
+								crit(8, {	-- Staff: Ardenweald Ambassador
+									["_quests"] = { 61502 },
+								}),
+								crit(9, {	-- Staff: Maldraxxus Ambassador
+									["_quests"] = { 61887 },
+								}),
+								crit(10, {	-- Staff: Bastion Ambassador
+									["_quests"] = { 61888 },
+								}),
+								crit(11, {	-- Stock: Greeting Kits
+									["_quests"] = { 61497 },
+								}),
+								crit(12, {	-- Stock: Appetizers
+									["_quests"] = { 61498 },
+								}),
+								crit(13, {	-- Stock: Anima Samples
+									["_quests"] = { 61499 },
+								}),
+								crit(14, {	-- Stock: Comfy Chairs
+									["_quests"] = { 61500 },
+								}),
+								crit(15, {	-- Second Guest List Page
+									["_quests"] = { 61504 },
+								}),
+								crit(16, {	-- Third Guest List Page
+									["_quests"] = { 61505 },
+								}),
+								crit(17, {	-- Fourth Guest List Page
+									["_quests"] = { 61506 },
+								}),
+							}),
+							ach(14724, {	-- People Pleaser
+								crit(1, {	-- Baroness Vashj
+									["_npcs"] = { 168444 },
+								}),
+								crit(2, {	-- Lady Moonberry
+									["_npcs"] = { 171830 },
+								}),
+								crit(3, {	-- Mikanikos
+									["_npcs"] = { 171831 },
+								}),
+								crit(4, {	-- The Countess
+									["_npcs"] = { 165269 },
+								}),
+								crit(5, {	-- Alexandros Mograine
+									["_npcs"] = { 171833 },
+								}),
+								crit(6, {	-- Hunt-Captain Korayn
+									["_npcs"] = { 171836 },
+								}),
+								crit(7, {	-- Polemarch Adrestes
+									["_npcs"] = { 168447 },
+								}),
+								crit(8, {	-- Rendle and Cudgelface
+									["_npcs"] = {
+										171841,	-- Cudgelface
+										171839,	-- Rendle
+									},
+								}),
+								crit(9, {	-- Choofa
+									["_npcs"] = { 168449 },
+								}),
+								crit(10, {	-- Cryptkeeper Kassir
+									["_npcs"] = { 168450 },
+								}),
+								crit(11, {	-- Droman Aliothe
+									["_npcs"] = { 171847 },
+								}),
+								crit(12, {	-- Grandmaster Vole
+									["_npcs"] = { 171848 },
+								}),
+								crit(13, {	-- Kleia and Pelagos
+									["_npcs"] = {
+										171850,	-- Kleia
+										171851,	-- Pelagos
+									},
+								}),
+								crit(14, {	-- Plague Deviser Marileth
+									["_npcs"] = { 171852 },
+								}),
+								crit(15, {	-- Sika
+									["_npcs"] = { 171854 },
+								}),
+								crit(16, {	-- Stonehead
+									["_npcs"] = { 171856 },
+								}),
+							}),
+							ach(14749, {	-- Rendle's Big Day
+								crit(1, {	-- Crown of the Righteous
+									["_quests"] = { 62559 },	-- Sootible Hat: Crown of the Righteous
+								}),
+								crit(2, {	-- Fae Revel Masque
+									["_quests"] = { 62558 },	-- Sootible Hat: Fae Revel Masque
+								}),
+								crit(3, {	-- Pink Party Hat
+									["_quests"] = { 62556 },	-- Sootible Hat: Pink Party Hat
+								}),
+								crit(4, {	-- Red Noggin Candle
+									["_quests"] = { 62554 },	-- Sootible Hat: Red Noggin Candle
+								}),
+							}),
+							ach(14680, {	-- Something for Everyone
+								crit(1, {	-- Atoning Rituals
+									["_quests"] = { 59494 },
+								}),
+								crit(2, {	-- Glimpse of the Wilds
+									["_quests"] = { 59491 },
+								}),
+								crit(3, {	-- Lost Chalice Band
+									["_quests"] = { 59488 },
+								}),
+								crit(4, {	-- Tubbins's Tea Party
+									["_quests"] = { 59506 },
+								}),
+								crit(5, {	-- Divine Desserts
+									["_quests"] = { 59503 },
+								}),
+								crit(6, {	-- Mushroom Surprise
+									["_quests"] = { 59500 },
+								}),
+								crit(7, {	-- Traditional Decorations
+									["_quests"] = { 59473 },
+								}),
+								crit(8, {	-- Mortal Reminders
+									["_quests"] = { 59476 },
+								}),
+								crit(9, {	-- Mystery Mirrors
+									["_quests"] = { 59479 },
+								}),
+								crit(10, {	-- Venthyr Volunteers
+									["_quests"] = { 59518 },
+								}),
+								crit(11, {	-- Stoneborn Reserves
+									["_quests"] = { 59515 },
+								}),
+								crit(12, {	-- Maldraxxian Army
+									["_quests"] = { 59512 },
+								}),
+							}),
+							ach(14682, {	-- The Party Herald
+								-- Meta Achievement
+								["sym"] = {{"meta_achievement",
+									14723,	-- Be Our Guest
+									14678,	-- Court Favors
+									14681,	-- Dredger Academy
+									14726,	-- It's Certainly Never Boring
+									14727,	-- Master of Ceremonies
+									14679,	-- Party Palace
+									14724,	-- People Pleaser
+									14680,	-- Something for Everyone
+									14725,	-- We Happy Few
+								}},
+								["g"] = {
+									title(433),	-- The Party Herald
+								},
+							}),
+							ach(14725),		-- We Happy Few
 						}),
 						n(FACTIONS, {
 							faction(2445, {	-- The Ember Court (Venthyr)
@@ -357,14 +697,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							["description"] = "Some rewards drop from the non-Extravagant tribute chests, but targeting the Extravagant tribute from Elated guests is the best way to get rare loot.",	-- typically a few pieces will drop from the regular/medium chests, but it appears to be the same loot that drops from Extravagant chests - just listing the Extravagant chest for source and duplication reduction, especially since some pieces drop from multiple guests' chests
 							["g"] = {
 								o(356697, {	-- Alexandros Mograine's Extravagant Tribute
-									["cr"] = 171833,	-- Alexandros Mograine <The Ashbringer>
+									["crs"] = { 171833 },	-- Alexandros Mograine <The Ashbringer>
 									["g"] = appendGroups(ALEXANDROS_GROUP, {
-										crit(5, {	-- Alexandros Mograine
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(5, {	-- Alexandros Mograine
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(181616),	-- A Treatise on the Great Battles of Lordaeron
 										i(181617),	-- Command the Field
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
@@ -379,14 +713,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 								}),
 								o(356693, {	-- Baroness Vashj's Extravagant Tribute
-									["cr"] = 168444,	-- Baroness Vashj <Matron of Spies>
+									["crs"] = { 168444 },	-- Baroness Vashj <Matron of Spies>
 									["g"] = appendGroups(VASHJ_GROUP, {
-										crit(1, {	-- Baroness Vashj
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(1, {	-- Baroness Vashj
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(178894),	-- Decree: Baroness Vashj's Boon
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
 										i(178892),	-- Decree: Baroness Vashj's Favor
@@ -394,65 +722,37 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									}),
 								}),
 								o(356720, {	-- Choofa's Extravagant Tribute
-									["cr"] = 168449,	-- Choofa
+									["crs"] = { 168449 },	-- Choofa
 									["g"] = appendGroups(CHOOFA_GROUP, {
-										crit(9, {	-- Choofa
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(9, {	-- Choofa
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(178902),	-- Rejuvenating Sprig
 										i(178899),	-- Treecorn
 										i(178901),	-- Vineseed
 										i(183883),	-- Bulging Collection of Random Bits
 										i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
-										i(177233, {	-- Bounding Shroom Seeds
-											crit(4, {	-- Bounding Shroom Seeds
-												["achievementID"] = 14678,	-- Court Favors
-											}),
+										i(177233, {	-- Bounding Shroom Seeds (EC!)
+											["questID"] = 59684,
 										}),
 										i(183882),	-- Collection of Random Bits
 									}),
 								}),
 								o(356752, {	-- Cryptkeeper Kassir's Extravagant Tribute
-									["cr"] = 168450,	-- Cryptkeeper Kassir
+									["crs"] = { 168450 },	-- Cryptkeeper Kassir
 									["g"] = appendGroups(KASSIR_GROUP, {
-										crit(10, {	-- Cryptkeeper Kassir
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(10, {	-- Cryptkeeper Kassir
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 									}),
 								}),
 								o(356716, {	-- Droman Aliothe's Extravagant Tribute
-									["cr"] = 171847,	-- Droman Aliothe <Court of Night>
+									["crs"] = { 171847 },	-- Droman Aliothe <Court of Night>
 									["g"] = appendGroups(DORMAN_GROUP, {
-										crit(11, {	-- Droman Aliothe
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(11, {	-- Droman Aliothe
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
-										i(181438, {	-- The Wild Drum
-											crit(18, {	-- The Wild Drum
-												["achievementID"] = 14678,	-- Court Favors
-											}),
+										i(181438, {	-- The Wild Drum (EC!)
+											["questID"] = 61454,
 										}),
 									}),
 								}),
 								o(356700, {	-- Grandmaster Vole's Extravagant Tribute
-									["cr"] = 171848,	-- Grandmaster Vole
+									["crs"] = { 171848 },	-- Grandmaster Vole
 									["g"] = appendGroups(VOLE_GROUP, {
-										crit(12, {	-- Grandmaster Vole
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(12, {	-- Grandmaster Vole
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(181761, {	-- The Grandmaster's Voucher
 											["isWeekly"] = true,
 											["questID"] = 62628,	-- Vole's Voucher
@@ -463,14 +763,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									}),
 								}),
 								o(356712, {	-- Hunt-Captain Korayn's Extravagant Tribute
-									["cr"] = 171836,	-- Hunt-Captain Korayn <The Wild Hunt>
+									["crs"] = { 171836 },	-- Hunt-Captain Korayn <The Wild Hunt>
 									["g"] = appendGroups(KORAYN_GROUP, {
-										crit(6, {	-- Hunt-Captain Korayn
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(6, {	-- Hunt-Captain Korayn
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(181618),	-- Gorm Quishe Platter
 										i(181620),	-- Hard Boiled Gorm Egg
 										i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
@@ -484,95 +778,54 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										171851,	-- Pelagos
 									},
 									["g"] = appendGroups(KLEIA_AND_PELAGOS_GROUP, {
-										crit(13, {	-- Kleia and Pelagos
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(13, {	-- Kleia and Pelagos
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(183863),	-- The Proper Path and Etiquette for Aspirants
 									}),
 								}),
 								o(356709, {	-- Lady Moonberry's Extravagant Tribute
-									["crs"] = {
-										171830,	-- Lady Moonberry <Court of Night>
-									--	171874,	-- Image of Lady Moonberry <Lady Moonberry's Conjuration> (not sure if/when this shows up)
-									},
+									["crs"] = { 171830 },	-- Lady Moonberry <Court of Night>
 									["g"] = appendGroups(MOONBERRY_GROUP, {
-										crit(2, {	-- Lady Moonberry
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(2, {	-- Lady Moonberry
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(181613),	-- Decree: Lady Moonberry's Boon
 										i(181607),	-- Decree: Lady Moonberry's Esteem
 										i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
 										i(181598),	-- Decree: Lady Moonberry's Favor
-										i(177232, {	-- Bewitched Wardrobe
-											crit(3, {	-- Bewitched Wardrobe
-												["achievementID"] = 14678,	-- Court Favors
-											}),
+										i(177232, {	-- Bewitched Wardrobe (EC!)
+											["questID"] = 59683
 										}),
 									}),
 								}),
 								o(356728, {	-- Mikanikos' Extravagant Tribute
-									["cr"] = 171831,	-- Mikanikos <Forgelite Prime>
+									["crs"] = { 171831 },	-- Mikanikos <Forgelite Prime>
 									["g"] = appendGroups(MIKANIKOS_GROUP, {
-										crit(3, {	-- Mikanikos
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(3, {	-- Mikanikos
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(181563),	-- Decree: Mikanikos's Boon
 										i(181564),	-- Decree: Mikanikos's Esteem
 										i(183863),	-- The Proper Path and Etiquette for Aspirants
 										i(181565),	-- Decree: Mikanikos's Favor
-										i(181439, {	-- Protective Braziers
-											crit(19, {	-- Protective Braziers
-												["achievementID"] = 14678,	-- Court Favors
-											}),
+										i(181439, {	-- Protective Braziers (EC!)
+											["questID"] = 61455,
 										}),
 									}),
 								}),
 								o(356705, {	-- Plague Deviser Marileth's Extravagant Tribute
-									["cr"] = 171852,	-- Plague Deviser Marileth
+									["crs"] = { 171852 },	-- Plague Deviser Marileth
 									["g"] = appendGroups(MARILETH_GROUP, {
-										crit(14, {	-- Plague Deviser Marileth
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(14, {	-- Plague Deviser Marileth
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(181621),	-- Hyper-Reactive Slime Sample
 										i(181622),	-- Slightly Irradiated Slime Sample
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
 										i(181623),	-- Fluorescent Slime Sample
-										i(181437, {	-- Training Dummies
-											crit(17, {	-- Training Dummies
-												["achievementID"] = 14678,	-- Court Favors
-											}),
+										i(181437, {	-- Training Dummies (EC!)
+											["questID"] = 61453,
 										}),
 									}),
 								}),
 								o(356725, {	-- Polemarch Adrestes' Extravagant Tribute
-									["cr"] = 168447,	-- Polemarch Adrestes
+									["crs"] = { 168447 },	-- Polemarch Adrestes
 									["g"] = appendGroups(ADRESTES_GROUP, {
-										crit(7, {	-- Polemarch Adrestes
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(7, {	-- Polemarch Adrestes
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(178897),	-- Stalwart Pauldron of Resolve
 										i(178896),	-- Stalwart Gloves of Resolve
 										i(183863),	-- The Proper Path and Etiquette for Aspirants
 										i(183845),	-- A Short Letter to Forgelite Sophone
-										i(177238, {	-- Generous Gift
-											crit(9, {	-- Generous Gift
-												["achievementID"] = 14678,	-- Court Favors
-											}),
+										i(177238, {	-- Generous Gift (EC!)
+											["questID"] = 59689,
 										}),
 										i(178895),	-- Stalwart Vambraces of Resolve
 									}),
@@ -583,87 +836,55 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										171839,	-- Rendle
 									},
 									["g"] = appendGroups(RENDLE_AND_CUDGELFACE_GROUP, {
-										crit(8, {	-- Rendle and Cudgelface
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(8, {	-- Rendle and Cudgelface
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(181780),	-- An Undelivered Tradesman's Shipment
 										i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 										i(181779),	-- A "Wrapped" Weapon
 										i(180677),	-- Discarded Medal of Valor
 										i(180710),	-- Pocket Repair Kit
 										i(180707),	-- Sticky Muck
-										i(177237, {	-- Dredger Party Supplies
-											crit(8, {	-- Dredger Party Supplies
-												["achievementID"] = 14678,	-- Court Favors
-											}),
+										i(177237, {	-- Dredger Party Supplies (EC!)
+											["questID"] = 59688,
 										}),
 										i(183848),	-- Hastily Scrawled Note to Forgy
 										i(181778),	-- Sack of Shinies
 									}),
 								}),
 								o(356737, {	-- Sika's Extravagant Tribute
-									["cr"] = 171854,	-- Sika
+									["crs"] = { 171854 },	-- Sika
 									["g"] = appendGroups(SIKA_GROUP, {
-										crit(15, {	-- Sika
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(15, {	-- Sika
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(183886),	-- Sika's Rare Ore Pouch
 										i(183885),	-- Sika's Spare Ore Pouch
 										i(183863),	-- The Proper Path and Etiquette for Aspirants
-										i(177230, {	-- Anima-Infused Water
-											crit(1, {	-- Anima-Infused Water
-												["achievementID"] = 14678,	-- Court Favors
-											}),
+										i(177230, {	-- Anima-Infused Water (EC!)
+											["questID"] = 59681,
 										}),
 										i(183884),	-- Pocketful of Assorted Nuggets
 									}),
 								}),
 								o(356748, {	-- Stonehead's Extravagant Tribute
-									["cr"] = 171856,	-- Stonehead
+									["crs"] = { 171856 },	-- Stonehead
 									["g"] = appendGroups(STONEHEAD_GROUP, {
-										crit(16, {	-- Stonehead
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(16, {	-- Stonehead
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(183709),	-- Bronze-Bound Sinstone
 										i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 										i(181771),	-- Stonehead's Best Bud Bracelet
 										i(180689),	-- Pocket Embers
-										i(181440, {	-- Slippery Muck
-											crit(20, {	-- Slippery Muck
-												["achievementID"] = 14678,	-- Court Favors
-											}),
+										i(181440, {	-- Slippery Muck (EC!)
+											["questID"] = 61456,
 										}),
 										i(178128),	-- Pouch of Shinies
 									}),
 								}),
 								o(356741, {	-- The Countess' Extravagant Tribute
-									["cr"] = 165269,	-- The Countess <Harvester of Desire>
+									["crs"] = { 165269 },	-- The Countess <Harvester of Desire>
 									["g"] = appendGroups(COUNTESS_GROUP, {
-										crit(4, {	-- The Countess
-											["achievementID"] = 14723,	-- Be Our Guest
-										}),
-										crit(4, {	-- The Countess
-											["achievementID"] = 14724,	-- People Pleaser
-										}),
 										i(182209),	-- Desire's Battle Gargon (MOUNT!)
 										i(181566),	-- Decree: The Countess's Boon
 										i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 										i(181567),	-- Decree: The Countess's Esteem
 										i(181568),	-- Decree: The Countess's Favor
 										i(182696),	-- The Countess's Parasol (TOY!)
-										i(181436, {	-- Vanity Mirror
-											crit(16, {	-- Vanity Mirror
-												["achievementID"] = 14678,	-- Court Favors
-											}),
+										i(181436, {	-- Vanity Mirror (EC!)
+											["questID"] = 61452,
 										}),
 									}),
 								}),
@@ -690,10 +911,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.8, REVENDRETH },
 									["g"] = {
-										i(181533, {	-- Stock: Anima Samples
-											crit(13, {	-- Stock: Anima Samples
-												["achievementID"] = 14679,	-- Party Palace
-											}),
+										i(181533, {	-- Stock: Anima Samples (EC!)
+											["questID"] = 61499,
 										}),
 									},
 								}),
@@ -702,10 +921,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["g"] = {
-										i(181535, {	-- Stock: Comfy Chairs
-											crit(14, {	-- Stock: Comfy Chairs
-												["achievementID"] = 14679,	-- Party Palace
-											}),
+										i(181535, {	-- Stock: Comfy Chairs (EC!)
+											["questID"] = 61500,
 										}),
 									},
 								}),
@@ -733,9 +950,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 71.7, 40.3, REVENDRETH },
 									["g"] = {
 										i(176130, {	-- Contract: Atoning Rituals
-											crit(1, {	-- Atoning Rituals
-												["achievementID"] = 14680,	-- Something for Everyone
-											}),
+											["questID"] = 59494,
 										}),
 									},
 								}),
@@ -746,9 +961,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 33.9, 66.5, BASTION },
 									["g"] = {
 										i(176135, {	-- Contract: Divine Desserts
-											crit(5, {	-- Divine Desserts
-												["achievementID"] = 14680,	-- Something for Everyone
-											}),
+											["questID"] = 59503,
 										}),
 									},
 								}),
@@ -764,9 +977,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 56.3, 55.6, ARDENWEALD },
 									["g"] = {
 										i(176131, {	-- Contract: Glimpse of the Wilds
-											crit(2, {	-- Glimpse of the Wilds
-												["achievementID"] = 14680,	-- Something for Everyone
-											}),
+											["questID"] = 59491,
 										}),
 									},
 								}),
@@ -783,9 +994,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 55.1, 43.7, REVENDRETH },
 									["g"] = {
 										i(176132, {	-- Contract: Lost Chalice Band
-											crit(3, {	-- Lost Chalice Band
-												["achievementID"] = 14680,	-- Something for Everyone
-											}),
+											["questID"] = 59488,
 										}),
 									},
 								}),
@@ -795,9 +1004,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 54.2, 69.3, MALDRAXXUS },
 									["g"] = {
 										i(176140, {	-- Contract: Maldraxxian Army
-											crit(12, {	-- Maldraxxian Army
-												["achievementID"] = 14680,	-- Something for Everyone
-											}),
+											["questID"] = 59512,
 										}),
 									},
 								}),
@@ -807,9 +1014,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 59.2, 75.1, ORIBOS },
 									["g"] = {
 										i(176128, {	-- Contract: Mortal Reminders
-											crit(8, {	-- Mortal Reminders
-												["achievementID"] = 14680,	-- Something for Everyone
-											}),
+											["questID"] = 59476,
 										}),
 									},
 								}),
@@ -819,9 +1024,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 40.2, 41.2, MALDRAXXUS },
 									["g"] = {
 										i(176136, {	-- Contract: Mushroom Surprise!
-											crit(6, {	-- Mushroom Surprise
-												["achievementID"] = 14680,	-- Something for Everyone
-											}),
+											["questID"] = 59500,
 										}),
 									},
 								}),
@@ -831,9 +1034,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 24.6, 50.2, REVENDRETH },
 									["g"] = {
 										i(176127, {	-- Contract: Mystery Mirrors
-											crit(9, {	-- Mystery Mirrors
-												["achievementID"] = 14680,	-- Something for Everyone
-											}),
+											["questID"] = 59479,
 										}),
 									},
 								}),
@@ -848,9 +1049,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 26.5, 29.1, REVENDRETH },
 									["g"] = {
 										i(176139, {	-- Contract: Stoneborn Reserves
-											crit(11, {	-- Stoneborn Reserves
-												["achievementID"] = 14680,	-- Something for Everyone
-											}),
+											["questID"] = 59515,
 										}),
 									},
 								}),
@@ -860,9 +1059,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 61.3, 63.8, REVENDRETH },
 									["g"] = {
 										i(176126, {	-- Contract: Traditional Theme
-											crit(7, {	-- Traditional Decorations
-												["achievementID"] = 14680,	-- Something for Everyone
-											}),
+											["questID"] = 59473,
 										}),
 									},
 								}),
@@ -872,9 +1069,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 30.9, 57.6, REVENDRETH },
 									["g"] = {
 										i(176134, {	-- Contract: Tubbins's Tea Party
-											crit(4, {	-- Tubbins's Tea Party
-												["achievementID"] = 14680,	-- Something for Everyone
-											}),
+											["questID"] = 59506,
 										}),
 									},
 								}),
@@ -884,9 +1079,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 60.9, 39.5, REVENDRETH },
 									["g"] = {
 										i(176138, {	-- Contract: Venthyr Volunteers
-											crit(10, {	-- Venthyr Volunteers
-												["achievementID"] = 14680,	-- Something for Everyone
-											}),
+											["questID"] = 59518,
 										}),
 									},
 								}),
@@ -896,9 +1089,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 28.5, 41.1, REVENDRETH },
 									["g"] = {
 										i(181521, {	-- Ember Court Ambassador
-											crit(7, {	-- Staff: Revendreth Ambassador
-												["achievementID"] = 14679,	-- Party Palace
-											}),
+											["questID"] = 61501,
 										}),
 									},
 								}),
@@ -909,9 +1100,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 28.5, 41.1, REVENDRETH },
 									["g"] = {
 										i(181524, {	-- Staff: Ambassador
-											crit(8, {	-- Staff: Ardenweald Ambassador
-												["achievementID"] = 14679,	-- Party Palace
-											}),
+											["questID"] = 61502,
 										}),
 									},
 								}),
@@ -922,9 +1111,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 28.5, 41.1, REVENDRETH },
 									["g"] = {
 										i(182342, {	-- Staff: Maldraxxus Ambassador
-											crit(9, {	-- Staff: Maldraxxus Ambassador
-												["achievementID"] = 14679,	-- Party Palace
-											}),
+											["questID"] = 61887,
 										}),
 									},
 								}),
@@ -935,9 +1122,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 28.5, 41.1, REVENDRETH },
 									["g"] = {
 										i(182343, {	-- Staff: Bastion Ambassador
-											crit(10, {	-- Staff: Bastion Ambassador
-												["achievementID"] = 14679,	-- Party Palace
-											}),
+											["questID"] = 61888,
 										}),
 									},
 								}),
@@ -1345,9 +1530,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 28.9, 44.2, REVENDRETH },
 									["g"] = {
 										i(181532, {	-- Stock: Appetizers
-											crit(12, {	-- Stock: Appetizers
-												["achievementID"] = 14679,	-- Party Palace
-											}),
+											["questID"] = 61498,
 										}),
 									},
 								}),
@@ -1367,10 +1550,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["isDaily"] = true,	-- according to the API, but Ember Court is a weekly event and this quest returns 'true' after the weekly reset
 									["coord"] = { 28.0, 43.1, REVENDRETH },
 									["g"] = {
-										i(181536, {	-- Guest List Page (1st EC)
-											crit(15, {	-- Second Guest List Page
-												["achievementID"] = 14679,	-- Party Palace
-											}),
+										i(181536, {	-- Guest List Page
+											["questID"] = 61504,
 										}),
 									},
 								}),
@@ -1396,9 +1577,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 32.0, 41.6, REVENDRETH },
 									["g"] = {
 										i(181530, {	-- Stock: Greeting Kits
-											crit(11, {	-- Stock: Greeting Kits
-												["achievementID"] = 14679,	-- Party Palace
-											}),
+											["questID"] = 61497,
 										}),
 									},
 								}),
@@ -1412,42 +1591,22 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182970, 1 } },	-- Burgleclipped Portrait
-									["g"] = {
-										crit(5, {	-- Thin Hair Cut
-											["achievementID"] = 14683,	-- Dredger Style
-										}),
-									},
 								}),
 								q(62174, {	-- A Proper Cover
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182973, 1 } },	-- 1x Leather Dredger Coif
-									["g"] = {
-										crit(8, {	-- Dredger Lether Coif
-											["achievementID"] = 14683,	-- Dredger Style
-										}),
-									},
 								}),
 								q(62206, {	-- Ardenweald Etiquette
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["provider"] = { "i", 183861 },	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
-									["g"] = {
-										crit(1, {	-- Ardenweald Etiquette
-											["achievementID"] = 14681,	-- Dredger Academy
-										}),
-									},
 								}),
 								q(62207, {	-- Bastion Etiquette
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["provider"] = { "i", 183863 },	-- The Proper Path and Etiquette for Aspirants
-									["g"] = {
-										crit(2, {	-- Bastion Etiquette
-											["achievementID"] = 14681,	-- Dredger Academy
-										}),
-									},
 								}),
 								q(64340, {	-- Bewitching
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
@@ -1461,11 +1620,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["repeatable"] = true,
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182702, 1 } },	-- 1x Black Muck Dye
-									["g"] = {
-										crit(1, {	-- Black Muck Armor Dye
-											["achievementID"] = 14683,	-- Dredger Style
-										}),
-									},
 								}),
 								q(62179, {	-- Blue Muck Dye
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
@@ -1473,22 +1627,12 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["repeatable"] = true,
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182705, 1 } },	-- Vial of Blue Muck Dye
-									["g"] = {
-										crit(2, {	-- Blue Muck Armor Dye
-											["achievementID"] = 14683,	-- Dredger Style
-										}),
-									},
 								}),
 								q(62181, {	-- Bubbling Red Muck Dye
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["repeatable"] = true,
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182703, 1 } },	-- 1x Bubbling Red Muck Dye
-									["g"] = {
-										crit(4, {	-- Bubbling Muck Armor Dye
-											["achievementID"] = 14683,	-- Dredger Style
-										}),
-									},
 								}),
 								q(61764, {	-- Dredging up a Name
 									["sourceQuests"] = { 62361 },	-- Introductions are in Order
@@ -1516,11 +1660,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["repeatable"] = true,
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182704, 1 } },	-- Green Muck Dye
-									["g"] = {
-										crit(3, {	-- Green Muck Armor Dye
-											["achievementID"] = 14683,	-- Dredger Style
-										}),
-									},
 								}),
 								q(61766, {	-- Homegrown Help
 									-- ["sourceQuests"] = {  },	-- TODO: upgrade to Tier 2 without doing any Tier 1 quests to verify SQ
@@ -1538,43 +1677,23 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								--	["repeatable"] = true,
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182967, 1 } },	-- 1x Dredger's Long Sleeved Doublet
-									["g"] = {
-										crit(10, {	-- Long Sleeved Doublet
-											["achievementID"] = 14683,	-- Dredger Style
-										}),
-									},
 								}),
 								q(62175, {	-- Looking Fabulous
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182971, 1 } },	-- Fabius's Portrait
-									["g"] = {
-										crit(7, {	-- Full Flowing Hair Cut
-											["achievementID"] = 14683,	-- Dredger Style
-										}),
-									},
 								}),
 								q(62208, {	-- Maldraxxi Protocols
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["provider"] = { "i", 183860 },	-- The Death March: An Introduction to Maldraxxi Etiquette
-									["g"] = {
-										crit(3, {	-- Maldraxxus Etiquette
-											["achievementID"] = 14681,	-- Dredger Academy
-										}),
-									},
 								}),
 								q(62221, {	-- My Own Death Pony!
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 183842, 1 } },	-- Sinrunner Pony Reins
-									["g"] = {
-										crit(5, {	-- Sinrunner Riding
-											["achievementID"] = 14681,	-- Dredger Academy
-										}),
-									},
 								}),
 								q(61762, {	-- Making a Smarter Dredger
 									["sourceQuests"] = { 61851 },	-- Shades of Muck
@@ -1586,11 +1705,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 183843, 1 } },	-- Juvenile Dredbat Harness
-									["g"] = {
-										crit(6, {	-- Dredbat Riding
-											["achievementID"] = 14681,	-- Dredger Academy
-										}),
-									},
 								}),
 								q(61851, {	-- Shades of Muck
 									["sourceQuests"] = { 61766 },	-- Homegrown Help
@@ -1602,11 +1716,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182712, 1 } },	-- Dredger's Short Sleeved Doublet
-									["g"] = {
-										crit(9, {	-- Short Sleeved Doublet
-											["achievementID"] = 14683,	-- Dredger Style
-										}),
-									},
 								}),
 								q(64509, {	-- Stylish Cover
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
@@ -1619,11 +1728,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								--	["repeatable"] = true,
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182972, 1 } },	-- 1x Critter Two-Thumbs Portrait
-									["g"] = {
-										crit(6, {	-- Spikey Hair Cut
-											["achievementID"] = 14683,	-- Dredger Style
-										}),
-									},
 								}),
 								q(63765, {	-- Unseen Hero of the Party
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
@@ -1635,11 +1739,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["provider"] = { "i", 183862 },	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
-									["g"] = {
-										crit(4, {	-- Revendreth Etiquette
-											["achievementID"] = 14681,	-- Dredger Academy
-										}),
-									},
 								}),
 							},
 						}),
@@ -1660,9 +1759,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 28.5, 41.0, REVENDRETH },
 									["g"] = {
 										i(181537, {		-- Guest List Page
-											crit(16, {		-- Third Guest List Page
-												["achievementID"] = 14679,	-- Party Palace
-											}),
+											["questID"] = 61505,
 										}),
 									},
 								}),
@@ -1684,9 +1781,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 52.9, 83.5, BASTION },
 									["g"] = {
 										i(177243, {	-- Kyrian Arsenal
-											crit(13, {	-- Kyrian Arsenal
-												["achievementID"] = 14678,	-- Court Favors
-											}),
+											["questID"] = 59693,
 										}),
 									},
 								}),
@@ -1696,9 +1791,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 53.0, 68.2, MALDRAXXUS },
 									["g"] = {
 										i(177241, {	-- Necrolord Arsenal
-											crit(11, {	-- Necrolord Arsenal
-												["achievementID"] = 14678,	-- Court Favors
-											}),
+											["questID"] = 59691,
 										}),
 									},
 								}),
@@ -1750,11 +1843,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["provider"] = { "n", 165302 },	-- Rendle
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180760, 1 } },	-- Crown of the Righteous
-											["g"] = {
-												crit(1, {	-- Crown of the Righteous
-													["achievementID"] = 14749,	-- Rendle's Big Day
-												}),
-											},
 										}),
 										q(62558, {	-- Sootible Hat: Fae Revel Masque
 										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
@@ -1764,11 +1852,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["provider"] = { "n", 165302 },	-- Rendle
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180755, 1 } },	-- Fae Revel Masque
-											["g"] = {
-												crit(2, {	-- Fae Revel Masque
-													["achievementID"] = 14749,	-- Rendle's Big Day
-												}),
-											},
 										}),
 										q(62556, {	-- Sootible Hat: Pink Party Hat
 										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
@@ -1778,11 +1861,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["provider"] = { "n", 165302 },	-- Rendle
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180752, 1 } },	-- Pink Party Hat
-											["g"] = {
-												crit(3, {	-- Pink Party Hat
-													["achievementID"] = 14749,	-- Rendle's Big Day
-												}),
-											},
 										}),
 										q(62554, {	-- Sootible Hat: Red Noggin Candle
 										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
@@ -1792,11 +1870,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["provider"] = { "n", 165302 },	-- Rendle
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180751, 1 } },	-- Red Noggin Candle
-											["g"] = {
-												crit(4, {	-- Red Noggin Candle
-													["achievementID"] = 14749,	-- Rendle's Big Day
-												}),
-											},
 										}),
 										i(176118),	-- RSVP: Rendle and Cudgelface
 									},
@@ -1807,9 +1880,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 63.2, 62.7, REVENDRETH },
 									["g"] = {
 										i(177242, {	-- Venthyr Arsenal
-											crit(12, {	-- Venthyr Arsenal
-												["achievementID"] = 14678,	-- Court Favors
-											}),
+											["questID"] = 59692,
 										}),
 									},
 								}),
@@ -1835,9 +1906,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 28.5, 41.0, REVENDRETH },
 									["g"] = {
 										i(181538, {		-- Guest List Page
-											crit(17, {		-- Fourth Guest List Page
-												["achievementID"] = 14679,
-											}),
+											["questID"] = 61506,
 										}),
 									},
 								}),
@@ -1910,9 +1979,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 51.6, 34.0, ARDENWEALD },
 									["g"] = {
 										i(177244, {	-- Night Fae Arsenal
-											crit(14, {	-- Night Fae Arsenal
-												["achievementID"] = 14678,	-- Court Favors
-											}),
+											["questID"] = 59694,
 										}),
 									},
 								}),
@@ -1993,11 +2060,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									}),
 									i(177234, {	-- Rally Bell
 										["cost"] = { { "c", ANIMA, 25 } },
-										["g"] = {
-											crit(5, {	-- Rally Bell
-												["achievementID"] = 14678,	-- Court Favors
-											}),
-										},
+										["questID"] = 59685,
 									}),
 								},
 							}),
@@ -2123,64 +2186,32 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								["g"] = {
 									SILVERTIP_DREDWING,
 									i(181441, {	-- Altar of Accomplishment
-										["cost"] = { { "c", ANIMA, 25 } },	-- 25x Reservoir Anima
-										["g"] = {
-											crit(21, {	-- Altar of Accomplishment
-												["achievementID"] = 14678,	-- Court Favors
-											}),
-										},
+										["cost"] = { { "c", ANIMA, 25 } },
+										["questID"] = 61457,
 									}),
 									i(187133, {	-- Bewitching Little Hat
 										["cost"] = { { "c", 1820, 25 } },	-- 25x Infused Ruby
 										["u"] = HALLOWS_END,
 									}),
 									i(181517, {	-- Building: Dredger Pool
-										["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
-										["g"] = {
-											crit(1, {	-- Building: Dredger Pool
-												["achievementID"] = 14679,	-- Party Palace
-											}),
-										},
+										["cost"] = { { "c", ANIMA, 100 } },
+										["questID"] = 61493,
 									}),
 									i(181518, {	-- Building: Guardhouse
-										["cost"] = { { "c", ANIMA, 100 } },	-- 100x Reservoir Anima
-										["g"] = {
-											crit(2, {	-- Building: Guardhouse
-												["achievementID"] = 14679,	-- Party Palace
-											}),
-										},
+										["cost"] = { { "c", ANIMA, 100 } },
+										["questID"] = 61494,
 									}),
 									i(181519, {	-- Staff: Dredger Decorators
-										["cost"] = 2500000,	-- 250g
-										["g"] = {
-											crit(3, {	-- Staff: Dredger Decorators
-												["achievementID"] = 14679,	-- Party Palace
-											}),
-										},
+										["questID"] = 59435,
 									}),
 									i(181520, {	-- Staff: Stage Crew
-										["cost"] = 2500000,	-- 250g
-										["g"] = {
-											crit(4, {	-- Staff: Stage Crew
-												["achievementID"] = 14679,	-- Party Palace
-											}),
-										},
+										["questID"] = 59436,
 									}),
 									i(181522, {	-- Staff: Waiters
-										["cost"] = 2500000,	-- 250g
-										["g"] = {
-											crit(5, {	-- Staff: Waiters
-												["achievementID"] = 14679,	-- Party Palace
-											}),
-										},
+										["questID"] = 59433,
 									}),
 									i(181523, {	-- Staff: Bouncers
-										["cost"] = 2500000,	-- 250g
-										["g"] = {
-											crit(6, {	-- Staff: Bouncers
-												["achievementID"] = 14679,	-- Party Palace
-											}),
-										},
+										["questID"] = 59437,
 									}),
 									i(182296, {	-- Letter of Note, Premier Party Planner
 										["cost"] = { { "c", 1820, 85 } },	-- 85 Infused Ruby
@@ -2358,52 +2389,16 @@ root("HiddenQuestTriggers", {
 			q(59511),	-- selecting Security: Maldraxxian Army for Embrt Court
 
 		-- Unlocks
-			q(59472),	-- when using "Contract: Traditional Theme"
-			q(59473),	-- when using "Contract: Traditional Theme"
-			q(61501),	-- when using "Staff: Ambassador"
-			q(61887),	-- when using "Staff: Ambassador" (Maldraxxus)
-			q(61888),	-- when using "Staff: Ambassador" (Bastion)
-			q(59437),	-- when using "Staff: Bouncers"
-			q(59435),	-- when using "Staff: Dredger Decorators"
-			q(61498),	-- when using "Stock: Appetizers"
-			q(59476),	-- when using "Contract: Mortal Reminders"
-			q(59477),	-- when using "Contract: Mortal Reminders"
-			q(61504),	-- triggered when using item #181536, "Guest List Page"
-			q(61505),	-- when using 'Guest List Page' (181537)
-			q(61506),	-- when using 'Guest List Page' (181538)
-			q(59436),	-- using Staff: Stage Crew
-			q(59433),	-- using Staff: Waiters
-			q(61452),	-- using 'Vanity Mirror' (181436)
-			q(61454),	-- using 'The Wild Drum' (181438)
-			q(61457),	-- using Altar of Accomplishment
-			q(59515),	-- using Contract: Stoneborn Reserves
+			q(59472),	-- using Contract: Traditional Theme
+			q(59477),	-- using Contract: Mortal Reminders
 			q(59516),	-- using Contract: Stoneborn Reserves
-			q(59488),	-- using Contract: Lost Chalice Band
 			q(59489),	-- using Contract: Lost Chalice Band
-			q(59518),	-- using Contract: Venthyr Volunteers
 			q(59519),	-- using Contract: Venthyr Volunteers
-			q(59512),	-- using Contract: Maldraxxian Army
 			q(59513),	-- using Contract: Maldraxxian Army
-			q(59500),	-- using Contract: Mushroom Surprise
 			q(59501),	-- using Contract: Mushroom Surprise
-			q(59479),	-- using Contract: Mystery Mirrors
 			q(59480),	-- using Contract: Mystery Mirrors
-			q(59491),	-- using "Contract: Glimpse of the Wilds"
-			q(59492),	-- using "Contract: Glimpse of the Wilds"
-			q(59503),	-- using "Contract: Divine Desserts"
-			q(59504),	-- using "Contract: Divine Desserts"
-			q(61499),	-- using Stock: Anima Samples
-			q(61500),	-- using Stock: Comfy Chairs
-			q(61497),	-- using Stock: Greeting Kits
-			q(59688),	-- triggered when using "Dredger Party Supplies" (177237)
-			q(59689),	-- triggered when using "Generous Gift" (177238)
-			q(59690),	-- triggered when using "Racing Permit," reward from "It's Race Day in the Ramparts!" WQ
-			q(59692),	-- triggered when using "Venthyr Arsenal"
-			q(59693),	-- triggered when using "Kyrian Arsenal"
-			q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
-			q(61453),	-- triggered when using "Training Dummies" (181437)
-			q(61456),	-- triggered when using "Slippery Muck" (181440)
-			q(59683),	-- triggered when using "Bewitched Wardrobe" (177232)
+			q(59492),	-- using Contract: Glimpse of the Wilds
+			q(59504),	-- using Contract: Divine Desserts
 
 		-- Misc.
 			q(61918),	-- unflagged when completing Restock: Fashion Accessories (62078)
@@ -2426,7 +2421,6 @@ root("HiddenQuestTriggers", {
 			q(61940),	-- Triggered after Restock: Fine Cutlery (Unflagged)
 			q(61932),	-- Triggered after Restock: Unconventional Weapons
 			--q(61825),	-- During Ember Court after finishin Glimpse of the Wilds Niya's minigame
-			q(59691),	-- "The Party Herald"
 			--q(61941),	-- Maybe Etiquette?
 			q(61926),	-- Maybe Revendreth Etiquette?
 			q(63353),	-- Triggered after turning in Red Noggin Candle as criteria for Rendle's Big Day

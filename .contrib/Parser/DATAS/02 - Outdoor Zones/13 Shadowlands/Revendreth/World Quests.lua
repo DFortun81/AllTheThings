@@ -76,11 +76,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 			}),
 			q(59643, {	-- It's Race Day in the Ramparts!
-				i(177239, {	-- Racing Permit (Ember Court item)
-					crit(10, {	-- Racing Permit
-						["customCollect"] = "SL_COV_VEN",
-						["achievementID"] = 14678,	-- Court Favors
-					}),
+				i(177239, {	-- Racing Permit (EC!)
+					["questID"] = 59690,
 				}),
 				ach(14765),	-- Ramparts Racer
 			}),
@@ -178,11 +175,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["requireSkill"] = TAILORING,
 			}),
 			q(59852, {	-- Tea Tales: Gubbins and Tubbins
-				i(177235, {	-- Tubbins's Lucky Teapot
-					crit(6, {	-- Tubbins's Lucky Teapot
-						["achievementID"] = 14678,	-- Court Favors
-						["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-					}),
+				i(177235, {	-- Tubbins's Lucky Teapot (EC!)
+					["questID"] = 59686,
 				}),
 			}),
 			q(59853),	-- Tea Tales: Lost Sybille

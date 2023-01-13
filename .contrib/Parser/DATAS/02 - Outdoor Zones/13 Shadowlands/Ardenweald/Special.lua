@@ -4,6 +4,9 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(ARDENWEALD, {
 		n(SPECIAL, {
+			i(182599, {	-- Bucket of Clean Water
+				["cost"] = { { "i", 182620, 1 } },	-- 1x Empty Water Bucket
+			}),
 			n(171206, {	-- Playful Vulpin
 				["description"] = "You need to find the Playful Vulpin five times and use the following emotes.\n\n 1. Playful Vulpin begins to dig curiously. |cFFFFFFFF/curious|r\n 2. Playful Vulpin wanders around unable to sit still. |cFFFFFFFF/sit|r\n 3. Playful Vulpin sings all alone. |cFFFFFFFF/sing|r\n 4. Playful Vulpin dances with joy. |cFFFFFFFF/dance|r\n 5. Playful Vulpin sits down lonely and sad. |cFFFFFFFF/pet|r\n\nIt only counts if the Playful Vulpin reacts to your emote and runs away.",
 				["questID"] = 61086,

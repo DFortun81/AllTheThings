@@ -1,25 +1,26 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(REVENDRETH, {
 		n(SPECIAL, {
-			n(-907, {	-- Dead Blanchy
-				["description"] = "Enable quest tracking to see all the steps.\n\nTo get Blanchy's Reins, you must interact with Dead Blanchy once a day for 6 days.  On each day, you must have a specific item.  You can gather all the items in advance.  You will need to visit Revendreth, Westfall, and take a detour to either Ardenweald or Bastion.\n\nBlanchy spawns around |cFFFFFFFF63.1, 43.1|r in Revendreth.  Similar to the Friendly Alpaca in Uldum, anyone can interact with Blanchy for a small window, roughly 5 minutes, and then she will despawn for 1 to 2 hours.",
-				["questID"] = 62107,	-- daily Blanchy interaction
-				["isDaily"] = true,
-				["coord"] = { 63.1, 43.1, REVENDRETH },	-- area where Dead Blanchy spawns
-				["icon"] = 2143082,
-				["crs"] = { 173468 },	-- Dead Blanchy
-				["lockCriteria"] = { 1, "spellID", 339588 },	-- Learning Sinrunner Blanchy prevents being able to do the quests again
-				["DisablePartySync"] = true,
+			n(181660, bubbleDownSelf({ ["timeline"] = { ADDED_SL_1_5 } }, {	-- Lost Soul (Chicken)
+				["description"] = "Gather the |cFFFFFFFFSpectral Feed|r, located at |cFFFFFFFF63.75, 61.69|r in Revendreth. This has roughly a 60 minute respawn, and is lootable by others shortly after being looted by one player.\nAfter, head to the Lost Soul located at 63.18, 42.76 in Revendreth. Use |cFFFFFFFF/chicken|r on the soul, then use the |cFFFFFFFFSpectral Feed|r from your Bag.\nThe soul may have multiple spawn points, or a separate respawn timer than the Feed, it is unknown. However, you can only see the Soul when you have the Feed in your bags.",
+				["coord"] = { 63.18, 42.76, REVENDRETH },
+				["cost"] = { { "i", 187811, 1 } },	-- Spectral Feed
 				["g"] = {
-					i(182581, {	-- Handful of Oats
+					i(187813),	-- Chicken Soul
+				},
+			})),
+			header(HEADERS.Item, 182614, sharedDataSelf({ ["lockCriteria"] = { 1, "spellID", 339588 }, ["DisablePartySync"] = true }, {	-- Sinrunner Blanchy
+				["description"] = "Enable quest tracking to see all the steps.\n\nTo get Blanchy's Reins, you must interact with Dead Blanchy once a day for 6 days.  On each day, you must have a specific item.  You can gather all the items in advance.  You will need to visit Revendreth, Westfall, and take a detour to either Ardenweald or Bastion.\n\nBlanchy spawns around |cFFFFFFFF63.1, 43.1|r in Revendreth.  Similar to the Friendly Alpaca in Uldum, anyone can interact with Blanchy for a small window, roughly 5 minutes, and then she will despawn for 1 to 2 hours.",
+				["crs"] = { 173468 },	-- Dead Blanchy
+				["coord"] = { 63.1, 43.1, REVENDRETH },
+				["questID"] = 62107,
+				["isDaily"] = true,
+				["g"] = {
+					header(HEADERS.Item, 182581, {	-- Handful of Oats
 						["description"] = "Day 1: Collect 8 |cFFFFFFFFHandfuls of Oats|r.  They can be found in |cFFFFFFFFSacks of Oats|r in any of the farmland in the northern half of Westfall — Jansen Stead, Furlbrow's Pumpkin Farm, Saldean's Farm, and the Molsen Farm.\n\nThese can likely be found in more locations than are provided.  Check by fences, around the bases of trees, and near carts.  They do not sparkle, so they can be difficult to spot.",
-						["questID"] = 62038,
-						["lockCriteria"] = { 1, "spellID", 339588 },	-- Learning Sinrunner Blanchy prevents being able to do the quests again
-						["DisablePartySync"] = true,
 						["coords"] = {
 							{ 43.1, 37.3, WESTFALL },
 							{ 44.9, 35.3, WESTFALL },
@@ -45,21 +46,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							{ 58.5, 15.9, WESTFALL },
 							{ 59.2, 18.9, WESTFALL },
 						},
+						["questID"] = 62038,
+						["cost"] = { { "i", 182581, 8 }, },	-- 8x Handful of Oats
 					}),
-					i(182585, {	-- Grooming Brush
+					header(HEADERS.Item, 182585, {	-- Grooming Brush
 						["description"] = "Day 2: Borrow 1 |cFFFFFFFFGrooming Brush|r from Snickersnee in Darkhaven.",
-						["questID"] = 62042,
-						["lockCriteria"] = { 1, "spellID", 339588 },	-- Learning Sinrunner Blanchy prevents being able to do the quests again
-						["DisablePartySync"] = true,
 						["sourceQuests"] = { 62038 },	-- Handful of Oats
 						["coord"] = { 63.4, 61.8, REVENDRETH },
-						["crs"] = { 173570 },	-- Snickersnee <Stable Dredger>
+						["questID"] = 62042,
+						["cost"] = { { "i", 182581, 1 }, },	-- 1x Grooming Brush
 					}),
-					i(182595, {	-- Sturdy Horseshoe
+					header(HEADERS.Item, 182595, {	-- Sturdy Horseshoe
 						["description"] = "Day 3: Collect 4 |cFFFFFFFFSturdy Horseshoes|r.  They can be found scattered around roads in Revendreth.  Unlike the Sacks of Oats, these sparkle.",
-						["questID"] = 62047,
-						["lockCriteria"] = { 1, "spellID", 339588 },	-- Learning Sinrunner Blanchy prevents being able to do the quests again
-						["DisablePartySync"] = true,
 						["sourceQuests"] = { 62042 },	-- Grooming Brush
 						["coords"] = {
 							{ 61.2, 69.4, REVENDRETH },
@@ -70,63 +68,39 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							{ 70.3, 59.0, REVENDRETH },
 							{ 74.5, 57.8, REVENDRETH },
 						},
+						["questID"] = 62047,
+						["cost"] = { { "i", 182595, 1 }, },	-- 4x Sturdy Horseshoe
 					}),
-					i(182599, {	-- Bucket of Clean Water
+					header(HEADERS.Item, 182599, {	-- Bucket of Clean Water
 						["description"] = "Day 4: Pick up the |cFFFFFFFFEmpty Water Bucket|r in Revendreth, and fill it in either Bastion or Ardenweald.",
-						["questID"] = 62049,
-						["lockCriteria"] = { 1, "spellID", 339588 },	-- Learning Sinrunner Blanchy prevents being able to do the quests again
-						["DisablePartySync"] = true,
 						["sourceQuests"] = { 62047 },	-- Sturdy Horseshoe
 						["coord"] = { 63.2, 61.5, REVENDRETH },
-						["cost"] = { { "i", 182620, 1 } },	-- 1x Empty Water Bucket
+						["questID"] = 62049,
+						["cost"] = { { "i", 182599, 1 } },	-- 1x Bucket of Clean Water
 					}),
-					i(182597, {	-- Comfortable Saddle Blanket
+					header(HEADERS.Item, 182597, {	-- Comfortable Saddle Blanket
 						["description"] = "Day 5: Purchase 1 |cFFFFFFFFComfortable Saddle Blanket|r from Ta'tru in Revendreth.\n\nNOTE: This item has a varying cost depending on the week!",
-						["questID"] = 62048,
-						["lockCriteria"] = { 1, "spellID", 339588 },	-- Learning Sinrunner Blanchy prevents being able to do the quests again
-						["DisablePartySync"] = true,
 						["sourceQuests"] = { 62049 },	-- Bucket of Clean Water
 						["coord"] = { 51.1, 78.8, REVENDRETH },
-						["cost"] = {
-							{ "i", 179314, 30 },	-- 30x Creeping Crawler Meat
-							{ "i", 168589, 10 },	-- 10x Marrowroot
-							-- TODO: more costs?
-							},
-						["crs"] = { 171808 },	-- Ta'tru <Barterer>
+						["questID"] = 62048,
+						["cost"] = { { "i", 182597, 1 } },	-- 1x Comfortable Saddle Blanket
 					}),
-					i(179271, {	-- Dredhollow Apple
+					header(HEADERS.Item, 179271, {	-- Dredhollow Apple
 						["description"] = "Day 6: Purchase 3 |cFFFFFFFFDredhollow Apples|r from either Mims or Slabchop in Revendreth.",
-						["questID"] = 62050,
-						["lockCriteria"] = { 1, "spellID", 339588 },	-- Learning Sinrunner Blanchy prevents being able to do the quests again
-						["DisablePartySync"] = true,
 						["sourceQuests"] = { 62048 },	-- Comfortable Saddle Blanket
-						["coords"] = {
-							{ 40.8, 46.6, REVENDRETH },	-- Mims <Innkeeper>
-							{ 70.6, 80.2, REVENDRETH },	-- Slabchop <Chugs, Chews, and Stews>
-						},
-						["crs"] = {
-							167815,	-- Mims <Innkeeper>
-							166068,	-- Slabchop <Chugs, Chews, and Stews>
-						},
+						["coord"] = { 40.8, 46.6, REVENDRETH },	-- Mims <Innkeeper>
+						["questID"] = 62050,
+						["cost"] = { { "i", 179271, 3 } },	-- 3x Dredhollow Apple
 					}),
 					i(182614, {	-- Sinrunner Blanchy (MOUNT!)
 						["sourceQuests"] = { 62050 },	-- Dredhollow Apple
 					}),
 				},
-			}),
-			o(370469, bubbleDownSelf({ ["timeline"] = { "added 9.1.5" } }, {	-- Spectral Feed
+			})),
+			o(370469, bubbleDownSelf({ ["timeline"] = { ADDED_SL_1_5 } }, {	-- Spectral Feed
 				["coord"] = { 63.75, 61.69, REVENDRETH },
-				-- ["sourceQuest"] = ???,
 				["g"] = {
 					i(187811),	-- Spectral Feed
-				},
-			})),
-			n(181660, bubbleDownSelf({ ["timeline"] = { "added 9.1.5" } }, {	-- Spectral Feed	-- Lost Soul (Chicken)
-				["description"] = "Gather the |cFFFFFFFFSpectral Feed|r, located at |cFFFFFFFF63.75, 61.69|r in Revendreth. This has roughly a 60 minute respawn, and is lootable by others shortly after being looted by one player.\nAfter, head to the Lost Soul located at 63.18, 42.76 in Revendreth. Use |cFFFFFFFF/chicken|r on the soul, then use the |cFFFFFFFFSpectral Feed|r from your Bag.\nThe soul may have multiple spawn points, or a separate respawn timer than the Feed, it is unknown. However, you can only see the Soul when you have the Feed in your bags.",
-				["coord"] = { 63.18, 42.76, REVENDRETH },
-				["cost"] = { { "i", 187811, 1 } },	-- Spectral Feed
-				["g"] = {
-					i(187813),	-- Chicken Soul
 				},
 			})),
 		}),

@@ -205,7 +205,21 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					}),
 				},
 			}),
-			ach(14895, {	-- 'Ghast Five (5 of these criteria)
+			ach(14663, {	-- Explore The Maw
+				crit(1),		-- Calcis
+				crit(2),		-- Cocyrus
+				crit(3),		-- Crucible of the Damned
+				crit(4),		-- Desmotaeron
+				crit(5),		-- Gorgoa, River of Souls
+				crit(6),		-- Marrow's Coppice
+				crit(7),		-- Perdition Hold
+				crit(8),		-- Planes of Torment
+				crit(9),		-- Ravener's Lament
+				crit(10),		-- The Altar of Damnation
+				crit(11),		-- The Beastwarrens
+				crit(12),		-- Zovaal's Cauldron
+			}),
+			ach(14895, {	-- 'Ghast Five
 				crit(1, {		-- Vessel of Unfortunate Spirits
 					["provider"] = { "i", 184620 },
 				}),
@@ -461,6 +475,20 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["provider"] = { "i", 184901 },
 				}),
 			}),
+			ach(15648, sharedDataSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Walking in Maw-mphis
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					14895,	-- 'Ghast Five
+					14744,	-- Better to Be Lucky Than Dead
+					14660,	-- It's About Sending a Message
+					14738,	-- Hunting Party
+					14658,	-- Soulkeeper's Burden
+					14663,	-- Explore The Maw
+				}},
+				["g"] = {
+					title(462),	-- <Name>, Maw Walker
+				},
+			})),
 			ach(14742, {	-- Who Sent You?
 				["description"] = "If you have completed |cFFFFD700Focusing the Eye|r, you can still obtain this achievement by killing |cFF883325Mawsworn Blackguard|r in The Maw.",
 				["crs"] = {

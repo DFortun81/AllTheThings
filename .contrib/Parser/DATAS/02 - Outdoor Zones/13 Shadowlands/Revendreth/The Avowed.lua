@@ -1,68 +1,76 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+local SINSTONE_FRAGMENTS = 1816;
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(REVENDRETH, {
 		n(FACTIONS, {
 			faction(2439, {	-- The Avowed
-				["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor (unlocks ability to collect Sinstone Fragments + gain reputation)
-				["description"] = "To unlock this faction, you must complete |cFFFFD700The Final Atonement|r questline in Revendreth.\n\nReputation with The Avowed is gained first by killing Depraved mobs outside the Halls of Atonement.  Once you reach Friendly, use your |cFFFFFFFFSinstone Fragments|r to complete daily quests and summon Inquisitors, High Inquisitors, and Grand Inquisitors.\n\nMembers of the |cFFfe040fVenthyr Covenant|r can purchase a special mount and cosmetic cloak from the Avowed quartermaster that are unavailable to other covenants.",
 				["icon"] = 458226,
+				["description"] = "To unlock this faction, you must complete |cFFFFD700The Final Atonement|r questline in Revendreth.\n\nReputation with The Avowed is gained first by killing Depraved mobs outside the Halls of Atonement.  Once you reach Friendly, use your |cFFFFFFFFSinstone Fragments|r to complete daily quests and summon Inquisitors, High Inquisitors, and Grand Inquisitors.\n\nMembers of the |cFFfe040fVenthyr Covenant|r can purchase a special mount and cosmetic cloak from the Avowed quartermaster that are unavailable to other covenants.",
+				["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor (unlocks ability to collect Sinstone Fragments + gain reputation)
 				["g"] = {
 					n(ACHIEVEMENTS, {
-						ach(14277, {	-- The Accuser's Avowed
-							title(423),		-- Cryptkeeper
-							ach(14274, {	-- Absolution For All
-							--	these dudes are so plentiful that coordinates seem insane.  they are EVERYWHERE, there's like 50+ spawnpoints in a pretty small area.  there are plenty of ritualists, too, and they get highlighted when you have a soul to turn in so they're very obvious and also don't need coords
-								["description"] = "Fugitive Souls are friendly NPCs that can be found all over the Court of Harvesters.  Find them and bring them to an Avowed Ritualist to perform a ritual of absolution.\n\nOnly one soul can be picked up at a time.",
-								["crs"] = { 156150 },	-- Fugitive Soul
+						ach(14274, {	-- Absolution For All
+							["description"] = "Fugitive Souls are friendly NPCs that can be found all over the Court of Harvesters.  Find them and bring them to an Avowed Ritualist to perform a ritual of absolution.\n\nOnly one soul can be picked up at a time.",
+							["crs"] = { 156150 },	-- Fugitive Soul
+						}),
+						ach(14273, {	-- Crypt Kicker
+							["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
+							["cost"] = { { "i", 172957, 50 } },	-- 50x Atonement Crypt Key
+						}),
+						ach(14276, {	-- It's Always Sinny in Revendreth
+							crit(1, { -- Inquisitor Otilia
+								["_npcs"] = { 156918 },
 							}),
-							ach(14273, {	-- Crypt Kicker
-								["cost"] = { { "i", 172957, 50 } },	-- 50x Atonement Crypt Key
-								["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
+							crit(2, { -- Inquisitor Petre
+								["_npcs"] = { 156919 },
 							}),
-							ach(14276, {	-- It's Always Sinny in Revendreth
-								crit(1, { -- Inquisitor Otilia
-									["_npcs"] = { 156918 },
-								}),
-								crit(2, { -- Inquisitor Petre
-									["_npcs"] = { 156919 },
-								}),
-								crit(3, { -- Inquisitor Sorin
-									["_npcs"] = { 156916 },
-								}),
-								crit(4, { -- Inquisitor Traian
-									["_npcs"] = { 159151 },
-								}),
-								crit(5, { -- High Inquisitor Dacian
-									["_npcs"] = { 159155 },
-								}),
-								crit(6, { -- High Inquisitor Gabi
-									["_npcs"] = { 159152 },
-								}),
-								crit(7, { -- High Inquisitor Magda
-									["_npcs"] = { 159154 },
-								}),
-								crit(8, { -- High Inquisitor Radu
-									["_npcs"] = { 159153 },
-								}),
-								crit(9, { -- Grand Inquisitor Aurica
-									["_npcs"] = { 159157 },
-								}),
-								crit(10, { -- Grand Inquisitor Nicu
-									["_npcs"] = { 159156 },
-								}),
+							crit(3, { -- Inquisitor Sorin
+								["_npcs"] = { 156916 },
+							}),
+							crit(4, { -- Inquisitor Traian
+								["_npcs"] = { 159151 },
+							}),
+							crit(5, { -- High Inquisitor Dacian
+								["_npcs"] = { 159155 },
+							}),
+							crit(6, { -- High Inquisitor Gabi
+								["_npcs"] = { 159152 },
+							}),
+							crit(7, { -- High Inquisitor Magda
+								["_npcs"] = { 159154 },
+							}),
+							crit(8, { -- High Inquisitor Radu
+								["_npcs"] = { 159153 },
+							}),
+							crit(9, { -- Grand Inquisitor Aurica
+								["_npcs"] = { 159157 },
+							}),
+							crit(10, { -- Grand Inquisitor Nicu
+								["_npcs"] = { 159156 },
 							}),
 						}),
+						ach(14277, {	-- The Accuser's Avowed
+							-- Meta Achievement
+							["sym"] = {{"meta_achievement",
+								14274,	-- Absolution For All
+								14273,	-- Crypt Kicker
+								14276,	-- It's Always Sinny in Revendreth
+							}},
+							["g"] = {
+								title(423),		-- Cryptkeeper
+							},
+						}),
 					}),
-					n(QUESTS, {
+					n(QUESTS, sharedData({
+						["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
+						["provider"] = { "n", 160248 },	-- Archivist Fane
+						["coord"] = { 73.0, 52.0, REVENDRETH },
+						["repeatable"] = true,
+					}, {
 						q(58127, {	-- Inquisitor Sinstone
-							["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
-							["provider"] = { "n", 160248 },	-- Archivist Fane
-							["repeatable"] = true,
-							["coord"] = { 73.0, 52.0, REVENDRETH },
-							["cost"] = { { "c", 1816, 100 } },	-- 100x Sinstone Fragment
+							["cost"] = { { "c", SINSTONE_FRAGMENTS, 100 } },
 							["g"] = {
 								i(173793, {	-- Inquisitor Sinstone
 									["sym"] = {{"select","itemID",
@@ -75,11 +83,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							},
 						}),
 						q(58128, {	-- High Inquisitor Sinstone
-							["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
-							["provider"] = { "n", 160248 },	-- Archivist Fane
-							["repeatable"] = true,
-							["coord"] = { 73.0, 52.0, REVENDRETH },
-							["cost"] = { { "c", 1816, 250 } },	-- 250x Sinstone Fragment
+							["cost"] = { { "c", SINSTONE_FRAGMENTS, 250 } },
 							["g"] = {
 								i(173794, {	-- High Inquisitor Sinstone
 									["sym"] = {{"select","itemID",
@@ -92,10 +96,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							},
 						}),
 						q(58129, {	-- Grand Inquisitor Sinstone
-							["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
-							["provider"] = { "n", 160248 },	-- Archivist Fane
-							["repeatable"] = true,
-							["coord"] = { 73.0, 52.0, REVENDRETH },
 							["cost"] = { { "i", 180451, 10 } },	-- 10x Grand Inquisitor's Sinstone Fragment
 							["g"] = {
 								i(173795, {	-- Grand Inquisitor Sinstone
@@ -106,6 +106,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								}),
 							},
 						}),
+					})),
+					n(QUESTS, {
 						q(62653, {	-- Stop the Inquisition
 							["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
 							["provider"] = { "n", 167332 },	-- Gresit
@@ -231,35 +233,35 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							["coord"] = { 73.0, 52.0, REVENDRETH },
 							["g"] = {
 								i(184221, {	-- Archivist's Quill
-									["cost"] = { { "c", 1816, 1000 } },
+									["cost"] = { { "c", SINSTONE_FRAGMENTS, 1000 } },
 								}),
 								i(184220, {	-- Encyclopedia of Sinstone Fragment Recovery
 									["questID"] = 62821,	-- same spell / quest trigger as Treatise but this is BoA version that can be mailed to alts
-									["cost"] = { { "c", 1816, 600 } },
+									["cost"] = { { "c", SINSTONE_FRAGMENTS, 600 } },
 								}),
 								i(184222, {	-- Lemet's Requisition Orders
 									["questID"] = 62822,
-									["cost"] = { { "c", 1816, 350 } },
+									["cost"] = { { "c", SINSTONE_FRAGMENTS, 350 } },
 								}),
 								i(182890, {	-- Rapid Recitation Quill (TOY!)
-									["cost"] = { { "c", 1816, 500 } },
+									["cost"] = { { "c", SINSTONE_FRAGMENTS, 500 } },
 								}),
 								i(182660, {	-- Recipe: Shadestone (RECIPE!)
-									["cost"] = { { "c", 1816, 35 } },
+									["cost"] = { { "c", SINSTONE_FRAGMENTS, 35 } },
 								}),
 								i(184219, {	-- Treatise on Sinstone Fragment Acquisition
 									["questID"] = 62821,
-									["cost"] = { { "c", 1816, 600 } },
+									["cost"] = { { "c", SINSTONE_FRAGMENTS, 600 } },
 								}),
 								i(184218, {	-- Vulgarity Arbiter (TOY!)
-									["cost"] = { { "c", 1816, 1000 } },
+									["cost"] = { { "c", SINSTONE_FRAGMENTS, 1000 } },
 								}),
 								n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }},{
 									i(180940, {	-- Ebony Crypt Keeper's Mantle
-										["cost"] = { { "c", 1816, 500 } },
+										["cost"] = { { "c", SINSTONE_FRAGMENTS, 500 } },
 									}),
 									i(182954, {	-- Inquisition Gargon (MOUNT!)
-										["cost"] = { { "c", 1816, 2000 } },
+										["cost"] = { { "c", SINSTONE_FRAGMENTS, 2000 } },
 									}),
 								})),
 							},
@@ -268,15 +270,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							["description"] = "There is a chance to find this vendor when opening a crypt with an |cFFFFFFFFAtonement Crypt Key|r.\n\nHe runs away shortly after exiting the crypt, so make your purchases quickly!",
 							["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
 							["g"] = {
-								i(177231, {	-- Crown of Honor
+								i(177231, {	-- Crown of Honor (EC!)
 									["questID"] = 59682,
 									["cost"] = 1000000,	-- 100g
-									["g"] = {
-										crit(2, {	-- Crown of Honor
-											["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
-											["achievementID"] = 14678,	-- Court Favors
-										}),
-									},
 								}),
 								i(180780, {	-- Recipe: Red Noggin Candle (RECIPE!)
 									["cost"] = { { "c", 1820, 10 } },	-- 10x Infused Ruby

@@ -120,6 +120,17 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				crit(10),		-- Aspirant's Crucible
 				crit(11),		-- Agthia's Repose
 			}),
+			ach(14735, {	-- Flight School Graduate
+				crit(1, {		-- Flight School: Falling With Style
+					["_quests"] = { 60844 },	-- Flight School: Falling With Style
+				}),
+				crit(2, {		-- Flight School: Up and Away!
+					["_quests"] = { 60858 },	-- Flight School: Up and Away!
+				}),
+				crit(3, {		-- Flight School: Flapping Frenzy
+					["_quests"] = { 60911 },	-- Flight School: Flapping Frenzy
+				}),
+			}),
 			ach(14734, {	-- Rallying Cry of the Ascended
 				crit(1, {		-- Vesper of Courage
 					["coord"] = { 33.3, 59.7, BASTION },

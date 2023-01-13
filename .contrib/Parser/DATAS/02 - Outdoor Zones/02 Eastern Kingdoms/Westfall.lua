@@ -1349,6 +1349,38 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			n(TREASURES, {
+				o(357515, sharedDataSelf({ ["timeline"] = { ADDED_SL_REL } }, {	-- Sack of Oats
+					["coords"] = {
+						{ 43.1, 37.3, WESTFALL },
+						{ 44.9, 35.3, WESTFALL },
+						{ 45.8, 39.0, WESTFALL },
+						{ 46.4, 36.8, WESTFALL },
+						{ 48.8, 20.8, WESTFALL },
+						{ 50.3, 18.5, WESTFALL },
+						{ 51.2, 21.8, WESTFALL },
+						{ 51.2, 39.2, WESTFALL },
+						{ 51.5, 31.9, WESTFALL },
+						{ 51.8, 19.4, WESTFALL },
+						{ 52.2, 30.6, WESTFALL },
+						{ 52.2, 33.3, WESTFALL },
+						{ 52.6, 34.3, WESTFALL },
+						{ 53.3, 29.1, WESTFALL },
+						{ 53.5, 35.1, WESTFALL },
+						{ 53.9, 36.4, WESTFALL },
+						{ 55.8, 30.9, WESTFALL },
+						{ 56.4, 33.8, WESTFALL },
+						{ 56.6, 18.5, WESTFALL },
+						{ 56.8, 20.7, WESTFALL },
+						{ 57.5, 17.4, WESTFALL },
+						{ 58.5, 15.9, WESTFALL },
+						{ 59.2, 18.9, WESTFALL },
+					},
+					["g"] = {
+						i(182581),	-- Handful of Oats
+					},
+				})),
+			}),
 			n(VENDORS, {
 				n(1669, {	-- Defias Profiteer <Free Wheeling Merchant>
 					["coord"] = { 43.4, 66.8, WESTFALL },

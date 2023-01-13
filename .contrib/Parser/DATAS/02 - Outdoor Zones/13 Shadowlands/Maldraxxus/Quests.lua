@@ -735,6 +735,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				},
 			}),
 				-- MISC --
+			q(62804, {	-- Filling the Tanks
+				["provider"] = { "i", 184155 },	-- Recovered Containment Pack
+				["coord"] = { 58.6, 74.2, MALDRAXXUS },
+				["g"] = {
+					i(184156),	-- Pristine Containment Pack
+				},
+			}),
 			q(60179, {	-- Memory of Honor
 				["sourceQuests"] = { 57425 },	-- Land of Opportunity
 				["provider"] = { "o", 351467 },	-- Faded Epitaphs

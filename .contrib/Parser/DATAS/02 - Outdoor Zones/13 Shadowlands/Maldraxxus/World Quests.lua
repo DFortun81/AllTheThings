@@ -1,26 +1,21 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(MALDRAXXUS, {
 		n(WORLD_QUESTS, {
 			n(REWARDS, {
 				i(183111, {	-- Animated Ulna
-					["description"] = "A rare reward from pet battle WQs in Maldraxxus.  Combine with the other bones to craft the pet:\n|cFF0070ddAnimated Radius|r: Purchased from |cFFFFFFFFNalcorn Talsen|r in Maldraxxus or |cFFFFFFFFDar Vattish|r in Oribos.\n|cFF0070ddFlexing Phalanges|r: Skeletal Hand Fragments (47.4, 62.1 in Maldraxxus).",
-					["g"] = {
-						i(183114),	-- Carpal (PET!)
-					},
+					["description"] = "A rare reward from pet battle WQs in Maldraxxus.",
 				}),
 				i(187858, {	-- Bunny Soul
 					["description"] = "Has a chance to be listed as a reward for players of the 'Night Fae' Covenant from Pet Battle World Quests.\n\nSwitch to Night Fae Covenant, and use '/attwq' to see if it's up!",
-					["timeline"] = { "added 9.1.5" },
+					["timeline"] = { ADDED_SL_1_5 },
 				}),
 			}),
 		}),
 		n(WORLD_QUESTS, sharedData({
 			["isWorldQuest"] = true,
-			["lvl"] = { 60 },
 		},{
 			q(57205),	-- A Few Bumps Along the Way
 			q(59703),	-- Abombing Run
@@ -50,11 +45,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["isDaily"] = true,
 					["coord"] = { 50.6, 63.2, MALDRAXXUS },
 					["g"] = {
-						crit(9, {	-- Nirvaska the Summoner
-							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
-						}),
 						i(181811, {	-- Beckoner's Shadowy Crystal
-							["customCollect"] = "SL_COV_NEC",	-- Necrolord Only
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord
 						}),
 						i(183700),	-- Forgotten Summoner's Shoulderpads
 					},
@@ -118,11 +110,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			q(60211),	-- Spore Losers
 			q(61060),	-- Spore Losers
 			q(60231, {	-- State of Decay
-				i(177245, {	-- Maldraxxi Challenge Banner
-					crit(15, {	-- Maldraxxi Challenge Banner
-						["customCollect"] = "SL_COV_VEN",
-						["achievementID"] = 14678,	-- Court Favors
-					}),
+				i(177245, {	-- Maldraxxi Challenge Banner (EC!)
+					["questID"] = 59695,
 				}),
 			}),
 			q(61615, {	-- Tailoring: Haunting Hood

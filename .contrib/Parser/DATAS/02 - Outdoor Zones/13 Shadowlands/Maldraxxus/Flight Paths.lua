@@ -1,12 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(MALDRAXXUS, {
 		n(FLIGHT_PATHS, {
 			fp(2398, {	-- Bleak Redoubt, Maldraxxus
-				["customCollect"] = "SL_COV_NEC",	-- Necrolord-only
+				["customCollect"] = "SL_COV_NEC",	-- Necrolord
 				["coord"] = { 52.4, 67.7, MALDRAXXUS },
 			}),
 			fp(2560, {	-- Keres' Rest, Maldraxxus
