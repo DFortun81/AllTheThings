@@ -16,7 +16,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["_quests"] = { 70376 },	-- Second Challenge of Tyr: Might
 				}),
 				crit(4, {	-- Third Challenge: Persistence
-					-- ["_quests"] = { QUEST },	-- Name
+					["_quests"] = { 70509 },	-- Third Challenge of Tyr: Persistence
 				}),
 				crit(5, {	-- Fourth Challenge: Resourcefulness
 					-- ["_quests"] = { QUEST },	-- Name
@@ -190,10 +190,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					{ 35.4, 58.8, VALDRAKKEN },
 				},
 				["g"] = {
-					i(193515),	-- Explorer's Cloth Robe
-					i(193390),	-- Resilient Leather Tunic
-					i(193394),	-- Adamant Scale Vest
-					i(189538),	-- Explorer's Plate Chestguard
 					i(198048),	-- Titan Training Matrix I
 					i(201343),	-- Bag of Cloth Armor Reagents
 					i(201352),	-- Bag of Leather Reagents
@@ -297,6 +293,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["sourceQuests"] = { 70621 },	-- Third Challenge of Tyr: Persistence Embodied
 				["provider"] = { "n", 195737 },	-- Maiden of Inspiration
 				["coord"] = { 64, 41.3, THE_WAKING_SHORES },
+			}),
+			-- In Tyr's Footsteps chapter 5
+			q(70881, {	-- Fourth Challenge of Tyr: Resourcefulness
+				["sourceQuests"] = { 70510 },	-- Victorious
+				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+				["coord"] = { 83.9, 53.2, VALDRAKKEN },
+				["g"] = {
+					i(199197),	-- Bottled Essence
+				},
 			}),
 		}),
 		prof(ALCHEMY, sharedData({
@@ -1340,6 +1345,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					70361,	-- Dragon Isles Inscription
 					72244,	-- Dragon Isles Inscription
 				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 198380 },	-- Journalist Jessamine Spitz
 				["coord"] = { 76.1, 35.5, THE_WAKING_SHORES },
 				["cost"] = { { "i", 191233, 1 }, },	-- 2xChef's Smooth Rolling Pin
@@ -1369,6 +1375,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				-- ["sourceQuest"] = ,
 			}),
 			q(66945, {	-- Icy Ink
+				["description"] = "Requires 25 Skill.",
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["isWeekly"] = true,
+				-- ["sourceQuest"] = ,
+			}),
+			q(72438, {	-- Tarasek Intentions
 				["description"] = "Requires 25 Skill.",
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
@@ -1426,7 +1439,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			o(380601, {	-- Dusty Darkmoon Card
 				["questID"] = 70297,
-				["coord"] = { 46.2, 23.9, THE_AZURE_SPAN },
+				["coord"] = { 46.2, 24.0, THE_AZURE_SPAN },
 				["g"] = {
 					i(198693),	-- Dusty Darkmoon Card
 				},
@@ -1457,7 +1470,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			o(380570, {	-- Curious Glyph
 				["description"] = "Interact with the glyph, cross the bridge and kill the neutral NPC at the end, then return to collect the treasure.",
 				["questID"] = 70248,
-				["coord"] = { 47.2, 40.1, THALDRASZUS },
+				["coord"] = { 47.1, 40.1, THALDRASZUS },
 				["g"] = {
 					i(198659),	-- Forgetful Apprentice's Tome (1 of 2)
 				},
@@ -1679,7 +1692,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			o(380577, {	-- Lofty Malygite
 				["questID"] = 70282,
-				["coord"] = { 25.2, 35.4, OHNAHRAN_PLAINS },
+				["coord"] = { 25.2, 34.8, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(198670),	-- Lofty Malygite
 				},
@@ -1802,6 +1815,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
+			q(70033, {	-- Artisan's Supply: Pioneer's Leather Boots
+				["sourceQuests"] = 70362,	-- Dragon Isles Leatherworking
+				["providers"] = {
+					{ "n", 192027 },	-- Dokhusek
+					{ "n", 192048 },	-- Deirdre Flemmin
+					{ "n", 195785 },	-- Samar
+					{ "n", 196628 },	-- Ekhi
+				},
+				["coords"] = {
+					{ 57.9, 68.1, THE_WAKING_SHORES },	-- Deirdre Flemmin
+					{ 80.8, 59.4, OHNAHRAN_PLAINS },	-- Dokhusek
+					{ 29.0, 61.0, VALDRAKKEN },			-- Samar
+					{ 39.4, 55.4, OHNAHRAN_PLAINS },	-- Ekhi
+				},
+			}),
 			q(66363, {	-- Basilisk Bucklers
 				["description"] = "Requires 25 Skill.",
 				["coord"] = { 36.8, 63.6, VALDRAKKEN },
@@ -1867,7 +1895,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			o(380615, {	-- Poacher's Pack
 				["questID"] = 70308,
-				["coord"] = { 39.0, 86.0, THE_WAKING_SHORES },
+				["coord"] = { 39.4, 86.3, THE_WAKING_SHORES },
 				["g"] = {
 					i(198711),	-- Poacher's Pack
 				},
@@ -2369,7 +2397,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			o(380588, {	-- Miniature Bronze Dragonflight Banner
 				["questID"] = 70288,
-				["coord"] = { 58.6, 45.8, THALDRASZUS },
+				["coord"] = { 60.5, 79.7, THALDRASZUS },
 				["g"] = {
 					i(198684),	-- Miniature Bronze Dragonflight Banner
 				},

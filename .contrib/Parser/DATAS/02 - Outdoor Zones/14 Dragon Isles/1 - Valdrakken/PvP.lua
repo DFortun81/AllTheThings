@@ -1717,6 +1717,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								}),
 								},
 						})),
+						i(185834, {	-- Orboreal Distinguishment
+							["cost"] = { { "c", HONOR, 2000 } },
+							["g"] = {
+								i(137642),	-- Mark of Honor
+							},
+						}),
 					},
 				}),
 			}),

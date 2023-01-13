@@ -59,7 +59,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		i(54811, {	-- Celestial Steed (MOUNT!)
 			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
-			["timeline"] = { "added 3.3.3.11723", "removed 10.0.2.99999" },
+			["timeline"] = { "added 3.3.3.11723", "removed 10.0.2.47213" },
 		}),
 		i(109013, {	-- Dread Raven (MOUNT!)
 			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0" },
@@ -138,7 +138,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 8.0.1.27602" },
 		}),
 		i(76755, {	-- Tyrael's Charger (MOUNT!)
-			["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.99999" },	--TODO: will be removed from the store again on Jan 2 2023
+			["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" },	-- removed from the store again on Jan 2 2023
 		}),
 		i(166775, {	-- Vulpine Familiar (MOUNT!)
 			["timeline"] = { "added 8.1.0.28724" },
@@ -153,7 +153,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		i(69846, {	-- Winged Guardian (MOUNT!)
 			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
-			["timeline"] = { "added 4.1.0.13793", "removed 10.0.2.99999" },
+			["timeline"] = { "added 4.1.0.13793", "removed 10.0.2.47213" },
 		}),
 		mount(359317, {	-- Wen Lo, the River's Edge (MOUNT!)
 			["timeline"] = { "added 9.1.5.42010" },
@@ -208,7 +208,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		i(49693, {	-- Lil' K.T.
 			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
-			["timeline"] = { "added 3.2.2.10505", "removed 10.0.2.99999" },
+			["timeline"] = { "added 3.2.2.10505", "removed 10.0.2.47213" },
 		}),
 		p(3249, {	-- Lil' Ursoc (PET!)
 			["timeline"] = { "added 9.2.5" },
@@ -241,7 +241,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		i(49665, {	-- Pandaren Monk
 			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
-			["timeline"] = { "added 3.2.2.10468", "removed 10.0.2.99999" },
+			["timeline"] = { "added 3.2.2.10468", "removed 10.0.2.47213" },
 		}),
 		i(151234, {	-- Shadow
 			["timeline"] = { "added 7.3.0.25021" },

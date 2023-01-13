@@ -174,7 +174,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["cr"] = 18314,	-- Nexus Stalker
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				e(534, {	-- Pandemonius
 					["creatureID"] = 18341,
 					["groups"] = {
@@ -278,7 +278,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = {

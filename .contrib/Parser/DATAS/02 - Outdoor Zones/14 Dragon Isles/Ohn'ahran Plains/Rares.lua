@@ -3,10 +3,19 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
-		n(RARES, {
+		n(RARES, sharedData({["isDaily"] = true},{
+		--n(RARES, {
+			n(193168, {	-- Biryuk
+				["coord"] = { 72.5, 56.2, OHNAHRAN_PLAINS },
+				["questID"] = 73903,
+				["isDaily"] = true,
+			}),
 			n(193128, {	-- Blightpaw the Depraved
+				["description"] = "Speak to nearby NPC to spawn.",
+				["cr"] = 193222,	-- Archaeologist Koranir
 				["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
 				["questID"] = 74096,
+				["isDaily"] = true,
 				["g"] = {
 					i(196986),	-- Cliffside Wylderdrake: Black Hair (DM!)
 					i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
@@ -22,13 +31,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(195186, {	-- Cinta the Forgotten
 				["coord"] = { 31.3, 76.0, OHNAHRAN_PLAINS },
 				["questID"] = 73950,
-				-- ["g"] = {
-
-				-- },
 			}),
 			n(189652, {	-- Deadwaker Ghendish
 				["coord"] = { 30.8, 66.6, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["questID"] = 73872,
+				["isDaily"] = true,
 				["g"] = {
 					i(189055),	-- Ghendish's Backup Talisman
 					i(200441),	-- Jhakan's Horned Cowl
@@ -36,6 +43,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(192020, {	-- Eaglemaster Niraak
 				["coord"] = { 49.5, 67.0, OHNAHRAN_PLAINS },
+				["description"] = "Chance to spawn after killing any nearby Nokhud Mobs. Yells 'Filth! I will end you for your actions!' upon spawning.",
 				["questID"] = 74063,
 				["g"] = {
 					i(200536),	-- Tamed Eagle
@@ -49,14 +57,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200309),	-- Rock Encrusted Chestguard
 				},
 			}),
-			n(193170, {	-- Fulgurb
-				["coord"] = { 74.4, 47.6, OHNAHRAN_PLAINS },
-				["questID"] = 73994,
-				["g"] = {
-					i(200433),	-- Footwraps of Subjugation
-				},
-			}),
+		--	n(193170, {	-- Fulgurb
+		--	Time Based Rare
 			n(187781, {	-- Hamett <Rockfang Matriarch>
+				["description"] = "Chance to spawn upon killing Sutaan.",
 				["coord"] = { 85.4, 15.8, OHNAHRAN_PLAINS },
 				["questID"] = 73951,
 				-- ["g"] = {
@@ -64,6 +68,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(188095, {	-- Hunter of the Deep
+				["description"] = "There will be some glowing fish in the water when he is summonable. Click on the weapon rack, shoot the fish. When all fish are eliminated, the boss will spawn.",
 				["coord"] = { 80.5, 42.2, OHNAHRAN_PLAINS },
 				["questID"] = 73966,
 				-- ["g"] = {
@@ -81,9 +86,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(197009, {	-- Liskheszaera
 				["coord"] = { 87.4, 61.4, OHNAHRAN_PLAINS },
 				["questID"] = 73882,
+				["isDaily"] = true,
 				["g"] = {
 					i(200434),	-- Anund's Mana-Singed Amice
 					i(200446),	-- Crystalized Sigil
+					i(197106),	-- Highland Drake: Finned Head (DM!)
 				},
 			}),
 			n(195409, {	-- Makhra the Ashtouched <Corrupted Child of Ohn'ahra>
@@ -138,6 +145,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193669, {	-- Prozela Galeshot
 				["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
 				["questID"] = 71240, -- also 72815 ?
+				["isDaily"] = false,
 				["g"] = {
 					i(200292),	-- Cragforge Pauldrons
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
@@ -145,8 +153,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(192557, {	-- Quackers the Terrible
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
-				-- ["questID"] = 70177,
+				["description"] = "Requires Duck Trap Kit, purchased from a nearby camp (northern waypoint).\n\nYou'll need a rank 1 of these reagents:\n\n1 x Primal Molten Alloy\n\n3 x Resilient Leather\n\n4 x Spool of Wilderthread\n\nUse the item to trap a duck and then go to southern waypoint & put the trapped duck into the nest.",
+				["coords"] = {
+					{ 68.2, 79.2, OHNAHRAN_PLAINS },
+					{ 70.43, 63.49, OHNAHRAN_PLAINS },
+				},
+				["questID"] = 73972,
 				-- ["g"] = {
 
 				-- },
@@ -159,8 +171,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193227, {	-- Ronsak the Decimator
-				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
-				-- ["questID"] = 69878,
+				["coord"] = { 43.3, 55.2, OHNAHRAN_PLAINS },
+				-- ["questID"] = ,
 				["g"] = {
 					i(200308),	-- Rellen's Legacy
 				},
@@ -168,6 +180,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193153, {	-- Ripsaw the Stalker
 				["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
 				["questID"] = 72845,
+				["isDaily"] = false,
 				["g"] = {
 					i(200137),	-- Chitin Dreadbringer
 				},
@@ -186,6 +199,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193136, {	-- Scav Notail
 				["coord"] = { 50.1, 75.2, OHNAHRAN_PLAINS },
 				["questID"] = 73893,
+				["isDaily"] = true,
 				["g"] = {
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 					i(200168),	-- Gnoll Hide Belt
@@ -193,9 +207,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193188, {	-- Seeker Teryx
-				["coord"] = { 62.7, 12.8, OHNAHRAN_PLAINS },
+				["coord"] = { 61.0, 13.6, OHNAHRAN_PLAINS },
 				["questID"] = 73894,
+				["isDaily"] = true,
 				["g"] = {
+					i(196970),	-- Cliffside Wylderdrake: Spiked Back (DM!)
 					i(200154),	-- Rubyscale Band
 					i(200875),	-- Seeker's Bands
 				},
@@ -204,20 +220,25 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["crs"] = { 193166 },	-- Solethus's Gravestone
 				["coord"] = { 29.9, 41.1, OHNAHRAN_PLAINS },
 				["questID"] = 74075,
+				["isDaily"] = true,
 				["g"] = {
 					i(196996),	-- Cliffside Wylderdrake: Branched Horns (DM!)
 					i(200437),	-- Dreamsong Censer
 					i(197115),	-- Highland Drake: Thorned Jaw (DM!)
 					i(200444),	-- Mantle of the Gatekeeper
+					i(200310),	-- Stole of the Iron Phantom
+					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 				},
 			}),
 			n(192949, {	-- Skaara
 				["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
 				["questID"] = 72847,
+				["isDaily"] = false,
 			}),
 			n(193165, {	-- Sparkspitter Vrak
 				["coord"] = { 22.1, 38.8, OHNAHRAN_PLAINS },
 				["questID"] = 73896,
+				["isDaily"] = true,
 				["g"] = {
 					i(200297),	-- Hastily Cobbled Maul
 					i(200689),	-- Rimetalon Band
@@ -234,6 +255,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(191842, {	-- Sulfurion
 				["coord"] = { 78.3, 83.0, OHNAHRAN_PLAINS },
 				["questID"] = 73974,
+				["isDaily"] = true,
 				-- ["g"] = {
 
 				-- },
@@ -241,6 +263,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193133, {	-- Sunscale Behemoth
 				["coord"] = { 63.2, 48.6, OHNAHRAN_PLAINS },
 				["questID"] = 72849,
+				["isDaily"] = false,
 				["g"] = {
 					i(198409),	-- Personal Shell (TOY!)
 				},
@@ -248,6 +271,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193163, {	-- Territorial Coastling
 				["coord"] = { 22.7, 67.6, OHNAHRAN_PLAINS },
 				["questID"] = 72851,
+				["isDaily"] = false,
 				["g"] = {
 					i(200212),	-- Sand-Encrusted Graves
 				},
@@ -269,6 +293,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(191354, {	-- Ty'foon the Ascended
 				["coord"] = { 26.1, 34.2, OHNAHRAN_PLAINS },
 				["questID"] = 72852,
+				["isDaily"] = false,
 				["g"] = {
 					i(200293),	-- Primal Scion's Twinblade
 					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
@@ -279,13 +304,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(192453, {	-- Vaniik the Stormtouched <Corrupted Child of Ohn'ahra>
 				["coord"] = { 82.0, 63.0, OHNAHRAN_PLAINS },
 				["questID"] = 73978,
+				["isDaily"] = true,
 				-- ["g"] = {
 
 				-- },
 			}),
 			n(192364, {	-- Windscale the Stormborn
+				["description"] = "Spawns from the egg after killing 5 nearby egg channelers.",
+				-- TODO: add crs for kill npcs
 				["coord"] = { 84.2, 47.8, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
+				["questID"] = 73979,
+				["isDaily"] = true,
 				-- ["g"] = {
 
 				-- },
@@ -299,8 +328,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 			n(193209, {	-- Zenet Avis <The Hard Wind>
 				["coord"] = { 31.5, 64.0, OHNAHRAN_PLAINS },
-				-- ["questID"] = 70177,
+				["questID"] = 73901,
+				["isDaily"] = true,
 				["g"] = {
+					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
 					i(200314),	-- Skyspeaker's Envelope
 					i(200306),	-- Tempest Shawl
 					i(200879, {	-- Zenet Egg
@@ -317,16 +348,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(193140, {	-- Zarizz
+				["description"] = "Use /hiss on 4 nearby Juvenile Wind Serpents to spawn.",
 				["coord"] = { 30.3, 62.1, OHNAHRAN_PLAINS },
 				["questID"] = 74091,
+				["isDaily"] = true,
 				["g"] = {
 					i(200215),	-- Plumed Shoulderguards of the Hunt
 				},
 			}),
-			n(193168, {	-- Biryuk
-				["coord"] = { 72.5, 56.2, OHNAHRAN_PLAINS },
-				["questID"] = 73903,
-			}),
-		}),
+		})),
+		--}),
 	}),
 })));

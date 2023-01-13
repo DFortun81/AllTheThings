@@ -80,10 +80,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 
 					-- The Waking Shores --
 				q(70075, {	-- Cataloging the Waking Shores
-					["coord"] = { 64.1, 58.3, OHNAHRAN_PLAINS }
+					["coord"] = { 64.1, 58.3, THE_WAKING_SHORES }
 				}),
 				q(70632, {	-- Cataloging the Waking Shores
-					["coord"] = { 55.9, 55.8, OHNAHRAN_PLAINS }
+					["coord"] = { 55.9, 55.8, THE_WAKING_SHORES }
 				}),
 
 					-- Ohn'ahran Plains --

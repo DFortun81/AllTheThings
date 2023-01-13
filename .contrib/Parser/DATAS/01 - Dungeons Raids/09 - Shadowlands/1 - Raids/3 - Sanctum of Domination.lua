@@ -19,104 +19,104 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 			n(ACHIEVEMENTS, {
 				ach(15122, {	-- The Jailer's Vanguard
 					crit(1, { -- The Tarragrue
-						["_encounter"] = { 2435, LFR_R },
+						["_encounter"] = { 2435, LFR_RAID },
 					}),
 					crit(2, { -- The Eye of the Jailer
-						["_encounter"] = { 2442, LFR_R },
+						["_encounter"] = { 2442, LFR_RAID },
 					}),
 					crit(3, { -- The Nine
-						["_encounter"] = { 2439, LFR_R },
+						["_encounter"] = { 2439, LFR_RAID },
 					}),
 				}),
 				ach(15123, {	-- The Dark Bastille
 					crit(1, { -- Remnant of Ner'zhul
-						["_encounter"] = { 2444, LFR_R },
+						["_encounter"] = { 2444, LFR_RAID },
 					}),
 					crit(2, { -- Soulrender Dormazain
-						["_encounter"] = { 2445, LFR_R },
+						["_encounter"] = { 2445, LFR_RAID },
 					}),
 					crit(3, { -- Painsmith Raznal
-						["_encounter"] = { 2443, LFR_R },
+						["_encounter"] = { 2443, LFR_RAID },
 					}),
 				}),
 				ach(15124, {	-- Shackles of Fate
 					crit(1, { -- Guardian of the First Ones
-						["_encounter"] = { 2446, LFR_R },
+						["_encounter"] = { 2446, LFR_RAID },
 					}),
 					crit(2, { -- Fatescribe Roh-Kalo
-						["_encounter"] = { 2447, LFR_R },
+						["_encounter"] = { 2447, LFR_RAID },
 					}),
 					crit(3, { -- Kel'Thuzad
-						["_encounter"] = { 2440, LFR_R },
+						["_encounter"] = { 2440, LFR_RAID },
 					}),
 				}),
 				ach(15125, {	-- The Reckoning
 					crit(1, {-- Sylvanas Windrunner
-						["_encounter"] = { 2441, LFR_R },
+						["_encounter"] = { 2441, LFR_RAID },
 					}),
 				}),
 				ach(15126, {	-- Sanctum of Domination
 					crit(1, { -- The Tarragrue
-						["_encounter"] = { 2435, LFR_R },
+						["_encounter"] = { 2435, LFR_RAID },
 					}),
 					crit(2, { -- The Eye of the Jailer
-						["_encounter"] = { 2442, LFR_R },
+						["_encounter"] = { 2442, LFR_RAID },
 					}),
 					crit(3, { -- The Nine
-						["_encounter"] = { 2439, LFR_R },
+						["_encounter"] = { 2439, LFR_RAID },
 					}),
 					crit(4, { -- Remnant of Ner'zhul
-						["_encounter"] = { 2444, LFR_R },
+						["_encounter"] = { 2444, LFR_RAID },
 					}),
 					crit(5, { -- Soulrender Dormazain
-						["_encounter"] = { 2445, LFR_R },
+						["_encounter"] = { 2445, LFR_RAID },
 					}),
 					crit(6, { -- Painsmith Raznal
-						["_encounter"] = { 2443, LFR_R },
+						["_encounter"] = { 2443, LFR_RAID },
 					}),
 					crit(7, { -- Guardian of the First Ones
-						["_encounter"] = { 2446, LFR_R },
+						["_encounter"] = { 2446, LFR_RAID },
 					}),
 					crit(8, { -- Fatescribe Roh-Kalo
-						["_encounter"] = { 2447, LFR_R },
+						["_encounter"] = { 2447, LFR_RAID },
 					}),
 					crit(9, { -- Kel'Thuzad
-						["_encounter"] = { 2440, LFR_R },
+						["_encounter"] = { 2440, LFR_RAID },
 					}),
 					crit(10, {-- Sylvanas Windrunner
-						["_encounter"] = { 2441, LFR_R },
+						["_encounter"] = { 2441, LFR_RAID },
 					}),
 				}),
 				ach(15127, {	-- Heroic: Sanctum of Domination
 					crit(1, { -- The Tarragrue
-						["_encounter"] = { 2435, HEROIC_R },
+						["_encounter"] = { 2435, HEROIC_RAID },
 					}),
 					crit(2, { -- The Eye of the Jailer
-						["_encounter"] = { 2442, HEROIC_R },
+						["_encounter"] = { 2442, HEROIC_RAID },
 					}),
 					crit(3, { -- The Nine
-						["_encounter"] = { 2439, HEROIC_R },
+						["_encounter"] = { 2439, HEROIC_RAID },
 					}),
 					crit(4, { -- Remnant of Ner'zhul
-						["_encounter"] = { 2444, HEROIC_R },
+						["_encounter"] = { 2444, HEROIC_RAID },
 					}),
 					crit(5, { -- Soulrender Dormazain
-						["_encounter"] = { 2445, HEROIC_R },
+						["_encounter"] = { 2445, HEROIC_RAID },
 					}),
 					crit(6, { -- Painsmith Raznal
-						["_encounter"] = { 2443, HEROIC_R },
+						["_encounter"] = { 2443, HEROIC_RAID },
 					}),
 					crit(7, { -- Guardian of the First Ones
-						["_encounter"] = { 2446, HEROIC_R },
+						["_encounter"] = { 2446, HEROIC_RAID },
 					}),
 					crit(8, { -- Fatescribe Roh-Kalo
-						["_encounter"] = { 2447, HEROIC_R },
+						["_encounter"] = { 2447, HEROIC_RAID },
 					}),
 					crit(9, { -- Kel'Thuzad
-						["_encounter"] = { 2440, HEROIC_R },
+						["_encounter"] = { 2440, HEROIC_RAID },
 					}),
 					crit(10, {-- Sylvanas Windrunner
-						["_encounter"] = { 2441, HEROIC_R },
+						["_encounter"] = { 2441, HEROIC_RAID },
 					}),
 				}),
 				ach(15128, {	-- Mythic: Sanctum of Domination
@@ -160,98 +160,98 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 				-- Fated
 				ach(15667, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Fate of Domination
 					crit(1, { -- The Tarragrue
-						["_encounter"] = { 2435, LFR_R },
+						["_encounter"] = { 2435, LFR_RAID },
 					}),
 					crit(2, { -- The Eye of the Jailer
-						["_encounter"] = { 2442, LFR_R },
+						["_encounter"] = { 2442, LFR_RAID },
 					}),
 					crit(3, { -- The Nine
-						["_encounter"] = { 2439, LFR_R },
+						["_encounter"] = { 2439, LFR_RAID },
 					}),
 					crit(4, { -- Remnant of Ner'zhul
-						["_encounter"] = { 2444, LFR_R },
+						["_encounter"] = { 2444, LFR_RAID },
 					}),
 					crit(5, { -- Soulrender Dormazain
-						["_encounter"] = { 2445, LFR_R },
+						["_encounter"] = { 2445, LFR_RAID },
 					}),
 					crit(6, { -- Painsmith Raznal
-						["_encounter"] = { 2443, LFR_R },
+						["_encounter"] = { 2443, LFR_RAID },
 					}),
 					crit(7, { -- Guardian of the First Ones
-						["_encounter"] = { 2446, LFR_R },
+						["_encounter"] = { 2446, LFR_RAID },
 					}),
 					crit(8, { -- Fatescribe Roh-Kalo
-						["_encounter"] = { 2447, LFR_R },
+						["_encounter"] = { 2447, LFR_RAID },
 					}),
 					crit(9, { -- Kel'Thuzad
-						["_encounter"] = { 2440, LFR_R },
+						["_encounter"] = { 2440, LFR_RAID },
 					}),
 					crit(10, {-- Sylvanas Windrunner
-						["_encounter"] = { 2441, LFR_R },
+						["_encounter"] = { 2441, LFR_RAID },
 					}),
 				})),
 				ach(15668, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Heroic: Fate of Domination
 					crit(1, { -- The Tarragrue
-						["_encounter"] = { 2435, HEROIC_R },
+						["_encounter"] = { 2435, HEROIC_RAID },
 					}),
 					crit(2, { -- The Eye of the Jailer
-						["_encounter"] = { 2442, HEROIC_R },
+						["_encounter"] = { 2442, HEROIC_RAID },
 					}),
 					crit(3, { -- The Nine
-						["_encounter"] = { 2439, HEROIC_R },
+						["_encounter"] = { 2439, HEROIC_RAID },
 					}),
 					crit(4, { -- Remnant of Ner'zhul
-						["_encounter"] = { 2444, HEROIC_R },
+						["_encounter"] = { 2444, HEROIC_RAID },
 					}),
 					crit(5, { -- Soulrender Dormazain
-						["_encounter"] = { 2445, HEROIC_R },
+						["_encounter"] = { 2445, HEROIC_RAID },
 					}),
 					crit(6, { -- Painsmith Raznal
-						["_encounter"] = { 2443, HEROIC_R },
+						["_encounter"] = { 2443, HEROIC_RAID },
 					}),
 					crit(7, { -- Guardian of the First Ones
-						["_encounter"] = { 2446, HEROIC_R },
+						["_encounter"] = { 2446, HEROIC_RAID },
 					}),
 					crit(8, { -- Fatescribe Roh-Kalo
-						["_encounter"] = { 2447, HEROIC_R },
+						["_encounter"] = { 2447, HEROIC_RAID },
 					}),
 					crit(9, { -- Kel'Thuzad
-						["_encounter"] = { 2440, HEROIC_R },
+						["_encounter"] = { 2440, HEROIC_RAID },
 					}),
 					crit(10, {-- Sylvanas Windrunner
-						["_encounter"] = { 2441, HEROIC_R },
+						["_encounter"] = { 2441, HEROIC_RAID },
 					}),
 				})),
 				ach(15669, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Mythic: Fate of Domination
 					crit(1, { -- The Tarragrue
-						["_encounter"] = { 2435, MYTHIC_R },
+						["_encounter"] = { 2435, MYTHIC_RAID },
 					}),
 					crit(2, { -- The Eye of the Jailer
-						["_encounter"] = { 2442, MYTHIC_R },
+						["_encounter"] = { 2442, MYTHIC_RAID },
 					}),
 					crit(3, { -- The Nine
-						["_encounter"] = { 2439, MYTHIC_R },
+						["_encounter"] = { 2439, MYTHIC_RAID },
 					}),
 					crit(4, { -- Remnant of Ner'zhul
-						["_encounter"] = { 2444, MYTHIC_R },
+						["_encounter"] = { 2444, MYTHIC_RAID },
 					}),
 					crit(5, { -- Soulrender Dormazain
-						["_encounter"] = { 2445, MYTHIC_R },
+						["_encounter"] = { 2445, MYTHIC_RAID },
 					}),
 					crit(6, { -- Painsmith Raznal
-						["_encounter"] = { 2443, MYTHIC_R },
+						["_encounter"] = { 2443, MYTHIC_RAID },
 					}),
 					crit(7, { -- Guardian of the First Ones
-						["_encounter"] = { 2446, MYTHIC_R },
+						["_encounter"] = { 2446, MYTHIC_RAID },
 					}),
 					crit(8, { -- Fatescribe Roh-Kalo
-						["_encounter"] = { 2447, MYTHIC_R },
+						["_encounter"] = { 2447, MYTHIC_RAID },
 					}),
 					crit(9, { -- Kel'Thuzad
-						["_encounter"] = { 2440, MYTHIC_R },
+						["_encounter"] = { 2440, MYTHIC_RAID },
 					}),
 					crit(10, {-- Sylvanas Windrunner
-						["_encounter"] = { 2441, MYTHIC_R },
+						["_encounter"] = { 2441, MYTHIC_RAID },
 					}),
 				})),
 					-- Guild Achievements
@@ -460,7 +460,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 					["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
 				}),
 			}),
-			d(LFR_R, {
+			d(LFR_RAID, {
 				n(ZONE_DROPS, {
 					i(186371),	-- Ancient Brokensoul Bands
 					i(186362),	-- Bindings of the Subjugated
@@ -667,7 +667,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 					}),
 				}),
 			}),
-			d(NORMAL_R, {
+			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(64597, {	-- Sanctum of Domination - Damned If You Don't [N]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
@@ -885,7 +885,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 					},
 				}),
 			}),
-			d(HEROIC_R, {
+			d(HEROIC_RAID, {
 				n(QUESTS, {
 					q(64598, {	-- Sanctum of Domination - Damned If You Don't [H]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
@@ -1093,7 +1093,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 					},
 				}),
 			}),
-			d(MYTHIC_R, {
+			d(MYTHIC_RAID, {
 				n(QUESTS, {
 					q(64599, {	-- Sanctum of Domination - Damned If You Don't [M]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon

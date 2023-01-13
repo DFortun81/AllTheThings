@@ -242,7 +242,11 @@ root("Zones", {
 					q(12713, {	-- Betrayal
 						["coord"] = { 28.4, 44.9, ZULDRAK },	-- technically, this can be done any at the Reliquary of Pain
 						["qg"] = 28518,	-- Stefan Vadu
-						["sourceQuest"] = 12676,	-- Sabotage
+						["sourceQuests"] = {
+							12652,	-- Feedin' Da Goolz
+							12676,	-- Sabotage
+						},
+						["description"] = "WARNING: Once you complete this quest, the quest |cFFFFD700Feedin' Da Goolz|r will become unavailable forever!",
 						["groups"] = {
 							i(39655),	-- Betrayer's Choker
 							i(39653),	-- Choker of Betrayal
@@ -408,10 +412,11 @@ root("Zones", {
 						["sourceQuest"] = 12685,	-- You Reap What You Sow
 					}),
 					q(12652, {	-- Feedin' Da Goolz
-						["coord"] = { 19.8, 75.4, ZULDRAK },
 						["qg"] = 28589,	-- Gristlegut
+						["altQuests"] = { 12713 },	-- Betrayal
 						["sourceQuest"] = 12649,	-- Suit Up!
-						["description"] = "Must be on |cFFFFD700Suit Up!|r to see this quest.",
+						["coord"] = { 19.8, 75.4, ZULDRAK },
+						["description"] = "Must be on |cFFFFD700Suit Up!|r to see this quest.\n\nWARNING: Once you complete |cFFFFD700Betrayal|r this quest will become unavailable forever!",
 						["groups"] = {
 							i(39812),	-- Soiled Trousers
 							i(39876),	-- Aged Abomination Tripe

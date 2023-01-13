@@ -514,6 +514,7 @@ local L = app.L;
 		--TODO: L.PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
 		--TODO: L.PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
 		--TODO: L.PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.."-Clicked to Switch to it";
+		--TODO: L.SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 
 	-- Sync tab
 		--TODO: L.SYNC = "Sync";
@@ -822,15 +823,12 @@ for key,value in pairs({
 		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
 		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
 		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
-		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
-		[-977] = "방랑자 멜리",											-- Maelie the Wanderer
 		[-979] = "중개자 베켄 & 중개자 베노트",								-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "성소 강화",											-- Sanctum Upgrades
 		[-924] = "이동 연결망",											-- Transport Network
 		-- SL Ardenweald/Night Fae
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			[-940] = "승천자 의회",										-- Ascended Counil
 			--TODO: [-973] = "Loyalty",								-- Loyalty
 			--TODO: [-975] = "Humility",							-- Humility
 		-- SL Revendreth/Venthyr
@@ -865,6 +863,7 @@ for key,value in pairs({
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "발드라켄 협의회",										-- Valdrakken Accord
 		[-1142] = "비행 도전",											-- Aerial Challenges
+		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
@@ -1115,7 +1114,7 @@ for key,value in pairs({
 	[161504] = "작은 배낭",	-- A Small Pack	--TODO: This was taken from wotlk Wowhead
 	[161505] = "난파된 나룻배",	-- A Wrecked Raft
 	[161521] = "탐사 장비",	-- Research Equipment
-	[161526] = "식량 상자",	-- Crate of Foodstuffs	--TODO: This was taken from wotlk Wowhead
+	[161526] = "식량 상자",	-- Crate of Foodstuffs
 	[164659] = "녹색 마력의 수정",	-- Green Power Crystal
 	[164661] = "노란 마력의 수정",	-- Yellow Power Crystal
 	[164778] = "푸른 마력의 수정",	-- Blue Power Crystal
@@ -2848,7 +2847,7 @@ for key,value in pairs({
 	[310709] = "흠뻑 젖은 상자",	-- Waterlogged Chest
 	--TODO: [311155] = "Ancient Tablet",	-- Ancient Tablet
 	[311218] = "잘아타스 - 검은 제국의 비수",	-- Xal'atath, Blade of the Black Empire
-	--TODO: [311902] = "Loose Parts",	-- Loose Parts
+	[311902] = "떨어져 나온 부품",	-- Loose Parts
 	[311903] = "떨어져 나온 부품",	-- Loose Parts
 	--TODO: [316443] = "Xal'atath, Blade of the Black Empire",	-- Xal'atath, Blade of the Black Empire
 	[316788] = "얼라이언스 화톳불",	-- Alliance Bonfire
@@ -3193,6 +3192,8 @@ for key,value in pairs({
 	[364932] = "이글거리는 주괴",	-- Blazing Ingot
 	[364937] = "위상 착취기",	-- Phasic Siphoner
 	[364987] = "중개자 일지",	-- Broker Journal
+	[364994] = "유령 곡괭이",	-- Spectral Pick
+	[365084] = "고문관의 창",	-- Tormentor's Pike
 	--TODO: [365093] = "Theotar's Caroling Books",	-- Theotar's Caroling Books
 	[368205] = "나락살이 보관함",	-- Mawsworn Cache
 	[368206] = "나락살이 보관함",	-- Mawsworn Cache
@@ -3414,7 +3415,7 @@ for key,value in pairs({
 	[376587] = "원정대 정찰병의 짐",	-- Expedition Scout's Pack
 	--TODO: [376657] = "Ancient Monument",	-- Ancient Monument
 	[376757] = "현상 수배: 프리젤루스",	-- WANTED: Frigellus
-	--TODO: [377114] = "Coil of Heavy Rope",	-- Coil of Heavy Rope
+	[377114] = "무거운 밧줄 똬리",	-- Coil of Heavy Rope
 	--TODO: [377233] = "Hessethiash's Poorly Hidden Treasure",	-- Hessethiash's Poorly Hidden Treasure
 	--TODO: [377317] = "Treasure Hoard",	-- Treasure Hoard
 	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
@@ -3423,14 +3424,19 @@ for key,value in pairs({
 	[377534] = "전달된 금고",	-- Delivered Vault
 	[377899] = "숨겨진 용뿔두꺼비 인질",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
+	[377938] = "오색 도약꾼 떼",	-- Prismatic Leaper School
 	[378010] = "잊힌 용의 보물",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "성난 해일 맥주",	-- Riptide Brew
+	[378088] = "수정 꽃",	-- Crystalline Flower
 	[378820] = "팝피즈 음료",	-- Popfizz Punch
 	[378857] = "잃어버린 흑요석 보관함",	-- Lost Obsidian Cache
+	--TODO: [379168] = "Lost Cache Key",	-- Lost Cache Key
 	[379290] = "장식된 조각상",	-- Ornamented Statue
 	--TODO: [379296] = "Broken Banding",	-- Broken Banding
 	[379297] = "극통 꿀꺽주",	-- Slam Bam Swill
-	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
+	[379314] = "완전한 낚시 그물",	-- Full Fishing Net
+	[379321] = "수수께끼의 발자취",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
 	[380457] = "실험적인 부패 가마솥",	-- Experimental Decay Cauldron
@@ -3446,7 +3452,7 @@ for key,value in pairs({
 	[380556] = "조화의 상자",	-- Harmonic Chest
 	--TODO: [380558] = "Enchanted Debris",	-- Enchanted Debris
 	[380559] = "냉기벼림 물약",	-- Frostforged Potion
-	--TODO: [380560] = "Disabled Tesla Coil",	-- Disabled Tesla Coil
+	[380560] = "비활성화된 테슬라 코일",	-- Disabled Tesla Coil
 	[380567] = "폭풍 8",	-- Eight of Storms
 	[380569] = "수정 과성장물",	-- Crystalline Overgrowth
 	--TODO: [380570] = "Curious Glyph",	-- Curious Glyph
@@ -3457,7 +3463,7 @@ for key,value in pairs({
 	[380580] = "용암 주입 씨앗",	-- Lava-Infused Seed
 	[380583] = "썩어가는 담쟁이가죽 담요",	-- Decaying Brackenhide Blanket
 	[380585] = "분출한 알렉스트라자이트 군집",	-- Erupted Alexstraszite Cluster
-	--TODO: [380586] = "Mysterious Cauldrons",	-- Mysterious Cauldrons
+	[380586] = "수수께끼의 가마솥",	-- Mysterious Cauldrons
 	[380587] = "특수 처리한 생가죽 상자",	-- Crate of Treated Hides
 	[380588] = "소형 청동용군단 깃발",	-- Miniature Bronze Dragonflight Banner
 	--TODO: [380589] = "Faintly Enchanted Remains",	-- Faintly Enchanted Remains
@@ -3469,7 +3475,7 @@ for key,value in pairs({
 	[380597] = "전투로 단련된 켄타우로스 융단",	-- Battle Hardened Centaur Carpet
 	--TODO: [380598] = "Singed Chest",	-- Singed Chest
 	[380600] = "마력 깃든 대지의 파편",	-- Enriched Earthen Shard
-	--TODO: [380601] = "Dusty Darkmoon Card",	-- Dusty Darkmoon Card
+	[380601] = "먼지투성이 다크문 카드",	-- Dusty Darkmoon Card
 	[380602] = "바람의 축복을 받은 가죽",	-- Wind-Blessed Hide
 	[380604] = "수수께끼의 깃발",	-- Mysterious Banner
 	[380605] = "밀수품 혼합물",	-- Contraband Concoction
@@ -3484,7 +3490,7 @@ for key,value in pairs({
 	[380618] = "용의 융제",	-- Draconic Flux
 	[380619] = "독특한 주괴",	-- Curious Ingots
 	[380620] = "고대의 창 파편",	-- Ancient Spear Shards
-	--TODO: [380623] = "Spelltouched Tongs",	-- Spelltouched Tongs
+	[380623] = "주문에 물든 집게",	-- Spelltouched Tongs
 	[380643] = "급속 냉동된 두루마리",	-- Flashfrozen Scroll
 	[380647] = "잊힌 비전 고서",	-- Forgotten Arcane Tomne
 	[380648] = "특이한 책",	-- Odd Book
@@ -3496,28 +3502,29 @@ for key,value in pairs({
 	--TODO: [380822] = "Igneous Gem",	-- Igneous Gem
 	[380840] = "찢어진 탈것 배낭",	-- Torn Riding Pack
 	[380842] = "황금 동전",	-- Gold Coin
-	--TODO: [380843] = "Rubber Fish",	-- Rubber Fish
+	[380843] = "고무 생선",	-- Rubber Fish
 	--TODO: [380847] = "Emerald Gem Cluster",	-- Emerald Gem Cluster
 	[380859] = "투스카르 장난감 배",	-- Tuskarr Toy Boat
 	[380860] = "켄타우로스 뿔피리",	-- Centaur Horn
 	[380902] = "야성의 전장",	-- Fields of Ferocity
 	[380918] = "부서진 장식된 조각상",	-- Broken Ornamented Statue
-	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
+	[380991] = "흙더미",	-- Dirt Mound
 	[381035] = "위대한 금고",	-- The Great Vault
 	[381045] = "황금 용 술잔",	-- Golden Dragon Goblet
-	--TODO: [381094] = "Elegant Canvas Brush",	-- Elegant Canvas Brush
-	--TODO: [381107] = "Sand Pile",	-- Sand Pile
+	[381069] = "완전한 낚시 그물",	-- Full Fishing Net
+	[381094] = "세련된 캔버스 붓",	-- Elegant Canvas Brush
+	[381107] = "모래 더미",	-- Sand Pile
 	[381108] = "옌누의 지도",	-- Yennu's Map
 	--TODO: [381110] = "Forgotten Jewel Box",	-- Forgotten Jewel Box
 	--TODO: [381153] = "Ruby Gem Cluster",	-- Ruby Gem Cluster
 	--TODO: [381157] = "Sapphire Gem Cluster",	-- Sapphire Gem Cluster
 	[381158] = "놀 마귀 도리깨",	-- Gnoll Fiend Flail
-	--TODO: [381160] = "Lost Compass",	-- Lost Compass
-	--TODO: [381216] = "Surveyor's Magnifying Glass",	-- Surveyor's Magnifying Glass
+	[381160] = "잃어버린 나침반",	-- Lost Compass
+	[381216] = "측량사의 확대경",	-- Surveyor's Magnifying Glass
 	[381223] = "금이 간 모래시계",	-- Cracked Hourglass
 	[381277] = "압수한 간식 통",	-- Barrel of Confiscated Treats
 	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
-	--TODO: [381297] = "Misplaced Luggage",	-- Misplaced Luggage
+	[381297] = "엉뚱한 곳에 놓인 짐",	-- Misplaced Luggage
 	--TODO: [381353] = "Stone Dragontooth",	-- Stone Dragontooth
 	--TODO: [381354] = "Wrapped Gold Band",	-- Wrapped Gold Band
 	--TODO: [381355] = "Finely Carved Wing",	-- Finely Carved Wing
@@ -3531,10 +3538,10 @@ for key,value in pairs({
 	[381484] = "잘 보존된 뼈",	-- Well-Preserved Bone
 	[381485] = "모험가의 잃어버린 비누",	-- Adventurer's Lost Soap Bar
 	[381510] = "날치 뼈",	-- Flying Fish Bones
-	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
+	[381511] = "작살 머리",	-- Harpoon Head
 	[381513] = "오래된 곡괭이",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
-	[381579] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
+	[381579] = "기록관의 요청",	-- Archivists' Request
 	[381650] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "송곳니, 날개, 불 등록",	-- Fang Flap Fire Signups
 	[381661] = "기록관의 요청",	-- Archivists' Request
@@ -3542,20 +3549,23 @@ for key,value in pairs({
 	[381663] = "초보자를 위한 마나스톰 안내서",	-- Manastorming For Beginners
 	[381664] = "기록관의 요청",	-- Archivists' Request
 	[381667] = "기록관의 요청",	-- Archivists' Request
-	[381668] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
+	[381668] = "기록관의 요청",	-- Archivists' Request
 	[381669] = "기록관의 요청",	-- Archivists' Request	--TODO: this was manually translated
 	[381670] = "기록관의 요청",	-- Archivists' Request
 	[381671] = "기록관의 요청",	-- Archivists' Request
 	[381672] = "기록관의 요청",	-- Archivists' Request
 	[381687] = "버려진 쪽지",	-- Discarded Note
 	[381701] = "현상 수배: 천둥의 마라나르",	-- WANTED: Mara'nar the Thunderous
-	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
+	[381981] = "홍수의 보관함",	-- Chest of the Flood
 	[382029] = "흐트러진 흙",	-- Disturbed Dirt
+	[382071] = "완전한 낚시 그물",	-- Full Fishing Net	--TODO: this was manually translated
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
+	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "신선한 미명어 보관함",	-- Case of Fresh Gleamfish
 	[384318] = "눈에 띄지 않는 서표",	-- Inconspicuous Bookmark
+	[384370] = "섬세한 방황의 기록",	-- Deliberately Delinquent Notes
 	[384405] = "반쯤 삶은 생선",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "석화된 용의 알",	-- Petrified Dragon Egg

@@ -18,8 +18,57 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					i(190182, {	-- Lovely Regal Pocopoc
 						["questID"] = 65600,
 					}),
+					crit(1, {	-- Peaceful Pocopoc
+						["_quests"] = { 65525 },
+					}),
+					crit(2, {	-- Chef Pocopoc
+						["_quests"] = { 65524 },
+					}),
+					crit(3, {	-- Pirate Pocopoc
+						["_quests"] = { 65526 },
+					}),
+					crit(4, {	-- Adventurous Pocopoc
+						["_quests"] = { 65527 },
+					}),
+					crit(5, {	-- Dapper Pocopoc
+						["_quests"] = { 65528 },
+					}),
+					crit(6, {	-- Admiral Pocopoc
+						["_quests"] = { 65529 },
+					}),
+					crit(7, {	-- Wicked Pocopoc
+						["_quests"] = { 65530 },
+					}),
+					crit(8, {	-- Pocobold
+						["_quests"] = { 65534 },
+					}),
+					crit(9, {	-- Pepepec
+						["_quests"] = { 65538 },
+					}),
 				}),
-				ach(15509),	-- Tales of the Exile
+				ach(15509, {	-- Tales of the Exile
+					crit(1, {	-- Firim in Exile, Part 1
+						["_quests"] = { 15509 },
+					}),
+					crit(2, {	-- Firim in Exile, Part 2
+						["_quests"] = { 15509 },
+					}),
+					crit(3, {	-- Firim in Exile, Part 3
+						["_quests"] = { 15509 },
+					}),
+					crit(4, {	-- Firim in Exile, Part 4
+						["_quests"] = { 15509 },
+					}),
+					crit(5, {	-- Firim in Exile, Part 5
+						["_quests"] = { 15509 },
+					}),
+					crit(6, {	-- Firim in Exile, Part 6
+						["_quests"] = { 15509 },
+					}),
+					crit(7, {	-- Firim in Exile, Part 7
+						["_quests"] = { 15509 },
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(64861, {	-- Kismetric Disc
@@ -28,11 +77,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					["g"] = {
 						i(190062, {	-- Wicked Pocopoc
 							["questID"] = 65530,
-							["g"] = {
-								crit(7, {	-- Wicked Pocopoc
-									["achievementID"] = 15508,	-- Fashion of the First Ones
-								}),
-							},
 						}),
 					},
 				}),
@@ -275,9 +319,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					["coord"] = { 35.7, 55.4, ZERETH_MORTIS },
 					["questID"] = 65739,
 					["g"] = {
-						crit(1, {	-- Firim in Exile, Part 1
-							["achievementID"] = 15509,	-- Tales of the Exile
-						}),
 						i(189575),	-- Firim in Exile, Part 1
 					},
 				}),
@@ -285,9 +326,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					["coord"] = { 41.8, 62.4, ZERETH_MORTIS },
 					["questID"] = 65741,
 					["g"] = {
-						crit(2, {	-- Firim in Exile, Part 2
-							["achievementID"] = 15509,	-- Tales of the Exile
-						}),
 						i(189576),	-- Firim in Exile, Part 2
 					},
 				}),
@@ -295,9 +333,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					["coord"] = { 37.5, 46.1, ZERETH_MORTIS },
 					["questID"] = 65742,
 					["g"] = {
-						crit(3, {	-- Firim in Exile, Part 3
-							["achievementID"] = 15509,	-- Tales of the Exile
-						}),
 						i(189578),	-- Firim in Exile, Part 3
 					},
 				}),
@@ -305,9 +340,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					["coord"] = { 49.9, 76.6, ZERETH_MORTIS },
 					["questID"] = 65743,
 					["g"] = {
-						crit(4, {	-- Firim in Exile, Part 4
-							["achievementID"] = 15509,	-- Tales of the Exile
-						}),
 						i(189579),	-- Firim in Exile, Part 4
 					},
 				}),
@@ -315,9 +347,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					["coord"] = { 39, 31.1, ZERETH_MORTIS },
 					["questID"] = 65744,
 					["g"] = {
-						crit(5, {	-- Firim in Exile, Part 5
-							["achievementID"] = 15509,	-- Tales of the Exile
-						}),
 						i(189580),	-- Firim in Exile, Part 5
 					},
 				}),
@@ -325,9 +354,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					["coord"] = { 67.4, 25.2, ZERETH_MORTIS },
 					["questID"] = 65745,
 					["g"] = {
-						crit(6, {	-- Firim in Exile, Part 6
-							["achievementID"] = 15509,	-- Tales of the Exile
-						}),
 						i(189581),	-- Firim in Exile, Part 6
 					},
 				}),
@@ -335,9 +361,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					["coord"] = { 64.8, 33.6, ZERETH_MORTIS },
 					["questID"] = 65746,
 					["g"] = {
-						crit(7, {	-- Firim in Exile, Part 7
-							["achievementID"] = 15509,	-- Tales of the Exile
-						}),
 						i(189582),	-- Firim in Exile, Part 7
 					},
 				}),
@@ -472,9 +495,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 						["g"] = {
 							i(187527),	-- Aeon Matrix
 							i(187788, {	-- Aetheric Lattice
-								["coords"] = {
-									{ 53.0, 29.1, ZERETH_MORTIS },
-								},
+								["coord"] = { 53.0, 29.1, ZERETH_MORTIS },
 							}),
 							i(187891, {	-- Empyrean Essence
 								["coords"] = {
@@ -537,15 +558,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 										i(187866),	-- Accelerating Tendons
 										i(187867),	-- Evolved Exo-mucus
 										i(187865),	-- Spiked Protomesh
-								}),
-								}
+									}),
+								},
 							}),
 							i(187792, {	-- Kismetric Disc
 								["cost"] = {
-									{ "i", 187791, 1 },		--1 Kismetric Circlet
-									{ "i", 187790, 100 },	--100 Trace Enigmet
-									{ "i", 187728, 10 },	--10 Ephemera Strand
-									{ "i", 187789, 5 },		--5 Eidolic Particles
+									{ "i", 187791, 1 },		-- 1x Kismetric Circlet
+									{ "i", 187790, 100 },	-- 100x Trace Enigmet
+									{ "i", 187728, 10 },	-- 10x Ephemera Strand
+									{ "i", 187789, 5 },		-- 5x Eidolic Particles
 								},
 							}),
 							i(187789, {	-- Eidolic Particles

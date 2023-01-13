@@ -98,7 +98,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(70501, {	-- License to Hunt
 				["minReputation"] = { 2503, 5 },	-- Maruuk Centaur Renown 5
-				["sourceQuests"] = { 71231 },	-- Call of the Hunt
+				-- ["sourceQuests"] = {  },	--
 				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 			}),
@@ -370,6 +370,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["minReputation"] = { 2503, 22 },	-- Maruuk Centaur Renown 22
 				["provider"] = { "n", 192926 },	-- Trainer Frodrum
 				["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
+			}),
+			q(72772, {	-- Our Great Bounty
+				["minReputation"] = { 2503, 22 },	-- Maruuk Centaur Renown 22
+				["provider"] = { "n", 196707 },	-- Quatermaster Huseng
+				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198864),	-- Large Maruuk Centaur Supply Satchel
+				},
 			}),
 				-- RENOWN 23 --
 			q(71089, {	-- Get on the Horn

@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(THE_MAW, {
 		n(ACHIEVEMENTS, {
 			ach(14744, {	-- Better to be Lucky than Dead
@@ -70,7 +69,71 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["_npcs"] = { 175012 },
 				}),
 			}),
-			ach(14743),		-- Deadly Serious
+			ach(14743, {	-- Deadly Serious
+				crit(1, {	-- Adjutant Dekaris
+					["_npcs"] = { 157964 },
+				}),
+				crit(2, {	-- Apholeias, Herald of Loss
+					["_npcs"] = { 170301 },
+				}),
+				crit(3, {	-- Borr-Geth
+					["_npcs"] = { 157833 },
+				}),
+				crit(4, {	-- Conjured Death
+					["_npcs"] = { 171317 },
+				}),
+				crit(5, {	-- Darithis the Bleak
+					["_npcs"] = { 160770 },
+				}),
+				crit(6, {	-- Darklord Taraxis
+					["_npcs"] = { 158025 },
+				}),
+				crit(7, {	-- Dolos
+					["_npcs"] = { 170711 },
+				}),
+				crit(8, {	-- Eketra
+					["_npcs"] = { 170774 },
+				}),
+				crit(9, {	-- Ekphoras, Herald of Grief
+					["_npcs"] = { 169827 },
+				}),
+				crit(10, {	-- Eternas the Tormentor
+					["_npcs"] = { 154330 },
+				}),
+				crit(11, {	-- Exos, Herald of Domination
+					["_npcs"] = { 170303 },
+				}),
+				crit(12, {	-- Morguliax
+					["_npcs"] = { 162849 },
+				}),
+				crit(13, {	-- Nascent Thunderer
+					["_npcs"] = { 158278 },
+				}),
+				crit(14, {	-- Obolos
+					["_npcs"] = { 164064 },
+				}),
+				crit(15, {	-- Orophea
+					["_npcs"] = { 172577 },
+				}),
+				crit(16, {	-- Shadeweaver Zeris
+					["_npcs"] = { 170634 },
+				}),
+				crit(17, {	-- Soulforger Rhovus
+					["_npcs"] = { 166398 },
+				}),
+				crit(18, {	-- Talaporas, Herald of Pain
+					["_npcs"] = { 170302 },
+				}),
+				crit(19, {	-- Thanassos
+					["_npcs"] = { 170731 },
+				}),
+				crit(20, {	-- Yero the Skittish
+					["_npcs"] = { 172862 },
+				}),
+				crit(21, {	-- Ikras the Devourer
+					["_npcs"] = { 175012 },
+				}),
+			}),
 			ach(14761, {	-- Deciphering Death's Intentions
 				["description"] = "Most of the Maw Lore items can be found by killing Assassins, rares, or normal mobs.  The remaining ones drop from specific mobs, rares, or treasures that can be found throughout the Maw.",
 				["g"] = {
@@ -159,7 +222,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["provider"] = { "i", 180949 },
 				}),
 				crit(6, {		-- Soul-Stabilizing Salve
-					["provider"] = { "i", 184588 },	-- TODO: confirm between crit 6 & 9
+					["provider"] = { "i", 184588 },
 				}),
 				crit(7, {		-- Ritual Prism of Fortune
 					["provider"] = { "i", 184621 },
@@ -168,7 +231,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["provider"] = { "i", 184617 },
 				}),
 				crit(9, {		-- Talisman of Destined Defiance
-					["provider"] = { "i", 184605 },	-- TODO: confirm between crit 6 & 9
+					["provider"] = { "i", 184605 },
 				}),
 				crit(10, {	-- Rank Insignia: Acquisitionist
 					["provider"] = { "i", 184618 },
@@ -190,18 +253,156 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					176390,	-- Bridled Shadehound (random spawn?  found one up around 44, 45.  you just click to ride and it doesn't have a cast bar to hop on)
 				},
 			}),
-			ach(14738),		-- Hunting Party
+			ach(14659, {	-- Handling His Henchmen
+				crit(1, {	-- Drifting Sorrow
+					["_npcs"] = { 158314 },
+				}),
+				crit(2, {	-- Dartanos <Flayer of Souls>
+					["_npcs"] = { 162452 },
+				}),
+				crit(3, {	-- Razkazzar <Lord of Axes>
+					["_npcs"] = { 162829 },
+				}),
+				crit(4, {	-- Orrholyn <Lord of Bloodletting>
+					["_npcs"] = { 162845 },
+				}),
+				crit(5, {	-- Huwerath
+					["_npcs"] = { 162965 },
+				}),
+				crit(6, {	-- Soulsmith Yol-Mattar
+					["_npcs"] = { 165047 },
+				}),
+				crit(7, {	-- Warren Mongrel [This NPC has no info or comment on wowhead nor ATT... >.<]
+					["_npcs"] = { 165973 },
+					["timeline"] = { "created 9.0.1" },
+				}),
+				crit(8, {	-- Cyrixia <The Willbreaker>
+					["_npcs"] = { 168693 },
+				}),
+				crit(9, {	-- Agonix
+					["_npcs"] = { 169102 },
+				}),
+				crit(10, {	-- Krala <Death's Wings>
+					["_npcs"] = { 170692 },
+				}),
+				crit(11, {	-- Akros <Death's Hammer>
+					["_npcs"] = { 170787 },
+				}),
+				crit(12, {	-- Malevolent Stygia
+					["_npcs"] = { 171316 },
+				}),
+				crit(13, {	-- Sanngror the Torturer
+					["_npcs"] = { 172521 },
+				}),
+				crit(14, {	-- Houndmaster Vasanok
+					["_npcs"] = { 172523 },
+				}),
+				crit(15, {	-- Skittering Broodmother
+					["_npcs"] = { 172524 },
+				}),
+				crit(16, {	-- Valis the Cruel
+					["_npcs"] = { 173086 },
+				}),
+				crit(17, {	-- Odalrik
+					["_npcs"] = { 172207 },
+				}),
+				crit(18, {	-- Stygian Incinerator
+					["_npcs"] = { 156203 },
+				}),
+				crit(19, {	-- Dath Rezara <Lord of Blades>
+					["_npcs"] = { 162844 },
+				}),
+				crit(20, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
+					["_npcs"] = { 175821 },
+				}),
+			}),
+			ach(14738, {	-- Hunting Party
+				crit(1, {	-- Complete Hunt: Shadehounds
+					["_quests"] = { 63180 }
+				}),
+				crit(2, {	-- Complete Hunt: Soul Eaters
+					["_quests"] = { 63199 }
+				}),
+				crit(3, {	-- Complete Hunt: Death Elemental
+					["_quests"] = { 63198 }
+				}),
+				crit(4, {	-- Complete Hunt: Winged Soul Eaters
+					["_quests"] = { 63194 }
+				}),
+			}),
 			ach(14334, {	-- Into the Maw
-				["sourceQuests"] = { 59770 },	-- Stand as One
+				crit(1, {
+					["sourceQuests"] = { 59770 },	-- Stand as One
+				}),
 			}),
 			ach(14660, {	-- It's About Sending a Message
-				ach(14659),	-- Handling His Henchmen
+				crit(1, {	-- Drifting Sorrow
+					["_npcs"] = { 158314 },
+				}),
+				crit(2, {	-- Dartanos <Flayer of Souls>
+					["_npcs"] = { 162452 },
+				}),
+				crit(3, {	-- Razkazzar <Lord of Axes>
+					["_npcs"] = { 162829 },
+				}),
+				crit(4, {	-- Orrholyn <Lord of Bloodletting>
+					["_npcs"] = { 162845 },
+				}),
+				crit(5, {	-- Huwerath
+					["_npcs"] = { 162965 },
+				}),
+				crit(6, {	-- Soulsmith Yol-Mattar
+					["_npcs"] = { 165047 },
+				}),
+				crit(7, {	-- Cyrixia <The Willbreaker>
+					["_npcs"] = { 168693 },
+				}),
+				crit(8, {	-- Agonix
+					["_npcs"] = { 169102 },
+				}),
+				crit(9, {	-- Krala <Death's Wings>
+					["_npcs"] = { 170692 },
+				}),
+				crit(10, {	-- Akros <Death's Hammer>
+					["_npcs"] = { 170787 },
+				}),
+				crit(11, {	-- Malevolent Stygia
+					["_npcs"] = { 171316 },
+				}),
+				crit(12, {	-- Sanngror the Torturer
+					["_npcs"] = { 172521 },
+				}),
+				crit(13, {	-- Houndmaster Vasanok
+					["_npcs"] = { 172523 },
+				}),
+				crit(14, {	-- Skittering Broodmother
+					["_npcs"] = { 172524 },
+				}),
+				crit(15, {	-- Valis the Cruel
+					["_npcs"] = { 173086 },
+				}),
+				crit(16, {	-- Odalrik
+					["_npcs"] = { 172207 },
+				}),
+				crit(17, {	-- Stygian Incinerator
+					["_npcs"] = { 156203 },
+				}),
+				crit(18, {	-- Dath Rezara <Lord of Blades>
+					["_npcs"] = { 162844 },
+				}),
+				crit(19, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
+					["_npcs"] = { 175821 },
+				}),
 			}),
 			ach(14747, {	-- Make it Double!
-				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+				crit(1, {
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+				}),
 			}),
 			ach(14746, {	-- Prepare for Trouble!
-				["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+				crit(1, {
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
+				}),
 			}),
 			ach(14658, {	-- Soulkeeper's Burden
 				["crs"] = {
@@ -217,10 +418,49 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					176175,	-- Tormented Soul
 					174158,	-- Wailing Soul
 					175804,	-- Wounded Soul
-				--	TODO: add interactable souls' IDs
 				},
 			}),
-			ach(14894),		-- To 'Ghast, Two Curios (2 of these criteria)
+			ach(14894, {	-- To 'Ghast, Two Curios (2 of these criteria)
+				crit(1, {		-- Vessel of Unfortunate Spirits
+					["provider"] = { "i", 184620 },
+				}),
+				crit(2, {		-- Extradimensional Pockets
+					["provider"] = { "i", 184615 },
+				}),
+				crit(3, {		-- Encased Riftwalker Essence
+					["provider"] = { "i", 184613 },
+				}),
+				crit(4, {		-- Animated Levitating Chain
+					["provider"] = { "i", 184653 },
+				}),
+				crit(5, {		-- Animaflow Stabilizer
+					["provider"] = { "i", 180949 },
+				}),
+				crit(6, {		-- Soul-Stabilizing Salve
+					["provider"] = { "i", 184588 },
+				}),
+				crit(7, {		-- Ritual Prism of Fortune
+					["provider"] = { "i", 184621 },
+				}),
+				crit(8, {		-- Bangle of Seniority
+					["provider"] = { "i", 184617 },
+				}),
+				crit(9, {		-- Talisman of Destined Defiance
+					["provider"] = { "i", 184605 },
+				}),
+				crit(10, {	-- Rank Insignia: Acquisitionist
+					["provider"] = { "i", 184618 },
+				}),
+				crit(11, {	-- Possibility Matrix
+					["provider"] = { "i", 180952,  },
+				}),
+				crit(12, {	-- Loupe of Unusual Charm
+					["provider"] = { "i", 184619 },
+				}),
+				crit(13, {	-- Broker Traversal Enhancer
+					["provider"] = { "i", 184901 },
+				}),
+			}),
 			ach(14742, {	-- Who Sent You?
 				["description"] = "If you have completed |cFFFFD700Focusing the Eye|r, you can still obtain this achievement by killing |cFF883325Mawsworn Blackguard|r in The Maw.",
 				["crs"] = {

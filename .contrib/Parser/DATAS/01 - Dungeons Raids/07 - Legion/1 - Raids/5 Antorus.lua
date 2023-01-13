@@ -66,11 +66,11 @@ root("Instances", tier(LEGION_TIER, {
 					i(151656),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 3] (RECIPE!)
 				},
 			}),
-			d(17, {	-- LFR Queue NPC
+			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
 			}),
-			d(17, {	-- Looking For Raid
+			d(LFR_RAID, {
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
@@ -447,7 +447,7 @@ root("Instances", tier(LEGION_TIER, {
 					})),
 				}),
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_RAID, {
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
@@ -858,7 +858,7 @@ root("Instances", tier(LEGION_TIER, {
 					i(155852),	-- Volatile Soul Fragment
 				})),
 			}),
-			d(15, {	-- Heroic
+			d(HEROIC_RAID, {
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
@@ -1266,7 +1266,7 @@ root("Instances", tier(LEGION_TIER, {
 					i(155852),	-- Volatile Soul Fragment
 				})),
 			}),
-			d(16, {	-- Mythic
+			d(MYTHIC_RAID, {
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {

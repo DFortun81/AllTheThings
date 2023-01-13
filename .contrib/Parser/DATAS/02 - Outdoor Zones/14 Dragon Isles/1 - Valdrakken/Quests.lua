@@ -179,10 +179,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			}),
 		}),
 		n(QUESTS, sharedData({ ["isWeekly"] = true }, {
-			q(72686, {	-- Storm Surge
-				["provider"] = { "n", 196598 },	-- Rethelshi
-				["coord"] = { 38.2, 37, VALDRAKKEN },
-			}),
 			q(66867, {	-- Relic Recovery: Algeth'ar Academy
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 191957 },	-- Theldren

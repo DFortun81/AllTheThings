@@ -122,7 +122,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				n(28132, {	-- Don Carlos
 					["description"] = "This is a neutral mob that wanders the road.",
 					["groups"] = {
@@ -220,7 +220,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = {

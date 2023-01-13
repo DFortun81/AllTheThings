@@ -6,7 +6,19 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 		["coord"] = { 35.6, 54.2, ARDENWEALD },
 		["maps"] = { 1669 },	-- Mists of Tirna Scithe
 		["g"] = {
-			n(QUESTS, {}),	-- Do Not Remove
+			n(QUESTS, {
+				q(62371, {	-- Tirna Scithe: A Warning Silence
+					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
+					["provider"] = { "n", 168032 },	-- Flwngyrr
+					["coord"] = { 48.3, 50.5, ARDENWEALD },
+					["g"] = {
+						i(184518),	-- Boots of the Oaken Assembly
+						i(184517),	-- Gladechewer Footguards
+						i(184516),	-- Mistveil Sandals
+						i(184515),	-- Sacred Grove Sabatons
+					},
+				}),
+			}),
 			n(CONDUITS, {
 				e(2400, {	-- Ingra Maloch
 					["crs"] = {
@@ -66,7 +78,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(NORMAL_D, {
+			d(NORMAL_DUNGEON, {
 				e(2400, {	-- Ingra Maloch
 					["crs"] = {
 						164567,	-- Ingra Maloch
@@ -114,7 +126,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(HEROIC_D, {
+			d(HEROIC_DUNGEON, {
 				e(2400, {	-- Ingra Maloch
 					["crs"] = {
 						164567,	-- Ingra Maloch
@@ -162,7 +174,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(MYTHIC_D, {
+			d(MYTHIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
 					ach(14291, {	-- Someone Could Trip on These!
 						crit(1),	-- First Toy

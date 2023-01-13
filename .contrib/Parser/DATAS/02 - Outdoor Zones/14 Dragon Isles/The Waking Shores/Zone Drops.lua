@@ -4,6 +4,9 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
 		n(ZONE_DROPS, {
+			i(199216, {	-- A Box of Rocks
+				["collectible"] = false,
+			}),
 			i(202081, {	-- Dragon Isles Supply Bag
 				["crs"] = {
 					190056,	-- Primal Proto-Drake
@@ -13,7 +16,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			i(191122, {	-- Fullsails Supply Chest Key
-				-- npc 187971/187320
+				["crs"] = {
+					187320,	-- Soggymaw Seabasher
+					187971,	-- Soggymaw Crabtrapper
+				},
 			}),
 			i(201092, {	-- Lava Spices
 				["crs"] = {

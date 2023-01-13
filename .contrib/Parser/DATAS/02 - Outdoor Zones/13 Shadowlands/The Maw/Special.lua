@@ -1,124 +1,100 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(THE_MAW, {
 		n(SPECIAL, {
-			-- TODO: use 'crs' when the mobs don't drop anything, otherwise 'g' with nested n()
-			-- TODO: add icon for "weekly" header (can't figure out where the blue ! comes from on daily quests)
-			-- ^ added 'cr' to shadehound hunt because it was the only one without an icon and i couldn't get a model to work :(
-			n(-909,  {	-- Hunt: Death Elementals
-				["isWeekly"] = true,
-				["questID"] = 63198,
-				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-				["crs"] = {
-					172962,	-- Tempered Stygia
-				},
-				["g"] = {
-					crit(3, {	-- Death Elementals
-						["achievementID"] = 14738,	-- Hunting Party
-					}),
-				},
+			header(HEADERS.Achievement, 14738, {	-- Hunting Party
+				q(63199,  {	-- Hunt: Alpha Devourers
+					["name"] = "Hunt: Alpha Devourers",
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+					["crs"] = { 175851 },	-- Alpha Anima Devourer
+					["isWeekly"] = true,
+					["g"] = {
+						i(184586),	-- Sky Chain
+					},
+				}),
+				q(63198,  {	-- Hunt: Death Elementals
+					["name"] = "Hunt: Death Elementals",
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+					["crs"] = { 172962 },	-- Tempered Stygia
+					["isWeekly"] = true,
+				}),
+				q(63180,  {	-- Hunt: Shadehounds
+					["name"] = "Hunt: Shadehounds",
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+					["crs"] = { 174861 },	-- Gorged Shadehound
+					["isWeekly"] = true,
+					["g"] = {
+						n(174861, {	-- Gorged Shadehound
+							["isWeekly"] = true,
+							["questID"] = 63433,
+							["coord"] = { 53.4, 79.3, THE_MAW },
+							["g"] = {
+								i(184167),	-- Mawsworn Soulhunter (MOUNT!)
+								i(183057),	-- Shadehound Armor Plating
+							},
+						}),
+					},
+				}),
+				q(63194,  {	-- Hunt: Winged Soul Eaters
+					["name"] = "Hunt: Winged Soul Eaters",
+					["crs"] = { 173195 },	-- Undying Soulbinder
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
+					["isWeekly"] = true,
+				}),
 			}),
-			n(-910,  {	-- Hunt: Alpha Devourers
-				["isWeekly"] = true,
-				["questID"] = 63199,
-				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-				["crs"] = {
-					175851,	-- Alpha Anima Devourer
-				},
-				["g"] = {
-					crit(2, {	-- Soul Eaters
-						["achievementID"] = 14738,	-- Hunting Party
-					}),
-					i(184586),	-- Sky Chain
-				},
-			}),
-			n(-911,  {	-- Hunt: Shadehounds
-				["isWeekly"] = true,
-				["questID"] = 63180,
-				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-				["cr"] = 174861,	-- Gorged Shadehound
-				["g"] = {
-					n(174861, {	-- Gorged Shadehound
-						["isWeekly"] = true,
-						["questID"] = 63433,
-						["coord"] = { 53.4, 79.3, THE_MAW },
-						["g"] = {
-							crit(1, {	-- Shadehounds
-								["achievementID"] = 14738,	-- Hunting Party
-							}),
-							i(184167),	-- Mawsworn Soulhunter (MOUNT!)
-							i(183057),	-- Shadehound Armor Plating
-						},
-					}),
-				},
-			}),
-			n(-912,  {	-- Hunt: Winged Soul Eaters
-				["isWeekly"] = true,
-				["questID"] = 63194,
-				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-				["crs"] = {
-					-- TODO: another NPC is part of the final objective
-					173195,	-- Undying Soulbinder
-				},
-				["g"] = {
-					crit(4, {	-- Winged Soul Eaters
-						["achievementID"] = 14738,	-- Hunting Party
-					}),
-				},
-			}),
-			n(-913,  bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Tormentors of Torghast
+			header(HEADERS.Quest, 64305, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S2 } }, {	-- The Tormentors of Torghast
 				["description"] = "You can only get the cache once a week, but you can continue to participate in the events for achievement credit individual boss loot.",
-				["isWeekly"] = true,
+				["icon"] = "Interface\\Icons\\ui_torghast",
 				["questID"] = 63854,
+				["isWeekly"] = true,
 				["g"] = {
 					ach(15054, {	-- Minions of the Cold Dark
-						crit(1,  {	-- Versya the Damned slain
-							["cr"] = 177981,	-- Versya the Damned <Tormentor of Torghast>
+						crit(1, {	-- Versya the Damned
+							["_npcs"] = { 177981 },
 						}),
-						crit(2,  {	-- Gralebboih slain
-							["cr"] = 177979,	-- Gralebboih <Tormentor of Torghast>
+						crit(2, {	-- Gralebboih
+							["_npcs"] = { 177979 },
 						}),
-						crit(3,  {	-- Promathiz slain
-							["cr"] = 177330,	-- Promathiz <Tormentor of Torghast>
+						crit(3, {	-- Promathiz
+							["_npcs"] = { 177330 },
 						}),
-						crit(4,  {	-- Sentinel Pyrophus slain
-							["cr"] = 177331,	-- Sentinel Pyrophus <Tormentor of Torghast>
+						crit(4, {	-- Sentinel Pyrophus
+							["_npcs"] = { 177331 },
 						}),
-						crit(5,  {	-- Gruukuuek the Elder slain
-							["cr"] = 177980,	-- Gruukuuek the Elder <Tormentor of Torghast>
+						crit(5, {	-- Gruukuuek the Elder
+							["_npcs"] = { 177980 },
 						}),
-						crit(6,  {	-- Zul'gath the Flayer slain
-							["cr"] = 178886,	-- Zul'gath the Flayer <Tormentor of Torghast>
+						crit(6, {	-- Zul'gath the Flayer
+							["_npcs"] = { 178886 },
 						}),
-						crit(7,  {	-- Mugrem the Soul Devourer slain
-							["cr"] = 178002,	-- Mugrem the Soul Devourer <Tormentor of Torghast>
+						crit(7, {	-- Mugrem the Soul Devourer
+							["_npcs"] = { 178002 },
 						}),
-						crit(8,  {	-- The Mass of Souls slain
-							["cr"] = 177427,	-- The Mass of Souls <Tormentor of Torghast>
+						crit(8, {	-- The Mass of Souls
+							["_npcs"] = { 177427 },
 						}),
-						crit(9,  {	-- Algel the Hunter slain
-							["cr"] = 178897,	-- Algel the Haunter <Tormentor of Torghast>
+						crit(9, {	-- Algel the Hunter
+							["_npcs"] = { 178897 },
 						}),
-						crit(10, {	-- Sentinel Shakorzeth slain
-							["cr"] = 178883,	-- Sentinel Shakorzeth <Tormentor of Torghast>
+						crit(10, {	-- Sentinel Shakorzeth
+							["_npcs"] = { 178883 },
 						}),
-						crit(11, {	-- Kazj the Sentinel slain
-							["cr"] = 178882,	-- Kazj The Sentinel <Tormentor of Torghast>
+						crit(11, {	-- Kazj the Sentinel
+							["_npcs"] = { 178882 },
 						}),
-						crit(12, {	-- Intercessor Razzram slain
-							["cr"] = 178004,	-- Intercessor Razzra <Tormentor of Torghast>
+						crit(12, {	-- Intercessor Razzram
+							["_npcs"] = { 178004 },
 						}),
-						crit(13, {	-- Malleus Grakizz slain
-							["cr"] = 177972,	-- Malleus Grakizz <Tormentor of Torghast>
+						crit(13, {	-- Malleus Grakizz
+							["_npcs"] = { 177972 },
 						}),
-						crit(14, {	-- Manifestation of Pain slain
-							["cr"] = 178899,	-- Manifestation of Pain <Tormentor of Torghast>
+						crit(14, {	-- Manifestation of Pain
+							["_npcs"] = { 178899 },
 						}),
-						crit(15, {	-- Golmak the Monstrosity slain
-							["cr"] = 178898,	-- Golmak The Monstrosity <Tormentor of Torghast>
+						crit(15, {	-- Golmak the Monstrosity
+							["_npcs"] = { 178898 },
 						}),
 					}),
 					n(COMMON_BOSS_DROPS, {
@@ -283,9 +259,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 				},
 			})),
-			n(-904,  {	-- Wrath of the Jailer
-				["isWeekly"] = true,
+			header(HEADERS.Spell, 347208, {
+				["icon"] = "Interface\\Icons\\ui_torghast",
 				["questID"] = 63414,
+				["isWeekly"] = true,
 				["g"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
@@ -301,7 +278,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							i(184658),	-- Dread Harrier's Pauldrons
 							i(184660),	-- Dreadguard's Greathelm
 							i(184654),	-- Forgotten Shade's Shawl
-							i(186042),	-- Forsaken Crusader's Blade (drop data on wh from Naelcrotix + Lumisende, i assume it's shared across all)
+							i(186042),	-- Forsaken Crusader's Blade
 							i(184659),	-- Grips of the Dreadhound Tamer
 							i(184656),	-- Mawsworn Assassin's Doublet
 							i(184655),	-- Sash of the Ethereal Servant
@@ -336,6 +313,17 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 					}),
 				},
+			}),
+			i(186188, {	-- Lil'Abom (PET!)
+				["description"] = "What controls the availability of parts is currently unknown. They appear to spawn in Perdition Hold and the surrounding area, next to dead Prime Guards. If you cannot find parts at any of the provided coordinates, try using |cFFFFFFFF/tar Prime Guard|r.",
+				["cost"] = {
+					{ "i", 186183, 1 },	-- Lil'Abom Head
+					{ "i", 186185, 1 },	-- Lil'Abom Legs
+					{ "i", 186186, 1 },	-- Lil'Abom Right Hand
+					{ "i", 186187, 1 },	-- Lil'Abom Spare Arm
+					{ "i", 186184, 1 },	-- Lil'Abom Torso
+				},
+				["timeline"] = { ADDED_SL_S2 },
 			}),
 		}),
 	}),

@@ -110,13 +110,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["repeatable"] = true,
 					["g"] = {
 						i(201818, {	-- Twilight Strongbox
-							i(199215),	-- Worldbreaker Membership
-							i(202173),	-- Magmote
-							i(201815),	-- Cloak of Many Faces (TOY!)
+							["sym"] = {{"select","itemID",201817},{"pop"}},	-- Twilight Cache
+							["g"] = {
+								-- any loot from epic box which is only epic box
+							},
 						}),
 						i(201817, {	-- Twilight Cache
 							i(199215),	-- Worldbreaker Membership
 							i(202173),	-- Magmote
+							i(201815),	-- Cloak of Many Faces (TOY!)
 						}),
 					},
 				}),
@@ -484,6 +486,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				n(186859, {	-- Worldcarver A'tir
 					["coord"] = { 30.0, 55.6, THE_WAKING_SHORES },
+					["cost"] = {{"i",191211,3}},	-- 3x Wurmling Bones
 					["questID"] = 74090,
 					["isDaily"] = true,
 					["g"] = {
@@ -540,6 +543,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								i(191801),	-- Obsidian Dracthyr Battlegear Monnion
 								i(191802),	-- Obsidian Dracthyr Battlegear Belt
 							},
+							["questID"] = 72112,
 						}),
 						i(200707, {	-- Armoire of Endless Cloaks (TOY!)
 							["cost"] = {
@@ -692,6 +696,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								i(191801),	-- Obsidian Dracthyr Battlegear Monnion
 								i(191802),	-- Obsidian Dracthyr Battlegear Belt
 							},
+							["questID"] = 72112,
 						}),
 						i(200963, {	-- Ensemble: Sabellian's Battlegear Cloth Armor
 							["cost"] = {
@@ -708,6 +713,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								i(200961),	-- Sabellian's Cloak
 								i(200962),	-- Sabellian's Tunic
 							},
+							["questID"] = 72115,
 						}),
 						i(200640, {	-- Obsidian Egg Clutch (TOY!)
 							["cost"] = {
@@ -831,6 +837,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				i(199915, {	-- Ancient Obsidian Charm
 					["description"] = "Drops from mobs around the Obsidian Citadel.",
 				}),
+				i(200944, {	-- Djaradin's Trophy Mask
+					["description"] = "Drops from mobs around the Obsidian Citadel.",
+				}),
 				i(198071, {	-- Flamecarved Bone
 					["cr"] = 196336,	-- Qalashi Flameslinger
 				}),
@@ -871,6 +880,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["description"] = "Drops from mobs around the Obsidian Citadel.",
 				}),
 				i(200857),	-- Talisman of Sargha (TOY!)
+				i(191211, {	-- Wurmling Bones
+					["cr"] = 187366,	-- Worldcarver Wurmling
+					["coords"] = {
+						{ 28.6, 53.4, THE_WAKING_SHORES },
+						{ 31.2, 54.8, THE_WAKING_SHORES },
+						{ 31.2, 57.8, THE_WAKING_SHORES },
+					},
+				}),
 				i(191255, {	-- Greater Obsidian Key
 					["description"] = "This Item will be deleted immediately if leaving the area!",
 					["cost"] = {
@@ -879,7 +896,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				i(191264, {	-- Restored Obsidian Key
-					["description"] = "This Item will be deleted immediately if leaving the area!",
 					["cost"] = {
 						{"i",191251,30},	-- 30x Key Fragment
 						{"i",193201, 3},	-- 3x Key Framing

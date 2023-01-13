@@ -68,7 +68,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		-- ["coord"] = { X, Y, MAP },
 		-- ["modelScale"] = 3,
 		["g"] = {
-			d(17, {	-- LFR
+			d(LFR_RAID, {
 				["description"] = "",
 				["g"] = bubbleDown({ ["modID"] = 4 }, {
 					cl(DEATHKNIGHT, {
@@ -190,7 +190,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 				}),
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_RAID, {
 				["description"] = "",
 				["g"] = bubbleDown({ ["modID"] = 3 }, {
 					cl(DEATHKNIGHT, {
@@ -312,7 +312,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 				}),
 			}),
-			d(15, {	-- Heroic
+			d(HEROIC_RAID, {
 				["description"] = "",
 				["g"] = bubbleDown({ ["modID"] = 5 }, {
 					cl(DEATHKNIGHT, {
@@ -434,7 +434,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					}),
 				}),
 			}),
-			d(16, {	-- Mythic
+			d(MYTHIC_RAID, {
 				["description"] = "",
 				["g"] = bubbleDown({ ["modID"] = 6  }, {
 					cl(DEATHKNIGHT, {

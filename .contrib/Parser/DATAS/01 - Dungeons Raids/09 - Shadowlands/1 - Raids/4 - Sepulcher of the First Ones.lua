@@ -19,113 +19,113 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 			n(ACHIEVEMENTS, {
 				ach(15493, {	-- Ephemeral Plains
 					crit(1, { -- Vigilant Guardian
-						["_encounter"] = { 2458, LFR_R },
+						["_encounter"] = { 2458, LFR_RAID },
 					}),
 					crit(2, { -- Skolex, the Insatiable Ravener
-						["_encounter"] = { 2465, LFR_R },
+						["_encounter"] = { 2465, LFR_RAID },
 					}),
 					crit(3, { -- Artificer Xy'mox
-						["_encounter"] = { 2470, LFR_R },
+						["_encounter"] = { 2470, LFR_RAID },
 					}),
 					crit(4, { -- Halondrus the Reclaimer
-						["_encounter"] = { 2463, LFR_R },
+						["_encounter"] = { 2463, LFR_RAID },
 					}),
 				}),
 				ach(15492, {	-- Cornerstone of Creation
 					crit(1, { -- Dausegne, the Fallen Oracle
-						["_encounter"] = { 2459, LFR_R },
+						["_encounter"] = { 2459, LFR_RAID },
 					}),
 					crit(2, { -- Prototype Pantheon
-						["_encounter"] = { 2460, LFR_R },
+						["_encounter"] = { 2460, LFR_RAID },
 					}),
 					crit(3, { -- Lihuvim, Principal Architect
-						["_encounter"] = { 2461, LFR_R },
+						["_encounter"] = { 2461, LFR_RAID },
 					}),
 				}),
 				ach(15416, {	-- Domination's Grasp
 					crit(1, { -- Anduin Wrynn
-						["_encounter"] = { 2469, LFR_R },
+						["_encounter"] = { 2469, LFR_RAID },
 					}),
 					crit(2, { -- Lords of Dread
-						["_encounter"] = { 2457, LFR_R },
+						["_encounter"] = { 2457, LFR_RAID },
 					}),
 					crit(3, {-- Rygelon
-						["_encounter"] = { 2467, LFR_R },
+						["_encounter"] = { 2467, LFR_RAID },
 					}),
 				}),
 				ach(15418, {	-- The Grand Design
 					crit(1, {-- The Jailer
-						["_encounter"] = { 2464, LFR_R },
+						["_encounter"] = { 2464, LFR_RAID },
 					}),
 				}),
 				ach(15417, {	-- Sepulcher of the First Ones
 					crit(1, { -- Vigilant Guardian
-						["_encounter"] = { 2458, LFR_R },
+						["_encounter"] = { 2458, LFR_RAID },
 					}),
 					crit(2, { -- Skolex, the Insatiable Ravener
-						["_encounter"] = { 2465, LFR_R },
+						["_encounter"] = { 2465, LFR_RAID },
 					}),
 					crit(3, { -- Artificer Xy'mox
-						["_encounter"] = { 2470, LFR_R },
+						["_encounter"] = { 2470, LFR_RAID },
 					}),
 					crit(4, { -- Dausegne, the Fallen Oracle
-						["_encounter"] = { 2459, LFR_R },
+						["_encounter"] = { 2459, LFR_RAID },
 					}),
 					crit(5, { -- Prototype Pantheon
-						["_encounter"] = { 2460, LFR_R },
+						["_encounter"] = { 2460, LFR_RAID },
 					}),
 					crit(6, { -- Lihuvim, Principal Architect
-						["_encounter"] = { 2461, LFR_R },
+						["_encounter"] = { 2461, LFR_RAID },
 					}),
 					crit(7, { -- Halondrus the Reclaimer
-						["_encounter"] = { 2463, LFR_R },
+						["_encounter"] = { 2463, LFR_RAID },
 					}),
 					crit(8, { -- Anduin Wrynn
-						["_encounter"] = { 2469, LFR_R },
+						["_encounter"] = { 2469, LFR_RAID },
 					}),
 					crit(9, { -- Lords of Dread
-						["_encounter"] = { 2457, LFR_R },
+						["_encounter"] = { 2457, LFR_RAID },
 					}),
 					crit(10, {-- Rygelon
-						["_encounter"] = { 2467, LFR_R },
+						["_encounter"] = { 2467, LFR_RAID },
 					}),
 					crit(11, {-- The Jailer
-						["_encounter"] = { 2464, LFR_R },
+						["_encounter"] = { 2464, LFR_RAID },
 					}),
 				}),
 				ach(15478, {	-- Heroic: Sepulcher of the First Ones
 					crit(1, { -- Vigilant Guardian
-						["_encounter"] = { 2458, HEROIC_R },
+						["_encounter"] = { 2458, HEROIC_RAID },
 					}),
 					crit(2, { -- Skolex, the Insatiable Ravener
-						["_encounter"] = { 2465, HEROIC_R },
+						["_encounter"] = { 2465, HEROIC_RAID },
 					}),
 					crit(3, { -- Artificer Xy'mox
-						["_encounter"] = { 2470, HEROIC_R },
+						["_encounter"] = { 2470, HEROIC_RAID },
 					}),
 					crit(4, { -- Dausegne, the Fallen Oracle
-						["_encounter"] = { 2459, HEROIC_R },
+						["_encounter"] = { 2459, HEROIC_RAID },
 					}),
 					crit(5, { -- Prototype Pantheon
-						["_encounter"] = { 2460, HEROIC_R },
+						["_encounter"] = { 2460, HEROIC_RAID },
 					}),
 					crit(6, { -- Lihuvim, Principal Architect
-						["_encounter"] = { 2461, HEROIC_R },
+						["_encounter"] = { 2461, HEROIC_RAID },
 					}),
 					crit(7, { -- Halondrus the Reclaimer
-						["_encounter"] = { 2463, HEROIC_R },
+						["_encounter"] = { 2463, HEROIC_RAID },
 					}),
 					crit(8, { -- Anduin Wrynn
-						["_encounter"] = { 2469, HEROIC_R },
+						["_encounter"] = { 2469, HEROIC_RAID },
 					}),
 					crit(9, { -- Lords of Dread
-						["_encounter"] = { 2457, HEROIC_R },
+						["_encounter"] = { 2457, HEROIC_RAID },
 					}),
 					crit(10, {-- Rygelon
-						["_encounter"] = { 2467, HEROIC_R },
+						["_encounter"] = { 2467, HEROIC_RAID },
 					}),
 					crit(11, {-- The Jailer
-						["_encounter"] = { 2464, HEROIC_R },
+						["_encounter"] = { 2464, HEROIC_RAID },
 					}),
 				}),
 				ach(15490, {	-- Mythic: Sepulcher of the First Ones
@@ -167,107 +167,107 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				-- Fated
 				ach(15681, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Fate of the Sepulcher
 					crit(1, { -- Vigilant Guardian
-						["_encounter"] = { 2458, LFR_R },
+						["_encounter"] = { 2458, LFR_RAID },
 					}),
 					crit(2, { -- Skolex, the Insatiable Ravener
-						["_encounter"] = { 2465, LFR_R },
+						["_encounter"] = { 2465, LFR_RAID },
 					}),
 					crit(3, { -- Artificer Xy'mox
-						["_encounter"] = { 2470, LFR_R },
+						["_encounter"] = { 2470, LFR_RAID },
 					}),
 					crit(4, { -- Dausegne, the Fallen Oracle
-						["_encounter"] = { 2459, LFR_R },
+						["_encounter"] = { 2459, LFR_RAID },
 					}),
 					crit(5, { -- Prototype Pantheon
-						["_encounter"] = { 2460, LFR_R },
+						["_encounter"] = { 2460, LFR_RAID },
 					}),
 					crit(6, { -- Lihuvim, Principal Architect
-						["_encounter"] = { 2461, LFR_R },
+						["_encounter"] = { 2461, LFR_RAID },
 					}),
 					crit(7, { -- Halondrus the Reclaimer
-						["_encounter"] = { 2463, LFR_R },
+						["_encounter"] = { 2463, LFR_RAID },
 					}),
 					crit(8, { -- Anduin Wrynn
-						["_encounter"] = { 2469, LFR_R },
+						["_encounter"] = { 2469, LFR_RAID },
 					}),
 					crit(9, { -- Lords of Dread
-						["_encounter"] = { 2457, LFR_R },
+						["_encounter"] = { 2457, LFR_RAID },
 					}),
 					crit(10, {-- Rygelon
-						["_encounter"] = { 2467, LFR_R },
+						["_encounter"] = { 2467, LFR_RAID },
 					}),
 					crit(11, {-- The Jailer
-						["_encounter"] = { 2464, LFR_R },
+						["_encounter"] = { 2464, LFR_RAID },
 					}),
 				})),
 				ach(15682, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Heroic: Fate of the Sepulcher
 					crit(1, { -- Vigilant Guardian
-						["_encounter"] = { 2458, HEROIC_R },
+						["_encounter"] = { 2458, HEROIC_RAID },
 					}),
 					crit(2, { -- Skolex, the Insatiable Ravener
-						["_encounter"] = { 2465, HEROIC_R },
+						["_encounter"] = { 2465, HEROIC_RAID },
 					}),
 					crit(3, { -- Artificer Xy'mox
-						["_encounter"] = { 2470, HEROIC_R },
+						["_encounter"] = { 2470, HEROIC_RAID },
 					}),
 					crit(4, { -- Dausegne, the Fallen Oracle
-						["_encounter"] = { 2459, HEROIC_R },
+						["_encounter"] = { 2459, HEROIC_RAID },
 					}),
 					crit(5, { -- Prototype Pantheon
-						["_encounter"] = { 2460, HEROIC_R },
+						["_encounter"] = { 2460, HEROIC_RAID },
 					}),
 					crit(6, { -- Lihuvim, Principal Architect
-						["_encounter"] = { 2461, HEROIC_R },
+						["_encounter"] = { 2461, HEROIC_RAID },
 					}),
 					crit(7, { -- Halondrus the Reclaimer
-						["_encounter"] = { 2463, HEROIC_R },
+						["_encounter"] = { 2463, HEROIC_RAID },
 					}),
 					crit(8, { -- Anduin Wrynn
-						["_encounter"] = { 2469, HEROIC_R },
+						["_encounter"] = { 2469, HEROIC_RAID },
 					}),
 					crit(9, { -- Lords of Dread
-						["_encounter"] = { 2457, HEROIC_R },
+						["_encounter"] = { 2457, HEROIC_RAID },
 					}),
 					crit(10, {-- Rygelon
-						["_encounter"] = { 2467, HEROIC_R },
+						["_encounter"] = { 2467, HEROIC_RAID },
 					}),
 					crit(11, {-- The Jailer
-						["_encounter"] = { 2464, HEROIC_R },
+						["_encounter"] = { 2464, HEROIC_RAID },
 					}),
 				})),
 				ach(15683, bubbleDownSelf({ ["timeline"] = { ADDED_SL_S4 } }, {	-- Mythic: Fate of the Sepulcher
 					crit(1, { -- Vigilant Guardian
-						["_encounter"] = { 2458, MYTHIC_R },
+						["_encounter"] = { 2458, MYTHIC_RAID },
 					}),
 					crit(2, { -- Skolex, the Insatiable Ravener
-						["_encounter"] = { 2465, MYTHIC_R },
+						["_encounter"] = { 2465, MYTHIC_RAID },
 					}),
 					crit(3, { -- Artificer Xy'mox
-						["_encounter"] = { 2470, MYTHIC_R },
+						["_encounter"] = { 2470, MYTHIC_RAID },
 					}),
 					crit(4, { -- Dausegne, the Fallen Oracle
-						["_encounter"] = { 2459, MYTHIC_R },
+						["_encounter"] = { 2459, MYTHIC_RAID },
 					}),
 					crit(5, { -- Prototype Pantheon
-						["_encounter"] = { 2460, MYTHIC_R },
+						["_encounter"] = { 2460, MYTHIC_RAID },
 					}),
 					crit(6, { -- Lihuvim, Principal Architect
-						["_encounter"] = { 2461, MYTHIC_R },
+						["_encounter"] = { 2461, MYTHIC_RAID },
 					}),
 					crit(7, { -- Halondrus the Reclaimer
-						["_encounter"] = { 2463, MYTHIC_R },
+						["_encounter"] = { 2463, MYTHIC_RAID },
 					}),
 					crit(8, { -- Anduin Wrynn
-						["_encounter"] = { 2469, MYTHIC_R },
+						["_encounter"] = { 2469, MYTHIC_RAID },
 					}),
 					crit(9, { -- Lords of Dread
-						["_encounter"] = { 2457, MYTHIC_R },
+						["_encounter"] = { 2457, MYTHIC_RAID },
 					}),
 					crit(10, {-- Rygelon
-						["_encounter"] = { 2467, MYTHIC_R },
+						["_encounter"] = { 2467, MYTHIC_RAID },
 					}),
 					crit(11, {-- The Jailer
-						["_encounter"] = { 2464, MYTHIC_R },
+						["_encounter"] = { 2464, MYTHIC_RAID },
 					}),
 				})),
 				-- Guild Achievements
@@ -591,7 +591,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
 				}),
 			}),
-			d(LFR_R, {
+			d(LFR_RAID, {
 				n(ZONE_DROPS, {
 					i(190629),	-- Cartel's Larcenous Toecaps
 					i(190630),	-- Devouring Pellicle Shoulderpads
@@ -895,7 +895,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					}),
 				}),
 			}),
-			d(NORMAL_R, {
+			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(65764, {	-- Sepulcher of the First Ones - Heavy is the Crown
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
@@ -1215,7 +1215,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					},
 				}),
 			}),
-			d(HEROIC_R, {
+			d(HEROIC_RAID, {
 				n(QUESTS, {
 					q(65717, bubbleDownSelf({	-- Final Shape
 						["timeline"] = { ADDED_SL_S3, REMOVED_DF_REL },
@@ -1537,7 +1537,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					},
 				}),
 			}),
-			d(MYTHIC_R, {
+			d(MYTHIC_RAID, {
 				n(QUESTS, {
 					q(65762, {	-- Sepulcher of the First Ones - Heavy is the Crown
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon

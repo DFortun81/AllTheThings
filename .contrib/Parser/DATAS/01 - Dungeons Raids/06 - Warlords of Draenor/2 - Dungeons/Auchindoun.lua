@@ -16,7 +16,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(1, {		-- Normal
+			d(NORMAL_DUNGEON, {
 				e(1185, {	-- Vigilant Kaathar
 					["crs"] = { 75839 },
 					["sym"] = {
@@ -82,7 +82,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(2, {		-- Heroic
+			d(HEROIC_DUNGEON, {
 				e(1185, {	-- Vigilant Kaathar
 					["crs"] = { 75839 },
 					["sym"] = {
@@ -135,7 +135,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(23, {		-- Mythic
+			d(MYTHIC_DUNGEON, {
 				e(1185, {	-- Vigilant Kaathar
 					["crs"] = { 75839 },
 					["sym"] = {

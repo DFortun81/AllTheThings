@@ -47,7 +47,7 @@ root("Instances", tier(LEGION_TIER, {
 				i(201997),	-- Key to the Halls
 				i(201999),	-- Skovald's Resolve
 			})),
-			d(1,  {	-- Normal
+			d(NORMAL_DUNGEON, {
 				n(ZONE_DROPS, {
 					i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 				}),
@@ -141,7 +141,7 @@ root("Instances", tier(LEGION_TIER, {
 					},
 				}),
 			}),
-			d(2,  {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 110,
 				["g"] = {
 					n(ZONE_DROPS, {
@@ -240,7 +240,7 @@ root("Instances", tier(LEGION_TIER, {
 					}),
 				},
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_DUNGEON, {
 				["lvl"] = 110,
 				["g"] = {
 					n(ACHIEVEMENTS, {

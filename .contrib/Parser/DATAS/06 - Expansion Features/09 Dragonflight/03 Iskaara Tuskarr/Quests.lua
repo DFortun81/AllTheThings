@@ -99,7 +99,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(72291, {	-- Story of a Memorable Victory
 				["minReputation"] = { 2511, 5 },	-- Iskaara Tuskarr Renown 5
-				["sourceQuests"] = { 70940 },	-- Tuskarr Champion's Tales
+				-- ["sourceQuests"] = { 70940 },	-- Tuskarr Champion's Tales
 				["provider"] = { "i", 201470 },	-- Story of a Memorable Victory
 				["isWeekly"] = true,
 			}),
@@ -193,6 +193,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197631 },	-- Rowie
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				["isBreadcrumb"] = true,
 			}),
 			q(68640, {	-- Sudden Isolation
 				["minReputation"] = { 2511, 11 },	-- Iskaara Tuskarr Renown 11
@@ -238,10 +239,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			q(66418, {	-- Testing the Tuskaprsenal
 				["minReputation"] = { 2511, 11 },	-- Iskaara Tuskarr Renown 11
-				["sourceQuests"] = {
-					66411,	-- Troubled Waters
-					66417,	-- Salvaging Supplies
-				},
+				["sourceQuests"] = { 66417 },	-- Salvaging Supplies
 				["provider"] = { "n", 188285 },	-- Crafter Kuliqa
 				["coord"] = { 54.3, 38.7, THE_WAKING_SHORES },
 				["g"] = {
@@ -285,6 +283,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 53.9, 38.1, THE_WAKING_SHORES },
 				["g"] = {
 					i(201783),	-- Tutaqan's Commendation
+				},
+			}),
+			q(72392, {	-- Dragon Isles Supplies
+				["minReputation"] = { 2511, 11 },	-- Iskaara Tuskarr Renown 11
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198866),	-- Small Iskaaran Supply Pack
 				},
 			}),
 				-- RENOWN 12 --
@@ -433,7 +439,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(199883),	-- Tuskarr Sharktooth Bolthrower
 					i(199878),	-- Tuskarr Timber Splitter
 				},
-				
 			}),
 			q(72323, {	-- Iskaaran Crafting Mastery
 				["minReputation"] = { 2511, 24 },	-- Iskaara Tuskarr Renown 24
@@ -490,6 +495,59 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(200118),	-- Yellow Scouting Ottuk (MOUNT!)
 				},
 			}),
+				-- RENOWN 26 --
+			q(70976, {	-- Slacking and Sledding
+				["minReputation"] = { 2511, 26 },	-- Iskaara Tuskarr Renown 26
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+				["g"] = {
+					i(199899),	-- Iskaara Tug Sled (TOY!)
+					i(198827),	-- Magical Snow Sled (TOY!)
+				},
+			}),
+				-- RENOWN 28 --
+			q(70961, {	-- Shouldering the Needed Armor
+				["minReputation"] = { 2511, 28 },	-- Iskaara Tuskarr Renown 28
+				["provider"] = { "n", 196016 },	-- Lontupit
+				["coord"] = { 14.0, 49.4, THE_AZURE_SPAN },
+				["g"] = {
+					i(199539),	-- Blue Tufted Shoulderpads
+					i(199540),	-- Green Tufted Shoulderpads
+					i(199541),	-- Grey Tufted Shoulderpads
+					i(199542),	-- Red Tufted Shoulderpads
+				},
+			}),
+				-- RENOWN 29 --
+			q(70977, {	-- Scaps Packs
+				["minReputation"] = { 2511, 29 },	-- Iskaara Tuskarr Renown 29
+				["provider"] = { "n", 187680 },	-- Scaps
+				["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
+				["g"] = {
+					i(198337),	-- Azure Paw Pack
+					i(198338),	-- Black Paw Pack
+					i(198339),	-- Dark Paw Pack
+					i(198340),	-- Red Paw Pack
+					i(198341),	-- Tan Paw Pack
+				},
+			}),
+				-- RENOWN 30 --
+			q(70969, {	-- Becoming One of Our Community
+				["minReputation"] = { 2511, 30 },	-- Iskaara Tuskarr Renown 30
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+				["g"] = {
+					title(476),	-- %s of Iskaara
+				},
+			}),
+			q(72328, {	-- Out Ferocious, Armored Steeds
+				["minReputation"] = { 2511, 30 },	-- Iskaara Tuskarr Renown 30
+				["provider"] = { "n", 186462 },	-- Tatto
+				["coord"] = { 13.8, 49.7, THE_AZURE_SPAN },
+				["g"] = {
+					i(201426),	-- Brown War Ottuk (MOUNT!)
+					i(201425),	-- Yellow War Ottuk (MOUNT!)
+				},
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem
@@ -509,5 +567,8 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(72637),	-- Triggered with 'A Comfy Seat' (70962)
 		q(72638),	-- Triggered with 'Arms for Every Arm'  (70971)
 		q(72639),	-- Triggered with 'Our Loyal, Lanky Steeds' (70972)
+		q(72281),	-- Triggered with 'Slacking and Sledding' (70976)
+		q(72641),	-- Triggered with 'Shouldering the Needed Armor' (70961)
+		q(72642),	-- Triggered with 'Scaps Packs' (70977)
 	}),
 }));

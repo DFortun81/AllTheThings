@@ -8,7 +8,7 @@ root("Instances", tier(CLASSIC_TIER, {
 		["maps"] = { 431, 432 },
 		["lvl"] = lvlsquish(21, 21, 10),
 		["groups"] = {
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				n(QUESTS, {
 					q(31493, {	-- Just for Safekeeping, Of Course
 						["qg"] = 64738,	-- Hooded Crusader
@@ -79,7 +79,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = lvlsquish(90, 90, 35),
 				["groups"] = {
 					n(QUESTS, {

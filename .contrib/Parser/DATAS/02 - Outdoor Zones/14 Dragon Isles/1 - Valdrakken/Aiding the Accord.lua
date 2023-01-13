@@ -38,6 +38,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						{"pop"},
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
+					["g"] = {
+						i(202171),	-- Dragon Purse
+					},
+				}),
+				i(201923, {	-- Maruuk Centaur Insignia
+					["minReputation"] = { 2503, 25 },	-- Maruuk Centaur renown 25
+					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				}),
+				i(201924, {	-- Valdrakken Accord Insignia
+					["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
+					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
 			}),
 		}),

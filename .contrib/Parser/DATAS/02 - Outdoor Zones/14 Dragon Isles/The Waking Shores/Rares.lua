@@ -3,17 +3,13 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
-		n(RARES, {
-			n(193132, {	-- Amethyzar the Glittering
-				["coord"] = { 63.4, 54.8, THE_WAKING_SHORES },
-				["questID"] = 73981,
-				["g"] = {
-					i(200156),	-- Amethyzarite Geode
-				},
-			}),
+		n(RARES, sharedData({["isDaily"] = true},{
+		--	n(193132, {	-- Amethyzar the Glittering
+		--	Time-Based Rare
 			n(187111, {	-- Ancient Hornswog
 				["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
 				["questID"] = 72835,
+				["isDaily"] = false,
 				["g"] = {
 					i(200165),	-- Aegis of Scales
 					i(196992),	-- Cliffside Wylderdrake: Heavy Horns (DM!)
@@ -23,17 +19,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(187945, {	-- Anhydros the Tidetaker
 				["coord"] = { 58.7, 40.3, THE_WAKING_SHORES },
 				["questID"] = 73865,
-			}),
-			n(193135, {	-- Azra's Prized Peony
-				["coord"] = { 54.9, 71.1, THE_WAKING_SHORES },
-				["questID"] = 73984,
 				["g"] = {
-					i(200259),	-- Forest Dweller's Shield
-					i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
-					i(197121),	-- Highland Drake: Tan Horns (DM!)
-					i(200229),	-- Slightly Digested Leggings
+					i(200245), -- Leviathan Lure
 				},
 			}),
+		--	n(193135, {	-- Azra's Prized Peony
+		--	Time-Based Rare
 			n(193177, {	-- Beakers
 				["questID"] = 73902,
 				["coords"] = {
@@ -41,15 +32,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					{ 30.2, 78.2, THE_WAKING_SHORES },
 				},
 			}),
-			n(192738, {	-- Brundin the Dragonbane <Qalashi War Party>
-				["description"] = "Travelling.",
-				["coord"] = { 48.4, 66.1, THE_WAKING_SHORES },
-				["questID"] = 73890,
-			}),
 			n(193198, {	-- Captain Lancer
 				["coord"] = { 26.9, 76.1, THE_WAKING_SHORES },
 				["questID"] = 73075,
-				["isDaily"] = true,
 				["g"] = {
 					i(200286),	-- Dragonbane Lance
 					i(200757),	-- Qalashi War-Helm
@@ -60,11 +45,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 74092,
 				["g"] = {
 					i(200138),	-- Ancient Dancer's Longspear
+					i(197586),	-- Windborne Velocidrake: Spiked Back
+					i(200758),	-- Breastplate of Storied Antiquity
+					i(200303),	-- Dreamweaver Acolyte's Staff
 				},
 			}),
 			n(191611, {	-- Dragonhunter Igordan
 				["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
 				["questID"] = 72838,
+				["isDaily"] = false,
 				["g"] = {
 					i(197019),	-- Cliffside Wylderdrake: Blunt Spiked Tail (DM!)
 					i(197005),	-- Cliffside Wylderdrake: Horned Nose (DM!)
@@ -72,7 +61,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 			n(193217, {	-- Drakewing
-				["coord"] = { 72.8, 47.0, THE_WAKING_SHORES },
+				["description"] = "Spawns at the top right of the river & follows it all the way down to the Dragonscale Basecamp. Once there, he cycles back to his spawnpoint, again following the river. Coordinates roughly show his path.",
+				["coords"] = {
+					{ 73.6, 46.4, THE_WAKING_SHORES },
+					{ 69.2, 59.6, THE_WAKING_SHORES },
+					{ 54.0, 34.6, THE_WAKING_SHORES },
+					{ 55.2, 59.2, THE_WAKING_SHORES },
+					{ 47.2, 78.0, THE_WAKING_SHORES },
+				},
 				["questID"] = 73874,
 				["g"] = {
 					i(200219),	-- Dangerous Drapery
@@ -86,7 +82,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["description"] = "Can only be summoned by fishing with the Lava Spices buff active at 22 65 in the Waking Shores. Lava Spices can be obtained by killing Restless Lava, Lavaslurpers and Basalt Shells along the lava river leading to the rare.",
 				["cost"] = {{"i",201092,1}},	-- Lava Spices
 				["questID"] = 73072,
-				["isDaily"] = true,
 				["g"] = {
 					i(200217),	-- Blazing Essence
 					i(200247),	-- Inextinguishable Gavel
@@ -100,6 +95,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(195915, {	-- Firava the Rekindler
 				["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },
 				["questID"] = 72839,
+				["isDaily"] = false,
 				["g"] = {
 					i(200217),	-- Blazing Essence
 					i(197135),	-- Highland Drake: Toothy Mouth (DM!)
@@ -110,9 +106,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(193154, {	-- Forgotten Gryphon
 				["coord"] = { 33.1, 76.3, THE_WAKING_SHORES },
 				["questID"] = 73073,
-				["isDaily"] = true,
 				["g"] = {
 					i(200858),	-- Plume of the Forgotten
+					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 				},
 			}),
 			n(193226, {	-- Gorjo the Crab Shackler
@@ -156,6 +152,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(187209, {	-- Klozicc the Ascended
 				["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
 				["questID"] = 72841,
+				["isDaily"] = false,
 				["g"] = {
 					i(197023),	-- Cliffside Wylderdrake: Maned Neck (DM!)
 					i(200313),	-- Earthen Protoscale Drape
@@ -177,6 +174,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["questID"] = 74010,
 				["g"] = {
 					i(197149),	-- Highland Drake: Club Tail (DM!)
+					i(200684),	-- Emerald Tailbone
 				},
 			}),
 			n(193152, {	-- Massive Magmashell
@@ -194,10 +192,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- },
 			}),
 			n(193256, {	-- Nulltheria the Void Gazer
-				["coord"] = { 56.7, 45.6, THE_WAKING_SHORES },
+				["coord"] = { 50.00, 45.87, THE_WAKING_SHORES },
+				["description"] = "At the top of the Tower. Nearby ghostly telescopes will indicate her spawn timer:\n\n2 telescopes means roughly 2h30min till respawn.\n\n3 telescopes indicate 2h respawn till respawn.\n\n4 telescopes indicate 1h till respawn.",
 				["questID"] = 73888,
 				["g"] = {
 					i(200236),	-- Memory of Nulltheria
+					i(200310),	-- Stole of the Iron Phantom
+					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 				},
 			}),
 			n(193118, {	-- O'nank Shorescour
@@ -212,33 +213,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(184853, {	-- Primal Scythid Queen
 				["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
 				["questID"] = 72843,
+				["isDaily"] = false,
 				["g"] = {
 					-- is part of the DF>Global Rare Loottable
 				},
 			}),
-			n(193710, {	-- Seereel, the Spring <Lunker>
-				["coord"] = { 66.0, 74.8, THE_WAKING_SHORES },
-				["description"] = "Chance to spawn after using 5 Ominous Conches at any Lurker Sighting.",
-				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
-				["questID"] = 74074,
-				["isDaily"] = true,
-				["g"] = {
-					i(197001),	-- Cliffside Wylderdrake: Finned Cheek
-					i(197098),	-- Highland Drake: Finned Back (DM!)
-					i(200164),	-- Iceloop
-					i(200086),	-- Khaz'gorite Infused Resin
-					i(200245),	-- Leviathan Lure
-					i(200563),	-- Primal Ritual Shell
-					i(200187),	-- Rod of Glacial Force
-					i(200552),	-- Torrent Caller's Shell
-				},
-			}),
+		--	n(192737, {	-- Qalashi War Mammoth
+		--	Time-Based Rare
 			n(193271, {	-- Shadeslash Trakken
 				["description"] = "Cave Entrance: 48.6, 74.3. Have to touch Focus, Globe and Telescope to spawn.",
 				["coord"] = { 47.3, 73.9, THE_WAKING_SHORES },
 				["questID"] = 74076,
 				["g"] = {
 					i(200152),	-- Gleaming Blade of Insight
+					i(197116),	-- Highland Drake: Ears
 				},
 			}),
 			n(193181, {	-- Skewersnout <Raypier of the Deep>
@@ -266,25 +254,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200209),	-- Firebreather's Cowl
 				},
 			}),
-			n(193634, {	-- Swog'ranka <Lunker>
-				["coord"] = { 66.0, 74.8, THE_WAKING_SHORES },
-				["description"] = "Chance to spawn after using 5 Ominous Conches at any Lurker Sighting.",
-				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
-				["questID"] = 74084,
-				["isDaily"] = true,
-				["g"] = {
-					i(197001),	-- Cliffside Wylderdrake: Finned Cheek
-					i(200086),	-- Khaz'gorite-infused Resin
-					i(200552),	-- Torrent Caller's Shell
-					i(200448),	-- Abyssal Ward
-					i(200151),	-- Seamist Blade
-					i(197589),	-- Windborne Velocidrake: Large Head Fin
-					-- is part of the DF>Global Rare Loottable
-				},
-			}),
 			n(193171, {	-- Terillod the Devout
 				["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
 				["questID"] = 72850,
+				["isDaily"] = false,
 				["g"] = {
 					i(200208),	-- Cloud Coalescing Handwraps
 					i(200172),	-- Zephyrdance Signet
@@ -297,6 +270,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					-- is part of the DF>Global Rare Loottable
 				},
 			}),
-		}),
+		})),
+		--}),
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	m(THE_WAKING_SHORES, {
+		q(74000),	-- Triggers when killing Harkyn Grymstone's group (Snee, Groth and Voll)
+		q(74033),	-- Triggers when killing Harkyn Grymstone's group (Snee, Groth and Voll)
 	}),
 })));

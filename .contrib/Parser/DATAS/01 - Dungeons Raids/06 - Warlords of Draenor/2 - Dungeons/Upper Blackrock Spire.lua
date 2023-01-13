@@ -16,7 +16,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				e(1226,  {	-- Orebender Gor'ashan
 					["crs"] = { 76413 },	-- Orebender Gor'ashan
 					["sym"] = {
@@ -127,7 +127,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
 					ach(9058, {	-- Leeeeeeeeeeeeeroy...?
 						["g"] = {
@@ -214,7 +214,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_DUNGEON, {
 				e(1226,  {	-- Orebender Gor'ashan
 					["crs"] = { 76413 },	-- Orebender Gor'ashan
 					["sym"] = {

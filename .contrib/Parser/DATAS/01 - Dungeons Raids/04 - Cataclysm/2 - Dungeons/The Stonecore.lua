@@ -73,7 +73,7 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				cr(43438, e(110, {	-- Corborus
 					i(157592),	-- Crackling Geode Mace
 					i(56329),	-- Fist of Pained Senses
@@ -137,7 +137,7 @@ _.Instances = { tier(CATA_TIER, {
 					un(REMOVED_FROM_GAME, i(55819)),	-- Tear of Blood (7.3.5 - Removed from Game!)
 				})),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 85,
 				["groups"] = {
 					cr(43438, e(110, {	-- Corborus

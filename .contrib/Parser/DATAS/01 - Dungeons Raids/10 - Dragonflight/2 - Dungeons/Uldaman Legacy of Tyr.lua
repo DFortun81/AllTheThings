@@ -12,7 +12,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 			n(ZONE_DROPS, {
 				i(194256),	-- Pattern: Hood of Surging Time (RECIPE!)
 			}),
-			d(NORMAL_D, {
+			d(NORMAL_DUNGEON, {
 				e(2475, {	-- The Lost Dwarves
 					["crs"] = {
 						184581,	-- Baelog
@@ -73,7 +73,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 					},
 				}),
 			}),
-			d(HEROIC_D, {
+			d(HEROIC_DUNGEON, {
 				e(2475, {	-- The Lost Dwarves
 					["crs"] = {
 						184581,	-- Baelog
@@ -134,7 +134,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 }, 
 					},
 				}),
 			}),
-			d(MYTHIC_D, {
+			d(MYTHIC_DUNGEON, {
 				e(2475, {	-- The Lost Dwarves
 					["crs"] = {
 						184581,	-- Baelog

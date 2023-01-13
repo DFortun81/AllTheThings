@@ -51,6 +51,27 @@ local LFR_WEAPON_GROUP = {
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(QUESTS, {
+			q(63211, {	-- Report to Adrestes
+				["sourceQuests"] = {
+					-- TODO: confirm
+					57878,	-- Choosing Your Purpose [Story]
+					62000,	-- Choosing Your Purpose [Skip]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["isBreadcrumb"] = true,
+				["provider"] = { "n", 159478 },	-- Tal-Inara
+				["coord"] = { 39.2, 69.7, ORIBOS },
+			}),
+			q(60491, {	-- Among the Kyrian
+				["sourceQuests"] = {
+					57878,	-- Choosing Your Purpose [Story]
+					62000,	-- Choosing Your Purpose [Skip]
+					63211,	-- Report to Adrestes [Skip]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 171787 },	-- Polemarch Adrestes
+				["coord"] = { 36.1, 64.1, ORIBOS },
+			}),
 			q(58997, {	-- A Bittersweet Prize
 				["sourceQuests"] = { 58995 },	-- I Dreamed A Dream
 				["provider"] = { "n", 163328 },	-- Pelagos
@@ -666,11 +687,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "n", 173193 },	-- Xandria
 				["coord"] = { 31.0, 29.1, MALDRAXXUS },
 			}),
-			q(57967, {	-- Rightful Resting Place
-				["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
-				["provider"] = { "n", 159248 },	-- Haetio
-				["coord"] = { 43.2, 38.5, BASTION },
-			}),
 			q(57115, {	-- Sacred Scrolls of Humility
 				["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
 				["provider"] = { "n", 156327 },	-- Voitha
@@ -786,12 +802,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["sourceQuests"] = { 58795 },	-- Ascended
 				["provider"] = { "n", 163650 },	-- Kleia
 				["coord"] = { 51.6, 47.7, ARCHONS_RISE },
-			}),
-			q(63591, {	-- The Grand Reception
-				["sourceQuests"] = { 63584 },	-- A Triumphant Return
-				["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
-				["coord"] = { 64.0, 19.1, ARCHONS_RISE },
-				["maps"] = { 2017 },	-- Spires of Ascension (scenario)
 			}),
 			q(58846, {	-- The Greater Good
 				["sourceQuests"] = { 58844 },	-- Before the Dawn

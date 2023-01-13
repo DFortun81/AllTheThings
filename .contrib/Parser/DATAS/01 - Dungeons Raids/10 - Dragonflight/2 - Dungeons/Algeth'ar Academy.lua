@@ -30,7 +30,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				i(194491),	-- Plans: Frostfire Legguards of Preparation (RECIPE!)
 				i(194492),	-- Plans: Unstable Frostfire Belt (RECIPE!)
 			}),
-			d(NORMAL_D, {
+			d(NORMAL_DUNGEON, {
 				e(2509, {	-- Vexamus
 					["crs"] = {
 						189668,	-- Professor Madormu
@@ -82,7 +82,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(HEROIC_D, {
+			d(HEROIC_DUNGEON, {
 				e(2509, {	-- Vexamus
 					["crs"] = {
 						189668,	-- Professor Madormu
@@ -134,7 +134,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(MYTHIC_D, {
+			d(MYTHIC_DUNGEON, {
 				e(2509, {	-- Vexamus
 					["crs"] = {
 						189668,	-- Professor Madormu

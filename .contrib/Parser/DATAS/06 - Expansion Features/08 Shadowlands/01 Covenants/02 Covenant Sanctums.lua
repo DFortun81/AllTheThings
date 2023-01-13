@@ -314,67 +314,6 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					},
 				}),
 			})),
-			n(QUESTS, {
-			--	LIVE DATA
-				q(63586, {	-- Compassion in Devotion
-					["sourceQuests"] = { 63585 },	-- Blind Loyalty
-					["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-					["coord"] = { 55.4, 42.4, ARCHONS_RISE },
-				}),
-				q(63651, {	-- Cryptograms
-					["sourceQuests"] = { 63650 },	-- De-Infiltration
-					["provider"] = { "n", 178260 },	-- The Stonewright
-					["coord"] = { 54.6, 40.3, SINFALL_REACHES },
-				}),
-				q(63728, {	-- Hunting Amid Houses TODO: fix customCollect hiding quest
-					["customCollect"] = { "SL_COV_KYR", "SL_COV_NEC", "SL_COV_VEN" },	-- Kyrian / Necrolord / Venthyr (Night Fae have their own version of the quest)
-					["sourceQuests"] = { 63672 },	-- A Cry From the Heart
-					["qg"] = 177434,	-- Ysera
-					["coord"] = { 47.8, 53.5, ARDENWEALD },
-				}),
-				q(63673, {	-- Hunting Amid Houses
-					["customCollect"] = { "SL_COV_NFA" },	-- Night Fae
-					["sourceQuests"] = { 63672 },	-- A Cry From the Heart
-					["qg"] = 160262,	-- Ysera
-					["coord"] = { 44.3, 38.8, THE_TRUNK },
-				}),
-				q(64437, {	-- Inform the Primus
-					["sourceQuests"] = { 63683 },	-- Winter's Sigil
-					["qgs"] = {
-						160262,	-- Ysera [Heart of the Forest]
-						177434,	-- Ysera [Ardenweald]
-					},
-					["coords"] = {
-						{ 45.2, 39.6, THE_TRUNK },	-- Ysera [Heart of the Forest]
-						{ 45.2, 64.8, ARDENWEALD },	-- Ysera [Ardenweald]
-					},
-				}),
-				q(63593, {	-- New Sigil of the Kyrian
-					["sourceQuests"] = { 63592 },	-- A New Path
-					["provider"] = { "n", 179379 },	-- Polemarch Adrestes
-					["coord"] = { 46.0, 58.0, 2018 },	-- Spires of Ascension (scenario)
-				}),
-				q(63652, {	-- The "Unwelcome" Guests
-					["sourceQuests"] = { 63650 },	-- De-Infiltration
-					["provider"] = { "n", 158653 },	-- Prince Renathal
-					["coord"] = { 51.3, 38.1, SINFALL_REACHES },
-				}),
-				q(63592, {	-- The New Path
-					["sourceQuests"] = { 63591 },	-- The Grand Reception
-					["provider"] = { "n", 180189 },	-- Polemarch Kalisthene
-					["coord"] = { 55.8, 29.9, 2017 },
-					["_drop"] = { "g" },	-- drop anima trash
-					["maps"] = { 2018 },	-- Spires of Ascension (scenario)
-				}),
-				q(63653, {	-- The Power of a Crown
-					["sourceQuests"] = {
-						63651,	-- Cryptograms
-						63652,	-- The "Unwelcome Guests"
-					},
-					["provider"] = { "n", 158653 },	-- Prince Renathal
-					["coord"] = { 51.1, 38.0, SINFALL_REACHES },
-				}),
-			}),
 		},
 	}),
 }));

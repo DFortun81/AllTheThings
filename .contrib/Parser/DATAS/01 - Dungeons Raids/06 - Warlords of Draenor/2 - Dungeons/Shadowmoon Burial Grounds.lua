@@ -16,7 +16,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				e(1139, {	-- Sadana Bloodfury
 					["crs"] = { 75509 },
 					["sym"] = {
@@ -79,7 +79,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				e(1139, {	-- Sadana Bloodfury
 					["crs"] = { 75509 },
 					["sym"] = {
@@ -130,7 +130,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_DUNGEON, {
 				e(1139, {	-- Sadana Bloodfury
 					["crs"] = { 75509 },
 					["sym"] = {

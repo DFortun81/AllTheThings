@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(BASTION, {
 		n(EMISSARY_QUESTS, {
 			q(61097, {	-- Supplies from The Ascended
@@ -10,7 +9,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 52.2, 47.0, BASTION },
 				["minReputation"] = { 2407, 8 },	-- The Ascended, Exalted
 				["repeatable"] = true,
-				["lvl"] = { 60 },
 				["g"] = {
 					i(180647, {	-- Ascended Supplies
 						i(184399),	-- Larion Cub
@@ -21,11 +19,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						}),
 					}),
 				},
-			}),
-		}),
-		n(FACTIONS, {
-			faction(2407, {	-- The Ascended
-				ach(14335),	-- The Ascended
 			}),
 		}),
 	}),

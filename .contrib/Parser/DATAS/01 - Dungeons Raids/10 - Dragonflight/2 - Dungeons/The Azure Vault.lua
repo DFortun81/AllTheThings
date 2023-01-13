@@ -24,7 +24,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				i(194491),	-- Plans: Frostfire Legguards of Preparation (RECIPE!)
 				i(194492),	-- Plans: Unstable Frostfire Belt (RECIPE!)
 			}),
-			d(NORMAL_D, {
+			d(NORMAL_DUNGEON, {
 				e(2492, {	-- Leymor
 					["crs"] = { 186644 },	-- Leymor
 					["g"] = {
@@ -72,7 +72,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(HEROIC_D, {
+			d(HEROIC_DUNGEON, {
 				e(2492, {	-- Leymor
 					["crs"] = { 186644 },	-- Leymor
 					["g"] = {
@@ -120,7 +120,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(MYTHIC_D, {
+			d(MYTHIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
 					ach(16330),	-- You Must Be Made of Hide
 				}),

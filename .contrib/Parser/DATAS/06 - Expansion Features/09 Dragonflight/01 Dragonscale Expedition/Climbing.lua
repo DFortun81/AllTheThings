@@ -46,6 +46,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					-- The Waking Shores --
 				q(66070, {	-- Brightblade's Bones
 					["coord"] = { 22.0, 95.1, THE_WAKING_SHORES },
+					["g"] = {
+						i(191951),	-- Lost Banana
+					},
 				}),
 				q(64768, {	-- Lightsprocket's Artifact Hunt
 					["coord"] = { 48.7, 36.8, THE_WAKING_SHORES },
@@ -101,6 +104,6 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(72003),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70658)
 		q(72006),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70661)
 		q(72005),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70654)
-		q(66478),	-- Rescuing the Marmot during Brightblade's Bones (66070)
+		q(66478),	-- Rescuing the Marmot (188912) during Brightblade's Bones (66070) (requires Lost Banana 191951)
 	}),
 })));

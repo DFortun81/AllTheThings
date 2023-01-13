@@ -6,12 +6,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		n(AERIAL_CHALLENGES, {
 			n(REWARDS, {
 				i(199192, {	-- Dragon Racer's Purse
+					i(196979),	-- Cliffside Wylderdrake: Curled Head Horns (DM!)
 					i(197017),	-- Cliffside Wylderdrake: Large Tail Spikes (DM!)
 					i(196971),	-- Cliffside Wylderdrake: Spiked Brow (DM!)
+					i(197128),	-- Highland Drake: Curled Back Horns (DM!)
+					i(197152),	-- Highland Drake: Hooked Tail (DM!)
 					i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
 					i(197366),	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
 					i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw (DM!)
 					i(197605),	-- Windborne Velocidrake: Curled Horns (DM!)
+					i(197619),	-- Windborne Velocidrake: Hooked Snout
 				}),
 			}),
 			n(WORLD_QUESTS, {
@@ -53,6 +57,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					q(70422, {	-- Dragonrider Racing - Emerald Garden Ascent
 						["coord"] = { 25.6, 55.0, OHNAHRAN_PLAINS }
 					}),
+					q(70420, {	-- Dragonrider Racing - Fen Flythrough
+						["coord"] = { 86.2, 35.8, OHNAHRAN_PLAINS }
+					}),
 					q(70423, {	-- Dragonrider Racing - Maruukai Dash
 						["coord"] = { 59.8, 35.4, OHNAHRAN_PLAINS },
 					}),
@@ -68,12 +75,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					q(70419, {	-- Dragonrider Racing - Sundapple Copse Circuit
 						["coord"] = { 63.8, 30.4, OHNAHRAN_PLAINS }
 					}),
-					-- Unconfirmed
-					--[[
-					q(70420, {	-- Dragonrider Racing - Fen Flythrough
-						["coord"] = { 86.2, 35.8, OHNAHRAN_PLAINS }
-					}),
-					--]]
 
 						-- The Azure Span --
 					q(70430, {	-- Dragonrider Racing - Archive Ambit

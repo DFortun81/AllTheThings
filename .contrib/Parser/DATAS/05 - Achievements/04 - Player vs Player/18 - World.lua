@@ -119,10 +119,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		a(ach(13402)),		-- Frontline Slayer
 		h(ach(13403)),		-- Frontline Slayer
 		ach(13317),		-- Supplied and Ready
-		ach(14511),		-- Tour of Duty: Ardenweald
-		ach(14514),		-- Tour of Duty: Bastion
 		ach(14513),		-- Tour of Duty: Maldraxxus
-		ach(14512),		-- Tour of Duty: Revendreth
 		ach(14515, {	-- Zo'Sorg's Bidding
 			crit(1, {	-- Express Dominance
 				["_quests"] = { 59658 },	-- Express Dominance

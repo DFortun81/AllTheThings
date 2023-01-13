@@ -518,6 +518,7 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.PROFILE_COPY_TOOLTIP = "Скопировать Выделенный Профиль в Текущий Профиль";
 		L.PROFILE_DELETE_TOOLTIP = "Удалить Выделенный Профиль";
 		L.PROFILE_SWITCH_TOOLTIP = "Установить Выделенный Профиль как Текущий Профиль\n\nИли кликните на Профиль с зажатым "..SHIFT_KEY_TEXT.."";
+		L.SHOW_PROFILE_LOADED = "Показывать Текущий Профиль после загрузки и после смены Профиля";
 
 	-- Sync tab
 		L.SYNC = "Синхронизация";
@@ -810,15 +811,12 @@ for key,value in pairs({
 		[-910] = "Охота: пожиратели душ",							-- Hunt: Alpha Devourers
 		[-911] = "Охота: темные гончие",							-- Hunt: Shadehounds
 		[-912] = "Охота: крылатые пожиратели душ",					-- Hunt: Winged Soul Eaters
-		[-913] = "Мучители из Торгаста",							-- Tormentors of Torghast
-		[-977] = "Маэли Странница",									-- Maelie the Wanderer
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Улучшения для Обители",							-- Sanctum Upgrades
 		[-924] = "Транспортная Сеть",								-- Transport Network
 		-- SL Ardenweald/Night Fae
 			[-936] = "Формы души",									-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			[-940] = "Совет перерожденных",							-- Ascended Counil
 			[-973] = "Верность",									-- Loyalty
 			[-975] = "Смирение",									-- Humility
 		-- SL Revendreth/Venthyr
@@ -853,6 +851,7 @@ for key,value in pairs({
 		[-1131] = "Искарское рыболовство",							-- Iskaara Fishing
 		[-1140] = "Союз Вальдраккена",								-- Valdrakken Accord
 		[-1142] = "Воздушные испытания",							-- Aerial Challenges
+		[-1143] = "Редкие каждые 2 часа",							-- Every 2 Hours Rare
 	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",
 		[-2201] = "Странник и змей",
@@ -3184,6 +3183,8 @@ for key,value in pairs({
 	[364932] = "Полыхающий слиток",	-- Blazing Ingot
 	[364937] = "Фазовый вытягиватель",	-- Phasic Siphoner
 	[364987] = "Журнал брокера",	-- Broker Journal
+	[364994] = "Призрачная кирка",	-- Spectral Pick
+	[365084] = "Пика истязателя",	-- Tormentor's Pike
 	[365093] = "Книга праздничных гимнов Теотара",	-- Theotar's Caroling Books
 	[368205] = "Тайник Верных Утробе",	-- Mawsworn Cache
 	[368206] = "Тайник Верных Утробе",	-- Mawsworn Cache
@@ -3414,13 +3415,18 @@ for key,value in pairs({
 	[377534] = "Доставленный сундук",	-- Delivered Vault
 	[377899] = "Скрытый заложник рогоплава",	-- Hidden Hornswog Hostage
 	[377900] = "Боевое копье клана Нокхуд",	-- Nokhud Warspear
+	[377938] = "Косяк призматического прыгуна",	-- Prismatic Leaper School
 	[378010] = "Забытое сокровище драконов",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "Отвар быстрины",	-- Riptide Brew
+	[378088] = "Кристаллический цветок",	-- Crystalline Flower
 	[378820] = "Искрометный пунш",	-- Popfizz Punch
 	[378857] = "Потерянный обсидиановый тайник",	-- Lost Obsidian Cache
+	--TODO: [379168] = "Lost Cache Key",	-- Lost Cache Key
 	[379290] = "Украшенная узорами статуя",	-- Ornamented Statue
 	[379296] = "Сломанная окантовка",	-- Broken Banding
 	[379297] = "Пойло \"Бадабум\"",	-- Slam Bam Swill
+	[379314] = "Полная сеть",	-- Full Fishing Net
 	[379321] = "Таинственный след лапы",	-- Mysterious Paw Print
 	[380429] = "Золотой коготь",	-- Golden Claw
 	[380430] = "Фрагмент хвоста",	-- Tail Fragment
@@ -3496,6 +3502,7 @@ for key,value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "Великое хранилище",	-- The Great Vault
 	[381045] = "Золотой драконий кубок",	-- Golden Dragon Goblet
+	[381069] = "Полная сеть",	-- Full Fishing Net
 	[381094] = "Элегантная кисть",	-- Elegant Canvas Brush
 	[381107] = "Кучка песка",	-- Sand Pile
 	[381108] = "Карта Йенну",	-- Yennu's Map
@@ -3542,11 +3549,14 @@ for key,value in pairs({
 	[381701] = "Разыскивается: Мара'нар Громогласный",	-- WANTED: Mara'nar the Thunderous
 	[381981] = "Сундук Прилива",	-- Chest of the Flood
 	[382029] = "Потревоженная почва",	-- Disturbed Dirt
+	[382071] = "Полная сеть",	-- Full Fishing Net
 	[382166] = "Рубиновый Пир!",	-- The Ruby Feast!
+	[382180] = "Перегретый пруд лавазубов",	-- Overheated Magma Thresher Pool
 	[382193] = "Сундук стихий",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Ящик свежих блескорыбок",	-- Case of Fresh Gleamfish
 	[384318] = "Непримечательная закладка",	-- Inconspicuous Bookmark
+	[384370] = "Нарочито непристойные записи",	-- Deliberately Delinquent Notes
 	[384405] = "Наполовину сваренная рыба",	-- Half-Boiled Fish
 	[385001] = "Пустой бочонок для рыбы",	-- Empty Fish Barrel
 	[385021] = "Окаменевшее яйцо дракона",	-- Petrified Dragon Egg

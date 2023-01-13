@@ -4,7 +4,7 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
 		n(QUESTS, {
-			n(CAMPAIGN, {
+			header(HEADERS.Achievement, 15394, {	-- Ohn'a'Roll
 					-- Chapter 1 --
 				q(65795, {	-- Next Steppes
 					["sourceQuests"] = { 65794 },	-- A Change of Care
@@ -110,11 +110,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["sourceQuests"] = { 66848 },	-- Omens on the Wind
 					["provider"] = { "n", 181217 },	-- Sansok Khan
 					["coord"] = { 70.0, 38.0, OHNAHRAN_PLAINS },
-					["g"] = {
-						crit(1, {	-- Into the Plains
-							["achievementID"] = 15394,	-- Ohn'a'Roll
-						}),
-					},
 				}),
 
 					-- Chapter 2 --
@@ -209,11 +204,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 					["provider"] = { "n", 181198 },	-- Khanam Matra Sarest
 					["coord"] = { 60.3,38.0, OHNAHRAN_PLAINS },
-					["g"] = {
-						crit(2, {	-- Maruukai
-							["achievementID"] = 15394,	-- Ohn'a'Roll
-						}),
-					},
 				}),
 
 					-- Chapter 3 --
@@ -302,9 +292,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 61.4, 62.8, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197846),	-- Ohn'ahra's Carving
-						crit(3, {	-- Ohn'ahra's Blessing
-							["achievementID"] = 15394,	-- Ohn'a'Roll
-						}),
 					},
 				}),
 
@@ -395,9 +382,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["g"] = {
 						i(197672),	-- Emerald Shroud of Loyalty
 						i(197375),	-- Renewed Proto-Drake: Curled Horns (DM!)
-						crit(4, {	-- Bonds Renewed
-							["achievementID"] = 15394,	-- Ohn'a'Roll
-						}),
 					},
 				}),
 			}),
@@ -461,9 +445,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 61.2, 40.0, OHNAHRAN_PLAINS },
 						["g"] = {
 							i(198537),	-- Taivan's Trumpet (TOY!)
-							crit(1, {	-- Taivan's Purpose
-								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-							}),
 						},
 					}),
 				},
@@ -515,9 +496,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(200275),	-- Geyserwalker Sandals
 							i(200272),	-- Keratin-Reinforced Boots
 							i(200274),	-- Spearbreaker Footguards
-							crit(2, {	-- Initiate's Day Out
-								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-							}),
 						},
 					}),
 				},
@@ -585,9 +563,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["coord"] = { 24.4, 64.0, OHNAHRAN_PLAINS },
 						["g"] = {
 							i(199693),	-- Memory of Ysera
-							crit(3, {	-- Lilac Ramble
-								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-							}),
 						},
 					}),
 				},
@@ -644,9 +619,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(197887),	-- Geyserwalker Bindings
 							i(197896),	-- Keratin-Reinforced Wristguards
 							i(197901),	-- Spearbreaker Vambraces
-							crit(4, {	-- Pinewood Post
-								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-							}),
 						},
 					}),
 				},
@@ -792,11 +764,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["sourceQuests"] = { 65952 },	-- A Chief of Legends
 						["provider"] = { "n", 186649 },	-- Khasar
 						["coord"] = { 83.4, 32.3, OHNAHRAN_PLAINS },
-						["g"] = {
-							crit(7, {	-- Mudfin Village
-								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-							}),
-						},
 					}),
 					q(66005, {	-- Medallion of a Fallen Friend
 						["sourceQuests"] = { 65950 },	-- Thieving Gorlocs
@@ -869,42 +836,118 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						["g"] = {
 							i(200278),	-- Drake Archaeologist's Shawl
 							i(197407),	-- Renewed Proto-Drake: Spiked Throat (DM!)
-							crit(8, {	-- Nelthazan Ruins
-								["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-							}),
 							i(198354),	-- The Black Locus
 						},
 					}),
 				},
 			}),
-				-- The Wedding --
-			q(70739, {	-- Bloodlines, Sweets, and Teraai
-				["sourceQuests"] = { 65806 },	-- Maruukai
-				["provider"] = { "n", 191924 },	-- Hunter Narman
-				["coord"] = { 63.6, 40.5, OHNAHRAN_PLAINS },
-				["cost"] = { { "i", 199918, 1 }, },	-- 1x Honey Plum Tart
+			header(HEADERS.Item, 192799, {	-- Lizi, Thunderspine Tramper
+				q(71196, {	-- To Tame A Thunderspine
+					["minReputation"] = { 2503, 19 },	-- Maruuk Centaur Renown 19
+					["sourceQuests"] = { 66676 },	-- Sneaking In
+					["provider"] = { "n", 190014 },	-- Initiate Radiya
+					["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
+					["cost"] = {
+						{ "c", DRAGON_SUPPLIES, 150 },
+						{ "i", 192615, 20 },	-- 20xFluorescent Fluid
+					},
+				}),
+				q(71197, {	-- To Tame A Thunderspine
+					["sourceQuests"] = { 71196 },	-- To Tame A Thunderspine
+					["provider"] = { "n", 190014 },	-- Initiate Radiya
+					["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
+					["cost"] = {
+						{ "c", DRAGON_SUPPLIES, 150 },
+						{ "i", 192658, 20 },	-- 20xHigh-Fiber Leaf
+					},
+				}),
+				q(71198, {	-- To Tame A Thunderspine
+					["sourceQuests"] = { 71197 },	-- To Tame A Thunderspine
+					["provider"] = { "n", 190014 },	-- Initiate Radiya
+					["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
+					["cost"] = {
+						{ "c", DRAGON_SUPPLIES, 150 },
+						{ "i", 194966, 10 },	-- 10xThousandbite Piranha
+					},
+				}),
+				q(71199, {	-- To Tame A Thunderspine
+					["sourceQuests"] = { 71197 },	-- To Tame A Thunderspine
+					["provider"] = { "n", 190014 },	-- Initiate Radiya
+					["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
+					["cost"] = {
+						{ "c", DRAGON_SUPPLIES, 150 },
+						{ "i", 192636, 20 },	-- 10xWoolly Mountain Pelt
+					},
+				}),
+				q(71195, {	-- To Tame A Thunderspine
+					["sourceQuests"] = { 71199 },	-- To Tame A Thunderspine
+					["provider"] = { "n", 190014 },	-- Initiate Radiya
+					["coord"] = { 57.7, 72.3, OHNAHRAN_PLAINS },
+					["cost"] = {
+						{ "c", DRAGON_SUPPLIES, 150 },
+						{ "i", 200598, 1 },	-- 1xMeluun's Green Curry
+					},
+				}),
+				q(71209, {	-- Beast of the Plains
+					["sourceQuests"] = { 71195 },	-- To Tame A Thunderspine
+					["provider"] = { "n", 190014 },	-- Initiate Radiya
+					["coord"] = { 57.7, 72.3, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(192799),	-- Lizi, Thunderspine Tramper (MOUNT!)
+					},
+				}),
 			}),
-			q(70730, {	-- Shikaar Giver
-				["sourceQuests"] = { 65806 },	-- Maruukai
-				["provider"] = { "n", 190192 },	-- Windsage Dawa
-				["coord"] = { 62.8, 35.4, OHNAHRAN_PLAINS },
-				["cost"] = { { "i", 199919, 1 }, },	-- 1x Yak Milk Pudding
+			header(HEADERS.Item, 193484, {	-- Pilot
+				q(70062, {	-- Some Call Me Bug Catcher
+					["sourceQuests"] = { 70220 },	-- Shady Sanctuary
+					["provider"] = { "n", 186503 },	-- Gracus
+					["coord"] = { 30.7, 58.0, OHNAHRAN_PLAINS },	-- Is Moving
+				}),
+				q(70069, {	-- Others Call Me Duck Herder
+					["sourceQuests"] = { 70062 },	-- Some Call Me Bug Catcher
+					["provider"] = { "n", 186503 },	-- Gracus
+					["coord"] = { 30.7, 58.0, OHNAHRAN_PLAINS },	-- Is Moving
+				}),
+				q(70070, {	-- But... I Am the Hero of Ducks
+					["sourceQuests"] = { 70069 },	-- Others Call Me Duck Herder
+					["provider"] = { "n", 186503 },	-- Gracus
+					["coord"] = { 30.7, 58.0, OHNAHRAN_PLAINS },	-- Is Moving
+					["g"] = {
+						i(193484),	-- Pilot (PET!)
+					},
+				}),
 			}),
-			q(70721, {	-- After My Ohn Heart
-				["sourceQuests"] = {
-					70739,	-- Bloodlines, Sweets, and Teraai
-					70730,	-- Shikaar Giver
-				},
-				["provider"] = { "n", 190192 },	-- Windsage Dawa
-				["coord"] = { 62.8, 35.4, OHNAHRAN_PLAINS },
-				["g"] = {
-					i(198105),	-- Recipe: Celebratory Cake (RECIPE!)
-					i(200597),	-- Lover's Bouquet (TOY!)
-				},
+			header(HEADERS.Item, 200597, {	-- Lover's Bouquet
+				q(70739, {	-- Bloodlines, Sweets, and Teraai
+					["sourceQuests"] = { 65806 },	-- Maruukai
+					["provider"] = { "n", 191924 },	-- Hunter Narman
+					["coord"] = { 63.6, 40.5, OHNAHRAN_PLAINS },
+					["cost"] = { { "i", 199918, 1 }, },	-- 1x Honey Plum Tart
+				}),
+				q(70730, {	-- Shikaar Giver
+					["sourceQuests"] = { 65806 },	-- Maruukai
+					["provider"] = { "n", 190192 },	-- Windsage Dawa
+					["coord"] = { 62.8, 35.4, OHNAHRAN_PLAINS },
+					["cost"] = { { "i", 199919, 1 }, },	-- 1x Yak Milk Pudding
+				}),
+				q(70721, {	-- After My Ohn Heart
+					["sourceQuests"] = {
+						70739,	-- Bloodlines, Sweets, and Teraai
+						70730,	-- Shikaar Giver
+					},
+					["provider"] = { "n", 190192 },	-- Windsage Dawa
+					["coord"] = { 62.8, 35.4, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(198105),	-- Recipe: Celebratory Cake (RECIPE!)
+						i(200597),	-- Lover's Bouquet (TOY!)
+					},
+				}),
 			}),
 
 				-- Fields of Ferocity --
 			q(70444, {	-- The Fields of Ferocity
+				-- TODO: add magic alt-unlock quest
+				["sourceQuestNumRequired"] = 1,
 				["sourceQuests"] = { 65806 },	-- Maruukai
 				["provider"] = { "o", 380902 },	-- Fields of Ferocity
 				["coord"] = { 62.3, 42.3, OHNAHRAN_PLAINS },
@@ -952,26 +995,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 
-				-- The Hero of Ducks --
-			q(70062, {	-- Some Call Me Bug Catcher
-				["sourceQuests"] = { 70220 },	-- Shady Sanctuary
-				["provider"] = { "n", 186503 },	-- Gracus
-				["coord"] = { 30.7, 58.0, OHNAHRAN_PLAINS },	-- Is Moving
-			}),
-			q(70069, {	-- Others Call Me Duck Herder
-				["sourceQuests"] = { 70062 },	-- Some Call Me Bug Catcher
-				["provider"] = { "n", 186503 },	-- Gracus
-				["coord"] = { 30.7, 58.0, OHNAHRAN_PLAINS },	-- Is Moving
-			}),
-			q(70070, {	-- But... I Am the Hero of Ducks
-				["sourceQuests"] = { 70069 },	-- Others Call Me Duck Herder
-				["provider"] = { "n", 186503 },	-- Gracus
-				["coord"] = { 30.7, 58.0, OHNAHRAN_PLAINS },	-- Is Moving
-				["g"] = {
-					i(193484),	-- Pilot (PET!)
-				},
-			}),
-
 				-- MISC --
 			q(70155, {	-- Look, Listen, and Breathe
 				["provider"] = { "n", 194282 },	-- Threshrak
@@ -1011,9 +1034,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["provider"] = { "i", 200876 },	-- Yennu's Toy Boat
 				["coord"] = { 52.0, 58.3, OHNAHRAN_PLAINS },
 				["g"] = {
-					crit(6, {	-- Tuskarr Toy Boat
-						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
-					}),
 					i(200878),	-- Wheeled Floaty Boaty Controller (TOY!)
 				},
 			}),
@@ -1031,65 +1051,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["g"] = {
 					i(198821),	-- Divine Kiss of Ohn'ahra (MOUNT!)
 				},
-			}),
-			q(71196, {	-- To Tame A Thunderspine
-				["minReputation"] = { 2503, 19 },	-- Maruuk Centaur Renown 19
-				["sourceQuests"] = { 66676 },	-- Sneaking In
-				["provider"] = { "n", 190014 },	-- Initiate Radiya
-				["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
-				["cost"] = {
-					{ "c", DRAGON_SUPPLIES, 150 },
-					{ "i", 192615, 20 },	-- 20xFluorescent Fluid
-				},
-			}),
-			q(71197, {	-- To Tame A Thunderspine
-				["sourceQuests"] = { 71196 },	-- To Tame A Thunderspine
-				["provider"] = { "n", 190014 },	-- Initiate Radiya
-				["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
-				["cost"] = {
-					{ "c", DRAGON_SUPPLIES, 150 },
-					{ "i", 192658, 20 },	-- 20xHigh-Fiber Leaf
-				},
-			}),
-			q(71198, {	-- To Tame A Thunderspine
-				["sourceQuests"] = { 71197 },	-- To Tame A Thunderspine
-				["provider"] = { "n", 190014 },	-- Initiate Radiya
-				["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
-				["cost"] = {
-					{ "c", DRAGON_SUPPLIES, 150 },
-					{ "i", 194966, 10 },	-- 10xThousandbite Piranha
-				},
-			}),
-			q(71199, {	-- To Tame A Thunderspine
-				["sourceQuests"] = { 71197 },	-- To Tame A Thunderspine
-				["provider"] = { "n", 190014 },	-- Initiate Radiya
-				["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
-				["cost"] = {
-					{ "c", DRAGON_SUPPLIES, 150 },
-					{ "i", 192636, 20 },	-- 10xWoolly Mountain Pelt
-				},
-			}),
-			q(71195, {	-- To Tame A Thunderspine
-				["sourceQuests"] = { 71199 },	-- To Tame A Thunderspine
-				["provider"] = { "n", 190014 },	-- Initiate Radiya
-				["coord"] = { 57.7, 72.3, OHNAHRAN_PLAINS },
-				["cost"] = {
-					{ "c", DRAGON_SUPPLIES, 150 },
-					{ "i", 200598, 1 },	-- 1xMeluun's Green Curry
-				},
-			}),
-			q(71209, {	-- Beast of the Plains
-				["sourceQuests"] = { 71195 },	-- To Tame A Thunderspine
-				["provider"] = { "n", 190014 },	-- Initiate Radiya
-				["coord"] = { 57.7, 72.3, OHNAHRAN_PLAINS },
-				["g"] = {
-					i(192799),	-- Lizi, Thunderspine Tramper (MOUNT!)
-				},
-			}),
-			q(72486, {	-- The Azure Span Advanced Tour
-				["sourceQuests"] = { 72484 },	-- The Ohn'ahran Plains Advanced Tour
-				["provider"] = { "n", 199118 },	-- Celormu
-				["coord"] = { 88, 36.2, OHNAHRAN_PLAINS },
 			}),
 			q(70766, {	-- The Fractured Flame
 				["sourceQuests"] = { 70507 },	-- The Insight of Tyr
@@ -1137,6 +1098,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["provider"] = { "n", 193153 },	-- Ripsaw the Stalker
 					["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
 				}),
+				q(69878, {	-- Ronsak the Decimator
+					["provider"] = { "n", 193227 },	-- Ronsak the Decimator
+					["coord"] = { 43.3, 55.2, OHNAHRAN_PLAINS },
+				}),
 				q(70783, {	-- Skaara
 					["provider"] = { "n", 192949 },	-- Skaara
 					["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
@@ -1178,154 +1143,151 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 30.3, 62.1, OHNAHRAN_PLAINS },
 				}),
 			}),
-			ach(15941, {	-- Dragon Racing Completionist: Gold
-				["collectible"] = false,
-				["g"] = {
-					q(66885, {	-- Emerald Garden Ascent
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 191247 },	-- Bronze Timekeeper
-						["coord"] = { 25.7, 55.1, OHNAHRAN_PLAINS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15775),	-- Emerald Garden Ascent: Bronze
-							ach(15776),	-- Emerald Garden Ascent: Silver
-							ach(15777),	-- Emerald Garden Ascent: Gold
-						},
-					}),
-					q(66886, {	-- Emerald Garden Ascent - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 191247 },	-- Bronze Timekeeper
-						["coord"] = { 25.7, 55.1, OHNAHRAN_PLAINS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15778),	-- Emerald Garden Ascent Advanced: Bronze
-							ach(15779),	-- Emerald Garden Ascent Advanced: Silver
-							ach(15780),	-- Emerald Garden Ascent Advanced: Gold
-						},
-					}),
-					q(66877, {	-- Fen Flythrough
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 191121 },	-- Bronze Timekeeper
-						["coord"] = { 86.3, 35.8, OHNAHRAN_PLAINS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15763),	-- Fen Flythrough: Bronze
-							ach(15764),	-- Fen Flythrough: Silver
-							ach(15765),	-- Fen Flythrough: Gold
-						},
-					}),
-					q(66878, {	-- Fen Flythrough - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 191121 },	-- Bronze Timekeeper
-						["coord"] = { 86.3, 35.8, OHNAHRAN_PLAINS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15766),	-- Fen Flythrough Advanced: Bronze
-							ach(15767),	-- Fen Flythrough Advanced: Silver
-							ach(15768),	-- Fen Flythrough Advanced: Gold
-						},
-					}),
-					q(66921, {	-- Maruukai Dash
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 191422 },	-- Bronze Timekeeper
-						["coord"] = { 59.9, 35.6, OHNAHRAN_PLAINS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15782),	-- Maruukai Dash: Bronze
-							ach(15783),	-- Maruukai Dash: Silver
-							ach(15784),	-- Maruukai Dash: Gold
-						},
-					}),
-					q(66933, {	-- Mirror of Sky Dash
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 191511 },	-- Bronze Timekeeper
-						["coord"] = { 47.5, 70.6, OHNAHRAN_PLAINS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15785),	-- Mirror of the Sky Dash: Bronze
-							ach(15786),	-- Mirror of the Sky Dash: Silver
-							ach(15787),	-- Mirror of the Sky Dash: Gold
-						},
-					}),
-					q(66880, {	-- Ravine River Run
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 191165 },	-- Bronze Timekeeper
-						["coord"] = { 80.9, 72.2, OHNAHRAN_PLAINS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15769),	-- Ravine River Run: Bronze
-							ach(15770),	-- Ravine River Run: Silver
-							ach(15771),	-- Ravine River Run: Gold
-						},
-					}),
-					q(66881, {	-- Ravine River Run - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 191165 },	-- Bronze Timekeeper
-						["coord"] = { 80.9, 72.2, OHNAHRAN_PLAINS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15772),	-- Ravine River Run Advanced: Bronze
-							ach(15773),	-- Ravine River Run Advanced: Silver
-							ach(15774),	-- Ravine River Run Advanced: Gold
-						},
-					}),
-					q(70710, {	-- River Rapids Route
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 196092 },	-- Bronze Timekeeper
-						["coord"] = { 43.8, 66.8, OHNAHRAN_PLAINS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(16302),	-- River Rapids Route: Bronze
-							ach(16303),	-- River Rapids Route: Silver
-							ach(16304),	-- River Rapids Route: Gold
-						},
-					}),
-					q(70711, {	-- River Rapids Route - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 196092 },	-- Bronze Timekeeper
-						["coord"] = { 43.8, 66.8, OHNAHRAN_PLAINS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(16305),	-- River Rapids Route Advanced: Bronze
-							ach(16306),	-- River Rapids Route Advanced: Silver
-							ach(16307),	-- River Rapids Route Advanced: Gold
-						},
-					}),
-					q(66835, {	-- Sundapple Copse Circuit
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190928 },	-- Bronze Timekeeper
-						["coord"] = { 63.7, 30.5, OHNAHRAN_PLAINS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15757),	-- Sundapple Copse Circuit: Bronze
-							ach(15758),	-- Sundapple Copse Circuit: Silver
-							ach(15759),	-- Sundapple Copse Circuit: Gold
-						},
-					}),
-					q(66836, {	-- Sundapple Copse Circuit - Advanced
-						["sourceQuests"] = { 68795 },	-- Dragonriding
-						["provider"] = { "n", 190928 },	-- Bronze Timekeeper
-						["coord"] = { 63.7, 30.5, OHNAHRAN_PLAINS },
-						["repeatable"] = true,
-						["g"] = {
-							i(191140),	-- Bronze Timepiece
-							ach(15760),	-- Sundapple Copse Circuit Advanced: Bronze
-							ach(15761),	-- Sundapple Copse Circuit Advanced: Silver
-							ach(15762),	-- Sundapple Copse Circuit Advanced: Gold
-						},
-					}),
-				},
+			header(HEADERS.Achievement, 15941, {	-- Dragon Racing Completionist: Gold
+				q(66885, {	-- Emerald Garden Ascent
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 191247 },	-- Bronze Timekeeper
+					["coord"] = { 25.7, 55.1, OHNAHRAN_PLAINS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15775),	-- Emerald Garden Ascent: Bronze
+						ach(15776),	-- Emerald Garden Ascent: Silver
+						ach(15777),	-- Emerald Garden Ascent: Gold
+					},
+				}),
+				q(66886, {	-- Emerald Garden Ascent - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 191247 },	-- Bronze Timekeeper
+					["coord"] = { 25.7, 55.1, OHNAHRAN_PLAINS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15778),	-- Emerald Garden Ascent Advanced: Bronze
+						ach(15779),	-- Emerald Garden Ascent Advanced: Silver
+						ach(15780),	-- Emerald Garden Ascent Advanced: Gold
+					},
+				}),
+				q(66877, {	-- Fen Flythrough
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 191121 },	-- Bronze Timekeeper
+					["coord"] = { 86.3, 35.8, OHNAHRAN_PLAINS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15763),	-- Fen Flythrough: Bronze
+						ach(15764),	-- Fen Flythrough: Silver
+						ach(15765),	-- Fen Flythrough: Gold
+					},
+				}),
+				q(66878, {	-- Fen Flythrough - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 191121 },	-- Bronze Timekeeper
+					["coord"] = { 86.3, 35.8, OHNAHRAN_PLAINS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15766),	-- Fen Flythrough Advanced: Bronze
+						ach(15767),	-- Fen Flythrough Advanced: Silver
+						ach(15768),	-- Fen Flythrough Advanced: Gold
+					},
+				}),
+				q(66921, {	-- Maruukai Dash
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 191422 },	-- Bronze Timekeeper
+					["coord"] = { 59.9, 35.6, OHNAHRAN_PLAINS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15782),	-- Maruukai Dash: Bronze
+						ach(15783),	-- Maruukai Dash: Silver
+						ach(15784),	-- Maruukai Dash: Gold
+					},
+				}),
+				q(66933, {	-- Mirror of Sky Dash
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 191511 },	-- Bronze Timekeeper
+					["coord"] = { 47.5, 70.6, OHNAHRAN_PLAINS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15785),	-- Mirror of the Sky Dash: Bronze
+						ach(15786),	-- Mirror of the Sky Dash: Silver
+						ach(15787),	-- Mirror of the Sky Dash: Gold
+					},
+				}),
+				q(66880, {	-- Ravine River Run
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 191165 },	-- Bronze Timekeeper
+					["coord"] = { 80.9, 72.2, OHNAHRAN_PLAINS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15769),	-- Ravine River Run: Bronze
+						ach(15770),	-- Ravine River Run: Silver
+						ach(15771),	-- Ravine River Run: Gold
+					},
+				}),
+				q(66881, {	-- Ravine River Run - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 191165 },	-- Bronze Timekeeper
+					["coord"] = { 80.9, 72.2, OHNAHRAN_PLAINS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15772),	-- Ravine River Run Advanced: Bronze
+						ach(15773),	-- Ravine River Run Advanced: Silver
+						ach(15774),	-- Ravine River Run Advanced: Gold
+					},
+				}),
+				q(70710, {	-- River Rapids Route
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 196092 },	-- Bronze Timekeeper
+					["coord"] = { 43.8, 66.8, OHNAHRAN_PLAINS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(16302),	-- River Rapids Route: Bronze
+						ach(16303),	-- River Rapids Route: Silver
+						ach(16304),	-- River Rapids Route: Gold
+					},
+				}),
+				q(70711, {	-- River Rapids Route - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 196092 },	-- Bronze Timekeeper
+					["coord"] = { 43.8, 66.8, OHNAHRAN_PLAINS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(16305),	-- River Rapids Route Advanced: Bronze
+						ach(16306),	-- River Rapids Route Advanced: Silver
+						ach(16307),	-- River Rapids Route Advanced: Gold
+					},
+				}),
+				q(66835, {	-- Sundapple Copse Circuit
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190928 },	-- Bronze Timekeeper
+					["coord"] = { 63.7, 30.5, OHNAHRAN_PLAINS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15757),	-- Sundapple Copse Circuit: Bronze
+						ach(15758),	-- Sundapple Copse Circuit: Silver
+						ach(15759),	-- Sundapple Copse Circuit: Gold
+					},
+				}),
+				q(66836, {	-- Sundapple Copse Circuit - Advanced
+					["sourceQuests"] = { 68795 },	-- Dragonriding
+					["provider"] = { "n", 190928 },	-- Bronze Timekeeper
+					["coord"] = { 63.7, 30.5, OHNAHRAN_PLAINS },
+					["repeatable"] = true,
+					["g"] = {
+						i(191140),	-- Bronze Timepiece
+						ach(15760),	-- Sundapple Copse Circuit Advanced: Bronze
+						ach(15761),	-- Sundapple Copse Circuit Advanced: Silver
+						ach(15762),	-- Sundapple Copse Circuit Advanced: Gold
+					},
+				}),
 			}),
 		}),
 	}),
@@ -1335,12 +1297,14 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIME
 	m(OHNAHRAN_PLAINS, {
 		q(73701),	-- triggered during 'Unwelcome Outsider' (66021)
 		q(71203),	-- daily lockout for 'To Tame A Thunderspine' series
-
-
+		q(70749),	-- triggered when looting the talisman off windsage garuman
+		q(70505),	-- triggered when talking to Tigari Khan after looting the talisman off windsage garuman
+		q(72064),	-- triggered when receiving toy from Yennu
 		q(66887),	-- Choose Trophy from First Hunt (Renewal of Vows 66783)
 		q(66888),	-- Choose Blood (Renewal of Vows 66783)
 		q(66889),	-- Choose Eagle Feather (Renewal of Vows 66783)
 		q(69867),	-- Stay and Listen Merithra 18.7,51.6 (LQ 70928)
+		q(66512),	-- triggered when talking to Hunter Zaya and giving her Sarnai's Collar
 		-- Achievement Honor Our Ancestors
 		q(71167),	-- Maruukai Ancestor
 		q(71168),	-- Timberstep Outpost Ancestor

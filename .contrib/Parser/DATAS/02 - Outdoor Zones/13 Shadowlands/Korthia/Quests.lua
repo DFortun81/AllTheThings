@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	m(KORTHIA, {
 		n(QUESTS, {
 			n(REWARDS, {
@@ -84,258 +83,747 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					i(187184),	-- Vesper of Clarity (TOY!)
 				},
 			}),
-			q(63672, {	-- A Cry From the Heart
-				["sourceQuests"] = { 63656 },	-- The Meaning of Wrath
-				["description"] = "Requires Renown 52.",
-				["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
-				["coord"] = { 63.4, 24.6, KORTHIA },
-				["maps"] = { ARDENWEALD },
+			header(HEADERS.Achievement, 14961, {	-- Chains of Domination
+				q(63944, {	-- Korthia Awaits
+					["description"] = "Only available to characters who choose to skip ahead to Korthia.",
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 40.3, 67.9, ORIBOS },	-- Ring of Fates
+					["isBreadcrumb"] = true,
+				}),
+					-- Chapter 1 --
+				q(63576, {	-- The First Move
+					["sourceQuests"] = { 62569 },	-- The Jailer's Grasp
+				}),
+				q(63856, {	-- A Gathering of Covenants
+					["sourceQuests"] = { 63576 },	-- The First Move
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.2, 69.4, ORIBOS },
+				}),
+				q(63857, {	-- Voices of the Eternal
+					["sourceQuests"] = { 63856 },	-- A Gathering of Covenants
+					["provider"] = { "n", 159475 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 50.5, 45.1, 1673 },	-- The Crucible
+				}),
+				q(63578, {	-- The Battle of Ardenweald
+					["sourceQuests"] = { 63857 },	-- Voices of the Eternal
+					["provider"] = { "n", 177141 },	-- Lady Moonberry
+					["coord"] = { 40.9, 66.2, ORIBOS },
+					["maps"] = { 2005 },	-- Ardenweald (Scenario Map)
+					["g"] = {
+						i(179498),	-- Faesworn Barb
+						i(179564),	-- Faesworn Channeling Root
+						i(179515),	-- Faesworn Falchion
+						i(182322),	-- Faesworn Gavel
+						i(179511),	-- Faesworn Glaive
+						i(179531),	-- Faesworn Reaper
+						i(182323),	-- Faesworn Spellblade
+						i(179583),	-- Faesworn Warbow
+						i(179546),	-- Faesworn Warclub
+						i(179536),	-- Faesworn Warmaul
+					},
+				}),
+				q(63638, {	-- Can't Turn Our Backs
+					["sourceQuests"] = { 63578 },	-- The Battle of Ardenweald
+					["provider"] = { "n", 177148 },	-- Lady Moonberry
+					["coord"] = { 48.7, 43.3, ARDENWEALD },
+				}),
+				q(63904, {	-- The Heart of Ardenweald
+					["sourceQuests"] = { 63638 },	-- Can't Turn Our Backs
+					["provider"] = { "n", 177460 },	-- Winter Queen
+					["coord"] = { 47.1, 48.5, ARDENWEALD },
+					["_drop"] = { "g" },	-- Anima Trash
+				}),
+				q(63639, {	-- Report to Oribos
+					["sourceQuests"] = { 63904 },	-- The Heart of Ardenweald
+					["provider"] = { "n", 177460 },	-- Winter Queen
+					["coord"] = { 47.1, 48.5, ARDENWEALD },
+				}),
+					-- Chapter 2 --
+				q(63660, {	-- Opening the Maw
+					["sourceQuests"] = { 63639 },	-- Report to Oribos
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.2, 69.4, ORIBOS },	-- Ring of Fates
+				}),
+				q(63661, {	-- Link to the Maw
+					["sourceQuests"] = { 63660 },	-- Opening the Maw
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.2, 69.4, ORIBOS },	-- Ring of Fates
+				}),
+				q(63662, {	-- Mysteries of the Maw
+					["sourceQuests"] = { 63661 },	-- Link to the Maw
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.7, THE_MAW },
+				}),
+				q(63663, {	-- Korthia, the City of Secrets
+					["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
+					["provider"] = { "n", 177202 },	-- Ve'nari
+					["coord"] = { 58.3, 14.3, KORTHIA },
+				}),
+				q(63994, {	-- Who is the Maw Walker?
+					["sourceQuests"] = { 63663 },	-- Korthia, the City of Secrets
+					["provider"] = { "n", 177227 },	-- Tal-Galan
+					["coord"] = { 63.8, 23.7, KORTHIA },
+				}),
+				q(63665, {	-- Opening to Oribos
+					["sourceQuests"] = { 63994 },	-- Who is the Maw Walker?
+					["provider"] = { "n", 177227 },	-- Tal-Galan
+					["coord"] = { 63.8, 23.7, KORTHIA },
+				}),
+				q(64007, {	-- Charge of the Covenants
+					["sourceQuests"] = { 63665 },	-- Opening to Oribos
+					["provider"] = { "n", 177230 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.5, 36.5, 1671 },	-- Ring of Transference
+				}),
+				q(64555, {	-- Surveying Secrets
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 62.8, 24.9, KORTHIA },
+				}),
+				q(64556, {	-- In Need of Assistance
+					["sourceQuests"] = { 64555 },	-- Surveying Secrets
+					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 62.8, 24.9, KORTHIA },
+					["_drop"] = { "g" },	-- Anima Trash
+					["g"] = {
+						i(187543),	-- Death's Advance War Chest
+					},
+				}),
+				q(64560, {	-- Anima Reclamation (Intro-Version)
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
+					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
+					["coord"] = { 61.8, 25.6, KORTHIA },
+				}),
+				q(64561, {	-- Observational Records (Intro-Version)
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["coord"] = { 64.6, 25.4, KORTHIA },
+				}),
+				q(64562, {	-- We Need a Healer - You! (Intro-Version)
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
+					["provider"] = { "n", 179216 },	-- Mikanikos
+					["coord"] = { 61.4, 23.2, KORTHIA },
+				}),
+					-- Chapter 3 --
+				q(63848, {	-- A Show of Gratitude
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 177927 },	-- Tal-Galan
+					["coord"] = { 62.7, 24.8, KORTHIA },
+				}),
+				q(63855, {	-- Ease of Passage
+					["sourceQuests"] = { 63848 },	-- A Show of Gratitude
+					["provider"] = { "n", 178470 },	-- Ve'nari
+					["coord"] = { 65.9, 23.0, KORTHIA },
+				}),
+				q(63895, {	-- Grab Bag
+					["sourceQuests"] = { 63855 },	-- Ease of Passage
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.7, THE_MAW },
+					["_drop"] = { "g" },	-- Anima Trash
+				}),
+				q(63849, {	-- Hearing Aid
+					["sourceQuests"] = { 63895 },	-- Grab Bag
+					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
+					["coord"] = { 61.6, 59.0, THE_MAW },
+				}),
+				q(63810, {	-- Birds of a Feather
+					["sourceQuests"] = { 63849 },	-- Hearing Aid
+					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
+					["coord"] = { 64.3, 50.6, THE_MAW },
+				}),
+				q(63754, {	-- The Caged Bird
+					["sourceQuests"] = { 63810 },	-- Birds of a Feather
+					["provider"] = { "n", 177597 },	-- Danica the Reclaimer
+					["coord"] = { 67.2, 55.7, THE_MAW },
+				}),
+				q(63764, {	-- Claim the Sky
+					["sourceQuests"] = { 63754 },	-- The Caged Bird
+					["provider"] = { "n", 177597 },	-- Danica the Reclaimer
+					["coord"] = { 67.0, 55.9, THE_MAW },
+					["maps"] = { 1971 },	-- Skyhold (Scenario Map)
+				}),
+				q(63811, {	-- A Hate, Hate Relationship
+					["sourceQuests"] = { 63764 },	-- Claim the Sky
+					["provider"] = { "n", 177603 },	-- Danica the Reclaimer
+					["coord"] = { 58.0, 58.8, 1971 },	-- Skyhold (Scenario Map)
+				}),
+				q(63831, {	-- Fury Given Voice
+					["sourceQuests"] = { 63811 },	-- A Hate, Hate Relationship
+					["provider"] = { "n", 177726 },	-- Odyn
+					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (Scenario Map)
+				}),
+				q(63844, {	-- The Chosen Few
+					["sourceQuests"] = { 63811 },	-- A Hate, Hate Relationship
+					["provider"] = { "n", 177726 },	-- Odyn
+					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (Scenario Map)
+				}),
+				q(63845, {	-- Wrath of Odyn
+					["sourceQuests"] = {
+						63831,	-- Fury Given Voice
+						63844,	-- The Chosen Few
+					},
+					["provider"] = { "n", 177726 },	-- Odyn
+					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (Scenario Map)
+				}),
+				q(64014, {	-- Mawsplaining
+					["sourceQuests"] = { 63845 },	-- Wrath of Odyn
+					["provider"] = { "n", 177726 },	-- Odyn
+					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (Scenario Map)
+				}),
+				q(63867, {	-- Anger Management
+					["sourceQuests"] = { 64014 },	-- Mawsplaining
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.7, THE_MAW },
+				}),
+				q(63896, {	-- Tears of the Damned
+					["sourceQuests"] = { 64014 },	-- Mawsplaining
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.7, THE_MAW },
+				}),
+				q(63901, {	-- Focusing the Eye
+					["sourceQuests"] = {
+						63867,	-- Anger Management
+						63896,	-- Tears of the Damned
+					},
+					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
+					["coord"] = { 37.4, 27.0, THE_MAW },
+				}),
+				q(63902, {	-- Good News, Everyone!
+					["sourceQuests"] = { 63901 },	-- Focusing the Eye
+					["provider"] = { "n", 178950 },	-- Danica
+					["coord"] = { 37.0, 19.3, THE_MAW },
+				}),
+					-- Chapter 4 --
+				q(63703, {	-- Vault of Secrets
+					["description"] = "Requires Renown 44 and completion of the original 9 chapters of your covenant's campaign.",
+					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
+					["provider"] = { "n", 177927 },	-- Tal-Galan
+					["coord"] = { 63.0, 24.8, KORTHIA },
+				}),
+				q(63706, {	-- Let the Anima Flow
+					["sourceQuests"] = { 63703 },	-- Vault of Secrets
+					["provider"] = { "n", 177449 },	-- Bonesmith Heirmir
+					["coord"] = { 57.2, 29.8, KORTHIA },
+				}),
+				q(63705, {	-- The Knowledge Keepers
+					["sourceQuests"] = { 63703 },	-- Vault of Secrets
+					["provider"] = { "n", 177423 },	-- Tal-Galan
+					["coord"] = { 57.4, 29.9, KORTHIA },
+				}),
+				q(63704, {	-- Vengeance for Korthia
+					["sourceQuests"] = { 63703 },	-- Vault of Secrets
+					["provider"] = { "n", 177423 },	-- Tal-Galan
+					["coord"] = { 57.4, 29.9, KORTHIA },
+				}),
+				q(63709, {	-- Secrets of the Vault
+					["sourceQuests"] = {
+						63706,	-- Let the Anima Flow
+						63705,	-- The Knowledge Keepers
+						63704,	-- Vengeance for Korthia
+					},
+					["provider"] = { "n", 177423 },	-- Tal-Galan
+					["coord"] = { 57.4, 29.8, KORTHIA },
+				}),
+				q(63710, {	-- The Anima Trail
+					["sourceQuests"] = { 63709 },	-- Secrets of the Vault
+					["provider"] = { "n", 177423 },	-- Tal-Galan
+					["coord"] = { 57.4, 29.8, KORTHIA },
+				}),
+				q(63711, {	-- Bone Tools
+					["sourceQuests"] = { 63710 },	-- The Anima Trail
+					["provider"] = { "n", 177452 },	-- Bonesmith Heirmir
+					["coord"] = { 34.9, 35.3, KORTHIA },
+				}),
+				q(63712, {	-- Lost Records
+					["sourceQuests"] = { 63710 },	-- The Anima Trail
+					["provider"] = { "n", 177451 },	-- Tal-Galan
+					["coord"] = { 34.9, 35.3, KORTHIA },
+				}),
+				q(63713, {	-- Hooking Over
+					["sourceQuests"] = {
+						63711,	-- Bone Tools
+						63712,	-- Lost Records
+					},
+					["provider"] = { "n", 177452 },	-- Bonesmith Heirmir
+					["coord"] = { 34.9, 35.3, KORTHIA },
+				}),
+				q(63714, {	-- To the Vault
+					["sourceQuests"] = { 63713 },	-- Hooking Over
+					["provider"] = { "n", 177451 },	-- Tal-Galan
+					["coord"] = { 34.9, 35.3, KORTHIA },
+				}),
+				q(63717, {	-- Defending the Vault
+					["sourceQuests"] = { 63714 },	-- To the Vault
+					["provider"] = { "n", 177459 },	-- Protector Kah-Rev
+					["coord"] = { 49.5, 65.0, KORTHIA },
+				}),
+				q(63722, {	-- Keepers of Korthia
+					["sourceQuests"] = { 63714 },	-- To the Vault
+					["providers"] = {
+						{ "n", 177459 },	-- Protector Kah-Rev
+						{ "n", 178640 },	-- Protector Kah-Rev (Follower)
+					},
+					["coord"] = { 49.5, 65.0, KORTHIA },
+				}),
+				q(63725, {	-- Into the Vault
+					["sourceQuests"] = {
+						63717,	-- Defending the Vault
+						63722,	-- Keepers of Korthia
+					},
+					["provider"] = { "n", 178676 },	-- Tal-Galan
+					["coord"] = { 50.2, 75.7, KORTHIA },
+					["maps"] = { 2008 },	-- Chamber of the Sigil
+				}),
+				q(63726, {	-- Untangling the Sigil
+					["sourceQuests"] = { 63725 },	-- Into the Vault
+					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 63.0, 25.6, KORTHIA },
+					["g"] = {
+						i(187218, {	-- Tome of Origins
+							recipe(352443, {	-- Vestige of Origins
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+							recipe(352445, {	-- Vestige of Origins
+								["requireSkill"] = TAILORING,
+							}),
+							recipe(352439, {	-- Vestige of Origins
+								["requireSkill"] = BLACKSMITHING,
+							}),
+							recipe(352444, {	-- Vestige of Origins
+								["requireSkill"] = LEATHERWORKING,
+							}),
+						}),
+					},
+				}),
+				q(63727, {	-- The Primus Returns
+					["sourceQuests"] = { 63726 },	-- Untangling the Sigil
+					["provider"] = { "n", 177569 },	-- The Primus
+					["coord"] = { 50.2, 58.4, 1912 },	-- The Runecarver's Oubliette
+					["g"] = {
+						i(185965, {	-- Memories of Sunless Skies
+							["questID"] = 63893,
+						}),
+					},
+				}),
+					-- Chapter 5 --
+				q(63612, {	-- The Chains of Command
+					["description"] = "Requires Renown 47.",
+					["sourceQuests"] = { 63727 },	-- The Primus Returns
+					["provider"] = { "n", 177194 },	-- The Primus
+					["coord"] = { 63.1, 25.3, KORTHIA },
+				}),
+				q(63615, {	-- Clip Their Wings
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+					["coord"] = { 62.8, 66.0, THE_MAW },
+				}),
+				q(63613, {	-- Gates of the Damned
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "n", 177560 },	-- Baroness Draka
+					["coord"] = { 62.8, 66.0, THE_MAW },
+				}),
+				q(63614, {	-- Weapon in Hand
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "n", 177589 },	-- Thrall
+					["coord"] = { 62.8, 66.0, THE_MAW },
+				}),
+				q(63616, {	-- A Job Done Right
+					["sourceQuests"] = {
+						63615,	-- Clip Their Wings
+						63613,	-- Gates of the Damned
+						63614,	-- Weapon in Hand
+					},
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+				}),
+				q(63617, {	-- Bending Bars
+					["sourceQuests"] = { 63616 },	-- A Job Done Right
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+					["coord"] = { 68.6, 52.9, THE_MAW },
+				}),
+				q(63619, {	-- Forsworn and Forgotten
+					["sourceQuests"] = { 63617 },	-- Bending Bars
+					["provider"] = { "n", 177288 },	-- Fallen Disciple Nikolon
+					["coord"] = { 65.5, 46.1, THE_MAW },
+				}),
+				q(63618, {	-- What Maldraxxus Does Best
+					["sourceQuests"] = { 63617 },	-- Bending Bars
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+					["coord"] = { 65.2, 48.4, THE_MAW },
+				}),
+				q(63620, {	-- A Traitor's Due
+					["sourceQuests"] = {
+						63619,	-- Forsworn and Forgotten
+						63618,	-- What Maldraxxus Does Best
+					},
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+				}),
+				q(63622, {	-- Victory in Our Name
+					["sourceQuests"] = { 63620 },	-- A Traitor's Due
+					["provider"] = { "n", 178103 },	-- Baroness Draka
+					["coord"] = { 62.0, 41.6, THE_MAW },
+					["_drop"] = { "g" },	-- Anima Trash
+				}),
+					-- Chapter 6 --
+				q(63659, {	-- Dreadlords!
+					["description"] = "Requires Renown 50.",
+					["sourceQuests"] = { 63622 },	-- Victory in Our Name
+					["provider"] = { "n", 177167 },	-- Baroness Vashj
+					["coord"] = { 60.6, 27.5, KORTHIA },
+				}),
+				q(63644, {	-- Dread Tidings
+					["sourceQuests"] = { 63659 },	-- Dreadlords!
+					["provider"] = { "n", 177194 },	-- The Primus
+					["coord"] = { 62.8, 26.2, KORTHIA },
+				}),
+				q(63646, {	-- Convoy of the Covenants
+					["sourceQuests"] = { 63644 },	-- Dread Tidings
+					["provider"] = { "n", 168898 },	-- Prince Renathal
+					["coord"] = { 22.9, 43.7, REVENDRETH },
+				}),
+				q(63647, {	-- The Unseen Guests
+					["sourceQuests"] = { 63646 },	-- Convoy of the Covenants
+					["provider"] = { "n", 165866 },	-- The Stonewright
+					["coord"] = { 34.3, 22.0, REVENDRETH },
+				}),
+				q(63648, {	-- Nal'ragas
+					["sourceQuests"] = { 63647 },	-- The Unseen Guests
+					["provider"] = { "n", 177628 },	-- Kael'thas Sunstrider
+					["coord"] = { 36.0, 22.4, REVENDRETH },
+				}),
+				q(63649, {	-- Spy vs Spy
+					["sourceQuests"] = { 63647 },	-- The Unseen Guests
+					["provider"] = { "n", 177637 },	-- Baroness Vashj
+					["coord"] = { 36.0, 22.4, REVENDRETH },
+				}),
+				q(63650, {	-- De-Infiltration
+					["sourceQuests"] = {
+						63648,	-- Nal'ragas
+						63649,	-- Spy vs Spy
+					},
+					["provider"] = { "n", 177644 },	-- Prince Renathal
+					["coord"] = { 25.0, 27.9, REVENDRETH },
+				}),
+				q(63651, {	-- Cryptograms
+					["sourceQuests"] = { 63650 },	-- De-Infiltration
+					["provider"] = { "n", 178260 },	-- The Stonewright
+					["coord"] = { 54.6, 40.3, SINFALL_REACHES },
+				}),
+				q(63652, {	-- The "Unwelcome" Guests
+					["sourceQuests"] = { 63650 },	-- De-Infiltration
+					["provider"] = { "n", 158653 },	-- Prince Renathal
+					["coord"] = { 51.3, 38.1, SINFALL_REACHES },
+				}),
+				q(63653, {	-- The Power of a Crown
+					["sourceQuests"] = {
+						63651,	-- Cryptograms
+						63652,	-- The "Unwelcome Guests"
+					},
+					["provider"] = { "n", 158653 },	-- Prince Renathal
+					["coord"] = { 51.1, 38.0, SINFALL_REACHES },
+				}),
+				q(63654, {	-- The Nathrezim
+					["sourceQuests"] = { 63653 },	-- The Power of a Crown
+					["provider"] = { "n", 178337 },	-- The Stonewright
+					["coord"] = { 25.2, 45.1, REVENDRETH },
+					["_drop"] = { "g" },	-- Anima Trash
+				}),
+				q(63656, {	-- The Meaning of Wrath
+					["sourceQuests"] = { 63654 },	-- The Nathrezim
+					["provider"] = { "n", 179978 },	-- The Accuser
+					["coord"] = { 23.1, 45.9, REVENDRETH },
+				}),
+					-- Chapter 7 --
+				q(63672, {	-- A Cry From the Heart
+					["description"] = "Requires Renown 52.",
+					["sourceQuests"] = { 63656 },	-- The Meaning of Wrath
+					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
+					["coord"] = { 63.4, 24.6, KORTHIA },
+				}),
+				q(63728, {	-- Hunting Amid Houses [Kyrian, Necrolord, Venthyr]
+					["sourceQuests"] = { 63672 },	-- A Cry From the Heart
+					["provider"] = { "n", 177434 },	-- Ysera
+					["coord"] = { 47.8, 53.5, ARDENWEALD },
+					["customCollect"] = { "SL_COV_KYR", "SL_COV_NEC", "SL_COV_VEN" },	-- Kyrian / Necrolord / Venthyr
+				}),
+				q(63673, {	-- Hunting Amid Houses [Night Fae]
+					["sourceQuests"] = { 63672 },	-- A Cry From the Heart
+					["provider"] = { "n", 160262 },	-- Ysera
+					["coord"] = { 44.3, 38.8, THE_TRUNK },
+					["customCollect"] = { "SL_COV_NFA" },	-- Night Fae
+				}),
+				q(63990, {	-- The Blade in the Night
+					["sourceQuests"] = {
+						63728,	-- Hunting Amid Houses [Kyrian, Necrolord, Venthyr]
+						63673,	-- Hunting Amid Houses [Night Fae]
+					},
+					["provider"] = { "n", 177471 },	-- Huln Highmountain
+					["coord"] = { 42.8, 25.2, MALDRAXXUS },
+				}),
+				q(63674, {	-- By Your Leave
+					["sourceQuests"] = { 63990 },	-- The Blade in the Night
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 42.1, 23.2, MALDRAXXUS },
+				}),
+				q(63677, {	-- You Can Only Die
+					["sourceQuests"] = { 63674 },	-- By Your Leave
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 52.8, 68.6, MALDRAXXUS },
+				}),
+				q(63676, {	-- You Cannot Hide
+					["sourceQuests"] = { 63674 },	-- By Your Leave
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 52.8, 68.6, MALDRAXXUS },
+				}),
+				q(63675, {	-- You Cannot Run
+					["sourceQuests"] = { 63674 },	-- By Your Leave
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 52.8, 68.6, MALDRAXXUS },
+				}),
+				q(63678, {	-- Akarek Avenged
+					["sourceQuests"] = {
+						63677,	-- You Can Only Die
+						63676,	-- You Cannot Hide
+						63675,	-- You Cannot Run
+					},
+					["provider"] = { "n", 177437 },	-- Khaliiq
+				}),
+				q(63679, {	-- Magical Mystery Tour!
+					["sourceQuests"] = { 63678 },	-- Akarek Avenged
+					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
+					["coord"] = { 74.7, 33.6, MALDRAXXUS },
+				}),
+				q(64092, {	-- Hunting Huln
+					["sourceQuests"] = { 63679 },	-- Magical Mystery Tour!
+					["provider"] = { "n", 177962 },	-- Lady Moonberry
+					["coord"] = { 25.3, 29.0, REVENDRETH },
+				}),
+				q(64091, {	-- Mal'appropriated
+					["sourceQuests"] = { 64092 },	-- Hunting Huln
+					["provider"] = { "n", 179327 },	-- Mal'Ganis
+					["coord"] = { 37.9, 23.4, REVENDRETH },
+				}),
+				q(64090, {	-- The Big Squeeze
+					["sourceQuests"] = { 64091 },	-- Mal'appropriated
+					["provider"] = { "n", 177968 },	-- Cudgelface
+					["coord"] = { 38.0, 23.7, REVENDRETH },
+				}),
+				q(63680, {	-- Out On the Edge
+					["sourceQuests"] = { 64090 },	-- The Big Squeeze
+					["providers"] = {
+						{ "n", 177964 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
+						{ "n", 177967 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
+					},
+					["coord"] = { 35.6, 22.6, REVENDRETH },
+				}),
+				q(63681, {	-- Back to The Heart
+					["sourceQuests"] = { 63680 },	-- Out On the Edge
+					["providers"] = {
+						{ "n", 177962 },	-- Lady Moonberry <Court of Night>
+						{ "n", 177964 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
+					},
+					["coord"] = { 34.0, 9.65, REVENDRETH },
+				}),
+				q(64042, {	-- Rituals of Night
+					["sourceQuests"] = { 63681 },	-- Back to The Heart
+					["provider"] = { "n", 177434 },	-- Ysera
+					["coord"] = { 48.0, 53.9, ARDENWEALD },
+				}),
+				q(63682, {	-- The Power of Elune
+					["sourceQuests"] = { 64042 },	-- Rituals of Night
+					["provider"] = { "n", 177434 },	-- Ysera
+					["coord"] = { 45.3, 64.8, ARDENWEALD },
+					["g"] = {
+						i(182171),	-- Hippogryph Soul (SS!)
+					},
+				}),
+				q(63683, {	-- Winter's Sigil
+					["sourceQuests"] = { 63682 },	-- The Power of Elune
+					["provider"] = { "n", 178669 },	-- Winter Queen
+					["coord"] = { 45.2, 65.1, ARDENWEALD },
+					["_drop"] = { "g" },	-- Anima Trash
+				}),
+				q(64437, {	-- Inform the Primus
+					["sourceQuests"] = { 63683 },	-- Winter's Sigil
+					["providers"] = {
+						{ "n", 160262 },	-- Ysera [Heart of the Forest]
+						{ "n", 177434 },	-- Ysera [Ardenweald]
+					},
+					["coords"] = {
+						{ 45.2, 39.6, THE_TRUNK },	-- Ysera [Heart of the Forest]
+						{ 45.2, 64.8, ARDENWEALD },	-- Ysera [Ardenweald]
+					},
+				}),
+					-- Chapter 8 --
+				q(63579, {	-- A Paladin's Soul
+					["description"] = "Requires Renown 56.",
+					["sourceQuests"] = { 64437 },	-- Inform the Primus
+					["provider"] = { "n", 179356 },	-- Thenios
+					["coord"] = { 62.9, 25.3, KORTHIA },
+					["maps"] = {	-- Torghast (Scenario Map?)
+						1968,	-- TG107_Floor
+						1967,	-- TG106_Floor
+						1969,	-- TG108_Floor
+					},
+					["g"] = {
+						i(185679),	-- Attuned Shard
+					},
+				}),
+				q(63580, {	-- Wounded Memories
+					["sourceQuests"] = { 63579 },	-- A Paladin's Soul
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 39.9, 20.0, BASTION },
+				}),
+				q(63581, {	-- Step Into the Light
+					["sourceQuests"] = { 63580 },	-- Wounded Memories
+					["provider"] = { "n", 154629 },	-- Thenios
+					["coord"] = { 40.1, 20.0, BASTION },
+					["maps"] = { 827 },	-- Stratholme (Scenario Map)
+				}),
+				q(63582, {	-- He Was My Student
+					["sourceQuests"] = { 63581 },	-- Step Into the Light
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 39.9, 20.0, BASTION },
+				}),
+				q(63583, {	-- I Intend to Live Forever
+					["sourceQuests"] = { 63582 },	-- He Was My Student
+					["provider"] = { "n", 180733 },	-- Uther
+					["coord"] = { 40.1, 20.3, BASTION },
+				}),
+				q(63585, {	-- Blind Loyalty
+					["sourceQuests"] = { 63583 },	-- I Intend to Live Forever
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 39.9, 20.0, BASTION },
+				}),
+				q(63586, {	-- Compassion in Devotion
+					["sourceQuests"] = { 63585 },	-- Blind Loyalty
+					["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+					["coord"] = { 55.4, 42.4, ARCHONS_RISE },
+				}),
+				q(63589, {	-- Directing Dedication
+					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 24.3, 30.2, BASTION },
+				}),
+				q(63588, {	-- Rebuilding Faith
+					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
+					["provider"] = { "n", 177300 },	-- Fallen Disciple Nikolon
+					["coord"] = { 24.4, 30.1, BASTION },
+				}),
+				q(63587, {	-- Reclaimable Anima
+					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
+					["provider"] = { "n", 177123 },	-- Kleia
+					["coord"] = { 24.2, 30.0, BASTION },
+				}),
+				q(63590, {	-- The Vesper Rings
+					["sourceQuests"] = {
+						63589,	-- Directing Dedication
+						63588,	-- Rebuilding Faith
+						63587,	-- Reclaimable Anima
+					},
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 20.6, 22.8, BASTION },
+				}),
+				q(63584, {	-- A Triumphant Return
+					["sourceQuests"] = { 63590 },	-- The Vesper Rings
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 20.6, 22.8, BASTION },
+				}),
+				q(63591, {	-- The Grand Reception
+					["sourceQuests"] = { 63584 },	-- A Triumphant Return
+					["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
+					["coord"] = { 64.0, 19.1, ARCHONS_RISE },
+					["maps"] = { 2017 },	-- Spires of Ascension (Scenario Map)
+				}),
+				q(63592, {	-- The New Path
+					["sourceQuests"] = { 63591 },	-- The Grand Reception
+					["provider"] = { "n", 180189 },	-- Polemarch Kalisthene
+					["coord"] = { 55.8, 29.9, 2017 },
+					["maps"] = { 2018 },	-- Spires of Ascension (Scenario Map)
+					["_drop"] = { "g" },	-- Anima Trash
+				}),
+				q(63593, {	-- New Sigil of the Kyrian
+					["sourceQuests"] = { 63592 },	-- A New Path
+					["provider"] = { "n", 179379 },	-- Polemarch Adrestes
+					["coord"] = { 46.0, 58.0, 2018 },	-- Spires of Ascension (Scenario Map)
+				}),
+					-- Chapter 9 --
+				q(64211, {	-- Doorway in the Dark (A)
+					["sourceQuests"] = {
+						63593,	-- New Sigil of the Kyrian
+						63944,	-- Korthia Awaits (Skip Breadcrumb)
+					},
+					["provider"] = { "n", 177194 },	-- The Primus
+					["coord"] = { 62.8, 26.2, KORTHIA },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(64212, {	-- Doorway in the Dark (H)
+					["sourceQuests"] = {
+						63593,	-- New Sigil of the Kyrian
+						63944,	-- Korthia Awaits (Skip Breadcrumb)
+					},
+					["provider"] = { "n", 177194 },	-- The Primus
+					["coord"] = { 62.8, 26.2, KORTHIA },
+					["races"] = HORDE_ONLY,
+				}),
+				q(64213, {	-- A Symbol of Hope (A)
+					["sourceQuests"] = { 64211 },	-- Doorway in the Dark (A)
+					["provider"] = { "n", 180074 },	-- Lady Jaina Proudmoore
+					["coord"] = { 62.9, 25.7, KORTHIA },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(64214, {	-- A Symbol of Hope (H)
+					["sourceQuests"] = { 64212 },	-- Doorway in the Dark (H)
+					["provider"] = { "n", 180073 },	-- Thrall
+					["coord"] = { 62.9, 25.7, KORTHIA },
+					["races"] = HORDE_ONLY,
+				}),
+				q(64314, {	-- Covenants Renewed
+					["sourceQuests"] = { 64213, 64214 },	-- A Symbol of Hope (A/H)
+					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 63.1, 24.5, KORTHIA },
+					["_drop"] = { "g" },	-- Anima Trash
+				}),
+					-- The End
+				q(63623, {	-- Filling an Empty Throne
+					["customCollect"] = "SL_COV_NEC",	-- Necrolord
+					["sourceQuests"] = { 63622 },	-- Victory in Our Name
+					["provider"] = { "n", 177194 },	-- The Primus
+					["coord"] = { 63.1, 25.3, KORTHIA },
+					-- Not really a breadcrumb quest, but if you complete the chain NOT as Necrolord, you are unable to come back and do this quest
+					["lockCriteria"] = { 1, "questID", 63659 },	-- Dreadlords!
+				}),
+				q(63655, {	-- Medallion of Wrath
+					["sourceQuests"] = { 63654 },	-- The Nathrezim
+					["provider"] = { "n", 179978 },	-- The Accuser
+					["coord"] = { 23.1, 45.9, REVENDRETH },
+				}),
+				q(63645, {	-- The Dawnkeep Prisoner
+					["sourceQuests"] = { 63644 },	-- Dread Tidings
+					["altQuests"] = { 60501 },	-- Redemption for the Redeemer
+					["provider"] = { "n", 168898 },	-- Prince Renathal
+					["coord"] = { 22.9, 43.7, REVENDRETH },
+				}),
+				-- Epilogue
+				q(64441, {	-- A Loose Thread
+					["sourceQuests"] = { 64314 },	-- Covenants Renewed
+					["provider"] = { "o", 369432 },	-- Misplaced Venthyr Tome
+					["coord"] = { 61.0, 25.5, KORTHIA },
+				}),
 			}),
-			q(64441, {	-- A Loose Thread
-				["sourceQuests"] = { 64314 },	-- Covenants Renewed
-				["provider"] = { "o", 369432 },	-- Misplaced Venthyr Tome
-				["coord"] = { 61.0, 25.5, KORTHIA },
-			}),
-			q(63755, {	-- A Matter of Urgency
-				["sourceQuests"] = { 64106 },	-- A Unified Effort
-				["provider"] = { "n", 177155 },	-- Pathscribe Roh-Vess
-				["coord"] = { 65.1, 23.1, KORTHIA },
-			}),
-			q(63579, {	-- A Paladin's Soul
-				["sourceQuests"] = { 63683 },	-- Winter's Sigil
-				["description"] = "Requires Renown 56.",
-				["provider"] = { "n", 179356 },	-- Thenios
-				["coord"] = { 62.9, 25.3, KORTHIA },
-				["maps"] = {	-- TODO: not sure if these are strictly scenario maps or if they are additions to Torghast overall.  adding them in the order i went through the floors for the quest
-					1968,	-- TG107_Floor
-					1967,	-- TG106_Floor
-					1969,	-- TG108_Floor
-				},
-				["g"] = {
-					i(185679),	-- Attuned Shard
-				},
-			}),
-			q(63848, {	-- A Show of Gratitude
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 177927 },	-- Tal-Galan
-				["coord"] = { 62.7, 24.8, KORTHIA },
-			}),
-			q(64213, {	-- A Symbol of Hope (A)
-				["sourceQuests"] = { 64211 },	-- Doorway in the Dark (A)
-				["provider"] = { "n", 180074 },	-- Lady Jaina Proudmoore
-				["coord"] = { 62.9, 25.7, KORTHIA },
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(64214, {	-- A Symbol of Hope (H)
-				["sourceQuests"] = { 64212 },	-- Doorway in the Dark (H)
-				["provider"] = { "n", 180073 },	-- Thrall
-				["coord"] = { 62.9, 25.7, KORTHIA },
-				["races"] = HORDE_ONLY,
-			}),
-			q(64106, {	-- A Unified Effort
-				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
-				["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 63.0, 25.6, KORTHIA },
-				["_drop"] = { "g" },	-- drop anima trash
-			}),
-			q(63736, {	-- An Infusion of Anima
-				["sourceQuests"] = {
-					63733,	-- Carving Out a Path
-					63734,	-- The Sundered Staff
-				},
-				["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
-				["coord"] = { 39.4, 51.3, KORTHIA },
-			}),
-			q(65080, {	-- Anima, Diverted
-				["sourceQuest"] = 65020,	-- Practical Applications
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.8, 22.6, KORTHIA },
-				["timeline"] = { "added 9.1.5" },
-			}),
-			q(64560, {	-- Anima Reclamation (intro version)
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
-				["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
-				["coord"] = { 61.8, 25.6, KORTHIA },
-			}),
-			q(63861, {	-- Beginning the Collection
-				["sourceQuests"] = { 63738 },	-- Establishing the Archive
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.7, 22.5, KORTHIA },
-				["g"] = {
-					i(185636),	-- The Archivist's Codex
-				},
-			}),
-			q(63711, {	-- Bone Tools
-				["sourceQuests"] = { 63710 },	-- The Anima Trail
-				["provider"] = { "n", 177452 },	-- Bonesmith Heirmir
-				["coord"] = { 34.9, 35.3, KORTHIA },
-			}),
-			q(63899, {	-- Book of Binding: The Mad Witch
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["description"] = "At the end of the top level of the cave.",
-				["provider"] = { "i", 187206 },	-- Book of Binding: The Mad Witch
-				["coord"] = { 27.2, 56.8, KORTHIA },
-			}),
-			q(63908, {	-- Bulwark of Divine Intent
-				["sourceQuests"] = { 64532 },	-- The Final Relics
-				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
-				["provider"] = { "i", 186014 },	-- Bulwark of Divine Intent
-				["coord"] = { 18.5, 38.0, KORTHIA },
-			}),
-			q(63733, {	-- Carving Out a Path
-				["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
-				["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
-				["coord"] = { 58.9, 58.1, KORTHIA },
-			}),
-			q(63912, {	-- Celestial Shadowlands Chart
-				["sourceQuests"] = { 63861 },	-- Beginning the Collection
-				["provider"] = { "i", 187201 },	-- Celestial Shadowlands Chart
-				["coord"] = { 45.5, 56.0, KORTHIA },
-			}),
-			q(64290, {	-- Collecting Research
-				["sourceQuests"] = { 64289 },	-- Picking Up the Pieces
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 61.6, 21.7, KORTHIA },
-				["g"] = {	-- TODO: there are no plate rewards currently linked - are there any or is plate just...left out?
-					i(186664),	-- Korthian Caretaker's Sandals
-					i(186665),	-- Korthian Caretaker's Mitts
-					i(186734),	-- Shardhide Leather Treads
-					i(186735),	-- Shardhide Leather Handlers
-					i(186741),	-- Razorwing Scale Footguards
-					i(186742),	-- Razorwing Scale Fists
-				},
-			}),
-			q(63740, {	-- Consulting the Experts
-				["sourceQuests"] = {
-					63733,	-- Carving Out a Path
-					63734,	-- The Sundered Staff
-				},
-				["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
-				["coord"] = { 39.4, 51.3, KORTHIA },
-			}),
-			q(64314, {	-- Covenants Renewed
-				["sourceQuests"] = { 64213, 64214 },	-- A Symbol of Hope (A/H)
-				["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 63.1, 24.5, KORTHIA },
-				["_drop"] = { "g" },	-- drop anima trash
-			}),
-			q(63717, {	-- Defending the Vault
-				["sourceQuests"] = { 63714 },	-- To the Vault
-				["provider"] = { "n", 177459 },	-- Protector Kah-Rev
-				["coord"] = { 49.5, 65.0, KORTHIA },
-			}),
-			q(63892, {	-- Diviner's Rune Chits
-				["sourceQuests"] = { 63738 },	-- Establishing the Archive
-				["description"] = "The item that starts this quest and the Rune Chits themselves can drop from Korthian treasures.",
-				["provider"] = { "i", 187055 },	-- Pouch of Rune Chits
-				["cost"] = { { "i", 185962, 20 } },    -- 20x Rune Chit
-				["g"] = {
-					i(187154),	-- Ancient Korthian Runes (TOY!)
-				},
-			}),
-			q(64211, {	-- Doorway in the Dark (A)
-				["sourceQuests"] = {
-					63593,	-- New Sigil of the Kyrian
-					63944,	-- Korthia Awaits (Skip Breadcrumb)
-				},
-				["provider"] = { "n", 177194 },	-- The Primus
-				["coord"] = { 62.8, 26.2, KORTHIA },
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(64212, {	-- Doorway in the Dark (H)
-				["sourceQuests"] = {
-					63593,	-- New Sigil of the Kyrian
-					63944,	-- Korthia Awaits (Skip Breadcrumb)
-				},
-				["provider"] = { "n", 177194 },	-- The Primus
-				["coord"] = { 62.8, 26.2, KORTHIA },
-				["races"] = HORDE_ONLY,
-			}),
-			q(63644, {	-- Dread Tidings
-				["sourceQuests"] = { 63659 },	-- Dreadlords!
-				["provider"] = { "n", 177194 },	-- The Primus
-				["coord"] = { 62.8, 26.2, KORTHIA },
-			}),
-			q(63659, {	-- Dreadlords!
-				["sourceQuests"] = { 63622 },	-- Victory in Our Name
-				["description"] = "Requires Renown 50.",
-				["provider"] = { "n", 177167 },	-- Baroness Vashj
-				["coord"] = { 60.6, 27.5, KORTHIA },
-			}),
-			q(63915, {	-- Drum of Driving
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.",
-				["provider"] = { "i", 187204 },	-- Drum of Driving
-				["coord"] = { 39.3, 52.4, KORTHIA },
-				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
-			}),
-			q(63855, {	-- Ease of Passage
-				["sourceQuests"] = { 63848 },	-- A Show of Gratitude
-				["provider"] = { "n", 178470 },	-- Ve'nari
-				["coord"] = { 65.9, 23.0, KORTHIA },
-			}),
-			q(63760, {	-- Echoes of Fate
-				["sourceQuests"] = { 63759 },	-- Redirect the Search
-				["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
-				["coord"] = { 56.9, 22.3, KORTHIA },
-			}),
-			q(64438, {	-- Empowering Equipment
-				["sourceQuests"] = { 64290 },	-- Collecting Research
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 61.6, 21.7, KORTHIA },
-			}),
-			q(63738, {	-- Establishing the Archive
-				["sourceQuests"] = { 63737 },	-- Finding One's True Purpose
-				["provider"] = { "n", 178992 },	-- Scholar Roh-Suir
-				["coord"] = { 36.0, 32.3, KORTHIA },
-			}),
-			q(63917, {	-- Everliving Statuette
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["provider"] = { "i", 187103 },	-- Everliving Statuette
-			}),
-			q(63623, {	-- Filling an Empty Throne
-				["customCollect"] = "SL_COV_NEC",	-- Necrolord
-				["sourceQuests"] = { 63622 },	-- Victory in Our Name
-				["provider"] = { "n", 177194 },	-- The Primus
-				["coord"] = { 63.1, 25.3, KORTHIA },
-				-- Not really a breadcrumb quest, but if you complete the chain NOT as Necrolord, you are unable to come back and do this quest
-				["lockCriteria"] = { 1, "questID", 63659 },	-- Dreadlords!
-			}),
-			q(63737, {	-- Finding One's True Purpose
-				["sourceQuests"] = { 63739 },	-- Hope Ascending
-				["provider"] = { "n", 178991 },	-- Archivist Roh-Dahl
-				["coord"] = { 35.8, 32.2, KORTHIA },
-			}),
-			q(63713, {	-- Hooking Over
-				["sourceQuests"] = {
-					63711,	-- Bone Tools
-					63712,	-- Lost Records
-				},
-				["provider"] = { "n", 177452 },	-- Bonesmith Heirmir
-				["coord"] = { 34.9, 35.3, KORTHIA },
-			}),
-			q(63739, {	-- Hope Ascending
-				["sourceQuests"] = {
-					63736,	-- An Infusion of Anima
-					63740,	-- Consulting the Experts
-				},
-				["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
-				["coord"] = { 39.4, 51.3, KORTHIA },
-			}),
-			q(64557, {	-- In Darkness, Found
-				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
-				["provider"] = { "n", 178845 },	-- Xy'lony
-				["coord"] = { 64.5, 25.4, KORTHIA },
+
+				-- Archivists of Korthia --
+			q(63731, {	-- Researching Korthian Relics
+				["description"] = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
+				["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
+				["provider"] = { "i", 187177 },	-- Researching Korthian Relics
+				["altQuests"] = { 64567 },	-- The Missing Scholar
 				["isBreadcrumb"] = true,
 			}),
-			q(64556, {	-- In Need of Assistance
-				["sourceQuests"] = { 64555 },	-- Surveying Secrets
-				["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 62.8, 24.9, KORTHIA },
-				["_drop"] = { "g" },	-- drop anima trash
-				["g"] = {
-					i(187543),	-- Death's Advance War Chest
-				},
+			q(64567, {	-- The Missing Scholar
+				["sourceQuests"] = { 64106 },	-- A Unified Effort
+				["provider"] = { "n", 177927 },	-- Tal-Galan
+				["coord"] = { 62.7, 24.8, KORTHIA },
+				["altQuests"] = { 63731 },	-- Researching Korthian Relics
+				["isBreadcrumb"] = true,
 			}),
 			q(63732, {	-- Interrupt the Interrogations
 				["sourceQuests"] = {
@@ -345,89 +833,71 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 178694 },	-- Scholar Roh-Suir
 				["coord"] = { 59.0, 58.1, KORTHIA },
 			}),
-			q(63725, {	-- Into the Vault
+			q(63733, {	-- Carving Out a Path
+				["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
+				["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
+				["coord"] = { 58.9, 58.1, KORTHIA },
+			}),
+			q(63734, {	-- The Sundered Staff
+				["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
+				["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
+				["coord"] = { 58.9, 58.1, KORTHIA },
+			}),
+			q(63736, {	-- An Infusion of Anima
 				["sourceQuests"] = {
-					63717,	-- Defending the Vault
-					63722,	-- Keepers of Korthia
+					63733,	-- Carving Out a Path
+					63734,	-- The Sundered Staff
 				},
-				["provider"] = { "n", 178676 },	-- Tal-Galan
-				["coord"] = { 50.2, 75.7, KORTHIA },
-				["maps"] = { 2008 },	-- Chamber of the Sigil
+				["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
+				["coord"] = { 39.4, 51.3, KORTHIA },
 			}),
-			q(63722, {	-- Keepers of Korthia
-				["sourceQuests"] = { 63714 },	-- To the Vault
-				["providers"] = {
-					{ "n", 177459 },	-- Protector Kah-Rev
-					{ "n", 178640 },	-- Protector Kah-Rev (pet version)
+			q(63740, {	-- Consulting the Experts
+				["sourceQuests"] = {
+					63733,	-- Carving Out a Path
+					63734,	-- The Sundered Staff
 				},
-				["coord"] = { 49.5, 65.0, KORTHIA },
+				["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
+				["coord"] = { 39.4, 51.3, KORTHIA },
 			}),
-			q(63663, {	-- Korthia, the City of Secrets
-				["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
-				["provider"] = { "n", 177202 },	-- Ve'nari
-				["coord"] = { 58.3, 14.3, KORTHIA },
+			q(63739, {	-- Hope Ascending
+				["sourceQuests"] = {
+					63736,	-- An Infusion of Anima
+					63740,	-- Consulting the Experts
+				},
+				["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
+				["coord"] = { 39.4, 51.3, KORTHIA },
 			}),
-			q(63923, {	-- Lang Family Wood-Carving
-				["sourceQuests"] = { 64532 },	-- The Final Relics
-				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
-				["provider"] = { "i", 187209 },	-- Lang Family Wood-Carving
-				["coord"] = { 24.3, 56.6, KORTHIA },
+			q(63737, {	-- Finding One's True Purpose
+				["sourceQuests"] = { 63739 },	-- Hope Ascending
+				["provider"] = { "n", 178991 },	-- Archivist Roh-Dahl
+				["coord"] = { 35.8, 32.2, KORTHIA },
 			}),
-			q(63706, {	-- Let the Anima Flow
-				["sourceQuests"] = { 63703 },	-- Vault of Secrets
-				["provider"] = { "n", 177449 },	-- Bonesmith Heirmir
-				["coord"] = { 57.2, 29.8, KORTHIA },
+			q(63738, {	-- Establishing the Archive
+				["sourceQuests"] = { 63737 },	-- Finding One's True Purpose
+				["provider"] = { "n", 178992 },	-- Scholar Roh-Suir
+				["coord"] = { 36.0, 32.3, KORTHIA },
+			}),
+
+				-- They Could Be Anyone --
+			q(63755, {	-- A Matter of Urgency
+				["sourceQuests"] = { 64106 },	-- A Unified Effort
+				["provider"] = { "n", 177155 },	-- Pathscribe Roh-Vess
+				["coord"] = { 65.1, 23.1, KORTHIA },
+			}),
+			q(63758, {	-- The Last Place You Look
+				["sourceQuests"] = { 63755 },	-- A Matter of Urgency
+				["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
+				["coord"] = { 56.2, 38.8, KORTHIA },
+			}),
+			q(63756, {	-- Rescued from Torment
+				["sourceQuests"] = { 63755 },	-- A Matter of Urgency
+				["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
+				["coord"] = { 56.2, 38.8, KORTHIA },
 			}),
 			q(63757, {	-- Looting the Looters
 				["sourceQuests"] = { 63755 },	-- A Matter of Urgency
 				["provider"] = { "i", 185915 },	-- Korthian Artifact
 				["crs"] = { 177204 },	-- Mawsworn Interrogator
-			}),
-			q(63712, {	-- Lost Records
-				["sourceQuests"] = { 63710 },	-- The Anima Trail
-				["provider"] = { "n", 177451 },	-- Tal-Galan - TODO: verify NPC once on live, it's currently named "Tal-Galan (temp)"
-				["coord"] = { 34.9, 35.3, KORTHIA },
-			}),
-			q(64519, {	-- Lost Vaults
-				["sourceQuests"] = { 64511 },	-- Missing Relics
-				["minReputation"] = { 2472, 3 },	-- Tier 3
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.7, 22.5, KORTHIA },
-			}),
-			q(64511, {	-- Missing Relics
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["description"] = "Requires Tier 2 Research.",
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.7, 22.5, KORTHIA },
-			}),
-			q(64526, {	-- Mysterious Rifts
-				["minReputation"] = { 2472, 4 },	-- Tier 4
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.7, 22.5, KORTHIA },
-			}),
-			q(63918, {	-- Obelisk of Dark Tidings
-				["sourceQuests"] = { 64511 },	-- Missing Relics
-				["provider"] = { "i", 187104 },	-- Obelisk of Dark Tidings
-			}),
-			q(64561, {	-- Observational Records (intro version)
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
-				["provider"] = { "n", 178844 },	-- Ta'nasi
-				["coord"] = { 64.6, 25.4, KORTHIA },
-			}),
-			q(63665, {	-- Opening to Oribos
-				["sourceQuests"] = { 63994 },	-- Who is the Maw Walker?
-				["provider"] = { "n", 177227 },	-- Tal-Galan
-				["coord"] = { 63.8, 23.7, KORTHIA },
-			}),
-			q(64289, {	-- Picking Up the Pieces
-				["sourceQuests"] = { 63738 },	-- Establishing the Archive
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.7, 22.5, KORTHIA },
-			}),
-			q(65020, {	-- Practical Applications
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.8, 22.6, KORTHIA },
-				["timeline"] = { "added 9.1.5" },
 			}),
 			q(63759, {	-- Redirect the Search
 				["sourceQuests"] = {
@@ -437,76 +907,281 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				},
 				["provider"] = { "n", 177924 },	-- Caretaker Kah-Than
 			}),
-			q(65145, {	-- Relic Clues
-				["sourceQuest"] = 63861,	-- Beginning the Collection
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["minReputation"] = { 2472, 3 },	-- Tier 3
-				["coord"] = { 62.8, 22.6, KORTHIA },
-				["timeline"] = { "added 9.1.5" },
-			}),
-			q(64368, {	-- Relic Efficiency
-				["sourceQuest"] = 63861,	-- Beginning the Collection
-				["minReputation"] = { 2472, 4 },	-- Tier 4
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.7, 22.5, KORTHIA },
-			}),
-			q(65146, {	-- Relic Hunter
-				["sourceQuest"] = 63861,	-- Beginning the Collection
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["minReputation"] = { 2472, 5 },	-- Tier 5
-				["coord"] = { 62.8, 22.6, KORTHIA },
-				["timeline"] = { "added 9.1.5" },
-			}),
-			q(63756, {	-- Rescued from Torment
-				["sourceQuests"] = { 63755 },	-- A Matter of Urgency
+			q(63760, {	-- Echoes of Fate
+				["sourceQuests"] = { 63759 },	-- Redirect the Search
 				["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
-				["coord"] = { 56.2, 38.8, KORTHIA },
+				["coord"] = { 56.9, 22.3, KORTHIA },
 			}),
-			q(63731, {	-- Researching Korthian Relics
-				["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
-				["altQuests"] = { 64567 },	-- The Missing Scholar
-				["description"] = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
-				["provider"] = { "i", 187177 },	-- Researching Korthian Relics
-				["isBreadcrumb"] = true,
+			q(63762, {	-- Under the Illusion
+				["sourceQuests"] = { 63760 },	-- Echoes of Fate
+				["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
+				["coord"] = { 56.5, 17.4, KORTHIA },
 			}),
 			q(63761, {	-- Revenge Delayed
 				["sourceQuests"] = { 63759 },	-- Redirect the Search
 				["provider"] = { "n", 177850 },	-- Protector Rih-Mat
 				["coord"] = { 55.6, 22.2, KORTHIA },
 			}),
-			q(63916, {	-- Sack of Strange Soil
+			q(63763, {	-- They Could Be Anyone
+				["sourceQuests"] = { 63762 },	-- Under the Illusion
+				["provider"] = { "i", 185740 },	-- Head of Azodius
+				["coord"] = { 56.5, 17.4, KORTHIA },
+				["crs"] = { 177243 },	-- Azodius
+			}),
+
+				-- Reliquary --
+			q(63861, {	-- Beginning the Collection
 				["sourceQuests"] = { 63738 },	-- Establishing the Archive
-				["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.",
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 62.7, 22.5, KORTHIA },
+				["g"] = {
+					i(185636),	-- The Archivist's Codex
+				},
+			}),
+			q(64506, {	-- What Must Be Found
+				["sourceQuests"] = { 63861 },	-- Beginning the Collection
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 62.6, 22.5, KORTHIA },
+			}),
+			q(63899, {	-- Book of Binding: The Mad Witch
+				["description"] = "At the end of the top level of the cave.",
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["provider"] = { "i", 187206 },	-- Book of Binding: The Mad Witch
+				["coord"] = { 27.2, 56.8, KORTHIA },
+			}),
+			q(63912, {	-- Celestial Shadowlands Chart
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["provider"] = { "i", 187201 },	-- Celestial Shadowlands Chart
+				["coord"] = { 45.5, 56.0, KORTHIA },
+			}),
+			q(63892, {	-- Diviner's Rune Chits
+				["description"] = "The item that starts this quest and the Rune Chits themselves can drop from Korthian treasures.",
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["provider"] = { "i", 187055 },	-- Pouch of Rune Chits
+				["cost"] = { { "i", 185962, 20 } },    -- 20x Rune Chit
+				["g"] = {
+					i(187154),	-- Ancient Korthian Runes (TOY!)
+				},
+			}),
+			q(63911, {	-- Singing Steel Ingot
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["provider"] = { "i", 187200 },	-- Singing Steel Ingot
+				["coord"] = { 62.1, 56.8, KORTHIA },
+			}),
+			q(63860, {	-- Talisman of the Eternal Scholar
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["provider"] = { "i", 185914 },	-- Damaged Talisman
+				["coord"] = { 40.6, 41.3, KORTHIA },
+			}),
+			q(64511, {	-- Missing Relics
+				["description"] = "Requires Tier 2 Research.",
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 62.7, 22.5, KORTHIA },
+			}),
+			q(63924, {	-- Gorak Claw Fetish
+				["sourceQuests"] = { 64511 },	-- Missing Relics
+				["provider"] = { "i", 187150 },	-- Gorak Claw Fetish
+				["coord"] = { 43.5, 57.4, KORTHIA },
+			}),
+			q(63921, {	-- Ring of Self Reflection
+				["sourceQuests"] = { 64511 },	-- Missing Relics
+				["provider"] = { "i", 187119 },	--Ring of Self Reflection
+				["coord"] = { 43.8, 76.9, KORTHIA },
+				["g"] = {
+					i(187140),	-- Ring of Duplicity (TOY!)
+				},
+			}),
+			q(63910, {	-- The Netherstar
+				["sourceQuests"] = { 64511 },	-- Missing Relics
+				["provider"] = { "i", 187052 },	-- The Netherstar
+				["coord"] = { 40.6, 41.3, KORTHIA },
+			}),
+			q(63909, {	-- Guise of the Changeling
+				["sourceQuests"] = { 64511 },	-- Missing Relics
+				["provider"] = { "i", 187047 },	-- Guise of the Changeling
+				["coord"] = { 41.2, 43.2, KORTHIA },
+				["g"] = {
+					i(187155),	-- Guise of the Changeling (TOY!)
+				},
+			}),
+			q(64519, {	-- Lost Vaults
+				["sourceQuests"] = { 64511 },	-- Missing Relics
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 62.7, 22.5, KORTHIA },
+				["minReputation"] = { 2472, 3 },	-- Tier 3
+			}),
+			q(63915, {	-- Drum of Driving
+				["sourceQuests"] = { 64519 },	-- Lost Vaults
+				["provider"] = { "i", 187204 },	-- Drum of Driving
+				["coord"] = { 39.3, 52.4, KORTHIA },
+				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
+			}),
+			q(63917, {	-- Everliving Statuette
+				["sourceQuests"] = { 64519 },	-- Lost Vaults
+				["provider"] = { "i", 187103 },	-- Everliving Statuette
+				["coord"] = { 39.3, 52.4, KORTHIA },
+				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
+			}),
+			q(63916, {	-- Sack of Strange Soil
+				["sourceQuests"] = { 64519 },	-- Lost Vaults
 				["provider"] = { "i", 187205 },	-- Sack of Strange Soil
 				["coord"] = { 45.0, 35.5, KORTHIA },
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 			}),
-			q(63709, {	-- Secrets of the Vault
-				["sourceQuests"] = {
-					63706,	-- Let the Anima Flow
-					63705,	-- The Knowledge Keepers
-					63704,	-- Vengeance for Korthia
-				},
-				["provider"] = { "n", 177423 },	-- Tal-Galan
-				["coord"] = { 57.4, 29.8, KORTHIA },
+			q(63918, {	-- Obelisk of Dark Tidings
+				["sourceQuests"] = { 64519 },	-- Lost Vaults
+				["provider"] = { "i", 187104 },	-- Obelisk of Dark Tidings
+				["coord"] = { 45.0, 35.5, KORTHIA },
+				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
+			}),
+			q(64526, {	-- Mysterious Rifts
+				["sourceQuests"] = { 64519 },	-- Lost Vaults
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 62.7, 22.5, KORTHIA },
+				["minReputation"] = { 2472, 4 },	-- Tier 4
+			}),
+			q(63919, {	-- Book of Binding: The Tormented Sorceror
+				["sourceQuests"] = { 64526 },	-- Mysterious Rifts
+				["provider"] = { "i", 187210 },	-- Book of Binding: The Tormented Sorceror
+				["coord"] = { 60.8, 34.8, KORTHIA },
+				["cr"] = 179956,	-- Blue Book
+			}),
+			q(63914, {	-- Cipher of Understanding
+				["sourceQuests"] = { 64526 },	-- Mysterious Rifts
+				["provider"] = { "i", 187203 },	-- Cipher of Understanding
+				["coord"] = { 28.9, 54.2, KORTHIA },
+				["cr"] = 179922,	-- Cipher of Understanding
+			}),
+			q(63920, {	-- Enigmatic Decrypting Device
+				["sourceQuests"] = { 64526 },	-- Mysterious Rifts
+				["provider"] = { "i", 187207 },	-- Enigmatic Decrypting Device
+				["coord"] = { 51.9, 52.6, KORTHIA },
+				["cr"] = 179968,	-- Enigmatic Decrypting Device
+			}),
+			q(63913, {	-- Unstable Sin'dorei Explosive
+				["sourceQuests"] = { 64526 },	-- Mysterious Rifts
+				["provider"] = { "i", 187202 },	-- Unstable Sin'dorei Explosive
+				["coord"] = { 51.4, 20.1, KORTHIA },
+				["cr"] = 179902,	-- Unstable Sin'dorei Explosive
+			}),
+			q(64532, {	-- The Final Relics
+				["sourceQuests"] = { 64526 },	-- Mysterious Rifts
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 62.7, 22.5, KORTHIA },
+				["minReputation"] = { 2472, 5 },	-- Tier 5
+			}),
+			q(63908, {	-- Bulwark of Divine Intent
+				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
+				["sourceQuests"] = { 64532 },	-- The Final Relics
+				["provider"] = { "i", 186014 },	-- Bulwark of Divine Intent
+				["coord"] = { 18.5, 38.0, KORTHIA },
+			}),
+			q(63923, {	-- Lang Family Wood-Carving
+				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
+				["sourceQuests"] = { 64532 },	-- The Final Relics
+				["provider"] = { "i", 187209 },	-- Lang Family Wood-Carving
+				["coord"] = { 24.3, 56.6, KORTHIA },
 			}),
 			q(63922, {	-- Shadow Slicing Shortsword
-				["sourceQuests"] = { 64532 },	-- The Final Relics
 				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
+				["sourceQuests"] = { 64532 },	-- The Final Relics
 				["provider"] = { "i", 187208 },	-- Shadow Slicing Shortsword
 				["coord"] = { 39.4, 42.6, KORTHIA },
 				["g"] = {
 					i(187159),	-- Shadow Slicing Shortsword (TOY!)
 				},
 			}),
+				-- MISC --
+			q(64106, {	-- A Unified Effort
+				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
+				["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
+				["coord"] = { 63.0, 25.6, KORTHIA },
+				["_drop"] = { "g" },	-- Anima Trash
+			}),
+			q(65080, {	-- Anima, Diverted
+				["sourceQuest"] = 65020,	-- Practical Applications
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 62.8, 22.6, KORTHIA },
+				["timeline"] = { ADDED_SL_1_5 },
+			}),
+			q(64290, {	-- Collecting Research
+				["sourceQuests"] = { 64289 },	-- Picking Up the Pieces
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 61.6, 21.7, KORTHIA },
+				["g"] = {
+					i(186664),	-- Korthian Caretaker's Sandals
+					i(186665),	-- Korthian Caretaker's Mitts
+					i(186734),	-- Shardhide Leather Treads
+					i(186735),	-- Shardhide Leather Handlers
+					i(186741),	-- Razorwing Scale Footguards
+					i(186742),	-- Razorwing Scale Fists
+				},
+			}),
+			q(64438, {	-- Empowering Equipment
+				["sourceQuests"] = { 64290 },	-- Collecting Research
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 61.6, 21.7, KORTHIA },
+			}),
+			q(64530, bubbleDownSelf({ ["customCollect"] = "SL_COV_VEN" }, {	-- Gravewing Crystal
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "i", 187283 },	-- Gravewing Crystal
+				["coord"] = { 46.3, 79.7, KORTHIA },
+				["g"] = {
+					i(186479),	-- Mastercraft Gravewing (MOUNT!)
+				},
+			})),
+			q(64557, {	-- In Darkness, Found
+				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
+				["provider"] = { "n", 178845 },	-- Xy'lony
+				["coord"] = { 64.5, 25.4, KORTHIA },
+				["isBreadcrumb"] = true,
+			}),
+			q(64529, bubbleDownSelf({ ["customCollect"] = "SL_COV_KYR" }, {	-- Intact Aquilon Core
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "i", 187282 },	-- Intact Aquilon Core
+				["coord"] = { 46.9, 35.1, KORTHIA },
+				["g"] = {
+					i(186483),	-- Forsworn Aquilon (MOUNT!)
+				},
+			})),
+			q(65020, {	-- Practical Applications
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 62.8, 22.6, KORTHIA },
+				["timeline"] = { ADDED_SL_1_5 },
+			}),
+			q(64289, {	-- Picking Up the Pieces
+				["sourceQuests"] = { 63738 },	-- Establishing the Archive
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 62.7, 22.5, KORTHIA },
+			}),
+
+			q(65145, {	-- Relic Clues
+				["sourceQuest"] = 63861,	-- Beginning the Collection
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 62.8, 22.6, KORTHIA },
+				["minReputation"] = { 2472, 3 },	-- Tier 3
+				["timeline"] = { ADDED_SL_1_5 },
+			}),
+			q(64368, {	-- Relic Efficiency
+				["sourceQuest"] = 63861,	-- Beginning the Collection
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 62.7, 22.5, KORTHIA },
+				["minReputation"] = { 2472, 4 },	-- Tier 4
+			}),
+			q(65146, {	-- Relic Hunter
+				["sourceQuest"] = 63861,	-- Beginning the Collection
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 62.8, 22.6, KORTHIA },
+				["minReputation"] = { 2472, 5 },	-- Tier 5
+				["timeline"] = { ADDED_SL_1_5 },
+			}),
 			q(63949, {	-- Shaping Fate
 				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 				["provider"] = { "n", 177927 },	-- Tal-Galan
-				["isWeekly"] = true,
 				["coord"] = { 62.7, 24.8, KORTHIA },
+				["isWeekly"] = true,
 				["g"] = {
-				--	TODO: figure out the contents of this chest and how/where to display it (if it comes from multiple things)
-				-- seems to share Item rewards with Korthian Armaments
 					i(186196, {	-- Death's Advance War Chest
 						["sym"] = {
 							{ "select", "itemID", 187187 },	-- select "Korthian Armaments"
@@ -518,139 +1193,47 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					}),
 				},
 			}),
-			q(63911, {	-- Singing Steel Ingot
-				["sourceQuests"] = { 63861 },	-- Beginning the Collection
-				["provider"] = { "i", 187200 },	-- Singing Steel Ingot
-				["coord"] = { 62.1, 56.8, KORTHIA },
-			}),
 			q(63903, {	-- Storming the Sanctum
 				["sourceQuests"] = { 63727 },	-- The Primus Returns
 				["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 62.8, 24.9, KORTHIA },
 			}),
-			q(64555, {	-- Surveying Secrets
-				["sourceQuests"] = { 64007 },	-- Charge of the Covenants
-				["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 62.8, 24.9, KORTHIA },
+			q(64513, {	-- Ve'rayn's Head
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "i", 187264 },	-- Ve'rayn's Head
 			}),
-			q(63860, {	-- Talisman of the Eternal Scholar
-				["sourceQuests"] = { 63861 },	-- Beginning the Collection
-				["provider"] = { "i", 185914 },	-- Damaged Talisman
-				["coord"] = { 40.6, 41.3, KORTHIA },
-			}),
-			q(63710, {	-- The Anima Trail
-				["sourceQuests"] = { 63709 },	-- Secrets of the Vault
-				["provider"] = { "n", 177423 },	-- Tal-Galan
-				["coord"] = { 57.4, 29.8, KORTHIA },
-			}),
-			q(63612, {	-- The Chains of Command
-				["sourceQuests"] = { 63727 },	-- The Primus Returns
-				["description"] = "Requires Renown 47.",	-- on Kyrian, presume all covenants are the same
-				["provider"] = { "n", 177194 },	-- The Primus
-				["coord"] = { 63.1, 25.3, KORTHIA },
-			}),
-			q(64532, {	-- The Final Relics
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["minReputation"] = { 2472, 5 },	-- Tier 5
-				["coord"] = { 62.7, 22.5, KORTHIA },
-			}),
-			q(63705, {	-- The Knowledge Keepers
-				["sourceQuests"] = { 63703 },	-- Vault of Secrets
-				["provider"] = { "n", 177423 },	-- Tal-Galan
-				["coord"] = { 57.4, 29.9, KORTHIA },
-			}),
-			q(63758, {	-- The Last Place You Look
-				["sourceQuests"] = { 63755 },	-- A Matter of Urgency
-				["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
-				["coord"] = { 56.2, 38.8, KORTHIA },
-			}),
-			q(64567, {	-- The Missing Scholar
-				["sourceQuests"] = { 64106 },	-- A Unified Effort
-				["altQuests"] = { 63731 },	-- Researching Korthian Relics
-				["provider"] = { "n", 177927 },	-- Tal-Galan
-				["isBreadcrumb"] = true,
-				["coord"] = { 62.7, 24.8, KORTHIA },
-			}),
-			q(63734, {	-- The Sundered Staff
-				["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
-				["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
-				["coord"] = { 58.9, 58.1, KORTHIA },
-			}),
-			q(63763, {	-- They Could Be Anyone
-				["sourceQuests"] = { 63762 },	-- Under the Illusion
-				["provider"] = { "i", 185740 },	-- Head of Azodius
-				["coord"] = { 56.5, 17.4, KORTHIA },
-				["crs"] = { 177243 },	-- Azodius
-			}),
-			q(63714, {	-- To the Vault
-				["sourceQuests"] = { 63713 },	-- Hooking Over
-				["provider"] = { "n", 177451 },	-- Tal-Galan
-				["coord"] = { 34.9, 35.3, KORTHIA },
-			}),
-			q(63762, {	-- Under the Illusion
-				["sourceQuests"] = { 63760 },	-- Echoes of Fate
-				["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
-				["coord"] = { 56.5, 17.4, KORTHIA },
-			}),
-			q(63726, {	-- Untangling the Sigil
-				["sourceQuests"] = { 63725 },	-- Into the Vault
-				["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 63.0, 25.6, KORTHIA },
+			q(64530, bubbleDownSelf({ ["customCollect"] = "SL_COV_NFA" }, {	-- Wilderling Saddle
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "i", 187281 },	-- Wilderling Saddle
+				["coord"] = { 33.1, 39.5, KORTHIA },
 				["g"] = {
-					i(187218),	-- Tome of Origins
+					i(186492),	-- Summer Wilderling (MOUNT!)
 				},
-			}),
-			q(63703, {	-- Vault of Secrets
-				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
-				["description"] = "Requires Renown 44 and completion of the original 9 chapters of your covenant's campaign.",
-				["provider"] = { "n", 177927 },	-- Tal-Galan
-				["coord"] = { 63.0, 24.8, KORTHIA },
-			}),
-			q(63704, {	-- Vengeance for Korthia
-				["sourceQuests"] = { 63703 },	-- Vault of Secrets
-				["provider"] = { "n", 177423 },	-- Tal-Galan
-				["coord"] = { 57.4, 29.9, KORTHIA },
-			}),
-			q(64562, {	-- We Need a Healer - You! (intro version)
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
-				["provider"] = { "n", 179216 },	-- Mikanikos
-				["coord"] = { 61.4, 23.2, KORTHIA },
-			}),
-			q(64506, {	-- What Must Be Found
-				["sourceQuests"] = { 63861 },	-- Beginning the Collection
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.6, 22.5, KORTHIA },
-			}),
-			q(63994, {	-- Who is the Maw Walker?
-				["sourceQuests"] = { 63663 },	-- Korthia, the City of Secrets
-				["provider"] = { "n", 177227 },	-- Tal-Galan
-				["coord"] = { 63.8, 23.7, KORTHIA },
-			}),
+			})),
 		}),
 		--	Weeklies
 		n(QUESTS, sharedData({
 			["isWeekly"] = true,
 		},{
-			q(64549, {	-- Legend of the Animaswell
-				["customCollect"] = "SL_COV_NFA",	-- Night Fae
+			q(64549, {	-- Legend of the Animaswell [NIght Fae]
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "i", 187423 },	-- Legend of the Animaswell
+				["customCollect"] = "SL_COV_NFA",	-- Night Fae
 			}),
-			q(64551, {	-- Legend of the Animaswell
-				["customCollect"] = "SL_COV_NEC",	-- Necrolord
+			q(64551, {	-- Legend of the Animaswell [Necrolord]
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "i", 187424 },	-- Legend of the Animaswell
+				["customCollect"] = "SL_COV_NEC",	-- Necrolord
 			}),
-			q(64552, {	-- Legend of the Animaswell
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian
+			q(64552, {	-- Legend of the Animaswell [Kyrian]
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "i", 187426 },	-- Legend of the Animaswell
+				["customCollect"] = "SL_COV_KYR",	-- Kyrian
 			}),
-			q(64553, {	-- Legend of the Animaswell
-				["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+			q(64553, {	-- Legend of the Animaswell [Venthyr]
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "i", 187428 },	-- Legend of the Animaswell
+				["customCollect"] = "SL_COV_VEN",	-- Venthyr
 			}),
 		})),
 		--	Dailies
@@ -763,7 +1346,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 179221 },	-- Rendle
 				["coord"] = { 61.6, 26.0, KORTHIA },
 				["g"] = {
-					--	different characters can have different rewards for this quest on the same day.  checked all 3 back to back on 5/18, priest had Paint Brush Cup, shaman had Wheelbarrow, and mage had Chalice
 					i(186690),	-- Gold Filled Barrel
 					i(186680),	-- Gold Filled Boot
 					i(186705),	-- Gold Filled Chalice
@@ -883,7 +1465,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			q(65266, {	-- Lost Research
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.8, 22.6, KORTHIA },
-				["timeline"] = { "added 9.1.5" },
+				["timeline"] = { ADDED_SL_1_5 },
 				["isWeekly"] = true,
 			}),
 			q(63954, {	-- Sealed Secrets

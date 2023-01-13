@@ -153,8 +153,76 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
-			ach(16363),	-- Just Don't Ask Me to Spell It
-			ach(16398),	-- Sojourner of Thaldraszus
+			ach(16363, {	-- Just Don't Ask Me to Spell It
+				crit(1, {	-- Valdrakken, City of Dragons
+					["sourceQuests"] = { 66252 },	-- Reporting In
+				}),
+				crit(2, {	-- Time Management
+					["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
+				}),
+				crit(3, {	-- Big Time Adventurer
+					["sourceQuests"] = { 66221 },	-- Moving On
+				}),
+			}),
+			ach(16621, {    -- One of Everything, Please
+				crit(1, {    -- Picante Pomfruit Cake
+					["provider"] = { "i", 200904 },
+					["coord"] = { 60.92, 11.0, VALDRAKKEN },
+				}),
+				crit(2, {    -- Icecrown Bleu
+					["provider"] = { "i", 201045 },
+					["coord"] = { 29.0, 65.0, VALDRAKKEN },
+				}),
+				crit(3, {    -- Dreamwarding Dripbrew
+					["provider"] = { "i", 201046 },
+					["coord"] = { 50.1, 42.6, THALDRASZUS },
+				}),
+				crit(4, {    -- Arcanostablilized Provisions
+					["provider"] = { "i", 201047 },
+					["coord"] = { 61.6, 53.1, 2085 },
+				}),
+				crit(5, {    -- Steamed Scarab Steak
+					["provider"] = { "i", 200871 },
+					["coord"] = { 38.9, 46.3, THALDRASZUS },
+				}),
+				crit(6, {    -- Craft Creche Crowler
+					["provider"] = { "i", 201089 },
+					["coords"] = {
+						{ 58.1, 83.0, THALDRASZUS },
+						{ 47.1, 82.9, THE_WAKING_SHORES },
+					},
+				}),
+				crit(7, {    -- Blood Sausages
+					["provider"] = { "i", 201090 },
+					["coord"] = { 52.4, 69.8, THALDRASZUS },
+				}),
+            }),
+			ach(16398, {	-- Sojourner of Thaldraszus
+				crit(1, {	-- Gelikyr Overlook
+					["sourceQuests"] = { 66472 },	-- Primal List
+				}),
+				crit(2, {	-- Drawing Conclusions
+					["sourceQuests"] = { 66467 },	-- Art Inmitates Life
+				}),
+				crit(3, {	-- The Screetchflight Scramble
+					["sourceQuests"] = { 66299 },	-- The Awaited Egg-splosion
+				}),
+				crit(4, {	-- Gardens of Unity
+					["sourceQuests"] = { 66412 },	-- Carry On, Basilton
+				}),
+				crit(5, {	-- Tyrhold Reservoir
+					["sourceQuests"] = { 65920 },	-- For the Ward!
+				}),
+				crit(6, {	-- Bleeding Hearts
+					["sourceQuests"] = { 69934 },	-- Bleeding Hearts
+				}),
+				crit(7, {	-- Serene Dreams Spa
+					["sourceQuests"] = { 70745 },	-- Enforced Relaxation
+				}),
+				crit(8, {	-- Misty Vale
+					["sourceQuests"] = { 70879 },	-- Report on the Rebels
+				}),
+			}),
 			ach(16578, {	-- Thaldraszus Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -254,9 +322,26 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["timeline"] = { ADDED_10_0_5 },
 			}),
 			pvp(ach(16593)),	-- Tour of Duty: Thaldraszus
-
-			-- TODO: NOT COMPLETED YET
-			ach(16301),	-- Treasures of Thaldraszus
+			ach(16301, {	-- Treasures of Thaldraszus
+				crit(1, {	-- Cracked Hourglass
+					["_quests"] = { 70607 },
+				}),
+				crit(2, {	-- Sand Pile
+					["_quests"] = { 70608 },
+				}),
+				crit(3, {	-- Amber Gem Cluster
+					["_quests"] = { 70408 },
+				}),
+				crit(4, {	-- Elegant Canvas Brush
+					["_quests"] = { 70609 },
+				}),
+				crit(5, {	-- Surveyor's Magnifying Glass
+					["_quests"] = { 70610 },
+				}),
+				crit(6, {	-- Acorn Harvester
+					["_quests"] = { 70611 },
+				}),
+			}),
 		}),
 	}),
 })));

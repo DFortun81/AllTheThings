@@ -56,7 +56,7 @@ _.Instances = { tier(LEGION_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				cr(91784, e(1480, {	-- Warlord Parjesh
 					i(134240),	-- Brinewashed Leather Cowl
 					i(134223),	-- Coralplate Chestguard
@@ -131,7 +131,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137379),	-- Tempestbinder's Crystal
 				})),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 110,
 				["g"] = {
 					cr(91784, e(1480, {	-- Warlord Parjesh
@@ -209,7 +209,7 @@ _.Instances = { tier(LEGION_TIER, {
 					}))
 				},
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_DUNGEON, {
 				["lvl"] = 110,
 				["g"] = {
 					cr(91784, e(1480, {	-- Warlord Parjesh

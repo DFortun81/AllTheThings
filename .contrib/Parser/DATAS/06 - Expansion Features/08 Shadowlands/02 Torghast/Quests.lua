@@ -5,38 +5,59 @@
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.1" } }, {
 	m(TORGHAST, {
 		n(QUESTS, {
-			q(60270, {	-- A Damned Pact
-				["sourceQuests"] = { 60269 },	-- Reawakening
-				["provider"] = { "n", 164937 },	-- Runecarver
-				["coord"] = { 50.6, 57.2, 1912 },
+			header(HEADERS.Achievement, 14754, {	-- The Forgotten One
+				q(60267, {	-- Prison of the Forgotten
+					["sourceQuests"] = { 61099 },	-- The Search For Baine
+					["provider"] = { "i", 178585 },	-- The Forgotten Key
+					["crs"] = { 175123 },	-- Warden Arkoban
+				}),
+				q(62967, {	-- Prison of the Forgotten
+					["description"] = "Only available if you delete they quest item",
+					["sourceQuests"] = { 61099 },	-- The Search For Baine
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(60268, {	-- Deep Within
+					["sourceQuests"] = {
+						60267,	-- Prison of the Forgotten
+						62967,	-- Prison of the Forgotten
+					},
+					["provider"] = { "n", 164937 },	-- Runecarver
+					["coord"] = { 50.6, 57.2, 1912 },
+				}),
+				q(60269, {	-- Reawakening
+					["sourceQuests"] = { 60268 },	-- Deep Within
+					["provider"] = { "n", 164937 },	-- Runecarver
+					["coord"] = { 50.6, 57.2, 1912 },
+				}),
+				q(60270, {	-- A Damned Pact
+					["sourceQuests"] = { 60269 },	-- Reawakening
+					["provider"] = { "n", 164937 },	-- Runecarver
+					["coord"] = { 50.6, 57.2, 1912 },
+				}),
+				q(60271, {	-- A Grave Chance
+					["sourceQuests"] = { 60270 },	-- A Damned Pact
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(60272, {	-- The Weak Link
+					["sourceQuests"] = { 60271 },	-- A Grave Chance
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
 			}),
+
+
+
+
 			q(62700, {	-- Ashes of the Tower
 				["sourceQuests"] = { 60272 },	-- The Weak Link
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.6, 57.2, 1912 },
 			}),
-			q(60268, {	-- Deep Within
-				["sourceQuests"] = { 60267 },	-- Prison of the Forgotten
-				["provider"] = { "n", 164937 },	-- Runecarver
-				["coord"] = { 50.6, 57.2, 1912 },
-			}),
-			q(60267, {	-- Prison of the Forgotten
-				["sourceQuests"] = { 61099 },	-- The Search For Baine
-				["provider"] = { "i", 178585 },	-- The Forgotten Key
-				["cr"] = 151329,	-- Warden Skoldus
-			}),
-			q(64816, {	-- Reality's Doorstep
-				["sourceQuests"] = { 64813 },	-- The Crown of Wills
-				["provider"] = { "n", 181379 },	-- Highlord Bolvar Fordragon
-				["coord"] = { 49.1, 69.5, 1912 },
-				["isBreadcrumb"] = true,
-				["timeline"] = { "added 9.2.0" },
-			}),
-			q(60269, {	-- Reawakening
-				["sourceQuests"] = { 60268 },	-- Deep Within
-				["provider"] = { "n", 164937 },	-- Runecarver
-				["coord"] = { 50.6, 57.2, 1912 },
-			}),
+
+
+
 			q(64210, {	-- The Box of Many Things
 				["sourceQuests"] = { 64557 },	-- In Darkness, Found
 				["provider"] = { "n", 179598 },	-- Ve'nish
@@ -45,30 +66,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 					1968,	-- TG107_Floor
 				},
 			}),
-			q(64813, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Crown of Wills
-				["sourceQuests"] = { 64812 },	-- Forge of Domination
-				["provider"] = { "n", 181384 },	-- The Primus
-				["coord"] = { 49.3, 58.6, 1912 },
-				["g"] = {
-					crit(5, {	-- Crown of Wills
-						["achievementID"] = 15259,	-- Secrets of the First Ones
-					}),
-					i(187785, {	-- Tome of the Eternal (RECIPE!)
-						recipe(359700, {	-- Vestige of the Eternal
-							["requireSkill"] = BLACKSMITHING,
-						}),
-						recipe(359701, {	-- Vestige of the Eternal
-							["requireSkill"] = JEWELCRAFTING,
-						}),
-						recipe(359702, {	-- Vestige of the Eternal
-							["requireSkill"] = LEATHERWORKING,
-						}),
-						recipe(359703, {	-- Vestige of the Eternal
-							["requireSkill"] = TAILORING,
-						}),
-					}),
-				},
-			})),
 			q(62719, {	-- The Final Pieces
 				["sourceQuests"] = { 60272 },    -- The Weak Link
 				["qgs"] = {
@@ -76,16 +73,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 					180509,	-- Runecarver [Alternate Version?]
 				},
 				["coord"] = { 50.4, 53.8, 1912 },    -- The Runecarver's Oubliette
-			}),
-			q(63727, {	-- The Primus Returns
-				["sourceQuests"] = { 63726 },	-- Untangling the Sigil
-				["provider"] = { "n", 177569 },	-- The Primus
-				["coord"] = { 50.2, 58.4, 1912 },	-- The Runecarver's Oubliette
-				["g"] = {
-					i(185965, {	-- Memories of Sunless Skies
-						["questID"] = 63893,
-					}),
-				},
 			}),
 			q(62800, {	-- The Vessels of Jewels
 				["sourceQuests"] = { 60272 },    -- The Weak Link
@@ -788,7 +775,6 @@ root("HiddenQuestTriggers", tier(SL_TIER, {
 		q(59995),	-- Tracking Quest (Finished The Fracture Chambers Layer 1)
 		q(59996),	-- Tracking Quest (Finished Skoldus Hall Layer 1)
 		q(59997),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
-		q(62967),	-- Triggered when opening Domination Lock for Prison of the Forgotten quest
 		q(62885),	-- triggered when learning legendary memory that triggered a cutscene w/Runecarver
 		q(62977),	-- Twisting Corridors, Layer 2 (it looks like TC quests don't reset weekly like the others/are used to mark account TC progress or something)
 		q(62978),	-- Twisting Corridors, Layer 4

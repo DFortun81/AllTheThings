@@ -46,7 +46,7 @@ _.Instances = { tier(MOP_TIER, {
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				ach(6400),	-- How Did He Get Up There?
 				ach(6402, {	-- Ling-Ting's Herbal Journey
 					i(86562),	-- Hopling
@@ -94,7 +94,7 @@ _.Instances = { tier(MOP_TIER, {
 					un(REMOVED_FROM_GAME, i(80901)),	-- Sudsy Legplates (7.1 - Removed from Game!)
 				})),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 90,
 				["g"] = {
 					ach(6420),	-- Hopocalypse Now!

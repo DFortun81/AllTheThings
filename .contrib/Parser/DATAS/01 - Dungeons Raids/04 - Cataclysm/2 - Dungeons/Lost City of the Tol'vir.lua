@@ -99,7 +99,7 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 			}),
-			d(1,   {	-- Normal
+			d(NORMAL_DUNGEON, {
 				e(117, {	-- General Husam
 					["crs"] = { 44577 },	-- General Husam
 					["g"] = {
@@ -177,7 +177,7 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 			}),
-			d(2,   {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 85,
 				["groups"] = {
 					e(117, {	-- General Husam

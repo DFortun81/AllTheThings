@@ -37,7 +37,7 @@ _.Instances = { tier(MOP_TIER, {
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				n(QUESTS, {
 					q(33107, {	-- Bad Feeling, Worse Result
 						["sourceQuests"] = { 33020 },	-- The Lost Secret of the Secret Ingredient
@@ -102,7 +102,7 @@ _.Instances = { tier(MOP_TIER, {
 					un(REMOVED_FROM_GAME, i(80869)),	-- Hopecrusher Gauntlets (7.1 - Removed from Game!)
 				})),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 90,
 				["g"] = {
 					cr(56448, e(672, {	-- Wise Mari

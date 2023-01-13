@@ -132,7 +132,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.2.5
 				q(57550),	--
 				-- 8.3.0
-				q(57830),	--
 				q(58576),	--
 				q(59038),	--
 				q(59040),	--
@@ -435,7 +434,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(191919),	-- Suspiciously Fuzzy Drink+++
 			}),
 			prof(JEWELCRAFTING, {
-				i(192809),	-- Temporal Residue
 				i(192872),	-- Fractured Glass
 				i(192880),	-- Crumbled Stone
 			}),
@@ -521,10 +519,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199115),	-- Herbalism Field Notes
 			i(199122),	-- Mining Field Notes
 			i(199128),	-- Skinning Field Notes
-			i(200506),	-- Roused Seedling
-			i(200507),	-- Decayed Roused Seedling
-			i(200508),	-- Propagating Roused Seedling
-			i(200509),	-- Agitated Roused Seedling
 			i(200638),	-- Bubblefilled Flounder
 			i(198656),	-- Painter's Pretty Jewel
 			i(201003),	-- Furry Gloop
@@ -556,9 +550,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(191889),	-- Ancient Sword Design
 			i(192128),	-- Reinforced Scale Sample
 			i(192129),	-- Azure Basilisk Belly
-			i(198133),	-- Golden Expedition Compass
-			i(198134),	-- Shiny Surveyor Scope
-			i(198135),	-- Jeb's Supply Pack
 		}),
 		n(TREASURES, {
 			i(191058),	-- Dilapidated Parchment: Bottom Half
@@ -574,7 +565,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194028),	-- Ancient Parchment: Bottom Half
 			i(194029),	-- Treasure Map: Thaldraszus
 			i(194442),	-- Activity Map: Apex Canopy
-			i(198085),	-- Lost Obsidian Cache Key
 		}),
 		n(WEAPONS, {
 			i(197693),	-- Shikaar Hunter's Crossbow
@@ -611,11 +601,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(196961),	-- Cliffside Wylderdrake: Armor
 			i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor
 			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
-			i(196970),	-- Cliffside Wylderdrake: Spiked Back
 			i(196974),	-- Cliffside Wylderdrake: Four Horned Chin
 			i(196975),	-- Cliffside Wylderdrake: Head Fin
 			i(196978),	-- Cliffside Wylderdrake: Small Head Spikes
-			i(196979),	-- Cliffside Wylderdrake: Curled Head Horns
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw
 			i(196990),	-- Cliffside Wylderdrake: Helm
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
@@ -627,7 +615,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197002),	-- Cliffside Wylderdrake: Flared Cheek
 			i(197004),	-- Cliffside Wylderdrake: Spiked Legs
 			i(197006),	-- Cliffside Wylderdrake: Plated Nose
-			i(197008),	-- Cliffside Wylderdrake: Narrow Stripes Pattern
 			i(197014),	-- Cliffside Wylderdrake: White Scales
 			i(197015),	-- Cliffside Wylderdrake: Dark Skin Variation
 			i(197016),	-- Cliffside Wylderdrake: Maned Tail
@@ -637,20 +624,17 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197099),	-- Highland Drake: Armor
 			i(197102),	-- Highland Drake: Horned Chin
 			i(197104),	-- Highland Drake: Tapered Chin
-			i(197106),	-- Highland Drake: Finned Head
 			i(197109),	-- Highland Drake: Spiked Head
 			i(197116),	-- Highland Drake: Ears
 			i(197118),	-- Highland Drake: Brown Hair
 			i(197119),	-- Highland Drake: Helm
 			i(197120),	-- Highland Drake: Ornate Helm
 			i(197124),	-- Highland Drake: Swept Horns
-			i(197128),	-- Highland Drake: Curled Back Horns
 			i(197129),	-- Highland Drake: Sleek Horns
 			i(197131),	-- Highland Drake: Hairy Cheek
 			i(197134),	-- Highland Drake: Spiked Legs
 			i(197136),	-- Highland Drake: Taperered Nose
 			i(197146),	-- Highland Drake: White Scales
-			i(197152),	-- Highland Drake: Hooked Tail
 			i(197155),	-- Highland Drake: Finned Neck
 			i(197156),	-- Highland Drake: Bronze and Green Armor
 			i(197348),	-- Renewed Proto-Drake: Black and Red Armor
@@ -726,11 +710,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199472),	-- Overflowing Dragon Expedition Supply Pack
 			i(199473),	-- Overflowing Iskaaran Supply Pack
 			i(199475),	-- Overflowing Valdrakken Accord Supply Pack
-			i(200285),	-- Dragonscale Expedition Insignia
-			i(200287),	-- Iskaara Tuskarr Insignia
-			i(200288),	-- Maruuk Centaur Insignia
-			i(200289),	-- Valdrakken Accord Insignia
-			i(200218),	-- Charred Fishing Pole
 			i(200452),	-- Dragonscale Expedition Insignia
 			i(200453),	-- Iskaara Tuskarr Insignia
 			i(200454),	-- Maruuk Centaur Insignia
@@ -744,34 +723,19 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201757),	-- Plundered Supplies
 			i(201921),	-- Dragonscale Expedition Insignia
 			i(201922),	-- Iskaara Tuskarr Insignia
-			i(201923),	-- Maruuk Centaur Insignia
-			i(201924),	-- Valdrakken Accord Insignia
 			i(202091),	-- Dragonscale Expedition Insignia
 			i(202092),	-- Iskaara Tuskarr Insignia
 			i(202093),	-- Valdrakken Accord Insignia
 			i(202094),	-- Maruuk Centaur Insignia
-			i(202171),	-- Dragon Purse
 			-- Fishing
-			i(199641),	-- Reinforced Irontree Harpoon Handle
-			i(199695),	-- Iskaaran Fishing Net
 			i(199696),	-- Iskaaran Ice Axe
-			i(199698),	-- Irontree Harpoon Handle
-			i(199844),	-- Serevite Harpoon Head
-			i(199845),	-- Jagged Serevite Harpoon Head
-			i(199846),	-- Seavine Harpoon Rope
-			i(199847),	-- Braided Seavine Harpoon Rope
-			i(199848),	-- Draconium Net Weights
 			i(199849),	-- Dense Draconium Net Weight
-			i(199850),	-- Imbu Knot
-			i(199851),	-- Double Imbu Knot
 			i(200077),	-- Wooden Pole
-			i(200082),	-- Battered Imbu-made Net
-			i(200084),	-- Salinated Serevite
 		}),
 		------------- PROBABLY NYI ---------------------
 
 		inst(1200, {	-- Vault of the Incarnates
-			d(17, {	-- LFR
+			d(LFR_RAID, {
 				i(202146),	-- Brawler's Earthen Cuirass [BoP]
 				i(202148),	-- Emissary's Flamewrought Seal [BoP]
 				i(202145),	-- Frozen Claw Mantle [BoP]
@@ -782,7 +746,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(202149),	-- Primalist Warden's Bracers [BoP]
 				i(202143),	-- Woven Stone Bracelets [BoP]
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_RAID, {
 				i(202146),	-- Brawler's Earthen Cuirass [BoP]
 				i(202148),	-- Emissary's Flamewrought Seal [BoP]
 				i(202145),	-- Frozen Claw Mantle [BoP]
@@ -793,7 +757,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(202149),	-- Primalist Warden's Bracers [BoP]
 				i(202143),	-- Woven Stone Bracelets [BoP]
 			}),
-			d(15, {	-- Heroic
+			d(HEROIC_RAID, {
 				i(202146),	-- Brawler's Earthen Cuirass [BoP]
 				i(202148),	-- Emissary's Flamewrought Seal [BoP]
 				i(202145),	-- Frozen Claw Mantle [BoP]
@@ -869,16 +833,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(193058),	-- Sherwood - Test Trinket
 			i(193067),	-- Acadia's Tools [DNT/Unused]
 			i(194337),	-- Liquid Courage
-			i(198441),	-- Thunderspine Tenders
 			i(201251),	-- Pillaged Contender's Strongbox
 			i(201252),	-- 10.0 Bronze PvP Chest (DNT)
 			i(201253),	-- Competitor's Edge
 			--
-			i(200944),	-- Djaradin's Trophy Mask
-			--
 			i(199553),	-- Memory of Unity
-			i(200680),	-- Maruukai Mule
-			i(200681),	-- Ohn Lite
 			i(200854),	-- Cooked Caviar
 			i(200856),	-- Sideboat
 			i(200862),	-- Experimental Duck Feed
@@ -908,8 +867,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 		-- Use this in a Cost.. Must find the source
 		i(194690),	-- Horn o' Mead
-		-- Special Reward
-		i(202047),	-- Gleaming Incarnate Thunderstone
 		n(PROFESSIONS, {
 			prof(ALCHEMY, {
 				r(371635),	-- Demonstration Item Recipe

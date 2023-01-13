@@ -67,10 +67,10 @@ root("Instances", tier(WOD_TIER, {
 					}),
 				}),
 			}),
-			d(17, {	-- LFR Queue NPC
+			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
 			}),
-			d(17, {	-- LFR
+			d(LFR_RAID, {
 				n(ZONE_DROPS, {
 					un(REMOVED_FROM_GAME, i(127115, {	-- Tome of Chaos
 						["crs"] = {
@@ -311,7 +311,7 @@ root("Instances", tier(WOD_TIER, {
 					})),
 				}),
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(39502, {	-- The Fel Spire
 						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
@@ -832,7 +832,7 @@ root("Instances", tier(WOD_TIER, {
 					un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
 				})),
 			}),
-			d(15, {	-- Heroic
+			d(HEROIC_RAID, {
 				n(QUESTS, {
 					q(40962, {	-- Dark Waters
 						["qg"] = 102432,	-- Malfurion Stormrage
@@ -1368,7 +1368,7 @@ root("Instances", tier(WOD_TIER, {
 					un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
 				})),
 			}),
-			d(16, {	-- Mythic
+			d(MYTHIC_RAID, {
 				n(QUESTS, {
 					q(39505, {	-- The Fel Spire (Mythic)
 						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Mythic difficulty each week.\n",

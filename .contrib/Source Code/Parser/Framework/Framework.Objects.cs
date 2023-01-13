@@ -1080,7 +1080,7 @@ namespace ATT
                 }
 
                 // Load in the Locale File and Warn about Unused Header IDs.
-                var content = File.ReadAllText("./../../locales/enUS.lua");
+                var content = File.ReadAllText("./../../locales/en.lua");
                 content = content.Substring(content.IndexOf("{", content.IndexOf("[\"HEADER_NAMES\"]")));
                 content = content.Substring(0, content.IndexOf('}'));
 
@@ -1390,6 +1390,7 @@ namespace ATT
                 }
             }
             #endregion
+
             #region Merge (for acquiring fields for the Item Database)
             /// <summary>
             /// Merge the array data!
@@ -1778,28 +1779,8 @@ namespace ATT
                     // Sub-Dictionary Data Type Fields (stored as Dictionary<int, int> for usability reasons)
                     case "modIDs":
                     case "bonusIDs":
-                        {
-                            // Convert the data to a list of generic objects.
-                            var newDict = value as Dictionary<long, object>;
-                            if (newDict == null) return;
-
-                            // Attempt to get the old list data.
-                            Dictionary<long, long> oldDict;
-                            if (item.TryGetValue(field, out object oldData))
-                            {
-                                // Convert the old data to a dictionary of ints.
-                                oldDict = oldData as Dictionary<long, long>;
-                            }
-                            else
-                            {
-                                // Create a new data dictionary of ints.
-                                item[field] = oldDict = new Dictionary<long, long>();
-                            }
-
-                            // Merge the new list of data into the old data and ensure there are no duplicate values.
-                            foreach (var pair in newDict) oldDict[pair.Key] = Convert.ToInt64(pair.Value);
-                            break;
-                        }
+                        MergeSpecificItemDataDictionary(item, field, value);
+                        break;
                     case "aqd":
                     case "hqd":
                         {
@@ -2215,6 +2196,38 @@ namespace ATT
                 }
 
                 item[field] = lockCriteria;
+            }
+
+            public static void MergeSpecificItemDataDictionary(Dictionary<string, object> data, string field, object value)
+            {
+                // Get or create desired existing data for item field
+                if (data.TryGetValue(field, out object dataField) && dataField is Dictionary<long, object> existing)
+                {
+                    // Convert data field to desired dictionary type
+                    existing = dataField as Dictionary<long, object>;
+                }
+                else
+                {
+                    // Assume we never replace a badly-formatted existing data
+                    data[field] = existing = new Dictionary<long, object>();
+                }
+
+                // perfect matching data!
+                if (value is Dictionary<long, object> goodValue || TryExpandList(value, out goodValue))
+                {
+                    foreach (var goodKvp in goodValue)
+                    {
+                        if (existing.TryGetValue(goodKvp.Key, out object existingValue) && !Equals(existingValue, goodKvp.Value))
+                        {
+                            Log($"WARNING: Data Changed => {MiniJSON.Json.Serialize(data)}");
+                            Log($"-- Field Value Overwrite: {field}:{goodKvp.Key}={existingValue} => {goodKvp.Value}");
+                        }
+                        existing[goodKvp.Key] = goodKvp.Value;
+                    }
+                    return;
+                }
+
+                Log($"Unable to merge value for Item field '{field}' with parsed Type {value.GetType().Name}{(value.GetType().ContainsGenericParameters ? string.Join(",", value.GetType().GenericTypeArguments.Select(t => t.Name)) : string.Empty)}");
             }
 
             /// <summary>
@@ -2741,26 +2754,58 @@ namespace ATT
             }
 
             /// <summary>
-            /// Returns the specified data compressed into a List
+            /// Returns the specified data compressed into a List of objects
             /// </summary>
             /// <param name="value"></param>
             /// <returns></returns>
             internal static List<object> CompressToList(object value)
             {
-                if (value is List<object> newList)
+                return CompressToList<object>(value);
+            }
+
+            /// <summary>
+            /// Returns the specified data compressed into a List of a specified Type if possible
+            /// </summary>
+            internal static List<T> CompressToList<T>(object value)
+            {
+                if (value is List<T> newList)
                     return newList;
 
-                if (value is IEnumerable<object> ienum)
+                if (value is IEnumerable<T> ienum)
                     return ienum.ToList();
 
-                if (value is IDictionary<long, object> idict)
+                if (value is IDictionary<long, T> idict)
                     return idict.Values.ToList();
 
-                if (value is IDictionary<string, object> sdict)
+                if (value is IDictionary<string, T> sdict)
                     return sdict.Values.ToList();
 
                 // something that doesn't make sense as a List
                 return null;
+            }
+
+            /// <summary>
+            /// When Lua parses a Dictionary format as a List due to incrementing indexes, we can convert it back to a Dictionary using the incrementing indexes
+            /// </summary>
+            /// <typeparam name="TValue"></typeparam>
+            /// <param name="list"></param>
+            /// <returns></returns>
+            internal static bool TryExpandList(object value, out Dictionary<long, object> dict)
+            {
+                dict = new Dictionary<long, object>();
+                var list = CompressToList(value);
+                if (list == null || list.Count == 0)
+                {
+                    return false;
+                }
+
+                long luaIndex = 1;
+                foreach (object val in list)
+                {
+                    dict.Add(luaIndex++, val);
+                }
+
+                return true;
             }
             #endregion
         }

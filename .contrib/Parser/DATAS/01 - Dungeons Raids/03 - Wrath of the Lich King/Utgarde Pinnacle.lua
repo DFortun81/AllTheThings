@@ -101,7 +101,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					["cr"] = 26692,	-- Ymirjar Harpooner
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				-- #if BEFORE 7.3.5
 				n(ZONE_DROPS, {
 					i(37068),	-- Berserker's Sabatons
@@ -197,7 +197,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					-- #if BEFORE 7.3.5

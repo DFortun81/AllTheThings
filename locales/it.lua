@@ -514,6 +514,7 @@ local L = app.L;
 		--TODO: L.PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
 		--TODO: L.PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
 		--TODO: L.PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.."-Clicked to Switch to it";
+		--TODO: L.SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 
 	-- Sync tab
 		--TODO: L.SYNC = "Sync";
@@ -814,15 +815,12 @@ for key,value in pairs({
 		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
 		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
 		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
-		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
-		[-977] = "Maelie la Girovaga",								-- Maelie the Wanderer
 		[-979] = "Alienatore Ve'ken & Alienatore Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Potenziamenti al Santuario",						-- Sanctum Upgrades
 		[-924] = "Rete di Trasporto",								-- Transport Network
 		-- SL Ardenweald/Night Fae
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			[-940] = "Concilio degli Ascesi",						-- Ascended Counil
 			--TODO: [-973] = "Loyalty",								-- Loyalty
 			--TODO: [-975] = "Humility",							-- Humility
 		-- SL Revendreth/Venthyr
@@ -857,6 +855,7 @@ for key,value in pairs({
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Accordo di Valdrakken",							-- Valdrakken Accord
 		[-1142] = "Sfide Aeree",									-- Aerial Challenges
+		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",
@@ -3185,6 +3184,8 @@ for key,value in pairs({
 	[364932] = "Lingotto Fiammeggiante",	-- Blazing Ingot
 	[364937] = "Risucchiatore Fasico",	-- Phasic Siphoner
 	[364987] = "Diario dell'Alienatore",	-- Broker Journal
+	[364994] = "Piccone Spettrale",	-- Spectral Pick
+	[365084] = "Picca del Tormentatore",	-- Tormentor's Pike
 	[365093] = "Libri di Canti di Teotar",	-- Theotar's Caroling Books
 	[368205] = "Scrigno dei Giurafauce",	-- Mawsworn Cache
 	[368206] = "Scrigno dei Giurafauce",	-- Mawsworn Cache
@@ -3415,13 +3416,18 @@ for key,value in pairs({
 	[377534] = "Scrigno Consegnato",	-- Delivered Vault
 	[377899] = "Ostaggio dei Drospi Cornuti Nascosto",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
+	--TODO: [377938] = "Prismatic Leaper School",	-- Prismatic Leaper School
 	[378010] = "Tesoro dei Draghi Dimenticato",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "Birra di Marea",	-- Riptide Brew
+	[378088] = "Fiore Cristallino",	-- Crystalline Flower
 	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
 	[378857] = "Cassa d'Ossidiana Perduta",	-- Lost Obsidian Cache
+	--TODO: [379168] = "Lost Cache Key",	-- Lost Cache Key
 	[379290] = "Statua Adornata",	-- Ornamented Statue
 	--TODO: [379296] = "Broken Banding",	-- Broken Banding
 	[379297] = "Melma Bum Bum",	-- Slam Bam Swill
+	[379314] = "Rete da Pesca Piena",	-- Full Fishing Net
 	[379321] = "Impronte di Zampe Misteriose",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
@@ -3497,6 +3503,7 @@ for key,value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "La Gran Banca",	-- The Great Vault
 	[381045] = "Calice del Drago Dorato",	-- Golden Dragon Goblet
+	[381069] = "Rete da Pesca Piena",	-- Full Fishing Net	--TODO: this was manually translated
 	[381094] = "Spazzola Elegante",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
 	[381108] = "Mappa di Yennu",	-- Yennu's Map
@@ -3523,31 +3530,34 @@ for key,value in pairs({
 	[381484] = "Osso Ben Conservato",	-- Well-Preserved Bone
 	[381485] = "Saponetta Perduta dell'Avventuriero",	-- Adventurer's Lost Soap Bar
 	[381510] = "Lische di Pesce Volanti",	-- Flying Fish Bones
-	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
+	[381511] = "Punta d'Arpione",	-- Harpoon Head
 	--TODO: [381513] = "Old Pickaxe",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
-	[381579] = "Richiesta degli Archivisti",	-- Archivists' Request	--TODO: this was manually translated
+	[381579] = "Richiesta degli Archivisti",	-- Archivists' Request
 	[381650] = "Richiesta degli Archivisti",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Iscrizioni a Zanne Ali Fuoco.",	-- Fang Flap Fire Signups
 	[381661] = "Richiesta degli Archivisti",	-- Archivists' Request
-	[381662] = "Richiesta degli Archivisti",	-- Archivists' Request	--TODO: this was manually translated
+	[381662] = "Richiesta degli Archivisti",	-- Archivists' Request
 	[381663] = "Tempesta di Mana per Principianti",	-- Manastorming For Beginners
 	[381664] = "Richiesta degli Archivisti",	-- Archivists' Request
 	[381667] = "Richiesta degli Archivisti",	-- Archivists' Request
-	[381668] = "Richiesta degli Archivisti",	-- Archivists' Request	--TODO: this was manually translated
+	[381668] = "Richiesta degli Archivisti",	-- Archivists' Request
 	[381669] = "Richiesta degli Archivisti",	-- Archivists' Request	--TODO: this was manually translated
 	[381670] = "Richiesta degli Archivisti",	-- Archivists' Request
 	[381671] = "Richiesta degli Archivisti",	-- Archivists' Request
 	[381672] = "Richiesta degli Archivisti",	-- Archivists' Request
 	[381687] = "Nota Scartata",	-- Discarded Note
 	[381701] = "RICERCATO: Mara'nar il Tonante",	-- WANTED: Mara'nar the Thunderous
-	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
+	[381981] = "Cassa dell'Alluvione",	-- Chest of the Flood
 	[382029] = "Terra Smossa",	-- Disturbed Dirt
+	[382071] = "Rete da Pesca Piena",	-- Full Fishing Net
 	[382166] = "Banchetto di Rubino!",	-- The Ruby Feast!
+	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	[382193] = "Cassa degli Elementi",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Cassa di Pescilume Freschi",	-- Case of Fresh Gleamfish
 	[384318] = "Segnalibro Incospicuo",	-- Inconspicuous Bookmark
+	[384370] = "Appunti Deliberatamente Negligenti",	-- Deliberately Delinquent Notes
 	[384405] = "Pesce Semibollito",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Uovo di Drago Pietrificato",	-- Petrified Dragon Egg

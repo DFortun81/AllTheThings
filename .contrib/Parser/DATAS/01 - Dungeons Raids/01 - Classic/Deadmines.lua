@@ -502,7 +502,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 			}),
 			-- #if AFTER CATA
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 			-- #endif
 				n(3586, {	-- Miner Johnson
 					["description"] = "This is a rare that is not always present.",
@@ -692,7 +692,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			-- #if AFTER CATA
 			}),
 			-- #endif
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["timeline"] = { "added 4.0.3" },
 				["lvl"] = 85,
 				["groups"] = {

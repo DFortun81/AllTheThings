@@ -42,7 +42,7 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				},
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				n(ZONE_DROPS, {
 					["crs"] = {
 						55559,	-- Crystalline Elemental

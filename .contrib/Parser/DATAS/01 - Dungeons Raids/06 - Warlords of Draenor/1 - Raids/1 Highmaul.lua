@@ -24,10 +24,10 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(17, {	-- LFR Queue NPC
+			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
 			}),
-			d(17, {	-- LFR
+			d(LFR_RAID, {
 				n(ZONE_DROPS, {
 					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone
 						["crs"] = {
@@ -144,7 +144,7 @@ _.Instances = { tier(WOD_TIER, {
 					})),
 				}),
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_RAID, {
 				n(ZONE_DROPS, {
 					i(119343, {	-- Eye-Blinder Greatcloak
 						["crs"] = {
@@ -344,7 +344,7 @@ _.Instances = { tier(WOD_TIER, {
 					un(REMOVED_FROM_GAME, i(115289)),	-- Sigil of the Sorcerer King
 				})),
 			}),
-			d(15, {	-- Heroic
+			d(HEROIC_RAID, {
 				n(ZONE_DROPS, {
 					i(119343, {	-- Eye-Blinder Greatcloak
 						["crs"] = {
@@ -545,7 +545,7 @@ _.Instances = { tier(WOD_TIER, {
 					un(REMOVED_FROM_GAME, i(115289)),	-- Sigil of the Sorcerer King
 				})),
 			}),
-			d(16, {	-- Mythic
+			d(MYTHIC_RAID, {
 				n(ZONE_DROPS, {
 					i(119343, {	-- Eye-Blinder Greatcloak
 						["crs"] = {

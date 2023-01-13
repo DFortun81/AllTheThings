@@ -589,7 +589,7 @@ _.Instances = { tier(MOP_TIER, {
 					}),
 				},
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
 				["g"] = {
@@ -1200,7 +1200,7 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 				},
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["g"] = {

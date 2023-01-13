@@ -514,6 +514,7 @@ local L = app.L;
 		--TODO: L.PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
 		--TODO: L.PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
 		--TODO: L.PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.."-Clicked to Switch to it";
+		--TODO: L.SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 
 	-- Sync tab
 		--TODO: L.SYNC = "Sync";
@@ -822,15 +823,12 @@ for key,value in pairs({
 		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
 		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
 		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
-		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
-		[-977] = "Maelie, a Errante",								-- Maelie the Wanderer
 		[-979] = "Corretor Ve'ken & Corretor Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Aprimoramentos de Santuário",						-- Sanctum Upgrades
 		[-924] = "Rede de Transporte",								-- Transport Network
 		-- SL Ardenweald/Night Fae
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			[-940] = "Conselho dos Ascendidos",						-- Ascended Counil
 			--TODO: [-973] = "Loyalty",								-- Loyalty
 			--TODO: [-975] = "Humility",							-- Humility
 		-- SL Revendreth/Venthyr
@@ -865,6 +863,7 @@ for key,value in pairs({
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Acordo de Valdrakken",							-- Valdrakken Accord
 		[-1142] = "Desafios Aéreos",								-- Aerial Challenges
+		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
 	-- Warrior order hall lore items
 		[-2200] = "O Grande Odyn e o Senhor do Fogo",				-- Great Odyn and the Firelord
 		[-2201] = "O Andarilho e a Serpente",						-- The Wanderer and the Serpent
@@ -3193,6 +3192,8 @@ for key,value in pairs({
 	[364932] = "Lingote Fulgurante",	-- Blazing Ingot
 	[364937] = "Canalizador Fásico",	-- Phasic Siphoner
 	[364987] = "Diário de Corretor",	-- Broker Journal
+	[364994] = "Picareta Espectral",	-- Spectral Pick
+	[365084] = "Pique do Atormentador",	-- Tormentor's Pike
 	[365093] = "Livros de Canções de Theotar",	-- Theotar's Caroling Books
 	[368205] = "Cabedal Górjuro",	-- Mawsworn Cache
 	[368206] = "Cabedal Górjuro",	-- Mawsworn Cache
@@ -3406,7 +3407,7 @@ for key,value in pairs({
 	[376175] = "Baú de Suprimentos de Velaplena",	-- Fullsails Supply Chest
 	--TODO: [376213] = "Mysterious Wand",	-- Mysterious Wand
 	[376386] = "Poeira Revolvida",	-- Disturbed Dirt
-	--TODO: [376426] = "Magic-Bound Chest",	-- Magic-Bound Chest
+	[376426] = "Baú Trancado com Magia",	-- Magic-Bound Chest
 	[376451] = "Cronômetro de Bronze",	-- Bronze Stopwatch
 	[376580] = "Baú de Djaradin",	-- Djaradin Cache
 	[376581] = "Baú de Clã",	-- Clan Chest
@@ -3423,13 +3424,18 @@ for key,value in pairs({
 	[377534] = "Cofre Entregue",	-- Delivered Vault
 	[377899] = "Refém Zapo-de-chifre Escondido",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
+	--TODO: [377938] = "Prismatic Leaper School",	-- Prismatic Leaper School
 	[378010] = "Tesouro do Dragão Esquecido",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "Cerveja Contracorrente",	-- Riptide Brew
+	[378088] = "Flor Cristalina",	-- Crystalline Flower
 	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
 	[378857] = "Baú de Obsidiana Perdido",	-- Lost Obsidian Cache
+	--TODO: [379168] = "Lost Cache Key",	-- Lost Cache Key
 	[379290] = "Estátua Ornamentada",	-- Ornamented Statue
 	--TODO: [379296] = "Broken Banding",	-- Broken Banding
 	[379297] = "Gororoba de Bambu Batido",	-- Slam Bam Swill
+	[379314] = "Rede de Pesca Cheia",	-- Full Fishing Net
 	[379321] = "Pegada Misteriosa",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
@@ -3505,6 +3511,7 @@ for key,value in pairs({
 	[380991] = "Monturo de Terra",	-- Dirt Mound
 	[381035] = "O Grande Cofre",	-- The Great Vault
 	[381045] = "Cálice do Dragão Dourado",	-- Golden Dragon Goblet
+	[381069] = "Rede de Pesca Cheia",	-- Full Fishing Net
 	[381094] = "Pincel Elegante",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
 	[381108] = "Mapa de Yennu",	-- Yennu's Map
@@ -3538,7 +3545,7 @@ for key,value in pairs({
 	[381650] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "Inscrições Fogo, Asa, Presa",	-- Fang Flap Fire Signups
 	[381661] = "Pedido dos Arquivistas",	-- Archivists' Request
-	[381662] = "Pedido dos Arquivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381662] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381663] = "Manavento para Iniciantes",	-- Manastorming For Beginners
 	[381664] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381667] = "Pedido dos Arquivistas",	-- Archivists' Request
@@ -3549,13 +3556,16 @@ for key,value in pairs({
 	[381672] = "Pedido dos Arquivistas",	-- Archivists' Request
 	[381687] = "Nota Descartada",	-- Discarded Note
 	[381701] = "PROCURA-SE: Mara'nar, o Trovejante",	-- WANTED: Mara'nar the Thunderous
-	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
+	[381981] = "Baú da Inundação",	-- Chest of the Flood
 	[382029] = "Poeira Revolvida",	-- Disturbed Dirt
+	[382071] = "Rede de Pesca Cheia",	-- Full Fishing Net	--TODO: this was manually translated
 	[382166] = "Banquete Rubi!",	-- The Ruby Feast!
+	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Caixa de Peixe-brilho Fresco",	-- Case of Fresh Gleamfish
 	[384318] = "Marcador de Páginas Inconspícuo",	-- Inconspicuous Bookmark
+	--TODO: [384370] = "Deliberately Delinquent Notes",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Ovo de Dragão Petrificado",	-- Petrified Dragon Egg

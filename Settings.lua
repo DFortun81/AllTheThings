@@ -46,7 +46,7 @@ settings:SetBackdropColor(0, 0, 0, 1);
 do	-- Add the ATT Settings frame into the WoW Settings options
 	local toc = select(4, GetBuildInfo());
 	-- 10.0: new way to configure settings frame
-	if toc >= 100000 then
+	if toc < 100000 then
 		InterfaceOptions_AddCategory(settings);
 		settings.Open = function(self)
 			-- Open the Options menu.
@@ -54,6 +54,7 @@ do	-- Add the ATT Settings frame into the WoW Settings options
 		end
 	else
 		local category = Settings.RegisterCanvasLayoutCategory(settings, settings.name)
+		category.ID = settings.name;
 		Settings.RegisterAddOnCategory(category)
 		settings.Open = function(self)
 			-- Open the Options menu.
@@ -150,6 +151,7 @@ local GeneralSettingsBase = {
 		["CC:SL_COV_VEN"] = true,
 		["CC:SL_COV_NFA"] = true,
 		["CC:SL_COV_NEC"] = true,
+		["Profile:ShowProfileLoadedMessage"] = true,
 	},
 };
 local FilterSettingsBase = {};
@@ -412,7 +414,7 @@ settings.ApplyProfile = function()
 			end
 		end
 
-		if app.IsReady then
+		if app.IsReady and settings:Get("Profile:ShowProfileLoadedMessage") then
 			app.print(L["PROFILE"]..":",settings:GetProfile(true));
 		end
 		return true;
@@ -4402,7 +4404,7 @@ local ProfileSelector = settings:CreateScrollFrame();
 local ProfileScroller = ProfileSelector.ScrollContainer;
 ProfileScroller:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 0, -10);
 ProfileScroller:SetPoint("RIGHT", NewProfileTextBox, "RIGHT", 25, 0);
-ProfileScroller:SetPoint("BOTTOM", settings, "BOTTOM", 0, 20);
+ProfileScroller:SetPoint("BOTTOM", settings, "BOTTOM", 0, 40);
 settings.ApplyBackdropColor(ProfileScroller, 20, 20, 20, 1);
 ProfileSelector:SetHeight(100);
 
@@ -4535,6 +4537,17 @@ local CopyProfileButton = settings:CreateButton(
 });
 CopyProfileButton:SetPoint("TOPLEFT", SwitchProfileButton, "BOTTOMLEFT", 0, -4);
 CopyProfileButton:Show();
+
+-- Checkbox to show profile loaded message
+local ShowProfileLoadedCheckBox = settings:CreateCheckBox(L["SHOW_PROFILE_LOADED"],
+function(self)
+	self:SetChecked(settings:Get("Profile:ShowProfileLoadedMessage"));
+end,
+function(self)
+	settings:Set("Profile:ShowProfileLoadedMessage", not settings:Get("Profile:ShowProfileLoadedMessage"));
+	self:SetChecked(settings:Get("Profile:ShowProfileLoadedMessage"));
+end);
+ShowProfileLoadedCheckBox:SetPoint("TOPLEFT", ProfileScroller, "BOTTOMLEFT", 0, -4);
 
 local function ProfileCheckbox_Disable(self)
 	self:Disable();

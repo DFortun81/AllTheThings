@@ -9,7 +9,19 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 			1697,	-- Plaguefall
 		},
 		["g"] = {
-			n(QUESTS, {}),	-- Do Not Remove
+			n(QUESTS, {
+				q(59520, {	-- Plaguefall: Knee Deep In It
+					["sourceQuests"] = { 59223 },	-- By Any Other Name
+					["provider"] = { "n", 165052 },	-- Vial Master Lurgy
+					["coord"] = { 59.4, 72.9, MALDRAXXUS },
+					["g"] = {
+						i(175533),	-- Corpse-Stitcher's Amice
+						i(175532),	-- Cruel Executioner's Pauldrons
+						i(175531),	-- Deceitful Agent's Shoulderpads
+						i(175534),	-- Flesh Architect's Epaulets
+					},
+				}),
+			}),
 			n(CONDUITS, {
 				e(2419, {	-- Globgrog
 					["crs"] = { 164255 },	-- Globgrog
@@ -66,7 +78,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(NORMAL_D, {
+			d(NORMAL_DUNGEON, {
 				e(2419, {	-- Globgrog
 					["crs"] = { 164255 },	-- Globgrog
 					["g"] = {
@@ -115,7 +127,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(HEROIC_D, {
+			d(HEROIC_DUNGEON, {
 				n(SPECIAL, {
 					mount(346141, {	-- Slime Serpent (MOUNT!)
 						["description"] = "Requires solo kill of all bosses in either Heroic or Mythic Plaguefall.",
@@ -169,7 +181,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(MYTHIC_D, {
+			d(MYTHIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
 					ach(14292),	-- Riding with my Slimes
 				}),

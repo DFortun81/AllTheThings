@@ -4093,6 +4093,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
+				q(65896, {	-- Let the Healing Begin
+					["qg"] = 190830,	-- Otan Tennoh
+					["coord"] = { 44.2, 57.0, STORMWIND_CITY },
+					["timeline"] = { "added 10.0.2" },
+					["races"] = { DRACTHYR_ALLIANCE },
+				}),
 				q(58909, {	-- License to Ride
 					["qg"] = 163007,	-- Curly
 					["sourceQuest"] = 58908,	-- Finding Your Way (A)

@@ -5,9 +5,6 @@
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 	achcat(ACHIEVEMENT_CATEGORY_COLLECT, {
 		petbattle(ach(7465)),		-- An Uncommon Find*
-		ach(15004, {	-- A Sly Fox
-			i(186539),	-- Sly
-		}),
 		petbattle(ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)
 			i(163634),		-- Dreadtick Leecher
 			crit(1),		-- Shadowback Crawler

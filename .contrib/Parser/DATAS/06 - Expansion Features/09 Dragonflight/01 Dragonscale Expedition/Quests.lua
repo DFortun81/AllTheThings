@@ -119,6 +119,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(191294),	-- Small Expedition Shovel
 				},
 			}),
+			q(70835, {	-- Sturdy Expedition Shovel
+				["minReputation"] = { 2507, 5 },	-- Dragonscale Expedition Renown 5
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["requireSkill"] = BLACKSMITHING,
+			}),
 			q(72026, {	-- Dragonscale Expedition Supplies
 				["minReputation"] = { 2507, 5 },	-- Dragonscale Expedition Renown 5
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
@@ -394,6 +400,106 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(200738),	-- Onyx Gem Cluster Map
 				},
 			}),
+				-- RENOWN 22 --
+			q(70810, {	-- Broader Mysteries of the Dragon Isles Drakes
+				["minReputation"] = { 2507, 22 },	-- Dragonscale Expedition Renown 22
+				["provider"] = { "n", 188265 },	-- Rae'anna
+				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
+				["g"] = {
+					i(197144),	-- Highland Drake: Red Scales (DM!)
+					i(197010),	-- Cliffside Wylderdrake: Red Scales (DM!)
+					i(197614),	-- Windborne Velocidrake: Red Scales (DM!)
+				},
+			}),
+				-- RENOWN 23 --
+			q(72308, {	-- Expedition Crafting Knowledge
+				["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 22
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["requireSkill"] = MINING,
+				["g"] = {
+					i(201716),	-- Notebook of Crafting Knowledge
+				},
+			}),
+				-- RENOWN 24 --
+			q(69097, {	-- A Vault Unsealed
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["description"] = "Spawns Anywhere on Dragon Isles.",
+				["provider"] = { "n", 196643 },	-- Doc Nanners
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+				["isBreadcrumb"] = true,	-- TODO: double check this
+			}),
+			q(67722, {	-- Break on Through
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["sourceQuests"] = { 69097 },	-- A Vault Unsealed
+			}),
+			q(66636, {	-- The Other Side
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["sourceQuests"] = { 67722 },	-- Break on Through
+				["provider"] = { "n", 191838 },	-- Toddy Whiskers
+				["coord"] = { 54.2, 55.4, THALDRASZUS },
+			}),
+			q(66173, {	-- Hall of Samples
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["sourceQuests"] = { 66636 },	-- The Other Side
+				["provider"] = { "n", 192820 },	-- Toddy Whiskers
+				["coord"] = { 55.1, 56.2, THALDRASZUS },
+			}),
+			q(66174, {	-- Hall of the Aspects
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["sourceQuests"] = { 66636 },	-- The Other Side
+				["provider"] = { "n", 192820 },	-- Toddy Whiskers
+				["coord"] = { 55.1, 56.2, THALDRASZUS },
+			}),
+			q(71152, {	-- Back to the Main Hall
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["sourceQuests"] = {
+					66173,	-- Hall of Samples
+					66174,	-- Hall of the Aspects
+				},
+				["providers"] = {
+					{ "n", 191853 },	-- Toddy Whiskers
+					{ "n", 193374 },	-- Toddy Whiskers
+				},
+				["coords"] = {
+					{ 58.1, 53.0, THALDRASZUS },
+					{ 57.2, 52.6, THALDRASZUS },
+				},
+			}),
+			q(66546, {	-- Retrieve the Discs
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["sourceQuests"] = { 71152 },	-- Back to the Main Hall
+				["provider"] = { "n", 192820 },	-- Toddy Whiskers
+				["coord"] = { 55.1, 56.2, THALDRASZUS },
+			}),
+			q(66547, {	-- It Belongs in a Museum... Eventually
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["sourceQuests"] = { 66546 },	-- Retrieve the Discs
+				["provider"] = { "n", 192967 },	-- Toddy Whiskers
+				["coord"] = { 54.4, 55.5, THALDRASZUS },
+			}),
+				-- RENOWN 25 --
+			q(70834, {	-- Titled Story
+				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renown 25
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					spell(388278),	-- Intrepid Explorer cast
+					title(736),	-- Intrepid Explorer %s (title!)
+					i(197921),	-- Primal Infusion
+				},
+			}),
+			q(70821, {	-- Skitterfly Riding
+				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renown 25
+				["provider"] = { "n", 187408 },	-- Granpap Whiskers
+				["coord"] = { 47.7, 83.2, THE_WAKING_SHORES },
+				["g"] = {
+					i(192761),	-- Tamed Skitterfly (Mount!)
+					i(192762),	-- Azure Skitterfly (Mount!)
+				},
+			}),
 
 				-- Weeklies --
 			q(71007, {	-- Wanted: Disoriented Wishtail
@@ -475,6 +581,12 @@ root("HiddenQuestTriggers", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = TIMELI
 		q(72044),	-- Triggered with 'One of Us Now' (70832)
 		q(72045),	-- Triggered with 'Demolitions Access' (70815)
 		q(72046),	-- Triggered with 'Rumors of the Jeweled Whelplings' (70833)
+		q(72047),	-- Triggered with 'Broader Mysteries of the Dragon Isles Drakes' (70810)
+		q(72402),	-- Triggered on reaching Renown 24 before accepting any quests
+		q(72048),	-- Triggered with 'A Vault Unsealed' (69097)
+		q(72752),	-- Triggered on completion of 'It Belongs in a Museum... Eventually' (also at the same time as Friend of the Dragon Isles popping, unsure which is the trigger)
+		q(72822),	-- Triggered on completion of 'It Belongs in a Museum... Eventually' (also at the same time as Friend of the Dragon Isles popping, unsure which is the trigger)
+		q(72049),	-- Triggered with 'Skitterfly Riding' (70821)
 
 		-- Ensembles
 		q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor

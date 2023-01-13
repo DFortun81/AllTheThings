@@ -180,7 +180,7 @@ _.Instances = { tier(LEGION_TIER, {
 				i(143670),	-- Thin-Soled Fiend Slayer Boots
 				i(143667),	-- Worn Battlescar Boots
 			}),
-			d(2,  {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				e(1820, {	-- Opera Hall: Wikket
 					["crs"] = {
 						114339,	-- Barnes <The Stage Manager>
@@ -345,7 +345,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
 					ach(11433, {	-- Burn After Reading
 						crit(1, {	-- Legacy of the Mountain King

@@ -2497,7 +2497,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(28619, {	-- Warchief's Command: Arathi Highlands!
 					["provider"] = { "o", 207279 },	-- Warchief's Command Board
 					["coord"] = { 56.5, 47.1, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984", "removed 7.3.2" },
+					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28089, {	-- Warchief's Command: Hillsbrad Foothills!

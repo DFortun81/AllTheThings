@@ -12,7 +12,13 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 			1687,	-- Lower Barrow of Carnage
 		},
 		["g"] = {
-			n(QUESTS, {}),	-- Do Not Remove
+			n(QUESTS, {
+				q(58095, {	-- Theater of Pain: Help Wanted
+					["provider"] = { "n", 159689 },	-- Overseer Kalvaros
+					["coord"] = { 54.0, 50.8, MALDRAXXUS },
+					["_drop"] = { "g" },	-- Anima Trash
+				}),
+			}),
 			n(CONDUITS, {
 				e(2397, {	-- An Affront of Challengers
 					["crs"] = {
@@ -97,7 +103,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(NORMAL_D, {
+			d(NORMAL_DUNGEON, {
 				e(2397, {	-- An Affront of Challengers
 					["crs"] = {
 						164451,	-- Dessia the Decapitator
@@ -160,7 +166,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(HEROIC_D, {
+			d(HEROIC_DUNGEON, {
 				e(2397, {	-- An Affront of Challengers
 					["crs"] = {
 						164451,	-- Dessia the Decapitator
@@ -223,7 +229,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(MYTHIC_D, {
+			d(MYTHIC_DUNGEON, {
 				e(2397, {	-- An Affront of Challengers
 					["crs"] = {
 						164451,	-- Dessia the Decapitator

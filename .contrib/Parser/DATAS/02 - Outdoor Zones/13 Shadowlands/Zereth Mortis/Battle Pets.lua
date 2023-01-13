@@ -49,7 +49,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 			}),
 			pet(3215, {	-- Mawtouched Geomental
 				["description"] = "Requires eating a Questionable Mawshroom from Korthia to see.",
-				["cr"] = 183231,
+				["crs"] = { 183231 },
 				["provider"] = { "i", 187244 },	-- Questionable Mawshroom
 				["coords"] = {
 					{ 61.4, 73.6, ZERETH_MORTIS },

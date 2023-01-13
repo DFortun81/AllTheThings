@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(BASTION, {
 		n(ZONE_DROPS, {
 			currency(1819, {	-- Medallion of Service

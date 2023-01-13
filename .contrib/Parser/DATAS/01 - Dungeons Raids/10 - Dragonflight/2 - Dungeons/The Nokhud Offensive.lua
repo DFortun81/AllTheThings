@@ -19,9 +19,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 41.6, 56.7, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(200251),	-- Medallion of the Ancestors
-						crit(5, {	-- Elder Nazuun
-							["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-						}),
 					},
 				}),
 				q(66658, {	-- The Nokhud Offensive: Founders Keepers
@@ -34,9 +31,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(197897),	-- Keratin-Reinforced Coif
 						i(197899),	-- Speakbreaker Barbuta
 						i(197356),	-- Renewed Proto-Drake: Hairy Back
-						crit(6, {	-- The Eternal Kurgans
-							["achievementID"] = 16405,	-- Sojourner of Ohn'ahran Plains
-						}),
 					},
 				}),
 				q(66339, {	-- The Wind Belongs to the Sky
@@ -49,11 +43,10 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(NORMAL_D, {
+			d(NORMAL_DUNGEON, {
 				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
-						i(193753),	-- Breastplate of Soaring Terror
 						i(193690),	-- Drake Hunter Shoulderpads
 						i(193694),	-- Drake Slayer's Greaves
 						i(193689),	-- Granyth's Enduring Scale
@@ -100,11 +93,10 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(HEROIC_D, {
+			d(HEROIC_DUNGEON, {
 				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
-						i(193753),	-- Breastplate of Soaring Terror
 						i(193690),	-- Drake Hunter Shoulderpads
 						i(193694),	-- Drake Slayer's Greaves
 						i(193689),	-- Granyth's Enduring Scale
@@ -153,14 +145,13 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(MYTHIC_D, {
+			d(MYTHIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
 					ach(16620),	-- Ohuna Incubation
 				}),
 				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
-						i(193753),	-- Breastplate of Soaring Terror
 						i(193690),	-- Drake Hunter Shoulderpads
 						i(193694),	-- Drake Slayer's Greaves
 						i(193689),	-- Granyth's Enduring Scale

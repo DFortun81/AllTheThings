@@ -12,10 +12,15 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 		},
 		["g"] = {
 			n(QUESTS, {
+				q(62458, {	-- De Other Side
+					["provider"] = { "n", 174341 },	-- Mask of Bwonsamdi
+					["coord"] = { 64.8, 19.7, ARDENWEALD },
+					["isBreadcrumb"] = true,
+				}),
 				q(62456,{	-- De Other Side: Dealin' Wit' Da Boss
 					["sourceQuests"] = { 62458 },	-- De Other Side
 					["provider"] = { "n", 174327 },	-- Mask of Bwonsamdi
-					["_drop"] = { "g" },	-- Ignore Anima
+					["_drop"] = { "g" },	-- Anima Trash
 				}),
 			}),
 			n(CONDUITS, {
@@ -87,7 +92,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(NORMAL_D, {
+			d(NORMAL_DUNGEON, {
 				e(2408, {	-- Hakkar the Soulflayer
 					["crs"] = { 164558 },	-- Hakkar the Soulflayer
 					["g"] = {
@@ -142,7 +147,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(HEROIC_D, {
+			d(HEROIC_DUNGEON, {
 				e(2408, {	-- Hakkar the Soulflayer
 					["crs"] = { 164558 },	-- Hakkar the Soulflayer
 					["g"] = {
@@ -198,7 +203,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, 
 					},
 				}),
 			}),
-			d(MYTHIC_D, {
+			d(MYTHIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
 					ach(14354),	-- Highly Communicable
 				}),

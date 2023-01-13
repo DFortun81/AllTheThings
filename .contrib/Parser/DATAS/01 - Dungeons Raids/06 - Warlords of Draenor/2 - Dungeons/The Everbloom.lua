@@ -16,7 +16,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				e(1214, {	-- Witherbark
 					["crs"] = { 81522 },	-- Witherbark
 					["sym"] = {
@@ -102,7 +102,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				e(1214, {	-- Witherbark
 					["crs"] = { 81522 },	-- Witherbark
 					["sym"] = {
@@ -172,7 +172,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_DUNGEON, {
 				e(1214, {	-- Witherbark
 					["crs"] = { 81522 },	-- Witherbark
 					["sym"] = {

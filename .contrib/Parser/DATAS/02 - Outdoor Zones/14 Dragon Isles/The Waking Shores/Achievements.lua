@@ -102,7 +102,23 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["_npcs"] = { 193175 },	-- Slurpo, the Incredible Snail
 				}),
 			}),
-			ach(16406),	-- All Sides of the Story
+			ach(16406, {	-- All Sides of the Story
+				crit(1, {	-- Captain Garrick & Shuja Grimaxe
+					["sourceQuests"] = {
+						70135,	-- Encroaching Elementals [A]
+						66111,	-- Encroaching Elementals [H]
+					},
+				}),
+				crit(2, {	-- Duroz & Kolgar
+					["sourceQuests"] = { 70708 },	-- Hallow
+				}),
+				crit(3, {	-- Tarjin the Blind
+					["sourceQuests"] = { 70779 },	-- Tarjin's Tales
+				}),
+				crit(4, {	-- Veritistrasz
+					["sourceQuests"] = { 70268 },	-- Memories Revived
+				}),
+			}),
 			ach(15991, {	-- Dragon Glyphs: Crumbling Life Archway
 				["coord"] = { 57.7, 55.0, THE_WAKING_SHORES },
 			}),
@@ -179,7 +195,30 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 				},
 			}),
-			ach(16401),	-- Sojourner of the Waking Shores
+			ach(16401, {	-- Sojourner of the Waking Shores
+				crit(1, {	-- Beyond the Barrier
+					["sourceQuests"] = { 66447 },	-- Beyond the Barrier
+				}),
+				crit(2, {	-- Brave Researchers
+					["sourceQuests"] = { 69902 },	-- Theory in Practice
+				}),
+				crit(3, {	-- Professional Protographer
+					["sourceQuests"] = { 66529 },	-- A Thousand Words
+				}),
+				crit(4, {	-- Ruby Lifecalling
+					["sourceQuests"] = {
+						66737,	-- A Better Start
+						66892,	-- Deluge Dilemma
+						66831,	-- Home Is Where the Frogs Are
+					},
+				}),
+				crit(5, {	-- Save the Hippos!
+					["sourceQuests"] = { 66108 },	-- A Sledgehammer of a Solution
+				}),
+				crit(6, {	-- The Shadow of His Wings
+					["sourceQuests"] = { 65691 },	-- The Shadow of His Wings
+				}),
+			}),
 			ach(16584, {	-- Symbols of Hope
 				crit(1, {	-- Wingrest Embassy
 					["coord"] = { 73.2, 37.8, THE_WAKING_SHORES },
@@ -213,8 +252,49 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			}),
 			pvp(ach(16592)),	-- Tour of Duty: The Waking Shores
-			ach(16297),	-- Treasures of The Waking Shores
-			ach(16334),	-- Waking Hope
+			ach(16297, {	-- Treasures of The Waking Shores
+				crit(1, {	-- Replica Dragon Goblet
+					["_quests"] = { 70600 },
+				}),
+				crit(2, {	-- Bubble Drifter
+					["_quests"] = { 70599 },
+				}),
+				crit(3, {	-- Ruby Gem Cluster
+					["_quests"] = { 70598 },
+				}),
+				crit(4, {	-- Yennu's Kite
+					["_quests"] = { 70345 },
+				}),
+				crit(5, {	-- Dead Man's Chestplate
+					["_quests"] = { 70346 },
+				}),
+				crit(6, {	-- Torn Riding Pack
+					["_quests"] = { 70378 },
+				}),
+				crit(7, {	-- Misty Treasure Chest
+					["_quests"] = { 65646 },
+				}),
+				crit(8, {	-- Onyx Gem Cluster
+					["_quests"] = { 72020 },
+				}),
+			}),
+			ach(16334, {	-- Waking Hope
+				crit(1, {	-- The Dragonscale Expedition
+					["sourceQuests"] = { 69914 },	-- The Djaradin Have Awoken
+				}),
+				crit(2, {	-- Dragons in Distress
+					["sourceQuests"] = { 66001 },	-- A Last Hope
+				}),
+				crit(3, {	-- In Defense of Life
+					["sourceQuests"] = { 66124 },	-- Exeunt, Triumphant
+				}),
+				crit(4, {	-- Wrathion's Gambit
+					["sourceQuests"] = { 66057 },	-- Restoring the Faith
+				}),
+				crit(5, {	-- A Purpose Restored
+					["sourceQuests"] = { 65794 },	-- A Change of Care
+				}),
+			}),
 			ach(16575, {	-- Waking Shores Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",

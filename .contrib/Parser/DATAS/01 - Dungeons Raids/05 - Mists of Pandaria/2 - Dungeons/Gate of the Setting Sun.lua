@@ -17,7 +17,7 @@ _.Instances = { tier(MOP_TIER, {
 					i(87355),	-- Mantid Exterminator's Cloak
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				cr(56906, e(655, {	-- Saboteur Kip'tilak
 					i(144018),	-- Fallout-Filtering Hood
 					i(144102),	-- Pendant of Precise Timing
@@ -72,7 +72,7 @@ _.Instances = { tier(MOP_TIER, {
 					un(REMOVED_FROM_GAME, i(80928)),	-- Treads of Fixation (7.1 - Removed from Game!)
 				})),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 90,
 				["groups"] = {
 					ach(6476),	-- Conscriptinator

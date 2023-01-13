@@ -73,7 +73,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 				i(168626),	-- Vantus Rune Technique: The Eternal Palace [Rank 2] (RECIPE!)
 				i(168627),	-- Vantus Rune Technique: The Eternal Palace [Rank 3] (RECIPE!)
 			}),
-			d(17, {	-- LFR Queue NPC
+			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = {
 					177193,	-- Kiku
 					177208,	-- Eppu
@@ -83,7 +83,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 				},
 			}),
-			d(17, {	-- LFR
+			d(LFR_RAID, {
 				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
@@ -300,7 +300,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 					},
 				}),
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_RAID, {
 				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
@@ -486,7 +486,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 					},
 				}),
 			}),
-			d(15, {	-- Heroic
+			d(HEROIC_RAID, {
 				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents
@@ -668,7 +668,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 					},
 				}),
 			}),
-			d(16, {	-- Mythic
+			d(MYTHIC_RAID, {
 				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
 					i(169929),	-- Cuffs of Soothing Currents

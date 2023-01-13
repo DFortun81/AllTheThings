@@ -514,6 +514,7 @@ local L = app.L;
 		--TODO: L.PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
 		--TODO: L.PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
 		--TODO: L.PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.."-Clicked to Switch to it";
+		--TODO: L.SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 
 	-- Sync tab
 		--TODO: L.SYNC = "Sync";
@@ -826,15 +827,12 @@ for key,value in pairs({
 		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
 		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
 		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
-		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
-		[-977] = "Maelie la Errante",								-- Maelie the Wanderer
 		[-979] = "Especulador Ve'ken & Especulador Ve'nott",		-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "Mejoras del sagrario",							-- Sanctum Upgrades
 		[-924] = "Red de transporte",								-- Transport Network
 		-- SL Ardenweald/Night Fae
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			[-940] = "Consejo de los Ascendidos",					-- Ascended Counil
 			--TODO: [-973] = "Loyalty",								-- Loyalty
 			--TODO: [-975] = "Humility",							-- Humility
 		-- SL Revendreth/Venthyr
@@ -869,6 +867,7 @@ for key,value in pairs({
 		--TODO: [-1131] = "Iskaara Fishing",						-- Iskaara Fishing
 		[-1140] = "Acuerdo de Valdrakken",							-- Valdrakken Accord
 		[-1142] = "Retos aéreos",									-- Aerial Challenges
+		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
 	-- Warrior order hall lore items
 		[-2200] = "El gran Odyn y el Señor del Fuego",				-- Great Odyn and the Firelord
 		[-2201] = "El nómada y la serpiente",						-- The Wanderer and the Serpent
@@ -3197,6 +3196,8 @@ for key,value in pairs({
 	[364932] = "Lingote llameante",	-- Blazing Ingot
 	[364937] = "Succionador fásico",	-- Phasic Siphoner
 	[364987] = "Diario de especulador",	-- Broker Journal
+	[364994] = "Pico espectral",	-- Spectral Pick
+	[365084] = "Pica de torturador",	-- Tormentor's Pike
 	[365093] = "Libros de villancicos de Theotar",	-- Theotar's Caroling Books
 	[368205] = "Alijo jurafauces",	-- Mawsworn Cache
 	[368206] = "Alijo jurafauces",	-- Mawsworn Cache
@@ -3427,13 +3428,18 @@ for key,value in pairs({
 	[377534] = "Cofre entregado",	-- Delivered Vault
 	[377899] = "Rehén oculto de los cornisapos",	-- Hidden Hornswog Hostage
 	[377900] = "Lanza de guerra Nokhud",	-- Nokhud Warspear
+	[377938] = "Banco de saltadores prismáticos",	-- Prismatic Leaper School
 	[378010] = "Tesoro de dragón olvidado",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "Bebida de mareaviva",	-- Riptide Brew
+	[378088] = "Flor cristalina",	-- Crystalline Flower
 	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
 	[378857] = "Alijo de obsidiana perdido",	-- Lost Obsidian Cache
+	--TODO: [379168] = "Lost Cache Key",	-- Lost Cache Key
 	[379290] = "Estatua adornada",	-- Ornamented Statue
 	[379296] = "Banda rota",	-- Broken Banding
 	[379297] = "Al centro y pa' dentro",	-- Slam Bam Swill
+	[379314] = "Red de pesca llena",	-- Full Fishing Net
 	[379321] = "Huella de zarpa misteriosa",	-- Mysterious Paw Print
 	[380429] = "Zarpa dorada",	-- Golden Claw
 	[380430] = "Trozo de cola",	-- Tail Fragment
@@ -3509,6 +3515,7 @@ for key,value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "La gran cámara",	-- The Great Vault
 	[381045] = "Cáliz dracónico dorado",	-- Golden Dragon Goblet
+	[381069] = "Red de pesca llena",	-- Full Fishing Net
 	[381094] = "Pincel de lienzo elegante",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
 	[381108] = "Mapa de Yennu",	-- Yennu's Map
@@ -3520,7 +3527,7 @@ for key,value in pairs({
 	[381216] = "Lupa de perito",	-- Surveyor's Magnifying Glass
 	[381223] = "Reloj de arena agrietado",	-- Cracked Hourglass
 	[381277] = "Barrica de dulces confiscados",	-- Barrel of Confiscated Treats
-	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
+	[381296] = "Desastre horrible",	-- Horrible Mess
 	[381297] = "Equipaje extraviado",	-- Misplaced Luggage
 	[381353] = "Diente de dragón pétreo",	-- Stone Dragontooth
 	[381354] = "Sortija de oro envuelta",	-- Wrapped Gold Band
@@ -3547,7 +3554,7 @@ for key,value in pairs({
 	[381664] = "Petición de los archivistas",	-- Archivists' Request
 	[381667] = "Petición de los archivistas",	-- Archivists' Request
 	[381668] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
-	[381669] = "Petición de los archivistas",	-- Archivists' Request	--TODO: this was manually translated
+	[381669] = "Petición de los archivistas",	-- Archivists' Request
 	[381670] = "Petición de los archivistas",	-- Archivists' Request
 	[381671] = "Petición de los archivistas",	-- Archivists' Request
 	[381672] = "Petición de los archivistas",	-- Archivists' Request
@@ -3555,11 +3562,14 @@ for key,value in pairs({
 	[381701] = "SE BUSCA: Mara'nar el Atronador",	-- WANTED: Mara'nar the Thunderous
 	[381981] = "Cofre de la inundación",	-- Chest of the Flood
 	[382029] = "Tierra revuelta",	-- Disturbed Dirt
+	[382071] = "Red de pesca llena",	-- Full Fishing Net
 	[382166] = "¡El Festín Rubí!",	-- The Ruby Feast!
+	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	[382193] = "Cofre de los elementos",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "Caja de brillopeces frescos",	-- Case of Fresh Gleamfish
 	[384318] = "Marcapáginas discreto",	-- Inconspicuous Bookmark
+	[384370] = "Notas deliberadamente descuidadas",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	[385021] = "Huevo de dragón petrificado",	-- Petrified Dragon Egg

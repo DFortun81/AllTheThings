@@ -1878,7 +1878,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				},
 			}),
 			-- #if AFTER 7.3.5.25600
-			d(14, {	-- Normal
+			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(13614, {	-- Algalon
 						["qg"] = 33957,	-- Prospector Loren

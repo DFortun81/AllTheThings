@@ -1,14 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S2 } }, {
 	m(KORTHIA, {
 		n(SPECIAL, {
 			n(180063, {	-- Darkmaul
 				["description"] = "Collect |cFFFFFFFFTasty Mawshrooms|r from the daily Invasive Mawshroom treasures in Korthia and feed them to Darkmaul.",
 				["coord"] = { 42.8, 32.7, KORTHIA },
-				["cost"] = { { "i", 187153, 10 } },
+				["cost"] = { { "i", 187153, 10 } },	-- 10x Tasty Mawshroom
 				["g"] = {
 					i(186646),	-- Darkmaul (MOUNT!)
 				},
@@ -21,9 +20,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					i(186651),	-- Dusklight Razorwing (MOUNT!)
 				},
 			}),
-			n(-977, {	-- Maelie the Wanderer
-				["questID"] = 64298,	-- daily Maelie find
-				["isDaily"] = true,	-- seems this may have been changed to weekly on live... found Maelie on tuesday and the quest has not reset for me yet
+			header(HEADERS.Quest, 64292, {	-- Maelie, The Wanderer
+				["icon"] = 3155422,
+				["crs"] = { 179912 },	-- Maelie the Wanderer
 				["coords"] = {
 					{ 30.0, 55.6, KORTHIA },
 					{ 35.8, 46.5, KORTHIA },
@@ -40,27 +39,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					{ 62.4, 49.7, KORTHIA },
 					{ 67.0, 29.0, KORTHIA },
 				},
-				["icon"] = 3155422,
-				["cr"] = 179912,	-- Maelie the Wanderer
+				["questID"] = 64298,
+				["isDaily"] = true,
 				["g"] = {
-					q(64293, {	-- Day 1
-						["name"] = "Day 1",
-					}),
-					q(64294, {	-- Day 2
-						["name"] = "Day 2",
-					}),
-					q(64295, {	-- Day 3
-						["name"] = "Day 3",
-					}),
-					q(64296, {	-- Day 4
-						["name"] = "Day 4",
-					}),
-					q(64297, {	-- Day 5
-						["name"] = "Day 5",
-					}),
-					q(64299, {	-- Day 6
-						["name"] = "Day 6",
-					}),
+					q(64293, {["name"] = "Day 1"}),	-- Day 1
+					q(64294, {["name"] = "Day 2"}),	-- Day 2
+					q(64295, {["name"] = "Day 3"}),	-- Day 3
+					q(64296, {["name"] = "Day 4"}),	-- Day 4
+					q(64297, {["name"] = "Day 5"}),	-- Day 5
+					q(64299, {["name"] = "Day 6"}),	-- Day 6
 					q(64292, {	-- Maelie, The Wanderer
 						["description"] = "After you find Maelie 6 times, return to Tinybell and accept responsibility for the wayward unicorn.",
 						["provider"] = { "n", 179930 },	-- Tinybell

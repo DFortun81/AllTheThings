@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(BFA_TIER, {
-	d(23, {	-- Mythic
+	d(MYTHIC_DUNGEON, {
 		n(AZERITE_ESSENCES, bubbleDownSelf({ ["timeline"] = { "added 9.0.0", } }, {
 			i(169491),	-- Focused Life Anima
 			-- Requires Tank Loot Spec

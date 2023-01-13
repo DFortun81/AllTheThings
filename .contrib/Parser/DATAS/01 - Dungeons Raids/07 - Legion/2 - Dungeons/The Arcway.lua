@@ -35,7 +35,7 @@ _.Instances = { tier(LEGION_TIER, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				cr(98203, e(1497, {	-- Ivanyr
 					i(134269),	-- Arcane Defender's Belt
 					i(134501),	-- Crackling Overcharge Chestguard
@@ -112,7 +112,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137420),	-- Split Second
 				})),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_DUNGEON, {
 				cr(98203, e(1497, {	-- Ivanyr
 					ach(10773),	-- Arcanic Cling
 					i(134269),	-- Arcane Defender's Belt

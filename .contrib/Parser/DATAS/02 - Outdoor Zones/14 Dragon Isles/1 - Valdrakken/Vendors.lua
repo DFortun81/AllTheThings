@@ -154,7 +154,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					}),
 					-- Rare
 					i(201270, {	-- Rare Alchemist's Research
-						-- ["questID"] = TODO,
+						["questID"] = 71904,
 						["requireSkill"] = ALCHEMY,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
@@ -175,14 +175,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(201273, {	-- Rare Engineer's Scribblings
-						-- ["questID"] = TODO,
+						["questID"] = 71907,
 						["requireSkill"] = ENGINEERING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
 						},
 					}),
 					i(201276, {	-- Rare Herbalist's Notes
-						-- ["questID"] = TODO,
+						["questID"] = 71908,
 						["requireSkill"] = HERBALISM,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
@@ -196,35 +196,35 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(201275, {	-- Rare Leatherworker's Diagrams
-						-- ["questID"] = TODO,
+						["questID"] = 71911,
 						["requireSkill"] = LEATHERWORKING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
 						},
 					}),
 					i(201277, {	-- Rare Miner's Notes
-						-- ["questID"] = TODO,
+						["questID"] = 71912,
 						["requireSkill"] = MINING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
 						},
 					}),
 					i(201269, {	-- Rare Scribe's Runic Drawings
-						-- ["questID"] = TODO,
+						["questID"] = 201269,
 						["requireSkill"] = INSCRIPTION,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
 						},
 					}),
 					i(201278, {	-- Rare Skinner's Notes
-						-- ["questID"] = TODO,
+						["questID"] = 71913,
 						["requireSkill"] = SKINNING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
 						},
 					}),
 					i(201271, {	-- Rare Tailor's Diagrams
-						-- ["questID"] = TODO,
+						["questID"] = 71914,
 						["requireSkill"] = TAILORING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
@@ -260,7 +260,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(201287, {	-- Ancient Herbalist's Notes
-						-- ["questID"] = TODO,
+						["questID"] = 71919,
 						["requireSkill"] = HERBALISM,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },
@@ -295,7 +295,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(201289, {	-- Ancient Skinner's Notes
-						-- ["questID"] = TODO,
+						["questID"] = 71924,
 						["requireSkill"] = SKINNING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 300 },

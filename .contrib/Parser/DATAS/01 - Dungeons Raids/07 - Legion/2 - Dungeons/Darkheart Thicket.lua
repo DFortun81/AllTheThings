@@ -30,7 +30,7 @@ _.Instances = { tier(LEGION_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				cr(96512, e(1654, {	-- Archdruid Glaidalis
 					i(140653),	-- Pure Drop of Shaladrassil's Sap (druid appearance)
 					i(134487),	-- Arch-Druid's Tainted Seal
@@ -96,7 +96,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137317),	-- Xavius' Mad Whispers
 				})),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 110,
 				["g"] = {
 					cr(96512, e(1654, {	-- Archdruid Glaidalis
@@ -166,7 +166,7 @@ _.Instances = { tier(LEGION_TIER, {
 					})),
 				},
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_DUNGEON, {
 				["lvl"] = 110,
 				["g"] = {
 					cr(96512, e(1654, {	-- Archdruid Glaidalis

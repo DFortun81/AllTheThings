@@ -31,7 +31,7 @@ _.Instances = { tier(LEGION_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				cr(95885, e(1467, {	-- Tirathon Saltheril
 					i(134369),	-- Felbat Leather Boots
 					i(137509),	-- Glaivemaster's Studded Grips
@@ -101,7 +101,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137549),	-- Shade of the Vault
 				})),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 110,
 				["g"] = {
 					cr(95885, e(1467, {	-- Tirathon Saltheril
@@ -177,7 +177,7 @@ _.Instances = { tier(LEGION_TIER, {
 					})),
 				},
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_DUNGEON, {
 				["lvl"] = 110,
 				["g"] = {
 					n(ACHIEVEMENTS, {

@@ -54,7 +54,7 @@ _.Instances = { tier(MOP_TIER, {
 					},
 				}),
 			}),
-			d(1,  {	-- Normal
+			d(NORMAL_DUNGEON, {
 				e(708, {	-- Trial of the King
 					["crs"] = {
 						61445,	-- Haiyan the Unstoppable
@@ -113,7 +113,7 @@ _.Instances = { tier(MOP_TIER, {
 					},
 				}),
 			}),
-			d(2,  {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 90,
 				["g"] = {
 					ach(6713),	-- Quarrelsome Quilen Quintet

@@ -97,7 +97,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				n(ZONE_DROPS, {
 					i(49852),	-- Coffin Nail
 					i(49854),	-- Mantle of Tattered Feathers
@@ -190,7 +190,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					},
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ACHIEVEMENTS, {
@@ -278,7 +278,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 							-- #endif
 							i(50284),	-- Rusty Frozen Fingerguards
 							i(50270),	-- Belt of Rotted Fingernails
-							i(50269),	-- Fleshwerk Leggings 
+							i(50269),	-- Fleshwerk Leggings
 							-- #if AFTER 7.3.5
 							i(49822),	-- Rimewoven Silks (7.3.5 - Used to be only Normal Mode)
 							i(49817),	-- Shaggy Wyrmleather Leggings (7.3.5 - Used to be only Normal Mode)

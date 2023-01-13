@@ -1,36 +1,144 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(BASTION, {
 		n(ACHIEVEMENTS, {
-			ach(14281, {	-- The Path to Ascension
-				crit(1, {	-- Eternity's Call
-					["sourceQuests"] = { 57677 },	-- A Soulbind In Need
+			ach(14307, {	-- Adventurer of Bastion
+				crit(1, {
+					["_npcs"] = { 158659 },	-- Herculon <Aspirant Assessor>
 				}),
-				crit(2, {	-- The Aspirant's Crucible
-					["sourceQuests"] = { 58174 },	-- All An Aspirant Can Do
+				crit(2, {
+					["_npcs"] = { 160721 },	-- Fallen Acolyte Erisne
 				}),
-				crit(3, {	-- The Temple of Purity
-					["sourceQuests"] = { 57447 },	-- Purity's Prerogative
+				crit(3, {
+					["_npcs"] = { 161527 },	-- Sigilback
 				}),
-				crit(4, {	-- Chasing a Memory
-					["sourceQuests"] = { 60013 },	-- Leave it to Mnemis
+				crit(4, {
+					["_npcs"] = { 161530 },	-- Cloudtail
 				}),
-				crit(5, {	-- Your Personal Assistant
-					["sourceQuests"] = { 59426 },	-- Your Personal Assistant
+				crit(5, {
+					["_npcs"] = { 160051 },	-- Nemaeus
 				}),
-				crit(6, {	-- A Time for Courage
-					["sourceQuests"] = { 60055 },	-- A Time for Courage
+				crit(6, {
+					["_npcs"] = { 160629 },	-- Baedos
 				}),
-				crit(7, {	-- A Land of Strife
-					["sourceQuests"] = { 61107 },	-- A Land of Strife
+				crit(7, {
+					["_npcs"] = { 167078 },	-- Wingflayer the Cruel
+				}),
+				crit(8, {
+					["_npcs"] = { 160882 },	-- Nikara Blackheart
+				}),
+				crit(9, {
+					["_npcs"] = { 163460 },	-- Dionae
+				}),
+				crit(10, {
+					["_npcs"] = { 170548 },	-- Sundancer
+				}),
+				crit(11, {
+					["_npcs"] = { 170659 },	-- Basilofos, King of the Hill
+				}),
+				crit(12, {
+					["_npcs"] = { 170623 },	-- Dark Watcher
+				}),
+				crit(13, {
+					["_npcs"] = { 170932 },	-- Cloudfeather Guardian
+				}),
+				crit(14, {
+					["_npcs"] = { 171009 },	-- Enforcer Aegeon
+				}),
+				crit(15, {
+					["_npcs"] = { 171008 },	-- Unstable Memory
+				}),
+				crit(16, {
+					["_npcs"] = { 171013 },	-- Embodied Hunger
+				}),
+				crit(17, {
+					["_npcs"] = { 171040 },	-- Xixin the Ravening
+				}),
+				crit(18, {
+					["_npcs"] = { 171041 },	-- Worldfeaster Chronn
+				}),
+				crit(19, {
+					["_npcs"] = { 171014 },	-- Collector Astorestes
+				}),
+				crit(20, {
+					["_npcs"] = { 171011 },	-- Demi the Relic Hoarder
+				}),
+				crit(21, {
+					["_npcs"] = { 171189 },	-- Bookkeeper Mnemis
+				}),
+				crit(22, {
+					["_npcs"] = { 171211 },	-- Aspirant Eolis
+				}),
+				crit(23, {
+					["_npcs"] = { 171255 },	-- Echo of Aella <Hand of Courage>
+				}),
+				crit(24, {
+					["_npcs"] = { 171010 },	-- Corrupted Clawguard
+				}),
+				crit(25, {
+					["_npcs"] = { 171327 },	-- Reekmonger
+				}),
+				crit(26, {
+					["_npcs"] = { 161528 },	-- Aethon
+				}),
+				crit(27, {
+					["_npcs"] = { 160985 },	-- Selena the Reborn
+				}),
+				crit(28, {
+					["_npcs"] = { 156340 },	-- Larionrider Orstus
+				}),
+				crit(29, {
+					["_npcs"] = { 170899 },	-- Ascended Council
+				}),
+			}),
+			ach(14767, {	-- Count Your Blessings
+				crit(1, {		-- Purified Blessing of Grace
+					["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
+					["coord"] = { 53.8, 28.9, BASTION },
+				}),
+				crit(2, {		-- Purified Blessing of Power
+					["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
+					["coord"] = { 45.3, 59.8, BASTION },
+				}),
+				crit(3, {		-- Purified Blessing of Fortitude
+					["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
+					["coord"] = { 34.7, 30.0, BASTION },
+				}),
+			}),
+			ach(14303, {	-- Explore Bastion
+				crit(1),		-- Vestribule of Eternity
+				crit(2),		-- Temple of Humility
+				crit(3),		-- Purity's Pinnacle
+				crit(4),		-- Firstborne's Bounty
+				crit(5),		-- The Mnemonic Locus
+				crit(6),		-- The Eternal Forge
+				crit(7),		-- Elysian Hold
+				crit(8),		-- Citadel of Loyalty
+				crit(9),		-- Temple of Courage
+				crit(10),		-- Aspirant's Crucible
+				crit(11),		-- Agthia's Repose
+			}),
+			ach(14734, {	-- Rallying Cry of the Ascended
+				crit(1, {		-- Vesper of Courage
+					["coord"] = { 33.3, 59.7, BASTION },
+				}),
+				crit(2, {		-- Vesper of Wisdom
+					["coord"] = { 39.1, 20.4, BASTION },
+				}),
+				crit(3, {		-- Vesper of Humility
+					["coord"] = { 71.8, 38.8, BASTION },
+				}),
+				crit(4, {		-- Vesper of Loyalty
+					["coord"] = { 32.1, 17.8, BASTION },
+				}),
+				crit(5, {		-- Vesper of Purity
+					["coord"] = { 64.3, 69.8, BASTION },
 				}),
 			}),
 			ach(14339, {	-- Shard Labor
 				["description"] = "'Collect all trackable things' must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide.  There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.",
-				["lvl"] = { 60 },
 				["g"] = {
 				--	https://www.wowhead.com/achievement=14339/shard-labor#comments
 				--	moving completed ones up to the top for now so it's easier to see which one checks off (to verify coords + add data more easily)
@@ -354,35 +462,27 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					},
 				}),
 			}),
-			ach(14767, {	-- Count Your Blessings
-				crit(1, {		-- Purified Blessing of Grace
-					["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
-					["coord"] = { 53.8, 28.9, BASTION },
+			ach(14281, {	-- The Path to Ascension
+				crit(1, {	-- Eternity's Call
+					["sourceQuests"] = { 57677 },	-- A Soulbind In Need
 				}),
-				crit(2, {		-- Purified Blessing of Power
-					["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
-					["coord"] = { 45.3, 59.8, BASTION },
+				crit(2, {	-- The Aspirant's Crucible
+					["sourceQuests"] = { 58174 },	-- All An Aspirant Can Do
 				}),
-				crit(3, {		-- Purified Blessing of Fortitude
-					["description"] = "Requires a |cFFFFFFFFRipe Purian|r to activate.",
-					["coord"] = { 34.7, 30.0, BASTION },
+				crit(3, {	-- The Temple of Purity
+					["sourceQuests"] = { 57447 },	-- Purity's Prerogative
 				}),
-			}),
-			ach(14734, {	-- Rallying Cry of the Ascended
-				crit(1, {		-- Vesper of Courage
-					["coord"] = { 33.3, 59.7, BASTION },
+				crit(4, {	-- Chasing a Memory
+					["sourceQuests"] = { 60013 },	-- Leave it to Mnemis
 				}),
-				crit(2, {		-- Vesper of Wisdom
-					["coord"] = { 39.1, 20.4, BASTION },
+				crit(5, {	-- Your Personal Assistant
+					["sourceQuests"] = { 59426 },	-- Your Personal Assistant
 				}),
-				crit(3, {		-- Vesper of Humility
-					["coord"] = { 71.8, 38.8, BASTION },
+				crit(6, {	-- A Time for Courage
+					["sourceQuests"] = { 60055 },	-- A Time for Courage
 				}),
-				crit(4, {		-- Vesper of Loyalty
-					["coord"] = { 32.1, 17.8, BASTION },
-				}),
-				crit(5, {		-- Vesper of Purity
-					["coord"] = { 64.3, 69.8, BASTION },
+				crit(7, {	-- A Land of Strife
+					["sourceQuests"] = { 61107 },	-- A Land of Strife
 				}),
 			}),
 			pvp(ach(14514)),	-- Tour of Duty: Bastion

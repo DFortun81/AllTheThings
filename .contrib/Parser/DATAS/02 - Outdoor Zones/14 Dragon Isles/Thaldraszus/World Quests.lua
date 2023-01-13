@@ -40,6 +40,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(72029, {	-- Fishing Frenzy!
 					["coord"] = { 57.3, 66.7, THALDRASZUS }
 				}),
+				q(71181, {	-- Forgotten Grotto Relics
+					["coord"] = { 58.7, 36.8, THALDRASZUS }
+				}),
 				q(70602, {	-- History Lesson: War of the Shifting Sands
 					["coord"] = { 58.2, 36.2, THALDRASZUS },
 				}),
@@ -58,20 +61,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(71164, {	-- Stolen Bandages
 					["coord"] = { 45.4, 58.9, THALDRASZUS }
 				}),
+				q(70057, {	-- Thieving Tarasek
+					["coord"] = { 56.2, 68.7, THALDRASZUS }
+				}),
 				petbattle(q(71180, {	-- You Have to Start Somewhere
 					["coord"] = { 56.3, 49.2, THALDRASZUS }
 				})),
 				petbattle(q(71166, {	-- The Oldest Dragonfly
 					["coord"] = { 39.6, 73.4, THALDRASZUS }
 				})),
-				-- q(71181, {	-- Forgotten Grotto Relics
-				-- 	["coord"] = { 58.7, 36.8, THALDRASZUS }
-				-- }),
 				-- q(70934, {	-- Salamanther's Embrace
 				-- 	["coord"] = { 54.9, 35.7, THALDRASZUS }
-				-- }),
-				-- q(70057, {	-- Thieving Tarasek
-				-- 	["coord"] = { 56.2, 68.7, THALDRASZUS }
 				-- }),
 			}),
 		}),

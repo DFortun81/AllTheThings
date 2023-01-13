@@ -30,7 +30,7 @@ _.Instances = { tier(CATA_TIER, {
 					i(59461),	-- Fury of Angerforge
 				},
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
 					e(170, {	-- Magmaw
@@ -155,7 +155,7 @@ _.Instances = { tier(CATA_TIER, {
 					}),
 				},
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
 					e(170, {	-- Magmaw

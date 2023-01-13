@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(ARDENWEALD, {
 		n(ACHIEVEMENTS, {
 			ach(14164, {	-- Awaken, Ardenweald
@@ -34,21 +33,36 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["sourceQuests"] = { 58724 },	-- The Queen's Request
 				}),
 			}),
+			ach(14304, {	-- Explore Ardenweald
+				crit(1),		-- Dusty Burrows
+				crit(2),		-- The Stalks
+				crit(3),		-- Starlit Overlook
+				crit(4),		-- Shimmerbough
+				crit(5),		-- Tirna Scithe
+				crit(6),		-- Hibernal Hollow
+				crit(7),		-- Heart of the Forest
+				crit(8),		-- Gormhive
+				crit(9),		-- Glitterfall Basin
+				crit(10),		-- Tirna Noch
+				crit(11),		-- Darkreach
+				crit(12),		-- Crumbled Ridge
+				crit(13),		-- Gossamer Cliffs
+			}),
 			ach(14788, {	-- Fractured Faerie Tales
 				crit(1, {	-- A Meandering Story
-					["_quests"] = { 62619 },	-- A Meandering Story
+					["sourceQuests"] = { 62619 },	-- A Meandering Story
 				}),
 				crit(2, {	-- A Wandering Tale
-					["_quests"] = { 62620 },	-- A Wandering Tale
+					["sourceQuests"] = { 62620 },	-- A Wandering Tale
 				}),
 				crit(3, {	-- An Escapist Novel
-					["_quests"] = { 62621 },	-- An Escapist Novel
+					["sourceQuests"] = { 62621 },	-- An Escapist Novel
 				}),
 				crit(4, {	-- A Travel Journal
-					["_quests"] = { 62622 },	-- A Travel Journal
+					["sourceQuests"] = { 62622 },	-- A Travel Journal
 				}),
 				crit(5, {	-- A Naughty Story
-					["_quests"] = { 62623 },	-- A Naughty Story
+					["sourceQuests"] = { 62623 },	-- A Naughty Story
 				}),
 			}),
 			ach(14800, {	-- Sojourner of Ardenweald
@@ -73,9 +87,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			ach(14791, {	-- Toss a Seed to Your Hunter...
 				["description"] = "The Faintly Glowing Seeds can be found scattered around the zone, but the closest ones to the encounter are up the hill in Heartwood Grove.  Look around the bases of trees for sparkling bluish-purple plants.",
+				["crs"] = { 171690 },	-- Gwyncierw
 				["coord"] = { 65.6, 24.6, ARDENWEALD },
 				["cost"] = { { "i", 183902, 1 } },	-- 1x A Faintly Glowing Seed
-				["crs"] = { 171690 },	-- Gwyncierw
 			}),
 			pvp(ach(14511)),	-- Tour of Duty: Ardenweald
 			ach(14313),		-- Treasures of Ardenweald

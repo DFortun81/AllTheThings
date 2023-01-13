@@ -1142,13 +1142,13 @@ SL_TIER = 9;
 DF_TIER = 10;
 
 -- Difficulties
-NORMAL_D = 1;
-HEROIC_D = 2;
-MYTHIC_D = 23;
-LFR_R = 17;
-NORMAL_R = 14;
-HEROIC_R = 15;
-MYTHIC_R = 16;
+NORMAL_DUNGEON = 1;
+HEROIC_DUNGEON = 2;
+MYTHIC_DUNGEON = 23;
+LFR_RAID = 17;
+NORMAL_RAID = 14;
+HEROIC_RAID = 15;
+MYTHIC_RAID = 16;
 
 -- Unobtainable Filters
 NEVER_IMPLEMENTED = 1;
@@ -2225,6 +2225,10 @@ end
 r = recipe;												-- Create a RECIPE Object (alternative shortcut)
 root = function(category, g)							-- Create a ROOT CATEGORY Object
 	if not g then g = g or {}; end
+	-- Automatically apply data to specific categories
+	if category == ROOTS.NeverImplemented then
+		g = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, g);
+	end
 	local o = _[category];
 	if not o then
 		if isarray(g) then
@@ -2396,7 +2400,7 @@ end
 
 -- Used by the Harvester (Parser)
 function Harvest(things)
-	local itemDB = root("ItemDB", {});
+	local itemDB = root("ItemDBConditional", {});
 	local thing;
 	for i,j in pairs(things) do
 		thing = itemDB[i];
@@ -2412,8 +2416,8 @@ function Harvest(things)
 		end
 		if j.bonuses then
 			if not thing.bonuses then thing.bonuses = {} end
-			for l,bonusID in pairs(j.bonuses) do
-				thing.bonuses[l] = bonusID;
+			for bonusID,sourceID in pairs(j.bonuses) do
+				thing.bonuses[bonusID] = sourceID;
 			end
 		end
 	end

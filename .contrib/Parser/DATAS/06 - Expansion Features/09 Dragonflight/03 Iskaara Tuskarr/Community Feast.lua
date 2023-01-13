@@ -4,7 +4,6 @@
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(ISKAARA_TUSKARR, {
 		q(70893, {	-- Community Feast
-			["sourceQuest"] = 70938,	-- Community Feasts
 			["isWeekly"] = true,
 			["g"] = {
 				i(200095, {	-- Supply-Laden Soup Pot

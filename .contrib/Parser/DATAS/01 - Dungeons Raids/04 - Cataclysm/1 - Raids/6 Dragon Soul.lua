@@ -323,7 +323,7 @@ _.Instances = { tier(CATA_TIER, {
 					}),
 				},
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
@@ -589,7 +589,7 @@ _.Instances = { tier(CATA_TIER, {
 					})),
 				},
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["groups"] = {

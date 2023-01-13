@@ -13,13 +13,20 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(72135, {	-- Neltharus: Secrets Wihtin
 					["provider"] = { "n", 193456 },	-- Archivist Edress
 					["coord"] = { 25.1, 56.2, THE_WAKING_SHORES },
+					["g"] = {
+						i(193776),	-- Dragonkin Chestguard
+						i(193777),	-- Helm of Hardened Gold
+						i(193787),	-- Mammoth-Trainer's Cape
+						i(193788),	-- Molten Magma Mantle
+						i(193789),	-- Fural's Blazing Faulds
+					},
 				}),
 			}),
 			n(TREASURES, {
 				-- Don't have ObjectID etc.. atm
 				i(199229),	-- Schematic: Tinker: Breath of Neltharion (RECIPE!)
 			}),
-			d(NORMAL_D, {
+			d(NORMAL_DUNGEON, {
 				e(2490, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales
 					["g"] = {
@@ -65,7 +72,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(HEROIC_D, {
+			d(HEROIC_DUNGEON, {
 				e(2490, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales
 					["g"] = {
@@ -111,7 +118,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 			}),
-			d(MYTHIC_D, {
+			d(MYTHIC_DUNGEON, {
 				e(2490, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales
 					["g"] = {

@@ -2253,7 +2253,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3233),	-- Gnoll Hide Sack
-						i(5744),	-- Pale Skinner
+						i(5744, {	-- Pale Skinner
+							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
+						}),
 					},
 				}),
 				n(50926, {	-- Grizzled Ben
@@ -2316,8 +2318,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 41.2, 78.8, ELWYNN_FOREST },
 					-- #endif
 					["groups"] = {
-						i(6147),	-- Ratty Old Belt
-						i(1913),	-- Studded Blackjack
+						i(6147, {	-- Ratty Old Belt
+							["timeline"] = { "removed 4.0.1" },	-- Note: Might also be added back with 8.0.1, check this.
+						}),
+						i(1913, {	-- Studded Blackjack
+							["timeline"] = { "removed 4.0.1" },	-- Note: Might also be added back with 8.0.1, check this.
+						}),
 					},
 				}),
 				n(50942, {	-- Snoot the Rooter
@@ -2356,8 +2362,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 					["groups"] = {
-						i(6202),	-- Fingerless Gloves
-						i(6203),	-- Thuggish Shield
+						i(6202, {	-- Fingerless Gloves
+							["timeline"] = { "removed 4.0.1" },	-- Note: Might also be added back with 8.0.1, check this.
+						}),
+						i(6203, {	-- Thuggish Shield
+							["timeline"] = { "removed 4.0.1" },	-- Note: Might also be added back with 8.0.1, check this.
+						}),
 					},
 				}),
 			}),

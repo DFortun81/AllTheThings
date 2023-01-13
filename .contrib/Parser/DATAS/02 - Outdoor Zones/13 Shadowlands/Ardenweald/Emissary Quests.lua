@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 	m(ARDENWEALD, {
 		n(EMISSARY_QUESTS, {
 			q(61098, {	-- Supplies from The Wild Hunt
@@ -19,12 +18,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						i(185054, {["timeline"] = {"added 9.1.5"}}),	-- Mammoth Soul
 					}),
 				},
-			}),
-		}),
-		n(FACTIONS, {
-			faction(2464),	-- Court of Night
-			faction(2465, {	-- The Wild Hunt
-				ach(14337),	-- The Wild Hunt
 			}),
 		}),
 	}),

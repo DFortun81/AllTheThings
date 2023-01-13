@@ -32,7 +32,7 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				n(ZONE_DROPS, {
 					i(56109),	-- Book of Origination
 					i(56110),	-- Charm of the Muse
@@ -136,7 +136,7 @@ _.Instances = { tier(CATA_TIER, {
 					un(REMOVED_FROM_GAME, i(56100)),	-- Right Eye of Rajh (7.3.5 - Removed from Game!)
 				})),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 85,
 				["groups"] = {
 					n(ACHIEVEMENTS, {

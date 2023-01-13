@@ -86,28 +86,25 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				crit(27, {
 					["_npcs"] = { 193178 },	-- Blightfur
 				}),
-				crit(28, {
-					["_npcs"] = { 193255 },	-- Archmage Cleary
-				}),
-				crit(29, {
+				crit(28, {	-- Spellwrought Snowman
 					["_npcs"] = { 193238 },	-- Spellwrought Snowman
 				}),
-				crit(30, {
+				crit(29, {	-- Snarglebone
 					["_npcs"] = { 197344 },	-- Snarglebone
 				}),
-				crit(31, {
+				crit(30, {	-- Blisterhide <The Infested>
 					["_npcs"] = { 197353 },	-- Blisterhide <The Infested>
 				}),
-				crit(32, {
+				crit(31, {	-- Gnarls
 					["_npcs"] = { 197354 },	-- Gnarls
 				}),
-				crit(33, {
+				crit(32, {	-- High Shaman Rotknuckle
 					["_npcs"] = { 197356 },	-- High Shaman Rotknuckle
 				}),
-				crit(34, {
+				crit(33, {	-- Ravenous Tundra Bear <Lunker>
 					["_npcs"] = { 197371 },	-- Ravenous Tundra Bear <Lunker>
 				}),
-				crit(35, {
+				crit(34, {	-- Astray Splasher <Lunker>
 					["_npcs"] = { 197411 },	-- Astray Splasher <Lunker>
 				}),
 			}),
@@ -206,7 +203,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			ach(17203, {	-- Azure Span Reverse: Gold
 				["timeline"] = { ADDED_10_0_5 },
 			}),
-			ach(16336),	-- Azure Spanner
+			ach(16336, {	-- Azure Spanner
+				crit(1, {	-- Into the Archives
+					["sourceQuests"] = { 65855 },	-- Aiding Azure Span
+				}),
+				crit(2, {	-- Tuskarr Troubles
+					["sourceQuests"] = { 66026 },	-- Urgent Action Required
+				}),
+				crit(3, {	-- Decayed Roots
+					["sourceQuests"] = { 65911 },	-- Azure Alignment
+				}),
+				crit(4, {	-- Vakthros
+					["sourceQuests"] = { 66015 },	-- The Blue Dragon Oathstone
+				}),
+			}),
 			ach(16474, {	-- Do You Wanna Build a Snowman?
 				["coord"] = { 50.7, 55.4, THE_AZURE_SPAN },
 			}),
@@ -256,7 +266,56 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				crit(10),	-- Three-Falls Lookout
 				crit(11),	-- Vakthros
 			}),
-			ach(16580),	-- Lend a Helping Span
+			ach(16580, {	-- Lend a Helping Span
+				crit(1, {	-- WANTED: Frigellus
+					["sourceQuests"] = { 67036 },	-- Wrath of the Kirin Tor
+				}),
+				crit(2, {	-- Tending the Forge
+					["sourceQuests"] = { 66523 },	-- Tending the Forge
+				}),
+				crit(3, {	-- Setting the Defense
+					["sourceQuests"] = { 66489} ,	-- Setting the Defense
+				}),
+				crit(4, {	-- Send It!
+					["sourceQuests"] = { 66493 },	-- Send It!
+				}),
+				crit(5, {	-- For The Love of Others
+					["sourceQuests"] = { 66503 },	-- For The Love of Others
+				}),
+				crit(6, {	-- Fishing: Aileron Seamoth
+					["sourceQuests"] = { 66212 },	-- Fishing: Aileron Seamoth
+				}),
+				crit(7, {	-- The Weave of a Tale
+					["sourceQuests"] = { 66213 },	-- The Weave of a Tale
+				}),
+				crit(8, {	-- WANTED: Krojek the Shoreprowler
+					["sourceQuests"] = { 66217 },	-- WANTED: Krojek the Shoreprowler
+				}),
+				crit(9, {	-- Can We Keep It?
+					["sourceQuests"] = { 66223 },	-- Can We Keep It?
+				}),
+				crit(10, {	-- Toejam the Terrible
+					["sourceQuests"] = { 70129 },	-- Toejam the Terrible
+				}),
+				crit(11, {	-- Nothing for Breakfast
+					["sourceQuests"] = { 66837 },	-- Nothing for Breakfast
+				}),
+				crit(12, {	-- It's Cold Up Here
+					["sourceQuests"] = { 66838 },	-- It's Cold Up Here
+				}),
+				crit(13, {	-- It's Brew Time
+					["sourceQuests"] = { 66839 },	-- It's Brew Time
+				}),
+				crit(14, {	-- Out of Lukh
+					["sourceQuests"] = { 66843 },	-- Out of Lukh
+				}),
+				crit(15, {	-- The Great Shokhari
+					["sourceQuests"] = { 66844 },	-- The Great Shokhari
+				}),
+				crit(16, {	-- The Heart of the Deck
+					["sourceQuests"] = { 66846 },	-- The Heart of the Deck
+				}),
+			}),
 			ach(16638, {	-- Ley Line in the Span
 				crit(1, {	-- Azure Archives
 					--["cr"] = 198260,	-- Misaligned Ley Crystal
@@ -288,9 +347,65 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					{ 46.1, 26.3, THE_AZURE_SPAN },	-- End
 				},
 			}),
-			ach(16428),	-- Sojourner of Azure Span
+			ach(16428, {	-- Sojourner of Azure Span
+				crit(1, {	-- Grimtusk Hideaway
+					["sourceQuests"] = { 71135 },	-- Loose Ends
+				}),
+				crit(2, {	-- Gorloc Shore
+					["sourceQuests"] = { 66559 },	-- Back To Camp
+				}),
+				crit(3, {	-- Snowhide Camp
+					["sourceQuests"] = { 66730 },	-- True Survivors
+				}),
+				crit(4, {	-- Slyvern Plunge
+					["sourceQuests"] = { 70338 },	-- They Took the Kits
+				}),
+				crit(5, {	-- Brackenhide Water Hole
+					["sourceQuests"] = { 66270 },	-- Whack-a-Gnoll
+				}),
+				crit(6, {	-- Creektooth Den
+					["sourceQuests"] = { 65595 },	-- One Bad Apple
+				}),
+				crit(7, {	-- Shiverweb Vale
+					["sourceQuests"] = { 65834 },	-- Kill the Queen
+				}),
+				crit(8, {	-- Kauriq Gleamlet
+					["sourceQuests"] = { 66155 },	-- Ruriq's River Rapids Ride
+				}),
+				crit(9, {	-- Lost Ruins
+					["sourceQuests"] = { 70970 },	-- Good Intentions
+				}),
+				crit(10, {	-- Ruins of Karnthar
+					["sourceQuests"] = { 66429 },	-- I Will Remember
+				}),
+				crit(11, {	-- Rustpine Den
+					["sourceQuests"] = { 66152 },	-- Nowhere to Go
+				}),
+				crit(12, {	-- Winterpelt Hollow
+					["sourceQuests"] = { 66556 },	-- Ice Cave Ya Got There
+				}),
+			}),
 			pvp(ach(16594)),	-- Tour of Duty: The Azure Span
-			ach(16300),	-- Treasures of The Azure Span
+			ach(16300, {	-- Treasures of The Azure Span
+				crit(1, {	-- Forgotten Jewel Box
+					["_quests"] = { 70603 },
+				}),
+				crit(2, {	-- Gnoll Fiend Flail
+					["_quests"] = { 70604 },
+				}),
+				crit(3, {	-- Sapphire Gem Cluster
+					["_quests"] = { 70605 },
+				}),
+				crit(4, {	-- Lost Compass
+					["_quests"] = { 70606 },
+				}),
+				crit(5, {	-- Rubber Fish
+					["_quests"] = { 70380 },
+				}),
+				crit(6, {	-- Pepper Hammer
+					["_quests"] = { 70441 },
+				}),
+			}),
 		}),
 	})
 })));

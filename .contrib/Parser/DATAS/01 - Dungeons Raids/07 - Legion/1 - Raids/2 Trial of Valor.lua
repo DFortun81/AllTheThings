@@ -101,11 +101,11 @@ root("Instances", tier(LEGION_TIER, {
 					},
 				}),
 			}),
-			d(17, {	-- LFR Queue NPC
+			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
 			}),
-			d(17,  {	-- LFR
+			d(LFR_RAID, {
 				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
@@ -241,7 +241,7 @@ root("Instances", tier(LEGION_TIER, {
 					})),
 				}),
 			}),
-			d(14,  {	-- Normal
+			d(NORMAL_RAID, {
 				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
@@ -310,7 +310,7 @@ root("Instances", tier(LEGION_TIER, {
 					i(146706),	-- Frostveined Shale (Blacksmithing QI)
 				}))
 			}),
-			d(15,  {	-- Heroic
+			d(HEROIC_RAID, {
 				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
@@ -448,7 +448,7 @@ root("Instances", tier(LEGION_TIER, {
 					i(146706),	-- Frostveined Shale (Blacksmithing QI)
 				}))
 			}),
-			d(16, {	-- Mythic
+			d(MYTHIC_RAID, {
 				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),

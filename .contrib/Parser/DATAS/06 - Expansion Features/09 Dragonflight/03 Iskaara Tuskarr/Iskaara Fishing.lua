@@ -55,43 +55,43 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 					-- RENOWN 6 --
 				q(70942, {	-- Highland Fishing
-					["sourceQuests"] = { 72584 },	-- Setting Your Very Own Net -- TODO: CONFIRM
 					["minReputation"] = { 2511, 6 },	-- Iskaara Tuskarr Renown 6
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 7 --
 				q(70943, {	-- Harpooning
-					["sourceQuests"] = { 70942 },	-- Highland Fishing -- TODO: CONFIRM
 					["minReputation"] = { 2511, 7 },	-- Iskaara Tuskarr Renown 7
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 10 --
 				q(70944, {	-- Ice Fishing
-					["sourceQuests"] = { 70943 },	-- Harpooning -- TODO: CONFIRM
 					["minReputation"] = { 2511, 10 },	-- Iskaara Tuskarr Renown 10
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 13 --
 				q(70945, {	-- Netting More
-					["sourceQuests"] = { 70944 },	-- Ice Fishing -- TODO: CONFIRM
 					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 16 --
 				q(70948, {	-- Hook, Line, and Swelter!
-					["sourceQuests"] = { 70945 },	-- Netting More -- TODO: CONFIRM
 					["minReputation"] = { 2511, 16 },	-- Iskaara Tuskarr Renown 16
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
 					-- RENOWN 18 --
 				q(70950, {	-- Fishy Entertainment
-					["sourceQuests"] = { 70948 },	-- Hook, Line, and Swelter! -- TODO: CONFIRM
 					["minReputation"] = { 2511, 18 },	-- Iskaara Tuskarr Renown 18
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+				}),
+					-- RENOWN 27 --
+				q(70952, {	-- Abandoned... or Hidden Caches
+					["minReputation"] = { 2511, 27 },	-- Iskaara Tuskarr Renown 27
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
@@ -111,6 +111,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 63.6, 75, THE_WAKING_SHORES },
 					["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4
 					["isDaily"] = true,
+				}),
+				q(71194, {	-- Frogs of Fire
+					["provider"] = { "n", 198767 },	-- Explorative Fisher
+					["coord"] = { 34.5, 65.2, THE_WAKING_SHORES },
+					["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4
+					["isDaily"] = true,
+				}),
+				q(72075, {	-- Hot Stock
+					["provider"] = { "n", 198767 },	-- Explorative Fisher
+					["coord"] = { 34.5, 65.2, THE_WAKING_SHORES },
+					["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4
+					["isDaily"] = true,
+					["g"] = {
+						i(198855),	-- Throw Net
+					},
 				}),
 					-- Ohn'Ahran Plains --
 				q(72072, {	-- Dragonsprings Drop
@@ -192,6 +207,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 					["isRepeatable"] = true,
 				}),
+					-- Fishing Gear Repeatables --
+				q(72787, {	-- Contribute Supplies: Battered Imbu-made network.canDetectNetworkStatusChanges
+					["provider"] = { "n", 195935 },	-- Tavio
+					["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
+					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
+					["isRepeatable"] = true,
+				}),
 			}),
 			prof(TUSKARR_FISHING_GEAR, {
 				["crs"] = { 195935 },
@@ -219,10 +241,100 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						i(194510),	-- Iskaaran Harpoon
 						i(199694),	-- Flying Fish Bone Charm
 						i(199697),	-- Polished Basalt Bracelet
+						i(199695),	-- Iskaaran Fishing Net
+						i(199850),	-- Imbu Knot
+						i(199851),	-- Double Imbu Knot
+						i(199846),	-- Seavine Harpoon Rope
+						i(199847),	-- Braided Seavine Harpoon Rope
+						i(199844),	-- Serevite Harpoon Head
+						i(199845),	-- Jagged Serevite Harpoon Head
+						i(199848),	-- Draconium Net Weights
+						i(199698),	-- Irontree Harpoon Handle
+						i(199641),	-- Reinforced Irontree Harpoon Handle
 					}),
 				},
 			}),
+			n(RARES, sharedData({
+				["description"] = "Chance to spawn after using 5 |cffffffffOminous Conches|r at specific |cffffffffLarge Lunker Sighting|r Locations.",
+				["cost"] = {{"i",194701,5}},	-- 5x Ominous Conch
+				["isDaily"] = true,
+			},{
+				-- For all we know, the available Lunkers could also be related to the user's tuskarr fishing unlock progress as well...
+				n(197411, {	-- Astray Splasher <Lunker>
+					["coords"] = {
+						{ 57.2, 65.6, THALDRASZUS },
+						{ 81.0, 77.8, OHNAHRAN_PLAINS },
+					},
+					["questID"] = 74057,
+					-- ["g"] = {
+
+					-- },
+				}),
+				n(193735, {	-- Moth'go Deeploom <Lunker>
+					["coord"] = { 65.6, 73.8, THE_WAKING_SHORES },
+					["questID"] = 74068,
+					-- ["g"] = {
+
+					-- },
+				}),
+				n(197371, {	-- Ravenous Tundra Bear <Lunker>
+					["coord"] = { 58.8, 32.6, THE_AZURE_SPAN },
+					-- ["questID"] = ,
+					-- ["g"] = {
+
+					-- },
+				}),
+				n(193710, {	-- Seereel, the Spring <Lunker>
+					["coord"] = { 65.6, 73.8, THE_WAKING_SHORES },
+					["questID"] = 74074,
+					["g"] = {
+						i(197001),	-- Cliffside Wylderdrake: Finned Cheek
+						i(197098),	-- Highland Drake: Finned Back (DM!)
+						i(200164),	-- Iceloop
+						i(200086),	-- Khaz'gorite Infused Resin
+						i(200245),	-- Leviathan Lure
+						i(200563),	-- Primal Ritual Shell
+						i(200187),	-- Rod of Glacial Force
+						i(200552),	-- Torrent Caller's Shell
+					},
+				}),
+				n(193706, {	-- Snufflegust <Lunker>
+					["coord"] = { 58.6, 32.4, THE_AZURE_SPAN },
+					["questID"] = 74080,
+					["g"] = {
+						i(200187),	-- Rod of Glacial Force
+					},
+				}),
+				n(193708, {	-- Skald the Impaler <Lunker>
+					["coord"] = { 33.8, 64.4, THE_WAKING_SHORES },
+					["questID"] = 74078,
+					["g"] = {
+						i(200218),	-- Charred Fishing Pole
+					},
+				}),
+				n(193634, {	-- Swog'ranka <Lunker>
+					["coord"] = { 65.6, 73.8, THE_WAKING_SHORES },
+					["questID"] = 74084,
+					["g"] = {
+						i(197001),	-- Cliffside Wylderdrake: Finned Cheek
+						i(200086),	-- Khaz'gorite-infused Resin
+						i(200552),	-- Torrent Caller's Shell
+						i(200448),	-- Abyssal Ward
+						i(200151),	-- Seamist Blade
+						i(197589),	-- Windborne Velocidrake: Large Head Fin
+						-- is part of the DF>Global Rare Loottable
+					},
+				}),
+			})),
 			n(REWARDS, {
+				i(200082, {	-- Battered Imbu-made Net
+					["description"] = "Obtained from Rare fishing pools.",
+					["providers"] = {
+						{ "o", 377938 },	-- Prismatic Leaper School
+						{ "o", 382180 },	-- Overheated Magma Thresher Pool
+						{ "n", 197596 },	-- Deep Ice Fishing Hole
+					},
+				}),
 				i(200080, {	-- Draconium Nugget
 					["description"] = "Obtained from Rare fishing pools.",
 					["providers"] = {
@@ -267,6 +379,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						{ "o", 381069 },	-- Full Fishing Net
 					},
 				}),
+				i(200084, {	-- Salinated Serevite
+					["description"] = "Obtained from Full Tuskarr Fishing Nets.",
+					["providers"] = {
+						{ "o", 382071 },	-- Full Fishing Net
+						{ "o", 379314 },	-- Full Fishing Net
+						{ "o", 381069 },	-- Full Fishing Net
+					},
+				}),
 				o(381514, {	-- Sea-Polished Basalt
 					-- i didn't save the coords, and wowhead doesn't know about it. probably need some fine-tuning and additional spawn locations, then remove description
 					["description"] = "Near landing points for Alliance/Horde in The Waking Shores. Rough coordinates.",
@@ -278,6 +398,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 			}),
+			--[[ -- To Do: Add Tuskarr Tackleboxes. Can be looted from Tuskarr Tackleboxes (requires renown 27 to see)
+				-- we probably dont need coords of every tuskarr tacklebox location, there's about a billion of them and they respawn so fast you can't even escape one area
+				i(199338),	-- Copper Coin of the Isles
+				i(199340),	-- Gold Coin of the Isles
+				i(199339),	-- Silver Coin of the Isles
+			}),
+			--]]
 		})
 	}),
 })));
@@ -288,10 +415,18 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(70792),	-- Triggered after crafting Iskaaran Harpoon
 		q(72394),	-- Triggered with 'Fascinating Fliers' (70955)
 		q(72280),	-- Triggered with 'Hook, Line, and Swelter!' (70948)
+		q(72640),	-- Triggered with 'Abandoned... or Hidden Caches' (70952)
+		--
+		q(74370),	-- Triggered with 'Contribute Supplies: Battered Imbu-made Net'
 		--
 		q(67140),	-- Triggered after crafting 'Polished Basalt Bracelet'
 		q(67139),	-- Triggered after crafting 'Flying Fish Bone Charm'
 		q(67141),	-- Triggered after crafting 'Iskaaran Ice Axe'
+		q(70802),	-- Triggered after crafting 'Imbu Knot'
+		q(70798),	-- Triggered after crafting 'Seavine Harpoon Rope'
+		q(70796),	-- Triggered after crafting 'Serevite Harpoon Head'
+		q(70794),	-- Triggered after crafting 'Irontree Harpoon Handle'
+		q(70803),	-- Triggered after crafting 'Double Imbu Knot'
 		--
 		q(72828),	-- First weekly completion of 'Catch and Release: Scalebell Mackerel' (70199)
 		q(72827),	-- First weekly completion of 'Catch and Release: Thousandbite Piranha' (70200)

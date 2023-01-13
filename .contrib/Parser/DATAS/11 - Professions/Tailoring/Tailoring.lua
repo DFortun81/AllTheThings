@@ -496,7 +496,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Robe of the Void",
-					["timeline"] = { "removed 5.0.4", "added 10.0.2.99999" }, -- TODO: change patch when DF launches
+					["timeline"] = { "removed 5.0.4" },
 					["recipeID"] = 18458,
 					-- #if TBC
 					["classes"] = { WARLOCK },

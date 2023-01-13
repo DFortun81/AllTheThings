@@ -1219,10 +1219,9 @@ root("Zones", {
 						},
 					}),
 					applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10990, {	-- The Eagle's Essence
-						["qg"] = 22981,	-- Watcher Elaira
+						["qg"] = 22924,	-- Arthorn Windsong
 						["sourceQuest"] = 10988,	-- The Raven Stones
-						["coord"] = { 20.6, 35.7, NAGRAND },
-						["maps"] = { BLADES_EDGE_MOUNTAINS },
+						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { "removed 4.0.1" },
 						["classes"] = { DRUID },
 						["cost"] = {

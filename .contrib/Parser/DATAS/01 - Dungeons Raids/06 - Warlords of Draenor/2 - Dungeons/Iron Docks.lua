@@ -16,7 +16,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(1,  {	-- Normal
+			d(NORMAL_DUNGEON, {
 				e(1235, {	-- Fleshrender Nok'gar
 					["crs"] = {
 						81297,	-- Dreadfang
@@ -93,7 +93,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(2,  {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
 					ach(9081),	-- Expert Timing
 				}),
@@ -158,7 +158,7 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
-			d(23, {	-- Mythic
+			d(MYTHIC_DUNGEON, {
 				e(1235, {	-- Fleshrender Nok'gar
 					["crs"] = {
 						81297,	-- Dreadfang

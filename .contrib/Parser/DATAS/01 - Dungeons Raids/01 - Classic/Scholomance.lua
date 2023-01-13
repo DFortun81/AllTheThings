@@ -19,7 +19,7 @@ root("Instances", tier(CLASSIC_TIER, {
 		["lvl"] = lvlsquish(58, 33, 33),
 		["groups"] = {
 			-- #if AFTER MOP
-			d(1, {		-- Normal
+			d(NORMAL_DUNGEON, {
 			-- #endif
 				-- #if BEFORE 5.0.4
 				-- #if AFTER 3.0.1
@@ -1326,7 +1326,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			-- #if AFTER MOP
 			}),
 			-- #endif
-			d(2, {		-- Heroic
+			d(HEROIC_DUNGEON, {
 				["timeline"] = { "added 5.0.4" },
 				["lvl"] = 90,
 				["groups"] = {

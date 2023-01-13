@@ -1,265 +1,242 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(ZULDAZAR, {
 		n(QUESTS, {
 			-- TODO: shit that needs solving:
 				--	what unlocks "productive pests"/"crabulous feast"?  the other two quests in the area (76.4, 48.7) are available with no prerequisites, not even starting the zuldazar/dazar'alor, but as soon as you land in the port of dazar'alor for the first time after the pre-BFA stuff.
-
 				--	when does "keep them on task" (breadcrumb for area mentioned above) unlock?  could be as early as "terrace of the chosen" or as late as "mistress of lies," which is when i saw it.
-
 				--	when are "sandscar breach" and "the bones of xibala" available?  i picked them up after "the king's gambit," but they may be available slightly earlier.
-
 				--	when does "who seeks the seekers?" (in dazar'alor) become available?  seen as early as "the prophet's ploy," but may be available sooner.
-
 				--	when does "king da'ka" become available?  didn't see it until after i picked up the breadcrumb for the area after turning in "the prophet's ploy," but may be available sooner.  "kaja'mite ore dust" (in the same area) requires zero prereqs, not even the intro to dazar'alor, but this quest wasn't available then.
-
 				-- when does "lil' tika" become available?  saw it after "the king's gambit" but not sure if that's the requirement to unlock.  the other quests in the area are available prior to doing any quests in dazar'alor or zuldazar.
-
 				-- possible that "hunting the hunter" only requires "predatory."  check!
-
 				-- figure out if "prepare for a siege" is a breadcrumb for anything.  there was no follow-up quest to take so i'm not sure if this quest is a requirement for something or just flavor.
-
 				-- for "how to train your direhorn," i never got the version of "away from the herd" that is questID #55249, just #55244.  figure out if 55249 is used/unused and if/when it appears.
-
 			pvp(n(PVP, {
-				["lvl"] = 120,	-- Don't become available until this level.
-				["g"] = {
-					n(AZERITE_ESSENCES, {
-						i(169902, {	-- Finger-Bone Trophy of Battle (Rank 1)
-							["description"] = "Requires earning 500 Conquest and opening your weekly chest.\n",
+				n(AZERITE_ESSENCES, {
+					i(169902, {	-- Finger-Bone Trophy of Battle (Rank 1)
+						["description"] = "Requires earning 500 Conquest and opening your weekly chest.\n",
+					}),
+					i(169901, {	-- Etched Bone Trophy of the Vanquished (Rank 2)
+						["description"] = "Requires reaching 1,000 rating in PvP and opening your next weekly chest.\n",
+					}),
+					i(169900, {	-- Rib-Bone Choker of Dominance (Rank 3)
+						["description"] = "The amount of |cff9832dfBurgeoning Battlefield Furor|r you receive from your weekly chest varies depending on your rating.\n\nUnranked - 1\nCombatant - 3\nChallenger - 5\nRival - 6\nDuelist - 8\nElite - 10\n",
+						["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
+					}),
+					i(169899, {	-- Polished Skull Trophy (Rank 4)
+						["description"] = "Requires reaching Elite rating in PvP and opening your next weekly chest.\n",
+						["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
+						["u"] = REMOVED_FROM_GAME,	-- PvP Elite/Gladiator
+					}),
+				}),
+				q(52958, {	-- Call to Arms: Drustvar
+					["provider"] = { "n", 143536 },	-- High Warlord Volrath
+					["isWeekly"] = true,
+					["coord"] = { 51.5, 58.1, ZULDAZAR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(167744, {	-- Aspirant's Equipment Cache
+							["sym"] = {
+								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
+								{ "pop" },	-- discard Aspirant / Combatant Gear header
+								{ "pop" },	-- discard item type headers
+								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+							},
 						}),
-						i(169901, {	-- Etched Bone Trophy of the Vanquished (Rank 2)
-							["description"] = "Requires reaching 1,000 rating in PvP and opening your next weekly chest.\n",
+						i(169614),	-- Call to Arms Distinction
+					},
+				}),
+				q(56650, {	-- Call to Arms: Mechagon
+					["provider"] = { "n", 143536 },	-- High Warlord Volrath
+					["isWeekly"] = true,
+					["coord"] = { 51.5, 58.1, ZULDAZAR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(167744, {	-- Aspirant's Equipment Cache
+							["sym"] = {
+								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
+								{ "pop" },	-- discard Aspirant / Combatant Gear header
+								{ "pop" },	-- discard item type headers
+								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+							},
 						}),
-						i(169900, {	-- Rib-Bone Choker of Dominance (Rank 3)
-							["description"] = "The amount of |cff9832dfBurgeoning Battlefield Furor|r you receive from your weekly chest varies depending on your rating.\n\nUnranked - 1\nCombatant - 3\nChallenger - 5\nRival - 6\nDuelist - 8\nElite - 10\n",
-							["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
+						i(169614),	-- Call to Arms Distinction
+					},
+				}),
+				q(56148, {	-- Call to Arms: Nazjatar
+					["sourceQuests"] = { 55500 },	-- Save a Friend
+					["provider"] = { "n", 143536 },	-- High Warlord Volrath
+					["isWeekly"] = true,
+					["coord"] = { 51.5, 58.1, ZULDAZAR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(167744, {	-- Aspirant's Equipment Cache
+							["sym"] = {
+								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
+								{ "pop" },	-- discard Aspirant / Combatant Gear header
+								{ "pop" },	-- discard item type headers
+								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+							},
 						}),
-						i(169899, {	-- Polished Skull Trophy (Rank 4)
-							["description"] = "Requires reaching Elite rating in PvP and opening your next weekly chest.\n",
-							["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
-							["u"] = REMOVED_FROM_GAME,	-- PvP Elite/Gladiator
+						i(169614),	-- Call to Arms Distinction
+					},
+				}),
+				q(52954, {	-- Call to Arms: Nazmir
+					["provider"] = { "n", 143536 },	-- High Warlord Volrath
+					["isWeekly"] = true,
+					["coord"] = { 51.5, 58.1, ZULDAZAR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(167744, {	-- Aspirant's Equipment Cache
+							["sym"] = {
+								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
+								{ "pop" },	-- discard Aspirant / Combatant Gear header
+								{ "pop" },	-- discard item type headers
+								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+							},
 						}),
-					}),
-					q(52958, {	-- Call to Arms: Drustvar
-						["provider"] = { "n", 143536 },	-- High Warlord Volrath
-						["isWeekly"] = true,
-						["coord"] = { 51.5, 58.1, ZULDAZAR },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
-						["g"] = {
-							i(167744, {	-- Aspirant's Equipment Cache
-								["sym"] = {
-									{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-									{ "pop" },	-- discard Aspirant / Combatant Gear header
-									{ "pop" },	-- discard item type headers
-									{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-								},
-							}),
-							i(169614),	-- Call to Arms Distinction
-						},
-					}),
-					q(56650, {	-- Call to Arms: Mechagon
-						["provider"] = { "n", 143536 },	-- High Warlord Volrath
-						["isWeekly"] = true,
-						["coord"] = { 51.5, 58.1, ZULDAZAR },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
-						["g"] = {
-							i(167744, {	-- Aspirant's Equipment Cache
-								["sym"] = {
-									{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-									{ "pop" },	-- discard Aspirant / Combatant Gear header
-									{ "pop" },	-- discard item type headers
-									{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-								},
-							}),
-							i(169614),	-- Call to Arms Distinction
-						},
-					}),
-					q(56148, {	-- Call to Arms: Nazjatar
-						["sourceQuests"] = { 55500 },	-- Save a Friend
-						["provider"] = { "n", 143536 },	-- High Warlord Volrath
-						["isWeekly"] = true,
-						["coord"] = { 51.5, 58.1, ZULDAZAR },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
-						["g"] = {
-							i(167744, {	-- Aspirant's Equipment Cache
-								["sym"] = {
-									{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-									{ "pop" },	-- discard Aspirant / Combatant Gear header
-									{ "pop" },	-- discard item type headers
-									{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-								},
-							}),
-							i(169614),	-- Call to Arms Distinction
-						},
-					}),
-					q(52954, {	-- Call to Arms: Nazmir
-						["provider"] = { "n", 143536 },	-- High Warlord Volrath
-						["isWeekly"] = true,
-						["coord"] = { 51.5, 58.1, ZULDAZAR },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
-						["g"] = {
-							i(167744, {	-- Aspirant's Equipment Cache
-								["sym"] = {
-									{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-									{ "pop" },	-- discard Aspirant / Combatant Gear header
-									{ "pop" },	-- discard item type headers
-									{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-								},
-							}),
-							i(169614),	-- Call to Arms Distinction
-						},
-					}),
-					q(52957, {	-- Call to Arms: Stormsong Valley
-						["provider"] = { "n", 143536 },	-- High Warlord Volrath
-						["isWeekly"] = true,
-						["coord"] = { 51.5, 58.1, ZULDAZAR },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
-						["g"] = {
-							i(167744, {	-- Aspirant's Equipment Cache
-								["sym"] = {
-									{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-									{ "pop" },	-- discard Aspirant / Combatant Gear header
-									{ "pop" },	-- discard item type headers
-									{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-								},
-							}),
-							i(169614),	-- Call to Arms Distinction
-						},
-					}),
-					q(52956, {	-- Call to Arms: Tiragarde Sound
-						["provider"] = { "n", 143536 },	-- High Warlord Volrath
-						["isWeekly"] = true,
-						["coord"] = { 51.5, 58.1, ZULDAZAR },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
-						["g"] = {
-							i(167744, {	-- Aspirant's Equipment Cache
-								["sym"] = {
-									{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-									{ "pop" },	-- discard Aspirant / Combatant Gear header
-									{ "pop" },	-- discard item type headers
-									{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-								},
-							}),
-							i(169614),	-- Call to Arms Distinction
-						},
-					}),
-					q(59016, {	-- Call to Arms: Uldum
-						["provider"] = { "n", 143536 },	-- High Warlord Volrath
-						["isWeekly"] = true,
-						["coord"] = { 51.5, 58.1, ZULDAZAR },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
-						["g"] = {
-							i(167744, {	-- Aspirant's Equipment Cache
-								["sym"] = {
-									{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-									{ "pop" },	-- discard Aspirant / Combatant Gear header
-									{ "pop" },	-- discard item type headers
-									{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-								},
-							}),
-							i(169614),	-- Call to Arms Distinction
-						},
-					}),
-					q(59017, {	-- Call to Arms: Vale of Eternal Blossoms
-						["provider"] = { "n", 143536 },	-- High Warlord Volrath
-						["isWeekly"] = true,
-						["coord"] = { 51.5, 58.1, ZULDAZAR },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
-						["g"] = {
-							i(167744, {	-- Aspirant's Equipment Cache
-								["sym"] = {
-									{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-									{ "pop" },	-- discard Aspirant / Combatant Gear header
-									{ "pop" },	-- discard item type headers
-									{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-								},
-							}),
-							i(169614),	-- Call to Arms Distinction
-						},
-					}),
-					q(52953, {	-- Call to Arms: Vol'dun
-						["provider"] = { "n", 143536 },	-- High Warlord Volrath
-						["isWeekly"] = true,
-						["coord"] = { 51.5, 58.1, ZULDAZAR },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
-						["g"] = {
-							i(167744, {	-- Aspirant's Equipment Cache
-								["sym"] = {
-									{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-									{ "pop" },	-- discard Aspirant / Combatant Gear header
-									{ "pop" },	-- discard item type headers
-									{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-								},
-							}),
-							i(169614),	-- Call to Arms Distinction
-						},
-					}),
-					q(52952, {	-- Call to Arms: Zuldazar
-						["provider"] = { "n", 143536 },	-- High Warlord Volrath
-						["isWeekly"] = true,
-						["coord"] = { 51.5, 58.1, ZULDAZAR },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
-						["g"] = {
-							i(167744, {	-- Aspirant's Equipment Cache
-								["sym"] = {
-									{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
-									{ "pop" },	-- discard Aspirant / Combatant Gear header
-									{ "pop" },	-- discard item type headers
-									{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
-								},
-							}),
-							i(169614),	-- Call to Arms Distinction
-						},
-					}),
-					q(53338, {	-- Prove Your Worth
-						["coord"] = { 51.56, 58.06, ZULDAZAR },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 143551 },	--  Centurion Firescream
-						["g"] = {
-							i(163604, {	-- Net-O-Matic 5000
-								["filterID"] = CONSUMABLES,
-							}),
-						},
-					}),
-					q(56500, {	-- Storming the Battlefields!
-						["provider"] = { "n", 143555 },	-- Xander Silberman
-						["races"] = HORDE_ONLY,
-						["coord"] = { 51.6, 58.2, ZANDALAR },
-						["g"] = {
-							i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
-							i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
-							i(168578),	-- Sphere of Suppressed Force (Rank 1)
-						},
-					}),
-					q(53053, {	-- To The Mugambala!
-						["provider"] = { "n", 138708 },	-- Garona Halforcen
-						["coord"] = { 58.4, 62.6, DAZARALOR },
-						["description"] = "You have to enable War Mode to get this quest.",
-						["races"] = HORDE_ONLY,
-						["lvl"] = 110,
-					}),
-					q(53054, {	-- Dueler's Guild
-						["provider"] = { "n", 143536 },	-- High Warlord Volrath
-						["coord"] = { 51.5, 58.2, ZULDAZAR },
-						["sourceQuests"] = { 53053 },	-- To The Mugambala!
-						["races"] = HORDE_ONLY,
-						["lvl"] = 110,
-					}),
-				},
+						i(169614),	-- Call to Arms Distinction
+					},
+				}),
+				q(52957, {	-- Call to Arms: Stormsong Valley
+					["provider"] = { "n", 143536 },	-- High Warlord Volrath
+					["isWeekly"] = true,
+					["coord"] = { 51.5, 58.1, ZULDAZAR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(167744, {	-- Aspirant's Equipment Cache
+							["sym"] = {
+								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
+								{ "pop" },	-- discard Aspirant / Combatant Gear header
+								{ "pop" },	-- discard item type headers
+								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+							},
+						}),
+						i(169614),	-- Call to Arms Distinction
+					},
+				}),
+				q(52956, {	-- Call to Arms: Tiragarde Sound
+					["provider"] = { "n", 143536 },	-- High Warlord Volrath
+					["isWeekly"] = true,
+					["coord"] = { 51.5, 58.1, ZULDAZAR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(167744, {	-- Aspirant's Equipment Cache
+							["sym"] = {
+								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
+								{ "pop" },	-- discard Aspirant / Combatant Gear header
+								{ "pop" },	-- discard item type headers
+								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+							},
+						}),
+						i(169614),	-- Call to Arms Distinction
+					},
+				}),
+				q(59016, {	-- Call to Arms: Uldum
+					["provider"] = { "n", 143536 },	-- High Warlord Volrath
+					["isWeekly"] = true,
+					["coord"] = { 51.5, 58.1, ZULDAZAR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(167744, {	-- Aspirant's Equipment Cache
+							["sym"] = {
+								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
+								{ "pop" },	-- discard Aspirant / Combatant Gear header
+								{ "pop" },	-- discard item type headers
+								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+							},
+						}),
+						i(169614),	-- Call to Arms Distinction
+					},
+				}),
+				q(59017, {	-- Call to Arms: Vale of Eternal Blossoms
+					["provider"] = { "n", 143536 },	-- High Warlord Volrath
+					["isWeekly"] = true,
+					["coord"] = { 51.5, 58.1, ZULDAZAR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(167744, {	-- Aspirant's Equipment Cache
+							["sym"] = {
+								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
+								{ "pop" },	-- discard Aspirant / Combatant Gear header
+								{ "pop" },	-- discard item type headers
+								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+							},
+						}),
+						i(169614),	-- Call to Arms Distinction
+					},
+				}),
+				q(52953, {	-- Call to Arms: Vol'dun
+					["provider"] = { "n", 143536 },	-- High Warlord Volrath
+					["isWeekly"] = true,
+					["coord"] = { 51.5, 58.1, ZULDAZAR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(167744, {	-- Aspirant's Equipment Cache
+							["sym"] = {
+								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
+								{ "pop" },	-- discard Aspirant / Combatant Gear header
+								{ "pop" },	-- discard item type headers
+								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+							},
+						}),
+						i(169614),	-- Call to Arms Distinction
+					},
+				}),
+				q(52952, {	-- Call to Arms: Zuldazar
+					["provider"] = { "n", 143536 },	-- High Warlord Volrath
+					["isWeekly"] = true,
+					["coord"] = { 51.5, 58.1, ZULDAZAR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(167744, {	-- Aspirant's Equipment Cache
+							["sym"] = {
+								{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },	-- BFA header > Season 4 header > Aspirant gear header
+								{ "pop" },	-- discard Aspirant / Combatant Gear header
+								{ "pop" },	-- discard item type headers
+								{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+							},
+						}),
+						i(169614),	-- Call to Arms Distinction
+					},
+				}),
+				q(53338, {	-- Prove Your Worth
+					["coord"] = { 51.56, 58.06, ZULDAZAR },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 143551 },	--  Centurion Firescream
+					["g"] = {
+						i(163604, {	-- Net-O-Matic 5000
+							["filterID"] = CONSUMABLES,
+						}),
+					},
+				}),
+				q(56500, {	-- Storming the Battlefields!
+					["provider"] = { "n", 143555 },	-- Xander Silberman
+					["races"] = HORDE_ONLY,
+					["coord"] = { 51.6, 58.2, ZANDALAR },
+					["g"] = {
+						i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
+						i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
+						i(168578),	-- Sphere of Suppressed Force (Rank 1)
+					},
+				}),
+				q(53053, {	-- To The Mugambala!
+					["provider"] = { "n", 138708 },	-- Garona Halforcen
+					["coord"] = { 58.4, 62.6, DAZARALOR },
+					["description"] = "You have to enable War Mode to get this quest.",
+					["races"] = HORDE_ONLY,
+					["lvl"] = 110,
+				}),
+				q(53054, {	-- Dueler's Guild
+					["provider"] = { "n", 143536 },	-- High Warlord Volrath
+					["coord"] = { 51.5, 58.2, ZULDAZAR },
+					["sourceQuests"] = { 53053 },	-- To The Mugambala!
+					["races"] = HORDE_ONLY,
+					["lvl"] = 110,
+				}),
 			})),
 			q(48399, {	-- A Dark (Iron) Tide
 				["sourceQuests"] = { 48317 },	-- A Nose for Magic
@@ -273,7 +250,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 68.1, 41.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(55243, {	-- A Daughter of Torcali #2
 				["sourceQuests"] = { 55507 },	-- Torcali's Blessing
@@ -281,7 +257,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 68.1, 41.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(50331, {	-- A Different Outcome
 				["sourceQuests"] = { 51407 },	-- Find Their Words
@@ -311,14 +286,12 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 151286 },		-- Child of Torcali
 				["isDaily"] = true,
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
-				["lvl"] = 120,
 			}),
 			q(55252, {	-- A Loa Without a Temple
 				["sourceQuests"] = { 55254 },	-- An Unending Sleep
 				["provider"] = { "n", 121706 },	-- Beastlord L'kala
 				["coord"] = { 66.8, 42.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(48317, {	-- A Nose for Magic
 				["sourceQuests"] = {
@@ -336,7 +309,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 70.8, 50.9, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(50838, {	-- A Nose for Ptrouble #2
 				["sourceQuests"] = { 50412 },	-- Back to the Nest
@@ -345,7 +317,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 70.7, 50.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["cost"] = { { "i", 158906, 8 } },	-- 8x Shimmerfin Flesh
-				["lvl"] = 120,
 			}),
 			q(50860, {	-- A Nose for Ptrouble #3
 				["sourceQuests"] = { 50900 },	-- Maybe When You're Older
@@ -353,21 +324,18 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 70.8, 50.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(50396, {	-- A Pterrible Fate
 				["sourceQuests"] = { 52447 },	-- Room to Grow
 				["provider"] = { "n", 133679 },	-- Kua'fon
 				["coord"] = { 70.6, 51.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(55253, {	-- A Show of Faith
 				["sourceQuests"] = { 55252 },	-- A Loa Without a Temple
 				["provider"] = { "n", 151257 },	-- Torcali
 				["coord"] = { 68.2, 29.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(49289, {	-- A Special Stone
 				["sourceQuests"] = {
@@ -400,7 +368,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 133682 },	-- Kua'fon
 				["coord"] = { 75.2, 49.4, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(49871, {	-- Against the Tide
 				["sourceQuests"] = { 49754 },	-- Not "Only Zul"
@@ -419,14 +386,12 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 				["coord"] = { 66.7, 42.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(55254, {	-- An Unending Sleep
 				["sourceQuests"] = { 52857 },	-- Held For Observation
 				["provider"] = { "n", 151283 },	-- Direhorn Hatchling
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(47735, {	-- Ancient Tortollan Remedies
 				["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
@@ -475,7 +440,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
-				["lvl"] = 120,
 			}),
 			q(55249, {	-- Away From the Herd
 			--	i never got this version of the quest, only 55244.  is this version unused or is there a specific set of circumstances under which it appears?
@@ -485,14 +449,12 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(50412, {	-- Back to the Nest
 				["sourceQuests"] = { 50401 },	-- Fear of Falling
 				["provider"] = { "n", 133678 },	-- Kua'fon
 				["coord"] = { 74.3, 51.9, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(48026, {	-- Beneath the Waves
 				["sourceQuests"] = { 49969 },	-- Awaken a God
@@ -613,7 +575,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				},
 				["coord"] = { 70.6, 50.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 				["g"] = {
 					i(159146),	-- Kua'fon (MOUNT!)
 				},
@@ -623,7 +584,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 135801 },	-- Hexlord Raal
 				["coord"] = { 70.6, 50.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 				["cost"] = { { "i", 159139, 1 } },	-- 1x Lightweight Skyterror Barding
 			}),
 			q(55245, {	-- Eat Like a Direhorn
@@ -632,7 +592,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(49149, {	-- Embrace the Voodoo
 				["sourceQuests"] = {
@@ -666,7 +625,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 135308 },	-- Wingminder Goja
 				["coord"] = { 70.8, 51.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(50930, {	-- Falling with Style
 				["sourceQuests"] = { 50900 },	-- Maybe When You're Older
@@ -674,7 +632,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 70.8, 50.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(49663, {	-- False Prophecies
 				["sourceQuests"] = { 49905 },	-- Plot Twist
@@ -687,7 +644,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 127377 },	-- Pa'ku
 				["coord"] = { 70.9, 50.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 				["g"] = {
 					i(158885),	-- Shimmerfin Flesh
 				},
@@ -728,7 +684,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 68.1, 41.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(47418, {	-- Growing Pains
 				["sourceQuests"] = {
@@ -808,14 +763,12 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 				["coord"] = { 66.7, 42.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(55796, {	-- Heresy at the Crossroad
 				["sourceQuests"] = { 55795 },	-- Mountain On the Move
 				["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
 				["coord"] = { 68.5, 29.9, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(49422, {	-- Heretics
 				["sourceQuests"] = { 49965 },	-- The Warpack
@@ -892,7 +845,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 127377 },	-- Pa'Ku
 				["races"] = HORDE_ONLY,
 				["coord"] = { 71.5, 49.4, ZULDAZAR },
-				["lvl"] = 120,
 			}),
 			q(49919, {	-- Kaja'mite Ore Bust
 				["sourceQuests"] = { 49917 },	-- Kaja'mite? Kaja'must!
@@ -931,7 +883,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 70.7, 51.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(51147, {	-- Kua'fon's Day Off #2
 				["sourceQuests"] = { 50900 },	-- Maybe When You're Older
@@ -939,7 +890,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 70.8, 50.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(49681, {	-- Lil' Tika
 			--	unknown prereq, isn't available prior to starting dazar'alor like the other quests in the area
@@ -959,7 +909,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 70.7, 50.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["cost"] = { { "i", 158906, 8 } },	-- 8x Shimmerfin Flesh
-				["lvl"] = 120,
 			}),
 			q(50252, {	-- Mating Season Halftime
 				["sourceQuests"] = {
@@ -975,7 +924,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 135595 },	-- Pa'ku
 				["coord"] = { 72.4, 57.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(51677, {	-- Mending Body and Soul
 				["sourceQuests"] = {
@@ -1023,7 +971,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				},
 				["coord"] = { 68.2, 41.9, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(47310, {	-- Naptime
 				["sourceQuests"] = { 48581 },	-- A Good Spanking
@@ -1036,7 +983,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 135308 },	-- Wingminder Goja
 				["coord"] = { 70.8, 50.9, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(49489, {	-- Needs a Little Body
 				["sourceQuests"] = { 49488 },	-- Tal'gurub
@@ -1063,7 +1009,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 70.7, 51.1, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(49145, {	-- No Troll Left Behind
 				["sourceQuests"] = { 49122 },	-- A Port in Peril
@@ -1089,7 +1034,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 154607 },	-- Image of Torcali
 				["coord"] = { 52.4, 23.2, DAZARALOR },	-- on the very edge
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(50798, {	-- Out on a Limb
 				["sourceQuests"] = { 50402 },	-- SKREEEEE! (#1, prior to Nature Versus Nurture, during which this quest is available)
@@ -1097,7 +1041,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 70.7, 50.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(47734, {	-- Partners in Heresy
 				["sourceQuests"] = {
@@ -1149,7 +1092,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 70.8, 51.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["cost"] = { { "i", 158913, 1 } },	-- Huge Dragon Kite
-				["lvl"] = 120,
 			}),
 			q(47312, {	-- Queenfeather
 				["sourceQuests"] = {	-- probably!  might be available as early as picking up "the orphaned hatchling" or turning in "the missing handler."
@@ -1203,14 +1145,12 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 152115 },	-- Koo'li
 				["coord"] = { 62.0, 49.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(52447, {	-- Room to Grow
 				["sourceQuests"] = { 50412 },	-- Back to the Nest
 				["provider"] = { "n", 135308 },	-- Wingminder Goja
 				["coord"] = { 70.8, 50.9, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(48025, {	-- Saving for Later
 				["sourceQuests"] = {
@@ -1269,7 +1209,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 141952 },	-- Direhorn Juvenile
 				["coord"] = { 68.2, 41.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(49870, {	-- Size Matters
 				["sourceQuests"] = { 50268 },	-- Give it a Little Juice
@@ -1283,14 +1222,12 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 70.7, 50.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(50402, {	-- SKREEEEE! (#1)
 				["sourceQuests"] = { 50394 },	-- Your Problem Now
 				["provider"] = { "n", 133678 },	-- Kua'fon
 				["coord"] = { 70.8, 50.9, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(50796, {	-- SKREEEEE! (#2)
 				["sourceQuests"] = { 50798 },	-- Out on a Limb
@@ -1298,7 +1235,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 70.7, 50.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(50839, {	-- SKREEEEE! (#3)
 				["sourceQuests"] = { 50412 },	-- Back to the Nest
@@ -1306,7 +1242,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 70.7, 50.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(50841, {	-- SKREEEEE! (#4)
 				["sourceQuests"] = { 50900 },	-- Maybe When You're Older
@@ -1314,7 +1249,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 70.8, 50.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(49680, {	-- Skycaller Soltok
 				["sourceQuests"] = { 49940 },	-- Sandscar Breach (breadcrumb)
@@ -1332,7 +1266,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 68.1, 41.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["cost"] = { { "i", 157779, 3 }, },	-- 3x Infant Dino Kibble
-				["lvl"] = 120,
 			}),
 			q(49146, {	-- Spirits' Belongings
 				["sourceQuests"] = { 49122 },	-- A Port in Peril
@@ -1354,7 +1287,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 127377 },	-- Pa'ku
 				["coord"] = { 71.4, 49.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(47963, {	-- The Ancient One
 				["sourceQuests"] = { 47521 },	-- Midnight in the Garden of the Loa
@@ -1373,21 +1305,18 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 133678 },	-- Kua'fon
 				["coord"] = { 70.8, 50.9, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(55503, {	-- The Direhorn and the Saurid
 				["sourceQuests"] = { 55504 },	-- Wayshrines of Zuldazar
 				["provider"] = { "n", 154607 },	-- Image of Torcali
 				["coord"] = { 52.4, 23.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(55797, {	-- The Direhorn Mother's Fury
 				["sourceQuests"] = { 55796 },	-- Heresy at the Crossroad
 				["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
 				["coord"] = { 28.6, 89.6, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(49424, {	-- The Full Prophecy
 				["sourceQuests"] = { 49965 },	-- The Warpack
@@ -1451,7 +1380,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 135801 },	-- Hexlord Raal
 				["coord"] = { 75.2, 49.4, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(47733, {	-- The Loa-Speaker's Betrayal
 				["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
@@ -1544,14 +1472,12 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 151319 },	-- Li'zal <Priestess of Torcali>
 				["coord"] = { 68.3, 41.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(55462, {	-- The Wanderer's Call
 				["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
 				["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
 				["races"] = HORDE_ONLY,
 				["coord"] = { 68.2, 41.6, ZULDAZAR },
-				["lvl"] = 120,
 			}),
 			q(47738, {	-- The Will of the Loa
 				["sourceQuests"] = { 51677 },	-- Mending Body and Soul
@@ -1606,7 +1532,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
 				["coord"] = { 68.2, 29.4, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(47741, {	-- To Sacrifice a Loa
 				["sourceQuests"] = { 47734 },	-- Partners in Heresy
@@ -1625,7 +1550,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
 				["coord"] = { 23.3, 73.8, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 				["g"] = {
 					i(168408),	-- Child of Torcali (MOUNT!)
 				},
@@ -1673,7 +1597,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
 				["races"] = HORDE_ONLY,
 				["coord"] = { 68.2, 29.6, ZULDAZAR },
-				["lvl"] = 120,
 			}),
 			q(51990, {	-- Wings for the Kraal
 				["sourceQuests"] = {
@@ -1697,7 +1620,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 133682 },	-- Kua'fon
 				["coord"] = { 75.2, 49.4, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(51538, {	-- Word from the Deep
 				["sourceQuests"] = { 48026 },	-- Beneath the Waves
@@ -1721,7 +1643,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 127377 },	-- Pa'ku
 				["coord"] = { 71.4, 49.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
 			}),
 			q(50433, {	-- Zanchuli Disbanded
 				["isBreadcrumb"] = true,
@@ -1887,7 +1808,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 131777 },	-- Acadia Chistlestone
 				["sourceQuests"] = { 49276 },	-- The Thrill of Exploration
 			}),
-
 			--	unsorted
 			q(50954, {	-- Zandalar Forever!
 				["sourceQuests"] = {
@@ -1928,7 +1848,13 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	}),
 })));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.HiddenQuestTriggers, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+	m(ZULDAZAR, {
+		q(54738),	-- Loa Changer Jani to Paku
+	}),
+})));
+
+root(ROOTS.NeverImplemented, {
 	n(QUESTS, {
 		q(59225),	-- [DNT] Azerite Reward Test Quest - BJI
 	}),
@@ -1994,8 +1920,4 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(158580),	-- Loa-Claimer's Wariglaives
 		}),
 	}),
-}));
-
-root("HiddenQuestTriggers", {
-	q(54738),	-- Loa Changer Jani to Paku
 });

@@ -38,7 +38,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }
 				i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 2] (RECIPE!)
 				i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 3] (RECIPE!)
 			}),
-			d(17, {	-- LFR Queue NPC
+			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = {
 					177193,	-- Kiku
 					177208,	-- Eppu
@@ -48,7 +48,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }
 					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 				},
 			}),
-			d(17, {	-- LFR
+			d(LFR_RAID, {
 				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165564),	-- Last Stand Greatbelt
@@ -343,7 +343,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }
 					},
 				}),
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_RAID, {
 				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165518),	-- Warbeast Hide Cinch
@@ -560,7 +560,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }
 					},
 				}),
 			}),
-			d(15, {	-- Heroic
+			d(HEROIC_RAID, {
 				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165518),	-- Warbeast Hide Cinch
@@ -771,7 +771,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }
 					},
 				}),
 			}),
-			d(16, {	-- Mythic
+			d(MYTHIC_RAID, {
 				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165518),	-- Warbeast Hide Cinch

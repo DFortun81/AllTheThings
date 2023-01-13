@@ -504,7 +504,7 @@ local L = app.L;
 		L.SCREENSHOT_COLLECTED_CHECKBOX = "收藏物品后触发截图";
 		L.SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "如果你想为你收藏的每件物品进行截图请启用此选项。";
 		L.CHAT_COMMANDS_LABEL = "聊天命令";
-		L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFF或|R /things |cffFFFFFF或|R /allthethings\n|cffFFFFFF打开主列表。\n\n|R/att mini |cffFFFFFF或|R /attmini\n|cffFFFFFF打开小列表。\n\n|R/att bounty\n|cffFFFFFF打开被出错或未确认的物品列表。\n\n|R/att ra |cffFFFFFF或|R /attra\n|cffFFFFFF打开团队助手。\n\n|R/att wq |cffFFFFFF或|R /attwq\n|cffFFFFFF打开世界任务列表。\n\n|R/att item:1234 |cffFFFFFF或|R /att [物品链接]\n|cffFFFFFF打开一个共享外观的窗口。也适用于其他事物，例如|R quest:1234|cffFFFFFF，|Rnpcid:1234|cffFFFFFF，|Rmapid:1234|cffFFFFFF 或 |Rrecipeid:1234|cffFFFFFF。\n\n|R/att rwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/att random |cffFFFFFF或|R /attrandom |cffFFFFFF或|R /attran\n|cffFFFFFF打开随机列表。\n\n|R/att unsorted\n|cffFFFFFF打开未知源物品列表。最好在调试模式下打开。\n\n|R/rl\n|cffFFFFFF重载魔兽界面。|R";	--TODO: Translate /att rwp
+		L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFF或|R /things |cffFFFFFF或|R /allthethings\n|cffFFFFFF打开主列表。\n\n|R/att mini |cffFFFFFF或|R /attmini\n|cffFFFFFF打开小列表。\n\n|R/att bounty\n|cffFFFFFF打开被出错或未确认的物品列表。\n\n|R/att ra |cffFFFFFF或|R /attra\n|cffFFFFFF打开团队助手。\n\n|R/att wq |cffFFFFFF或|R /attwq\n|cffFFFFFF打开世界任务列表。\n\n|R/att item:1234 |cffFFFFFF或|R /att [物品链接]\n|cffFFFFFF打开一个共享外观的窗口。也适用于其他事物，例如|R quest:1234|cffFFFFFF，|Rnpcid:1234|cffFFFFFF，|Rmapid:1234|cffFFFFFF 或 |Rrecipeid:1234|cffFFFFFF。\n\n|R/att rwp\n|cffFFFFFF显示所有未来用补丁删除的东西。\n\n|R/att random |cffFFFFFF或|R /attrandom |cffFFFFFF或|R /attran\n|cffFFFFFF打开随机列表。\n\n|R/att unsorted\n|cffFFFFFF打开未知源物品列表。最好在调试模式下打开。\n\n|R/rl\n|cffFFFFFF重载魔兽界面。|R";
 
 	-- Profiles tab
 		L.PROFILES_TAB = "配置文件";
@@ -516,6 +516,7 @@ local L = app.L;
 		L.PROFILE_COPY_TOOLTIP = "复制已选配置文件到当前配置文件";
 		L.PROFILE_DELETE_TOOLTIP = "删除已选配置文件";
 		L.PROFILE_SWITCH_TOOLTIP = "将选定的配置文件设置为当前配置文件\n\n一个配置文件也可以通过 "..SHIFT_KEY_TEXT.."-点击切换到它";
+		L.SHOW_PROFILE_LOADED = "显示在登录期间或在配置文件之间切换时加载的配置文件";
 
 	-- Sync tab
 		L.SYNC = "同步";
@@ -831,15 +832,12 @@ for key,value in pairs({
 		[-910] = "狩猎：噬魂者",											-- Hunt: Alpha Devourers
 		[-911] = "狩猎：影犬",											-- Hunt: Shadehounds
 		[-912] = "狩猎：飞翼噬魂者",										-- Hunt: Winged Soul Eaters
-		[-913] = "托加斯特的折磨者",										-- Tormentors of Torghast
-		[-977] = "游荡者梅莉",											-- Maelie the Wanderer
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		[-921] = "圣所升级",											-- Sanctum Upgrades
 		[-924] = "传送网络",											-- Transport Network
 		-- SL Ardenweald/Night Fae
 			[-936] = "灵魂变形形态",										-- Soulshape Forms (Night Fae)
 		-- SL Bastion/Kyrian
-			[-940] = "晋升者议会",										-- Ascended Counil
 			[-973] = "忠诚",											-- Loyalty
 			[-975] = "谦逊",											-- Humility
 		-- SL Revendreth/Venthyr
@@ -859,7 +857,7 @@ for key,value in pairs({
 		[-1010] = "角斗士备选",											-- Gladiator Alternative
 		[-1011] = "精锐备选",											-- Elite Alternative
 	-- Dragonflight
-		[-1100] = "观龙者手稿",											-- Drakewatcher Manuscripts	--TODO: plural
+		[-1100] = "观龙者手稿",											-- Drakewatcher Manuscripts
 		[-1101] = "原始风暴",											-- Primal Storms
 		[-1102] = "拉希奥和萨贝里安",										-- Wrathion & Sabellian
 		[-1110] = "龙鳞探险队",											-- Dragonscale Expedition
@@ -874,6 +872,7 @@ for key,value in pairs({
 		[-1131] = "伊斯卡拉渔具",										-- Iskaara Fishing
 		[-1140] = "瓦德拉肯联军",											-- Valdrakken Accord
 		[-1142] = "天际挑战",											-- Aerial Challenges
+		[-1143] = "每2小时稀有",											-- Every 2 Hours Rare
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
@@ -3207,6 +3206,8 @@ for key, value in pairs({
 	[364932] = "灼光矿锭",	-- Blazing Ingot
 	[364937] = "相位虹吸仪",	-- Phasic Siphoner
 	[364987] = "掮灵日志",	-- Broker Journal
+	[364994] = "幽灵矿镐",	-- Spectral Pick
+	[365084] = "拷问者之矛",	-- Tormentor's Pike
 	--TODO: [365093] = "Theotar's Caroling Books",	-- Theotar's Caroling Books
 	[368205] = "渊誓之箱",	-- Mawsworn Cache
 	[368206] = "渊誓之箱",	-- Mawsworn Cache
@@ -3434,16 +3435,21 @@ for key, value in pairs({
 	--TODO: [377458] = "Abandoned Weapon Rack",	-- Abandoned Weapon Rack
 	--TODO: [377466] = "Lost Draconic Hourglass",	-- Lost Draconic Hourglass
 	[377499] = "《龙族起源考》",	-- On the Origin of Draconic Species
-	--TODO: [377534] = "Delivered Vault",	-- Delivered Vault
+	[377534] = "递送的宝库",	-- Delivered Vault
 	[377899] = "隐藏的龙蛙人质",	-- Hidden Hornswog Hostage
 	--TODO: [377900] = "Nokhud Warspear",	-- Nokhud Warspear
+	--TODO: [377938] = "Prismatic Leaper School",	-- Prismatic Leaper School
 	[378010] = "被遗忘的巨龙宝藏",	-- Forgotten Dragon Treasure
+	--TODO: [378047] = "Emerald Chest",	-- Emerald Chest
 	[378054] = "激流陈酿",	-- Riptide Brew
+	[378088] = "水晶花",	-- Crystalline Flower
 	--TODO: [378820] = "Popfizz Punch",	-- Popfizz Punch
 	[378857] = "失落的黑曜石宝箱",	-- Lost Obsidian Cache
+	--TODO: [379168] = "Lost Cache Key",	-- Lost Cache Key
 	[379290] = "精美雕像",	-- Ornamented Statue
 	--TODO: [379296] = "Broken Banding",	-- Broken Banding
 	[379297] = "轰砰豪饮",	-- Slam Bam Swill
+	[379314] = "完整的渔网",	-- Full Fishing Net
 	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
 	--TODO: [380429] = "Golden Claw",	-- Golden Claw
 	--TODO: [380430] = "Tail Fragment",	-- Tail Fragment
@@ -3451,42 +3457,42 @@ for key, value in pairs({
 	[380516] = "智慧微光",	-- Glimmer of Wisdom
 	--TODO: [380533] = "Snow Covered Scroll",	-- Snow Covered Scroll
 	[380540] = "精美雕像",	-- Ornamented Statue
-	--TODO: [380545] = "Painter's Pretty Jewel",	-- Painter's Pretty Jewel
+	[380545] = "画家的美丽宝石",	-- Painter's Pretty Jewel
 	[380547] = "腐朽灌注的鞣革用油",	-- Decay-Infused Tanning Oil
 	[380548] = "被遗忘的珠宝盒",	-- Forgotten Jewelry Box
 	[380549] = "有趣的蓝布卷",	-- Intriguing Bolt of Blue Cloth
-	--TODO: [380550] = "Forgetful Apprentice's Tome",	-- Forgetful Apprentice's Tome
+	[380550] = "健忘学徒的魔典",	-- Forgetful Apprentice's Tome
 	[380554] = "谐舞之鼓",	-- Well-Danced Drum
 	[380556] = "和谐宝箱",	-- Harmonic Chest
 	--TODO: [380558] = "Enchanted Debris",	-- Enchanted Debris
 	[380559] = "霜铸药水",	-- Frostforged Potion
 	--TODO: [380560] = "Disabled Tesla Coil",	-- Disabled Tesla Coil
-	--TODO: [380567] = "Eight of Storms",	-- Eight of Storms
+	[380567] = "风暴之八",	-- Eight of Storms
 	[380569] = "晶体增生",	-- Crystalline Overgrowth
 	--TODO: [380570] = "Curious Glyph",	-- Curious Glyph
 	[380571] = "轰希尔火箭",	-- Boomthyr Rocket
 	[380577] = "崇高玛里苟石",	-- Lofty Malygite
 	[380578] = "《驯雏龙高手》",	-- How to Train Your Whelpling
 	[380579] = "备用的贾拉丁工具",	-- Spare Djaradin Tools
-	--TODO: [380580] = "Lava-Infused Seed",	-- Lava-Infused Seed
+	[380580] = "熔岩灌注之种",	-- Lava-Infused Seed
 	[380583] = "正在腐朽的蕨皮毛毯",	-- Decaying Brackenhide Blanket
 	--TODO: [380585] = "Erupted Alexstraszite Cluster",	-- Erupted Alexstraszite Cluster
 	--TODO: [380586] = "Mysterious Cauldrons",	-- Mysterious Cauldrons
-	--TODO: [380587] = "Crate of Treated Hides",	-- Crate of Treated Hides
+	[380587] = "一箱养护之皮",	-- Crate of Treated Hides
 	[380588] = "青铜龙军团小型旗帜",	-- Miniature Bronze Dragonflight Banner
-	--TODO: [380589] = "Faintly Enchanted Remains",	-- Faintly Enchanted Remains
+	[380589] = "稍微有一点魔法的残留物",	-- Faintly Enchanted Remains
 	[380590] = "隔热性优良的马克杯",	-- Well Insulated Mug
 	[380591] = "严加看守的亮闪闪",	-- Closely Guarded Shiny
 	[380592] = "雷缚之角",	-- Stormbound Horn
 	[380593] = "一袋腐朽之鳞",	-- Bag of Decayed Scales
-	--TODO: [380595] = "Frosted Parchment",	-- Frosted Parchment
+	[380595] = "结霜的羊皮纸",	-- Frosted Parchment
 	[380597] = "饱经战火的半人马地毯",	-- Battle Hardened Centaur Carpet
 	--TODO: [380598] = "Singed Chest",	-- Singed Chest
 	[380600] = "浓缩的大地碎片",	-- Enriched Earthen Shard
 	[380601] = "蒙尘的暗月卡片",	-- Dusty Darkmoon Card
 	[380602] = "风佑之皮",	-- Wind-Blessed Hide
 	[380604] = "神秘旗帜",	-- Mysterious Banner
-	--TODO: [380605] = "Contraband Concoction",	-- Contraband Concoction
+	[380605] = "违禁制剂",	-- Contraband Concoction
 	[380607] = "流动的焦灼纤维",	-- Itinerant Singed Fabric
 	--TODO: [380608] = "Silky Surprise",	-- Silky Surprise
 	[380610] = "脉动的大地符文",	-- Pulsing Earth Rune
@@ -3498,7 +3504,7 @@ for key, value in pairs({
 	[380618] = "巨龙熔剂",	-- Draconic Flux
 	[380619] = "奇特的金属锭",	-- Curious Ingots
 	[380620] = "上古之矛碎片",	-- Ancient Spear Shards
-	--TODO: [380623] = "Spelltouched Tongs",	-- Spelltouched Tongs
+	[380623] = "法触钳子",	-- Spelltouched Tongs
 	[380643] = "速冻卷轴",	-- Flashfrozen Scroll
 	[380647] = "被遗忘的奥术宝典",	-- Forgotten Arcane Tomne
 	--TODO: [380648] = "Odd Book",	-- Odd Book
@@ -3519,6 +3525,7 @@ for key, value in pairs({
 	--TODO: [380991] = "Dirt Mound",	-- Dirt Mound
 	[381035] = "宏伟宝库",	-- The Great Vault
 	[381045] = "金色巨龙高脚杯",	-- Golden Dragon Goblet
+	[381069] = "完整的渔网",	-- Full Fishing Net
 	[381094] = "优雅的画笔",	-- Elegant Canvas Brush
 	--TODO: [381107] = "Sand Pile",	-- Sand Pile
 	[381108] = "耶努的地图",	-- Yennu's Map
@@ -3548,28 +3555,31 @@ for key, value in pairs({
 	--TODO: [381511] = "Harpoon Head",	-- Harpoon Head
 	[381513] = "旧镐",	-- Old Pickaxe
 	--TODO: [381514] = "Sea-Polished Basalt",	-- Sea-Polished Basalt
-	[381579] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
+	[381579] = "档案员的请求",	-- Archivists' Request
 	[381650] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381653] = "“炽齿翅”报名处",	-- Fang Flap Fire Signups
 	[381661] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
-	[381662] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
+	[381662] = "档案员的请求",	-- Archivists' Request
 	[381663] = "法力风暴初学指南",	-- Manastorming For Beginners
 	[381664] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381667] = "档案员的请求",	-- Archivists' Request
-	[381668] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
+	[381668] = "档案员的请求",	-- Archivists' Request
 	[381669] = "档案员的请求",	-- Archivists' Request	--TODO: this was manually translated
 	[381670] = "档案员的请求",	-- Archivists' Request
 	[381671] = "档案员的请求",	-- Archivists' Request
 	[381672] = "档案员的请求",	-- Archivists' Request
 	[381687] = "被丢弃的笔记",	-- Discarded Note
 	[381701] = "通缉：雷鸣者玛拉纳尔",	-- WANTED: Mara'nar the Thunderous
-	--TODO: [381981] = "Chest of the Flood",	-- Chest of the Flood
+	[381981] = "洪水宝箱",	-- Chest of the Flood
 	[382029] = "翻动过的泥土",	-- Disturbed Dirt
+	[382071] = "完整的渔网",	-- Full Fishing Net
 	--TODO: [382166] = "The Ruby Feast!",	-- The Ruby Feast!
+	--TODO: [382180] = "Overheated Magma Thresher Pool",	-- Overheated Magma Thresher Pool
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "一箱新鲜的冰湖鱼",	-- Case of Fresh Gleamfish
-	--TODO: [384318] = "Inconspicuous Bookmark",	-- Inconspicuous Bookmark
+	[384318] = "不起眼的书签",	-- Inconspicuous Bookmark
+	[384370] = "故意拖欠票据",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
 	--TODO: [385001] = "Empty Fish Barrel",	-- Empty Fish Barrel
 	--TODO: [385021] = "Petrified Dragon Egg",	-- Petrified Dragon Egg

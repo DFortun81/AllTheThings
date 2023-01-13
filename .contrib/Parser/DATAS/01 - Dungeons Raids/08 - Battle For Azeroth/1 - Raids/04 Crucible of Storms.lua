@@ -27,7 +27,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }
 					i(165737),	-- Vantus Rune Technique: Crucible of Storms [Rank 3] (RECIPE!)
 				},
 			}),
-			d(17, {	-- LFR Queue NPC
+			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = {
 					177193,	-- Kiku
 					177208,	-- Eppu
@@ -37,7 +37,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }
 					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 				},
 			}),
-			d(17, {	-- LFR
+			d(LFR_RAID, {
 				ach(13414, {	-- Crucible of Storms
 					["collectible"] = false,
 					["g"] = {
@@ -81,7 +81,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }
 					},
 				}),
 			}),
-			d(14, {	-- Normal
+			d(NORMAL_RAID, {
 				e(2328, {	-- The Restless Cabal
 					["crs"] = {
 						144754,	-- Fa'thuul the Feared
@@ -116,7 +116,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }
 					},
 				}),
 			}),
-			d(15, {	-- Heroic
+			d(HEROIC_RAID, {
 				e(2328, {	-- The Restless Cabal
 					["crs"] = {
 						144754,	-- Fa'thuul the Feared
@@ -152,7 +152,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }
 					},
 				}),
 			}),
-			d(16, {	-- Mythic
+			d(MYTHIC_RAID, {
 				e(2328, {	-- The Restless Cabal
 					["crs"] = {
 						144754,	-- Fa'thuul the Feared

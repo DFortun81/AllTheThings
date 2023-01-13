@@ -42,17 +42,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["requireSkill"] = COOKING,
 			}),
 			q(60532),	-- Destroy the Dominant
-			q(57443, {	-- Dirty Job: Demolition Detail
-				i(182704, {	-- Green Muck Dye
-					["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Muck Pool: Banewood area (|cFFFFFFFF53.8, 72.3|r).  It's easiest to find when the |cFFFFD700Dirty Job: Demolition Detail|r WQ is up, but there may be leftover Bonemauler mobs after the WQ has ended.",
-					["crs"] = {
-						157695,	-- Lurking Bonemauler
-						172888,	-- Lurking Alpha
-						172715,	-- Muckpool Investigator
-						172713,	-- Muckpool Vandal
-					},
-				}),
-			}),
+			q(57443),	-- Dirty Job: Demolition Detail
 			q(57465),	-- Dirty Job: Wood Work
 			q(61630, {	-- Enchanting: Everburning Brand
 				["requireSkill"] = ENCHANTING,
@@ -115,9 +105,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["isDaily"] = true,
 					["coord"] = { 35.8, 32.6, REVENDRETH },
 					["g"] = {
-						crit(18, {	-- Bog Beast
-							["achievementID"] = 14310,	-- Adventurer of Revendreth
-						}),
 						i(180588),	-- Bucket of Primordial Sludge (PET!)
 						i(180707),	-- Sticky Muck
 					},
@@ -146,9 +133,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["coord"] = { 66.0, 33.2, REVENDRETH },
 					["cost"] = { { "i", 180376, 1 } },	-- Amalgamation of Sin
 					["g"] = {
-						crit(23, {	-- Amalgamation of Sin
-							["achievementID"] = 14310,	-- Adventurer of Revendreth
-						}),
 						i(183730),	-- Sinstone-Studded Greathelm
 					},
 				}),
@@ -186,9 +170,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["coord"] = { 49.8, 35.0, REVENDRETH },
 					["crs"] = { 169917 },	-- Avowed Ritualist
 					["g"] = {
-						crit(22, {	-- Manifestation of Wrath
-							["achievementID"] = 14310,	-- Adventurer of Revendreth
-						}),
 						i(180585),	-- Bottled Up Rage (PET!)
 					},
 				}),

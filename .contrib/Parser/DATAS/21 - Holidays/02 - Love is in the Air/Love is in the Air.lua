@@ -371,7 +371,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				inst(277, {	-- Halls of Stone
 					["maps"] = { HALLS_OF_STONE },
 					["groups"] = {
-						d(2, {	-- Heroic
+						d(HEROIC_DUNGEON, {
 							n(27975, {	-- Maiden of Grief
 								BOUQUET_EBON
 							}),
@@ -381,7 +381,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				inst(285, {	-- Utgarde Keep
 					["maps"] = { UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
 					["groups"] = {
-						d(1, {	-- Normal
+						d(NORMAL_DUNGEON, {
 							n(23953, {	-- Prince Keleseth
 								BOUQUET_RED,
 							}),
@@ -394,13 +394,13 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				inst(66, {	-- Blackrock Caverns
 					["maps"] = { 283, 284 },
 					["groups"] = {
-						d(1, {	-- Normal
+						d(NORMAL_DUNGEON, {
 							n(39679, {	-- Corla, Herald of Twilight
 								BOUQUET_RED,
 								i(188693),	-- Pouch of Red Rose Petals
 							}),
 						}),
-						d(2, {	-- Heroic
+						d(HEROIC_DUNGEON, {
 							n(39679, {	-- Corla, Herald of Twilight
 								BOUQUET_RED,
 								i(188693),	-- Pouch of Red Rose Petals
@@ -411,7 +411,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				inst(184, {	-- End Time
 					["maps"] = { 401, 402, 403, 404, 405, 406 },
 					["groups"] = {
-						d(2, {	-- Heroic
+						d(HEROIC_DUNGEON, {
 							n(54445, {	-- Echo of Jaina
 								BOUQUET_RED,
 							}),
@@ -424,12 +424,12 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				inst(71, {	-- Grim Batol
 					["maps"] = { 293 },
 					["groups"] = {
-						d(1, {	-- Normal
+						d(NORMAL_DUNGEON, {
 							n(40319, {	-- Drahga Shadowburner
 								BOUQUET_RED,
 							}),
 						}),
-						d(2, {	-- Heroic
+						d(HEROIC_DUNGEON, {
 							n(40319, {	-- Drahga Shadowburner
 								BOUQUET_RED,
 							}),
@@ -439,7 +439,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				inst(186, {	-- Hour of Twilight
 					["maps"] = { 399, 400 },
 					["groups"] = {
-						d(2, {	-- Heroic
+						d(HEROIC_DUNGEON, {
 							n(54968, {	-- Asira Dawnslayer
 								BOUQUET_RED,
 							}),
@@ -457,7 +457,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 						SHADOWFANG_KEEP_LEVEL7
 					},
 					["groups"] = {
-						d(2, {	-- Heroic
+						d(HEROIC_DUNGEON, {
 							n(46964, {	-- Lord Godfrey
 								BOUQUET_EBON,
 								BOUQUET_RED,
@@ -468,7 +468,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				inst(63, {	-- The Deadmines
 					["maps"] = { 292 },
 					["groups"] = {
-						d(2, {	-- Heroic
+						d(HEROIC_DUNGEON, {
 							n(47626, {	-- Admiral Ripsnarl
 								BOUQUET_EBON,
 								BOUQUET_RED,
@@ -479,12 +479,12 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				inst(67, {	-- The Stonecore
 					["maps"] = { 324 },
 					["groups"] = {
-						d(1, {	-- Normal
+						d(NORMAL_DUNGEON, {
 							n(42333, {	-- High Priestess Azil
 								BOUQUET_RED,
 							}),
 						}),
-						d(2, {	-- Heroic
+						d(HEROIC_DUNGEON, {
 							n(42333, {	-- High Priestess Azil
 								BOUQUET_RED,
 							}),
@@ -498,12 +498,12 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				inst(537, {	-- Shadowmoon Burial Grounds
 					["maps"] = { 574, 575, 576 },
 					["groups"] = {
-						d(1, {	-- Normal
+						d(NORMAL_DUNGEON, {
 							cr(75509, e(1139, {	-- Sadana Bloodfury
 								BOUQUET_EBON
 							})),
 						}),
-						--[[d(23, {	-- Mythic
+						--[[d(MYTHIC_DUNGEON, {
 							cr(75509, e(1139, {	-- Sadana Bloodfury
 								BOUQUET_EBON
 							})),
@@ -515,7 +515,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 			-- #if AFTER 9.1.5
 			tier(SL_TIER, {
 				inst(1194, {	-- Tazavesh, the Veiled Market
-					d(2, {	-- Heroic
+					d(HEROIC_DUNGEON, {
 						e(2455, {	-- So'leah
 							["crs"] = { 177269 },	-- So'leah
 							["g"] = {
@@ -525,7 +525,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 							},
 						}),
 					}),
-					d(23, {	-- Mythic
+					d(MYTHIC_DUNGEON, {
 						e(2455, {	-- So'leah
 							["crs"] = { 177269 },	-- So'leah
 							["g"] = {
@@ -537,7 +537,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 					}),
 				}),
 				inst(1183, {	-- Plaguefall
-					d(1, {	-- Normal
+					d(NORMAL_DUNGEON, {
 						e(2423, {	-- Domina Venomblade
 							["crs"] = { 164266 },	-- Domina Venomblade
 							["g"] = {
@@ -547,7 +547,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 							},
 						}),
 					}),
-					d(2, {	-- Heroic
+					d(HEROIC_DUNGEON, {
 						e(2423, {	-- Domina Venomblade
 							["crs"] = { 164266 },	-- Domina Venomblade
 							["g"] = {
@@ -557,7 +557,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 							},
 						}),
 					}),
-					d(23, {	-- Mythic
+					d(MYTHIC_DUNGEON, {
 						e(2423, {	-- Domina Venomblade
 							["crs"] = { 164266 },	-- Domina Venomblade
 							["g"] = {

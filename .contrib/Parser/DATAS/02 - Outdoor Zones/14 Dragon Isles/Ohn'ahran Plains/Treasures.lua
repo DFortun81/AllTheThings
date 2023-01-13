@@ -8,9 +8,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["coord"] = { 73.5, 56.2, OHNAHRAN_PLAINS },
 				["questID"] = 70402,
 				["g"] = {
-					crit(4, {	-- Centaur Horn
-						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
-					}),
 					i(200869),	-- Ohn Lite Branded Horn (TOY!)
 				},
 			}),
@@ -59,49 +56,79 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(201383),	-- Nokhud Stalker's Spear
 				},
 			}),
+			o(378088, {	-- Crystalline Flower
+				["description"] = "You need 5 flowers, but only 2 can be up at any given time. Realmhop recommended.\n\n",
+				["coords"] = {
+					{ 26.61, 48.76, OHNAHRAN_PLAINS },
+					{ 26.86, 47.33, OHNAHRAN_PLAINS },
+					{ 27.58, 52.76, OHNAHRAN_PLAINS },
+					{ 27.74, 50.84, OHNAHRAN_PLAINS },
+					{ 29.35, 48.88, OHNAHRAN_PLAINS },
+					{ 29.49, 51.66, OHNAHRAN_PLAINS },
+					{ 30.50, 45.96, OHNAHRAN_PLAINS },
+					{ 32.14, 46.93, OHNAHRAN_PLAINS },
+				},
+				["g"] = {
+					i(195884, {	-- Crystalline Petals
+						i(195542, {	-- Slumber Incense
+						-- Cost?
+						-- ["cost"] = { { "i", 195884, 5 }, },	-- Crystalline Petals
+						}),
+					}),
+				},
+			}),
 			o(380991, {	-- Dirt Mound
 				["coord"] = { 70.6, 35.4, OHNAHRAN_PLAINS },
 				["questID"] = 67950,
-				["cost"] = { { "i", 195453, 1 }, },	--1xLudo's Stash Map
+				["cost"] = { { "i", 195453, 1 }, },	-- 1x Ludo's Stash Map
 				["g"] = {
-					crit(2, {	-- Slightly Chewed Duck Egg
-						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
-					}),
 					i(199171, {	-- Slightly Chewed Duck Egg
 						i(199172),	-- Viridescent Duck (PET!)
 					}),
 				},
 			}),
+			-- objectID is mentioned here https://www.wowhead.com/item=195041/everliving-wooden-key#comments:id=5485045
+			-- but still missing from wowhead
+			o(378047, {	-- Emerald Chest
+				["coords"] = {
+					{ 67.03, 43.72, OHNAHRAN_PLAINS },	-- Stone
+					{ 66.97, 50.36, OHNAHRAN_PLAINS },	-- Trasure
+				},
+				["description"] = "Combine 5 Crystalline Petals into the Slumber Incense.\nTalk to the Ancient Stone (Northern Waypoint) to gain the Lucid Dreaming Buff for 20 seconds.\nWhen under the effect of this buff you can walk on water and see colorful flowers on the river near the Ancient Stone, walking over a flower will refresh the buff.\nYou need to reach the cave at the southern Waypoint before the buff expires to open the Emerald Chest, which contains the Everliving Wooden Key.\n|cFFFFFFFFYou should be mounted for this.|r",
+				["cost"] = { { "i", 195542, 1 }, },	-- Slumber Incense
+				["g"] = {
+					i(195041),	-- Everliving Wooden Key
+				},
+			}),
 			o(380847, {	-- Emerald Gem Cluster
 				["coord"] = { 33.2, 55.3, OHNAHRAN_PLAINS },
-				-- ["questID"] = 70391,
-				["cost"] = { { "i", 198843, 1 }, },	--1xEmerald Gardens Explorer's Notes
+				["questID"] = 70391,
+				["cost"] = { { "i", 198843, 1 }, },	-- 1x Emerald Gardens Explorer's Notes
 				["g"] = {
-					crit(3, {	-- Emerald Gem Cluster
-						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
-					}),
 					i(200865),	-- Glimmering Ysemerald Cluster
 					i(194648),	-- Design: Jeweled Emerald Whelpling (RECIPE!)
 				},
+			}),
+			o(378010, {	-- Forgotten Dragon Treasure
+				["questID"] = 74399,
+				["coord"] = { 53.3, 68.9, OHNAHRAN_PLAINS },
+				["cost"] = { { "i", 195041, 1 }, },	-- 1x Everliving Wooden Key
+				["g"] = {
+					i(197585),	-- Windborne Velocidrake: Maned Back
+				}
 			}),
 			o(380842, {	-- Gold Coin
 				["coord"] = { 82.3, 73.4, OHNAHRAN_PLAINS },
 				["questID"] = 70379,
 				["g"] = {
-					crit(5, {	-- Gold Coin
-						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
-					}),
 					i(199338),	-- Copper Coin of the Isles
 				},
 			}),
 			o(377900, {	-- Nokhud Warspear
 				["coord"] = { 32.5, 38.2, OHNAHRAN_PLAINS },
 				["questID"] = 67049,
-				["cost"] = { { "i", 194540, 1 }, },	--1xNokhud Armorer's Notes
+				["cost"] = { { "i", 194540, 1 }, },	-- 1x Nokhud Armorer's Notes
 				["g"] = {
-					crit(1, {	-- Nokhud Warspear
-						["achievementID"] = 16299,	-- Treasures of the Ohn'ahran Plains
-					}),
 					i(200861),	-- Stolen Shikaar Warspear
 				},
 			}),
@@ -123,10 +150,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(191861, {	-- Lever Locked Chest
 				-- Gave nothing.. Had to do a puzzle
 				["coord"] = { 31.5, 71.6, OHNAHRAN_PLAINS },	-- Cave
-			}),
-			o(378010, {	-- Forgotten Dragon Treasure
-				-- Couldnt Open it
-				["coord"] = { 53.3, 68.9, OHNAHRAN_PLAINS },
 			}),
 		}),
 	}),

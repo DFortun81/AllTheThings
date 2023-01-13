@@ -24,7 +24,7 @@ _.Instances = { tier(BFA_TIER, {
 					["lvl"] = 120,
 				}),
 			}),
-			d(2,   {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				e(2165, {	-- The Golden Serpent
 					["crs"] = { 135322 },	-- The Golden Serpent
 					["g"] = {
@@ -86,8 +86,8 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 			}),
-			d(23,  {	-- Mythic
-				["difficulties"] = { 8, 23 },
+			d(MYTHIC_DUNGEON, {
+				["difficulties"] = { 8, MYTHIC_DUNGEON },
 				["g"] = {
 					ach(12722, {	-- It Belongs in a Mausoleum!
 						crit(1, {	-- First trinket found

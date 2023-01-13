@@ -73,7 +73,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(NORMAL_DUNGEON, {
 				e(2109, {	-- Coin-Operated Crowd Pummeler
 					["crs"] = { 129214 },	-- Coin-Operated Crowd Pummeler
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -143,7 +143,7 @@ _.Instances = { tier(BFA_TIER, {
 					}),
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(HEROIC_DUNGEON, {
 				["lvl"] = 120,
 				["g"] = {
 					e(2109, {	-- Coin-Operated Crowd Pummeler
@@ -216,8 +216,8 @@ _.Instances = { tier(BFA_TIER, {
 					}),
 				},
 			}),
-			d(23, {	-- Mythic
-				["difficulties"] = { 8, 23 },
+			d(MYTHIC_DUNGEON, {
+				["difficulties"] = { 8, MYTHIC_DUNGEON },
 				["lvl"] = 120,
 				["g"] = {
 					e(2109, {	-- Coin-Operated Crowd Pummeler
