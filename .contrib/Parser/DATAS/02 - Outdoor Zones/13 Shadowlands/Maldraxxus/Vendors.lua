@@ -30,7 +30,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 			}),
 			n(173003, {	-- Nalcorn Talsen <Undying Army Quartermaster>
 				["coord"] = { 50.6, 53.4, MALDRAXXUS },
-				["g"] = appendGroups(repVendor(2410, {
+				["g"] = repVendor(2410, {
 				{		-- Neutral
 					i(183112, {	-- Animated Radius
 						["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
@@ -66,12 +66,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					i(182082),	-- Lurid Bloodtusk (MOUNT!)
 					i(184736),	-- Robe of the March Warden
 					i(184745),	-- Tunic of the March Warden
-				}}), {
 					n(NECROLORD, sharedData({["customCollect"] = { "SL_COV_NEC" }},{
 						i(181807),	-- Barbarous Osteowings
 						i(181808),	-- Death Fetish
 					})),
-				}),
+				}}),
 			}),
 			n(169964, {	-- One-Eyed Joby <Unusual Wares>
 				["coord"] = { 53.2, 41.2, MALDRAXXUS },

@@ -832,6 +832,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 			q(62246, {	-- A Fallen Friend
 				["provider"] = { "i", 183091 },	-- Lifewoven Bracelet
 			}),
+			q(62259, {	-- Anima-Laden Dreamcatcher
+				["provider"] = { "i", 183129 },	-- Anima-Laden Dreamcatcher
+				["coord"] = { 36.4, 25.0, ARDENWEALD },
+			}),
 			q(62807, {	-- Forest Refugees
 				["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
 				["provider"] = { "n", 160894 },	-- Droman Aliothe
@@ -845,6 +849,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					i(175114),	-- Renny (PET!)
 				},
 			}),
+			q(62246, {	-- Satchel of Culexwood
+				["provider"] = { "i", 182731 },	-- Satchel of Culexwood
+				["coord"] = { 48.2, 20.3, ARDENWEALD },
+			}),
 			q(57652, {	-- Supplies Needed: Amber Grease
 				["provider"] = { "o", 348747 },	-- Muddy Scroll
 				["coord"] = { 46.9, 27.6, ARDENWEALD },
@@ -852,6 +860,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 			q(57655, {	-- Supplies Needed: More Husks!
 				["provider"] = { "o", 336415 },	-- Discarded Scroll
 				["coord"] = { 47.5, 26.2, ARDENWEALD },
+			}),
+			q(62186, {	-- Swollen Anima Seed
+				["provider"] = { "i", 182730 },	-- Swollen Anima Seed
+				["coord"] = { 76.6, 29.7, ARDENWEALD },
 			}),
 			q(59087, {	-- That Darn Fox!
 				["provider"] = { "n", 163774 },	-- Clarion Song

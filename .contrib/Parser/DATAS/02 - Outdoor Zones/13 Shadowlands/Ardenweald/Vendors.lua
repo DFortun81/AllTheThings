@@ -7,65 +7,55 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 			n(158556, {	-- Aithlyn <Wild Hunt Quartermaster>
 				["coords"] = {
 					{ 48.4, 50.4, ARDENWEALD },
-					{ 59.6, 31.8, THE_TRUNK },	-- Heart of the Forest (covenant)
+					{ 59.6, 31.8, THE_TRUNK },	-- Heart of the Forest
 				},
-				["minReputation"] = { 2465, 5 },	-- The Wild Hunt, Friendly
-				["g"] = {
-					i(180729, {	-- Duskflutter Ardenmoth (MOUNT!)
-						["cost"] = 300000000,	-- 30,000g
-					}),
-					i(181309, {	-- Faewoven Pack
-						["cost"] = { { "c", ANIMA, 3500 } },	-- Reservoir Anima
-						["customCollect"] = { "SL_COV_NFA" },	-- Night Fae
-					}),
-					i(178336, {	-- Tabard of the Wild Hunt
-						["cost"] = 2500000,	-- 250g
-					}),
-					i(180641, {	-- Floofa
-						["cost"] = { { "i", 163036, 250 } },	-- Polished Pet Charm
-					}),
-					i(182168, {	-- Crane Soul
-						["cost"] = { { "c", ANIMA, 1500 } },	-- Reservoir Anima
-					}),
-					i(183093, {	-- Technique: Contract: The Wild Hunt (RECIPE!)
-						["cost"] = 17650000,	-- 1,765g
-					}),
-					i(183096, {	-- Formula: Sacred Shard (RECIPE!)
-						["cost"] = 13500000,	-- 1,350g
-					}),
-					i(183100, {	-- Pattern: Heavy Desolate Armor Kit
-						["cost"] = 13500000,	-- 1,350g
-					}),
-					i(183106, {	-- Recipe: Eternal Cauldron (RECIPE!)
-						["cost"] = 17650000,	-- 1,765g
-					}),
-					i(183134, {	-- Illusion: Hunt's Favor
-						["cost"] = 12500000,	-- 1,250g
-					}),
-					i(183242, {	-- Memory of Eonar
-						["cost"] = 11000000,	-- 1,100g
-					}),
-					i(184750),	-- Amber-Plated Legguards
-					i(184751),	-- Cycle-Tender's Pantaloons
-					i(184747),	-- Gamekeeper's Slippers
-					i(184749),	-- Gametender's Bramblewards
-					i(184746),	-- Gametender's Muckstompers
-					i(184748),	-- Gametender's Wading Boots
-					i(184754),	-- Glitterwing Scarf
-					i(184752),	-- Gormscale Leggings
-					i(184753),	-- Tree-Scaler's Britches
-					i(187883, {	-- Technique: Mark of the Twilight Runestag (RECIPE!)
-						["cost"] = 14120000,	-- 1,412g
-						["timeline"] = { "added 9.1.5" },
-					}),
+				["g"] = repVendor(THE_WILD_HUNT, {
+				{		-- Neutral
 					i(190644, {	-- Vessel of Profound Possibilities
-						["timeline"] = { "added 9.2.0" },
+						["timeline"] = { ADDED_SL_S3 },
 						["sym"] = {
 							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
 							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
 						},
 					}),
-				},
+				}, {	-- Friendly
+					i(180641, {	-- Floofa
+						["cost"] = { { "i", 163036, 250 } },	-- Polished Pet Charm
+					}),
+				}, {	-- Honored
+					i(183096),	-- Formula: Sacred Shard (RECIPE!)
+					i(184754),	-- Glitterwing Scarf
+					i(183100),	-- Pattern: Heavy Desolate Armor Kit (RECIPE!)
+					n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
+						i(182168, {	-- Crane Soul (SS!)
+							["cost"] = { { "c", ANIMA, 1500 } },
+						}),
+					})),
+				}, {	-- Revered
+					i(184747),	-- Gamekeeper's Slippers
+					i(184749),	-- Gametender's Bramblewards
+					i(184746),	-- Gametender's Muckstompers
+					i(184748),	-- Gametender's Wading Boots
+					i(183242),	-- Memory of Eonar
+					i(183106),	-- Recipe: Eternal Cauldron (RECIPE!)
+					i(183093),	-- Technique: Contract: The Wild Hunt (RECIPE!)
+					i(187883, {	-- Technique: Mark of the Twilight Runestag (RECIPE!)
+						["timeline"] = { ADDED_SL_1_5 },
+					}),
+					n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
+						i(181309, {	-- Faewoven Pack
+							["cost"] = { { "c", ANIMA, 3500 } },	-- Reservoir Anima
+						}),
+					})),
+				}, {	-- Exalted
+					i(184750),	-- Amber-Plated Legguards
+					i(184751),	-- Cycle-Tender's Pantaloons
+					i(180729),	-- Duskflutter Ardenmoth (MOUNT!)
+					i(184752),	-- Gormscale Leggings
+					i(183134),	-- Illusion: Hunt's Favor
+					i(178336),	-- Tabard of the Wild Hunt
+					i(184753),	-- Tree-Scaler's Britches
+				}}),
 			}),
 			n(172634, {	-- Brightgleam
 				["coord"] = { 33.2, 51.6, ARDENWEALD },
@@ -80,7 +70,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 						["description"] = "Talk to Droman Dawnblossom. Then pick up the Fae Net item that is leaning against a table to the right of Droman.\nThen either travel to Val'sharah or summon a Vale Flitter Pet and use the Fae Net on the battle pet until you get a buff called Glowing Moth.",
 						["requireSkill"] = INSCRIPTION,
 						["cost"] = { { "i", 187943, 1}, },	-- 1x Fae Net
-						["timeline"] = { "added 9.1.5" },
+						["timeline"] = { ADDED_SL_1_5 },
 					}),
 				},
 			}),
@@ -90,44 +80,32 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					i(180748, {	-- Silky Shimmermoth (MOUNT!)
 						["cost"] = { { "c", ANIMA, 5000 } },
 					}),
-					i(175095, {	-- Book of Tickets
-						["cost"] = 40000,	-- 40 silver
-					}),
-					i(180634, {	-- Gloober, as G'huun
+					i(175095),	-- Book of Tickets
+					i(180634, {	-- Gloober, as G'huun (PET!)
 						["cost"] = { { "i", 163036, 250 } },
 					}),
-					i(180416, {	-- Mistcaller's Aria
-						["cost"] = 1000000,	-- 100g
-					}),
-					i(180417, {	-- Mistcaller's Ballad
-						["cost"] = 1000000,	-- 100g
-					}),
-					i(180418, {	-- Mistcaller's March
-						["cost"] = 1000000,	-- 100g
-					}),
-					i(180419, {	-- Mistcaller's Dirge
-						["cost"] = 1000000,	-- 100g
-					}),
+					i(180416),	-- Mistcaller's Aria
+					i(180417),	-- Mistcaller's Ballad
+					i(180418),	-- Mistcaller's March
+					i(180419),	-- Mistcaller's Dirge
 					i(183969, {	-- Theater Prop Kris
 						["cost"] = { { "c", ANIMA, 500 } },
 					}),
-					i(175069, {	-- Theater Ticket
-						["cost"] = 2000,	-- 2 silver
-					}),
+					i(175069),	-- Theater Ticket
 					n(NIGHT_FAE, sharedData({["customCollect"] = { "SL_COV_NFA" }},{
-						i(187901, {	-- Eagle Soul
+						i(187901, {	-- Eagle Soul (SS!)
 							["cost"] = { { "c", ANIMA, 20000 } },
-							["timeline"] = { "added 9.1.5" },
+							["timeline"] = { ADDED_SL_1_5 },
 						}),
-						i(182662, {	-- Leafadore
+						i(182662, {	-- Leafadore (PET!)
 							["cost"] = { { "i", 163036, 250 } },
 						}),
-						i(182175, {	-- Moose Soul
+						i(182175, {	-- Moose Soul (SS!)
 							["cost"] = { { "c", ANIMA, 1500 } },
 						}),
-						i(187873, {	-- Prairie Dog Soul
+						i(187873, {	-- Prairie Dog Soul (SS!)
 							["cost"] = { { "c", ANIMA, 10000 } },
-							["timeline"] = { "added 9.1.5" },
+							["timeline"] = { ADDED_SL_1_5 },
 						}),
 						i(181304, {	-- Winterwoven Branches
 							["cost"] = { { "c", ANIMA, 3500 } },
@@ -137,7 +115,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 			}),
 			n(162447, {	-- Spindlenose <Court of Night Quartermaster>
 				["coord"] = { 59.6, 52.9, ARDENWEALD },
-				["g"] = {
+				["g"] = repVendor(COURT_OF_NIGHT, {
+				{		-- Neutral
 					i(184665, {	-- Chronicle of Lost Memories
 						["sym"] = {
 							{ "select", "tierID", SL_TIER },	-- SL Tier
@@ -165,45 +144,89 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 							{ "c", GRATEFUL, 35 },
 						},
 					}),
-					i(187937, {	-- Technique: Mark of the Sable Ardenmoth (RECIPE!)
-						["minReputation"] = { 2464, 6 },	-- Court of Night, Honored
-						["cost"] = {
-							{ "c", ANIMA, 1000 },
-							{ "c", GRATEFUL, 5 },
-						},
-						["timeline"] = { "added 9.1.5" },
-					}),
-					i(183053, {	-- Umbral Scythehorn (MOUNT!)
-						["minReputation"] = { 2464, 7 },	-- Court of Night, Revered
-						["cost"] = {
-							{ "c", ANIMA, 5000 },
-							{ "c", GRATEFUL, 5 },
-						},
-					}),
+					n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
+						i(187871, {	-- Cricket Soul
+							["cost"] = {
+								{ "c", ANIMA, 15000 },
+								{ "c", GRATEFUL, 25 },
+							},
+							["timeline"] = { "added 9.1.5" },
+						}),
+						i(187881, {	-- Ram Soul
+							["cost"] = {
+								{ "c", ANIMA, 25000 },
+								{ "c", GRATEFUL, 50 },
+							},
+							["timeline"] = { "added 9.1.5" },
+						}),
+					})),
+				}, {	-- Friendly
 					i(180636, {	-- Willowbreeze (PET)
-						["minReputation"] = { 2464, 5 },	-- Court of Night, Friendly
 						["cost"] = {
 							{ "i", 163036, 250 },
 							{ "c", GRATEFUL, 5 },
 						},
 					}),
 					n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
-						i(180415, {	-- Winterborn Runestag (MOUNT!)
-							["minReputation"] = { 2464, 7 },	-- Court of Night, Revered
+						i(182174, {	-- Leonine Soul
 							["cost"] = {
-								{ "c", ANIMA, 5000 },
+								{ "c", ANIMA, 1500 },
 								{ "c", GRATEFUL, 5 },
 							},
 						}),
-						i(182664, {	-- Stemmins (PET)
-							["minReputation"] = { 2464, 5 },	-- Court of Night, Friendly
+						i(182182, {	-- Lupine Soul
+							["cost"] = {
+								{ "c", ANIMA, 1500 },
+								{ "c", GRATEFUL, 5 },
+							},
+						}),
+						i(182664, {	-- Stemmins (PET!)
 							["cost"] = {
 								{ "i", 163036, 250 },
 								{ "c", GRATEFUL, 5 },
 							},
 						}),
+					})),
+				}, {	-- Honored
+					i(187937, {	-- Technique: Mark of the Sable Ardenmoth (RECIPE!)
+						["cost"] = {
+							{ "c", ANIMA, 1000 },
+							{ "c", GRATEFUL, 5 },
+						},
+						["timeline"] = { ADDED_SL_1_5 },
+					}),
+					n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
+						i(181308, {	-- Winterwoven Bulb
+							["cost"] = {
+								{ "c", ANIMA, 3500 },
+								{ "c", GRATEFUL, 5 },
+							},
+						}),
+						i(181312, {	-- Winterwoven Pack
+							["cost"] = {
+								{ "c", ANIMA, 3500 },
+								{ "c", GRATEFUL, 5 },
+							},
+						}),
+					})),
+				}, {	-- Revered
+					i(183053, {	-- Umbral Scythehorn (MOUNT!)
+						["cost"] = {
+							{ "c", ANIMA, 5000 },
+							{ "c", GRATEFUL, 5 },
+						},
+					}),
+					n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
+						i(180415, {	-- Winterborn Runestag (MOUNT!)
+							["cost"] = {
+								{ "c", ANIMA, 5000 },
+								{ "c", GRATEFUL, 5 },
+							},
+						}),
+					})),
+				}, {	-- Exalted
+					n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
 						i(184116, {	-- Ensemble: Winterborn Guise
-							["minReputation"] = { 2464, 8 },	-- Court of Night, Exalted
 							["cost"] = {
 								{ "c", ANIMA, 25000 },
 								{ "c", GRATEFUL, 5 },
@@ -225,7 +248,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 							},
 						}),
 						i(184115, {	-- Ensemble: Winterborn Raiment
-							["minReputation"] = { 2464, 8 },	-- Court of Night, Exalted
 							["cost"] = {
 								{ "c", ANIMA, 25000 },
 								{ "c", GRATEFUL, 5 },
@@ -247,7 +269,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 							},
 						}),
 						i(184114, {	-- Ensemble: Winterborn Regalia
-							["minReputation"] = { 2464, 8 },	-- Court of Night, Exalted
 							["cost"] = {
 								{ "c", ANIMA, 25000 },
 								{ "c", GRATEFUL, 5 },
@@ -268,7 +289,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 							},
 						}),
 						i(184117, {	-- Ensemble: Winterborn Warbark
-							["minReputation"] = { 2464, 8 },	-- Court of Night, Exalted
 							["cost"] = {
 								{ "c", ANIMA, 25000 },
 								{ "c", GRATEFUL, 5 },
@@ -288,50 +308,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 								i(179911),	-- Winterborn Vambraces
 							},
 						}),
-						i(187871, {	-- Cricket Soul
-							["cost"] = {
-								{ "c", ANIMA, 15000 },
-								{ "c", GRATEFUL, 25 },
-							},
-							["timeline"] = { "added 9.1.5" },
-						}),
-						i(182174, {	-- Leonine Soul
-							["minReputation"] = { 2464, 5 },	-- Court of Night, Friendly
-							["cost"] = {
-								{ "c", ANIMA, 1500 },
-								{ "c", GRATEFUL, 5 },
-							},
-						}),
-						i(182182, {	-- Lupine Soul
-							["minReputation"] = { 2464, 5 },	-- Court of Night, Friendly
-							["cost"] = {
-								{ "c", ANIMA, 1500 },
-								{ "c", GRATEFUL, 5 },
-							},
-						}),
-						i(187881, {	-- Ram Soul
-							["cost"] = {
-								{ "c", ANIMA, 25000 },
-								{ "c", GRATEFUL, 50 },
-							},
-							["timeline"] = { "added 9.1.5" },
-						}),
-						i(181308, {	-- Winterwoven Bulb
-							["minReputation"] = { 2464, 6 },	-- Court of Night, Honored
-							["cost"] = {
-								{ "c", ANIMA, 3500 },
-								{ "c", GRATEFUL, 5 },
-							},
-						}),
-						i(181312, {	-- Winterwoven Pack
-							["minReputation"] = { 2464, 6 },	-- Court of Night, Honored
-							["cost"] = {
-								{ "c", ANIMA, 3500 },
-								{ "c", GRATEFUL, 5 },
-							},
-						}),
 					})),
-				},
+				}}),
 			}),
 		}),
 	}),

@@ -207,19 +207,21 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["coord"] = { 65.6, 24.6, ARDENWEALD },
 				["cost"] = { { "i", 183902, 1 } },	-- 1x A Faintly Glowing Seed
 			}),
-			pvp(ach(14511)),	-- Tour of Duty: Ardenweald
+			ach(14511, {	-- Tour of Duty: Ardenweald
+				["pvp"] = true,
+			}),
 			ach(14313, {	-- Treasures of Ardenweald
 				crit(1, {	-- Aerto's Body
 					["_quests"] = { 61072 },
 				}),
 				crit(2, {	-- Lost Satchel
-					["_quests"] = { 62187 },
+					["sourceQuests"] = { 62187 },
 				}),
 				crit(3, {	-- Veilwing Egg
 					["_quests"] = { 61065 },
 				}),
 				crit(4, {	-- Swollen Anima Seed
-					["_quests"] = { 62186 },
+					["sourceQuests"] = { 62186 },
 				}),
 				crit(5, {	-- Faerie Trove
 					["_quests"] = { 61073 },
@@ -229,6 +231,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				}),
 				crit(7, {	-- Hearty Dragon Plume
 					["_quests"] = { 61067 },
+				}),
+				crit(8, {	-- Playful Vulpin Befriended
+					["provider"] = { "i", 180645 },	-- Dodger (PET!)
 				}),
 				crit(9, {	-- Cache of the Moon
 					["_quests"] = { 61074 },
@@ -240,7 +245,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["_quests"] = { 61070 },
 				}),
 				crit(12, {	-- Enchanted Dreamcatcher
-					["_quests"] = { 62259 },
+					["sourceQuests"] = { 62259 },
 				}),
 				crit(13, {	-- Elusive Faerie Cache
 					["_quests"] = { 61175 },
