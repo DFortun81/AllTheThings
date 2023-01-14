@@ -2713,6 +2713,7 @@ root("HiddenQuestTriggers", {
 			q(74198),	-- Skinning The Weeping Vilomah
 			q(74204),	-- Skinning Acrosoth
 			q(74206),	-- Skinning Corrupted Proto-Dragon
+			q(74208),	-- Skinning Matriarch Remalla
 			q(74213),	-- Skinning Swog'ranka
 			q(74214),	-- Skinning Moth'go Deeploom
 			q(74215),	-- Skinning Skald the Impaler
