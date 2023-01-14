@@ -6,6 +6,20 @@ local ELEMENTAL_OVERFLOW = 2118;
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THALDRASZUS, {
 		header(HEADERS.Map, THE_PRIMALIST_FUTURE, bubbleDown({ ["timeline"] = { ADDED_DF_0_5 } }, {
+			n(ACHIEVEMENTS, {
+				ach(17343),	-- Drop It Like It's Hot
+				ach(17342, {	-- The Future We Make
+					crit(1, {
+						["_npcs"] = { 199502 },	-- Glakis, Winter's Wrath
+					}),
+					crit(2, {
+						["_npcs"] = { 199667 },	-- Nimbulatus, Storm's Wrath
+					}),
+					crit(3, {
+						["_npcs"] = { 200439 },	-- Seismodor, Earth's Wrath
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(74376, {	-- Coalesced Storm Remnants
 					["provider"] = { "i", 203469 },	-- Coalesced Storm Remnants

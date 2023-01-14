@@ -8,6 +8,15 @@
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(PROFESSIONS, {
 		n(ACHIEVEMENTS, {
+			ach(17316, {	-- Dragon Isles Crafting Order Apprentice
+				["timeline"] = { ADDED_DF_0_5 },
+			}),
+			ach(17317, {	-- Dragon Isles Crafting Order Journeyman
+				["timeline"] = { ADDED_DF_0_5 },
+			}),
+			ach(17318, {	-- Dragon Isles Crafting Order Master
+				["timeline"] = { ADDED_DF_0_5 },
+			}),
 			ach(16683, {	-- In Tyr's Footsteps
 				crit(1, {	-- Lock and Shock
 					["_quests"] = { 70180 },	-- Jump-Start? Jump-Starting!

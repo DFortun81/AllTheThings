@@ -66,10 +66,4 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_CHARACTER, {
 	}),
 	ach(546),		-- Safe Deposit
 	ach(545),		-- Shave and a Haircut
-	ach(17334, {	-- Trading Post Enthusiast
-		["timeline"] = { ADDED_10_0_5 },
-		["g"] =	{
-			i(203431),	-- Ensemble: Burden of Unrelenting Justice
-		},
-	})
 }));

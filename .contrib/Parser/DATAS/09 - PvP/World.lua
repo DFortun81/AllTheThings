@@ -88,13 +88,13 @@ root("PVP", pvp(n(-10058, {	-- World
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				["timeline"] = { ADDED_10_0_5 },
 			}),
-			ach(17345, {	-- Airborne Tumbler (x50)
+			ach(17345, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, }, {	-- Airborne Tumbler (x50)
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				["timeline"] = { ADDED_10_0_5 },
 				["g"] =	{
 					title(753),	-- Skyscourge <Name>
 				},
-			}),
+			})),
 			ach(16615, {	-- Blood Bank
 				["cost"] = {{"c",2123,3000}},	-- 3000 Bloody Token
 			}),

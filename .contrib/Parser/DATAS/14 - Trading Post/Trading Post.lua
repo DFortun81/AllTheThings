@@ -3,6 +3,11 @@
 -------------------------------------
 local TRADERS_TENDER = 2032;
 root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
+	n(ACHIEVEMENTS, {
+		ach(17334, {	-- Trading Post Enthusiast
+			i(203431),	-- Ensemble: Burden of Unrelenting Justice
+		}),
+	}),
 	n(QUESTS, {
 		q(66858, {	-- Tour the Trading Post [A]
 			["maps"] = { STORMWIND_CITY },
