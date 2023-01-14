@@ -34,6 +34,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(197008),	-- Cliffside Wylderdrake: Narrow Stripes Pattern (DM!)
 					},
 				}),
+				n(193176, {	-- Sandana the Tempest <Timesand Thief>
+					["coord"] = { 37.4, 77.9, THALDRASZUS },
+					["questID"] = 74029,
+					["g"] = {
+						i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
+						i(200161),	-- Razorwind Talisman
+					},
+				}),
 				-- The Azure Spawn
 				n(193251, {	-- Gruffy
 					["coord"] = { 32.7, 29.2, THE_AZURE_SPAN },
@@ -50,28 +58,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(197398),	-- Renewed Proto-Drake: Snub Snout (DM!)
 						i(197121),	-- Highland Drake: Tan Horns (DM!)
 						i(200229),	-- Slightly Digested Leggings
-					},
-				}),
-				n(192737, {	-- Qalashi War Mammoth
-					["description"] = "Marked with an icon on the map if they are up.",
-					["coords"] = {
-						{ 33.8, 70.4, THE_WAKING_SHORES },
-						{ 39.2, 68.2, THE_WAKING_SHORES },
-						{ 47.0, 73.0, THE_WAKING_SHORES },
-						{ 48.4, 65.8, THE_WAKING_SHORES },
-						{ 53.0, 66.4, THE_WAKING_SHORES },
-					},
-					["questID"] = 73890,
-					-- He "drops" 4 rare npcs upon dieing, but they have no drops. CRS doesnt seem useful
-					["g"] = {
-						n(192738, {	-- Brundin the Dragonbane
-						}),
-						n(192741, {	-- Flamebreaker Grella
-						}),
-						n(192744, {	-- Scalemelter Dorbane
-						}),
-						n(192743, {	-- Stonefist Rejara
-						}),
 					},
 				}),
 				-- The Ohnharan Plains

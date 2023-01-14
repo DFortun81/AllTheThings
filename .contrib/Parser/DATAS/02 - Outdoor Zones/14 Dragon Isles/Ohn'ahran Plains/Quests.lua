@@ -1143,12 +1143,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 30.3, 62.1, OHNAHRAN_PLAINS },
 				}),
 			}),
-			header(HEADERS.Achievement, 15941, {	-- Dragon Racing Completionist: Gold
+			header(HEADERS.Achievement, 15941, sharedData({	-- Dragon Racing Completionist: Gold
+				["repeatable"] = true,
+				["sourceQuestNumRequired"] = 1,
+				["sourceQuests"] = {
+					68795,	-- Dragonriding
+					72366,	-- Account Dragonflight Campaign Completed
+				},
+			},{
 				q(66885, {	-- Emerald Garden Ascent
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 191247 },	-- Bronze Timekeeper
 					["coord"] = { 25.7, 55.1, OHNAHRAN_PLAINS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15775),	-- Emerald Garden Ascent: Bronze
@@ -1157,10 +1162,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66886, {	-- Emerald Garden Ascent - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 191247 },	-- Bronze Timekeeper
 					["coord"] = { 25.7, 55.1, OHNAHRAN_PLAINS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15778),	-- Emerald Garden Ascent Advanced: Bronze
@@ -1169,10 +1172,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66877, {	-- Fen Flythrough
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 191121 },	-- Bronze Timekeeper
 					["coord"] = { 86.3, 35.8, OHNAHRAN_PLAINS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15763),	-- Fen Flythrough: Bronze
@@ -1181,10 +1182,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66878, {	-- Fen Flythrough - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 191121 },	-- Bronze Timekeeper
 					["coord"] = { 86.3, 35.8, OHNAHRAN_PLAINS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15766),	-- Fen Flythrough Advanced: Bronze
@@ -1193,10 +1192,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66921, {	-- Maruukai Dash
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 191422 },	-- Bronze Timekeeper
 					["coord"] = { 59.9, 35.6, OHNAHRAN_PLAINS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15782),	-- Maruukai Dash: Bronze
@@ -1205,10 +1202,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66933, {	-- Mirror of Sky Dash
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 191511 },	-- Bronze Timekeeper
 					["coord"] = { 47.5, 70.6, OHNAHRAN_PLAINS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15785),	-- Mirror of the Sky Dash: Bronze
@@ -1217,10 +1212,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66880, {	-- Ravine River Run
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 191165 },	-- Bronze Timekeeper
 					["coord"] = { 80.9, 72.2, OHNAHRAN_PLAINS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15769),	-- Ravine River Run: Bronze
@@ -1229,10 +1222,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66881, {	-- Ravine River Run - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 191165 },	-- Bronze Timekeeper
 					["coord"] = { 80.9, 72.2, OHNAHRAN_PLAINS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15772),	-- Ravine River Run Advanced: Bronze
@@ -1241,10 +1232,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(70710, {	-- River Rapids Route
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 196092 },	-- Bronze Timekeeper
 					["coord"] = { 43.8, 66.8, OHNAHRAN_PLAINS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(16302),	-- River Rapids Route: Bronze
@@ -1253,10 +1242,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(70711, {	-- River Rapids Route - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 196092 },	-- Bronze Timekeeper
 					["coord"] = { 43.8, 66.8, OHNAHRAN_PLAINS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(16305),	-- River Rapids Route Advanced: Bronze
@@ -1265,10 +1252,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66835, {	-- Sundapple Copse Circuit
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190928 },	-- Bronze Timekeeper
 					["coord"] = { 63.7, 30.5, OHNAHRAN_PLAINS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15757),	-- Sundapple Copse Circuit: Bronze
@@ -1277,10 +1262,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66836, {	-- Sundapple Copse Circuit - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190928 },	-- Bronze Timekeeper
 					["coord"] = { 63.7, 30.5, OHNAHRAN_PLAINS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15760),	-- Sundapple Copse Circuit Advanced: Bronze
@@ -1288,7 +1271,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						ach(15762),	-- Sundapple Copse Circuit Advanced: Gold
 					},
 				}),
-			}),
+			})),
 		}),
 	}),
 })));

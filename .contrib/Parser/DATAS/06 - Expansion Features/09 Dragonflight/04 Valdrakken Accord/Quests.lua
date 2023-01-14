@@ -697,8 +697,8 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELI
 		q(72685),	-- triggered with 'Rubbing Shoulders With The Best' (70888)
 		q(72403),	-- triggered when reaching renown 12 with Valdrakken Accord
 		q(72404),	-- triggered when reaching renown 19 with Valdrakken Accord
-		q(72688),	-- triggered with 'All of Dragons' (68794)
-		q(72776),	-- triggered with 'All of Dragons' (68794)
+		q(72688),	-- triggered with 'Ally of Dragons' (68794)
+		q(72776),	-- triggered with 'Ally of Dragons' (68794)
 		q(70974),	-- triggers right after 'Hard Lock Life' (67079)
 		q(72757),	-- triggered with 'The Silver Purpose' (67084)
 		q(72694),	-- triggered with 'Wielding Titanic Might' (70903)

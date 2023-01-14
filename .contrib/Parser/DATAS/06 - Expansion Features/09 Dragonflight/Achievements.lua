@@ -8,7 +8,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["_quests"] = { 66128 },	-- Next Steps
 			}),
 			crit(2, {	-- In the Halls of Titans
-				-- ["_quests"] = { TODO },	-- QUESTNAME
+				["_quests"] = { 66547 },	-- It Belongs in a Museum... Eventually
 			}),
 			crit(3, {	-- Garden of Secrets
 				["_quests"] = { 66191 },	-- And Yet So Far

@@ -6,7 +6,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 		n(WORLD_QUESTS, {
 			["sourceQuests"] = {
 				71232,	-- Renown of the Dragon Isles
-				72366,	-- HQT unlock on alts
+				72366,	-- Account Dragonflight Campaign Completed
 			},
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 
@@ -15,6 +15,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- }),
 				q(70636, {	-- Ancient Protodragons
 					["coord"] = { 35.1, 81.6, THE_WAKING_SHORES },
+				}),
+				q(66902, {	-- Bee-Gone
+					["coord"] = { 56.8, 68.0, THE_WAKING_SHORES }
 				}),
 				q(67062, {	-- Cascading Conflict
 					["coord"] = { 48.0, 52.2, THE_WAKING_SHORES },

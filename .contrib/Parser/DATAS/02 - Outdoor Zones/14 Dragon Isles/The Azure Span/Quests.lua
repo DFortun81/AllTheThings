@@ -1608,12 +1608,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 			n(HIDDEN_QUESTS, {
 				-- Moved temporarily to HQTs
 			}),
-			header(HEADERS.Achievement, 15941, {	-- Dragon Racing Completionist: Gold
+			header(HEADERS.Achievement, 15941, sharedData({	-- Dragon Racing Completionist: Gold
+				["repeatable"] = true,
+				["sourceQuestNumRequired"] = 1,
+				["sourceQuests"] = {
+					68795,	-- Dragonriding
+					72366,	-- Account Dragonflight Campaign Completed
+				},
+			},{
 				q(67741, {	-- Archive Ambit
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 193027 },	-- Bronze Timekeeper
 					["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15847),	-- Archive Ambit: Bronze
@@ -1622,10 +1627,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(67742, {	-- Archive Ambit - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 193027 },	-- Bronze Timekeeper
 					["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15850),	-- Archive Ambit Advanced: Bronze
@@ -1634,10 +1637,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(67002, {	-- Azure Span Slalom
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 191947 },	-- Bronze Timekeeper
 					["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15799),	-- The Azure Span Slalom: Bronze
@@ -1646,10 +1647,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(67003, {	-- Azure Span Slalom - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 191947 },	-- Bronze Timekeeper
 					["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15802),	-- The Azure Span Slalom Advanced: Bronze
@@ -1658,10 +1657,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66946, {	-- Azure Span Sprint
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 191572 },	-- Bronze Timekeeper
 					["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15788),	-- The Azure Span Sprint: Bronze
@@ -1670,10 +1667,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66947, {	-- Azure Span Sprint - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 191572 },	-- Bronze Timekeeper
 					["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15791),	-- The Azure Span Sprint Advanced: Bronze
@@ -1682,10 +1677,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(67565, {	-- Frostland Flyover
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 192945 },	-- Bronze Timekeeper
 					["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15841),	-- Frostland Flyover: Bronze
@@ -1694,10 +1687,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(67566, {	-- Frostland Flyover - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 192945 },	-- Bronze Timekeeper
 					["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15844),	-- Frostland Flyover Advanced: Bronze
@@ -1706,10 +1697,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(67296, {	-- Iskaara Tour
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 192886 },	-- Bronze Timekeeper
 					["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15835),	-- Iskaara Tour: Bronze
@@ -1718,10 +1707,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(67297, {	-- Iskaara Tour - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 192886 },	-- Bronze Timekeeper
 					["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15838),	-- Iskaara Tour Advanced: Bronze
@@ -1730,10 +1717,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(67031, {	-- Vakthros Ascent
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 192115 },	-- Bronze Timekeeper
 					["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15818),	-- The Vakthros Ascent: Bronze
@@ -1742,10 +1727,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(67032, {	-- Vakthros Ascent - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 192115 },	-- Bronze Timekeeper
 					["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15821),	-- The Vakthros Ascent Advanced: Bronze
@@ -1753,7 +1736,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						ach(15823),	-- The Vakthros Ascent Advanced: Gold
 					},
 				}),
-			}),
+			})),
 		}),
 	}),
 })));

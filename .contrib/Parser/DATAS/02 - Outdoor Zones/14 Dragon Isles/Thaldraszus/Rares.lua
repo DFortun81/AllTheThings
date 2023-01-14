@@ -149,14 +149,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				-- },
 			}),
-			n(193176, {	-- Sandana the Tempest <Timesand Thief>
-				["coord"] = { 37.4, 77.9, THALDRASZUS },
-				["questID"] = 74029,
-				["g"] = {
-					i(197372),	-- Renewed Proto-Drake: Purple Hair (DM!)
-					i(200161),	-- Razorwind Talisman
-				},
-			}),
 			n(191305, {	-- The Great Shellkhan
 				["description"] = "Needs fresh fish from Azure Span.",
 				["coord"] = { 38.5, 68.2, THALDRASZUS },

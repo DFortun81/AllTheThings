@@ -1158,12 +1158,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- The Weeping Vilomah
 
 			}),
-			header(HEADERS.Achievement, 15941, {	-- Dragon Racing Completionist: Gold
+			header(HEADERS.Achievement, 15941, sharedData({	-- Dragon Racing Completionist: Gold
+				["repeatable"] = true,
+				["sourceQuestNumRequired"] = 1,
+				["sourceQuests"] = {
+					68795,	-- Dragonriding
+					72366,	-- Account Dragonflight Campaign Completed
+				},
+			},{
 				q(70059, {	-- Academy Ascent
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 193951 },	-- Bronze Timekeeper
 					["coord"] = { 60.3, 41.6, THALDRASZUS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15897),	-- Academy Ascent: Bronze
@@ -1172,10 +1177,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(70060, {	-- Academy Ascent - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 193951 },	-- Bronze Timekeeper
 					["coord"] = { 60.3, 41.6, THALDRASZUS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15900),	-- Academy Ascent Advanced: Bronze
@@ -1184,10 +1187,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(70161, {	-- Caverns Criss-Cross
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 194372 },	-- Bronze Timekeeper
 					["coord"] = { 58.1, 33.6, THALDRASZUS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15909),	-- Caverns Criss-Cross: Bronze
@@ -1196,10 +1197,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(70163, {	-- Caverns Criss-Cross - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 194372 },	-- Bronze Timekeeper
 					["coord"] = { 58.1, 33.6, THALDRASZUS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15912),	-- Caverns Criss-Cross Advanced: Bronze
@@ -1208,10 +1207,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(70051, {	-- Cliffside Circuit
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 193911 },	-- Bronze Timekeeper
 					["coord"] = { 37.7, 48.9, THALDRASZUS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15891),	-- Cliffside Circuit: Bronze
@@ -1220,10 +1217,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(70052, {	-- Cliffside Circuit - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 193911 },	-- Bronze Timekeeper
 					["coord"] = { 37.7, 48.9, THALDRASZUS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15894),	-- Cliffside Circuit Advanced: Bronze
@@ -1232,10 +1227,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(67095, {	-- Flowing Forest Flight
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 192555 },	-- Bronze Timekeeper
 					["coord"] = { 57.8, 75.0, THALDRASZUS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15827),	-- The Flowing Forest Flight: Bronze
@@ -1244,10 +1237,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(67096, {	-- Flowing Forest Flight - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 192555 },	-- Bronze Timekeeper
 					["coord"] = { 57.8, 75.0, THALDRASZUS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15830),	-- The Flowing Forest Flight Advanced: Bronze
@@ -1256,10 +1247,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(70157, {	-- Garden Gallivant
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 194348 },	-- Bronze Timekeeper
 					["coord"] = { 39.5, 76.2, THALDRASZUS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15903),	-- Garden Gallivant: Bronze
@@ -1268,10 +1257,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(70158, {	-- Garden Gallivant - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 194348 },	-- Bronze Timekeeper
 					["coord"] = { 39.5, 76.2, THALDRASZUS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15906),	-- Garden Gallivant Advanced: Bronze
@@ -1280,10 +1267,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(69957, {	-- Tyrhold Trial
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 193651 },	-- Bronze Timekeeper
 					["coord"] = { 57.2, 66.9, THALDRASZUS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15855),	-- Tyrhold Trial: Bronze
@@ -1292,10 +1277,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(69958, {	-- Tyrhold Trial - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 193651 },	-- Bronze Timekeeper
 					["coord"] = { 57.2, 66.9, THALDRASZUS },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15858),	-- Tyrhold Trial Advanced: Bronze
@@ -1303,7 +1286,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						ach(15860),	-- Tyrhold Trial Advanced: Gold
 					},
 				}),
-			}),
+			})),
 		}),
 	}),
 })));
@@ -1311,8 +1294,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THALDRASZUS, {
 		q(67030),	-- WQ Available?
-		q(72366),	-- triggered after completing 'Moving On' (66221)
-		q(72369),	-- triggered after completing 'Moving On' (66221) / Finishing accord?
+		q(72366, {["name"] = "Account Dragonflight Campaign Completed"}),	-- triggered after completing 'Moving On' (66221)
+		q(72369, {["repeatable"] = true}),	-- flags complete while 'Aiding the Accord' is active/completed
 		q(72084),	-- Triggers during 'The Fog of Battle' (66246)
 		q(72110),	-- when delivering Gleamfish to spawn 'The Great Shellkhan'
 		q(72125),	-- Triggers during 'Tying Things Together' (66248)

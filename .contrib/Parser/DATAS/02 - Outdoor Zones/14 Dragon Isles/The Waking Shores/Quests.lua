@@ -1295,7 +1295,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
 				}),
 				q(70196, {	-- Pruning the Preserve
-					["sourceQuests"] = { 66079 },	-- Wrathion Awaits
+					["sourceQuestNumRequired"] = 1,
+					["sourceQuests"] = {
+						66079,	-- Wrathion Awaits
+						72366,	-- Account Dragonflight Campaign Completed
+					},
 					["coord"] = { 44.4, 82.1, THE_WAKING_SHORES },
 				}),
 				q(70719, {	-- Shadeslash Trakken
@@ -1426,12 +1430,17 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				-- To Skytop Observatory moved temporarily to HQTs
 				-- TODO: for the two above mentioned chains, how do we sort these types of things going forward? Also, is Skytop an actual quest or should this be a NYI/Never Implemented?
 			}),
-			header(HEADERS.Achievement, 15941, {	-- Dragon Racing Completionist: Gold
+			header(HEADERS.Achievement, 15941, sharedData({	-- Dragon Racing Completionist: Gold
+				["repeatable"] = true,
+				["sourceQuestNumRequired"] = 1,
+				["sourceQuests"] = {
+					68795,	-- Dragonriding
+					72366,	-- Account Dragonflight Campaign Completed
+				},
+			},{
 				q(66732, {	-- Apex Canopy River Run
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190551 },	-- Bronze Timekeeper
 					["coord"] = { 23.3, 84.3, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15730),	-- Apex Canopy River Run: Bronze
@@ -1440,10 +1449,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66733, {	-- Apex Canopy River Run - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190551 },	-- Bronze Timekeeper
 					["coord"] = { 23.3, 84.3, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15733),	-- Apex Canopy River Run Advanced: Bronze
@@ -1452,10 +1459,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66727, {	-- Emberflow Flight
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190519 },	-- Bronze Timekeeper
 					["coord"] = { 41.8, 67.2, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15724),	-- Emberflow Flight: Bronze
@@ -1464,10 +1469,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66728, {	-- Emberflow Flight - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190519 },	-- Bronze Timekeeper
 					["coord"] = { 41.8, 67.2, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15727),	-- Emberflow Flight Advanced: Bronze
@@ -1476,10 +1479,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66710, {	-- Flashfrost Flyover
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190326 },	-- Bronze Timekeeper
 					["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15705),	-- Flashfrost Flyover: Bronze
@@ -1488,10 +1489,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66712, {	-- Flashfrost Flyover - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190326 },	-- Bronze Timekeeper
 					["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15709),	-- Flashfrost Flyover Advanced: Bronze
@@ -1500,10 +1499,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66679, {	-- Ruby Lifeshrine Loop
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190123 },	-- Bronze Timekeeper
 					["coord"] = { 63.3, 70.9, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15696),	-- Ruby Lifeshrine Loop: Bronze
@@ -1512,10 +1509,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66692, {	-- Ruby Lifeshrine Loop - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190123 },	-- Bronze Timekeeper
 					["coord"] = { 63.3, 70.9, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15702),	-- Ruby Lifeshrine Loop Advanced: Bronze
@@ -1524,10 +1519,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66777, {	-- Uktulut Coaster
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190667 },	-- Bronze Timekeeper
 					["coord"] = { 55.4, 41.1, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15736),	-- Uktulut Coaster: Bronze
@@ -1536,10 +1529,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66778, {	-- Uktulut Coaster - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190667 },	-- Bronze Timekeeper
 					["coord"] = { 55.4, 41.1, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15739),	-- Uktulut Coaster Advanced: Bronze
@@ -1548,10 +1539,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66725, {	-- Wild Preserve Circuit
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190503 },	-- Bronze Timekeeper
 					["coord"] = { 42.6, 94.5, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15718),	-- Wild Preserve Circuit: Bronze
@@ -1560,10 +1549,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66726, {	-- Wild Preserve Circuit - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190503 },	-- Bronze Timekeeper
 					["coord"] = { 42.6, 94.5, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15721),	-- Wild Preserve Circuit Advanced: Bronze
@@ -1572,10 +1559,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66721, {	-- Wild Preserve Slalom
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190473 },	-- Bronze Timekeeper
 					["coord"] = { 47.0, 85.6, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15712),	-- Wild Preserve Slalom: Bronze
@@ -1584,10 +1569,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66722, {	-- Wild Preserve Slalom - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190473 },	-- Bronze Timekeeper
 					["coord"] = { 47.0, 85.6, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15715),	-- Wild Preserve Slalom Advanced: Bronze
@@ -1596,10 +1579,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66786, {	-- Wingrest Roundabout
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190753 },	-- Bronze Timekeeper
 					["coord"] = { 73.2, 33.9, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15742),	-- Wingrest Roundabout: Bronze
@@ -1608,10 +1589,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					},
 				}),
 				q(66787, {	-- Wingrest Roundabout - Advanced
-					["sourceQuests"] = { 68795 },	-- Dragonriding
 					["provider"] = { "n", 190753 },	-- Bronze Timekeeper
 					["coord"] = { 73.2, 33.9, THE_WAKING_SHORES },
-					["repeatable"] = true,
 					["g"] = {
 						i(191140),	-- Bronze Timepiece
 						ach(15745),	-- Wingrest Roundabout Advanced: Bronze
@@ -1619,7 +1598,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						ach(15747),	-- Wingrest Roundabout Advanced: Gold
 					},
 				}),
-			}),
+			})),
 		}),
 	}),
 })));

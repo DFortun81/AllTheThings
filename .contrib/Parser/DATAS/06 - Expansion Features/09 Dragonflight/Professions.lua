@@ -2,6 +2,9 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
+-- TODO: determine if the 'intro' per-profession quests are actually locked by learning the profession or by completion of the alternate quest...
+-- i.e. Blacksmithing 70357/70358
+
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(PROFESSIONS, {
 		n(ACHIEVEMENTS, {

@@ -218,8 +218,28 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					-- is part of the DF>Global Rare Loottable
 				},
 			}),
-		--	n(192737, {	-- Qalashi War Mammoth
-		--	Time-Based Rare
+			n(192737, {	-- Qalashi War Mammoth
+				["description"] = "Marked with an icon on the map if they are up.",
+				["coords"] = {
+					{ 33.8, 70.4, THE_WAKING_SHORES },
+					{ 39.2, 68.2, THE_WAKING_SHORES },
+					{ 47.0, 73.0, THE_WAKING_SHORES },
+					{ 48.4, 65.8, THE_WAKING_SHORES },
+					{ 53.0, 66.4, THE_WAKING_SHORES },
+				},
+				["questID"] = 73890,
+				-- He "drops" 4 rare npcs upon dieing, but they have no drops. CRS doesnt seem useful
+				["g"] = {
+					n(192738, {	-- Brundin the Dragonbane
+					}),
+					n(192741, {	-- Flamebreaker Grella
+					}),
+					n(192744, {	-- Scalemelter Dorbane
+					}),
+					n(192743, {	-- Stonefist Rejara
+					}),
+				},
+			}),
 			n(193271, {	-- Shadeslash Trakken
 				["description"] = "Cave Entrance: 48.6, 74.3. Have to touch Focus, Globe and Telescope to spawn.",
 				["coord"] = { 47.3, 73.9, THE_WAKING_SHORES },
