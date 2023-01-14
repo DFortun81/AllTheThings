@@ -1491,9 +1491,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(16),	-- Subaquatic Support
 			crit(17),	-- Unfathomable
 		}),
-
-		achcat(ACHIEVEMENT_CATEGORY_SHADOWLANDS_EXP, {["timeline"] = { ADDED_SL_REL }}),
-		achcat(ACHIEVEMENT_CATEGORY_DRAGONFLIGHT_EXP, {["timeline"] = TIMELINE_DF_REL }),
 	}),
 }));
 

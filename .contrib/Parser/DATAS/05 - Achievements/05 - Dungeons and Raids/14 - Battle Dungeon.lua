@@ -91,12 +91,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		ach(12601),		-- The Void Lies Sleeping
 		ach(12602),		-- Trust No One
 		ach(12721),		-- Wrap God
-
-
-		achcat(ACHIEVEMENT_CATEGORY_BATTLE_RAID, {["timeline"] = { ADDED_BFA_REL }}),
-		achcat(ACHIEVEMENT_CATEGORY_SHADOWLANDS_DUNGEON, {["timeline"] = { ADDED_SL_REL }}),
-		achcat(ACHIEVEMENT_CATEGORY_SHADOWLANDS_RAID, {["timeline"] = { ADDED_SL_REL }}),
-		achcat(ACHIEVEMENT_CATEGORY_DRAGONFLIGHT_DUNGEON, {["timeline"] = TIMELINE_DF_REL }),
-		achcat(ACHIEVEMENT_CATEGORY_DRAGONFLIGHT_RAID, {["timeline"] = TIMELINE_DF_REL }),
 	}),
 }));

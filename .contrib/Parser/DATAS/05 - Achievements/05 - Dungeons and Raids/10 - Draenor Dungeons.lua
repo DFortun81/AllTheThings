@@ -176,9 +176,5 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		{	-- What's Your Sign?
 			["achievementID"] = 9018,	-- What's Your Sign?
 		},
-
-		achcat(ACHIEVEMENT_CATEGORY_DRAENOR_RAID),
-		achcat(ACHIEVEMENT_CATEGORY_LEGION_DUNGEON),
-		achcat(ACHIEVEMENT_CATEGORY_LEGION_RAID),
 	}),
 }));
