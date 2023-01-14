@@ -7,14 +7,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 			n(REWARDS, {
 				i(187858, {	-- Bunny Soul
 					["description"] = "Has a chance to be listed as a reward for players of the 'Night Fae' Covenant from Pet Battle World Quests.\n\nSwitch to Night Fae Covenant, and use '/attwq' to see if it's up!",
-					["timeline"] = { "added 9.1.5" },
+					["timeline"] = { ADDED_SL_1_5 },
 				}),
 			}),
 		}),
-		n(WORLD_QUESTS, sharedData({
-			["isWorldQuest"] = true,
-			["lvl"] = { 60 },
-		},{
+		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
 			q(60872),	-- A Dangerous Harvest
 			q(60950),	-- A Matter of Stealth
 			q(60899),	-- A Night in the Woods

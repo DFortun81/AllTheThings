@@ -671,7 +671,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(197615),	-- Windborne Velocidrake: Teal Scales
 			i(197616),	-- Windborne Velocidrake: White Scales
 			i(197617),	-- Windborne Velocidrake: Heavy Scales
-			i(197619),	-- Windborne Velocidrake: Hooked Snout
 			i(197621),	-- Windborne Velocidrake: Exposed Finned Tail
 			i(197626),	-- Windborne Velocidrake: Exposed Finned Neck
 			i(197628),	-- Windborne Velocidrake: Plated Neck

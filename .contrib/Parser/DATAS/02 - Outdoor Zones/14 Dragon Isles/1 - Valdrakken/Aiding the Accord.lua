@@ -10,7 +10,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["sourceQuestNumRequired"] = 1,
 				["sourceQuests"] = {
 					71232,	-- Renown of the Dragon Isles
-					72366,	-- HQT unlock on alts
+					72366,	-- Account Dragonflight Campaign Completed
 				},
 				["provider"] = { "n", 196499 },	-- Therazal
 				["coord"] = { 50.7, 58.0, VALDRAKKEN },

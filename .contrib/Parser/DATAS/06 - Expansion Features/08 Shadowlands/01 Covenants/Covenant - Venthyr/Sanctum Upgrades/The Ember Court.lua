@@ -512,11 +512,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 							ach(14725),		-- We Happy Few
 						}),
 						n(FACTIONS, {
-							faction(2445, {	-- The Ember Court (Venthyr)
-								["crs"] = { 165399 },	-- Lord Garridan (when selecting Guests for Ember Court)
-								["maps"] = {
-									REVENDRETH,
-								},
+							faction(2445, {	-- The Ember court
+								["crs"] = { 165399 },	-- Lord Garridan
+								["maps"] = { REVENDRETH },
 								["g"] = {
 									faction(2450),	-- Alexandros Mograine
 									faction(2446),	-- Baroness Vashj
@@ -544,73 +542,73 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 							}, {
 								-- Tier 1
 								q(65132, {	-- Friend of a Friend: Choofa
-									["qg"] = 168449,
+									["provider"] = { "n", 168449 },
 									["lockCriteria"] = { 1, "factionID", 2454.6 },	-- Choofa / Best Friend
 								}),
 								q(65134, {	-- Friend of a Friend: Cryptkeeper Kassir
-									["qg"] = 168450,
+									["provider"] = { "n", 168450 },
 									["lockCriteria"] = { 1, "factionID", 2455.6 },	-- Cryptkeeper Kassir / Best Friend
 								}),
 								q(65138, {	-- Friend of a Friend: Plague Deviser Marileth
-									["qg"] = 171852,
+									["provider"] = { "n", 171852 },
 									["lockCriteria"] = { 1, "factionID", 2461.6 },	-- Plague Deviser Marileth / Best Friend
 								}),
 								q(65140, {	-- Friend of a Friend: Sika
-									["qg"] = 171854,
+									["provider"] = { "n", 171854 },
 									["lockCriteria"] = { 1, "factionID", 2459.6 },	-- Sika / Best Friend
 								}),
 
 								-- Tier 2
 								q(65135, {	-- Friend of a Friend: Droman Aliothe
-									["qg"] = 171847,
+									["provider"] = { "n", 171847 },
 									["lockCriteria"] = { 1, "factionID", 2456.6 },	-- Droman Aliothe / Best Friend
 								}),
 								q(65136, {	-- Friend of a Friend: Grandmaster Vole
-									["qg"] = 171848,
+									["provider"] = { "n", 171848 },
 									["lockCriteria"] = { 1, "factionID", 2457.6 },	-- Grandmaster Vole / Best Friend
 								}),
 								q(65137, {	-- Friend of a Friend: Kleia & Pelagos
-									["qg"] = 171851, -- Pelagos -- TODO: maybe either?
+									["provider"] = { "n", 171851 },
 									["lockCriteria"] = { 1, "factionID", 2458.6 },	-- Kleia & Pelagos / Best Friend
 								}),
 								q(65141, {	-- Friend of a Friend: Stonehead
-									["qg"] = 171856,
+									["provider"] = { "n", 171856 },
 									["lockCriteria"] = { 1, "factionID", 2460.6 },	-- Stonehead / Best Friend
 								}),
 
 								-- Tier 3
 								q(65128, {	-- Friend of a Friend: Alexandros Mograine
-									["qg"] = 171833,
+									["provider"] = { "n", 171833 },
 									["lockCriteria"] = { 1, "factionID", 2450.6 },	-- Alexandros Mograine / Best Friend
 								}),
 								q(65129, {	-- Friend of a Friend: Hunt-Captain Korayn
-									["qg"] = 171836,
+									["provider"] = { "n", 171836 },
 									["lockCriteria"] = { 1, "factionID", 2451.6 },	-- Hunt-Captain Korayn / Best Friend
 								}),
 								q(65130, {	-- Friend of a Friend: Polemarch Adrestes
-									["qg"] = 168447,
+									["provider"] = { "n", 168447 },
 									["lockCriteria"] = { 1, "factionID", 2452.6 },	-- Polemarch Adrestes / Best Friend
 								}),
 								q(65131, {	-- Friend of a Friend: Rendle & Cudgelface
-									["qg"] = 171839,	-- Rendle -- TODO: maybe either?
+									["provider"] = { "n", 171839 },
 									["lockCriteria"] = { 1, "factionID", 2453.6 },	-- Rendle & Cudgelface / Best Friend
 								}),
 
 								-- Tier 4
 								q(65121, {	-- Friend of a Friend: Baroness Vashj
-									["qg"] = 168444,
+									["provider"] = { "n", 168444 },
 									["lockCriteria"] = { 1, "factionID", 2446.6 },	-- Baroness Vashj / Best Friend
 								}),
 								q(65123, {	-- Friend of a Friend: Lady Moonberry
-									["qg"] = 171830,
+									["provider"] = { "n", 171830 },
 									["lockCriteria"] = { 1, "factionID", 2447.6 },	-- Lady Moonberry / Best Friend
 								}),
 								q(65124, {	-- Friend of a Friend: Mikanikos
-									["qg"] = 171831,
+									["provider"] = { "n", 171831 },
 									["lockCriteria"] = { 1, "factionID", 2448.6 },	-- Mikanikos / Best Friend
 								}),
 								q(65126, {	-- Friend of a Friend: The Countess
-									["qg"] = 165269,
+									["provider"] = { "n", 165269 },
 									["lockCriteria"] = { 1, "factionID", 2449.6 },	-- The Countess / Best Friend
 								}),
 							})),
@@ -638,11 +636,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 							}),
 							q(64546, {	-- Visions of Sire Denathrius
 								["provider"] = { "n", 180458 },	-- Vision of Sire Denathrius
+								["repeatable"] = true,	-- probably yearly, Blizzard API says it's daily, in practice it unflaggs right after completion
+								["u"] = HALLOWS_END,
 								["g"] = {
 									i(181442),	-- Vision of Sire Denathrius
 								},
-								["u"] = HALLOWS_END,
-								["repeatable"] = true,	-- probably yearly, Blizzard API says it's daily, in practice it unflaggs right after completion
 							}),
 							q(62146),	-- A Little More Comfortable
 							q(62130),	-- A Quiet Moment
@@ -951,7 +949,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 167332 },	-- Gresit
 									["coord"] = { 71.7, 40.3, REVENDRETH },
 									["g"] = {
-										i(176130, {	-- Contract: Atoning Rituals
+										i(176130, {	-- Contract: Atoning Rituals (EC!)
 											["questID"] = 59494,
 										}),
 									},
@@ -962,7 +960,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 172448 },	-- Stewart
 									["coord"] = { 33.9, 66.5, BASTION },
 									["g"] = {
-										i(176135, {	-- Contract: Divine Desserts
+										i(176135, {	-- Contract: Divine Desserts (EC!)
 											["questID"] = 59503,
 										}),
 									},
@@ -978,7 +976,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 172352 },	-- Niya
 									["coord"] = { 56.3, 55.6, ARDENWEALD },
 									["g"] = {
-										i(176131, {	-- Contract: Glimpse of the Wilds
+										i(176131, {	-- Contract: Glimpse of the Wilds (EC!)
 											["questID"] = 59491,
 										}),
 									},
@@ -995,7 +993,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 173173 },	-- Caretaker Tedo
 									["coord"] = { 55.1, 43.7, REVENDRETH },
 									["g"] = {
-										i(176132, {	-- Contract: Lost Chalice Band
+										i(176132, {	-- Contract: Lost Chalice Band (EC!)
 											["questID"] = 59488,
 										}),
 									},
@@ -1005,7 +1003,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 172964 },	-- Emeni
 									["coord"] = { 54.2, 69.3, MALDRAXXUS },
 									["g"] = {
-										i(176140, {	-- Contract: Maldraxxian Army
+										i(176140, {	-- Contract: Maldraxxian Army (EC!)
 											["questID"] = 59512,
 										}),
 									},
@@ -1015,7 +1013,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 156791 },	-- Keeper Ta'saran
 									["coord"] = { 59.2, 75.1, ORIBOS },
 									["g"] = {
-										i(176128, {	-- Contract: Mortal Reminders
+										i(176128, {	-- Contract: Mortal Reminders (EC!)
 											["questID"] = 59476,
 										}),
 									},
@@ -1025,7 +1023,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 168429 },	-- Melody Madcap
 									["coord"] = { 40.2, 41.2, MALDRAXXUS },
 									["g"] = {
-										i(176136, {	-- Contract: Mushroom Surprise!
+										i(176136, {	-- Contract: Mushroom Surprise! (EC!)
 											["questID"] = 59500,
 										}),
 									},
@@ -1035,7 +1033,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 172986 },	-- Simone
 									["coord"] = { 24.6, 50.2, REVENDRETH },
 									["g"] = {
-										i(176127, {	-- Contract: Mystery Mirrors
+										i(176127, {	-- Contract: Mystery Mirrors (EC!)
 											["questID"] = 59479,
 										}),
 									},
@@ -1050,7 +1048,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 172502 },	-- Chelra the Bladewall
 									["coord"] = { 26.5, 29.1, REVENDRETH },
 									["g"] = {
-										i(176139, {	-- Contract: Stoneborn Reserves
+										i(176139, {	-- Contract: Stoneborn Reserves (EC!)
 											["questID"] = 59515,
 										}),
 									},
@@ -1060,7 +1058,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 156822 },	-- Mistress Mihaela
 									["coord"] = { 61.3, 63.8, REVENDRETH },
 									["g"] = {
-										i(176126, {	-- Contract: Traditional Theme
+										i(176126, {	-- Contract: Traditional Theme (EC!)
 											["questID"] = 59473,
 										}),
 									},
@@ -1070,7 +1068,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 167863 },	-- Tubbins
 									["coord"] = { 30.9, 57.6, REVENDRETH },
 									["g"] = {
-										i(176134, {	-- Contract: Tubbins's Tea Party
+										i(176134, {	-- Contract: Tubbins's Tea Party (EC!)
 											["questID"] = 59506,
 										}),
 									},
@@ -1080,7 +1078,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 172614 },	-- Nadija the Mistblade
 									["coord"] = { 60.9, 39.5, REVENDRETH },
 									["g"] = {
-										i(176138, {	-- Contract: Venthyr Volunteers
+										i(176138, {	-- Contract: Venthyr Volunteers (EC!)
 											["questID"] = 59518,
 										}),
 									},
@@ -1090,7 +1088,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 165453 },	-- Lady Ilinca <Court Concierge>
 									["coord"] = { 28.5, 41.1, REVENDRETH },
 									["g"] = {
-										i(181521, {	-- Ember Court Ambassador
+										i(181521, {	-- Ember Court Ambassador (EC!)
 											["questID"] = 61501,
 										}),
 									},
@@ -1101,7 +1099,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
 									["coord"] = { 28.5, 41.1, REVENDRETH },
 									["g"] = {
-										i(181524, {	-- Staff: Ambassador
+										i(181524, {	-- Staff: Ambassador (EC!)
 											["questID"] = 61502,
 										}),
 									},
@@ -1112,7 +1110,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
 									["coord"] = { 28.5, 41.1, REVENDRETH },
 									["g"] = {
-										i(182342, {	-- Staff: Maldraxxus Ambassador
+										i(182342, {	-- Staff: Maldraxxus Ambassador (EC!)
 											["questID"] = 61887,
 										}),
 									},
@@ -1123,7 +1121,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
 									["coord"] = { 28.5, 41.1, REVENDRETH },
 									["g"] = {
-										i(182343, {	-- Staff: Bastion Ambassador
+										i(182343, {	-- Staff: Bastion Ambassador (EC!)
 											["questID"] = 61888,
 										}),
 									},
@@ -1531,7 +1529,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 28.9, 44.2, REVENDRETH },
 									["g"] = {
-										i(181532, {	-- Stock: Appetizers
+										i(181532, {	-- Stock: Appetizers (EC!)
 											["questID"] = 61498,
 										}),
 									},
@@ -1552,7 +1550,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["isDaily"] = true,	-- according to the API, but Ember Court is a weekly event and this quest returns 'true' after the weekly reset
 									["coord"] = { 28.0, 43.1, REVENDRETH },
 									["g"] = {
-										i(181536, {	-- Guest List Page
+										i(181536, {	-- Guest List Page (EC!)
 											["questID"] = 61504,
 										}),
 									},
@@ -1578,7 +1576,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
 									["coord"] = { 32.0, 41.6, REVENDRETH },
 									["g"] = {
-										i(181530, {	-- Stock: Greeting Kits
+										i(181530, {	-- Stock: Greeting Kits (EC!)
 											["questID"] = 61497,
 										}),
 									},
@@ -1760,7 +1758,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 165399 },	-- Lord Garridan
 									["coord"] = { 28.5, 41.0, REVENDRETH },
 									["g"] = {
-										i(181537, {		-- Guest List Page
+										i(181537, {		-- Guest List Page (EC!)
 											["questID"] = 61505,
 										}),
 									},
@@ -1782,7 +1780,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 174719 },	-- Forgelite Sophone
 									["coord"] = { 52.9, 83.5, BASTION },
 									["g"] = {
-										i(177243, {	-- Kyrian Arsenal
+										i(177243, {	-- Kyrian Arsenal (EC!)
 											["questID"] = 59693,
 										}),
 									},
@@ -1792,7 +1790,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
 									["coord"] = { 53.0, 68.2, MALDRAXXUS },
 									["g"] = {
-										i(177241, {	-- Necrolord Arsenal
+										i(177241, {	-- Necrolord Arsenal (EC!)
 											["questID"] = 59691,
 										}),
 									},
@@ -1881,7 +1879,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 161931 },	-- Forgy
 									["coord"] = { 63.2, 62.7, REVENDRETH },
 									["g"] = {
-										i(177242, {	-- Venthyr Arsenal
+										i(177242, {	-- Venthyr Arsenal (EC!)
 											["questID"] = 59692,
 										}),
 									},
@@ -1907,7 +1905,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 165399 },	-- Lord Garridan
 									["coord"] = { 28.5, 41.0, REVENDRETH },
 									["g"] = {
-										i(181538, {		-- Guest List Page
+										i(181538, {		-- Guest List Page (EC!)
 											["questID"] = 61506,
 										}),
 									},
@@ -1980,7 +1978,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 									["provider"] = { "n", 165382 },	-- Gormsmith Cavina
 									["coord"] = { 51.6, 34.0, ARDENWEALD },
 									["g"] = {
-										i(177244, {	-- Night Fae Arsenal
+										i(177244, {	-- Night Fae Arsenal (EC!)
 											["questID"] = 59694,
 										}),
 									},
@@ -2000,46 +1998,46 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 								["coord"] = { 32.0, 41.2, REVENDRETH },
 								["g"] = {
 									i(182371, {	-- Claws of the Court's Sentinels
-										["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 									i(182380, {	-- Court Bodyguard's Cover
-										["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 									i(182376, {	-- Court Guardian's Blade
-										["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 									i(182377, {	-- Court Sinweaver's Blade
-										["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 									i(182381, {	-- Court's Crystal
-										["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 									i(182370, {	-- Crusader's Blade of the Ember Court
-										["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 									i(182373, {	-- Ember Court Accuser's Stave
-										["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 									i(183974, {	-- Ember Court Ceremonial Dagger
-										["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 									i(182375, {	-- Ember Court Duelist's Blade
-										["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 									i(182372, {	-- Ember Court Gavel
-										["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 									i(182379, {	-- Ember Court Sentry's Crossbow
-										["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 									i(182369, {	-- Ornate Ember Court Dagger
-										["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 									i(182374, {	-- Spiked Ember Court Stave
-										["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 									i(182378, {	-- Winged Blade of the Ember Court
-										["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 								},
 							}),
@@ -2057,10 +2055,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 										["minReputation"] = { 2445, FRIENDLY },
 										["questID"] = 62657,
 									}),
-									i(183876, {	-- Quill of Correspondence (TOY!)
-										["cost"] = 5000000,	-- 500g
-									}),
-									i(177234, {	-- Rally Bell
+									i(183876),	-- Quill of Correspondence (TOY!)
+									i(177234, {	-- Rally Bell (EC!)
 										["cost"] = { { "c", ANIMA, 25 } },
 										["questID"] = 59685,
 									}),
@@ -2070,112 +2066,112 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 								["coord"] = { 28.3, 43.7, REVENDRETH },
 								["g"] = {
 									i(181055, {	-- Court Death Shroud Belt
-										["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 750 } },
 									}),
 									i(181056, {	-- Court Death Shroud Bindings
-										["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 750 } },
 									}),
 									i(181050, {	-- Court Death Shroud Boots
-										["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1500 } },
 									}),
 									i(181053, {	-- Court Death Shroud Breeches
-										["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1500 } },
 									}),
 									i(181057, {	-- Court Death Shroud Cloak
-										["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 750 } },
 									}),
 									i(181051, {	-- Court Death Shroud Gloves
-										["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1500 } },
 									}),
 									i(181052, {	-- Court Death Shroud Hood
-										["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 2000 } },
 									}),
 									i(181054, {	-- Court Death Shroud Spaulders
-										["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 2000 } },
 									}),
 									i(181049, {	-- Court Death Shroud Vest
-										["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 2000 } },
 									}),
 									i(181014, {	-- Dread Sentinel's Court Chestplate
-										["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 2000 } },
 									}),
 									i(181021, {	-- Dread Sentinel's Court Cloak
-										["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 750 } },
 									}),
 									i(181019, {	-- Dread Sentinel's Court Girdle
-										["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 750 } },
 									}),
 									i(181015, {	-- Dread Sentinel's Court Greatboots
-										["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1500 } },
 									}),
 									i(181016, {	-- Dread Sentinel's Court Grips
-										["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1500 } },
 									}),
 									i(181013, {	-- Dread Sentinel's Court Headgear
-										["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 2000 } },
 									}),
 									i(181017, {	-- Dread Sentinel's Court Legguards
-										["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1500 } },
 									}),
 									i(181018, {	-- Dread Sentinel's Court Spaulders
-										["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 2000 } },
 									}),
 									i(181020, {	-- Dread Sentinel's Court Vambraces
-										["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 750 } },
 									}),
 									i(181082, {	-- Fearstalker's Court Belt
-										["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 750 } },
 									}),
 									i(181083, {	-- Fearstalker's Court Bracers
-										["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 750 } },
 									}),
 									i(181084, {	-- Fearstalker's Court Cloak
-										["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 750 } },
 									}),
 									i(181078, {	-- Fearstalker's Court Gauntlets
-										["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1500 } },
 									}),
 									i(181076, {	-- Fearstalker's Court Hauberk
-										["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 2000 } },
 									}),
 									i(181079, {	-- Fearstalker's Court Helm
-										["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 2000 } },
 									}),
 									i(181080, {	-- Fearstalker's Court Leggings
-										["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1500 } },
 									}),
 									i(181081, {	-- Fearstalker's Court Monnion
-										["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 2000 } },
 									}),
 									i(181077, {	-- Fearstalker's Court Sabatons
-										["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1500 } },
 									}),
 									i(181120, {	-- Soulbreaker's Court Drape
-										["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 750 } },
 									}),
 									i(181114, {	-- Soulbreaker's Court Handwraps
-										["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1500 } },
 									}),
 									i(181115, {	-- Soulbreaker's Court Hood
-										["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 2000 } },
 									}),
 									i(181116, {	-- Soulbreaker's Court Leggings
-										["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1500 } },
 									}),
 									i(181117, {	-- Soulbreaker's Court Mantle
-										["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 2000 } },
 									}),
 									i(181118, {	-- Soulbreaker's Court Sash
-										["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 750 } },
 									}),
 									i(181113, {	-- Soulbreaker's Court Slippers
-										["cost"] = { { "c", ANIMA, 1500 } },	-- 1,500x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 1500 } },
 									}),
 									i(181112, {	-- Soulbreaker's Court Vestments
-										["cost"] = { { "c", ANIMA, 2000 } },	-- 2,000x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 2000 } },
 									}),
 									i(181119, {	-- Soulbreaker's Court Wraps
-										["cost"] = { { "c", ANIMA, 750 } },	-- 750x Reservoir Anima
+										["cost"] = { { "c", ANIMA, 750 } },
 									}),
 								},
 							}),
@@ -2187,7 +2183,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 								["crs"] = { 172531 },	-- Temel <The Party Herald> (with no hat - combining these because they sell the same stuff)
 								["g"] = {
 									SILVERTIP_DREDWING,
-									i(181441, {	-- Altar of Accomplishment
+									i(181441, {	-- Altar of Accomplishment (EC!)
 										["cost"] = { { "c", ANIMA, 25 } },
 										["questID"] = 61457,
 									}),
@@ -2195,24 +2191,24 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_R
 										["cost"] = { { "c", 1820, 25 } },	-- 25x Infused Ruby
 										["u"] = HALLOWS_END,
 									}),
-									i(181517, {	-- Building: Dredger Pool
+									i(181517, {	-- Building: Dredger Pool (EC!)
 										["cost"] = { { "c", ANIMA, 100 } },
 										["questID"] = 61493,
 									}),
-									i(181518, {	-- Building: Guardhouse
+									i(181518, {	-- Building: Guardhouse (EC!)
 										["cost"] = { { "c", ANIMA, 100 } },
 										["questID"] = 61494,
 									}),
-									i(181519, {	-- Staff: Dredger Decorators
+									i(181519, {	-- Staff: Dredger Decorators (EC!)
 										["questID"] = 59435,
 									}),
-									i(181520, {	-- Staff: Stage Crew
+									i(181520, {	-- Staff: Stage Crew (EC!)
 										["questID"] = 59436,
 									}),
-									i(181522, {	-- Staff: Waiters
+									i(181522, {	-- Staff: Waiters (EC!)
 										["questID"] = 59433,
 									}),
-									i(181523, {	-- Staff: Bouncers
+									i(181523, {	-- Staff: Bouncers (EC!)
 										["questID"] = 59437,
 									}),
 									i(182296, {	-- Letter of Note, Premier Party Planner
