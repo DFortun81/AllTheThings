@@ -2193,6 +2193,10 @@ root("Zones", {
 								["cost"] = 30000000,	-- 3,000g
 								["timeline"] = { "added 3.3.0.10772" },
 							})),
+							i(71037, {	-- Black Diamond Ring
+								["cost"] = 35000000,	-- 3,500g
+								["timeline"] = { "added 4.1.0" },
+							}),
 							i(38091, {	-- Gold Eternium Band
 								["cost"] = 30000000,	-- 3,000g
 							}),

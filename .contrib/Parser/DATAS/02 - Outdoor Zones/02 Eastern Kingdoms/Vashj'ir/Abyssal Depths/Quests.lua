@@ -13,6 +13,9 @@ _.Zones =
 						["coord"] = { 47.3, 49.7, 204 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26015,	-- Phosphora Hunting
+						["g"] = {
+							i(59600),	-- Phosphora Fedora
+						},
 					}),
 					q(25977, {	-- A Standard Day for Azrajar (A)
 						["provider"] = { "n", 41667 },	-- Lieutenant "Foxy" Topper

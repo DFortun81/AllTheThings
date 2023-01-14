@@ -782,6 +782,13 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if AFTER CATA
+				n(3095, {	-- Fela <Heavy Armor Merchant>
+					["coord"] = { 42.8, 44.6, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["sym"] = { { "sub", "common_vendor", 46512 } },	-- Naros <Plate Armor Merchant>
+				}),
+				-- #endif
 				n(8401, {	-- Halpa <Prairie Dog Vendor>
 					["coord"] = { 62.2, 58.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,

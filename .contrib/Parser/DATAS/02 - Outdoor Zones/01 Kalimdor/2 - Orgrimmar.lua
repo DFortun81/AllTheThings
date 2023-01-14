@@ -4155,6 +4155,27 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
 				}),
+				n(46512, {	-- Naros <Plate Armor Merchant>
+					["coord"] = { 45.0, 77.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { "added 4.0.1.12984" },
+					["groups"] = {
+						i(62260),	-- Grunt's Chain Belt
+						i(62261),	-- Grunt's Chain Boots
+						i(62262),	-- Grunt's Chain Bracers
+						i(62266),	-- Grunt's Chain Circlet
+						i(62263),	-- Grunt's Chain Gloves
+						i(62264),	-- Grunt's Chain Leggings
+						i(62265),	-- Grunt's Chain Vest
+						i(62253),	-- Grunt's Plate Armor
+						i(62254),	-- Grunt's Plate Belt
+						i(62255),	-- Grunt's Plate Boots
+						i(62256),	-- Grunt's Plate Bracers
+						i(62257),	-- Grunt's Plate Gloves
+						i(62259),	-- Grunt's Plate Helm
+						i(62258),	-- Grunt's Plate Leggings
+					},
+				}),
 				n(46716, {	-- Nerog <Inscription Trainer>
 					["coord"] = { 55.2, 55.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
@@ -5456,6 +5477,13 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if AFTER CATA
+				n(5812, {	-- Tumi <Heavy Armor Merchant>
+					["coord"] = { 75.8, 35.2, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["sym"] = { { "sub", "common_vendor", 46512 } },	-- Naros <Plate Armor Merchant>
+				}),
+				-- #endif
 				n(66022, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
 					["coord"] = { 69.8, 41.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,

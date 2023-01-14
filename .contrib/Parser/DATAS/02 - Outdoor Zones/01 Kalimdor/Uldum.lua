@@ -258,6 +258,9 @@ root("Zones", m(KALIMDOR, {
 						27541,	-- Lessons From the Past
 						27511,	-- The Thrill of Discovery
 					},
+					["groups"] = {
+						i(61509),	-- Sapphire Spectacles
+					},
 				}),
 				q(28352, {	-- Camelraderie
 					["provider"] = { "n", 48431 },	-- Sullah

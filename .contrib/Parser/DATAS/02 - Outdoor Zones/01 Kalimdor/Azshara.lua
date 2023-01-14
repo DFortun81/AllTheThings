@@ -2195,6 +2195,31 @@ root("Zones", m(KALIMDOR, {
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
+				n(49884, {	-- Sally "Salvager" Sandscrew <Armor Vendor>
+					["coord"] = { 60.8, 50.2, AZSHARA },
+					["timeline"] = { "added 4.0.1.12984" },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(49265),	-- Recovered Knit Belt
+						i(49266),	-- Recovered Knit Boots
+						i(49267),	-- Recovered Knit Bracers
+						i(49268),	-- Recovered Knit Gloves
+						i(49269),	-- Recovered Knit Pants
+						i(49270),	-- Recovered Knit Vest
+						i(49259),	-- Salvaged Chain Armor
+						i(49260),	-- Salvaged Chain Belt
+						i(49261),	-- Salvaged Chain Boots
+						i(49262),	-- Salvaged Chain Bracers
+						i(49263),	-- Salvaged Chain Gloves
+						i(49264),	-- Salvaged Chain Leggings
+						i(49271),	-- Water-Stained Leather Belt
+						i(49272),	-- Water-Stained Leather Boots
+						i(49273),	-- Water-Stained Leather Bracers
+						i(49274),	-- Water-Stained Leather Gloves
+						i(49275),	-- Water-Stained Leather Harness
+						i(49276),	-- Water-Stained Leather Pants
+					},
+				}),
 				n(36375, {	-- Tex Vortacoil <Reagents>
 					["coord"] = { 25.6, 38.0, AZSHARA },
 					["timeline"] = { "added 4.0.1.12984" },

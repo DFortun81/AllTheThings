@@ -247,6 +247,7 @@ root("Craftables", tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownS
 		n(ARMOR, {
 			-- Head
 			i(59455),	-- Agile Bio-Optic Killshades*
+			i(60222),	-- Authentic Jr. Engineer Goggles
 			i(59453),	-- Camouflage Bio-Optic Killshades*
 			i(59456),	-- Deadly Bio-Optic Killshades*
 			i(59458),	-- Energized Bio-Optic Killshades*
@@ -594,6 +595,7 @@ root("Craftables", tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownS
 			i(54449),	-- Ghostly Spellthread
 		}),
 		n(CHEST, {
+			i(54441),	-- Black Embersilk Gown
 			un(REMOVED_FROM_GAME, i(70060)),	-- Bloodthirsty Embersilk Robe
 			un(REMOVED_FROM_GAME, i(70058)),	-- Bloodthirsty Fireweave Robe
 			i(54475),			-- Deathsilk Robe
@@ -637,6 +639,7 @@ root("Craftables", tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownS
 			i(54476),			-- Deathsilk Cowl
 			un(REMOVED_FROM_GAME, i(54496)),	-- Emberfire Cowl
 			un(REMOVED_FROM_GAME, i(54493)),	-- Fireweave Cowl
+			i(54451),			-- High Society Top Hat
 			i(54485),			-- Spiritmend Cowl
 			i(75073),			-- Vicious Embersilk Cowl
 			i(75062),			-- Vicious Fireweave Cowl

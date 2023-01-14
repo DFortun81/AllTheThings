@@ -796,6 +796,9 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				i(78340, {	-- Cloak of the Darkmoon Faire
 					["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
 				}),
+				i(77256, {	-- Darkmoon "Sword"
+					["cost"] = { { "c", 515, 20 }, },	-- 20x Darkmoon Prize Ticket
+				}),
 				i(73762, {	-- Darkmoon Balloon (PET!)
 					["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
 				}),
