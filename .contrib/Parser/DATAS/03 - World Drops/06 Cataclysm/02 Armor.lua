@@ -7,6 +7,14 @@ _.WorldDrops =
 	tier(CATA_TIER, {
 		n(ARMOR, {
 			n(HEAD, {
+				i(62103),	-- Pockmarked Hat
+				i(62133),	-- Sodden Cloth Hat
+				i(62102),	-- Dirt-Caked Leather Helmet
+				i(62135),	-- Singed Leather Helmet
+				i(62101),	-- Clammy Mail Circlet
+				i(62136),	-- Sooty Mail Circlet
+				i(62134),	-- Bleached Plate Helmet
+				i(62104),	-- Perforated Plate Helmet
 				i(66931),	-- Mercury-Coated Hood
 				i(66955),	-- Scentsniffer Hood
 				i(66975),	-- Hood of the Crying Rogue
@@ -28,6 +36,14 @@ _.WorldDrops =
 				i(55399),	-- Swamplight Amulet
 			}),
 			n(SHOULDER, {
+				i(62092),	-- Pockmarked Cloth Shoulderpads
+				i(62110),	-- Sodden Cloth Shoulderpads
+				i(62111),	-- Singed Shoulderpads
+				i(62079),	-- Dirt-Caked Shoulderpads
+				i(62098),	-- Clammy Mail Shoulderpads
+				i(62121),	-- Sooty Mail Shoulderpads
+				i(62075),	-- Perforated Plate Shoulderpads
+				i(62127),	-- Bleached Plate Shoulderpads
 				i(66882),	-- Skeletalized Shoulderpads
 				i(66959),	-- Toraelian Spaulders
 				i(66976),	-- Spaulders of the Savage Beast
@@ -56,6 +72,14 @@ _.WorldDrops =
 				i(67142),	-- Zom's Electrostatic Cloak
 			}),
 			n(CHEST, {
+				i(62091),	-- Pockmarked Cloth Vest
+				i(62109),	-- Sodden Cloth Vest
+				i(62108),	-- Singed Armor
+				i(62081),	-- Dirt-Caked Armor
+				i(62097),	-- Clammy Mail Armor
+				i(62132),	-- Sooty Mail Armor
+				i(62078),	-- Perforated Plate Chestpiece
+				i(62126),	-- Bleached Plate Chestpiece
 				i(66919),	-- Robes of Whispering Sands
 				i(66992),	-- Harbinger's Breastplate
 				i(67024),	-- Breastplate of Solemn Vows
@@ -66,6 +90,14 @@ _.WorldDrops =
 				i(67143),	-- Icebone Hauberk
 			}),
 			n(WRIST, {
+				i(62084),	-- Pockmarked Cloth Bracers
+				i(62118),	-- Sodden Cloth Bracers
+				i(62087),	-- Dirt-Caked Bracers
+				i(62114),	-- Singed Bracers
+				i(62074),	-- Clammy Mail Bracers
+				i(62124),	-- Sooty Mail Bracers
+				i(62128),	-- Bleached Plate Bracers
+				i(62095),	-- Perforated Plate Bracers
 				i(66954),	-- Knife-Concealing Bracers
 				i(66958),	-- Bracers of Razor Fletching
 				i(66979),	-- Bracers of Bloody Business
@@ -74,6 +106,14 @@ _.WorldDrops =
 				i(67127),	-- Bracers of Caustic Purification
 			}),
 			n(HANDS, {
+				i(62094),	-- Pockmarked Cloth Gloves
+				i(62117),	-- Sodden Cloth Gloves
+				i(62086),	-- Dirt-Caked Gloves
+				i(62113),	-- Singed Gloves
+				i(62123),	-- Sooty Mail Gloves
+				i(62073),	-- Clammy Mail Gloves
+				i(62106),	-- Bleached Plate Gloves
+				i(62077),	-- Perforated Plate Gloves
 				i(66641),	-- Vonica's Gauntlets
 				i(66970),	-- Safecracker's Gloves
 				i(66989),	-- Endwyn's Flickering Gauntlets
@@ -85,6 +125,14 @@ _.WorldDrops =
 				i(67146),	-- Woundsplicer Handwraps
 			}),
 			n(WAIST, {
+				i(62100),	-- Pockmarked Cloth Belt
+				i(62120),	-- Sodden Cloth Belt
+				i(62089),	-- Dirt-Caked Belt
+				i(62107),	-- Singed Belt
+				i(62096),	-- Clammy Mail Belt
+				i(62131),	-- Sooty Mail Belt
+				i(62130),	-- Bleached Plate Belt
+				i(62090),	-- Perforated Plate Belt
 				i(66941),	-- Triple-Loop Belt
 				i(66966),	-- Elekk-Horn Waistguard
 				i(66980),	-- Girdle of Heated Deeds
@@ -94,6 +142,14 @@ _.WorldDrops =
 				i(67114),	-- Girdle of Chained Thunder
 			}),
 			n(LEGS, {
+				i(62093),	-- Pockmarked Cloth Pants
+				i(62116),	-- Sodden Cloth Pants
+				i(62082),	-- Dirt-Caked Pants
+				i(62112),	-- Singed Pants
+				i(62122),	-- Sooty Mail Pants
+				i(62099),	-- Clammy Mail Pants
+				i(62105),	-- Bleached Plate Pants
+				i(62076),	-- Perforated Plate Pants
 				i(66904),	-- Gartic's Resplendent Leggings
 				i(66962),	-- Shadowskulk Leggings
 				i(66971),	-- Highland Padded Leggings
@@ -105,6 +161,14 @@ _.WorldDrops =
 				i(67150),	-- Arrowsinger Legguards
 			}),
 			n(FEET, {
+				i(62085),	-- Pockmarked Cloth Boots
+				i(62119),	-- Sodden Cloth Boots
+				i(62088),	-- Dirt-Caked Boots
+				i(62115),	-- Singed Boots
+				i(62125),	-- Sooty Mail Boots
+				i(62083),	-- Clammy Mail Boots
+				i(62080),	-- Perforated Plate Boots
+				i(62129),	-- Bleached Plate Boots
 				i(55855),	-- Darksky Treads
 				i(66963),	-- Treads of the Wyrmhunter
 				i(66967),	-- Camelhide Treads

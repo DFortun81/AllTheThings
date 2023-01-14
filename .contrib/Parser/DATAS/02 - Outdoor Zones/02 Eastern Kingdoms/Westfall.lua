@@ -1451,6 +1451,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 124,	-- Riverpaw Brute
 				}),
+				i(68724, {	-- Broken Barn Door
+					["timeline"] = { "added 4.0.3" },
+				}),
 				i(1357, {	-- Captain Sander's Treasure Map
 					["coords"] = {
 						-- various common map locations where 'crs' may be found
