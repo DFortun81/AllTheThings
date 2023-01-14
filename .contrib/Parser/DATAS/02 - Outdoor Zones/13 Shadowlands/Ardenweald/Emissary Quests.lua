@@ -8,7 +8,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["provider"] = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
 				["coord"] = { 48.4, 50.4, ARDENWEALD },
 				["repeatable"] = true,
-				["g"] = bubbleDownSelf({ ["minReputation"] = { THE_WILD_HUNT, EXALTED } }, {
+				["minReputation"] = { THE_WILD_HUNT, EXALTED },
+				["g"] = bubbleDown({ ["minReputation"] = { THE_WILD_HUNT, EXALTED } }, {
 					i(180649, {	-- Wild Hunt Supplies
 						i(180635),	-- Hungry Burrower (PET!)
 						i(183800),	-- Amber Ardenmoth (MOUNT!)
