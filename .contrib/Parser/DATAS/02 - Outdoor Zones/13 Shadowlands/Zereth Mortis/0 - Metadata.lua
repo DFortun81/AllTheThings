@@ -3,9 +3,9 @@
 ---------------------------------------------------
 root("Zones", m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
-		["timeline"] = { ADDED_SL_S3 },
 		["icon"] = 4226233,
 		["lore"] = "Zereth Mortis is the forbidden realm of the First Ones, tucked away in the fabric of the Shadowlands itself. It was crafted by the First Ones to act as their workshop and is intended to create afterlives, a process carried out by the enormous Forge of Afterlives floating at the center of the realm. A race of mechanical caretakers called the automa were left behind by the First Ones to facilitate this process. The realm's most notable feature is the Sepulcher of the First Ones, which contains knowledge that could rewrite reality.",
+		["timeline"] = { ADDED_SL_S3 },
 		["maps"] = {
 			2027,	-- Blooming Foundry
 			2028,	-- Locarian Esper

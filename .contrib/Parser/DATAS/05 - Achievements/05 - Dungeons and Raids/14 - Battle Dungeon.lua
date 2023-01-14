@@ -6,18 +6,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 	achcat(ACHIEVEMENT_CATEGORY_BATTLE_DUNGEON, {
 		ach(12726),		-- A Fish Out of Water
 		ach(12490),		-- Alchemical Romance
-		un(REMOVED_FROM_GAME, ach(13075, {	-- Battle for Azeroth Keymaster / TODO: will probably move in 9.1
-			crit(4),		-- Atal'Dazar
-			crit(1),		-- Freehold
-			crit(10),		-- Kings' Rest
-			crit(3),		-- Shrine of the Storm
-			crit(9),		-- Siege of Boralus
-			crit(6),		-- Temple of Sethraliss
-			crit(8),		-- The MOTHERLODE!!
-			crit(5),		-- The Underrot
-			crit(7),		-- Tol Dagor
-			crit(2),		-- Waycrest Manor
-		})),
 		ach(12600),		-- Breath of the Shrine
 		ach(12270, {	-- Bringing Hexy Back
 			crit(2),		-- Priestess Alun'za defeated
@@ -103,5 +91,12 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		ach(12601),		-- The Void Lies Sleeping
 		ach(12602),		-- Trust No One
 		ach(12721),		-- Wrap God
+
+
+		achcat(ACHIEVEMENT_CATEGORY_BATTLE_RAID, {["timeline"] = { ADDED_BFA_REL }}),
+		achcat(ACHIEVEMENT_CATEGORY_SHADOWLANDS_DUNGEON, {["timeline"] = { ADDED_SL_REL }}),
+		achcat(ACHIEVEMENT_CATEGORY_SHADOWLANDS_RAID, {["timeline"] = { ADDED_SL_REL }}),
+		achcat(ACHIEVEMENT_CATEGORY_DRAGONFLIGHT_DUNGEON, {["timeline"] = TIMELINE_DF_REL }),
+		achcat(ACHIEVEMENT_CATEGORY_DRAGONFLIGHT_RAID, {["timeline"] = TIMELINE_DF_REL }),
 	}),
 }));

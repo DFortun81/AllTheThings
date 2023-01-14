@@ -17,7 +17,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 				q(64944, { -- A Hasty Voyage
 					["sourceQuests"] = { 64942 },	-- Call of the Primus
 					["provider"] = { "n", 181655 },	-- The Primus
-					["coord"] = { 34.2, 52.3, 2042 },
+					["coord"] = { 34.2, 52.3, 2042 },	-- Oribos (Scenario Map)
 				}),
 				q(64945, {	-- Stangers in a Strange Land
 					["sourceQuests"] = { 64944 },	-- A Hasty Voyage

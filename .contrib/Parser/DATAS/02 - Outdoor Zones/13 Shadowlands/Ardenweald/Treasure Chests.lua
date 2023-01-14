@@ -8,9 +8,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["questID"] = 61072,
 				["coord"] = { 55.9, 21.0, ARDENWEALD },
 				["g"] = {
-					crit(1, {	-- Aerto's Body
-						["achievementID"] = 14313,	-- Treasures of Ardenweald
-					}),
 					i(180630),	-- Gorm Harrier (PET!)
 				},
 			}),
@@ -19,9 +16,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["questID"] = 61065,
 				["coord"] = { 52.9, 37.2, ARDENWEALD },
 				["g"] = {
-					crit(3, {	-- Veilwing Egg
-						["achievementID"] = 14313,	-- Treasures of Ardenweald
-					}),
 					i(180642),	-- Cloudfeather Fledgling (PET!)
 				},
 			}),
@@ -58,9 +52,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 							{ "i", 180757, 1 },	-- Gardener's Wand
 						},
 					}),
-					crit(9, {	-- Cache of the Moon
-						["achievementID"] = 14313,	-- Treasures of Ardenweald
-					}),
 					i(180731),	-- Wildseed Cradle (MOUNT!)
 				},
 			}),
@@ -70,9 +61,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["coord"] = { 36.1, 65.2, ARDENWEALD },
 				["cost"] = { { "i", 180652, 1 } },	-- Fae Dreamcatcher
 				["g"] = {
-					crit(14, {	-- Cache of the Night
-						["achievementID"] = 14313,	-- Treasures of Ardenweald
-					}),
 					i(179549),	-- Nightwillow Cudgel
 					i(180637),	-- Starry Dreamfoal (PET!)
 				},
@@ -84,11 +72,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					{ 36.1, 65.2, ARDENWEALD },	-- Treasure
 				},
 				["questID"] = 61068,
-				["g"] = {
-					crit(15, {	-- Darkreach Supplies
-						["achievementID"] = 14313,	-- Treasures of Ardenweald
-					}),
-				},
 			}),
 			o_repeated({	-- Decayed Husk
 			--	Rewards (Blue)
@@ -141,9 +124,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					{ 42.0, 32.6, ARDENWEALD },	-- Treasure
 				},
 				["g"] = {
-					crit(10, {	-- Desiccated Moth
-						["achievementID"] = 14313,	-- Treasures of Ardenweald
-					}),
 					i(180640),	-- Amber Glitterwing (PET!)
 					i(180784),	-- Aromatic Flowers (so the item is associated with the treasure)
 				},
@@ -154,9 +134,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["coord"] = { 37.6, 37.0, ARDENWEALD },
 				["crs"] = { 174911 },	-- Bounding Shroom
 				["g"] = {
-					crit(11, {	-- Dreamsong Heart
-						["achievementID"] = 14313,	-- Treasures of Ardenweald
-					}),
 					i(179510),	-- Dreamsong Warglaive
 				},
 			}),
@@ -170,9 +147,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				},
 				["crs"] = { 171475 },	-- Elusive Faerie Cache <Obscurred in darkness.>
 				["g"] = {
-					crit(13, {	-- Elusive Faerie Cache
-						["achievementID"] = 14313,	-- Treasures of Ardenweald
-					}),
 					i(179512),	-- Dreamsong Saber
 					i(184490),	-- Fae Pipes (TOY!)
 				},
@@ -199,10 +173,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 			o(354651, {		-- Enchanted Dreamcatcher
 				["coord"] = { 36.4, 25.0, ARDENWEALD },
 				["g"] = {
-					crit(12, {	-- Enchanted Dreamcatcher
-						["achievementID"] = 14313,	-- Treasures of Ardenweald
-						["description"] = "You will not get credit for the criteria until you turn in the quest started by the dreamcatcher.",
-					}),
 					i(183129, {	-- Anima-Laden Dreamcatcher
 						["questID"] = 62259,	-- Anima-Laden Dreamcatcher
 					}),
@@ -261,9 +231,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["questID"] = 61073,
 				["coord"] = { 49.7, 55.9, ARDENWEALD },
 				["g"] = {
-					crit(5, {	-- Faerie Trove
-						["achievementID"] = 14313,	-- Treasures of Ardenweald
-					}),
 					i(182673),	-- Shimmerbough Hoarder (PET!)
 				},
 			}),
@@ -272,9 +239,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["questID"] = 61165,	-- loot trigger
 				["coord"] = { 67.8, 34.6, ARDENWEALD },
 				["g"] = {
-					crit(6, {	-- Harmonic Chest
-						["achievementID"] = 14313,	-- Treasures of Ardenweald
-					}),
 					i(184489),	-- Fae Harp (TOY!)
 					i(179565),	-- Songwood Stem
 				},
@@ -284,19 +248,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["questID"] = 61067,
 				["coord"] = { 48.2, 39.2, ARDENWEALD },
 				["g"] = {
-					crit(7, {	-- Hearty Dragon Plume
-						["achievementID"] = 14313,	-- Treasures of Ardenweald
-					}),
 					i(182729),	-- Hearty Dragon Plume (TOY!)
 				},
 			}),
 			o(354645, {		-- Lost Satchel
 				["coord"] = { 48.2, 20.3, ARDENWEALD },
 				["g"] = {
-					crit(2, {	-- Lost Satchel
-						["achievementID"] = 14313,	-- Treasures of Ardenweald
-						["description"] = "You will not get credit for the criteria until you turn in the quest started by the satchel.",
-					}),
 					i(182731, {	-- Satchel of Culexwood
 						["questID"] = 62187,	-- Satchel of Culexwood
 					}),
@@ -475,10 +432,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 			o(354911, {		-- Swollen Anima Seed
 				["coord"] = { 76.6, 29.7, ARDENWEALD },
 				["g"] = {
-					crit(4, {	-- Swollen Anima Seed
-						["achievementID"] = 14313,	-- Treasures of Ardenweald
-						["description"] = "You will not get credit for the criteria until you turn in the quest started by the seed.",
-					}),
 					i(182730, {	-- Swollen Anima Seed
 						["questID"] = 62186,	-- Swollen Anima Seed
 					}),

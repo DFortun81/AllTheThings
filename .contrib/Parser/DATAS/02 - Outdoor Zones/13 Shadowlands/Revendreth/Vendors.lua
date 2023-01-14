@@ -108,6 +108,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 				},
 			}),
+			n(167815, {	-- Mims <Innkeeper>
+				["coord"] = { 32.6, 49.3, REVENDRETH },
+				["g"] = {
+					i(179271),	-- Dredhollow Apple
+				},
+			}),
 			n(156822, {	-- Mistress Mihaela <Court of Harvesters Quartermaster>
 				["coord"] = { 61.4, 63.8, REVENDRETH },
 				["minReputation"] = { 2413, 5 },	-- Court of Harvesters, Friendly
@@ -164,6 +170,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					})),
 				},
 			}),
+			n(173570, {	-- Snickersnee <Stable Dredger>
+				["coord"] = { 40.8, 46.6, REVENDRETH },	-- Mims <Innkeeper>
+				["g"] = {
+					i(182585),	-- Grooming Brush
+				},
+			}),
 			n(160084, {	-- Ta'rmoro <Purveyor of Arms>
 				["coord"] = { 50.4, 81.4, REVENDRETH },
 				["g"] = {
@@ -206,6 +218,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(171808, {	-- Ta'tru
 				["coord"] = { 51.1, 78.8, REVENDRETH },
 				["g"] = {
+					i(182597, {	-- Comfortable Saddle Blanket
+						["cost"] = {
+							{ "i", 179314, 30 },	-- 30x Creeping Crawler Meat
+							{ "i", 168589, 10 },	-- 10x Marrowroot
+							{ "i", 179315, 30 },	-- 30x Shadowy Shank
+						},
+					}),
 					i(180973, {	-- Necklace of Dredbat Fangs
 						["description"] = "Take this to Ta'lan the Antiquary in Oribos (downstairs in The Broker's Den) |cffffffff(51.4, 42.9)|r.",
 					}),

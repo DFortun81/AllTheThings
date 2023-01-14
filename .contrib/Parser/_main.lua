@@ -37,9 +37,10 @@ HEADERS = {
 	Achievement = "a",
 	Item = "i",
 	Map = "m",
+	NPC = "n",
 	Quest = "q",
 	Spell = "s",
-	-- AchCategory = "c",	-- don't use until Classic has some alternative support for Achievement Category Headers
+	AchCategory = "ac",
 };
 
 -- Map Constants for quick and easy replacement when we can get mapIDs on live!
@@ -783,11 +784,7 @@ ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES = 15301;
 	ACHIEVEMENT_CATEGORY_VISIONS_OF_NZOTH = 15426;
 	ACHIEVEMENT_CATEGORY_TORGHAST = 15440;
 	ACHIEVEMENT_CATEGORY_COVENANT_SANCTUMS = 15441;
-	ACHIEVEMENT_CATEGORY_DRAGON_ISLES = 15458;
 	ACHIEVEMENT_CATEGORY_DRAGON_RACING = 15462;
-	ACHIEVEMENT_CATEGORY_TUSKARR_FISHING = 15473;
-	ACHIEVEMENT_CATEGORY_PRIMAL_STORMS = 15474;
-	ACHIEVEMENT_CATEGORY_SHIKAAR_GRAND_HUNTS = 15476;
 ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH = 81;
 	ACHIEVEMENT_CATEGORY_MOUNTS_FOS = 15269;
 	ACHIEVEMENT_CATEGORY_DUNGEONS_FOS = 15272;
@@ -1782,6 +1779,16 @@ end
 merge = function(...)
 	local t = {};
 	for i,groups in ipairs({...}) do
+		for j,o in ipairs(groups) do
+			table.insert(t, o);
+		end
+	end
+	return t;
+end
+repVendor = function(rep, group)
+	local t = {};
+	for i,groups in ipairs(group) do
+		groups = bubbleDown({["minReputation"] = {rep, i+3}}, groups)
 		for j,o in ipairs(groups) do
 			table.insert(t, o);
 		end

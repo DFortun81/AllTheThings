@@ -9,9 +9,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["isDaily"] = true,
 				["coord"] = { 34.6, 68.0, ARDENWEALD },
 				["g"] = {
-					crit(1, {	-- Deathbinder Hroth
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(180166),	-- Deathbinder's Staff
 				},
 			}),
@@ -21,9 +18,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["isDaily"] = true,
 				["coord"] = { 47.6, 24.6, ARDENWEALD },
 				["g"] = {
-					crit(7, {	-- Deifir the Untamed
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(180631),	-- Gorm Needler (PET!)
 				},
 			}),
@@ -32,9 +26,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["questID"] = 58987,
 				["isDaily"] = true,
 				["g"] = {
-					crit(17, {	-- Dustbrawl (crit 18 is also Dustbrawl, why??)
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(181395)	-- Dustbreak Maul
 				},
 			}),
@@ -45,9 +36,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["coord"] = { 58.5, 31.8, ARDENWEALD },
 				["crs"] = { 171827 },	-- Angry Egg-Tender
 				["g"] = {
-					crit(13, {	-- Egg-Tender Leh'go
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(179539),	-- Kelox's Eggbeater
 				},
 			}),
@@ -57,9 +45,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["isDaily"] = true,
 				["coord"] = { 68.4, 29.4, ARDENWEALD },
 				["g"] = {
-					crit(21, {	-- Faeflayer (incorrectly showing in-game as Soultwister Cero -- but that rare awards criteria 20)
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(180144),	-- Faeflayer's Hatchet
 				},
 			}),
@@ -69,9 +54,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["isDaily"] = true,
 				["coord"] = { 53.8, 75.8, ARDENWEALD },
 				["g"] = {
-					crit(18, {	-- Gormbore (listed erroneously in-game as another "Dustbrawl")
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(183196),	-- Lavender Nibbler (PET!)
 				},
 			}),
@@ -82,9 +64,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["coord"] = { 28.4, 55.3, ARDENWEALD },
 				["crs"] = { 164110 },	-- Chompy
 				["g"] = {
-					crit(4, {	-- Gormtamer Tizo
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(180725),	-- Spinemaw Gladechewer (MOUNT!)
 				},
 			}),
@@ -96,9 +75,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 						["isDaily"] = true,
 						["coord"] = { 65.7, 28.1, ARDENWEALD },
 						["g"] = {
-							crit(2, {	-- Mystic Rainbowhorn
-								["achievementID"] = 14309,	-- Adventurer of Ardenweald
-							}),
 							i(182179),	-- Runestag Soul
 							i(179586),	-- Elderwood Piercer
 						},
@@ -112,9 +88,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["crs"] = { 164122 },	-- Rapidly Growing Mushroom/Humon'gozz (npcID stays the same after it morphs from the mushroom into Humon'gozz)
 				["cost"] = {{"i",175247,1}},	-- Unusually Large Mushroom
 				["g"] = {
-					crit(5, {	-- Humon'gozz
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(182650),	-- Arboreal Gulper (MOUNT!)
 				},
 			}),
@@ -123,9 +96,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["isDaily"] = true,
 				["coord"] = { 67.8, 51.2, ARDENWEALD },
 				["g"] = {
-					crit(10, {	-- Hunter Vivanna
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 				--	Blue
 					i(179593),	-- Darkreach Mask
 					i(179594),	-- Witherscorn Guise
@@ -156,9 +126,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					{ 57.9, 29.3, ARDENWEALD },
 				},
 				["g"] = {
-					crit(3, {	-- Macabre
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(180644),	-- Rocky (PET!)
 				},
 			}),
@@ -168,9 +135,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["isDaily"] = true,
 				["coord"] = { 62.2, 24.8, ARDENWEALD },
 				["g"] = {
-					crit(11, {	-- Mymaen
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(179502),	-- Ripvine Barb
 				},
 			}),
@@ -180,9 +144,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["isDaily"] = true,
 				["coord"] = { 52.0, 58.8, ARDENWEALD },
 				["g"] = {
-					crit(8, {	-- Old Ardeite
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(180643),	-- Chirpy Valeshrieker (PET!)
 				},
 			}),
@@ -193,9 +154,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["coord"] = { 64.6, 44.0, ARDENWEALD },
 				["crs"] = { 167928, 167929, 167916 },	-- Dormant Blossom
 				["g"] = {
-					crit(14, {	-- Rootwrithe
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(179603),	-- Nettlehusk Barrier
 				},
 			}),
@@ -205,9 +163,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["coord"] = { 65.6, 24.0, ARDENWEALD },
 				["crs"] = { 171684 },	-- Daffodil
 				["g"] = {
-					crit(12, {	-- Rotbriar Changeling
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(175729),	-- Rotbriar Sprout
 				},
 			}),
@@ -216,9 +171,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["isDaily"] = true,
 				["coord"] = { 37.4, 59.6, ARDENWEALD },
 				["g"] = {
-					crit(9, {	-- Skuld Vit
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(182183),	-- Wolfhawk Soul
 					i(180146),	-- Axe of Broken Wills
 				},
@@ -228,9 +180,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["isDaily"] = true,
 				["coord"] = { 72.4, 51.6, ARDENWEALD },
 				["g"] = {
-					crit(20, {	-- Soultwister Cero
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(180164),	-- Soultwister's Scythe
 				},
 			}),
@@ -240,9 +189,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["isDaily"] = true,
 				["coord"] = { 59.2, 46.6, ARDENWEALD },
 				["g"] = {
-					crit(15, {	-- The Slumbering Emperor
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(175711),	-- Slumberwood Band
 					i(183828),	-- Friendly Bugs
 				},
@@ -254,9 +200,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 				["coord"] = { 58.0, 61.6, ARDENWEALD },
 				["crs"] = { 164179 },	-- Wriggling Tendril
 				["g"] = {
-					crit(6, {	-- Wrigglemortis
-						["achievementID"] = 14309,	-- Adventurer of Ardenweald
-					}),
 					i(181396),	-- Thornsweeper Scythe
 				},
 			}),

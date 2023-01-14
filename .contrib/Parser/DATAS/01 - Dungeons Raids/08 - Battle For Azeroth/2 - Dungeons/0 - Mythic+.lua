@@ -37,9 +37,20 @@ root("Instances", tier(BFA_TIER, {
 			}),
 		})),
 		n(ACHIEVEMENTS, {
-			ach(13075, {		-- Battle for Azeroth Keymaster
+			ach(13075, bubbleDownSelf({		-- Battle for Azeroth Keymaster
 				["timeline"] = { ADDED_BFA_REL, REMOVED_SL_PRE },
-			}),
+			}, {
+				crit(4),		-- Atal'Dazar
+				crit(1),		-- Freehold
+				crit(10),		-- Kings' Rest
+				crit(3),		-- Shrine of the Storm
+				crit(9),		-- Siege of Boralus
+				crit(6),		-- Temple of Sethraliss
+				crit(8),		-- The MOTHERLODE!!
+				crit(5),		-- The Underrot
+				crit(7),		-- Tol Dagor
+				crit(2),		-- Waycrest Manor
+			})),
 			header(HEADERS.Achievement, SEASON_INFESTED, bubbleDownSelf({
 				["timeline"] = { ADDED_BFA_REL, REMOVED_BFA_S2 },
 			},{

@@ -132,6 +132,20 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["sourceQuests"] = { 60470 },	-- Setting Sabina Free
 				}),
 			}),
+			ach(14233, {	-- Tea Tales
+				crit(1, {		-- Tea Tales: Theotar
+					["_quests"] = { 59848 },	-- Tea Tales: Theotar
+				}),
+				crit(2, {		-- Tea Tales: Vulca
+					["_quests"] = { 59850 },	-- Tea Tales: Vulca
+				}),
+				crit(3, {		-- Tea Tales: Gubbins and Tubbins
+					["_quests"] = { 59852 },	-- Tea Tales: Gubbins and Tubbins
+				}),
+				crit(4, {		-- Tea Tales: Lost Sybille
+					["_quests"] = { 59853 },	-- Tea Tales: Lost Sybille
+				}),
+			}),
 			ach(14771, {	-- The Afterlife Express
 				["description"] = "Coordinates listed are a single point along the path driven by each carriage.  Some have more circuitous routes than others and will require a longer wait.",
 				["g"] = {
@@ -184,7 +198,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_SL_REL } }, {
 					["sourceQuests"] = { 58086 },	-- The Master of Lies
 				}),
 			}),
-			pvp(ach(14512)),	-- Tour of Duty: Revendreth
+			ach(14512, {	-- Tour of Duty: Revendreth
+				["pvp"] = true,
+			}),
 			ach(14314, {	-- Treasures of Revendreth
 				crit(1, {	-- Lost Quill
 					["_quests"] = { 61990 },

@@ -2656,7 +2656,6 @@ _.ObjectNames = {
 	[385022] = "Eroded Fossil",
 	[500000] = "Inspiration Catalyst Console",
 	[999111] = "Amber Gem Cluster",
-	[9962198] = "Outcast's Makeshift Muckpool",
 	[9999890] = "Corrupted Loot",
 	[9999891] = "Main Objective Only",
 	[9999892] = "Main Objective + 2 Bonus Areas",

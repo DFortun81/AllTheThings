@@ -1102,10 +1102,10 @@ app.RefreshTradeSkillCache = function()
 	local cache = app.CurrentCharacter.Professions;
 	wipe(cache);
 	-- "Professions" that anyone can "know"
-	cache[2720] = true;	-- Junkyard Tinkering
-	cache[2791] = true;	-- Ascension Crafting
-	cache[2819] = true;	-- Protoform Synthesis
-	cache[2847] = true;	-- Tuskarr Fishing Gear
+	cache[2720] = 1;	-- Junkyard Tinkering
+	cache[2791] = 1;	-- Ascension Crafting
+	cache[2819] = 1;	-- Protoform Synthesis
+	cache[2847] = 1;	-- Tuskarr Fishing Gear
 	local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
 	for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do
 		if j ~= 0 then
@@ -2542,11 +2542,15 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 		y = math.floor(y * 1000) / 10;
 		coord = x..", "..y;
 	end
-	local u, requireSkill, repeatable;
-	if questRef then
-		u = questRef.u;
-		requireSkill = questRef.requireSkill;
-		repeatable = questRef.repeatable;
+	local u = questRef and questRef.u;
+	local completed = app.CurrentCharacter.Quests[id];
+	local skills = {};
+	for profID,known in pairs(app.CurrentCharacter.Professions) do
+		-- professions inherently known by all characters are marked 1 specifically; dynamic ones are true
+		if known ~= 1 then
+			tinsert(skills, "|");
+			tinsert(skills, C_TradeSkillUI.GetTradeSkillDisplayName(profID):sub(1,4));
+		end
 	end
 	return
 	{
@@ -2556,7 +2560,7 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 		questChange.." '"..(C_TaskQuest.GetQuestInfoByQuestID(id) or C_QuestLog.GetTitleForQuestID(id) or "???").."'",
 		"lvl:"..app.Level.." race:"..app.RaceID.." ("..app.Race..") class:"..app.ClassIndex.." ("..app.Class..") cov:"..(covData and covData.name or "N/A")..(covRenown and ":"..covRenown or ""),
 		"renown"..(app.TableConcat(majorFactionInfo)),
-		"u:"..(u or "").." skill:"..(requireSkill or "").." r:"..(repeatable or ""),
+		"u:"..(u or "").." comp:"..(completed or "").." skills"..(app.TableConcat(skills) or ""),
 		"sq:"..app.SourceQuestString(questRef or id),
 		"lq:"..(app.LastQuestTurnedIn or ""),
 		-- TODO: put more info in here as it will be copy-paste into Discord
@@ -2572,14 +2576,15 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 	if questRef and questRef.questID then
 		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange)
 		local id = questRef.questID;
+		local completed = app.CurrentCharacter.Quests[id];
 		if not
 			-- expectations for accurate quest data
 			-- meets current character filters
 			(app.CurrentCharacterFilters(questRef)
 			-- is marked as in the game
 			and app.ItemIsInGame(questRef)
-			-- repeatable or not previously completed
-			and (questRef.repeatable or not app.CurrentCharacter.Quests[id])
+			-- repeatable or not previously completed or the accepted quest was immediately completed prior to the check
+			and (questRef.repeatable or not completed or app.LastQuestTurnedIn == completed)
 			-- not missing pre-requisites
 			and not questRef.missingPrequisites)
 		then
@@ -8067,7 +8072,7 @@ local function MapSourceQuestsRecursive(parentQuestID, questID, currentDepth, de
 				if p[1] == "i" then
 					id = p[2];
 					-- print("Quest Item Provider",p[1], id);
-					local pRef = app.SearchForObject("itemID", id);
+					local pRef = Search("itemID", id);
 					if pRef then
 						NestObject(questRef, pRef, true, 1);
 					else
@@ -12976,13 +12981,14 @@ app.BaseNPCWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseNPCWithAc
 local HeaderTypeAbbreviations = {
 	["a"] = "achievementID",
 	["m"] = "mapID",
+	["n"] = "npcID",
 	["i"] = "itemID",
 	["q"] = "questID",
 	["s"] = "spellID",
 };
 -- Alternate functions to attach data into a table based on an id for a given type code
 local AlternateDataTypes = {
-	["c"] = function(t, id)
+	["ac"] = function(t, id)
 		local name = GetCategoryInfo(id);
 		t.name = name;
 	end,
