@@ -59,6 +59,11 @@ root("Promotions", {
 					"removed 10.0.2.47213",
 				},
 			}),
+			-- Season 1
+			i(203716, {	-- Thundering Banner of the Aspects (TOY!)
+				["description"] = "Mythic Dungeon International: DF Season 1\n\nThe Mythic Dungeon International (MDI)......",
+				["timeline"] = { ADDED_DF_0_5 },
+			}),
 		},
 	}),
 });

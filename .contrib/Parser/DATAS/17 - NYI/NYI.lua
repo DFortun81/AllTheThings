@@ -165,6 +165,31 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		},
 	}),
+	tier(DF_TIER, 0.5, {
+		i(202309),	-- Defective Doomsday Device (TOY!)
+		mount(400733),	-- [PH] Goblin Shredder Rocket (MOUNT!)
+		mount(397406),	-- [PH] Magical Fish Mount (MOUNT!)
+		i(203226),	-- Stormfused Salamanther (MOUNT!)
+		mount(395095),	-- Whelpling (MOUNT!)
+
+		i(190767),	-- Armored Golden Pterrordax (MOUNT!)
+		mount(367875),	-- Armored Siege Kodo (MOUNT!)
+		mount(369480),	-- Cerulean Marsh Hopper (MOUNT!)
+		i(190539),	-- Coral-Stalker Waveray (MOUNT!)
+		i(190168),	-- Crusty Crawler (MOUNT!)
+		mount(366647),	-- Magenta Cloud Serpent (MOUNT!)
+		i(190169),	-- Quawks (MOUNT!)
+		i(190613),	-- Savage Green Battle Turtle (MOUNT!)
+
+		pet(03255),	-- Buttercup (PET!)
+		i(190604),	-- Buzzworth (PET!)
+		pet(3253),	-- Crushhoof (PET!)
+		i(190176),	-- Drazka'zet the Wrathful (PET!)
+		i(190603),	-- Egbob (PET!)
+		i(190173),	-- Lil' Maka'jin (PET!)
+		i(190175),	-- Pippin (PET!)
+		pet(3254),	-- Watcher of the Huntress (PET!)
+	}),
 	tier(DF_TIER, {
 		n(ARMOR, {
 				-- Evoker Set --

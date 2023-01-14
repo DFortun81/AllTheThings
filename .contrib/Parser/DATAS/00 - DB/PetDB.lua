@@ -1219,7 +1219,6 @@ pet(193429, 3297);	-- Time-Lost Salamanther
 pet(193620, 3267);	-- Time-Lost Slyvern
 pet(193850, 3330);	-- Time-Lost Timbertooth
 pet(193068, 3277);	-- Time-Lost Treeflitter
-pet(193855, 3334);	-- Time-Lost Vorquin Foal
 pet(0, 3393);	-- Anubisath Idol
 pet(0, 3401);	-- Arcantus
 pet(0, 3339);	-- Black Dragon Whelp
@@ -1252,11 +1251,24 @@ pet(193863, 0);	-- zzOld - [PH] Dark Baby Vorquin (REUSE)
 pet(193063, 0);	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
 pet(193862, 0);	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
 pet(191929, 0);	-- zzOld - [PH] White Flying Squirrel (REUSE)
+
+
 ------------------
 -- PATCH 10.0.5 --
 ------------------
--- SOURCED
 pet(190607, 3252);	-- Garrlok
+pet(193855, 3334);	-- Time-Lost Vorquin Foal
+-- NYI --
+-- Trading Post
+pet(0, 3255);	-- Buttercup
+pet(190604, 3251);	-- Buzzworth
+pet(0, 3253);	-- Crushhoof
+pet(190176, 3244);	-- Drazka'zet the Wrathful
+pet(190603,	3250);	-- Egbob
+pet(190173, 3242);	-- Lil' Maka'jin
+pet(190175, 3243);	-- Pippin
+pet(0, 3254);	-- Watcher of the Huntress
+
 
 
 -- #if ANYCLASSIC
