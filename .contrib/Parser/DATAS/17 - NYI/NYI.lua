@@ -846,7 +846,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201090),	-- Bivigosa's Blood Sausages
 			i(201045),	-- Icecrown Bleu
 			i(201046),	-- Dreamwarding Dripbrew
-			i(201047),	-- Arcanostabilized Provisions
 			i(201398),	-- Mogu Mozzarella
 			i(201413),	-- Eternity-Infused Burrata
 			i(201415),	-- Temporal Parmesan

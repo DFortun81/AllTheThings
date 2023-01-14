@@ -270,7 +270,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(66031, {	-- Making Time
 					["sourceQuests"] = { 66028 },	-- To the Future!
 					["provider"] = { "n", 186953 },	-- Possible Future You
-					["coord"] = { 61.4, 50.2, PRIMALIST_TOMORROW },
+					["coord"] = { 61.4, 50.2, THE_PRIMALIST_FUTURE },
 					["g"] = {
 						currency(2118),	-- Elemental Overflow
 						i(195185),	-- Annihilation Warder's Cloak
@@ -279,7 +279,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				q(66030, {	-- Resistance Isn't Futile
 					["sourceQuests"] = { 66028 },	-- To the Future!
 					["provider"] = { "n", 183860 },	-- Soridormi
-					["coord"] = { 61.1, 50.8, PRIMALIST_TOMORROW },
+					["coord"] = { 61.1, 50.8, THE_PRIMALIST_FUTURE },
 					["g"] = {
 						currency(2118),	-- Elemental Overflow
 						i(192467),	-- Bandages
@@ -291,7 +291,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						66030,	-- Resistance Isn't Futile
 					},
 					["provider"] = { "n", 183860 },	-- Soridormi
-					["coord"] = { 61.1, 50.8, PRIMALIST_TOMORROW },
+					["coord"] = { 61.1, 50.8, THE_PRIMALIST_FUTURE },
 				}),
 				q(66033, {	-- To the... Past?
 					["sourceQuests"] = { 66032 },	-- Return to the Present

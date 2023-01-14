@@ -29,7 +29,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 49.9, 59.4, THALDRASZUS }
 				}),
 				q(72090, {	-- Disrupting the Primalist Plan
-					["coord"] = { 61.5, 50.0, PRIMALIST_TOMORROW }
+					["coord"] = { 61.5, 50.0, THE_PRIMALIST_FUTURE }
 				}),
 				q(69949, {	-- Extermination
 					["coord"] = { 61.5, 27.5, THALDRASZUS }
