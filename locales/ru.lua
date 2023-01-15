@@ -3158,8 +3158,13 @@ for key,value in pairs({
 	[357246] = "Изорванный свиток",	-- Tattered Scroll
 	[357467] = "Запретные чернила",	-- Forbidden Ink
 	[357487] = "Стильный зонтик",	-- Stylish Parasol
+	[357515] = "Мешок овса",	-- Sack of Oats
+	[357526] = "Пустое ведро для воды",	-- Empty Water Bucket
+	[357541] = "Выброшенная подкова",	-- Discarded Horseshoe
 	[357565] = "Забытая удочка",	-- Forgotten Angler's Rod
+	[357572] = "Рапира Бесстрашия",	-- Rapier of the Fearless
 	[357584] = "Жуткая глефа Вирты",	-- Vyrtha's Dredglaive
+	[357683] = "Самодельная лужа жижи изгоя",	-- Outcast's Makeshift Muckpool
 	[357697] = "Клад надсмотрщика",	-- Taskmaster's Trove
 	[357726] = "Сломанное копье",	-- Broken Spear
 	[357758] = "Бочонок с чумой",	-- Plague Barrel
@@ -3563,7 +3568,6 @@ for key,value in pairs({
 	[385022] = "Размытая окаменелость",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
-	[9962198] = "Самодельная лужа жижи изгоя",	-- Outcast's Makeshift Muckpool
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot
 	[9999891] = "Только Основная Задача",	-- Main Objective Only
 	[9999892] = "Основная Задача + 2 Дополнительных Зоны",	-- Main Objective + 2 Bonus Areas
