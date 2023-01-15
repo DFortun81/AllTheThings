@@ -154,7 +154,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(201272, {	-- Rare Enchanter's Research
-						-- ["questID"] = TODO,
+						["questID"] = 71906,
 						["requireSkill"] = ENCHANTING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
