@@ -7500,8 +7500,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(72632),	--
 			q(72633),	-- Dragon Isles Supplies The Azure Span
 			q(72634),	--
-			q(72635),	--
-			q(72636),	--
+			q(72635),	-- Dragon Isles Supplies renown 20 tuskarr (2nd time)
+			q(72636),	-- Dragon Isles Supplies renown 21 tuskarr (2nd time)
 			q(72643),	-- Dragon Isles Supplies
 			q(72683),	--
 			q(72684),	--
