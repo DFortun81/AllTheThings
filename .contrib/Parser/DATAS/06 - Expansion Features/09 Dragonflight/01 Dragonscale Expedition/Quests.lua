@@ -495,6 +495,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renown 25
 				["provider"] = { "n", 187408 },	-- Granpap Whiskers
 				["coord"] = { 47.7, 83.2, THE_WAKING_SHORES },
+				["lockCriteria"] = { 2,
+					"spellID", 374032,	-- Tamed Skitterfly
+					"spellID", 374034,	-- Azure Skitterfly
+				},
 				["g"] = {
 					i(192761),	-- Tamed Skitterfly (Mount!)
 					i(192762),	-- Azure Skitterfly (Mount!)

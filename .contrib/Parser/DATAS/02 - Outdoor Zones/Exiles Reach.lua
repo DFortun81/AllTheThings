@@ -661,7 +661,7 @@ root("Zones", m(EXILES_REACH, bubbleDownSelf({
 					["sourceQuests"] = { 59948 },	-- Westward Bound [H]
 					["provider"] = { "n", 167225 },	-- Lana Jordan
 					["coord"] = { 51.1, 59.5, EXILES_REACH },
-					["races"] = { HORDE_ONLY },
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(175234),	-- Expeditionary Cloth Cuffs
 						i(175237),	-- Expeditionary Leather Bracers

@@ -5,7 +5,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(RARES, {
 		n(-1143, {	-- Every 2 Hours Rare
 			["description"] = "These rares spawn on a fixed timer & will be marked with a skull on the map if you are in the respective zone.\n\nEU: 6am CET 8am CET and so on\n\nNA: 7am PST 9am PST and so on",
-			["g"] = {
+			["g"] = sharedData({
+				["isDaily"] = true,
+			},{
 				-- Thaldraszus
 				n(193220, {	-- Broodweaver Araznae <Mother of Spiders>
 					["coord"] = { 59.6, 70.1, THALDRASZUS },
@@ -77,7 +79,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(200156),	-- Amethyzarite Geode
 					},
 				}),
-			},
+			}),
 		}),
 	}),
 })));

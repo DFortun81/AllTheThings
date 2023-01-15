@@ -93,5 +93,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				i(200288),	-- Maruuk Centaur Insingia
 			},
 		}),
+		-- Any Items listed here should meet the following criteria:
+		-- 1) Dropped from Multiple, specific Creatures which are likely themselves Sourced in ATT somewhere (i.e. Rares)
+		-- 2) Marked with appropriate ["crs"] tag to indicate the available Creatures per Item
+		-- This will automatically cause these Items to list themselves under any matching Creature of their ["crs"] list when that Creature is loaded in a ATT list
+		-- Technically, further Header organization under the 'Drops' Header should still work properly for automatic filling of the raw Items
+		n(DROPS, {	-- Items which can drop from multiple, specifically-tagged Creatures
+			i(196973, {	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
+				["crs"] = {
+					193128,	-- Blightpaw the Depraved
+					197356,	-- High Shaman Rotknuckle
+				},
+			}),
+		}),
 	}),
 })));

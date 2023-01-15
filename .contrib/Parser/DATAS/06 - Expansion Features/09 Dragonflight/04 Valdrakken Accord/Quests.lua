@@ -675,6 +675,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					title(735),		-- %s, Ally of Dragons (TITLE!)
 				},
 			}),
+				-- PARAGON
+			q(71023, {	-- Renowned with the Valdrakken Accord
+				["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
+				["repeatable"] = true,
+				["g"] = {
+					i(199475),	-- Overflowing Valdrakken Accord Supply Pack
+				},
+			}),
 
 				-- Unknown renown -- I will fix this later as well as all other renown quests -Darkal
 			q(72671, {	-- Renown Supplies

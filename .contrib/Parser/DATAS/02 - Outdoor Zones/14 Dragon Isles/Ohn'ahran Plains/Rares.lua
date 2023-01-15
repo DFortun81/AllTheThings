@@ -18,7 +18,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["isDaily"] = true,
 				["g"] = {
 					i(196986),	-- Cliffside Wylderdrake: Black Hair (DM!)
-					i(196973),	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
 					i(196982),	-- Cliffside Wylderdrake: Ears (DM!)
 					i(200127),	-- Gold-Alloy Blade
 					i(200283),	-- Gnoll-Gnawed Breeches
