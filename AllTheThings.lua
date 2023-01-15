@@ -4027,12 +4027,9 @@ ResolveSymbolicLink = function(o)
 			-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"after '",cmd,"' for",o.hash,"with:",unpack(sym))
 		end
 
-		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
-		if #searchResults > 0 then
-			for _,s in ipairs(searchResults) do
-				tinsert(finalized, s);
-			end
-		end
+		-- Verify the final result is finalized
+		cmdFunc = ResolveFunctions.finalize;
+		cmdFunc(finalized, searchResults);
 		-- if app.DEBUG_PRINT then print("Forced Finalize",o.key,o.key and o[o.key],#finalized) end
 
 		-- If we had any finalized search results, then clone all the records, store the results, and return them
@@ -5282,6 +5279,7 @@ local function DetermineSymlinkGroups(group)
 end
 local NPCExpandHeaders = {
 	[-1] = true,	-- COMMON_BOSS_DROPS
+	[-26] = true,	-- DROPS
 };
 -- Pulls in Common drop content for specific NPCs if any exists (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
 local function DetermineNPCDrops(group)
@@ -5299,7 +5297,7 @@ local function DetermineNPCDrops(group)
 				-- can only fill npc groups for the npc which match the difficultyID
 				local headerID, groups;
 				for _,npcGroup in pairs(npcGroups) do
-					headerID = npcGroup.headerID;
+					headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
 					-- where headerID is allowed and the nested difficultyID matches
 					if headerID and NPCExpandHeaders[headerID] and app.RecursiveFirstParentWithFieldValue(npcGroup, "difficultyID", difficultyID) then
 						-- copy the header under the NPC groups
@@ -5312,7 +5310,7 @@ local function DetermineNPCDrops(group)
 			else
 				local headerID, groups;
 				for _,npcGroup in pairs(npcGroups) do
-					headerID = npcGroup.headerID;
+					headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
 					-- where headerID is allowed
 					if headerID and NPCExpandHeaders[headerID] then
 						-- copy the header under the NPC groups
@@ -5326,17 +5324,8 @@ local function DetermineNPCDrops(group)
 		end
 	end
 end
+-- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
 local function FillGroupsRecursive(group, depth)
-	-- do not fill 'saved' groups in ATT windows
-	-- or groups directly under saved groups unless in Acct or Debug mode
-	if isInWindow and not app.MODE_DEBUG_OR_ACCOUNT then
-		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
-		if group.saved and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then return; end
-		local parent = group.parent;
-		-- parent is a saved quest, then do not fill with stuff
-		if parent and parent.questID and parent.saved then return; end
-	end
-
 	-- increment depth if things are being nested
 	depth = (depth or 0) + 1;
 	local groups;
@@ -5364,6 +5353,50 @@ local function FillGroupsRecursive(group, depth)
 		end
 	end
 end
+-- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FunctionRunner to recursively follow the next layer of groups
+-- over multiple frames to reduce stutter
+local function FillGroupsRecursiveAsync(group, depth)
+	-- do not fill 'saved' groups in ATT windows
+	-- or groups directly under saved groups unless in Acct or Debug mode
+	if not app.MODE_DEBUG_OR_ACCOUNT then
+		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
+		if group.saved and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then return; end
+		local parent = group.parent;
+		-- parent is a saved quest, then do not fill with stuff
+		if parent and parent.questID and parent.saved then return; end
+	end
+
+	-- increment depth if things are being nested
+	depth = (depth or 0) + 1;
+	local groups;
+	-- Determine Cost/Crafted/Symlink groups
+	groups = app.ArrayAppend(groups,
+		DeterminePurchaseGroups(group, depth),
+		DetermineCraftedGroups(group),
+		DetermineSymlinkGroups(group),
+		DetermineNPCDrops(group));
+
+	-- app.PrintDebug("MergeResults",group.hash,groups and #groups)
+	-- Adding the groups normally based on available-source priority
+	PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
+	if #groups > 0 then
+		BuildGroups(group);
+		app.DirectGroupUpdate(group);
+	end
+
+	if group.g then
+		-- app.PrintDebug(".g",group.hash,#group.g)
+		-- local hash = group.hash;
+		-- Then nest anything further
+		for _,o in ipairs(group.g) do
+			-- never nest the same Thing under itself
+			-- (prospecting recipes list the input as the output)
+			-- if o.hash ~= hash then
+			app.FunctionRunner.Run(FillGroupsRecursiveAsync, o, depth);
+			-- end
+		end
+	end
+end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 app.FillGroups = function(group)
 	-- Clear search history -- never re-list the starting Thing
@@ -5376,7 +5409,14 @@ app.FillGroups = function(group)
 	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",isInWindow)
 
 	-- Fill the group with all nestable content
-	FillGroupsRecursive(group);
+	if isInWindow then
+		-- 50 seems pretty good for time vs. stutter possibility
+		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
+		app.FunctionRunner.SetPerFrame(50);
+		app.FunctionRunner.Run(FillGroupsRecursiveAsync, group);
+	else
+		FillGroupsRecursive(group);
+	end
 
 	-- if app.DEBUG_PRINT then app.PrintTable(included) end
 	-- app.PrintDebug("FillGroups Complete",group.hash,group.__type)
