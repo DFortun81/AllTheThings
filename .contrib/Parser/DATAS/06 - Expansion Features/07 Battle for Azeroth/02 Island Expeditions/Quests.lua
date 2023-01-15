@@ -13,23 +13,23 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 		n(QUESTS, {
 			-- These quests need to be done once per account to unlock Island Expeditions. After completing, each character will have completed the flag quest 51994.
 			q(51903, {	-- Island Expedition (1/2) (A)
-				["sourceQuest"] = 53061,
+				["sourceQuest"] = 53061,	-- The Azerite Advantage
 				["races"] = ALLIANCE_ONLY,
 				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 			}),
 			q(51904, {	-- Island Expedition (2/2) (A)
-				["sourceQuest"] = 51903,
+				["sourceQuest"] = 51903,	-- Island Expedition
 				["races"] = ALLIANCE_ONLY,
 				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["maps"] = { 1022 },	-- Uncharted Island
 			}),
 			q(51870, {	-- Island Expedition (1/2) (H)
-				["sourceQuest"] = 53061,
+				["sourceQuest"] = 53062,	-- The Azerite Advantage
 				["races"] = HORDE_ONLY,
 				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 			}),
 			q(51888, {	-- Island Expedition (2/2) (H)
-				["sourceQuest"] = 51903,
+				["sourceQuest"] = 51870,	-- Island Expedition
 				["races"] = HORDE_ONLY,
 				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["maps"] = { 1022 },	-- Uncharted Island
