@@ -58,7 +58,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			}},
 			-- #endif
 		})),
-		ach(14222),     -- Exile's Reach
 		ach(5752, {		-- Justly Rewarded
 			ach(1182),		-- The Bread Winner
 		}),
