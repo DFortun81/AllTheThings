@@ -487,7 +487,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 				["g"] = {
 					spell(388278),	-- Intrepid Explorer cast
-					title(736),	-- Intrepid Explorer %s (title!)
+					title(475),	-- Intrepid Explorer %s (title!)
 					i(197921),	-- Primal Infusion
 				},
 			}),

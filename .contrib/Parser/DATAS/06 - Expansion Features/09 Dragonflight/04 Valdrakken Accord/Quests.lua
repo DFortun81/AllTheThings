@@ -672,7 +672,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["g"] = {
 					i(197921),		-- Primal Infusion
 					spell(388978),	-- Ally of Dragons
-					title(735),		-- %s, Ally of Dragons (TITLE!)
+					title(474),		-- %s, Ally of Dragons (TITLE!)
 				},
 			}),
 				-- PARAGON

@@ -25,9 +25,6 @@ title(453),	-- %s the [PH] TBD Title
 title(469),	-- %s, the Worldbreaker \\ %s, The Worldbreaker \\ %s, Close and Personal Friend of Deathwing
 10.0.0.45335
 title(472),	-- Birdwatcher %s
-10.0.0.45454
-title(474),	-- %s, Ally of Dragons
-title(475),	-- Intrepid Explorer %s
 10.0.0.45661
 title(479),	-- Malicious %s
 10.0.2.45779
