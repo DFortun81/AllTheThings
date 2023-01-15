@@ -2,10 +2,11 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root("Zones", m(EXILES_REACH, bubbleDownSelf({
-	["classes"] = exclude({ DEMONHUNTER, DEATHKNIGHT, EVOKER }, ALL_CLASSES),
-	["races"] = exclude({ DRACTHYR_ALLIANCE, DRACTHYR_HORDE }, ALL_RACES),
-	["customCollect"] = { "NPE" },
-	["timeline"] = { ADDED_SL_PRE },
+		-- Not really any reason to do this. Evokers/Dracthyr will never see this Zone unless enabling Account Mode
+		-- ["classes"] = exclude({ DEMONHUNTER, DEATHKNIGHT, EVOKER }, ALL_CLASSES),
+		-- ["races"] = exclude({ DRACTHYR_ALLIANCE, DRACTHYR_HORDE }, ALL_RACES),
+		["customCollect"] = { "NPE" },
+		["timeline"] = { ADDED_SL_PRE },
 	}, {
 	["icon"] = 3567434,
 	["maps"] = {
@@ -13,7 +14,7 @@ root("Zones", m(EXILES_REACH, bubbleDownSelf({
 		1727,	-- North Sea (Horde)
 	},
 	["g"] = {
-		n(ACHIEVEMENT, {
+		n(ACHIEVEMENTS, {
 			ach(14222, {	-- Exile's Reach
 				["sourceQuests"] = {
 					59641,	-- The Nation of Kul Tiras
@@ -1065,7 +1066,6 @@ root("Zones", m(EXILES_REACH, bubbleDownSelf({
 						i(178942),	-- War-Chain of the Horde
 					},
 				}),
-
 			}),
 
 				-- MISC --
