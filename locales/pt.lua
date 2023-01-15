@@ -3167,8 +3167,13 @@ for key,value in pairs({
 	[357246] = "Pergaminho Esfarrapado",	-- Tattered Scroll
 	[357467] = "Tinta Proibida",	-- Forbidden Ink
 	[357487] = "Guarda-sol Estiloso",	-- Stylish Parasol
+	[357515] = "Saco de Aveia",	-- Sack of Oats
+	[357526] = "Balde d'Água Vazio",	-- Empty Water Bucket
+	[357541] = "Ferradura Descartada",	-- Discarded Horseshoe
 	[357565] = "Vara de Pescar Esquecida",	-- Forgotten Angler's Rod
+	[357572] = "Florete do Destemor",	-- Rapier of the Fearless
 	[357584] = "Glaive Medonha de Vyrtha",	-- Vyrtha's Dredglaive
+	[357683] = "Poça de Lodo Improvisada do Proscrito",	-- Outcast's Makeshift Muckpool
 	[357697] = "Tesouro do Capataz",	-- Taskmaster's Trove
 	[357726] = "Lança Quebrada",	-- Broken Spear
 	[357758] = "Barril de Peste",	-- Plague Barrel
@@ -3572,7 +3577,6 @@ for key,value in pairs({
 	[385022] = "Fóssil Corroído",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
-	[9962198] = "Poça de Lodo Improvisada do Proscrito",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

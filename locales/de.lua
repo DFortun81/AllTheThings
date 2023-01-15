@@ -3168,8 +3168,13 @@ for key,value in pairs({
 	[357246] = "Zerfledderte Schriftrolle",	-- Tattered Scroll
 	[357467] = "Verbotene Tinte",	-- Forbidden Ink
 	[357487] = "Schicker Sonnenschirm",	-- Stylish Parasol
+	[357515] = "Sack Hafer",	-- Sack of Oats
+	[357526] = "Leerer Wassereimer",	-- Empty Water Bucket
+	[357541] = "Weggeworfenes Hufeisen",	-- Discarded Horseshoe
 	[357565] = "Vergessene Angelrute",	-- Forgotten Angler's Rod
+	[357572] = "Rapier der Furchtlosen",	-- Rapier of the Fearless
 	[357584] = "Vyrthas Schreckensgleve",	-- Vyrtha's Dredglaive
+	[357683] = "Behelfsmäßige Schlammlache des Ausgestoßenen",	-- Outcast's Makeshift Muckpool
 	[357697] = "Schatz des Zuchtmeisters",	-- Taskmaster's Trove
 	[357726] = "Zerbrochener Speer",	-- Broken Spear
 	[357758] = "Seuchenfass",	-- Plague Barrel
@@ -3573,7 +3578,6 @@ for key,value in pairs({
 	[385022] = "Erodiertes Fossil",	-- Eroded Fossil
 	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	--TODO: [999111] = "Amber Gem Cluster",	-- Amber Gem Cluster
-	[9962198] = "Behelfsmäßige Schlammlache des Ausgestoßenen",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas
