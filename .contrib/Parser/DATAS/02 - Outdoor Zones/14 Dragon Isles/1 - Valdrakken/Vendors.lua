@@ -175,7 +175,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						},
 					}),
 					i(201274, {	-- Rare Jeweler's Illustrations
-						-- ["questID"] = TODO,
+						["questID"] = 71910,
 						["requireSkill"] = JEWELCRAFTING,
 						["cost"] = {
 							{ "i", ARTISANS_METTLE, 200 },
