@@ -260,5 +260,39 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			})),
 		}),
+		header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
+			n(ACHIEVEMENTS, {
+				ach(17195, {	-- Waking Shores Reverse: Bronze
+					ach(17120),	-- Ruby Lifeshrine Loop Reverse: Bronze
+					ach(17123),	-- Wild Preserve Slalom Reverse: Bronze
+					ach(17126),	-- Emberflow Flight Reverse: Bronze
+					ach(17129),	-- Apex Canopy River Run Reverse: Bronze
+					ach(17132),	-- Uktulut Coaster Reverse: Bronze
+					ach(17135),	-- Wingrest Roundabout Reverse: Bronze
+					ach(17138),	-- Flashfrost Flyover Reverse: Bronze
+					ach(17141),	-- Wild Preserve Circuit Reverse: Bronze
+				}),
+				ach(17196, {	-- Waking Shores Reverse: Silver
+					ach(17121),	-- Ruby Lifeshrine Loop Reverse: Silver
+					ach(17124),	-- Wild Preserve Slalom Reverse: Silver
+					ach(17127),	-- Emberflow Flight Reverse: Silver
+					ach(17130),	-- Apex Canopy River Run Reverse: Silver
+					ach(17133),	-- Uktulut Coaster Reverse: Silver
+					ach(17136),	-- Wingrest Roundabout Reverse: Silver
+					ach(17139),	-- Flashfrost Flyover Reverse: Silver
+					ach(17142),	-- Wild Preserve Circuit Reverse: Silver
+				}),
+				ach(17197, {	-- Waking Shores Reverse: Gold
+					ach(17122),	-- Ruby Lifeshrine Loop Reverse: Gold
+					ach(17125),	-- Wild Preserve Slalom Reverse: Gold
+					ach(17128),	-- Emberflow Flight Reverse: Gold
+					ach(17131),	-- Apex Canopy River Run Reverse: Gold
+					ach(17134),	-- Uktulut Coaster Reverse: Gold
+					ach(17137),	-- Wingrest Roundabout Reverse: Gold
+					ach(17140),	-- Flashfrost Flyover Reverse: Gold
+					ach(17143),	-- Wild Preserve Circuit Reverse: Gold
+				}),
+			}),
+		})),
 	}),
 })));

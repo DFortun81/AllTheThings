@@ -205,5 +205,33 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			})),
 		}),
+		header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
+			n(ACHIEVEMENTS, {
+				ach(17201, {	-- Azure Span Reverse: Bronze
+					ach(17159),	-- The Azure Span Sprint Reverse: Bronze
+					ach(17162),	-- The Azure Span Slalom Reverse: Bronze
+					ach(17165),	-- The Vakthros Ascent Reverse: Bronze
+					ach(17168),	-- Iskaara Tour Reverse: Bronze
+					ach(17171),	-- Frostland Flyover Reverse: Bronze
+					ach(17174),	-- Archive Ambit Reverse: Bronze
+				}),
+				ach(17202, {	-- Azure Span Reverse: Silver
+					ach(17160),	-- The Azure Span Sprint Reverse: Silver
+					ach(17163),	-- The Azure Span Slalom Reverse: Silver
+					ach(17166),	-- The Vakthros Ascent Reverse: Silver
+					ach(17169),	-- Iskaara Tour Reverse: Silver
+					ach(17172),	-- Frostland Flyover Reverse: Silver
+					ach(17175),	-- Archive Ambit Reverse: Silver
+				}),
+				ach(17203, {	-- Azure Span Reverse: Gold
+					ach(17161),	-- The Azure Span Sprint Reverse: Gold
+					ach(17164),	-- The Azure Span Slalom Reverse: Gold
+					ach(17167),	-- The Vakthros Ascent Reverse: Gold
+					ach(17170),	-- Iskaara Tour Reverse: Gold
+					ach(17173),	-- Frostland Flyover Reverse: Gold
+					ach(17176),	-- Archive Ambit Reverse: Gold
+				}),
+			}),
+		})),
 	}),
 })));

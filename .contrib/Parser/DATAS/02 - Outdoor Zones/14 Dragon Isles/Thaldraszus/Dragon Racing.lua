@@ -218,5 +218,33 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			})),
 		}),
+		header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
+			n(ACHIEVEMENTS, {
+				ach(17204, {	-- Thaldraszus Reverse: Bronze
+					ach(17177),	-- The Flowing Forest Flight Reverse: Bronze
+					ach(17180),	-- Tyrhold Trial Reverse: Bronze
+					ach(17183),	-- Cliffside Circuit Reverse: Bronze
+					ach(17186),	-- Academy Ascent Reverse: Bronze
+					ach(17189),	-- Garden Gallivant Reverse: Bronze
+					ach(17192),	-- Caverns Criss-Cross Reverse: Bronze
+				}),
+				ach(17205, {	-- Thaldraszus Reverse: Silver
+					ach(17178),	-- The Flowing Forest Flight Reverse: Silver
+					ach(17181),	-- Tyrhold Trial Reverse: Silver
+					ach(17184),	-- Cliffside Circuit Reverse: Silver
+					ach(17187),	-- Academy Ascent Reverse: Silver
+					ach(17190),	-- Garden Gallivant Reverse: Silver
+					ach(17193),	-- Caverns Criss-Cross Reverse: Silver
+				}),
+				ach(17206, {	-- Thaldraszus Reverse: Gold
+					ach(17179),	-- The Flowing Forest Flight Reverse: Gold
+					ach(17182),	-- Tyrhold Trial Reverse: Gold
+					ach(17185),	-- Cliffside Circuit Reverse: Gold
+					ach(17188),	-- Academy Ascent Reverse: Gold
+					ach(17191),	-- Garden Gallivant Reverse: Gold
+					ach(17194),	-- Caverns Criss-Cross Reverse: Gold
+				}),
+			}),
+		})),
 	}),
 })));

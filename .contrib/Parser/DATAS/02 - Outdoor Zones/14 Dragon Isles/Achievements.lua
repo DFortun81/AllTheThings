@@ -115,6 +115,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				17197,	-- Waking Shores Reverse: Gold
 			}},
 			["timeline"] = { ADDED_10_0_5 },
+			["g"] = {
+				title(490),	-- Reverse Racer <Name>
+			}
 		}),
 		ach(16585, {	-- Loremaster of the Dragon Isles
 			-- Meta Achievement

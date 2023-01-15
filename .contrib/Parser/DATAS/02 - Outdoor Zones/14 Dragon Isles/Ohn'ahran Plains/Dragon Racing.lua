@@ -208,5 +208,30 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 			})),
 		}),
+		header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
+			n(ACHIEVEMENTS, {
+				ach(17198, {	-- Ohn'ahran Plains Reverse: Bronze
+					ach(17144),	-- Sundapple Copse Circuit Reverse: Bronze
+					ach(17147),	-- Fen Flythrough Reverse: Bronze
+					ach(17150),	-- Ravine River Run Reverse: Bronze
+					ach(17153),	-- Emerald Garden Ascent Reverse: Bronze
+					ach(17156),	-- River Rapids Route Reverse: Bronze
+				}),
+				ach(17199, {	-- Ohn'ahran Plains Reverse: Silver
+					ach(17145),	-- Sundapple Copse Circuit Reverse: Silver
+					ach(17148),	-- Fen Flythrough Reverse: Silver
+					ach(17151),	-- Ravine River Run Reverse: Silver
+					ach(17154),	-- Emerald Garden Ascent Reverse: Silver
+					ach(17157),	-- River Rapids Route Reverse: Silver
+				}),
+				ach(17200, {	-- Ohn'ahran Plains Reverse: Gold
+					ach(17146),	-- Sundapple Copse Circuit Reverse: Gold
+					ach(17149),	-- Fen Flythrough Reverse: Gold
+					ach(17152),	-- Ravine River Run Reverse: Gold
+					ach(17155),	-- Emerald Garden Ascent Reverse: Gold
+					ach(17158),	-- River Rapids Route Reverse: Gold
+				}),
+			}),
+		})),
 	}),
 })));
