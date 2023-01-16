@@ -39,6 +39,7 @@ _.Zones =
 							{ 44.9, 64.6, THE_JADE_FOREST },
 							{ 47.1, 67.5, THE_JADE_FOREST },
 							{ 46.2, 71.2, THE_JADE_FOREST },
+							{ 44.5, 64.4, THE_JADE_FOREST },
 						},
 						["g"] = {
 							i(86196),	-- Ancient Jinyu Staff
