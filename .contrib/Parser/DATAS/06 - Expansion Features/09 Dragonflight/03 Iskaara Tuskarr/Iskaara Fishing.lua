@@ -249,6 +249,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 						i(199844),	-- Serevite Harpoon Head
 						i(199845),	-- Jagged Serevite Harpoon Head
 						i(199848),	-- Draconium Net Weights
+						i(199849),	-- Dense Draconium Net Weight
 						i(199698),	-- Irontree Harpoon Handle
 						i(199641),	-- Reinforced Irontree Harpoon Handle
 					}),
@@ -427,6 +428,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(70796),	-- Triggered after crafting 'Serevite Harpoon Head'
 		q(70794),	-- Triggered after crafting 'Irontree Harpoon Handle'
 		q(70803),	-- Triggered after crafting 'Double Imbu Knot'
+		q(70800),	-- Triggered after crafting 'Draconium Net Weights'
 		--
 		q(72828),	-- First weekly completion of 'Catch and Release: Scalebell Mackerel' (70199)
 		q(72827),	-- First weekly completion of 'Catch and Release: Thousandbite Piranha' (70200)

@@ -463,7 +463,10 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				},
 			}),
 			q(49314, {	-- Hunting Zardrax
-				["sourceQuests"] = { 47250 },	-- We'll Meet Again
+				["sourceQuests"] = {
+					47250,	-- We'll Meet Again
+					49082,	-- Upward and Onward
+				},
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 122795 },	-- Witch Doctor Kejabu
 				["coord"] = { 39.5, 43.8, NAZMIR },

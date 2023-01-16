@@ -151,7 +151,7 @@ _.Zones =
 				}),
 				ach(6754, {	-- The Dark Heart of the Mogu
 					crit(2, {	-- The Lost Dynasty
-						["coord"] = { 52.96, 27.42, KRASARANG_WILDS },
+						["coord"] = { 50.90, 31.67, KRASARANG_WILDS },
 					}),
 				}),
 				ach(6350, {	-- To All the Squirrels I Once Caressed?

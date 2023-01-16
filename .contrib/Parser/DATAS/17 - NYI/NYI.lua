@@ -509,36 +509,26 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(198653),	-- PH Profession Drop
 			i(198659),	-- Forgetful Apprentice's Tome
 			i(198660),	-- Fragmented Key
-			i(198662),	-- Intriguing Bolt of Blue Cloth
 			i(198663),	-- Frostforged Potion
 			i(198664),	-- Crystalline Overgrowth
 			i(198667),	-- Spare Djaradin Tools
 			i(198669),	-- How to Train Your Whelpling
 			i(198670),	-- Lofty Malygite
 			i(198675),	-- Lava-Infused Seed
-			i(198680),	-- Decaying Brackenhide Blanket
 			i(198682),	-- Alexstraszite Cluster
 			i(198683),	-- Treated Hides
-			i(198684),	-- Miniature Bronze Dragonflight Banner
 			i(198685),	-- Well Insulated Mug
 			i(198686),	-- Frosted Parchment
 			i(198687),	-- Closely Guarded Shiny
-			i(198689),	-- Stormbound Horn
 			i(198690),	-- Decayed Scales
-			i(198692),	-- Noteworthy Scrap of Carpet
 			i(198693),	-- Dusty Darkmoon Card
-			i(198694),	-- Enriched Earthen Shard
 			i(198697),	-- Contraband Concoction
-			i(198699),	-- Mysterious Banner
-			i(198702),	-- Itinerant Singed Fabric
 			i(198703),	-- Sign Language Reference Sheet
 			i(198704),	-- Pulsing Earth Rune
 			i(198710),	-- Canteen of Suspicious Water
 			i(198712),	-- Firewater Powder Sample
 			i(198789),	-- Intact Coil Capacitor
 			i(198791),	-- Glimmer of Blacksmithing Wisdom
-			i(198798),	-- Flashfrozen Scroll
-			i(198799),	-- Forgotten Arcane Tome
 			i(198800),	-- Fractured Titanic Sphere
 			i(199115),	-- Herbalism Field Notes
 			i(199122),	-- Mining Field Notes
@@ -546,14 +536,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(200638),	-- Bubblefilled Flounder
 			i(198656),	-- Painter's Pretty Jewel
 			i(201003),	-- Furry Gloop
-			i(201012),	-- Enchanted Debris
-			i(201013),	-- Faintly Enchanted Remains
 			i(201014),	-- Boomthyr Rocket
 			i(201015),	-- Counterfeit Darkmoon Deck
 			i(201016),	-- Harmonic Crystal Harmonizer
 			i(201017),	-- Igneous Gem
-			i(201019),	-- Ancient Dragonweave Bolt
-			i(201020),	-- Silky Surprise
 			i(201360),	-- Glimmer of Order
 			i(201361),	-- Primal Inspiration
 
@@ -752,7 +738,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(202094),	-- Maruuk Centaur Insignia
 			-- Fishing
 			i(199696),	-- Iskaaran Ice Axe
-			i(199849),	-- Dense Draconium Net Weight
 			i(200077),	-- Wooden Pole
 		}),
 		------------- PROBABLY NYI ---------------------

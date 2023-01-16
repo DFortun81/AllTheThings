@@ -442,6 +442,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			o(380611, {	-- Canteen of Suspicious Water
+				["description"] = "Inside cave.",
 				["questID"] = 70305,
 				["coord"] = { 79.2, 83.8, OHNAHRAN_PLAINS },
 				["g"] = {
@@ -453,6 +454,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Grab and drop a Docile Cub in each of these, then you can collect the treasure.",
 				["questID"] = 70278,
 				["coord"] = { 55.2, 30.5, THALDRASZUS },
+				["crs"] = 194855,	-- Docile Cub
 				["g"] = {
 					i(201003),	-- Furry Gloop
 				},
@@ -889,6 +891,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 			o(380643, {	-- Flashfrozen Scroll
+				["description"] = "Currently non-interactible. Requires enabling 'Enable Interact Key' and keybinding 'Interact with Mouseover' to loot this.",
 				["questID"] = 70320,
 				["coord"] = { 57.5, 83.6, THE_WAKING_SHORES },
 				["g"] = {
@@ -904,7 +907,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			o(380600, {	-- Enriched Earthen Shard
 				["questID"] = 70298,
-				["coord"] = { 21.0, 45.0, THE_AZURE_SPAN },
+				["coord"] = { 21.6, 45.5, THE_AZURE_SPAN },
 				["g"] = {
 					i(198694),	-- Enriched Earthen Shard
 				},
@@ -919,6 +922,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			o(380589, {	-- Faintly Enchanted Remains
 				["questID"] = 70290,
 				["coord"] = { 45.1, 61.2, THE_AZURE_SPAN },
+				["crs"] = { 194882 },	-- Enchanted Crystaline Construct
 				["g"] = {
 					i(201013),	-- Faintly Enchanted Remains
 				},
@@ -2370,7 +2374,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 			}),
 			o(380549, {	-- Intriguing Bolt of Blue Cloth
 				["questID"] = 70267,
-				["coord"] = { 40.7, 54.5, THE_AZURE_SPAN },
+				["coord"] = { 40.7, 54.9, THE_AZURE_SPAN },
 				["g"] = {
 					i(198662),	-- Intriguing Bolt of Blue Cloth
 				},
@@ -2386,6 +2390,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["description"] = "Interact with the Catnip Frond, gather 5 Catnip Leaves and throw them at the Playful Prowler. Then the treasure will appear.",
 				["questID"] = 70303,
 				["coord"] = { 66.1, 52.9, OHNAHRAN_PLAINS },
+				["crs"] = { 194873 },	-- Playful Prowler
 				["g"] = {
 					i(201020),	-- Silky Surprise
 				},
