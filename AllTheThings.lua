@@ -389,6 +389,7 @@ FunctionRunner.SetPerFrame = function(count, instant)
 		FunctionRunner.Run(SetPerFrame, count);
 	end
 end
+FunctionRunner.Reset = Reset; -- for testing
 
 app.FunctionRunner = FunctionRunner;
 end
@@ -5263,18 +5264,12 @@ local function DetermineCraftedGroups(group)
 end
 local function DetermineSymlinkGroups(group)
 	if group.sym then
-		-- groups which are being filled in a Window can be done async
-		if isInWindow then
-			-- app.PrintDebug("DSG-Async",group.hash);
-			app.FillSymlinkAsync(group);
-		else
-			-- app.PrintDebug("DSG-Now",group.hash);
-			local groups = ResolveSymbolicLink(group);
-			-- make sure this group doesn't waste time getting resolved again somehow
-			group.sym = nil;
-			-- app.PrintDebug("DetermineSymlinkGroups",group.hash,groups and #groups);
-			return groups;
-		end
+		-- app.PrintDebug("DSG-Now",group.hash);
+		local groups = ResolveSymbolicLink(group);
+		-- make sure this group doesn't waste time getting resolved again somehow
+		group.sym = nil;
+		-- app.PrintDebug("DetermineSymlinkGroups",group.hash,groups and #groups);
+		return groups;
 	end
 end
 local NPCExpandHeaders = {
@@ -5297,26 +5292,30 @@ local function DetermineNPCDrops(group)
 				-- can only fill npc groups for the npc which match the difficultyID
 				local headerID, groups;
 				for _,npcGroup in pairs(npcGroups) do
-					headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
-					-- where headerID is allowed and the nested difficultyID matches
-					if headerID and NPCExpandHeaders[headerID] and app.RecursiveFirstParentWithFieldValue(npcGroup, "difficultyID", difficultyID) then
-						-- copy the header under the NPC groups
-						-- app.PrintDebug("Fill under",headerID)
-						if groups then tinsert(groups, CreateObject(npcGroup))
-						else groups = { CreateObject(npcGroup) }; end
+					if npcGroup.hash ~= group.hash then
+						headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
+						-- where headerID is allowed and the nested difficultyID matches
+						if headerID and NPCExpandHeaders[headerID] and app.RecursiveFirstParentWithFieldValue(npcGroup, "difficultyID", difficultyID) then
+							-- copy the header under the NPC groups
+							-- app.PrintDebug("NPCDrops Diff",difficultyID,group.hash,"<==",npcGroup.hash)
+							if groups then tinsert(groups, CreateObject(npcGroup))
+							else groups = { CreateObject(npcGroup) }; end
+						end
 					end
 				end
 				return groups;
 			else
 				local headerID, groups;
 				for _,npcGroup in pairs(npcGroups) do
-					headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
-					-- where headerID is allowed
-					if headerID and NPCExpandHeaders[headerID] then
-						-- copy the header under the NPC groups
-						-- app.PrintDebug("Fill under",group.hash)
-						if groups then tinsert(groups, CreateObject(npcGroup))
-						else groups = { CreateObject(npcGroup) }; end
+					if npcGroup.hash ~= group.hash then
+						headerID = npcGroup.headerID or GetRelativeValue(npcGroup, "headerID");
+						-- where headerID is allowed
+						if headerID and NPCExpandHeaders[headerID] then
+							-- copy the header under the NPC groups
+							-- app.PrintDebug("NPCDrops",group.hash,"<==",npcGroup.hash)
+							if groups then tinsert(groups, CreateObject(npcGroup))
+							else groups = { CreateObject(npcGroup) }; end
+						end
 					end
 				end
 				return groups;
@@ -5326,6 +5325,7 @@ local function DetermineNPCDrops(group)
 end
 -- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
 local function FillGroupsRecursive(group, depth)
+	-- app.PrintDebug("FillGroups",group.hash,depth)
 	-- increment depth if things are being nested
 	depth = (depth or 0) + 1;
 	local groups;
@@ -5336,7 +5336,9 @@ local function FillGroupsRecursive(group, depth)
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group));
 
-	-- app.PrintDebug("MergeResults",group.hash,groups and #groups)
+	-- if groups and #groups > 0 then
+	-- 	app.PrintDebug("FillGroups-MergeResults",group.hash,groups and #groups)
+	-- end
 	-- Adding the groups normally based on available-source priority
 	PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
 
@@ -5356,6 +5358,7 @@ end
 -- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FunctionRunner to recursively follow the next layer of groups
 -- over multiple frames to reduce stutter
 local function FillGroupsRecursiveAsync(group, depth)
+	-- app.PrintDebug("FillGroupsAsync",group.hash,depth)
 	-- do not fill 'saved' groups in ATT windows
 	-- or groups directly under saved groups unless in Acct or Debug mode
 	if not app.MODE_DEBUG_OR_ACCOUNT then
@@ -5376,7 +5379,9 @@ local function FillGroupsRecursiveAsync(group, depth)
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group));
 
-	-- app.PrintDebug("MergeResults",group.hash,groups and #groups)
+	-- if groups and #groups > 0 then
+	-- 	app.PrintDebug("FillGroupsAsync-MergeResults",group.hash,groups and #groups)
+	-- end
 	-- Adding the groups normally based on available-source priority
 	PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
 	if #groups > 0 then
@@ -5410,9 +5415,8 @@ app.FillGroups = function(group)
 
 	-- Fill the group with all nestable content
 	if isInWindow then
-		-- 50 seems pretty good for time vs. stutter possibility
 		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
-		app.FunctionRunner.SetPerFrame(50);
+		app.FunctionRunner.SetPerFrame(25);
 		app.FunctionRunner.Run(FillGroupsRecursiveAsync, group);
 	else
 		FillGroupsRecursive(group);
