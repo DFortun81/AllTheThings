@@ -591,7 +591,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 					["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },
 				}),
 			}),
-			d(LFR_RAID, {
+			d(LFR_RAID, bubbleDown({ ["timeline"] = REMOVED_DF_REL }, { 
 				n(ZONE_DROPS, {
 					i(190629),	-- Cartel's Larcenous Toecaps
 					i(190630),	-- Devouring Pellicle Shoulderpads
@@ -894,7 +894,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_SL_S3 } }, {
 						},
 					}),
 				}),
-			}),
+			})),
 			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(65764, {	-- Sepulcher of the First Ones - Heavy is the Crown
