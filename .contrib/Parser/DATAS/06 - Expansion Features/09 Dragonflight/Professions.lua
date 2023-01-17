@@ -1056,6 +1056,47 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(387246),	-- Zapthrottle Soul Inhaler
 				},
 			}),
+			n(-1144, {	-- Weekly Profession Knowledge
+				q(74111, {	-- Inscription Order: Engineering
+					["name"] = "Inscription Order: Engineering",
+					["description"] = "Requires a crafting order from Inscription.",
+					["provider"] = { "i", 198510 },	-- Draconic Treatise on Engineering
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66379, {	-- Weekly Engineering Knowledgepoint #1
+					["name"] = "Engineering Treasure #1",
+					["provider"] = { "i", 193902 },	-- Eroded Titan Gizmo
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66380, {	-- Weekly Engineering Knowledgepoint #2
+					["name"] = "Engineering Treasure #2",
+					["provider"] = { "i", 193903 },	-- Watcher Power Core
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70517, {	-- Weekly Engineering Knowledgepoint #3
+					["name"] = "Engineering Drop #1: Dragon-esque",
+					["description"] = "Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the mobs closest to Valdrakken.",
+					["crs"] = { 194656 },	-- Reservoir Dapple
+					["coord"] = { 49.4, 62.6, THALDRASZUS },
+					["provider"] = { "i", 198970 },		-- Infinitely Attachable Pair o' Docks
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70516, {	-- Weekly Engineering Knowledgepoint #4
+					["name"] = "Engineering Drop #2: Tyrhold Ancient",
+					["description"] = "Drops from any Tyrhold-esque mob.\nCoordinates link to Tyrhold where almost any mob can drop it.",
+					["crs"] = { 193244 },	-- Titan Defense Matrix
+					["coord"] = { 57.2, 60.4, THALDRASZUS },
+					["provider"] = { "i", 198969 },		-- Keeper's Mark
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+			}),
 			q(72242, {	-- Dragon Isles Engineering
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -1183,39 +1224,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Engineering",
 				["provider"] = { "n", 194838 },	-- Frizz Buzzcrank
 				["coord"] = { 17.7, 21.6, THE_AZURE_SPAN },
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(74111, {	-- Inscription Order: Engineering
-				["name"] = "Inscription Order: Engineering",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 198510 },	-- Draconic Treatise on Engineering
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66379, {	-- Weekly Engineering Knowledgepoint #1
-				["name"] = "Weekly Engineering Knowledgepoint #1",
-				["provider"] = { "i", 193902 },	-- Eroded Titan Gizmo
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66380, {	-- Weekly Engineering Knowledgepoint #2
-				["name"] = "Weekly Engineering Knowledgepoint #2",
-				["provider"] = { "i", 193903 },	-- Watcher Power Core
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70517, {	-- Weekly Engineering Knowledgepoint #3
-				["name"] = "Weekly Engineering Knowledgepoint #3",
-				["provider"] = { "i", 198970 },		-- Infinitely Attachable Pair o' Docks
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70516, {	-- Weekly Engineering Knowledgepoint #4
-				["name"] = "Weekly Engineering Knowledgepoint #4",
-				["provider"] = { "i", 198969 },		-- Keeper's Mark
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		})),
