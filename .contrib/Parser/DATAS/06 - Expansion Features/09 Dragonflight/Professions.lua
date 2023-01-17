@@ -345,8 +345,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(70504, {	-- Weekly Alchemy Knowledgepoint #3
-					["name"] = "Alchemy Drop #1: Decayed Mobs",
-					["description"] = "Drops from any Decayed Mobs.\nCoordinates link to the mobs we found best.",
+					["name"] = "Alchemy Drop #1: Decayed",
+					["description"] = "Drops from any Decayed Mob.\nCoordinates link to the mobs we found best.",
 					["crs"] = { 186361 },	-- Rotting Treant
 					["coord"] = { 18.6, 38.4, THE_AZURE_SPAN },
 					["provider"] = { "i", 198963 },		-- Decaying Phlegm
@@ -355,8 +355,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(70511, {	-- Weekly Alchemy Knowledgepoint #4
-					["name"] = "Alchemy Drop #2: Elemental Mobs",
-					["description"] = "Drops from any Elementals.\nCoordinates link to the mobs we found best.",
+					["name"] = "Alchemy Drop #2: Elemental",
+					["description"] = "Drops from any Elemental.\nCoordinates link to the mobs we found best.",
 					["crs"] = { 195092 },	-- Hydraulic Eroder
 					["coord"] = { 50.2, 59.6, THALDRASZUS },
 					["provider"] = { "i", 198964 },		-- Elementious Splinter
@@ -574,8 +574,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(70513, {	-- Weekly Blacksmithing Knowledgepoint #3
-					["name"] = "Blacksmithing Drop #1: Fire Elementals",
-					["description"] = "Drops from any Fire Elementals.\nCoordinates link to the mobs we found best.",
+					["name"] = "Blacksmithing Drop #1: Fire Elemental",
+					["description"] = "Drops from any Fire Elemental.\nCoordinates link to the mobs we found best.",
 					["crs"] = { 196168 },	-- Springs Heater
 					["coord"] = { 39.0, 48.8, THALDRASZUS },
 					["provider"] = { "i", 198966 },	-- Molten Globule
@@ -583,8 +583,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(70512, {	-- Weekly Blacksmithing Knowledgepoint #4
-					["name"] = "Blacksmithing Drop #2: Earth Elementals",
-					["description"] = "Drops from any Earth Elementals.\nCoordinates link to the mobs we found best.",
+					["name"] = "Blacksmithing Drop #2: Earth Elemental",
+					["description"] = "Drops from any Earth Elemental.\nCoordinates link to the mobs we found best.",
 					["crs"] = { 194212 },	-- Unleashed Rubble
 					["coord"] = { 50.6, 59.4, THALDRASZUS },
 					["provider"] = { "i", 198965 },		-- Primeval Earth Fragment
@@ -845,8 +845,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(70515, {	-- Weekly Enchanting Knowledgepoint #3
-					["name"] = "Enchanting Drop #1: Primalist mobs",
-					["description"] = "Drops from any Primalist mobs.\nCoordinates link to the mobs we found best.",
+					["name"] = "Enchanting Drop #1: Primalist",
+					["description"] = "Drops from any mob with Primalist in the name.\nCoordinates link to the mobs we found best.",
 					["crs"] = { 194656 },	-- Primalist Surgecrusher
 					["coord"] = { 53.4, 56.2, THALDRASZUS },
 					["provider"] = { "i", 198968 },	-- Primalist Charm
@@ -854,8 +854,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["collectible"] = true,	-- Don't remove until we have proper tracking
 				}),
 				q(70514, {	-- Weekly Enchanting Knowledgepoint #4
-					["name"] = "Enchanting Drop #2: Arcane Elementals",
-					["description"] = "Drops from any Arcane Elementals.\nCoordinates link to the mobs we found best.",
+					["name"] = "Enchanting Drop #2: Arcane Elemental",
+					["description"] = "Drops from any Arcane Elemental.\nCoordinates link to the mobs we found best.",
 					["crs"] = { 181536 },	-- Destabilized Elemental
 					["coord"] = { 40.6, 60.8, THE_AZURE_SPAN },
 					["provider"] = { "i", 198967 },	-- Primordial Aether
