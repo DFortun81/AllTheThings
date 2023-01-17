@@ -1665,7 +1665,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(374458),	-- Zen Neltharite
 				},
 			}),
-			4
+			n(-1144, {	-- Weekly Profession Knowledge
 				q(74112, {	-- Inscription Order: Jewelcrafting
 					["name"] = "Inscription Order: Jewelcrafting",
 					["description"] = "Requires a crafting order from Inscription.",
