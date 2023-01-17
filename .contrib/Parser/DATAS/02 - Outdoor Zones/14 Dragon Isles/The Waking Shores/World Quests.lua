@@ -50,10 +50,13 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					["coord"] = { 78.1, 31.6, THE_WAKING_SHORES }
 				}),
 				q(70172, {	-- Mountain Mysteries
-					-- ["coord"] = { 49.3, 53.4, THE_WAKING_SHORES }
+					["coord"] = { 49.3, 53.4, THE_WAKING_SHORES }
 				}),
 				q(70012, {	-- Protect the Nets!
 					["coord"] = { 55.6, 58.3, THE_WAKING_SHORES },
+				}),
+				q(67024, {	-- Smoldering Reinforcement
+					["coord"] = { 53.9, 27.0, THE_WAKING_SHORES },
 				}),
 				q(70651, {	-- Stolen Luggage
 					["coord"] = { 61.6, 49.5, THE_WAKING_SHORES },

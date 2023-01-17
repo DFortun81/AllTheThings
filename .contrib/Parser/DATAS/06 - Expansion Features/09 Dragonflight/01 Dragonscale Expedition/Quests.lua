@@ -480,6 +480,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 192967 },	-- Toddy Whiskers
 				["coord"] = { 54.4, 55.5, THALDRASZUS },
 			}),
+			q(69888, {	-- Unusual Suspects
+				["minReputation"] = { 2507, 24 },	-- Dragonscale Expedition Renown 24
+				["sourceQuests"] = { 66547 },	-- It Belongs in a Museum... Eventually
+				["provider"] = { "n", 187276 },	-- Toddy Whiskers
+				["coord"] = { 47.2, 82.7, THE_WAKING_SHORES },
+				["description"] = "This quest will become available on the next weekly reset after completing |cffffff00It Belongs in a Museum... Eventually|r.",
+				["g"] = {
+					i(201782),	-- Tyr's Blessing
+				},
+			}),
 				-- RENOWN 25 --
 			q(70834, {	-- Titled Story
 				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renown 25
