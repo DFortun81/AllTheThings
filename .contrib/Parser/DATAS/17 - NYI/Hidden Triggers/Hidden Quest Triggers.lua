@@ -593,13 +593,21 @@ root("HiddenQuestTriggers", {
 
 		--	Jani
 		q(50311),	-- give Jani the Golden Ravasaur Egg in Zuldazar
+		q(50308),	-- Golden Ravasaur Egg for Get Hek'd
 		q(50430),	-- give Jani the Feathered Viper Scale in Zuldazar
+		q(50431),	-- Feathered Viper Scale for Get Hek'd
 		q(50884),	-- give Jani the Charged Ranishu Antennae in Vol'dun
+		q(50883),	-- Charged Ranishu Antennae for Get Hek'd
 		q(50889),	-- give Jani the Polished Ringhorn Hoof in Vol'dun
+		q(50890),	-- Polished Ringhorn Hoof for Get Hek'd
 		q(50891),	-- give Jani the Sturdy Redrock Jaw in Vol'dun
+		q(50892),	-- Sturdy Redrock Jaw for Get Hek'd
 		q(50440),	-- give Jani the Nazwathan Relic in Nazmir
+		q(50441),	-- Nazwathan Relic for Get Hek'd
 		q(50436),	-- give Jani the Snapjaw Tail in Nazmir
+		q(50437),	-- Snapjaw Tail for Get Hek'd
 		q(50434),	-- give Jani the Vilescale Pearl in Nazmir
+		q(50435),	-- Vilescale Pearl for Get Hek'd
 
 		--	Zones
 		--	Drustvar

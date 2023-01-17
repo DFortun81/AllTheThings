@@ -2293,6 +2293,7 @@ root("HiddenQuestTriggers", {
 			q(71992),	-- First Infurious Hochenblume
 			q(71993),	-- First Infurious Writhebark
 			q(71994),	-- First Infurious Bubble Poppy
+			q(72341),	-- First Infurious Saxifrage
 			q(72344),	-- First Overload Titan-Touched Herb
 			q(72348),	-- First Overload Infurious Herb
 			--

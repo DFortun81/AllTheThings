@@ -1493,16 +1493,3 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 	}),
 }));
-
-root("HiddenQuestTriggers", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
-	achcat(ACHIEVEMENT_CATEGORY_BATTLE_FOR_AZEROTH_EXP, {
-		q(50308),	-- Golden Ravasaur Egg for Get Hek'd
-		q(50435),	-- Vilescale Pearl for Get Hek'd
-		q(50883),	-- Charged Ranishu Antennae for Get Hek'd
-		q(50437),	-- Snapjaw Tail for Get Hek'd
-		q(50890),	-- Polished Ringhorn Hoof for Get Hek'd
-		q(50892),	-- Sturdy Redrock Jaw for Get Hek'd
-		q(50441),	-- Nazwathan Relic for Get Hek'd
-		q(50431),	-- Feathered Viper Scale for Get Hek'd
-	}),
-}));
