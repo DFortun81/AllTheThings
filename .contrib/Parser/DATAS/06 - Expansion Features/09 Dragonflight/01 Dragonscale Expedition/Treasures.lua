@@ -4,6 +4,7 @@
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		n(TREASURES, {
+			["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 			["g"] = {
 				i(199061, {	-- A Guide to Rare Fish
 					["questID"] = 70527,
@@ -85,7 +86,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["requireSkill"] = TAILORING,
 				}),	
 				o(383735, {	-- Disturbed Dirt (all 5 of them)
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
 						--[[ Symlink makes your numbers go crazy
 						["sym"] = {
@@ -107,7 +108,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 				o(376587, {	-- Expedition Scout's Pack
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					-- No coords. Wowhead has literally over 1,000 coords for it
 					["g"] = {
 						--[[ Symlink makes your numbers go crazy
@@ -147,7 +148,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 				}),
 				o(376426, {	-- Magic-Bound Chest
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
 						--[[ Symlink makes your numbers go crazy
 						["sym"] = {
