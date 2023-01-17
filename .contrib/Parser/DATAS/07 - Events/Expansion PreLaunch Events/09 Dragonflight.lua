@@ -104,13 +104,13 @@ root("WorldEvents", n(-520,	-- Expansion Prelaunch Events
 				{ 55.6, 12.4, DUROTAR },
 			},
 			["groups"] = {
+				i(199337, {	-- Bag of Furious Winds (TOY!)
+					["cost"] = {{ "i", PRIMEVAL_ESSENCE, 100 }}
+				}),
+				i(202188, {	-- Storm-Battered Reagent Bag
+					["cost"] = {{ "i", PRIMEVAL_ESSENCE, 5 }}
+				}),
 				n(ARMOR, {
-					i(202188, {	-- Storm-Battered Reagent Bag
-						["cost"] = {{ "i", PRIMEVAL_ESSENCE, 5 }}
-					}),
-					i(199337, {	-- Bag of Furious Winds (TOY!)
-						["cost"] = {{ "i", PRIMEVAL_ESSENCE, 100 }}
-					}),
 					i(199382, {	-- Catastrophe Signet
 						["cost"] = {{ "i", PRIMEVAL_ESSENCE, 25 }}
 					}),

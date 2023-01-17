@@ -270,8 +270,18 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201359), -- Glimmer of Earth
 				},
 			}),
+			n(HEIRLOOMS, {
+				i(199686, {	-- Unstable Elemental Confluence
+					["cost"] = {
+						{ "i", 199837, 1 },	-- 1x Dimmed Primeval Earth
+						{ "i", 199836, 1 },	-- 1x Dimmed Primeval Fire
+						{ "i", 199838, 1 },	-- 1x Dimmed Primeval Storm
+						{ "i", 199839, 1 },	-- 1x Dimmed Primeval Water
+					},
+				}),
+			}),
 			n(SPECIAL, {
-				-- TODO: these actually are not realted to Primal Storms. maybe will move to Exp Features > Professions > Special
+				-- TODO: these actually are not related to Primal Storms. maybe will move to Exp Features > Professions > Special
 				i(200932, {	-- Encaged Airy Soul
 					["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while casting Zapthrottle Soul Inhaler.\n\nOnce you receive the soul. Do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 					["cost"] = {
@@ -392,6 +402,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					},
 					["questID"] = 73995,
 					["g"] = {
+						i(199337),	-- Bag of Furious Winds (TOY!)
 						i(200180),	-- Crystallized Lightning Staff
 					},
 				}),
@@ -427,6 +438,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 26.8, 75.4, THE_WAKING_SHORES },
 					["questID"] = 74007,
 					["g"] = {
+						i(199337),	-- Bag of Furious Winds (TOY!)
 						i(200170),	-- Stormbringer Bow
 					},
 				}),
@@ -462,6 +474,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 53.4, 26.2, PRIMALIST_TOMORROW },
 					["questID"] = 74022,
 					["g"] = {
+						i(199337),	-- Bag of Furious Winds (TOY!)
 						i(200741),	-- Pipspark's Prestigious Pendant of Protection
 					},
 				}),
@@ -469,6 +482,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					["coord"] = { 27.7, 72.6, THE_WAKING_SHORES },
 					["questID"] = 74038,
 					["g"] = {
+						i(199337),	-- Bag of Furious Winds (TOY!)
 						i(200439),	-- Earthpact Scepter
 						i(200136),	-- Monsoonic Armguards
 					},
