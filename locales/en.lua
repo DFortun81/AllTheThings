@@ -1424,6 +1424,7 @@ app.L = {
 		[-1141] = "Interface\\Icons\\inv_artifact_dragonscales",									-- Siege on Dragonbane Keep
 		[-1142] = "Interface\\Icons\\inv_checkered_flag",											-- Aerial Challenges
 		[-1143] = 237274,																			-- Every 2 Hours Rare
+		[-1144] = "Interface\\Icons\\inv_scroll_11",												-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1982,6 +1983,7 @@ app.L = {
 		[-1141] = GetSpellInfo(388945),												-- Siege on Dragonbane Keep
 		[-1142] = "Aerial Challenges",												-- Aerial Challenges
 		[-1143] = "Every 2 Hours Rare",												-- Every 2 Hours Rare
+		[-1144] = "Weekly Profession Knowledge",									-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",

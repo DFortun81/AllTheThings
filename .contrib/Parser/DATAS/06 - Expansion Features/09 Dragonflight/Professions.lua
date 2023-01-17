@@ -322,6 +322,49 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(370714),	-- Transmute: Decay to Elements
 				},
 			}),
+			n(-1144, {	-- Weekly Profession Knowledge
+				q(74108, {	-- Inscription Order: Alchemy
+					["name"] = "Inscription Order: Alchemy",
+					["description"] = "Requires a crafting order from Inscription.",
+					["provider"] = { "i", 194697 },	-- Draconic Treatise on Alchemy
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66373, {	-- Weekly Alchemy Knowledgepoint #1
+					["name"] = "Alchemy Treasure #1",
+					["provider"] = { "i", 193891 },		-- Experimental Substance
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66374, {	-- Weekly Alchemy Knowledgepoint #2
+					["name"] = "Alchemy Treasure #2",
+					["provider"] = { "i", 193897 },		-- Reawakened Catalyst
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70504, {	-- Weekly Alchemy Knowledgepoint #3
+					["name"] = "Alchemy Drop #1: Decayed Mobs",
+					["description"] = "Drops from any Decayed Mobs.\nCoordinates link to the mobs we found best.",
+					["crs"] = { 186361 },	-- Rotting Treant
+					["coord"] = { 18.6, 38.4, THE_AZURE_SPAN },
+					["provider"] = { "i", 198963 },		-- Decaying Phlegm
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70511, {	-- Weekly Alchemy Knowledgepoint #4
+					["name"] = "Alchemy Drop #2: Elemental Mobs",
+					["description"] = "Drops from any Elemental Mobs.\nCoordinates link to the mobs we found best.",
+					["crs"] = { 195092 },	-- Hydraulic Eroder
+					["coord"] = { 50.2, 59.6, THALDRASZUS },
+					["provider"] = { "i", 198964 },		-- Elementious Splinter
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+			}),
 			q(70355, {	-- Dragon Isles Alchemy [A]
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -471,41 +514,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Alchemy",
 				["provider"] = { "n", 194829 },	-- Grigori Vialtry
 				["coord"] = { 60.9, 75.8, THE_WAKING_SHORES },
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(74108, {	-- Inscription Order: Alchemy
-				["name"] = "Inscription Order: Alchemy",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 194697 },	-- Draconic Treatise on Alchemy
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66373, {	-- Weekly Alchemy Knowledgepoint #1
-				["name"] = "Weekly Alchemy Knowledgepoint #1",
-				["provider"] = { "i", 193891 },		-- Experimental Substance
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70511, {	-- Weekly Alchemy Knowledgepoint #2
-				["name"] = "Weekly Alchemy Knowledgepoint #2",
-				["provider"] = { "i", 198964 },		-- Elementious Splinter
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70504, {	-- Weekly Alchemy Knowledgepoint #3
-				["name"] = "Weekly Alchemy Knowledgepoint #3",
-				["provider"] = { "i", 198963 },		-- Decaying Phlegm
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66374, {	-- Weekly Alchemy Knowledgepoint #4
-				["name"] = "Weekly Alchemy Knowledgepoint #4",
-				["provider"] = { "i", 193897 },		-- Reawakened Catalyst
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		})),
