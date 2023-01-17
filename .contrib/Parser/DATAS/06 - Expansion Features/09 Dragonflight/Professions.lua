@@ -356,7 +356,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				}),
 				q(70511, {	-- Weekly Alchemy Knowledgepoint #4
 					["name"] = "Alchemy Drop #2: Elemental Mobs",
-					["description"] = "Drops from any Elemental Mobs.\nCoordinates link to the mobs we found best.",
+					["description"] = "Drops from any Elementals.\nCoordinates link to the mobs we found best.",
 					["crs"] = { 195092 },	-- Hydraulic Eroder
 					["coord"] = { 50.2, 59.6, THALDRASZUS },
 					["provider"] = { "i", 198964 },		-- Elementious Splinter
@@ -553,6 +553,46 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(365729),	-- Primal Molten Warglaive
 				},
 			}),
+			n(-1144, {	-- Weekly Profession Knowledge
+				q(74109, {	-- Inscription Order: Blacksmith
+					["name"] = "Inscription Order: Blacksmith",
+					["description"] = "Requires a crafting order from Inscription.",
+					["provider"] = { "i", 198454 },	-- Draconic Treatise on Blacksmith
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66381, {	-- Weekly Blacksmithing Knowledgepoint #1
+					["name"] = "Blacksmithing Treasure #1",
+					["provider"] = { "i", 192131 },	-- Valdrakken Weapon Chain
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66382, {	-- Weekly Blacksmithing Knowledgepoint #2
+					["name"] = "Blacksmithing Treasure #2",
+					["provider"] = { "i", 192132 },	-- Draconium Blade Sharpener
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70513, {	-- Weekly Blacksmithing Knowledgepoint #3
+					["name"] = "Blacksmithing Drop #1: Fire Elementals",
+					["description"] = "Drops from any Fire Elementals.\nCoordinates link to the mobs we found best.",
+					["crs"] = { 196168 },	-- Springs Heater
+					["coord"] = { 39.0, 48.8, THALDRASZUS },
+					["provider"] = { "i", 198966 },	-- Molten Globule
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70512, {	-- Weekly Blacksmithing Knowledgepoint #4
+					["name"] = "Blacksmithing Drop #2: Earth Elementals",
+					["description"] = "Drops from any Earth Elementals.\nCoordinates link to the mobs we found best.",
+					["crs"] = { 194212 },	-- Unleashed Rubble
+					["coord"] = { 50.6, 59.4, THALDRASZUS },
+					["provider"] = { "i", 198965 },		-- Primeval Earth Fragment
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+			}),
 			q(70358, {	-- Dragon Isles Blacksmithing
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -734,38 +774,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 43.2, 66.6, THE_WAKING_SHORES },
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(74109, {	-- Inscription Order: Blacksmith
-				["name"] = "Inscription Order: Blacksmith",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 198454 },	-- Draconic Treatise on Blacksmith
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66381, {	-- Weekly Blacksmithing Knowledgepoint #1
-				["name"] = "Weekly Blacksmithing Knowledgepoint #1",
-				["provider"] = { "i", 192131 },	-- Valdrakken Weapon Chain
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66382, {	-- Weekly Blacksmithing Knowledgepoint #2
-				["name"] = "Weekly Blacksmithing Knowledgepoint #2",
-				["provider"] = { "i", 192132 },	-- Draconium Blade Sharpener
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70513, {	-- Weekly Blacksmithing Knowledgepoint #3
-				["name"] = "Weekly Blacksmithing Knowledgepoint #3",
-				["provider"] = { "i", 198966 },	-- Molten Globule
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70512, {	-- Weekly Blacksmithing Knowledgepoint #4
-				["name"] = "Weekly Blacksmithing Knowledgepoint #4",
-				["provider"] = { "i", 198965 },		-- Primeval Earth Fragment
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
 		})),
 		prof(COOKING, sharedData({
 			["requireSkill"] = COOKING,
@@ -815,6 +823,45 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(389558),	-- Wafting Devotion
 					r(389410),	-- Waking Stats
 				},
+			}),
+			n(-1144, {	-- Weekly Profession Knowledge
+				q(74110, {	-- Inscription Order: Enchanting
+					["name"] = "Inscription Order: Enchanting",
+					["description"] = "Requires a crafting order from Inscription.",
+					["provider"] = { "i", 194702 },	-- Draconic Treatise on Enchanting
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66377, {	-- Weekly Enchanting Knowledgepoint #1
+					["name"] = "Enchanting Treasure #1",
+					["provider"] = { "i", 193900 },	-- Prismatic Focusing Shard
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66378, {	-- Weekly Enchanting Knowledgepoint #2
+					["name"] = "Enchanting Treasure #2",
+					["provider"] = { "i", 193901 },	-- Primal Dust
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70515, {	-- Weekly Enchanting Knowledgepoint #3
+					["name"] = "Enchanting Drop #1: Primalist mobs",
+					["description"] = "Drops from any Primalist mobs.\nCoordinates link to the mobs we found best.",
+					["crs"] = { 194656 },	-- Primalist Surgecrusher
+					["coord"] = { 53.4, 56.2, THALDRASZUS },
+					["provider"] = { "i", 198968 },	-- Primalist Charm
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70514, {	-- Weekly Enchanting Knowledgepoint #4
+					["name"] = "Enchanting Drop #2: Arcane Elementals",
+					["description"] = "Drops from any Arcane Elementals.\nCoordinates link to the mobs we found best.",
+					["crs"] = { 181536 },	-- Destabilized Elemental
+					["coord"] = { 40.6, 60.8, THE_AZURE_SPAN },
+					["provider"] = { "i", 198967 },	-- Primordial Aether
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
 			}),
 			q(70360, {	-- Dragon Isles Enchanting
 				["sourceQuests"] = {
@@ -978,37 +1025,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Enchanting",
 				["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
 				["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(74110, {	-- Inscription Order: Enchanting
-				["name"] = "Inscription Order: Enchanting",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 194702 },	-- Draconic Treatise on Enchanting
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70515, {	-- Weekly Enchanting Knowledgepoint #1
-				["name"] = "Weekly Enchanting Knowledgepoint #1",
-				["provider"] = { "i", 198968 },	-- Primalist Charm
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66377, {	-- Weekly Enchanting Knowledgepoint #2
-				["name"] = "Weekly Enchanting Knowledgepoint #2",
-				["provider"] = { "i", 193900 },	-- Prismatic Focusing Shard
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66378, {	-- Weekly Enchanting Knowledgepoint #3
-				["name"] = "Weekly Enchanting Knowledgepoint #3",
-				["provider"] = { "i", 193901 },	-- Primal Dust
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70514, {	-- Weekly Enchanting Knowledgepoint #4
-				["name"] = "Weekly Enchanting Knowledgepoint #4",
-				["provider"] = { "i", 198967 },	-- Primordial Aether
-				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		})),

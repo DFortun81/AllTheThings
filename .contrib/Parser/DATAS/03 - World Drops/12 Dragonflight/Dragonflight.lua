@@ -47,20 +47,14 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 },
 		prof(ALCHEMY, sharedData({ ["requireSkill"] = ALCHEMY, },{
 			i(198963),	-- Decaying Phlegm
 			i(198964),	-- Elementious Splinter
-			i(193891),	-- Experimental Substance
-			i(193897),	-- Reawakened Catalyst
 		})),
 		prof(BLACKSMITHING, sharedData({ ["requireSkill"] = BLACKSMITHING, },{
 			i(198966),	-- Molten Globule
 			i(198965),	-- Primeval Earth Fragment
-			i(192131),	-- Valdrakken Weapon Chain
-			i(192132),	-- Draconium Blade Sharpener
 		})),
 		prof(ENCHANTING, sharedData({ ["requireSkill"] = ENCHANTING, },{
 			i(198968),	-- Primalist Charm
 			i(198967),	-- Primordial Aether
-			i(193900),	-- Prismatic Focusing Shard
-			i(193901),	-- Primal Dust
 
 			-- Enchanting drops (disenchant items)
 			i(200947),	-- Carving of Awakening
@@ -75,32 +69,22 @@ root("WorldDrops", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_PRE2 },
 		prof(ENGINEERING, sharedData({ ["requireSkill"] = ENGINEERING, },{
 			i(198969),	-- Keeper's Mark
 			i(198970),	-- Infitely Attachable Pair o' Docks
-			i(193902),	-- Eroded Titan Gizmo
-			i(193903),	-- Watcher Power Core
 		})),
 		prof(INSCRIPTION, sharedData({ ["requireSkill"] = INSCRIPTION, },{
 			i(198972),	-- Draconic Glamour
-			i(193904),	-- Phoenix Feather Quill
 			i(198971),	-- Curious Djaradin Rune
-			i(193905),	-- Iskaaran Trading Ledger
 		})),
 		prof(JEWELCRAFTING, sharedData({ ["requireSkill"] = JEWELCRAFTING, },{
 			i(198974),	-- Elegantly Engraved Embellishment
 			i(198973),	-- Incandescent Curio
-			i(193909),	-- Ancient Gem Fragments
-			i(193907),	-- Chipped Tyrstone
 		})),
 		prof(LEATHERWORKING, sharedData({ ["requireSkill"] = LEATHERWORKING, },{
 			i(198976),	-- Exceedingly Soft Skin
 			i(198975),	-- Ossified Hide
-			i(193910),	-- Molted Dragon Scales
-			i(193913),	-- Preserved Animal Parts
 		})),
 		prof(TAILORING, sharedData({ ["requireSkill"] = TAILORING, },{
 			i(198978),	-- Stupidly Effective Stitchery
-			i(193898),	-- Umbral Bone Needle
 			i(198977),	-- Ohn'ahran Weave
-			i(193899),	-- Primalweave Spindle
 		})),
 	}),
 	filter(REAGENTS, {
