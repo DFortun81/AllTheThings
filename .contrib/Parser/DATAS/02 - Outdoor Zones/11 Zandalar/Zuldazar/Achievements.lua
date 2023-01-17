@@ -68,7 +68,77 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
-			ach(12944),		-- Adventurer of Zuldazar
+			ach(12944, {	-- Adventurer of Zuldazar
+				crit(1, {	-- Atal'zul Gotaka
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(2, {	-- Gahz'ralka
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(3, {	-- Dark Chronicler
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(4, {	-- Syrawon the Dominus
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(5, {	-- Zayoos
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(6, {	-- Lei-Zhi
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(7, {	-- Avatar of Xolotal
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(8, {	-- Bloodbulge
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(9, {	-- Torraske the Eternal
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(10, {	-- Kandak
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(11, {	-- Kul'krazahn
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(12, {	-- Golrakahn
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(13, {	-- Umbra'jin
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(14, {	-- Darkspeaker Jo'la
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(15, {	-- Hakbi the Risen
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(16, {	-- Vukuba
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(17, {	-- Warcrawler Karkithiss
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(18, {	-- Murderbeak
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(19, {	-- Daggerjaw
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(20, {	-- G'Naat
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(21, {	-- Kiboku
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(22, {	-- Bramblewing
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(23, {	-- Tambano
+					-- ["_npcs"] = { NPCID },
+				}),
+			}),
 			ach(13029, {	-- Eating Out of the Palm of My Tiny Hand
 				["collectible"] = false,
 				["g"] = {
@@ -84,6 +154,20 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						},
 					}),
 				},
+			}),
+			ach(12559, {	-- Explore Zuldazar
+				crit(1),		-- Atal'Dazar
+				crit(2),		-- Atal'Gral
+				crit(3),		-- Blood Gate
+				crit(4),		-- Dazar'alor
+				crit(5),		-- Dreadpearl Shallows
+				crit(6),		-- Garden of the Loa
+				crit(7),		-- Savagelands
+				crit(8),		-- The Sliver
+				crit(9),		-- Tusk Isle
+				crit(10),		-- Talanji's Rebuke
+				crit(11),		-- Xibala
+				crit(12),		-- Zeb'ahari
 			}),
 			petbattle(ach(13279, {	-- Family Battler
 				["collectible"] = false,

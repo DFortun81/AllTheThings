@@ -5,11 +5,125 @@
 root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(STORMSONG_VALLEY, {
 		n(ACHIEVEMENTS, {
-			ach(12940),		-- Adventurer of Stormsong Valley
+			ach(12940, {	-- Adventurer of Stormsong Valley
+				crit(1, {	-- Song Mistress Dadalea
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(2, {	-- Severus the Outcast
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(3, {	-- Seabreaker Skoloth
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(4, {	-- Sabertron
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(5, {	-- The Lichen King
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(6, {	-- Ragna
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(7, {	-- Slickspill
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(8, {	-- Broodmother
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(9, {	-- Galestorm
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(10, {	-- Whirlwing
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(11, {	-- Kickers
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(12, {	-- Foreman Scripps
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(13, {	-- Poacher Zane
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(14, {	-- Pinku'shon
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(15, {	-- Grimscowl the Harebrained
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(16, {	-- Deepfang
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(17, {	-- Croaker
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(18, {	-- Corrupted Pod
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(19, {	-- Crushtacean
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(20, {	-- Dagrus the Scorned
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(21, {	-- Vinespeaker Ratha
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(22, {	-- Strange Mushroom Ring
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(23, {	-- Haegol the Hammer
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(24, {	-- Squall
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(25, {	-- Ice Sickle
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(26, {	-- Captain Razorspine
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(27, {	-- Whiplash
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(28, {	-- Sister Absinthe
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(29, {	-- Wagga Snarltusk
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(30, {	-- Nestmother Acada
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(31, {	-- Osca the Bloodied
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(32, {	-- Sandfang
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(33, {	-- Taja the Tidehowler
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(34, {	-- Doc Marrtens | Jakala the Cruel
+					-- ["_npcs"] = { NPCID },
+				}),
+			}),
 			ach(13047),		-- Clever Use of Mechanical Explosives
 			ach(13053, {	-- Deadliest Cache
 				["sourceQuests"] = { 52130 },	-- Deadliest Cache: Carpe Diem
 				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(12558, {	-- Explore Stormsong Valley
+				crit(1),		-- Brennadam
+				crit(2),		-- Briarback Kraul
+				crit(3),		-- Mariner's Strand
+				crit(4),		-- Warfang Hold
+				crit(5),		-- Deadwash
+				crit(6),		-- Fort Daelin
+				crit(7),		-- Sagehold
+				crit(8),		-- Shrine of the Storm
+				crit(9),		-- Millstone Hamlet
 			}),
 			ach(13045),		-- Every Day I'm Truffling
 			petbattle(ach(13279, {	-- Family Battler
@@ -270,7 +384,38 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			}),
 			ach(13046),		-- These Hills Sing
 			pvp(ach(12578)),	-- Tour of Duty: Stormsong Valley
-			ach(12853, {	-- Treasures of Stormsong
+			ach(12853, {	-- Treasures of Stormsong Valley
+				-- TODO: _quests on crits / move objects to /Treasures.lua
+				-- crit(1, {	-- Weathered Treasure Chest
+					-- ["_quests"] = { QUESTID },
+				-- }),
+				-- crit(2, {	-- Old Ironbound Chest
+					-- ["_quests"] = { QUESTID },
+				-- }),
+				-- crit(3, {	-- Frosty Treasure Chest
+					-- ["_quests"] = { QUESTID },
+				-- }),
+				-- crit(4, {	-- Sunken Strongbox
+					-- ["_quests"] = { QUESTID },
+				-- }),
+				-- crit(5, {	-- Hidden Scholar's Chest
+					-- ["_quests"] = { QUESTID },
+				-- }),
+				-- crit(6, {	-- Smuggler's Stash
+					-- ["_quests"] = { QUESTID },
+				-- }),
+				-- crit(7, {	-- Discarded Lunchbox
+					-- ["_quests"] = { QUESTID },
+				-- }),
+				-- crit(8, {	-- Carved Wooden Chest
+					-- ["_quests"] = { QUESTID },
+				-- }),
+				-- crit(9, {	-- Venture Co. Supply Chest
+					-- ["_quests"] = { QUESTID },
+				-- }),
+				-- crit(10, {	-- Forgotten Chest
+					-- ["_quests"] = { QUESTID },
+				-- }),
 				o(293350, {	-- Carved Wooden Chest
 					["questID"] = 52429,
 					["icon"] = "Interface\\Icons\\garrison_bronzechest",

@@ -5,7 +5,104 @@
 root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(NAZMIR, {
 		n(ACHIEVEMENTS, {
-			ach(12942),		-- Adventurer of Nazmir
+			ach(12942, {	-- Adventurer of Nazmir
+				crit(1, {	-- Ancient Jawbreaker
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(2, {	-- Azerite Infused Elemental
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(3, {	-- Azerite Infused Slag
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(4, {	-- Blood Priest Xak'lar
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(5, {	-- Uroku the Bound
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(6, {	-- King Kooba
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(7, {	-- Chag's Challenge
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(8, {	-- Corpse Bringer Yal'kar
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(9, {	-- Cursed Chest
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(10, {	-- Gwugnug the Cursed
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(11, {	-- Glompmaw
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(12, {	-- Gutrip the Hungry
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(13, {	-- Queen Tzxi'kik
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(14, {	-- Infected Direhorn
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(15, {	-- Jax'teb the Reanimated
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(16, {	-- Juba the Scarred
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(17, {	-- Kal'draxa
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(18, {	-- Krubbs
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(19, {	-- Lost Scroll
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(20, {	-- Bajiatha
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(21, {	-- Scout Skrasniss
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(22, {	-- Scrounger Patriarch
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(23, {	-- Tainted Guardian
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(24, {	-- Totem Maker Jash'ga
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(25, {	-- Urn of Agussu
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(26, {	-- Venomjaw
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(27, {	-- Wardrummer Zurula
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(28, {	-- Xu'ba the Bone Collector
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(29, {	-- Za'amar the Queen's Blade
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(30, {	-- Zanxib the Engorged
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(31, {	-- Lo'kuno
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(32, {	-- Mala'kili and Rohnkor
+					-- ["_npcs"] = { NPCID },
+				}),
+			}),
 			ach(13020, {	-- Bow to Your Masters
 				["collectible"] = false,
 				["races"] = HORDE_ONLY,
@@ -132,6 +229,17 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						},
 					}),
 				},
+			}),
+			ach(12561, {	-- Explore Nazmir
+				crit(1),		-- Primal Wetlands
+				crit(2),		-- Heart of Darkness
+				crit(3),		-- The Rivermarsh
+				crit(4),		-- The Necropolis
+				crit(5),		-- Zalamar
+				crit(6),		-- Torga's Rest
+				crit(7),		-- Nazwatha
+				crit(8),		-- Zal'amak
+				crit(9),		-- The Frogmarsh
 			}),
 			petbattle(ach(13279, {	-- Family Battler
 				["collectible"] = false,

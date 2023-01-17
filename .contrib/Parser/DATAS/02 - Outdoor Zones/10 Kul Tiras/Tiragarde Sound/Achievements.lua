@@ -43,7 +43,117 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
-			ach(12939),		-- Adventurer of Tiragarde Sound
+			ach(12939, {	-- Adventurer of Tiragarde Sound
+				crit(1, {	-- Auditor Dolp
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(2, {	-- Barman Bill
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(3, {	-- Bashmu
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(4, {	-- Black-Eyed Bart
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(5, {	-- Blackthorne
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(6, {	-- Broodmother Razora
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(7, {	-- Captain Wintersail
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(8, {	-- Carla Smirk
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(9, {	-- Fowlmouth
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(10, {	-- Foxhollow Skyterror
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(11, {	-- Gulliver
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(12, {	-- Kulett the Ornery
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(13, {	-- Lumbergrasp Sentinel
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(14, {	-- Maison the Portable
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(15, {	-- Imperiled Merchants
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(16, {	-- Merianae
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(17, {	-- P4-N73R4
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(18, {	-- Pack Leader Asenya
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(19, {	-- Raging Swell
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(20, {	-- Ranja
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(21, {	-- Saurolisk Tamer Mugg
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(22, {	-- Sawtooth
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(23, {	-- Shiverscale the Toxic
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(24, {	-- Squacks
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(25, {	-- Squirgle of the Depths
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(26, {	-- Sythian the Swift
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(27, {	-- Tempestria
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(28, {	-- Tentulos the Drifter
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(29, {	-- Teres
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(30, {	-- Tort Jaw
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(31, {	-- Totes
+					-- ["_npcs"] = { NPCID },
+				}),
+				crit(32, {	-- Twin-hearted Construct
+					-- ["_npcs"] = { NPCID },
+				}),
+			}),
+			ach(12556, {	-- Explore Tiragarde Sound
+				crit(1),		-- Anglepoint Wharf
+				crit(2),		-- Boralus
+				crit(3),		-- Fernwood Ridge
+				crit(4),		-- Freehold
+				crit(5),		-- Norwington Estate
+				crit(6),		-- Krakenbane Cove
+				crit(7),		-- Abandoned Junkheap
+				crit(8),		-- Kennings Lodge
+				crit(9),		-- The Wailing Tideway
+				crit(10),		-- Vigil Hill
+				crit(11),		-- Waning Glacier
+			}),
 			petbattle(ach(13279, {	-- Family Battler
 				["collectible"] = false,
 				["g"] = {
@@ -243,6 +353,37 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			}),
 			pvp(ach(12577)),	-- Tour of Duty: Tiragarde Sound
 			ach(12852, {	-- Treasures of Tiragarde Sound
+				-- TODO: use _quests and move objects to /Treasures.lua
+				-- crit(1, {	-- Hay Covered Chest
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(2, {	-- Cutwater Treasure Chest
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(3, {	-- Precarious Noble Cache
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(4, {	-- Forgotten Smuggler's Stash
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(5, {	-- Scrimshaw Cache
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(6, {	-- Secret of the Depths
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(7, {	-- Soggy Treasure Map
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(8, {	-- Faded Treasure Map
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(9, {	-- Yellowed Treasure Map
+				-- 	["_quests"] = { QUESTID },
+				-- }),
+				-- crit(10, {	-- Singed Treasure Map
+				-- 	["_quests"] = { QUESTID },
+				-- }),
 				o(281397, {	-- Cutwater Treasure Chest [Localized]
 					["icon"] = "Interface\\Icons\\garrison_bronzechest",
 					["coord"] = { 72.5, 58.1, TIRAGARDE_SOUND },

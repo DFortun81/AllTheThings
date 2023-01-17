@@ -2289,6 +2289,8 @@ root("HiddenQuestTriggers", {
 			q(71986),	-- First Titan-Touched Bubble Poppy
 			q(71987),	-- First Titan-Touched Saxifrage
 			q(71988),	-- First Decayed Hochenblume
+			q(71989),	-- First Decayed Writhebark
+			-- q(71990),	-- First Decayed Bubble Poppy
 			q(71991),	-- First Decayed Saxifrage
 			q(71992),	-- First Infurious Hochenblume
 			q(71993),	-- First Infurious Writhebark
@@ -2298,8 +2300,6 @@ root("HiddenQuestTriggers", {
 			q(72348),	-- First Overload Infurious Herb
 			--
 			q(74121),	-- Herbing Enraged Sprout
-			-- Unsorted
-			q(71989),	-- Learning spellID 391508: Decayed Writhebark
 		}),
 		prof(MINING, {
 			q(71951),	-- First Draconium Deposit
