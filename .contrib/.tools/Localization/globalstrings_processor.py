@@ -1,11 +1,11 @@
-# download "globalstrings.csv" from wow.tools/etc
+# download "GlobalStrings.csv" from wago.tools/etc
 # put it in root, run this script
 # check the diff, replacements are not ideal, but it's a start
 
 import csv
 from pathlib import Path
 
-reader = csv.DictReader(open(Path("..", "..", "..", "globalstrings.csv")))
+reader = csv.DictReader(open(Path("..", "..", "..", "GlobalStrings.csv")))
 my_dict: dict[str, str] = {}
 for row in reader:
     my_dict[row["BaseTag"]] = row["TagText_lang"]
