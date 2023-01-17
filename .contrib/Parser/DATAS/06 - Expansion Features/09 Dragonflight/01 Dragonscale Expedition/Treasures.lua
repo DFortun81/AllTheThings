@@ -37,54 +37,56 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(199068, {	-- Time-Lost Memo
 					["questID"] = 70537,
 				}),
-				i(193891, {  -- Experimental Substance
-					["requireSkill"] = ALCHEMY,
+				n(-1144, {	-- Weekly Profession Knowledge
+					i(193891, {  -- Experimental Substance
+						["requireSkill"] = ALCHEMY,
+					}),
+					i(193897, {	-- Reawakened Catalyst
+						["requireSkill"] = ALCHEMY,
+					}),
+					i(192131, {	-- Valdrakken Weapon Chain
+						["requireSkill"] = BLACKSMITHING,
+					}),	
+					i(192132, {	-- Draconium Blade Sharpener
+						["requireSkill"] = BLACKSMITHING,
+					}),	
+					i(193900, {	-- Prismatic Focusing Shard
+						["requireSkill"] = ENCHANTING,
+					}),	
+					i(193901, {	-- Primal Dust
+						["requireSkill"] = ENCHANTING,
+					}),
+					i(193902, {	-- Eroded Titan Gizmo
+						["requireSkill"] = ENGINEERING,
+					}),
+					i(193903, {	-- Watcher Power Core
+						["requireSkill"] = ENGINEERING,
+					}),	
+					i(193904, {	-- Phoenix Feather Quill
+						["requireSkill"] = INSCRIPTION,
+					}),	
+					i(193905, {	-- Iskaaran Trading Ledger
+						["requireSkill"] = INSCRIPTION,
+					}),	
+					i(193909, {	-- Ancient Gem Fragments
+						["requireSkill"] = JEWELCRAFTING,
+					}),	
+					i(193907, {	-- Chipped Tyrstone
+						["requireSkill"] = JEWELCRAFTING,
+					}),	
+					i(193910, {	-- Molted Dragon Scales
+						["requireSkill"] = LEATHERWORKING,
+					}),	
+					i(193913, {	-- Preserved Animal Parts
+						["requireSkill"] = LEATHERWORKING,
+					}),	
+					i(193898, {	-- Umbral Bone Needle
+						["requireSkill"] = TAILORING,
+					}),	
+					i(193899, {	-- Primalweave Spindle
+						["requireSkill"] = TAILORING,
+					}),	
 				}),
-				i(193897, {	-- Reawakened Catalyst
-					["requireSkill"] = ALCHEMY,
-				}),
-				i(192131, {	-- Valdrakken Weapon Chain
-					["requireSkill"] = BLACKSMITHING,
-				}),	
-				i(192132, {	-- Draconium Blade Sharpener
-					["requireSkill"] = BLACKSMITHING,
-				}),	
-				i(193900, {	-- Prismatic Focusing Shard
-					["requireSkill"] = ENCHANTING,
-				}),	
-				i(193901, {	-- Primal Dust
-					["requireSkill"] = ENCHANTING,
-				}),
-				i(193902, {	-- Eroded Titan Gizmo
-					["requireSkill"] = ENGINEERING,
-				}),
-				i(193903, {	-- Watcher Power Core
-					["requireSkill"] = ENGINEERING,
-				}),	
-				i(193904, {	-- Phoenix Feather Quill
-					["requireSkill"] = INSCRIPTION,
-				}),	
-				i(193905, {	-- Iskaaran Trading Ledger
-					["requireSkill"] = INSCRIPTION,
-				}),	
-				i(193909, {	-- Ancient Gem Fragments
-					["requireSkill"] = JEWELCRAFTING,
-				}),	
-				i(193907, {	-- Chipped Tyrstone
-					["requireSkill"] = JEWELCRAFTING,
-				}),	
-				i(193910, {	-- Molted Dragon Scales
-					["requireSkill"] = LEATHERWORKING,
-				}),	
-				i(193913, {	-- Preserved Animal Parts
-					["requireSkill"] = LEATHERWORKING,
-				}),	
-				i(193898, {	-- Umbral Bone Needle
-					["requireSkill"] = TAILORING,
-				}),	
-				i(193899, {	-- Primalweave Spindle
-					["requireSkill"] = TAILORING,
-				}),	
 				o(383735, {	-- Disturbed Dirt (all 5 of them)
 				--	["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
