@@ -97,6 +97,23 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					199067, -- Precious Plans
 					199068, -- Time-Lost Memo
 					198852, -- Bear Termination Orders
+					-- Profession Knowledge Items
+					193891,	-- Experimental Substance
+					193897,	-- Reawakened Catalyst
+					192131,	-- Valdrakken Weapon Chain
+					192132,	-- Draconium Blade Sharpener
+					193900,	-- Prismatic Focusing Shard
+					193901,	-- Primal Dust
+					193902,	-- Eroded Titan Gizmo
+					193903,	-- Watcher Power Core
+					193904,	-- Phoenix Feather Quill
+					193905,	-- Iskaaran Trading Ledger
+					193909,	-- Ancient Gem Fragments
+					193907,	-- Chipped Tyrstone
+					193910,	-- Molted Dragon Scales
+					193913,	-- Preserved Animal Parts
+					193898,	-- Umbral Bone Needle
+					193899,	-- Primalweave Spindle
 				}},
 				["g"] = {
 					o(383735),	-- Disturbed Dirt
