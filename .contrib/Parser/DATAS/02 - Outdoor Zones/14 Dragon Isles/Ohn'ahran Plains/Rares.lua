@@ -4,7 +4,6 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(OHNAHRAN_PLAINS, {
 		n(RARES, sharedData({["isDaily"] = true},{
-		--n(RARES, {
 			n(193168, {	-- Biryuk
 				["coord"] = { 72.5, 56.2, OHNAHRAN_PLAINS },
 				["questID"] = 73903,
@@ -56,8 +55,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200309),	-- Rock Encrusted Chestguard
 				},
 			}),
-		--	n(193170, {	-- Fulgurb
-		--	Time Based Rare
+		--	n(193170, {	-- Fulgurb // under DF/Timed Based Rare
 			n(187781, {	-- Hamett <Rockfang Matriarch>
 				["description"] = "Chance to spawn upon killing Sutaan.",
 				["coord"] = { 85.4, 15.8, OHNAHRAN_PLAINS },
@@ -99,20 +97,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				-- },
 			}),
-			n(193212, {	-- Malsegan
-				["coord"] = { 72.2, 44.8, OHNAHRAN_PLAINS },
-				["questID"] = 74011,
-				["g"] = {
-					i(200197),	-- Armoredon Herding Crook
-				},
-			}),
-			n(193173, {	-- Mikrin of the Raging Winds
-				["coord"] = { 62.8, 79.8, OHNAHRAN_PLAINS },
-				["questID"] = 74015,
-				["g"] = {
-					i(200542),	-- Breezy Companion
-				},
-			}),
+			-- n(193212, {	-- Malsegan // under DF/Timed Based Rare
+			-- n(193173, {	-- Mikrin of the Raging Winds // under DF/Timed Based Rare
 			n(187219, {	-- Nokhud Warmaster
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
@@ -127,13 +113,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				-- },
 			}),
-			n(193235, {	-- Oshigol
-				["coord"] = { 60.8, 26.8, OHNAHRAN_PLAINS },
-				["questID"] = 74018,
-				-- ["g"] = {
-
-				-- },
-			}),
+			-- n(193235, {	-- Oshigol // under DF/Timed Based Rare
 			n(191950, {	-- Porta the Overgrown
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
@@ -162,20 +142,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				-- },
 			}),
-			n(196010, {	-- Researcher Sneakwing <The Sundered Flame>
-				["coord"] = { 37.3, 53.9, OHNAHRAN_PLAINS },
-				["questID"] = 74023,
-				["g"] = {
-					i(200682),	-- Hardened Scale Shoulderguards
-				},
-			}),
-			n(193227, {	-- Ronsak the Decimator
-				["coord"] = { 43.3, 55.2, OHNAHRAN_PLAINS },
-				-- ["questID"] = ,
-				["g"] = {
-					i(200308),	-- Rellen's Legacy
-				},
-			}),
+			-- n(196010, {	-- Researcher Sneakwing // under DF/Timed Based Rare
+			-- n(193227, {	-- Ronsak the Decimator // under DF/Timed Based Rare
 			n(193153, {	-- Ripsaw the Stalker
 				["coord"] = { 26.3, 65.4, OHNAHRAN_PLAINS },
 				["questID"] = 72845,
@@ -244,13 +212,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200234),	-- Vrak's Embossed Aegis
 				},
 			}),
-			n(193123, {	-- Steamgill
-				["coord"] = { 53.6, 72.8, OHNAHRAN_PLAINS },
-				["questID"] = 74034,
-				["g"] = {
-					i(200216),	-- Water Heating Cord
-				},
-			}),
+			-- n(193123, {	-- Steamgill // under DF/Timed Based Rare
 			n(191842, {	-- Sulfurion
 				["coord"] = { 78.3, 83.0, OHNAHRAN_PLAINS },
 				["questID"] = 73974,
@@ -356,6 +318,5 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				},
 			}),
 		})),
-		--}),
 	}),
 })));

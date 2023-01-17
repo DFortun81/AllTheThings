@@ -4,8 +4,7 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	m(THE_WAKING_SHORES, {
 		n(RARES, sharedData({["isDaily"] = true},{
-		--	n(193132, {	-- Amethyzar the Glittering
-		--	Time-Based Rare
+		--	n(193132),	-- Amethyzar the Glittering // under DF/Timed Based Rare
 			n(187111, {	-- Ancient Hornswog
 				["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
 				["questID"] = 72835,
@@ -23,8 +22,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200245), -- Leviathan Lure
 				},
 			}),
-		--	n(193135, {	-- Azra's Prized Peony
-		--	Time-Based Rare
+		--	n(193135, {	-- Azra's Prized Peony // under DF/Timed Based Rare
 			n(193177, {	-- Beakers
 				["questID"] = 73902,
 				["coords"] = {
@@ -111,14 +109,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 				},
 			}),
-			n(193226, {	-- Gorjo the Crab Shackler
-				["crs"] = { 193228 },	-- Snappy
-				["coord"] = { 78.6, 50.0, THE_WAKING_SHORES },
-				["questID"] = 73997,
-				["g"] = {
-					i(200281),	-- Gorjo's Riding Crop
-				},
-			}),
+			-- n(193226, {	-- Gorjo the Crab Shackler // under DF/Timed Based Rare
 			n(196056, {	-- Gushgut the Beaksinker
 				-- ["coord"] = { X, Y, THE_WAKING_SHORES },
 				-- ["questID"] = 70718,
@@ -126,22 +117,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				-- },
 			}),
-			n(186200, {	-- Harkyn Grymstone
-				["crs"] = {
-					186201, -- Groth
-					186203,	-- Snee
-					186202,	-- Voll
-				},
-				["coord"] = { 42.1, 39.5, THE_WAKING_SHORES },
-				["questID"] = 74003,
-				["g"] = {
-					i(200171),	-- Grymheart Blade
-					i(182361),	-- Protector's Molten Cudgel
-					i(183061),	-- Qalashi War-Helm
-					i(200175),	-- Repurposed Anvil
-					i(200243),	-- Titanic Scholar's Finery
-				},
-			}),
+			-- n(186200, {	-- Harkyn Grymstone // under DF/Timed Based Rare
 			n(193263, {	-- Helmet Missingway
 				["coord"] = { 43.4, 73.6, THE_WAKING_SHORES },
 				["questID"] = 73880,
@@ -169,21 +145,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 
 				-- },
 			}),
-			n(186827, {	-- Magmaton
-				["coord"] = { 40.0, 64.5, THE_WAKING_SHORES },
-				["questID"] = 74010,
-				["g"] = {
-					i(197149),	-- Highland Drake: Club Tail (DM!)
-					i(200684),	-- Emerald Tailbone
-				},
-			}),
-			n(193152, {	-- Massive Magmashell
-				["coord"] = { 21.7, 76.2, THE_WAKING_SHORES },
-				["questID"] = 74012,
-				["g"] = {
-					i(200192),	-- Handheld Geyser
-				},
-			}),
+			-- n(186827, {	-- Magmaton // under DF/Timed Based Rare
+			-- n(193152, {	-- Massive Magmashell // under DF/Timed Based Rare
 			n(190718, {	-- Monsoo, The Boiling Rage
 				["coord"] = { 46.8, 57.3, THE_WAKING_SHORES },
 				-- ["questID"] = ,
@@ -201,15 +164,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(197382),	-- Renewed Proto-Drake: White Horns (DM!)
 				},
 			}),
-			n(193118, {	-- O'nank Shorescour
-				["coord"] = { 82.2, 49.4, THE_WAKING_SHORES },
-				["questID"] = 74017,
-				["g"] = {
-					i(200435),	-- Brackish Breeches
-					i(200203),	-- Repurposed Giant's Thimble
-					i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
-				},
-			}),
+			-- n(193118, {	-- O'nank Shorescour // under DF/Timed Based Rare
 			n(184853, {	-- Primal Scythid Queen
 				["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
 				["questID"] = 72843,
@@ -267,13 +222,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 					i(200189),	-- Hydroforged Shell Helm
 				},
 			}),
-			n(193120, {	-- Smogswog the Firebreather
-				["coord"] = { 69.0, 64.8, THE_WAKING_SHORES },
-				["questID"] = 74031,
-				["g"] = {
-					i(200209),	-- Firebreather's Cowl
-				},
-			}),
+			-- n(193120, {	-- Smogswog the Firebreather // under DF/Timed Based Rare
 			n(193171, {	-- Terillod the Devout
 				["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
 				["questID"] = 72850,
