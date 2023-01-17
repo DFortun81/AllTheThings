@@ -864,6 +864,7 @@ for key,value in pairs({
 		[-1140] = "Acordo de Valdrakken",							-- Valdrakken Accord
 		[-1142] = "Desafios Aéreos",								-- Aerial Challenges
 		--TODO: [-1143] = "Every 2 Hours Rare",						-- Every 2 Hours Rare
+		--TODO: [-1144] = "Weekly Profession Knowledge",			-- Weekly Profession Header
 	-- Warrior order hall lore items
 		[-2200] = "O Grande Odyn e o Senhor do Fogo",				-- Great Odyn and the Firelord
 		[-2201] = "O Andarilho e a Serpente",						-- The Wanderer and the Serpent
