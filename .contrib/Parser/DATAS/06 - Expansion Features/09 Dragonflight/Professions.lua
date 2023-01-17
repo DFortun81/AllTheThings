@@ -1401,6 +1401,55 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(383548),	-- Scribe's Resplendent Quill
 				},
 			}),
+			n(-1144, {	-- Weekly Profession Knowledge
+				q(74105, {	-- Inscription Order: Inscription
+					["name"] = "Inscription Order: Inscription",
+					["provider"] = { "i", 194699 },	-- Draconic Treatise on Inscription
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66375, {	-- Weekly Inscription Knowledgepoint #1
+					["name"] = "Inscription Treasure #1",
+					["provider"] = { "i", 193904 },		-- Phoenix Feather Quill
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66376, {	-- Weekly Inscription Knowledgepoint #2
+					["name"] = "Inscription Treasure #2",
+					["provider"] = { "i", 193905 },		-- Iskaaran Trading Ledger
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70518, {	-- Weekly Inscription Knowledgepoint #3
+					["name"] = "Inscription Drop #1: Qalashi Djaradin",
+					["description"] = "Drops from any Qalashi Djaradin.\nCoordinates link to the mobs we found best.",
+					["crs"] = { 186109 },	-- Qalashi Necksnapper
+					["coords"] = { 
+						{ 39.6, 51.4, THE_WAKING_SHORES },
+						{ 34.8, 68.6, THE_WAKING_SHORES },
+						{ 39.6, 51.4, THE_WAKING_SHORES },
+					},
+					["provider"] = { "i", 198971 },		-- Curious Djaradin Rune
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70519, {	-- Weekly Inscription Knowledgepoint #4
+					["name"] = "Inscription Drop #2: Dragon-kin/Proto Drakes",
+					["description"] = "Drops from any Dragon-kin/Proto Drake.\nCoordinates link to the mobs closest to Valdrakken.",
+					["crs"] = { 
+						193973,	-- Mistyvale Splashcaster
+						193969,	-- Mistyvale Firestarter
+					},
+					["coord"] = { 44.0, 81.8, THALDRASZUS },
+					["provider"] = { "i", 198972 },		-- Draconic Glamour
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+			}),
 			q(70361, {	-- Dragon Isles Inscription
 				["sourceQuests"] = {
 					67700,	-- To The Dragon Isles! [A]
@@ -1575,40 +1624,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
-			q(74105, {	-- Inscription Order: Inscription
-				["name"] = "Inscription Order: Inscription",
-				["provider"] = { "i", 194699 },	-- Draconic Treatise on Inscription
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70519, {	-- Weekly Inscription Knowledgepoint #1
-				["name"] = "Weekly Inscription Knowledgepoint #1",
-				["provider"] = { "i", 198972 },		-- Draconic Glamour
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66375, {	-- Weekly Inscription Knowledgepoint #2
-				["name"] = "Weekly Inscription Knowledgepoint #2",
-				["provider"] = { "i", 193904 },		-- Phoenix Feather Quill
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70518, {	-- Weekly Inscription Knowledgepoint #3
-				["name"] = "Weekly Inscription Knowledgepoint #3",
-				["provider"] = { "i", 198971 },		-- Curious Djaradin Rune
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66376, {	-- Weekly Inscription Knowledgepoint #4
-				["name"] = "Weekly Inscription Knowledgepoint #4",
-				["provider"] = { "i", 193905 },		-- Iskaaran Trading Ledger
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
 		})),
 		prof(JEWELCRAFTING, sharedData({
 			["requireSkill"] = JEWELCRAFTING,
@@ -1646,6 +1661,59 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(374448),	-- Zen Malygite
 					r(374458),	-- Zen Neltharite
 				},
+			}),
+			n(-1144, {	-- Weekly Profession Knowledge
+				q(74112, {	-- Inscription Order: Jewelcrafting
+					["name"] = "Inscription Order: Jewelcrafting",
+					["description"] = "Requires a crafting order from Inscription.",
+					["provider"] = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66388, {	-- Weekly Jewelcrafting Knowledgepoint #1
+					["name"] = "Jewelcrafting Treasure #1",
+					["provider"] = { "i", 193909 },		-- Ancient Gem Fragments
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(66389, {	-- Weekly Jewelcrafting Knowledgepoint #2
+					["name"] = "Jewelcrafting Treasure #2",
+					["provider"] = { "i", 193907 },		-- Chipped Tyrstone
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70520, {	-- Weekly Jewelcrafting Knowledgepoint #3
+					["name"] = "Jewelcrafting Drop #1: Well Dressed",
+					["description"] = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the mobs closest to Valdrakken.",
+					["crs"] = { 
+						195215,	-- Rebel Bruiser
+					},
+					["coords"] = { 
+						{ 46.8, 59.6, THALDRASZUS },
+						{ 45.8 ,58.2, THALDRASZUS },
+					},
+					["provider"] = { "i", 198973 },		-- Incandescent Curio
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
+				q(70521, {	-- Weekly Jewelcrafting Knowledgepoint #4
+					["name"] = "Jewelcrafting Drop #2: Corporeal Elemental",
+					["description"] = "Drops from any Corporeal Elemental.\nCoordinates link to the mobs closest to Valdrakken.",
+					["crs"] = { 
+						194212,	-- Unleashed Rubble
+					},
+					["coords"] = { 
+						{ 50.6, 57.6, THALDRASZUS },
+						{ 48.8, 60.6, THALDRASZUS },
+					},
+					["provider"] = { "i", 198974 },		-- Elegantly Engraved Embellishment
+					["timeline"] = { ADDED_DF_REL },
+					["isWeekly"] = true,
+					["collectible"] = true,	-- Don't remove until we have proper tracking
+				}),
 			}),
 			q(70365, {	-- To the Dragon Isles: Jewelcrafting
 				["sourceQuests"] = {
@@ -1819,41 +1887,6 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["name"] = "Hidden Profession Master: Jewelcrafting",
 				["provider"] = { "n", 194841 },	-- Pluutar
 				["coord"] = { 46.2, 40.8, THE_AZURE_SPAN },
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(74112, {	-- Inscription Order: Jewelcrafting
-				["name"] = "Inscription Order: Jewelcrafting",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70520, {	-- Weekly Jewelcrafting Knowledgepoint #1
-				["name"] = "Weekly Jewelcrafting Knowledgepoint #1",
-				["provider"] = { "i", 198973 },		-- Incandescent Curio
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(70521, {	-- Weekly Jewelcrafting Knowledgepoint #2
-				["name"] = "Weekly Jewelcrafting Knowledgepoint #2",
-				["provider"] = { "i", 198974 },		-- Elegantly Engraved Embellishment
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66388, {	-- Weekly Jewelcrafting Knowledgepoint #3
-				["name"] = "Weekly Jewelcrafting Knowledgepoint #3",
-				["provider"] = { "i", 193909 },		-- Ancient Gem Fragments
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
-				["collectible"] = true,	-- Don't remove until we have proper tracking
-			}),
-			q(66389, {	-- Weekly Jewelcrafting Knowledgepoint #4
-				["name"] = "Weekly Jewelcrafting Knowledgepoint #4",
-				["provider"] = { "i", 193907 },		-- Chipped Tyrstone
-				["timeline"] = { ADDED_DF_REL },
-				["isWeekly"] = true,
 				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 		})),
