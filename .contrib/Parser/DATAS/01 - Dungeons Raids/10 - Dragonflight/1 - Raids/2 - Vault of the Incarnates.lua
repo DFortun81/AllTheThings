@@ -235,8 +235,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(195475),	-- Flame Marshal's Bulwark
 							i(195479),	-- Flametender's Legwraps
 							i(195477),	-- Scaldrons of Molten Might
-							i(195481),	-- Scepter of Final Authority
 							i(195480),	-- Seal of Diurna's Chosen
+							i(195490),	-- Searing Blazecaster
 							i(195478),	-- Valdrakken Protector's Turncoat
 						},
 					}),
@@ -289,7 +289,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(195494),	-- Dathea's Cyclonic Cage
 							i(195496),	-- Eye of the Vengeful Hurricane
 							i(195491),	-- Infused Stormglaives
-							i(195490),	-- Shearing Windcaster
+							i(195481),	-- Scepter of Drastic Measures
 							i(194302),	-- Storm-Eater's Boon
 							i(195492),	-- Windborne Hatsuburi
 						},
@@ -485,8 +485,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195475),	-- Flame Marshal's Bulwark
 						i(195479),	-- Flametender's Legwraps
 						i(195477),	-- Scaldrons of Molten Might
-						i(195481),	-- Scepter of Final Authority
 						i(195480),	-- Seal of Diurna's Chosen
+						i(195490),	-- Searing Blazecaster
 						i(195478),	-- Valdrakken Protector's Turncoat
 					},
 				}),
@@ -591,7 +591,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195494),	-- Dathea's Cyclonic Cage
 						i(195496),	-- Eye of the Vengeful Hurricane
 						i(195491),	-- Infused Stormglaives
-						i(195490),	-- Shearing Windcaster
+						i(195481),	-- Scepter of Drastic Measures
 						i(194302),	-- Storm-Eater's Boon
 						i(195492),	-- Windborne Hatsuburi
 					},
@@ -758,8 +758,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195475),	-- Flame Marshal's Bulwark
 						i(195479),	-- Flametender's Legwraps
 						i(195477),	-- Scaldrons of Molten Might
-						i(195481),	-- Scepter of Final Authority
 						i(195480),	-- Seal of Diurna's Chosen
+						i(195490),	-- Searing Blazecaster
 						i(195478),	-- Valdrakken Protector's Turncoat
 					},
 				}),
@@ -860,7 +860,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195494),	-- Dathea's Cyclonic Cage
 						i(195496),	-- Eye of the Vengeful Hurricane
 						i(195491),	-- Infused Stormglaives
-						i(195490),	-- Shearing Windcaster
+						i(195481),	-- Scepter of Drastic Measures
 						i(194302),	-- Storm-Eater's Boon
 						i(195492),	-- Windborne Hatsuburi
 					},
@@ -1014,8 +1014,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195475),	-- Flame Marshal's Bulwark
 						i(195479),	-- Flametender's Legwraps
 						i(195477),	-- Scaldrons of Molten Might
-						i(195481),	-- Scepter of Final Authority
 						i(195480),	-- Seal of Diurna's Chosen
+						i(195490),	-- Searing Blazecaster
 						i(195478),	-- Valdrakken Protector's Turncoat
 					},
 				}),
@@ -1120,7 +1120,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195494),	-- Dathea's Cyclonic Cage
 						i(195496),	-- Eye of the Vengeful Hurricane
 						i(195491),	-- Infused Stormglaives
-						i(195490),	-- Shearing Windcaster
+						i(195481),	-- Scepter of Drastic Measures
 						i(194302),	-- Storm-Eater's Boon
 						i(195492),	-- Windborne Hatsuburi
 					},
