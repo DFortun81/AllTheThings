@@ -429,6 +429,7 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(70794),	-- Triggered after crafting 'Irontree Harpoon Handle'
 		q(70803),	-- Triggered after crafting 'Double Imbu Knot'
 		q(70800),	-- Triggered after crafting 'Draconium Net Weights'
+		q(70797),	-- Triggered after crafting 'Jagged Serevite Harpoon Head'
 		--
 		q(72828),	-- First weekly completion of 'Catch and Release: Scalebell Mackerel' (70199)
 		q(72827),	-- First weekly completion of 'Catch and Release: Thousandbite Piranha' (70200)
