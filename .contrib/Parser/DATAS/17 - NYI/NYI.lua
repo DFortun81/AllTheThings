@@ -719,10 +719,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(199472),	-- Overflowing Dragon Expedition Supply Pack
 			i(199473),	-- Overflowing Iskaaran Supply Pack
 			i(199475),	-- Overflowing Valdrakken Accord Supply Pack
-			i(200452),	-- Dragonscale Expedition Insignia
-			i(200453),	-- Iskaara Tuskarr Insignia
-			i(200454),	-- Maruuk Centaur Insignia
-			i(200455),	-- Valdrakken Accord Insignia
 			i(200609),	-- Dragon Racing Purse - First Place
 			i(200610),	-- Dragon Racing Purse - Second Place
 			i(200611),	-- Dragon Racing Purse - Third Place
@@ -730,12 +726,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(201355),	-- Eternal Equipment Chest
 			i(201362),	-- Fated Equipment Chest
 			i(201757),	-- Plundered Supplies
-			i(201921),	-- Dragonscale Expedition Insignia
-			i(201922),	-- Iskaara Tuskarr Insignia
-			i(202091),	-- Dragonscale Expedition Insignia
-			i(202092),	-- Iskaara Tuskarr Insignia
-			i(202093),	-- Valdrakken Accord Insignia
-			i(202094),	-- Maruuk Centaur Insignia
 			-- Fishing
 			i(199696),	-- Iskaaran Ice Axe
 			i(200077),	-- Wooden Pole

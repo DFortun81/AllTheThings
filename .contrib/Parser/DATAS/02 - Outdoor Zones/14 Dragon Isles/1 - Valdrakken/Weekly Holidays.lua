@@ -30,8 +30,22 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
 				}),
-				-- TODO
-				-- Reported for The World Awaits: Dragonscale Expedition Commendation, Iskaara Tuskarr Commendation, Maruuk Centaur Commendation, Valdrakken Accord Commendation (2.5k rep each)
+				i(202091, {	-- Dragonscale Expedition Insignia
+					["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renonwn 25
+					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				}),
+				i(202092, {	-- Iskaara Tuskarr Insignia
+					["minReputation"] = { 2511, 30 },	-- Iskaara Tuskarr Renown 30
+					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				}),
+				i(202094, {	-- Maruuk Centaur Insignia
+					["minReputation"] = { 2503, 25 },	-- Maruuk Centaur renown 25
+					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				}),
+				i(202093, {	-- Valdrakken Accord Insignia
+					["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
+					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				}),
 			}),
 			n(QUESTS, sharedData({
 				["provider"] = { "n", 199526 },	-- Kazra

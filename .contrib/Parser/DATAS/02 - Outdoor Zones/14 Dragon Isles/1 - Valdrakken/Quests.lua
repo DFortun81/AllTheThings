@@ -178,6 +178,29 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["isBreadcrumb"] = true,	-- unconfirmed
 			}),
 		}),
+	}),	
+})));		
+		
+root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
+	m(VALDRAKKEN, {
+		n(REWARDS, {
+			i(200452, {	-- Dragonscale Expedition Insignia
+				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renonwn 25
+				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+			}),
+			i(200453, {	-- Iskaara Tuskarr Insignia
+				["minReputation"] = { 2511, 30 },	-- Iskaara Tuskarr Renown 30
+				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+			}),
+			i(200454, {	-- Maruuk Centaur Insignia
+				["minReputation"] = { 2503, 25 },	-- Maruuk Centaur renown 25
+				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+			}),
+			i(200455, {	-- Valdrakken Accord Insignia
+				["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
+				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+			}),
+		}),
 		n(QUESTS, sharedData({
 				["isWeekly"] = true,
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
