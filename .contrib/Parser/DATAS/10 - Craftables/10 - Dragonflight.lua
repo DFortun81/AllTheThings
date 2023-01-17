@@ -2550,12 +2550,12 @@ root("HiddenQuestTriggers", {
 		prof(LEATHERWORKING, {
 			-- Leather Armor
 			-- q(),	-- Life-Bound Belt
-			-- q(71713),	-- Life-Bound Binding
+			q(71713),	-- Life-Bound Binding
 			-- q(),	-- Life-Bound Boots
 			-- q(),	-- Life-Bound Cap
 			-- q(),	-- Life-Bound Chestpiece
 			-- q(),	-- Life-Bound Gloves
-			-- q(71711),	-- Life-Bound Shoulderpads
+			q(71711),	-- Life-Bound Shoulderpads
 			-- q(),	-- Life-Bound Trousers
 			q(71703),	-- Pioneer's Leather Tunic
 			q(72569),	-- Pioneer's Leather Wristguard
