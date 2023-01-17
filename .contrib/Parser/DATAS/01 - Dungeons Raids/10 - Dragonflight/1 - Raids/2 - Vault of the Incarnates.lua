@@ -252,7 +252,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(195485),	-- Councilor's Terrormask
 							i(195487),	-- Embar's Ashen Hauberk
 							i(195484),	-- Icewrath's Channeling Conduit
-							i(195483),	-- Imbued Qalashi Poleaxe
+							i(195518),	-- Imbued Qalashi Crusher
 							i(195489),	-- Maul of the Earthshaper
 							i(195488),	-- Opalfang's Earthbound Legguards
 							i(195486),	-- Twisted Loam Spaulders
@@ -369,7 +369,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 								i(200423),	-- Husk of the Walking Mountain
 							}),
 							i(194306),	-- All-Totem of the Master
-							i(195518),	-- Awak'mani, Grimtotem's Legacy
+							i(195483),	-- Awak'mani, Grimtotem's Legacy
 							i(194305),	-- Controlled Current Technique
 							i(195512),	-- Fist of the Grand Summoner
 							i(195517),	-- Kurog's Thunderhooves
@@ -518,7 +518,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195485),	-- Councilor's Terrormask
 						i(195487),	-- Embar's Ashen Hauberk
 						i(195484),	-- Icewrath's Channeling Conduit
-						i(195483),	-- Imbued Qalashi Poleaxe
+						i(195518),	-- Imbued Qalashi Crusher
 						i(195489),	-- Maul of the Earthshaper
 						i(195488),	-- Opalfang's Earthbound Legguards
 						i(195486),	-- Twisted Loam Spaulders
@@ -622,7 +622,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(200423),	-- Husk of the Walking Mountain
 						}),
 						i(194306),	-- All-Totem of the Master
-						i(195518),	-- Awak'mani, Grimtotem's Legacy
+						i(195483),	-- Awak'mani, Grimtotem's Legacy
 						i(194305),	-- Controlled Current Technique
 						i(195512),	-- Fist of the Grand Summoner
 						i(195517),	-- Kurog's Thunderhooves
@@ -789,7 +789,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195485),	-- Councilor's Terrormask
 						i(195487),	-- Embar's Ashen Hauberk
 						i(195484),	-- Icewrath's Channeling Conduit
-						i(195483),	-- Imbued Qalashi Poleaxe
+						i(195518),	-- Imbued Qalashi Crusher
 						i(195489),	-- Maul of the Earthshaper
 						i(195488),	-- Opalfang's Earthbound Legguards
 						i(195486),	-- Twisted Loam Spaulders
@@ -890,7 +890,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(200423),	-- Husk of the Walking Mountain
 						}),
 						i(194306),	-- All-Totem of the Master
-						i(195518),	-- Awak'mani, Grimtotem's Legacy
+						i(195483),	-- Awak'mani, Grimtotem's Legacy
 						i(194305),	-- Controlled Current Technique
 						i(195512),	-- Fist of the Grand Summoner
 						i(195517),	-- Kurog's Thunderhooves
@@ -1047,7 +1047,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 						i(195485),	-- Councilor's Terrormask
 						i(195487),	-- Embar's Ashen Hauberk
 						i(195484),	-- Icewrath's Channeling Conduit
-						i(195483),	-- Imbued Qalashi Poleaxe
+						i(195518),	-- Imbued Qalashi Crusher
 						i(195489),	-- Maul of the Earthshaper
 						i(195488),	-- Opalfang's Earthbound Legguards
 						i(195486),	-- Twisted Loam Spaulders
@@ -1151,7 +1151,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 							i(200423),	-- Husk of the Walking Mountain
 						}),
 						i(194306),	-- All-Totem of the Master
-						i(195518),	-- Awak'mani, Grimtotem's Legacy
+						i(195483),	-- Awak'mani, Grimtotem's Legacy
 						i(194305),	-- Controlled Current Technique
 						i(195512),	-- Fist of the Grand Summoner
 						i(195517),	-- Kurog's Thunderhooves
