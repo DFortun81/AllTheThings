@@ -405,6 +405,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66938, {	-- Mammoth Marrow
@@ -412,6 +413,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72427, {	-- Animated Infusion
@@ -419,6 +421,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66937, {	-- Decaying News
@@ -426,6 +429,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70533, {	-- Decaying News
@@ -433,6 +437,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
 				["provider"] = { "n", 185545 },	-- Conflago
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70532, {	-- Aiding the Raiding
@@ -440,6 +445,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
 				["provider"] = { "n", 185545 },	-- Conflago
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70531, {	-- Mana Markets
@@ -447,6 +453,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
 				["provider"] = { "n", 185545 },	-- Conflago
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70530, {	-- Examination Week
@@ -454,6 +461,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
 				["provider"] = { "n", 185545 },	-- Conflago
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			o(380590, {	-- Well Insulated Mug
@@ -575,6 +583,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66941, {	-- Tremendous Tools
@@ -582,6 +591,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72398, {	-- Rock and Stone
@@ -589,6 +599,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70235, {	-- Repair Bill
@@ -596,6 +607,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70234, {	-- All this Hammering
@@ -603,6 +615,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70233, {	-- Axe Shortage
@@ -610,6 +623,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70211, {	-- Stomping Explorers
@@ -617,6 +631,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 				["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66517, { -- A New Source of Weapons
@@ -624,6 +639,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70589, {	-- Blacksmithing Services Requested
@@ -631,6 +647,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 				["provider"] = { "n", 194026 },	-- Azley
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70184, { -- Specialized Secrets: Blacksmithing
@@ -836,6 +853,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72423, {	-- Weathering the Storm
@@ -843,6 +861,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 				["groups"] = {
 					i(198610),	-- Enchanter's Script
@@ -853,6 +872,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66935, {	-- Crystal Quill Pens
@@ -860,6 +880,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72175, {	-- A Scept-acular Time
@@ -867,6 +888,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 30.8, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 193744 },	-- Soragosa
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72172, {	-- Essence, Shards, and Chromatic Dust
@@ -874,6 +896,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 30.8, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 193744 },	-- Soragosa
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72155, {	-- Spread the Enchantment
@@ -881,6 +904,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 30.8, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 193744 },	-- Soragosa
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72173, {	-- Braced for Enchantment
@@ -888,6 +912,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 30.8, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 193744 },	-- Soragosa
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			o(380558, {	-- Enchanted Debris
@@ -1055,6 +1080,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66942, {	-- Enemy Engineering
@@ -1062,6 +1088,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66890, {	-- Stolen Tools
@@ -1069,6 +1096,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72396, {	-- Horns of Plenty
@@ -1076,6 +1104,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70540, {	-- An Engineer's Best Friend
@@ -1083,6 +1112,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70557, {	-- No Scopes
@@ -1090,6 +1120,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70545, {	-- Blingtron 8000...?
@@ -1097,6 +1128,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70539, {	-- And You Thought They Did Nothing
@@ -1104,6 +1136,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70591, {	-- Engineering Services Requested
@@ -1111,6 +1144,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 				["provider"] = { "n", 194026 },	-- Azley
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			o(380560, {	-- Disabled Tesla Coil
@@ -1244,6 +1278,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 38.2, 68.6, VALDRAKKEN },
 				["provider"] = { "n", 185549 },	-- Agrikus
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70614, {	-- Bubble Craze
@@ -1251,6 +1286,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 38.2, 68.6, VALDRAKKEN },
 				["provider"] = { "n", 185549 },	-- Agrikus
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70615, {	-- The Case of the Missing Herbs
@@ -1258,6 +1294,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 38.2, 68.6, VALDRAKKEN },
 				["provider"] = { "n", 185549 },	-- Agrikus
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70616, {	-- How Many??
@@ -1265,6 +1302,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 38.2, 68.6, VALDRAKKEN },
 				["provider"] = { "n", 185549 },	-- Agrikus
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(74107, {	-- Inscription Order: Herbalism
@@ -1380,6 +1418,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66944, {	-- Peacock Pigments
@@ -1387,6 +1426,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66945, {	-- Icy Ink
@@ -1394,6 +1434,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72438, {	-- Tarasek Intentions
@@ -1401,6 +1442,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70560, {	-- The Most Powerful Tool: Good Documentation
@@ -1408,6 +1450,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
 				["provider"] = { "n", 185540 },	-- Talendara
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70559, {	-- Quill You Help?
@@ -1415,6 +1458,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
 				["provider"] = { "n", 185540 },	-- Talendara
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70558, {	-- Disillusioned Illusions
@@ -1422,6 +1466,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
 				["provider"] = { "n", 185540 },	-- Talendara
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70561, {	-- A Scribe's Tragedy
@@ -1429,6 +1474,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
 				["provider"] = { "n", 185540 },	-- Talendara
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70592, {	-- Inscription Services Requested
@@ -1437,6 +1483,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["provider"] = { "n", 194026 },	-- Azley
 				["isWeekly"] = true,
 				-- ["sourceQuest"] = ,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 			}),
 			o(380610, {	-- Pulsing Earth Rune
 				["questID"] = 70306,
@@ -1617,6 +1664,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66516, {	-- Mundane Gems, I Think not!
@@ -1624,6 +1672,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66950, {	-- Heart of a Giant
@@ -1631,6 +1680,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66949, {	-- Trinket Bandits
@@ -1638,6 +1688,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70565, {	-- Separation by Saturation
@@ -1645,6 +1696,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 40.6, 61.2, VALDRAKKEN },
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70564, {	-- Spectacular
@@ -1652,6 +1704,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 40.6, 61.2, VALDRAKKEN },
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70563, {	-- The Exhibition
@@ -1659,6 +1712,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 40.6, 61.2, VALDRAKKEN },
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70562, {	-- The Plumbers, Mason
@@ -1666,6 +1720,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 40.6, 61.2, VALDRAKKEN },
 				["provider"] = { "n", 190094 },	-- Tuluradormi
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70593, {	-- Jewelcrafting Services Requested
@@ -1673,6 +1728,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 				["provider"] = { "n", 194026 },	-- Azley
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			o(380822, {	-- Igneous Gem
@@ -1850,6 +1906,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 63.6, VALDRAKKEN },
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66364, {	-- To Fly a Kite
@@ -1857,6 +1914,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66951, {	-- Population Control
@@ -1864,6 +1922,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72407, {	-- Soaked in Success
@@ -1871,6 +1930,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70569, {	-- For Trisket, a Task Kit
@@ -1878,6 +1938,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70567, {	-- When You Give Bakar a Bone
@@ -1885,6 +1946,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70571, {	-- Drums Here!
@@ -1892,6 +1954,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70568, {	-- Tipping the Scales
@@ -1899,6 +1962,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70594, {	-- Leatherworking Services Requested
@@ -1906,6 +1970,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 				["provider"] = { "n", 194026 },	-- Azley
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			o(380615, {	-- Poacher's Pack
@@ -2049,6 +2114,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.0, 51.2, VALDRAKKEN },
 				["provider"] = { "n", 185553 },	-- Sekita the Burrower
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70618, {	-- The Call of the Forge
@@ -2056,6 +2122,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.0, 51.2, VALDRAKKEN },
 				["provider"] = { "n", 185553 },	-- Sekita the Burrower
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70617, {	-- All Mine, Mine, Mine
@@ -2063,6 +2130,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.0, 51.2, VALDRAKKEN },
 				["provider"] = { "n", 185553 },	-- Sekita the Burrower
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72156, {	-- A Fiery Flight
@@ -2070,6 +2138,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 39.0, 51.2, VALDRAKKEN },
 				["provider"] = { "n", 185553 },	-- Sekita the Burrower
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(74106, {		-- Inscription Order: Mining
@@ -2177,6 +2246,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.8, 60.4, VALDRAKKEN },
 				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70620, {	-- Scaling Up
@@ -2184,6 +2254,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.8, 60.4, VALDRAKKEN },
 				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70619, {	-- A Study of Leather
@@ -2191,6 +2262,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.8, 60.4, VALDRAKKEN },
 				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72158, {	-- A Dense Delivery
@@ -2198,6 +2270,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 28.8, 60.4, VALDRAKKEN },
 				["provider"] = { "n", 193846 },	-- Ralathor the Rugged
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(74114, {	-- Inscription Order: Skinning
@@ -2298,6 +2371,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(72410, {	-- Pincers and Needles
@@ -2305,6 +2379,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 				["groups"] = {
 					i(198609),	-- Tailoring Examples
@@ -2315,6 +2390,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(66953, {	-- All Things Fluffy
@@ -2322,6 +2398,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70587, {	-- A Knapsack Problem
@@ -2329,6 +2406,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 31.8, 67.6, VALDRAKKEN },
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70586, {	-- Sew Many Cooks
@@ -2336,6 +2414,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 31.8, 67.6, VALDRAKKEN },
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70582, {	-- Weave Well Enough Alone
@@ -2343,6 +2422,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 31.8, 67.6, VALDRAKKEN },
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70572, {	-- The Cold Does Bother Them, Actually
@@ -2350,6 +2430,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 31.8, 67.6, VALDRAKKEN },
 				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			q(70595, {	-- Tailoring Services Requested
@@ -2357,6 +2438,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
 				["provider"] = { "n", 194026 },	-- Azley
 				["isWeekly"] = true,
+				["collectible"] = true,	-- Don't remove until we have proper tracking
 				-- ["sourceQuest"] = ,
 			}),
 			o(380607, {	-- Itinerant Singed Fabric
