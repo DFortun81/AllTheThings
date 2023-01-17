@@ -576,7 +576,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				q(70513, {	-- Weekly Blacksmithing Knowledgepoint #3
 					["name"] = "Blacksmithing Drop #1: Fire Elemental",
 					["description"] = "Drops from any Fire Elemental.\nCoordinates link to the mobs we found best.",
-					["crs"] = { 196168 },	-- Springs Heater
+					["crs"] = { 
+						196168, -- Springs Heater
+						196171, -- Flame Boiler
+					},	
 					["coord"] = { 39.0, 48.8, THALDRASZUS },
 					["provider"] = { "i", 198966 },	-- Molten Globule
 					["isWeekly"] = true,
@@ -1662,7 +1665,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					r(374458),	-- Zen Neltharite
 				},
 			}),
-			n(-1144, {	-- Weekly Profession Knowledge
+			4
 				q(74112, {	-- Inscription Order: Jewelcrafting
 					["name"] = "Inscription Order: Jewelcrafting",
 					["description"] = "Requires a crafting order from Inscription.",
