@@ -9,7 +9,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				72366,	-- Account Dragonflight Campaign Completed
 			},
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
-
 				-- q(QUEST, {	-- NAME
 					-- ["coord"] = { XX, YY, THE_AZURE_SPAN },
 				-- }),
@@ -21,6 +20,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				}),
 				q(70639, {	-- Azure Banners
 					["coord"] = { 70.3, 22.7, THE_AZURE_SPAN },
+				}),
+				q(69942, {	-- Brackenhide Mysteries
+					["coord"] = { 18.4, 36.4, THE_AZURE_SPAN },
 				}),
 				q(70529, {	-- Bring Them Home
 					["coord"] = { 33.8, 46.7, THE_AZURE_SPAN },
