@@ -178,59 +178,71 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 				["isBreadcrumb"] = true,	-- unconfirmed
 			}),
 		}),
-		n(QUESTS, sharedData({ ["isWeekly"] = true }, {
-			q(66867, {	-- Relic Recovery: Algeth'ar Academy
+		n(QUESTS, sharedData({
+				["isWeekly"] = true,
 				["sourceQuests"] = { 67007 },	-- Archival Assistance
+			}, {
+			q(66867, {	-- Relic Recovery: Algeth'ar Academy
 				["provider"] = { "n", 191957 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
 			}),
 			q(66864, {	-- Relic Recovery: Brackenhide Hollow
-				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 191958 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
 			}),
 			q(66866, {	-- Relic Recovery: Halls of Infusion
-				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 191957 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
 			}),
 			q(66860, {	-- Relic Recovery: Legacy of Tyr
-				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 191958 },	-- Theldren
+				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+			}),
+			q(66861, {	-- Relic Recovery: Neltharus
 				["provider"] = { "n", 191958 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
 			}),
 			q(66865, {	-- Relic Recovery: The Azure Vault
-				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 191957 },	-- Theldren
+				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+			}),
+			q(66863, {	-- Relic Recovery: The Nokhud Offensive
 				["provider"] = { "n", 191957 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
 			}),
 			q(66862, {	-- Relic Recovery: Ruby Life Pools
-				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 191957 },	-- Theldren
 				["coord"] = { 35.1, 27.5, VALDRAKKEN },
 			}),
 			q(66875, {	-- Preserving the Past: Algeth'ar Academy
-				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 189973 },	-- Kemora
+				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+			}),
+			q(66872, {	-- Preserving the Past: Brackenhide Hollow
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 			}),
 			q(66874, {	-- Preserving the Past: Halls of Infusion
-				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 			}),
 			q(66868, {	-- Preserving the Past: Legacy of Tyr
-				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 189973 },	-- Kemora
+				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+			}),
+			q(66869, {	-- Preserving the Past: Neltharus
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 			}),
 			q(66870, {	-- Preserving the Past: Ruby Life Pools
-				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 189973 },	-- Kemora
+				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+			}),
+			q(66873, {	-- Preserving the Past: The Azure Vault
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 			}),
 			q(66871, {	-- Preserving the Past: The Nokhud Offensive
-				["sourceQuests"] = { 67007 },	-- Archival Assistance
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 			}),
