@@ -2715,6 +2715,7 @@ _.ObjectNames = {
 	[382180] = "Overheated Magma Thresher Pool",
 	[382193] = "Chest of the Elements",
 	[382325] = "Onyx Gem Cluster",
+	[383735] = "Disturbed Dirt",
 	[383625] = "Case of Fresh Gleamfish",
 	[384318] = "Inconspicuous Bookmark",
 	[384370] = "Deliberately Delinquent Notes",

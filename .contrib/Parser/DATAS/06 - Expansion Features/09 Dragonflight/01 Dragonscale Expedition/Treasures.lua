@@ -84,9 +84,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				i(193899, {	-- Primalweave Spindle
 					["requireSkill"] = TAILORING,
 				}),	
-				o_repeated({	-- Disturbed Dirt (all 5 of them)
+				o(383735, {	-- Disturbed Dirt (all 5 of them)
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
+						--[[ Symlink makes your numbers go crazy
 						["sym"] = {
 							{"select","itemID",
 							192055,	-- Dragon Isles Artifact
@@ -102,12 +103,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							199068, -- Time-Lost Memo
 							198852, -- Bear Termination Orders
 						}},
+						--]]
 					},
 				}),
 				o(376587, {	-- Expedition Scout's Pack
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					-- No coords. Wowhead has literally over 1,000 coords for it
 					["g"] = {
+						--[[ Symlink makes your numbers go crazy
 						["sym"] = {
 							{"select","itemID",
 							192055,	-- Dragon Isles Artifact
@@ -123,6 +126,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							199068, -- Time-Lost Memo
 							198852, -- Bear Termination Orders
 						}},
+						--]]
 						i(201390),	-- Devastating Drakonid Waraxe
 						i(201393),	-- Dragonspawn Spellweaver's Focus
 						i(201388),	-- Dragonspawn Wingtipped Staff
@@ -145,6 +149,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				o(376426, {	-- Magic-Bound Chest
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 					["g"] = {
+						--[[ Symlink makes your numbers go crazy
 						["sym"] = {
 							{"select","itemID",
 							192055,	-- Dragon Isles Artifact
@@ -160,6 +165,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 							199068, -- Time-Lost Memo
 							198852, -- Bear Termination Orders
 						}},
+						--]]
 					},
 				}),
 			},
