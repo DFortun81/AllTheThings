@@ -1517,6 +1517,7 @@ root("Zones", m(KALIMDOR, {
 							["qg"] = 5765,	-- Ruzan
 							["sourceQuest"] = 1485,	-- Vile Familiars (Part 1 - Warlocks only!)
 							["coord"] = { 42.6, 69.0, DUROTAR },
+							["timeline"] = { "removed 4.0.3" },
 							["classes"] = { WARLOCK },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
