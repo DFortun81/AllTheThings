@@ -3570,6 +3570,9 @@ for key,value in pairs({
 	--TODO: [382193] = "Chest of the Elements",	-- Chest of the Elements
 	--TODO: [382325] = "Onyx Gem Cluster",	-- Onyx Gem Cluster
 	[383625] = "신선한 미명어 보관함",	-- Case of Fresh Gleamfish
+	[383733] = "흐트러진 흙",	-- Disturbed Dirt
+	[383734] = "흐트러진 흙",	-- Disturbed Dirt
+	[383735] = "흐트러진 흙",	-- Disturbed Dirt
 	[384318] = "눈에 띄지 않는 서표",	-- Inconspicuous Bookmark
 	[384370] = "섬세한 방황의 기록",	-- Deliberately Delinquent Notes
 	[384405] = "반쯤 삶은 생선",	-- Half-Boiled Fish
