@@ -6,7 +6,41 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 		n(GRAND_HUNTS, {
 			n(ACHIEVEMENTS, {
 				ach(16544),	-- Grand Hunter
-				ach(16540),	-- Hunt Master
+				ach(16540, {	-- Hunt Master
+					crit(1, {    -- Northern Ohn'ahran Plains Hunt
+						["coord"] = { 82.8, 19.4, OHNAHRAN_PLAINS },
+					}),
+					crit(2, {    -- Western Ohn'ahran Plains Hunt
+						["coord"] = { 62.0, 54.0, OHNAHRAN_PLAINS },
+					}),
+					crit(3, {    -- Eastern Ohn'ahran Plains Hunt
+						["coord"] = { 81.5, 49.9, OHNAHRAN_PLAINS },
+					}),
+					crit(4, {    -- Southern Waking Shores Hunt
+						["coord"] = { 24.7, 92.5, THE_WAKING_SHORES },
+					}),
+					crit(5, {    -- Eastern Waking Shores Hunt
+						["coord"] = { 69.7, 68.4, THE_WAKING_SHORES },
+					}),
+					crit(6, {    -- Northern Waking Shores Hunt
+						["coord"] = { 41.4, 78.9, THE_WAKING_SHORES },
+					}),
+					crit(7, {    -- Western Azure Span Hunt
+						["coord"] = { 38.5, 34.8, THE_AZURE_SPAN },
+					}),
+					crit(8, {    -- Eastern Azure Span Hunt
+						["coord"] = { 68.5, 27.1, THE_AZURE_SPAN },
+					}),
+					crit(9, {    -- Southern Azure Span Hunt
+						["coord"] = { 68.8, 53.7, THE_AZURE_SPAN },
+					}),
+					crit(10, {    -- Southern Thaldraszus Hunt
+						["coord"] = { 34.7, 65.4, THALDRASZUS },
+					}),
+					crit(11, {    -- Northern Thaldraszus Hunt
+						["coord"] = { 50.8, 46.9, THALDRASZUS },
+					}),
+				}),
 				ach(16541),	-- Longhunter
 				ach(16543),	-- Tetrachromancer
 				ach(16545),	-- The Best at What I Do
