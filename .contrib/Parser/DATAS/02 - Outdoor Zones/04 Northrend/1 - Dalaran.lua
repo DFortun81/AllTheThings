@@ -4621,7 +4621,7 @@ root("Zones", {
 							12791,	-- The Magical Kingdom of Dalaran (Horde only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
 							12794,	-- The Magical Kingdom of Dalaran (Alliance only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
 							12796,	-- The Magical Kingdom of Dalaran (Zul'Drak)
-							39210,	-- The Magical Kingdom of Dalaran (Crystalsong Forest)
+							39210,	-- The Magical Kingdom of Dalaran (Adventure Guide)
 						},
 						["coord"] = { 56.3, 46.7, NORTHREND_DALARAN },
 						["maps"] = { CRYSTALSONG_FOREST },
@@ -5148,9 +5148,9 @@ root("Zones", {
 						["coord"] = { 40.6, 66.9, ZULDRAK },
 						["isBreadcrumb"] = true,
 					}),
-					q(39210, {	-- The Magical Kingdom of Dalaran
-						["timeline"] = { "added 6.2.0.19934", "removed 7.0.1" },	-- TODO: Find out the patch this was removed, if at all.
-						["maps"] = { CRYSTALSONG_FOREST },
+					q(39210, {	-- The Magical Kingdom of Dalaran (Adventure Guide)
+						["description"] = "Can be acquired through the Adventure Guide.",
+						["timeline"] = { "added 6.2.0.19934" },
 						["isBreadcrumb"] = true,
 					}),
 					q(13240, {	-- Timear Foresees Centrifuge Constructs in your Future!
