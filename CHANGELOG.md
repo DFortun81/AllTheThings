@@ -1,24 +1,18 @@
 # AllTheThings
 
-## [DF-3.1.14](https://github.com/DFortun81/AllTheThings/tree/DF-3.1.14) (2023-01-16)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.1.13...DF-3.1.14) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [DF-3.1.15](https://github.com/DFortun81/AllTheThings/tree/DF-3.1.15) (2023-01-18)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/DF-3.1.14...DF-3.1.15) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
-
-### Functional changes
-
-- Some further adjustments to inaccurate quest check/report
-  - Instantly-completed quests should not trigger the report... hopefully
-  - Report dialog now includes if the character has previously completed the quest, and currently-known Professions
-- Adjusted some logic that should greatly reduce frame stutter when changing through certain Zones.
-- Adjusted auto-filling of Creatures within ATT windows to include Things which are listed under the 'Drops' Header and tagged for the specific Creature (i.e. Rares which drop shared Items).
 
 ### Functional fixes
 
-- Fixed some Headers becoming something else entirely.
+- This release includes a fix for a nasty recursion bug that resulted in excessive memory usage, broken tooltips and stack overflow errors. Sorry!
 
 
 ### Data additions/fixes
 
-- Usual updates to Dragonflight Professions, (World/Weekly) Quests, Renown activities, Rares, Treasures.
-- Some attempts to fix sourceQuests on various quests which are immediately available to alts on accounts with completed DF campaigns.
+- Usual updates to Dragonflight (World/Weekly) Quests, Renown activities, Rares, Treasures.
+- More dedicated improvements to Dragonflight Professions.
+- Finally marked Shadowlands LFR content as removed. Let's petition Blizzard for LFR NPCs!
+- Some older content Achievements clean up (BfA and others).
 - Other fixes.
