@@ -10,7 +10,41 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				ach(16541),	-- Longhunter
 				ach(16543),	-- Tetrachromancer
 				ach(16545),	-- The Best at What I Do
-				ach(16542),	-- The Disgruntled Hunter
+				ach(16542, {	-- The Disgruntled Hunter
+					crit(1, {    -- Northern Ohn'ahran Plains Hunt
+						["coord"] = { 82.5, 13.9, OHNAHRAN_PLAINS },
+					}),
+					crit(2, {    -- Western Ohn'ahran Plains Hunt
+						["coord"] = { 62.0, 54.0, OHNAHRAN_PLAINS },
+					}),
+					crit(3, {    -- Eastern Ohn'ahran Plains Hunt
+						["coord"] = { 82.9, 47.8, OHNAHRAN_PLAINS },
+					}),
+					crit(4, {    -- Southern Waking Shores Hunt
+						["coord"] = { 24.5, 89.1, THE_WAKING_SHORES },
+					}),
+					crit(5, {    -- Eastern Waking Shores Hunt
+						["coord"] = { 70.7, 66.5, THE_WAKING_SHORES },
+					}),
+					crit(6, {    -- Northern Waking Shores Hunt
+						["coord"] = { 42.0, 80.6, THE_WAKING_SHORES },
+					}),
+					crit(7, {    -- Western Azure Span Hunt
+						["coord"] = { 36.5, 34.8, THE_AZURE_SPAN },
+					}),
+					crit(8, {    -- Eastern Azure Span Hunt
+						["coord"] = { 68.1, 23.5, THE_AZURE_SPAN },
+					}),
+					crit(9, {    -- Southern Azure Span Hunt
+						["coord"] = { 69.2, 49.9, THE_AZURE_SPAN },
+					}),
+					crit(10, {    -- Southern Thaldraszus Hunt
+						["coord"] = { 34.7, 65.4, THALDRASZUS },
+					}),
+					crit(11, {    -- Northern Thaldraszus Hunt
+						["coord"] = { 50.7, 45.6, THALDRASZUS },
+					}),
+				}),
 			}),
 			header(HEADERS.Map, OHNAHRAN_PLAINS, {
 				n(-1123, {	-- North
