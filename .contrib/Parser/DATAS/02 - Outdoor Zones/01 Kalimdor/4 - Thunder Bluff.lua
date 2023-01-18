@@ -685,7 +685,6 @@ root("Zones", m(KALIMDOR, {
 						{ "i", 6145 },	-- Clarice's Pendant
 					},
 					["coord"] = { 28.19, 25.31, THUNDER_BLUFF },
-					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
