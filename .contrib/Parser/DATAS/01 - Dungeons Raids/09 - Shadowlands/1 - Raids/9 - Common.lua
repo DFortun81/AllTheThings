@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, tier(SL_TIER, {
-	n(COMMON_BOSS_DROPS, sharedData({["timeline"] = { ADDED_SL_S4 },},{
+	n(COMMON_BOSS_DROPS, sharedData({["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },},{
 		d(HEROIC_RAID, {
 			i(191910, {	-- Confounding Antique Cypher
 				["description"] = "Drops from Fated Heroic Shadowlands Raid bosses.",
@@ -21,7 +21,7 @@ root(ROOTS.Instances, tier(SL_TIER, {
 			}),
 		}),
 	})),
-	n(QUESTS, sharedData({["timeline"] = { ADDED_SL_S4 },},{
+	n(QUESTS, sharedData({["timeline"] = { ADDED_SL_S4, REMOVED_DF_REL },},{
 		q(66648, {	-- Crossing Fate
 			["description"] = "Auto-accepted by entering any 'Fated' Shadowlands Raid.",
 			["maps"] = {
@@ -125,7 +125,7 @@ root(ROOTS.Instances, tier(SL_TIER, {
 			},
 		}),
 		q(66696, {	-- Tempting Fate: Fate of the Shadowlands
-			["timeline"] = { "created 9.2.7", ADDED_DF_PRE },
+			["timeline"] = { "created 9.2.7", ADDED_DF_PRE, REMOVED_DF_REL },
 			["isWorldQuest"] = true,
 			["maps"] = {
 				-- Castle Nathria
