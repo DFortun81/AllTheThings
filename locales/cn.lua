@@ -3586,7 +3586,7 @@ for key, value in pairs({
 	[383625] = "一箱新鲜的冰湖鱼",	-- Case of Fresh Gleamfish
 	[383733] = "翻动过的泥土",	-- Disturbed Dirt
 	[383734] = "翻动过的泥土",	-- Disturbed Dirt
-	--TODO: [383735] = "Disturbed Dirt",	-- Disturbed Dirt
+	[383735] = "翻动过的泥土",	-- Disturbed Dirt	--TODO: this was manually translated
 	[384318] = "不起眼的书签",	-- Inconspicuous Bookmark
 	[384370] = "故意拖欠票据",	-- Deliberately Delinquent Notes
 	--TODO: [384405] = "Half-Boiled Fish",	-- Half-Boiled Fish
