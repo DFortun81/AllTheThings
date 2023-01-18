@@ -548,6 +548,16 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 					i(201425),	-- Yellow War Ottuk (MOUNT!)
 				},
 			}),
+				-- PARAGON --
+			q(66511, {	-- Renowned with the Iskaara Tuskarr
+				["minReputation"] = { 2511, 30 },	-- Iskaara Tuskarr Renown 30
+				["provider"] = { "n", 193006 },	-- Murik
+				["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+				["isRepeatable"] = true,
+				["g"] = {
+					i(199473),	-- Overflowing Iskaaran Supply Pack
+				},
+			}),
 		}),
 		-- Maybe sub-header related items, maybe not
 		i(200071),	-- Sacred Tuskarr Totem

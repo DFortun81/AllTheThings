@@ -412,13 +412,58 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = TIMELINE_DF_
 				},
 			}),
 				-- RENOWN 23 --
+			q(72295, {	-- Expedition Crafting Knowledge
+				["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["requireSkill"] = INSCRIPTION,
+				["g"] = {
+					i(201711),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72304, {	-- Expedition Crafting Knowledge
+				["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["requireSkill"] = ENCHANTING,
+				["g"] = {
+					i(201709),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72305, {	-- Expedition Crafting Knowledge
+				["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["requireSkill"] = ENGINEERING,
+				["g"] = {
+					i(201710),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72306, {	-- Expedition Crafting Knowledge
+				["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["requireSkill"] = JEWELCRAFTING,
+				["g"] = {
+					i(201712),	-- Notebook of Crafting Knowledge
+				},
+			}),
 			q(72308, {	-- Expedition Crafting Knowledge
-				["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 22
+				["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23
 				["provider"] = { "n", 189065 },	-- Boss Magor
 				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 				["requireSkill"] = MINING,
 				["g"] = {
 					i(201716),	-- Notebook of Crafting Knowledge
+				},
+			}),
+			q(72309, {	-- Expedition Crafting Knowledge
+				["minReputation"] = { 2507, 23 },	-- Dragonscale Expedition Renown 23
+				["provider"] = { "n", 189065 },	-- Boss Magor
+				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
+				["requireSkill"] = TAILORING,
+				["g"] = {
+					i(201715),	-- Notebook of Crafting Knowledge
 				},
 			}),
 				-- RENOWN 24 --
