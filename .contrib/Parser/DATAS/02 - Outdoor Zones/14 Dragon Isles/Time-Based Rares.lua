@@ -3,8 +3,8 @@
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = TIMELINE_DF_REL }, {
 	n(RARES, {
-		n(-1143, {	-- Every 30min
-			["description"] = "Every 30minutes only 2 of those rares spawn & they will be marked with a skull on the map if you are in the respective zone.\n\nEU: 6am CET 6:30am CET and so on\n\nNA: 7am PST 7:30am PST and so on",
+		n(-1143, {	-- Every 2 Hours Rare
+			["description"] = "These rares spawn on a fixed timer & will be marked with a skull on the map if you are in the respective zone.\n\nEU: 6am CET 8am CET and so on\n\nNA: 7am PST 9am PST and so on",
 			["g"] = sharedData({
 				["isDaily"] = true,
 			},{
